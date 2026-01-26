@@ -7,7 +7,7 @@ category: productivity
 platforms: ["iOS"]
 status: live
 
-app_store_url: "APP_STORE_URL_TASKFUL_DAY"
+app_store_url: "https://apps.apple.com/app/id6757345400"
 
 price:
   model: subscription
