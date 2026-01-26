@@ -1,0 +1,14 @@
+<section id="screenshots" class="section">
+  <div class="section-head">
+    <h2 class="h2">Screenshots</h2>
+    <div class="section-sub">A quick look at the experience.</div>
+  </div>
+
+  <div class="shots">
+    {% for s in include.app.screenshots %}
+      <figure class="shot">
+        <img src="{{ s }}" alt="{{ include.app.name }} screenshot {{ forloop.index }}" loading="lazy">
+      </figure>
+    {% endfor %}
+  </div>
+</section>
