@@ -7,7 +7,7 @@ category: mindfulness
 platforms: ["iOS"]
 status: live
 
-app_store_url: "APP_STORE_URL_THEWAIT"
+app_store_url: "https://apps.apple.com/app/id6757280643"
 
 price:
   model: subscription
