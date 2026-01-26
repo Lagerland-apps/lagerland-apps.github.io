@@ -1,0 +1,13 @@
+---
+layout: default
+title: Apps
+---
+<h1>Apps</h1>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:24px 0;">
+  {% for app in site.apps %}
+    <a href="{{ app.url }}" style="border:1px solid var(--border);border-radius:18px;padding:16px;display:block;">
+      <div style="font-weight:700;">{{ app.name }}</div>
+      <div style="color:var(--muted);margin-top:6px;">{{ app.tagline }}</div>
+    </a>
+  {% endfor %}
+</div>
