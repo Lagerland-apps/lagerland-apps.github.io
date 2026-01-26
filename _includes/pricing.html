@@ -1,0 +1,15 @@
+<section class="section">
+  <h2 class="h2">Pricing</h2>
+  <div class="card">
+    <div class="price-row">
+      <div>
+        <div class="card-title">{{ include.app.name }} pricing</div>
+        <div class="card-text">Transparent pricing on the App Store. Cancel anytime.</div>
+      </div>
+      <div class="price-pill">{{ include.app.price.value | default: "See App Store" }}</div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">View on the App Store</a>
+    </div>
+  </div>
+</section>
