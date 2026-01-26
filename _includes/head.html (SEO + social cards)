@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ page.seo.title | default: page.name | default: site.title }}</title>
+<meta name="description" content="{{ page.seo.description | default: site.description }}">
+{% if page.seo.keywords %}
+<meta name="keywords" content="{{ page.seo.keywords | join: ', ' }}">
+{% endif %}
+
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.seo.title | default: page.name | default: site.title }}">
+<meta property="og:description" content="{{ page.seo.description | default: site.description }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}{{ page.og_image | default: '/assets/og/default.png' }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.seo.title | default: page.name | default: site.title }}">
+<meta name="twitter:description" content="{{ page.seo.description | default: site.description }}">
+<meta name="twitter:image" content="{{ site.url }}{{ page.og_image | default: '/assets/og/default.png' }}">
+
+<!-- JSON-LD: SoftwareApplication -->
+{% if page.name and page.app_store_url %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "{{ page.name | escape }}",
+  "operatingSystem": "{{ page.platforms | join: ', ' | escape }}",
+  "applicationCategory": "{{ page.category | escape }}",
+  "offers": {
+    "@type": "Offer",
+    "price": "{{ page.price.value | default: '' | escape }}",
+    "priceCurrency": "EUR",
+    "url": "{{ page.app_store_url | escape }}"
+  }
+}
+</script>
+{% endif %}
