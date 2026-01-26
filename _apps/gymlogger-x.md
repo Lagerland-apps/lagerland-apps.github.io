@@ -58,6 +58,9 @@ screenshots:
   - "/assets/screenshots/gymlogger-x/1.png"
   - "/assets/screenshots/gymlogger-x/2.png"
   - "/assets/screenshots/gymlogger-x/3.png"
+  - "/assets/screenshots/gymlogger-x/4.png"
+  - "/assets/screenshots/gymlogger-x/5.png"
+  - "/assets/screenshots/gymlogger-x/6.png"
 
 privacy:
   data_collection: "none"
