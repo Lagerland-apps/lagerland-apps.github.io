@@ -18,41 +18,43 @@ og_image: "/assets/og/gymlogger-x.png"
 
 seo:
   title: "GymLogger X – Strength Training Workout Log for iPhone & Apple Watch"
-  description: "GymLogger X is a fast, privacy-first workout log for lifters. Track sets, reps, PRs, and progress on iPhone and Apple Watch."
+  description: "GymLogger X is a fast, privacy-first strength training workout log. Track sets, reps, PRs, and progress on iPhone and Apple Watch — without ads or accounts."
   keywords:
+    - strength training workout log
     - gym workout log
     - strength training tracker
     - workout journal app
-    - apple watch workout log
     - lifting tracker
     - progressive overload tracker
+    - apple watch workout log
+    - weightlifting log
 
 hero:
-  headline: "Log workouts in seconds."
-  subheadline: "A clean strength-training log built for speed, clarity, and consistency — on iPhone and Apple Watch."
+  headline: "Log strength workouts in seconds."
+  subheadline: "A clean, distraction-free strength training workout log built for speed, clarity, and consistency — on iPhone and Apple Watch."
   cta_label: "Download on the App Store"
 
 value_points:
-  - title: "Fast logging"
-    description: "Minimal taps for sets, reps, and weight."
+  - title: "Fast, focused logging"
+    description: "Log sets, reps, and weight with minimal taps — no friction during training."
   - title: "Progress you can trust"
-    description: "Track PRs, volume, and training history."
-  - title: "Apple Watch ready"
-    description: "Log from your wrist when it matters."
-  - title: "Privacy-first"
-    description: "No ads. No trackers. No noisy social feed."
+    description: "Track PRs, volume, and long-term training history with clean visuals."
+  - title: "Apple Watch support"
+    description: "Log workouts from your wrist when timing and focus matter most."
+  - title: "Privacy-first by design"
+    description: "No ads, no trackers, no social feed. Your data stays yours."
 
 features:
   - title: "Workout logging that stays out of your way"
-    description: "Start, log, finish — without fighting the UI."
-  - title: "Progress tracking"
-    description: "See PRs, volume trends, and your training cadence over time."
-  - title: "Apple Watch support"
-    description: "Quick logging and glanceable stats on your wrist."
-  - title: "Templates & repeatability"
-    description: "Reuse routines to keep sessions consistent."
-  - title: "Designed for lifters"
-    description: "Built around sets, reps, weight, and progression."
+    description: "Start a workout, log your sets, and finish without fighting menus or clutter."
+  - title: "Strength-focused progress tracking"
+    description: "See personal records, volume trends, and training consistency over time."
+  - title: "Apple Watch workout logging"
+    description: "Quick set logging, rest timers, and glanceable stats on your wrist."
+  - title: "Templates and repeatability"
+    description: "Reuse routines and workouts to stay consistent week after week."
+  - title: "Built for lifters"
+    description: "Designed around sets, reps, weight, and progression — not generic fitness."
 
 screenshots:
   - "/assets/screenshots/gymlogger-x/1.png"
@@ -68,20 +70,19 @@ privacy:
   account_required: false
   notes:
     - "No third-party trackers"
-    - "No ads"
-    - "Your data stays on your device (and optional iCloud sync if enabled)"
-
+    - "No ads or analytics SDKs"
+    - "Your data stays on your device (optional iCloud sync if enabled)"
 faq:
   - q: "Do I need an account?"
-    a: "No. You can use GymLogger X without creating an account."
-  - q: "Does it work with Apple Watch?"
-    a: "Yes — GymLogger X supports Apple Watch for quick logging and glanceable stats."
+    a: "No. GymLogger X works without accounts or sign-ups."
+  - q: "Does it support Apple Watch?"
+    a: "Yes. You can log workouts and view stats directly from your Apple Watch."
   - q: "Is my workout data private?"
-    a: "Yes. GymLogger X is built to be privacy-first and does not include third-party tracking."
-  - q: "Is it for strength training only?"
-    a: "It’s optimized for strength training (sets/reps/weight), but you can adapt it to many routines."
+    a: "Yes. GymLogger X is privacy-first and does not include third-party tracking."
+  - q: "Is it only for strength training?"
+    a: "It’s optimized for strength training with sets, reps, and weight, but flexible enough for many routines."
   - q: "Is there a subscription?"
-    a: "Pricing is shown on the App Store listing. Some features may require a subscription."
+    a: "Some advanced features require a subscription. Pricing is shown on the App Store."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -91,4 +92,4 @@ release:
   first_release: "2024-01-01"
   last_updated: "2026-01-26"
 ---
-GymLogger X helps you stay consistent by making workout logging fast, clean, and repeatable. Track what you lift, spot progress, and keep training simple.
+GymLogger X helps you stay consistent by making strength training logging fast, clean, and repeatable. Track what you lift, spot real progress, and train with clarity — without distractions.
