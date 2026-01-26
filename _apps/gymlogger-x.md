@@ -7,7 +7,7 @@ category: fitness
 platforms: ["iOS", "Apple Watch"]
 status: live
 
-app_store_url: "APP_STORE_URL_GYMLOGGER_X"
+app_store_url: "https://apps.apple.com/app/id6755734580"
 
 price:
   model: subscription
