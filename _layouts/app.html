@@ -1,20 +1,76 @@
 ---
 layout: default
 ---
-<section style="padding:48px 0;">
-  <h1>{{ page.name }}</h1>
-  <p style="color:var(--muted);font-size:18px;">{{ page.tagline }}</p>
+<article class="app">
 
-  <p>
-    <a href="{{ page.app_store_url }}">Download on the App Store</a>
-  </p>
+  {% include hero.html app=page %}
+
+  {% if page.value_points %}
+  <section class="section">
+    <div class="grid grid-4">
+      {% for item in page.value_points %}
+      <div class="card">
+        <div class="card-title">{{ item.title }}</div>
+        <div class="card-text">{{ item.description }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 
   {% if page.screenshots %}
-  <h2>Screenshots</h2>
-  <div style="display:flex;gap:12px;overflow:auto;padding-bottom:10px;">
-    {% for s in page.screenshots %}
-      <img src="{{ s }}" alt="{{ page.name }} screenshot {{ forloop.index }}" style="height:420px;border-radius:18px;border:1px solid var(--border);" />
-    {% endfor %}
-  </div>
+    {% include screenshots.html app=page %}
   {% endif %}
-</section>
+
+  {% if page.features %}
+  <section class="section">
+    <h2 class="h2">What you can do</h2>
+    <div class="grid grid-2">
+      {% for f in page.features %}
+      <div class="card">
+        <div class="card-title">{{ f.title }}</div>
+        <div class="card-text">{{ f.description }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% include pricing.html app=page %}
+
+  {% include faq.html app=page %}
+
+  <section class="section">
+    <h2 class="h2">Privacy</h2>
+    <div class="card">
+      <div class="kv">
+        <div class="kv-row">
+          <div class="kv-k">Data collection</div>
+          <div class="kv-v">{{ page.privacy.data_collection | default: "Not specified" }}</div>
+        </div>
+        <div class="kv-row">
+          <div class="kv-k">Tracking</div>
+          <div class="kv-v">{% if page.privacy.tracking %}Yes{% else %}No{% endif %}</div>
+        </div>
+        <div class="kv-row">
+          <div class="kv-k">Account required</div>
+          <div class="kv-v">{% if page.privacy.account_required %}Yes{% else %}No{% endif %}</div>
+        </div>
+      </div>
+
+      {% if page.privacy.notes %}
+      <ul class="bullets">
+        {% for n in page.privacy.notes %}
+          <li>{{ n }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      <div class="actions">
+        <a class="btn btn-secondary" href="/apps/{{ page.slug }}/privacy/">Read privacy policy</a>
+        <a class="btn btn-secondary" href="/apps/{{ page.slug }}/support/">Get support</a>
+      </div>
+    </div>
+  </section>
+
+</article>
