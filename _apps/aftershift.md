@@ -7,7 +7,7 @@ category: health
 platforms: ["iOS"]
 status: live
 
-app_store_url: "APP_STORE_URL_AFTERSHIFT"
+app_store_url: "https://apps.apple.com/app/id6757163182"
 
 price:
   model: subscription
