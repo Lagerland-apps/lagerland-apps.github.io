@@ -7,7 +7,7 @@ category: journaling
 platforms: ["iOS"]
 status: live
 
-app_store_url: "APP_STORE_URL_DRIFTLINES"
+app_store_url: "https://apps.apple.com/app/id6758112876"
 
 price:
   model: subscription
