@@ -1,0 +1,18 @@
+title: Lagerland Apps
+description: "Privacy-first iOS apps by Lagerland Apps."
+url: "https://lagerland-apps.github.io"
+
+collections:
+  apps:
+    output: true
+    permalink: /apps/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: apps
+    values:
+      layout: app
+
+plugins:
+  - jekyll-sitemap
