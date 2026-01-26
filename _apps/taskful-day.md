@@ -58,6 +58,9 @@ screenshots:
   - "/assets/screenshots/taskful-day/1.png"
   - "/assets/screenshots/taskful-day/2.png"
   - "/assets/screenshots/taskful-day/3.png"
+  - "/assets/screenshots/taskful-day/4.png"
+  - "/assets/screenshots/taskful-day/5.png"
+  - "/assets/screenshots/taskful-day/6.png"
 
 privacy:
   data_collection: "minimal"
