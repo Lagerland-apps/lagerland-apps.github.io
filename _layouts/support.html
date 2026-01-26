@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<section class="section">
+  <h1 class="h1">{{ page.name }} Support</h1>
+
+  <p class="lead">
+    Need help with {{ page.name }}?
+  </p>
+
+  <div class="card">
+    <div class="card-title">Contact support</div>
+    <p class="card-text">
+      If you’re experiencing a problem, have a question, or want to share feedback, email us:
+    </p>
+
+    <p>
+      <a href="mailto:{{ page.support.email }}">
+        {{ page.support.email }}
+      </a>
+    </p>
+
+    <p class="card-text">
+      Please include:
+    </p>
+    <ul class="bullets">
+      <li>App version</li>
+      <li>Device model</li>
+      <li>iOS version</li>
+      <li>What you expected to happen</li>
+    </ul>
+  </div>
+
+  <div class="actions" style="margin-top:24px;">
+    <a class="btn btn-secondary" href="/apps/{{ page.slug }}/">
+      Back to {{ page.name }}
+    </a>
+  </div>
+</section>
