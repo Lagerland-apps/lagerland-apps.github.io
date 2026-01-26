@@ -81,7 +81,7 @@ faq:
     a: "Pricing is shown on the App Store listing. Some features may require a subscription."
 
 support:
-  email: "support@lagerlandapps.com"
+  email: "lagerland.apps@proton.me"
   url: "/apps/taskful-day/support/"
 
 release:
