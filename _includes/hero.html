@@ -1,0 +1,39 @@
+<section class="hero">
+  <div class="hero-left">
+    <div class="app-badge">
+      <img class="app-icon" src="{{ include.app.icon }}" alt="{{ include.app.name }} icon" loading="lazy">
+      <div class="app-meta">
+        <div class="app-name">{{ include.app.name }}</div>
+        <div class="app-tagline">{{ include.app.tagline }}</div>
+      </div>
+    </div>
+
+    <h1 class="h1">{{ include.app.hero.headline }}</h1>
+    <p class="lead">{{ include.app.hero.subheadline }}</p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">
+        {{ include.app.hero.cta_label | default: "Download" }}
+      </a>
+      <a class="btn btn-secondary" href="#screenshots">See screenshots</a>
+    </div>
+
+    <div class="meta-row">
+      {% if include.app.platforms %}
+        <span class="pill">{{ include.app.platforms | join: " · " }}</span>
+      {% endif %}
+      {% if include.app.price.value %}
+        <span class="pill">{{ include.app.price.value }}</span>
+      {% endif %}
+      <span class="pill">Lagerland Apps</span>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <!-- Hero mock: uses first screenshot if present; falls back to icon -->
+    {% assign hero_img = include.app.screenshots[0] | default: include.app.icon %}
+    <div class="hero-media">
+      <img class="hero-shot" src="{{ hero_img }}" alt="{{ include.app.name }} screenshot" loading="lazy">
+    </div>
+  </div>
+</section>
