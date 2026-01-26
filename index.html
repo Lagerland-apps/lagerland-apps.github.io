@@ -2,10 +2,15 @@
 layout: default
 title: Lagerland Apps
 ---
+
+<!-- HERO -->
 <section class="hero" style="grid-template-columns: 1fr;">
   <div class="hero-left">
     <h1 class="h1">Lagerland Apps</h1>
-    <p class="lead">Privacy-first iOS apps built to feel calm, fast, and useful.</p>
+    <p class="lead">
+      Privacy-first iOS apps built to feel calm, fast, and useful.
+    </p>
+
     <div class="actions">
       <a class="btn btn-primary" href="/apps/">Browse apps</a>
       <a class="btn btn-secondary" href="/support/">Support</a>
@@ -13,24 +18,51 @@ title: Lagerland Apps
   </div>
 </section>
 
+<!-- APPS -->
 <section class="section">
   <h2 class="h2">Apps</h2>
+
   <div class="grid grid-2">
     {% for app in site.apps %}
-    <a class="card" href="{{ app.url }}" style="display:block;">
-      <div class="app-badge" style="margin:0;">
-        <img class="app-icon" src="{{ app.icon }}" alt="{{ app.name }} icon" loading="lazy">
-        <div class="app-meta">
-          <div class="app-name">{{ app.name }}</div>
-          <div class="app-tagline">{{ app.tagline }}</div>
-        </div>
-      </div>
-      <div class="card-text">{{ app.seo.description }}</div>
-      <div class="meta-row" style="margin-top:12px;">
-        <span class="pill">{{ app.category }}</span>
-        <span class="pill">{{ app.platforms | join: " · " }}</span>
-      </div>
-    </a>
+      {% if app.status == "live" %}
+
+        <a class="card" href="{{ app.url }}" style="display:block;">
+          <div class="app-badge" style="margin:0;">
+            {% if app.icon %}
+              <img
+                class="app-icon"
+                src="{{ app.icon }}"
+                alt="{{ app.name }} icon"
+                loading="lazy"
+              >
+            {% endif %}
+
+            <div class="app-meta">
+              <div class="app-name">{{ app.name }}</div>
+              <div class="app-tagline">{{ app.tagline }}</div>
+            </div>
+          </div>
+
+          {% if app.seo and app.seo.description %}
+            <div class="card-text">
+              {{ app.seo.description }}
+            </div>
+          {% endif %}
+
+          <div class="meta-row" style="margin-top:12px;">
+            {% if app.category %}
+              <span class="pill">{{ app.category }}</span>
+            {% endif %}
+
+            {% if app.platforms %}
+              <span class="pill">
+                {{ app.platforms | join: " · " }}
+              </span>
+            {% endif %}
+          </div>
+        </a>
+
+      {% endif %}
     {% endfor %}
   </div>
 </section>
