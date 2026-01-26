@@ -5,7 +5,7 @@ name: "AfterShift"
 tagline: "Recover better after shift work."
 category: health
 platforms: ["iOS"]
-status: live
+status: hidden
 
 app_store_url: "https://apps.apple.com/app/id6757163182"
 
