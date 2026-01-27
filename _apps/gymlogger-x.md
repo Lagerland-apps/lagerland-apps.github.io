@@ -72,6 +72,14 @@ privacy:
     - "No third-party trackers"
     - "No ads or analytics SDKs"
     - "Your data stays on your device (optional iCloud sync if enabled)"
+
+    coach_cta:
+  title: "For Coaches"
+  description: "GymLogger X partners with serious coaches who care about long-term training, clarity, and consistency."
+  cta_label: "Learn about the coach program"
+  url: "/apps/gymlogger-x/coaches/"
+
+  
 faq:
   - q: "Do I need an account?"
     a: "No. GymLogger X works without accounts or sign-ups."
