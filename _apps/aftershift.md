@@ -5,7 +5,7 @@ name: "AfterShift"
 tagline: "Calm sleep & recovery for shift work."
 category: health
 platforms: ["iOS"]
-status: hidden
+status: live
 
 app_store_url: "https://apps.apple.com/app/id6757163182"
 
@@ -59,7 +59,10 @@ screenshots:
   - "/assets/screenshots/aftershift/1.png"
   - "/assets/screenshots/aftershift/2.png"
   - "/assets/screenshots/aftershift/3.png"
-
+  - "/assets/screenshots/aftershift/4.png"
+  - "/assets/screenshots/aftershift/5.png"
+  - "/assets/screenshots/aftershift/6.png"
+    
 privacy:
   data_collection: "none"
   tracking: false
