@@ -17,42 +17,45 @@ icon: "/assets/icons/thewait.png"
 og_image: "/assets/og/thewait.png"
 
 seo:
-  title: "TheWait – Calm Waiting Timer & Mindful Pause for iPhone"
-  description: "TheWait helps you turn everyday waiting into a calmer pause. Use gentle timers and micro-prompts to feel less stuck and more present."
+  title: "TheWait – Calm Waiting App & Gentle Mindfulness Timer for iPhone"
+  description: "TheWait is a calm waiting app for iPhone that helps you feel less stressed during queues, delays, and in-between moments. Gentle timers, micro-prompts, and privacy-first design."
   keywords:
-    - mindful timer
-    - calm waiting
-    - anxiety waiting tool
+    - waiting anxiety
+    - calm waiting app
+    - mindfulness timer iphone
+    - stress while waiting
     - pause app
+    - gentle mindfulness
     - breathing timer
-    - mindfulness micro practice
+    - anxiety relief moments
+    - micro mindfulness
 
 hero:
   headline: "Waiting, but calmer."
-  subheadline: "For queues, delays, and in-between moments — gentle timers and micro-prompts that help you breathe and reset."
+  subheadline: "For queues, delays, and in-between moments — gentle timers and micro-prompts that help you slow your breath, reset your mind, and feel less stuck."
   cta_label: "Download on the App Store"
 
 value_points:
-  - title: "Micro-pauses"
-    description: "Small resets that fit real life."
-  - title: "Gentle guidance"
-    description: "Prompts that feel human, not preachy."
-  - title: "Instant start"
-    description: "Open, tap, breathe."
+  - title: "Micro-pauses that actually fit life"
+    description: "Designed for real waiting — seconds or minutes, not hour-long sessions."
+  - title: "Guidance that feels human"
+    description: "Soft prompts that support you without lectures or pressure."
+  - title: "Instant relief"
+    description: "Open the app, tap once, and start calming down."
   - title: "Private by default"
-    description: "No accounts. No trackers."
+    description: "No accounts, no ads, no tracking — ever."
 
 features:
-  - title: "Waiting timers"
-    description: "Quick timers designed for everyday delays and queues."
-  - title: "Micro-prompts"
-    description: "Short cues for breath, body, and attention."
-  - title: "Minimal UI"
-    description: "A calm design that reduces cognitive load."
-  - title: "Customizable sessions"
-    description: "Pick a vibe and duration that matches the moment."
-  - title: "Built for real life"
-    description: "Not a course. Not a streak. Just a better pause."
+  - title: "Waiting-first timers"
+    description: "Timers built specifically for queues, delays, appointments, and everyday pauses."
+  - title: "Gentle micro-prompts"
+    description: "Short cues for breathing, grounding, and attention — never overwhelming."
+  - title: "Calm, minimal interface"
+    description: "A clean design that lowers cognitive load instead of adding more noise."
+  - title: "Customizable moments"
+    description: "Choose the duration, style, and tone that fits how you feel right now."
+  - title: "Made for real life"
+    description: "Not a meditation course. Not a habit streak. Just a better way to wait."
 
 screenshots:
   - "/assets/screenshots/thewait/1.png"
@@ -66,26 +69,26 @@ privacy:
   notes:
     - "No third-party trackers"
     - "No ads"
-    - "Data stored locally"
+    - "All data stays on your device"
 
 faq:
   - q: "Is TheWait a meditation app?"
-    a: "Not exactly. It’s built for short, real-world moments — queues, delays, and transitions."
+    a: "Not really. TheWait is designed for short, real-world moments — queues, delays, transitions, and waiting rooms — not long meditation sessions."
   - q: "Do I need experience with mindfulness?"
-    a: "No. The prompts are simple and beginner-friendly."
-  - q: "Does it track me?"
-    a: "No. TheWait is designed to be privacy-first and does not include third-party tracking."
-  - q: "Can I customize timers?"
-    a: "Yes — you can choose durations and styles that fit your moment."
+    a: "No. TheWait is beginner-friendly and works even if you’ve never tried mindfulness before."
+  - q: "Does TheWait track or collect data?"
+    a: "No. TheWait is privacy-first and does not include tracking, analytics, or third-party services."
+  - q: "Can I customize the timers?"
+    a: "Yes. You can choose different durations and styles depending on the situation."
   - q: "Is there a subscription?"
-    a: "Pricing is shown on the App Store listing. Some features may require a subscription."
+    a: "TheWait is free to try. Optional premium features are available via subscription, with pricing shown on the App Store."
 
 support:
   email: "lagerland.apps@proton.me"
   url: "/apps/thewait/support/"
 
 release:
-  first_release: "2024-01-01"
+  first_release: "2026-01-01"
   last_updated: "2026-01-26"
 ---
-TheWait turns “stuck time” into lighter time. Use short timers and gentle prompts to reset your breath, attention, and mood while you wait.
+TheWait turns stressful waiting into calmer time. Whether you’re stuck in a queue, waiting for an appointment, or caught between moments, TheWait helps you slow down, breathe, and feel more present — without pressure or noise.
