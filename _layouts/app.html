@@ -38,6 +38,23 @@ layout: default
 
   {% include pricing.html app=page %}
 
+{% if page.coach_cta %}
+<section class="section">
+  <div class="card">
+    <div class="card-title">{{ page.coach_cta.title }}</div>
+    <div class="card-text">
+      {{ page.coach_cta.description }}
+    </div>
+
+    <div class="actions" style="margin-top:16px;">
+      <a class="btn btn-secondary" href="{{ page.coach_cta.url }}">
+        {{ page.coach_cta.cta_label }}
+      </a>
+    </div>
+  </div>
+</section>
+{% endif %}
+  
   {% include faq.html app=page %}
 
   <section class="section">
