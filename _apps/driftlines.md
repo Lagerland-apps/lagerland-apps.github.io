@@ -2,7 +2,7 @@
 layout: app
 slug: driftlines
 name: "Driftlines"
-tagline: "Write what you notice."
+tagline: "Read what unfolds."
 category: journaling
 platforms: ["iOS"]
 status: live
@@ -17,43 +17,43 @@ icon: "/assets/icons/driftlines.png"
 og_image: "/assets/og/driftlines.png"
 
 seo:
-  title: "Driftlines – A Quiet Daily Journal for Writing & Reflection on iPhone"
-  description: "Driftlines is a quiet, typography-first journal for daily writing, reflection, and noticing small moments. Private, calm, and free from feeds, likes, or noise."
+  title: "Driftlines – A Quiet Daily Journal to Read & Reflect on iPhone"
+  description: "Driftlines is a quiet, typography-first journal you read each day. Follow a fictional life through short daily entries. Private, calm, and distraction-free."
   keywords:
     - daily journal app
-    - writing journal iphone
-    - reflection journal
-    - minimal journal
-    - private journal app
-    - calm writing app
+    - reading journal
+    - prose diary
+    - reflection app
+    - literary journal
+    - calm reading app
     - distraction free journal
 
 hero:
-  headline: "A quiet journal for noticing your days."
-  subheadline: "A calm, typography-first writing space for daily notes, reflections, and small observations — without feeds, likes, or distractions."
+  headline: "A quiet journal you read, not write."
+  subheadline: "A calm, typography-first reading experience where a fictional life unfolds through daily prose — without feeds, likes, or noise."
   cta_label: "Download on the App Store"
 
 value_points:
-  - title: "Write without friction"
-    description: "Open the app and start writing instantly."
-  - title: "Easy on the eyes"
-    description: "Comfortable typography and spacing made for longer thinking."
-  - title: "Truly private"
-    description: "No ads, no third-party trackers, and no pressure to share."
-  - title: "Your own rhythm"
-    description: "Write a sentence or a page — both belong."
+  - title: "A new entry each day"
+    description: "Open the app and read the latest entry in an unfolding journal."
+  - title: "Made for reading"
+    description: "Comfortable typography and spacing designed for long-form text."
+  - title: "Private by default"
+    description: "No social layer, no comments, no public sharing."
+  - title: "Nothing to keep up with"
+    description: "Miss a day or read slowly — the journal continues either way."
 
 features:
-  - title: "Minimal writing mode"
-    description: "A clean, quiet canvas designed for focus and presence."
+  - title: "Daily chronicle entries"
+    description: "Each day reveals a new piece of prose written from a single perspective."
   - title: "Thoughtful typography"
-    description: "A readable layout that makes writing feel slower and lighter."
-  - title: "Optional prompts"
-    description: "Gentle prompts when you want them — never forced."
-  - title: "Simple search"
-    description: "Find past entries easily, without folders or complicated systems."
-  - title: "Built for daily use"
-    description: "A writing habit that feels calm, not demanding."
+    description: "A readable layout that makes reading feel slower and more intentional."
+  - title: "Quiet continuity"
+    description: "Themes, memories, and moments subtly return over time."
+  - title: "Simple navigation"
+    description: "Revisit earlier entries without feeds or timelines."
+  - title: "Designed for calm"
+    description: "No notifications loops, streaks, or pressure to engage."
 
 screenshots:
   - "/assets/screenshots/driftlines/1.png"
@@ -70,14 +70,14 @@ privacy:
     - "Entries stored locally, with optional iCloud sync"
 
 faq:
+  - q: "Is Driftlines a writing or note-taking app?"
+    a: "No. Driftlines is a reading experience. You follow a fictional journal that updates daily."
+  - q: "Do I write anything myself?"
+    a: "No. Each entry is written for you. Your role is to read and reflect."
   - q: "Is Driftlines a social journaling app?"
-    a: "No. Driftlines is private by design — there are no feeds, followers, or sharing pressure."
-  - q: "Can I search my entries?"
-    a: "Yes — Driftlines is designed to help you find past notes quickly."
-  - q: "Do I need an account?"
-    a: "No. You can use the app without creating an account."
-  - q: "Is it good for short daily writing?"
-    a: "Yes. Driftlines works well for quick thoughts, small observations, and short reflections."
+    a: "No. There are no feeds, followers, or sharing features."
+  - q: "Can I reread past entries?"
+    a: "Yes. You can revisit previous entries at any time."
   - q: "Is there a subscription?"
     a: "Pricing is shown on the App Store listing. Some features may require a subscription."
 
@@ -89,4 +89,4 @@ release:
   first_release: "2026-01-26"
   last_updated: "2026-01-26"
 ---
-Driftlines is a calm journal for everyday writing and reflection. Capture what you notice, write for a moment, and keep your thoughts private, readable, and easy to return to.
+Driftlines is a calm, daily journal you read rather than write. Follow a fictional life through quiet prose entries, revisit past moments, and reflect at your own pace — without noise or pressure.
