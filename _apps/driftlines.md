@@ -5,7 +5,7 @@ name: "Driftlines"
 tagline: "Write what you notice."
 category: journaling
 platforms: ["iOS"]
-status: hidden
+status: live
 
 app_store_url: "https://apps.apple.com/app/id6758112876"
 
