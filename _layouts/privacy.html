@@ -1,0 +1,101 @@
+---
+layout: default
+---
+<section class="section">
+  <h1 class="h1">{{ page.title }}</h1>
+
+  {% if page.app_name %}
+    <p class="lead">
+      This privacy policy applies specifically to <strong>{{ page.app_name }}</strong>.
+    </p>
+  {% endif %}
+
+  <!-- INTRO -->
+  <section class="privacy-block">
+    <h2 class="h3">Overview</h2>
+    <p>
+      {{ page.overview }}
+    </p>
+  </section>
+
+  <!-- DATA COLLECTION -->
+  <section class="privacy-block">
+    <h2 class="h3">Data Collection</h2>
+
+    {% if page.data_collection == "none" %}
+      <p>
+        {{ page.app_name }} does not collect personal data.
+      </p>
+    {% else %}
+      <p>
+        {{ page.data_collection }}
+      </p>
+    {% endif %}
+  </section>
+
+  <!-- DATA STORAGE -->
+  <section class="privacy-block">
+    <h2 class="h3">Data Storage & Processing</h2>
+    <p>
+      {{ page.data_storage }}
+    </p>
+  </section>
+
+  <!-- THIRD PARTIES -->
+  <section class="privacy-block">
+    <h2 class="h3">Third-Party Services</h2>
+
+    {% if page.third_parties == "none" %}
+      <p>
+        {{ page.app_name }} does not use third-party analytics, advertising, or tracking services.
+      </p>
+    {% else %}
+      <p>
+        {{ page.third_parties }}
+      </p>
+    {% endif %}
+  </section>
+
+  <!-- HEALTH / SENSITIVE DATA -->
+  {% if page.sensitive_data %}
+  <section class="privacy-block">
+    <h2 class="h3">Health & Sensitive Data</h2>
+    <p>
+      {{ page.sensitive_data }}
+    </p>
+  </section>
+  {% endif %}
+
+  <!-- CHILDREN -->
+  <section class="privacy-block">
+    <h2 class="h3">Children’s Privacy</h2>
+    <p>
+      {{ page.children }}
+    </p>
+  </section>
+
+  <!-- CHANGES -->
+  <section class="privacy-block">
+    <h2 class="h3">Changes to This Policy</h2>
+    <p>
+      {{ page.changes }}
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="privacy-block">
+    <h2 class="h3">Contact</h2>
+    <p>
+      If you have questions about this privacy policy, you can contact us at
+      <a href="mailto:{{ page.contact_email }}">{{ page.contact_email }}</a>.
+    </p>
+  </section>
+
+  {% if page.back_url %}
+    <div class="actions" style="margin-top:32px;">
+      <a class="btn btn-secondary" href="{{ page.back_url }}">
+        Back to {{ page.app_name }}
+      </a>
+    </div>
+  {% endif %}
+</section>
