@@ -5,7 +5,7 @@ name: "WanderWiki"
 tagline: "Discover Wikipedia, one idea at a time."
 category: education
 platforms: ["iOS"]
-status: hidden
+status: live
 
 app_store_url: "https://apps.apple.com/app/id6758459119"
 
