@@ -63,8 +63,6 @@ screenshots:
   - "/assets/screenshots/appmeta/2.png"
   - "/assets/screenshots/appmeta/3.png"
   - "/assets/screenshots/appmeta/4.png"
-  - "/assets/screenshots/appmeta/5.png"
-  - "/assets/screenshots/appmeta/6.png"
 
 privacy:
   data_collection: "none"
