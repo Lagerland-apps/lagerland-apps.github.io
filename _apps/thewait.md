@@ -5,7 +5,7 @@ name: "TheWait"
 tagline: "Make waiting feel lighter."
 category: mindfulness
 platforms: ["iOS"]
-status: hidden
+status: live
 
 app_store_url: "https://apps.apple.com/app/id6757280643"
 
