@@ -61,7 +61,8 @@ screenshots:
   - "/assets/screenshots/thewait/1.png"
   - "/assets/screenshots/thewait/2.png"
   - "/assets/screenshots/thewait/3.png"
-
+  - "/assets/screenshots/thewait/4.png"
+   
 privacy:
   data_collection: "none"
   tracking: false
