@@ -7,7 +7,7 @@ category: graphics
 platforms: ["macOS"]
 status: live
 
-app_store_url: "https://apps.apple.com/app/idXXXXXXXXXX"
+app_store_url: "https://apps.apple.com/app/id6756589122"
 
 price:
   model: one-time-purchase
