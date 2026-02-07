@@ -60,7 +60,8 @@ screenshots:
   - "/assets/screenshots/appmeta-pulse/3.png"
   - "/assets/screenshots/appmeta-pulse/4.png"
   - "/assets/screenshots/appmeta-pulse/5.png"
-
+  - "/assets/screenshots/appmeta-pulse/6.png"
+    
 privacy:
   data_collection: "minimal"
   tracking: false
