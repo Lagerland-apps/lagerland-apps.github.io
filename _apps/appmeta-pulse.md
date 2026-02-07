@@ -7,7 +7,7 @@ category: business
 platforms: ["iOS"]
 status: live
 
-app_store_url: "https://apps.apple.com/app/idXXXXXXXXXX"
+app_store_url: "https://apps.apple.com/app/id6758788164"
 
 price:
   model: subscription
