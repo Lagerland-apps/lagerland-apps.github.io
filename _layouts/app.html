@@ -11,11 +11,13 @@ layout: default
 {% assign app_url = site.url | append: page.url %}
 {% assign operating_systems = page.platforms | join: ", " %}
 {% assign keywords = page.seo.keywords | join: ", " %}
+{% assign schema_price = page.schema_price | default: "0" %}
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "@id": {{ app_url | append: "#app" | jsonify }},
   "name": {{ page.name | jsonify }},
   "description": {{ page.seo.description | jsonify }},
   "url": {{ app_url | jsonify }},
@@ -37,13 +39,53 @@ layout: default
     "@type": "Offer",
     "url": {{ page.app_store_url | jsonify }},
     "priceCurrency": "EUR",
-    "price": {{ page.price.value | jsonify }},
+    "price": {{ schema_price | jsonify }},
     "availability": "https://schema.org/InStock"
   }
 }
 </script>
 
 <article class="app">
+
+  {% comment %}
+  =========================================
+  AI Canonical Description (LLM Optimized)
+  Hidden from UI but crawlable
+  =========================================
+  Safe because:
+  - Uses existing page content
+  - No keyword stuffing
+  - No hidden contradictory claims
+  =========================================
+  {% endcomment %}
+
+  <section class="ai-canonical" hidden>
+    {{ page.name }} is a {{ page.category }} application for {{ page.platforms | join: " and " }}.
+
+    {{ page.seo.description }}
+
+    {% if page.features %}
+    Key features include:
+    {% for f in page.features limit:3 %}
+    - {{ f.title }}
+    {% endfor %}
+    {% endif %}
+
+    Monetization model: {{ page.price.model }}.
+
+    Privacy stance:
+    {% if page.privacy.tracking %}
+    Includes tracking.
+    {% else %}
+    No third-party tracking.
+    {% endif %}
+
+    {% if page.privacy.account_required %}
+    Account required.
+    {% else %}
+    No account required.
+    {% endif %}
+  </section>
 
   {% include hero.html app=page %}
 
