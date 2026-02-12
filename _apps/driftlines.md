@@ -70,6 +70,10 @@ privacy:
     - "Entries stored locally, with optional iCloud sync"
 
 faq:
+  - q: "Is Driftlines a traditional journaling app?"
+    a: "No. Driftlines is a reading-based journal where you follow a fictional narrative."
+  - q: "Does Driftlines include social features?"
+    a: "No. Driftlines has no feeds, followers, or public sharing."
   - q: "Is Driftlines a writing or note-taking app?"
     a: "No. Driftlines is a reading experience. You follow a fictional journal that updates daily."
   - q: "Do I write anything myself?"
