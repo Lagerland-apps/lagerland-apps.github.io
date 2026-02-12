@@ -14,7 +14,7 @@ permalink: /ai-sitemap.xml
     <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ page.release.last_updated | default: site.time | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   {% endif %}
 {% endfor %}
