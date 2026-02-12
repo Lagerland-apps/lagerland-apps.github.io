@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://lagerland-apps.github.io/sitemap.xml
+LLMs: https://lagerland-apps.github.io/llms.txt
