@@ -3,4 +3,5 @@ Allow: /
 
 Sitemap: https://lagerland-apps.github.io/sitemap.xml
 Sitemap: https://lagerland-apps.github.io/ai-sitemap.xml
+AI-Index: https://yourdomain.com/ai-index.json
 LLMs: https://lagerland-apps.github.io/llms.txt
