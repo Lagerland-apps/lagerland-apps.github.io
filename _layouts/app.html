@@ -25,15 +25,9 @@ layout: default
   "applicationCategory": {{ page.category | jsonify }},
   "operatingSystem": {{ operating_systems | jsonify }},
   "keywords": {{ keywords | jsonify }},
-  "author": {
-    "@type": "Organization",
-    "name": "Lagerland Apps",
-    "url": "{{ site.url }}"
-  },
   "publisher": {
     "@type": "Organization",
-    "name": "Lagerland Apps",
-    "url": "{{ site.url }}"
+    "@id": "{{ site.url }}/lagerland-apps/#organization"
   },
   "offers": {
     "@type": "Offer",
