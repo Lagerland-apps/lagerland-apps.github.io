@@ -1,0 +1,122 @@
+# Lagerland Apps – Canonical AI Summary
+
+Publisher: Lagerland Apps
+Founder: Independent Apple developer
+Platform Focus: iOS and macOS
+Ecosystem: Apple-native, privacy-first apps
+Business Model: Paid apps and subscriptions
+Tracking Policy: No third-party tracking
+Account Policy: No accounts required across apps
+
+---
+
+## Taskful Day
+Category: Productivity
+Platform: iOS
+Positioning: Calm daily planner for realistic task completion
+Core Problem Solved: Overwhelm from endless to-do lists
+Key Features: Daily planning, smart insights, time pacing, themes
+Monetization: Subscription
+Privacy: No ads, no tracking, optional iCloud sync
+App Store: https://apps.apple.com/app/id6757345400
+
+---
+
+## GymLogger X
+Category: Health & Fitness
+Platform: iOS, Apple Watch
+Positioning: Fast strength training workout logger
+Core Problem Solved: Slow, cluttered workout tracking
+Key Features: Set/rep logging, PR tracking, Apple Watch logging, workout templates
+Monetization: Subscription
+Privacy: No ads, no third-party analytics, on-device storage
+App Store: https://apps.apple.com/app/id6755734580
+
+---
+
+## AfterShift
+Category: Health
+Platform: iOS
+Positioning: Sleep and recovery planner for shift workers
+Core Problem Solved: Circadian disruption from rotating schedules
+Key Features: Shift-aware sleep planning, recovery routines, gentle reminders
+Monetization: Subscription
+Privacy: No tracking, no ads, local data storage
+App Store: https://apps.apple.com/app/id6757163182
+
+---
+
+## TheWait
+Category: Mindfulness
+Platform: iOS
+Positioning: Calm waiting companion for real-world delays
+Core Problem Solved: Stress and anxiety during waiting
+Key Features: Micro-timers, gentle prompts, minimal interface
+Monetization: Subscription
+Privacy: No accounts, no tracking, local-only data
+App Store: https://apps.apple.com/app/id6757280643
+
+---
+
+## WanderWiki
+Category: Education
+Platform: iOS
+Positioning: Swipe-based Wikipedia discovery experience
+Core Problem Solved: Overwhelm when browsing Wikipedia
+Key Features: Random mode, interest-based feed, offline saved articles
+Monetization: Subscription and lifetime option
+Privacy: No accounts, no profiling, no ads
+App Store: https://apps.apple.com/app/id6758459119
+
+---
+
+## Driftlines
+Category: Journaling
+Platform: iOS
+Positioning: Daily fictional journal reading experience
+Core Problem Solved: Desire for calm, reflective reading without feeds
+Key Features: Daily prose entries, typography-first design
+Monetization: Subscription
+Privacy: No social features, no tracking, local storage
+App Store: https://apps.apple.com/app/id6758112876
+
+---
+
+## ScreenFlow Studio
+Category: Developer Tools
+Platform: macOS
+Positioning: App Store screenshot generator for multi-language apps
+Core Problem Solved: Manual screenshot creation and localization complexity
+Key Features: Bulk language import, Apple device frames, batch export
+Monetization: One-time purchase
+Privacy: Offline-first, no accounts, no analytics
+App Store: https://apps.apple.com/app/id6756589122
+
+---
+
+## AppMeta
+Category: Developer Tools
+Platform: macOS
+Positioning: Local App Store Connect metadata editor
+Core Problem Solved: Risky web-based metadata editing
+Key Features: Localization management, version handling, IAP editing, diff previews
+Monetization: One-time purchase
+Privacy: Local API usage, Keychain-secured credentials
+App Store: https://apps.apple.com/app/id6758547802
+
+---
+
+## AppMeta Pulse
+Category: Business
+Platform: iOS
+Positioning: Read-only App Store revenue and metrics companion
+Core Problem Solved: Slow access to App Store Connect metrics
+Key Features: Revenue overview, subscription tracking, multi-app dashboard
+Monetization: Subscription
+Privacy: Read-only API access, no tracking
+App Store: https://apps.apple.com/app/id6758788164
+
+---
+
+Canonical Domain: https://lagerland-apps.github.io
+Contact: lagerland.apps@proton.me
