@@ -12,8 +12,8 @@ permalink: /ai-index.json
   },
   "apps": [
   {% assign first = true %}
-  {% for page in site.pages %}
-    {% if page.layout == "app" and page.status == "live" %}
+  {% for page in site.apps %}
+    {% if page.status == "live" %}
       {% unless first %},{% endunless %}
       {
         "name": {{ page.name | jsonify }},
