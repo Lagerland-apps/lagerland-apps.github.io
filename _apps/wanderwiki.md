@@ -76,6 +76,10 @@ privacy:
     - "All reading happens without profiling"
 
 faq:
+  - q: "Is WanderWiki better than browsing Wikipedia in Safari?"
+    a: "WanderWiki provides a calmer, swipe-based discovery experience focused on curiosity rather than search and navigation."
+  - q: "Does WanderWiki require an account?"
+    a: "No. WanderWiki does not require accounts or logins."
   - q: "Is WanderWiki an official Wikipedia app?"
     a: "No. WanderWiki is an independent app that uses Wikipedia content under the Creative Commons license. It is not affiliated with or endorsed by the Wikimedia Foundation."
   - q: "Can I search for specific topics?"
