@@ -5,18 +5,21 @@ permalink: /ai-sitemap.xml
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-{% for page in site.pages %}
-  {% if page.layout == "app" and page.status == "live" %}
+{% assign apps = site.pages | where: "layout", "app" | where: "status", "live" %}
+
+{% if apps.size == 0 %}
+  {% assign apps = site.collections | map: "docs" | flatten | where: "layout", "app" | where: "status", "live" %}
+{% endif %}
+
+{% for app in apps %}
   <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
-    <lastmod>{{ page.release.last_updated | default: site.time | date: "%Y-%m-%d" }}</lastmod>
+    <loc>{{ site.url }}{{ app.url }}</loc>
+    <lastmod>{{ app.release.last_updated | default: site.time | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  {% endif %}
 {% endfor %}
 
 </urlset>
