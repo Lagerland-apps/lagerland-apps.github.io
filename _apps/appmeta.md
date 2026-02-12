@@ -75,6 +75,10 @@ privacy:
     - "Credentials stored securely in macOS Keychain."
 
 faq:
+  - q: "Is AppMeta safe to use with App Store Connect?"
+    a: "Yes. AppMeta uses Apple’s official APIs and runs locally on your Mac."
+  - q: "Does AppMeta replace App Store Connect?"
+    a: "No. AppMeta works alongside App Store Connect to improve metadata editing."
   - q: "Is AppMeta an alternative to App Store Connect?"
     a: "No. AppMeta works with App Store Connect. It gives you a safer, faster way to edit metadata before syncing changes."
   - q: "Can I manage multiple apps?"
