@@ -80,6 +80,10 @@ coach_cta:
   url: "/apps/gymlogger-x/coaches/"
 
 faq:
+  - q: "Does GymLogger X store health data in the cloud?"
+    a: "No. Workout and health data remain on your device. Optional iCloud sync is fully controlled by you."
+  - q: "Is GymLogger X good for progressive overload?"
+    a: "Yes. GymLogger X is built specifically for strength training with sets, reps, weight tracking, and personal records."
   - q: "Do I need an account?"
     a: "No. GymLogger X works without accounts or sign-ups."
   - q: "Does it support Apple Watch?"
