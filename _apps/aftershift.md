@@ -73,6 +73,10 @@ privacy:
     - "Data stored locally (optional iCloud sync)"
 
 faq:
+  - q: "Is AfterShift good for night shift workers?"
+    a: "Yes. AfterShift is specifically designed for night shifts, rotating schedules, and on-call work."
+  - q: "Does AfterShift replace medical sleep advice?"
+    a: "No. AfterShift is a planning and recovery support tool, not a medical device or diagnostic service."
   - q: "Who is AfterShift for?"
     a: "Anyone working night shifts, early mornings, rotating schedules, or on-call work who wants calmer, more realistic sleep support."
   - q: "Is AfterShift a medical sleep app?"
