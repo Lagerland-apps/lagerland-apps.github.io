@@ -73,6 +73,10 @@ privacy:
     - "Credentials stored securely in the Keychain"
 
 faq:
+  - q: "Is AppMeta Pulse safe for my App Store credentials?"
+    a: "Yes. Credentials are stored securely in the Keychain and all data comes directly from Apple’s official APIs."
+  - q: "Is AppMeta Pulse read-only?"
+    a: "Yes. It does not allow submissions or edits — it is strictly for viewing metrics."
   - q: "Is AppMeta Pulse an official Apple app?"
     a: "No. AppMeta Pulse is an independent, read-only companion built for developers using App Store Connect."
   - q: "Can I manage apps or submit updates?"
