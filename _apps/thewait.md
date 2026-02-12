@@ -73,6 +73,10 @@ privacy:
     - "All data stays on your device"
 
 faq:
+  - q: "Can TheWait help with waiting anxiety?"
+    a: "Yes. TheWait offers gentle timers and micro-prompts designed to reduce stress during everyday waiting moments."
+  - q: "Is TheWait a full meditation course?"
+    a: "No. TheWait is built for short real-life pauses, not long guided meditation sessions."
   - q: "Is TheWait a meditation app?"
     a: "Not really. TheWait is designed for short, real-world moments — queues, delays, transitions, and waiting rooms — not long meditation sessions."
   - q: "Do I need experience with mindfulness?"
