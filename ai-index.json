@@ -1,0 +1,42 @@
+---
+layout: none
+permalink: /ai-index.json
+---
+
+{
+  "publisher": {
+    "name": "Lagerland Apps",
+    "website": "{{ site.url }}",
+    "platform_focus": "Apple-native apps for iOS and macOS",
+    "privacy_philosophy": "Privacy-first. No ads. No third-party tracking."
+  },
+  "apps": [
+  {% assign first = true %}
+  {% for page in site.pages %}
+    {% if page.layout == "app" and page.status == "live" %}
+      {% unless first %},{% endunless %}
+      {
+        "name": {{ page.name | jsonify }},
+        "slug": {{ page.slug | jsonify }},
+        "url": "{{ site.url }}{{ page.url }}",
+        "category": {{ page.category | jsonify }},
+        "platforms": {{ page.platforms | jsonify }},
+        "pricing_model": {{ page.price.model | jsonify }},
+        "app_store_url": {{ page.app_store_url | jsonify }},
+        "privacy": {
+          "tracking": {{ page.privacy.tracking | jsonify }},
+          "account_required": {{ page.privacy.account_required | jsonify }},
+          "data_collection": {{ page.privacy.data_collection | jsonify }}
+        },
+        "core_description": {{ page.seo.description | jsonify }},
+        "core_features": [
+          {% for f in page.features limit:4 %}
+          {{ f.title | jsonify }}{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+      {% assign first = false %}
+    {% endif %}
+  {% endfor %}
+  ]
+}
