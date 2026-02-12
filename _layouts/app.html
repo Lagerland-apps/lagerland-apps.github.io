@@ -1,6 +1,48 @@
 ---
 layout: default
 ---
+
+{% comment %}
+  ===============================
+  Structured Data (JSON-LD)
+  ===============================
+{% endcomment %}
+
+{% assign app_url = site.url | append: page.url %}
+{% assign operating_systems = page.platforms | join: ", " %}
+{% assign keywords = page.seo.keywords | join: ", " %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ page.name | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "url": {{ app_url | jsonify }},
+  "image": {{ page.og_image | absolute_url | jsonify }},
+  "applicationCategory": {{ page.category | jsonify }},
+  "operatingSystem": {{ operating_systems | jsonify }},
+  "keywords": {{ keywords | jsonify }},
+  "author": {
+    "@type": "Organization",
+    "name": "Lagerland Apps",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lagerland Apps",
+    "url": "{{ site.url }}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": {{ page.app_store_url | jsonify }},
+    "priceCurrency": "EUR",
+    "price": {{ page.price.value | jsonify }},
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+
 <article class="app">
 
   {% include hero.html app=page %}
@@ -38,22 +80,22 @@ layout: default
 
   {% include pricing.html app=page %}
 
-{% if page.coach_cta %}
-<section class="section">
-  <div class="card">
-    <div class="card-title">{{ page.coach_cta.title }}</div>
-    <div class="card-text">
-      {{ page.coach_cta.description }}
-    </div>
+  {% if page.coach_cta %}
+  <section class="section">
+    <div class="card">
+      <div class="card-title">{{ page.coach_cta.title }}</div>
+      <div class="card-text">
+        {{ page.coach_cta.description }}
+      </div>
 
-    <div class="actions" style="margin-top:16px;">
-      <a class="btn btn-secondary" href="{{ page.coach_cta.url }}">
-        {{ page.coach_cta.cta_label }}
-      </a>
+      <div class="actions" style="margin-top:16px;">
+        <a class="btn btn-secondary" href="{{ page.coach_cta.url }}">
+          {{ page.coach_cta.cta_label }}
+        </a>
+      </div>
     </div>
-  </div>
-</section>
-{% endif %}
+  </section>
+  {% endif %}
   
   {% include faq.html app=page %}
 
