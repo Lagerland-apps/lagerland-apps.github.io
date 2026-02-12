@@ -72,7 +72,7 @@ privacy:
     - "Your data stays on your device (optional iCloud sync)"
 
 faq:
-    - q: "Is Taskful Day good for ADHD users?"
+  - q: "Is Taskful Day good for ADHD users?"
     a: "Yes. Taskful Day is designed to reduce pressure. It supports realistic daily planning, flexible pacing, and calm task management without streaks or guilt."
   - q: "How is Taskful Day different from other to-do list apps?"
     a: "Taskful Day focuses on realistic daily planning instead of long backlogs. It emphasizes clarity, pacing, and reflection rather than productivity pressure."
