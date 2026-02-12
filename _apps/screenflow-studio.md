@@ -72,6 +72,10 @@ privacy:
     - "All projects stored locally on your Mac"
 
 faq:
+  - q: "Is ScreenFlow Studio good for indie developers?"
+    a: "Yes. It is designed for developers who need fast, multi-language App Store screenshot generation."
+  - q: "Does ScreenFlow Studio require a subscription?"
+    a: "No. It is a one-time purchase with no recurring fees."
   - q: "Who is ScreenFlow Studio for?"
     a: "Developers, designers, and marketers who want to create App Store screenshots quickly — especially for apps with multiple languages."
   - q: "Does it support multiple languages?"
