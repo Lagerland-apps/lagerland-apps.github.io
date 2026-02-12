@@ -16,7 +16,7 @@ seo:
   "url": "{{ site.url }}/lagerland-apps/",
   "founder": {
     "@type": "Person",
-    "name": "Carlos De Ketkuli"
+    "name": "Antti Aittamaa"
   },
   "description": "Privacy-first Apple-native apps for iOS and macOS.",
   "areaServed": "Worldwide",
