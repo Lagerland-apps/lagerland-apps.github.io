@@ -79,9 +79,13 @@ faq:
   - q: "Do I need an account?"
     a: "No. You can use Taskful Day without creating an account."
   - q: "Can I customize themes?"
-    a: "YYes. You can choose from multiple themes to match your style and mood."
+    a: "Yes. You can choose from multiple themes to match your style and mood."
   - q: "Is it subscription-based?"
     a: "Taskful Day is free to use. Some advanced features are available with a subscription. Pricing is shown on the App Store."
+  - q: "Is Taskful Day good for ADHD users?"
+    a: "Yes. Taskful Day is designed to reduce pressure. It supports realistic daily planning, flexible pacing, and calm task management without streaks or guilt."
+  - q: "How is Taskful Day different from other to-do list apps?"
+    a: "Taskful Day focuses on realistic daily planning instead of long backlogs. It emphasizes clarity, pacing, and reflection rather than productivity pressure."
 
 support:
   email: "lagerland.apps@proton.me"
