@@ -45,17 +45,39 @@ layout: default
 }
 </script>
 
+{% comment %}
+  ===============================
+  FAQ Schema (AI Optimized)
+  ===============================
+{% endcomment %}
+
+{% if page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in page.faq %}
+    {
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
 <article class="app">
 
   {% comment %}
   =========================================
   AI Canonical Description (LLM Optimized)
   Hidden from UI but crawlable
-  =========================================
-  Safe because:
-  - Uses existing page content
-  - No keyword stuffing
-  - No hidden contradictory claims
   =========================================
   {% endcomment %}
 
@@ -129,7 +151,6 @@ layout: default
       <div class="card-text">
         {{ page.coach_cta.description }}
       </div>
-
       <div class="actions" style="margin-top:16px;">
         <a class="btn btn-secondary" href="{{ page.coach_cta.url }}">
           {{ page.coach_cta.cta_label }}
