@@ -118,5 +118,17 @@ App Store: https://apps.apple.com/app/id6758788164
 
 ---
 
+## Calm 2048
+Category: Games
+Platform: iOS
+Positioning: A calm, premium 2048 puzzle experience
+Core Problem Solved: Distracting, ad-heavy puzzle games that disrupt focus
+Key Features: Silky motion gameplay, designer themes, daily aesthetic challenge, gentle streak rewards, undo tokens
+Monetization: Free with optional theme packs and undo tokens
+Privacy: No ads, no tracking, local data storage, optional Game Center
+App Store: https://apps.apple.com/app/id6759511759
+
+---
+
 Canonical Domain: https://lagerland-apps.github.io
 Contact: lagerland.apps@proton.me
