@@ -58,7 +58,7 @@ features:
 
 screenshots:
   - "/assets/screenshots/allpaid/1.png"
-  - "/assets/screenshots/allpaid/2.png"
+  - "/assets/screenshots/allpaid/en-US_1_1.png"
   - "/assets/screenshots/allpaid/3.png"
   - "/assets/screenshots/allpaid/4.png"
 
