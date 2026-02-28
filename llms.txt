@@ -130,5 +130,17 @@ App Store: https://apps.apple.com/app/id6759511759
 
 ---
 
+## AllPaid
+Category: Finance
+Platform: iOS
+Positioning: Calm bill reminder & subscription tracker
+Core Problem Solved: Forgetting due dates and feeling stressed about recurring bills
+Key Features: Bill reminders, subscription tracking, recurring & one-time bills, mark-as-paid flow, payment history, App Lock
+Monetization: Subscription (Pro)
+Privacy: No accounts, no ads, no tracking, data stored locally
+App Store: https://apps.apple.com/app/id6757253009
+
+--
+
 Canonical Domain: https://lagerland-apps.github.io
 Contact: lagerland.apps@proton.me
