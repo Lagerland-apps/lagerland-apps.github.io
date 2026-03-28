@@ -103,6 +103,29 @@ layout: default
     {% endif %}
   </section>
 
+  {% comment %}
+  =========================================
+  HERO VIDEO (Reddit / Conversion Optimized)
+  =========================================
+  {% endcomment %}
+
+  {% if page.hero.video %}
+  <section class="section hero-video-section">
+    <div class="hero-video-wrap">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="{{ page.hero.video_poster | default: page.og_image }}"
+        class="hero-video">
+        <source src="{{ page.hero.video }}" type="video/mp4">
+      </video>
+    </div>
+  </section>
+  {% endif %}
+
   {% include hero.html app=page %}
 
   {% if page.value_points %}
