@@ -384,3 +384,43 @@ a:hover{ text-decoration: underline; }
   flex-wrap: wrap;
 }
 .small{ font-size: var(--text-sm); color: var(--muted); }
+
+
+.hero-video-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: var(--s-5);
+}
+
+.hero-video-wrap {
+  max-width: 320px;
+  width: 100%;
+}
+
+.hero-video {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-3);
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg-elev) 80%, transparent);
+  box-shadow: var(--shadow-2);
+  display: block;
+}
+
+/* subtle polish */
+.hero-video {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-video:hover {
+  transform: scale(1.015);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.18);
+}
+
+/* mobile spacing tweak */
+@media (max-width: 680px){
+  .hero-video-section {
+    padding-bottom: var(--s-4);
+  }
+}
