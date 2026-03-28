@@ -35,6 +35,8 @@ hero:
   headline: "Wikipedia, but made for wandering."
   subheadline: "Swipe through fascinating articles from history, science, culture, and more — no searching, no noise, just curiosity."
   cta_label: "Download on the App Store"
+  video: "/assets/videos/wanderwiki_preview.mov"
+  video_poster: "/assets/videos/wanderwiki-poster.jpg"
 
 value_points:
   - title: "Discovery without effort"
