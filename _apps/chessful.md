@@ -35,8 +35,6 @@ hero:
   headline: "Stop guessing your moves."
   subheadline: "Understand your mistakes, train what matters, and improve every game with clear, calm chess insights."
   cta_label: "Download on the App Store"
-  video: "/assets/videos/chessful_preview.mov"
-  video_poster: "/assets/videos/chessful-poster.jpg"
 
 value_points:
   - title: "Understand why you lose"
