@@ -3,33 +3,63 @@ layout: default
 title: Lagerland Apps
 ---
 
-<!-- HERO -->
+<!-- ============================
+     HERO — Cinematic, emotional
+     ============================ -->
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">Privacy-first iOS & macOS apps</p>
+    <p class="overline">Privacy-first apps for iOS & macOS</p>
     <h1 class="h1">
-      Apps that feel <span class="gradient-text">calm, fast, and useful.</span>
+      Software that feels<br><span class="gradient-text">calm, fast, and useful.</span>
     </h1>
     <p class="lead">
-      14 thoughtfully crafted apps — no tracking, no accounts, no noise. Just tools that respect your time and privacy.
+      Thoughtfully crafted apps with no tracking, no accounts, and no noise. Just tools that respect your time.
     </p>
-
     <div class="actions">
       <a class="btn btn-primary" href="#apps">Browse apps</a>
-      <a class="btn btn-secondary" href="/support/">Support</a>
+      <a class="btn btn-secondary" href="/support/">Get support</a>
     </div>
   </div>
 </section>
 
-<!-- FEATURED APP SPOTLIGHT -->
+<!-- ============================
+     TRUST BAR — Social proof
+     ============================ -->
+<section class="section reveal">
+  <div class="trust-bar">
+    <div class="trust-item">
+      <span class="trust-value" data-count="14" data-suffix="">0</span>
+      <span class="trust-label">Apps Published</span>
+    </div>
+    <span class="trust-divider"></span>
+    <div class="trust-item">
+      <span class="trust-value">100%</span>
+      <span class="trust-label">Privacy-First</span>
+    </div>
+    <span class="trust-divider"></span>
+    <div class="trust-item">
+      <span class="trust-value">Zero</span>
+      <span class="trust-label">Trackers or Ads</span>
+    </div>
+    <span class="trust-divider"></span>
+    <div class="trust-item">
+      <span class="trust-value">Local</span>
+      <span class="trust-label">Data Storage</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     FEATURED APP — Spotlight
+     ============================ -->
 {% assign featured = site.apps | where: "slug", "gymlogger-x" | first %}
 {% if featured %}
-<section class="section reveal">
+<section class="section reveal-scale">
   <div class="spotlight-card">
     <div class="spotlight-content">
       <span class="pill">Featured</span>
       <h2 class="h2" style="margin-bottom:var(--s-2);">{{ featured.name }}</h2>
-      <p class="lead" style="margin-bottom:var(--s-4);">{{ featured.hero.subheadline }}</p>
+      <p class="lead">{{ featured.hero.subheadline }}</p>
       <div class="actions">
         <a class="btn btn-primary" href="{{ featured.url }}">Learn more</a>
       </div>
@@ -41,49 +71,52 @@ title: Lagerland Apps
 </section>
 {% endif %}
 
-<!-- APP GRID -->
-<section id="apps" class="section">
-  <h2 class="h2 reveal">All Apps</h2>
+<!-- ============================
+     APP GRID — Staggered reveal
+     ============================ -->
+<section id="apps" class="section--lg">
+  <div class="section-center">
+    <p class="overline reveal">The Collection</p>
+    <h2 class="h2 reveal">All Apps</h2>
+  </div>
 
-  <div class="grid grid-2 stagger-children">
+  <div class="grid grid-2 stagger">
     {% for app in site.apps %}
       {% if app.status == "live" %}
         <a class="card card-app" href="{{ app.url }}">
           <div class="app-badge" style="margin-bottom:var(--s-3);">
             {% if app.icon %}
-              <img
-                class="app-icon"
-                src="{{ app.icon }}"
-                alt="{{ app.name }} icon"
-                loading="lazy"
-              >
+              <img class="app-icon" src="{{ app.icon }}" alt="{{ app.name }} icon" loading="lazy">
             {% endif %}
-
             <div class="app-meta">
               <div class="app-name">{{ app.name }}</div>
               <div class="app-tagline">{{ app.tagline }}</div>
             </div>
           </div>
-
           {% if app.seo and app.seo.description %}
-            <div class="card-text">
-              {{ app.seo.description }}
-            </div>
+            <div class="card-text">{{ app.seo.description }}</div>
           {% endif %}
-
           <div class="meta-row" style="margin-top:var(--s-3);">
-            {% if app.category %}
-              <span class="pill">{{ app.category }}</span>
-            {% endif %}
-
-            {% if app.platforms %}
-              <span class="pill">
-                {{ app.platforms | join: " · " }}
-              </span>
-            {% endif %}
+            {% if app.category %}<span class="pill">{{ app.category }}</span>{% endif %}
+            {% if app.platforms %}<span class="pill">{{ app.platforms | join: " &middot; " }}</span>{% endif %}
           </div>
         </a>
       {% endif %}
     {% endfor %}
+  </div>
+</section>
+
+<!-- ============================
+     CTA — Emotional close
+     ============================ -->
+<section class="cta-section reveal">
+  <p class="overline">Built different</p>
+  <h2 class="h2">Apps that put you first.</h2>
+  <p class="lead">
+    No data harvesting. No dark patterns. No subscriptions you forget about. Just software that works for you.
+  </p>
+  <div class="actions">
+    <a class="btn btn-primary" href="#apps">Explore all apps</a>
+    <a class="btn btn-secondary" href="mailto:lagerland.apps@proton.me">Get in touch</a>
   </div>
 </section>

@@ -2,11 +2,7 @@
 layout: default
 ---
 
-{% comment %}
-  ===============================
-  Structured Data (JSON-LD)
-  ===============================
-{% endcomment %}
+{% comment %} ===== Structured Data (JSON-LD) ===== {% endcomment %}
 
 {% assign app_url = site.url | append: page.url %}
 {% assign operating_systems = page.platforms | join: ", " %}
@@ -39,12 +35,6 @@ layout: default
 }
 </script>
 
-{% comment %}
-  ===============================
-  FAQ Schema (AI Optimized)
-  ===============================
-{% endcomment %}
-
 {% if page.faq %}
 <script type="application/ld+json">
 {
@@ -68,55 +58,24 @@ layout: default
 
 <article class="app">
 
-  {% comment %}
-  =========================================
-  AI Canonical Description (LLM Optimized)
-  =========================================
-  {% endcomment %}
-
+  {% comment %} ===== AI Canonical (hidden, crawlable) ===== {% endcomment %}
   <section class="ai-canonical" hidden>
     {{ page.name }} is a {{ page.category }} application for {{ page.platforms | join: " and " }}.
-
     {{ page.seo.description }}
-
     {% if page.features %}
     Key features include:
-    {% for f in page.features limit:3 %}
-    - {{ f.title }}
-    {% endfor %}
-    {% endif %}
-
+    {% for f in page.features limit:3 %}- {{ f.title }}
+    {% endfor %}{% endif %}
     Monetization model: {{ page.price.model }}.
-
-    Privacy stance:
-    {% if page.privacy.tracking %}
-    Includes tracking.
-    {% else %}
-    No third-party tracking.
-    {% endif %}
-
-    {% if page.privacy.account_required %}
-    Account required.
-    {% else %}
-    No account required.
-    {% endif %}
+    Privacy: {% if page.privacy.tracking %}Includes tracking.{% else %}No third-party tracking.{% endif %}
+    {% if page.privacy.account_required %}Account required.{% else %}No account required.{% endif %}
   </section>
 
-  {% comment %}
-  =========================================
-  HERO VIDEO (Reddit / Conversion Optimized)
-  =========================================
-  {% endcomment %}
-
+  {% comment %} ===== HERO VIDEO ===== {% endcomment %}
   {% if page.hero.video %}
   <section class="section hero-video-section reveal-scale">
     <div class="hero-video-wrap">
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
+      <video autoplay muted loop playsinline preload="auto"
         poster="{{ page.hero.video_poster | default: page.og_image }}"
         class="hero-video">
         <source src="{{ page.hero.video }}" type="video/mp4">
@@ -125,14 +84,41 @@ layout: default
   </section>
   {% endif %}
 
+  {% comment %} ===== HERO ===== {% endcomment %}
   {% include hero.html app=page %}
 
+  {% comment %} ===== TRUST BAR ===== {% endcomment %}
+  <section class="section reveal">
+    <div class="trust-bar">
+      <div class="trust-item">
+        <span class="trust-value">{{ page.platforms | join: " + " }}</span>
+        <span class="trust-label">Platform{{ page.platforms.size | minus: 1 | at_least: 0 | plus: page.platforms.size | divided_by: page.platforms.size }}s</span>
+      </div>
+      <span class="trust-divider"></span>
+      <div class="trust-item">
+        <span class="trust-value">Zero</span>
+        <span class="trust-label">Data Collection</span>
+      </div>
+      <span class="trust-divider"></span>
+      <div class="trust-item">
+        <span class="trust-value">No Ads</span>
+        <span class="trust-label">Ever</span>
+      </div>
+      <span class="trust-divider"></span>
+      <div class="trust-item">
+        <span class="trust-value">Local</span>
+        <span class="trust-label">Data Storage</span>
+      </div>
+    </div>
+  </section>
+
+  {% comment %} ===== VALUE POINTS ===== {% endcomment %}
   {% if page.value_points %}
   <section class="section">
-    <div class="grid grid-4 stagger-children">
+    <div class="grid grid-4 stagger">
       {% for item in page.value_points %}
       <div class="card">
-        <div class="card-icon">{{ item.icon | default: "&#10022;" }}</div>
+        <div class="card-icon">&#10022;</div>
         <div class="card-title">{{ item.title }}</div>
         <div class="card-text">{{ item.description }}</div>
       </div>
@@ -141,14 +127,19 @@ layout: default
   </section>
   {% endif %}
 
+  {% comment %} ===== SCREENSHOTS ===== {% endcomment %}
   {% if page.screenshots %}
     {% include screenshots.html app=page %}
   {% endif %}
 
+  {% comment %} ===== FEATURES ===== {% endcomment %}
   {% if page.features %}
-  <section class="section">
-    <h2 class="h2 reveal">What you can do</h2>
-    <div class="features-list stagger-children">
+  <section class="section--lg">
+    <div class="section-center">
+      <p class="overline reveal">Capabilities</p>
+      <h2 class="h2 reveal">What you can do</h2>
+    </div>
+    <div class="features-list stagger">
       {% for f in page.features %}
       <div class="feature-row">
         <div class="feature-number">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</div>
@@ -162,26 +153,26 @@ layout: default
   </section>
   {% endif %}
 
+  {% comment %} ===== PRICING ===== {% endcomment %}
   {% include pricing.html app=page %}
 
+  {% comment %} ===== COACH CTA ===== {% endcomment %}
   {% if page.coach_cta %}
   <section class="section reveal">
     <div class="card">
       <div class="card-title">{{ page.coach_cta.title }}</div>
-      <div class="card-text">
-        {{ page.coach_cta.description }}
-      </div>
-      <div class="actions" style="margin-top:16px;">
-        <a class="btn btn-secondary" href="{{ page.coach_cta.url }}">
-          {{ page.coach_cta.cta_label }}
-        </a>
+      <div class="card-text">{{ page.coach_cta.description }}</div>
+      <div class="actions" style="margin-top:var(--s-4);">
+        <a class="btn btn-secondary" href="{{ page.coach_cta.url }}">{{ page.coach_cta.cta_label }}</a>
       </div>
     </div>
   </section>
   {% endif %}
 
+  {% comment %} ===== FAQ ===== {% endcomment %}
   {% include faq.html app=page %}
 
+  {% comment %} ===== PRIVACY ===== {% endcomment %}
   <section class="section reveal">
     <h2 class="h2">Privacy</h2>
     <div class="card">
@@ -199,19 +190,27 @@ layout: default
           <div class="kv-v">{% if page.privacy.account_required %}Yes{% else %}No{% endif %}</div>
         </div>
       </div>
-
       {% if page.privacy.notes %}
       <ul class="bullets">
-        {% for n in page.privacy.notes %}
-          <li>{{ n }}</li>
-        {% endfor %}
+        {% for n in page.privacy.notes %}<li>{{ n }}</li>{% endfor %}
       </ul>
       {% endif %}
-
-      <div class="actions" style="margin-top:var(--s-3);">
+      <div class="actions" style="margin-top:var(--s-4);">
         <a class="btn btn-secondary" href="/apps/{{ page.slug }}/privacy/">Read privacy policy</a>
         <a class="btn btn-secondary" href="/apps/{{ page.slug }}/support/">Get support</a>
       </div>
+    </div>
+  </section>
+
+  {% comment %} ===== CTA — Emotional close ===== {% endcomment %}
+  <section class="cta-section reveal">
+    <p class="overline">Ready?</p>
+    <h2 class="h2">Try {{ page.name }} today.</h2>
+    <p class="lead">{{ page.hero.subheadline }}</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="{{ page.app_store_url }}" rel="noopener">
+        {{ page.hero.cta_label | default: "Download on the App Store" }}
+      </a>
     </div>
   </section>
 
