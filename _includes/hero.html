@@ -1,5 +1,5 @@
 <section class="hero">
-  <div class="hero-left">
+  <div class="hero-left reveal">
     <div class="app-badge">
       <img class="app-icon" src="{{ include.app.icon }}" alt="{{ include.app.name }} icon" loading="lazy">
       <div class="app-meta">
@@ -29,8 +29,7 @@
     </div>
   </div>
 
-  <div class="hero-right">
-    <!-- Hero mock: uses first screenshot if present; falls back to icon -->
+  <div class="hero-right reveal-scale">
     {% assign hero_img = include.app.screenshots[0] | default: include.app.icon %}
     <div class="hero-media">
       <img class="hero-shot" src="{{ hero_img }}" alt="{{ include.app.name }} screenshot" loading="lazy">

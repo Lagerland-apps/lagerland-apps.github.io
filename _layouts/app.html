@@ -71,7 +71,6 @@ layout: default
   {% comment %}
   =========================================
   AI Canonical Description (LLM Optimized)
-  Hidden from UI but crawlable
   =========================================
   {% endcomment %}
 
@@ -110,7 +109,7 @@ layout: default
   {% endcomment %}
 
   {% if page.hero.video %}
-  <section class="section hero-video-section">
+  <section class="section hero-video-section reveal-scale">
     <div class="hero-video-wrap">
       <video
         autoplay
@@ -130,9 +129,10 @@ layout: default
 
   {% if page.value_points %}
   <section class="section">
-    <div class="grid grid-4">
+    <div class="grid grid-4 stagger-children">
       {% for item in page.value_points %}
       <div class="card">
+        <div class="card-icon">{{ item.icon | default: "&#10022;" }}</div>
         <div class="card-title">{{ item.title }}</div>
         <div class="card-text">{{ item.description }}</div>
       </div>
@@ -147,12 +147,15 @@ layout: default
 
   {% if page.features %}
   <section class="section">
-    <h2 class="h2">What you can do</h2>
-    <div class="grid grid-2">
+    <h2 class="h2 reveal">What you can do</h2>
+    <div class="features-list stagger-children">
       {% for f in page.features %}
-      <div class="card">
-        <div class="card-title">{{ f.title }}</div>
-        <div class="card-text">{{ f.description }}</div>
+      <div class="feature-row">
+        <div class="feature-number">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</div>
+        <div>
+          <div class="card-title">{{ f.title }}</div>
+          <div class="card-text">{{ f.description }}</div>
+        </div>
       </div>
       {% endfor %}
     </div>
@@ -162,7 +165,7 @@ layout: default
   {% include pricing.html app=page %}
 
   {% if page.coach_cta %}
-  <section class="section">
+  <section class="section reveal">
     <div class="card">
       <div class="card-title">{{ page.coach_cta.title }}</div>
       <div class="card-text">
@@ -176,10 +179,10 @@ layout: default
     </div>
   </section>
   {% endif %}
-  
+
   {% include faq.html app=page %}
 
-  <section class="section">
+  <section class="section reveal">
     <h2 class="h2">Privacy</h2>
     <div class="card">
       <div class="kv">
@@ -205,7 +208,7 @@ layout: default
       </ul>
       {% endif %}
 
-      <div class="actions">
+      <div class="actions" style="margin-top:var(--s-3);">
         <a class="btn btn-secondary" href="/apps/{{ page.slug }}/privacy/">Read privacy policy</a>
         <a class="btn btn-secondary" href="/apps/{{ page.slug }}/support/">Get support</a>
       </div>

@@ -1,6 +1,34 @@
 <footer class="footer">
-  <div class="container footer-inner">
-    <div class="small">© {{ "now" | date: "%Y" }} Lagerland Apps</div>
-    <div class="small"><a href="/support/">Support</a> · <a href="/privacy/">Privacy</a> · <a href="/apps/gymlogger-x/coaches/">For Coaches</a></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a class="brand" href="/" style="margin-bottom:var(--s-3);display:inline-flex;">
+          <span class="brand-mark">L</span>
+          <span class="brand-name">Lagerland Apps</span>
+        </a>
+        <p class="small">Privacy-first iOS & macOS apps built to feel calm, fast, and useful.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Apps</h4>
+        {% for app in site.apps %}
+          {% if app.status == "live" %}
+            <a href="{{ app.url }}">{{ app.name }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="mailto:lagerland.apps@proton.me">Email us</a>
+        <a href="/apps/gymlogger-x/coaches/">For Coaches</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="small">&copy; {{ "now" | date: "%Y" }} Lagerland Apps</div>
+    </div>
   </div>
 </footer>

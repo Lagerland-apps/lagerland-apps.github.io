@@ -1,7 +1,7 @@
-<section id="screenshots" class="section">
+<section id="screenshots" class="section reveal">
   <div class="section-head">
     <h2 class="h2">Screenshots</h2>
-    <div class="section-sub">A quick look at the experience.</div>
+    <div class="section-sub">Swipe or drag to explore</div>
   </div>
 
   <div class="shots">
@@ -11,4 +11,12 @@
       </figure>
     {% endfor %}
   </div>
+
+  {% if include.app.screenshots.size > 1 %}
+  <div class="shots-indicators">
+    {% for s in include.app.screenshots %}
+      <span class="shots-dot {% if forloop.first %}active{% endif %}"></span>
+    {% endfor %}
+  </div>
+  {% endif %}
 </section>
