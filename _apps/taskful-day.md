@@ -2,57 +2,66 @@
 layout: app
 slug: taskful-day
 name: "Taskful Day"
-tagline: “Plan the day. Finish the day — calmly.”
+tagline: "Plan the day. Finish the day — calmly."
 category: productivity
-platforms: ["iOS"]
+platforms: ["iOS", "iPadOS", "macOS", "visionOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757345400"
 
 price:
   model: subscription
-  value: "From €1.99 / month"
+  value: "Free — Pro from €2.99/mo"
+schema_price: "0"
 
 icon: "/assets/icons/taskful-day.png"
 og_image: "/assets/og/taskful-day.png"
 
 seo:
-  title: "Taskful Day – Calm Daily Planner & Focused To-Do List for iPhone"
-  description: "Taskful Day is a calm daily planner that helps you turn tasks into a realistic plan you can actually finish. Prioritize what matters, pace your day, and reduce overwhelm with smart insights and a distraction-free design."
+  title: "Taskful Day – Calm Daily Planner & To-Do List for iPhone"
+  description: "Taskful Day is a calm daily planner that turns overwhelming to-do lists into realistic day plans. Focus mode, smart insights, voice capture, and no ads. Private by design."
   keywords:
     - daily planner app
     - calm to do list
-    - day planner planner
-    - focus planner
+    - daily task planner
+    - focus planner app
+    - daily schedule planner
+    - task manager iPhone
     - productivity planner
-    - task planner
+    - ADHD planner app
+    - daily organizer app
+    - focus timer planner
+    - guilt-free to do list
+    - mindful productivity app
 
 hero:
-  headline: "A planner built for real days."
-  subheadline: "Taskful Day helps you turn an overwhelming to-do list into a calm, realistic plan — so you finish your day feeling clear, not behind."
-  cta_label: "Download on the App Store"
+  headline: "Your day, actually planned."
+  subheadline: "Taskful Day turns an overwhelming to-do list into a calm, realistic plan you can actually finish — with focus sessions, smart insights, and zero guilt."
+  cta_label: "Download Free"
 
 value_points:
-  - title: "Plan realistically"
-    description: "Create a day plan you can actually complete — not an endless list you ignore."
-  - title: "Focus without noise"
-    description: "A calm, distraction-free interface that keeps your attention where it matters."
-  - title: "Smart insights"
-    description: "Understand what you finish, what gets postponed, and how your planning habits evolve."
-  - title: "Flexible organization"
-    description: "Sort, group, and personalize tasks to match how you think and work."
+  - title: "Plan what matters"
+    description: "Pick the tasks that actually belong in your day. Everything else waits quietly until you're ready."
+  - title: "Focus deeply"
+    description: "Immersive focus mode blocks distractions and tracks your sessions — so deep work becomes a habit."
+  - title: "See your patterns"
+    description: "Weekly, monthly, and yearly analytics reveal how your planning evolves — without judgment."
+  - title: "Private by default"
+    description: "No ads, no tracking, no account. Your tasks stay on your device or your personal iCloud."
 
 features:
-  - title: "Daily planning"
-    description: "Choose what truly matters today and keep future tasks out of your mental space."
-  - title: "Time blocks & pacing"
-    description: "Shape your day into a gentle rhythm instead of cramming everything at once."
-  - title: "Smart insights"
-    description: "See patterns over days and weeks — without judgment or pressure."
-  - title: "Quick capture"
-    description: "Add tasks instantly, then organize them later when you’re ready."
-  - title: "Themes"
-    description: "Customize the look so the app feels personal, calm, and inviting."
+  - title: "Instant capture, zero friction"
+    description: "Voice input with smart date recognition. Speak a task, and Taskful Day files it where it belongs. Think of something — capture it in under two seconds."
+  - title: "Four ways to see your day"
+    description: "Day Clock, Energy River, Day Map, and Focus Orbit — each view designed for a different mindset. Switch views as your energy shifts throughout the day."
+  - title: "Focus sessions that work"
+    description: "Drop into immersive Focus Orbit. Set a timer, minimize distractions, and let deep work happen. Track how many focused minutes you actually complete."
+  - title: "Tasks roll forward, not away"
+    description: "Unfinished tasks move to tomorrow automatically. No red badges. No guilt. Just a fresh start every morning."
+  - title: "Reflect and improve"
+    description: "End-of-day journal captures your mood and notes. Over weeks, you'll see the patterns between how you plan, how you feel, and what you actually finish."
+  - title: "Workspaces for every part of life"
+    description: "Separate work from personal. Keep each area focused and clean. Switch contexts without mental overhead."
 
 screenshots:
   - "/assets/screenshots/taskful-day/1.png"
@@ -63,29 +72,32 @@ screenshots:
   - "/assets/screenshots/taskful-day/6.png"
 
 privacy:
-  data_collection: "minimal"
+  data_collection: "none"
   tracking: false
   account_required: false
   notes:
-    - "No ads. Ever"
-    - "No third-party tracking"
-    - "Your data stays on your device (optional iCloud sync)"
+    - "No ads. Ever."
+    - "No third-party tracking or analytics SDKs"
+    - "No account required"
+    - "Data stored locally or in your personal iCloud"
 
 faq:
-  - q: "Is Taskful Day good for ADHD users?"
-    a: "Yes. Taskful Day is designed to reduce pressure. It supports realistic daily planning, flexible pacing, and calm task management without streaks or guilt."
-  - q: "How is Taskful Day different from other to-do list apps?"
-    a: "Taskful Day focuses on realistic daily planning instead of long backlogs. It emphasizes clarity, pacing, and reflection rather than productivity pressure."
-  - q: "Is Taskful Day a calendar?"
-    a: "It’s a daily planner designed to turn tasks into a realistic plan — without the complexity of a full calendar app."
-  - q: "Does it include smart insights?"
-    a: "Yes. Taskful Day gently highlights patterns in what you complete, postpone, and plan over time."
-  - q: "Do I need an account?"
-    a: "No. You can use Taskful Day without creating an account."
-  - q: "Can I customize themes?"
-    a: "Yes. You can choose from multiple themes to match your style and mood."
-  - q: "Is it subscription-based?"
-    a: "Taskful Day is free to use. Some advanced features are available with a subscription. Pricing is shown on the App Store."
+  - q: "What is Taskful Day?"
+    a: "Taskful Day is a calm daily planner and to-do list for iPhone, iPad, Mac, and Apple Vision Pro. It helps you plan realistic days, focus deeply, and finish without guilt."
+  - q: "Is Taskful Day good for ADHD?"
+    a: "Yes. Taskful Day was designed to reduce pressure. It supports realistic daily planning, guilt-free task rollover, multiple visual views, and gentle pacing — all without streaks or shame."
+  - q: "How is Taskful Day different from other to-do apps?"
+    a: "Most to-do apps create infinite backlogs. Taskful Day focuses on one day at a time — with focus sessions, mood journaling, and smart insights that help you plan better over time."
+  - q: "Does Taskful Day have a focus timer?"
+    a: "Yes. Focus Orbit is an immersive focus mode with a session timer, distraction-free design, and tracking of focused minutes over time."
+  - q: "Is Taskful Day free?"
+    a: "Yes. The core experience is completely free. Pro unlocks focus session timer, advanced analytics, widgets, iCloud sync, and unlimited follow-ups — starting at €2.99/month or €49.99 lifetime."
+  - q: "Does Taskful Day track or sell my data?"
+    a: "No. Taskful Day has no ads, no trackers, and no account requirement. Your data stays on your device or your personal iCloud — it's never shared."
+  - q: "Can I import tasks from Apple Reminders?"
+    a: "Yes. Taskful Day supports importing from Apple Reminders so you can migrate without starting over."
+  - q: "Does it work on iPad and Mac?"
+    a: "Yes. Taskful Day runs natively on iPhone, iPad, Mac (Apple Silicon), and Apple Vision Pro with iCloud sync across all devices."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -95,4 +107,4 @@ release:
   first_release: "2026-01-01"
   last_updated: "2026-01-26"
 ---
-Taskful Day is a daily planner designed for humans — plan what matters, move at a realistic pace, and finish your day with clarity instead of guilt.
+Taskful Day is a calm daily planner for iPhone, iPad, Mac, and Apple Vision Pro. It turns overwhelming to-do lists into realistic day plans with focus sessions, smart insights, voice capture, daily journaling, and multiple visual views — all with zero ads, zero tracking, and zero guilt. Designed for people who want to plan mindfully and finish their days feeling clear instead of behind.
