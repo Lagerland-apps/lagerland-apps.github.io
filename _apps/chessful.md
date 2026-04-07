@@ -10,55 +10,56 @@ status: live
 app_store_url: "https://apps.apple.com/app/id6761336870"
 
 price:
-  model: subscription
-  value: "From €7.99 / month"
+  model: freemium
+  value: "Free — Premium available"
+schema_price: "0"
 
 icon: "/assets/icons/chessful.png"
 og_image: "/assets/og/chessful.png"
 
 seo:
-  title: "Chessful – Chess Training, Analysis & Improvement App"
-  description: "Chessful helps you improve at chess by analyzing your games, explaining your mistakes, and training your weaknesses. Powered by Stockfish and designed for real progress."
+  title: "Chessful – Chess Training & Game Analysis App"
+  description: "Chessful analyzes your chess games, explains your mistakes in plain language, and builds adaptive training from your real weaknesses. Offline, private, no ads."
   keywords:
     - chess training app
-    - chess analysis app
-    - improve chess skills
+    - chess game analysis
+    - chess improvement app
     - chess tactics trainer
     - chess coach app
-    - chess engine analysis
-    - learn chess strategy
     - chess mistakes explained
-    - stockfish chess app
-    - chess improvement app
+    - chess puzzles app
+    - learn chess strategy
+    - chess endgame trainer
+    - offline chess app
+    - chess skill tracker
+    - adaptive chess training
 
 hero:
-  headline: "Stop guessing your moves."
-  subheadline: "Understand your mistakes, train what matters, and improve every game with clear, calm chess insights."
-  cta_label: "Download on the App Store"
+  headline: "Stop guessing. Start understanding."
+  subheadline: "Chessful analyzes your games, explains your mistakes in plain language, and builds training around your real weaknesses — so every session makes you a better player."
+  cta_label: "Download Free"
 
 value_points:
-  - title: "Understand why you lose"
-    description: "Chessful analyzes your games and explains your mistakes in clear, simple language — no confusing engine lines."
-  - title: "Train what actually matters"
-    description: "Your training is built from your real weaknesses, so every session improves your actual play."
-  - title: "See real progress"
-    description: "Track your skills, rating, and patterns over time — and watch yourself improve game by game."
-  - title: "Built for focus"
-    description: "A calm, distraction-free experience designed to help you think clearly and play better."
+  - title: "Understand why you lost"
+    description: "After every game, Chessful shows exactly where you went wrong, what you missed, and why it mattered — in words, not engine numbers."
+  - title: "Train your real weaknesses"
+    description: "Hanging pieces? Missed tactics? Weak defense? Your training adapts automatically to what you actually struggle with."
+  - title: "Watch yourself improve"
+    description: "Track progress across tactics, defense, positional play, and endgames. See skills grow over time — not just your rating."
+  - title: "Fully offline, fully private"
+    description: "Everything runs on your device. No account, no servers, no ads. Just you and the board."
 
 features:
-  - title: "Full game analysis"
-    description: "Analyze every move with Stockfish-powered insights and understand exactly where things went wrong."
-  - title: "Mistake explanations"
-    description: "Blunders, missed tactics, and weak moves are explained in plain language you can actually understand."
-  - title: "Adaptive training system"
-    description: "Daily puzzles and exercises focus on your real weaknesses using spaced repetition."
+  - title: "Game analysis you understand"
+    description: "Every move reviewed with Stockfish-powered analysis — but explained in clear, simple language. Blunders, missed tactics, and weak moves described so you actually learn from them."
+  - title: "Training built from your games"
+    description: "Chessful identifies patterns in your mistakes and generates focused training sessions. Spaced repetition ensures your weakest areas get the most attention."
   - title: "40 unique AI opponents"
-    description: "Play against opponents with different styles and strengths, from beginner to master level."
-  - title: "Skill tracking & insights"
-    description: "Track your tactics, defense, positioning, openings, and endgame skills over time."
-  - title: "Offline-first experience"
-    description: "Everything runs on-device — no accounts, no servers, no interruptions."
+    description: "Play against opponents with distinct styles and strengths — from beginner to master level. Each personality challenges different aspects of your game."
+  - title: "Skill tracking across five dimensions"
+    description: "Tactics, defense, positional play, openings, and endgames — each tracked separately over time. See where you're growing and where you still need work."
+  - title: "Explore better alternatives"
+    description: "After analysis, browse the moves you should have played. Understand the ideas behind stronger positions — not just which square the engine prefers."
 
 screenshots:
   - "/assets/screenshots/chessful/1.png"
@@ -71,23 +72,28 @@ privacy:
   tracking: false
   account_required: false
   notes:
-    - "No accounts required"
-    - "No ads or trackers"
-    - "All analysis runs on-device"
+    - "No ads, no trackers"
+    - "No account or sign-up required"
+    - "All analysis runs locally on your device"
+    - "Works fully offline"
 
 faq:
-  - q: "Is Chessful a chess engine?"
-    a: "No. Chessful uses a powerful engine to analyze your games, but its focus is helping you understand your mistakes and improve."
-  - q: "Do I need an account?"
-    a: "No. Chessful is fully usable without accounts or sign-ups."
-  - q: "Is Chessful suitable for beginners?"
-    a: "Chessful is best for players who already know the rules and want to improve their skills and understanding."
-  - q: "Does Chessful require internet?"
-    a: "No. Chessful works fully offline, including analysis and training."
-  - q: "How is this different from other chess apps?"
-    a: "Chessful focuses on explaining your mistakes and building structured improvement, not just playing games or showing engine lines."
-  - q: "Is there a subscription?"
-    a: "Chessful is free to try. Premium features are available via subscription or lifetime purchase, with pricing shown on the App Store."
+  - q: "What is Chessful?"
+    a: "Chessful is a chess training and game analysis app for iPhone, iPad, and Mac. It analyzes your games, explains your mistakes in plain language, and builds adaptive training sessions focused on your real weaknesses."
+  - q: "How is Chessful different from other chess apps?"
+    a: "Most chess apps show confusing engine lines. Chessful explains your mistakes in simple terms and turns them into focused, personalized training — so you actually improve, not just play more games."
+  - q: "Is Chessful good for beginners?"
+    a: "Chessful is ideal for players who know the rules and want to get better. If you're stuck around a certain level and don't understand why you lose, Chessful is built for you."
+  - q: "Does Chessful work offline?"
+    a: "Yes. All analysis, training, and gameplay run entirely on your device. No internet connection required."
+  - q: "What chess engine does Chessful use?"
+    a: "Chessful uses Stockfish for game analysis, but translates the results into clear explanations you can understand — rather than showing raw engine evaluation numbers."
+  - q: "Is Chessful free?"
+    a: "Yes, Chessful is free to try. Premium unlocks unlimited game analysis, adaptive training sessions, full progress tracking, and deep insights into your play."
+  - q: "Does Chessful track my improvement?"
+    a: "Yes. Chessful tracks your skills across five areas — tactics, defense, positional play, openings, and endgames — showing how each improves over time."
+  - q: "Does Chessful need an account?"
+    a: "No. Chessful requires no account, no sign-up, and no personal information. Your data stays entirely on your device."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -97,7 +103,4 @@ release:
   first_release: "2026-04-01"
   last_updated: "2026-04-01"
 ---
-
-Chessful is a premium chess training app designed to help you understand your mistakes, train your weaknesses, and improve consistently.
-
-Instead of overwhelming you with engine lines, Chessful turns your games into clear insights and actionable training — so you can actually get better at chess.
+Chessful is a chess training and game analysis app for iPhone, iPad, and Mac that helps players understand their mistakes and improve systematically. It analyzes games using Stockfish and explains errors in plain language — not confusing engine lines. Training sessions are built adaptively from real weaknesses like hanging pieces, missed tactics, and poor defense. Players can track improvement across five skill dimensions (tactics, defense, positional play, openings, endgames) and play against 40 unique AI opponents with different styles. Fully offline, fully private — no accounts, no ads, no data collection. Free to use with optional premium for unlimited analysis and advanced training.
