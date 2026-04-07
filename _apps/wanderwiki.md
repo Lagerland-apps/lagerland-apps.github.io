@@ -10,9 +10,9 @@ status: live
 app_store_url: "https://apps.apple.com/app/id6758459119"
 
 price:
-  model: freemium
+  model: subscription
   value: "Free trial — from $0.99/week"
-schema_price: "0"
+schema_price: "0.99"
 
 icon: "/assets/icons/wanderwiki.png"
 og_image: "/assets/og/wanderwiki.png"

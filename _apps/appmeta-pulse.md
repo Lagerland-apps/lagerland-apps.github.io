@@ -10,9 +10,9 @@ status: live
 app_store_url: "https://apps.apple.com/app/id6758788164"
 
 price:
-  model: freemium
-  value: "Free — from $0.99/mo"
-schema_price: "0"
+  model: subscription
+  value: "Free trial — from $0.99/mo"
+schema_price: "0.99"
 
 icon: "/assets/icons/appmeta-pulse.png"
 og_image: "/assets/og/appmeta-pulse.png"

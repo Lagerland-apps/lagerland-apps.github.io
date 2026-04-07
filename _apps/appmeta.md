@@ -10,9 +10,9 @@ status: live
 app_store_url: "https://apps.apple.com/app/id6758547802"
 
 price:
-  model: freemium
-  value: "Free — Lifetime Pro $44.99"
-schema_price: "0"
+  model: one-time
+  value: "$44.99 — one-time purchase"
+schema_price: "44.99"
 
 icon: "/assets/icons/appmeta.png"
 og_image: "/assets/og/appmeta.png"
