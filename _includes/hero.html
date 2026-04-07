@@ -30,9 +30,20 @@
   </div>
 
   <div class="hero-right reveal-scale">
-    {% assign hero_img = include.app.screenshots[0] | default: include.app.icon %}
-    <div class="hero-media">
-      <img class="hero-shot" src="{{ hero_img }}" alt="{{ include.app.name }} screenshot" loading="lazy">
-    </div>
+    {% if include.app.hero.video %}
+      <div class="hero-media">
+        <video
+          autoplay muted loop playsinline preload="auto"
+          poster="{{ include.app.hero.video_poster | default: include.app.og_image }}"
+          class="hero-shot">
+          <source src="{{ include.app.hero.video }}" type="video/mp4">
+        </video>
+      </div>
+    {% else %}
+      {% assign hero_img = include.app.screenshots[0] | default: include.app.icon %}
+      <div class="hero-media">
+        <img class="hero-shot" src="{{ hero_img }}" alt="{{ include.app.name }} screenshot" loading="lazy">
+      </div>
+    {% endif %}
   </div>
 </section>
