@@ -4,7 +4,7 @@ slug: taskful-day
 name: "Taskful Day"
 tagline: "Plan the day. Finish the day — calmly."
 category: productivity
-platforms: ["iOS", "iPadOS", "macOS", "visionOS"]
+platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757345400"

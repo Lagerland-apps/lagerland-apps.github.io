@@ -4,7 +4,7 @@ slug: gymlogger-x
 name: "GymLogger X"
 tagline: "Strength training. Logged fast."
 category: fitness
-platforms: ["iOS", "iPadOS", "watchOS"]
+platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6755734580"

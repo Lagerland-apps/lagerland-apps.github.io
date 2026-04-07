@@ -4,7 +4,7 @@ slug: rightsplit
 name: "RightSplit"
 tagline: "Split bills from receipts."
 category: finance
-platforms: ["iOS", "iPadOS", "macOS", "visionOS"]
+platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757268612"

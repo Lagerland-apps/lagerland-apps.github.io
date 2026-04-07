@@ -4,7 +4,7 @@ slug: driftlines
 name: "Driftlines"
 tagline: "Daily prose from a quiet life."
 category: books
-platforms: ["iOS", "iPadOS", "macOS", "visionOS"]
+platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6758112876"

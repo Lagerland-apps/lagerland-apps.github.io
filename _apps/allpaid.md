@@ -4,7 +4,7 @@ slug: allpaid
 name: "AllPaid"
 tagline: "Bills, calmly handled."
 category: finance
-platforms: ["iOS", "iPadOS", "macOS", "visionOS"]
+platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757253009"

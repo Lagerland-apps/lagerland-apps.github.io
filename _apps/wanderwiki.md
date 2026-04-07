@@ -4,7 +4,7 @@ slug: wanderwiki
 name: "WanderWiki"
 tagline: "Swipe through Wikipedia. Learn something new."
 category: education
-platforms: ["iOS", "iPadOS", "macOS", "visionOS"]
+platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6758459119"

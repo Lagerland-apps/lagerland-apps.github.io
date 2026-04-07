@@ -4,7 +4,7 @@ slug: appmeta-pulse
 name: "AppMeta Pulse"
 tagline: "Your App Store business, at a glance."
 category: business
-platforms: ["iOS", "iPadOS", "macOS", "visionOS"]
+platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6758788164"

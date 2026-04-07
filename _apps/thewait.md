@@ -4,7 +4,7 @@ slug: thewait
 name: "TheWait"
 tagline: "Beautiful event countdowns."
 category: lifestyle
-platforms: ["iOS", "iPadOS", "macOS", "visionOS"]
+platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757280643"

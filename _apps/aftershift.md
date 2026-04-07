@@ -4,7 +4,7 @@ slug: aftershift
 name: "AfterShift"
 tagline: "Recovery, naps & fatigue for shift work."
 category: health
-platforms: ["iOS", "iPadOS", "macOS", "visionOS"]
+platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757163182"
