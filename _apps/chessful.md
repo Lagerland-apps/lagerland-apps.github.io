@@ -66,6 +66,8 @@ screenshots:
   - "/assets/screenshots/chessful/2.png"
   - "/assets/screenshots/chessful/3.png"
   - "/assets/screenshots/chessful/4.png"
+  - "/assets/screenshots/chessful/5.png"
+  - "/assets/screenshots/chessful/6.png"
 
 privacy:
   data_collection: "none"
