@@ -2,65 +2,66 @@
 layout: app
 slug: wanderwiki
 name: "WanderWiki"
-tagline: "Discover Wikipedia, one idea at a time."
+tagline: "Swipe through Wikipedia. Learn something new."
 category: education
-platforms: ["iOS"]
+platforms: ["iOS", "iPadOS", "macOS", "visionOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6758459119"
 
 price:
-  model: subscription
-  value: "From €2.99 / month"
+  model: freemium
+  value: "Free trial — from $0.99/week"
+schema_price: "0"
 
 icon: "/assets/icons/wanderwiki.png"
 og_image: "/assets/og/wanderwiki.png"
 
 seo:
-  title: "WanderWiki – Discover Wikipedia with a Swipe on iPhone"
-  description: "WanderWiki turns Wikipedia into a calm, swipe-based discovery experience. Explore fascinating articles from history, science, culture, and more — without searching."
+  title: "WanderWiki – Swipe Through Wikipedia & Discover Knowledge"
+  description: "WanderWiki turns Wikipedia into a beautiful swipe-based discovery app. Random articles, personalized topics, Today in History, and offline reading. No ads, no algorithms."
   keywords:
-    - wikipedia app
-    - random wikipedia
-    - learn something new
-    - educational discovery app
-    - history facts
-    - science facts
-    - knowledge app
-    - curiosity learning
-    - swipe learning
-    - explore wikipedia
+    - Wikipedia discovery app
+    - swipe Wikipedia app
+    - random Wikipedia articles
+    - learn something new app
+    - educational app iPhone
+    - knowledge discovery app
+    - Today in History app
+    - curiosity learning app
+    - Wikipedia reader app
+    - daily learning app
+    - random knowledge app
+    - trivia discovery app
 
 hero:
-  headline: "Wikipedia, but made for wandering."
-  subheadline: "Swipe through fascinating articles from history, science, culture, and more — no searching, no noise, just curiosity."
-  cta_label: "Download on the App Store"
+  headline: "Swipe. Learn. Repeat."
+  subheadline: "WanderWiki turns Wikipedia into a beautiful card-based discovery experience. Swipe through fascinating articles from history, science, culture, and technology — no searching, no algorithms, just curiosity."
+  cta_label: "Try Free"
   video: "/assets/videos/wanderwiki_preview.mov"
   video_poster: "/assets/videos/wanderwiki-poster.jpg"
 
 value_points:
-  - title: "Discovery without effort"
-    description: "Open the app and start exploring — no typing, no decisions, no endless links."
-  - title: "Knowledge that flows"
-    description: "Articles are presented one at a time, helping you focus and enjoy learning without overwhelm."
-  - title: "Follow your curiosity"
-    description: "Choose interests or go fully random — WanderWiki adapts to how you want to explore."
-  - title: "Built on trust"
-    description: "All content comes from Wikipedia, presented clearly and respectfully."
+  - title: "Discovery, not search"
+    description: "Open the app. Swipe. Learn something you didn't know you wanted to know. No typing, no decisions — just curiosity in motion."
+  - title: "Three ways to explore"
+    description: "Random surfaces surprises from all of Wikipedia. For You matches your interests. Today in History shows what happened on this exact date."
+  - title: "Read beautifully, read offline"
+    description: "Articles formatted for calm, focused reading. Save any article and read it later — even without internet."
+  - title: "No algorithms, no profiling"
+    description: "No engagement tricks. No tracking. No account. WanderWiki shows you knowledge, not what maximizes your screen time."
 
 features:
-  - title: "Swipe-based article discovery"
-    description: "Explore Wikipedia like a feed — one article per swipe, designed for curiosity and focus."
-  - title: "Random, For You, and Today modes"
-    description: "Jump into surprising topics, personalized interests, or events that happened on this day in history."
-  - title: "Clean reading experience"
-    description: "A calm, full-screen design that puts the article first, without clutter or distraction."
-  - title: "Search when you want it"
-    description: "Discovery-first by default, with search available whenever a question comes to mind."
-  - title: "Save and revisit"
-    description: "Like and save articles to build your own private reading list."
-  - title: "Offline access"
-    description: "Read saved articles anytime, even without an internet connection."
+  - title: "Random: the entire encyclopedia"
+    description: "One swipe, one surprise. Random pulls from the full breadth of Wikipedia — history, science, art, geography, technology, culture. The next article is always something you've never thought about."
+  - title: "For You: curiosity with direction"
+    description: "Pick your interests — science, history, art, nature, technology — and discover articles aligned with what fascinates you. Not an algorithm. A preference."
+  - title: "Today in History"
+    description: "What happened on this date? Explore events, births, discoveries, and turning points from the exact day you're reading. A daily ritual that makes every day more interesting."
+  - title: "Save, share, revisit"
+    description: "Save any article to your private reading list. Access it offline. Share discoveries with friends. Build a personal knowledge collection over time."
+  - title: "Formatted for focus"
+    description: "Real Wikipedia articles, beautifully reformatted for mobile reading. No sidebar clutter, no endless links, no visual noise. Just the article, presented clearly."
 
 screenshots:
   - "/assets/screenshots/wanderwiki/1.png"
@@ -73,25 +74,28 @@ privacy:
   tracking: false
   account_required: false
   notes:
-    - "No accounts required"
-    - "No ads or trackers"
-    - "All reading happens without profiling"
+    - "No ads, no trackers, no profiling"
+    - "No account required"
+    - "No algorithms or engagement optimization"
+    - "Wikipedia content under Creative Commons CC BY-SA license"
 
 faq:
-  - q: "Is WanderWiki better than browsing Wikipedia in Safari?"
-    a: "WanderWiki provides a calmer, swipe-based discovery experience focused on curiosity rather than search and navigation."
-  - q: "Does WanderWiki require an account?"
-    a: "No. WanderWiki does not require accounts or logins."
+  - q: "What is WanderWiki?"
+    a: "WanderWiki is a knowledge discovery app that turns Wikipedia into a beautiful, swipe-based reading experience. Instead of searching, you swipe through fascinating articles — randomly, by interest, or from Today in History — on iPhone, iPad, Mac, and Apple Vision Pro."
+  - q: "How is WanderWiki different from browsing Wikipedia?"
+    a: "Wikipedia is built for search and reference. WanderWiki is built for discovery and serendipity. Articles are reformatted as clean, focused cards you swipe through — no sidebar links, no rabbit holes, no visual clutter."
   - q: "Is WanderWiki an official Wikipedia app?"
-    a: "No. WanderWiki is an independent app that uses Wikipedia content under the Creative Commons license. It is not affiliated with or endorsed by the Wikimedia Foundation."
-  - q: "Can I search for specific topics?"
-    a: "Yes. WanderWiki is discovery-first, but search is always available when you want to look something up."
-  - q: "Do I need an account to use WanderWiki?"
-    a: "No. WanderWiki does not require accounts or logins."
-  - q: "Is the content reliable?"
-    a: "All articles are sourced from Wikipedia, one of the world’s largest collaboratively maintained knowledge bases."
-  - q: "Is there a subscription?"
-    a: "WanderWiki is free to try. Optional premium access is available via subscription or a lifetime purchase, with pricing shown on the App Store."
+    a: "No. WanderWiki is an independent app that uses Wikipedia content under the Creative Commons Attribution-ShareAlike License. It is not affiliated with or endorsed by the Wikimedia Foundation."
+  - q: "What are the three discovery modes?"
+    a: "Random shows articles from the entire encyclopedia. For You surfaces topics matching your selected interests (science, history, art, nature, technology). Today in History shows events that happened on the current date."
+  - q: "Can I read articles offline?"
+    a: "Yes. Save any article and read it later without an internet connection."
+  - q: "Is WanderWiki free?"
+    a: "WanderWiki offers a 3-day free trial. After that, plans start at $0.99/week, $1.99/month, $8.99/year, or $22.99 lifetime."
+  - q: "Does WanderWiki use algorithms to choose articles?"
+    a: "No. Random is truly random. For You uses your chosen interests — not behavioral tracking, engagement metrics, or recommendation algorithms."
+  - q: "Does WanderWiki track my reading?"
+    a: "No. WanderWiki collects no data, has no trackers, and requires no account. Your reading stays completely private."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -99,6 +103,6 @@ support:
 
 release:
   first_release: "2026-02-01"
-  last_updated: "2026-02-01"
+  last_updated: "2026-03-18"
 ---
-WanderWiki helps you rediscover the joy of learning. Instead of searching and skimming, you simply swipe and explore — letting curiosity guide you through Wikipedia’s vast world of knowledge, one article at a time.
+WanderWiki is a knowledge discovery app for iPhone, iPad, Mac, and Apple Vision Pro that turns Wikipedia into a beautiful, card-based swiping experience. Three discovery modes let you explore: Random surfaces surprises from the entire encyclopedia, For You matches your selected interests (science, history, art, nature, technology), and Today in History shows events from the current date. Articles are real Wikipedia content, beautifully reformatted for focused mobile reading. Save articles for offline access, share discoveries, and build a personal reading list. No algorithms, no engagement optimization, no behavioral tracking, no account required. Free 3-day trial with plans from $0.99/week or $22.99 lifetime. Uses Wikipedia content under Creative Commons CC BY-SA license.
