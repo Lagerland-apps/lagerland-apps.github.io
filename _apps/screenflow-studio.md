@@ -2,7 +2,7 @@
 layout: app
 slug: screenflow-studio
 name: "ScreenFlow Studio"
-tagline: "Create App Store screenshots in minutes."
+tagline: "Professional App Store screenshots for Mac."
 category: graphics
 platforms: ["macOS"]
 status: live
@@ -11,51 +11,55 @@ app_store_url: "https://apps.apple.com/app/id6756589122"
 
 price:
   model: one-time-purchase
-  value: "€14.99 — one-time purchase"
+  value: "$22.99 — one-time purchase"
+schema_price: "22.99"
 
 icon: "/assets/icons/screenflow-studio.png"
 og_image: "/assets/og/screenflow-studio.png"
 
 seo:
-  title: "ScreenFlow Studio – App Store Screenshot Maker for macOS"
-  description: "ScreenFlow Studio is a professional App Store screenshot maker for macOS. Create iPhone, iPad, Watch, and Mac screenshots with bulk language support and perfect Apple export sizes."
+  title: "ScreenFlow Studio – App Store Screenshot Maker for Mac"
+  description: "Create professional App Store screenshots with real 3D device models, Metal rendering, AI translation, and direct App Store Connect upload. One-time purchase for Mac."
   keywords:
-    - app store screenshots
-    - screenshot maker
-    - app screenshots
-    - device mockups
-    - ios app screenshots
-    - localization screenshots
-    - app marketing assets
+    - app store screenshot maker
+    - app store screenshot tool
+    - 3D device mockup app
+    - app store screenshots Mac
+    - iPhone screenshot creator
+    - app marketing screenshots
+    - app store connect upload tool
+    - screenshot localization tool
+    - indie developer screenshot tool
+    - ASO screenshot maker
+    - Metal rendered device frames
+    - bulk screenshot generator
 
 hero:
-  headline: "App Store screenshots, without the pain."
-  subheadline: "Design beautiful App Store screenshots for iPhone, iPad, Watch, and Mac — with bulk language support and pixel-perfect exports."
-  cta_label: "Download on the App Store"
+  headline: "App Store screenshots. Done right."
+  subheadline: "Real 3D device models. Metal-powered rendering. AI translation. Direct upload to App Store Connect. The professional screenshot tool for developers who ship."
+  cta_label: "Get ScreenFlow Studio"
 
 value_points:
-  - title: "Built for multi-language apps"
-    description: "Import screenshots for as many languages as you need and switch between them instantly. No manual swapping."
-  - title: "Fast, visual, intuitive"
-    description: "Drag, resize, rotate, and align screenshots directly on the canvas with immediate feedback."
-  - title: "Apple-perfect exports"
-    description: "Exact App Store sizes, safe-area checks, and no transparency issues."
-  - title: "One-time purchase"
-    description: "Pay once. No subscriptions. No recurring fees."
+  - title: "Real 3D, not flat mockups"
+    description: "Metal-powered rendering with actual 3D device frames. Rotate, scale, and position with numeric precision. What you see is exactly what you export."
+  - title: "Ship in every language"
+    description: "Built-in AI translator localizes your screenshot text. Manage multi-language sets and switch between them instantly."
+  - title: "Upload without leaving the app"
+    description: "Export and upload directly to App Store Connect. No manual file shuffling. No browser uploads. Seconds, not minutes."
+  - title: "One price. No subscriptions."
+    description: "Pay once. Use forever. No recurring fees, no feature gates, no upsells. Family Sharing included."
 
 features:
-  - title: "Bulk screenshot import by language"
-    description: "Drop a folder of screenshots named by language and ScreenFlow Studio wires everything automatically."
-  - title: "Device frames for all Apple platforms"
-    description: "Create screenshots for iPhone, iPad, Apple Watch, and Mac using realistic device frames."
-  - title: "Templates & layout presets"
-    description: "Start from clean, professional templates or build your own layouts from scratch."
-  - title: "Full control over images & text"
-    description: "Resize text boxes, zoom screenshots, adjust alignment, and fine-tune every detail."
-  - title: "Preflight & safe-area warnings"
-    description: "Visual guides help you avoid cropped content and App Store rejections."
-  - title: "Batch export"
-    description: "Export entire screenshot sets across devices and languages in one go."
+  - title: "3D Metal rendering engine"
+    description: "Real 3D device models rendered with Apple's Metal framework. Deterministic output means your preview matches your export pixel-for-pixel. No surprises at submission time."
+  - title: "AI-powered translation"
+    description: "Translate screenshot text into any language with your own API key. Manage localized sets for every market without duplicating projects or hiring translators for simple text."
+  - title: "Direct App Store Connect upload"
+    description: "Connect your account and push screenshots directly from the app. Every device size, every language, uploaded in seconds. The workflow that should have existed years ago."
+  - title: "Percentage-based precision layout"
+    description: "Position elements with percentage-based coordinates — not pixels. Your layouts stay perfect across every device size without manual adjustment per resolution."
+  - title: "Bulk import and smart templates"
+    description: "Drop folders of screenshots organized by language. ScreenFlow Studio wires everything automatically. Start from professional templates or build custom layouts from scratch."
 
 screenshots:
   - "/assets/screenshots/screenflow-studio/1.png"
@@ -67,25 +71,28 @@ privacy:
   tracking: false
   account_required: false
   notes:
-    - "No accounts required"
     - "No analytics or third-party tracking"
+    - "No account required for the app itself"
     - "All projects stored locally on your Mac"
+    - "App Store Connect credentials handled securely by Apple's frameworks"
 
 faq:
-  - q: "Is ScreenFlow Studio good for indie developers?"
-    a: "Yes. It is designed for developers who need fast, multi-language App Store screenshot generation."
-  - q: "Does ScreenFlow Studio require a subscription?"
-    a: "No. It is a one-time purchase with no recurring fees."
+  - q: "What is ScreenFlow Studio?"
+    a: "ScreenFlow Studio is a professional macOS app for creating App Store screenshots using real 3D device models and Metal-powered rendering. It supports multi-language management, AI translation, and direct upload to App Store Connect."
+  - q: "How is ScreenFlow Studio different from other screenshot tools?"
+    a: "ScreenFlow Studio uses real 3D Metal-rendered device frames — not flat overlays. It includes AI translation, percentage-based layouts that scale across device sizes, and direct App Store Connect upload. Most alternatives require manual export and browser-based uploading."
+  - q: "Does it support all Apple device sizes?"
+    a: "Yes. iPhone, iPad, and Mac App Store screenshot sizes are all supported with professional export presets for every required resolution."
+  - q: "Can I localize screenshots for multiple languages?"
+    a: "Yes. ScreenFlow Studio includes bulk language management and an AI translator that localizes your screenshot text. Manage dozens of languages from a single project."
+  - q: "Is ScreenFlow Studio a subscription?"
+    a: "No. ScreenFlow Studio is a one-time purchase at $22.99. No subscriptions, no recurring fees. Family Sharing is included for up to six members."
+  - q: "Can I upload directly to App Store Connect?"
+    a: "Yes. ScreenFlow Studio connects to your App Store Connect account and uploads screenshots for every device size and language directly from the app."
   - q: "Who is ScreenFlow Studio for?"
-    a: "Developers, designers, and marketers who want to create App Store screenshots quickly — especially for apps with multiple languages."
-  - q: "Does it support multiple languages?"
-    a: "Yes. You can bulk import screenshots for any number of languages and switch between them instantly."
-  - q: "Is there a subscription?"
-    a: "No. ScreenFlow Studio is a one-time purchase."
-  - q: "Which platforms are supported?"
-    a: "iPhone, iPad, Apple Watch, and Mac App Store screenshots are supported."
-  - q: "Do I need an account?"
-    a: "No account required. Everything works offline."
+    a: "Indie developers, studios, and ASO professionals who need production-ready App Store screenshots — especially those managing apps in multiple languages."
+  - q: "Does ScreenFlow Studio collect any data?"
+    a: "No. ScreenFlow Studio has no analytics, no tracking, and stores all project files locally on your Mac."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -93,6 +100,6 @@ support:
 
 release:
   first_release: "2026-02-01"
-  last_updated: "2026-02-17"
+  last_updated: "2026-04-05"
 ---
-ScreenFlow Studio is a professional App Store screenshot maker built to remove friction from app launches — especially when managing multiple languages.
+ScreenFlow Studio is a professional macOS tool for creating App Store screenshots using real 3D device models and Metal-powered rendering. It features deterministic rendering (preview matches export exactly), percentage-based layout positioning, AI-powered text translation, multi-language screenshot management, bulk import from organized folders, professional templates, and direct upload to App Store Connect. Built for indie developers, studios, and ASO professionals who need production-ready screenshots for iPhone, iPad, and Mac — especially for apps shipping in multiple languages. One-time purchase at $22.99 with Family Sharing. No subscriptions, no tracking, no data collection.
