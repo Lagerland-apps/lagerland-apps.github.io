@@ -2,61 +2,66 @@
 layout: app
 slug: observa
 name: "Observa"
-tagline: "Understand your body, calmly."
+tagline: "Sleep, energy & recovery insights."
 category: health
-platforms: ["iOS"]
+platforms: ["iOS", "macOS", "visionOS"]
 status: live
 
-app_store_url: "https://apps.apple.com/app/idYOUR_APP_ID"
+app_store_url: "https://apps.apple.com/app/id6757438990"
 
 price:
-  model: subscription
-  value: "From €3.99 / month"
+  model: freemium
+  value: "Free — Pro from €2.99/mo"
+schema_price: "0"
 
 icon: "/assets/icons/observa.png"
 og_image: "/assets/og/observa.png"
 
 seo:
   title: "Observa – Health & Recovery Insights for iPhone"
-  description: "Observa is a privacy-first health insights app for iPhone. Understand sleep, recovery, activity, energy, and patterns in your Apple Health data without noise or pressure."
+  description: "Observa turns Apple Health data into personal insights about your sleep, energy, and recovery. Pattern recognition, HRV analysis, and correlation insights. No ads, no tracking."
   keywords:
-    - health insights
-    - recovery tracker
-    - sleep insights
-    - readiness app
-    - Apple Health insights
-    - activity patterns
-    - energy trends
-    - wellness analytics
+    - health insights app
+    - Apple Health analytics
+    - sleep pattern analysis
+    - recovery insights app
+    - HRV analysis app
+    - energy tracking app
+    - health data insights
+    - sleep recovery correlation
+    - wellness analytics iPhone
+    - Apple Watch health insights
+    - personalized health insights
+    - health pattern recognition
 
 hero:
-  headline: "Your data already knows the pattern."
-  subheadline: "Observa turns sleep, recovery, activity, and energy data into calm, personal insights — so you can understand what affects your body and make clearer daily decisions."
-  cta_label: "Download on the App Store"
+  headline: "Your data already knows why."
+  subheadline: "Observa turns your Apple Health data into personal insights — revealing what actually affects your sleep quality, recovery speed, and energy levels. Not more charts. Answers."
+  cta_label: "Download Free"
 
 value_points:
-  - title: "Clarity over charts"
-    description: "Observa helps you understand what matters, instead of overwhelming you with numbers."
-  - title: "Personal patterns, not generic advice"
-    description: "See what tends to affect your sleep, recovery, and energy based on your own data."
-  - title: "Calm guidance, not pressure"
-    description: "Get quiet, respectful context for your day — without guilt, streaks, or hype."
-  - title: "Privacy first, always"
-    description: "No ads. No trackers. No account required. Your health data stays on your device."
+  - title: "Answers, not numbers"
+    description: "Most health apps show you data. Observa tells you what that data means — for you specifically, based on your own patterns."
+  - title: "Patterns you can't see alone"
+    description: "Discover which habits, activities, and behaviors consistently affect your sleep, recovery, and energy over weeks and months."
+  - title: "Calm, not clinical"
+    description: "Daily snapshots and weekly reflections in human language. No overwhelming dashboards. No guilt or pressure."
+  - title: "Private by design"
+    description: "No ads, no trackers, no account. Your health data never leaves your device."
 
 features:
-  - title: "Sleep, recovery, and energy in one place"
-    description: "Bring together the signals that shape how you feel — and see them with clear, human-friendly context."
-  - title: "Daily context that makes sense"
-    description: "Start the day with a calm summary of your current state and the strongest factors behind it."
-  - title: "Long-term trends that reveal more"
-    description: "Go beyond one day at a time with deeper patterns across 7, 30, 90, and 365 days."
-  - title: "Correlation-based insights"
-    description: "Discover what tends to help or hurt your recovery, sleep, and readiness based on your own history."
-  - title: "Weekly reflections"
-    description: "See what changed across the week, which days felt strongest, and what patterns stood out."
+  - title: "Pattern recognition that learns you"
+    description: "Observa identifies what consistently affects your recovery. Not generic advice — correlations found in your own data, emerging over time."
+  - title: "HRV & ECG recovery insights"
+    description: "Heart rate variability and ECG data interpreted in context. Understand what your body is telling you about recovery readiness — in plain language."
+  - title: "Sleep quality decoded"
+    description: "Go beyond hours slept. See what influences your deep sleep, REM quality, and how your sleep patterns shift with your habits."
+  - title: "Activity-to-energy correlation"
+    description: "Discover how exercise, rest days, and movement patterns actually affect your energy. Some answers will surprise you."
+  - title: "Daily guidance, weekly reflections"
+    description: "Start each day with a calm snapshot of your current state. End each week understanding what worked and what didn't."
   - title: "Built on Apple Health"
-    description: "Observa works with your existing Apple Health data to add a new layer of understanding, not more manual logging."
+    description: "Reads from data you already collect. No manual logging, no wearable lock-in. If Apple Health has it, Observa can interpret it."
 
 screenshots:
   - "/assets/screenshots/observa/1.png"
@@ -71,26 +76,28 @@ privacy:
   tracking: false
   account_required: false
   notes:
-    - "No third-party trackers"
-    - "No ads or data selling"
-    - "Health data stays on device"
+    - "No ads, no trackers, no analytics SDKs"
+    - "No health data uploaded or shared"
     - "No account required"
+    - "All data processed and stored locally on your device"
 
 faq:
   - q: "What is Observa?"
-    a: "Observa is a health insights app for iPhone that helps you understand patterns in your sleep, recovery, activity, and energy using your Apple Health data."
-  - q: "Does Observa replace medical advice?"
-    a: "No. Observa is an informational and reflection tool, not a medical device, diagnosis, or treatment service."
-  - q: "Do I need an account to use Observa?"
-    a: "No. Observa works without creating an account."
+    a: "Observa is a health insights app for iPhone, Mac, and Apple Vision Pro that analyzes your Apple Health data to reveal personal patterns in sleep, recovery, energy, and activity. It focuses on interpretation, not just tracking."
+  - q: "How is Observa different from other health apps?"
+    a: "Most health apps show you numbers and charts. Observa uses pattern recognition and correlation analysis to explain what those numbers mean — specific to your body and habits."
+  - q: "Does Observa work with Apple Watch?"
+    a: "Yes. Observa reads data collected by Apple Watch through Apple Health — including heart rate, HRV, ECG, sleep stages, and activity metrics. No separate pairing needed."
+  - q: "What are HRV and ECG insights?"
+    a: "Observa interprets heart rate variability and ECG data to provide recovery readiness insights in plain language — helping you understand how recovered your body is, not just showing a graph."
+  - q: "Is Observa free?"
+    a: "Yes. Daily insights and core pattern recognition are free. Pro unlocks advanced correlations, long-term trend analysis, weekly reflections, and personalized guidance — from €2.99/month or €69.99 lifetime."
+  - q: "Does Observa give medical advice?"
+    a: "No. Observa is an informational wellness tool. It provides pattern-based insights for self-awareness, not medical diagnoses or treatment recommendations."
   - q: "Does Observa upload my health data?"
-    a: "No. Your health data stays on your device. Observa is built with a privacy-first approach."
-  - q: "Who is Observa for?"
-    a: "Observa is for people who want clearer insight into how sleep, activity, and daily habits affect their body — without noise, pressure, or complicated dashboards."
-  - q: "Is there a subscription?"
-    a: "Yes. Core daily insights are available for free, while advanced patterns, long-term trends, and deeper personalized insights are available with a subscription."
-  - q: "What makes Observa different from a tracker?"
-    a: "Most apps show you numbers. Observa helps you understand what those numbers tend to mean for you."
+    a: "No. All health data stays on your device. Observa has no servers, no accounts, and no cloud processing. Your data is never shared with anyone."
+  - q: "Do I need to log anything manually?"
+    a: "No. Observa reads from Apple Health automatically. If you already wear an Apple Watch or use Health-connected apps, Observa can start finding patterns immediately."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -100,4 +107,4 @@ release:
   first_release: "2026-01-01"
   last_updated: "2026-03-22"
 ---
-Observa is a privacy-first health insights app that helps you understand what affects your body over time. By turning Apple Health data into calm, personal patterns across sleep, recovery, activity, and energy, Observa gives you clarity without pressure — so you can make better daily decisions and see what tends to work for you.
+Observa is a health insights app for iPhone, Mac, and Apple Vision Pro that transforms Apple Health data into personal, pattern-based insights about sleep, recovery, energy, and activity. Using correlation analysis, HRV interpretation, ECG recovery insights, and long-term trend detection, Observa explains what consistently affects your body — in plain language, not charts. It reads data you already collect through Apple Watch and Health-connected apps, requiring no manual logging. Daily snapshots show your current state, weekly reflections highlight what worked, and personalized guidance helps you make better decisions. Free with optional Pro for advanced analytics. Completely private — no ads, no trackers, no account required, no data leaves your device.
