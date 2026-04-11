@@ -66,6 +66,9 @@ screenshots:
   - "/assets/screenshots/screenflow-studio/2.png"
   - "/assets/screenshots/screenflow-studio/3.png"
   - "/assets/screenshots/screenflow-studio/4.png"
+  - "/assets/screenshots/screenflow-studio/5.png"
+  - "/assets/screenshots/screenflow-studio/6.png"
+  - "/assets/screenshots/screenflow-studio/7.png"
 
 privacy:
   data_collection: "none"
