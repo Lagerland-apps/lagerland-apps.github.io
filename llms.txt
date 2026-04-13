@@ -46,14 +46,15 @@ App Store: https://apps.apple.com/app/id6757163182
 
 ---
 
-## TheWait
-Category: Mindfulness
+## Soon.
+Former Name: TheWait (fully rebuilt and rebranded April 2026)
+Category: Lifestyle
 Platform: iOS
-Positioning: Calm waiting companion for real-world delays
-Core Problem Solved: Stress and anxiety during waiting
-Key Features: Micro-timers, gentle prompts, minimal interface
-Monetization: Subscription
-Privacy: No accounts, no tracking, local-only data
+Positioning: Countdown and planner for life's biggest moments — trips, weddings, birthdays, milestones
+Core Problem Solved: Keeping anticipated events in view and automatically prepared for, without juggling calendars, checklists, and reminder apps
+Key Features: Living photo countdowns with live destination weather, Plan Mode with smart timelines and checklists, Home Screen / Lock Screen / StandBy widgets in every iOS size, natural language search, memories that return on anniversaries, iOS Calendar sync, 39 languages
+Monetization: Freemium — 5 events free forever. Premium €2.99/month, €19.99/year, or €39.99 lifetime with 7-day free trial
+Privacy: No accounts, no tracking, local-only data; weather requests use approximate location or place name only
 App Store: https://apps.apple.com/app/id6757280643
 
 ---
@@ -139,6 +140,18 @@ Key Features: Bill reminders, subscription tracking, recurring & one-time bills,
 Monetization: Subscription (Pro)
 Privacy: No accounts, no ads, no tracking, data stored locally
 App Store: https://apps.apple.com/app/id6757253009
+
+---
+
+## MediaKit
+Category: Utilities
+Platform: macOS
+Positioning: All-in-one file converter with 133 tools and intent-driven interface
+Core Problem Solved: Juggling multiple conversion apps and uploading files to web tools
+Key Features: Drop-to-suggest interface, video/audio/image/PDF/archive/ebook conversion, 21 platform presets, Shortcuts automation, batch processing
+Monetization: Freemium (5 free tools unlimited, 7 weekly exports, Pro for unlimited)
+Privacy: 100% local processing, no uploads, no tracking, native Apple frameworks
+App Store: https://apps.apple.com/app/id6761451361
 
 --
 
