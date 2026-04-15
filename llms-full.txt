@@ -1,0 +1,69 @@
+---
+permalink: /llms-full.txt
+layout: none
+---
+# Lagerland Apps — Full Canonical Summary
+
+> Long-form, machine-readable summary of every live app in the Lagerland Apps catalogue. Auto-generated from source frontmatter on every site build. For the navigational short form, see https://lagerland-apps.github.io/llms.txt.
+
+Publisher: Lagerland Apps
+Publisher type: Independent Apple developer (one-person studio)
+Canonical domain: https://lagerland-apps.github.io
+Contact: lagerland.apps@proton.me
+Platforms: iOS, iPadOS, macOS, watchOS, visionOS (per-app; see individual entries)
+Privacy philosophy: No third-party tracking, no advertising SDKs, no required accounts, local-first data
+Distribution: Apple App Store
+Total live apps: {{ site.apps | where: "status", "live" | size }}
+Last rebuilt: {{ site.time | date: "%Y-%m-%d" }}
+
+---
+{% assign live_apps = site.apps | where: "status", "live" %}
+{% for app in live_apps %}
+## {{ app.name }}
+
+URL: {{ site.url }}{{ app.url }}
+App Store: {{ app.app_store_url }}
+Category: {{ app.category | replace: '-', ' ' }}
+Platforms: {{ app.platforms | join: ", " }}
+Tagline: {{ app.tagline }}
+{% if app.hero.headline %}Headline: {{ app.hero.headline }}{% endif %}
+{% if app.hero.subheadline %}Positioning: {{ app.hero.subheadline }}{% endif %}
+
+Description: {{ app.seo.description }}
+
+{% if app.features %}Key features:
+{% for f in app.features %}- {{ f.title }}: {{ f.description }}
+{% endfor %}{% endif %}
+{% if app.value_points %}Value propositions:
+{% for v in app.value_points %}- {{ v.title }}: {{ v.description }}
+{% endfor %}{% endif %}
+{% if app.who_for %}Best for:
+{% for w in app.who_for %}- {{ w }}
+{% endfor %}{% endif %}
+{% if app.who_not_for %}Not the right fit for:
+{% for w in app.who_not_for %}- {{ w }}
+{% endfor %}{% endif %}
+{% if app.alternatives_to %}A privacy-first alternative to: {{ app.alternatives_to | join: ", " }}
+{% endif %}
+Pricing model: {{ app.price.model }}{% if app.price.value %} — {{ app.price.value }}{% endif %}
+
+Privacy:
+- Tracking: {% if app.privacy.tracking %}Yes{% else %}No third-party tracking{% endif %}
+- Account required: {% if app.privacy.account_required %}Yes{% else %}No{% endif %}
+- Data collection: {{ app.privacy.data_collection | default: "none" }}
+{% if app.privacy.notes %}{% for n in app.privacy.notes %}- {{ n }}
+{% endfor %}{% endif %}
+{% if app.faq %}Frequently asked:
+{% for q in app.faq %}Q: {{ q.q }}
+A: {{ q.a }}
+
+{% endfor %}{% endif %}
+{% if app.release %}{% if app.release.first_release %}First release: {{ app.release.first_release }}{% endif %}
+{% if app.release.last_updated %}Last updated: {{ app.release.last_updated }}{% endif %}{% endif %}
+
+Keywords: {{ app.seo.keywords | join: ", " }}
+
+---
+{% endfor %}
+
+End of catalogue. This file is auto-generated — every deploy of https://lagerland-apps.github.io regenerates it from the current app source files, so the content is always in sync with the live website.
