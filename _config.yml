@@ -26,5 +26,8 @@ defaults:
     values:
       layout: journal
 
+include:
+  - .well-known
+
 plugins:
   - jekyll-sitemap

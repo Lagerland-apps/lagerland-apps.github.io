@@ -1,0 +1,33 @@
+---
+permalink: /humans.txt
+layout: none
+---
+/* TEAM */
+
+Developer, designer, founder: Antti Aittamaa
+  Site: https://lagerland-apps.github.io/lagerland-apps/
+  Contact: lagerland.apps@proton.me
+  From: Finland
+
+/* THANKS */
+
+Every early user who reported a bug, sent a suggestion, or left
+an honest review. This studio runs on your feedback.
+
+/* SITE */
+
+Last update: {{ site.time | date: "%Y-%m-%d" }}
+Language: English (source), app UI localised into up to 39 languages
+Standards: HTML5, CSS3, SwiftUI for apps
+Components: Jekyll, GitHub Pages, GoatCounter analytics
+Privacy: no third-party tracking, no advertising SDKs, no accounts
+Hosted on: GitHub Pages (static)
+
+/* PHILOSOPHY */
+
+Lagerland Apps is a one-person studio building privacy-first iOS
+and macOS apps. Every app ships without advertising, without user
+accounts, and without third-party tracking. Data stays on-device;
+cloud sync uses the user's own iCloud account.
+
+See: https://lagerland-apps.github.io/lagerland-apps/

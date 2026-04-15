@@ -1,0 +1,22 @@
+---
+permalink: /.well-known/security.txt
+layout: none
+---
+# Security contact for Lagerland Apps
+# https://lagerland-apps.github.io/
+
+Contact: mailto:lagerland.apps@proton.me
+Expires: {{ "now" | date: "%Y" | plus: 1 }}-12-31T23:59:59.000Z
+Preferred-Languages: en, fi
+Canonical: https://lagerland-apps.github.io/.well-known/security.txt
+Policy: https://lagerland-apps.github.io/privacy/
+
+# If you believe you've found a security vulnerability in any
+# Lagerland Apps product — website, iOS app, or macOS app — please
+# email the Contact address above. Include reproduction steps,
+# affected versions, and your preferred disclosure timeline.
+#
+# Lagerland Apps is a one-person indie studio without a dedicated
+# security team. Responses are best-effort and typically within a
+# few days. Critical issues affecting user data or privacy will be
+# prioritised immediately.
