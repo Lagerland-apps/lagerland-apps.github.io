@@ -1,20 +1,173 @@
 ---
 layout: default
 title: Apps
+seo:
+  title: "All Apps — Privacy-First iOS & macOS Apps by Lagerland Apps"
+  description: "The complete Lagerland Apps catalogue. Privacy-first iPhone, iPad, Apple Watch, and Mac apps across health, productivity, finance, developer tools, reading, games, and utilities. No tracking, no ads, no accounts."
+  keywords:
+    - privacy-first iOS apps list
+    - best no-tracking iPhone apps
+    - indie Apple developer apps
+    - macOS apps without analytics
+    - Apple Watch apps no subscription
+    - calm productivity apps iPhone
+    - privacy-first health apps Apple
+    - independent iOS developer catalogue
 ---
-<h1>Apps</h1>
-<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:24px 0;">
-{% for app in site.apps %}
-  {% if app.status == "live" %}
-    <a href="{{ app.url }}" class="card">
-      <div class="app-badge">
-        <img class="app-icon" src="{{ app.icon }}" alt="{{ app.name }} icon">
-        <div>
-          <div class="app-name">{{ app.name }}</div>
-          <div class="app-tagline">{{ app.tagline }}</div>
-        </div>
+
+{%- assign live_apps = site.apps | where: "status", "live" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/apps/#webpage",
+  "url": "{{ site.url }}/apps/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Apps", "item": "{{ site.url }}/apps/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Lagerland Apps — full catalogue",
+    "numberOfItems": {{ live_apps.size }},
+    "itemListElement": [
+      {%- for app in live_apps -%}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "url": "{{ site.url }}{{ app.url }}",
+        "name": {{ app.name | jsonify }},
+        "description": {{ app.seo.description | default: app.tagline | jsonify }}
+      }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">{{ live_apps.size }} apps · {{ "" }}7 categories · 100% privacy-first</p>
+    <h1 class="h1">All apps for <span class="gradient-text">iPhone, iPad, and Mac.</span></h1>
+    <p class="lead">Every app in the Lagerland Apps catalogue — grouped by the problem it solves. No tracking, no ads, no accounts. Built and shipped by one independent Apple developer.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#health">Start browsing</a>
+      <a class="btn btn-secondary" href="/#faq">How it works</a>
+    </div>
+  </div>
+</section>
+
+<section class="section--lg">
+
+  {%- comment %} Cluster: Health, sleep & recovery {% endcomment -%}
+  {%- assign cluster_apps = '' | split: '' -%}
+  {%- assign health_cats = 'health,fitness' | split: ',' -%}
+  {%- for cat in health_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div id="health" class="section reveal">
+      <h2 class="h2">Health, sleep &amp; recovery apps</h2>
+      <p class="lead">Understand your body, sleep, and workouts — without handing health data to advertisers. Ideal for Apple Health power users, shift workers, and anyone tracking recovery over vanity metrics.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
-    </a>
-  {% endif %}
-{% endfor %}
-</div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster: Plan your life {% endcomment -%}
+  {%- assign cluster_apps = '' | split: '' -%}
+  {%- assign plan_cats = 'productivity,lifestyle' | split: ',' -%}
+  {%- for cat in plan_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div id="plan" class="section reveal">
+      <h2 class="h2">Planners &amp; life-event apps</h2>
+      <p class="lead">Daily planners, countdown apps, and calm productivity tools. All local, all private, all designed to reduce overwhelm instead of adding to it.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster: Money & bills {% endcomment -%}
+  {%- assign cluster_apps = live_apps | where: "category", "finance" -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div id="money" class="section reveal">
+      <h2 class="h2">Money, bills &amp; subscriptions</h2>
+      <p class="lead">Track bills, split shared expenses, and never miss a due date. Your financial data stays on your device — no cloud sync to a third party, no account required.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster: Developer tools {% endcomment -%}
+  {%- assign cluster_apps = '' | split: '' -%}
+  {%- assign dev_cats = 'developer-tools,business,graphics' | split: ',' -%}
+  {%- for cat in dev_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div id="developer" class="section reveal">
+      <h2 class="h2">Developer tools for Apple platforms</h2>
+      <p class="lead">Native macOS and iOS apps for App Store Connect workflows — metadata editing, revenue monitoring, and localised screenshot generation. Built by an indie iOS dev, for indie iOS devs.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster: Reading & discovery {% endcomment -%}
+  {%- assign cluster_apps = '' | split: '' -%}
+  {%- assign read_cats = 'education,books' | split: ',' -%}
+  {%- for cat in read_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div id="reading" class="section reveal">
+      <h2 class="h2">Reading &amp; discovery apps</h2>
+      <p class="lead">Rediscover long-form reading and Wikipedia on your own terms. Calm, feed-free, offline-ready.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster: Games {% endcomment -%}
+  {%- assign cluster_apps = live_apps | where: "category", "games" -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div id="games" class="section reveal">
+      <h2 class="h2">Premium games — no ads, no lives, no dark patterns</h2>
+      <p class="lead">Puzzle and board games built for attention, not engagement metrics. No energy timers, no forced ads, no fake urgency.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster: Utilities {% endcomment -%}
+  {%- assign cluster_apps = live_apps | where: "category", "utilities" -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div id="utilities" class="section reveal">
+      <h2 class="h2">Utilities &amp; file conversion</h2>
+      <p class="lead">Local-first file conversion and utility apps for Mac. Files never leave your device — no uploads to web tools, no quota, no privacy trade-offs.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">New to Lagerland Apps?</p>
+  <h2 class="h2">Start with the flagship.</h2>
+  <p class="lead">Observa is our most-installed app — a private Apple Health insights companion that turns your existing data into plain-language answers.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/apps/observa/">Learn about Observa</a>
+    <a class="btn btn-secondary" href="/lagerland-apps/">About the developer</a>
+  </div>
+</section>
