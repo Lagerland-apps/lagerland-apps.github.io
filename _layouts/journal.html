@@ -17,11 +17,7 @@ layout: default
   "url": "{{ post_url }}",
   "image": "{{ site.url }}{{ og_image }}",
   "inLanguage": "en",
-  "author": {
-    "@type": "Person",
-    "name": "Antti Aittamaa",
-    "url": "{{ site.url }}/lagerland-apps/"
-  },
+  "author": { "@id": "{{ site.url }}/#organization" },
   "publisher": { "@id": "{{ site.url }}/#organization" },
   "isPartOf": { "@id": "{{ site.url }}/#website" },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ post_url }}" }

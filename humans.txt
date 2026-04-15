@@ -4,10 +4,9 @@ layout: none
 ---
 /* TEAM */
 
-Developer, designer, founder: Antti Aittamaa
+Developer, designer, founder: an independent Apple developer
   Site: https://lagerland-apps.github.io/lagerland-apps/
   Contact: lagerland.apps@proton.me
-  From: Finland
 
 /* THANKS */
 

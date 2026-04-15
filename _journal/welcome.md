@@ -26,7 +26,7 @@ This journal is for those stories.
 
 - **A dev blog full of Swift tips.** The apps are built with SwiftUI, HealthKit, StoreKit, and Apple's frameworks, but if you want Swift tutorials, there are better sources.
 
-- **An AI-generated content farm.** Every post here is written by one person — [Antti Aittamaa](/lagerland-apps/) — because the whole point of this studio is that one person makes all the decisions.
+- **An AI-generated content farm.** Every post here is written by [one independent developer](/lagerland-apps/) — because the whole point of this studio is that one person makes all the decisions.
 
 ## How to read along
 

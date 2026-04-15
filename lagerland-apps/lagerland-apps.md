@@ -3,11 +3,10 @@ layout: default
 permalink: /lagerland-apps/
 title: "About Lagerland Apps"
 seo:
-  title: "About Lagerland Apps — Independent Apple Developer (Antti Aittamaa)"
-  description: "Lagerland Apps is an independent Apple developer founded by Antti Aittamaa. Building privacy-first iOS and macOS apps with no tracking, no ads, and no accounts — funded by honest paid software, not advertising."
+  title: "About Lagerland Apps — Independent Apple Developer"
+  description: "Lagerland Apps is an independent Apple developer building privacy-first iOS and macOS apps with no tracking, no ads, and no accounts — funded by honest paid software, not advertising."
   keywords:
     - Lagerland Apps
-    - Antti Aittamaa
     - independent Apple developer
     - privacy-first iOS developer
     - indie macOS developer
@@ -22,29 +21,10 @@ seo:
   "@id": "{{ site.url }}/lagerland-apps/#webpage",
   "url": "{{ site.url }}/lagerland-apps/",
   "name": "About Lagerland Apps",
-  "description": "Lagerland Apps is an independent Apple developer founded by Antti Aittamaa, building privacy-first iOS and macOS apps.",
+  "description": "Lagerland Apps is an independent Apple developer building privacy-first iOS and macOS apps.",
   "isPartOf": { "@id": "{{ site.url }}/#website" },
   "about": { "@id": "{{ site.url }}/#organization" },
-  "mainEntity": {
-    "@type": "Person",
-    "@id": "{{ site.url }}/lagerland-apps/#founder",
-    "name": "Antti Aittamaa",
-    "jobTitle": "Independent Apple Developer",
-    "worksFor": { "@id": "{{ site.url }}/#organization" },
-    "sameAs": [
-      "https://apps.apple.com/developer/antti-aittamaa/id1855943133",
-      "https://github.com/lagerland-apps"
-    ],
-    "knowsAbout": [
-      "SwiftUI",
-      "iOS development",
-      "macOS development",
-      "Apple HealthKit",
-      "StoreKit",
-      "App Store Connect",
-      "privacy-first software design"
-    ]
-  },
+  "mainEntity": { "@id": "{{ site.url }}/#organization" },
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -62,7 +42,7 @@ seo:
       Built by <span class="gradient-text">one person.</span><br>For people who miss calm software.
     </h1>
     <p class="lead">
-      Lagerland Apps is an independent Apple developer founded by <strong>Antti Aittamaa</strong>. Every app is designed, coded, tested, and shipped by one person — no VC pressure, no advertiser incentives, no growth hackers.
+      Lagerland Apps is founded by an <strong>independent Apple developer</strong>. Every app is designed, coded, tested, and shipped by one person — no VC pressure, no advertiser incentives, no growth hackers.
     </p>
   </div>
 </section>
