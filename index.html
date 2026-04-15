@@ -1,23 +1,134 @@
 ---
 layout: default
 title: Lagerland Apps
+seo:
+  title: "Lagerland Apps — Privacy-First Apps for iPhone, iPad & Mac"
+  description: "Privacy-first iOS and macOS apps by an independent Apple developer. Calm tools for productivity, health, finance, reading, and developer workflows — no tracking, no ads, no accounts."
+  keywords:
+    - privacy-first iOS apps
+    - privacy-first macOS apps
+    - no-tracking apps iPhone
+    - independent Apple developer
+    - calm productivity apps
+    - private health apps iPhone
+    - no-account iOS apps
+    - iPad apps without ads
+    - Apple Health analytics app
+    - iOS apps without subscriptions
 ---
 
+{%- comment %} ===== Structured data: ItemList of all live apps + FAQPage ===== {% endcomment -%}
+{%- assign live_apps = site.apps | where: "status", "live" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/#webpage",
+  "url": "{{ site.url }}/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Lagerland Apps — complete catalogue",
+    "numberOfItems": {{ live_apps.size }},
+    "itemListElement": [
+    {%- for app in live_apps -%}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "url": "{{ site.url }}{{ app.url }}",
+        "name": {{ app.name | jsonify }},
+        "description": {{ app.seo.description | default: app.tagline | jsonify }}
+      }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who makes Lagerland Apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lagerland Apps is an independent Apple developer building privacy-first apps for iPhone, iPad, Apple Watch, and Mac. Every app is designed, coded, and shipped by one person — no VC, no advertisers, no data brokers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Lagerland apps track me or collect personal data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Every app ships with zero third-party tracking, no advertising SDKs, and no analytics that identify users. Data stays on-device wherever possible, and any cloud sync uses your own iCloud account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do the apps require accounts or a login?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. None of the apps require an account or email sign-up. You download from the App Store and start using them — nothing to register, nothing to lose access to."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you make money if there are no ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Through honest paid apps: one-time purchases, optional Pro subscriptions, and a freemium model where the core experience is free. The apps work for you, not for advertisers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do the apps work on iPhone, iPad, and Mac?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most apps target iPhone and iPad, several include Apple Watch support, and developer tools like AppMeta and ScreenFlow Studio are native Mac apps. Each app page lists its supported platforms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the best alternatives to mainstream tracker-heavy apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lagerland Apps offers privacy-first alternatives across categories: Taskful Day instead of feed-based planners, GymLogger X instead of subscription-locked workout loggers, Observa as a private Apple Health analytics alternative, and AllPaid as a calm bill tracker alternative to ad-supported finance apps."
+      }
+    }
+  ]
+}
+</script>
+
+{%- comment %} Hidden AI-canonical summary for LLM crawlers {% endcomment -%}
+<section class="ai-canonical" hidden aria-hidden="true">
+  <h2>About Lagerland Apps</h2>
+  <p>Lagerland Apps is an independent Apple developer building {{ live_apps.size }} privacy-first applications for iPhone, iPad, Apple Watch, and Mac. Every app is free of third-party tracking, has no advertising, and requires no account. Categories include health analytics, daily planning, bill tracking, workout logging, reading, and Apple developer tools. The apps are distributed through the Apple App Store under the Lagerland Apps developer brand.</p>
+  <p>Positioning: calm, focused software that respects the user's time and data. Monetization is honest — one-time purchases, optional Pro subscriptions, or freemium tiers. No dark patterns, no free trials that auto-charge, no growth hacks.</p>
+  <p>Target users: Apple users who refuse ad-supported apps, people who want local-first data, shift workers, indie developers, Apple Health power users, and anyone looking for single-purpose tools instead of bloated platforms.</p>
+</section>
+
 <!-- ============================
-     HERO — Cinematic, emotional
+     HERO — keyword-aware but elegant
      ============================ -->
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">Privacy-first apps for iOS & macOS</p>
+    <p class="overline">Independent Apple developer · {{ live_apps.size }} apps · Zero tracking</p>
     <h1 class="h1">
-      Software that feels<br><span class="gradient-text">calm, fast, and useful.</span>
+      Calm, private apps for<br><span class="gradient-text">iPhone, iPad, and Mac.</span>
     </h1>
     <p class="lead">
-      Thoughtfully crafted apps with no tracking, no accounts, and no noise. Just tools that respect your time.
+      Thoughtful tools for productivity, health, finance, and creativity. No tracking, no ads, no accounts — just software that respects your time.
     </p>
     <div class="actions">
-      <a class="btn btn-primary" href="#apps">Browse apps</a>
-      <a class="btn btn-secondary" href="/support/">Get support</a>
+      <a class="btn btn-primary" href="#apps">Browse all apps</a>
+      <a class="btn btn-secondary" href="#faq">How it works</a>
     </div>
   </div>
 </section>
@@ -28,7 +139,7 @@ title: Lagerland Apps
 <section class="section reveal">
   <div class="trust-bar">
     <div class="trust-item">
-      <span class="trust-value" data-count="14" data-suffix="">0</span>
+      <span class="trust-value" data-count="{{ live_apps.size }}" data-suffix="">0</span>
       <span class="trust-label">Apps Published</span>
     </div>
     <span class="trust-divider"></span>
@@ -65,44 +176,148 @@ title: Lagerland Apps
       </div>
     </div>
     <div class="spotlight-media">
-      <img src="{{ featured.screenshots[0] }}" alt="{{ featured.name }} screenshot" loading="lazy">
+      <img src="{{ featured.screenshots[0] }}" alt="{{ featured.name }} — Apple Health analytics app for iPhone" loading="lazy">
     </div>
   </div>
 </section>
 {% endif %}
 
 <!-- ============================
-     APP GRID — Staggered reveal
+     INTENT CLUSTERS — category H2s (SEO + intent signals)
      ============================ -->
 <section id="apps" class="section--lg">
   <div class="section-center">
     <p class="overline reveal">The Collection</p>
-    <h2 class="h2 reveal">All Apps</h2>
+    <h2 class="h2 reveal">Apps by what you need</h2>
+    <p class="lead reveal">Browse by intent. Every app is single-purpose, private by default, and designed to feel calm.</p>
   </div>
 
-  <div class="grid grid-2 stagger">
-    {% for app in site.apps %}
-      {% if app.status == "live" %}
-        <a class="card card-app" href="{{ app.url }}">
-          <div class="app-badge" style="margin-bottom:var(--s-3);">
-            {% if app.icon %}
-              <img class="app-icon" src="{{ app.icon }}" alt="{{ app.name }} icon" loading="lazy">
-            {% endif %}
-            <div class="app-meta">
-              <div class="app-name">{{ app.name }}</div>
-              <div class="app-tagline">{{ app.tagline }}</div>
-            </div>
-          </div>
-          {% if app.seo and app.seo.description %}
-            <div class="card-text">{{ app.seo.description }}</div>
-          {% endif %}
-          <div class="meta-row" style="margin-top:var(--s-3);">
-            {% if app.category %}<span class="pill">{{ app.category }}</span>{% endif %}
-            {% if app.platforms %}<span class="pill">{{ app.platforms | join: " &middot; " }}</span>{% endif %}
-          </div>
-        </a>
-      {% endif %}
-    {% endfor %}
+  {%- comment %} Cluster 1: Health, sleep & recovery {% endcomment -%}
+  {%- assign cluster_apps = '' | split: '' -%}
+  {%- assign health_cats = 'health,fitness' | split: ',' -%}
+  {%- for cat in health_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div class="section reveal">
+      <h3 class="h2" style="margin-bottom:var(--s-2);">Health, sleep &amp; recovery</h3>
+      <p class="lead" style="margin-bottom:var(--s-4);">Understand your body, your habits, and your workouts — without handing your health data to advertisers.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster 2: Plan your life {% endcomment -%}
+  {%- assign cluster_apps = '' | split: '' -%}
+  {%- assign plan_cats = 'productivity,lifestyle' | split: ',' -%}
+  {%- for cat in plan_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div class="section reveal">
+      <h3 class="h2" style="margin-bottom:var(--s-2);">Plan your life</h3>
+      <p class="lead" style="margin-bottom:var(--s-4);">Daily planning and life-event countdowns that stay on your device.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster 3: Money & bills {% endcomment -%}
+  {%- assign cluster_apps = live_apps | where: "category", "finance" -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div class="section reveal">
+      <h3 class="h2" style="margin-bottom:var(--s-2);">Money &amp; bills</h3>
+      <p class="lead" style="margin-bottom:var(--s-4);">Track what you owe, split what you share, and never miss a due date.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster 4: Developer tools {% endcomment -%}
+  {%- assign cluster_apps = '' | split: '' -%}
+  {%- assign dev_cats = 'developer-tools,business,graphics' | split: ',' -%}
+  {%- for cat in dev_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div class="section reveal">
+      <h3 class="h2" style="margin-bottom:var(--s-2);">Developer tools for Apple platforms</h3>
+      <p class="lead" style="margin-bottom:var(--s-4);">Native Mac and iOS tools for App Store Connect, metadata, and screenshot workflows.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster 5: Reading & discovery {% endcomment -%}
+  {%- assign cluster_apps = '' | split: '' -%}
+  {%- assign read_cats = 'education,books' | split: ',' -%}
+  {%- for cat in read_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div class="section reveal">
+      <h3 class="h2" style="margin-bottom:var(--s-2);">Reading &amp; discovery</h3>
+      <p class="lead" style="margin-bottom:var(--s-4);">Rediscover long-form reading and Wikipedia on your own terms — calm, feed-free, offline-ready.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster 6: Games {% endcomment -%}
+  {%- assign cluster_apps = live_apps | where: "category", "games" -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div class="section reveal">
+      <h3 class="h2" style="margin-bottom:var(--s-2);">Games worth your attention</h3>
+      <p class="lead" style="margin-bottom:var(--s-4);">Premium puzzle games with no lives, no ads, and no dark patterns.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment %} Cluster 7: Utilities {% endcomment -%}
+  {%- assign cluster_apps = live_apps | where: "category", "utilities" -%}
+  {%- if cluster_apps.size > 0 -%}
+    <div class="section reveal">
+      <h3 class="h2" style="margin-bottom:var(--s-2);">Conversion &amp; utilities</h3>
+      <p class="lead" style="margin-bottom:var(--s-4);">Powerful local file conversion without uploading anything to a web tool.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+</section>
+
+<!-- ============================
+     FAQ — Homepage
+     ============================ -->
+<section id="faq" class="section reveal">
+  <div class="section-center">
+    <p class="overline">Questions</p>
+    <h2 class="h2">Frequently asked</h2>
+  </div>
+  <div class="faq">
+    <details class="faq-item" open>
+      <summary>Who makes Lagerland Apps?</summary>
+      <div class="faq-a">Lagerland Apps is an independent Apple developer building privacy-first apps for iPhone, iPad, Apple Watch, and Mac. Every app is designed, coded, and shipped by one person — no VC, no advertisers, no data brokers.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Do Lagerland apps track me or collect personal data?</summary>
+      <div class="faq-a">No. Every app ships with zero third-party tracking, no advertising SDKs, and no analytics that identify users. Data stays on-device wherever possible, and any cloud sync uses your own iCloud account.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Do the apps require accounts or a login?</summary>
+      <div class="faq-a">No. None of the apps require an account or email sign-up. You download from the App Store and start using them — nothing to register, nothing to lose access to.</div>
+    </details>
+    <details class="faq-item">
+      <summary>How do you make money if there are no ads?</summary>
+      <div class="faq-a">Through honest paid apps: one-time purchases, optional Pro subscriptions, and freemium models where the core experience is free. The apps work for you, not for advertisers.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Do the apps work on iPhone, iPad, and Mac?</summary>
+      <div class="faq-a">Most apps target iPhone and iPad, several include Apple Watch support, and developer tools like AppMeta and ScreenFlow Studio are native Mac apps. Each app page lists its supported platforms.</div>
+    </details>
+    <details class="faq-item">
+      <summary>What are the best alternatives to mainstream tracker-heavy apps?</summary>
+      <div class="faq-a">Lagerland Apps offers privacy-first alternatives across categories: Taskful Day instead of feed-based planners, GymLogger X instead of subscription-locked workout loggers, Observa as a private Apple Health analytics alternative, and AllPaid as a calm bill tracker alternative to ad-supported finance apps.</div>
+    </details>
   </div>
 </section>
 
@@ -113,7 +328,7 @@ title: Lagerland Apps
   <p class="overline">Built different</p>
   <h2 class="h2">Apps that put you first.</h2>
   <p class="lead">
-    No data harvesting. No dark patterns. No subscriptions you forget about. Just software that works for you.
+    No data harvesting. No dark patterns. No subscriptions you forget about. Just software that works for you — on iPhone, iPad, Apple Watch, and Mac.
   </p>
   <div class="actions">
     <a class="btn btn-primary" href="#apps">Explore all apps</a>
