@@ -19,6 +19,9 @@
     </div>
 
     <div class="meta-row">
+      {%- if include.app.ratings and include.app.ratings.count >= 3 -%}
+        <span class="pill" title="{{ include.app.ratings.count }} ratings aggregated across Apple App Store worldwide">★ {{ include.app.ratings.value }} · {{ include.app.ratings.count }} ratings</span>
+      {%- endif -%}
       {%- assign price_model = include.app.price.model | downcase -%}
       {%- if price_model contains 'one-time' -%}
         <span class="pill">One-time purchase</span>

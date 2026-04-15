@@ -13,6 +13,9 @@
     <div class="card-text">{{ include.app.seo.description }}</div>
   {% endif %}
   <div class="meta-row" style="margin-top:var(--s-3);">
+    {%- if include.app.ratings and include.app.ratings.count >= 3 -%}
+      <span class="pill">&#9733; {{ include.app.ratings.value }} &middot; {{ include.app.ratings.count }}</span>
+    {%- endif -%}
     {% if include.app.category %}<span class="pill">{{ include.app.category | replace: '-', ' ' }}</span>{% endif %}
     {% if include.app.platforms %}<span class="pill">{{ include.app.platforms | join: " &middot; " }}</span>{% endif %}
   </div>

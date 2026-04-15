@@ -1,0 +1,51 @@
+{%- comment %}
+  Renders a visible "Privacy-first alternative to ..." block on an app
+  page when frontmatter defines page.alternatives_to. Silently skipped
+  otherwise — safe to include on every app.
+
+  Pulls from page.alternatives_to (array of competitor names) and
+  links to a dedicated /alternatives/<slug>/ comparison page when one
+  exists, otherwise renders text-only.
+
+  Usage: {% include alternatives.html app=page %}
+{% endcomment -%}
+
+{%- if include.app.alternatives_to and include.app.alternatives_to.size > 0 -%}
+<section class="section reveal">
+  <div class="section-center">
+    <p class="overline">Branded comparisons</p>
+    <h2 class="h2">A privacy-first alternative to…</h2>
+    <p class="lead">{{ include.app.name }} is built as a calmer, privacy-first alternative to several popular apps in the {{ include.app.category | replace: '-', ' ' }} space. No account, no tracking, no advertising — designed for Apple users who want to opt out of the data economy.</p>
+  </div>
+
+  <div class="grid grid-4 stagger">
+    {%- for competitor in include.app.alternatives_to -%}
+      <div class="card">
+        <div class="card-title">{{ competitor }}</div>
+        <div class="card-text">{{ include.app.name }} as a privacy-first alternative to {{ competitor }}.</div>
+      </div>
+    {%- endfor -%}
+  </div>
+
+  {%- comment %} Link to dedicated comparison pages if they exist for this app's slug {% endcomment -%}
+  {%- assign comparison_slugs = "gymlogger-x:strong-workout-app,taskful-day:streaks-app,observa:autosleep,appmeta:app-store-connect-web" | split: "," -%}
+  {%- assign comparison_url = "" -%}
+  {%- for pair in comparison_slugs -%}
+    {%- assign parts = pair | split: ":" -%}
+    {%- if parts[0] == include.app.slug -%}
+      {%- assign comparison_url = parts[1] -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if comparison_url != "" -%}
+    <div class="actions" style="margin-top:var(--s-4);justify-content:center;">
+      <a class="btn btn-secondary" href="/alternatives/{{ comparison_url }}/">See the full comparison</a>
+      <a class="btn btn-secondary" href="/alternatives/">All alternatives</a>
+    </div>
+  {%- else -%}
+    <div class="actions" style="margin-top:var(--s-4);justify-content:center;">
+      <a class="btn btn-secondary" href="/alternatives/">All alternative comparisons</a>
+    </div>
+  {%- endif -%}
+</section>
+{%- endif -%}
