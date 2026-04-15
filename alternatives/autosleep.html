@@ -1,0 +1,111 @@
+---
+layout: default
+permalink: /alternatives/autosleep/
+title: "AutoSleep Alternative"
+seo:
+  title: "AutoSleep Alternative — Observa vs AutoSleep for Apple Health Insights"
+  description: "Looking for an AutoSleep alternative that explains your sleep data instead of just tracking it? Observa interprets Apple Health — HRV, sleep stages, ECG, activity — in plain language, fully on-device."
+  keywords:
+    - AutoSleep alternative
+    - alternative to AutoSleep iPhone
+    - Observa vs AutoSleep
+    - Apple Health insights app
+    - sleep interpretation app
+    - HRV analysis app iPhone
+    - private sleep app iPhone
+    - Apple Watch sleep analytics
+    - Apple Health pattern recognition
+---
+
+{%- assign app = site.apps | where: "slug", "observa" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/alternatives/autosleep/#webpage",
+  "url": "{{ site.url }}/alternatives/autosleep/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Alternatives", "item": "{{ site.url }}/alternatives/" },
+      { "@type": "ListItem", "position": 3, "name": "AutoSleep alternative", "item": "{{ site.url }}/alternatives/autosleep/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is the best alternative to AutoSleep?", "acceptedAnswer": { "@type": "Answer", "text": "Observa is a different kind of app — not a tracker, but an interpretation layer. It reads whatever Apple Health is already collecting (including AutoSleep's own data if you use both) and explains what's consistently affecting your sleep, energy, and recovery, in plain language. It works well alongside AutoSleep rather than as a direct replacement." } },
+    { "@type": "Question", "name": "Does Observa track sleep directly?", "acceptedAnswer": { "@type": "Answer", "text": "Observa reads sleep data from Apple Health — which means it works with whichever tracker actually collects the data (Apple Watch, AutoSleep, third-party rings). Its job is interpretation, not collection." } },
+    { "@type": "Question", "name": "Is Observa private?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Observa runs entirely on-device with no server, no account, and no third-party analytics. Your health data never leaves your iPhone." } },
+    { "@type": "Question", "name": "Can I use Observa and AutoSleep together?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — they're complementary. AutoSleep captures sleep data; Observa interprets it alongside everything else in Apple Health (HRV, ECG, activity, workouts) to show patterns across time." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Apple Health insights · Private · On-device</p>
+    <h1 class="h1">Looking for an<br><span class="gradient-text">AutoSleep alternative?</span></h1>
+    <p class="lead">AutoSleep is a reliable automatic sleep tracker for Apple Watch. If you're looking for a direct replacement, we won't pretend Observa is one — it's a different kind of app. Observa doesn't track sleep. It <em>interprets</em> what's already tracked, and answers the "why" your tracker can't.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/apps/observa/">See Observa</a>
+      <a class="btn btn-secondary" href="#compare">Compare</a>
+    </div>
+  </div>
+</section>
+
+<section id="compare" class="section reveal">
+  <h2 class="h2">Tracker vs interpreter</h2>
+  <p class="lead">This isn't a head-to-head — the two apps do different jobs. Here's how they complement each other.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">What it does</div><div class="card-text"><strong>Observa:</strong> Interprets Apple Health data. Pattern recognition, correlation analysis, plain-language weekly reflections.<br><br><strong>AutoSleep:</strong> Automatically detects and scores sleep using Apple Watch sensors.</div></div>
+    <div class="card"><div class="card-title">What you ask it</div><div class="card-text"><strong>Observa:</strong> "What is consistently affecting my recovery?" "Why was this week different?" "What should I pay attention to?"<br><br><strong>AutoSleep:</strong> "How long did I sleep?" "What was my sleep quality score?" "Did I hit my sleep target?"</div></div>
+    <div class="card"><div class="card-title">Data handling</div><div class="card-text"><strong>Observa:</strong> Fully on-device, no server, no account.<br><br><strong>AutoSleep:</strong> Well-respected privacy reputation; check current policies.</div></div>
+    <div class="card"><div class="card-title">Best used</div><div class="card-text"><strong>Observa:</strong> Weekly, as a reflection layer on top of whatever's in Apple Health.<br><br><strong>AutoSleep:</strong> Nightly, passively, in the background.</div></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Use them together</h2>
+  <p class="lead">The most useful setup is running both. AutoSleep captures sleep; Observa correlates it with everything else — HRV, workouts, activity, heart rate — and explains patterns your tracker alone can't surface. Sleep data flows through Apple Health, so neither app needs to talk to the other directly.</p>
+</section>
+
+{% if app %}
+<section class="section reveal">
+  <h2 class="h2">About Observa</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>What is the best alternative to AutoSleep?</summary><div class="faq-a">Observa is a different kind of app — not a tracker, but an interpretation layer. It reads whatever Apple Health is already collecting (including AutoSleep's own data if you use both) and explains what's consistently affecting your sleep, energy, and recovery, in plain language. It works well alongside AutoSleep rather than as a direct replacement.</div></details>
+    <details class="faq-item"><summary>Does Observa track sleep directly?</summary><div class="faq-a">Observa reads sleep data from Apple Health — which means it works with whichever tracker actually collects the data (Apple Watch, AutoSleep, third-party rings). Its job is interpretation, not collection.</div></details>
+    <details class="faq-item"><summary>Is Observa private?</summary><div class="faq-a">Yes. Observa runs entirely on-device with no server, no account, and no third-party analytics. Your health data never leaves your iPhone.</div></details>
+    <details class="faq-item"><summary>Can I use Observa and AutoSleep together?</summary><div class="faq-a">Yes — they're complementary. AutoSleep captures sleep data; Observa interprets it alongside everything else in Apple Health (HRV, ECG, activity, workouts) to show patterns across time.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Start here</p>
+  <h2 class="h2">Open Observa.</h2>
+  <p class="lead">Interpretation, not tracking. Runs on your Apple Health data, stays on your device.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/apps/observa/">Learn about Observa</a>
+  </div>
+</section>

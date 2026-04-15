@@ -1,0 +1,128 @@
+---
+layout: default
+permalink: /alternatives/app-store-connect-web/
+title: "App Store Connect Web UI Alternative"
+seo:
+  title: "App Store Connect Web UI Alternative — AppMeta Native Mac App"
+  description: "Tired of editing App Store metadata through the App Store Connect web UI? AppMeta is a native Mac client for App Store Connect — local editing, Keychain-secured credentials, and diff previews before you push."
+  keywords:
+    - App Store Connect alternative
+    - native App Store Connect Mac app
+    - App Store Connect desktop client
+    - edit App Store metadata locally
+    - App Store Connect API Mac app
+    - AppMeta App Store Connect
+    - App Store Connect without browser
+    - App Store Connect metadata editor Mac
+    - localized metadata editor App Store
+---
+
+{%- assign app = site.apps | where: "slug", "appmeta" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/alternatives/app-store-connect-web/#webpage",
+  "url": "{{ site.url }}/alternatives/app-store-connect-web/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Alternatives", "item": "{{ site.url }}/alternatives/" },
+      { "@type": "ListItem", "position": 3, "name": "App Store Connect web UI alternative", "item": "{{ site.url }}/alternatives/app-store-connect-web/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is there a native Mac app for App Store Connect?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AppMeta is a native macOS app that connects to the App Store Connect API and lets you edit app metadata, localisations, versions, and in-app purchases locally. It stores credentials in Keychain and shows a diff preview before changes are pushed." } },
+    { "@type": "Question", "name": "Why use AppMeta instead of the App Store Connect website?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta replaces the browser workflow for everyday metadata editing. It's faster, supports localisation-at-a-glance, shows diffs before you submit, and avoids the App Store Connect web UI's periodic redesigns and inconsistencies. It's built for indie developers who touch metadata often." } },
+    { "@type": "Question", "name": "Does AppMeta store my App Store Connect credentials?", "acceptedAnswer": { "@type": "Answer", "text": "Credentials are stored in the macOS Keychain. Requests go directly from your Mac to the App Store Connect API — there's no Lagerland server in between." } },
+    { "@type": "Question", "name": "Does AppMeta replace Fastlane?", "acceptedAnswer": { "@type": "Answer", "text": "No — it complements Fastlane. Fastlane automates release workflows via command line; AppMeta is a GUI for the everyday editing work most developers still do manually. Many indie devs use both." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Native Mac · App Store Connect API · Keychain-secured</p>
+    <h1 class="h1">App Store Connect,<br><span class="gradient-text">without the browser.</span></h1>
+    <p class="lead">If you ship indie iOS apps, you know the App Store Connect web UI: six browser tabs open, metadata edits scattered across languages, page reloads that lose your place. AppMeta is a native Mac client for the App Store Connect API that replaces the worst of that workflow.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/apps/appmeta/">See AppMeta</a>
+      <a class="btn btn-secondary" href="#compare">Compare</a>
+    </div>
+  </div>
+</section>
+
+<section id="compare" class="section reveal">
+  <h2 class="h2">Web UI vs native app, honest comparison</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Everyday speed</div><div class="card-text"><strong>AppMeta:</strong> Native SwiftUI app. Instant switches between languages, apps, and versions.<br><br><strong>ASC web:</strong> Page loads per action. Periodic layout changes. Logged-out sessions.</div></div>
+    <div class="card"><div class="card-title">Localisation workflow</div><div class="card-text"><strong>AppMeta:</strong> All languages visible and editable in one view. Bulk operations supported.<br><br><strong>ASC web:</strong> Language-by-language dropdowns; context switching is tedious for multi-language apps.</div></div>
+    <div class="card"><div class="card-title">Safety</div><div class="card-text"><strong>AppMeta:</strong> Diff preview before submit — see exactly what's about to change on the App Store.<br><br><strong>ASC web:</strong> No built-in diff; mistakes are easy on dense metadata pages.</div></div>
+    <div class="card"><div class="card-title">Credentials</div><div class="card-text"><strong>AppMeta:</strong> Keychain-secured. Direct API calls from your Mac — no middleman server.<br><br><strong>ASC web:</strong> Apple ID session cookies in your browser.</div></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Who should pick what</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Pick AppMeta if…</div>
+      <ul class="bullets">
+        <li>You edit metadata across multiple apps or languages regularly</li>
+        <li>You've made a mistake on the ASC web UI and wished for a diff preview</li>
+        <li>You want a one-time-purchase desktop tool instead of a browser workflow</li>
+        <li>You live in SwiftUI-land and want your tools to feel native</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Stick with ASC web if…</div>
+      <ul class="bullets">
+        <li>You edit metadata once every few months (rare enough that a native app isn't worth it)</li>
+        <li>You need ASC features outside of metadata (e.g. TestFlight management, analytics)</li>
+        <li>You work on a team with approval workflows specific to the ASC web UI</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% if app %}
+<section class="section reveal">
+  <h2 class="h2">About AppMeta</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Is there a native Mac app for App Store Connect?</summary><div class="faq-a">Yes. AppMeta is a native macOS app that connects to the App Store Connect API and lets you edit app metadata, localisations, versions, and in-app purchases locally. It stores credentials in Keychain and shows a diff preview before changes are pushed.</div></details>
+    <details class="faq-item"><summary>Why use AppMeta instead of the App Store Connect website?</summary><div class="faq-a">AppMeta replaces the browser workflow for everyday metadata editing. It's faster, supports localisation-at-a-glance, shows diffs before you submit, and avoids the App Store Connect web UI's periodic redesigns and inconsistencies. It's built for indie developers who touch metadata often.</div></details>
+    <details class="faq-item"><summary>Does AppMeta store my App Store Connect credentials?</summary><div class="faq-a">Credentials are stored in the macOS Keychain. Requests go directly from your Mac to the App Store Connect API — there's no Lagerland server in between.</div></details>
+    <details class="faq-item"><summary>Does AppMeta replace Fastlane?</summary><div class="faq-a">No — it complements Fastlane. Fastlane automates release workflows via command line; AppMeta is a GUI for the everyday editing work most developers still do manually. Many indie devs use both.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Try it</p>
+  <h2 class="h2">Open AppMeta.</h2>
+  <p class="lead">Native Mac, Keychain-secured, diff-previewed. Built by an indie dev for indie devs.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/apps/appmeta/">Learn about AppMeta</a>
+  </div>
+</section>

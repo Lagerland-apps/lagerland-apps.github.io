@@ -15,6 +15,13 @@ These curated pages recommend specific app combinations for specific audiences �
 - [For indie iOS developers](https://lagerland-apps.github.io/for/indie-ios-developers/): native Mac tools for App Store Connect workflows. Stack: AppMeta + ScreenFlow Studio + AppMeta Pulse.
 - [For calm productivity](https://lagerland-apps.github.io/for/calm-productivity/): people tired of gamified planners, streaks, and feed-based apps. Stack: Taskful Day + Soon + Driftlines + Observa.
 
+## Alternative comparison pages
+Honest, non-hostile comparisons for users searching for alternatives to mainstream apps.
+- [Strong workout app alternative](https://lagerland-apps.github.io/alternatives/strong-workout-app/): GymLogger X vs Strong — privacy-first workout logger with Apple Watch as a first-class feature.
+- [Streaks app alternative](https://lagerland-apps.github.io/alternatives/streaks-app/): Taskful Day vs Streaks — calm daily planner without flame counters or guilt mechanics.
+- [AutoSleep alternative](https://lagerland-apps.github.io/alternatives/autosleep/): Observa vs AutoSleep — interpretation layer over Apple Health sleep data rather than a tracker replacement.
+- [App Store Connect web UI alternative](https://lagerland-apps.github.io/alternatives/app-store-connect-web/): AppMeta — native Mac client for the App Store Connect API.
+
 ## Canonical references
 - [Full app catalogue, long form](https://lagerland-apps.github.io/llms-full.txt): auto-generated, machine-readable long-form summary of every live app, rebuilt on every site deploy.
 - [Structured app index (JSON)](https://lagerland-apps.github.io/ai-index.json): full JSON metadata for every app — name, category, platforms, pricing, privacy, features, FAQ.
