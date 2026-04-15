@@ -73,6 +73,17 @@ permalink: /ai-index.json
       "who_for": {{ app.who_for | default: empty | jsonify }},
       "who_not_for": {{ app.who_not_for | default: empty | jsonify }},
       "alternatives_to": {{ app.alternatives_to | default: empty | jsonify }},
+      {%- assign extra = site.data.app_enrichment[app.slug] -%}
+      "use_cases": {{ extra.use_cases | default: empty | jsonify }},
+      "pricing_tiers": {{ extra.pricing_tiers | default: empty | jsonify }},
+      "languages": {{ extra.languages | default: empty | jsonify }},
+      {%- if app.ratings and app.ratings.count and app.ratings.count != 0 -%}
+      "rating": {
+        "value": {{ app.ratings.value | jsonify }},
+        "count": {{ app.ratings.count | jsonify }},
+        "last_synced": {{ app.ratings.last_synced | jsonify }}
+      },
+      {%- endif -%}
       "faq": [
         {%- if app.faq -%}
         {%- for q in app.faq -%}

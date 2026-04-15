@@ -45,6 +45,17 @@ Description: {{ app.seo.description }}
 {% endfor %}{% endif %}
 {% if app.alternatives_to %}A privacy-first alternative to: {{ app.alternatives_to | join: ", " }}
 {% endif %}
+{%- assign extra = site.data.app_enrichment[app.slug] -%}
+{% if extra.use_cases %}Common use cases:
+{% for u in extra.use_cases %}- {{ u }}
+{% endfor %}{% endif %}
+{% if extra.pricing_tiers %}Pricing tiers:
+{% for t in extra.pricing_tiers %}- {{ t }}
+{% endfor %}{% endif %}
+{% if extra.languages %}Languages supported ({{ extra.languages | size }}): {{ extra.languages | join: ", " }}
+{% endif %}
+{% if app.ratings and app.ratings.count and app.ratings.count != 0 %}Current rating: {{ app.ratings.value }} stars ({{ app.ratings.count }} ratings, aggregated across Apple App Store worldwide, last synced {{ app.ratings.last_synced }})
+{% endif %}
 Pricing model: {{ app.price.model }}{% if app.price.value %} — {{ app.price.value }}{% endif %}
 
 Privacy:

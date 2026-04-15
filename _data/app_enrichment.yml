@@ -1,0 +1,173 @@
+# Supplementary per-app metadata keyed by slug.
+# Merged into ai-index.json and llms-full.txt at build time.
+# Single source of truth for use_cases, pricing_tiers, languages —
+# keeps _apps/*.md files focused on primary content.
+
+aftershift:
+  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
+  use_cases:
+    - "Track sleep and naps across a rotating 3-shift or 12-hour rotation"
+    - "Get a Shift Recovery Score before heading into your next work block"
+    - "Plan caffeine timing so it helps the shift you're on, not the one you finished"
+    - "Spot fragmented-sleep weeks before fatigue compounds"
+    - "Import shifts from your calendar and auto-tag recovery periods"
+  pricing_tiers:
+    - "Free — core sleep tracking, nap tracking, recovery summaries"
+    - "Premium — Shift Recovery Score, fatigue insights, caffeine timing, trends, exports (from €3.99/month)"
+
+allpaid:
+  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
+  use_cases:
+    - "Stop forgetting a monthly utility or rent bill and paying late fees"
+    - "Track 10–50 subscriptions in one calendar view without connecting a bank"
+    - "Mark bills paid from a Home Screen widget or notification"
+    - "Share a specific bill with a partner or roommate"
+    - "Ask Siri what's due this week"
+  pricing_tiers:
+    - "Free — core bill tracking, reminders, calendar view"
+    - "Pro — unlimited bills, spending analytics, category breakdowns, full payment history ($1.99/month or $24.99 lifetime)"
+
+appmeta:
+  languages: [EN]
+  use_cases:
+    - "Edit app metadata across all localizations from one native Mac view"
+    - "Preview field-level diffs before pushing changes to App Store Connect"
+    - "Analyze keywords across every locale to find gaps and wasted characters"
+    - "Reply to App Store reviews in every region without opening the browser"
+    - "Submit a new version without touching the ASC web UI"
+  pricing_tiers:
+    - "Free — full demo mode with every feature"
+    - "Pro — unlimited apps and edits, lifetime ($44.99 once, no subscription)"
+
+appmeta-pulse:
+  languages: [EN]
+  use_cases:
+    - "Check App Store revenue in seconds from iPhone during coffee"
+    - "Monitor subscription health, trial conversions, and refunds at a glance"
+    - "Compare week-over-week performance across a multi-app portfolio"
+    - "Spot a sudden revenue dip or spike without logging into ASC web"
+    - "Share read-only metrics access without giving write permissions"
+  pricing_tiers:
+    - "Free — download and try"
+    - "Pro — full access (from $0.99/month, $8.99/year, or $17.99 lifetime)"
+
+chessful:
+  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
+  use_cases:
+    - "Get plain-language explanations of why you lost your last game"
+    - "Train your real weaknesses with spaced-repetition exercises from your own mistakes"
+    - "Play against 40 AI opponents with distinct styles from beginner to master"
+    - "Track improvement across tactics, defense, positional play, openings, and endgames"
+    - "Improve offline on a flight without needing a Chess.com account"
+  pricing_tiers:
+    - "Free — try everything"
+    - "Premium — unlimited analysis, adaptive training, full progress tracking"
+
+driftlines:
+  languages: [EN]
+  use_cases:
+    - "Rebuild a calm nightly reading habit away from feeds and notifications"
+    - "Read one short piece of first-person prose each morning"
+    - "Occasionally shape where the narrative drifts with a rare choice"
+    - "Experience a life that unfolds over months without streaks or mechanics"
+    - "Support a deliberately anti-engagement piece of literary software"
+  pricing_tiers:
+    - "One-time purchase — unlocks all current and future entries"
+    - "Optional token packs — grant additional influence moments"
+
+gymlogger-x:
+  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
+  use_cases:
+    - "Log every set and rep from Apple Watch without pulling out your phone"
+    - "Follow a PPL, Upper/Lower, or periodized program with automatic deloads"
+    - "Detect a plateau before you stall out on a key lift"
+    - "Build a strength program using real coach-designed templates"
+    - "Track 1RM estimates, volume trends, and training consistency over months"
+  pricing_tiers:
+    - "Free — core workout logging, exercise library, Apple Watch basics"
+    - "Pro — Smart Programs, plateau detection, analytics, animated demos ($17.99/year)"
+    - "Lifetime — everything forever ($44.99 one-time)"
+
+mediakit:
+  languages: [EN]
+  use_cases:
+    - "Compress a video for YouTube or Instagram without uploading to a web tool"
+    - "Convert HEIC photos to JPG in bulk, fully offline"
+    - "Merge, split, redact, or sign a PDF with no cloud tool involved"
+    - "Extract an encrypted RAR v5 archive natively on Apple Silicon"
+    - "Automate conversion workflows via Shortcuts integration"
+  pricing_tiers:
+    - "Free 3-day trial — full access to all 133 tools"
+    - "Free forever — five core tools (Video Compress, Image Compress, Image Resize, Audio Convert, PDF Compress)"
+    - "Pro — unlocks the remaining 128 tools and batch processing"
+
+observa:
+  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
+  use_cases:
+    - "Understand what consistently affects your sleep and recovery over weeks"
+    - "Get plain-language interpretation of HRV and ECG trends"
+    - "Discover correlations between training load and energy you wouldn't spot alone"
+    - "Read a calm weekly reflection instead of staring at raw Apple Health dashboards"
+    - "Keep all analysis on-device, never uploading health data"
+  pricing_tiers:
+    - "Free — daily insights, core pattern recognition"
+    - "Pro — advanced correlations, long-term trends, weekly reflections (from €2.99/month or €69.99 lifetime)"
+
+rightsplit:
+  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
+  use_cases:
+    - "Scan a restaurant receipt and split items between 4 friends in 60 seconds"
+    - "Fairly split shared dishes and bottles proportionally"
+    - "Calculate tips and send everyone their share via iMessage or WhatsApp"
+    - "Settle a group trip without creating a Splitwise account"
+    - "Keep a split history for future reference"
+  pricing_tiers:
+    - "Free — equal splitting, tip calculator"
+    - "Pro — item-based splitting, uneven splits, per-person tip breakdown, split history (from $1.99/year or $7.99 lifetime)"
+
+screenflow-studio:
+  languages: [EN]
+  use_cases:
+    - "Generate App Store screenshots for every required iPhone and iPad size"
+    - "Produce localized screenshots for 20+ App Store regions in one export"
+    - "Upload finished screenshots directly to App Store Connect without a browser"
+    - "Use real 3D Metal-rendered device frames instead of flat overlays"
+    - "Start from professional templates or build custom layouts"
+  pricing_tiers:
+    - "One-time purchase — lifetime access with Family Sharing ($22.99, no subscription)"
+
+soon:
+  languages: [AR, BG, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KK, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
+  use_cases:
+    - "Count down to a trip, wedding, birthday, or life milestone with a photo background"
+    - "See live destination weather as your trip gets closer"
+    - "Follow a Plan Mode timeline that auto-suggests packing and prep checklists"
+    - "Display a countdown on Home Screen, Lock Screen, or StandBy widgets"
+    - "Get memories returning on every anniversary after a countdown ends"
+  pricing_tiers:
+    - "Free — 5 events, one pinned widget, 3 themes, calendar import, memories, reflection mode"
+    - "Premium — unlimited events, all widget styles, 10 premium themes, weather intelligence, daily notes, recurring events, notifications (€2.99/month, €19.99/year, or €39.99 lifetime with 7-day free trial)"
+
+taskful-day:
+  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
+  use_cases:
+    - "Plan a realistic day without streak anxiety or red-X punishment"
+    - "Drop into an immersive focus session with a distraction-free timer"
+    - "Capture a task via voice with automatic date detection"
+    - "See patterns between mood, planning, and completion over weeks"
+    - "Roll unfinished tasks forward to tomorrow without guilt"
+  pricing_tiers:
+    - "Free — full core daily planning"
+    - "Pro — focus session timer, advanced analytics, widgets, iCloud sync, unlimited follow-ups (from €2.99/month or €49.99 lifetime)"
+
+wanderwiki:
+  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
+  use_cases:
+    - "Swipe through random Wikipedia articles for passive discovery"
+    - "Learn Today-in-History events on the exact date you're reading"
+    - "Follow a For-You feed based on selected interests, not behavioral tracking"
+    - "Save articles for offline reading on flights and commutes"
+    - "Rebuild a reading habit without an algorithmic feed"
+  pricing_tiers:
+    - "Free trial — 3 days of full access"
+    - "Paid — from $0.99/week, $1.99/month, $8.99/year, or $22.99 lifetime"
