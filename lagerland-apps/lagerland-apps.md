@@ -31,6 +31,10 @@ seo:
     "name": "Antti Aittamaa",
     "jobTitle": "Independent Apple Developer",
     "worksFor": { "@id": "{{ site.url }}/#organization" },
+    "sameAs": [
+      "https://apps.apple.com/developer/antti-aittamaa/id1855943133",
+      "https://github.com/lagerland-apps"
+    ],
     "knowsAbout": [
       "SwiftUI",
       "iOS development",
