@@ -1,0 +1,68 @@
+---
+layout: default
+title: "Journal"
+permalink: /journal/
+seo:
+  title: "Journal — Lagerland Apps | Changelog, Stories & Principles"
+  description: "The Lagerland Apps journal — rebrand stories, shipping notes, design principles, and occasional essays about building privacy-first iOS and macOS apps as a one-person studio."
+  keywords:
+    - Lagerland Apps journal
+    - indie Apple developer blog
+    - iOS app changelog
+    - macOS app developer notes
+    - privacy-first app design
+---
+
+{%- assign posts = site.journal | sort: "date" | reverse -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": "{{ site.url }}/journal/#blog",
+  "url": "{{ site.url }}/journal/",
+  "name": "Lagerland Apps Journal",
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "en",
+  "publisher": { "@id": "{{ site.url }}/#organization" },
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "blogPost": [
+    {%- for post in posts -%}
+    {
+      "@type": "BlogPosting",
+      "url": "{{ site.url }}{{ post.url }}",
+      "headline": {{ post.title | jsonify }},
+      "datePublished": "{{ post.date | date: '%Y-%m-%d' }}",
+      "author": { "@type": "Person", "name": "Antti Aittamaa" }
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Journal · Notes from a one-person Apple studio</p>
+    <h1 class="h1">Stories, shipping notes,<br><span class="gradient-text">and design principles.</span></h1>
+    <p class="lead">Rebrand stories, changelog entries, and occasional essays about building privacy-first iOS and macOS apps without advertisers, accounts, or VC pressure.</p>
+  </div>
+</section>
+
+<section class="section--lg">
+  {%- if posts.size == 0 -%}
+    <div class="card">
+      <div class="card-title">No posts yet.</div>
+      <div class="card-text">The first journal entries are in progress. Check back soon.</div>
+    </div>
+  {%- else -%}
+    <div class="grid grid-2 stagger">
+      {%- for post in posts -%}
+        <a class="card card-app" href="{{ post.url }}">
+          <p class="overline">{{ post.date | date: "%B %-d, %Y" }}{% if post.read_time %} · {{ post.read_time }}{% endif %}</p>
+          <div class="card-title" style="margin-top:var(--s-2);">{{ post.title }}</div>
+          {% if post.lede %}<div class="card-text">{{ post.lede }}</div>{% endif %}
+        </a>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</section>

@@ -10,6 +10,9 @@ collections:
   apps:
     output: true
     permalink: /apps/:slug/
+  journal:
+    output: true
+    permalink: /journal/:slug/
 
 defaults:
   - scope:
@@ -17,6 +20,11 @@ defaults:
       type: apps
     values:
       layout: app
+  - scope:
+      path: ""
+      type: journal
+    values:
+      layout: journal
 
 plugins:
   - jekyll-sitemap

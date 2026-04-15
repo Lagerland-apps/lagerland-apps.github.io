@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+{% assign post_url = site.url | append: page.url %}
+{% assign og_image = page.og_image | default: '/assets/og/default.png' %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": "{{ post_url }}#post",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.excerpt | default: page.description | jsonify }},
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ page.last_updated | default: page.date | date: '%Y-%m-%d' }}",
+  "url": "{{ post_url }}",
+  "image": "{{ site.url }}{{ og_image }}",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Antti Aittamaa",
+    "url": "{{ site.url }}/lagerland-apps/"
+  },
+  "publisher": { "@id": "{{ site.url }}/#organization" },
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ post_url }}" }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Journal", "item": "{{ site.url }}/journal/" },
+    { "@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": "{{ post_url }}" }
+  ]
+}
+</script>
+
+<article class="journal-post">
+  <header class="hero hero--home">
+    <div class="hero-left reveal">
+      <p class="overline">
+        <a href="/journal/">Journal</a> · {{ page.date | date: "%B %-d, %Y" }}{% if page.read_time %} · {{ page.read_time }}{% endif %}
+      </p>
+      <h1 class="h1">{{ page.title }}</h1>
+      {% if page.lede %}<p class="lead">{{ page.lede }}</p>{% endif %}
+    </div>
+  </header>
+
+  <section class="section reveal">
+    <div class="prose" style="max-width:720px;margin:0 auto;">
+      {{ content }}
+    </div>
+  </section>
+
+  <section class="cta-section reveal">
+    <p class="overline">More from the journal</p>
+    <h2 class="h2">Keep reading.</h2>
+    <div class="actions">
+      <a class="btn btn-primary" href="/journal/">All journal posts</a>
+      <a class="btn btn-secondary" href="/apps/">Browse apps</a>
+    </div>
+  </section>
+</article>

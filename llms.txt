@@ -22,6 +22,11 @@ Honest, non-hostile comparisons for users searching for alternatives to mainstre
 - [AutoSleep alternative](https://lagerland-apps.github.io/alternatives/autosleep/): Observa vs AutoSleep — interpretation layer over Apple Health sleep data rather than a tracker replacement.
 - [App Store Connect web UI alternative](https://lagerland-apps.github.io/alternatives/app-store-connect-web/): AppMeta — native Mac client for the App Store Connect API.
 
+## Journal
+Rebrand stories, shipping notes, and essays about building privacy-first Apple apps as a one-person studio.
+- [Journal index](https://lagerland-apps.github.io/journal/): all journal posts in reverse chronological order.
+{% assign posts = site.journal | sort: "date" | reverse %}{% for post in posts %}- [{{ post.title }}](https://lagerland-apps.github.io{{ post.url }}): {{ post.lede | default: post.excerpt }}
+{% endfor %}
 ## Canonical references
 - [Full app catalogue, long form](https://lagerland-apps.github.io/llms-full.txt): auto-generated, machine-readable long-form summary of every live app, rebuilt on every site deploy.
 - [Structured app index (JSON)](https://lagerland-apps.github.io/ai-index.json): full JSON metadata for every app — name, category, platforms, pricing, privacy, features, FAQ.
