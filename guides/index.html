@@ -1,0 +1,53 @@
+---
+layout: default
+permalink: /guides/
+title: "Guides"
+seo:
+  title: "Guides — Problem-First Alternatives for iPhone & Mac"
+  description: "Short, honest guides that take a specific problem ('I want a workout app without paying monthly forever') and point at a privacy-first Apple-native answer."
+  keywords:
+    - iPhone app guides
+    - problem-first app recommendations
+    - privacy-first app alternatives
+    - best app without subscription
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/guides/#webpage",
+  "url": "{{ site.url }}/guides/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "{{ site.url }}/guides/" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Problem → solution</p>
+    <h1 class="h1">Guides that start<br><span class="gradient-text">with a real problem.</span></h1>
+    <p class="lead">Short, honest guides that take a specific frustration (<em>"I want a workout app without paying monthly forever"</em>) and point at a privacy-first Apple-native answer — without hiding the trade-offs.</p>
+  </div>
+</section>
+
+<section class="section--lg reveal">
+  <div class="grid grid-2 stagger">
+    <a class="card card-app" href="/guides/workout-app-without-subscription/">
+      <div class="card-title">"I want a workout app without paying monthly forever."</div>
+      <div class="card-text">Strong, Hevy, and Fitbod are all subscription-first. GymLogger X offers a free tier and a $44.99 one-time lifetime option instead.</div>
+    </a>
+    <a class="card card-app" href="/guides/bill-tracker-without-bank-connection/">
+      <div class="card-title">"I want to track bills without linking my bank account."</div>
+      <div class="card-text">Rocket Money and Truebill require Plaid-based bank access. AllPaid is manual-first, fully private, and has no aggregator.</div>
+    </a>
+  </div>
+</section>

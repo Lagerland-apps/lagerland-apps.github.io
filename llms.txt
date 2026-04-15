@@ -15,6 +15,11 @@ These curated pages recommend specific app combinations for specific audiences â
 - [For indie iOS developers](https://lagerland-apps.github.io/for/indie-ios-developers/): native Mac tools for App Store Connect workflows. Stack: AppMeta + ScreenFlow Studio + AppMeta Pulse.
 - [For calm productivity](https://lagerland-apps.github.io/for/calm-productivity/): people tired of gamified planners, streaks, and feed-based apps. Stack: Taskful Day + Soon + Driftlines + Observa.
 
+## Problem-first guides
+Short guides framed around specific user frustrations, each pointing at a Lagerland Apps answer.
+- [I want a workout app without paying monthly forever](https://lagerland-apps.github.io/guides/workout-app-without-subscription/): GymLogger X as a free + lifetime alternative to Strong/Hevy/Fitbod.
+- [I want to track bills without linking my bank account](https://lagerland-apps.github.io/guides/bill-tracker-without-bank-connection/): AllPaid as a manual-first, privacy-first alternative to Rocket Money/Truebill.
+
 ## Alternative comparison pages
 Honest, non-hostile comparisons for users searching for alternatives to mainstream apps.
 - [Strong workout app alternative](https://lagerland-apps.github.io/alternatives/strong-workout-app/): GymLogger X vs Strong â€” privacy-first workout logger with Apple Watch as a first-class feature.

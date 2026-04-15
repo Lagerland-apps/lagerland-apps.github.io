@@ -1,0 +1,142 @@
+---
+layout: default
+permalink: /guides/bill-tracker-without-bank-connection/
+title: "Bill tracker without bank connection"
+seo:
+  title: "Bill Tracker Without Bank Connection — Private iPhone Alternative"
+  description: "Most bill trackers demand read access to your bank accounts via Plaid or a similar aggregator. If you refuse on privacy grounds, here's how to track bills, subscriptions, and due dates without handing over your login credentials."
+  keywords:
+    - bill tracker without bank connection
+    - bill reminder app no bank link
+    - private bill tracker iPhone
+    - manual bill tracker iPhone
+    - no Plaid bill app
+    - bill tracker no account aggregation
+    - subscription tracker without bank access
+    - offline bill tracker
+    - privacy-first bill reminder
+    - alternative to Rocket Money bank link
+---
+
+{%- assign app = site.apps | where: "slug", "allpaid" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/guides/bill-tracker-without-bank-connection/#webpage",
+  "url": "{{ site.url }}/guides/bill-tracker-without-bank-connection/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "{{ site.url }}/guides/" },
+      { "@type": "ListItem", "position": 3, "name": "Bill tracker without bank connection", "item": "{{ site.url }}/guides/bill-tracker-without-bank-connection/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is there a bill tracker for iPhone that doesn't connect to my bank?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AllPaid is a privacy-first bill tracker that works entirely from manual entry — no bank connection, no Plaid, no account aggregation. You add bills yourself and mark them paid. Data stays on your device." } },
+    { "@type": "Question", "name": "Why do Rocket Money and Truebill require bank access?", "acceptedAnswer": { "@type": "Answer", "text": "Those apps automatically discover recurring subscriptions and enable bill negotiation. To do that, they need read access to your transactions through an aggregator like Plaid. If you don't want to hand over bank credentials to a third party, the trade-off is manual entry — which is what AllPaid is designed around." } },
+    { "@type": "Question", "name": "Is manual bill entry actually sustainable?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, once you do the initial setup. Most people have 20–50 recurring bills that don't change much month to month. AllPaid's smart detection auto-fills 30+ common services (Netflix, Spotify, rent, utilities) and the mark-as-paid flow is a single tap from a widget or notification." } },
+    { "@type": "Question", "name": "Does AllPaid have widgets and Siri?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Home Screen and Lock Screen widgets show upcoming bills, the full calendar widget puts your month on your Home Screen, Live Activities show today's and tomorrow's bills on the Dynamic Island, and you can ask Siri what's due." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Guide · Problem → solution</p>
+    <h1 class="h1">
+      "I want to track bills<br><span class="gradient-text">without linking my bank account."</span>
+    </h1>
+    <p class="lead">
+      Rocket Money, Truebill, Copilot, and Monarch all ask for read-only access to your bank through an aggregator like Plaid. If your answer is "no — I'm not giving a third-party app my banking credentials," here's the honest alternative.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#answer">Skip to the answer</a>
+      <a class="btn btn-secondary" href="#faq">FAQ</a>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Why bank aggregation is the problem</h2>
+  <p class="lead">Automated bill trackers need to see your transactions to work. They ask for read-only API access via Plaid, Yodlee, or similar aggregators. In exchange, you get auto-discovery of subscriptions, bill negotiation, and cashflow insights — all powered by the aggregator's view of your finances.</p>
+  <p class="lead">If you're privacy-conscious, the trade is unacceptable:</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">You're handing over banking credentials</div><div class="card-text">Even with OAuth-style flows, the aggregator holds a token with access to every transaction you make. That's not "just bills" — it's everything.</div></div>
+    <div class="card"><div class="card-title">Your data sits on a third-party server</div><div class="card-text">The aggregator caches your transaction history. Any breach at Plaid, Yodlee, or the bill-tracker itself exposes it.</div></div>
+    <div class="card"><div class="card-title">Monetization incentives are mixed</div><div class="card-text">Many bill-negotiation apps take a cut of savings — which means they profit from keeping you in the loop. The incentive isn't fully aligned with your calm.</div></div>
+    <div class="card"><div class="card-title">Your bank may not allow it</div><div class="card-text">Some banks (especially outside the US) simply don't integrate with aggregators at all. If your bank isn't supported, automated trackers don't work for you.</div></div>
+  </div>
+</section>
+
+<section id="answer" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">The answer</p>
+    <h2 class="h2">AllPaid — manual-first, private, offline</h2>
+    <p class="lead">A calm bill tracker for iPhone, iPad, Mac, and Apple Vision Pro. You add bills yourself (or use smart detection for common ones), track them on a calendar, and mark paid with a single tap. Zero bank connection. Zero cloud storage. Zero accounts.</p>
+  </div>
+  {% if app %}
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+  {% endif %}
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Isn't manual entry tedious?</h2>
+  <p class="lead">Only at the start — which takes 10–15 minutes for a typical household of 20–50 bills. After that:</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Smart detection fills in the details</div><div class="card-text">Type "Netflix" and AllPaid auto-fills the amount, category, and billing cycle. 30+ common services recognized. New bills are 2 taps.</div></div>
+    <div class="card"><div class="card-title">Mark paid is one tap</div><div class="card-text">From the app, from a notification, from a Home Screen widget. Undo if you tapped too fast. Zero friction.</div></div>
+    <div class="card"><div class="card-title">Most bills don't change</div><div class="card-text">Your rent, utilities, and subscriptions are the same every month. Once entered, they recur automatically. You only touch new additions.</div></div>
+    <div class="card"><div class="card-title">Calendar + widgets make it passive</div><div class="card-text">The full monthly calendar and Home Screen widgets mean you barely need to open the app. The information comes to you.</div></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">What you give up (honest version)</h2>
+  <div class="card">
+    <p>Manual entry means you lose:</p>
+    <ul class="bullets">
+      <li>Automatic subscription discovery (no auto-scan for forgotten recurring charges)</li>
+      <li>Bill negotiation features</li>
+      <li>Cross-account cashflow forecasting</li>
+      <li>The feeling that "the app knows everything about my money"</li>
+    </ul>
+    <p style="margin-top:var(--s-3);">If those features are critical for you, AllPaid isn't the right choice — you need an aggregator-based app and you're accepting the privacy trade. AllPaid is built for people who'd rather spend 10 minutes of setup than hand over bank credentials.</p>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Is there a bill tracker for iPhone that doesn't connect to my bank?</summary><div class="faq-a">Yes. AllPaid is a privacy-first bill tracker that works entirely from manual entry — no bank connection, no Plaid, no account aggregation. You add bills yourself and mark them paid. Data stays on your device.</div></details>
+    <details class="faq-item"><summary>Why do Rocket Money and Truebill require bank access?</summary><div class="faq-a">Those apps automatically discover recurring subscriptions and enable bill negotiation. To do that, they need read access to your transactions through an aggregator like Plaid. If you don't want to hand over bank credentials to a third party, the trade-off is manual entry — which is what AllPaid is designed around.</div></details>
+    <details class="faq-item"><summary>Is manual bill entry actually sustainable?</summary><div class="faq-a">Yes, once you do the initial setup. Most people have 20–50 recurring bills that don't change much month to month. AllPaid's smart detection auto-fills 30+ common services and the mark-as-paid flow is a single tap from a widget or notification.</div></details>
+    <details class="faq-item"><summary>Does AllPaid have widgets and Siri?</summary><div class="faq-a">Yes. Home Screen and Lock Screen widgets show upcoming bills, the full calendar widget puts your month on your Home Screen, Live Activities show today's and tomorrow's bills on the Dynamic Island, and you can ask Siri what's due.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Try it</p>
+  <h2 class="h2">Open AllPaid.</h2>
+  <p class="lead">Manual-first, private-first, account-free. Free to start, with an optional Pro upgrade if you want unlimited bills and spending analytics.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/apps/allpaid/">Learn about AllPaid</a>
+    <a class="btn btn-secondary" href="/apps/">See all apps</a>
+  </div>
+</section>
