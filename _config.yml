@@ -1,6 +1,10 @@
-title: Lagerland Apps
-description: "Privacy-first iOS apps by Lagerland Apps."
+title: "Lagerland Apps — Privacy-First iOS & macOS Apps"
+description: "Calm, privacy-first apps for iPhone, iPad, Apple Watch, and Mac. No tracking, no ads, no accounts. Productivity, health, finance, and developer tools by an independent Apple developer."
+tagline: "Privacy-first apps for iOS and macOS"
 url: "https://lagerland-apps.github.io"
+author: "Lagerland Apps"
+email: "lagerland.apps@proton.me"
+lang: en
 
 collections:
   apps:

@@ -1,23 +1,80 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0b0f">
+<meta name="color-scheme" content="dark light">
 
-<title>{{ page.seo.title | default: page.title | default: site.title }}</title>
-<meta name="description" content="{{ page.seo.description | default: site.description }}">
+{%- assign page_title = page.seo.title | default: page.title | default: site.title -%}
+{%- assign page_desc  = page.seo.description | default: site.description -%}
+{%- assign page_url   = site.url | append: page.url -%}
+{%- assign og_image   = page.og_image | default: '/assets/og/default.png' -%}
+
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_desc }}">
+<meta name="author" content="Lagerland Apps">
+<meta name="publisher" content="Lagerland Apps">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+{%- if page.seo.keywords %}
+<meta name="keywords" content="{{ page.seo.keywords | join: ', ' }}">
+{%- endif %}
+
+<link rel="canonical" href="{{ page_url }}">
+<link rel="alternate" type="application/json" href="{{ site.url }}/ai-index.json" title="AI-readable app index">
+<link rel="alternate" type="text/plain" href="{{ site.url }}/llms.txt" title="LLM summary (llms.txt)">
+<link rel="sitemap" type="application/xml" href="{{ site.url }}/sitemap.xml">
 
 <link rel="stylesheet" href="/assets/css/style.css">
-<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="{% if page.layout == 'app' %}product{% else %}website{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ page.seo.title | default: page.title | default: site.title }}">
-<meta property="og:description" content="{{ page.seo.description | default: site.description }}">
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:image" content="{{ site.url }}{{ page.og_image | default: '/assets/og/default.png' }}">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_desc }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:image" content="{{ site.url }}{{ og_image }}">
+<meta property="og:locale" content="en_US">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page.seo.title | default: page.title | default: site.title }}">
-<meta name="twitter:description" content="{{ page.seo.description | default: site.description }}">
-<meta name="twitter:image" content="{{ site.url }}{{ page.og_image | default: '/assets/og/default.png' }}">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_desc }}">
+<meta name="twitter:image" content="{{ site.url }}{{ og_image }}">
+
+{%- comment %} Organization + WebSite JSON-LD (site-wide, gives Google an entity anchor) {% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ site.url }}/#organization",
+      "name": "Lagerland Apps",
+      "alternateName": "Lagerland",
+      "url": "{{ site.url }}",
+      "email": "lagerland.apps@proton.me",
+      "description": "Independent Apple developer building privacy-first iOS and macOS apps with no tracking, no accounts, and no ads.",
+      "foundingDate": "2026",
+      "knowsAbout": [
+        "iOS app development",
+        "macOS app development",
+        "Apple Health analytics",
+        "privacy-first software",
+        "SwiftUI",
+        "App Store optimization"
+      ],
+      "sameAs": [
+        "https://github.com/lagerland-apps"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}",
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "publisher": { "@id": "{{ site.url }}/#organization" },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
 
 <script src="/assets/js/animations.js" defer></script>
 <script data-goatcounter="https://lagerlandapps.goatcounter.com/count"
