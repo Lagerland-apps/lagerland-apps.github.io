@@ -115,20 +115,41 @@ seo:
 </section>
 
 <!-- ============================
-     HERO — keyword-aware but elegant
+     HERO — confident split, framed product art
      ============================ -->
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">Independent Apple developer · {{ live_apps.size }} apps · Zero tracking</p>
+    <span class="hero-proof">
+      <span class="dot--live" aria-hidden="true"></span>
+      Independent Apple studio · Built in Finland · Zero tracking
+    </span>
     <h1 class="h1">
-      Calm, private apps for<br><span class="gradient-text">iPhone, iPad, and Mac.</span>
+      Calm, private software<br>
+      <span class="gradient-text">for people who notice details.</span>
     </h1>
     <p class="lead">
-      Thoughtful tools for productivity, health, finance, and creativity. No tracking, no ads, no accounts — just software that respects your time.
+      An independent Apple studio. {{ live_apps.size }} apps for iPhone, iPad, Apple&nbsp;Watch and Mac. No ads, no accounts, no dark patterns — just tools that respect your time.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="#apps">Browse all apps</a>
-      <a class="btn btn-secondary" href="#faq">How it works</a>
+      <a class="btn btn-secondary" href="#faq">Our philosophy →</a>
+    </div>
+  </div>
+
+  <div class="hero-right reveal-scale">
+    <div class="hero-composition" aria-hidden="true">
+      <div class="framed-shot framed-shot--lift device device--phone">
+        <img src="/assets/screenshots/observa/1.png"
+             alt="" width="240" height="520" loading="eager" decoding="async">
+      </div>
+      <div class="framed-shot framed-shot--lift framed-shot--no-island device device--tablet">
+        <img src="/assets/screenshots/taskful-day/1.png"
+             alt="" width="320" height="430" loading="eager" decoding="async">
+      </div>
+      <div class="framed-shot framed-shot--lift framed-shot--no-island device device--watch">
+        <img src="/assets/screenshots/gymlogger-x/1.png"
+             alt="" width="130" height="160" loading="eager" decoding="async">
+      </div>
     </div>
   </div>
 </section>

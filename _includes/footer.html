@@ -1,10 +1,23 @@
 <footer class="footer">
   <div class="container">
+    <div class="footer-hero">
+      <h2 class="footer-wordmark">Lagerland</h2>
+      <p class="footer-tagline">
+        An independent Apple studio. Built by one person in Finland — privacy by default, not as a feature, since 2021.
+      </p>
+      <span class="badge-privacy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z"/>
+          <path d="m9 12 2 2 4-4"/>
+        </svg>
+        No tracking. Ever.
+      </span>
+    </div>
     <div class="footer-grid">
       <div class="footer-col">
         <a class="brand" href="/" style="margin-bottom:var(--s-3);display:inline-flex;">
           <span class="brand-mark">L</span>
-          <span class="brand-name">Lagerland Apps</span>
+          <span class="brand-name">Lagerland</span>
         </a>
         <p class="small">Privacy-first iOS &amp; macOS apps built to feel calm, fast, and useful. Independent Apple developer — no ads, no tracking, no accounts.</p>
         <p class="small"><a href="/lagerland-apps/">About the developer</a></p>
@@ -64,8 +77,9 @@
         <a href="/apps/gymlogger-x/coaches/">For Coaches</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="small">&copy; {{ "now" | date: "%Y" }} Lagerland Apps</div>
+    <div class="footer-meta">
+      <span>&copy; {{ "now" | date: "%Y" }} Lagerland Apps · All rights reserved</span>
+      <span>Made on a MacBook at 63°N</span>
     </div>
   </div>
 </footer>
