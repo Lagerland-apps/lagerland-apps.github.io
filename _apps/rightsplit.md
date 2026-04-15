@@ -119,5 +119,10 @@ support:
 release:
   first_release: "2026-03-01"
   last_updated: "2026-03-15"
+
+ratings:
+  value: "5.0"
+  count: 1
+  last_synced: "2026-04-15"
 ---
 RightSplit is a bill splitting app for iPhone, iPad, Mac, and Apple Vision Pro that scans receipts, detects items automatically, and calculates what each person owes. Supports item-level assignment so each person pays for what they ordered, with shared dish splitting for bottles, appetizers, and group items. Smart tip calculation distributes tips proportionally with fair rounding. Share payment requests instantly via text message, WhatsApp, or copy-paste. Free with equal splitting and tip calculator. Pro unlocks item-based splitting, uneven splits, per-person tip breakdown, and split history — from $1.99/year or $7.99 lifetime. No ads, no tracking, no account required.

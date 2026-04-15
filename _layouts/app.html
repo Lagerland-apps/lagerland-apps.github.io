@@ -44,6 +44,15 @@ layout: default
     "@type": "Organization",
     "@id": "{{ site.url }}/#organization"
   },
+  {%- if page.ratings and page.ratings.count and page.ratings.count != 0 -%}
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": {{ page.ratings.value | jsonify }},
+    "ratingCount": {{ page.ratings.count | jsonify }},
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  {%- endif -%}
   "offers": {%- assign price_model = page.price.model | downcase -%}
   {%- if price_model contains 'one-time' -%}
   {

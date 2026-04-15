@@ -123,5 +123,10 @@ support:
 release:
   first_release: "2026-01-01"
   last_updated: "2026-03-28"
+
+ratings:
+  value: "5.0"
+  count: 2
+  last_synced: "2026-04-15"
 ---
 AllPaid is a calm, privacy-first bill tracker and reminder app for iPhone, iPad, Mac, and Apple Vision Pro. It organizes bills, subscriptions, and one-time payments with smart detection that recognizes 30+ services and auto-fills billing details. A monthly calendar view shows daily totals for due, paid, and remaining amounts. Gentle reminders notify before due dates with one-tap mark-as-paid from notifications. Includes Home Screen and Lock Screen widgets, Live Activities on Dynamic Island, Siri integration, search and sorting, bill categories, and note attachments. Pro adds unlimited bills, spending analytics with category breakdowns, monthly trends, multiple reminders, and full payment history. No ads, no tracking, no account required. Free with optional Pro from $1.99/month or $24.99 lifetime.

@@ -133,5 +133,10 @@ support:
 release:
   first_release: "2026-01-01"
   last_updated: "2026-04-13"
+
+ratings:
+  value: "5.0"
+  count: 2
+  last_synced: "2026-04-15"
 ---
 Soon. is a countdown and planner app for iPhone (formerly TheWait) that turns important moments — trips, weddings, birthdays, anniversaries, graduations, due dates, and personal milestones — into living countdowns. Each event is rendered full-bleed with a photo background, live weather for the destination, and daily notes that change as the date approaches. Every countdown ships with Plan Mode: a smart timeline and checklist tailored to the event type, so travel, packing, and preparation happen on their own schedule. Includes Home Screen, Lock Screen, and StandBy widgets in every iOS size; natural language search ("trips in July," "birthdays this month"); memories that return on every anniversary; iOS Calendar sync; and full localization in 39 languages. Free tier includes 5 events, one pinned widget, three themes, calendar import, memories, and reflection mode. Premium unlocks unlimited events, all widget styles, ten premium themes, weather intelligence, daily notes, recurring events, and event notifications — €2.99/month, €19.99/year, or €39.99 lifetime with a seven-day free trial. No ads, no tracking, no account. Published by Lagerland Apps.

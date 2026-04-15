@@ -120,5 +120,10 @@ support:
 release:
   first_release: "2026-01-26"
   last_updated: "2026-02-25"
+
+ratings:
+  value: "5.0"
+  count: 2
+  last_synced: "2026-04-15"
 ---
 Driftlines is a quiet daily reading experience for iPhone, iPad, Mac, and Apple Vision Pro. Each day, a new piece of first-person prose arrives from a fictional life unfolding in real time. Over weeks and months, the narrative drifts — memories blur, locations change, and the writing style evolves. Readers can occasionally make subtle choices that gently shape the story. No feeds, no social features, no engagement mechanics. Just intimate prose, delivered one entry at a time, designed to be read slowly and reflected on quietly. Private by design with zero data collection.

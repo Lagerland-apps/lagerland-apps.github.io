@@ -123,5 +123,10 @@ support:
 release:
   first_release: "2026-02-01"
   last_updated: "2026-03-18"
+
+ratings:
+  value: "5.0"
+  count: 2
+  last_synced: "2026-04-15"
 ---
 WanderWiki is a knowledge discovery app for iPhone, iPad, Mac, and Apple Vision Pro that turns Wikipedia into a beautiful, card-based swiping experience. Three discovery modes let you explore: Random surfaces surprises from the entire encyclopedia, For You matches your selected interests (science, history, art, nature, technology), and Today in History shows events from the current date. Articles are real Wikipedia content, beautifully reformatted for focused mobile reading. Save articles for offline access, share discoveries, and build a personal reading list. No algorithms, no engagement optimization, no behavioral tracking, no account required. Free 3-day trial with plans from $0.99/week or $22.99 lifetime. Uses Wikipedia content under Creative Commons CC BY-SA license.

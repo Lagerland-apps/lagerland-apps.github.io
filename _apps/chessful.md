@@ -123,5 +123,10 @@ support:
 release:
   first_release: "2026-04-01"
   last_updated: "2026-04-01"
+
+ratings:
+  value: "5.0"
+  count: 1
+  last_synced: "2026-04-15"
 ---
 Chessful is a chess training and game analysis app for iPhone, iPad, and Mac that helps players understand their mistakes and improve systematically. It analyzes games using Stockfish and explains errors in plain language — not confusing engine lines. Training sessions are built adaptively from real weaknesses like hanging pieces, missed tactics, and poor defense. Players can track improvement across five skill dimensions (tactics, defense, positional play, openings, endgames) and play against 40 unique AI opponents with different styles. Fully offline, fully private — no accounts, no ads, no data collection. Free to use with optional premium for unlimited analysis and advanced training.

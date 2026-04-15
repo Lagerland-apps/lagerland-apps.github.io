@@ -123,5 +123,10 @@ support:
 release:
   first_release: "2026-02-01"
   last_updated: "2026-03-25"
+
+ratings:
+  value: "5.0"
+  count: 2
+  last_synced: "2026-04-15"
 ---
 AppMeta Pulse is a fast, read-only companion app for App Store Connect on iPhone, iPad, Mac, and Apple Vision Pro. It displays revenue, proceeds, refunds, active subscriptions, trial conversions, cancellations, downloads, and performance trends across all apps in a developer's portfolio. Designed for quick daily checks rather than full app management — strictly read-only with no ability to modify settings, submit builds, or change metadata. Period-over-period trend comparison shows performance changes across days, weeks, and months. Per-app breakdowns help developers with multiple apps monitor individual performance. Uses Apple's official App Store Connect API with Keychain-stored credentials. No ads, no analytics SDKs, no data collection. Free to download with access from $0.99/month or $17.99 lifetime.
