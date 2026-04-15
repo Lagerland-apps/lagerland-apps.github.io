@@ -39,6 +39,25 @@ hero:
   subheadline: "AppMeta Pulse is a fast, read-only companion for App Store Connect. Check revenue, subscriptions, downloads, and trends in seconds — from your phone, tablet, or Mac."
   cta_label: "Download Free"
 
+who_for:
+  - "You're an indie iOS developer shipping multiple apps and want daily revenue at a glance"
+  - "You're tired of logging into App Store Connect in a browser just to check yesterday's numbers"
+  - "You want a read-only dashboard so you can't accidentally break anything"
+  - "You need subscription health, trial conversions, and refund tracking in one view"
+  - "You want App Store metrics on iPhone during coffee, not on desktop during work"
+
+who_not_for:
+  - "You only ship one app and don't need a portfolio-level view"
+  - "You need write access to modify metadata or submit builds (use AppMeta instead)"
+  - "Your team already uses a shared analytics dashboard like RevenueCat or Appfigures"
+
+alternatives_to:
+  - "App Store Connect app"
+  - "RevenueCat dashboard"
+  - "Appfigures"
+  - "Sensor Tower"
+  - "Data.ai (App Annie)"
+
 value_points:
   - title: "Seconds, not minutes"
     description: "Launch the app. See your numbers. No loading App Store Connect in a browser. No navigating slow dashboards. Instant."

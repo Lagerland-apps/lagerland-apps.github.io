@@ -39,6 +39,25 @@ hero:
   subheadline: "Edit metadata, optimize keywords, manage reviews, handle TestFlight, and submit apps — all from a fast, native Mac app with AI-powered ASO tools and diff-based safety."
   cta_label: "Download Free"
 
+who_for:
+  - "You ship iOS or macOS apps and dread opening App Store Connect in a browser"
+  - "You manage metadata across multiple localizations and want everything visible at once"
+  - "You've been burned by silent overwrites on the ASC web UI and want diff previews"
+  - "You want keyboard-first metadata editing with the speed of a native Mac app"
+  - "You care about credential safety and want Keychain-backed auth instead of a browser session"
+
+who_not_for:
+  - "You only submit one or two apps a year and the web UI is good enough"
+  - "You've fully automated your release workflow with Fastlane and don't touch metadata manually"
+  - "You work on a team with strict ASC approval gates that require the web UI"
+
+alternatives_to:
+  - "App Store Connect web UI"
+  - "Fastlane deliver"
+  - "Appfigures"
+  - "AppTweak"
+  - "Sensor Tower"
+
 value_points:
   - title: "Faster than the browser"
     description: "Native macOS performance with keyboard-first navigation. Edit metadata across all localizations without waiting for pages to load."

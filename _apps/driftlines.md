@@ -39,6 +39,25 @@ hero:
   subheadline: "Driftlines is a quiet reading experience. Each day, a new piece of prose arrives from a fictional life unfolding in real time — memories shift, places change, and a story builds without you noticing."
   cta_label: "Get Driftlines"
 
+who_for:
+  - "You miss the feeling of finding a physical notebook and reading a few pages before bed"
+  - "You're trying to rebuild a calm reading habit away from feeds, notifications, and streaks"
+  - "You love typography-forward design and slow, first-person prose"
+  - "You want a daily reading ritual that doesn't demand anything back from you"
+  - "You're willing to pay once for something quiet that respects your attention"
+
+who_not_for:
+  - "You want audiobooks or full-length novels"
+  - "You want social reading, book clubs, or shared highlights"
+  - "You want daily devotional, Bible verse, or Stoic-quote content specifically"
+
+alternatives_to:
+  - "Stoic"
+  - "The Marginalian (Brain Pickings)"
+  - "Daily Stoic"
+  - "Five Minute Journal"
+  - "Day One"
+
 value_points:
   - title: "One entry per day"
     description: "A single piece of first-person prose arrives each morning. Read it in a few minutes. Let it settle."

@@ -39,6 +39,25 @@ hero:
   subheadline: "Chessful analyzes your games, explains your mistakes in plain language, and builds training around your real weaknesses — so every session makes you a better player."
   cta_label: "Download Free"
 
+who_for:
+  - "You know the rules but keep losing and don't understand why"
+  - "You want plain-language explanations of your mistakes, not raw Stockfish evaluation numbers"
+  - "You're stuck at a rating plateau and want training built from your own weaknesses"
+  - "You prefer playing offline without a chess.com or Lichess account"
+  - "You care about pattern recognition across tactics, defense, positional play, openings, and endgames"
+
+who_not_for:
+  - "You primarily want to play live online matchmaking and chase ELO"
+  - "You're an absolute beginner learning how pieces move (start with a teaching app first)"
+  - "You want social features, tournaments, or community play"
+
+alternatives_to:
+  - "Chess.com"
+  - "Lichess"
+  - "Magnus Trainer"
+  - "Chessly"
+  - "Really Bad Chess"
+
 value_points:
   - title: "Understand why you lost"
     description: "After every game, Chessful shows exactly where you went wrong, what you missed, and why it mattered — in words, not engine numbers."

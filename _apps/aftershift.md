@@ -39,6 +39,25 @@ hero:
   subheadline: "AfterShift tracks your sleep, naps, and fatigue in the context of your actual schedule. Recovery scores, caffeine guidance, and trend insights — without comparing you to a 9-to-5."
   cta_label: "Download Free"
 
+who_for:
+  - "You work rotating, night, or on-call shifts and generic sleep apps don't understand your schedule"
+  - "You're a nurse, first responder, paramedic, pilot, or factory worker tracking recovery"
+  - "You rely on naps as real recovery rather than treating them as failures"
+  - "You want caffeine timing guidance tied to your actual next shift"
+  - "You refuse to hand your health data to advertisers or analytics SDKs"
+
+who_not_for:
+  - "You work a steady 9-to-5 and a generic sleep app already fits"
+  - "You want medical diagnosis or treatment recommendations (AfterShift is an informational tool)"
+  - "You won't use Apple Health or don't own an Apple Watch"
+
+alternatives_to:
+  - "Sleep Cycle"
+  - "Pillow"
+  - "AutoSleep"
+  - "SleepWatch"
+  - "Rise Science"
+
 value_points:
   - title: "Your shifts, your recovery"
     description: "Sleep data analyzed against your actual work schedule. Not generic benchmarks. Your recovery, in context."

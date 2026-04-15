@@ -45,6 +45,25 @@ hero:
   subheadline: "Soon. turns every trip, wedding, birthday, and milestone into a living countdown — with photo backgrounds, live weather, and plans that come together on their own."
   cta_label: "Download Free"
 
+who_for:
+  - "You're planning a trip, wedding, birthday, graduation, or life milestone and want it visible daily"
+  - "You love iOS widgets and want countdowns on Home Screen, Lock Screen, and StandBy"
+  - "You want smart packing lists and timelines that arrive automatically as the date approaches"
+  - "You want live destination weather as your trip gets closer"
+  - "You want your most important moments in your pocket without handing location data to advertisers"
+
+who_not_for:
+  - "You're a minimalist who refuses widgets on your Home Screen"
+  - "You only need a plain calendar reminder and don't want the emotional framing"
+  - "You want a structured GTD task manager with projects and tags"
+
+alternatives_to:
+  - "Countdowns (Apalon)"
+  - "Dreamdays"
+  - "Days Matter"
+  - "Wedding Happy"
+  - "TheWait (former name of Soon.)"
+
 value_points:
   - title: "A living countdown"
     description: "Every event becomes a feeling, not a number. Full-bleed photos, live weather from the destination, and daily notes that shift as the date draws closer."

@@ -39,6 +39,25 @@ hero:
   subheadline: "Real 3D device models. Metal-powered rendering. AI translation. Direct upload to App Store Connect. The professional screenshot tool for developers who ship."
   cta_label: "Get ScreenFlow Studio"
 
+who_for:
+  - "You're an indie iOS/macOS developer shipping apps in multiple languages"
+  - "You're a solo marketer or ASO person producing App Store screenshots without a designer"
+  - "You need real 3D device renders, not flat mockup overlays"
+  - "You want to upload finished screenshots directly to App Store Connect, not via a browser"
+  - "You prefer one-time-purchase tooling over a screenshot-tool subscription"
+
+who_not_for:
+  - "Your team has Fastlane snapshot + frameit fully wired up in CI and you never touch GUI tools"
+  - "You only ship a single-locale app and don't need localization management"
+  - "You're building marketing campaign creatives outside the App Store (use Figma instead)"
+
+alternatives_to:
+  - "Fastlane frameit / snapshot"
+  - "Previewed"
+  - "AppMockUp"
+  - "Rotato"
+  - "Screenshots.pro"
+
 value_points:
   - title: "Real 3D, not flat mockups"
     description: "Metal-powered rendering with actual 3D device frames. Rotate, scale, and position with numeric precision. What you see is exactly what you export."

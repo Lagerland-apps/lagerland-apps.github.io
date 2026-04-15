@@ -39,6 +39,25 @@ hero:
   subheadline: "AllPaid tracks your bills, subscriptions, and due dates with smart detection, a monthly calendar, gentle reminders, and spending analytics — so you never miss a payment or lose track of what you owe."
   cta_label: "Download Free"
 
+who_for:
+  - "You've missed a due date in the last six months and it cost you money"
+  - "You want a calm bill overview without opening your bank app"
+  - "You track 10–50 subscriptions and need a clear 'what am I actually paying for' view"
+  - "You share some bills with a partner or roommate and want a clean per-bill share flow"
+  - "You refuse to connect your real bank accounts to a third-party budgeting app"
+
+who_not_for:
+  - "You want full budgeting with bank connections and transaction categorization"
+  - "You run a business and need double-entry accounting"
+  - "You want collaborative multi-user household finance management"
+
+alternatives_to:
+  - "Rocket Money"
+  - "Bobby"
+  - "Subby"
+  - "Chronicle Bills"
+  - "Truebill"
+
 value_points:
   - title: "Smart bill detection"
     description: "Add Netflix, Spotify, rent, or utilities and AllPaid auto-fills the amount, category, and billing cycle. 30+ services recognized instantly."

@@ -42,6 +42,25 @@ hero:
   subheadline: "133 local tools for video, audio, image, PDF, and archives. Drop a file — MediaKit picks the right one. Nothing uploaded, ever."
   cta_label: "Download Free"
 
+who_for:
+  - "You're a Mac user who converts video, audio, images, PDFs, or archives regularly"
+  - "You refuse to upload files to cloud conversion tools (CloudConvert, Zamzar) for privacy reasons"
+  - "You want one native Mac app instead of five single-purpose utilities"
+  - "You care about offline-first, sandboxed file processing on Apple Silicon"
+  - "You automate via Shortcuts and want conversion actions you can chain"
+
+who_not_for:
+  - "You're on Windows or Linux"
+  - "You convert one file a year and a free web tool is fine"
+  - "You need professional video editing (use Final Cut or Resolve instead)"
+
+alternatives_to:
+  - "Handbrake"
+  - "Permute"
+  - "CloudConvert"
+  - "ImageOptim"
+  - "Keka"
+
 value_points:
   - title: "Drop. Done."
     description: "Drag any file in. MediaKit recognizes the format and opens the right tool instantly. No menus to hunt through."

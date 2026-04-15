@@ -39,6 +39,25 @@ hero:
   subheadline: "GymLogger X is a fast, minimalist strength training tracker with 1,500+ exercises, smart program generation, plateau detection, and Apple Watch logging — built for lifters who want real progress, not noise."
   cta_label: "Download Free"
 
+who_for:
+  - "You do strength training and want a fast, minimalist log — not a social fitness feed"
+  - "You wear an Apple Watch and want real set/rep logging from your wrist, not a phone companion"
+  - "You follow PPL, Upper/Lower, Full Body, or periodized programs and want plateau detection"
+  - "You're a coach who wants to ship programs to clients with structured periodization"
+  - "You refuse subscription-locked workout apps and want a non-recurring pricing option"
+
+who_not_for:
+  - "You primarily do cardio, group fitness, or bodyweight-only routines"
+  - "You want guided video workouts or an AI trainer talking through sessions"
+  - "You rely on social features, public leaderboards, or workout sharing"
+
+alternatives_to:
+  - "Strong"
+  - "Hevy"
+  - "Fitbod"
+  - "Caliber"
+  - "Heavyset"
+
 value_points:
   - title: "Log in seconds, not minutes"
     description: "Fast set logging with minimal taps. Supersets, giant sets, rest timers — all designed to keep you training, not tapping."

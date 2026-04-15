@@ -41,6 +41,25 @@ hero:
   video: "/assets/videos/wanderwiki_preview.mov"
   video_poster: "/assets/videos/wanderwiki-poster.jpg"
 
+who_for:
+  - "You're curious and want to discover knowledge without searching for it first"
+  - "You love Today in History, trivia, and random-article browsing on Wikipedia"
+  - "You're tired of algorithmic feeds optimizing for your attention"
+  - "You want focused, reformatted Wikipedia reading without sidebar clutter"
+  - "You want offline saved articles for flights, commutes, or quiet reading time"
+
+who_not_for:
+  - "You want academic-grade citations, references, and source-checking tools"
+  - "You need edit access, talk pages, or other Wikipedia editor features"
+  - "You want curated long-form magazine content (try Curio or Pocket instead)"
+
+alternatives_to:
+  - "Wikipedia app"
+  - "Curio"
+  - "Flipboard"
+  - "Pocket"
+  - "Feedly"
+
 value_points:
   - title: "Discovery, not search"
     description: "Open the app. Swipe. Learn something you didn't know you wanted to know. No typing, no decisions — just curiosity in motion."

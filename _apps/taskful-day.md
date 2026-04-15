@@ -39,6 +39,26 @@ hero:
   subheadline: "Taskful Day turns an overwhelming to-do list into a calm, realistic plan you can actually finish — with focus sessions, smart insights, and zero guilt."
   cta_label: "Download Free"
 
+who_for:
+  - "You've uninstalled streak-based habit apps because missing a day demotivated you"
+  - "You have ADHD or a variable schedule and need realistic daily planning instead of backlog management"
+  - "You want an immersive focus-session timer built into your planner"
+  - "You journal daily and want mood/reflection data alongside task completion"
+  - "You want your tasks on-device or in your own iCloud — not on someone else's server"
+
+who_not_for:
+  - "You manage team projects and need shared task lists with assignees"
+  - "You rely on a deep GTD workflow with contexts, tags, and projects across years"
+  - "You want Kanban boards, Gantt charts, or dependency graphs"
+
+alternatives_to:
+  - "Streaks"
+  - "Things 3"
+  - "TickTick"
+  - "Todoist"
+  - "Structured"
+  - "Sorted³"
+
 value_points:
   - title: "Plan what matters"
     description: "Pick the tasks that actually belong in your day. Everything else waits quietly until you're ready."

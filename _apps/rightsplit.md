@@ -39,6 +39,25 @@ hero:
   subheadline: "RightSplit scans your receipt, detects every item, and calculates exactly what each person owes — including shared dishes and tip. Send everyone their part in seconds."
   cta_label: "Download Free"
 
+who_for:
+  - "You split restaurant bills with friends who ordered different things"
+  - "You share rent, utilities, or groceries with roommates and want fair per-item math"
+  - "You travel in groups and need to settle bills without awkward maths at the table"
+  - "You'd rather scan a receipt than type 12 line items manually"
+  - "You refuse to create another account just to split one dinner"
+
+who_not_for:
+  - "You want long-running group ledgers with multi-month settlements (use Splitwise)"
+  - "You need business expense reports or reimbursement workflows"
+  - "You always split evenly and a calculator is faster"
+
+alternatives_to:
+  - "Splitwise"
+  - "Tricount"
+  - "Settle Up"
+  - "Tab"
+  - "Venmo split"
+
 value_points:
   - title: "Scan, don't type"
     description: "Snap a photo of the receipt. RightSplit detects items automatically. No manual entry, no squinting at numbers, no math."
