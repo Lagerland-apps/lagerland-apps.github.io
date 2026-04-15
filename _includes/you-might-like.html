@@ -1,0 +1,46 @@
+{%- comment %}
+  Cross-promo: picks up to 3 OTHER live apps.
+  Priority: same category first, then fall back to any other live apps.
+  Usage: {% include you-might-like.html app=page %}
+{% endcomment -%}
+
+{%- assign current_slug = include.app.slug -%}
+{%- assign live_apps = site.apps | where: "status", "live" -%}
+
+{%- comment %} Same-category apps (excluding current) {% endcomment -%}
+{%- assign same_cat = live_apps | where: "category", include.app.category -%}
+{%- assign related = '' | split: '' -%}
+{%- for a in same_cat -%}
+  {%- if a.slug != current_slug -%}
+    {%- assign related = related | push: a -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment %} Fill with other apps if we have fewer than 3 {% endcomment -%}
+{%- if related.size < 3 -%}
+  {%- for a in live_apps -%}
+    {%- if a.slug != current_slug and a.category != include.app.category and related.size < 3 -%}
+      {%- assign already = false -%}
+      {%- for r in related -%}{%- if r.slug == a.slug -%}{%- assign already = true -%}{%- endif -%}{%- endfor -%}
+      {%- unless already -%}{%- assign related = related | push: a -%}{%- endunless -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- comment %} Cap at 3 {% endcomment -%}
+{%- assign related = related | slice: 0, 3 -%}
+
+{%- if related.size > 0 -%}
+<section class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">More from Lagerland Apps</p>
+    <h2 class="h2">You might also like</h2>
+    <p class="lead">Other calm, privacy-first apps from the same independent developer.</p>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in related -%}
+      {% include app-card.html app=app %}
+    {%- endfor -%}
+  </div>
+</section>
+{%- endif -%}

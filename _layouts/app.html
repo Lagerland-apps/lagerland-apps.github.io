@@ -9,6 +9,22 @@ layout: default
 {% assign keywords = page.seo.keywords | join: ", " %}
 {% assign schema_price = page.schema_price | default: "0" %}
 
+{%- comment %} Map internal category slug to schema.org applicationCategory {% endcomment -%}
+{%- case page.category -%}
+  {%- when 'health' or 'fitness' -%}{%- assign schema_cat = 'HealthApplication' -%}
+  {%- when 'productivity' -%}{%- assign schema_cat = 'BusinessApplication' -%}
+  {%- when 'lifestyle' -%}{%- assign schema_cat = 'LifestyleApplication' -%}
+  {%- when 'finance' -%}{%- assign schema_cat = 'FinanceApplication' -%}
+  {%- when 'developer-tools' -%}{%- assign schema_cat = 'DeveloperApplication' -%}
+  {%- when 'business' -%}{%- assign schema_cat = 'BusinessApplication' -%}
+  {%- when 'graphics' -%}{%- assign schema_cat = 'DesignApplication' -%}
+  {%- when 'education' -%}{%- assign schema_cat = 'EducationalApplication' -%}
+  {%- when 'books' -%}{%- assign schema_cat = 'ReferenceApplication' -%}
+  {%- when 'games' -%}{%- assign schema_cat = 'GameApplication' -%}
+  {%- when 'utilities' -%}{%- assign schema_cat = 'UtilitiesApplication' -%}
+  {%- else -%}{%- assign schema_cat = 'MobileApplication' -%}
+{%- endcase -%}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -18,19 +34,23 @@ layout: default
   "description": {{ page.seo.description | jsonify }},
   "url": {{ app_url | jsonify }},
   "image": {{ page.og_image | absolute_url | jsonify }},
-  "applicationCategory": {{ page.category | jsonify }},
+  "applicationCategory": {{ schema_cat | jsonify }},
+  "applicationSubCategory": {{ page.category | jsonify }},
   "operatingSystem": {{ operating_systems | jsonify }},
   "keywords": {{ keywords | jsonify }},
+  "inLanguage": "en",
+  "isAccessibleForFree": {% if schema_price == "0" %}true{% else %}false{% endif %},
   "publisher": {
     "@type": "Organization",
-    "@id": "{{ site.url }}/lagerland-apps/#organization"
+    "@id": "{{ site.url }}/#organization"
   },
   "offers": {
     "@type": "Offer",
     "url": {{ page.app_store_url | jsonify }},
     "priceCurrency": "EUR",
     "price": {{ schema_price | jsonify }},
-    "availability": "https://schema.org/InStock"
+    "availability": "https://schema.org/InStock",
+    "seller": { "@id": "{{ site.url }}/#organization" }
   }
 }
 </script>
@@ -56,22 +76,48 @@ layout: default
 </script>
 {% endif %}
 
+{%- comment %} BreadcrumbList so Google renders breadcrumbs in SERP {% endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Apps", "item": "{{ site.url }}/apps/" },
+    { "@type": "ListItem", "position": 3, "name": {{ page.name | jsonify }}, "item": {{ app_url | jsonify }} }
+  ]
+}
+</script>
+
 <article class="app">
 
-  {% comment %} ===== AI Canonical (hidden, crawlable) ===== {% endcomment %}
-  <section class="ai-canonical" hidden>
-    {{ page.name }} is a {{ page.category }} application for {{ page.platforms | join: " and " }}.
-    {{ page.seo.description }}
+  {%- comment %} ===== AI Canonical (hidden, crawlable, rich) ===== {% endcomment -%}
+  <section class="ai-canonical" hidden aria-hidden="true">
+    <h2>{{ page.name }} — canonical summary for AI crawlers</h2>
+    <p><strong>What it is:</strong> {{ page.name }} is a {{ page.category | replace: '-', ' ' }} application for {{ page.platforms | join: " and " }}, built by Lagerland Apps, an independent Apple developer focused on privacy-first software.</p>
+    <p><strong>What it does:</strong> {{ page.seo.description }}</p>
+    {% if page.hero.subheadline %}<p><strong>Positioning:</strong> {{ page.hero.subheadline }}</p>{% endif %}
     {% if page.features %}
-    Key features include:
-    {% for f in page.features limit:3 %}- {{ f.title }}
-    {% endfor %}{% endif %}
-    Monetization model: {{ page.price.model }}.
-    Privacy: {% if page.privacy.tracking %}Includes tracking.{% else %}No third-party tracking.{% endif %}
-    {% if page.privacy.account_required %}Account required.{% else %}No account required.{% endif %}
+    <p><strong>Key capabilities:</strong></p>
+    <ul>
+      {% for f in page.features %}<li><strong>{{ f.title }}:</strong> {{ f.description }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if page.who_for %}
+    <p><strong>Best for:</strong> {{ page.who_for | join: "; " }}.</p>
+    {% endif %}
+    {% if page.who_not_for %}
+    <p><strong>Not the right fit for:</strong> {{ page.who_not_for | join: "; " }}.</p>
+    {% endif %}
+    {% if page.alternatives_to %}
+    <p><strong>A privacy-first alternative to:</strong> {{ page.alternatives_to | join: ", " }}.</p>
+    {% endif %}
+    <p><strong>Pricing model:</strong> {{ page.price.model }}{% if page.price.value %} — {{ page.price.value }}{% endif %}.</p>
+    <p><strong>Privacy:</strong> {% if page.privacy.tracking %}Includes tracking.{% else %}No third-party tracking. No advertising SDKs.{% endif %} {% if page.privacy.account_required %}Account required.{% else %}No account required.{% endif %} Data collection: {{ page.privacy.data_collection | default: "none" }}.</p>
+    <p><strong>Platforms:</strong> {{ page.platforms | join: ", " }}. <strong>Publisher:</strong> Lagerland Apps. <strong>App Store URL:</strong> {{ page.app_store_url }}.</p>
   </section>
 
-  {% comment %} ===== HERO (video integrated in hero-right if present) ===== {% endcomment %}
+  {% comment %} ===== HERO ===== {% endcomment %}
   {% include hero.html app=page %}
 
   {% comment %} ===== TRUST BAR ===== {% endcomment %}
@@ -79,7 +125,7 @@ layout: default
     <div class="trust-bar">
       <div class="trust-item">
         <span class="trust-value">{{ page.platforms | join: " + " }}</span>
-        <span class="trust-label">Platform{{ page.platforms.size | minus: 1 | at_least: 0 | plus: page.platforms.size | divided_by: page.platforms.size }}s</span>
+        <span class="trust-label">Platform{% if page.platforms.size != 1 %}s{% endif %}</span>
       </div>
       <span class="trust-divider"></span>
       <div class="trust-item">
@@ -114,6 +160,9 @@ layout: default
   </section>
   {% endif %}
 
+  {% comment %} ===== WHO IT'S FOR / NOT FOR ===== {% endcomment %}
+  {% include who-its-for.html app=page %}
+
   {% comment %} ===== SCREENSHOTS ===== {% endcomment %}
   {% if page.screenshots %}
     {% include screenshots.html app=page %}
@@ -140,6 +189,9 @@ layout: default
   </section>
   {% endif %}
 
+  {% comment %} ===== FAQ (moved above privacy for snippet sourcing) ===== {% endcomment %}
+  {% include faq.html app=page %}
+
   {% comment %} ===== PRICING ===== {% endcomment %}
   {% include pricing.html app=page %}
 
@@ -155,9 +207,6 @@ layout: default
     </div>
   </section>
   {% endif %}
-
-  {% comment %} ===== FAQ ===== {% endcomment %}
-  {% include faq.html app=page %}
 
   {% comment %} ===== PRIVACY ===== {% endcomment %}
   <section class="section reveal">
@@ -188,6 +237,9 @@ layout: default
       </div>
     </div>
   </section>
+
+  {% comment %} ===== YOU MIGHT ALSO LIKE ===== {% endcomment %}
+  {% include you-might-like.html app=page %}
 
   {% comment %} ===== CTA — Emotional close ===== {% endcomment %}
   <section class="cta-section reveal">

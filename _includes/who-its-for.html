@@ -1,0 +1,31 @@
+{%- comment %}
+  Renders a "Who it's for / Who it's not for" block when the app
+  frontmatter defines page.who_for and/or page.who_not_for arrays.
+  Silently skipped otherwise — safe to include on every app page.
+{% endcomment -%}
+{%- if include.app.who_for or include.app.who_not_for -%}
+<section class="section reveal">
+  <div class="section-center">
+    <p class="overline">Fit check</p>
+    <h2 class="h2">Is {{ include.app.name }} right for you?</h2>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- if include.app.who_for -%}
+    <div class="card">
+      <div class="card-title">You'll love {{ include.app.name }} if…</div>
+      <ul class="bullets">
+        {%- for item in include.app.who_for -%}<li>{{ item }}</li>{%- endfor -%}
+      </ul>
+    </div>
+    {%- endif -%}
+    {%- if include.app.who_not_for -%}
+    <div class="card">
+      <div class="card-title">{{ include.app.name }} may not be for you if…</div>
+      <ul class="bullets">
+        {%- for item in include.app.who_not_for -%}<li>{{ item }}</li>{%- endfor -%}
+      </ul>
+    </div>
+    {%- endif -%}
+  </div>
+</section>
+{%- endif -%}

@@ -18,8 +18,8 @@ icon: "/assets/icons/observa.png"
 og_image: "/assets/og/observa.png"
 
 seo:
-  title: "Observa – Health & Recovery Insights for iPhone"
-  description: "Observa turns Apple Health data into personal insights about your sleep, energy, and recovery. Pattern recognition, HRV analysis, and correlation insights. No ads, no tracking."
+  title: "Observa — Private Apple Health Insights App for iPhone"
+  description: "Observa turns Apple Health data into personal insights about your sleep, energy, and recovery. Pattern recognition, HRV analysis, and correlation insights — fully private, on-device, no ads, no tracking, no account."
   keywords:
     - health insights app
     - Apple Health analytics
@@ -38,6 +38,25 @@ hero:
   headline: "Your data already knows why."
   subheadline: "Observa turns your Apple Health data into personal insights — revealing what actually affects your sleep quality, recovery speed, and energy levels. Not more charts. Answers."
   cta_label: "Download Free"
+
+who_for:
+  - "You already wear an Apple Watch and want to understand what your health data actually means"
+  - "You're an Apple Health power user tired of charts without interpretation"
+  - "You want a private health app that never uploads your data"
+  - "You care about sleep quality, HRV, and recovery — not step count vanity metrics"
+  - "You'd rather see patterns over weeks than single-day numbers"
+
+who_not_for:
+  - "You want a medical diagnostic tool (Observa is informational, not clinical)"
+  - "You don't use Apple Health or Apple Watch at all"
+  - "You prefer raw dashboards and charts over plain-language interpretation"
+
+alternatives_to:
+  - "Bevel"
+  - "Gentler Streak"
+  - "AutoSleep"
+  - "Athlytic"
+  - "Apple Health (for interpretation)"
 
 value_points:
   - title: "Answers, not numbers"
