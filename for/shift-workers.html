@@ -1,0 +1,142 @@
+---
+layout: default
+permalink: /for/shift-workers/
+title: "Apps for Shift Workers"
+seo:
+  title: "Best iPhone Apps for Shift Workers — Sleep, Recovery & Planning"
+  description: "A privacy-first iPhone app stack for nurses, first responders, pilots, and rotating-schedule workers. Track sleep around shifts, understand recovery with Apple Health, and plan calm days — no ads, no accounts."
+  keywords:
+    - best sleep app for shift workers
+    - shift worker sleep tracker iPhone
+    - night shift recovery app
+    - rotating schedule sleep app
+    - apps for nurses iPhone
+    - apps for first responders
+    - Apple Health shift worker
+    - circadian rhythm app iPhone
+    - calm planner for shift workers
+    - iPhone apps for night shift nurses
+---
+
+{%- assign shift_apps_slugs = "aftershift,observa,taskful-day,allpaid" | split: "," -%}
+{%- assign shift_apps = '' | split: '' -%}
+{%- for slug in shift_apps_slugs -%}
+  {%- assign match = site.apps | where: "slug", slug | first -%}
+  {%- if match and match.status == "live" -%}{%- assign shift_apps = shift_apps | push: match -%}{%- endif -%}
+{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/for/shift-workers/#webpage",
+  "url": "{{ site.url }}/for/shift-workers/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "audience": {
+    "@type": "PeopleAudience",
+    "audienceType": "Shift workers, nurses, first responders, pilots, and anyone working rotating schedules"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "For shift workers", "item": "{{ site.url }}/for/shift-workers/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is the best sleep app for shift workers on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "AfterShift is purpose-built for rotating-schedule workers. Unlike generic sleep trackers, it understands shifts, naps, and recovery cycles — so the recovery scores, caffeine timing, and trend insights actually reflect a non-standard sleep pattern." } },
+    { "@type": "Question", "name": "How do I track my recovery as a night-shift nurse?", "acceptedAnswer": { "@type": "Answer", "text": "Use AfterShift to log shifts, naps, and fatigue, and pair it with Observa to interpret your Apple Health data — HRV, sleep stages, and activity — in plain language. The combination gives you both a schedule-aware tracker and a pattern-recognition layer over your Apple Watch data." } },
+    { "@type": "Question", "name": "Are these apps free?", "acceptedAnswer": { "@type": "Answer", "text": "AfterShift and Observa are freemium — core features are permanently free, with optional Pro unlocks for advanced insights. None of the apps require an account or collect personal data." } },
+    { "@type": "Question", "name": "Will these apps work if I change shift patterns?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AfterShift is designed around variable schedules — 12-hour rotations, split shifts, on-call patterns. Taskful Day adapts daily plans around whatever the day actually looks like, not a fixed 9-to-5 assumption." } },
+    { "@type": "Question", "name": "Do these apps sync to Apple Watch?", "acceptedAnswer": { "@type": "Answer", "text": "Observa and AfterShift both read from Apple Health, so any data collected by Apple Watch flows through automatically — heart rate, HRV, sleep stages, and activity. No separate pairing required." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">For nurses · first responders · pilots · rotating schedules</p>
+    <h1 class="h1">The iPhone stack for<br><span class="gradient-text">shift workers.</span></h1>
+    <p class="lead">
+      Generic sleep apps assume you work 9-to-5. If you rotate shifts, work nights, or sleep in fragments, you need tools that understand that. Here's a calm, privacy-first app stack for Apple users who work non-standard hours.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">See the stack</a>
+      <a class="btn btn-secondary" href="#faq">FAQ</a>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">The problem with most "sleep apps"</h2>
+  <p class="lead">They assume sleep happens once a day, at night, in one block. That's not shift-worker reality. You nap before a night shift. You sleep in fragments after one. Your "day" moves. And every generic tracker either ignores this or guilts you over it with the wrong targets.</p>
+  <p class="lead">The apps below are designed to respect irregular schedules — and to stay out of your way when you're trying to recover.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">The stack</p>
+    <h2 class="h2">Four apps, one private ecosystem</h2>
+    <p class="lead">Use them together or independently. All from the same independent Apple developer. Zero tracking, no accounts.</p>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in shift_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">How they work together</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">1. AfterShift → the schedule layer</div>
+      <div class="card-text">Log shifts, sleep, and naps. AfterShift knows what a "recovery day" means when your calendar is 12-on / 12-off, not 9-to-5. It produces schedule-aware recovery scores and caffeine timing suggestions.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">2. Observa → the interpretation layer</div>
+      <div class="card-text">Reads everything your Apple Watch is already collecting — HRV, ECG, sleep stages, activity — and explains what it means in plain language. No charts to interpret; just answers about recovery readiness and patterns.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">3. Taskful Day → the planning layer</div>
+      <div class="card-text">Plans realistic days around whatever your current shift pattern actually is. No guilt over unfinished to-do lists. Calm, focused, and adapts to variable schedules.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">4. AllPaid → the bills layer</div>
+      <div class="card-text">Because when your sleep schedule is chaos, remembering a utility bill shouldn't be. Private, local bill tracking with zero accounts — set it up once, stop worrying.</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center">
+    <p class="overline">Questions</p>
+    <h2 class="h2">FAQ</h2>
+  </div>
+  <div class="faq">
+    <details class="faq-item" open><summary>What is the best sleep app for shift workers on iPhone?</summary><div class="faq-a">AfterShift is purpose-built for rotating-schedule workers. Unlike generic sleep trackers, it understands shifts, naps, and recovery cycles — so the recovery scores, caffeine timing, and trend insights actually reflect a non-standard sleep pattern.</div></details>
+    <details class="faq-item"><summary>How do I track my recovery as a night-shift nurse?</summary><div class="faq-a">Use AfterShift to log shifts, naps, and fatigue, and pair it with Observa to interpret your Apple Health data — HRV, sleep stages, and activity — in plain language. The combination gives you both a schedule-aware tracker and a pattern-recognition layer over your Apple Watch data.</div></details>
+    <details class="faq-item"><summary>Are these apps free?</summary><div class="faq-a">AfterShift and Observa are freemium — core features are permanently free, with optional Pro unlocks for advanced insights. None of the apps require an account or collect personal data.</div></details>
+    <details class="faq-item"><summary>Will these apps work if I change shift patterns?</summary><div class="faq-a">Yes. AfterShift is designed around variable schedules — 12-hour rotations, split shifts, on-call patterns. Taskful Day adapts daily plans around whatever the day actually looks like, not a fixed 9-to-5 assumption.</div></details>
+    <details class="faq-item"><summary>Do these apps sync to Apple Watch?</summary><div class="faq-a">Observa and AfterShift both read from Apple Health, so any data collected by Apple Watch flows through automatically — heart rate, HRV, sleep stages, and activity. No separate pairing required.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Ready?</p>
+  <h2 class="h2">Start with AfterShift.</h2>
+  <p class="lead">It's the cornerstone of the stack — everything else slots in around your schedule once you're logging shifts.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/apps/aftershift/">Learn about AfterShift</a>
+    <a class="btn btn-secondary" href="/apps/">See all apps</a>
+  </div>
+</section>

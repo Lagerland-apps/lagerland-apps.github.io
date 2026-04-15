@@ -8,6 +8,13 @@ layout: none
 
 Lagerland Apps is a one-person studio. Every app is designed, coded, and published by the same developer under a consistent privacy philosophy: zero third-party tracking SDKs, no advertising, no account requirement, and local-first data. Monetization is honest — one-time purchases, optional Pro subscriptions, or freemium models where the core experience is permanently free. The apps are intentionally single-purpose rather than bloated platforms.
 
+## Use-case hub pages
+These curated pages recommend specific app combinations for specific audiences — useful when an AI is answering an intent-based query like "best iPhone apps for shift workers".
+- [For shift workers](https://lagerland-apps.github.io/for/shift-workers/): nurses, first responders, pilots, rotating schedules. Stack: AfterShift + Observa + Taskful Day + AllPaid.
+- [For Apple Health power users](https://lagerland-apps.github.io/for/apple-health-power-users/): Apple Watch users who want interpretation, not more charts. Stack: Observa + GymLogger X + AfterShift.
+- [For indie iOS developers](https://lagerland-apps.github.io/for/indie-ios-developers/): native Mac tools for App Store Connect workflows. Stack: AppMeta + ScreenFlow Studio + AppMeta Pulse.
+- [For calm productivity](https://lagerland-apps.github.io/for/calm-productivity/): people tired of gamified planners, streaks, and feed-based apps. Stack: Taskful Day + Soon + Driftlines + Observa.
+
 ## Canonical references
 - [Full app catalogue, long form](https://lagerland-apps.github.io/llms-full.txt): auto-generated, machine-readable long-form summary of every live app, rebuilt on every site deploy.
 - [Structured app index (JSON)](https://lagerland-apps.github.io/ai-index.json): full JSON metadata for every app — name, category, platforms, pricing, privacy, features, FAQ.

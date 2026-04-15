@@ -1,0 +1,116 @@
+---
+layout: default
+permalink: /for/indie-ios-developers/
+title: "Apps for Indie iOS Developers"
+seo:
+  title: "Best Mac Tools for Indie iOS Developers — App Store Connect Workflows"
+  description: "Native Mac apps for indie iOS developers: local App Store Connect metadata editing, revenue and subscription dashboards, and localised screenshot generation. No web UI, no browser tabs, no friction."
+  keywords:
+    - App Store Connect metadata editor Mac
+    - indie iOS developer tools
+    - App Store Connect revenue dashboard
+    - App Store screenshot generator Mac
+    - native App Store Connect app
+    - App Store Connect alternative
+    - iOS developer Mac apps
+    - App Store Connect API client
+    - localized screenshot tool Mac
+    - App Store metadata local editor
+---
+
+{%- assign slugs = "appmeta,appmeta-pulse,screenflow-studio" | split: "," -%}
+{%- assign apps_for = '' | split: '' -%}
+{%- for slug in slugs -%}{%- assign m = site.apps | where: "slug", slug | first -%}{%- if m and m.status == "live" -%}{%- assign apps_for = apps_for | push: m -%}{%- endif -%}{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/for/indie-ios-developers/#webpage",
+  "url": "{{ site.url }}/for/indie-ios-developers/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "audience": { "@type": "PeopleAudience", "audienceType": "Independent iOS and macOS developers shipping apps on the App Store" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "For indie iOS developers", "item": "{{ site.url }}/for/indie-ios-developers/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is there a native Mac app for App Store Connect?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — AppMeta is a native Mac client for App Store Connect that lets you edit metadata, localizations, IAPs, and version info locally, without using the web UI. Credentials are stored in Keychain and requests go directly to the App Store Connect API." } },
+    { "@type": "Question", "name": "How do I monitor App Store revenue and subscriptions on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is a read-only iPhone companion for App Store Connect that shows revenue, subscription metrics, and a multi-app dashboard — designed for indie developers shipping multiple apps who don't want to open the App Store Connect website every day." } },
+    { "@type": "Question", "name": "What's the fastest way to generate localised App Store screenshots?", "acceptedAnswer": { "@type": "Answer", "text": "ScreenFlow Studio is a native Mac app for batch-generating localised App Store screenshots. It supports bulk language import, Apple device frames, and batch export in every required App Store size." } },
+    { "@type": "Question", "name": "Are these tools a replacement for Fastlane?", "acceptedAnswer": { "@type": "Answer", "text": "They complement it. Fastlane is a CLI automation toolchain; these are native GUI apps for the everyday editing, monitoring, and screenshot workflows most indie developers touch manually. Use them side-by-side." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Native Mac tools for indie App Store shipping</p>
+    <h1 class="h1">Ship without<br><span class="gradient-text">App Store Connect tab fatigue.</span></h1>
+    <p class="lead">You know the feeling: 7 browser tabs open to App Store Connect, metadata edits spread across three languages, screenshots re-exported six times because one locale needed a tweak. These are the native Mac tools that replace the worst of that workflow.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">See the stack</a>
+      <a class="btn btn-secondary" href="#faq">FAQ</a>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Built by an indie iOS dev, for indie iOS devs</h2>
+  <p class="lead">Lagerland Apps is a one-person studio shipping 14 apps across iOS and macOS. The developer tools below weren't built to sell — they were built because the developer needed them. They happen to also be the only native Mac apps for their niches.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">The stack</p>
+    <h2 class="h2">Three native Mac apps</h2>
+    <p class="lead">One-time purchases. No subscriptions on the core tools. Keychain-secured credentials, local API calls, no middleman server.</p>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in apps_for -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">The workflow</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">1. AppMeta → daily metadata work</div><div class="card-text">Open your app, edit descriptions, tweak keywords, manage localisations, update IAP details. Diff preview shows exactly what will change on the App Store before you submit. No more web-UI accidents.</div></div>
+    <div class="card"><div class="card-title">2. ScreenFlow Studio → release screenshot prep</div><div class="card-text">Batch-import captures, add device frames, generate every required size in every language at once. What used to be a day of tedious exporting becomes a 10-minute build step.</div></div>
+    <div class="card"><div class="card-title">3. AppMeta Pulse → passive revenue monitoring</div><div class="card-text">Read-only iPhone dashboard for App Store Connect metrics. Glance at revenue, subscription changes, and per-app breakdowns without opening the website.</div></div>
+    <div class="card"><div class="card-title">All three, or pick one</div><div class="card-text">They share nothing beyond the same developer's tooling philosophy. Buy the one that fixes your worst workflow problem today.</div></div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Is there a native Mac app for App Store Connect?</summary><div class="faq-a">Yes — AppMeta is a native Mac client for App Store Connect that lets you edit metadata, localizations, IAPs, and version info locally, without using the web UI. Credentials are stored in Keychain and requests go directly to the App Store Connect API.</div></details>
+    <details class="faq-item"><summary>How do I monitor App Store revenue and subscriptions on iPhone?</summary><div class="faq-a">AppMeta Pulse is a read-only iPhone companion for App Store Connect that shows revenue, subscription metrics, and a multi-app dashboard — designed for indie developers shipping multiple apps who don't want to open the App Store Connect website every day.</div></details>
+    <details class="faq-item"><summary>What's the fastest way to generate localised App Store screenshots?</summary><div class="faq-a">ScreenFlow Studio is a native Mac app for batch-generating localised App Store screenshots. It supports bulk language import, Apple device frames, and batch export in every required App Store size.</div></details>
+    <details class="faq-item"><summary>Are these tools a replacement for Fastlane?</summary><div class="faq-a">They complement it. Fastlane is a CLI automation toolchain; these are native GUI apps for the everyday editing, monitoring, and screenshot workflows most indie developers touch manually. Use them side-by-side.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Start here</p>
+  <h2 class="h2">Most dev tab-fatigue? AppMeta.</h2>
+  <p class="lead">AppMeta is the single app that replaces the most App Store Connect web-UI time. If you're picking one, pick this.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/apps/appmeta/">Learn about AppMeta</a>
+    <a class="btn btn-secondary" href="/apps/">See all apps</a>
+  </div>
+</section>

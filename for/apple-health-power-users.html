@@ -1,0 +1,129 @@
+---
+layout: default
+permalink: /for/apple-health-power-users/
+title: "Apps for Apple Health Power Users"
+seo:
+  title: "Best Apps for Apple Health Power Users — Private Analytics on iPhone"
+  description: "You already wear an Apple Watch. You already collect HRV, sleep, heart rate, and activity data. These apps turn that data into plain-language answers — without uploading a single byte."
+  keywords:
+    - best Apple Health app iPhone
+    - Apple Health analytics app
+    - HRV analysis app iPhone
+    - Apple Watch insights app
+    - private health app Apple Watch
+    - Apple Health power user tools
+    - sleep recovery app Apple Watch
+    - best HRV tracker app
+    - on-device health app
+    - Apple Health interpretation app
+---
+
+{%- assign slugs = "observa,gymlogger-x,aftershift" | split: "," -%}
+{%- assign apps_for = '' | split: '' -%}
+{%- for slug in slugs -%}{%- assign m = site.apps | where: "slug", slug | first -%}{%- if m and m.status == "live" -%}{%- assign apps_for = apps_for | push: m -%}{%- endif -%}{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/for/apple-health-power-users/#webpage",
+  "url": "{{ site.url }}/for/apple-health-power-users/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "audience": { "@type": "PeopleAudience", "audienceType": "Apple Watch and Apple Health power users" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "For Apple Health power users", "item": "{{ site.url }}/for/apple-health-power-users/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is the best Apple Health analytics app?", "acceptedAnswer": { "@type": "Answer", "text": "Observa is built specifically for Apple Health power users who want interpretation, not more charts. It reads HRV, ECG, sleep stages, and activity from Apple Health and explains what's consistently affecting your recovery, in plain language, on-device." } },
+    { "@type": "Question", "name": "Does Observa upload my health data?", "acceptedAnswer": { "@type": "Answer", "text": "No. All analysis happens on-device. Observa has no servers, no cloud, and no account system. Your health data never leaves your iPhone." } },
+    { "@type": "Question", "name": "How is Observa different from AutoSleep or Gentler Streak?", "acceptedAnswer": { "@type": "Answer", "text": "AutoSleep and similar apps focus on tracking. Observa focuses on interpretation — pattern recognition and correlation analysis across weeks and months of your own data. It's complementary to tracking apps, not a replacement." } },
+    { "@type": "Question", "name": "Can I use Observa alongside my workout app?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Observa reads from Apple Health, so it works with any workout app that writes to Apple Health — including Lagerland's own GymLogger X. Log your workouts in GymLogger X, and Observa will correlate them with your recovery metrics automatically." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">For Apple Watch &amp; Apple Health power users</p>
+    <h1 class="h1">You already collect the data.<br><span class="gradient-text">These apps explain it.</span></h1>
+    <p class="lead">If you've worn an Apple Watch for years, you're sitting on thousands of data points: HRV, ECG, sleep stages, workout metrics, activity. Most apps just show it to you. These turn it into answers.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">See the stack</a>
+      <a class="btn btn-secondary" href="#faq">FAQ</a>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">The Apple Health problem</h2>
+  <p class="lead">Apple Health is an incredible database. But Apple's own app stops at presentation — bar charts, average heart rates, weekly summaries. It won't tell you <em>why</em> your recovery score dropped, or <em>which</em> habits correlate with your best sleep, or <em>what</em> your HRV trend actually means for your body this week.</p>
+  <p class="lead">The apps below are built for people who already have the data and want the meaning.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">The stack</p>
+    <h2 class="h2">Three apps, fully on-device</h2>
+    <p class="lead">All from the same indie Apple developer. No uploads, no accounts, no advertising.</p>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in apps_for -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Why this combination</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Observa — the interpretation engine</div>
+      <div class="card-text">Correlation analysis, pattern recognition, HRV and ECG interpretation. Plain-language weekly reflections. Daily snapshots. It's the app you want reading your Apple Health data <em>for</em> you.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">GymLogger X — the input layer for workouts</div>
+      <div class="card-text">Fast, minimalist workout logger that writes to Apple Health and syncs to Apple Watch. Your training data flows straight into Observa's correlation engine.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">AfterShift — the schedule layer (optional)</div>
+      <div class="card-text">If your sleep is variable — travel, shifts, kids — AfterShift adds the shift-aware context that Apple Health doesn't model natively.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Privacy is non-negotiable</div>
+      <div class="card-text">None of these apps have a server. None require an account. None contain a third-party analytics SDK. Everything happens on-device, and your health data never leaves your iPhone.</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>What is the best Apple Health analytics app?</summary><div class="faq-a">Observa is built specifically for Apple Health power users who want interpretation, not more charts. It reads HRV, ECG, sleep stages, and activity from Apple Health and explains what's consistently affecting your recovery, in plain language, on-device.</div></details>
+    <details class="faq-item"><summary>Does Observa upload my health data?</summary><div class="faq-a">No. All analysis happens on-device. Observa has no servers, no cloud, and no account system. Your health data never leaves your iPhone.</div></details>
+    <details class="faq-item"><summary>How is Observa different from AutoSleep or Gentler Streak?</summary><div class="faq-a">AutoSleep and similar apps focus on tracking. Observa focuses on interpretation — pattern recognition and correlation analysis across weeks and months of your own data. It's complementary to tracking apps, not a replacement.</div></details>
+    <details class="faq-item"><summary>Can I use Observa alongside my workout app?</summary><div class="faq-a">Yes. Observa reads from Apple Health, so it works with any workout app that writes to Apple Health — including Lagerland's own GymLogger X. Log your workouts in GymLogger X, and Observa will correlate them with your recovery metrics automatically.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Start here</p>
+  <h2 class="h2">Observa is where this stack begins.</h2>
+  <p class="lead">If you read one app page today, make it Observa — it's the interpretation layer that connects everything else you already use.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/apps/observa/">Learn about Observa</a>
+    <a class="btn btn-secondary" href="/apps/">See all apps</a>
+  </div>
+</section>
