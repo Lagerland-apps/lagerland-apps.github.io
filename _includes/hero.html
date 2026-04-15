@@ -15,17 +15,28 @@
       <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">
         {{ include.app.hero.cta_label | default: "Download" }}
       </a>
-      <a class="btn btn-secondary" href="#screenshots">See screenshots</a>
+      <a class="btn btn-secondary" href="#features">See how it works</a>
     </div>
 
     <div class="meta-row">
+      {%- assign price_model = include.app.price.model | downcase -%}
+      {%- if price_model contains 'one-time' -%}
+        <span class="pill">One-time purchase</span>
+      {%- elsif price_model contains 'freemium' -%}
+        <span class="pill">Free · Pro optional</span>
+      {%- elsif price_model contains 'subscription' -%}
+        <span class="pill">Free trial</span>
+      {%- elsif price_model contains 'free' -%}
+        <span class="pill">Free</span>
+      {%- endif -%}
+      <span class="pill">No tracking</span>
+      <span class="pill">No account</span>
       {% if include.app.platforms %}
         <span class="pill">{{ include.app.platforms | join: " · " }}</span>
       {% endif %}
       {% if include.app.price.value %}
         <span class="pill">{{ include.app.price.value }}</span>
       {% endif %}
-      <span class="pill">Lagerland Apps</span>
     </div>
   </div>
 

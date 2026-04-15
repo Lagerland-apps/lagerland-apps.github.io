@@ -44,7 +44,9 @@ layout: default
     "@type": "Organization",
     "@id": "{{ site.url }}/#organization"
   },
-  "offers": {
+  "offers": {%- assign price_model = page.price.model | downcase -%}
+  {%- if price_model contains 'one-time' -%}
+  {
     "@type": "Offer",
     "url": {{ page.app_store_url | jsonify }},
     "priceCurrency": "EUR",
@@ -52,6 +54,18 @@ layout: default
     "availability": "https://schema.org/InStock",
     "seller": { "@id": "{{ site.url }}/#organization" }
   }
+  {%- else -%}
+  {
+    "@type": "AggregateOffer",
+    "url": {{ page.app_store_url | jsonify }},
+    "priceCurrency": "EUR",
+    "lowPrice": "0",
+    "highPrice": {{ schema_price | jsonify }},
+    "offerCount": "2",
+    "availability": "https://schema.org/InStock",
+    "seller": { "@id": "{{ site.url }}/#organization" }
+  }
+  {%- endif -%}
 }
 </script>
 
@@ -170,7 +184,7 @@ layout: default
 
   {% comment %} ===== FEATURES ===== {% endcomment %}
   {% if page.features %}
-  <section class="section--lg">
+  <section id="features" class="section--lg">
     <div class="section-center">
       <p class="overline reveal">Capabilities</p>
       <h2 class="h2 reveal">What you can do</h2>

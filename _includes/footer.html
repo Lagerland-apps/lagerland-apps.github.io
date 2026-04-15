@@ -6,23 +6,60 @@
           <span class="brand-mark">L</span>
           <span class="brand-name">Lagerland Apps</span>
         </a>
-        <p class="small">Privacy-first iOS & macOS apps built to feel calm, fast, and useful.</p>
+        <p class="small">Privacy-first iOS &amp; macOS apps built to feel calm, fast, and useful. Independent Apple developer — no ads, no tracking, no accounts.</p>
+        <p class="small"><a href="/lagerland-apps/">About the developer</a></p>
       </div>
+
+      {%- assign live_apps = site.apps | where: "status", "live" -%}
+
       <div class="footer-col">
-        <h4>Apps</h4>
-        {% for app in site.apps %}
-          {% if app.status == "live" %}
+        <h4>Health &amp; planning</h4>
+        {%- assign cats = 'health,fitness,productivity,lifestyle' | split: ',' -%}
+        {%- for cat in cats -%}
+          {%- assign col_apps = live_apps | where: "category", cat -%}
+          {%- for app in col_apps -%}
             <a href="{{ app.url }}">{{ app.name }}</a>
-          {% endif %}
-        {% endfor %}
+          {%- endfor -%}
+        {%- endfor -%}
+        <br>
+        <h4 style="margin-top:var(--s-4);">Money</h4>
+        {%- assign col_apps = live_apps | where: "category", "finance" -%}
+        {%- for app in col_apps -%}<a href="{{ app.url }}">{{ app.name }}</a>{%- endfor -%}
       </div>
+
       <div class="footer-col">
-        <h4>Company</h4>
+        <h4>Developer tools</h4>
+        {%- assign cats = 'developer-tools,business,graphics' | split: ',' -%}
+        {%- for cat in cats -%}
+          {%- assign col_apps = live_apps | where: "category", cat -%}
+          {%- for app in col_apps -%}
+            <a href="{{ app.url }}">{{ app.name }}</a>
+          {%- endfor -%}
+        {%- endfor -%}
+        <br>
+        <h4 style="margin-top:var(--s-4);">Reading, games, utilities</h4>
+        {%- assign cats = 'education,books,games,utilities' | split: ',' -%}
+        {%- for cat in cats -%}
+          {%- assign col_apps = live_apps | where: "category", cat -%}
+          {%- for app in col_apps -%}
+            <a href="{{ app.url }}">{{ app.name }}</a>
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="footer-col">
+        <h4>Browse</h4>
+        <a href="/apps/">All apps</a>
+        <a href="/for/shift-workers/">For shift workers</a>
+        <a href="/for/apple-health-power-users/">For Apple Health users</a>
+        <a href="/for/indie-ios-developers/">For indie iOS devs</a>
+        <a href="/for/calm-productivity/">Calm productivity</a>
+        <a href="/alternatives/">Alternatives</a>
+        <br>
+        <h4 style="margin-top:var(--s-4);">Company</h4>
+        <a href="/lagerland-apps/">About</a>
         <a href="/support/">Support</a>
         <a href="/privacy/">Privacy</a>
-      </div>
-      <div class="footer-col">
-        <h4>Connect</h4>
         <a href="mailto:lagerland.apps@proton.me">Email us</a>
         <a href="/apps/gymlogger-x/coaches/">For Coaches</a>
       </div>
