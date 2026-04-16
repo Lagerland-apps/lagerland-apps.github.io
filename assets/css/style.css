@@ -324,22 +324,15 @@ main.container {
 
 .brand-mark {
   width: 34px; height: 34px;
-  border-radius: 10px;
-  display: grid;
-  place-items: center;
-  background: var(--grad-cta);
-  color: #0B0E22;
-  font-size: var(--text-sm);
-  font-weight: 800;
-  box-shadow: 0 2px 16px rgba(167,139,250,0.35),
-              inset 0 1px 0 rgba(255,255,255,0.25);
-  transition: transform var(--dur-fast), box-shadow var(--dur-fast);
+  display: block;
+  object-fit: contain;
+  transition: transform var(--dur-fast), filter var(--dur-fast);
+  filter: drop-shadow(0 2px 10px rgba(167,139,250,0.25));
 }
 
 .brand:hover .brand-mark {
   transform: scale(1.05);
-  box-shadow: 0 4px 24px rgba(167,139,250,0.5),
-              inset 0 1px 0 rgba(255,255,255,0.3);
+  filter: drop-shadow(0 4px 16px rgba(167,139,250,0.45));
 }
 
 .nav {
