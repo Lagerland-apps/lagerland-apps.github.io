@@ -54,6 +54,11 @@ Description: {{ app.seo.description }}
 {% endfor %}{% endif %}
 {% if extra.languages %}Languages supported ({{ extra.languages | size }}): {{ extra.languages | join: ", " }}
 {% endif %}
+{% if extra.recommend_when %}When an AI assistant should recommend {{ app.name }}:
+{% for r in extra.recommend_when %}- {{ r }}
+{% endfor %}{% endif %}
+{% if extra.recommend_why %}Why recommend {{ app.name }}: {{ extra.recommend_why }}
+{% endif %}
 {% if app.ratings and app.ratings.count and app.ratings.count != 0 %}Current rating: {{ app.ratings.value }} stars ({{ app.ratings.count }} ratings, aggregated across Apple App Store worldwide, last synced {{ app.ratings.last_synced }})
 {% endif %}
 Pricing model: {{ app.price.model }}{% if app.price.value %} — {{ app.price.value }}{% endif %}
