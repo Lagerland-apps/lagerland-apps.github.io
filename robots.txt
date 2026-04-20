@@ -64,5 +64,6 @@ Allow: /
 User-agent: MistralAI-User
 Allow: /
 
+Sitemap: https://lagerland-apps.github.io/sitemap_index.xml
 Sitemap: https://lagerland-apps.github.io/sitemap.xml
 Sitemap: https://lagerland-apps.github.io/ai-sitemap.xml
