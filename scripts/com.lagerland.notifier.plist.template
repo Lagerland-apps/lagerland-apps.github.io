@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  launchd agent template for the Lagerland notifier.
+
+  Before loading: replace __HOME__ and __REPO__ with absolute paths
+  and save the result as:
+      ~/Library/LaunchAgents/com.lagerland.notifier.plist
+
+  Load with:
+      launchctl load  ~/Library/LaunchAgents/com.lagerland.notifier.plist
+      launchctl start com.lagerland.notifier         # fire once immediately
+      launchctl list  | grep lagerland               # verify it's registered
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.lagerland.notifier</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>__REPO__/scripts/notifier.py</string>
+  </array>
+
+  <!-- Every 5 minutes. launchd defers if the machine is asleep and runs
+       at next wake — so you get a catch-up poll as soon as you open the lid. -->
+  <key>StartInterval</key>
+  <integer>300</integer>
+
+  <!-- Poll once on load, not just after first 5-min interval. -->
+  <key>RunAtLoad</key>
+  <true/>
+
+  <!-- Homebrew python on Apple silicon lives in /opt/homebrew/bin, on
+       Intel Macs in /usr/local/bin. System python is /usr/bin/python3
+       (which is what we invoke above). Keep PATH broad in case user-installed
+       packages via Homebrew python need to resolve. -->
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>__HOME__/lagerland-notifier/logs/stdout.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>__HOME__/lagerland-notifier/logs/stderr.log</string>
+
+  <key>WorkingDirectory</key>
+  <string>__HOME__/lagerland-notifier</string>
+
+  <!-- Keep it alive on crash, but throttle restarts so a bad config can't
+       hammer Apple's API. -->
+  <key>ThrottleInterval</key>
+  <integer>60</integer>
+
+  <!-- Run with normal (not background) priority so HTTP calls don't hang. -->
+  <key>ProcessType</key>
+  <string>Standard</string>
+</dict>
+</plist>
