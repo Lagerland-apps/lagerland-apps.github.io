@@ -127,8 +127,8 @@ release:
   last_updated: "2026-04-03"
 
 ratings:
-  value: "5.0"
-  count: 2
-  last_synced: "2026-04-15"
+  value: "4.3"
+  count: 3
+  last_synced: "2026-04-21"
 ---
 AfterShift is a sleep and recovery app built specifically for shift workers — nurses, firefighters, police, factory workers, and anyone with night, rotating, or on-call schedules. It tracks sleep stages, naps, and fatigue in the context of your actual shifts, providing a Shift Recovery Score, caffeine timing guidance, fragmentation insights, and calm trend analysis. Unlike generic sleep apps, AfterShift never compares you to a 9-to-5 benchmark. Naps are treated as real recovery. Explanations are calm and clear, with no medical claims, no guilt, and no pressure. Free to use with optional premium features. Private by design — no ads, no health data selling, no account required.
