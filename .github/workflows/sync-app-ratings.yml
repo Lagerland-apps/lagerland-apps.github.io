@@ -1,10 +1,9 @@
 name: Sync App Store ratings
 
 on:
+  workflow_dispatch:
   schedule:
-    # Daily at 06:07 UTC — offset off the hour to avoid the cron spike
-    - cron: '7 6 * * *'
-  workflow_dispatch:  # manual "Run workflow" button in the Actions tab
+    - cron: "7 6 * * *"
 
 permissions:
   contents: write
