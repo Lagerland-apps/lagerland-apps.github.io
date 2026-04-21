@@ -1,0 +1,111 @@
+{%- comment %}
+  Testimonials ticker — premium marquee with hover-to-translate.
+  Usage: {% include testimonials-ticker.html slug=page.slug name=page.name %}
+  Reads from site.data.testimonials[slug]; renders nothing if empty.
+{% endcomment -%}
+
+{%- assign t_list = site.data.testimonials[include.slug] -%}
+{%- if t_list and t_list.size > 0 -%}
+
+{%- comment %} Aggregate stats for the eyebrow row {% endcomment -%}
+{%- assign t_total = t_list.size -%}
+{%- assign t_rated = 0 -%}
+{%- assign t_rating_sum = 0 -%}
+{%- for t in t_list -%}
+  {%- if t.rating -%}
+    {%- assign t_rated = t_rated | plus: 1 -%}
+    {%- assign t_rating_sum = t_rating_sum | plus: t.rating -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if t_rated > 0 -%}
+  {%- assign t_rating_avg = t_rating_sum | times: 10 | divided_by: t_rated -%}
+  {%- assign t_rating_int = t_rating_avg | divided_by: 10 -%}
+  {%- assign t_rating_dec = t_rating_avg | modulo: 10 -%}
+{%- endif -%}
+
+<section class="section testimonials reveal" aria-labelledby="testimonials-heading-{{ include.slug }}">
+  <div class="testimonials-head">
+    <p class="overline">What people are saying</p>
+    <h2 class="h2" id="testimonials-heading-{{ include.slug }}">Real words from real users.</h2>
+    <div class="testimonials-meta">
+      {%- if t_rated > 0 -%}
+        <span class="pill pill--stars" aria-label="Average rating {{ t_rating_int }}.{{ t_rating_dec }} out of 5 across {{ t_rated }} rated reviews">
+          <span class="pill-stars" aria-hidden="true">★★★★★</span>
+          {{ t_rating_int }}.{{ t_rating_dec }} · {{ t_rated }} rated reviews
+        </span>
+      {%- endif -%}
+      <span class="pill">App Store &amp; Reddit</span>
+      <span class="pill">Unedited</span>
+    </div>
+  </div>
+
+  <div class="ticker"
+       data-ticker
+       role="region"
+       aria-roledescription="testimonial marquee"
+       aria-label="{{ include.name | default: 'User' }} testimonials, scrolling. Hover to pause. Non-English quotes show an English translation on hover.">
+    <div class="ticker-track" data-ticker-track>
+      {%- for pass in (1..2) -%}
+        {%- for t in t_list -%}
+          {%- assign lang = t.language | default: 'en' -%}
+          {%- assign is_foreign = false -%}
+          {%- if lang != 'en' and t.translation_en and t.translation_en != '' -%}{% assign is_foreign = true %}{%- endif -%}
+
+          <figure
+            class="ticker-card{% if t.tier == 'hero' %} ticker-card--hero{% endif %}{% if is_foreign %} ticker-card--translate{% endif %}"
+            lang="{{ lang }}"
+            data-lang="{{ lang | upcase }}"
+            {% if is_foreign %}tabindex="0" aria-describedby="xltn-{{ include.slug }}-{{ pass }}-{{ forloop.index0 }}"{% endif %}
+            {% if pass == 2 %}aria-hidden="true"{% endif %}
+          >
+            <div class="ticker-card__top">
+              {%- if t.rating -%}
+              <div class="ticker-card__stars" aria-label="{{ t.rating }} out of 5 stars">
+                {%- for i in (1..5) -%}
+                  <span class="star{% if i > t.rating %} star--off{% endif %}" aria-hidden="true">★</span>
+                {%- endfor -%}
+              </div>
+              {%- else -%}
+              <div class="ticker-card__source-mark" aria-hidden="true">&#8220;</div>
+              {%- endif -%}
+
+              {%- if is_foreign -%}
+              <span class="ticker-card__lang" aria-hidden="true" title="Hover to see English translation">
+                {{ lang | upcase }}
+                <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 5h7M5 3v2M3.5 5c1 3 2.5 5 5.5 6M8.5 10c-2 1-4 1.5-6.5 1.5"></path>
+                  <path d="M9 14l3-7 3 7M10.2 12h3.6"></path>
+                </svg>
+              </span>
+              {%- endif -%}
+            </div>
+
+            <blockquote class="ticker-card__quote">{{ t.quote }}</blockquote>
+
+            <figcaption class="ticker-card__meta">
+              <span class="ticker-card__author">{{ t.author }}</span>
+              <span class="ticker-card__dot" aria-hidden="true">·</span>
+              <span class="ticker-card__source">{{ t.source }}</span>
+            </figcaption>
+
+            {%- if is_foreign -%}
+            <div class="ticker-card__translation"
+                 id="xltn-{{ include.slug }}-{{ pass }}-{{ forloop.index0 }}"
+                 role="tooltip"
+                 lang="en">
+              <span class="ticker-card__translation-label">English translation</span>
+              <p class="ticker-card__translation-text">{{ t.translation_en }}</p>
+            </div>
+            {%- endif -%}
+          </figure>
+        {%- endfor -%}
+      {%- endfor -%}
+    </div>
+  </div>
+
+  <p class="testimonials-footnote">
+    Quotes shown verbatim. Names reduced to initials for privacy. Hover a non-English quote to read it in English.
+  </p>
+</section>
+
+{%- endif -%}

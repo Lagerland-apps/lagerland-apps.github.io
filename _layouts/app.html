@@ -178,6 +178,9 @@ layout: default
     </div>
   </section>
 
+  {% comment %} ===== TESTIMONIALS TICKER (renders only if data exists for slug) ===== {% endcomment %}
+  {% include testimonials-ticker.html slug=page.slug name=page.name %}
+
   {% comment %} ===== VALUE POINTS ===== {% endcomment %}
   {% if page.value_points %}
   <section class="section">
