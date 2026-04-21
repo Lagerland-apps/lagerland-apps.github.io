@@ -1771,7 +1771,7 @@ blockquote {
 
 .testimonials-head {
   text-align: center;
-  margin-bottom: var(--s-5);
+  margin-bottom: var(--s-3);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1815,28 +1815,43 @@ blockquote {
   position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  padding: var(--s-4) 0 var(--s-5);
-  overflow: hidden;
-  /* Soft fade on both edges so cards dissolve into the page */
-  -webkit-mask-image: linear-gradient(90deg,
-      transparent 0,
-      #000 6%,
-      #000 94%,
-      transparent 100%);
-          mask-image: linear-gradient(90deg,
-      transparent 0,
-      #000 6%,
-      #000 94%,
-      transparent 100%);
+  /* Top padding reserves headroom for the translation tooltip when it
+     pops above a card; bottom stays tight. */
+  padding: 56px 0 14px;
+  /* Clip the marquee horizontally but let tooltips escape vertically. */
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+/* Edge-fade curtains — pseudo-elements instead of mask-image, so the
+   translation tooltip overflowing vertically is never clipped or
+   partially transparent. */
+.ticker::before,
+.ticker::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(40px, 7vw, 96px);
+  z-index: 2;
+  pointer-events: none;
+}
+.ticker::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--bg-0), rgba(0,0,0,0));
+}
+.ticker::after {
+  right: 0;
+  background: linear-gradient(-90deg, var(--bg-0), rgba(0,0,0,0));
 }
 
 .ticker-track {
   display: flex;
-  gap: var(--s-4);
+  gap: 12px;
   width: max-content;
-  padding: 8px var(--s-4);
+  padding: 4px 12px;
   /* 2 copies of content → translateX -50% = perfect seamless loop */
-  animation: tickerSlide 80s linear infinite;
+  animation: tickerSlide 55s linear infinite;
   will-change: transform;
 }
 
@@ -1851,22 +1866,22 @@ blockquote {
   to   { transform: translate3d(-50%, 0, 0); }
 }
 
-/* ---- Card ---- */
+/* ---- Card (compact) ---- */
 .ticker-card {
   position: relative;
   flex: 0 0 auto;
-  width: clamp(260px, 26vw, 340px);
-  min-height: 180px;
+  width: clamp(188px, 18vw, 232px);
+  min-height: 104px;
   display: flex;
   flex-direction: column;
-  gap: var(--s-2);
-  padding: var(--s-4);
-  border-radius: var(--r-lg);
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: var(--r-md);
   background: var(--bg-card);
-  backdrop-filter: blur(20px) saturate(1.3);
-  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+  backdrop-filter: blur(18px) saturate(1.25);
+  -webkit-backdrop-filter: blur(18px) saturate(1.25);
   border: 1px solid var(--border-1);
-  box-shadow: var(--elev-2);
+  box-shadow: var(--elev-1);
   transition:
     transform var(--dur-md) var(--ease-out),
     border-color var(--dur-md) var(--ease-out),
@@ -1894,10 +1909,10 @@ blockquote {
 
 .ticker-card:hover,
 .ticker-card:focus-visible {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   border-color: transparent;
   background: var(--bg-card-hover);
-  box-shadow: var(--elev-3), var(--shadow-glow);
+  box-shadow: var(--elev-2), var(--shadow-glow);
   outline: none;
 }
 .ticker-card:hover::before,
@@ -1908,22 +1923,22 @@ blockquote {
 /* Hero-tier cards get a slightly richer stroke + subtle glow at rest */
 .ticker-card--hero {
   border-color: var(--border-2);
-  box-shadow: var(--elev-2), 0 0 0 1px rgba(167, 139, 250, 0.06) inset;
+  box-shadow: var(--elev-1), 0 0 0 1px rgba(167, 139, 250, 0.06) inset;
 }
 
 .ticker-card__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--s-2);
-  min-height: 18px;
+  gap: 6px;
+  min-height: 14px;
 }
 
 .ticker-card__stars {
   display: inline-flex;
-  gap: 2px;
-  font-size: 13px;
-  letter-spacing: 1px;
+  gap: 1px;
+  font-size: 10.5px;
+  letter-spacing: 0.5px;
   background: var(--grad-accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1938,21 +1953,21 @@ blockquote {
 
 .ticker-card__source-mark {
   font-family: var(--font-serif);
-  font-size: 28px;
+  font-size: 18px;
   line-height: 0.8;
   color: var(--accent-b);
   opacity: 0.55;
-  transform: translateY(6px);
+  transform: translateY(4px);
 }
 
 .ticker-card__lang {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  font-size: 11px;
+  gap: 3px;
+  font-size: 9.5px;
   font-weight: 600;
-  letter-spacing: 1px;
-  padding: 4px 8px;
+  letter-spacing: 0.6px;
+  padding: 2px 6px;
   border-radius: 999px;
   color: var(--text-secondary);
   background: var(--bg-glass);
@@ -1965,32 +1980,32 @@ blockquote {
   border-color: var(--border-accent);
   background: var(--accent-glow);
 }
-.ticker-card__lang svg { opacity: 0.85; }
+.ticker-card__lang svg { opacity: 0.85; width: 10px; height: 10px; }
 
 .ticker-card__quote {
-  font-size: var(--text-sm);
-  line-height: 1.55;
+  font-size: 12.25px;
+  line-height: 1.42;
   color: var(--text-primary);
   font-weight: 400;
-  letter-spacing: -0.1px;
-  /* Clamp very long quotes so card heights stay consistent */
+  letter-spacing: -0.05px;
+  /* Clamp to keep ticker compact + card heights consistent */
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 .ticker-card--hero .ticker-card__quote {
-  font-size: var(--text-base);
+  font-size: 13px;
   font-weight: 500;
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 4;
 }
 
 .ticker-card__meta {
   margin-top: auto;
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: var(--text-xs);
+  gap: 6px;
+  font-size: 10.5px;
   color: var(--text-tertiary);
   letter-spacing: 0.2px;
 }
@@ -2000,29 +2015,31 @@ blockquote {
 }
 .ticker-card__dot { opacity: 0.5; }
 
-/* ---- Translation tooltip ---- */
+/* ---- Translation tooltip (card is narrow, so tooltip is wider
+   and centered above the card, escaping the ticker box) ---- */
 .ticker-card__translation {
   position: absolute;
-  left: -4px;
-  right: -4px;
+  left: 50%;
   bottom: calc(100% + 10px);
-  padding: var(--s-3) var(--s-4);
+  width: min(320px, 82vw);
+  padding: 10px 14px 12px;
   border-radius: var(--r-md);
   background: var(--bg-3);
   border: 1px solid var(--border-accent);
   box-shadow: var(--elev-3), var(--shadow-glow);
   color: var(--text-primary);
-  font-size: var(--text-sm);
-  line-height: 1.55;
+  font-size: 12.5px;
+  line-height: 1.5;
+  text-align: left;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(6px) scale(0.985);
+  transform: translate(-50%, 6px) scale(0.985);
   transform-origin: center bottom;
   transition:
     opacity var(--dur-fast) var(--ease-out),
     transform var(--dur-fast) var(--ease-out),
     visibility 0s linear var(--dur-fast);
-  z-index: 3;
+  z-index: 10;
   pointer-events: none;
 }
 @media (prefers-color-scheme: light) {
@@ -2049,11 +2066,11 @@ blockquote {
 
 .ticker-card__translation-label {
   display: block;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   background: var(--grad-accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2069,7 +2086,7 @@ blockquote {
 .ticker-card--translate:focus-visible .ticker-card__translation {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0) scale(1);
+  transform: translate(-50%, 0) scale(1);
   transition-delay: 0s, 0s, 0s;
 }
 
@@ -2083,24 +2100,23 @@ blockquote {
 
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
-  .ticker-track { animation-duration: 60s; gap: var(--s-3); }
+  .ticker { padding: 48px 0 12px; }
+  .ticker-track { animation-duration: 45s; gap: 10px; }
   .ticker-card {
-    width: clamp(240px, 72vw, 300px);
-    min-height: 164px;
-    padding: var(--s-3) var(--s-4);
+    width: clamp(172px, 62vw, 216px);
+    min-height: 96px;
+    padding: 10px 12px;
   }
-  .ticker-card--hero .ticker-card__quote { font-size: var(--text-sm); }
-  .ticker {
-    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
-            mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
-  }
+  .ticker::before,
+  .ticker::after { width: clamp(28px, 5vw, 56px); }
 }
 
 @media (max-width: 480px) {
-  .ticker-track { animation-duration: 52s; }
+  .ticker-track { animation-duration: 40s; }
   .ticker-card__translation {
-    font-size: var(--text-xs);
-    padding: var(--s-2) var(--s-3);
+    font-size: 11.5px;
+    padding: 8px 12px 10px;
+    width: min(280px, 88vw);
   }
 }
 
