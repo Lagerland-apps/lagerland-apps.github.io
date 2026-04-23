@@ -134,7 +134,7 @@ release:
 
 ratings:
   value: "4.8"
-  count: 12
-  last_synced: "2026-04-22"
+  count: 13
+  last_synced: "2026-04-23"
 ---
 GymLogger X is a fast, minimalist strength training workout tracker for iPhone and Apple Watch with 1,500+ exercises, animated demos, and smart program generation. The Smart Program Creator builds personalized periodized training based on goals, equipment, schedule, experience, and injuries — supporting PPL, Upper/Lower, Full Body, Arnold, and Bro Split with linear, DUP, block, or wave periodization. Pro insights include plateau detection, muscle imbalance identification, training load monitoring, and fatigue tracking. Coach-designed premium programs offer structured periodization from real strength coaches. Apple Watch provides full workout logging with rest timers, live heart rate, and automatic sync. Tracks personal records, 1RM estimates, volume trends, and training consistency. No ads, no accounts, no tracking. Free with optional Pro ($17.99/year or $44.99 lifetime).
