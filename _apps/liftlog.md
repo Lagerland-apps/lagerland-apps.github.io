@@ -127,7 +127,7 @@ faq:
   - q: "How much does LiftLog cost?"
     a: "LiftLog is free for seven days — no card required and no auto-renew. After the trial, you choose what it's worth to you: $9.99 (Fair), $19.99 (Good), $29.99 (Generous), or $39.99 (Patron). All four are one-time payments — no subscription, no recurring charge, no trial trap. Pick the tier that matches what the app is worth to you and you own it."
   - q: "Why pay-what-you-can pricing?"
-    a: "Strength training is a long-term practice. We don't think your training history should be held hostage by a lapsed subscription, and we don't want a credit card on file just to start. Seven days free without a card means you only pay if it earns your money. The four-tier ladder lets newer lifters in at $9.99 while letting fans support the work at $39.99 — the same app, your call."
+    a: "Strength training is a long-term practice. We don't think your training history should be held hostage by a lapsed subscription, and we don't want a credit card on file just to start. Seven days free without a card means you only pay if it earns your money. The four-tier ladder lets newer lifters in at $9.99 while letting fans support the work at $39.99 — the same app, your call. The launch journal post explains the bet in more detail: https://lagerland-apps.github.io/journal/liftlog-pay-what-you-can/"
   - q: "Does LiftLog support Apple Watch?"
     a: "LiftLog is iPhone-first by design. The workout session view is built around a custom numeric keypad and haptic feedback that wouldn't translate to a small wrist screen. If you primarily log from Apple Watch, GymLogger X is the better fit — it treats Apple Watch as a first-class client."
   - q: "What programs does LiftLog support?"
