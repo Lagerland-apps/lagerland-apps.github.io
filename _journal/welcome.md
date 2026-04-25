@@ -2,7 +2,7 @@
 layout: journal
 slug: welcome
 title: "What this journal is, and what it is not"
-date: 2026-04-10
+date: 2025-12-27
 lede: "A short note about why Lagerland Apps now has a journal — and what you can expect to find here."
 read_time: "2 min read"
 excerpt: "The Lagerland Apps journal is a place for rebrand stories, shipping notes, and honest essays about building privacy-first apps as a one-person Apple studio."
