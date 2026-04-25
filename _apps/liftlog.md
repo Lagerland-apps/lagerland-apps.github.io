@@ -7,7 +7,7 @@ category: fitness
 platforms: ["iOS"]
 status: live
 
-app_store_url: "https://apps.apple.com/developer/antti-aittamaa/id1855943133"
+app_store_url: "https://apps.apple.com/app/id6760043411"
 
 price:
   model: one-time
