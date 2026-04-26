@@ -134,3 +134,10 @@ gymlogger-x:
     rating: 5
     language: "en"
     tier: "ticker"
+
+  - quote: "Great app overall, very easy to navigate and works without any problems."
+    author: "B.P."
+    source: "App Store"
+    rating: 5
+    language: "en"
+    tier: "ticker"
