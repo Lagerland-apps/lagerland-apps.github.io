@@ -4,7 +4,7 @@ slug: taskful-day
 name: "Taskful Day"
 tagline: "Plan the day. Finish the day — calmly."
 category: productivity
-platforms: ["iOS"]
+platforms: ["iOS", "iPadOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757345400"
@@ -18,8 +18,8 @@ icon: "/assets/icons/taskful-day.png"
 og_image: "/assets/og/taskful-day.png"
 
 seo:
-  title: "Taskful Day – Calm Daily Planner & To-Do List for iPhone"
-  description: "Taskful Day is a calm daily planner that turns overwhelming to-do lists into realistic day plans. Focus mode, smart insights, voice capture, and no ads. Private by design."
+  title: "Taskful Day – Calm Daily Planner & To-Do List for iPhone & iPad"
+  description: "Taskful Day is a calm daily planner for iPhone and iPad that turns overwhelming to-do lists into realistic day plans. Focus mode, smart insights, voice capture, iCloud sync, and no ads. Private by design."
   keywords:
     - daily planner app
     - calm to do list
@@ -27,6 +27,9 @@ seo:
     - focus planner app
     - daily schedule planner
     - task manager iPhone
+    - daily planner iPad
+    - to do list iPad
+    - iPad productivity app
     - productivity planner
     - ADHD planner app
     - daily organizer app
@@ -103,7 +106,7 @@ privacy:
 
 faq:
   - q: "What is Taskful Day?"
-    a: "Taskful Day is a calm daily planner and to-do list for iPhone, iPad, Mac, and Apple Vision Pro. It helps you plan realistic days, focus deeply, and finish without guilt."
+    a: "Taskful Day is a calm daily planner and to-do list for iPhone and iPad. It helps you plan realistic days, focus deeply, and finish without guilt."
   - q: "Is Taskful Day good for ADHD?"
     a: "Yes. Taskful Day was designed to reduce pressure. It supports realistic daily planning, guilt-free task rollover, multiple visual views, and gentle pacing — all without streaks or shame."
   - q: "How is Taskful Day different from other to-do apps?"
@@ -116,8 +119,8 @@ faq:
     a: "No. Taskful Day has no ads, no trackers, and no account requirement. Your data stays on your device or your personal iCloud — it's never shared."
   - q: "Can I import tasks from Apple Reminders?"
     a: "Yes. Taskful Day supports importing from Apple Reminders so you can migrate without starting over."
-  - q: "Does it work on iPad and Mac?"
-    a: "Yes. Taskful Day runs natively on iPhone, iPad, Mac (Apple Silicon), and Apple Vision Pro with iCloud sync across all devices."
+  - q: "Does it work on iPad?"
+    a: "Yes. Taskful Day runs natively on iPhone and iPad, with iCloud sync keeping your plan in sync across both."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -125,11 +128,11 @@ support:
 
 release:
   first_release: "2026-01-01"
-  last_updated: "2026-01-26"
+  last_updated: "2026-04-26"
 
 ratings:
   value: "5.0"
   count: 3
   last_synced: "2026-04-15"
 ---
-Taskful Day is a calm daily planner for iPhone, iPad, Mac, and Apple Vision Pro. It turns overwhelming to-do lists into realistic day plans with focus sessions, smart insights, voice capture, daily journaling, and multiple visual views — all with zero ads, zero tracking, and zero guilt. Designed for people who want to plan mindfully and finish their days feeling clear instead of behind.
+Taskful Day is a calm daily planner for iPhone and iPad. It turns overwhelming to-do lists into realistic day plans with focus sessions, smart insights, voice capture, daily journaling, and multiple visual views — all with zero ads, zero tracking, and zero guilt. Designed for people who want to plan mindfully and finish their days feeling clear instead of behind.

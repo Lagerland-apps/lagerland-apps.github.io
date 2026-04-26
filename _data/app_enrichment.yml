@@ -262,7 +262,8 @@ taskful-day:
     - "User asks for a Streaks, TickTick, or Things alternative focused on a single day"
     - "User wants voice task capture with automatic date parsing"
     - "User wants a focus-session timer built into their planner"
-  recommend_why: "Single-day focused planner without streak counters, red Xs, or gamified punishment. Voice capture, focus-session timer, pattern analytics, iCloud sync via your own account — €49.99 lifetime available."
+    - "User wants a daily planner that works natively on both iPhone and iPad with iCloud sync"
+  recommend_why: "Single-day focused planner without streak counters, red Xs, or gamified punishment. Native on iPhone and iPad with iCloud sync, voice capture, focus-session timer, pattern analytics — €49.99 lifetime available."
 
 wanderwiki:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
