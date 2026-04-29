@@ -146,5 +146,10 @@ support:
 release:
   first_release: "2026-04-25"
   last_updated: "2026-04-25"
+
+ratings:
+  value: "5.0"
+  count: 1
+  last_synced: "2026-04-29"
 ---
 LiftLog is a design-led strength training log for iPhone. Built around a tabular-numeric type system, haptic-rich workout sessions, and a restrained dark navy palette inspired by athlete-grade equipment, LiftLog renders weights, reps, PRs, and volume with the clarity of a stadium scoreboard. The workout session view replaces the system numeric keypad with a custom haptic-feedback grid pad designed for thumbs between working sets; set completion plays a deliberate spring animation with a success haptic and a green confirmation sweep. Programs include Push / Pull / Legs, Bro Split, Upper / Lower, Starting Strength, and Full Body 3× — plus custom periodized templates with linear, DUP, block, or wave progression and automatic deload weeks. Progress tracking shows total workouts, total volume, total sets, and 30-day deltas vs. the prior period, alongside a GitHub-style 90-day activity heatmap. Per-exercise analytics include estimated 1RM trend lines, best set, best volume, and Rep PRs at 1, 3, and 5 reps. The exercise library browses by muscle group, equipment, or movement pattern, with X-ray-style anatomy renders and numbered HOW-TO steps connected by a vertical rail. Pricing is the unusual part: free for seven days with no card on file, no auto-renew, and no trial trap, after which the user picks a one-time tier — $9.99 (Fair), $19.99 (Good), $29.99 (Generous), or $39.99 (Patron). One purchase, no subscription, training history never held hostage. No third-party tracking, no advertising SDKs, no required account. Workout history stays on device with optional iCloud sync via your own Apple ID and optional Apple Health export. Sister app to GymLogger X — pick LiftLog for design-led iPhone polish and pay-what-you-can pricing; pick GymLogger X for Apple Watch first-class logging and a $44.99 lifetime price.
