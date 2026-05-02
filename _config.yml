@@ -25,6 +25,18 @@ defaults:
       type: journal
     values:
       layout: journal
+  - scope:
+      path: "google9835ba948bb89980.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "404.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "humans.txt"
+    values:
+      sitemap: false
 
 include:
   - .well-known
