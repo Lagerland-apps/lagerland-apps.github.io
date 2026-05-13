@@ -16,6 +16,44 @@ schema_price: "0"
 schema_high_price: "44.99"
 schema_offer_count: "3"
 
+# Plans grid — Free / Pro Annual / Lifetime. The plans_footnote carries
+# the USD-pricing disclaimer for international buyers and the App-Store
+# refund pointer so the most common purchase-friction objections are
+# answered next to the price, not buried in the FAQ.
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew, no card kept on file beyond Apple's own."
+
+plans:
+  - name: "Free"
+    price: "$0"
+    summary: "Core logging, free forever. No trial, no card, no account."
+    features:
+      - "Full set / rep / weight / RPE logging on iPhone and Apple Watch"
+      - "1,500+ exercises with animated demos"
+      - "Manual programs (PPL, Upper/Lower, Full Body, custom)"
+      - "Personal records, 1RM estimates, basic progress"
+      - "CSV + Apple Health export — your data is yours"
+      - "Local-only storage with optional iCloud sync"
+  - name: "Pro Annual"
+    price: "$17.99 / year"
+    summary: "Smart Programs, plateau detection, and advanced analytics. Cancel anytime."
+    features:
+      - "Smart Program Creator (PPL, Upper/Lower, Arnold, Bro Split — linear, DUP, block, wave)"
+      - "Plateau detection (the published ~2% / nine-session rule)"
+      - "Muscle imbalance ratios (push:pull, quad:hamstring, biceps:triceps)"
+      - "RPE distribution + training load analytics"
+      - "Wilks (2020), DOTS, Sinclair calculators"
+      - "Animated exercise demonstrations"
+  - name: "Lifetime"
+    price: "$44.99 one-time"
+    summary: "Everything in Pro, forever. About one in three Pro users picks this tier — training history is a multi-year asset."
+    features:
+      - "Everything in Pro Annual — permanently unlocked"
+      - "No subscription, no auto-renew, no expiring access"
+      - "Break-even vs the annual tier in ~2.5 years of use"
+      - "Cheapest lifetime tier among major lifting apps ($44.99 vs Hevy $74.99 vs Strong $99.99)"
+      - "Future Pro features included — no upsell on what you already paid for"
+    highlight_label: "Best value · ~1 in 3 pick this"
+
 icon: "/assets/icons/gymlogger-x.png"
 og_image: "/assets/og/gymlogger-x.png"
 
@@ -77,6 +115,20 @@ plateau_disclosure:
   title: "How GymLogger X plateau detection actually works"
   rule: "Pro flags a plateau on an exercise when its estimated 1RM has moved less than ~2% across nine or more consecutive sessions of consistent effort — same exercise, comparable RPE, equal or higher volume. The exact thresholds are tuned over time as we collect more training data; we update this page when they change."
   what_it_does_not_do: "It will not auto-restructure your program. It will not nag you with notifications. It surfaces the flag on the exercise page with possible causes — training frequency, recovery, exercise selection, technique — and lets you decide. Programming changes are the lifter's call, not the app's."
+
+# Method note — the same algorithm as plateau_disclosure, but structured as
+# HowToStep[] so the layout emits HowTo JSON-LD eligible for SERP HowTo
+# rendering and AI Overview citation. The visible "how-it-works" include
+# also renders these steps as a numbered method list.
+how_it_works:
+  intro: "GymLogger X turns logged sets into a plateau warning using a transparent three-step rule. No machine-learning black box — you can audit every step."
+  steps:
+    - title: "Estimate 1RM from every working set"
+      detail: "Each set's load and reps are converted to an estimated 1RM using the Epley formula (weight × (1 + reps / 30)). For sets above six reps, Brzycki is used as a cross-check. The session's per-exercise e1RM is the highest credible value across its working sets — warmups and back-off sets are excluded so a deload week doesn't trigger a false plateau."
+    - title: "Roll a nine-session window across the same exercise"
+      detail: "GymLogger X compares your most recent e1RM against a rolling window of the previous nine sessions of the same lift. The window only counts sessions with comparable effort — defined as a similar RPE / RIR range and equal or higher total set-volume — so light technique days and recovery weeks don't dilute the signal."
+    - title: "Surface the flag, list the causes, leave the call to you"
+      detail: "If the rolling e1RM has moved less than ~2% across that window, the exercise is flagged as stalling on its detail page. The flag lists possible causes (training frequency, recovery, exercise selection, technique). It does not auto-restructure your program, does not nag you with push notifications, and does not show a recovery score. Programming changes are the lifter's call, not the app's."
 
 who_for:
   - "You do strength training and want a fast, minimalist log — not a social fitness feed"
