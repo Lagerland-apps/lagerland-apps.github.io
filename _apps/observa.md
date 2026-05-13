@@ -17,6 +17,8 @@ schema_price: "0"
 schema_high_price: "69.99"
 schema_offer_count: "3"
 
+plans_footnote: "Both plans run on iPhone, Mac, and Apple Vision Pro. Reads from Apple Watch automatically via Apple Health — no separate pairing."
+
 plans:
   - name: "Free"
     price: "€0"
@@ -26,7 +28,7 @@ plans:
       - "Core pattern recognition (single-variable correlations)"
       - "Sleep, HRV, and recovery readability — plain English"
       - "Local-only processing — no account, no upload"
-      - "Apple Watch + iPhone + Mac + Apple Vision Pro support"
+      - "Free forever — no trial, no credit card"
   - name: "Pro"
     price: "€2.99/mo · €69.99 lifetime"
     summary: "The full interpretation layer — correlations, baselines, weekly reflections."
@@ -37,7 +39,7 @@ plans:
       - "Weekly reflection: what worked, what didn't, what to try"
       - "Per-pattern confidence scoring (n trials, statistical confidence)"
       - "Export every insight as plain text — never any lock-in"
-    highlight: true
+    highlight_label: "Best value"
 
 icon: "/assets/icons/observa.png"
 og_image: "/assets/og/observa.png"
@@ -172,24 +174,29 @@ privacy:
   app_privacy_label: "Apple's App Privacy nutrition label lists Observa as collecting zero data. You can verify this on the App Store page before downloading."
   notes:
     - "No ads, no trackers, no analytics SDKs — verified by Apple's App Privacy nutrition label"
-    - "No health data uploaded or shared with anyone, including the developer"
+    - "No health data uploaded or shared with anyone, including Lagerland Apps"
     - "No account required — Observa cannot identify you because it doesn't know who you are"
     - "All correlations and baselines computed and stored locally on your device"
     - "iCloud sync between your own Apple devices is end-to-end encrypted by Apple, off by default"
 
 founder:
-  name: "Antti Aittamaa"
-  role: "Independent Apple developer, Lagerland Apps"
+  entity_type: "Organization"
+  name: "Lagerland Apps"
+  role: "Independent Apple developer · Finland · one-person studio since 2025"
   location: "Finland"
   overline: "Who built this"
   heading: "A one-person studio. That's the point."
-  story: "I'm the only person working on Observa. I built it after years of staring at AutoSleep and Apple Health dashboards without ever knowing what the numbers meant for me. Observa is the interpretation layer I wanted — and because it runs entirely on your device, I never see your data either."
+  story: "Observa is built by a single independent developer at Lagerland Apps, working from Finland since 2025. It was made after years of staring at AutoSleep and Apple Health dashboards without ever knowing what the numbers actually meant. Observa is the interpretation layer that was missing — and because it runs entirely on your device, no one at Lagerland Apps ever sees your data either."
   signals:
-    - "Independent Apple developer, building privacy-first apps from Finland since 2025"
-    - "Observa runs 100% on-device — App Privacy nutrition label lists zero data collected"
-    - "No analytics, no SDKs, no growth team. Just me and a long-term commitment to the app"
+    - "Independent Apple developer, building privacy-first iOS and macOS apps from Finland since 2025"
+    - "Observa runs 100% on-device — Apple's App Privacy nutrition label lists zero data collected"
+    - "No analytics SDKs, no third-party trackers, no growth team — a one-person studio with a long-term commitment to the app"
+    - "15 live apps in the catalogue, all under the same privacy philosophy: no tracking, no ads, no required accounts"
+  external_link:
+    label: "More apps from Lagerland Apps →"
+    href: "/apps/"
   support_email: "lagerland.apps@proton.me"
-  response_time: "I reply to support emails personally, usually within a day."
+  response_time: "Support emails go to one inbox and are answered personally — usually within a day."
 
 faq:
   - q: "What is Observa?"
@@ -199,19 +206,19 @@ faq:
   - q: "Does Observa work with Apple Watch?"
     a: "Yes. Observa reads data collected by Apple Watch through Apple Health — including heart rate, HRV (RMSSD), ECG, sleep stages, resting heart rate, wrist temperature, and activity metrics. No separate pairing needed. ECG insights require Apple Watch Series 4 or later; HRV and sleep work on Series 3 and later."
   - q: "What are HRV and ECG insights?"
-    a: "Observa tracks lnRMSSD (the log-transformed HRV metric used in sports science) against your personal 60-day baseline, flags drops greater than one standard deviation, and uses Apple Watch ECG sinus-rhythm data to estimate autonomic recovery state. Translation: instead of a graph, you get a sentence like 'Your nervous system is 18% below baseline today — likely a recovery day.'"
+    a: "Observa tracks lnRMSSD (the log-transformed HRV metric used in sports science) against your personal 60-day baseline, flags drops greater than one standard deviation, and uses Apple Watch ECG sinus-rhythm data to estimate autonomic recovery state — the balance between sympathetic ('fight-or-flight') and parasympathetic ('rest-and-digest') activity. Translation: instead of a graph, you get a sentence like 'Your nervous system is 18% below baseline today — likely a recovery day.'"
   - q: "Is Observa free?"
     a: "Yes. Daily insight cards and core single-variable pattern recognition are free, forever. Pro unlocks multi-variable correlations, long-term trend analysis (90 / 180 / 365 days), weekly reflections, and per-pattern confidence scoring — from €2.99/month or €69.99 lifetime."
   - q: "Does Observa give medical advice?"
     a: "No. Observa is an informational wellness tool. It surfaces statistical patterns in data you already collect, for self-awareness — not medical diagnoses or treatment recommendations. If something looks off, talk to a clinician."
   - q: "Does Observa upload my health data?"
-    a: "No. All health data stays on your device. Observa has no servers, no accounts, and no cloud processing. Your data is never shared with anyone — including me, the developer. Apple's App Privacy nutrition label lists Observa as collecting zero data."
+    a: "No. All health data stays on your device. Observa has no servers, no accounts, and no cloud processing. Your data is never shared with anyone — including Lagerland Apps. Apple's App Privacy nutrition label lists Observa as collecting zero data."
   - q: "Do I need to log anything manually?"
     a: "No. Observa reads from Apple Health automatically. If you already wear an Apple Watch or use Health-connected apps (sleep trackers, meditation apps, nutrition apps), Observa can start finding patterns immediately. The first useful pattern usually surfaces around day 14."
   - q: "What sample size and confidence does Observa require before showing a pattern?"
     a: "Patterns surface once they cross both a minimum sample size (n ≥ 10 observations) and a confidence threshold (p ≤ 0.10). You'll see the n and confidence on every Pro card so you can judge for yourself. The free tier shows patterns with stricter defaults to keep the daily card high-signal."
   - q: "How is Observa an alternative to AutoSleep, Athlytic, or Bevel?"
-    a: "AutoSleep, Athlytic, and Bevel give you scores and charts. Observa gives you sentences that say what's actually moving those numbers for you specifically — and unlike Bevel and Athlytic, Observa runs 100% on-device with no account and no server."
+    a: "AutoSleep, Athlytic, and Bevel give you scores and charts — heart-rate dip during sleep, recovery percentages, Body Charge style numbers, sleep stage breakdowns. Observa gives you sentences that say what's actually moving those numbers for you specifically: which workouts shift your acute:chronic training-load ratio, which late-night habits cost you deep sleep, which weekly patterns predict next-morning HRV. And unlike Bevel and Athlytic, Observa runs 100% on-device with no account and no server."
 
 support:
   email: "lagerland.apps@proton.me"
