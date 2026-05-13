@@ -39,6 +39,7 @@ hero:
   headline: "App Store screenshots. Done right."
   subheadline: "Real 3D device models. Metal-powered rendering. AI translation. Direct upload to App Store Connect. The professional screenshot tool for developers who ship."
   cta_label: "Get ScreenFlow Studio"
+  alt: "ScreenFlow Studio — 3D iPhone device mockup with App Store screenshot composed on Mac"
 
 who_for:
   - "You're an indie iOS/macOS developer shipping apps in multiple languages"

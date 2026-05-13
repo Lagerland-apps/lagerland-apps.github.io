@@ -39,6 +39,7 @@ hero:
   headline: "App Store Connect. Finally native."
   subheadline: "Edit metadata, optimize keywords, manage reviews, handle TestFlight, and submit apps — all from a fast, native Mac app with AI-powered ASO tools and diff-based safety."
   cta_label: "Download Free"
+  alt: "AppMeta — native Mac editor for App Store Connect metadata with side-by-side localisation"
 
 who_for:
   - "You ship iOS or macOS apps and dread opening App Store Connect in a browser"

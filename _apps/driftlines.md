@@ -39,6 +39,7 @@ hero:
   headline: "One life. One entry per day."
   subheadline: "Driftlines is a quiet reading experience. Each day, a new piece of prose arrives from a fictional life unfolding in real time — memories shift, places change, and a story builds without you noticing."
   cta_label: "Get Driftlines"
+  alt: "Driftlines — today's prose entry on iPhone, in a calm full-screen reading view"
 
 who_for:
   - "You miss the feeling of finding a physical notebook and reading a few pages before bed"

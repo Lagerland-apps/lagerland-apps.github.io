@@ -14,6 +14,8 @@ price:
   model: freemium
   value: "Free — Pro from $17.99/yr"
 schema_price: "0"
+schema_high_price: "44.99"
+schema_offer_count: "3"
 
 icon: "/assets/icons/gymlogger-x.png"
 og_image: "/assets/og/gymlogger-x.png"
@@ -39,6 +41,7 @@ hero:
   headline: "Train smarter. Lift stronger."
   subheadline: "GymLogger X is a fast, minimalist strength training tracker with 1,500+ exercises, smart program generation, plateau detection, and Apple Watch logging — built for lifters who want real progress, not noise."
   cta_label: "Download Free"
+  alt: "GymLogger X — strength workout being logged on iPhone with set, rep, and weight details"
 
 who_for:
   - "You do strength training and want a fast, minimalist log — not a social fitness feed"

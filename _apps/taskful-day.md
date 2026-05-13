@@ -128,7 +128,7 @@ faq:
   - q: "Does Taskful Day sync between iPhone, iPad, and Mac?"
     a: "Yes. Taskful Day uses your personal iCloud account to keep tasks, plans, focus sessions, and journal entries in sync across iPhone, iPad, and Mac. Nothing is sent to a third-party server — sync runs through your own iCloud."
   - q: "Is Taskful Day good for ADHD?"
-    a: "Yes. Taskful Day was designed around the kind of friction that breaks ADHD planning: no streaks to lose, no red badges for missed days, realistic single-day scope instead of an infinite backlog, and Focus Orbit (a Pomodoro-style focus session timer) for the moments when getting started is the hardest part. Tasks roll forward automatically without guilt mechanics, so a missed day doesn't reset months of progress."
+    a: "Yes. Taskful Day was designed around the kind of friction that breaks ADHD planning: no streaks to lose, no red badges for missed days, realistic single-day scope instead of an infinite backlog, and Focus Orbit (a Pomodoro-style focus session timer) for the moments when getting started is the hardest part. Tasks roll forward automatically without guilt mechanics, so a missed day doesn't reset months of progress. For background on Apple's cognitive-accessibility framing of focus and friction, see <a href=\"https://www.apple.com/accessibility/\" rel=\"noopener\" target=\"_blank\">Apple's Accessibility page</a>."
   - q: "Does Taskful Day work on Apple Watch?"
     a: "Not yet. Taskful Day runs natively on iPhone, iPad, and Mac with iCloud sync — there is no watchOS app at this time. If Apple Watch support is critical to your workflow, this is an honest reason to wait or look elsewhere."
   - q: "How is Taskful Day different from other to-do apps?"

@@ -39,6 +39,7 @@ hero:
   headline: "Stop guessing. Start understanding."
   subheadline: "Chessful analyzes your games, explains your mistakes in plain language, and builds training around your real weaknesses — so every session makes you a better player."
   cta_label: "Download Free"
+  alt: "Chessful — chess game being analyzed with Stockfish 18 on iPhone, with plain-language commentary"
 
 who_for:
   - "You know the rules but keep losing and don't understand why"

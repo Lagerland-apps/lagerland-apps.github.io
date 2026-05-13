@@ -14,6 +14,8 @@ price:
   model: freemium
   value: "Free — Pro from $1.99/mo"
 schema_price: "0"
+schema_high_price: "24.99"
+schema_offer_count: "3"
 
 icon: "/assets/icons/allpaid.png"
 og_image: "/assets/og/allpaid.png"
@@ -39,6 +41,7 @@ hero:
   headline: "Every bill. One calm place."
   subheadline: "AllPaid tracks your bills, subscriptions, and due dates with smart detection, a monthly calendar, gentle reminders, and spending analytics — so you never miss a payment or lose track of what you owe."
   cta_label: "Download Free"
+  alt: "AllPaid — monthly bill calendar on iPhone with upcoming due dates and a daily total"
 
 who_for:
   - "You've missed a due date in the last six months and it cost you money"

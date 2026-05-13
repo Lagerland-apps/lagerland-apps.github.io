@@ -14,6 +14,8 @@ price:
   model: freemium
   value: "Free — Premium from €2.99/mo"
 schema_price: "0"
+schema_high_price: "39.99"
+schema_offer_count: "4"
 
 icon: "/assets/icons/soon.png"
 og_image: "/assets/og/soon.png"
@@ -45,6 +47,7 @@ hero:
   headline: "Some days you can't wait for."
   subheadline: "Soon. turns every trip, wedding, birthday, and milestone into a living countdown — with photo backgrounds, live weather, and plans that come together on their own."
   cta_label: "Download Free"
+  alt: "Soon. — full-bleed trip countdown on iPhone with photo background and live destination weather"
 
 who_for:
   - "You're planning a trip, wedding, birthday, graduation, or life milestone and want it visible daily"

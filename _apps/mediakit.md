@@ -42,6 +42,7 @@ hero:
   headline: "Every media tool. One Mac app."
   subheadline: "133 local tools for video, audio, image, PDF, and archives. Drop a file — MediaKit picks the right one. Nothing uploaded, ever."
   cta_label: "Download Free"
+  alt: "MediaKit — drag-and-drop file conversion across 133 native tools on Mac"
 
 who_for:
   - "You're a Mac user who converts video, audio, images, PDFs, or archives regularly"

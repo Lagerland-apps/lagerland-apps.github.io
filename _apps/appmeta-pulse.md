@@ -14,6 +14,8 @@ price:
   model: subscription
   value: "Free trial — from $0.99/mo"
 schema_price: "0.99"
+schema_high_price: "17.99"
+schema_offer_count: "4"
 
 icon: "/assets/icons/appmeta-pulse.png"
 og_image: "/assets/og/appmeta-pulse.png"
@@ -39,6 +41,7 @@ hero:
   headline: "Your App Store numbers. Instantly."
   subheadline: "AppMeta Pulse is a fast, read-only companion for App Store Connect. Check revenue, subscriptions, downloads, and trends in seconds — from your phone, tablet, or Mac."
   cta_label: "Download Free"
+  alt: "AppMeta Pulse — App Store revenue and subscriptions dashboard on iPhone"
 
 who_for:
   - "You're an indie iOS developer shipping multiple apps and want daily revenue at a glance"

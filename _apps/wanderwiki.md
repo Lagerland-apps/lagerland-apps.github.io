@@ -39,6 +39,7 @@ hero:
   headline: "Swipe. Learn. Repeat."
   subheadline: "WanderWiki turns Wikipedia into a beautiful card-based discovery experience. Swipe through fascinating articles from history, science, culture, and technology — no searching, no algorithms, just curiosity."
   cta_label: "Try Free"
+  alt: "WanderWiki — Wikipedia article card being swiped through on iPhone, in a discovery deck"
   video: "/assets/videos/wanderwiki_preview.mov"
   video_poster: "/assets/videos/wanderwiki-poster.jpg"
 

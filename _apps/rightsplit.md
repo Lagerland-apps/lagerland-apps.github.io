@@ -14,6 +14,8 @@ price:
   model: freemium
   value: "Free — Pro from $1.99/yr"
 schema_price: "0"
+schema_high_price: "7.99"
+schema_offer_count: "3"
 
 icon: "/assets/icons/rightsplit.png"
 og_image: "/assets/og/rightsplit.png"
@@ -39,6 +41,7 @@ hero:
   headline: "Scan it. Split it. Done."
   subheadline: "RightSplit scans your receipt, detects every item, and calculates exactly what each person owes — including shared dishes and tip. Send everyone their part in seconds."
   cta_label: "Download Free"
+  alt: "RightSplit — restaurant receipt items being assigned per person on iPhone, with tip calculated"
 
 who_for:
   - "You split restaurant bills with friends who ordered different things"

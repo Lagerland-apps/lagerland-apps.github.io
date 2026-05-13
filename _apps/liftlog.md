@@ -52,6 +52,7 @@ hero:
   headline: "Train the way you log."
   subheadline: "LiftLog is a design-led strength training tracker for iPhone — tabular numerics, haptic-rich workout sessions, periodized programs, and PR moments rendered with the polish of a piece of equipment. Free 7-day trial. No card. No auto-renew. Then you decide what it's worth."
   cta_label: "Start 7-Day Free Trial"
+  alt: "LiftLog — strength training session on iPhone with tabular set numerics and PR moment"
 
 who_for:
   - "You lift seriously and want a log that feels as deliberate as your training"

@@ -14,6 +14,8 @@ price:
   model: freemium
   value: "Free — Pro from €2.99/mo"
 schema_price: "0"
+schema_high_price: "69.99"
+schema_offer_count: "3"
 
 icon: "/assets/icons/observa.png"
 og_image: "/assets/og/observa.png"
@@ -39,6 +41,7 @@ hero:
   headline: "Your data already knows why."
   subheadline: "Observa turns your Apple Health data into personal insights — revealing what actually affects your sleep quality, recovery speed, and energy levels. Not more charts. Answers."
   cta_label: "Download Free"
+  alt: "Observa — Apple Health insight card on iPhone explaining a sleep, HRV, or recovery pattern"
 
 who_for:
   - "You already wear an Apple Watch and want to understand what your health data actually means"
