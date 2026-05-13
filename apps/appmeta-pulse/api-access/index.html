@@ -1,0 +1,239 @@
+---
+layout: default
+permalink: /apps/appmeta-pulse/api-access/
+title: "AppMeta Pulse — API Access & Methodology"
+quick_answer: "AppMeta Pulse authenticates to App Store Connect using Apple's official API with a .p8 key you generate in App Store Connect → Users and Access → Keys. The .p8 private key, Key ID, and Issuer ID are stored in your system Keychain. Each API call uses a short-lived JWT signed locally with ES256 — Apple's documented requirement caps token lifetime at 20 minutes. AppMeta Pulse calls read-only Sales and Trends and Subscription endpoints; the chosen API key role enforces this at Apple's side, not the app's. Queries hit api.appstoreconnect.apple.com directly over HTTPS — nothing is routed through Lagerland servers."
+seo:
+  title: "AppMeta Pulse — API Access & Methodology"
+  description: "How AppMeta Pulse authenticates to App Store Connect — .p8 key, ES256 JWT, role-to-endpoint mapping, what the app does and cannot do. Public, citable."
+  keywords:
+    - AppMeta Pulse API access
+    - App Store Connect API .p8 key
+    - App Store Connect API role
+    - App Store Connect JWT token
+    - App Store Connect API read-only
+    - Sales and Trends API endpoint
+    - subscription reports API
+    - App Store Connect API ES256
+    - App Store Connect Sales role
+    - Keychain stored API key iPhone
+---
+
+{%- assign app = site.apps | where: "slug", "appmeta-pulse" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "{{ site.url }}/apps/appmeta-pulse/api-access/#article",
+  "headline": "AppMeta Pulse — API Access & Methodology",
+  "description": {{ page.seo.description | jsonify }},
+  "url": "{{ site.url }}/apps/appmeta-pulse/api-access/",
+  "datePublished": "2026-05-13",
+  "dateModified": "2026-05-13",
+  "inLanguage": "en",
+  "publisher": { "@id": "{{ site.url }}/#organization" },
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}/apps/appmeta-pulse/api-access/"
+  },
+  "about": {
+    "@id": "{{ site.url }}/apps/appmeta-pulse/#app"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Apps", "item": "{{ site.url }}/apps/" },
+    { "@type": "ListItem", "position": 3, "name": "AppMeta Pulse", "item": "{{ site.url }}/apps/appmeta-pulse/" },
+    { "@type": "ListItem", "position": 4, "name": "API Access & Methodology", "item": "{{ site.url }}/apps/appmeta-pulse/api-access/" }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">API access · Methodology · Public, citable</p>
+    <h1 class="h1">How AppMeta Pulse<br><span class="gradient-text">talks to App Store Connect.</span></h1>
+    <p class="lead">
+      AppMeta Pulse authenticates to App Store Connect using Apple's official API with a key <em>you</em> generate in your own account. This page documents exactly which endpoints the app calls, which API key role is required for each, how the short-lived JWT tokens are signed and refreshed, where credentials live, and — equally important — what the app cannot do because of the scope it operates under. No marketing language. Verifiable against <a href="https://developer.apple.com/documentation/appstoreconnectapi" rel="noopener">Apple's own documentation</a>.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/apps/appmeta-pulse/">See AppMeta Pulse</a>
+      <a class="btn btn-secondary" href="#endpoints">Jump to endpoint table</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">What you generate, what the app stores.</h2>
+  <p class="lead">App Store Connect API keys are generated in your App Store Connect account, not by AppMeta Pulse. The app cannot generate or escalate a key; it can only use the one you give it.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">In App Store Connect (you)</div>
+      <ul class="bullets">
+        <li>Sign in to <a href="https://appstoreconnect.apple.com/" rel="noopener">App Store Connect</a> with an account that has permission to create API keys (Admin or Account Holder).</li>
+        <li>Open <strong>Users and Access → Integrations → App Store Connect API</strong>.</li>
+        <li>Generate a new key. Pick a <strong>role</strong> (Sales, Finance, Developer, App Manager, Admin, etc.). The role determines what AppMeta Pulse can read — see the endpoint table below for the minimum role per report.</li>
+        <li>Download the <code>.p8</code> private key file. <strong>Apple only lets you download it once</strong> — if you lose it, you regenerate.</li>
+        <li>Copy the <strong>Key ID</strong> (10-character string) and the <strong>Issuer ID</strong> (your team's UUID, shown above the keys list).</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">In AppMeta Pulse (the app)</div>
+      <ul class="bullets">
+        <li>Paste or import the <code>.p8</code> file, Key ID, and Issuer ID into AppMeta Pulse.</li>
+        <li>The three values are stored together in the system <strong>Keychain</strong> — the same secure storage iOS and macOS use for passwords and Wi-Fi credentials.</li>
+        <li>Nothing is written to plain files, iCloud Drive, third-party servers, or analytics SDKs.</li>
+        <li>Revoke the key any time in App Store Connect → Users and Access → Keys. Revocation takes effect at Apple's API immediately; the app cannot circumvent it.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">How the request is actually signed.</h2>
+  <p class="lead">Per Apple's <a href="https://developer.apple.com/documentation/appstoreconnectapi/generating-tokens-for-api-requests" rel="noopener">documented requirements for API tokens</a>, every request to the App Store Connect API must include a short-lived JSON Web Token signed with ES256 using your private key. AppMeta Pulse does this signing locally — the .p8 private key never leaves your device.</p>
+  <div class="features-list stagger">
+    <div class="feature-row">
+      <div class="feature-number">01</div>
+      <div>
+        <div class="card-title">Token construction</div>
+        <div class="card-text">Header: <code>alg: ES256, kid: &lt;your Key ID&gt;, typ: JWT</code>. Payload: <code>iss: &lt;your Issuer ID&gt;, iat: &lt;now&gt;, exp: &lt;now + ≤20 min&gt;, aud: appstoreconnect-v1</code>. Apple's documentation specifies a maximum token lifetime of 20 minutes — tokens with longer expiry are rejected by the API.</div>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-number">02</div>
+      <div>
+        <div class="card-title">Signing</div>
+        <div class="card-text">The token header + payload is signed locally with the ES256 algorithm using your .p8 private key. The signing happens on-device; the private key bytes never go to a network. Apple's API verifies the signature using the public key registered against your Key ID.</div>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-number">03</div>
+      <div>
+        <div class="card-title">Request</div>
+        <div class="card-text">The signed JWT is attached as an <code>Authorization: Bearer &lt;token&gt;</code> header on each HTTPS request to <code>https://api.appstoreconnect.apple.com</code>. The request goes directly to Apple — no intermediate proxy, no Lagerland server, no third-party analytics endpoint.</div>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-number">04</div>
+      <div>
+        <div class="card-title">Refresh</div>
+        <div class="card-text">When the JWT is close to expiry, AppMeta Pulse generates a new one from the same stored Key ID, Issuer ID, and .p8 — same construction, new <code>iat</code> and <code>exp</code>. There is no refresh token in the OAuth sense; Apple's API uses self-signed short-lived JWTs only.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="endpoints" class="section reveal">
+  <h2 class="h2">Endpoints called, and the role required for each.</h2>
+  <p class="lead">Per Apple's <a href="https://developer.apple.com/help/app-store-connect/manage-your-team/roles-and-permissions/" rel="noopener">role permissions matrix</a>, the role you pick when generating the key determines which reports the key can read. AppMeta Pulse exposes exactly the views the role allows — never more.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Sales and Trends reports</div>
+      <div class="card-text">Endpoint: <code>GET /v1/salesReports</code>. Returns daily, weekly, monthly, or yearly aggregated proceeds, units, and refunds by app and territory.<br><br><strong>Minimum role required:</strong> Sales, Finance, Admin, or Account Holder (per Apple's role permissions). App Manager and Developer roles do <em>not</em> have access to this endpoint — keys with those roles will see permission errors here.<br><br>This is the endpoint that drives the top-line revenue, downloads, and country breakdown views.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Subscription reports</div>
+      <div class="card-text">Endpoint: <code>GET /v1/financeReports</code> (subscription type) and the App Store Connect Subscription Status reports.<br><br><strong>Minimum role required:</strong> Sales, Finance, Admin, or Account Holder. Same access scope as Sales reports.<br><br>Drives the subscription health view — active subscribers, trial conversions, cancellations, refunds.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">App Analytics (where available)</div>
+      <div class="card-text">Endpoint: App Analytics report endpoints.<br><br><strong>Minimum role required:</strong> Admin, Account Holder, App Manager, Developer, Marketing, or Sales — App Analytics has broader role access than Sales reports.<br><br>If your key has only one of the analytics-eligible roles (e.g. App Manager) but lacks Sales access, AppMeta Pulse will show analytics-derived counts but not paid-out proceeds. The app surfaces this state clearly rather than failing silently.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Endpoints AppMeta Pulse does NOT call</div>
+      <div class="card-text">No write endpoints. No <code>POST</code>, <code>PATCH</code>, or <code>DELETE</code> calls anywhere in the app. No build submission endpoints. No app metadata edit endpoints. No pricing endpoints. No TestFlight management endpoints. No review-reply endpoints. The app's network layer is built to <em>read only</em>; even a misbehaving feature could not write because the request methods are not wired up at the codebase level.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">What "read-only" actually means here.</h2>
+  <p class="lead">Two layers of read-only enforcement — one in the app, one at Apple's API. The combination is what makes the guarantee meaningful.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">At the app level</div>
+      <ul class="bullets">
+        <li>The network layer only implements <code>GET</code> requests against the App Store Connect API. There is no code path for <code>POST</code>, <code>PATCH</code>, or <code>DELETE</code>.</li>
+        <li>The UI has no "submit," "edit," "publish," "delete," or "reply" buttons against your App Store Connect data — because nothing in the app could action them even if they existed.</li>
+        <li>Most accidental App Store Connect mistakes (pushing the wrong build, replying to the wrong review, hiking the wrong price) are <em>impossible</em> inside AppMeta Pulse by construction.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">At Apple's API level</div>
+      <ul class="bullets">
+        <li>The role you set on the API key determines what the key can do. A key with the Sales role cannot write to anything, even if a request tried.</li>
+        <li>You can revoke the key in App Store Connect at any time; the next API call from AppMeta Pulse will fail with 401 and the app surfaces that state clearly.</li>
+        <li>Apple's API enforces the role at the request level — not on trust of the calling app.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Data freshness — what to expect.</h2>
+  <p class="lead">App Store Connect's own reporting cadence is the upper bound on freshness; no third-party dashboard can be faster than Apple's source data.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Sales and Trends</div>
+      <div class="card-text">Apple updates Sales and Trends with next-day data — today's purchases appear tomorrow morning UTC. Same cadence as the App Store Connect web dashboard. AppMeta Pulse polls on-demand and on a refresh interval; the data shown is whatever Apple has currently published for your account.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Financial Reports</div>
+      <div class="card-text">Apple publishes monthly Financial Reports on a delayed cadence — typically 30+ days after the fiscal month ends. These are the canonical reconciliation source for tax filing and accounting. AppMeta Pulse displays Sales and Trends figures (next-day) by default; for tax filing, reconcile against Apple's monthly <a href="https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/" rel="noopener">downloadable Financial Reports</a>.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">What we deliberately do not promise.</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Honest limits</div>
+      <ul class="bullets">
+        <li>Numbers can never be fresher than Apple's reporting cadence. We cannot accelerate Apple's overnight ETL.</li>
+        <li>Exchange rates and tax categories in Apple's Sales and Trends are rolling averages — they will not always match what hits your bank account.</li>
+        <li>If you generated your API key with a role that lacks Sales access (e.g. App Manager only), the app will show what that role <em>can</em> read and clearly note what it cannot.</li>
+        <li>App Store Connect API rate limits are managed by Apple. Heavy refresh during a sales spike may briefly throttle; the app backs off rather than retrying aggressively.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">What is genuinely under our control</div>
+      <ul class="bullets">
+        <li>Where the .p8 key lives (system Keychain — not iCloud Drive, not a plaintext file, not a third-party server).</li>
+        <li>What the app does with your data after fetching it (nothing — App Store privacy label declares zero data collection, verifiable on the listing).</li>
+        <li>Whether read-only stays read-only across future versions (yes — the network layer is structurally write-incapable).</li>
+        <li>Honest disclosure when something changes (this page is dated and updated when the model changes).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% if app %}
+<section class="section reveal">
+  <h2 class="h2">About AppMeta Pulse</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section class="cta-section reveal">
+  <p class="overline">Use it</p>
+  <h2 class="h2">Open AppMeta Pulse.</h2>
+  <p class="lead">App Store Connect on iPhone, iPad, and Mac. Read-only by construction, zero data collection on the privacy label, .p8 key in your Keychain, your data goes nowhere but Apple.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/apps/appmeta-pulse/">Learn about AppMeta Pulse</a>
+    <a class="btn btn-secondary" href="/alternatives/appstats/">AppMeta Pulse vs AppStats</a>
+  </div>
+</section>
