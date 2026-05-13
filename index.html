@@ -3,7 +3,7 @@ layout: default
 title: Lagerland Apps
 seo:
   title: "Lagerland Apps — 15 Private, No-Tracking iOS & Mac Apps"
-  description: "An indie Apple studio in Finland shipping 15 privacy-first iPhone, iPad, Watch and Mac apps. No advertising SDKs, no accounts, no IDFA — EU-built, GDPR by default."
+  description: "Indie Apple studio in Finland: 15 privacy-first iPhone, iPad, Watch and Mac apps. No advertising SDKs, no IDFA, no accounts — EU-built, GDPR-default."
   keywords:
     - privacy-first iOS apps
     - privacy-first macOS apps
@@ -127,11 +127,11 @@ seo:
     </h1>
     <p class="hero-eyebrow">{{ live_apps.size }} indie iOS, iPadOS, watchOS and macOS apps — no ads, no accounts, no tracking.</p>
     <p class="lead">
-      An independent Apple studio built in Finland since 2025. {{ live_apps.size }} apps for iPhone, iPad, Apple&nbsp;Watch and Mac. Every app passes Apple's App Tracking Transparency check with no advertising SDKs and no IDFA — just tools that respect your time.
+      Started in Finland in 2025 as a one-person Apple studio. Every app passes Apple's App Tracking Transparency check with no IDFA request and zero advertising SDKs. Built under EU jurisdiction, with GDPR as the default — not a feature.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="#apps">Browse all apps</a>
-      <a class="btn btn-secondary" href="#faq">Our philosophy →</a>
+      <a class="btn btn-secondary" href="#about-strip">How we prove it →</a>
     </div>
   </div>
 
@@ -159,7 +159,7 @@ seo:
 <!-- ============================
      ABOUT STRIP — visible framing for humans + LLMs
      ============================ -->
-<section class="section reveal">
+<section id="about-strip" class="section reveal">
   <div class="about-strip">
     <p class="overline">About Lagerland Apps</p>
     <p class="lead">
@@ -175,17 +175,37 @@ seo:
 <!-- ============================
      TRUST BAR — Social proof
      ============================ -->
+{%- comment %} Weighted-average App Store rating across live apps. Values are stored as strings like "5.0" — multiply by 10 to keep integer math precise to one decimal. {% endcomment -%}
+{%- assign sum_w10 = 0 -%}
+{%- assign total_reviews = 0 -%}
+{%- for app in live_apps -%}
+  {%- assign rc = app.ratings.count | default: 0 | plus: 0 -%}
+  {%- if rc > 0 and app.ratings.value -%}
+    {%- assign rv10 = app.ratings.value | times: 10 | round: 0 -%}
+    {%- assign weighted = rv10 | times: rc -%}
+    {%- assign sum_w10 = sum_w10 | plus: weighted -%}
+    {%- assign total_reviews = total_reviews | plus: rc -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if total_reviews > 0 -%}
+  {%- assign avg10 = sum_w10 | divided_by: total_reviews -%}
+  {%- assign avg_int = avg10 | divided_by: 10 -%}
+  {%- assign avg_intx10 = avg_int | times: 10 -%}
+  {%- assign avg_dec = avg10 | minus: avg_intx10 -%}
+{%- endif -%}
 <section class="section reveal">
   <div class="trust-bar">
     <div class="trust-item">
       <span class="trust-value" data-count="{{ live_apps.size }}" data-suffix="">0</span>
       <span class="trust-label">Apps Published</span>
     </div>
+    {%- if total_reviews > 0 %}
     <span class="trust-divider"></span>
     <div class="trust-item">
-      <span class="trust-value">100%</span>
-      <span class="trust-label">Privacy-First</span>
+      <span class="trust-value">{{ avg_int }}.{{ avg_dec }}<span class="trust-star" aria-hidden="true">★</span></span>
+      <span class="trust-label">Avg across {{ total_reviews }} App Store reviews</span>
     </div>
+    {%- endif %}
     <span class="trust-divider"></span>
     <div class="trust-item">
       <span class="trust-value">Zero</span>
@@ -447,7 +467,7 @@ seo:
     </details>
     <details class="faq-item">
       <summary>Do Lagerland apps track me or collect personal data?</summary>
-      <div class="faq-a">No. Every app passes Apple's <strong>App Tracking Transparency</strong> check with no IDFA request, ships <strong>zero advertising SDKs</strong>, and includes no analytics that identify users. Data stays on-device wherever possible, any cloud sync uses your own iCloud account (compatible with Advanced Data Protection), and you can verify the claim on each app's App Store <strong>Privacy Nutrition Label</strong>.</div>
+      <div class="faq-a">No. Every app passes Apple's <a href="https://developer.apple.com/app-store/user-privacy-and-data-use/" rel="noopener" target="_blank"><strong>App Tracking Transparency</strong></a> check with no IDFA request, ships <strong>zero advertising SDKs</strong>, and includes no analytics that identify users. Data stays on-device wherever possible, any cloud sync uses your own iCloud account (compatible with Advanced Data Protection), and you can verify the claim on each app's App Store <a href="https://developer.apple.com/app-store/app-privacy-details/" rel="noopener" target="_blank"><strong>Privacy Nutrition Label</strong></a>.</div>
     </details>
     <details class="faq-item">
       <summary>Do the apps require accounts or a login?</summary>

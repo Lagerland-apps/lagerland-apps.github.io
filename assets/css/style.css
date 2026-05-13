@@ -2315,3 +2315,10 @@ blockquote {
   color: var(--accent-b);
   font-weight: 500;
 }
+
+/* Trust-bar star sits next to the numeric rating */
+.trust-star {
+  margin-left: 0.15em;
+  color: var(--accent-b);
+  font-size: 0.85em;
+}
