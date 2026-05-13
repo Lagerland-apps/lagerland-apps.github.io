@@ -320,6 +320,12 @@ ratings:
   count: 2
   last_synced: "2026-04-15"
 
+# Surface the Plan Mode methodology post directly on the app page —
+# information-gain content tied back to the page's strongest feature claim.
+related_journal:
+  slug: how-plan-mode-builds-a-checklist
+  anchor: "How Plan Mode actually builds a wedding (or trip, or pregnancy) checklist"
+
 # Render the markdown body as a visible "About Soon." section. The body
 # contains contextual in-body internal links to the methodology,
 # templates, comparison, and privacy sections — SearchPilot data:
