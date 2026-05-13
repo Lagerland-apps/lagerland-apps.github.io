@@ -13,6 +13,9 @@
 # ============================================================
 
 gymlogger-x:
+  # Curated to the five longest, most specific, most credible quotes.
+  # Short filler quotes ("Super app!", "First impression 🔝", "Looks legit useful")
+  # dilute strong testimonials and read as desperate. Quality > volume.
   - quote: "I'm normally not interested in fitness apps but this one feels different. I created a smart program and I actually feel like it's doable. Thank you for creating something that makes sense to people who don't live in the gym."
     author: "K.D."
     source: "App Store"
@@ -32,112 +35,17 @@ gymlogger-x:
     language: "en"
     tier: "hero"
 
-  - quote: "Thanks god no AI! Alright!"
-    author: "C."
-    source: "Reddit"
-    language: "en"
-    tier: "hero"
-
-  - quote: "Best workout app ever!"
-    author: "L."
-    source: "App Store"
-    rating: 5
-    language: "en"
-    tier: "hero"
-
-  - quote: "One of the best workout apps I have used so far."
-    author: "H."
-    source: "App Store"
-    rating: 5
-    language: "en"
-    tier: "ticker"
-
   - quote: "Really useful app with a clean and simple design. Everything works smoothly — great job by the developer."
     author: "R.O."
     source: "App Store"
     rating: 5
     language: "en"
-    tier: "ticker"
-
-  - quote: "Really good app for training."
-    author: "A."
-    source: "App Store"
-    rating: 5
-    language: "en"
-    tier: "ticker"
+    tier: "hero"
 
   - quote: "App installée aujourd'hui et déjà au top ! Pas de vidéos mais des schémas hyper clairs et bien expliqués qui guident parfaitement les exercices. Première séance ce matin fluide, interface intuitive et rappels motivants. Parfait pour débuter en musculation ! 💪"
     author: "M."
     source: "App Store"
     rating: 5
     language: "fr"
-    tier: "ticker"
+    tier: "hero"
     translation_en: "Installed the app today and it's already top-tier! No videos, but super clear, well-explained diagrams that guide the exercises perfectly. First session this morning was smooth — intuitive interface, motivating reminders. Perfect for getting started with strength training! 💪"
-
-  - quote: "Really clean and smooth UI."
-    author: "T.M."
-    source: "Reddit"
-    language: "en"
-    tier: "ticker"
-
-  - quote: "Great app. Heaps of choices of workout types."
-    author: "G."
-    source: "Reddit"
-    language: "en"
-    tier: "ticker"
-
-  - quote: "Awesome app, loved it."
-    author: "M."
-    source: "Reddit"
-    language: "en"
-    tier: "ticker"
-
-  - quote: "Super app!"
-    author: "S."
-    source: "Reddit"
-    language: "en"
-    tier: "ticker"
-
-  - quote: "Seems like a really great app to use during workouts."
-    author: "K."
-    source: "Reddit"
-    language: "en"
-    tier: "ticker"
-
-  - quote: "First impression is 🔝"
-    author: "P."
-    source: "Reddit"
-    language: "en"
-    tier: "ticker"
-
-  - quote: "Looks legit useful for me."
-    author: "N."
-    source: "Reddit"
-    language: "en"
-    tier: "ticker"
-
-  - quote: "Looks very good."
-    author: "A.N."
-    source: "Reddit"
-    language: "en"
-    tier: "ticker"
-
-  - quote: "Really nice — excited to check it out."
-    author: "T.H."
-    source: "Reddit"
-    language: "en"
-    tier: "ticker"
-
-  - quote: "Highly recommended!"
-    author: "R.O."
-    source: "App Store"
-    rating: 5
-    language: "en"
-    tier: "ticker"
-
-  - quote: "Great app overall, very easy to navigate and works without any problems."
-    author: "B.P."
-    source: "App Store"
-    rating: 5
-    language: "en"
-    tier: "ticker"

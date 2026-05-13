@@ -15,12 +15,50 @@ price:
   value: "Free 7-day trial — then $9.99–$39.99 (pay what you can, one-time)"
 schema_price: "9.99"
 
+plans:
+  - name: "Free trial"
+    price: "$0 / 7 days"
+    summary: "Full access. No card. No auto-renew."
+    features:
+      - "Every periodized program template"
+      - "Tabular numerics + haptic keypad"
+      - "1RM, Rep PRs, 90-day heatmap"
+      - "Optional iCloud sync — no account"
+  - name: "Fair"
+    price: "$9.99 once"
+    summary: "Entry tier. The whole app, forever."
+    features:
+      - "Everything in the trial"
+      - "Lifetime access — one purchase"
+      - "All future feature updates"
+      - "No subscription, no auto-renew"
+  - name: "Good"
+    price: "$19.99 once"
+    summary: "The honest middle. Same app, picked because the work is worth it."
+    features:
+      - "Everything in Fair"
+      - "Supports continued development"
+  - name: "Generous"
+    highlight: true
+    price: "$29.99 once"
+    summary: "Most chosen. Pays for a few weeks of focused work."
+    features:
+      - "Everything in Good"
+      - "Funds new programs and analytics"
+  - name: "Patron"
+    price: "$39.99 once"
+    summary: "Top tier. For fans backing a tiny indie studio."
+    features:
+      - "Everything in Generous"
+      - "Same app — no hidden Patron-only features"
+      - "Direct support email gets answered first"
+
 icon: "/assets/icons/liftlog.png"
 og_image: "/assets/og/default.png"
 
 seo:
-  title: "LiftLog — Pay-What-You-Can Strength Training Log for iPhone"
-  description: "Design-led strength log for iPhone. Free 7-day trial, no card. Pay-what-you-can $9.99–$39.99 — periodized programs, 1RM analytics, haptic sets, PRs."
+  title: "Strength Training Log for iPhone — Pay What You Can | LiftLog"
+  description: "Design-led strength training log for iPhone. Periodized programs, 1RM analytics, haptic sets, PRs. Free 7-day trial, no card — then pay what you can, one-time."
   keywords:
     - premium workout tracker iphone
     - design-led strength training app
@@ -49,10 +87,12 @@ seo:
     - 7 day free trial fitness app no card
 
 hero:
-  headline: "Train the way you log."
-  subheadline: "LiftLog is a design-led strength training tracker for iPhone — tabular numerics, haptic-rich workout sessions, periodized programs, and PR moments rendered with the polish of a piece of equipment. Free 7-day trial. No card. No auto-renew. Then you decide what it's worth."
-  cta_label: "Start 7-Day Free Trial"
-  alt: "LiftLog — strength training session on iPhone with tabular set numerics and PR moment"
+  headline: "The strength training log for iPhone."
+  secondary: "Train the way you log."
+  subheadline: "Design-led strength tracker for iPhone — tabular numerics, haptic-rich workout sessions, periodized programs (PPL, Upper/Lower, 5/3/1, DUP), and PR moments rendered with the polish of a piece of equipment."
+  pre_headline: "Open it. Log one workout. If LiftLog isn't worth $9.99 to you, don't pay. Seven days free, no card on file, no auto-renew — then you decide what it's worth, once."
+  cta_label: "Start 7-Day Free Trial — No Card"
+  alt: "LiftLog strength training session on iPhone — custom haptic numeric keypad, tabular set numerics, and rest-timer ring"
 
 who_for:
   - "You lift seriously and want a log that feels as deliberate as your training"
@@ -73,6 +113,104 @@ alternatives_to:
   - "Caliber"
   - "Ladder"
   - "Heavyset"
+
+plateau_disclosure:
+  title: "How LiftLog calculates 1RM and detects PRs"
+  rule: "Estimated 1RM uses the Epley formula — 1RM ≈ weight × (1 + reps / 30) — the most widely cited estimator in the strength-training literature (Epley, 1985). PRs are detected per exercise across three rep buckets: best 1-rep (true 1RM), best 3-rep, and best 5-rep — plus best volume per session and best estimated 1RM across all sets."
+  what_it_does_not_do: "It does not invent rep ranges you didn't log, average across exercises, or 'normalize' sets you tagged as warmup, drop, or failure. Estimated 1RM is shown alongside your actual top single — and the actual single always wins when you have one."
+  notes:
+    - "For reps above 10, estimated 1RM is less reliable — the page surfaces the rep count so you can judge it yourself."
+    - "RPE / RIR, when logged, narrows the estimate (a 5@8 is treated differently than a 5@10)."
+    - "Training Max (5/3/1) is a separate field — typically 85–90% of tested 1RM, per Jim Wendler's protocol — and drives program weights, not your PR history."
+    - "Volume = sets × reps × weight, with optional bodyweight loading on chin-ups, dips, and pull-ups."
+
+training_vocabulary:
+  intro: "LiftLog is built for lifters who already know what they're running. It speaks the language."
+  groups:
+    - heading: "Programming"
+      items:
+        - "Progressive overload — the central rule, applied automatically across mesocycles"
+        - "Mesocycle, microcycle, deload week — rendered as a clean dashboard, not a wall of cards"
+        - "Linear, DUP (Daily Undulating Periodization), block, wave periodization"
+        - "5/3/1 with Training Max, AMRAP top sets, Boring But Big variants"
+        - "PPL, Upper/Lower, Full Body 3×, Starting Strength, Bro Split, custom"
+    - heading: "Sets &amp; loading"
+      items:
+        - "Working set, warmup set, top set, back-off set, drop set, failure set"
+        - "RPE 1–10 and RIR (Rep In Reserve), optional per program"
+        - "Tempo notation (eccentric / pause / concentric)"
+        - "Per-side plate breakdown with custom bar weight (20 kg, 45 lb, EZ bar, safety squat bar)"
+    - heading: "Analytics"
+      items:
+        - "Estimated 1RM (Epley) — see method note above"
+        - "Rep PRs at 1, 3, and 5 reps — actual top sets, not just estimates"
+        - "Best volume per session and per exercise"
+        - "30-day, 90-day, and all-time deltas vs. prior period"
+        - "GitHub-style 90-day activity heatmap"
+
+comparison_table:
+  intro: "LiftLog versus the four most-searched iPhone strength trackers on three things lifters actually care about: pricing model, what you give up to use it, and whether your training history is yours forever."
+  competitors:
+    - "LiftLog"
+    - "Strong"
+    - "Hevy"
+    - "Fitbod"
+  rows:
+    - feature: "Pricing model"
+      values:
+        - "Pay-what-you-can $9.99–$39.99, one-time"
+        - "Free + Pro subscription"
+        - "Free + Pro subscription"
+        - "Subscription only"
+    - feature: "Free trial — no card required"
+      values:
+        - "✓ 7 days, no card"
+        - "Free tier (limited routines)"
+        - "Free tier"
+        - "Trial with card"
+    - feature: "Account required"
+      values:
+        - "No"
+        - "For sync"
+        - "For sync + social"
+        - "Yes"
+    - feature: "Third-party tracking"
+      values:
+        - "None"
+        - "Standard analytics"
+        - "Standard analytics"
+        - "Standard analytics"
+    - feature: "Periodization (linear, DUP, block, wave)"
+      values:
+        - "All four + auto deload"
+        - "Manual via routines"
+        - "Manual via routines"
+        - "AI auto-progression"
+    - feature: "Estimated 1RM + Rep PRs (1/3/5)"
+      values:
+        - "✓ Epley + actual"
+        - "✓ Pro"
+        - "✓"
+        - "✓"
+    - feature: "Apple Watch logging"
+      values:
+        - "Not yet — see GymLogger X"
+        - "Yes"
+        - "Yes"
+        - "Yes"
+    - feature: "Social feed / leaderboards"
+      values:
+        - "None"
+        - "Limited"
+        - "Yes (core feature)"
+        - "Limited"
+    - feature: "Training history portable after you stop paying"
+      values:
+        - "Yes — you own it"
+        - "Read-only without Pro"
+        - "Read-only without Pro"
+        - "Lost when sub lapses"
+  footnote: "Competitor details reflect publicly documented features as of 2026. LiftLog's pay-what-you-can pricing means you choose your tier — $9.99 Fair, $19.99 Good, $29.99 Generous, $39.99 Patron — once. The App Store is the canonical source for current pricing."
 
 value_points:
   - title: "Numbers are the product"
@@ -103,12 +241,18 @@ features:
     description: "Free for seven days, no card on file. After the trial, choose your tier: $9.99 Fair, $19.99 Good, $29.99 Generous, $39.99 Patron. One-time payment. No auto-renew. No trial trap. You own it — and your training history isn't held hostage by a lapsed subscription."
 
 screenshots:
-  - "/assets/screenshots/liftlog/1.png"
-  - "/assets/screenshots/liftlog/2.png"
-  - "/assets/screenshots/liftlog/3.png"
-  - "/assets/screenshots/liftlog/4.png"
-  - "/assets/screenshots/liftlog/5.png"
-  - "/assets/screenshots/liftlog/6.png"
+  - src: "/assets/screenshots/liftlog/1.png"
+    alt: "LiftLog workout session view on iPhone with custom haptic numeric keypad, tabular set numerics, and a rest-timer progress ring"
+  - src: "/assets/screenshots/liftlog/2.png"
+    alt: "LiftLog routines dashboard — Push/Pull/Legs, Upper/Lower, Starting Strength and 5/3/1 program cards with weekly mesocycle layout"
+  - src: "/assets/screenshots/liftlog/3.png"
+    alt: "LiftLog per-exercise progress screen with estimated 1RM trend line, best set, best volume, and Rep PRs at 1, 3 and 5 reps"
+  - src: "/assets/screenshots/liftlog/4.png"
+    alt: "LiftLog exercise library on iPhone — X-ray-style anatomy render, primary and secondary muscle tags, and a numbered HOW-TO rail"
+  - src: "/assets/screenshots/liftlog/5.png"
+    alt: "LiftLog GitHub-style 90-day activity heatmap and total volume / workouts / sets stats with 30-day deltas vs. the prior period"
+  - src: "/assets/screenshots/liftlog/6.png"
+    alt: "LiftLog personal record moment — success haptic, glow pulse, and PR badge logged in workout history"
 
 privacy:
   data_collection: "none"
@@ -118,7 +262,7 @@ privacy:
     - "No ads, no analytics SDKs, no social feed"
     - "No account required — open the app and start lifting"
     - "All workout data stays on your device by default"
-    - "Optional iCloud sync uses your own Apple ID — Lagerland Apps never sees your data"
+    - "Optional iCloud sync uses your own Apple ID — Lagerland Apps never sees or stores your data"
     - "Optional Apple Health export for workouts and active energy"
 
 faq:
@@ -140,6 +284,16 @@ faq:
     a: "No. LiftLog works fully offline with no account required. Workout data stays on your device, with optional iCloud sync using your own Apple ID — Lagerland Apps never sees or stores your data."
   - q: "Can I import workouts from Strong, Hevy, or another tracker?"
     a: "Yes. LiftLog supports import from common workout-tracker CSV exports. Open the export from Strong, Hevy, or your previous logger and LiftLog will map exercises, sets, reps, and weights into your history."
+  - q: "How does LiftLog estimate 1RM?"
+    a: "LiftLog uses the Epley formula — 1RM ≈ weight × (1 + reps / 30) — as the default estimator, which is the most widely cited formula in strength training literature (Epley, 1985). For sets above 10 reps the estimate becomes less reliable, so LiftLog also surfaces your actual best 1-rep, 3-rep, and 5-rep sets so you can compare estimated vs. true single-rep performance. Your actual top single always wins over an estimate."
+  - q: "Does LiftLog support 5/3/1 and Training Max?"
+    a: "Yes. The 5/3/1 template lets you set a Training Max (typically 85–90% of your tested 1RM, per Jim Wendler's protocol) and runs the standard 5/3/1, 3/5/1, and Boring But Big variants on top of it. AMRAP top sets are logged with the rep count so your estimated 1RM updates after each cycle. Linear, DUP (Daily Undulating Periodization), block, and wave periodization are also built in, with automatic deload weeks."
+  - q: "Does LiftLog support RPE or RIR (Rep In Reserve)?"
+    a: "Yes — optionally. You can log each set with an RPE (Rate of Perceived Exertion, 1–10) or RIR value if you train with autoregulation. The field is hidden by default to keep the working-set view uncluttered, and switches on per-program in settings. PR detection and 1RM estimation both factor RPE in when present."
+  - q: "Is there a plate calculator?"
+    a: "Yes. The session view shows the per-side plate breakdown for any working weight using your selected bar weight (default 20 kg / 45 lb, customizable per exercise for dumbbells, EZ bar, safety squat bar, etc.) and only counts plates you have in your gym profile."
+  - q: "How fresh is LiftLog's content and pricing?"
+    a: "This page is maintained alongside each App Store release. Current version notes, release date and last-updated date are shown in the page footer. The pay-what-you-can tiers ($9.99 / $19.99 / $29.99 / $39.99) and the 7-day trial without a card are the live App Store configuration — if Apple's StoreKit ever shows different numbers, the App Store is canonical."
 
 support:
   email: "lagerland.apps@proton.me"

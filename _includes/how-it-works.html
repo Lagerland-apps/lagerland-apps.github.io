@@ -1,0 +1,37 @@
+{%- comment %}
+  Renders a numbered "method note" describing exactly how the app
+  produces its output. This is the highest-leverage E-E-A-T move
+  available to an indie developer: transparency about methodology
+  is rare and signals genuine Expertise.
+
+  Frontmatter shape:
+    how_it_works:
+      intro: "Optional intro line."
+      steps:
+        - title:  "Reads from Apple Health"
+          detail: "On first launch …"
+{%- endcomment -%}
+{%- assign hiw = include.app.how_it_works -%}
+{%- if hiw and hiw.steps and hiw.steps.size > 0 -%}
+<section id="how-it-works" class="section--lg">
+  <div class="section-center">
+    <p class="overline reveal">How it works</p>
+    <h2 class="h2 reveal">The method behind every insight.</h2>
+    {%- if hiw.intro -%}
+    <p class="lead reveal" style="max-width:60ch;margin:var(--s-3) auto 0;">{{ hiw.intro }}</p>
+    {%- endif -%}
+  </div>
+
+  <ol class="method-list stagger">
+    {%- for step in hiw.steps -%}
+    <li class="method-step">
+      <div class="method-num">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</div>
+      <div>
+        <h3 class="method-title">{{ step.title }}</h3>
+        <p class="method-detail">{{ step.detail }}</p>
+      </div>
+    </li>
+    {%- endfor -%}
+  </ol>
+</section>
+{%- endif -%}

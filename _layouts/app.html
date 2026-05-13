@@ -250,6 +250,18 @@ layout: default
   {%- assign founder_overline = page.founder.overline | default: "Why I built this" -%}
   {%- assign founder_heading  = page.founder.heading  | default: "A one-person studio. That's the point." -%}
   {%- assign founder_story    = page.founder.story    | default: page.founder.bio -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "{{ app_url }}#author",
+    "name": {{ page.founder.name | jsonify }}{%- if page.founder.role %},
+    "jobTitle": {{ page.founder.role | jsonify }}{%- endif -%}{%- if page.founder.support_email %},
+    "email": {{ page.founder.support_email | jsonify }}{%- endif -%}{%- if page.founder.location %},
+    "address": { "@type": "PostalAddress", "addressLocality": {{ page.founder.location | jsonify }} }{%- endif -%},
+    "worksFor": { "@id": "{{ site.url }}/#organization" }
+  }
+  </script>
   <section class="section reveal" itemscope itemtype="https://schema.org/Person" aria-labelledby="founder-heading-{{ page.slug }}">
     <div class="section-center">
       <p class="overline">{{ founder_overline }}</p>

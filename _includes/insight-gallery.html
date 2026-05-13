@@ -1,0 +1,41 @@
+{%- comment %}
+  Renders a gallery of anonymised "real insight" cards from
+  `example_insights:` frontmatter. This is the Information-Gain
+  artefact: it shows the actual output of the app in a form Google's
+  Information Gain patent (US11769017B1) rewards — content that is
+  not already in the index.
+
+  Frontmatter shape:
+    example_insights:
+      intro: "Optional intro paragraph."
+      cards:
+        - headline: "Late leg-day costs you deep sleep."
+          body:     "Days you train lower body after 18:00 …"
+          tag:      "Sleep · Pattern"
+{%- endcomment -%}
+{%- assign gallery = include.app.example_insights -%}
+{%- if gallery and gallery.cards and gallery.cards.size > 0 -%}
+{%- capture default_overline %}What a{% if include.app.name | slice: 0, 1 | downcase == "o" or include.app.name | slice: 0, 1 | downcase == "a" or include.app.name | slice: 0, 1 | downcase == "e" or include.app.name | slice: 0, 1 | downcase == "i" or include.app.name | slice: 0, 1 | downcase == "u" %}n{% endif %} {{ include.app.name }} insight looks like{% endcapture -%}
+{%- assign gallery_overline = gallery.overline | default: default_overline -%}
+{%- assign gallery_heading  = gallery.heading  | default: "Real insights, in plain English." -%}
+{%- assign gallery_anchor   = gallery.anchor   | default: "insights" -%}
+<section id="{{ gallery_anchor }}" class="section reveal">
+  <div class="section-center">
+    <p class="overline">{{ gallery_overline }}</p>
+    <h2 class="h2">{{ gallery_heading }}</h2>
+    {%- if gallery.intro -%}
+    <p class="lead" style="max-width:60ch;margin:var(--s-3) auto 0;">{{ gallery.intro }}</p>
+    {%- endif -%}
+  </div>
+
+  <div class="insight-grid stagger">
+    {%- for card in gallery.cards -%}
+    <article class="insight-card">
+      {%- if card.tag -%}<span class="insight-tag">{{ card.tag }}</span>{%- endif -%}
+      <h3 class="insight-headline">{{ card.headline }}</h3>
+      <p class="insight-body">{{ card.body }}</p>
+    </article>
+    {%- endfor -%}
+  </div>
+</section>
+{%- endif -%}

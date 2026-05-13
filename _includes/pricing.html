@@ -1,5 +1,36 @@
 <section class="section reveal">
   <h2 class="h2">Pricing</h2>
+
+  {%- comment %}
+    If the app defines a `plans:` list in frontmatter, render a full
+    Free / Pro / Lifetime comparison. Otherwise fall back to the
+    original single-row pricing card. The comparison is the conversion
+    win — readers should not have to open the FAQ to learn what's in
+    Pro.
+  {%- endcomment -%}
+  {%- if include.app.plans and include.app.plans.size > 0 -%}
+  <div class="plans-grid">
+    {%- for plan in include.app.plans -%}
+    <div class="plan-card {% if plan.highlight %}plan-card--highlight{% endif %}">
+      {%- if plan.highlight -%}<span class="plan-badge">Most chosen</span>{%- endif -%}
+      <div class="plan-name">{{ plan.name }}</div>
+      <div class="plan-price">{{ plan.price }}</div>
+      {%- if plan.summary -%}<div class="plan-summary">{{ plan.summary }}</div>{%- endif -%}
+      {%- if plan.features and plan.features.size > 0 -%}
+      <ul class="plan-features">
+        {%- for f in plan.features -%}<li>{{ f }}</li>{%- endfor -%}
+      </ul>
+      {%- endif -%}
+    </div>
+    {%- endfor -%}
+  </div>
+  <div class="pricing-foot">
+    <p class="pricing-note">Transparent pricing on the App Store. Cancel anytime. Free plan is free forever — no trial, no card.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">View on the App Store</a>
+    </div>
+  </div>
+  {%- else -%}
   <div class="pricing-card">
     <div class="price-row">
       <div>
@@ -12,4 +43,5 @@
       <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">View on the App Store</a>
     </div>
   </div>
+  {%- endif -%}
 </section>

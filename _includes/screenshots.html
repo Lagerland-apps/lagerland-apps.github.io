@@ -6,20 +6,26 @@
 
   <div class="shots">
     {% for s in include.app.screenshots %}
-      {%- comment %} Supports two shapes:
+      {%- comment %} Supports three shapes:
         1. String: "/path/to/img.png"  (generic alt fallback)
-        2. Hash:   { src: "/path/to/img.png", alt: "Descriptive alt" }
+        2. Hash:   { src: "/path/to/img.png", alt: "Alt for screen readers" }
+        3. Hash:   { src: "/path/to/img.png", caption: "Visible caption (also used as alt)" }
       {% endcomment -%}
       {%- if s.src -%}
         {%- assign shot_src = s.src -%}
         {%- capture shot_alt_fallback %}{{ include.app.name }} screenshot {{ forloop.index }}{% endcapture -%}
-        {%- assign shot_alt = s.alt | default: shot_alt_fallback -%}
+        {%- assign shot_alt = s.alt | default: s.caption | default: shot_alt_fallback -%}
+        {%- assign shot_caption = s.caption -%}
       {%- else -%}
         {%- assign shot_src = s -%}
         {%- capture shot_alt %}{{ include.app.name }} screenshot {{ forloop.index }}{% endcapture -%}
+        {%- assign shot_caption = nil -%}
       {%- endif -%}
       <figure class="shot">
         <img src="{{ shot_src }}" alt="{{ shot_alt }}" loading="lazy">
+        {%- if shot_caption -%}
+        <figcaption class="shot-caption">{{ shot_caption }}</figcaption>
+        {%- endif -%}
       </figure>
     {% endfor %}
   </div>

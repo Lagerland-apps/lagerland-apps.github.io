@@ -44,9 +44,10 @@ seo:
     - pilot fatigue tracker
 
 hero:
+  pre_headline: "For nurses, paramedics, firefighters, pilots & shift workers"
   headline: "Sleep & recovery built around your shifts."
-  secondary: "Made for nurses, paramedics, firefighters, pilots & anyone on rotating, night, or on-call schedules."
-  subheadline: "The shift-worker sleep app where naps count as real recovery — not an afterthought. AfterShift scores how recovered you are before your next shift and times caffeine to the schedule you actually work."
+  secondary: "Naps count as real recovery here — weighted into your Shift Recovery Score alongside core sleep."
+  subheadline: "AfterShift scores how recovered you are before your next shift and times caffeine to the schedule you actually work — DuPont, Pitman, 2-2-3, 4-on-4-off, 12-hour, or on-call. Never compared to a 9-to-5 baseline."
   cta_label: "Download Free"
   alt: "AfterShift Shift Recovery Score after a 12-hour night shift on iPhone, with sleep timeline showing naps and core sleep"
 
@@ -97,16 +98,22 @@ features:
 screenshots:
   - src: "/assets/screenshots/aftershift/1.png"
     alt: "AfterShift Shift Recovery Score on iPhone showing 72 of 100 after a 12-hour night shift, with breakdown of sleep quality, continuity, and nap contribution"
+    caption: "Shift Recovery Score — how recovered you are before your next block"
   - src: "/assets/screenshots/aftershift/2.png"
     alt: "AfterShift sleep timeline view showing Core, Deep, REM and Awake stages overlaid against the user's actual night shift hours"
+    caption: "Sleep stages, read against your actual rotation"
   - src: "/assets/screenshots/aftershift/3.png"
     alt: "AfterShift nap tracker on iPhone logging a 90-minute prophylactic nap before an on-call shift, with recovery contribution displayed"
+    caption: "Naps logged as first-class recovery, not a footnote"
   - src: "/assets/screenshots/aftershift/4.png"
     alt: "AfterShift smart caffeine timing view showing the latest safe coffee time before tonight's sleep window — calibrated to the next scheduled shift"
+    caption: "Caffeine timing tied to your next shift"
   - src: "/assets/screenshots/aftershift/5.png"
     alt: "AfterShift weekly fatigue and fragmentation chart on iPhone, highlighting which days inside a 4-on-4-off rotation accumulated the most sleep debt"
+    caption: "Spot the weakest day in a 4-on-4-off block before fatigue compounds"
   - src: "/assets/screenshots/aftershift/6.png"
     alt: "AfterShift calendar shift import on iPhone, automatically detecting rotating night shifts and building recovery insights around them"
+    caption: "Calendar shift import — no manual rebuild every roster change"
 
 privacy:
   data_collection: "none"
@@ -156,6 +163,12 @@ faq:
   - q: "Do I need an Apple Watch?"
     a: "No — an iPhone with Apple Health is enough to get useful data, especially if you use the built-in iOS Sleep features. An Apple Watch makes nap detection and sleep-stage data more accurate, but is not required."
 
+  - q: "Should I get morning light after a night shift, or block it?"
+    a: "Both — at different times, for different goals. If you are staying on a night-shift schedule, block bright morning light on the commute home (sunglasses help) and sleep in a dark room: bright light tells your circadian clock it is daytime and makes it harder to fall asleep. If you are transitioning back to day life, the opposite is true — get bright light in the morning to phase-advance your clock. AfterShift uses your scheduled shifts to indicate which mode you are in. For the full circadian-science background, sleep specialists and the U.S. <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\">NIOSH shift work resources</a> cover light exposure timing in detail."
+
+  - q: "What does sleep inertia have to do with shift work?"
+    a: "Sleep inertia is the groggy, slowed-reaction state in the first 15–30 minutes after waking. For shift workers it matters in two places: (1) waking from a deep mid-shift nap can leave inertia bad enough that the nap costs more than it gives — AfterShift's nap guidance favors lengths that avoid this, and (2) the start of a night shift after a daytime sleep often comes with residual inertia that masquerades as fatigue. Knowing the difference matters when you are deciding whether you actually need caffeine, or whether you just need fifteen minutes."
+
 support:
   email: "lagerland.apps@proton.me"
   url: "/apps/aftershift/support/"
@@ -168,6 +181,10 @@ ratings:
   value: "4.3"
   count: 3
   last_synced: "2026-04-21"
+
+related_journal:
+  slug: building-a-sleep-app-for-night-shifts
+  anchor: "Why we built AfterShift — and what generic sleep apps get wrong about night-shift life"
 ---
 
 AfterShift is a sleep and recovery app built specifically for shift workers — nurses, paramedics, firefighters, police officers, pilots, factory workers, and anyone on night, rotating, or on-call schedules.
@@ -176,4 +193,10 @@ It tracks sleep stages, naps, and fatigue in the context of your actual shifts, 
 
 Unlike generic sleep apps, AfterShift never compares you to a 9-to-5 baseline. Unlike most shift-work apps, naps are treated as first-class recovery — weighted into the Shift Recovery Score, not relegated to a footnote.
 
-Built by an independent Apple developer in Finland for the people who keep hospitals, fire stations, factories, and cockpits running through the night. Private by design: no ads, no health data selling, no account required, no third-party trackers. Free to use, with optional Premium features.
+## Why AfterShift exists
+
+Most sleep apps were designed for a person who goes to bed at 11 p.m. and wakes up at 7 a.m. Open the onboarding flow of any major one and walk through it — the questions assume a fixed bedtime, a steady wake time, and weekends free. Then look at how the people who actually keep hospitals, fire stations, factories, and cockpits running through the night are forced to use them. A nurse logs a five-hour daytime sleep after a string of night shifts; the app politely tells her she had a *poor night* and should go to bed earlier. The model of "a person" baked into the app and the model of the person actually using it are not the same model.
+
+AfterShift was built to fix that mismatch — by an independent Apple developer who watched too many friends in scrubs and uniforms get the same patronising notification. Naps are real recovery. Daytime sleep before a night shift is a win, not a failure. The right caffeine cutoff depends on what shift you are walking into, not on the time on the clock. Those positions are not radical; they are how sleep researchers studying shift work have framed the problem for two decades. AfterShift makes them the default.
+
+Private by design: no ads, no health data selling, no account required, no third-party trackers. Free to use, with optional Premium features.
