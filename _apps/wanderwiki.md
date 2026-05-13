@@ -104,6 +104,8 @@ value_points:
     description: "Home Screen, Lock Screen, and StandBy widgets surface a fresh article every day. Save any article, organise into folders, read offline. The reading list builds with you across weeks and months."
   - title: "No ads, no algorithm, no account"
     description: "Wiki Rabbit ships banner ads on its free tier. WikiCards is free but English-only. WanderWiki charges $0.99/week or $22.99 lifetime so the app has no commercial incentive to maximise your screen time. No account. No behavioral tracking."
+  - title: "$22.99 lifetime ≈ $0.06 per Wikipedia language unlocked"
+    description: "33 Wikipedia language editions, one-time price, no subscription. Zero competitors offer multi-language Wikipedia in a swipe-card app — WikiCards is free but English-only; Wiki Rabbit is free with ads, English-only, and capped at the Good Articles subset; Wikipedia's official app has all ~300 editions but is built for search, not swipe."
 
 how_it_works:
   intro: "WanderWiki is a Wikipedia card-deck on iPhone (iOS 18.2+). The data source is Wikipedia's official REST API; everything else runs locally in SwiftData. Here's how a session moves through it."
@@ -191,6 +193,7 @@ plateau_disclosure:
     - "Want a free swipe-Wikipedia app on Mac or Vision Pro? WikiCards is the option — English only, but free and multi-platform."
     - "Want article-level explanations of why each article was chosen? Wiki Rabbit ships that today, on a free-with-ads tier."
     - "Want Wikipedia editor tools (edit, talk, watchlist, contributions)? Wikipedia's official app is built for that."
+    - "Want Picture of the Day or trending articles? Wikipedia's official app surfaces both in its Explore feed and widget — WanderWiki focuses on swipeable article discovery instead."
     - "Want long-form curated magazine content? Curio (audio articles), Apple News+, and Pocket fit better."
 
 training_vocabulary:
@@ -296,6 +299,7 @@ release:
   first_release: "2026-02-01"
   last_updated: "2026-05-13"
   last_audited: "2026-05-13"
+  audit_round: "3 (multi-language widget wedge + Picture of the Day honesty)"
 
 ratings:
   value: "5.0"
