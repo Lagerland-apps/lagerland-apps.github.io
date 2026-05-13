@@ -17,6 +17,29 @@ schema_price: "0"
 schema_high_price: "49.99"
 schema_offer_count: "3"
 
+plans:
+  - name: "Free"
+    price: "€0"
+    summary: "The full calm planner. Single workspace, on-device only."
+    features:
+      - "All four visual day views: Day Clock, Energy River, Day Map, Focus Orbit"
+      - "Focus Orbit immersive timer (Pomodoro 25-minute default)"
+      - "Voice task capture with on-device speech recognition"
+      - "End-of-day mood journal and reflection prompts"
+      - "Tasks roll forward without guilt — no streaks, no red badges"
+      - "One workspace. All data stays on this device."
+  - name: "Pro"
+    price: "€2.99/mo · €49.99 lifetime"
+    summary: "Universal Purchase across iPhone, iPad, and Mac. iCloud sync, full analytics, every widget."
+    features:
+      - "iCloud sync across iPhone, iPad, and Mac (your own iCloud account)"
+      - "Full analytics + pattern insights across weeks and months"
+      - "All Home Screen, Lock Screen, and StandBy widgets"
+      - "Multiple workspaces — work, personal, side projects, separate clean spaces"
+      - "Apple Reminders re-import"
+      - "Universal Purchase — one Pro, three platforms"
+    highlight: true
+
 icon: "/assets/icons/taskful-day.png"
 og_image: "/assets/og/taskful-day.png"
 
@@ -74,6 +97,26 @@ alternatives_to:
   - "Structured"
   - "Sorted³"
 
+comparison_table:
+  intro: "Every column below is a question someone shopping for a calm daily planner actually asks. Streaks, Things 3, TickTick, and Structured each do something well — Taskful Day is built for the person who wants single-day focus, no streak guilt, and one Universal Purchase across iPhone, iPad, and Mac."
+  competitors: ["Taskful Day", "Streaks", "Things 3", "TickTick", "Structured"]
+  rows:
+    - feature: "Single-day focus (no infinite backlog)"
+      values: ["Yes — the core design", "Habits only", "No — multi-project", "No — multi-project", "Yes — timeline-first"]
+    - feature: "No streaks, no red badges, no guilt mechanics"
+      values: ["Yes", "No — streaks are the product", "Yes", "No — badges & achievements", "Yes"]
+    - feature: "Built-in focus session timer (Pomodoro defaults)"
+      values: ["Yes — Focus Orbit, 25-min default", "No", "No", "Yes — Premium tier", "Yes"]
+    - feature: "Native on iPhone, iPad, AND Mac"
+      values: ["Yes — Universal Purchase", "iOS / iPad / Watch", "Separate purchase per platform", "Cross-platform via account", "iOS + macOS Catalyst"]
+    - feature: "One-time lifetime purchase option"
+      values: ["€49.99 lifetime", "$5.99 one-time (iOS)", "$9.99 iOS + $19.99 iPad + $49.99 Mac", "Subscription only", "Subscription (one-time also available)"]
+    - feature: "No account required (iCloud-only sync)"
+      values: ["Yes — your iCloud, no Lagerland account", "Yes", "Yes — iCloud sync", "Account required", "Account required for sync"]
+    - feature: "Zero third-party tracking SDKs"
+      values: ["0", "Standard analytics", "Standard analytics", "Standard analytics", "Standard analytics"]
+  footnote: "Competitor pricing and features reflect each app's public landing page and App Store description on 2026-05. Apps change frequently — verify current pricing on the App Store before switching."
+
 value_points:
   - title: "Plan what matters"
     description: "Pick the tasks that actually belong in your day. Everything else waits quietly until you're ready."
@@ -84,11 +127,29 @@ value_points:
   - title: "Private by default"
     description: "No ads, no tracking, no account. Your tasks stay on your device or your personal iCloud."
 
+how_it_works:
+  intro: "Taskful Day is a single-day planner with four ways to see the day, a built-in focus timer, and a forgiving rollover rule. Here's how a day moves through it."
+  steps:
+    - title: "Capture in under two seconds"
+      detail: "Type or hold the mic — on-device speech recognition via Apple's Speech framework parses the task and any date/time you mention. Nothing leaves the device for transcription. The captured task drops into the inbox or directly onto today, depending on what you said."
+    - title: "Pick today's plan"
+      detail: "From the inbox, choose what actually belongs in today. Everything else waits quietly until you're ready. The point isn't to clear a backlog — it's to define a realistic day before it starts."
+    - title: "Time-block the day in the view that fits"
+      detail: "Day Clock renders the day as a circular timeline. Day Map shows time-blocks linearly. Energy River matches tasks to your energy rhythm. Each view is the same plan in a different shape — switch as your mood does."
+    - title: "Drop into a focus session"
+      detail: "Focus Orbit is an immersive timer with a 25-minute Pomodoro default (configurable). The screen narrows, distractions recede, and the session is logged. Tracking focused minutes builds the pattern data the analytics layer reads."
+    - title: "End the day with a quick journal"
+      detail: "A short evening prompt captures mood and notes. Over weeks, the analytics surface the link between how you planned, how you felt, and what you actually finished. No charts you have to interpret — a sentence or two per pattern."
+    - title: "Tasks roll forward, not away"
+      detail: "Anything not done today moves to tomorrow automatically. No red badges. No streak to lose. A missed day doesn't reset progress; it just means the task tries again, with a softer landing."
+    - title: "Sync across iPhone, iPad, and Mac (Pro)"
+      detail: "Pro users get iCloud sync via their own iCloud account — Lagerland never sees the data. Plan on the Mac at the desk, capture on the phone, review on the iPad. One Pro purchase covers all three platforms (Universal Purchase)."
+
 features:
   - title: "Instant capture, zero friction"
     description: "Voice input with smart date recognition. Speak a task, and Taskful Day files it where it belongs. Think of something — capture it in under two seconds."
   - title: "Four ways to see your day"
-    description: "Day Clock, Energy River, Day Map, and Focus Orbit — each view designed for a different mindset. Day Clock and Day Map work as visual time-blocking surfaces; Energy River matches your tasks to your energy rhythm; Focus Orbit is the Pomodoro-style timer for deep work."
+    description: "Day Clock, Energy River, Day Map, and Focus Orbit — each view designed for a different mindset. Day Clock and Day Map work as visual <a href=\"https://en.wikipedia.org/wiki/Timeboxing\" rel=\"noopener\" target=\"_blank\">time-blocking</a> surfaces; Energy River matches your tasks to your energy rhythm; Focus Orbit is the Pomodoro-style timer for deep work."
   - title: "Focus sessions that work"
     description: "Drop into immersive Focus Orbit. Set a timer, minimize distractions, and let deep work happen. Track how many focused minutes you actually complete."
   - title: "Tasks roll forward, not away"
@@ -101,12 +162,18 @@ features:
     description: "Taskful Day now runs as a native Mac app alongside iPhone and iPad — built for the desktop, not a stretched phone window. iCloud sync keeps your day identical wherever you open it: plan on the Mac, capture on the phone, review on the iPad."
 
 screenshots:
-  - "/assets/screenshots/taskful-day/1.png"
-  - "/assets/screenshots/taskful-day/2.png"
-  - "/assets/screenshots/taskful-day/3.png"
-  - "/assets/screenshots/taskful-day/4.png"
-  - "/assets/screenshots/taskful-day/5.png"
-  - "/assets/screenshots/taskful-day/6.png"
+  - src: "/assets/screenshots/taskful-day/1.png"
+    alt: "Taskful Day — today's plan view on iPhone with a focus session running"
+  - src: "/assets/screenshots/taskful-day/2.png"
+    alt: "Taskful Day — Day Clock visual time-blocking surface on iPhone, showing the day as a circular timeline"
+  - src: "/assets/screenshots/taskful-day/3.png"
+    alt: "Taskful Day — Energy River view on iPhone, matching tasks to the user's energy rhythm across the day"
+  - src: "/assets/screenshots/taskful-day/4.png"
+    alt: "Taskful Day — Focus Orbit immersive timer on iPhone, set to a 25-minute Pomodoro deep-work session"
+  - src: "/assets/screenshots/taskful-day/5.png"
+    alt: "Taskful Day — end-of-day mood journal and reflection prompts on iPhone"
+  - src: "/assets/screenshots/taskful-day/6.png"
+    alt: "Taskful Day on Mac — native daily planner with the same day visible across iPhone, iPad, and Mac via iCloud"
 
 privacy:
   data_collection: "none"

@@ -8,6 +8,9 @@
       </div>
     </div>
 
+    {%- if include.app.hero.pre_headline -%}
+    <p class="hero-pre">{{ include.app.hero.pre_headline }}</p>
+    {%- endif -%}
     <h1 class="h1">{{ include.app.hero.headline }}</h1>
     {%- if include.app.hero.secondary -%}
     <p class="hero-eyebrow">{{ include.app.hero.secondary }}</p>
@@ -75,7 +78,7 @@
         {%- assign hero_alt = include.app.name | append: " — " | append: hero_alt | append: " (" | append: first_platform | append: ")" -%}
       {%- endif -%}
       <div class="hero-media">
-        <img class="hero-shot" src="{{ hero_img }}" alt="{{ hero_alt }}" loading="lazy">
+        <img class="hero-shot" src="{{ hero_img }}" alt="{{ hero_alt }}" loading="eager" decoding="async" fetchpriority="high">
       </div>
     {% endif %}
   </div>
