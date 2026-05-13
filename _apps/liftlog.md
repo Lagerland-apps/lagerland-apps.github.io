@@ -54,7 +54,7 @@ plans:
       - "Direct support email gets answered first"
 
 icon: "/assets/icons/liftlog.png"
-og_image: "/assets/og/default.png"
+og_image: "/assets/og/liftlog.png"
 
 seo:
   title: "Strength Training Log for iPhone — Pay What You Can | LiftLog"
@@ -115,17 +115,19 @@ alternatives_to:
   - "Heavyset"
 
 plateau_disclosure:
-  title: "How LiftLog calculates 1RM and detects PRs"
-  rule: "Estimated 1RM uses the Epley formula — 1RM ≈ weight × (1 + reps / 30) — the most widely cited estimator in the strength-training literature (Epley, 1985). PRs are detected per exercise across three rep buckets: best 1-rep (true 1RM), best 3-rep, and best 5-rep — plus best volume per session and best estimated 1RM across all sets."
+  title: "How LiftLog calculates 1RM, volume, and the deload trigger"
+  rule: "Estimated 1RM uses the Epley formula — 1RM ≈ weight × (1 + reps / 30) — the most widely cited estimator in the strength-training literature (Epley, 1985). PRs are detected per exercise across three rep buckets: best 1-rep (true 1RM), best 3-rep, and best 5-rep — plus best volume per session and best estimated 1RM across all sets. Weekly per-muscle volume is tracked against your trailing four-week MRV (Maximum Recoverable Volume); when accumulated volume crosses your MRV trend, the next week is rendered as an automatic deload."
   what_it_does_not_do: "It does not invent rep ranges you didn't log, average across exercises, or 'normalize' sets you tagged as warmup, drop, or failure. Estimated 1RM is shown alongside your actual top single — and the actual single always wins when you have one."
   notes:
     - "For reps above 10, estimated 1RM is less reliable — the page surfaces the rep count so you can judge it yourself."
     - "RPE / RIR, when logged, narrows the estimate (a 5@8 is treated differently than a 5@10)."
     - "Training Max (5/3/1) is a separate field — typically 85–90% of tested 1RM, per Jim Wendler's protocol — and drives program weights, not your PR history."
+    - "Volume landmarks (MV / MEV / MAV / MRV) follow the framework popularized by Dr. Mike Israetel and the Renaissance Periodization team — and feed the automatic deload calculation."
     - "Volume = sets × reps × weight, with optional bodyweight loading on chin-ups, dips, and pull-ups."
 
 training_vocabulary:
-  intro: "LiftLog is built for lifters who already know what they're running. It speaks the language."
+  collapse_by_default: true
+  intro: "LiftLog is built for lifters who already know what they're running. It speaks the language — Renaissance Periodization volume landmarks (Israetel et al.), RPE-based autoregulation (Tuchscherer / Helms), and block periodization (Issurin)."
   groups:
     - heading: "Programming"
       items:
@@ -285,7 +287,7 @@ faq:
   - q: "Does LiftLog support Apple Watch?"
     a: "LiftLog is iPhone-first by design. The workout session view is built around a custom numeric keypad and haptic feedback that wouldn't translate to a small wrist screen. If you primarily log from Apple Watch, GymLogger X is the better fit — it treats Apple Watch as a first-class client."
   - q: "What programs does LiftLog support?"
-    a: "PPL (Push/Pull/Legs), Upper/Lower, Full Body, 5/3/1, hypertrophy blocks, and custom periodized templates. Linear, DUP (Daily Undulating Periodization), block, and wave periodization with automatic deload weeks built in."
+    a: "PPL (Push/Pull/Legs), Upper/Lower, Full Body, 5/3/1, hypertrophy blocks, and custom periodized templates. Linear, DUP (Daily Undulating Periodization), block (model adapted from Vladimir Issurin's block periodization framework), conjugate (Westside Barbell tradition), and wave periodization — all with automatic deload weeks built in."
   - q: "Does LiftLog track personal records?"
     a: "Yes. LiftLog tracks PRs by exercise — best 1RM (estimated and actual), best volume, and best rep ranges. When you hit a new PR mid-session, LiftLog acknowledges it with a haptic and a quiet visual celebration."
   - q: "Does LiftLog need an account or internet connection?"
@@ -297,7 +299,7 @@ faq:
   - q: "Does LiftLog support 5/3/1 and Training Max?"
     a: "Yes. The 5/3/1 template lets you set a Training Max (typically 85–90% of your tested 1RM, per Jim Wendler's protocol) and runs the standard 5/3/1, 3/5/1, and Boring But Big variants on top of it. AMRAP top sets are logged with the rep count so your estimated 1RM updates after each cycle. Linear, DUP (Daily Undulating Periodization), block, and wave periodization are also built in, with automatic deload weeks."
   - q: "Does LiftLog support RPE or RIR (Rep In Reserve)?"
-    a: "Yes — optionally. You can log each set with an RPE (Rate of Perceived Exertion, 1–10) or RIR value if you train with autoregulation. The field is hidden by default to keep the working-set view uncluttered, and switches on per-program in settings. PR detection and 1RM estimation both factor RPE in when present."
+    a: "Yes — optionally. You can log each set with an RPE (Rate of Perceived Exertion, 1–10) or RIR value if you train with autoregulation, following the RPE-based autoregulation framework attributed to Mike Tuchscherer and refined for hypertrophy by Eric Helms (3D Muscle Journey / Iron Culture). The field is hidden by default to keep the working-set view uncluttered, and switches on per-program in settings. PR detection and 1RM estimation both factor RPE in when present."
   - q: "Is there a plate calculator?"
     a: "Yes. The session view shows the per-side plate breakdown for any working weight using your selected bar weight (default 20 kg / 45 lb, customizable per exercise for dumbbells, EZ bar, safety squat bar, etc.) and only counts plates you have in your gym profile."
   - q: "How fresh is LiftLog's content and pricing?"
@@ -310,6 +312,10 @@ support:
 release:
   first_release: "2026-04-25"
   last_updated: "2026-04-25"
+
+related_journal:
+  slug: "liftlog-pay-what-you-can"
+  anchor: "Why pay-what-you-can pricing — the bet, in our own words"
 
 ratings:
   value: "5.0"

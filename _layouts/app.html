@@ -131,6 +131,40 @@ layout: default
 }
 </script>
 
+{%- comment %}
+  HowTo schema — renders when frontmatter exposes `how_it_works.steps`.
+  Each step becomes a HowToStep. The method note is the highest-leverage
+  E-E-A-T artefact for an indie product page (documents algorithm in
+  plain English), and emitting HowTo schema makes the same content
+  eligible for SERP how-to rendering and AI-Overview citation.
+{%- endcomment -%}
+{%- if page.how_it_works and page.how_it_works.steps and page.how_it_works.steps.size > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": "{{ app_url }}#how-it-works",
+  "name": "How {{ page.name }} works",
+  {%- if page.how_it_works.intro %}
+  "description": {{ page.how_it_works.intro | jsonify }},
+  {%- endif %}
+  "inLanguage": "en",
+  "isPartOf": { "@id": "{{ app_url }}#app" },
+  "step": [
+    {%- for step in page.how_it_works.steps -%}
+    {
+      "@type": "HowToStep",
+      "position": {{ forloop.index }},
+      "name": {{ step.title | jsonify }},
+      "text": {{ step.detail | jsonify }},
+      "url": "{{ app_url }}#how-it-works"
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
+
 <article class="app">
 
   {%- comment %}
@@ -425,6 +459,7 @@ layout: default
   {%- if page.training_vocabulary.groups.size >= 4 -%}{%- assign vocab_grid = "grid-2" -%}{%- endif -%}
   {%- assign vocab_overline = page.training_vocabulary.overline | default: "Speaks the language" -%}
   {%- assign vocab_heading  = page.training_vocabulary.heading  | default: "Built for lifters who already know what they're running" -%}
+  {%- assign vocab_collapse = page.training_vocabulary.collapse_by_default -%}
   <section class="section reveal" aria-labelledby="vocab-heading-{{ page.slug }}">
     <div class="section-center">
       <p class="overline">{{ vocab_overline }}</p>
@@ -433,6 +468,21 @@ layout: default
       <p class="lead">{{ page.training_vocabulary.intro }}</p>
       {% endif %}
     </div>
+    {%- if vocab_collapse -%}
+    <details class="vocab-details" style="max-width:var(--w-content);margin:0 auto;">
+      <summary style="cursor:pointer;text-align:center;padding:var(--s-3) var(--s-4);font-weight:600;">Show the full vocabulary &rarr;</summary>
+      <div class="grid {{ vocab_grid }} stagger" style="margin-top:var(--s-4);">
+        {% for g in page.training_vocabulary.groups %}
+        <div class="card">
+          <div class="card-title">{{ g.heading }}</div>
+          <ul class="bullets" style="margin-top:var(--s-2);">
+            {% for i in g.items %}<li>{{ i }}</li>{% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </details>
+    {%- else -%}
     <div class="grid {{ vocab_grid }} stagger">
       {% for g in page.training_vocabulary.groups %}
       <div class="card">
@@ -443,6 +493,7 @@ layout: default
       </div>
       {% endfor %}
     </div>
+    {%- endif -%}
   </section>
   {% endif %}
 
@@ -513,9 +564,6 @@ layout: default
 
   {% comment %} ===== FAQ (moved above privacy for snippet sourcing) ===== {% endcomment %}
   {% include faq.html app=page %}
-
-  {% comment %} ===== PRICING ===== {% endcomment %}
-  {% include pricing.html app=page %}
 
   {% comment %} ===== COACH CTA ===== {% endcomment %}
   {% if page.coach_cta %}
