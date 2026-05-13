@@ -14,13 +14,15 @@ price:
   model: subscription
   value: "Free — Pro from €2.99/mo"
 schema_price: "0"
+schema_high_price: "49.99"
+schema_offer_count: "3"
 
 icon: "/assets/icons/taskful-day.png"
 og_image: "/assets/og/taskful-day.png"
 
 seo:
   title: "Taskful Day — Calm Daily Planner for iPhone, iPad & Mac"
-  description: "Calm daily planner for iPhone, iPad & Mac. Realistic day plans without streaks or guilt. Focus sessions, voice capture, iCloud sync. Universal Purchase, no ads."
+  description: "Calm daily planner for iPhone, iPad & Mac. Realistic day plans without streaks or guilt — built for ADHD, focus sessions, iCloud sync. Universal Purchase."
   keywords:
     - daily planner app
     - daily planner Mac
@@ -46,8 +48,10 @@ seo:
 
 hero:
   headline: "Your day, actually planned. Now on Mac."
-  subheadline: "Taskful Day turns an overwhelming to-do list into a calm, realistic plan you can actually finish — with focus sessions, smart insights, and zero guilt. Native on iPhone, iPad, and Mac, with iCloud sync keeping every device in step."
+  secondary: "Universal Purchase: one download, three devices. Free with optional Pro from €2.99/mo, or €49.99 lifetime."
+  subheadline: "Taskful Day turns an overwhelming to-do list into a calm, realistic plan you can actually finish — with time-blocking, focus sessions (Pomodoro defaults), smart insights, and zero guilt. Native on iPhone, iPad, and Mac, with iCloud sync keeping every device in step."
   cta_label: "Download Free"
+  alt: "Taskful Day — today's plan view on iPhone with a focus session running"
 
 who_for:
   - "You've uninstalled streak-based habit apps because missing a day demotivated you"
@@ -84,7 +88,7 @@ features:
   - title: "Instant capture, zero friction"
     description: "Voice input with smart date recognition. Speak a task, and Taskful Day files it where it belongs. Think of something — capture it in under two seconds."
   - title: "Four ways to see your day"
-    description: "Day Clock, Energy River, Day Map, and Focus Orbit — each view designed for a different mindset. Switch views as your energy shifts throughout the day."
+    description: "Day Clock, Energy River, Day Map, and Focus Orbit — each view designed for a different mindset. Day Clock and Day Map work as visual time-blocking surfaces; Energy River matches your tasks to your energy rhythm; Focus Orbit is the Pomodoro-style timer for deep work."
   - title: "Focus sessions that work"
     description: "Drop into immersive Focus Orbit. Set a timer, minimize distractions, and let deep work happen. Track how many focused minutes you actually complete."
   - title: "Tasks roll forward, not away"
@@ -124,7 +128,9 @@ faq:
   - q: "Does Taskful Day sync between iPhone, iPad, and Mac?"
     a: "Yes. Taskful Day uses your personal iCloud account to keep tasks, plans, focus sessions, and journal entries in sync across iPhone, iPad, and Mac. Nothing is sent to a third-party server — sync runs through your own iCloud."
   - q: "Is Taskful Day good for ADHD?"
-    a: "Yes. Taskful Day was designed to reduce pressure. It supports realistic daily planning, guilt-free task rollover, multiple visual views, and gentle pacing — all without streaks or shame."
+    a: "Yes. Taskful Day was designed around the kind of friction that breaks ADHD planning: no streaks to lose, no red badges for missed days, realistic single-day scope instead of an infinite backlog, and Focus Orbit (a Pomodoro-style focus session timer) for the moments when getting started is the hardest part. Tasks roll forward automatically without guilt mechanics, so a missed day doesn't reset months of progress."
+  - q: "Does Taskful Day work on Apple Watch?"
+    a: "Not yet. Taskful Day runs natively on iPhone, iPad, and Mac with iCloud sync — there is no watchOS app at this time. If Apple Watch support is critical to your workflow, this is an honest reason to wait or look elsewhere."
   - q: "How is Taskful Day different from other to-do apps?"
     a: "Most to-do apps create infinite backlogs. Taskful Day focuses on one day at a time — with focus sessions, mood journaling, and smart insights that help you plan better over time. It's also one of the few calm-design planners that ships natively on iPhone, iPad, and Mac instead of as a web wrapper."
   - q: "Does Taskful Day have a focus timer?"
@@ -139,6 +145,10 @@ faq:
     a: "Yes. Taskful Day runs natively on iPhone, iPad, and Mac, with iCloud sync keeping your plan in sync across all three."
   - q: "What macOS version does Taskful Day support?"
     a: "Taskful Day runs as a native Mac app on modern macOS. Check the Mac App Store listing for the current minimum macOS version supported on your Mac."
+
+related_journal:
+  slug: planning-on-phone-finishing-on-desk
+  anchor: "Why Taskful Day had to be a native Mac app, not Catalyst"
 
 support:
   email: "lagerland.apps@proton.me"

@@ -8,6 +8,9 @@ layout: default
 {% assign operating_systems = page.platforms | join: ", " %}
 {% assign keywords = page.seo.keywords | join: ", " %}
 {% assign schema_price = page.schema_price | default: "0" %}
+{%- comment %} schema_high_price overrides the AggregateOffer max for freemium/subscription apps that have a paid IAP ceiling above the free download price. Defaults to schema_price so existing one-time and 0-priced apps are unaffected. {% endcomment -%}
+{% assign schema_high_price = page.schema_high_price | default: schema_price %}
+{% assign schema_offer_count = page.schema_offer_count | default: "2" %}
 
 {%- comment %} Map internal category slug to schema.org applicationCategory {% endcomment -%}
 {%- case page.category -%}
@@ -69,12 +72,25 @@ layout: default
     "url": {{ page.app_store_url | jsonify }},
     "priceCurrency": "EUR",
     "lowPrice": "0",
-    "highPrice": {{ schema_price | jsonify }},
-    "offerCount": "2",
+    "highPrice": {{ schema_high_price | jsonify }},
+    "offerCount": {{ schema_offer_count | jsonify }},
     "availability": "https://schema.org/InStock",
     "seller": { "@id": "{{ site.url }}/#organization" }
   }
-  {%- endif -%}
+  {%- endif -%}{%- if page.screenshots and page.screenshots.size > 0 -%},
+  "screenshot": [
+    {%- for s in page.screenshots -%}
+      {{ s | absolute_url | jsonify }}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]{%- endif -%}{%- if page.features and page.features.size > 0 -%},
+  "featureList": [
+    {%- for f in page.features -%}
+      {{ f.title | jsonify }}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]{%- endif -%}{%- if page.release.first_release -%},
+  "datePublished": {{ page.release.first_release | jsonify }}{%- endif -%}{%- if page.release.last_updated -%},
+  "dateModified": {{ page.release.last_updated | jsonify }}{%- endif -%}{%- if page.release.version -%},
+  "softwareVersion": {{ page.release.version | jsonify }}{%- endif -%}
 }
 </script>
 
@@ -227,6 +243,23 @@ layout: default
     </div>
   </section>
   {% endif %}
+
+  {% comment %} ===== RELATED JOURNAL POST (renders only if frontmatter sets related_journal) ===== {% endcomment %}
+  {%- if page.related_journal -%}
+    {%- assign related_post = site.journal | where: "slug", page.related_journal.slug | first -%}
+    {%- if related_post -%}
+  <section class="section reveal">
+    <a class="card card-journal" href="{{ related_post.url }}">
+      <span class="pill">From the journal</span>
+      <h3 class="card-journal-title" style="margin-top:var(--s-2);">{{ page.related_journal.anchor | default: related_post.title }}</h3>
+      {%- if related_post.lede -%}
+        <p class="card-text" style="margin-top:var(--s-2);">{{ related_post.lede | strip_html | truncate: 220 }}</p>
+      {%- endif -%}
+      <span class="card-journal-cta" style="margin-top:var(--s-3);">Read the post →</span>
+    </a>
+  </section>
+    {%- endif -%}
+  {%- endif -%}
 
   {% comment %} ===== FAQ (moved above privacy for snippet sourcing) ===== {% endcomment %}
   {% include faq.html app=page %}

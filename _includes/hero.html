@@ -9,6 +9,9 @@
     </div>
 
     <h1 class="h1">{{ include.app.hero.headline }}</h1>
+    {%- if include.app.hero.secondary -%}
+    <p class="hero-eyebrow">{{ include.app.hero.secondary }}</p>
+    {%- endif -%}
     <p class="lead">{{ include.app.hero.subheadline }}</p>
 
     <div class="actions">
@@ -55,8 +58,13 @@
       </div>
     {% else %}
       {% assign hero_img = include.app.screenshots[0] | default: include.app.icon %}
+      {%- assign hero_alt = include.app.hero.alt | default: include.app.hero.headline | default: include.app.tagline -%}
+      {%- if hero_alt == include.app.hero.headline or hero_alt == include.app.tagline -%}
+        {%- assign first_platform = include.app.platforms | first -%}
+        {%- assign hero_alt = include.app.name | append: " — " | append: hero_alt | append: " (" | append: first_platform | append: ")" -%}
+      {%- endif -%}
       <div class="hero-media">
-        <img class="hero-shot" src="{{ hero_img }}" alt="{{ include.app.name }} screenshot" loading="lazy">
+        <img class="hero-shot" src="{{ hero_img }}" alt="{{ hero_alt }}" loading="lazy">
       </div>
     {% endif %}
   </div>
