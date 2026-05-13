@@ -137,7 +137,7 @@ faq:
     a: "Generic sleep apps assume a regular schedule and compare you to a 9-to-5 benchmark. Other shift-work apps mostly score core night sleep and treat naps as a footnote. AfterShift is built around two ideas the others miss: (1) naps are first-class recovery and are factored into the Shift Recovery Score, and (2) caffeine timing is calibrated to your actual next shift, not a textbook 2 p.m. cutoff. AfterShift is also private by default — no account, no tracking, no health-data resale."
 
   - q: "What is the Shift Recovery Score, and how is it calculated?"
-    a: "The Shift Recovery Score is a single 0–100 number that estimates how recovered you are before your next shift. It combines four inputs: sleep quality (stage composition: Core, Deep, REM), sleep continuity (how fragmented the block was), nap contribution (recent naps weighted by length and timing), and proximity to your next shift (recovery decays as the next block approaches). The score is informational — it is not a medical assessment and is not a diagnosis of Shift Work Disorder."
+    a: "The Shift Recovery Score is a single 0–100 number that estimates how recovered you are before your next shift. It combines four inputs: sleep quality (stage composition: Core, Deep, REM), sleep continuity (how fragmented the block was), nap contribution (recent naps weighted by length and timing), and proximity to your next shift (recovery decays as the next block approaches). The score is informational — it is not a medical assessment and is not a diagnosis of Shift Work Disorder. See <a href=\"/apps/aftershift/methodology/\">the full Shift Recovery Score methodology page</a> for input weightings, decay model, and what the literature does and does not support."
 
   - q: "Why do naps count toward recovery in AfterShift?"
     a: "Because for shift workers, naps are not a failure mode — they are a recovery strategy. A 20-minute pre-shift nap reduces sleep inertia on a long block; a 90-minute mid-shift nap protects REM and Deep sleep when the main sleep window is short. Sleep researchers studying rotating and on-call work consistently treat naps as legitimate recovery, especially prophylactic naps before night shifts. AfterShift weights nap length and timing into the Shift Recovery Score so a well-placed nap actually moves the number."
@@ -175,6 +175,12 @@ faq:
   - q: "Should I take melatonin for shift work? Does AfterShift recommend supplements?"
     a: "AfterShift does not give supplement recommendations — that conversation belongs with a clinician or pharmacist. What we can fairly say from the literature: low-dose melatonin (0.3–3 mg) taken at the start of your intended sleep window is the use case sleep researchers most often discuss for shift workers, and it acts as a circadian phase-shifter as much as a sedative — meaning when you take it matters more than how much. Higher doses are not better and increase next-day grogginess in some people. Melatonin sold in the U.S. is unregulated and dose-labelled inconsistently. The U.S. <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\">NIOSH shift work module</a> and the AASM's clinical guidance both cover melatonin timing for shift workers in more depth — talk to your clinician before starting any supplement."
 
+  - q: "What are sleep latency and sleep efficiency, and does AfterShift track them?"
+    a: "Sleep latency is how long it takes you to fall asleep after lights-out; sleep efficiency is the percentage of time in bed actually spent asleep. Both are standard metrics in sleep science. For shift workers, both numbers usually get worse with daytime sleep — bright daylight, ambient noise, and a circadian system still saying \"this is the wrong time\" all push latency up and efficiency down. AfterShift reads both signals from Apple Health when available and surfaces them in the Trends view. They feed into the sleep-quality input of the Shift Recovery Score but are not the score itself — a chronically low sleep efficiency on daytime sleep is a structural problem with your sleep environment (light, noise, partner schedule) more than a number to chase."
+
+  - q: "What is social jet lag, and does it matter for shift workers?"
+    a: "Social jet lag is the term sleep researchers use for the gap between your biologically preferred sleep timing and the schedule your work or social life imposes — most people experience some on Monday mornings after a freer weekend. For shift workers it is the same mechanism but much larger: a permanent night-shift nurse spending days off with daytime-sleeping family is essentially flying across time zones every weekend, and the recovery cost is real. AfterShift does not separately label social jet lag, but the fragmentation and recovery-score patterns across rotation transitions are where you see it — the day after a forced realignment is almost always your weakest recovery day in the block, and the score reflects that. The MCTQ (Munich ChronoType Questionnaire) is the validated tool researchers use to quantify social jet lag if you want a formal read."
+
 support:
   email: "lagerland.apps@proton.me"
   url: "/apps/aftershift/support/"
@@ -194,6 +200,26 @@ related_journal:
 
 show_body: true
 about_heading: "Why AfterShift exists."
+
+# Studio identity (Organization-mode founder block — no personal name).
+founder:
+  overline: "Who built this"
+  heading: "An independent Apple studio building for the people the 9-to-5 sleep apps ignore."
+  entity_type: "Organization"
+  name: "Lagerland Apps"
+  role: "Independent Apple studio · Finland"
+  photo: "/assets/icons/lagerland-mark.png"
+  bio: "AfterShift exists because every consumer sleep app we tried assumed an 11 p.m. bedtime and a 7 a.m. alarm — and then quietly penalised the nurses, paramedics, pilots, and factory workers in our families and friend circles for not living that life. Naps were treated as failures. Daytime sleep was scored as a poor night. Caffeine cutoffs were fixed at 2 p.m. regardless of when the next shift actually started. The model of \"a person\" baked into those apps and the model of the person actually using them were not the same model. There is no team, no investors, no advertisers behind Lagerland — a small Apple studio in Finland, building the apps we wanted to use."
+  support_email: "lagerland.apps@proton.me"
+  response_time: "Support emails are answered personally, usually within a day."
+  signals:
+    - "Architecture is GDPR-first: local storage, optional iCloud sync, zero analytics SDKs"
+    - "Lagerland's App Store catalogue is built on the same data discipline — no advertising SDKs, no required accounts, no health-data resale"
+    - "Funded by honest paid software — no ads, no investor pressure, no growth-hacking"
+    - "Methodology is public and citable — see the Shift Recovery Score page for inputs, weights, and what the literature does and does not support"
+  external_link:
+    href: "/apps/aftershift/methodology/"
+    label: "Read the Shift Recovery Score methodology →"
 ---
 
 Most sleep apps were designed for a person who goes to bed at 11 p.m. and wakes up at 7 a.m. Walk through the onboarding flow of any major one — the questions assume a fixed bedtime, a steady wake time, and weekends free. Then look at how the people who keep hospitals, fire stations, factories, and cockpits running through the night are forced to use them. A nurse logs a five-hour daytime sleep after a string of night shifts; the app politely tells her she had a *poor night* and should go to bed earlier. The model of "a person" baked into the app and the model of the person actually using it are not the same model.
