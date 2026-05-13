@@ -1290,6 +1290,32 @@ blockquote {
 }
 
 /* ================================================================
+   VALUE MATH — honest competitive-price anchor above pricing.
+   Renders when frontmatter exposes `value_math:`. Single-line
+   conversion copy that frames the price comparison up front.
+   ================================================================ */
+.value-math {
+  display: block;
+  max-width: 70ch;
+  margin: 0 auto var(--s-4);
+  padding: var(--s-3) var(--s-4);
+  background: rgba(167,139,250,0.06);
+  border: 1px solid var(--border-accent);
+  border-left-width: 3px;
+  border-radius: var(--r-md);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+.value-math__label {
+  color: var(--accent-bright);
+  font-weight: 700;
+  margin-right: var(--s-2);
+}
+.value-math__body {
+  color: var(--text);
+}
+
+/* ================================================================
    RELEASE NOTES — collapsible "What changed recently" block under
    the plans grid. Demonstrates active development; Helpful Content
    sweeps reward freshness. Renders only when frontmatter exposes

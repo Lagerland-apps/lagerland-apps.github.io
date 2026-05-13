@@ -2,6 +2,20 @@
   <h2 class="h2">Pricing</h2>
 
   {%- comment %}
+    Optional value-math callout — renders when frontmatter exposes
+    `value_math:` (a one-line conversion anchor that compares this
+    app's price to the category's subscription median). Honest
+    competitive copy belongs above the pricing detail so the math
+    frames how the visitor reads the price.
+  {%- endcomment -%}
+  {%- if include.app.value_math -%}
+  <aside class="value-math" role="note">
+    <strong class="value-math__label">{{ include.app.value_math.label | default: "Why the price looks small:" }}</strong>
+    <span class="value-math__body">{{ include.app.value_math.body }}</span>
+  </aside>
+  {%- endif -%}
+
+  {%- comment %}
     If the app defines a `plans:` list in frontmatter, render a full
     Free / Pro / Lifetime comparison. Otherwise fall back to the
     original single-row pricing card.
@@ -35,6 +49,27 @@
   {%- if include.app.plans_footnote -%}
   <p class="plans-footnote">{{ include.app.plans_footnote }}</p>
   {%- endif -%}
+  {%- else -%}
+  <div class="pricing-card">
+    <div class="price-row">
+      <div>
+        <div class="card-title">{{ include.app.name }} pricing</div>
+        <div class="card-text">Transparent pricing on the App Store. Cancel anytime.</div>
+      </div>
+      <div class="price-pill">{{ include.app.price.value | default: "See App Store" }}</div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">View on the App Store</a>
+    </div>
+  </div>
+  {%- endif -%}
+
+  {%- comment %}
+    Release notes — shared across both pricing branches. Renders
+    a collapsible "What changed recently" list when frontmatter
+    exposes `release_notes:`. Demonstrates active development;
+    Helpful Content sweeps reward visible freshness signals.
+  {%- endcomment -%}
   {%- if include.app.release_notes and include.app.release_notes.size > 0 -%}
   <details class="release-notes">
     <summary class="release-notes__summary">What changed recently — {{ include.app.release_notes.size }} dated updates</summary>
@@ -48,21 +83,10 @@
     </ol>
   </details>
   {%- endif -%}
+
+  {%- if include.app.plans and include.app.plans.size > 0 -%}
   <div class="pricing-foot">
     <p class="pricing-note">Transparent pricing on the App Store. Cancel anytime. Free plan is free forever — no trial, no card.</p>
-    <div class="actions">
-      <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">View on the App Store</a>
-    </div>
-  </div>
-  {%- else -%}
-  <div class="pricing-card">
-    <div class="price-row">
-      <div>
-        <div class="card-title">{{ include.app.name }} pricing</div>
-        <div class="card-text">Transparent pricing on the App Store. Cancel anytime.</div>
-      </div>
-      <div class="price-pill">{{ include.app.price.value | default: "See App Store" }}</div>
-    </div>
     <div class="actions">
       <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">View on the App Store</a>
     </div>
