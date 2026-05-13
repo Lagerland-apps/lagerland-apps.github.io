@@ -255,7 +255,7 @@ faq:
   - q: "How does the receipt scanner work?"
     a: "Take a photo of your receipt and RightSplit reads the items and prices automatically using Apple's on-device Vision framework (the same OCR Apple uses for Live Text). No manual typing required — it detects line items, totals, and tax. The receipt image never leaves your phone."
   - q: "Which OCR engine does RightSplit use?"
-    a: "Apple's Vision framework — specifically VNRecognizeTextRequest — running entirely on-device. That means three things: receipts work offline; receipt images are never uploaded to a server; and the OCR quality is whatever Apple ships in the current iOS release, improving with every Apple update."
+    a: "Apple's <a href=\"https://developer.apple.com/documentation/vision\" rel=\"noopener\" target=\"_blank\">Vision framework</a> — specifically <a href=\"https://developer.apple.com/documentation/vision/vnrecognizetextrequest\" rel=\"noopener\" target=\"_blank\">VNRecognizeTextRequest</a> — running entirely on-device. That means three things: receipts work offline; receipt images are never uploaded to a server; and the OCR quality is whatever Apple ships in the current iOS release, improving with every Apple update."
   - q: "How accurate is the receipt scan?"
     a: "Accuracy depends on the receipt. Standard thermal restaurant receipts and clean printed bills read reliably. Faded receipts, very wrinkled paper, or photographs taken at a sharp angle can mis-read individual line items — in which case you can tap any item to correct the price or description before assigning. RightSplit always shows the parsed total alongside the original receipt photo so you can sanity-check it before splitting."
   - q: "Can I split shared dishes?"
@@ -277,11 +277,11 @@ faq:
   - q: "Does it handle tax-inclusive (VAT) receipts?"
     a: "Yes. RightSplit treats line items as their printed price. If your country's receipts include VAT in each line item (as is common in the EU and UK), the splits work the same way the receipt does — no extra math required. For tax-exclusive receipts (US standard), the tax line is distributed proportionally across line items."
   - q: "How many people can I split a bill between?"
-    a: "There's no hard cap. Realistically, the workflow is designed for 2–12 people — the screen real estate gets tight beyond that, but the math holds. For long-running ledgers across many months and many people, a group-based tool like Splitwise is a better fit."
+    a: "There's no hard cap. Realistically, the workflow is designed for 2–12 people — the screen real estate gets tight beyond that, but the math holds. For long-running ledgers across many months and many people, a group-based tool like <a href=\"/alternatives/splitwise/\">Splitwise</a> (or <a href=\"/alternatives/tricount/\">Tricount</a> for trip ledgers) is a better fit."
   - q: "Does RightSplit integrate with Apple Pay, Venmo, or PayPal?"
-    a: "Not directly. RightSplit calculates each person's total and shares it as text. From there, each person sends payment using whichever method they prefer — Apple Pay, Venmo, PayPal, Revolut, or cash. The deliberate choice: one app does the math; payment apps do payment. Nothing locked into a single ecosystem."
+    a: "Not directly. RightSplit calculates each person's total and shares it as text. From there, each person sends payment using whichever method they prefer — Apple Pay, Venmo, PayPal, Revolut, or cash. The deliberate choice: one app does the math; payment apps do payment. Nothing locked into a single ecosystem — see the full breakdown on the <a href=\"/alternatives/venmo-split/\">RightSplit vs Venmo Split comparison</a>."
   - q: "How is RightSplit different from Splitwise?"
-    a: "Splitwise is built for long-running group ledgers — roommates, ongoing trip costs, debts that accumulate over months. RightSplit is built for the single-bill workflow — one receipt, scanned, split, settled, done. No accounts to create, no friends to add, no balances to maintain. If you want both, both apps can live on the same phone."
+    a: "<a href=\"/alternatives/splitwise/\">Splitwise</a> is built for long-running group ledgers — roommates, ongoing trip costs, debts that accumulate over months. RightSplit is built for the single-bill workflow — one receipt, scanned, split, settled, done. No accounts to create, no friends to add, no balances to maintain. If you want both, both apps can live on the same phone. See the <a href=\"/alternatives/splitwise/\">full Splitwise comparison</a>, or compare against <a href=\"/alternatives/tab/\">Tab</a>, <a href=\"/alternatives/tricount/\">Tricount</a>, <a href=\"/alternatives/settle-up/\">Settle Up</a>, and <a href=\"/alternatives/venmo-split/\">Venmo Split</a>."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -290,6 +290,10 @@ support:
 release:
   first_release: "2026-03-01"
   last_updated: "2026-03-15"
+
+related_journal:
+  slug: "splitting-a-valentines-dinner-without-making-it-weird"
+  anchor: "How to split a Valentine's dinner without making it weird"
 
 ratings:
   value: "5.0"
