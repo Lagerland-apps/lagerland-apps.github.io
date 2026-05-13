@@ -1,0 +1,123 @@
+---
+layout: default
+permalink: /alternatives/applaunchpad/
+title: "AppLaunchpad Alternative"
+quick_answer: "ScreenFlow Studio is a native Mac alternative to AppLaunchpad's web-based App Store screenshot generator. Both ship templates and localisation tooling — but ScreenFlow Studio renders 3D device frames with Apple's Metal framework locally, calls AI translation against your own API key, uploads directly to App Store Connect, and is a one-time $22.99 purchase rather than a subscription. Your pre-release screenshots never leave your Mac."
+seo:
+  title: "AppLaunchpad Alternative — Native Mac App Store Screenshots"
+  description: "An AppLaunchpad alternative for indie Mac developers. Real 3D Metal-rendered device frames, AI translation, direct ASC upload. $22.99 once."
+  keywords:
+    - AppLaunchpad alternative
+    - alternative to AppLaunchpad
+    - ScreenFlow Studio vs AppLaunchpad
+    - native Mac App Store screenshot tool
+    - 3D device frame screenshot Mac
+    - App Store Connect upload Mac
+    - one-time App Store screenshot tool
+    - private screenshot maker Mac
+    - Metal-rendered App Store screenshots
+    - App Store screenshot localization Mac
+---
+
+{%- assign app = site.apps | where: "slug", "screenflow-studio" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/alternatives/applaunchpad/#webpage",
+  "url": "{{ site.url }}/alternatives/applaunchpad/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Alternatives", "item": "{{ site.url }}/alternatives/" },
+      { "@type": "ListItem", "position": 3, "name": "AppLaunchpad alternative", "item": "{{ site.url }}/alternatives/applaunchpad/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is the best AppLaunchpad alternative?", "acceptedAnswer": { "@type": "Answer", "text": "ScreenFlow Studio is the closest match if you want a native Mac app instead of a browser tool. It targets the same workflow — device frames, localisation, App Store Connect submission — but renders locally with Apple's Metal framework, calls translation APIs against your own key, and is one-time $22.99 with Family Sharing." } },
+    { "@type": "Question", "name": "Does ScreenFlow Studio have a free tier like AppLaunchpad?", "acceptedAnswer": { "@type": "Answer", "text": "No — ScreenFlow Studio is a one-time $22.99 purchase with no free tier and no recurring fee. The cost is the trade for not running on the vendor's render farm. If you only ship one or two screenshot sets a year, AppLaunchpad's free tier may be the better fit. If you ship localised screenshots regularly, $22.99 once is meaningfully cheaper than any annual subscription tier." } },
+    { "@type": "Question", "name": "Why is native Mac better for App Store screenshots?", "acceptedAnswer": { "@type": "Answer", "text": "Three reasons. First, pre-release screenshots don't transit a third-party server. Second, Metal rendering is deterministic and GPU-accelerated — re-rendering tomorrow produces byte-for-byte identical output. Third, the cost structure of a Mac app supports a one-time price; the cost structure of a web SaaS does not." } },
+    { "@type": "Question", "name": "Does ScreenFlow Studio have templates like AppLaunchpad?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — ScreenFlow Studio ships with professional templates and supports building custom layouts from scratch with percentage-based positioning. The template library is smaller than AppLaunchpad's web library today, but every template is fully editable and the percentage-based layout engine means one template scales across iPhone, iPad, Mac, Watch, and visionOS sizes automatically." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">App Store screenshot tooling · Native Mac · One-time</p>
+    <h1 class="h1">Looking for an<br><span class="gradient-text">AppLaunchpad alternative?</span></h1>
+    <p class="lead">AppLaunchpad is a well-established web tool for App Store screenshot generation — a generous template library and a serviceable workflow. ScreenFlow Studio is the same idea in a native Mac app: real 3D Metal-rendered device frames, AI translation against your own API key, direct upload to App Store Connect, all happening locally. One-time $22.99 instead of a subscription.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/apps/screenflow-studio/">See ScreenFlow Studio</a>
+      <a class="btn btn-secondary" href="#compare">Compare</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section id="compare" class="section reveal">
+  <h2 class="h2">How does ScreenFlow Studio compare to AppLaunchpad?</h2>
+  <p class="lead">Different architectures, different audiences. Here's an honest read.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Architecture</div><div class="card-text"><strong>ScreenFlow Studio:</strong> Native macOS app. Sandboxed, notarised, Metal-rendered. Project files stay on your Mac.<br><br><strong>AppLaunchpad:</strong> Web-based SaaS. Templates, rendering, and project storage are all on the vendor's infrastructure.</div></div>
+    <div class="card"><div class="card-title">Pricing</div><div class="card-text"><strong>ScreenFlow Studio:</strong> $22.99 once. Family Sharing included.<br><br><strong>AppLaunchpad:</strong> Freemium with paid tiers; check the current pricing page. Recurring subscription for the features most pros need.</div></div>
+    <div class="card"><div class="card-title">Templates</div><div class="card-text"><strong>ScreenFlow Studio:</strong> Professional template set plus a percentage-based layout engine that scales one design across every device size.<br><br><strong>AppLaunchpad:</strong> Larger template library covering a wider range of visual styles — the strongest part of the product.</div></div>
+    <div class="card"><div class="card-title">Pre-release data handling</div><div class="card-text"><strong>ScreenFlow Studio:</strong> Pre-release screenshots stay on your Mac. Useful for NDA / client work.<br><br><strong>AppLaunchpad:</strong> Files transit the vendor's servers. Reasonable for most public app updates; matters more for embargoed launches.</div></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">When to pick ScreenFlow Studio</h2>
+  <ul class="bullets">
+    <li>You'd rather pay once than carry a recurring screenshot-tool line item on your books</li>
+    <li>You handle pre-release or client work where pre-launch screenshots shouldn't pass through a SaaS server</li>
+    <li>You want deterministic Metal rendering — same project, same render, every time</li>
+    <li>You prefer a native macOS workflow (Keychain auth for ASC, sandboxed app, real menu bar)</li>
+    <li>You're comfortable with a smaller initial template library in exchange for a percentage-based layout engine</li>
+  </ul>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">When to keep AppLaunchpad instead</h2>
+  <ul class="bullets">
+    <li>The web template library is the feature that sells the product for you</li>
+    <li>You work primarily from a browser and don't run a Mac as your screenshot workstation</li>
+    <li>You're already deeply invested in AppLaunchpad projects and don't want to rebuild</li>
+    <li>You ship screenshot updates so rarely that the free tier covers you</li>
+  </ul>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">FAQ</h2>
+  <div class="faq">
+    <details class="faq-item"><summary>What is the best AppLaunchpad alternative?</summary><div class="faq-a">ScreenFlow Studio is the closest match for indie devs who want a native Mac app. Same workflow — device frames, localisation, ASC submission — local rendering, one-time $22.99.</div></details>
+    <details class="faq-item"><summary>Does ScreenFlow Studio have a free tier like AppLaunchpad?</summary><div class="faq-a">No — ScreenFlow Studio is $22.99 once, no free tier. If you ship rarely, AppLaunchpad's free tier may suit you better. If you ship localised screenshots regularly, $22.99 once beats any annual subscription tier on cost.</div></details>
+    <details class="faq-item"><summary>Why is native Mac better for App Store screenshots?</summary><div class="faq-a">Pre-release files don't transit a third-party server; Metal rendering is deterministic and fast; and the cost structure of a native app supports a one-time price.</div></details>
+    <details class="faq-item"><summary>Does ScreenFlow Studio have templates like AppLaunchpad?</summary><div class="faq-a">Yes — professional templates plus custom layouts with percentage-based positioning. The template library is smaller; the layout engine is the trade — one design scales across every Apple device size.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Ready?</p>
+  <h2 class="h2">Try ScreenFlow Studio today.</h2>
+  <p class="lead">Native Mac. Metal rendering. Direct App Store Connect upload. $22.99, once.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{{ app.app_store_url }}" rel="noopener">Get ScreenFlow Studio</a>
+    <a class="btn btn-secondary" href="/apps/screenflow-studio/">See full page</a>
+  </div>
+</section>

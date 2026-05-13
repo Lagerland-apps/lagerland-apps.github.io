@@ -167,6 +167,10 @@ comparison_table:
       values: ["Yes — 10 interest categories, preference-driven, on-device like/dislike", "No — random only", "Yes — 'Session For You' (session-scoped personalisation)", "Limited — Explore feed"]
     - feature: "Home Screen / Lock Screen / StandBy widgets"
       values: ["Yes — language-allowlist enforced in CI", "No", "No", "Limited"]
+    - feature: "Multi-language widget (shows your chosen Wikipedia edition)"
+      values: ["Yes — widget honors your chosen Wikipedia edition (any of 33)", "No — English-only", "No", "No — Wikipedia's design team has wanted per-widget language since 2021"]
+    - feature: "Picture of the Day support"
+      values: ["No — out of scope (use Wikipedia's official app)", "No", "No", "Yes — in Explore feed and widget"]
     - feature: "Offline saved articles + folders"
       values: ["Yes — folders organise the reading list", "Bookmarks only", "Bookmarks only", "Yes — reading list"]
     - feature: "Behavioral tracking / engagement-optimised algorithm"
