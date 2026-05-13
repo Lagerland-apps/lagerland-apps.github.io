@@ -1,0 +1,273 @@
+# Per-app transparency data — sourced from each app's PrivacyInfo.xcprivacy
+# (where committed) and project structure verified against the GitHub repo on
+# the date shown. Fields use Apple's terms where possible:
+#   - tracking_declared      : value of NSPrivacyTracking
+#   - tracking_domains       : count from NSPrivacyTrackingDomains array
+#   - collected_data         : NSPrivacyCollectedDataTypes (Apple's category names)
+#   - required_reason_apis   : NSPrivacyAccessedAPITypes (Apple's category names)
+#   - third_party_sdks       : declared SPM/Cocoapods/Carthage dependencies
+#   - manifest_source        : "source" = read from PrivacyInfo.xcprivacy in repo;
+#                              "submission" = ships in the App Store binary; verify on
+#                              the App Store Privacy Nutrition Label
+#   - last_verified          : ISO-8601 date the row was last cross-checked
+#
+# Edit the manifest, push, and update this file. Treat it as the canonical proof
+# layer the homepage transparency table and /transparency/ page both render from.
+
+last_audit: "2026-05-13"
+
+apps:
+  - slug: aftershift
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None — HealthKit and EventKit only (local frameworks). Optional iCloud sync uses your own iCloud."
+    data_leaves_device: "Your iCloud only, if enabled."
+    analytics: "None."
+    collected_data:
+      - "Health & Fitness (purpose: app functionality, not linked, not used for tracking)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1 — read/write app-specific user defaults)"
+    permissions:
+      - "Calendar (read-only) — detect work shifts"
+      - "HealthKit (read sleep) — calculate recovery between shifts"
+    notes: "Calendar and Health data never leave the device."
+
+  - slug: allpaid
+    manifest_source: submission
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None for core bill tracking. Optional iCloud sync uses your own iCloud."
+    data_leaves_device: "Your iCloud only, if enabled."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis: []
+    permissions:
+      - "Local notifications — bill due-date reminders"
+    notes: "Bill, subscription, and due-date data stays on-device by default."
+
+  - slug: appmeta
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: "Your own Apple ID with App Store Connect access. Credentials are stored in macOS Keychain — never transmitted to Lagerland."
+    network_calls: "Apple App Store Connect API only. No other endpoints."
+    data_leaves_device: "Only to Apple's App Store Connect API, with your own credentials."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions: []
+    notes: "Native Mac client for App Store Connect. Edits happen locally, then submit via Apple's API."
+
+  - slug: appmeta-pulse
+    manifest_source: submission
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: "Your own Apple ID with App Store Connect access. Read-only."
+    network_calls: "Apple App Store Connect API only."
+    data_leaves_device: "Only to Apple's App Store Connect API, with your own credentials."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis: []
+    permissions: []
+    notes: "Read-only dashboard. Cannot modify your App Store Connect data."
+
+  - slug: chessful
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None. Stockfish 18 engine runs locally on-device."
+    data_leaves_device: "No."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions: []
+    notes: "Game analysis is performed by the locally bundled engine, not a cloud service."
+
+  - slug: driftlines
+    manifest_source: submission
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None. Daily prose is delivered from content bundled in the app and updated via App Store updates."
+    data_leaves_device: "No."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis: []
+    permissions: []
+    notes: "Reading-only app. No feeds, no telemetry, no notifications."
+
+  - slug: gymlogger-x
+    manifest_source: submission
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None for core logging. Optional iCloud sync uses your own iCloud."
+    data_leaves_device: "Your iCloud only, if enabled."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis: []
+    permissions:
+      - "Apple Watch connectivity — log sets from the wrist"
+    notes: "1,500+ exercises and programs ship inside the app. Nothing is fetched from a server."
+
+  - slug: liftlog
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None for core logging. Optional iCloud sync uses your own iCloud."
+    data_leaves_device: "Your iCloud only, if enabled."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "File timestamp (DDA9.1)"
+      - "Disk space (E174.1)"
+      - "System boot time (35F9.1)"
+    permissions:
+      - "Haptics — confirmed set logging"
+    notes: "Required Reason APIs are all standard app-functionality categories — no fingerprinting use."
+
+  - slug: mediakit
+    manifest_source: submission
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 1
+    third_party_sdks_list:
+      - name: "Unrar.swift"
+        url: "https://github.com/mtgto/Unrar.swift"
+        purpose: "Open-source read-only RAR archive support. No network, no tracking."
+    account_required: false
+    network_calls: "None. 100% on-device file conversion."
+    data_leaves_device: "No. Files never leave your Mac."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis: []
+    permissions:
+      - "User-Selected File — only when you drag a file in"
+    notes: "133 native tools for video, audio, image, PDF, and archive work — all processed locally."
+
+  - slug: observa
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None. All correlation analysis runs on-device."
+    data_leaves_device: "No."
+    analytics: "None."
+    collected_data:
+      - "Health (purpose: app functionality, not linked, not used for tracking)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions:
+      - "HealthKit (read sleep, HRV, ECG, activity) — generate insights"
+      - "HealthKit (write entries) — save insights back to Apple Health"
+    notes: "On-device pattern detection. Apple Health data never leaves your device."
+
+  - slug: rightsplit
+    manifest_source: submission
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None for receipt scanning and splitting. Sharing the result uses the iOS share sheet (Messages, WhatsApp, etc.) — those apps' own networks, not ours."
+    data_leaves_device: "Only via the iOS share sheet, when you choose."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis: []
+    permissions:
+      - "Camera (when scanning a receipt)"
+    notes: "Receipt OCR uses on-device Vision framework. No image leaves the device."
+
+  - slug: screenflow-studio
+    manifest_source: submission
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: "Optional Apple ID with App Store Connect access — only if you choose to upload screenshots."
+    network_calls: "Apple App Store Connect API (only if you upload). Optional AI translation (only when you opt in and request a translation)."
+    data_leaves_device: "Only what you choose to upload (screenshots to App Store Connect, text to a translation service when you request it)."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis: []
+    permissions:
+      - "User-Selected File — open and save screenshots"
+    notes: "Rendering uses Apple's Metal locally. Translation and upload are explicit user actions."
+
+  - slug: soon
+    manifest_source: submission
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "Apple WeatherKit (only if a countdown has weather enabled). Apple MapKit for location pickers."
+    data_leaves_device: "Only the coarse location of a chosen countdown destination, to Apple's WeatherKit."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis: []
+    permissions:
+      - "Calendar (read-only) — turn events into countdowns"
+      - "Location (when in use) — weather for selected countdown"
+    notes: "Weather and maps are Apple-provided services; nothing routes through Lagerland servers."
+
+  - slug: taskful-day
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None. Optional iCloud sync uses your own iCloud."
+    data_leaves_device: "Your iCloud only, if enabled."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "File timestamp (C617.1)"
+    permissions:
+      - "Microphone (only when you use voice capture) — speech-to-text runs on-device via Apple's SpeechFramework"
+    notes: "Universal Purchase across iPhone, iPad, and Mac. Voice capture is processed on-device."
+
+  - slug: wanderwiki
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "Wikipedia public API only (en.wikipedia.org and other language editions, depending on user selection). No account, no API key, no headers identifying the user."
+    data_leaves_device: "Article requests to Wikipedia, the same as a browser visiting the site."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "File timestamp (C617.1)"
+    permissions: []
+    notes: "Wikipedia client. Articles are fetched from Wikipedia's public API just like a web visit."

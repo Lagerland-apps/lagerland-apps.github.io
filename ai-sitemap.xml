@@ -33,6 +33,12 @@ sitemap: false
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>{{ site.url }}/transparency/</loc>
+    <lastmod>{{ site.data.transparency.last_audit | default: site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>{{ site.url }}/for/shift-workers/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
