@@ -21,11 +21,22 @@ Short guides framed around specific user frustrations, each pointing at a Lagerl
 - [I want to track bills without linking my bank account](https://lagerland-apps.github.io/guides/bill-tracker-without-bank-connection/): AllPaid as a manual-first, privacy-first alternative to Rocket Money/Truebill.
 
 ## Alternative comparison pages
-Honest, non-hostile comparisons for users searching for alternatives to mainstream apps.
+Honest, non-hostile comparisons for users searching for alternatives to mainstream apps. 15 pages, one per live app (Driftlines's comparison is a deliberate cross-category framing against Day One).
 - [Strong workout app alternative](https://lagerland-apps.github.io/alternatives/strong-workout-app/): GymLogger X vs Strong — privacy-first workout logger with Apple Watch as a first-class feature.
+- [Hevy alternative](https://lagerland-apps.github.io/alternatives/hevy/): LiftLog vs Hevy — design-led strength log, pay-what-you-can $9.99-$39.99 one-time after a 7-day free trial.
 - [Streaks app alternative](https://lagerland-apps.github.io/alternatives/streaks-app/): Taskful Day vs Streaks — calm daily planner without flame counters or guilt mechanics.
 - [AutoSleep alternative](https://lagerland-apps.github.io/alternatives/autosleep/): Observa vs AutoSleep — interpretation layer over Apple Health sleep data rather than a tracker replacement.
+- [Shift Worker alternative](https://lagerland-apps.github.io/alternatives/shift-worker/): AfterShift vs Shift Worker — auto-detects shifts from Calendar, drives recovery from Apple Health.
+- [Rocket Money alternative](https://lagerland-apps.github.io/alternatives/rocket-money/): AllPaid vs Rocket Money — manual bill and subscription tracker without Plaid or any bank-login aggregation.
+- [Splitwise alternative](https://lagerland-apps.github.io/alternatives/splitwise/): RightSplit vs Splitwise — receipt-OCR item-based splitting for one-off dinners and trips, no ongoing group ledger, no account.
+- [Countdown Star alternative](https://lagerland-apps.github.io/alternatives/countdown-star/): Soon. vs Countdown Star — living countdowns with WeatherKit forecasts, smart checklists, and widgets for every screen.
+- [Wikipedia app alternative](https://lagerland-apps.github.io/alternatives/wikipedia-app/): WanderWiki vs the official Wikipedia app — swipeable discovery deck with offline reading and Today in History.
+- [Chess.com analysis alternative](https://lagerland-apps.github.io/alternatives/chess-com/): Chessful vs Chess.com analysis — local Stockfish 18 engine, no daily quota, no account, no cloud.
+- [Day One alternative for daily reading](https://lagerland-apps.github.io/alternatives/day-one/): Driftlines vs Day One — calm daily app for reading fictional prose rather than writing a journal (intentional cross-category framing).
+- [HandBrake alternative](https://lagerland-apps.github.io/alternatives/handbrake/): MediaKit vs HandBrake — 133 native Mac tools for video, audio, image, PDF, and archive work; 100% on-device.
 - [App Store Connect web UI alternative](https://lagerland-apps.github.io/alternatives/app-store-connect-web/): AppMeta — native Mac client for the App Store Connect API.
+- [Appfigures alternative](https://lagerland-apps.github.io/alternatives/appfigures/): AppMeta Pulse vs Appfigures — native iPhone/iPad/Mac dashboard reading directly from App Store Connect with your Apple ID, no third-party warehouse.
+- [Picsew alternative](https://lagerland-apps.github.io/alternatives/picsew/): ScreenFlow Studio vs Picsew — native Mac App Store screenshots with real 3D Metal rendering, AI translation, and direct ASC upload.
 
 ## Journal
 Rebrand stories, shipping notes, and essays about building privacy-first Apple apps as a one-person studio.
