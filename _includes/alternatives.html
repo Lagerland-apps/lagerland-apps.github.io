@@ -11,15 +11,70 @@
 {% endcomment -%}
 
 {%- if include.app.alternatives_to and include.app.alternatives_to.size > 0 -%}
+
+{%- comment %} Map competitor display name (downcased) → /alternatives/<slug>/ page when a comparison exists. Keep this in sync with files under /alternatives/. {% endcomment -%}
+{%- assign alt_pairs = "strong:strong-workout-app,hevy:hevy,caliber:caliber,ladder:ladder,heavyset:heavyset,streaks:streaks-app,autosleep:autosleep,splitwise:splitwise,rocket money:rocket-money,chess.com:chess-com,handbrake:handbrake,appfigures:appfigures,picsew:picsew,shift worker:shift-worker,countdown star:countdown-star,day one:day-one,wikipedia:wikipedia-app,app store connect:app-store-connect-web,offshift:offshift" | split: "," -%}
+
+{%- comment %} Map this app's slug → its single canonical full-comparison destination {% endcomment -%}
+{%- assign comparison_slugs = "gymlogger-x:strong-workout-app,taskful-day:streaks-app,observa:autosleep,appmeta:app-store-connect-web,aftershift:offshift" | split: "," -%}
+{%- assign comparison_url = "" -%}
+{%- for pair in comparison_slugs -%}
+  {%- assign parts = pair | split: ":" -%}
+  {%- if parts[0] == include.app.slug -%}
+    {%- assign comparison_url = parts[1] -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment %}
+  When an app already ships a `comparison_table:` (real, structured feature
+  deltas), the original feature-card grid here is visually redundant and
+  reads as thin programmatic content. Auto-collapse it into a compact
+  "More comparisons" link strip so the /alternatives/<slug>/ pages still
+  receive their internal links without duplicating substance.
+{% endcomment -%}
+{%- if include.app.comparison_table -%}
+
+<section class="section reveal" aria-labelledby="alt-compact-{{ include.app.slug }}">
+  <div class="section-center">
+    <p class="overline">More comparisons</p>
+    <h2 class="h2" id="alt-compact-{{ include.app.slug }}">{{ include.app.name }} vs the alternatives</h2>
+    <p class="lead">Read a dedicated side-by-side for each competitor — same feature deltas as the table above, expanded with screenshots and verdicts.</p>
+  </div>
+  <ul class="alt-strip">
+    {%- for competitor in include.app.alternatives_to -%}
+      {%- assign competitor_key = competitor | downcase -%}
+      {%- assign competitor_slug = "" -%}
+      {%- for pair in alt_pairs -%}
+        {%- assign parts = pair | split: ":" -%}
+        {%- if parts[0] == competitor_key -%}
+          {%- assign competitor_slug = parts[1] -%}
+        {%- endif -%}
+      {%- endfor -%}
+      <li>
+        {%- if competitor_slug != "" -%}
+          <a href="/alternatives/{{ competitor_slug }}/" aria-label="{{ include.app.name }} vs {{ competitor }} — full comparison">{{ include.app.name }} vs {{ competitor }} →</a>
+        {%- else -%}
+          <span class="alt-strip__pending">{{ include.app.name }} vs {{ competitor }} <em>(comparison coming)</em></span>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+  <div class="actions" style="margin-top:var(--s-4);justify-content:center;">
+    {%- if comparison_url != "" -%}
+      <a class="btn btn-secondary" href="/alternatives/{{ comparison_url }}/">See the full comparison</a>
+    {%- endif -%}
+    <a class="btn btn-secondary" href="/alternatives/">All alternative comparisons</a>
+  </div>
+</section>
+
+{%- else -%}
+
 <section class="section reveal">
   <div class="section-center">
     <p class="overline">Branded comparisons</p>
     <h2 class="h2">A privacy-first alternative to…</h2>
     <p class="lead">{{ include.app.name }} is built as a calmer, privacy-first alternative to several popular apps in the {{ include.app.category | replace: '-', ' ' }} space. No account, no tracking, no advertising — designed for Apple users who want to opt out of the data economy.</p>
   </div>
-
-  {%- comment %} Map competitor display name (downcased) → /alternatives/<slug>/ page when a comparison exists. Keep this in sync with files under /alternatives/. {% endcomment -%}
-  {%- assign alt_pairs = "strong:strong-workout-app,hevy:hevy,caliber:caliber,ladder:ladder,heavyset:heavyset,streaks:streaks-app,autosleep:autosleep,splitwise:splitwise,rocket money:rocket-money,chess.com:chess-com,handbrake:handbrake,appfigures:appfigures,picsew:picsew,shift worker:shift-worker,countdown star:countdown-star,day one:day-one,wikipedia:wikipedia-app,app store connect:app-store-connect-web,offshift:offshift" | split: "," -%}
 
   <div class="grid grid-4 stagger">
     {%- for competitor in include.app.alternatives_to -%}
@@ -45,16 +100,6 @@
     {%- endfor -%}
   </div>
 
-  {%- comment %} Link to dedicated comparison pages if they exist for this app's slug {% endcomment -%}
-  {%- assign comparison_slugs = "gymlogger-x:strong-workout-app,taskful-day:streaks-app,observa:autosleep,appmeta:app-store-connect-web,aftershift:offshift" | split: "," -%}
-  {%- assign comparison_url = "" -%}
-  {%- for pair in comparison_slugs -%}
-    {%- assign parts = pair | split: ":" -%}
-    {%- if parts[0] == include.app.slug -%}
-      {%- assign comparison_url = parts[1] -%}
-    {%- endif -%}
-  {%- endfor -%}
-
   {%- if comparison_url != "" -%}
     <div class="actions" style="margin-top:var(--s-4);justify-content:center;">
       <a class="btn btn-secondary" href="/alternatives/{{ comparison_url }}/">See the full comparison</a>
@@ -66,4 +111,6 @@
     </div>
   {%- endif -%}
 </section>
+
+{%- endif -%}
 {%- endif -%}

@@ -50,6 +50,17 @@
         <span class="pill">{{ include.app.price.value }}</span>
       {% endif %}
     </div>
+
+    {%- comment %} Freshness signal — Google's Helpful Content sweeps weight
+      "last updated" as a quality marker, especially for software pages.
+      Mirror the schema `dateModified` value into a visible line so
+      humans and crawlers see the same answer. {% endcomment -%}
+    {%- if include.app.release.last_updated -%}
+    <p class="hero-updated">
+      <time datetime="{{ include.app.release.last_updated }}">Last updated {{ include.app.release.last_updated | date: "%-d %B %Y" }}</time>
+      {%- if include.app.release.version %} · v{{ include.app.release.version }}{%- endif -%}
+    </p>
+    {%- endif -%}
   </div>
 
   <div class="hero-right reveal-scale">

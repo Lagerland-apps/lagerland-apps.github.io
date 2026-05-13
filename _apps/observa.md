@@ -220,6 +220,10 @@ faq:
   - q: "How is Observa an alternative to AutoSleep, Athlytic, or Bevel?"
     a: "AutoSleep, Athlytic, and Bevel give you scores and charts — heart-rate dip during sleep, recovery percentages, Body Charge style numbers, sleep stage breakdowns. Observa gives you sentences that say what's actually moving those numbers for you specifically: which workouts shift your acute:chronic training-load ratio, which late-night habits cost you deep sleep, which weekly patterns predict next-morning HRV. And unlike Bevel and Athlytic, Observa runs 100% on-device with no account and no server."
 
+related_journal:
+  slug: what-14-days-of-apple-health-can-reveal
+  anchor: "What 14 days of Apple Health data is enough to reveal — and what isn't"
+
 support:
   email: "lagerland.apps@proton.me"
   url: "/apps/observa/support/"

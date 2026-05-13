@@ -265,7 +265,7 @@ faq:
   - q: "What happens to my events if I switch iPhones?"
     a: "Restore via iCloud Backup. Soon. stores events locally on the device, but the on-device data is included in your standard iPhone iCloud Backup — so when you set up a new iPhone from that backup, your countdowns, photos, and Plan Mode progress come with it. No Soon. account exists, so there's no separate login to recover."
   - q: "Does Soon. support Apple Watch, iPad, or Mac?"
-    a: "Soon. is iPhone-only today. Apple Watch, iPad, and Mac aren't supported in the current release. A Universal Purchase across Apple platforms is a planned future direction but isn't shipping yet — if you need cross-device sync now, Apple's own Calendar app integrates with Soon. via the calendar import feature."
+    a: "Soon. is iPhone-only today. Apple Watch is targeted for 2026 Q4 (Smart Stack complication), iPad and macOS for 2027 H1 (Universal Purchase — Premium and Lifetime carry across). Dates are targets, not commitments; see the on-page roadmap for the current status. If you need cross-device sync now, Apple's own Calendar app integrates with Soon. via the calendar import feature."
   - q: "Can I count up from a past date too?"
     a: "Yes. Any event whose date has passed automatically flips into a memory — Soon. counts the days, weeks, or years since it happened and brings it back on every anniversary. The same widgets that show a future countdown will show a past-event count-up after the date passes."
   - q: "How do event notifications work?"
@@ -274,6 +274,38 @@ faq:
     a: "Apple's WeatherKit — the same data source iOS Weather uses. Soon. sends the destination's place name or approximate coordinates (never your precise location) and shows the forecast from roughly T-10 onward, when a 10-day forecast is meaningful. Weather is Premium-only."
   - q: "Can I share an event with someone else?"
     a: "Not within Soon. itself — events live on your iPhone only, by design. You can share a screenshot of any countdown using the standard iOS share sheet, but real-time collaborative countdowns are intentionally out of scope. If two people want the same wedding countdown, each installs Soon. and creates the event independently."
+
+# Roadmap — addresses the most common product-gap questions
+# (Apple Watch / iPad / Mac, shared events) on-page so the buying
+# objection has an answer near the pricing CTA rather than buried
+# in the FAQ. Dates are intent-aligned but non-binding — language
+# says "targeted" to keep honest under slippage.
+roadmap:
+  overline: "Roadmap"
+  heading: "What's shipped, what's next."
+  intro: "Soon. is iPhone-only today. Other Apple platforms are on the roadmap. Dates are targets, not commitments — slips happen and you'll hear about them here first."
+  items:
+    - when: "Shipped"
+      title: "iPhone — countdown, Plan Mode, widgets, weather"
+      detail: "Live today: full-bleed photo countdowns, Plan Mode templates for trips, weddings, birthdays, pregnancy, graduations, and moves, Home Screen / Lock Screen / StandBy widgets, iOS Calendar sync, memories that return on anniversaries, 39 languages."
+      status: "shipped"
+    - when: "Shipped"
+      title: "Localisation — 39 languages incl. RTL & CJK"
+      detail: "Right-to-left layout for Arabic and Hebrew. Native localisation for Japanese, Chinese, Korean, and every major European language."
+      status: "shipped"
+    - when: "Targeted 2026 Q4"
+      title: "Apple Watch — Smart Stack complication"
+      detail: "A live countdown complication for the next-up event and a Smart Stack widget that surfaces the right countdown at the right time of day. Sync via standard iOS pairing — no separate account."
+    - when: "Targeted 2027 H1"
+      title: "iPad — Universal Purchase"
+      detail: "iPad-native layout with the same Plan Mode engine, scaled widgets, and shared event store via iCloud Backup. Existing Premium / Lifetime purchases carry across as a Universal Purchase."
+    - when: "Targeted 2027 H1"
+      title: "macOS Catalyst — desk-side countdown"
+      detail: "Mac version for desk-side planning of weddings, trips, and major events. Read/write parity with iPhone; same Universal Purchase."
+    - when: "Under consideration"
+      title: "Shared events via iCloud (opt-in)"
+      detail: "Two people, one wedding countdown. Currently out of scope to keep the on-device-only privacy model intact — exploring an opt-in iCloud Shared CloudKit container that keeps data inside Apple's end-to-end-encrypted pipe and out of any Lagerland-operated server."
+  disclaimer: "Roadmap last reviewed 2026-05-13. Targeted dates can slip; shipped items are live on the App Store."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -293,7 +325,7 @@ ratings:
 # templates, comparison, and privacy sections — SearchPilot data:
 # in-body contextual links return 5–25% organic uplift.
 show_body: true
-about_heading: "What Soon. is, in plain words."
+about_heading: "What Soon. does — countdown app, planner, widgets, weather"
 ---
 Soon. is a [countdown and planner app for iPhone](#features) — the complete rebuild of TheWait — that turns important moments into living countdowns. Trips, weddings, birthdays, anniversaries, graduations, due dates, and personal milestones each render full-bleed with a photo background you pin yourself, live weather for the destination, and daily notes that shift as the date approaches.
 

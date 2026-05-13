@@ -565,6 +565,53 @@ layout: default
   {% comment %} ===== FAQ (moved above privacy for snippet sourcing) ===== {% endcomment %}
   {% include faq.html app=page %}
 
+  {% comment %}
+    ===== ROADMAP =====
+    Renders when page.roadmap is defined. Used to address the
+    most common product-gap objections (e.g., "do you support
+    Apple Watch / iPad / Mac?") with honest, dated commitments.
+    Frontmatter shape:
+      roadmap:
+        overline: "Roadmap"
+        heading:  "What's next for Soon."
+        intro:    "Optional one-line context."
+        items:
+          - when:   "Shipped"
+            title:  "iPhone — countdown, Plan Mode, widgets"
+            detail: "Live today."
+            status: "shipped"
+          - when:   "2026 Q4"
+            title:  "Apple Watch complications"
+            detail: "Live countdown on the wrist via Smart Stack."
+        disclaimer: "Optional disclaimer."
+  {% endcomment %}
+  {%- assign rm = page.roadmap -%}
+  {%- if rm and rm.items and rm.items.size > 0 -%}
+  <section id="roadmap" class="section reveal" aria-labelledby="roadmap-heading-{{ page.slug }}">
+    <div class="section-center">
+      <p class="overline">{{ rm.overline | default: "Roadmap" }}</p>
+      <h2 class="h2" id="roadmap-heading-{{ page.slug }}">{{ rm.heading | default: "What's next" }}</h2>
+      {%- if rm.intro -%}
+      <p class="lead">{{ rm.intro }}</p>
+      {%- endif -%}
+    </div>
+    <ul class="roadmap-list">
+      {%- for item in rm.items -%}
+      <li class="roadmap-item{% if item.status == 'shipped' %} roadmap-item--shipped{% endif %}">
+        <div class="roadmap-item__when">{{ item.when }}</div>
+        <div class="roadmap-item__what">
+          <strong>{{ item.title }}</strong>
+          {%- if item.detail -%}<span>{{ item.detail }}</span>{%- endif -%}
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+    {%- if rm.disclaimer -%}
+    <p class="roadmap-disclaimer">{{ rm.disclaimer }}</p>
+    {%- endif -%}
+  </section>
+  {%- endif -%}
+
   {% comment %} ===== COACH CTA ===== {% endcomment %}
   {% if page.coach_cta %}
   <section class="section reveal">
