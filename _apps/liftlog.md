@@ -131,15 +131,23 @@ training_vocabulary:
       items:
         - "Progressive overload — the central rule, applied automatically across mesocycles"
         - "Mesocycle, microcycle, deload week — rendered as a clean dashboard, not a wall of cards"
-        - "Linear, DUP (Daily Undulating Periodization), block, wave periodization"
+        - "Linear, DUP (Daily Undulating Periodization), block, wave, and conjugate periodization"
         - "5/3/1 with Training Max, AMRAP top sets, Boring But Big variants"
         - "PPL, Upper/Lower, Full Body 3×, Starting Strength, Bro Split, custom"
     - heading: "Sets &amp; loading"
       items:
-        - "Working set, warmup set, top set, back-off set, drop set, failure set"
+        - "Working set, warmup set, top set, back-off set, drop set, failure set, cluster set"
         - "RPE 1–10 and RIR (Rep In Reserve), optional per program"
-        - "Tempo notation (eccentric / pause / concentric)"
+        - "Tempo notation across the three phases — eccentric (lowering), isometric (pause), concentric (lift)"
         - "Per-side plate breakdown with custom bar weight (20 kg, 45 lb, EZ bar, safety squat bar)"
+    - heading: "Volume &amp; recovery"
+      items:
+        - "Weekly per-muscle volume in working sets — the unit research actually uses"
+        - "MV (Maintenance Volume) — the floor that keeps strength where it is"
+        - "MEV (Minimum Effective Volume) — the start of a mesocycle, the lowest dose that drives growth"
+        - "MAV (Maximum Adaptive Volume) — the productive middle, where most weeks live"
+        - "MRV (Maximum Recoverable Volume) — the ceiling before fatigue eats progress; deload trigger"
+        - "Automatic deload weeks when accumulated volume crosses your MRV trend"
     - heading: "Analytics"
       items:
         - "Estimated 1RM (Epley) — see method note above"

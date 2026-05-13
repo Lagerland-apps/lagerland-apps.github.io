@@ -227,6 +227,24 @@ layout: default
     </div>
   </section>
 
+  {% comment %} ===== MENTIONED IN (renders only when page.mentioned_in is set — drop real external mentions here) ===== {% endcomment %}
+  {% if page.mentioned_in and page.mentioned_in.size > 0 %}
+  <section class="section reveal" aria-label="Mentioned in">
+    <div class="section-center">
+      <p class="overline">Mentioned in</p>
+    </div>
+    <div class="mentioned-row" style="display:flex;flex-wrap:wrap;gap:var(--s-3) var(--s-5);justify-content:center;align-items:center;opacity:0.85;">
+      {%- for m in page.mentioned_in -%}
+        {%- if m.url -%}
+          <a href="{{ m.url }}"{% unless m.url contains site.url %} rel="noopener nofollow ugc" target="_blank"{% endunless %} style="font-size:0.95em;text-decoration:none;">{{ m.label }}{% if m.context %} <span style="opacity:0.6;">— {{ m.context }}</span>{% endif %}</a>
+        {%- else -%}
+          <span style="font-size:0.95em;">{{ m.label }}{% if m.context %} <span style="opacity:0.6;">— {{ m.context }}</span>{% endif %}</span>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+  {% endif %}
+
   {% comment %} ===== TESTIMONIALS TICKER (renders only if data exists for slug) ===== {% endcomment %}
   {% include testimonials-ticker.html slug=page.slug name=page.name %}
 
@@ -241,6 +259,29 @@ layout: default
         <div class="card-text">{{ item.description }}</div>
       </div>
       {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% comment %}
+    ===== ABOUT / LONGFORM BODY (renders when page.show_body is true) =====
+    Renders the page's markdown body as a visible "About <app>" section.
+    Opt-in via `show_body: true` in frontmatter so the existing 15 apps
+    that use the body as a non-visible description reserve aren't
+    affected. Adds visible contextual content with in-body internal
+    links — SearchPilot split-tests consistently show 5–25% organic
+    uplift from contextual in-body internal linking.
+  {% endcomment %}
+  {% if page.show_body and content and content != "" %}
+  <section class="section reveal" aria-label="About {{ page.name }}">
+    <div class="section-center">
+      <p class="overline">About {{ page.name }}</p>
+      <h2 class="h2">{{ page.about_heading | default: "What Soon. is, in plain words." | replace: "Soon.", page.name }}</h2>
+    </div>
+    <div class="card app-body-card">
+      <div class="app-body-prose">
+        {{ content }}
+      </div>
     </div>
   </section>
   {% endif %}
@@ -361,6 +402,8 @@ layout: default
 
   {% comment %} ===== TRAINING / DOMAIN VOCABULARY (semantic depth — renders when page.training_vocabulary is set) ===== {% endcomment %}
   {% if page.training_vocabulary %}
+  {%- assign vocab_grid = "grid-3" -%}
+  {%- if page.training_vocabulary.groups.size >= 4 -%}{%- assign vocab_grid = "grid-2" -%}{%- endif -%}
   <section class="section reveal" aria-labelledby="vocab-heading-{{ page.slug }}">
     <div class="section-center">
       <p class="overline">Speaks the language</p>
@@ -369,7 +412,7 @@ layout: default
       <p class="lead">{{ page.training_vocabulary.intro }}</p>
       {% endif %}
     </div>
-    <div class="grid grid-3 stagger">
+    <div class="grid {{ vocab_grid }} stagger">
       {% for g in page.training_vocabulary.groups %}
       <div class="card">
         <div class="card-title">{{ g.heading }}</div>
