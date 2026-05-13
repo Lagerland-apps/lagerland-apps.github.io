@@ -4,6 +4,18 @@ slug: soon-rebrand
 title: "TheWait is now Soon. — why we rebuilt and rebranded"
 date: 2026-04-13
 lede: "After a year of quietly growing, TheWait has been fully rebuilt and relaunched as Soon. Here's why the old name had to go, what changed under the hood, and what stays the same for existing users."
+quick_answer: "TheWait was rebranded and rebuilt from scratch as Soon. in April 2026 because the old name framed countdowns as passive waiting rather than active anticipation. The rebuild adds Plan Mode checklists, StandBy widgets, natural-language search, iOS Calendar sync, memory cycling on anniversaries, and 39 languages. Existing TheWait events, themes, and purchases migrate automatically."
+faq:
+  - q: "What happened to TheWait countdown app?"
+    a: "TheWait was rebuilt from scratch and rebranded as Soon. in April 2026. The old name framed the experience as passive waiting; the new name captures the active anticipation the app is actually about. Existing TheWait events, themes, and purchases migrate automatically — the upgrade is free for previous users."
+  - q: "What is new in Soon. compared to TheWait?"
+    a: "Soon. adds Plan Mode with smart checklists tailored to event types like trips and weddings, every iOS widget size including StandBy, natural-language search such as 'birthdays this month', iOS Calendar sync, anniversary memory cycling, and 39 languages including Japanese, Arabic, Hebrew, and Korean."
+  - q: "How much does Soon. cost?"
+    a: "Soon. is free with up to 5 events forever. Premium is €39.99 lifetime, €2.99 a month, or €19.99 a year with a 7-day free trial. Premium unlocks unlimited events, weather intelligence, daily notes, recurring events, and event notifications. There is no auto-charging without consent."
+  - q: "Does Soon. require an account or upload my events to a server?"
+    a: "No. Soon. has no ads, no tracking, and no required account. Events stay on the device. Weather requests use approximate location or a place name only — never precise location. The app is built and maintained by the same one-person studio that ships the rest of the Lagerland Apps catalogue."
+mentioned_apps:
+  - soon
 read_time: "5 min read"
 excerpt: "TheWait became Soon. in April 2026 — a full rebuild with a new name, new icon, Plan Mode, StandBy widgets, and 39 languages. Everything existing users loved carries over."
 ---
@@ -12,7 +24,7 @@ TheWait started as a simple countdown app. You pinned an event, you watched the 
 
 In April 2026, I fully rebuilt and rebranded the app as **[Soon.](/apps/soon/)**. New name, new icon, new home. Here's why.
 
-## The name problem
+## Why rename TheWait to Soon.?
 
 *TheWait* tells you what the app is about in a literal sense. You're waiting. The app counts down.
 

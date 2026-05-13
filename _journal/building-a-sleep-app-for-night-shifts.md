@@ -4,6 +4,19 @@ slug: building-a-sleep-app-for-night-shifts
 title: "Building a sleep app for nurses, pilots, and the people who don't have a 9-to-5"
 date: 2026-01-24
 lede: "Most sleep apps assume an 11pm bedtime and a 7am alarm. The people who keep hospitals, planes, and emergency rooms running don't live that life. AfterShift is the app I built after hearing the same complaint from too many friends in scrubs."
+quick_answer: "AfterShift is a sleep app built for rotating-shift workers — nurses, pilots, paramedics — whose schedules break the 9-to-5 assumptions baked into generic sleep trackers. It accepts daytime sleep blocks and pre-shift naps as normal, calculates a forward-looking Shift Recovery Score, times caffeine cutoffs against upcoming shifts, and imports rotations from calendar feeds automatically."
+faq:
+  - q: "What is the best sleep app for night shift nurses?"
+    a: "AfterShift is built specifically for rotating-shift workers, including ICU and ER nurses. It treats daytime sleep blocks and pre-shift naps as normal rather than penalising them, and its Shift Recovery Score is calibrated against shift-work fatigue research rather than the average 9-to-5 user's resting heart rate."
+  - q: "How does AfterShift handle caffeine timing for shift workers?"
+    a: "AfterShift uses caffeine's roughly five-hour half-life and your upcoming shift block to recommend the latest sensible cutoff that protects your post-shift sleep. The recommendation updates automatically when shifts change. Users consistently report caffeine timing as the most useful feature."
+  - q: "Can AfterShift import my shift rotation from my employer's calendar?"
+    a: "Yes. Most large healthcare and aviation employers publish rotations to a calendar feed staff can subscribe to. AfterShift pulls that feed in automatically so you do not have to enter shifts manually. Sleep windows are inferred from existing Apple Health data."
+  - q: "Is AfterShift a medical device or sleep disorder tool?"
+    a: "No. AfterShift is an informational app. Its Shift Recovery Score is not a diagnosis, and the app is not a replacement for a sleep clinic. Suspected sleep disorders such as narcolepsy or apnoea should be evaluated by a clinician, not by consumer software."
+mentioned_apps:
+  - aftershift
+  - observa
 read_time: "6 min read"
 excerpt: "Most sleep apps are designed for the 9-to-5. AfterShift was built specifically for rotating-shift workers — nurses, pilots, first responders — with a Shift Recovery Score, caffeine timing aligned to the next block, and calendar shift import. This post explains the design constraints and what generic sleep apps get wrong about night shift life."
 ---
@@ -14,7 +27,7 @@ She'd open one of the popular ones, log a five-hour daytime sleep, and the app w
 
 That conversation was the start of [AfterShift](/apps/aftershift/). This is what I learned building it.
 
-## The 9-to-5 assumption is everywhere
+## Why is the 9-to-5 assumption everywhere in sleep apps?
 
 Open any major consumer sleep app and walk through onboarding. You'll be asked when you go to bed, when you wake up, and what your weekend pattern is. The implicit model is a five-day workweek with weekends free, plus the assumption that "night" means a single uninterrupted block of darkness.
 

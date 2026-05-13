@@ -4,13 +4,25 @@ slug: streaks-are-a-debt
 title: "A streak counter is a debt the user owes the app"
 date: 2026-01-10
 lede: "Last week's post was the polite version. Here's the structural one: streak counters are a debt instrument. The app issues them; the user owes them; the app collects on the missed day. Why Taskful Day was built without one."
+quick_answer: "Streak counters function like financial debt: each additional day inflates a balance the user owes the app, and any miss resets the total to zero. The fragility is the engagement lever. They also corrupt the metric, since users open the app at midnight to fake entries. Taskful Day omits the streak entirely and offers gentle follow-ups instead."
+faq:
+  - q: "Are streak counters actually good for building habits?"
+    a: "No. Streak counters are a debt instrument disguised as a reward — the number resets to zero on any miss, so each day inflates a balance the user owes the app. The fragility is the engagement loop. They corrupt the metric they pretend to measure by rewarding users who open at midnight to fake entries."
+  - q: "Why does Taskful Day not have a streak counter?"
+    a: "Taskful Day was designed without a streak because streaks teach users to lie to their tools and ship guilt instead of progress. Yesterday's incomplete tasks are offered as gentle follow-ups — tap to bring them to today or dismiss them — rather than red-marked. The app does not editorialise whether a day was good or bad."
+  - q: "What does Taskful Day show in place of a streak?"
+    a: "The home screen shows today's plan and today only. There is no flame, no streak number, and no daily score. Reflection and focus-session views are optional rather than mandatory. The trade-off is lower daily active users than a streak-driven planner, which is a deliberate design choice."
+  - q: "Is week-three retention possible without a streak counter?"
+    a: "Yes, and the studio considers it the better retention model. When a user returns after five days away, the absence of punishment is itself the retention strategy — they expected to be yelled at and were not, which makes them open the app the next day. It is slower than streak-based retention, but it does not corrode trust."
+mentioned_apps:
+  - taskful-day
 read_time: "5 min read"
 excerpt: "Streaks are framed as motivation but operate as debt. This essay walks through why Taskful Day was built without a streak counter, why ‘follow-ups’ replace them, and what the design tradeoff actually buys."
 ---
 
 Last Saturday's post made the polite case against guilt-driven fitness apps. This week, the structural one — and it's a particular argument about [Taskful Day](/apps/taskful-day/), the daily planner this studio ships.
 
-## What a streak actually is
+## What is a streak counter, actually?
 
 A streak counter looks like a positive number. The app tells you: *seven days in a row*. *Twenty-eight days in a row*. *One hundred and forty-three days in a row*. The number goes up. It feels like a reward.
 

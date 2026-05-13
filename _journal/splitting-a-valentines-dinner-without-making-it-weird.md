@@ -4,6 +4,18 @@ slug: splitting-a-valentines-dinner-without-making-it-weird
 title: "How to split a Valentine's dinner without making it weird"
 date: 2026-02-14
 lede: "It's the 14th. Somewhere right now, a group of four friends is staring at a $312 dinner bill, three of them ordered the steak, one ordered the salad, and someone is doing math on a napkin. RightSplit was built for that exact moment."
+quick_answer: "RightSplit handles item-level bill splitting from a single phone. One person scans the receipt, drags each line item onto the people who ordered it, and the app produces per-person amounts with Venmo, PayPal, or iMessage Cash deeplinks sent over iMessage or WhatsApp. Nobody else has to install anything. No shared account, no IOU ledger."
+faq:
+  - q: "How do I split a dinner bill fairly without making it weird?"
+    a: "RightSplit handles item-level splitting from a single phone. One person scans the receipt, drags each item onto the people who ordered it, and the app produces per-person amounts with payment-app deeplinks sent through iMessage or WhatsApp. Only the person holding the phone needs RightSplit installed."
+  - q: "Does everyone in the group need to install RightSplit?"
+    a: "No. RightSplit is built around the opposite premise from Splitwise — only the person doing the math has the app. The rest of the group receives a message with their exact amount and a Venmo, PayPal, or iMessage Cash deeplink, with no signup and no IOU ledger trailing them for months."
+  - q: "Is RightSplit better than splitting the bill equally?"
+    a: "For two people, equal-split and item-level produce roughly the same result. For four people, item-level recovers around $20–$40 per dinner for whoever ordered modestly. For groups of ten, the swing can be $80–$150 per person, which is the point where equal-splitting turns a fun dinner into an awkward Venmo argument."
+  - q: "How much does RightSplit cost?"
+    a: "The free tier of RightSplit covers equal-split and a tip calculator, which is enough for most two-person scenarios. Pro adds item-level splitting, uneven splits, per-person tip breakdowns, and split history for $1.99 a year or $7.99 lifetime."
+mentioned_apps:
+  - rightsplit
 read_time: "4 min read"
 excerpt: "A short Valentine's-adjacent post on RightSplit's design philosophy: scan the receipt, split items fairly, send shares via iMessage or WhatsApp, no shared Splitwise account required. Why item-level splitting beats equal-split for groups of more than two."
 ---
@@ -12,7 +24,7 @@ It is February the 14th. Somewhere in the world right now, a table of four frien
 
 This is a small post about that exact moment, and the app I built for it.
 
-## Why "split equally" is unfair
+## Why is "split equally" unfair?
 
 The default in most splitting tools is to divide the bill into equal shares. This works when the table ordered roughly the same things. It is unfair the moment the orders diverge.
 

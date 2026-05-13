@@ -4,6 +4,18 @@ slug: every-media-tool-already-on-your-mac
 title: "The Mac already shipped with every media tool — someone just had to wire them together"
 date: 2026-05-09
 lede: "MediaKit is 133 local tools for video, audio, image, PDF, and archive work, behind a single drag-and-drop Mac interface. None of the operations ever leave your machine. This post is the case for that — and why \"upload your file to a random website to convert it\" remains one of the worst defaults on the open web in 2026."
+quick_answer: "MediaKit is a native macOS app that consolidates 133 on-device media conversion tools — video, audio, image, PDF, archive, ebook — behind a single drag-and-drop surface. Every operation runs locally on Apple frameworks like AVFoundation, CoreImage, PDFKit, Vision, and AppleArchive. Files never leave the machine, unlike CloudConvert, Zamzar, or Smallpdf. Five tools stay free forever."
+faq:
+  - q: "Is there a Mac alternative to CloudConvert or Smallpdf?"
+    a: "MediaKit is a native macOS app with 133 conversion tools that runs every operation locally on Apple frameworks like AVFoundation, CoreImage, PDFKit, Vision, and AppleArchive. Files never leave the machine, unlike CloudConvert, Zamzar, Smallpdf, or iLovePDF, which upload to operator infrastructure for processing."
+  - q: "Which MediaKit tools are free forever?"
+    a: "Five tools stay free forever with no nag screen: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. The remaining 128 tools are unlocked during a three-day trial, then require a one-time Pro purchase. There is no subscription."
+  - q: "Can MediaKit replace Final Cut Pro or DaVinci Resolve?"
+    a: "No. MediaKit performs linear operations like compress, convert, trim, crop, merge, and normalize. It does not have a timeline and is not a non-linear editor. If you are cutting a film, use Final Cut Pro or DaVinci Resolve. MediaKit is for everyday conversions, not editorial work."
+  - q: "Does MediaKit work with Shortcuts?"
+    a: "Yes. MediaKit ships six Shortcuts actions plus a menu bar item, so its tools can be wired into automated workflows on a schedule or triggered from other apps. All Shortcuts actions run locally and never touch the internet."
+mentioned_apps:
+  - mediakit
 read_time: "6 min read"
 excerpt: "MediaKit is a native macOS app with 133 on-device tools for compressing, converting, and editing video, audio, image, PDF, archive, and ebook files — built on Apple's AVFoundation, CoreImage, PDFKit, Vision, Speech, Compression, and AppleArchive frameworks. This post argues that the Mac has shipped the primitives for local media work for years, that cloud converters like CloudConvert, Zamzar, and Smallpdf persist mostly because nobody consolidated the local tools behind a single UI, and explains the five-tools-free-forever pricing."
 ---
@@ -16,7 +28,7 @@ It is not fine. It is also, in 2026, unnecessary.
 
 This is the Saturday essay on what MediaKit is, what it isn't, and why "free conversion website" is one of the worst remaining defaults on the open web.
 
-## What Apple already ships
+## What media tools does Apple already ship on the Mac?
 
 I want to be precise about this, because the contribution MediaKit makes is real but it is also limited, and it would be dishonest to claim otherwise.
 

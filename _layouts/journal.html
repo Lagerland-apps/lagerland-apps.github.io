@@ -8,21 +8,53 @@ layout: default
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "Article",
   "@id": "{{ post_url }}#post",
   "headline": {{ page.title | jsonify }},
-  "description": {{ page.excerpt | default: page.description | jsonify }},
+  "description": {{ page.quick_answer | default: page.lede | default: page.excerpt | default: page.description | jsonify }},
   "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
   "dateModified": "{{ page.last_updated | default: page.date | date: '%Y-%m-%d' }}",
   "url": "{{ post_url }}",
   "image": "{{ site.url }}{{ og_image }}",
   "inLanguage": "en",
-  "author": { "@id": "{{ site.url }}/#organization" },
+  "author": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/lagerland-apps/#founder",
+    "name": "Antti Aittamaa"
+  },
   "publisher": { "@id": "{{ site.url }}/#organization" },
   "isPartOf": { "@id": "{{ site.url }}/#website" },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ post_url }}" }
+  {%- if page.quick_answer %},
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".quick-answer__body", ".faq-a"]
+  }
+  {%- endif %}
 }
 </script>
+
+{% if page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{ post_url }}#faq",
+  "mainEntity": [
+    {%- for item in page.faq -%}
+    {
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | jsonify }}
+      }
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+{% endif %}
 
 <script type="application/ld+json">
 {
@@ -47,11 +79,43 @@ layout: default
     </div>
   </header>
 
+  {% include quick-answer.html %}
+
   <section class="section reveal">
     <div class="prose" style="max-width:720px;margin:0 auto;">
       {{ content }}
     </div>
   </section>
+
+  {% if page.faq %}
+  <section id="faq" class="section reveal">
+    <div class="section-center"><p class="overline">Questions</p><h2 class="h2">Frequently asked</h2></div>
+    <div class="faq" style="max-width:720px;margin:0 auto;">
+      {%- for item in page.faq -%}
+      <details class="faq-item"{% if forloop.first %} open{% endif %}>
+        <summary>{{ item.q }}</summary>
+        <div class="faq-a">{{ item.a }}</div>
+      </details>
+      {%- endfor -%}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.mentioned_apps %}
+  <section class="section reveal">
+    <div class="section-center"><p class="overline">Mentioned in this post</p><h2 class="h2">Apps in this story</h2></div>
+    {%- assign mentioned = '' | split: '' -%}
+    {%- for slug in page.mentioned_apps -%}
+      {%- assign m = site.apps | where: "slug", slug | first -%}
+      {%- if m -%}{%- assign mentioned = mentioned | push: m -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if mentioned.size > 0 -%}
+    <div class="grid grid-2 stagger">
+      {%- for app in mentioned -%}{% include app-card.html app=app %}{%- endfor -%}
+    </div>
+    {%- endif -%}
+  </section>
+  {% endif %}
 
   <section class="cta-section reveal">
     <p class="overline">More from the journal</p>

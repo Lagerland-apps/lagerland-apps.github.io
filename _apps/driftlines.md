@@ -3,6 +3,7 @@ layout: app
 slug: driftlines
 name: "Driftlines"
 tagline: "Daily prose from a quiet life."
+quick_answer: "Driftlines is a quiet daily reading app for iPhone, iPad, Mac, and Apple Vision Pro. Each day, one piece of first-person prose arrives from a fictional life unfolding in real time — memories shift, places change, and a story builds slowly. No feeds, streaks, or notifications. One-time $59.99 purchase. No ads, no trackers, no account."
 category: books
 platforms: ["iOS"]
 status: live

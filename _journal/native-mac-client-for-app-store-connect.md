@@ -4,6 +4,20 @@ slug: native-mac-client-for-app-store-connect
 title: "On building a native Mac client for App Store Connect"
 date: 2026-02-21
 lede: "App Store Connect is the most consequential web app most indie developers use, and it has been the same web app for ten years. AppMeta is the studio's quietest app and arguably the most useful — a native Mac client for the ASC API, built for the day you're shipping in fourteen locales and need to stop scrolling."
+quick_answer: "AppMeta is a native Mac client for the App Store Connect API built for indie developers shipping across many locales. It offers side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, a unified review inbox across every app, and version submission. Priced as a $44.99 one-time purchase with a free demo mode."
+faq:
+  - q: "Is there a native Mac app for App Store Connect?"
+    a: "AppMeta is a native macOS client for the App Store Connect API. It gives you side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, a unified review inbox across every app in your catalogue, and version submission — all without using the App Store Connect web interface."
+  - q: "How much does AppMeta cost and is there a subscription?"
+    a: "AppMeta is a one-time $44.99 lifetime purchase. There is no subscription. A free demo mode lets you explore the interface against sample data before you buy. The pricing decision was deliberate — a subscription would pressure the roadmap toward feature churn rather than reliable native-client behaviour."
+  - q: "Can AppMeta edit App Store metadata in multiple languages at once?"
+    a: "Yes. The English description lives in the left pane and other locales — German, French, Japanese, Spanish, and so on — live as tabs in the right pane. Diff is highlighted across locales, and the diff preview shows exactly what will change against live metadata before you push to Apple."
+  - q: "Does AppMeta replace fastlane or Xcode Cloud?"
+    a: "No. AppMeta is not a build pipeline tool. It does not replace fastlane, Xcode Cloud, or your CI. It also does not generate screenshots — that is ScreenFlow Studio's job — or analyse revenue, which is AppMeta Pulse's role. AppMeta handles the metadata and review portion of App Store Connect specifically."
+mentioned_apps:
+  - appmeta
+  - appmeta-pulse
+  - screenflow-studio
 read_time: "6 min read"
 excerpt: "AppMeta is a native Mac client for the App Store Connect API — per-locale metadata editing, diff preview, keyword analysis, review responses, and version submission. This post explains why the indie iOS workflow needed it, what the trade-offs are, and why the studio shipped it as a $44.99 lifetime purchase rather than a subscription."
 ---
@@ -28,7 +42,7 @@ What ASC isn't optimised for is the workflow of an indie developer with five-to-
 
 Every one of these is a real friction. None of them are catastrophic individually. Together they are why I had a recurring "App Store Connect" calendar block on my Friday afternoons for two years before I shipped AppMeta.
 
-## What a native client actually changes
+## What does a native App Store Connect client actually change?
 
 The core of AppMeta is a Mac client that talks directly to the App Store Connect REST API and gives you a side-by-side view of your apps' metadata. The four things it changes:
 

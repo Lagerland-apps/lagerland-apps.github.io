@@ -4,6 +4,18 @@ slug: planning-on-phone-finishing-on-desk
 title: "The day I plan on my phone is not the day I finish at my desk"
 date: 2026-05-02
 lede: "Taskful Day shipped on the Mac this week. This is the small essay on why a calm daily planner had to be a native Mac app — not a stretched-iPhone Catalyst window — and why it's one Universal Purchase across iPhone, iPad, and Mac instead of three separate licenses."
+quick_answer: "Taskful Day is now native on macOS alongside iPhone and iPad, built in SwiftUI with AppKit underpinnings rather than Catalyst. The three platforms share one Universal Purchase, so Pro unlocked on iPhone activates the Mac app automatically. Sync runs through the user's own iCloud account via CloudKit. The studio operates no servers and stores no tasks."
+faq:
+  - q: "Is Taskful Day available on Mac?"
+    a: "Yes. Taskful Day is now native on macOS alongside iPhone and iPad, built in SwiftUI with AppKit underpinnings rather than Catalyst. The window resizes the way a Mac window should, the menu bar is populated, keyboard shortcuts are real Mac shortcuts, and a menu bar item supports quick capture without opening the main window."
+  - q: "Do I have to pay separately for Taskful Day on Mac?"
+    a: "No. Taskful Day is one Universal Purchase across iPhone, iPad, and Mac. If you bought Pro on your iPhone, signing into the same Apple ID on the Mac activates Pro automatically. Pro is €2.99 a month or €49.99 lifetime, applied to every device you sign in with."
+  - q: "How does Taskful Day sync between iPhone, iPad, and Mac?"
+    a: "Taskful Day syncs through your personal iCloud account using CloudKit. The studio operates no servers and stores no tasks. Deleting the app on every device and signing out of iCloud removes the data entirely. The trade-off is that there is no shared-cloud surface for team task lists."
+  - q: "Is Taskful Day a replacement for Things 3, TickTick, or Sorted3?"
+    a: "No. Things 3 is GTD-style with a long-lived project tree. TickTick is a cross-platform Swiss-army knife. Sorted3 is a strict time-blocked planner. Taskful Day is for one realistic day at a time, with unfinished tasks rolling forward as gentle follow-ups rather than red marks."
+mentioned_apps:
+  - taskful-day
 read_time: "5 min read"
 excerpt: "Taskful Day is now native on macOS alongside iPhone and iPad, with iCloud sync and one Universal Purchase across all three platforms. This post explains why a planner has to live where the work happens, why a native AppKit Mac app matters more than a Catalyst port for an app you keep open all day, and where Taskful Day sits next to Things 3, TickTick, and Sorted³."
 ---
@@ -42,7 +54,7 @@ Taskful Day syncs through your personal iCloud account using CloudKit. The studi
 
 This is structurally different from the way most cross-platform planners work. The typical model is: sign up for an account, your tasks live on the company's servers, the apps are clients. The studio does not run that model anywhere in the catalogue, and I am not running it here. The trade is that you cannot share a task list with a teammate through Taskful Day, because there is no shared cloud surface to share through. If that's a workflow you need, the app is the wrong shape for you and I'd rather you use something else.
 
-## What "now on Mac" actually unlocks
+## What does "now on Mac" actually unlock for Taskful Day?
 
 Three things, specifically, that the Mac app changes in practice:
 

@@ -3,6 +3,7 @@ layout: app
 slug: aftershift
 name: "AfterShift"
 tagline: "Recovery, naps & fatigue for shift work."
+quick_answer: "AfterShift is a sleep and recovery app for shift workers — nurses, paramedics, firefighters, and anyone on rotating, night, or on-call schedules. The iPhone app tracks naps, fatigue, and sleep stages against your actual shifts, with a Shift Recovery Score and caffeine timing. Free with Premium from €3.99/mo. No ads, no health data selling, no account required."
 category: health
 platforms: ["iOS"]
 status: live

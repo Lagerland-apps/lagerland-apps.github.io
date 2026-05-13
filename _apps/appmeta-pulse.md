@@ -3,6 +3,7 @@ layout: app
 slug: appmeta-pulse
 name: "AppMeta Pulse"
 tagline: "Your App Store business, at a glance."
+quick_answer: "AppMeta Pulse is a read-only App Store Connect companion for iPhone, iPad, and Mac. Indie developers use it to check revenue, active subscriptions, trial conversions, refunds, and downloads across their entire app portfolio in seconds — without opening a browser. Built on Apple's official API. Free trial, from $0.99/month. No ads, no tracking, no analytics."
 category: business
 platforms: ["iOS"]
 status: live
@@ -18,8 +19,8 @@ icon: "/assets/icons/appmeta-pulse.png"
 og_image: "/assets/og/appmeta-pulse.png"
 
 seo:
-  title: "AppMeta Pulse – App Store Revenue & Analytics Dashboard"
-  description: "AppMeta Pulse is a fast, read-only App Store Connect companion. Check revenue, subscriptions, downloads, and trends from iPhone, iPad, or Mac. No ads, no tracking."
+  title: "AppMeta Pulse — App Store Connect Revenue Dashboard for iPhone, iPad & Mac"
+  description: "Read-only App Store Connect companion. Check revenue, subscriptions, downloads & refunds in seconds on iPhone, iPad or Mac. No ads, no tracking — from $0.99/mo."
   keywords:
     - app store connect dashboard
     - app revenue tracker

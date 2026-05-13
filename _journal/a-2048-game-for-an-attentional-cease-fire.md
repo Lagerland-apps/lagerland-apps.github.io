@@ -4,6 +4,18 @@ slug: a-2048-game-for-an-attentional-cease-fire
 title: "A small game for an attentional cease-fire"
 date: 2026-04-04
 lede: "It's the long weekend before Easter, the kind of weekend that's structurally a pause. This is a small post about Calm 2048 — a no-ads, no-lives, no-dark-patterns version of a twelve-year-old puzzle — and why a small calm thing on the App Store still has a place in 2026."
+quick_answer: "Calm 2048 is a one-time-purchase iOS version of the classic 2048 puzzle stripped of ads, lives, daily-login mechanics, leaderboards, accounts, and cosmetic IAPs. It contains the game, undo, three colour themes, and a local high score. No notifications, no cloud sync, no monetisation infrastructure layered over the actual puzzle."
+faq:
+  - q: "Is there a version of 2048 without ads on the App Store?"
+    a: "Yes. Calm 2048 is a one-time-purchase iOS app that strips out ads, lives, daily-login bonuses, and cosmetic IAPs. You pay once and get the puzzle, an undo button, three colour themes, and a local high score. No ads ever appear before, during, or after a game."
+  - q: "Does Calm 2048 require an account or internet connection?"
+    a: "No. There is no account, no cloud sync, and no internet requirement. Your high score is stored locally on the device. The app works fully offline on the subway, on a plane, or anywhere without signal."
+  - q: "What is the difference between Calm 2048 and other 2048 clones?"
+    a: "Most 2048 clones layer pre-roll ads, interstitials, lives, leaderboards, and account systems on top of the puzzle. Calm 2048 removes all of that. The features list is the game, one undo, three themes, and a local high score, with subtle haptics only on milestone events."
+  - q: "How much does Calm 2048 cost?"
+    a: "Calm 2048 is a single small one-time purchase. There is no subscription, no IAP for tile skins or themes, and no upgrade path. Pay once and own it forever, including future updates to the same app."
+mentioned_apps:
+  - calm-2048
 read_time: "3 min read"
 excerpt: "On Calm 2048 — why a no-ads, no-lives, no-dark-patterns version of the classic 2048 puzzle still matters. A short Easter-weekend reflection on calm gaming and the difference between a puzzle that respects your attention and one that mines it."
 ---
@@ -30,7 +42,7 @@ The puzzle itself, the actual game, was buried under a layer of monetisation inf
 
 Calm 2048 exists to put the original game back where it belongs.
 
-## What Calm 2048 specifically does
+## What does Calm 2048 specifically do?
 
 The features list is, by design, almost humorously short:
 

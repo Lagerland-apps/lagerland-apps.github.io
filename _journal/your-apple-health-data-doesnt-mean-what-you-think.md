@@ -4,6 +4,18 @@ slug: your-apple-health-data-doesnt-mean-what-you-think
 title: "Your Apple Health data isn't telling you what you think it's telling you"
 date: 2026-01-17
 lede: "Three years of HRV charts, ten thousand data points, and a feeling that none of it added up to anything. The story behind Observa, and why interpretation matters more than tracking."
+quick_answer: "Observa is an interpretation layer for Apple Health data. It identifies the variables most correlated with the user's sleep quality, normalises HRV against personal baseline rather than population norms, flags days that deviated from baseline, and produces a calm weekly read in plain language. All correlation analysis runs on-device. No cloud upload, no account, no medical advice."
+faq:
+  - q: "How do I actually interpret my Apple Health data?"
+    a: "Apple Health is excellent at collection but does not editorialise, which leaves users with charts and no meaning. Observa sits on top of Apple Health and surfaces the variables most correlated with your sleep quality this month, normalises HRV against your personal baseline, and flags days that deviated meaningfully from your own pattern."
+  - q: "Is HRV of 38 ms good or bad?"
+    a: "There is no universal answer. A 38 ms HRV reading is meaningless without knowing whether your personal baseline is 32 or 56. Observa normalises HRV against your own data rather than population norms, so the trend you see reflects your physiology rather than a stranger's."
+  - q: "Does Observa upload my health data to a server?"
+    a: "No. Observa's correlation analysis runs entirely on-device using local models small enough to fit in the app bundle. The trade-off is simpler analyses than a cloud service could deliver. The upside is that no employee, no breach, and no future model-training disclosure can touch your data."
+  - q: "Is Observa a medical diagnostic tool?"
+    a: "No. Observa is an interpretation layer, not a diagnostic. It will not detect sleep apnoea, cardiac issues, or autoimmune conditions and does not pretend to. It produces three or four plain-language sentences a thoughtful coach might say after reading a year of your Apple Health data carefully."
+mentioned_apps:
+  - observa
 read_time: "6 min read"
 excerpt: "Apple Health surfaces hundreds of metrics with no narrative attached. This post explains the interpretation gap that motivated Observa, why correlation analysis beats raw charts, and what ‘plain-language insights’ actually look like in a privacy-first app."
 ---
@@ -16,7 +28,7 @@ I don't mean that in a glib way. I mean: I could open the Health app, watch a nu
 
 That gap is what Observa was built to close.
 
-## What Apple Health is good at
+## What is Apple Health good at?
 
 Before anything else: Apple Health is excellent at the thing it's built for. It collects, normalises, and persists health metrics with privacy guarantees no consumer system has ever offered. The charts are well-designed. The unit handling is meticulous. The data layer is honestly the best in the industry.
 

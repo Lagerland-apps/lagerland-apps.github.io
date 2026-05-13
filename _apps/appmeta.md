@@ -3,6 +3,7 @@ layout: app
 slug: appmeta
 name: "AppMeta"
 tagline: "App Store Connect, native on your Mac."
+quick_answer: "AppMeta is a native macOS client for App Store Connect built for indie developers. It edits metadata across all localizations with visual diffs, manages reviews and TestFlight, runs AI-powered keyword analysis using your own API key, and handles full app submissions — faster than the web UI. One-time $44.99, no subscription. No tracking, Keychain-stored credentials."
 category: developer-tools
 platforms: ["macOS"]
 status: live

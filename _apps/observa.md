@@ -3,6 +3,7 @@ layout: app
 slug: observa
 name: "Observa"
 tagline: "Sleep, energy & recovery insights."
+quick_answer: "Observa is a private health insights app for iPhone, Mac, and Apple Vision Pro that turns your Apple Health and Apple Watch data into plain-language explanations of sleep, HRV, recovery, and energy patterns. It finds correlations specific to you — not generic advice. Free with Pro from €2.99/month. Everything runs on-device. No ads, no trackers, no account."
 category: health
 platforms: ["iOS"]
 status: live
@@ -18,8 +19,8 @@ icon: "/assets/icons/observa.png"
 og_image: "/assets/og/observa.png"
 
 seo:
-  title: "Observa — Private Apple Health Insights App for iPhone"
-  description: "Observa turns Apple Health data into personal insights about your sleep, energy, and recovery. Pattern recognition, HRV analysis, and correlation insights — fully private, on-device, no ads, no tracking, no account."
+  title: "Observa — Private Apple Health Insights for Sleep, Energy & Recovery"
+  description: "Turn Apple Health data into plain-English insights about sleep, HRV, energy & recovery. Fully on-device, no ads, no account. Free, Pro from €2.99/mo."
   keywords:
     - health insights app
     - Apple Health analytics

@@ -3,6 +3,7 @@ layout: app
 slug: wanderwiki
 name: "WanderWiki"
 tagline: "Swipe through Wikipedia. Learn something new."
+quick_answer: "WanderWiki is a Wikipedia discovery app for iPhone, iPad, Mac, and Apple Vision Pro that turns the encyclopedia into a swipe-based card experience. Three modes — Random, For You (by interest), and Today in History — surface fascinating articles without searching. Reformatted for calm reading; saved articles work offline. From $0.99/week or $22.99 lifetime. No ads, no algorithms, no tracking."
 category: education
 platforms: ["iOS"]
 status: live

@@ -3,6 +3,7 @@ layout: app
 slug: chessful
 name: "Chessful"
 tagline: "Understand your mistakes. Improve every game."
+quick_answer: "Chessful is a chess training and game analysis app for iPhone, iPad, and Mac. It uses Stockfish to review every move, then explains your mistakes in plain language and builds adaptive training from your actual weaknesses — tactics, defense, openings, endgames. Includes 40 AI opponents. Free with optional Premium. Fully offline, no account, no ads, no tracking."
 category: games
 platforms: ["iOS", "iPadOS", "macOS"]
 status: live

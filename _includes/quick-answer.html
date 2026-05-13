@@ -1,0 +1,7 @@
+{%- assign qa = include.text | default: page.quick_answer -%}
+{%- if qa and qa != "" -%}
+<aside class="quick-answer reveal" aria-label="Quick answer" itemscope itemtype="https://schema.org/Answer">
+  <p class="quick-answer__label">Quick answer</p>
+  <p class="quick-answer__body" itemprop="text">{{ qa }}</p>
+</aside>
+{%- endif -%}

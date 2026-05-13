@@ -3,6 +3,7 @@ layout: app
 slug: allpaid
 name: "AllPaid"
 tagline: "Bills, calmly handled."
+quick_answer: "AllPaid is a calm bill and subscription tracker for iPhone, iPad, and Mac. It auto-detects 30+ services like Netflix and Spotify, shows every due date on a monthly calendar, sends gentle reminders, and includes widgets, Siri, and spending analytics. For people who keep missing payments. Free, Pro from $1.99/month. No ads, no account, no tracking."
 category: finance
 platforms: ["iOS"]
 status: live
@@ -18,8 +19,8 @@ icon: "/assets/icons/allpaid.png"
 og_image: "/assets/og/allpaid.png"
 
 seo:
-  title: "AllPaid – Bill Tracker & Subscription Reminder for iPhone"
-  description: "AllPaid is a calm bill tracker that organizes bills, subscriptions, and due dates in one place. Smart detection, calendar view, widgets, Siri, and spending analytics. No ads."
+  title: "AllPaid — Calm Bill & Subscription Tracker for iPhone (No Ads)"
+  description: "Track bills, subscriptions & due dates in one calm view on iPhone. Smart detection, calendar, widgets, Siri & spending analytics. No ads, no tracking, no account."
   keywords:
     - bill tracker app
     - bill reminder app

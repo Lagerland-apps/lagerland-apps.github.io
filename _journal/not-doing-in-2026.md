@@ -4,6 +4,21 @@ slug: not-doing-in-2026
 title: "What I'm not doing in 2026"
 date: 2026-01-01
 lede: "It's the first day of the year. Everywhere on the internet, people are listing what they will build, ship, optimize, and grow. Here's a shorter list — what this studio is choosing not to do."
+quick_answer: "Lagerland Apps is choosing not to add advertising SDKs, not to chase a ten-app year, not to bolt streaks or daily-engagement loops onto its catalogue, not to ship fashionable AI features that earn no place, and not to raise outside funding. The fourteen-app catalogue stays where it is. Refinements over additions, fewer apps, higher bar."
+faq:
+  - q: "Will Lagerland Apps add advertising or analytics SDKs in 2026?"
+    a: "No. Lagerland Apps has zero third-party tracking SDKs across the entire fourteen-app catalogue — no analytics, no advertising networks, no telemetry that quietly fingerprints — and that will not change in 2026. The first ad SDK is the first time the studio's whole positioning collapses, which is not a trade the studio is willing to make."
+  - q: "Is Lagerland Apps raising outside funding?"
+    a: "No. There is no funding round planned for 2026. The studio is one person, the apps are profitable, and investors would add ambitions that do not fit a one-person operation. The honest version of 'we are not raising right now' is 'we do not want to.'"
+  - q: "Will any Lagerland app add a streak counter or daily engagement loop?"
+    a: "No. Apps like Taskful Day and AfterShift would convert harder with streaks, daily nags, or social comparison, but the studio is choosing not to add them. A smaller userbase that does not resent the apps is the design goal. Streaks function as a debt instrument, not a reward."
+  - q: "How many new apps will Lagerland Apps ship in 2026?"
+    a: "Few, if any. The current fourteen-app catalogue is at the limit of what one person can support thoughtfully. A new app will only ship in 2026 if the idea is good enough to displace something else. Genuine AI capability will only appear where it earns a place — Observa and Chessful are the existing examples."
+mentioned_apps:
+  - taskful-day
+  - aftershift
+  - observa
+  - chessful
 read_time: "3 min read"
 excerpt: "An anti-resolution post for the start of 2026. Lagerland Apps is a one-person Apple studio and this is what it is choosing not to do this year — no advertising SDKs, no ten-app years, no engagement loops, no chasing what every other indie studio chases."
 ---
@@ -36,7 +51,7 @@ There is no funding round in the plans for 2026. I don't need one. The studio is
 
 The other thing I'm not doing is disappearing. This journal is new, and I plan to write more honestly through 2026 than I have in any previous year — including when things go wrong, which they will. There will be shipping notes, rebrand stories, post-mortems on pricing experiments, and quiet essays about why a particular feature exists. None of it on a content-marketing schedule. All of it because there's something worth saying.
 
-## What this means for the apps
+## What does this mean for the apps in 2026?
 
 For the apps you might already use, the practical answer to "what's coming in 2026" is more of the same: better refinements, fewer additions, the same privacy posture, the same one-time-or-honest-freemium pricing. For new apps that ship this year, the bar will be high and the count will be low. Good.
 

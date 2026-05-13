@@ -3,6 +3,7 @@ layout: app
 slug: soon
 name: "Soon."
 tagline: "Countdowns worth waiting for."
+quick_answer: "Soon. is a countdown and planner app for iPhone that turns trips, weddings, birthdays, anniversaries, and milestones into living countdowns with full-bleed photo backgrounds, live destination weather, smart Plan Mode checklists, and widgets for Home Screen, Lock Screen, and StandBy. Free with Premium from €2.99/month or €39.99 lifetime. No ads, no tracking, no account required."
 category: lifestyle
 platforms: ["iOS"]
 status: live

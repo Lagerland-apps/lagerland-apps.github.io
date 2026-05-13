@@ -4,6 +4,18 @@ slug: your-photos-shouldnt-ride-the-elevator
 title: "Your photos shouldn't ride the elevator to a stranger's data centre"
 date: 2026-03-28
 lede: "Almost every online image converter you've used in the last decade uploaded your file to a server you don't control, processed it there, and gave you back a download. The convenience is real. The privacy implication is not small. MediaKit is the studio's argument that 133 of those tools should run on your Mac instead."
+quick_answer: "Online image, video, audio, and PDF converters upload private files to operator infrastructure that holds them well after the conversion is done. MediaKit is a Mac app that runs 133 equivalent tools locally — including HEIC bulk, video compression, PDF redaction, and RAR v5 extraction on Apple Silicon — with full Shortcuts support. Five tools are free forever."
+faq:
+  - q: "Is it safe to upload files to free online converters like CloudConvert or iLovePDF?"
+    a: "The file leaves your device, lands on operator storage that may or may not be encrypted at rest, sits in retention for hours or days, and you cannot verify deletion. Most operators are not malicious, but the architecture is wrong by default for private files like medical records, photos of children, or screenshots of email."
+  - q: "Can my Mac convert HEIC, MP4, PDF, and RAR files locally?"
+    a: "Yes. MediaKit runs 133 local conversion tools on Apple Silicon, including HEIC to JPG bulk, video compression, PDF redaction, OCR, and crucially RAR v5 extraction. Apple Silicon's hardware encoders make local conversion competitive with — and often faster than — a cloud round trip."
+  - q: "How many MediaKit tools are free without paying?"
+    a: "Five tools are free forever: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. They cover roughly 70% of casual cases. The remaining 128 tools and batch processing are unlocked during a 3-day trial, then require a one-time Pro purchase. There is no subscription."
+  - q: "Does MediaKit support Shortcuts automation?"
+    a: "Yes. Every tool supports Shortcuts integration, so workflows like 'compress all videos in Downloads, output to ~/Compressed, delete originals over 100MB' can run on a schedule entirely on-device. The workflow never touches the internet."
+mentioned_apps:
+  - mediakit
 read_time: "5 min read"
 excerpt: "MediaKit is a Mac app with 133 local conversion tools — video compression, HEIC to JPG bulk, PDF tooling, RAR v5 extraction on Apple Silicon, and more. This post argues for local-first media processing, explains the Shortcuts integration, and makes the case for the freemium structure (5 tools free forever, 128 behind Pro)."
 ---
@@ -14,7 +26,7 @@ If you're like most users, you used a free online converter. You uploaded the fi
 
 Almost none of those tools needed your file to leave your device. The convenience is real, but the privacy posture is structurally wrong, and [MediaKit](/apps/mediakit/) is the studio's argument that the entire category of conversion tools belongs on your Mac instead.
 
-## What "convert online" actually does
+## What does "convert online" actually do to your file?
 
 When you use a free online converter, here is what the file does, in sequence:
 

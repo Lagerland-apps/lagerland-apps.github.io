@@ -4,6 +4,18 @@ slug: forty-chess-opponents
 title: "Forty chess opponents, and none of them are me"
 date: 2026-02-28
 lede: "The single hardest decision in Chessful's design wasn't the engine, the analysis, or the spaced-repetition trainer. It was that the app needed to feel like you were playing forty different people, not the same engine forty times wearing different hats."
+quick_answer: "Chessful ships forty distinct AI chess opponents instead of a single engine made worse on purpose at lower levels. Each opponent has a rating, opening repertoire, structural preference, and characteristic blind spots, so games feel like playing different people rather than a noisy slider. Post-game analysis explains mistakes in plain language a club player can actually read."
+faq:
+  - q: "How is Chessful different from playing the engine on chess.com?"
+    a: "Chess.com and most chess apps use a single engine with added evaluation noise at lower levels, so every opponent is structurally the same player making random mistakes. Chessful ships forty distinct opponents, each with its own opening repertoire, structural preferences, and blind spots, so games feel like playing different people rather than one noisy slider."
+  - q: "Does Chessful explain my mistakes in plain language?"
+    a: "Yes. Chessful's post-game analysis identifies the move that lost the game, the threat you missed, and the structural reason in one or two sentences. A layered model combines an engine, a small language model, and hand-curated motif detectors so explanations read like a chess teacher rather than a centipawn graph."
+  - q: "Does Chessful require an internet connection or account?"
+    a: "No. Chessful does not require internet, an account, or matchmaking infrastructure. All forty opponents and the analysis layer run on-device, so you can play on a flight, in a kitchen, or between meetings without exposing a ranking attached to your name."
+  - q: "Is Chessful a replacement for chess.com or lichess?"
+    a: "No. Chessful does not offer ranked play, live human matchmaking, or leaderboards. It is designed for the player who wants to improve quietly against varied AI opponents with readable explanations. For ranked human play, chess.com and lichess remain the right tools."
+mentioned_apps:
+  - chessful
 read_time: "5 min read"
 excerpt: "The story of Chessful's 40 AI opponent personalities — why playing 'the engine at level 7' is unsatisfying, what it took to give each opponent a recognizable style, and how plain-language post-game analysis ended up being the feature users mention most."
 ---
@@ -12,7 +24,7 @@ I learned chess from my grandfather and never got past competent. The reason I b
 
 The app shipped with two features that took disproportionate engineering effort. One was the post-game analysis, which is the feature users actually mention. The other was forty distinct AI opponents, which is the feature that quietly carries everything else. This is the post about both.
 
-## The opponent problem
+## What's wrong with the slider-based chess opponent?
 
 Most chess apps offer a slider. Level 1 (weak) to Level 20 (engine-strong). The slider feels reasonable until you play it for a week and realise something specific:
 

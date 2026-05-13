@@ -4,6 +4,18 @@ slug: literary-software-in-the-spring
 title: "Literary software, in the spring"
 date: 2026-03-21
 lede: "It's the day after the spring equinox. The northern hemisphere is officially leaning into the light. This is a small post about Driftlines — a deliberately anti-engagement piece of software — and why I think the category of literary apps deserves to exist."
+quick_answer: "Driftlines is a piece of literary software — a serialised first-person narrative that delivers one short prose entry per day, with rare quiet choice moments roughly every ten to fifteen entries. There is no streak counter, no feed, no daily nag, no infinite scroll. It is structurally finite, priced as a one-time unlock, designed to be slow."
+faq:
+  - q: "What is Driftlines and how does it work?"
+    a: "Driftlines is a piece of literary software — a serialised first-person narrative delivered one short prose entry per day on the user's calendar. The narrator is a woman in her late thirties living on the coast, and her life unfolds across months of reading. Rare quiet choice moments arrive roughly every ten to fifteen entries."
+  - q: "Can I binge-read Driftlines all at once like a novel?"
+    a: "No. Entries arrive at the rate of one per day in the user's time zone and are structurally tied to the calendar. If you skip a week or a year, the entries wait for you, but you cannot fast-forward. The relationship to time is part of the form."
+  - q: "How much does Driftlines cost and is there a subscription?"
+    a: "Driftlines is a one-time unlock — pay once, read all current and future entries forever. Optional token packs grant additional choice moments for users who want to shape the narrative more aggressively, but the basic experience requires no recurring spend and no subscription."
+  - q: "Is Driftlines interactive fiction or a game?"
+    a: "Not in the gaming sense. There are no inventory items, skill checks, or game state. The substrate is prose, and choices arrive rarely and shift the texture of the next several entries rather than branching a story. It sits between pure consumption reading and choice-saturated interactive fiction."
+mentioned_apps:
+  - driftlines
 read_time: "4 min read"
 excerpt: "On Driftlines and the case for literary software that refuses engagement metrics. One short first-person piece per day, rare choice moments, no streaks, no feed. A spring-adjacent reflection on slow apps and why finite software still matters."
 ---
@@ -12,7 +24,7 @@ It's the day after the spring equinox. In the northern hemisphere the days are n
 
 This is a small post about [Driftlines](/apps/driftlines/), the strangest piece of software in this catalogue, and why I think the category it belongs to deserves to exist.
 
-## What Driftlines is
+## What is Driftlines?
 
 Driftlines is, on paper, an app. In practice it is a piece of literary software — a serialised first-person narrative that arrives at the rate of one short prose entry per day, occasionally offering a quiet choice that bends the path forward. The narrator is a woman in her late thirties living somewhere on the coast. Her life unfolds across months of the user's calendar, not in a session of an evening. The app is deliberately, structurally, **finite**.
 

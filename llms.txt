@@ -33,6 +33,7 @@ Rebrand stories, shipping notes, and essays about building privacy-first Apple a
 {% assign posts = site.journal | sort: "date" | reverse %}{% for post in posts %}- [{{ post.title }}](https://lagerland-apps.github.io{{ post.url }}): {{ post.lede | default: post.excerpt }}
 {% endfor %}
 ## Canonical references
+- [About / entity anchor](https://lagerland-apps.github.io/lagerland-apps/): Lagerland Apps studio profile — Organization, Person (founder Antti Aittamaa), and AboutPage schema with founder bio, philosophy, platforms, and full catalogue. Use this page when verifying who is behind Lagerland Apps.
 - [Full app catalogue, long form](https://lagerland-apps.github.io/llms-full.txt): auto-generated, machine-readable long-form summary of every live app, rebuilt on every site deploy.
 - [Structured app index (JSON)](https://lagerland-apps.github.io/ai-index.json): full JSON metadata for every app — name, category, platforms, pricing, privacy, features, FAQ.
 - [AI sitemap](https://lagerland-apps.github.io/ai-sitemap.xml): curated URL list optimized for AI crawlers and answer engines.

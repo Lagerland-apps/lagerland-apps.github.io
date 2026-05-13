@@ -4,6 +4,18 @@ slug: i-will-not-ask-for-your-bank-login
 title: "I will not ask for your bank login"
 date: 2026-01-31
 lede: "It's the last day of January and the bank-aggregator apps are advertising themselves into every podcast in America. The pitch is convenience. The price is your read access to your own checking account. AllPaid takes the other path on purpose."
+quick_answer: "Bill tracker apps that ask for bank logins route credentials through aggregators like Plaid, granting persistent read access to every transaction in the account — far beyond the recurring charges the user actually wants surfaced. AllPaid avoids this entirely. It is manual-first, stores bills locally on the device, has no account system, and never connects to a bank."
+faq:
+  - q: "Is there a bill tracker that does not require connecting to my bank?"
+    a: "AllPaid is a manual-first iOS bill and subscription tracker that never connects to a bank or to an aggregator like Plaid. You type bills in once, and the app stores them locally on the device with no account, no email collection, and no profile. Nothing leaves the phone unless you explicitly share it."
+  - q: "What does Plaid actually see when a bill app asks me to log in to my bank?"
+    a: "Plaid stores credentials or an OAuth token derived from them and gains persistent read access to every transaction in the account, not only recurring charges. That access continues until you revoke it. Aggregators are regulated businesses and the data feeds their broader product surface, which is rarely visible at onboarding."
+  - q: "Will AllPaid catch forgotten subscriptions I do not remember paying for?"
+    a: "No. That is the one case where a bank-linked app has a real edge, and AllPaid is honest about it. If finding forgotten charges from years ago is your primary need, an aggregator-based tool is the better fit. AllPaid is for the user who knows roughly what they pay for and wants reminders, not surveillance."
+  - q: "How much does AllPaid cost?"
+    a: "AllPaid is $1.99 a month or $24.99 lifetime. There is no required account, no email signup, no third-party tracking, and no advertising SDKs. Bills are stored locally on the device, with calendar views, partner sharing, widgets, and Siri integration available without any cloud account."
+mentioned_apps:
+  - allpaid
 read_time: "5 min read"
 excerpt: "Most modern bill-tracking apps connect to your bank through Plaid or a similar aggregator. AllPaid is intentionally manual-first. This post explains the structural reasons against bank linking, what users actually trade away, and why a manual entry tool can compete on convenience anyway."
 ---
@@ -14,7 +26,7 @@ It is the last Saturday of January. I have just done my own taxes for the year, 
 
 [AllPaid](/apps/allpaid/), the bill-tracking and subscription-management app this studio ships, does not have that flow and is not going to. This is the post explaining why.
 
-## What "log in to your bank" actually does
+## What does "log in to your bank" actually do?
 
 When a non-bank app asks you to log in to your bank, what's happening underneath isn't quite what most users think.
 

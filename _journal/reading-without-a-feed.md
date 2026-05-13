@@ -4,6 +4,20 @@ slug: reading-without-a-feed
 title: "Reading without a feed: a quiet year with Wikipedia"
 date: 2026-02-07
 lede: "I deleted my last social-feed app in late 2024. The hardest part wasn't withdrawal. It was rebuilding a habit of reading something, anything, in the small windows that used to be filled by scrolling. WanderWiki was, more than anything else, the tool I built to give that habit somewhere to live."
+quick_answer: "WanderWiki is a calm Wikipedia client built as a feed replacement. It produces For-You-style relevance from explicit interest tags the user picks, never from behavioural tracking of taps or read time. A Today-in-History view gives the day a small editorial anchor. Articles are prefetched for full offline reading on flights. No account, no infinite scroll."
+faq:
+  - q: "What is a good app to replace social media feeds?"
+    a: "WanderWiki is a calm Wikipedia client built specifically to fill the small windows that used to be social-feed time. Sessions are short, finite, and end when you are satisfied rather than when the algorithm runs out of bait. There is no infinite scroll and no behavioural tracking."
+  - q: "How does WanderWiki personalise without tracking me?"
+    a: "WanderWiki asks the user to tap interest tags — natural history, architecture, jazz, cycling, and so on — during a one-screen onboarding, and weights articles against those declared preferences. It never logs which articles you read or skip. There is no behavioural model because there is no behavioural data."
+  - q: "Does WanderWiki work offline on a plane?"
+    a: "Yes. WanderWiki prefetches articles on Wi-Fi so the offline UI is identical to the online one. The interest-based feed and the Today-in-History view both work without a connection. Articles open instantly during a flight, which is the moment a feed replacement is most valuable."
+  - q: "Does WanderWiki require a Wikipedia account?"
+    a: "No. WanderWiki has no account, no signup, and no Wikipedia login. It reads public Creative Commons content from Wikipedia directly. There is no infinite scroll, no streak counter, no notification engineering, and no profile attached to your reading."
+mentioned_apps:
+  - wanderwiki
+  - driftlines
+  - calm-2048
 read_time: "5 min read"
 excerpt: "An essay about replacing feed-based reading with a calmer Wikipedia client. Why ‘For-You without behavioral tracking’ is technically possible, what offline reading enables, and why a Today-in-History feed is the one piece of editorial scaffolding the app does keep."
 ---
@@ -14,7 +28,7 @@ The hard part wasn't withdrawal. The hard part was that there was nothing else t
 
 [WanderWiki](/apps/wanderwiki/) is, more than anything else in this catalogue, the app I built for that hand and that hole.
 
-## What I wanted
+## What did I want from a reading app?
 
 The brief I wrote for myself was small. I wanted an app that:
 

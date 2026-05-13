@@ -4,6 +4,19 @@ slug: read-only-revenue-on-the-iphone
 title: "A read-only dashboard for App Store revenue, on the iPhone"
 date: 2026-04-18
 lede: "Your accountant doesn't need write-access to App Store Connect. Your designer doesn't either. Your spouse, your co-founder, your weekly bookkeeping flow — none of them need to be able to change your app's metadata in order to know how it's selling. AppMeta Pulse is the small iPhone app I built when I got tired of explaining that distinction."
+quick_answer: "AppMeta Pulse is a glanceable iPhone dashboard for App Store revenue, subscription health, refunds, and country-level rollups, sitting on the read-only endpoints of the App Store Connect API. Studio owners can share scoped tokens with an accountant or co-founder without granting any developer-account role. Free tier covers one app; Pro is $17.99 lifetime."
+faq:
+  - q: "How can I check my App Store revenue on my iPhone?"
+    a: "AppMeta Pulse is an iPhone dashboard that sits on the read-only revenue endpoints of the App Store Connect API. It surfaces daily, weekly, and monthly revenue per app, subscription health, refunds, and country-level rollups. The widget on the Home Screen shows yesterday's revenue and the week-over-week delta in three seconds."
+  - q: "Can I share App Store revenue with my accountant without giving them full access?"
+    a: "Yes. AppMeta Pulse generates scoped read-only tokens the studio owner can share with an accountant, co-founder, or designer. They install Pulse and see the same numbers without ever logging in to App Store Connect or being granted a role on the developer account. Revoking access rotates the token."
+  - q: "What is the difference between AppMeta and AppMeta Pulse?"
+    a: "AppMeta is the native Mac client for the write surface of App Store Connect — metadata editing, review responses, version submission. AppMeta Pulse is the iPhone-side read companion focused only on revenue, subscription health, and country rollups. They share an API surface and a pricing philosophy but solve different jobs."
+  - q: "How much does AppMeta Pulse cost?"
+    a: "AppMeta Pulse has a free tier covering single-app revenue for the last 30 days with no sharing. Pro unlocks portfolio view, longer history, sharing, and widgets, priced at $0.99 a month, $8.99 a year, or $17.99 lifetime. The lifetime tier is the recommended option for a tool used briefly but relied on."
+mentioned_apps:
+  - appmeta-pulse
+  - appmeta
 read_time: "5 min read"
 excerpt: "AppMeta Pulse is the iPhone-side companion to AppMeta — a read-only revenue, subscription, and refund dashboard for indie iOS developers. This post explains the case for a glanceable revenue tool, why read-only access matters for sharing portfolio metrics with a co-founder or accountant, and the freemium pricing structure."
 ---
@@ -26,7 +39,7 @@ In practice, what most indies do is ship a screenshot of their numbers via Slack
 
 AppMeta Pulse exists to be the answer.
 
-## What read-only revenue access looks like
+## What does read-only revenue access look like?
 
 The bet behind AppMeta Pulse is that the *most-asked-for* thing — *"how is the app selling this week?"* — should be its own glanceable tool, separate from the editorial surface where you change pricing or push a new version.
 

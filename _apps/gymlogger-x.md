@@ -3,6 +3,7 @@ layout: app
 slug: gymlogger-x
 name: "GymLogger X"
 tagline: "Strength training. Logged fast."
+quick_answer: "GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch. It includes 1,500+ exercises with animated demos, a Smart Program Creator for PPL or Upper/Lower routines, plateau detection, and real wrist-based set logging. Built for lifters, not social feeds. Free with Pro from $17.99/year or $44.99 lifetime. No ads, no tracking, no account."
 category: fitness
 platforms: ["iOS"]
 status: live

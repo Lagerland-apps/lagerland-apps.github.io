@@ -3,6 +3,7 @@ layout: app
 slug: screenflow-studio
 name: "ScreenFlow Studio"
 tagline: "Professional App Store screenshots for Mac."
+quick_answer: "ScreenFlow Studio is a professional App Store screenshot maker for Mac. It uses real 3D Metal-rendered device models, percentage-based layouts that scale across every device size, AI translation for localized markets, and direct upload to App Store Connect — no browser required. Built for indie iOS and macOS developers. One-time $22.99 purchase, Family Sharing included. No tracking."
 category: graphics
 platforms: ["macOS"]
 status: live

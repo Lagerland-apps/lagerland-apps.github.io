@@ -3,6 +3,7 @@ layout: app
 slug: liftlog
 name: "LiftLog"
 tagline: "The lift log that feels like equipment."
+quick_answer: "LiftLog is a design-led strength training log for iPhone built around tabular numerics, haptic-rich workout sessions, and athlete-grade polish. It supports periodized programs (PPL, Upper/Lower, 5/3/1), tracks 1RM, volume, and Rep PRs at 1/3/5 reps. Free 7-day trial, no card. Pay-what-you-can one-time from $9.99 to $39.99. No subscription, no tracking, no account."
 category: fitness
 platforms: ["iOS"]
 status: live
@@ -18,8 +19,8 @@ icon: "/assets/icons/liftlog.png"
 og_image: "/assets/og/default.png"
 
 seo:
-  title: "LiftLog – Strength Training Log for iPhone | Pay What You Can"
-  description: "LiftLog is a design-led strength training log for iPhone. Free 7-day trial — no card, no auto-renew. Then choose your price ($9.99–$39.99). Tabular numerics, haptic workout sessions, periodized programs, PRs, 1RM analytics."
+  title: "LiftLog — Strength Training Log for iPhone | Pay What You Can"
+  description: "Design-led strength training log for iPhone. Free 7-day trial, no card. Choose your price ($9.99–$39.99) — periodized programs, 1RM analytics, haptic sets & PRs."
   keywords:
     - premium workout tracker iphone
     - design-led strength training app

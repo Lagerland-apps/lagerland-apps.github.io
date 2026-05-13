@@ -3,6 +3,7 @@ layout: app
 slug: mediakit
 name: "MediaKit"
 tagline: "Every media tool. One Mac app."
+quick_answer: "MediaKit is a native Mac app with 133 local tools for compressing, converting, and editing video, audio, images, PDFs, and archives. Drop any file and it picks the right tool — every operation runs on-device via Apple frameworks, never uploaded. Free 3-day trial; five core tools stay free forever, Pro unlocks the rest. No tracking, no account."
 category: utilities
 platforms: ["macOS"]
 status: live

@@ -3,6 +3,7 @@ layout: app
 slug: rightsplit
 name: "RightSplit"
 tagline: "Split bills from receipts."
+quick_answer: "RightSplit is a receipt-scanning bill splitter for iPhone, iPad, Mac, and Apple Vision Pro. Snap a photo of any restaurant or bar receipt, assign each item to the person who ordered it, split shared dishes, add tip, and send everyone their total via text or WhatsApp. Free with Pro from $1.99/year. No ads, no account, no tracking."
 category: finance
 platforms: ["iOS"]
 status: live
