@@ -1,0 +1,158 @@
+---
+layout: default
+permalink: /alternatives/chessly/
+title: "Chessly Alternative"
+quick_answer: "Chessful is a privacy-first iPhone, iPad, and Mac alternative to Chessly for players who want training derived from their own games rather than from celebrity-coached opening courses. Chessly ships Hikaru Nakamura's opening-repertoire video courses; Chessful ships adaptive training based on the specific mistake patterns in your own losses, with no celebrity content. Many improving players use both — Chessly for the opening curriculum, Chessful for the part of improvement that happens after you've memorised the lines."
+seo:
+  title: "Chessly Alternative — Chessful, Training Built From Your Own Games"
+  description: "A Chessly alternative built around adaptive training from your own losses rather than celebrity-coached opening courses. Plain-language mistake explanations, 40 AI opponents, no subscription required. Here's how Chessful and Chessly compare."
+  keywords:
+    - Chessly alternative
+    - Chessly Hikaru alternative
+    - Chessly opening courses alternative
+    - Chessful vs Chessly
+    - chess training without subscription
+    - adaptive chess training app
+    - chess training from your own games
+    - Stockfish iPhone offline
+---
+
+{%- assign app = site.apps | where: "slug", "chessful" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/alternatives/chessly/#webpage",
+  "url": "{{ site.url }}/alternatives/chessly/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Alternatives", "item": "{{ site.url }}/alternatives/" },
+      { "@type": "ListItem", "position": 3, "name": "Chessly alternative", "item": "{{ site.url }}/alternatives/chessly/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is the best Chessly alternative for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Chessful is the closest functional alternative to Chessly for the player who wants training rather than ranked play. Chessly ships opening-repertoire video courses by Hikaru Nakamura and other named coaches; Chessful ships an adaptive training queue derived from the specific mistake patterns in your own losses. Both run on iPhone, iPad, and Mac. The two are complementary — Chessly for opening curriculum, Chessful for the pattern-recognition work that happens after the openings are learned." } },
+    { "@type": "Question", "name": "Does Chessful have opening courses by Hikaru Nakamura?", "acceptedAnswer": { "@type": "Answer", "text": "No. Chessful does not ship any celebrity content — no Nakamura courses, no Caruana courses, no Grandmaster-authored material. The training engine is built on a different philosophy: rather than work through a Grandmaster's curated curriculum, Chessful detects the specific mistake patterns in your own games (using motif detectors on top of Stockfish output) and drills the patterns you're actually missing. The premise is that fixing your real losses outperforms watching strong players explain things you haven't experienced yet." } },
+    { "@type": "Question", "name": "How much does Chessful cost compared to Chessly?", "acceptedAnswer": { "@type": "Answer", "text": "Chessful's free tier is free forever with 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, and 3 training sessions per week — no ads. Premium is €2.99/month, €19.99/year, or €39.99 once for lifetime access with a 7-day free trial. Chessly is subscription-based with course bundles — typical pricing in the $99–$199/year range with individual course purchases also available. Chessful is dramatically cheaper, with the trade-off that you don't get Nakamura-coached opening curriculum." } },
+    { "@type": "Question", "name": "Can I use both Chessly and Chessful?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and many improving players do. They serve different parts of the improvement loop. Chessly is opening curriculum — work through a structured repertoire by a strong coach. Chessful is everything that happens after move 12: the middlegame mistakes, the defensive blind spots, the endgame technique errors that decide most club-level games. Players who use both typically run Chessly during dedicated opening-study sessions and Chessful for the games-and-training cycle in between." } },
+    { "@type": "Question", "name": "Does Chessful detect repertoire drift like Chessly's opening focus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. \"Repertoire drift\" is one of the thirty mistake motifs Chessful's classifier detects — when you deviate from your usual opening setup in a way that loses a tempo, allows an early piece exchange you don't normally allow, or transposes into a structure outside your repertoire. Chessful flags it and queues drilling. The difference vs Chessly is that Chessful tracks your actual repertoire from games you've played; Chessly teaches you a recommended repertoire from scratch." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Adaptive · Offline · No subscription required</p>
+    <h1 class="h1">A Chessly alternative<br><span class="gradient-text">built from the games you've actually played.</span></h1>
+    <p class="lead">
+      Chessly is the gold standard for celebrity-coached opening courses — Hikaru Nakamura and other strong coaches walking you through structured repertoires. Chessful is the opposite design philosophy: no celebrity content, no curriculum. Instead, training is derived from the specific mistake patterns in your own losses — including repertoire drift in the openings you actually play — drilled with spaced repetition. The two are complementary, not exclusive.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/apps/chessful/">See Chessful</a>
+      <a class="btn btn-secondary" href="#compare">Compare</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section id="compare" class="section reveal">
+  <h2 class="h2">How does Chessful compare to Chessly?</h2>
+  <p class="lead">They serve different parts of the improvement loop. Here's where each one fits.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Training source</div>
+      <div class="card-text"><strong>Chessful:</strong> Training queue generated from the mistakes in your own games, classified into about thirty motifs, drilled with spaced repetition.<br><br><strong>Chessly:</strong> Structured opening-repertoire courses by Hikaru Nakamura and other named coaches. Curriculum-led learning.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Celebrity content</div>
+      <div class="card-text"><strong>Chessful:</strong> None. No named Grandmaster content of any kind.<br><br><strong>Chessly:</strong> Nakamura's name is the marquee feature. Video courses presented by named strong coaches.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Scope</div>
+      <div class="card-text"><strong>Chessful:</strong> Tactics, defense, positional play, openings, endgames — all five skill dimensions, all derived from your games.<br><br><strong>Chessly:</strong> Openings primarily, with some middlegame and endgame coverage in specific courses.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Pricing</div>
+      <div class="card-text"><strong>Chessful:</strong> Free tier; Premium €2.99/mo, €19.99/yr, or €39.99 lifetime (7-day free trial).<br><br><strong>Chessly:</strong> Subscription-based course bundles, typically $99–$199/year. Individual courses also available for purchase.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Offline support</div>
+      <div class="card-text"><strong>Chessful:</strong> Fully offline. Stockfish, motif detectors, training engine all on-device.<br><br><strong>Chessly:</strong> Video courses require streaming (or download for offline). Account-based.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Account requirement</div>
+      <div class="card-text"><strong>Chessful:</strong> No account ever.<br><br><strong>Chessly:</strong> Account required for course progress and subscription management.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Honest verdict — different parts of the improvement loop</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Pick Chessful if you want…</div>
+      <ul class="bullets">
+        <li>Training derived from the patterns you actually miss, not a generic curriculum</li>
+        <li>Plain-language mistake explanations on every game</li>
+        <li>40 distinct AI opponents to play against in-app</li>
+        <li>Fully offline operation with no account, no subscription required</li>
+        <li>Repertoire-drift detection on the openings you already play</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Pick Chessly if you want…</div>
+      <ul class="bullets">
+        <li>Structured opening courses by Hikaru Nakamura and other named coaches</li>
+        <li>Video instruction with on-screen explanation of repertoire choices</li>
+        <li>Curriculum-led learning when you don't yet have a settled repertoire</li>
+        <li>Direct exposure to a strong coach's repertoire philosophy</li>
+      </ul>
+    </div>
+  </div>
+  <p class="lead" style="margin-top:var(--s-4);text-align:center;">Many improving players run both — Chessly for the openings, Chessful for everything that happens after move 12.</p>
+</section>
+
+{% if app %}
+<section class="section reveal">
+  <h2 class="h2">About Chessful</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>What is the best Chessly alternative for iPhone?</summary><div class="faq-a">Chessful is the closest functional alternative to Chessly for the player who wants training rather than ranked play. Chessly ships opening-repertoire video courses by Hikaru Nakamura and other named coaches; Chessful ships an adaptive training queue derived from the specific mistake patterns in your own losses. The two are complementary — Chessly for opening curriculum, Chessful for the pattern-recognition work that happens after the openings are learned.</div></details>
+    <details class="faq-item"><summary>Does Chessful have opening courses by Hikaru Nakamura?</summary><div class="faq-a">No. Chessful does not ship any celebrity content. The training engine is built on a different philosophy: rather than work through a Grandmaster's curated curriculum, Chessful detects the specific mistake patterns in your own games and drills the patterns you're actually missing.</div></details>
+    <details class="faq-item"><summary>How much does Chessful cost compared to Chessly?</summary><div class="faq-a">Chessful's free tier is free forever with no ads. Premium is €2.99/month, €19.99/year, or €39.99 once for lifetime access with a 7-day free trial. Chessly is subscription-based with course bundles typically in the $99–$199/year range.</div></details>
+    <details class="faq-item"><summary>Can I use both Chessly and Chessful?</summary><div class="faq-a">Yes, and many improving players do. Chessly is opening curriculum; Chessful is everything that happens after move 12. Players who use both typically run Chessly during dedicated opening-study sessions and Chessful for the games-and-training cycle in between.</div></details>
+    <details class="faq-item"><summary>Does Chessful detect repertoire drift like Chessly's opening focus?</summary><div class="faq-a">Yes. "Repertoire drift" is one of the thirty mistake motifs Chessful's classifier detects — when you deviate from your usual opening setup. The difference vs Chessly is that Chessful tracks your actual repertoire from games you've played; Chessly teaches you a recommended repertoire from scratch.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Try it</p>
+  <h2 class="h2">Open Chessful</h2>
+  <p class="lead">Training built from the games you've actually played. No celebrity required.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/apps/chessful/">Learn about Chessful</a>
+  </div>
+</section>
