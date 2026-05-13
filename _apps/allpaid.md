@@ -22,7 +22,7 @@ og_image: "/assets/og/allpaid.png"
 
 seo:
   title: "AllPaid — Bill Tracker for iPhone, No Bank Login"
-  description: "Bill & subscription tracker for iPhone. 31 services auto-detected (Netflix, ChatGPT, rent, utilities), calendar, widgets, Siri. $24.99 lifetime. No bank login."
+  description: "Bill tracker for iPhone — no bank login. 31 services auto-detected (Netflix, ChatGPT, rent, utilities). $24.99 lifetime. No subscription required."
   keywords:
     - bill tracker app
     - bill tracker iPhone no bank login
@@ -53,7 +53,7 @@ who_for:
   - "You've missed a due date in the last six months and it cost you money"
   - "You want a calm bill overview without opening your bank app"
   - "You track 10–50 subscriptions and need a clear 'what am I actually paying for' view"
-  - "You share some bills with a partner or roommate and want a clean per-bill share flow"
+  - "You want per-bill share with a partner or roommate via the iOS share sheet — no shared account, no Family Sharing required"
   - "You refuse to connect your real bank accounts to a third-party budgeting app via Plaid"
 
 who_not_for:
@@ -68,6 +68,25 @@ alternatives_to:
   - "Bobby"
   - "Subby"
   - "Chronicle Bills"
+
+founder:
+  entity_type: "Organization"
+  name: "Lagerland Apps"
+  role: "Independent Apple developer · Finland · one-person studio since 2025"
+  location: "Finland"
+  overline: "Why we built this"
+  heading: "For the user who already filtered out bank-linked apps."
+  story: "AllPaid exists because every other bill tracker we tried wanted a bank login. Plaid grants any app holding that login persistent read access to every transaction in the account — far beyond the recurring charges users actually want surfaced. We took the other path: a manual-first tracker with a 31-service catalog that pre-fills the boring parts in seconds. Bills live on the device in SwiftData. No account. No upload. The trade-off is honest — AllPaid will not catch a forgotten auto-renewal you never typed in. Everything it does catch, you control."
+  signals:
+    - "Local SwiftData storage; the Privacy Manifest declares zero tracking domains and no required-reason APIs beyond standard local storage and notifications"
+    - "31 recognised services across 10 categories — catalog is hard-coded in the app binary, matched in English plus Finnish and German keywords"
+    - "Funded by honest paid software — no ads, no investor pressure, no aggregator integrations"
+    - "15 live apps in the catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
+  external_link:
+    label: "Read the Lagerland studio backstory →"
+    href: "/lagerland-apps/"
+  support_email: "lagerland.apps@proton.me"
+  response_time: "Support emails go to one inbox and are answered personally — usually within a day."
 
 value_points:
   - title: "Smart bill detection (no bank link)"
@@ -161,6 +180,10 @@ comparison_table:
       values: ["0", "Standard analytics + ads SDKs", "Standard analytics", "Standard analytics", "n/a"]
     - feature: "Bill negotiation service"
       values: ["No — out of scope", "Yes (paid, % of savings)", "No", "No", "No"]
+    - feature: "Built-in subscription cancellation flow"
+      values: ["No — out of scope", "Yes — Premium feature", "No", "No", "No"]
+    - feature: "Catches forgotten / auto-renewing subscriptions you never entered"
+      values: ["No — manual entry only", "Yes — from your transactions", "No", "No", "No"]
   footnote: "Competitor pricing and features reflect each app's public landing page and App Store description as of 2026-05. Rocket Money pricing is the publicly listed Premium range; the negotiation service is a separate fee. Apps change frequently — verify current pricing on the App Store before switching."
 
 plateau_disclosure:
@@ -254,6 +277,7 @@ support:
 release:
   first_release: "2026-01-01"
   last_updated: "2026-05-13"
+  last_audited: "2026-05-13"
 
 ratings:
   value: "5.0"
