@@ -20,7 +20,7 @@ og_image: "/assets/og/rightsplit.png"
 
 seo:
   title: "RightSplit – Receipt Scanner & Bill Splitter App"
-  description: "RightSplit scans receipts, detects items, and splits bills fairly. Item-based splitting, shared dishes, tip calculation, and instant sharing via text or WhatsApp. No ads."
+  description: "Scan a receipt, detect items, split the bill fairly on iPhone. Item-based splits, shared dishes, tip calc, instant share via text or WhatsApp. No ads."
   keywords:
     - bill splitter app
     - receipt scanner splitter

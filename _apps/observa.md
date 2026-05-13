@@ -19,7 +19,7 @@ icon: "/assets/icons/observa.png"
 og_image: "/assets/og/observa.png"
 
 seo:
-  title: "Observa — Private Apple Health Insights for Sleep, Energy & Recovery"
+  title: "Observa — Private Apple Health Sleep & Recovery Insights"
   description: "Turn Apple Health data into plain-English insights about sleep, HRV, energy & recovery. Fully on-device, no ads, no account. Free, Pro from €2.99/mo."
   keywords:
     - health insights app

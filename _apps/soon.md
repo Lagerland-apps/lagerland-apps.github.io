@@ -19,7 +19,7 @@ icon: "/assets/icons/soon.png"
 og_image: "/assets/og/soon.png"
 
 seo:
-  title: "Soon. — Countdown & Planner for iPhone | Trips, Weddings, Birthdays"
+  title: "Soon. — Countdown & Planner App for iPhone (Trips, Weddings)"
   description: "Turn trips, weddings, birthdays, and milestones into living countdowns with photo backgrounds, live weather, smart checklists, and widgets for every screen."
   keywords:
     - countdown app iphone

@@ -19,8 +19,8 @@ icon: "/assets/icons/aftershift.png"
 og_image: "/assets/og/aftershift.png"
 
 seo:
-  title: "AfterShift – Sleep & Recovery App for Shift Workers"
-  description: "AfterShift tracks sleep, naps, and fatigue in the context of your shifts. Recovery scores, caffeine timing, and trend insights — built for nurses, first responders, and night workers."
+  title: "AfterShift — Shift Work Sleep & Recovery Tracker for iPhone"
+  description: "Shift-aware sleep & recovery tracker for iPhone. Logs naps, fatigue, rotations. Recovery scores, caffeine timing — for nurses, pilots, night staff."
   keywords:
     - shift work sleep app
     - sleep tracker shift workers

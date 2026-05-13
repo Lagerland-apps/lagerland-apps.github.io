@@ -20,7 +20,7 @@ og_image: "/assets/og/screenflow-studio.png"
 
 seo:
   title: "ScreenFlow Studio – App Store Screenshot Maker for Mac"
-  description: "Create professional App Store screenshots with real 3D device models, Metal rendering, AI translation, and direct App Store Connect upload. One-time purchase for Mac."
+  description: "Pro App Store screenshots on Mac: real 3D device models, Metal rendering, AI translation, direct App Store Connect upload. One-time purchase, no subscription."
   keywords:
     - app store screenshot maker
     - app store screenshot tool

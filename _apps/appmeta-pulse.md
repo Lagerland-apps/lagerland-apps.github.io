@@ -19,8 +19,8 @@ icon: "/assets/icons/appmeta-pulse.png"
 og_image: "/assets/og/appmeta-pulse.png"
 
 seo:
-  title: "AppMeta Pulse — App Store Connect Revenue Dashboard for iPhone, iPad & Mac"
-  description: "Read-only App Store Connect companion. Check revenue, subscriptions, downloads & refunds in seconds on iPhone, iPad or Mac. No ads, no tracking — from $0.99/mo."
+  title: "AppMeta Pulse — App Store Connect Revenue for iPhone & Mac"
+  description: "Read-only App Store Connect revenue dashboard. Check subscriptions, downloads & refunds in seconds on iPhone, iPad or Mac. From $0.99/mo. No tracking."
   keywords:
     - app store connect dashboard
     - app revenue tracker

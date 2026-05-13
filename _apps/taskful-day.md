@@ -19,7 +19,7 @@ icon: "/assets/icons/taskful-day.png"
 og_image: "/assets/og/taskful-day.png"
 
 seo:
-  title: "Taskful Day — Calm Daily Planner for iPhone, iPad & Mac (No Streaks)"
+  title: "Taskful Day — Calm Daily Planner for iPhone, iPad & Mac"
   description: "Calm daily planner for iPhone, iPad & Mac. Realistic day plans without streaks or guilt. Focus sessions, voice capture, iCloud sync. Universal Purchase, no ads."
   keywords:
     - daily planner app

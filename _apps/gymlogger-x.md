@@ -20,7 +20,7 @@ og_image: "/assets/og/gymlogger-x.png"
 
 seo:
   title: "GymLogger X – Strength Training Workout Log & Tracker"
-  description: "GymLogger X is a fast, minimalist workout tracker for lifters. 1,500+ exercises, Apple Watch logging, smart programs, plateau detection, and coach programs. No ads."
+  description: "Fast, minimalist workout tracker for lifters. 1,500+ exercises, Apple Watch logging, smart programs, plateau detection, coach programs. No ads, no account."
   keywords:
     - strength training app
     - workout tracker iPhone

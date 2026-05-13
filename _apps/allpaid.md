@@ -19,8 +19,8 @@ icon: "/assets/icons/allpaid.png"
 og_image: "/assets/og/allpaid.png"
 
 seo:
-  title: "AllPaid — Calm Bill & Subscription Tracker for iPhone (No Ads)"
-  description: "Track bills, subscriptions & due dates in one calm view on iPhone. Smart detection, calendar, widgets, Siri & spending analytics. No ads, no tracking, no account."
+  title: "AllPaid — Calm Bill & Subscription Tracker for iPhone"
+  description: "Track bills, subscriptions & due dates in one calm view on iPhone. Smart detection, calendar, widgets, Siri & analytics. No ads, no tracking, no account."
   keywords:
     - bill tracker app
     - bill reminder app

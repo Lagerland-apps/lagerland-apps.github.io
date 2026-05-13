@@ -19,8 +19,8 @@ icon: "/assets/icons/liftlog.png"
 og_image: "/assets/og/default.png"
 
 seo:
-  title: "LiftLog — Strength Training Log for iPhone | Pay What You Can"
-  description: "Design-led strength training log for iPhone. Free 7-day trial, no card. Choose your price ($9.99–$39.99) — periodized programs, 1RM analytics, haptic sets & PRs."
+  title: "LiftLog — Pay-What-You-Can Strength Training Log for iPhone"
+  description: "Design-led strength log for iPhone. Free 7-day trial, no card. Pay-what-you-can $9.99–$39.99 — periodized programs, 1RM analytics, haptic sets, PRs."
   keywords:
     - premium workout tracker iphone
     - design-led strength training app

@@ -20,7 +20,7 @@ og_image: "/assets/og/wanderwiki.png"
 
 seo:
   title: "WanderWiki – Swipe Through Wikipedia & Discover Knowledge"
-  description: "WanderWiki turns Wikipedia into a beautiful swipe-based discovery app. Random articles, personalized topics, Today in History, and offline reading. No ads, no algorithms."
+  description: "Wikipedia as a beautiful swipe discovery app for iPhone. Random articles, personalised topics, Today in History, offline reading. No ads, no algorithms."
   keywords:
     - Wikipedia discovery app
     - swipe Wikipedia app

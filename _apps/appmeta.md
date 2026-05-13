@@ -19,8 +19,8 @@ icon: "/assets/icons/appmeta.png"
 og_image: "/assets/og/appmeta.png"
 
 seo:
-  title: "AppMeta – Native App Store Connect Editor for Mac"
-  description: "AppMeta is a native macOS App Store Connect client with ASO tools, AI keyword suggestions, diff-based sync, review management, TestFlight, and full submission flow. Free to try."
+  title: "AppMeta — Native Mac Metadata Editor for App Store Connect"
+  description: "Native Mac app for App Store Connect metadata: localisations, AI keywords, diff-based submit, review management, TestFlight. Edit locally, not in a browser."
   keywords:
     - app store connect Mac app
     - app store connect alternative
