@@ -236,6 +236,9 @@ layout: default
   {% comment %} ===== QUICK ANSWER (AEO direct-extraction block) ===== {% endcomment %}
   {% include quick-answer.html %}
 
+  {% comment %} ===== JUMP NAV (in-page anchors — renders when page.jump_nav is true) ===== {% endcomment %}
+  {% include jump-nav.html app=page %}
+
   {% comment %} ===== TRUST BAR ===== {% endcomment %}
   <section class="section reveal">
     <div class="trust-bar">

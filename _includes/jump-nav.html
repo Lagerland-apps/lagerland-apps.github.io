@@ -1,0 +1,29 @@
+{%- comment %}
+  In-page anchor nav. Improves dwell time and exposes "Jump to"
+  sitelinks in Google SERP when the page is large enough to warrant
+  in-page navigation.
+
+  Renders only when the host page sets `jump_nav: true` in frontmatter
+  (so existing pages that don't want it stay unchanged). Anchors are
+  conditional — they appear only if the corresponding section actually
+  exists on the page.
+{%- endcomment -%}
+{%- if include.app.jump_nav -%}
+{%- assign anchors = "" | split: "" -%}
+{%- if include.app.how_it_works and include.app.how_it_works.steps %}{%- assign anchors = anchors | push: "how-it-works|How it works" -%}{%- endif -%}
+{%- if include.app.example_insights and include.app.example_insights.cards %}{%- assign anchors = anchors | push: "insights|Insights" -%}{%- endif -%}
+{%- if include.app.features %}{%- assign anchors = anchors | push: "features|Capabilities" -%}{%- endif -%}
+{%- if include.app.plans %}{%- assign anchors = anchors | push: "pricing|Pricing" -%}{%- endif -%}
+{%- if include.app.faq %}{%- assign anchors = anchors | push: "faq|FAQ" -%}{%- endif -%}
+{%- if anchors.size > 0 -%}
+<nav class="jump-nav reveal" aria-label="On this page">
+  <span class="jump-nav__label">On this page:</span>
+  <ul class="jump-nav__list">
+    {%- for pair in anchors -%}
+      {%- assign parts = pair | split: "|" -%}
+      <li><a href="#{{ parts[0] }}">{{ parts[1] }}</a></li>
+    {%- endfor -%}
+  </ul>
+</nav>
+{%- endif -%}
+{%- endif -%}

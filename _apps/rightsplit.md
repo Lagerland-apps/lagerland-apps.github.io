@@ -128,6 +128,49 @@ how_it_works:
     - title: "Send everyone their part"
       detail: "Tap Share. Each person gets a clean line via iMessage, WhatsApp, or copy-paste — 'You owe $23.40: salad, glass of wine, share of bottle, tip.' From scan to settled in under a minute."
 
+plateau_disclosure:
+  title: "How RightSplit calculates fair tips, splits, and rounding"
+  rule: "Each person's subtotal is the sum of the items they ordered plus their proportional share of any shared items (a bottle split four ways is 25% to each person who shared it). Their tip is calculated as (their subtotal ÷ total subtotal) × the tip amount you chose — so the person who ordered the $14 salad pays a smaller share of the tip than the person who ordered the $48 steak. Final per-person totals are rounded to the nearest cent with a fairness pass: if rounding leaves a one-cent gap, RightSplit assigns the cent to the highest subtotal, never charging a person more than their share rounded up."
+  what_it_does_not_do: "It does not round each person's tip down (which would silently under-collect the total), apply a uniform tip across diners (which is mathematically just equal-splitting in disguise), or 'distribute' a service charge that's already printed on the receipt (RightSplit reads the printed total — if your receipt includes service, that's the number it works from)."
+  notes:
+    - "Tax handling matches the receipt: tax-exclusive receipts (US standard) distribute tax proportionally; tax-inclusive receipts (EU/UK VAT) use the printed line totals directly."
+    - "If you tap a line item to correct a mis-read, the corrected value flows through the splits and tip math immediately — no need to re-scan."
+    - "All math runs on-device. No prices, totals, or contact data are uploaded — receipt OCR is Apple's on-device Vision framework."
+
+training_vocabulary:
+  overline: "Speaks the language"
+  heading: "Built for people who actually want to look at the math"
+  intro: "RightSplit shows its work — every value on screen is something you can verify against the original receipt photo."
+  collapse_by_default: true
+  groups:
+    - heading: "Receipt formats"
+      items:
+        - "Thermal receipts — the classic restaurant printout (most common, scans best)"
+        - "Electronic / digital receipts — emailed PDFs, screenshots of mobile receipts"
+        - "Bar tabs and itemised counters — taproom totals with abbreviated item names"
+        - "Photo of a screen — when a server shows you the bill on a tablet"
+        - "Faded or wrinkled receipts — OCR works best on flat, well-lit shots"
+    - heading: "Tip conventions"
+      items:
+        - "United States: 18–22% expected, applied to pre-tax subtotal in most states"
+        - "United Kingdom: 12.5% service charge often included on the bill itself"
+        - "Continental Europe: service usually included; small rounding-up tip optional"
+        - "Japan / South Korea: no tipping — the line is omitted entirely"
+        - "RightSplit handles all of the above: pick the tip percentage or set it to 0"
+    - heading: "Bill math"
+      items:
+        - "Equal split — divide total by N people (the math RightSplit Free does)"
+        - "Item-based split — each person pays for what they ordered (the Pro feature)"
+        - "Proportional tip — tip distributed by share of subtotal, not by headcount"
+        - "Fair rounding — sub-cent gaps assigned to highest subtotal, never short"
+        - "VAT / tax-inclusive vs tax-exclusive math — handled per-receipt"
+    - heading: "Languages &amp; currency"
+      items:
+        - "Apple Vision framework recognizes text in 18+ languages on-device"
+        - "Reads currency symbols ($, €, £, ¥, ₩, ₹, etc.) as printed"
+        - "No live currency conversion — splits stay in the receipt's currency"
+        - "Decimal separators: handles both 1,234.56 (US) and 1.234,56 (EU) formats"
+
 comparison_table:
   intro: "RightSplit versus the three most-searched bill splitters on the things people actually pick a tool for: how you pay for it, what you trade away to use it, and whether everyone at the table needs to install something."
   competitors:

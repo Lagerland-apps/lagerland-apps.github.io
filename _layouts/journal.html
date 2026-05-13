@@ -17,14 +17,17 @@ layout: default
   "url": "{{ post_url }}",
   "image": "{{ site.url }}{{ og_image }}",
   "inLanguage": "en",
-  "author": {
-    "@type": "Person",
-    "@id": "{{ site.url }}/lagerland-apps/#founder",
-    "name": "Antti Aittamaa"
-  },
+  "author": { "@id": "{{ site.url }}/#organization" },
   "publisher": { "@id": "{{ site.url }}/#organization" },
   "isPartOf": { "@id": "{{ site.url }}/#website" },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ post_url }}" }
+  {%- if page.mentioned_apps and page.mentioned_apps.size > 0 -%},
+  "mentions": [
+    {%- for slug in page.mentioned_apps -%}
+      { "@id": "{{ site.url }}/apps/{{ slug }}/#app" }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+  {%- endif %}
   {%- if page.quick_answer %},
   "speakable": {
     "@type": "SpeakableSpecification",

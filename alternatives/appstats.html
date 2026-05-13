@@ -1,0 +1,159 @@
+---
+layout: default
+permalink: /alternatives/appstats/
+title: "AppStats Alternative"
+quick_answer: "AppMeta Pulse is a read-only App Store Connect dashboard for iPhone, iPad, and Mac that targets the same indie iOS developer audience as AppStats. Both keep credentials on-device and use Apple's official App Store Connect API. The substantive differences: AppMeta Pulse costs roughly a third the monthly price ($0.99/mo vs $2.99/mo), and declares zero data collection on its App Store privacy label, where AppStats' label declares usage data and diagnostics. AppStats has dedicated daily notifications and richer home-screen widgets — keep AppStats if those are deciding features for you."
+seo:
+  title: "AppStats Alternative — AppMeta Pulse for iPhone"
+  description: "AppMeta Pulse vs AppStats — same audience, lower price, truly zero data collection. Honest side-by-side for indie iOS developers choosing an App Store Connect dashboard."
+  keywords:
+    - AppStats alternative
+    - alternative to AppStats iPhone
+    - AppMeta Pulse vs AppStats
+    - app store revenue tracker iPhone
+    - read-only App Store Connect
+    - indie iOS developer dashboard
+    - app store dashboard zero tracking
+    - cheap App Store Connect iPhone app
+    - app store connect API client iPhone
+---
+
+{%- assign app = site.apps | where: "slug", "appmeta-pulse" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/alternatives/appstats/#webpage",
+  "url": "{{ site.url }}/alternatives/appstats/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Alternatives", "item": "{{ site.url }}/alternatives/" },
+      { "@type": "ListItem", "position": 3, "name": "AppStats alternative", "item": "{{ site.url }}/alternatives/appstats/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is the best alternative to AppStats for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is a read-only App Store Connect dashboard built for the same indie iOS developer audience. Both apps use Apple's official App Store Connect API and store credentials on-device. The differences are price (AppMeta Pulse is $0.99/month vs AppStats' $2.99/month, and $17.99 lifetime vs $49.99 lifetime) and data collection (AppMeta Pulse declares zero collection on its privacy label; AppStats' privacy label declares usage data and diagnostics)." } },
+    { "@type": "Question", "name": "How is AppMeta Pulse different from AppStats?", "acceptedAnswer": { "@type": "Answer", "text": "The two apps overlap heavily on core function — read-only dashboards for App Store Connect on iPhone. The substantive differences: (1) AppMeta Pulse is roughly a third the monthly price and 64% cheaper at the lifetime tier; (2) AppMeta Pulse's App Store privacy label declares zero data collection, while AppStats' declares usage data and diagnostics; (3) AppStats has dedicated daily notifications, richer home-screen widget sizes, and multi-currency toggles that AppMeta Pulse currently does not match. Pick AppMeta Pulse for price and zero tracking; stay with AppStats if notifications and widgets are your primary use case." } },
+    { "@type": "Question", "name": "Does AppMeta Pulse have notifications or widgets like AppStats?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse focuses on the on-demand glance — open the app, see the numbers, close the app. AppStats has a more notification-and-widget-led product surface. If you live by morning revenue notifications or use multiple home-screen widget sizes, AppStats is the better fit today. If you prefer to check on your own schedule without notifications competing for attention, AppMeta Pulse is built for that." } },
+    { "@type": "Question", "name": "Do both apps use the official App Store Connect API?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Both use Apple's official App Store Connect API with a user-generated .p8 API key. Both store the key in the system Keychain. Neither scrapes the App Store Connect web dashboard. The difference is in what the apps do with the data after fetching it — AppMeta Pulse sends nothing to any third party; AppStats' privacy label declares usage data and diagnostics collection." } },
+    { "@type": "Question", "name": "Is AppMeta Pulse cheaper than AppStats?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, materially. Monthly: $0.99 vs $2.99 (about 67% cheaper). Yearly: $8.99 vs $19.99 (about 55% cheaper). Lifetime: $17.99 vs $49.99 (about 64% cheaper). The free trial structure differs — check each app's current App Store listing for exact terms." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">App Store Connect on iPhone · Read-only · Zero tracking</p>
+    <h1 class="h1">Looking for an<br><span class="gradient-text">AppStats alternative?</span></h1>
+    <p class="lead">
+      AppStats is a well-built read-only App Store Connect dashboard for the same audience AppMeta Pulse serves — indie iOS developers and small studios who want revenue, subscription, and download numbers on their phone without opening a browser. Both use Apple's official App Store Connect API. Both keep credentials on-device. If AppStats' daily notifications and home-screen widgets are what you want, keep it. If you want roughly a third the price and a privacy label that declares <em>zero</em> data collection rather than "usage data and diagnostics," AppMeta Pulse is built for that.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/apps/appmeta-pulse/">See AppMeta Pulse</a>
+      <a class="btn btn-secondary" href="#compare">Compare side-by-side</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section id="compare" class="section reveal">
+  <h2 class="h2">How does AppMeta Pulse compare to AppStats?</h2>
+  <p class="lead">Honest framing: AppStats is a serious app with a clear point of view, and on two specific features it is currently the stronger product. The two apps trade off differently. Here is where the differences matter in practice.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Price</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> $0.99/month · $8.99/year · $17.99 lifetime.<br><br><strong>AppStats:</strong> $2.99/month · $19.99/year · $49.99 lifetime.<br><br>AppMeta Pulse is roughly 67% cheaper monthly and 64% cheaper at the lifetime tier.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Privacy label — what each app declares to Apple</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> Privacy label declares <em>zero</em> data collection. No usage data, no diagnostics, no third-party SDKs.<br><br><strong>AppStats:</strong> Privacy label declares usage data and diagnostics collection (not linked to identity, per the listing).<br><br>Both are read-only against App Store Connect; the difference is in what the apps themselves do after fetching the data.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Notifications and widgets</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> On-demand glance — open the app, see the numbers. Quieter product surface.<br><br><strong>AppStats:</strong> Dedicated daily morning notifications with customisable preferences. Multiple home-screen widget sizes showing downloads, revenue, and top products with background updates.<br><br>If notifications and widgets are how you actually check your numbers, AppStats wins this category today.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Vocabulary and reporting</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> Uses Apple's own terms throughout — proceeds (after commission and VAT), sales (gross), units, refunds, active subscriptions, trial conversions. Direct mapping to ASC's Sales and Trends + Subscription reports.<br><br><strong>AppStats:</strong> Similar coverage. Multi-currency toggle (USD/EUR) where AppMeta Pulse displays Apple's reported currencies.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Platforms</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> iPhone, iPad, Mac, Apple Vision Pro.<br><br><strong>AppStats:</strong> iPhone, iPad, iPod touch, Mac, Apple Vision.<br><br>Equivalent platform coverage on both sides.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Authentication and credentials</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> App Store Connect API key (.p8 + key ID) in system Keychain. Read-only scope only.<br><br><strong>AppStats:</strong> Same model — API key on-device. Read-only scope.<br><br>Both apps are credential-equivalent. Neither can write to your App Store Connect account.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Who should pick AppMeta Pulse vs AppStats?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Pick AppMeta Pulse if…</div>
+      <ul class="bullets">
+        <li>You want the cheapest credible App Store Connect dashboard on iPhone</li>
+        <li>You want a privacy label that declares zero data collection — not "minimal" or "anonymous"</li>
+        <li>You check your numbers on your own schedule rather than via notifications</li>
+        <li>You ship multiple apps and want a calm portfolio view without push interruptions</li>
+        <li>You prefer Apple's official vocabulary (proceeds, units, sales) over a third-party rebrand</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Stick with AppStats if…</div>
+      <ul class="bullets">
+        <li>Daily morning revenue notifications are how you actually check your business</li>
+        <li>You use home-screen widgets heavily and want multiple sizes with background updates</li>
+        <li>You specifically need a multi-currency toggle (USD ↔ EUR) baked in</li>
+        <li>You have months of AppStats history you don't want to migrate</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% if app %}
+<section class="section reveal">
+  <h2 class="h2">About AppMeta Pulse</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>What is the best alternative to AppStats for iPhone?</summary><div class="faq-a">AppMeta Pulse is a read-only App Store Connect dashboard built for the same indie iOS developer audience. Both apps use Apple's official App Store Connect API and store credentials on-device. The differences are price (AppMeta Pulse is $0.99/month vs AppStats' $2.99/month, and $17.99 lifetime vs $49.99 lifetime) and data collection (AppMeta Pulse declares zero collection on its privacy label; AppStats' privacy label declares usage data and diagnostics).</div></details>
+    <details class="faq-item"><summary>How is AppMeta Pulse different from AppStats?</summary><div class="faq-a">The two apps overlap heavily on core function. The substantive differences: (1) AppMeta Pulse is roughly a third the monthly price and 64% cheaper at the lifetime tier; (2) AppMeta Pulse's privacy label declares zero data collection while AppStats declares usage data and diagnostics; (3) AppStats has dedicated daily notifications, richer widget sizes, and a multi-currency toggle that AppMeta Pulse currently does not match. Pick AppMeta Pulse for price and zero tracking; stay with AppStats for notifications and widgets.</div></details>
+    <details class="faq-item"><summary>Does AppMeta Pulse have notifications or widgets like AppStats?</summary><div class="faq-a">AppMeta Pulse focuses on the on-demand glance. AppStats has a more notification-and-widget-led product surface. If you check your numbers via morning notifications or rely on multiple widget sizes, AppStats is the better fit today.</div></details>
+    <details class="faq-item"><summary>Do both apps use the official App Store Connect API?</summary><div class="faq-a">Yes. Both use Apple's official App Store Connect API with a user-generated .p8 API key stored in the system Keychain. Neither scrapes the web dashboard. The difference is in what each app does with the data after fetching it.</div></details>
+    <details class="faq-item"><summary>Is AppMeta Pulse cheaper than AppStats?</summary><div class="faq-a">Monthly: $0.99 vs $2.99 (~67% cheaper). Yearly: $8.99 vs $19.99 (~55% cheaper). Lifetime: $17.99 vs $49.99 (~64% cheaper). Check each app's current App Store listing for trial details.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Try it</p>
+  <h2 class="h2">Open AppMeta Pulse.</h2>
+  <p class="lead">Read-only App Store Connect on iPhone, iPad, and Mac. Apple's own vocabulary, zero declared data collection, $0.99/month or $17.99 lifetime.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/apps/appmeta-pulse/">Learn about AppMeta Pulse</a>
+    <a class="btn btn-secondary" href="/alternatives/app-sales-store-reports/">AppMeta Pulse vs App Sales</a>
+  </div>
+</section>

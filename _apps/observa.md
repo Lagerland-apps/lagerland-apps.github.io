@@ -7,6 +7,7 @@ quick_answer: "Observa is a private health insights app for iPhone, Mac, and App
 category: health
 platforms: ["iOS", "macOS", "visionOS"]
 status: live
+jump_nav: true
 
 app_store_url: "https://apps.apple.com/app/id6757438990"
 
