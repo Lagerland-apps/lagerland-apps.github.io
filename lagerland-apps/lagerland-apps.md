@@ -2,10 +2,10 @@
 layout: default
 permalink: /lagerland-apps/
 title: "About Lagerland Apps"
-quick_answer: "Lagerland Apps is a one-person Apple studio in Finland, founded by independent developer Antti Aittamaa. It builds 16 privacy-first iOS, iPadOS, watchOS and macOS apps that ship with zero third-party tracking, no advertising SDKs and no required accounts — funded by honest paid software."
+quick_answer: "Lagerland Apps is a one-person Apple studio in Finland, founded by independent developer Antti Aittamaa. It builds 15 privacy-first iOS, iPadOS, watchOS and macOS apps that ship with zero third-party tracking, no advertising SDKs and no required accounts — funded by honest paid software."
 seo:
   title: "About Lagerland Apps — Independent Apple Developer in Finland"
-  description: "One-person Apple studio in Finland building 16 privacy-first iOS & Mac apps. No trackers, no ads, no accounts — funded by honest paid software, not advertising."
+  description: "One-person Apple studio in Finland building 15 privacy-first iOS & Mac apps. No trackers, no ads, no accounts — funded by honest paid software, not advertising."
   keywords:
     - Lagerland Apps
     - independent Apple developer Finland
@@ -22,7 +22,7 @@ faq:
   - q: "How is Lagerland Apps funded if there are no ads?"
     a: "Through honest paid software: one-time purchases, optional Pro subscriptions, and freemium tiers with permanently free core features. No advertising, no data sales, no dark patterns."
   - q: "How many apps does Lagerland Apps publish?"
-    a: "Lagerland Apps currently publishes 16 live apps across health, daily planning, finance, reading, fitness, games, Apple developer tools, and utilities — all for Apple platforms."
+    a: "Lagerland Apps currently publishes 15 live apps across health, daily planning, finance, reading, fitness, games, Apple developer tools, and utilities — all for Apple platforms."
   - q: "Does Lagerland Apps collect any user data?"
     a: "No. Every app ships with zero third-party analytics, no advertising SDKs, and no required accounts. User data stays on-device wherever possible; any sync uses the user's own iCloud account."
   - q: "What platforms does Lagerland Apps build for?"
