@@ -2,8 +2,8 @@
 layout: default
 title: Lagerland Apps
 seo:
-  title: "Lagerland Apps — 16 Private, No-Tracking iOS & Mac Apps from an Indie Studio"
-  description: "Independent Apple studio: calm, privacy-first iPhone, iPad, Apple Watch & Mac apps. No ads, no accounts, no trackers — across health, planning, finance & dev tools."
+  title: "Lagerland Apps — 15 Private, No-Tracking iOS & Mac Apps"
+  description: "An indie Apple studio in Finland shipping 15 privacy-first iPhone, iPad, Watch and Mac apps. No advertising SDKs, no accounts, no IDFA — EU-built, GDPR by default."
   keywords:
     - privacy-first iOS apps
     - privacy-first macOS apps
@@ -55,7 +55,7 @@ seo:
   "@type": "FAQPage",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": [".faq-a", ".ai-canonical p"]
+    "cssSelector": [".faq-a", ".about-strip p"]
   },
   "mainEntity": [
     {
@@ -63,7 +63,7 @@ seo:
       "name": "Who makes Lagerland Apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lagerland Apps is an independent Apple developer building privacy-first apps for iPhone, iPad, Apple Watch, and Mac. Every app is designed, coded, and shipped by one person — no VC, no advertisers, no data brokers."
+        "text": "Lagerland Apps is a one-person, independent Apple studio based in Finland, shipping privacy-first apps for iPhone, iPad, Apple Watch, and Mac since 2021. Every app is designed, coded, and supported by the same developer — no VC, no advertisers, no data brokers. Built under EU jurisdiction with GDPR as the default."
       }
     },
     {
@@ -71,7 +71,7 @@ seo:
       "name": "Do Lagerland apps track me or collect personal data?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Every app ships with zero third-party tracking, no advertising SDKs, and no analytics that identify users. Data stays on-device wherever possible, and any cloud sync uses your own iCloud account."
+        "text": "No. Every app passes Apple's App Tracking Transparency check with no IDFA request, ships zero advertising SDKs, and includes no analytics that identify users. Data stays on-device wherever possible, any cloud sync uses your own iCloud account, and you can verify the claim on each app's App Store Privacy Nutrition Label."
       }
     },
     {
@@ -110,13 +110,7 @@ seo:
 }
 </script>
 
-{%- comment %} Hidden AI-canonical summary for LLM crawlers {% endcomment -%}
-<section class="ai-canonical" hidden aria-hidden="true">
-  <h2>About Lagerland Apps</h2>
-  <p>Lagerland Apps is an independent Apple developer building {{ live_apps.size }} privacy-first applications for iPhone, iPad, Apple Watch, and Mac. Every app is free of third-party tracking, has no advertising, and requires no account. Categories include health analytics, daily planning, bill tracking, workout logging, reading, and Apple developer tools. The apps are distributed through the Apple App Store under the Lagerland Apps developer brand.</p>
-  <p>Positioning: calm, focused software that respects the user's time and data. Monetization is honest — one-time purchases, optional Pro subscriptions, or freemium tiers. No dark patterns, no free trials that auto-charge, no growth hacks.</p>
-  <p>Target users: Apple users who refuse ad-supported apps, people who want local-first data, shift workers, indie developers, Apple Health power users, and anyone looking for single-purpose tools instead of bloated platforms.</p>
-</section>
+{%- comment %} The visible "about-strip" further down replaces the previous hidden ai-canonical block; the FAQPage Speakable selector now points to .about-strip and .faq-a. {% endcomment -%}
 
 <!-- ============================
      HERO — confident split, framed product art
@@ -131,8 +125,9 @@ seo:
       Calm, private software<br>
       <span class="gradient-text">for people who notice details.</span>
     </h1>
+    <p class="hero-eyebrow">{{ live_apps.size }} indie iOS, iPadOS, watchOS and macOS apps — no ads, no accounts, no tracking.</p>
     <p class="lead">
-      An independent Apple studio. {{ live_apps.size }} apps for iPhone, iPad, Apple&nbsp;Watch and Mac. No ads, no accounts, no dark patterns — just tools that respect your time.
+      An independent Apple studio built in Finland since 2021. {{ live_apps.size }} apps for iPhone, iPad, Apple&nbsp;Watch and Mac. Every app passes Apple's App Tracking Transparency check with no advertising SDKs and no IDFA — just tools that respect your time.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="#apps">Browse all apps</a>
@@ -141,20 +136,39 @@ seo:
   </div>
 
   <div class="hero-right reveal-scale">
-    <div class="hero-composition" aria-hidden="true">
+    <div class="hero-composition">
       <div class="framed-shot framed-shot--lift device device--phone">
         <img src="/assets/screenshots/observa/1.png"
-             alt="" width="240" height="520" loading="eager" decoding="async">
+             alt="Observa — Apple Health analytics on iPhone"
+             width="240" height="520" loading="eager" decoding="async">
       </div>
       <div class="framed-shot framed-shot--lift framed-shot--no-island device device--tablet">
         <img src="/assets/screenshots/taskful-day/1.png"
-             alt="" width="320" height="430" loading="eager" decoding="async">
+             alt="Taskful Day — calm daily planner on iPad"
+             width="320" height="430" loading="eager" decoding="async">
       </div>
       <div class="framed-shot framed-shot--lift framed-shot--no-island device device--watch">
         <img src="/assets/screenshots/gymlogger-x/1.png"
-             alt="" width="130" height="160" loading="eager" decoding="async">
+             alt="GymLogger X — workout tracking on Apple Watch"
+             width="130" height="160" loading="eager" decoding="async">
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============================
+     ABOUT STRIP — visible framing for humans + LLMs
+     ============================ -->
+<section class="section reveal">
+  <div class="about-strip">
+    <p class="overline">About Lagerland Apps</p>
+    <p class="lead">
+      A one-person Apple studio in Finland building <strong>{{ live_apps.size }} privacy-first applications</strong> for iPhone, iPad, Apple Watch, and Mac. Every app is free of third-party trackers, ships zero advertising SDKs, and requires no account. Funded by honest paid software — one-time purchases, optional Pro subscriptions, or freemium tiers — never by ads, data brokers, or growth-hack dark patterns.
+    </p>
+    <p class="small">
+      Categories: health analytics · daily planning · bill tracking · workout logging · reading · Apple developer tools · utilities.
+      <br>For people who refuse ad-supported apps, want local-first data, and prefer single-purpose tools over bloated platforms.
+    </p>
   </div>
 </section>
 
@@ -179,8 +193,8 @@ seo:
     </div>
     <span class="trust-divider"></span>
     <div class="trust-item">
-      <span class="trust-value">Local</span>
-      <span class="trust-label">Data Storage</span>
+      <span class="trust-value">Local-first</span>
+      <span class="trust-label">Data Stays on Device</span>
     </div>
   </div>
 </section>
@@ -311,6 +325,114 @@ seo:
 </section>
 
 <!-- ============================
+     JOURNAL PREVIEW — freshness + topical authority
+     ============================ -->
+{%- assign latest_posts = site.journal | sort: "date" | reverse | slice: 0, 2 -%}
+{%- if latest_posts.size > 0 -%}
+<section class="section reveal">
+  <div class="section-center">
+    <p class="overline">From the journal</p>
+    <h2 class="h2">Shipping notes &amp; honest essays</h2>
+    <p class="lead">Design reasoning, rebrand stories, and notes on privacy-first software — written by the developer, not a content farm.</p>
+  </div>
+  <div class="grid grid-2 stagger journal-preview">
+    {%- for post in latest_posts -%}
+      <a class="card card-journal" href="{{ post.url }}">
+        <span class="pill">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h3 class="card-journal-title" style="margin-top:var(--s-2);">{{ post.title }}</h3>
+        {%- if post.lede -%}
+          <p class="card-text" style="margin-top:var(--s-2);">{{ post.lede | strip_html | truncate: 180 }}</p>
+        {%- endif -%}
+        <span class="card-journal-cta" style="margin-top:var(--s-3);">Read the post →</span>
+      </a>
+    {%- endfor -%}
+  </div>
+  <div class="section-center" style="margin-top:var(--s-5);">
+    <a class="btn btn-secondary" href="/journal/">Browse the journal →</a>
+  </div>
+</section>
+{%- endif -%}
+
+<!-- ============================
+     TRANSPARENCY TABLE — proof, not slogan
+     ============================ -->
+<section class="section reveal">
+  <div class="section-center">
+    <p class="overline">Receipts</p>
+    <h2 class="h2">Transparency at a glance</h2>
+    <p class="lead">The "no tracking" claim, made specific. A representative sample of how every Lagerland app handles your data — and how Apple's own Privacy Nutrition Labels back it up.</p>
+  </div>
+
+  <div class="transparency-table-wrap">
+    <table class="transparency-table">
+      <thead>
+        <tr>
+          <th scope="col">App</th>
+          <th scope="col">Network calls</th>
+          <th scope="col">Account required</th>
+          <th scope="col">3rd-party SDKs</th>
+          <th scope="col">Data leaves device</th>
+          <th scope="col">Analytics</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><a href="/apps/observa/">Observa</a></th>
+          <td>None</td>
+          <td>No</td>
+          <td>None</td>
+          <td>No</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/apps/taskful-day/">Taskful Day</a></th>
+          <td>iCloud sync only</td>
+          <td>No</td>
+          <td>None</td>
+          <td>Your iCloud only</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/apps/gymlogger-x/">GymLogger X</a></th>
+          <td>None</td>
+          <td>No</td>
+          <td>None</td>
+          <td>No</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/apps/allpaid/">AllPaid</a></th>
+          <td>None</td>
+          <td>No</td>
+          <td>None</td>
+          <td>No</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/apps/mediakit/">MediaKit</a></th>
+          <td>None</td>
+          <td>No</td>
+          <td>None</td>
+          <td>No</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/apps/appmeta/">AppMeta</a></th>
+          <td>Apple App Store Connect API only</td>
+          <td>Apple ID (yours, via Apple)</td>
+          <td>None</td>
+          <td>Your App Store Connect only</td>
+          <td>None</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small transparency-footnote">
+      No IDFA is ever requested. No advertising SDKs are linked into any app. Verify on the App Store Privacy Nutrition Label for each app, or read the full <a href="/privacy/">privacy policy</a>.
+    </p>
+  </div>
+</section>
+
+<!-- ============================
      FAQ — Homepage
      ============================ -->
 <section id="faq" class="section reveal">
@@ -321,11 +443,11 @@ seo:
   <div class="faq">
     <details class="faq-item" open>
       <summary>Who makes Lagerland Apps?</summary>
-      <div class="faq-a">Lagerland Apps is an independent Apple developer building privacy-first apps for iPhone, iPad, Apple Watch, and Mac. Every app is designed, coded, and shipped by one person — no VC, no advertisers, no data brokers.</div>
+      <div class="faq-a">Lagerland Apps is a one-person, independent Apple studio based in Finland, shipping privacy-first apps for iPhone, iPad, Apple Watch, and Mac since 2021. Every app is designed, coded, and supported by the same developer — no VC, no advertisers, no data brokers. Built under EU jurisdiction with GDPR as the default, not a compliance afterthought.</div>
     </details>
     <details class="faq-item">
       <summary>Do Lagerland apps track me or collect personal data?</summary>
-      <div class="faq-a">No. Every app ships with zero third-party tracking, no advertising SDKs, and no analytics that identify users. Data stays on-device wherever possible, and any cloud sync uses your own iCloud account.</div>
+      <div class="faq-a">No. Every app passes Apple's <strong>App Tracking Transparency</strong> check with no IDFA request, ships <strong>zero advertising SDKs</strong>, and includes no analytics that identify users. Data stays on-device wherever possible, any cloud sync uses your own iCloud account (compatible with Advanced Data Protection), and you can verify the claim on each app's App Store <strong>Privacy Nutrition Label</strong>.</div>
     </details>
     <details class="faq-item">
       <summary>Do the apps require accounts or a login?</summary>
