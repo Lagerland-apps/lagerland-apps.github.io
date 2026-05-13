@@ -104,7 +104,7 @@ value_points:
     description: "Home Screen, Lock Screen, and StandBy widgets surface a fresh article every day. Save any article, organise into folders, read offline. The reading list builds with you across weeks and months."
   - title: "No ads, no algorithm, no account"
     description: "Wiki Rabbit ships banner ads on its free tier. WikiCards is free but English-only. WanderWiki charges $0.99/week or $22.99 lifetime so the app has no commercial incentive to maximise your screen time. No account. No behavioral tracking."
-  - title: "$22.99 lifetime ≈ $0.06 per Wikipedia language unlocked"
+  - title: "$22.99 lifetime ≈ $0.70 per Wikipedia language unlocked"
     description: "33 Wikipedia language editions, one-time price, no subscription. Zero competitors offer multi-language Wikipedia in a swipe-card app — WikiCards is free but English-only; Wiki Rabbit is free with ads, English-only, and capped at the Good Articles subset; Wikipedia's official app has all ~300 editions but is built for search, not swipe."
 
 how_it_works:
