@@ -4,15 +4,23 @@
   {%- comment %}
     If the app defines a `plans:` list in frontmatter, render a full
     Free / Pro / Lifetime comparison. Otherwise fall back to the
-    original single-row pricing card. The comparison is the conversion
-    win — readers should not have to open the FAQ to learn what's in
-    Pro.
+    original single-row pricing card.
+
+    Per-plan `highlight_label:` sets a custom badge ("Best value",
+    "What I recommend", "Lifetime") — defensible and honest. Legacy
+    `highlight: true` still renders with the older "Most chosen"
+    badge for backward compatibility, but the custom label takes
+    precedence when provided.
   {%- endcomment -%}
   {%- if include.app.plans and include.app.plans.size > 0 -%}
   <div class="plans-grid">
     {%- for plan in include.app.plans -%}
-    <div class="plan-card {% if plan.highlight %}plan-card--highlight{% endif %}">
-      {%- if plan.highlight -%}<span class="plan-badge">Most chosen</span>{%- endif -%}
+    {%- assign plan_badge_text = plan.highlight_label | default: "" -%}
+    {%- if plan_badge_text == "" and plan.highlight %}{%- assign plan_badge_text = "Most chosen" -%}{%- endif -%}
+    {%- assign is_highlighted = false -%}
+    {%- if plan_badge_text != "" %}{%- assign is_highlighted = true -%}{%- endif -%}
+    <div class="plan-card{% if is_highlighted %} plan-card--highlight{% endif %}">
+      {%- if plan_badge_text != "" -%}<span class="plan-badge">{{ plan_badge_text }}</span>{%- endif -%}
       <div class="plan-name">{{ plan.name }}</div>
       <div class="plan-price">{{ plan.price }}</div>
       {%- if plan.summary -%}<div class="plan-summary">{{ plan.summary }}</div>{%- endif -%}
@@ -24,6 +32,9 @@
     </div>
     {%- endfor -%}
   </div>
+  {%- if include.app.plans_footnote -%}
+  <p class="plans-footnote">{{ include.app.plans_footnote }}</p>
+  {%- endif -%}
   <div class="pricing-foot">
     <p class="pricing-note">Transparent pricing on the App Store. Cancel anytime. Free plan is free forever — no trial, no card.</p>
     <div class="actions">

@@ -1280,6 +1280,30 @@ blockquote {
   max-width: 60ch;
 }
 
+.plans-footnote {
+  font-size: var(--text-sm);
+  color: var(--text-dim);
+  text-align: center;
+  margin: var(--s-3) auto var(--s-5);
+  max-width: 70ch;
+  line-height: 1.55;
+}
+
+.founder-card__more {
+  font-size: var(--text-sm);
+  margin: 0;
+  padding-top: var(--s-2);
+  border-top: 1px dashed var(--border);
+  text-align: left;
+}
+.founder-card__more a {
+  color: var(--accent-bright);
+  text-decoration: none;
+}
+.founder-card__more a:hover {
+  text-decoration: underline;
+}
+
 /* ================================================================
    INSIGHT GALLERY — anonymised real-output cards
    The Information-Gain artefact: shows the actual output of the
