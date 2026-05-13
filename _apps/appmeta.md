@@ -19,29 +19,33 @@ icon: "/assets/icons/appmeta.png"
 og_image: "/assets/og/appmeta.png"
 
 seo:
-  title: "AppMeta — Native Mac Client for App Store Connect (One-Time)"
-  description: "Native Mac client for App Store Connect. 50 locales side-by-side, diff preview before push, BYO-AI keywords (Claude/GPT/Gemini/Ollama/Apple). $44.99 once."
+  title: "AppMeta — App Store Connect for Mac with IAPs + Game Center"
+  description: "Native Mac client for App Store Connect. 50 locales, IAP + Game Center + reviews + TestFlight in one Mac app. BYO-AI keywords. $44.99 once, no subscription."
   keywords:
     - app store connect Mac app
     - app store connect native Mac client
     - App Store Connect metadata editor
+    - Itsyconnect alternative
     - Fastlane deliver alternative
     - NativeConnect alternative
     - ASO tool macOS
+    - In-App Purchase editor Mac
+    - Game Center metadata editor
+    - Subscription Group editor Mac
     - app store keyword analyzer Mac
     - app store localization tool 50 locales
     - TestFlight manager Mac
     - app review management Mac
+    - app screenshot upload Mac
     - indie iOS developer tools Mac
     - app submission tool macOS
-    - one-time purchase ASC client
     - Apple Intelligence ASO
     - on-device AI keyword analysis
 
 hero:
   headline: "App Store Connect. Finally native."
-  secondary: "The actively-maintained native Mac client for App Store Connect — the same tool Lagerland ships 15 apps with."
-  subheadline: "AppMeta edits metadata across all 50 App Store locales side-by-side, previews word-level diffs before any push, runs AI keyword analysis through your own provider (Anthropic, OpenAI, Google, Ollama / LM Studio, or Apple Intelligence on-device), and handles the full submission flow — TestFlight, reviews, App Review Info, pricing, age ratings — without a browser tab. $44.99 once. No subscription, no recurring fee."
+  secondary: "The native Mac client that handles all 50 locales, In-App Purchases, Subscription Groups, and Game Center — same tool Lagerland ships 15 apps with."
+  subheadline: "AppMeta edits metadata across all 50 ASC locales side-by-side, manages In-App Purchases and Subscription Groups, edits Game Center Achievements and Leaderboards, previews word-level diffs before any push, and runs AI keyword analysis through your own provider — including Apple Intelligence on-device for the times you don't want a single character leaving the Mac. Five AI providers supported (Anthropic, OpenAI, Google, Ollama / LM Studio, Apple Intelligence). $44.99 once, no subscription."
   cta_label: "Download Free"
   alt: "AppMeta — native Mac editor for App Store Connect metadata with side-by-side locales and word-level diff preview"
 
@@ -60,6 +64,7 @@ who_not_for:
   - "You want a web-based dashboard your whole team can hit from any browser — AppMetaHub or ASO.dev fit that better"
 
 alternatives_to:
+  - "Itsyconnect"
   - "NativeConnect"
   - "App Store Connect web UI"
   - "Fastlane deliver"
@@ -128,6 +133,8 @@ features:
     description: "App Review Information, version pricing, age ratings, privacy details, full submission flow. Read and reply to App Store reviews across regions. Manage TestFlight builds and testing groups. Edit In-App Purchases and Subscription Groups. Edit Game Center Achievements, Leaderboards, and Leaderboard Sets — all with locale-aware UI. The entire ASC release surface, native on the Mac."
   - title: "Sales analytics and diagnostics built in"
     description: "Sales Analytics view pulls revenue and unit data through the ASC API. Diagnostics tab inspects crash signatures, call stacks, and performance metrics — the same data App Store Connect surfaces under Xcode Organizer, in a faster, browse-able UI."
+  - title: "Screenshot upload for every device — including IAP review screenshots"
+    description: "Drag-and-drop screenshot management for every App Store device class (iPhone, iPad, Mac, Apple Watch, Apple TV, Apple Vision). Also handles the hyper-specific case competitors usually miss: review screenshots for In-App Purchases and Subscription Groups, which Apple requires for review but which the ASC web UI buries three menus deep."
 
 screenshots:
   - src: "/assets/screenshots/appmeta/1.png"
@@ -140,36 +147,48 @@ screenshots:
     alt: "AppMeta — AI provider picker showing Anthropic Claude, OpenAI, Google Gemini, OpenAI-compatible, and Apple Intelligence options"
 
 comparison_table:
-  intro: "Each column below is a question an indie iOS developer actually asks before paying for an ASC tool. NativeConnect was AppMeta's closest peer; its marketing site is no longer live as of 2026-05. AppMetaHub and ASO.dev are strong web-based competitors with subscription pricing. Fastlane deliver is the free CLI baseline."
-  competitors: ["AppMeta", "NativeConnect", "AppMetaHub", "ASO.dev (Mac)", "Fastlane deliver"]
+  intro: "Each column below is a question an indie iOS developer actually asks before paying for an ASC tool. Itsyconnect is the closest direct competitor — a native Mac client, one-time priced, BYO-AI. AppMetaHub and ASO.dev are strong web/subscription competitors. NativeConnect's marketing site went offline mid-2025. Fastlane deliver is the free CLI baseline."
+  competitors: ["AppMeta", "Itsyconnect", "NativeConnect", "AppMetaHub", "ASO.dev (Mac)", "Fastlane deliver"]
   rows:
     - feature: "Native Mac app (not a browser / not a CLI)"
-      values: ["Yes — SwiftUI + SwiftData, macOS 14+", "Was native (AppKit) — currently inactive", "No — web only", "Yes — Universal app", "No — CLI only"]
-    - feature: "Number of App Store Connect locales supported"
-      values: ["50 (canonical 2026 set)", "Unverified — site offline", "37", "Multiple — count not published", "All — via .txt files"]
-    - feature: "Word-level diff before push"
-      values: ["Yes — per-field, per-locale", "Was a key feature", "Yes — word-level", "Yes — change highlighting", "No — push or don't"]
-    - feature: "AI keyword analysis (BYO API key)"
-      values: ["5 providers — Anthropic, OpenAI, Google, OpenAI-compatible, Apple Intelligence on-device", "Unknown — site offline", "Yes — Pro plan only", "Yes — subscription tier dependent", "No"]
+      values: ["Yes — SwiftUI + SwiftData, macOS 14+", "Yes — native macOS", "Was native (AppKit) — currently inactive", "No — web only", "Yes — Universal app (iOS/iPad/Mac/Watch/Vision)", "No — CLI only"]
     - feature: "Pricing model"
-      values: ["$44.99 one-time, lifetime", "Was one-time (unverified)", "$10/mo Indie · $23/mo Pro", "$24.99/mo Indie · $68.99/mo Pro", "Free (open source)"]
+      values: ["$44.99 one-time, lifetime", "€19.99 one-time, lifetime (free for 1 app)", "Was one-time (unverified)", "$10/mo Indie · $23/mo Pro", "$24.99/mo Indie · $68.99/mo Pro", "Free (open source)"]
     - feature: "3-year total cost (Indie tier)"
-      values: ["$44.99", "Unknown", "≈ $360 (12 × $10 × 3)", "≈ $810 (12 × $22.50 × 3, yearly rate)", "$0"]
+      values: ["$44.99", "≈ $22 (€19.99 lifetime)", "Unknown", "≈ $360 (12 × $10 × 3)", "≈ $810 (12 × $22.50 × 3, yearly rate)", "$0"]
+    - feature: "Number of App Store Connect locales supported"
+      values: ["50 — canonical 2026 set, including the 11 added in 2026", "Not published", "Unverified — site offline", "37", "Multiple — count not published", "25+ via .txt files"]
+    - feature: "Manages In-App Purchases + Subscription Groups + Game Center"
+      values: ["Yes — all three, locale-aware UI", "No — not listed on site", "Partial (when active)", "No — metadata + screenshots focus", "IAPs yes; Game Center not mentioned", "No"]
+    - feature: "Screenshot management (drag-and-drop, all device types, IAP review screenshots)"
+      values: ["Yes — including IAP / subscription review screenshots", "Yes", "Yes (when active)", "Yes — drag-and-drop", "Yes", "Yes — via .txt files"]
+    - feature: "Word-level diff before push"
+      values: ["Yes — per-field, per-locale", "Yes — change tracking", "Was a key feature", "Yes — word-level", "Yes — change highlighting", "No — push or don't"]
+    - feature: "AI keyword analysis (BYO API key)"
+      values: ["5 providers — Anthropic, OpenAI, Google, OpenAI-compatible (Ollama / LM Studio), Apple Intelligence on-device", "6 providers — Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek", "Unknown — site offline", "Yes — Pro plan only", "Yes — subscription tier dependent", "No"]
+    - feature: "Apple Intelligence on-device support (no API key, no network)"
+      values: ["Yes — macOS 26 required", "No — six cloud providers", "No", "No", "No", "No"]
+    - feature: "Crash diagnostics + Sales Analytics in-app"
+      values: ["Yes — crash signatures, call stacks, perf metrics, sales analytics", "Yes — crash tracking, analytics", "Partial (when active)", "No", "Yes — analytics & A/B testing", "No"]
+    - feature: "MCP server (Claude Code / Cursor / Codex integration)"
+      values: ["Not yet — on roadmap", "Yes — Claude Code, Cursor, Codex, OpenCode", "No", "Yes", "No", "No"]
+    - feature: "Open source"
+      values: ["No — proprietary, funded by paid software", "Yes — open source + self-hosted Docker option", "Unknown — inactive", "No", "No", "Yes — MIT licensed"]
     - feature: "Credentials in macOS Keychain"
-      values: ["Yes — .p8 key in Keychain", "Yes (when active)", "Stored server-side", "Yes — on-device storage", "Local .p8 file"]
-    - feature: "Submission flow + reviews + TestFlight + IAP + Game Center"
-      values: ["Yes — all in one app", "Partial (when active)", "Metadata + screenshots focus", "Yes — broad ASC coverage", "Metadata + screenshots only"]
-  footnote: "Competitor pricing and features reflect each tool's public landing page and App Store description as of 2026-05-13. NativeConnect's marketing domain (nativeconnect.app) currently 301-redirects off-product; the App Store listing may still be live but the website is not. AppMetaHub Indie is $10/mo billed annually ($120/year); ASO.dev Indie is $24.99/mo or $224.99/year (yearly rate ≈ $18.75/mo). Verify current pricing before switching."
+      values: ["Yes — .p8 key in Keychain (hardware-encrypted)", "Yes — AES-256-GCM encrypted on-device", "Yes (when active)", "Stored server-side", "Yes — on-device storage", "Local .p8 file"]
+  footnote: "Competitor pricing and features reflect each tool's public landing page and App Store description as of 2026-05-13. Itsyconnect Pro is €19.99 lifetime with a free tier for 1 app + 1 developer account; AppMetaHub Indie is $10/mo billed annually ($120/year); ASO.dev Indie is $24.99/mo or $224.99/year (yearly rate ≈ $18.75/mo); NativeConnect's marketing domain (nativeconnect.app) currently 301-redirects off-product so the App Store listing's status is unverified. Verify current pricing before switching."
 
 plateau_disclosure:
   title: "What AppMeta won't do for you"
   rule: "AppMeta is a native Mac client for the App Store Connect API v1 — an editing and submission surface that runs locally on macOS 14+. It's deliberately not a competitive-intelligence platform or a CI replacement. The trade-off is what keeps it one-time-priced and entirely on your Mac."
   what_it_does_not_do: "AppMeta will not track competitor keyword rankings — that's Appfigures, AppTweak, Sensor Tower, or RespectASO territory. It will not run inside your CI pipeline as a CLI — Fastlane deliver still belongs in CI, and AppMeta is for interactive editing on the desktop. It will not give you Apple Search Ads campaign management. It will not run on iOS or iPad (it's a macOS app, by design). AI keyword suggestions are only as good as the provider you point it at — bring an API key (Claude / GPT / Gemini) or use Ollama or Apple Intelligence on-device."
   notes:
+    - "Want to drive AppMeta from Claude Code, Cursor, Codex, or OpenCode via MCP? Not yet — MCP server support is on the AppMeta roadmap. Itsyconnect ships it today if your workflow depends on it."
     - "Want competitive rank tracking and keyword popularity scoring? Pair AppMeta with Appfigures or AppTweak — different jobs, complementary tools."
     - "Want to run metadata pushes in CI? Keep Fastlane deliver in your release pipeline; AppMeta handles the interactive desktop editing flow."
     - "Want to edit from your iPhone or iPad? AppMeta is macOS only — ASO.dev's Universal app is the closest alternative for cross-Apple-platform editing."
     - "Want Apple Search Ads campaign management? That's a different product surface; AppMeta covers App Store Connect, not Apple Search Ads Manager."
+    - "Want open source code you can audit and self-host? AppMeta is proprietary — funded by paid software, not advertising or telemetry. Itsyconnect is the open-source option in this category."
 
 training_vocabulary:
   overline: "Speaks ASC's language"
@@ -248,6 +267,8 @@ faq:
     a: "AppMeta works alongside App Store Connect using Apple's official ASC API v1. It provides a faster, safer editing surface than the web UI with features the browser doesn't have — side-by-side editing across all 50 locales, word-level diff preview before any push, keyword diagnosis without an AI call, and five AI providers when you do want generation. Everything goes through Apple's API; nothing is scraped, nothing is stored on a Lagerland server."
   - q: "How is AppMeta different from Fastlane deliver?"
     a: "Fastlane deliver is a CLI tool built for CI/CD pipelines — strong when you want metadata in version control and automatic uploads on every release. AppMeta is a desktop tool for the interactive editing surface itself — all 50 locales visible at once, word-level diffs before pushes, keyword optimization, review management, In-App Purchase and Game Center editing. They are complementary: many developers keep Fastlane deliver in their release pipeline and use AppMeta for the manual editing flow."
+  - q: "How is AppMeta different from Itsyconnect?"
+    a: "Itsyconnect is an excellent native Mac client for App Store Connect at €19.99 lifetime (≈$22) — cheaper than AppMeta's $44.99. The honest difference is scope. AppMeta manages In-App Purchases, Subscription Groups, and Game Center (Achievements, Leaderboards, Leaderboard Sets) with locale-aware UI — Itsyconnect doesn't list any of those three. AppMeta supports Apple Intelligence on-device for keyword analysis (zero API key, zero network call, requires macOS 26) — Itsyconnect offers six cloud-only AI providers (Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek). Itsyconnect offers MCP integration with Claude Code, Cursor, Codex, and OpenCode — AppMeta does not yet, though it's on the roadmap. Itsyconnect is open source with a self-hosted Docker option; AppMeta is proprietary, funded by honest paid software. The decision: ship a simple app and never touch IAPs / Game Center and want MCP from your IDE → Itsyconnect is the cheaper fit. Ship across many locales, monetize through subscriptions, ship Game Center content, or want Apple Intelligence keyword analysis on-device → AppMeta is the broader-scope tool."
   - q: "How is AppMeta different from NativeConnect?"
     a: "NativeConnect was a native AppKit Mac client for App Store Connect in the same shape as AppMeta. As of 2026-05, the NativeConnect marketing website (nativeconnect.app) 301-redirects off-product, suggesting the project is no longer actively maintained. AppMeta is the actively-maintained native Mac client in that category — built on SwiftUI + SwiftData, macOS 14+, App Store Connect API v1, with regular updates. Verify NativeConnect's current status on the App Store before deciding."
   - q: "How is AppMeta different from AppMetaHub and ASO.dev?"
@@ -279,5 +300,6 @@ release:
   first_release: "2026-02-01"
   last_updated: "2026-05-13"
   last_audited: "2026-05-13"
+  audit_round: "3 (response to Itsyconnect entering SERP)"
 ---
 AppMeta is a native macOS client for App Store Connect, built for indie iOS and macOS developers who ship more than one app and want their editing surface on the desktop rather than in a browser tab. It edits app metadata across all 50 ASC locales side-by-side — including the 11 Indian-region locales Apple added in 2026 (Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, plus Slovenian and Urdu) — with real-time character-count validation, word-level diff preview before any push, and per-field, per-locale, or all-at-once sync granularity. Keyword diagnosis runs entirely on-device: keyword/subtitle overlap detection, duplicate-stem cleanup, locale-gap analysis, search-coverage diagnostics, and storefront-coverage anomalies. AI keyword generation is opt-in and runs through whichever provider you trust — Anthropic Claude (Sonnet 4.6 default), OpenAI GPT (GPT-4o), Google Gemini (2.0 Flash), any OpenAI-compatible endpoint (Ollama on llama3.2, LM Studio, local proxies), or Apple Intelligence on-device (macOS 26, zero API key, zero network call). The full release surface is in one app: TestFlight build management, beta metadata, review reading and reply, App Review Information, pricing, age ratings, App Privacy details, full version submission, In-App Purchases, Subscription Groups, and Game Center editing (Achievements, Leaderboards, Leaderboard Sets) with locale-aware UI. Built on the App Store Connect API v1 with JWT authentication and a .p8 private key stored in macOS Keychain — no app-specific password, no scraped browser session. SwiftUI + SwiftData, macOS 14+ Sonoma. No backend servers, no analytics SDKs, no tracking domains. $44.99 once, lifetime. The same tool Lagerland ships every release of all 15 catalogue apps with.
