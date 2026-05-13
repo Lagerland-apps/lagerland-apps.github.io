@@ -47,7 +47,10 @@ layout: default
     "@type": "Organization",
     "@id": "{{ site.url }}/#organization"
   },
-  {%- if page.ratings and page.ratings.count and page.ratings.count != 0 -%}
+  {%- comment %} Only emit aggregateRating when there is enough rating signal to back it.
+    Match the visible-UI threshold in _includes/hero.html — Google flags schema that does
+    not match visible content. {% endcomment -%}
+  {%- if page.ratings and page.ratings.count and page.ratings.count >= 25 -%}
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": {{ page.ratings.value | jsonify }},
@@ -80,7 +83,7 @@ layout: default
   {%- endif -%}{%- if page.screenshots and page.screenshots.size > 0 -%},
   "screenshot": [
     {%- for s in page.screenshots -%}
-      {{ s | absolute_url | jsonify }}{%- unless forloop.last -%},{%- endunless -%}
+      {%- if s.src -%}{{ s.src | absolute_url | jsonify }}{%- else -%}{{ s | absolute_url | jsonify }}{%- endif -%}{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
   ]{%- endif -%}{%- if page.features and page.features.size > 0 -%},
   "featureList": [

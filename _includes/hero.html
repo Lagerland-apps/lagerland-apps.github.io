@@ -22,7 +22,10 @@
     </div>
 
     <div class="meta-row">
-      {%- if include.app.ratings and include.app.ratings.count >= 3 -%}
+      {%- comment %} Only show aggregate rating when it has enough signal to be credible.
+        Showing "★ 5.0 · 1 ratings" reads as manipulative; below ~25 ratings the aggregate
+        is noise. Below the threshold the App Store badge itself carries the ratings. {% endcomment -%}
+      {%- if include.app.ratings and include.app.ratings.count >= 25 -%}
         <span class="pill" title="{{ include.app.ratings.count }} ratings aggregated across Apple App Store worldwide">★ {{ include.app.ratings.value }} · {{ include.app.ratings.count }} ratings</span>
       {%- endif -%}
       {%- assign price_model = include.app.price.model | downcase -%}
@@ -57,8 +60,16 @@
         </video>
       </div>
     {% else %}
-      {% assign hero_img = include.app.screenshots[0] | default: include.app.icon %}
-      {%- assign hero_alt = include.app.hero.alt | default: include.app.hero.headline | default: include.app.tagline -%}
+      {%- assign first_shot = include.app.screenshots[0] -%}
+      {%- if first_shot.src -%}
+        {%- assign hero_img = first_shot.src -%}
+        {%- assign first_shot_alt = first_shot.alt -%}
+      {%- elsif first_shot -%}
+        {%- assign hero_img = first_shot -%}
+      {%- else -%}
+        {%- assign hero_img = include.app.icon -%}
+      {%- endif -%}
+      {%- assign hero_alt = include.app.hero.alt | default: first_shot_alt | default: include.app.hero.headline | default: include.app.tagline -%}
       {%- if hero_alt == include.app.hero.headline or hero_alt == include.app.tagline -%}
         {%- assign first_platform = include.app.platforms | first -%}
         {%- assign hero_alt = include.app.name | append: " — " | append: hero_alt | append: " (" | append: first_platform | append: ")" -%}

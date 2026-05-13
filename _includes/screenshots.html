@@ -6,8 +6,20 @@
 
   <div class="shots">
     {% for s in include.app.screenshots %}
+      {%- comment %} Supports two shapes:
+        1. String: "/path/to/img.png"  (generic alt fallback)
+        2. Hash:   { src: "/path/to/img.png", alt: "Descriptive alt" }
+      {% endcomment -%}
+      {%- if s.src -%}
+        {%- assign shot_src = s.src -%}
+        {%- capture shot_alt_fallback %}{{ include.app.name }} screenshot {{ forloop.index }}{% endcapture -%}
+        {%- assign shot_alt = s.alt | default: shot_alt_fallback -%}
+      {%- else -%}
+        {%- assign shot_src = s -%}
+        {%- capture shot_alt %}{{ include.app.name }} screenshot {{ forloop.index }}{% endcapture -%}
+      {%- endif -%}
       <figure class="shot">
-        <img src="{{ s }}" alt="{{ include.app.name }} screenshot {{ forloop.index }}" loading="lazy">
+        <img src="{{ shot_src }}" alt="{{ shot_alt }}" loading="lazy">
       </figure>
     {% endfor %}
   </div>
