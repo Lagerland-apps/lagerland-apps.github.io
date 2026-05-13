@@ -165,6 +165,38 @@ layout: default
 </script>
 {%- endif -%}
 
+{%- comment %}
+  Creative-work schema (Book / CreativeWorkSeries / Movie / etc.) — emitted
+  when the page frontmatter exposes `creative_work:`. Some app pages are
+  also creative works (a serialised novel app, a documentary, a poetry
+  collection). Dual-classifying them as both SoftwareApplication and
+  Book/CreativeWorkSeries strengthens entity recognition in Google's
+  Knowledge Graph and unlocks Book / Series rich-result eligibility.
+  All fields optional; minimal viable shape is { type, name }.
+{%- endcomment -%}
+{%- if page.creative_work and page.creative_work.name -%}
+{%- assign cw_type = page.creative_work.type | default: "CreativeWork" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {% if page.creative_work.also_type %}[{{ cw_type | jsonify }}, {{ page.creative_work.also_type | jsonify }}]{% else %}{{ cw_type | jsonify }}{% endif %},
+  "@id": "{{ app_url }}#work",
+  "name": {{ page.creative_work.name | jsonify }}{%- if page.creative_work.abstract %},
+  "abstract": {{ page.creative_work.abstract | jsonify }}{%- endif -%}{%- if page.creative_work.genre %},
+  "genre": {{ page.creative_work.genre | jsonify }}{%- endif -%}{%- if page.creative_work.in_language %},
+  "inLanguage": {{ page.creative_work.in_language | jsonify }}{%- endif -%}{%- if page.creative_work.author_credit %},
+  "creditText": {{ page.creative_work.author_credit | jsonify }}{%- endif -%}{%- if page.creative_work.publisher %},
+  "publisher": { "@id": "{{ site.url }}/#organization" }{%- endif -%}{%- if page.creative_work.date_published %},
+  "datePublished": {{ page.creative_work.date_published | jsonify }}{%- endif -%}{%- if page.creative_work.number_of_episodes %},
+  "numberOfEpisodes": {{ page.creative_work.number_of_episodes | jsonify }}{%- endif -%},
+  "isAccessibleForFree": false,
+  "image": {{ page.og_image | absolute_url | jsonify }},
+  "url": {{ app_url | jsonify }},
+  "subjectOf": { "@id": "{{ app_url }}#app" }
+}
+</script>
+{%- endif -%}
+
 <article class="app">
 
   {%- comment %}
