@@ -15,6 +15,7 @@ price:
   model: one-time-purchase
   value: "$22.99 — one-time purchase"
 schema_price: "22.99"
+price_currency: "USD"
 
 value_math:
   label: "How the price compares."
@@ -102,10 +103,12 @@ how_it_works:
       detail: "Authenticate with your App Store Connect account via Apple's secure framework (credentials never leave Keychain), and ScreenFlow Studio uploads each screenshot to the correct device size and locale slot. What previously took 30 minutes of manual file-shuffling per release becomes one button."
 
 example_insights:
+  overline: "What ScreenFlow Studio actually exports"
+  heading: "Real exports, at the exact dimensions App Store Connect requires."
   intro: "What ScreenFlow Studio produces in practice — captioned exports across device classes and locales."
   cards:
     - headline: "iPhone 6.9\" — exact 1290×2868 output"
-      body: "A 3D-framed iPhone 16 Pro Max screenshot with overlaid feature copy, rendered at the exact dimensions App Store Connect requires. Re-renderable bit-for-bit identically tomorrow."
+      body: "A 3D-framed iPhone 16 Pro Max screenshot with overlaid feature copy, rendered locally at 1290×2868 in roughly 50ms on an M-series Mac. Deterministic — re-render the same project tomorrow and the bytes are identical."
       tag: "Render · Determinism"
     - headline: "Same layout, 39 locales"
       body: "One project produces 39 sets of localised screenshots — Japanese, Simplified Chinese, German, French, Arabic — with text translated in-place and fonts preserved."
@@ -216,6 +219,10 @@ faq:
     a: "ScreenFlow Studio is a GUI alternative to Fastlane snapshot + frameit. If your team has Fastlane fully wired into CI/CD, you may not need ScreenFlow Studio — but most indie devs find the Fastlane setup-cost steeper than running a tool that ships with templates and a direct upload pipeline. Both can coexist."
   - q: "Does ScreenFlow Studio collect any data?"
     a: "No. Apple's App Privacy nutrition label lists ScreenFlow Studio as collecting zero data. No analytics, no telemetry SDKs, no account required for the app itself. All project files and pre-release screenshots stay on your Mac. AI translation runs against your own API key, called directly from your machine."
+  - q: "How do ScreenFlow Studio screenshots comply with App Store Review Guidelines §2.3.3?"
+    a: "App Store Review Guidelines §2.3.3 requires that screenshots show the app actually running on the device — not just illustrations, conceptual mockups, or pre-rendered marketing art that doesn't reflect in-app behaviour. ScreenFlow Studio renders your real captured screenshots inside a 3D device frame; the device is rendered, the screen content is the actual app. Overlaid feature copy and background colour treatments are fine under §2.3.3 as long as the screen content itself shows the real app. ScreenFlow Studio's default templates stay on the compliant side of the line — text overlays, colour fields, device frames around real UI captures, no fictional UI."
+  - q: "How does ScreenFlow Studio compare to MockUPhone, LocaShot, Picasso, or AppMockUp?"
+    a: "All four are web-based with different focuses. MockUPhone is a free device-mockup generator with no localisation or upload pipeline — useful for one-off marketing images, not a production screenshot workflow. LocaShot specialises in AI screenshot localisation across 30+ languages but doesn't render 3D device frames the way ScreenFlow Studio does. Picasso emphasises bulk upload to App Store Connect and Google Play with a strong template library, subscription-priced. AppMockUp is a long-standing mockup generator focused on iPhone and a handful of Android devices. ScreenFlow Studio is the only native Mac option with real 3D Metal rendering, on-device translation against your own API key, direct ASC upload, and a one-time price. If you want a free quick mockup, MockUPhone. If you want SaaS scale with team features, Picasso. If you want the Mac-native one-time-purchase indie option, ScreenFlow Studio."
 
 related_apps:
   - appmeta

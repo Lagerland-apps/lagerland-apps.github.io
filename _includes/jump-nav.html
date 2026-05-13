@@ -9,11 +9,18 @@
   exists on the page.
 {%- endcomment -%}
 {%- if include.app.jump_nav -%}
+{%- comment %}
+  Ordering follows DOM order on the rendered page.
+  Pricing is included as an anchor when EITHER plans OR value_math is set —
+  both render the same #pricing section, and one-time-purchase apps that
+  surface a value-math callout often place pricing early (the price is
+  the conversion fact, not an afterthought).
+{%- endcomment -%}
 {%- assign anchors = "" | split: "" -%}
+{%- if include.app.plans or include.app.value_math %}{%- assign anchors = anchors | push: "pricing|Pricing" -%}{%- endif -%}
 {%- if include.app.how_it_works and include.app.how_it_works.steps %}{%- assign anchors = anchors | push: "how-it-works|How it works" -%}{%- endif -%}
 {%- if include.app.example_insights and include.app.example_insights.cards %}{%- assign anchors = anchors | push: "insights|Insights" -%}{%- endif -%}
 {%- if include.app.features %}{%- assign anchors = anchors | push: "features|Capabilities" -%}{%- endif -%}
-{%- if include.app.plans %}{%- assign anchors = anchors | push: "pricing|Pricing" -%}{%- endif -%}
 {%- if include.app.faq %}{%- assign anchors = anchors | push: "faq|FAQ" -%}{%- endif -%}
 {%- if anchors.size > 0 -%}
 <nav class="jump-nav reveal" aria-label="On this page">
