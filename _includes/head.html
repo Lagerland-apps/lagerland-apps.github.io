@@ -39,6 +39,22 @@
 <link rel="preload" as="image" href="/assets/screenshots/observa/1.png">
 {%- endif %}
 
+{%- comment %} Per-app LCP preload — the first screenshot is the hero-shot image
+  on every app landing page (set by _includes/hero.html). Preloading it cuts the
+  LCP discovery wait and typically saves 100–300ms on cold loads. Handles both
+  string and hash-shape screenshots. {% endcomment -%}
+{%- if page.layout == "app" and page.screenshots and page.screenshots[0] -%}
+  {%- assign lcp_first = page.screenshots[0] -%}
+  {%- if lcp_first.src -%}
+    {%- assign lcp_href = lcp_first.src -%}
+  {%- else -%}
+    {%- assign lcp_href = lcp_first -%}
+  {%- endif -%}
+  {%- if lcp_href -%}
+<link rel="preload" as="image" href="{{ lcp_href }}">
+  {%- endif -%}
+{%- endif -%}
+
 <meta property="og:type" content="{% if page.layout == 'app' %}product{% else %}website{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page_title }}">

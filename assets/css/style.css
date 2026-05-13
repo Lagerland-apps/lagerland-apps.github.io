@@ -1821,6 +1821,34 @@ blockquote {
 
 
 /* ================================================================
+   ABOUT / LONGFORM BODY — visible canonical content with internal links
+   ================================================================ */
+
+.app-body-card { padding: var(--s-4) var(--s-5); }
+
+.app-body-prose p {
+  margin: 0 0 var(--s-3);
+  line-height: 1.65;
+  font-size: 1.02rem;
+}
+
+.app-body-prose p:last-child { margin-bottom: 0; }
+
+.app-body-prose a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(167, 139, 250, 0.55);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 160ms ease;
+}
+
+.app-body-prose a:hover {
+  text-decoration-color: rgba(167, 139, 250, 1);
+}
+
+
+/* ================================================================
    AI CANONICAL / QUICK REFERENCE
    Collapsible plain-text summary — visible to humans (one click) and
    crawlable as normal content (no hidden-text policy risk).

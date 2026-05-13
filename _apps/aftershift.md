@@ -169,6 +169,12 @@ faq:
   - q: "What does sleep inertia have to do with shift work?"
     a: "Sleep inertia is the groggy, slowed-reaction state in the first 15–30 minutes after waking. For shift workers it matters in two places: (1) waking from a deep mid-shift nap can leave inertia bad enough that the nap costs more than it gives — AfterShift's nap guidance favors lengths that avoid this, and (2) the start of a night shift after a daytime sleep often comes with residual inertia that masquerades as fatigue. Knowing the difference matters when you are deciding whether you actually need caffeine, or whether you just need fifteen minutes."
 
+  - q: "Does it matter if I'm a morning person or a night owl for shift work?"
+    a: "Yes — your chronotype is one of the biggest predictors of how hard rotating and night shifts will hit you. Strong morning types (larks) struggle more with permanent night shifts because their circadian system resists the phase shift; strong evening types (owls) usually adapt better to nights but pay for it on early-morning rotations. Most people sit in the middle. AfterShift does not ask you to self-label as one or the other — your actual sleep timing and recovery pattern across rotations are stronger signals than any chronotype questionnaire. If you want a formal read on yours, the MEQ (Horne-Östberg Morningness-Eveningness Questionnaire) and the MCTQ (Munich ChronoType Questionnaire) are the two validated tools sleep researchers use."
+
+  - q: "Should I take melatonin for shift work? Does AfterShift recommend supplements?"
+    a: "AfterShift does not give supplement recommendations — that conversation belongs with a clinician or pharmacist. What we can fairly say from the literature: low-dose melatonin (0.3–3 mg) taken at the start of your intended sleep window is the use case sleep researchers most often discuss for shift workers, and it acts as a circadian phase-shifter as much as a sedative — meaning when you take it matters more than how much. Higher doses are not better and increase next-day grogginess in some people. Melatonin sold in the U.S. is unregulated and dose-labelled inconsistently. The U.S. <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\">NIOSH shift work module</a> and the AASM's clinical guidance both cover melatonin timing for shift workers in more depth — talk to your clinician before starting any supplement."
+
 support:
   email: "lagerland.apps@proton.me"
   url: "/apps/aftershift/support/"
@@ -185,18 +191,13 @@ ratings:
 related_journal:
   slug: building-a-sleep-app-for-night-shifts
   anchor: "Why we built AfterShift — and what generic sleep apps get wrong about night-shift life"
+
+show_body: true
+about_heading: "Why AfterShift exists."
 ---
 
-AfterShift is a sleep and recovery app built specifically for shift workers — nurses, paramedics, firefighters, police officers, pilots, factory workers, and anyone on night, rotating, or on-call schedules.
+Most sleep apps were designed for a person who goes to bed at 11 p.m. and wakes up at 7 a.m. Walk through the onboarding flow of any major one — the questions assume a fixed bedtime, a steady wake time, and weekends free. Then look at how the people who keep hospitals, fire stations, factories, and cockpits running through the night are forced to use them. A nurse logs a five-hour daytime sleep after a string of night shifts; the app politely tells her she had a *poor night* and should go to bed earlier. The model of "a person" baked into the app and the model of the person actually using it are not the same model.
 
-It tracks sleep stages, naps, and fatigue in the context of your actual shifts, and produces a Shift Recovery Score that tells you — at a glance, before you clock in — how recovered you really are. Caffeine timing is calibrated to your next scheduled shift, not a textbook 2 p.m. cutoff. Fragmentation insights surface which days inside a 4-on-4-off or DuPont rotation are your weakest link, so you can plan a prophylactic nap rather than absorb the deficit.
+AfterShift was built to fix that mismatch — by an independent Apple studio that watched too many friends in scrubs and uniforms get the same patronising notification. Naps are real recovery. Daytime sleep before a night shift is a win, not a failure. The right caffeine cutoff depends on what shift you are walking into, not on the time on the clock. Those positions are not radical; they are how sleep researchers studying shift work have framed the problem for two decades. AfterShift makes them the default.
 
-Unlike generic sleep apps, AfterShift never compares you to a 9-to-5 baseline. Unlike most shift-work apps, naps are treated as first-class recovery — weighted into the Shift Recovery Score, not relegated to a footnote.
-
-## Why AfterShift exists
-
-Most sleep apps were designed for a person who goes to bed at 11 p.m. and wakes up at 7 a.m. Open the onboarding flow of any major one and walk through it — the questions assume a fixed bedtime, a steady wake time, and weekends free. Then look at how the people who actually keep hospitals, fire stations, factories, and cockpits running through the night are forced to use them. A nurse logs a five-hour daytime sleep after a string of night shifts; the app politely tells her she had a *poor night* and should go to bed earlier. The model of "a person" baked into the app and the model of the person actually using it are not the same model.
-
-AfterShift was built to fix that mismatch — by an independent Apple developer who watched too many friends in scrubs and uniforms get the same patronising notification. Naps are real recovery. Daytime sleep before a night shift is a win, not a failure. The right caffeine cutoff depends on what shift you are walking into, not on the time on the clock. Those positions are not radical; they are how sleep researchers studying shift work have framed the problem for two decades. AfterShift makes them the default.
-
-Private by design: no ads, no health data selling, no account required, no third-party trackers. Free to use, with optional Premium features.
+The Shift Recovery Score is the metric we are proudest of. It is not a sleep score in the consumer sense. It is a forward-looking estimate: given the sleep and naps you have had since your last shift, given the rotation pattern you are on, given how fragmented your recent sleep has been — how recovered are you for the next block? A seven-hour daytime sleep before a night shift can produce a higher score than an eight-hour night sleep before a day shift, because the former is set up to support the upcoming work block and the latter is misaligned. Generic sleep apps reverse that. We do not.

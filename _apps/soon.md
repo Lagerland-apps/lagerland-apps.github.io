@@ -287,6 +287,13 @@ ratings:
   value: "5.0"
   count: 2
   last_synced: "2026-04-15"
+
+# Render the markdown body as a visible "About Soon." section. The body
+# contains contextual in-body internal links to the methodology,
+# templates, comparison, and privacy sections — SearchPilot data:
+# in-body contextual links return 5–25% organic uplift.
+show_body: true
+about_heading: "What Soon. is, in plain words."
 ---
 Soon. is a [countdown and planner app for iPhone](#features) — the complete rebuild of TheWait — that turns important moments into living countdowns. Trips, weddings, birthdays, anniversaries, graduations, due dates, and personal milestones each render full-bleed with a photo background you pin yourself, live weather for the destination, and daily notes that shift as the date approaches.
 
