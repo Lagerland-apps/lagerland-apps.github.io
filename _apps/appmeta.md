@@ -301,5 +301,9 @@ release:
   last_updated: "2026-05-13"
   last_audited: "2026-05-13"
   audit_round: "3 (response to Itsyconnect entering SERP)"
+
+related_apps:
+  - appmeta-pulse
+  - screenflow-studio
 ---
 AppMeta is a native macOS client for App Store Connect, built for indie iOS and macOS developers who ship more than one app and want their editing surface on the desktop rather than in a browser tab. It edits app metadata across all 50 ASC locales side-by-side — including the 11 Indian-region locales Apple added in 2026 (Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, plus Slovenian and Urdu) — with real-time character-count validation, word-level diff preview before any push, and per-field, per-locale, or all-at-once sync granularity. Keyword diagnosis runs entirely on-device: keyword/subtitle overlap detection, duplicate-stem cleanup, locale-gap analysis, search-coverage diagnostics, and storefront-coverage anomalies. AI keyword generation is opt-in and runs through whichever provider you trust — Anthropic Claude (Sonnet 4.6 default), OpenAI GPT (GPT-4o), Google Gemini (2.0 Flash), any OpenAI-compatible endpoint (Ollama on llama3.2, LM Studio, local proxies), or Apple Intelligence on-device (macOS 26, zero API key, zero network call). The full release surface is in one app: TestFlight build management, beta metadata, review reading and reply, App Review Information, pricing, age ratings, App Privacy details, full version submission, In-App Purchases, Subscription Groups, and Game Center editing (Achievements, Leaderboards, Leaderboard Sets) with locale-aware UI. Built on the App Store Connect API v1 with JWT authentication and a .p8 private key stored in macOS Keychain — no app-specific password, no scraped browser session. SwiftUI + SwiftData, macOS 14+ Sonoma. No backend servers, no analytics SDKs, no tracking domains. $44.99 once, lifetime. The same tool Lagerland ships every release of all 15 catalogue apps with.

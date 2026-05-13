@@ -217,6 +217,10 @@ faq:
   - q: "Does ScreenFlow Studio collect any data?"
     a: "No. Apple's App Privacy nutrition label lists ScreenFlow Studio as collecting zero data. No analytics, no telemetry SDKs, no account required for the app itself. All project files and pre-release screenshots stay on your Mac. AI translation runs against your own API key, called directly from your machine."
 
+related_apps:
+  - appmeta
+  - appmeta-pulse
+
 related_journal:
   slug: why-mac-native-for-app-store-screenshots
   anchor: "Why Mac-native is the right architecture for App Store screenshots"

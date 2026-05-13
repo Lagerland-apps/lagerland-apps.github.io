@@ -1,22 +1,44 @@
 {%- comment %}
   Cross-promo: picks up to 3 OTHER live apps.
-  Priority: same category first, then fall back to any other live apps.
+  Priority:
+    1. Explicit `related_apps:` list (array of slugs) in frontmatter — used first,
+       in order. Lets pages curate audience-adjacent recommendations across
+       categories (e.g. ScreenFlow Studio → AppMeta + AppMeta Pulse: same
+       indie-developer audience, different category).
+    2. Same-category apps (excluding current).
+    3. Any other live apps to fill to 3.
   Usage: {% include you-might-like.html app=page %}
 {% endcomment -%}
 
 {%- assign current_slug = include.app.slug -%}
 {%- assign live_apps = site.apps | where: "status", "live" -%}
-
-{%- comment %} Same-category apps (excluding current) {% endcomment -%}
-{%- assign same_cat = live_apps | where: "category", include.app.category -%}
 {%- assign related = '' | split: '' -%}
+
+{%- comment %} 1. Explicit related_apps from frontmatter (curated audience adjacency) {% endcomment -%}
+{%- if include.app.related_apps -%}
+  {%- for slug in include.app.related_apps -%}
+    {%- if related.size < 3 -%}
+      {%- assign match = live_apps | where: "slug", slug | first -%}
+      {%- if match and match.slug != current_slug -%}
+        {%- assign already = false -%}
+        {%- for r in related -%}{%- if r.slug == match.slug -%}{%- assign already = true -%}{%- endif -%}{%- endfor -%}
+        {%- unless already -%}{%- assign related = related | push: match -%}{%- endunless -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- comment %} 2. Same-category apps (excluding current and ones already picked) {% endcomment -%}
+{%- assign same_cat = live_apps | where: "category", include.app.category -%}
 {%- for a in same_cat -%}
-  {%- if a.slug != current_slug -%}
-    {%- assign related = related | push: a -%}
+  {%- if a.slug != current_slug and related.size < 3 -%}
+    {%- assign already = false -%}
+    {%- for r in related -%}{%- if r.slug == a.slug -%}{%- assign already = true -%}{%- endif -%}{%- endfor -%}
+    {%- unless already -%}{%- assign related = related | push: a -%}{%- endunless -%}
   {%- endif -%}
 {%- endfor -%}
 
-{%- comment %} Fill with other apps if we have fewer than 3 {% endcomment -%}
+{%- comment %} 3. Fill with other apps if we have fewer than 3 {% endcomment -%}
 {%- if related.size < 3 -%}
   {%- for a in live_apps -%}
     {%- if a.slug != current_slug and a.category != include.app.category and related.size < 3 -%}
