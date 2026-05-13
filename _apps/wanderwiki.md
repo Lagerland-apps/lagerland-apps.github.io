@@ -82,7 +82,7 @@ founder:
   location: "Finland"
   overline: "Why we built this"
   heading: "Wikipedia, the way 'Random Article' used to feel."
-  story: "WanderWiki exists because Wikipedia is the best free thing on the internet and almost nobody reads it for fun anymore. We wanted Random Article — the desktop ritual where you click 'Random' and end up reading about the history of fountain pens at 11pm — back on the iPhone, but built for swiping. We built the iPhone-only version (iOS 18.2+) on purpose: 33 Wikipedia language editions with per-language category mappings (pick German + Science and the app queries Wissenschaft, Physik, Chemie — not translated English categories), three discovery modes, widgets, offline saved articles in folders. The competitors we benchmarked against — WikiCards (free, English-only) and Wiki Rabbit (free with ads, Good Articles subset only) — both ship something good. We chose the paid lane so the app has no ads, no algorithm to maximise time-on-app, and no behavioral tracking. From $0.99/week, $22.99 lifetime. The maker uses it every morning."
+  story: "WanderWiki exists because Wikipedia is the best free thing on the internet and almost nobody reads it for fun anymore. The five-minute windows that used to be 'Random Article' on desktop became doomscroll-shaped on the iPhone — algorithmic feeds optimised for time-on-app, not for the encyclopedia. We wanted Random Article — the desktop ritual where you click 'Random' and end up reading about the history of fountain pens at 11pm — back on the iPhone, built for swiping. We built the iPhone-only version (iOS 18.2+) on purpose: 33 Wikipedia language editions with per-language category mappings (pick German + Science and the app queries Wissenschaft, Physik, Chemie — not translated English categories), three discovery modes, widgets, offline saved articles in folders. The competitors we benchmarked against — WikiCards (free, English-only) and Wiki Rabbit (free with ads, Good Articles subset only) — both ship something good. We chose the paid lane so the app has no ads, no algorithm to maximise time-on-app, and no behavioral tracking. From $0.99/week, $22.99 lifetime. The maker uses it every morning."
   signals:
     - "Built on Wikipedia's official REST API (api/rest_v1/feed/onthisday/) — not scraping, not crawling, no backend caching of full articles on a Lagerland server"
     - "33 Wikipedia language editions supported with per-language category mappings — verified in the WanderWikiShared package's allowlist"
@@ -288,8 +288,8 @@ faq:
     a: "No. WanderWiki has no third-party SDKs, no analytics, no tracking domains, no account, and no backend caching of full articles. Likes, dislikes, saved articles, folders, weekly stats — all live in SwiftData on your iPhone. The only network call is to Wikipedia's official REST API (api.wikimedia.org), and only to fetch the article you're currently viewing or the On This Day feed for the current date."
 
 related_journal:
-  slug: countdown-psychology-why-anticipation-beats-reminders
-  anchor: "Why anticipation-driven apps beat algorithm-driven feeds"
+  slug: reading-without-a-feed
+  anchor: "Why WanderWiki exists: replacing the social feed with Wikipedia"
 
 support:
   email: "lagerland.apps@proton.me"
@@ -299,7 +299,7 @@ release:
   first_release: "2026-02-01"
   last_updated: "2026-05-13"
   last_audited: "2026-05-13"
-  audit_round: "3 (multi-language widget wedge + Picture of the Day honesty)"
+  audit_round: "4 (doomscroll body copy + related_journal corrected to reading-without-a-feed)"
 
 ratings:
   value: "5.0"
