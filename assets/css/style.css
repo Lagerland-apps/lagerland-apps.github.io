@@ -1289,6 +1289,104 @@ blockquote {
   line-height: 1.55;
 }
 
+/* ================================================================
+   RELEASE NOTES — collapsible "What changed recently" block under
+   the plans grid. Demonstrates active development; Helpful Content
+   sweeps reward freshness. Renders only when frontmatter exposes
+   `release_notes:`.
+   ================================================================ */
+.release-notes {
+  max-width: 70ch;
+  margin: 0 auto var(--s-5);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg, var(--r-md));
+  padding: var(--s-3) var(--s-4);
+}
+.release-notes__summary {
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text);
+  list-style: none;
+  position: relative;
+  padding-right: 1.5em;
+}
+.release-notes__summary::-webkit-details-marker { display: none; }
+.release-notes__summary::after {
+  content: "▾";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--text-dim);
+  transition: transform var(--dur-md);
+}
+.release-notes[open] .release-notes__summary::after {
+  transform: rotate(180deg);
+}
+.release-notes__list {
+  list-style: none;
+  padding: 0;
+  margin: var(--s-3) 0 0;
+  display: grid;
+  gap: var(--s-2);
+}
+.release-notes__item {
+  display: grid;
+  grid-template-columns: 8em 1fr;
+  gap: var(--s-3);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+.release-notes__date {
+  color: var(--accent-bright);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.release-notes__note {
+  color: var(--text-dim);
+}
+@media (max-width: 540px) {
+  .release-notes__item {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
+
+/* ================================================================
+   JUMP NAV — single-line anchor row under the Quick Answer.
+   Improves dwell time and surfaces in Google's "Jump To" sitelinks
+   when the page warrants in-page navigation.
+   ================================================================ */
+.jump-nav {
+  margin: 0 0 var(--s-5);
+  padding: var(--s-2) 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+.jump-nav__label {
+  color: var(--text-dim);
+  margin-right: var(--s-2);
+  font-weight: 600;
+}
+.jump-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-3);
+}
+.jump-nav__list a {
+  color: var(--accent-bright);
+  text-decoration: none;
+}
+.jump-nav__list a:hover {
+  text-decoration: underline;
+}
+
 .founder-card__more {
   font-size: var(--text-sm);
   margin: 0;

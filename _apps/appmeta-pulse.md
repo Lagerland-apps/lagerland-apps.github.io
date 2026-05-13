@@ -2,8 +2,8 @@
 layout: app
 slug: appmeta-pulse
 name: "AppMeta Pulse"
-tagline: "Your App Store business, at a glance."
-quick_answer: "AppMeta Pulse is a read-only App Store Connect companion for iPhone, iPad, and Mac. Indie developers use it to check revenue, active subscriptions, trial conversions, refunds, and downloads across their entire app portfolio in seconds — without opening a browser. Built on Apple's official API. Free trial, from $0.99/month. No ads, no tracking, no analytics."
+tagline: "The read-only App Store Connect dashboard for indie iOS developers."
+quick_answer: "AppMeta Pulse is a read-only App Store Connect dashboard for iPhone, iPad, and Mac. Indie iOS developers use it to check revenue, proceeds, active subscriptions, trial conversions, refunds, and downloads across their entire app portfolio in seconds — without opening a browser, and without granting any write access to their App Store Connect account. Built on Apple's official App Store Connect API. Free trial, then $0.99/month, $8.99/year, or $17.99 lifetime. No ads, no tracking, no analytics SDKs."
 category: business
 platforms: ["iOS"]
 status: live
@@ -21,76 +21,101 @@ icon: "/assets/icons/appmeta-pulse.png"
 og_image: "/assets/og/appmeta-pulse.png"
 
 seo:
-  title: "AppMeta Pulse — App Store Connect Revenue for iPhone & Mac"
-  description: "Read-only App Store Connect revenue dashboard. Check subscriptions, downloads & refunds in seconds on iPhone, iPad or Mac. From $0.99/mo. No tracking."
+  title: "AppMeta Pulse: App Store Connect Dashboard for iPhone"
+  description: "Read-only App Store Connect dashboard for indie iOS devs. Revenue, subscriptions, refunds in seconds on iPhone. From $0.99/mo. Zero tracking."
   keywords:
-    - app store connect dashboard
-    - app revenue tracker
+    - App Store Connect iPhone app
+    - App Store Connect dashboard iPhone
+    - app store revenue tracker iPhone
+    - read-only App Store Connect
+    - indie iOS developer dashboard
     - app store analytics iPhone
-    - developer revenue dashboard
-    - subscription metrics app
+    - AppStats alternative
+    - App Sales alternative
+    - Appfigures alternative iPhone
+    - subscription metrics iPhone
     - app store downloads tracker
-    - indie developer analytics
+    - app store proceeds tracker
     - app store connect companion
-    - app revenue monitor
-    - app performance tracker
-    - developer metrics iPhone
-    - app store sales tracker
+    - sales and trends iPhone
+    - app store financial reports iPhone
+    - portfolio revenue dashboard
+    - indie developer revenue iPhone
+    - app store connect API client
+    - app store subscription dashboard
+    - app store refunds tracker
 
 hero:
-  headline: "Your App Store numbers. Instantly."
-  subheadline: "AppMeta Pulse is a fast, read-only companion for App Store Connect. Check revenue, subscriptions, downloads, and trends in seconds — from your phone, tablet, or Mac."
+  pre_headline: "For indie iOS developers shipping multiple apps."
+  headline: "The fast, read-only App Store Connect dashboard."
+  secondary: "Truly zero tracking — not just \"privacy-styled.\" Half the monthly price of AppStats; a third the entry price of Appfigures."
+  subheadline: "Check revenue, proceeds, active subscriptions, trial conversions, and refunds across your entire portfolio in seconds — on iPhone, iPad, or Mac. Built on Apple's official App Store Connect API. No browser. No write access. No accidents."
   cta_label: "Download Free"
-  alt: "AppMeta Pulse — App Store revenue and subscriptions dashboard on iPhone"
+  alt: "AppMeta Pulse — App Store Connect revenue and subscriptions dashboard on iPhone, showing today's proceeds across a multi-app portfolio"
 
 who_for:
-  - "You're an indie iOS developer shipping multiple apps and want daily revenue at a glance"
-  - "You're tired of logging into App Store Connect in a browser just to check yesterday's numbers"
-  - "You want a read-only dashboard so you can't accidentally break anything"
-  - "You need subscription health, trial conversions, and refund tracking in one view"
-  - "You want App Store metrics on iPhone during coffee, not on desktop during work"
+  - "You're an indie iOS developer or small studio shipping multiple apps and want daily revenue at a glance"
+  - "You're tired of logging into App Store Connect in a browser just to check yesterday's proceeds"
+  - "You want a strictly read-only dashboard so you cannot accidentally change pricing, submit a build, or break metadata"
+  - "You need subscription health, trial conversions, refunds, and downloads in one calm view"
+  - "You want to share read-only revenue visibility with a co-founder, designer, or accountant without granting App Store Connect write permissions"
+  - "You refuse to send your App Store Connect data through third-party analytics SDKs or ad networks"
 
 who_not_for:
-  - "You only ship one app and don't need a portfolio-level view"
-  - "You need write access to modify metadata or submit builds (use AppMeta instead)"
-  - "Your team already uses a shared analytics dashboard like RevenueCat or Appfigures"
+  - "You only ship one app and the App Store Connect web UI is already enough"
+  - "You need to actually edit metadata, submit builds, or change pricing — use AppMeta (our sister app) for that"
+  - "Your team already uses a shared enterprise analytics stack like RevenueCat, Sensor Tower, or Data.ai for paid plan reasons"
 
 alternatives_to:
-  - "App Store Connect app"
-  - "RevenueCat dashboard"
+  - "AppStats"
+  - "App Sales — Store Reports"
   - "Appfigures"
-  - "Sensor Tower"
-  - "Data.ai (App Annie)"
+  - "App Store Connect (official Apple app)"
+  - "RevenueCat"
 
 value_points:
   - title: "Seconds, not minutes"
-    description: "Launch the app. See your numbers. No loading App Store Connect in a browser. No navigating slow dashboards. Instant."
-  - title: "Read-only by design"
-    description: "Built purely for insight. You can't accidentally change settings, submit builds, or break anything. Just clarity."
-  - title: "Revenue, subscriptions, downloads"
-    description: "Active subscriptions, trial conversions, proceeds, refunds, and download counts — all in one calm view per app."
-  - title: "Secure and private"
-    description: "Apple's official APIs. Keychain-stored credentials. No ads, no analytics SDKs, no data collection."
+    description: "Launch the app. See your numbers. No loading App Store Connect in a browser, no nested reports, no \"Sales and Trends\" loading spinner — your proceeds, subscriptions, refunds, and downloads for the day are visible the moment the app opens."
+  - title: "Read-only by design — verifiably"
+    description: "AppMeta Pulse requests App Manager read-only API access, never write scope. It cannot change pricing, submit a build, edit metadata, or alter any setting in your App Store Connect account. Built so you cannot break anything, even if you wanted to."
+  - title: "Revenue, subscriptions, downloads — Apple's terms"
+    description: "Proceeds (after Apple's 15–30% cut), refunds, active subscriptions, trial conversions, cancellations, and download counts — using Apple's own App Store Connect vocabulary, not a third-party rebrand."
+  - title: "Truly zero collection"
+    description: "No analytics SDKs, no advertising tracking, no usage data, no diagnostics sent anywhere — declared on the App Store privacy label and the per-app Privacy Manifest. Credentials live in the system Keychain; queries hit Apple directly."
 
 features:
   - title: "Revenue at a glance"
-    description: "See today's revenue, proceeds, and refunds the moment you open the app. Per-app breakdowns show exactly which apps are performing and which need attention."
+    description: "Today's proceeds, refunds, and net revenue the moment you open the app. Per-app breakdowns show exactly which apps are pulling weight and which need attention. Multi-currency display where Apple reports it."
   - title: "Subscription health"
-    description: "Active subscriptions, free trials, conversion rates, and cancellations — all visible without drilling through App Store Connect's nested reports."
+    description: "Active subscriptions, free trials in flight, trial-to-paid conversion rate, and recent cancellations — without drilling through App Store Connect's nested Subscriptions reports."
   - title: "Trend comparison"
-    description: "Compare performance across days, weeks, and months with clear period-over-period analysis. Spot changes before they become problems — or celebrate growth you might have missed."
-  - title: "Per-app performance"
-    description: "If you ship multiple apps, see how each one contributes. Revenue, downloads, and subscription metrics broken down individually across your entire portfolio."
-  - title: "Built for your phone"
-    description: "Optimized for quick checks throughout the day. Morning coffee revenue check. Post-launch download monitoring. End-of-week trend review. Always available in your pocket."
+    description: "Period-over-period analysis across days, weeks, and months. Spot a revenue dip before it becomes a problem, or celebrate growth that ASC's default views hide behind tabs."
+  - title: "Per-app, portfolio-wide"
+    description: "Ship five apps or fifteen — see how each one contributes to total proceeds, downloads, and subscription metrics, broken down per app across your entire App Store Connect catalogue."
+  - title: "Sales & Trends + Subscription reports, on iPhone"
+    description: "Surfaces the metrics Apple splits across the \"Sales and Trends\" and \"Subscriptions\" sections of App Store Connect into a single calm view, refreshed on demand."
+  - title: "Built for the pocket check"
+    description: "Optimized for the 10-second morning glance. Coffee, app, number. End-of-week trend review while waiting at the airport. Always-on metrics without the browser tax."
 
 screenshots:
-  - "/assets/screenshots/appmeta-pulse/1.png"
-  - "/assets/screenshots/appmeta-pulse/2.png"
-  - "/assets/screenshots/appmeta-pulse/3.png"
-  - "/assets/screenshots/appmeta-pulse/4.png"
-  - "/assets/screenshots/appmeta-pulse/5.png"
-  - "/assets/screenshots/appmeta-pulse/6.png"
+  - src: "/assets/screenshots/appmeta-pulse/1.png"
+    alt: "AppMeta Pulse today view on iPhone showing today's proceeds, refunds, and download count across a multi-app portfolio"
+    caption: "Today's proceeds, refunds, and downloads — the moment you open the app"
+  - src: "/assets/screenshots/appmeta-pulse/2.png"
+    alt: "AppMeta Pulse subscription health view on iPhone showing active subscriptions, trial conversions, and recent cancellations per app"
+    caption: "Subscription health — active, trials, conversions, cancellations"
+  - src: "/assets/screenshots/appmeta-pulse/3.png"
+    alt: "AppMeta Pulse trend comparison view on iPhone showing period-over-period revenue chart across days, weeks, and months"
+    caption: "Period-over-period trends — spot dips before they compound"
+  - src: "/assets/screenshots/appmeta-pulse/4.png"
+    alt: "AppMeta Pulse per-app breakdown on iPhone showing how each app in the portfolio contributes to total proceeds and downloads"
+    caption: "Per-app contribution to portfolio revenue and downloads"
+  - src: "/assets/screenshots/appmeta-pulse/5.png"
+    alt: "AppMeta Pulse refunds and proceeds detail view on iPhone showing Apple's official Sales and Trends data"
+    caption: "Refunds and proceeds in Apple's official Sales and Trends terms"
+  - src: "/assets/screenshots/appmeta-pulse/6.png"
+    alt: "AppMeta Pulse Mac view showing App Store Connect dashboard with revenue, subscriptions, and downloads in a calm read-only interface"
+    caption: "Same dashboard on Mac — read-only, no browser tab needed"
 
 privacy:
   data_collection: "none"
@@ -99,26 +124,52 @@ privacy:
   notes:
     - "No ads, no third-party analytics or SDKs"
     - "Read-only access via Apple's official App Store Connect API"
-    - "Credentials stored securely in macOS/iOS Keychain"
-    - "No data collected or sent to third-party servers"
+    - "App Store Connect API key (.p8) and key ID stored in the system Keychain"
+    - "Queries hit Apple's servers directly — no data routed through Lagerland servers"
+    - "No data collected, no diagnostics, no usage telemetry"
 
 faq:
   - q: "What is AppMeta Pulse?"
-    a: "AppMeta Pulse is a fast, read-only companion app for App Store Connect. It shows revenue, subscriptions, downloads, refunds, and performance trends for all your apps — on iPhone, iPad, Mac, and Apple Vision Pro."
-  - q: "How is AppMeta Pulse different from App Store Connect?"
-    a: "App Store Connect is a full management tool. AppMeta Pulse is a focused, read-only dashboard built for quick checks — faster to launch, simpler to read, and designed for monitoring rather than managing."
+    a: "AppMeta Pulse is a fast, strictly read-only App Store Connect dashboard for iPhone, iPad, Mac, and Apple Vision Pro. It shows revenue, proceeds, refunds, active subscriptions, trial conversions, and downloads for every app in your App Store Connect account — without opening a browser and without ever requesting write access."
+
+  - q: "How is AppMeta Pulse different from AppStats, App Sales, or Appfigures?"
+    a: "All four target indie iOS developers checking App Store Connect on iPhone, but they trade off differently. <a href=\"/alternatives/appstats/\">AppStats</a> has daily notifications and home-screen widgets but costs ~3× the monthly price and collects usage and diagnostics data. <a href=\"/alternatives/app-sales-store-reports/\">App Sales — Store Reports</a> has country breakdowns and a higher App Store rating (★ 4.9 / 41), but its App Store privacy label declares that it tracks purchases, identifiers, and usage data for third-party advertising. <a href=\"/alternatives/appfigures/\">Appfigures</a> is a web/enterprise dashboard with deep cross-store reporting at $9.99+/month. AppMeta Pulse is the cheapest and the only one that declares <em>zero</em> data collection on its privacy label. Pick AppMeta Pulse for price + zero tracking; pick the others if you specifically need their unique features."
+
+  - q: "How is AppMeta Pulse different from the official App Store Connect app?"
+    a: "Apple's <a href=\"https://apps.apple.com/us/app/app-store-connect/id1234793120\" rel=\"noopener\">App Store Connect app</a> is a full management tool — it can submit builds, reply to reviews, manage TestFlight, change metadata. AppMeta Pulse is the opposite: a focused, read-only dashboard built for quick monitoring rather than management. Faster to launch, simpler to read, no chance of accidentally pushing a build at the coffee shop."
+
+  - q: "What's the difference between sales and proceeds in App Store Connect?"
+    a: "<em>Sales</em> is the gross amount customers paid before Apple's commission. <em>Proceeds</em> is what actually arrives in your bank account after Apple's 15% (Small Business Program) or 30% (standard) cut and country-specific VAT. AppMeta Pulse displays proceeds by default — it is the number you actually get paid — and lets you toggle to gross sales when you want to compare against Sales and Trends in the App Store Connect web UI. See Apple's reference on <a href=\"https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders/\" rel=\"noopener\">units, proceeds, and sales</a> for the official definitions."
+
+  - q: "Does AppMeta Pulse use the App Store Connect API or the web dashboard?"
+    a: "The official <a href=\"https://developer.apple.com/documentation/appstoreconnectapi\" rel=\"noopener\">App Store Connect API</a>. You generate an App Store Connect API key in Users and Access → Keys, scope it to App Manager (or any read-capable role), download the .p8 private key, and import it into AppMeta Pulse. The .p8 file and key ID are stored in your system Keychain. AppMeta Pulse never scrapes the web dashboard."
+
+  - q: "What permissions does AppMeta Pulse request on my App Store Connect account?"
+    a: "Read access only. The app needs to read Sales and Trends and Subscription reports; it never requests write access, build submission permissions, or metadata edit rights. The strict separation is enforced by the API key's role — generate the key with App Manager (read) or Customer Support if you want even tighter scoping. You can revoke the key in App Store Connect any time without uninstalling the app."
+
+  - q: "How fresh is the data — is it real-time?"
+    a: "It is as fresh as Apple makes available. App Store Connect's Sales and Trends data is updated daily with next-day numbers (today's purchases appear tomorrow morning UTC). Subscription metrics are similarly daily. AppMeta Pulse polls Apple on demand and on a refresh interval; it cannot make Apple's data faster than Apple does. If a number looks stuck, it is almost always Apple's reporting cadence, not the app."
+
+  - q: "Can I see revenue by country?"
+    a: "Yes — Sales and Trends reports include country/territory breakdowns and AppMeta Pulse surfaces them in the per-app detail view. Top territories by proceeds are shown by default; you can drill into specific countries when reconciling against Apple's <a href=\"https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/\" rel=\"noopener\">monthly financial reports</a>."
+
   - q: "Is AppMeta Pulse safe for my credentials?"
-    a: "Yes. Authentication uses Apple's official App Store Connect API. Credentials are stored in the system Keychain — the same secure storage used by macOS and iOS for passwords."
+    a: "Yes. The App Store Connect API key (.p8 file and key ID) are stored in the system Keychain — the same secure storage macOS and iOS use for passwords and Wi-Fi credentials. Queries go directly to Apple's API servers over HTTPS; nothing is routed through Lagerland Apps servers. You can revoke the key in App Store Connect at any time."
+
   - q: "Can I accidentally change app settings?"
-    a: "No. AppMeta Pulse is strictly read-only. It cannot modify metadata, submit builds, change pricing, or alter any settings in your App Store Connect account."
+    a: "No. AppMeta Pulse is strictly read-only by construction — it never requests write scope from the App Store Connect API. There are no \"submit build,\" \"edit metadata,\" or \"change pricing\" buttons anywhere in the app because the underlying authentication does not allow them. Most accidental App Store Connect mistakes (pushing the wrong build, replying to the wrong review, hiking the wrong price) are impossible inside AppMeta Pulse."
+
   - q: "Is AppMeta Pulse free?"
-    a: "AppMeta Pulse is free to download. Full access is available at $0.99/month, $8.99/year, or $17.99 lifetime."
+    a: "Free to download with a trial. Full access is $0.99/month, $8.99/year, or $17.99 lifetime — the lifetime tier is roughly 64% cheaper than AppStats' $49.99 lifetime and roughly a third the entry price of Appfigures."
+
   - q: "Does it support multiple apps?"
-    a: "Yes. AppMeta Pulse shows performance metrics across your entire app portfolio — every app in your App Store Connect account."
+    a: "Yes. AppMeta Pulse shows performance metrics across every app in your App Store Connect account. Per-app breakdowns let you see how each app contributes to total proceeds, downloads, and subscription health — the use case the official App Store Connect web UI handles poorly on a phone."
+
   - q: "Who is AppMeta Pulse for?"
-    a: "Indie developers, founders, and small teams who check App Store metrics regularly and want a faster, calmer way to monitor their business than the App Store Connect web interface."
+    a: "Indie iOS developers, founders, and small studio teams who check App Store metrics regularly and want a faster, calmer way to monitor their business than the App Store Connect web interface or app. Particularly valuable for multi-app publishers who want a portfolio view at a glance."
+
   - q: "Does AppMeta Pulse collect any data?"
-    a: "No. AppMeta Pulse has no analytics, no third-party SDKs, and collects no data. All communication happens directly between your device and Apple's servers."
+    a: "No. AppMeta Pulse has no analytics, no third-party SDKs, no advertising trackers, and collects no usage data, diagnostics, or telemetry. Its App Store privacy label declares zero data collection — verifiable on the listing. All communication is direct between your device and Apple's servers."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -132,5 +183,39 @@ ratings:
   value: "5.0"
   count: 2
   last_synced: "2026-04-15"
+
+related_journal:
+  slug: native-mac-client-for-app-store-connect
+  anchor: "Why we built a native client for App Store Connect — and what the web UI gets wrong on a phone"
+
+show_body: true
+about_heading: "Why AppMeta Pulse exists."
+
+# Studio identity — Organization-mode founder block (no personal name).
+founder:
+  overline: "Who built this"
+  heading: "An independent Apple studio that ships its own apps — and built the dashboard it wanted to use."
+  entity_type: "Organization"
+  name: "Lagerland Apps"
+  role: "Independent Apple studio · Finland"
+  photo: "/assets/icons/lagerland-mark.png"
+  bio: "AppMeta Pulse exists because checking App Store revenue on a phone has been quietly broken for a decade. Apple's official App Store Connect app focuses on management — submitting builds, replying to reviews, editing metadata — not on the 10-second \"how did yesterday do?\" glance that indie publishers actually need. Web-based dashboards run $9.99+/month and route your data through third-party analytics. Other iPhone trackers charge more and collect usage data for advertising. We ship 15+ apps through App Store Connect and wanted a calm, read-only, on-device dashboard with no ad SDKs, no third-party servers, and no surprises on the privacy label. So we built one."
+  support_email: "lagerland.apps@proton.me"
+  response_time: "Support emails are answered personally, usually within a day."
+  signals:
+    - "Lagerland Apps publishes 15+ apps through App Store Connect — AppMeta Pulse is the dashboard we use every day on our own portfolio"
+    - "Zero third-party SDKs, zero advertising trackers, zero collected data — declared on the App Store privacy label and verifiable in the per-app Privacy Manifest"
+    - "Architecture: App Store Connect API key in system Keychain, direct HTTPS to Apple — your data never touches Lagerland servers"
+    - "Funded by honest paid software — no ads, no investor pressure, no growth-hacking"
+  external_link:
+    href: "/alternatives/"
+    label: "See how AppMeta Pulse compares to AppStats, App Sales, and Appfigures →"
 ---
-AppMeta Pulse is a fast, read-only companion app for App Store Connect on iPhone, iPad, Mac, and Apple Vision Pro. It displays revenue, proceeds, refunds, active subscriptions, trial conversions, cancellations, downloads, and performance trends across all apps in a developer's portfolio. Designed for quick daily checks rather than full app management — strictly read-only with no ability to modify settings, submit builds, or change metadata. Period-over-period trend comparison shows performance changes across days, weeks, and months. Per-app breakdowns help developers with multiple apps monitor individual performance. Uses Apple's official App Store Connect API with Keychain-stored credentials. No ads, no analytics SDKs, no data collection. Free to download with access from $0.99/month or $17.99 lifetime.
+
+Apple's own App Store Connect app is built to <em>manage</em> a developer business — submit builds, reply to reviews, edit metadata, manage TestFlight. That is the right tool for the work. It is not the right tool for the question almost every indie publisher actually asks ten times a day: <em>how is yesterday looking?</em> Open the official app on a phone and you are three taps and a loading spinner away from a number you wanted in two seconds.
+
+AppMeta Pulse was built to be the other half — the read-only, monitoring-first, calm dashboard for the daily glance. Open the app, see today's proceeds, refunds, active subscriptions, trial conversions, and downloads across every app you ship. Drill into one app when something looks off. Compare this week to last week. Close the app. Get back to building.
+
+The read-only constraint is not a marketing line; it is enforced by the App Store Connect API key the app uses. AppMeta Pulse never requests write scope, so the underlying authentication forbids submitting builds, changing pricing, or editing metadata — even if a future bug tried to. The .p8 private key and key ID live in your system Keychain. Queries hit Apple's API servers directly over HTTPS; nothing is routed through Lagerland Apps servers, and the App Store privacy label declares zero data collection — verifiable on the listing, not just an asserted line of copy.
+
+The dashboard uses Apple's own vocabulary: <em>proceeds</em> (after Apple's 15% Small Business or 30% standard cut and country VAT), <em>sales</em> (gross before commission), <em>units</em>, <em>refunds</em>, <em>active subscriptions</em>, <em>trial conversions</em>, <em>cancellations</em>. If you have ever spent an hour reconciling AppFigures' relabelled numbers against your monthly <a href="https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/" rel="noopener">financial reports</a>, that hour comes back to you.

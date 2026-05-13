@@ -19,10 +19,22 @@ schema_offer_count: "3"
 
 plans_footnote: "Both plans run on iPhone, Mac, and Apple Vision Pro. Reads from Apple Watch automatically via Apple Health — no separate pairing."
 
+release_notes:
+  - date: "2026-05-13"
+    note: "Documented the correlation engine end-to-end in the new How-it-works method note. Same algorithm, now fully transparent."
+  - date: "2026-04-22"
+    note: "Pro: shipped the multi-variable correlation engine — training load × screen time × caffeine timing → next-morning HRV."
+  - date: "2026-03-30"
+    note: "Pro: long-term trend analysis (90 / 180 / 365 day windows) and per-pattern confidence scoring."
+  - date: "2026-02-18"
+    note: "60-day rolling baseline added for lnRMSSD, RHR, sleep efficiency, deep-sleep share, REM share."
+  - date: "2026-01-01"
+    note: "Observa 1.0 — daily insight cards, core single-variable pattern recognition, fully on-device."
+
 plans:
   - name: "Free"
     price: "€0"
-    summary: "Daily insight cards, core pattern recognition, on-device privacy."
+    summary: "Free forever — daily plain-English Apple Health insights, on-device. No trial, no card, no account."
     features:
       - "Daily insight card from your Apple Health data"
       - "Core pattern recognition (single-variable correlations)"
@@ -186,7 +198,7 @@ founder:
   location: "Finland"
   overline: "Who built this"
   heading: "A one-person studio. That's the point."
-  story: "Observa is built by a single independent developer at Lagerland Apps, working from Finland since 2025. It was made after years of staring at AutoSleep and Apple Health dashboards without ever knowing what the numbers actually meant. Observa is the interpretation layer that was missing — and because it runs entirely on your device, no one at Lagerland Apps ever sees your data either."
+  story: "Observa is built by a single independent developer at Lagerland Apps, working from Finland since 2025. After 14 months of staring at AutoSleep scores and Apple Health dashboards without ever learning anything from them, the most surprising finding once Observa's pattern engine ran against the studio's own data was this: screen-time within 30 minutes of sleep onset correlated more strongly with deep-sleep loss than total hours slept. Observa is the interpretation layer that surfaced that — and because it runs entirely on your device, no one at Lagerland Apps ever sees your data either."
   signals:
     - "Independent Apple developer, building privacy-first iOS and macOS apps from Finland since 2025"
     - "Observa runs 100% on-device — Apple's App Privacy nutrition label lists zero data collected"
@@ -219,6 +231,8 @@ faq:
     a: "Patterns surface once they cross both a minimum sample size (n ≥ 10 observations) and a confidence threshold (p ≤ 0.10). You'll see the n and confidence on every Pro card so you can judge for yourself. The free tier shows patterns with stricter defaults to keep the daily card high-signal."
   - q: "How is Observa an alternative to AutoSleep, Athlytic, or Bevel?"
     a: "AutoSleep, Athlytic, and Bevel give you scores and charts — heart-rate dip during sleep, recovery percentages, Body Charge style numbers, sleep stage breakdowns. Observa gives you sentences that say what's actually moving those numbers for you specifically: which workouts shift your acute:chronic training-load ratio, which late-night habits cost you deep sleep, which weekly patterns predict next-morning HRV. And unlike Bevel and Athlytic, Observa runs 100% on-device with no account and no server."
+  - q: "What does Observa actually measure?"
+    a: "Observa reads ten core metrics from Apple Health and interprets them against your personal 60-day baseline. lnRMSSD — the log-transformed heart-rate variability used in sports science. RHR — resting heart rate, tracked for baseline drift. Sleep efficiency — the percentage of time in bed actually asleep. Deep-sleep share and REM share — the fractions of the night spent in each stage. Sleep latency — how long it took to fall asleep. Heart-rate dip — how far your overnight heart rate drops below daytime resting (a classic AutoSleep metric). Wrist temperature — overnight skin temperature shift on Apple Watch Series 8 and later. Respiratory rate — breaths per minute during sleep. ECG sinus-rhythm — the rhythm classification Apple Watch reports. Each is interpreted as a sentence, not a graph, and scored against your own trend rather than a population average. Your chronotype, training programme, and life rhythm shape your baseline — that's the point."
 
 related_journal:
   slug: what-14-days-of-apple-health-can-reveal

@@ -1,4 +1,4 @@
-<section class="section reveal">
+<section id="pricing" class="section reveal">
   <h2 class="h2">Pricing</h2>
 
   {%- comment %}
@@ -34,6 +34,19 @@
   </div>
   {%- if include.app.plans_footnote -%}
   <p class="plans-footnote">{{ include.app.plans_footnote }}</p>
+  {%- endif -%}
+  {%- if include.app.release_notes and include.app.release_notes.size > 0 -%}
+  <details class="release-notes">
+    <summary class="release-notes__summary">What changed recently — {{ include.app.release_notes.size }} dated updates</summary>
+    <ol class="release-notes__list">
+      {%- for entry in include.app.release_notes -%}
+      <li class="release-notes__item">
+        <time class="release-notes__date" datetime="{{ entry.date }}">{{ entry.date | date: "%-d %B %Y" }}</time>
+        <span class="release-notes__note">{{ entry.note }}</span>
+      </li>
+      {%- endfor -%}
+    </ol>
+  </details>
   {%- endif -%}
   <div class="pricing-foot">
     <p class="pricing-note">Transparent pricing on the App Store. Cancel anytime. Free plan is free forever — no trial, no card.</p>

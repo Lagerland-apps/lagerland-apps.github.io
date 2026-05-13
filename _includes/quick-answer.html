@@ -1,5 +1,20 @@
 {%- assign qa = include.text | default: page.quick_answer -%}
 {%- if qa and qa != "" -%}
+{%- comment %}
+  SpeakableSpecification — tells voice assistants (Siri, Assistant,
+  Alexa) which paragraph to read when asked "what is <app>?". The
+  ".quick-answer__body" CSS selector is what the schema points to.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".quick-answer__body"]
+  }
+}
+</script>
 <aside class="quick-answer reveal" aria-label="Quick answer" itemscope itemtype="https://schema.org/Answer">
   <p class="quick-answer__label">Quick answer</p>
   <p class="quick-answer__body" itemprop="text">{{ qa }}</p>
