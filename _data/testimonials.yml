@@ -86,3 +86,37 @@ observa:
     language: "fr"
     tier: "hero"
     translation_en: "Great app for tracking recovery, sleep, and stress clearly and in detail. I especially appreciate the respect for privacy: everything stays on the iPhone, no account, no ads. The new charts are really clean and easy to read. 👍"
+
+soon:
+  # Curated to the five most specific, most credible quotes.
+  # Short praise ("Best looking app ever", "very well done I like it", "love it!")
+  # was deliberately left out — it dilutes the strong, substantive testimonials.
+  - quote: "The emotional framing is what makes this feel different from the usual countdown apps. Most of them are just timers, but the photo plus weather angle makes the waiting feel attached to a real future moment instead of an abstract number. The anniversary return for past events is also smart, because it turns the app from a one-time utility into something people might keep around after the trip or wedding is over."
+    author: "P.S."
+    source: "Reddit"
+    language: "en"
+    tier: "hero"
+
+  - quote: "That framing is good. 'Make the waiting itself pretty' is much more memorable than just another countdown utility."
+    author: "M.B."
+    source: "Reddit"
+    language: "en"
+    tier: "hero"
+
+  - quote: "The weather tie-in is a smart differentiator. Most countdown apps stop at the date, but for trips and outdoor events the forecast becoming visible is genuinely part of the anticipation."
+    author: "D.N."
+    source: "Reddit"
+    language: "en"
+    tier: "hero"
+
+  - quote: "Countdown apps are so simple, but this is done really cleanly. I love the idea of an added checklist of things to prepare for."
+    author: "K.C."
+    source: "Reddit"
+    language: "en"
+    tier: "hero"
+
+  - quote: "The emotional angle is strong — most countdown apps just show a number, but the waiting is often part of the moment."
+    author: "O."
+    source: "Reddit"
+    language: "en"
+    tier: "hero"
