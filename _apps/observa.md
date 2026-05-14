@@ -249,7 +249,7 @@ release:
 
 ratings:
   value: "5.0"
-  count: 0
-  last_synced: "2026-05-13"
+  count: 5
+  last_synced: "2026-05-14"
 ---
 Observa is a health insights app for iPhone, Mac, and Apple Vision Pro that transforms Apple Health data into personal, pattern-based insights about sleep, recovery, energy, and activity. Using single-variable and multi-variable correlation analysis against a rolling 60-day personal baseline, lnRMSSD (HRV) trend tracking, Apple Watch ECG sinus-rhythm interpretation, and long-term trend detection, Observa explains in plain English what consistently affects your sleep efficiency, recovery readiness, and energy — not in charts. It reads data you already collect through Apple Watch and Health-connected apps, requiring no manual logging. Daily insight cards show your current state against your baseline, weekly reflections highlight what worked, and per-pattern confidence scoring lets you judge each insight for yourself. Free with optional Pro for advanced analytics. Completely private — no ads, no trackers, no account required, no data leaves your device, verified by Apple's App Privacy nutrition label.
