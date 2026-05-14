@@ -49,3 +49,40 @@ gymlogger-x:
     language: "fr"
     tier: "hero"
     translation_en: "Installed the app today and it's already top-tier! No videos, but super clear, well-explained diagrams that guide the exercises perfectly. First session this morning was smooth — intuitive interface, motivating reminders. Perfect for getting started with strength training! 💪"
+
+observa:
+  # Curated to the five strongest, most specific quotes.
+  # Short filler ("great UI", "the data amount is insane", "it is worth a lot")
+  # was deliberately left out — it dilutes the credible long quotes.
+  - quote: "This is the kind of app Apple probably thinks Apple Health already is. The correlation engine is what makes it work — raw health data without context is basically useless for most people. 'Your HRV is 54' means nothing. 'Your sleep tanks every time you train late' is actually actionable. Huge respect for keeping everything on-device with no account, too. Health apps shipping deeply personal data to random servers has become weirdly normalized lately, so seeing one go the opposite direction is refreshing."
+    author: "H.P."
+    source: "Reddit"
+    language: "en"
+    tier: "hero"
+
+  - quote: "Love seeing the correlation engine — finding real associations between habits and sleep or HRV is the kind of thing most health apps just don't do because it's hard to build well. The 100% on-device approach is the right call for this kind of data too. People are way more likely to actually use something when they trust where their health data is going."
+    author: "O.A."
+    source: "Reddit"
+    language: "en"
+    tier: "hero"
+
+  - quote: "This is how it should be. Maybe a bit technical for most people, but too many apps are making claims without telling the user whether the number is any good. Observa actually shows you the baseline behind the insight."
+    author: "I.D."
+    source: "Reddit"
+    language: "en"
+    tier: "hero"
+
+  - quote: "Sleek design, and the insights are genuinely pleasant to use to track and understand the different phases of my day. Already my new daily app."
+    author: "C."
+    source: "App Store"
+    rating: 5
+    language: "en"
+    tier: "hero"
+
+  - quote: "Super appli pour suivre sa récupération, son sommeil et son stress de façon claire et détaillée. J'apprécie surtout le respect de la vie privée : tout reste sur l'iPhone, sans compte ni pub. Les nouveaux graphiques sont vraiment propres et faciles à lire. 👍"
+    author: "K."
+    source: "App Store"
+    rating: 5
+    language: "fr"
+    tier: "hero"
+    translation_en: "Great app for tracking recovery, sleep, and stress clearly and in detail. I especially appreciate the respect for privacy: everything stays on the iPhone, no account, no ads. The new charts are really clean and easy to read. 👍"
