@@ -218,9 +218,8 @@ release:
 
 ratings:
   value: "5.0"
-  count: 2
-  last_synced: "2026-04-15"
-
+  count: 3
+  last_synced: "2026-05-15"
 related_journal:
   slug: native-mac-client-for-app-store-connect
   anchor: "Why we built a native client for App Store Connect — and what the web UI gets wrong on a phone"
