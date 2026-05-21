@@ -3,7 +3,7 @@ layout: app
 slug: mediakit
 name: "MediaKit"
 tagline: "Every media tool. One Mac app."
-quick_answer: "MediaKit is a native Mac app with 133 local tools for compressing, converting, and editing video, audio, images, PDFs, and archives. Drop any file and it picks the right tool — every operation runs on-device via Apple frameworks, never uploaded. Free 3-day trial; five core tools stay free forever, Pro unlocks the rest. No tracking, no account."
+quick_answer: "MediaKit is a native Mac app with 133 local tools for compressing, converting, and editing video, audio, images, PDFs, and archives. Drop any file and it picks the right tool — every operation runs on-device via Apple frameworks, never uploaded. Free 3-day trial; five core tools stay free forever. Pro from $3.99/month, $22.99/year, or $39.99 lifetime. No tracking, no account."
 category: utilities
 platforms: ["macOS"]
 status: live
@@ -12,8 +12,47 @@ app_store_url: "https://apps.apple.com/app/id6761451361"
 
 price:
   model: freemium
-  value: "Free — Pro for unlimited"
+  value: "Free trial — Pro from $3.99/mo, $22.99/yr, or $39.99 lifetime"
 schema_price: "0"
+schema_high_price: "39.99"
+schema_offer_count: "4"
+
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
+
+plans:
+  - name: "Free trial"
+    price: "$0"
+    summary: "All 133 tools unlocked for 3 days. After that, five core tools stay free forever."
+    features:
+      - "Full access to all 133 tools for 3 days"
+      - "Five tools stay free forever: Video Compress, Image Compress, Image Resize, Audio Convert, PDF Compress"
+      - "Everything runs on-device — no upload, no account"
+  - name: "Pro · Monthly"
+    price: "$3.99/mo"
+    summary: "Full Pro, billed monthly. Cancel anytime."
+    features:
+      - "All 133 tools across video, audio, image, PDF, archive"
+      - "Batch processing"
+      - "All 21 export presets (YouTube, Instagram, Discord, broadcast LUFS)"
+      - "All six Shortcuts actions"
+      - "Menu bar access to every tool"
+  - name: "Pro · Annual"
+    price: "$22.99/yr"
+    summary: "Same Pro features, billed once a year. ~52% cheaper than paying monthly."
+    features:
+      - "Everything in Pro · Monthly"
+      - "~52% cheaper than monthly over a year"
+      - "Cancel anytime"
+    highlight: true
+  - name: "Lifetime"
+    price: "$39.99 once"
+    summary: "All Pro features. Roughly 10 months of monthly Pro — then yours."
+    features:
+      - "Everything in Pro · Annual"
+      - "One-time purchase, no renewal"
+      - "Future Pro features included"
+      - "Restores on every Mac signed in with the same Apple ID"
+    highlight_label: "Best long-term value"
 
 icon: "/assets/icons/mediakit.png"
 og_image: "/assets/og/mediakit.png"
@@ -116,7 +155,7 @@ faq:
   - q: "Which file formats does MediaKit support?"
     a: "Video: MP4, MOV, MKV, AVI, WebM, M4V, ProRes, HEVC. Audio: MP3, M4A, WAV, FLAC, AIFF, AAC, ALAC. Image: PNG, JPG, HEIC, WebP, TIFF, GIF, AVIF, RAW. Documents: PDF, EPUB, CBZ, HTML, RTF. Archives: ZIP, TAR, GZIP, XZ, BZIP2, and RAR v4 and v5."
   - q: "Is MediaKit free?"
-    a: "Yes, to start. You get full access to all 133 tools for 3 days. After the trial, five tools stay free forever: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Pro unlocks the remaining 128 tools and batch processing."
+    a: "Yes, to start. You get full access to all 133 tools for 3 days. After the trial, five tools stay free forever: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Pro unlocks the remaining 128 tools and batch processing — $3.99/month, $22.99/year, or $39.99 lifetime. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does MediaKit work offline?"
     a: "Yes. Because everything runs on-device, MediaKit works without an internet connection."
   - q: "Which Macs does MediaKit support?"

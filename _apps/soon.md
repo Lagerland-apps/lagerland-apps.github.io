@@ -3,7 +3,7 @@ layout: app
 slug: soon
 name: "Soon."
 tagline: "Countdowns worth waiting for."
-quick_answer: "Soon. is a countdown and planner app for iPhone that turns trips, weddings, birthdays, anniversaries, and milestones into living countdowns with full-bleed photo backgrounds, live destination weather, smart Plan Mode checklists, and widgets for Home Screen, Lock Screen, and StandBy. Free with Premium from €2.99/month or €39.99 lifetime. No ads, no tracking, no account required."
+quick_answer: "Soon. is a countdown and planner app for iPhone that turns trips, weddings, birthdays, anniversaries, and milestones into living countdowns with full-bleed photo backgrounds, live destination weather, smart Plan Mode checklists, and widgets for Home Screen, Lock Screen, and StandBy. Free with Premium from $1.99/month or $14.99 lifetime. No ads, no tracking, no account required."
 category: lifestyle
 platforms: ["iOS"]
 status: live
@@ -12,17 +12,19 @@ app_store_url: "https://apps.apple.com/app/id6757280643"
 
 price:
   model: freemium
-  value: "Free — Premium from €2.99/mo"
+  value: "Free — Premium from $1.99/mo"
 schema_price: "0"
-schema_high_price: "39.99"
+schema_high_price: "14.99"
 schema_offer_count: "4"
 
-# Free / Premium-annual / Lifetime — surfaces the upgrade math instead of burying
-# Premium features inside the FAQ. Lifetime sits at ~14 months of monthly Premium,
-# which is the conversion math you want readers to see at a glance.
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
+
+# Free / Monthly / Annual / Lifetime — surfaces the full upgrade ladder. The
+# lifetime tier costs roughly 8 months of monthly Premium, so the breakeven
+# math is the message you want readers to see at a glance.
 plans:
   - name: "Free"
-    price: "€0"
+    price: "$0"
     summary: "Five events, one pinned widget, three themes — forever."
     features:
       - "5 events at a time"
@@ -32,9 +34,9 @@ plans:
       - "Memories (anniversaries return automatically)"
       - "Reflection mode"
       - "39 languages"
-  - name: "Premium · Annual"
-    price: "€19.99/yr"
-    summary: "Unlimited events plus weather, themes, daily notes, recurring events."
+  - name: "Premium · Monthly"
+    price: "$1.99/mo"
+    summary: "All Premium features, billed monthly. Cancel anytime."
     features:
       - "Unlimited events"
       - "All widget styles (small / medium / large / ring / minimal / timeline)"
@@ -44,10 +46,17 @@ plans:
       - "Recurring events"
       - "Event notifications"
       - "7-day free trial · cancel anytime"
+  - name: "Premium · Annual"
+    price: "$9.99/yr"
+    summary: "Same Premium features, billed once a year. Roughly 5 months of monthly Premium."
+    features:
+      - "Everything in Premium · Monthly"
+      - "~58% cheaper than paying monthly all year"
+      - "7-day free trial · cancel anytime"
     highlight: true
   - name: "Lifetime"
-    price: "€39.99 once"
-    summary: "All Premium features. Roughly 14 months of monthly Premium — then yours."
+    price: "$14.99 once"
+    summary: "All Premium features. Roughly 8 months of monthly Premium — then yours."
     features:
       - "Everything in Premium · Annual"
       - "One-time purchase, no renewal"
@@ -59,7 +68,7 @@ og_image: "/assets/og/soon.png"
 
 seo:
   title: "Countdown App for iPhone — Trips, Weddings, Milestones | Soon."
-  description: "Countdown & planner app for iPhone — trips, weddings, birthdays. Photo widgets, destination weather, smart checklists. Free, Premium €2.99/mo. No tracking."
+  description: "Countdown & planner app for iPhone — trips, weddings, birthdays. Photo widgets, destination weather, smart checklists. Free, Premium $1.99/mo. No tracking."
   keywords:
     - countdown app iphone
     - event countdown planner
@@ -83,7 +92,7 @@ seo:
 hero:
   pre_headline: "Countdown & planner app for iPhone"
   headline: "Some days you can't wait for."
-  subheadline: "Soon. is the countdown app for iPhone that turns every trip, wedding, birthday, and milestone into a living countdown — full-bleed photo backgrounds, live destination weather, smart Plan Mode checklists, and widgets for Home Screen, Lock Screen, and StandBy. Free with Premium from €2.99/month. No ads, no tracking, no account."
+  subheadline: "Soon. is the countdown app for iPhone that turns every trip, wedding, birthday, and milestone into a living countdown — full-bleed photo backgrounds, live destination weather, smart Plan Mode checklists, and widgets for Home Screen, Lock Screen, and StandBy. Free with Premium from $1.99/month. No ads, no tracking, no account."
   cta_label: "Download Free"
   alt: "Soon. — full-bleed trip countdown on iPhone with photo background and live destination weather"
 
@@ -218,7 +227,7 @@ comparison_table:
     - feature: "Data storage"
       values: ["On-device only", "Cloud sync available", "Cloud sync available", "Cloud-based"]
     - feature: "One-time lifetime price"
-      values: ["€39.99 lifetime", "No (subscription only)", "No (subscription only)", "No"]
+      values: ["$14.99 lifetime", "No (subscription only)", "No (subscription only)", "No"]
     - feature: "Localised languages"
       values: ["39", "~30", "~20", "1 (English)"]
     - feature: "Memories return on anniversaries"
@@ -255,7 +264,7 @@ faq:
   - q: "Is Soon. free?"
     a: "Yes. The free tier includes 5 events, one pinned widget, three themes, calendar import, memories, and reflection mode. Premium unlocks unlimited events, all widget styles, ten premium themes, weather intelligence, daily notes, recurring events, and event notifications."
   - q: "What does Premium cost?"
-    a: "€2.99 per month, €19.99 per year, or €39.99 once for lifetime access. Premium comes with a seven-day free trial and you can cancel anytime."
+    a: "$1.99 per month, $9.99 per year, or $14.99 once for lifetime access. Premium comes with a seven-day free trial and you can cancel anytime. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Which widgets does Soon. support?"
     a: "Home Screen, Lock Screen, and StandBy widgets in every iOS size — small, medium, large, ring, minimal, and timeline styles. Your most important countdown can be visible on every screen you already use."
   - q: "Does Soon. track me or collect data?"
@@ -341,4 +350,4 @@ Soon. is built for the [iOS widget ecosystem](#features): Home Screen, Lock Scre
 
 Where Soon. is different: [no ads, no tracking, no account](/apps/soon/privacy/). Events live on your iPhone — not on a server, not under a login. Weather requests use approximate location or a place name only. Soon. is a [privacy-first alternative to](/alternatives/) Countdowns (Apalon), Dreamdays, Days Matter, and Wedding Happy — see [the side-by-side comparison](#compare-heading-soon) for specific feature deltas.
 
-Free tier: 5 events, one pinned widget, three themes, calendar import, memories, reflection mode. Premium: unlimited events, all widget styles, ten premium themes, live weather intelligence, daily notes, recurring events, and event notifications — €2.99/month, €19.99/year, or €39.99 lifetime, with a seven-day free trial and no auto-renew surprises. Published by Lagerland Apps, an independent Apple developer in Finland.
+Free tier: 5 events, one pinned widget, three themes, calendar import, memories, reflection mode. Premium: unlimited events, all widget styles, ten premium themes, live weather intelligence, daily notes, recurring events, and event notifications — $1.99/month, $9.99/year, or $14.99 lifetime, with a seven-day free trial and no auto-renew surprises. Published by Lagerland Apps, an independent Apple developer in Finland.

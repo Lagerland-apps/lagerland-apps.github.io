@@ -3,7 +3,7 @@ layout: app
 slug: observa
 name: "Observa"
 tagline: "Sleep, energy & recovery insights."
-quick_answer: "Observa is a private health insights app for iPhone, Mac, and Apple Vision Pro that reads your Apple Health and Apple Watch data — sleep stages, lnRMSSD (HRV) trends, ECG sinus-rhythm, resting heart rate, activity — and explains in plain language which of your habits actually shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. No servers, no account, no data upload (verified by Apple's App Privacy nutrition label). Free with Pro from €2.99/month or €69.99 lifetime."
+quick_answer: "Observa is a private health insights app for iPhone, Mac, and Apple Vision Pro that reads your Apple Health and Apple Watch data — sleep stages, lnRMSSD (HRV) trends, ECG sinus-rhythm, resting heart rate, activity — and explains in plain language which of your habits actually shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. No servers, no account, no data upload (verified by Apple's App Privacy nutrition label). Free with Pro from $3.99/month, $22.99/year, or $49.99 lifetime."
 category: health
 platforms: ["iOS", "macOS", "visionOS"]
 status: live
@@ -13,12 +13,12 @@ app_store_url: "https://apps.apple.com/app/id6757438990"
 
 price:
   model: freemium
-  value: "Free — Pro from €2.99/mo"
+  value: "Free — Pro from $3.99/mo"
 schema_price: "0"
-schema_high_price: "69.99"
-schema_offer_count: "3"
+schema_high_price: "49.99"
+schema_offer_count: "4"
 
-plans_footnote: "Both plans run on iPhone, Mac, and Apple Vision Pro. Reads from Apple Watch automatically via Apple Health — no separate pairing."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew. All plans run on iPhone, Mac, and Apple Vision Pro; reads from Apple Watch via Apple Health, no separate pairing."
 
 release_notes:
   - date: "2026-05-13"
@@ -34,7 +34,7 @@ release_notes:
 
 plans:
   - name: "Free"
-    price: "€0"
+    price: "$0"
     summary: "Free forever — daily plain-English Apple Health insights, on-device. No trial, no card, no account."
     features:
       - "Daily insight card from your Apple Health data"
@@ -42,9 +42,9 @@ plans:
       - "Sleep, HRV, and recovery readability — plain English"
       - "Local-only processing — no account, no upload"
       - "Free forever — no trial, no credit card"
-  - name: "Pro"
-    price: "€2.99/mo · €69.99 lifetime"
-    summary: "The full interpretation layer — correlations, baselines, weekly reflections."
+  - name: "Pro · Monthly"
+    price: "$3.99/mo"
+    summary: "Full Pro, billed monthly. Cancel anytime."
     features:
       - "Multi-variable correlation engine (training load × caffeine × sleep)"
       - "Personal 60-day baseline tracking with deviation alerts"
@@ -52,14 +52,31 @@ plans:
       - "Weekly reflection: what worked, what didn't, what to try"
       - "Per-pattern confidence scoring (n trials, statistical confidence)"
       - "Export every insight as plain text — never any lock-in"
-    highlight_label: "Best value"
+  - name: "Pro · Annual"
+    price: "$22.99/yr"
+    summary: "Same Pro features, billed once a year. ~52% cheaper than monthly."
+    features:
+      - "Everything in Pro · Monthly"
+      - "~52% cheaper than monthly over a year"
+      - "Cancel anytime"
+    highlight: true
+  - name: "Lifetime"
+    price: "$49.99 once"
+    summary: "All Pro features. Roughly 13 months of monthly Pro — then yours."
+    features:
+      - "Everything in Pro · Annual"
+      - "One-time purchase, no renewal"
+      - "Family Sharing — share with up to 5 family members at no extra cost"
+      - "Future Pro features included"
+      - "Restores on every device signed in with the same Apple ID"
+    highlight_label: "Best long-term value"
 
 icon: "/assets/icons/observa.png"
 og_image: "/assets/og/observa.png"
 
 seo:
   title: "Apple Health Insights for Sleep, HRV & Recovery — Observa"
-  description: "Plain-English sleep, HRV & recovery insights from your Apple Health data. 100% on-device. No account. Free; Pro from €2.99/mo."
+  description: "Plain-English sleep, HRV & recovery insights from your Apple Health data. 100% on-device. No account. Free; Pro from $3.99/mo."
   keywords:
     - Apple Health insights app
     - Apple Health analytics
@@ -221,7 +238,7 @@ faq:
   - q: "What are HRV and ECG insights?"
     a: "Observa tracks lnRMSSD (the log-transformed HRV metric used in sports science) against your personal 60-day baseline, flags drops greater than one standard deviation, and uses Apple Watch ECG sinus-rhythm data to estimate autonomic recovery state — the balance between sympathetic ('fight-or-flight') and parasympathetic ('rest-and-digest') activity. Translation: instead of a graph, you get a sentence like 'Your nervous system is 18% below baseline today — likely a recovery day.'"
   - q: "Is Observa free?"
-    a: "Yes. Daily insight cards and core single-variable pattern recognition are free, forever. Pro unlocks multi-variable correlations, long-term trend analysis (90 / 180 / 365 days), weekly reflections, and per-pattern confidence scoring — from €2.99/month or €69.99 lifetime."
+    a: "Yes. Daily insight cards and core single-variable pattern recognition are free, forever. Pro unlocks multi-variable correlations, long-term trend analysis (90 / 180 / 365 days), weekly reflections, and per-pattern confidence scoring — $3.99/month, $22.99/year, or $49.99 lifetime. Lifetime supports Family Sharing — one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does Observa give medical advice?"
     a: "No. Observa is an informational wellness tool. It surfaces statistical patterns in data you already collect, for self-awareness — not medical diagnoses or treatment recommendations. If something looks off, talk to a clinician."
   - q: "Does Observa upload my health data?"

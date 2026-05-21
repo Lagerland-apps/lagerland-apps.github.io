@@ -14,6 +14,10 @@ price:
   model: one-time
   value: "Free 7-day trial — then $9.99–$39.99 (pay what you can, one-time)"
 schema_price: "9.99"
+schema_high_price: "39.99"
+schema_offer_count: "5"
+
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. All four tiers are one-time purchases — same app, no recurring fees, no auto-renew."
 
 plans:
   - name: "Free trial"

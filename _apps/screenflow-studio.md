@@ -3,7 +3,7 @@ layout: app
 slug: screenflow-studio
 name: "ScreenFlow Studio"
 tagline: "Professional App Store screenshots for Mac."
-quick_answer: "ScreenFlow Studio is a native macOS app that turns your screenshots into App Store–ready exports: real 3D device frames rendered with Apple's Metal framework, percentage-based layouts that scale across every device size, AI translation across 39 App Store locales, and direct upload to App Store Connect by device and locale. Everything runs locally on your Mac — no server, no account, no upload of pre-release assets to a third party. One-time $22.99, Family Sharing included. Subscription competitors in this category run $19–$49 per month."
+quick_answer: "ScreenFlow Studio is a native macOS app that turns your screenshots into App Store–ready exports: real 3D device frames rendered with Apple's Metal framework, percentage-based layouts that scale across every device size, AI translation across 39 App Store locales, and direct upload to App Store Connect by device and locale. Everything runs locally on your Mac — no server, no account, no upload of pre-release assets to a third party. One-time $12.99, Family Sharing included. Subscription competitors in this category run $19–$49 per month."
 category: graphics
 platforms: ["macOS"]
 status: live
@@ -13,20 +13,22 @@ app_store_url: "https://apps.apple.com/app/id6756589122"
 
 price:
   model: one-time-purchase
-  value: "$22.99 — one-time purchase"
-schema_price: "22.99"
+  value: "$12.99 — one-time purchase"
+schema_price: "12.99"
 price_currency: "USD"
+
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. ScreenFlow Studio is a one-time purchase — no auto-renew, no recurring fees."
 
 value_math:
   label: "How the price compares."
-  body: "Subscription App Store screenshot tools in this category run $19–$49 per month — $228–$588 over a year. ScreenFlow Studio is $22.99, once, with Family Sharing. Less than a single month of most of them."
+  body: "Subscription App Store screenshot tools in this category run $19–$49 per month — $228–$588 over a year. ScreenFlow Studio is $12.99, once, with Family Sharing. Less than a single month of most of them."
 
 icon: "/assets/icons/screenflow-studio.png"
 og_image: "/assets/og/screenflow-studio.png"
 
 seo:
   title: "App Store Screenshot Maker for Mac — ScreenFlow Studio"
-  description: "Native Mac App Store screenshot maker: real 3D device frames, AI translation, direct ASC upload. One-time $22.99 — never a subscription."
+  description: "Native Mac App Store screenshot maker: real 3D device frames, AI translation, direct ASC upload. One-time $12.99 — never a subscription."
   keywords:
     - App Store screenshot maker for Mac
     - App Store screenshot generator
@@ -57,7 +59,7 @@ who_for:
   - "You're a solo marketer or ASO professional producing App Store screenshots without a designer in the loop"
   - "You need real 3D Metal-rendered device frames, not flat 2D mockup overlays"
   - "You want to upload finished screenshots directly to App Store Connect, by device size and locale — not through a browser"
-  - "You'd rather pay $22.99 once than $19–$49/month forever for a SaaS subscription"
+  - "You'd rather pay $12.99 once than $19–$49/month forever for a SaaS subscription"
   - "You ship pre-release apps under NDA and don't want screenshots routed through a third-party server"
 
 who_not_for:
@@ -84,7 +86,7 @@ value_points:
   - title: "Upload without leaving the app"
     description: "Direct App Store Connect upload, by device size and locale. The workflow that should have existed years ago — no browser, no manual file shuffling."
   - title: "One price. No subscription. Forever."
-    description: "Pay $22.99 once. Subscription competitors in this category charge $19–$49 per month — $228–$588 over a year. ScreenFlow Studio costs less than a single month of those tools."
+    description: "Pay $12.99 once. Subscription competitors in this category charge $19–$49 per month — $228–$588 over a year. ScreenFlow Studio costs less than a single month of those tools."
 
 how_it_works:
   intro: "ScreenFlow Studio is a deterministic render pipeline plus an App Store Connect uploader. Here's exactly what it does, end to end."
@@ -202,7 +204,7 @@ faq:
   - q: "What is ScreenFlow Studio?"
     a: "ScreenFlow Studio is a native macOS app for creating App Store screenshots using real 3D device frames rendered with Apple's Metal framework. It supports percentage-based layouts that scale across every device size, AI translation across 39 App Store locales, and direct upload to App Store Connect — all running locally on your Mac with no account and no server."
   - q: "How is ScreenFlow Studio different from other screenshot tools?"
-    a: "Three structural differences. First: native Mac, not a web app — your pre-release screenshots never leave your machine. Second: real 3D Metal-rendered device frames, not flat 2D PNG overlays. Third: one-time $22.99 instead of $19–$49 per month. Direct App Store Connect upload removes the manual browser-uploading step that every web competitor still requires."
+    a: "Three structural differences. First: native Mac, not a web app — your pre-release screenshots never leave your machine. Second: real 3D Metal-rendered device frames, not flat 2D PNG overlays. Third: one-time $12.99 instead of $19–$49 per month. Direct App Store Connect upload removes the manual browser-uploading step that every web competitor still requires."
   - q: "What sizes does ScreenFlow Studio export?"
     a: "Every size App Store Connect requires. iPhone: 6.9\" (1290×2868), 6.7\" (1290×2796), 6.5\" (1242×2688), 5.5\" (1242×2208). iPad: 13\" (2064×2752), 12.9\" (2048×2732), 11\" (1668×2388). Mac App Store: 2880×1800, 2560×1600, 1440×900, 1280×800. Apple Watch: 410×502, 396×484, 368×448. Apple TV: 1920×1080, 3840×2160. visionOS: 3840×2160. Layouts scale automatically thanks to percentage-based positioning — one project produces every size."
   - q: "Does ScreenFlow Studio support all Apple App Store locales?"
@@ -210,7 +212,7 @@ faq:
   - q: "Can I localise screenshots for multiple languages?"
     a: "Yes. ScreenFlow Studio's AI translation localises overlaid text in-place across the 39 App Store locales — preserving fonts, positioning, and right-to-left scripts. You bring your own API key; translations are called from your Mac and never routed through a Lagerland server. Bulk language management means one project can produce every locale."
   - q: "Is ScreenFlow Studio a subscription?"
-    a: "No. ScreenFlow Studio is a one-time purchase at $22.99 with Family Sharing for up to six members. Subscription tools in this category run $19–$49 per month — $228–$588 over a year. ScreenFlow Studio costs less than a single month of most of them, and there are no recurring fees or feature gates."
+    a: "No. ScreenFlow Studio is a one-time purchase at $12.99 with Family Sharing for up to six members. Subscription tools in this category run $19–$49 per month — $228–$588 over a year. ScreenFlow Studio costs less than a single month of most of them, and there are no recurring fees or feature gates."
   - q: "Can I upload directly to App Store Connect?"
     a: "Yes. ScreenFlow Studio authenticates with your App Store Connect account via Apple's secure framework, with credentials handled by macOS Keychain. It then submits each screenshot to the correct device size × locale slot in seconds. No browser, no manual file shuffling, no third-party server."
   - q: "Does ScreenFlow Studio handle App Store Preview videos?"
@@ -240,4 +242,4 @@ release:
   first_release: "2026-02-01"
   last_updated: "2026-05-13"
 ---
-ScreenFlow Studio is a professional native macOS tool for creating App Store screenshots with real 3D device frames rendered using Apple's Metal framework. It features deterministic rendering (the on-screen preview matches the export pixel-for-pixel), percentage-based layout positioning that scales across every Apple device size (iPhone 6.9\" through 5.5\", iPad 13\" through 11\", Mac 2880×1800, Apple Watch 410×502, and visionOS 3840×2160), AI-powered in-place text translation across 39 App Store Connect locales, multi-language screenshot management, bulk import from folders organised by language, professional templates, and direct upload to App Store Connect with credentials managed by Apple's Keychain. Built for indie iOS, iPadOS, and macOS developers, studios, and ASO professionals shipping in multiple markets. One-time purchase at $22.99 with Family Sharing — subscription competitors in this category charge $19–$49 per month. No subscriptions, no tracking, no data collection, no upload of pre-release screenshots to a third-party server.
+ScreenFlow Studio is a professional native macOS tool for creating App Store screenshots with real 3D device frames rendered using Apple's Metal framework. It features deterministic rendering (the on-screen preview matches the export pixel-for-pixel), percentage-based layout positioning that scales across every Apple device size (iPhone 6.9\" through 5.5\", iPad 13\" through 11\", Mac 2880×1800, Apple Watch 410×502, and visionOS 3840×2160), AI-powered in-place text translation across 39 App Store Connect locales, multi-language screenshot management, bulk import from folders organised by language, professional templates, and direct upload to App Store Connect with credentials managed by Apple's Keychain. Built for indie iOS, iPadOS, and macOS developers, studios, and ASO professionals shipping in multiple markets. One-time purchase at $12.99 with Family Sharing — subscription competitors in this category charge $19–$49 per month. No subscriptions, no tracking, no data collection, no upload of pre-release screenshots to a third-party server.

@@ -3,7 +3,7 @@ layout: app
 slug: appmeta
 name: "AppMeta"
 tagline: "App Store Connect, native on your Mac."
-quick_answer: "AppMeta is a native macOS client for App Store Connect. It edits app metadata across all 50 ASC locales side-by-side, previews every diff before it pushes, runs AI keyword analysis through your own provider (Anthropic, OpenAI, Google, any OpenAI-compatible endpoint, or Apple Intelligence on-device), manages TestFlight and reviews, and handles full submission flow. macOS 14+ Sonoma. App Store Connect API v1 with JWT and a .p8 key stored in macOS Keychain — no app-specific passwords, no browser session. $44.99 once. No subscription."
+quick_answer: "AppMeta is a native macOS client for App Store Connect. It edits app metadata across all 50 ASC locales side-by-side, previews every diff before it pushes, runs AI keyword analysis through your own provider (Anthropic, OpenAI, Google, any OpenAI-compatible endpoint, or Apple Intelligence on-device), manages TestFlight and reviews, and handles full submission flow. macOS 14+ Sonoma. App Store Connect API v1 with JWT and a .p8 key stored in macOS Keychain — no app-specific passwords, no browser session. $22.99/year or $29.99 lifetime."
 category: developer-tools
 platforms: ["macOS"]
 status: live
@@ -11,16 +11,42 @@ status: live
 app_store_url: "https://apps.apple.com/app/id6758547802"
 
 price:
-  model: one-time
-  value: "$44.99 — one-time purchase"
-schema_price: "44.99"
+  model: freemium
+  value: "$22.99/year or $29.99 lifetime"
+schema_price: "22.99"
+schema_high_price: "29.99"
+schema_offer_count: "2"
+
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
+
+plans:
+  - name: "Annual"
+    price: "$22.99/yr"
+    summary: "Full AppMeta, billed once a year. Cancel anytime."
+    features:
+      - "All 50 App Store Connect locales, side-by-side editing"
+      - "Word-level diff preview before any push"
+      - "On-device keyword diagnosis (no AI required)"
+      - "Five AI providers — BYO key (incl. Apple Intelligence on-device)"
+      - "TestFlight, reviews, IAPs, Subscription Groups, Game Center"
+      - "Sales Analytics + crash diagnostics"
+  - name: "Lifetime"
+    price: "$29.99 once"
+    summary: "All AppMeta features. Roughly 16 months of annual — then yours."
+    features:
+      - "Everything in Annual"
+      - "One-time purchase, no renewal"
+      - "Future AppMeta features included"
+      - "Restores on every Mac signed in with the same Apple ID"
+    highlight: true
+    highlight_label: "Best value"
 
 icon: "/assets/icons/appmeta.png"
 og_image: "/assets/og/appmeta.png"
 
 seo:
   title: "AppMeta — App Store Connect for Mac with IAPs + Game Center"
-  description: "Native Mac client for App Store Connect. 50 locales, IAP + Game Center + reviews + TestFlight in one Mac app. BYO-AI keywords. $44.99 once, no subscription."
+  description: "Native Mac client for App Store Connect. 50 locales, IAP + Game Center + reviews + TestFlight in one Mac app. BYO-AI keywords. $22.99/yr or $29.99 lifetime."
   keywords:
     - app store connect Mac app
     - app store connect native Mac client
@@ -45,7 +71,7 @@ seo:
 hero:
   headline: "App Store Connect. Finally native."
   secondary: "The native Mac client that handles all 50 locales, In-App Purchases, Subscription Groups, and Game Center — same tool Lagerland ships 15 apps with."
-  subheadline: "AppMeta edits metadata across all 50 ASC locales side-by-side, manages In-App Purchases and Subscription Groups, edits Game Center Achievements and Leaderboards, previews word-level diffs before any push, and runs AI keyword analysis through your own provider — including Apple Intelligence on-device for the times you don't want a single character leaving the Mac. Five AI providers supported (Anthropic, OpenAI, Google, Ollama / LM Studio, Apple Intelligence). $44.99 once, no subscription."
+  subheadline: "AppMeta edits metadata across all 50 ASC locales side-by-side, manages In-App Purchases and Subscription Groups, edits Game Center Achievements and Leaderboards, previews word-level diffs before any push, and runs AI keyword analysis through your own provider — including Apple Intelligence on-device for the times you don't want a single character leaving the Mac. Five AI providers supported (Anthropic, OpenAI, Google, Ollama / LM Studio, Apple Intelligence). $22.99/year or $29.99 lifetime."
   cta_label: "Download Free"
   alt: "AppMeta — native Mac editor for App Store Connect metadata with side-by-side locales and word-level diff preview"
 
@@ -54,7 +80,7 @@ who_for:
   - "You manage metadata across 10+ locales and refuse to scroll through 50 separate tabs to update one field"
   - "You've been burned by a silent overwrite on ASC web and want a diff preview before anything pushes"
   - "You want keyboard-first editing with the speed of a native Mac app, not a re-skinned browser"
-  - "You'd rather pay $44.99 once than rent ASC tooling for $10–$70/month indefinitely"
+  - "You'd rather pay $29.99 once than rent ASC tooling for $10–$70/month indefinitely"
   - "You want your ASC credentials in macOS Keychain, not a browser session that times out daily"
 
 who_not_for:
@@ -97,8 +123,8 @@ value_points:
     description: "Word-level diff on every field, every locale. Push per-field, per-locale, or everything in one shot. Rollback-friendly workflow — no silent overwrites, no surprise revisions sneaking through."
   - title: "Five AI providers. Your key, your spend."
     description: "Keyword diagnosis runs locally — overlaps with subtitle, duplicate stems, wasted-character usage, locale-gap detection. Generation uses whichever provider you trust: Anthropic Claude (Sonnet 4.6 default), OpenAI GPT (GPT-4o default), Google Gemini (2.0 Flash), any OpenAI-compatible endpoint (Ollama on llama3.2, LM Studio, local proxies), or Apple Intelligence on-device (requires macOS 26 — zero API key, zero network)."
-  - title: "Pay once, ship forever"
-    description: "$44.99 lifetime. Compare: AppMetaHub Indie is $120/year; ASO.dev Indie is $224.99/year. Three years of AppMeta costs less than three months of the cheaper of those two — and AppMeta doesn't disappear when you stop paying."
+  - title: "Pay annually, or pay once and ship forever"
+    description: "$22.99/year or $29.99 lifetime. Compare: AppMetaHub Indie is $120/year; ASO.dev Indie is $224.99/year. AppMeta's lifetime tier costs less than two months of ASO.dev Indie — and doesn't disappear when you stop paying."
 
 how_it_works:
   intro: "AppMeta is a native macOS client for the App Store Connect API v1. JWT auth with a .p8 key, edits stored locally in SwiftData, diffs computed against your last fetched snapshot. Here's how a metadata change moves through it."
@@ -153,9 +179,9 @@ comparison_table:
     - feature: "Native Mac app (not a browser / not a CLI)"
       values: ["Yes — SwiftUI + SwiftData, macOS 14+", "Yes — native macOS", "Was native (AppKit) — currently inactive", "No — web only", "Yes — Universal app (iOS/iPad/Mac/Watch/Vision)", "No — CLI only"]
     - feature: "Pricing model"
-      values: ["$44.99 one-time, lifetime", "€19.99 one-time, lifetime (free for 1 app)", "Was one-time (unverified)", "$10/mo Indie · $23/mo Pro", "$24.99/mo Indie · $68.99/mo Pro", "Free (open source)"]
+      values: ["$22.99/yr or $29.99 lifetime", "€19.99 one-time, lifetime (free for 1 app)", "Was one-time (unverified)", "$10/mo Indie · $23/mo Pro", "$24.99/mo Indie · $68.99/mo Pro", "Free (open source)"]
     - feature: "3-year total cost (Indie tier)"
-      values: ["$44.99", "≈ $22 (€19.99 lifetime)", "Unknown", "≈ $360 (12 × $10 × 3)", "≈ $810 (12 × $22.50 × 3, yearly rate)", "$0"]
+      values: ["$29.99 lifetime (or $68.97 annual)", "≈ $22 (€19.99 lifetime)", "Unknown", "≈ $360 (12 × $10 × 3)", "≈ $810 (12 × $22.50 × 3, yearly rate)", "$0"]
     - feature: "Number of App Store Connect locales supported"
       values: ["50 — canonical 2026 set, including the 11 added in 2026", "Not published", "Unverified — site offline", "37", "Multiple — count not published", "25+ via .txt files"]
     - feature: "Manages In-App Purchases + Subscription Groups + Game Center"
@@ -262,17 +288,17 @@ privacy:
 
 faq:
   - q: "What is AppMeta?"
-    a: "AppMeta is a native macOS client for App Store Connect. It edits app metadata across all 50 ASC locales side-by-side, previews word-level diffs before any push, runs AI keyword analysis through whichever provider you trust (Anthropic Claude, OpenAI GPT, Google Gemini, OpenAI-compatible endpoints like Ollama, or Apple Intelligence on-device), and handles full submissions — TestFlight, reviews, In-App Purchases, Game Center — without a browser. macOS 14+ Sonoma. App Store Connect API v1 with JWT and a .p8 key in macOS Keychain. $44.99 once, no subscription."
+    a: "AppMeta is a native macOS client for App Store Connect. It edits app metadata across all 50 ASC locales side-by-side, previews word-level diffs before any push, runs AI keyword analysis through whichever provider you trust (Anthropic Claude, OpenAI GPT, Google Gemini, OpenAI-compatible endpoints like Ollama, or Apple Intelligence on-device), and handles full submissions — TestFlight, reviews, In-App Purchases, Game Center — without a browser. macOS 14+ Sonoma. App Store Connect API v1 with JWT and a .p8 key in macOS Keychain. $22.99/year or $29.99 lifetime."
   - q: "Is AppMeta an alternative to App Store Connect?"
     a: "AppMeta works alongside App Store Connect using Apple's official ASC API v1. It provides a faster, safer editing surface than the web UI with features the browser doesn't have — side-by-side editing across all 50 locales, word-level diff preview before any push, keyword diagnosis without an AI call, and five AI providers when you do want generation. Everything goes through Apple's API; nothing is scraped, nothing is stored on a Lagerland server."
   - q: "How is AppMeta different from Fastlane deliver?"
     a: "Fastlane deliver is a CLI tool built for CI/CD pipelines — strong when you want metadata in version control and automatic uploads on every release. AppMeta is a desktop tool for the interactive editing surface itself — all 50 locales visible at once, word-level diffs before pushes, keyword optimization, review management, In-App Purchase and Game Center editing. They are complementary: many developers keep Fastlane deliver in their release pipeline and use AppMeta for the manual editing flow."
   - q: "How is AppMeta different from Itsyconnect?"
-    a: "Itsyconnect is an excellent native Mac client for App Store Connect at €19.99 lifetime (≈$22) — cheaper than AppMeta's $44.99. The honest difference is scope. AppMeta manages In-App Purchases, Subscription Groups, and Game Center (Achievements, Leaderboards, Leaderboard Sets) with locale-aware UI — Itsyconnect doesn't list any of those three. AppMeta supports Apple Intelligence on-device for keyword analysis (zero API key, zero network call, requires macOS 26) — Itsyconnect offers six cloud-only AI providers (Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek). Itsyconnect offers MCP integration with Claude Code, Cursor, Codex, and OpenCode — AppMeta does not yet, though it's on the roadmap. Itsyconnect is open source with a self-hosted Docker option; AppMeta is proprietary, funded by honest paid software. The decision: ship a simple app and never touch IAPs / Game Center and want MCP from your IDE → Itsyconnect is the cheaper fit. Ship across many locales, monetize through subscriptions, ship Game Center content, or want Apple Intelligence keyword analysis on-device → AppMeta is the broader-scope tool."
+    a: "Itsyconnect is an excellent native Mac client for App Store Connect at €19.99 lifetime (≈$22) — close to AppMeta's $29.99 lifetime. The honest difference is scope. AppMeta manages In-App Purchases, Subscription Groups, and Game Center (Achievements, Leaderboards, Leaderboard Sets) with locale-aware UI — Itsyconnect doesn't list any of those three. AppMeta supports Apple Intelligence on-device for keyword analysis (zero API key, zero network call, requires macOS 26) — Itsyconnect offers six cloud-only AI providers (Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek). Itsyconnect offers MCP integration with Claude Code, Cursor, Codex, and OpenCode — AppMeta does not yet, though it's on the roadmap. Itsyconnect is open source with a self-hosted Docker option; AppMeta is proprietary, funded by honest paid software. The decision: ship a simple app and never touch IAPs / Game Center and want MCP from your IDE → Itsyconnect is the cheaper fit. Ship across many locales, monetize through subscriptions, ship Game Center content, or want Apple Intelligence keyword analysis on-device → AppMeta is the broader-scope tool."
   - q: "How is AppMeta different from NativeConnect?"
     a: "NativeConnect was a native AppKit Mac client for App Store Connect in the same shape as AppMeta. As of 2026-05, the NativeConnect marketing website (nativeconnect.app) 301-redirects off-product, suggesting the project is no longer actively maintained. AppMeta is the actively-maintained native Mac client in that category — built on SwiftUI + SwiftData, macOS 14+, App Store Connect API v1, with regular updates. Verify NativeConnect's current status on the App Store before deciding."
   - q: "How is AppMeta different from AppMetaHub and ASO.dev?"
-    a: "AppMetaHub and ASO.dev are excellent web-based metadata editors at subscription pricing — AppMetaHub Indie is $10/month, ASO.dev Indie is $24.99/month or $224.99/year. AppMeta is a native Mac app (not a browser) sold as a $44.99 one-time purchase. Three years of AppMetaHub Indie is around $360, three years of ASO.dev Indie is around $675, three years of AppMeta is $44.99. The structural trade-off: web tools give you any-browser access; AppMeta gives you native performance, offline editing, and no recurring fee. AppMeta also supports more locales (50 vs AppMetaHub's 37 as of 2026-05)."
+    a: "AppMetaHub and ASO.dev are excellent web-based metadata editors at subscription pricing — AppMetaHub Indie is $10/month, ASO.dev Indie is $24.99/month or $224.99/year. AppMeta is a native Mac app (not a browser) at $22.99/year or $29.99 lifetime. Three years of AppMetaHub Indie is around $360, three years of ASO.dev Indie is around $675, three years of AppMeta is $29.99 lifetime or $68.97 annual. The structural trade-off: web tools give you any-browser access; AppMeta gives you native performance, offline editing, and a lifetime option. AppMeta also supports more locales (50 vs AppMetaHub's 37 as of 2026-05)."
   - q: "Which AI providers does AppMeta support for keyword generation?"
     a: "Five, out of the box: Anthropic Claude (Sonnet 4.6 default, your API key), OpenAI GPT (GPT-4o default, your API key), Google Gemini (2.0 Flash, your API key), any OpenAI-compatible endpoint (Ollama on llama3.2, LM Studio, local proxies — no key required), and Apple Intelligence on-device (requires macOS 26 and Apple Intelligence enabled — zero API key, zero network call). You pay your provider directly; AppMeta does not meter, proxy, or store your prompts or responses anywhere. Switching providers is one menu pick."
   - q: "Does AppMeta need an AI API key to work?"
@@ -280,7 +306,7 @@ faq:
   - q: "Is AppMeta safe? Where do my App Store Connect credentials go?"
     a: "AppMeta uses Apple's official App Store Connect API v1 — no scraping, no app-specific password, no browser session. You generate a .p8 API key in App Store Connect (Users and Access → Keys → App Store Connect API) and paste the Issuer ID, Key ID, and .p8 file into AppMeta once. All three are stored in macOS Keychain — the private key is never written to a plaintext file. The only network endpoint AppMeta talks to is <code>api.appstoreconnect.apple.com</code> (and your chosen AI provider, if you configure one). See the per-app Privacy Manifest on the transparency page for the full declared API usage."
   - q: "Is AppMeta free?"
-    a: "AppMeta is free to download with a full demo mode (browse the UI with sample data — no Apple Developer account required to evaluate the app). Lifetime Pro is $44.99 — one-time, no subscription, no recurring fees. Apply across every Mac you sign in to the App Store with."
+    a: "AppMeta is free to download with a full demo mode (browse the UI with sample data — no Apple Developer account required to evaluate the app). Pro is $22.99/year, or $29.99 lifetime — one-time, no recurring fees. Applies across every Mac you sign in to the App Store with. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Can I submit apps for review through AppMeta?"
     a: "Yes. AppMeta supports the full submission flow — App Review Information, version pricing and availability, categories, age ratings, App Privacy details, and version submission. The entire release surface without a browser tab."
   - q: "How many App Store Connect locales does AppMeta support?"
@@ -306,4 +332,4 @@ related_apps:
   - appmeta-pulse
   - screenflow-studio
 ---
-AppMeta is a native macOS client for App Store Connect, built for indie iOS and macOS developers who ship more than one app and want their editing surface on the desktop rather than in a browser tab. It edits app metadata across all 50 ASC locales side-by-side — including the 11 Indian-region locales Apple added in 2026 (Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, plus Slovenian and Urdu) — with real-time character-count validation, word-level diff preview before any push, and per-field, per-locale, or all-at-once sync granularity. Keyword diagnosis runs entirely on-device: keyword/subtitle overlap detection, duplicate-stem cleanup, locale-gap analysis, search-coverage diagnostics, and storefront-coverage anomalies. AI keyword generation is opt-in and runs through whichever provider you trust — Anthropic Claude (Sonnet 4.6 default), OpenAI GPT (GPT-4o), Google Gemini (2.0 Flash), any OpenAI-compatible endpoint (Ollama on llama3.2, LM Studio, local proxies), or Apple Intelligence on-device (macOS 26, zero API key, zero network call). The full release surface is in one app: TestFlight build management, beta metadata, review reading and reply, App Review Information, pricing, age ratings, App Privacy details, full version submission, In-App Purchases, Subscription Groups, and Game Center editing (Achievements, Leaderboards, Leaderboard Sets) with locale-aware UI. Built on the App Store Connect API v1 with JWT authentication and a .p8 private key stored in macOS Keychain — no app-specific password, no scraped browser session. SwiftUI + SwiftData, macOS 14+ Sonoma. No backend servers, no analytics SDKs, no tracking domains. $44.99 once, lifetime. The same tool Lagerland ships every release of all 15 catalogue apps with.
+AppMeta is a native macOS client for App Store Connect, built for indie iOS and macOS developers who ship more than one app and want their editing surface on the desktop rather than in a browser tab. It edits app metadata across all 50 ASC locales side-by-side — including the 11 Indian-region locales Apple added in 2026 (Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, plus Slovenian and Urdu) — with real-time character-count validation, word-level diff preview before any push, and per-field, per-locale, or all-at-once sync granularity. Keyword diagnosis runs entirely on-device: keyword/subtitle overlap detection, duplicate-stem cleanup, locale-gap analysis, search-coverage diagnostics, and storefront-coverage anomalies. AI keyword generation is opt-in and runs through whichever provider you trust — Anthropic Claude (Sonnet 4.6 default), OpenAI GPT (GPT-4o), Google Gemini (2.0 Flash), any OpenAI-compatible endpoint (Ollama on llama3.2, LM Studio, local proxies), or Apple Intelligence on-device (macOS 26, zero API key, zero network call). The full release surface is in one app: TestFlight build management, beta metadata, review reading and reply, App Review Information, pricing, age ratings, App Privacy details, full version submission, In-App Purchases, Subscription Groups, and Game Center editing (Achievements, Leaderboards, Leaderboard Sets) with locale-aware UI. Built on the App Store Connect API v1 with JWT authentication and a .p8 private key stored in macOS Keychain — no app-specific password, no scraped browser session. SwiftUI + SwiftData, macOS 14+ Sonoma. No backend servers, no analytics SDKs, no tracking domains. $22.99/year or $29.99 lifetime. The same tool Lagerland ships every release of all 15 catalogue apps with.

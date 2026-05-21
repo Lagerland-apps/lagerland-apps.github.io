@@ -3,7 +3,7 @@ layout: app
 slug: wanderwiki
 name: "WanderWiki"
 tagline: "Swipe Wikipedia in 33 languages. Ad-free."
-quick_answer: "WanderWiki is a Wikipedia discovery app for iPhone (iOS 18.2+) that turns the encyclopedia into a swipe-based card deck. Three modes — Random, For You (10 interest categories), and Today in History (5 categories from Wikipedia's official REST API: Selected, Events, Births, Deaths, Holidays) — surface fascinating articles across 33 Wikipedia language editions. Per-language Wikipedia category mappings: pick German + Science and it queries Wissenschaft, Physik, Chemie — not translated English categories. Articles are reformatted for calm reading; saved articles work offline; folders organise your reading list. Home Screen, Lock Screen, and StandBy widgets included. Free 3-day trial, then $0.99/week, $1.99/month, $8.99/year, or $22.99 lifetime. No ads, no behavioral tracking, no account."
+quick_answer: "WanderWiki is a Wikipedia discovery app for iPhone (iOS 18.2+) that turns the encyclopedia into a swipe-based card deck. Three modes — Random, For You (10 interest categories), and Today in History (5 categories from Wikipedia's official REST API: Selected, Events, Births, Deaths, Holidays) — surface fascinating articles across 33 Wikipedia language editions. Per-language Wikipedia category mappings: pick German + Science and it queries Wissenschaft, Physik, Chemie — not translated English categories. Articles are reformatted for calm reading; saved articles work offline; folders organise your reading list. Home Screen, Lock Screen, and StandBy widgets included. Free 3-day trial, then $1.99/month, $8.99/year, or $19.99 lifetime. No ads, no behavioral tracking, no account."
 category: education
 platforms: ["iOS"]
 status: live
@@ -11,18 +11,54 @@ status: live
 app_store_url: "https://apps.apple.com/app/id6758459119"
 
 price:
-  model: subscription
-  value: "Free trial — from $0.99/week or $22.99 lifetime"
+  model: freemium
+  value: "Free trial — from $1.99/mo, $8.99/yr, or $19.99 lifetime"
 schema_price: "0"
-schema_high_price: "22.99"
-schema_offer_count: "5"
+schema_high_price: "19.99"
+schema_offer_count: "4"
+
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
+
+plans:
+  - name: "Free trial"
+    price: "$0"
+    summary: "Full access for 3 days. No card, no account."
+    features:
+      - "All 33 Wikipedia language editions unlocked"
+      - "All three discovery modes (Random, For You, Today in History)"
+      - "Widgets, folders, offline saved articles"
+  - name: "Monthly"
+    price: "$1.99/mo"
+    summary: "Full WanderWiki, billed monthly. Cancel anytime."
+    features:
+      - "All 33 language editions"
+      - "Random, For You, and Today in History modes"
+      - "Home Screen / Lock Screen / StandBy widgets"
+      - "Offline saved articles in folders"
+  - name: "Annual"
+    price: "$8.99/yr"
+    summary: "Same features, billed once a year. ~62% cheaper than monthly."
+    features:
+      - "Everything in Monthly"
+      - "~62% cheaper than monthly over a year"
+    highlight: true
+  - name: "Lifetime"
+    price: "$19.99 once"
+    summary: "All features. ≈ $0.61 per Wikipedia language unlocked — pay once, read forever."
+    features:
+      - "Everything in Annual"
+      - "One-time purchase, no renewal"
+      - "Family Sharing — share with up to 5 family members at no extra cost"
+      - "Future features included"
+      - "Restores on every iPhone signed in with the same Apple ID"
+    highlight_label: "Best long-term value"
 
 icon: "/assets/icons/wanderwiki.png"
 og_image: "/assets/og/wanderwiki.png"
 
 seo:
   title: "WanderWiki — Swipe Wikipedia in 33 Languages, Ad-Free"
-  description: "Swipe Wikipedia in 33 languages. 3 modes (Random, For You, Today in History), widgets, offline folders. Full Wikipedia, no ads. $22.99 lifetime."
+  description: "Swipe Wikipedia in 33 languages. 3 modes (Random, For You, Today in History), widgets, offline folders. Full Wikipedia, no ads. $19.99 lifetime."
   keywords:
     - swipe Wikipedia app
     - Wikipedia discovery app iPhone
@@ -47,7 +83,7 @@ seo:
 hero:
   headline: "Swipe. Learn. Repeat."
   secondary: "33 Wikipedia language editions. Three discovery modes. Zero ads, zero algorithms, zero account."
-  subheadline: "WanderWiki turns Wikipedia into a swipe-based card deck — across all 33 Wikipedia language editions (English, German, French, Japanese, Chinese, Korean, Hindi, Arabic, Finnish, and 24 more), with three modes (Random across the full encyclopedia · For You across 10 interest categories · Today in History with five subcategories from Wikipedia's official REST API), offline saved articles organised in folders, and Home Screen + Lock Screen + StandBy widgets. From $0.99/week or $22.99 lifetime. No ads. Built on Wikipedia's official REST API, attributed under CC BY-SA 4.0."
+  subheadline: "WanderWiki turns Wikipedia into a swipe-based card deck — across all 33 Wikipedia language editions (English, German, French, Japanese, Chinese, Korean, Hindi, Arabic, Finnish, and 24 more), with three modes (Random across the full encyclopedia · For You across 10 interest categories · Today in History with five subcategories from Wikipedia's official REST API), offline saved articles organised in folders, and Home Screen + Lock Screen + StandBy widgets. From $1.99/month or $19.99 lifetime. No ads. Built on Wikipedia's official REST API, attributed under CC BY-SA 4.0."
   cta_label: "Try Free"
   alt: "WanderWiki — Wikipedia article card being swiped through on iPhone, in a discovery deck"
   video: "/assets/videos/wanderwiki_preview.mov"
@@ -82,7 +118,7 @@ founder:
   location: "Finland"
   overline: "Why we built this"
   heading: "Wikipedia, the way 'Random Article' used to feel."
-  story: "WanderWiki exists because Wikipedia is the best free thing on the internet and almost nobody reads it for fun anymore. The five-minute windows that used to be 'Random Article' on desktop became doomscroll-shaped on the iPhone — algorithmic feeds optimised for time-on-app, not for the encyclopedia. We wanted Random Article — the desktop ritual where you click 'Random' and end up reading about the history of fountain pens at 11pm — back on the iPhone, built for swiping. We built the iPhone-only version (iOS 18.2+) on purpose: 33 Wikipedia language editions with per-language category mappings (pick German + Science and the app queries Wissenschaft, Physik, Chemie — not translated English categories), three discovery modes, widgets, offline saved articles in folders. The competitors we benchmarked against — WikiCards (free, English-only) and Wiki Rabbit (free with ads, Good Articles subset only) — both ship something good. We chose the paid lane so the app has no ads, no algorithm to maximise time-on-app, and no behavioral tracking. From $0.99/week, $22.99 lifetime. The maker uses it every morning."
+  story: "WanderWiki exists because Wikipedia is the best free thing on the internet and almost nobody reads it for fun anymore. The five-minute windows that used to be 'Random Article' on desktop became doomscroll-shaped on the iPhone — algorithmic feeds optimised for time-on-app, not for the encyclopedia. We wanted Random Article — the desktop ritual where you click 'Random' and end up reading about the history of fountain pens at 11pm — back on the iPhone, built for swiping. We built the iPhone-only version (iOS 18.2+) on purpose: 33 Wikipedia language editions with per-language category mappings (pick German + Science and the app queries Wissenschaft, Physik, Chemie — not translated English categories), three discovery modes, widgets, offline saved articles in folders. The competitors we benchmarked against — WikiCards (free, English-only) and Wiki Rabbit (free with ads, Good Articles subset only) — both ship something good. We chose the paid lane so the app has no ads, no algorithm to maximise time-on-app, and no behavioral tracking. From $1.99/month or $19.99 lifetime. The maker uses it every morning."
   signals:
     - "Built on Wikipedia's official REST API (api/rest_v1/feed/onthisday/) — not scraping, not crawling, no backend caching of full articles on a Lagerland server"
     - "33 Wikipedia language editions supported with per-language category mappings — verified in the WanderWikiShared package's allowlist"
@@ -103,8 +139,8 @@ value_points:
   - title: "Widgets, folders, and offline reading"
     description: "Home Screen, Lock Screen, and StandBy widgets surface a fresh article every day. Save any article, organise into folders, read offline. The reading list builds with you across weeks and months."
   - title: "No ads, no algorithm, no account"
-    description: "Wiki Rabbit ships banner ads on its free tier. WikiCards is free but English-only. WanderWiki charges $0.99/week or $22.99 lifetime so the app has no commercial incentive to maximise your screen time. No account. No behavioral tracking."
-  - title: "$22.99 lifetime ≈ $0.70 per Wikipedia language unlocked"
+    description: "Wiki Rabbit ships banner ads on its free tier. WikiCards is free but English-only. WanderWiki charges from $1.99/month or $19.99 lifetime so the app has no commercial incentive to maximise your screen time. No account. No behavioral tracking."
+  - title: "$19.99 lifetime ≈ $0.70 per Wikipedia language unlocked"
     description: "33 Wikipedia language editions, one-time price, no subscription. Zero competitors offer multi-language Wikipedia in a swipe-card app — WikiCards is free but English-only; Wiki Rabbit is free with ads, English-only, and capped at the Good Articles subset; Wikipedia's official app has all ~300 editions but is built for search, not swipe."
 
 how_it_works:
@@ -160,7 +196,7 @@ comparison_table:
     - feature: "Number of Wikipedia language editions"
       values: ["33 — with native-language category queries", "1 — English only", "Not published", "All 300+ — but built for search, not swipe"]
     - feature: "Pricing model"
-      values: ["$0.99/wk · $1.99/mo · $8.99/yr · $22.99 lifetime (3-day trial)", "Free, no IAPs", "Free with banner ads", "Free, no ads"]
+      values: ["$1.99/mo · $8.99/yr · $19.99 lifetime (3-day trial)", "Free, no IAPs", "Free with banner ads", "Free, no ads"]
     - feature: "Source article scope"
       values: ["Full Wikipedia (~7M articles in en alone)", "Full Wikipedia", "Good Articles subset only (~38K articles)", "Full Wikipedia"]
     - feature: "Today in History (Wikipedia's official On This Day feed)"
@@ -261,9 +297,9 @@ privacy:
 
 faq:
   - q: "What is WanderWiki?"
-    a: "WanderWiki is a Wikipedia discovery app for iPhone (iOS 18.2+). It turns the encyclopedia into a swipe-based card deck with three modes — Random across the full encyclopedia, For You across 10 interest categories, and Today in History with 5 subcategories from Wikipedia's official REST API — across 33 Wikipedia language editions with native-language category queries. Home Screen, Lock Screen, and StandBy widgets included. Free 3-day trial, then $0.99/week, $1.99/month, $8.99/year, or $22.99 lifetime. No ads, no behavioral tracking, no account."
+    a: "WanderWiki is a Wikipedia discovery app for iPhone (iOS 18.2+). It turns the encyclopedia into a swipe-based card deck with three modes — Random across the full encyclopedia, For You across 10 interest categories, and Today in History with 5 subcategories from Wikipedia's official REST API — across 33 Wikipedia language editions with native-language category queries. Home Screen, Lock Screen, and StandBy widgets included. Free 3-day trial, then $1.99/month, $8.99/year, or $19.99 lifetime. No ads, no behavioral tracking, no account."
   - q: "How is WanderWiki different from WikiCards?"
-    a: "WikiCards is a free swipe-Wikipedia app that runs on iPhone, Mac, and Vision Pro — English only, random articles only, 18+ age rating. WanderWiki is iPhone-only (iOS 18.2+) and paid ($0.99/week or $22.99 lifetime). What WanderWiki adds: 33 Wikipedia language editions with native-language category queries (German Science queries Wissenschaft, Physik, Chemie — not translated English categories), three discovery modes (Random + For You by interest + Today in History from Wikipedia's official On This Day feed), Home Screen + Lock Screen + StandBy widgets, offline saved articles organised in folders, and a 4+ age rating. If you want free and multi-Apple-platform English-only, pick WikiCards. If you read Wikipedia in multiple languages, want Today in History as a daily ritual, or want widgets and folders, pick WanderWiki."
+    a: "WikiCards is a free swipe-Wikipedia app that runs on iPhone, Mac, and Vision Pro — English only, random articles only, 18+ age rating. WanderWiki is iPhone-only (iOS 18.2+) and paid (from $1.99/month or $19.99 lifetime). What WanderWiki adds: 33 Wikipedia language editions with native-language category queries (German Science queries Wissenschaft, Physik, Chemie — not translated English categories), three discovery modes (Random + For You by interest + Today in History from Wikipedia's official On This Day feed), Home Screen + Lock Screen + StandBy widgets, offline saved articles organised in folders, and a 4+ age rating. If you want free and multi-Apple-platform English-only, pick WikiCards. If you read Wikipedia in multiple languages, want Today in History as a daily ritual, or want widgets and folders, pick WanderWiki."
   - q: "How is WanderWiki different from Wiki Rabbit?"
     a: "Wiki Rabbit ships banner ads on its free tier and limits its random surface to Wikipedia's curated 'Good Articles' subset (~38,000 articles). WanderWiki has no ads at any tier and surfaces from full Wikipedia (~7 million articles in English alone, across 33 language editions). Wiki Rabbit offers session-scoped personalisation and a 'rabbit-hole trail' showing browsing history; WanderWiki uses your explicit interest selections (10 categories) and optional on-device like/dislike signals — not behavioural tracking. If you want a 'why this article' explanation surface, Wiki Rabbit. If you want no ads, full Wikipedia, multi-language, and widgets, WanderWiki."
   - q: "Is WanderWiki an official Wikipedia app?"
@@ -281,7 +317,7 @@ faq:
   - q: "Does WanderWiki use a recommendation algorithm?"
     a: "No — at least not in the sense people usually mean. Random is purely random. For You is driven by interest selections you make explicitly (10 categories) and optional like/dislike signals that stay on-device in SwiftData. There is no behavioural model, no engagement-optimisation loop, no dwell-time tracking, no scroll-velocity tracking, no cross-app tracking. We don't have a backend that could even receive such signals."
   - q: "Is WanderWiki free?"
-    a: "WanderWiki offers a 3-day free trial with full access. After that, four price tiers: $0.99/week, $1.99/month, $8.99/year, or $22.99 lifetime. The lifetime option is the best long-term value — about ten months of yearly billing. No ads on any tier. No IAPs beyond the unlock. No subscription auto-converts to a higher tier."
+    a: "WanderWiki offers a 3-day free trial with full access. After that, three price tiers: $1.99/month, $8.99/year, or $19.99 lifetime. The lifetime option is the best long-term value — about ten months of yearly billing, and it supports Family Sharing so one purchase covers up to 5 family members at no extra cost. No ads on any tier. No IAPs beyond the unlock. No subscription auto-converts to a higher tier. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does WanderWiki work on iPad, Mac, or Vision Pro?"
     a: "Not currently. WanderWiki is iPhone-only (iOS 18.2+) by design — the swipe-card UI, widget layout, and reading deck are built for the iPhone reading surface. WikiCards is the cross-Apple-platform alternative (iPhone, Mac M1+, Vision Pro) but is English-only and offers only random articles."
   - q: "Does WanderWiki track my reading?"
@@ -306,4 +342,4 @@ ratings:
   count: 2
   last_synced: "2026-04-15"
 ---
-WanderWiki is a Wikipedia discovery app for iPhone (iOS 18.2+) that turns the encyclopedia into a swipe-based card deck. Three modes — Random across the full encyclopedia, For You across 10 interest categories (Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography), and Today in History with five subcategories from Wikipedia's official On This Day feed (Selected, Events, Births, Deaths, Holidays) — surface fascinating articles across 33 Wikipedia language editions with native-language category queries. Pick German + Science and the app queries Wissenschaft, Physik, Chemie — not translated English categories. Articles are reformatted for calm iPhone reading with attribution back to the source under Creative Commons CC BY-SA 4.0. Save any article and read offline; organise saved articles into folders. Home Screen, Lock Screen, and StandBy widgets surface fresh articles daily. Optional like/dislike signals refine For You — preference-driven, on-device, never sent anywhere. Built on Wikipedia's official REST API. SwiftUI + SwiftData + StoreKit 2. No ads at any tier, no third-party SDKs, no analytics, no backend caching of articles. Free 3-day trial, then $0.99/week, $1.99/month, $8.99/year, or $22.99 lifetime. The competitive set — WikiCards (free, English-only, multi-platform), Wiki Rabbit (free with ads, Good Articles subset only) — both ship something good; WanderWiki chose the paid lane so the app has no commercial incentive to maximise screen time.
+WanderWiki is a Wikipedia discovery app for iPhone (iOS 18.2+) that turns the encyclopedia into a swipe-based card deck. Three modes — Random across the full encyclopedia, For You across 10 interest categories (Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography), and Today in History with five subcategories from Wikipedia's official On This Day feed (Selected, Events, Births, Deaths, Holidays) — surface fascinating articles across 33 Wikipedia language editions with native-language category queries. Pick German + Science and the app queries Wissenschaft, Physik, Chemie — not translated English categories. Articles are reformatted for calm iPhone reading with attribution back to the source under Creative Commons CC BY-SA 4.0. Save any article and read offline; organise saved articles into folders. Home Screen, Lock Screen, and StandBy widgets surface fresh articles daily. Optional like/dislike signals refine For You — preference-driven, on-device, never sent anywhere. Built on Wikipedia's official REST API. SwiftUI + SwiftData + StoreKit 2. No ads at any tier, no third-party SDKs, no analytics, no backend caching of articles. Free 3-day trial, then $1.99/month, $8.99/year, or $19.99 lifetime. The competitive set — WikiCards (free, English-only, multi-platform), Wiki Rabbit (free with ads, Good Articles subset only) — both ship something good; WanderWiki chose the paid lane so the app has no commercial incentive to maximise screen time.

@@ -3,7 +3,7 @@ layout: app
 slug: aftershift
 name: "AfterShift"
 tagline: "The shift-worker sleep app where naps count as real recovery."
-quick_answer: "AfterShift is a sleep and recovery app for shift workers — nurses, paramedics, firefighters, pilots, and anyone on rotating, night, or on-call schedules. The iPhone app tracks naps as first-class recovery, scores how recovered you are before your next shift, and times caffeine to the schedule you actually work — not a 9-to-5 baseline. Free with Premium from €3.99/mo. No ads, no health data selling, no account required."
+quick_answer: "AfterShift is a sleep and recovery app for shift workers — nurses, paramedics, firefighters, pilots, and anyone on rotating, night, or on-call schedules. The iPhone app tracks naps as first-class recovery, scores how recovered you are before your next shift, and times caffeine to the schedule you actually work — not a 9-to-5 baseline. Free with Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime. No ads, no health data selling, no account required."
 category: health
 platforms: ["iOS"]
 status: live
@@ -12,8 +12,47 @@ app_store_url: "https://apps.apple.com/app/id6757163182"
 
 price:
   model: freemium
-  value: "Free — Premium from €3.99/mo"
+  value: "Free — Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime"
 schema_price: "0"
+schema_high_price: "39.99"
+schema_offer_count: "4"
+
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
+
+plans:
+  - name: "Free"
+    price: "$0"
+    summary: "Core sleep + nap tracking and basic recovery summaries — forever."
+    features:
+      - "Sleep tracking and nap tracking"
+      - "Basic recovery summaries"
+      - "Calendar shift import"
+      - "Local-only storage, optional iCloud sync"
+  - name: "Premium · Monthly"
+    price: "$3.99/mo"
+    summary: "Full Premium, billed monthly. Cancel anytime."
+    features:
+      - "Full Shift Recovery Score"
+      - "Fatigue and fragmentation insights"
+      - "Smart caffeine timing tied to your next shift"
+      - "Multi-week trends and exportable summaries"
+      - "Cancel anytime"
+  - name: "Premium · Annual"
+    price: "$24.99/yr"
+    summary: "Same Premium features, billed once a year. ~48% cheaper than paying monthly."
+    features:
+      - "Everything in Premium · Monthly"
+      - "~48% cheaper than monthly over a year"
+      - "Cancel anytime"
+    highlight: true
+  - name: "Lifetime"
+    price: "$39.99 once"
+    summary: "All Premium features. Roughly 10 months of monthly Premium — then yours."
+    features:
+      - "Everything in Premium · Annual"
+      - "One-time purchase, no renewal"
+      - "Restores on every device signed in with the same Apple ID"
+      - "Family Sharing — share with up to 5 family members at no extra cost"
 
 icon: "/assets/icons/aftershift.png"
 og_image: "/assets/og/aftershift.png"
@@ -155,7 +194,7 @@ faq:
     a: "No. AfterShift is a recovery tracking and planning tool. It provides calm, clear insights — not medical diagnoses or treatment recommendations. If you suspect Shift Work Disorder, chronic insomnia, sleep apnea, or any other clinical sleep condition, see a sleep specialist."
 
   - q: "Is AfterShift free?"
-    a: "Yes. Core features — sleep tracking, nap tracking, and basic recovery summaries — are free. Premium (from €3.99/month) unlocks the full Shift Recovery Score, fatigue and fragmentation insights, smart caffeine timing, multi-week trends, and exportable summaries."
+    a: "Yes. Core features — sleep tracking, nap tracking, and basic recovery summaries — are free. Premium unlocks the full Shift Recovery Score, fatigue and fragmentation insights, smart caffeine timing, multi-week trends, and exportable summaries — $3.99/month, $24.99/year, or $39.99 lifetime. Lifetime supports Family Sharing — one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
 
   - q: "Does AfterShift sell my health data?"
     a: "No. AfterShift has no ads, no third-party trackers, no analytics SDKs, and no data resale. Your sleep, naps, and shift data stay on your device and in your private iCloud (if you choose to enable iCloud). Health data never leaves the device unless you explicitly export a summary."
