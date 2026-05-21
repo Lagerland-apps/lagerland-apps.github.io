@@ -120,3 +120,19 @@ soon:
     source: "Reddit"
     language: "en"
     tier: "hero"
+
+chessful:
+  # Curated from Reddit messages. Names reduced to initials.
+  # Off-topic parts (feature-request asides, opening pleasantries) trimmed —
+  # the quote itself is kept verbatim within each kept sentence.
+  - quote: "Hey, just wanted to tell you how amazing Chessful has become. I'm actually able to improve on my mistakes — I get to understand both the mistakes and the engine now."
+    author: "S."
+    source: "Reddit"
+    language: "en"
+    tier: "hero"
+
+  - quote: "Your app is the best I've found so far — along with Lina Chess and Chess Tiger Pro, which I've purchased both. I'd like to close my collection of analysis apps with yours."
+    author: "V.V."
+    source: "Reddit"
+    language: "en"
+    tier: "hero"
