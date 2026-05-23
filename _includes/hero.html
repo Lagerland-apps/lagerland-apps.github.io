@@ -24,6 +24,10 @@
       <a class="btn btn-secondary" href="#features">See how it works</a>
     </div>
 
+    {%- if include.app.hero.cta_subline -%}
+    <p class="cta-subline">{{ include.app.hero.cta_subline }}</p>
+    {%- endif -%}
+
     <div class="meta-row">
       {%- comment %} Only show aggregate rating when it has enough signal to be credible.
         Showing "★ 5.0 · 1 ratings" reads as manipulative; below ~25 ratings the aggregate

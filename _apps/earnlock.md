@@ -75,8 +75,8 @@ icon: "/assets/icons/earnlock.png"
 og_image: "/assets/og/earnlock.png"
 
 seo:
-  title: "EarnLock — Block Apps Until You Move. Earn Your Screen Time."
-  description: "Lock Instagram, TikTok, X, YouTube until you hit a daily step, active-minute, or calorie goal. Custom shield with live progress ring, Apple Watch complication, no account, no server. Free; Premium $1.99/mo, $9.99/yr, or $19.99 lifetime."
+  title: "EarnLock — Block Apps Until You Walk · $19.99 Lifetime"
+  description: "Lock Instagram, TikTok, X until you hit your daily step goal. Custom shield, Apple Watch, no account, no server. $19.99 lifetime — or free."
   keywords:
     - earn screen time app
     - block apps until you walk
@@ -114,6 +114,7 @@ hero:
   secondary: "Earn your screen time."
   subheadline: "EarnLock locks Instagram, TikTok, X, YouTube, Reddit — whatever you pick — until you hit a daily activity goal you set yourself. Steps in the free tier; active minutes or calories in Premium. The shield over each blocked app shows a live progress ring counting down (\"3,412 steps until unlock\"). The Apple Watch app keeps the count on your wrist when the iPhone isn't with you. No account. No analytics SDK. No server. $19.99 lifetime."
   cta_label: "Download Free"
+  cta_subline: "$19.99 lifetime · pay once, no subscriptions, no account."
   alt: "EarnLock home screen on iPhone showing a daily step goal of 7,500, a live progress ring at 46%, and the list of currently shielded apps including Instagram and TikTok"
 
 founder:
@@ -202,6 +203,10 @@ alternatives_to:
   - "Brick"
   - "Unpluq"
   - "Stoic Mode"
+  - "StepBloc"
+  - "Time Out"
+  - "Steppin"
+  - "WalkMyScreen"
   - "Apple Screen Time (built-in)"
 
 comparison_table:
