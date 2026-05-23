@@ -1,0 +1,89 @@
+---
+layout: privacy
+title: "Privacy Policy"
+app_name: "EarnLock"
+
+overview: >
+  EarnLock is built with a single privacy stance: your data stays on your device.
+  There is no EarnLock server. Nothing you do in the app is transmitted to us
+  or to any third party. This page exists to describe what data the app uses
+  and why — not to ask for your trust on top of vague promises.
+  In one sentence: EarnLock reads your Apple Health activity data and your
+  selection of blocked apps on-device only, stores them on-device only, and
+  uses them on-device only to decide whether your daily goal is met.
+  We never see any of it. Apple's App Privacy nutrition label confirms
+  "Data Not Collected" for every release of the app.
+
+data_collection: >
+  EarnLock does not collect personal data. It reads three categories of
+  on-device information for the sole purpose of running the daily-goal lock:
+  (1) HealthKit activity data — your daily step count, active energy burned,
+  and exercise minutes — to evaluate progress against the daily activity goal
+  that unlocks your selected apps. HealthKit is read only (we never write to
+  Health), read only on your device, and never transmitted off-device by
+  EarnLock. Apple's HealthKit framework itself does not share this data with
+  us or with third parties. You can revoke EarnLock's Health access at any
+  time in iOS Settings → Privacy &amp; Security → Health → EarnLock.
+  (2) Family Controls tokens for the apps you choose to block — when you pick
+  apps in iOS's Family Controls picker, iOS hands EarnLock an opaque token
+  for each selected app, not the app's name, identifier, or icon. These
+  tokens are stored on your device only, in an App Group container shared
+  between the EarnLock app and its iOS extensions (Shield, Shield Action,
+  DeviceActivityMonitor, Live Activity / widget extension). The tokens are
+  opaque by Apple's design — even EarnLock cannot read which app the user
+  selected. The selection is never transmitted off-device, and you can clear
+  it at any time from the EarnLock home screen (Settings → Blocked apps →
+  Edit). (3) StoreKit transactions — when you subscribe or purchase Lifetime,
+  Apple sends EarnLock a verified transaction object containing only the
+  product ID and entitlement status. There is no payment information, name,
+  email, or other personal data visible to the app. All payment processing,
+  refund handling, and subscription management is performed by Apple's
+  StoreKit and the App Store, not by EarnLock. EarnLock writes only a single
+  boolean (isPremium) into the App Group container so widgets and the
+  Apple Watch app can render the right state.
+
+data_storage: >
+  All EarnLock data is stored locally on your device, inside the app's
+  sandbox and an App Group container shared with EarnLock's iOS extensions.
+  There is no EarnLock backend at all — no servers, no databases, no analytics
+  pipeline. Streak history, reflection log entries, screen-time-saved
+  estimates, and your selection of blocked apps live in standard Apple
+  containers that iOS Backup includes if you enable iCloud Backup. Deleting
+  the EarnLock app from your device removes its container, the App Group
+  container, and everything inside them.
+
+third_parties: >
+  EarnLock does not use third-party analytics, advertising, or tracking
+  services. It uses no third-party SDKs of any kind — no Firebase, Mixpanel,
+  Amplitude, Segment, Sentry, Bugsnag, ad networks, or attribution networks.
+  EarnLock uses only Apple's own frameworks: SwiftUI, SwiftData, HealthKit,
+  FamilyControls, ManagedSettings, DeviceActivity, ActivityKit, WidgetKit,
+  WatchConnectivity, and StoreKit 2. Apple processes limited data as part of
+  services you choose to use, such as App Store purchases, HealthKit access,
+  and Apple Watch connectivity — none of that data flows to EarnLock as the
+  developer.
+
+sensitive_data: >
+  EarnLock reads HealthKit activity data (steps, active energy burned,
+  exercise minutes) and, with your explicit permission, iOS Screen Time data
+  for the apps you have shielded, to compute the conservative
+  screen-time-saved estimate. All of this is read on-device only and never
+  transmitted off the device. EarnLock does not sell, share, or use this
+  data for advertising purposes. It is not used outside the app's own
+  goal-tracking and insights features.
+
+children: >
+  EarnLock is intended for adults using the app on their own iPhone, and
+  authorizes Apple's Family Controls framework in the .individual mode only
+  — never in the .child mode used for parental controls over a Family
+  Sharing minor. EarnLock is self-restriction software, never parental
+  control. We do not knowingly collect any data from anyone, of any age.
+
+changes: >
+  If this policy changes, the "Last updated" date at the top of this page
+  changes. Material changes will be noted in the app's release notes on the
+  App Store.
+
+contact_email: "lagerland.apps@proton.me"
+back_url: "/apps/earnlock/"
+---
