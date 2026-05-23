@@ -2890,6 +2890,39 @@ blockquote {
 }
 
 /* ================================================================
+   SPOTLIGHT STATS — punchy 2-4 data point grid for the spotlight
+   "featured mechanic" section in _layouts/app.html. Centered grid;
+   each stat is a large accent-colored value with a dimmed label.
+   ================================================================ */
+.spotlight-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--s-4);
+  max-width: 880px;
+  margin: var(--s-5) auto 0;
+}
+.spotlight-stat {
+  text-align: center;
+  padding: var(--s-3) var(--s-2);
+}
+.spotlight-stat__value {
+  font-size: clamp(1.5rem, 3.2vw, 2.25rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--accent-bright, var(--accent-b));
+  line-height: 1.15;
+  margin-bottom: var(--s-2);
+}
+@media (prefers-color-scheme: light) {
+  .spotlight-stat__value { color: var(--accent-dim); }
+}
+.spotlight-stat__label {
+  font-size: var(--text-sm);
+  color: var(--text-dim);
+  line-height: 1.45;
+}
+
+/* ================================================================
    CTA SUBLINE — emphatic one-liner directly under the primary CTA
    For the single most defensible commercial fact (pricing hook,
    trial framing, etc.). Sits between .actions and .meta-row pills.

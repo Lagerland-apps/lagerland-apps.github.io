@@ -313,6 +313,37 @@ layout: default
     </div>
   </section>
 
+  {% comment %}
+    ===== SPOTLIGHT (renders only when page.spotlight is set) =====
+    A hero-adjacent "featured mechanic" block for the single most-defensible
+    original design choice the app ships. Use sparingly — one per app, max.
+    Frontmatter shape:
+      spotlight:
+        overline: "Short label"
+        heading:  "The headline mechanic in one sentence."
+        lead:     "One paragraph explaining the mechanic and why it matters."
+        stats:    [{value, label}, ...]   # optional — 2-4 punchy data points
+  {% endcomment %}
+  {% if page.spotlight %}
+  <section class="section reveal" aria-labelledby="spotlight-{{ page.slug }}">
+    <div class="section-center">
+      {% if page.spotlight.overline %}<p class="overline">{{ page.spotlight.overline }}</p>{% endif %}
+      <h2 class="h2" id="spotlight-{{ page.slug }}">{{ page.spotlight.heading }}</h2>
+      {% if page.spotlight.lead %}<p class="lead">{{ page.spotlight.lead }}</p>{% endif %}
+    </div>
+    {% if page.spotlight.stats and page.spotlight.stats.size > 0 %}
+    <div class="spotlight-stats">
+      {% for stat in page.spotlight.stats %}
+      <div class="spotlight-stat">
+        <div class="spotlight-stat__value">{{ stat.value }}</div>
+        <div class="spotlight-stat__label">{{ stat.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
+
   {% comment %} ===== MENTIONED IN (renders only when page.mentioned_in is set — drop real external mentions here) ===== {% endcomment %}
   {% if page.mentioned_in and page.mentioned_in.size > 0 %}
   <section class="section reveal" aria-label="Mentioned in">

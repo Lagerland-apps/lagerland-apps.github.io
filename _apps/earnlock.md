@@ -109,6 +109,18 @@ seo:
     - phone addiction app movement
     - mindful tech use iPhone
 
+spotlight:
+  overline: "What makes EarnLock different"
+  heading: "For the first week, EarnLock doesn't block anything. It watches."
+  lead: "Most screen-time blockers ask you to set the rules on day one — pick the apps, set the goal, ship. The problem: you don't know which apps you actually overuse, and you don't know what step goal is realistic for you. So you guess, and the wall is either too strict (you bounce on day two) or too loose (it does nothing). Shadow Week is how EarnLock answers that. For the first seven days, nothing is blocked. EarnLock just watches — which apps you open, when, how often. At the end of the week you see, in your own data, what real blocking would have cost: the number of block events you'd have hit, the estimated screen-time saved per day, the apps that triggered the most attempts. Then you decide — with the calibration you couldn't have made on day one. No other screen-time blocker on the App Store does this."
+  stats:
+    - value: "7 days"
+      label: "Shadow window — no blocking, just observation"
+    - value: "Your data"
+      label: "Calibration uses your actual behaviour, not category defaults"
+    - value: "One tap"
+      label: "Flip to real blocking when you're ready — or never"
+
 hero:
   headline: "Block the doomscroll until you move."
   secondary: "Earn your screen time."
