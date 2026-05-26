@@ -13,11 +13,11 @@ faq:
   - q: "Can AppMeta edit App Store metadata in multiple languages at once?"
     a: "Yes. The English description lives in the left pane and other locales — German, French, Japanese, Spanish, and so on — live as tabs in the right pane. Diff is highlighted across locales, and the diff preview shows exactly what will change against live metadata before you push to Apple."
   - q: "Does AppMeta replace fastlane or Xcode Cloud?"
-    a: "No. AppMeta is not a build pipeline tool. It does not replace fastlane, Xcode Cloud, or your CI. It also does not generate screenshots — that is ScreenFlow Studio's job — or analyse revenue, which is AppMeta Pulse's role. AppMeta handles the metadata and review portion of App Store Connect specifically."
+    a: "No. AppMeta is not a build pipeline tool. It does not replace fastlane, Xcode Cloud, or your CI. It also does not generate screenshots — that is Mockly's job — or analyse revenue, which is AppMeta Pulse's role. AppMeta handles the metadata and review portion of App Store Connect specifically."
 mentioned_apps:
   - appmeta
   - appmeta-pulse
-  - screenflow-studio
+  - mockly
 read_time: "6 min read"
 excerpt: "AppMeta is a native Mac client for the App Store Connect API — per-locale metadata editing, diff preview, keyword analysis, review responses, and version submission. This post explains why the indie iOS workflow needed it, what the trade-offs are, and why the studio shipped it as a $44.99 lifetime purchase rather than a subscription."
 ---
@@ -68,7 +68,7 @@ A one-time purchase forces a different discipline: ship a tool that's worth $44.
 
 ## What AppMeta is not
 
-AppMeta is not a build pipeline tool. It does not replace fastlane, Xcode Cloud, or your CI. It does not generate screenshots — that's [ScreenFlow Studio](/apps/screenflow-studio/)'s job. It does not analyse revenue — that's [AppMeta Pulse](/apps/appmeta-pulse/), the iPhone-side companion.
+AppMeta is not a build pipeline tool. It does not replace fastlane, Xcode Cloud, or your CI. It does not generate screenshots — that's [Mockly](/apps/mockly/)'s job. It does not analyse revenue — that's [AppMeta Pulse](/apps/appmeta-pulse/), the iPhone-side companion.
 
 It is, specifically, the native client for the metadata-and-review portion of App Store Connect. The thing you spend an hour a day in during ship weeks. The thing that needed to stop being miserable.
 

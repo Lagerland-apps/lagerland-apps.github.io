@@ -11,13 +11,13 @@ faq:
   - q: "Why is the manual workflow so slow?"
     a: "Three structural issues. First: most screenshot designs bake text into the image, which means every locale needs a separate flat re-render. Second: App Store Connect's web UI was not built for bulk upload — it's a per-locale, per-device-class form that requires manual file selection. Third: human translation roundtrips add days, and machine translation without preserving font and positioning produces output that looks broken in right-to-left languages."
   - q: "What does 'text as an overlay layer' mean in practice?"
-    a: "The base screenshot is a clean capture of the app UI with no marketing text in it. The feature copy ('Track every workout in one tap.') lives in a separate text layer on top of the screenshot in your design tool — Figma component, Sketch text node, ScreenFlow Studio text overlay. When you localise, only the text layer changes per locale; the underlying screenshot stays the same across all 39 versions. This is what makes 39× rendering cheap instead of expensive."
+    a: "The base screenshot is a clean capture of the app UI with no marketing text in it. The feature copy ('Track every workout in one tap.') lives in a separate text layer on top of the screenshot in your design tool — Figma component, Sketch text node, Mockly text overlay. When you localise, only the text layer changes per locale; the underlying screenshot stays the same across all 39 versions. This is what makes 39× rendering cheap instead of expensive."
   - q: "How does AI translation handle right-to-left languages like Arabic and Hebrew?"
     a: "Cleanly when the layout engine knows about RTL, badly when it doesn't. Apple's App Store Connect requires Arabic and Hebrew screenshots in right-to-left layout — meaning a left-aligned overlay text in English becomes right-aligned in Arabic, and the visual hierarchy may flip. A tool that runs AI translation and naively pastes the result into the same coordinates produces broken-looking Arabic. A tool that respects RTL layout via Apple's standard text-direction handling produces output that reads correctly to a native Arabic reader."
   - q: "Is App Store Connect's bulk upload API actually faster than the web UI?"
     a: "Yes — by 5 to 10× for a full 39-locale set. The web UI requires selecting each locale tab, dragging the file for each device size, waiting for upload confirmation, then repeating. The Connect API accepts a JSON manifest specifying every (locale, device class, screenshot slot) combination and uploads them in parallel. For 234 screenshots (6 sets × 39 locales) the web UI takes 2–4 hours of attention; the API takes under 3 minutes of compute."
 mentioned_apps:
-  - screenflow-studio
+  - mockly
 read_time: "10 min read"
 excerpt: "App Store Connect accepts screenshots in 39 locales. Most indie apps ship in one because the manual workflow takes 10–30 hours per release. This post walks through a reproducible workflow that does it in 90 minutes for the first release and 15 minutes per release after."
 ---
@@ -52,7 +52,7 @@ What that means in each tool:
 
 - **In Sketch:** same pattern. Flat screenshot layer, text node on top. Localise the text node.
 
-- **In ScreenFlow Studio:** the architecture is built in — every screenshot is a project with the raw capture as one layer, the device frame as a 3D rendered layer, and overlaid text as separate editable text elements. AI translation operates on the text elements only; the captured screen content is byte-identical across all 39 locales.
+- **In Mockly:** the architecture is built in — every screenshot is a project with the raw capture as one layer, the device frame as a 3D rendered layer, and overlaid text as separate editable text elements. AI translation operates on the text elements only; the captured screen content is byte-identical across all 39 locales.
 
 The benefit compounds. Once text is a layer, you can:
 
@@ -70,13 +70,13 @@ Assuming you've done the initial design pass already (the 1–2 hours of actual 
 
 **Step 2 (10 min):** Configure your AI translation provider. OpenAI's GPT-4, Anthropic's Claude, and DeepL are the three I'd recommend in 2026 — all produce App-Store-acceptable output with English/Japanese/Chinese/German source-target pairs. For RTL languages (Arabic, Hebrew), spot-check Claude or use a native speaker review pass for the first release.
 
-**Step 3 (5 min):** Run translation. If you're using ScreenFlow Studio: paste your base text strings, select target locales, click "Translate." Output goes straight into the layered project per locale. If you're using a manual workflow: paste each base string into the AI tool, get the 39-locale output, paste back into your design tool one locale at a time.
+**Step 3 (5 min):** Run translation. If you're using Mockly: paste your base text strings, select target locales, click "Translate." Output goes straight into the layered project per locale. If you're using a manual workflow: paste each base string into the AI tool, get the 39-locale output, paste back into your design tool one locale at a time.
 
-**Step 4 (20 min):** Render every (device × locale) combination. ScreenFlow Studio handles this with one button and ~50 milliseconds per render. A manual Figma workflow can be scripted with the Figma API but requires upfront setup; without scripting, this is the part where the 90-minute workflow stretches.
+**Step 4 (20 min):** Render every (device × locale) combination. Mockly handles this with one button and ~50 milliseconds per render. A manual Figma workflow can be scripted with the Figma API but requires upfront setup; without scripting, this is the part where the 90-minute workflow stretches.
 
 **Step 5 (10 min):** Spot-check the RTL languages and any high-stakes locale (Japanese typically — the character density is different from English and overflow is common). Adjust text overlay sizes if anything looks off.
 
-**Step 6 (5 min):** Upload via App Store Connect API. ScreenFlow Studio's direct upload pipeline handles this; Fastlane `deliver` is the open-source alternative if you've invested in Fastlane setup. Either way: ~3 minutes of compute for a full 234-screenshot bundle.
+**Step 6 (5 min):** Upload via App Store Connect API. Mockly's direct upload pipeline handles this; Fastlane `deliver` is the open-source alternative if you've invested in Fastlane setup. Either way: ~3 minutes of compute for a full 234-screenshot bundle.
 
 Total: about 65 minutes if everything goes smoothly, 90 if you hit one or two spot-check issues. After this, every subsequent release is 15 minutes because the architecture is in place.
 
@@ -90,7 +90,7 @@ Total: about 65 minutes if everything goes smoothly, 90 if you hit one or two sp
 
 **Don't translate proper nouns.** Your app name stays "Strava" in every locale. Some translation tools will helpfully render "Strava" into the target script (it shouldn't); confirm proper-noun handling on first run.
 
-**App Store Connect rate limits matter for bulk upload.** The Connect API has burst limits. Tools that respect them (ScreenFlow Studio's pipeline, Fastlane deliver with proper config) upload cleanly; tools that hammer the API can get temporary backoff.
+**App Store Connect rate limits matter for bulk upload.** The Connect API has burst limits. Tools that respect them (Mockly's pipeline, Fastlane deliver with proper config) upload cleanly; tools that hammer the API can get temporary backoff.
 
 ## What the actual tools cost
 
@@ -99,7 +99,7 @@ The economics for 2026 indie pipelines:
 - **Figma + manual translation + manual upload:** Free (within Figma free plan). Time cost is the 10–30 hours described above. For an app shipping 3 releases per year that's 30–90 hours per year — half a developer-week.
 - **Figma + AI translation (BYO API) + manual upload:** ~$2–5 of API calls per release. Time cost drops to 4–10 hours.
 - **Subscription SaaS (Screenshots.pro / AppLaunchpad Pro / Screenshot Studio):** $19–$49 per month = $228–$588 per year. Time cost drops to 1–3 hours per release.
-- **[ScreenFlow Studio](/apps/screenflow-studio/) (one-time $22.99):** Time cost drops to 90 min first release, 15 min subsequent releases. AI translation against your own API key (~$0.50–$2 per release at 2026 API prices).
+- **[Mockly](/apps/mockly/) (one-time $12.99):** Time cost drops to 90 min first release, 15 min subsequent releases. AI translation against your own API key (~$0.50–$2 per release at 2026 API prices).
 
 The cost-of-tool is small compared to the cost-of-time. The decision is mostly about which workflow architecture you adopt, not which logo is on the tool.
 

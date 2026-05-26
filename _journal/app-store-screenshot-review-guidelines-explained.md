@@ -17,7 +17,7 @@ faq:
   - q: "Will showing in-app purchase prices in screenshots cause rejection?"
     a: "Sometimes — particularly if the prices in screenshots don't match the prices declared on the App Store listing, or if they're displayed in a confusing way. Apple has tightened this in recent years. Either show actual IAP prices as they appear in the App Store listing, or avoid displaying them altogether. Promotional prices that have expired are a common rejection trigger."
 mentioned_apps:
-  - screenflow-studio
+  - mockly
 read_time: "8 min read"
 excerpt: "App Store Review Guidelines §2.3.3 is one paragraph long and quietly responsible for more screenshot rejections than any other rule. This post walks through what each clause actually means in practice, which screenshot patterns get rejected, and which ones reviewers wave through."
 ---
@@ -53,7 +53,7 @@ The rule, in plain language: the *content inside the device screen* must be the 
 
 Short answer: nothing problematic. Long answer: 3D device frames are decorative styling around the real screen content. As long as the screen content is the real app, the device frame can be any aspect, perspective, or render quality.
 
-This is also why a tool like [ScreenFlow Studio](/apps/screenflow-studio/) is structurally compliant with §2.3.3 by default: the workflow is *capture the real screen first, render the device frame around it second.* The screen content is your actual app capture; the frame is just a 3D render placed around it. Compliant by construction.
+This is also why a tool like [Mockly](/apps/mockly/) is structurally compliant with §2.3.3 by default: the workflow is *capture the real screen first, render the device frame around it second.* The screen content is your actual app capture; the frame is just a 3D render placed around it. Compliant by construction.
 
 Compare that to "design-first" workflows where someone in Figma mocks up a concept screen, then drops it into a flat phone outline, then exports. That's the workflow most likely to drift into §2.3.3 territory. Not because the tool is the problem — Figma isn't — but because the workflow encourages designing screens that aren't in the app yet, and then forgetting to verify they ever ship.
 
@@ -75,7 +75,7 @@ A few practical rules:
 
 §2.3.3 applies to App Store Preview videos as well, with two extra caveats. First: 30 seconds maximum (15 seconds for Apple Watch). Second: the video must show actual app footage captured from a device — not screen-recorded mock-ups, not animated concept reels, not external camera footage of someone using the app. Apple checks this rigorously, especially for new apps.
 
-ScreenFlow Studio focuses on still screenshots and doesn't generate App Preview videos — those have a different recording and submission pipeline. But the same §2.3.3 logic applies: real captures from real builds.
+Mockly focuses on still screenshots and doesn't generate App Preview videos — those have a different recording and submission pipeline. But the same §2.3.3 logic applies: real captures from real builds.
 
 ## TL;DR
 
@@ -84,6 +84,6 @@ ScreenFlow Studio focuses on still screenshots and doesn't generate App Preview 
 - **Capture-first workflows pass cleanly.** Design-first workflows risk drift.
 - **IAP prices in screenshots must match the App Store listing.** Or leave them out.
 - **App Preview videos have the same rule** plus length limits and a hard "no mockup" requirement.
-- **Tool note:** [ScreenFlow Studio](/apps/screenflow-studio/)'s workflow puts the captured screen first and renders the 3D frame around it — structurally compliant with §2.3.3 by default. The reverse-architecture (design first, capture later) is what trips most teams up.
+- **Tool note:** [Mockly](/apps/mockly/)'s workflow puts the captured screen first and renders the 3D frame around it — structurally compliant with §2.3.3 by default. The reverse-architecture (design first, capture later) is what trips most teams up.
 
 The rule has been the same in spirit for nearly a decade. The rejection emails keep arriving because the asset pipeline in most indie shops doesn't make compliance the default — it makes it an afterthought.

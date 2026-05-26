@@ -204,7 +204,7 @@ apps:
       - "Camera (when scanning a receipt)"
     notes: "Receipt OCR uses on-device Vision framework. No image leaves the device."
 
-  - slug: screenflow-studio
+  - slug: mockly
     manifest_source: submission
     tracking_declared: false
     tracking_domains: 0
@@ -218,7 +218,7 @@ apps:
     required_reason_apis: []
     permissions:
       - "User-Selected File — open and save screenshots"
-    notes: "Rendering uses Apple's Metal locally. Translation and upload are explicit user actions."
+    notes: "Rendering uses Apple's Metal locally. Translation and upload are explicit user actions. Formerly ScreenFlow Studio."
 
   - slug: soon
     manifest_source: submission

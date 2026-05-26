@@ -15,9 +15,9 @@ faq:
   - q: "Why does Metal matter for screenshot rendering?"
     a: "Two reasons. First, Metal lets you render real 3D device geometry — not a flat PNG with a device frame slapped on top. The shadows, lighting, and parallax in a properly rendered 3D scene look meaningfully different at 4K. Second, Metal is deterministic and GPU-accelerated, so you can render a project to thousands of files (every device × every locale × every screenshot) in seconds rather than minutes — and re-render tomorrow with byte-for-byte identical output."
   - q: "Why does on-device AI translation matter when most apps just use a cloud API?"
-    a: "Practical privacy. If ScreenFlow Studio (or any other tool) talks to a translation API directly from your Mac using your own API key, the translation request goes from your machine to the model provider. The vendor of the screenshot tool never sees the content. If the screenshot tool is a SaaS web app, your overlaid text passes through their server before reaching the model provider — adding a third party to your data flow for no functional benefit."
+    a: "Practical privacy. If Mockly (or any other tool) talks to a translation API directly from your Mac using your own API key, the translation request goes from your machine to the model provider. The vendor of the screenshot tool never sees the content. If the screenshot tool is a SaaS web app, your overlaid text passes through their server before reaching the model provider — adding a third party to your data flow for no functional benefit."
 mentioned_apps:
-  - screenflow-studio
+  - mockly
 read_time: "9 min read"
 excerpt: "Every credible App Store screenshot tool is web-based — drop your screenshots in a browser, render on the vendor's server, download the result. For a workflow whose input is pre-release content under NDA, that's the wrong architecture. This post walks through why Mac-native is structurally better, why it's rare anyway, and how Metal rendering changes what's actually possible."
 ---
@@ -54,7 +54,7 @@ Several reasons, in roughly ascending order of how often they actually matter:
 
 **Speed.** Local Metal rendering at 4K, with full 3D device geometry and lighting, takes milliseconds per screenshot. The same render through a remote service typically takes 1-10 seconds per screenshot once you account for upload, queueing, render, download. For a project producing 234 screenshots (6 device sizes × 39 locales), this is the difference between a 5-second render and a 5-minute render. The local version also doesn't depend on the vendor's servers staying up tonight.
 
-**Lower total cost.** Once the rendering happens locally, the natural pricing model is a one-time purchase. The cost structure of a Mac app — distributed via the App Store, no server bills — supports a $20–$50 one-time price comfortably. The cost structure of a SaaS web app — render farms running 24/7 — pretty much requires a subscription. This is why ScreenFlow Studio is $22.99 once and most competitors are $19–$49 per month.
+**Lower total cost.** Once the rendering happens locally, the natural pricing model is a one-time purchase. The cost structure of a Mac app — distributed via the App Store, no server bills — supports a $20–$50 one-time price comfortably. The cost structure of a SaaS web app — render farms running 24/7 — pretty much requires a subscription. This is why Mockly is $12.99 once and most competitors are $19–$49 per month.
 
 **No account or login required.** This isn't an ideological preference — there's just nothing for an account to authenticate against. The app doesn't store anything server-side because there's no server. You don't need to recover your account if you change machines, because there isn't one. The friction reduction is real and the privacy reduction is real and they're both downstream of "the rendering happens here."
 
@@ -70,17 +70,17 @@ In other words: the Mac-native architecture is structurally better for the user 
 
 This isn't a moral critique of the SaaS competitors. AppLaunchpad, Screenshots.pro, Screenshot Studio, and the others are all reasonable products built within a reasonable business constraint. They're just optimising for a different objective function, and that objective function happens to push them toward an architecture where your pre-release screenshots end up on someone else's server.
 
-## What ScreenFlow Studio actually does differently
+## What Mockly actually does differently
 
-[ScreenFlow Studio](/apps/screenflow-studio/) is the Mac-native version. The architectural specifics:
+[Mockly](/apps/mockly/) is the Mac-native version. The architectural specifics:
 
 - **Metal rendering pipeline.** Real 3D device geometry, GPU-accelerated, deterministic. Project re-renders tomorrow produce bit-for-bit identical output. Every device class from iPhone 6.9" (1290×2868) down to Apple Watch (410×502) and up to visionOS (3840×2160) is handled by the same renderer.
 
-- **AI translation against your own API key.** When you localise overlaid text into the 39 App Store locales, the translation calls go from your Mac directly to whichever model provider you configure — OpenAI, Anthropic, whatever. ScreenFlow Studio never sees the text. There's no Lagerland server in the path because there is no Lagerland server.
+- **AI translation against your own API key.** When you localise overlaid text into the 39 App Store locales, the translation calls go from your Mac directly to whichever model provider you configure — OpenAI, Anthropic, whatever. Mockly never sees the text. There's no Lagerland server in the path because there is no Lagerland server.
 
 - **App Store Connect upload via Keychain.** When you push the finished screenshots to ASC, you authenticate via Apple's framework. Credentials live in Keychain. The upload is a direct device-and-locale-aware submission to App Store Connect's API — no manual browser uploads, no third-party intermediary.
 
-- **One-time $22.99.** Family Sharing for up to six people. The cost structure supports this; the architecture supports the cost structure.
+- **One-time $12.99.** Family Sharing for up to six people. The cost structure supports this; the architecture supports the cost structure.
 
 The price is the consequence of the architecture, not a marketing decision.
 
@@ -88,7 +88,7 @@ The price is the consequence of the architecture, not a marketing decision.
 
 The honest answer to "why use a GUI tool at all" for many indie developers is: because the Fastlane setup cost is real. Fastlane snapshot + frameit is the de facto open-source standard for automated App Store screenshot generation, and for teams with mature CI/CD it's the right answer. But the setup curve is steep — `Snapfile`, `Snapshfile`, UI tests in Xcode that drive the screenshot states, then `frameit` to overlay device frames, then `deliver` to upload. It's a multi-day investment for first-time setup.
 
-For solo developers and small teams, the ratio of GUI-tool setup time (an hour) to Fastlane setup time (a few days) usually points to the GUI tool, especially if you're shipping new screenshots a few times a year. ScreenFlow Studio is a GUI alternative for that audience; Fastlane is the right answer for teams that have already paid the setup cost.
+For solo developers and small teams, the ratio of GUI-tool setup time (an hour) to Fastlane setup time (a few days) usually points to the GUI tool, especially if you're shipping new screenshots a few times a year. Mockly is a GUI alternative for that audience; Fastlane is the right answer for teams that have already paid the setup cost.
 
 ## TL;DR
 
@@ -97,4 +97,4 @@ For solo developers and small teams, the ratio of GUI-tool setup time (an hour) 
 - Mac-native means rendering happens on your machine via Metal, AI translation calls your own provider directly, App Store Connect auth lives in Keychain. Every byte stays local until you push to Apple.
 - The reason web apps dominate isn't user preference — it's that the SaaS subscription business model only works if rendering happens on the vendor's infrastructure.
 - Mac-native is structurally better for the user, structurally worse for the vendor. That's why it's rare.
-- [ScreenFlow Studio](/apps/screenflow-studio/) is the Mac-native version. $22.99 once, no subscription, no server, no account.
+- [Mockly](/apps/mockly/) is the Mac-native version. $12.99 once, no subscription, no server, no account.

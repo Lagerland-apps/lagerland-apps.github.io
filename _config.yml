@@ -43,3 +43,4 @@ include:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
