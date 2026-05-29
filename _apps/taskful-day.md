@@ -108,6 +108,10 @@ who_not_for:
 
 alternatives_to:
   - "Streaks"
+  - "Habitica"
+  - "Productive"
+  - "Way of Life"
+  - "HabitNow"
   - "Things 3"
   - "TickTick"
   - "Todoist"

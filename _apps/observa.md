@@ -3,9 +3,9 @@ layout: app
 slug: observa
 name: "Observa"
 tagline: "Sleep, energy & recovery insights."
-quick_answer: "Observa is a private health insights app for iPhone, Mac, and Apple Vision Pro that reads your Apple Health and Apple Watch data — sleep stages, lnRMSSD (HRV) trends, ECG sinus-rhythm, resting heart rate, activity — and explains in plain language which of your habits actually shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. No servers, no account, no data upload (verified by Apple's App Privacy nutrition label). Free with Pro from $3.99/month, $22.99/year, or $49.99 lifetime."
+quick_answer: "Observa is a private health insights app for iPhone and iPad that reads your Apple Health data — sleep stages, lnRMSSD (HRV) trends, ECG sinus-rhythm, resting heart rate, activity — no matter which device recorded it (Apple Watch, Oura, Whoop, Garmin, Fitbit, or any app that writes to Apple Health), and explains in plain language which of your habits actually shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. No servers, no account, no data upload (verified by Apple's App Privacy nutrition label). Free with Pro from $3.99/month, $22.99/year, or $49.99 lifetime."
 category: health
-platforms: ["iOS", "macOS", "visionOS"]
+platforms: ["iOS", "iPadOS"]
 status: live
 jump_nav: true
 
@@ -18,7 +18,7 @@ schema_price: "0"
 schema_high_price: "49.99"
 schema_offer_count: "4"
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew. All plans run on iPhone, Mac, and Apple Vision Pro; reads from Apple Watch via Apple Health, no separate pairing."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew. All plans run on iPhone and iPad; Observa reads from Apple Health, so any device that writes there — Apple Watch, Oura, Whoop, Garmin, Fitbit — works with no separate pairing."
 
 release_notes:
   - date: "2026-05-13"
@@ -102,7 +102,7 @@ hero:
   alt: "Observa — Apple Health insight card on iPhone explaining a sleep, HRV, or recovery pattern"
 
 who_for:
-  - "You already wear an Apple Watch and want to understand what your health data actually means"
+  - "You already track with an Apple Watch, Oura ring, Whoop, Garmin, or Fitbit and want to understand what your health data actually means"
   - "You're an Apple Health power user tired of charts without interpretation"
   - "You want a truly private health app — verified by Apple's App Privacy label as collecting zero data"
   - "You care about sleep efficiency, HRV (lnRMSSD), and recovery readiness — not step-count vanity metrics"
@@ -110,7 +110,7 @@ who_for:
 
 who_not_for:
   - "You want a medical diagnostic tool (Observa is informational, not clinical)"
-  - "You don't use Apple Health or Apple Watch at all"
+  - "You don't use Apple Health at all — no Apple Watch, ring, or other Health-connected device feeding it data"
   - "You prefer raw dashboards and charts over plain-language interpretation"
   - "You want a cloud-synced, multi-device social coach (Observa stays on-device, by design)"
 
@@ -119,6 +119,10 @@ alternatives_to:
   - "Gentler Streak"
   - "AutoSleep"
   - "Athlytic"
+  - "Whoop"
+  - "Oura"
+  - "HRV4Training"
+  - "Welltory"
   - "Apple Health (for interpretation)"
 
 value_points:
@@ -145,7 +149,7 @@ how_it_works:
     - title: "Translates into plain English"
       detail: "Every insight is rendered as a sentence you can act on, with the underlying numbers visible if you tap. e.g. 'You sleep 18% less deeply on days you train legs after 18:00. Confidence: 87%, n=14 over 60 days.'"
     - title: "Stays on-device"
-      detail: "All computation happens in the Observa app on your iPhone, Mac, or Apple Vision Pro. No servers, no analytics SDKs, no account. App Privacy nutrition label: zero data collected."
+      detail: "All computation happens in the Observa app on your iPhone or iPad. No servers, no analytics SDKs, no account. App Privacy nutrition label: zero data collected."
 
 example_insights:
   intro: "Sample of the daily insight cards Observa generates. Wording, numbers, and confidence are exactly what you'd see in the app."
@@ -181,7 +185,7 @@ features:
   - title: "Daily card, weekly reflection"
     description: "Start each day with one calm insight card. End each week with a reflection that names what worked, what didn't, and one thing to try."
   - title: "Built on Apple Health, locked to your device"
-    description: "Reads from data you already collect via Apple Watch and Health-connected apps. No manual logging, no wearable lock-in. No servers — verified by Apple's App Privacy nutrition label."
+    description: "Reads from data you already collect — whether it comes from an Apple Watch, an Oura ring, a Whoop, a Garmin, a Fitbit, or any app that writes to Apple Health. No manual logging, no wearable lock-in. No servers — verified by Apple's App Privacy nutrition label."
 
 screenshots:
   - src: "/assets/screenshots/observa/1.png"
@@ -230,11 +234,13 @@ founder:
 
 faq:
   - q: "What is Observa?"
-    a: "Observa is a health insights app for iPhone, Mac, and Apple Vision Pro that analyses your Apple Health data to reveal personal patterns in sleep, recovery, energy, and activity. It focuses on interpretation against your own 60-day baseline, not just tracking."
+    a: "Observa is a health insights app for iPhone and iPad that analyses your Apple Health data to reveal personal patterns in sleep, recovery, energy, and activity — whether that data comes from an Apple Watch, an Oura ring, a Whoop, a Garmin, a Fitbit, or any app that writes to Apple Health. It focuses on interpretation against your own 60-day baseline, not just tracking."
   - q: "How is Observa different from other health apps?"
     a: "Most health apps show you numbers and charts. Observa uses single-variable (free) and multi-variable (Pro) correlation analysis against your personal 60-day baseline to explain what those numbers actually mean for your body and habits — in plain English. It also runs entirely on-device, verified by Apple's App Privacy nutrition label."
   - q: "Does Observa work with Apple Watch?"
     a: "Yes. Observa reads data collected by Apple Watch through Apple Health — including heart rate, HRV (RMSSD), ECG, sleep stages, resting heart rate, wrist temperature, and activity metrics. No separate pairing needed. ECG insights require Apple Watch Series 4 or later; HRV and sleep work on Series 3 and later."
+  - q: "Does Observa work with Oura, Whoop, Garmin, or Fitbit — or do I need an Apple Watch?"
+    a: "You do not need an Apple Watch. Observa interprets whatever is in Apple Health, regardless of which device recorded it. If your Oura ring, Whoop, Garmin, Fitbit, or another wearable writes sleep, HRV, or resting-heart-rate data into Apple Health, Observa reads and interprets it exactly the same way it reads Apple Watch data — so you can keep the device you already own and just add the interpretation layer, with no extra membership. Oura and Whoop can share to Apple Health from their own apps; Garmin and Fitbit usually need a small third-party bridge app (such as Health Sync) to write into Apple Health first. ECG-specific insights are the one exception — those require an Apple Watch, because ECG is an Apple Watch feature."
   - q: "What are HRV and ECG insights?"
     a: "Observa tracks lnRMSSD (the log-transformed HRV metric used in sports science) against your personal 60-day baseline, flags drops greater than one standard deviation, and uses Apple Watch ECG sinus-rhythm data to estimate autonomic recovery state — the balance between sympathetic ('fight-or-flight') and parasympathetic ('rest-and-digest') activity. Translation: instead of a graph, you get a sentence like 'Your nervous system is 18% below baseline today — likely a recovery day.'"
   - q: "Is Observa free?"
@@ -269,4 +275,4 @@ ratings:
   count: 5
   last_synced: "2026-05-14"
 ---
-Observa is a health insights app for iPhone, Mac, and Apple Vision Pro that transforms Apple Health data into personal, pattern-based insights about sleep, recovery, energy, and activity. Using single-variable and multi-variable correlation analysis against a rolling 60-day personal baseline, lnRMSSD (HRV) trend tracking, Apple Watch ECG sinus-rhythm interpretation, and long-term trend detection, Observa explains in plain English what consistently affects your sleep efficiency, recovery readiness, and energy — not in charts. It reads data you already collect through Apple Watch and Health-connected apps, requiring no manual logging. Daily insight cards show your current state against your baseline, weekly reflections highlight what worked, and per-pattern confidence scoring lets you judge each insight for yourself. Free with optional Pro for advanced analytics. Completely private — no ads, no trackers, no account required, no data leaves your device, verified by Apple's App Privacy nutrition label.
+Observa is a health insights app for iPhone and iPad that transforms Apple Health data into personal, pattern-based insights about sleep, recovery, energy, and activity. Using single-variable and multi-variable correlation analysis against a rolling 60-day personal baseline, lnRMSSD (HRV) trend tracking, Apple Watch ECG sinus-rhythm interpretation, and long-term trend detection, Observa explains in plain English what consistently affects your sleep efficiency, recovery readiness, and energy — not in charts. It reads data you already collect through Apple Watch, an Oura ring, a Whoop, a Garmin, a Fitbit, or any Health-connected app, requiring no manual logging. Daily insight cards show your current state against your baseline, weekly reflections highlight what worked, and per-pattern confidence scoring lets you judge each insight for yourself. Free with optional Pro for advanced analytics. Completely private — no ads, no trackers, no account required, no data leaves your device, verified by Apple's App Privacy nutrition label.

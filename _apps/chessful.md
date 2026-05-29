@@ -138,6 +138,7 @@ alternatives_to:
   - "Magnus Trainer"
   - "Chessis"
   - "Chessly"
+  - "Chessable"
   - "Really Bad Chess"
 
 value_points:

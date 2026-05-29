@@ -110,6 +110,7 @@ alternatives_to:
   - "WikiScroll"
   - "Random-Wiki-Explorer"
   - "Wikipedia app"
+  - "Kiwix"
 
 founder:
   entity_type: "Organization"

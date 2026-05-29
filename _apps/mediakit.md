@@ -99,6 +99,12 @@ alternatives_to:
   - "Handbrake"
   - "Permute"
   - "CloudConvert"
+  - "Convertio"
+  - "Adapter"
+  - "Wondershare UniConverter"
+  - "HitPaw Video Converter"
+  - "iMazing HEIC Converter"
+  - "XnConvert"
   - "ImageOptim"
   - "Keka"
 

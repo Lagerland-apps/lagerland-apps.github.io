@@ -156,6 +156,7 @@ alternatives_to:
   - "Strong"
   - "Hevy"
   - "Fitbod"
+  - "Jefit"
   - "Caliber"
   - "Heavyset"
 
