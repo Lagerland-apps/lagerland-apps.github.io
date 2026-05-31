@@ -167,7 +167,7 @@ apps:
     required_reason_apis: []
     permissions:
       - "User-Selected File — only when you drag a file in"
-    notes: "133 native tools for video, audio, image, PDF, and archive work — all processed locally."
+    notes: "152 native tools for video, audio, image, PDF, and archive work — all processed locally."
 
   - slug: observa
     manifest_source: source

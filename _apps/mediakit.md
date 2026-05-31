@@ -2,10 +2,10 @@
 layout: app
 slug: mediakit
 name: "MediaKit"
-tagline: "Every media tool. One Mac app."
-quick_answer: "MediaKit is a native Mac app with 133 local tools for compressing, converting, and editing video, audio, images, PDFs, and archives. Drop any file and it picks the right tool — every operation runs on-device via Apple frameworks, never uploaded. Free 3-day trial; five core tools stay free forever. Pro from $3.99/month, $22.99/year, or $39.99 lifetime. No tracking, no account."
+tagline: "Every media tool. One app for iPhone & Mac."
+quick_answer: "MediaKit is a native iPhone and Mac app with 152 local tools for compressing, converting, and editing video, audio, images, PDFs, and archives. Drop any file and it picks the right tool — every operation runs on-device via Apple frameworks, never uploaded. Free 3-day trial; five core tools stay free forever. Pro from $3.99/month, $22.99/year, or $39.99 lifetime. No tracking, no account."
 category: utilities
-platforms: ["macOS"]
+platforms: ["iOS", "macOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6761451361"
@@ -22,16 +22,16 @@ plans_footnote: "Prices in USD; the App Store shows your local currency at check
 plans:
   - name: "Free trial"
     price: "$0"
-    summary: "All 133 tools unlocked for 3 days. After that, five core tools stay free forever."
+    summary: "All 152 tools unlocked for 3 days. After that, five core tools stay free forever."
     features:
-      - "Full access to all 133 tools for 3 days"
+      - "Full access to all 152 tools for 3 days"
       - "Five tools stay free forever: Video Compress, Image Compress, Image Resize, Audio Convert, PDF Compress"
       - "Everything runs on-device — no upload, no account"
   - name: "Pro · Monthly"
     price: "$3.99/mo"
     summary: "Full Pro, billed monthly. Cancel anytime."
     features:
-      - "All 133 tools across video, audio, image, PDF, archive"
+      - "All 152 tools across video, audio, image, PDF, archive"
       - "Batch processing"
       - "All 21 export presets (YouTube, Instagram, Discord, broadcast LUFS)"
       - "All six Shortcuts actions"
@@ -51,15 +51,15 @@ plans:
       - "Everything in Pro · Annual"
       - "One-time purchase, no renewal"
       - "Future Pro features included"
-      - "Restores on every Mac signed in with the same Apple ID"
+      - "Universal Purchase — works on iPhone and every Mac signed in with the same Apple ID"
     highlight_label: "Best long-term value"
 
 icon: "/assets/icons/mediakit.png"
 og_image: "/assets/og/mediakit.png"
 
 seo:
-  title: "MediaKit — 133 Local Media Tools for Mac | Private by Design"
-  description: "Compress, convert, and edit video, audio, images, PDFs, and archives on your Mac. 133 native tools. 100% on-device. No uploads. Free to start."
+  title: "MediaKit — 152 Local Media Tools for iPhone & Mac | Private by Design"
+  description: "Compress, convert, and edit video, audio, images, PDFs, and archives on your iPhone or Mac. 152 native tools. 100% on-device. No uploads. Free to start."
   keywords:
     - mac media tools
     - video compressor mac
@@ -69,6 +69,9 @@ seo:
     - compress mp4 without uploading
     - extract rar v5 on mac
     - on-device audio transcription mac
+    - video compressor iphone
+    - convert heic to jpg iphone
+    - offline file converter ios
     - ebu r128 loudness normalization app
     - privacy-first file converter for mac
     - all-in-one media converter apple silicon
@@ -78,16 +81,16 @@ seo:
     - strip exif metadata mac
 
 hero:
-  headline: "Every media tool. One Mac app."
-  subheadline: "133 local tools for video, audio, image, PDF, and archives. Drop a file — MediaKit picks the right one. Nothing uploaded, ever."
+  headline: "Every media tool. One app for iPhone & Mac."
+  subheadline: "152 local tools for video, audio, image, PDF, and archives. Drop a file — MediaKit picks the right one. Nothing uploaded, ever."
   cta_label: "Download Free"
-  alt: "MediaKit — drag-and-drop file conversion across 133 native tools on Mac"
+  alt: "MediaKit — drag-and-drop file conversion across 152 native tools on iPhone and Mac"
 
 who_for:
-  - "You're a Mac user who converts video, audio, images, PDFs, or archives regularly"
+  - "You convert video, audio, images, PDFs, or archives regularly on iPhone or Mac"
   - "You refuse to upload files to cloud conversion tools (CloudConvert, Zamzar) for privacy reasons"
-  - "You want one native Mac app instead of five single-purpose utilities"
-  - "You care about offline-first, sandboxed file processing on Apple Silicon"
+  - "You want one native iPhone & Mac app instead of five single-purpose utilities"
+  - "You care about offline-first, sandboxed file processing on iPhone and Apple Silicon Macs"
   - "You automate via Shortcuts and want conversion actions you can chain"
 
 who_not_for:
@@ -107,16 +110,21 @@ alternatives_to:
   - "XnConvert"
   - "ImageOptim"
   - "Keka"
+  - "iZip"
+  - "Compress Videos & Resize Video"
+  - "Image Size"
+  - "PDF Expert"
+  - "Documents by Readdle"
 
 value_points:
   - title: "Drop. Done."
     description: "Drag any file in. MediaKit recognizes the format and opens the right tool instantly. No menus to hunt through."
   - title: "Every format. One app."
-    description: "Video, audio, image, PDF, archive, ebook — 133 tools behind a single interface. Replace a dozen utilities with one."
-  - title: "Never leaves your Mac"
+    description: "Video, audio, image, PDF, archive, ebook — 152 tools behind a single interface. Replace a dozen utilities with one."
+  - title: "Never leaves your device"
     description: "Every operation runs on-device via AVFoundation, CoreImage, PDFKit, Vision, and Speech. No servers. No account. Works offline."
   - title: "Five tools free forever"
-    description: "Full access for 3 days. After that, five core tools stay free forever. Go Pro for the remaining 128 and batch processing."
+    description: "Full access for 3 days. After that, five core tools stay free forever. Go Pro for the remaining 147 and batch processing."
 
 features:
   - title: "Broadcast-grade video"
@@ -147,7 +155,7 @@ privacy:
   tracking: false
   account_required: false
   notes:
-    - "Every operation runs 100% on your Mac"
+    - "Every operation runs 100% on your device"
     - "Uses native Apple frameworks — AVFoundation, CoreImage, PDFKit, Vision, Speech, Compression"
     - "No servers, no uploads, no analytics, no account"
     - "Sandboxed with hardened runtime. Works offline."
@@ -155,17 +163,17 @@ privacy:
 
 faq:
   - q: "What is MediaKit?"
-    a: "A native Mac app with 133 tools for compressing, converting, and editing video, audio, images, PDFs, archives, and ebooks — all running locally on your Mac."
+    a: "A native iPhone and Mac app with 152 tools for compressing, converting, and editing video, audio, images, PDFs, archives, and ebooks — all running locally on your device. It's a Universal Purchase: buy once, use on both iPhone and Mac."
   - q: "Does MediaKit upload my files?"
-    a: "No. Every operation runs 100% on-device using Apple's native frameworks — AVFoundation, CoreImage, PDFKit, Vision, and Speech. Files never leave your Mac. No servers, no analytics, no account required."
+    a: "No. Every operation runs 100% on-device using Apple's native frameworks — AVFoundation, CoreImage, PDFKit, Vision, and Speech. Files never leave your device. No servers, no analytics, no account required."
   - q: "Which file formats does MediaKit support?"
     a: "Video: MP4, MOV, MKV, AVI, WebM, M4V, ProRes, HEVC. Audio: MP3, M4A, WAV, FLAC, AIFF, AAC, ALAC. Image: PNG, JPG, HEIC, WebP, TIFF, GIF, AVIF, RAW. Documents: PDF, EPUB, CBZ, HTML, RTF. Archives: ZIP, TAR, GZIP, XZ, BZIP2, and RAR v4 and v5."
   - q: "Is MediaKit free?"
-    a: "Yes, to start. You get full access to all 133 tools for 3 days. After the trial, five tools stay free forever: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Pro unlocks the remaining 128 tools and batch processing — $3.99/month, $22.99/year, or $39.99 lifetime. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes, to start. You get full access to all 152 tools for 3 days. After the trial, five tools stay free forever: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Pro unlocks the remaining 147 tools and batch processing — $3.99/month, $22.99/year, or $39.99 lifetime. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does MediaKit work offline?"
     a: "Yes. Because everything runs on-device, MediaKit works without an internet connection."
-  - q: "Which Macs does MediaKit support?"
-    a: "Any Mac running macOS 14 or later. It is optimized for Apple Silicon (M1, M2, M3, M4). Some AI features require macOS 15 or 26 and degrade gracefully on earlier versions."
+  - q: "Which devices does MediaKit support?"
+    a: "iPhone running iOS 17 or later, and any Mac running macOS 14 or later — one Universal Purchase covers both. On Mac it is optimized for Apple Silicon (M1, M2, M3, M4). Some AI features require a newer OS version and degrade gracefully on earlier ones."
   - q: "Can MediaKit be automated?"
     a: "Yes. Six built-in Shortcuts actions cover video compression, image conversion, PDF merging, ZIP creation, text extraction, and OCR — so you can build MediaKit into any Shortcuts workflow."
 
@@ -177,4 +185,4 @@ release:
   first_release: "2026-04-01"
   last_updated: "2026-04-13"
 ---
-MediaKit is a native macOS app that consolidates 133 local tools for video, audio, image, PDF, archive, and ebook work into a single drag-and-drop interface. Every operation runs on-device using Apple's AVFoundation, CoreImage, PDFKit, Vision, and Speech frameworks — no uploads, no servers, no account. Drop any file and MediaKit picks the right tool instantly. Includes 21 built-in presets for YouTube, Instagram, Discord, Podcast, Email, iPhone export, and broadcast LUFS, plus six Shortcuts actions for automation and menu bar access to every tool. Free 3-day trial with full access. Five core tools — Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress — stay free forever. Pro unlocks the remaining 128 tools and batch processing. Published by Lagerland Apps.
+MediaKit is a native iPhone and Mac app that consolidates 152 local tools for video, audio, image, PDF, archive, and ebook work into a single drag-and-drop interface. It's a Universal Purchase — buy once, use on both iPhone and Mac. Every operation runs on-device using Apple's AVFoundation, CoreImage, PDFKit, Vision, and Speech frameworks — no uploads, no servers, no account. Drop any file and MediaKit picks the right tool instantly. Includes 21 built-in presets for YouTube, Instagram, Discord, Podcast, Email, iPhone export, and broadcast LUFS, plus six Shortcuts actions for automation and Mac menu bar access to every tool. Free 3-day trial with full access. Five core tools — Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress — stay free forever. Pro unlocks the remaining 147 tools and batch processing. Published by Lagerland Apps.

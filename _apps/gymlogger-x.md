@@ -4,7 +4,7 @@ slug: gymlogger-x
 name: "GymLogger X"
 quick_answer: "GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — built as a private alternative to Strong, Hevy, and Fitbod. It logs every set from the wrist, generates periodized programs (PPL, Upper/Lower, Full Body) with automatic deloads, tracks RPE / 1RM / Wilks, and flags plateaus when an exercise stalls for nine or more sessions of consistent effort. Free at the core. $1.99/month, $17.99/year, or $39.99 lifetime — the cheapest one-time tier among major lifting apps. No ads, no tracking, no account."
 category: fitness
-platforms: ["iOS"]
+platforms: ["iOS", "watchOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6755734580"

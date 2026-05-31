@@ -5,7 +5,7 @@ name: "Taskful Day"
 tagline: "Plan the day. Finish the day — calmly. Now on Mac."
 quick_answer: "Taskful Day is a calm daily planner for iPhone, iPad, and Mac that turns overwhelming to-do lists into realistic day plans with focus sessions, voice capture, mood journaling, and four visual day views. Unfinished tasks roll forward without guilt — no streaks, no red badges. iCloud sync across devices. Free with Pro from $2.99/month. No ads, no tracking, no account."
 category: productivity
-platforms: ["iOS", "iPadOS", "macOS"]
+platforms: ["iOS", "iPadOS", "macOS", "watchOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757345400"

@@ -3,7 +3,7 @@ layout: app
 slug: soon
 name: "Soon."
 tagline: "Countdowns worth waiting for."
-quick_answer: "Soon. is a countdown and planner app for iPhone that turns trips, weddings, birthdays, anniversaries, and milestones into living countdowns with full-bleed photo backgrounds, live destination weather, smart Plan Mode checklists, and widgets for Home Screen, Lock Screen, and StandBy. Free with Premium from $1.99/month or $14.99 lifetime. No ads, no tracking, no account required."
+quick_answer: "Soon. is a countdown and planner app for iPhone that turns trips, weddings, birthdays, anniversaries, and milestones into living countdowns with full-bleed photo backgrounds, live destination weather, smart Plan Mode checklists, and widgets for Home Screen, Lock Screen, and StandBy. Free with Premium from $1.99/month or $12.99 lifetime. No ads, no tracking, no account required."
 category: lifestyle
 platforms: ["iOS"]
 status: live
@@ -14,7 +14,7 @@ price:
   model: freemium
   value: "Free — Premium from $1.99/mo"
 schema_price: "0"
-schema_high_price: "14.99"
+schema_high_price: "12.99"
 schema_offer_count: "4"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
@@ -55,7 +55,7 @@ plans:
       - "7-day free trial · cancel anytime"
     highlight: true
   - name: "Lifetime"
-    price: "$14.99 once"
+    price: "$12.99 once"
     summary: "All Premium features. Roughly 8 months of monthly Premium — then yours."
     features:
       - "Everything in Premium · Annual"
@@ -227,7 +227,7 @@ comparison_table:
     - feature: "Data storage"
       values: ["On-device only", "Cloud sync available", "Cloud sync available", "Cloud-based"]
     - feature: "One-time lifetime price"
-      values: ["$14.99 lifetime", "No (subscription only)", "No (subscription only)", "No"]
+      values: ["$12.99 lifetime", "No (subscription only)", "No (subscription only)", "No"]
     - feature: "Localised languages"
       values: ["39", "~30", "~20", "1 (English)"]
     - feature: "Memories return on anniversaries"
@@ -264,7 +264,7 @@ faq:
   - q: "Is Soon. free?"
     a: "Yes. The free tier includes 5 events, one pinned widget, three themes, calendar import, memories, and reflection mode. Premium unlocks unlimited events, all widget styles, ten premium themes, weather intelligence, daily notes, recurring events, and event notifications."
   - q: "What does Premium cost?"
-    a: "$1.99 per month, $9.99 per year, or $14.99 once for lifetime access. Premium comes with a seven-day free trial and you can cancel anytime. Prices in USD; the App Store shows your local currency at checkout."
+    a: "$1.99 per month, $9.99 per year, or $12.99 once for lifetime access. Premium comes with a seven-day free trial and you can cancel anytime. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Which widgets does Soon. support?"
     a: "Home Screen, Lock Screen, and StandBy widgets in every iOS size — small, medium, large, ring, minimal, and timeline styles. Your most important countdown can be visible on every screen you already use."
   - q: "Does Soon. track me or collect data?"
@@ -350,4 +350,4 @@ Soon. is built for the [iOS widget ecosystem](#features): Home Screen, Lock Scre
 
 Where Soon. is different: [no ads, no tracking, no account](/apps/soon/privacy/). Events live on your iPhone — not on a server, not under a login. Weather requests use approximate location or a place name only. Soon. is a [privacy-first alternative to](/alternatives/) Countdowns (Apalon), Dreamdays, Days Matter, and Wedding Happy — see [the side-by-side comparison](#compare-heading-soon) for specific feature deltas.
 
-Free tier: 5 events, one pinned widget, three themes, calendar import, memories, reflection mode. Premium: unlimited events, all widget styles, ten premium themes, live weather intelligence, daily notes, recurring events, and event notifications — $1.99/month, $9.99/year, or $14.99 lifetime, with a seven-day free trial and no auto-renew surprises. Published by Lagerland Apps, an independent Apple developer in Finland.
+Free tier: 5 events, one pinned widget, three themes, calendar import, memories, reflection mode. Premium: unlimited events, all widget styles, ten premium themes, live weather intelligence, daily notes, recurring events, and event notifications — $1.99/month, $9.99/year, or $12.99 lifetime, with a seven-day free trial and no auto-renew surprises. Published by Lagerland Apps, an independent Apple developer in Finland.
