@@ -331,10 +331,9 @@ release:
   last_updated: "2026-05-13"
 
 ratings:
-  value: "5.0"
-  count: 1
-  last_synced: "2026-04-15"
-
+  value: "3.5"
+  count: 2
+  last_synced: "2026-06-04"
 # Surface the forty-opponents journal post directly on the app page — it
 # already exists and explains the design rationale behind the 40-opponent
 # claim that's central to the page's positioning.
