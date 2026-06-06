@@ -62,8 +62,8 @@ icon: "/assets/icons/pawza.png"
 og_image: "/assets/og/pawza.png"
 
 seo:
-  title: "Pet Health Record App for iPhone — AI Vet Document Scanner | Pawza"
-  description: "Pawza keeps every pet's vaccinations, medications, weight, and photos in one private app. Snap a vet document and on-device AI fills it in. Reminders, vet-visit PDF export, iCloud sync. Free for one pet — no ads, no tracking."
+  title: "Pet Health Record App for iPhone & iPad — AI Vet Scanner | Pawza"
+  description: "Private pet health record app for iPhone & iPad. Snap a vet document and on-device AI fills in vaccinations, meds & weight. Reminders, vet PDF, no account, no ads."
   keywords:
     - pet health record app iphone
     - pet vaccination tracker
@@ -99,7 +99,7 @@ seo:
 hero:
   headline: "Your pet's whole life, in one place."
   secondary: "Every vaccine, vet visit, and good-boy moment — kept safe, forever."
-  subheadline: "Pawza is a private pet health record keeper for iPhone and iPad. Snap any vet document and on-device AI reads it and fills in the vaccinations, medications, and notes for you. Track weight trends, get gentle reminders before anything is due, keep every photo searchable, and hand the vet a clean PDF of the whole history in one tap."
+  subheadline: "Pawza is a private pet health record app for iPhone and iPad. Snap any vet document and on-device AI reads it and fills in the vaccinations, medications, and notes — the photo never leaves your device, because there's no Pawza server. Track weight trends, get gentle reminders before anything is due, keep every photo searchable, and hand the vet a clean PDF of the whole history in one tap."
   pre_headline: "Free for your first pet — no card, no account. Snap one vet document and watch Pawza fill it in. Upgrade to Pro only when you want unlimited pets, scans, and the vet PDF."
   cta_label: "Download Pawza on the App Store"
   alt: "Pawza dashboard on iPhone showing a pet profile with upcoming vaccination reminders, recent weight, and quick actions to scan a document or add a record"
@@ -123,6 +123,7 @@ alternatives_to:
   - "Pawprint"
   - "Medika"
   - "PetNoter"
+  - "VetKeep"
 
 how_it_works:
   intro: "Scanning is the part of Pawza that does the work. Here's exactly what happens between photographing a vet document and your records being filled in — and where that processing happens."
@@ -154,7 +155,7 @@ features:
   - title: "AI vet-document scanning"
     description: "Snap a vaccination certificate, lab result, or prescription and Pawza reads it on-device, then fills in the vaccine, date given, due date, medication, dose, and clinic. You review and confirm — the AI does the typing, you keep control. The original document is saved alongside the record."
   - title: "Vaccinations &amp; medications, tracked properly"
-    description: "Log every vaccination with its given and due dates, and track medication courses with dose, schedule, and start/end dates. Pawza knows what's active, what's overdue, and what's coming up — across every pet."
+    description: "Log every vaccination — rabies, DHPP/DAPP (distemper, hepatitis, parvovirus), Bordetella, leptospirosis, parainfluenza and Lyme for dogs; FVRCP and FeLV for cats — with its given and due dates, and track medication courses, deworming, and flea/tick treatments with dose, schedule, and start/end dates. Pawza knows what's active, what's overdue, and what's coming up — across every pet."
   - title: "Reminders that respect your attention"
     description: "Local notifications for shots, refills, deworming, flea/tick treatments, and checkups — scheduled ahead of the due date. One gentle nudge per item, on time. No account, no push server, no daily nagging."
   - title: "Weight tracking with trend charts"
@@ -273,6 +274,8 @@ faq:
     a: "The free tier covers one pet. Pawza Pro removes the limit so you can track every dog, cat, and companion in the household. The Lifetime tier includes Family Sharing, so up to five family members can keep the records together at no extra cost."
   - q: "Does Pawza work on iPad?"
     a: "Yes — Pawza is a universal app that runs on both iPhone and iPad, with an adaptive iPad layout. One purchase covers both, and your records sync between them through your own iCloud."
+  - q: "Which vaccinations and treatments can I track in Pawza?"
+    a: "Any of them. Pawza tracks core and non-core vaccines — rabies, DHPP/DAPP (distemper, adenovirus/hepatitis, parvovirus), Bordetella, leptospirosis, parainfluenza and Lyme for dogs, and FVRCP and FeLV for cats — plus deworming, flea and tick treatments, and any custom medication course, each with its own given and due dates. You type the dates in or scan them straight from your vet's certificate, and Pawza reminds you before each booster, refill, or treatment is due. Because dates come from your own records, Pawza works with any country's vaccination schedule, not just one region's."
   - q: "Will I get reminders for vaccinations and medications?"
     a: "Yes. When a record has a due date — a booster, a medication refill, deworming, a flea or tick treatment, or an annual checkup — Pawza can schedule a local notification ahead of time. You get one gentle reminder before each item is due, not a daily stream of alerts. Reminders work without an account or push server."
   - q: "Can I share my pet's history with a vet?"
