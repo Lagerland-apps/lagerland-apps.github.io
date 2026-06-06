@@ -161,7 +161,7 @@ features:
   - title: "Weight tracking with trend charts"
     description: "Record weight over time and see it as a clean Swift Charts trend line. Spotting a slow gain or loss early is often the difference between a quick fix and a vet bill — Pawza makes the trend obvious at a glance."
   - title: "A complete, searchable health record"
-    description: "Diagnoses, lab results, prescriptions, vet visits, grooming, and free-text notes — every part of your pet's medical story in one timeline, per pet, ready when you need it."
+    description: "Diagnoses, lab results, prescriptions, vet visits, grooming, and free-text notes — every part of your pet's medical story in one timeline, per pet, ready when you need it. Keep the practical details alongside it too: microchip number, pet insurance policy, and the travel and pet-passport records you need for boarding, daycare, or crossing a border."
   - title: "Searchable photo gallery"
     description: "Keep every photo of your pet in one place, tagged and searchable — not lost in a camera roll of thousands. Pro removes the gallery limit so the whole album lives with the records."
   - title: "One-tap vet-visit PDF"
