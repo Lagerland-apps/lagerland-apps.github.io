@@ -114,6 +114,24 @@ apps:
     permissions: []
     notes: "Reading-only app. No feeds, no telemetry, no notifications."
 
+  - slug: earnlock
+    manifest_source: submission
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None — no EarnLock server. HealthKit and Family Controls are local frameworks."
+    data_leaves_device: "No."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis: []
+    permissions:
+      - "HealthKit (read steps, active energy) — measure progress toward the unlock goal"
+      - "Family Controls / Screen Time (.individual mode) — shield distracting apps until the goal is met"
+      - "Local notifications — progress and unlock alerts"
+    notes: "App Store Privacy Nutrition Label reads \"Data Not Collected.\" HealthKit is read-only and never leaves the device; Family Controls hands EarnLock opaque tokens, so it cannot see which apps you blocked. Self-restriction only, never parental control. No account, no server."
+
   - slug: gymlogger-x
     manifest_source: submission
     tracking_declared: false
@@ -187,6 +205,30 @@ apps:
       - "HealthKit (read sleep, HRV, ECG, activity) — generate insights"
       - "HealthKit (write entries) — save insights back to Apple Health"
     notes: "On-device pattern detection. Apple Health data never leaves your device."
+
+  - slug: pawza
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 1
+    third_party_sdks_list: ["ZIPFoundation (local archive handling for export; no network)"]
+    account_required: false
+    network_calls: "None — document scanning and AI extraction run on-device. Optional iCloud sync uses your own CloudKit private database."
+    data_leaves_device: "Your iCloud only, if enabled. Compatible with Advanced Data Protection."
+    analytics: "None."
+    collected_data:
+      - "Health & Fitness (vaccinations, medications — purpose: app functionality, not linked, not used for tracking)"
+      - "Photos or Videos (purpose: app functionality, not linked, not used for tracking)"
+      - "Other User Content (notes, scanned documents — purpose: app functionality, not linked, not used for tracking)"
+      - "Purchase History (purpose: app functionality, not linked, not used for tracking)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1 — read/write app-specific user defaults)"
+      - "File Timestamp (C617.1 — access file timestamps within the app container)"
+    permissions:
+      - "Camera — scan vet documents"
+      - "Photo Library — attach existing photos and documents"
+      - "Local notifications — vaccination, medication, and checkup reminders"
+    notes: "Records, photos, scanned documents, and notes stay on-device by default. Document scanning (Vision OCR) and AI extraction (Apple Intelligence on iOS 26+) run on-device — documents are never uploaded. Optional iCloud sync uses your own private CloudKit database."
 
   - slug: rightsplit
     manifest_source: submission

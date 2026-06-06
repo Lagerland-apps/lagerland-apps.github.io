@@ -380,7 +380,7 @@ seo:
     </a>
   </div>
   <div class="section-center" style="margin-top:var(--s-5);">
-    <a class="btn btn-secondary" href="/alternatives/">See all 15 comparisons →</a>
+    <a class="btn btn-secondary" href="/alternatives/">See all {{ site.pages | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 }} comparisons →</a>
   </div>
 </section>
 
@@ -487,7 +487,7 @@ seo:
       </tbody>
     </table>
     <p class="small transparency-footnote">
-      A representative sample. No IDFA is ever requested across the catalogue, and no advertising SDKs are linked into any app. <a href="/transparency/"><strong>See the per-app Privacy Manifest data for all 15 apps →</strong></a>
+      A representative sample. No IDFA is ever requested across the catalogue, and no advertising SDKs are linked into any app. <a href="/transparency/"><strong>See the per-app Privacy Manifest data for all {{ site.apps | where: "status", "live" | size }} apps →</strong></a>
     </p>
   </div>
 </section>

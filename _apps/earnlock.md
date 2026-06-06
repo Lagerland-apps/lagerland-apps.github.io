@@ -137,7 +137,7 @@ founder:
   role: "Independent Apple studio · Finland"
   location: "Finland"
   photo: "/assets/icons/lagerland-mark.png"
-  bio: "Every screen-time app we tried had the same flaw: the unlock cost nothing real. Tap \"give me another minute,\" tap \"emergency,\" tap a four-digit code you set thirty seconds ago. The friction is theatre. EarnLock makes the cost concrete — walk a kilometre, finish a 30-minute Exercise Time block, burn 400 active calories — and the apps unlock on their own. The shield over each blocked app shows you exactly how far you are from your daily goal. The Apple Watch carries the count when the iPhone isn't with you. There is no account, no server, no analytics SDK, no advertising SDK. Lagerland is a small Apple studio in Finland — no team, no investors. The studio's other 15 apps run on the same data discipline."
+  bio: "Every screen-time app we tried had the same flaw: the unlock cost nothing real. Tap \"give me another minute,\" tap \"emergency,\" tap a four-digit code you set thirty seconds ago. The friction is theatre. EarnLock makes the cost concrete — walk a kilometre, finish a 30-minute Exercise Time block, burn 400 active calories — and the apps unlock on their own. The shield over each blocked app shows you exactly how far you are from your daily goal. The Apple Watch carries the count when the iPhone isn't with you. There is no account, no server, no analytics SDK, no advertising SDK. Lagerland is a small Apple studio in Finland — no team, no investors. The studio's other 16 apps run on the same data discipline."
   support_email: "lagerland.apps@proton.me"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
