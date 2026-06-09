@@ -9,7 +9,7 @@ platforms: ["iOS", "iPadOS"]
 status: live
 show_body: true
 
-app_store_url: "https://apps.apple.com/app/id6771099230"
+app_store_url: "https://apps.apple.com/app/id6773507068"
 
 price:
   model: freemium
