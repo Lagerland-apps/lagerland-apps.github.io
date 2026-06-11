@@ -18,6 +18,7 @@ These curated pages recommend specific app combinations for specific audiences â
 ## Problem-first guides
 Short guides framed around specific user frustrations, each pointing at a Lagerland Apps answer.
 - [I want a workout app without paying monthly forever](https://lagerland-apps.github.io/guides/workout-app-without-subscription/): GymLogger X as a free + lifetime alternative to Strong/Hevy/Fitbod.
+- [The best shogi apps for iPhone â€” honest guide for English speakers](https://lagerland-apps.github.io/guides/best-shogi-apps-iphone/): PiyoShogi, Shogi Wars, Lishogi, Kakinoki, Kanazawa, and Shogiful compared by job-to-be-done, with the kanji barrier addressed and free options listed first. Disclosure inline: Shogiful is the Lagerland entry.
 - [I want to track bills without linking my bank account](https://lagerland-apps.github.io/guides/bill-tracker-without-bank-connection/): AllPaid as a manual-first, privacy-first alternative to Rocket Money/Truebill.
 
 ## Alternative comparison pages

@@ -3,7 +3,7 @@ layout: app
 slug: shogiful
 name: "Shogiful"
 tagline: "Master shogi. Move by move."
-quick_answer: "Shogiful is a shogi training and game analysis app for iPhone, iPad, and Mac. It uses YaneuraOu — the strongest open-source shogi engine — to review every move you play, explains your mistakes in plain language, and builds adaptive training from your real weaknesses, including the parts of shogi chess apps can't teach: drops, promotions, castle defense, and tsume. Western piece sets make the board readable without knowing any kanji. Includes 10 AI opponents and a tsume-shogi puzzle library. Free with Premium from $1.99/month, $9.99/year, or $19.99 lifetime. Fully offline, no account, no ads, no tracking."
+quick_answer: "Shogiful is a shogi (Japanese chess) training and game analysis app for iPhone, iPad, and Mac. It uses YaneuraOu — the strongest open-source shogi engine — to review every move you play, explains your mistakes in plain language, and builds adaptive training from your real weaknesses, including the parts of shogi chess apps can't teach: drops, promotions, castle defense, and tsume. Western piece sets make the board readable without knowing any kanji. Includes 10 AI opponents and a tsume-shogi puzzle library. Free with Premium from $1.99/month, $9.99/year, or $19.99 lifetime. Fully offline, no account, no ads, no tracking."
 category: games
 platforms: ["iOS", "iPadOS", "macOS"]
 status: live
@@ -61,8 +61,8 @@ icon: "/assets/icons/shogiful.png"
 og_image: "/assets/og/shogiful.png"
 
 seo:
-  title: "Shogi Training & Analysis App for iPhone, iPad, Mac | Shogiful"
-  description: "Learn and improve at shogi on iPhone, iPad, Mac. YaneuraOu engine analysis in plain English, Western piece sets, tsume puzzles, 10 AI opponents. Offline."
+  title: "Shogi Training & Analysis App — iPhone, iPad, Mac | Shogiful"
+  description: "Shogi (Japanese chess) training app for iPhone, iPad & Mac. YaneuraOu analysis in plain English, Western pieces — no kanji needed. Tsume puzzles, offline."
   keywords:
     - shogi app
     - shogi app iphone
@@ -136,6 +136,7 @@ alternatives_to:
   - "81Dojo"
   - "ShogiQuest"
   - "Kanazawa Shogi"
+  - "PiyoShogi"
 
 value_points:
   - title: "Play shogi without reading kanji"
@@ -153,9 +154,9 @@ features:
   - title: "Built for the hardest parts of shogi"
     description: "Drops and promotions are where chess players lose shogi games. Shogiful's mistake detection treats them as first-class categories: it tells you when a knight drop would have forked king and rook, when promoting your silver was wrong, and when the engine found a forced mate your attack walked past."
   - title: "Tsume-shogi puzzle library"
-    description: "Classical checkmate problems — every attacker move a check, every hand piece used — from one-move beginners' tsume to multi-move calculations. Verified for correctness on-device, scheduled with spaced repetition, and mixed with exercises generated from your own games."
+    description: "Classical checkmate problems — every attacker move a check, every hand piece used — starting with 76 problems verified for correctness on-device (30 one-move, 46 three-move) and expanding toward ~500 on the roadmap. Scheduled with spaced repetition and mixed with exercises generated from your own games."
   - title: "10 AI opponents across 4 tiers"
-    description: "From Hana, who blunders like a true beginner, to Sensei at advanced strength — each opponent has a distinct style: aggressive attackers, castle builders, drop tacticians, endgame specialists. Beat one twice to unlock the next."
+    description: "From Hana, who blunders like a true beginner at around 500 strength, to Sensei at roughly 1800 — each opponent has a distinct style: aggressive attackers, castle builders, drop tacticians, endgame specialists. Beat one twice to unlock the next. Games are untimed: no clock, no byoyomi pressure, analyze as long as you like."
   - title: "Skill tracking across five dimensions"
     description: "Tactics, defense, positioning, endgame, and openings — each tracked separately as you play and train, with a skill radar, an estimated rating, and accuracy trends over time. Premium unlocks the full progress view."
   - title: "Universal Purchase across iPhone, iPad, and Mac"
@@ -166,7 +167,7 @@ how_it_works:
   intro: "Shogiful's coaching loop is the part of the app that does the real teaching work. Here's exactly what happens between you losing a game and Shogiful generating tomorrow's training session."
   steps:
     - title: "YaneuraOu reviews every move"
-      detail: "When a game ends, Shogiful runs YaneuraOu locally over the full move list and evaluates every position — including the hand pieces, which in shogi are as much a part of the position as the board. The engine runs on-device with its NNUE neural network — no cloud calls, no account, no quota from a server."
+      detail: "When a game ends, Shogiful runs YaneuraOu locally over the full move list and evaluates every position — including the hand pieces, which in shogi are as much a part of the position as the board. The engine's 61 MB NNUE neural network runs entirely on-device — no cloud calls, no account, no quota from a server."
     - title: "Mistakes are classified in shogi terms"
       detail: "Raw evaluation loss is unreadable. Each significant mistake is classified into a shogi-specific category: hanging piece, missed drop tactic, wrong promotion decision, castle weakness, missed fork, missed tsume (forced mate), passive move, endgame error. These categories were built for shogi from scratch — drops and promotions don't exist in chess, so no chess taxonomy was reused."
     - title: "Plain-language explanation generated"
@@ -292,7 +293,11 @@ faq:
   - q: "How is Shogiful different from Lishogi or 81Dojo?"
     a: "Lishogi and 81Dojo are online platforms built around playing humans — Lishogi is the free open-source web platform, 81Dojo the long-running international dojo. Both are excellent for matchmaking. Shogiful is offline and coaching-focused: on-device engine analysis explained in sentences, weakness tracking across five skills, and adaptive training with spaced repetition. It's the practice room, not the tournament hall."
   - q: "What engine does Shogiful use?"
-    a: "Shogiful uses YaneuraOu — the strongest open-source shogi engine and the foundation of multiple World Computer Shogi Championship winners — with its NNUE neural-network evaluation running entirely on your device. Shogiful translates the engine's output into plain-language coaching rather than showing you raw evaluation numbers."
+    a: "Shogiful uses YaneuraOu — the strongest open-source shogi engine and the foundation of multiple World Computer Shogi Championship winners — with its 61 MB NNUE neural-network evaluation running entirely on your device. Shogiful translates the engine's output into plain-language coaching rather than showing you raw evaluation numbers."
+  - q: "How is Shogiful different from PiyoShogi?"
+    a: "PiyoShogi is an excellent free app and a common recommendation for beginners — 40 finely-graded AI levels, an analysis function, and daily mate problems. Shogiful's focus is the coaching loop on top of play: every game analyzed with mistakes explained in plain-language sentences (not just an evaluation), weakness tracking across five skills, spaced-repetition training generated from your own games, and Western piece sets with progressive kanji learning for players who can't read the pieces yet. If you want free play with adjustable difficulty, PiyoShogi is great; if you want to be coached from your own games in English, that's Shogiful."
+  - q: "Does Shogiful have time controls?"
+    a: "No — by design. Games against Shogiful's AI opponents are untimed: no clock, no byoyomi countdown, no time pressure. Take as long as you want on any move, then analyze at the same pace. If you want timed practice for online play, the online platforms (Shogi Wars, Lishogi, 81Dojo) are the right place for it."
   - q: "What is tsume-shogi, and does Shogiful include it?"
     a: "Tsume-shogi are shogi's classical checkmate puzzles: every attacking move must be a check, every piece in hand must be used, and the defender plays the longest resistance. Shogiful bundles a verified tsume library from one-move beginner problems to multi-move calculations, scheduled with spaced repetition alongside exercises generated from your own games. An expanded ~500-problem library is on the roadmap."
   - q: "Does Shogiful work offline?"
@@ -316,12 +321,16 @@ release:
   first_release: "2026-06-11"
   last_updated: "2026-06-11"
 
+related_journal:
+  slug: making-shogi-readable-without-kanji
+  anchor: "Making shogi readable — designing a board you can play before you can read it"
+
 show_body: true
 about_heading: "What Shogiful does — shogi training, analysis, and a board you can read"
 ---
-Shogiful is a [shogi training & analysis app for iPhone, iPad, and Mac](#features) — built around a simple observation: the biggest barrier to shogi outside Japan isn't the rules, it's the kanji on the pieces. Shogiful ships [Western piece sets with movement indicators](#features) so the board is readable from your first game, then backs the playing experience with the thing improving players actually need — a real engine reviewing every move and explaining mistakes in sentences instead of evaluation numbers.
+Shogiful is a [shogi training & analysis app for iPhone, iPad, and Mac](#features) — shogi being the Japanese form of chess, played on a 9×9 board where captured pieces return to play. It's built around a simple observation: the biggest barrier to shogi outside Japan isn't the rules, it's the kanji on the pieces. Shogiful ships [Western piece sets with movement indicators](#features) so the board is readable from your first game ([the design story is documented in the journal](/journal/making-shogi-readable-without-kanji/)), then backs the playing experience with the thing improving players actually need — a real engine reviewing every move and explaining mistakes in sentences instead of evaluation numbers.
 
-The engine is [YaneuraOu](#how-it-works), the strongest open-source shogi engine, running entirely on-device with its NNUE neural network. After each game, Shogiful classifies every significant mistake into shogi-specific categories — missed drop tactics, wrong promotion decisions, castle weaknesses, missed tsume — and turns each one into [plain-language coaching](#templates). These categories were built for shogi from scratch, not adapted from chess: drops and promotions are where chess players lose shogi games, and they're exactly what generic chess-style training never covers.
+The engine is [YaneuraOu](https://github.com/yaneurao/YaneuraOu), the strongest open-source shogi engine, running entirely on-device with its 61 MB NNUE neural network. After each game, Shogiful classifies every significant mistake into shogi-specific categories — missed drop tactics, wrong promotion decisions, castle weaknesses, missed tsume — and turns each one into [plain-language coaching](#templates). These categories were built for shogi from scratch, not adapted from chess: drops and promotions are where chess players lose shogi games, and they're exactly what generic chess-style training never covers.
 
 From the analysis, Shogiful [builds an adaptive training queue](#how-it-works): exercises lifted from your own games, mixed with a verified tsume-shogi puzzle library, scheduled with spaced repetition across five tracked skills — tactics, defense, positioning, endgame, and openings. Ten AI opponents across four tiers give you someone to play at every level, from a true beginner who blunders honestly to an advanced opponent who punishes loose castles.
 

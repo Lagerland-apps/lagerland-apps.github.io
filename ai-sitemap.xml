@@ -96,6 +96,12 @@ sitemap: false
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>{{ site.url }}/guides/best-shogi-apps-iphone/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>{{ site.url }}/alternatives/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
