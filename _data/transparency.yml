@@ -262,6 +262,22 @@ apps:
       - "User-Selected File — open and save screenshots"
     notes: "Rendering uses Apple's Metal locally. Translation and upload are explicit user actions. Formerly ScreenFlow Studio."
 
+  - slug: shogiful
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None to third parties. The YaneuraOu engine runs locally; its neural-network file is downloaded once from Apple's App Store servers (On-Demand Resources)."
+    data_leaves_device: "No. Optional iCloud sync uses your own iCloud."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions: []
+    notes: "Game analysis is performed by the locally bundled YaneuraOu engine, not a cloud service."
+
   - slug: soon
     manifest_source: submission
     tracking_declared: false
