@@ -14,7 +14,7 @@
 # Edit the manifest, push, and update this file. Treat it as the canonical proof
 # layer the homepage transparency table and /transparency/ page both render from.
 
-last_audit: "2026-05-13"
+last_audit: "2026-06-11"
 
 apps:
   - slug: aftershift

@@ -9,7 +9,7 @@ faq:
   - q: "Is Taskful Day available on Mac?"
     a: "Yes. Taskful Day is now native on macOS alongside iPhone and iPad, built in SwiftUI with AppKit underpinnings rather than Catalyst. The window resizes the way a Mac window should, the menu bar is populated, keyboard shortcuts are real Mac shortcuts, and a menu bar item supports quick capture without opening the main window."
   - q: "Do I have to pay separately for Taskful Day on Mac?"
-    a: "No. Taskful Day is one Universal Purchase across iPhone, iPad, and Mac. If you bought Pro on your iPhone, signing into the same Apple ID on the Mac activates Pro automatically. Pro is €2.99 a month or €49.99 lifetime, applied to every device you sign in with."
+    a: "No. Taskful Day is one Universal Purchase across iPhone, iPad, and Mac. If you bought Pro on your iPhone, signing into the same Apple ID on the Mac activates Pro automatically. Pro is $2.99 a month or $39.99 lifetime, applied to every device you sign in with."
   - q: "How does Taskful Day sync between iPhone, iPad, and Mac?"
     a: "Taskful Day syncs through your personal iCloud account using CloudKit. The studio operates no servers and stores no tasks. Deleting the app on every device and signing out of iCloud removes the data entirely. The trade-off is that there is no shared-cloud surface for team task lists."
   - q: "Is Taskful Day a replacement for Things 3, TickTick, or Sorted3?"
@@ -76,7 +76,7 @@ There are good calm-design planners in this space and Taskful Day is not the onl
 
 ## Get it
 
-The iPhone, iPad, and Mac apps are all available now. The core is free on every platform. Pro — focus session timer, advanced analytics, widgets, iCloud sync, unlimited follow-ups — is **€2.99/month** or **€49.99 lifetime**, applied across every device you sign in with.
+The iPhone, iPad, and Mac apps are all available now. The core is free on every platform. Pro — focus session timer, advanced analytics, widgets, iCloud sync, unlimited follow-ups — is **$2.99/month** or **$39.99 lifetime**, applied across every device you sign in with.
 
 [Get Taskful Day](/apps/taskful-day/).
 

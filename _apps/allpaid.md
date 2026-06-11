@@ -122,7 +122,7 @@ founder:
     - "Local SwiftData storage; the Privacy Manifest declares zero tracking domains and no required-reason APIs beyond standard local storage and notifications"
     - "31 recognised services across 10 categories — catalog is hard-coded in the app binary, matched in English plus Finnish and German keywords"
     - "Funded by honest paid software — no ads, no investor pressure, no aggregator integrations"
-    - "15 live apps in the catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
+    - "18 live apps in the catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"

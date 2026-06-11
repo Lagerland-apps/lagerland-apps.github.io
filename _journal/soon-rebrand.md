@@ -11,7 +11,7 @@ faq:
   - q: "What is new in Soon. compared to TheWait?"
     a: "Soon. adds Plan Mode with smart checklists tailored to event types like trips and weddings, every iOS widget size including StandBy, natural-language search such as 'birthdays this month', iOS Calendar sync, anniversary memory cycling, and 39 languages including Japanese, Arabic, Hebrew, and Korean."
   - q: "How much does Soon. cost?"
-    a: "Soon. is free with up to 5 events forever. Premium is €39.99 lifetime, €2.99 a month, or €19.99 a year with a 7-day free trial. Premium unlocks unlimited events, weather intelligence, daily notes, recurring events, and event notifications. There is no auto-charging without consent."
+    a: "Soon. is free with up to 5 events forever. Premium is $12.99 lifetime, $1.99 a month, or $9.99 a year with a 7-day free trial. Premium unlocks unlimited events, weather intelligence, daily notes, recurring events, and event notifications. There is no auto-charging without consent."
   - q: "Does Soon. require an account or upload my events to a server?"
     a: "No. Soon. has no ads, no tracking, and no required account. Events stay on the device. Weather requests use approximate location or a place name only — never precise location. The app is built and maintained by the same one-person studio that ships the rest of the Lagerland Apps catalogue."
 mentioned_apps:
@@ -56,7 +56,7 @@ The philosophy didn't change. Soon. is still:
 
 - **Private by default.** No ads, no tracking, no account. Your events stay on your device. Weather requests use approximate location or a place name only — never precise location.
 
-- **A one-time purchase option.** Premium is €39.99 lifetime (or €2.99/month, or €19.99/year if you prefer) with a 7-day free trial. No auto-charging without consent.
+- **A one-time purchase option.** Premium is $12.99 lifetime (or $1.99/month, or $9.99/year if you prefer) with a 7-day free trial. No auto-charging without consent.
 
 - **Built by one person.** Same developer, same catalogue, same principles. Soon. is part of the broader [Lagerland Apps](/lagerland-apps/) family of privacy-first tools.
 
