@@ -331,10 +331,9 @@ release:
   last_updated: "2026-05-13"
 
 ratings:
-  value: "3.5"
-  count: 2
-  last_synced: "2026-06-12"# already exists and explains the design rationale behind the 40-opponent
-# claim that's central to the page's positioning.
+  value: "3.7"
+  count: 3
+  last_synced: "2026-06-13"# claim that's central to the page's positioning.
 related_journal:
   slug: forty-chess-opponents
   anchor: "Forty chess opponents — and why no two of them are the same engine"
