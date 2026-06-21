@@ -225,7 +225,7 @@ founder:
     - "Independent Apple developer, building privacy-first iOS and macOS apps from Finland since 2025"
     - "Observa runs 100% on-device — Apple's App Privacy nutrition label lists zero data collected"
     - "No analytics SDKs, no third-party trackers, no growth team — a one-person studio with a long-term commitment to the app"
-    - "18 live apps in the catalogue, all under the same privacy philosophy: no tracking, no ads, no required accounts"
+    - "19 live apps in the catalogue, all under the same privacy philosophy: no tracking, no ads, no required accounts"
   external_link:
     label: "More apps from Lagerland Apps →"
     href: "/apps/"

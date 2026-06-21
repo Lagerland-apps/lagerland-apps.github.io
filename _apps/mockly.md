@@ -185,7 +185,7 @@ founder:
     - "Native macOS app — Metal-rendered, sandboxed, notarised, no Electron wrapper"
     - "App Privacy nutrition label lists zero data collected"
     - "No analytics SDKs, no third-party trackers, no growth team — a one-person studio with a long-term commitment to the app"
-    - "18 live apps in the catalogue, all under the same privacy philosophy: no tracking, no ads, no required accounts"
+    - "19 live apps in the catalogue, all under the same privacy philosophy: no tracking, no ads, no required accounts"
   external_link:
     label: "More apps from Lagerland Apps →"
     href: "/apps/"

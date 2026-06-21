@@ -123,7 +123,7 @@ founder:
     - "YaneuraOu NNUE runs on-device — no cloud analysis, no quota, no account"
     - "Mistake detection built for shogi, not adapted from chess: drop mistakes, promotion decisions, castle weaknesses, and missed tsume are first-class categories"
     - "English and Japanese localization from day one, with JSA-standard shogi terminology"
-    - "18 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
+    - "19 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"

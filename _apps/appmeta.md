@@ -106,7 +106,7 @@ founder:
   heading: "We ship 17 apps. AppMeta is the tool we built for ourselves."
   story: "AppMeta exists because every other workflow for managing App Store metadata broke for us at scale. The web UI is fine when you ship one app — it's torture when you ship 17. Fastlane deliver is great in CI but unworkable for interactive editing across 50 locales. NativeConnect was the closest native competitor and quietly let its marketing domain expire mid-2025. So we built the tool we needed: a native Mac app that opens fast, edits all 50 ASC locales side-by-side, shows a word-level diff before anything pushes, and runs AI keyword analysis through whichever provider we trust that week — including Apple Intelligence on-device for the times we don't want a single character leaving the Mac. Every Lagerland release on the App Store ships through AppMeta. It's the tool we use every day."
   signals:
-    - "Same tool Lagerland uses to ship every release of all 17 apps in the catalogue"
+    - "Same tool Lagerland uses to ship every release of all 19 apps in the catalogue"
     - "Built on the App Store Connect API v1 with JWT auth and .p8 keys stored in macOS Keychain — no app-specific passwords, no browser session"
     - "SwiftUI + SwiftData, macOS 14+ Sonoma minimum, no analytics SDKs, no backend servers"
     - "Five AI providers supported out of the box — Anthropic, OpenAI, Google, OpenAI-compatible (Ollama / LM Studio), Apple Intelligence on-device"
