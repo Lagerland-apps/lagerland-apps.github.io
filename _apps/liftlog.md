@@ -61,7 +61,7 @@ icon: "/assets/icons/liftlog.png"
 og_image: "/assets/og/liftlog.png"
 
 seo:
-  title: "Strength Training Log for iPhone — Pay What You Can | LiftLog"
+  title: "Strength Training Log for iPhone — Pay Once | LiftLog"
   description: "Design-led strength training log for iPhone. Periodized programs, 1RM analytics, haptic sets, PRs. Free 7-day trial, no card — then pay what you can, one-time."
   keywords:
     - premium workout tracker iphone

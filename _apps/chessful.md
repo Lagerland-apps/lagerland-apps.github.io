@@ -66,7 +66,7 @@ icon: "/assets/icons/chessful.png"
 og_image: "/assets/og/chessful.png"
 
 seo:
-  title: "Chess Training & Analysis App for iPhone, iPad, Mac | Chessful"
+  title: "Chess Training & Analysis App for iPhone & Mac | Chessful"
   description: "Chess training app for iPhone, iPad, Mac. Stockfish analysis explained in plain language, adaptive training, 40 AI opponents. Free, fully offline."
   keywords:
     - chess training app

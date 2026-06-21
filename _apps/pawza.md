@@ -62,8 +62,8 @@ icon: "/assets/icons/pawza.png"
 og_image: "/assets/og/pawza.png"
 
 seo:
-  title: "Pet Health Record App for iPhone & iPad — AI Vet Scanner | Pawza"
-  description: "Private pet health record app for iPhone & iPad. Snap a vet document and on-device AI fills in vaccinations, meds & weight. Reminders, vet PDF, no account, no ads."
+  title: "Pet Health Record App for iPhone & iPad | Pawza"
+  description: "Private pet health record app for iPhone & iPad. Snap a vet document and on-device AI fills in vaccinations, meds, and weight. No account, no ads."
   keywords:
     - pet health record app iphone
     - pet vaccination tracker

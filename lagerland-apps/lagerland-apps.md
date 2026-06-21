@@ -4,7 +4,7 @@ permalink: /lagerland-apps/
 title: "About Lagerland Apps"
 quick_answer: "Lagerland Apps is a one-person Apple studio in Finland, founded by independent developer Antti Aittamaa. It builds 15 privacy-first iOS, iPadOS, watchOS and macOS apps that ship with zero third-party tracking, no advertising SDKs and no required accounts — funded by honest paid software."
 seo:
-  title: "About Lagerland Apps — Independent Apple Developer in Finland"
+  title: "About Lagerland Apps — Indie Apple Developer in Finland"
   description: "One-person Apple studio in Finland building 15 privacy-first iOS & Mac apps. No trackers, no ads, no accounts — funded by honest paid software, not advertising."
   keywords:
     - Lagerland Apps

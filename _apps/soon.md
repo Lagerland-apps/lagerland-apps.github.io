@@ -67,7 +67,7 @@ icon: "/assets/icons/soon.png"
 og_image: "/assets/og/soon.png"
 
 seo:
-  title: "Countdown App for iPhone — Trips, Weddings, Milestones | Soon."
+  title: "Countdown App for iPhone — Trips, Weddings & More | Soon."
   description: "Countdown & planner app for iPhone — trips, weddings, birthdays. Photo widgets, destination weather, smart checklists. Free, Premium $1.99/mo. No tracking."
   keywords:
     - countdown app iphone

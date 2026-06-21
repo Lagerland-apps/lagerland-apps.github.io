@@ -58,7 +58,7 @@ icon: "/assets/icons/mediakit.png"
 og_image: "/assets/og/mediakit.png"
 
 seo:
-  title: "MediaKit — 152 Local Media Tools for iPhone & Mac | Private by Design"
+  title: "MediaKit — 152 Local Media Tools for iPhone & Mac"
   description: "Compress, convert, and edit video, audio, images, PDFs, and archives on your iPhone or Mac. 152 native tools. 100% on-device. No uploads. Free to start."
   keywords:
     - mac media tools
