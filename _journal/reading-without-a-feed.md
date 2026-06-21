@@ -2,6 +2,16 @@
 layout: journal
 slug: reading-without-a-feed
 title: "Reading without a feed: a quiet year with Wikipedia"
+seo:
+  title: "Reading Without a Feed: A Calm Wikipedia App"
+  description: "WanderWiki turns Wikipedia into calm, feed-free reading for the small windows you used to fill by scrolling — a quiet alternative to the infinite feed."
+  keywords:
+    - "wikipedia reading app"
+    - "calm reading app"
+    - "read without a feed"
+    - "encyclopedia app iphone"
+    - "anti-doomscroll app"
+    - "wanderwiki"
 date: 2026-02-07
 lede: "I deleted my last social-feed app in late 2024. The hardest part wasn't withdrawal. It was rebuilding a habit of reading something, anything, in the small windows that used to be filled by scrolling. WanderWiki was, more than anything else, the tool I built to give that habit somewhere to live."
 quick_answer: "WanderWiki is a calm Wikipedia client built as a feed replacement. It produces For-You-style relevance from explicit interest tags the user picks, never from behavioural tracking of taps or read time. A Today-in-History view gives the day a small editorial anchor. Articles are prefetched for full offline reading on flights. No account, no infinite scroll."

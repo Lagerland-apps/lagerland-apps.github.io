@@ -2,6 +2,16 @@
 layout: journal
 slug: shipping-app-store-screenshots-in-39-languages
 title: "How to ship a localised App Store screenshot set in 39 languages without losing your weekend"
+seo:
+  title: "Localized App Store Screenshots in 39 Languages, Fast"
+  description: "App Store Connect accepts 39 locales; most apps ship one. Why localizing screenshots eats 10–30 hours per release — and how to ship all 39 painlessly."
+  keywords:
+    - "localized app store screenshots"
+    - "app store screenshot localization"
+    - "app store screenshots multiple languages"
+    - "fastlane frameit alternative"
+    - "localize screenshots"
+    - "app store locales"
 date: 2026-05-13
 lede: "App Store Connect accepts screenshots in 39 locales. Most indie apps ship in one. The gap isn't ambition — it's that the manual workflow takes 10 to 30 hours per release, and any change to a single screenshot means redoing the localisation pass. This post walks through a reproducible workflow that takes 90 minutes for the first release and 15 minutes for each subsequent one."
 quick_answer: "Localising App Store screenshots into 39 languages manually takes 10–30 hours per release: design once, translate text, lay out per locale, render per device size, upload per slot in App Store Connect. The reproducible workflow that fits in an afternoon: capture base-locale screenshots once, build the layout with text as a separate overlay layer (not baked into the image), run automated AI translation across all 39 locales preserving fonts and positioning, render each device × locale combination from a single source, and bulk-upload via the App Store Connect API. The trick is keeping text as an editable layer, not part of the image — which is the single architectural decision most indie screenshot pipelines get wrong."

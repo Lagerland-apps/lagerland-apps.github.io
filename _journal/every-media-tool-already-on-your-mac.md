@@ -2,6 +2,16 @@
 layout: journal
 slug: every-media-tool-already-on-your-mac
 title: "The Mac already shipped with every media tool — someone just had to wire them together"
+seo:
+  title: "133 Local Media Tools for Mac — No Uploads, No Cloud"
+  description: "MediaKit puts 133 video, audio, image, PDF, and archive tools behind one drag-and-drop Mac app — every operation local, nothing ever leaves your machine."
+  keywords:
+    - "mac media tools"
+    - "local file converter mac"
+    - "offline media converter"
+    - "mac video audio image pdf tools"
+    - "convert files without uploading"
+    - "mediakit"
 date: 2026-05-09
 lede: "MediaKit is 133 local tools for video, audio, image, PDF, and archive work, behind a single drag-and-drop Mac interface. None of the operations ever leave your machine. This post is the case for that — and why \"upload your file to a random website to convert it\" remains one of the worst defaults on the open web in 2026."
 quick_answer: "MediaKit is a native macOS app that consolidates 133 on-device media conversion tools — video, audio, image, PDF, archive, ebook — behind a single drag-and-drop surface. Every operation runs locally on Apple frameworks like AVFoundation, CoreImage, PDFKit, Vision, and AppleArchive. Files never leave the machine, unlike CloudConvert, Zamzar, or Smallpdf. Five tools stay free forever."

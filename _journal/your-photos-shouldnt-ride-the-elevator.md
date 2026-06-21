@@ -2,6 +2,16 @@
 layout: journal
 slug: your-photos-shouldnt-ride-the-elevator
 title: "Your photos shouldn't ride the elevator to a stranger's data centre"
+seo:
+  title: "Convert Photos Without Uploading Them to a Stranger"
+  description: "Online image converters upload your photo to a server you don't control. MediaKit converts images locally on your Mac — HEIC, JPG, PNG — nothing leaves."
+  keywords:
+    - "offline image converter"
+    - "convert heic to jpg offline"
+    - "image converter privacy"
+    - "convert photos without uploading"
+    - "local image converter mac"
+    - "mediakit"
 date: 2026-03-28
 lede: "Almost every online image converter you've used in the last decade uploaded your file to a server you don't control, processed it there, and gave you back a download. The convenience is real. The privacy implication is not small. MediaKit is the studio's argument that 133 of those tools should run on your Mac instead."
 quick_answer: "Online image, video, audio, and PDF converters upload private files to operator infrastructure that holds them well after the conversion is done. MediaKit is a Mac app that runs 133 equivalent tools locally — including HEIC bulk, video compression, PDF redaction, and RAR v5 extraction on Apple Silicon — with full Shortcuts support. Five tools are free forever."

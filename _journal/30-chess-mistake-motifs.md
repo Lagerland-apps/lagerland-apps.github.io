@@ -2,6 +2,16 @@
 layout: journal
 slug: 30-chess-mistake-motifs
 title: "The 30 chess mistake motifs Chessful detects (and why each one matters)"
+seo:
+  title: "Chess Mistakes Explained: 30 Types That Lose Games"
+  description: "The 30 chess mistakes that lose club-level games — hung pieces, missed forks, wrong pawn breaks, endgame slips — each with its cause and the fix."
+  keywords:
+    - "chess mistakes"
+    - "types of chess mistakes"
+    - "chess mistake categories"
+    - "common chess mistakes"
+    - "chess blunders"
+    - "chess improvement"
 date: 2026-05-13
 lede: "Most chess apps reduce 'why did I lose' to a centipawn graph. Chessful turns it into one of about thirty specific mistake categories — each with a name, a structural cause, and an explicit drill that fixes it. This post is the full catalogue. It doubles as a reference page for Chessful users and a short tour of the mistakes that actually decide club-level games."
 quick_answer: "Chessful classifies significant chess mistakes into roughly 30 categories grouped under five skill dimensions. Tactical motifs (hung piece, missed fork, missed pin, missed skewer, missed discovered attack, missed double attack, missed deflection, missed overload, back-rank threat, smothered mate possibility). Defensive motifs (defender-removal blindness, king-safety underestimate, prophylactic skip, weakening pawn push). Positional motifs (wrong piece traded, wrong side castled, weak square allowed, wrong pawn break, time-on-wrong-move). Opening motifs (repertoire drift, book-move missed, transposition into bad line). Endgame motifs (opposition direction error, king-too-late, wrong rook activation, drawn-but-played-on, wrong-color bishop endgame, technique error in K+P). Each motif maps to one of five skill buckets and triggers spaced-repetition drilling on the underlying pattern."

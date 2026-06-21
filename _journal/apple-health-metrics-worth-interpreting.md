@@ -2,6 +2,16 @@
 layout: journal
 slug: apple-health-metrics-worth-interpreting
 title: "The 6 Apple Health metrics worth interpreting (and the 12 worth ignoring)"
+seo:
+  title: "Apple Health Metrics: The 6 Worth Reading, 12 to Ignore"
+  description: "Apple Health tracks 80+ metrics. The 6 that actually move with your habits and reward reading — and the 12 vanity numbers and noisy sensors to ignore."
+  keywords:
+    - "apple health metrics"
+    - "apple health metrics explained"
+    - "which apple health metrics matter"
+    - "apple watch health metrics"
+    - "apple health data"
+    - "health metrics worth tracking"
 date: 2026-05-13
 lede: "Apple Health collects more than 80 distinct health metrics. Most of them are noise, vanity numbers, or sensor data you have no useful frame for. Here's the practical short list: the six that actually move with your habits and reward interpretation, the twelve that look meaningful but mostly aren't, and how to tell the difference."
 quick_answer: "Of the 80+ metrics Apple Health collects, only about six reward sustained interpretation: lnRMSSD (HRV), resting heart rate, sleep efficiency, deep-sleep share, heart-rate dip during sleep, and active energy weekly. The rest — step count, standing hours, daily move ring, cardio recovery — are either redundant, biased, or have such weak signal-to-noise that you'll waste attention on them. The trick to using Apple Health well is knowing which numbers are worth a 60-day baseline and which you should stop opening the app to check."

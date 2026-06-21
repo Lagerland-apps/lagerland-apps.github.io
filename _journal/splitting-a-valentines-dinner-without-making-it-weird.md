@@ -2,6 +2,16 @@
 layout: journal
 slug: splitting-a-valentines-dinner-without-making-it-weird
 title: "How to split a Valentine's dinner without making it weird"
+seo:
+  title: "How to Split a Dinner Bill Without the Awkward Math"
+  description: "Four friends, a $312 bill, three steaks and one salad. RightSplit handles uneven shares, tax, and tip so splitting a dinner bill never gets weird."
+  keywords:
+    - "how to split a bill"
+    - "bill splitting app"
+    - "split dinner bill"
+    - "uneven bill split"
+    - "split bill with tax and tip"
+    - "rightsplit"
 date: 2026-02-14
 lede: "It's the 14th. Somewhere right now, a group of four friends is staring at a $312 dinner bill, three of them ordered the steak, one ordered the salad, and someone is doing math on a napkin. RightSplit was built for that exact moment."
 quick_answer: "RightSplit handles item-level bill splitting from a single phone. One person scans the receipt, drags each line item onto the people who ordered it, and the app produces per-person amounts with Venmo, PayPal, or iMessage Cash deeplinks sent over iMessage or WhatsApp. Nobody else has to install anything. No shared account, no IOU ledger."

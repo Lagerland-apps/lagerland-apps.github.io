@@ -2,6 +2,16 @@
 layout: journal
 slug: the-strength-logger-no-one-asked-for
 title: "Why I shipped a Strong-style logger that nobody asked for"
+seo:
+  title: "An Apple Watch-First Strength Logger (Strong-Style)"
+  description: "Why GymLogger X makes the Apple Watch — not the phone — the actual strength-training logger, when Strong, Hevy, and Fitbod already own the category."
+  keywords:
+    - "apple watch workout logger"
+    - "strength log apple watch"
+    - "watch-first lifting app"
+    - "strong alternative apple watch"
+    - "gym logger watch"
+    - "gymlogger x"
 date: 2026-03-07
 lede: "Strong, Hevy, and Fitbod already exist. The strength-training logger market is well-served. I shipped GymLogger X anyway, and the reason isn't features — it's that nobody else seems to think Apple Watch deserves to be the actual workout log."
 quick_answer: "GymLogger X treats Apple Watch as the primary strength-training log, not a phone companion. Set entry, rest timers, and live heart rate live on the wrist; the iPhone is for analytics, program editing, and history. Pro adds plateau detection that informs without lecturing. Pricing is free core, $17.99 a year, or $44.99 lifetime."

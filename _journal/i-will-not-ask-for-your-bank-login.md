@@ -2,6 +2,16 @@
 layout: journal
 slug: i-will-not-ask-for-your-bank-login
 title: "I will not ask for your bank login"
+seo:
+  title: "A Bill Tracker That Never Asks for Your Bank Login"
+  description: "Bank-aggregator apps want read access to your checking account. AllPaid tracks bills and subscriptions manually, on purpose — no bank login, no Plaid, ever."
+  keywords:
+    - "bill tracker without bank login"
+    - "expense tracker no bank connection"
+    - "subscription tracker no plaid"
+    - "manual bill tracker"
+    - "no bank link finance app"
+    - "allpaid"
 date: 2026-01-31
 lede: "It's the last day of January and the bank-aggregator apps are advertising themselves into every podcast in America. The pitch is convenience. The price is your read access to your own checking account. AllPaid takes the other path on purpose."
 quick_answer: "Bill tracker apps that ask for bank logins route credentials through aggregators like Plaid, granting persistent read access to every transaction in the account — far beyond the recurring charges the user actually wants surfaced. AllPaid avoids this entirely. It is manual-first, stores bills locally on the device, has no account system, and never connects to a bank."

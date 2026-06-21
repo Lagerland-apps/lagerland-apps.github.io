@@ -2,6 +2,16 @@
 layout: journal
 slug: literary-software-in-the-spring
 title: "Literary software, in the spring"
+seo:
+  title: "Literary Software: The Case for Anti-Engagement Apps"
+  description: "Driftlines is built to be put down, not maximized for screen time. The case for literary software: anti-engagement apps that respect your attention."
+  keywords:
+    - "literary apps"
+    - "anti-engagement app"
+    - "calm software"
+    - "slow reading app"
+    - "attention-respecting apps"
+    - "driftlines"
 date: 2026-03-21
 lede: "It's the day after the spring equinox. The northern hemisphere is officially leaning into the light. This is a small post about Driftlines — a deliberately anti-engagement piece of software — and why I think the category of literary apps deserves to exist."
 quick_answer: "Driftlines is a piece of literary software — a serialised first-person narrative that delivers one short prose entry per day, with rare quiet choice moments roughly every ten to fifteen entries. There is no streak counter, no feed, no daily nag, no infinite scroll. It is structurally finite, priced as a one-time unlock, designed to be slow."

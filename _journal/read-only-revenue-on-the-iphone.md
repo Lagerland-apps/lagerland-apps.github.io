@@ -2,6 +2,16 @@
 layout: journal
 slug: read-only-revenue-on-the-iphone
 title: "A read-only dashboard for App Store revenue, on the iPhone"
+seo:
+  title: "A Read-Only App Store Revenue Dashboard for iPhone"
+  description: "A read-only App Store Connect dashboard for iPhone — revenue, subscriptions, and downloads — without giving anyone write access to your account."
+  keywords:
+    - "app store revenue dashboard"
+    - "ios app revenue checker"
+    - "app store connect iphone app"
+    - "read-only app store connect"
+    - "app revenue tracker"
+    - "appmeta pulse"
 date: 2026-04-18
 lede: "Your accountant doesn't need write-access to App Store Connect. Your designer doesn't either. Your spouse, your co-founder, your weekly bookkeeping flow — none of them need to be able to change your app's metadata in order to know how it's selling. AppMeta Pulse is the small iPhone app I built when I got tired of explaining that distinction."
 quick_answer: "AppMeta Pulse is a glanceable iPhone dashboard for App Store revenue, subscription health, refunds, and country-level rollups, sitting on the read-only endpoints of the App Store Connect API. Studio owners can share scoped tokens with an accountant or co-founder without granting any developer-account role. Free tier covers one app; Pro is $17.99 lifetime."

@@ -2,6 +2,16 @@
 layout: journal
 slug: how-plan-mode-builds-a-checklist
 title: "How Plan Mode builds a wedding (or trip, or pregnancy) checklist"
+seo:
+  title: "A Countdown App That Builds Your Event Checklist for You"
+  description: "Most countdown apps stop at the day count. Soon.'s Plan Mode builds a wedding, trip, or pregnancy checklist and schedules each task backward from the date."
+  keywords:
+    - "wedding countdown checklist"
+    - "trip planning checklist app"
+    - "event checklist app"
+    - "countdown with checklist"
+    - "pregnancy countdown"
+    - "soon app"
 date: 2026-05-13
 lede: "Most countdown apps stop at the number of days. Soon.'s Plan Mode goes one step further — it builds a tailored checklist for the event type and schedules each task backward from the date, so you don't have to. Here's exactly how the template engine works, why it's anchored to T-minus rather than T-plus, and what's deliberately not in it."
 quick_answer: "Plan Mode is the part of Soon. that turns an event date into a scheduled checklist. Each event type — Trip, Wedding, Birthday, Pregnancy, Graduation, Move, Concert, Anniversary — loads a built-in template of tasks anchored to T-minus offsets (T-90, T-30, T-14, T-3, T-1). When an event is created, Soon. places every task on its own calendar day backward from the event date. Reminders fire on the day each task is due, not as a daily nag. Templates are shipped in the app — no AI generation, no surveillance, no cloud sync."

@@ -2,6 +2,16 @@
 layout: journal
 slug: engine-depth-at-club-level-tune-down
 title: "Why engine depth at club level should be tuned down, not up"
+seo:
+  title: "Chess Engine Depth: Why Club Players Should Tune It Down"
+  description: "Chess.com runs depth 22, Stockfish hits 35 — none of it helps an 800–1800 player. Why deeper engine analysis makes club-level feedback worse, not better."
+  keywords:
+    - "chess engine depth"
+    - "stockfish depth"
+    - "how good is stockfish"
+    - "chess analysis depth"
+    - "club level chess analysis"
+    - "stockfish for beginners"
 date: 2026-05-13
 lede: "Every chess app boasts about engine depth. Chess.com's analysis runs to depth 22. Lichess Cloud reaches 28. Stockfish on a modern desktop will happily run depth 35 if you let it. This post is about why none of that helps an 800–1800 rated player improve, and why Chessful intentionally caps engine depth at the level where the mistakes that actually decide club games become visible — and not deeper."
 quick_answer: "Engine depth above roughly 13-15 ply produces lines that even strong club players cannot read or apply. The lines are correct but unteachable. For a player rated 800-1800, the mistakes that actually decide games are visible at depth 10-15 — hung pieces, missed forks, defender-removal blindness, opposition errors. Deeper analysis surfaces grandmaster-level subtleties that the user cannot act on and that crowd out the actionable signal. Chessful tunes engine depth down to the band where the actionable mistakes live, which has the side-effect of running analysis fast on-device. The choice is pedagogic, not a hardware constraint."

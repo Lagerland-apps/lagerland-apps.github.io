@@ -2,6 +2,16 @@
 layout: journal
 slug: countdown-psychology-why-anticipation-beats-reminders
 title: "Countdown psychology — why anticipation beats reminders"
+seo:
+  title: "The Psychology of Anticipation: Why Countdowns Feel Good"
+  description: "Why looking forward to something is one of the most reliably positive mental states — the psychology of anticipation, and why a countdown beats a reminder."
+  keywords:
+    - "anticipation psychology"
+    - "psychology of anticipation"
+    - "countdown psychology"
+    - "why anticipation feels good"
+    - "looking forward psychology"
+    - "countdown app"
 date: 2026-05-13
 lede: "There's a sleep researcher's joke that the best part of a holiday is the planning of it. It's funnier because it's defensible — the psychology of anticipation is one of the most reliably positive emotional states a person can be in, and it costs nothing. This post is about why countdown apps work, why anticipation outperforms reminders as a motivational tool, and what a well-designed countdown should actually do with that emotional surface."
 quick_answer: "Anticipation is the positive affective state of looking forward to a specific future event. Decades of research — Loewenstein's 1987 work on \"savouring,\" Van Boven and Gilovich's 2003 experiences-over-possessions experiments, Nawijn's 2010 study of pre-holiday happiness peaks — show that the anticipatory phase often produces more sustained positive affect than the event itself. Countdown apps work because they make anticipation visible, daily, and concrete. A well-designed countdown adds a photo (sensory anchor), a checklist (agency), and a notification rhythm calibrated to one prompt per task (signal, not noise) — turning passive waiting into active preparation."

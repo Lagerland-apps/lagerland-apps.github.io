@@ -2,6 +2,16 @@
 layout: journal
 slug: forty-chess-opponents
 title: "Forty chess opponents, and none of them are me"
+seo:
+  title: "Forty Chess Opponents: Designing 40 Distinct AI Players"
+  description: "How Chessful makes 40 chess AI opponents feel like forty different people — distinct styles and strengths, not one engine wearing forty masks."
+  keywords:
+    - "forty chess"
+    - "40 chess opponents"
+    - "chess ai opponents"
+    - "chess app opponents"
+    - "play chess vs ai"
+    - "chessful"
 date: 2026-02-28
 lede: "The single hardest decision in Chessful's design wasn't the engine, the analysis, or the spaced-repetition trainer. It was that the app needed to feel like you were playing forty different people, not the same engine forty times wearing different hats."
 quick_answer: "Chessful ships forty distinct AI chess opponents instead of a single engine made worse on purpose at lower levels. Each opponent has a rating, opening repertoire, structural preference, and characteristic blind spots, so games feel like playing different people rather than a noisy slider. Post-game analysis explains mistakes in plain language a club player can actually read."

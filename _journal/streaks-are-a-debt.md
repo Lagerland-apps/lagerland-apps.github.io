@@ -2,6 +2,16 @@
 layout: journal
 slug: streaks-are-a-debt
 title: "A streak counter is a debt the user owes the app"
+seo:
+  title: "Why Streak Counters Are a Debt You Owe the App"
+  description: "Streak counters are a debt: the app issues them, you owe them, it collects on the missed day. The case against streaks — and a planner built without one."
+  keywords:
+    - "habit app without streaks"
+    - "streak psychology"
+    - "against streaks"
+    - "streak counter design"
+    - "no-streak habit tracker"
+    - "taskful day"
 date: 2026-01-10
 lede: "Last week's post was the polite version. Here's the structural one: streak counters are a debt instrument. The app issues them; the user owes them; the app collects on the missed day. Why Taskful Day was built without one."
 quick_answer: "Streak counters function like financial debt: each additional day inflates a balance the user owes the app, and any miss resets the total to zero. The fragility is the engagement lever. They also corrupt the metric, since users open the app at midnight to fake entries. Taskful Day omits the streak entirely and offers gentle follow-ups instead."

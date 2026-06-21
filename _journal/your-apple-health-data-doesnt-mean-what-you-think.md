@@ -2,6 +2,16 @@
 layout: journal
 slug: your-apple-health-data-doesnt-mean-what-you-think
 title: "Your Apple Health data isn't telling you what you think it's telling you"
+seo:
+  title: "Your Apple Health Data Isn't Saying What You Think"
+  description: "Three years of HRV charts and a feeling none of it added up. Why interpreting Apple Health data matters more than tracking it — the story behind Observa."
+  keywords:
+    - "apple health interpretation"
+    - "what does my health data mean"
+    - "hrv interpretation"
+    - "apple health insights"
+    - "tracking vs interpreting health"
+    - "observa"
 date: 2026-01-17
 lede: "Three years of HRV charts, ten thousand data points, and a feeling that none of it added up to anything. The story behind Observa, and why interpretation matters more than tracking."
 quick_answer: "Observa is an interpretation layer for Apple Health data. It identifies the variables most correlated with the user's sleep quality, normalises HRV against personal baseline rather than population norms, flags days that deviated from baseline, and produces a calm weekly read in plain language. All correlation analysis runs on-device. No cloud upload, no account, no medical advice."

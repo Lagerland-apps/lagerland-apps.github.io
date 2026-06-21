@@ -2,6 +2,14 @@
 layout: journal
 slug: welcome
 title: "What this journal is, and what it is not"
+seo:
+  title: "The Lagerland Apps Journal — What It Is and Isn't"
+  description: "Why a one-person Apple studio keeps a journal: design notes, App Store craft, and honest essays on the apps it builds — and what you won't find here."
+  keywords:
+    - "lagerland apps journal"
+    - "indie app studio blog"
+    - "app design notes"
+    - "indie developer journal"
 date: 2025-12-27
 lede: "A short note about why Lagerland Apps now has a journal — and what you can expect to find here."
 quick_answer: "The Lagerland Apps journal documents the work of a one-person Apple studio shipping fourteen iOS and macOS apps. It carries rebrand stories, shipping notes with real design reasoning, and occasional essays on privacy-first design and honest monetisation. It is not a marketing blog, a Swift tutorial site, or an AI-generated content farm. Every post is written by the developer."

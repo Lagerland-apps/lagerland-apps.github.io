@@ -2,6 +2,16 @@
 layout: journal
 slug: not-doing-in-2026
 title: "What I'm not doing in 2026"
+seo:
+  title: "What This Indie App Studio Is Not Doing in 2026"
+  description: "A short anti-roadmap from a one-person Apple studio — no ads, no engagement metrics, no VC, no AI slop. What Lagerland Apps won't build in 2026, and why."
+  keywords:
+    - "indie app studio"
+    - "one-person app business"
+    - "anti-roadmap"
+    - "indie developer 2026"
+    - "privacy-first apps"
+    - "lagerland apps"
 date: 2026-01-01
 lede: "It's the first day of the year. Everywhere on the internet, people are listing what they will build, ship, optimize, and grow. Here's a shorter list — what this studio is choosing not to do."
 quick_answer: "Lagerland Apps is choosing not to add advertising SDKs, not to chase a ten-app year, not to bolt streaks or daily-engagement loops onto its catalogue, not to ship fashionable AI features that earn no place, and not to raise outside funding. The fourteen-app catalogue stays where it is. Refinements over additions, fewer apps, higher bar."

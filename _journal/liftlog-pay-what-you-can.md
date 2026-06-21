@@ -2,6 +2,16 @@
 layout: journal
 slug: liftlog-pay-what-you-can
 title: "LiftLog ships. You pick the price."
+seo:
+  title: "LiftLog: A Strength Log With No Subscription, Pay Once"
+  description: "A design-led iPhone strength log with no subscription: seven days free, then you pick the price once — $9.99 to $39.99. Why pay-what-you-can beats renting."
+  keywords:
+    - "strength log no subscription"
+    - "workout tracker pay once"
+    - "lifting log iphone"
+    - "no subscription workout app"
+    - "pay what you want app"
+    - "liftlog"
 date: 2026-04-25
 lede: "LiftLog — a design-led strength training log for iPhone — is on the App Store today. There is no subscription. After seven days free with no card on file, you decide what it's worth to you: $9.99, $19.99, $29.99, or $39.99. Once. Here's why."
 quick_answer: "LiftLog is a design-led iPhone strength training log priced on a pay-what-you-can model. After a seven-day free trial with no card on file, the user picks one of four one-time tiers — Fair $9.99, Good $19.99, Generous $29.99, or Patron $39.99 — all unlocking the same app. No subscription, no auto-renew."

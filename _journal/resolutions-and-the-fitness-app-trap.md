@@ -2,6 +2,16 @@
 layout: journal
 slug: resolutions-and-the-fitness-app-trap
 title: "If your fitness app is making you feel guilty in week one, that's the design — not you"
+seo:
+  title: "Why Fitness Apps Make You Feel Guilty by Week One"
+  description: "Most fitness apps reward one good day, then punish the next — the guilt is the design, not your failure. What to look for in an app that doesn't do it."
+  keywords:
+    - "fitness app guilt"
+    - "new year fitness apps"
+    - "fitness app motivation"
+    - "streak guilt"
+    - "fitness app design"
+    - "resolutions fitness"
 date: 2026-01-03
 lede: "Forty-eight hours into the new year, the fitness apps are already doing what they were built to do: rewarding you for one good day, then twisting the knife on the day after. A short note on why most of them are designed wrong, and what to look for in the ones that aren't."
 quick_answer: "Most fitness apps instrument consistency as a streak counter that resets to zero on a single miss, then use the resulting fragility as the engagement loop. A non-hostile alternative drops the streak, offers missed tasks as follow-ups rather than punishments, omits unchosen-friend leaderboards, and lets users leave for a week without losing their data."

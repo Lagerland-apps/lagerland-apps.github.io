@@ -2,6 +2,16 @@
 layout: journal
 slug: what-14-days-of-apple-health-can-reveal
 title: "What 14 days of Apple Health data is enough to reveal — and what isn't"
+seo:
+  title: "What 14 Days of Apple Health Data Can Actually Reveal"
+  description: "Apple Health is the biggest passive health dataset you'll own. Which questions 14 days of data can answer, which need 60 days, and which it can never answer."
+  keywords:
+    - "apple health data"
+    - "what apple health reveals"
+    - "14 days health data"
+    - "apple health insights"
+    - "interpreting apple health"
+    - "health data analysis"
 date: 2026-05-13
 lede: "Apple Health is the largest passive health dataset most people will ever own — and almost nobody uses it for what it's actually good at. Here's a practical guide to which questions two weeks of data can answer, which ones need 60 days, and which ones it can't answer at all."
 quick_answer: "Two weeks of Apple Health data is enough to surface single-variable patterns — late workouts vs. deep sleep, caffeine timing vs. resting heart rate, screen time vs. sleep latency — provided you have at least 10 same-condition observations and you compare against a personal baseline rather than a population average. Multi-variable patterns and long-term trends need 60 days or more. Anything below ~14 days is noise. Anything claiming a 'recovery score' from 3 days of data is fitting to noise."

@@ -2,6 +2,16 @@
 layout: journal
 slug: a-2048-game-for-an-attentional-cease-fire
 title: "A small game for an attentional cease-fire"
+seo:
+  title: "Calm 2048: A 2048 Game With No Ads and No Lives"
+  description: "The classic 2048 puzzle with no ads, no timers, no lives, and no dark patterns — just the game. Why a deliberately calm version belongs on the App Store."
+  keywords:
+    - "2048 no ads"
+    - "2048 without ads"
+    - "calm 2048"
+    - "2048 game iphone"
+    - "ad-free 2048"
+    - "offline 2048"
 date: 2026-04-04
 lede: "It's the long weekend before Easter, the kind of weekend that's structurally a pause. This is a small post about Calm 2048 — a no-ads, no-lives, no-dark-patterns version of a twelve-year-old puzzle — and why a small calm thing on the App Store still has a place in 2026."
 quick_answer: "Calm 2048 is a one-time-purchase iOS version of the classic 2048 puzzle stripped of ads, lives, daily-login mechanics, leaderboards, accounts, and cosmetic IAPs. It contains the game, undo, three colour themes, and a local high score. No notifications, no cloud sync, no monetisation infrastructure layered over the actual puzzle."

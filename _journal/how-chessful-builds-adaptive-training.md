@@ -2,6 +2,16 @@
 layout: journal
 slug: how-chessful-builds-adaptive-training
 title: "How Chessful turns a Stockfish evaluation into adaptive training"
+seo:
+  title: "Adaptive Chess Training Built From Your Own Games"
+  description: "Most 'adaptive' chess trainers follow a generic curve. Chessful builds drills from the real mistakes in your own games — here's how the pipeline works."
+  keywords:
+    - "adaptive chess training"
+    - "chess training app"
+    - "chess training from your games"
+    - "personalized chess training"
+    - "chess improvement app"
+    - "chessful"
 date: 2026-05-13
 lede: "Most chess apps that claim 'adaptive training' don't actually adapt to your games — they adapt to a generic difficulty curve over a fixed puzzle pool. Chessful adapts to the specific mistake patterns in your real losses. This post is the design note for that engine: how raw centipawn output becomes a motif classification, how motifs become skill-bucket flags, and how skill-bucket flags become a spaced-repetition training queue. No marketing. No black box."
 quick_answer: "Chessful's adaptive training works in five stages. Stockfish runs on-device over your finished game and produces a centipawn evaluation per move. A layered classifier — engine output combined with hand-curated motif detectors — assigns each significant mistake to one of roughly thirty motif categories (hung piece, missed fork, weak back rank, prophylactic skip, repertoire lapse, endgame technique error, and so on). Each motif maps to one of five skill dimensions: tactics, defense, positional play, openings, endgames. After each game, the relevant skill buckets get a flag. A spaced-repetition queue pulls from the flagged buckets — patterns seen most recently are seen again sooner; patterns solved correctly twice in a row drop out. Free tier: 3 sessions/week. Premium: unlimited."

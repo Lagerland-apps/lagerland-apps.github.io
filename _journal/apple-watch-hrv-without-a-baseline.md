@@ -2,6 +2,16 @@
 layout: journal
 slug: apple-watch-hrv-without-a-baseline
 title: "Why your Apple Watch HRV number means almost nothing without a baseline"
+seo:
+  title: "Apple Watch HRV: Why the Number Means Nothing Alone"
+  description: "Apple Watch HRV: a 42 ms reading can be great or alarming — you can't tell without a baseline. What it measures, what it doesn't, and how to read yours."
+  keywords:
+    - "apple watch hrv"
+    - "hrv baseline"
+    - "what is a good hrv"
+    - "apple watch heart rate variability"
+    - "how to read hrv"
+    - "hrv normal range"
 date: 2026-05-13
 lede: "A 42ms HRV reading on Apple Watch can be excellent, average, or alarming — and you can't tell which without context. The number on its own is one of the most-misread metrics in consumer health. Here's what HRV actually tells you, what it doesn't, and why a personal baseline is the only frame that makes the reading usable."
 quick_answer: "Raw HRV (heart-rate variability, usually reported as RMSSD on Apple Watch) is meaningful only against your own rolling baseline. Absolute HRV varies 3–10× between individuals based on age, sex, fitness, posture, measurement timing, and which wrist the watch is on. The right way to read your Apple Watch HRV is as a percent deviation from your personal 60-day mean. Comparing your number to a friend's, a population average, or a 'normal range' chart on the internet will almost always mislead you."

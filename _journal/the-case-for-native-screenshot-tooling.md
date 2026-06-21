@@ -2,6 +2,16 @@
 layout: journal
 slug: the-case-for-native-screenshot-tooling
 title: "The case for a native App Store screenshot tool"
+seo:
+  title: "The Case for a Native App Store Screenshot Tool"
+  description: "App Store screenshots are the highest-leverage indie marketing asset and the worst release chore. The case for a native, capture-first screenshot tool."
+  keywords:
+    - "app store screenshot tool"
+    - "screenshot generator mac"
+    - "app store screenshot maker"
+    - "device frame tool"
+    - "marketing screenshots app"
+    - "mockly"
 date: 2026-03-14
 lede: "App Store screenshots are the highest-leverage assets in the indie marketing stack and most indie developers, including past versions of me, treat them as the worst chore of every release. Mockly is the studio's argument that the workflow should be a native Mac app, not a YAML-driven CI script."
 quick_answer: "Mockly is a native Mac alternative to fastlane snapshot, frameit, and deliver for indie iOS developers who treat App Store screenshots as editorial work. It composes layouts with 3D Metal-rendered device frames, swaps screenshots and copy across 20+ App Store locales, and uploads directly to App Store Connect. $12.99 lifetime with Family Sharing support."
