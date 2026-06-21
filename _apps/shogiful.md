@@ -323,7 +323,7 @@ release:
 
 related_journal:
   slug: making-shogi-readable-without-kanji
-  anchor: "Making shogi readable — designing a board you can play before you can read it"
+  anchor: "Shogi pieces in English: how to read the board without learning kanji"
 
 show_body: true
 about_heading: "What Shogiful does — shogi training, analysis, and a board you can read"
