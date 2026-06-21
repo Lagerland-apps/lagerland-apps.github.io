@@ -41,6 +41,12 @@ defaults:
 include:
   - .well-known
 
+# CLAUDE.md is an internal guideline (page-creation/SEO playbook) — keep it
+# out of the published site. Note: setting `exclude` replaces Jekyll's
+# default list, which is harmless here (no Gemfile/vendor/node_modules).
+exclude:
+  - CLAUDE.md
+
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
