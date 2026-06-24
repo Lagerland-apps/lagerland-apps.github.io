@@ -235,7 +235,13 @@ seo:
       </div>
     </div>
     <div class="spotlight-media">
-      <img src="{{ featured.screenshots[0] }}" alt="{{ featured.name }} — Apple Health analytics app for iPhone" loading="lazy">
+      {%- comment %} screenshots[0] may be a bare string or a { src, caption } hash —
+        resolve the URL and a descriptive alt the same way hero.html / screenshots.html do,
+        so the raw hash is never interpolated into the attribute. {% endcomment -%}
+      {%- assign featured_shot = featured.screenshots[0] -%}
+      {%- assign featured_img = featured_shot.src | default: featured_shot -%}
+      {%- assign featured_alt = featured_shot.alt | default: featured_shot.caption | default: featured.hero.alt | default: featured.name -%}
+      <img src="{{ featured_img }}" alt="{{ featured_alt }}" loading="lazy">
     </div>
   </div>
 </section>
