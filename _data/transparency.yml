@@ -329,19 +329,3 @@ apps:
       - "File timestamp (C617.1)"
     permissions: []
     notes: "Wikipedia client. Articles are fetched from Wikipedia's public API just like a web visit."
-
-  - slug: zen-2048
-    manifest_source: source
-    tracking_declared: false
-    tracking_domains: 0
-    third_party_sdks: 0
-    third_party_sdks_list: []
-    account_required: false
-    network_calls: "None. Game logic, 3D rendering, and all themes run locally on-device. In-app purchases and optional Game Center are handled by Apple."
-    data_leaves_device: "No."
-    analytics: "None."
-    collected_data: []
-    required_reason_apis:
-      - "UserDefaults (CA92.1 — read/write app-specific user defaults)"
-    permissions: []
-    notes: "No ads and no third-party SDKs of any kind. PrivacyInfo.xcprivacy declares NSPrivacyTracking false with no collected data types. Scores, streak, and theme purchases stay on-device; Game Center is optional. Theme packs and undo tokens are processed entirely by Apple's StoreKit."
