@@ -299,6 +299,29 @@
   }
 
   /* ================================================================
+     STICKY DOWNLOAD BAR
+     Reveal the persistent App Store CTA once the hero's own CTA has
+     scrolled out of view, so the download path is always one glance away
+     on long app pages. Hidden again while the hero is visible so the two
+     CTAs never compete.
+     ================================================================ */
+  function initStickyCta() {
+    var bar = document.getElementById('sticky-cta');
+    if (!bar) return;
+    var heroActions = document.querySelector('.hero .actions');
+    if (!heroActions || !('IntersectionObserver' in window)) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        // Show the bar only when the hero CTA is NOT on screen.
+        bar.setAttribute('data-hidden', entry.isIntersecting ? 'true' : 'false');
+      });
+    }, { rootMargin: '0px 0px -40px 0px' });
+
+    observer.observe(heroActions);
+  }
+
+  /* ================================================================
      INIT
      ================================================================ */
   function init() {
@@ -314,6 +337,7 @@
     initSmoothScroll();
     initHeroWordReveal();
     initCounters();
+    initStickyCta();
   }
 
   if (document.readyState === 'loading') {

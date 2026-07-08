@@ -17,16 +17,27 @@
     {%- endif -%}
     <p class="lead">{{ include.app.hero.subheadline }}</p>
 
-    <div class="actions">
-      <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">
-        {{ include.app.hero.cta_label | default: "Download" }}
-      </a>
+    <div class="actions actions--hero-cta">
+      {% include appstore-badge.html url=include.app.app_store_url name=include.app.name %}
       <a class="btn btn-secondary" href="#features">See how it works</a>
     </div>
 
     {%- if include.app.hero.cta_subline -%}
     <p class="cta-subline">{{ include.app.hero.cta_subline }}</p>
     {%- endif -%}
+
+    {%- comment %} Desktop-only "scan to install" — most marketing traffic is on
+      a Mac, but the product is an iPhone app, so the plain Download link is a
+      dead end there. The QR closes the desktop→phone handoff. Hidden on touch
+      via CSS (.qr-install is display:none until the wide breakpoint). {% endcomment -%}
+    {%- assign _qr = "/assets/qr/" | append: include.app.slug | append: ".svg" -%}
+    <div class="qr-install" aria-hidden="true">
+      <img class="qr-install__img" src="{{ _qr }}" alt="" width="88" height="88" loading="lazy" decoding="async">
+      <div class="qr-install__copy">
+        <strong>On your Mac?</strong>
+        <span>Point your iPhone camera here to install.</span>
+      </div>
+    </div>
 
     <div class="meta-row">
       {%- comment %} Only show aggregate rating when it has enough signal to be credible.

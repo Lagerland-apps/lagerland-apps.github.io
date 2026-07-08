@@ -4,6 +4,17 @@
 <meta name="theme-color" content="#F5F1EA" media="(prefers-color-scheme: light)">
 <meta name="color-scheme" content="dark light">
 
+{%- comment %} Safari Smart App Banner — on iOS this shows Apple's native
+  VIEW/OPEN install prompt at the top of the app page, deep-linking straight
+  into the App Store. Highest-converting install surface on the whole site,
+  and free. The numeric id is parsed out of app_store_url (…/app/idXXXXXXXX). {% endcomment -%}
+{%- if page.layout == "app" and page.app_store_url -%}
+  {%- assign _asid = page.app_store_url | split: "/id" | last | split: "?" | first -%}
+  {%- if _asid != "" -%}
+<meta name="apple-itunes-app" content="app-id={{ _asid }}">
+  {%- endif -%}
+{%- endif -%}
+
 {%- assign page_title = page.seo.title | default: page.title | default: site.title -%}
 {%- assign page_desc  = page.seo.description | default: site.description -%}
 {%- assign page_url   = site.url | append: page.url -%}

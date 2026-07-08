@@ -13,6 +13,18 @@
     <div class="card-text">{{ include.app.seo.description }}</div>
   {% endif %}
   <div class="meta-row" style="margin-top:var(--s-3);">
+    {%- comment %} Price / cost model first — "is it free?" is the primary
+      download-intent filter, so surface it on the card, not just the app page. {% endcomment -%}
+    {%- assign card_price_model = include.app.price.model | downcase -%}
+    {%- if card_price_model contains 'one-time' -%}
+      <span class="pill pill--price">One-time</span>
+    {%- elsif card_price_model contains 'freemium' -%}
+      <span class="pill pill--price">Free &middot; Pro</span>
+    {%- elsif card_price_model contains 'subscription' -%}
+      <span class="pill pill--price">Free trial</span>
+    {%- elsif card_price_model contains 'free' -%}
+      <span class="pill pill--price">Free</span>
+    {%- endif -%}
     {%- if include.app.ratings and include.app.ratings.count >= 3 -%}
       <span class="pill">&#9733; {{ include.app.ratings.value }} &middot; {{ include.app.ratings.count }}</span>
     {%- endif -%}

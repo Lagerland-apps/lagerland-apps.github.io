@@ -927,6 +927,141 @@ blockquote {
   .btn-primary { color: #FFFFFF; }
 }
 
+/* ================================================================
+   APP STORE BADGE — official-style download button (inline SVG)
+   ================================================================ */
+.asb {
+  display: inline-flex;
+  align-items: center;
+  height: 52px;
+  border-radius: 9px;
+  text-decoration: none !important;
+  transition: transform var(--dur-fast) var(--ease-out),
+              box-shadow var(--dur-md) var(--ease-out);
+}
+.asb-svg {
+  height: 100%;
+  width: auto;
+  display: block;
+  border-radius: 9px;
+}
+.asb:hover { transform: translateY(-2px); }
+.asb:active { transform: translateY(0) scale(0.985); }
+.asb:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.asb--sm { height: 40px; }
+
+/* Hero: keep the badge and the secondary button on the same baseline. */
+.actions--hero-cta { align-items: center; }
+
+/* ================================================================
+   QR "SCAN TO INSTALL" — desktop-only (closes the Mac→iPhone handoff)
+   ================================================================ */
+.qr-install { display: none; }
+
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) {
+  .qr-install {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-3);
+    margin-top: var(--s-4);
+    padding: var(--s-2) var(--s-3) var(--s-2) var(--s-2);
+    border: 1px solid var(--border-2);
+    border-radius: var(--r-md);
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    max-width: max-content;
+  }
+  .qr-install__img {
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    display: block;
+    /* The SVG already carries its own white background/quiet zone. */
+  }
+  .qr-install__copy {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: var(--text-xs);
+    line-height: 1.35;
+    color: var(--text-secondary);
+    padding-right: var(--s-2);
+  }
+  .qr-install__copy strong { color: var(--text-primary); font-weight: 600; }
+}
+
+/* ================================================================
+   STICKY DOWNLOAD BAR — persistent CTA on long app pages
+   ================================================================ */
+.sticky-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  padding: var(--s-3) var(--s-4);
+  padding-bottom: calc(var(--s-3) + env(safe-area-inset-bottom, 0px));
+  background: var(--bg-glass);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  border-top: 1px solid var(--border-2);
+  box-shadow: 0 -8px 32px -12px rgba(0,0,0,0.45);
+  transition: transform var(--dur-md) var(--ease-out),
+              opacity var(--dur-md) var(--ease-out);
+}
+.sticky-cta[data-hidden="true"] {
+  transform: translateY(110%);
+  opacity: 0;
+  pointer-events: none;
+}
+.sticky-cta__inner {
+  max-width: var(--max-w, 1200px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+.sticky-cta__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
+  flex-shrink: 0;
+  box-shadow: var(--elev-1);
+}
+.sticky-cta__meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin-right: auto;
+}
+.sticky-cta__name {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sticky-cta__price {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticky-cta { transition: opacity var(--dur-fast) linear; }
+  .sticky-cta[data-hidden="true"] { transform: none; }
+}
+
+/* On narrow phones, drop the app name label so the badge never gets squeezed. */
+@media (max-width: 420px) {
+  .sticky-cta__name { font-size: var(--text-xs); }
+  .sticky-cta__price { display: none; }
+}
+
 
 /* ================================================================
    PILLS / TAGS
@@ -949,6 +1084,17 @@ blockquote {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   letter-spacing: 0.2px;
+}
+
+/* Price pill — accent-tinted so the cost model reads first on app cards. */
+.pill--price {
+  color: var(--accent-bright);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg-glass));
+  font-weight: 600;
+}
+@media (prefers-color-scheme: light) {
+  .pill--price { color: var(--accent-dim); }
 }
 
 
