@@ -123,7 +123,7 @@ founder:
   response_time: "I reply to support emails personally, usually within a day."
   signals:
     - "Original author of TheWait — Soon. is the ground-up rebuild, not a rebrand"
-    - "Shipped 15 privacy-first Apple apps under Lagerland since 2025"
+    - "Shipped 18 privacy-first Apple apps under Lagerland since 2025"
     - "Architecture is on-device first: events stay on your iPhone, weather requests use approximate location only"
     - "Localised into 39 languages, including right-to-left (Arabic, Hebrew) and CJK (Japanese, Korean, Chinese)"
 

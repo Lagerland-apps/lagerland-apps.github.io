@@ -41,11 +41,15 @@ defaults:
 include:
   - .well-known
 
-# CLAUDE.md is an internal guideline (page-creation/SEO playbook) — keep it
-# out of the published site. Note: setting `exclude` replaces Jekyll's
-# default list, which is harmless here (no Gemfile/vendor/node_modules).
+# Internal files kept out of the published site. Note: setting `exclude`
+# replaces Jekyll's default list, which is harmless here (no Gemfile/
+# vendor/node_modules). scripts/ holds local tooling (ratings sync, OG/QR
+# generators, a personal notifier) that was previously served publicly.
 exclude:
   - CLAUDE.md
+  - scripts/
+  - README.md
+  - 2.png
 
 plugins:
   - jekyll-sitemap

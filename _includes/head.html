@@ -1,8 +1,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#07091A" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#F5F1EA" media="(prefers-color-scheme: light)">
-<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0B0D1A" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F6F2EA" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="light dark">
+{%- comment %} Set html.js before first paint — the scroll-reveal CSS only
+  hides content under html.js, so no-JS visitors (and crawlers) always get
+  fully visible pages. {% endcomment %}
+<script>document.documentElement.classList.add('js');</script>
 
 {%- comment %} Safari Smart App Banner — on iOS this shows Apple's native
   VIEW/OPEN install prompt at the top of the app page, deep-linking straight
@@ -51,6 +55,11 @@
 <link rel="me" href="https://github.com/lagerland-apps">
 <link rel="me" href="mailto:lagerland.apps@proton.me">
 
+{%- comment %} Self-hosted fonts (latin subsets). Preload the two faces used
+  above the fold; font-display: swap + metric-close fallbacks avoid CLS.
+  crossorigin is required on font preloads even same-origin. {% endcomment %}
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/newsreader-roman.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-var.woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/style.css">
 
 {%- if page.url == "/" %}
@@ -109,7 +118,7 @@
         "width": 1024,
         "height": 1024
       },
-      "description": "One-person Apple studio in Finland building 18 privacy-first iOS, iPadOS, watchOS and macOS apps since 2025. No advertising SDKs, no IDFA, no accounts — GDPR by default.",
+      "description": "One-person Apple studio in Finland building {{ site.apps | where: 'status', 'live' | size }} privacy-first iOS, iPadOS, watchOS and macOS apps since 2025. No advertising SDKs, no IDFA, no accounts — GDPR by default.",
       "foundingDate": "2025",
       "founder": { "@id": "{{ site.url }}/lagerland-apps/#founder" },
       "address": {

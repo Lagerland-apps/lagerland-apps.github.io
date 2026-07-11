@@ -231,11 +231,11 @@ founder:
   name: "Lagerland Apps"
   role: "Independent Apple studio · Finland"
   photo: "/assets/icons/lagerland-mark.png"
-  bio: "AppMeta Pulse exists because checking App Store revenue on a phone has been quietly broken for a decade. Apple's official App Store Connect app focuses on management — submitting builds, replying to reviews, editing metadata — not on the 10-second \"how did yesterday do?\" glance that indie publishers actually need. Web-based dashboards run $9.99+/month and route your data through third-party analytics. Other iPhone trackers charge more and collect usage data for advertising. We ship 15+ apps through App Store Connect and wanted a calm, read-only, on-device dashboard with no ad SDKs, no third-party servers, and no surprises on the privacy label. So we built one."
+  bio: "AppMeta Pulse exists because checking App Store revenue on a phone has been quietly broken for a decade. Apple's official App Store Connect app focuses on management — submitting builds, replying to reviews, editing metadata — not on the 10-second \"how did yesterday do?\" glance that indie publishers actually need. Web-based dashboards run $9.99+/month and route your data through third-party analytics. Other iPhone trackers charge more and collect usage data for advertising. We ship 18 apps through App Store Connect and wanted a calm, read-only, on-device dashboard with no ad SDKs, no third-party servers, and no surprises on the privacy label. So we built one."
   support_email: "lagerland.apps@proton.me"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
-    - "Lagerland Apps publishes 15+ apps through App Store Connect — AppMeta Pulse is the dashboard we use every day on our own portfolio"
+    - "Lagerland Apps publishes 18 apps through App Store Connect — AppMeta Pulse is the dashboard we use every day on our own portfolio"
     - "Zero third-party SDKs, zero advertising trackers, zero collected data — declared on the App Store privacy label and verifiable in the per-app Privacy Manifest"
     - "Architecture: App Store Connect API key in system Keychain, direct HTTPS to Apple — your data never touches Lagerland servers"
     - "Funded by honest paid software — no ads, no investor pressure, no growth-hacking"

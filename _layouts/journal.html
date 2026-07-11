@@ -85,7 +85,7 @@ layout: default
   {% include quick-answer.html %}
 
   <section class="section reveal">
-    <div class="prose" style="max-width:720px;margin:0 auto;">
+    <div class="prose">
       {{ content }}
     </div>
   </section>
@@ -93,7 +93,7 @@ layout: default
   {% if page.faq %}
   <section id="faq" class="section reveal">
     <div class="section-center"><p class="overline">Questions</p><h2 class="h2">Frequently asked</h2></div>
-    <div class="faq" style="max-width:720px;margin:0 auto;">
+    <div class="faq" style="margin:0 auto;">
       {%- for item in page.faq -%}
       <details class="faq-item"{% if forloop.first %} open{% endif %}>
         <summary>{{ item.q }}</summary>

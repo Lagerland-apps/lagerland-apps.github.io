@@ -81,6 +81,7 @@ seo:
     - strip exif metadata mac
 
 hero:
+  device: mac
   headline: "Every media tool. One app for iPhone & Mac."
   subheadline: "152 local tools for video, audio, image, PDF, and archives. Drop a file — MediaKit picks the right one. Nothing uploaded, ever."
   cta_label: "Download Free"

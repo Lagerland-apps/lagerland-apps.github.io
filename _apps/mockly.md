@@ -52,6 +52,7 @@ seo:
     - indie developer screenshot tool
 
 hero:
+  device: mac
   pre_headline: "App Store screenshots. Done right."
   headline: "App Store Screenshot Maker for Mac."
   subheadline: "Real 3D device frames rendered in Metal. AI translation across 39 App Store locales. Direct upload to App Store Connect, by device and language. Everything on your Mac — no browser, no server, no upload of your pre-release screenshots to anyone."
@@ -185,7 +186,7 @@ founder:
     - "Native macOS app — Metal-rendered, sandboxed, notarised, no Electron wrapper"
     - "App Privacy nutrition label lists zero data collected"
     - "No analytics SDKs, no third-party trackers, no growth team — a one-person studio with a long-term commitment to the app"
-    - "19 live apps in the catalogue, all under the same privacy philosophy: no tracking, no ads, no required accounts"
+    - "18 live apps in the catalogue, all under the same privacy philosophy: no tracking, no ads, no required accounts"
   external_link:
     label: "More apps from Lagerland Apps →"
     href: "/apps/"

@@ -158,7 +158,7 @@ seo:
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">Honest comparisons · 100 pages · No inflated claims</p>
+    <p class="overline">Honest comparisons · 95 pages · No inflated claims</p>
     <h1 class="h1">Privacy-first<br><span class="gradient-text">alternatives.</span></h1>
     <p class="lead">Honest, non-hostile comparisons between Lagerland Apps and 70+ mainstream apps people are most often coming from. Every page explains what's genuinely different — and tells you, when relevant, when to stick with what you have.</p>
   </div>
@@ -169,7 +169,7 @@ seo:
 <section class="section--lg reveal">
   <div class="section-center">
     <p class="overline">By category</p>
-    <h2 class="h2">All 100 comparisons</h2>
+    <h2 class="h2">All {{ site.pages | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 }} comparisons</h2>
   </div>
 
   <div class="section reveal">

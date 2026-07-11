@@ -78,3 +78,16 @@ Recommended: `who_for`/`who_not_for`, `founder`, `value_points`, `features`, `ho
 
 ## Deploy notes
 - An automated "Sync App Store ratings" job pushes to `main` periodically — if a push is rejected, `git fetch` + `git rebase origin/main` (it only touches `_apps/*.md` rating fields, so it won't conflict with content edits) and push again.
+
+---
+
+## Design system v3 "Paper & Ink" (redesign, 2026-07-11)
+
+- **Tokens**: `assets/css/style.css` — `:root` is the LIGHT "paper" theme; `@media (prefers-color-scheme: dark)` holds the "ink" theme. All theming lives in those two blocks; components must reference tokens, never hard-coded colors.
+- **Fonts**: self-hosted latin subsets in `assets/fonts/` — Inter variable 400–600 (UI/body) + Newsreader 500–600 roman & 500 italic (display/headings). Preloaded in `head.html`. Do not add third-party font hosts.
+- **Motion contract**: content must NEVER be hidden without JS. `head.html` sets `html.js` before first paint; reveal CSS applies only under `html.js`, and `animations.js` has a 2.5s force-visible safety net. Any stat animated by `[data-count]` must have its REAL value server-rendered in the text node (crawlers must never see "0").
+- **Device frames**: app-page heroes and the screenshots carousel wrap shots in the pure-CSS iPhone bezel (`.framed-shot`). Mac apps with landscape shots opt out via `hero: device: mac` in front matter (currently appmeta, mediakit, mockly). Set this flag for any future app whose screenshots aren't portrait-iPhone.
+- **Counts are computed**: app counts come from `{{ site.apps | where: "status", "live" | size }}` and comparison counts from `site.pages | where_exp` — never hardcode 18/95 in new copy (prose in _apps founder signals is the one place literals remain; keep them in sync when adding an app).
+- **Homepage transparency sample** is generated from `_data/transparency.yml` (same source as /transparency/) — edit the data file, not the table.
+- `scripts/`, `README.md`, `2.png` are excluded from the build (`_config.yml`); /scripts/* is no longer served publicly.
+- `/for/` now has a hub page (for/index.html) — new audience pages must be added to its card grid + ItemList JSON-LD and to llms.txt.

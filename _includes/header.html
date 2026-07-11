@@ -1,10 +1,10 @@
 <header class="topbar">
-  <div class="container topbar-inner">
+  <div class="topbar-inner">
     <a class="brand" href="/">
-      <img class="brand-mark" src="{{ site.url }}/assets/icons/lagerland-mark.png" alt="Lagerland" width="34" height="34" decoding="async">
+      <img class="brand-mark" src="{{ site.url }}/assets/icons/lagerland-mark.png" alt="Lagerland" width="30" height="30" decoding="async">
       <span class="brand-name">Lagerland</span>
     </a>
-    <button class="nav-toggle" aria-label="Menu">
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
         <line x1="4" y1="7" x2="20" y2="7"/>
         <line x1="4" y1="12" x2="20" y2="12"/>
@@ -12,19 +12,11 @@
       </svg>
     </button>
     <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/apps/">Apps</a>
-      <a href="/journal/">Journal</a>
-      <a href="/lagerland-apps/">About</a>
-      <a href="/support/">Support</a>
-      <a class="nav-search" href="/apps/" aria-label="Search apps">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
-          <circle cx="11" cy="11" r="7"/>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-        </svg>
-        <span>Search</span>
-        <kbd>⌘K</kbd>
-      </a>
+      <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
+      <a href="/apps/"{% if page.url contains "/apps/" %} aria-current="page"{% endif %}>Apps</a>
+      <a href="/journal/"{% if page.url contains "/journal/" %} aria-current="page"{% endif %}>Journal</a>
+      <a href="/lagerland-apps/"{% if page.url contains "/lagerland-apps/" %} aria-current="page"{% endif %}>About</a>
+      <a href="/support/"{% if page.url == "/support/" %} aria-current="page"{% endif %}>Support</a>
     </nav>
   </div>
 </header>

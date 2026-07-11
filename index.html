@@ -2,7 +2,7 @@
 layout: default
 title: Lagerland Apps
 seo:
-  title: "Lagerland Apps — 15 Private, No-Tracking iOS & Mac Apps"
+  title: "Lagerland Apps — 18 Private, No-Tracking iOS & Mac Apps"
   description: "Indie Apple studio in Finland: 18 privacy-first iPhone, iPad, Watch and Mac apps. No advertising SDKs, no IDFA, no accounts — EU-built, GDPR-default."
   keywords:
     - privacy-first iOS apps
@@ -196,7 +196,9 @@ seo:
 <section class="section reveal">
   <div class="trust-bar">
     <div class="trust-item">
-      <span class="trust-value" data-count="{{ live_apps.size }}" data-suffix="">0</span>
+      {%- comment %} Real value server-rendered — JS only replays it as a
+        count-up. Crawlers and no-JS visitors must never see "0". {% endcomment -%}
+      <span class="trust-value" data-count="{{ live_apps.size }}" data-suffix="">{{ live_apps.size }}</span>
       <span class="trust-label">Apps Published</span>
     </div>
     {%- if total_reviews > 0 %}
@@ -357,7 +359,8 @@ seo:
   <div class="section-center">
     <p class="overline">Compared to mainstream apps</p>
     <h2 class="h2">Honest, non-hostile comparisons</h2>
-    <p class="lead">15 side-by-side comparisons — one per app — against the mainstream apps most people are coming from. Four shown here; the rest live on the alternatives hub.</p>
+    {%- assign comparison_count = site.pages | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 -%}
+    <p class="lead">{{ comparison_count }} side-by-side comparisons against the mainstream apps most people are coming from. Four shown here; the rest live on the alternatives hub.</p>
   </div>
   <div class="grid grid-2 stagger compared-to-grid">
     <a class="card card-compared" href="/alternatives/strong-workout-app/">
@@ -429,67 +432,36 @@ seo:
     <p class="lead">The "no tracking" claim, made specific. A representative sample of how every Lagerland app handles your data — and how Apple's own Privacy Nutrition Labels back it up.</p>
   </div>
 
+  {%- comment %} Rows are generated from _data/transparency.yml (the same
+    audited dataset that drives /transparency/) so the homepage sample can
+    never drift from the source of truth again. Only structured fields are
+    shown here; the prose detail lives on the transparency page. {% endcomment -%}
+  {%- assign sample_slugs = "observa,taskful-day,gymlogger-x,allpaid,mediakit,appmeta" | split: "," -%}
   <div class="transparency-table-wrap">
     <table class="transparency-table">
       <thead>
         <tr>
           <th scope="col">App</th>
-          <th scope="col">Network calls</th>
-          <th scope="col">Account required</th>
+          <th scope="col">Tracking&nbsp;domains</th>
           <th scope="col">3rd-party SDKs</th>
-          <th scope="col">Data leaves device</th>
+          <th scope="col">Account required</th>
           <th scope="col">Analytics</th>
         </tr>
       </thead>
       <tbody>
+        {%- for s in sample_slugs -%}
+          {%- assign row = site.data.transparency.apps | where: "slug", s | first -%}
+          {%- assign app = site.apps | where: "slug", s | first -%}
+          {%- if row and app -%}
         <tr>
-          <th scope="row"><a href="/apps/observa/">Observa</a></th>
-          <td>None</td>
-          <td>No</td>
-          <td>None</td>
-          <td>No</td>
-          <td>None</td>
+          <th scope="row"><a href="{{ app.url }}">{{ app.name }}</a></th>
+          <td>{{ row.tracking_domains | default: 0 }}</td>
+          <td>{% if row.third_party_sdks == 0 %}None{% else %}{{ row.third_party_sdks }} — {{ row.third_party_sdks_list | map: "name" | join: ", " }}{% endif %}</td>
+          <td>{% if row.account_required == false %}No{% else %}Your own Apple&nbsp;ID (via&nbsp;Apple){% endif %}</td>
+          <td>{{ row.analytics | default: "None." }}</td>
         </tr>
-        <tr>
-          <th scope="row"><a href="/apps/taskful-day/">Taskful Day</a></th>
-          <td>iCloud sync only</td>
-          <td>No</td>
-          <td>None</td>
-          <td>Your iCloud only</td>
-          <td>None</td>
-        </tr>
-        <tr>
-          <th scope="row"><a href="/apps/gymlogger-x/">GymLogger X</a></th>
-          <td>None</td>
-          <td>No</td>
-          <td>None</td>
-          <td>No</td>
-          <td>None</td>
-        </tr>
-        <tr>
-          <th scope="row"><a href="/apps/allpaid/">AllPaid</a></th>
-          <td>None</td>
-          <td>No</td>
-          <td>None</td>
-          <td>No</td>
-          <td>None</td>
-        </tr>
-        <tr>
-          <th scope="row"><a href="/apps/mediakit/">MediaKit</a></th>
-          <td>None</td>
-          <td>No</td>
-          <td>None</td>
-          <td>No</td>
-          <td>None</td>
-        </tr>
-        <tr>
-          <th scope="row"><a href="/apps/appmeta/">AppMeta</a></th>
-          <td>Apple App Store Connect API only</td>
-          <td>Apple ID (yours, via Apple)</td>
-          <td>None</td>
-          <td>Your App Store Connect only</td>
-          <td>None</td>
-        </tr>
+          {%- endif -%}
+        {%- endfor -%}
       </tbody>
     </table>
     <p class="small transparency-footnote">

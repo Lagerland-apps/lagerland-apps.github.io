@@ -1,0 +1,74 @@
+---
+layout: default
+permalink: /for/
+title: "Who it's for"
+quick_answer: "The Lagerland audience hub maps privacy-first Apple apps to the people they were built for: shift workers who sleep at odd hours, Apple Health power users who already collect the data, indie iOS developers who live in App Store Connect, and anyone who wants planning tools without streaks or guilt mechanics. Each page recommends a small stack with the trade-offs explicit."
+seo:
+  title: "Who It's For — Privacy-First App Stacks by Audience"
+  description: "Privacy-first Apple app stacks matched to real people: shift workers, Apple Health power users, indie iOS developers, and calm-productivity fans."
+  keywords:
+    - apps for shift workers
+    - apple health power users
+    - indie ios developer tools
+    - calm productivity apps
+    - privacy-first app recommendations
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/for/#webpage",
+  "url": "{{ site.url }}/for/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Who it's for", "item": "{{ site.url }}/for/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Best iPhone Apps for Shift Workers", "url": "{{ site.url }}/for/shift-workers/" },
+      { "@type": "ListItem", "position": 2, "name": "Best Apps for Apple Health Power Users", "url": "{{ site.url }}/for/apple-health-power-users/" },
+      { "@type": "ListItem", "position": 3, "name": "Mac Tools for Indie iOS Developers", "url": "{{ site.url }}/for/indie-ios-developers/" },
+      { "@type": "ListItem", "position": 4, "name": "Calm Productivity Apps", "url": "{{ site.url }}/for/calm-productivity/" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Audience → stack</p>
+    <h1 class="h1">Built for people,<br><span class="gradient-text">not personas.</span></h1>
+    <p class="lead">Four short pages that match a small, privacy-first app stack to the way you actually live and work — with the trade-offs stated out loud.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="grid grid-2 stagger">
+    <a class="card card-app" href="/for/shift-workers/">
+      <div class="card-title">For shift workers</div>
+      <div class="card-text">Nurses, first responders, and rotating-schedule workers: track sleep around shifts, understand recovery, plan calm days — all on-device.</div>
+    </a>
+    <a class="card card-app" href="/for/apple-health-power-users/">
+      <div class="card-title">For Apple Health power users</div>
+      <div class="card-text">You already collect HRV, sleep, and activity data on Apple Watch. These apps turn it into plain-language answers — without uploading a single byte.</div>
+    </a>
+    <a class="card card-app" href="/for/indie-ios-developers/">
+      <div class="card-title">For indie iOS developers</div>
+      <div class="card-text">Native Mac apps for App Store Connect metadata, revenue dashboards, and App Store screenshots — no browser tabs, credentials stay in your Keychain.</div>
+    </a>
+    <a class="card card-app" href="/for/calm-productivity/">
+      <div class="card-title">For calm productivity</div>
+      <div class="card-text">A streak-free, ad-free planning stack: realistic days, calm reading, private countdowns. No flame counters, no guilt mechanics.</div>
+    </a>
+  </div>
+</section>

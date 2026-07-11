@@ -80,12 +80,14 @@
 
   <div class="hero-right reveal-scale">
     {% if include.app.hero.video %}
+      {%- assign _vtype = "video/mp4" -%}
+      {%- if include.app.hero.video contains ".mov" %}{% assign _vtype = "video/quicktime" %}{% endif -%}
       <div class="hero-media">
         <video
           autoplay muted loop playsinline preload="auto"
           poster="{{ include.app.hero.video_poster | default: include.app.og_image }}"
           class="hero-shot">
-          <source src="{{ include.app.hero.video }}" type="video/mp4">
+          <source src="{{ include.app.hero.video }}" type="{{ _vtype }}">
         </video>
       </div>
     {% else %}
@@ -103,9 +105,19 @@
         {%- assign first_platform = include.app.platforms | first -%}
         {%- assign hero_alt = include.app.name | append: " — " | append: hero_alt | append: " (" | append: first_platform | append: ")" -%}
       {%- endif -%}
+      {%- comment %} Portrait iPhone shots get the CSS device bezel; Mac apps
+        (hero.device: mac in front matter) keep the clean window card. {% endcomment -%}
+      {%- if include.app.hero.device == "mac" -%}
       <div class="hero-media">
         <img class="hero-shot" src="{{ hero_img }}" alt="{{ hero_alt }}" loading="eager" decoding="async" fetchpriority="high">
       </div>
+      {%- else -%}
+      <div class="hero-media hero-media--framed">
+        <div class="framed-shot framed-shot--lift">
+          <img class="hero-shot" src="{{ hero_img }}" alt="{{ hero_alt }}" loading="eager" decoding="async" fetchpriority="high">
+        </div>
+      </div>
+      {%- endif -%}
     {% endif %}
   </div>
 </section>
