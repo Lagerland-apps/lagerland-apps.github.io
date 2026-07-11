@@ -13,13 +13,14 @@ seo:
     - "interpreting apple health"
     - "health data analysis"
 date: 2026-05-13
+last_updated: 2026-07-11
 lede: "Apple Health is the largest passive health dataset most people will ever own — and almost nobody uses it for what it's actually good at. Here's a practical guide to which questions two weeks of data can answer, which ones need 60 days, and which ones it can't answer at all."
 quick_answer: "Two weeks of Apple Health data is enough to surface single-variable patterns — late workouts vs. deep sleep, caffeine timing vs. resting heart rate, screen time vs. sleep latency — provided you have at least 10 same-condition observations and you compare against a personal baseline rather than a population average. Multi-variable patterns and long-term trends need 60 days or more. Anything below ~14 days is noise. Anything claiming a 'recovery score' from 3 days of data is fitting to noise."
 faq:
   - q: "How much Apple Health data do you need before patterns become useful?"
     a: "Single-variable patterns surface reliably around 14 days, provided you have at least 10 observations of the same condition (e.g. 10 days where you trained legs after 18:00 vs. days you didn't). Multi-variable patterns (training load × caffeine × sleep) need 60 days. Long-term trends — seasonal HRV drift, training-load progression — need 90 days minimum."
   - q: "Is Apple Health data accurate enough for HRV interpretation?"
-    a: "For trend analysis, yes. Apple Watch HRV (specifically RMSSD) is measured at variable intervals — usually during inactivity and overnight — and its absolute number can drift between users and devices. But the rolling baseline against itself is reliable. Tracking your own lnRMSSD against a 60-day personal mean is sound; comparing your HRV to a stranger's is not."
+    a: "For trend analysis, yes. Apple Watch HRV (specifically SDNN) is measured at variable intervals — usually during inactivity and overnight — and its absolute number can drift between users and devices. But the rolling baseline against itself is reliable. Tracking your own SDNN against a 60-day personal mean is sound; comparing your HRV to a stranger's is not."
   - q: "What can Apple Health data not reveal?"
     a: "Causation. Correlation analysis can tell you that days you train legs after 18:00 your deep sleep drops 18% — but it can't prove the workout caused the drop. There may be a confounder (stress, caffeine timing, meeting load) you also do on those days. Treat insights as hypotheses worth testing for two weeks, not verdicts."
   - q: "Why does Observa use a 60-day baseline instead of a 30-day one?"
@@ -54,7 +55,7 @@ What 14 days **can't** give you yet: anything multi-variable, anything seasonal,
 
 ### Tier 2: 60 days for multi-variable correlations
 
-At around the 60-day mark, two things become possible. First, your personal baseline (the rolling mean and standard deviation for each metric — lnRMSSD, RHR, sleep efficiency, deep-sleep share, REM share) stabilises enough that deviations become meaningful. Second, you have enough non-overlapping weekly samples to run multi-variable analysis.
+At around the 60-day mark, two things become possible. First, your personal baseline (the rolling mean and standard deviation for each metric — HRV (SDNN), RHR, sleep efficiency, deep-sleep share, REM share) stabilises enough that deviations become meaningful. Second, you have enough non-overlapping weekly samples to run multi-variable analysis.
 
 Multi-variable means: not "did caffeine affect my HRV?" but "did caffeine *combined with screen time on the same evening* affect my HRV more than either alone?" That kind of compound pattern is where most of the actually useful self-knowledge lives. A late workout alone may cost you 4% deep sleep. A late workout *plus* a caffeinated afternoon may cost you 19%. The compound is the answer.
 
@@ -80,13 +81,13 @@ This is also why Observa shows the n (sample size) and confidence on every Pro i
 
 A lot of consumer health apps compute a single daily score: WHOOP-style 0–100 recovery, an Apple-Watch-style "Mind & Body Hello", Athlytic's recovery percentage, a Bevel-style biological age. These are useful as glanceable summaries. They're also opaque — you have very little visibility into *what's moving them* day to day.
 
-The principle Observa is built on is the opposite: never a single score, always the underlying metric measured against your own 60-day baseline. "Your lnRMSSD is 18% below your personal 60-day baseline" tells you something. "Your recovery is 58/100" tells you something *averaged* — and the moment you ask "why?", the score can't answer.
+The principle Observa is built on is the opposite: never a single score, always the underlying metric measured against your own 60-day baseline. "Your HRV (SDNN) is 18% below your personal 60-day baseline" tells you something. "Your recovery is 58/100" tells you something *averaged* — and the moment you ask "why?", the score can't answer.
 
 This is also why comparing your numbers to someone else's is almost always a waste of time. Absolute HRV varies enormously by age, sex, fitness, measurement timing, and which wrist your watch is on. The only meaningful comparison is *you, today, vs. you, on average, over the last two months.* That comparison is genuinely informative. Everything else is noise.
 
 ## A note on Apple Watch HRV specifically
 
-Apple Watch measures HRV (specifically the RMSSD metric) at variable times during the day and overnight, mostly when you're still. The absolute numbers are not directly comparable to chest-strap measurements or to numbers from a different watch. What is comparable is *your watch's reading of you over time*. Tracking the log-transformed version (lnRMSSD) against a 60-day mean is the right way to read it; comparing your raw number to a friend's is not.
+Apple Watch measures HRV as SDNN (the standard deviation of successive heartbeat intervals) at variable times during the day and overnight, mostly when you're still — not RMSSD, the metric most sports-science tools use. The absolute numbers are not directly comparable to chest-strap measurements or to numbers from a different watch. What is comparable is *your watch's reading of you over time*. Tracking that SDNN reading against a 60-day mean is the right way to read it; comparing your raw number to a friend's is not.
 
 Apple Watch also captures ECG sinus-rhythm data on Series 4 and later, which adds genuine recovery signal when interpreted in context. Sleep stage data (deep, REM, core, awake) comes from a combination of motion and heart rate variability — accurate enough for tracking trends, not accurate enough for clinical sleep staging.
 

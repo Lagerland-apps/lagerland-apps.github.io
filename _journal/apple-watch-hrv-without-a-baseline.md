@@ -13,19 +13,20 @@ seo:
     - "how to read hrv"
     - "hrv normal range"
 date: 2026-05-13
+last_updated: 2026-07-11
 lede: "A 42ms HRV reading on Apple Watch can be excellent, average, or alarming — and you can't tell which without context. The number on its own is one of the most-misread metrics in consumer health. Here's what HRV actually tells you, what it doesn't, and why a personal baseline is the only frame that makes the reading usable."
-quick_answer: "Raw HRV (heart-rate variability, usually reported as RMSSD on Apple Watch) is meaningful only against your own rolling baseline. Absolute HRV varies 3–10× between individuals based on age, sex, fitness, posture, measurement timing, and which wrist the watch is on. The right way to read your Apple Watch HRV is as a percent deviation from your personal 60-day mean. Comparing your number to a friend's, a population average, or a 'normal range' chart on the internet will almost always mislead you."
+quick_answer: "Raw HRV (heart-rate variability, reported as SDNN on Apple Watch) is meaningful only against your own rolling baseline. Absolute HRV varies 3–10× between individuals based on age, sex, fitness, posture, measurement timing, and which wrist the watch is on. The right way to read your Apple Watch HRV is as a percent deviation from your personal 60-day mean. Comparing your number to a friend's, a population average, or a 'normal range' chart on the internet will almost always mislead you."
 faq:
   - q: "Is 42ms HRV good or bad?"
     a: "It depends entirely on whose 42ms it is. For someone whose 60-day baseline is 38ms, 42ms is above average — a good recovery signal. For someone whose baseline is 80ms, 42ms is half their normal and likely signals significant stress, illness, or accumulated training load. The same absolute number is good news in one body and bad news in another. This is why every HRV-aware app worth using compares you to yourself."
   - q: "Why is Apple Watch HRV so different from chest-strap HRV?"
-    a: "Apple Watch measures HRV (RMSSD) at variable times during the day and overnight when you're still, using optical photoplethysmography. Chest straps measure continuously from electrical activity. The absolute numbers don't directly map — they're different measurements taken in different conditions. What does map is your watch's reading of you over time. Your trend is reliable; the absolute number compared to a chest-strap chart is not."
+    a: "Apple Watch measures HRV (SDNN) at variable times during the day and overnight when you're still, using optical photoplethysmography. Chest straps measure continuously from electrical activity. The absolute numbers don't directly map — they're different measurements taken in different conditions. What does map is your watch's reading of you over time. Your trend is reliable; the absolute number compared to a chest-strap chart is not."
   - q: "How much does HRV vary day to day for the same person?"
     a: "A lot. 10–25% day-to-day swings are normal for a healthy adult. That's why a single low reading is almost never meaningful — what matters is the 7-day rolling average against your 60-day baseline. Single-day HRV is mostly noise."
   - q: "Why does HRV drop in winter?"
     a: "Seasonal cardiovascular adaptation. Cold exposure, less daylight, lower aerobic activity, and altered sleep patterns all shift autonomic balance toward sympathetic dominance. A 10–20% winter dip is common and not pathological. Reading a winter dip as 'I'm broken' rather than 'winter HRV runs lower for me' is one of the most common interpretation mistakes."
-  - q: "What's the difference between RMSSD and lnRMSSD?"
-    a: "RMSSD is the raw root-mean-square of successive RR-interval differences (in milliseconds). lnRMSSD is its natural logarithm, used because HRV is log-normally distributed — taking the log makes the data approximately normal, which means standard statistics (means, standard deviations, p-values) actually apply. Sports science papers almost universally use lnRMSSD. Apple Watch reports RMSSD; converting is one operation."
+  - q: "Does Apple Watch report RMSSD, SDNN, or lnRMSSD?"
+    a: "SDNN. Apple Health stores Apple Watch HRV as SDNN — the standard deviation of the intervals between successive heartbeats — in milliseconds, and it is the only HRV metric HealthKit exposes. RMSSD (the root-mean-square of successive RR-interval differences) and its natural log, lnRMSSD, are the metrics sports science favours for parasympathetic tone, but they are different measurements from SDNN, so an Apple Watch reading is not simply 'converted' into RMSSD. Observa does compute RMSSD and pNN50 — but only from the occasional ECG recordings you take on your Apple Watch, not from the passive daily HRV stream, which is SDNN."
 mentioned_apps:
   - observa
 read_time: "7 min read"
@@ -38,13 +39,13 @@ Open the Health app and tap on Heart Rate Variability. You'll see a column of nu
 
 ## What HRV actually measures
 
-HRV — heart-rate variability — is the variation in time between consecutive heartbeats. Apple Watch specifically reports RMSSD, the root-mean-square of successive differences between RR intervals, in milliseconds. Higher generally means more parasympathetic ("rest-and-digest") nervous-system activity. Lower generally means more sympathetic ("fight-or-flight") activity. A consistently higher trend correlates with cardiovascular fitness, recovery quality, and parasympathetic dominance.
+HRV — heart-rate variability — is the variation in time between consecutive heartbeats. Apple Watch specifically reports SDNN, the standard deviation of the intervals between successive normal heartbeats (the NN, or RR, intervals), in milliseconds. Higher generally means more parasympathetic ("rest-and-digest") nervous-system activity. Lower generally means more sympathetic ("fight-or-flight") activity. A consistently higher trend correlates with cardiovascular fitness, recovery quality, and parasympathetic dominance.
 
 So far, so good. The trouble starts when the same words apply to two people whose absolute numbers differ by a factor of three.
 
 ## The variation between people is enormous
 
-Absolute HRV in healthy adults ranges roughly from 15ms to 150ms RMSSD. That's a 10× spread. The factors that move someone's individual baseline:
+Absolute HRV in healthy adults ranges roughly from 15ms to 150ms in SDNN terms. That's a 10× spread. The factors that move someone's individual baseline:
 
 - **Age.** HRV declines roughly 0.5–1ms per year after age 30 in most longitudinal studies. A 45-year-old with 35ms HRV and a 25-year-old with 70ms may both be in perfect parasympathetic health for their age.
 - **Sex.** Average HRV is somewhat lower in adult women than men, though the variation within each sex is much larger than the difference between sexes.
@@ -59,7 +60,7 @@ In other words: HRV is one of those biological metrics where *yours* is the only
 
 The only HRV reading that's reliably interpretable is one of these:
 
-- **"Today's lnRMSSD is X% above/below my own 7-day rolling average."**
+- **"Today's HRV (SDNN) is X% above/below my own 7-day rolling average."**
 - **"This week's mean is X% above/below my own 60-day rolling average."**
 
 Both are statements about you against yourself. Both compensate for nearly every confounder above — age doesn't change in 60 days, sex doesn't change, your fitness doesn't change dramatically, your watch is the same watch. What does change is what *moved your physiology this week relative to last quarter*. That's the question worth asking.
@@ -90,13 +91,13 @@ A few practical rules that fall out of all this:
 
 2. **Track trends, not points.** A single day's HRV is mostly noise. The 7-day rolling mean is signal. The 60-day baseline is the frame that makes the signal interpretable.
 
-3. **Use the log version (lnRMSSD) for analysis.** HRV is log-normally distributed. Means and standard deviations on raw RMSSD are technically wrong; on lnRMSSD they're approximately right.
+3. **Read it as a deviation from your own baseline, not a raw number.** HRV is roughly log-normally distributed, so the same millisecond gap means more at a low baseline than a high one. Comparing today's SDNN to your personal rolling mean as a percentage deviation is what makes it interpretable.
 
 4. **Identify your stressors.** If your HRV consistently drops after late workouts, after alcohol, after high screen time, that's actionable. The drop itself isn't the problem — the unknown cause is.
 
 5. **Expect seasonal drift.** Winter lower, summer higher is normal. Pandemic, illness, life stress, a new baby — all expected baseline movers. The baseline is a moving frame, not an absolute reference.
 
-[Observa](/apps/observa/) does this automatically: it computes your 60-day rolling lnRMSSD baseline, scores each day's reading against your own deviation, and tells you in plain English when something is genuinely outside your normal range — and when it isn't. Everything runs on-device, so the only comparison Observa ever makes is *you, today, against you, on average*. That's the only HRV comparison that's worth making.
+[Observa](/apps/observa/) does this automatically: it computes your 60-day rolling HRV (SDNN) baseline, scores each day's reading against your own deviation, and tells you in plain English when something is genuinely outside your normal range — and when it isn't. Everything runs on-device, so the only comparison Observa ever makes is *you, today, against you, on average*. That's the only HRV comparison that's worth making.
 
 ## TL;DR
 
@@ -104,6 +105,6 @@ A few practical rules that fall out of all this:
 - **Your 60-day rolling baseline is the only frame that makes HRV usable.** Day-to-day swings of 10–25% are normal.
 - **Trends matter, single points don't.** Three consecutive days more than one SD below baseline is signal; one day is noise.
 - **Winter HRV runs lower than summer.** Seasonal drift is normal. Pathologising it is the common error.
-- **Use lnRMSSD for analysis.** Raw RMSSD is log-normally distributed; standard stats don't apply directly.
+- **Read SDNN as a deviation from your own baseline.** HRV is roughly log-normally distributed, so compare each day to your personal mean as a percentage, not to raw millisecond thresholds.
 
 The number was always there in your Health app. The only thing that's been missing is the frame that makes it informative.

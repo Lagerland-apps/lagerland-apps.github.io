@@ -13,8 +13,9 @@ seo:
     - "apple health data"
     - "health metrics worth tracking"
 date: 2026-05-13
+last_updated: 2026-07-11
 lede: "Apple Health collects more than 80 distinct health metrics. Most of them are noise, vanity numbers, or sensor data you have no useful frame for. Here's the practical short list: the six that actually move with your habits and reward interpretation, the twelve that look meaningful but mostly aren't, and how to tell the difference."
-quick_answer: "Of the 80+ metrics Apple Health collects, only about six reward sustained interpretation: lnRMSSD (HRV), resting heart rate, sleep efficiency, deep-sleep share, heart-rate dip during sleep, and active energy weekly. The rest — step count, standing hours, daily move ring, cardio recovery — are either redundant, biased, or have such weak signal-to-noise that you'll waste attention on them. The trick to using Apple Health well is knowing which numbers are worth a 60-day baseline and which you should stop opening the app to check."
+quick_answer: "Of the 80+ metrics Apple Health collects, only about six reward sustained interpretation: HRV (SDNN), resting heart rate, sleep efficiency, deep-sleep share, heart-rate dip during sleep, and active energy weekly. The rest — step count, standing hours, daily move ring, cardio recovery — are either redundant, biased, or have such weak signal-to-noise that you'll waste attention on them. The trick to using Apple Health well is knowing which numbers are worth a 60-day baseline and which you should stop opening the app to check."
 faq:
   - q: "Why don't step count and active calories make the short list?"
     a: "Step count is a near-perfect proxy for 'did you wear your watch'. It doesn't distinguish a deliberate walk from running errands, and a 6,000-step day with intentional movement is often metabolically equivalent to a 12,000-step day of urban drift. Active calories on Apple Watch are an algorithmic estimate from heart rate plus motion, with error bands of ±20–30% — fine for spotting trends, useless for the kind of precision the number's three-significant-figure display implies."
@@ -42,11 +43,11 @@ This post is the short list, with the reasoning for each cut.
 
 These are the metrics where consistent attention pays back in actual self-knowledge. Each has good signal-to-noise on weekly timescales, moves measurably with habits you control, and has stable enough baselines to make deviations meaningful.
 
-### 1. lnRMSSD (HRV)
+### 1. HRV (SDNN)
 
-The log-transformed heart-rate variability number is the single most informative metric Apple Watch collects. It integrates autonomic nervous system state, recovery, training adaptation, alcohol load, sleep quality, and acute stress into one number — and changes measurably within 24–48 hours of a habit shift.
+Heart-rate variability — which Apple Watch records as SDNN, the standard deviation of the intervals between successive heartbeats — is the single most informative metric it collects. It integrates autonomic nervous system state, recovery, training adaptation, alcohol load, sleep quality, and acute stress into one number — and changes measurably within 24–48 hours of a habit shift.
 
-Caveat: only meaningful against your own 60-day baseline. Absolute lnRMSSD varies wildly between people. See [the dedicated post on why](/journal/apple-watch-hrv-without-a-baseline/).
+Caveat: only meaningful against your own 60-day baseline. Absolute HRV (SDNN) varies wildly between people. See [the dedicated post on why](/journal/apple-watch-hrv-without-a-baseline/).
 
 ### 2. Resting heart rate (RHR)
 
@@ -162,7 +163,7 @@ For most people, getting useful self-knowledge out of Apple Health is less a tra
 ## TL;DR
 
 **The 6 worth interpreting** (each on a 60-day personal baseline):
-1. **lnRMSSD (HRV)** — the single most informative number
+1. **HRV (SDNN)** — the single most informative number
 2. **Resting heart rate** — illness and fitness trend signal
 3. **Sleep efficiency** — most actionable sleep metric
 4. **Deep-sleep share** — what most habits actually move
