@@ -1,0 +1,53 @@
+name: IndexNow ping
+
+# Notify IndexNow (Bing, Yandex, et al.) when content changes, so they
+# re-crawl within minutes. The site itself is built by GitHub Pages'
+# default branch build; this is a separate, additive job that only pings
+# the API — it never touches the build or the deploy.
+#
+# All logic lives in scripts/indexnow-ping.py; the steps below stay one
+# line each on purpose (multi-line `run: |` blocks have bitten us before).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "_apps/**"
+      - "_journal/**"
+      - "alternatives/**"
+      - "for/**"
+      - "guides/**"
+      - "_includes/**"
+      - "_layouts/**"
+      - "_data/**"
+      - "_config.yml"
+      - "**/*.html"
+      - "**/*.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    # Skip the automated "Sync App Store ratings" bot: it only rewrites
+    # rating fields and would resubmit unchanged pages on every sync,
+    # which IndexNow explicitly discourages. Manual runs (workflow_dispatch)
+    # always proceed.
+    if: ${{ github.event_name == 'workflow_dispatch' || !startsWith(github.event.head_commit.message, 'Sync App Store ratings') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Wait for the Pages build to publish the change
+        run: sleep 90
+      - name: Ping IndexNow for changed pages
+        run: python3 scripts/indexnow-ping.py --changed "${{ github.event.before }}"
