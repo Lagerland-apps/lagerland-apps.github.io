@@ -919,11 +919,6 @@ html.js .dot--live { animation: livePulse 2.4s ease-in-out infinite; }
     background: var(--bg-2);
     max-width: 340px;
   }
-  @media (prefers-color-scheme: dark) {
-    .qr-install { background: #FFFFFF; border-color: transparent; }
-    .qr-install__copy { color: rgba(25, 27, 35, 0.7); }
-    .qr-install__copy strong { color: #191B23; }
-  }
   .qr-install__img { width: 72px; height: 72px; flex: none; }
   .qr-install__copy {
     font-size: var(--text-xs);
@@ -933,6 +928,14 @@ html.js .dot--live { animation: livePulse 2.4s ease-in-out infinite; }
     gap: 2px;
   }
   .qr-install__copy strong { color: var(--text-primary); font-weight: 600; }
+  /* Dark mode keeps the panel white so the QR code scans reliably —
+     the text must therefore stay ink-on-white. This block has to come
+     AFTER the base rules above (same specificity, source order wins). */
+  @media (prefers-color-scheme: dark) {
+    .qr-install { background: #FFFFFF; border-color: transparent; }
+    .qr-install__copy { color: rgba(25, 27, 35, 0.7); }
+    .qr-install__copy strong { color: #191B23; }
+  }
 }
 
 /* ----------------------------------------------------------------
