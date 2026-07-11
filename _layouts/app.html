@@ -291,7 +291,7 @@ layout: default
   {%- assign price_model = page.price.model | downcase -%}
   <div class="sticky-cta" id="sticky-cta" data-hidden="true">
     <div class="sticky-cta__inner">
-      <img class="sticky-cta__icon" src="{{ page.icon }}" alt="" width="40" height="40" loading="lazy" decoding="async">
+      <img class="sticky-cta__icon" src="{{ page.icon }}" alt="{{ page.name }} app icon" width="40" height="40" loading="lazy" decoding="async">
       <div class="sticky-cta__meta">
         <span class="sticky-cta__name">{{ page.name }}</span>
         {%- if price_model contains 'one-time' -%}

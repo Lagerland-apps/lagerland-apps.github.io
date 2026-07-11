@@ -32,7 +32,7 @@
       via CSS (.qr-install is display:none until the wide breakpoint). {% endcomment -%}
     {%- assign _qr = "/assets/qr/" | append: include.app.slug | append: ".svg" -%}
     <div class="qr-install" aria-hidden="true">
-      <img class="qr-install__img" src="{{ _qr }}" alt="" width="88" height="88" loading="lazy" decoding="async">
+      <img class="qr-install__img" src="{{ _qr }}" alt="QR code to install {{ include.app.name }} on the App Store" width="88" height="88" loading="lazy" decoding="async">
       <div class="qr-install__copy">
         <strong>On your Mac?</strong>
         <span>Point your iPhone camera here to install.</span>
