@@ -21,11 +21,17 @@
         {%- capture shot_alt %}{{ include.app.name }} screenshot {{ forloop.index }}{% endcapture -%}
         {%- assign shot_caption = nil -%}
       {%- endif -%}
-      {%- comment %} Gallery shots are clean rounded screenshots (rounded corners +
-        soft shadow via .shot img). The full device bezel is reserved for the single
-        hero image — repeating it across the whole carousel reads heavy and cluttered. {% endcomment -%}
+      {%- comment %} iPhone gallery shots use the same device bezel as the hero
+        (.framed-shot framed-shot--lift) so the framing is consistent everywhere.
+        Mac apps render in the clean window card instead. {% endcomment -%}
       <figure class="shot{% if include.app.hero.device == 'mac' %} shot--window{% endif %}">
+        {%- if include.app.hero.device == "mac" -%}
         <img src="{{ shot_src }}" alt="{{ shot_alt }}" loading="lazy">
+        {%- else -%}
+        <div class="framed-shot framed-shot--lift">
+          <img src="{{ shot_src }}" alt="{{ shot_alt }}" loading="lazy">
+        </div>
+        {%- endif -%}
         {%- if shot_caption -%}
         <figcaption class="shot-caption">{{ shot_caption }}</figcaption>
         {%- endif -%}

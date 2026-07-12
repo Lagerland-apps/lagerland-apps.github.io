@@ -1043,22 +1043,35 @@ html.js .dot--live { animation: livePulse 2.4s ease-in-out infinite; }
 
 .shot {
   flex: 0 0 auto;
-  width: min(260px, 72vw);
+  width: min(290px, 74vw);
   margin: 0;
   scroll-snap-align: center;
   text-align: center;
 }
-.shot img {
+/* Mac (window-card) shots: plain rounded screenshot. */
+.shot--window img {
   display: block;
   width: 100%;
-  border-radius: var(--r-xl);
+  border-radius: var(--r-lg);
   border: 1px solid var(--border-1);
   box-shadow: var(--elev-2);
   background: var(--bg-2);
   transition: box-shadow var(--dur-md) var(--ease-smooth), transform var(--dur-md) var(--ease-smooth);
 }
-.shot--window img { border-radius: var(--r-lg); }
-.shot:hover img { box-shadow: var(--elev-3); transform: translateY(-2px); }
+.shot--window:hover img { box-shadow: var(--elev-3); transform: translateY(-2px); }
+
+/* iPhone gallery shots: same device bezel as the hero. */
+.shot .framed-shot { display: block; width: 100%; }
+.shot .framed-shot img {
+  display: block;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  border-radius: 30px;
+  background: #0B0D1A;
+}
+.shot .framed-shot { transition: transform var(--dur-md) var(--ease-smooth); }
+.shot:hover .framed-shot { transform: translateY(-3px); }
 
 .shot-caption {
   margin-top: var(--s-2);
