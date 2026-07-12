@@ -21,8 +21,9 @@
         {%- capture shot_alt %}{{ include.app.name }} screenshot {{ forloop.index }}{% endcapture -%}
         {%- assign shot_caption = nil -%}
       {%- endif -%}
-      {%- comment %} iPhone gallery shots use the same device bezel as the hero
-        (.framed-shot framed-shot--lift) so the framing is consistent everywhere.
+      {%- comment %} iPhone gallery shots use the same .framed-shot bezel as the
+        hero (minus the hero's --lift shadow, which the scroll container would
+        clip — see .shot .framed-shot in style.css for the contained shadow).
         Mac apps render in the clean window card instead. {% endcomment -%}
       <figure class="shot{% if include.app.hero.device == 'mac' %} shot--window{% endif %}">
         {%- if include.app.hero.device == "mac" -%}
