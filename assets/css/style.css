@@ -1034,7 +1034,10 @@ html.js .dot--live { animation: livePulse 2.4s ease-in-out infinite; }
   gap: var(--s-4);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding: var(--s-2) var(--s-1) var(--s-4);
+  /* Generous top/bottom padding so each frame's soft shadow is NOT clipped
+     by the scroll container's implicit overflow-y — clipping was turning the
+     shadow into a hard grey box and made the frames look flat vs the hero. */
+  padding: 20px var(--s-1) 44px;
   scrollbar-width: none;
   cursor: grab;
 }
@@ -1043,7 +1046,7 @@ html.js .dot--live { animation: livePulse 2.4s ease-in-out infinite; }
 
 .shot {
   flex: 0 0 auto;
-  width: min(290px, 74vw);
+  width: min(320px, 78vw); /* same frame width as the hero */
   margin: 0;
   scroll-snap-align: center;
   text-align: center;
@@ -1060,8 +1063,28 @@ html.js .dot--live { animation: livePulse 2.4s ease-in-out infinite; }
 }
 .shot--window:hover img { box-shadow: var(--elev-3); transform: translateY(-2px); }
 
-/* iPhone gallery shots: same device bezel as the hero. */
-.shot .framed-shot { display: block; width: 100%; }
+/* iPhone gallery shots: same device bezel as the hero, but with a compact
+   shadow that fits inside the scroll container (the hero's huge --lift
+   shadow gets clipped here). Bezel geometry is otherwise identical. */
+.shot .framed-shot {
+  display: block;
+  width: 100%;
+  transition: transform var(--dur-md) var(--ease-smooth);
+  box-shadow:
+    inset 0 0 0 1.5px rgba(255, 255, 255, 0.09),
+    inset 0 1px 2px rgba(255, 255, 255, 0.16),
+    0 14px 26px -14px rgba(25, 27, 35, 0.35),
+    0 0 0 0.5px rgba(0, 0, 0, 0.55);
+}
+@media (prefers-color-scheme: dark) {
+  .shot .framed-shot {
+    box-shadow:
+      inset 0 0 0 1.5px rgba(255, 255, 255, 0.09),
+      inset 0 1px 2px rgba(255, 255, 255, 0.16),
+      0 16px 30px -14px rgba(0, 0, 0, 0.6),
+      0 0 0 0.5px rgba(0, 0, 0, 0.55);
+  }
+}
 .shot .framed-shot img {
   display: block;
   width: 100%;
@@ -1070,7 +1093,6 @@ html.js .dot--live { animation: livePulse 2.4s ease-in-out infinite; }
   border-radius: 30px;
   background: #0B0D1A;
 }
-.shot .framed-shot { transition: transform var(--dur-md) var(--ease-smooth); }
 .shot:hover .framed-shot { transform: translateY(-3px); }
 
 .shot-caption {
