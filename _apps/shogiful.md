@@ -95,7 +95,7 @@ hero:
   headline: "The shogi teacher that speaks your language."
   subheadline: "Shogiful analyzes your games with YaneuraOu, explains your mistakes in plain English, and builds training around your real weaknesses — drops, promotions, castle defense, endgame attacks. Western piece sets mean you never need to read kanji to play. 10 AI opponents, tsume puzzles, fully offline. Free with Premium from $1.99/month."
   cta_label: "Download Free"
-  alt: "Shogiful — shogi game on a kaya wood board being analyzed on iPhone, with plain-language move commentary and Western piece set"
+  alt: "Shogiful — a shogi game in progress on a 3D wooden board on iPhone, mid-game against the AI opponent Kiri"
 
 who_for:
   - "You know chess and are curious about shogi — from anime, board-game nights, or pure curiosity — but bounced off the kanji pieces"
@@ -263,12 +263,20 @@ roadmap:
   disclaimer: "Roadmap last reviewed 2026-06-11. Targeted dates can slip; shipped items are live on the App Store."
 
 screenshots:
-  - "/assets/screenshots/shogiful/1.png"
-  - "/assets/screenshots/shogiful/2.png"
-  - "/assets/screenshots/shogiful/3.png"
-  - "/assets/screenshots/shogiful/4.png"
-  - "/assets/screenshots/shogiful/5.png"
-  - "/assets/screenshots/shogiful/6.png"
+  - src: "/assets/screenshots/shogiful/1.png"
+    caption: "Play a full game on a 3D wooden board against the AI opponent roster."
+  - src: "/assets/screenshots/shogiful/2.png"
+    caption: "Dashboard — rating, streak, today's training and your last game at a glance."
+  - src: "/assets/screenshots/shogiful/3.png"
+    caption: "Mistake detail — the engine shows the stronger move and explains it in plain English."
+  - src: "/assets/screenshots/shogiful/4.png"
+    caption: "Game review with accuracy, blunders, mistakes and best moves after every game."
+  - src: "/assets/screenshots/shogiful/5.png"
+    caption: "Daily training built around your real weaknesses, with adjustable session length."
+  - src: "/assets/screenshots/shogiful/6.png"
+    caption: "Progress tracking — estimated rating, accuracy trend and a per-skill profile."
+  - src: "/assets/screenshots/shogiful/7.png"
+    caption: "Play ladder — climb a roster of named AI opponents from novice to expert."
 
 privacy:
   data_collection: "none"
