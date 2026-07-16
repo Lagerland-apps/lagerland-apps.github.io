@@ -144,7 +144,7 @@ founder:
     - "100% on-device — no EarnLock server, ever (verified by Apple's App Privacy nutrition label: Data Not Collected)"
     - "Zero third-party SDKs — no Firebase, Mixpanel, Amplitude, Segment, ad networks, or crash reporters"
     - "Family Controls authorized in `.individual` mode only — EarnLock is self-restriction software, never parental control"
-    - "Lagerland's App Store catalogue is 18 privacy-first apps, all with the same data discipline"
+    - "Lagerland's App Store catalogue is 19 privacy-first apps, all with the same data discipline"
   external_link:
     href: "/lagerland-apps/"
     label: "Read the Lagerland studio backstory →"
