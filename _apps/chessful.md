@@ -125,7 +125,7 @@ founder:
     - "Stockfish runs on-device — no cloud analysis, no rate-limited daily quota, no account"
     - "Forty distinct AI opponents engineered to feel like forty different players, not one engine at forty noise settings (see the [forty-opponents journal post](/journal/forty-chess-opponents/) for the design note)"
     - "Privacy Manifest declares zero tracking domains and no required-reason APIs beyond local storage"
-    - "18 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
+    - "19 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"

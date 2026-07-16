@@ -22,7 +22,7 @@ faq:
   - q: "How is Lagerland Apps funded if there are no ads?"
     a: "Through honest paid software: one-time purchases, optional Pro subscriptions, and freemium tiers with permanently free core features. No advertising, no data sales, no dark patterns."
   - q: "How many apps does Lagerland Apps publish?"
-    a: "Lagerland Apps currently publishes 18 live apps across health, daily planning, finance, reading, fitness, games, Apple developer tools, and utilities — all for Apple platforms."
+    a: "Lagerland Apps currently publishes 19 live apps across health, daily planning, finance, reading, fitness, games, Apple developer tools, and utilities — all for Apple platforms."
   - q: "Does Lagerland Apps collect any user data?"
     a: "No. Every app ships with zero third-party analytics, no advertising SDKs, and no required accounts. User data stays on-device wherever possible; any sync uses the user's own iCloud account."
   - q: "What platforms does Lagerland Apps build for?"

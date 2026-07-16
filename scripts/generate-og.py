@@ -13,7 +13,7 @@ hand-made cards.
 
 Usage:
     python3 scripts/generate-og.py                 # all apps
-    python3 scripts/generate-og.py --only pawza shogiful
+    python3 scripts/generate-og.py --only zen-2048 shogiful
     python3 scripts/generate-og.py --dry-run       # list what would render
 """
 
@@ -68,6 +68,7 @@ ACCENT = {
     "soon":          "#9D8CF5",
     "taskful-day":   "#3FC79A",
     "wanderwiki":    "#2FAACB",
+    "zen-2048":      "#F2B24A",
 }
 
 TAGLINE = {
@@ -96,12 +97,13 @@ META = {
     "soon":          "Free · Beautiful countdowns · Widgets · iPhone",
     "taskful-day":   "Free · Calm planning · iPhone · iPad · Mac · Watch",
     "wanderwiki":    "Swipe Wikipedia · 33 languages · Ad-free · iPhone",
+    "zen-2048":      "Free · True 3D · 17 themes · No ads · iPhone",
 }
 
 VARIANT = {"driftlines": "light"}
 
 # Pick a specific screenshot when the first one is a busy marketing collage.
-SHOT = {}
+SHOT = {"zen-2048": "2.png"}
 
 
 def b64_font(name):
