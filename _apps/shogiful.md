@@ -337,9 +337,9 @@ show_body: true
 about_heading: "What Shogiful does — shogi training, analysis, and a board you can read"
 
 ratings:
-  value: "5.0"
-  count: 1
-  last_synced: "2026-07-13"
+  value: "3.0"
+  count: 2
+  last_synced: "2026-07-18"
 ---
 Shogiful is a [shogi training & analysis app for iPhone, iPad, and Mac](#features) — shogi being the Japanese form of chess, played on a 9×9 board where captured pieces return to play. It's built around a simple observation: the biggest barrier to shogi outside Japan isn't the rules, it's the kanji on the pieces. Shogiful ships [Western piece sets with movement indicators](#features) so the board is readable from your first game ([the design story is documented in the journal](/journal/making-shogi-readable-without-kanji/)), then backs the playing experience with the thing improving players actually need — a real engine reviewing every move and explaining mistakes in sentences instead of evaluation numbers.
 
