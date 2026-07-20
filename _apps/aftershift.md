@@ -229,12 +229,9 @@ release:
   last_updated: "2026-04-03"
 
 ratings:
-  value: "4.3"
-  count: 3
-  last_synced: "2026-07-19"related_journal:
-  slug: building-a-sleep-app-for-night-shifts
-  anchor: "Why we built AfterShift — and what generic sleep apps get wrong about night-shift life"
-
+  value: "3.8"
+  count: 4
+  last_synced: "2026-07-20"
 show_body: true
 about_heading: "Why AfterShift exists."
 
