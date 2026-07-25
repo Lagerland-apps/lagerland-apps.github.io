@@ -99,21 +99,6 @@ apps:
     permissions: []
     notes: "Game analysis is performed by the locally bundled engine, not a cloud service."
 
-  - slug: driftlines
-    manifest_source: submission
-    tracking_declared: false
-    tracking_domains: 0
-    third_party_sdks: 0
-    third_party_sdks_list: []
-    account_required: false
-    network_calls: "None. Daily prose is delivered from content bundled in the app and updated via App Store updates."
-    data_leaves_device: "No."
-    analytics: "None."
-    collected_data: []
-    required_reason_apis: []
-    permissions: []
-    notes: "Reading-only app. No feeds, no telemetry, no notifications."
-
   - slug: earnlock
     manifest_source: submission
     tracking_declared: false

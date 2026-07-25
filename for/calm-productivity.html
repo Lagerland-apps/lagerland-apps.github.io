@@ -2,10 +2,10 @@
 layout: default
 permalink: /for/calm-productivity/
 title: "Calm Productivity Apps"
-quick_answer: "The calmest productivity stack for iPhone, iPad, and Mac is Taskful Day (realistic daily planning, no streaks), Soon (life-event countdowns), Driftlines (one daily fictional read, no feed), and Observa (Apple Health interpretation). Together they replace gamified planners and engagement-driven feeds with private, single-purpose tools that don't manufacture guilt for missed days."
+quick_answer: "The calmest productivity stack for iPhone, iPad, and Mac is Taskful Day (realistic daily planning, no streaks), Soon (life-event countdowns), and Observa (Apple Health interpretation). Together they replace gamified planners and engagement-driven feeds with private, single-purpose tools that don't manufacture guilt for missed days."
 seo:
   title: "Calm Productivity Apps for iPhone, iPad & Mac — No Streaks"
-  description: "A streak-free, ad-free planning stack for iPhone, iPad & Mac: Taskful Day, Soon, Driftlines, Observa. Realistic days, calm reading, private countdowns."
+  description: "A streak-free, ad-free planning stack for iPhone, iPad & Mac: Taskful Day, Soon, Observa. Realistic days, private countdowns, honest self-awareness."
   keywords:
     - calm productivity apps iPhone
     - calm productivity apps Mac
@@ -25,7 +25,7 @@ seo:
     - cross-platform planner Apple
 ---
 
-{%- assign slugs = "taskful-day,soon,driftlines,observa" | split: "," -%}
+{%- assign slugs = "taskful-day,soon,observa" | split: "," -%}
 {%- assign apps_for = '' | split: '' -%}
 {%- for slug in slugs -%}{%- assign m = site.apps | where: "slug", slug | first -%}{%- if m and m.status == "live" -%}{%- assign apps_for = apps_for | push: m -%}{%- endif -%}{%- endfor -%}
 
@@ -58,7 +58,7 @@ seo:
   "mainEntity": [
     { "@type": "Question", "name": "What is a calm productivity app?", "acceptedAnswer": { "@type": "Answer", "text": "A calm productivity app is designed around finishing a realistic day rather than chasing streaks, points, or engagement metrics. It avoids gamification, has no feed, and doesn't pressure you with guilt mechanics. Taskful Day is an example built around exactly this." } },
     { "@type": "Question", "name": "What's the best alternative to streak-based planners?", "acceptedAnswer": { "@type": "Answer", "text": "Taskful Day is a no-streak daily planner that focuses on realistic task completion. There's no streak counter, no punishment for missing a day, and no red-X motivation. It's built for people who find streak anxiety counterproductive." } },
-    { "@type": "Question", "name": "Are these apps good for people with ADHD?", "acceptedAnswer": { "@type": "Answer", "text": "Many users with ADHD prefer calm, single-purpose apps over feature-maximalist productivity suites. Taskful Day's realistic-day framing, Soon's visual countdowns, and Driftlines' short-form reading format are all designed to reduce overwhelm rather than add to it." } },
+    { "@type": "Question", "name": "Are these apps good for people with ADHD?", "acceptedAnswer": { "@type": "Answer", "text": "Many users with ADHD prefer calm, single-purpose apps over feature-maximalist productivity suites. Taskful Day's realistic-day framing and Soon's visual countdowns are both designed to reduce overwhelm rather than add to it." } },
     { "@type": "Question", "name": "Do any of these apps sell my data?", "acceptedAnswer": { "@type": "Answer", "text": "No. None of the apps contain third-party analytics or advertising SDKs, none require accounts, and all user data stays on-device. The apps are funded by honest paid downloads and optional Pro upgrades." } },
     { "@type": "Question", "name": "Is there a calm daily planner that works on Mac as well as iPhone and iPad?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Taskful Day is now available as a native Mac app alongside iPhone and iPad, with iCloud sync keeping the same day visible on every device. One Universal Purchase covers all three platforms — no separate Mac license." } }
   ]
@@ -88,7 +88,7 @@ seo:
 <section id="stack" class="section--lg reveal">
   <div class="section-center">
     <p class="overline">The stack</p>
-    <h2 class="h2">Four apps, one philosophy</h2>
+    <h2 class="h2">Three apps, one philosophy</h2>
   </div>
   <div class="grid grid-2 stagger">
     {%- for app in apps_for -%}{% include app-card.html app=app %}{%- endfor -%}
@@ -100,7 +100,6 @@ seo:
   <div class="grid grid-2 stagger">
     <div class="card"><div class="card-title">Taskful Day → realistic daily planning, now on Mac</div><div class="card-text">Plan the day you'll actually have, not the day you wish you'd have. No streaks, no guilt, no red marks for missed days. Native on iPhone, iPad, and Mac with iCloud sync — plan at the desk, capture on the phone, review on the iPad.</div></div>
     <div class="card"><div class="card-title">Soon → life-event countdowns</div><div class="card-text">Trips, weddings, birthdays, milestones. Living photo countdowns, plan mode with smart checklists, and widgets for every iOS screen size.</div></div>
-    <div class="card"><div class="card-title">Driftlines → calm daily reading</div><div class="card-text">One daily fictional prose entry, typography-first design, no feed, no social features. A calm reading habit instead of doomscrolling.</div></div>
     <div class="card"><div class="card-title">Observa → self-awareness layer (bonus)</div><div class="card-text">If you track Apple Health, Observa shows you what your calm routine is actually doing to your sleep and energy — in plain language, not charts.</div></div>
   </div>
 </section>
@@ -110,7 +109,7 @@ seo:
   <div class="faq">
     <details class="faq-item" open><summary>What is a calm productivity app?</summary><div class="faq-a">A calm productivity app is designed around finishing a realistic day rather than chasing streaks, points, or engagement metrics. It avoids gamification, has no feed, and doesn't pressure you with guilt mechanics. Taskful Day is an example built around exactly this.</div></details>
     <details class="faq-item"><summary>What's the best alternative to streak-based planners?</summary><div class="faq-a">Taskful Day is a no-streak daily planner that focuses on realistic task completion. There's no streak counter, no punishment for missing a day, and no red-X motivation. It's built for people who find streak anxiety counterproductive.</div></details>
-    <details class="faq-item"><summary>Are these apps good for people with ADHD?</summary><div class="faq-a">Many users with ADHD prefer calm, single-purpose apps over feature-maximalist productivity suites. Taskful Day's realistic-day framing, Soon's visual countdowns, and Driftlines' short-form reading format are all designed to reduce overwhelm rather than add to it.</div></details>
+    <details class="faq-item"><summary>Are these apps good for people with ADHD?</summary><div class="faq-a">Many users with ADHD prefer calm, single-purpose apps over feature-maximalist productivity suites. Taskful Day's realistic-day framing and Soon's visual countdowns are both designed to reduce overwhelm rather than add to it.</div></details>
     <details class="faq-item"><summary>Do any of these apps sell my data?</summary><div class="faq-a">No. None of the apps contain third-party analytics or advertising SDKs, none require accounts, and all user data stays on-device. The apps are funded by honest paid downloads and optional Pro upgrades.</div></details>
     <details class="faq-item"><summary>Is there a calm daily planner that works on Mac as well as iPhone and iPad?</summary><div class="faq-a">Yes. Taskful Day is now available as a native Mac app alongside iPhone and iPad, with iCloud sync keeping the same day visible on every device. One Universal Purchase covers all three platforms — no separate Mac license.</div></details>
   </div>

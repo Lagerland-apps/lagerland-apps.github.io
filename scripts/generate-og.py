@@ -55,7 +55,6 @@ ACCENT = {
     "appmeta-pulse": "#6C6CF5",
     "appmeta":       "#4D6BF5",
     "chessful":      "#CF9A4E",
-    "driftlines":    "#9A8156",
     "earnlock":      "#7FCB7F",
     "gymlogger-x":   "#2FC4C0",
     "liftlog":       "#E3A23C",
@@ -84,7 +83,6 @@ META = {
     "appmeta-pulse": "Free · Read-only App Store Connect · iPhone",
     "appmeta":       "App Store Connect, native · $17.99/yr · Mac",
     "chessful":      "Free · Mistake analysis · iPhone · iPad · Mac",
-    "driftlines":    "Daily prose · One-time $59.99 · iPhone",
     "earnlock":      "$19.99 lifetime · No account · iPhone + Watch",
     "gymlogger-x":   "Free · Apple Watch · No account · iPhone",
     "liftlog":       "Pay once · Feels like equipment · iPhone",
@@ -100,7 +98,7 @@ META = {
     "zen-2048":      "Free · True 3D · 17 themes · No ads · iPhone",
 }
 
-VARIANT = {"driftlines": "light"}
+VARIANT = {}
 
 # Pick a specific screenshot when the first one is a busy marketing collage.
 SHOT = {"zen-2048": "2.png"}
