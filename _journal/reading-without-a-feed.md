@@ -26,7 +26,6 @@ faq:
     a: "No. WanderWiki has no account, no signup, and no Wikipedia login. It reads public Creative Commons content from Wikipedia directly. There is no infinite scroll, no streak counter, no notification engineering, and no profile attached to your reading."
 mentioned_apps:
   - wanderwiki
-  - zen-2048
 read_time: "5 min read"
 excerpt: "An essay about replacing feed-based reading with a calmer Wikipedia client. Why ‘For-You without behavioral tracking’ is technically possible, what offline reading enables, and why a Today-in-History feed is the one piece of editorial scaffolding the app does keep."
 ---
@@ -81,6 +80,6 @@ Daily active users is a noisy number for an app like this anyway. The right numb
 
 ## Where this fits in a privacy-first catalogue
 
-[WanderWiki](/apps/wanderwiki/) sits next to [Zen 2048](/apps/zen-2048/) (a no-ads 3D puzzle) and a small handful of other apps in this catalogue that all share a posture: the *replacement for the feed* doesn't have to be productive, but it should be calm, finite, and yours.
+[WanderWiki](/apps/wanderwiki/) sits alongside a small handful of other apps in this catalogue that all share a posture: the *replacement for the feed* doesn't have to be productive, but it should be calm, finite, and yours.
 
 It's a Saturday in early February. The internet is doing whatever the internet does. If you've been looking for something to fill the small windows that used to be filled by something worse, you could do worse than three Wikipedia articles and a quiet kitchen.

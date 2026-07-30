@@ -125,7 +125,7 @@ founder:
     - "33 Wikipedia language editions supported with per-language category mappings — verified in the WanderWikiShared package's allowlist"
     - "Privacy Manifest declares no tracking domains and no third-party SDKs — on-device SwiftData only"
     - "Funded by honest paid software — no ads, no investor pressure, no engagement-maximisation telemetry"
-    - "19 live apps in the catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
+    - "18 live apps in the catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"
