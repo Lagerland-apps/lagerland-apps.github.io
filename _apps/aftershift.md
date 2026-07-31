@@ -229,10 +229,9 @@ release:
   last_updated: "2026-04-03"
 
 ratings:
-  value: "3.8"
-  count: 4
-  last_synced: "2026-07-20"
-show_body: true
+  value: "3.6"
+  count: 5
+  last_synced: "2026-07-31"show_body: true
 about_heading: "Why AfterShift exists."
 
 # Studio identity (Organization-mode founder block — no personal name).
