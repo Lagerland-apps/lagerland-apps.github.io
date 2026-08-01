@@ -326,9 +326,8 @@ release:
 
 ratings:
   value: "5.0"
-  count: 2
-  last_synced: "2026-04-15"
-
+  count: 3
+  last_synced: "2026-08-01"
 # Surface the Plan Mode methodology post directly on the app page —
 # information-gain content tied back to the page's strongest feature claim.
 related_journal:
