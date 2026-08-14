@@ -13,6 +13,7 @@ seo:
     - "local image converter mac"
     - "mediakit"
 date: 2026-03-28
+last_updated: 2026-08-14
 lede: "Almost every online image converter you've used in the last decade uploaded your file to a server you don't control, processed it there, and gave you back a download. The convenience is real. The privacy implication is not small. MediaKit is the studio's argument that 133 of those tools should run on your Mac instead."
 quick_answer: "Online image, video, audio, and PDF converters upload private files to operator infrastructure that holds them well after the conversion is done. MediaKit is a Mac app that runs 133 equivalent tools locally — including HEIC bulk, video compression, PDF redaction, and RAR v5 extraction on Apple Silicon — with full Shortcuts support. Five tools are free forever."
 faq:
@@ -32,7 +33,7 @@ excerpt: "MediaKit is a Mac app with 133 local conversion tools — video compre
 
 Pick the most recent moment in the last week when you needed to convert a media file. A HEIC photo to JPG, a video compressed for Slack, a PDF merged with another PDF, a screen recording's audio extracted to MP3.
 
-If you're like most users, you used a free online converter. You uploaded the file to *cloudconverter.com* or *ilovepdf.com* or *tinypng.com* or one of a hundred near-identical sites. You waited. You downloaded the result. You moved on.
+If you're like most users, you used a free online converter. You uploaded the file to *cloudconverter.com* or *ilovepdf.com* or *tinypng.com* or one of a hundred near-identical sites. You waited. You downloaded the result. You moved on. The same reflex reaches documents with your home address printed on them — [vet paperwork, for one](/journal/vet-paperwork-stays-on-your-phone/).
 
 Almost none of those tools needed your file to leave your device. The convenience is real, but the privacy posture is structurally wrong, and [MediaKit](/apps/mediakit/) is the studio's argument that the entire category of conversion tools belongs on your Mac instead.
 

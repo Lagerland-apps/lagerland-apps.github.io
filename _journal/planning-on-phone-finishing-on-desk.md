@@ -4,7 +4,7 @@ slug: planning-on-phone-finishing-on-desk
 title: "The day I plan on my phone is not the day I finish at my desk"
 seo:
   title: "Why a Daily Planner Should Be a Native Mac App"
-  description: "Taskful Day is a calm daily planner built native for Mac, not a stretched iPhone window — one Universal Purchase across iPhone, iPad, and Mac. Why native wins."
+  description: "Taskful Day is a calm daily planner built native for Mac, not a stretched iPhone window — one Universal Purchase across iPhone, iPad and Mac."
   keywords:
     - "mac daily planner"
     - "native mac planner app"
@@ -13,6 +13,7 @@ seo:
     - "universal purchase planner"
     - "taskful day"
 date: 2026-05-02
+last_updated: 2026-08-14
 lede: "Taskful Day shipped on the Mac this week. This is the small essay on why a calm daily planner had to be a native Mac app — not a stretched-iPhone Catalyst window — and why it's one Universal Purchase across iPhone, iPad, and Mac instead of three separate licenses."
 quick_answer: "Taskful Day is now native on macOS alongside iPhone and iPad, built in SwiftUI with AppKit underpinnings rather than Catalyst. The three platforms share one Universal Purchase, so Pro unlocked on iPhone activates the Mac app automatically. Sync runs through the user's own iCloud account via CloudKit. The studio operates no servers and stores no tasks."
 faq:

@@ -38,7 +38,7 @@ plans:
     summary: "Full Pro, billed monthly. Cancel anytime."
     features:
       - "Smart Program Creator (PPL, Upper/Lower, Arnold, Bro Split — linear, DUP, block, wave)"
-      - "Plateau detection (the published ~2% / nine-session rule)"
+      - "Plateau detection (the published adaptive-threshold rule)"
       - "Muscle imbalance ratios (push:pull, quad:hamstring, biceps:triceps)"
       - "RPE distribution + training load analytics"
       - "Wilks (2020), DOTS, Sinclair calculators"
@@ -121,7 +121,7 @@ founder:
 # Plateau detection transparency — the algorithm rule disclosed publicly
 plateau_disclosure:
   title: "How GymLogger X plateau detection actually works"
-  rule: "Pro flags a plateau on an exercise when its estimated 1RM has moved less than ~2% across nine or more consecutive sessions of consistent effort — same exercise, comparable RPE, equal or higher volume. The exact thresholds are tuned over time as we collect more training data; we update this page when they change."
+  rule: "Pro flags a plateau on an exercise when two signals agree across your four most recent non-deload sessions: estimated 1RM (Epley) has stopped clearing an improvement threshold computed from your own 90-day rate of gain on that lift — clamped between 0.05% and 1% per session — while total volume has not fallen more than 3%, meaning you are working at least as hard for no more strength. Confirming also requires either a fatigue signal or a sustained run of six or more sessions, plus a computed confidence score above 0.4; below that the flag is suppressed rather than shown to you. Three sessions meeting the same strength-and-volume test raise an earlier Monitoring flag instead. Detection stays off entirely for your first 12 weeks of training, and lifts where you are already gaining under 0.1% per session are routed to a separate trend analysis, because a four-session window cannot tell 0.08% from zero. Thresholds are tuned as we collect more training data; we update this page when they change."
   what_it_does_not_do: "It will not auto-restructure your program. It will not nag you with notifications. It surfaces the flag on the exercise page with possible causes — training frequency, recovery, exercise selection, technique — and lets you decide. Programming changes are the lifter's call, not the app's."
 
 # Method note — the same algorithm as plateau_disclosure, but structured as
@@ -132,11 +132,11 @@ how_it_works:
   intro: "GymLogger X turns logged sets into a plateau warning using a transparent three-step rule. No machine-learning black box — you can audit every step."
   steps:
     - title: "Estimate 1RM from every working set"
-      detail: "Each set's load and reps are converted to an estimated 1RM using the Epley formula (weight × (1 + reps / 30)). For sets above six reps, Brzycki is used as a cross-check. The session's per-exercise e1RM is the highest credible value across its working sets — warmups and back-off sets are excluded so a deload week doesn't trigger a false plateau."
-    - title: "Roll a nine-session window across the same exercise"
-      detail: "GymLogger X compares your most recent e1RM against a rolling window of the previous nine sessions of the same lift. The window only counts sessions with comparable effort — defined as a similar RPE / RIR range and equal or higher total set-volume — so light technique days and recovery weeks don't dilute the signal."
+      detail: "Each set's load and reps are converted to an estimated 1RM using the Epley formula (weight × (1 + reps / 30)). Sets above ten reps are not allowed to seed the estimate, because Epley drifts badly out there. The session's per-exercise e1RM is the highest credible value across its working sets, and deload sessions are dropped from the analysis entirely so a light week cannot manufacture a flat trend."
+    - title: "Compare against a threshold built from your own rate of gain"
+      detail: "Rather than one fixed percentage for everybody, GymLogger X measures how fast you have actually been gaining on that lift over the last 90 days and uses that as the bar, clamped between 0.05% and 1% per session. It then fits a trend line through your four most recent non-deload sessions. Detection needs at least eight sessions on the lift, relaxed to five if you train it infrequently."
     - title: "Surface the flag, list the causes, leave the call to you"
-      detail: "If the rolling e1RM has moved less than ~2% across that window, the exercise is flagged as stalling on its detail page. The flag lists possible causes (training frequency, recovery, exercise selection, technique). It does not auto-restructure your program, does not nag you with push notifications, and does not show a recovery score. Programming changes are the lifter's call, not the app's."
+      detail: "If the trend fails to clear your threshold while total volume holds within 3%, the exercise is flagged on its detail page — as Monitoring after three such sessions, and as a confirmed plateau after four, provided a fatigue signal or a six-session run backs it up and the confidence score clears 0.4. The flag lists possible causes (training frequency, recovery, exercise selection, technique). It does not auto-restructure your program, does not nag you with push notifications, and does not show a recovery score. Programming changes are the lifter's call, not the app's."
 
 who_for:
   - "You do strength training and want a fast, minimalist log — not a social fitness feed"
@@ -188,7 +188,7 @@ value_points:
   - title: "Programs that adapt to you"
     description: "Smart Program Creator builds periodized PPL, Upper/Lower, Full Body, Arnold, or Bro Split — linear, DUP, block, or wave — with automatic deloads. Tell it your equipment, schedule, and injuries."
   - title: "Plateau detection that's actually transparent"
-    description: "Pro flags a plateau when e1RM moves under ~2% across nine consecutive sessions of comparable effort. No black-box AI — the rule is published in plain English so you can argue with it."
+    description: "Pro flags a plateau when e1RM stops clearing a threshold set by your own 90-day rate of gain while volume holds steady. No black-box AI — the rule is published in plain English so you can argue with it."
   - title: "Cheapest lifetime tier. Local data. Open exports."
     description: "$39.99 lifetime — cheaper than Hevy's $74.99 or Strong's $99.99 lifetime, and Fitbod doesn't offer one. All data on-device with optional iCloud sync. CSV and Apple Health export in the free tier — your history is yours."
 
@@ -196,13 +196,13 @@ features:
   - title: "Smart Program Creator"
     description: "Tell GymLogger X your goals, equipment, schedule, experience level, and injury history. It generates a periodized program — linear, DUP, block, or wave — with injury-safe exercise selection, RPE-based load prescription, and automatic deload weeks. Supports PPL, Upper/Lower, Full Body, Arnold, and Bro Split. Not random workouts."
   - title: "Plateau detection (no black box)"
-    description: "Pro insights flag stalls when an exercise's estimated 1RM moves under ~2% across nine consecutive sessions of comparable effort. Muscle imbalance detection (push:pull, quad:hamstring, biceps:triceps ratios), training load tracking, and fatigue monitoring help you read your own training. The rule is published — see below."
+    description: "Pro insights flag stalls when an exercise's estimated 1RM stops clearing a threshold built from your own recent rate of gain, while total volume holds steady. Muscle imbalance detection (push:pull, quad:hamstring, biceps:triceps ratios), training load tracking, and fatigue monitoring help you read your own training. The rule is published — see below."
   - title: "Coach-designed programs"
     description: "Premium programs built by named strength coaches with structured periodization, progressive overload, and clear week-by-week guidance. Hypertrophy, powerlifting foundations, intermediate peaking blocks. One-time purchases — no rented programming."
   - title: "Apple Watch that actually works"
     description: "Full workout logging from your wrist. Quick set entry, RPE prompt, rest timers, live heart rate, and glanceable stats. Syncs automatically when you're done. Not a companion app — the primary client."
   - title: "Numbers serious lifters actually use"
-    description: "Personal records, estimated 1RM (Epley + Brzycki), volume trends, weekly summaries, RPE distribution, Wilks and DOTS for powerlifters, and training consistency — all visualised clearly. Per-exercise PR analytics at 1/3/5/10 reps. Warmup calculator for working sets."
+    description: "Personal records, estimated 1RM (Epley), volume trends, weekly summaries, RPE distribution, Wilks and DOTS for powerlifters, and training consistency — all visualised clearly. Per-exercise PR analytics at 1/3/5/10 reps. Warmup calculator for working sets."
   - title: "Templates, supersets, giant sets"
     description: "Save any workout as a template. Reuse it next week with one tap. Supersets and giant sets are native, not workarounds. Drop sets, rest-pause, AMRAP — all first-class. Consistency becomes effortless."
 
@@ -241,7 +241,7 @@ faq:
   - q: "What is GymLogger X?"
     a: "GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — a private alternative to Strong, Hevy, and Fitbod. It includes 1,500+ exercises with animated demos, the Smart Program Creator, RPE and 1RM tracking, plateau detection, coach-designed programs, and full Apple Watch logging. Free at the core; Pro from $1.99/month, $17.99/year, or $39.99 lifetime."
   - q: "How is GymLogger X different from Strong, Hevy, and Fitbod?"
-    a: "Four practical differences. First, no account is required — Strong, Hevy, and Fitbod all need one. Second, Apple Watch is treated as the primary logging surface, not a companion display. Third, the lifetime tier is $39.99 — cheaper than Hevy's $74.99 or Strong's $99.99 lifetime, and Fitbod doesn't offer one. Fourth, the plateau detection rule is published in plain English (e1RM under ~2% across nine consecutive sessions of comparable effort) rather than hidden inside opaque AI."
+    a: "Four practical differences. First, no account is required — Strong, Hevy, and Fitbod all need one. Second, Apple Watch is treated as the primary logging surface, not a companion display. Third, the lifetime tier is $39.99 — cheaper than Hevy's $74.99 or Strong's $99.99 lifetime, and Fitbod doesn't offer one. Fourth, the plateau detection rule is published in plain English (e1RM failing to clear a threshold set by your own 90-day rate of gain, while volume holds steady) rather than hidden inside opaque AI."
   - q: "What is the Smart Program Creator?"
     a: "It generates personalised periodised training based on your goals, equipment, schedule, experience level, and injury history. Supports PPL, Upper/Lower, Full Body, Arnold, and Bro Split with linear, DUP, block, or wave periodisation, RPE-based load prescription, and automatic deload weeks. The program adapts week-to-week as you log sets — it doesn't just print a static spreadsheet."
   - q: "Does GymLogger X support RPE and RIR?"
@@ -251,7 +251,7 @@ faq:
   - q: "Does GymLogger X work on Apple Watch without the iPhone?"
     a: "Yes. Apple Watch is the primary log — set entry, RPE prompt, rest timers, live heart rate, and glanceable stats all work standalone. Sessions sync to iPhone automatically when you're done. You do not need to bring your phone to the gym."
   - q: "How does the plateau detection algorithm work?"
-    a: "Plateau detection flags an exercise when its estimated 1RM (Epley) has moved less than ~2% across nine or more consecutive sessions of consistent effort, where effort is gauged by comparable RPE and equal or higher set-volume. The exact thresholds are tuned as we collect more training data. The flag does not auto-restructure your program — it surfaces on the exercise page with possible causes (frequency, recovery, exercise selection, technique), and leaves the programming call to you."
+    a: "Plateau detection flags an exercise when its estimated 1RM (Epley) stops clearing an improvement threshold derived from your own 90-day rate of gain on that lift (clamped between 0.05% and 1% per session), across your four most recent non-deload sessions, while total volume has not dropped more than 3%. Confirming needs a fatigue signal or a six-session run behind it, and a confidence score above 0.4. The exact thresholds are tuned as we collect more training data. The flag does not auto-restructure your program — it surfaces on the exercise page with possible causes (frequency, recovery, exercise selection, technique), and leaves the programming call to you."
   - q: "Is GymLogger X free? What does Pro unlock?"
     a: "Core logging is free forever — exercise library, manual programs, basic progress, full Apple Watch logging, CSV and Apple Health export. Pro unlocks the Smart Program Creator, plateau detection, muscle imbalance analysis, RPE distribution and training load analytics, animated demos, and Wilks/DOTS/Sinclair. Pro is $1.99/month, $17.99/year, or $39.99 lifetime — pick the lifetime option if you plan to use the app for more than ~2 years. Lifetime supports Family Sharing — one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does GymLogger X need an account or internet connection?"
@@ -269,9 +269,13 @@ release:
   first_release: "2025-09-01"
   last_updated: "2026-05-13"
 
+related_journal:
+  slug: "choosing-a-strength-program-you-will-finish"
+  anchor: "PPL, Upper/Lower or 5/3/1 - choosing a program you will actually finish"
+
 ratings:
   value: "4.8"
   count: 17
   last_synced: "2026-06-22"
 ---
-GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — built as a private alternative to Strong, Hevy, and Fitbod with the cheapest lifetime tier ($39.99) and no account required. The Smart Program Creator builds personalised periodised training (PPL, Upper/Lower, Full Body, Arnold, Bro Split) with linear, DUP, block, or wave periodisation, RPE-based load prescription, and automatic deloads. Pro insights surface plateau detection (e1RM moves under ~2% across nine consecutive sessions of comparable effort), muscle imbalance analysis (push:pull, quad:hamstring, biceps:triceps), training load monitoring, and fatigue tracking. Coach-designed premium programs add structured periodisation and progressive overload. Apple Watch is the primary client — set entry, RPE, rest timers, live heart rate, and automatic iPhone sync. Tracks personal records, 1RM estimates (Epley + Brzycki), RPE distribution, volume trends, Wilks/DOTS/Sinclair, and training consistency. No ads, no accounts, no tracking, no AI nagging. Free at the core; Pro from $1.99/month, $17.99/year, or $39.99 lifetime.
+GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — built as a private alternative to Strong, Hevy, and Fitbod with the cheapest lifetime tier ($39.99) and no account required. The Smart Program Creator builds personalised periodised training (PPL, Upper/Lower, Full Body, Arnold, Bro Split) with linear, DUP, block, or wave periodisation, RPE-based load prescription, and automatic deloads. Pro insights surface plateau detection (e1RM failing to clear a threshold derived from your own recent rate of gain, while volume holds steady), muscle imbalance analysis (push:pull, quad:hamstring, biceps:triceps), training load monitoring, and fatigue tracking. Coach-designed premium programs add structured periodisation and progressive overload. Apple Watch is the primary client — set entry, RPE, rest timers, live heart rate, and automatic iPhone sync. Tracks personal records, 1RM estimates (Epley), RPE distribution, volume trends, Wilks/DOTS/Sinclair, and training consistency. No ads, no accounts, no tracking, no AI nagging. Free at the core; Pro from $1.99/month, $17.99/year, or $39.99 lifetime.

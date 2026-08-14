@@ -7,12 +7,13 @@ seo:
   description: "Four friends, a $312 bill, three steaks and one salad. RightSplit handles uneven shares, tax, and tip so splitting a dinner bill never gets weird."
   keywords:
     - "how to split a bill"
-    - "bill splitting app"
     - "split dinner bill"
     - "uneven bill split"
-    - "split bill with tax and tip"
+    - "splitting the bill on a date"
+    - "who pays for dinner"
     - "rightsplit"
 date: 2026-02-14
+last_updated: 2026-08-14
 lede: "It's the 14th. Somewhere right now, a group of four friends is staring at a $312 dinner bill, three of them ordered the steak, one ordered the salad, and someone is doing math on a napkin. RightSplit was built for that exact moment."
 quick_answer: "RightSplit handles item-level bill splitting from a single phone. One person scans the receipt, drags each line item onto the people who ordered it, and the app produces per-person amounts with Venmo, PayPal, or iMessage Cash deeplinks sent over iMessage or WhatsApp. Nobody else has to install anything. No shared account, no IOU ledger."
 faq:
@@ -23,7 +24,7 @@ faq:
   - q: "Is RightSplit better than splitting the bill equally?"
     a: "For two people, equal-split and item-level produce roughly the same result. For four people, item-level recovers around $20–$40 per dinner for whoever ordered modestly. For groups of ten, the swing can be $80–$150 per person, which is the point where equal-splitting turns a fun dinner into an awkward Venmo argument."
   - q: "How much does RightSplit cost?"
-    a: "The free tier of RightSplit covers equal-split and a tip calculator, which is enough for most two-person scenarios. Pro adds item-level splitting, uneven splits, per-person tip breakdowns, and split history for $1.99 a year or $7.99 lifetime."
+    a: "The free tier of RightSplit covers equal-split and a tip calculator, which is enough for most two-person scenarios. Pro adds item-level splitting, uneven splits, per-person tip breakdowns, and split history for $3.99 a year or $7.99 lifetime."
 mentioned_apps:
   - rightsplit
 read_time: "4 min read"
@@ -57,7 +58,7 @@ The version that lives in my head when I think about RightSplit's job:
 1. The receipt arrives. One person picks up the phone.
 2. They take a picture of the receipt. The app reads the items, prices, and tax.
 3. They drag each item onto a person's avatar. Bottle of wine? Drag it onto two people, the app splits it 50/50. Round of beers shared by three? Same. Steak? Drag onto the person who ordered it.
-4. Tip is calculated and distributed proportionally.
+4. Tip is calculated and distributed proportionally — [the arithmetic, worked all the way out](/journal/bill-splitting-math-tax-tip-shared-plates/).
 5. The app produces four small messages — one per person — with the exact amount and a payment app deeplink (Venmo, PayPal, iMessage Cash). The owner sends them in iMessage or WhatsApp.
 6. Done. The app remembers the split for future reference if the owner cares to look.
 
@@ -73,7 +74,7 @@ For four people, item-level splitting recovers an average of $20-40 per dinner o
 
 For ten people — bachelor parties, family dinners, work outings — item-level vs. equal-split can be a $80-150 swing per person. At that point, equal-splitting isn't just unfair; it's the thing that turns a fun dinner into an awkward Venmo argument the next morning.
 
-[RightSplit](/apps/rightsplit/) Pro adds item-level splitting, uneven splits (the person with the bigger appetite explicitly takes a 1.5× share), per-person tip breakdowns, and split history. $1.99 a year, or $7.99 lifetime. The free tier covers equal-split and tip calculator, which is enough for most two-person scenarios.
+[RightSplit](/apps/rightsplit/) Pro adds item-level splitting, uneven splits (the person with the bigger appetite explicitly takes a 1.5× share), per-person tip breakdowns, and split history. $3.99 a year, or $7.99 lifetime. The free tier covers equal-split and tip calculator, which is enough for most two-person scenarios.
 
 ## A note on small kindnesses
 

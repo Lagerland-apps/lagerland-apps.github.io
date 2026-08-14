@@ -13,6 +13,7 @@ seo:
     - "anti-doomscroll app"
     - "wanderwiki"
 date: 2026-02-07
+last_updated: 2026-08-14
 lede: "I deleted my last social-feed app in late 2024. The hardest part wasn't withdrawal. It was rebuilding a habit of reading something, anything, in the small windows that used to be filled by scrolling. WanderWiki was, more than anything else, the tool I built to give that habit somewhere to live."
 quick_answer: "WanderWiki is a calm Wikipedia client built as a feed replacement. It produces For-You-style relevance from explicit interest tags the user picks, never from behavioural tracking of taps or read time. A Today-in-History view gives the day a small editorial anchor. Articles are prefetched for full offline reading on flights. No account, no infinite scroll."
 faq:
@@ -50,7 +51,7 @@ The substrate was obvious. Wikipedia is the largest collection of well-written, 
 
 ## "For You" without surveillance
 
-The unsolved problem in non-feed reading apps is that pure randomness gets boring quickly. Wikipedia has six and a half million English articles. A truly random tap will give you *Italian municipality of 800 people*, *American politician (1820-1888)*, and *insect taxonomy* in a row, and the user will close the app.
+The unsolved problem in non-feed reading apps is that pure randomness gets boring quickly. Wikipedia has around seven million English articles, and [every language edition is a different encyclopedia](/journal/wikipedia-is-different-in-every-language/). A truly random tap will give you *Italian municipality of 800 people*, *American politician (1820-1888)*, and *insect taxonomy* in a row, and the user will close the app.
 
 Most apps solve this by tracking what you read, building a profile, and using that profile to weight the recommendations. This works, and it's also exactly the thing I deleted off my phone.
 

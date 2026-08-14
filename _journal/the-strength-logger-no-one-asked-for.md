@@ -13,25 +13,26 @@ seo:
     - "gym logger watch"
     - "gymlogger x"
 date: 2026-03-07
+last_updated: 2026-08-14
 lede: "Strong, Hevy, and Fitbod already exist. The strength-training logger market is well-served. I shipped GymLogger X anyway, and the reason isn't features — it's that nobody else seems to think Apple Watch deserves to be the actual workout log."
-quick_answer: "GymLogger X treats Apple Watch as the primary strength-training log, not a phone companion. Set entry, rest timers, and live heart rate live on the wrist; the iPhone is for analytics, program editing, and history. Pro adds plateau detection that informs without lecturing. Pricing is free core, $17.99 a year, or $44.99 lifetime."
+quick_answer: "GymLogger X treats Apple Watch as the primary strength-training log, not a phone companion. Set entry, rest timers, and live heart rate live on the wrist; the iPhone is for analytics, program editing, and history. Pro adds plateau detection that informs without lecturing. Pricing is free core, $17.99 a year, or $39.99 lifetime."
 faq:
   - q: "Is there a strength-training app that uses Apple Watch as the primary log?"
     a: "GymLogger X treats Apple Watch as the actual log, not a companion. Set entry, rest timers, and live heart rate live on the wrist where the phone usually is not. The iPhone is the companion for analytics, program editing, and history review, which benefit from a bigger screen."
   - q: "How is GymLogger X different from Strong, Hevy, or Fitbod?"
-    a: "Strong, Hevy, Fitbod, and Caliber are all phone-first apps that treat the watch as a mirror. GymLogger X inverts that. It is also free at the core, with $17.99 a year or a $44.99 lifetime tier — and roughly 30% of paid users pick lifetime because training history is a long-term asset."
+    a: "Strong, Hevy, Fitbod, and Caliber are all phone-first apps that treat the watch as a mirror. GymLogger X inverts that. It is also free at the core, with $17.99 a year or a $39.99 lifetime tier — and roughly 30% of paid users pick lifetime because training history is a long-term asset."
   - q: "Does GymLogger X automatically restructure my program when I plateau?"
-    a: "No. The plateau detection feature flags when an exercise has stalled for nine or more weeks across consistent effort and lists possible causes like training frequency, recovery, and exercise selection. It informs without lecturing. Programming changes are the lifter's call, not the app's."
+    a: "No. The plateau detection feature flags an exercise when its estimated 1RM stops clearing a threshold set by your own recent rate of gain while your volume holds steady, and lists possible causes like training frequency, recovery, and exercise selection. It informs without lecturing. Programming changes are the lifter's call, not the app's."
   - q: "Does GymLogger X work without a subscription?"
-    a: "Yes. Core logging is free forever. Pro adds plateau detection and analytics for $17.99 a year, with a $44.99 lifetime option for users who do not want a subscription on a tool they intend to use for a decade. LiftLog is the sister iPhone-first app with pay-what-you-can pricing."
+    a: "Yes. Core logging is free forever. Pro adds plateau detection and analytics for $17.99 a year, with a $39.99 lifetime option for users who do not want a subscription on a tool they intend to use for a decade. LiftLog is the sister iPhone-first app with pay-what-you-can pricing."
 mentioned_apps:
   - gymlogger-x
   - liftlog
 read_time: "5 min read"
-excerpt: "GymLogger X exists in a crowded category. This post explains the specific bet behind it: Apple Watch as a first-class logging client (not a phone companion), a $44.99 lifetime option, and plateau detection that doesn't lecture. With a small note on why daylight-saving weekend is the worst weekend to start a new training program."
+excerpt: "GymLogger X exists in a crowded category. This post explains the specific bet behind it: Apple Watch as a first-class logging client (not a phone companion), a $39.99 lifetime option, and plateau detection that doesn't lecture. With a small note on why daylight-saving weekend is the worst weekend to start a new training program."
 ---
 
-It's the first weekend of March. The clocks shift forward in the US tomorrow night, which makes this — by quirk of biology rather than calendar — the worst week of the year to start a new training program. More on that in a moment.
+It's the first weekend of March. The clocks shift forward in the US tomorrow night, which makes this — by quirk of biology rather than calendar — the worst week of the year to [start a new training program](/journal/choosing-a-strength-program-you-will-finish/). More on that in a moment.
 
 I want to use this weekend's post to explain something specific: why this studio shipped a strength-training logger at all, when the category is one of the most well-served on the App Store.
 
@@ -65,7 +66,7 @@ What it does *not* do is automatically restructure your program for you, change 
 
 ## The lifetime price
 
-GymLogger X ships with a freemium model that the studio has stuck to: core logging is free forever, Pro is $17.99/year, and there is a one-time **$44.99 lifetime** option for users who don't want a subscription on a tool they intend to use for a decade.
+GymLogger X ships with a freemium model that the studio has stuck to: core logging is free forever, Pro is $17.99/year, and there is a one-time **$39.99 lifetime** option for users who don't want a subscription on a tool they intend to use for a decade.
 
 The lifetime tier is the one I most often get asked about. The math on it is, candidly, not great for a studio chasing recurring revenue. A user who buys lifetime in year one and uses the app for seven years has paid the studio half what an annual subscriber would have paid. The lifetime tier exists anyway because strength training is a long-term practice and a user's training history should not be conditional on continuing a subscription.
 
