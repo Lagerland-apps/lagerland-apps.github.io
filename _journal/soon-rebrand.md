@@ -4,7 +4,7 @@ slug: soon-rebrand
 title: "TheWait is now Soon. — why we rebuilt and rebranded"
 seo:
   title: "TheWait Is Now Soon. — Why We Rebuilt the Countdown App"
-  description: "After a year of quiet growth, TheWait is rebuilt and relaunched as Soon. — why the old name had to go, what changed under the hood, and what stays the same."
+  description: "After a year of quiet growth, TheWait is rebuilt and relaunched as Soon. — why the old name had to go, what changed under the hood, what stays."
   keywords:
     - "soon app"
     - "thewait app"
@@ -13,6 +13,7 @@ seo:
     - "soon countdown"
     - "app rebrand"
 date: 2026-04-13
+last_updated: 2026-08-14
 lede: "After a year of quietly growing, TheWait has been fully rebuilt and relaunched as Soon. Here's why the old name had to go, what changed under the hood, and what stays the same for existing users."
 quick_answer: "TheWait was rebranded and rebuilt from scratch as Soon. in April 2026 because the old name framed countdowns as passive waiting rather than active anticipation. The rebuild adds Plan Mode checklists, StandBy widgets, natural-language search, iOS Calendar sync, memory cycling on anniversaries, and 39 languages. Existing TheWait events, themes, and purchases migrate automatically."
 faq:

@@ -13,13 +13,14 @@ seo:
     - "asc api tool"
     - "appmeta"
 date: 2026-02-21
+last_updated: 2026-08-14
 lede: "App Store Connect is the most consequential web app most indie developers use, and it has been the same web app for ten years. AppMeta is the studio's quietest app and arguably the most useful — a native Mac client for the ASC API, built for the day you're shipping in fourteen locales and need to stop scrolling."
-quick_answer: "AppMeta is a native Mac client for the App Store Connect API built for indie developers shipping across many locales. It offers side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, a unified review inbox across every app, and version submission. Priced as a $44.99 one-time purchase with a free demo mode."
+quick_answer: "AppMeta is a native Mac client for the App Store Connect API built for indie developers shipping across many locales. It offers side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, a unified review inbox across every app, and version submission. Priced as a $29.99 one-time lifetime purchase, or $17.99 a year, with a free demo mode."
 faq:
   - q: "Is there a native Mac app for App Store Connect?"
     a: "AppMeta is a native macOS client for the App Store Connect API. It gives you side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, a unified review inbox across every app in your catalogue, and version submission — all without using the App Store Connect web interface."
   - q: "How much does AppMeta cost and is there a subscription?"
-    a: "AppMeta is a one-time $44.99 lifetime purchase. There is no subscription. A free demo mode lets you explore the interface against sample data before you buy. The pricing decision was deliberate — a subscription would pressure the roadmap toward feature churn rather than reliable native-client behaviour."
+    a: "AppMeta is a $29.99 one-time lifetime purchase, with a $17.99 yearly option added later for people who would rather spread the cost. Buying the lifetime tier once still ends it — nothing auto-renews on you. A free demo mode lets you explore the interface against sample data before you buy. The pricing decision was deliberate — a subscription would pressure the roadmap toward feature churn rather than reliable native-client behaviour."
   - q: "Can AppMeta edit App Store metadata in multiple languages at once?"
     a: "Yes. The English description lives in the left pane and other locales — German, French, Japanese, Spanish, and so on — live as tabs in the right pane. Diff is highlighted across locales, and the diff preview shows exactly what will change against live metadata before you push to Apple."
   - q: "Does AppMeta replace fastlane or Xcode Cloud?"
@@ -29,7 +30,7 @@ mentioned_apps:
   - appmeta-pulse
   - mockly
 read_time: "6 min read"
-excerpt: "AppMeta is a native Mac client for the App Store Connect API — per-locale metadata editing, diff preview, keyword analysis, review responses, and version submission. This post explains why the indie iOS workflow needed it, what the trade-offs are, and why the studio shipped it as a $44.99 lifetime purchase rather than a subscription."
+excerpt: "AppMeta is a native Mac client for the App Store Connect API — per-locale metadata editing, diff preview, keyword analysis, review responses, and version submission. This post explains why the indie iOS workflow needed it, what the trade-offs are, and why the studio shipped it as a $29.99 lifetime purchase first, before adding a yearly option alongside it."
 ---
 
 App Store Connect — Apple's web tool for shipping apps — is the single most consequential web app in the indie iOS developer's day. It's how you manage metadata, push builds to TestFlight, respond to reviews, set pricing, file privacy declarations, and submit for review. Almost every studio I know spends an hour a day in it during ship weeks.
@@ -72,9 +73,9 @@ This is the question I get most about AppMeta, and I want to be plain about it.
 
 App Store Connect tooling is a developer tool. Developer tools have a long history of subscription-priced services — JetBrains, Sketch, Figma, Linear. The market would absolutely pay $19.99 a month for a good ASC client. I considered it.
 
-The reason I shipped AppMeta as a one-time $44.99 purchase is that subscriptions create a specific bad incentive for a tool like this: every month, you have to ship enough perceived value to justify the recurring charge. That pressure pushes the roadmap toward *more features*, not toward the right features. AppMeta's job is to be a fast, reliable native client. Adding features for the sake of a renewal cycle would compromise that.
+The reason I shipped AppMeta as a one-time $29.99 purchase is that subscriptions create a specific bad incentive for a tool like this: every month, you have to ship enough perceived value to justify the recurring charge. That pressure pushes the roadmap toward *more features*, not toward the right features. AppMeta's job is to be a fast, reliable native client. Adding features for the sake of a renewal cycle would compromise that.
 
-A one-time purchase forces a different discipline: ship a tool that's worth $44.99 once, and let the work earn the next purchase from a new user, not extract a renewal from an existing one. The tradeoff is slower revenue. The advantage is honest design.
+A one-time purchase forces a different discipline: ship a tool that's worth $29.99 once, and let the work earn the next purchase from a new user, not extract a renewal from an existing one. The tradeoff is slower revenue. The advantage is honest design.
 
 ## What AppMeta is not
 
@@ -84,6 +85,6 @@ It is, specifically, the native client for the metadata-and-review portion of Ap
 
 ## The plain version
 
-If you're an indie iOS or macOS developer shipping in multiple locales and you've ever spent a Friday afternoon doing the locale-dropdown dance, [AppMeta](/apps/appmeta/) is the studio's answer. $44.99, one-time, lifetime. Demo mode is free if you want to look around before you buy.
+If you're an indie iOS or macOS developer shipping in multiple locales and you've ever spent a Friday afternoon doing the locale-dropdown dance, [AppMeta](/apps/appmeta/) is the studio's answer. $29.99, one-time, lifetime. Demo mode is free if you want to look around before you buy.
 
 If you're not an indie developer, this post has been twelve hundred words about a niche tool, and you've made it admirably far. Thanks for reading. The next post will be about chess.

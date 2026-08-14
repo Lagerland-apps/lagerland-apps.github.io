@@ -3,7 +3,7 @@ layout: journal
 slug: making-shogi-readable-without-kanji
 title: "Shogi pieces in English: how to read the board without learning kanji"
 date: 2026-06-11
-last_updated: 2026-06-21
+last_updated: 2026-08-14
 seo:
   title: "Shogi Pieces in English: Read the Board Without Kanji"
   description: "Every shogi piece in English — names, kanji, how each moves, what it promotes to — plus how to read shogi notation (P-7f, S*4e). No Japanese needed."
@@ -74,7 +74,7 @@ If you already play chess, four things will trip you up — and they are the sam
 
 **The pawn captures straight.** A shogi pawn moves one square forward *and captures one square forward* — never the diagonal capture you have wired into your hands from chess. There is no two-square first move and no en passant. There is, instead, the drop.
 
-**Drops are the rule that changes everything.** When you capture a piece it joins *your* hand and can later be placed — dropped — onto any empty square as your whole move, fighting for you. A piece changes sides several times in a normal game. Pieces always drop in their unpromoted state, and there are a few legal limits worth knowing: you can't have two of your own unpromoted pawns on the same file (*nifu*), you can't drop a pawn to deliver immediate checkmate (*uchifuzume*), and you can't drop a piece where it would have no legal move (a pawn or lance on the last rank, a knight on the last two).
+**Drops are the rule that changes everything.** When you capture a piece it joins *your* hand and can later be placed — dropped — onto any empty square as your whole move, fighting for you. A piece changes sides several times in a normal game. Pieces always drop in their unpromoted state, and there are a few legal limits worth knowing: you can't have two of your own unpromoted pawns on the same file (*nifu*), you can't drop a pawn to deliver immediate checkmate (*uchifuzume*), and you can't drop a piece where it would have no legal move (a pawn or lance on the last rank, a knight on the last two). Drops are also the reason [a shogi engine's evaluation swings harder than a chess engine's](/journal/reading-a-shogi-engine-evaluation/).
 
 Promotion itself is optional in the zone — the opponent's back three ranks — except when a piece would otherwise be stuck with no move, in which case it must promote.
 

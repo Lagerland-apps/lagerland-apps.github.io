@@ -293,6 +293,10 @@ release:
   first_release: "2026-06-06"
   last_updated: "2026-06-06"
 
+related_journal:
+  slug: "pet-medical-records-what-to-keep"
+  anchor: "What actually belongs in your pet's medical record - and who asks for it"
+
 ratings:
   value: "5.0"
   count: 1

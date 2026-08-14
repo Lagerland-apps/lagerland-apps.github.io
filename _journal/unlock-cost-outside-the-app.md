@@ -4,15 +4,16 @@ slug: unlock-cost-outside-the-app
 title: "The unlock cost has to live outside the app"
 seo:
   title: "Why Every Screen-Time Blocker Folds — and What Doesn't"
-  description: "Every screen-time blocker has the same secret: tap hard enough and it folds. Why the unlock cost must live outside the app — and how EarnLock makes it real."
+  description: "Every screen-time blocker has the same secret: tap hard enough and it folds. Why the unlock cost must live outside the app, and how EarnLock does it."
   keywords:
     - "screen time blocker"
-    - "app blocker iphone"
-    - "app blocker you cant bypass"
     - "screen time app that works"
     - "focus blocker"
+    - "earn screen time app"
+    - "exercise to unlock apps"
     - "earnlock"
 date: 2026-05-23
+last_updated: 2026-08-14
 lede: "Every screen-time blocker on the App Store has the same secret. If you tap hard enough, it folds. A short essay on why every app in this category eventually adds a tap-through escape — and what to build instead."
 quick_answer: "Most screen-time blockers — Opal, one sec, ScreenZen, Forest — let the user dismiss the lock with a button, a wait-out timer, or a PIN they set themselves. The unlock cost lives inside the app, which means the user can lower it from inside the moment of craving. A real blocker has to denominate the unlock cost in something the craving cannot reach. Time-of-wait does not work because waiting is itself a tap. Body movement does — steps, active minutes, active calories — because the cost has to be paid in the rest of the user's life, not in the app. EarnLock is the version of the category that takes that constraint seriously."
 faq:
@@ -59,7 +60,7 @@ That's what [EarnLock](/apps/earnlock/) does. The blocked apps stay blocked unti
 
 There is a second design choice that follows from the first.
 
-Apple's Family Controls API will, by default, render a generic restriction screen over any app you block. *This app has been restricted by Screen Time.* It looks like a system prompt. It teaches the user nothing — no count of what is left, no relationship to the goal, no sense that the cost is reachable.
+[Apple's Family Controls API](/journal/what-an-iphone-app-can-actually-block/) will, by default, render a generic restriction screen over any app you block. *This app has been restricted by Screen Time.* It looks like a system prompt. It teaches the user nothing — no count of what is left, no relationship to the goal, no sense that the cost is reachable.
 
 EarnLock paints its own shield. The shield shows a circular progress ring, the current step count, and the exact number remaining: *Earn 2,026 more steps to unlock*. When the user attempts to open Instagram, they are not told they are restricted. They are told they are 2,026 steps from Instagram. The unlock is a destination, not a wall.
 

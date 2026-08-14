@@ -4,7 +4,7 @@ slug: building-a-sleep-app-for-night-shifts
 title: "Building a sleep app for nurses, pilots, and the people who don't have a 9-to-5"
 seo:
   title: "A Sleep App Built for Night-Shift and Rotating Schedules"
-  description: "Most sleep apps assume a 9-to-5. AfterShift is for nurses, pilots, and shift workers whose sleep keeps moving — why rotating schedules need different design."
+  description: "Most sleep apps assume a 9-to-5. AfterShift is for nurses, pilots, and shift workers whose sleep keeps moving — why rotating schedules need new design."
   keywords:
     - "sleep app for shift workers"
     - "night shift sleep app"
@@ -13,6 +13,7 @@ seo:
     - "sleep app nurses"
     - "aftershift"
 date: 2026-01-24
+last_updated: 2026-08-14
 lede: "Most sleep apps assume an 11pm bedtime and a 7am alarm. The people who keep hospitals, planes, and emergency rooms running don't live that life. AfterShift is the app I built after hearing the same complaint from too many friends in scrubs."
 quick_answer: "AfterShift is a sleep app built for rotating-shift workers — nurses, pilots, paramedics — whose schedules break the 9-to-5 assumptions baked into generic sleep trackers. It accepts daytime sleep blocks and pre-shift naps as normal, calculates a forward-looking Shift Recovery Score, times caffeine cutoffs against upcoming shifts, and imports rotations from calendar feeds automatically."
 faq:

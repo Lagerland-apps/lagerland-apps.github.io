@@ -294,8 +294,8 @@ release:
   last_updated: "2026-03-15"
 
 related_journal:
-  slug: "splitting-a-valentines-dinner-without-making-it-weird"
-  anchor: "How to split a Valentine's dinner without making it weird"
+  slug: "bill-splitting-math-tax-tip-shared-plates"
+  anchor: "The bill-splitting math nobody agrees on: tax, tip and the shared plate"
 
 ratings:
   value: "5.0"

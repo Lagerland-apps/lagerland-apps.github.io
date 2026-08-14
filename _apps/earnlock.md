@@ -167,7 +167,7 @@ value_points:
   - title: "Apple Watch — count on the wrist, complication on the face"
     description: "EarnLock's Watch app reads HealthKit directly, so the count works on long walks, runs, and gym sessions without the iPhone. Native complications surface the count on every watch face style — modular, circular, corner, graphic — so a glance tells you whether the apps will be open when you sit back down."
   - title: "Cheapest lifetime among screen-time blockers"
-    description: "$19.99 lifetime — versus Opal at $99.99/yr, ScreenZen Premium at ~$60/yr, or Brick at $59 hardware. Free if you only need step-based goals. Local-first by architecture, not just by policy."
+    description: "$19.99 lifetime — versus Opal at $99.99/yr, ScreenZen which is free with optional tips, or Brick at $59 hardware. Free if you only need step-based goals. Local-first by architecture, not just by policy."
 
 features:
   - title: "Family Controls shield with a live progress ring"
@@ -276,7 +276,7 @@ faq:
   - q: "What is EarnLock?"
     a: "EarnLock is an iOS and Apple Watch app that locks distracting apps until you earn screen time by hitting a daily activity goal you set yourself. The free tier uses steps; Premium adds active minutes and active calories. Apple's Family Controls paints a custom shield with a live progress ring (\"3,412 steps until unlock\") over every blocked app. Live Activities, lock-screen widgets, the Apple Watch app, and complications all surface the count. Streaks, rest days, a math-gated emergency unlock, most-attempted-blocked-app insights, a screen-time-saved estimate, and a reflection log are all included. No account, no analytics SDK, no server. Free; Premium $1.99/month or $9.99/year — both with a 7-day free trial — or $19.99 lifetime. Every paid tier (Monthly, Yearly, Lifetime) is Family Sharing eligible."
   - q: "How is EarnLock different from Opal, one sec, ScreenZen, or Forest?"
-    a: "Four things. (1) The unlock cost is real — body movement measured by Apple Health, not a tap-through or a wait-out timer. (2) The shield over each blocked app shows a live progress ring with the exact number you have left, not Apple's generic restriction screen. (3) The Apple Watch is a first-class surface — count on the wrist, complications on every watch face — so the system works during a walk or run without the iPhone. (4) Pricing — $19.99 lifetime versus Opal's subscription-only ($7.99–$11.99/mo), ScreenZen Premium (~$60/yr), or Brick's $59 hardware + app. No account is required for any of EarnLock's features."
+    a: "Four things. (1) The unlock cost is real — body movement measured by Apple Health, not a tap-through or a wait-out timer. (2) The shield over each blocked app shows a live progress ring with the exact number you have left, not Apple's generic restriction screen. (3) The Apple Watch is a first-class surface — count on the wrist, complications on every watch face — so the system works during a walk or run without the iPhone. (4) Pricing — $19.99 lifetime versus Opal's subscription-only ($7.99–$11.99/mo), ScreenZen (free, optional tips), or Brick's $59 hardware + app. No account is required for any of EarnLock's features."
   - q: "Which apps can EarnLock block?"
     a: "Any iOS app, and any of Apple's categories (Social Networking, Entertainment, Games, etc.). You pick from Apple's system Family Controls picker — iOS hands EarnLock opaque tokens, so even EarnLock cannot see the names of the apps you chose. The shield renders for every app in your selection across the entire device, including Safari opens of the same domain when you select \"All web content\" in the picker."
   - q: "How does the activity goal work?"
@@ -309,6 +309,10 @@ support:
 release:
   first_release: "2026-05-22"
   last_updated: "2026-05-22"
+
+related_journal:
+  slug: "what-an-iphone-app-can-actually-block"
+  anchor: "What an iPhone app can actually block - and what it never will"
 
 ratings:
   value: ""
