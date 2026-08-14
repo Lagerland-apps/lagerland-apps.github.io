@@ -137,7 +137,10 @@ def update_frontmatter(path: Path, rating: dict, dry_run: bool) -> str:
 
     ratings_block_re = re.compile(r"\nratings:\n(?:  .*\n?)+")
     if ratings_block_re.search(fm):
-        new_fm = ratings_block_re.sub("\n" + new_block, fm).rstrip()
+        # The regex consumes the old block's trailing newline, so put one back —
+        # without it the following front-matter key is glued onto last_synced and
+        # the whole document stops parsing as YAML.
+        new_fm = ratings_block_re.sub("\n" + new_block + "\n", fm).rstrip()
     else:
         new_fm = fm.rstrip() + "\n\n" + new_block
 

@@ -333,7 +333,9 @@ release:
 ratings:
   value: "4.2"
   count: 5
-  last_synced: "2026-08-09"related_journal:
+  last_synced: "2026-08-09"
+
+related_journal:
   slug: forty-chess-opponents
   anchor: "Forty chess opponents — and why no two of them are the same engine"
 
