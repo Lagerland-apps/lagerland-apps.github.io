@@ -217,9 +217,9 @@ release:
   last_updated: "2026-03-25"
 
 ratings:
-  value: "5.0"
-  count: 3
-  last_synced: "2026-05-19"
+  value: "4.0"
+  count: 4
+  last_synced: "2026-08-17"
 show_body: true
 about_heading: "Why AppMeta Pulse exists."
 
