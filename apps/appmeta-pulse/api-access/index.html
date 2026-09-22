@@ -2,7 +2,7 @@
 layout: default
 permalink: /apps/appmeta-pulse/api-access/
 title: "AppMeta Pulse — API Access & Methodology"
-quick_answer: "AppMeta Pulse authenticates to App Store Connect using Apple's official API with a .p8 key you generate in App Store Connect → Users and Access → Keys. The .p8 private key, Key ID, and Issuer ID are stored in your system Keychain. Each API call uses a short-lived JWT signed locally with ES256 — Apple's documented requirement caps token lifetime at 20 minutes. AppMeta Pulse calls read-only Sales and Trends and Subscription endpoints; the chosen API key role enforces this at Apple's side, not the app's. Queries hit api.appstoreconnect.apple.com directly over HTTPS — nothing is routed through Lagerland servers."
+quick_answer: "AppMeta Pulse authenticates to App Store Connect using Apple's official API with a .p8 key you generate in App Store Connect → Users and Access → Keys. The .p8 private key, Key ID, and Issuer ID are stored in your system Keychain. Each API call uses a short-lived JWT signed locally with ES256 — Apple's documented requirement caps token lifetime at 20 minutes. AppMeta Pulse reads Sales and Trends, subscription, App Store analytics, catalog, and customer-review endpoints; its only writes are review replies you choose to send and the analytics report requests Apple needs to prepare impressions data. Queries hit api.appstoreconnect.apple.com directly over HTTPS — nothing is routed through Lagerland servers."
 seo:
   title: "AppMeta Pulse — API Access & Methodology"
   description: "How AppMeta Pulse authenticates to App Store Connect — .p8 key, ES256 JWT, role-to-endpoint mapping, what the app does and cannot do. Public, citable."
@@ -30,7 +30,7 @@ seo:
   "description": {{ page.seo.description | jsonify }},
   "url": "{{ site.url }}/apps/appmeta-pulse/api-access/",
   "datePublished": "2026-05-13",
-  "dateModified": "2026-05-13",
+  "dateModified": "2026-09-22",
   "inLanguage": "en",
   "publisher": { "@id": "{{ site.url }}/#organization" },
   "isPartOf": { "@id": "{{ site.url }}/#website" },
@@ -144,7 +144,7 @@ seo:
     </div>
     <div class="card">
       <div class="card-title">Subscription reports</div>
-      <div class="card-text">Endpoint: <code>GET /v1/financeReports</code> (subscription type) and the App Store Connect Subscription Status reports.<br><br><strong>Minimum role required:</strong> Sales, Finance, Admin, or Account Holder. Same access scope as Sales reports.<br><br>Drives the subscription health view — active subscribers, trial conversions, cancellations, refunds.</div>
+      <div class="card-text">Endpoint: <code>GET /v1/salesReports</code> with report types <code>SUBSCRIPTION</code> and <code>SUBSCRIPTION_EVENT</code>.<br><br><strong>Minimum role required:</strong> Sales, Finance, Admin, or Account Holder. Same access scope as Sales reports.<br><br>Drives the subscription health view — active subscribers, trial conversions, cancellations, refunds.</div>
     </div>
     <div class="card">
       <div class="card-title">App Analytics (where available)</div>
@@ -152,21 +152,21 @@ seo:
     </div>
     <div class="card">
       <div class="card-title">Endpoints AppMeta Pulse does NOT call</div>
-      <div class="card-text">No write endpoints. No <code>POST</code>, <code>PATCH</code>, or <code>DELETE</code> calls anywhere in the app. No build submission endpoints. No app metadata edit endpoints. No pricing endpoints. No TestFlight management endpoints. No review-reply endpoints. The app's network layer is built to <em>read only</em>; even a misbehaving feature could not write because the request methods are not wired up at the codebase level.</div>
+      <div class="card-text">No build submission endpoints. No app metadata edit endpoints. No pricing endpoints. No TestFlight management endpoints. The app writes to App Store Connect in exactly two places: <code>POST</code>, <code>PATCH</code>, and <code>DELETE</code> on <code>/v1/customerReviewResponses</code> when you send, edit, or delete a review reply, and <code>POST /v1/analyticsReportRequests</code>, which asks Apple to start preparing your analytics reports.</div>
     </div>
   </div>
 </section>
 
 <section class="section reveal">
-  <h2 class="h2">What "read-only" actually means here.</h2>
-  <p class="lead">Two layers of read-only enforcement — one in the app, one at Apple's API. The combination is what makes the guarantee meaningful.</p>
+  <h2 class="h2">What the app can and cannot change.</h2>
+  <p class="lead">Two layers of limits — what the app's code does, and what your key's role allows.</p>
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">At the app level</div>
       <ul class="bullets">
-        <li>The network layer only implements <code>GET</code> requests against the App Store Connect API. There is no code path for <code>POST</code>, <code>PATCH</code>, or <code>DELETE</code>.</li>
-        <li>The UI has no "submit," "edit," "publish," "delete," or "reply" buttons against your App Store Connect data — because nothing in the app could action them even if they existed.</li>
-        <li>Most accidental App Store Connect mistakes (pushing the wrong build, replying to the wrong review, hiking the wrong price) are <em>impossible</em> inside AppMeta Pulse by construction.</li>
+        <li>The network layer reads with <code>GET</code>. Its only writes are review replies you send (<code>POST</code>, <code>PATCH</code>, <code>DELETE</code> on customer review responses) and analytics report requests (<code>POST</code>). There is no code for builds, metadata, pricing, or TestFlight.</li>
+        <li>The UI has no "submit," "publish," metadata, or pricing controls. The only buttons that change App Store Connect are Reply (to one review or a batch of up to 25), Edit, and Delete on your own review responses.</li>
+        <li>Pushing the wrong build or hiking the wrong price is <em>impossible</em> inside AppMeta Pulse by construction.</li>
       </ul>
     </div>
     <div class="card">
@@ -211,8 +211,8 @@ seo:
       <div class="card-title">What is genuinely under our control</div>
       <ul class="bullets">
         <li>Where the .p8 key lives (system Keychain — not iCloud Drive, not a plaintext file, not a third-party server).</li>
-        <li>What the app does with your data after fetching it (nothing — App Store privacy label declares zero data collection, verifiable on the listing).</li>
-        <li>Whether read-only stays read-only across future versions (yes — the network layer is structurally write-incapable).</li>
+        <li>What the app does with your data after fetching it (keeps it for you — nothing is sent to us, and the App Store privacy label declares zero data collection, verifiable on the listing).</li>
+        <li>Which App Store Connect writes the app makes (only the review replies you send and analytics report requests, listed above).</li>
         <li>Honest disclosure when something changes (this page is dated and updated when the model changes).</li>
       </ul>
     </div>
@@ -231,7 +231,7 @@ seo:
 <section class="cta-section reveal">
   <p class="overline">Use it</p>
   <h2 class="h2">Open AppMeta Pulse.</h2>
-  <p class="lead">App Store Connect on iPhone, iPad, and Mac. Read-only by construction, zero data collection on the privacy label, .p8 key in your Keychain, your data goes nowhere but Apple.</p>
+  <p class="lead">App Store Connect on iPhone, iPad, and Mac. No build, pricing, or metadata controls, zero data collection on the privacy label, .p8 key in your Keychain, your data goes nowhere but Apple.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/appmeta-pulse/">Learn about AppMeta Pulse</a>
     <a class="btn btn-secondary" href="/alternatives/appstats/">AppMeta Pulse vs AppStats</a>

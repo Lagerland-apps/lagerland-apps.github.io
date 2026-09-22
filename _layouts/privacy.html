@@ -10,6 +10,12 @@ layout: default
     </p>
   {% endif %}
 
+  {% if page.last_updated %}
+    <p class="small">
+      Last updated: <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: "%B %-d, %Y" }}</time>
+    </p>
+  {% endif %}
+
   <!-- INTRO -->
   <section class="privacy-block">
     <h2 class="h3">Overview</h2>
@@ -41,6 +47,18 @@ layout: default
     </p>
   </section>
 
+  <!-- ICLOUD SYNC (optional: one string or a list of paragraphs) -->
+  {% if page.icloud_sync %}
+  <section class="privacy-block">
+    <h2 class="h3">iCloud Sync</h2>
+    {% for paragraph in page.icloud_sync %}
+      <p>
+        {{ paragraph }}
+      </p>
+    {% endfor %}
+  </section>
+  {% endif %}
+
   <!-- THIRD PARTIES -->
   <section class="privacy-block">
     <h2 class="h3">Third-Party Services</h2>
@@ -55,6 +73,30 @@ layout: default
       </p>
     {% endif %}
   </section>
+
+  <!-- YOUR CHOICES (optional: one string or a list of paragraphs) -->
+  {% if page.your_choices %}
+  <section class="privacy-block">
+    <h2 class="h3">Your Choices, Retention &amp; Deletion</h2>
+    {% for paragraph in page.your_choices %}
+      <p>
+        {{ paragraph }}
+      </p>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <!-- YOUR RIGHTS (optional: one string or a list of paragraphs) -->
+  {% if page.your_rights %}
+  <section class="privacy-block">
+    <h2 class="h3">Your Rights</h2>
+    {% for paragraph in page.your_rights %}
+      <p>
+        {{ paragraph }}
+      </p>
+    {% endfor %}
+  </section>
+  {% endif %}
 
   <!-- HEALTH / SENSITIVE DATA -->
   {% if page.sensitive_data %}

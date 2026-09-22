@@ -8,7 +8,8 @@
 #   - third_party_sdks       : declared SPM/Cocoapods/Carthage dependencies
 #   - manifest_source        : "source" = read from PrivacyInfo.xcprivacy in repo;
 #                              "submission" = ships in the App Store binary; verify on
-#                              the App Store Privacy Nutrition Label
+#                              the App Store Privacy Nutrition Label;
+#                              "pending" = no manifest ships yet; the row describes the code
 #   - last_verified          : ISO-8601 date the row was last cross-checked
 #
 # Edit the manifest, push, and update this file. Treat it as the canonical proof
@@ -69,19 +70,21 @@ apps:
     notes: "Native Mac client for App Store Connect. Edits happen locally, then submit via Apple's API."
 
   - slug: appmeta-pulse
-    manifest_source: submission
+    manifest_source: pending
     tracking_declared: false
     tracking_domains: 0
     third_party_sdks: 0
     third_party_sdks_list: []
-    account_required: "Your own Apple ID with App Store Connect access. Read-only."
-    network_calls: "Apple App Store Connect API only."
-    data_leaves_device: "Only to Apple's App Store Connect API, with your own credentials."
+    account_required: "No Lagerland account. Your own App Store Connect API key."
+    network_calls: "Apple's App Store Connect API (plus the analytics report download links it returns), Apple's iTunes Lookup and the app icons it points to, the App Store for purchases, Apple's Translation framework when you translate a review, and the European Central Bank's public exchange-rate API."
+    data_leaves_device: "To App Store Connect with your own key (including review replies you send), and your apps' IDs to Apple's iTunes Lookup. Nothing reaches Lagerland unless you email us."
     analytics: "None."
     collected_data: []
-    required_reason_apis: []
+    required_reason_apis:
+      - "UserDefaults — used; not yet declared in a manifest"
+      - "File timestamp — used; not yet declared in a manifest"
     permissions: []
-    notes: "Read-only dashboard. Cannot modify your App Store Connect data."
+    notes: "No Privacy Manifest ships yet, so this row describes the code rather than a manifest. No build, pricing, or metadata controls; the only App Store Connect writes are review replies you send and analytics report requests."
 
   - slug: chessful
     manifest_source: source

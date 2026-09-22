@@ -2,7 +2,7 @@
 layout: default
 permalink: /transparency/
 title: "Transparency"
-quick_answer: "Every Lagerland app ships with NSPrivacyTracking set to false in its Privacy Manifest, zero tracking domains, and zero advertising SDKs. This page lists, per app, what's actually declared — Required Reason APIs, the data the App Store sees, and what network calls the binary makes — verified against the source repository on the date shown."
+quick_answer: "No Lagerland app tracks you: every Privacy Manifest we ship sets NSPrivacyTracking to false with zero tracking domains, and no app contains an advertising SDK. This page lists, per app, what's actually declared — Required Reason APIs, the data the App Store sees, and what network calls the binary makes — verified against the source repository on the date shown."
 seo:
   title: "Transparency — Every Lagerland App, Field by Field"
   description: "Per-app Privacy Manifest data for every Lagerland app: tracking, tracking domains, Required Reason APIs, third-party SDKs, and network calls."
@@ -59,7 +59,7 @@ seo:
     <p class="overline">Receipts</p>
     <h1 class="h1">Transparency,<br><span class="gradient-text">field by field.</span></h1>
     <p class="lead">
-      Every Lagerland app ships with a Privacy Manifest declaring <strong>NSPrivacyTracking = false</strong>, zero tracking domains, and zero advertising SDKs. This page lists, per app, exactly what's declared — Required Reason APIs, what data the App Store sees, and what network calls the binary makes.
+      No Lagerland app tracks you: every Privacy Manifest we ship declares <strong>NSPrivacyTracking = false</strong> and zero tracking domains, and no app contains an advertising SDK. This page lists, per app, exactly what's declared — Required Reason APIs, what data the App Store sees, and what network calls the binary makes.
     </p>
     <p class="small">Last audit: <time datetime="{{ site.data.transparency.last_audit }}">{{ site.data.transparency.last_audit | date: "%B %-d, %Y" }}</time>. Re-verified whenever an app ships.</p>
   </div>
@@ -93,7 +93,7 @@ seo:
   <div class="section-center">
     <p class="overline">Per-app declarations</p>
     <h2 class="h2">All {{ site.data.transparency.apps | size }} apps</h2>
-    <p class="lead">Each row mirrors what Apple's review process has on file. Apps marked <em>source-verified</em> have their Privacy Manifest committed to the source repository; the rest declare the same values in the App Store binary and on the public Privacy Nutrition Label.</p>
+    <p class="lead">Each row shows what an app declares. Apps marked <em>source-verified</em> have their Privacy Manifest committed to the source repository; apps marked <em>App Store-declared</em> declare the same values in the App Store binary and on the public Privacy Nutrition Label; apps marked <em>manifest pending</em> don't ship a Privacy Manifest yet, so their row describes what the code does.</p>
   </div>
 
   {%- assign rows = site.data.transparency.apps | sort: "slug" -%}
@@ -109,8 +109,8 @@ seo:
           </h3>
           <p class="transparency-card-tagline">{{ app.tagline }}</p>
         </div>
-        <span class="transparency-source {% if row.manifest_source == 'source' %}is-source{% else %}is-submission{% endif %}">
-          {% if row.manifest_source == 'source' %}Source-verified{% else %}App Store-declared{% endif %}
+        <span class="transparency-source {% if row.manifest_source == 'source' %}is-source{% elsif row.manifest_source == 'pending' %}is-pending{% else %}is-submission{% endif %}">
+          {% if row.manifest_source == 'source' %}Source-verified{% elsif row.manifest_source == 'pending' %}Manifest pending{% else %}App Store-declared{% endif %}
         </span>
       </header>
 
