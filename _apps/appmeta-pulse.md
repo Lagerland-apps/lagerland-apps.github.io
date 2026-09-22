@@ -163,6 +163,7 @@ privacy:
     - "App Store Connect API key (.p8) and key ID stored in the system Keychain"
     - "Queries hit Apple's servers directly — no data routed through Lagerland servers"
     - "No data collected, no diagnostics, no usage telemetry"
+    - "With iCloud Sync on, your data is also kept in your own private iCloud database, which we can't access; the .p8 key never syncs"
 
 faq:
   - q: "What is AppMeta Pulse?"
@@ -205,7 +206,7 @@ faq:
     a: "Indie iOS developers, founders, and small studio teams who check App Store metrics regularly and want a faster, calmer way to monitor their business than the App Store Connect web interface or app. Particularly valuable for multi-app publishers who want a portfolio view at a glance."
 
   - q: "Does AppMeta Pulse collect any data?"
-    a: "No. AppMeta Pulse has no analytics, no third-party SDKs, no advertising trackers, and collects no usage data, diagnostics, or telemetry. Its App Store privacy label declares zero data collection — verifiable on the listing. App Store Connect requests go directly from your device to Apple, and exchange rates come from the European Central Bank's public API."
+    a: "No. AppMeta Pulse has no analytics, no third-party SDKs, no advertising trackers, and collects no usage data, diagnostics, or telemetry. Its App Store privacy label declares zero data collection — verifiable on the listing. With iCloud Sync on, your data is also kept in your own private iCloud database, which we can't access. App Store Connect requests go directly from your device to Apple, and exchange rates come from the European Central Bank's public API."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -251,6 +252,6 @@ Apple's own App Store Connect app is built to <em>manage</em> a developer busine
 
 AppMeta Pulse was built to be the other half — the monitoring-first, calm dashboard for the daily glance. Open the app, see today's proceeds, refunds, active subscriptions, trial conversions, and downloads across every app you ship. Drill into one app when something looks off. Compare this week to last week. Close the app. Get back to building.
 
-The limits are not a marketing line; they are in the code. AppMeta Pulse has no code for submitting builds, changing pricing, or editing metadata. The only things it writes to App Store Connect are the review replies you choose to send and the analytics report requests Apple needs to prepare impressions data. The .p8 private key and key ID live in your system Keychain. Queries hit Apple's API servers directly over HTTPS; nothing is routed through Lagerland Apps servers, and the App Store privacy label declares zero data collection — verifiable on the listing, not just an asserted line of copy.
+The limits are not a marketing line; they are in the code. AppMeta Pulse has no code for submitting builds, changing pricing, or editing metadata. The only things it writes to App Store Connect are the review replies you choose to send and the analytics report requests Apple needs to prepare impressions data. The .p8 private key and key ID live in your system Keychain and never sync, even with iCloud Sync on. Queries hit Apple's API servers directly over HTTPS; nothing is routed through Lagerland Apps servers, and the App Store privacy label declares zero data collection — verifiable on the listing, not just an asserted line of copy.
 
 The dashboard uses Apple's own vocabulary: <em>proceeds</em> (after Apple's 15% Small Business or 30% standard cut and country VAT), <em>sales</em> (gross before commission), <em>units</em>, <em>refunds</em>, <em>active subscriptions</em>, <em>trial conversions</em>, <em>cancellations</em>. If you have ever spent an hour reconciling AppFigures' relabelled numbers against your monthly <a href="https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/" rel="noopener">financial reports</a>, that hour comes back to you.

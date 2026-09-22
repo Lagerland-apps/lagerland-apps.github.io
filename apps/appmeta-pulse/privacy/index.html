@@ -2,66 +2,258 @@
 layout: privacy
 seo:
   title: "AppMeta Pulse Privacy Policy — No Tracking, No Account"
-  description: "AppMeta Pulse's privacy policy: no third-party tracking, no ads, no account — your data stays on your device. What it processes and the choices you have."
+  description: "AppMeta Pulse privacy policy: no tracking, no ads, no account. Your data stays on your device and, when iCloud Sync is on, in your private iCloud."
   keywords:
     - "AppMeta Pulse privacy policy"
     - "AppMeta Pulse privacy"
     - "AppMeta Pulse data collection"
+    - "AppMeta Pulse iCloud sync"
     - "privacy-first app"
     - "no tracking app"
 title: "Privacy Policy"
 app_name: "AppMeta Pulse"
+last_updated: "2026-09-22"
 
 overview: >
-  AppMeta Pulse is designed to help developers quickly understand the
-  performance of their apps on the App Store.
-  Privacy is a core part of the app’s design.
-  This policy explains what information AppMeta Pulse processes,
-  how it is used, and the choices you have.
+  AppMeta Pulse helps developers follow how their apps are doing on the App Store,
+  using data from Apple’s App Store Connect.
+  Privacy is a core part of the app’s design: we (Lagerland Apps) run no servers
+  for it, there is no account to create, and the app contains no analytics,
+  advertising or tracking code.
+  This policy explains what the app processes, where that data is kept,
+  who can see it, and the choices you have.
 
 data_collection: >
-  AppMeta Pulse processes limited information required to display
-  App Store performance data.
-  This includes App Store Connect credentials you provide
-  (such as issuer ID, key ID, and private key),
-  which are used only to authenticate with Apple’s official
-  App Store Connect API.
-  AppMeta Pulse does not collect personal information for advertising
-  or marketing purposes.
+  We don’t collect data from AppMeta Pulse: nothing the app handles is sent to us.
+  To work, the app processes the following on your device and with Apple’s services
+  on your behalf. Your App Store Connect API credentials (Issuer ID, Key ID and
+  .p8 private key), and the account name and vendor number you enter.
+  The data App Store Connect returns for your apps: sales, proceeds, downloads,
+  refunds, subscription and subscription-event reports, App Store analytics such as
+  impressions and product page views, and your app and in-app purchase catalog.
+  Customer reviews of your apps, including each reviewer’s nickname, rating,
+  territory, title and text, and your developer responses.
+  And the review replies you write, which are sent to App Store Connect only when
+  you tap to send, edit or delete them, and which Apple then shows publicly with
+  the review on your app’s App Store page.
+  The app also creates analytics report requests in your App Store Connect account
+  so that Apple prepares your analytics data; apart from review replies, that is the
+  only change it makes there.
+  It doesn’t access your location, contacts, photos or health data, and doesn’t use
+  the advertising identifier.
+  The only information that reaches us directly is what you choose to email us: your
+  message and email address, plus the app version and build, iOS version and device
+  type that the support email pre-fills, which you can see and change before sending.
+  Apart from that, we see only what Apple provides to every developer: aggregated App
+  Store sales and download reports and App Analytics for AppMeta Pulse itself; crash
+  reports and usage statistics from people who turn on Share With App Developers;
+  and, when iCloud Sync is on, Apple’s CloudKit usage logs, which show the time,
+  platform, OS version, an anonymous CloudKit user ID and the type of each request,
+  never the synced data. We don’t use any of this to identify you.
 
 data_storage: >
-  App Store Connect credentials are stored securely on your device
-  using the Apple Keychain.
-  Performance data retrieved from App Store Connect
-  (such as revenue, downloads, subscriptions, and trends)
-  is cached locally on your device to enable fast access.
-  AppMeta Pulse does not operate its own external servers
-  to store your App Store data.
+  Your credentials are kept in the iOS Keychain on this device only: they don’t sync
+  to iCloud Keychain or through iCloud Sync, and the app signs its App Store Connect
+  requests on the device, so your private key is never sent anywhere.
+  Everything else is stored in the app’s own storage on your device, protected by
+  iOS Data Protection, and kept as a long-term archive so you can compare years,
+  because App Store Connect only serves about the last 365 days.
+  The app also keeps exact, compressed copies of the reports, reviews and listings it
+  downloads from App Store Connect, so your figures can be recomputed later.
+  Home Screen widgets read a copy of your numbers on the same device and make no
+  network requests.
+  Review translation, AI reply drafts and the weekly review digest use Apple’s
+  Translation framework and Apple Intelligence’s on-device model; the app doesn’t
+  send review text to any server of ours.
+  If you back up your device with iCloud Backup or a computer, the app’s on-device
+  data is included like other app data, except sync bookkeeping and report copies
+  already saved by iCloud Sync.
+  We don’t operate servers that store your data.
+
+icloud_sync:
+  - >
+    iCloud Sync is optional and set separately on each device. It turns on when you
+    choose it: in the app’s Settings (after a confirmation), from a one-time offer on
+    the Overview screen, with “Use data from iCloud” on a device without an API key, or
+    by saving a new account with the “Back up and sync with iCloud” switch on. That
+    switch starts turned on if you haven’t made a choice on this device yet, so turn
+    it off before saving if you want your data to stay on this device.
+    When sync is on, AppMeta Pulse keeps its data in the private CloudKit database of
+    your own iCloud account, and your devices signed in to the same Apple ID exchange
+    it through there. The first time you turn it on, the history already on the device
+    is uploaded too, not just new data.
+  - >
+    What syncs: your sales, proceeds, download, subscription and analytics history for
+    each app and day, including per-country detail; your app and in-app purchase
+    catalog (names, bundle IDs, SKUs and icon links); customer reviews with each
+    reviewer’s nickname, rating, territory, title and text, your developer responses,
+    and which reviews you’ve marked as seen; your goals, tracked apps, milestones,
+    display preferences and any reply templates you’ve edited; a team entry with the
+    account name and vendor number you entered, which device last fetched data and how
+    much data there is; and the report archive, meaning the exact copies of App Store
+    Connect responses described above. Those copies include full sales and subscription
+    reports (with details such as your developer name, product names and Apple IDs),
+    analytics report files, review data and catalog listings.
+    Report copies upload only while the device is on Wi-Fi and is charging or has the
+    app open, unless you tap Upload now; very large files, and analytics report files
+    beyond 2 GB per team, stay on the device. A device downloads the copies made by
+    your other devices only if you turn on “Keep a copy on this device” there.
+  - >
+    So your devices can share the work of fetching, each device also saves a status
+    record: a random ID the app creates for the device, a generic label such as
+    “iPhone” (not your device’s name), the platform and app version, its fetch
+    setting, whether it has an API key plus a short fingerprint derived from the Key
+    ID, when it was last active, when it last fetched each kind of data and whether
+    that worked, and App Store Connect rate-limit counters. Sync also stores records
+    that coordinate long tasks between devices and the bookkeeping that stops two
+    devices fetching the same report twice. Your other devices show this in the
+    Devices list.
+  - >
+    What never syncs: your .p8 private key, Issuer ID and Key ID, and the tokens made
+    from them. In iCloud the Issuer ID appears only as a one-way hash, which groups your
+    team’s records, the Key ID only as a short hash that lets devices tell keys apart,
+    and report records carry a short hash of the vendor number. The account name and
+    vendor number you entered do sync, in the team entry described above. A device
+    without a key can show your data from iCloud, but it can’t contact App Store
+    Connect until you add a key on that device.
+  - >
+    Who can see it: you, on your devices signed in to the same Apple ID with AppMeta
+    Pulse and iCloud Sync on. We (Lagerland Apps) can’t see its contents: Apple doesn’t
+    show the contents of your private iCloud database to app developers. Apple stores
+    the data and, unless you use Advanced Data Protection, holds the encryption keys
+    (see Encryption below). Under its developer terms, Apple stores it on our behalf and
+    won’t access or disclose it unless you ask Apple to or Apple believes the law
+    requires it. The app doesn’t use CloudKit’s public or shared databases and can’t
+    give anyone else access to your iCloud data; files you export yourself go wherever
+    you send them. iCloud is provided by Apple under Apple’s own terms and privacy
+    policy, and the data counts toward your iCloud storage.
+  - >
+    Encryption: the data is encrypted in transit and at rest in iCloud, where Apple may
+    use its own or third-party data centers. The app stores each record’s contents in
+    CloudKit encrypted fields; larger records and report copies are stored as CloudKit
+    assets, which CloudKit also encrypts. With iCloud’s standard data protection, Apple
+    keeps the encryption keys in its data centers, so it can decrypt your data on your
+    behalf, for example to help you recover it. If you turn on Advanced Data Protection
+    for iCloud, CloudKit encrypted fields and assets are end-to-end encrypted and only
+    your trusted devices can decrypt them.
+    We assume some information CloudKit needs to work isn’t covered by that encryption,
+    even with Advanced Data Protection: record and zone names, which in AppMeta Pulse
+    contain App Store app IDs, report dates and months, analytics request types,
+    template IDs, task names, the random device ID, fingerprints of report copies and
+    the hash of your Issuer ID; the plain record-type marker and format version; and
+    metadata Apple keeps under standard protection, such as modification dates.
+    If you reset iCloud’s encrypted data or your iCloud Keychain, Apple can no longer
+    decrypt this data and it is lost from iCloud; the copy on your device is kept, and
+    turning iCloud Sync on again uploads it.
 
 third_parties: >
-  AppMeta Pulse does not use third-party analytics,
-  advertising, or tracking services.
-  Apple may process limited data as part of services you choose to use,
-  such as App Store Connect APIs, local notifications,
-  in-app purchases, background app refresh,
-  or iCloud device backups if enabled.
+  AppMeta Pulse contains no third-party code: no analytics, advertising,
+  crash-reporting or tracking SDKs, and it doesn’t track you.
+  It connects only to: Apple’s App Store Connect API, with your own key, to read your
+  reports, catalog, analytics and reviews and to send the review replies you choose,
+  plus the time-limited links App Store Connect provides for downloading analytics
+  report files, which carry no credentials; Apple’s iTunes Lookup service, which
+  receives your apps’ App Store IDs to find their icons, and the image addresses it
+  returns; the European Central Bank’s public exchange-rate service, which receives
+  only a month and a fixed list of currencies; Apple’s App Store (StoreKit) for
+  subscriptions, purchases, restores and rating requests; Apple’s Translation
+  framework when you translate a review, which downloads languages from Apple and may
+  use the network for some language pairs; and, when iCloud Sync is on, Apple’s iCloud
+  (CloudKit), including silent notifications through Apple’s push service that tell
+  the app new data is waiting.
+  Like any internet request, these reach the services with your device’s IP address.
+  We don’t share your data with anyone: each service receives only what its request
+  needs, such as your IP address, your apps’ IDs or a list of currencies. Apple, which
+  provides App Store Connect, iCloud and the other Apple services above, and Proton,
+  which hosts our support mailbox, protect that data at least as well as this policy
+  describes.
+  Apple also provides background app refresh and iCloud Backup, and processes data
+  under its own privacy policy (apple.com/legal/privacy).
+  Links you tap, such as Apple’s developer pages, open in your browser or the App Store.
+  Support emails go from your own mail app to our mailbox at Proton (proton.me).
+
+your_choices:
+  - >
+    Turning iCloud Sync off stops syncing on that device and deletes nothing, on the
+    device or in iCloud. Your agreement is tied to the iCloud account signed in when
+    you turned sync on (the app remembers that account’s internal identifier on the
+    device only); if the device later switches to a different Apple ID, sync turns
+    itself off until you turn it on again. A device restored or set up from a backup
+    of another device asks again before it syncs.
+    Signing out of AppMeta Pulse removes your credentials and that account’s data from
+    the device, but never deletes anything from iCloud; with sync on, report copies
+    that haven’t uploaded yet stay on the device and upload the next time you use that
+    account there. Signing out doesn’t turn iCloud Sync off, so display preferences and
+    reply templates keep syncing until you do.
+  - >
+    Delete All History (Settings, Data Management): with iCloud Sync off, it deletes
+    your history and report archive on this device only; anything already in iCloud
+    downloads again if you turn sync back on. With sync on, you choose “Delete on This
+    Device Only”, which removes from this device the history already saved in iCloud
+    (it downloads again, and report copies on the device are kept), or “Delete
+    Everywhere”, which, after you type DELETE, removes the signed-in team’s sales,
+    subscription and analytics history and its report archive from iCloud and from
+    every device that syncs it. Other teams in the same iCloud account aren’t affected.
+    Delete Everywhere keeps reviews, milestones, settings, reply templates, the app
+    catalog, device status records and the team entry. Devices that had iCloud Sync on
+    delete their copy the next time they connect, even if they were offline at the
+    time. A device that had iCloud Sync turned off then, or that joins the team for the
+    first time afterwards, asks whether to delete its copy or put it back in iCloud.
+  - >
+    To remove everything AppMeta Pulse keeps in your iCloud, delete the app’s data from
+    your iCloud storage in iOS Settings: tap your name, then iCloud, then Storage (or
+    Manage Account Storage), choose this app and tap Delete Data from iCloud. The data
+    on your device stays, and the app turns iCloud Sync off. You can revoke your API
+    key in App Store Connect at any time.
+  - >
+    Seeing and exporting your data: everything the app keeps is shown in the app, and
+    you can export a CSV of a period’s sales from the Overview screen. Anything you
+    export or copy yourself, such as that CSV, a milestone image or connection
+    diagnostics, goes wherever you send it. If you need help getting a copy of your
+    data, email us.
+  - >
+    Retention: data on your device and in your iCloud is kept until you delete it using
+    the options above, because keeping history longer than App Store Connect does is
+    the point of the archive. The one automatic exception is the per-country breakdown
+    stored on the device, which is trimmed after about 15 months unless you turn on
+    Keep full territory history (Settings, Data Management). iCloud keeps the
+    per-country breakdown, and the report copies in the archive, which include
+    per-country rows, are kept on the device and in iCloud until you delete them.
+    We can’t access the data the app stores on your device or in your iCloud. Support
+    emails are kept only as long as needed to help you.
+
+your_rights: >
+  Lagerland Apps, a one-person developer based in Finland, is responsible for the
+  personal data described here that reaches us, which is mainly support email, and,
+  where Apple’s developer terms make us responsible for it, for the data the app
+  stores in your iCloud. We use support emails only to answer you.
+  You can ask us for access to, correction or deletion of your data, or a copy of it;
+  ask us to restrict or stop using it; or withdraw your consent at any time, by
+  emailing lagerland.apps@proton.me. We answer within one month.
+  You can view, export and delete the data in your iCloud yourself as described
+  above, and we’ll help if you ask.
+  You can also complain to the data protection authority where you live, or to
+  Finland’s Data Protection Ombudsman (tietosuoja.fi).
+  Our support mailbox is hosted by Proton in Switzerland, and Apple may store iCloud
+  data in data centers outside the European Economic Area.
 
 sensitive_data: >
-  AppMeta Pulse does not process health data,
-  location data, or other sensitive personal information.
-  App Store performance data is used solely to present
-  read-only insights within the app.
-  AppMeta Pulse does not sell, share, or use data
-  for advertising or profiling purposes.
+  AppMeta Pulse doesn’t process health data, location data or other sensitive
+  categories of personal data.
+  Customer reviews can contain a reviewer’s nickname and whatever the reviewer chose
+  to write; the app shows them to you, and copies them to your iCloud only when
+  iCloud Sync is on.
+  App Store data is used only to show you insights in the app and its widgets.
+  We don’t sell or share data, and nothing is used for advertising or profiling.
 
 children: >
   AppMeta Pulse is not directed at children under the age of 13,
   and we do not knowingly collect personal information from children.
 
 changes: >
-  We may update this privacy policy from time to time.
-  Any changes will be reflected on this page,
-  and the “Last updated” date will be revised accordingly.
+  We may update this privacy policy from time to time, for example when a new
+  version of the app handles data differently.
+  Changes are posted on this page, and the “Last updated” date at the top is revised.
 
 contact_email: "lagerland.apps@proton.me"
 back_url: "/apps/appmeta-pulse/"

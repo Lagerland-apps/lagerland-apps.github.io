@@ -92,7 +92,7 @@ seo:
       <ul class="bullets">
         <li>Paste or import the <code>.p8</code> file, Key ID, and Issuer ID into AppMeta Pulse.</li>
         <li>The three values are stored together in the system <strong>Keychain</strong> — the same secure storage iOS and macOS use for passwords and Wi-Fi credentials.</li>
-        <li>Nothing is written to plain files, iCloud Drive, third-party servers, or analytics SDKs.</li>
+        <li>None of the three is written to plain files, iCloud Drive, iCloud Sync, third-party servers, or analytics SDKs. With iCloud Sync on, the Issuer ID is replaced by a one-way hash and the Key ID by a short hash; the account name and vendor number you entered do sync.</li>
         <li>Revoke the key any time in App Store Connect → Users and Access → Keys. Revocation takes effect at Apple's API immediately; the app cannot circumvent it.</li>
       </ul>
     </div>
@@ -211,6 +211,7 @@ seo:
       <div class="card-title">What is genuinely under our control</div>
       <ul class="bullets">
         <li>Where the .p8 key lives (system Keychain — not iCloud Drive, not a plaintext file, not a third-party server).</li>
+        <li>Where your data goes when iCloud Sync is on (your own private iCloud database, which we can't access; the .p8 key never syncs).</li>
         <li>What the app does with your data after fetching it (keeps it for you — nothing is sent to us, and the App Store privacy label declares zero data collection, verifiable on the listing).</li>
         <li>Which App Store Connect writes the app makes (only the review replies you send and analytics report requests, listed above).</li>
         <li>Honest disclosure when something changes (this page is dated and updated when the model changes).</li>
