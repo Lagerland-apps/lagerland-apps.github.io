@@ -86,7 +86,7 @@
 
   {%- if include.app.plans and include.app.plans.size > 0 -%}
   <div class="pricing-foot">
-    <p class="pricing-note">Transparent pricing on the App Store. Cancel anytime. Free plan is free forever — no trial, no card.</p>
+    <p class="pricing-note">{{ include.app.pricing_note | default: "Transparent pricing on the App Store. Cancel anytime. Free plan is free forever — no trial, no card." }}</p>
     <div class="actions">
       <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">View on the App Store</a>
     </div>

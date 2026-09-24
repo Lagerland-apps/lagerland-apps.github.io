@@ -49,6 +49,7 @@ Strongly recommended: `faq:` (→ FAQPage + speakable schema), `mentioned_apps:`
 
 Required: `slug`, `name`, `tagline`, `quick_answer`, `seo:{…}`, `category` (maps to schema `applicationCategory` — see the `case` block in `app.html`), `platforms`, `status`, `app_store_url`, `price:{model,value}`, `schema_price` / `schema_high_price` / `schema_offer_count`, `hero:{…}`, `privacy:{…}`, `support:{email,url}`, `release:{first_release,last_updated}`.
 Recommended: `who_for`/`who_not_for`, `founder`, `value_points`, `features`, `how_it_works` (HowTo schema — high-value E-E-A-T), `comparison_table`, `faq`, `screenshots`, `related_journal`, `alternatives_to`, `roadmap`, `show_body: true` + `about_heading`.
+Optional overrides: `how_it_works.heading` (replaces the default H2 "The method behind every insight.") and `pricing_note` (replaces the "Cancel anytime…" line under the plans — set it for apps with no subscription).
 
 **You must also create two physical sub-pages** (they are NOT auto-generated):
 - `apps/<slug>/privacy/index.html` — `layout: privacy`; fields: `app_name`, `overview`, `data_collection`, `data_storage`, `third_parties`, `sensitive_data?`, `children`, `changes`, `contact_email`, `back_url`. **Add a `seo:` block here** (privacy pages currently leak the tagline).

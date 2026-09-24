@@ -13,7 +13,7 @@ hand-made cards.
 
 Usage:
     python3 scripts/generate-og.py                 # all apps
-    python3 scripts/generate-og.py --only pawza shogiful
+    python3 scripts/generate-og.py --only millrace shogiful
     python3 scripts/generate-og.py --dry-run       # list what would render
 """
 
@@ -59,6 +59,7 @@ ACCENT = {
     "gymlogger-x":   "#2FC4C0",
     "liftlog":       "#E3A23C",
     "mediakit":      "#8A7CF2",
+    "millrace":      "#E1A744",
     "mockly":        "#5B7CF7",
     "observa":       "#F2643C",
     "pawza":         "#E0A05A",
@@ -72,6 +73,7 @@ ACCENT = {
 TAGLINE = {
     "aftershift":    "Naps that count as real recovery.",
     "appmeta-pulse": "Your App Store Connect dashboard.",
+    "millrace":      "A puzzle with a right answer.",
     "gymlogger-x":   "Log lifts fast. Built for the gym.",
     "taskful-day":   "Plan the day. Finish it — calmly.",
 }
@@ -86,6 +88,7 @@ META = {
     "gymlogger-x":   "Free · Apple Watch · No account · iPhone",
     "liftlog":       "Pay once · Feels like equipment · iPhone",
     "mediakit":      "Every media tool, one app · iPhone + Mac",
+    "millrace":      "Free · 64 solver-verified levels · No ads · iPhone + iPad",
     "mockly":        "Pro App Store screenshots · $12.99 once · Mac",
     "observa":       "Free · 100% on-device · No account · iPhone + iPad",
     "pawza":         "Free · On-device AI · No account · iPhone + iPad",

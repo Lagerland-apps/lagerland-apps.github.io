@@ -101,6 +101,8 @@ The trade-off lives at the top of the club-player range. Around 1800-2000, playe
 
 Chessful's audience is below that band. Depth 13-15 is where the mistakes live.
 
+The same idea — depth as the measure of what a player can actually use — runs the other way in puzzle design: in Millrace, every chapter is pinned to an exact shortest-solution depth, from five moves to ten or more, and [the levels are generated and verified by search](/journal/how-millrace-levels-are-made/) to guarantee it.
+
 ## The hardware side-effect
 
 Running Stockfish at depth 13 on an iPhone is fast. A modern A-series chip will produce the analysis in roughly 0.5-2 seconds per move on a typical mid-game position. A full 50-move game analyses in 30-90 seconds. That's well within "I closed the app and reopened it; it's done" budget.

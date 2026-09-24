@@ -175,6 +175,22 @@ apps:
       - "User-Selected File — only when you drag a file in"
     notes: "152 native tools for video, audio, image, PDF, and archive work — all processed locally."
 
+  - slug: millrace
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None. The app contains no networking code — levels, the solver, the 3D board and every theme run on-device. Optional Game Center and in-app purchases are handled by Apple."
+    data_leaves_device: "No."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions: []
+    notes: "PrivacyInfo.xcprivacy declares NSPrivacyTracking false with no tracking domains and no collected data types, and Apple's App Store label reads Data Not Collected. The only entitlement is Game Center; no iCloud, CloudKit, Keychain or App Group. Progress stays on the device."
+
   - slug: observa
     manifest_source: source
     tracking_declared: false

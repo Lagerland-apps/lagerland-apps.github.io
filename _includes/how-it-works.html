@@ -6,6 +6,7 @@
 
   Frontmatter shape:
     how_it_works:
+      heading: "Optional H2 (defaults to 'The method behind every insight.')"
       intro: "Optional intro line."
       steps:
         - title:  "Reads from Apple Health"
@@ -16,7 +17,7 @@
 <section id="how-it-works" class="section--lg">
   <div class="section-center">
     <p class="overline reveal">How it works</p>
-    <h2 class="h2 reveal">The method behind every insight.</h2>
+    <h2 class="h2 reveal">{{ hiw.heading | default: "The method behind every insight." }}</h2>
     {%- if hiw.intro -%}
     <p class="lead reveal" style="max-width:60ch;margin:var(--s-3) auto 0;">{{ hiw.intro }}</p>
     {%- endif -%}
