@@ -1,16 +1,24 @@
 ---
 layout: privacy
 
-# Xiangqiful is UNLISTED pre-launch. `sitemap: false` keeps this page out of
-# sitemap.xml until release; the URL itself must be live because the app
-# hard-codes it (Xiangqi/Store/ExternalLinks.swift `privacy`) and links it from
-# the paywall and Settings. Remove the flag on launch, alongside the app and
-# support pages.
+# Xiangqiful is UNLISTED pre-launch — see the note in _apps/xiangqiful.md.
+# `sitemap: false` keeps this page out of sitemap.xml until release; the URL
+# itself must be live because the app hard-codes it (Xiangqi/Store/
+# ExternalLinks.swift `privacy`, linked from the paywall) and App Store
+# Connect's privacy policy URL points here. Remove the flag on launch,
+# alongside the app and support pages.
+#
+# Every statement below is checked against the app's source (main, 2026-09-24):
+# no networking code of its own (no URLSession anywhere), PrivacyInfo.xcprivacy
+# with no collected data types and no tracking, SwiftData with no CloudKit
+# container, Game Center that never presents its sign-in sheet
+# (Opponents/GameCenterManager.swift), and four outbound links
+# (Store/ExternalLinks.swift).
 sitemap: false
 
 seo:
   title: "Xiangqiful Privacy Policy — No Tracking, No Account"
-  description: "Xiangqiful's privacy policy: no tracking, no ads, no account. Your xiangqi games and training stay on your device. What it processes and what Apple handles."
+  description: "Xiangqiful collects no data: no tracking, no ads, no account. Your xiangqi games and training stay on your device. What it stores and what Apple handles."
   keywords:
     - "Xiangqiful privacy policy"
     - "Xiangqiful privacy"
@@ -23,48 +31,83 @@ app_name: "Xiangqiful"
 last_updated: 2026-09-24
 
 overview: >
-  Xiangqiful helps you learn and improve at xiangqi (Chinese chess) by playing
-  against an engine that runs on your device, analyzing your games and giving you
-  personalized training. Your games, insights and progress are yours.
-  Xiangqiful has no account system and no servers of its own.
-  This policy explains what information Xiangqiful processes,
-  how it is used, and the choices you have.
+  Xiangqiful is a xiangqi (Chinese chess) training app for iPhone, iPad and Mac.
+  Privacy here is not a setting you switch on — it is how the app is built.
+  Xiangqiful has no account system, no servers of its own, no analytics and no
+  advertising, and it contains no networking code of its own: the engine that
+  plays and analyzes your games, Pikafish, runs entirely on your device. This
+  policy explains exactly what Xiangqiful keeps on your device, what Apple
+  handles when you choose to use its services, and what happens when you
+  import, share or follow a link.
 
-data_collection: >
-  Xiangqiful processes data generated through your use of the app,
-  including xiangqi games, moves, analysis results, mistakes,
-  lesson and drill progress, puzzle results, skill-assessment answers,
-  and progress metrics such as skill scores and an estimated strength.
-  This data is used solely to provide the app’s core functionality:
-  game analysis, mistake explanations, adaptive training and progress tracking.
-  The engine that plays and analyzes your games runs entirely on your device.
+data_collection: none
 
 data_storage: >
-  All data is stored locally on your device using Apple system frameworks.
-  Xiangqiful does not operate servers and does not upload your data anywhere.
-  If you enable iCloud or device backups, your data may be included in them
-  according to your Apple settings — Apple acts as the storage provider and
-  Xiangqiful has no access to it.
+  Everything Xiangqiful records stays on your device. That includes the games
+  you play and import (the moves, the result, the opponent, your side and the
+  date), the engine's analysis of them (move grades, evaluations and the
+  mistakes it found), your lesson, drill and puzzle progress and the review
+  schedule behind it, your skill-assessment results, your place on the opponent
+  ladder, your skill profile, estimated rating, streaks and achievement
+  progress, and your settings (piece set, characters, notation, board, sound
+  and haptics). It also keeps the day's free-tier counters and a cached copy of
+  your Premium status, so the app knows what you own when you are offline. All
+  of this is stored with Apple's SwiftData and UserDefaults on the device only.
+  It is not uploaded, not synced to iCloud, and not shared with anyone. If you
+  back up your device to iCloud or a computer, your Xiangqiful data may be
+  included in that backup under your Apple settings — Apple acts as the storage
+  provider and Xiangqiful has no access to it. Deleting the app removes the data
+  from your device.
 
 third_parties: >
-  Xiangqiful does not use third-party analytics, advertising, or tracking services.
-  The app uses Apple-provided frameworks such as StoreKit (for purchases and
-  subscriptions) and Game Center (for leaderboards and achievements, if you are
-  signed in). Apple may process limited data as part of these services according
-  to your device and account settings. Links in the app to outside pages — the
-  engine's open-source project, Apple's terms — open in your browser and are
-  governed by those sites' own policies.
+  Xiangqiful contains no third-party analytics, advertising, attribution,
+  crash-reporting or tracking SDKs. The one piece of outside software in it is
+  the open-source Pikafish engine, which is compiled into the app, runs on your
+  device and makes no network connections. The app's privacy manifest declares
+  no collected data types, no tracking and no tracking domains. Two optional
+  Apple services involve Apple when you use them. Purchases — Premium and the
+  optional tips — are handled entirely by Apple through the App Store under
+  Apple's own privacy policy; Xiangqiful never sees your payment details or your
+  Apple Account, and receives only Apple's confirmation of what you own. Game
+  Center is used only if you are already signed in to it on your device, and
+  Xiangqiful never asks you to sign in. When you are signed in, the app reports
+  your scores to eight leaderboards (estimated rating, best game accuracy,
+  accuracy this week, longest win streak, opponents defeated, training streak,
+  puzzles solved and overall skill) and your progress on its 62 achievements.
+  Apple processes these under its own privacy policy, and other players may see
+  your leaderboard scores according to your Game Center settings. Signing out of
+  Game Center in your device settings stops the reporting, and the app loses
+  nothing, because it never reads anything back. When you import a game,
+  Xiangqiful reads only the file you pick, or the clipboard only when you choose
+  it as the source; when you share or copy a game record, it goes only where you
+  send it. Finally, a few links open outside the app: the paywall links to this
+  policy and to Apple's standard Terms of Use, the Licences screen links to the
+  Pikafish project on GitHub, and Settings can open Apple's subscription
+  management page. Once you follow one of them, that website's own privacy
+  practices apply.
+
+sensitive_data: >
+  Xiangqiful asks for no permissions. It does not access your camera, photos,
+  microphone, location, contacts, calendars or health data, it sends no
+  notifications, and it collects no health, financial or biometric information.
+  There is no account to create, no email address to hand over, and no sign-in
+  of any kind.
 
 children: >
   Xiangqiful is intended for general audiences and is not specifically directed
-  at children under the age of 13.
-  We do not knowingly collect personal information from children.
+  at children under the age of 13. It contains no advertising, no chat, no
+  user-generated content and no accounts, and because it collects no personal
+  information from anyone, it collects none from children. Purchases go through
+  Apple, so parents can manage them with Ask to Buy, Family Sharing and Screen
+  Time. We do not knowingly collect personal information from children.
 
 changes: >
-  We may update this privacy policy from time to time.
-  Any changes will be reflected on this page,
-  and the effective date will be updated accordingly.
+  We may update this privacy policy from time to time — for example, if a future
+  version of Xiangqiful adds optional iCloud sync of your progress between your
+  own devices. Any change will be published on this page before the version it
+  describes is released, and this policy will always describe the version of
+  Xiangqiful currently on the App Store.
 
 contact_email: "lagerland.apps@proton.me"
-back_url: "/apps/"
+back_url: "/apps/xiangqiful/"
 ---
