@@ -282,6 +282,25 @@ apps:
     permissions: []
     notes: "Game analysis is performed by the locally bundled YaneuraOu engine, not a cloud service."
 
+  - slug: xiangqiful
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None of its own. The app contains no networking code — the Pikafish engine and its 53 MB neural network are bundled and run on-device. Optional Game Center and in-app purchases are handled by Apple."
+    data_leaves_device: "No."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "File timestamp (C617.1)"
+      - "System boot time (35F9.1)"
+      - "Disk space (E174.1)"
+    permissions: []
+    notes: "PrivacyInfo.xcprivacy declares NSPrivacyTracking false and no collected data types, and Apple's App Store label reads Data Not Collected. Games, analysis and training progress are stored on the device with SwiftData and no CloudKit container. Pikafish (GPL-3) is compiled into the app — the only outside code."
+
   - slug: soon
     manifest_source: submission
     tracking_declared: false

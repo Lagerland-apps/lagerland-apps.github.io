@@ -1,20 +1,16 @@
 ---
 layout: privacy
 
-# Xiangqiful is UNLISTED pre-launch — see the note in _apps/xiangqiful.md.
-# `sitemap: false` keeps this page out of sitemap.xml until release; the URL
-# itself must be live because the app hard-codes it (Xiangqi/Store/
-# ExternalLinks.swift `privacy`, linked from the paywall) and App Store
-# Connect's privacy policy URL points here. Remove the flag on launch,
-# alongside the app and support pages.
+# The app hard-codes this URL (Xiangqi/Store/ExternalLinks.swift `privacy`,
+# linked from the paywall) and App Store Connect's privacy policy URL points here.
 #
 # Every statement below is checked against the app's source (main, 2026-09-24):
 # no networking code of its own (no URLSession anywhere), PrivacyInfo.xcprivacy
 # with no collected data types and no tracking, SwiftData with no CloudKit
 # container, Game Center that never presents its sign-in sheet
 # (Opponents/GameCenterManager.swift), and four outbound links
-# (Store/ExternalLinks.swift).
-sitemap: false
+# (Store/ExternalLinks.swift). Apple's live label reads "Data Not Collected"
+# (checked 2026-10-01).
 
 seo:
   title: "Xiangqiful Privacy Policy — No Tracking, No Account"

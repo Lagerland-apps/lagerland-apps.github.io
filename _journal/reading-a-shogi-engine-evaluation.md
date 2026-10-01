@@ -128,7 +128,7 @@ It means the engine has stopped estimating. `score mate 7` is not "very good", i
 
 **A negative mate score is the one to read.** `score mate -5` means *you* are being mated in five, and it is the most instructive line any shogi engine hands you, because it usually starts with a drop you never considered.
 
-**An engine mate is not a tsume.** [Tsume-shogi](https://en.wikipedia.org/wiki/Tsume_shogi) is a strict problem form: every attacking move must be a check, the defender resists as long as possible, and every piece in hand must be used. An engine's forced mate has none of those constraints. There is also no score at all for *hisshi* (必至), the brinkmate where mate is unavoidable next move but not yet forced by checks — and club games are decided in that gap constantly. The engine shows you a slightly worse number and never mentions that the game was over.
+**An engine mate is not a tsume.** [Tsume-shogi](https://en.wikipedia.org/wiki/Tsume_shogi) is a strict problem form: every attacking move must be a check, the defender resists as long as possible, and every piece in hand must be used. Xiangqi has the same form without pieces in hand, the consecutive-check mate (连将杀); [here is how Xiangqiful checked 902 of them](/journal/xiangqi-mate-problems-from-classical-manuals/). An engine's forced mate has none of those constraints. There is also no score at all for *hisshi* (必至), the brinkmate where mate is unavoidable next move but not yet forced by checks — and club games are decided in that gap constantly. The engine shows you a slightly worse number and never mentions that the game was over.
 
 ## How much depth does a club player actually need?
 

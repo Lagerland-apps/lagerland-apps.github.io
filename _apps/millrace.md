@@ -273,7 +273,7 @@ founder:
     - "All 64 levels are machine-verified before shipping: solvable, shortest solution confirmed, and screened against no-lookahead strategies"
     - "Localised into 34 languages across 40 App Store locales, with no hardcoded player-facing strings"
     - "Funded by honest paid software — optional cosmetic packs, never ads or data"
-    - "18 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
+    - "19 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"

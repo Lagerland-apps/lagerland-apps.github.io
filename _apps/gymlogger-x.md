@@ -112,7 +112,7 @@ founder:
   response_time: "Support emails are answered personally, usually within a day."
   signals:
     - "Architecture is GDPR-first: local storage, optional iCloud sync, zero analytics SDKs"
-    - "Lagerland's App Store catalogue is 18 privacy-first apps, all with the same data discipline"
+    - "Lagerland's App Store catalogue is 19 privacy-first apps, all with the same data discipline"
     - "Funded by honest paid software — no ads, no investor pressure, no growth-hacking"
   external_link:
     href: "/lagerland-apps/"

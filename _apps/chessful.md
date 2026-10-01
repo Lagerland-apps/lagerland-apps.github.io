@@ -125,7 +125,7 @@ founder:
     - "Stockfish runs on-device — no cloud analysis, no rate-limited daily quota, no account"
     - "Forty distinct AI opponents engineered to feel like forty different players, not one engine at forty noise settings (see the [forty-opponents journal post](/journal/forty-chess-opponents/) for the design note)"
     - "Privacy Manifest declares zero tracking domains and no required-reason APIs beyond local storage"
-    - "18 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
+    - "19 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"
@@ -345,6 +345,7 @@ related_journal:
 # links return 5–25% organic uplift.
 show_body: true
 about_heading: "What Chessful does — chess training, analysis, 40 opponents"
+related_apps: ["shogiful", "xiangqiful"]
 ---
 Chessful is a [chess training & analysis app for iPhone, iPad, and Mac](#features) — built around the idea that Stockfish's centipawn numbers don't help most players improve. The app reviews every move you make, then turns the engine's output into plain English: which piece you hung, which fork you missed, which prophylactic move would have saved the position. From there, [Chessful builds an adaptive training queue](#how-it-works) targeted at the patterns where you actually lose — tactics, defense, positional play, openings, endgames — using spaced repetition and forty AI opponents tuned to specific playing styles.
 
@@ -354,4 +355,4 @@ Every part of Chessful runs on your device. Stockfish, the motif detectors, the 
 
 The forty AI opponents took disproportionate engineering effort and are documented separately in the [forty-opponents journal post](/journal/forty-chess-opponents/) — each opponent has its own opening repertoire, structural preference, and characteristic blind spots, so games feel like playing different players rather than a single engine at forty noise settings. The [adaptive training methodology](/journal/how-chessful-builds-adaptive-training/) is documented in a separate post.
 
-Free tier: 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, three training sessions per week, basic skill tracking. Premium: unlimited deep analysis, unlimited adaptive training, full progress tracking with 90/180/365-day trend graphs, alternative-move exploration. $4.99/month, $29.99/year, or $39.99 once for [lifetime](/apps/chessful/#pricing) with a 7-day free trial. [No tracking, no ads, no account](/apps/chessful/privacy/) — verified by the App Store privacy nutrition label. Published by Lagerland Apps, an independent Apple developer in Finland.
+Free tier: 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, three training sessions per week, basic skill tracking. Premium: unlimited deep analysis, unlimited adaptive training, full progress tracking with 90/180/365-day trend graphs, alternative-move exploration. $4.99/month, $29.99/year, or $39.99 once for [lifetime](/apps/chessful/#pricing) with a 7-day free trial. [No tracking, no ads, no account](/apps/chessful/privacy/) — verified by the App Store privacy nutrition label. The same play–analyze–train loop exists for two other chess games: [Shogiful](/apps/shogiful/) for shogi (Japanese chess) and [Xiangqiful](/apps/xiangqiful/) for xiangqi (Chinese chess). Published by Lagerland Apps, an independent Apple developer in Finland.

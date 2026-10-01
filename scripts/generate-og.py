@@ -68,6 +68,7 @@ ACCENT = {
     "soon":          "#9D8CF5",
     "taskful-day":   "#3FC79A",
     "wanderwiki":    "#2FAACB",
+    "xiangqiful":    "#DDAA45",
 }
 
 TAGLINE = {
@@ -76,6 +77,7 @@ TAGLINE = {
     "millrace":      "A puzzle with a right answer.",
     "gymlogger-x":   "Log lifts fast. Built for the gym.",
     "taskful-day":   "Plan the day. Finish it — calmly.",
+    "xiangqiful":    "Chinese chess, taught properly.",
 }
 
 META = {
@@ -97,6 +99,7 @@ META = {
     "soon":          "Free · Beautiful countdowns · Widgets · iPhone",
     "taskful-day":   "Free · Calm planning · iPhone · iPad · Mac · Watch",
     "wanderwiki":    "Swipe Wikipedia · 33 languages · Ad-free · iPhone",
+    "xiangqiful":    "Free · Pikafish on-device · No ads · iPhone · iPad · Mac",
 }
 
 VARIANT = {}
