@@ -18,3 +18,7 @@ Thumbs.db
 # Ruby / Bundler (in case a Gemfile is added later)
 .bundle/
 vendor/
+
+# Impeccable: platform binary is downloaded on first run
+.claude/skills/impeccable/scripts/bin/
+.impeccable/config.local.json
