@@ -1,0 +1,130 @@
+[
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "studio (vs liftlog, wanderwiki)",
+  "style": "a",
+  "severity": "major",
+  "issue": "The Open Depot's first viewport repeats liftlog-a's. The Open Depot has a concrete ground (#E6E8E5), full-height steel uprights at the page edges, and full-width coloured beams crossing the page that carry the section titles. liftlog-a has a concrete ground (#E4E4E0), a full-height steel shaft at the left edge, and full-width coloured plate slabs crossing the page that carry the section titles. Its beam orange (#E2560F, ~30% of the surface, including a full-bleed orange masthead) also matches wanderwiki-b's orange backing-card drench (#E8622A).",
+  "fix": "liftlog-a keeps the edge member and the crossing bands, which are the literal bar and plates. studio-a moves to the white-painted depot its own scene describes (ground ~#F3F4F1). It shows the racking as one bay frame around the location index, not as page-edge rails. Orange stays on beam labels and pick tickets: no full-bleed orange masthead or aisle band.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "pawza (vs xiangqiful, wanderwiki)",
+  "style": "b",
+  "severity": "major",
+  "issue": "The Vaccination Booklet's pale green pages (#E8EFE6), with two staples in the gutter and stamp and ballpoint marks, match xiangqiful-c's 護眼 exercise book (#EAF2E4, two staples, red-pen marks). Its dark green cover (#234536) framing an open two-page spread matches wanderwiki-c's green case cloth (#1C4630) framing an open spread.",
+  "fix": "xiangqiful-c keeps the pale green, because eye-care paper is culturally specific. wanderwiki-c keeps the spread, because facing pages are its mechanism. pawza-b shows one booklet page at pocket scale (no spread, no gutter staples) on a non-green palette, e.g. a pale lilac security tint (~#ECE9F2) and a plum cover (~#3D2547). Re-pick the stamp ink so it still contrasts.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "gymlogger-x (vs wanderwiki, soon)",
+  "style": "b",
+  "severity": "major",
+  "issue": "Three White Lights is the split hero in costume. The H1, subheadline and a badge/price/QR slip are stacked on the left, and a device (the black judging console) fills the right. Its ground (#d5e3ec bench-card blue + #121619 ink + red) is wanderwiki-a's aerogramme palette (#DCE6F1 + #15223D + #C4232D). It also echoes soon-c's pale blue-grey console with one black instrument.",
+  "fix": "Run the light board across the full width as the stage, with the three lenses large and the verdict strip under them. Set the H1 above it and the hand-in slip below it. Ground the page in its white form paper (#FBFBF9), so the black housing is the only mass.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "liftlog (vs wanderwiki)",
+  "style": "c",
+  "severity": "minor",
+  "issue": "Summer Games Programme sells its four price tiers as perforated stamps with radial-gradient perforation masks. wanderwiki-a uses the same device for its 33 editions.",
+  "fix": "wanderwiki-a keeps stamps, because they are native to airmail. Set liftlog-c's tiers as four admission categories inside the programme's coloured modules (category letter, price, pictogram), with no perforations.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "appmeta, wanderwiki, allpaid",
+  "style": "all",
+  "severity": "minor",
+  "issue": "About half the board's styles are printed paper documents, and three surfaces offer only paper. appmeta has a form, a galley and a leaflet; wanderwiki an aerogramme, a tear-off leaf and a facing-page book; allpaid a poster, a planner and an envelope. On those pages the owner's choice is which paper, all light and mostly ruled.",
+  "fix": "In each trio, swap one non-PICK style for a non-paper candidate the surface already ranked. appmeta → #7, the broadcast mixing console (50 channel strips with de-DE/fr-FR scribble strips). wanderwiki → #4, the world-band receiver dial (each station broadcasting in its own language). allpaid → #4, the self-inking PAID date stamp (object/instrument).",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "wanderwiki",
+  "style": "b",
+  "severity": "major",
+  "issue": "On mobile the imprint mount (badge plus price) is at y600 or lower, under the leaf's numeral, H1, tagline, secondary and two On This Day entries.",
+  "fix": "Move the badge and price into the leaf directly under the H1 and tagline, and on screens narrower than 600px show one On This Day entry above the fold instead of two.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "wanderwiki",
+  "style": "b",
+  "severity": "major",
+  "issue": "A live third-party request on a privacy brand. 'Tear to today' calls en.wikipedia.org from the visitor's browser, which sends the visitor's IP and local date to Wikimedia. The brief bans third-party font hosts for exactly this kind of leak. The feature also has no plan for API changes or rate limits beyond the error line.",
+  "fix": "Default to snapshot-only. A scheduled GitHub Action (the repo already runs a scheduled ratings sync) writes _data/onthisday.yml every day, attribution included, and the tab tears to the date of that build. If the owner keeps the live call, the tab says 'asks wikipedia.org directly' before the click, and the request gets a 4s timeout that falls back to the existing error line.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "wanderwiki",
+  "style": "c",
+  "severity": "major",
+  "issue": "The frontispiece relies on seven Noto Serif script files 'subset once to just the glyphs of each endonym' at 2 to 6 KB each. Those sizes only hold with a custom pyftsubset, not with Fontsource's stock files (the JP, SC and KR faces ship as large unicode-range chunk sets). Subsetting Arabic (العربية), Devanagari (हिन्दी) and Thai by a bare glyph list drops their GSUB/GPOS features and breaks joining, conjuncts and mark placement in the hero.",
+  "fix": "Subset each script with pyftsubset --text='<endonym>' --layout-features='*' so the shaping closure is kept. Commit the outputs and the script in scripts/, and load each file with a unicode-range so only scripts present on the page are fetched. Budget: Gentium Book Plus 400/700/400i is 66 KB, plus 35 KB or less for the seven subsets.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "wanderwiki",
+  "style": "c",
+  "severity": "minor",
+  "issue": "Contrast: the frontispiece dims untapped endonyms to 70%, which puts original-green names at 3.78:1. That contradicts 'never below AA' for any endonym smaller than 24px regular or 18.66px bold.",
+  "fix": "Dim with a colour swap to apparatus grey #5A5E58 (6.31:1) instead of opacity, or dim no further than 85% (5.5:1).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "wanderwiki",
+  "style": "all (b is the worst case)",
+  "severity": "major",
+  "issue": "Style b's hero leaf, and the 'Postmarked today' / 'On this day' sections in a and c, depend on a 'verified 13 May snapshot' that does not exist yet. The only On This Day material in the repo is example_insights, and it is wrong. It says Mexico declared war on the US on 13 May 1846 (it was the US on Mexico). It lists Sigourney Weaver as a 13 May birthday (she was born 8 Oct). It names Cornelius's portrait (1839) and Star Trek: Voyager's premiere (January 1995) as 13 May firsts. If the build falls back to the front matter, false history ships in b's first viewport.",
+  "fix": "Correct example_insights in the front matter now. Create _data/wanderwiki_onthisday.yml with 3 to 5 entries, each carrying its Wikipedia article URL, category and retrieval date. Render the hero leaf and the On This Day sections only from that file, with no fallback to example_insights. A style must not ship until the file exists.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "wanderwiki",
+  "style": "all",
+  "severity": "minor",
+  "issue": "The Lifetime plan summary in the front matter says '≈ $0.61 per Wikipedia language'. value_points[4] and the styles' corrected figure say ≈ $0.76, and 24.99 / 33 = $0.757. Every style's plans table renders the plan summary, so the page would carry both figures.",
+  "fix": "Correct the Lifetime summary to ≈ $0.76 in the front matter before build.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "wanderwiki",
+  "style": "c",
+  "severity": "minor",
+  "issue": "The frontispiece sizes each endonym by article count as the hero's dominant visual. The cluster's own journal post says raw article counts are 'a poor size ranking' because of bot-generated stubs (Cebuano, Swedish, Vietnamese). The apparatus note gives only the source.",
+  "fix": "Add the journal's caveat to the apparatus note ('counts include bot-generated stubs; not a measure of depth') with a dated List of Wikipedias link, or size by something the post endorses.",
+  "lens": "truth-contract"
+ }
+]

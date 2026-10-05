@@ -1,0 +1,98 @@
+[
+ {
+  "surface": "xiangqiful (vs shogiful)",
+  "style": "b",
+  "severity": "blocker",
+  "issue": "After-Round Big Board is the same world and the same first viewport as shogiful-b 'The Big Board Hall'. Both are a giant lit magnetic commentary board in a darkened hall, kept sticky while the commentary scrolls. Both centre a ~500–540px board with name plates or a hand tray on the left flank and the verdict, price, badge and QR on the right flank, and both draw red/coloured move arrows. Both are their surface's IMPECCABLE'S PICK, so the owner would see one style twice across two sibling apps. Its own risk line predicts this convergence.",
+  "fix": "Keep the commentary board on shogiful-b: the ōban 大盤解説 is Shogiful's #1 and the more established institution. Replace xiangqiful-b with xiangqiful candidate #2, park stone tables (石桌棋盤): incised granite boards in park daylight, with the ring of onlookers as the read-back. No board-game style uses stone/architecture, and it gives Xiangqiful a light outdoor scene. Fira Sans Extra Condensed leaves with it.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "pawza (vs xiangqiful, wanderwiki)",
+  "style": "b",
+  "severity": "major",
+  "issue": "The Vaccination Booklet's pale green pages (#E8EFE6), with two staples in the gutter and stamp and ballpoint marks, match xiangqiful-c's 護眼 exercise book (#EAF2E4, two staples, red-pen marks). Its dark green cover (#234536) framing an open two-page spread matches wanderwiki-c's green case cloth (#1C4630) framing an open spread.",
+  "fix": "xiangqiful-c keeps the pale green, because eye-care paper is culturally specific. wanderwiki-c keeps the spread, because facing pages are its mechanism. pawza-b shows one booklet page at pocket scale (no spread, no gutter staples) on a non-green palette, e.g. a pale lilac security tint (~#ECE9F2) and a plum cover (~#3D2547). Re-pick the stamp ink so it still contrasts.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "xiangqiful (vs gymlogger-x, mediakit)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Bilingual Concourse drenches in teal (#0E6A70) behind white enamel panels, just as gymlogger-x-a puts teal steel (#235c58) behind white laminated sheets. Its nav, opponent ladder and game record are metro line maps with station dots, interchange rings and a terminus bar. That is mediakit-b's whole world, the Zone 1 network.",
+  "fix": "gymlogger-x-a keeps the teal, because RAL 6033 is its icon's check colour. mediakit-b keeps line maps: routing a file is wayfinding, and it is MediaKit's #1. Glaze xiangqiful-a's wall in a station colour no surface drenches in, e.g. grey-violet (~#5E5872), avoiding red/gold. Carry the game and the opponents with platform signage instead: direction boards, platform-number blades and bilingual exit lettering, with no octilinear lines or interchange rings.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "chessful (vs xiangqiful)",
+  "style": "b",
+  "severity": "major",
+  "issue": "Move by Move has the same thesis as xiangqiful-c 'The Mistake Notebook': the mistakes from your own games copied out, the move marked, one sentence of why, and exercises built from your losses. It also uses the same device, one teacher's coloured pen over an open two-page book. Its single green on white (#1E6A46) repeats the board's 'white + one deep green' (millrace-c #1C5B3A, wanderwiki-c #23573A, xiangqiful-c #2F6B4A).",
+  "fix": "xiangqiful-c keeps the hand-marked notebook. chessful-b stays a typeset book. The 'better was' rings become a printed second ink in a non-green colour (e.g. printed blue or red-orange) with no pen strokes. The hero is a single recto page (title page plus frontispiece diagram) instead of an open spread.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "allpaid, aftershift, xiangqiful",
+  "style": "a, b, a",
+  "severity": "minor",
+  "issue": "Several heroes keep the incumbent split and only swap the phone for a boxed badge/QR/price panel on the right: allpaid-a's white info panel in columns 9–12, aftershift-b's admin cell, and xiangqiful-a's Exit sub-panel at 36% width. The skeleton survives even though the phone is gone.",
+  "fix": "Put the action where the object really prints it. allpaid-a's fare and QR become the poster's legend box at the foot of the first day band. aftershift-b's admin rows run as a full-width strip under the title block. xiangqiful-a's Exit becomes a full-width exit sign below the great sign.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "xiangqiful",
+  "style": "all",
+  "severity": "major",
+  "issue": "Every style depends on a hand-made CJK font subset (a: Noto Sans TC 900, about 60 glyphs, about 30 KB; b: Noto Serif TC 900, about 35 KB; c: LXGW WenKai TC, about 45 KB). Fontsource ships these faces as about 100 unicode-range chunks per weight, averaging 22 to 42 KB each. Using the stock files would load many chunks for the same characters, well over 160 KB. A one-time pyftsubset run is fine; it is not a deploy build step. The problem is any front-matter edit that adds a character missing from the subset: it silently falls back to a system face in the 92 to 168px hero.",
+  "fix": "Keep the glyph list in _data/xiangqiful_glyphs.yml, commit the subset script in scripts/ (excluded from the build), and add a GitHub Action that fails when a CJK character in _apps/xiangqiful.md or its sub-pages is missing from the subset. Declare a fallback stack (PingFang TC, 'Noto Sans CJK TC', 'Microsoft JhengHei') so a missed character degrades cleanly. Generate the pinyin latin-ext cuts from the same script.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "xiangqiful",
+  "style": "a",
+  "severity": "minor",
+  "issue": "Contrast: the 'book' move marker is a planned-line grey #8A9095 ring at 2.97:1 on enamel, and it is one of the seven grade encodings, so it needs 3:1.",
+  "fix": "Use #858B90 (3.18:1) for grade markers and keep #8A9095 for the dashed roadmap lines.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "xiangqiful",
+  "style": "all",
+  "severity": "minor",
+  "issue": "None of the three visitorPaths links /apps/xiangqiful/support/ or gives the support email. The founder notices carry story, signals and studio link only, and the privacy sections link the transparency record and the privacy policy.",
+  "fix": "Add the support page link, support_email and response_time to the founder notice or the privacy section.",
+  "lens": "truth-contract"
+ }
+]

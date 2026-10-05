@@ -1,0 +1,442 @@
+<!-- fonts: Schibsted Grotesk:600,700,800 | Public Sans:400,600 -->
+<style>
+/* Observa · style b · "The Morning Bulletin" — every selector scoped under .s-observa-b
+   Scene: weekday 06:45, kitchen window, grey northern daylight, phone in one hand. Light, single-scheme. */
+.s-observa-b{
+  --ground:#F2F4F5; --sheet:#FFFFFF; --ink:#16212B; --ink2:#56636E;
+  --below:#1F5FA8; --above:#B4471B;
+  --hair:#D8DEE3; --track:#DFE5E9; --edge:#76848F;
+  --tint-below:#E7EFF9; --tint-above:#FBECE4; --tint-at:#EEF1F3;
+  --disp:'Schibsted Grotesk','Helvetica Neue',Arial,sans-serif;
+  --text:'Public Sans','Helvetica Neue',Arial,sans-serif;
+  --sticky-top:56px; --sticky-bottom:66px; /* html{scroll-padding-top/bottom} contract: anchors and focus never land under a bar */
+  color-scheme:light;
+  background:var(--ground); color:var(--ink);
+  font:400 18px/1.5 var(--text);
+  font-variant-numeric:tabular-nums lining-nums;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+.s-observa-b.mk{overflow:hidden;position:relative}
+.s-observa-b.mk--desktop{width:1440px;height:1800px}
+.s-observa-b.mk--mobile{width:390px;height:1688px}
+.s-observa-b ::selection{background:var(--below);color:#fff}
+.s-observa-b :where(h1,h2,p,ul,dl,dd,dt,li){margin:0;padding:0}
+.s-observa-b :where(ul){list-style:none}
+.s-observa-b :where(b,strong){font-weight:600}
+.s-observa-b .nb{white-space:nowrap}
+.s-observa-b img{display:block}
+.s-observa-b a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1.5px}
+.s-observa-b :focus-visible{outline:3px solid var(--below);outline-offset:3px;border-radius:2px}
+.s-observa-b summary{list-style:none;cursor:pointer}
+.s-observa-b summary::-webkit-details-marker{display:none}
+
+/* ---------- header bar ---------- */
+.s-observa-b .ob-bar{height:56px;padding:0 120px;display:flex;align-items:center;justify-content:space-between;background:var(--ground)}
+.s-observa-b .ob-brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 22px/1 var(--disp);letter-spacing:-.02em}
+.s-observa-b .ob-brand img{width:28px;height:28px;border-radius:6.5px}
+.s-observa-b .ob-nav{display:flex;gap:30px}
+.s-observa-b .ob-nav a{font:600 15px/1 var(--text);text-decoration:none;padding:9px 0 7px;border-bottom:2px solid transparent}
+.s-observa-b .ob-nav a:hover{border-bottom-color:var(--hair)}
+.s-observa-b .ob-nav a[aria-current]{border-bottom-color:var(--ink)}
+.s-observa-b .ob-menu{display:none}
+
+/* ---------- hero: the bulletin ---------- */
+.s-observa-b .ob-hero{padding:18px 120px 34px}
+.s-observa-b h1{font:800 70px/70px var(--disp);letter-spacing:-.034em;text-wrap:balance;max-width:1180px}
+.s-observa-b .ob-lead{display:grid;grid-template-columns:264px 1fr;column-gap:56px;margin-top:16px;align-items:start}
+.s-observa-b .ob-pre{font:800 28px/1.12 var(--disp);letter-spacing:-.018em;text-wrap:balance}
+.s-observa-b .ob-sub{font:400 19px/1.5 var(--text);color:var(--ink2);max-width:740px;text-wrap:pretty}
+
+.s-observa-b .ob-sheet{margin-top:18px;background:var(--sheet);border-top:3px solid var(--ink);box-shadow:0 16px 32px -20px rgba(22,33,43,.30),0 1px 0 var(--hair)}
+.s-observa-b .ob-sheet__head{display:flex;justify-content:space-between;align-items:center;gap:24px;height:32px;padding:0 24px;border-bottom:1px solid var(--hair)}
+.s-observa-b .ob-sheet__head h2{font:600 15px/1.2 var(--text)}
+.s-observa-b .ob-sheet__head p{font:400 13px/1.2 var(--text);color:var(--ink2)}
+
+.s-observa-b .ob-row{border-bottom:1px solid var(--hair)}
+.s-observa-b .ob-row summary{display:grid;grid-template-columns:296px 1fr 156px 184px 28px;align-items:center;min-height:62px;padding:7px 24px}
+.s-observa-b .ob-row summary:hover{background:#F7F9FA}
+.s-observa-b .ob-area{font:800 28px/1.05 var(--disp);letter-spacing:-.02em}
+.s-observa-b .ob-sent{font:400 19.5px/1.27 var(--text);padding-right:32px;text-wrap:pretty}
+.s-observa-b .ob-word{display:flex;align-items:center;gap:9px;font:600 16px/1.2 var(--text);align-self:stretch;margin:-7px 0;padding:0 14px}
+.s-observa-b .ob-tick{display:block;flex:none;width:9px;height:9px;background:currentColor}
+.s-observa-b .ob-word--below{color:var(--below);background:var(--tint-below)}
+.s-observa-b .ob-word--above{color:var(--above);background:var(--tint-above)}
+.s-observa-b .ob-word--at{color:var(--ink);background:var(--tint-at)}
+.s-observa-b .ob-word--at .ob-tick{background:transparent;box-shadow:inset 0 0 0 2px currentColor}
+.s-observa-b .ob-conf{display:block;padding-left:20px;font:600 16px/1.25 var(--text)}
+.s-observa-b .ob-conf__l{font-weight:400;font-size:14px;color:var(--ink2)}
+.s-observa-b .ob-conf small{display:block;font:400 13px/1.3 var(--text);color:var(--ink2)}
+.s-observa-b .ob-chev{justify-self:end;transition:transform 180ms cubic-bezier(.16,1,.3,1)}
+.s-observa-b details[open] > summary .ob-chev{transform:rotate(180deg)}
+
+/* sentence <-> numbers: the opened row */
+.s-observa-b .ob-more{display:flex;align-items:flex-end;gap:48px;padding:0 24px 16px 320px}
+.s-observa-b .ob-range{position:relative;width:452px;padding-top:4px}
+.s-observa-b .ob-range__val{display:block;height:20px;margin-left:calc(14% - 2px);font:600 13px/20px var(--text);color:var(--below);white-space:nowrap}
+.s-observa-b .ob-range__track{position:relative;height:20px;background:var(--track);border-radius:2px;margin-top:2px}
+.s-observa-b .ob-range__band{position:absolute;top:0;bottom:0;left:38%;width:34%;background:#fff;box-shadow:inset 1px 0 0 var(--edge),inset -1px 0 0 var(--edge)}
+.s-observa-b .ob-range__tick{position:absolute;left:14%;top:-6px;width:4px;height:32px;margin-left:-2px;background:var(--below)}
+.s-observa-b .ob-range__labels{position:relative;height:18px;margin-top:10px;font:400 13px/1.2 var(--text);color:var(--ink2)}
+.s-observa-b .ob-range__labels span{position:absolute;top:0;white-space:nowrap}
+.s-observa-b .ob-range__labels span:nth-child(1){left:0}
+.s-observa-b .ob-range__labels span:nth-child(2){left:55%;transform:translateX(-50%)}
+.s-observa-b .ob-range__labels span:nth-child(3){right:0}
+.s-observa-b .ob-stats{display:flex;gap:30px;padding-bottom:0}
+.s-observa-b .ob-stats div{white-space:nowrap}
+.s-observa-b .ob-stats dt{font:400 13px/1.3 var(--text);color:var(--ink2)}
+.s-observa-b .ob-stats dd{font:600 20px/1.2 var(--text)}
+
+/* the issue row: how the bulletin is received */
+.s-observa-b .ob-issue{display:flex;align-items:center;gap:32px;padding:8px 24px;border-top:3px solid var(--ink)}
+.s-observa-b .ob-issue__price{flex:1}
+.s-observa-b .ob-price{font:800 28px/1.1 var(--disp);letter-spacing:-.02em}
+.s-observa-b .ob-issue__note{font:400 15px/1.4 var(--text);color:var(--ink2);margin-top:5px}
+.s-observa-b .ob-badge{display:block;flex:none;width:168px;height:56px}
+.s-observa-b .ob-badge .asb-svg{display:block;width:100%;height:100%}
+.s-observa-b .ob-qr{display:flex;align-items:center;gap:14px;width:290px}
+.s-observa-b .ob-qr img{width:104px;height:104px;border:1px solid var(--hair);border-radius:4px;flex:none}
+.s-observa-b .ob-qr b{display:block;font:600 15px/1.3 var(--text)}
+.s-observa-b .ob-qr span{display:block;font:400 13px/1.4 var(--text);color:var(--ink2);margin-top:3px}
+
+/* ---------- sections: bulletin entries, title left, entry right ---------- */
+.s-observa-b .ob-sec{position:relative;padding:46px 120px 50px}
+.s-observa-b .ob-sec::before{content:"";position:absolute;left:120px;right:120px;top:0;height:3px;background:var(--ink)}
+.s-observa-b .ob-sec--white{background:var(--sheet)}
+.s-observa-b .ob-sec__grid{display:grid;grid-template-columns:264px 1fr;column-gap:56px;align-items:start}
+.s-observa-b .ob-sec h2{font:800 30px/1.08 var(--disp);letter-spacing:-.022em;text-wrap:balance}
+.s-observa-b .ob-qa{font:400 19px/1.62 var(--text);max-width:740px;text-wrap:pretty}
+.s-observa-b .ob-ref{margin-top:24px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);max-width:740px}
+.s-observa-b .ob-ref summary{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:54px;font:600 16px/1.3 var(--text)}
+.s-observa-b .ob-ref__body{padding:4px 0 16px;font:400 16px/1.55 var(--text)}
+.s-observa-b .ob-ref__body p+p{margin-top:8px}
+
+.s-observa-b .ob-statement{font:800 34px/1.16 var(--disp);letter-spacing:-.024em;max-width:780px;text-wrap:balance}
+.s-observa-b .ob-statement span{font-weight:600;color:var(--ink2)}
+.s-observa-b .ob-statement--ink{font-size:40px}
+.s-observa-b .ob-points{display:grid;grid-template-columns:1fr 1fr;column-gap:40px;margin-top:30px;max-width:880px}
+.s-observa-b .ob-points li{border-top:1px solid var(--ink);padding:14px 0 24px}
+.s-observa-b .ob-points strong{display:block;font:800 19px/1.2 var(--disp);letter-spacing:-.012em;margin-bottom:6px}
+.s-observa-b .ob-points span{display:block;font:400 16px/1.55 var(--text);max-width:420px}
+.s-observa-b .ob-record{margin-top:28px;max-width:820px;border-top:1px solid var(--ink)}
+.s-observa-b .ob-record div{display:grid;grid-template-columns:260px 1fr;align-items:baseline;min-height:52px;padding:12px 0;border-bottom:1px solid var(--hair)}
+.s-observa-b .ob-record dt{font:800 19px/1.2 var(--disp);letter-spacing:-.012em}
+.s-observa-b .ob-record dd{font:400 18px/1.4 var(--text)}
+
+/* ---------- sticky download bar (appears once the issue row has scrolled away) ---------- */
+.s-observa-b .ob-sticky{position:absolute;left:0;right:0;bottom:0;background:var(--sheet);border-top:3px solid var(--ink);
+  box-shadow:0 -10px 24px -14px rgba(22,33,43,.32);padding:0 120px env(safe-area-inset-bottom,0px)}
+.s-observa-b .ob-sticky__in{display:flex;align-items:center;gap:12px;height:63px}
+.s-observa-b .ob-sticky img{width:36px;height:36px;border-radius:8px}
+.s-observa-b .ob-sticky__meta b{display:block;font:800 18px/1.1 var(--disp);letter-spacing:-.015em}
+.s-observa-b .ob-sticky__meta span{display:block;font:600 14px/1.3 var(--text);color:var(--ink2)}
+.s-observa-b .ob-badge--sm{width:120px;height:40px;margin-left:auto}
+
+/* ================= MOBILE 390 ================= */
+.s-observa-b.mk--mobile .ob-bar{height:52px;padding:0 16px}
+.s-observa-b.mk--mobile .ob-brand{font-size:20px}
+.s-observa-b.mk--mobile .ob-menu{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 12px;border:1.5px solid var(--ink);border-radius:6px;font:600 15px/1 var(--text);text-decoration:none}
+.s-observa-b.mk--mobile .ob-hero{padding:18px 16px 28px}
+.s-observa-b.mk--mobile h1{font-size:38px;line-height:41px;letter-spacing:-.03em}
+.s-observa-b.mk--mobile .ob-lead{display:block;margin:0}
+.s-observa-b.mk--mobile .ob-pre{margin-top:14px;font-size:22px;line-height:1.15}
+.s-observa-b.mk--mobile .ob-sub{margin-top:8px;font-size:17px;line-height:1.5}
+.s-observa-b.mk--mobile .ob-issue{display:block;margin:20px -16px 0;padding:14px 16px 16px;background:var(--sheet);border-top:3px solid var(--ink)}
+.s-observa-b.mk--mobile .ob-price{font-size:23px}
+.s-observa-b.mk--mobile .ob-issue__note{margin-top:3px}
+.s-observa-b.mk--mobile .ob-issue .ob-badge{margin-top:12px;width:144px;height:48px}
+.s-observa-b.mk--mobile .ob-sheet{margin:16px -16px 0}
+.s-observa-b.mk--mobile .ob-sheet__head{display:block;height:auto;padding:12px 16px 11px}
+.s-observa-b.mk--mobile .ob-sheet__head h2{font:800 19px/1.2 var(--disp);letter-spacing:-.012em}
+.s-observa-b.mk--mobile .ob-sheet__head p{margin-top:3px}
+.s-observa-b.mk--mobile .ob-row summary{grid-template-columns:1fr auto 28px;grid-template-areas:"area word chev" "sent sent sent" "conf conf conf";padding:14px 16px 14px;min-height:0;column-gap:10px}
+.s-observa-b.mk--mobile .ob-area{grid-area:area;font-size:24px}
+.s-observa-b.mk--mobile .ob-word{grid-area:word;font-size:15px;align-self:center;margin:0;padding:5px 9px;border-radius:3px}
+.s-observa-b.mk--mobile .ob-chev{grid-area:chev}
+.s-observa-b.mk--mobile .ob-sent{grid-area:sent;font-size:17px;line-height:1.38;padding:6px 0 0}
+.s-observa-b.mk--mobile .ob-conf{grid-area:conf;margin-top:7px;padding-left:0;font-size:15px}
+.s-observa-b.mk--mobile .ob-conf small{display:inline;font-size:14px}
+.s-observa-b.mk--mobile .ob-conf small::before{content:" · "}
+.s-observa-b.mk--mobile .ob-conf--solo small::before{content:none}
+.s-observa-b.mk--mobile .ob-more{display:block;padding:2px 16px 18px}
+.s-observa-b.mk--mobile .ob-range{width:100%}
+.s-observa-b.mk--mobile .ob-range__labels{height:34px}
+.s-observa-b.mk--mobile .ob-range__val{margin-left:calc(14% - 2px)}
+.s-observa-b.mk--mobile .ob-range__labels span:nth-child(2){white-space:normal;width:132px;text-align:center}
+.s-observa-b.mk--mobile .ob-stats{margin-top:16px;gap:26px}
+.s-observa-b.mk--mobile .ob-stats dd{font-size:19px}
+.s-observa-b.mk--mobile .ob-sec{padding:38px 16px 44px}
+.s-observa-b.mk--mobile .ob-sec::before{left:16px;right:16px}
+.s-observa-b.mk--mobile .ob-sec__grid{display:block}
+.s-observa-b.mk--mobile .ob-sec h2{font-size:27px;margin-bottom:16px}
+.s-observa-b.mk--mobile .ob-qa{font-size:17px;line-height:1.6}
+.s-observa-b.mk--mobile .ob-statement{font-size:27px}
+.s-observa-b.mk--mobile .ob-statement--ink{font-size:30px}
+.s-observa-b.mk--mobile .ob-points{grid-template-columns:1fr;margin-top:26px}
+.s-observa-b.mk--mobile .ob-record div{grid-template-columns:1fr;gap:2px}
+.s-observa-b.mk--mobile .ob-sticky{padding:0 16px env(safe-area-inset-bottom,0px)}
+.s-observa-b.mk--mobile .ob-sticky__in{height:60px;gap:10px}
+.s-observa-b.mk--mobile .ob-sticky__meta b{font-size:16px}
+.s-observa-b.mk--mobile .ob-sticky__meta span{font-size:13px}
+
+/* ---------- motion: broadcast cuts, not fades ---------- */
+@media (prefers-reduced-motion:reduce){ .s-observa-b *{transition:none!important;animation:none!important} }
+
+</style>
+<div class="s-observa-b mk mk--desktop">
+  <header class="ob-bar">
+    <a class="ob-brand" href="#today"><img src="assets/observa/icon.png" width="28" height="28" alt=""><span>Observa</span></a>
+    <nav class="ob-nav" aria-label="Sections">
+      <a href="#today" aria-current="location">Today</a><a href="#normal">Normal</a><a href="#readings">Readings</a><a href="#plans">Plans</a><a href="#privacy">Privacy</a><a href="#questions">Questions</a>
+    </nav>
+  </header>
+  <main class="ob-page">
+    <section class="ob-hero" id="today">
+      <h1>Apple Health Insights for Sleep, HRV &amp; Recovery.</h1>
+      <div class="ob-lead">
+        <p class="ob-pre">Your data already knows why.</p>
+        <p class="ob-sub">Observa reads your Apple Health and Apple Watch data — sleep stages, HRV (SDNN), ECG, resting heart rate — and explains in plain English what actually moves your sleep quality, recovery readiness, and energy. Personal baselines. <span class="nb">On-device.</span> No account.</p>
+      </div>
+      <div class="ob-sheet">
+        <div class="ob-sheet__head"><h2>Today’s readings, each against your own 60-day normal</h2><p>Sample bulletin. Wording and numbers are from the app’s example insight cards.</p></div>
+        <details class="ob-row" open>
+  <summary>
+    <span class="ob-area">Sleep</span>
+    <span class="ob-sent">Deep sleep 18% lower on nights after a leg day past 18:00.</span>
+    <span class="ob-word ob-word--below"><i class="ob-tick" aria-hidden="true"></i>below normal</span>
+    <span class="ob-conf"><b>87%</b><span class="ob-conf__l"> confidence</span><small>n=14 over 60 days</small></span>
+    <svg class="ob-chev" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </summary>
+  <div class="ob-more">
+  <div class="ob-range" role="img" aria-label="Illustrative normal-range bar. This reading sits 18% below your baseline, outside the band of your 60-day normal.">
+    <span class="ob-range__val">18% below baseline</span>
+    <div class="ob-range__track"><span class="ob-range__band"></span><span class="ob-range__tick"></span></div>
+    <div class="ob-range__labels"><span>lower</span><span>your 60-day normal (illustrative band)</span><span>higher</span></div>
+  </div>
+  <dl class="ob-stats">
+    <div><dt>Nights, n</dt><dd>14</dd></div>
+    <div><dt>Window</dt><dd>60 days</dd></div>
+    <div><dt>Confidence</dt><dd>87%</dd></div>
+  </dl>
+</div>
+</details>
+<details class="ob-row">
+  <summary>
+    <span class="ob-area">Heart</span>
+    <span class="ob-sent">Resting heart rate +4 bpm the morning after coffee past 14:00.</span>
+    <span class="ob-word ob-word--above"><i class="ob-tick" aria-hidden="true"></i>above normal</span>
+    <span class="ob-conf"><b>91%</b><span class="ob-conf__l"> confidence</span><small>n=23</small></span>
+    <svg class="ob-chev" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </summary>
+  
+</details>
+<details class="ob-row">
+  <summary>
+    <span class="ob-area">HRV</span>
+    <span class="ob-sent">Back to your normal within 36 hours of a <span class="nb">high-strain</span> day.</span>
+    <span class="ob-word ob-word--at"><i class="ob-tick" aria-hidden="true"></i>at normal</span>
+    <span class="ob-conf ob-conf--solo"><small>No n or confidence on this card</small></span>
+    <svg class="ob-chev" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </summary>
+  
+</details>
+<details class="ob-row">
+  <summary>
+    <span class="ob-area">Recovery</span>
+    <span class="ob-sent">Weeks with two rest days run 12% higher on HRV (SDNN) than weeks with one.</span>
+    <span class="ob-word ob-word--above"><i class="ob-tick" aria-hidden="true"></i>above normal</span>
+    <span class="ob-conf"><b>n=8 weeks</b><small>No confidence on this card</small></span>
+    <svg class="ob-chev" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </summary>
+  
+</details>
+        <div class="ob-issue">
+          <div class="ob-issue__price"><p class="ob-price">Free — Pro from $2.99/mo</p><p class="ob-issue__note">For iPhone and iPad. Reads Apple Health on the device. No account.</p></div>
+          <a class="asb ob-badge" href="#" rel="noopener" aria-label="Download Observa on the App Store">
+  <svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/>
+    <path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/>
+    <text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text>
+    <text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text>
+  </svg>
+</a>
+          <div class="ob-qr"><img src="assets/qr/observa.svg" width="104" height="104" alt="QR code that opens Observa on the App Store"><p><b>Scan with your iPhone camera</b><span>Get Observa from your desktop.</span></p></div>
+        </div>
+      </div>
+    </section>
+    
+<section class="ob-sec ob-sec--white" id="synopsis" aria-labelledby="h-syn-d">
+  <div class="ob-sec__grid">
+    <h2 id="h-syn-d">General synopsis</h2>
+    <div class="ob-sec__body">
+      <p class="ob-qa">Observa is a private health insights app for iPhone and iPad that reads your Apple Health data — sleep stages, HRV (SDNN) trends, ECG sinus-rhythm, resting heart rate, activity — no matter which device recorded it (Apple Watch, Oura, Whoop, Garmin, Fitbit, or any app that writes to Apple Health), and explains in plain language which of your habits actually shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. No servers, no account, no data upload (verified by Apple’s App Privacy nutrition label). Free with Pro from $2.99/month, $22.99/year, or $49.99 lifetime.</p>
+      <details class="ob-ref">
+  <summary><span>Quick reference — what Observa is, in one screen</span><svg class="ob-chev" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="ob-ref__body">
+    <p><strong>What it is:</strong> Observa is a health application for iOS and iPadOS, built by Lagerland Apps, an independent Apple developer focused on privacy-first software.</p>
+    <p><strong>Pricing model:</strong> freemium — Free — Pro from $2.99/mo.</p>
+  </div>
+</details>
+    </div>
+  </div>
+</section>
+<section class="ob-sec" id="normal" aria-labelledby="h-norm-d">
+  <div class="ob-sec__grid">
+    <h2 id="h-norm-d">What “normal” means here</h2>
+    <div class="ob-sec__body">
+      <p class="ob-statement"><span>A weather service reads today against thirty years of days.</span> Observa reads last night against your last sixty days.</p>
+      <ul class="ob-points"><li><strong>Answers, not numbers</strong><span>Most health apps show you data. Observa interprets it — single-variable correlations on the free tier, multi-variable on Pro — and tells you which habits move which metrics for you.</span></li><li><strong>Patterns against your baseline</strong><span>Every insight is measured against a rolling 60-day personal baseline. A “low HRV” day means low for you, not for an average <span class="nb">30-year-old.</span></span></li><li><strong>Calm, not clinical</strong><span>Daily insight cards and weekly reflections in human language. No streaks, no scolding, no overwhelming dashboards.</span></li><li><strong>Private by design — and verified</strong><span>No ads, no trackers, no account, no servers. Apple’s App Privacy label lists zero data collection. Your Health data never leaves your device.</span></li></ul>
+    </div>
+  </div>
+</section>
+<section class="ob-sec ob-sec--white" id="privacy" aria-labelledby="h-priv-d">
+  <div class="ob-sec__grid">
+    <h2 id="h-priv-d">Issuing office</h2>
+    <div class="ob-sec__body">
+      <p class="ob-statement ob-statement--ink">On your iPhone. Nowhere else.</p>
+      <dl class="ob-record"><div><dt>Network calls</dt><dd>None. All correlation analysis runs on-device.</dd></div><div><dt>Third-party SDKs</dt><dd>0</dd></div><div><dt>Tracking domains</dt><dd>0</dd></div><div><dt>Account</dt><dd>Not required</dd></div><div><dt>Data leaves the device</dt><dd>No.</dd></div><div><dt>Analytics</dt><dd>None.</dd></div></dl>
+    </div>
+  </div>
+</section>
+  </main>
+  <div class="ob-sticky" role="region" aria-label="Download Observa">
+  <div class="ob-sticky__in">
+    <img src="assets/observa/icon.png" width="36" height="36" alt="">
+    <div class="ob-sticky__meta"><b>Observa</b><span>Free — Pro from $2.99/mo</span></div>
+    <a class="asb ob-badge ob-badge--sm" href="#" rel="noopener" aria-label="Download Observa on the App Store">
+  <svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/>
+    <path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/>
+    <text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text>
+    <text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text>
+  </svg>
+</a>
+  </div>
+</div>
+</div>
+<div class="s-observa-b mk mk--mobile">
+  <header class="ob-bar">
+    <a class="ob-brand" href="#today"><img src="assets/observa/icon.png" width="28" height="28" alt=""><span>Observa</span></a>
+    <a class="ob-menu" href="#sections">Sections <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M3 6h14M3 10h14M3 14h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+  </header>
+  <main class="ob-page">
+    <section class="ob-hero" id="today">
+      <h1>Apple Health Insights for Sleep, HRV &amp; Recovery.</h1>
+      <p class="ob-pre">Your data already knows why.</p>
+      <p class="ob-sub">Observa reads your Apple Health and Apple Watch data and explains in plain English what actually moves your sleep, recovery and energy. Personal baselines. <span class="nb">On-device.</span> No account.</p>
+      <div class="ob-issue">
+        <p class="ob-price">Free — Pro from $2.99/mo</p>
+        <p class="ob-issue__note">For iPhone and iPad. No account.</p>
+        <a class="asb ob-badge" href="#" rel="noopener" aria-label="Download Observa on the App Store">
+  <svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/>
+    <path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/>
+    <text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text>
+    <text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text>
+  </svg>
+</a>
+      </div>
+      <div class="ob-sheet">
+        <div class="ob-sheet__head"><h2>Today’s readings, each against your own 60-day normal</h2><p>Sample bulletin. Wording and numbers are from the app’s example insight cards.</p></div>
+        <details class="ob-row" open>
+  <summary>
+    <span class="ob-area">Sleep</span>
+    <span class="ob-sent">Deep sleep 18% lower on nights after a leg day past 18:00.</span>
+    <span class="ob-word ob-word--below"><i class="ob-tick" aria-hidden="true"></i>below normal</span>
+    <span class="ob-conf"><b>87%</b><span class="ob-conf__l"> confidence</span><small>n=14 over 60 days</small></span>
+    <svg class="ob-chev" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </summary>
+  <div class="ob-more">
+  <div class="ob-range" role="img" aria-label="Illustrative normal-range bar. This reading sits 18% below your baseline, outside the band of your 60-day normal.">
+    <span class="ob-range__val">18% below baseline</span>
+    <div class="ob-range__track"><span class="ob-range__band"></span><span class="ob-range__tick"></span></div>
+    <div class="ob-range__labels"><span>lower</span><span>your 60-day normal (illustrative band)</span><span>higher</span></div>
+  </div>
+  <dl class="ob-stats">
+    <div><dt>Nights, n</dt><dd>14</dd></div>
+    <div><dt>Window</dt><dd>60 days</dd></div>
+    <div><dt>Confidence</dt><dd>87%</dd></div>
+  </dl>
+</div>
+</details>
+<details class="ob-row">
+  <summary>
+    <span class="ob-area">Heart</span>
+    <span class="ob-sent">Resting heart rate +4 bpm the morning after coffee past 14:00.</span>
+    <span class="ob-word ob-word--above"><i class="ob-tick" aria-hidden="true"></i>above normal</span>
+    <span class="ob-conf"><b>91%</b><span class="ob-conf__l"> confidence</span><small>n=23</small></span>
+    <svg class="ob-chev" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </summary>
+  
+</details>
+<details class="ob-row">
+  <summary>
+    <span class="ob-area">HRV</span>
+    <span class="ob-sent">Back to your normal within 36 hours of a <span class="nb">high-strain</span> day.</span>
+    <span class="ob-word ob-word--at"><i class="ob-tick" aria-hidden="true"></i>at normal</span>
+    <span class="ob-conf ob-conf--solo"><small>No n or confidence on this card</small></span>
+    <svg class="ob-chev" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </summary>
+  
+</details>
+<details class="ob-row">
+  <summary>
+    <span class="ob-area">Recovery</span>
+    <span class="ob-sent">Weeks with two rest days run 12% higher on HRV (SDNN) than weeks with one.</span>
+    <span class="ob-word ob-word--above"><i class="ob-tick" aria-hidden="true"></i>above normal</span>
+    <span class="ob-conf"><b>n=8 weeks</b><small>No confidence on this card</small></span>
+    <svg class="ob-chev" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </summary>
+  
+</details>
+      </div>
+    </section>
+    
+<section class="ob-sec ob-sec--white" id="synopsis" aria-labelledby="h-syn-m">
+  <div class="ob-sec__grid">
+    <h2 id="h-syn-m">General synopsis</h2>
+    <div class="ob-sec__body">
+      <p class="ob-qa">Observa is a private health insights app for iPhone and iPad that reads your Apple Health data — sleep stages, HRV (SDNN) trends, ECG sinus-rhythm, resting heart rate, activity — no matter which device recorded it (Apple Watch, Oura, Whoop, Garmin, Fitbit, or any app that writes to Apple Health), and explains in plain language which of your habits actually shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. No servers, no account, no data upload (verified by Apple’s App Privacy nutrition label). Free with Pro from $2.99/month, $22.99/year, or $49.99 lifetime.</p>
+      <details class="ob-ref">
+  <summary><span>Quick reference — what Observa is, in one screen</span><svg class="ob-chev" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="ob-ref__body">
+    <p><strong>What it is:</strong> Observa is a health application for iOS and iPadOS, built by Lagerland Apps, an independent Apple developer focused on privacy-first software.</p>
+    <p><strong>Pricing model:</strong> freemium — Free — Pro from $2.99/mo.</p>
+  </div>
+</details>
+    </div>
+  </div>
+</section>
+<section class="ob-sec" id="normal" aria-labelledby="h-norm-m">
+  <div class="ob-sec__grid">
+    <h2 id="h-norm-m">What “normal” means here</h2>
+    <div class="ob-sec__body">
+      <p class="ob-statement"><span>A weather service reads today against thirty years of days.</span> Observa reads last night against your last sixty days.</p>
+      <ul class="ob-points"><li><strong>Answers, not numbers</strong><span>Most health apps show you data. Observa interprets it — single-variable correlations on the free tier, multi-variable on Pro — and tells you which habits move which metrics for you.</span></li><li><strong>Patterns against your baseline</strong><span>Every insight is measured against a rolling 60-day personal baseline. A “low HRV” day means low for you, not for an average <span class="nb">30-year-old.</span></span></li><li><strong>Calm, not clinical</strong><span>Daily insight cards and weekly reflections in human language. No streaks, no scolding, no overwhelming dashboards.</span></li><li><strong>Private by design — and verified</strong><span>No ads, no trackers, no account, no servers. Apple’s App Privacy label lists zero data collection. Your Health data never leaves your device.</span></li></ul>
+    </div>
+  </div>
+</section>
+<section class="ob-sec ob-sec--white" id="privacy" aria-labelledby="h-priv-m">
+  <div class="ob-sec__grid">
+    <h2 id="h-priv-m">Issuing office</h2>
+    <div class="ob-sec__body">
+      <p class="ob-statement ob-statement--ink">On your iPhone. Nowhere else.</p>
+      <dl class="ob-record"><div><dt>Network calls</dt><dd>None. All correlation analysis runs on-device.</dd></div><div><dt>Third-party SDKs</dt><dd>0</dd></div><div><dt>Tracking domains</dt><dd>0</dd></div><div><dt>Account</dt><dd>Not required</dd></div><div><dt>Data leaves the device</dt><dd>No.</dd></div><div><dt>Analytics</dt><dd>None.</dd></div></dl>
+    </div>
+  </div>
+</section>
+  </main>
+  <div class="ob-sticky" role="region" aria-label="Download Observa">
+  <div class="ob-sticky__in">
+    <img src="assets/observa/icon.png" width="36" height="36" alt="">
+    <div class="ob-sticky__meta"><b>Observa</b><span>Free — Pro from $2.99/mo</span></div>
+    <a class="asb ob-badge ob-badge--sm" href="#" rel="noopener" aria-label="Download Observa on the App Store">
+  <svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/>
+    <path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/>
+    <text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text>
+    <text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text>
+  </svg>
+</a>
+  </div>
+</div>
+</div>

@@ -1,0 +1,486 @@
+<title>Lagerland Redesign Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Martian+Mono:wght@400;500&display=swap">
+{% for u in font_links %}<link rel="stylesheet" href="{{ u }}">
+{% endfor %}
+<style>
+/* Light table: every proposed style is a print laid on a backlit table; one chinagraph-yellow mark shows the pick. */
+:root{
+  --bg:#E4E7EA; --sheet:#F6F7F8; --sheet-2:#EDF0F2; --ink:#121518; --ink-2:#465058; --line:#C5CBD0; --line-2:#D7DCE0;
+  --mark:#FFC414; --mark-ink:#1B1500; --focus:#1D63D8; --ok:#1E7A46;
+  --font-ui:"Schibsted Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-data:"Martian Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --step--1:0.8125rem; --step-0:0.9375rem; --step-1:1.0625rem; --step-2:1.375rem; --step-3:clamp(1.75rem,3vw,2.375rem); --step-4:clamp(2.25rem,5vw,3.5rem);
+  --gutter:clamp(16px,3vw,40px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101214; --sheet:#191C1F; --sheet-2:#202428; --ink:#ECEFF1; --ink-2:#A4ADB4; --line:#2E3338; --line-2:#262A2E;
+  --mark:#FFC414; --mark-ink:#1B1500; --focus:#7AAEFF; --ok:#5BD08C; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#101214; --sheet:#191C1F; --sheet-2:#202428; --ink:#ECEFF1; --ink-2:#A4ADB4; --line:#2E3338; --line-2:#262A2E;
+  --mark:#FFC414; --mark-ink:#1B1500; --focus:#7AAEFF; --ok:#5BD08C; color-scheme:dark }
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-ui);font-size:var(--step-0);line-height:1.5;-webkit-font-smoothing:antialiased}
+::selection{background:var(--mark);color:var(--mark-ink)}
+a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+h1,h2,h3,h4{text-wrap:balance;margin:0;line-height:1.15}
+p{margin:0}
+.wrap{max-width:1560px;margin:0 auto;padding-inline:var(--gutter)}
+.mono{font-family:var(--font-data);font-size:0.78em;letter-spacing:0}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;gap:16px;min-height:56px;flex-wrap:wrap;padding-block:8px}
+.bar__name{font-weight:700;font-size:var(--step-1);letter-spacing:-0.01em;margin-right:auto}
+.progress{display:flex;align-items:center;gap:10px;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.progress__meter{width:120px;height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.progress__meter span{display:block;height:100%;background:var(--mark);width:0}
+.toggle{display:inline-flex;align-items:center;gap:8px;color:var(--ink-2);cursor:pointer;user-select:none}
+.toggle input{accent-color:var(--ink)}
+.save-state{font-size:var(--step--1);color:var(--ink-2);min-width:0}
+
+/* intro */
+.intro{padding-block:48px 24px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:start}
+.intro h1{font-size:var(--step-4);letter-spacing:-0.025em;font-weight:700}
+.intro .lede{font-size:var(--step-1);color:var(--ink-2);margin-top:16px;max-width:62ch}
+.howto{background:var(--sheet);border:1px solid var(--line);border-radius:12px;padding:20px 22px;display:grid;gap:12px}
+.howto ol{margin:0;padding-left:1.2em;display:grid;gap:8px}
+.howto strong{font-weight:600}
+.facts{padding-block:8px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px}
+.fact{border-top:2px solid var(--ink);padding-top:10px;display:grid;gap:4px}
+.fact h3{font-size:var(--step-0);font-weight:600}
+.fact p{color:var(--ink-2);font-size:var(--step--1)}
+
+/* index */
+.index{padding-block:8px 40px}
+.index h2,.section-title{font-size:var(--step-2);font-weight:700;letter-spacing:-0.01em;margin-bottom:14px}
+.chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,180px),1fr));gap:8px;list-style:none;margin:0;padding:0}
+.chip{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;background:var(--sheet);border:1px solid var(--line);text-decoration:none;min-width:0}
+.chip img{width:28px;height:28px;border-radius:7px;flex:none}
+.chip__glyph{width:28px;height:28px;border-radius:7px;flex:none;display:grid;place-items:center;background:var(--ink);color:var(--bg);font-weight:700;font-size:12px}
+.chip__name{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;flex:1}
+.chip__pick{font-family:var(--font-data);font-size:11px;padding:2px 6px;border-radius:4px;border:1px solid var(--line);color:var(--ink-2)}
+.chip.is-picked .chip__pick{background:var(--mark);color:var(--mark-ink);border-color:var(--mark)}
+
+/* surface */
+.surface{padding-block:40px;border-top:1px solid var(--line)}
+.surface[hidden]{display:none}
+.s-head{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,300px);gap:20px;align-items:start;margin-bottom:22px}
+.s-head__icon{width:64px;height:64px;border-radius:15px;box-shadow:0 1px 2px rgb(0 0 0/.12),0 6px 18px -8px rgb(0 0 0/.35)}
+.s-head__glyph{width:64px;height:64px;border-radius:15px;display:grid;place-items:center;background:var(--ink);color:var(--bg);font-weight:700;font-size:22px}
+.s-head h2{font-size:var(--step-3);font-weight:700;letter-spacing:-0.02em}
+.s-head__scope{color:var(--ink-2);font-size:var(--step--1);margin-top:4px}
+.s-head__dossier{display:grid;gap:8px;margin-top:12px;max-width:80ch}
+.s-head__dossier p{color:var(--ink)}
+.s-head__dossier b{font-weight:600}
+.today{display:grid;gap:6px;justify-items:start}
+.today figure{margin:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--sheet);cursor:zoom-in;width:100%}
+.today img{display:block;width:100%;height:auto;filter:saturate(.6);opacity:.9}
+.today figcaption,.today small{font-size:var(--step--1);color:var(--ink-2)}
+
+.styles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:20px;align-items:start}
+.card{background:var(--sheet);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:grid;position:relative;transition:box-shadow .2s ease,border-color .2s ease}
+.card.is-picked{border-color:var(--mark);box-shadow:0 0 0 3px var(--mark)}
+.card__flag{position:absolute;top:12px;right:12px;z-index:2;background:var(--mark);color:var(--mark-ink);font-weight:700;font-size:var(--step--1);padding:4px 10px;border-radius:999px;display:none}
+.card.is-picked .card__flag{display:block}
+.view{position:relative;aspect-ratio:16/10;background:var(--sheet-2);border-bottom:1px solid var(--line);overflow:hidden}
+.view button.zoom{all:unset;position:absolute;inset:0;cursor:zoom-in;display:grid;place-items:center}
+.view img{display:block;width:100%;height:100%;object-fit:contain}
+.view .is-phone img{object-fit:contain;padding:10px 0}
+.view__tabs{display:flex;gap:4px;padding:10px 14px 0}
+.tab{font:inherit;font-size:var(--step--1);padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink-2);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.card__body{padding:16px 18px 18px;display:grid;gap:12px}
+.kicker{font-family:var(--font-data);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.card h3{font-size:var(--step-2);font-weight:700;letter-spacing:-0.015em;margin-top:2px}
+.lineage{color:var(--ink-2);font-size:var(--step--1)}
+.thesis{font-size:var(--step-1);line-height:1.4}
+.swatches{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.swatch{display:flex;align-items:center;gap:6px;padding:3px 8px 3px 3px;border-radius:999px;border:1px solid var(--line);font-family:var(--font-data);font-size:10.5px;color:var(--ink-2)}
+.swatch i{width:18px;height:18px;border-radius:50%;display:block;box-shadow:inset 0 0 0 1px rgb(0 0 0/.15)}
+.kv{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 12px;margin:0;font-size:var(--step--1)}
+.kv dt{color:var(--ink-2)}
+.kv dd{margin:0}
+details.full{border-top:1px solid var(--line-2);padding-top:10px}
+details.full summary{cursor:pointer;font-weight:600;font-size:var(--step--1)}
+details.full .full__body{display:grid;gap:10px;margin-top:10px;font-size:var(--step--1)}
+details.full h4{font-size:var(--step--1);font-weight:600;color:var(--ink-2)}
+details.full ol{margin:4px 0 0;padding-left:1.3em;display:grid;gap:3px}
+.pickrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.pick{font:inherit;font-weight:600;padding:10px 16px;border-radius:10px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.pick:hover{background:var(--sheet-2)}
+.pick[aria-pressed="true"]{background:var(--mark);border-color:var(--mark);color:var(--mark-ink)}
+.pick[disabled]{opacity:.5;cursor:not-allowed}
+.s-foot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:20px;margin-top:20px;align-items:start}
+.canon{font-size:var(--step--1);color:var(--ink-2);display:grid;gap:8px;justify-items:start}
+.canon button{font:inherit;font-size:var(--step--1);padding:6px 12px;border-radius:8px;border:1px dashed var(--line);background:transparent;color:var(--ink-2);cursor:pointer}
+.canon button[aria-pressed="true"]{border-style:solid;background:var(--mark);color:var(--mark-ink);border-color:var(--mark)}
+.note label{font-weight:600;font-size:var(--step--1);display:block;margin-bottom:6px}
+.note textarea{width:100%;min-height:72px;resize:vertical;font:inherit;font-size:var(--step--1);padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--sheet);color:var(--ink)}
+
+.spec{position:absolute;inset:0;display:grid;grid-template-rows:auto 1fr auto;padding:clamp(14px,2.2vw,26px);gap:10px;overflow:hidden}
+.spec__bar{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:12px;opacity:.85}
+.spec__bar span:first-child{display:flex;align-items:center;gap:8px}
+.spec__bar img{width:22px;height:22px;border-radius:5px}
+.spec__h1{align-self:center;font-size:clamp(22px,2.6vw,40px);line-height:1.02;letter-spacing:-0.01em;text-wrap:balance;max-width:92%;margin:0}
+.spec__foot{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.spec__sub{font-size:13.5px;line-height:1.4;max-width:30ch;margin:0}
+.spec__accent{width:44px;height:44px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1px rgb(0 0 0/.15)}
+.spec__note{position:absolute;right:10px;top:8px;font-family:var(--font-data);font-size:9.5px;opacity:.7}
+details.fixes{border-top:1px solid var(--line-2);padding-top:10px;font-size:var(--step--1)}
+details.fixes summary{cursor:pointer;font-weight:600}
+details.fixes ul{margin:8px 0 0;padding-left:1.1em;display:grid;gap:6px}
+.sev{font-family:var(--font-data);font-size:10px;text-transform:uppercase;letter-spacing:.05em;padding:1px 5px;border-radius:3px;border:1px solid var(--line);margin-right:6px}
+.sev--blocker{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.page-fixes{margin:0 0 18px;padding:12px 16px;border:1px solid var(--line);border-radius:12px;background:var(--sheet);font-size:var(--step--1);display:grid;gap:6px}
+.page-fixes b{font-weight:600}
+/* plan */
+.plan{padding-block:56px 80px;border-top:2px solid var(--ink)}
+.plan h2{font-size:var(--step-3);font-weight:700;letter-spacing:-0.02em}
+.plan .lede{color:var(--ink-2);font-size:var(--step-1);margin-top:12px;max-width:70ch}
+.phases{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:14px;counter-reset:ph}
+.phase{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;background:var(--sheet);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.phase__n{font-family:var(--font-data);font-size:28px;font-weight:500;line-height:1;color:var(--ink-2)}
+.phase h3{font-size:var(--step-2);font-weight:700}
+.phase__branch{font-family:var(--font-data);font-size:12px;color:var(--ink-2);margin-top:4px;display:flex;gap:10px;flex-wrap:wrap}
+.phase__size{padding:1px 6px;border:1px solid var(--line);border-radius:4px}
+.phase__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px 24px;margin-top:12px;font-size:var(--step--1)}
+.phase__grid h4{font-size:var(--step--1);font-weight:600;color:var(--ink-2);margin-bottom:4px}
+.phase__grid ul{margin:0;padding-left:1.1em;display:grid;gap:3px}
+.prose{max-width:78ch;font-size:var(--step-0)}
+.prose h1,.prose h2,.prose h3,.prose h4{font-size:var(--step-1);margin:18px 0 6px}
+.prose p,.prose ul,.prose ol,.prose pre,.prose table{margin:0 0 10px}
+.prose ul,.prose ol{padding-left:1.2em}
+.prose code{font-family:var(--font-data);font-size:.82em;background:var(--sheet-2);padding:1px 4px;border-radius:4px}
+.prose pre{background:var(--sheet-2);padding:12px;border-radius:8px;overflow-x:auto}
+.prose pre code{background:none;padding:0}
+.prose table{border-collapse:collapse;display:block;overflow-x:auto}
+.prose th,.prose td{border:1px solid var(--line);padding:4px 8px;text-align:left;vertical-align:top}
+.plan-blocks{display:grid;gap:12px;margin-top:28px}
+.plan-blocks details{background:var(--sheet);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.plan-blocks summary{cursor:pointer;font-weight:700;font-size:var(--step-1)}
+.plan-blocks .prose{margin-top:12px}
+.risks{display:grid;gap:8px}
+.risks div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;border-top:1px solid var(--line-2);padding-top:8px;font-size:var(--step--1)}
+
+dialog.lightbox{border:0;padding:0;background:transparent;max-width:min(96vw,1500px);max-height:94vh}
+dialog.lightbox::backdrop{background:rgb(8 10 12/.82)}
+dialog.lightbox img{display:block;max-width:min(96vw,1500px);max-height:88vh;width:auto;height:auto;border-radius:8px}
+dialog.lightbox .lb-bar{display:flex;justify-content:space-between;gap:12px;align-items:center;color:#E9ECEF;padding:8px 2px;font-size:var(--step--1)}
+dialog.lightbox button{font:inherit;color:#121518;background:#E9ECEF;border:0;border-radius:8px;padding:6px 12px;cursor:pointer}
+
+@media (max-width: 900px){
+  .intro{grid-template-columns:1fr}
+  .s-head{grid-template-columns:auto minmax(0,1fr)}
+  .today{grid-column:1/-1}
+  .s-foot{grid-template-columns:1fr}
+  .phase{grid-template-columns:1fr}
+  .risks div{grid-template-columns:1fr}
+}
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <span class="bar__name">Lagerland Redesign Board</span>
+    <span class="progress" aria-live="polite"><span class="progress__meter" aria-hidden="true"><span id="meter"></span></span><span id="progress-text">0 of {{ surfaces|length }} pages picked</span></span>
+    <label class="toggle"><input type="checkbox" id="only-unpicked"> Unpicked only</label>
+    <span class="save-state" id="save-state"></span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <div>
+      <h1>Three styles for every page. You pick one.</h1>
+      <p class="lede">The studio site and each of the {{ app_count }} app pages get their own world. Every app becomes a standalone microsite with its own navigation, type and page structure; only a thin footer strip links back to Lagerland. Every style keeps the permalinks, the seo/schema/quick_answer structure and the App Store elements (official badge, Smart App Banner, desktop QR, sticky bar, price).</p>
+    </div>
+    <div class="howto">
+      <ol>
+        <li><strong>Read the three style cards</strong> for a page. Each preview shows the style's typefaces and colours; "Full style card" has the first-viewport layout, page sequence and signature move.</li>
+        <li><strong>Pick one</strong> with its button. You can change a pick at any time. Use the note box to steer it, for example "style B, but with A's navigation".</li>
+        <li><strong>Picks save automatically.</strong> Claude reads them before the first build phase starts. Nothing is built until you approve the plan at the bottom.</li>
+      </ol>
+      <p class="mono" id="db-note">Connecting to the shared store…</p>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="Decisions behind these styles">
+    <div class="fact"><h3>Specimens, not sketches</h3><p>Each preview sets the page's real headline in the style's real typefaces and colours. Full HTML sketches were stopped to save session credits; they get built only for the styles you pick, in that page's phase.</p></div>
+    <div class="fact"><h3>How the three were chosen</h3><p>For each page, seven directions were drawn from the audience's own world and ranked. A dice roll chose style A from that list, B is the top-ranked direction, and C comes from a second roll. The roll service was unreachable here, so the roll ran without its catalogue of outside challengers.</p></div>
+    <div class="fact"><h3>Kept on every page</h3><p>Content stays visible without JavaScript. Reduced-motion is respected. Text meets WCAG AA contrast. Fonts are open-license and self-hosted, with no third-party font host. Nothing is invented: no ratings, quotes or numbers beyond what the site already states.</p></div>
+    <div class="fact"><h3>Retired</h3><p>Paper &amp; Ink, the cream ground, Newsreader + Inter, and the one template shared by every app page. Light or dark is now chosen per world from where people use the app, not forced on every page.</p></div>
+  </section>
+
+  <section class="index" aria-labelledby="index-h">
+    <h2 id="index-h">Pages</h2>
+    <ul class="chips">
+      {% for s in surfaces %}
+      <li><a class="chip" href="#{{ s.surface }}" data-chip="{{ s.surface }}">
+        {% if s.icon %}<img src="{{ s.icon }}" alt="" width="28" height="28" loading="lazy">{% else %}<span class="chip__glyph" aria-hidden="true">{{ s.name[:1] }}</span>{% endif %}
+        <span class="chip__name">{{ s.name }}</span><span class="chip__pick" data-chip-pick>—</span>
+      </a></li>
+      {% endfor %}
+      <li><a class="chip" href="#plan"><span class="chip__glyph" aria-hidden="true">P</span><span class="chip__name">Rollout plan</span></a></li>
+    </ul>
+  </section>
+
+  {% for s in surfaces %}
+  <section class="surface" id="{{ s.surface }}" data-surface="{{ s.surface }}" aria-labelledby="h-{{ s.surface }}">
+    <div class="s-head">
+      {% if s.icon %}<img class="s-head__icon" src="{{ s.icon }}" alt="{{ s.name }} icon" width="64" height="64" loading="lazy">{% else %}<span class="s-head__glyph" aria-hidden="true">{{ s.name[:1] }}</span>{% endif %}
+      <div>
+        <h2 id="h-{{ s.surface }}">{{ s.name }}</h2>
+        <p class="s-head__scope">{{ s.scope }}</p>
+        <div class="s-head__dossier">
+          <p><b>What the page must prove:</b> {{ s.dossier.mustProve }}</p>
+          <p><b>The default page this refuses:</b> {{ s.dossier.categoryDefault }}</p>
+        </div>
+      </div>
+      {% if s.today_desktop %}
+      <div class="today">
+        <figure><button class="zoom" style="all:unset;display:block;cursor:zoom-in" data-zoom="{{ s.today_desktop }}" data-caption="{{ s.name }} today (desktop)" aria-label="View today's {{ s.name }} page full size"><img src="{{ s.today_desktop }}" alt="{{ s.name }} as it looks today" loading="lazy" width="1440" height="900"></button></figure>
+        <small>Today's page, for comparison</small>
+      </div>
+      {% endif %}
+    </div>
+
+    {% if s.pageFixes %}
+    <div class="page-fixes">{% for f in s.pageFixes %}<p><b>Applies to all three:</b> {{ f.issue }}</p>{% endfor %}</div>
+    {% endif %}
+    <div class="styles">
+      {% for st in s.styles %}
+      <article class="card" data-style="{{ st.id }}" aria-labelledby="h-{{ s.surface }}-{{ st.id }}">
+        <span class="card__flag">Picked</span>
+        {% if st.desktop %}
+        <div class="view__tabs" role="tablist" aria-label="Sketch size">
+          <button class="tab" role="tab" aria-selected="true" data-view="desktop">Desktop</button>
+          <button class="tab" role="tab" aria-selected="false" data-view="phone">Phone</button>
+        </div>
+        <div class="view" style="margin-top:10px">
+          <div class="is-desktop" style="position:absolute;inset:0"><button class="zoom" data-zoom="{{ st.desktop }}" data-caption="{{ s.name }} · {{ st.label }} (desktop)" aria-label="View {{ st.label }} desktop sketch full size"><img src="{{ st.desktop }}" alt="{{ s.name }}, {{ st.label }}: desktop first-viewport sketch" loading="lazy" width="1440" height="900"></button></div>
+          <div class="is-phone" style="position:absolute;inset:0" hidden><button class="zoom" data-zoom="{{ st.mobile }}" data-caption="{{ s.name }} · {{ st.label }} (phone)" aria-label="View {{ st.label }} phone sketch full size"><img src="{{ st.mobile }}" alt="{{ s.name }}, {{ st.label }}: phone first-viewport sketch" loading="lazy" width="390" height="844"></button></div>
+        </div>
+        {% else %}{% set sp = st.specimen %}
+        <div class="view" role="img" aria-label="{{ st.label }} specimen: {{ sp.display }} headline on {{ sp.bg }}">
+          <div class="spec" style="background:{{ sp.bg }};color:{{ sp.ink }};font-family:'{{ sp.text }}',system-ui,sans-serif">
+            <div class="spec__bar"><span>{% if s.icon %}<img src="{{ s.icon }}" alt="" width="22" height="22" loading="lazy">{% endif %}{{ s.name }}</span><span>{{ st.navigation[:0] }}{{ sp.display }}{% if not sp.fontsOk %} (system stand-in){% endif %}</span></div>
+            <p class="spec__h1" style="font-family:'{{ sp.display }}',system-ui,sans-serif;font-weight:{{ sp.dw }}">{{ sp.h1 }}</p>
+            <div class="spec__foot"><p class="spec__sub">{{ sp.sub }}</p><span class="spec__accent" style="background:{{ sp.accent }}" aria-hidden="true"></span></div>
+          </div>
+        </div>
+        {% endif %}
+        <div class="card__body">
+          <div>
+            <p class="kicker">{{ st.kicker }}</p>
+            <h3 id="h-{{ s.surface }}-{{ st.id }}">{{ st.label }}</h3>
+            <p class="lineage">{{ st.lineage }}</p>
+          </div>
+          <p class="thesis">{{ st.thesis }}</p>
+          <ul class="swatches" aria-label="Palette">
+            {% for c in st.palette %}<li class="swatch" title="{{ c.role }}"><i style="background:{{ c.hex }}"></i>{{ c.hex }}</li>{% endfor %}
+          </ul>
+          <dl class="kv">
+            <dt>Type</dt><dd>{{ st.type.display }} with {{ st.type.text }}{% if st.type.utility %}, {{ st.type.utility }}{% endif %}</dd>
+            <dt>Light</dt><dd>{{ st.scene }}</dd>
+            <dt>Signature</dt><dd>{{ st.signatureInteraction }}</dd>
+            <dt>Remembered as</dt><dd>{{ st.memoryTest }}</dd>
+            <dt>Risk</dt><dd>{{ st.risk }}</dd>
+          </dl>
+          <details class="full">
+            <summary>Full style card</summary>
+            <div class="full__body">
+              <div><h4>First viewport, desktop</h4><p>{{ st.firstViewportDesktop }}</p></div>
+              <div><h4>First viewport, phone</h4><p>{{ st.firstViewportMobile }}</p></div>
+              <div><h4>App Store route</h4><p>{{ st.conversion }}</p></div>
+              <div><h4>Page sequence</h4><ol>{% for v in st.visitorPath %}<li>{{ v }}</li>{% endfor %}</ol></div>
+              <div><h4>Navigation</h4><p>{{ st.navigation }}</p></div>
+              <div><h4>Motion</h4><p>{{ st.motionGrammar }}</p></div>
+              <div><h4>Privacy, support and comparison pages</h4><p>{{ st.readModeVariant }}</p></div>
+              <div><h4>Materials</h4><p>{{ st.materials|join(" · ") }}</p></div>
+              <div><h4>Colour strategy</h4><p>{{ st.colorStrategy }} · {{ st.scheme }}</p></div>
+              <div><h4>Type rationale</h4><p>{{ st.type.rationale }}</p></div>
+              <div><h4>New assets needed</h4><p>{{ st.assetsNeeded }}</p></div>
+              {% if st.deviations %}<div><h4>Where the sketch departs from the card</h4><p>{{ st.deviations }}</p></div>{% endif %}
+            </div>
+          </details>
+          {% if st.fixes %}
+          <details class="fixes">
+            <summary>Fixes queued before this style is built ({{ st.fixes|length }})</summary>
+            <ul>{% for f in st.fixes %}<li><span class="sev{% if f.sev == 'blocker' %} sev--blocker{% endif %}">{{ f.sev }}</span>{{ f.text }}</li>{% endfor %}</ul>
+          </details>
+          {% endif %}
+          <div class="pickrow">
+            <button class="pick" type="button" data-pick="{{ st.id }}" aria-pressed="false">Pick {{ st.label }}</button>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="s-foot">
+      <div class="canon">
+        <p><b>Or the category standard, played straight:</b> {{ s.canon }}</p>
+        <button type="button" data-pick="canon" aria-pressed="false">Prefer the standard for {{ s.name }}</button>
+      </div>
+      <div class="note">
+        <label for="note-{{ s.surface }}">Steer this page (optional)</label>
+        <textarea id="note-{{ s.surface }}" data-note placeholder="e.g. Pick B, but keep A's navigation and make it lighter"></textarea>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+
+  <section class="plan" id="plan" aria-labelledby="plan-h">
+    <h2 id="plan-h">Rollout plan: one branch and one PR per phase</h2>
+    <p class="lede">{{ plan.summary }}</p>
+    <ol class="phases">
+      {% for p in plan.phases %}
+      <li class="phase">
+        <div class="phase__n" aria-hidden="true">P{{ p.n }}</div>
+        <div>
+          <h3>{{ p.title }}</h3>
+          <p class="phase__branch"><span>{{ p.branch }}</span><span class="phase__size">{{ p.size }}</span></p>
+          <div class="phase__grid">
+            <div><h4>Pages</h4><div class="prose">{{ p.pages_html }}</div></div>
+            <div><h4>Scope</h4><div class="prose">{{ p.scope_html }}</div></div>
+            <div><h4>How you pick in this phase</h4><div class="prose">{{ p.selection_html }}</div></div>
+            <div><h4>Done when</h4><ul>{% for a in p.acceptance %}<li>{{ a }}</li>{% endfor %}</ul></div>
+            <div><h4>Risks</h4><ul>{% for r in p.risks %}<li>{{ r }}</li>{% endfor %}</ul></div>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+    <div class="plan-blocks">
+      <details open><summary>Architecture</summary><div class="prose">{{ plan.architecture_html }}</div></details>
+      <details><summary>Previewing and picking the three real styles</summary><div class="prose">{{ plan.preview_html }}</div></details>
+      <details><summary>SEO parity guard</summary><div class="prose">{{ plan.seo_html }}</div></details>
+      <details><summary>Performance and accessibility budget</summary><div class="prose">{{ plan.perf_html }}</div></details>
+      <details><summary>Risks and mitigations</summary><div class="risks">{% for r in plan.risks %}<div><p>{{ r.risk }}</p><p>{{ r.mitigation }}</p></div>{% endfor %}</div></details>
+      {% if plan.openQuestions %}<details><summary>Open questions</summary><div class="prose"><ul>{% for q in plan.openQuestions %}<li>{{ q }}</li>{% endfor %}</ul></div></details>{% endif %}
+    </div>
+  </section>
+</main>
+
+<dialog class="lightbox" id="lightbox" aria-label="Sketch">
+  <div class="lb-bar"><span id="lb-caption"></span><button type="button" id="lb-close">Close</button></div>
+  <img id="lb-img" alt="">
+</dialog>
+
+<script>
+(function(){
+  var SURFACES = {{ surface_ids|tojson }};
+  var picks = {}; var notes = {};
+  var db = null, canWrite = true, local = false;
+  var $ = function(s, r){ return (r||document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
+  var saveState = $('#save-state');
+  function say(t){ saveState.textContent = t; }
+
+  function labelFor(sid, style){
+    if (!style) return '—';
+    if (style === 'canon') return 'STD';
+    return style.toUpperCase();
+  }
+  function render(){
+    var n = 0;
+    SURFACES.forEach(function(sid){
+      var p = picks[sid]; if (p) n++;
+      var sec = document.getElementById(sid); if (!sec) return;
+      $$('.card', sec).forEach(function(c){ c.classList.toggle('is-picked', p === c.dataset.style); });
+      $$('[data-pick]', sec).forEach(function(b){ b.setAttribute('aria-pressed', String(p === b.dataset.pick)); b.disabled = !canWrite; });
+      var ta = $('[data-note]', sec); if (ta && document.activeElement !== ta && notes[sid] !== undefined) ta.value = notes[sid];
+      var chip = document.querySelector('[data-chip="' + sid + '"]');
+      if (chip){ chip.classList.toggle('is-picked', !!p); $('[data-chip-pick]', chip).textContent = labelFor(sid, p); }
+    });
+    $('#progress-text').textContent = n + ' of ' + SURFACES.length + ' pages picked';
+    $('#meter').style.width = (100 * n / SURFACES.length) + '%';
+    applyFilter();
+  }
+  function applyFilter(){
+    var only = $('#only-unpicked').checked;
+    SURFACES.forEach(function(sid){ var sec = document.getElementById(sid); if (sec) sec.hidden = only && !!picks[sid]; });
+  }
+  $('#only-unpicked').addEventListener('change', applyFilter);
+
+  function lsGet(){ try { var v = localStorage.getItem('lagerland-board'); return v ? JSON.parse(v) : null; } catch(e){ return null; } }
+  function lsSet(){ try { localStorage.setItem('lagerland-board', JSON.stringify({picks: picks, notes: notes})); } catch(e){} }
+
+  var pending = {};
+  function write(sid){
+    var body = { style: picks[sid] || null, note: notes[sid] || '', updatedAt: new Date().toISOString() };
+    if (local || !db){ lsSet(); say('Saved in this browser'); return; }
+    if (pending[sid]) { pending[sid].again = true; return; }
+    pending[sid] = { again: false };
+    say('Saving…');
+    db.doc('picks/' + sid).set(body).then(function(){
+      var again = pending[sid].again; delete pending[sid];
+      if (again) write(sid); else say('Saved');
+    }).catch(function(e){
+      delete pending[sid];
+      if (e && e.code === 'invalid_argument'){ canWrite = false; render(); say('This view is read-only'); }
+      else if (e && e.code === 'unavailable'){ setTimeout(function(){ write(sid); }, 800 + Math.random()*800); }
+      else { lsSet(); say('Could not save to the shared store; saved in this browser'); }
+    });
+  }
+
+  document.addEventListener('click', function(ev){
+    var b = ev.target.closest('[data-pick]');
+    if (b && !b.disabled){
+      var sid = b.closest('[data-surface]').dataset.surface; var st = b.dataset.pick;
+      picks[sid] = (picks[sid] === st) ? null : st;
+      if (!picks[sid]) delete picks[sid];
+      render(); write(sid); return;
+    }
+    var t = ev.target.closest('.tab');
+    if (t){
+      var card = t.closest('.card'); var phone = t.dataset.view === 'phone';
+      $$('.tab', card).forEach(function(x){ x.setAttribute('aria-selected', String(x === t)); });
+      var d = $('.is-desktop', card), p = $('.is-phone', card);
+      if (d) d.hidden = phone; if (p) p.hidden = !phone; return;
+    }
+    var z = ev.target.closest('[data-zoom]');
+    if (z){
+      $('#lb-img').src = z.dataset.zoom; $('#lb-img').alt = z.dataset.caption || '';
+      $('#lb-caption').textContent = z.dataset.caption || '';
+      var dlg = $('#lightbox'); if (dlg.showModal) dlg.showModal();
+    }
+  });
+  $('#lb-close').addEventListener('click', function(){ $('#lightbox').close(); });
+  $('#lightbox').addEventListener('click', function(e){ if (e.target === this) this.close(); });
+  $$('[data-note]').forEach(function(ta){
+    ta.addEventListener('change', function(){
+      var sid = ta.closest('[data-surface]').dataset.surface;
+      notes[sid] = ta.value; write(sid);
+    });
+  });
+
+  var saved = lsGet(); if (saved){ picks = saved.picks || {}; notes = saved.notes || {}; }
+  render();
+
+  var dbNote = $('#db-note');
+  if (!window.claude || !window.claude.use){ local = true; dbNote.textContent = 'Picks save in this browser only. Tell Claude your picks in chat.'; return; }
+  Promise.all([window.claude.use('db'), window.claude.use('user')]).then(function(r){
+    db = r[0]; var user = r[1];
+    if (!db){ local = true; dbNote.textContent = 'Picks save in this browser only. Tell Claude your picks in chat.'; return; }
+    var gate = (user && user.can) ? Promise.resolve(user.can('data.write')) : Promise.resolve(null);
+    gate.then(function(ok){
+      if (ok === false){ canWrite = false; dbNote.textContent = 'You can view the picks but not change them.'; }
+      else dbNote.textContent = 'Picks are saved to this board, where Claude can read them.';
+      render();
+    });
+    db.collection('picks').onSnapshot(function(snap){
+      snap.docs.forEach(function(d){
+        var v = d.data() || {};
+        if (v.style) picks[d.id] = v.style; else delete picks[d.id];
+        notes[d.id] = v.note || '';
+      });
+      render();
+    }, function(){ dbNote.textContent = 'Lost the connection to the shared store. Picks now save in this browser only.'; local = true; });
+  });
+})();
+</script>

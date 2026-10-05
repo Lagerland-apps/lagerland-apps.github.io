@@ -1,0 +1,420 @@
+{
+ "surface": "allpaid — microsite /apps/allpaid/ (Persuade) + /apps/allpaid/privacy/, /apps/allpaid/support/ and the alternatives pages that target it: /alternatives/rocket-money/, /alternatives/bobby/, /alternatives/subby/, /alternatives/trackmysubs/ (Read variants)",
+ "dossier": {
+  "mechanism": "Type a bill's name and AllPaid's on-device 31-service catalog (English plus Finnish/German keywords) pre-fills cycle, category and typical price; every bill is then projected forward onto a monthly calendar with daily totals, so a crowded billing day shows weeks early, with one gentle reminder and one-tap mark-paid before each due date. No bank login, no Plaid, no account, nothing uploaded.",
+  "audienceScene": "A renter or household organiser with 10–50 recurring payments (streaming, ChatGPT/Claude, rent, utilities) who has already refused Plaid-linked apps. Arrives on an iPhone from Google or an AI answer ('bill tracker no bank login', 'Rocket Money alternative'), often after a late fee or a surprise renewal; on desktop it is evening admin time and the app has to reach the phone via QR. Many are European: the app's own sample bills are in euros and the catalog matches sähkö, vuokra, Strom, Miete.",
+  "culturalHome": "Household paperwork, not fintech: the bill in a windowed security envelope, the tear-off payment slip or giro form, the wall calendar or year planner where due dates get marked, the rubber PAID stamp, and for Europeans the printed station timetable that lists every departure in advance.",
+  "mustProve": "In the first viewport: a real-looking run of bills with daily totals where one crowded day stands out (from the app's own screenshot sample), the plain promise 'no bank login, nothing leaves the phone', the honest price line from price.value (Free; Pro $1.99/mo, $12.99/yr, $24.99 lifetime), and a working official App Store badge, plus the QR on desktop.",
+  "categoryDefault": "Blue fintech: white and blue gradient, rounded sans, split hero with a phone mockup, 'Take control of your finances', shield/lock privacy icons, a row of feature cards, star-rated testimonials, a pricing table with the annual plan highlighted. The app's own icon (glossy blue squircle, paper, calendar, bell with '1', checkmark) already sits in this rut.",
+  "predictableOpposite": "'Calm' cream paper with a serif display and soft illustration (the incumbent Paper & Ink, and the AI default), or a near-black money dashboard with neon category rings.",
+  "literalReading": "AllPaid read literally means the rubber PAID stamp and everything ticked off with checkmarks (the icon is already a checkmark). Only candidate 4 uses it.",
+  "evidence": [
+   "_apps/allpaid.md: category finance, platforms ['iOS'], status live, price.model freemium, price.value 'Free — Pro from $1.99/mo, $12.99/yr, or $24.99 lifetime', schema_price 0 / high 24.99 / 4 offers; app_store_url id6757253009; release first 2026-01-01, last_updated 2026-05-13, audited 2026-05-13.",
+   "Blocks present: hero (headline 'Every bill. One calm place.', secondary, subheadline, cta_label 'Download Free'), quick_answer, plans (Free, Pro Monthly, Pro Annual highlight, Lifetime 'Best long-term value') + plans_footnote, founder (Organization, story, 4 signals, response_time, support_email), value_points ×4, how_it_works ×7 steps (HowTo), example_insights ×4 (insight gallery), features ×7, screenshots ×4, comparison_table (5 columns × 10 rows + footnote), plateau_disclosure, training_vocabulary (31-service catalog in 4 groups), privacy, faq ×10, who_for ×5, who_not_for ×4, alternatives_to ×6, related_journal, body prose. Absent: spotlight, roadmap, coach_cta, creative_work, pricing_note, hero.device.",
+   "ratings 5.0 from 5 ratings: below the 25 threshold, so no stars anywhere.",
+   "Screenshots (1.png, 3.png, 4.png, en-US_1_1.png; '33' is not an image): a vertical navy (#0B1428) to raspberry (#8A2E48) gradient UI, translucent rounded cards, SF Pro, a coral add button (~#F07080), a blue Save (~#3478F6), reminder chips 7d/3d/1d, Monthly/Yearly segmented control, 'Moves to next month automatically', and a Lock Screen notification 'Netflix due tomorrow · €15.99'. Sample bills: Dentist €120.00 (2 Mar), Netflix €15.99 (4 Mar), Internet €49.99 (7 Mar), Spotify €9.99 (11 Mar), Electricity €85.00 (19 Mar); paid on 27 Feb: Insurance €150.00, Phone €29.99, Gym €39.99 (a crowded day totalling €219.98). 1.png's alt text says calendar, but it shows the bill list.",
+   "transparency.yml allpaid: tracking_domains 0, third_party_sdks 0, account_required false, network 'none for core; optional iCloud sync uses your own iCloud', permissions: local notifications only.",
+   "app_enrichment.yml: 32 languages; recommend_when 'no Plaid', 'Rocket Money/Truebill/Bobby alternative'. testimonials.yml: no AllPaid entry.",
+   "Alternatives that target it: rocket-money, bobby, subby, trackmysubs. Truebill and Chronicle Bills in alternatives_to have no page. Content drift to fix later: rocket-money and bobby claim 'detected from receipts' and 'no subscription', which the front matter does not support (receipt scanning is RightSplit's feature).",
+   "Journal 'I will not ask for your bank login': Plaid gets 'persistent read access to every transaction'; the bill list is 'a list of things they could have written down themselves in twenty minutes'; AllPaid aims to be the calm answer in tax season. 'Find every recurring charge': AllPaid holds the list but cannot find what you never typed.",
+   "Privacy page front matter has a seo block, overview/data_collection (App Lock with Face ID handled by the device), iCloud sync optional, no third-party analytics. Support page has seo + slug."
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "The wall calendar / year planner with colour-dot stickers",
+   "family": "print/paper — household planning",
+   "why": "Every household marks due dates on the kitchen calendar. It carries the mechanism directly: each monthly bill becomes a line of dots repeating down the year (the forward projection), a crowded day is visibly dense (daily totals), the sticker colours are the catalog's categories and a blank hand-written dot is a manual entry."
+  },
+  {
+   "index": 2,
+   "name": "The tear-off payment slip / giro form (remittance stub in drop-out ink)",
+   "family": "print/forms — bureaucratic",
+   "why": "Every bill payer has filled one in. The pre-printed fields (Payee, Amount, Due date, Reference) that fill themselves when you type 'Netflix' are the catalog autofill, and tearing along the perforation is one-tap mark-paid."
+  },
+  {
+   "index": 3,
+   "name": "The security-tint envelope (patterned interior, address window, POSTAGE PAID indicia)",
+   "family": "postal object / security print",
+   "why": "The pattern exists so nobody can read your bill through the paper. It carries no-bank-login and on-device as a physical property, the window shows only what you typed, and the price sits where the postage-paid box does. 'Holding it up to the light' shows what a bank login would expose."
+  },
+  {
+   "index": 4,
+   "name": "The self-inking date stamp with PAID (literal reading)",
+   "family": "object/instrument — office",
+   "why": "The office dater with rotating month/day bands and a PAID die carries one-tap mark-paid and the due-date wheel. It is the literal reading of the name and the icon's checkmark."
+  },
+  {
+   "index": 5,
+   "name": "The yellow printed departures timetable poster",
+   "family": "signage/wayfinding",
+   "why": "Every departure is listed in advance, grouped in bands. A bill is a scheduled departure of your money: day bands replace hour bands, the crowded day reads as rush hour, and the timetable repeating every period is 'moves to next month automatically'."
+  },
+  {
+   "index": 6,
+   "name": "The 43-folder tickler file (31 daily + 12 monthly folders)",
+   "family": "office filing / furniture",
+   "why": "This was the pre-web bill-reminder system: file each bill in the folder for the day it is due and open today's folder each morning. It carries day-indexed projection and the single reminder, and the staggered folder tabs make natural navigation. Few people know it by heart."
+  },
+  {
+   "index": 7,
+   "name": "The tide table almanac",
+   "family": "instrument/measurement — publication",
+   "why": "It publishes periodic, predictable events a year ahead with a daily height. Daily bill totals become a tidal curve and the crowded day becomes a spring tide. It carries the projection and the totals, but its audience is narrow (coastal)."
+  }
+ ],
+ "seed": {
+  "key": "14b89f5f",
+  "assigned": 5,
+  "reroll1": 3
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "Yellow Departures Poster",
+   "kicker": "THE ROLL",
+   "sourceIndex": 5,
+   "lineage": "The yellow printed departure timetable on German, Austrian and Swiss railway platforms (the 'Abfahrt' poster, with its white 'Ankunft' twin) and Nordic station timetables. It is one sheet per timetable period listing every departure in advance, in hour bands with minute, line, destination, 'via' stops and platform, plus footnote letters and a 'valid from–to' line.",
+   "thesis": "A bill is a scheduled departure of your money, so the page is the timetable you can read before anything leaves, in day bands instead of hour bands. It refuses the blue fintech split hero with a phone mockup and feature cards.",
+   "scene": "The visitor scans the page on a phone in daylight (commute, kitchen table) the way you read a platform poster: flat, bright, printed. Single light scheme (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Drenched",
+   "palette": [
+    {
+     "hex": "#FFD617",
+     "role": "Poster yellow: page ground and every major surface, edge to edge"
+    },
+    {
+     "hex": "#141414",
+     "role": "Timetable black: all type, 3px band rules, 1px row rules, focus outline (13:1 on yellow)"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "Info-panel white: badge/QR/fare panel, Notice box, sticky band, screenshot mats"
+    },
+    {
+     "hex": "#5C4F00",
+     "role": "Dark olive: secondary text on yellow (via lines, footnotes, validity line), 5.8:1"
+    },
+    {
+     "hex": "#A3123A",
+     "role": "Raspberry from the app's own gradient: heavy-day bar and 'Heavy day' label, 5.5:1 on yellow"
+    }
+   ],
+   "type": {
+    "display": "Barlow Condensed 600/700: day numerals (64–120px), service names, the headline at 112px, column heads",
+    "text": "Barlow 400/500: paragraphs at 18px/1.55 (FAQ, founder, plateau), validity line, fare line; tnum on every amount and date",
+    "utility": "none (no mono; amounts are Barlow with tabular figures)",
+    "rationale": "Barlow is a grotesk drawn from California transit and highway signage, so it belongs to the platform-poster world. The condensed cut fits Day / Bill / Line / Amount at 390px and holds as poster lettering at 112px. Same skeleton for display and reading, about 90 KB for four latin files."
+   },
+   "materials": [
+    "Poster-yellow ground printed edge to edge",
+    "3px black band rules between day bands, 1px hairlines between rows",
+    "White info panels set into the poster like its legend box (1px black frame)",
+    "Tabular-figure amounts and dates right-aligned in a fixed column",
+    "Footnote letters (a, b, c) keyed to a legend at the poster foot",
+    "'Valid from / amended' imprint line as the freshness signal"
+   ],
+   "firstViewportDesktop": "Yellow edge to edge. 64px header strip: 'AllPaid' in Barlow Condensed 700 28px and 'Departures — every bill, before it leaves' in Barlow 500 16px; on the right, text links Timetable · Lines · Fares · What it won't do · Questions (Barlow 500 17px), with a 3px black rule beneath. Left 8 of 12 columns: H1 'Every bill. One calm place.' in Barlow Condensed 700 112px/0.95 on two lines; hero.secondary in Barlow 500 24px; validity line in olive 15px: 'iPhone · first released 1 Jan 2026 · amended 13 May 2026 · Lagerland Apps'. Right 4 columns: a white info panel (352px, 1px black frame) holding the official badge 56px tall, the QR (assets/qr/allpaid.svg) at 128px with 'Scan with your iPhone camera', and the fare line 'Free · Pro $1.99/mo · $12.99/yr · $24.99 once' in Barlow 500 18px tnum, with 'No bank login · no account' below. From y≈520: the caption 'Sample month from the app's own screenshots (illustrative)', then column heads Day / Bill / Line / Amount over a 3px rule. The first band is '27 Feb' in Barlow Condensed 700 120px in a 140px left column, with a 6px raspberry bar and 'Heavy day · €219.98'. Its rows are Insurance, Phone and Gym, each with an olive 'via Insurance · monthly' line and right-aligned amounts. Band '2 Mar' (Dentist €120.00) starts at the fold.",
+   "firstViewportMobile": "Yellow ground. 56px strip: 'AllPaid' in Barlow Condensed 700 24px on the left, a 'Menu' text button on the right, 3px rule. H1 in Barlow Condensed 700 54px/0.95 on three lines within 16px gutters; hero.secondary in Barlow 500 18px. A full-width white info panel holds the badge 48px tall, the fare line 'Free · Pro from $1.99/mo · $24.99 once' in tnum and 'No bank login · nothing leaves the phone'. QR hidden below 1024px. At the bottom edge the timetable begins: '27 Feb' at 64px in a 72px left column, the raspberry bar, 'Heavy day €219.98', and the Insurance row peeking in.",
+   "conversion": "Badge: official black artwork placed only on white (info panel, sticky band, poster foot) at 48–56px tall, never directly on yellow. QR: in the info panel on ≥1024px only. Price: the poster's fare line, verbatim from price.value, with the full Fares table (plans + plans_footnote) lower down. Sticky bar: when the info panel scrolls away, a white band with a 3px black top rule slides up from the bottom with 'AllPaid — next departure: the App Store · Free' and a 40px badge. Desktop adds the fare line. The band hides once the poster foot is visible. Smart App Banner: apple-itunes-app meta in head, unchanged; iOS shows it natively above the strip.",
+   "visitorPath": [
+    "Poster head: hero.headline (H1), hero.secondary, validity line (release dates, maker), info panel (badge, QR, price.value)",
+    "Notice: quick_answer in a white boxed panel headed 'In one answer' (speakable)",
+    "Timetable: illustrative sample month from the screenshots in day bands (27 Feb heavy, 2, 4, 7, 11, 19 Mar), daily totals, 'moves to next month automatically' footnote",
+    "Lines: training_vocabulary as four lines (Streaming; AI tools, cloud & productivity; Housing, utilities & connectivity; Insurance, transport & more) with the 31 services as stops, the FI/DE keywords, and the 'Add a departure' row",
+    "Route: how_it_works intro + 7 numbered stops on a vertical route line (HowTo)",
+    "Announcements: example_insights as four announcement bands (headline in Barlow Condensed 600 32px, body 18px), labelled 'illustrative Pro answers'",
+    "Fares: plans as a fare table (ticket type / price / what it covers), Lifetime marked 'Best long-term value', plans_footnote as small print",
+    "This line is for / Take another line if: who_for and who_not_for as two ruled columns",
+    "Not served by this line: plateau_disclosure (rule, what it does not do, notes naming Rocket Money, YNAB, spreadsheet)",
+    "Other operators: comparison_table as a timetable matrix (AllPaid column on white), footnote, inline badge",
+    "On board: the 4 screenshots in the CSS iPhone bezel on white mats + features (7) and value_points (4) as a footnote-lettered service legend",
+    "Operator: founder story, signals, response time, support email, studio backstory link",
+    "Conditions of carriage: privacy summary + transparency.yml counts (0 SDKs, 0 tracking domains, local notifications only) linking /transparency/#allpaid, privacy policy and support links",
+    "Information: faq (10) as details rows",
+    "Transfers from: alternatives_to linked to the four existing /alternatives/ pages, Truebill and Chronicle Bills as plain text; related_journal as 'Notice from the operator'",
+    "Timetable data: the Quick reference <details> (ai-canonical), visible and crawlable",
+    "Other lines from this operator: you-might-like (computed from site.apps)",
+    "Poster foot: closing info panel (badge, QR, fare line), footnote legend, validity imprint, then the shared Lagerland strip"
+   ],
+   "navigation": "Poster header strip with five plain text links (Timetable, Lines, Fares, What it won't do, Questions). The vocabulary is in-world but every label explains itself. 'AllPaid' returns to the top. On phones, 'Menu' opens a full-width white index panel listing the same links as a stop list with 1px rules. The footer Lagerland strip is the only route out.",
+   "signatureInteraction": "'Add a departure'. In Lines, a blank timetable row holds an input ('Type a bill — Netflix, ChatGPT, rent, sähkö, Miete…') and a day select (1–31). JS carries the 31-service catalog and FI/DE keywords from training_vocabulary. On a match the row fills Line (category) and cycle (monthly), the matching stop in the Lines legend underlines, and 'Add' inserts the row into the right day band of the sample timetable. The band total recalculates only from an amount the visitor typed; prices are never auto-invented, and the caption says 'In the app the typical price fills too'. An aria-live='polite' region announces 'Netflix added to day 4'. No-JS: the row renders as a filled static example (Netflix → Streaming · monthly · day 4) and the input is not shown. Reduced motion: the row appears in place; otherwise it opens down over 160ms.",
+   "motionGrammar": "Printed and still. Under html.js only: day bands fade in (opacity, 120ms, 40ms stagger); the sticky band translates up in 180ms ease-out; the heavy-day bar grows to full height once in 240ms. No split-flap, no parallax, no hover lift. prefers-reduced-motion turns all of it off; every word is server-rendered.",
+   "readModeVariant": "Alternatives pages wear the white 'Arrivals' twin of the poster: a white sheet with the yellow header strip, H1 such as 'Arriving from Rocket Money' in Barlow Condensed 700 56px, and a 68ch reading column in Barlow 400 18px/1.6 black on white. Comparisons are set as timetable tables (3px head rule, 1px rows, tnum), the quick_answer sits in a yellow-framed Notice box, and the foot carries a yellow CTA strip with the badge on its white panel. Privacy: a white 'Conditions of carriage' sheet with the transparency facts as a two-column table. Support: a white 'Information desk' sheet with email and response time in a yellow panel at the top.",
+   "assetsNeeded": "none (type, CSS rules, the existing icon, 4 screenshots and the QR)",
+   "risk": "Drenched yellow can tire over a long scroll and reads as 'warning/construction' unless the black typography is immaculate. The yellow poster is native to German, Swiss, Austrian and Nordic visitors and only generically 'departures' to US visitors. It is the nearest hue to Millrace's amber/honey, so keep Millrace off signal yellow. The sample timetable uses the screenshots' euro amounts on a USD-priced page; it is labelled, but must read clearly as a sample.",
+   "memoryTest": "The bill tracker whose page was a yellow train timetable: my bills listed like departures, the 27th packed like rush hour, and a white box with the App Store badge.",
+   "specimen": {
+    "bg": "#FFD617",
+    "ink": "#141414",
+    "accent": "#5C4F00",
+    "display": "Barlow Condensed",
+    "dw": 600,
+    "text": "Barlow",
+    "h1": "Every bill. One calm place.",
+    "sub": "Bills, calmly handled. No bank login.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "allpaid-a keeps Barlow, the free DIN stand-in that is native to a German-language Abfahrt poster. aftershift-a sets its uniform back-lettering in Mohave 600/700, a caps-first condensed sans that is unused elsewhere, and keeps Atkinson for text."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "Year Planner Dots",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "The laminated year-at-a-glance wall planner (12 month rows × 31 day columns, weekends tinted, printed in one ink) hung beside the fridge or in the home office, marked with round colour-coding dot stickers and a dry-erase marker. It comes in landscape and portrait editions.",
+   "thesis": "Bills belong on the wall, not in a dashboard. The page is one year planner where every monthly bill becomes a line of dots and the crowded day is visible from across the room. It refuses the feature-card grid and the phone-centred hero.",
+   "scene": "Someone stands at the planner on the kitchen or home-office wall in morning daylight, glossy white laminate in front of them, marker in hand. Single light scheme (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Full palette",
+   "palette": [
+    {
+     "hex": "#FDFDFC",
+     "role": "Laminate white: ground and the planner sheet"
+    },
+    {
+     "hex": "#1C2B4A",
+     "role": "Planner ink (the app's navy, printed): all text 13.8:1, grid at 25% tint, dot rings, marker ring, focus outline"
+    },
+    {
+     "hex": "#E9EEF6",
+     "role": "Weekend column tint and panel tint"
+    },
+    {
+     "hex": "#E0352B",
+     "role": "Dot: Streaming"
+    },
+    {
+     "hex": "#2563EB",
+     "role": "Dot: AI tools, cloud & productivity"
+    },
+    {
+     "hex": "#F3B21B",
+     "role": "Dot: Housing, utilities & connectivity (always with a 1.5px ink ring, which carries the 3:1 non-text contrast)"
+    },
+    {
+     "hex": "#23955A",
+     "role": "Dot: Insurance, transport & more (manual bills are white dots with an ink ring)"
+    }
+   ],
+   "type": {
+    "display": "Atkinson Hyperlegible Next 700/800: H1 at 76px desktop / 42px mobile, section heads, planner header",
+    "text": "Atkinson Hyperlegible Next 400: paragraphs at 18px/1.55, the key, FAQ",
+    "utility": "Atkinson Hyperlegible Mono 500: only real data, i.e. day and month axis labels, amounts, daily totals, the price line",
+    "rationale": "The Braille Institute drew Atkinson so that characters, especially 1/l/I and 0/O, stay unambiguous for low-vision readers. A wall planner is read from across the room and its content is dates and amounts. The Mono sibling aligns the axis and money columns. Three latin files, about 75 KB."
+   },
+   "materials": [
+    "Flat white laminate sheet, no gloss effect",
+    "Grid printed in one ink: navy at 25% for cell rules, 100% for month labels, weekend columns tinted",
+    "Round dot stickers (14px in cells, 22px in the key) in four category colours with an ink ring",
+    "Blank white dots for bills typed by hand (not in the catalog)",
+    "Dry-erase marker ring: an irregular 3px navy SVG stroke circling the densest day",
+    "Ruled 'Notes' panels in the planner's lower printed area"
+   ],
+   "firstViewportDesktop": "White laminate edge to edge. The 200px planner header band has three parts. Left 6 columns: H1 'Every bill. One calm place.' in Next 800 76px/1.0 navy and hero.secondary in Next 400 20px. Middle 3 columns: quick_answer set as the planner's printed 'How to read this planner' paragraph (Next 400 15px/1.5). Right 3 columns: the 'Notes' box (white, 1px ink frame) with the badge 52px tall, the QR at 112px ('Scan with your iPhone') and 'Free · Pro $1.99/mo · $12.99/yr · $24.99 once' in Mono 500 15px. From y≈240 the year grid runs the full 1312px container. JAN–DEC labels in Mono 500 13px sit in a 56px column, with 31 day columns × ~40px and 12 rows × 44px (528px tall). Dots come from the screenshot sample bills: columns 2, 4, 7, 11 and 19 each hold one dot per month, and column 27 holds three per cell (Insurance green, Phone yellow, Gym green). Column 27 is circled by the marker ring, labelled 'Heaviest day: 27th — €219.98' in Mono. One illustrative yearly bill (home insurance) appears as a single dot in October. A 13px caption above the grid reads: 'Illustrative year built from the sample bills in the app's screenshots.'",
+   "firstViewportMobile": "52px header: 'AllPaid' in Next 700 on the left, 'Menu' on the right. H1 in Next 800 42px/1.05 on three lines; hero.secondary 17px. A full-width Notes box holds the badge 48px tall, the price line in Mono 14px and 'No bank login · nothing leaves the phone'. Below it, quick_answer at 16px. The planner switches to its portrait edition: 31 day rows × 12 month columns (20px rows, 26px columns, fits 346px), so monthly bills read as horizontal dot lines and the 27th row is the visibly crowded one. Its header row and first rows show at the fold.",
+   "conversion": "Badge: in the planner's printed Notes box (white, ink frame) at 52/48px, repeated in the closing Notes box. QR: beside it on ≥1024px. Price: one Mono line in the Notes box, verbatim from price.value, with the Prices strip later. Sticky bar: a white strip with a 1px ink top rule holding a red category dot, 'AllPaid — free, no bank login' and a 40px badge. It appears when the Notes box leaves the viewport and hides at the closing Notes box. Smart App Banner: head meta unchanged.",
+   "visitorPath": [
+    "Planner header: H1 hero.headline, hero.secondary, quick_answer as 'How to read this planner' (speakable), Notes box (badge, QR, price.value)",
+    "The year: illustrative 12×31 grid (portrait 31×12 on phones) from the screenshot sample, marker ring on the 27th, a day-totals row in Mono",
+    "The key: training_vocabulary's four groups as the dot legend, the 31 services listed under each colour, FI/DE keywords, 'blank dot = typed by hand', and the 'Stick a dot' form",
+    "Written on the wall: example_insights as four marker notes in a ruled panel (headline Next 700 24px + body), labelled illustrative",
+    "How a bill gets onto the wall: how_it_works intro + 7 numbered steps as a horizontal sticker strip on desktop and a vertical list on mobile (HowTo)",
+    "Planner notes: value_points (4) and features (7) as a two-column ruled list, title in Next 700 and text in 400",
+    "On the phone: 4 screenshots in the CSS iPhone bezel in a row on the laminate, with captions",
+    "Prices: plans as a four-column strip ruled like next year's mini calendar, a navy dot marking Lifetime 'Best long-term value', plans_footnote",
+    "Suits / doesn't suit: who_for and who_not_for as two ruled columns",
+    "What it won't do: plateau_disclosure",
+    "Compared: comparison_table as a planner-ruled grid with the AllPaid column tinted #E9EEF6, footnote, inline badge",
+    "Who made it: founder story, signals, response time, support email, backstory link",
+    "Privacy: data_collection none, no tracking, no account, notes + transparency counts in Mono, link to /transparency/#allpaid, privacy policy and support links",
+    "Questions: faq as ruled details rows",
+    "Switching from: alternatives_to (4 linked pages, Truebill and Chronicle Bills as text) + related_journal",
+    "Quick reference <details> (ai-canonical), visible",
+    "More from Lagerland: you-might-like (computed)",
+    "Closing Notes box (badge, QR, price) + imprint line 'Built by Lagerland Apps · updated 13 May 2026 · first released 1 Jan 2026', then the Lagerland strip"
+   ],
+   "navigation": "A planner header bar with 'AllPaid' and five text links (The year · The key · Prices · Compare · Questions) in Next 700 16px. With JS, a 10px navy dot before a link marks the current section (scroll-spy); without JS the links are plain. On mobile, 'Menu' opens a white sheet with the same links in a ruled list.",
+   "signatureInteraction": "'Stick a dot'. Above the key: an input 'Type a bill', a day (1–31) and a cycle field (monthly/yearly, prefilled by the catalog). JS matches the 31-service catalog plus FI/DE keywords from training_vocabulary. A match colours the preview dot by category and shows 'Streaming · monthly'; an unknown name gives a blank dot labelled 'Not in the catalog — added by hand, as in the app'. 'Stick it' places the dot in that day column for all 12 months (monthly) or one month (yearly) with a 30ms-per-month cascade. The day's bill count updates in the totals row, and the marker ring moves if the densest day changes. The grid is a captioned <table>, and its 31 day headers are buttons that read that day's bills into a live region. No-JS: the static sample grid plus a plain list of sample bills by day with totals. Reduced motion: dots appear at once and the ring jumps without drawing.",
+   "motionGrammar": "Stickers stick: a dot scales 0.85→1 in 90ms with no bounce. Cascades run top to bottom at 30ms per month. The marker ring draws once (stroke-dashoffset, 400ms) when the grid enters the viewport. Everything else holds still. prefers-reduced-motion: no scale, no draw, no cascade.",
+   "readModeVariant": "Alternatives pages are the planner's printed back page: white laminate, one navy header rule, the page's existing H1 (e.g. 'A Rocket Money alternative that doesn't want your bank login') in Next 800 48px, a 68ch reading column in Next 400 18px/1.6, comparisons as ruled grids, and a single strip of the 27th column as the only graphic. Privacy: 'Planner notes — privacy', with the transparency facts as Mono rows. Support: the Notes box enlarged with email, response time and what to include.",
+   "assetsNeeded": "none (dots, grid and marker ring are CSS / inline SVG; uses the existing icon, screenshots and QR)",
+   "risk": "The most familiar of the three: 'a calendar page for a calendar app' is everyone's first idea, and it sits nearest the calendar worlds that Taskful Day and Soon. may pick. A 372-cell grid can become a data-viz toy, and the portrait edition is tall on phones (31 rows). Colour coding needs the ring, the key list and table text to stay accessible. Illustrative data must be labelled plainly.",
+   "memoryTest": "A wall planner covered in coloured dot stickers: each bill a line of dots across the year, and one day so crowded someone had circled it in marker.",
+   "specimen": {
+    "bg": "#FDFDFC",
+    "ink": "#1C2B4A",
+    "accent": "#F3B21B",
+    "display": "Atkinson Hyperlegible Next",
+    "dw": 700,
+    "text": "Atkinson Hyperlegible Next",
+    "h1": "Every bill. One calm place.",
+    "sub": "Bills, calmly handled. No bank login.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Drop the drench on studio-b. The shop wall goes neutral (white, or a graphite shelf), so the spines in each app's own colours are the only colour. That is also truer to its thesis that the label appears only as a catalogue number and a cartouche. allpaid-a (Abfahrt yellow) and taskful-day-c (the icon's sun) keep yellow. If both are picked, keep taskful-day-c's white dial face dominant."
+    },
+    {
+     "sev": "major",
+     "text": "soon-b keeps it, since Alternate Gothic is the ticket/event-poster face. appmeta-pulse-b sets its banner in Libre Franklin 900: the Franklin Gothic of US markets pages, and already its text family. That makes Franklin a display face in appmeta-pulse-b, so allpaid-c moves its window headline and indicia caps off Libre Franklin (e.g. Epilogue 600/800, unused on the board)."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "Security Tint Envelope",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 3,
+   "lineage": "The security tint printed inside bill and bank envelopes (dense lattices, wave lines and repeated microtext so nobody can read a statement through the paper), together with the windowed business envelope: glassine address window, return-address corner, and the 'POSTAGE PAID' permit-indicia box.",
+   "thesis": "Privacy is the envelope, not a shield icon. The page is the patterned inside of a bill envelope, and only what you typed shows through the window. It refuses trust-badge rows and 'bank-level security' claims.",
+   "scene": "Evening at the hall table, opening the post under one ceiling light: the inside of the envelope is shadowed and patterned and the paper is bright. Single dark scheme (color-scheme: dark) with paper windows.",
+   "scheme": "dark",
+   "colorStrategy": "Restrained",
+   "palette": [
+    {
+     "hex": "#0E1930",
+     "role": "Envelope-interior navy (the app's own navy): page ground"
+    },
+    {
+     "hex": "#1A2944",
+     "role": "Tint ink: lattice and microtext pattern over the ground, decorative at 1.2:1 so text over it stays calm"
+    },
+    {
+     "hex": "#F4F6FA",
+     "role": "Window and enclosure paper: hero window, statement, tables, reading columns (navy ink on it 16:1)"
+    },
+    {
+     "hex": "#E4E9F2",
+     "role": "Pale ink: text on navy (14.4:1)"
+    },
+    {
+     "hex": "#A9B5CB",
+     "role": "Muted pale: secondary text on navy (8.5:1)"
+    },
+    {
+     "hex": "#F27B88",
+     "role": "Coral (the app's add-button colour): focus rings, heavy-day mark, the light toggle, teaser line (6.6:1 on navy)"
+    },
+    {
+     "hex": "#3B1730",
+     "role": "Raspberry-navy: page-foot ground, the app's own gradient end (pale ink 12.8:1)"
+    }
+   ],
+   "type": {
+    "display": "Libre Franklin 800/600: the window headline at 64px desktop / 40px mobile (800), return address and indicia caps (600)",
+    "text": "Libre Franklin 400: the letter and reading columns at 18px/1.6",
+    "utility": "Courier Prime 400/700: only real data, i.e. statement lines, amounts, due dates, daily totals, transparency counts",
+    "rationale": "Franklin Gothic is the face of American business mail, utility bills and permit indicia, so the envelope speaks its native type. Courier Prime is the laser-printed statement line, kept to data. Five latin files, about 115 KB."
+   },
+   "materials": [
+    "Security-tint lattice plus aria-hidden microtext rows ('NO BANK LOGIN · NO ACCOUNT · NOTHING LEAVES THE PHONE' at 6px) as inline SVG patterns over the navy",
+    "Glassine window: a rounded paper rectangle with a 2px pale rim and an inner 1px rim offset 3px, no blur",
+    "Permit-indicia box: a 1.5px pale ruled rectangle with Franklin caps",
+    "Enclosures in different real proportions (statement sheet, DL slip, tri-fold leaflet with crease lines at thirds)",
+    "Postmark ring carrying the freshness dates",
+    "Courier Prime data lines on paper"
+   ],
+   "firstViewportDesktop": "Navy ground with the tint lattice edge to edge. The hero is the envelope face at one scale (1240×560 container, no drawn envelope outline). Top-left return address in Franklin 600 15px pale: 'Lagerland Apps · Independent Apple developer · Finland', with nav links on the same line. Top-right, the indicia box (220×96): 'FREE · PRO $1.99/MO · $12.99/YR · $24.99 ONCE' in Franklin 600 caps 13px, with 'no bank login · no account' beneath. Under it, the QR at 120px on a paper square with 'Scan to install on your iPhone', set where the postal barcode goes. Left-centre, the window (760×300, paper, glassine rim) holds an address block with 40px padding: H1 'Every bill. One calm place.' in Franklin 800 64px/1.0 navy, hero.secondary 19px, 'AllPaid · bill tracker for iPhone' in Franklin 600 15px as the address's last line, and the badge at 52px. Below the window on navy: the teaser line in Franklin 800 caps 15px coral, 'NOTHING URGENT INSIDE.', then quick_answer starting at y≈700 in Franklin 400 20px pale, 64ch.",
+   "firstViewportMobile": "Navy and lattice. 52px strip: 'Lagerland Apps · Finland' small on the left, 'Menu' on the right. A full-width indicia box (72px) carries the price caps line. The window spans 358px wide by about 330px: H1 in Franklin 800 40px/1.02 on three lines, hero.secondary 16px, the address line, badge 48px. Below it the coral teaser and the first three lines of quick_answer at the fold. QR hidden.",
+   "conversion": "Badge: always on paper (inside the hero window, the back-flap window and the sticky window) at 48–52px. QR: on ≥1024px, beneath the indicia as the envelope's barcode. Price: the indicia box, verbatim from price.value, then a 'Price list' enclosure (plans + plans_footnote). Sticky bar: a navy band with the lattice and a small paper window holding a 40px badge and 'AllPaid · free · no bank login' in Franklin 600. It appears when the hero window leaves and hides at the back flap. Smart App Banner: head meta unchanged.",
+   "visitorPath": [
+    "Envelope face: return address (maker), indicia (price.value), window (H1 hero.headline, hero.secondary, address line, badge), QR as barcode, teaser line",
+    "The letter's opening: quick_answer (speakable) in pale ink on navy, 64ch",
+    "Hold it up to the light: the signature contrast of a bank login against AllPaid (founder story + journal grounding)",
+    "The statement: illustrative sample month from the screenshots on a paper sheet, Courier Prime lines by due date with daily totals, the 27 Feb heavy day marked coral, 'moves to next month automatically'",
+    "The catalog insert: training_vocabulary's 4 groups as a two-column directory on a DL paper slip + FI/DE keywords",
+    "How a bill moves through it: how_it_works intro + 7 numbered steps on a tri-fold leaflet (three creased panels on desktop, one column on mobile), HowTo",
+    "Pro's plain-English answers: example_insights as four statement remarks (Franklin 600 22px headline + body), labelled illustrative",
+    "Price list: plans as four ruled rows on an enclosed leaflet, Lifetime 'Best long-term value', plans_footnote",
+    "Addressed to / Return to sender if: who_for and who_not_for",
+    "Not in this envelope: plateau_disclosure (rule, what it does not do, notes)",
+    "Who can see what: comparison_table on paper with the AllPaid column, footnote, inline badge",
+    "The letter: founder story signed 'Lagerland Apps, Finland', signals, response time, support email, backstory link",
+    "Features + screenshots: features (7) and value_points (4) as a list on navy; the 4 screenshots in the iPhone bezel, which share the app's navy",
+    "Sealed: privacy block (data_collection none, tracking false, no account, notes) + transparency counts in Courier Prime, links to /transparency/#allpaid, privacy policy and support",
+    "Questions: faq as details rows on navy",
+    "Forwarded from: alternatives_to (4 linked pages, Truebill and Chronicle Bills as text) + related_journal",
+    "Quick reference <details> (ai-canonical), visible, on a paper slip",
+    "Also from this sender: you-might-like (computed)",
+    "Back flap: closing window with badge + QR, postmark ring 'first released 1 Jan 2026 · updated 13 May 2026 · audited 13 May 2026', on the raspberry-navy ground, then the Lagerland strip"
+   ],
+   "navigation": "The return-address corner is the brand ('Lagerland Apps · AllPaid'), followed by text links set like the envelope's printed endorsement line: Statement · Catalog · Prices · Compare · Questions, in Franklin 600 15px pale, underlined on hover/focus with a coral focus ring. On mobile, 'Menu' opens a paper panel styled as a window with the same links.",
+   "signatureInteraction": "'Hold it up to the light'. A toggle button (aria-pressed, label 'Hold up to the light') sits beside a second window. Default state, 'With AllPaid': the tint is opaque around the window and only the six sample bills show. Pressed, 'With a bank login': the lattice opacity drops to near zero across the panel and a dense illustrative feed of every transaction appears as redacted rows with generic labels ('Card payment', 'Salary', 'Pharmacy', 'Transfer', amounts blocked out). Its caption reads 'Illustrative: a bank login gives an aggregator read access to every transaction, far beyond your bills' (from the founder story and journal). Technique: a --tint-opacity custom property transition and a class toggle, about 20 lines of JS. No-JS: both states render as two labelled panels, 'What a bank-linked app can read' and 'What AllPaid holds', side by side on desktop and stacked on mobile. Reduced motion: an instant swap.",
+   "motionGrammar": "Light changes; paper barely moves. The tint fades over 300ms on the light toggle. The window and enclosures fade up 8px over 200ms once, under html.js. The sticky window slides up in 180ms. The postmark does not spin. prefers-reduced-motion: state changes swap instantly, no translate.",
+   "readModeVariant": "Alternatives pages are the opened envelope: a 160px navy tint band at the top with a small window holding the H1 (Franklin 800 40px), then the reading column on paper #F4F6FA in Franklin 400 18px/1.6 navy, 68ch. Comparison tables use paper rules, with Courier Prime only for prices, and the quick_answer is the first paragraph on a 1px-ruled slip. Privacy: the window reads 'Privacy policy — AllPaid', the policy is set as a letter on paper, and the transparency counts appear in Courier Prime linking /transparency/#allpaid. Support: the return address becomes the contact block (email, response time, what to include).",
+   "assetsNeeded": "None required: the lattice and microtext are inline SVG patterns. Optional later production task: three hand-tuned security-tint SVG tiles (lattice, wave, microtext).",
+   "risk": "Dark navy with one coral accent sits near the 'near-black + one accent' AI trope; the tint pattern and paper windows must carry it, never a glow. The pattern must stay at about 1.2:1 behind text. The light toggle's transaction feed must stay generic and labelled so it can't read as a claim about a named competitor. The navy echoes the app's own screenshots, so screenshots blend into the ground rather than standing out.",
+   "memoryTest": "The page that looked like the inside of a bill envelope: the price where the postage-paid box goes, the app's name in the address window, and a button that held it up to the light to show what a bank login would expose.",
+   "specimen": {
+    "bg": "#0E1930",
+    "ink": "#F4F6FA",
+    "accent": "#1A2944",
+    "display": "Libre Franklin",
+    "dw": 800,
+    "text": "Libre Franklin",
+    "h1": "Every bill. One calm place.",
+    "sub": "Bills, calmly handled. No bank login.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  }
+ ],
+ "canon": "Category standard played straight (not recommended): a white and fintech-blue product page in a rounded sans, with a split hero ('Take control of your bills' left, the calendar screenshot in a phone right), App Store badge and QR under it, a trust row (no bank login · no account · on-device), four feature cards, a pricing table with Annual highlighted, a comparison table and an FAQ accordion.",
+ "notes": "Dice: the binding roll is key 14b89f5f → assigned 5. While re-reading the header, the base command ran a second time and produced key f6ea7f11 → 3; that roll was discarded. Reroll 1 from 14b89f5f gave 3, distinct from 5, and neither is 1, so B is candidate 1. The roll ran degraded (no catalog challengers). Sibling guardrails: A is the nearest hue to Millrace (amber/honey), so keep Millrace off signal yellow; B neighbours Taskful Day and Soon (calendar worlds); C must stay off receipt/thermal paper (RightSplit, the other finance app), and its navy differs from Observa and Aftershift only if those agents avoid envelope/paper material. Every sample uses the app's own screenshot bills (euros, 27 Feb heavy day €219.98) and is labelled illustrative; no price beyond price.value and plans is shown. Content drift to fix at build: the rocket-money and bobby alternatives pages claim 'detected from receipts' and 'no subscription', which the front matter doesn't support, and screenshot 1.png's alt text says calendar but the image is the bill list.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

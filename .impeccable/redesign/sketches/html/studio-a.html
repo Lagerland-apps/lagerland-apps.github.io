@@ -1,0 +1,480 @@
+<!-- fonts: Big Shoulders Stencil Display:800 | Gantari:400,700,400i | Martian Mono:400,600 -->
+<style>
+/* ============ Studio / style a — The Open Depot ============ */
+.s-studio-a{
+  --ground:#F3F4F1;      /* white-painted depot wall/floor */
+  --label:#FFFFFF;       /* label stock */
+  --ink:#14191F;         /* stencil black */
+  --orange:#E2560F;      /* beam orange: labels + pick tickets only */
+  --blue:#1E3E8C;        /* upright blue: uprights, links, current page */
+  --grey:#5B626B;        /* galvanised grey: secondary text */
+  --beam:#CBD0CE;        /* galvanised steel beam (tint of the grey) */
+  --beam-edge:#98A09D;
+  --rule:#D6DAD7;
+  --tray:#E8EBE7;
+  --display:'Big Shoulders Stencil Display',Impact,sans-serif;
+  --text:'Gantari',system-ui,sans-serif;
+  --mono:'Martian Mono',ui-monospace,monospace;
+  background:var(--ground);color:var(--ink);
+  font-family:var(--text);font-size:17px;line-height:1.45;color-scheme:light;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+.s-studio-a *{box-sizing:border-box}
+.s-studio-a ::selection{background:var(--orange);color:var(--ink)}
+.s-studio-a.mk--desktop{width:1440px;height:1800px;overflow:hidden;position:relative}
+.s-studio-a.mk--mobile{width:390px;height:1688px;overflow:hidden;position:relative}
+.s-studio-a h1,.s-studio-a h2,.s-studio-a h3,.s-studio-a p,.s-studio-a dl,.s-studio-a dd,.s-studio-a figure{margin:0}
+.s-studio-a a{color:inherit;text-decoration:none}
+.s-studio-a b{font-weight:600}
+
+/* ---- shared parts ---- */
+.s-studio-a .mark{display:block;flex:none}
+.s-studio-a .brand{display:flex;align-items:center;gap:10px;height:44px;padding:0 16px 0 10px;background:var(--label);
+  border:1px solid #AEB5B2;border-radius:2px;box-shadow:0 1px 0 rgba(20,25,31,.22)}
+.s-studio-a .brand .mark{width:32px;height:32px}
+.s-studio-a .brand span{font:800 27px/1 var(--display);letter-spacing:.035em;text-transform:uppercase}
+.s-studio-a .tag{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;background:var(--orange);color:var(--ink);
+  font:700 15px/1 var(--text);border-radius:2px;box-shadow:0 1px 0 rgba(20,25,31,.3)}
+.s-studio-a .tag--index{background:var(--label);color:var(--blue);box-shadow:inset 0 0 0 1.5px var(--blue)}
+.s-studio-a .chev{width:13px;height:13px;flex:none}
+.s-studio-a .ar{width:14px;height:14px;flex:none}
+.s-studio-a .ico{display:block;overflow:hidden;border-radius:22.4%;flex:none}
+.s-studio-a .ico img{display:block;width:106%;height:106%;margin:-3%;max-width:none}
+.s-studio-a .box{display:grid;place-items:center;flex:none;background:var(--g);border-radius:3px;box-shadow:inset 0 0 0 1px rgba(20,25,31,.18)}
+.s-studio-a .label{display:flex;flex-direction:column;background:var(--label);border:1px solid #B2B9B6;border-radius:3px;box-shadow:0 1px 0 rgba(20,25,31,.16);overflow:hidden}
+.s-studio-a .lab-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;height:30px;margin-top:auto;padding:0 16px;
+  font:600 12px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;white-space:nowrap}
+.s-studio-a .lab-foot--ink{background:var(--ink);color:#fff}
+.s-studio-a .lab-foot--orange{background:var(--orange);color:var(--ink)}
+.s-studio-a .sdl{display:grid}
+.s-studio-a .sdl>div{display:flex;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1px dotted #8C9491;font:400 13px/1.1 var(--mono)}
+.s-studio-a .sdl>div:last-child{border-bottom:0}
+.s-studio-a .sdl dt{color:var(--grey);text-transform:uppercase;letter-spacing:.05em;font-size:12px}
+.s-studio-a .sdl dd{margin-left:auto;font-weight:600;color:var(--ink);text-align:right}
+.s-studio-a .lnk{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font:700 15px/1.2 var(--text);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.s-studio-a .asb{display:inline-block;line-height:0;border-radius:8px}
+.s-studio-a .asb-svg{display:block;width:150px;height:auto}
+.s-studio-a .qr{display:flex;flex-direction:column;align-items:center;gap:6px;background:var(--label);padding:6px 6px 6px}
+.s-studio-a .qr img{display:block;width:105px;height:105px;image-rendering:pixelated}
+.s-studio-a .qr figcaption{font:700 11.5px/1.2 var(--text);text-align:center;color:var(--ink);white-space:nowrap}
+.s-studio-a .upright{position:absolute;top:0;bottom:0;width:28px;display:block;background-color:var(--blue);
+  background-image:radial-gradient(ellipse 4.6px 8px at 50% 22px,var(--ground) 92%,transparent 100%),radial-gradient(ellipse 2.4px 4px at 50% 34px,var(--ground) 92%,transparent 100%);
+  background-size:100% 48px,100% 48px;background-repeat:repeat-y;box-shadow:inset 3px 0 0 rgba(255,255,255,.16),inset -3px 0 0 rgba(0,0,0,.2)}
+.s-studio-a .upright--l{left:0}.s-studio-a .upright--r{right:0}
+.s-studio-a .beam{height:12px;background:var(--beam);box-shadow:inset 0 1px 0 #E9ECEA,inset 0 -1px 0 var(--beam-edge)}
+.s-studio-a .num{display:grid;place-items:center;background:var(--orange);color:var(--ink);font:800 62px/1 var(--display);border-radius:3px;box-shadow:0 1px 0 rgba(20,25,31,.3)}
+.s-studio-a .aname{font:800 64px/.88 var(--display);text-transform:uppercase;letter-spacing:.004em}
+.s-studio-a details>summary{list-style:none;cursor:pointer}
+.s-studio-a details>summary::-webkit-details-marker{display:none}
+.s-studio-a .pickbtn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:36px;padding:0 11px;border:1.5px solid var(--blue);border-radius:2px;color:var(--blue);font:700 14px/1 var(--text);background:var(--label)}
+.s-studio-a details[open]>summary .pickbtn{background:var(--blue);color:#fff}
+.s-studio-a details[open]>summary .chev{transform:rotate(180deg)}
+.s-studio-a .code{font:600 15px/1 var(--mono);color:var(--ink)}
+.s-studio-a .name{font:700 22px/1.15 var(--text);color:var(--ink)}
+.s-studio-a .job{display:block;font-size:17px;line-height:1.35;margin-top:3px}
+.s-studio-a .decl{font:400 12.5px/1.65 var(--mono);color:var(--grey)}
+.s-studio-a .decl b{color:var(--ink);font-weight:600}
+.s-studio-a .ticket{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:56px;padding:0 22px;background:var(--orange);color:var(--ink);
+  font:700 18px/1.1 var(--text);
+  -webkit-mask:radial-gradient(circle 9px at 0 50%,transparent 97%,#000) left/51% 100% no-repeat,radial-gradient(circle 9px at 100% 50%,transparent 97%,#000) right/51% 100% no-repeat;
+          mask:radial-gradient(circle 9px at 0 50%,transparent 97%,#000) left/51% 100% no-repeat,radial-gradient(circle 9px at 100% 50%,transparent 97%,#000) right/51% 100% no-repeat}
+.s-studio-a .ticket i{font:600 14px/1 var(--mono);font-style:normal;margin-left:10px;letter-spacing:.03em}
+.s-studio-a .ticket span{display:flex;align-items:baseline}
+.s-studio-a .goods-name{font:700 25px/1.1 var(--text)}
+.s-studio-a .goods-name a{color:var(--ink)}
+.s-studio-a .goods-job{font-size:16px;line-height:1.3;margin-top:3px}
+.s-studio-a .goods-price{font:700 15px/1.3 var(--text);margin-top:4px}
+
+/* box fronts (pulled drawer) */
+.s-studio-a .bigbox,.s-studio-a .m-bigbox{position:relative;background:var(--g);color:var(--k);overflow:hidden;border-radius:4px;box-shadow:0 8px 24px rgba(20,25,31,.24),inset 0 0 0 1px rgba(20,25,31,.2)}
+.s-studio-a .bb-name{font:700 28px/1.1 var(--text)}
+.s-studio-a .bb-plat{font:600 12.5px/1.3 var(--mono);letter-spacing:.04em;text-transform:uppercase}
+.s-studio-a .bb-shot{position:absolute;display:block;border-radius:18px;box-shadow:0 0 0 1px rgba(20,25,31,.5),0 6px 18px rgba(20,25,31,.3)}
+
+/* =================== DESKTOP =================== */
+.s-studio-a .d-mast{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 72px;background:var(--beam);
+  box-shadow:inset 0 1px 0 #E9ECEA,inset 0 -1px 0 var(--beam-edge)}
+.s-studio-a .d-nav{display:flex;gap:10px}
+.s-studio-a .d-hero{position:relative;padding:32px 72px 0}
+.s-studio-a .d-h1{font:800 150px/.86 var(--display);text-transform:uppercase;letter-spacing:.004em}
+.s-studio-a .d-h1 span{display:block}
+.s-studio-a .d-lede{position:absolute;right:72px;top:46px;width:500px;font-size:19.5px;line-height:1.45;text-wrap:pretty}
+.s-studio-a .d-record{display:grid;grid-template-columns:minmax(0,1fr) 564px;gap:24px;padding:28px 72px 0}
+.s-studio-a .d-record .stock-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:34px;padding:14px 20px 12px}
+.s-studio-a .stock-l{display:flex;flex-direction:column;justify-content:space-between;gap:12px}
+.s-studio-a .stock-state{font:700 21px/1.22 var(--text);text-wrap:balance}
+.s-studio-a .d-record .goods-body{display:grid;grid-template-columns:88px minmax(0,1fr) 164px;gap:16px;padding:14px 16px 12px;align-items:start}
+.s-studio-a .goods-body .asb-svg{width:148px;margin-top:10px}
+.s-studio-a .qr--goods{border:1px solid var(--rule);border-radius:2px}
+.s-studio-a .d-bay{position:relative;margin:32px 72px 0;padding:0 28px}
+.s-studio-a .d-transom{display:flex;gap:8px;align-items:center;height:56px;padding:0 10px;background:var(--beam);box-shadow:inset 0 1px 0 #E9ECEA,inset 0 -1px 0 var(--beam-edge)}
+.s-studio-a .alab{flex:1 1 0;display:flex;align-items:center;gap:8px;height:40px;padding:0 8px 0 7px;background:var(--label);border:1px solid #AEB5B2;border-radius:2px;
+  font:700 14.5px/1.1 var(--text);white-space:nowrap;box-shadow:0 1px 0 rgba(20,25,31,.2)}
+.s-studio-a .alab .n{display:grid;place-items:center;flex:none;width:28px;height:28px;background:var(--orange);font:800 21px/1 var(--display)}
+.s-studio-a .d-aisle{padding-top:26px}
+.s-studio-a .d-sign{display:grid;grid-template-columns:64px minmax(0,1fr) 372px;gap:22px;align-items:end;padding:0 4px 14px}
+.s-studio-a .d-sign .num{width:64px;height:64px;font-size:52px}
+.s-studio-a .d-sign .alead{font-size:16.5px;line-height:1.4;margin-bottom:5px}
+.s-studio-a .d-bins{background:var(--label);box-shadow:inset 1px 0 0 var(--rule),inset -1px 0 0 var(--rule)}
+.s-studio-a .d-cols,.s-studio-a .d-row{display:grid;grid-template-columns:56px 64px minmax(0,1.45fr) 150px minmax(0,1fr) 124px 74px;gap:22px;align-items:center;padding:0 24px}
+.s-studio-a .d-cols{height:30px;border-bottom:1px solid var(--rule);font:600 11.5px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--grey)}
+.s-studio-a .d-row{min-height:98px;padding-top:16px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+.s-studio-a .d-row .plat{font-size:15.5px;line-height:1.3}
+.s-studio-a .d-row .price{font-size:15px;line-height:1.35}
+.s-studio-a .d-row .pickbtn{justify-self:end}
+.s-studio-a .d-drawer{display:grid;grid-template-columns:420px minmax(0,1fr) 290px;gap:40px;padding:32px 24px 30px;background:var(--tray);border-bottom:1px solid var(--rule)}
+.s-studio-a .bigbox{height:296px;transform:translateY(-6px)}
+.s-studio-a .bigbox .ico{position:absolute;left:28px;top:28px}
+.s-studio-a .bigbox .bb-name{position:absolute;left:28px;top:156px}
+.s-studio-a .bigbox .bb-pre{position:absolute;left:28px;top:198px;width:210px;font:400 italic 19px/1.3 var(--text)}
+.s-studio-a .bigbox .bb-plat{position:absolute;left:28px;bottom:24px}
+.s-studio-a .bigbox .bb-shot{right:28px;top:28px;width:140px;height:auto}
+.s-studio-a .dr-h{font:700 22px/1.2 var(--text);margin-bottom:10px}
+.s-studio-a .dl{display:grid;grid-template-columns:1fr 1fr;column-gap:30px}
+.s-studio-a .dl>div{display:flex;align-items:baseline;gap:8px;padding:8px 0;border-bottom:1px dotted #8C9491;font:400 13px/1.1 var(--mono)}
+.s-studio-a .dl dt{color:var(--grey);text-transform:uppercase;letter-spacing:.03em;font-size:11.5px;white-space:nowrap}
+.s-studio-a .dl dd{white-space:nowrap}
+.s-studio-a .dl dd{margin-left:auto;font-weight:600}
+.s-studio-a .dr-p{font-size:16.5px;line-height:1.5;margin-top:16px;max-width:60ch}
+.s-studio-a .dr-act{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.s-studio-a .dr-act .ticket{align-self:stretch}
+.s-studio-a .dr-act .qr{border:1px solid var(--rule);border-radius:2px;flex-direction:row;gap:14px;padding:8px 14px 8px 8px;align-self:stretch;align-items:center}
+.s-studio-a .dr-act .qr img{width:105px;height:105px}
+.s-studio-a .dr-act .qr figcaption{text-align:left;font-size:14px}
+
+/* =================== MOBILE =================== */
+.s-studio-a .m-mast{height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 10px;background:var(--beam);box-shadow:inset 0 1px 0 #E9ECEA,inset 0 -1px 0 var(--beam-edge)}
+.s-studio-a .m-mast .brand{height:38px;padding:0 11px 0 7px;gap:8px}
+.s-studio-a .m-mast .brand .mark{width:26px;height:26px}
+.s-studio-a .m-mast .brand span{font-size:22px}
+.s-studio-a .tag--m{height:38px;padding:0 14px}
+.s-studio-a .m-hero{padding:22px 16px 0}
+.s-studio-a .m-h1{font:800 66px/.88 var(--display);text-transform:uppercase;letter-spacing:.004em}
+.s-studio-a .m-h1 span{display:block}
+.s-studio-a .m-lede{font-size:16.5px;line-height:1.48;margin-top:16px;text-wrap:pretty}
+.s-studio-a .m-record{display:grid;gap:12px;padding:18px 16px 0}
+.s-studio-a .m-stock-body{display:grid;gap:2px;padding:6px 14px 8px}
+.s-studio-a .m-stock-body .sdl>div{padding:5px 0}
+.s-studio-a .m-stock-body .lnk{justify-self:end}
+.s-studio-a .m-goods-body{display:grid;grid-template-columns:64px minmax(0,1fr);gap:6px 12px;padding:12px 14px 14px;align-items:start}
+.s-studio-a .m-goods-body .goods-name{font-size:21px}
+.s-studio-a .m-goods-body .goods-job{font-size:15px}
+.s-studio-a .m-goods-body .goods-price{font-size:15px}
+.s-studio-a .m-goods-act{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:6px}
+.s-studio-a .m-goods-plat{font:700 14px/1.3 var(--text);color:var(--ink);text-align:right;white-space:nowrap}
+.s-studio-a .m-bay{position:relative;margin-top:18px;padding:0 12px}
+.s-studio-a .m-bay .upright{width:12px;background-image:radial-gradient(ellipse 2.4px 5px at 50% 16px,var(--ground) 92%,transparent 100%);background-size:100% 32px;box-shadow:inset 2px 0 0 rgba(255,255,255,.16),inset -2px 0 0 rgba(0,0,0,.2)}
+.s-studio-a .m-transom{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:8px 8px;background:var(--beam);box-shadow:inset 0 1px 0 #E9ECEA,inset 0 -1px 0 var(--beam-edge)}
+.s-studio-a .m-alab{display:flex;align-items:center;gap:8px;min-height:42px;padding:3px 8px 3px 6px;background:var(--label);border:1px solid #AEB5B2;border-radius:2px;font:700 14.5px/1.12 var(--text);box-shadow:0 1px 0 rgba(20,25,31,.2)}
+.s-studio-a .m-alab .n{display:grid;place-items:center;flex:none;width:30px;height:30px;background:var(--orange);font:800 22px/1 var(--display)}
+.s-studio-a .m-alab:last-child{grid-column:1/-1}
+.s-studio-a .m-aisle{padding-top:22px}
+.s-studio-a .m-sign{display:grid;grid-template-columns:54px minmax(0,1fr);gap:4px 12px;align-items:center;padding:0 6px 12px}
+.s-studio-a .m-sign .num{width:54px;height:54px;font-size:44px}
+.s-studio-a .m-sign .aname{font-size:46px;line-height:.9}
+.s-studio-a .m-sign .alead{grid-column:1/-1;font-size:15px;line-height:1.4;margin-top:6px}
+.s-studio-a .m-bins{background:var(--label);box-shadow:inset 1px 0 0 var(--rule),inset -1px 0 0 var(--rule)}
+.s-studio-a .m-row{display:grid;grid-template-columns:56px minmax(0,1fr);gap:8px 12px;align-items:start;padding:12px 12px;border-bottom:1px solid var(--rule)}
+.s-studio-a .m-row .box{grid-column:1;grid-row:1}
+.s-studio-a .m-row .who{grid-column:2;grid-row:1;display:block}
+.s-studio-a .m-row .nl{display:flex;align-items:center;gap:8px;min-height:32px}
+.s-studio-a .m-row .code{font-size:13px;color:var(--grey)}
+.s-studio-a .m-row .name{font-size:21px;line-height:1.1}
+.s-studio-a .m-row .pickbtn{margin-left:auto;height:32px;padding:0 9px;font-size:13.5px}
+.s-studio-a .m-row .job{font-size:15.5px;line-height:1.35;margin-top:0}
+.s-studio-a .m-row .price{grid-column:1/3;grid-row:2;font-size:15px;line-height:1.35}
+.s-studio-a .m-row .price em{font-style:normal;font-weight:700}
+.s-studio-a .m-row .decl{grid-column:1/3;grid-row:3;font-size:12.5px;line-height:1.3}
+.s-studio-a .m-drawer{display:grid;gap:12px;padding:12px 12px 16px;background:var(--tray);border-bottom:1px solid var(--rule)}
+.s-studio-a .m-bigbox{height:184px;transform:translateY(-4px)}
+.s-studio-a .m-bigbox .ico{position:absolute;left:18px;top:18px}
+.s-studio-a .m-bigbox .bb-name{position:absolute;left:18px;top:100px;font-size:22px}
+.s-studio-a .m-bigbox .bb-plat{position:absolute;left:18px;top:130px;width:170px}
+.s-studio-a .m-bigbox .bb-shot{right:18px;top:18px;width:124px;height:auto}
+.s-studio-a .m-drawer .ticket{min-height:54px}
+
+</style>
+<div class="s-studio-a mk mk--desktop">
+ <header class="d-mast">
+  <a class="brand" href="/"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M32.54 1.00L39.50 1.92L37.44 10.17L32.39 9.50Z" fill="#737B83"/><path d="M40.54 2.20L47.03 4.89L42.91 12.32L38.20 10.37Z" fill="#5E666E"/><path d="M47.97 5.43L53.53 9.70L47.63 15.81L43.59 12.71Z" fill="#737B83"/><path d="M54.30 10.47L58.57 16.03L51.29 20.41L48.19 16.37Z" fill="#5E666E"/><path d="M59.11 16.97L61.80 23.46L53.63 25.80L51.68 21.09Z" fill="#737B83"/><path d="M62.08 24.50L63.00 31.46L54.50 31.61L53.83 26.56Z" fill="#5E666E"/><path d="M63.00 32.54L62.08 39.50L53.83 37.44L54.50 32.39Z" fill="#737B83"/><path d="M61.80 40.54L59.11 47.03L51.68 42.91L53.63 38.20Z" fill="#5E666E"/><path d="M58.57 47.97L54.30 53.53L48.19 47.63L51.29 43.59Z" fill="#737B83"/><path d="M53.53 54.30L47.97 58.57L43.59 51.29L47.63 48.19Z" fill="#5E666E"/><path d="M47.03 59.11L40.54 61.80L38.20 53.63L42.91 51.68Z" fill="#737B83"/><path d="M39.50 62.08L32.54 63.00L32.39 54.50L37.44 53.83Z" fill="#5E666E"/><path d="M31.46 63.00L24.50 62.08L26.56 53.83L31.61 54.50Z" fill="#737B83"/><path d="M23.46 61.80L16.97 59.11L21.09 51.68L25.80 53.63Z" fill="#5E666E"/><path d="M16.03 58.57L10.47 54.30L16.37 48.19L20.41 51.29Z" fill="#737B83"/><path d="M9.70 53.53L5.43 47.97L12.71 43.59L15.81 47.63Z" fill="#5E666E"/><path d="M4.89 47.03L2.20 40.54L10.37 38.20L12.32 42.91Z" fill="#737B83"/><path d="M1.92 39.50L1.00 32.54L9.50 32.39L10.17 37.44Z" fill="#5E666E"/><path d="M1.00 31.46L1.92 24.50L10.17 26.56L9.50 31.61Z" fill="#737B83"/><path d="M2.20 23.46L4.89 16.97L12.32 21.09L10.37 25.80Z" fill="#5E666E"/><path d="M5.43 16.03L9.70 10.47L15.81 16.37L12.71 20.41Z" fill="#737B83"/><path d="M10.47 9.70L16.03 5.43L20.41 12.71L16.37 15.81Z" fill="#5E666E"/><path d="M16.97 4.89L23.46 2.20L25.80 10.37L21.09 12.32Z" fill="#737B83"/><path d="M24.50 1.92L31.46 1.00L31.61 9.50L26.56 10.17Z" fill="#5E666E"/><circle cx="32" cy="32" r="20.5" fill="#2B3138" stroke="#14191F" stroke-width="1"/><path d="M32.00 14.50L34.22 26.64L40.84 23.16L37.36 29.78L49.50 32.00L37.36 34.22L40.84 40.84L34.22 37.36L32.00 49.50L29.78 37.36L23.16 40.84L26.64 34.22L14.50 32.00L26.64 29.78L23.16 23.16L29.78 26.64Z" fill="#B4BCC3" stroke="#14191F" stroke-width=".8" stroke-linejoin="round"/><circle cx="32" cy="32" r="3.2" fill="#5E666E" stroke="#14191F" stroke-width=".7"/></svg><span>LAGERLAND</span></a>
+  <nav class="d-nav" aria-label="Lagerland"><a class="tag" href="#">Apps</a><a class="tag" href="#">Journal</a><a class="tag" href="#">Transparency</a><a class="tag" href="#">Alternatives</a><a class="tag" href="#">About</a><a class="tag tag--index" href="#">Index <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></a></nav>
+ </header>
+ <section class="d-hero">
+  <h1 class="d-h1"><span>Private apps,</span><span>on open shelves.</span></h1>
+  <p class="d-lede">19 iPhone, iPad, Apple Watch and Mac apps from one developer in Finland. No trackers, no ads, no accounts, and every app’s declared data printed on its bin label.</p>
+ </section>
+ <section class="d-record" aria-label="The record">
+  <div class="label stock">
+   <div class="stock-body">
+    <div class="stock-l">
+     <p class="stock-state">No IDFA request and zero advertising SDKs, in every app. The declared data is public, app by app.</p>
+     <a class="lnk" href="/transparency/">Read the full ledger <svg class="ar" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></a>
+    </div>
+    <dl class="sdl">
+     <div><dt>Items</dt><dd>19</dd></div>
+     <div><dt>Tracking domains</dt><dd>0</dd></div>
+     <div><dt>Ad SDKs</dt><dd>0</dd></div>
+     <div><dt>Manifests</dt><dd>18 + 1 pending</dd></div>
+    </dl>
+   </div>
+   <div class="lab-foot lab-foot--ink"><span>Stocktake</span><span>11.06.2026</span><span>Source: transparency.yml</span></div>
+  </div>
+  <div class="label goods">
+   <div class="goods-body">
+    <span class="box" style="--g:#8E3A2A;width:88px;height:88px"><span class="ico" style="width:72px;height:72px"><img src="assets/xiangqiful/icon.png" alt="" width="72" height="72"></span></span>
+    <div class="goods-mid">
+     <h2 class="goods-name"><a href="/apps/xiangqiful/">Xiangqiful</a></h2>
+     <p class="goods-job">Master xiangqi. Move by move.</p>
+     <p class="goods-price">Free — Premium from $1.99/mo</p>
+     <a class="asb asb--goods" href="#" rel="noopener" aria-label="Download Xiangqiful on the App Store"><svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/><path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/><text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text><text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text></svg></a>
+    </div>
+    <figure class="qr qr--goods"><img src="assets/qr/xiangqiful.svg" alt="QR code: install Xiangqiful on iPhone" width="105" height="105"><figcaption>Scan to install on iPhone</figcaption></figure>
+   </div>
+   <div class="lab-foot lab-foot--orange"><span>Goods in</span><span>30.09.2026</span><span>Newest arrival</span></div>
+  </div>
+ </section>
+ <div class="d-bay">
+  <i class="upright upright--l"></i><i class="upright upright--r"></i>
+  <nav class="d-transom" aria-label="Aisles"><a class="alab" href="#aisle-1"><span class="n">1</span><span class="t">Health & recovery</span></a><a class="alab" href="#aisle-2"><span class="n">2</span><span class="t">Days & plans</span></a><a class="alab" href="#aisle-3"><span class="n">3</span><span class="t">Money</span></a><a class="alab" href="#aisle-4"><span class="n">4</span><span class="t">For developers</span></a><a class="alab" href="#aisle-5"><span class="n">5</span><span class="t">Reading</span></a><a class="alab" href="#aisle-6"><span class="n">6</span><span class="t">Games</span></a><a class="alab" href="#aisle-7"><span class="n">7</span><span class="t">Files & media</span></a></nav>
+  <section class="d-aisle" id="aisle-1">
+ <header class="d-sign"><span class="num">1</span><h2 class="aname">Health & recovery</h2><p class="alead">Understand your body, your habits, and your workouts — without handing your health data to advertisers.</p></header>
+ <div class="beam"></div>
+ <div class="d-bins">
+  <div class="d-cols"><span>Code</span><span></span><span>Item and what it does</span><span>Platforms</span><span>Price</span><span>Declared</span><span></span></div>
+  <details class="bin">
+ <summary class="d-row">
+  <span class="code">1-01</span>
+  <span class="box" style="--g:#1F4B63;width:64px;height:64px"><span class="ico" style="width:52px;height:52px"><img src="assets/gymlogger-x/icon.png" alt="" width="52" height="52"></span></span>
+  <span class="who"><a class="name" href="/apps/gymlogger-x/">GymLogger X</a><span class="job">Strength training log for iPhone & Apple Watch.</span></span>
+  <span class="plat">iPhone · Apple Watch</span>
+  <span class="price">Free — Pro from $1.99/mo, $17.99/yr, or $39.99 lifetime</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0<br><b>ACCT</b> none</span>
+  <span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span>
+ </summary>
+</details><details class="bin" open>
+ <summary class="d-row">
+  <span class="code">1-02</span>
+  <span class="box" style="--g:#D6A57C;width:64px;height:64px"><span class="ico" style="width:52px;height:52px"><img src="assets/observa/icon.png" alt="" width="52" height="52"></span></span>
+  <span class="who"><a class="name" href="/apps/observa/">Observa</a><span class="job">Sleep, energy & recovery insights.</span></span>
+  <span class="plat">iPhone · iPad</span>
+  <span class="price">Free — Pro from $2.99/mo</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0<br><b>ACCT</b> none</span>
+  <span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span>
+ </summary><div class="d-drawer">
+  <div class="bigbox" style="--g:#D6A57C;--k:#14191F">
+    <span class="ico" style="width:112px;height:112px"><img src="assets/observa/icon.png" alt="" width="112" height="112"></span>
+    <p class="bb-name">Observa</p>
+    <p class="bb-pre">Your data already knows why.</p>
+    <p class="bb-plat">iPhone · iPad</p>
+    <img class="bb-shot" src="assets/observa/s1.jpg" alt="Observa Coaching screen on iPhone" width="150" height="326">
+  </div>
+  <div class="dr-mid">
+    <h3 class="dr-h">Declared on this bin</h3>
+    <dl class="dl">
+      <div><dt>Tracking domains</dt><dd>0</dd></div>
+      <div><dt>3rd-party SDKs</dt><dd>none</dd></div>
+      <div><dt>Account</dt><dd>none</dd></div>
+      <div><dt>Analytics</dt><dd>none</dd></div>
+      <div><dt>Manifest</dt><dd>source-verified</dd></div>
+      <div><dt>Audited</dt><dd>11.06.2026</dd></div>
+    </dl>
+    <p class="dr-p">A private health insights app that reads your Apple Health data — sleep stages, HRV (SDNN) trends, ECG sinus-rhythm, resting heart rate — and explains what moves your recovery. Personal baselines, on-device, no account.</p>
+  </div>
+  <div class="dr-act">
+    <a class="ticket" href="/apps/observa/"><span>Go to Observa<i>1-02</i></span><svg class="ar" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></a>
+    <a class="asb asb--dr" href="#" rel="noopener" aria-label="Download Observa on the App Store"><svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/><path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/><text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text><text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text></svg></a>
+    <figure class="qr"><img src="assets/qr/observa.svg" alt="QR code: install Observa on iPhone" width="105" height="105"><figcaption>Scan to install on iPhone</figcaption></figure>
+  </div>
+</div>
+</details><details class="bin">
+ <summary class="d-row">
+  <span class="code">1-03</span>
+  <span class="box" style="--g:#C79A45;width:64px;height:64px"><span class="ico" style="width:52px;height:52px"><img src="assets/aftershift/icon.png" alt="" width="52" height="52"></span></span>
+  <span class="who"><a class="name" href="/apps/aftershift/">AfterShift</a><span class="job">The shift-worker sleep app where naps count as real recovery.</span></span>
+  <span class="plat">iPhone</span>
+  <span class="price">Free — Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0<br><b>ACCT</b> none</span>
+  <span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span>
+ </summary>
+</details><details class="bin">
+ <summary class="d-row">
+  <span class="code">1-04</span>
+  <span class="box" style="--g:#6F88B3;width:64px;height:64px"><span class="ico" style="width:52px;height:52px"><img src="assets/liftlog/icon.png" alt="" width="52" height="52"></span></span>
+  <span class="who"><a class="name" href="/apps/liftlog/">LiftLog</a><span class="job">The lift log that feels like equipment.</span></span>
+  <span class="plat">iPhone</span>
+  <span class="price">Free 7-day trial — then $9.99–$39.99 (pay what you can, one-time)</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0<br><b>ACCT</b> none</span>
+  <span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span>
+ </summary>
+</details><details class="bin">
+ <summary class="d-row">
+  <span class="code">1-05</span>
+  <span class="box" style="--g:#5A4330;width:64px;height:64px"><span class="ico" style="width:52px;height:52px"><img src="assets/pawza/icon.png" alt="" width="52" height="52"></span></span>
+  <span class="who"><a class="name" href="/apps/pawza/">Pawza</a><span class="job">Your pet’s whole life, in one place.</span></span>
+  <span class="plat">iPhone · iPad</span>
+  <span class="price">Free — Pawza Pro from $2.99/mo</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 1<br><b>ACCT</b> none</span>
+  <span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span>
+ </summary>
+</details>
+ </div>
+ <div class="beam"></div>
+</section>
+  <section class="d-aisle" id="aisle-2">
+ <header class="d-sign"><span class="num">2</span><h2 class="aname">Days & plans</h2><p class="alead">Daily planning and life-event countdowns that stay on your device.</p></header>
+ <div class="beam"></div>
+ <div class="d-bins">
+  <div class="d-cols"><span>Code</span><span></span><span>Item and what it does</span><span>Platforms</span><span>Price</span><span>Declared</span><span></span></div>
+  <details class="bin">
+ <summary class="d-row">
+  <span class="code">2-01</span>
+  <span class="box" style="--g:#3F6FC5;width:64px;height:64px"><span class="ico" style="width:52px;height:52px"><img src="assets/taskful-day/icon.png" alt="" width="52" height="52"></span></span>
+  <span class="who"><a class="name" href="/apps/taskful-day/">Taskful Day</a><span class="job">Plan the day. Finish the day — calmly. Now on Mac.</span></span>
+  <span class="plat">iPhone · iPad · Mac · Apple Watch</span>
+  <span class="price">Free — Pro from $2.99/mo</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0<br><b>ACCT</b> none</span>
+  <span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span>
+ </summary>
+</details><details class="bin">
+ <summary class="d-row">
+  <span class="code">2-02</span>
+  <span class="box" style="--g:#D9655E;width:64px;height:64px"><span class="ico" style="width:52px;height:52px"><img src="assets/soon/icon.png" alt="" width="52" height="52"></span></span>
+  <span class="who"><a class="name" href="/apps/soon/">Soon.</a><span class="job">Countdowns worth waiting for.</span></span>
+  <span class="plat">iPhone</span>
+  <span class="price">Free — Premium from $1.99/mo</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0<br><b>ACCT</b> none</span>
+  <span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span>
+ </summary>
+</details><details class="bin">
+ <summary class="d-row">
+  <span class="code">2-03</span>
+  <span class="box" style="--g:#7FA36B;width:64px;height:64px"><span class="ico" style="width:52px;height:52px"><img src="assets/earnlock/icon.png" alt="" width="52" height="52"></span></span>
+  <span class="who"><a class="name" href="/apps/earnlock/">EarnLock</a><span class="job">Earn your screen time. Move, then scroll.</span></span>
+  <span class="plat">iPhone · Apple Watch</span>
+  <span class="price">Free — Premium from $1.99/mo or $19.99 lifetime</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0<br><b>ACCT</b> none</span>
+  <span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span>
+ </summary>
+</details>
+ </div>
+ <div class="beam"></div>
+</section>
+ </div>
+</div>
+<div class="s-studio-a mk mk--mobile">
+ <header class="m-mast">
+  <a class="brand" href="/"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M32.54 1.00L39.50 1.92L37.44 10.17L32.39 9.50Z" fill="#737B83"/><path d="M40.54 2.20L47.03 4.89L42.91 12.32L38.20 10.37Z" fill="#5E666E"/><path d="M47.97 5.43L53.53 9.70L47.63 15.81L43.59 12.71Z" fill="#737B83"/><path d="M54.30 10.47L58.57 16.03L51.29 20.41L48.19 16.37Z" fill="#5E666E"/><path d="M59.11 16.97L61.80 23.46L53.63 25.80L51.68 21.09Z" fill="#737B83"/><path d="M62.08 24.50L63.00 31.46L54.50 31.61L53.83 26.56Z" fill="#5E666E"/><path d="M63.00 32.54L62.08 39.50L53.83 37.44L54.50 32.39Z" fill="#737B83"/><path d="M61.80 40.54L59.11 47.03L51.68 42.91L53.63 38.20Z" fill="#5E666E"/><path d="M58.57 47.97L54.30 53.53L48.19 47.63L51.29 43.59Z" fill="#737B83"/><path d="M53.53 54.30L47.97 58.57L43.59 51.29L47.63 48.19Z" fill="#5E666E"/><path d="M47.03 59.11L40.54 61.80L38.20 53.63L42.91 51.68Z" fill="#737B83"/><path d="M39.50 62.08L32.54 63.00L32.39 54.50L37.44 53.83Z" fill="#5E666E"/><path d="M31.46 63.00L24.50 62.08L26.56 53.83L31.61 54.50Z" fill="#737B83"/><path d="M23.46 61.80L16.97 59.11L21.09 51.68L25.80 53.63Z" fill="#5E666E"/><path d="M16.03 58.57L10.47 54.30L16.37 48.19L20.41 51.29Z" fill="#737B83"/><path d="M9.70 53.53L5.43 47.97L12.71 43.59L15.81 47.63Z" fill="#5E666E"/><path d="M4.89 47.03L2.20 40.54L10.37 38.20L12.32 42.91Z" fill="#737B83"/><path d="M1.92 39.50L1.00 32.54L9.50 32.39L10.17 37.44Z" fill="#5E666E"/><path d="M1.00 31.46L1.92 24.50L10.17 26.56L9.50 31.61Z" fill="#737B83"/><path d="M2.20 23.46L4.89 16.97L12.32 21.09L10.37 25.80Z" fill="#5E666E"/><path d="M5.43 16.03L9.70 10.47L15.81 16.37L12.71 20.41Z" fill="#737B83"/><path d="M10.47 9.70L16.03 5.43L20.41 12.71L16.37 15.81Z" fill="#5E666E"/><path d="M16.97 4.89L23.46 2.20L25.80 10.37L21.09 12.32Z" fill="#737B83"/><path d="M24.50 1.92L31.46 1.00L31.61 9.50L26.56 10.17Z" fill="#5E666E"/><circle cx="32" cy="32" r="20.5" fill="#2B3138" stroke="#14191F" stroke-width="1"/><path d="M32.00 14.50L34.22 26.64L40.84 23.16L37.36 29.78L49.50 32.00L37.36 34.22L40.84 40.84L34.22 37.36L32.00 49.50L29.78 37.36L23.16 40.84L26.64 34.22L14.50 32.00L26.64 29.78L23.16 23.16L29.78 26.64Z" fill="#B4BCC3" stroke="#14191F" stroke-width=".8" stroke-linejoin="round"/><circle cx="32" cy="32" r="3.2" fill="#5E666E" stroke="#14191F" stroke-width=".7"/></svg><span>LAGERLAND</span></a>
+  <a class="tag tag--m" href="#">Index <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></a>
+ </header>
+ <section class="m-hero">
+  <h1 class="m-h1"><span>Private apps,</span><span>on open</span><span>shelves.</span></h1>
+  <p class="m-lede">19 iPhone, iPad, Apple Watch and Mac apps from one developer in Finland. No trackers, no ads, no accounts, and every app’s declared data printed on its bin label.</p>
+ </section>
+ <section class="m-record" aria-label="The record">
+  <div class="label stock">
+   <div class="m-stock-body">
+    <dl class="sdl">
+     <div><dt>Items</dt><dd>19</dd></div>
+     <div><dt>Tracking domains</dt><dd>0</dd></div>
+     <div><dt>Ad SDKs</dt><dd>0</dd></div>
+     <div><dt>Manifests</dt><dd>18 + 1 pending</dd></div>
+    </dl>
+    <a class="lnk" href="/transparency/">Ledger <svg class="ar" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></a>
+   </div>
+   <div class="lab-foot lab-foot--ink"><span>Stocktake</span><span>11.06.2026</span></div>
+  </div>
+  <div class="label goods">
+   <div class="m-goods-body">
+    <span class="box" style="--g:#8E3A2A;width:64px;height:64px"><span class="ico" style="width:52px;height:52px"><img src="assets/xiangqiful/icon.png" alt="" width="52" height="52"></span></span>
+    <div class="goods-mid">
+     <h2 class="goods-name"><a href="/apps/xiangqiful/">Xiangqiful</a></h2>
+     <p class="goods-job">Master xiangqi. Move by move.</p>
+     <p class="goods-price">Free — Premium from $1.99/mo</p>
+    </div>
+    <div class="m-goods-act"><a class="asb asb--m" href="#" rel="noopener" aria-label="Download Xiangqiful on the App Store"><svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/><path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/><text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text><text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text></svg></a><span class="m-goods-plat">iPhone · iPad · Mac</span></div>
+   </div>
+   <div class="lab-foot lab-foot--orange"><span>Goods in</span><span>30.09.2026</span></div>
+  </div>
+ </section>
+ <div class="m-bay">
+  <i class="upright upright--l"></i><i class="upright upright--r"></i>
+  <nav class="m-transom" aria-label="Aisles"><a class="m-alab" href="#m-aisle-1"><span class="n">1</span><span class="t">Health & recovery</span></a><a class="m-alab" href="#m-aisle-2"><span class="n">2</span><span class="t">Days & plans</span></a><a class="m-alab" href="#m-aisle-3"><span class="n">3</span><span class="t">Money</span></a><a class="m-alab" href="#m-aisle-4"><span class="n">4</span><span class="t">For developers</span></a><a class="m-alab" href="#m-aisle-5"><span class="n">5</span><span class="t">Reading</span></a><a class="m-alab" href="#m-aisle-6"><span class="n">6</span><span class="t">Games</span></a><a class="m-alab" href="#m-aisle-7"><span class="n">7</span><span class="t">Files & media</span></a></nav>
+  <section class="m-aisle" id="m-aisle-1">
+ <header class="m-sign"><span class="num">1</span><h2 class="aname">Health & recovery</h2><p class="alead">Understand your body, your habits, and your workouts — without handing your health data to advertisers.</p></header>
+ <div class="beam"></div>
+ <div class="m-bins"><details class="m-bin" open>
+ <summary class="m-row">
+  <span class="box" style="--g:#1F4B63;width:56px;height:56px"><span class="ico" style="width:46px;height:46px"><img src="assets/gymlogger-x/icon.png" alt="" width="46" height="46"></span></span>
+  <span class="who"><span class="nl"><span class="code">1-01</span><a class="name" href="/apps/gymlogger-x/">GymLogger X</a><span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></span><span class="job">Strength training log for iPhone & Apple Watch.</span></span>
+  <span class="price"><em>iPhone · Apple Watch</em> · Free — Pro from $1.99/mo, $17.99/yr, or $39.99 lifetime</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0 · <b>ACCT</b> none</span>
+ </summary><div class="m-drawer">
+  <div class="m-bigbox" style="--g:#1F4B63;--k:#F7F4EE">
+    <span class="ico" style="width:76px;height:76px"><img src="assets/gymlogger-x/icon.png" alt="" width="76" height="76"></span>
+    <p class="bb-name">GymLogger X</p>
+    <p class="bb-plat">iPhone · Apple Watch</p>
+    <img class="bb-shot" src="assets/gymlogger-x/s1.jpg" alt="GymLogger X workout screen on iPhone" width="120" height="261">
+  </div>
+  <a class="ticket" href="/apps/gymlogger-x/"><span>Go to GymLogger X<i>1-01</i></span><svg class="ar" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></a>
+  <a class="asb asb--m" href="#" rel="noopener" aria-label="Download GymLogger X on the App Store"><svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/><path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/><text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text><text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text></svg></a>
+</div>
+</details><details class="m-bin">
+ <summary class="m-row">
+  <span class="box" style="--g:#D6A57C;width:56px;height:56px"><span class="ico" style="width:46px;height:46px"><img src="assets/observa/icon.png" alt="" width="46" height="46"></span></span>
+  <span class="who"><span class="nl"><span class="code">1-02</span><a class="name" href="/apps/observa/">Observa</a><span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></span><span class="job">Sleep, energy & recovery insights.</span></span>
+  <span class="price"><em>iPhone · iPad</em> · Free — Pro from $2.99/mo</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0 · <b>ACCT</b> none</span>
+ </summary>
+</details><details class="m-bin">
+ <summary class="m-row">
+  <span class="box" style="--g:#C79A45;width:56px;height:56px"><span class="ico" style="width:46px;height:46px"><img src="assets/aftershift/icon.png" alt="" width="46" height="46"></span></span>
+  <span class="who"><span class="nl"><span class="code">1-03</span><a class="name" href="/apps/aftershift/">AfterShift</a><span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></span><span class="job">The shift-worker sleep app where naps count as real recovery.</span></span>
+  <span class="price"><em>iPhone</em> · Free — Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0 · <b>ACCT</b> none</span>
+ </summary>
+</details><details class="m-bin">
+ <summary class="m-row">
+  <span class="box" style="--g:#6F88B3;width:56px;height:56px"><span class="ico" style="width:46px;height:46px"><img src="assets/liftlog/icon.png" alt="" width="46" height="46"></span></span>
+  <span class="who"><span class="nl"><span class="code">1-04</span><a class="name" href="/apps/liftlog/">LiftLog</a><span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></span><span class="job">The lift log that feels like equipment.</span></span>
+  <span class="price"><em>iPhone</em> · Free 7-day trial — then $9.99–$39.99 (pay what you can, one-time)</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0 · <b>ACCT</b> none</span>
+ </summary>
+</details><details class="m-bin">
+ <summary class="m-row">
+  <span class="box" style="--g:#5A4330;width:56px;height:56px"><span class="ico" style="width:46px;height:46px"><img src="assets/pawza/icon.png" alt="" width="46" height="46"></span></span>
+  <span class="who"><span class="nl"><span class="code">1-05</span><a class="name" href="/apps/pawza/">Pawza</a><span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></span><span class="job">Your pet’s whole life, in one place.</span></span>
+  <span class="price"><em>iPhone · iPad</em> · Free — Pawza Pro from $2.99/mo</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 1 · <b>ACCT</b> none</span>
+ </summary>
+</details></div>
+ <div class="beam"></div>
+</section>
+  <section class="m-aisle" id="m-aisle-2">
+ <header class="m-sign"><span class="num">2</span><h2 class="aname">Days & plans</h2><p class="alead">Daily planning and life-event countdowns that stay on your device.</p></header>
+ <div class="beam"></div>
+ <div class="m-bins"><details class="m-bin">
+ <summary class="m-row">
+  <span class="box" style="--g:#3F6FC5;width:56px;height:56px"><span class="ico" style="width:46px;height:46px"><img src="assets/taskful-day/icon.png" alt="" width="46" height="46"></span></span>
+  <span class="who"><span class="nl"><span class="code">2-01</span><a class="name" href="/apps/taskful-day/">Taskful Day</a><span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></span><span class="job">Plan the day. Finish the day — calmly. Now on Mac.</span></span>
+  <span class="price"><em>iPhone · iPad · Mac · Apple Watch</em> · Free — Pro from $2.99/mo</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0 · <b>ACCT</b> none</span>
+ </summary>
+</details><details class="m-bin">
+ <summary class="m-row">
+  <span class="box" style="--g:#D9655E;width:56px;height:56px"><span class="ico" style="width:46px;height:46px"><img src="assets/soon/icon.png" alt="" width="46" height="46"></span></span>
+  <span class="who"><span class="nl"><span class="code">2-02</span><a class="name" href="/apps/soon/">Soon.</a><span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></span><span class="job">Countdowns worth waiting for.</span></span>
+  <span class="price"><em>iPhone</em> · Free — Premium from $1.99/mo</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0 · <b>ACCT</b> none</span>
+ </summary>
+</details><details class="m-bin">
+ <summary class="m-row">
+  <span class="box" style="--g:#7FA36B;width:56px;height:56px"><span class="ico" style="width:46px;height:46px"><img src="assets/earnlock/icon.png" alt="" width="46" height="46"></span></span>
+  <span class="who"><span class="nl"><span class="code">2-03</span><a class="name" href="/apps/earnlock/">EarnLock</a><span class="pickbtn">Pick <svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></span><span class="job">Earn your screen time. Move, then scroll.</span></span>
+  <span class="price"><em>iPhone · Apple Watch</em> · Free — Premium from $1.99/mo or $19.99 lifetime</span>
+  <span class="decl"><b>TRK</b> 0 · <b>SDK</b> 0 · <b>ACCT</b> none</span>
+ </summary>
+</details></div>
+ <div class="beam"></div>
+</section>
+ </div>
+</div>

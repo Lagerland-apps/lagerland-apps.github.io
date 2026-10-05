@@ -1,0 +1,138 @@
+[
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "aftershift (vs earnlock)",
+  "style": "c",
+  "severity": "major",
+  "issue": "Follow the Line and earnlock-b 'The Junction Post' share a world and a display face within the same body trio. The world is a wayfinding route walked via hung or posted sign blades with arrow pictograms to a destination. The face is Signika, argued in both cards as 'the wayfinding face'.",
+  "fix": "Keep wayfinding and Signika on earnlock-b, since walk-to-unlock is literally a route and it is EarnLock's #1. Replace aftershift-c with aftershift candidate #6, the sleep diary / double-plotted actogram (instrument/data graphic). One 24-hour row per day carries 'scored against the next shift' directly. Draw it as a plotted raster of sleep bars, not a ruled table, so it stays apart from aftershift-b's rota. Candidate #2, the blackout bedroom at noon, is the alternative if a second dark scene is wanted.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "earnlock (vs shogiful, soon)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Exact Steps Only shares Dela Gothic One (display) with shogiful-b. Its amber Doto dot-matrix numerals on black duplicate soon-c's countdown board (#FFB23F vs #FFB21E, both Doto 700), and Doto then sits in three surfaces. Its 'INSERT 2,026 STEPS' credit display is the same object as earnlock-c's giant remaining-steps count, so a and c lead with one move. Its own risk line also calls the machine a hero-only device with plain panels below, which makes it a hero skin.",
+  "fix": "Dela Gothic One goes to shogiful-b, whose subject is Japanese. Set the marquee in Mochiy Pop One, a Japanese sticker/marquee gothic unused elsewhere. Make all price lamps lighting together the one move, and shrink the credit display to a small red 7-segment strip, as on real machines. That drops Doto here and leaves it on chessful-a and soon-c. Below the hero, keep the page on machine faces (side-panel plates, the audit printout, the pickup bin) instead of plain set panels.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "earnlock, soon",
+  "style": "c, c",
+  "severity": "major",
+  "issue": "Both lead with the hero-metric template inside an instrument. earnlock-c sets '3,412' at 232px with a small 'STEPS / UNTIL UNLOCK' label and a right-hand column of three stat rows (steps · Free / min · Premium / kcal · Premium). soon-c sets 'T-30' at 240px over a task line and a row of three labelled status lamps.",
+  "fix": "earnlock-c keeps the single count. MODE cycles steps → minutes → kcal in that same segment field, the fixed LCD icon segments act as its label, and the three-row stat column leaves the first viewport. soon-c drops the status-lamp row from the hero: the board shows one T-time and its task, and the EARLIER/LATER keys are its only furniture.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "earnlock, tare",
+  "style": "a, b",
+  "severity": "minor",
+  "issue": "Two non-Japanese apps import Japanese worlds and faces on top of Shogiful's three. earnlock-a is a Japanese vending machine set in M PLUS Rounded with a Japanese marquee gothic. tare-b is a Nikoli puzzle book set in Zen Maru, Zen Kaku and Klee One.",
+  "fix": "Each is fine on its own, since Nikoli is Tare's #1 and the home of sudoku players. If tare-b is chosen, do not also choose earnlock-a. No face used by Shogiful should reappear in either.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "chessful (vs earnlock)",
+  "style": "a",
+  "severity": "minor",
+  "issue": "The Sensory Board's recessed grey-green LCD window (#A7B29A) with dot-matrix moves is the same reflective-LCD material as earnlock-c's whole-page LCD (#C5CDB3).",
+  "fix": "Use a small red LED readout, as on the original 1977 Chess Challenger, instead of a reflective LCD, so the LCD material belongs to earnlock-c.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "earnlock",
+  "style": "c",
+  "severity": "major",
+  "issue": "The hero reading breaks on a phone. DSEG7 Classic has no comma: a fontTools check of the latin 700 file finds 69 glyphs, with ',', '$', '·', '?', '%' and '+' missing. So '3,412' and the ghost '88,888' fall back to Hanken in the middle of the number. At 104px the five-digit ghost is 424px wide, against about 350px of LCD inside a 390px screen (6px rims and 14px padding each side), so the hero scrolls sideways. The badge panel also lands at about y700 to 800.",
+  "fix": "Set the reading at font-size: min(104px, 21.5vw), since five DSEG7 digits measure 4.08em. Print LCD counts without a thousands separator ('3412', as real pedometers do), put the comma-formatted value in a visually hidden span, and mark the ghost aria-hidden. Move the button panel with badge and price directly under 'STEPS UNTIL UNLOCK' and the MODE key below it, so the badge sits at about y480 to 560.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "earnlock",
+  "style": "c",
+  "severity": "major",
+  "issue": "Palette collision: the shell #2443B8 belongs to the cobalt cluster (see chessful-c), and the colour has no source in EarnLock, whose icon is a black squircle with a sage ring.",
+  "fix": "Mould the shell in the icon's black #17191A (silkscreen #F4F3EE on it is 15.9:1) and keep the sage MODE key: the icon's own pair. The LCD stays the light page ground, so the result doesn't become near-black plus neon.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "earnlock",
+  "style": "b",
+  "severity": "major",
+  "issue": "Shared display face: Signika is aftershift-c's whole system. Both worlds are blade-sign wayfinding, so the shared face makes them read as one.",
+  "fix": "Keep Signika on aftershift-c. Letter earnlock-b's blades in Hind 600/700 (Frutiger-model, about 32 KB); Swiss trail blades are lettered in ASTRA-Frutiger. Keep Fira Sans for the guidebook text. Don't move the blades to Fira, because Fira Sans Extra Condensed is xiangqiful-b's display.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "earnlock",
+  "style": "a",
+  "severity": "major",
+  "issue": "Monoculture: Doto appears on three surfaces (chessful-a utility, earnlock-a utility, soon-c display).",
+  "fix": "Keep Doto on chessful-a (a dot-matrix LCD that needs letters) and soon-c (a lamp grid). Set earnlock-a's credit display in DSEG14 Classic 700: a 14-segment alphanumeric LED face, 6 KB, with a comma and A to Z, so 'INSERT 2,026 STEPS' renders in one face and reads as a vending-machine display.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "earnlock",
+  "style": "b",
+  "severity": "major",
+  "issue": "The Prices blade marks Yearly $9.99/yr 'most walkers', an invented claim about how users buy. The front matter gives Yearly only highlight: true. The only label it has is on Lifetime ('Best value · cheapest lifetime among screen-time blockers').",
+  "fix": "Mark the highlighted Yearly row with the blade's arrival-green tip and no popularity text, or with its own summary ('7-day free trial'). Keep Lifetime's front-matter label verbatim.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "earnlock",
+  "style": "all",
+  "severity": "minor",
+  "issue": "All three cards set 'features (9)', but the front matter has 10. The missing one is likely '39 locales, including 2 RTL'.",
+  "fix": "Loop page.features in the directory, checklist or function table.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "earnlock",
+  "style": "a, c",
+  "severity": "minor",
+  "issue": "The hero trust stickers (a) and silkscreen legends (c) state '0 third-party SDKs · No account · No server' without a transparency link. Privacy must be shown, not claimed.",
+  "fix": "Make the sticker or legend row itself a link to /transparency/#earnlock (a sticker that reads 'see the record' is enough).",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "earnlock",
+  "style": "all",
+  "severity": "minor",
+  "issue": "/apps/earnlock/terms/ exists but is not covered by any read-mode variant, which list privacy, support and the 12 alternatives pages.",
+  "fix": "Give the terms page the same read-mode frame as privacy, with its seo block.",
+  "lens": "truth-contract"
+ }
+]

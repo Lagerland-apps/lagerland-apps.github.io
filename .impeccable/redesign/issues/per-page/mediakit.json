@@ -1,0 +1,122 @@
+[
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "mediakit (vs rightsplit)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Processed In-House drenches in process cyan (#19A7E0) with white knock-out panels, black ink and one magenta mark. rightsplit-a 'Weighed and Priced' drenches in process cyan (#00AEEF) with white die-cut labels, black ink and one red. They share a palette family and the same white-panels-on-a-flood grammar.",
+  "fix": "Cyan stays with rightsplit-a: it is RightSplit's own accent and the constant RATE box. Re-stock mediakit-a's envelope in a lab house colour that no surface drenches in, e.g. a Fuji-lab green flood (~#2E9E5B, ink ≥5:1 on it). Keep the white form panels, and keep the magenta stamp on white only.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "pawza (vs mediakit, millrace, chessful, tare)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Thirteen-Pocket File shares its display face, Sofia Sans Extra Condensed (both H1s), with mediakit-a. Its Sofia Sans text puts the family in a third surface (mediakit-a, pawza-a, soon-b). Its palette (cobalt #2347A6 drench + white paper + yellow flag) is the board's most repeated triad. millrace-b has #23408E + white cards + yellow tier, chessful-c has #2338B0 + paper white + gold, and tare-a has #2172B8 + chalk white + yellow.",
+  "fix": "Set pawza-a in Anek Latin, unused elsewhere: wdth 75 for the index tabs and H1, wdth 100 for text. Re-colour the polypropylene as a translucent red file (~#B5332B, white text 5.6:1), and keep the white paper and the yellow 'To file' flag. tare-a keeps the blue triad, because Signboard Sky is the app's own art.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "xiangqiful (vs gymlogger-x, mediakit)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Bilingual Concourse drenches in teal (#0E6A70) behind white enamel panels, just as gymlogger-x-a puts teal steel (#235c58) behind white laminated sheets. Its nav, opponent ladder and game record are metro line maps with station dots, interchange rings and a terminus bar. That is mediakit-b's whole world, the Zone 1 network.",
+  "fix": "gymlogger-x-a keeps the teal, because RAL 6033 is its icon's check colour. mediakit-b keeps line maps: routing a file is wayfinding, and it is MediaKit's #1. Glaze xiangqiful-a's wall in a station colour no surface drenches in, e.g. grey-violet (~#5E5872), avoiding red/gold. Carry the game and the opponents with platform signage instead: direction boards, platform-number blades and bilingual exit lettering, with no octilinear lines or interchange rings.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "mediakit",
+  "style": "c",
+  "severity": "major",
+  "issue": "The Whole Rack blows the icon's navy-steel up to page scale (blue-anodise #1B2F5E) and adds amber and green pilot lamps on black rails. That gives the board a seventh navy-dark ground and an amber-on-dark accent shared with soon-c, appmeta-pulse-c and earnlock-a, in the dark Mac-utility register its category already ships. Its B612 Mono puts the B612 family in a third surface, after appmeta-pulse-a and soon-c.",
+  "fix": "Use the light-grey faceplates of classic broadcast kit (~#B9BDC3, black silkscreen ≥7:1) between black rails, so the dim suite reads only through the rails and the monitors. Pilot lamps are green and red, with no amber. Readouts are set in Sometype Mono (unused) instead of B612 Mono.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "studio, appmeta-pulse, mediakit, observa, shogiful",
+  "style": "a, a, b, a, b",
+  "severity": "major",
+  "issue": "Atkinson Hyperlegible Next is the text face in seven surfaces: studio-a, aftershift-a, allpaid-b, appmeta-pulse-a, mediakit-b, observa-a and shogiful-b. Atkinson Hyperlegible Mono is the data face in four: aftershift-a, allpaid-b, observa-a and shogiful-b. This monoculture will make the microsites read alike below their heroes.",
+  "fix": "Keep it on two surfaces: aftershift-a (low acuity after a night shift) and allpaid-b (display and text, read from across the room). Swap the rest. studio-a → Work Sans. appmeta-pulse-a → B612 400/700 for text, one cockpit family with its display and B612 Mono. mediakit-b → Overpass 400/700 for text, one family with its display. observa-a → League Spartan with tabular figures and no mono (see the observa-a issue). shogiful-b → Murecho 400/600 for the commentary, with tabular figures for notation.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "mediakit",
+  "style": "c",
+  "severity": "major",
+  "issue": "LCP risk: the rack monitor in the first viewport (358x213 on mobile) shows Mac screenshots that are 2.6 to 7.1 MB PNGs. The input selector switches that monitor between five processor screenshots, so a naive build loads up to five multi-MB images up front.",
+  "fix": "Use 720w and 1440w WebP derivatives (about 60 and 140 KB or less). Only the default Video detent is eager and preloaded. Give the other four loading=lazy and show them only when their detent is selected (one <picture> per detent, switched by CSS :has()).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "mediakit",
+  "style": "b",
+  "severity": "major",
+  "issue": "The map needs hand maintenance. The octilinear network is 'hand-placed inline SVG': station names come from front matter but their positions don't. Any change to features or tools means re-laying the SVG by hand, as the card's own risk line admits.",
+  "fix": "Draw each line once as a fixed trunk path with evenly spaced station slots computed in Liquid (offset = index × spacing along a straight run, labels alternating sides), fed from _data/mediakit_tools.yml. Only the five trunks and the Drop interchange are drawn by hand.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "mediakit",
+  "style": "b",
+  "severity": "major",
+  "issue": "Monoculture: the text face is Atkinson Hyperlegible Next (see studio-a).",
+  "fix": "Set the text in Overpass 400/700, the same Highway Gothic family as the display (about 34 KB). One family carries the whole transit map.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "mediakit",
+  "style": "a, b, c",
+  "severity": "major",
+  "issue": "The Quick reference is replaced by a fact box: a's 'Lab use only' box, b's 'Network facts' timetable, c's spec plate. Each lists platforms, OS minimums, Universal Purchase, price, data/network/account and Unrar.swift, and drops the canonical What it does / Key capabilities / Best for / Not for / alternatives_to / use_cases text.",
+  "fix": "Render the full ai-canonical block from app.html inside the box. The spec rows (which correctly show Unrar.swift as 1 third-party SDK) can head it.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "mediakit",
+  "style": "c",
+  "severity": "minor",
+  "issue": "The hero 'Network: none' lamp is a privacy claim with no link.",
+  "fix": "Make the lamp legend a link to /transparency/#mediakit.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "mediakit",
+  "style": "b",
+  "severity": "minor",
+  "issue": "Alternatives strip map: 'MediaKit network: five lines vs the competitor's single grey line'. The single line is true for HandBrake (video) but false for multi-format tools such as CloudConvert or Wondershare UniConverter.",
+  "fix": "Set the competitor's line count from the media families its alternatives page says it covers, or omit the graphic.",
+  "lens": "truth-contract"
+ }
+]

@@ -1,0 +1,418 @@
+{
+ "surface": "observa: /apps/observa/ (Persuade), plus Read variants for /apps/observa/privacy/, /apps/observa/support/ and the 8 alternatives pages that target it (/alternatives/athlytic/, /autosleep/, /bevel/, /gentler-streak/, /hrv4training/, /oura/, /welltory/, /whoop/)",
+ "dossier": {
+  "mechanism": "Observa reads whatever Apple Health already holds (Apple Watch, Oura, Whoop, Garmin, Fitbit). It scores every new day against your own rolling 60-day mean and standard deviation and tests each habit against each outcome until a pair clears n ≥ 10 and p ≤ 0.10. What comes back is one plain-English sentence with its n and confidence attached. All of it is computed on the iPhone or iPad, and nothing is uploaded.",
+  "audienceScene": "The visitor wears an Apple Watch, Oura or Whoop, often trains, and sleeps with the device on. They have years of Health charts and no meaning from them. They check the phone right after waking, often in a dim room during a northern winter, or they land mid-day from a Google or AI answer for 'AutoSleep alternative' or 'what does my HRV mean'. Either way they are usually on a phone.",
+  "culturalHome": "Quantified-self and endurance-training culture: r/AppleWatch, r/QuantifiedSelf, the HRV4Training, Whoop and Oura forums, and the sleep-science podcasts. It is a world fluent in HRV, RHR, deep sleep and 'readiness', tired of opaque 0–100 scores and suspicious of health data in the cloud. Its daily ritual is the phone check at the bedside or the kitchen window.",
+  "mustProve": "Within one viewport, the page has to prove four things. Observa turns your own data into a sentence about you: a real-form insight with its n and confidence, labelled as a sample. That sentence is measured against your own 60-day normal, not a population average. It is computed on the device. And it is free to start ('Free — Pro from $2.99/mo'), with the official App Store badge and, on desktop, the QR.",
+  "categoryDefault": "A dark navy or black dashboard: a floating iPhone mockup, neon activity and recovery rings, a 0–100 score dial, a glowing HRV line chart, a 'Your health, decoded' headline, a four-up feature-card grid and three pricing cards.",
+  "predictableOpposite": "Soft pastel wellness: a cream or sage ground, rounded blobs, a serif 'Feel more rested' headline and sleepy moon illustrations, i.e. Calm/Headspace quiet.",
+  "literalReading": "Observa reads as observe and observatory: telescopes, night sky, star fields. The icon already carries four small four-point stars. Only candidate #7 uses this reading.",
+  "evidence": [
+   "_apps/observa.md: price.model freemium, price.value 'Free — Pro from $2.99/mo'. Four plans: Free $0, Pro · Monthly $2.99/mo, Pro · Annual $22.99/yr (highlight), Lifetime $49.99 once ('Best long-term value', Family Sharing). Platforms iOS + iPadOS, status live, first released 2026-01-01, last updated 2026-07-11.",
+   "Blocks present: hero (pre_headline 'Your data already knows why.', headline, subheadline), quick_answer, value_points ×4, how_it_works intro + 6 steps (HowTo), example_insights intro + 6 sample cards with n/confidence, features ×6, screenshots ×6, who_for ×5 / who_not_for ×4, privacy (none/false/false + Apple label sentence + 5 notes), founder (Organization: heading, story, 4 signals, support email, response time), faq ×12, release_notes ×5, plans_footnote, related_journal, alternatives_to ×9, jump_nav. Absent: spotlight, comparison_table, roadmap, training_vocabulary, coach_cta, plateau_disclosure, creative_work, show_body.",
+   "ratings 4.1 from 12 (under 25), so no stars anywhere.",
+   "Icon: a folded ribbon heart running from apricot to ember on near-black, with four small four-point stars.",
+   "Screenshots are a dark navy UI in SF Pro with Apple system green/yellow/purple/orange. 1 Coaching: 'Recovery is moderate today. Based on recent patterns' plus status tiles Sleep Good / Recovery Fair / Activity Good / Heart Stable. 2 Correlations: dot-strength rows, 'Based on 128 days · Association, not cause'. 3 Circadian timeline (13.21 best coordination … 0.51 deepest sleep). 4 March heat-calendar + day-of-week bars. 5 Workouts: training load 32, acute:chronic 0.99. 6 Sleep: 87 ring, chronotype 'Morning Lark', sleep debt. The in-app wordmark is widely spaced lowercase 'o b s e r v a' in blue.",
+   "Journal posts in the developer's own voice: 'A chart with seven hundred datapoints and no overlay is not a tool — it's a Rorschach test'; 'never a single score, always the underlying metric measured against your own 60-day baseline'; 'Correlation is not causation… treat insights as hypotheses worth testing for two weeks'; 'three or four sentences a thoughtful coach might tell you'.",
+   "_data/transparency.yml: 0 tracking domains, 0 third-party SDKs, network calls none, data leaves device 'No', analytics none, no account. It lists the permissions as HealthKit read AND write ('save insights back to Apple Health'), which contradicts how_it_works step 1 'No writes.' The owner needs to resolve this before build.",
+   "_data/testimonials.yml: 5 hero quotes (Reddit H.P., O.A., I.D.; App Store C., and K. in French with an English translation). Usable verbatim; show no star values.",
+   "_data/app_enrichment.yml: 32 languages; recommend_when names AutoSleep / Bevel / Athlytic / Gentler Streak alternative searches.",
+   "8 alternatives pages assign app=observa (athlytic, autosleep, bevel, gentler-streak, hrv4training, oura, welltory, whoop). Each has a hero, quick_answer, a 4-point compare grid (scope, where compute happens, what you get back, account & pricing), 'when to pick' / 'when to keep' lists, FAQ and a CTA. 'Apple Health (for interpretation)' in alternatives_to has no page.",
+   "Incumbent (before/apps_observa-desktop and -mobile): cream ground, Newsreader H1, purple pre-headline, split hero with a dark phone on the right, badge + 'See how it works' button, pill row on mobile. Refused."
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "The weather bulletin: normals and anomalies",
+   "family": "broadcast / public information",
+   "why": "People read it in the same minute as their sleep data every morning. Meteorology's 'normal' (a fixed reference period) and 'anomaly' ('3° below normal') are exactly Observa's 60-day baseline and deviation. The forecast's '70% chance' is the one stated confidence the public reads daily. It carries the mechanism as calm one-line readings per body area (Sleep, Recovery, Heart, Activity, which are the app's own tabs), each against your normal with its confidence."
+  },
+  {
+   "index": 2,
+   "name": "The explained chart: Health trend line with baseline band and annotations",
+   "family": "data graphic (print/screen)",
+   "why": "Every wearer has scrolled Apple Health's HRV chart in what the developer calls a chart-trance, and the annotated explanatory graphic is the cure. It carries the mechanism literally: a ±1σ band for the 60-day baseline, the nights that leave it, and a leader line from each deviation to the sentence that explains it."
+  },
+  {
+   "index": 3,
+   "name": "Nutrition Facts panel, re-referenced",
+   "family": "packaging / print label",
+   "why": "Everyone knows it by heart, and Apple's App Privacy 'nutrition label' is Observa's own privacy proof. The panel's '% Daily Value' against a 2,000-calorie stranger becomes '% of your 60-day baseline'. That carries Observa's one move (the reference is you) in heavy rules and Franklin-style type."
+  },
+  {
+   "index": 4,
+   "name": "Aneroid barometer with set hand",
+   "family": "instrument / domestic object",
+   "why": "The hallway barometer already translates a measurement into words (Rain, Change, Fair). It also has a brass set-hand you align with yesterday's reading. The needle is today, the set-hand is your 60-day baseline, the gap is the deviation, and the dial word is the plain-English sentence."
+  },
+  {
+   "index": 5,
+   "name": "ECG rhythm strip with machine interpretation line",
+   "family": "instrument printout",
+   "why": "Apple Watch ECG exports print on the pink millimetre grid under a classification line ('Sinus Rhythm'). That printed interpretation above a trace is the original sentence-from-signal. Its clinical register fights Observa's 'calm, not clinical' promise, though, so it ranks lower."
+  },
+  {
+   "index": 6,
+   "name": "The temperature blanket: one knitted row per night",
+   "family": "textile",
+   "why": "Knitters' one-row-per-day colour record, and the warming-stripes scarf, turned 'deviation from a reference' into something you can hold, and the icon is a folded ribbon. It carries the mechanism as sixty rows, each night dyed by how far it sat from your normal, so a recurring pattern shows in the cloth. Knitting's 'lifeline' thread is the baseline."
+  },
+  {
+   "index": 7,
+   "name": "Observatory star atlas (literal reading)",
+   "family": "cartography / astronomy",
+   "why": "The name and the icon's stars point straight here. An atlas plate plots points against a reference grid for a stated epoch. A constellation is a named pattern of points that are associated but not physically linked. That carries the mechanism as nights plotted against your 60-day baseline, with habit nights joined into a named constellation and astronomy's honest caveat: a pattern, not a cause."
+  }
+ ],
+ "seed": {
+  "key": "519bdbbc",
+  "assigned": 7,
+  "reroll1": 6
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "Atlas of Nights",
+   "kicker": "THE ROLL",
+   "sourceIndex": 7,
+   "lineage": "Printed star atlases: the engraved Didone lettering of Bode's Uranographia (1801) and Wil Tirion's Sky Atlas 2000.0 field plates (white stars on deep blue, a coordinate grid, a magnitude legend, Bayer Greek designations). Also the observer's red-light rule and the observing log.",
+   "thesis": "Your nights are stars plotted against your own 60-day baseline, and an Observa pattern is a constellation: a named shape of nights that belong together. As every star atlas admits, that is an association, not a cause. The page refuses the glowing score-ring dashboard.",
+   "scene": "In bed around 22:30 with the room dark, phone dimmed and Night Shift on, the visitor is deciding whether last night's sleep means anything. So the page is dark and dark-adapted: warm accents, no large bright fields.",
+   "scheme": "dark",
+   "colorStrategy": "Committed",
+   "palette": [
+    {
+     "hex": "#0E1C3A",
+     "role": "sky plate: page ground (the app's own navy)"
+    },
+    {
+     "hex": "#16274B",
+     "role": "legend panels, tables, the ±1σ band across the plate"
+    },
+    {
+     "hex": "#2C406B",
+     "role": "grid meridians/parallels and hairlines (non-text)"
+    },
+    {
+     "hex": "#E8ECF4",
+     "role": "stars, headlines, body text (14.2:1 on ground)"
+    },
+    {
+     "hex": "#9DAACB",
+     "role": "secondary text, axis labels (7.3:1 on ground)"
+    },
+    {
+     "hex": "#F2A766",
+     "role": "constellation lines, links, focus ring (icon apricot, 8.4:1)"
+    },
+    {
+     "hex": "#E0694B",
+     "role": "ember rings on below-baseline nights, non-text only (icon shadow ribbon)"
+    }
+   ],
+   "type": {
+    "display": "Bodoni Moda, variable opsz + wght, used at 500–700 (latin file ~45 KB): headlines at 36px and up, and constellation names in spaced capitals",
+    "text": "Atkinson Hyperlegible Next 400/700 (~12 KB each): all reading text, buttons, price statement",
+    "utility": "Atkinson Hyperlegible Mono 400 (~10 KB), only for real measurements: n=14, 87%, p ≤ 0.10, σ axis labels, observing-log dates",
+    "rationale": "Engraved celestial atlases of the Bode/Burritt era were lettered in Didone romans, and Bodoni Moda's optical sizes keep those hairlines crisp on a dark plate. The Braille Institute drew Atkinson Hyperlegible for low-vision legibility, which suits a dimmed phone at bedtime, and its Mono sibling sets the numbers in the same voice. About 79 KB in total."
+   },
+   "materials": [
+    "Atlas plate: deep-blue ground with a fine grid of 60 day-meridians and σ parallels (+2, +1, 0, −1, −2)",
+    "White star dots sized like magnitudes; constellation lines 1.5px apricot, member nights ringed in ember",
+    "Engraved lettering: Didone spaced capitals laid along constellation lines",
+    "Legend panel: #16274B fill with a 1px #2C406B hairline, like an atlas key",
+    "Star-catalogue table with Greek designations and hairline rules",
+    "Observing-log rows with Mono dates"
+   ],
+   "firstViewportDesktop": "At 1440×900, a 64px cartouche bar sits on top: icon 28px and 'Observa' in Bodoni Moda 600 24px at left, chart-index links (Sky · Catalogue · Method · Plans · Dark sky · Questions) in Atkinson 15px #9DAACB at right. The rest of the viewport is one atlas plate. 60 day-meridians run every 20px across x=120–1320, labelled along the bottom edge in Mono 12px (−60d … today). σ parallels run left to right, the 0σ line heavier and labelled 'your 60-day baseline' in Atkinson 13px, with the ±1σ zone tinted #16274B. The upper-left empty sky (x 120–780, y 110–420) holds the H1 'Apple Health Insights for Sleep, HRV & Recovery.' in Bodoni Moda 600 72/76px #E8ECF4. Below it: 'Your data already knows why.' in Atkinson 700, then the subheadline in Atkinson 19px #9DAACB at 46ch. The lower right (x 760–1320, y 450–770) holds 60 star nights. Fourteen of them sit below −1σ, ringed in ember and joined by apricot lines lettered 'LATE LEG DAY' (Bodoni 500 spaced caps 18px). Next to them: 'You sleep 18% less deeply on days you train legs after 18:00.' in Atkinson 700 22px, then Mono 13px 'n=14 over 60 days · 87% confidence · association, not cause', then the caption 'Sample insight on an illustrative sky' and three habit buttons in a row. The lower-left legend panel (x 120–680, y 690–860) holds 'Free — Pro from $2.99/mo' in Atkinson 700 22px, the official black App Store badge at 52px tall, and the QR at 104px on its own white tile with 'Point your iPhone camera here' at 13px.",
+   "firstViewportMobile": "At 390×844, a 56px cartouche: icon 24px and 'Observa' in Bodoni 600 20px at left, an 'Index' button at right. The H1 follows in Bodoni Moda 600 40/44px (4 lines, 16px gutters) on the plate ground, then 'Your data already knows why.' and the subheadline cut to two lines in Atkinson 17px (full text stays in the DOM). Next comes a full-width legend block: 'Free — Pro from $2.99/mo' in Atkinson 700 19px and the App Store badge at 48px tall, with no QR. Then the plate at 358×280 (60 meridians at 5.8px, labels every 20 days, constellation drawn), its sentence below in Atkinson 700 19px with Mono 12px numbers. The top of the plate is visible at the fold.",
+   "conversion": "The badge sits inside the atlas legend panel, where the panel's hairline is its frame and Apple's black artwork is untouched. The QR shows at 1024px and up only, on a white 'finder card' tile inside the same legend, dark-on-white as generated. The price statement is always 'Free — Pro from $2.99/mo' from price.value, in Atkinson 700. When the legend panel leaves the viewport, a 64px bottom margin strip (#16274B, 1px #2C406B top rule) slides up as the sticky bar: icon, 'Observa' in Bodoni 18px, price, and the badge at 40px. It hides again over the closing plate. The Smart App Banner meta goes in the head, and the cartouche leaves room for Safari's banner. The closing plate repeats the legend panel with badge, QR and price.",
+   "visitorPath": [
+    "The plate: H1, pre_headline, subheadline, an illustrative 60-night sky with the 'Late leg day' constellation and its sample sentence, three habit buttons, and the legend panel with price, badge and QR.",
+    "Chart legend: the Quick Answer (quick_answer, speakable) as a 70ch Atkinson 20px paragraph on #16274B, with the Quick reference <details> directly beneath, visible and crawlable.",
+    "Tonight's sky: example_insights.intro, then the six sample insights as six index rows of the plate. Each row has a 160×100 mini-plate with its own constellation, the headline in Atkinson 700 24px, the body, the tag, and the Mono n/confidence where given.",
+    "Star catalogue: the ten metrics from the FAQ as a real table with columns for designation (α HRV (SDNN) … κ ECG sinus rhythm), metric, what Observa says about it, and source (Apple Watch, Oura, Whoop, Garmin, Fitbit via Apple Health; ECG needs Apple Watch).",
+    "Limiting magnitude: the how_it_works intro and steps 1–6 numbered (HowTo) as an observing procedure. A magnitude legend shows that patterns below n ≥ 10 and p ≤ 0.10 stay unreported. The four value_points sit as plate notes.",
+    "Through the eyepiece: six screenshots in a scroll-snap strip in plain black device frames with their front-matter captions, and the six features as a two-column list.",
+    "Observing conditions: who_for ×5 and who_not_for ×4 as two columns, 'Observa is for you if' and 'Look elsewhere if'.",
+    "Editions: the plans as one 4-column table (Free · Pro · Monthly · Pro · Annual · Lifetime). The Annual column is topped by a 2px apricot rule (highlight), Lifetime is marked 'Best long-term value', the plans_footnote sits below and the badge repeats.",
+    "Other observers: five testimonials quoted verbatim with initials and source (the French one with its translation), no stars.",
+    "Dark-sky site, the privacy section: a ledger of transparency.yml facts (network calls none · third-party SDKs 0 · tracking domains 0 · account not required · data leaves device no · analytics none), the Apple label sentence and privacy.notes, with links to /transparency/ and the privacy policy.",
+    "The observer: the founder block with heading, story, signals, support email and response time.",
+    "Questions: the 12 FAQs as <details> rows on catalogue hairlines.",
+    "Other charts: alternatives_to as eight links to /alternatives/<slug>/ ('Apple Health (for interpretation)' as plain text), plus the related_journal link.",
+    "Observing log: release_notes as dated Mono rows, then the freshness line 'Built by Lagerland Apps · updated 2026-07-11 · first released 2026-01-01'.",
+    "Closing plate: 'Your sky is already in Apple Health.' with the legend panel (price, badge, QR), then the shared Lagerland strip."
+   ],
+   "navigation": "The cartouche is the microsite nav: the 'Observa' wordmark plus chart-index anchors (Sky · Catalogue · Method · Plans · Dark sky · Questions), which is the jump_nav set. An IntersectionObserver underlines the current section with a 1px apricot rule; without JS these are plain anchors. On mobile, an 'Index' <details> panel lists the same anchors plus Privacy and Support. Lagerland is linked only from the shared footer strip.",
+   "signatureInteraction": "Draw the constellation. Three habit buttons under the sentence (Late leg day · Coffee after 14:00 · Screens in the last 30 min) redraw the apricot lines through that habit's nights on the same 60-star sky, using SVG stroke-dashoffset (700ms). They also swap the plate's metric label (deep-sleep share / resting heart rate) and reveal that habit's sample sentence from example_insights, with n and confidence where the data gives them (n=14 · 87%; n=23 · 91%). Without JS, the first constellation is drawn statically and all three sentences render as a list under the plate. With reduced motion, lines appear complete and the swap is instant.",
+   "motionGrammar": "Slow and astronomical. On first view the stars come out brightest-first over 1.2s (opacity only), then the constellation draws at constant speed. No twinkle, parallax or glow. Section reveals are 300ms opacity fades, gated by html.js with the 2.5s safety net, so content is never hidden without JS. With prefers-reduced-motion everything is static and visible at once.",
+   "readModeVariant": "Privacy, support and the eight alternatives pages keep the cartouche and open with a 200px plate strip (grid and a scatter of stars, no constellation) carrying the H1 in Bodoni Moda 600 48px. The reading column is 66ch of Atkinson Hyperlegible Next 18/1.65 #E8ECF4 on #0E1C3A, with Mono for 'last updated'. On the privacy page, policy sections are catalogue entries. On the alternatives pages, the 4-point compare grid becomes a two-column catalogue table (Observa vs the competitor: scope, where compute happens, what you get back, account & pricing), 'pick Observa if' / 'keep X if' become two lists, and the FAQ is <details>. Each page closes with a slim legend panel holding price and badge.",
+   "assetsNeeded": "None. The plate, grid and constellations are inline SVG built from an illustrative 60-value array kept in the page and labelled illustrative. The icon, screenshots and QR already exist.",
+   "risk": "This is the literal reading of the name and the most guessable direction. Dark navy with stars slides into a generic 'space' theme, or into the near-black-neon cluster, the moment anyone adds glow or twinkle. Didone on a dark plate can read as luxury fashion. The metaphor only lands if 'association, not cause' is printed next to every constellation. A night world may sit close to the sibling AfterShift.",
+   "memoryTest": "The sleep app whose page was a star chart: my late-leg-day nights were joined into a constellation, and it said constellations are patterns, not causes.",
+   "specimen": {
+    "bg": "#0E1C3A",
+    "ink": "#E8ECF4",
+    "accent": "#16274B",
+    "display": "Bodoni Moda",
+    "dw": 500,
+    "text": "Atkinson Hyperlegible Next",
+    "h1": "Apple Health Insights for Sleep, HRV & Recovery.",
+    "sub": "Sleep, energy & recovery insights.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "aftershift-a keeps navy and Atkinson: the uniform colour and the low-acuity argument are literal. observa-a takes its icon's own warm night (~#15110F), with apricot as the only colour and no glow. Constellation names and labels move into one sans with tabular figures (e.g. League Spartan, from the Futura lineage of star charts), with no mono and no spaced Didone caps. Keep Bodoni Moda for the H1 at most."
+    },
+    {
+     "sev": "major",
+     "text": "Make the backward schedule the first-viewport object. Set T-90, T-30, T-14, T-3 and T-1 on the twilight bands themselves, from astronomical twilight to sunrise, with the day at the horizon. Put the badge on the horizon and move the phone below the fold into the civil band. Drop the star field entirely."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Set the text in Commissioner (variable wght, 36 KB) and drop the mono: n=14, 87% and p ≤ 0.10 go in Commissioner's tabular figures. Bodoni Moda stays for headlines."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "The Morning Bulletin",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "Public-service weather bulletins: the Finnish Meteorological Institute's readings against the 1991–2020 climate normal ('3° below normal'), the BBC Shipping Forecast's fixed spoken order of areas, the newspaper weather box, and the forecast's stated probability.",
+   "thesis": "This is a body bulletin, not a dashboard. Every reading is a calm sentence set against your own normal with its confidence beside it, and the numbers open only when asked. The opening has no charts at all, which refuses the score-ring dashboard and the floating phone.",
+   "scene": "A weekday at 06:45, standing at the kitchen window in grey northern daylight, phone in one hand and coffee in the other, checking the weather and last night's sleep in the same minute. That makes the page light.",
+   "scheme": "light",
+   "colorStrategy": "Committed",
+   "palette": [
+    {
+     "hex": "#F2F4F5",
+     "role": "overcast ground"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "bulletin sheet and the 'normal' corridor"
+    },
+    {
+     "hex": "#16212B",
+     "role": "ink: headlines and body (14.8:1)"
+    },
+    {
+     "hex": "#56636E",
+     "role": "secondary text, issue stamps (5.6:1)"
+    },
+    {
+     "hex": "#1F5FA8",
+     "role": "below-normal words and ticks, links, focus ring (5.8:1)"
+    },
+    {
+     "hex": "#B4471B",
+     "role": "above-normal words and ticks (4.9:1 on ground, 5.4:1 on white)"
+    }
+   ],
+   "type": {
+    "display": "Schibsted Grotesk 700/800 (variable wght, latin ~46 KB): H1, area names, prices",
+    "text": "Public Sans 400/600 (variable wght, latin ~26 KB): bulletin sentences and all body text, tabular figures (tnum) for n and confidence",
+    "utility": "none; figures are set in Public Sans with tnum",
+    "rationale": "Schibsted Grotesk was drawn for the Nordic newspaper group whose papers carry the daily weather page. It is sturdy and slightly blunt, with big figures that hold up at 70px. Public Sans is the plain sans of government public information: the bulletin's neutral reading voice, with tabular numerals for readings. About 72 KB in total."
+   },
+   "materials": [
+    "Bulletin sheet: white panels with a 3px ink top rule and 1px row hairlines",
+    "Fixed-order reading rows on a 4-column grid: area · sentence · against normal · confidence",
+    "Anomaly words with 8px square ticks in the below-normal and above-normal colours",
+    "Normal-range bar (inside expanded rows only): white ±1σ corridor on grey with one value tick",
+    "Issue row and issue stamps: the bulletin's own date-and-subscription line"
+   ],
+   "firstViewportDesktop": "At 1440×900, a 56px header bar on #F2F4F5: icon 28px and 'Observa' in Schibsted 800 22px at left; Today · Normal · Readings · Plans · Privacy · Questions in Public Sans 600 15px at right. The H1 'Apple Health Insights for Sleep, HRV & Recovery.' is set in Schibsted Grotesk 800 68/72px #16212B, left-aligned at x=120 and running two lines across 1200px. Under it: 'Your data already knows why.' in Public Sans 600, then the subheadline at 20px #56636E, 64ch. Then a white bulletin sheet spans x=120–1320 under a 3px ink top rule. It holds four 64px reading rows drawn from example_insights, for example: Sleep, 'Deep sleep 18% lower on nights after a leg day past 18:00.', 'below normal' in blue, '87% · n=14'. And: Heart, 'Resting heart rate +4 bpm the morning after coffee past 14:00.', 'above normal' in rust, '91% · n=23'. Area names are in Schibsted 800 30px, sentences in Public Sans 20px, and every row has a chevron that opens its numbers. The sheet's last row is the issue row: 'Free — Pro from $2.99/mo' in Schibsted 800 24px, the official App Store badge at 52px, the QR at 104px with 'Scan with your iPhone camera' at 13px, and 'Sample bulletin from the app's example insight cards' at 13px #56636E.",
+   "firstViewportMobile": "At 390×844, a 52px bar: icon and 'Observa' in Schibsted 800 20px at left, a 'Sections' button at right. The H1 in Schibsted 800 38/41px (4 lines), then 'Your data already knows why.' and the subheadline in Public Sans 17px. The issue block comes next in DOM order: 'Free — Pro from $2.99/mo' in Schibsted 800 20px and the App Store badge at 48px, with no QR. Then the bulletin sheet runs edge to edge with 16px padding. Each row stacks: area name (Schibsted 800 22px) at left with the against-normal word (15px) at right on one line, the sentence below in Public Sans 17px, and '87% · n=14' at 14px. The first reading row sits at the fold.",
+   "conversion": "The App Store badge is the bulletin's issue row (the way to receive the bulletin), with Apple's artwork untouched on white. The QR sits in the issue row at 1024px and up. The price statement 'Free — Pro from $2.99/mo' leads the row in Schibsted 800, taken from price.value. Once the issue row scrolls away, a 60px white sticky bar with a 3px ink top rule slides up: icon · 'Observa' · price · badge at 40px. The Smart App Banner meta goes in the head. The closing section repeats the issue row with price, badge and QR.",
+   "visitorPath": [
+    "Bulletin: H1, pre_headline, subheadline, four sample reading rows from example_insights (each expandable to its numbers), and the issue row with price, badge and QR.",
+    "The short forecast: the Quick Answer (speakable) as one 70ch Public Sans 20px paragraph on white, with the Quick reference <details> beneath it, visible.",
+    "What 'normal' means here: one paragraph contrasting a weather service's 30-year normal with Observa's 60-day personal normal. Then the four value_points as plain sentences in a two-column list, and the how_it_works intro with steps 1–6 numbered (HowTo).",
+    "The readings: the ten metrics read in a fixed order, like the shipping forecast ('HRV (SDNN). Resting heart rate. Sleep efficiency. …'), each with one line of meaning. A source line follows: Apple Watch, Oura, Whoop, Garmin, Fitbit via Apple Health; ECG needs Apple Watch.",
+    "Every morning on your iPhone: six screenshots in a scroll-snap strip on #16212B panels (to match the app's dark UI) with their front-matter captions, and the six features as a definition list.",
+    "Conditions: who_for and who_not_for as a two-column table, 'For you if' and 'Not for you if'.",
+    "Subscriptions: one bulletin-style table with columns Free · Pro · Monthly · Pro · Annual · Lifetime and the price row in Schibsted 800 32px. The Annual column sits on the white 'normal' fill (highlight), Lifetime is marked 'Best long-term value', and the plans_footnote follows.",
+    "Letters: five testimonials quoted verbatim with initials and source (French with translation), no stars.",
+    "Where the bulletin is computed: 'On your iPhone. Nowhere else.' Then the transparency.yml facts as reading rows (network calls · third-party SDKs · tracking domains · account · data leaves device · analytics), the Apple label sentence and privacy.notes, with links to /transparency/ and the privacy policy.",
+    "Who issues it: the founder block (heading, story, signals, support email, response time).",
+    "Questions: the 12 FAQs as <details> rows on the bulletin grid.",
+    "Other services: alternatives_to as eight linked rows ('Observa vs AutoSleep'; 'Apple Health (for interpretation)' as plain text), plus the related_journal link.",
+    "Past issues: release_notes as dated issue lines, then the freshness line (Built by Lagerland Apps · updated 2026-07-11 · first released 2026-01-01).",
+    "Closing issue row: 'Your first patterns need about 14 days of data.' (from the FAQ) with price, badge and QR, then the shared Lagerland strip."
+   ],
+   "navigation": "The header bar carries the six anchors (the jump_nav set). On scroll it condenses to 44px, and the current anchor gets a 2px ink underline. On mobile, 'Sections' is a <details> list that also includes the Privacy policy and Support. Lagerland is linked only from the shared footer strip.",
+   "signatureInteraction": "Sentence ⇄ numbers. Each bulletin row is a <details> whose summary is the sentence. Opening it shows the numbers the app reveals on tap (how_it_works step 5): a normal-range bar with a white ±1σ corridor on grey and one tick for the reading, labelled 'your 60-day normal (illustrative band)', plus the n, the window and the confidence. JS only animates the height (180ms) and slides the tick into place (240ms). Without JS, native <details> works fully. With reduced motion, rows open instantly and the tick is static.",
+   "motionGrammar": "Broadcast cuts, not fades. Sections appear without entrance animation. The only motion is row expansion, the tick settling into the normal band, and the sticky bar sliding in over 160ms. With reduced motion there are no transitions at all.",
+   "readModeVariant": "Privacy, support and the eight alternatives pages read as bulletin notices. They keep the same header bar, set the H1 in Schibsted 800 48px, and add a one-line issue stamp (page type · last updated) in Public Sans 14px. The reading column is 68ch of Public Sans 18/1.6 on a white sheet over #F2F4F5. On the alternatives pages the compare grid becomes fixed-order rows (Scope · Where compute happens · What you get back · Account & pricing) with Observa and the competitor in two columns, 'pick Observa if' / 'keep X if' become two lists, and the FAQ is <details>. Each page closes with the issue row (price and badge).",
+   "assetsNeeded": "None.",
+   "risk": "This is Impeccable's pick and the most familiar of the seven: 'readiness' and forecast language are already common in recovery apps. The craft has to live in the bulletin's typographic discipline, so no weather symbols are used. A chart-free opening may undersell the app's rich dark UI, which only appears from the fifth section. 'Forecast' implies prediction, so copy must say 'normal' and 'reading' and never promise future days. Watch the sibling Soon., which carries weather in its UI.",
+   "memoryTest": "The one that read like a morning weather bulletin ('Sleep: below normal'), where every line opened to show its numbers against my own normal.",
+   "specimen": {
+    "bg": "#F2F4F5",
+    "ink": "#16212B",
+    "accent": "#B4471B",
+    "display": "Schibsted Grotesk",
+    "dw": 700,
+    "text": "Public Sans",
+    "h1": "Apple Health Insights for Sleep, HRV & Recovery.",
+    "sub": "Sleep, energy & recovery insights.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "Sixty-Row Blanket",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 6,
+   "lineage": "The temperature blanket (knitters' one-row-per-day colour record keyed to a temperature chart) and Ed Hawkins' warming stripes, knitted into scarves. Also the knitter's 'lifeline' thread, the woven garment and care label, and the app icon's folded ribbon.",
+   "thesis": "Sixty nights, one knitted row each, every row dyed by how far that night sat from your own normal, so the pattern Observa finds is visible in the cloth. Making the data a textile you read by colour refuses charts and score rings.",
+   "scene": "A late Saturday morning, still in bed under the duvet with low winter sun across the covers, reading Observa's weekly reflection on the phone. That makes the page light.",
+   "scheme": "light",
+   "colorStrategy": "Drenched",
+   "palette": [
+    {
+     "hex": "#D9D0DA",
+     "role": "heather yarn: 'normal' (±0.5σ) nights; main ground and reading bands"
+    },
+    {
+     "hex": "#1F2248",
+     "role": "indigo yarn: nights at −1.5σ or lower; dark bands, woven labels (white text 15.2:1)"
+    },
+    {
+     "hex": "#4B3C7A",
+     "role": "violet yarn: −1.5σ to −0.5σ nights; testimonial band (white text 9.4:1)"
+    },
+    {
+     "hex": "#EE9A5A",
+     "role": "apricot yarn: +0.5σ to +1.5σ nights, the lifeline thread, the plan highlight (ink text 7.6:1); the icon's ribbon"
+    },
+    {
+     "hex": "#A8421E",
+     "role": "rust yarn: nights at +1.5σ or higher (white text only, 6.1:1)"
+    },
+    {
+     "hex": "#1A1C24",
+     "role": "ink: text on heather and apricot (11.3:1 on heather), focus ring"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "text on indigo, violet and rust bands; QR tile"
+    }
+   ],
+   "type": {
+    "display": "Handjet (@fontsource-variable/handjet full file: wght + ELGR element-grid + ELSH element-shape axes, latin ~19 KB): H1 and section heads at 800, with the element shape tuned in build so letters read as rows of stitches",
+    "text": "Familjen Grotesk 400/600 (variable wght, latin ~18 KB): all reading text, key labels, tables, price",
+    "utility": "none; tabular figures from Familjen Grotesk for n, σ and prices",
+    "rationale": "Handjet is an element-based typeface built so letters can be assembled from units such as stitches or cross-stitch, so the headlines here are knitted in rather than printed on. Familjen Grotesk, from a Stockholm studio, is a calm Nordic grotesk whose squared joins sit beside the stitch grid without competing. About 37 KB in total."
+   },
+   "materials": [
+    "Stockinette knit: an inline SVG V-stitch texture at ~6% contrast over flat yarn colours (text sits on the flat layer)",
+    "60 knitted rows, one per night, from a 5-yarn key",
+    "Scalloped cast-off (top) and cast-on (bottom) edges",
+    "Woven labels: indigo patches with a dashed white 'stitched' border for the wordmark, the action and the care label",
+    "The lifeline: a single 2px apricot thread drawn through one row",
+    "Pattern-sizing tables (sizes across, amounts down) for the plans"
+   ],
+   "firstViewportDesktop": "At 1440×900 everything sits on heather knit. At the top is an 8px indigo cast-off scallop. The nav row (y 8–64) holds a woven-label wordmark at x=120: a 160×40 indigo label with a dashed white stitch border, the icon at 24px and 'Observa' in Handjet 700 26px white. Blanket · Pattern · Lifeline · Plans · Care label · Questions sit at right in Familjen 600 15px ink. The H1 'Apple Health Insights for Sleep, HRV & Recovery.' runs two lines in Handjet 800 104/98px ink across x=120–1200, followed by 'Your data already knows why.' in Familjen 600 and the subheadline at 20px, 60ch. Then comes the dominant move, full bleed at 1440 wide: the blanket, 60 rows of 5px (300px tall), each row the yarn of one illustrative night with last night at the top. The left gutter is labelled 'last night', '30 nights', '60 nights ago' in Familjen 12px, and the right gutter holds the 5-yarn key with σ ranges in tabular figures. Sewn onto the blanket at x=860–1320 is an indigo woven-label patch (460×210) holding 'Free — Pro from $2.99/mo' in Familjen 600 22px white, the official App Store badge at 52px, and the QR at 104px on its white tile with 'Scan with your iPhone camera'. Directly under the blanket: the reference switch ('Against an average adult' / 'Against your own 60 days') in Familjen 600 16px, and the caption 'Illustrative nights; sample insight from the app's example cards'.",
+   "firstViewportMobile": "At 390×844: the cast-off scallop, then the woven-label wordmark (Handjet 700 20px) at left with a 'Contents' button at right. The H1 in Handjet 800 52/50px (4 lines) ink on heather, then the pre_headline and the subheadline cut to two lines in Familjen 17px (full text stays in the DOM). The woven-label patch runs full width (358px) with the price in Familjen 600 19px and the App Store badge at 48px, with no QR. Then the blanket goes full bleed: 60 rows of 4px (240px), gutter labels hidden, and the key collapsed to five swatches beneath. The reference switch sits at the fold.",
+   "conversion": "Price and badge are sewn onto the blanket as a woven label: Apple's black badge sits untouched inside the indigo patch, and the badge's own outline keeps it distinct. The QR shows at 1024px and up inside the same label, on a white tile. The price 'Free — Pro from $2.99/mo' comes from price.value. Once the hero label leaves view, a 60px indigo ribbon with a dashed stitched top edge rises as the sticky bar: wordmark, price, badge at 40px. The Smart App Banner meta goes in the head. The cast-on edge at the bottom of the page carries the final label with price, badge and QR.",
+   "visitorPath": [
+    "Blanket (hero): H1, pre_headline, subheadline, the 60-row blanket with its key, the woven-label action patch, and the reference switch.",
+    "Quick answer: on a heather band, the Quick Answer (speakable) as a 70ch Familjen 20px paragraph, with the Quick reference <details> beneath, visible.",
+    "The pattern in the cloth: example_insights.intro (stating these are sample cards), then the six insights as six full-width bands, each in the yarn of its direction (below normal indigo/violet, above normal apricot/rust, holding steady heather). Each band has the headline in Handjet 800 44px, the body in Familjen 18px, and the tag and n/confidence in tabular figures.",
+    "Lifeline: one sentence of analogy ('Knitters run a lifeline through a row they trust; your 60-day baseline is that row'), then how_it_works steps 1–6 numbered (HowTo) with the apricot thread running through step 2, then the four value_points as short sentences.",
+    "Yarn label, i.e. what it reads: the ten metrics as fibre content, a 'Spun from' line (Apple Watch, Oura, Whoop, Garmin, Fitbit via Apple Health; ECG needs Apple Watch), and a 'Gauge' line (n ≥ 10 nights, p ≤ 0.10).",
+    "Off the needles: six screenshots in a scroll-snap strip on an indigo band, where the app's navy UI sits naturally, with captions in white Familjen. The six features follow as a two-column list.",
+    "Who it fits: who_for and who_not_for as two columns on apricot, 'Fits you if' and 'Look elsewhere if'.",
+    "Sizes: the plans as a pattern-sizing table with Free · Pro · Monthly · Pro · Annual · Lifetime across and features down. The Annual column is on apricot (highlight), Lifetime is marked 'Best long-term value', and the plans_footnote follows.",
+    "What people said: five testimonials quoted verbatim on the violet band in white Familjen 20px, with initials and source (French with translation), no stars.",
+    "Care label, the privacy section: an indigo woven care label listing the transparency.yml facts plainly (stays on device · network calls none · third-party SDKs 0 · tracking domains 0 · no account · analytics none), the Apple label sentence and privacy.notes, with links to /transparency/ and the privacy policy.",
+    "Made by: the founder block on heather (heading, story, signals, support email, response time).",
+    "Questions: the 12 FAQs as <details> rows, separated by single knitted rows.",
+    "Compared with: alternatives_to as eight links to /alternatives/<slug>/ ('Apple Health (for interpretation)' as plain text), plus the related_journal link.",
+    "Rows added: release_notes as dated lines, then the freshness line (Built by Lagerland Apps · updated 2026-07-11 · first released 2026-01-01).",
+    "Cast-on edge: a closing indigo band with 'The first rows are already in Apple Health.', price, badge and QR, then the scalloped cast-on edge and the shared Lagerland strip."
+   ],
+   "navigation": "The woven-label wordmark plus six anchors (Blanket · Pattern · Lifeline · Plans · Care label · Questions), which form the jump_nav set. The current anchor gets a 2px apricot thread underline. On mobile, 'Contents' is a <details> list that also includes Privacy and Support. Lagerland is linked only from the shared footer strip.",
+   "signatureInteraction": "Re-dye against your normal. A two-state switch sits under the blanket. 'Against an average adult' colours all 60 rows against one population reference, and most rows collapse into one or two yarns: the flat, uninformative picture. 'Against your own 60 days' re-dyes the rows against your baseline. The late-leg-day nights then stand out in indigo, and the sentence 'You sleep 18% less deeply on days you train legs after 18:00 · n=14 · 87% confidence' appears beside them. Technically, a class on the blanket swaps a CSS custom property per row, and background-color transitions stagger top to bottom (6ms per row, 280ms each) like dye wicking. Without JS, both blankets render (side by side on desktop, stacked on mobile), each with its caption. With reduced motion the swap is instant.",
+   "motionGrammar": "Slow and vertical, like textile. The only choreography is the dye stagger running down the rows and the sticky ribbon rising over 200ms. Bands do not slide or parallax. Hovering a row outlines it with a 1px ink line, no shadow. With reduced motion there is no motion.",
+   "readModeVariant": "Privacy, support and the eight alternatives pages keep the cast-off edge and the woven-label header. Under an H1 in Handjet 800 56px runs a 24px 'selvedge': the 60 rows compressed into one thin stripe. The reading column is 68ch of Familjen Grotesk 18/1.65 in ink on heather. Policy sections are set as care-label lines. On the alternatives pages the compare grid becomes a pattern-sizing table (Observa | competitor across; Scope, Where compute happens, What you get back, Account & pricing down), 'pick / keep' become two columns, and the FAQ is <details>. Each page closes with a woven-label CTA patch holding price and badge.",
+   "assetsNeeded": "None. The stitch texture is an inline SVG pattern, and the rows are divs built from an illustrative 60-night array in two reference states, kept in the page and labelled illustrative.",
+   "risk": "It ranks sixth for resonance: knitting is not native to the quantified-self audience and can read craft-cute against a statistics app. The drenched multi-colour bands need strict AA pairing per band (rust and violet take white text only). Handjet is idiosyncratic and must stay at 40px or above. Both reference states are illustrative and must say so. Warm textiles can drift toward the spent cozy-cream palette, so heather and indigo must hold the ground, never cream.",
+   "memoryTest": "The striped-blanket page: one row per night, and when I switched from 'average adult' to 'my own 60 days' the colours rearranged and my leg-day nights stood out in indigo.",
+   "specimen": {
+    "bg": "#D9D0DA",
+    "ink": "#1A1C24",
+    "accent": "#A8421E",
+    "display": "Handjet",
+    "dw": 800,
+    "text": "Familjen Grotesk",
+    "h1": "Apple Health Insights for Sleep, HRV & Recovery.",
+    "sub": "Sleep, energy & recovery insights.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Give each band its own stitch texture in the existing inline SVG pattern (for example plain, moss, rib, seed and garter as σ rises), add a band glyph in the row gutter on desktop, and put the 60 illustrative night values in a plain <table> (or a <details>) under the blanket, so the sentence can be checked without colour."
+    }
+   ]
+  }
+ ],
+ "canon": "Canon (the category played straight; not recommended): a dark-navy health dashboard with a floating iPhone at right showing a glowing recovery ring and score tiles, a 'Your health, decoded' headline over an App Store badge row, four-up feature cards, three pricing cards and an FAQ accordion.",
+ "notes": "Dice: key 519bdbbc, assigned index 7 (the literal-reading candidate, last for resonance), so Style A is the star atlas. Reroll 1 gave 6, so Style C is the blanket. Neither roll was 1, so Style B is my #1, the bulletin. The roll ran degraded (no catalog challengers), as expected. The three signatures each prove a different leg of the mechanism: A shows correlation (draw the constellation), B shows translation (sentence ⇄ numbers, mirroring the app's tap-to-see-numbers), C shows the personal baseline (re-dye against your normal). Owner flags: (1) transparency.yml lists a HealthKit WRITE permission ('save insights back to Apple Health') while how_it_works step 1 says 'No writes.' Reconcile this before any page prints either claim. (2) ratings 4.1 from 12, so no stars. (3) founder.signals hard-codes '19 live apps', the one literal CLAUDE.md allows; keep it in sync. (4) 'Apple Health (for interpretation)' has no alternatives page, so render it as plain text. Fonts verified on npm: @fontsource/bodoni-moda, atkinson-hyperlegible-next, atkinson-hyperlegible-mono, schibsted-grotesk, public-sans, handjet (the ELGR/ELSH axes are in @fontsource-variable/handjet full) and familjen-grotesk. Each style's latin payload is about 37–79 KB. All demo data (the 60-night skies and rows, the normal-range bands) is labelled illustrative, and insight sentences come from example_insights labelled as samples.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

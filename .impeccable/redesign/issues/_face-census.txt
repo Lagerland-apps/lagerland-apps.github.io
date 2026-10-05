@@ -1,0 +1,27 @@
+Atkinson Hyperlegible Next: studio-a:t, aftershift-a:t, allpaid-b:d, allpaid-b:t, appmeta-pulse-a:t, mediakit-b:t, observa-a:t, shogiful-b:t
+Atkinson Hyperlegible Mono: aftershift-a:u, allpaid-b:u, observa-a:u, shogiful-b:u
+Doto: chessful-a:u, earnlock-a:u, soon-c:d
+Public Sans: gymlogger-x-a:t, observa-b:t, soon-c:t
+Sofia Sans: mediakit-a:t, pawza-a:t, soon-b:t, soon-b:u
+Albert Sans: mockly-a:t, pawza-c:d, pawza-c:t
+Archivo: aftershift-b:d, aftershift-b:t, appmeta-pulse-c:d, appmeta-pulse-c:t
+B612: appmeta-pulse-a:d, soon-c:u
+B612 Mono: appmeta-pulse-a:u, mediakit-c:u
+Barlow: allpaid-a:t, mediakit-c:t
+Barlow Condensed: aftershift-a:d, allpaid-a:d
+Big Shoulders Display: gymlogger-x-a:d, taskful-day-a:d, taskful-day-a:u
+Chivo: gymlogger-x-b:d, gymlogger-x-b:t, mockly-b:d, mockly-b:t
+Chivo Mono: gymlogger-x-b:u, mockly-b:u
+Courier Prime: allpaid-c:u, appmeta-a:u
+Dela Gothic One: earnlock-a:d, shogiful-b:d
+Familjen Grotesk: studio-b:t, observa-c:t
+Fira Sans: earnlock-b:t, xiangqiful-b:t
+League Gothic: appmeta-pulse-b:d, soon-b:d
+Libre Franklin: allpaid-c:d, allpaid-c:t, appmeta-pulse-b:t
+Literata: chessful-b:d, chessful-b:t, soon-a:t, soon-a:u
+Noto Sans: appmeta-c:d, appmeta-c:t, mockly-c:t, mockly-c:u
+Pathway Extreme: liftlog-c:d, liftlog-c:t, rightsplit-a:d, rightsplit-a:t
+Reenie Beanie: aftershift-b:u, pawza-b:u
+Shantell Sans: shogiful-c:u, taskful-day-b:d
+Signika: aftershift-c:t, aftershift-c:u, earnlock-b:d
+Sofia Sans Extra Condensed: mediakit-a:d, pawza-a:d

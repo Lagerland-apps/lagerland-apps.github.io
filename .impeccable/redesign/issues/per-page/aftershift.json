@@ -1,0 +1,106 @@
+[
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "aftershift (vs earnlock)",
+  "style": "c",
+  "severity": "major",
+  "issue": "Follow the Line and earnlock-b 'The Junction Post' share a world and a display face within the same body trio. The world is a wayfinding route walked via hung or posted sign blades with arrow pictograms to a destination. The face is Signika, argued in both cards as 'the wayfinding face'.",
+  "fix": "Keep wayfinding and Signika on earnlock-b, since walk-to-unlock is literally a route and it is EarnLock's #1. Replace aftershift-c with aftershift candidate #6, the sleep diary / double-plotted actogram (instrument/data graphic). One 24-hour row per day carries 'scored against the next shift' directly. Draw it as a plotted raster of sleep bars, not a ruled table, so it stays apart from aftershift-b's rota. Candidate #2, the blackout bedroom at noon, is the alternative if a second dark scene is wanted.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "aftershift (vs allpaid)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Barlow Condensed is the display face of aftershift-a (the back-lettering H1) and of allpaid-a (day numerals and H1). Barlow also sets mediakit-c's text, so the family is in three surfaces.",
+  "fix": "allpaid-a keeps Barlow, the free DIN stand-in that is native to a German-language Abfahrt poster. aftershift-a sets its uniform back-lettering in Mohave 600/700, a caps-first condensed sans that is unused elsewhere, and keeps Atkinson for text.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "aftershift (vs appmeta-pulse)",
+  "style": "b",
+  "severity": "major",
+  "issue": "Archivo variable is the entire type system of aftershift-b (title block, cell codes, body) and of appmeta-pulse-c (plates, lettering, body).",
+  "fix": "appmeta-pulse-c keeps Archivo Expanded for its hung plates. aftershift-b moves to Arimo 400/700, the Arial-metric face that ward admins actually type rotas in. That is more native to a photocopied rota than a display-width grotesk.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "observa (vs aftershift, soon)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Atlas of Nights is the literal reading on a navy plate (#0E1C3A) set in Atkinson Next + Atkinson Mono. In the same body trio, aftershift-a is navy twill (#18222F) set in Atkinson Next + Atkinson Mono. Stars on navy are also the sleep category's moon-and-stars default and soon-a's night band. Its furniture (a high-contrast Didone, spaced capitals laid along hairlines, small mono axis labels on a fine grid) is AI cluster (c) in an astronomy costume.",
+  "fix": "aftershift-a keeps navy and Atkinson: the uniform colour and the low-acuity argument are literal. observa-a takes its icon's own warm night (~#15110F), with apricot as the only colour and no glow. Constellation names and labels move into one sans with tabular figures (e.g. League Spartan, from the Futura lineage of star charts), with no mono and no spaced Didone caps. Keep Bodoni Moda for the H1 at most.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "aftershift, millrace, shogiful",
+  "style": "b, c, a",
+  "severity": "major",
+  "issue": "A hand-annotation layer (a handwriting font, ballpoint or pencil over a printed form) appears in about ten styles: aftershift-b, pawza-b, rightsplit-b, taskful-day-b, xiangqiful-c, tare-b, millrace-c, shogiful-a, appmeta-b and chessful-b. Four share one ballpoint blue (#1F3BA0, #1E3FA6, #1F3FB4, #2340A0). It is this board's own default. In three styles it is pure decoration: aftershift-b's Reenie Beanie notes repeat existing copy, millrace-c has Kalam coach and hint lines, and shogiful-a has Yusei Magic marker notes.",
+  "fix": "Keep a hand layer only where the hand performs the mechanism: rightsplit-b (circling who ordered what), tare-b (solving in pencil), xiangqiful-c (the teacher's red pen), taskful-day-b (writing tomorrow's card), pawza-b (the as-written layer the scan reads) and appmeta-b (proof marks). Cut it from aftershift-b, millrace-c and shogiful-a, which also ends the Reenie Beanie share. Convert chessful-b's pen to print (see the chessful-b issue).",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "allpaid, aftershift, xiangqiful",
+  "style": "a, b, a",
+  "severity": "minor",
+  "issue": "Several heroes keep the incumbent split and only swap the phone for a boxed badge/QR/price panel on the right: allpaid-a's white info panel in columns 9–12, aftershift-b's admin cell, and xiangqiful-a's Exit sub-panel at 36% width. The skeleton survives even though the phone is gone.",
+  "fix": "Put the action where the object really prints it. allpaid-a's fare and QR become the poster's legend box at the foot of the first day band. aftershift-b's admin rows run as a full-width strip under the title block. xiangqiful-a's Exit becomes a full-width exit sign below the great sign.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "appmeta-pulse, pawza, mockly, aftershift",
+  "style": "b, b, a, b",
+  "severity": "minor",
+  "issue": "A yellow highlighter swipe behind ink is an accent in four styles: aftershift-b, appmeta-pulse-b, pawza-b and mockly-a. A chartreuse near #D6E83C recurs as well: aftershift-a's hi-vis (#D6F03A), pawza-c's tennis ball, mockly-a's highlighter (#E4F53A) and tare-b's lime spot.",
+  "fix": "Keep the swipe on aftershift-b (nurses really do highlight their own row) and appmeta-pulse-b (its only accent). pawza-b loses it with its palette change. mockly-a traces the chosen size in the piece's own ink instead of a highlighter. Keep chartreuse literal (hi-vis tape, the tennis ball) and nowhere else.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "aftershift",
+  "style": "a",
+  "severity": "major",
+  "issue": "Shared display face: Barlow Condensed is also allpaid-a's display.",
+  "fix": "Keep it on allpaid-a, where the yellow departures poster is a DIN-model sign and Barlow is the closest open DIN relative. Move aftershift-a's back-lettering to Mohave 700 (about 9 KB, caps). Mohave stops at 700, so the 800 weight becomes 700.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "aftershift",
+  "style": "b",
+  "severity": "major",
+  "issue": "Shared display face: Archivo is also appmeta-pulse-c's display and text.",
+  "fix": "Keep Archivo on appmeta-pulse-c, whose expanded heavy numerals are the scoreboard's material. Move aftershift-b to Asap variable: the same foundry, Omnibus-Type, with wdth 75 to 125 and wght, 88 KB latin. Cell codes move from wdth 62 to 75. With Reenie Beanie the total is 116 KB.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ }
+]

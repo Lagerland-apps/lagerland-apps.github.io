@@ -1,0 +1,431 @@
+<!-- fonts: Tiny5:400 | Radio Canada Big:400,600 -->
+<style>
+/* Studio / style C "Page 100": teletext. Every selector scoped under .s-studio-c.
+   Grid: 40 x 24 cells, 36 x 37.5px at 1440x900. Tiny5 only at multiples of 8px (1 font pixel = whole CSS px). */
+.s-studio-c{
+  --k:#000; --w:#fff; --rw:#d9d9d9; --y:#ff0; --c:#0ff; --g:#0f0; --b:#00f; --r:#f00; --m:#f0f;
+  position:relative; background:#000; color:#fff; overflow:hidden; color-scheme:dark;
+  font-family:'Radio Canada Big',system-ui,sans-serif; font-weight:400; font-size:16px; line-height:1.4;
+  -webkit-text-size-adjust:100%;
+}
+.s-studio-c *{margin:0;padding:0;box-sizing:border-box}
+.s-studio-c ::selection{background:#ff0;color:#000}
+.s-studio-c a{color:inherit;text-decoration:none}
+.s-studio-c ul{list-style:none}
+.s-studio-c b{font-weight:400}
+.s-studio-c .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.s-studio-c a:focus-visible,.s-studio-c button:focus-visible,.s-studio-c input:focus-visible{outline:3px solid #ff0;outline-offset:2px}
+.s-studio-c.mk--desktop{width:1440px;height:1800px}
+.s-studio-c.mk--mobile{width:390px;height:1688px}
+
+/* shared atoms */
+.s-studio-c .chip{display:block;flex:none;overflow:hidden;border-radius:22.37%;background:#111}
+.s-studio-c .chip img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.06)}
+.s-studio-c .asb{display:block}
+.s-studio-c .asb-svg{display:block;width:100%;height:auto}
+.s-studio-c .k{display:flex;align-items:center;justify-content:center;color:#000;font-family:'Tiny5',monospace;text-transform:uppercase}
+.s-studio-c .k-r{background:#f00}
+.s-studio-c .k-g{background:#0f0}
+.s-studio-c .k-y{background:#ff0}
+.s-studio-c .k-c{background:#0ff}
+
+/* ================= DESKTOP ================= */
+.s-studio-c .d-mixwrap{position:absolute;left:0;top:0;width:1440px;height:900px;overflow:hidden;z-index:0}
+.s-studio-c .d-mix{position:absolute;left:560px;top:30px;width:880px;height:880px;
+  background:#050f1c url(assets/xiangqiful/mix.jpg) center/100% 100% no-repeat;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 110px);mask-image:linear-gradient(90deg,transparent 0,#000 110px)}
+
+.s-studio-c .d-hdr{position:absolute;left:0;top:0;width:1440px;height:37.5px;z-index:3;background:#000;
+  display:flex;align-items:center;gap:24px;padding:0 36px;white-space:nowrap;
+  font:400 24px/1 'Tiny5',monospace;text-transform:uppercase}
+.s-studio-c .d-hdr .pn{color:#f0f}
+.s-studio-c .d-hdr .sv{color:#fff}
+.s-studio-c .d-hdr .bt{margin-left:auto;color:#ff0}
+.s-studio-c .d-hdr .bt b{margin-left:14px}
+
+.s-studio-c .d-mast{position:absolute;left:0;top:37.5px;width:1440px;height:112.5px;background:#00f;z-index:2}
+.s-studio-c .d-mast .wm{position:absolute;left:36px;top:0;fill:#ff0}
+.s-studio-c .d-mast .st{position:absolute;right:36px;top:0;fill:#fff}
+
+.s-studio-c .d-h1{position:absolute;left:36px;top:146px;width:700px;height:150px;z-index:2;
+  font:400 40px/37.5px 'Tiny5',monospace;color:#ff0}
+.s-studio-c .d-h1 span{display:block;height:75px}
+.s-studio-c .d-h1 i{display:inline-block;font-style:normal;white-space:nowrap;transform:scaleY(2);transform-origin:0 0}
+
+.s-studio-c .d-lede{position:absolute;left:24px;top:300px;height:37.5px;z-index:2;
+  font:400 20px/37.5px 'Radio Canada Big',sans-serif;color:#fff}
+.s-studio-c .d-lede span{display:inline-block;background:#000;padding:0 12px}
+
+.s-studio-c .d-r10{position:absolute;left:0;top:337.5px;width:1440px;height:37.5px;z-index:2}
+.s-studio-c .d-key{position:absolute;left:24px;top:0;height:37.5px;display:flex;align-items:center;gap:12px;
+  background:#000;padding:0 12px;font:400 24px/1 'Tiny5',monospace;color:#0ff}
+.s-studio-c .d-key .cells{display:flex;gap:6px}
+.s-studio-c .d-key .cell{position:relative;width:30px;height:30px;border-bottom:3px solid #0ff}
+.s-studio-c .d-key .cell.cur::after{content:"";position:absolute;left:6px;top:2px;width:18px;height:25px;background:#0ff}
+.s-studio-c .d-key .go{font:400 24px/1 'Tiny5',monospace;color:#000;background:#0ff;border:0;height:30px;padding:0 10px;margin-left:4px;cursor:pointer}
+.s-studio-c .d-flash{position:absolute;left:312px;top:0;height:37.5px;display:flex;align-items:center;gap:12px;
+  background:#000;padding-right:14px;font:400 16px/18px 'Tiny5',monospace;color:#0f0;text-transform:uppercase;white-space:nowrap}
+.s-studio-c .d-flash .tag{display:flex;align-items:center;justify-content:center;width:48px;height:37.5px;
+  background:#0f0;color:#000;font:400 24px/1 'Tiny5',monospace}
+.s-studio-c .d-flash .tx{display:flex;flex-direction:column}
+
+.s-studio-c .d-index{position:absolute;left:0;top:375px;width:1440px;height:375px;z-index:2}
+.s-studio-c .d-index ul{position:absolute;top:0}
+.s-studio-c .d-index .c1{left:24px}
+.s-studio-c .d-index .c2{left:492px}
+.s-studio-c .d-index .ln{display:flex;align-items:center;height:37.5px;width:max-content;max-width:432px;
+  background:#000;padding:0 12px;white-space:nowrap}
+.s-studio-c .d-index .ln.on{background:#00f;min-width:432px}
+.s-studio-c .d-index .ln:hover,.s-studio-c .d-index .ln:focus-visible{background:#00f}
+.s-studio-c .d-index .pg{flex:none;width:48px;font:400 24px/1 'Tiny5',monospace;color:#0ff}
+.s-studio-c .d-index .nm{flex:none;width:148px;font:600 19px/1 'Radio Canada Big',sans-serif;color:#fff}
+.s-studio-c .d-index .nd{font:400 16px/1 'Radio Canada Big',sans-serif;color:#d9d9d9}
+.s-studio-c .d-index .ln.on .nd{color:#fff}
+
+.s-studio-c .d-air{position:absolute;left:0;top:750px;width:1440px;height:112.5px;z-index:2;background:#000;
+  display:flex;align-items:center;justify-content:space-between;padding:0 36px}
+.s-studio-c .d-air .tx{display:flex;flex-direction:column;gap:3px}
+.s-studio-c .d-air .t{display:flex;align-items:center;gap:20px;height:32px;font:400 32px/1 'Tiny5',monospace}
+.s-studio-c .d-air .ttl{color:#ff0}
+.s-studio-c .d-air .onair{font-size:16px;color:#0ff;background:transparent}
+.s-studio-c .d-air .tg{font:600 22px/28px 'Radio Canada Big',sans-serif;color:#fff}
+.s-studio-c .d-air .pr{display:flex;align-items:center;gap:28px;height:28px}
+.s-studio-c .d-air .price{font:600 20px/28px 'Radio Canada Big',sans-serif;color:#0f0}
+.s-studio-c .d-air .go{font:400 24px/1 'Tiny5',monospace;color:#0ff;text-transform:uppercase;
+  text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px}
+.s-studio-c .d-air .cv{display:flex;align-items:center;gap:22px}
+.s-studio-c .d-air .asb{width:176px;flex:none}
+.s-studio-c .d-air .scan{font:400 16px/18px 'Tiny5',monospace;color:#0ff;text-align:right}
+.s-studio-c .d-air .qr{display:block;flex:none;width:100px;height:100px;background:#fff;padding:8px}
+.s-studio-c .d-air .qr img{display:block;width:84px;height:84px}
+
+.s-studio-c .d-fast{position:absolute;left:0;top:862.5px;width:1440px;height:37.5px;z-index:4;
+  display:grid;grid-template-columns:repeat(4,1fr)}
+.s-studio-c .d-fast .k{gap:14px;font-size:24px;line-height:1}
+
+/* --- below the first viewport --- */
+.s-studio-c .d-band{position:absolute;left:0;width:1440px;height:37.5px;z-index:2;background:#00f;
+  display:flex;align-items:center;gap:20px;padding:0 36px;font:400 24px/1 'Tiny5',monospace;white-space:nowrap}
+.s-studio-c .d-band .pg{color:#0ff}
+.s-studio-c .d-band .ttl{color:#ff0}
+.s-studio-c .d-band .sub{margin-left:auto;font:400 16px/1 'Radio Canada Big',sans-serif;color:#fff}
+
+.s-studio-c .d-new{position:absolute;left:0;top:937.5px;width:1440px;height:150px;z-index:2}
+.s-studio-c .d-new .rel{position:absolute;left:36px;top:19px;display:flex;align-items:center;gap:24px}
+.s-studio-c .d-new .chip--lg{width:112px;height:112px}
+.s-studio-c .d-new .rt{display:flex;flex-direction:column;gap:3px}
+.s-studio-c .d-new .l1{display:flex;align-items:center;gap:14px;height:32px}
+.s-studio-c .d-new .l1 .pg{font:400 24px/1 'Tiny5',monospace;color:#0ff}
+.s-studio-c .d-new .l1 .nm{font:600 26px/1 'Radio Canada Big',sans-serif;color:#fff}
+.s-studio-c .d-new .l2{font:600 18px/24px 'Radio Canada Big',sans-serif;color:#fff}
+.s-studio-c .d-new .l3{font:400 16px/22px 'Radio Canada Big',sans-serif;color:#d9d9d9}
+.s-studio-c .d-new .l4{font:600 17px/22px 'Radio Canada Big',sans-serif;color:#0f0}
+.s-studio-c .d-new .posts{position:absolute;left:876px;top:3px;width:528px}
+.s-studio-c .d-new .posts li{height:72px}
+.s-studio-c .d-new .posts a{display:block}
+.s-studio-c .d-new .posts .m{display:flex;align-items:center;gap:14px;height:26px;font:400 24px/1 'Tiny5',monospace}
+.s-studio-c .d-new .posts .pg{color:#0ff}
+.s-studio-c .d-new .posts .dt{color:#ff0}
+.s-studio-c .d-new .posts .ti{display:block;font:600 17px/22px 'Radio Canada Big',sans-serif;color:#fff}
+
+.s-studio-c .d-ledger{position:absolute;left:0;top:1162.5px;width:878px;z-index:2;border-collapse:collapse;table-layout:fixed}
+.s-studio-c .d-ledger th,.s-studio-c .d-ledger td{height:37.5px;padding:0;text-align:left;vertical-align:middle;font-weight:400}
+.s-studio-c .d-ledger thead tr{background:#00f}
+.s-studio-c .d-ledger thead th{font:400 16px/1 'Tiny5',monospace;color:#fff;text-transform:uppercase}
+.s-studio-c .d-ledger th:nth-child(1){width:236px;padding-left:36px}
+.s-studio-c .d-ledger th:nth-child(2){width:170px}
+.s-studio-c .d-ledger th:nth-child(3){width:180px}
+.s-studio-c .d-ledger th:nth-child(4){width:190px}
+.s-studio-c .d-ledger th:nth-child(5){width:102px}
+.s-studio-c .d-ledger tbody th a{display:flex;align-items:center;gap:12px}
+.s-studio-c .d-ledger tbody .pg{width:48px;font:400 24px/1 'Tiny5',monospace;color:#0ff}
+.s-studio-c .d-ledger tbody .nm{font:600 18px/1 'Radio Canada Big',sans-serif;color:#fff}
+.s-studio-c .d-ledger .zero{font:400 32px/1 'Tiny5',monospace;color:#0f0}
+.s-studio-c .d-ledger .gv{font:600 17px/1 'Radio Canada Big',sans-serif;color:#0f0}
+.s-studio-c .d-ledger tbody tr{background:#000}
+
+.s-studio-c .d-all{position:absolute;left:36px;top:1425px;height:37.5px;z-index:2;display:flex;align-items:center;gap:16px}
+.s-studio-c .d-all a{font:600 18px/1 'Radio Canada Big',sans-serif;color:#0ff;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+.s-studio-c .d-all span{font:400 16px/1 'Radio Canada Big',sans-serif;color:#d9d9d9}
+.s-studio-c .d-all--500{top:1687.5px}
+
+.s-studio-c .d-faq{position:absolute;left:918px;width:486px;z-index:2}
+.s-studio-c .d-faq--400{top:1174px}
+.s-studio-c .d-faq--500{top:1547px}
+.s-studio-c .d-faq h3{font:600 17px/24px 'Radio Canada Big',sans-serif;color:#ff0}
+.s-studio-c .d-faq p{margin:3px 0 14px;font:400 16px/24px 'Radio Canada Big',sans-serif;color:#d9d9d9}
+
+.s-studio-c .d-vs{position:absolute;left:36px;top:1537.5px;width:830px;z-index:2}
+.s-studio-c .d-vs a{display:flex;align-items:center;height:37.5px}
+.s-studio-c .d-vs .lb{font:600 19px/1 'Radio Canada Big',sans-serif;color:#fff}
+.s-studio-c .d-vs .dots{flex:1;margin:0 12px;height:0;border-bottom:3px dotted #d9d9d9;transform:translateY(5px)}
+.s-studio-c .d-vs .pg{font:400 24px/1 'Tiny5',monospace;color:#0ff}
+
+/* ================= MOBILE ================= */
+.s-studio-c .m-hdr{height:28px;display:flex;align-items:center;gap:12px;padding:0 12px;white-space:nowrap;
+  font:400 16px/1 'Tiny5',monospace;text-transform:uppercase}
+.s-studio-c .m-hdr .pn{color:#f0f}
+.s-studio-c .m-hdr .sv{color:#fff}
+.s-studio-c .m-hdr .bt{margin-left:auto;color:#ff0}
+.s-studio-c .m-hdr .bt b{margin-left:8px}
+.s-studio-c .m-mast{height:72px;background:#00f;padding:0 12px;display:flex;align-items:center}
+.s-studio-c .m-mast svg{display:block;fill:#ff0}
+.s-studio-c .m-h1{margin:10px 12px 0;font:400 32px/30px 'Tiny5',monospace;color:#ff0}
+.s-studio-c .m-h1 span{display:block;height:60px}
+.s-studio-c .m-h1 i{display:inline-block;font-style:normal;white-space:nowrap;transform:scaleY(2);transform-origin:0 0}
+.s-studio-c .m-lede{margin:8px 12px 0;font:400 16px/23px 'Radio Canada Big',sans-serif;color:#d9d9d9}
+.s-studio-c .m-key{margin:10px 12px 0;height:48px;display:flex;align-items:center;gap:12px;font:400 24px/1 'Tiny5',monospace;color:#0ff}
+.s-studio-c .m-key .inp{width:132px;height:48px;background:#000;border:2px solid #0ff;border-radius:0;padding:0 12px;
+  font:400 24px/1 'Tiny5',monospace;letter-spacing:.18em;color:#0ff;caret-color:#0ff}
+.s-studio-c .m-key .inp::placeholder{color:#0ff;opacity:1}
+.s-studio-c .m-key .go{height:48px;padding:0 20px;background:#0ff;color:#000;border:0;border-radius:0;font:400 24px/1 'Tiny5',monospace}
+.s-studio-c .m-flash{display:flex;align-items:stretch;gap:10px;margin:8px 12px 0;height:60px}
+.s-studio-c .m-flash .tag{display:flex;align-items:center;justify-content:center;width:48px;background:#0f0;color:#000;font:400 24px/1 'Tiny5',monospace}
+.s-studio-c .m-flash .tx{display:flex;flex-direction:column;justify-content:center;font:400 16px/20px 'Tiny5',monospace;color:#0f0;text-transform:uppercase;white-space:nowrap}
+
+.s-studio-c .m-index{margin-top:18px}
+.s-studio-c .m-band{height:28px;background:#00f;padding:0 12px;display:flex;align-items:center;
+  font:600 15px/1 'Radio Canada Big',sans-serif;text-transform:uppercase;letter-spacing:.06em;color:#fff}
+.s-studio-c .m-ln{display:flex;align-items:center;gap:8px;height:44px;padding:0 12px;background:#000}
+.s-studio-c .m-ln .pg{flex:none;width:30px;font:400 16px/1 'Tiny5',monospace;color:#0ff}
+.s-studio-c .m-chip{width:28px;height:28px;flex:none;display:block;overflow:hidden;border-radius:22.37%;background:#111}
+.s-studio-c .m-chip img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.06)}
+.s-studio-c .m-tx{display:flex;flex-direction:column;gap:1px;min-width:0;margin-left:2px}
+.s-studio-c .m-tx .nm{font:600 17px/20px 'Radio Canada Big',sans-serif;color:#fff}
+.s-studio-c .m-tx .nd{font:400 15px/18px 'Radio Canada Big',sans-serif;color:#d9d9d9}
+.s-studio-c .m-ln--all{height:44px}
+.s-studio-c .m-ln--all .m-tx{margin-left:38px}
+
+.s-studio-c .m-band--sec{margin-top:16px;gap:14px;font:400 16px/1 'Tiny5',monospace;letter-spacing:0}
+.s-studio-c .m-band--sec .pg{color:#0ff}
+.s-studio-c .m-band--sec .ttl{color:#ff0}
+.s-studio-c .m-new{padding:12px 12px 0}
+.s-studio-c .m-new .rel{display:flex;gap:12px}
+.s-studio-c .m-new .chip--m{width:56px;height:56px}
+.s-studio-c .m-new .rt{display:flex;flex-direction:column;gap:2px;justify-content:center}
+.s-studio-c .m-new .l1{display:flex;align-items:center;gap:10px}
+.s-studio-c .m-new .l1 .pg{font:400 16px/1 'Tiny5',monospace;color:#0ff}
+.s-studio-c .m-new .l1 .nm{font:600 20px/24px 'Radio Canada Big',sans-serif;color:#fff}
+.s-studio-c .m-new .l2{font:400 15px/18px 'Radio Canada Big',sans-serif;color:#d9d9d9}
+.s-studio-c .m-new .l4{font:600 15px/18px 'Radio Canada Big',sans-serif;color:#0f0}
+.s-studio-c .m-new .bd{margin-top:10px;width:140px}
+
+.s-studio-c .m-fast{position:absolute;left:0;top:792px;width:390px;height:52px;z-index:5;display:grid;grid-template-columns:repeat(4,1fr)}
+.s-studio-c .m-fast .k{flex-direction:column;gap:2px;font-size:16px;line-height:18px}
+.s-studio-c .m-fast .k i{font-style:normal}
+
+@media (max-height:600px){ .s-studio-c .m-hdr{display:none} } /* contract: one sticky bar per edge; hide top strip on short viewports while the bottom bar shows */
+@media (prefers-reduced-motion:reduce){ .s-studio-c *{animation:none!important;transition:none!important} }
+
+</style>
+
+<!-- =================================== DESKTOP 1440 x 1800 =================================== -->
+<div class="s-studio-c mk mk--desktop">
+
+  <div class="d-mixwrap" aria-hidden="true"><div class="d-mix"></div></div>
+
+  <header class="d-hdr">
+    <span class="pn">P100</span><span class="sv">LAGERLAND 100</span>
+    <span class="bt">page built Mon 05 Oct <b>12:10</b></span>
+  </header>
+
+  <div class="d-mast">
+    <svg class="wm" viewBox="0 0 53 9" width="954" height="112.5" preserveAspectRatio="none" role="img" aria-label="Lagerland" shape-rendering="crispEdges"><path d="M0 1h1v1h-1zM0 2h1v1h-1zM0 3h1v1h-1zM0 4h1v1h-1zM0 5h1v1h-1zM0 6h1v1h-1zM0 7h1v1h-1zM1 7h1v1h-1zM2 7h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM7 1h1v1h-1zM8 1h1v1h-1zM9 1h1v1h-1zM6 2h1v1h-1zM10 2h1v1h-1zM6 3h1v1h-1zM10 3h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM8 4h1v1h-1zM9 4h1v1h-1zM10 4h1v1h-1zM6 5h1v1h-1zM10 5h1v1h-1zM6 6h1v1h-1zM10 6h1v1h-1zM6 7h1v1h-1zM10 7h1v1h-1zM13 1h1v1h-1zM14 1h1v1h-1zM15 1h1v1h-1zM16 1h1v1h-1zM12 2h1v1h-1zM12 3h1v1h-1zM12 4h1v1h-1zM14 4h1v1h-1zM15 4h1v1h-1zM16 4h1v1h-1zM12 5h1v1h-1zM16 5h1v1h-1zM12 6h1v1h-1zM16 6h1v1h-1zM13 7h1v1h-1zM14 7h1v1h-1zM15 7h1v1h-1zM18 1h1v1h-1zM19 1h1v1h-1zM20 1h1v1h-1zM21 1h1v1h-1zM22 1h1v1h-1zM18 2h1v1h-1zM18 3h1v1h-1zM18 4h1v1h-1zM19 4h1v1h-1zM20 4h1v1h-1zM21 4h1v1h-1zM18 5h1v1h-1zM18 6h1v1h-1zM18 7h1v1h-1zM19 7h1v1h-1zM20 7h1v1h-1zM21 7h1v1h-1zM22 7h1v1h-1zM24 1h1v1h-1zM25 1h1v1h-1zM26 1h1v1h-1zM27 1h1v1h-1zM24 2h1v1h-1zM28 2h1v1h-1zM24 3h1v1h-1zM28 3h1v1h-1zM24 4h1v1h-1zM25 4h1v1h-1zM26 4h1v1h-1zM27 4h1v1h-1zM24 5h1v1h-1zM26 5h1v1h-1zM24 6h1v1h-1zM27 6h1v1h-1zM24 7h1v1h-1zM28 7h1v1h-1zM30 1h1v1h-1zM30 2h1v1h-1zM30 3h1v1h-1zM30 4h1v1h-1zM30 5h1v1h-1zM30 6h1v1h-1zM30 7h1v1h-1zM31 7h1v1h-1zM32 7h1v1h-1zM33 7h1v1h-1zM34 7h1v1h-1zM37 1h1v1h-1zM38 1h1v1h-1zM39 1h1v1h-1zM36 2h1v1h-1zM40 2h1v1h-1zM36 3h1v1h-1zM40 3h1v1h-1zM36 4h1v1h-1zM37 4h1v1h-1zM38 4h1v1h-1zM39 4h1v1h-1zM40 4h1v1h-1zM36 5h1v1h-1zM40 5h1v1h-1zM36 6h1v1h-1zM40 6h1v1h-1zM36 7h1v1h-1zM40 7h1v1h-1zM42 1h1v1h-1zM46 1h1v1h-1zM42 2h1v1h-1zM43 2h1v1h-1zM46 2h1v1h-1zM42 3h1v1h-1zM43 3h1v1h-1zM46 3h1v1h-1zM42 4h1v1h-1zM44 4h1v1h-1zM46 4h1v1h-1zM42 5h1v1h-1zM45 5h1v1h-1zM46 5h1v1h-1zM42 6h1v1h-1zM45 6h1v1h-1zM46 6h1v1h-1zM42 7h1v1h-1zM46 7h1v1h-1zM48 1h1v1h-1zM49 1h1v1h-1zM50 1h1v1h-1zM51 1h1v1h-1zM48 2h1v1h-1zM52 2h1v1h-1zM48 3h1v1h-1zM52 3h1v1h-1zM48 4h1v1h-1zM52 4h1v1h-1zM48 5h1v1h-1zM52 5h1v1h-1zM48 6h1v1h-1zM52 6h1v1h-1zM48 7h1v1h-1zM49 7h1v1h-1zM50 7h1v1h-1zM51 7h1v1h-1z"/></svg>
+    <svg class="st" viewBox="0 0 9 9" width="162" height="112.5" preserveAspectRatio="none" aria-hidden="true" shape-rendering="crispEdges"><path d="M4 0h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM1 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM7 2h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM0 4h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM8 4h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM1 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM7 6h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1zM4 8h1v1h-1z"/></svg>
+  </div>
+
+  <h1 class="d-h1"><span><i>Private apps for iPhone,</i></span><span><i>iPad, Watch and Mac.</i></span></h1>
+
+  <p class="d-lede"><span>19 apps by one developer in Finland. No trackers, no ads, no accounts.</span></p>
+
+  <div class="d-r10">
+    <form class="d-key" onsubmit="return false" aria-label="Go to page">
+      <label for="pg-d">PAGE</label>
+      <span class="cells" id="pg-d"><span class="cell cur"></span><span class="cell"></span><span class="cell"></span></span>
+      <button type="button" class="go">GO</button>
+    </form>
+    <a class="d-flash" href="/transparency/">
+      <b class="tag">400</b>
+      <span class="tx"><span>TRACKING DOMAINS 0 &middot; AD SDKS 0</span><span>18 MANIFESTS + 1 PENDING &middot; AUDITED 11 JUN 2026</span></span>
+    </a>
+  </div>
+
+  <nav class="d-index" aria-label="Apps by need, page 100">
+    <ul class="c1">
+<li><a class="ln" href="/apps/aftershift/"><b class="pg">202</b><span class="nm">AfterShift</span><span class="nd">Sleep for shift workers</span></a></li>
+<li><a class="ln" href="/apps/observa/"><b class="pg">204</b><span class="nm">Observa</span><span class="nd">Sleep, energy &amp; recovery</span></a></li>
+<li><a class="ln" href="/apps/gymlogger-x/"><b class="pg">201</b><span class="nm">GymLogger X</span><span class="nd">Strength log + Apple Watch</span></a></li>
+<li><a class="ln" href="/apps/liftlog/"><b class="pg">214</b><span class="nm">LiftLog</span><span class="nd">A lift log like equipment</span></a></li>
+<li><a class="ln" href="/apps/pawza/"><b class="pg">216</b><span class="nm">Pawza</span><span class="nd">Your pet&#x27;s whole life</span></a></li>
+<li><a class="ln" href="/apps/earnlock/"><b class="pg">215</b><span class="nm">EarnLock</span><span class="nd">Move, then scroll</span></a></li>
+<li><a class="ln" href="/apps/taskful-day/"><b class="pg">206</b><span class="nm">Taskful Day</span><span class="nd">Plan the day, calmly</span></a></li>
+<li><a class="ln" href="/apps/soon/"><b class="pg">205</b><span class="nm">Soon.</span><span class="nd">Countdowns worth waiting for</span></a></li>
+<li><a class="ln" href="/apps/allpaid/"><b class="pg">203</b><span class="nm">AllPaid</span><span class="nd">Bills, no bank login</span></a></li>
+<li><a class="ln" href="/apps/rightsplit/"><b class="pg">211</b><span class="nm">RightSplit</span><span class="nd">Split bills from receipts</span></a></li>
+    </ul>
+    <ul class="c2">
+<li><a class="ln" href="/apps/appmeta/"><b class="pg">207</b><span class="nm">AppMeta</span><span class="nd">App Store Connect, on Mac</span></a></li>
+<li><a class="ln" href="/apps/appmeta-pulse/"><b class="pg">208</b><span class="nm">AppMeta Pulse</span><span class="nd">App Store revenue, fast</span></a></li>
+<li><a class="ln" href="/apps/mockly/"><b class="pg">209</b><span class="nm">Mockly</span><span class="nd">App Store screenshots, Mac</span></a></li>
+<li><a class="ln" href="/apps/wanderwiki/"><b class="pg">210</b><span class="nm">WanderWiki</span><span class="nd">Swipe Wikipedia, ad-free</span></a></li>
+<li><a class="ln" href="/apps/mediakit/"><b class="pg">213</b><span class="nm">MediaKit</span><span class="nd">Every media tool, one app</span></a></li>
+<li><a class="ln" href="/apps/chessful/"><b class="pg">212</b><span class="nm">Chessful</span><span class="nd">Learn from your mistakes</span></a></li>
+<li><a class="ln" href="/apps/shogiful/"><b class="pg">217</b><span class="nm">Shogiful</span><span class="nd">Shogi, move by move</span></a></li>
+<li><a class="ln on" href="/apps/xiangqiful/" aria-current="true"><b class="pg">219</b><span class="nm">Xiangqiful</span><span class="nd">Xiangqi, move by move</span></a></li>
+<li><a class="ln" href="/apps/millrace/"><b class="pg">218</b><span class="nm">Millrace</span><span class="nd">One inlet, one exact target</span></a></li>
+<li><a class="ln" href="/apps/"><b class="pg">200</b><span class="nm">All apps</span><span class="nd">by need</span></a></li>
+    </ul>
+  </nav>
+
+  <section class="d-air" aria-label="On air: Xiangqiful">
+    <div class="tx">
+      <p class="t"><span class="ttl">XIANGQIFUL</span><span class="onair">ON AIR 219</span></p>
+      <p class="tg">Master xiangqi. Move by move.</p>
+      <p class="pr"><span class="price">Free — Premium from $1.99/mo</span><a class="go" href="/apps/xiangqiful/">Go to 219 Xiangqiful</a></p>
+    </div>
+    <div class="cv">
+      <a class="asb asb--c" href="#" rel="noopener"
+   aria-label="Download Xiangqiful on the App Store">
+  <svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/>
+    <path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/>
+    <text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text>
+    <text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text>
+  </svg>
+</a>
+
+      <p class="scan">SCAN TO<br>INSTALL ON<br>YOUR IPHONE</p>
+      <span class="qr"><img src="assets/qr/xiangqiful.svg" alt="QR code: Xiangqiful on the App Store" width="84" height="84"></span>
+    </div>
+  </section>
+
+  <nav class="d-fast" aria-label="Fastext"><a class="k k-r" href="/apps/"><b>APPS</b> 200</a><a class="k k-g" href="/journal/"><b>JOURNAL</b> 300</a><a class="k k-y" href="/transparency/"><b>LEDGER</b> 400</a><a class="k k-c" href="/" aria-current="page"><b>INDEX</b> 100</a></nav>
+
+  <!-- ---- below the first viewport: the page in its own order (ascending page numbers) ---- -->
+
+  <h2 class="d-band" style="top:900px"><span class="pg">P101</span><span class="ttl">NEW ON AIR</span></h2>
+  <section class="d-new" aria-label="Page 101">
+    <a class="rel" href="/apps/xiangqiful/">
+      <span class="chip chip--lg"><img src="assets/xiangqiful/icon.png" alt="Xiangqiful app icon" width="112" height="112"></span>
+      <span class="rt">
+        <span class="l1"><b class="pg">219</b><span class="nm">Xiangqiful</span></span>
+        <span class="l2">Master xiangqi. Move by move.</span>
+        <span class="l3">Play ten AI opponents. Pikafish reviews every move on your device.</span>
+        <span class="l3">iPhone, iPad and Mac. Released 30 Sep 2026.</span>
+        <span class="l4">Free — Premium from $1.99/mo</span>
+      </span>
+    </a>
+    <ul class="posts">
+      <li><a href="/journal/xiangqi-mate-problems-from-classical-manuals/"><span class="m"><b class="pg">342</b><span class="dt">01 OCT</span></span><span class="ti">902 xiangqi mate problems, eight old books, and the problems I left out</span></a></li>
+      <li><a href="/journal/how-millrace-levels-are-made/"><span class="m"><b class="pg">341</b><span class="dt">24 SEP</span></span><span class="ti">Sixty-four levels, none written by hand: how Millrace finds and proves its puzzles</span></a></li>
+    </ul>
+  </section>
+
+  <h2 class="d-band" style="top:1125px"><span class="pg">P400</span><span class="ttl">LEDGER</span><span class="sub">What each app declares, field by field. Audited 11 Jun 2026.</span></h2>
+  <table class="d-ledger">
+    <thead><tr><th scope="col">App</th><th scope="col">Tracking domains</th><th scope="col">3rd-party SDKs</th><th scope="col">Account</th><th scope="col">Analytics</th></tr></thead>
+    <tbody>
+<tr><th scope="row"><a href="/apps/observa/"><b class="pg">204</b><span class="nm">Observa</span></a></th><td class="zero">0</td><td class="gv">None</td><td class="gv">No</td><td class="gv">None.</td></tr><tr><th scope="row"><a href="/apps/taskful-day/"><b class="pg">206</b><span class="nm">Taskful Day</span></a></th><td class="zero">0</td><td class="gv">None</td><td class="gv">No</td><td class="gv">None.</td></tr><tr><th scope="row"><a href="/apps/gymlogger-x/"><b class="pg">201</b><span class="nm">GymLogger X</span></a></th><td class="zero">0</td><td class="gv">None</td><td class="gv">No</td><td class="gv">None.</td></tr><tr><th scope="row"><a href="/apps/allpaid/"><b class="pg">203</b><span class="nm">AllPaid</span></a></th><td class="zero">0</td><td class="gv">None</td><td class="gv">No</td><td class="gv">None.</td></tr><tr><th scope="row"><a href="/apps/mediakit/"><b class="pg">213</b><span class="nm">MediaKit</span></a></th><td class="zero">0</td><td class="gv">1: Unrar.swift</td><td class="gv">No</td><td class="gv">None.</td></tr><tr><th scope="row"><a href="/apps/appmeta/"><b class="pg">207</b><span class="nm">AppMeta</span></a></th><td class="zero">0</td><td class="gv">None</td><td class="gv">Your own Apple ID</td><td class="gv">None.</td></tr>
+    </tbody>
+  </table>
+  <p class="d-all"><a href="/transparency/">All 19 apps, field by field</a><span>18 manifests + 1 pending. Go to 400.</span></p>
+  <div class="d-faq d-faq--400">
+    <h3>Do Lagerland apps track me or collect personal data?</h3>
+    <p>No. Every app passes Apple’s App Tracking Transparency check with no IDFA request, ships zero advertising SDKs, and includes no analytics that identify users. Data stays on-device wherever possible, any cloud sync uses your own iCloud account, and you can verify the claim on each app’s App Store Privacy Nutrition Label.</p>
+    <h3>Do the apps require accounts or a login?</h3>
+    <p>No. None of the apps require an account or email sign-up. You download from the App Store and start using them — nothing to register, nothing to lose access to.</p>
+  </div>
+
+  <h2 class="d-band" style="top:1500px"><span class="pg">P500</span><span class="ttl">VERSUS</span><span class="sub">104 side-by-side comparisons with the apps people are coming from.</span></h2>
+  <ul class="d-vs">
+    <li><a href="/alternatives/strong-workout-app/"><span class="lb">GymLogger X vs Strong</span><i class="dots"></i><b class="pg">584</b></a></li>
+    <li><a href="/alternatives/streaks-app/"><span class="lb">Taskful Day vs Streaks</span><i class="dots"></i><b class="pg">583</b></a></li>
+    <li><a href="/alternatives/autosleep/"><span class="lb">Observa vs AutoSleep</span><i class="dots"></i><b class="pg">511</b></a></li>
+    <li><a href="/alternatives/app-store-connect-web/"><span class="lb">AppMeta vs App Store Connect (web)</span><i class="dots"></i><b class="pg">505</b></a></li>
+  </ul>
+  <p class="d-all d-all--500"><a href="/alternatives/">See all 104 comparisons</a><span>Go to 500.</span></p>
+  <div class="d-faq d-faq--500">
+    <h3>What are the best alternatives to mainstream tracker-heavy apps?</h3>
+    <p>Lagerland Apps offers privacy-first alternatives across categories: Taskful Day (now native on iPhone, iPad, and Mac) instead of feed-based planners, GymLogger X instead of subscription-locked workout loggers, Observa as a private Apple Health analytics alternative, and AllPaid as a calm bill tracker alternative to ad-supported finance apps.</p>
+  </div>
+
+  <h2 class="d-band" style="top:1762.5px"><span class="pg">P800</span><span class="ttl">ABOUT</span></h2>
+</div>
+
+<!-- =================================== MOBILE 390 x 1688 =================================== -->
+<div class="s-studio-c mk mk--mobile">
+
+  <header class="m-hdr"><span class="pn">P100</span><span class="sv">LAGERLAND</span><span class="bt">page built 05 Oct <b>12:10</b></span></header>
+
+  <div class="m-mast">
+    <svg viewBox="0 0 53 9" width="366" height="72" preserveAspectRatio="none" role="img" aria-label="Lagerland" shape-rendering="crispEdges"><path d="M0 1h1v1h-1zM0 2h1v1h-1zM0 3h1v1h-1zM0 4h1v1h-1zM0 5h1v1h-1zM0 6h1v1h-1zM0 7h1v1h-1zM1 7h1v1h-1zM2 7h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM7 1h1v1h-1zM8 1h1v1h-1zM9 1h1v1h-1zM6 2h1v1h-1zM10 2h1v1h-1zM6 3h1v1h-1zM10 3h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM8 4h1v1h-1zM9 4h1v1h-1zM10 4h1v1h-1zM6 5h1v1h-1zM10 5h1v1h-1zM6 6h1v1h-1zM10 6h1v1h-1zM6 7h1v1h-1zM10 7h1v1h-1zM13 1h1v1h-1zM14 1h1v1h-1zM15 1h1v1h-1zM16 1h1v1h-1zM12 2h1v1h-1zM12 3h1v1h-1zM12 4h1v1h-1zM14 4h1v1h-1zM15 4h1v1h-1zM16 4h1v1h-1zM12 5h1v1h-1zM16 5h1v1h-1zM12 6h1v1h-1zM16 6h1v1h-1zM13 7h1v1h-1zM14 7h1v1h-1zM15 7h1v1h-1zM18 1h1v1h-1zM19 1h1v1h-1zM20 1h1v1h-1zM21 1h1v1h-1zM22 1h1v1h-1zM18 2h1v1h-1zM18 3h1v1h-1zM18 4h1v1h-1zM19 4h1v1h-1zM20 4h1v1h-1zM21 4h1v1h-1zM18 5h1v1h-1zM18 6h1v1h-1zM18 7h1v1h-1zM19 7h1v1h-1zM20 7h1v1h-1zM21 7h1v1h-1zM22 7h1v1h-1zM24 1h1v1h-1zM25 1h1v1h-1zM26 1h1v1h-1zM27 1h1v1h-1zM24 2h1v1h-1zM28 2h1v1h-1zM24 3h1v1h-1zM28 3h1v1h-1zM24 4h1v1h-1zM25 4h1v1h-1zM26 4h1v1h-1zM27 4h1v1h-1zM24 5h1v1h-1zM26 5h1v1h-1zM24 6h1v1h-1zM27 6h1v1h-1zM24 7h1v1h-1zM28 7h1v1h-1zM30 1h1v1h-1zM30 2h1v1h-1zM30 3h1v1h-1zM30 4h1v1h-1zM30 5h1v1h-1zM30 6h1v1h-1zM30 7h1v1h-1zM31 7h1v1h-1zM32 7h1v1h-1zM33 7h1v1h-1zM34 7h1v1h-1zM37 1h1v1h-1zM38 1h1v1h-1zM39 1h1v1h-1zM36 2h1v1h-1zM40 2h1v1h-1zM36 3h1v1h-1zM40 3h1v1h-1zM36 4h1v1h-1zM37 4h1v1h-1zM38 4h1v1h-1zM39 4h1v1h-1zM40 4h1v1h-1zM36 5h1v1h-1zM40 5h1v1h-1zM36 6h1v1h-1zM40 6h1v1h-1zM36 7h1v1h-1zM40 7h1v1h-1zM42 1h1v1h-1zM46 1h1v1h-1zM42 2h1v1h-1zM43 2h1v1h-1zM46 2h1v1h-1zM42 3h1v1h-1zM43 3h1v1h-1zM46 3h1v1h-1zM42 4h1v1h-1zM44 4h1v1h-1zM46 4h1v1h-1zM42 5h1v1h-1zM45 5h1v1h-1zM46 5h1v1h-1zM42 6h1v1h-1zM45 6h1v1h-1zM46 6h1v1h-1zM42 7h1v1h-1zM46 7h1v1h-1zM48 1h1v1h-1zM49 1h1v1h-1zM50 1h1v1h-1zM51 1h1v1h-1zM48 2h1v1h-1zM52 2h1v1h-1zM48 3h1v1h-1zM52 3h1v1h-1zM48 4h1v1h-1zM52 4h1v1h-1zM48 5h1v1h-1zM52 5h1v1h-1zM48 6h1v1h-1zM52 6h1v1h-1zM48 7h1v1h-1zM49 7h1v1h-1zM50 7h1v1h-1zM51 7h1v1h-1z"/></svg>
+  </div>
+
+  <h1 class="m-h1"><span><i>Private apps for iPhone,</i></span><span><i>iPad, Watch and Mac.</i></span></h1>
+
+  <p class="m-lede">19 apps by one developer in Finland. No trackers, no ads, no accounts.</p>
+
+  <form class="m-key" onsubmit="return false" aria-label="Go to page">
+    <label for="pg-m">PAGE</label>
+    <input id="pg-m" class="inp" type="text" inputmode="numeric" maxlength="3" placeholder="___" aria-label="Three-digit page number" value="">
+    <button type="button" class="go">GO</button>
+  </form>
+
+  <a class="m-flash" href="/transparency/">
+    <b class="tag">400</b>
+    <span class="tx"><span>TRACKING DOMAINS 0 &middot; AD SDKS 0</span><span>18 MANIFESTS + 1 PENDING</span><span>AUDITED 11 JUN 2026</span></span>
+  </a>
+
+  <nav class="m-index" aria-label="Apps by need, page 100">
+<h2 class="m-band">Health &amp; movement</h2>
+<ul class="m-list"><li><a class="m-ln" href="/apps/aftershift/"><b class="pg">202</b><span class="m-chip"><img src="assets/aftershift/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">AfterShift</span><span class="nd">Sleep for shift workers</span></span></a></li>
+<li><a class="m-ln" href="/apps/observa/"><b class="pg">204</b><span class="m-chip"><img src="assets/observa/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">Observa</span><span class="nd">Sleep, energy &amp; recovery</span></span></a></li>
+<li><a class="m-ln" href="/apps/gymlogger-x/"><b class="pg">201</b><span class="m-chip"><img src="assets/gymlogger-x/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">GymLogger X</span><span class="nd">Strength log + Apple Watch</span></span></a></li>
+<li><a class="m-ln" href="/apps/liftlog/"><b class="pg">214</b><span class="m-chip"><img src="assets/liftlog/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">LiftLog</span><span class="nd">A lift log like equipment</span></span></a></li>
+<li><a class="m-ln" href="/apps/pawza/"><b class="pg">216</b><span class="m-chip"><img src="assets/pawza/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">Pawza</span><span class="nd">Your pet&#x27;s whole life</span></span></a></li>
+<li><a class="m-ln" href="/apps/earnlock/"><b class="pg">215</b><span class="m-chip"><img src="assets/earnlock/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">EarnLock</span><span class="nd">Move, then scroll</span></span></a></li></ul>
+<h2 class="m-band">Plan your life</h2>
+<ul class="m-list"><li><a class="m-ln" href="/apps/taskful-day/"><b class="pg">206</b><span class="m-chip"><img src="assets/taskful-day/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">Taskful Day</span><span class="nd">Plan the day, calmly</span></span></a></li>
+<li><a class="m-ln" href="/apps/soon/"><b class="pg">205</b><span class="m-chip"><img src="assets/soon/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">Soon.</span><span class="nd">Countdowns worth waiting for</span></span></a></li></ul>
+<h2 class="m-band">Money &amp; bills</h2>
+<ul class="m-list"><li><a class="m-ln" href="/apps/allpaid/"><b class="pg">203</b><span class="m-chip"><img src="assets/allpaid/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">AllPaid</span><span class="nd">Bills, no bank login</span></span></a></li>
+<li><a class="m-ln" href="/apps/rightsplit/"><b class="pg">211</b><span class="m-chip"><img src="assets/rightsplit/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">RightSplit</span><span class="nd">Split bills from receipts</span></span></a></li></ul>
+<h2 class="m-band">Developer tools</h2>
+<ul class="m-list"><li><a class="m-ln" href="/apps/appmeta/"><b class="pg">207</b><span class="m-chip"><img src="assets/appmeta/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">AppMeta</span><span class="nd">App Store Connect, on Mac</span></span></a></li>
+<li><a class="m-ln" href="/apps/appmeta-pulse/"><b class="pg">208</b><span class="m-chip"><img src="assets/appmeta-pulse/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">AppMeta Pulse</span><span class="nd">App Store revenue, fast</span></span></a></li>
+<li><a class="m-ln" href="/apps/mockly/"><b class="pg">209</b><span class="m-chip"><img src="assets/mockly/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">Mockly</span><span class="nd">App Store screenshots, Mac</span></span></a></li></ul>
+<h2 class="m-band">Reading &amp; media</h2>
+<ul class="m-list"><li><a class="m-ln" href="/apps/wanderwiki/"><b class="pg">210</b><span class="m-chip"><img src="assets/wanderwiki/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">WanderWiki</span><span class="nd">Swipe Wikipedia, ad-free</span></span></a></li>
+<li><a class="m-ln" href="/apps/mediakit/"><b class="pg">213</b><span class="m-chip"><img src="assets/mediakit/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">MediaKit</span><span class="nd">Every media tool, one app</span></span></a></li></ul>
+<h2 class="m-band">Games</h2>
+<ul class="m-list"><li><a class="m-ln" href="/apps/chessful/"><b class="pg">212</b><span class="m-chip"><img src="assets/chessful/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">Chessful</span><span class="nd">Learn from your mistakes</span></span></a></li>
+<li><a class="m-ln" href="/apps/shogiful/"><b class="pg">217</b><span class="m-chip"><img src="assets/shogiful/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">Shogiful</span><span class="nd">Shogi, move by move</span></span></a></li>
+<li><a class="m-ln" href="/apps/xiangqiful/"><b class="pg">219</b><span class="m-chip"><img src="assets/xiangqiful/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">Xiangqiful</span><span class="nd">Xiangqi, move by move</span></span></a></li>
+<li><a class="m-ln" href="/apps/millrace/"><b class="pg">218</b><span class="m-chip"><img src="assets/millrace/icon.png" alt="" width="64" height="64"></span><span class="m-tx"><span class="nm">Millrace</span><span class="nd">One inlet, one exact target</span></span></a></li></ul>
+<ul class="m-list"><li><a class="m-ln m-ln--all" href="/apps/"><b class="pg">200</b><span class="m-tx m-tx--one"><span class="nm">All apps by need</span></span></a></li></ul>
+  </nav>
+
+  <h2 class="m-band m-band--sec"><span class="pg">P101</span><span class="ttl">NEW ON AIR</span></h2>
+  <section class="m-new" aria-label="Page 101">
+    <a class="rel" href="/apps/xiangqiful/">
+      <span class="chip chip--m"><img src="assets/xiangqiful/icon.png" alt="Xiangqiful app icon" width="56" height="56"></span>
+      <span class="rt">
+        <span class="l1"><b class="pg">219</b><span class="nm">Xiangqiful</span></span>
+        <span class="l2">Master xiangqi. Move by move.</span>
+        <span class="l4">Free — Premium from $1.99/mo</span>
+      </span>
+    </a>
+    <div class="bd"><a class="asb asb--c" href="#" rel="noopener"
+   aria-label="Download Xiangqiful on the App Store">
+  <svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/>
+    <path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/>
+    <text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text>
+    <text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text>
+  </svg>
+</a>
+</div>
+  </section>
+
+  <nav class="m-fast" aria-label="Fastext"><a class="k k-r" href="/apps/"><i>200</i><b>APPS</b></a><a class="k k-g" href="/journal/"><i>300</i><b>JOURNAL</b></a><a class="k k-y" href="/transparency/"><i>400</i><b>LEDGER</b></a><a class="k k-c" href="/" aria-current="page"><i>100</i><b>INDEX</b></a></nav>
+</div>

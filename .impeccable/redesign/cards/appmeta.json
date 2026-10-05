@@ -1,0 +1,435 @@
+{
+ "surface": "appmeta",
+ "dossier": {
+  "mechanism": "AppMeta pulls an app's App Store Connect metadata for all 50 locales into a local snapshot on the Mac. You edit every field side by side against Apple's hard limits: name 30, subtitle 30, promotional text 170, keywords 100, description and What's New 4000. Before anything is pushed, it shows a word-level diff against the last fetched server state, and you push per field, per locale or all at once. It reaches Apple through the ASC API v1 with a .p8 key kept in Keychain. Keyword diagnosis runs on-device; AI is optional, with your own provider.",
+  "audienceScene": "An indie iOS/macOS developer with several apps in 10+ locales, at a Mac desk (or on a laptop on a flight) during ship week. This is the journal's 'Friday afternoon App Store Connect block', with Xcode and the ASC web UI open in other windows. They arrive from Google or an AI answer ('app store connect mac app', 'Itsyconnect alternative'). On desktop they are usually already on the Mac they would install it on. On a phone they need to carry the page to that Mac.",
+  "culturalHome": "The indie Apple developer scene and App Store Connect's own vocabulary: locales written en-US · de-DE · zh-Hans, 'Ready for Sale', 'Prepare for Submission', What's New, version trains (1.2 → 1.8.1), TestFlight builds, .p8 keys, Fastlane, release notes. Behind it sits the paperwork the job descends from: fields filled inside printed boxes, proofs signed 'OK to print' before press, and the multilingual leaflet folded into every boxed product.",
+  "mustProve": "In one viewport: this is a native Mac app (macOS 14+) for App Store Connect. It holds every locale side by side inside Apple's character limits and shows each change before it reaches Apple, demonstrated with real metadata rather than claimed. Keys stay in Keychain, and it talks only to Apple (plus an AI provider you choose). The real price: a free download with demo mode, then $17.99/year or $29.99 lifetime. A working install path: the official badge, and on a phone a way to send the page to the Mac.",
+  "categoryDefault": "The dark Mac dev-tool landing page in the Raycast/Linear school: an indigo-violet gradient mesh lifted from the icon, a floating macOS window screenshot with a glow, a 'Download on the Mac App Store' button, an SF-Symbol feature grid, a green-check comparison table and two pricing cards. Its cousin is the terminal-green CLI look used for anything near Fastlane.",
+  "predictableOpposite": "Apple-product-page white minimalism: a giant grotesk headline, one centred MacBook render, empty white space and a single blue link. The incumbent cream 'Paper & Ink' template is the other spent option.",
+  "literalReading": "'Meta' read literally means metadata, which leads to the library catalogue card with its fixed fields and subject headings (candidate 6, the only literal one). The icon reads as a networked globe ('global reach'), which no candidate uses.",
+  "evidence": [
+   "_apps/appmeta.md: platforms ['macOS'], status live, price.model freemium, price.value '$17.99/year or $29.99 lifetime'; plans are Annual $17.99/yr and Lifetime $29.99 once (highlight 'Best value') plus plans_footnote; cta_label 'Download Free'; the FAQ confirms a free download with full demo mode (sample data, no developer account needed); macOS 14+; hero.device mac.",
+   "Blocks present: hero (headline 'App Store Connect. Finally native.', secondary, subheadline), quick_answer, who_for 6 / who_not_for 4, alternatives_to 6, founder (Organization, Finland, 4 signals, response time), value_points 4, how_it_works (intro + 7 steps → HowTo), features 8, screenshots 4, comparison_table (6 tools × 13 rows + footnote), plateau_disclosure, training_vocabulary (4 groups), example_insights 4, privacy, faq 16, release (first 2026-02-01, last updated 2026-05-13), related_apps appmeta-pulse + mockly. Absent: spotlight, roadmap, coach_cta, ratings, show_body.",
+   "training_vocabulary: name 30, subtitle 30, promotional text 170, keywords 100, description 4000, What's New 4000; all 50 ASC locale codes listed; the 11 added in 2026 are bn, gu, kn, ml, mr, or, pa, ta, te, sl, ur.",
+   "Screenshots (3578×2232, dark UI: charcoal, violet selection ≈ #7B6CF0, green 'Synced' pills, monospaced field text). 1.png: GymLogger X 1.8.1 What's New in en-US (414/4 000), Danish (404/4 000) and German (444/4 000), with version pills 1.2–1.8.1 'Ready for Sale'. 2.png: the In-App Purchases editor (AppMeta Lifetime, 175 territories). 3.png: TestFlight builds. 4.png: Localizations, 11 locales 'Synced', GymLogger X subtitle 'Strength Training Workout Log' 29/30.",
+   "11.png (App Store marketing image, 1280×800) shows AppMeta's own App Store entry: name 'AppMeta' 7/30, subtitle 'App Store Connect, done right' 29/30, privacy URL 54/2 048; headline 'Edit App Store metadata without fear'.",
+   "Icon: a white 'M' over an orange-to-blue-to-green node globe on navy.",
+   "_data/transparency.yml (appmeta): manifest_source source; 0 tracking domains; 0 third-party SDKs; network 'Apple App Store Connect API only'; analytics none; UserDefaults (CA92.1).",
+   "_data/app_enrichment.yml: use cases (per-locale editing, diff before push, keyword gaps, review replies, submission); tiers 'Free — full demo mode' and 'Pro … ($17.99/year or $29.99 lifetime, no subscription)'.",
+   "Journal 'On building a native Mac client for App Store Connect': the locale-dropdown dance, a diff preview that 'caught a typo in five different localisations', the lifetime-price reasoning, and 'not a build pipeline tool'. Also mentions AppMeta: read-only-revenue-on-the-iphone, the-case-for-native-screenshot-tooling, welcome.",
+   "Alternatives: only /alternatives/app-store-connect-web/ targets AppMeta (speed, localisation, safety, credentials; pick/stick lists; 4 FAQs). Itsyconnect, NativeConnect, Fastlane deliver, AppMetaHub and ASO.dev have no page.",
+   "Privacy and support sub-pages already carry seo blocks; the support page looks the app up by slug."
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "The marked press proof",
+   "family": "print production (proofing)",
+   "why": "Every developer has shipped a typo, and the proof signed 'OK to print' is the original 'preview before push'. It carries the word-level diff as standard proofreaders' marks (caret, delete, stet) on real text, and the 11 locales Apple added in 2026 as marked insertions into the 50-code list. Per field, per locale or all becomes what the sign-off covers, and the download is the sign-off box."
+  },
+  {
+   "index": 2,
+   "name": "The full score versus the players' parts",
+   "family": "music notation",
+   "why": "The ASC web UI hands you one part at a time; AppMeta gives you the score. It carries the 50 locales as braced staves (English variants, Spanish, French, Portuguese and Chinese pairs, and the Indian-region locales as a section). Each bar is a field whose width is its character limit, and pending edits are the conductor's pencil marks. Weakness: at phone width it collapses to a single part, and staff paper drifts toward costume."
+  },
+  {
+   "index": 3,
+   "name": "The multilingual leaflet in the product box",
+   "family": "packaging / print",
+   "why": "The same text repeated under 'EN · DA · DE …' tabs is exactly what a 50-locale listing is. It carries the locales as a reversed code-tab index (navigation and proof at once) and puts real panels of one release note side by side with their counts. The specifications, 'not included' and manufacturer panels hold the field limits, the plateau disclosure and the founder. It is weaker on the diff, which has to be shown inside one panel."
+  },
+  {
+   "index": 4,
+   "name": "The comb-field form in drop-out ink",
+   "family": "administrative forms",
+   "why": "One box per letter makes Apple's limits physical: 30 boxes for name and subtitle, 100 for keywords. It carries the character budget (AppMeta's real subtitle fills 29 of 30 boxes) and the diff as the printed correction rule: strike through, write above, initial. Push granularity becomes tick boxes and the push becomes the signed declaration. The red drop-out ink is Apple's structure and the black is your entry. Finland's forms are bilingual, as AppMeta's locales are."
+  },
+  {
+   "index": 5,
+   "name": "The engineering drawing sheet and its revision block",
+   "family": "technical drafting",
+   "why": "Revision clouds and delta triangles are a hand-drawn diff, and the revision table is the version train (1.2 → 1.8.1, 'Ready for Sale'). 'Sheet 1 of 50' carries the locales, the title block's fixed fields carry the limits, and 'Approved for release' is the push. Weakness: blueprint is a cliché, and drafting is not the indie developer's world."
+  },
+  {
+   "index": 6,
+   "name": "The library catalogue card drawer",
+   "family": "library / archive (literal reading of 'meta')",
+   "why": "A catalogue card is metadata in its original form: fixed fields, subject headings as keywords, one card per locale in a drawer of 50, and a 'withdrawn / replaced' stamp for the diff. It is the literal reading and warm-bookish (cream card stock is the spent prior), and it is weak on the diff and on the Mac."
+  },
+  {
+   "index": 7,
+   "name": "The broadcast mixing console",
+   "family": "sound / instrument",
+   "why": "Fifty channel strips side by side, with tape scribble-strips reading de-DE and fr-FR. You solo one locale, pre-fade listen is the preview, and nothing reaches the master bus (Apple) until you push the fader. Strong on side-by-side and preview, but it drifts toward dark hardware and LEDs and sits next to MediaKit's rack."
+  }
+ ],
+ "seed": {
+  "key": "41d3588d",
+  "assigned": 4,
+  "reroll1": 3
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "One Box Per Letter",
+   "kicker": "THE ROLL",
+   "sourceIndex": 4,
+   "lineage": "Comb-field forms in drop-out ink. On OCR forms the boxes and labels are printed in red drop-out ink so the scanner reads only the black entries (the IRS 'Copy A' convention). Tax returns and landing cards use one box per character. Finland's bilingual Finnish/Swedish official forms carry the printed correction rule: strike through, write the correct entry above, initial.",
+   "thesis": "The page is a form whose boxes are Apple's real field limits (30 for name, 30 for subtitle, 100 for keywords), printed in drop-out red, with AppMeta's own metadata typed in black. The character budget, the correction (the diff) and the signed declaration (the push) are its working parts. It refuses the dark dev-tool landing page with a floating Mac window.",
+   "scene": "An indie developer at the Mac in office daylight during ship week, filling the same fields for the twelfth locale. White bond paper, one scheme (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Committed",
+   "palette": [
+    {
+     "hex": "#FDFDFB",
+     "role": "bond white: page ground and the inside of every entry box"
+    },
+    {
+     "hex": "#E0352B",
+     "role": "drop-out scarlet: box strokes, comb dividers, rules, the 2px outer form frame, perforation (non-text, 4.4:1)"
+    },
+    {
+     "hex": "#B8211A",
+     "role": "form red: printed labels, H1/H2 and field limits (6.3:1 on white), and part bands (white text on it 6.4:1)"
+    },
+    {
+     "hex": "#FCE9E6",
+     "role": "drop-out tint: 'For office use only' panels, comb fills, over-limit boxes (red 5.5:1 and black 15.4:1 on it)"
+    },
+    {
+     "hex": "#16161A",
+     "role": "typewriter black: typed entries, body text, signature line, focus ring (2px plus 2px offset)"
+    },
+    {
+     "hex": "#5E5E63",
+     "role": "carbon grey: notes, captions, footnotes (6.3:1)"
+    }
+   ],
+   "type": {
+    "display": "Finlandica 700 (@fontsource/finlandica, 11.7 KB): H1 at 92px/0.98 desktop and 44px mobile; H2 part bands at 30px, white on form red",
+    "text": "Finlandica 400 (11.4 KB): body 18px/1.55 at 64ch; labels at 14px in 700",
+    "utility": "Courier Prime 400/700 (18.6 + 19.3 KB), used only for typed entries inside comb fields and their counts ('29/30'). This is real character-counted data at one glyph per box, and AppMeta's own field editors are monospaced too.",
+    "rationale": "Finlandica is Helsinki Type Studio's 2021 grotesk for Finland's country brand. Its crossed 7 comes from Nordic handwriting, and its narrow proportions fit labels into tight boxes, so it reads as the Finnish public form this Finnish studio actually fills in. No sibling world uses it. Courier Prime is the typewriter that filled forms before the web, and mono appears only where each character occupies one counted box. About 61 KB in total."
+   },
+   "materials": [
+    "Comb fields: one typed glyph per box, with boxes drawn by a repeating-linear-gradient sized to the mono advance (pure CSS)",
+    "A 1px scarlet hairline grid on a 12-column sheet inside a 2px scarlet outer frame",
+    "Part bands: reversed white Finlandica 700 caps on form red, named and never numbered",
+    "Shaded 'For office use only: Apple' panels in drop-out tint",
+    "Typed corrections: the entry struck with a 2px black line, the correction typed above, an initials box beside it",
+    "Drawn tick boxes (CSS squares) with typed 'X' marks, which are print and never interactive checkboxes",
+    "Signature and date rules for the declaration",
+    "Screenshots mounted as 'Attachment 1–4' sheets, each with a red label strip"
+   ],
+   "firstViewportDesktop": "1440×900, a bond-white sheet with a 2px scarlet frame inset 24px. Form head (y 24–80): app icon 32px and 'AppMeta' in Finlandica 700 22px black at left; at centre, printed red 'App Store Connect metadata · 50 locales · macOS 14 Sonoma or later' at 14px; at right, part links in Finlandica 600 15px red. Columns 1–8, y 112–300: H1 'App Store Connect. Finally native.' in Finlandica 700 92px/0.98 form red, two lines; under it, hero.secondary in Finlandica 400 20px black, two lines. y 380–540: two red-printed comb rows with black Courier Prime 22px entries, one glyph per 25px box. 'App name · 30' holds 'AppMeta' (7 boxes filled, count 7/30). 'Subtitle · 30' holds 'App Store Connect, done right' (29 boxes filled, one empty, count 29/30), captioned in 13px grey 'AppMeta's own App Store entry, as shown in AppMeta'. y 576–870: a 2px-ruled box labelled 'Describe the application in plain words' holds the quick_answer (speakable) in Finlandica 400 18px. Columns 9–12, y 112–520: a shaded 'For office use only: Apple' panel (drop-out tint, 2px scarlet border) holds the official badge at 56px on a white mount; typed 'FREE DOWNLOAD · DEMO MODE' in Courier Prime 16px; two printed price lines with drawn tick boxes ('$17.99 per year', '$29.99 once, lifetime: best value'); and at its foot a 96px QR captioned 'Not at your Mac? Scan to keep the link.' in 13px grey.",
+   "firstViewportMobile": "390×844 with 16px gutters and a 1px scarlet frame. Head (52px): icon 24px and 'AppMeta' in Finlandica 700 18px, with a red-outlined 'Parts' button (44px tall) at right. H1 in Finlandica 700 44px/1.0 form red, three lines (y 68–206). The first sentence of hero.secondary at 17px black (y 218–290). The office panel runs full width (y 306–494): badge 48px, typed 'FREE DOWNLOAD · DEMO MODE', the '$17.99/yr · $29.99 once' tick lines, and a 'Send this page to your Mac' button (the iPhone share sheet for AirDrop or Handoff; a mailto link without JS). The Subtitle comb (y 512–640) wraps at 15 boxes per row in 22px cells, two rows, 29 filled, count 29/30. The 'Describe the application' box (quick_answer) starts at y 660 and runs past the fold.",
+   "conversion": "The badge sits in the 'For office use only: Apple' panel, the one part of a form the applicant never fills in. It is Apple's artwork, untouched, on a white mount, 56px on desktop and 48px on mobile. The price statement is printed tick lines from price.value and plans, never interactive checkboxes. The QR (96px) sits at the panel foot on ≥1024px only, since a Mac app needs it less. On phones it is replaced by 'Send this page to your Mac'. The sticky bar is the perforated return slip: a 64px bond strip with a dashed scarlet perforation along its top edge, reading 'AppMeta: App Store Connect for Mac · Free download · $17.99/yr or $29.99 once', with the badge at 40px. It rises from the bottom when the panel badge leaves view (IntersectionObserver); without JS it never appears and the static badges remain. The closing 'Declaration' part repeats the badge beside a signature line. Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Form head: icon, 'AppMeta', the printed scope line, part links (Fields · Corrections · Locales · Procedure · Fees · Notes)",
+    "Title: H1 hero.headline in form red, plus hero.secondary",
+    "'For office use only: Apple' panel: badge, demo-mode line, price tick lines, macOS 14+, and the QR on desktop or Send to Mac on phones",
+    "Fields on file: App name 7/30 and Subtitle 29/30 combs carrying AppMeta's real App Store entry (from 11.png)",
+    "'Describe the application in plain words' box: quick_answer (speakable)",
+    "Part 'The fields and their limits': training_vocabulary fields drawn at true relative size (30, 30, 100 and 170 as combs, 4000 as a ruled box with its count, URLs as single lines), including the live 'Try the Subtitle field' comb",
+    "Part 'Corrections': value_point 'Diff preview before any push' and how_it_works step 6. An illustrative entry types this site's tagline into the Subtitle comb (38/30, overflow boxes tinted). A struck entry shows the correction typed above and initialled. The push scope is three drawn tick boxes: this field, this locale, everything.",
+    "Part 'Locales': the 50 ASC codes as a grid of small typed cells, the 11 added in 2026 ticked, with value_point 'All 50 ASC locales, side-by-side'",
+    "Part 'Procedure': how_it_works intro and 7 numbered steps (HowTo) as numbered form instructions",
+    "Part 'Attachments': the four Mac screenshots as attachment sheets 1–4, each captioned with what it actually shows (1.png, the locales side by side, first)",
+    "Part 'Keyword check, no AI required': example_insights as four typed notices with their tags, labelled as example diagnoses",
+    "Part 'Optional: AI provider': the five providers as tick rows with default model, key needed and network",
+    "Part 'Also handled on this form': features ×8 as a two-column ticked checklist with descriptions",
+    "Part 'Who should use this form': who_for ticked, then 'Do not use this form if': who_not_for",
+    "Part 'Fees': plans as a ruled fee table (Annual $17.99/yr; Lifetime $29.99 once, 'Best value'), with value_point 4 and plans_footnote",
+    "Part 'Comparable forms': comparison_table as a ruled 6 × 13 matrix with the AppMeta column boxed, plus intro and footnote. On mobile it scrolls horizontally inside the part with a sticky first column. It links /alternatives/app-store-connect-web/ and lists the other alternatives_to names unlinked.",
+    "Part 'What this form does not cover': plateau_disclosure rule, what_it_does_not_do and notes",
+    "Part 'Data protection notice': privacy fields and notes; the transparency row (0 SDKs, 0 tracking domains, ASC API only, UserDefaults CA92.1) linked to /transparency/#appmeta; privacy policy and support links",
+    "Part 'Issued by': founder (Organization) heading, story, signals, response time and external link (count computed), plus the freshness line 'Built by Lagerland Apps · first released 1 Feb 2026 · updated 13 May 2026'",
+    "Part 'Notes on completing this form': FAQ ×16 as details/summary",
+    "'Summary of entries' box: the Quick reference ai-canonical <details>, open and visible",
+    "'See also': the three related journal posts and related apps (AppMeta Pulse, Mockly)",
+    "Declaration: a typed declaration line, signature rule, badge, price and QR",
+    "Shared 'A Lagerland app' footer strip"
+   ],
+   "navigation": "The form head carries the parts index as red underlined Finlandica 600 links (Fields · Corrections · Locales · Procedure · Fees · Notes), each pointing to a part-band id. On mobile a text button labelled 'Parts' (no hamburger glyph) opens the same list as a full-width ruled column under the head. Every part band ends at right with 'Back to top of form'. Lagerland appears only in the shared footer strip.",
+   "signatureInteraction": "'Try the Subtitle field'. A real <input> styled as a 30-box comb: Courier Prime, letter-spacing matched to a repeating-linear-gradient box grid, placeholder 'App Store Connect, done right', and aria-describedby pointing at the count. The HTML ships maxlength=30; about 30 lines of JS raise it to 40, update the typed count ('29/30') and set a CSS variable that tints the overflow boxes. Past 30 it prints 'Over by 8: App Store Connect will not accept this. AppMeta flags it before you push.' Nothing is submitted or sent. No-JS: the comb still takes typing up to 30 characters, and the static 7/30 and 29/30 rows carry the point. Reduced motion: there is no motion to remove; colour changes are instant.",
+   "motionGrammar": "Paper holds still. Entries are present on load with no typing animation, so content is never hidden. Comb boxes darken their stroke on hover and focus (no movement). The return slip slides up 64px in 160ms ease-out when it first appears. Anchor jumps scroll smoothly. Reduced motion removes the slide and the smooth scroll. No scroll reveals.",
+   "readModeVariant": "Privacy becomes a 'Data protection notice' form: the same head and red part bands, with a calm reading column of Finlandica 400 18px black on bond white at 66ch for overview, collection, storage, third parties, children and changes. Above it, typed fact boxes ('Data collected: none', 'Tracking: no', 'Account: your own ASC API key') link to the transparency row. Support becomes a 'Request for assistance' form: a mailto link whose prefilled body lists what to include (app version, macOS version, what happened), the response time, and no web form that collects anything. /alternatives/app-store-connect-web/ becomes a 'Comparison of forms': a two-column ruled table (AppMeta vs ASC web on speed, localisation, safety, credentials), the 'Pick AppMeta if' and 'Stick with ASC web if' lists as tick lists, FAQ notes, and a closing declaration with the badge.",
+   "assetsNeeded": "None new: it runs on the icon, the four landscape screenshots, the QR and 11.png's real entry text. Recommended production task: Apple's official 'Download on the Mac App Store' badge artwork to replace the iOS badge on Mac-only pages.",
+   "risk": "Forms carry friction: the page could read as more paperwork rather than relief, and full-commitment red on white can tip into alarm. Red must stay apparatus and never mean 'error'; the black typed data carries the warmth. Combs must be pin-sharp at every size, because a sloppy box grid kills the idea. The mobile comb wrap (15 boxes per row) needs careful tuning so words do not break unreadably.",
+   "memoryTest": "The AppMeta page was a red tax-style form. Its subtitle filled 29 of 30 boxes, and when I typed my own subtitle in, the boxes went red at 31.",
+   "specimen": {
+    "bg": "#FDFDFB",
+    "ink": "#16161A",
+    "accent": "#B8211A",
+    "display": "Finlandica",
+    "dw": 700,
+    "text": "Finlandica",
+    "h1": "App Store Connect. Finally native.",
+    "sub": "App Store Connect, native on your Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "Passed for Press",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "The prepress proof. Linotype and Monotype galley proofs were marked with standard proofreaders' marks (BS 5261-2 / Chicago Manual of Style: caret, delete, stet, transpose, the 'Qy' query). The Dylux blueline was the final contact proof, printed entirely in one blue, which the client signed 'OK to print' before plates were made.",
+   "thesis": "The page is one long galley proof of AppMeta's own App Store copy, printed in blueline blue, with its changes marked in the margins and a sign-off box that is the download. 'See every change before it goes to Apple' becomes the way the page is read rather than a feature bullet. It refuses the dark landing page with a glowing window screenshot.",
+   "scene": "A developer at the Mac the afternoon before a release, checking the last proof before anything goes to Apple: a blueline sheet under even daylight. One light scheme (color-scheme: light), with the ground tinted blue so the page reads drenched rather than white.",
+   "scheme": "light",
+   "colorStrategy": "Drenched",
+   "palette": [
+    {
+     "hex": "#E8EDF7",
+     "role": "blueline sheet: the page ground everywhere"
+    },
+    {
+     "hex": "#17337A",
+     "role": "Dylux blue: all type, H1, rules and table lines (10.0:1)"
+    },
+    {
+     "hex": "#2E4A94",
+     "role": "second blue: captions, docket, side-heads' secondary lines (7.1:1)"
+    },
+    {
+     "hex": "#9FB0D8",
+     "role": "pale blue: galley edges, crop marks, halftone dot tints, hairlines (non-text)"
+    },
+    {
+     "hex": "#1B1B1B",
+     "role": "grease-pencil black: proof marks, marginal notes, the sign-off box, focus ring (14.7:1)"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "colour-proof white: mounts for the four tipped-in screenshots and the badge mount"
+    }
+   ],
+   "type": {
+    "display": "Charis SIL 700 (@fontsource/charis-sil, 22.3 KB): H1 at 104px/0.98 desktop and 46px mobile; H2 at 40px; margin side-heads at 17px",
+    "text": "Charis SIL 400 (22.6 KB): galley text 19px/1.6 at 66ch; 400 italic (23.8 KB) only for the short marginal instructions in black ('11 inserted', 'dup. stem')",
+    "utility": "None. Counts and limits use Charis lining figures; there is no mono.",
+    "rationale": "Charis SIL is SIL's open extension of Bitstream Charter, which Matthew Carter drew in 1987 to stay crisp on the 300-dpi laser printers that ran off proofs. macOS bundles Charter, so @font-face lists local('Charter') before the self-hosted file and Mac visitors download nothing, a fitting answer to 'Finally native'. Its sturdy, low-contrast serifs and the rule of no italic at display size keep it out of the high-contrast editorial cluster. About 69 KB in total, near zero on a Mac."
+   },
+   "materials": [
+    "One galley strip: a 680px text column running the full page length, with pale-blue galley edges and crop marks at the sheet corners",
+    "Proofreaders' marks as hand-drawn inline SVG in grease-pencil black (caret, delete loop, stet dots, transpose curve), with the matching marginal instruction aligned to the marked line",
+    "<del>/<ins> semantics on every marked change: black strike over blue type, inserted words written above a caret",
+    "The sign-off box: a 2px black stamp rectangle with three options ('OK to print' ticked, 'OK with corrections', 'Revised proof'), holding the badge",
+    "Tipped-in colour proofs: the four screenshots in true colour on white mounts with two pale tape strips (CSS), the only full-colour objects on the sheet",
+    "Margin side-heads instead of headings stacked over text, and a 2px halftone dot tint for shaded boxes"
+   ],
+   "firstViewportDesktop": "1440×900; the whole viewport is the blueline sheet (#E8EDF7) with pale-blue crop marks 24px in from the corners. Job docket (y 0–56): icon 28px and 'AppMeta' in Charis 700 20px blue at left; at centre, 'Proof · en-US · App Store Connect, native on your Mac' at 14px in second blue; at right, 'Locales · Fields · Price · Queries' at 15px underlined, plus the 'Show marks / As printed' toggle. Galley column (x 400–1080): H1 'App Store Connect. Finally native.' in Charis 700 104px/0.98 Dylux blue, two lines (y 96–316); hero.secondary at 21px (y 336–400). The marked locale galley (y 432–620) sets the 50 ASC codes as running text in Charis 400 19px, with the 11 added in 2026 (bn gu kn ml mr or pa ta te sl ur) entered at black carets and written above the line. The left margin (x 120–360) carries the mark '11 inserted · Apple, 2026' aligned to the line; the right margin notes 'AppMeta loads all 50'. y 650–870: the quick_answer as the galley's first paragraph (speakable) at 18px. In the right margin (x 1120–1400, y 96–470) sits the sign-off box (2px black rule, 'OK to print' ticked in pencil) with the official badge at 56px on a white mount, 'Free download · demo mode with sample data' at 16px, '$17.99 a year or $29.99 once, lifetime' at 18px 700, and 'macOS 14 Sonoma or later'. Below the box, an 88px QR captioned 'Not at your Mac? Scan to keep the link.'",
+   "firstViewportMobile": "390×844 sheet ground, crop marks hidden. Docket (48px): icon 24px and 'AppMeta' at 18px, with a 'Contents' button at right. H1 in Charis 700 46px/1.0, three lines (y 64–208). The first sentence of hero.secondary at 17px (y 220–290). The sign-off box runs full width (y 306–500): 'OK to print', badge 48px, the demo line, '$17.99/yr or $29.99 once', and a 'Send this page to your Mac' button (share sheet with JS, mailto without). The locale galley starts at y 520 with codes at 17px and carets inline; the marginal note drops beneath the paragraph as a black pencil note, and three lines are visible above the fold.",
+   "conversion": "The sign-off box ('OK to print') is the download. It holds the official badge, unaltered, on a white mount inside the black stamp rule, the price statement from price.value, and the demo-mode line from the FAQ. The QR sits under it on ≥1024px only; phones get 'Send this page to your Mac' (navigator.share for AirDrop or Handoff, falling back to a mailto link). The sticky bar is the proof slug strip: a 56px blueline band with a 2px black top rule, reading 'AppMeta · OK to print · Free download · $17.99/yr or $29.99 once', with the badge at 40px. It docks at the bottom once the sign-off box leaves view; without JS it never appears. A 'Final sign-off' box with the badge and both plans closes the galley. Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Job docket: icon, 'AppMeta', proof slug, contents links, the 'Show marks / As printed' toggle",
+    "Head of galley: H1 hero.headline and hero.secondary",
+    "Sign-off box: 'OK to print', badge, demo line, price, macOS 14+, and the QR on desktop or Send to Mac on phones",
+    "Marked galley 'Locales': the 50 codes with the 11 added in 2026 marked as insertions (a real diff), plus value_point 'All 50 ASC locales'",
+    "The galley's first paragraph: quick_answer (speakable), set as the job's proof note",
+    "Marked galley 'Fields': training_vocabulary limits as a set specification list, plus an illustrative keywords line marked from example_insights ('aplicación' deleted as a duplicate stem of 'app'; 14 characters struck where they repeat the subtitle), labelled as an example",
+    "'How a change moves': how_it_works intro and 7 numbered stages (HowTo); step 6 (diff, then push per field, per locale or all) carries the only other marks",
+    "Tipped-in colour proofs: the four screenshots in true colour, captioned with what each actually shows",
+    "Value points ×4 as running galley text with margin side-heads",
+    "Diagnosis notes: example_insights ×4 as black marginal notes beside the lines they flag (illustrative)",
+    "AI providers: a set table of the five providers with default model, key and network",
+    "Features ×8 as galley text with margin side-heads",
+    "'Set for' and 'Not set for': who_for and who_not_for",
+    "Rate card: plans (Annual; Lifetime 'Best value') and plans_footnote",
+    "Comparison: comparison_table set as a ruled proof table with the AppMeta column boxed in black pencil, plus intro, footnote and a link to /alternatives/app-store-connect-web/",
+    "'Not in this job': plateau_disclosure",
+    "Imprint: privacy summary, transparency facts linked to /transparency/#appmeta, privacy policy and support links",
+    "Printer's note: founder (Organization) story, signals and response time, plus the freshness line",
+    "Queries: FAQ ×16, each with the proofreaders' 'Qy' mark in the margin, as details/summary",
+    "Job ticket: the Quick reference ai-canonical <details>, open",
+    "Also in production: related journal posts, AppMeta Pulse and Mockly",
+    "Final sign-off box: badge, price, QR",
+    "Shared 'A Lagerland app' footer strip"
+   ],
+   "navigation": "The job docket carries the contents (Locales · Fields · Price · Queries) as underlined blue Charis links, with the 'Show marks / As printed' toggle beside them. Margin side-heads label every section, and each section ends with 'Back to the head of the galley'. On mobile a 'Contents' text button opens the list under the docket, and side-heads move inline above their paragraphs at 17px 700.",
+   "signatureInteraction": "'Show marks / As printed'. One toggle switches every marked galley between the marked proof and the clean printed line, mirroring AppMeta's diff preview against the pushed state: <del> collapses, <ins> drops into the line in blue type, and the marks and marginal notes fade. A small class toggle in JS keeps state in the URL hash. No-JS: the marked proof shows, and each marked passage is followed by its server-rendered 'As printed' line, so both states are in the HTML. Reduced motion: the swap is instant, with no fade and no mark drawing.",
+   "motionGrammar": "Only the pencil moves. When a marked passage first enters view, its SVG marks draw on (stroke-dashoffset, 400ms, staggered 60ms) under html.js; the text never moves and is visible throughout. The toggle cross-fades marks in 200ms. The slug strip slides up in 160ms. Reduced motion shows the marks already drawn and makes every swap instant. No scroll reveals of text.",
+   "readModeVariant": "Privacy and support pages are 'Imprint' galleys: the same blue sheet and docket, and a calm reading column of 66ch Charis 400 19px blue on the tinted sheet (10:1) with side-heads in the margin. They carry no proof marks except one stamp, 'Data collected: none', linking to /transparency/#appmeta. Support is 'Queries to the printer': a mailto link with prefilled subject and body, plus the response time. /alternatives/app-store-connect-web/ is a two-proof comparison: AppMeta and the ASC web UI as facing columns on the galley (stacked on mobile) with the differences marked, the FAQ set as queries, and the sign-off box with the badge.",
+   "assetsNeeded": "None. The marks are hand-coded inline SVG paths, and the page runs on the existing icon, screenshots and QR. Recommended: Apple's 'Download on the Mac App Store' badge artwork.",
+   "risk": "Honest familiarity: a paper proof sits close to the print/editorial register AI pages drift toward. It avoids italic display and mono labels, but a weak build becomes a blue blog post. An all-blue page can feel cold and monotonous, and the screenshots are its only colour. Many developers do not know proof marks, so every mark needs a plain-language note beside it.",
+   "memoryTest": "The AppMeta page was one long blue proof sheet with pencil marks. The 11 new locales were marked in like corrections, and the download was a box that said 'OK to print'.",
+   "specimen": {
+    "bg": "#E8EDF7",
+    "ink": "#1B1B1B",
+    "accent": "#17337A",
+    "display": "Charis SIL",
+    "dw": 700,
+    "text": "Charis SIL",
+    "h1": "App Store Connect. Finally native.",
+    "sub": "App Store Connect, native on your Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Keep proof marks and the sign-off box on appmeta-b, because marked text changes are AppMeta's mechanism. mockly-b keeps imposition, crop marks, the colour bar and ganged trims. It moves the action into the press-run dispatch docket on the gripper edge (no 'OK to upload' approval box, no signature line) and drops the magenta proof-query circles. Caveats go into the slug lines."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Anchor each mark to the markup that carries the change. Strike lines are text-decoration on <del>, drawn on with a background-size wipe. Carets and insertion marks are ::before/::after on <ins>. Margin notes are floated <aside> elements tied to their passage. Drive the passages from front matter (before and after strings), so the diff and both states render from data."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "The Fifty-Language Leaflet",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 3,
+   "lineage": "The multilingual instruction leaflet folded into every boxed device. Its cover carries a language index of reversed code tabs ('EN · DA · DE · ES · FI · FR …'), and the same text repeats per language under each tab. It is set in a wide-coverage sans on thin 40–60 gsm paper where the reverse shows through, with a specifications table, a 'not included' line and the manufacturer block on the back panel.",
+   "thesis": "An App Store listing is a fifty-language leaflet, and AppMeta edits every panel side by side. So the page opens on the full index of the 50 ASC locale codes as both its navigation and its proof, with three real panels of one release note next to each other. It refuses the single-window screenshot hero.",
+   "scene": "The developer at the Mac in daylight, unfolding a release in every language at once: thin printed paper on a desk. One light scheme (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Restrained",
+   "palette": [
+    {
+     "hex": "#F2F2EF",
+     "role": "thin leaflet paper (cool grey-white, not cream): page ground"
+    },
+    {
+     "hex": "#111111",
+     "role": "process black: text, reversed code tabs, rules (16.8:1)"
+    },
+    {
+     "hex": "#55555A",
+     "role": "grey: secondary text, specification labels (6.6:1)"
+    },
+    {
+     "hex": "#4F3FCC",
+     "role": "AppMeta violet, the app's own selection colour (≈ #7B6CF0) deepened for text: the 11 tabs added in 2026, links, active thumb tab, focus ring (6.4:1; white on it 7.2:1)"
+    },
+    {
+     "hex": "#BDBDB8",
+     "role": "crease grey: fold creases and hairlines (non-text)"
+    },
+    {
+     "hex": "#E4E4E0",
+     "role": "show-through grey: mirrored reverse-side text behind panel heads, decorative and aria-hidden"
+    }
+   ],
+   "type": {
+    "display": "Noto Sans variable (@fontsource-variable/noto-sans, one latin wdth+wght file of 60 KB). H1 at wdth 75 / wght 800, 72px/1.0 desktop and 42px mobile; code tabs at wdth 62.5 / wght 800, 20px white on black",
+    "text": "Noto Sans at wdth 100, wght 400/600: body 18px/1.55 at 66ch; tabular figures (tnum) for character counts",
+    "utility": "None. A single variable file covers condensed tabs and text. Endonyms in non-Latin scripts (বাংলা, ગુજરાતી, தமிழ், اردو, 日本語) use the visitor's system script fonts.",
+    "rationale": "Noto exists to set every script without tofu, the very problem 50 locales pose. It is also the real voice of multilingual inserts, and its width axis gives the leaflet's cramped condensed codes and its readable body from one 60 KB file. No sibling world uses it."
+   },
+   "materials": [
+    "One long concertina: panels separated by fold creases (a 1px crease-grey line with a 14px soft shade on one side, alternating like mountain and valley folds)",
+    "Reversed language-code tabs: black or violet rectangles with white condensed codes, used on the cover index and as panel heads (the tab is the H2 itself)",
+    "A desktop thumb index: a vertical strip of panel tabs fixed to the right edge, as on a leaflet's edge",
+    "Show-through: the next panel's text mirrored at low contrast behind panel heads (aria-hidden, transform: scaleX(-1))",
+    "Hairline-ruled two-column specification tables with tabular figures",
+    "Side-by-side locale panels, each headed by its code tab and count ('414 / 4 000')",
+    "A manufacturer address block on the back panel"
+   ],
+   "firstViewportDesktop": "1440×900 on paper ground. Header (y 0–48): icon 28px and 'AppMeta' in Noto wdth 75 / 800 20px at left; at right, Contents links in Noto 600 15px (Index · In the box · Getting started · Specifications · Price · Safety & data · Questions). The cover panel (x 0–560) ends at a fold crease at x 560. Inside it (x 48–512): H1 'App Store Connect. Finally native.' in Noto 800 wdth 75, 72px/1.0 black, three lines (y 80–296). Below, a reversed black tab 'Read before use' heads the quick_answer (speakable) at 17px/1.5 (y 316–560). The action block (y 590–860) puts the official badge at 56px on a white mount and an 88px QR side by side, with 'Free download with demo mode', '$17.99 a year or $29.99 once, lifetime' at 18px 700, and 'macOS 14 Sonoma or later' at 14px grey. The right panel (x 600–1392) opens with H2 'This listing, in 50 locales' in Noto 800 wdth 75 32px (y 80). Under it (y 128–450) a 10 × 5 grid of reversed code tabs (72×44px, Noto wdth 62.5 / 800 20px white on black) shows the 11 added in 2026 in violet, with the legend 'Violet: added by Apple in 2026'. y 480–880: three side-by-side panels divided by creases, headed by code tabs and counts ('en-US 414 / 4 000', 'da 404 / 4 000', 'de-DE 444 / 4 000'), each holding the opening lines of GymLogger X 1.8.1 What's New in that language at 15px (real, from 1.png), captioned 'Real release notes for GymLogger X 1.8.1, as edited in AppMeta.'",
+   "firstViewportMobile": "390×844 on paper ground with 16px gutters. Header (48px): icon 24px, 'AppMeta', and a 'Contents' button at right. H1 in Noto 800 wdth 75, 42px/1.0, three lines (y 64–204). A row with the badge at 48px and a 'Send this page to your Mac' text button (y 220–276), then '$17.99/yr or $29.99 once · free demo' at 15px 600 (y 284–308). The 'Read before use' tab and the quick_answer at 16px follow (y 320–610). From y 630 the language index begins, 5 tabs per row at 64×36px, with three rows visible above the fold and the violet tabs among them.",
+   "conversion": "The cover panel's action block holds the official badge, unaltered, on a white mount, with the price statement from price.value as the leaflet's price line and 'Free download with demo mode'. The QR sits beside the badge on ≥1024px only; phones get 'Send this page to your Mac' (share sheet for AirDrop or Handoff, with a mailto fallback). The sticky bar is the leaflet's folded edge: a 56px paper strip with a crease line on its top edge, showing icon and 'AppMeta · macOS 14+' at left, the price at centre and the badge at 40px at right. It appears once the cover action leaves view and stays absent without JS. The 'Price' panel holds both plans, and the back cover repeats badge, QR and price. Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Header strip: icon, 'AppMeta', Contents links",
+    "Cover panel: H1, 'Read before use' (quick_answer, speakable), and the action block (badge, QR or Send to Mac, demo line, price, macOS 14+)",
+    "Language index: 50 code tabs (the 11 added in 2026 in violet) linking to the Languages panel",
+    "Side-by-side panels: GymLogger X 1.8.1 What's New in en-US / da / de-DE with counts (real, labelled), plus hero.secondary and value_point 'All 50 ASC locales, side-by-side'",
+    "'Before you push': value_point 'Diff preview before any push' and how_it_works step 6, with one illustrative line diff (struck / violet-underlined), labelled",
+    "'Getting started': how_it_works intro and 7 numbered steps (HowTo)",
+    "'In the box': features ×8 as a two-column contents list",
+    "'Pictures': the four Mac screenshots, landscape, captioned with what each actually shows",
+    "'Keyword check (no AI needed)': example_insights ×4, each headed by its locale tab (en-US, fr-FR, es-ES, en-US), labelled as examples",
+    "'Optional AI providers': a specification table of the five providers",
+    "'Specifications': training_vocabulary fields and limits, the beyond-metadata list, auth and API, and compatibility (macOS 14+; Apple Intelligence needs macOS 26)",
+    "'Languages': all 50 locales as code · English name · endonym rows (the anchor targets for the index)",
+    "'Suitable for' and 'Not suitable for': who_for and who_not_for",
+    "'Not included': plateau_disclosure",
+    "'Price': plans, plans_footnote and value_point 4",
+    "'Comparable products': comparison_table (horizontal scroller with a sticky first column on mobile), intro, footnote, and a link to /alternatives/app-store-connect-web/",
+    "'Safety and data': privacy, the transparency row, and privacy policy and support links",
+    "'Questions': FAQ ×16 as details/summary",
+    "Back panel 'Manufacturer': the founder Organization block (Lagerland Apps, Finland, one-person studio), story, signals, response time and freshness line, with the Quick reference ai-canonical <details> open as the 'Product information' box",
+    "'Also from this manufacturer': AppMeta Pulse, Mockly and the related journal posts",
+    "Back cover action: badge, QR, price",
+    "Shared 'A Lagerland app' footer strip"
+   ],
+   "navigation": "The leaflet's own index is the navigation. The header carries Contents links named after the panels. On desktop a thumb index of reversed tabs (Index · Box · Start · Specs · Price · Data · Questions) is fixed to the right edge, with the current panel's tab turned violet by IntersectionObserver; without JS they are plain anchor links. On mobile a 'Contents' text button opens the panel list. The 50 locale tabs link into the Languages panel.",
+   "signatureInteraction": "'The language index'. Tapping, hovering or focusing any of the 50 code tabs fills a single card under the grid with that locale's English name, its endonym in its own script, and whether Apple added it in 2026. All of this is real data, server-rendered in the Languages panel, which JS clones into the card. No-JS: each tab is an anchor to its Languages row, and :target highlights the row in violet. Reduced motion: the card swaps instantly.",
+   "motionGrammar": "Folds never animate. Only the tabs respond: on hover or focus a tab lifts 2px and inverts in 120ms. The index card cross-fades in 150ms, and the folded-edge strip slides up in 160ms. Reduced motion removes the lift and makes swaps instant. No scroll reveals.",
+   "readModeVariant": "Privacy is the 'Safety and data' leaflet: the same paper, header and creases, a reversed tab heading 'Privacy', and a calm reading column of Noto 400 18px at 68ch. A key-facts table (data collected: none · tracking: no · account: none · network: App Store Connect API) links to the transparency record. Support is the 'Service and support' panel: a mailto link with a prefilled body, the response time and FAQ links. /alternatives/app-store-connect-web/ is a 'Comparable products' leaflet: a two-column AppMeta vs ASC web specification panel, the 'pick if' and 'stick with if' lists, the FAQ, and a back cover with the badge.",
+   "assetsNeeded": "None. It is entirely typographic, using the icon, screenshots, QR and the real text read from 1.png. Recommended: Apple's 'Download on the Mac App Store' badge artwork.",
+   "risk": "Fifty reversed tabs can read as a heavy wall of codes, though this audience lives in these codes. The instruction-leaflet register risks feeling like a manual rather than a pitch, so the cover panel has to sell. Endonyms depend on system script fonts. The real multi-locale text is GymLogger X's, not AppMeta's own, and must be labelled plainly. All three rolled worlds are paper, so this one leans on its index topology and the app's own violet to stand apart.",
+   "memoryTest": "The AppMeta page opened on a grid of fifty little black language tabs with eleven in purple, and three real release notes side by side, like the leaflet in a new phone box.",
+   "specimen": {
+    "bg": "#F2F2EF",
+    "ink": "#111111",
+    "accent": "#4F3FCC",
+    "display": "Noto Sans",
+    "dw": 800,
+    "text": "Noto Sans",
+    "h1": "App Store Connect. Finally native.",
+    "sub": "App Store Connect, native on your Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Keep the leaflet on appmeta-c, where 50 locales of text side by side is literally a leaflet. Replace mockly-c with mockly candidate #4, the salon hang with tombstone labels: every export hung at true relative size on one wall, each with a museum label giving device · locale · slot · px. No other surface uses an exhibition/architecture world, and it takes Mockly off three paper styles."
+    },
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  }
+ ],
+ "canon": "Canon (the standing exit, never recommended): the dark Mac dev-tool landing page played straight. It has an indigo-to-violet mesh from the icon, a floating macOS window screenshot with a soft glow, a centred headline and a 'Download on the Mac App Store' button. Below sit a 3×3 feature grid with SF-Symbol-style icons, a green-check comparison table and two pricing cards with Lifetime highlighted, polished to Raycast's level.",
+ "notes": "The roll ran degraded (roll service unreachable; no catalog challengers and no quality-bar boards). The dealt index binds anyway. Seed key 41d3588d, assigned 4; re-roll 1 dealt 3, which is distinct, so there was no further re-roll. Neither dealt index is 1, so B is my top-ranked candidate as IMPECCABLE’S PICK. All three dealt worlds are paper families (form, proof, leaflet), and nothing factual justified a re-roll. They are separated by topology (a boxed 12-column form grid; one long galley with working margins; a cover panel plus a code-tab index and concertina panels), colour strategy (Committed drop-out red; Drenched blueline blue; Restrained black plus the app's violet) and type (Finlandica + Courier Prime; Charis SIL/Charter; Noto Sans variable). They also map AppMeta's own pipeline: enter the fields (A), check the diff (B), publish in every language (C). All three are light because each scene is paper at a daylight desk; none is forced dark. Fonts were verified on Fontsource (finlandica 400/700, courier-prime 400/700, charis-sil 400/700/400i, @fontsource-variable/noto-sans wdth+wght). Sizes: A ≈ 61 KB, B ≈ 69 KB (zero on Macs via local Charter), C ≈ 60 KB. Charis SIL's Fontsource subset has no small caps (smcp), so none are specified. Things the owner should know: (1) Screenshot alts 2–4 do not match the images: 2.png is the In-App Purchases editor, 3.png is TestFlight, and 4.png is the Localizations editor. No screenshot shows the diff preview, keyword optimizer or AI picker, so every style draws the diff typographically and captions each image with what it shows. 1.png shows real GymLogger X 1.8.1 notes in en-US, Danish and German, used as labelled real material. (2) 11–14.png are 1280×800 App Store marketing images. Only 11.png's visible entry text (AppMeta 7/30; 'App Store Connect, done right' 29/30) is used, as data. (3) The existing badge include is the iOS 'Download on the App Store' artwork. A Mac-only page should use Apple's official 'Download on the Mac App Store' badge; that is a production task. (4) The transparency row says network calls go to 'Apple App Store Connect API only. No other endpoints', but the app page says a configured AI provider is also contacted; align the record. (5) app_enrichment.yml says 'no subscription' while the Annual plan renews ('Cancel anytime'); styles follow plans and price.value. (6) hero.secondary and the founder heading hard-code '19 apps'. Copy the styles own uses computed counts, but those literals need syncing. (7) The copy calls all 11 new locales 'Indian-region', but Slovenian is not; styles say '11 added in 2026'. (8) There is no version field in the front matter, so the maker line shows first released and last updated only. (9) Only /alternatives/app-store-connect-web/ targets AppMeta; the other five alternatives_to names stay unlinked. (10) example_insights card 4 cites a 'Storefront Intelligence dataset'; verify it before rendering. (11) For a Mac-only app the QR is secondary. Phone visitors (who cannot install a Mac app) get 'Send this page to your Mac' via navigator.share (AirDrop or Handoff), with a mailto fallback; this is a site feature, not an app claim. (12) show_body is not set; the markdown body is available if the owner wants an About block.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

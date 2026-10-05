@@ -1,0 +1,424 @@
+{
+ "surface": "taskful-day — microsite /apps/taskful-day/ (Persuade) + /apps/taskful-day/privacy/, /apps/taskful-day/support/ and the alternatives pages that target it: /alternatives/streaks-app/, /alternatives/habitica/, /alternatives/habitnow/, /alternatives/productive/, /alternatives/way-of-life/ (Read variants)",
+ "dossier": {
+  "mechanism": "Taskful Day plans one day at a time: you pick from the inbox what belongs in today, see that plan in four shapes (Day Clock, Energy River, Day Map, Focus Orbit), work it in Focus Orbit sessions (25-minute default), and whatever is unfinished rolls forward to tomorrow as a follow-up — no streak, no red badge, no reset — while the same day stays in step on iPhone, iPad and Mac through the user's own iCloud under one Universal Purchase.",
+  "audienceScene": "People who uninstalled streak apps after one missed day, people with ADHD or variable schedules who need a realistic day rather than a backlog, and Mac desk workers who plan at the desk and capture on the phone. They arrive on a phone from Google or an AI answer ('daily planner Mac', 'ADHD planner app', 'Streaks alternative', 'calm to do list') or on desktop at the start of the work day, where the app must reach the iPhone via QR. The developer's own scene (journal): three tasks planned at the coffee maker in the kitchen, nine wanted at the desk, the planner open in a corner of the Mac for eight hours. The app uses European dot times (20.15).",
+  "culturalHome": "Paper day-planning and focus rituals, not SaaS dashboards: the to-do card or list on the desk, the Ivy Lee 'six things for tomorrow' card, the bullet-journal migration arrow, the tear-off day calendar, the Pomodoro kitchen timer. The studio's own vocabulary from its essays: 'follow-ups' not failures, 'week-three trust', 'a streak counter is a debt the user owes the app'.",
+  "mustProve": "In the first viewport: the plan is today only and an unfinished task visibly moves on to tomorrow with no penalty (the screenshot's Call dentist 20.15 against three finished tasks); native on iPhone, iPad and Mac with one Universal Purchase; the honest price line from price.value 'Free — Pro from $2.99/mo' ($24.99/yr, $39.99 lifetime in plans); the official App Store badge in working form, plus the QR on desktop.",
+  "categoryDefault": "Productivity SaaS: white page, blue/purple gradient, checkmark logo, split hero with iPhone mockup, 'Get more done' copy, four icon feature cards, highlighted annual plan, star testimonials. The app's own UI (pale sky gradient, iOS system blue #007AFF, frosted cards, SF Pro) and its glossy icon (calendar page, blue check, sun glow) already sit in this rut.",
+  "predictableOpposite": "Calm-wellness: cream page, serif display, soft pastel blobs, sunrise gradients, rounded illustrations and 'mindful' copy (the incumbent Paper & Ink and the AI prior) — or a near-black focus dashboard with a glowing timer ring.",
+  "literalReading": "'Taskful Day' plus the icon read literally is a calendar day-page with a check on it: the tear-off day calendar (candidate 4, the only one that uses it). The Pomodoro tomato is the literal reading of Focus Orbit; candidate 6 keeps the timer but refuses the tomato.",
+  "evidence": [
+   "_apps/taskful-day.md: category productivity; status live; platforms [iOS, iPadOS, macOS, watchOS] but FAQ says 'Not yet… there is no watchOS app' — pages must show iPhone, iPad, Mac only; price.model freemium, price.value 'Free — Pro from $2.99/mo'; schema_price 0 / high 39.99 / 4 offers; app_store_url id6757345400; release first 2026-01-01, mac_first_release 2026-04-29, last_updated 2026-04-29; ratings 5.0 from 4 (<25, so no stars anywhere).",
+   "Blocks present: hero (headline 'Your day, actually planned. Now on Mac.', secondary, subheadline, cta_label 'Download Free'), quick_answer, plans ×4 (Free $0; Pro · Monthly $2.99/mo; Pro · Annual $24.99/yr highlight: true; Lifetime $39.99 once) + plans_footnote, value_points ×4, how_it_works intro + 7 steps (HowTo), features ×7, screenshots ×6, comparison_table (5 columns × 7 rows + footnote), privacy, faq ×13, who_for ×6, who_not_for ×3, alternatives_to ×10, related_journal (planning-on-phone-finishing-on-desk), body prose. Absent: founder, spotlight, roadmap, insight gallery, training_vocabulary, plateau_disclosure, coach_cta, creative_work, pricing_note, hero.device, show_body.",
+   "Screenshots (all iPhone portrait, light UI: pale sky gradient ~#DCE8FA, iOS blue #007AFF, green #34C759 checks, SF Pro bold large titles, frosted cards). 1: Today, 26. January 2026, week strip, Pending 'Call dentist — Remember to bring documents — 20.15', Completed struck 'Birthday gift 9.45', 'Car service 12.00', 'Plan menu 8.45', mic + plus buttons. 2: All Tasks monthly calendar (44 total, 28 completed, 63%). 3: Analytics monthly (Overdue Pressure, Completion Trends W1–W5, Categories). 4: Analytics quarterly (84/45/29/54%, 'Your Score 49 — Finding a Rhythm', Consistency 30/90 days, Rollover: 6 tasks carried forward, 7% rollover rate). 5: Voice Task ('Say something like: \"Finish report by Friday at 3pm\"'). 6: Edit Task (Call dentist, High priority, Today, 20.15).",
+   "Alt texts for screenshots 2–6 claim Day Clock, Energy River, Focus Orbit, the mood journal and the Mac app; none of the four named views and no Mac screen exists in the set.",
+   "Icon: glossy blue squircle, white calendar page with a blue check, page curl, sun glow top-right, sparkles.",
+   "_data/transparency.yml: tracking_declared false, tracking_domains 0, third_party_sdks 0, account_required false, network 'None. Optional iCloud sync uses your own iCloud.', data leaves device 'Your iCloud only, if enabled.', analytics 'None.', required-reason API UserDefaults (CA92.1). _data/testimonials.yml: no entry. _data/app_enrichment.yml: 32 languages; recommend_why 'Single-day focused planner without streak counters, red Xs, or gamified punishment'.",
+   "Alternatives that target it (5): /alternatives/streaks-app/, /habitica/, /habitnow/, /productive/, /way-of-life/, all on the old hero + grid-2 cards + inline-styled table + FAQ template. alternatives_to also names Things 3, TickTick, Todoist, Structured and Sorted³, which have no pages.",
+   "Journal: streaks-are-a-debt ('what does the app show in the place where the streak would normally go? … nothing', 'follow-ups', 'week-three trust'); planning-on-phone-finishing-on-desk (native SwiftUI/AppKit not Catalyst, menu-bar quick capture, one Universal Purchase, CloudKit in your own iCloud, 'three tasks at the coffee maker, nine at the desk'); not-doing-in-2026 and resolutions-and-the-fitness-app-trap restate the no-streak position.",
+   "Privacy page front matter: has seo; overview 'Your tasks are your business.'; data_collection (titles, notes, dates, priorities, completion), data_storage (local by default, optional iCloud Sync, no own servers), third_parties (none; Apple for iCloud, notifications, IAP), children under 13, contact lagerland.apps@proton.me, back_url. Support page: seo + slug only.",
+   "Data conflicts to settle before build: watchOS in platforms vs FAQ 'no watchOS app' (and /alternatives/streaks-app/ says 'Companion via widgets'); Focus Orbit sits in the Free plan in plans but is listed as Pro in app_enrichment and the Mac journal post; Streaks one-time price is $5.99 in comparison_table and $4.99 on its alternatives page; the journal says 'no daily score' while screenshot 4 shows 'Your Score 49'."
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "Tomorrow's Card — the ruled 3×5 index card (Ivy Lee's six-things card, the binder-clipped 'Hipster PDA' stack)",
+   "family": "print / stationery",
+   "why": "The to-do card is on every desk, and the planning audience knows the Ivy Lee story by heart. It carries the mechanism exactly: one card physically limits a day to a realistic size, and anything unfinished is rewritten onto tomorrow's card under an arrow."
+  },
+  {
+   "index": 2,
+   "name": "The Ticket Rail — thermal task tickets (the ADHD receipt-printer to-do practice, kitchen ticket rail and spike)",
+   "family": "service counter / thermal print and steel",
+   "why": "The ADHD audience spread this practice themselves around 2024: one printed ticket per task makes starting physical. It carries the mechanism directly: a voice capture prints a ticket, finished tickets go on the spike, and unfinished ones are re-clipped on tomorrow's rail."
+  },
+  {
+   "index": 3,
+   "name": "Sunny Hours Only — the wall or garden sundial and its motto 'Horas non numero nisi serenas'",
+   "family": "architecture / light",
+   "why": "It is the best-known clock motto, and it states the studio's anti-streak ethic in four words. It carries the mechanism: the gnomon's shadow marks 'now' on a Day Clock, and a missed or cloudy hour leaves no mark at all."
+  },
+  {
+   "index": 4,
+   "name": "The Tear-Off Day — the desk block calendar (Abreißkalender, himekuri), the literal reading of the icon",
+   "family": "print object",
+   "why": "One sheet is one day, and everyone has torn one off. It carries the mechanism: tearing today's sheet reveals tomorrow with the unfinished task already printed on it. Saturday-blue and Sunday-red weekdays are the real convention."
+  },
+  {
+   "index": 5,
+   "name": "The Letterboard — the felt letterboard with push-in letters from cafés and kitchens",
+   "family": "signage / object",
+   "why": "It is the everyday ritual of putting up a 'today' message. It carries the mechanism: a fixed number of rows makes a realistic day, letters picked from the tray are the inbox, and tomorrow you rearrange the board without wiping it."
+  },
+  {
+   "index": 6,
+   "name": "The Wind-Up Timer — the 60-minute kitchen dial timer behind the Pomodoro Technique (Cirillo, late 1980s)",
+   "family": "instrument / measurement",
+   "why": "It is the best-known focus object in productivity and carries Focus Orbit's 25-minute default directly. A timer keeps no record, so every wind is a fresh start. The rollover only works if the dial grammar is extended to the 24-hour day."
+  },
+  {
+   "index": 7,
+   "name": "Now Showing — the changeable-letter cinema marquee and its box office",
+   "family": "signage / light",
+   "why": "Its link to planning is the weakest, but everyone knows a marquee. It carries the mechanism: today's programme becomes the showtimes, and 'HELD OVER', the cinema's own phrase for a run that simply continues, sits next to 'COMING TOMORROW'."
+  }
+ ],
+ "seed": {
+  "key": "3bead416",
+  "assigned": 7,
+  "reroll1": 6
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "Held Over",
+   "kicker": "THE ROLL",
+   "sourceIndex": 7,
+   "lineage": "The changeable-letter marquee of a neighbourhood single-screen cinema. Its parts: a backlit translucent attraction board with horizontal letter tracks; black and coloured slotted letters hung by hand each day with a pole (zip-change letters, US, from the 1930s); chaser-bulb borders; a structural-glass fascia; lit poster cases along the entrance; a box office with a speaking grille and a ticket tray. Its vocabulary: NOW SHOWING, TODAY ONLY, HELD OVER (a run kept on because it is still going), COMING TOMORROW, ADMISSION, running time.",
+   "thesis": "Today is the only feature on the bill. The page is a cinema front whose attraction board carries the day's showtimes, and anything unfinished is HELD OVER to tomorrow in the marquee's own words. It refuses the split hero and the feature-card grid in favour of a working letter board, a box office and an arcade of lit cases.",
+   "scene": "Someone on the pavement at blue hour, phone in hand, deciding what tomorrow holds under a neighbourhood cinema's lit attraction board, the brightest thing on the street. Dark scheme (color-scheme: dark): blue-hour fascia as the ground, lit white panels as every reading surface.",
+   "scheme": "dark",
+   "colorStrategy": "Committed",
+   "palette": [
+    {
+     "hex": "#13203F",
+     "role": "Blue-hour fascia (midnight structural glass): page ground, nav band, frame surrounds. Enamel lettering on it is 14.3:1"
+    },
+    {
+     "hex": "#F4F6F8",
+     "role": "Lit panel (cool fluorescent white): attraction board, box office glass, programme and notice panels. Every long reading surface"
+    },
+    {
+     "hex": "#121417",
+     "role": "Letter black: tiles and all body text on lit panels (17:1)"
+    },
+    {
+     "hex": "#1A56C8",
+     "role": "Blue letter (the app's own blue): the HELD OVER track, showtime figures, links on panels (6.0:1). No red letters anywhere, because the app refuses red badges"
+    },
+    {
+     "hex": "#FFC35C",
+     "role": "Bulb amber: flat chaser-bulb dots, focus ring on the fascia (10.1:1), sticky-bar edge"
+    },
+    {
+     "hex": "#EEF2F8",
+     "role": "Fascia lettering: nav, captions and headings set directly on the ground"
+    },
+    {
+     "hex": "#9FB0CC",
+     "role": "Stainless trim: letter-track rails, case frames, secondary captions on the fascia (7.3:1)"
+    }
+   ],
+   "type": {
+    "display": "Big Shoulders Display 800 for the letter tiles: H1, board titles and price-board lines in caps, +0.04em tracking, 80px desktop / 40px mobile on the attraction board. 600 for the fascia name and the four views' names set on panels.",
+    "text": "Cabin 400 for reading copy at 18px/1.6 on lit panels and 17px on the fascia. Cabin 500 for nav, labels, plan names and captions.",
+    "utility": "Big Shoulders Display 600 with tabular figures for showtimes, prices and running time (real data). No mono.",
+    "rationale": "Big Shoulders was drawn for the City of Chicago from its theatre-district and industrial signage. Its tall, flat-sided capitals sit on a tile the way zip-change letters sit on a track, and they stay legible at 18px on a phone. Cabin is a humanist sans modelled on Johnston and Gill, the lettering of interwar cinema fronts, programme leaflets and the transit posters that advertised them, so the reading copy sounds like the cinema's printed programme. About 63 KB in total (2 × 14.5 KB + 2 × 17 KB)."
+   },
+   "materials": [
+    "Lit attraction board: a #F4F6F8 panel with horizontal letter tracks drawn as 1px #9FB0CC rails at a fixed pitch",
+    "Zip-change letter tiles: each capital on its own faintly lighter tile with notch tabs top and bottom (CSS pseudo-elements), black or blue only",
+    "Midnight structural-glass fascia with a 2px stainless trim line",
+    "Chaser-bulb borders: rows of flat 10px amber discs at 24px pitch, no blur glow",
+    "Box office: a recessed lit window with a perforated speaking grille (radial-gradient dot grid) and a stainless ticket tray",
+    "Poster cases: lit frames with a stainless edge and an engraved title plate, holding screenshots in the CSS iPhone bezel",
+    "Notice frames: smaller lit panels for house rules, the price board and the classification card"
+   ],
+   "firstViewportDesktop": "Midnight fascia ground. 0–64px: nav band with the 32px icon and 'TASKFUL DAY' in Big Shoulders 600 28px #EEF2F8 at left; links (Showtimes, Running order, Admission, Questions, Box office) in Cabin 500 15px at right; stainless trim line below. 64–452px: the attraction board across the 1312px container, lit #F4F6F8, with a row of amber bulb dots on its top and bottom edges and four tracks. Track 1: 'NOW SHOWING · TODAY ONLY' in 28px black tiles. Tracks 2–3: the H1 'YOUR DAY, ACTUALLY PLANNED. NOW ON MAC.' in 80px black tiles, left-aligned, ragged right. Track 4: 'HELD OVER: CALL DENTIST 20.15 → TUE 27' in 28px blue tiles. A 13px Cabin caption under the board reads 'Sample day from the app's own screenshot.' 484–880px, under the canopy, an asymmetric entrance with no phone mockup. Columns 1–7: a lit programme panel holding quick_answer as the 'Programme note' (Cabin 400 20px/1.55, 62ch, speakable) and hero.secondary below it (Cabin 500 16px). Columns 8–12: the box office, framed in bulb dots. The speaking grille sits at top. A printed card behind the glass carries the QR at 120px with 'Point your iPhone camera here'. 'Free — Pro from $2.99/mo' is set in Big Shoulders 600 32px. The ticket tray at the window's base holds the official App Store badge at 56px.",
+   "firstViewportMobile": "52px nav band: 28px icon and 'TASKFUL DAY' in Big Shoulders 600 22px, with a 'Programme' button at right (Cabin 500 15px, amber focus ring). The attraction board runs full-bleed at 390px with 8px bulb rows. 'NOW SHOWING · TODAY ONLY' is in 18px tiles. The H1 takes four tracks of 40px black tiles ('YOUR DAY,' / 'ACTUALLY' / 'PLANNED.' / 'NOW ON MAC.'), followed by 'HELD OVER: CALL DENTIST → TUE' in 18px blue tiles (y ≈ 60–430). Directly under it the box office spans the full width as a lit window: 'Free — Pro from $2.99/mo' in Big Shoulders 600 26px, with the badge at 48px in the ticket tray (y ≈ 446–590). No QR on mobile. From y ≈ 606 the programme note (quick_answer, Cabin 17px/1.55) sits on a lit panel and runs past the fold.",
+   "conversion": "Badge: always in a ticket tray. One is in the hero box office, one in the closing box office. The official artwork is unaltered at 56px (48px on mobile), and the tray is a stainless lip under the lit glass. QR: a printed card behind the box-office glass at ≥1024px ('Scan to install on your iPhone'), repeated at the close. Price: the box office shows price.value 'Free — Pro from $2.99/mo' verbatim, and the Admission price board carries all four plans. Sticky bar: once the hero box office scrolls away, a single-track mini-marquee docks to the bottom. It is a lit strip with an amber bulb row on its top edge, 'TASKFUL DAY · FREE · PRO FROM $2.99/MO' in 20px tiles, and the badge at 40px on the right. It hides while the closing box office is on screen. Smart App Banner: head meta unchanged; on iPhone Safari it sits above the nav band.",
+   "visitorPath": [
+    "Marquee and box office: nav band, attraction board (H1 in tiles, NOW SHOWING track, HELD OVER track), programme note = quick_answer (speakable) + hero.secondary, box office with badge, QR and price.value",
+    "Today's showtimes (signature): the sample day from screenshot 1 as a showtimes board (8.45 PLAN MENU, 9.45 BIRTHDAY GIFT, 12.00 CAR SERVICE in grey 'shown' letters, 20.15 CALL DENTIST in black) with the 'Close today's show' control. Beside it, a notice frame with features 'Tasks roll forward, not away' and how_it_works step 6: 'No red badges. No streak to lose.'",
+    "Running order: how_it_works intro and its 7 steps as the evening's printed running order on a lit panel, numbered 1–7 because the sequence is real (HowTo). Step 4 opens into the 'Feature presentation' frame: 'Running time 25 min (Pomodoro default, configurable)'",
+    "Four screens: Day Clock, Energy River, Day Map and Focus Orbit as a listing board, each name in Big Shoulders 600 40px set on the panel (not tiles), with its description from how_it_works and features: the same plan in a different shape",
+    "One ticket, three screens: value point 'Everywhere you work', Universal Purchase and iCloud sync through your own account (from the FAQ), and the related_journal link 'Why Taskful Day had to be a native Mac app, not Catalyst'",
+    "Poster cases: the 6 screenshots in the CSS iPhone bezel inside lit cases along the arcade wall. On desktop the cases sit at staggered heights; on mobile they form a scroll-snap row. Each title plate names what the shot actually shows: Today, All tasks · month, Analytics · month, Analytics · quarter, Voice task, Edit task",
+    "Admission: plans as a changeable-letter price board with rows FREE $0, PRO MONTHLY $2.99/MO, PRO ANNUAL $24.99/YR (the highlight plan underlined by a bulb row) and LIFETIME $39.99 ONCE. Each plan's summary and features follow in Cabin, then plans_footnote",
+    "Classification card: who_for (6) under 'Suitable for' and who_not_for (3) under 'Not suitable for', on a black card with white type in the form of the certificate shown before a film. No rating letters",
+    "Also in town: comparison_table as a programme listing (5 columns × 7 rows) with the Taskful Day column lit, the footnote, and an inline badge",
+    "Programme notes: value_points (4) and features (7) as two-column printed programme prose",
+    "House rules: privacy in a notice frame (No ads. No tracking. No account.) with the transparency figures (0 tracking domains, 0 third-party SDKs, no network calls, iCloud only if enabled, UserDefaults CA92.1), linked to /transparency/#taskful-day, plus privacy policy and support links",
+    "At the box office: faq (13) as details rows on a lit panel",
+    "Coming from another feature: alternatives_to, with the 5 pages that exist as linked door plaques (Streaks, Habitica, Productive, Way of Life, HabitNow) and the other 5 names as plain text, plus 'Also from Lagerland' (computed)",
+    "The fine print: the Quick reference ai-canonical <details>, visible in a notice frame",
+    "Tomorrow's board: a closing marquee reading 'TUE 27 · HELD OVER: CALL DENTIST 20.15', the box office (badge, QR, price), and the cornerstone plaque: Built by Lagerland Apps · first released 1 Jan 2026 · on Mac since 29 Apr 2026 · last updated 29 Apr 2026",
+    "Shared 'A Lagerland app' strip"
+   ],
+   "navigation": "The nav band carries the brand and links. 'TASKFUL DAY' (icon + name) sits at left and links to the top. Five in-page links in Cabin 500 sit on the fascia at right: Showtimes, Running order, Admission, Questions, Box office (→ #get). A single amber bulb dot before a link marks the current section (aria-current). On mobile, 'Programme' opens a lit panel with the same anchors plus Privacy and Support. The nav does not stick; the mini-marquee download bar is the only sticky element.",
+   "signatureInteraction": "'Close today's show': a real <button aria-pressed> on the showtimes board. When pressed, the three finished showings' tiles unhook and drop off the track letter by letter (translateY plus a 6° swing, 18ms stagger). CALL DENTIST 20.15 slides down to the HELD OVER track, and its date tiles re-hang from MON 26 to TUE 27. Pressing 'Reopen Monday' reverses it. Each board has a visually hidden plain-text twin, and the tiles are aria-hidden. No-JS: the board is server-rendered in its final honest state, with the three finished showings in grey 'shown' letters and the HELD OVER track already reading CALL DENTIST 20.15 → TUE 27. Reduced motion: an instant swap with no drop or swing.",
+   "motionGrammar": "Letters hang rather than fly. When the attraction board and the showtimes board first enter view, their tiles settle onto the tracks with a 2° swing that damps out in 380ms (transform-origin top centre, 14ms per letter); no other region animates on load. The bulbs never chase continuously: a single 700ms chase pass runs around the box office when the badge receives hover or focus. Everything else holds still. With prefers-reduced-motion there is no swing and no chase, and tiles render in place.",
+   "readModeVariant": "Privacy and support: the canopy shrinks to one lit track under the nav band, reading 'TASKFUL DAY · PRIVACY POLICY' or 'TASKFUL DAY · SUPPORT' in 28px tiles. Below it, a single lit reading panel (#F4F6F8, Cabin 400 18px/1.65, 66ch) sits on the midnight ground. The h2s are Big Shoulders 700 26px set as plain type, not tiles. The privacy page opens with the House rules frame and its transparency figures; the support page puts the developer email in a box-office window. Alternatives pages become a DOUBLE FEATURE board ('TASKFUL DAY / STREAKS' on two tracks), with the page's quick_answer as the programme note, the head-to-head table as a two-column programme listing, 'Pick Taskful Day if… / Stick with Streaks if…' as two notice frames, the FAQ rows, and a closing box office with the badge.",
+   "assetsNeeded": "Nothing new is needed to ship. The tiles are CSS plus Big Shoulders, the bulbs and grille are CSS, and the poster cases use the six existing screenshots. Production follow-ups: screenshots of the four named views and of the Mac app, to replace typeset listings with real posters, and corrected alt text for screenshots 2–6.",
+   "risk": "This is the lowest-resonance candidate on my list: a cinema is nobody's planner. If bulbs and tiles spread beyond the two boards, the price board and the sticky strip, it will read as theme-park kitsch. The night scene sits next to the 'dark + glowing edges' rut, so there is no blur glow and the bulbs stay flat dots. Tiles read worse than set type, so each board stays at or under 40 characters and every tile string has a plain-text twin. Planning is a morning act; a marquee is an evening one.",
+   "memoryTest": "The planner whose site was a lit cinema marquee: the unfinished dentist call wasn't a failure, it was 'HELD OVER' to Tuesday, and the App Store badge sat in the box-office ticket tray.",
+   "specimen": {
+    "bg": "#13203F",
+    "ink": "#F4F6F8",
+    "accent": "#1A56C8",
+    "display": "Big Shoulders Display",
+    "dw": 800,
+    "text": "Cabin",
+    "h1": "Your day, actually planned. Now on Mac.",
+    "sub": "Plan the day. Finish the day — calmly. Now on Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Replace it with taskful-day candidate #5, the felt letterboard with push-in letters. It keeps the dealt changeable-letter 'held over' mechanic in a domestic object with no tickets. Set its letters in a face outside the Big Shoulders family, as white letters on a coloured felt rather than amber bulbs on navy."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "Tomorrow's Card",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "The ruled 3×5-inch index card (bright white stock, pale blue rules at a quarter inch, one red header rule) and the Ivy Lee method told since 1918: each evening, write tomorrow's most important tasks on a card, work them in order, and carry anything unfinished to the next day's card. Also the binder-clipped card stack Merlin Mann named the 'Hipster PDA' in 2004, and the A–Z guide cards with staggered tabs found in every card file.",
+   "thesis": "One card holds one realistic day. The page is a clipped stack of ruled cards on a desk: today's card on top, and tomorrow's next, with the unfinished line already copied across. It refuses the infinite backlog list, the split hero and the icon-card grid.",
+   "scene": "At the desk beside the Mac in clear morning daylight, writing today's card before the work starts. Light scheme (color-scheme: light): white card stock on a pale ash-grey linoleum desktop.",
+   "scheme": "light",
+   "colorStrategy": "Restrained",
+   "palette": [
+    {
+     "hex": "#CDD1CB",
+     "role": "Ash linoleum desk: the page ground around the stack (ink text on it is 9.8:1)"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "Card stock: every section is a card, and all reading text sits on it"
+    },
+    {
+     "hex": "#9DC4E3",
+     "role": "Cyan rule: card rules at 32px pitch that are the page's baseline grid (decorative, not text)"
+    },
+    {
+     "hex": "#DD4B5E",
+     "role": "Header rule: the one printed red line under each card's title band (not text, never used as a status colour)"
+    },
+    {
+     "hex": "#1E3FA6",
+     "role": "Ballpoint ink: the written layer (H1, task lines, strike marks, carry arrows, links, focus ring). 9.1:1 on white, 5.9:1 on the desk"
+    },
+    {
+     "hex": "#24272D",
+     "role": "Graphite: printed text such as the quick answer, FAQ and tables (15:1)"
+    },
+    {
+     "hex": "#5F6670",
+     "role": "Pencil grey: dates, footnotes and secondary captions (5.8:1)"
+    }
+   ],
+   "type": {
+    "display": "Shantell Sans 700 and 500 for the written layer: the H1 at 56px desktop / 34px mobile, card titles at 32px, task lines at 22px, margin dates and arrows. It is never used for paragraphs.",
+    "text": "Inclusive Sans 400 and 600 for the printed layer: body at 18px on a 32px line, locked to the card rules, plus tables, FAQ, and prices in tabular figures.",
+    "utility": "None. Times, prices and counts use Inclusive Sans tabular figures.",
+    "rationale": "An Ivy Lee card is handwritten, but script fonts are costume and hard to read. Shantell Sans is a marker-hand sans engineered by Arrow Type for legibility, with real forms and spacing, so the plan lines look written on the card at no legibility cost. Inclusive Sans was drawn for readability (distinct I/l/1, open apertures, generous spacing), which suits an audience that includes many ADHD and dyslexic readers. It sits under the hand like the card's own printing. About 120 KB (Shantell 2 × 47 KB + Inclusive 2 × 13 KB)."
+   },
+   "materials": [
+    "Card stock: flat white rectangles with a 1px #C2C6BF edge and a two-layer soft paper shadow (no hard offset)",
+    "Cyan rules at 32px pitch: the global baseline grid, with every line of text sitting on a rule",
+    "One red header rule per card, under a 96px title band",
+    "Ballpoint ink: strike-through marks on finished lines, the carry arrow '→ Tue', and a hand-drawn SVG loop circling the highlight plan",
+    "Binder clip (CSS: a dark steel trapezoid with two wire handles) gripping the stack's top-left corner",
+    "Guide cards: staggered tabs rising from the stack's top edge, used as the navigation",
+    "Pale ash linoleum desk: a flat matte ground"
+   ],
+   "firstViewportDesktop": "Ash linoleum ground. At top-left a binder clip grips the stack (y 24–96), carrying the 28px icon and 'Taskful Day' in Shantell 700 20px. Along the stack's top edge rise six staggered guide-card tabs: Today, Method, Views, Pro, Questions, Privacy (Inclusive Sans 600, 14px). Below them, one card fills the 1200px container in true 5:3 proportion (1200 × 720, top at y 88). Its 96px title band holds the H1 'Your day, actually planned. Now on Mac.' in Shantell 700 56px ink-blue at left and 'Mon 26 Jan' in Shantell 500 22px pencil-grey at right, with the red header rule beneath. Rules 1–4, across the left two-thirds, hold the sample day from screenshot 1 written at 22px with times in the left margin: 8.45 Plan menu, 9.45 Birthday gift and 12.00 Car service, each struck through with a blue ink line, then 20.15 Call dentist followed by the ink arrow '→ Tue'. Rules 5–6 are left blank. Rules 8–13 in the left two-thirds carry quick_answer printed in Inclusive Sans 18px/32px graphite (64ch, speakable). In the right third on rules 8–14 sits a printed box with a 1px graphite border: 'Free — Pro from $2.99/mo' in Inclusive Sans 600 22px, the badge at 54px, and the QR at 112px with 'Scan to install on iPhone'. Tomorrow's card begins 32px below, so its title band ('Tue 27') and the top of its red rule show at the fold, directly under the ink arrow.",
+   "firstViewportMobile": "The card is seen closer. It runs edge to edge at 390px with its rules continuing off both screen edges, and the binder clip at its top-left holds the icon and 'Taskful Day'. The guide tabs form a horizontally scrollable row above the card. In the title band, 'Mon 26 Jan' sits small at top right and the H1 is Shantell 700 34px over three rules. The rules hold the four plan lines at 19px (three struck, then '20.15 Call dentist → Tue'), one blank rule, then the printed box with 'Free — Pro from $2.99/mo' and the badge at 48px (y ≈ 520–630). quick_answer starts on the next rule at 17px/32px and runs past the fold. No QR on mobile.",
+   "conversion": "Badge: printed into a box with a 1px rule on the card itself, on the hero card's right third and again on the last card. It is 54px desktop / 48px mobile, official artwork unaltered, and the box reads as the card's printed corner block. QR: in the same box at ≥1024px, 112px, with 'Scan to install on iPhone'. Price: price.value 'Free — Pro from $2.99/mo' verbatim in the box, with all four plans on the Pro card. Sticky bar: once the hero box leaves view, a narrow white card strip slides up from the bottom. Its top edge is the red header rule, with a single cyan rule underneath. It holds 'Taskful Day — Free, Pro from $2.99/mo' in Inclusive Sans 600 and the badge at 40px, and tucks away while the last card's box is visible. Smart App Banner: head meta unchanged.",
+   "visitorPath": [
+    "Today's card (hero): clip and guide tabs, the H1, the date, the sample day written on rules 1–4 (three lines struck, Call dentist → Tue), quick_answer printed (speakable), and the printed box with price.value, badge and QR",
+    "Tomorrow's card: 'Tue 27' with line 1 reading '20.15 Call dentist — from Mon' and the remaining rules blank. Printed beside it: features 'Tasks roll forward, not away' and how_it_works step 6, 'No red badges. No streak to lose.' The signature interaction runs between cards 1 and 2",
+    "The method: how_it_works intro and 7 numbered lines (a real sequence, so it carries the HowTo), each step title written in Shantell with its detail printed in Inclusive Sans. It continues onto a second card marked 'cont.'",
+    "Four ways to see the same plan: Day Clock, Energy River, Day Map and Focus Orbit, each as a small ballpoint diagram (a circle with arcs, a wavy band, stacked blocks, a ring around a dot) labelled 'diagram, not a screenshot', with its description. Focus Orbit's line names the 25-minute default",
+    "Three devices, one purchase: value point 'Everywhere you work', Universal Purchase, iCloud through your own account, and the related_journal link",
+    "Snapshots: the 6 screenshots in the CSS iPhone bezel laid on the desk in a horizontal scroll-snap row, each with a small paper label naming what it actually shows",
+    "The Pro card: plans as four ruled rows (name, price, summary) with features printed beneath each. The highlight plan (Pro · Annual) is circled with the ink loop, and plans_footnote is in pencil grey",
+    "For you if / not for you if: who_for (6) as lines with drawn open boxes, and who_not_for (3) on the next card",
+    "Compared: a 5×8 card ruled as comparison_table, with the rules doubling as row lines and Taskful Day's column written in ink-blue. Footnote and inline badge",
+    "What isn't on the card: privacy (no ads, no tracking, no account) with the transparency figures, a link to /transparency/#taskful-day, and the privacy policy and support links",
+    "Questions: faq (13) as details rows on ruled cards, continuing across cards marked 'cont.'",
+    "Switching from: alternatives_to (5 linked, 5 as plain text) and 'Also from Lagerland' (computed)",
+    "Quick reference card: the ai-canonical <details>, visible",
+    "Last card: blank except line 1, '20.15 Call dentist'. It holds the printed box with badge, QR and price, and the card maker's imprint along its bottom edge: Built by Lagerland Apps · first released 1 Jan 2026 · Mac 29 Apr 2026 · updated 29 Apr 2026",
+    "Shared 'A Lagerland app' strip"
+   ],
+   "navigation": "Guide-card tabs: six staggered tabs (Today, Method, Views, Pro, Questions, Privacy) rise above the stack as real links. The current tab stands 4px taller and joins its card (aria-current). On mobile they become a horizontally scrollable tab row above the card. The binder clip is the brand link back to the top of the microsite.",
+   "signatureInteraction": "'Carry it over': a 'Finish Monday' button sits on the hero card. Pressing it fades the three struck lines to pencil grey and lifts the Call dentist line off rule 4, moving it (FLIP transform) onto rule 1 of Tomorrow's card. Monday's card slides down and tucks behind the stack, and Tuesday's card comes to the top with 'from Mon' beside the carried line. 'Back to Monday' restores the stack. No-JS: both cards stand in sequence, Monday showing the ink arrow '→ Tue' and Tuesday already carrying the line, so the same truth is stated statically. Reduced motion: an instant swap with a 120ms opacity change and no movement.",
+   "motionGrammar": "Paper moves slowly and stays flat. Cards slide in 260ms ease-out with at most 0.4° of rotation and no bounce. On first view the three strike-through marks draw left to right (SVG stroke-dashoffset, 280ms each, 120ms apart); this is the only animation on load. Guide tabs rise 4px on hover and focus. Everything else is still. Under prefers-reduced-motion the strikes render already drawn and cards never move.",
+   "readModeVariant": "Privacy, support and alternatives pages are a single long card on the desk, with the binder clip and guide tabs (Back to Taskful Day, Privacy, Support). The card's title band holds the page title in Shantell 700 40px over the red header rule, and the reading column is Inclusive Sans 18px/32px on the rules at 66ch. Long pages continue onto 'cont.' cards. The support page puts the developer email in the printed box. Alternatives pages set the comparison as a ruled two-column card ('Taskful Day | Streaks'), then put the 'Pick Taskful Day if… / Stick with Streaks if…' lists on a second card, then the FAQ rows, and end with the printed box holding the badge.",
+   "assetsNeeded": "Nothing new is needed to ship. The cards, rules, clip, tabs and ink diagrams are CSS and inline SVG drawn in code, and the screenshots already exist. Production follow-ups: real screenshots of the four views and of the Mac app, and corrected alt text for screenshots 2–6.",
+   "risk": "Familiar: a notepad or index card is the classic skeuomorph for to-do apps. It only reads as award work if the 32px baseline lock, the true 5:3 hero card and the carry-over interaction are executed exactly; otherwise it is cute stationery. Shantell Sans turns playful if it spreads, so it stays at 500/700 and never sets paragraphs. A 3×5 card cannot hold a long FAQ, so long sections continue on 'cont.' cards rather than stretching the card's form.",
+   "memoryTest": "Their website was one index card per day. Monday's dentist call got an ink arrow and was already written on Tuesday's card underneath, and the App Store badge was printed in the card's corner box.",
+   "specimen": {
+    "bg": "#CDD1CB",
+    "ink": "#24272D",
+    "accent": "#1E3FA6",
+    "display": "Shantell Sans",
+    "dw": 700,
+    "text": "Inclusive Sans",
+    "h1": "Your day, actually planned. Now on Mac.",
+    "sub": "Plan the day. Finish the day — calmly. Now on Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Drop the drench on studio-b. The shop wall goes neutral (white, or a graphite shelf), so the spines in each app's own colours are the only colour. That is also truer to its thesis that the label appears only as a catalogue number and a cartouche. allpaid-a (Abfahrt yellow) and taskful-day-c (the icon's sun) keep yellow. If both are picked, keep taskful-day-c's white dial face dominant."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "Wound to Twenty-Five",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 6,
+   "lineage": "The mechanical 60-minute kitchen dial timer: the tomato-shaped one Francesco Cirillo used as a student in the late 1980s, which named the Pomodoro Technique, and the coloured-body, black-cap dial timers of European kitchens. Its parts: a printed minute scale with long 5-minute ticks turned against a fixed index; a knurled grip; a moulded body in one colour; the bell at zero; the leaflet ('turn past 10, then set'). A timer keeps no record. Every wind starts from nothing.",
+   "thesis": "A timer remembers nothing it could hold against you. The page is one wind-up dial seen from above: set it to 25 and the page itself enters Focus Orbit. The day is the same dial at 24-hour scale, carrying what's left past midnight onto the next turn. It refuses the phone-mockup hero, the feature grid and the tomato.",
+   "scene": "Morning sun on the desk beside the keyboard, with a sun-yellow wind-up timer under a graphite cap seen from directly above, white dial face up. Light scheme (color-scheme: light), drenched in the body colour.",
+   "scheme": "light",
+   "colorStrategy": "Drenched",
+   "palette": [
+    {
+     "hex": "#F4C443",
+     "role": "Timer body yellow (the icon's sun, moulded): page ground. Ink on it is 10.8:1"
+    },
+    {
+     "hex": "#2A2A26",
+     "role": "Graphite cap: nav cap, knurled rim, sticky bar, Orbit-mode ground. White on it is 14:1"
+    },
+    {
+     "hex": "#FCFCFA",
+     "role": "Dial face: the hero face and every long reading surface"
+    },
+    {
+     "hex": "#17181C",
+     "role": "Scale ink: numerals, ticks, and text on the face (17.3:1) and on the body (10.8:1)"
+    },
+    {
+     "hex": "#2B5FC6",
+     "role": "Index blue (the app's own blue): the fixed index triangle, the day-spiral arcs, links on the face (5.7:1). On yellow it is used only for non-text marks (3.6:1)"
+    },
+    {
+     "hex": "#1F45A8",
+     "role": "Link blue on the yellow body (5.2:1)"
+    },
+    {
+     "hex": "#4D4224",
+     "role": "Umber print: secondary text and captions on yellow (6.1:1)"
+    }
+   ],
+   "type": {
+    "display": "Rubik 700 for the H1 (72px desktop / 40px mobile) and section heads on the body (40px). Rubik 600 for the dial numerals (18–40px around the scale) and the countdown.",
+    "text": "Rubik 400 and 500 for reading copy at 18px/1.6 on the face and on the body. 500 is for labels, nav and plan names.",
+    "utility": "Rubik 600 tabular figures for dial values, the countdown, times and prices (real measurements). No mono.",
+    "rationale": "Rubik's slightly softened corners read as injection-moulded plastic, the timer's own material. That lets one family speak for the whole object: the numerals printed on the scale, the label on the body and the leaflet text. Its figures stay distinct at 18px set around a dial. About 76 KB (4 × 19 KB)."
+   },
+   "materials": [
+    "Moulded body: a flat #F4C443 ground with no gloss and no gradient",
+    "Graphite cap and knurled rim: 1px vertical ribs at a 6px pitch (repeating-linear-gradient) on #2A2A26",
+    "Printed dial scale: 60 one-minute ticks, long 5-minute ticks, numerals 0–55 (server-rendered inline SVG, rotated by a CSS custom property)",
+    "Fixed index: a blue triangle at the top of the dial that never rotates",
+    "Centre knob: a raised white disc with a ring shadow, holding the badge",
+    "Instruction leaflet: white folded panels printed in ink and index blue, with numbered steps and small line diagrams",
+    "Base label: a white rounded-rectangle sticker printed with maker data"
+   ],
+   "firstViewportDesktop": "Yellow body ground. The nav is a 64px graphite cap band with knurled ribs, holding the 28px icon, 'Taskful Day' in Rubik 600 18px white, and the links The day, Leaflet, Pro, Questions, Get it in Rubik 500 15px. The dial face is a 1180px white circle centred horizontally with its centre at y ≈ 760, so its upper arc spans the viewport from y ≈ 170. Around the arc runs the scale: ticks plus numerals 0–55 in Rubik 600, 40px near the top and foreshortening to 18px toward the sides. The scale is rotated so 25 sits under the fixed blue index at top centre, labelled 'Focus Orbit · 25-minute default' in Rubik 500 14px. On the white face, the H1 'Your day, actually planned. Now on Mac.' is set in Rubik 700 72px ink, centred over two lines (y ≈ 300–460). Under it, quick_answer is left-aligned in a centred 640px column at 19px/1.6 (y ≈ 490–650, speakable). At y ≈ 690–880 the centre knob, a 220px raised white disc, holds the official badge at 56px, with 'Free — Pro from $2.99/mo' in Rubik 600 20px below it and a 'Start 25' text button beside it. The QR (112px, 'Scan to install on iPhone') sits on the face at about 2 o'clock from the knob.",
+   "firstViewportMobile": "Graphite cap of 52px (icon, 'Taskful Day', 'Menu'). The dial face is 560px across and centred, wider than the screen, so the phone shows its top arc: 25 under the blue index at top centre, with numerals 15–35 visible along the arc at 16–26px. Inside the face: the H1 in Rubik 700 40px over three lines, then the knob as a 168px disc holding the badge at 48px, with 'Free — Pro from $2.99/mo' beneath (y ≈ 420–610). quick_answer follows on the face at 17px and runs past the fold. No QR.",
+   "conversion": "Badge: mounted on the centre knob, the part you turn, at 56px (48px on mobile), official artwork unaltered, and repeated on the closing dial. QR: printed on the dial face at 2 o'clock like a calibration mark, at ≥1024px only ('Scan to install on iPhone'). Price: price.value 'Free — Pro from $2.99/mo' under the knob, with the full plans in the leaflet's Pro fold. Sticky bar: once the knob leaves view, a 56px knurled graphite strip docks to the bottom with a 36px mini dial reading 25, 'Taskful Day · Free — Pro from $2.99/mo' in white Rubik 500, and the badge at 40px. In Orbit mode the same strip shows the countdown. Smart App Banner: head meta unchanged.",
+   "visitorPath": [
+    "The dial (hero): cap nav, the scale set to 25 under the index, H1, quick_answer (speakable), the knob with badge, price.value and 'Start 25', and the QR",
+    "The day on the dial: the same scale grammar at 24-hour size (the Day Clock idea), labelled illustrative. The sample day from screenshot 1 sits on it as arcs at 8.45 Plan menu, 9.45 Birthday gift, 12.00 Car service and 20.15 Call dentist. The unfinished Call dentist arc runs past midnight onto the next turn of a spiral marked 'Tue'. Beside it: features 'Tasks roll forward, not away' and 'No red badges. No streak to lose.'",
+    "Instruction leaflet: how_it_works intro and 7 numbered steps on white folded panels, numbered because the sequence is real (HowTo). Each step has a small line diagram; step 4 is Focus Orbit with its 25-minute default",
+    "Four faces: Day Clock, Energy River, Day Map and Focus Orbit as four dial-face roundels of different sizes set along one arc, each labelled as a diagram and carrying its description",
+    "Three devices, one wind: value point 'Everywhere you work', Universal Purchase, iCloud through your own account, and the related_journal link",
+    "On the screen: the 6 screenshots in the CSS iPhone bezel on a horizontal scroll-snap track across the yellow body, each captioned with what it actually shows",
+    "Pro (leaflet fold): plans as four rows on a white panel (name, price, summary, features), with the highlight plan marked by the blue index triangle, and plans_footnote",
+    "Who it's for: who_for (6) and who_not_for (3) as two printed lists on the yellow body",
+    "Compared: comparison_table on a white panel with Taskful Day's column on a pale-blue tint, the footnote, and an inline badge",
+    "What it does: value_points (4) and features (7) as leaflet copy",
+    "No record kept: privacy as the base label (no ads, no tracking, no account) with the transparency figures, a link to /transparency/#taskful-day, and the privacy policy and support links",
+    "Questions: faq (13) as details rows on the white face",
+    "Switching from: alternatives_to (5 linked, 5 as plain text) and 'Also from Lagerland' (computed)",
+    "Quick reference: the ai-canonical <details>, visible on the leaflet's back panel",
+    "The bell (closing): a smaller dial set to 25 with the knob, badge, QR and price. Under it, the base label with maker data: Built by Lagerland Apps · first released 1 Jan 2026 · on Mac since 29 Apr 2026 · last updated 29 Apr 2026",
+    "Shared 'A Lagerland app' strip"
+   ],
+   "navigation": "The knurled graphite cap carries the icon and 'Taskful Day' (brand link to the top) and five in-page links: The day, Leaflet, Pro, Questions, Get it. A small blue index triangle under a link marks the current section (aria-current). On mobile, 'Menu' drops down a white face panel listing the anchors plus Privacy and Support.",
+   "signatureInteraction": "'Wind it': the scale ring is a real ARIA slider (role=slider, 5–60 minutes, step 5, default 25), turned by drag, the arrow keys or ± buttons, with the numerals rotating under the fixed index. 'Start' puts the page into Orbit: the yellow ground turns graphite, the reading column narrows to 60ch, and the nav, screenshots and sticky price fade to 20%. The sticky rim shows the countdown (mm:ss, Rubik 600 tabular). At zero the bell line reads 'Session logged. Whatever's left rolls to tomorrow.' Esc or Stop exits, nothing is stored, and focus is never trapped. No-JS: the dial renders set to 25 with the printed line 'Focus Orbit: 25-minute default, configurable', and the slider controls are absent. Reduced motion: the ring snaps between values without spinning, Orbit changes colour instantly, and the countdown digits still update.",
+   "motionGrammar": "Mechanical and damped. The ring turns in 220ms ease-out steps of 5 minutes, with no inertia or flinging. When the day spiral first enters view its arcs draw clockwise over 600ms, and the Call dentist arc crosses onto the next turn last. Nothing else moves. Under prefers-reduced-motion the arcs render already drawn, the ring snaps, and Orbit switches instantly.",
+   "readModeVariant": "Privacy, support and alternatives keep the knurled cap nav and use the yellow body as the frame, with one white face panel as the reading column (Rubik 400 18px/1.65, 66ch). The title sits on the yellow in Rubik 700 44px ink, beside a small 25-dial mark. The privacy page opens with the base-label block of transparency figures, and the support page puts the developer email on the knob. Alternatives pages place a two-column comparison on the face ('Taskful Day | Streaks'), then 'Pick Taskful Day if… / Stick with Streaks if…' as two leaflet panels, then the FAQ, and end with the knob holding the badge.",
+   "assetsNeeded": "Nothing new is needed to ship. The dial scale, the day spiral and the leaflet diagrams are inline SVG and CSS drawn in code, and the screenshots already exist. Production follow-ups: real Focus Orbit, Day Clock, Energy River and Day Map screenshots and a Mac screenshot, plus corrected alt text for screenshots 2–6.",
+   "risk": "Pomodoro is productivity's most clichéd image, and a timer by itself speaks only for Focus Orbit, one of four views. If the day spiral doesn't carry the rollover, the page sells a timer app. A drenched yellow is loud for a 'calm' brand, so the white face and the graphite cap must take most of the reading. Text inside a circle wastes width, so long copy leaves the circle after the hero. Orbit mode must stay opt-in and fully escapable.",
+   "memoryTest": "A giant sun-yellow kitchen-timer dial with the App Store badge on the knob. Winding it to 25 dimmed the whole site into focus mode, and the unfinished dentist call spiralled past midnight into Tuesday.",
+   "specimen": {
+    "bg": "#F4C443",
+    "ink": "#17181C",
+    "accent": "#1F45A8",
+    "display": "Rubik",
+    "dw": 700,
+    "text": "Rubik",
+    "h1": "Your day, actually planned. Now on Mac.",
+    "sub": "Plan the day. Finish the day — calmly. Now on Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Define Orbit tokens: text #FCFCFA (14.0:1), links #6E92D8 (4.64:1) or lighter, secondary #999382 (4.70:1). Make the faded regions inert (the inert attribute) instead of leaving them interactive at 20%, and restore them on Stop or Esc."
+    }
+   ]
+  }
+ ],
+ "canon": "Canon (never recommended): a white page with an iOS-blue accent; a split hero with the headline and a 'Download Free' badge on the left and an iPhone mockup of the Today screen on the right; a row of four icon cards (Plan / Focus / Everywhere / Private); a pricing table with Pro · Annual highlighted; and an FAQ accordion.",
+ "notes": "The roll ran degraded: the roll service was offline, so there were no catalog challengers and no quality-bar boards, but the dealt indices still bind. Key 3bead416 dealt ASSIGNED INDEX 7 (Now Showing, my lowest-ranked candidate), which became STYLE A 'THE ROLL'. Reroll 1 dealt 6 (Wind-Up Timer), distinct on the first try, which became STYLE C 'SECOND ROLL'. Neither roll was 1, so STYLE B is candidate 1, 'IMPECCABLE’S PICK'. Both dealt candidates sat at the bottom of my list, so I built each at full commitment by making it carry the rollover, not just a focus timer: the marquee uses the cinema's own HELD OVER convention, and the timer's dial grammar extends to a 24-hour spiral that crosses midnight. Sibling separation: allpaid already owns the wall planner and dry-erase marker world, so I left it alone. Earnlock's vending machine has a sage-enamel frame around a lit panel, so the marquee fascia is midnight blue, not green. Soon's 'Admit One' ticket stub is the nearest neighbour, so the marquee uses no tickets apart from the box-office tray. Blue is split across the three: A is blue-hour midnight, B uses ballpoint ink only, C is sun-yellow with blue only for the index. Faces: Big Shoulders Display (the studio's style A uses the separate Stencil cut), Cabin, Shantell Sans, Inclusive Sans and Rubik. I checked the existing sibling cards: none uses these in these roles. Albert Sans and Jost were dropped because pawza C and soon A use them. Font payloads: A ~63 KB, B ~120 KB, C ~76 KB. Before build: settle the four data conflicts in the evidence list (watchOS listed in platforms, Focus Orbit Free vs Pro, the Streaks price, 'no score' vs the analytics score), and correct the alt text on screenshots 2–6. No founder block exists, so the E-E-A-T line is the maker/freshness imprint only. With 4 ratings, no stars are shown in any style.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

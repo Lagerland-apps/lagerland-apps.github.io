@@ -1,0 +1,90 @@
+[
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "studio (vs allpaid, taskful-day)",
+  "style": "b",
+  "severity": "major",
+  "issue": "The Back Catalogue's cloudberry drench (#F2B21B) is almost the same yellow as taskful-day-c's timer body (#F4C443). It also sits beside allpaid-a's poster yellow (#FFD617). All three set black type with white panels. If the studio wears a microsite's drench, that microsite reads as the studio, and the studio as the microsite.",
+  "fix": "Drop the drench on studio-b. The shop wall goes neutral (white, or a graphite shelf), so the spines in each app's own colours are the only colour. That is also truer to its thesis that the label appears only as a catalogue number and a cartouche. allpaid-a (Abfahrt yellow) and taskful-day-c (the icon's sun) keep yellow. If both are picked, keep taskful-day-c's white dial face dominant.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "studio, gymlogger-x, taskful-day",
+  "style": "a, a, a",
+  "severity": "major",
+  "issue": "The Big Shoulders family is a display face in three surfaces: Big Shoulders Stencil Display (studio-a H1), Big Shoulders Display 800 (gymlogger-x-a door lettering) and Big Shoulders Display 800/600 (taskful-day-a letter tiles). The Stencil cut is the same skeleton, and the studio should share no display family with any microsite.",
+  "fix": "Keep Big Shoulders Display on gymlogger-x-a, where municipal locker plates are its native register. studio-a sets its stencil in Allerta Stencil, which is unused on the board; it has one weight, so the 150px size carries it. taskful-day-a leaves the family with its replacement world (see the taskful-day-a issue).",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "taskful-day (vs soon)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Held Over (a cinema marquee with a box office and a ticket tray) and soon-b 'Admit One' (the event ticket) are one world, going to the show, inside the planning pair. Its author also ranks it the weakest planning link (#7). It carries the Big Shoulders family (shared with studio-a and gymlogger-x-a), and its amber bulbs on a navy fascia join both the amber-on-dark cluster and the navy cluster.",
+  "fix": "Replace it with taskful-day candidate #5, the felt letterboard with push-in letters. It keeps the dealt changeable-letter 'held over' mechanic in a domestic object with no tickets. Set its letters in a face outside the Big Shoulders family, as white letters on a coloured felt rather than amber bulbs on navy.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "shogiful (vs taskful-day)",
+  "style": "c",
+  "severity": "minor",
+  "issue": "Shantell Sans is taskful-day-b's display face (the H1 and the written layer) and shogiful-c's speech-balloon lettering.",
+  "fix": "taskful-day-b keeps it. Letter shogiful-c's balloons in Patrick Hand SC (unused), a caps comic-style hand.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "taskful-day, soon",
+  "style": "c, c",
+  "severity": "minor",
+  "issue": "Both planning apps offer a timer instrument: taskful-day-c's wind-up dial set to 25, and soon-c's T-minus board stepping through T-times.",
+  "fix": "These are acceptable as different objects. If both are chosen, keep taskful-day-c light and round (the top-down dial) and soon-c's board rectangular, and never give taskful-day-c a digital readout.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "taskful-day",
+  "style": "c",
+  "severity": "major",
+  "issue": "Contrast in Orbit mode: the yellow ground turns graphite #2A2A26 but text keeps its normal tokens. Link blue #1F45A8 on graphite is 1.70:1 and umber #4D4224 is 1.45:1. The nav and sticky price, faded to 20%, become unreadable while still focusable.",
+  "fix": "Define Orbit tokens: text #FCFCFA (14.0:1), links #6E92D8 (4.64:1) or lighter, secondary #999382 (4.70:1). Make the faded regions inert (the inert attribute) instead of leaving them interactive at 20%, and restore them on Stop or Esc.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "taskful-day",
+  "style": "c",
+  "severity": "minor",
+  "issue": "Mobile: the 560px dial is wider than the 390px screen, and the 48px badge inside the 168px knob leaves only about 8px at its corners, less than Apple's minimum clear space of a quarter of the badge height (12px).",
+  "fix": "Put overflow: clip on the dial wrapper (not overflow-x: hidden on body, which breaks position: sticky). Make the knob 184px, or the badge 44px, so the clear space at the corners is 12px or more.",
+  "lens": "feasibility"
+ }
+]

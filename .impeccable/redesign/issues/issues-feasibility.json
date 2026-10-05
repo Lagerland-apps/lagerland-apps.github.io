@@ -1,0 +1,453 @@
+{
+  "issues": [
+    {
+      "surface": "all",
+      "style": "all",
+      "severity": "major",
+      "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+      "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+      "surface": "soon",
+      "style": "all",
+      "severity": "major",
+      "issue": "LCP risk: all three heroes make a screenshot PNG the likely LCP element. Style a's rising phone uses 1.png (6.97 MB). Style b's art panel is a crop of 2.png (7.6 MB). Style c's monitor bay is a crop of 3.png (6.1 MB). 'A crop from the existing PNG' means either CSS-cropping a 7 MB file on a phone, or making a new raster that no card lists.",
+      "fix": "List the hero image as a needed asset: a committed WebP/AVIF crop at 2x display size (a: about 600x1300 and 90 KB or less; b: a 780x440 mobile crop and a 680x1330 desktop crop; c: about 600x760). Preload it with fetchpriority=high and give it explicit width/height. In style a, run the 40px rise as a transform from full opacity, so it never delays the LCP paint."
+    },
+    {
+      "surface": "mediakit",
+      "style": "c",
+      "severity": "major",
+      "issue": "LCP risk: the rack monitor in the first viewport (358x213 on mobile) shows Mac screenshots that are 2.6 to 7.1 MB PNGs. The input selector switches that monitor between five processor screenshots, so a naive build loads up to five multi-MB images up front.",
+      "fix": "Use 720w and 1440w WebP derivatives (about 60 and 140 KB or less). Only the default Video detent is eager and preloaded. Give the other four loading=lazy and show them only when their detent is selected (one <picture> per detent, switched by CSS :has())."
+    },
+    {
+      "surface": "all",
+      "style": "all",
+      "severity": "major",
+      "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+      "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+      "surface": "chessful",
+      "style": "a,b",
+      "severity": "major",
+      "issue": "On mobile the badge is below the first visible viewport: y624 to 712 in style a, y612 to 700 in style b. iOS Safari shows about 664 to 750px of an 844px screen, and the Smart App Banner takes about 80px more when it shows. The Google app and in-app browsers show no banner at all, so for those visitors the official badge is the only action, and it is off-screen.",
+      "fix": "Style a: move the module well (price plus badge) to about y256, straight under the LCD sentence, and start the board below it. Style b: put the price line and badge between the H1 and the diagram (about y170 to 260). Rule for every mobile plan: the badge's bottom edge sits at y560 or above in the 390x844 composition."
+    },
+    {
+      "surface": "shogiful",
+      "style": "b,c",
+      "severity": "major",
+      "issue": "On mobile the badge is at the bottom edge of the 844px plan (b: y748 to 844; c: narration box at y712 to 844). That is below the roughly 580 to 750px a phone browser actually shows.",
+      "fix": "Style c: put the white narration box with price and badge directly after the title panel (about y248) and move the board panel below it. Style b changes world under the collision fix; its new plan must keep the badge's bottom at y560 or above."
+    },
+    {
+      "surface": "soon",
+      "style": "a,b",
+      "severity": "major",
+      "issue": "On mobile the badge is below the visible fold: style a puts it on the earth at y580 to 760, style b on the stub at y630 to 760.",
+      "fix": "Style a: set the badge and price line under the headline (about y240 to 300) and let the phone rise from the arc beneath them; the arc can still carry the 'no ads' line. Style b: cut the art panel to about 140px and set the title at 52px, or put the 'ADMIT ONE' price and badge row directly under the title (about y480) with the T-fields after it."
+    },
+    {
+      "surface": "tare",
+      "style": "b,c",
+      "severity": "major",
+      "issue": "On mobile the price box and badge sit at y636 to 790 in both styles, below the visible fold.",
+      "fix": "Style b: reduce the Rules box to a two-line strip and put the lime price box above the Puzzle No. 1 frame. Style c: put the maker's plate between the H1 and the instrument. Either way, the badge's bottom edge stays at y560 or above."
+    },
+    {
+      "surface": "millrace",
+      "style": "b",
+      "severity": "major",
+      "issue": "On mobile the price statement and badge are at y672 to 780, below a 260x364 hero card.",
+      "fix": "Put the price statement and badge directly under the H1 (about y280) with the card after them, or shrink the card to about 200x280 so the badge clears y560."
+    },
+    {
+      "surface": "rightsplit",
+      "style": "a",
+      "severity": "major",
+      "issue": "On mobile the GET IT field with the badge is at y630 to 680, after four 50px diner rows.",
+      "fix": "Put the PRICE and GET IT fields straight after the H1 and the RATE strip, and let the four diner labels follow. Alternatively, show two rows above the fold and label the rest '2 more labels'."
+    },
+    {
+      "surface": "wanderwiki",
+      "style": "b",
+      "severity": "major",
+      "issue": "On mobile the imprint mount (badge plus price) is at y600 or lower, under the leaf's numeral, H1, tagline, secondary and two On This Day entries.",
+      "fix": "Move the badge and price into the leaf directly under the H1 and tagline, and on screens narrower than 600px show one On This Day entry above the fold instead of two."
+    },
+    {
+      "surface": "earnlock",
+      "style": "c",
+      "severity": "major",
+      "issue": "The hero reading breaks on a phone. DSEG7 Classic has no comma: a fontTools check of the latin 700 file finds 69 glyphs, with ',', '$', '·', '?', '%' and '+' missing. So '3,412' and the ghost '88,888' fall back to Hanken in the middle of the number. At 104px the five-digit ghost is 424px wide, against about 350px of LCD inside a 390px screen (6px rims and 14px padding each side), so the hero scrolls sideways. The badge panel also lands at about y700 to 800.",
+      "fix": "Set the reading at font-size: min(104px, 21.5vw), since five DSEG7 digits measure 4.08em. Print LCD counts without a thousands separator ('3412', as real pedometers do), put the comma-formatted value in a visually hidden span, and mark the ghost aria-hidden. Move the button panel with badge and price directly under 'STEPS UNTIL UNLOCK' and the MODE key below it, so the badge sits at about y480 to 560."
+    },
+    {
+      "surface": "studio",
+      "style": "c",
+      "severity": "major",
+      "issue": "Accessibility and weight. Typing three digits anywhere on the page navigates. That is a single-character shortcut, which fails WCAG 2.1.4 (Level A) unless it can be turned off or only works with focus on a control, and it collides with screen-reader quick keys. The header clock ticks every second and the cursor blinks every second indefinitely; WCAG 2.2.2 requires a pause for blinking that lasts more than 5s. The server-rendered clock would show the Jekyll build time as if it were live. MIX uses the 1024px icon PNGs (0.56 to 3.96 MB each) as hover backgrounds, so skimming the index downloads tens of MB.",
+      "fix": "Listen for digits only in the visible PAGE field (render it on desktop too) and in one focusable index region, never at document level. Blink the cursor three times, then hold it. The clock shows minutes only; it is server-rendered with the label 'page built' plus the build date, and JS replaces it with the local time. MIX uses 480px WebP derivatives (about 30 to 50 KB) through image-set(), loaded only for the hovered or focused line."
+    },
+    {
+      "surface": "gymlogger-x",
+      "style": "a",
+      "severity": "major",
+      "issue": "The locker door can hide focus. With JS on, the closed door covers the screenshot shelf until the section is 35% in view. Tab, an in-page #hash link or find-in-page can land on screenshot links behind the closed door (WCAG 2.2 2.4.11). The '2.5s safety net' is ambiguous. If it is a page-load timer, the door is already open before anyone scrolls there, so the signature never plays. If it is missing, the door stays shut whenever IntersectionObserver doesn't fire. The rotateY(-105deg) swing with perspective 1800px also projects past the edge of a 390px viewport.",
+      "fix": "Open the door on whichever happens first: IntersectionObserver at 35%, :focus-within on the interior, :target or hash navigation, or beforeprint. Start the safety net 2.5s after the section first intersects, not after page load. Once open, the door is aria-hidden with pointer-events:none. Give the section overflow: clip so the swing can't cause horizontal scroll."
+    },
+    {
+      "surface": "millrace",
+      "style": "a",
+      "severity": "major",
+      "issue": "Endless hero motion. The caustic layer drifts on an infinite 40s loop and the queue tiles bob on an infinite 6s loop. Motion that starts on its own, lasts more than 5s and runs beside content needs a pause control under WCAG 2.2.2 (Level A), whatever prefers-reduced-motion says. Moving a 1,400px-tall layer is also constant GPU work on phones.",
+      "fix": "Run one drift pass of 5s or less on first view, or add a visible 'Still the water' toggle to the headrace beam that persists. Let the tiles settle after two bobs. Draw the field of 1,000 candidates as a single <path> or <pattern>, not 1,000 <rect> elements."
+    },
+    {
+      "surface": "tare",
+      "style": "a,c",
+      "severity": "major",
+      "issue": "Unbounded looping sway. Any beam carrying the unsolved '?' sways for as long as the puzzle stays unsolved (a: ±3° on a 3.2s loop; c: sways until solved). That is continuous automatic motion beside text (WCAG 2.2.2). Reduced motion is handled, but other visitors have no way to stop it.",
+      "fix": "Sway for two cycles (about 6s), then hold level and show the dashed 'won't settle until you know the ?' outline that the reduced-motion path already specifies. Play one more cycle when the beam is hovered or focused. Style c does the same."
+    },
+    {
+      "surface": "wanderwiki",
+      "style": "b",
+      "severity": "major",
+      "issue": "A live third-party request on a privacy brand. 'Tear to today' calls en.wikipedia.org from the visitor's browser, which sends the visitor's IP and local date to Wikimedia. The brief bans third-party font hosts for exactly this kind of leak. The feature also has no plan for API changes or rate limits beyond the error line.",
+      "fix": "Default to snapshot-only. A scheduled GitHub Action (the repo already runs a scheduled ratings sync) writes _data/onthisday.yml every day, attribution included, and the tab tears to the date of that build. If the owner keeps the live call, the tab says 'asks wikipedia.org directly' before the click, and the request gets a 4s timeout that falls back to the existing error line."
+    },
+    {
+      "surface": "xiangqiful",
+      "style": "all",
+      "severity": "major",
+      "issue": "Every style depends on a hand-made CJK font subset (a: Noto Sans TC 900, about 60 glyphs, about 30 KB; b: Noto Serif TC 900, about 35 KB; c: LXGW WenKai TC, about 45 KB). Fontsource ships these faces as about 100 unicode-range chunks per weight, averaging 22 to 42 KB each. Using the stock files would load many chunks for the same characters, well over 160 KB. A one-time pyftsubset run is fine; it is not a deploy build step. The problem is any front-matter edit that adds a character missing from the subset: it silently falls back to a system face in the 92 to 168px hero.",
+      "fix": "Keep the glyph list in _data/xiangqiful_glyphs.yml, commit the subset script in scripts/ (excluded from the build), and add a GitHub Action that fails when a CJK character in _apps/xiangqiful.md or its sub-pages is missing from the subset. Declare a fallback stack (PingFang TC, 'Noto Sans CJK TC', 'Microsoft JhengHei') so a missed character degrades cleanly. Generate the pinyin latin-ext cuts from the same script."
+    },
+    {
+      "surface": "wanderwiki",
+      "style": "c",
+      "severity": "major",
+      "issue": "The frontispiece relies on seven Noto Serif script files 'subset once to just the glyphs of each endonym' at 2 to 6 KB each. Those sizes only hold with a custom pyftsubset, not with Fontsource's stock files (the JP, SC and KR faces ship as large unicode-range chunk sets). Subsetting Arabic (العربية), Devanagari (हिन्दी) and Thai by a bare glyph list drops their GSUB/GPOS features and breaks joining, conjuncts and mark placement in the hero.",
+      "fix": "Subset each script with pyftsubset --text='<endonym>' --layout-features='*' so the shaping closure is kept. Commit the outputs and the script in scripts/, and load each file with a unicode-range so only scripts present on the page are fetched. Budget: Gentium Book Plus 400/700/400i is 66 KB, plus 35 KB or less for the seven subsets."
+    },
+    {
+      "surface": "appmeta",
+      "style": "b",
+      "severity": "major",
+      "issue": "The proof marks are 'hand-coded inline SVG paths' drawn over galley text. That text reflows between 390 and 1440px (19px at 66ch), so absolutely positioned marks drift off their words. Every edit to release notes or fields in front matter would also mean redrawing paths by hand.",
+      "fix": "Anchor each mark to the markup that carries the change. Strike lines are text-decoration on <del>, drawn on with a background-size wipe. Carets and insertion marks are ::before/::after on <ins>. Margin notes are floated <aside> elements tied to their passage. Drive the passages from front matter (before and after strings), so the diff and both states render from data."
+    },
+    {
+      "surface": "mediakit",
+      "style": "b",
+      "severity": "major",
+      "issue": "The map needs hand maintenance. The octilinear network is 'hand-placed inline SVG': station names come from front matter but their positions don't. Any change to features or tools means re-laying the SVG by hand, as the card's own risk line admits.",
+      "fix": "Draw each line once as a fixed trunk path with evenly spaced station slots computed in Liquid (offset = index × spacing along a straight run, labels alternating sides), fed from _data/mediakit_tools.yml. Only the five trunks and the Drop interchange are drawn by hand."
+    },
+    {
+      "surface": "liftlog",
+      "style": "c",
+      "severity": "major",
+      "issue": "The first viewport depends on art that doesn't exist. Its light-blue module holds 'the bench pictogram', and the module grid relies on twelve original pictograms. Drawing them is a production task with an explicit licensing risk against the 1972 set. No fallback is stated, so as written the hero can't ship on existing assets.",
+      "fix": "Define the interim state: until the set is drawn, modules carry the app icon, a 400w screenshot crop or a large tabular figure (for example '100 × 5'). List the twelve SVGs as a gated production task with an originality review, so the owner never selects a style on the strength of art that hasn't been drawn."
+    },
+    {
+      "surface": "observa",
+      "style": "c",
+      "severity": "major",
+      "issue": "The blanket encodes five σ bands by yarn colour alone, and neighbouring yarns are nearly identical: heather/apricot 1.49:1, indigo/violet 1.61:1, apricot/rust 2.72:1. WCAG 1.4.1 and 1.4.11 call for a cue other than colour, or 3:1 between the colours. Many colour-blind visitors won't see the 're-dye' payoff.",
+      "fix": "Give each band its own stitch texture in the existing inline SVG pattern (for example plain, moss, rib, seed and garter as σ rises), add a band glyph in the row gutter on desktop, and put the 60 illustrative night values in a plain <table> (or a <details>) under the blanket, so the sentence can be checked without colour."
+    },
+    {
+      "surface": "gymlogger-x",
+      "style": "b",
+      "severity": "major",
+      "issue": "Contrast: form red #D32B1F on the blue attempt stock #D5E3EC is 3.88:1, not the 5.3:1 claimed, so red form headers and verdict-strip text fail AA for normal-size text.",
+      "fix": "Use #BD261B for red text on the blue stock (4.64:1), and keep #D32B1F for lenses and fills only."
+    },
+    {
+      "surface": "taskful-day",
+      "style": "c",
+      "severity": "major",
+      "issue": "Contrast in Orbit mode: the yellow ground turns graphite #2A2A26 but text keeps its normal tokens. Link blue #1F45A8 on graphite is 1.70:1 and umber #4D4224 is 1.45:1. The nav and sticky price, faded to 20%, become unreadable while still focusable.",
+      "fix": "Define Orbit tokens: text #FCFCFA (14.0:1), links #6E92D8 (4.64:1) or lighter, secondary #999382 (4.70:1). Make the faded regions inert (the inert attribute) instead of leaving them interactive at 20%, and restore them on Stop or Esc."
+    },
+    {
+      "surface": "pawza",
+      "style": "a",
+      "severity": "major",
+      "issue": "Focus is invisible on paper. The themed focus ring #FFD23F reads at 5.76:1 on cobalt, but all the long reading, slips and tables sit on white paper, where it is 1.44:1. Focus disappears on most links and controls.",
+      "fix": "Use a two-tone ring everywhere: 2px #14161C inside 2px #FFD23F (outline plus box-shadow). The ink part is 18.1:1 on paper and the yellow part 5.76:1 on cobalt."
+    },
+    {
+      "surface": "chessful",
+      "style": "c",
+      "severity": "major",
+      "issue": "Focus is invisible on the paper key pages: the gold ring #F2C14E is 1.54:1 on #F6F5F0, an AA failure wherever those pages appear (the Read-mode privacy, support and alternatives pages).",
+      "fix": "On paper, switch the ring to deep ink #101536 (16.3:1). Keep gold only on the dark volume ground."
+    },
+    {
+      "surface": "mockly",
+      "style": "c",
+      "severity": "major",
+      "issue": "A triple collision with appmeta-c. 'Thumb-Index Leaflet' and 'The Fifty-Language Leaflet' are the same world (a multilingual instruction leaflet indexed by language-code tabs), the same hue (violet #4A2FC4 vs #4F3FCC) and the same type family (Noto Sans Display plus Noto Sans vs Noto Sans), on two sibling Mac apps from the same maker.",
+      "fix": "Keep the leaflet on appmeta, whose mechanism is literally the same text in 50 locales. Give mockly-c the next distinct re-roll (--reroll 2, skipping 1, 3 and 6). If that deals 2 (the literal screenshot run), take candidate #7 instead: the shrink-wrapped Mac software box (one-time $12.99, back-panel screenshots, a system-requirements side panel). Drop Noto and violet along with the world."
+    },
+    {
+      "surface": "mockly",
+      "style": "b",
+      "severity": "major",
+      "issue": "Shared world with appmeta-b. Each is its surface's #1 pick, both are print proofs, and both put the badge inside an approval box ('OK to print' sign-off box vs 'OK to Upload' approval box), so the two sibling Mac apps would convert through the same device.",
+      "fix": "Keep the sign-off box on appmeta-b, where proofreading is its diff preview. In mockly-b, move the action into the press sheet's own furniture (the gripper-edge strip or the colour-bar ticket), drop the 'OK to …' approval wording and keep proofreader marks off the sheet. The pair then reads as a Dylux galley next to a CMYK imposed sheet."
+    },
+    {
+      "surface": "shogiful",
+      "style": "b",
+      "severity": "major",
+      "issue": "Same world and mechanism as xiangqiful-b: a dark hall (#1C2230 vs #232220), a lit demonstration board, a sticky board reset from SFEN/FEN at each caption, sliding pieces and arrows that draw. Shogiful-b's type stack also collides three ways: Dela Gothic One is earnlock-a's display, and Atkinson Hyperlegible Next and Mono are a monoculture.",
+      "fix": "Keep the big board on xiangqiful-b, whose type is clean and which already handles mobile with a diagram per chapter. Move shogiful-b to its candidate #3 (the kifu record sheet). Skip #2 (the tsume problem book), which would collide with tare-b's Japanese puzzle-book world. Reset the type along with it, for example Murecho 900/400/700: one Japanese-drawn gothic, about 40 KB of latin, with tabular figures for notation and no mono."
+    },
+    {
+      "surface": "chessful",
+      "style": "c",
+      "severity": "major",
+      "issue": "Palette collision in a cobalt cluster: chessful-c #2338B0 (drench), earnlock-c #2443B8 (shell), millrace-b #23408E (tray) and pawza-a #2347A6 (page ground) all set white type on the same mid-cobalt, and none of the four takes it from its app icon. Keep it on pawza-a, where cobalt polypropylene is the expanding file's own stock colour and the ground of the whole page. Tare-a's lighter cerulean board is native to the app and can stay.",
+      "fix": "Give the Informant volume a different colour: violet #3B2A8F. Paper #F6F5F0 on it is 10.05:1, gloss #C9D0F2 is 7.2:1 and gold #F2C14E is 6.54:1. Violet is free once mockly-c leaves it."
+    },
+    {
+      "surface": "earnlock",
+      "style": "c",
+      "severity": "major",
+      "issue": "Palette collision: the shell #2443B8 belongs to the cobalt cluster (see chessful-c), and the colour has no source in EarnLock, whose icon is a black squircle with a sage ring.",
+      "fix": "Mould the shell in the icon's black #17191A (silkscreen #F4F3EE on it is 15.9:1) and keep the sage MODE key: the icon's own pair. The LCD stays the light page ground, so the result doesn't become near-black plus neon."
+    },
+    {
+      "surface": "millrace",
+      "style": "b",
+      "severity": "major",
+      "issue": "Palette collision: the tray #23408E belongs to the cobalt cluster (see chessful-c), and Millrace's own palette is amber, walnut, inlet red and vault green.",
+      "fix": "Form the tray in the icon's walnut #3B2616 (white on it is 14.2:1), the app's own wooden race. Card stock, tier bands and sticky strip are unchanged."
+    },
+    {
+      "surface": "aftershift",
+      "style": "a",
+      "severity": "major",
+      "issue": "Shared display face: Barlow Condensed is also allpaid-a's display.",
+      "fix": "Keep it on allpaid-a, where the yellow departures poster is a DIN-model sign and Barlow is the closest open DIN relative. Move aftershift-a's back-lettering to Mohave 700 (about 9 KB, caps). Mohave stops at 700, so the 800 weight becomes 700."
+    },
+    {
+      "surface": "aftershift",
+      "style": "b",
+      "severity": "major",
+      "issue": "Shared display face: Archivo is also appmeta-pulse-c's display and text.",
+      "fix": "Keep Archivo on appmeta-pulse-c, whose expanded heavy numerals are the scoreboard's material. Move aftershift-b to Asap variable: the same foundry, Omnibus-Type, with wdth 75 to 125 and wght, 88 KB latin. Cell codes move from wdth 62 to 75. With Reenie Beanie the total is 116 KB."
+    },
+    {
+      "surface": "soon",
+      "style": "c",
+      "severity": "major",
+      "issue": "Shared display face: B612 sets soon-c's headline and legends and is also appmeta-pulse-a's display.",
+      "fix": "Keep B612 (plus B612 Mono) on appmeta-pulse-a. Drop B612 from soon-c and set the headline and engraved legends in Public Sans 700 caps. Public Sans is already soon-c's text face, and as the US government's open face it suits a launch console; this also saves about 34 KB."
+    },
+    {
+      "surface": "soon",
+      "style": "b",
+      "severity": "major",
+      "issue": "Shared display face: League Gothic is also appmeta-pulse-b's display. Its text face, Sofia Sans, is used on three surfaces (mediakit-a, pawza-a, soon-b).",
+      "fix": "Keep League Gothic on appmeta-pulse-b (newspaper listings). Move soon-b to Anton 400 (a show-bill gothic, 18 KB) for the title, fares and stub numerals, and Kumbh Sans 400/700 (13 KB each) for body and field labels, with Kumbh's tabular figures for prices and T-times."
+    },
+    {
+      "surface": "gymlogger-x",
+      "style": "a",
+      "severity": "major",
+      "issue": "Shared faces. Big Shoulders Display is also taskful-day-a's display, and studio-a uses the same design as Big Shoulders Stencil, which makes three surfaces. Public Sans is also the text face of observa-b and soon-c, another three.",
+      "fix": "Keep Big Shoulders on taskful-day-a (marquee tiles) and Public Sans on observa-b and soon-c. Move gymlogger-x-a to Teko 700 (a squared athletic condensed suited to cut vinyl, 7 KB) and Ubuntu Sans 400/600 (16 to 17 KB) with tabular figures for kg and prices."
+    },
+    {
+      "surface": "gymlogger-x",
+      "style": "b",
+      "severity": "major",
+      "issue": "Shared display face: Chivo plus Chivo Mono is also mockly-b's complete stack.",
+      "fix": "Keep Chivo on mockly-b, whose press-proof slugs belong to the Akzidenz-line job-printer sans Chivo descends from. Move gymlogger-x-b to Reddit Sans 900/400/600 plus Reddit Mono 500, another matched sans and mono pair, about 65 KB."
+    },
+    {
+      "surface": "rightsplit",
+      "style": "a",
+      "severity": "major",
+      "issue": "Shared display face: Pathway Extreme is also liftlog-c's complete stack.",
+      "fix": "Keep Pathway Extreme on liftlog-c, whose world is Aicher's one grotesk across many widths. Move rightsplit-a to the Roboto Flex wdth file (wdth 25 to 151 plus wght, 58 KB latin). Scale-label printers carry Helvetica-clone resident fonts, and the narrow widths fit 900-weight prices."
+    },
+    {
+      "surface": "pawza",
+      "style": "a",
+      "severity": "major",
+      "issue": "Shared display face: Sofia Sans Extra Condensed plus Sofia Sans is also mediakit-a's stack, and Sofia Sans is soon-b's text face too, which makes three surfaces.",
+      "fix": "Keep the Sofia superfamily on mediakit-a, which uses three of its widths. Move pawza-a to Smooch Sans 800/600 for the condensed tab inserts (11 KB per weight) and Rethink Sans 400/600 for paper text (15 to 16 KB each)."
+    },
+    {
+      "surface": "earnlock",
+      "style": "b",
+      "severity": "major",
+      "issue": "Shared display face: Signika is aftershift-c's whole system. Both worlds are blade-sign wayfinding, so the shared face makes them read as one.",
+      "fix": "Keep Signika on aftershift-c. Letter earnlock-b's blades in Hind 600/700 (Frutiger-model, about 32 KB); Swiss trail blades are lettered in ASTRA-Frutiger. Keep Fira Sans for the guidebook text. Don't move the blades to Fira, because Fira Sans Extra Condensed is xiangqiful-b's display."
+    },
+    {
+      "surface": "earnlock",
+      "style": "a",
+      "severity": "major",
+      "issue": "Monoculture: Doto appears on three surfaces (chessful-a utility, earnlock-a utility, soon-c display).",
+      "fix": "Keep Doto on chessful-a (a dot-matrix LCD that needs letters) and soon-c (a lamp grid). Set earnlock-a's credit display in DSEG14 Classic 700: a 14-segment alphanumeric LED face, 6 KB, with a comma and A to Z, so 'INSERT 2,026 STEPS' renders in one face and reads as a vending-machine display."
+    },
+    {
+      "surface": "studio",
+      "style": "a",
+      "severity": "major",
+      "issue": "Monoculture: Atkinson Hyperlegible Next appears on seven surfaces (studio-a, aftershift-a, allpaid-b, appmeta-pulse-a, mediakit-b, observa-a, shogiful-b), and Atkinson Hyperlegible Mono on four. The two kept are aftershift-a, where the scene of reading 13 hours into a night shift justifies it, and allpaid-b, where it is the whole identity.",
+      "fix": "Set studio-a's text in Gantari 400/700/400i (about 31 KB). Martian Mono stays for data only."
+    },
+    {
+      "surface": "appmeta-pulse",
+      "style": "a",
+      "severity": "major",
+      "issue": "Monoculture: the text face is Atkinson Hyperlegible Next (see studio-a).",
+      "fix": "Set reading text in B612 400/400i from the display family already loaded (about 35 KB), and keep B612 Mono for readings. That is one family instead of two, about 66 KB in total."
+    },
+    {
+      "surface": "mediakit",
+      "style": "b",
+      "severity": "major",
+      "issue": "Monoculture: the text face is Atkinson Hyperlegible Next (see studio-a).",
+      "fix": "Set the text in Overpass 400/700, the same Highway Gothic family as the display (about 34 KB). One family carries the whole transit map."
+    },
+    {
+      "surface": "observa",
+      "style": "a",
+      "severity": "major",
+      "issue": "Monoculture: the text face is Atkinson Hyperlegible Next and the utility face Atkinson Hyperlegible Mono (see studio-a).",
+      "fix": "Set the text in Commissioner (variable wght, 36 KB) and drop the mono: n=14, 87% and p ≤ 0.10 go in Commissioner's tabular figures. Bodoni Moda stays for headlines."
+    },
+    {
+      "surface": "appmeta-pulse",
+      "style": "a",
+      "severity": "minor",
+      "issue": "On mobile the badge sits at y560 to 620, at the edge of what a phone shows once browser chrome and the Smart App Banner are counted.",
+      "fix": "Move the PRICE row and badge cell above the CONTROLS row so the badge's bottom edge is at about y540."
+    },
+    {
+      "surface": "millrace",
+      "style": "a",
+      "severity": "minor",
+      "issue": "On mobile the badge is at the bottom of the inlet beam, about y600 to 652.",
+      "fix": "Put the queue and its caption below the inlet beam (beam at about y380 to 540), or trim the H1 to three lines."
+    },
+    {
+      "surface": "mockly",
+      "style": "b,c",
+      "severity": "minor",
+      "issue": "On mobile the approval and model boxes (badge plus 'Send this page to my Mac') sit at about y580 to 800. For this Mac-only app the phone visitor's real action is sending the page to their Mac.",
+      "fix": "Keep 'Send this page to my Mac' (with the price) at y560 or above. On phones the badge may follow it."
+    },
+    {
+      "surface": "all",
+      "style": "all",
+      "severity": "minor",
+      "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+      "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face."
+    },
+    {
+      "surface": "shogiful",
+      "style": "a,c",
+      "severity": "minor",
+      "issue": "Hidden CJK payload: the piece guide and labels carry kanji and kana (style a has 18 distinct characters in the card, style c 21). If the build copies Fontsource's full CSS, the browser fetches the unicode-range chunks for those characters (Shippori Mincho B1 averages about 43 KB per chunk, BIZ UDPGothic about 23 KB, Zen Old Mincho about 22 KB) and breaks the 160 KB budget. Tare-b's Zen faces and earnlock-a's M PLUS and Dela carry the same risk.",
+      "fix": "Self-host only the latin (and any needed latin-ext) @font-face rules and let CJK fall back to the system Japanese face (Hiragino on Apple). If a kanji must appear in the brand face, subset just those characters with the same scripts/ process as xiangqiful."
+    },
+    {
+      "surface": "mockly",
+      "style": "a",
+      "severity": "minor",
+      "issue": "Contrast: 'Trace your size' fades the other sizes to 35%, which takes their size labels down to 1.82:1 (red) and 2.15:1 (ink). Those labels are still content.",
+      "fix": "Fade only the line strokes. Switch the inactive labels to #5E5E63 (5.73:1) instead of lowering their opacity. The text face also collides: Albert Sans is pawza-c's display, so set mockly-a's text in Wix Madefor Text 400/600."
+    },
+    {
+      "surface": "mockly",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Contrast: secondary #6B6880 on the violet tint #E9E6FB (table striping, inactive tabs) is 4.39:1. This is moot if the world changes as recommended.",
+      "fix": "Use #67647C (4.65:1)."
+    },
+    {
+      "surface": "wanderwiki",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Contrast: the frontispiece dims untapped endonyms to 70%, which puts original-green names at 3.78:1. That contradicts 'never below AA' for any endonym smaller than 24px regular or 18.66px bold.",
+      "fix": "Dim with a colour swap to apparatus grey #5A5E58 (6.31:1) instead of opacity, or dim no further than 85% (5.5:1)."
+    },
+    {
+      "surface": "xiangqiful",
+      "style": "a",
+      "severity": "minor",
+      "issue": "Contrast: the 'book' move marker is a planned-line grey #8A9095 ring at 2.97:1 on enamel, and it is one of the seven grade encodings, so it needs 3:1.",
+      "fix": "Use #858B90 (3.18:1) for grade markers and keep #8A9095 for the dashed roadmap lines."
+    },
+    {
+      "surface": "appmeta-pulse",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Contrast: unlit lamps #2F5D47 on board green #1D4733 are 1.39:1. The lamp state is the signature's whole message, even though the 'Not wired' labels repeat it in text.",
+      "fix": "Give every lamp a 1px #A9C2B3 rim (5.5:1 on the board), so a dark lamp reads as a lamp, and keep the text label next to each one."
+    },
+    {
+      "surface": "soon",
+      "style": "a",
+      "severity": "minor",
+      "issue": "Shared text face: Literata is the display and text face of chessful-b (Move by Move), where the whole book world rests on it.",
+      "fix": "Set soon-a's text in Petrona 400/600 (about 23 KB each, tabular lining figures available), and leave Literata to chessful-b."
+    },
+    {
+      "surface": "shogiful",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Shared face: the balloon lettering is Shantell Sans, which is taskful-day-b's display.",
+      "fix": "Letter the balloons in Comic Neue 700 (19 KB), the open stand-in for comic lettering, and leave Shantell to taskful-day-b's written layer."
+    },
+    {
+      "surface": "studio",
+      "style": "a",
+      "severity": "minor",
+      "issue": "Shared skeleton: after gymlogger-x-a moves off it, the Big Shoulders design still serves studio-a (Stencil Display) and taskful-day-a (Display). If both win, the studio and one microsite share a headline skeleton.",
+      "fix": "Acceptable at two surfaces, because the stencil cut reads differently from plain marquee tiles. If both are picked, give taskful-day-a's tiles the 600 weight and keep the 800 weight for studio-a."
+    },
+    {
+      "surface": "chessful",
+      "style": "a",
+      "severity": "minor",
+      "issue": "Shared material with earnlock-c: both build on a reflective grey-green LCD with dark segment ink (#A7B29A window vs #C5CDB3 ground) and pressable plastic keys.",
+      "fix": "If both are picked, keep the LCD on earnlock-c, where the whole page is the LCD. Shift chessful-a's readout window toward the housing grey (for example #B9BDB4, graphite 7.67:1) so it reads as a chess computer's panel rather than a pedometer."
+    },
+    {
+      "surface": "pawza",
+      "style": "b",
+      "severity": "minor",
+      "issue": "Payload: five static files (Encode Sans Expanded 800/700, Encode Sans 400/600, Encode Sans Condensed 600) plus Reenie Beanie come to about 128 KB.",
+      "fix": "Use the single @fontsource-variable/encode-sans wdth file (43.6 KB, wdth 75 to 125 covers condensed through expanded) plus Reenie Beanie, about 71 KB."
+    },
+    {
+      "surface": "taskful-day",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Mobile: the 560px dial is wider than the 390px screen, and the 48px badge inside the 168px knob leaves only about 8px at its corners, less than Apple's minimum clear space of a quarter of the badge height (12px).",
+      "fix": "Put overflow: clip on the dial wrapper (not overflow-x: hidden on body, which breaks position: sticky). Make the knob 184px, or the badge 44px, so the clear space at the corners is 12px or more."
+    },
+    {
+      "surface": "soon",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Once started, RUN THE COUNT advances every 1.6s with no stop control, and each lamp change risks a fresh live-region announcement.",
+      "fix": "While running, the RUN THE COUNT key becomes STOP (aria-pressed). Announce through aria-live=polite only when a milestone is reached, not on every digit fade."
+    }
+  ],
+  "catalogueNotes": "Method. Every face was checked against the npm registry: npm view for existence, then npm pack --dry-run for the actual latin woff2 files, weights, italics and sizes. Glyph coverage for DSEG7, DSEG14, Doto, Tiny5, B612 and Handjet was checked with fontTools. About 260 text/ground, accent and focus pairs were computed with a WCAG 2.x script.\n\nFonts: every one of the roughly 105 named faces exists on Fontsource with the weights and italics named. Every variable file named exists, with sizes within about 3 KB of the cards' claims (Recursive casl 106.2 KB, Saira full 96.6, Literata opsz 107.5, Hubot wdth 90.9, Archivo wdth 88.0, Pathway standard 95.2, Bricolage opsz 75.1, Handjet full 18.1). The only glyph-coverage failure is DSEG7 Classic: no comma, '$', '·' or '%'.\n\nPayload: every latin stack is under 160 KB. The heaviest are wanderwiki-a at about 142 KB with its script slices, liftlog-a at about 130, chessful-a at about 129 and pawza-b at about 128. The CJK and complex-script styles (all xiangqiful, wanderwiki-c, and the kanji in shogiful a/c) only fit with committed subsets or latin-only @font-face rules.\n\nContrast: the cards' claims were mostly accurate to within about 0.5. The real failures are listed as issues: gymlogger-x-b red 3.88, taskful-day-c Orbit links 1.70, the observa-c yarn steps, and focus rings on paper in pawza-a and chessful-c.\n\nCollision resolution (keep, then change). Atkinson Next and Mono: keep on aftershift-a and allpaid-b; change studio-a, appmeta-pulse-a, mediakit-b, observa-a and shogiful-b. Public Sans: observa-b and soon-c keep, gymlogger-x-a changes. Sofia family: mediakit-a keeps, pawza-a and soon-b change. Doto: chessful-a and soon-c keep, earnlock-a changes. Barlow Condensed: allpaid-a keeps, aftershift-a changes. Archivo: appmeta-pulse-c keeps, aftershift-b changes. B612: appmeta-pulse-a keeps, soon-c changes. League Gothic: appmeta-pulse-b keeps, soon-b changes. Big Shoulders: taskful-day-a and studio-a keep, gymlogger-x-a changes. Chivo: mockly-b keeps, gymlogger-x-b changes. Pathway Extreme: liftlog-c keeps, rightsplit-a changes. Signika: aftershift-c keeps, earnlock-b changes. Dela Gothic One: earnlock-a keeps, shogiful-b changes. Noto: appmeta-c keeps, mockly-c changes. Minor shared text faces stay at two surfaces (Libre Franklin, Familjen, Fira, Courier Prime, Reenie Beanie, Barlow, B612 Mono); Literata, Albert Sans and Shantell get optional swaps.\n\nAfter the fixes, no face appears on more than two surfaces. Every replacement face named here (Mohave, Asap, Anton, Kumbh Sans, Teko, Ubuntu Sans, Reddit Sans and Reddit Mono, Roboto Flex, Smooch Sans, Rethink Sans, Hind, DSEG14 Classic, Gantari, Commissioner, Murecho, Petrona, Wix Madefor Text, Comic Neue) was verified on Fontsource and is unused elsewhere in the catalogue.\n\nWorlds and palettes. Leaflet: appmeta-c keeps it, mockly-c changes. Press proof: appmeta-b keeps the sign-off box, mockly-b changes its conversion device. Big board hall: xiangqiful-b keeps it, shogiful-b moves to candidate #3. The cobalt drench appears four times (chessful-c, earnlock-c, millrace-b, pawza-a): pawza-a keeps it, and the other three move to violet #3B2A8F, icon black #17191A and walnut #3B2616.\n\nCross-cutting rules every build should adopt:\n(1) On mobile the badge's bottom edge sits at y560 or above in the 390x844 plan.\n(2) Committed image derivatives: no 1024px icon or 1206x2622 PNG is ever served raw.\n(3) scroll-padding sized to the sticky bars, and one sticky element per edge.\n(4) Latin-only @font-face plus metric-matched fallbacks for the giant H1s.\n(5) No unbounded looping motion. Every loop stops within 5s, or has a pause."
+}

@@ -1,0 +1,454 @@
+{
+ "surface": "soon — standalone microsite /apps/soon/ (Persuade) + /apps/soon/privacy/, /apps/soon/support/ and the alternatives pages that target it: /alternatives/days-matter/, /alternatives/dreamdays/, /alternatives/countdowns-apalon/, /alternatives/countdown-star/, /alternatives/wedding-happy/ (Read variants of the same world)",
+ "dossier": {
+  "mechanism": "Soon. turns one date into a living countdown on iPhone: a full-bleed photo of the moment you are waiting for, a Plan Mode checklist that schedules itself backward from that date (T-90, T-30, T-14, T-3, T-1) so each task lands on its own day with one notification, destination weather from T-10, daily notes T-7 to T-0, and, once the day passes, a memory that comes back every anniversary. All of it shows on Home Screen, Lock Screen and StandBy widgets.",
+  "audienceScene": "Someone who has just booked something (flights, a venue, a due date) searches 'countdown app iphone' or 'wedding countdown widget' on their phone in the evening, on the sofa or in bed, or arrives from an AI answer comparing Days Matter / Dreamdays. After installing, they glance at the result dozens of times a day on the Lock Screen and on a nightstand in StandBy.",
+  "culturalHome": "The pre-app rituals of anticipation: tickets kept in a drawer or pinned to the fridge, the photo wall calendar with the day circled in red and the days crossed off, the launch countdown's T-minus, the departures board, the paper due-date wheel, the holiday slide tray, the sky before a dawn departure. The developer works alone in Finland and writes that 'waiting is passive… anticipating is active' (soon-rebrand journal).",
+  "mustProve": "In one viewport: this is not a timer. The countdown is a photo of the actual future plus a plan that writes itself backward from your date (T-30 book flights … T-1 check-in opens), visible on Lock Screen and StandBy. It is free to start, Premium from $1.99/mo or $12.99 once, with no ads, no account and no tracking, and the official App Store badge (plus the QR on desktop) is in reach.",
+  "categoryDefault": "The countdown-app landing page: a ticking DD:HH:MM:SS demo timer or confetti numerals over a pastel gradient, a tilted iPhone with stacked widgets, a row of icon feature cards (Widgets · Weather · Checklists · Privacy), three pricing cards with 'Most popular', a star-rating strip and an FAQ accordion. The incumbent adds cream ground, Newsreader and a split hero.",
+  "predictableOpposite": "The stark 'brutal numeral' page: one giant days-left number on black or white and nothing else. It is a minimal timer posing as restraint, still only a number, with no photo and no plan.",
+  "literalReading": "'Soon.' plus the icon (a flat sun breaking a curved dark-teal horizon under a violet → plum → rose → peach sky) gives a sunrise / dawn-sky page. It is allowed as at most one candidate (#7 here). The roll dealt it as Style A.",
+  "evidence": [
+   "_apps/soon.md truth: platforms ['iOS'], status live, category lifestyle, price.model freemium, price.value 'Free — Premium from $1.99/mo', schema_price 0 / schema_high_price 12.99 / 4 offers; plans Free $0 · Premium Monthly $1.99/mo · Premium Annual $9.99/yr (highlight: true) · Lifetime $12.99 once (no auto-renew, Family Sharing), 7-day trial, plans_footnote present; release first 2026-01-01, last_updated 2026-04-13; ratings 5.0 × 3, so no aggregateRating and no stars anywhere.",
+   "Blocks this app HAS: hero (pre_headline 'Countdown & planner app for iPhone', headline 'Some days you can't wait for.', long subheadline, cta_label 'Download Free'), quick_answer, who_for ×5 / who_not_for ×3, founder (Antti Aittamaa, Finland, 'Rebuilt from TheWait — by the person who shipped it.', bio, 4 signals, response time), value_points ×4, features ×6, how_it_works (intro + 6 steps), example_insights anchor 'templates' (6 Plan Mode templates: Trip 30d, Wedding 90d, Pregnancy 40wk, Birthday 14d, Graduation 21d, Move 45d), comparison_table (Soon. vs Days Matter / Countdowns (Apalon) / Wedding Happy, 10 rows + footnote), screenshots ×7, privacy (5 notes), faq ×14, roadmap (6 items: 2 shipped, Apple Watch targeted 2026 Q4, iPad + macOS targeted 2027 H1, shared events under consideration; disclaimer), related_journal (how-plan-mode-builds-a-checklist), show_body + about_heading, alternatives_to ×5. It has NO spotlight, training_vocabulary, insight-gallery stats, plateau_disclosure or coach_cta.",
+   "App UI (screenshots 1–7, 1206×2622; #6 is 1170×2532): a LIGHT UI on a warm grey-white ground (~#F4F2EF), bold transitional-serif event titles (iOS New York) set over full-bleed photos (Mt Fuji with cherry blossom 'Trip to Tokyo · 6 days until', birthday party, wedding hands 'Ross & Rachel's Wedding 42'), huge white rounded numerals, iOS-blue + buttons and check marks, a frosted tab bar (Home / Plan / Search / Profile). Signature screens: the Home card with weather pill '14° Mostly clear' and daily note 'Vacation vibes intensifying!'; Moments list; event detail with PLAN 4/10; Plan 'Happening soon / Later'; Timeline '30d before · Book transport' + checklist; a widgets composite; natural-language Search ('Trip in july, birthdays, wedding…').",
+   "Icon: flat pale sun disc rising behind a curved dark-teal horizon; sky graded violet #1F1A4A → plum → rose → peach.",
+   "Journal reasoning: soon-rebrand ('the period at the end is deliberate — a full sentence, a quiet statement'); countdown-psychology (photo = sensory anchor, checklist = agency, one prompt per task; 'the number stops being a reproach and starts being a coordinate'); how-plan-mode-builds-a-checklist (templates not generation; 'T-minus is the native unit of the app'; seven notifications across a trip month instead of thirty).",
+   "Transparency (_data/transparency.yml): 0 third-party SDKs, 0 tracking domains, no account; network = Apple WeatherKit (only if weather is on) + MapKit for pickers; only the coarse destination location leaves the device; permissions Calendar (read-only), Location (when in use). Privacy page front matter has seo + overview / data_collection / data_storage / third_parties / children / changes / contact_email. Support page has seo + slug.",
+   "Testimonials (_data/testimonials.yml, Reddit, initials only, 5 hero-tier), e.g. M.B.: ''Make the waiting itself pretty' is much more memorable than just another countdown utility.' D.N. on the weather tie-in, K.C. on the checklist.",
+   "Alternatives pages targeting soon: days-matter, dreamdays, countdowns-apalon, countdown-star, wedding-happy. All use layout default with a hero, quick answer, a 2-col compare card grid, 'Who should pick', About app card, FAQ and CTA.",
+   "Sibling boards already filed: Allpaid took the yellow departures poster (A), a wall year-planner on white with red/blue dots (B) and a security-tint envelope (C). Earnlock took a vending machine, trail fingerposts and a grey-green LCD pedometer (C). Soon.'s styles avoid all of these."
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "Admit One — the kept ticket and its stub",
+   "family": "print / paper ephemera (two-colour ticket printing on coloured card)",
+   "why": "Tickets, boarding passes and invitations are the object people hold while they look forward; they pin them up and keep the stub afterwards. The format carries the whole mechanism: the face holds the event art (the photo countdown) and a printed timeline of times, so DOORS / BOARDING become T-30 / T-14 / T-3. The stub carries price, scan code (the real QR) and entry (the badge), and tearing it off maps to the event becoming a kept memory."
+  },
+  {
+   "index": 2,
+   "name": "The circled date — the photo wall calendar",
+   "family": "print / paper (domestic ritual object)",
+   "why": "This is the universal pre-app countdown: a picture above the month, the day circled in red marker, days crossed off, 'book flights' pencilled into the box a month earlier. It carries Plan Mode literally (tasks written into their T-day boxes backward from the circle) and the photo anchor. It was ranked first when the list was drawn and is held at #2 because Allpaid's 'Year Planner Dots' already owns the wall-calendar world (white, red and blue by the fridge)."
+  },
+  {
+   "index": 3,
+   "name": "T-minus — the press-site countdown clock and the press-kit sequence",
+   "family": "instrument / broadcast (countdown clock, control console, launch press kit)",
+   "why": "Everyone knows 'T-minus' from launch broadcasts, and it is the app's own internal unit (T-30, T-14, T-3). The lamp-digit countdown clock and the press kit's 'T-time | event' milestone table carry Plan Mode exactly: one scheduled action per T-time, not a daily nag. It is weaker on the emotional photo."
+  },
+  {
+   "index": 4,
+   "name": "Departures — the split-flap board",
+   "family": "signage / wayfinding",
+   "why": "Trips are the most common event, and rows of events with destination, days-to-go and status ('check-in opens T-1') carry several live countdowns plus plan states. It is heavily used as a motif, travel-biased (weddings and pregnancy fit badly), and Allpaid's departures poster already stands nearby."
+  },
+  {
+   "index": 5,
+   "name": "The due-date wheel — a paper volvelle",
+   "family": "instrument / measurement (printed card calculator)",
+   "why": "Gestation wheels and planning wheels turn one date into milestone dates by rotation, so this carries T-minus subtraction physically: turn the disc to your date and every task lines up with its calendar day. Recognition is strongest among expectant parents and weaker for trips."
+  },
+  {
+   "index": 6,
+   "name": "Carousel — the holiday slide tray",
+   "family": "photographic projection",
+   "why": "The circular tray, the beam on a dark wall and the click to the next slide are the family ritual of photo memories. It carries the photo anchor, and the tray coming round carries memories returning each anniversary. It is weak on Plan Mode and skews to an older generation."
+  },
+  {
+   "index": 7,
+   "name": "First light — the dawn sky read as the almanac's twilight phases",
+   "family": "atmospheric light / almanac data (sun-altitude bands)",
+   "why": "The icon is a sun breaking a horizon, and 'Soon.' means it is nearly here. Read through the named phases before sunrise (astronomical −18°, nautical −12°, civil −6°, sunrise 0°), the run-up becomes stages of light the visitor scrolls through, with the download standing on the horizon. It is the literal reading of the name and icon."
+  }
+ ],
+ "seed": {
+  "key": "6d2302b8",
+  "assigned": 7,
+  "reroll1": 7,
+  "reroll2": 3
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "First Light",
+   "kicker": "THE ROLL",
+   "sourceIndex": 7,
+   "lineage": "The app's own icon (a flat sun breaking a curved dark-teal horizon under a violet → rose → peach sky), read through the almanac's twilight table: the named phases before sunrise (astronomical −18°, nautical −12°, civil −6°, sunrise 0°) as printed in nautical almanacs and sun-altitude tables, and the long northern dawns of the developer's Finland.",
+   "thesis": "The page is one dawn. The visitor scrolls down through flat, hard-edged bands of twilight sky, each band one stage of the run-up (far off → planned → forecast → the day → afterwards), while the real countdown rises over a horizon that carries the download. It refuses the category's ticking DD:HH:MM:SS timer over pastel feature cards.",
+   "scene": "Someone awake before an early departure, phone at low brightness in a dark bedroom while the window turns from indigo to rose → a fixed dark-to-light ramp: night at the top, morning at the foot.",
+   "scheme": "dark-to-light ramp: one designed sequence that ignores prefers-color-scheme. color-scheme is dark on the night/nautical/civil bands and light from the sunrise band down.",
+   "colorStrategy": "Drenched",
+   "palette": [
+    {
+     "hex": "#15122B",
+     "role": "Night band: hero, quick answer, About; star field. Text #FFE9C7 at 15.4:1, secondary #D9CFEA at 12.2:1"
+    },
+    {
+     "hex": "#55305F",
+     "role": "Nautical band (−12°): Plan Mode steps and templates. Text #FFF1E6 at 9.6:1"
+    },
+    {
+     "hex": "#A84A62",
+     "role": "Civil band (−6°): weather, features, screenshots, widgets. Text #FFFFFF at 5.5:1, the tightest pair, kept at ≥18px for secondary copy"
+    },
+    {
+     "hex": "#F2AE78",
+     "role": "Sunrise band (0°): who it's for, plans, badge + QR. Ink #1B1530 at 9.3:1"
+    },
+    {
+     "hex": "#E8EEF2",
+     "role": "Morning band (+6°): the reading zone (founder, compare, roadmap, FAQ, privacy, maker line). Ink #1B1530 at 15:1"
+    },
+    {
+     "hex": "#1E3846",
+     "role": "Earth: the horizon arc, the hero's ground below the curve, the sticky bar. Text #FFE9C7 at 10.4:1"
+    },
+    {
+     "hex": "#FFE9C7",
+     "role": "Sun: headline colour on dark bands, the flat sun disc, the focus ring on dark bands, the QR tile"
+    }
+   ],
+   "type": {
+    "display": "Jost 500 for headlines (92px desktop / 44px mobile, #FFE9C7 on night) and Jost 300 for the T-offset numerals on the Plan Mode horizons (120–160px). A Futura-lineage geometric whose perfect-circle o, 0, 6 and 9 read as sun discs; calm and wide, with none of the serif warmth this subject usually gets.",
+    "text": "Literata 400 / 600 for body at 19px/1.6 in a 64ch column (About, FAQ, compare, privacy). A screen-born book face that stays readable on every band from indigo to pale morning.",
+    "utility": "Literata 600 tabular lining figures for T-30, $1.99, 2026 Q4 and the sun altitudes (−12°). No monospace.",
+    "rationale": "A light geometric display against a drenched sky, with a sturdy reading face so the drench never costs legibility. About 59 KB in total: Jost 300/500 ≈ 19 KB, Literata 400/600 ≈ 40 KB."
+   },
+   "materials": [
+    "five flat full-width sky bands, hard-edged with no continuous gradient, stepping night → nautical → civil → sunrise → morning",
+    "the icon's curved earth horizon as an inline SVG arc (#1E3846), reused as the hero floor, the band seams and the sticky bar's top edge",
+    "one flat sun disc (#FFE9C7) with a crisp edge: no glow, no blur",
+    "a sparse static star field on the night band only (12–16 one-pixel SVG points)",
+    "the real iPhone screenshots in a plain dark bezel, rising from behind the horizon",
+    "sun altitudes (−12°, −6°, 0°, +6°) set small in Literata at each band seam's right margin, as data in the margin rather than labels above headings"
+   ],
+   "firstViewportDesktop": "1440×900 on night #15122B with a static star field. Top bar, 64px: the 'Soon.' wordmark (Jost 500 26px #FFE9C7) and 'Countdown & planner app for iPhone' (the pre_headline, Literata 16px #D9CFEA) at left; the altitude-scale nav is pinned to the right edge. A dark-teal earth arc (#1E3846) has its apex at y≈600 and fills the bottom third edge to edge. Rising from behind the curve, centred at x≈720: the iPhone with screenshot 1 ('Trip to Tokyo · 6 days until · 14° Mostly clear · Vacation vibes intensifying!'), 300px wide, top at y≈150, lower ~35% hidden behind the earth. Behind it sits a flat sun disc 620px across, half set, its arc visible around the phone's shoulders. The headline 'Some days you / can't wait for.' (Jost 500 92px #FFE9C7) sits left of the phone (x 96, y 170–370). It is balanced on the right of the phone by the subheadline (Literata 19px #D9CFEA, x 1020–1330, y 200–420), so the phone and sun form the axis rather than a split. On the earth below the curve (y 640–860): the App Store badge (54px tall) at x 96; beside it the price statement 'Free — Premium from $1.99/mo · $12.99 once' (Literata 600 18px) and 'No ads · no account · no tracking'; at x≈1180 a 120px QR on a #FFE9C7 tile captioned 'Point your iPhone camera here'. The Quick Answer starts at the fold on the same earth ground.",
+   "firstViewportMobile": "390×844. Top bar, 56px: 'Soon.' at left, a 'Contents' text button at right (opens the band list). Headline Jost 500 44px/1.0 #FFE9C7, 3 lines, y 80–230, 20px gutters. Below it the rising object: the earth arc's apex at y≈560, with the phone (screenshot 1, 200px wide) rising centred from behind it, top at y≈270, and a half-set 380px sun disc behind. On the earth (y 580–760): the App Store badge (48px) at left, the price line 'Free — Premium from $1.99/mo' (Literata 600 16px) beside or below it, then 'No ads · no account · no tracking' at 14px. The Quick Answer begins at y≈780 on the earth. No QR.",
+   "conversion": "Badge: Apple's black badge (grey keyline, unaltered) stands on the earth, so the download sits on the horizon. It repeats on the sunrise band beside the plans and on the closing strip. QR: desktop ≥1024px only, black-on-white inside its own quiet zone on a #FFE9C7 sun tile, in the hero and on the sunrise band. Sticky bar: once the hero badge leaves the viewport, a 64px earth band (#1E3846) with the horizon's curved top edge docks at the bottom, holding the icon (32px), 'Soon. — Free · Premium from $1.99/mo' and the badge. A small sun disc on the bar's curve climbs as the visitor nears the sunrise band. Price statement: price.value verbatim on the earth, and the full plans ledger on the sunrise band. Smart App Banner: the native iOS banner sits above the night band, and the top bar shows no competing download pill on iOS.",
+   "visitorPath": [
+    "Night band, hero: wordmark + pre_headline, the headline, the rising screenshot-1 phone over the horizon, and badge + price + QR on the earth",
+    "Night band (earth ground): the Quick Answer as a set paragraph (speakable), then the trust line 'iOS · 0 third-party SDKs · no ads · no account · events stay on your iPhone'",
+    "Night band, About (#about): show_body under the about_heading H2 in a 64ch Literata column; the four value_points as bold run-in heads within the prose rhythm; one testimonial set large between paragraphs ('Make the waiting itself pretty' — M.B., Reddit)",
+    "Nautical band (#how-it-works), Plan Mode: the how_it_works intro and 6 numbered steps (a real sequence) down the left, beside one horizon line ticked T-90 → T-0",
+    "Nautical band (#templates): the six Plan Mode templates, each drawn as its own horizon line with tasks hanging as ticks at their true T-offset (pregnancy in weeks) and T-0 at the right where a small sun rises. Without JS all six print stacked; with JS a type switcher plus a 'Your date' field writes calendar dates under each tick",
+    "Civil band (#features): 'When the forecast becomes meaningful', with weather from T-10 (Premium, WeatherKit, place name only) and daily notes T-7 → T-0 as two short statements. Then the 7 screenshots stand on one horizon line in a snap-scroll row, each captioned by its matching feature (photo countdowns, Plan Mode, weather, natural-language search, widgets); Memories and Calendar sync appear as text features",
+    "Civil band, widgets: Home Screen / Lock Screen / StandBy and the six styles (small, medium, large, ring, minimal, timeline) beside screenshot 6",
+    "Sunrise band: who it's for / who it isn't as two plain lists (5 and 3). Then the plans as a four-row ledger (Free, Premium Monthly, Premium Annual marked by the sun disc as the highlight, Lifetime) with prices in tabular figures, the plans_footnote, badge + QR",
+    "Morning band: the founder note 'Rebuilt from TheWait — by the person who shipped it.' with bio, the 4 signals, the response-time line and a mailto",
+    "Morning band (#compare-heading-soon): the comparison table (Soon. vs Days Matter / Countdowns (Apalon) / Wedding Happy, 10 rows, Soon. column on a pale apricot wash), footnote, inline badge",
+    "Morning band, Memories return: a short statement that the event becomes a memory and comes back each anniversary, with the band's small sun completing its arc",
+    "Morning band, roadmap: Shipped / Targeted 2026 Q4 / Targeted 2027 H1 / Under consideration, ordered by sun height (shipped = risen), with the disclaimer",
+    "Morning band: FAQ (14 details), the Quick reference ai-canonical <details> (always in the DOM), the privacy summary (5 notes plus transparency facts: 0 SDKs, only the coarse destination to WeatherKit) linking /transparency/, the privacy policy and support",
+    "Morning band: related journal (Plan Mode post), alternatives_to links, other Lagerland apps (computed), the maker/freshness line (Built by Lagerland Apps · first released 2026-01-01 · last updated 2026-04-13), then a slim sunrise closing strip with badge + QR",
+    "The shared 'A Lagerland app' footer strip"
+   ],
+   "navigation": "Desktop: an altitude scale fixed to the right edge. It is a 1px vertical rule with five ticks labelled Night, Plan Mode −12°, Widgets −6°, Price 0° and Questions +6° (Literata 14px). Each tick is an anchor link, and the current band's tick carries a 10px sun disc. The top bar holds the 'Soon.' wordmark (back to top) and a 'Download' text link to the hero badge. Mobile: a 'Contents' button opens a <details> sheet listing the same five bands. Focus: a 2px #FFE9C7 ring on dark bands and a 2px #1B1530 ring on light bands, 3px offset, links in DOM order.",
+   "signatureInteraction": "Sunrise on scroll. As each band enters, the sun disc on the sticky earth bar and the altitude-scale marker climb from −18° to +6°: IntersectionObserver sets --alt on <html> and CSS translates the disc, using animation-timeline: scroll() where supported. No-JS: the bands, horizon and half-set hero sun render statically, the sticky bar is absent, and badges sit in the hero, on the sunrise band and on the closing strip. Reduced motion: the disc jumps between the five band positions with no tween, and the hero phone sits at its final height.",
+   "motionGrammar": "Slow and vertical only: things rise, and nothing slides sideways or bounces. The hero phone rises 40px over 900ms ease-out on load. Band seams carry no animation (the colour step is the event). The sun disc moves 600ms ease-in-out between altitudes. Template ticks fade up 12px in T-far → T-0 order at a 60ms stagger. Everything runs under html.js, and all content is visible without JS.",
+   "readModeVariant": "Privacy, support and the five alternatives pages share one frame: a 260px night-band masthead with the star field and the earth arc as its lower edge, and the page title in Jost 500 48px set on the earth (e.g. 'Days Matter alternative'). The reading column then runs on the morning band (#E8EEF2) in Literata 19px/1.65 at 66ch, ink #1B1530. Tables are ruled in #A84A62 hairlines with Soon.'s column on an apricot wash, and FAQs are plain details. Each page closes on a sunrise strip with badge, price and QR. Privacy policy fields (overview, data collection, storage, third parties, children, changes) become H2s, with a small transparency-facts table at the top. Support sets the email and the 'usually within a day' line on the earth band.",
+   "assetsNeeded": "None new. Hand-authored inline SVG for the earth arc and star field; existing screenshots 1–7, icon, QR (assets/qr/soon.svg) and the badge include.",
+   "risk": "This is the literal reading of the name and icon, the obvious 'sunrise app' move, and done loosely it becomes a sunset-gradient wallpaper; the hard band steps and the almanac altitudes are what keep it from that. The drenched bands need per-band contrast tuning (the civil rose is the tightest at 5.5:1 with white). A dark top for an app with a light UI means the screenshots glow on indigo and must not be dimmed. The scroll-linked sun is an enhancement only and must fall back to band-step jumps if it janks on low-end phones. Sibling watch: AfterShift (sleep after night shifts) may reach for night/dawn skies, and if it does, this style keeps the curved horizon and the phase bands as its distinguishing system.",
+   "memoryTest": "The countdown site where you scroll from night into sunrise: the phone with the Tokyo countdown was rising out of the horizon, and the download button stood on the ground.",
+   "specimen": {
+    "bg": "#15122B",
+    "ink": "#E8EEF2",
+    "accent": "#1E3846",
+    "display": "Jost",
+    "dw": 500,
+    "text": "Literata",
+    "h1": "Some days you can't wait for.",
+    "sub": "Countdowns worth waiting for.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Dela Gothic One goes to shogiful-b, whose subject is Japanese. Set the marquee in Mochiy Pop One, a Japanese sticker/marquee gothic unused elsewhere. Make all price lamps lighting together the one move, and shrink the credit display to a small red 7-segment strip, as on real machines. That drops Doto here and leaves it on chessful-a and soon-c. Below the hero, keep the page on machine faces (side-panel plates, the audit printout, the pickup bin) instead of plain set panels."
+    },
+    {
+     "sev": "major",
+     "text": "aftershift-a keeps navy and Atkinson: the uniform colour and the low-acuity argument are literal. observa-a takes its icon's own warm night (~#15110F), with apricot as the only colour and no glow. Constellation names and labels move into one sans with tabular figures (e.g. League Spartan, from the Futura lineage of star charts), with no mono and no spaced Didone caps. Keep Bodoni Moda for the H1 at most."
+    },
+    {
+     "sev": "major",
+     "text": "Make the backward schedule the first-viewport object. Set T-90, T-30, T-14, T-3 and T-1 on the twilight bands themselves, from astronomical twilight to sunrise, with the day at the horizon. Put the badge on the horizon and move the phone below the fold into the civil band. Drop the star field entirely."
+    },
+    {
+     "sev": "major",
+     "text": "Replace it with taskful-day candidate #5, the felt letterboard with push-in letters. It keeps the dealt changeable-letter 'held over' mechanic in a domestic object with no tickets. Set its letters in a face outside the Big Shoulders family, as white letters on a coloured felt rather than amber bulbs on navy."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "List the hero image as a needed asset: a committed WebP/AVIF crop at 2x display size (a: about 600x1300 and 90 KB or less; b: a 780x440 mobile crop and a 680x1330 desktop crop; c: about 600x760). Preload it with fetchpriority=high and give it explicit width/height. In style a, run the 40px rise as a transform from full opacity, so it never delays the LCP paint."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "Admit One",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "The kept event ticket: gig and theatre tickets, boarding passes, and the stub people keep in a drawer or pin to the fridge. Two-colour print on coloured card, a condensed gothic event name (Alternate Gothic lineage), field labels over values (DATE · DOORS · SEAT), a scan code, a serial number, and a perforated tear-off stub with notched ends.",
+   "thesis": "The page is one ticket for the day you are waiting for: the face (the photo countdown and a timeline of T-times), the perforation, and the stub you keep. The App Store badge, QR and price are printed where a ticket prints its entry code and fare. It refuses the category's pastel timer page and the incumbent's split hero.",
+   "scene": "Someone at the kitchen counter in daylight on the day the booking confirmation arrives, phone in hand → light, single scheme, on coloured card stock (not white, not cream).",
+   "scheme": "light",
+   "colorStrategy": "Committed",
+   "palette": [
+    {
+     "hex": "#F3C6D2",
+     "role": "Ticket card: cherry-blossom pink stock taken from the Tokyo screenshot, used as the page ground everywhere"
+    },
+    {
+     "hex": "#2A1232",
+     "role": "Print ink, aubergine-black: headlines, text, rules, perforation dots. 11.2:1 on card"
+    },
+    {
+     "hex": "#1A3FB8",
+     "role": "Spot ink, the app's own blue (its + and check marks): T-times, stub numerals, fares, links. 5.7:1 on card, 6.7:1 on the stub"
+    },
+    {
+     "hex": "#F8DCE3",
+     "role": "Pale card: the stub, and the reading sheets of the Read pages. Ink at 13.3:1"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "Scan tile: the QR's quiet zone only"
+    }
+   ],
+   "type": {
+    "display": "League Gothic 400 for the event title / headline (uppercase, 128px desktop / 64px mobile), the fares and the stub's big value (120–180px). It is the open revival of Alternate Gothic No. 1, the condensed gothic of gig tickets and show bills.",
+    "text": "Sofia Sans 400 / 700 for body at 18px/1.55 in a 64ch column. Field labels use 700 caps at 12–13px +0.1em: these are the ticket's own DATE / SEAT labels sitting over values, not eyebrows over headings.",
+    "utility": "Sofia Sans 700 tabular figures for prices, the serial (App Store ID 6757280643) and T-times.",
+    "rationale": "One poster gothic for what a ticket shouts and one clean humanist for what it says. About 42 KB: League Gothic ≈ 10 KB, Sofia Sans 400/700 ≈ 31 KB."
+   },
+   "materials": [
+    "one coloured card stock (#F3C6D2) as the page ground, flat, with no paper-texture images",
+    "two-ink print, held strictly: aubergine for everything, app-blue as the spot for numerals, fares and the plan",
+    "a perforation: a dotted 3px ink rule with half-circle notches cut into the card's edges (CSS radial-gradient masks)",
+    "field-label / value blocks on 2px ink rules (WHEN · PLAN · SCREENS · FARE) as the page's typographic system",
+    "the printed art panel: a square-cornered crop of the real Moments screenshot (2) with a 1px ink keyline",
+    "the scan code: the real QR on a white quiet-zone tile; a serial line 'No. 6757280643' in spot blue"
+   ],
+   "firstViewportDesktop": "1440×900: the ticket fills the viewport edge to edge in pink card. A vertical perforation splits the body (x 0–1100) from the stub (x 1100–1440), with half-circle notches at y 0 and at the fold. Body: along the top edge (y 24–56), the 'Soon.' wordmark, 'Countdown & planner app for iPhone' (Sofia Sans 700 14px caps) and four links. Art panel at x 48–388, y 96–760: the top 70% of screenshot 2 (Moments: Trip to Tokyo 6 · Final Exam 9 · Tim's Birthday 14), square crop. Event title at x 430–1060, y 96–420: 'SOME DAYS YOU / CAN'T WAIT FOR.' in League Gothic 128px/0.88 ink. Below it, a 2px rule and the ticket's field row (y 450–540): labels T-30 · T-14 · T-3 · T-1 (Sofia Sans 700 12px) over values 'Book flights · Buy adapter · Pack · Check-in opens' (League Gothic 36px, spot blue). This is the trip template as the ticket's timeline, with an 'Illustrative — Trip template' note. Then the Quick Answer (Sofia Sans 17px/1.5, 60ch, y 570–700) and the trust line 'iOS · no ads · no account · 0 third-party SDKs'. Stub (pale card #F8DCE3, x 1100–1440): the 'ADMIT ONE' and 'FARE' labels, 'Free' in League Gothic 120px spot blue, 'Premium from $1.99/mo · $12.99 once' (Sofia 700 16px), the App Store badge at 52px, a 140px QR on its white tile captioned 'Scan to install on iPhone', and 'No. 6757280643' at the stub foot.",
+   "firstViewportMobile": "390×844: the ticket stands portrait, like a phone pass. Wordmark row, 52px. Art panel 390×220 (crop of screenshot 2's top two cards: Trip to Tokyo, Final Exam). Title 'SOME DAYS YOU CAN'T WAIT FOR.' in League Gothic 64px/0.9, 3 lines (y 290–470). The field row as a 2×2 block, T-30 Book flights / T-14 Buy adapter / T-3 Pack / T-1 Check-in opens (y 490–600, values 24px spot blue). A horizontal perforation with edge notches at y≈620. The stub (pale card) below: 'ADMIT ONE · Free', 'Premium from $1.99/mo', the App Store badge at 48px (y 630–760). The Quick Answer begins directly after the stub (~y 790).",
+   "conversion": "The stub is the conversion unit: 'ADMIT ONE', the fare (price.value verbatim), Apple's black badge (unaltered) on the pale stub, and on desktop the real QR as the ticket's scan code. On desktop the stub column is sticky for the full viewport height beside the scrolling body, so the badge never leaves the screen and the stub itself is the sticky bar. On mobile, once the hero stub scrolls away, a 64px stub with a perforated, notched top edge docks at the bottom with 'Free · Premium from $1.99/mo' and the badge. The pricing section prints the four plans as ticket classes. Smart App Banner: native, above the ticket.",
+   "visitorPath": [
+    "Ticket face (hero): wordmark + pre_headline, art panel (screenshot 2), the event title = headline, the T-times field row (trip template), the Quick Answer, the trust line; the stub with fare, badge, QR and serial",
+    "Print your ticket (#templates): an event-type select (Trip, Wedding, Pregnancy, Birthday, Graduation, Move) and a date field; the face below reprints as that event's ticket, with every Plan Mode task as a field carrying its real calendar date. Without JS, the six example_insights templates print as six field rows",
+    "Your day (#how-it-works): the how_it_works intro and six numbered steps printed as the ticket's timeline, the way a ticket lists DOORS · SUPPORT · SHOW",
+    "Description: show_body under about_heading in a 64ch column; the four value_points as one ruled run of label/value fields (not a card grid)",
+    "Gallery (#features): the seven screenshots as a horizontal snap-scroll row of art panels, each captioned by its feature; widgets (Home / Lock / StandBy; small, medium, large, ring, minimal, timeline) as a field row under screenshot 6",
+    "Kept stubs: the five Reddit testimonials as small stubs in a row, with initials + 'Reddit' as each stub's serial line",
+    "Admits / Not valid for: who_for (5) and who_not_for (3) in a ticket's conditions language",
+    "Ticket classes (pricing): Free / Premium Monthly / Premium Annual (stamped 'Best value' = highlight) / Lifetime as a fare table with prices in League Gothic spot blue; the plans_footnote as fare conditions; badge",
+    "Issued by (founder): 'Rebuilt from TheWait — by the person who shipped it.' Antti Aittamaa · Finland, with bio, signals, response time and mailto",
+    "Comparison (#compare-heading-soon): a fare-table layout with Soon.'s column printed in spot blue; footnote; badge",
+    "Future dates (roadmap): shipped / targeted 2026 Q4 / 2027 H1 / under consideration as a tour-dates list; disclaimer",
+    "Conditions of issue: FAQ (14 details); the privacy summary + transparency facts linking /transparency/; the Quick reference ai-canonical <details> as the 'Ticket details' panel; privacy policy and support links",
+    "The kept stub (closing): the stub at the page foot (fare, badge, QR), which tears off to show 'Kept · comes back every year' (memories); then related journal, alternatives_to links, other Lagerland apps (computed) and the maker/freshness line as the ticket's issue line",
+    "The shared footer strip"
+   ],
+   "navigation": "Four links printed along the ticket's top edge as field values, PLAN · SCREENS · FARES · QUESTIONS (Sofia Sans 700 14px caps, 44px tap targets), plus the 'Soon.' wordmark back to top. Mobile: the wordmark and a 'Menu' text button that opens a details panel printed on pale stub card. Focus: a 3px #1A3FB8 outline at 2px offset on every link, field control and the badge.",
+   "signatureInteraction": "Print your ticket. The visitor picks an event type and a date (native select + date input). The face reprints: the title becomes the event (e.g. 'WEDDING'), the stub shows the days-to-go in League Gothic blue, and each Plan Mode task fills a field with its real calendar date, computed backward from the chosen date in about 40 lines of vanilla JS. At the page foot the closing stub tears along its perforation (rotates 4°, drops 12px) to reveal 'Kept · comes back every year'. No-JS: the illustrative trip ticket plus all six templates as printed rows, with the stub attached and its text visible. Reduced motion: fields update instantly and the stub stays attached with the same text.",
+   "motionGrammar": "Small and paper-like: fields reprint with a 180ms ink fade, top to bottom. The stub tear is the only rotation on the page (300ms ease-out, once). Link hover underlines in spot blue. No scroll-triggered reveals.",
+   "readModeVariant": "Privacy, support and alternatives pages print on the same pink card. A short ticket face acts as the masthead: wordmark, page title in League Gothic 72px (e.g. 'DAYS MATTER ALTERNATIVE'), and a field row (UPDATED · date / FOR · Soon.), with the stub carrying badge + fare. The reading column below moves to the pale card (#F8DCE3), Sofia Sans 18px/1.65 at 66ch in ink. Comparison tables are fare tables with Soon.'s column in spot blue, and FAQs are plain details. Privacy policy sections sit under 'Conditions' with their real headings. The support page sets the email as the stub's main field, with the response-time line under it.",
+   "assetsNeeded": "None new. The art panel and gallery use screenshots 1–7 (a crop of screenshot 2 for the hero); the QR, badge include and icon exist; the perforation and notches are CSS masks.",
+   "risk": "It is familiar: a ticket is an obvious anticipation token, and a pink gig-ticket look may read as concert-specific or gendered for weddings and pregnancy. The two-ink discipline must hold, with no third colour creeping in. It must stay clear of Allpaid's 'Security Tint Envelope', so there is no guilloche, lattice or microtext here, only flat two-colour print. The sticky desktop stub costs 340px of width, so the body must still hold a 64ch reading column at 1280px. The trip template is shown beside a Tokyo screenshot, so the field row must be labelled illustrative.",
+   "memoryTest": "The countdown site that was a pink ticket: the price and the App Store button were on the tear-off stub, and the ticket's times were my trip's to-dos.",
+   "specimen": {
+    "bg": "#F3C6D2",
+    "ink": "#2A1232",
+    "accent": "#1A3FB8",
+    "display": "League Gothic",
+    "dw": 400,
+    "text": "Sofia Sans",
+    "h1": "Some days you can't wait for.",
+    "sub": "Countdowns worth waiting for.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "soon-b keeps it, since Alternate Gothic is the ticket/event-poster face. appmeta-pulse-b sets its banner in Libre Franklin 900: the Franklin Gothic of US markets pages, and already its text family. That makes Franklin a display face in appmeta-pulse-b, so allpaid-c moves its window headline and indicia caps off Libre Franklin (e.g. Epilogue 600/800, unused on the board)."
+    },
+    {
+     "sev": "major",
+     "text": "Run the light board across the full width as the stage, with the three lenses large and the verdict strip under them. Set the H1 above it and the hand-in slip below it. Ground the page in its white form paper (#FBFBF9), so the black housing is the only mass."
+    },
+    {
+     "sev": "major",
+     "text": "shogiful-c keeps the pink, because tinted manga signatures are native to it. Print soon-b's ticket on a stock no other surface uses, e.g. pale aqua card (~#C4E6E1). Keep the aubergine ink and the app-blue spot, and re-check blue text on the new stock for 4.5:1."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "List the hero image as a needed asset: a committed WebP/AVIF crop at 2x display size (a: about 600x1300 and 90 KB or less; b: a 780x440 mobile crop and a 680x1330 desktop crop; c: about 600x760). Preload it with fetchpriority=high and give it explicit width/height. In style a, run the 40px rise as a transform from full opacity, so it never delays the LCP paint."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Keep League Gothic on appmeta-pulse-b (newspaper listings). Move soon-b to Anton 400 (a show-bill gothic, 18 KB) for the title, fares and stub numerals, and Kumbh Sans 400/700 (13 KB each) for body and field labels, with Kumbh's tabular figures for prices and T-times."
+    },
+    {
+     "sev": "major",
+     "text": "Mark Annual with a neutral in-world mark (a punched hole or a 'Billed yearly' line). If the owner wants a value stamp, add an approved highlight_label to the front matter first; 'Best long-term value' would belong on Lifetime."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "T-Minus Clock",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 3,
+   "lineage": "The Kennedy Space Center press-site countdown clock (the original lamp-digit board by the turn basin, 1969–2014), the countdown-milestones table every launch press kit prints (T-time | event), and the painted steel, engraved key legends and GO / NO-GO lamps of launch-control consoles. Chosen because, in Soon.'s own Plan Mode journal post, 'T-minus is the native unit of the app'.",
+   "thesis": "The page is one countdown instrument: a black lamp-digit board that steps through your Plan Mode sequence one T-time at a time, set into a pale console whose sections read as a launch press kit (sequence, monitors, manifest, fact sheet). It refuses both the pastel ticking-timer page and the dark neon dashboard.",
+   "scene": "A planner at a desk on a weekday lunch break under flat office fluorescent light, laptop open from a search result, running their trip like a launch controller → light console with one black instrument.",
+   "scheme": "light (one matte-black instrument board inside a pale console; color-scheme light)",
+   "colorStrategy": "Committed",
+   "palette": [
+    {
+     "hex": "#D3DAE2",
+     "role": "Console paint, pale blue-grey: page ground, nav strip, section surfaces. Ink at 12.5:1"
+    },
+    {
+     "hex": "#15191F",
+     "role": "Engraving ink: headlines, body, key legends, panel seams"
+    },
+    {
+     "hex": "#0F1110",
+     "role": "Countdown board: the hero instrument, the sticky remote clock, the Read-page mastheads"
+    },
+    {
+     "hex": "#FFB21E",
+     "role": "Lamp amber: board digits and the lit (current) key, used only on black (10.5:1) or as a key fill under ink (9.8:1)"
+    },
+    {
+     "hex": "#F6F7F8",
+     "role": "Press-kit paper: tables, FAQ, fact sheet, the reading column. Ink at 16.4:1"
+    },
+    {
+     "hex": "#126236",
+     "role": "GO lamp: always paired with the word GO; text 5.3:1 on the console"
+    },
+    {
+     "hex": "#A32019",
+     "role": "NO-GO lamp: always paired with the word NO-GO; text 5.4:1 on the console"
+    }
+   ],
+   "type": {
+    "display": "Doto 700 for the lamp-grid digits on the board ('T-30', '06') at 240px desktop / 120px mobile, numerals and T-times only, never prose and never under 48px. B612 700 for the headline (64px desktop on one line / 34px mobile), section heads and engraved key legends (caps 14px +0.08em). B612 is the open cockpit-display face Airbus commissioned for instrument legibility.",
+    "text": "Public Sans 400 / 600 for body at 18px/1.6, 66ch: the open US-government face, used here for press-kit prose, FAQ and privacy.",
+    "utility": "B612 400 for table heads, the T-time column and status legends (WEATHER · DAILY NOTES · NOTIFY).",
+    "rationale": "A lamp grid for numbers, an instrument face for legends and a civic text face for reading: three jobs, each face doing one. About 64 KB: Doto 700 ≈ 4 KB, B612 400/700 ≈ 32 KB, Public Sans 400/600 ≈ 28 KB."
+   },
+   "materials": [
+    "pale blue-grey painted console steel (#D3DAE2) as the ground, with 1px darker panel seams and four corner screws per panel drawn in CSS",
+    "one matte-black countdown board carrying lamp-digit numerals (Doto) and a white B612 task line",
+    "engraved rectangular keys (1px inset light/dark edges, B612 caps legends) for navigation and template selection, with the selected key lit amber",
+    "GO / NO-GO status lamps: round 12px lamps always paired with the words",
+    "press-kit paper sheets (#F6F7F8) for tables, FAQ and the fact sheet",
+    "portrait monitor bays (black, 18px radius) holding the real screenshots"
+   ],
+   "firstViewportDesktop": "1440×900 on console #D3DAE2. Console strip, 56px: the nameplate 'Soon.' (B612 700 22px) and 'Countdown & planner app for iPhone' (B612 400 14px) at left; five engraved keys at right: PLAN MODE · MONITORS · MANIFEST · FACT SHEET · DOWNLOAD. The headline 'Some days you can't wait for.' in B612 700 64px on one line, y 96–170, x 80. The board (x 80–1360, y 200–600, #0F1110), left two-thirds: 'T-30' in Doto 700 amber at 240px; under it 'BOOK FLIGHTS' in B612 700 30px white and 'TRIP · 30-DAY TEMPLATE · ONE NOTIFICATION, ON THE DAY' in B612 400 14px grey. Along the board's foot, three status lamps: WEATHER (unlit, 'from T-10'), DAILY NOTES (unlit, 'T-7 → T-0'), NOTIFY (lit). Then the keys EARLIER · RUN THE COUNT · LATER. Right third of the board: a portrait monitor bay with the real countdown card (screenshot 3 cropped to its photo card, ~300×380). Console shelf below (y 630–880): at left (760px wide) the Quick Answer in Public Sans 17px/1.55; at right the App Store badge at 56px, the price line 'Free — Premium from $1.99/mo · $12.99 once' (B612 700 18px), 'No ads · no account · no tracking', and a 120px QR on a paper tile captioned 'Scan to install on iPhone'.",
+   "firstViewportMobile": "390×844. Nameplate strip, 52px: 'Soon.' and a 'Keys' button. Headline B612 700 34px/1.1, 2 lines (y 72–150). A full-bleed board, 390×300 (y 170–470): 'T-30' in Doto 700 amber at 120px, 'BOOK FLIGHTS' at 20px white, the template line at 12px, and EARLIER / LATER keys 44px tall at the board's foot. On the shelf: the App Store badge at 48px and the price line at 16px (y 490–560), then 'No ads · no account · no tracking' at 14px. The Quick Answer starts at y≈590, and the monitor bay with the screenshot follows below it.",
+   "conversion": "Badge: Apple's black badge (unaltered) sits on the console shelf beside the price line like the one physical button that matters; it repeats under the manifest (pricing), in the fact sheet and at the closing board. QR: desktop only, on a press-kit paper tile on the shelf. Sticky bar: when the hero badge scrolls away, a 56px black 'remote clock' docks at the top with a small Doto amber T-value (the board's current state), 'Soon. — Free · Premium from $1.99/mo' and the badge. Price: price.value verbatim on the shelf, the plans on the manifest. Smart App Banner: native, above the nameplate strip.",
+   "visitorPath": [
+    "Console strip + headline + the countdown board ('T-30 Book flights', status lamps, a monitor bay with the real countdown card)",
+    "Console shelf: the Quick Answer (speakable), badge, price, QR, and the trust line 'iOS · 0 third-party SDKs · no ads · no account · events stay on your iPhone'",
+    "Countdown sequence (#templates): six engraved template keys (TRIP 30D · WEDDING 90D · PREGNANCY 40WK · BIRTHDAY 14D · GRADUATION 21D · MOVE 45D); the selected template prints as a press-kit milestone table (T-time | task) on paper, and the board above follows the row in focus",
+    "Countdown procedure (#how-it-works): the how_it_works intro and 6 numbered steps (a real sequence) on paper, each step's T-anchor in B612",
+    "What the instrument does: show_body under about_heading, with the four value_points as run-in heads in one paper column",
+    "Monitors (#features): 7 portrait monitor bays in a snap-scroll bank, each with an engraved legend (HOME, MOMENTS, EVENT, PLAN, TIMELINE, WIDGETS, SEARCH) and the matching feature text; the widgets bay lists Home / Lock / StandBy and the six styles",
+    "Range weather: one paper panel stating that the forecast appears from T-10 via Apple WeatherKit (Premium), using a place name or approximate coordinates only",
+    "Go / no-go poll: who_for as 5 GO lines and who_not_for as 3 NO-GO lines, each with its lamp and the word",
+    "Range reports: the five Reddit testimonials with initials as a quiet paper list",
+    "Manifest (pricing): Free / Premium Monthly / Premium Annual (lamp lit = highlight) / Lifetime as a table with price, billing and contents; the plans_footnote; badge",
+    "Launch manifest (roadmap): Flown (2 shipped), NET 2026 Q4 (Apple Watch), NET 2027 H1 (iPad, macOS), Proposed (shared events), where NET means 'no earlier than', matching the 'targets, not commitments' wording; disclaimer",
+    "Crew of one (founder): 'Rebuilt from TheWait — by the person who shipped it.' on an engraved nameplate ANTTI AITTAMAA · FINLAND, with bio, signals, response time and mailto",
+    "Comparison (#compare-heading-soon): a paper table with an amber key-light rule on Soon.'s column; footnote; badge",
+    "Press questions (FAQ, 14 details as Q / A); the Fact sheet = the Quick reference ai-canonical <details>; Flight rules = the transparency facts (0 SDKs, coarse destination only, no account) linking /transparency/, plus privacy policy and support links",
+    "Closing: a small board reading 'T-0' with badge + QR; related journal, alternatives_to links, other Lagerland apps (computed), the maker/freshness line as the press kit's issue line; shared footer strip"
+   ],
+   "navigation": "Engraved keys in the console strip: PLAN MODE, MONITORS, MANIFEST, FACT SHEET, DOWNLOAD. They are rectangular keys with B612 caps legends, and the current section's key is lit amber with ink. Mobile: a 'Keys' button opens a details panel of the same keys, each 48px tall. Focus: a 3px #FFB21E ring with a 2px #0F1110 inner rule, matching a lit key.",
+   "signatureInteraction": "Run the count. The board steps through the chosen template's T-times via EARLIER / LATER keys, arrow keys while focused, or RUN THE COUNT, which advances one milestone every 1.6s and stops at T-0. Lamp digits change with a 120ms bulb fade. The WEATHER lamp lights at T-10 and DAILY NOTES at T-7. At T-0 the task line shows the event and 'becomes a memory', and the monitor bay shows the full countdown card. No-JS: the board shows T-30 'Book flights' and the full milestone table renders below it. Reduced motion: no bulb fade, and RUN THE COUNT steps only on press (no auto-advance).",
+   "motionGrammar": "Procedural and discrete: values swap and nothing glides. Lamp digits cross-fade over 120ms, keys depress 1px for 80ms, and lamps switch on instantly. The only other motion is a 150ms fade-in on the sticky remote clock.",
+   "readModeVariant": "Privacy, support and alternatives pages keep the console strip, then a short black board as masthead showing the page's name in B612 caps (e.g. 'DAYS MATTER ALTERNATIVE') with a lamp line. The body is press-kit paper (#F6F7F8) in Public Sans 18px/1.65 at 66ch. Tables have B612 heads over paper rows. The privacy policy appears as numbered 'flight rules' sections under its real headings (overview, data collection, storage, third parties, children, changes). The support page is one console panel with the email and the response-time line. Alternatives pages end on the shelf with badge, price and QR.",
+   "assetsNeeded": "None new. A crop of screenshot 3's photo card for the hero monitor bay comes from the existing PNG; the board, keys, lamps and screws are all CSS.",
+   "risk": "Tone: a launch frame on weddings, pregnancy and birthdays can read as cosplay. It must stay procedural and quiet, with no rockets, flags or space imagery: only the clock, the sequence and the console. The photo, Soon.'s emotional core, is demoted to a monitor bay. Instrument worlds sit near Earnlock's LCD pedometer and may sit near Appmeta Pulse's monitoring dashboard, which is why the board is lamp-grid on black, not 7-segment LCD, and the console is blue-grey, not grey-green. Doto is illegible small, so it is used for numerals only and at 48px or larger.",
+   "memoryTest": "The countdown site with the big black lamp clock: I pressed 'later' and it counted my trip down T-30, T-14, T-3, and lit the weather lamp at T-10.",
+   "specimen": {
+    "bg": "#D3DAE2",
+    "ink": "#0F1110",
+    "accent": "#FFB21E",
+    "display": "Doto",
+    "dw": 700,
+    "text": "Public Sans",
+    "h1": "Some days you can't wait for.",
+    "sub": "Countdowns worth waiting for.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "List the hero image as a needed asset: a committed WebP/AVIF crop at 2x display size (a: about 600x1300 and 90 KB or less; b: a 780x440 mobile crop and a 680x1330 desktop crop; c: about 600x760). Preload it with fetchpriority=high and give it explicit width/height. In style a, run the 40px rise as a transform from full opacity, so it never delays the LCP paint."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Keep B612 (plus B612 Mono) on appmeta-pulse-a. Drop B612 from soon-c and set the headline and engraved legends in Public Sans 700 caps. Public Sans is already soon-c's text face, and as the US government's open face it suits a launch console; this also saves about 34 KB."
+    },
+    {
+     "sev": "major",
+     "text": "Server-render all six milestone tables as visible, crawlable tables. The keys should only scroll to or highlight a table and drive the board."
+    }
+   ]
+  }
+ ],
+ "canon": "Canon (the category standard, the owner's standing exit, not recommended): a pastel-gradient hero with a tilted iPhone and stacked widgets beside 'Never miss a moment', a live DD:HH:MM:SS demo timer, a row of four icon feature cards (Widgets · Weather · Checklists · Privacy), three pricing cards with 'Most popular', a star strip and an FAQ accordion.",
+ "notes": "DICE: concept-seed ran degraded (no catalog challengers, no network roll; the protocol says not to retry). Key 6d2302b8 → ASSIGNED 7 (First Light, the literal sunrise reading) = Style A. --reroll 1 also returned 7, a collision, so --reroll 2 was used and returned 3 = Style C. Rerolls 3–5 were also run (3, 4, 3) and are not used. N and R1 are not 1, so Style B is candidate #1. RANKING NOTE: when the list was drawn before the roll, the photo wall calendar was #1 and the ticket #2. After reading /board/data/allpaid.json, which already has 'Year Planner Dots' (a wall planner by the fridge on white with red and blue dots) as its pick, the calendar was swapped to #2 so the two microsites do not share a world. The rolled indices 3 and 7 were not touched. FONTS were checked on npm (@fontsource/jost, literata, league-gothic, sofia-sans, doto, b612, public-sans all exist with the weights named; schibsted-grotesk and kalam were also checked for the dropped calendar style). ANCHORS to keep, because the markdown body links them: #features, #how-it-works, #templates, #compare-heading-soon, and /apps/soon/privacy/. CONTENT FLAGS for the owner: (1) the Lifetime plan summary says '$12.99 ≈ roughly 8 months of monthly Premium', but 12.99 / 1.99 ≈ 6.5 months; no style repeats the 8-month claim. (2) _data/app_enrichment.yml lists 34 language codes while copy says 39 languages, so the code list should not be shown as '39'. (3) The founder signal 'Shipped 19 privacy-first Apple apps' is a hard-coded count. (4) /alternatives/countdown-star/ targets Soon. but 'Countdown Star' is missing from alternatives_to (an integration-point gap). (5) Ratings are 5.0 × 3, so no stars and no aggregateRating. (6) The roadmap ('last reviewed 2026-05-13', Apple Watch 'targeted 2026 Q4') is in its target quarter today (2026-10-05) and may need a freshness pass. Every style shows the trip template as illustrative and uses only real front matter, screenshots, testimonials and transparency data. No repo files were modified.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

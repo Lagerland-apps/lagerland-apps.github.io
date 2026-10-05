@@ -1,0 +1,90 @@
+[
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "studio (vs allpaid, taskful-day)",
+  "style": "b",
+  "severity": "major",
+  "issue": "The Back Catalogue's cloudberry drench (#F2B21B) is almost the same yellow as taskful-day-c's timer body (#F4C443). It also sits beside allpaid-a's poster yellow (#FFD617). All three set black type with white panels. If the studio wears a microsite's drench, that microsite reads as the studio, and the studio as the microsite.",
+  "fix": "Drop the drench on studio-b. The shop wall goes neutral (white, or a graphite shelf), so the spines in each app's own colours are the only colour. That is also truer to its thesis that the label appears only as a catalogue number and a cartouche. allpaid-a (Abfahrt yellow) and taskful-day-c (the icon's sun) keep yellow. If both are picked, keep taskful-day-c's white dial face dominant.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "aftershift (vs allpaid)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Barlow Condensed is the display face of aftershift-a (the back-lettering H1) and of allpaid-a (day numerals and H1). Barlow also sets mediakit-c's text, so the family is in three surfaces.",
+  "fix": "allpaid-a keeps Barlow, the free DIN stand-in that is native to a German-language Abfahrt poster. aftershift-a sets its uniform back-lettering in Mohave 600/700, a caps-first condensed sans that is unused elsewhere, and keeps Atkinson for text.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "appmeta-pulse (vs soon; knock-on allpaid)",
+  "style": "b",
+  "severity": "major",
+  "issue": "League Gothic is the display face of appmeta-pulse-b (the banner) and of soon-b (the event title and the stub's big value).",
+  "fix": "soon-b keeps it, since Alternate Gothic is the ticket/event-poster face. appmeta-pulse-b sets its banner in Libre Franklin 900: the Franklin Gothic of US markets pages, and already its text family. That makes Franklin a display face in appmeta-pulse-b, so allpaid-c moves its window headline and indicia caps off Libre Franklin (e.g. Epilogue 600/800, unused on the board).",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "allpaid (vs appmeta)",
+  "style": "c",
+  "severity": "minor",
+  "issue": "Security Tint Envelope is navy with a bank security pattern, which leans on the category reading 'finance means blue'. Courier Prime is also the data face of both allpaid-c and appmeta-a.",
+  "fix": "Make the paper windows and enclosures the major surfaces, so navy is the shadowed interior rather than the page. Keep coral as the only accent and never add lock or shield imagery. Move the statement lines to another typewriter face (e.g. Cutive Mono); appmeta-a keeps Courier Prime for its comb-field entries.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "allpaid, aftershift, xiangqiful",
+  "style": "a, b, a",
+  "severity": "minor",
+  "issue": "Several heroes keep the incumbent split and only swap the phone for a boxed badge/QR/price panel on the right: allpaid-a's white info panel in columns 9–12, aftershift-b's admin cell, and xiangqiful-a's Exit sub-panel at 36% width. The skeleton survives even though the phone is gone.",
+  "fix": "Put the action where the object really prints it. allpaid-a's fare and QR become the poster's legend box at the foot of the first day band. aftershift-b's admin rows run as a full-width strip under the title block. xiangqiful-a's Exit becomes a full-width exit sign below the great sign.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "appmeta, wanderwiki, allpaid",
+  "style": "all",
+  "severity": "minor",
+  "issue": "About half the board's styles are printed paper documents, and three surfaces offer only paper. appmeta has a form, a galley and a leaflet; wanderwiki an aerogramme, a tear-off leaf and a facing-page book; allpaid a poster, a planner and an envelope. On those pages the owner's choice is which paper, all light and mostly ruled.",
+  "fix": "In each trio, swap one non-PICK style for a non-paper candidate the surface already ranked. appmeta → #7, the broadcast mixing console (50 channel strips with de-DE/fr-FR scribble strips). wanderwiki → #4, the world-band receiver dial (each station broadcasting in its own language). allpaid → #4, the self-inking PAID date stamp (object/instrument).",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "allpaid",
+  "style": "a, b",
+  "severity": "minor",
+  "issue": "The mobile hero panel reads 'No bank login · nothing leaves the phone'. transparency.yml says optional iCloud sync leaves the device to 'Your iCloud only, if enabled'.",
+  "fix": "Say 'No bank login · stays on your iPhone unless you turn on iCloud', linked to /transparency/#allpaid.",
+  "lens": "truth-contract"
+ }
+]

@@ -1,0 +1,369 @@
+{
+  "issues": [
+    {
+      "surface": "xiangqiful (vs shogiful)",
+      "style": "b",
+      "severity": "blocker",
+      "issue": "After-Round Big Board is the same world and the same first viewport as shogiful-b 'The Big Board Hall'. Both are a giant lit magnetic commentary board in a darkened hall, kept sticky while the commentary scrolls. Both centre a ~500–540px board with name plates or a hand tray on the left flank and the verdict, price, badge and QR on the right flank, and both draw red/coloured move arrows. Both are their surface's IMPECCABLE'S PICK, so the owner would see one style twice across two sibling apps. Its own risk line predicts this convergence.",
+      "fix": "Keep the commentary board on shogiful-b: the ōban 大盤解説 is Shogiful's #1 and the more established institution. Replace xiangqiful-b with xiangqiful candidate #2, park stone tables (石桌棋盤): incised granite boards in park daylight, with the ring of onlookers as the read-back. No board-game style uses stone/architecture, and it gives Xiangqiful a light outdoor scene. Fira Sans Extra Condensed leaves with it."
+    },
+    {
+      "surface": "mockly (vs appmeta)",
+      "style": "c",
+      "severity": "blocker",
+      "issue": "Thumb-Index Leaflet repeats appmeta-c 'The Fifty-Language Leaflet' for the sibling App Store Connect Mac tool. It has the same multilingual instruction-leaflet world: language-code tabs as nav, a thumb index on the right edge, fold creases and a model/action box. It has the same Noto Sans variable system (Noto Sans Display + Noto Sans) and the same deepened app violet (#4A2FC4 vs #4F3FCC). Its violet cover drench also lands on the screenshot-tool category default (violet-gradient hero).",
+      "fix": "Keep the leaflet on appmeta-c, where 50 locales of text side by side is literally a leaflet. Replace mockly-c with mockly candidate #4, the salon hang with tombstone labels: every export hung at true relative size on one wall, each with a museum label giving device · locale · slot · px. No other surface uses an exhibition/architecture world, and it takes Mockly off three paper styles."
+    },
+    {
+      "surface": "all",
+      "style": "all",
+      "severity": "blocker",
+      "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+      "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+      "surface": "mockly (vs appmeta)",
+      "style": "b",
+      "severity": "major",
+      "issue": "OK to Upload and appmeta-b 'Passed for Press' are both prepress proofs for two sibling Mac tools. In both, the download lives in an 'OK to …' sign-off box, with proof-query marks in the margin, and both are IMPECCABLE'S PICK. If both win, the two microsites read as one print-shop series.",
+      "fix": "Keep proof marks and the sign-off box on appmeta-b, because marked text changes are AppMeta's mechanism. mockly-b keeps imposition, crop marks, the colour bar and ganged trims. It moves the action into the press-run dispatch docket on the gripper edge (no 'OK to upload' approval box, no signature line) and drops the magenta proof-query circles. Caveats go into the slug lines."
+    },
+    {
+      "surface": "mockly (vs gymlogger-x)",
+      "style": "b",
+      "severity": "major",
+      "issue": "Its whole type system is gymlogger-x-b's: Chivo 900/700 display, Chivo 400/600 text and Chivo Mono for data.",
+      "fix": "gymlogger-x-b keeps Chivo. Set mockly-b in Spline Sans 400–700, with Spline Sans Mono for slug lines only. It is one superfamily and is unused elsewhere on the board."
+    },
+    {
+      "surface": "aftershift (vs earnlock)",
+      "style": "c",
+      "severity": "major",
+      "issue": "Follow the Line and earnlock-b 'The Junction Post' share a world and a display face within the same body trio. The world is a wayfinding route walked via hung or posted sign blades with arrow pictograms to a destination. The face is Signika, argued in both cards as 'the wayfinding face'.",
+      "fix": "Keep wayfinding and Signika on earnlock-b, since walk-to-unlock is literally a route and it is EarnLock's #1. Replace aftershift-c with aftershift candidate #6, the sleep diary / double-plotted actogram (instrument/data graphic). One 24-hour row per day carries 'scored against the next shift' directly. Draw it as a plotted raster of sleep bars, not a ruled table, so it stays apart from aftershift-b's rota. Candidate #2, the blackout bedroom at noon, is the alternative if a second dark scene is wanted."
+    },
+    {
+      "surface": "mediakit (vs rightsplit)",
+      "style": "a",
+      "severity": "major",
+      "issue": "Processed In-House drenches in process cyan (#19A7E0) with white knock-out panels, black ink and one magenta mark. rightsplit-a 'Weighed and Priced' drenches in process cyan (#00AEEF) with white die-cut labels, black ink and one red. They share a palette family and the same white-panels-on-a-flood grammar.",
+      "fix": "Cyan stays with rightsplit-a: it is RightSplit's own accent and the constant RATE box. Re-stock mediakit-a's envelope in a lab house colour that no surface drenches in, e.g. a Fuji-lab green flood (~#2E9E5B, ink ≥5:1 on it). Keep the white form panels, and keep the magenta stamp on white only."
+    },
+    {
+      "surface": "studio (vs allpaid, taskful-day)",
+      "style": "b",
+      "severity": "major",
+      "issue": "The Back Catalogue's cloudberry drench (#F2B21B) is almost the same yellow as taskful-day-c's timer body (#F4C443). It also sits beside allpaid-a's poster yellow (#FFD617). All three set black type with white panels. If the studio wears a microsite's drench, that microsite reads as the studio, and the studio as the microsite.",
+      "fix": "Drop the drench on studio-b. The shop wall goes neutral (white, or a graphite shelf), so the spines in each app's own colours are the only colour. That is also truer to its thesis that the label appears only as a catalogue number and a cartouche. allpaid-a (Abfahrt yellow) and taskful-day-c (the icon's sun) keep yellow. If both are picked, keep taskful-day-c's white dial face dominant."
+    },
+    {
+      "surface": "studio (vs liftlog, wanderwiki)",
+      "style": "a",
+      "severity": "major",
+      "issue": "The Open Depot's first viewport repeats liftlog-a's. The Open Depot has a concrete ground (#E6E8E5), full-height steel uprights at the page edges, and full-width coloured beams crossing the page that carry the section titles. liftlog-a has a concrete ground (#E4E4E0), a full-height steel shaft at the left edge, and full-width coloured plate slabs crossing the page that carry the section titles. Its beam orange (#E2560F, ~30% of the surface, including a full-bleed orange masthead) also matches wanderwiki-b's orange backing-card drench (#E8622A).",
+      "fix": "liftlog-a keeps the edge member and the crossing bands, which are the literal bar and plates. studio-a moves to the white-painted depot its own scene describes (ground ~#F3F4F1). It shows the racking as one bay frame around the location index, not as page-edge rails. Orange stays on beam labels and pick tickets: no full-bleed orange masthead or aisle band."
+    },
+    {
+      "surface": "studio, gymlogger-x, taskful-day",
+      "style": "a, a, a",
+      "severity": "major",
+      "issue": "The Big Shoulders family is a display face in three surfaces: Big Shoulders Stencil Display (studio-a H1), Big Shoulders Display 800 (gymlogger-x-a door lettering) and Big Shoulders Display 800/600 (taskful-day-a letter tiles). The Stencil cut is the same skeleton, and the studio should share no display family with any microsite.",
+      "fix": "Keep Big Shoulders Display on gymlogger-x-a, where municipal locker plates are its native register. studio-a sets its stencil in Allerta Stencil, which is unused on the board; it has one weight, so the 150px size carries it. taskful-day-a leaves the family with its replacement world (see the taskful-day-a issue)."
+    },
+    {
+      "surface": "aftershift (vs allpaid)",
+      "style": "a",
+      "severity": "major",
+      "issue": "Barlow Condensed is the display face of aftershift-a (the back-lettering H1) and of allpaid-a (day numerals and H1). Barlow also sets mediakit-c's text, so the family is in three surfaces.",
+      "fix": "allpaid-a keeps Barlow, the free DIN stand-in that is native to a German-language Abfahrt poster. aftershift-a sets its uniform back-lettering in Mohave 600/700, a caps-first condensed sans that is unused elsewhere, and keeps Atkinson for text."
+    },
+    {
+      "surface": "aftershift (vs appmeta-pulse)",
+      "style": "b",
+      "severity": "major",
+      "issue": "Archivo variable is the entire type system of aftershift-b (title block, cell codes, body) and of appmeta-pulse-c (plates, lettering, body).",
+      "fix": "appmeta-pulse-c keeps Archivo Expanded for its hung plates. aftershift-b moves to Arimo 400/700, the Arial-metric face that ward admins actually type rotas in. That is more native to a photocopied rota than a display-width grotesk."
+    },
+    {
+      "surface": "liftlog (vs rightsplit)",
+      "style": "c",
+      "severity": "major",
+      "issue": "Pathway Extreme variable is the whole display and text system of both liftlog-c and rightsplit-a.",
+      "fix": "rightsplit-a keeps it for its wdth-75 price numerals. liftlog-c needs Aicher's one-family-in-several-widths system, so it uses Roboto Flex (wdth + wght, unused on the board) as the Univers stand-in. Check the wdth+wght latin file against the 160 KB budget."
+    },
+    {
+      "surface": "appmeta-pulse (vs soon; knock-on allpaid)",
+      "style": "b",
+      "severity": "major",
+      "issue": "League Gothic is the display face of appmeta-pulse-b (the banner) and of soon-b (the event title and the stub's big value).",
+      "fix": "soon-b keeps it, since Alternate Gothic is the ticket/event-poster face. appmeta-pulse-b sets its banner in Libre Franklin 900: the Franklin Gothic of US markets pages, and already its text family. That makes Franklin a display face in appmeta-pulse-b, so allpaid-c moves its window headline and indicia caps off Libre Franklin (e.g. Epilogue 600/800, unused on the board)."
+    },
+    {
+      "surface": "earnlock (vs shogiful, soon)",
+      "style": "a",
+      "severity": "major",
+      "issue": "Exact Steps Only shares Dela Gothic One (display) with shogiful-b. Its amber Doto dot-matrix numerals on black duplicate soon-c's countdown board (#FFB23F vs #FFB21E, both Doto 700), and Doto then sits in three surfaces. Its 'INSERT 2,026 STEPS' credit display is the same object as earnlock-c's giant remaining-steps count, so a and c lead with one move. Its own risk line also calls the machine a hero-only device with plain panels below, which makes it a hero skin.",
+      "fix": "Dela Gothic One goes to shogiful-b, whose subject is Japanese. Set the marquee in Mochiy Pop One, a Japanese sticker/marquee gothic unused elsewhere. Make all price lamps lighting together the one move, and shrink the credit display to a small red 7-segment strip, as on real machines. That drops Doto here and leaves it on chessful-a and soon-c. Below the hero, keep the page on machine faces (side-panel plates, the audit printout, the pickup bin) instead of plain set panels."
+    },
+    {
+      "surface": "pawza (vs mediakit, millrace, chessful, tare)",
+      "style": "a",
+      "severity": "major",
+      "issue": "Thirteen-Pocket File shares its display face, Sofia Sans Extra Condensed (both H1s), with mediakit-a. Its Sofia Sans text puts the family in a third surface (mediakit-a, pawza-a, soon-b). Its palette (cobalt #2347A6 drench + white paper + yellow flag) is the board's most repeated triad. millrace-b has #23408E + white cards + yellow tier, chessful-c has #2338B0 + paper white + gold, and tare-a has #2172B8 + chalk white + yellow.",
+      "fix": "Set pawza-a in Anek Latin, unused elsewhere: wdth 75 for the index tabs and H1, wdth 100 for text. Re-colour the polypropylene as a translucent red file (~#B5332B, white text 5.6:1), and keep the white paper and the yellow 'To file' flag. tare-a keeps the blue triad, because Signboard Sky is the app's own art."
+    },
+    {
+      "surface": "millrace",
+      "style": "b",
+      "severity": "major",
+      "issue": "Turn the Card is a centred headline over a centred triptych of three boxes (copy | hero card | white sticker holding badge and QR). That is the centred-headline-over-a-row-of-cards template in costume. Its cobalt tray (#23408E) with white card stock and yellow tier bands is the same triad as pawza-a, chessful-c and tare-a.",
+      "fix": "Left-align the H1 on the tray rim. Deal one card at true scale, off-axis, and lay its back (the proof) beside it once turned. Print the price and badge on the tray's own moulded label area instead of a third box. Re-mould the tray in black or smoke grey (~#1E2024) so the six tier colours carry the colour."
+    },
+    {
+      "surface": "chessful",
+      "style": "c",
+      "severity": "major",
+      "issue": "Key to Symbols drenches in cobalt (#2338B0) with paper white and the app's gold. That is a brighter version of the chess category default (navy/black + gold), and the same blue triad as pawza-a, millrace-b and tare-a.",
+      "fix": "Drop the gold: '!' and 'Better was' carry weight and size instead of a second colour. Bind the volume in a cloth no other surface drenches in, e.g. deep magenta (~#7E1F56, paper white ≥8:1). Avoid red + gold, which is Xiangqiful's costume, and the greens taken by wanderwiki-c and appmeta-pulse-c."
+    },
+    {
+      "surface": "tare (vs rightsplit)",
+      "style": "c",
+      "severity": "major",
+      "issue": "Nine Bars, One Chord's claret felt (#34121F) with warm white is rightsplit-c's oxblood leatherette (#3A161F) with white foil: the same dark-red scheme. Its first viewport also repeats tare-a. Both lead with the same demo level (6 / 2 / ? on a top beam and a right sub-beam, clue card '? = 2 2') hung centred on a string, with the pieces waiting on a tray below: tare-a's shelf, tare-c's bars. So c is a recolour and reorder of a.",
+      "fix": "rightsplit-c keeps oxblood, the app's own maroon. Re-felt tare-c in a colour no surface uses, e.g. deep olive (~#33361F); Tare's Evening Stars indigo works only if soon-a is not chosen. Remove the hanging mobile from tare-c's hero. The nine bars on their converging rails become the one playable object across the width, and the level is written as a play-by-colour song line on the song card, solved in notation."
+    },
+    {
+      "surface": "pawza (vs xiangqiful, wanderwiki)",
+      "style": "b",
+      "severity": "major",
+      "issue": "The Vaccination Booklet's pale green pages (#E8EFE6), with two staples in the gutter and stamp and ballpoint marks, match xiangqiful-c's 護眼 exercise book (#EAF2E4, two staples, red-pen marks). Its dark green cover (#234536) framing an open two-page spread matches wanderwiki-c's green case cloth (#1C4630) framing an open spread.",
+      "fix": "xiangqiful-c keeps the pale green, because eye-care paper is culturally specific. wanderwiki-c keeps the spread, because facing pages are its mechanism. pawza-b shows one booklet page at pocket scale (no spread, no gutter staples) on a non-green palette, e.g. a pale lilac security tint (~#ECE9F2) and a plum cover (~#3D2547). Re-pick the stamp ink so it still contrasts."
+    },
+    {
+      "surface": "gymlogger-x (vs wanderwiki, soon)",
+      "style": "b",
+      "severity": "major",
+      "issue": "Three White Lights is the split hero in costume. The H1, subheadline and a badge/price/QR slip are stacked on the left, and a device (the black judging console) fills the right. Its ground (#d5e3ec bench-card blue + #121619 ink + red) is wanderwiki-a's aerogramme palette (#DCE6F1 + #15223D + #C4232D). It also echoes soon-c's pale blue-grey console with one black instrument.",
+      "fix": "Run the light board across the full width as the stage, with the three lenses large and the verdict strip under them. Set the H1 above it and the hand-in slip below it. Ground the page in its white form paper (#FBFBF9), so the black housing is the only mass."
+    },
+    {
+      "surface": "xiangqiful (vs gymlogger-x, mediakit)",
+      "style": "a",
+      "severity": "major",
+      "issue": "Bilingual Concourse drenches in teal (#0E6A70) behind white enamel panels, just as gymlogger-x-a puts teal steel (#235c58) behind white laminated sheets. Its nav, opponent ladder and game record are metro line maps with station dots, interchange rings and a terminus bar. That is mediakit-b's whole world, the Zone 1 network.",
+      "fix": "gymlogger-x-a keeps the teal, because RAL 6033 is its icon's check colour. mediakit-b keeps line maps: routing a file is wayfinding, and it is MediaKit's #1. Glaze xiangqiful-a's wall in a station colour no surface drenches in, e.g. grey-violet (~#5E5872), avoiding red/gold. Carry the game and the opponents with platform signage instead: direction boards, platform-number blades and bilingual exit lettering, with no octilinear lines or interchange rings."
+    },
+    {
+      "surface": "chessful (vs xiangqiful)",
+      "style": "b",
+      "severity": "major",
+      "issue": "Move by Move has the same thesis as xiangqiful-c 'The Mistake Notebook': the mistakes from your own games copied out, the move marked, one sentence of why, and exercises built from your losses. It also uses the same device, one teacher's coloured pen over an open two-page book. Its single green on white (#1E6A46) repeats the board's 'white + one deep green' (millrace-c #1C5B3A, wanderwiki-c #23573A, xiangqiful-c #2F6B4A).",
+      "fix": "xiangqiful-c keeps the hand-marked notebook. chessful-b stays a typeset book. The 'better was' rings become a printed second ink in a non-green colour (e.g. printed blue or red-orange) with no pen strokes. The hero is a single recto page (title page plus frontispiece diagram) instead of an open spread."
+    },
+    {
+      "surface": "observa (vs aftershift, soon)",
+      "style": "a",
+      "severity": "major",
+      "issue": "Atlas of Nights is the literal reading on a navy plate (#0E1C3A) set in Atkinson Next + Atkinson Mono. In the same body trio, aftershift-a is navy twill (#18222F) set in Atkinson Next + Atkinson Mono. Stars on navy are also the sleep category's moon-and-stars default and soon-a's night band. Its furniture (a high-contrast Didone, spaced capitals laid along hairlines, small mono axis labels on a fine grid) is AI cluster (c) in an astronomy costume.",
+      "fix": "aftershift-a keeps navy and Atkinson: the uniform colour and the low-acuity argument are literal. observa-a takes its icon's own warm night (~#15110F), with apricot as the only colour and no glow. Constellation names and labels move into one sans with tabular figures (e.g. League Spartan, from the Futura lineage of star charts), with no mono and no spaced Didone caps. Keep Bodoni Moda for the H1 at most."
+    },
+    {
+      "surface": "soon (vs observa)",
+      "style": "a",
+      "severity": "major",
+      "issue": "First Light's hero is a centred iPhone rising behind a sun disc, with the headline and subheadline flanking it. That is the category's phone-mockup hero (and the incumbent's phone) on a symmetrical axis. The world sits behind the product as scenery, and its star field on indigo duplicates observa-a's sky.",
+      "fix": "Make the backward schedule the first-viewport object. Set T-90, T-30, T-14, T-3 and T-1 on the twilight bands themselves, from astronomical twilight to sunrise, with the day at the horizon. Put the badge on the horizon and move the phone below the fold into the civil band. Drop the star field entirely."
+    },
+    {
+      "surface": "earnlock, soon",
+      "style": "c, c",
+      "severity": "major",
+      "issue": "Both lead with the hero-metric template inside an instrument. earnlock-c sets '3,412' at 232px with a small 'STEPS / UNTIL UNLOCK' label and a right-hand column of three stat rows (steps · Free / min · Premium / kcal · Premium). soon-c sets 'T-30' at 240px over a task line and a row of three labelled status lamps.",
+      "fix": "earnlock-c keeps the single count. MODE cycles steps → minutes → kcal in that same segment field, the fixed LCD icon segments act as its label, and the three-row stat column leaves the first viewport. soon-c drops the status-lamp row from the hero: the board shows one T-time and its task, and the EARLIER/LATER keys are its only furniture."
+    },
+    {
+      "surface": "liftlog",
+      "style": "b",
+      "severity": "major",
+      "issue": "Session in Progress is the board's closest thing to a generic dark app landing page. It uses the app's navy (#0C1220) with mint completion and amber PR accents, a pill nav, and a stack of rounded cards as the page structure. It adds a sixth navy ground and a sixth amber-on-dark accent to the board, and it sits on the gym category default of a dark page with one bright accent (its own risk line says so).",
+      "fix": "Replace it with liftlog candidate #5, the machine instruction placard: the printed vinyl decal on selectorized machines, with an anatomy figure, highlighted muscles and numbered steps. It is signage/instruction on steel, lit as a daylight scene, and drawn from the app's X-ray anatomy library. Keep it one decal on machine steel, not engraved plates, so it stays apart from gymlogger-x-a's locker plates."
+    },
+    {
+      "surface": "taskful-day (vs soon)",
+      "style": "a",
+      "severity": "major",
+      "issue": "Held Over (a cinema marquee with a box office and a ticket tray) and soon-b 'Admit One' (the event ticket) are one world, going to the show, inside the planning pair. Its author also ranks it the weakest planning link (#7). It carries the Big Shoulders family (shared with studio-a and gymlogger-x-a), and its amber bulbs on a navy fascia join both the amber-on-dark cluster and the navy cluster.",
+      "fix": "Replace it with taskful-day candidate #5, the felt letterboard with push-in letters. It keeps the dealt changeable-letter 'held over' mechanic in a domestic object with no tickets. Set its letters in a face outside the Big Shoulders family, as white letters on a coloured felt rather than amber bulbs on navy."
+    },
+    {
+      "surface": "millrace",
+      "style": "a",
+      "severity": "major",
+      "issue": "The Amber Race floats glossy 3D amber tiles (gradient top face, 6px side face, 10px radius) with numerals over an amber ground. That is the puzzle category's floating-3D-tile hero and the 2048 beige-and-orange tile look. With a slab serif and a red-orange inlet, it also edges toward the warm amber + serif + terracotta cluster.",
+      "fix": "Print the tiles flat, as on millrace-b/c's diagrams: one fill, ink numerals, no gradient and no side face. Let the stop-logs, the staff gauge and the beams carry the depth. Darken the water toward tea-brown (~#B07A2E) away from the reading column, so the tiles read as objects in water, not as a beige-orange grid."
+    },
+    {
+      "surface": "mediakit",
+      "style": "c",
+      "severity": "major",
+      "issue": "The Whole Rack blows the icon's navy-steel up to page scale (blue-anodise #1B2F5E) and adds amber and green pilot lamps on black rails. That gives the board a seventh navy-dark ground and an amber-on-dark accent shared with soon-c, appmeta-pulse-c and earnlock-a, in the dark Mac-utility register its category already ships. Its B612 Mono puts the B612 family in a third surface, after appmeta-pulse-a and soon-c.",
+      "fix": "Use the light-grey faceplates of classic broadcast kit (~#B9BDC3, black silkscreen ≥7:1) between black rails, so the dim suite reads only through the rails and the monitors. Pilot lamps are green and red, with no amber. Readouts are set in Sometype Mono (unused) instead of B612 Mono."
+    },
+    {
+      "surface": "studio, appmeta-pulse, mediakit, observa, shogiful",
+      "style": "a, a, b, a, b",
+      "severity": "major",
+      "issue": "Atkinson Hyperlegible Next is the text face in seven surfaces: studio-a, aftershift-a, allpaid-b, appmeta-pulse-a, mediakit-b, observa-a and shogiful-b. Atkinson Hyperlegible Mono is the data face in four: aftershift-a, allpaid-b, observa-a and shogiful-b. This monoculture will make the microsites read alike below their heroes.",
+      "fix": "Keep it on two surfaces: aftershift-a (low acuity after a night shift) and allpaid-b (display and text, read from across the room). Swap the rest. studio-a → Work Sans. appmeta-pulse-a → B612 400/700 for text, one cockpit family with its display and B612 Mono. mediakit-b → Overpass 400/700 for text, one family with its display. observa-a → League Spartan with tabular figures and no mono (see the observa-a issue). shogiful-b → Murecho 400/600 for the commentary, with tabular figures for notation."
+    },
+    {
+      "surface": "gymlogger-x",
+      "style": "a",
+      "severity": "major",
+      "issue": "Public Sans is the text face of gymlogger-x-a, observa-b and soon-c, three surfaces.",
+      "fix": "Keep it on observa-b and soon-c, where its public-service/US-government lineage is native (a public weather bulletin, a NASA-style press kit). Set gymlogger-x-a's laminated sheets and plates in Karla 400/600 (unused) with tabular figures."
+    },
+    {
+      "surface": "mockly (vs chessful, pawza)",
+      "style": "a",
+      "severity": "major",
+      "issue": "The census misses one display collision. Saira Condensed (mockly-a's H1 and piece numerals) is the narrow width of Saira, chessful-a's display face, so two surfaces share a display skeleton. mockly-a's text face, Albert Sans, is also pawza-c's display and text face.",
+      "fix": "chessful-a keeps Saira for its squared 1980s electronics legends. Set mockly-a in Asap Condensed 600/700 for the H1, piece numerals and size labels, and Asap 400/600 for text. That is one family unused elsewhere, and it also clears the Albert Sans share."
+    },
+    {
+      "surface": "aftershift, millrace, shogiful",
+      "style": "b, c, a",
+      "severity": "major",
+      "issue": "A hand-annotation layer (a handwriting font, ballpoint or pencil over a printed form) appears in about ten styles: aftershift-b, pawza-b, rightsplit-b, taskful-day-b, xiangqiful-c, tare-b, millrace-c, shogiful-a, appmeta-b and chessful-b. Four share one ballpoint blue (#1F3BA0, #1E3FA6, #1F3FB4, #2340A0). It is this board's own default. In three styles it is pure decoration: aftershift-b's Reenie Beanie notes repeat existing copy, millrace-c has Kalam coach and hint lines, and shogiful-a has Yusei Magic marker notes.",
+      "fix": "Keep a hand layer only where the hand performs the mechanism: rightsplit-b (circling who ordered what), tare-b (solving in pencil), xiangqiful-c (the teacher's red pen), taskful-day-b (writing tomorrow's card), pawza-b (the as-written layer the scan reads) and appmeta-b (proof marks). Cut it from aftershift-b, millrace-c and shogiful-a, which also ends the Reenie Beanie share. Convert chessful-b's pen to print (see the chessful-b issue)."
+    },
+    {
+      "surface": "soon (vs shogiful)",
+      "style": "b",
+      "severity": "major",
+      "issue": "Admit One's ticket card (#F3C6D2, 'cherry-blossom pink') is the same pale pink as shogiful-c's first newsprint signature (#F3CBD2). Its sakura reading also points at the Japanese costume that Shogiful's category default warns against.",
+      "fix": "shogiful-c keeps the pink, because tinted manga signatures are native to it. Print soon-b's ticket on a stock no other surface uses, e.g. pale aqua card (~#C4E6E1). Keep the aubergine ink and the app-blue spot, and re-check blue text on the new stock for 4.5:1."
+    },
+    {
+      "surface": "shogiful (vs taskful-day)",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Shantell Sans is taskful-day-b's display face (the H1 and the written layer) and shogiful-c's speech-balloon lettering.",
+      "fix": "taskful-day-b keeps it. Letter shogiful-c's balloons in Patrick Hand SC (unused), a caps comic-style hand."
+    },
+    {
+      "surface": "soon (vs chessful)",
+      "style": "a",
+      "severity": "minor",
+      "issue": "Literata is chessful-b's display and text face and soon-a's text and figure face.",
+      "fix": "chessful-b keeps it. Give soon-a a reading serif no other style uses, e.g. Petrona 400/600 with tabular lining figures."
+    },
+    {
+      "surface": "observa (vs studio)",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Familjen Grotesk is the text face of both studio-b and observa-c, and no microsite should share the studio's reading face.",
+      "fix": "studio-b keeps it. Set observa-c's text in Be Vietnam Pro 400/600 (unused) with tabular figures."
+    },
+    {
+      "surface": "allpaid (vs appmeta)",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Security Tint Envelope is navy with a bank security pattern, which leans on the category reading 'finance means blue'. Courier Prime is also the data face of both allpaid-c and appmeta-a.",
+      "fix": "Make the paper windows and enclosures the major surfaces, so navy is the shadowed interior rather than the page. Keep coral as the only accent and never add lock or shield imagery. Move the statement lines to another typewriter face (e.g. Cutive Mono); appmeta-a keeps Courier Prime for its comb-field entries."
+    },
+    {
+      "surface": "appmeta, appmeta-pulse",
+      "style": "b, b",
+      "severity": "minor",
+      "issue": "The AppMeta pair's two picks are both press-room print: appmeta-b's blueline galley proof and appmeta-pulse-b's newspaper markets page. Both are rule-heavy newsprint/proof stocks with one marking colour. If both win, the two AppMeta microsites read as one publisher.",
+      "fix": "No change is needed unless both are chosen. If they are, steer AppMeta Pulse to its a (recorder chart) or c (scoreboard), which share nothing with AppMeta's three."
+    },
+    {
+      "surface": "liftlog (vs wanderwiki)",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Summer Games Programme sells its four price tiers as perforated stamps with radial-gradient perforation masks. wanderwiki-a uses the same device for its 33 editions.",
+      "fix": "wanderwiki-a keeps stamps, because they are native to airmail. Set liftlog-c's tiers as four admission categories inside the programme's coloured modules (category letter, price, pictogram), with no perforations."
+    },
+    {
+      "surface": "allpaid, aftershift, xiangqiful",
+      "style": "a, b, a",
+      "severity": "minor",
+      "issue": "Several heroes keep the incumbent split and only swap the phone for a boxed badge/QR/price panel on the right: allpaid-a's white info panel in columns 9–12, aftershift-b's admin cell, and xiangqiful-a's Exit sub-panel at 36% width. The skeleton survives even though the phone is gone.",
+      "fix": "Put the action where the object really prints it. allpaid-a's fare and QR become the poster's legend box at the foot of the first day band. aftershift-b's admin rows run as a full-width strip under the title block. xiangqiful-a's Exit becomes a full-width exit sign below the great sign."
+    },
+    {
+      "surface": "appmeta, wanderwiki, allpaid",
+      "style": "all",
+      "severity": "minor",
+      "issue": "About half the board's styles are printed paper documents, and three surfaces offer only paper. appmeta has a form, a galley and a leaflet; wanderwiki an aerogramme, a tear-off leaf and a facing-page book; allpaid a poster, a planner and an envelope. On those pages the owner's choice is which paper, all light and mostly ruled.",
+      "fix": "In each trio, swap one non-PICK style for a non-paper candidate the surface already ranked. appmeta → #7, the broadcast mixing console (50 channel strips with de-DE/fr-FR scribble strips). wanderwiki → #4, the world-band receiver dial (each station broadcasting in its own language). allpaid → #4, the self-inking PAID date stamp (object/instrument)."
+    },
+    {
+      "surface": "appmeta-pulse, pawza, mockly, aftershift",
+      "style": "b, b, a, b",
+      "severity": "minor",
+      "issue": "A yellow highlighter swipe behind ink is an accent in four styles: aftershift-b, appmeta-pulse-b, pawza-b and mockly-a. A chartreuse near #D6E83C recurs as well: aftershift-a's hi-vis (#D6F03A), pawza-c's tennis ball, mockly-a's highlighter (#E4F53A) and tare-b's lime spot.",
+      "fix": "Keep the swipe on aftershift-b (nurses really do highlight their own row) and appmeta-pulse-b (its only accent). pawza-b loses it with its palette change. mockly-a traces the chosen size in the piece's own ink instead of a highlighter. Keep chartreuse literal (hi-vis tape, the tennis ball) and nowhere else."
+    },
+    {
+      "surface": "shogiful",
+      "style": "a",
+      "severity": "minor",
+      "issue": "The Club Tag Wall's colour carriers are hinoki wood tags, vermilion hanko stamps and Shippori Mincho. That is the wood + red seal + mincho reading of 'Japan' that Shogiful's category default (wood board, kanji, sakura) predicts.",
+      "fix": "Let the celadon plaster and the lacquer rails carry the page. Use vermilion only for the YOU tag and the focus ring. Drop the decorative hanko category stamps in favour of the printed ○△× marks, and keep wood grain on the tags themselves at low contrast."
+    },
+    {
+      "surface": "taskful-day, soon",
+      "style": "c, c",
+      "severity": "minor",
+      "issue": "Both planning apps offer a timer instrument: taskful-day-c's wind-up dial set to 25, and soon-c's T-minus board stepping through T-times.",
+      "fix": "These are acceptable as different objects. If both are chosen, keep taskful-day-c light and round (the top-down dial) and soon-c's board rectangular, and never give taskful-day-c a digital readout."
+    },
+    {
+      "surface": "liftlog",
+      "style": "a, c",
+      "severity": "minor",
+      "issue": "The Loaded Sleeve and Summer Games Programme are both full-palette, flat-colour sports systems on a pale ground with a variable grotesk: red/blue/yellow/green slabs versus light-blue/green/orange modules. The difference rests on slab versus module.",
+      "fix": "Push liftlog-c to Aicher's own restraint: two or three programme colours, white dominant, with the pictograms carrying the identity. The owner then sees loud plates against a quiet programme."
+    },
+    {
+      "surface": "rightsplit",
+      "style": "a, b",
+      "severity": "minor",
+      "issue": "Weighed and Priced and Torn Per Person are both thermal-printed retail paper, black on white (a label printer versus a receipt printer), with barcodes or dotted leaders and one red warning.",
+      "fix": "Hold the difference. rightsplit-a stays die-cut labels on the liner with no receipt grammar: no dotted leaders, no tear edges. rightsplit-b keeps the roll, the tears and the ballpoint, with no field-grid boxes."
+    },
+    {
+      "surface": "earnlock, tare",
+      "style": "a, b",
+      "severity": "minor",
+      "issue": "Two non-Japanese apps import Japanese worlds and faces on top of Shogiful's three. earnlock-a is a Japanese vending machine set in M PLUS Rounded with a Japanese marquee gothic. tare-b is a Nikoli puzzle book set in Zen Maru, Zen Kaku and Klee One.",
+      "fix": "Each is fine on its own, since Nikoli is Tare's #1 and the home of sudoku players. If tare-b is chosen, do not also choose earnlock-a. No face used by Shogiful should reappear in either."
+    },
+    {
+      "surface": "chessful (vs earnlock)",
+      "style": "a",
+      "severity": "minor",
+      "issue": "The Sensory Board's recessed grey-green LCD window (#A7B29A) with dot-matrix moves is the same reflective-LCD material as earnlock-c's whole-page LCD (#C5CDB3).",
+      "fix": "Use a small red LED readout, as on the original 1977 Chess Challenger, instead of a reflective LCD, so the LCD material belongs to earnlock-c."
+    },
+    {
+      "surface": "gymlogger-x",
+      "style": "a",
+      "severity": "minor",
+      "issue": "Phone in the Locker pairs a deep painted-steel teal ground with a single electric-orange action band. That is close to the gym category default of a dark ground with an electric-orange accent.",
+      "fix": "Keep orange on the coiled key band and its tags only, never on buttons, links or the sticky bar, so it reads as an object rather than an accent system."
+    },
+    {
+      "surface": "pawza",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Fresh Snow Trail is the literal paw-print reading, which the category already ships as paw-print confetti.",
+      "fix": "No print without its dated label in the first viewport, and no decorative prints in margins or section breaks. Every print on the page must be a record or a dashed reminder."
+    }
+  ],
+  "catalogueNotes": "Reading all 63 styles through one lens: first viewports are mostly distinct worlds, but resources and structure converge. The structural sameness (one section order relabelled per surface, and one dominant order across the board) is the largest failure; fix it before the owner sees the cards. Every cross-surface collision here is conditional (it only bites if both styles win), and the fixes are chosen so that any combination the owner picks stays distinct. KEEP-MAP, one owner per contested resource. Worlds: commentary big board → shogiful-b; multilingual leaflet → appmeta-c; prepress proof with sign-off box → appmeta-b; wayfinding route + Signika → earnlock-b; metro line maps → mediakit-b. Palettes and grounds: process-cyan drench → rightsplit-a; saturated blue + white + yellow → tare-a; teal drench → gymlogger-x-a; oxblood/claret dark → rightsplit-c; pale-green stapled page → xiangqiful-c; facing-page spread → wanderwiki-c; yellow drench → allpaid-a and taskful-day-c (not the studio); concrete + edge member + crossing bands → liftlog-a; pale pink stock → shogiful-c. Faces: Big Shoulders → gymlogger-x-a; Barlow → allpaid-a (+ mediakit-c text); Chivo → gymlogger-x-b; Archivo → appmeta-pulse-c; Pathway Extreme → rightsplit-a; League Gothic → soon-b; Dela Gothic One → shogiful-b; Sofia Sans → mediakit-a + soon-b; Saira → chessful-a; Atkinson Next/Mono → aftershift-a + allpaid-b; Public Sans → observa-b + soon-c; B612 → appmeta-pulse-a + soon-c; Doto → chessful-a + soon-c. CLUSTER RULES TO HOLD AFTER FIXES. 7 of the 15 dark styles were navy (aftershift-a, allpaid-c, observa-a, liftlog-b, taskful-day-a, mediakit-c, shogiful-b's slate hall); after the fixes navy stays on aftershift-a and allpaid-c only, and shogiful-b's hall should lean warm charcoal, not slate-blue. An amber lamp on dark was in six (soon-c, appmeta-pulse-c, mediakit-c, earnlock-a, taskful-day-a, liftlog-b); keep it on soon-c and appmeta-pulse-c only. This board's own AI default is 'printed paper document + ruled fields + one ink + a handwriting font': about half the styles are paper ephemera. The replacements named here therefore come from non-paper families: stone tables, a salon hang, an actogram, a machine placard, a felt letterboard. No training-default face appears anywhere on the board, and the brief's cream + serif + terracotta cluster is avoided everywhere (millrace-a is the nearest). STUDIO: studio-c (teletext) is the only studio style with no microsite collision, and WanderWiki already re-rolled away from teletext for that reason. studio-a and studio-b each borrow a microsite's palette or face until fixed. CAVEATS: the replacement faces named here were checked only against this board's census. Re-verify each on Fontsource (weights, latin file size, the ~160 KB budget) before mocking. One dependency: allpaid-c's display change applies only if appmeta-pulse-b takes Libre Franklin for its banner."
+}

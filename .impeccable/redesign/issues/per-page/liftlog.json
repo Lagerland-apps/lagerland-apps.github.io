@@ -1,0 +1,82 @@
+[
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "studio (vs liftlog, wanderwiki)",
+  "style": "a",
+  "severity": "major",
+  "issue": "The Open Depot's first viewport repeats liftlog-a's. The Open Depot has a concrete ground (#E6E8E5), full-height steel uprights at the page edges, and full-width coloured beams crossing the page that carry the section titles. liftlog-a has a concrete ground (#E4E4E0), a full-height steel shaft at the left edge, and full-width coloured plate slabs crossing the page that carry the section titles. Its beam orange (#E2560F, ~30% of the surface, including a full-bleed orange masthead) also matches wanderwiki-b's orange backing-card drench (#E8622A).",
+  "fix": "liftlog-a keeps the edge member and the crossing bands, which are the literal bar and plates. studio-a moves to the white-painted depot its own scene describes (ground ~#F3F4F1). It shows the racking as one bay frame around the location index, not as page-edge rails. Orange stays on beam labels and pick tickets: no full-bleed orange masthead or aisle band.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "liftlog (vs rightsplit)",
+  "style": "c",
+  "severity": "major",
+  "issue": "Pathway Extreme variable is the whole display and text system of both liftlog-c and rightsplit-a.",
+  "fix": "rightsplit-a keeps it for its wdth-75 price numerals. liftlog-c needs Aicher's one-family-in-several-widths system, so it uses Roboto Flex (wdth + wght, unused on the board) as the Univers stand-in. Check the wdth+wght latin file against the 160 KB budget.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "liftlog",
+  "style": "b",
+  "severity": "major",
+  "issue": "Session in Progress is the board's closest thing to a generic dark app landing page. It uses the app's navy (#0C1220) with mint completion and amber PR accents, a pill nav, and a stack of rounded cards as the page structure. It adds a sixth navy ground and a sixth amber-on-dark accent to the board, and it sits on the gym category default of a dark page with one bright accent (its own risk line says so).",
+  "fix": "Replace it with liftlog candidate #5, the machine instruction placard: the printed vinyl decal on selectorized machines, with an anatomy figure, highlighted muscles and numbered steps. It is signage/instruction on steel, lit as a daylight scene, and drawn from the app's X-ray anatomy library. Keep it one decal on machine steel, not engraved plates, so it stays apart from gymlogger-x-a's locker plates.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "liftlog (vs wanderwiki)",
+  "style": "c",
+  "severity": "minor",
+  "issue": "Summer Games Programme sells its four price tiers as perforated stamps with radial-gradient perforation masks. wanderwiki-a uses the same device for its 33 editions.",
+  "fix": "wanderwiki-a keeps stamps, because they are native to airmail. Set liftlog-c's tiers as four admission categories inside the programme's coloured modules (category letter, price, pictogram), with no perforations.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "liftlog",
+  "style": "a, c",
+  "severity": "minor",
+  "issue": "The Loaded Sleeve and Summer Games Programme are both full-palette, flat-colour sports systems on a pale ground with a variable grotesk: red/blue/yellow/green slabs versus light-blue/green/orange modules. The difference rests on slab versus module.",
+  "fix": "Push liftlog-c to Aicher's own restraint: two or three programme colours, white dominant, with the pictograms carrying the identity. The owner then sees loud plates against a quiet programme.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "liftlog",
+  "style": "c",
+  "severity": "major",
+  "issue": "The first viewport depends on art that doesn't exist. Its light-blue module holds 'the bench pictogram', and the module grid relies on twelve original pictograms. Drawing them is a production task with an explicit licensing risk against the 1972 set. No fallback is stated, so as written the hero can't ship on existing assets.",
+  "fix": "Define the interim state: until the set is drawn, modules carry the app icon, a 400w screenshot crop or a large tabular figure (for example '100 × 5'). List the twelve SVGs as a gated production task with an originality review, so the owner never selects a style on the strength of art that hasn't been drawn.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ }
+]

@@ -1,0 +1,439 @@
+{
+ "surface": "appmeta-pulse",
+ "dossier": {
+  "mechanism": "AppMeta Pulse turns Apple's App Store Connect API into a ten-second morning read of yesterday's proceeds, subscriptions, trials, refunds and downloads across every app you ship. It monitors by construction: there is no code for builds, pricing or metadata, and its only writes are review replies you send and analytics report requests. The .p8 key stays in Keychain and every query goes straight to Apple.",
+  "audienceScene": "An indie iOS developer or small-studio founder with several live apps, 7 to 9 am, phone in one hand and coffee in the other at a kitchen table or café counter (or at a departure gate at the end of the week). They open the app the morning Apple's next-day Sales and Trends numbers land and decide in seconds whether yesterday needs attention. On desktop they are at the Mac and need to get the app onto their iPhone.",
+  "culturalHome": "The indie Apple developer scene: App Store Connect Sales and Trends and the monthly financial reports, Apple's own vocabulary (proceeds, units, the 15% Small Business Program), App Store Top Grossing charts, Home Screen widgets, WWDC, revenue-screenshot posts on Mastodon and Bluesky, indie podcasts. Also the older rituals the morning check comes from: the newspaper markets page over breakfast, the instrument you read but cannot adjust, the scoreboard read from the stands.",
+  "mustProve": "In one viewport: what it shows (portfolio proceeds, subscriptions, refunds and downloads in Apple's terms, at a glance); that it cannot change anything in App Store Connect except review replies you send; that nothing is collected and queries go straight to Apple; the real price (free trial, from $0.99/mo, $8.99/yr, $17.99 lifetime); and a working install path (the official badge, plus the QR on desktop).",
+  "categoryDefault": "A dark indigo-to-black SaaS analytics landing page: glowing cyan-violet line chart, floating iPhone showing the dashboard, KPI tiles (big number over a small label), feature card grid, three equal pricing cards, testimonial carousel. In effect the app icon's palette blown up to page scale, the AppStats / Appfigures / RevenueCat marketing pattern.",
+  "predictableOpposite": "Apple-keynote minimalism: a white page, a giant grotesk headline, one centred floating iPhone, generous whitespace, a single blue link. Or the incumbent's cream editorial look.",
+  "literalReading": "'Pulse' read literally is a heartbeat or ECG trace on a vital-signs monitor, and 'dashboard' is a car instrument cluster. Both are the rut, and the ECG collides with Observa's health world. Neither is among the seven.",
+  "evidence": [
+   "_apps/appmeta-pulse.md: price.model subscription, price.value 'Free trial — from $0.99/mo'; plans Free trial $0 / Pro $0.99 mo · $8.99 yr / Lifetime $17.99 one-time (highlight_label 'Best long-term value'); platforms ['iOS'] while copy says iPhone, iPad, Mac, Vision Pro; status live; ratings.count 4, so no stars",
+   "Blocks present: hero (pre_headline, headline, secondary, subheadline, cta_label), quick_answer, jump_nav, plans + plans_footnote, value_points x4, features x6, who_for x5 / who_not_for x3, alternatives_to x5, screenshots x6, privacy (none / no tracking / no account / 6 notes), faq x13, founder (Organization, signals, response_time, external_link), show_body + about_heading, related_apps appmeta + mockly. Absent: spotlight, how_it_works (no HowTo steps), comparison_table, roadmap, insight_gallery, training_vocabulary, coach_cta",
+   "Screenshots: dark indigo UI, cyan line charts, SF Pro. 1.png 'Data up to 6. Feb', 7-day proceeds € 992,55. 2.png per-app rows DriftLines 223,38 / GymLogger X 376,61 / Taskful Day 157,88 / TheWait 81,39 / WanderWiki 153,29 € for 7D (sum = 992,55). 5.png Period Comparison current vs previous, 992,55 vs 909,21, +9.2%. 6.png is the Home Screen '7-Day Dashboard' widgets, not the Mac view its caption claims",
+   "Icon: violet-to-indigo tile, cyan-to-violet line over bar chart, glowing nodes. This is the category default to refuse at page scale; its violet is the one hue worth keeping",
+   "apps/appmeta-pulse/api-access/: reads GET /v1/salesReports (SALES, SUBSCRIPTION, SUBSCRIPTION_EVENT), analytics, catalog, reviews; writes only /v1/customerReviewResponses (POST/PATCH/DELETE, when you send) and POST /v1/analyticsReportRequests; no build, metadata, pricing or TestFlight endpoints; ES256 JWT, 20-min max, signed on device",
+   "_data/transparency.yml appmeta-pulse: 0 SDKs, analytics none, network calls = ASC API, analytics report links, iTunes Lookup, App Store, Apple Translation, ECB exchange-rate API; nothing reaches Lagerland unless you email",
+   "alternatives/appstats.html, app-sales-store-reports.html, appfigures.html target it. AppStats $2.99/mo · $19.99/yr · $49.99 lifetime and wins on notifications/widgets (stated honestly); App Sales' label declares tracking; Appfigures stores data on its servers",
+   "_journal/read-only-revenue-on-the-iphone.md: the designed-for scene is 'indie developer in a coffee shop … sees yesterday's revenue against the seven-day average … three seconds'; the widget is the highest-engagement surface; corrected post, so no sharing claims",
+   "No testimonials for this app in _data/testimonials.yml; app_enrichment use_cases confirm the coffee-time glance and the week-over-week portfolio comparison"
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "The morning markets page",
+   "family": "print / newspaper data pages",
+   "why": "The app's own word is 'portfolio' (ten-plus uses) and its ritual is 'coffee, app, number'. Before the web, that ritual was reading yesterday's closing prices over breakfast. Carries the mechanism as listings: each app is a holding with yesterday's figures and the change against the previous period, the 'How to read the tables' key is Apple's vocabulary (proceeds vs sales), and the Reader Services box is the install panel."
+  },
+  {
+   "index": 2,
+   "name": "The trade chart page",
+   "family": "print / chart data graphic",
+   "why": "Indie developers live by the App Store's Top Grossing charts, and Billboard's Hot 100 and the weekend box-office grosses are the trade-paper form of that obsession. Carries per-app contribution ranked by proceeds, with THIS WEEK / LAST WEEK / CHANGE columns as period-over-period movement. Weakness: it ranks your own apps against each other, which the app never does."
+  },
+  {
+   "index": 3,
+   "name": "The seven-day recorder chart",
+   "family": "instrument / measurement",
+   "why": "Barograph and strip-chart recorder paper (printed blue rulings, violet aniline pen ink that matches the icon's own violet, a red event pen) is the classic record that can only record. Carries the 7D default view, this week against the previous week as two pens (the app's Period Comparison), Apple's once-a-day cadence as daily steps, and 'Controls: none' printed in the chart's label block."
+  },
+  {
+   "index": 4,
+   "name": "The Home Screen Smart Stack",
+   "family": "platform screen interface",
+   "why": "Every iOS developer knows their own Home Screen by heart. The journal calls the widget the app's highest-engagement surface, and 6.png shows the 7-Day Dashboard widgets. Carries the glance as real widget sizes and the dock as the sticky download bar. Weakness: it is nearly a picture of the product, sits close to the dark-indigo category default, and would likely converge with Soon's widget world."
+  },
+  {
+   "index": 5,
+   "name": "The hand-hung ballpark scoreboard",
+   "family": "signage / architecture",
+   "why": "Wrigley's and Fenway's green steel boards are read from the stands at a glance and cannot be touched by the crowd. Carries the portfolio as a line score (the per-app rows from 2.png, summing to the 992,55 € total in 1.png), the price as hung plates, and the ball-strike-out lamps recast as Build / Pricing / Metadata lamps that are not wired."
+  },
+  {
+   "index": 6,
+   "name": "The sealed utility meter",
+   "family": "instrument / metering",
+   "why": "A meter is read but never adjusted, it is closed with a tamper seal, and a reading is present minus previous. Carries read-only by construction and the period comparison. Weakness: it holds one number, not a portfolio, and sits next to Allpaid's bills world."
+  },
+  {
+   "index": 7,
+   "name": "The boxed Mac software carton",
+   "family": "packaging / object",
+   "why": "Before the web, Mac software came shrink-wrapped, with a system-requirements side panel, a feature back panel and a price sticker. Flattened as a dieline it carries the price sticker, an 'in the box / not in the box' panel (no build, pricing or metadata controls) and the QR in the UPC position. Weakness: it does not carry the glance itself, and it would fit any app in the catalogue."
+  }
+ ],
+ "seed": {
+  "key": "6ff8c40b",
+  "assigned": 3,
+  "reroll1": 5
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "Seven-Day Chart",
+   "kicker": "THE ROLL",
+   "sourceIndex": 3,
+   "lineage": "Short & Mason and Negretti & Zambra seven-day barograph charts, and Esterline Angus / Leeds & Northrup strip-chart recorders: printed blue rulings, day divisions, violet aniline pen ink, a red event pen, and the printed label block in the chart's corner.",
+   "thesis": "The page is one roll of recorder chart paper fed past a fixed pen. A week of portfolio proceeds is traced in violet against last week in graphite, recorded by an instrument whose label block reads 'Controls: none'. It refuses the dark gradient dashboard of floating KPI tiles.",
+   "scene": "An indie developer at a kitchen table or café counter in 7 to 9 am daylight, phone in hand, reading what Apple published overnight. That means light chart paper, one scheme (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Full palette",
+   "palette": [
+    {
+     "hex": "#F2F6F4",
+     "role": "chart paper: page ground (cool, not cream)"
+    },
+    {
+     "hex": "#B9CFE3",
+     "role": "fine rulings: decorative grid lines only, never text"
+    },
+    {
+     "hex": "#2D5B8C",
+     "role": "chart-blue printing ink: heavy rulings, printed legends, scale numerals, nav (6.5:1 on paper)"
+    },
+    {
+     "hex": "#5A2D9C",
+     "role": "violet pen ink: this week's trace, links, primary accents, 2px focus ring (8.4:1)"
+    },
+    {
+     "hex": "#5F6670",
+     "role": "graphite: previous-week trace, secondary text (5.3:1)"
+    },
+    {
+     "hex": "#C23A2B",
+     "role": "red event pen: refund ticks, section event marks (4.9:1)"
+    },
+    {
+     "hex": "#18212E",
+     "role": "body ink: headlines and reading text"
+    }
+   ],
+   "type": {
+    "display": "B612 700, plus 400 for printed legends (@fontsource/b612; latin 400+700 about 34 KB)",
+    "text": "Atkinson Hyperlegible Next 400/500/700 (@fontsource-variable/atkinson-hyperlegible-next, wght file about 34 KB)",
+    "utility": "B612 Mono 400 (@fontsource/b612-mono, about 19 KB), used only for real readings: daily figures, value-scale numerals, endpoint paths",
+    "rationale": "B612 is Airbus and Intactile's cockpit display face, drawn so instrument values can be read at a glance. It is the chart's printed-legend voice and sets every headline. Atkinson Next shares its open, unambiguous counters, which keeps the FAQ and essay calm. The mono appears only where the content is real measurement or code. Total is about 87 KB, with no italic serif and no mono costume."
+   },
+   "materials": [
+    "Recorder chart paper: CSS repeating-linear-gradient rulings (fine every 8px, heavy every 40px), with day bands as heavy horizontal rules and printed day labels in the left margin",
+    "Violet pen trace (this week) and graphite trace (previous week) as inline SVG polylines that step once per day, because Apple reports daily",
+    "Red event-pen ticks in a 24px right-edge channel marking each section start",
+    "The chart's printed label block: a ruled box of cells headed For / Records / Controls / Price",
+    "Pen carriage: a fixed ruled band carrying a drawn violet nib, used as the sticky download bar",
+    "Thin iPhone bezels for the six screenshots laid on the strip"
+   ],
+   "firstViewportDesktop": "1440x900. Top 48px is the chart's printed edge: 'AppMeta Pulse' in B612 700 18px chart-blue at x 120; anchor links Record · Wiring · Price · Questions · Privacy in B612 400 14px at right. Chart-paper grid full-bleed behind everything, with the rulings suppressed to paper under every text block. y 88–250: H1 'The fast, calm App Store Connect dashboard.' in B612 700 80px/0.98 body ink, two lines across x 120–1180. y 262–320: hero.subheadline in Atkinson 21px, 62ch. y 340–480: the label block, a 2px chart-blue ruled box from x 120 to 1320 split into cells: FOR (pre_headline) · RECORDS (proceeds, units, subscriptions, trials, refunds, downloads) · CONTROLS (none for builds, pricing or metadata; writes only the review replies you send) · PRICE ('Free trial — from $0.99/mo · $17.99 lifetime', figures in B612 Mono) · the official black App Store badge at 48px · QR at 104px captioned 'Scan with your iPhone camera'. y 505–900: the record. A pen line labelled 'Data up to 6 Feb · illustrative week traced from the app's screenshots' sits above seven 54px day bands running downward, newest under the pen. The left 240px of each band prints the day and its rounded reading in B612 Mono. x 400–1180 is the Proceeds channel on a printed €0–200 scale, with the violet trace (this week) and graphite trace (previous week). x 1220–1320 is the event channel, with violet new-subscription ticks and red refund ticks. Beside the pen: '992,55 € vs 909,21 € · +9.2%'. No phone mockup in the first viewport.",
+   "firstViewportMobile": "390x844, 16px gutters. A 44px printed edge holds the wordmark and an 'Index' button. H1 in B612 700 40px/1.02 runs 3–4 lines. The first sentence of hero.subheadline follows at 17px. The label block is stacked as ruled rows: FOR, CONTROLS (none for builds, pricing or metadata), PRICE ('Free trial — from $0.99/mo · $17.99 lifetime'), then a full-width cell with the official badge at 44px tall, around y 560–620. RECORDS sits under the badge. No QR. At y 700–844 the pen line and the first two day bands of the record appear: readings at left, a 200px trace channel, a 20px event channel.",
+   "conversion": "The official black App Store badge has its own cell in the chart's label block, next to the price cell, and is never redrawn. Desktop adds assets/qr/appmeta-pulse.svg in the next cell, captioned 'Scan with your iPhone camera'. The sticky bar is the pen carriage: once the label-block badge leaves the viewport, a 56px ruled band slides in (top on desktop, bottom on mobile; chart-blue rules on paper) holding a drawn violet nib, 'From $0.99/mo · $17.99 lifetime' in B612 Mono, and the badge at 36px. The price statement comes only from price.value and plans. The Price section and the end of the chart repeat badge and QR. Smart App Banner meta stays in head and sits above the chart's top edge on iOS.",
+   "visitorPath": [
+    "Printed top edge: wordmark and anchor links",
+    "Header band: H1 (hero.headline) and hero.subheadline",
+    "Label block: FOR (hero.pre_headline, set as a form field, not an eyebrow) · RECORDS · CONTROLS · PRICE (price.value, plus Lifetime from plans) · official badge · desktop QR",
+    "The week's record: seven day bands, violet this week against graphite previous week, a readings <table>, '992,55 € vs 909,21 € · +9.2%', refund and new-sub ticks, captioned as illustrative from 1.png and 5.png",
+    "Operator's note: quick_answer in a ruled note panel (speakable), with hero.secondary as its closing line",
+    "Wiring: value_points 'Monitoring by design' and body paragraph 3 as the instrument's wiring list. Reads (GET salesReports, subscription reports, analytics, catalog, reviews); the two writes (customerReviewResponses when you send, analyticsReportRequests); not wired (builds, pricing, metadata, TestFlight). Endpoints in B612 Mono, linked to /apps/appmeta-pulse/api-access/",
+    "Event marks: the other three value_points as red-ticked annotations along the strip",
+    "What each pen records: Apple's vocabulary legend (proceeds, sales, units, refunds, active subscriptions, trial conversions, cancellations) from body paragraph 4 and the sales-vs-proceeds FAQ",
+    "Screens: six screenshots in thin iPhone bezels on a horizontal scroll-snap strip, captions in B612",
+    "Channels: features x6 as a ruled legend table (channel | what it records)",
+    "Range: who_for and who_not_for as two ruled columns, Suits / Doesn't suit, keeping the link to AppMeta",
+    "Price: plans as three ruled rows (Free trial $0; Pro $0.99 mo · $8.99 yr; Lifetime $17.99 one-time, bracketed in violet 'Best long-term value'), plans_footnote in small print, badge and QR",
+    "Why AppMeta Pulse exists: the show_body essay in a 66ch unruled reading column",
+    "Maker's imprint: founder block (Organization, Lagerland Apps, Finland) with heading, bio, signals, response_time, external_link",
+    "Other instruments: alternatives_to. AppStats, App Sales — Store Reports and Appfigures link to their /alternatives/ pages with one honest trade-off each; the App Store Connect app and RevenueCat appear as plain mentions",
+    "Operator's log: FAQ x13 as ruled details/summary lines",
+    "Privacy record: data_collection none, tracking false, no account, notes x6, and the transparency row's network-call list, linked to /transparency/, the privacy policy and support",
+    "Further reading (the two journal posts) and Also from Lagerland (AppMeta, Mockly)",
+    "End of chart: closing badge, QR and price; the Quick reference <details> (ai-canonical) as a spec sheet; the freshness line 'Built by Lagerland Apps · updated 25 Mar 2026 · first released 1 Feb 2026'",
+    "Shared 'A Lagerland app' footer strip"
+   ],
+   "navigation": "Nav lives on the chart's printed top edge: wordmark plus five anchor links in B612. On mobile an 'Index' button opens the chart legend as a ruled list. From 1100px wide, the right-edge event channel doubles as the jump nav (jump_nav: true): every section has a red event tick with its printed name, and the tick for the section in view turns violet. Lagerland appears only in the shared footer strip.",
+   "signatureInteraction": "Read the pen, a reading cursor. Each day band is a focusable row; arrow keys move between rows. Hover, tap or focus draws a 1px violet hairline across both traces and prints that day's reading and the same day last week in the left margin (about 40 lines of vanilla JS reading data attributes that mirror the server-rendered table). Without JS, the readings column is a real <table> printed beside the bands, so every value is visible. With reduced motion, the cursor jumps without easing and the trace is already inked.",
+   "motionGrammar": "Ink, not glide. On first view the violet trace inks downward from the pen once (SVG stroke-dashoffset, 900ms, linear). Event ticks appear in place with an opacity step and no movement. The pen carriage travels 8px into place in 160ms. Nothing fades in on scroll, and no counters run. With prefers-reduced-motion, everything is pre-inked and the carriage appears without travel.",
+   "readModeVariant": "Privacy, support, the /api-access/ methodology page and the three alternatives pages keep the printed top edge, with a label block as the page header (Title · App · Last updated · back to /apps/appmeta-pulse/). Rulings recede to the margins; a 68ch unruled paper column carries Atkinson 18px/1.6 body-ink text, with H2s in B612 700 chart-blue. Privacy data lists are set as a printed legend table. Alternatives pages show the head-to-head as a two-pen record: one row per fact (monthly, yearly, lifetime, what the privacy label declares, notifications/widgets, platforms), with AppMeta Pulse in violet ink and the competitor in graphite, followed by 'Pick … if' columns and the FAQ as the operator's log. The support page is a label block with email, response time and a ruled 'what to include' checklist.",
+   "assetsNeeded": "None. The grid is CSS. Traces are inline SVG from illustrative values traced off 1.png and 5.png and labelled as such. The nib is a three-path inline SVG. Existing screenshots, icon and QR cover the rest.",
+   "risk": "If the label block and the two traces are weak, chart paper reads as generic graph paper or an engineering costume. Time running down the page is unfamiliar, and the illustrative week could be mistaken for live data, so the labels must be explicit. The grid behind type has to be suppressed under every text column to hold contrast.",
+   "memoryTest": "A page made of chart paper: a violet pen line tracing a week of App Store proceeds against last week's grey line, a label block that said 'Controls: none', and the download badge riding on the pen carriage.",
+   "specimen": {
+    "bg": "#F2F6F4",
+    "ink": "#18212E",
+    "accent": "#C23A2B",
+    "display": "B612",
+    "dw": 700,
+    "text": "Atkinson Hyperlegible Next",
+    "h1": "The fast, calm App Store Connect dashboard.",
+    "sub": "The monitoring-first App Store Connect dashboard for indie iOS developers.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Set reading text in B612 400/400i from the display family already loaded (about 35 KB), and keep B612 Mono for readings. That is one family instead of two, about 66 KB in total."
+    },
+    {
+     "sev": "major",
+     "text": "Correct the front matter before build: 'Truly zero tracking. About a third of AppStats' monthly price ($0.99 vs $2.99).' Drop the Appfigures clause until its price is sourced on the alternatives page."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "The Morning Listings",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "The newspaper markets section read at breakfast: WSJ 'Money & Investing' and FT share-price service listings, agate stock tables with their 'How to read the tables' key, boxed Reader Services and subscription-rates panels, and the reader's yellow highlighter.",
+   "thesis": "The page is the morning markets page, and your apps are the listed holdings. Yesterday's figures sit in agate tables, Apple's vocabulary is the key to the tables, and the download lives in the Reader Services box. It refuses the dark KPI-tile dashboard and its floating phone.",
+   "scene": "Breakfast at the kitchen table in daylight: the developer reads what closed yesterday the way a holder reads share prices. That means light newsprint, one scheme (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Restrained",
+   "palette": [
+    {
+     "hex": "#E6E5E0",
+     "role": "newsprint: page ground (cool grey, not cream)"
+    },
+    {
+     "hex": "#F3F2EE",
+     "role": "paper white under a 12% halftone dot screen: Reader Services box, fact box"
+    },
+    {
+     "hex": "#151515",
+     "role": "ink: all type, rules, tables, 2px focus outline"
+    },
+    {
+     "hex": "#5B5B57",
+     "role": "grey ink: agate secondary columns, captions, dateline (5.4:1)"
+    },
+    {
+     "hex": "#F2E94E",
+     "role": "highlighter yellow, the single accent: marks the action box, the price line, the total row, the active key term, the focus swipe (always under ink, never as text colour)"
+    },
+    {
+     "hex": "#9C9A92",
+     "role": "rule grey: hairline column rules, non-text"
+    }
+   ],
+   "type": {
+    "display": "League Gothic 400, variable wdth 75–100 (@fontsource-variable/league-gothic, about 19 KB)",
+    "text": "Libre Franklin 400/600/800 (@fontsource-variable/libre-franklin, about 29 KB) with font-variant-numeric: tabular-nums for agate tables",
+    "utility": "None. Agate tables and endpoint paths use Libre Franklin tabular figures.",
+    "rationale": "League Gothic revives Alternate Gothic No. 1, the tall condensed headline gothic of American newspapers; it sets the section flag, the banner and the section heads. Libre Franklin revives Franklin Gothic, the newspaper's workhorse sans, used here for body text, datelines and agate stock tables. All sans and all roman: no italic display serif and no tracked mono labels, which keeps the page out of the broadsheet-editorial cliché. About 48 KB."
+   },
+   "materials": [
+    "Newsprint ground on a 12-column grid with 24px gutters and ink column rules",
+    "Agate tables: 13px Libre Franklin tabular figures, ruled every row, totals in 800 weight",
+    "A double rule under the section flag (4px plus 1px)",
+    "Boxed panels with a halftone dot screen (CSS radial-gradient, 3px dots) for Reader Services and the fact box",
+    "The yellow highlighter swipe as a slightly skewed background band behind ink",
+    "The six screenshots run as captioned 'photos' in thin iPhone bezels"
+   ],
+   "firstViewportDesktop": "1440x900. Section flag band at y 0–76: 'AppMeta Pulse' in League Gothic 56px ink at left; dateline 'Data up to yesterday · from Apple's App Store Connect API' in Libre Franklin 13px grey at centre; the Inside index links at right; then the 4px plus 1px double rule. Banner at y 100–330: H1 'The fast, calm App Store Connect dashboard.' in League Gothic 120px/0.92 across all 12 columns, two lines. Three zones at y 360–900. Columns 1–3: the standfirst (hero.subheadline, Libre Franklin 19px), then 'In brief' (quick_answer, speakable) at 16px. Columns 4–9: the listings table 'Your portfolio, yesterday', with five illustrative rows from 2.png (DriftLines, GymLogger X, Taskful Day, TheWait, WanderWiki) in proceeds · downloads · 7-day € columns as the app shows them; the total row '992,55 € · +9.2% vs previous 7 days' is highlighted, captioned 'Illustrative listing — figures as shown in the app's App Store screenshots'. Columns 10–12: the Reader Services box on halftone, with H2 'Get AppMeta Pulse', the official badge at 48px, the QR at 120px captioned 'Scan with your iPhone camera', rates in agate (Free trial · $0.99 a month · $8.99 a year · $17.99 lifetime) with the 'from $0.99/mo' line highlighted, and 'iPhone · iPad · Mac'.",
+   "firstViewportMobile": "390x844, 16px gutters. A 56px flag: 'AppMeta Pulse' in League Gothic 32px and an 'Inside' button, then the double rule. H1 in League Gothic 56px/0.95, three lines. The first sentence of hero.subheadline in Libre Franklin 17px. A full-width Reader Services box on halftone: the official badge at 48px, the highlighted line 'Free trial — from $0.99/mo · $17.99 lifetime', and 'iPhone · iPad · Mac'. At the bottom edge, the header and first two rows of 'Your portfolio, yesterday' (app · 7-day € · change).",
+   "conversion": "The Reader Services box (halftone tint, 1px ink border) is the action: the official badge untouched, the desktop QR, rates taken from price.value and plans, with the subscription line highlighted. The sticky bar is a folded flag strip: a 56px newsprint band with the double rule, 'AppMeta Pulse — from $0.99/mo · $17.99 lifetime' and the badge at 36px. It appears when the Reader Services badge leaves view (bottom on mobile, top on desktop). The Subscription rates box later carries all three plans, and a closing Reader Services box repeats badge and QR. Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Section flag: 'AppMeta Pulse', dateline, Inside index, double rule",
+    "Banner: H1 hero.headline across all 12 columns",
+    "Standfirst (hero.subheadline) and 'In brief' (quick_answer, speakable)",
+    "Listings: 'Your portfolio, yesterday', an illustrative agate table from 2.png with the highlighted total 992,55 € · +9.2% (from 1.png and 5.png)",
+    "Reader Services box: badge, desktop QR, rates, platforms",
+    "Lead story 'No buttons that can break anything': value_points 'Monitoring by design' and body paragraph 3, with a sidebar table 'What it calls' (reads / the two writes / never called) linking to /apps/appmeta-pulse/api-access/",
+    "Briefs: the other three value_points as run-in briefs in one column, with hero.secondary as the lead brief",
+    "Photos: six screenshots as captioned photos across three columns (a swipe row on mobile)",
+    "How to read these tables: Apple's vocabulary key (proceeds, sales, units, refunds, active subscriptions, trial conversions, cancellations), each term linked to its listing column",
+    "What's covered: features x6 as a two-column agate list with bold run-in heads",
+    "Who it suits / Who it doesn't: who_for and who_not_for in two columns",
+    "Subscription rates: plans as an agate rates table, with the Lifetime row highlighted 'Best long-term value' and plans_footnote as fine print",
+    "Comparable listings: alternatives_to as a table. AppStats, App Sales — Store Reports and Appfigures link to /alternatives/ with each page's real prices and privacy-label facts; the App Store Connect app and RevenueCat appear as unlinked rows",
+    "Column: 'Why AppMeta Pulse exists.' (show_body essay) with the byline Lagerland Apps, plus a founder bio box (Organization) with signals and response time",
+    "Letters: FAQ x13 as question-and-answer disclosures",
+    "Disclosures: privacy block and transparency row, with links to the privacy policy, support and /transparency/",
+    "Fact box: the Quick reference <details> (ai-canonical) styled as a company-profile box; folio freshness line (Built by Lagerland Apps · updated 25 Mar 2026 · first released 1 Feb 2026)",
+    "Further reading (the journal posts) and related listings (AppMeta, Mockly)",
+    "Closing Reader Services box: badge, QR, rates",
+    "Shared 'A Lagerland app' footer strip"
+   ],
+   "navigation": "An 'Inside' index sits in the flag like a front-page index box: Listings · Key · Rates · Disclosures · Letters · Column. On mobile, the 'Inside' button opens it as an agate list under the flag. A folio line at the foot of each section ('AppMeta Pulse · Listings') doubles as a back-to-top link. Lagerland appears only in the shared footer strip.",
+   "signatureInteraction": "Read the key: cross-highlighting between the 'How to read these tables' key and the listings. Each key term links to its column or row id. Tapping, hovering or focusing a term swipes the highlighter across the term and the matching table column (vanilla JS toggles a class; a CSS background-size swipe runs 220ms). Without JS, the links jump by fragment and CSS :target highlights the column header and the definition. With reduced motion, the highlight fills instantly.",
+   "motionGrammar": "Print holds still; only the highlighter moves. It swipes left to right (background-size 0 to 100%, 220ms ease-out) on hover, focus or :target, and the sticky flag strip drops 6px in 140ms. No scroll reveals and no counters, because the numbers are printed. With prefers-reduced-motion, swipes become instant fills.",
+   "readModeVariant": "The privacy page becomes 'Disclosures': section flag, banner title, a single 66ch column of Libre Franklin 18px with League Gothic subheads, data lists as agate tables, and the transparency row as a boxed fact panel linking /transparency/. The support page becomes 'Reader Services': a halftone box with email and response time, and 'what to include' as an agate checklist. The /api-access/ page is set as a markets explainer with endpoint tables in agate. Alternatives pages become 'Comparable listings': a head-to-head agate table (for AppStats: $0.99 vs $2.99/mo, $8.99 vs $19.99/yr, $17.99 vs $49.99 lifetime, privacy label declares none vs usage data and diagnostics, notifications and widgets). The winning cell is highlighted for whichever side wins it, AppStats' wins included. Then the article runs in one column, followed by the 'Letters' FAQ.",
+   "assetsNeeded": "None. Halftone, rules and highlighter are CSS; screenshots, QR and icon already exist.",
+   "risk": "This is the most familiar of the three: newspaper and editorial layouts are a frequent 'creative' answer and sit next to the broadsheet-editorial cluster. It has to stay sans and roman, with the highlighter used only for real marks. The studio's own Read world may also go editorial, which would blur this microsite's identity. Dense agate tables are tiring on a phone. The stock-market framing must never imply investment returns, so every column is labelled in Apple's terms.",
+   "memoryTest": "It was a morning newspaper's market page: my apps were the listings, the key at the bottom explained proceeds vs sales, and the download sat in a yellow-highlighted subscription box.",
+   "specimen": {
+    "bg": "#E6E5E0",
+    "ink": "#151515",
+    "accent": "#F2E94E",
+    "display": "League Gothic",
+    "dw": 400,
+    "text": "Libre Franklin",
+    "h1": "The fast, calm App Store Connect dashboard.",
+    "sub": "The monitoring-first App Store Connect dashboard for indie iOS developers.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "appmeta-pulse-c keeps Archivo Expanded for its hung plates. aftershift-b moves to Arimo 400/700, the Arial-metric face that ward admins actually type rotas in. That is more native to a photocopied rota than a display-width grotesk."
+    },
+    {
+     "sev": "major",
+     "text": "soon-b keeps it, since Alternate Gothic is the ticket/event-poster face. appmeta-pulse-b sets its banner in Libre Franklin 900: the Franklin Gothic of US markets pages, and already its text family. That makes Franklin a display face in appmeta-pulse-b, so allpaid-c moves its window headline and indicia caps off Libre Franklin (e.g. Epilogue 600/800, unused on the board)."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Correct the front matter before build: 'Truly zero tracking. About a third of AppStats' monthly price ($0.99 vs $2.99).' Drop the Appfigures clause until its price is sourced on the alternatives page."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "Hand-Hung Scoreboard",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 5,
+   "lineage": "Hand-operated ballpark scoreboards: Wrigley Field's 1937 centre-field board and Fenway Park's Green Monster board (green-painted steel, numeral plates hung by hand, line scores, out-of-town scores, ball/strike/out lamps), with the tall name-board tiers of heritage cricket scoreboards.",
+   "thesis": "The page is the scoreboard you read from the stands. The portfolio's numbers are hung as plates, the price is hung as plates, and a lamp panel shows Build, Pricing and Metadata lamps that are not wired. It refuses the floating-phone hero and the KPI-tile grid.",
+   "scene": "The board is read from the bleachers in daylight: the developer glances at it between other things, with morning sun on painted green steel. The board's green is the ground, in one dark scheme (color-scheme: dark); this is a daylight object, not night mode.",
+   "scheme": "dark",
+   "colorStrategy": "Drenched",
+   "palette": [
+    {
+     "hex": "#1D4733",
+     "role": "board green: page ground"
+    },
+    {
+     "hex": "#133524",
+     "role": "plate green: hung numeral plates, lamp housings"
+    },
+    {
+     "hex": "#EEF2EC",
+     "role": "plate white: numerals, board lettering, body text (9.3:1 on board green)"
+    },
+    {
+     "hex": "#A9C2B3",
+     "role": "painted grey-green: secondary text, captions (5.5:1)"
+    },
+    {
+     "hex": "#F4B63F",
+     "role": "lamp amber: lit lamps, primary-action frame, 2px focus ring (5.8:1)"
+    },
+    {
+     "hex": "#2F5D47",
+     "role": "dark lamp: unlit lamps, panel seams, rules"
+    },
+    {
+     "hex": "#F7F8F4",
+     "role": "enamel white: sponsor panel behind the official badge and QR; scorecard reading panel (board-green text)"
+    }
+   ],
+   "type": {
+    "display": "Archivo 800 at wdth 125 (Expanded) for plate numerals, board lettering and headings (@fontsource-variable/archivo, wdth file about 90 KB, which also covers the text width)",
+    "text": "Archivo 400/500 at wdth 100 from the same variable file",
+    "utility": "None. Every figure uses Archivo tabular numerals on plates.",
+    "rationale": "Archivo revives late-19th-century American grotesques, the era of ballpark sign painting. Its expanded heavy numerals fill square plates the way painted plate numerals do, and the same alphabet at normal width carries the reading text: one sign-painter's alphabet in two widths. It is neither condensed nor mono, so it does not echo the other two styles. About 90 KB."
+   },
+   "materials": [
+    "Painted green steel as the page ground, with faint panel seams (1px #2F5D47) every 960px",
+    "Hung plates: square tiles in plate green with a 1px top highlight and a 1px bottom seam (no offset shadow) and white Archivo Expanded numerals",
+    "Lamp panel: round lamps as flat radial fills, amber when lit and dark when not, with painted labels and no outer glow",
+    "Enamel sponsor panels: white rectangles that frame the official App Store badge and the QR",
+    "Painted board lettering for headings directly on the green",
+    "Enamel-white scorecard panel for long reading (essay, FAQ) and for Read mode"
+   ],
+   "firstViewportDesktop": "1440x900. The whole viewport is the painted board face. Nameplate band at y 0–64: an 'AppMeta Pulse' plate in Archivo Expanded 800 28px at left; painted links at right (Score · Lamps · Price · Questions · Privacy). At y 96–232: H1 'The fast, calm App Store Connect dashboard.' painted in Archivo Expanded 800 64px/1.0 white, two lines across x 96–1240. At y 248–300: hero.subheadline in Archivo 18px grey-green. At y 330–620, x 96–1040: the line score. Painted column heads read PROCEEDS · DOWNLOADS · 7 DAYS; five app name plates (DriftLines, GymLogger X, Taskful Day, TheWait, WanderWiki) carry their figures on 64px square plates exactly as 2.png shows them; a PORTFOLIO row has a 7-day plate reading 992,55 € (their sum, matching 1.png), with '+9.2% vs previous 7 days' painted beside it; caption 'Figures as shown in the app's App Store screenshots'. At x 1080–1344: the lamp panel. BUILDS, PRICING and METADATA are dark and labelled 'not wired'; REVIEW REPLIES is amber, labelled 'only when you send'; ANALYTICS REQUESTS is amber; below them sits a 'Test the lamps' plate. At y 650–880: a row of hung price plates (FREE TRIAL · $0.99 /MO · $8.99 /YR · $17.99 LIFETIME), then the enamel sponsor panel holding the official badge at 52px and the QR at 112px, captioned 'Scan with your iPhone camera'.",
+   "firstViewportMobile": "390x844, 16px gutters. A 52px nameplate band with the 'AppMeta Pulse' plate and a 'Menu' plate. H1 in Archivo Expanded 800 34px/1.04, 3–4 lines. A compact lamp strip of five 18px lamps in two rows (BUILDS, PRICING, METADATA dark, 'Not wired'; REVIEW REPLIES and ANALYTICS REQUESTS lit). Four price plates wrap 2x2 at 76px (FREE TRIAL / $0.99 MO / $8.99 YR / $17.99 LIFETIME). A full-width enamel sponsor panel holds the official badge at 48px. The message-board panel (quick_answer) begins at the bottom edge.",
+   "conversion": "The official badge sits on an enamel sponsor panel bolted into the board. The badge is never altered; the panel takes a 2px amber frame when it has focus. Desktop adds the QR on the same panel, captioned 'Scan with your iPhone camera'. The price statement is hung as plates from price.value and plans (Free trial · $0.99/mo · $8.99/yr · $17.99 lifetime) and is never invented. The sticky bar is the board's bottom rail: a 60px green rail with the badge on a small enamel panel and two price plates ($0.99 /MO · $17.99 LIFETIME). It appears once the sponsor panel scrolls away (bottom on mobile, top on desktop). The Ticket window section and the final board repeat badge and QR. Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Nameplate band: board name plate and painted nav",
+    "Board header: H1 (hero.headline) painted, hero.subheadline, and a name-board row 'FOR: indie iOS developers shipping multiple apps' (hero.pre_headline as a board row, not an eyebrow)",
+    "Lamp panel: BUILDS, PRICING, METADATA dark ('not wired'); REVIEW REPLIES ('only when you send') and ANALYTICS REQUESTS lit; the 'Test the lamps' plate; value_points 'Monitoring by design'; link to /apps/appmeta-pulse/api-access/",
+    "Price plates and sponsor panel: four price plates, the official badge, the desktop QR",
+    "Message board: quick_answer (speakable) with hero.secondary",
+    "Line score: per-app rows from 2.png and the PORTFOLIO total 992,55 € · +9.2% (from 1.png and 5.png), labelled illustrative",
+    "Out-of-town board: six screenshots as inset screens in thin iPhone bezels on a horizontal scroll-snap row, with painted captions",
+    "Name boards: features x6 as long name plates, each with a one-line description (the cricket batting-order tier)",
+    "Ground rules: Apple's vocabulary (proceeds vs sales, units, refunds, active subscriptions, trial conversions, cancellations) and the other three value_points",
+    "Who it's for / not for: who_for and who_not_for in two painted columns",
+    "Ticket window: the full plans as three plate rows with their features, Lifetime marked 'Best long-term value' by a lit amber lamp, plans_footnote, badge and QR",
+    "Visiting teams: alternatives_to as a mini line score per competitor, linking /alternatives/appstats/, /alternatives/app-sales-store-reports/ and /alternatives/appfigures/; the App Store Connect app and RevenueCat as plain rows",
+    "Scorecard: the 'Why AppMeta Pulse exists.' essay (show_body) on the enamel scorecard panel, with the founder Organization block (bio, signals, response time) beneath",
+    "Questions: FAQ x13 as name-plate disclosures on the scorecard panel",
+    "Privacy board: privacy block and transparency row, with links to the privacy policy, support and /transparency/",
+    "Programme notes: the journal posts; also from Lagerland: AppMeta, Mockly",
+    "Final board: closing badge, QR and price plates; the Quick reference <details> (ai-canonical); a maker plate line (Built by Lagerland Apps · updated 25 Mar 2026 · first released 1 Feb 2026)",
+    "Shared 'A Lagerland app' footer strip"
+   ],
+   "navigation": "Painted links run across the board's nameplate band: Score · Lamps · Price · Questions · Privacy, in Archivo 600 15px white with an amber underline on hover or focus. On mobile, a 'Menu' plate opens a full-width list of painted name plates. On desktop, the jump nav (jump_nav: true) is a row of unnumbered section name plates that sticks under the nameplate band like the board's inning header. Lagerland appears only in the shared footer strip.",
+   "signatureInteraction": "Test the lamps. A 'Test the lamps' plate on the lamp panel runs the board's lamp test: REVIEW REPLIES and ANALYTICS REQUESTS light in sequence, while BUILDS, PRICING and METADATA stay dark and their labels print 'No code for this', linking to /apps/appmeta-pulse/api-access/. The fact comes from the FAQ and the methodology page. About 25 lines of vanilla JS toggle classes, and the button announces its result through aria-live. Without JS, the lamps are server-rendered in their true states (two lit, three dark) with the full labels visible. With reduced motion, the test lights both lamps at once, with no sequence.",
+   "motionGrammar": "Manual, never electronic. When the line score first enters view, the plates arrive with a short hinge flip (rotateX -90° to 0°, 180ms, 50ms stagger, once); the real numerals are already in the DOM. Lamps switch on with a 120ms fill change inside the lamp only, with no outer glow. The bottom rail travels 8px. No counters and no scroll scrubbing. With prefers-reduced-motion, plates and lamps are simply in place.",
+   "readModeVariant": "Privacy, support, /api-access/ and the three alternatives pages keep the green board as the frame. Each has the nameplate band, the page title painted in Archivo Expanded 800, and one row of word plates (DATA COLLECTED: NONE · TRACKING: NO · ACCOUNT: NONE). These are words on plates, not big-number tiles. The reading column is an enamel scorecard panel (#F7F8F4, board-green text, Archivo 18px/1.6, 68ch) set into the board. Alternatives pages become a two-team line score: rows for AppMeta Pulse and the competitor, columns $/MO · $/YR · LIFETIME · PRIVACY LABEL · WIDGETS, with real values from each alternatives page hung as plates. The competitor's wins are shown as lit too. 'Pick … if' columns and the FAQ follow on the scorecard. The support page is a scorecard panel with email, response time and what to include.",
+   "assetsNeeded": "None. Plates, lamps, seams and panels are CSS. Line-score figures are the numbers printed in 2.png and 1.png/5.png, labelled as such. Badge, QR, icon and screenshots already exist.",
+   "risk": "A ballpark board can read as gamified, or as American-sports-specific to a global indie audience and a calm brand. A drenched dark green is heavy for long reading, hence the scorecard panel. A 'score' framing can imply your apps compete with each other. The plate grid needs strict tabular alignment at 390px or it collapses into a tile grid.",
+   "memoryTest": "A green ballpark scoreboard with my apps' numbers hung on plates, and a lamp panel where Builds, Pricing and Metadata never lit up because they aren't wired.",
+   "specimen": {
+    "bg": "#1D4733",
+    "ink": "#F7F8F4",
+    "accent": "#F4B63F",
+    "display": "Archivo",
+    "dw": 800,
+    "text": "Archivo",
+    "h1": "The fast, calm App Store Connect dashboard.",
+    "sub": "The monitoring-first App Store Connect dashboard for indie iOS developers.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Correct the front matter before build: 'Truly zero tracking. About a third of AppStats' monthly price ($0.99 vs $2.99).' Drop the Appfigures clause until its price is sourced on the alternatives page."
+    }
+   ]
+  }
+ ],
+ "canon": "Canon (the standing exit, never recommended): the category's SaaS analytics landing page played straight. An indigo-to-black gradient taken from the icon, a floating iPhone showing the 7-day dashboard, three KPI tiles, a feature card grid, three equal pricing cards with Lifetime highlighted, and an FAQ accordion, in an SF-like grotesk at the craft level of Apple's own product pages.",
+ "notes": "The roll ran degraded (roll service unreachable; no catalog challengers and no quality-bar boards). The dealt index binds anyway. Seed key 6ff8c40b, assigned 3, re-roll 1 dealt 5 (distinct, so no further re-roll). Neither dealt index is 1, so B is my top candidate as IMPECCABLE’S PICK. Styles split world, topology and light: A is light chart paper, Full palette, with time running down a strip and the sticky bar as the pen carriage. B is light newsprint, Restrained with one highlighter, on a 12-column broadsheet grid of listings. C is a Drenched dark board green, with plates and a lamp panel on one board face. Fonts were verified on Fontsource (b612 400/700, b612-mono 400, atkinson-hyperlegible-next variable, league-gothic variable wdth, libre-franklin variable, archivo variable wdth+wght), and every style stays at or under about 90 KB. Things the owner should know: (1) the 6.png caption says 'Same dashboard on Mac' but the image is the Home Screen 7-Day Dashboard widgets; fix the caption or the file. (2) platforms is ['iOS'] while the copy claims iPhone, iPad, Mac and Vision Pro; styles state 'iPhone · iPad · Mac' as the copy does. Confirm the schema value. (3) The journal says the free tier covers one app, but front matter says free trial; styles use the front matter. (4) No how_it_works, so no HowTo steps exist to render; the A/C 'wiring' and 'lamp' sections come from the api-access facts instead. (5) All portfolio figures are the developer's own screenshot data and are labelled illustrative everywhere. (6) Widgets are not claimed as a differentiator, because the AppStats page concedes AppStats is stronger there. (7) B's editorial world may collide with whatever the studio's Read world becomes; check before choosing it.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

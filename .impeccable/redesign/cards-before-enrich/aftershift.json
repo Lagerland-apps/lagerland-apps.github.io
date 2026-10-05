@@ -1,0 +1,265 @@
+{
+  "surface": "aftershift",
+  "dossier": {
+    "mechanism": "AfterShift scores every sleep, nap and coffee against the worker's NEXT scheduled shift: a forward-looking 0–100 Shift Recovery Score built from sleep quality, continuity, nap contribution and proximity to the next block. A daytime sleep and a 90-minute pre-night nap count as the recovery they are, not as a 'poor night' measured against a 9-to-5 baseline.",
+    "audienceScene": "A night nurse, paramedic, firefighter, pilot or plant operator with a phone in one hand: at 07:10 walking to the car after a 12-hour night, at 03:00 in the breakroom, or searching 'night shift sleep app' at 14:00 behind blackout curtains. Tired eyes, dim or harsh fluorescent light, usually arriving on an iPhone from Google or an AI answer.",
+    "culturalHome": "The rota on the breakroom wall with its D/E/N/OFF codes and a highlighter down your own row; 24-hour time and handover at 07:00/19:00; named rotations (DuPont, Pitman 2-2-3, 4-on-4-off, 12-hour, on-call); navy uniform with hi-vis and retroreflective tape; hospital and plant corridors with coloured floor lines; foil over bedroom windows; occupational-health sleep diaries.",
+    "mustProve": "At a glance: this app reads your roster, not a 9-to-5. A daytime sleep and a nap show up as real recovery, and a score sits before your next shift. Next to that, the free download (official badge, plus a QR on desktop) and the honest price: 'Free — Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime'.",
+    "categoryDefault": "A dark navy or indigo sleep-app page with moon-and-stars imagery and a glowing ring or big sleep score. It has a split hero (headline left, iPhone right, badge row), four icon feature cards and a pricing table. This is what Calm, Rise and Sleep Cycle ship, and what the incumbent Paper & Ink template does in cream.",
+    "predictableOpposite": "A bright sunrise wellness page: dawn gradient, soft pastels, serif display, a 'rest well' lifestyle tone. It is the morning-person world this audience is shut out of.",
+    "literalReading": "'After shift' read literally is the dawn after a night shift, the commute home at sunrise. The icon's metaphor is a crescent moon inside a clock face. Clock dials and dawn gradients are in the rut. Only candidate 2 (blackout room at noon) touches the after-shift moment, and it does so from inside the dark room. No candidate uses a clock face.",
+    "evidence": [
+      "Front matter: price.model freemium, value 'Free — Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime'; schema 0–39.99 across 4 offers; platforms [iOS]; status live; category health. 4 plans: Free, Premium Monthly, Premium Annual (highlight: true), Lifetime (one-time, Family Sharing). first_release 2026-01-01, last_updated 2026-04-03. Ratings 3.6 from 5, so no stars anywhere.",
+      "Blocks present: hero (pre_headline, headline, secondary, subheadline, cta_label 'Download Free'), quick_answer, value_points ×4, features ×6, screenshots ×6, who_for ×6, who_not_for ×3, plans ×4 + plans_footnote, privacy notes ×5, faq ×18, founder (Organization: Lagerland Apps, Finland; 4 signals; link to methodology), show_body + about_heading 'Why AfterShift exists.', alternatives_to ×5. Absent: spotlight, how_it_works (so no HowTo schema today), comparison_table, roadmap, insight_gallery, training_vocabulary, coach_cta.",
+      "App UI across 6 screens: deep navy gradient (~#0E1B2E→#132741) with translucent cards and SF Pro. Blue #3B9BE0 is primary; teal marks naps and 'Recovering'; amber marks on-call and the day-shift sun; green, orange and red dots rate caffeine. 24-hour clock ('23.00'). Tabs: Today, Coach, Roster, Sleep, Settings. Values on screen: Sleep Score 80, Shift Recovery Score 75, flexible rest window 22:10–05:40 (7.5 h), suggested nap 12:47–13:12, 6 h caffeine cutoff.",
+      "Icon: a steel-bezelled clock face with a glowing amber crescent moon on starry navy. This is the literal metaphor every direction avoids.",
+      "Transparency record (_data/transparency.yml): manifest from source; 0 tracking domains; 0 third-party SDKs; network calls 'None — HealthKit and EventKit only'; permissions Calendar (read-only) and HealthKit (read sleep); data leaves the device only to the user's own iCloud, if enabled; analytics none.",
+      "Methodology sub-page /apps/aftershift/methodology/ (a 4th sub-page that needs the Read variant): the score's four inputs are quality, continuity, nap contribution and proximity to the next shift. Nap lengths 20 / 90 / 45 min; circadian low 02:00–06:00; caffeine half-life about 5 h. This is the factual spine for every score demonstration.",
+      "Alternatives that target AfterShift: /alternatives/offshift/ (honest comparison grid, but it still says a lifetime purchase is OffShift's edge, which is stale since AfterShift added $39.99 lifetime) and /alternatives/shift-worker/. The alternatives include pairs aftershift:offshift.",
+      "Journal: 'Building a sleep app for nurses, pilots…' gives the origin (an ICU-nights friend was told she'd had a 'poor night'), names caffeine timing as the most-mentioned feature, and sends 9-to-5 sleepers to Observa. 'Not doing in 2026' rules out streaks and daily nags for AfterShift.",
+      "app_enrichment: 32 languages; recommend_why 'only shift-worker sleep app that treats naps as first-class recovery'. No AfterShift entries in testimonials.yml.",
+      "Privacy policy front matter: processes shifts, preferences (target sleep, commute, caffeine sensitivity, nap tolerance) and optional nap and caffeine logs; reads HealthKit; runs no servers of its own. The support page already has its own seo block.",
+      "Incumbent render (Observa, same template): cream ground, Newsreader headline left, phone right, badge plus 'See how it works', QR card, pill row. This is the arrangement to refuse."
+    ]
+  },
+  "candidates": [
+    {
+      "index": 1,
+      "name": "The breakroom duty rota",
+      "family": "print/paper — notation",
+      "why": "The photocopied rota pinned by the kettle is the one document every nurse, medic, firefighter and plant operator reads each week: D/E/N/OFF codes in a grid, a highlighter down your own row, swaps written in biro. How it carries the mechanism: the roster is the only baseline AfterShift accepts. The page is that sheet plus the rows AfterShift adds under your shifts: sleep, naps, last coffee, and a highlighted Shift Recovery Score before every block."
+    },
+    {
+      "index": 2,
+      "name": "The blackout bedroom at noon",
+      "family": "architecture/place + lighting (the one literal 'after shift' reading)",
+      "why": "Foil taped over the window, an eye mask, a blade of noon sun around the curtain: the daily ritual of every day sleeper. How it carries the mechanism: daytime sleep is the main event. The page is the dark room at 13:00, and its only light is the daylight at the curtain edge. That light falls on the day-sleep block, the nap and the hours left until the next shift."
+    },
+    {
+      "index": 3,
+      "name": "The punch-clock time card",
+      "family": "ritual object/print",
+      "why": "The manila card in the rack by the door, its IN/OUT columns stamped in violet, is the grammar of shift work even where badges have replaced it. How it carries the mechanism: AfterShift starts counting at clock-out. The page is one card where the recovery window, each sleep and each nap are stamped lines, and the Shift Recovery Score is the total before the next IN."
+    },
+    {
+      "index": 4,
+      "name": "Corridor floor lines",
+      "family": "signage/wayfinding",
+      "why": "Night staff find their way along coloured vinyl lines on hospital and plant floors ('follow the blue line'), often half-asleep at 03:00. How it carries the mechanism: four lines run down the page, one for each of the score's four inputs (sleep quality, continuity, nap contribution, proximity to the next shift). Each peels off to its own station, and all four meet again at the Shift Recovery Score."
+    },
+    {
+      "index": 5,
+      "name": "Retroreflective tape on navy uniform",
+      "family": "textile/identity",
+      "why": "Paramedics, firefighters, police and plant crews work the night in navy twill trimmed with hi-vis yellow and silver retroreflective tape, made to flare in headlights. How it carries the mechanism: the rotation is drawn as a strip of tape, hi-vis for shifts and silver for sleep. When light crosses it, the naps flare exactly like core sleep: same material, same recovery."
+    },
+    {
+      "index": 6,
+      "name": "Sleep diary / double-plotted actogram",
+      "family": "instrument/data graphic",
+      "why": "Occupational-health clinics hand out sleep logs with one 24-hour row per day, and chronobiologists draw them as double-plotted actograms; it is the honest picture of a rotating life. How it carries the mechanism: days stack as 48-hour rows where a daytime sleep is shaded exactly like a night sleep and naps are full bars. The score sits in the margin before each shift block."
+    },
+    {
+      "index": 7,
+      "name": "Night-lit flight deck / ambulance cab",
+      "family": "lighting/instrument",
+      "why": "Pilots and crews work under panels dimmed to amber to protect night vision, with labels in B612, the face Airbus commissioned for legibility to tired eyes. How it carries the mechanism: the page is lit only by light with no blue in it, the light a night worker should see before day sleep. Its readouts show the next shift, the caffeine cutoff and recovery."
+    }
+  ],
+  "seed": {
+    "key": "bd9034af",
+    "assigned": 5,
+    "reroll1": 4
+  },
+  "styles": [
+    {
+      "id": "a",
+      "label": "Tape & Twill",
+      "kicker": "THE ROLL",
+      "sourceIndex": 5,
+      "lineage": "Night-crew uniform cloth: navy polycotton twill with retroreflective silver tape edged in fluorescent yellow (the triple-band trim of EN ISO 20471 / ANSI 107 paramedic, fire and plant hi-vis), plus embroidered name tapes and sewn patches. The display face, Barlow, takes its letterforms from California highway signs and licence plates.",
+      "thesis": "The page is cut from night-crew uniform cloth. Its one move is a strip of retroreflective tape that is the rotation itself: shifts in hi-vis, sleep and naps in silver, and both flare alike when light crosses them. It refuses the category's moon-and-glow dashboard and its split phone hero.",
+      "scene": "A paramedic or firefighter at 06:50 crossing the station apron to the car after a 12-hour night, phone in hand, lit by bay floodlights and passing headlights → dark, single scheme (color-scheme: dark).",
+      "scheme": "dark",
+      "colorStrategy": "Committed",
+      "palette": [
+        { "hex": "#18222F", "role": "navy twill: page ground" },
+        { "hex": "#101822", "role": "deep twill: name-tape nav, sewn patches, footer; also the ink on hi-vis panels (13.9:1)" },
+        { "hex": "#EEF1F3", "role": "lit retroreflective silver: H1 and section lettering, lit tape, QR ID-tag plate (14.2:1 on ground)" },
+        { "hex": "#8F969E", "role": "unlit silver: tape at rest, stitch lines, captions (5.4:1)" },
+        { "hex": "#D3D9DF", "role": "body text on twill (11.3:1)" },
+        { "hex": "#D6F03A", "role": "fluorescent hi-vis yellow: shift segments, action panels, sticky tape edges, focus ring (12.5:1 on ground)" },
+        { "hex": "#FF6B35", "role": "fluorescent orange: caffeine-cutoff stitch and on-call segments only (5.7:1)" }
+      ],
+      "type": {
+        "display": "Barlow Condensed 700 and 800, caps, tracking +0.02em. H1 and section heads are set as uniform back-lettering, the way 'PARAMEDIC' is set across a jacket. Barlow's letterforms come from California highway signs and licence plates, the retroreflective lettering of the night road.",
+        "text": "Atkinson Hyperlegible Next 400, 600 and 400 italic. The Braille Institute designed it to keep letters distinct at low acuity, which is how people read 13 hours into a night shift.",
+        "utility": "Atkinson Hyperlegible Mono 500, only for clock times, durations and prices in tables (19:00–07:00, 25 min, $24.99).",
+        "rationale": "About 93 KB of latin font: Barlow Condensed 2×22 KB, Atkinson Next 3×13 KB, Mono 10 KB. Condensed caps for lettering sewn onto cloth and a legibility face for tired reading. No serif and no italic display."
+      },
+      "materials": [
+        "Navy polycotton twill ground: a 45° twill drawn as a 2px repeating-linear-gradient at 4% contrast, never a photo",
+        "Triple-band tape, 64px: yellow 22% / silver 56% / yellow 22%. The silver carries a 1px micro-bead dot texture. It stays flat: no blur, no glow, no sheen sweep.",
+        "Embroidered name tape: a deep-twill strip with a 1px dashed silver stitch border",
+        "Sewn patches: deep-twill panels with dashed stitched edges, used for the quick answer, the founder and the score",
+        "Hi-vis yoke panels: flat fluorescent-yellow surfaces that carry the action, never more than about 12% of any viewport",
+        "A lit-silver satin care label for the Quick reference"
+      ],
+      "firstViewportDesktop": "0–56: deep-twill name-tape bar. Icon 28px + stitched 'AFTERSHIFT' (Barlow Cond 700, 20px, silver) at x96; links Score · Naps · Caffeine · Rotations · Plans · FAQ (Atkinson 15px) centre-right; hi-vis 'Get it free' tab at x1240–1344. 104–420: H1 'Sleep & recovery built around your shifts.' in Barlow Cond 800 caps, 116px/0.9, lit silver, x96 left-aligned, 3 lines. 448–548: the Rotation Band, a 64px full-bleed tape segmented as an illustrative 36 h: night shift 19:00–07:00 in hi-vis, day sleep 09:30–15:30 in silver, a 25-min nap at 17:45 in silver, next night from 19:00 in hi-vis. Times sit below in Atkinson Mono 13px. A sewn patch at the 19:00 seam reads 'Shift Recovery Score 75 · before tonight · illustrative'. 590–860: on the left (x96–700), the subheadline (Atkinson 20px/1.5, #D3D9DF, 58ch) and a stitched trust line (iPhone · no account · no ads · 0 third-party SDKs → transparency). On the right (x780–1344), a hi-vis yoke panel 564×250 in #101822 ink: price 'FREE — PREMIUM FROM $3.99/MO, $24.99/YR, OR $39.99 LIFETIME' (Barlow Cond 700, 24px), the official black App Store badge at 168px, and a 132px QR on a lit-silver ID-tag plate captioned 'Point your iPhone camera here'.",
+      "firstViewportMobile": "0–52: name tape with icon 24 + 'AFTERSHIFT' (Barlow Cond 700, 17px) at x16; hi-vis 'Get' tab and a Menu button on the right. 72–200: H1 in Barlow Cond 800 caps, 46px/0.9, 3 lines (SLEEP & RECOVERY / BUILT AROUND / YOUR SHIFTS.). 220–310: full-bleed Rotation Band, 52px, compressed to 24 h (shift ends 07:00 → day sleep → nap → 19:00), labels below in Atkinson 13px, a '75' patch sewn at the right end. 326–396: hero.secondary in Atkinson 17px. 412–566: full-width hi-vis panel (358px) with the price line (Barlow Cond 700, 19px caps) and the official badge at 156px; no QR. 586–844: the quick-answer patch begins (deep twill, stitched edge, H2 'AfterShift in one paragraph').",
+      "conversion": "The Smart App Banner meta stays in the head. The official Apple badge (black artwork, never altered) always sits on a flat hi-vis yoke panel with clear space at least the badge's height. The price statement from price.value is set on the same panel. On desktop (≥900px) the QR (assets/qr/aftershift.svg) is printed on a lit-silver ID-tag plate stitched to the panel. Sticky bar: once the hero panel leaves view, a 60px triple-band tape slides up from the bottom edge. Its deep-twill centre carries the icon, 'AfterShift · Free' and the badge at 120px, with yellow edges top and bottom. The Plans rows repeat the badge, and the closing yoke panel repeats badge, QR and price. The nav's 'Get it free' tab goes to app_store_url.",
+      "visitorPath": [
+        "Name-tape nav: stitched wordmark, six section links, hi-vis 'Get it free' tab",
+        "Hero: reflective-lettering H1; Rotation Band signature (illustrative 36 h of shift, day sleep, nap and next shift, with the sewn score patch); hero.subheadline; hi-vis yoke panel with price, badge and QR; stitched trust line",
+        "Quick answer: a deep-twill sewn patch with an H2 and quick_answer in Atkinson 19px (speakable)",
+        "Quick reference: the satin care label. The ai-canonical <details> is folded at the patch's lower edge with the summary 'Care label: AfterShift in one screen'; its content is in the HTML for crawlers.",
+        "Naps count here (value_points 1 + FAQ 'Why naps count'): a close-up strip of one recovery window. Core sleep, a 20-min nap and a 90-min nap, all in silver, light in turn. Copy covers the methodology's 20 / 90 / 45-min nuance and links to /apps/aftershift/methodology/.",
+        "The Shift Recovery Score (feature 1 + FAQ): four short tape strips sewn into one patch (sleep quality, continuity, nap contribution, proximity to next shift), each with its one-line definition, plus the line 'informational, not a diagnosis'",
+        "Screenshots: six phone frames (navy-titanium CSS bezel) in a scroll-snap row on deep twill, front-matter captions in Atkinson 15px, hi-vis previous/next tabs",
+        "Caffeine timed to your next shift (value_points 3 + feature 4): one band with an orange stitch at the cutoff relative to the next shift, and the FAQ copy on rotating to nights versus a recovery day",
+        "Every rotation, sewn the same way (feature 'Calendar shift import' + FAQ patterns): six factual pattern strips (DuPont 28-day, Pitman 2-2-3, 4-on-4-off, 12-hour, swing, on-call), work days in hi-vis, off days on bare twill",
+        "The rest of the kit (sleep stages in context, fatigue & fragmentation, trends without overwhelm): a two-column definition list, term in Barlow Cond caps and text in Atkinson, no cards",
+        "Made for / Not made for: who_for and who_not_for as two lists under name-tape headings",
+        "Plans: four tape-edged rows (Free; Premium · Monthly; Premium · Annual on hi-vis per highlight: true; Lifetime) with price in Atkinson Mono, summary and features, then plans_footnote and the badge",
+        "Nothing reflects back (privacy): the transparency record as a spec list (network calls none, 0 third-party SDKs, analytics none, Calendar read-only, HealthKit read sleep, your iCloud only if enabled), linking to /transparency/#aftershift, the privacy policy and support",
+        "Why AfterShift exists: show_body prose at 66ch, then the founder patch (Lagerland Apps, Independent Apple studio · Finland, bio, four signals, response time, support email, methodology link)",
+        "FAQ: 18 <details> rows separated by unlit-silver stitch lines; questions in Atkinson 600, sentence case",
+        "Compare and read: the OffShift and Shift Worker alternatives, the methodology page, the journal post 'Building a sleep app for nurses, pilots…' and /for/shift-workers/, plus an honest pointer to Observa for steady 9-to-5 sleepers",
+        "Closing hi-vis yoke: the tagline 'The shift-worker sleep app where naps count as real recovery.' with badge, QR and price",
+        "Maker line stitched on deep twill (Built by Lagerland Apps · updated 3 Apr 2026 · first released 1 Jan 2026), then the shared 'A Lagerland app' strip"
+      ],
+      "navigation": "A deep-twill name-tape bar that does not stick. It holds the stitched AFTERSHIFT wordmark (microsite home), six in-page links in Atkinson 15px (Score, Naps, Caffeine, Rotations, Plans, FAQ) and a hi-vis 'Get it free' tab to the App Store. Under 900px the links fold into a 'Menu' button. It drops a deep-twill sheet of links in Barlow Cond 700 caps 30px, divided by 1px unlit-silver stitch lines. A 4px hi-vis bar under a label marks the current section. Focus everywhere is a 3px hi-vis outline with a 2px navy offset.",
+      "signatureInteraction": "Headlight Pass. Each tape band is a row of real <span> segments (shift, sleep, nap, cutoff) with text labels beneath. When a band first enters the viewport (IntersectionObserver), its silver segments switch from unlit #8F969E to lit #EEF1F3 one after another, left to right, over about 900 ms, like a passing car's lights. Naps switch exactly like core sleep. On pointer devices, hovering or focusing a segment lights it again and shows its time in a sewn tooltip. There is no glow, blur or sheen: retroreflection is a flat value change plus the bead texture brightening. No-JS: every segment renders lit and every label is printed text. Reduced motion: everything is lit on load with no sequence, and hover changes the value only.",
+      "motionGrammar": "One verb: light passes. Band segments step from dull to lit in sequence (900 ms per band, linear, once). The sticky tape slides up in 200 ms ease-out, and the menu sheet drops in 160 ms. Nothing fades in, nothing parallaxes, and headings never move. The screenshot row scrolls natively with scroll-snap.",
+      "readModeVariant": "The privacy, support and methodology pages and the OffShift and Shift Worker alternatives keep the name-tape nav and the twill ground. The masthead is a short band: the page title in Barlow Cond 800 caps 56px lit silver over one full-bleed tape seam with no timeline segments. Reading column: Atkinson Next 400, 18px/1.65, #D3D9DF on #18222F, 66ch. Comparisons become two-column ruled tables, with the AfterShift column headed by a hi-vis tab and the competitor's by deep twill. Honest trade-offs ('If you live on your Watch, this is OffShift's territory') sit in stitched deep-twill patches. Support puts the email on a lit-silver ID-tag plate with the response-time line. Methodology sets its four inputs as four tape strips. Each page ends with a slim hi-vis panel holding badge, price and a link back to /apps/aftershift/.",
+      "assetsNeeded": "None. Tape, twill, stitches and patches are CSS or inline SVG. It uses the icon, the six screenshots, the QR and the OG card, all of which exist.",
+      "risk": "Navy with fluorescent yellow sits close to the 'dark + one neon accent' rut and to emergency-service livery. It holds only if the yellow stays flat fabric (panels and tape) and never becomes glowing lines, and if no Battenburg checks, insignia or service words (PARAMEDIC, FIRE) appear. Nurses and pilots don't wear reflective tape, so the world speaks most directly to medics, fire and plant crews. Large hi-vis areas are bright for someone heading to day sleep, so yellow must stay under about 12% of any viewport.",
+      "memoryTest": "The sleep-app page made of uniform cloth: a strip of reflective tape ran across it, and when the light passed, the naps lit up exactly like the main sleep."
+    },
+    {
+      "id": "b",
+      "label": "The Breakroom Rota",
+      "kicker": "IMPECCABLE’S PICK",
+      "sourceIndex": 1,
+      "lineage": "The ward or station duty rota. An A3 sheet typed in a utilitarian grotesk, run off the office photocopier and pinned to the breakroom corkboard. It has an admin header (period, issued, approved), a grid of staff by days filled with D/E/N/LD/OFF codes, a key of codes and notes at the foot, plus a highlighter stripe along your own row and biro amendments. Related: the named crew-rotation charts (DuPont, Pitman 2-2-3).",
+      "thesis": "The page is the rota sheet plus the rows AfterShift adds under your shifts: sleep, naps, last coffee, and a highlighted Shift Recovery Score before every block. The worker's own schedule is visibly the baseline. It refuses the category's moon-and-score dashboard and its phone-on-the-right hero.",
+      "scene": "A nurse or medic at 18:40 before night handover, reading the new rota pinned to the breakroom corkboard under a cool fluorescent tube → light, single scheme (color-scheme: light).",
+      "scheme": "light",
+      "colorStrategy": "Restrained",
+      "palette": [
+        { "hex": "#F5F6F1", "role": "photocopy paper: page ground (cool white, not cream)" },
+        { "hex": "#151715", "role": "toner black: text, heavy grid rules, shift cells as a 12% tint (16.6:1)" },
+        { "hex": "#4D524C", "role": "toner grey: secondary text, captions (7.4:1)" },
+        { "hex": "#7A7F78", "role": "rule grey: inner grid rules and cell dividers (3.8:1 non-text)" },
+        { "hex": "#F6EE5A", "role": "yellow highlighter: your row, the SCORE row, current sheet, sticky bar; behind ink only (14.8:1)" },
+        { "hex": "#FFA3D1", "role": "pink highlighter: nap cells only, behind ink (9.8:1)" },
+        { "hex": "#1F3BA0", "role": "biro blue: links, handwritten notes, focus ring (8.8:1)" }
+      ],
+      "type": {
+        "display": "Archivo variable (wdth 62–125, wght 400–900). The title block is set at wdth 112 / 800, cell codes (N, OFF, SRS) at wdth 62 / 700, and headings at wdth 100 / 700. Omnibus-Type drew Archivo for tables and data-dense print, so one family covers a rota's typed header and its cramped day cells, as the office template does.",
+        "text": "Archivo variable at wdth 100, weights 400 and 600, 18px, with tabular figures for every time (19:00–07:00).",
+        "utility": "Reenie Beanie 400, a quick biro scrawl, for at most four margin notes. Each repeats real copy (for example 'naps count here'); no content exists only in handwriting.",
+        "rationale": "About 119 KB of latin font: Archivo full variable 90 KB + Reenie Beanie 28 KB. A rota is typed, photocopied and corrected by hand, so the page uses one data grotesk with a width axis and one biro, nothing else."
+      },
+      "materials": [
+        "Photocopy paper, full-bleed: the page is the sheet",
+        "Toner grid: 2px toner outer rules, 1px rule-grey inner rules, shift cells shaded with a 12% toner tint",
+        "Highlighter strokes: yellow and pink bands behind ink with slightly ragged ends (SVG mask, multiply blend)",
+        "Biro: 1.5px blue hand-drawn SVG circles, arrows and underlines, with Reenie Beanie notes",
+        "Ruled admin boxes (Price, Install, Issued), drawn like the period/approved box of a real rota",
+        "Sheet headers: each group of sections opens with a ruled header row (Sheet n of 4 · title · issued date)"
+      ],
+      "firstViewportDesktop": "Full-bleed paper. 0–48: sheet strip with icon 24 + 'AfterShift' (Archivo wdth 112/800, 18px) at x96, the sheet index 'Rota · Key · Rates · Notes' (Archivo 500, 15px) centre-right with 'Rota' under a yellow highlighter stroke, and a 'Download' link in biro blue. 72–340: ruled title block, 2px toner frame from x96 to x1344. Left cell (x96–1000): H1 'Sleep & recovery built around your shifts.' in Archivo wdth 112/800, 64px/1.0, 3 lines, with hero.subheadline below at 19px/1.5 (60ch). Right admin cell (x1000–1344), ruled into rows. 'Price': 'Free — Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime'. 'Install': official App Store badge at 156px + a 104px QR captioned 'Scan with your iPhone'. 'Issued': 3 Apr 2026. 360–860: the completed rota. Pattern tabs (4-on-4-off · Pitman 2-2-3 · DuPont · 12-hour · On-call) in Archivo wdth 75/600. Below them a <table> with a 200px row-label column and 8 day columns (Day 1–8: N N N N OFF OFF OFF OFF). Rows: SHIFT (shaded 19–07 cells), SLEEP (09:30–15:30), NAP (pink cells, a 25-min nap before each night), LAST COFFEE, and SHIFT RECOVERY SCORE (a yellow-highlighted row with a value before each shift). The caption reads 'Illustrative block: values modelled on the app's own screens'. At the score row's right end, a biro note 'scored against your NEXT shift' with a hand-drawn arrow.",
+      "firstViewportMobile": "0–44: sheet strip with icon + 'AfterShift' on the left and a 'Sheets' button on the right. 60–232: title block in a 2px toner frame inset 16px: H1 in Archivo wdth 100/800, 40px/1.0, 3 lines, then the subheadline at 16px over 4 lines. 244–376: ruled admin box with the price line (15px), the official badge at 156px and 'Issued 3 Apr 2026'; no QR. 392–844: the pattern tabs as a horizontally scrolling row, then the rota printed as a personal sheet. Days run down (rows Day 1–8) under four columns: SHIFT 64px · SLEEP 104px · NAP 86px · SCORE 72px, with the SCORE column under yellow highlighter. The first four days are visible, with the 'Illustrative block' caption below.",
+      "conversion": "The Smart App Banner meta stays in the head. The badge (official black artwork) sits in the 'Install' row of the rota's admin box, the same kind of ruled form cell a real rota uses for period and approval. On desktop the QR sits beside it ('Scan with your iPhone'), and the 'Price' row holds the price statement from price.value. Sticky bar: once the admin box leaves view, a 56px paper strip pins to the bottom under a 2px toner rule. A yellow highlighter band sits behind 'AfterShift · Free — Premium from $3.99/mo', next to the badge at 120px. The Rates sheet ends with the badge under the plan table. The Notes sheet ends with a second admin box (badge, QR, price, issued dates).",
+      "visitorPath": [
+        "Sheet strip nav: wordmark, sheet index (Rota · Key · Rates · Notes), Download link",
+        "Sheet 1, Rota: ruled title block (H1, subheadline, admin box with price, badge, QR and issued date)",
+        "The completed rota (signature): pattern tabs and a table of SHIFT / SLEEP / NAP / LAST COFFEE / SHIFT RECOVERY SCORE, with the illustrative label and the biro note",
+        "'Note to all staff': a ruled box directly under the grid holding quick_answer (speakable) at 19px. Beside it on desktop (below on mobile) is the 'Sheet summary' box: the Quick reference ai-canonical <details>, crawlable.",
+        "Sheet foot: trust row (iPhone · No account · No ads · 0 third-party SDKs, linking to /transparency/#aftershift) + 'Sheet 1 of 4 · Issued 3 Apr 2026'",
+        "Sheet 2, Key: value_points as four 'Standing rules', each a bold statement and one line, no cards",
+        "The Key: features as code entries. SRS, Shift Recovery Score, with its four inputs and a methodology link; SLP, sleep stages in context; FRG, fatigue & fragmentation; CAF, smart caffeine timing; IMP, calendar shift import; TRD, trends. Each code sits in a toner-framed cell, the term in Archivo 700, the definition at 18px.",
+        "Patterns on file: a ruled table defining DuPont, Pitman 2-2-3, 4-on-4-off, 12-hour, swing and on-call from the FAQ, each drawn as a one-line code strip",
+        "Attachments: six screenshots pinned in a row (6-up at 200px on desktop, scroll-snap on mobile) in thin toner frames with typed caption slips",
+        "Sheet 3, Rates & terms: a plan table with columns Free / Premium Monthly / Premium Annual (yellow highlighter) / Lifetime and features as rows, then plans_footnote and the badge",
+        "Applies to / Does not apply to: who_for and who_not_for as two ruled lists",
+        "Data handling: the transparency record as a ruled two-column form (network calls, SDKs, analytics, permissions, what leaves the device), linking to transparency, the privacy policy and support",
+        "Sheet 4, Notes: the memo 'Why AfterShift exists.' (show_body prose, 68ch), signed with the founder block (Lagerland Apps, Independent Apple studio · Finland, bio, signals, response time, email, methodology link)",
+        "Queries: 18 FAQ <details> in ruled rows, questions in Archivo 600",
+        "Cross-references: the OffShift and Shift Worker alternatives, methodology, the journal post, /for/shift-workers/, and Observa for steady 9-to-5 sleepers",
+        "Closing admin box: price, badge, QR and the maker line (Issued by Lagerland Apps · updated 3 Apr 2026 · first issued 1 Jan 2026), then the shared 'A Lagerland app' strip"
+      ],
+      "navigation": "The sheet index in the top strip (Rota · Key · Rates · Notes) links to the four sheets. On scroll, a 40px sticky strip keeps the index visible with the current sheet under a yellow highlighter stroke (IntersectionObserver; without JS the strip stays static at the top). On mobile, a 'Sheets' button opens a ruled list of the four sheets and their sub-entries (Score, Naps, Caffeine, Patterns, Plans, Privacy, FAQ). Links are biro blue with a 1px underline. The focus ring is 3px biro blue with a 2px paper offset.",
+      "signatureInteraction": "Your Rota, Completed. The hero is a real <table>. The pattern tabs (4-on-4-off, Pitman 2-2-3, DuPont, 12-hour, on-call) re-letter the SHIFT row from inline JSON holding the real pattern definitions. They also move the NAP and SCORE marks so a score always sits before the first shift of each block (illustrative placement, labelled). When the table enters view, a yellow highlighter stroke draws once along the SCORE row (600 ms, SVG mask). Tapping a day column highlights it and opens the matching screenshot slip beside the table. No-JS: the 4-on-4-off table prints complete with the SCORE row highlighted, and the other patterns print statically under 'Patterns on file'. Reduced motion: the highlight is static and tabs swap instantly.",
+      "motionGrammar": "Pen and highlighter only. Each highlighted element gets one highlighter stroke when it first enters view (600 ms, ease-out, left to right), and each biro note draws its stroke once (500 ms). Tab swaps re-letter cells instantly, and sticky strips slide in 180 ms. No fades on body text, no parallax.",
+      "readModeVariant": "The privacy, support and methodology pages and the alternatives pages are single typed memos on the same paper. Each has the sheet strip nav (with 'Back to the rota') and a ruled title block: the title in Archivo wdth 112/800 52px, and an admin box with the issued date, the contact email and, on alternatives, the badge and price. Reading column: Archivo 400, 18px/1.6, 68ch, toner on paper. Comparisons become ruled rota-style tables with the AfterShift column under yellow highlighter. Honest trade-offs sit in boxes ruled all round in 1px biro blue. Support has a 'Queries to' row with the email and response time. Methodology sets its four inputs as a Key.",
+      "assetsNeeded": "None. The grid, highlighter and biro marks are CSS or inline SVG. It uses the icon, the six screenshots and the QR, all of which exist.",
+      "risk": "Familiar. A day grid is the category's own calendar interface (AfterShift's Roster tab is one) and the most obvious 'shift' image, so the page can read as a spreadsheet or a scheduling app instead of a sleep app. The illustrative grid values must be labelled every time or they read as claims. The handwriting turns cute past four notes. Turning the sheet to days-down on a phone has to stay the same sheet, not become a second layout.",
+      "memoryTest": "It looked like the rota on the breakroom wall, and under my shifts it had filled in when I'd sleep, a nap, and a highlighted recovery score before every block."
+    },
+    {
+      "id": "c",
+      "label": "Follow the Line",
+      "kicker": "SECOND ROLL",
+      "sourceIndex": 4,
+      "lineage": "Hospital and plant wayfinding: coloured vinyl floor lines that peel off at junctions ('follow the blue line'), dark hanging sign blades with reversed text and arrow pictograms, and white enamel directory plaques. Set in Signika, a face drawn for wayfinding and signage, with its Negative cut for light-on-dark panels.",
+      "thesis": "Four floor lines, one for each of the Shift Recovery Score's four inputs, run the length of the page. Each peels off to its own station, and all four meet again at the score, so the method is something you walk rather than read. It refuses the category's stacked feature cards and phone-on-the-right hero.",
+      "scene": "A nurse or plant operator walking a long corridor between wards or bays at 03:10 under cool ceiling panels, speckled grey-green lino underfoot, coloured lines running ahead → light, single scheme (color-scheme: light).",
+      "scheme": "light",
+      "colorStrategy": "Full palette",
+      "palette": [
+        { "hex": "#E3E7E1", "role": "speckled lino: page ground" },
+        { "hex": "#17201E", "role": "ink: body text and headings on lino (13.3:1); focus ring on lino" },
+        { "hex": "#10423B", "role": "sign-blade green: nav blade, hero sign, section signs, sticky blade; text #F4F7F5 on it (10.4:1)" },
+        { "hex": "#1D5BC9", "role": "blue tape: sleep quality line (white label 5.7:1)" },
+        { "hex": "#178048", "role": "green tape: continuity line (white label 4.6:1)" },
+        { "hex": "#F2C230", "role": "yellow tape: nap contribution line, ink label (9.9:1), 1px #8C6D00 wear edge (3.9:1 on lino); focus ring on blades" },
+        { "hex": "#C2412A", "role": "red tape: proximity-to-next-shift line (white label 4.8:1)" }
+      ],
+      "type": {
+        "display": "Signika Negative 600 and 700, for every reversed word on the dark sign blades (nav, H1 sign, section signs). The Negative cut is thinned so white letters on a dark panel don't bloom, which is exactly what a back-lit corridor sign needs.",
+        "text": "Signika 400, 600 and 700. Anna Giedryś drew it for wayfinding, where information has to read at a glance. It sets body text, plaques, tabular times, and 13px caps labels printed on the tapes.",
+        "utility": "Signika 700 caps for the tape labels. There is no third family; a wayfinding programme runs on one.",
+        "rationale": "About 119 KB of latin font: Signika 400/600/700 + Signika Negative 600/700. One wayfinding family split by polarity, nothing decorative."
+      },
+      "materials": [
+        "Speckled vinyl lino ground: sparse 2–3px flecks drawn with CSS radial-gradients, never a photo",
+        "Floor tapes, 50px wide, in four colours: mitred 45° corners where they turn, a 1px darker wear edge, caps labels printed on the tape",
+        "Hanging sign blades: deep-green panels with a 4px radius, hung on 2px ink rods, white Signika Negative text and inline-SVG arrow pictograms",
+        "White enamel directory plaques (#F4F7F5, 1px ink frame) for the action, the quick answer, the privacy record and the plans",
+        "Floor decals: circular station markers where a tape ends"
+      ],
+      "firstViewportDesktop": "0–60: full-bleed green ceiling blade with icon 28 + 'AfterShift' (Signika Negative 700, 22px) at x96, and directory links Score · Sleep · Naps · Caffeine · Rotations · Plans · Help, each followed by a small SVG arrow (Signika Negative 600, 15px). 92–330: the hero sign, a green blade from x96 to x1344, 238px tall, hung on two rods from the ceiling blade. H1 'Sleep & recovery built around your shifts.' in Signika Negative 700, 68px/1.02, white, 2 lines, with a 72px SVG down-arrow at the right end. 362–570, on lino: on the left (x96–820), hero.subheadline in Signika 400 21px/1.5 (60ch) and hero.secondary at 17px. On the right (x880–1344), the white enamel directory plaque: 'Get AfterShift' (Signika 700, 22px), the price line from price.value, the official App Store badge at 168px, and a 120px QR with 'Scan with your iPhone camera'. 600–900: the floor begins. Four 50px tapes (blue, green, yellow, red) enter from the left edge, run under the plaque and turn down with mitred corners at x200–420. Each carries its caps label: SLEEP QUALITY · CONTINUITY · NAP CONTRIBUTION · NEXT-SHIFT PROXIMITY. A floor decal at the bend reads 'Follow the lines to the Shift Recovery Score'.",
+      "firstViewportMobile": "0–52: ceiling blade with icon 24 + 'AfterShift' on the left and a 'Directory' button with an SVG arrow on the right. 64–254: full-bleed hero sign blade: H1 in Signika Negative 700, 36px/1.08, white, 3 lines, with a 40px down-arrow bottom right. 270–360: hero.secondary in Signika 17px. 372–556: enamel plaque inset 16px with 'Get AfterShift', the price line (15px) and the official badge at 156px; no QR. 572–844: the four tapes enter as a 36px bundle along the left edge (four 6px stripes with 3px gaps) and run down. Beside them at x52, the 'Information' plaque with the quick answer begins.",
+      "conversion": "The Smart App Banner meta stays in the head. The official badge sits on a white enamel directory plaque (dark badge on white, clear space at least the badge's height), with the price statement from price.value. On screens 900px and wider, the QR sits on the same plaque with 'Scan with your iPhone camera'. Sticky bar: once the hero plaque leaves view, a 56px green sign blade slides in at the bottom with the icon, 'AfterShift · Free — Premium from $3.99/mo' in Signika Negative, and the badge at 120px. The Score junction and the exit plaque each repeat the badge (plus the QR on desktop). The ceiling blade's 'Get it' entry goes to app_store_url.",
+      "visitorPath": [
+        "Ceiling-blade nav: wordmark, directory links with arrows, 'Get it'",
+        "Hero sign (H1), subheadline, enamel action plaque (price, badge, QR), and the four tapes setting off",
+        "Information plaque: quick_answer (speakable) and a trust row (iPhone · no account · no ads · 0 third-party SDKs, linking to transparency)",
+        "Directory plaque: the Quick reference ai-canonical <details>, 'AfterShift in one screen', crawlable",
+        "Blue station, sleep quality: the tape peels right under the sign blade 'Sleep, read against your rotation', with the 'Sleep stages in context' feature and its 'deep sleep at 11 a.m.' copy, plus a screenshot",
+        "Green station, continuity: the fatigue & fragmentation feature, the methodology's continuity text and the trends screenshot",
+        "Yellow station, nap contribution: value point 'Naps count here', the 20 / 90 / 45-min nap lengths from the methodology, and the nap and plan screenshot",
+        "Red station, next-shift proximity: recovery decay, the caffeine-timing value point and feature, calendar shift import, and a plaque table of rotation patterns (DuPont, Pitman 2-2-3, 4-on-4-off, 12-hour, swing, on-call), with the caffeine and roster screenshots",
+        "Junction, Shift Recovery Score: all four tapes turn in and end at one floor decal. A plaque gives the score's definition (0–100, forward-looking, informational, not a diagnosis), the recovery screenshot and a methodology link, beside a badge plaque",
+        "Reception, just past the junction: plans as four enamel price plaques in a row, with Annual marked by a yellow tape strip (highlight: true), then plans_footnote",
+        "Who this corridor is for / not for: who_for and who_not_for as two directory lists",
+        "Nothing leaves this building (privacy): the transparency record on a plaque (network calls none, 0 SDKs, analytics none, Calendar read-only, HealthKit read sleep, your iCloud only if enabled), linking to transparency, the privacy policy and support",
+        "Why AfterShift exists: show_body prose, then the founder plaque (Lagerland Apps, Finland, bio, signals, response time, email, methodology link)",
+        "Help desk: 18 FAQ <details> as directory rows whose arrow pictograms turn on open",
+        "Other routes: the OffShift and Shift Worker alternatives, methodology, the journal post, /for/shift-workers/, and Observa for 9-to-5 sleepers",
+        "Exit plaque: tagline, badge, QR and price, plus the maker line (Built by Lagerland Apps · updated 3 Apr 2026 · first released 1 Jan 2026), then the shared 'A Lagerland app' strip"
+      ],
+      "navigation": "A ceiling sign blade across the top, not sticky. Its directory entries carry inline-SVG arrows: a down arrow for anchors on this page, a diagonal arrow for links that leave it (the App Store). On mobile, the 'Directory' button drops a green blade listing every station, each with a 12px swatch of its tape colour beside the name; colour is never the only cue. The only sticky element is the download blade. Focus is a 3px #F2C230 outline with a 2px green offset on blades, and a 3px ink outline on lino.",
+      "signatureInteraction": "Follow the Line. Each section has real tape elements: a vertical bundle in a left gutter (desktop x200–420, mobile x16–52). At each station, one tape turns 90° with a mitred corner and runs under that station's sign blade. Tape segments draw downward at walking pace as you scroll, using a CSS scroll-driven animation (animation-timeline: view(), scaleY 0→1) with an IntersectionObserver class as fallback. Hovering or focusing a station label dims the other three tapes to 30%, so one input's route reads on its own. No-JS: every tape is fully drawn. Reduced motion: tapes are drawn with no scroll link, and hover only dims.",
+      "motionGrammar": "Lines advance with the walker: tapes draw with scroll position, never on a timer. Sign blades and text never move. The Directory blade drops in 160 ms, the sticky blade slides in 200 ms, and FAQ arrows turn 90° in 120 ms.",
+      "readModeVariant": "The privacy, support, methodology and alternatives pages keep the ceiling blade and the lino, and each title hangs on a sign blade (Signika Negative 700, 48px). One tape runs down the left of the reading column as a route cue: blue for privacy, green for support, red for alternatives, all four for methodology (whose sections are the four inputs). Reading column: Signika 400, 18px/1.62, ink on lino, 66ch. Comparison tables become directory plaques with ruled rows, the AfterShift column headed by a yellow tape strip. Honest trade-offs sit on white plaques with a 1px ink frame. Each page ends at an exit plaque with badge, price and a 'Back to AfterShift' arrow.",
+      "assetsNeeded": "None. Tapes, blades, plaques, arrows and lino flecks are CSS or inline SVG. It uses the icon, the six screenshots and the QR, all of which exist.",
+      "risk": "Wayfinding signage can read as a real hospital. It must avoid NHS-like blue and Frutiger, any real hospital pictogram set, and the green running-man exit sign. Nurses will recognise it at once; pilots and fire crews see it less. The tape bundle's geometry across breakpoints is the hardest build of the three. At 390px the 36px gutter narrows the reading column to about 318px. Four saturated colours can tip into a children's map if the lino and blades don't hold them down.",
+      "memoryTest": "Four coloured floor lines ran down the page like a hospital corridor; each turned off to explain one part of the score, and they all met at the Shift Recovery Score."
+    }
+  ],
+  "canon": "A dark navy sleep-app page: split hero with the headline left and an iPhone showing the 75 Shift Recovery Score on the right, an App Store badge and QR row, four icon feature cards (naps, rotations, caffeine, privacy), a pricing table and an FAQ accordion. The category standard played straight.",
+  "notes": "Degraded roll: the roll service was offline, so there were no catalog challengers; the network was not retried, as instructed. Seed key bd9034af, assigned index 5; re-roll 1 gave index 4 (distinct on the first try, so no further re-rolls). A = candidate 5 (THE ROLL), B = candidate 1 (IMPECCABLE’S PICK, my top-ranked), C = candidate 4 (SECOND ROLL). The three differ in world (uniform cloth / paper rota / corridor floor), topology (horizontal tape bands / stacked document sheets around a data grid / one vertical route with stations) and light (dark Committed / light Restrained / light Full palette). Every face was verified on Fontsource with npm view and npm pack: barlow-condensed, atkinson-hyperlegible-next, atkinson-hyperlegible-mono, archivo (variable wdth+wght via @fontsource-variable/archivo), reenie-beanie, signika, signika-negative. Each style stays at or under 120 KB of latin font. Findings for the build: (1) /apps/aftershift/methodology/ is a fourth sub-page and needs the Read variant too. (2) /alternatives/offshift/ still calls a lifetime purchase 'OffShift's edge' even though AfterShift now sells $39.99 lifetime; the copy needs a fix. (3) The incumbent sticky bar prints 'Free · Pro optional' for freemium, but AfterShift's tier is called Premium. (4) The alt text for screenshot 1 says 72/100, while the real screens show a Shift Recovery Score of 75 and a Sleep Score of 80, and screenshot order does not match the captions (2 = recovery window and scores, 3 = plan and nap, 4 = caffeine, 5 = trends, 6 = roster). Every illustrative figure in the styles uses the values on the real screens and is labelled illustrative. (5) There is no how_it_works block, so no HowTo schema is emitted. The methodology's four inputs are the natural source if the owner wants one; that is a content task. (6) Ratings count is 5, so no stars appear anywhere."
+}

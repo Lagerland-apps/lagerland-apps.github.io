@@ -1,0 +1,98 @@
+[
+ {
+  "surface": "mockly (vs appmeta)",
+  "style": "c",
+  "severity": "blocker",
+  "issue": "Thumb-Index Leaflet repeats appmeta-c 'The Fifty-Language Leaflet' for the sibling App Store Connect Mac tool. It has the same multilingual instruction-leaflet world: language-code tabs as nav, a thumb index on the right edge, fold creases and a model/action box. It has the same Noto Sans variable system (Noto Sans Display + Noto Sans) and the same deepened app violet (#4A2FC4 vs #4F3FCC). Its violet cover drench also lands on the screenshot-tool category default (violet-gradient hero).",
+  "fix": "Keep the leaflet on appmeta-c, where 50 locales of text side by side is literally a leaflet. Replace mockly-c with mockly candidate #4, the salon hang with tombstone labels: every export hung at true relative size on one wall, each with a museum label giving device · locale · slot · px. No other surface uses an exhibition/architecture world, and it takes Mockly off three paper styles.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "mockly (vs appmeta)",
+  "style": "b",
+  "severity": "major",
+  "issue": "OK to Upload and appmeta-b 'Passed for Press' are both prepress proofs for two sibling Mac tools. In both, the download lives in an 'OK to …' sign-off box, with proof-query marks in the margin, and both are IMPECCABLE'S PICK. If both win, the two microsites read as one print-shop series.",
+  "fix": "Keep proof marks and the sign-off box on appmeta-b, because marked text changes are AppMeta's mechanism. mockly-b keeps imposition, crop marks, the colour bar and ganged trims. It moves the action into the press-run dispatch docket on the gripper edge (no 'OK to upload' approval box, no signature line) and drops the magenta proof-query circles. Caveats go into the slug lines.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "allpaid (vs appmeta)",
+  "style": "c",
+  "severity": "minor",
+  "issue": "Security Tint Envelope is navy with a bank security pattern, which leans on the category reading 'finance means blue'. Courier Prime is also the data face of both allpaid-c and appmeta-a.",
+  "fix": "Make the paper windows and enclosures the major surfaces, so navy is the shadowed interior rather than the page. Keep coral as the only accent and never add lock or shield imagery. Move the statement lines to another typewriter face (e.g. Cutive Mono); appmeta-a keeps Courier Prime for its comb-field entries.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "appmeta, appmeta-pulse",
+  "style": "b, b",
+  "severity": "minor",
+  "issue": "The AppMeta pair's two picks are both press-room print: appmeta-b's blueline galley proof and appmeta-pulse-b's newspaper markets page. Both are rule-heavy newsprint/proof stocks with one marking colour. If both win, the two AppMeta microsites read as one publisher.",
+  "fix": "No change is needed unless both are chosen. If they are, steer AppMeta Pulse to its a (recorder chart) or c (scoreboard), which share nothing with AppMeta's three.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "appmeta, wanderwiki, allpaid",
+  "style": "all",
+  "severity": "minor",
+  "issue": "About half the board's styles are printed paper documents, and three surfaces offer only paper. appmeta has a form, a galley and a leaflet; wanderwiki an aerogramme, a tear-off leaf and a facing-page book; allpaid a poster, a planner and an envelope. On those pages the owner's choice is which paper, all light and mostly ruled.",
+  "fix": "In each trio, swap one non-PICK style for a non-paper candidate the surface already ranked. appmeta → #7, the broadcast mixing console (50 channel strips with de-DE/fr-FR scribble strips). wanderwiki → #4, the world-band receiver dial (each station broadcasting in its own language). allpaid → #4, the self-inking PAID date stamp (object/instrument).",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "appmeta",
+  "style": "b",
+  "severity": "major",
+  "issue": "The proof marks are 'hand-coded inline SVG paths' drawn over galley text. That text reflows between 390 and 1440px (19px at 66ch), so absolutely positioned marks drift off their words. Every edit to release notes or fields in front matter would also mean redrawing paths by hand.",
+  "fix": "Anchor each mark to the markup that carries the change. Strike lines are text-decoration on <del>, drawn on with a background-size wipe. Carets and insertion marks are ::before/::after on <ins>. Margin notes are floated <aside> elements tied to their passage. Drive the passages from front matter (before and after strings), so the diff and both states render from data.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "appmeta",
+  "style": "all",
+  "severity": "minor",
+  "issue": "All three cards specify 'FAQ ×16', but the front matter has 15 entries.",
+  "fix": "Loop page.faq. Do not hand-author a sixteenth Q&A to fill the count.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "appmeta",
+  "style": "c",
+  "severity": "minor",
+  "issue": "The read-mode key-facts table says 'account: none'. The transparency row says 'Your own Apple ID with App Store Connect access', and style a already gets this right ('Account: your own ASC API key').",
+  "fix": "Use 'Account: no Lagerland account (your own App Store Connect credentials, kept in Keychain)'.",
+  "lens": "truth-contract"
+ }
+]

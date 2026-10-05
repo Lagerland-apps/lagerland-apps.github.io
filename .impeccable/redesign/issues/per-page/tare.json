@@ -1,0 +1,106 @@
+[
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "pawza (vs mediakit, millrace, chessful, tare)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Thirteen-Pocket File shares its display face, Sofia Sans Extra Condensed (both H1s), with mediakit-a. Its Sofia Sans text puts the family in a third surface (mediakit-a, pawza-a, soon-b). Its palette (cobalt #2347A6 drench + white paper + yellow flag) is the board's most repeated triad. millrace-b has #23408E + white cards + yellow tier, chessful-c has #2338B0 + paper white + gold, and tare-a has #2172B8 + chalk white + yellow.",
+  "fix": "Set pawza-a in Anek Latin, unused elsewhere: wdth 75 for the index tabs and H1, wdth 100 for text. Re-colour the polypropylene as a translucent red file (~#B5332B, white text 5.6:1), and keep the white paper and the yellow 'To file' flag. tare-a keeps the blue triad, because Signboard Sky is the app's own art.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "tare (vs rightsplit)",
+  "style": "c",
+  "severity": "major",
+  "issue": "Nine Bars, One Chord's claret felt (#34121F) with warm white is rightsplit-c's oxblood leatherette (#3A161F) with white foil: the same dark-red scheme. Its first viewport also repeats tare-a. Both lead with the same demo level (6 / 2 / ? on a top beam and a right sub-beam, clue card '? = 2 2') hung centred on a string, with the pieces waiting on a tray below: tare-a's shelf, tare-c's bars. So c is a recolour and reorder of a.",
+  "fix": "rightsplit-c keeps oxblood, the app's own maroon. Re-felt tare-c in a colour no surface uses, e.g. deep olive (~#33361F); Tare's Evening Stars indigo works only if soon-a is not chosen. Remove the hanging mobile from tare-c's hero. The nine bars on their converging rails become the one playable object across the width, and the level is written as a play-by-colour song line on the song card, solved in notation.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "earnlock, tare",
+  "style": "a, b",
+  "severity": "minor",
+  "issue": "Two non-Japanese apps import Japanese worlds and faces on top of Shogiful's three. earnlock-a is a Japanese vending machine set in M PLUS Rounded with a Japanese marquee gothic. tare-b is a Nikoli puzzle book set in Zen Maru, Zen Kaku and Klee One.",
+  "fix": "Each is fine on its own, since Nikoli is Tare's #1 and the home of sudoku players. If tare-b is chosen, do not also choose earnlock-a. No face used by Shogiful should reappear in either.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "tare",
+  "style": "b,c",
+  "severity": "major",
+  "issue": "On mobile the price box and badge sit at y636 to 790 in both styles, below the visible fold.",
+  "fix": "Style b: reduce the Rules box to a two-line strip and put the lime price box above the Puzzle No. 1 frame. Style c: put the maker's plate between the H1 and the instrument. Either way, the badge's bottom edge stays at y560 or above.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "tare",
+  "style": "a,c",
+  "severity": "major",
+  "issue": "Unbounded looping sway. Any beam carrying the unsolved '?' sways for as long as the puzzle stays unsolved (a: ±3° on a 3.2s loop; c: sways until solved). That is continuous automatic motion beside text (WCAG 2.2.2). Reduced motion is handled, but other visitors have no way to stop it.",
+  "fix": "Sway for two cycles (about 6s), then hold level and show the dashed 'won't settle until you know the ?' outline that the reduced-motion path already specifies. Play one more cycle when the beam is hovered or focused. Style c does the same.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "tare",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "All three styles put the official 'Download on the App Store' badge, a sticky download bar and 'Free download' / 'Play Chapter I free' copy in the first viewport (a: shelf at y640-800; b: lime price box; c: maker's plate), all linking to app_store_url id6806255929. Tare is status: upcoming, unlisted and unreleased, so the page claims a live App Store listing that does not exist. head.html also emits the Smart App Banner for it, because the test is only layout == app plus an app_store_url.",
+  "fix": "Gate every App Store element on status: wrap the badge, the sticky bar, the QR, cta_label/cta_subline and the apple-itunes-app meta in {% if page.status == 'live' %}. Before launch, render one plain status line in the world's own type, with no Apple artwork and no 'download' verb, e.g. 'Tare is not on the App Store yet. This page holds its rules, privacy and support.' State the price as 'At launch: 20 levels free · $2.99 unlocks 60 more'. Mock the pre-launch state for the owner, and show the live state only as a toggle.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "tare",
+  "style": "all",
+  "severity": "major",
+  "issue": "The maker/freshness line prints 'version 1.0 · first released 14 Sep 2026' from release.*. The front-matter comment says those dates are placeholders to replace on the real release day, and the app has not shipped, so the page states a release that did not happen.",
+  "fix": "Print 'first released' only when status is live. Before launch, print 'Version 1.0 in preparation · page updated {{ release.last_updated }}'.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "tare",
+  "style": "all",
+  "severity": "major",
+  "issue": "The privacy blocks and hero lines ('no data collected', 'no network code', 'no third-party SDKs') link to /transparency/, but _data/transparency.yml has no tare row (it has 19 rows, all live apps). The link points to no record. Style a admits this ('Tare is not on the record yet'); styles b and c do not.",
+  "fix": "Before build, add a tare row (manifest_source: pending; tracking_domains 0; third_party_sdks 0; network_calls none; data_leaves_device no, all from the front-matter privacy block) and deep-link /transparency/#tare. Until that row exists, the privacy block must say 'Not yet on the transparency record; added at launch' rather than imply a verified entry.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "tare",
+  "style": "a",
+  "severity": "minor",
+  "issue": "The in-game grades are drawn as 'three labelled gold stars' (Hung · Unshaken · Once), including in the hero demo's solve state beside the shelf, badge and price. Gold stars next to an App Store badge read as a rating at a glance.",
+  "fix": "Set grades as words with plain dots, as style c does, or keep the stars inside the solved mobile only and away from the shelf, badge, price and sticky bar.",
+  "lens": "truth-contract"
+ }
+]

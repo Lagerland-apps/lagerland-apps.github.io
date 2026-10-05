@@ -1,0 +1,444 @@
+{
+ "surface": "mockly",
+ "dossier": {
+  "mechanism": "Mockly turns one folder of raw app screenshots into the whole App Store Connect matrix (every device size × each of 39 locales × every slot) on the Mac. Layouts are positioned in percentages, so one layout fits every trim. Device frames are real 3D models rendered locally in Metal, so the preview is the export, byte for byte. Overlaid text is a separate layer, translated in place with your own AI key. The finished files go straight into the right device × locale slots in App Store Connect, with credentials kept in Keychain. It costs $12.99 once, and nothing reaches a Lagerland server.",
+  "audienceScene": "An indie iOS or macOS developer, or a solo ASO marketer, at their Mac in release week. Often it is the evening before submitting a version for review. Simulator captures sit in a folder, App Store Connect is open in Safari with empty screenshot slots for each locale, and there is no designer involved. They arrive from Google ('App Store screenshot maker Mac', 'fastlane frameit alternative', a competitor's name) or from an AI answer. Most are already on the Mac they would install it on. Some find it on their phone and need to get the link to their Mac.",
+  "culturalHome": "The indie Apple developer and ASO scene: the screenshot strip on App Store product pages, studied in competitors' listings; App Store Connect's slots per locale and per device; Apple's device bezels and the HIG; Review Guideline §2.3.3; fastlane snapshot, frameit and deliver; Figma screenshot templates; WWDC and launch-week posts on Mastodon and Bluesky. Before the web, the same job belonged to print production and packaging: one design output at every size and in every language edition, checked before release. That world had imposed proofs with crop marks, multilingual instruction leaflets, the multi-size dressmaking pattern sheet, and shrink-wrapped Mac software with the screenshots printed on the back panel.",
+  "mustProve": "The first viewport has to prove six things. It is a Mac app that makes App Store screenshots (H1 from front matter). One layout becomes every required size and locale, shown as trims at true ratios or as the 39 locales, not just stated. The frames are real 3D, and the preview is the export. Nothing leaves the Mac until you push to Apple. The real price is '$12.99 — one-time purchase' with Family Sharing, against subscription tools. There is a working install path: the official badge opening the listing, a small QR on desktop, and a send-to-Mac path on phones.",
+  "categoryDefault": "The screenshot-SaaS landing page: a violet-to-indigo gradient hero reading 'Create stunning App Store screenshots in minutes', three glossy 3D iPhones floating at angles, a template gallery grid, feature icon cards, three-tier monthly pricing, a logo wall and an FAQ accordion, as on AppLaunchpad, Screenshots.pro, Previewed and Rotato. Mockly's own icon (a violet tile with a tilted phone) and its UI (lavender on a dark indigo editor) sit inside this default.",
+  "predictableOpposite": "Apple-keynote minimalism (a white page, a giant grotesk headline, one centred photoreal device), or the dev-tool terminal or blueprint look (dark ground, mono everywhere, grid lines), or the incumbent's cream editorial page.",
+  "literalReading": "Read literally, 'Mockly' is the device mock-up: a phone tilted on a purple gradient. That is exactly the icon, and also the category default. Only candidate 2, the screenshot run, touches it, and none of the three styles uses it.",
+  "evidence": [
+   "_apps/mockly.md: price.model one-time-purchase, price.value '$12.99 — one-time purchase', schema_price 12.99 USD. Family Sharing for up to six people (FAQ). platforms ['macOS'], status live, category graphics, hero.device mac, jump_nav true, redirect_from /apps/screenflow-studio/. There is no ratings field, so no stars. There are no plan tiers; value_math and plans_footnote carry pricing instead.",
+   "Blocks present: hero (pre_headline, headline, subheadline, cta_label 'Get Mockly'), quick_answer, value_points ×4, how_it_works intro + 6 steps (so HowTo schema), example_insights ×6 (insight gallery), features ×6, screenshots ×7, who_for ×6, who_not_for ×4, alternatives_to ×8, privacy (data none, tracking false, account false, 4 notes, label text), founder (Organization, Finland, 4 signals, response_time), release_notes ×5, faq ×12, related_apps (appmeta, appmeta-pulse), related_journal, show_body markdown. Absent: spotlight, plans, comparison_table, roadmap, training_vocabulary, coach_cta, plateau_disclosure.",
+   "The FAQ size list gives 17 export sizes in 6 device families: iPhone 6.9/6.7/6.5/5.5″; iPad 13/12.9/11″; Mac 2880×1800, 2560×1600, 1440×900 and 1280×800; Watch 410×502, 396×484 and 368×448; Apple TV 1920×1080 and 3840×2160; visionOS 3840×2160. All 39 locales are listed by name, with Arabic and Hebrew handled right-to-left.",
+   "Screenshots: 8 files, of which 7 are images (11.png is ASCII text). The UI is a dark indigo editor with a lavender accent in SF Pro. 1.png (1200×750) is a real Mockly Mac export, 'Beautiful 3D device renders', showing iPhone, iPad and Watch Ultra in 3D. 2.png is the GymLoggerX project: 11 localizations, an 'iPhone 6.9″ for App Store' set of 6, device order back → front. 3.png is the TheWait project with 39 localizations and four portrait purple exports on the canvas; the inspector reads rotation X −16.641, Y 31.547, scale 1.914, with 'Link a folder of images'. 4.png is the export sheet (Artboards All (5), PNG, 2 880 × 1 800 px, 'Export 5 Artboards'). 5.png is Upload to App Store Connect (display type Mac 2 880×1 800, '5 screenshots for 1 language', API Credentials). 6.png shows 'Train smarter. Log faster.' translated into EN DE ES IT PT FR FI SV DA NB. 7.png is the inspector at X −27.295, Y 34.326, scale 2.164, device style 'Realistic'.",
+   "Caption drift: the front-matter captions for screenshots 4–7 describe bulk import, render preview, ASC upload and the project library. The images actually show export, upload, text localisation and the device inspector.",
+   "Icon: a violet-to-indigo tile with a tilted black iPhone showing coloured App Store tiles. It is the category default in miniature; its violet is the only colour worth carrying.",
+   "_data/transparency.yml (mockly): 0 third-party SDKs, analytics none, collected_data []. Network calls go only to the App Store Connect API when you upload, and to AI translation only when you request it. Account: an optional Apple ID with ASC access, needed only to upload. Permission: user-selected files. Notes say 'Formerly ScreenFlow Studio'. The privacy policy says 'does not upload your data to external servers', which needs reconciling with the user-initiated ASC upload and bring-your-own-key translation.",
+   "Eight alternatives pages target Mockly: applaunchpad, appmockup, fastlane-frameit, picsew, previewed, rotato, screenshot-studio, screenshots-pro. Each has its own FAQPage JSON-LD and quick_answer and states honest trade-offs ('Rotato for animated video, Mockly for the shipped set'; 'frameit is free and right for CI').",
+   "Journal: why-mac-native-for-app-store-screenshots argues that web tools put NDA screenshots on a vendor server, that Metal rendering is deterministic, that the price is a consequence of the architecture, and gives 234 = 6 sizes × 39 locales. shipping-app-store-screenshots-in-39-languages covers text as an overlay layer, 10–30 hours by hand, RTL, and $19–$49/mo SaaS. Drift: the-case-for-native-screenshot-tooling says '20+ locales'. The screenshot-guidelines post gives 6.9″ as 1320×2868 or 1290×2796 and says only one iPhone size is now required, against front matter's '6.9″ 1290×2868'.",
+   "No testimonials for Mockly in _data/testimonials.yml. app_enrichment: languages [EN]; recommend_when includes 'fastlane screenshots alternative with a proper GUI' and searches for ScreenFlow Studio. 19 apps are live, which matches the founder-signal literal."
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "The imposed press proof",
+   "family": "print production / prepress",
+   "why": "Before the web, one ad or pack design went out at every trim size and every language edition on an imposed press sheet: ganged cells with crop marks, slugs naming each version, a colour bar, and a signed contract proof the press had to match. Anyone who has exported marketing art knows crop marks. It carries the mechanism directly. Each cell is one App Store Connect trim, with a slug for device · locale · slot · px. Multilingual print changes only the black text plate while the colour plates stay put, exactly as Mockly translates the text layer over an unchanged screenshot. The signed proof means the preview is the export, and the 'OK to print' box becomes 'OK to upload' with price and badge."
+  },
+  {
+   "index": 2,
+   "name": "The ten-slot screenshot run",
+   "family": "screen / App Store marketing format (the literal mock-up reading)",
+   "why": "This is the deliverable every visitor has studied in competitors' listings: portrait panels, each a caption over a framed device on a colour field. It carries the mechanism by building the page as a Mockly export run. Each section is one slot at true 1242×2688 proportion with its slug, and a locale switch re-sets every caption. It is the one candidate that uses the literal mock-up reading, and it sits right beside the category default."
+  },
+  {
+   "index": 3,
+   "name": "The multilingual instruction leaflet",
+   "family": "print / packaging insert",
+   "why": "Everyone has unfolded this leaflet: language-code thumb tabs on the edge, a wordless exploded diagram with numbered callouts, the same layout repeated per language, Arabic set from the back. It carries the mechanism because 'same layout, text translated in place, positions and type preserved' is Mockly's 39-locale pass. The exploded diagram keys the real Mockly window. The Technical data panel is the Quick reference, and 'no registration card' means no account."
+  },
+  {
+   "index": 4,
+   "name": "The salon hang with tombstone labels",
+   "family": "exhibition / architecture",
+   "why": "A gallery wall hung with every export at true relative size, each with a museum label giving title, medium and dimensions ('Metal render on PNG, 1290 × 2868 px'). It carries the mechanism through exact dimensions and the full spread of devices at one scale. The private view before opening stands for pre-release work under embargo, and the label works as the slug."
+  },
+  {
+   "index": 5,
+   "name": "The product studio: seamless sweep and lighting plot",
+   "family": "photography / place and lighting",
+   "why": "Before 3D renders, device marketing shots were made on a paper sweep, with a lighting plot recording angles and distances. Developers know the look from Apple's product photography. It carries Mockly's numeric rotation X/Y/Z, scale and offset as the set sheet, and rendering locally as 'shooting in your own studio, not at the bureau'. It is the candidate closest to the category's device-on-gradient default."
+  },
+  {
+   "index": 6,
+   "name": "The graded pattern sheet",
+   "family": "textile / dressmaking pattern",
+   "why": "A multi-size pattern sheet (Burda Style, or Finland's Ottobre Design; the studio is Finnish) nests every size of each piece in its own line style, with a size key. It carries the mechanism because percentage-based layout is grading: one base layout graded to every device size by proportional rules. The FAQ's size list maps exactly onto pattern pieces (iPhone ×4, iPad ×3, Mac ×4, Watch ×3, TV ×2, visionOS ×1), the notches mark the layout's cardinal points in %, and the multilingual envelope instructions carry the locales."
+  },
+  {
+   "index": 7,
+   "name": "The shrink-wrapped Mac software box",
+   "family": "packaging / object",
+   "why": "Before the App Store, Mac software was a box you bought once. Its back panel was where screenshots lived ('screens shown are from the Macintosh version'), with system requirements on the side. It carries the one-time $12.99 against subscriptions, and native Mac, with the back panel as the screenshot showcase. It is weak on the render matrix and the locales."
+  }
+ ],
+ "seed": {
+  "key": "4015eadf",
+  "assigned": 6,
+  "reroll1": 3
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "The Graded Nest",
+   "kicker": "THE ROLL",
+   "sourceIndex": 6,
+   "lineage": "The multi-size dressmaking pattern sheet as printed in Burda Style and Finland's Ottobre Design: overlapping pieces in several print colours, each size traced in its own line style (solid, dashed, dotted, dash-dot), a size key, piece numbers in large outlined numerals, notches, grainline arrows, and multilingual instructions in the margin. Also the industrial grading nest, where one base piece is graded to every size by proportional rules at cardinal points.",
+   "thesis": "Mockly's percentage-based layout is grading: one base layout graded to every App Store Connect size. The page is that pattern sheet. Six pieces (iPhone, iPad, Mac, Watch, Apple TV, visionOS) carry the FAQ's 17 export sizes, nested in their own line styles at one true scale. The caption and device notches sit at the same percentages in every size. It refuses the floating-phones-on-violet hero and the feature-card grid.",
+   "scene": "A maker at a big cutting table in daylight, the pattern sheet unfolded flat, highlighter in hand, tracing their size through the nest. So the scheme is light.",
+   "scheme": "light",
+   "colorStrategy": "Full palette: four piece inks (iPhone red, iPad blue, Mac green, Watch violet) on cool pattern paper. Apple TV and visionOS print in ink black, as Burda prints some pieces. Highlighter yellow marks only the size being traced. Colour always means 'which piece'.",
+   "palette": [
+    {
+     "hex": "#F1F2EE",
+     "role": "Pattern paper ground: cool grey-white newsprint, not cream"
+    },
+    {
+     "hex": "#1A1C20",
+     "role": "Ink: type, rules, the Apple TV and visionOS pieces, focus ring (15.2:1 on paper)"
+    },
+    {
+     "hex": "#C2182B",
+     "role": "Piece 1 iPhone lines and labels (5.4:1)"
+    },
+    {
+     "hex": "#1C55C0",
+     "role": "Piece 2 iPad lines and labels (6.0:1)"
+    },
+    {
+     "hex": "#17723A",
+     "role": "Piece 3 Mac lines and labels (5.3:1)"
+    },
+    {
+     "hex": "#7A2EA8",
+     "role": "Piece 4 Watch lines and labels (6.7:1)"
+    },
+    {
+     "hex": "#E4F53A",
+     "role": "Highlighter: 10px underlay of the traced size, selected key row, focus halo (ink on it 14.2:1)"
+    }
+   ],
+   "type": {
+    "display": "Saira Condensed 800 for the H1, outlined piece numerals (1.5px text-stroke, no fill) and section heads; 600 with tabular figures for size labels set along the lines and the size key (@fontsource/saira-condensed, latin about 18 KB per weight).",
+    "text": "Albert Sans variable, weights 400–700 (@fontsource-variable/albert-sans, latin about 32 KB). Instruction columns at 17–18px/1.6 and tables.",
+    "utility": "Saira Condensed 600 with tabular figures for grade tables (cardinal points in % and px), nothing in mono.",
+    "rationale": "Pattern sheets label pieces and sizes in a condensed technical sans, so '6.9″ · 1290 × 2868' fits along a 2px cutting line or inside a narrow Watch piece. Saira's squared curves echo plotter-drawn grading lines. Albert Sans is a geometric grotesk drawn from Scandinavian modernism: the plain, friendly instruction voice of a Nordic pattern magazine. Total is about 68 KB."
+   },
+   "materials": [
+    "Flat pattern-paper ground with two faint sheet-fold creases (1px ink at 6%) where the sheet was folded into the magazine",
+    "Piece outlines as 2px strokes in piece ink. The largest size is solid, then dashed 8/4, dotted 2/3 and dash-dot 10/3/2/3, as in the key",
+    "Size labels set along each line with SVG textPath in Saira Condensed 600, 12–13px, in the piece ink",
+    "Notches: 8px ticks across every outline at the layout's cardinal points (caption top 6%, caption foot 18%, device top 30%; illustrative layout), plus a 10px ring grade point at the caption centre",
+    "A double-headed grainline arrow per piece, marking which edge is up (portrait or landscape)",
+    "A 96px outlined piece numeral and the piece name ('iPhone · cut 4 sizes from one layout') inside each piece",
+    "Title block and size key as opaque paper boxes with a 1.5px ink border, sitting over the nest the way a real sheet's legend box does",
+    "Made-up views: real screenshots printed flat in 1px ink frames with outlined view letters A, B, C",
+    "Highlighter: 10px #E4F53A stroke under the traced line, round caps, multiply blend"
+   ],
+   "firstViewportDesktop": "Pattern paper fills 1440×900 edge to edge, and the nest is the ground. 0–56: the sheet-edge strip. On the left, the 28px icon, 'Mockly' in Saira Condensed 800 22px and 'Pattern sheet for macOS' in Albert 14px. On the right, links in Albert 600 15px (Grading · Views · Sewing order · Languages · Price · Questions) and an ink-outlined 'Get Mockly'. A 1.5px ink rule sits beneath. The nest is inline SVG at one scale (1 export px = 0.15 CSS px) and runs under and around both boxes: Piece 5 Apple TV (ink, 576×324 solid with 288×162 dashed nested at centre) at x 820–1396, y 76–400. Piece 1 iPhone (red: 6.9″ solid, 6.7″ dashed, 6.5″ dotted, 5.5″ dash-dot, from 194×430 down, nested on the bottom edge) at x 540–734, y 140–570. Piece 3 Mac (green, four concentric 16:10 sizes from 432×270) at x 760–1192, y 420–690. Piece 2 iPad (blue, 13″, 12.9″ and 11″ from 310×413) at x 1080–1390, y 470–883. Piece 4 Watch (violet, three sizes about 62×75) at x 600, y 640. Piece 6 visionOS (ink) enters from the fold at y 830. Each piece carries its outlined numeral, name, size labels on its lines, notches and grain arrow. The title block (x 40–500, y 80–560) sets 'App Store Screenshot Maker for Mac.' in Saira Condensed 800 at 58px/0.98 over 2 lines, then the subheadline in Albert 16px/1.5 at 52ch. Below it, 'Pattern price: $12.99 — one-time purchase · Family Sharing' in Saira 600 20px, the official badge at 160px, and the QR at 84px captioned 'Opens the listing on your phone'. The size key (x 40–500, y 584–872) is 'Trace your size': 6 piece groups and 17 radio rows in two columns, each with its line-style swatch in the piece ink. The 6.9″ row is preselected and highlighted.",
+   "firstViewportMobile": "Pattern paper with 16px gutters. 0–52: strip with the 24px icon, 'Mockly' in Saira Condensed 800 20px, and 'Contents' on the right. y 64: H1 in Saira Condensed 800 at 40px/1.0 over 2 lines. y 160: subheadline in Albert 16px/1.5, about 8 lines. y 380: 'Pattern price: $12.99 — one-time purchase' in Saira 600 18px, the badge at 150px, and a 44px ink-outlined 'Send this page to my Mac' button. y 540–844: Piece 1 iPhone nested at 0.1 scale (129×287 outer) with its four line styles and size labels on the left. On the right, a 4-row mini key (6.9″, 6.7″, 6.5″, 5.5″) as 44px radio rows. Under it, a horizontally scrolling row of piece chips (1 iPhone, 2 iPad, 3 Mac, 4 Watch, 5 TV, 6 visionOS) swaps which piece's nest is drawn.",
+   "conversion": "The official badge sits inside the title block (the pattern's price box) on paper, black with Apple's own outline, never recoloured. On a Mac it opens the Mac App Store listing. The price statement comes from price.value, with 'Family Sharing included · no subscription' (FAQ). The QR (assets/qr/mockly.svg) shows at 84px beside the badge on screens ≥1024px only, captioned 'Opens the listing on your phone — save it for your Mac'. It is secondary because Mockly is Mac-only. On phones, 'Send this page to my Mac' uses navigator.share (AirDrop or Handoff), falls back to copy-link, and without JS shows the plain URL to type on the Mac. The sticky bar is a paper strip at the bottom with a 1.5px ink top rule, like the size key's edge: 'Mockly · $12.99 once · macOS' in Saira 600 plus the badge at 120px. It appears once the title block's badge leaves the viewport, and only under html.js. The closing title block repeats the badge, price and QR. The Smart App Banner meta (app-id=6756589122) stays in head.",
+   "visitorPath": [
+    "Pattern sheet (hero): the sheet-edge strip, the full nest of 6 pieces and 17 sizes at true scale, the title block with H1, subheadline, price, badge and QR, and the 'Trace your size' key",
+    "Pattern description: quick_answer (speakable) as the envelope's description box. Beside it, the ai-canonical Quick reference, always visible, as the 'Pattern information' chart: suits macOS · sizes 17 · locales 39 · price $12.99 once, Family Sharing · data collected none · third-party SDKs 0 · network only to App Store Connect when you upload, and to your AI provider with your key when you translate · account none for the app, ASC credentials in Keychain · first released 1 Feb 2026 · revised 27 May 2026 · formerly ScreenFlow Studio",
+    "Notions (what you need): your raw screenshots in a folder, optionally an App Store Connect API key and an AI provider key. Set as the pattern's notions list, from how_it_works and privacy.notes",
+    "Grading: the 'Percentage-based precision layout' feature, expanded as the grade-rule chart. Cardinal points in % against px for every size (illustrative layout, labelled), with the draggable grade point (signature)",
+    "Made-up views: real exports as view A (1.png, a Mac 2880×1800-class export of iPhone, iPad and Watch in 3D) and view B (TheWait portrait set cropped from 3.png). Captioned with value point 'Real 3D, not flat mockups' and the example_insights determinism and size notes",
+    "Sewing order: how_it_works intro and 6 numbered steps (real sequence, HowTo schema), each with outlined Saira step numerals and its screenshot: folder and inspector 3.png, layout 2.png, localise 6.png, render 4.png, upload 5.png",
+    "Instructions in 39 languages: value point 'Ship in every App Store locale'. The real ten-language caption from the GymLogger X project (6.png) is set as a pattern's multilingual instruction column: EN 'Train smarter. Log faster.', DE 'Smarter trainieren. Schneller protokollieren.' and so on, each lang-tagged. Then the 39 FAQ locales as a two-column register, with the RTL note",
+    "Delivery: direct App Store Connect upload (5.png), Keychain, and the developer-stated '234 screenshots in under two minutes' from example_insights, attributed",
+    "Cut at home: privacy. Nothing reaches a Lagerland server; privacy.notes and app_privacy_label; transparency facts linked to /transparency/#mockly; privacy policy link",
+    "Pattern price: value_math ($12.99 once against $19–$49/month, or $228–$588 a year) as a yardage-chart style table, plans_footnote, and the badge",
+    "Fit notes: who_for as 'Fits', who_not_for as 'Does not fit', each with its honest redirect (fastlane in CI, Figma for campaigns, no preview video)",
+    "Other patterns for the same garment: alternatives_to as 8 linked comparison pages, one factual line each",
+    "Designed by: founder (Organization, Finland, one-person studio since 2025), story, 4 signals, 'Email us directly', response time. release_notes as 'Pattern revisions' with dates",
+    "Questions: all 12 FAQ, open, 66ch",
+    "Further reading: related_journal plus the four other Mockly journal posts, and related apps AppMeta and AppMeta Pulse",
+    "Closing title block: badge, price, QR. The maker line 'Built by Lagerland Apps · first released 1 Feb 2026 · last updated 27 May 2026', privacy policy and support links, and the shared 'A Lagerland app' strip"
+   ],
+   "navigation": "The sheet-edge strip is the navigation: Grading · Views · Sewing order · Languages · Price · Questions, plus 'Get Mockly' (jump_nav anchors). The current section's link sits on a highlighter underlay. On mobile, 'Contents' opens a details panel of the same links in 48px rows. The six piece chips in the hero are in-page controls, not navigation. Sub-pages carry a breadcrumb drawn as a dashed cutting line with labelled stops (Lagerland — Mockly — Privacy).",
+   "signatureInteraction": "Name: 'Trace your size'. Technique: the size key is a real fieldset of 17 radio inputs. CSS :has() on the sheet lays a 10px highlighter stroke under the chosen outline in every piece, fades the other sizes to 35% opacity, and reveals that size's column in the grade chart. JS enhancement lets the visitor drag the caption grade point on the traced piece, or nudge it with the arrow keys. Every graded size moves its point to the same percentage, and a line prints, e.g., 'x 50.0% · y 12.0% → 621 × 323 px on 6.5″ (1242 × 2688)' for each size. No-JS fallback: the whole nest with all 17 sizes drawn, the key working through :has() (CSS only), and a server-rendered grade table listing the pixel position of each cardinal point for every size. Reduced motion: the highlight switches instantly, with no stroke wipe.",
+   "motionGrammar": "Drawn-line motion only, under html.js. The highlighter stroke wipes once along the traced outline (stroke-dashoffset, 420ms ease-out-quart). Other sizes fade over 160ms. The grade point follows the pointer 1:1 with no easing. The sticky bar slides up in 160ms. There are no scroll reveals, and the nest is fully drawn without JS. prefers-reduced-motion turns all of it off.",
+   "readModeVariant": "Privacy, support and alternatives pages become the pattern's instruction sheet. They keep the paper ground and the sheet-edge strip, and the title block sets the page title in Saira Condensed 800 at 44px. The reading column is Albert Sans 18px/1.6 ink at 66ch. Tables are ruled like the pattern's measurement chart. Outlined numerals appear only where order is real. Privacy opens with the 'Pattern information' chart of transparency data (data collected none, SDKs 0, network only on upload or requested translation, ASC account only to upload) linked to /transparency/#mockly, then the policy sections. Support is a ruled 'Pattern help' box: email, response time, and what to include. Alternatives pages open with a two-piece nest: Mockly's graded piece (17 sizes) beside the competitor drawn as one grey outline, labelled only with facts from that page (e.g. 'Rotato: animated video, subscription'). Then the comparison as a measurement chart, 'Choose Mockly if' / 'Keep Rotato if' as fit notes, the FAQ, and the price box with badge.",
+   "assetsNeeded": "None new as raster. The nest is inline SVG drawn from the FAQ's 17 sizes, and the screenshots exist. Derived crops of 3.png (the four TheWait portrait exports) come from the existing file. Recommended: a _data/mockly_sizes.yml (family, label, w, h) so the SVG, grade table and quick reference render from one source. The owner should first verify the 6.9″ dimension.",
+   "risk": "Sewing patterns are not this audience's home ground. The key and one line ('Mockly grades one layout to every size') must land in seconds, or the nest reads as decoration. The sheet is dense by nature, and on phones only one piece shows at a time. Drawing 17 sizes at one true scale needs care, and that precision makes any wrong dimension visible: the 6.9″ 1290×2868 drift has to be fixed first. The highlighter and dashed lines must stay crisp at 2x.",
+   "memoryTest": "'A dressmaking pattern sheet where every App Store size was nested like dress sizes in red, blue and green dashed lines. I picked 6.9-inch in the key, it lit up in highlighter yellow, and the caption notch sat in the same spot in every size.'",
+   "specimen": {
+    "bg": "#F1F2EE",
+    "ink": "#1A1C20",
+    "accent": "#C2182B",
+    "display": "Saira Condensed",
+    "dw": 800,
+    "text": "Albert Sans",
+    "h1": "App Store Screenshot Maker for Mac.",
+    "sub": "Professional App Store screenshots for Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "chessful-a keeps Saira for its squared 1980s electronics legends. Set mockly-a in Asap Condensed 600/700 for the H1, piece numerals and size labels, and Asap 400/600 for text. That is one family unused elsewhere, and it also clears the Albert Sans share."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Keep the full ai-canonical body (it may be relocated, as c does by moving it to the front), with the facts chart as an addition on top."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "OK to Upload",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "Offset-litho prepress. The imposed contract proof on a press sheet: ganged cells with crop marks, registration targets, the CMYK colour control strip along the gripper edge, and slug lines naming each version. Multilingual versioning, where only the black text plate is changed per language. The ISO 3664 viewing booth, with its neutral N8 grey surround and 5000 K light, where the client signs 'OK to print'.",
+   "thesis": "The page is one imposed proof sheet of Mockly's output. The same composition is ganged up at every App Store Connect trim, each cell slugged with device · locale · slot · px. The text plate swaps per language while the artwork stays registered. The headline is itself one trimmed cell, and an 'OK to upload' box holds the price and the badge. It refuses the floating-phones-on-gradient hero and the template's feature-card grid.",
+   "scene": "A client and a press operator at the viewing booth: the proof pinned flat on the N8 grey wall under 5000 K daylight-balanced light, checking trims and registration before signing. So the scheme is light.",
+   "scheme": "light",
+   "colorStrategy": "Restrained: neutral booth grey and bright sheet white, with process black for everything that reads. Process cyan, magenta and yellow appear only where print puts them: the colour control strip, registration targets, the illustrative cell artwork and the plate-separation demo. Magenta also marks proof queries. Colour never decorates text.",
+   "palette": [
+    {
+     "hex": "#C7C8C5",
+     "role": "N8 booth surround: page ground outside the sheet (ink on it 11.0:1)"
+    },
+    {
+     "hex": "#FBFBF9",
+     "role": "Coated sheet white: the major surface (cool, not cream)"
+    },
+    {
+     "hex": "#141414",
+     "role": "Process black K: all type, crop marks, rules, buttons, focus ring (17.8:1 on sheet)"
+    },
+    {
+     "hex": "#0093D3",
+     "role": "Process cyan: colour bar, registration targets, cell artwork. Graphics only, and only on the sheet (3.3:1)"
+    },
+    {
+     "hex": "#D6007E",
+     "role": "Process magenta: colour bar, cell artwork, proof-query circles and their numbers (4.9:1 on sheet)"
+    },
+    {
+     "hex": "#FFE100",
+     "role": "Process yellow: colour bar and artwork only, never text"
+    },
+    {
+     "hex": "#5A5B58",
+     "role": "Secondary slug data on the sheet (6.6:1)"
+    }
+   ],
+   "type": {
+    "display": "Chivo variable, weights 400–900 (@fontsource-variable/chivo, latin about 33 KB). 900 for the H1 and cell captions, 700 for section heads and the approval box.",
+    "text": "Chivo 400/600 from the same file, at 18px/1.6 in a 66ch column.",
+    "utility": "Chivo Mono 400 (@fontsource/chivo-mono, latin about 12 KB), only for slug lines: device, locale code, slot, pixel dimensions, reduction %, dates. All of these are real data.",
+    "rationale": "Chivo is Omnibus-Type's grotesque in the Akzidenz line, drawn for headlines: the job-printer's sans that sets real pack and ad copy. Its 900 holds as a caption inside a 103px Watch cell and as a 56px H1 alike. Chivo Mono shares its skeleton, so slugs like 'iPhone 6.5″ · de-DE · 03 · 1242 × 2688 px' read as the RIP's printed marks from the same hand. Total is about 45 KB."
+   },
+   "materials": [
+    "Booth: flat N8 grey, 32px visible around the sheet on desktop and 8px on mobile",
+    "Sheet: bright white, square corners, a 1px #A9AAA7 edge, no shadow, no texture",
+    "Colour control strip along the gripper edge: 12px patches of C, M, Y and K solids, 25/50/75% tints, CM/MY/CY overprints and a grey-balance patch, repeated across the full width",
+    "Registration targets: 24px circle-and-cross in K at the sheet's mid-edges and at each section's corner",
+    "Crop marks: 1px K, 16px long, set 6px outside every cell's trim corners",
+    "Slug lines in Chivo Mono 12px under each cell, flush to the trim's left edge",
+    "Cells trimmed at exact App Store Connect aspect ratios, each stating its reduction ('reduced to 25 %'). Illustrative cells hold a flat process-tint field, a device outline as a K hairline with a magenta-tint screen, and the caption in Chivo 900 on its own K layer",
+    "'OK to upload' approval box: a 1.5px K ruled box with fields (Price · Platform · Family Sharing · Approved) and a signature line",
+    "Proof queries: magenta 24px circles with numbers and hairline leaders in the margin, used only for honest caveats (who_not_for, no preview video)",
+    "Focus: 3px K outline with a 2px white offset"
+   ],
+   "firstViewportDesktop": "The booth grey ground shows; the sheet runs from x 32 to 1408, starting at y 16 and continuing below the fold. y 16–34: the colour control strip across the sheet. y 40–64: the slug and nav line. On the left, 'MOCKLY · SHEET 1 · PROOF 27 MAY 2026 · REDUCED TO 25 %' in Chivo Mono 12px (the date is release.last_updated). On the right, 'Trims · Plates · Proof · Press run · Dispatch · Quote · Queries' in Chivo 600 15px, and a solid-K 'OK to upload' button with white text. A 1px K rule sits under it. The hero cell is the Mac trim, 720×450 at x 88–808, y 104–554 (2880×1800 at 25%), with crop marks. Inside, at 6% insets, 'App Store Screenshot Maker for Mac.' in Chivo 900 at 56px/0.98 over 2 lines, then the subheadline in Chivo 400 17px/1.5 at 60ch. Its slug reads 'Mac · en-US · 01 · 2880 × 1800 px · this page'. Ganged at the same 25% to its right: an illustrative iPhone 6.5″ cell, 311×672 at x 856–1167, y 104–776, and an illustrative Watch 410×502 cell, 103×126 at x 1212–1315, y 104–230. Each has crop marks, a C 25% tint field, a K-hairline device outline, the caption 'Train smarter. Log faster.' on the K layer, and a slug ('iPhone 6.5″ · en-US · 01 · 1242 × 2688 px'). Below the Watch cell, x 1212–1380, y 268–776, is the plate register: ten 44px plate tabs (EN DE ES IT PT FR FI SV DA NB) in Chivo Mono 13px with K borders, headed 'Text plate'. Under the hero cell, x 88–808, y 600–860, is the 'OK to upload' approval box. It holds 'Price $12.99 — one-time purchase · Family Sharing · no subscription' in Chivo 700 22px, the official badge at 168px, the QR at 96px labelled 'Scan: listing on your phone', and the line 'Approved: preview = export, pixel for pixel' over a signature rule. Registration targets sit at the sheet's mid-left and mid-right edges at y 450.",
+   "firstViewportMobile": "Booth grey shows as 8px at each side; the sheet is 374px wide. y 8–20: the colour strip in 8px patches. y 24–56: slug 'MOCKLY · PROOF 27 MAY 2026' in Chivo Mono 11px, with 'Contents' on the right. y 68–808: the hero cell re-imposed at the phone's own trim, iPhone 6.5″ portrait 342×740 (1242×2688 at 27.5%), with crop marks. Inside: H1 in Chivo 900 at 42px/1.0 over 4 lines, then the subheadline in 16px/1.5. At the cell's lower 30% is the approval box: '$12.99 — one-time purchase · Family Sharing' in Chivo 700 18px, the badge at 152px, and a solid-K 44px 'Send this page to my Mac'. y 816: slug 'iPhone 6.5″ · en-US · 01 · 1242 × 2688 px · this page at your phone's trim'. The plate tabs follow below as a horizontal scroll row of 44px tabs.",
+   "conversion": "The badge sits in the 'OK to upload' approval box, unaltered on sheet white; on a Mac it opens the Mac App Store listing. The price statement is the box's first field, from price.value, with 'Family Sharing included' from the FAQ. On screens ≥1024px the QR (96px) is the box's third field, 'Scan: listing on your phone', smaller than the badge because Mockly is Mac-only. On phones the box carries 'Send this page to my Mac' (navigator.share, then copy-link, then the printed URL without JS). The nav's 'OK to upload' button jumps to the box. The sticky bar is the gripper edge: a white strip pinned to the bottom, the colour control strip as its top border, 'Mockly · $12.99 once · macOS' in Chivo 700 and the badge at 120px. It appears under html.js after the approval box leaves the viewport. The closing approval box repeats the badge, price and QR. The Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Hero imposition: colour strip, slug and nav line, the H1 hero cell at Mac trim (re-imposed at the phone's trim on mobile), the ganged illustrative iPhone and Watch cells, the plate register, and the approval box with price, badge and QR",
+    "Job ticket: quick_answer (speakable) as the ruled job description. Beside it, the ai-canonical Quick reference, always visible, as the job specification: platform macOS · price $12.99 once, Family Sharing · export sizes 17 · locales 39 · data collected none · third-party SDKs 0 · network only to App Store Connect when you upload, and to your AI provider with your own key when you translate · account none for the app, ASC credentials in Keychain · first released 1 Feb 2026 · last updated 27 May 2026 · formerly ScreenFlow Studio",
+    "Trims: all 17 FAQ sizes ganged in one imposition at 10%, grouped by family, each with crop marks and a px slug. The 'Percentage-based precision layout' feature is the caption: 'One layout, set in percentages, imposed on every trim'",
+    "Plates: localisation. A separations diagram shows the C, M and Y plates fixed and the K plate changing. The ten real translations from the GymLogger X project (6.png) form the plate register, labelled as real Mockly output. The 39 FAQ locales follow as a locale register with the RTL note, plus value point 'Ship in every App Store locale' and 3.png's 39-locale list",
+    "Contract proof: real Mockly exports mounted as signed proofs with slugs: 1.png (3D iPhone, iPad and Watch) and the TheWait portrait set cropped from 3.png. The example_insights notes become proof notes, 7.png's numeric rotation is shown, and value point 'Real 3D, not flat mockups' plus 'preview matches export, re-render tomorrow and the bytes are identical'",
+    "Press run: how_it_works intro and 6 steps as the job's routing column (real sequence 1–6, HowTo schema), each with its station screenshot: 3.png, 2.png, 6.png, 4.png, 5.png",
+    "Dispatch and the in-house press: direct App Store Connect upload (5.png, with the developer-stated 234 screenshots in under two minutes). Then privacy as 'No service bureau': the journal's argument that web tools render on a vendor's server, privacy.notes, app_privacy_label, and transparency facts linked to /transparency/#mockly and the privacy policy",
+    "Quotation: value_math as a printer's quote ($12.99 once against $19–$49/month, or $228–$588 a year), Family Sharing, plans_footnote, and the badge. release_notes as the proof history, revisions dated 1 Feb → 5 Apr 2026",
+    "Specification fit: who_for as 'Approved for'. who_not_for as magenta proof queries, each with its honest redirect (fastlane in CI, Figma for campaigns, single-locale apps, no preview video)",
+    "Other presses: alternatives_to as 8 slugged links to the comparison pages",
+    "Printer's imprint: founder (Organization, Finland, one-person studio since 2025), story, 4 signals, 'Email us directly', response time",
+    "Queries: all 12 FAQ, open, 66ch",
+    "Further reading: related_journal and the other Mockly posts. 'Same press': AppMeta and AppMeta Pulse",
+    "Closing approval box: badge, price, QR, the signed line. Maker line 'Built by Lagerland Apps · first released 1 Feb 2026 · last updated 27 May 2026', privacy policy and support, and the shared 'A Lagerland app' strip"
+   ],
+   "navigation": "The slug line is the navigation: Trims · Plates · Proof · Press run · Dispatch · Quote · Queries (jump_nav anchors), plus the solid 'OK to upload' button. The current section gets a 12px registration target before its link and a 2px K underline. On mobile, 'Contents' opens a details panel of the same links in 48px rows, ruled like a job ticket. Sub-pages carry a slug-style breadcrumb (Lagerland / Mockly / Privacy) in Chivo Mono 12px.",
+   "signatureInteraction": "Name: 'Plate change'. Technique: each illustrative cell's caption is live HTML on its own K layer, positioned in % over the CMY artwork. Ten plate tabs (real buttons with aria-pressed) swap the K layer text in every cell on the sheet at once. The strings are the ten from 6.png, with lang attributes. Slugs update their locale code (en-US → de-DE), and longer German and French lines re-wrap inside the same % box, showing type and positions preserved. A 'Separations' toggle pulls the C, M, Y and K layers 12px apart (CSS transforms, mix-blend-mode multiply), and labels K 'text layer: the only plate that changes per language'. No-JS fallback: the EN plate shows in the cells, and the ten translations are printed in full as the plate register (locale · line 1 · line 2). The Plates section shows the four separations statically. Reduced motion: the swap and the separation are instant.",
+   "motionGrammar": "Registered, mechanical motion only, under html.js. The K layer crossfades in 120ms. Separations slide 12px out and back over 240ms ease-out-quart. Registration targets never spin. The sticky gripper bar slides in 160ms. There are no scroll reveals. prefers-reduced-motion turns everything off.",
+   "readModeVariant": "Privacy, support and alternatives pages become further proof sheets. The booth surround and white sheet stay, with the colour strip on top and a slug breadcrumb. The title is in Chivo 900 at 48px, and the reading column is Chivo 400 18px/1.6 at 66ch. Tables are ruled in K like a job spec. Privacy opens with the job-spec table of transparency data, then the policy sections (overview, data collection, storage, third parties, sensitive data, children, changes, contact). Support is 'Job enquiries': email, response time, and what to include as a ruled list. Alternatives pages open with a two-cell gang: Mockly's cell (17 trims, $12.99 once) beside the competitor's cell in a grey hairline, carrying only facts from that page. Then the comparison as a spec table, 'Approve Mockly if' and 'Keep Rotato if' as two ruled lists, the FAQ as queries, and the approval box with badge.",
+   "assetsNeeded": "None as new raster. The colour strip, crop marks and registration targets are CSS or inline SVG, and the illustrative cells are CSS. Derived crops come from existing files: the four TheWait portrait exports from 3.png, and the GymLogger X canvas from 2.png. Recommended: _data/mockly_sizes.yml as the single source for trims and slugs.",
+   "risk": "This is the familiar strong idea for a design tool, and the one most likely to slide into costume. Crop marks and colour bars become decoration unless every cell is a real trim at a true ratio and the plate change really works. Booth grey can feel drab, so the sheet must stay bright and dominant. Seventeen trims make a long vertical strip on phones. The CMYK plate is a comparison, not a claim: Mockly exports RGB PNGs, so copy must say 'like the black plate in print'. Slugs print pixel dimensions prominently, so the 6.9″ drift must be fixed first. The hero uses 6.5″ 1242×2688 meanwhile.",
+   "memoryTest": "'A printer's proof sheet in a grey booth. The headline was itself one of the trimmed screenshots, with crop marks and a slug saying 2880 × 1800. I clicked DE and every cell's caption changed while the colours stayed put, and an OK-to-upload box held the App Store badge.'",
+   "specimen": {
+    "bg": "#C7C8C5",
+    "ink": "#141414",
+    "accent": "#D6007E",
+    "display": "Chivo",
+    "dw": 400,
+    "text": "Chivo",
+    "h1": "App Store Screenshot Maker for Mac.",
+    "sub": "Professional App Store screenshots for Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Keep proof marks and the sign-off box on appmeta-b, because marked text changes are AppMeta's mechanism. mockly-b keeps imposition, crop marks, the colour bar and ganged trims. It moves the action into the press-run dispatch docket on the gripper edge (no 'OK to upload' approval box, no signature line) and drops the magenta proof-query circles. Caveats go into the slug lines."
+    },
+    {
+     "sev": "major",
+     "text": "gymlogger-x-b keeps Chivo. Set mockly-b in Spline Sans 400–700, with Spline Sans Mono for slug lines only. It is one superfamily and is unused elsewhere on the board."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Keep the sign-off box on appmeta-b, where proofreading is its diff preview. In mockly-b, move the action into the press sheet's own furniture (the gripper-edge strip or the colour-bar ticket), drop the 'OK to …' approval wording and keep proofreader marks off the sheet. The pair then reads as a Dylux galley next to a CMYK imposed sheet."
+    },
+    {
+     "sev": "major",
+     "text": "Keep the full ai-canonical body (it may be relocated, as c does by moving it to the front), with the facts chart as an addition on top."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "Thumb-Index Leaflet",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 3,
+   "lineage": "The multilingual instruction leaflet packed with electronics and appliances: an accordion-folded strip of thin paper, a cover listing every language code, a model plate box, thumb-index tabs bleeding off the edge, a wordless exploded diagram with numbered leader-line callouts, the same layout repeated per language, Arabic and Hebrew set from the back, and closing 'Technical data' and 'Service' panels. Printed in two inks.",
+   "thesis": "Mockly's localisation pass, shown as the leaflet every multilingual product ships. One layout repeats with positions and type preserved. A wall of the 39 App Store locale codes is the cover. A thumb index re-sets a real caption in place, and an exploded parts diagram keys the real Mockly window. It refuses the floating-phones hero, the split hero and the card rows.",
+   "scene": "Someone unboxing at a desk in daylight, pulling out the leaflet, unfolding it panel by panel down the strip, thumb finding their language tab. So the scheme is light, printed in two inks.",
+   "scheme": "light",
+   "colorStrategy": "Committed, two-ink print. Mockly violet (the icon's colour) drenches the cover panel and prints the thumb tabs, callout discs and links. Black prints all reading text. Inside panels are white thin paper with violet 15% tint bands. There are no gradients and no glow, so the violet reads as flat ink, not the category's gradient.",
+   "palette": [
+    {
+     "hex": "#4A2FC4",
+     "role": "Mockly violet ink: cover ground, thumb tabs, callout discs, links (white on it 8.4:1; it on white 8.4:1)"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "Leaflet paper: interior panels, model box, cover type"
+    },
+    {
+     "hex": "#17151F",
+     "role": "Black ink: all reading text and rules, the active tab, focus ring (18.1:1)"
+    },
+    {
+     "hex": "#E9E6FB",
+     "role": "Violet 15% tint: panel bands, inactive interior tabs, table striping (black on it 14.8:1)"
+    },
+    {
+     "hex": "#6B6880",
+     "role": "Fold creases, secondary text and code lines (5.4:1 on white)"
+    }
+   ],
+   "type": {
+    "display": "Noto Sans Display variable, wght 100–900 and wdth 62.5–100 (@fontsource-variable/noto-sans-display, latin wdth file about 70 KB). wdth 62.5 / 900 for the H1 and the 39-code wall; wdth 75 / 800 for panel heads, callout numerals and the demo captions.",
+    "text": "Noto Sans variable wght (@fontsource-variable/noto-sans, latin about 36 KB), 400/600, at 18px/1.6 in a 66ch column.",
+    "utility": "Noto Sans 600 with tabular figures for Technical data, callout keys and prices. Endonyms in non-Latin scripts (日本語, العربية, עברית, ไทย, हिन्दी, 한국어, 简体中文) fall back to the visitor's system fonts, so no CJK or Arabic files are downloaded.",
+    "rationale": "Noto exists so one design covers every script without 'tofu' boxes. It is the family multilingual leaflets and operating systems fall back on, which is Mockly's promise of 'fonts preserved' across 39 locales. Its condensed display widths fit 39 codes, long German and French headings and the caption plates into fixed panel widths without shrinking: the exact problem Mockly solves for captions. Total is about 106 KB."
+   },
+   "materials": [
+    "Two-ink print on thin white paper. Each panel is a full-width band, separated by a horizontal fold crease: a 1px #6B6880 line at 40% with a 16px shade at 4% black on one side (valley or mountain)",
+    "The violet cover drenched edge to edge. White type on it, flat ink",
+    "Thumb tabs: 56×44px violet blocks bleeding off the right edge, stepped down the edge, with codes in white Noto Display 800. The active tab is black with white text and sits 8px further out",
+    "Model box (the product's rating-plate box): white, 2px black border, black text, holding the price, badge and QR",
+    "Exploded diagram: 3.png with 1.5px violet leader lines ending in 28px violet discs with white numerals, and a key table beneath",
+    "Line pictograms: 1.5px black strokes for the six steps (folder, device frame, percentage grid, text block with two scripts, stacked files, upload tray)",
+    "Every panel's outer corner carries 'EN' in a small violet box: the leaflet's own language marker, accurate for this page",
+    "Ticks and crosses for fit notes drawn as 1.5px SVG strokes, not Unicode",
+    "Focus: 3px black outline with a 2px white offset (on the cover: a 3px white outline with a 2px black offset)"
+   ],
+   "firstViewportDesktop": "The violet cover is drenched over 1440×900, in white type. 0–64: the leaflet head. On the left, the 32px icon, 'Mockly' in Noto Display wdth 75/800 24px and 'for macOS'. On the right, contents links (Parts · Steps · Languages · Before you start · Price · Service · Questions) in Noto 600 15px white. y 92–280, x 64–960: 'App Store Screenshot Maker for Mac.' in Noto Sans Display wdth 62.5/900 at 92px/0.92 over 2 lines. y 300–430: the subheadline in Noto 400 19px/1.5 white at 62ch. Top right is the model box, x 1000–1344, y 92–340: white with a 2px black border. It reads 'Model: Mockly for macOS' and 'Price: $12.99 — one-time purchase' in Noto 600 20px, then 'Family Sharing · no subscription · no account' in 15px. Below that, the official badge at 168px, and the QR at 84px with 'Scan: listing on your phone'. y 470–880, x 64–1344: the language wall. The 39 FAQ locale codes (EN-US EN-GB EN-AU EN-CA DE FR FR-CA ES ES-MX PT-PT PT-BR IT NL PL CS SK HU RO RU TR AR HE EL SV NO DA FI ID MS TH VI HI UK CA HR JA ZH-HANS ZH-HANT KO) are set in Noto Display wdth 62.5/800 at 64px white, 4 justified lines, each code a link to its row in the Languages panel. The wall flows around the live demo at x 1150–1344: a white 2px line drawing of a portrait screenshot at true 1242×2688 ratio (190×410). Its caption 'Train smarter. / Log faster.' is in Noto Display wdth 75/800 22px at the top 8%, a device outline sits below, and under it '6.5″ · EN · real caption from a Mockly project'. Thumb index on the right edge, x 1384–1440, from y 96: ten stepped tabs (EN DE ES IT PT FR FI SV DA NB), EN active in black.",
+   "firstViewportMobile": "Violet cover, 16px gutters. 0–52: head with the 24px icon, 'Mockly' in Noto Display 800 20px, and 'Contents' on the right. y 52–100: the thumb index turns into a horizontally scrolling row of ten 44×44 tabs pinned under the head, EN active in black. y 116: H1 in Noto Display wdth 62.5/900 at 50px/0.94 over 3 lines. y 290: subheadline in 16px/1.5 white. y 520–760: the model box at full width: price in Noto 600 18px, 'Family Sharing · no subscription', the badge at 152px, and a 44px black 'Send this page to my Mac'. y 780+: the demo screenshot drawing (150×324) at right, with the first lines of the 39-code wall at 34px flowing at its left.",
+   "conversion": "The official badge lives in the cover's model box, white with a black border, unaltered; on a Mac it opens the Mac App Store listing. The price statement is 'Price: $12.99 — one-time purchase' (price.value) plus 'Family Sharing · no subscription' (FAQ). The QR is small (84px) on screens ≥1024px, 'Scan: listing on your phone', because Mockly is Mac-only. On phones the box carries 'Send this page to my Mac' (navigator.share, then copy-link, then the printed URL without JS). The sticky bar is a fold-down strip: a white band with a 4px violet top edge and the 'EN' corner marker, 'Mockly for macOS · $12.99 once' in Noto 600, and the badge at 120px. It appears under html.js once the model box leaves the viewport. The 'Registration card (not needed)' panel later repeats the box, and so does the back cover. The Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Cover: leaflet head with contents, H1, subheadline, the model box (price, badge, QR), the 39-code language wall with the live demo screenshot, and the thumb index",
+    "Intended use and technical data: quick_answer (speakable) as the 'Intended use' paragraph. The ai-canonical Quick reference, always visible, as the 'Technical data' table, moved to the front for findability: platform macOS · price $12.99 once, Family Sharing · export sizes 17 · locales 39 · data collected none · third-party SDKs 0 · network only to App Store Connect when you upload, and to your AI provider with your key when you translate · account none for the app, ASC credentials in Keychain · first released 1 Feb 2026 · last updated 27 May 2026 · formerly ScreenFlow Studio",
+    "Before you start (boxed 'Important' panel): what leaves your Mac and when. privacy.notes, app_privacy_label, and transparency facts linked to /transparency/#mockly. Then the journal's point that web tools render pre-release screenshots on a vendor's server",
+    "Parts of the window: exploded diagram of 3.png with 8 numbered callouts: 1 Localizations (39), 2 Source language, 3 'iPhone 6.9″ for App Store' set, 4 Canvas pages, 5 Device inspector (rotation X/Y/Z, scale, offset), 6 Device style 'Realistic', 7 Link a folder of images, 8 Zoom. The key table maps each part to a feature (3D Metal rendering engine, bulk import, percentage-based layout, localisation)",
+    "Steps: how_it_works intro and 6 numbered steps (real sequence, HowTo schema), each with its line pictogram and screenshot: 2.png, 6.png, 4.png, 5.png",
+    "Same layout, every language (signature panel): one layout at three trims (iPhone 6.5″, iPad 13″, Mac 2880×1800) as line drawings whose captions follow the thumb index. Then the register of the ten real translations from 6.png, lang-tagged, and all 39 locales with endonyms in two columns. RTL note: Arabic and Hebrew read from the right, as leaflets print them from the back. Value point 'Ship in every App Store locale'",
+    "What you get: real exports, 1.png and TheWait crops from 3.png, each with a code line ('EN · Mac 2880 × 1800'). The example_insights notes, and value points 'Real 3D, not flat mockups' and 'Upload without leaving the app'",
+    "Registration card (not needed): price panel with value_math ($12.99 once against $19–$49/month, or $228–$588 a year), Family Sharing, plans_footnote, 'No registration card, no account', and the badge. release_notes as the leaflet's revision codes with dates",
+    "Is this product right for you? who_for with drawn ticks, who_not_for with drawn crosses and the honest redirect for each",
+    "Troubleshooting: all 12 FAQ as a two-column Question / Answer table on desktop, stacked on phones",
+    "Comparable products: alternatives_to as 8 linked comparison pages",
+    "Service: founder (Organization, Finland, one-person studio since 2025), story, signals, 'Email us directly', response time, support and privacy policy links",
+    "Further reading: related_journal and the other Mockly posts, plus AppMeta and AppMeta Pulse",
+    "Back cover: the model box again (badge, price, QR), and the edition line 'Edition 27 May 2026 · first released 1 Feb 2026 · Built by Lagerland Apps, Finland'. Then the shared 'A Lagerland app' strip"
+   ],
+   "navigation": "The leaflet head's contents line is the navigation: Parts · Steps · Languages · Before you start · Price · Service · Questions (jump_nav anchors). The current panel's link gets a 2px white (cover) or black (interior) underline. The thumb index is the language control, not navigation; this is stated by its label 'Caption language'. On mobile, 'Contents' opens a details panel of the same links in 48px rows. Sub-pages carry a violet cover band with the breadcrumb 'Lagerland / Mockly / Privacy'.",
+   "signatureInteraction": "Name: 'Thumb to your language'. Technique: ten real buttons (aria-pressed) on the thumb index. JS sets the caption text and lang attribute in every demo trim on the page (cover and Languages panel) from the ten strings in 6.png, updates code lines ('DE · iPhone 6.5″'), and lights the matching code in the cover wall. 'Schneller protokollieren.' re-wraps inside the same % box, showing positions and type preserved. Pressing a code in the wall that has no sample (e.g. JA) scrolls to its register row: endonym plus 'Translated in Mockly with your own AI key — no sample on this page'. No-JS fallback: tabs are anchor links to the Languages panel, where all ten captions are printed side by side as visible lang-tagged rows; the cover demo shows EN. Reduced motion: the caption swap and tab slide are instant.",
+   "motionGrammar": "Paper motion only, under html.js. The pressed tab slides 8px outward in 120ms, and captions crossfade in 140ms. Panels never fold or reveal on scroll. The sticky strip slides down in 160ms. prefers-reduced-motion turns all of it off.",
+   "readModeVariant": "Privacy, support and alternatives pages become other sections of the same leaflet. A short violet cover band is the masthead: icon, 'Mockly', and the page title in Noto Display wdth 62.5/900 at 48px white. Below are white panels with fold creases and the 'EN' corner marker. The reading column is Noto Sans 18px/1.6 black at 66ch. Privacy opens with the boxed 'Before you start' facts (transparency data, link to /transparency/#mockly), then the policy sections. Support is the 'Service' panel: email, response time, and a 'what to include' list. Alternatives pages open with a 'Comparable products' Technical data table (Mockly against the competitor, facts from that page only). Then 'Choose Mockly if' and 'Keep frameit if' as tick and cross lists, the FAQ as a troubleshooting table, and the model box with badge.",
+   "assetsNeeded": "Six small 1.5px line pictograms for the steps (new inline SVG, a small drawing task). The trim line drawings are CSS or SVG. Callout coordinates need mapping onto 3.png. Crops of 3.png come from the existing file. No new raster.",
+   "risk": "The violet cover sits next to the category's purple and the icon. It only works as flat two-ink print: any gradient, glow or floating phone turns it into every screenshot SaaS page. Leaflets are humble, so the page can read as documentation rather than persuasion unless the cover's code wall, model box and live caption land at once. Only ten real translations exist, so 29 codes link to the register instead of demoing, and that must be labelled. Non-Latin endonyms depend on system fonts. Moving Technical data to the front departs from real leaflet order, for the sake of AEO.",
+   "memoryTest": "'It looked like the instruction leaflet from a gadget box: a violet cover with a wall of 39 language codes and a model box holding the App Store badge. I pressed DE on the edge tab and the little screenshot's caption switched to Smarter trainieren in the same spot.'",
+   "specimen": {
+    "bg": "#4A2FC4",
+    "ink": "#FFFFFF",
+    "accent": "#17151F",
+    "display": "Noto Sans Display",
+    "dw": 100,
+    "text": "Noto Sans",
+    "h1": "App Store Screenshot Maker for Mac.",
+    "sub": "Professional App Store screenshots for Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Keep the leaflet on appmeta-c, where 50 locales of text side by side is literally a leaflet. Replace mockly-c with mockly candidate #4, the salon hang with tombstone labels: every export hung at true relative size on one wall, each with a museum label giving device · locale · slot · px. No other surface uses an exhibition/architecture world, and it takes Mockly off three paper styles."
+    },
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Keep the leaflet on appmeta, whose mechanism is literally the same text in 50 locales. Give mockly-c the next distinct re-roll (--reroll 2, skipping 1, 3 and 6). If that deals 2 (the literal screenshot run), take candidate #7 instead: the shrink-wrapped Mac software box (one-time $12.99, back-panel screenshots, a system-requirements side panel). Drop Noto and violet along with the world."
+    },
+    {
+     "sev": "major",
+     "text": "Keep the full ai-canonical body (it may be relocated, as c does by moving it to the front), with the facts chart as an addition on top."
+    }
+   ]
+  }
+ ],
+ "canon": "Canon (the standing exit, played straight): the screenshot-SaaS page. A violet-to-indigo gradient hero reads 'App Store Screenshot Maker for Mac' over three glossy 3D phones floating at angles, with the badge and QR beside it. Below: a row of template cards, a feature icon grid, a monthly-vs-one-time pricing table, an FAQ accordion and a footer, in the AppLaunchpad / Screenshots.pro / Rotato register.",
+ "notes": "Roll: key 4015eadf, degraded (no catalog challengers, no network retry, by instruction). The assigned index is 6. Reroll 1 gave 3, which is distinct, so no further rerolls were needed. Neither 6 nor 3 is candidate 1, so: A = 6 (THE ROLL, The Graded Nest), B = 1 (IMPECCABLE’S PICK, OK to Upload), C = 3 (SECOND ROLL, Thumb-Index Leaflet). The seven-candidate order was locked before the roll. One stray fresh concept-seed run was executed by mistake while preparing the reroll command; its output was discarded unread, and only key 4015eadf binds. Factual guardrails for whichever style ships: (1) Front matter gives iPhone 6.9″ as 1290×2868 in how_it_works, example_insights and the FAQ. Apple's 6.9″ sizes are 1320×2868, 1290×2796 or 1260×2736, and the studio's own guidelines post now says only one iPhone size is required. The owner must verify this before any style prints pixel dimensions large (all three do). Until then, mocks use 6.5″ 1242×2688 for the hero trims. (2) Screenshot captions 4–7 in front matter don't match the images (4 = export sheet, 5 = ASC upload, 6 = text localisation, 7 = device inspector). Re-caption from what is visible, or fix the front matter. (3) Mockly is not network-free. transparency.yml lists App Store Connect upload and optional bring-your-own-key translation, and the privacy policy's 'does not upload your data to external servers' should be reconciled. All styles say 'nothing leaves your Mac until you push to Apple or request a translation'. (4) The ten translated captions are real Mockly output, visible in 6.png (GymLogger X project). No other translations are shown, and no Arabic or Hebrew sample is invented. (5) The example_insights claims (about 50ms per render, 234 screenshots in under two minutes) and the $19–$49/month competitor range are developer-stated front-matter claims. Attribute them, and don't enlarge them. (6) No ratings and no testimonials exist for Mockly, so there are no stars or quotes. (7) HowTo schema is present (6 steps), and founder is an Organization. (8) Mac-only conversion: the badge opens the Mac App Store, the QR stays secondary, and phones get a 'send this page to my Mac' share path. Apple publishes a separate official 'Download on the Mac App Store' badge. The owner may prefer it here, and it must be Apple's artwork, not the current redrawn SVG include. (9) The journal post 'the-case-for-native-screenshot-tooling' says '20+ locales' against front matter's 39; the microsite renders front matter, and the post should be refreshed. (10) Fonts verified on npm: @fontsource/saira-condensed, @fontsource-variable/albert-sans, @fontsource-variable/chivo, @fontsource/chivo-mono, @fontsource-variable/noto-sans-display (wdth + wght), @fontsource-variable/noto-sans. The latin woff2 sizes were measured from the packed tarballs.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

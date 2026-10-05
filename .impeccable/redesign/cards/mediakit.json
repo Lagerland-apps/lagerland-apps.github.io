@@ -1,0 +1,436 @@
+{
+ "surface": "mediakit",
+ "dossier": {
+  "mechanism": "Drop any file into one window; MediaKit reads its format and opens the right one of 152 local tools (video, audio, image, PDF, archive, ebook), running it on-device through Apple frameworks (AVFoundation, CoreImage, PDFKit, Vision, Speech, Compression), so the file never leaves the iPhone or Mac.",
+  "audienceScene": "A Mac or iPhone owner in the middle of a task with a file that will not fit or will not open: a 55 MB screen recording too big to send, a HEIC a parent cannot open, two PDFs to merge, a RAR v5 from a client. They have just searched 'compress mp4 without uploading' or 'HandBrake alternative' and arrive on a phone or laptop, deciding in seconds.",
+  "culturalHome": "Indie Mac-utility culture (menu-bar apps, Shortcuts, Apple Silicon) meets everyday media handling. Before the web, this job belonged to the photo-lab counter, the dubbing deck and the broadcast machine room. Today the upload-to-a-website converters (CloudConvert, Zamzar, iLovePDF) have taken it over, and the developer's own essays argue against them.",
+  "mustProve": "One native app handles every format and picks the right tool itself. The file never leaves the device, shown through the transparency record rather than claimed. It is free to start: a 3-day full trial, five tools free forever, Pro from $3.99/mo. The official App Store badge (opening the Mac App Store on a Mac) and, on desktop, the QR for the iPhone must sit within reach.",
+  "categoryDefault": "The converter page: a giant dashed 'Drop file here / Upload' box over a grid of MP4-to-MOV format pills on a purple gradient (CloudConvert, Convertio). The other default is the Mac-utility page: a centred icon over a big dark window screenshot, then a feature-card grid and a three-tier pricing table (Permute, HandBrake sites).",
+  "predictableOpposite": "A stark white 'privacy' page (padlock, one sentence, acres of whitespace), or a terminal/ffmpeg command-line costume (the dev-tool rut).",
+  "literalReading": "'Media kit' read literally gives a toolbox, a Swiss-army knife or a workshop shadow board of tools (or a press-kit folder). Only candidate 7 uses it.",
+  "evidence": [
+   "Front matter: 152 tools; 5 free forever (Video Compress, Image Compress, Image Resize, Audio Convert, PDF Compress); 147 behind Pro plus batch processing; 21 export presets; 6 Shortcuts actions; menu-bar access; iOS 17+ and macOS 14+; Universal Purchase; status live; App Store id 6761451361.",
+   "price.value: 'Free trial — Pro from $3.99/mo, $22.99/yr, or $39.99 lifetime'. Four plans: Free trial $0, Pro Monthly $3.99/mo, Pro Annual $22.99/yr (highlight: true), Lifetime $39.99 once ('Best long-term value'). Also has plans_footnote.",
+   "Blocks present: hero (device: mac), quick_answer, value_points (4), features (6), who_for (5), who_not_for (3), plans (4), screenshots (8, Mac landscape 3584x2130), privacy notes (5), faq (7), alternatives_to (16). ABSENT: founder, how_it_works (so no HowTo schema), comparison_table, roadmap, spotlight, training_vocabulary, insight_gallery, related_journal, testimonials, ratings; no iPhone screenshots exist.",
+   "App UI palette (screenshots): near-black navy ground tinted per tool family (blue-violet for Trim/GIF, purple for audio Convert, ember-brown for PDF, green for ZIP compress). Coral-pink primary 'Run' button, periwinkle-blue accent, small mono metadata pills (MOV · 55,3 MB · 0:42 · 1920×1080 · 30 fps). Signature result screen: 'Before 55,3 MB → After 42,7 MB, 22% smaller'. Drop zone reads 'Drop any media file · video · audio · image · PDF · archive · ebook'. The tool picker has category tabs All/Recipes/Video/Audio/Image/Pdf/Archive/Ebook.",
+   "Icon: three brushed-steel monolith bars with etched circuit lines, blue backlight, on a deep navy squircle.",
+   "Transparency (_data/transparency.yml): network calls none; data leaves device: no; analytics none; account none; permission: user-selected file only. third_party_sdks: 1 (Unrar.swift, open-source read-only RAR, no network). So the shared trust fact '0 third-party SDKs' would be FALSE here.",
+   "Alternatives: 14 pages target MediaKit (handbrake, cloudconvert, convertio, permute, adapter, wondershare-uniconverter, hitpaw-video-converter, imazing-heic-converter, xnconvert, izip, compress-videos-resize-video, image-size, pdf-expert, documents-by-readdle). Keka and ImageOptim are in alternatives_to with no page. The pages already concede honest trade-offs (HandBrake: 'Equally on-device', deeper encoder tuning).",
+   "Journal: 'The Mac already shipped with every media tool — someone just had to wire them together' (the bet is consolidation, not novelty). 'Your photos shouldn't ride the elevator to a stranger's data centre' (the six steps an uploaded file takes: leaves, lands on operator storage, processed, held hours or days, downloaded, maybe deleted).",
+   "Drift to respect: both journal posts say 133 tools and 'one-time Pro, no subscription', and screenshot 1 shows '129 tools'. Front matter (152; monthly/annual/lifetime) is authoritative for the microsite."
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "Transit network diagram: your device is Zone 1",
+   "family": "cartography / transit wayfinding",
+   "why": "Everyone reads a metro map by heart, and routing a file to its tool is literally wayfinding. Five coloured lines (one per format family, coloured from the app's own per-family tints) leave one interchange called Drop, and every station is a real tool. Chained tools become interchanges. The whole network sits inside a fare-zone boundary labelled 'your iPhone or Mac', while the cloud converters' route runs outside it, unconnected."
+  },
+  {
+   "index": 2,
+   "name": "Mailroom sorting frame",
+   "family": "furniture / architecture",
+   "why": "Pigeonhole frames in offices, hotels and schools are known by sight. Every incoming item is read by its label and slotted into the right hole, which is exactly 'drop a file, it picks the tool'. The 152 holes carry brass label holders, and the ritual's own phrase ('internal post: never leaves the building') carries on-device."
+  },
+  {
+   "index": 3,
+   "name": "Photo-lab drop-off envelope and counter",
+   "family": "print / paper ephemera",
+   "why": "This is the pre-web counter where media got converted. You ticked film type, size and finish on a printed envelope, the clerk picked the process, and you kept a perforated claim stub. Labs also offered 'send out' for work they could not do in-house, which maps exactly onto cloud versus on-device. Here FILE TYPE ticks route to tools, 'Send out' is printed and struck through, and the claim stub is the download."
+  },
+  {
+   "index": 4,
+   "name": "Department-store lift-lobby directory",
+   "family": "architecture / building signage",
+   "why": "'Every department under one roof' is 'every tool in one app'. The changeable-letter lobby board lists floors (Video, Audio, Image, PDF, Archive, Ebook) with their departments (tools). The lift panel's buttons become navigation. It lifts the developer's own 'your photos shouldn't ride the elevator' essay: this lift has no button for the cloud."
+  },
+  {
+   "index": 5,
+   "name": "Broadcast machine-room rack",
+   "family": "instrument / hardware",
+   "why": "Before software, each conversion was its own box in a 19-inch rack: a standards converter, a loudness processor, a format router. MediaKit is the whole rack in one app. The rack's units stack in scroll order, silkscreened panels carry the real 'broadcast-grade / EBU R128 / ProRes' claims, and the brushed-steel, navy-backlit icon is already this material."
+  },
+  {
+   "index": 6,
+   "name": "Home darkroom under safelight",
+   "family": "place / lighting ritual",
+   "why": "People built home darkrooms so no lab would see their pictures, which is the deepest form of the privacy promise. Trays, timer and easel can stage drop, process and done. It carries on-device strongly, but carries the breadth (PDF, archive, audio) weakly."
+  },
+  {
+   "index": 7,
+   "name": "Workshop shadow board (literal 'kit')",
+   "family": "workshop / object",
+   "why": "A pegboard where every tool has its painted outline shows breadth and order at a glance. The five free-forever tools would be painted in a different colour. It is the literal reading of the name, so it is spent here and nowhere else, and it carries routing only by 'everything has its place'."
+  }
+ ],
+ "seed": {
+  "key": "f577b333",
+  "assigned": 3,
+  "reroll1": 3,
+  "reroll2": 5
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "Processed In-House",
+   "kicker": "THE ROLL",
+   "sourceIndex": 3,
+   "lineage": "The 1980s–2000s one-hour photo minilab counter: the printed drop-off envelope (FILM TYPE / SIZE / FINISH / SETS / SERVICE: 1-hour, next day, send out), its perforated claim-check stub, the backlit price board above the counter, the index print and the print wallet that came back.",
+   "thesis": "The page is the drop-off envelope of a lab that never sends anything out. 'Send out' is printed and then struck through, and ticking a file type routes it to its tools. It refuses the converter category's dashed upload box and its format-pill grid.",
+   "scene": "A Mac or iPhone owner at a bright desk in daytime with a file too big to send, reading the page the way you read an order form handed across a lit retail counter. So the scheme is light.",
+   "scheme": "light",
+   "colorStrategy": "Drenched: the ground IS the envelope's flood-printed process-cyan stock edge to edge. Form panels are knocked out to white. All type on cyan is black ink, and one magenta 'second ink' is reserved for ticks, rings and the in-house stamp.",
+   "palette": [
+    {
+     "hex": "#19A7E0",
+     "role": "Envelope stock: the drenched ground and flap bands (ink on it 6.8:1)"
+    },
+    {
+     "hex": "#101418",
+     "role": "Print ink: headlines, body, printed rules, perforations"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "Knock-out panels: order form, claim stub, reading column"
+    },
+    {
+     "hex": "#0A6C93",
+     "role": "Cyan-100 second print: field labels and captions on white (5.9:1)"
+    },
+    {
+     "hex": "#D1006F",
+     "role": "Magenta stamp ink: tick marks, free-forever rings, the IN-HOUSE stamp, focus ring on white (5.3:1)"
+    }
+   ],
+   "type": {
+    "display": "Sofia Sans Extra Condensed 900",
+    "text": "Sofia Sans 400, 600",
+    "utility": "Sofia Sans Condensed 600 (field labels, tick-box labels, price-board rows)",
+    "rationale": "Photo envelopes and lab price boards were set in heavy condensed grotesk to fit long option rows on a narrow form. Extra Condensed 900 gives that printed-stationery shout at 116px without running off the envelope. Sofia Sans 400/600 is the plain typed fill-in voice for reading copy, and the Condensed cut sets form labels. One superfamily works like a lab's matched stationery set. Four files total about 63 KB."
+   },
+   "materials": [
+    "Flat flood-printed cyan stock with no texture, as printed paper reads on screen",
+    "White knock-out form panels with 1px ink rules and 24px drawn tick boxes (CSS, never unicode)",
+    "Perforation: 2px dashed ink rule with 12px semicircle punches at both ends (the claim-stub tear line, reused as the section divider)",
+    "Magenta rubber-stamp ring (SVG textPath circle, 132px): 'PROCESSED IN-HOUSE · ON THIS DEVICE'",
+    "Borderless 'prints': Mac screenshots cropped 3:2 with a one-line back-print caption",
+    "Index-print strips: dense rows of tool-name cells read like a table",
+    "Themed focus: 3px magenta outline offset 2px on white, 3px ink outline on cyan"
+   ],
+   "firstViewportDesktop": "Cyan stock fills 1440x900. 0–56px: a white flap strip with a 1px ink rule. On the left, the icon at 28px and 'MediaKit' in Sofia Sans 600 18px. Centre-right, 'File types · Tool index · Price list · Questions · Privacy' in Condensed 600 15px; far right, an underlined 'Download free'. At x64 y96 the headline 'Every media tool. / One app for iPhone & Mac.' is set in Extra Condensed 900 at 116px/0.9, ink on cyan, two lines about 1080px wide. At y318 the subheadline runs in Sofia Sans 21px at 58ch. From y392 to 872, a white order-form panel spans x64–1000 with five 84px ruled rows, each led by a 132px cyan-100 condensed label. FILE TYPE holds six 24px tick boxes (Video, ticked in magenta, then Audio, Image, PDF, Archive, Ebook) at 600 20px. PROCESS lists Compress · Convert · Trim · Crop · Merge · Stabilize · Colour-adjust at 18px. PRESETS reads 'YouTube · Instagram · Discord · Podcast · Email · broadcast LUFS — 21 in all'. SERVICE shows a ticked box 'In-house: on this iPhone or Mac' next to 'Send out' printed and struck through with an ink rule, followed by 'not offered — nothing is uploaded'. PROOF holds a 288x172 print cropped from the app's result screen (55,3 MB → 42,7 MB, 22% smaller) with that caption. The 132px magenta stamp overlaps the SERVICE and PROOF rows at x840. From x1032 to 1376 (y392–872) sits the white claim-check stub, its left edge a dashed perforation with punched notches. Its title 'Claim check' is in 900 34px, with 'No. 6761451361' (the real App Store id) at 40px under it. Below come the official badge at 172px, the QR at 120px with 'Scan with your iPhone camera', the price line 'Free to start. Five tools free forever. Pro $3.99/mo · $22.99/yr · $39.99 lifetime.' at 16px, and 'iOS 17+ and macOS 14+ · one Universal Purchase' at 14px.",
+   "firstViewportMobile": "Cyan stock with 16px gutters. 0–52: white flap with icon 24 + 'MediaKit' 17px and a 'Menu' disclosure (44px target) on the right. y72: headline in Extra Condensed 900 at 54px/0.92 over three lines, ink. y258: subheadline in Sofia Sans 16px, four lines. y376–556: the claim-check stub as a full-width white strip whose perforation runs along its top edge: badge at 156px, then 'Free to start · Pro from $3.99/mo' and 'iPhone & Mac, one purchase' at 15px, and 'No. 6761451361' at 13px. No QR. y580–844: the order form begins with FILE TYPE as six 44px tick boxes wrapped 3x2 (Video ticked), then the PROCESS row starting 'Compress · Convert · Trim…'.",
+   "conversion": "The official badge lives untouched on the white claim-check stub, framed only by the perforation; on a Mac it opens the Mac App Store. The desktop QR (assets/qr/mediakit.svg, ≥1024px) sits on the stub as 'Scan with your iPhone camera'. The sticky bar is the stub torn off: a white strip with a dashed perforation on its top edge, 'MediaKit · Free to start · Pro from $3.99/mo' plus the badge at 120px. It appears once the hero stub scrolls away and never shows without JS. The price statement is price.value printed on the stub, and the full price board comes later. The Smart App Banner meta (app-id=6761451361) sits in head, and iOS Safari draws it above the flap.",
+   "visitorPath": [
+    "Envelope face (hero): headline and subheadline printed on cyan; the order form (FILE TYPE → PROCESS → PRESETS → SERVICE with 'Send out' struck through → PROOF print of the real result screen); the claim-check stub with badge, QR and price.value",
+    "Printed instructions: quick_answer as the envelope's opening paragraph (speakable), directly under the form. Beside it, the ai-canonical Quick reference as an always-open ruled 'Lab use only' box: platforms, iOS 17+/macOS 14+, Universal Purchase, price, data collected none, network none, account none, open-source libraries 1 (Unrar.swift)",
+    "Send-out route vs in-house: the journal's six steps an uploaded file takes, printed as a carbon slip with every line struck through, against 'Drop. Done.' (value_points[0]); privacy.notes and transparency facts, linked to /transparency/#mediakit",
+    "Index print: value_points as the sheet caption, then six strips (Video, Audio, Image, PDF, Archive, Ebook) of tool names drawn from features and the screenshots. Ebook lists its formats (EPUB, CBZ, HTML, RTF). The five free-forever tools are ringed in magenta, and '152 tools in all' comes from front matter",
+    "Standing orders: the six Shortcuts actions and menu-bar access (features[5]) set as a repeat-order slip",
+    "Print wallet: the 8 Mac screenshots as borderless prints in a horizontal scroll-snap strip, each with a back-print caption naming the screen (tool picker, result, Trim, audio Convert, PDF tools, ZIP compress, GIF Maker x2)",
+    "Is this lab for you: who_for as ticked boxes, who_not_for as empty boxes with the honest redirect (Final Cut or Resolve; a free web tool for one file a year)",
+    "Price board: the four plans as backlit board rows (name, price, summary, features). Pro Annual sits on the highlighted row, Lifetime keeps its 'Best long-term value' label, and plans_footnote follows as small print",
+    "Counter questions: all 7 FAQ answers printed open in a 64ch column (FAQPage)",
+    "Other labs in town: alternatives_to as a printed list. 14 names link to their /alternatives/ pages; Keka and ImageOptim appear as plain text",
+    "From the lab notebook: the two journal posts",
+    "Closing claim check: a full-width perforated stub with badge, QR and price; the maker/freshness line as a photo-paper back-print (Lagerland Apps · first released 1 Apr 2026 · last updated 13 Apr 2026); privacy policy and support links; other Lagerland apps as one printed line; then the shared 'A Lagerland app' strip"
+   ],
+   "navigation": "The envelope's top flap is the nav: 'File types · Tool index · Price list · Questions · Privacy' set as printed tab labels, with 'Download free' at the right. The current section is underlined in magenta. On mobile, 'Menu' is a details/summary that folds down like the flap, with the same five links at 44px rows.",
+   "signatureInteraction": "Name: 'Tick the file type'. Technique: the FILE TYPE row is a real radio group. Ticking one, via CSS :has(:checked) with no JS, draws the magenta tick, re-inks the PROCESS and PRESETS rows for that type, and moves the in-house stamp onto it. JS enhancement: drop a real file onto the envelope (or 'Choose a file' on phones). The browser reads only file.name, ticks the matching type ('.HEIC → Image') and prints 'Nothing left this page — only the file name was read'. No-JS fallback: the Video row is pre-ticked and every type's full tool list is printed statically in the Index print below, so no content depends on the control. Reduced motion: the stamp and tick appear instantly, with no press.",
+   "motionGrammar": "Paper does not animate; ink lands. On a tick, the stamp presses (scale 1.04 to 1 with an opacity fade, 120ms ease-out) and the tick draws in 90ms. The sticky stub rises 8px over 160ms. Perforations, prints and sections never move or scroll-reveal. Under prefers-reduced-motion every state change is instant.",
+   "readModeVariant": "Privacy, support and alternatives pages wear the envelope's back. A 72px cyan flap band carries the page title in Extra Condensed 900 ink, and a 24px cyan strip runs down each margin. The reading column is a white knock-out at 66ch in Sofia Sans 18px/1.6 ink. The privacy policy's sections are printed terms headed in Condensed 600, followed by a ruled 'Lab use only' box of transparency facts. Support is a counter slip that lists, as empty tick boxes, what to include (device, OS version, file type, what happened), with the email address. Alternatives pages set the head-to-head as a two-column ruled order form ('MediaKit | HandBrake'), 'Pick MediaKit if…' as ticked boxes and 'Stick with HandBrake if…' as empty boxes, then FAQ open, ending with the perforated claim stub.",
+   "assetsNeeded": "None required: stock, rules, perforations and the stamp are CSS/SVG, and prints are cropped from existing screenshots. Optional: portrait iPhone screenshots of MediaKit (none exist) for one iPhone print in the wallet, and a _data/mediakit_tools.yml with all 152 tool names by type so the index print can be complete and frame-numbered.",
+   "risk": "It leans on a ritual many visitors under 30 never did, and the cyan drench with condensed caps could tip into retro pastiche or risograph-zine trend. The photo-lab frame may read as 'a photo app' unless all six file types are visible in the first viewport. The order form's density has to stay legible at 390px.",
+   "memoryTest": "'It was a cyan photo-lab envelope where Send out was printed and crossed out. I ticked Video and it listed the tools, and the download button was the claim-check stub.'",
+   "specimen": {
+    "bg": "#19A7E0",
+    "ink": "#101418",
+    "accent": "#D1006F",
+    "display": "Sofia Sans Extra Condensed",
+    "dw": 900,
+    "text": "Sofia Sans",
+    "h1": "Every media tool. One app for iPhone & Mac.",
+    "sub": "Every media tool. One app for iPhone & Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Cyan stays with rightsplit-a: it is RightSplit's own accent and the constant RATE box. Re-stock mediakit-a's envelope in a lab house colour that no surface drenches in, e.g. a Fuji-lab green flood (~#2E9E5B, ink ≥5:1 on it). Keep the white form panels, and keep the magenta stamp on white only."
+    },
+    {
+     "sev": "major",
+     "text": "Set pawza-a in Anek Latin, unused elsewhere: wdth 75 for the index tabs and H1, wdth 100 for text. Re-colour the polypropylene as a translucent red file (~#B5332B, white text 5.6:1), and keep the white paper and the yellow 'To file' flag. tare-a keeps the blue triad, because Signboard Sky is the app's own art."
+    },
+    {
+     "sev": "major",
+     "text": "gymlogger-x-a keeps the teal, because RAL 6033 is its icon's check colour. mediakit-b keeps line maps: routing a file is wayfinding, and it is MediaKit's #1. Glaze xiangqiful-a's wall in a station colour no surface drenches in, e.g. grey-violet (~#5E5872), avoiding red/gold. Carry the game and the opponents with platform signage instead: direction boards, platform-number blades and bilingual exit lettering, with no octilinear lines or interchange rings."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Render the full ai-canonical block from app.html inside the box. The spec rows (which correctly show Unrar.swift as 1 third-party SDK) can head it."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "Zone One Network",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "The schematic metro diagram: Harry Beck's 1933 Underground diagram and Vignelli's 1972 New York map (octilinear lines, ticks for stations, rings for interchanges), fare-zone maps with shaded zone boundaries, and the in-car strip map that unrolls one line vertically.",
+   "thesis": "MediaKit's routing drawn as a working network. Five lines in the app's own per-family colours leave one interchange called Drop, and every station is a real tool. The whole network sits inside a dashed Zone 1 boundary marked 'your iPhone or Mac', and the cloud converters' route runs outside it, never connected. It refuses the converter's upload box and the utility page's feature-card grid.",
+   "scene": "Someone mid-errand reading a station's network map on a white enamel panel under bright platform light: glanceable, coloured lines, black type. So the scheme is light.",
+   "scheme": "light",
+   "colorStrategy": "Full palette: five named line colours (Video, Audio, Image, Documents, Archive), taken from the app's own per-family tints, run on white enamel with black type. Zone 1 is filled with ink at 6% over the ground, and the cloud route is ink-grey dashed. Colour only ever means 'which line'.",
+   "palette": [
+    {
+     "hex": "#F6F8F8",
+     "role": "White enamel map ground (cool, not cream)"
+    },
+    {
+     "hex": "#0F1214",
+     "role": "Ink: type, station ticks, interchange rings, zone boundary, focus ring"
+    },
+    {
+     "hex": "#1F4FD8",
+     "role": "Video line (white roundel letter 6.6:1)"
+    },
+    {
+     "hex": "#7B2FBF",
+     "role": "Audio line (white roundel letter 7.0:1)"
+    },
+    {
+     "hex": "#D2336A",
+     "role": "Image line (white roundel letter 4.6:1)"
+    },
+    {
+     "hex": "#E2620F",
+     "role": "Documents line, PDF plus EPUB/CBZ/HTML/RTF (black roundel letter 5.9:1)"
+    },
+    {
+     "hex": "#2E8540",
+     "role": "Archive line (white roundel letter 4.6:1)"
+    }
+   ],
+   "type": {
+    "display": "Overpass 800 (headline, line names), 600 (station names on the map)",
+    "text": "Atkinson Hyperlegible Next 400, 700",
+    "utility": "Overpass 800 tabular figures in the line roundels and fare table",
+    "rationale": "Overpass is the open revival of Highway Gothic, the FHWA sign alphabet. These are the most-read wayfinding letterforms in North America, so headings and line names read as enamel signage. Atkinson Hyperlegible Next was drawn for the Braille Institute to keep letters and figures apart, which matters on a map full of 'OCR', 'EXIF', 'RAR v5', 'AES-256' and 'R128'. Four files total about 60 KB."
+   },
+   "materials": [
+    "White vitreous-enamel ground, flat, with the map frame's rounded 12px corners",
+    "10px line strokes with 45° and 90° bends only (inline SVG drawn from front-matter tool names)",
+    "Station ticks: 4px ink. Interchanges: white disc with a 6px ink ring. Free-forever stations: filled ink disc keyed 'Free forever'",
+    "Line roundels: 28px coloured discs with one letter (V A I D Z), used as legend and navigation",
+    "Zone 1 boundary: 2px dashed ink rounded rectangle, ink-at-6% fill, label set into its top edge",
+    "Cloud-converter route: 3px grey dashed line with hollow stops, outside the zone",
+    "Timetable tables: black header rule, 1px ink row rules, tabular figures",
+    "Themed focus: 3px ink outline with a 2px white inner ring"
+   ],
+   "firstViewportDesktop": "White enamel fills 1440x900. 0–60: a nav strip with a 3px ink rule under it. On the left, the icon at 28px and 'MediaKit' in Overpass 800 20px. On the right, five 28px line roundels (V blue, A purple, I raspberry, D orange, Z green), each followed by its name in Atkinson 700 15px, then 'Fares', 'Questions' and an ink-outlined 'Download free'. 84–880: the Zone 1 boundary spans x40–1160 with 'Zone 1 — your iPhone or Mac' set into its top edge in Overpass 600 14px. At top-left inside the zone (x80–620, y110–330), the title cartouche sets 'Every media tool. One app for iPhone & Mac.' in Overpass 800 at 54px/1.02 ink, with the subheadline in Atkinson 18px below it. The Drop interchange (64px disc, 6px ring, 'Drop' in Overpass 800 28px) sits at x600 y560. Five 10px lines leave it octilinearly. Video runs east then north-east (Compress · Convert · Trim · Crop · Merge · Stabilize); Audio south-east (Extract · Convert · Normalize EBU R128 · Reduce noise · Transcribe); Image south-west (Compress · Resize · Convert · Upscale · Remove background · OCR · Strip EXIF); Documents west (Merge · Split · Compress · Redact · Sign · OCR · Compare); Archive north (Create ZIP · Extract RAR v5 · AES-256 · Batch extract). Station names are Atkinson 15px, and the five free-forever stops are filled discs. The Fares legend box (x820–1140, y640–860) has a white face and a 2px ink border: the official badge at 164px, the QR at 104px with 'Scan for iPhone', and 'Free to start · five tools free forever · Pro $3.99/mo, $22.99/yr or $39.99 lifetime' in Atkinson 15px. Outside the zone (x1200–1420), a grey dashed route titled 'Cloud converters' runs down the right edge with six hollow stops: Leaves your device · Operator storage · Processed · Held hours or days · Downloaded · Deleted? (unverifiable). The note under it reads 'No MediaKit line leaves Zone 1.'",
+   "firstViewportMobile": "White enamel with 16px gutters. 0–56: nav strip with icon 24 + 'MediaKit' in Overpass 800 18px and a 'Lines' disclosure on the right. y72: headline in Overpass 800 at 36px/1.05, three lines. y196: subheadline in Atkinson 16px, four lines. y316–466: Fares box with a 2px ink border: badge at 152px, 'Free to start · Pro from $3.99/mo' and 'iPhone & Mac, one purchase' at 15px. y490–844: the in-car strip map. The Drop disc sits at left with five 44px roundel stubs (V A I D Z) fanning right, each linking to its line. Then the Video line starts as an 8px blue line down the left gutter with stops 'Compress (free forever) · Convert · Trim…' at 16px. A dashed 'Zone 1 — your iPhone or Mac' boundary runs down the right edge.",
+   "conversion": "The official badge sits in the Fares legend box, a white face with an ink border like a map key, and is never recoloured; on a Mac it opens the Mac App Store. The QR sits beside it as 'Scan for iPhone' (≥1024px). The sticky bar is a next-station display: a white strip with a 3px ink top rule, the five roundels, 'MediaKit — free to start' and the badge at 120px. It appears after the Fares box leaves the viewport and never shows without JS. The price statement is price.value in the legend, and the full Fares timetable comes later. The Smart App Banner meta (app-id=6761451361) sits in head.",
+   "visitorPath": [
+    "Network map (hero): title cartouche, Drop interchange, five lines with real tool stations, free-forever stops marked, Zone 1 boundary, cloud-converter route outside it, and the Fares legend with badge, QR and price",
+    "About this network: quick_answer (speakable) as the map's explanatory panel. Next to it, the ai-canonical Quick reference as an always-visible 'Network facts' timetable: platforms, iOS 17+/macOS 14+, Universal Purchase, price, data collected none, network none, account none, open-source libraries 1 (Unrar.swift)",
+    "Five line sections (features 0–4) as vertical in-car strip maps in each line's colour. Each has a heading such as 'Video line: broadcast-grade video', the feature description, stations (tools), formats from the FAQ, and one Mac screenshot (Trim for Video, audio Convert for Audio, tool picker for Image, PDF tools for Documents, ZIP compress for Archive)",
+    "Through services: the six Shortcuts actions and menu-bar access drawn as one ink through-route touching stations on several lines, captioned with value_points 'Drop. Done.' and 'Every format. One app.'",
+    "Why no line leaves Zone 1: the journal's six-step upload route against MediaKit. The Apple frameworks (AVFoundation, CoreImage, PDFKit, Vision, Speech, Compression) appear as the depots the lines run from, with privacy.notes and transparency facts linked to /transparency/#mediakit",
+    "Who this network serves: who_for as stops on an ink line; who_not_for as 'not served' stops with the honest redirect",
+    "Fares: the four plans as a fare timetable (name, price, summary, features). Annual is on the highlighted row, Lifetime is 'Best long-term value', the five free stations are listed, and plans_footnote closes the table",
+    "Station views: the result screen and both GIF Maker shots in a scroll-snap strip under a thin ink line",
+    "Passenger information: all 7 FAQ, open, 66ch",
+    "Connections: alternatives_to as an interchange list (14 linked pages; Keka and ImageOptim as plain names), the two journal posts, and other Lagerland apps as 'other networks'",
+    "Board here: closing badge, QR and price; the map imprint line (Lagerland Apps · first released 1 Apr 2026 · revised 13 Apr 2026); privacy policy and support; shared 'A Lagerland app' strip"
+   ],
+   "navigation": "The line legend is the navigation. Five roundels (V Video, A Audio, I Image, D Documents, Z Archive) jump to their line sections, followed by 'Fares', 'Questions' and 'Download free'. The current line's roundel gains an ink ring. On mobile, 'Lines' opens a details panel listing the roundels and named links at 44px rows. Sub-pages use a breadcrumb drawn as a short ink line with stops (Lagerland → MediaKit → Privacy).",
+   "signatureInteraction": "Name: 'Drop at Drop'. Technique: the Drop interchange is a real drop target, with a 'Choose a file' input on touch. JS reads only file.name (never the contents) and maps the extension using the FAQ's format lists. The matching line stays in full colour while the other four fade to 20% ink, and a departure-board line prints 'IMG_0937.HEIC → Image line: Convert · Compress · Resize · Strip EXIF · OCR', then 'Only the file name was read. Nothing left this page.' Without JS, hovering or focusing a legend roundel isolates its line with CSS :has(). Format chips (MP4 MOV MKV · MP3 FLAC WAV · HEIC RAW PNG · PDF EPUB · ZIP RAR) are plain links to each line section. No-JS fallback: the full static map with every line and station visible. Reduced motion: the line isolation switches instantly, with no line-draw.",
+   "motionGrammar": "Lines draw once on first load (stroke-dashoffset, 700ms ease-out-quart, staggered 80ms per line), but only under html.js, so the map is fully drawn without JS. Isolation crossfades over 180ms, the departure line types in over 240ms, and the sticky next-station bar slides up 160ms. Sections never reveal on scroll. prefers-reduced-motion turns everything off.",
+   "readModeVariant": "Privacy, support and alternatives pages become station information pages. A route-bar breadcrumb runs across the top (an ink line with stops Lagerland → MediaKit → this page), and the title is set in Overpass 800 on white enamel. The reading column is Atkinson 18px/1.6 ink at 66ch, with tables set as timetables. The privacy policy's sections become stops on a vertical ink contents line (Overview → Data collection → Storage → Third parties → Children → Changes → Contact), with a 'Network facts' table of transparency data. Support is a 'Help point' panel with the email address and a stop-list of what to include. Alternatives pages draw a two-line comparison strip ('MediaKit network: five lines' vs the competitor's single grey line, labelled only with facts from the page), then the comparison as a timetable, 'Pick MediaKit if…' and 'Stick with HandBrake if…' as two strip lists, FAQ, and the Fares box.",
+   "assetsNeeded": "None required: the diagram is hand-placed inline SVG built from front-matter tool names, and the screenshots exist. Strongly recommended: a _data/mediakit_tools.yml with all 152 tool names by family, so every line can show its full station list and not only the tools named in features and screenshots. Optional: portrait iPhone screenshots for the strip-map sections.",
+   "risk": "This is the most familiar strong idea: 'a subway map of X' is a well-worn explainer trope, and it is where many runs would land. It only earns its place if stations are working links and the legend really is the navigation, not a poster. The octilinear SVG has to be laid out by hand once and maintained when tools change. On phones the network collapses to strip maps, so the whole-network view is a desktop-first moment. Station lists stay partial until the full tool catalogue exists.",
+   "memoryTest": "'A white metro map where every station was a tool. Five coloured lines met at Drop, all inside a dashed Zone 1 that said your iPhone or Mac, and the cloud converters' line sat outside it, never connected.'",
+   "specimen": {
+    "bg": "#F6F8F8",
+    "ink": "#0F1214",
+    "accent": "#E2620F",
+    "display": "Overpass",
+    "dw": 800,
+    "text": "Atkinson Hyperlegible Next",
+    "h1": "Every media tool. One app for iPhone & Mac.",
+    "sub": "Every media tool. One app for iPhone & Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Draw each line once as a fixed trunk path with evenly spaced station slots computed in Liquid (offset = index × spacing along a straight run, labels alternating sides), fed from _data/mediakit_tools.yml. Only the five trunks and the Drop interchange are drawn by hand."
+    },
+    {
+     "sev": "major",
+     "text": "Set the text in Overpass 400/700, the same Highway Gothic family as the display (about 34 KB). One family carries the whole transit map."
+    },
+    {
+     "sev": "major",
+     "text": "Render the full ai-canonical block from app.html inside the box. The spec rows (which correctly show Unrar.swift as 1 third-party SDK) can head it."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "The Whole Rack",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 5,
+   "lineage": "The broadcast master-control machine room: the 19-inch EIA-310 equipment rack (1U = 1.75in) with rack ears and oval screw slots, silkscreened front panels of standards converters and loudness processors, jewel pilot lamps, rotary input selectors and rack-mount confidence monitors. Every format conversion used to be its own box here.",
+   "thesis": "Every conversion used to be a separate box bolted into a rack. The page is one rack seen from the front, where every box is a module of the same app, stacked unit by unit as you scroll. It refuses both the converter's upload box and the Mac-utility page's icon-over-screenshot.",
+   "scene": "A video editor or podcaster in a dim edit suite at night, the room lit only by the Mac screen and the rack's pilot lamps. So the scheme is dark.",
+   "scheme": "dark",
+   "colorStrategy": "Committed: deep blue-anodised aluminium (the icon's navy-steel) covers about 60% of the surface as module faceplates, framed by black rack rails. White silkscreen sets all type, and amber and green pilot-lamp jewels are the only saturated marks, each with a job: amber means selected or active, green means on-device or free. There is no glow anywhere.",
+   "palette": [
+    {
+     "hex": "#1B2F5E",
+     "role": "Blue-anodise faceplates: the committed ground of every module (white on it 13:1)"
+    },
+    {
+     "hex": "#0B0E14",
+     "role": "Rack rails, monitor bezels, the sticky 1U strip's rails"
+    },
+    {
+     "hex": "#12203F",
+     "role": "Recesses: seams between modules, the input well, unlit lamp glass"
+    },
+    {
+     "hex": "#EEF2F7",
+     "role": "Silkscreen white: headlines, legends, body"
+    },
+    {
+     "hex": "#A9B8D3",
+     "role": "Secondary legend, captions, clear-anodise ear plates (6.5:1 on panel)"
+    },
+    {
+     "hex": "#FFB21A",
+     "role": "Amber lamp: selected processor, active nav, themed focus ring (7.2:1 on panel)"
+    },
+    {
+     "hex": "#3BD47A",
+     "role": "Green lamp: 'Network: none', free-forever tools, who_for bullets"
+    }
+   ],
+   "type": {
+    "display": "Michroma 400",
+    "text": "Barlow 400, 500",
+    "utility": "B612 Mono 400 (real readouts only: 55.3 MB → 42.7 MB, 0:42, 1920×1080, 152, 21, 6, prices in the plan rows)",
+    "rationale": "Michroma revives Microgramma Extended, the wide capitals silkscreened onto 1970s–80s broadcast and studio rack panels. Its single weight is right for silkscreen, where legends have one ink weight. Barlow is a low-contrast industrial grotesk drawn from California plates and highway signs, and it reads as the operator's manual on dark at 17px. B612 Mono was drawn for Airbus cockpit displays, and it appears only where a real figure is read out. Four files total about 81 KB."
+   },
+   "materials": [
+    "Blue-anodised brushed faceplates: base #1B2F5E with a horizontal repeating-linear-gradient grain at 3% contrast (CSS)",
+    "Black rack rails both sides with clear-anodise ear plates and an oval screw slot every 1U (CSS radial gradients). 1U = 48px desktop / 40px mobile sets the page's vertical rhythm",
+    "2px recessed seams between modules; engraved 1px hairline frames around control groups",
+    "Pilot-lamp jewels: 12px flat circles with a 2px white specular dot, lit or unlit, never haloed",
+    "Rotary selector knob: 120px, five engraved detents (radio group)",
+    "Rack-mount confidence monitors: 16px black bezel around real Mac screenshots",
+    "Serial plate: an engraved rectangle for the maker/freshness line"
+   ],
+   "firstViewportDesktop": "Rails at x0–64 and x1376–1440 in #0B0E14 with silver ears and a screw slot every 48px. Between them, blue-anodise modules are separated by 2px seams. 0–48 (1U) is the nav module: icon at 24px, 'MediaKit' in Michroma 15px, push-button legends 'Input · Processors · Price · Manual · Privacy' in Barlow 500 14px with an amber lamp by the active one, and 'Download free' on the right. 48–384 (7U) is the Master module. At x112 the headline 'Every media tool. / One app for iPhone & Mac.' is set in Michroma at 56px/1.15, silkscreen white, with the subheadline in Barlow 20px #A9B8D3 at 60ch under it. In the right third (x1000–1330) sits the INPUT selector: a 120px knob with five engraved detents (Video · Audio · Image · Document · Archive), each with a 12px lamp (Video lit amber), and below it a 300x88 engraved well reading 'Input — drop any file'. 384–816 (9U) is the Output module. At x112–760, a black-bezel rack monitor shows the selected processor's real screen (Trim, 632x376). At x800–1330, the official badge sits at 180px in an engraved bay, with the QR at 120px and 'iPhone — scan to install' in Barlow 15px. The price legend reads 'Free to start · five tools free forever · Pro $3.99/mo · $22.99/yr · $39.99 lifetime' in Barlow 17px, with a green lamp and 'Network: none' in B612 Mono 14px. 816–900: the 3U Readout plate begins, setting the Quick Answer in Barlow 18px.",
+   "firstViewportMobile": "Rails shrink to 12px strips with a slot every 40px, leaving 16px gutters inside. 0–40 (1U): icon 22 + 'MediaKit' in Michroma 13px and a 'Menu' push-button (44px target). Master module: headline in Michroma at 26px/1.25 over four lines, then the subheadline in Barlow 16px over five lines. Output module: badge at 160px in its engraved bay, 'Free to start · Pro from $3.99/mo · iPhone & Mac' in 15px, and the green lamp with 'Network: none'. Then the rack monitor runs full width (358x213) with the Trim screen. Under it, the INPUT selector becomes a five-position slide switch (radio row, 44px targets) with lamps. No QR.",
+   "conversion": "The official badge is mounted untouched in an engraved bay on the Output module; on a Mac it opens the Mac App Store. The desktop QR sits beside it as 'iPhone — scan to install'. The sticky bar is a 1U remote strip docked at the bottom: a blue-anodise face between black rail stubs, with an amber lamp, 'MediaKit · free to start' and the badge at 120px. It appears once the Output module leaves the viewport and never shows without JS. price.value is silkscreened on the Output module, the full Price module comes later, and the Smart App Banner meta (app-id=6761451361) sits in head.",
+   "visitorPath": [
+    "1U nav module",
+    "Master module (7U): headline, subheadline, INPUT selector and drop well",
+    "Output module (9U): rack monitor with the real screen, badge, QR, price.value and the 'Network: none' lamp",
+    "Readout plate (3U): quick_answer (speakable), and beside it the ai-canonical Quick reference as the unit's spec plate (platforms, iOS 17+/macOS 14+, Universal Purchase, price, data collected none, network none, account none, open-source libraries 1: Unrar.swift), always visible",
+    "Front-panel legend strip (2U): the four value_points as engraved legends in one row, divided by hairlines and read as text, not cards",
+    "Five processor modules (4U each): Video, Audio, Image, Document (PDF plus the EPUB/CBZ/HTML/RTF formats) and Archive. The module legend IS the heading (e.g. 'Broadcast-grade video' in Michroma with its lamp), followed by the feature text, the tools as engraved front-panel legends, and a monitor inset with its screenshot, alternating sides",
+    "Control module: the six Shortcuts actions as six engraved push-button legends, plus menu-bar access",
+    "Isolation module (privacy): 'Network: none' in B612 Mono, the Apple frameworks listed as the unit's internal boards, privacy.notes, transparency facts and a link to /transparency/#mediakit",
+    "Fit check: who_for with green lamp bullets, who_not_for with amber lamp bullets and the honest redirect",
+    "Price module: the four plans as four 1U rows (lamp, name in Michroma, price in B612 Mono, summary and features in Barlow); Annual's lamp lit, Lifetime labelled 'Best long-term value'; plans_footnote; the five free-forever tools",
+    "Monitor wall: all 8 screenshots in a scroll-snap strip of bezelled monitors",
+    "Operator's manual: the 7 FAQ answers, open, in a 66ch column",
+    "Compared with: alternatives_to as a patch list (14 linked pages; Keka and ImageOptim as plain names)",
+    "Engineering notes: the two journal posts",
+    "Closing Output module (badge, QR, price), the serial plate (Lagerland Apps · first released 2026-04-01 · last updated 2026-04-13), privacy policy and support, other Lagerland apps, then the shared 'A Lagerland app' strip"
+   ],
+   "navigation": "The 1U nav module carries push-button legends: Input, Processors, Price, Manual (FAQ), Privacy, and 'Download free'. An amber pilot lamp lights beside the section in view, using IntersectionObserver, and the static first item is lit without JS. On mobile, 'Menu' opens a details panel styled as the rack's unit index, listing every module with its U position.",
+   "signatureInteraction": "Name: 'Input selector'. Technique: a five-detent rotary knob that is a real radio group (arrow keys move detents). With CSS only (:has(:checked)), selecting a detent turns the knob, lights that lamp amber, and switches the Output monitor to that processor's real screenshot. JS enhancement: drop a real file into the engraved well (or 'Choose a file' on phones). The browser reads only file.name and file.size, sets the knob from the extension, and prints 'IN: IMG_0937.MOV · 55.3 MB → Video processor · read in your browser only' in B612 Mono. No-JS fallback: the Video detent is pre-selected, every processor module below shows its own screenshot and tools, and nothing depends on the knob. Reduced motion: the knob jumps to the detent and the lamp switches without the 80ms fade.",
+   "motionGrammar": "Hardware-literal and terse. The knob rotates 30° per detent over 140ms (ease-out-quart), lamps switch on in 80ms with no glow or bloom, the monitor crossfades in 100ms, and the sticky 1U strip slides up over 160ms. Modules are bolted in: no scroll reveals and no parallax. Under prefers-reduced-motion all states are instant.",
+   "readModeVariant": "On privacy, support and alternatives pages the rack frame stays: rails with screw slots in the margins, a 1U legend strip at the top with the page title in Michroma, and a serial plate at the foot. The reading column is one manual-page module: Barlow 17px/1.65 #EEF2F7 on #12203F at 66ch, headings in Michroma 22px, and tables set as spec plates with B612 Mono used only for figures. The privacy policy's sections are manual chapters, with a spec-plate table of transparency facts. Support is a 'service request' module with the email address and a lamp-bulleted list of what to include. Alternatives pages set the comparison as a spec sheet (rows: scope, encoder depth, platform, privacy; columns: MediaKit | HandBrake), 'Pick MediaKit if…' with green lamps and 'Stick with HandBrake if…' with amber lamps, then the FAQ and the Output module with the badge.",
+   "assetsNeeded": "None required: rails, anodise grain, lamps and the knob are CSS/SVG, and the monitors show existing Mac screenshots. Optional: portrait iPhone screenshots of MediaKit, so one monitor can show the iPhone app, and the _data/mediakit_tools.yml catalogue for complete front-panel tool legends.",
+   "risk": "A skeuomorphic hardware rack can tip into costume or dated pastiche. Dark navy with amber lamps sits one step from the 'near-black plus one accent' cluster, so the anodise must stay visibly blue and the lamps flat. Michroma is very wide: headlines drop to 26px on phones and long words need care. Consumer visitors may not know a broadcast rack, so the idea leans on the visible 'every box in one' reading rather than recognition.",
+   "memoryTest": "'The page was one blue equipment rack. Every tool was a module bolted in as I scrolled, I turned a knob to Audio and the monitor changed, and the download sat in its own Output panel next to a green Network: none lamp.'",
+   "specimen": {
+    "bg": "#1B2F5E",
+    "ink": "#EEF2F7",
+    "accent": "#FFB21A",
+    "display": "Michroma",
+    "dw": 400,
+    "text": "Barlow",
+    "h1": "Every media tool. One app for iPhone & Mac.",
+    "sub": "Every media tool. One app for iPhone & Mac.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Use the light-grey faceplates of classic broadcast kit (~#B9BDC3, black silkscreen ≥7:1) between black rails, so the dim suite reads only through the rails and the monitors. Pilot lamps are green and red, with no amber. Readouts are set in Sometype Mono (unused) instead of B612 Mono."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Use 720w and 1440w WebP derivatives (about 60 and 140 KB or less). Only the default Video detent is eager and preloaded. Give the other four loading=lazy and show them only when their detent is selected (one <picture> per detent, switched by CSS :has())."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Render the full ai-canonical block from app.html inside the box. The spec rows (which correctly show Unrar.swift as 1 third-party SDK) can head it."
+    }
+   ]
+  }
+ ],
+ "canon": "Canon (the standing exit, played straight): the dark Mac-utility product page, with a centred app icon and headline over a large Mac window screenshot on a deep gradient, a 'Download on the App Store' badge with a QR beside it, a row of format/feature cards, a three-column pricing table, an FAQ accordion and a footer, in the Permute / CleanShot register.",
+ "notes": "Roll: key f577b333, degraded (no catalog challengers, no network retry by instruction). The assigned index is 3. Reroll 1 also landed on 3, so reroll 2 was used and gave 5. Rerolls 3 (4) and 4 (7) were printed in the same command but not used. Neither 3 nor 5 is candidate 1, so Style B is IMPECCABLE’S PICK (candidate 1); A = 3 (THE ROLL), C = 5 (SECOND ROLL). The seven-candidate order was locked before the roll. Factual guardrails for whichever style ships: (1) MediaKit declares 1 third-party SDK (Unrar.swift, open-source, read-only RAR, no network), so the shared '0 third-party SDKs' trust fact must not be shown for this app; say '1 open-source library, no network'. (2) No how_it_works in front matter means no HowTo schema; none of the styles invents steps. If the owner wants HowTo, add how_it_works (e.g. Drop → Pick → Save) to _apps/mediakit.md first. (3) No founder block, so the maker/freshness line only. (4) No iPhone screenshots exist although platforms include iOS; every style works on the 8 Mac screenshots, and iPhone shots are an optional production task. (5) Drift: both journal posts say 133 tools and 'one-time Pro, no subscription', and screenshot 1 shows '129 tools', while front matter says 152 tools and monthly/annual/lifetime. The microsite renders front matter only, captions must not quote the 129, and the owner should refresh the posts. The HandBrake alternatives page also mentions AV1, which is not in front matter, so it needs checking before it is reused in any comparison. (6) alternatives_to lists 16 names but only 14 pages exist (Keka and ImageOptim have none); render those two as plain text. (7) On a Mac desktop the badge opens the Mac App Store directly, so the QR is secondary and explicitly 'for your iPhone'. (8) All three signatures read only file.name (C also file.size) in the browser, never contents, and say so; that demonstration is itself proof of 'nothing uploaded'. (9) A shared content task would help every style: _data/mediakit_tools.yml listing all 152 tool names by family (data, not art). Font budgets: A about 63 KB, B about 60 KB, C about 81 KB, all verified present on Fontsource with the named weights.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

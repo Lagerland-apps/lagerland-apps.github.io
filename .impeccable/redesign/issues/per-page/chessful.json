@@ -1,0 +1,146 @@
+[
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "pawza (vs mediakit, millrace, chessful, tare)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Thirteen-Pocket File shares its display face, Sofia Sans Extra Condensed (both H1s), with mediakit-a. Its Sofia Sans text puts the family in a third surface (mediakit-a, pawza-a, soon-b). Its palette (cobalt #2347A6 drench + white paper + yellow flag) is the board's most repeated triad. millrace-b has #23408E + white cards + yellow tier, chessful-c has #2338B0 + paper white + gold, and tare-a has #2172B8 + chalk white + yellow.",
+  "fix": "Set pawza-a in Anek Latin, unused elsewhere: wdth 75 for the index tabs and H1, wdth 100 for text. Re-colour the polypropylene as a translucent red file (~#B5332B, white text 5.6:1), and keep the white paper and the yellow 'To file' flag. tare-a keeps the blue triad, because Signboard Sky is the app's own art.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "chessful",
+  "style": "c",
+  "severity": "major",
+  "issue": "Key to Symbols drenches in cobalt (#2338B0) with paper white and the app's gold. That is a brighter version of the chess category default (navy/black + gold), and the same blue triad as pawza-a, millrace-b and tare-a.",
+  "fix": "Drop the gold: '!' and 'Better was' carry weight and size instead of a second colour. Bind the volume in a cloth no other surface drenches in, e.g. deep magenta (~#7E1F56, paper white ≥8:1). Avoid red + gold, which is Xiangqiful's costume, and the greens taken by wanderwiki-c and appmeta-pulse-c.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "chessful (vs xiangqiful)",
+  "style": "b",
+  "severity": "major",
+  "issue": "Move by Move has the same thesis as xiangqiful-c 'The Mistake Notebook': the mistakes from your own games copied out, the move marked, one sentence of why, and exercises built from your losses. It also uses the same device, one teacher's coloured pen over an open two-page book. Its single green on white (#1E6A46) repeats the board's 'white + one deep green' (millrace-c #1C5B3A, wanderwiki-c #23573A, xiangqiful-c #2F6B4A).",
+  "fix": "xiangqiful-c keeps the hand-marked notebook. chessful-b stays a typeset book. The 'better was' rings become a printed second ink in a non-green colour (e.g. printed blue or red-orange) with no pen strokes. The hero is a single recto page (title page plus frontispiece diagram) instead of an open spread.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "mockly (vs chessful, pawza)",
+  "style": "a",
+  "severity": "major",
+  "issue": "The census misses one display collision. Saira Condensed (mockly-a's H1 and piece numerals) is the narrow width of Saira, chessful-a's display face, so two surfaces share a display skeleton. mockly-a's text face, Albert Sans, is also pawza-c's display and text face.",
+  "fix": "chessful-a keeps Saira for its squared 1980s electronics legends. Set mockly-a in Asap Condensed 600/700 for the H1, piece numerals and size labels, and Asap 400/600 for text. That is one family unused elsewhere, and it also clears the Albert Sans share.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "soon (vs chessful)",
+  "style": "a",
+  "severity": "minor",
+  "issue": "Literata is chessful-b's display and text face and soon-a's text and figure face.",
+  "fix": "chessful-b keeps it. Give soon-a a reading serif no other style uses, e.g. Petrona 400/600 with tabular lining figures.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "chessful (vs earnlock)",
+  "style": "a",
+  "severity": "minor",
+  "issue": "The Sensory Board's recessed grey-green LCD window (#A7B29A) with dot-matrix moves is the same reflective-LCD material as earnlock-c's whole-page LCD (#C5CDB3).",
+  "fix": "Use a small red LED readout, as on the original 1977 Chess Challenger, instead of a reflective LCD, so the LCD material belongs to earnlock-c.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "chessful",
+  "style": "a,b",
+  "severity": "major",
+  "issue": "On mobile the badge is below the first visible viewport: y624 to 712 in style a, y612 to 700 in style b. iOS Safari shows about 664 to 750px of an 844px screen, and the Smart App Banner takes about 80px more when it shows. The Google app and in-app browsers show no banner at all, so for those visitors the official badge is the only action, and it is off-screen.",
+  "fix": "Style a: move the module well (price plus badge) to about y256, straight under the LCD sentence, and start the board below it. Style b: put the price line and badge between the H1 and the diagram (about y170 to 260). Rule for every mobile plan: the badge's bottom edge sits at y560 or above in the 390x844 composition.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "chessful",
+  "style": "c",
+  "severity": "major",
+  "issue": "Focus is invisible on the paper key pages: the gold ring #F2C14E is 1.54:1 on #F6F5F0, an AA failure wherever those pages appear (the Read-mode privacy, support and alternatives pages).",
+  "fix": "On paper, switch the ring to deep ink #101536 (16.3:1). Keep gold only on the dark volume ground.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "chessful",
+  "style": "c",
+  "severity": "major",
+  "issue": "Palette collision in a cobalt cluster: chessful-c #2338B0 (drench), earnlock-c #2443B8 (shell), millrace-b #23408E (tray) and pawza-a #2347A6 (page ground) all set white type on the same mid-cobalt, and none of the four takes it from its app icon. Keep it on pawza-a, where cobalt polypropylene is the expanding file's own stock colour and the ground of the whole page. Tare-a's lighter cerulean board is native to the app and can stay.",
+  "fix": "Give the Informant volume a different colour: violet #3B2A8F. Paper #F6F5F0 on it is 10.05:1, gloss #C9D0F2 is 7.2:1 and gold #F2C14E is 6.54:1. Violet is free once mockly-c leaves it.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "chessful",
+  "style": "a",
+  "severity": "minor",
+  "issue": "Shared material with earnlock-c: both build on a reflective grey-green LCD with dark segment ink (#A7B29A window vs #C5CDB3 ground) and pressable plastic keys.",
+  "fix": "If both are picked, keep the LCD on earnlock-c, where the whole page is the LCD. Shift chessful-a's readout window toward the housing grey (for example #B9BDB4, graphite 7.67:1) so it reads as a chess computer's panel rather than a pedometer.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "chessful",
+  "style": "a, b, c",
+  "severity": "major",
+  "issue": "The ai-canonical Quick reference is recast as a short spec table: a 'Specifications' plate with engine, platforms, price, account, network, opponents and dimensions; b's imprint table adds languages 32; c is similar. That drops the canonical body app.html renders (What it is, What it does = seo.description, Positioning, every feature, Best for / Not the right fit, alternatives_to, and the app_enrichment use_cases / recommend_when), which is the AI-citation payload.",
+  "fix": "Keep the ai-canonical body exactly as the Liquid block in _layouts/app.html builds it, restyled in-world. The spec table may sit above it as a lede but must never replace it.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "chessful",
+  "style": "a",
+  "severity": "minor",
+  "issue": "TAKE BACK: with JS, six motif keys swap a single board, LCD and reading plate, so five example_insights bodies are hidden at any moment. They are visible only in the no-JS mini-board sequence.",
+  "fix": "Keep all six bodies printed on reading plates under the board with JS on. The keys only re-light the LEDs and LCD and scroll to the matching plate.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "chessful",
+  "style": "a, c",
+  "severity": "minor",
+  "issue": "Hero privacy lines are unlinked: a's 'Stockfish on-device · No network · No account' sticker and c's 'offline · no account' install-row line.",
+  "fix": "Link the line to /transparency/#chessful.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "chessful",
+  "style": "b",
+  "severity": "minor",
+  "issue": "The visitorPath has no link to /apps/chessful/support/ and no support email or response time. The Preface (founder) lists story, signals and studio link only, and 'Copyright & data' links only the transparency record and the privacy policy.",
+  "fix": "Add the support page link and the support email with its response time to 'Copyright & data' or the Preface.",
+  "lens": "truth-contract"
+ }
+]

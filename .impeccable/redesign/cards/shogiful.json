@@ -1,0 +1,436 @@
+{
+ "surface": "shogiful — /apps/shogiful/ (Persuade) + /apps/shogiful/privacy/, /apps/shogiful/support/ and the six /alternatives/ pages that target it (81dojo, kanazawa-shogi, lishogi, piyoshogi, shogi-quest, shogi-wars) as Read variants",
+ "dossier": {
+  "mechanism": "Shogiful runs YaneuraOu on-device over every game you play against its AI opponents, sorts each significant mistake into shogi's own categories (drop, promotion, castle, missed tsume) and states it as one plain-English sentence on a board you can read without kanji. It then drills those same patterns back to you with spaced repetition.",
+  "audienceScene": "A Westerner who already plays chess and met shogi through anime, a board-game night or YouTube. It is evening, they are on their phone, and they have just lost to a drop they never saw. They arrive from Google or an AI answer ('shogi app english', 'learn shogi without kanji', 'Shogi Wars alternative'). On desktop they are researching and have to get the app onto their iPhone.",
+  "culturalHome": "Shogi culture as a foreigner meets it: public and televised commentary at the big magnetic board (大盤解説), tsume problem books and newspaper columns, the kifu record and Hodges notation (P-7f, S*4e), the club or dojo with its rank tags, kyu/dan ranks and post-game review (感想戦), and shogi manga and anime. On top of that sit the chess player's own habits: annotated games and demonstration boards.",
+  "mustProve": "Within the first viewport, show a real kind of shogi mistake explained in one plain sentence ('You dropped the silver to 4d. A knight drop on 3c forked king and rook.') on a board labelled in Western notation. Beside it sit the working App Store badge, the desktop QR and the price statement 'Free — Premium from $1.99/mo'.",
+  "categoryDefault": "A dark navy/black page with a gold glow (the register of the app's own 王-koma icon), a 3D wooden board inside an iPhone bezel, kanji everywhere, ink-wash, samurai or sakura cues, a split hero with a badge row, then a grid of feature cards.",
+  "predictableOpposite": "Either a bright, flat beginner page led by a mascot (the PiyoShogi-chick or Duolingo register), or a clinical white 'AI coach' SaaS page full of evaluation graphs and accuracy rings.",
+  "literalReading": "Shogi-ful read literally gives the wedge-shaped koma on a kaya board (the icon is literally a 王 piece). The headline 'speaks your language' read literally gives translation, subtitles or a phrasebook. Candidate 6 (subtitle track) is the one literal slot among the seven, and none of the three styles uses it.",
+  "evidence": [
+   "_apps/shogiful.md: freemium; price.value 'Free — Premium from $1.99/mo'; plans Free $0 / $1.99 mo / $9.99 yr (highlight, ~58% cheaper) / $19.99 Lifetime ('Best long-term value'); schema 0–19.99, 4 offers; platforms iOS, iPadOS, macOS; status live; App Store id6761656926",
+   "Optional blocks present: hero (pre_headline, headline, subheadline, cta 'Download Free'), founder (Organization, story, 4 signals, studio link, support email, response time), who_for 6 / who_not_for 4, value_points 4, features 6, how_it_works 6 steps (HowTo), example_insights 6 worked mistakes (anchor 'templates'), comparison_table 5 × 11 rows, roadmap 6 items, screenshots 7, faq 15, privacy notes 5, alternatives_to 6, related_journal, show_body + about_heading, related_apps xiangqiful + chessful. Not present: spotlight, plateau_disclosure, training_vocabulary, coach_cta, testimonials (none in _data/testimonials.yml)",
+   "ratings 3.3 from 14 ratings: below 25, so no stars and no aggregateRating anywhere",
+   "Screenshots (900×1955, dark UI): navy-black #0B0F1A ground, slate cards, mustard-gold #D4A843 primary buttons; red 'You played P-5e' and green 'Best was P*3d' on the Mistake Detail screen; blond 2D board with red-lacquer kanji pieces; files 9…1 and ranks a…i around the board; Hodges move list; a 3D brown wood board on the Play screen; '3k' kyu rank on the dashboard. Every screenshot shows kanji pieces. No Western piece set appears in any asset.",
+   "Roster conflict: the front matter says 10 opponents across 4 tiers, from Hana (~500) to Sensei (~1800). Screenshot 7 shows Novice Koishi 400 … Tsubomi 550, Beginner Suzume 580 … Kaede 680, Next Challenge Kiri 1,400, and screenshot 4 shows Inazuma. That is more than 10 names, and none of them is Hana or Sensei.",
+   "Icon: black koma with a gold 王 and circuit traces glowing on near-black. It belongs to the category default, so it is used only as the icon.",
+   "_data/transparency.yml shogiful: 0 third-party SDKs, 0 tracking domains, no account, analytics none, network calls none to third parties (NNUE file fetched once via Apple On-Demand Resources), optional iCloud sync to your own iCloud, required-reason API UserDefaults CA92.1",
+   "Journal 'making-shogi-readable-without-kanji': all 8 pieces share one wedge and are told apart only by kanji. Readability needs identity + movement + promotion state. Behaviour first, symbol second. Western set is the default outside Japanese locales. Hodges/Hosking notation (P-7f, S*4e). Journal 'reading-a-shogi-engine-evaluation': words instead of numbers, eval bands.",
+   "Alternatives (shogi-wars, piyoshogi read in full; 81dojo, lishogi, shogi-quest, kanazawa-shogi target it): positioned as 'the practice room, not the arena'; each page has an honest verdict, a 2-column table, FAQ and app card",
+   "Privacy page front matter has an seo block; overview / data_collection / data_storage / third_parties (StoreKit, Game Center) / children / changes. Support page has an seo block and slug.",
+   "Freshness: first_release and last_updated both 2026-06-11. The roadmap's 'Targeted 2026 Q3' item has passed as of 2026-10-05 and has to render with its 'last reviewed 2026-06-11' disclaimer."
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "Ōban commentary board (大盤解説)",
+   "family": "broadcast / stage instrument",
+   "why": "At every title match a professional stands at a giant vertical magnetic board, slides flat piece plates and explains each move aloud to a hall or a TV audience. That is Shogiful's job done in public, and chess players know the same thing as the demonstration board. It carries the mechanism by making the page one big board on which each worked mistake is replayed with a 'you played' magnet, a 'best was' magnet and one spoken sentence."
+  },
+  {
+   "index": 2,
+   "name": "Tsume-shogi problem book and newspaper column",
+   "family": "print / publication",
+   "why": "Edo-era tsume collections (the roadmap draws on them) and the daily newspaper tsume column are shogi's self-study ritual. It carries the mechanism by setting each of your own mistakes as a numbered problem diagram with the pieces in hand listed and the plain-language answer one fold below."
+  },
+  {
+   "index": 3,
+   "name": "Kifu record sheet (棋譜用紙)",
+   "family": "paper form / notation",
+   "why": "This is the ruled game-record form the record-keeper fills in pencil, and the annotated-game page every chess player learned from. It carries 'move by move' as the page's structure: your game's move list in Hodges notation runs down the page, and the mistake rows are annotated in sentences in the margin."
+  },
+  {
+   "index": 4,
+   "name": "1964 Tokyo pictogram program",
+   "family": "signage / identity program",
+   "why": "Japan built the first modern sports pictogram system (Katsumi Masaru, Yamashita Yoshirō) so visitors who could not read kanji could find their way, which is the same problem Shogiful solves on the board. It carries the Western piece set and its movement indicators as a full pictogram identity on a construction grid that reads without a single character."
+  },
+  {
+   "index": 5,
+   "name": "Shogi manga explainer chapter",
+   "family": "print / sequential art",
+   "why": "Many Westerners meet shogi through manga and anime (March Comes in Like a Lion has explainer pages), and the English editions keep the Japanese sound effects with small translations beside them. It carries the coaching loop as panels (board, drop, focus lines on the missed square, explanation in a balloon) and carries 'speaks your language' as translated SFX."
+  },
+  {
+   "index": 6,
+   "name": "English subtitle track",
+   "family": "screen / broadcast typography",
+   "why": "The anime-curious audience watches Japanese with English subtitles. It carries the engine-to-English translation as timed subtitle lines under board stills. It is the literal reading of the headline metaphor, so it takes the single literal slot."
+  },
+  {
+   "index": 7,
+   "name": "Dojo rank-tag wall (名札掛け)",
+   "family": "architecture / place",
+   "why": "Shogi clubs (and the martial-arts dojos Westerners know) hang members' wooden name tags under kyu/dan headers and re-hang them on promotion, beside the fee plaques and the posted rules. It carries the 10-opponent ladder (beat each twice to unlock the next), the visitor's own progress, the offer and the house rules (no account, no ads, no clock) as the fixtures of one wall. Of the seven it is the weakest at carrying the explanations."
+  }
+ ],
+ "seed": {
+  "key": "c0f5a51b",
+  "assigned": 7,
+  "reroll1": 5
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "The Club Tag Wall",
+   "kicker": "THE ROLL",
+   "sourceIndex": 7,
+   "lineage": "The 名札掛け (nafuda-kake) of a Japanese shogi club (将棋道場/将棋センター): hinoki name tags hung on a lacquered rail under kyu/dan header plaques and re-hung on promotion. Around it on the same wall: the seat-fee plaques (席料), the printed house rules, the cork board with review and 次の一手 quiz sheets, the ○△× marks of Japanese evaluation charts, the framed operating licence by the door, and the owner's hanko stamp.",
+   "thesis": "The page is one club wall read top to bottom. The AI opponents and the visitor's own blank tag hang on a real rank rack, and that rack is also the navigation. The offer hangs as fee plaques and the coaching proof is pinned up as a review notice. It refuses both the category's dark-navy-and-gold 3D-board hero and the split-hero template.",
+   "scene": "A chess player who has just lost to a drop reads on their phone in the evening, as if standing in front of a neighbourhood shogi club's wall under flat fluorescent tubes: shadowless cool-white light on painted plaster and pale hinoki. The scheme is light only.",
+   "scheme": "light",
+   "colorStrategy": "Committed",
+   "palette": [
+    {
+     "hex": "#9FBCA8",
+     "role": "Celadon painted plaster, the wall itself and the page ground (about 55% of every viewport)"
+    },
+    {
+     "hex": "#ECDDBF",
+     "role": "Hinoki tag face: opponent tags, fee plaques, the YOU tag"
+    },
+    {
+     "hex": "#F7F6F1",
+     "role": "Notice paper: pinned sheets that hold all long reading"
+    },
+    {
+     "hex": "#1E1D1A",
+     "role": "Sumi ink for lettering and body text (8.2:1 on plaster, 15.6:1 on paper)"
+    },
+    {
+     "hex": "#2A2622",
+     "role": "Lacquered rail and plaques: nav rail, rank headers, hengaku headline plank, badge mount (paper lettering 13.9:1)"
+    },
+    {
+     "hex": "#A92D1C",
+     "role": "Seal vermilion: hanko stamps, YOU-tag edge, themed focus ring (6.3:1 on paper; 3.3:1 on plaster, so non-text only there)"
+    }
+   ],
+   "type": {
+    "display": "Shippori Mincho B1 800 (32 KB): headline plank, rank plaques, upright-stacked names on 64px tags",
+    "text": "BIZ UDPGothic 400/700 (54 KB): every printed notice, the FAQ, tables and prices",
+    "utility": "Yusei Magic 400 (17 KB): the club owner's marker notes on notices, e.g. 'scan with your iPhone camera', 'beat each one twice'",
+    "rationale": "Shippori Mincho B1's ink-pooled heavy mincho reads as sumi lettering on wood, and its Latin holds up stacked upright on narrow tags. The specimen check showed Yuji Syuku's and Yuji Boku's Latin fails at that. BIZ UDPGothic is Morisawa's universal-design gothic used on Japanese municipal and school notices, a public-legibility face that matches the promise of a board anyone can read. Yusei Magic is the magic-marker hand of handwritten club annotations. Total ≈103 KB."
+   },
+   "materials": [
+    "Flat celadon plaster (solid colour, no photo texture)",
+    "Hinoki tags: #ECDDBF with 4%-contrast grain hairlines (repeating-linear-gradient), a drilled hole at the top, hung on a 6px nail dot",
+    "Lacquered rails and plaques: solid #2A2622 bands and blocks lettered in paper white",
+    "Pinned notice paper: #F7F6F1 sheets with a 1px edge and CSS pin dots, rotated at most ±1.5°",
+    "Hanko stamps: vermilion CSS ring with Shippori lettering, used for categories, 'shipped', the highlighted plan",
+    "○△× evaluation marks drawn in CSS (circle, triangle, cross) with visually hidden Yes/Partial/No text",
+    "Board diagrams: CSS 9×9 or 5×5 sumi grids with clip-path wedge pieces lettered in Hodges letters (K R B G S N L P), ownership shown by which way the wedge points"
+   ],
+   "firstViewportDesktop": "1440×900. y0–64: a full-bleed lacquer rail. On its left, the icon (36px) and 'Shogiful' in Shippori 800 22px paper-white. On its right, six rank-style plaque links (Review · Rack · Method · Rules · Fees · Questions) in Shippori 800 15px, with the vermilion-edged YOU tag hanging under 'Review'. y92–300, x96–900: the hengaku plank (lacquer, 804×208) with the headline 'The shogi teacher that speaks your language.' in Shippori 800 60px paper-white, two lines. Under it, at y318–392 on plaster, the subheadline's first sentence plus 'iPhone, iPad and Mac' in BIZ 400 19px ink, 62ch. y92–430, x940–1344: a pinned review notice (paper 404×338, rotated −1°): a 5×5 local board in sumi with silver S circled at 4d and square 3c hatched vermilion, the sentence 'You dropped the silver to 4d. A knight drop on 3c forked king and rook.' in BIZ 700 21px, a vermilion hanko 'DROP MISTAKE', and 13px small print 'Worked example from Shogiful's mistake gallery · illustrative position'. y460–880, x96–1060: the rank rack, a 12px lacquer rail with four header plaques (tier names from the app) over 10 hinoki tags (60×250, 14px gaps). Each tag carries the name stacked upright in Shippori 800 26px and its strength in BIZ 700 13px at the foot. The 11th hook holds a blank vermilion-edged tag lettered 'YOU', with a Yusei Magic note 'beat each one twice to move along'. x1100–1344 at the rack's end: the badge mount, a lacquer tag-board with 'Free — Premium from $1.99/mo' in BIZ 700 15px paper-white above the official App Store badge (160px wide, unaltered). Beside it is a pinned paper card with the QR (132px) and the marker note 'scan with your iPhone camera'.",
+   "firstViewportMobile": "390×844, 16px gutters. y0–52: lacquer rail with the icon (28px), 'Shogiful' in Shippori 800 19px, and a horizontally scrolling strip of plaque links. y64–236: the hengaku plank (358×172) with the headline in Shippori 800 34px paper-white, three lines. y248–318: sub line in BIZ 400 16px ink on plaster. y330–418: the badge mount (lacquer) with the price line 'Free — Premium from $1.99/mo' above the official badge (148px). The QR is hidden. y436–736: the pinned review notice at full width: a 5×5 diagram (210px) and the sentence in BIZ 700 18px with the DROP MISTAKE hanko. y752–844: the rank rack begins with the rail and the 'NOVICE' plaque, and the tops of tags peek in as a scroll-snap row.",
+   "conversion": "Badge: the official Apple artwork, never altered, mounted on a lacquer tag-board that hangs from the rail like a tag, with the price lettered on the mount above it. QR: printed on a pinned paper card with a marker caption, shown at ≥1024px and on non-touch devices only. Sticky bar: once the hero mount scrolls away, the top rail grows an end slot (icon 28px, 'Free — Premium from $1.99/mo', badge 120px). On mobile it is a 64px lacquer rail fixed to the bottom. Price pills: the Fees section hangs four hinoki fee plaques (Free $0 / Monthly $1.99 / Annual $9.99 with a vermilion hanko for '~58% cheaper than monthly' / Lifetime $19.99 'Best long-term value'), each with its features on a paper slip below and plans_footnote in small print on the board base. The same badge mount returns under the comparison chart and at the closing door plaque. Smart App Banner meta stays in head, and the rail is not fixed at the top on iOS, so it never fights Safari's banner.",
+   "visitorPath": [
+    "Rail and hengaku plank: headline, subheadline, badge mount with price, QR card, and the pinned review notice as the first example_insight (hero + proof)",
+    "Quick Answer: the posted 'About this club' notice, a paper sheet at 68ch with quick_answer in BIZ 19px, stamped with the club hanko and marked speakable",
+    "Quick reference: the club information card pinned beside it, the ai-canonical <details> rendered open, listing platforms, price, engine, offline, account",
+    "The rack: 10 opponent tags under 4 tier plaques plus the YOU tag. Feature facts as marker notes: untimed with no clock or byoyomi, beat each one twice to unlock the next",
+    "The review board (#templates): the six example_insights as pinned review sheets of mixed sizes. Each has a vermilion category hanko, the headline in BIZ 700, the body, and 'Pattern: …' in marker",
+    "Piece guide notice: value point 'Play shogi without reading kanji' plus the 8-piece English table from the journal (name, kanji, move, promotes to) as a printed chart, linking to the journal post",
+    "Promotion rules board (#how-it-works): how_it_works intro plus 6 numbered paper strips pinned as a ladder from 'game ends' to 'tomorrow's training', emitting HowTo",
+    "Photos on the board: the 7 screenshots as pinned prints in a horizontal scroll-snap strip with marker captions",
+    "House rules and inspection record: privacy notes as rules (no account, no ads, no tracking, works offline), next to the framed licence showing transparency.yml facts (0 SDKs, 0 tracking domains, analytics none, network calls, UserDefaults CA92.1), linking to /transparency/ and the privacy policy",
+    "Membership notices: 'This club is for you if…' (who_for 6) and 'Try another club if…' (who_not_for 4, linking the Shogi Wars, Lishogi and 81Dojo pages)",
+    "Fees board (#pricing): four fee plaques plus slips plus footnote",
+    "Club cross-table (#compare-heading-shogiful): comparison_table as a posted chart with competitor columns under lacquer plaques. Each cell has a ○△× mark plus its text, with intro and footnote, and a badge mount at its foot",
+    "Owner's note: founder story as a signed letter in a sleeve ('Why we built this'), with signals, the studio link, support email and response time",
+    "About this club (show_body): the markdown body on one long notice under about_heading",
+    "Club calendar: roadmap items. Shipped items get a vermilion 'DONE' hanko and targeted ones show their date, with the disclaimer",
+    "Questions at the desk (#faq): 15 Q&As as <details> on paper, all open server-side",
+    "Other clubs in town: alternatives_to as six small tags linking /alternatives/…; related journal as a pinned clipping; Xiangqiful and Chessful as two 'sister club' tags",
+    "Door plaque: closing badge mount with price and QR. Hanko-stamped freshness line: Built by Lagerland Apps · first released 2026-06-11 · last updated 2026-06-11",
+    "Shared thin 'A Lagerland app' footer strip"
+   ],
+   "navigation": "The top lacquer rail is the rank rail. Its header plaques are the section links (Review · Rack · Method · Rules · Fees · Questions), and the visitor's YOU tag hangs under the plaque of the section in view. On mobile the rail scrolls horizontally with snap, and the active plaque stays scrolled into view. The microsite has no hamburger and no other menu.",
+   "signatureInteraction": "Re-hang your tag. A hinoki YOU tag with a vermilion edge hangs from the nav rail under the plaque of the section in view. When the section changes, the tag lifts off its nail, slides along the rail and settles with a damped 3° pendulum swing (CSS transform transition; IntersectionObserver sets data-at on the rail). Without JS the tag sits fixed under 'Review' and every plaque is a plain anchor link. Under reduced motion the tag jumps to its new nail with no lift and no swing.",
+   "motionGrammar": "Only hanging things move: tags and plaques enter by dropping 8px and swinging to rest (420ms, cubic-bezier(.3,1.4,.5,1)). Pinned paper never moves, and body text never fades. There is no parallax and no counters. prefers-reduced-motion removes every entrance and swing.",
+   "readModeVariant": "Privacy, support and the six alternatives pages are posted documents on the same wall: celadon frame, the same lacquer rail (its first plaque returns to /apps/shogiful/), and the title lettered on a lacquer plank. The reading column is one long paper notice (#F7F6F1), 68ch, BIZ UDPGothic 17/28px ink, pinned with two pins. Privacy: the policy as the notice, with the framed transparency inspection record beside it on desktop and above it on mobile. Support: 'Ask at the desk' with the email lettered on a hinoki plaque, plus response time and what to include. Alternatives: the plank reads e.g. 'Shogiful or Shogi Wars', the comparison is a ○△× posted chart, the verdict is two notices ('Pick Shogiful if…' / 'Pick Shogi Wars if…'), the FAQ is desk cards, and a badge mount sits at the foot.",
+   "assetsNeeded": "None are required to ship: every fixture is CSS (flat colour, hairlines, clip-path wedges) and runs on the existing icon, screenshots, QR and badge. Owner inputs: (1) the confirmed opponent roster, meaning names, strengths and the four tier labels, because the front matter and screenshot 7 disagree; (2) optionally, the app's Western piece set exported as SVG to replace the Hodges letters on the diagram wedges.",
+   "risk": "The world carries the ladder and the offer better than the core proof. If the build lets the review notice fall below the first viewport, the page reads as a club with an opponent ladder, which is PiyoShogi's strength rather than Shogiful's. The roster conflict blocks the rack until the owner confirms it. Celadon, hinoki and vermilion slide into Japan-heritage kitsch the moment brush textures, washi or sakura creep in, so the room must stay a fluorescent-lit municipal club. Upright-stacked Latin on tags tops out at about 8 letters.",
+   "memoryTest": "The shogi app whose page was a club wall: a row of wooden name tags for the AI opponents, and my own blank tag that slid along the rail as I scrolled.",
+   "specimen": {
+    "bg": "#9FBCA8",
+    "ink": "#1E1D1A",
+    "accent": "#A92D1C",
+    "display": "Shippori Mincho B1",
+    "dw": 800,
+    "text": "BIZ UDPGothic",
+    "h1": "The shogi teacher that speaks your language.",
+    "sub": "Master shogi. Move by move.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Dela Gothic One goes to shogiful-b, whose subject is Japanese. Set the marquee in Mochiy Pop One, a Japanese sticker/marquee gothic unused elsewhere. Make all price lamps lighting together the one move, and shrink the credit display to a small red 7-segment strip, as on real machines. That drops Doto here and leaves it on chessful-a and soon-c. Below the hero, keep the page on machine faces (side-panel plates, the audit printout, the pickup bin) instead of plain set panels."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "The Big Board Hall",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "The ōban (大盤) of the public commentary session (大盤解説会) and televised shogi: a giant vertical magnetic board on which a professional slides flat piece plates and places arrow magnets while explaining each move aloud. It comes with the side trays that show each player's pieces in hand and the lower-third caption of the broadcast.",
+   "thesis": "The page is one giant demonstration board with a commentator. A real 9×9 HTML board stays on stage while the commentary scrolls under it, so every claim is shown as a move: a red 'you played' magnet, a green 'best was' magnet and one spoken sentence. It refuses the screenshot-in-a-bezel hero and the eval-graph analytics page.",
+   "scene": "An audience member in a hotel-ballroom commentary session with the house lights down, watching one lit white board on stage. The scheme is dark for the hall, with one large lit plane.",
+   "scheme": "dark",
+   "colorStrategy": "Full palette",
+   "palette": [
+    {
+     "hex": "#1C2230",
+     "role": "Darkened hall: page ground (color-scheme: dark)"
+    },
+    {
+     "hex": "#F2F0E8",
+     "role": "Lit board face: the board, caption plates, reading plates (13.9:1 against hall text)"
+    },
+    {
+     "hex": "#15171C",
+     "role": "Board lines, plate lettering, text on lit plates (15.7:1)"
+    },
+    {
+     "hex": "#FBF7EC",
+     "role": "Magnet piece plates, raised by a 2px edge"
+    },
+    {
+     "hex": "#B8352A",
+     "role": "'You played' magnet and label, matching the app's own red (5.1:1 on board)"
+    },
+    {
+     "hex": "#18743F",
+     "role": "'Best was' magnet and label, matching the app's own green (5.1:1 on board)"
+    },
+    {
+     "hex": "#9AA3B5",
+     "role": "Hall secondary text and file/rank labels (6.3:1 on hall)"
+    }
+   ],
+   "type": {
+    "display": "Dela Gothic One 400 (13 KB): title band headline, plate letters (K R B G S N L P), section titles",
+    "text": "Atkinson Hyperlegible Next 400/700 (24 KB): the commentator's sentences and all reading",
+    "utility": "Atkinson Hyperlegible Mono 400 (10 KB): real notation only, i.e. moves (P*3d, S*4d, N*3c, P-7f), square labels 9…1 / a…i, move lists",
+    "rationale": "Dela Gothic One is the heavy Japanese telop/event-poster gothic, and its chunky Latin capitals read from the back row like printed magnet plates. Atkinson Hyperlegible, the Braille Institute face with letterforms built to be told apart at distance and for low vision, is the commentator's voice and Shogiful's legibility promise. Its mono sibling keeps notation in the same family. Total ≈47 KB."
+   },
+   "materials": [
+    "Lit steel demonstration board: flat #F2F0E8, a 2px #15171C 9×9 grid, file numbers above and rank letters at the side in mono",
+    "Flat magnet plates: clip-path pentagon wedges in #FBF7EC with a 2px bottom edge for thickness, pointing up or down to show the owner (real shogi ownership grammar)",
+    "Arrow magnets: solid red for 'you played' and dashed green for 'best was', square to square, so colour is never the only cue",
+    "Side trays for pieces in hand: narrow lit strips holding plates with ×2 counts",
+    "Lower-third caption plate: a lit band carrying the spoken sentence",
+    "The hall: slate ground for all sections below the stage, with content on lit plates"
+   ],
+   "firstViewportDesktop": "1440×900, a broadcast frame with no split hero. y0–52: hall strip with the icon (32px) and 'Shogiful' in Dela 20px on the left, and links (Commentary · Method · Pieces · Fees · Compare · Questions) in Atkinson 15px #9AA3B5 on the right. y68–190: the title band, with the headline 'The shogi teacher that speaks your language.' in Dela Gothic 46px white across x104–1336 on two lines, and beneath it the subheadline's first sentence in Atkinson 18px #C9CFDA. y206–746: the stage. The board is 540×540 (60px squares) centred at x450–990, lit, with mono 13px labels outside. It shows an illustrative position: a red plate path from the hand tray to S on 4d, a green dashed arrow to N on 3c, and plates K on 4a and R on 2a ringed. Left flank x104–420: White's hand tray at the top, and under it the facts 'iPhone · iPad · Mac / fully offline / no account' in Atkinson 16px. Right flank x1020–1336: Black's hand tray (plates N, S), then 'Free — Premium from $1.99/mo' in Atkinson 700 18px white, the official App Store badge (54px tall), and the QR (112px) on a lit plate captioned 'Scan to install on your iPhone'. y760–888: the lower-third caption plate across x104–1336, with the mono labels 'You played S*4d' (red) and 'Best was N*3c' (green), then the sentence 'You dropped the silver to 4d. A knight drop on 3c forked king and rook.' in Atkinson 700 26px ink, and 'Worked example · illustrative position' at 13px on the right.",
+   "firstViewportMobile": "390×844, laid out the way the app lays out its own board screen. y0–48: hall strip with the icon, 'Shogiful' in Dela 18px, and a 'Programme' link list. y58–190: headline in Dela 30px white, three lines. y198–222: White's hand tray strip. y226–584: the board at full width, 358×358 (≈40px squares), with plates and arrows. y588–612: Black's hand tray. y622–736: caption plate with the red and green mono labels and the sentence in Atkinson 700 17px. y748–844: the price line plus the official badge (148px). The QR is hidden.",
+   "conversion": "The badge is official artwork on the hall ground, never restyled, with the price set as the line directly above it. The QR sits on a lit plate on the stage's right flank at ≥1024px and on non-touch devices. Sticky bar: once the stage scrolls away, a 60px hall-slate strip appears with the icon, 'Shogiful · Free — Premium from $1.99/mo' and the badge. On desktop it sits at the top under the nav; on mobile it is fixed to the bottom. Price pills: Fees shows four lit plates in a row with the price in Dela 32px. Annual carries a green magnet tab ('~58% cheaper than monthly') and Lifetime is marked 'Best long-term value', followed by the footnote. A badge strip returns after the comparison and at the closing stage call. Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Stage: title band headline and sub, the big board with an illustrative drop position, the hand trays, the lower-third caption (first worked example), and the price, badge and QR on the right flank",
+    "Quick Answer: the commentator's opening statement on a lit plate directly under the stage, marked speakable",
+    "Programme facts: the ai-canonical quick reference as an open <details> plate",
+    "Commentary (#templates): the six example_insights pass through the caption slot one by one while the board stays pinned and replays each illustrative position",
+    "Pieces in English: value point 1 plus the journal's 8-piece table as a strip of magnet plates (letter, kanji, English name, move, promotes to), linking to the journal post",
+    "Method (#how-it-works): six numbered lit plates on a line from 'game ends' to 'tomorrow's training', emitting HowTo",
+    "Replay monitors: 7 screenshots in a horizontal snap strip with captions",
+    "Programme: features 6, including the 10 opponents and untimed play, as two-column programme text on a lit plate (not cards)",
+    "Seats in this hall / Better in the arena: who_for 6 and who_not_for 4, linking the Shogi Wars, Lishogi and 81Dojo pages",
+    "Fees (#pricing): four lit plates plus the footnote",
+    "Scoreboard (#compare-heading-shogiful): comparison_table on a lit plate with the Shogiful column tinted, plus intro and footnote, then the badge strip",
+    "Nothing leaves the hall: privacy notes plus the transparency.yml facts as a plain table, linking to /transparency/ and the privacy policy",
+    "Why we built this: founder story, signals, studio link, support email, response time",
+    "About (show_body) on a long lit plate under about_heading",
+    "Next sessions: roadmap as a schedule list (shipped, targeted, under consideration) with the disclaimer",
+    "Questions from the floor (#faq): 15 Q&As, open server-side",
+    "Other halls: alternatives_to links; related journal; Xiangqiful and Chessful",
+    "Closing stage call: badge, price, QR, then the line 'Built by Lagerland Apps · first released 2026-06-11 · last updated 2026-06-11'",
+    "Shared thin 'A Lagerland app' footer strip"
+   ],
+   "navigation": "A slim hall strip with six plain text links, and the active section underlined in board-white. On mobile the 'Programme' button opens a <details> list. Inside Commentary, the board's file labels 9…1 double as a jump list to the six worked examples.",
+   "signatureInteraction": "Magnet replay. While Commentary is in view, the board is position: sticky. As each worked-example caption reaches the caption slot, the plates slide square to square into that example's illustrative position, which is stored as an SFEN string on the caption in server-rendered HTML. The red 'you played' and green 'best was' arrows then draw in from tail to head. Without JS, every caption renders with its own static board diagram above it, built from the same position data, so nothing is missing. Under reduced motion, positions swap instantly with arrows already drawn.",
+   "motionGrammar": "Motion is the commentator's hand and nothing else: plates slide in straight lines (180ms ease-out) and land with a 1.04→1 snap, and arrows draw over 240ms. The hall, text and plates never fade or parallax. prefers-reduced-motion turns this into instant state changes.",
+   "readModeVariant": "The hall is the frame: slate ground, the same strip nav, and the page title in Dela Gothic on the title band. The reading column is one lit plate (#F2F0E8), 68ch, Atkinson 17/28px ink. Privacy: the policy plate with a plain transparency table at its head. Support: one caption plate with the email in Atkinson 700 24px and the response time. Alternatives: the title band reads e.g. 'Shogiful or PiyoShogi', with an optional small board diagram. The comparison table and the honest verdict are plain text on the plate, the FAQ is 'Questions from the floor', and the badge strip sits at the foot.",
+   "assetsNeeded": "Six illustrative positions (SFEN), one per worked example. They must be authored, checked with an engine and labelled 'illustrative position'. Optional: the app's Western piece set as SVG to replace the Hodges letters on plates. Otherwise it runs on the existing icon, screenshots, QR and badge.",
+   "risk": "It is familiar: a big board is what every chess and shogi page leads with, and many runs land here. It earns its place only if the board is real HTML with moving magnets and captions, never a picture. Sticky scrollytelling is fragile on mobile (address-bar resize, iOS sticky jank) and has to fall back cleanly to stacked diagram-plus-caption pairs. A wrong illustrative position is a factual error any shogi player will spot. The dark hall sits near the dark-plus-accent cluster, so the lit board must stay the dominant light.",
+   "memoryTest": "A huge white shogi board I could read without kanji. As I scrolled, the magnets moved, red for what I did and green for what I should have done, with one plain sentence underneath.",
+   "specimen": {
+    "bg": "#1C2230",
+    "ink": "#FBF7EC",
+    "accent": "#18743F",
+    "display": "Dela Gothic One",
+    "dw": 400,
+    "text": "Atkinson Hyperlegible Next",
+    "h1": "The shogi teacher that speaks your language.",
+    "sub": "Master shogi. Move by move.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Keep the commentary board on shogiful-b: the ōban 大盤解説 is Shogiful's #1 and the more established institution. Replace xiangqiful-b with xiangqiful candidate #2, park stone tables (石桌棋盤): incised granite boards in park daylight, with the ring of onlookers as the read-back. No board-game style uses stone/architecture, and it gives Xiangqiful a light outdoor scene. Fira Sans Extra Condensed leaves with it."
+    },
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "shogiful-c keeps the pink, because tinted manga signatures are native to it. Print soon-b's ticket on a stock no other surface uses, e.g. pale aqua card (~#C4E6E1). Keep the aubergine ink and the app-blue spot, and re-check blue text on the new stock for 4.5:1."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Keep the big board on xiangqiful-b, whose type is clean and which already handles mobile with a diagram per chapter. Move shogiful-b to its candidate #3 (the kifu record sheet). Skip #2 (the tsume problem book), which would collide with tare-b's Japanese puzzle-book world. Reset the type along with it, for example Murecho 900/400/700: one Japanese-drawn gothic, about 40 KB of latin, with tabular figures for notation and no mono."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "Weekly Manga Chapter",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 5,
+   "lineage": "A shogi manga chapter as printed in Japanese weekly magazines and their English editions: the colour opening page (巻頭カラー), panel grids with slanted gutters, speech balloons and narration boxes, screentone, 集中線 focus lines, and Japanese sound effects (パチッ, the snap of a piece on the board) kept in the art with small English translations beside them. It also borrows the yonkoma strip, the obi band and the 奥付 colophon. The explainer pages of shogi manga such as March Comes in Like a Lion are a cultural reference only; no art, characters or logos are borrowed.",
+   "thesis": "The page is one manga chapter read top to bottom. The coaching loop is told in panels: a board panel, the drop, focus lines slamming into the square you missed, and the explanation in a balloon. The English edition's translated SFX carry 'the teacher that speaks your language'. It refuses both the luxury wood-and-gold board page and the flat infographic.",
+   "scene": "A reader on an evening commuter train flipping through a weekly manga magazine printed on tinted newsprint under the carriage's daylight-white lights. The scheme is light (the colour opener uses the app's navy as a printed colour page).",
+   "scheme": "light",
+   "colorStrategy": "Drenched",
+   "palette": [
+    {
+     "hex": "#F3CBD2",
+     "role": "Pink newsprint, the ground of the first signature (ink 12.5:1)"
+    },
+    {
+     "hex": "#F1E58E",
+     "role": "Lemon newsprint, the ground of the second signature, where the six mistakes sit (14.3:1)"
+    },
+    {
+     "hex": "#C7DDF0",
+     "role": "Sky newsprint, the ground of the back matter: privacy, fees, compare, notes (13.2:1)"
+    },
+    {
+     "hex": "#141414",
+     "role": "Manga ink: panel borders, lettering, text, screentone dots, focus lines"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "Balloon and panel white"
+    },
+    {
+     "hex": "#0E1426",
+     "role": "Colour-page navy, from the app UI: chapter opener and screenshot insert"
+    },
+    {
+     "hex": "#D6A940",
+     "role": "Colour-page mustard, from the app's buttons: opener title and SFX fill (8.4:1 on navy)"
+    }
+   ],
+   "type": {
+    "display": "Potta One 400 (25 KB): chapter and section titles and the English SFX glosses",
+    "text": "Zen Old Mincho 400/700 (31 KB): narration boxes, FAQ, notes pages, tables",
+    "utility": "Shantell Sans 600 (46 KB), set in caps: speech-balloon lettering only, with lines kept short",
+    "rationale": "Potta One's brush-pop strokes read as hand-lettered manga titling, and its Latin carries the same hand as the katakana SFX. Zen Old Mincho is the old-style mincho of tankōbon body text with a sound Latin, so long reading stays calm. Shantell Sans in caps stands in for the comic lettering of English manga editions. The katakana SFX ship as outlined SVG paths rather than a Japanese font subset. Total ≈102 KB."
+   },
+   "materials": [
+    "Tinted newsprint stocks, one per signature, with a 3% ink-dot grain via radial-gradient",
+    "Panel borders in 3px ink with slanted gutters (clip-path polygons) and lettering that breaks the borders",
+    "Screentone dot fields at 10/20/30% (radial-gradient patterns)",
+    "集中線 focus lines (repeating-conic-gradient masked radially) centred on a board square",
+    "Speech balloons (white, 2px ink, clip-path tails) and rectangular narration boxes",
+    "Katakana SFX as outlined SVG paths with Potta One English glosses",
+    "Board panels: CSS 9×9 or 5×5 ink-line grids with wedge plates in Hodges letters",
+    "The app's real screenshots cropped into panels as the colour insert",
+    "Obi bands for prices and the okuzuke colophon box for the freshness line"
+   ],
+   "firstViewportDesktop": "1440×900, the colour opener page on #0E1426 with three slanted panels in 3px white borders and 20px navy gutters. Panel 1 is a trapezoid at x64–860, y72–860: a white panel with a 7×7 crop of an ink board showing S on 4d and 3c ringed. Ink focus lines radiate from 3c across the panel. 'パチッ' sits as a 220px outlined SVG SFX (mustard fill, ink outline) slanting across the top-left, with the gloss '(snap)' in Potta One 20px beside it. Panel 2, x880–1376, y72–430, breaking into panel 1's border: the title 'The shogi teacher that speaks your language.' in Potta One 54px mustard on navy, three lines, then a white narration box with the subheadline's first sentence in Zen Old Mincho 17px. Panel 3, x880–1376, y450–860: a white speech balloon in Shantell 600 caps 22px reading 'YOU DROPPED THE SILVER TO 4D. A KNIGHT DROP ON 3C FORKED KING AND ROOK.', its tail crossing the gutter to 3c. Below the balloon, a narration box holds 'Free — Premium from $1.99/mo' in Zen Old Mincho 700 18px, the official App Store badge (54px tall) and the QR (104px) captioned 'Scan to install on your iPhone', with 'Worked example · illustrative position' in 12px.",
+   "firstViewportMobile": "390×844, a vertical strip like a phone manga reader. y0–48: navy bar with the icon (28px), 'Shogiful' in Potta One 19px mustard, and a 'Contents' link. y56–236: title panel in Potta One 31px mustard on navy, three lines. y248–548: board panel (5×5 crop, 300px) with focus lines into 3c and 'パチッ' plus '(snap)' slanting across the panel. y560–700: speech balloon in Shantell caps 15px, its tail pointing up into the board panel. y712–844: white narration box with 'Free — Premium from $1.99/mo' and the official badge (148px). The QR is hidden.",
+   "conversion": "The badge is official artwork placed inside a white narration box, which is a frame and never redraws it. The price is set as narration in the same box. The QR is a small panel on the opener and on the closing obi at ≥1024px and on non-touch devices. Sticky bar: once the opener scrolls away, a 60px navy 'next chapter' strip fixed to the bottom shows the icon, 'Shogiful · Free — Premium from $1.99/mo' and the badge, the way a manga reader app's bottom bar would. Price pills: Fees shows four obi bands, the paper bands wrapped round tankōbon. Each has the plan name in Potta One and the price in Zen Old Mincho 700 30px. The Annual obi is printed mustard with '~58% cheaper than monthly' and Lifetime reads 'Best long-term value', with the footnote in small print. The closing back-cover obi repeats the badge, price and QR. Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Colour opener: title, subheadline narration, the board panel with focus lines and SFX, the balloon carrying the first worked example, and the narration box with price, badge and QR",
+    "Quick Answer: the chapter's opening narration box, large and white on pink stock, marked speakable",
+    "Profile page: the ai-canonical quick reference as a manga character data box (platforms, engine, price, offline, account), an open <details>",
+    "The board, translated (pink): value point 1 plus the journal's 8 pieces as small panels. Each shows a kanji plate with its English gloss set like an SFX translation, plus movement dots, and links to the journal post",
+    "The loop (pink, #how-it-works): how_it_works as six numbered panels, each a narration box with a screenshot crop or board, emitting HowTo",
+    "Six mistakes (lemon, #templates): the example_insights as six yonkoma strips laid two columns per row: setup, board, focus lines, then a balloon with the lesson and 'Pattern: …'",
+    "Colour insert (navy): the 7 screenshots as colour panels with narration captions",
+    "The rivals page: features 6, including 10 opponents in 4 tiers and untimed play, as narration panels",
+    "Reader's choice: who_for 6 and who_not_for 4 in two narration columns, linking the Shogi Wars, Lishogi and 81Dojo pages",
+    "Fees (sky, #pricing): four obi bands plus the footnote",
+    "Data page (sky, #compare-heading-shogiful): comparison_table in Zen Old Mincho with the Shogiful column on mustard, plus intro and footnote",
+    "No account, no ads, no tracking (sky): privacy notes plus the transparency.yml facts in a narration table, linking to /transparency/ and the privacy policy",
+    "Author's afterword (あとがき): founder story, signals, studio link, support email, response time, signed Lagerland Apps, Finland",
+    "Translation notes: show_body under about_heading, set as the back-of-volume notes",
+    "Next volume preview (次巻予告): roadmap items as preview panels with the disclaimer",
+    "Reader Q&A corner (#faq): 15 Q&As, open server-side",
+    "Also serialized: Xiangqiful and Chessful; other places to play (alternatives_to links); related journal as a bonus-chapter link",
+    "Back-cover obi with badge, price and QR, then the okuzuke colophon box: Built by Lagerland Apps · first released 2026-06-11 · last updated 2026-06-11",
+    "Shared thin 'A Lagerland app' footer strip"
+   ],
+   "navigation": "A table of contents (目次). The navy top bar's 'Contents' link opens a full-height contents page as a <details> panel, so it works without JS, listing the sections by their in-world names. On desktop the six main entries also sit inline in the bar. The change of newsprint stock signals which signature you are in, and every section heading is a Potta One title in a narration box.",
+   "signatureInteraction": "Focus-line drop. When a board panel enters the viewport, the 集中線 contract toward the missed square (a CSS custom property animating the mask radius), the dropped piece plate cuts in, and the パチッ SFX outline draws on (SVG stroke-dashoffset) with its English gloss appearing beside it. The balloon cuts in last. Without JS, the server-rendered final state shows lines, plate, SFX, gloss and balloon all present. Under reduced motion the final state is static.",
+   "motionGrammar": "Cuts, not tweens: panel contents appear in reading order with hard cuts 120ms apart, like turning to the next panel. Only the focus lines (300ms) and SFX strokes (250ms) animate continuously, and nothing fades or uses parallax. prefers-reduced-motion shows everything at once.",
+   "readModeVariant": "Privacy, support and the alternatives pages are the volume's back matter. Each uses one newsprint frame (sky for privacy, pink for support, lemon for alternatives) with the title in Potta One on a narration box. The reading column is a white notes page at 68ch in Zen Old Mincho 18/30 ink. An alternatives page opens with one 'versus' panel in which two balloons quote each product's real positioning from the page ('the arena' / 'the practice room'). The comparison table and verdict follow as plain text, the FAQ as reader Q&A, and the okuzuke colophon closes the page.",
+   "assetsNeeded": "Katakana SFX outlined as SVG paths (パチッ at minimum; derived from an OFL face), plus six illustrative board crops (positions) labelled 'illustrative position'. Optional: the app's Western piece set as SVG. Focus lines, screentone and stocks are all CSS, and it otherwise runs on the existing icon, screenshots, QR and badge. No character art is needed or allowed.",
+   "risk": "To a serious chess convert, manga can read as 'for kids and anime fans'. Caps comic lettering hurts long reading, so balloons must stay headline-short and all long copy must live in mincho narration. With no drawn characters, panels can look like diagrams in boxes, so the focus lines, SFX and balloons have to carry the drama. Drenched stocks tip into noise if colour changes per panel rather than per signature. The SFX must be correct Japanese and glossed. IP care: generic manga grammar only.",
+   "memoryTest": "The shogi app page that was a manga: focus lines slamming into the square where I should have dropped my knight, a huge パチッ with '(snap)' beside it, and pink and yellow newsprint pages.",
+   "specimen": {
+    "bg": "#F3CBD2",
+    "ink": "#141414",
+    "accent": "#D6A940",
+    "display": "Potta One",
+    "dw": 400,
+    "text": "Zen Old Mincho",
+    "h1": "The shogi teacher that speaks your language.",
+    "sub": "Master shogi. Move by move.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  }
+ ],
+ "canon": "Category standard played straight: a dark navy App Store landing page with the gold 王 icon, a 3D wooden board in an iPhone bezel beside the headline, a badge row, a feature-card grid, a pricing table and an FAQ accordion.",
+ "notes": "The roll ran degraded (no catalog challengers, no quality-bar boards), as expected; the network was not retried. Seed c0f5a51b: assigned 7, which maps to A, THE ROLL (Dojo rank-tag wall). Re-roll 1 gave 5, which maps to C, SECOND ROLL (manga chapter). Neither is 1, so B is my top-ranked candidate 1 (ōban commentary board) as IMPECCABLE’S PICK, and its risk line names its familiarity. The seven candidates span 6 material families, and the one literal slot (6, subtitles) was not dealt. Truth flags for the owner: (1) The opponent roster in the front matter (10 opponents, Hana ~500 to Sensei ~1800, 4 tiers) contradicts screenshots 7 and 4 (Koishi…Kaede, Kiri 1,400, Inazuma). Every style names opponents only after confirmation, and A depends on it most. (2) No asset shows the Western piece set, since all screenshots show kanji. All diagrams use Hodges letters on CSS wedges labelled 'Western notation', and an SVG export of the app's set is an optional upgrade. (3) All six board positions are illustrative and must be labelled as such. (4) The 'Targeted 2026 Q3' roadmap item has passed (today 2026-10-05) and renders with its disclaimer; the owner may want to refresh it. (5) The founder signal '19 live apps' is a literal in the front matter and must be kept in sync, while new copy computes the count. (6) Ratings count is 14, so no stars appear anywhere. Font budgets were checked against Fontsource latin files: A ≈103 KB, B ≈47 KB, C ≈102 KB. A specimen render ruled out Yuji Syuku and Yuji Boku as tag faces because their Latin is weak. Contrast pairs were computed and are listed in the palette roles. A's headline sits on a lacquer plank, not a hinoki plank, to keep it out of the cream-plus-serif cluster.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

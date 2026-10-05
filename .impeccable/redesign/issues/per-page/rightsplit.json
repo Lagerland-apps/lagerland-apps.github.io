@@ -1,0 +1,90 @@
+[
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "mediakit (vs rightsplit)",
+  "style": "a",
+  "severity": "major",
+  "issue": "Processed In-House drenches in process cyan (#19A7E0) with white knock-out panels, black ink and one magenta mark. rightsplit-a 'Weighed and Priced' drenches in process cyan (#00AEEF) with white die-cut labels, black ink and one red. They share a palette family and the same white-panels-on-a-flood grammar.",
+  "fix": "Cyan stays with rightsplit-a: it is RightSplit's own accent and the constant RATE box. Re-stock mediakit-a's envelope in a lab house colour that no surface drenches in, e.g. a Fuji-lab green flood (~#2E9E5B, ink ≥5:1 on it). Keep the white form panels, and keep the magenta stamp on white only.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "liftlog (vs rightsplit)",
+  "style": "c",
+  "severity": "major",
+  "issue": "Pathway Extreme variable is the whole display and text system of both liftlog-c and rightsplit-a.",
+  "fix": "rightsplit-a keeps it for its wdth-75 price numerals. liftlog-c needs Aicher's one-family-in-several-widths system, so it uses Roboto Flex (wdth + wght, unused on the board) as the Univers stand-in. Check the wdth+wght latin file against the 160 KB budget.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "tare (vs rightsplit)",
+  "style": "c",
+  "severity": "major",
+  "issue": "Nine Bars, One Chord's claret felt (#34121F) with warm white is rightsplit-c's oxblood leatherette (#3A161F) with white foil: the same dark-red scheme. Its first viewport also repeats tare-a. Both lead with the same demo level (6 / 2 / ? on a top beam and a right sub-beam, clue card '? = 2 2') hung centred on a string, with the pieces waiting on a tray below: tare-a's shelf, tare-c's bars. So c is a recolour and reorder of a.",
+  "fix": "rightsplit-c keeps oxblood, the app's own maroon. Re-felt tare-c in a colour no surface uses, e.g. deep olive (~#33361F); Tare's Evening Stars indigo works only if soon-a is not chosen. Remove the hanging mobile from tare-c's hero. The nine bars on their converging rails become the one playable object across the width, and the level is written as a play-by-colour song line on the song card, solved in notation.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "rightsplit",
+  "style": "a, b",
+  "severity": "minor",
+  "issue": "Weighed and Priced and Torn Per Person are both thermal-printed retail paper, black on white (a label printer versus a receipt printer), with barcodes or dotted leaders and one red warning.",
+  "fix": "Hold the difference. rightsplit-a stays die-cut labels on the liner with no receipt grammar: no dotted leaders, no tear edges. rightsplit-b keeps the roll, the tears and the ballpoint, with no field-grid boxes.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "rightsplit",
+  "style": "a",
+  "severity": "major",
+  "issue": "On mobile the GET IT field with the badge is at y630 to 680, after four 50px diner rows.",
+  "fix": "Put the PRICE and GET IT fields straight after the H1 and the RATE strip, and let the four diner labels follow. Alternatively, show two rows above the fold and label the rest '2 more labels'.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "rightsplit",
+  "style": "a",
+  "severity": "major",
+  "issue": "Shared display face: Pathway Extreme is also liftlog-c's complete stack.",
+  "fix": "Keep Pathway Extreme on liftlog-c, whose world is Aicher's one grotesk across many widths. Move rightsplit-a to the Roboto Flex wdth file (wdth 25 to 151 plus wght, 58 KB latin). Scale-label printers carry Helvetica-clone resident fonts, and the narrow widths fit 900-weight prices.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "rightsplit",
+  "style": "all",
+  "severity": "major",
+  "issue": "The hero proof is the journal's worked dinner. The four per-diner amounts (74.75 + 36.09 + 25.78 + 18.04) sum to $154.66, but every style sets them under a $154.65 total: a has a 'TOTAL 154.65' row; b has a double-width TOTAL 154.65 with torn receipts; c's caption reads 'the $154.65 dinner'. The same pages print plateau_disclosure's rule that a fairness pass closes any one-cent gap. A bill-splitter whose own showcase is a cent off undercuts its central claim.",
+  "fix": "Run that receipt through the app and print its real output. Under the stated rule the stray cent comes off one diner (likely the highest subtotal, Dana $74.74), so the labels sum to $154.65. Alternatively, keep $154.66 and label it as the journal's 'leftover cent' Example 3 with a link. Never print a total row over labels that do not sum to it.",
+  "lens": "truth-contract"
+ }
+]

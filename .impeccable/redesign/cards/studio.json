@@ -1,0 +1,408 @@
+{
+ "surface": "studio",
+ "dossier": {
+  "mechanism": "One developer in Finland ships a family of single-purpose Apple apps that are private by construction and publishes each app's declared privacy data field by field (_data/transparency.yml); the studio site's job is to route a visitor to the one right app microsite fast and make the privacy claim checkable.",
+  "audienceScene": "Mostly a phone visitor who arrived from Google or an AI answer on a journal post, guide or 'alternative to X' page, taps 'who makes this?' and lands on the home or /apps/ index needing one app fast; secondarily privacy-minded Apple users and indie iOS developers browsing the whole catalogue on a laptop in the evening, and press checking who is behind it.",
+  "culturalHome": "Independent Apple software culture (one-person iOS/Mac developers, App Store privacy labels, App Tracking Transparency), European and Nordic everyday design and media, and the privacy movement's show-the-receipts ethic; the studio's own footer places it at 63°N, Finland, since 2025.",
+  "mustProve": "In one viewport: this is one person's independent catalogue of distinct private apps, here is the fastest route to the one you need, and the privacy claim is a public per-app record (0 tracking domains, 0 ad SDKs, audited 11 Jun 2026), not a slogan.",
+  "categoryDefault": "Indie studio homepage: serif or grotesk headline beside floating device mockups, a trust-stat row, then 2- or 3-column grids of equal app cards (icon, name, tagline, pills) per category, journal cards, FAQ, footer: exactly the incumbent v3 Paper & Ink.",
+  "predictableOpposite": "Anti-design studio page: a stark plain-text or monospace list of app names in giant type on white or black (apps.txt / terminal brutalism), no imagery, no proof.",
+  "literalReading": "'Lager' (Swedish/German: stock, store, warehouse) + 'land' reads as a warehouse or stockroom of apps; the place read literally is Finland as aurora, snow, pine forest and sauna. Candidate 7 spends the name's literal reading once; the postcard reading of the place is spent nowhere.",
+  "evidence": [
+   "_includes/footer.html already says 'Made on a MacBook at 63°N' and 'since 2025': the place and date are the studio's own words.",
+   "_data/transparency.yml: 19 rows, last_audit 2026-06-11; tracking false and 0 tracking domains on every row; third-party SDKs only in MediaKit (Unrar.swift) and Pawza (ZIPFoundation); AppMeta, Mockly and AppMeta Pulse use the visitor's own Apple ID / API key; AppMeta Pulse is 'manifest pending' (18 manifests + 1 pending).",
+   "19 live apps plus Tare (status upcoming, sitemap:false, no images); first release GymLogger X 2025-09-01, newest Xiangqiful 2026-09-30.",
+   "42 journal posts (2025-12-27 to 2026-10-01), 104 alternatives pages plus index, 4 /for/ audience pages plus hub, 5 guides.",
+   "assets/icons/lagerland-mark.png (stone 8-point star in a ring of stone blocks) is RGBA but has a grey/white transparency checkerboard baked into its pixels (corner pixel #D3D3D3, alpha 1): every style needs a clean vector redraw.",
+   "Seven icons (earnlock, liftlog, mediakit, pawza, rightsplit, soon, taskful-day) carry baked white rounded corners, and mediakit.png is 1740x1734 (not square): every style masks icons with an iOS squircle at about 1.06 overscale.",
+   "head.html loads GoatCounter (cookieless counting): studio copy must never imply the website itself is untracked; privacy claims stay per app.",
+   "The Smart App Banner is emitted only for layout:app; journal posts and guides whose mentioned_apps holds exactly one app could emit that app's banner (proposed in all three styles).",
+   "alternatives/index.html hard-codes numberOfItems 104 in its ItemList JSON-LD (contract says counts are computed).",
+   "Incumbent home: left serif headline with purple second line, floating device composition right, trust-stat row, then 2-column card grids per cluster: the template every style refuses."
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "Independent record label: spines, sleeves, catalogue numbers",
+   "family": "print / packaging (music publishing)",
+   "why": "The canonical model for one small house with many distinct artists: every sleeve is its own world, and the label appears only as a catalogue number and one constant mark. Formats map to platforms, the discography to the index, the album credits to the transparency record."
+  },
+  {
+   "index": 2,
+   "name": "Räsymatto: the Finnish rag rug",
+   "family": "textile",
+   "why": "Every Finnish home's striped rug, woven from strips of different cloth on one warp. Each app is a band in its own colours, and the shared warp threads (no tracking, no ads, no accounts) run through every band. True to the place without being literal."
+  },
+  {
+   "index": 3,
+   "name": "Postage stamps and the first-day cover",
+   "family": "philately / print",
+   "why": "Every stamp is a different artwork held by one constant format (perforation, denomination, issuer). The denomination carries price.value, the first-day postmark carries release.first_release, and sealed mail stands for privacy. Risks twee."
+  },
+  {
+   "index": 4,
+   "name": "Orienteering map and control-description sheet",
+   "family": "cartography",
+   "why": "Finland's sport map (ISOM colours, magenta course overprint) is itself a routing system: courses of numbered controls by need. The IOF control-description table can carry each app's declared facts. Less known outside the Nordics."
+  },
+  {
+   "index": 5,
+   "name": "Teletext: Yle Teksti-TV / Ceefax page 100",
+   "family": "broadcast / screen",
+   "why": "Europe's routing page: three-digit page numbers, the P100 index and four Fastext keys. A receive-only medium whose MIX mode lets each app's own picture show through one uniform text frame. Strong for Europeans, unknown to many US visitors."
+  },
+  {
+   "index": 6,
+   "name": "63°N daylight almanac",
+   "family": "data graphic / measurement",
+   "why": "Turns the footer's own line into data: the year's day-length band at 63°N with each app pinned at its real release date. True chronology and true place, but weak at routing by need, and it sits near AfterShift's and Soon.'s time worlds."
+  },
+  {
+   "index": 7,
+   "name": "Open depot: Lagerland as an open store (literal reading)",
+   "family": "architecture / wayfinding / industrial",
+   "why": "'Lager' means store. Read literally, the name lifts from warehouse to the open-storage depot (Schaulager, Depot Boijmans), where a collection is kept in view, located by aisle-bin codes and labelled. That gives routing by location and proof by inventory. It spends the name's literal reading once."
+  }
+ ],
+ "seed": {
+  "key": "249ba0a0",
+  "assigned": 7,
+  "reroll1": 5
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "The Open Depot",
+   "kicker": "THE ROLL",
+   "sourceIndex": 7,
+   "lineage": "Open-storage art depots, where a whole collection is kept in view on racks and every object is located and labelled: Schaulager, Basel (Herzog & de Meuron, 2003) and Depot Boijmans Van Beuningen, Rotterdam (MVRDV, 2021). Crossed with Nordic warehouse wayfinding: pallet-rack beam labels with aisle-bin codes, stencil aisle signs and stocktake cards. The name's literal reading (lager = stock, store) is spent here once and lifted from warehouse to open store.",
+   "thesis": "The catalogue is an open store, not a showroom. Every app sits in view at a fixed aisle-bin location with its declared contents on the label (tracking domains, SDKs, account). It refuses the hero-plus-icon-card grid by making the homepage the depot's location index, read aisle by aisle and picked by hand.",
+   "scene": "A visitor reads bin labels on a phone at midday, as if standing in a white-painted open depot under even 5000K high-bay light, with orange beams, blue uprights and labels legible at arm's length. Scheme: light.",
+   "scheme": "light",
+   "colorStrategy": "Committed: beam orange carries about 30% of the surface as masthead, aisle beams and ledger header rows; blue uprights frame both page edges; concrete grey is the ground; each app's own colour appears only on its box front.",
+   "palette": [
+    {
+     "hex": "#E6E8E5",
+     "role": "depot concrete: page ground"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "label stock: bin labels, beam labels, reading sheet, QR quiet zone"
+    },
+    {
+     "hex": "#14191F",
+     "role": "stencil black: ink and headlines (14.3:1 on concrete, 4.7:1 on beam orange)"
+    },
+    {
+     "hex": "#E2560F",
+     "role": "beam orange: rack beams and ledger header rows; black text only (white fails at 3.8:1)"
+    },
+    {
+     "hex": "#1E3E8C",
+     "role": "upright blue: edge uprights, links (8.0:1 on concrete), focus ring"
+    },
+    {
+     "hex": "#5B626B",
+     "role": "galvanised grey: secondary text and rules (5.0:1 on concrete)"
+    }
+   ],
+   "type": {
+    "display": "Big Shoulders Stencil Display 800 and 500 (Fontsource, 14 KB per weight)",
+    "text": "Atkinson Hyperlegible Next 400, 700 and 400 italic (Fontsource, 12-14 KB each)",
+    "utility": "Martian Mono 400 and 600, only for real data: location codes, declared values, dates, counts (Fontsource, 10 KB each)",
+    "rationale": "Depots and crates are marked with sprayed stencil, and the condensed stencil fits a seven-aisle directory on one beam; it is kept at 40px and above. Atkinson was drawn by the Braille Institute for legibility at distance and for low vision, which is the label-reading job and also a calm reading face. Martian's wide mono reads like label-printer output and is never used for running text. Total about 86 KB."
+   },
+   "materials": [
+    "flat painted-concrete ground (#E6E8E5, no texture)",
+    "pallet-rack uprights with punched teardrop slots (CSS mask pattern)",
+    "orange box-section beams carrying white beam labels",
+    "white self-adhesive bin labels with aisle-bin codes (e.g. 1-02)",
+    "stencil-sprayed aisle signs",
+    "stocktake strip and stock ledger",
+    "app box fronts painted in each app's own ground colour",
+    "orange pick tickets"
+   ],
+   "firstViewportDesktop": "1440x900 on concrete. Masthead, 0-56px: a full-width beam-orange bar. Left: a white beam label with the stone-star mark at 28px and LAGERLAND in stencil 800 at 26px. Right: five white beam labels as nav (Apps, Journal, Transparency, Alternatives, About; Atkinson 700 15px black). Blue uprights 28px wide run the full height at x0 and x1412, with slots every 48px. y96-388: the H1 in stencil 800 at 150px/0.86, black, left-aligned at x72 on two lines: 'PRIVATE APPS, / ON OPEN SHELVES.' y404-470: the lede in Atkinson 22/1.45 at 58ch: '19 iPhone, iPad, Apple Watch and Mac apps from one developer in Finland. No trackers, no ads, no accounts, and every app's declared data printed on its bin label.' (count computed). y492-536: the stocktake strip, one white label 1296px wide in Martian 14px: 'STOCKTAKE 11.06.2026 · 19 ITEMS · TRACKING DOMAINS 0 · AD SDKs 0 · MANIFESTS 18 + 1 PENDING → LEDGER' (all computed from transparency.yml). y568-616: the aisle beam (orange) with seven white aisle labels as jump links (1 Health & recovery, 2 Days & plans, 3 Money, 4 For developers, 5 Reading, 6 Games, 7 Files & media). y640-900: aisle 1 opens with the stencil sign '1 HEALTH & RECOVERY' at 64px, then two 88px ledger rows. Each row holds the code 1-01 in Martian 15px, a 64px box front (app ground colour plus squircle icon), the name in Atkinson 700 22px, the job at 17px, platforms, price.value, and 'TRK 0 · SDK 0'. No badge or QR is in the first viewport: they live in each row's pulled-out box.",
+   "firstViewportMobile": "390x844. An orange beam 48px tall: LAGERLAND label with a 22px mark on the left, an 'Index' beam label on the right that opens the aisle directory. 6px blue uprights at both edges. y72-300: the H1 in stencil 800 at 60px/0.88 on four lines. Lede in Atkinson 17/1.5 on five lines. The stocktake label: three Martian 13px rows (19 items · tracking domains 0 · ad SDKs 0) and 'Ledger →'. From y≈640: the aisle beam as a two-column stack of seven white labels, 48px tap height; four are visible above the fold. Below, rows reflow as stacked bin labels: code, 56px box front, name, job, price, then the declared values on one mono line.",
+   "conversion": "Routing comes first. The aisle beam (seven jump labels) and the ledger rows are the action, and every row's app name links straight to /apps/<slug>/. The Pick drawer adds an orange pick-ticket button ('Go to Observa · 1-02') and the official App Store badge (Apple artwork untouched, 40px). On screens 1024px and wider it also shows assets/qr/<slug>.svg in a white label, 'Scan to install on iPhone'; Mac-only AppMeta and Mockly show the badge only. The price statement is price.value verbatim on every row. The sticky bar: once the aisle beam scrolls away, a 44px orange beam with the seven aisle labels sticks to the top. Smart App Banner: none on studio pages, except journal posts and guides with exactly one mentioned app. Icons are squircle-masked at 1.06 overscale (cropping baked white corners) on a box front painted in the app's own world ground (studio_swatch from its chosen microsite). The bin label stays in constant studio type; the box belongs to the app.",
+   "visitorPath": [
+    "Beam masthead: nav as white beam labels on the orange beam",
+    "Level one: stencil H1 and lede (the about-strip text, AI-canonical), then the stocktake strip (computed proof from transparency.yml)",
+    "Aisle beam: seven aisle labels (the 7 need clusters) as jump links",
+    "Location index: per aisle, a stencil sign plus the cluster lead line, then ledger rows (aisle-bin code, box front, name, tagline, platforms, price.value, declared tracking/SDK/account); each row opens a Pick drawer with screenshot, Go-to ticket, badge and QR",
+    "Goods in: the newest arrival (computed from release.first_release, now Xiangqiful) on the receiving bay: large box front, first screenshot, real arrival date",
+    "Swap shelf: four comparisons as transfer tickets ('From Strong → GymLogger X') plus the computed comparison count → /alternatives/",
+    "Delivery notes: the latest two journal posts (date in mono, title, lede)",
+    "Ledger extract: the 6-app transparency sample (orange header row, mono values) → /transparency/",
+    "Service counter: six FAQ <details> tags (first open), plus a founder line (Antti Aittamaa, one developer, Finland, since 2025) and email",
+    "Close: the aisle labels again, 'Pick something'",
+    "Footer: the depot floor plan, with aisles as outlined rectangles listing every app, plus studio links, privacy, support and 'Made on a MacBook at 63°N'"
+   ],
+   "navigation": "The orange beam is the masthead on every studio page: the mark plus LAGERLAND label, then beam labels for Apps, Journal, Transparency, Alternatives and About, with Guides, For and Support in the 'Index' directory sheet (a <details> panel that works without JS). The current page's label is printed on blue with white text. Breadcrumbs are set as a location path in Martian ('LAGERLAND / JOURNAL / streaks-are-a-debt'). /apps/ is the full location index with each aisle's lead copy. /for/ pages are pick lists: the audience's stack as location rows, each with why it is on the list.",
+   "signatureInteraction": "Pick. Tap, click or press Enter on a ledger row and its box slides out of the bin: a drawer opens with the app's box front at large scale (app ground colour, 120px squircle icon, first screenshot 240px tall), the orange 'Go to <App> · code' ticket, the official badge and, on wide screens, the QR. Technique: each row is a <details> whose summary is the full ledger row; CSS transitions grid-template-rows from 0fr to 1fr, and the box lifts 6px with a soft 0 8px 24px shadow. On hover the box only nudges 3px as a preview; about 10 lines of JS close the previously opened drawer. No JS: <details> works natively, and every word (name, job, platforms, price, declared values, link) sits in the always-visible summary, so the drawer adds only image, badge and QR. Reduced motion: the drawer opens instantly with no lift.",
+   "motionGrammar": "Mechanical and short: things move along rails and never float or fade. Pick drawer 180ms ease-out; box lift 6px; aisle jumps use smooth scroll (instant under reduced motion); the sticky aisle beam drops in over 120ms. No reveal-on-scroll, no parallax, no count-up: stocktake values are static text.",
+   "readModeVariant": "Journal posts, guides, /for/ pages, transparency, the alternatives index, about, support and 404 keep the orange beam masthead and one blue upright as the left rail. On desktop the 28px upright's punched slots mark each H2, and the current section's slot fills orange: a working table of contents. On mobile the upright is 6px and an 'On this shelf' <details> holds the contents. The title is stencil 800 in sentence case at 56-72px; the meta line (date, read time, last updated) is Martian 14px. The column sits on a white label-stock sheet over concrete: Atkinson Hyperlegible Next 18/1.6 at 68ch in #14191F, with H2s in Atkinson 700 at 26px. The Quick Answer is a bin label: a white panel with a 12px orange top band, titled 'Quick answer', the answer at 19px (speakable). Tables are ledgers: orange header row, black text, Martian figures, concrete zebra rows; plist keys are in Martian on concrete. Mentioned apps close the post as their ledger rows, with the Pick drawer. The journal index is a delivery-notes ledger: date, title, read time, and the location codes of mentioned apps. Guides are problem tickets that resolve to bins. /transparency/ is the full stock ledger, one bin label per app with every field in a dl and the source status printed as label text (Source-verified / App Store-declared / Manifest pending). The alternatives index is a ledger grouped by our app under stencil signs. 404 reads 'BIN EMPTY' above the aisle directory.",
+   "assetsNeeded": "A clean vector studio mark: an SVG redraw of the stone star and block ring, because the PNG has a baked checkerboard. Data, not art: a per-app studio_swatch {ground, ink} in front matter, sampled from icons now and replaced by each chosen microsite's ground later. Racks, beams and labels are CSS. Optional later: per-app SVG wordmarks from each microsite's face for the box fronts. Everything else runs on the existing icons, screenshots and QR SVGs.",
+   "risk": "It is the name's literal reading. A depot can read cold and industrial against 'calm', and a dense ledger can feel like a spreadsheet to a casual shopper if row rhythm and box fronts are not generous. Orange-and-blue racking also nears generic stock-photo industry. Stencil tires below 40px, so it never sets running text.",
+   "memoryTest": "The Lagerland site was an open warehouse: huge stencil aisle signs, orange shelf beams, and every app on a labelled bin saying what's inside (0 trackers, 0 ad SDKs). I pulled one out and its box showed me the app.",
+   "specimen": {
+    "bg": "#E6E8E5",
+    "ink": "#14191F",
+    "accent": "#E2560F",
+    "display": "Big Shoulders Stencil Display",
+    "dw": 800,
+    "text": "Atkinson Hyperlegible Next",
+    "h1": "Private software for iPhone, iPad, Watch and Mac",
+    "sub": "One developer in Finland. No tracking, no ads, no accounts.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "liftlog-a keeps the edge member and the crossing bands, which are the literal bar and plates. studio-a moves to the white-painted depot its own scene describes (ground ~#F3F4F1). It shows the racking as one bay frame around the location index, not as page-edge rails. Orange stays on beam labels and pick tickets: no full-bleed orange masthead or aisle band."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Set studio-a's text in Gantari 400/700/400i (about 31 KB). Martian Mono stays for data only."
+    },
+    {
+     "sev": "major",
+     "text": "Give 'Goods in' an always-visible badge (and the QR at 1024px and up) for the newest arrival. Place it within 1440×900 and 390×844, e.g. as a white bin label beside the stocktake strip, so one working App Store action shows without opening a drawer."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "The Back Catalogue",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "Independent record labels as identity systems. Factory Records' catalogue numbering under Peter Saville: every artefact numbered, every sleeve its own design. The yellow-label principle of Deutsche Grammophon: one constant cartouche on radically different covers (principle only, none of its trade dress). And the record shop's browser shelf, with spines filed by genre behind black plastic divider cards.",
+   "thesis": "The studio is a small label. Each app is a record filed spine-out by genre in its own colours, and the label appears only as a catalogue number and one constant cartouche. It refuses the hero-plus-icon-card grid by making the catalogue a shelf you browse and pull a record from.",
+   "scene": "A browser at the new-releases shelf of a small record shop on a bright afternoon, the wall painted the label's cloudberry yellow, spines lit flat and even. Scheme: light, drenched.",
+   "scheme": "light",
+   "colorStrategy": "Drenched: the cloudberry wall is the ground of every Persuade surface; black divider cards and type set the structure; the only other colours are the apps' own, on their spines and sleeves. Read pages keep the yellow as masthead band and put the column on inner-sleeve white.",
+   "palette": [
+    {
+     "hex": "#F2B21B",
+     "role": "cloudberry: drenched wall/ground, Read masthead band"
+    },
+    {
+     "hex": "#141414",
+     "role": "sleeve black: ink, headlines, divider cards, buttons (9.8:1 on cloudberry)"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "inner-sleeve white: reading sheet, cartouche, price stickers, QR quiet zone"
+    },
+    {
+     "hex": "#4A3F22",
+     "role": "umber: secondary text on cloudberry (5.5:1)"
+    },
+    {
+     "hex": "#5C5C5C",
+     "role": "graphite: secondary text on white (6.7:1)"
+    }
+   ],
+   "type": {
+    "display": "Krona One 400 (Fontsource, 10 KB)",
+    "text": "Familjen Grotesk 400, 600 and 400 italic (Fontsource, 11-12 KB each)",
+    "utility": "none: catalogue numbers, dates and prices are set in Familjen Grotesk 600 with tabular figures",
+    "rationale": "Krona One is a semi-extended, low-contrast sans with the stance of mid-century Nordic label and advert lettering, wide enough to own a spine at 16px set vertically and a 72px H1. Familjen Grotesk, from a Stockholm studio, is compact with a high x-height, built for tracklists and calm enough for liner-note reading. Total about 45 KB."
+   },
+   "materials": [
+    "cloudberry-painted shop wall (the drenched ground)",
+    "record spines in each app's own colour",
+    "black plastic genre divider cards",
+    "square sleeve faces carrying the app's world",
+    "the white label cartouche (the one constant)",
+    "round white price stickers",
+    "printed back-cover tracklist",
+    "inner-sleeve white sheet for liner notes",
+    "shrink-wrap sticker (the Quick Answer)"
+   ],
+   "firstViewportDesktop": "1440x900, cloudberry #F2B21B full-bleed. Masthead, 0-72px: the stone-star mark as a 44px record centre label (white roundel) and LAGERLAND in Krona One 22px on the left; on the right, five black divider-card tabs (Apps, Journal, Transparency, Alternatives, About; Familjen 600 15px yellow on black), with the current tab raised 6px. y104-330: the H1 in Krona One 72px/1.02, black, left at x64, max 980px, three lines: '19 apps on one small label. Not one of them tracks you.' (count computed). y336-430: the lede in Familjen 20/1.5, 600px: 'iPhone, iPad, Apple Watch and Mac apps by one developer in Finland since 2025. Each has its own sleeve; every one ships with zero trackers, zero ad SDKs and no account. Read the credits →'. y460-900: the shelf, full width x36-1404. Seven black genre divider cards (36px wide, rising 40px above the spines, genre set vertically in yellow Krona One 15px) separate eighteen spine-out records. Each spine is 42 x 400px, filled with the app's own colour: name vertical bottom-to-top in Krona One 16px, 'LGL 0xx' horizontal at the foot in Familjen 600 11px, and a 14px white price dot. One record stands face-out at 400px: the newest release (computed from release.first_release, now Xiangqiful LGL 019). Its sleeve holds the app's world ground, a 140px squircle icon, the tagline in Familjen 600 18px, and a 64px white price sticker with price.value verbatim, top-right. Along the sleeve foot run the constant cartouche 'LAGERLAND · LGL 019' at bottom-left, the official App Store badge (40px) and the app's QR (96px, white quiet zone) where a sleeve's barcode sits at bottom-right, and a black 'Open Xiangqiful →' button.",
+   "firstViewportMobile": "390x844, cloudberry. Masthead 56px: a 32px roundel, LAGERLAND in Krona One 17px, and a black 'Catalogue' tab on the right that opens the genre and page sheet. H1 in Krona One 34px/1.08 on four lines; lede in Familjen 16/1.5 on four lines, ending at y≈400. The shelf turns 90° into a stack. From y≈430, black divider bars (36px, genre in yellow Krona One 13px) alternate with spine bars (52px tall, full width, in the app's colour). Each bar shows the name in Krona One 17px on the left and 'LGL 0xx' plus price in Familjen 600 13px on the right. The HEALTH divider and AfterShift, Observa, Pawza, GymLogger X and LiftLog are visible above the fold. Tapping a spine turns it face-out inline as a 358px square sleeve (icon, tagline, price sticker, cartouche, App Store badge, 'Open →'); phones get no QR.",
+   "conversion": "The shelf is the routing: every spine name links to /apps/<slug>/. The face-out sleeve carries a black 'Open <App> →' button, the price sticker (price.value verbatim), the official App Store badge (unaltered, 40px) and, on desktop, the app's QR printed where a sleeve's barcode sits, 'Scan to install on iPhone'; Mac-only AppMeta and Mockly show the badge only. The back-cover discography repeats every route as text. The sticky bar: after the shelf leaves the viewport, a 48px black divider strip sticks to the top with the seven genre labels in yellow, jumping back into the shelf. Smart App Banner: only on journal posts and guides with exactly one mentioned app. Icons and names: the spine and sleeve wear the app's own world colours (studio_swatch from its microsite, interim sampled from the icon), with the icon squircle-masked at 1.06. The label adds only the cartouche and catalogue number, never its own colour, to an app's sleeve.",
+   "visitorPath": [
+    "Masthead: centre-label roundel, LAGERLAND, divider-card tabs",
+    "Statement: Krona H1 and lede (the about-strip text, AI-canonical) with the credits link",
+    "The shelf: seven genre dividers, eighteen spines, the newest release face-out (the routing core; badge, QR and price on the face-out sleeve)",
+    "Back cover: the full discography as a tracklist (LGL no. · app · tagline · formats · released · price.value), the shelf's text twin with every job line visible",
+    "Credits: the 6-app transparency sample set as album credits (tracking domains 0, third-party SDKs, account, analytics), plus 'Full credits for all 19 →' (computed)",
+    "Versus: four comparisons as split-single sleeves (our app's colour half, the competitor half in plain black type) plus the computed count → /alternatives/",
+    "Liner notes: the latest two journal posts as inner-sleeve excerpts",
+    "Pressed by one person: founder block (Antti Aittamaa, Finland, since 2025), then six FAQ <details> 'from the counter' (first open)",
+    "Close: 'Back to the shelf' plus email",
+    "Footer: the label discography (all LGL numbers and names), studio links, privacy, support, 'Made on a MacBook at 63°N'"
+   ],
+   "navigation": "Black divider-card tabs across the yellow masthead (Apps, Journal, Transparency, Alternatives, About; the current card is raised); Guides, For and Support sit in the footer and the mobile 'Catalogue' sheet (<details>, works without JS). /apps/ is the whole shelf plus the back-cover discography with genre notes. /for/ pages are compilations: each audience's stack as a tracklist with why each app is on it. /guides/ is a row of staff-pick shelf-talker cards that open into each guide. Catalogue numbers are computed in first_release order, so new apps append and old numbers never change.",
+   "signatureInteraction": "Face-out. Hovering or focusing a spine on desktop turns that record face-out: its flex-basis grows from 42px to 400px over 220ms and the sleeve face appears, while the previous face-out record turns back to its spine. On touch, a tap toggles it through a <button aria-expanded> in each spine, and the app name stays a plain link. Technique: a flex row with :hover, :focus-within and :has() collapses the default record while another is hovered; a .is-out class is kept by about 20 lines of JS; every sleeve face is server-rendered. No JS: the newest release is server-rendered face-out, every spine name is a link, and the back-cover discography directly below lists every tagline, so nothing is reachable only by interaction. Reduced motion: the swap is instant.",
+   "motionGrammar": "Records slide and nothing fades. Face-out 220ms cubic-bezier(.2,.7,.2,1). On load the newest record rises 12px and settles once over 300ms (skipped under reduced motion). Divider cards never move; no scroll reveals; the sticky divider strip simply docks.",
+   "readModeVariant": "Liner notes. A 120px cloudberry masthead band holds the roundel, the post's date and read time (Familjen 600 15px) and the title in Krona One at 40-48px, black, three lines at most at 1100px. Below sits the inner sleeve: a white sheet with the column in Familjen Grotesk 18/1.62 at 66ch, #141414, H2s in Familjen 600 at 26px, links underlined in black. The Quick Answer is the shrink-wrap sticker: a black panel titled 'Quick answer' in yellow, with the white 18px answer at the top of the sheet. Tables are back-cover tracklists: tabular figures, 1px black rules, no fills. Mentioned apps close the post face-out (sleeve with 'Open →'); on desktop their spine also stands in the right margin as a vertical link. The journal index is a 'Liner notes' tracklist by date. /transparency/ is 'Credits': one block per app (role and value in Apple's terms, plus source status), headed by the app's spine laid flat as a horizontal bar, never a coloured side border. The alternatives index is 'Versus', grouped under our app's flat spine bar. About is 'Pressed by one person'; support is 'The counter'; 404 is 'Not in the catalogue', followed by the shelf.",
+   "assetsNeeded": "A clean vector studio mark, also cut as a centre-label roundel; the PNG has a baked checkerboard. Data: per-app studio_swatch {ground, ink} for spines and sleeves (ink must reach 4.5:1 on its ground), sampled from icons now and replaced with each chosen microsite's ground. Optional later: per-app SVG wordmarks for sleeve faces. QR SVGs, icons and screenshots exist; spines, dividers and stickers are CSS.",
+   "risk": "Familiar: 'studio as record label' is a known indie trope, and the pick lands near where many studio redesigns go. Nineteen app colours on a yellow wall can turn noisy unless the swatch data is tuned. Vertical spine text scans slower than a list (the back-cover discography and mobile stack carry that load). Cloudberry plus black can read as a warning sign if the shelf is not the clear focus.",
+   "memoryTest": "A yellow record-shop wall with a shelf of nineteen spines in different colours. Every Lagerland app was a record; I touched one and it turned to face me, with sleeve, price sticker and a QR where the barcode goes.",
+   "specimen": {
+    "bg": "#F2B21B",
+    "ink": "#141414",
+    "accent": "#4A3F22",
+    "display": "Krona One",
+    "dw": 400,
+    "text": "Familjen Grotesk",
+    "h1": "Private software for iPhone, iPad, Watch and Mac",
+    "sub": "One developer in Finland. No tracking, no ads, no accounts.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Drop the drench on studio-b. The shop wall goes neutral (white, or a graphite shelf), so the spines in each app's own colours are the only colour. That is also truer to its thesis that the label appears only as a catalogue number and a cartouche. allpaid-a (Abfahrt yellow) and taskful-day-c (the icon's sun) keep yellow. If both are picked, keep taskful-day-c's white dial face dominant."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "Page 100",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 5,
+   "lineage": "European broadcast teletext: Yle Teksti-TV (still on air in Finland) and BBC Ceefax (1974-2012), and its Level 1 grammar: a 40x24 character grid, seven colours on black, double-height rows, 2x3 block-mosaic graphics, three-digit page numbers with 100 as the index, four Fastext colour keys, and MIX mode, where text sits over the live TV picture.",
+   "thesis": "The studio is a teletext service. Every app, post and manifest has a three-digit page you can type, Fastext keys route the sections, and each app's own picture shows through in MIX. It refuses the hero-plus-card grid by making the homepage a P100 index.",
+   "scene": "A viewer on the sofa in a dark Finnish living room on an October evening, the TV's teletext page the only light in the room. Scheme: dark.",
+   "scheme": "dark",
+   "colorStrategy": "Full palette, each teletext colour with one job: yellow for titles and date, cyan for links and page numbers, green for declared data and prices, white for frame text, and blue for band rows (only behind text). Red, green, yellow and cyan are the Fastext keys; magenta is reserved for the current page number. No glow, scanlines or CRT curvature.",
+   "palette": [
+    {
+     "hex": "#000000",
+     "role": "CRT black: ground and text boxes"
+    },
+    {
+     "hex": "#D9D9D9",
+     "role": "reading white: column body text (14.9:1); frame text is #FFFFFF"
+    },
+    {
+     "hex": "#FFFF00",
+     "role": "teletext yellow: titles, date and clock, Fastext 3"
+    },
+    {
+     "hex": "#00FFFF",
+     "role": "teletext cyan: links, page numbers, Fastext 4"
+    },
+    {
+     "hex": "#00FF00",
+     "role": "teletext green: declared values (0, false, None), prices, Fastext 2"
+    },
+    {
+     "hex": "#0000FF",
+     "role": "teletext blue: band rows behind white or yellow text only, never as text (2.4:1)"
+    },
+    {
+     "hex": "#FF0000",
+     "role": "teletext red: Fastext 1, 404 (5.25:1 on black; black on red for key fields)"
+    }
+   ],
+   "type": {
+    "display": "Tiny5 400 (Fontsource, 9 KB)",
+    "text": "Radio Canada Big 400, 600 and 400 italic (Fontsource, 11 KB each)",
+    "utility": "none: Tiny5 covers the real data (page numbers, clock, plist keys)",
+    "rationale": "Among Fontsource faces, Tiny5's blocky caps and stepped diagonals sit closest to the SAA5050 teletext character generator. It sets the header row, page numbers and double-height titles (transform: scaleY(2), a real teletext gesture) and never sets running text. Radio Canada Big is the open typeface made for a public broadcaster (CBC/Radio-Canada), with open apertures for screens: the broadcaster's voice for the reading column and app lines. Total about 42 KB."
+   },
+   "materials": [
+    "40x24 character grid (36 x 37.5px cells at 1440x900)",
+    "header row: page number, service name, date, clock",
+    "full-width colour band rows",
+    "double-height title rows",
+    "2x3 block-mosaic graphics (LAGERLAND wordmark, star mark)",
+    "boxed text over the MIX picture",
+    "Fastext row of four coloured keys",
+    "dot-leader index lines with cyan page numbers"
+   ],
+   "firstViewportDesktop": "1440x900 as one 40x24 teletext page on black. Row 1: the header row in Tiny5 24px, 'P100' in magenta, 'LAGERLAND 100' in white, 'Mon 05 Oct' and a live '12:10:45' in yellow (no JS: build date, no clock). Rows 2-4: a blue band with the block-mosaic LAGERLAND in yellow across 1100px and the mosaic star mark in white at the right. Rows 5-8: the H1 in double-height Tiny5 yellow, two lines: 'Private apps for iPhone, / iPad, Watch and Mac.' Row 9: the lede in Radio Canada Big 20px white: '19 apps by one developer in Finland. No trackers, no ads, no accounts.' (count computed). Row 10 is split. On the left, the keypad 'PAGE _ _ _' in Tiny5 cyan with a blinking cursor. On the right, a boxed green newsflash: 'LEDGER 400 · TRACKING DOMAINS 0 · AD SDKs 0 · 18 MANIFESTS + 1 PENDING · AUDITED 11 JUN 2026' (computed). Rows 11-20: the P100 need index in two 20-column columns, 19 lines plus '200 All apps by need'. Each line is boxed black: cyan page number in Tiny5 18px, name in Radio Canada Big 600 19px white, a short need in 400 16px #D9D9D9. The newest release (Xiangqiful, 219) is selected on load, so MIX is on: its 1024px icon art fills the right 60% at viewport height behind the boxed lines, with no upscaling. Rows 21-23: the boxed subtitle panel for the selected app: tagline, price.value in green, cyan 'Go to 219 Xiangqiful', the official App Store badge (40px, on black) and the QR (100px, white quiet zone) at the right end. Row 24: Fastext keys in red Apps 200, green Journal 300, yellow Ledger 400 and cyan Index 100.",
+   "firstViewportMobile": "390x844, black. Header row 28px: 'P100 LAGERLAND 100 05 Oct 12:10' in Tiny5 13px (magenta number, yellow date). A 72px blue mosaic band with LAGERLAND in yellow blocks. H1 in double-height Tiny5 yellow, 30px, two lines; lede in Radio Canada Big 16/1.45 #D9D9D9, three lines. Keypad row 52px: 'PAGE', a three-digit numeric field (inputmode=numeric, 48px tall) and a cyan 'GO'. From y≈330, the index: blue genre band rows (32px, white Radio Canada Big 600) and need-lines 48px tall (cyan page number in Tiny5 16px, 28px squircle icon chip, name in Radio Canada Big 600 17px, need at 15px). The HEALTH band and six lines are visible. MIX is off on phones. The Fastext row is fixed at the bottom: 52px, four equal keys with black labels on red, green, yellow and cyan fields.",
+   "conversion": "The index is the routing: each need-line links to /apps/<slug>/, and its page number works as a typed shortcut (201-219 go to microsites; 501-604 go to alternatives pages, which wear their app's world). Selecting a line (hover or focus) puts that app on air behind the page (MIX) and fills the subtitle panel: tagline, price.value verbatim in green, a cyan 'Go to 207 Observa', the official App Store badge (unaltered, on its own black box) and, on desktop, the app's QR in a white quiet-zone box. Mac-only AppMeta and Mockly show the badge only. The sticky bar is the Fastext row (fixed at the bottom on mobile; the last grid row stays fixed on desktop). Smart App Banner: only on journal posts and guides with exactly one mentioned app. Icons are never redrawn into mosaic. The teletext frame stays uniform on purpose, and each app's art appears only as itself, in full colour: as the MIX picture and as the 28px squircle chip on mobile lines.",
+   "visitorPath": [
+    "Header row (page number, service, date, clock), the persistent frame",
+    "P100 masthead: mosaic band, double-height H1, lede (the about-strip text, AI-canonical)",
+    "Keypad row and the boxed transparency newsflash (computed counts → 400)",
+    "Need index: 19 need-lines → microsites, with the MIX picture and subtitle panel (tagline, price, badge, QR) for the selected app",
+    "P101 'New on air': the newest release (computed) and the latest two journal posts with page numbers",
+    "P400 ledger excerpt: the 6-app transparency sample as a teletext table (blue header band, green values) → 'all 19, page 400'",
+    "P500 Versus: four comparisons as results lines with dot leaders, plus the computed count → 500",
+    "P800 About: founder line (Antti Aittamaa, one developer, Finland, since 2025), then six FAQ entries with yellow questions and white answers, all visible",
+    "Close: contact line (email) and 'Back to 100'",
+    "Footer P899: the full page directory (every page number → URL), studio links, privacy, support, 'Made on a MacBook at 63°N'"
+   ],
+   "navigation": "Three systems, all plain links underneath. The header row shows where you stand (the current page number in magenta). The Fastext row of four coloured keys is on every page: red Apps 200, green Journal 300, yellow Transparency 400, cyan Index 100; on posts, red and green become previous and next. The keypad takes any three-digit page on any page; on desktop you can type digits anywhere outside a field, and the header counter rolls. Page map, computed by Liquid in ascending date order so numbers never change: 100 home; 200 /apps/ (201-219 microsites); 301-342 journal; 400 transparency; 500-699 alternatives; 700 guides (701-705); 710 /for/ (711-714); 800 about; 810 support.",
+   "signatureInteraction": "Page search plus MIX. Typing three digits (anywhere on desktop, or in the keypad field on touch) makes the header counter roll 'P2--', 'P20-', 'P207', and the page goes, as on a TV. Hovering or focusing an index line switches MIX on: the black ground drops away and that app's own icon art fills the screen behind boxed text. Technique: a vanilla JS keydown listener (ignored inside inputs and with modifier keys) reads a Liquid-rendered JSON map of page number to URL. MIX is pure CSS: :has(.line:is(:hover,:focus-visible)) swaps a background layer whose image is each line's inline --pic custom property. No JS: lines are plain links, the keypad field is not rendered (it is an enhancement, not content), and MIX still works through CSS. Reduced motion: the counter shows the final number at once, and MIX is already instant.",
+   "motionGrammar": "Teletext has no easing: everything changes on a frame. On first load, once per session and only under html.js, rows arrive top to bottom in about 12 frames over 400ms, like a page being received; content is server-rendered visible, and the effect only replays it. The header counter rolls while digits are typed, the clock ticks seconds, and the cursor blinks in 1s steps. No fades, slides, glow or parallax. Reduced motion: no row arrival, the clock shows minutes without ticking, and the cursor is steady.",
+   "readModeVariant": "Every Read page is a numbered teletext page. The header row reads 'P312 LAGERLAND 312 date clock'. A blue band carries the section name in double-height Tiny5 yellow; the title is Radio Canada Big 700 at 40px, yellow on black; the meta line is Tiny5 cyan. The column is Radio Canada Big 18/1.65 #D9D9D9 on #000 at 66ch, with cyan underlined links. Each H2 sits on a full-width blue band row (white Radio Canada Big 700, 24px), teletext's new-background row. The Quick Answer is a boxed newsflash: a black panel opened by one full-width yellow band row titled 'Quick answer', with white 18px text. Tables have a blue header band and green values; label-to-value rows use dot leaders; plist keys are green Tiny5 16px. The Fastext row sits at the foot, sticky on mobile: red previous, green next, yellow section index, cyan 100. The journal index is P300, one line per post (date yellow, title white, page cyan). /transparency/ is P400, with in-page sections 401-419. The alternatives index is P500, results-style lines grouped under our app's name. Guides are P701-705, /for/ is P711-714, about P800, support P810. 404 reads 'PAGE NOT IN SERVICE' with the header counter still searching, followed by the P100 index.",
+   "assetsNeeded": "A clean vector studio mark, plus a hand-authored 2x3 block-mosaic version of the star mark and of the LAGERLAND wordmark (SVG or CSS grid; a small vector task). Data: a per-app index_line front-matter field (28 characters or fewer, the need phrase on P100) and the Liquid page-number map. MIX uses the existing 1024px icons; screenshots and QR SVGs exist.",
+   "risk": "Retro-broadcast nostalgia is strong in Finland, the UK and Europe but unknown to many US visitors. A pixel face and seven full-saturation colours tip into 8-bit costume if Tiny5 ever reaches running text or headings in Read mode. The dark-only column carries 15-minute posts, and MIX over busy icon art (WanderWiki) needs every line boxed. The 'receive-only' idea must apply to the apps' declared network calls only, never to the website, which runs GoatCounter.",
+   "memoryTest": "The Lagerland site was a teletext page: 'P100 LAGERLAND' in the corner, yellow double-height titles, an index of apps with page numbers. I typed 207 and it jumped to Observa, and when I hovered a line, that app's icon came on air behind the text.",
+   "specimen": {
+    "bg": "#000000",
+    "ink": "#FFFF00",
+    "accent": "#00FFFF",
+    "display": "Tiny5",
+    "dw": 400,
+    "text": "Radio Canada Big",
+    "h1": "Private software for iPhone, iPad, Watch and Mac",
+    "sub": "One developer in Finland. No tracking, no ads, no accounts.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Listen for digits only in the visible PAGE field (render it on desktop too) and in one focusable index region, never at document level. Blink the cursor three times, then hold it. The clock shows minutes only; it is server-rendered with the label 'page built' plus the build date, and JS replaces it with the local time. MIX uses 480px WebP derivatives (about 30 to 50 KB) through image-set(), loaded only for the hovered or focused line."
+    }
+   ]
+  }
+ ],
+ "canon": "Canon (the owner's standing exit, played straight, never recommended): the indie Apple studio page at the craft level of Panic's and The Iconfactory's sites. White ground and an SF-like grotesk; headline beside floating iPhone/Mac mockups; a short trust row; a 3-column grid of app tiles (icon, name, one line, App Store badge) grouped by category; a featured-app band; a privacy strip linking /transparency/; journal cards; FAQ; footer.",
+ "notes": "Honest ranking, made before mapping: 1 record label (most resonant; carries non-flattening, routing and proof), 2 räsymatto, 3 stamps and first-day cover, 4 orienteering, 5 teletext, 6 63°N almanac, 7 open depot (the name's literal reading, so last). The dice mapped A = candidate 7 (THE ROLL) and C = candidate 5 (SECOND ROLL, re-roll 1), and B = candidate 1 as IMPECCABLE'S PICK. The three styles differ in world (depot, record shop, broadcast), topology (aisle ledger with pull-out drawers; horizontal spine shelf with face-out accordion; numbered pages with keypad and MIX) and lighting (cool white-lit Committed, drenched cloudberry, dark Full palette). Every face was verified with npm view and npm pack against @fontsource 5.3.0, latin static woff2: Big Shoulders Stencil Display, Atkinson Hyperlegible Next, Martian Mono, Krona One, Familjen Grotesk, Tiny5, Radio Canada Big; all page budgets are under 90 KB. Shared data dependency for all three: a per-app studio_swatch {ground, ink} (or the chosen microsite's tokens), so the studio shows each app in its own world colours, plus the computed catalogue order by release.first_release. Copy guard: AppMeta Pulse ships no Privacy Manifest yet, so studio copy says 'declared data' and '18 manifests + 1 pending', never 'NSPrivacyTracking false x19'. Findings for the build phase: the studio mark PNG has a baked checkerboard; seven icons have baked white corners and mediakit.png is non-square; the site runs GoatCounter, so the studio must not claim to be untracked; alternatives/index.html hard-codes numberOfItems 104; the Smart App Banner could be emitted on single-app journal posts and guides. Tare (status upcoming) stays off the studio until the owner lists it; if listed, A shows an empty labelled bin, B an unprinted sleeve with only the cartouche ('LGL 020 forthcoming'), and C a 'page in preparation' line.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

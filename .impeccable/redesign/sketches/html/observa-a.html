@@ -1,0 +1,690 @@
+<!-- fonts: Bodoni Moda:600 | Commissioner:400,500,600,700 -->
+<style>
+.s-observa-a{
+  --ground:#15110F; --plate:#1A1511; --panel:#1F1814; --zone:#271E18;
+  --rule:#3B2F26; --grid:#251C16; --grid5:#33271F; --par:#3A2D23; --base:#7A6857;
+  --ink:#F2EAE1; --ink2:#BBAE9F; --apricot:#F2A766;
+  color-scheme:dark;
+  font-family:'Commissioner',system-ui,sans-serif; font-weight:400; font-size:17px; line-height:1.5;
+  color:var(--ink); background:var(--ground);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+.s-observa-a ::selection{background:var(--apricot);color:var(--ground)}
+.s-observa-a *{margin:0}
+.s-observa-a .cap,.s-observa-a .figs,.s-observa-a .qrcap,.s-observa-a .plans,.s-observa-a .key li,.s-observa-a .ledger-t,.s-observa-a .inset figcaption,.s-observa-a .plate-svg text{word-spacing:.09em}
+.s-observa-a .price,.s-observa-a .say,.s-observa-a h2{word-spacing:.07em}
+.s-observa-a a{color:inherit}
+.s-observa-a a:focus-visible,.s-observa-a button:focus-visible,.s-observa-a summary:focus-visible{outline:2px solid var(--apricot);outline-offset:3px}
+.s-observa-a.mk--desktop{width:1440px;height:1800px}
+.s-observa-a.mk--mobile{width:390px;height:1688px}
+
+/* ---------- cartouche (nav) ---------- */
+.s-observa-a .nav{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--rule);background:var(--ground)}
+.s-observa-a .brand{display:flex;align-items:center;text-decoration:none}
+.s-observa-a .brand img{display:block;border-radius:22%}
+.s-observa-a .wordmark{font-weight:600;letter-spacing:.34em;margin-right:-.34em;color:var(--ink)}
+.s-observa-a .links{display:flex;list-style:none;padding:0}
+.s-observa-a .links a{text-decoration:none;color:var(--ink2);font-weight:500;font-size:15px;display:block;padding:6px 0;border-bottom:1px solid transparent}
+.s-observa-a .links a[aria-current]{color:var(--ink);border-bottom-color:var(--apricot)}
+.s-observa-a .links a:hover{color:var(--ink)}
+
+/* ---------- type ---------- */
+.s-observa-a h1{font-family:'Bodoni Moda',Georgia,serif;font-weight:600;color:var(--ink);text-wrap:balance;letter-spacing:-.012em}
+.s-observa-a h2{font-weight:700;color:var(--ink);letter-spacing:-.012em;text-wrap:balance}
+.s-observa-a .pre{font-weight:600;color:var(--apricot)}
+.s-observa-a .sub{color:var(--ink2)}
+
+/* ---------- plate ---------- */
+.s-observa-a .plate{display:block}
+.s-observa-a .plate-svg{display:block}
+.s-observa-a .pl-outer{fill:none;stroke:var(--grid5);stroke-width:1}
+.s-observa-a .pl-ground{fill:var(--plate)}
+.s-observa-a .pl-zone{fill:var(--zone)}
+.s-observa-a .pl-mer{stroke:var(--grid);stroke-width:1}
+.s-observa-a .pl-mer5{stroke:var(--grid5);stroke-width:1}
+.s-observa-a .pl-par{stroke:var(--par);stroke-width:1}
+.s-observa-a .pl-base{stroke:var(--base);stroke-width:1.25}
+.s-observa-a .pl-cross{fill:none;stroke:#6B5948;stroke-width:1}
+.s-observa-a .pl-frame{fill:none;stroke:var(--rule);stroke-width:1}
+.s-observa-a .pl-tick{stroke:var(--rule);stroke-width:1}
+.s-observa-a .pl-star{fill:var(--ink)}
+.s-observa-a .pl-ring{fill:none;stroke:var(--apricot);stroke-width:1.25}
+.s-observa-a .pl-con{stroke:var(--apricot);stroke-width:1.5;stroke-linecap:round}
+.s-observa-a .plate-svg text{font-family:'Commissioner',system-ui,sans-serif}
+.s-observa-a .pl-lab{fill:var(--ink2);font-size:13px;font-weight:500}
+.s-observa-a .pl-lab-b{fill:var(--ink)}
+.s-observa-a .pl-name .cn{fill:var(--apricot);font-size:19px;font-weight:700;letter-spacing:.01em}
+.s-observa-a .pl-name .ca{fill:var(--ink2);font-size:14px;font-weight:500}
+
+/* ---------- action + habit buttons ---------- */
+.s-observa-a .asb{display:inline-block;line-height:0;border-radius:11px;padding:5px;border:1px solid var(--apricot)}
+.s-observa-a .asb-svg{display:block}
+.s-observa-a .qrtile{background:#fff;border-radius:6px;display:block;line-height:0}
+.s-observa-a .qrtile img{display:block}
+.s-observa-a .price{font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.s-observa-a .plans{color:var(--ink2);font-weight:500}
+.s-observa-a .habits{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}
+.s-observa-a .habit{font:inherit;font-weight:600;color:var(--ink2);background:transparent;border:1px solid var(--rule);border-radius:4px;display:inline-flex;align-items:center;gap:9px;cursor:pointer}
+.s-observa-a .habit:hover{color:var(--ink);border-color:var(--ink2)}
+.s-observa-a .habit[aria-pressed="true"]{color:var(--apricot);border-color:var(--apricot)}
+.s-observa-a .habit svg{flex:none}
+.s-observa-a .say{font-weight:700;color:var(--ink);text-wrap:balance;letter-spacing:-.01em}
+.s-observa-a .figs{color:var(--ink2);font-weight:600;font-variant-numeric:tabular-nums}
+.s-observa-a .cap{color:var(--ink2);font-weight:400}
+
+/* ---------- quick answer band ---------- */
+.s-observa-a .qa{background:var(--panel);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.s-observa-a .qa p.ans{color:var(--ink)}
+.s-observa-a .qref{border-top:1px solid var(--rule)}
+.s-observa-a .qref summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;font-weight:600;color:var(--ink)}
+.s-observa-a .qref summary::-webkit-details-marker{display:none}
+.s-observa-a .qref summary svg{flex:none}
+.s-observa-a .qref[open] summary svg .v{display:none}
+
+/* ---------- inset (device frame) ---------- */
+.s-observa-a .inset{margin:0}
+.s-observa-a .bezel{background:#000;border:1px solid var(--rule);overflow:hidden}
+.s-observa-a .bezel img{display:block;width:100%;height:auto}
+.s-observa-a .inset figcaption{color:var(--ink2)}
+
+/* ---------- dark-sky site (privacy record) ---------- */
+.s-observa-a .lede{color:var(--ink2)}
+.s-observa-a .links2{display:flex;flex-wrap:wrap;list-style:none;padding:0}
+.s-observa-a .links2 a{font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:var(--apricot);text-decoration-thickness:1.5px;text-underline-offset:5px}
+.s-observa-a .links2 a:hover{color:var(--apricot)}
+.s-observa-a .ledger-t{color:var(--ink2);font-weight:500}
+.s-observa-a .ledger{border-top:2px solid var(--ink);margin:0}
+.s-observa-a .ledger div{display:grid;border-bottom:1px solid var(--rule)}
+.s-observa-a .ledger dt{color:var(--ink2);font-weight:500}
+.s-observa-a .ledger dd{margin:0;color:var(--ink);font-weight:600;letter-spacing:-.005em}
+.s-observa-a .ledger .mk-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--ink);margin-right:12px;vertical-align:1px}
+
+/* ================= DESKTOP ================= */
+.s-observa-a.mk--desktop .nav{height:64px;padding:0 120px}
+.s-observa-a.mk--desktop .brand img{width:30px;height:30px;margin-right:14px}
+.s-observa-a.mk--desktop .wordmark{font-size:17px}
+.s-observa-a.mk--desktop .links{gap:34px}
+.s-observa-a.mk--desktop .hero{position:relative;height:836px}
+.s-observa-a.mk--desktop .titleblock{padding:40px 120px 0;width:1100px}
+.s-observa-a.mk--desktop h1{font-size:72px;line-height:76px;width:1060px}
+.s-observa-a.mk--desktop .pre{font-size:25px;line-height:32px;margin-top:16px}
+.s-observa-a.mk--desktop .sub{font-size:19px;line-height:29px;margin-top:8px;width:720px}
+.s-observa-a.mk--desktop .key{position:absolute;left:960px;top:128px;width:360px;list-style:none;padding:0;margin:0}
+.s-observa-a.mk--desktop .key li{display:grid;grid-template-columns:44px 1fr;column-gap:12px;align-items:center;font-size:14px;line-height:19px;color:var(--ink2);padding:6px 0}
+.s-observa-a.mk--desktop .key li + li{border-top:1px solid var(--grid5)}
+.s-observa-a.mk--desktop .key li span{text-wrap:balance}
+.s-observa-a.mk--desktop .key-sym{display:block}
+.s-observa-a.mk--desktop .plate{margin-top:20px;height:262px}
+.s-observa-a.mk--desktop .row{display:grid;grid-template-columns:520px 1fr;column-gap:48px;padding:0 120px;margin-top:14px}
+.s-observa-a.mk--desktop .legend{background:var(--panel);border:1px solid var(--rule);border-radius:4px;display:grid;grid-template-columns:1fr 104px;column-gap:20px;padding:20px 24px;align-items:start}
+.s-observa-a.mk--desktop .price{font-size:23px;line-height:30px}
+.s-observa-a.mk--desktop .plans{font-size:13.5px;line-height:19px;margin-top:2px}
+.s-observa-a.mk--desktop .legend .act{margin-top:14px}
+.s-observa-a.mk--desktop .asb-svg{width:156px;height:52px}
+.s-observa-a.mk--desktop .qrbox{width:104px}
+.s-observa-a.mk--desktop .qrtile{width:100px;height:100px;padding:4px}
+.s-observa-a.mk--desktop .qrtile img{width:92px;height:92px}
+.s-observa-a.mk--desktop .qrcap{font-size:12.5px;line-height:16px;color:var(--ink2);margin-top:6px;font-weight:500}
+.s-observa-a.mk--desktop .sayblock{padding-top:6px}
+.s-observa-a.mk--desktop .say{font-size:26px;line-height:32px;width:640px}
+.s-observa-a.mk--desktop .figs{font-size:15px;line-height:20px;margin-top:8px}
+.s-observa-a.mk--desktop .habits{margin-top:12px}
+.s-observa-a.mk--desktop .habit{font-size:14.5px;height:38px;padding:0 15px}
+.s-observa-a.mk--desktop .cap{font-size:13px;line-height:18px;margin-top:10px}
+
+.s-observa-a.mk--desktop .qa{display:grid;grid-template-columns:200px 680px 240px;column-gap:40px;padding:60px 120px 0}
+.s-observa-a.mk--desktop .qa h2{font-size:34px;line-height:38px}
+.s-observa-a.mk--desktop .qa p.ans{font-size:19px;line-height:30px}
+.s-observa-a.mk--desktop .qa .qref{margin-top:26px;margin-bottom:44px}
+.s-observa-a.mk--desktop .qref summary{font-size:16px;min-height:56px}
+.s-observa-a.mk--desktop .inset{align-self:stretch;display:flex;flex-direction:column;justify-content:space-between}
+.s-observa-a.mk--desktop .bezel{width:224px;height:296px;border-radius:30px 30px 0 0;border-bottom:0;padding:7px 7px 0}
+.s-observa-a.mk--desktop .bezel img{border-radius:24px 24px 0 0}
+.s-observa-a.mk--desktop .inset figcaption{font-size:13px;line-height:18px;width:224px}
+
+.s-observa-a.mk--desktop .dark{display:grid;grid-template-columns:440px 1fr;column-gap:80px;padding:56px 120px 0}
+.s-observa-a.mk--desktop .dark h2{font-size:38px;line-height:42px}
+.s-observa-a.mk--desktop .lede{font-size:17px;line-height:27px;margin-top:20px}
+.s-observa-a.mk--desktop .links2{gap:10px 28px;margin-top:24px;font-size:16px}
+.s-observa-a.mk--desktop .ledger-t{font-size:14px;line-height:20px;margin-bottom:12px}
+.s-observa-a.mk--desktop .ledger div{grid-template-columns:230px 1fr;padding:12px 0;align-items:baseline}
+.s-observa-a.mk--desktop .ledger dt{font-size:15px}
+.s-observa-a.mk--desktop .ledger dd{font-size:19px;line-height:26px}
+
+/* ================= MOBILE ================= */
+.s-observa-a.mk--mobile .nav{height:56px;padding:0 16px}
+.s-observa-a.mk--mobile .brand img{width:26px;height:26px;margin-right:11px}
+.s-observa-a.mk--mobile .wordmark{font-size:15px}
+.s-observa-a.mk--mobile .idx{position:relative}
+.s-observa-a.mk--mobile .idx summary{list-style:none;cursor:pointer;font-weight:600;font-size:15px;color:var(--ink);height:40px;padding:0 14px;display:flex;align-items:center;gap:9px;border:1px solid var(--rule);border-radius:4px}
+.s-observa-a.mk--mobile .idx summary::-webkit-details-marker{display:none}
+.s-observa-a.mk--mobile .titleblock{padding:26px 16px 0}
+.s-observa-a.mk--mobile h1{font-size:41px;line-height:45px}
+.s-observa-a.mk--mobile .pre{font-size:19px;line-height:26px;margin-top:14px}
+.s-observa-a.mk--mobile .sub{font-size:16.5px;line-height:24px;margin-top:6px}
+.s-observa-a.mk--mobile .legend{margin:18px 16px 0;background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:16px}
+.s-observa-a.mk--mobile .legend .act{display:flex;align-items:center;gap:14px;margin-top:12px}
+.s-observa-a.mk--mobile .price{font-size:19px;line-height:25px}
+.s-observa-a.mk--mobile .plans{font-size:13px;line-height:18px;margin:0}
+.s-observa-a.mk--mobile .asb-svg{width:144px;height:48px}
+.s-observa-a.mk--mobile .plate{margin-top:22px;height:262px}
+.s-observa-a.mk--mobile .sayblock{padding:16px 16px 0}
+.s-observa-a.mk--mobile .say{font-size:21px;line-height:27px}
+.s-observa-a.mk--mobile .figs{font-size:14px;line-height:20px;margin-top:8px}
+.s-observa-a.mk--mobile .habits{margin-top:14px}
+.s-observa-a.mk--mobile .habit{font-size:14.5px;height:42px;padding:0 13px}
+.s-observa-a.mk--mobile .cap{font-size:13px;line-height:18px;margin-top:12px}
+
+.s-observa-a.mk--mobile .qa{padding:36px 16px 0;margin-top:26px}
+.s-observa-a.mk--mobile .qa h2{font-size:30px;line-height:34px}
+.s-observa-a.mk--mobile .qa p.ans{font-size:16px;line-height:25px;margin-top:12px}
+.s-observa-a.mk--mobile .qa .qref{margin-top:20px;margin-bottom:6px}
+.s-observa-a.mk--mobile .qref summary{font-size:15.5px;min-height:56px}
+.s-observa-a.mk--mobile .dark{padding:36px 16px 0}
+.s-observa-a.mk--mobile .dark h2{font-size:32px;line-height:36px}
+.s-observa-a.mk--mobile .lede{font-size:16.5px;line-height:25px;margin-top:14px}
+.s-observa-a.mk--mobile .links2{gap:8px 24px;margin-top:18px;font-size:16px}
+.s-observa-a.mk--mobile .ledger-t{font-size:13.5px;line-height:19px;margin:28px 0 10px}
+.s-observa-a.mk--mobile .ledger div{padding:13px 0;gap:2px}
+.s-observa-a.mk--mobile .ledger dt{font-size:14px}
+.s-observa-a.mk--mobile .ledger dd{font-size:18px;line-height:25px}
+</style>
+<div class="s-observa-a mk mk--desktop">
+<header class="nav">
+  <a class="brand" href="#"><img src="assets/observa/icon.png" alt="" width="30" height="30"><span class="wordmark">observa</span></a>
+  <ul class="links">
+    <li><a href="#sky" aria-current="true">Sky</a></li><li><a href="#dark-sky">Dark sky</a></li><li><a href="#method">Method</a></li>
+    <li><a href="#catalogue">Catalogue</a></li><li><a href="#plans">Plans</a></li><li><a href="#questions">Questions</a></li>
+  </ul>
+</header>
+<main>
+<section class="hero" id="sky">
+  <div class="titleblock">
+    <h1>Apple Health Insights for Sleep, HRV &amp; Recovery.</h1>
+    <p class="pre">Your data already knows why.</p>
+    <p class="sub">Observa reads your Apple Health and Apple Watch data and explains in plain English what actually moves your sleep quality, recovery readiness, and energy. Personal baselines. On-device. No account.</p>
+  </div>
+  <ul class="key" aria-label="How to read the plate">
+    <li><svg class="key-sym" width="44" height="26" viewBox="0 0 44 26" aria-hidden="true" focusable="false"><circle class="pl-star" cx="22" cy="13" r="2.6"/></svg><span>One night. Higher means more deep sleep than your normal.</span></li>
+    <li><svg class="key-sym" width="44" height="26" viewBox="0 0 44 26" aria-hidden="true" focusable="false"><circle class="pl-star" cx="22" cy="13" r="3.2"/><circle class="pl-ring" cx="22" cy="13" r="8"/></svg><span>A night over 1 SD below your normal, after a late leg day.</span></li>
+    <li><svg class="key-sym" width="44" height="26" viewBox="0 0 44 26" aria-hidden="true" focusable="false"><line class="pl-con" x1="3" y1="18" x2="14" y2="8"/><line class="pl-con" x1="20" y1="8" x2="30" y2="19"/><circle class="pl-star" cx="17" cy="7" r="2.4"/><circle class="pl-ring" cx="17" cy="7" r="5"/><circle class="pl-star" cx="33" cy="20" r="2.6"/><circle class="pl-ring" cx="33" cy="20" r="5"/></svg><span>Joined by one habit: a pattern, not a cause.</span></li>
+  </ul>
+  <figure class="plate"><svg class="plate-svg" width="1440" height="262" viewBox="0 0 1440 262" role="img" aria-labelledby="pl-d-t pl-d-d" xmlns="http://www.w3.org/2000/svg">
+<title id="pl-d-t">Illustrative sky of 60 nights</title>
+<desc id="pl-d-d">Illustrative data. One star per night for the last 60 nights, placed by how far deep-sleep share sat from a 60-day baseline. Fourteen nights fall more than one standard deviation below the baseline; each follows a late leg day and they are joined by a line called Late Leg Day. A pattern, not a cause.</desc>
+<rect class="pl-outer" x="116" y="30" width="1208" height="200"/>
+<rect class="pl-ground" x="120" y="34" width="1200" height="192"/>
+<rect class="pl-zone" x="120" y="84" width="1200" height="92"/>
+<line class="pl-mer5" x1="120" y1="34" x2="120" y2="226"/>
+<line class="pl-mer" x1="140" y1="34" x2="140" y2="226"/>
+<line class="pl-mer" x1="160" y1="34" x2="160" y2="226"/>
+<line class="pl-mer" x1="180" y1="34" x2="180" y2="226"/>
+<line class="pl-mer" x1="200" y1="34" x2="200" y2="226"/>
+<line class="pl-mer5" x1="220" y1="34" x2="220" y2="226"/>
+<line class="pl-mer" x1="240" y1="34" x2="240" y2="226"/>
+<line class="pl-mer" x1="260" y1="34" x2="260" y2="226"/>
+<line class="pl-mer" x1="280" y1="34" x2="280" y2="226"/>
+<line class="pl-mer" x1="300" y1="34" x2="300" y2="226"/>
+<line class="pl-mer5" x1="320" y1="34" x2="320" y2="226"/>
+<line class="pl-mer" x1="340" y1="34" x2="340" y2="226"/>
+<line class="pl-mer" x1="360" y1="34" x2="360" y2="226"/>
+<line class="pl-mer" x1="380" y1="34" x2="380" y2="226"/>
+<line class="pl-mer" x1="400" y1="34" x2="400" y2="226"/>
+<line class="pl-mer5" x1="420" y1="34" x2="420" y2="226"/>
+<line class="pl-mer" x1="440" y1="34" x2="440" y2="226"/>
+<line class="pl-mer" x1="460" y1="34" x2="460" y2="226"/>
+<line class="pl-mer" x1="480" y1="34" x2="480" y2="226"/>
+<line class="pl-mer" x1="500" y1="34" x2="500" y2="226"/>
+<line class="pl-mer5" x1="520" y1="34" x2="520" y2="226"/>
+<line class="pl-mer" x1="540" y1="34" x2="540" y2="226"/>
+<line class="pl-mer" x1="560" y1="34" x2="560" y2="226"/>
+<line class="pl-mer" x1="580" y1="34" x2="580" y2="226"/>
+<line class="pl-mer" x1="600" y1="34" x2="600" y2="226"/>
+<line class="pl-mer5" x1="620" y1="34" x2="620" y2="226"/>
+<line class="pl-mer" x1="640" y1="34" x2="640" y2="226"/>
+<line class="pl-mer" x1="660" y1="34" x2="660" y2="226"/>
+<line class="pl-mer" x1="680" y1="34" x2="680" y2="226"/>
+<line class="pl-mer" x1="700" y1="34" x2="700" y2="226"/>
+<line class="pl-mer5" x1="720" y1="34" x2="720" y2="226"/>
+<line class="pl-mer" x1="740" y1="34" x2="740" y2="226"/>
+<line class="pl-mer" x1="760" y1="34" x2="760" y2="226"/>
+<line class="pl-mer" x1="780" y1="34" x2="780" y2="226"/>
+<line class="pl-mer" x1="800" y1="34" x2="800" y2="226"/>
+<line class="pl-mer5" x1="820" y1="34" x2="820" y2="226"/>
+<line class="pl-mer" x1="840" y1="34" x2="840" y2="226"/>
+<line class="pl-mer" x1="860" y1="34" x2="860" y2="226"/>
+<line class="pl-mer" x1="880" y1="34" x2="880" y2="226"/>
+<line class="pl-mer" x1="900" y1="34" x2="900" y2="226"/>
+<line class="pl-mer5" x1="920" y1="34" x2="920" y2="226"/>
+<line class="pl-mer" x1="940" y1="34" x2="940" y2="226"/>
+<line class="pl-mer" x1="960" y1="34" x2="960" y2="226"/>
+<line class="pl-mer" x1="980" y1="34" x2="980" y2="226"/>
+<line class="pl-mer" x1="1000" y1="34" x2="1000" y2="226"/>
+<line class="pl-mer5" x1="1020" y1="34" x2="1020" y2="226"/>
+<line class="pl-mer" x1="1040" y1="34" x2="1040" y2="226"/>
+<line class="pl-mer" x1="1060" y1="34" x2="1060" y2="226"/>
+<line class="pl-mer" x1="1080" y1="34" x2="1080" y2="226"/>
+<line class="pl-mer" x1="1100" y1="34" x2="1100" y2="226"/>
+<line class="pl-mer5" x1="1120" y1="34" x2="1120" y2="226"/>
+<line class="pl-mer" x1="1140" y1="34" x2="1140" y2="226"/>
+<line class="pl-mer" x1="1160" y1="34" x2="1160" y2="226"/>
+<line class="pl-mer" x1="1180" y1="34" x2="1180" y2="226"/>
+<line class="pl-mer" x1="1200" y1="34" x2="1200" y2="226"/>
+<line class="pl-mer5" x1="1220" y1="34" x2="1220" y2="226"/>
+<line class="pl-mer" x1="1240" y1="34" x2="1240" y2="226"/>
+<line class="pl-mer" x1="1260" y1="34" x2="1260" y2="226"/>
+<line class="pl-mer" x1="1280" y1="34" x2="1280" y2="226"/>
+<line class="pl-mer" x1="1300" y1="34" x2="1300" y2="226"/>
+<line class="pl-mer5" x1="1320" y1="34" x2="1320" y2="226"/>
+<line class="pl-par" x1="120" y1="222" x2="1320" y2="222"/>
+<line class="pl-par" x1="120" y1="176" x2="1320" y2="176"/>
+<line class="pl-par" x1="120" y1="84" x2="1320" y2="84"/>
+<line class="pl-par" x1="120" y1="38" x2="1320" y2="38"/>
+<line class="pl-base" x1="120" y1="130" x2="1320" y2="130"/>
+<path class="pl-cross" d="M116 222H124M120 218V226M116 176H124M120 172V180M116 130H124M120 126V134M116 84H124M120 80V88M116 38H124M120 34V42M216 222H224M220 218V226M216 176H224M220 172V180M216 130H224M220 126V134M216 84H224M220 80V88M216 38H224M220 34V42M316 222H324M320 218V226M316 176H324M320 172V180M316 130H324M320 126V134M316 84H324M320 80V88M316 38H324M320 34V42M416 222H424M420 218V226M416 176H424M420 172V180M416 130H424M420 126V134M416 84H424M420 80V88M416 38H424M420 34V42M516 222H524M520 218V226M516 176H524M520 172V180M516 130H524M520 126V134M516 84H524M520 80V88M516 38H524M520 34V42M616 222H624M620 218V226M616 176H624M620 172V180M616 130H624M620 126V134M616 84H624M620 80V88M616 38H624M620 34V42M716 222H724M720 218V226M716 176H724M720 172V180M716 130H724M720 126V134M716 84H724M720 80V88M716 38H724M720 34V42M816 222H824M820 218V226M816 176H824M820 172V180M816 130H824M820 126V134M816 84H824M820 80V88M816 38H824M820 34V42M916 222H924M920 218V226M916 176H924M920 172V180M916 130H924M920 126V134M916 84H924M920 80V88M916 38H924M920 34V42M1016 222H1024M1020 218V226M1016 176H1024M1020 172V180M1016 130H1024M1020 126V134M1016 84H1024M1020 80V88M1016 38H1024M1020 34V42M1116 222H1124M1120 218V226M1116 176H1124M1120 172V180M1116 130H1124M1120 126V134M1116 84H1124M1120 80V88M1116 38H1124M1120 34V42M1216 222H1224M1220 218V226M1216 176H1224M1220 172V180M1216 130H1224M1220 126V134M1216 84H1224M1220 80V88M1216 38H1224M1220 34V42M1316 222H1324M1320 218V226M1316 176H1324M1320 172V180M1316 130H1324M1320 126V134M1316 84H1324M1320 80V88M1316 38H1324M1320 34V42"/>
+<rect class="pl-frame" x="120" y="34" width="1200" height="192"/>
+<line class="pl-con" x1="160.89" y1="195.13" x2="219.11" y2="186.77"/>
+<line class="pl-con" x1="240.49" y1="188.52" x2="299.51" y2="207.18"/>
+<line class="pl-con" x1="320.9" y1="212" x2="399.1" y2="222.8"/>
+<line class="pl-con" x1="419.54" y1="218.82" x2="460.46" y2="195.28"/>
+<line class="pl-con" x1="480.93" y1="191.06" x2="559.07" y2="200.04"/>
+<line class="pl-con" x1="580.82" y1="199.31" x2="659.18" y2="184.89"/>
+<line class="pl-con" x1="679.54" y1="188.38" x2="720.46" y2="211.92"/>
+<line class="pl-con" x1="740.8" y1="215.33" x2="839.2" y2="196.47"/>
+<line class="pl-con" x1="860.4" y1="197.99" x2="919.6" y2="218.41"/>
+<line class="pl-con" x1="940.4" y1="218.41" x2="1019.6" y2="191.09"/>
+<line class="pl-con" x1="1040.4" y1="191.09" x2="1079.6" y2="204.61"/>
+<line class="pl-con" x1="1100.86" y1="206.45" x2="1179.14" y2="193.85"/>
+<line class="pl-con" x1="1200.6" y1="195.03" x2="1279.4" y2="216.77"/>
+<circle class="pl-star" cx="130" cy="105.21" r="2.44"/>
+<circle class="pl-star" cx="150" cy="196.7" r="3.35"/>
+<circle class="pl-ring" cx="150" cy="196.7" r="9.5"/>
+<circle class="pl-star" cx="170" cy="125.4" r="2"/>
+<circle class="pl-star" cx="190" cy="108.06" r="2.38"/>
+<circle class="pl-star" cx="210" cy="126.87" r="1.97"/>
+<circle class="pl-star" cx="230" cy="185.2" r="3.1"/>
+<circle class="pl-ring" cx="230" cy="185.2" r="9.5"/>
+<circle class="pl-star" cx="250" cy="88.69" r="2.8"/>
+<circle class="pl-star" cx="270" cy="122.27" r="2.07"/>
+<circle class="pl-star" cx="290" cy="105.53" r="2.43"/>
+<circle class="pl-star" cx="310" cy="210.5" r="3.65"/>
+<circle class="pl-ring" cx="310" cy="210.5" r="9.5"/>
+<circle class="pl-star" cx="330" cy="131.47" r="1.93"/>
+<circle class="pl-star" cx="350" cy="128.62" r="1.93"/>
+<circle class="pl-star" cx="370" cy="129.26" r="1.92"/>
+<circle class="pl-star" cx="390" cy="68.82" r="3.23"/>
+<circle class="pl-star" cx="410" cy="224.3" r="3.95"/>
+<circle class="pl-ring" cx="410" cy="224.3" r="9.5"/>
+<circle class="pl-star" cx="430" cy="67.07" r="3.27"/>
+<circle class="pl-star" cx="450" cy="83.95" r="2.9"/>
+<circle class="pl-star" cx="470" cy="189.8" r="3.2"/>
+<circle class="pl-ring" cx="470" cy="189.8" r="9.5"/>
+<circle class="pl-star" cx="490" cy="109.16" r="2.35"/>
+<circle class="pl-star" cx="510" cy="58.1" r="3.46"/>
+<circle class="pl-star" cx="530" cy="103.78" r="2.47"/>
+<circle class="pl-star" cx="550" cy="106.36" r="2.41"/>
+<circle class="pl-star" cx="570" cy="201.3" r="3.45"/>
+<circle class="pl-ring" cx="570" cy="201.3" r="9.5"/>
+<circle class="pl-star" cx="590" cy="49.13" r="3.66"/>
+<circle class="pl-star" cx="610" cy="122.55" r="2.06"/>
+<circle class="pl-star" cx="630" cy="82.44" r="2.93"/>
+<circle class="pl-star" cx="650" cy="93.89" r="2.69"/>
+<circle class="pl-star" cx="670" cy="182.9" r="3.05"/>
+<circle class="pl-ring" cx="670" cy="182.9" r="9.5"/>
+<circle class="pl-star" cx="690" cy="65.55" r="3.3"/>
+<circle class="pl-star" cx="710" cy="88" r="2.81"/>
+<circle class="pl-star" cx="730" cy="217.4" r="3.8"/>
+<circle class="pl-ring" cx="730" cy="217.4" r="9.5"/>
+<circle class="pl-star" cx="750" cy="138.92" r="2.09"/>
+<circle class="pl-star" cx="770" cy="102.54" r="2.5"/>
+<circle class="pl-star" cx="790" cy="111.83" r="2.29"/>
+<circle class="pl-star" cx="810" cy="152.26" r="2.38"/>
+<circle class="pl-star" cx="830" cy="98.21" r="2.59"/>
+<circle class="pl-star" cx="850" cy="194.4" r="3.3"/>
+<circle class="pl-ring" cx="850" cy="194.4" r="9.5"/>
+<circle class="pl-star" cx="870" cy="127.65" r="1.95"/>
+<circle class="pl-star" cx="890" cy="79.63" r="3"/>
+<circle class="pl-star" cx="910" cy="109.81" r="2.34"/>
+<circle class="pl-star" cx="930" cy="222" r="3.9"/>
+<circle class="pl-ring" cx="930" cy="222" r="9.5"/>
+<circle class="pl-star" cx="950" cy="106.86" r="2.4"/>
+<circle class="pl-star" cx="970" cy="73.51" r="3.13"/>
+<circle class="pl-star" cx="990" cy="109.25" r="2.35"/>
+<circle class="pl-star" cx="1010" cy="99.55" r="2.56"/>
+<circle class="pl-star" cx="1030" cy="187.5" r="3.15"/>
+<circle class="pl-ring" cx="1030" cy="187.5" r="9.5"/>
+<circle class="pl-star" cx="1050" cy="109.76" r="2.34"/>
+<circle class="pl-star" cx="1070" cy="158.52" r="2.52"/>
+<circle class="pl-star" cx="1090" cy="208.2" r="3.6"/>
+<circle class="pl-ring" cx="1090" cy="208.2" r="9.5"/>
+<circle class="pl-star" cx="1110" cy="113.81" r="2.25"/>
+<circle class="pl-star" cx="1130" cy="121.9" r="2.08"/>
+<circle class="pl-star" cx="1150" cy="115.42" r="2.22"/>
+<circle class="pl-star" cx="1170" cy="149.55" r="2.32"/>
+<circle class="pl-star" cx="1190" cy="192.1" r="3.25"/>
+<circle class="pl-ring" cx="1190" cy="192.1" r="9.5"/>
+<circle class="pl-star" cx="1210" cy="108.38" r="2.37"/>
+<circle class="pl-star" cx="1230" cy="157.14" r="2.49"/>
+<circle class="pl-star" cx="1250" cy="130.78" r="1.92"/>
+<circle class="pl-star" cx="1270" cy="106.03" r="2.42"/>
+<circle class="pl-star" cx="1290" cy="219.7" r="3.85"/>
+<circle class="pl-ring" cx="1290" cy="219.7" r="9.5"/>
+<circle class="pl-star" cx="1310" cy="116.52" r="2.19"/>
+<line class="pl-tick" x1="120" y1="25" x2="120" y2="30"/>
+<text class="pl-lab" x="120" y="20" text-anchor="start">60 nights ago</text>
+<line class="pl-tick" x1="320" y1="25" x2="320" y2="30"/>
+<text class="pl-lab" x="320" y="20" text-anchor="middle">50 nights ago</text>
+<line class="pl-tick" x1="520" y1="25" x2="520" y2="30"/>
+<text class="pl-lab" x="520" y="20" text-anchor="middle">40 nights ago</text>
+<line class="pl-tick" x1="720" y1="25" x2="720" y2="30"/>
+<text class="pl-lab" x="720" y="20" text-anchor="middle">30 nights ago</text>
+<line class="pl-tick" x1="920" y1="25" x2="920" y2="30"/>
+<text class="pl-lab" x="920" y="20" text-anchor="middle">20 nights ago</text>
+<line class="pl-tick" x1="1120" y1="25" x2="1120" y2="30"/>
+<text class="pl-lab" x="1120" y="20" text-anchor="middle">10 nights ago</text>
+<line class="pl-tick" x1="1320" y1="25" x2="1320" y2="30"/>
+<text class="pl-lab" x="1320" y="20" text-anchor="end">last night</text>
+<text class="pl-lab pl-num" x="106" y="42.5" text-anchor="end">+2</text>
+<text class="pl-lab pl-num" x="106" y="88.5" text-anchor="end">+1</text>
+<text class="pl-lab pl-num" x="106" y="134.5" text-anchor="end">0</text>
+<text class="pl-lab pl-num" x="106" y="180.5" text-anchor="end">−1</text>
+<text class="pl-lab pl-num" x="106" y="226.5" text-anchor="end">−2</text>
+<text class="pl-lab" transform="rotate(-90 64 130)" x="64" y="130" text-anchor="middle">SD from your baseline</text>
+<text class="pl-lab" x="1334" y="85"><tspan x="1334">usual range</tspan><tspan x="1334" dy="16">(±1 SD)</tspan></text>
+<text class="pl-lab pl-lab-b" x="1334" y="127"><tspan x="1334">your 60-day</tspan><tspan x="1334" dy="16">baseline</tspan></text>
+<text class="pl-name" x="124" y="256"><tspan class="cn">Late Leg Day</tspan><tspan class="ca" dx="16">association, not cause</tspan></text>
+<text class="pl-lab" x="1320" y="256" text-anchor="end">Deep-sleep share, each night against your own 60-day baseline</text>
+</svg></figure>
+  <div class="row">
+    <div class="legend">
+      <div class="txt">
+        <p class="price">Free — Pro from $2.99/mo</p>
+        <p class="plans">Pro $2.99/mo · $22.99/yr · $49.99 once</p>
+        <div class="act"><a class="asb" href="#" rel="noopener" aria-label="Download Observa on the App Store">
+  <svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/>
+    <path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/>
+    <text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text>
+    <text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text>
+  </svg>
+</a></div>
+      </div>
+      <div class="qrbox">
+        <span class="qrtile"><img src="assets/qr/observa.svg" alt="QR code that opens Observa on the App Store" width="92" height="92"></span>
+        <p class="qrcap">Point your iPhone camera here</p>
+      </div>
+    </div>
+    <div class="sayblock">
+      <p class="say">You sleep 18% less deeply on days you train legs after 18:00.</p>
+      <p class="figs">n=14 over 60 days · 87% confidence · association, not cause</p>
+      <ul class="habits" role="group" aria-label="Habit to draw on the sky (illustrative)">
+  <li><button class="habit" type="button" aria-pressed="true"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="2.6" fill="#F2A766"/><circle cx="8" cy="8" r="6.2" fill="none" stroke="#F2A766" stroke-width="1.25"/></svg>Late leg day</button></li>
+  <li><button class="habit" type="button" aria-pressed="false"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="2.4" fill="currentColor"/></svg>Coffee after 14:00</button></li>
+  <li><button class="habit" type="button" aria-pressed="false"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="2.4" fill="currentColor"/></svg>Screens in the last 30 min</button></li>
+</ul>
+      <p class="cap">Sample insight on an illustrative sky, from the app’s example cards.</p>
+    </div>
+  </div>
+</section>
+
+<section class="qa" aria-labelledby="qa-h">
+  <h2 id="qa-h">Quick answer</h2>
+  <div>
+    <p class="ans">Observa is a private health insights app for iPhone and iPad that reads your Apple Health data — sleep stages, HRV (SDNN) trends, ECG sinus-rhythm, resting heart rate, activity — no matter which device recorded it (Apple Watch, Oura, Whoop, Garmin, Fitbit, or any app that writes to Apple Health), and explains in plain language which of your habits actually shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. No servers, no account, no data upload (verified by Apple’s App Privacy nutrition label). Free with Pro from $2.99/month, $22.99/year, or $49.99 lifetime.</p>
+    <details class="qref"><summary><span>Quick reference — what Observa is, in one screen</span><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M2 9h14" stroke="#F2A766" stroke-width="1.6" fill="none"/><path class="v" d="M9 2v14" stroke="#F2A766" stroke-width="1.6" fill="none"/></svg></summary></details>
+  </div>
+  <figure class="inset">
+    <figcaption>In the app, the Correlations screen carries the same caveat: “Association, not cause.”</figcaption>
+    <div class="bezel"><img src="assets/observa/s2.jpg" alt="Observa Correlations screen: Your Patterns, with the line that these reflect associations, not causes" width="360" height="782"></div>
+  </figure>
+</section>
+
+<section class="dark" id="dark-sky" aria-labelledby="dk-h">
+  <div>
+    <h2 id="dk-h">Observed from a dark site: your iPhone.</h2>
+    <p class="lede">No ads, no trackers, no account, no servers. Apple’s App Privacy label lists zero data collection. Your Health data never leaves your device.</p>
+    <ul class="links2"><li><a href="/transparency/">Read the transparency record</a></li><li><a href="/apps/observa/privacy/">Privacy policy</a></li></ul>
+  </div>
+  <div>
+    <p class="ledger-t">From Lagerland’s public transparency record for Observa</p>
+    <dl class="ledger">
+  <div><dt>Network calls</dt><dd>None. All correlation analysis runs on-device.</dd></div>
+  <div><dt>Third-party SDKs</dt><dd>0</dd></div>
+  <div><dt>Tracking domains</dt><dd>0</dd></div>
+  <div><dt>Account required</dt><dd>No</dd></div>
+  <div><dt>Data leaves your device</dt><dd>No.</dd></div>
+  <div><dt>Analytics</dt><dd>None.</dd></div>
+</dl>
+  </div>
+</section>
+</main>
+</div>
+<div class="s-observa-a mk mk--mobile">
+<header class="nav">
+  <a class="brand" href="#"><img src="assets/observa/icon.png" alt="" width="26" height="26"><span class="wordmark">observa</span></a>
+  <details class="idx"><summary>Index<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 3.5h12M1 7h12M1 10.5h12" stroke="#F2A766" stroke-width="1.5" fill="none"/></svg></summary></details>
+</header>
+<main>
+<section id="sky">
+  <div class="titleblock">
+    <h1>Apple Health Insights for Sleep, HRV &amp; Recovery.</h1>
+    <p class="pre">Your data already knows why.</p>
+    <p class="sub">Plain-English answers from your Apple Health data. On-device. No account.</p>
+  </div>
+  <div class="legend">
+    <p class="price">Free — Pro from $2.99/mo</p>
+    <div class="act"><a class="asb" href="#" rel="noopener" aria-label="Download Observa on the App Store">
+  <svg class="asb-svg" viewBox="0 0 120 40" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000000" stroke="#A6A6A6" stroke-width="0.5"/>
+    <path fill="#FFFFFF" d="M24.77 19.3a4.94 4.94 0 0 1 2.35-4.15 5.06 5.06 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1-.87 0-2.18-.98-3.6-.95a5.31 5.31 0 0 0-4.47 2.72c-1.93 3.35-.49 8.27 1.36 10.98.93 1.33 2 2.81 3.42 2.76 1.38-.06 1.9-.89 3.57-.89 1.65 0 2.14.89 3.58.85 1.48-.02 2.42-1.33 3.31-2.67a10.94 10.94 0 0 0 1.52-3.08 4.78 4.78 0 0 1-2.91-4.39zM22.04 11.05a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.2 1.66 4.63 4.63 0 0 0-1.15 3.36 4.1 4.1 0 0 0 3.24-1.53z"/>
+    <text x="34" y="16" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text>
+    <text x="33.5" y="31" fill="#FFFFFF" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.4">App Store</text>
+  </svg>
+</a><p class="plans">Pro $2.99/mo · $22.99/yr · $49.99 once</p></div>
+  </div>
+  <figure class="plate"><svg class="plate-svg" width="390" height="262" viewBox="0 0 390 262" role="img" aria-labelledby="pl-m-t pl-m-d" xmlns="http://www.w3.org/2000/svg">
+<title id="pl-m-t">Illustrative sky of 60 nights</title>
+<desc id="pl-m-d">Illustrative data. One star per night for the last 60 nights, placed by how far deep-sleep share sat from a 60-day baseline. Fourteen nights fall more than one standard deviation below the baseline; each follows a late leg day and they are joined by a line called Late Leg Day. A pattern, not a cause.</desc>
+<rect class="pl-outer" x="32" y="30" width="346" height="188"/>
+<rect class="pl-ground" x="36" y="34" width="338" height="180"/>
+<rect class="pl-zone" x="36" y="81" width="338" height="86"/>
+<line class="pl-mer5" x1="36" y1="34" x2="36" y2="214"/>
+<line class="pl-mer" x1="41.63" y1="34" x2="41.63" y2="214"/>
+<line class="pl-mer" x1="47.27" y1="34" x2="47.27" y2="214"/>
+<line class="pl-mer" x1="52.9" y1="34" x2="52.9" y2="214"/>
+<line class="pl-mer" x1="58.53" y1="34" x2="58.53" y2="214"/>
+<line class="pl-mer5" x1="64.17" y1="34" x2="64.17" y2="214"/>
+<line class="pl-mer" x1="69.8" y1="34" x2="69.8" y2="214"/>
+<line class="pl-mer" x1="75.43" y1="34" x2="75.43" y2="214"/>
+<line class="pl-mer" x1="81.07" y1="34" x2="81.07" y2="214"/>
+<line class="pl-mer" x1="86.7" y1="34" x2="86.7" y2="214"/>
+<line class="pl-mer5" x1="92.33" y1="34" x2="92.33" y2="214"/>
+<line class="pl-mer" x1="97.97" y1="34" x2="97.97" y2="214"/>
+<line class="pl-mer" x1="103.6" y1="34" x2="103.6" y2="214"/>
+<line class="pl-mer" x1="109.23" y1="34" x2="109.23" y2="214"/>
+<line class="pl-mer" x1="114.87" y1="34" x2="114.87" y2="214"/>
+<line class="pl-mer5" x1="120.5" y1="34" x2="120.5" y2="214"/>
+<line class="pl-mer" x1="126.13" y1="34" x2="126.13" y2="214"/>
+<line class="pl-mer" x1="131.77" y1="34" x2="131.77" y2="214"/>
+<line class="pl-mer" x1="137.4" y1="34" x2="137.4" y2="214"/>
+<line class="pl-mer" x1="143.03" y1="34" x2="143.03" y2="214"/>
+<line class="pl-mer5" x1="148.67" y1="34" x2="148.67" y2="214"/>
+<line class="pl-mer" x1="154.3" y1="34" x2="154.3" y2="214"/>
+<line class="pl-mer" x1="159.93" y1="34" x2="159.93" y2="214"/>
+<line class="pl-mer" x1="165.57" y1="34" x2="165.57" y2="214"/>
+<line class="pl-mer" x1="171.2" y1="34" x2="171.2" y2="214"/>
+<line class="pl-mer5" x1="176.83" y1="34" x2="176.83" y2="214"/>
+<line class="pl-mer" x1="182.47" y1="34" x2="182.47" y2="214"/>
+<line class="pl-mer" x1="188.1" y1="34" x2="188.1" y2="214"/>
+<line class="pl-mer" x1="193.73" y1="34" x2="193.73" y2="214"/>
+<line class="pl-mer" x1="199.37" y1="34" x2="199.37" y2="214"/>
+<line class="pl-mer5" x1="205" y1="34" x2="205" y2="214"/>
+<line class="pl-mer" x1="210.63" y1="34" x2="210.63" y2="214"/>
+<line class="pl-mer" x1="216.27" y1="34" x2="216.27" y2="214"/>
+<line class="pl-mer" x1="221.9" y1="34" x2="221.9" y2="214"/>
+<line class="pl-mer" x1="227.53" y1="34" x2="227.53" y2="214"/>
+<line class="pl-mer5" x1="233.17" y1="34" x2="233.17" y2="214"/>
+<line class="pl-mer" x1="238.8" y1="34" x2="238.8" y2="214"/>
+<line class="pl-mer" x1="244.43" y1="34" x2="244.43" y2="214"/>
+<line class="pl-mer" x1="250.07" y1="34" x2="250.07" y2="214"/>
+<line class="pl-mer" x1="255.7" y1="34" x2="255.7" y2="214"/>
+<line class="pl-mer5" x1="261.33" y1="34" x2="261.33" y2="214"/>
+<line class="pl-mer" x1="266.97" y1="34" x2="266.97" y2="214"/>
+<line class="pl-mer" x1="272.6" y1="34" x2="272.6" y2="214"/>
+<line class="pl-mer" x1="278.23" y1="34" x2="278.23" y2="214"/>
+<line class="pl-mer" x1="283.87" y1="34" x2="283.87" y2="214"/>
+<line class="pl-mer5" x1="289.5" y1="34" x2="289.5" y2="214"/>
+<line class="pl-mer" x1="295.13" y1="34" x2="295.13" y2="214"/>
+<line class="pl-mer" x1="300.77" y1="34" x2="300.77" y2="214"/>
+<line class="pl-mer" x1="306.4" y1="34" x2="306.4" y2="214"/>
+<line class="pl-mer" x1="312.03" y1="34" x2="312.03" y2="214"/>
+<line class="pl-mer5" x1="317.67" y1="34" x2="317.67" y2="214"/>
+<line class="pl-mer" x1="323.3" y1="34" x2="323.3" y2="214"/>
+<line class="pl-mer" x1="328.93" y1="34" x2="328.93" y2="214"/>
+<line class="pl-mer" x1="334.57" y1="34" x2="334.57" y2="214"/>
+<line class="pl-mer" x1="340.2" y1="34" x2="340.2" y2="214"/>
+<line class="pl-mer5" x1="345.83" y1="34" x2="345.83" y2="214"/>
+<line class="pl-mer" x1="351.47" y1="34" x2="351.47" y2="214"/>
+<line class="pl-mer" x1="357.1" y1="34" x2="357.1" y2="214"/>
+<line class="pl-mer" x1="362.73" y1="34" x2="362.73" y2="214"/>
+<line class="pl-mer" x1="368.37" y1="34" x2="368.37" y2="214"/>
+<line class="pl-mer5" x1="374" y1="34" x2="374" y2="214"/>
+<line class="pl-par" x1="36" y1="210" x2="374" y2="210"/>
+<line class="pl-par" x1="36" y1="167" x2="374" y2="167"/>
+<line class="pl-par" x1="36" y1="81" x2="374" y2="81"/>
+<line class="pl-par" x1="36" y1="38" x2="374" y2="38"/>
+<line class="pl-base" x1="36" y1="124" x2="374" y2="124"/>
+<path class="pl-cross" d="M33 210H39M36 207V213M33 167H39M36 164V170M33 124H39M36 121V127M33 81H39M36 78V84M33 38H39M36 35V41M61.17 210H67.17M64.17 207V213M61.17 167H67.17M64.17 164V170M61.17 124H67.17M64.17 121V127M61.17 81H67.17M64.17 78V84M61.17 38H67.17M64.17 35V41M89.33 210H95.33M92.33 207V213M89.33 167H95.33M92.33 164V170M89.33 124H95.33M92.33 121V127M89.33 81H95.33M92.33 78V84M89.33 38H95.33M92.33 35V41M117.5 210H123.5M120.5 207V213M117.5 167H123.5M120.5 164V170M117.5 124H123.5M120.5 121V127M117.5 81H123.5M120.5 78V84M117.5 38H123.5M120.5 35V41M145.67 210H151.67M148.67 207V213M145.67 167H151.67M148.67 164V170M145.67 124H151.67M148.67 121V127M145.67 81H151.67M148.67 78V84M145.67 38H151.67M148.67 35V41M173.83 210H179.83M176.83 207V213M173.83 167H179.83M176.83 164V170M173.83 124H179.83M176.83 121V127M173.83 81H179.83M176.83 78V84M173.83 38H179.83M176.83 35V41M202 210H208M205 207V213M202 167H208M205 164V170M202 124H208M205 121V127M202 81H208M205 78V84M202 38H208M205 35V41M230.17 210H236.17M233.17 207V213M230.17 167H236.17M233.17 164V170M230.17 124H236.17M233.17 121V127M230.17 81H236.17M233.17 78V84M230.17 38H236.17M233.17 35V41M258.33 210H264.33M261.33 207V213M258.33 167H264.33M261.33 164V170M258.33 124H264.33M261.33 121V127M258.33 81H264.33M261.33 78V84M258.33 38H264.33M261.33 35V41M286.5 210H292.5M289.5 207V213M286.5 167H292.5M289.5 164V170M286.5 124H292.5M289.5 121V127M286.5 81H292.5M289.5 78V84M286.5 38H292.5M289.5 35V41M314.67 210H320.67M317.67 207V213M314.67 167H320.67M317.67 164V170M314.67 124H320.67M317.67 121V127M314.67 81H320.67M317.67 78V84M314.67 38H320.67M317.67 35V41M342.83 210H348.83M345.83 207V213M342.83 167H348.83M345.83 164V170M342.83 124H348.83M345.83 121V127M342.83 81H348.83M345.83 78V84M342.83 38H348.83M345.83 35V41M371 210H377M374 207V213M371 167H377M374 164V170M371 124H377M374 121V127M371 81H377M374 78V84M371 38H377M374 35V41"/>
+<rect class="pl-frame" x="36" y="34" width="338" height="180"/>
+<line class="pl-con" x1="51.4" y1="183.03" x2="60.03" y2="178.92"/>
+<line class="pl-con" x1="72.29" y1="181.17" x2="84.21" y2="193.68"/>
+<line class="pl-con" x1="96.52" y1="202.46" x2="110.68" y2="208.94"/>
+<line class="pl-con" x1="121.26" y1="205.33" x2="131.01" y2="186.72"/>
+<line class="pl-con" x1="141.78" y1="182.65" x2="155.56" y2="187.9"/>
+<line class="pl-con" x1="169.32" y1="186.64" x2="184.35" y2="177.46"/>
+<line class="pl-con" x1="194.49" y1="180.27" x2="204.24" y2="198.88"/>
+<line class="pl-con" x1="214.31" y1="201.57" x2="235.12" y2="188.33"/>
+<line class="pl-con" x1="246.68" y1="190" x2="259.08" y2="204.2"/>
+<line class="pl-con" x1="269.22" y1="204.2" x2="287.25" y2="183.55"/>
+<line class="pl-con" x1="297.38" y1="183.55" x2="304.15" y2="191.3"/>
+<line class="pl-con" x1="316.01" y1="193.47" x2="330.59" y2="185.68"/>
+<line class="pl-con" x1="343.06" y1="187.25" x2="359.87" y2="202.65"/>
+<circle class="pl-star" cx="38.82" cy="100.82" r="1.68"/>
+<circle class="pl-star" cx="44.45" cy="186.35" r="2.31"/>
+<circle class="pl-ring" cx="44.45" cy="186.35" r="6.2"/>
+<circle class="pl-star" cx="50.08" cy="119.7" r="1.37"/>
+<circle class="pl-star" cx="55.72" cy="103.49" r="1.63"/>
+<circle class="pl-star" cx="61.35" cy="121.08" r="1.35"/>
+<circle class="pl-star" cx="66.98" cy="175.6" r="2.14"/>
+<circle class="pl-ring" cx="66.98" cy="175.6" r="6.2"/>
+<circle class="pl-star" cx="72.62" cy="85.39" r="1.93"/>
+<circle class="pl-star" cx="78.25" cy="116.78" r="1.42"/>
+<circle class="pl-star" cx="83.88" cy="101.12" r="1.67"/>
+<circle class="pl-star" cx="89.52" cy="199.25" r="2.52"/>
+<circle class="pl-ring" cx="89.52" cy="199.25" r="6.2"/>
+<circle class="pl-star" cx="95.15" cy="125.38" r="1.32"/>
+<circle class="pl-star" cx="100.78" cy="122.71" r="1.32"/>
+<circle class="pl-star" cx="106.42" cy="123.31" r="1.31"/>
+<circle class="pl-star" cx="112.05" cy="66.81" r="2.23"/>
+<circle class="pl-star" cx="117.68" cy="212.15" r="2.73"/>
+<circle class="pl-ring" cx="117.68" cy="212.15" r="6.2"/>
+<circle class="pl-star" cx="123.32" cy="65.18" r="2.26"/>
+<circle class="pl-star" cx="128.95" cy="80.96" r="2"/>
+<circle class="pl-star" cx="134.58" cy="179.9" r="2.21"/>
+<circle class="pl-ring" cx="134.58" cy="179.9" r="6.2"/>
+<circle class="pl-star" cx="140.22" cy="104.52" r="1.62"/>
+<circle class="pl-star" cx="145.85" cy="56.79" r="2.39"/>
+<circle class="pl-star" cx="151.48" cy="99.49" r="1.7"/>
+<circle class="pl-star" cx="157.12" cy="101.9" r="1.66"/>
+<circle class="pl-star" cx="162.75" cy="190.65" r="2.38"/>
+<circle class="pl-ring" cx="162.75" cy="190.65" r="6.2"/>
+<circle class="pl-star" cx="168.38" cy="48.41" r="2.53"/>
+<circle class="pl-star" cx="174.02" cy="117.03" r="1.41"/>
+<circle class="pl-star" cx="179.65" cy="79.54" r="2.02"/>
+<circle class="pl-star" cx="185.28" cy="90.25" r="1.85"/>
+<circle class="pl-star" cx="190.92" cy="173.45" r="2.1"/>
+<circle class="pl-ring" cx="190.92" cy="173.45" r="6.2"/>
+<circle class="pl-star" cx="196.55" cy="63.76" r="2.28"/>
+<circle class="pl-star" cx="202.18" cy="84.74" r="1.94"/>
+<circle class="pl-star" cx="207.82" cy="205.7" r="2.63"/>
+<circle class="pl-ring" cx="207.82" cy="205.7" r="6.2"/>
+<circle class="pl-star" cx="213.45" cy="132.34" r="1.44"/>
+<circle class="pl-star" cx="219.08" cy="98.33" r="1.72"/>
+<circle class="pl-star" cx="224.72" cy="107.02" r="1.58"/>
+<circle class="pl-star" cx="230.35" cy="144.81" r="1.64"/>
+<circle class="pl-star" cx="235.98" cy="94.29" r="1.78"/>
+<circle class="pl-star" cx="241.62" cy="184.2" r="2.28"/>
+<circle class="pl-ring" cx="241.62" cy="184.2" r="6.2"/>
+<circle class="pl-star" cx="247.25" cy="121.81" r="1.34"/>
+<circle class="pl-star" cx="252.88" cy="76.91" r="2.07"/>
+<circle class="pl-star" cx="258.52" cy="105.12" r="1.61"/>
+<circle class="pl-star" cx="264.15" cy="210" r="2.7"/>
+<circle class="pl-ring" cx="264.15" cy="210" r="6.2"/>
+<circle class="pl-star" cx="269.78" cy="102.37" r="1.65"/>
+<circle class="pl-star" cx="275.42" cy="71.2" r="2.16"/>
+<circle class="pl-star" cx="281.05" cy="104.61" r="1.62"/>
+<circle class="pl-star" cx="286.68" cy="95.53" r="1.76"/>
+<circle class="pl-star" cx="292.32" cy="177.75" r="2.17"/>
+<circle class="pl-ring" cx="292.32" cy="177.75" r="6.2"/>
+<circle class="pl-star" cx="297.95" cy="105.08" r="1.61"/>
+<circle class="pl-star" cx="303.58" cy="150.66" r="1.73"/>
+<circle class="pl-star" cx="309.22" cy="197.1" r="2.49"/>
+<circle class="pl-ring" cx="309.22" cy="197.1" r="6.2"/>
+<circle class="pl-star" cx="314.85" cy="108.86" r="1.55"/>
+<circle class="pl-star" cx="320.48" cy="116.43" r="1.42"/>
+<circle class="pl-star" cx="326.12" cy="110.37" r="1.52"/>
+<circle class="pl-star" cx="331.75" cy="142.28" r="1.6"/>
+<circle class="pl-star" cx="337.38" cy="182.05" r="2.25"/>
+<circle class="pl-ring" cx="337.38" cy="182.05" r="6.2"/>
+<circle class="pl-star" cx="343.02" cy="103.79" r="1.63"/>
+<circle class="pl-star" cx="348.65" cy="149.37" r="1.71"/>
+<circle class="pl-star" cx="354.28" cy="124.73" r="1.31"/>
+<circle class="pl-star" cx="359.92" cy="101.6" r="1.66"/>
+<circle class="pl-star" cx="365.55" cy="207.85" r="2.67"/>
+<circle class="pl-ring" cx="365.55" cy="207.85" r="6.2"/>
+<circle class="pl-star" cx="371.18" cy="111.4" r="1.51"/>
+<line class="pl-tick" x1="36" y1="26" x2="36" y2="30"/>
+<text class="pl-lab" x="36" y="21" text-anchor="start">60 nights ago</text>
+<line class="pl-tick" x1="205" y1="26" x2="205" y2="30"/>
+<text class="pl-lab" x="205" y="21" text-anchor="middle">30</text>
+<line class="pl-tick" x1="374" y1="26" x2="374" y2="30"/>
+<text class="pl-lab" x="374" y="21" text-anchor="end">last night</text>
+<text class="pl-lab pl-num" x="27" y="42.5" text-anchor="end">+2</text>
+<text class="pl-lab pl-num" x="27" y="128.5" text-anchor="end">0</text>
+<text class="pl-lab pl-num" x="27" y="214.5" text-anchor="end">−2</text>
+<text class="pl-name" x="36" y="241"><tspan class="cn">Late Leg Day</tspan><tspan class="ca" dx="12">association, not cause</tspan></text>
+</svg></figure>
+  <div class="sayblock">
+    <p class="say">You sleep 18% less deeply on days you train legs after 18:00.</p>
+    <p class="figs">n=14 over 60 days · 87% confidence · association, not cause</p>
+    <ul class="habits" role="group" aria-label="Habit to draw on the sky (illustrative)">
+  <li><button class="habit" type="button" aria-pressed="true"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="2.6" fill="#F2A766"/><circle cx="8" cy="8" r="6.2" fill="none" stroke="#F2A766" stroke-width="1.25"/></svg>Late leg day</button></li>
+  <li><button class="habit" type="button" aria-pressed="false"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="2.4" fill="currentColor"/></svg>Coffee after 14:00</button></li>
+  <li><button class="habit" type="button" aria-pressed="false"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="2.4" fill="currentColor"/></svg>Screens in the last 30 min</button></li>
+</ul>
+    <p class="cap">Sample insight on an illustrative sky, from the app’s example cards.</p>
+  </div>
+</section>
+
+<section class="qa" aria-labelledby="qa-hm">
+  <h2 id="qa-hm">Quick answer</h2>
+  <p class="ans">Observa is a private health insights app for iPhone and iPad that reads your Apple Health data — sleep stages, HRV (SDNN) trends, ECG sinus-rhythm, resting heart rate, activity — no matter which device recorded it (Apple Watch, Oura, Whoop, Garmin, Fitbit, or any app that writes to Apple Health), and explains in plain language which of your habits actually shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. No servers, no account, no data upload (verified by Apple’s App Privacy nutrition label). Free with Pro from $2.99/month, $22.99/year, or $49.99 lifetime.</p>
+  <details class="qref"><summary><span>Quick reference — what Observa is, in one screen</span><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M2 9h14" stroke="#F2A766" stroke-width="1.6" fill="none"/><path class="v" d="M9 2v14" stroke="#F2A766" stroke-width="1.6" fill="none"/></svg></summary></details>
+</section>
+
+<section class="dark" id="dark-sky-m" aria-labelledby="dk-hm">
+  <h2 id="dk-hm">Observed from a dark site: your iPhone.</h2>
+  <p class="lede">No ads, no trackers, no account, no servers. Apple’s App Privacy label lists zero data collection. Your Health data never leaves your device.</p>
+  <ul class="links2"><li><a href="/transparency/">Read the transparency record</a></li><li><a href="/apps/observa/privacy/">Privacy policy</a></li></ul>
+  <p class="ledger-t">From Lagerland’s public transparency record for Observa</p>
+  <dl class="ledger">
+  <div><dt>Network calls</dt><dd>None. All correlation analysis runs on-device.</dd></div>
+  <div><dt>Third-party SDKs</dt><dd>0</dd></div>
+  <div><dt>Tracking domains</dt><dd>0</dd></div>
+  <div><dt>Account required</dt><dd>No</dd></div>
+  <div><dt>Data leaves your device</dt><dd>No.</dd></div>
+  <div><dt>Analytics</dt><dd>None.</dd></div>
+</dl>
+</section>
+</main>
+</div>

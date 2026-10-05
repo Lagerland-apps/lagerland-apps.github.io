@@ -1,0 +1,270 @@
+{
+  "surface": "rightsplit — microsite /apps/rightsplit/ (Persuade) + /apps/rightsplit/privacy/, /apps/rightsplit/support/ and the alternatives pages that target it: /alternatives/splitwise/, /alternatives/tricount/, /alternatives/settle-up/, /alternatives/tab/, /alternatives/venmo-split/ (Read variants)",
+  "dossier": {
+    "mechanism": "One phone photographs the receipt and Apple's on-device Vision reads every line. The holder taps each line onto whoever ordered it and splits shared plates only among the people who shared them. RightSplit then spreads tax and tip in proportion to each person's subtotal, applies a fair-rounding pass, and sends each person only their own total over iMessage or WhatsApp. Nobody else installs anything, there is no account, and the receipt image never leaves the phone.",
+    "audienceScene": "The end of a dinner, bar night or group trip: 2–12 people, one check, mixed orders (the $14 salad beside the $48 steak), someone reaching for a napkin. The visitor arrives on an iPhone from Google or an AI answer ('bill splitter app', 'split bill by item', 'Splitwise alternative'). Sometimes they are still at the table; more often it is the morning after an even split cost them $20. On desktop they are planning a trip or weighing RightSplit against Splitwise or Tab, and the app has to reach the phone by QR. The audience spans the US and Europe: the app's own screenshots show $92.39 and €65.85, and the UI ships in 32 languages.",
+    "culturalHome": "The end-of-meal ritual, not fintech: the thermal check from the POS printer, the folder it arrives in with cards fanned out of its top, the initials and circles people pen onto the check, napkin math, 'separate checks?', the pencil tally on a pub beer coaster, the conveyor-sushi plate stack counted at your seat, and the shop-counter label that charges every customer the same rate per kilo.",
+    "mustProve": "In the first viewport: (1) one real-looking bill turning into different per-person totals with tip spread in proportion. This uses the journal's worked example, labelled illustrative: on a $154.65 check the $58 ribeye pays $74.75 and the $14 salad pays $18.04, against $38.66 each split evenly. (2) The promise 'scan, split, send — only you need the app, no account, the receipt never leaves the phone'. (3) The honest price line from price.value: 'Free — Pro from $3.99/yr or $7.99 lifetime'. (4) The working official App Store badge, plus the QR on desktop.",
+    "categoryDefault": "Blue fintech friendliness: white-to-blue gradient, rounded sans, split hero with a phone mockup, cartoon friends or circled avatars, a pie chart, 'Split bills with friends easily', teal-green money accents (Splitwise), a row of feature cards and star testimonials. RightSplit's own icon, a white pie with one slice pulled out on a blue gradient squircle, already sits in this rut.",
+    "predictableOpposite": "The cream bistro menu: warm paper, serif display, chalkboard or terracotta accents (the incumbent Paper & Ink and the AI default). Or the app UI blown up to page size: a navy-to-maroon gradient dashboard of totals with neon cyan.",
+    "literalReading": "'RightSplit' read literally is the correct cut: a pie or cake divided into fair slices, which is exactly the app icon. Only candidate 7 uses it.",
+    "evidence": [
+      "_apps/rightsplit.md: category finance; platforms ['iOS']; status live; price.model freemium; price.value 'Free — Pro from $3.99/yr or $7.99 lifetime'; schema_price 0, schema_high_price 7.99, schema_offer_count 3; app_store_url id6757268612; release first 2026-03-01, last_updated 2026-03-15; ratings 5.0 from 1 (below 25, so no stars anywhere).",
+      "Blocks present: hero (headline 'Bill splitter for iPhone.', secondary 'Scan it. Split it. Done.', subheadline with the $14 salad / $48 steak, pre_headline, cta_label 'Download Free'), quick_answer, plans ×3 (Free $0 forever; Pro · yearly $3.99 / year; Pro · lifetime $7.99 once, highlighted, summary 'Most chosen') + plans_footnote, value_points ×4, features ×5, how_it_works intro + 4 steps, plateau_disclosure (rule, what_it_does_not_do, 3 notes), training_vocabulary (4 groups, collapse_by_default), comparison_table (RightSplit / Splitwise / Tab / Tricount × 8 rows + footnote), screenshots ×4, privacy (none / false / false + 4 notes), faq ×16, who_for ×5, who_not_for ×3, alternatives_to ×5, related_journal, support. Absent: founder, spotlight, roadmap, coach_cta, insight gallery, creative_work, pricing_note, hero.device, show_body.",
+      "Screenshots (all four are 1206×2622 PNGs). 1: 'Scan Receipt' with a cyan corner-bracket icon, a cyan 'Scan Receipt' button and 'Choose from Gallery'. 2: a '92.39 $' total card, a People 3 stepper, a Tip slider at 0%, a green 'Split by items' toggle, Mike $49.88 (Steak 45.58), Brandon $25.79, Lisa $18.29. 3: '65.85 €', You €20.32, Dave €25.32, Norman €18.32, shared 'Beverages 6.99 Shared by all' chips, '€1.89 not assigned'. 4: 'Split Complete', 'The Oak & Vine $92.39', Mike (Payer, 'Paid for the bill') $60.11, Brandon $16.74 and Lisa $15.54 with green Text and WhatsApp buttons, then the receipt summary. The UI is a vertical navy (~#0B1220) to maroon (~#4A1A28) gradient with translucent rounded cards, SF Pro, a cyan accent (~#00D2F0) and green, magenta and indigo avatar circles.",
+      "Icon: a white pie with one slice pulled out, on a light-to-mid blue gradient squircle.",
+      "transparency.yml rightsplit: tracking_declared false, 0 tracking domains, 0 third-party SDKs, account_required false; network 'none for receipt scanning and splitting; sharing uses the iOS share sheet'; data_leaves_device 'only via the iOS share sheet, when you choose'; analytics none; permissions 'Camera (when scanning a receipt)'.",
+      "app_enrichment.yml: 32 UI languages; use cases (4 friends in 60 seconds, shared dishes, iMessage/WhatsApp, a group trip without a Splitwise account, split history); recommend_why ends 'settle the bill and move on'. testimonials.yml has no RightSplit entry.",
+      "Alternatives that target it: splitwise, tricount, settle-up, tab, venmo-split (every alternatives_to name has a page). Incumbent pattern on those pages: overline + gradient-text H1, quick answer, a 2×2 card grid, pick-if lists, app card, FAQ, CTA.",
+      "Journal 'The bill-splitting math nobody agrees on'. Worked example: $120 subtotal, 8.875% NYC tax $10.65, 20% tip $24.00, total $154.65. Dana ribeye $58 → $74.75, Ben pasta and beer $28 → $36.09, Cara burger $20 → $25.78, Alex salad $14 → $18.04; even split $38.66. Design reasoning: 'move the itemising off the table... People do not object to receiving a total. They object to watching one get constructed about them.'",
+      "Journal 'How to split a Valentine's dinner without making it weird': a $312 table of four (three steaks, one salad). It claims payment deeplinks that the app FAQ denies (content drift).",
+      "Privacy page front matter: seo block present; overview, data_collection (receipt images, items, names from Contacts), data_storage (local; shares go through the service you choose), third_parties (none; Apple Contacts/Camera/Photos), children, changes, contact. Support page: seo + slug.",
+      "Incumbent (observa render at 1440 and 390): cream ground, Newsreader display, purple pre-headline, split hero with the phone on the right, a badge + 'See how it works' row, QR card and pill row. This is the template to refuse."
+    ]
+  },
+  "candidates": [
+    {
+      "index": 1,
+      "name": "The thermal restaurant check, torn into one receipt per person",
+      "family": "print/paper — POS thermal roll",
+      "why": "The one object in every diner's hand at the end of every meal, and the thing RightSplit actually scans. It carries the mechanism as one printed roll whose lines get circled in ballpoint to assign them, then torn into four short receipts, each ending in its own TOTAL: scan, split, send, in paper."
+    },
+    {
+      "index": 2,
+      "name": "The table from above: seat positions and the reach zone",
+      "family": "cartography/diagram — the server's seat-position plan and the etiquette-book place-setting diagram",
+      "why": "Servers track who ordered what by seat number, and every diner remembers who sat where and who reached for the bread. It carries the mechanism by placing each line at the seat that ordered it, shared plates in the reach zone between the people who had them (the journal's 'everyone who could reach it' rule), the bottle between the drinkers, and each seat's total printed at its edge."
+    },
+    {
+      "index": 3,
+      "name": "Conveyor-sushi plate stacks and the plate-colour price chart",
+      "family": "ritual/place — a restaurant's pricing system (melamine plates, conveyor, price key)",
+      "why": "The purest item-level settlement diners know: you pay for exactly the plates stacked at your seat, and nobody argues. It carries the mechanism by turning receipt lines into plates coming round the belt, each taken onto a person's stack and counted into that person's total."
+    },
+    {
+      "index": 4,
+      "name": "The check presenter with cards fanned out of its top",
+      "family": "ritual object — leatherette folder, foil stamp, card slot",
+      "why": "The folder arrives once and goes back once, and the moment four cards stick out of it is exactly when 'just split it four ways' happens. It carries the mechanism by standing each person's own amount up out of the folder's top edge instead of four identical charges, with the badge in the card slot."
+    },
+    {
+      "index": 5,
+      "name": "The beer-coaster tally (Bierdeckel strokes)",
+      "family": "bar print ephemera — cardboard coaster, pencil tally",
+      "why": "In German and Austrian bars your own coaster is your tab, marked with a stroke per drink and settled coaster by coaster: per-person splitting with no account. It carries the mechanism with one coaster per diner and a stroke per item, shared rounds marked across several coasters, and each coaster settling to its own number."
+    },
+    {
+      "index": 6,
+      "name": "The deli-scale price label",
+      "family": "instrument/measurement — price-computing scale label, EU unit price",
+      "why": "Everyone has read one: net weight times the same price per kilo equals your price. It carries the proportional rule exactly: each diner's items are the 'weight', the table's tax-plus-tip rate is the 'unit price', identical on every label, and the total is the printed price."
+    },
+    {
+      "index": 7,
+      "name": "The pie, cut by what each person ate (literal reading)",
+      "family": "data graphic",
+      "why": "The icon's own pie, recut so each slice is sized by what that person ordered instead of equal wedges. It carries proportional shares directly, but it is the name and icon read literally and sits beside the category's pie-chart rut."
+    }
+  ],
+  "seed": {
+    "key": "844f72bb",
+    "assigned": 6,
+    "reroll1": 4
+  },
+  "styles": [
+    {
+      "id": "a",
+      "label": "Weighed and Priced",
+      "kicker": "THE ROLL",
+      "sourceIndex": 6,
+      "lineage": "Labels printed by price-computing deli and butcher-counter scales (Bizerba, Mettler Toledo, DIGI, Avery Berkel) under the EU unit-price rule (Directive 98/6/EC), which puts a price per kilo beside every total. They are die-cut self-adhesive labels issued one after another on a backing liner. Each has pre-printed spot-colour boxes overprinted in thermal black, small caps field captions (NET WT · PRICE/kg · PRICE), the total in heavy numerals, packed-on and use-by dates, and an EAN-13 with the price embedded (GS1 prefixes 20–29).",
+      "thesis": "A fair split is one rate applied to different weights. The page prints each diner a deli price label: their items are the net weight, the table's tax-plus-tip rate is the unit price (pre-printed cyan and identical on every label), and their total is the price. It refuses the blue-fintech split hero, the avatar pie and the equal-wedge diagram.",
+      "scene": "A shopper reads a label at the counter under flat white shop light, or on a phone in daylight. Everything is printed, matte and bright, so the scheme is light only (color-scheme: light).",
+      "scheme": "light",
+      "colorStrategy": "Committed",
+      "palette": [
+        { "hex": "#00AEEF", "role": "Process cyan: the backing liner (page ground between labels, 40–55% of every viewport) and the pre-printed RATE box on every label. It is the system's constant. Black on it is 7.4:1; never white text on it." },
+        { "hex": "#FFFFFF", "role": "Label stock: every die-cut label (each section), the sticky label, the badge and QR fields" },
+        { "hex": "#101316", "role": "Thermal black: all type, 1px field frames, 2px price-box frames, barcodes, registration marks on the liner, 3px focus ring (18.6:1 on white)" },
+        { "hex": "#59636B", "role": "Small-print grey: field sub-lines, footnotes, the even-split comparison line, ingredient small print (6.1:1 on white)" },
+        { "hex": "#B5121B", "role": "Counter red: only the 'Not assigned' row and the over/under-collected warning in the interactive scale (6.9:1 on white)" }
+      ],
+      "type": {
+        "display": "Pathway Extreme variable (@fontsource-variable/pathway-extreme, wdth+wght latin file ≈58 KB) at wdth 75 for prices and H1. H1: wght 880 at 112px desktop / 54px mobile. Label prices: wght 900 at 48–72px. Product lines: wght 700 at 22px. Field captions: wght 700 at 11–12px caps, +0.06em tracking.",
+        "text": "Pathway Extreme at wdth 100, wght 400 and 600, from the same file: paragraphs at 18px/1.55 (quick answer, how-it-works detail, plateau rule, FAQ, privacy) and ingredient small print at 15px. tnum on every amount, rate and date.",
+        "utility": "none: no mono. Barcode digits and dates use Pathway Extreme tnum.",
+        "rationale": "A scale printer sets a label in one grotesk at several widths: narrow and heavy for the price, normal for the product text. Pathway Extreme's width axis (75–100) and weight axis (100–900) do that from one ≈58 KB file. It ships tnum, so $74.75 and × 1.28875 line up down the PRICE and RATE columns. At wght 900 its plain gothic numerals look like a price ticket, not a poster face."
+      },
+      "materials": [
+        "Process-cyan backing liner, edge to edge, carrying every label in one vertical run",
+        "Die-cut white labels with 10px corners and a 20px liner gap between them, flat (no shadows)",
+        "Black registration bars (12×4px) on the liner's left edge at every label gap",
+        "Field grid inside each label: 1px black frames with caps captions at the top-left of each field (ITEMS · NET · RATE · PRICE · PACKED · GET IT · CODE)",
+        "A pre-printed cyan RATE box on every label, overprinted in black: the colour stays the same, the black data changes",
+        "Inline-SVG EAN-13 barcodes that really encode each diner's total (prefix 2), and the App Store QR set in the CODE field where a label's barcode goes",
+        "A black band across the top of each label with white reversed caps",
+        "An INGREDIENTS / FREE FROM small-print block"
+      ],
+      "firstViewportDesktop": "The cyan liner fills 1440×900 with black registration bars at x=24. Header label, y 16–72, 1312 wide: icon 32px and 'RightSplit' (wdth 75, wght 900, 28px) on the left; 'The labels · How it weighs · Price · Questions · Privacy' (600, wdth 87, 17px) on the right. Hero label, y 92–780. It opens with a black 40px band in reversed 13px caps: 'BILL SPLITTER · IPHONE · NO ACCOUNT · NOTHING UPLOADED' on the left, 'PACKED BY LAGERLAND APPS · 1 MAR 2026 · UPDATED 15 MAR 2026' on the right. The PRODUCT field follows: H1 'Bill splitter for iPhone.' on one line at 112px/0.92, with hero.secondary 'Scan it. Split it. Done.' (28px, 700) under it. The label then divides into two field columns. Left (8 of 12): a multi-line total label in scale grammar, captioned 'Illustrative · the worked example from our journal, 8.875% tax + 20% tip'. Under the column heads ITEMS · NET · RATE · PRICE are four 72px rows: Dana / Ribeye / 58.00 / [cyan] × 1.28875 / $74.75 at 48px 900; Ben / Pasta, beer / 28.00 / $36.09; Cara / Burger / 20.00 / $25.78; Alex / Salad / 14.00 / $18.04. A TOTAL 154.65 row closes it, then a grey 15px line: 'Split evenly: $38.66 each — Alex would pay $20.62 more.' Right (4 of 12), three stacked fields: PRICE ('Free' at 72px 900 over 'Pro $3.99/yr · $7.99 lifetime' at 18px tnum), GET IT (official black badge, 54px tall), CODE (QR 120px, 'Scan with your iPhone camera'). The quick-answer label starts at y≈800.",
+      "firstViewportMobile": "The cyan liner shows as 16px gutters. Header label, 52px: 'RightSplit' 24px and a 'Menu' text button. Hero label, 358 wide: a black band with 'BILL SPLITTER · IPHONE' in 11px caps; H1 at 54px/0.92 on two lines; hero.secondary at 20px. One full-width cyan RATE strip reads '× 1.28875 for everyone · tax 8.875% + tip 20%' (black, 15px, 700). Four rows follow, each with name and item at 17px/600 and a 14px grey 'net 58.00' beneath on the left, and the price at 34px/900 on the right ($74.75 / $36.09 / $25.78 / $18.04). Then 'Split evenly: $38.66 each' (14px grey), the PRICE field 'Free · Pro $3.99/yr or $7.99 lifetime' at 18px, and the GET IT field with the badge 48px tall at y≈630–680. The QR is hidden below 1024px.",
+      "conversion": "Badge: the official black artwork appears only on white stock, in a field captioned GET IT (54px desktop, 48px mobile), never on cyan. QR: in the hero label's CODE field on ≥1024px, the spot where a label carries its barcode, and again on the closing label. Price: the PRICE field states price.value verbatim, 'Free' large with 'Pro $3.99/yr · $7.99 lifetime' beneath; the full plans come later as three price labels with plans_footnote as liner print. Sticky bar: once the GET IT field scrolls away, a short white label slides up onto a cyan liner strip at the bottom with icon 32px, 'RightSplit · Free · Pro $3.99/yr or $7.99 once' and badge 40px. It hides when the closing label is visible. Smart App Banner: apple-itunes-app meta unchanged; iOS shows it natively above the header label.",
+      "visitorPath": [
+        "Hero label: H1, hero.secondary, subheadline in the PRODUCT field; the illustrative four-diner multi-line label (NET · RATE · PRICE); PRICE (price.value); GET IT (badge); CODE (QR); PACKED (release.first_release / last_updated, maker)",
+        "WHAT IT IS label: quick_answer as the label's description (speakable), with a FREE FROM line: ads, accounts, tracking, third-party SDKs (0) → /transparency/#rightsplit",
+        "Reprint the labels (signature): the interactive sample receipt, tip field and four diner labels",
+        "How it weighs: how_it_works intro + 4 steps (Scan · Assign · Tip · Send) as four small labels issued left to right, numbered because the order is real (HowTo)",
+        "Calculation method: plateau_disclosure (rule, what_it_does_not_do, 3 notes) printed as the back-of-label small print panel at 18px, 68ch",
+        "Price labels: plans as three labels of different widths — Free ($0 forever), Pro · yearly ($3.99 / year), Pro · lifetime ($7.99 once, with its front-matter 'Most chosen' line). Each lists its features as INGREDIENTS; plans_footnote as liner print",
+        "On the scale: the 4 screenshots in the CSS iPhone bezel, each standing on a white label base carrying its alt text",
+        "Contents: value_points (4) and features (5) as one long label with captioned rows",
+        "Weighed for / not for: who_for (5) and who_not_for (3) as two columns of one label, keeping the Splitwise pointer",
+        "Other counters: comparison_table as a price-comparison strip (4 columns × 8 rows), RightSplit's column on the cyan pre-print, footnote, inline GET IT badge",
+        "Reading the receipt: training_vocabulary (4 groups) in one <details> label, collapsed by default; its overline dropped",
+        "Storage and handling: privacy (none / no tracking / no account / 4 notes) plus transparency.yml (camera only, data leaves only via the share sheet, analytics none) → /transparency/#rightsplit, privacy policy, support",
+        "Questions: faq (16) as <details> rows on one long label",
+        "Other counters nearby: alternatives_to → /alternatives/splitwise/, /tricount/, /settle-up/, /tab/, /venmo-split/; related_journal as the 'Worked example' label",
+        "Label data: the Quick reference <details> (ai-canonical), visible and crawlable",
+        "Also from this maker: you-might-like (computed from site.apps)",
+        "Closing label: badge, QR, price, packed-by and freshness line; then the shared Lagerland strip"
+      ],
+      "navigation": "A thin header label at the top of the roll: 'RightSplit' (back to top) and five plain links — The labels, How it weighs, Price, Questions, Privacy — with a 2px black underline on the current section. On phones, 'Menu' opens a full-width white label listing the same links as captioned rows. In-page anchors only; the Lagerland strip at the foot is the only way out.",
+      "signatureInteraction": "'Reprint the labels'. One label holds the sample receipt (Ribeye 58.00, Pasta, beer 28.00, Burger 20.00, Salad 14.00; tagged illustrative) with a person select on each line, a tax field (8.875%) and a tip stepper (0–25%). Any change reprints the four diner labels. The cyan RATE box takes the same new value on every label. NET and PRICE recalculate using the plateau_disclosure rule (proportional tax and tip, fair-rounding pass), and each EAN-13 is redrawn for the new price. An aria-live='polite' line reads, for example, 'Rate is now × 1.30875 for everyone. Alex pays $18.32.' An unassigned line adds a red 'Not assigned: $20.00' row, the app's own state. No JS: the four labels are server-rendered with the worked-example values and the controls are left out. Reduced motion: labels change in place.",
+      "motionGrammar": "Printed and still. Under html.js only: each label enters by sliding 8px down out of an implied printer slot while fading 0→1 over 140ms (40ms stagger, first reveal only); reprinted labels repeat the same slide; the RATE value crossfades over 100ms; the sticky label rises in 160ms ease-out. No parallax, no count-ups (every price is server-rendered), no hover lifts. prefers-reduced-motion turns all of it off.",
+      "readModeVariant": "The same roll, quieter. The cyan liner becomes a 24px frame and the gaps; the reading column is one long white label at 68ch, Pathway Extreme 400 (wdth 100) at 18px/1.6. The black band names the page ('PRIVACY POLICY · RIGHTSPLIT', 'SUPPORT · RIGHTSPLIT', 'SPLITWISE ALTERNATIVE'). The H1 sits in the PRODUCT field at 56px (wdth 75, wght 860), and the quick answer is the WHAT IT IS field. Privacy sections become captioned fields (OVERVIEW, DATA COLLECTION, STORAGE, THIRD PARTIES, CHILDREN, CHANGES, CONTACT), with transparency.yml as a FREE FROM line. Support is a contact label with the email and 'what to include' as captioned fields, faq rows below. Alternatives pages set RightSplit and the competitor as two side-by-side labels with the same captions (Workflow, Item-level, Account, Ongoing balances). RightSplit's column carries the cyan pre-print; pick-if lists and a GET IT field close the page.",
+      "assetsNeeded": "None new: icon, 4 screenshots, assets/qr/rightsplit.svg. EAN-13 barcodes are inline SVG computed from each price (hand-built for the four static labels, regenerated by JS in the interaction).",
+      "risk": "The metaphor needs one sentence to land (dinner is not sold by the kilo), so the RATE caption must say 'tax + tip ÷ subtotal, the same for everyone' wherever it appears. At a glance, a cyan-and-white page can be mistaken for blue fintech; only the label grammar (black band, captions, heavy prices, barcodes) prevents that. The demo maths must match the app's fair-rounding exactly: rounded naively, the worked example sums to $154.66 against a $154.65 receipt.",
+      "memoryTest": "The cyan page of white price labels: every diner's label had the same cyan '× 1.28875' box and a different price. The salad paid $18.04, the ribeye $74.75."
+    },
+    {
+      "id": "b",
+      "label": "Torn Per Person",
+      "kicker": "IMPECCABLE’S PICK",
+      "sourceIndex": 1,
+      "lineage": "The 80 mm thermal restaurant check from an Epson TM-T88-class POS printer: merchant header in double-width capitals, a SERVER / TABLE / GUESTS line, item lines with right-aligned prices and dotted leaders, the suggested-gratuity block US checks print, and the sawtooth edge from the printer's tear bar. At the table it gets marked up with a four-colour ballpoint (Bic 4 Colours, 1970): circled lines, ticks and initials in blue, red, green and black, the way people split a check by hand.",
+      "thesis": "The page is the check itself: one thermal roll running down the screen, its lines circled in four ballpoint inks to show who ordered what, then torn into one short receipt per person, each ending in its own TOTAL. The bill is the interface. It refuses the fintech phone-mockup hero and the avatar pie.",
+      "scene": "The check has just landed on the table and someone is reading it on a phone in a bright room. The page is the paper, matte and cool white, with ink on it, so the scheme is light only (color-scheme: light).",
+      "scheme": "light",
+      "colorStrategy": "Full palette",
+      "palette": [
+        { "hex": "#F5F6F3", "role": "Thermal paper: the page ground edge to edge, cool white (never cream)" },
+        { "hex": "#1D1F21", "role": "Thermal print: all printed type, dotted leaders, rules; also Alex's black-ink initials (15.2:1)" },
+        { "hex": "#5B5F63", "role": "Faded thermal: secondary print, captions, the even-split strip, footnotes (5.9:1)" },
+        { "hex": "#1F3FB4", "role": "Ballpoint blue: Dana's circles and initial, link underlines, the 2px focus ring (8.0:1)" },
+        { "hex": "#C4232B", "role": "Ballpoint red: Ben's marks, strike-throughs on who_not_for, the 'not assigned' state (5.3:1)" },
+        { "hex": "#0F7A45", "role": "Ballpoint green: Cara's marks and the who_for ticks (5.0:1)" },
+        { "hex": "#2A2C2E", "role": "Tabletop graphite: only inside the torn gaps between receipt pieces and as the sticky bar's strip (paper on it 12.9:1)" }
+      ],
+      "type": {
+        "display": "Azeret Mono 700 (latin ≈10.6 KB) for printed headers. The H1 is 'double-height' at 52px desktop / 30px mobile, uppercase via CSS so the source text stays as written. The wordmark, section headers and every TOTAL line are 'double-width' (transform: scaleX(2) on short single lines; wrapping is computable from the fixed 0.6em advance).",
+        "text": "Golos Text 400 and 600 (≈12 KB each) for all reading prose (subheadline, how-it-works detail, plateau rule, FAQ answers, privacy) at 18px/1.6 in a 64ch column. Azeret Mono 400 for receipt lines and amounts at 17px, with tnum.",
+        "utility": "Nanum Pen Script 400 (≈15 KB) for ballpoint initials, names and margin notes only, at 24px or larger. Never body text, and every handwritten name is also printed.",
+        "rationale": "Receipt lines are fixed-pitch data, so a monospace is honest here, not a costume. Azeret Mono's squared grotesk forms sit close to a POS printer's built-in font, and it has nine weights and tnum. Golos Text is a plain, open screen grotesk, so the explanation reads as prose rather than more receipt. Nanum Pen Script is a quick ballpoint hand and the only face that is written rather than printed. ≈60 KB in all."
+      },
+      "materials": [
+        "Thermal paper drenched edge to edge, cool white",
+        "Sawtooth tear edges (CSS mask, 10px teeth) at the top and bottom of each receipt piece, with a 24px graphite gap of tabletop between pieces",
+        "Dotted leaders (SUBTOTAL ........ 120.00) and '* * *' separators",
+        "Double-width and double-height printed headers",
+        "Ballpoint marks as inline SVG strokes: circles around assigned lines, ticks, strike-throughs, an arrow into the margin; initials in Nanum Pen Script",
+        "Faded thermal grey for secondary print",
+        "The app's screenshots in the CSS iPhone bezel, resting on the paper like a phone put down on the check"
+      ],
+      "firstViewportDesktop": "Thermal paper fills 1440×900. A 720px receipt column sits in the centre, with 360px paper margins on each side for ink. Header line, 56px, inside the column: 'RIGHTSPLIT' double-width (Azeret 700, 20px) on the left; 'The check · Tear it · Price · Questions · Privacy' (Azeret 400, 15px) on the right; a dotted rule beneath. Centred below: H1 'BILL SPLITTER FOR IPHONE.' at 52px on two lines; hero.secondary 'Scan it. Split it. Done.' (Golos 600, 24px); the subheadline (Golos 400, 18px, 3 lines); the line 'SERVER: LAGERLAND APPS · TABLE: IPHONE · GUESTS: 4 · UPDATED 15 MAR 2026' (Azeret 15px); then '* * *'. Next comes the illustrative check, captioned 'Illustrative — the worked example from our journal', with dotted leaders on RIBEYE 58.00 / PASTA, BEER 28.00 / BURGER 20.00 / SALAD 14.00. Each line is circled in its owner's ink, with the initial at 32px in the left margin (D blue, B red, C green, A black). Under them: SUBTOTAL 120.00, TAX 8.875% 10.65, TIP 20% 24.00, and TOTAL 154.65 double-width. The right margin is written onto the paper beside the TOTAL: the price line 'FREE · PRO $3.99/YR · $7.99 ONCE' (Azeret 17px), the official badge 54px tall, and the QR at 128px over 'Scan with your iPhone camera' (Golos 15px). The first tear edge sits at y≈820, with the top of Dana's torn receipt showing below it.",
+      "firstViewportMobile": "Paper fills the screen. The receipt column runs full width inside 16px gutters, so on a phone the check is close to life-size. Header line, 48px: 'RIGHTSPLIT' double-width at 16px and a 'Menu' text button, with a dotted rule beneath. H1 at 30px on two lines (Azeret 700, uppercase); 'Scan it. Split it. Done.' (Golos 600, 20px); the price line 'FREE · PRO $3.99/YR · $7.99 ONCE' (Azeret 15px); the official badge 48px tall, left-aligned, at y≈230–280. The check begins below: 'GUESTS: 4', then RIBEYE circled in blue with a 24px 'D' written inline before it, then PASTA, BEER circled in red, BURGER in green and SALAD in black, all visible by y≈600. The subheadline follows the check. QR hidden below 1024px.",
+      "conversion": "Badge: official artwork laid on the paper, in the right margin beside the TOTAL on desktop and under the price line on mobile, 48–54px, never inked over. QR: in the right margin on ≥1024px and again on the closing receipt. Price: printed as a receipt line, 'FREE · PRO $3.99/YR · $7.99 ONCE', from price.value; the plans come later as three short receipts. Sticky bar: once the hero badge scrolls away, a graphite tabletop strip rises from the bottom holding a short torn slip with 'RIGHTSPLIT · FREE · PRO FROM $3.99/YR' (Azeret 15px) and the badge at 40px. It hides when the closing receipt is in view. Smart App Banner: apple-itunes-app meta unchanged; iOS shows it above the paper.",
+      "visitorPath": [
+        "Receipt head: H1, hero.secondary, subheadline, server line (maker, release dates), price line, badge, QR",
+        "The check: the illustrative worked-example check (4 lines, subtotal, tax, tip, total), lines circled in ink for D, B, C, A",
+        "Message block: quick_answer printed between '* * *' rules (speakable), then 'NO ADS · NO ACCOUNT · NO TRACKING · 0 THIRD-PARTY SDKS' → /transparency/#rightsplit",
+        "Tear it (signature): the same check torn into four short receipts with each person's lines, tax share, tip share and TOTAL, plus a faded 'SPLIT EVENLY: 38.66 EACH' strip",
+        "How it splits: how_it_works intro + 4 steps as numbered receipt lines '1 SCAN · 2 ASSIGN · 3 TIP · 4 SEND', detail in Golos (HowTo)",
+        "The math, shown: plateau_disclosure (rule, what it does not do, 3 notes) as the receipt's printed policy footer, in Golos 18px",
+        "On the table: the 4 screenshots in the iPhone bezel resting on the paper, alt text as captions, with features (5) as ink-ticked lines beside them",
+        "What you get: value_points (4) as a ticked list under '* * *'",
+        "Totals: plans as three short receipts — Free $0 forever, Pro · yearly $3.99 / year, Pro · lifetime $7.99 once with 'Most chosen' circled in blue — and plans_footnote as fine print",
+        "Who this check is for: who_for (5) ticked in green; who_not_for (3) struck through in red, keeping the Splitwise pointer",
+        "Other checks: comparison_table as a ruled receipt matrix (4 columns × 8 rows), RightSplit's column circled in blue, footnote, inline badge",
+        "Receipt formats and tip conventions: training_vocabulary (4 groups) in <details>, collapsed by default",
+        "Privacy, printed: privacy summary + transparency.yml (camera only, data leaves only via the share sheet, analytics none) → /transparency/#rightsplit, privacy policy, support",
+        "Questions: faq (16) as <details> rows with dotted leaders",
+        "Elsewhere: alternatives_to → the five /alternatives/ pages; related_journal as 'Worked example: the bill-splitting math nobody agrees on'",
+        "Audit block: the Quick reference <details> (ai-canonical), visible, at the receipt foot",
+        "More from the maker: you-might-like (computed)",
+        "Closing receipt: TOTAL line with price, badge, QR, 'THANK YOU', freshness line; then the Lagerland strip"
+      ],
+      "navigation": "The receipt's header line is the nav: 'RIGHTSPLIT' (top) and five plain links — The check, Tear it, Price, Questions, Privacy — in Azeret 400 with a dotted underline that becomes a solid ballpoint-blue underline on hover and focus. On phones, 'Menu' opens a short paper slip listing the same links as receipt lines with dotted leaders.",
+      "signatureInteraction": "'Tear it'. Under the check sits a printed line, '- - TEAR ALONG THE INK - -', that works as a button. Pressing it pulls the check apart into four narrow receipts: four across at ≥1024px, two by two on mobile. Each receipt is headed by the person's initial in their ink and lists their lines, TAX SHARE, TIP SHARE and a double-width TOTAL (Dana 74.75, Ben 36.09, Cara 25.78, Alex 18.04). A fifth strip in faded grey reads 'SPLIT EVENLY: 38.66 EACH'. Before tearing, tapping a line on the check moves it to the next person's ink, and the torn totals recompute with the plateau_disclosure rule. aria-live announces 'Alex: 18.04'. No JS: the four torn receipts are server-rendered under the check with the worked-example values, and the button is absent. Reduced motion: the torn receipts appear in place without separating.",
+      "motionGrammar": "Paper does not glide. Under html.js only: ink circles draw on once (SVG stroke-dashoffset, 320ms each, 80ms apart) when the check enters view; the tear moves the pieces 12px apart in 180ms ease-out; the sticky slip rises in 160ms. No scroll-jacking, no count-ups. prefers-reduced-motion: ink starts fully drawn, tears are static, nothing moves.",
+      "readModeVariant": "One long receipt at 68ch. Privacy, support and alternatives pages print as a single roll: a double-width header ('PRIVACY POLICY — RIGHTSPLIT'), the quick answer as the message block between '* * *', headings in Azeret 700, reading text in Golos 400 at 18px/1.6. Sections are divided by dotted rules, not tears (tears belong to the app page's per-person split). Ink appears only as the blue link underline and one margin note per page. Alternatives pages set two receipts side by side, 'RIGHTSPLIT' and the competitor, with matching lines (Workflow, Item-level, Account, Ongoing balances), then 'Pick RightSplit if' ticked green and 'Stick with Splitwise if' in black. Support prints the contact block as a receipt with the email on the TOTAL line.",
+      "assetsNeeded": "None new: ink marks are inline SVG paths, the check is set type, and the screenshots, icon and QR exist.",
+      "risk": "Familiar: the page-as-receipt is the obvious creative answer for a bill app, and receipt-styled pages are a known web trope (receipt generators, playlist receipts). Its strength has to come from the ink assignment and the tear, not the paper. Long lines of mono tire the eye, so prose must stay in Golos. Handwritten initials must stay legible at 24px and never carry meaning alone.",
+      "memoryTest": "A long white receipt with its lines circled in blue, red and green pen that tore into four little receipts, one per person, each with its own total."
+    },
+    {
+      "id": "c",
+      "label": "Cards in the Folder",
+      "kicker": "SECOND ROLL",
+      "sourceIndex": 4,
+      "lineage": "The restaurant check presenter: a padded leatherette book-fold, about 24 × 12 cm closed, with stitched edges, a clear vinyl pocket for the check, a card slot, a small card pocket and a pen loop, and the house name foil-stamped on the cover. It ends every group meal the same way: each diner slides a card into its top edge, so the folder goes back with the cards fanned out above it and the server asks 'split it evenly?'",
+      "thesis": "A meal ends in a folder that arrives once and goes back once. The page is that folder opened on the table, with each person's own amount standing up out of its top edge where the cards go, so the visitor sees four different numbers come back instead of one total cut four ways. It refuses the split hero and the avatar pie by making the folder's two leaves, its pockets and its top edge the page's structure.",
+      "scene": "A dim dining room late in the evening. The folder lies open on a dark table in front of whoever picked it up; the light is low, the leather matte, and the only bright things are the foil, the cards and one paper card. The scheme is dark only (color-scheme: dark).",
+      "scheme": "dark",
+      "colorStrategy": "Drenched",
+      "palette": [
+        { "hex": "#1A0A0E", "role": "Table: the band above the folder where the cards rise and the page margins; also the ink on the cards and on the paper card (≥9:1 on every card)" },
+        { "hex": "#3A161F", "role": "Oxblood leatherette (the app's own maroon, darkened): the folder, which is the ground of every section below the hero" },
+        { "hex": "#F3E8EA", "role": "White foil: H1, headings, amounts and body text on leather (13.4:1); also the paper card ground and Alex's card" },
+        { "hex": "#C2A5AB", "role": "Thread: 1px dashed stitch seams, captions, secondary text, blind-stamped lines (7.1:1 on leather)" },
+        { "hex": "#5BD0E6", "role": "Card cyan (the app's own accent): Dana's card, link underlines, the 2px focus ring (9.8:1 on the table)" },
+        { "hex": "#8FDDB0", "role": "Card mint: Ben's card" },
+        { "hex": "#B9A8F5", "role": "Card lilac: Cara's card" }
+      ],
+      "type": {
+        "display": "Funnel Display 600 and 800 (latin ≈10.7 KB each), always as foil. H1 at 80px desktop / 46px mobile (800); section titles at 40/30px (600); card amounts at 40px desktop / 22px mobile (800, tnum).",
+        "text": "Onest 400 and 500 (≈15 KB each): reading text in white foil on leather at 18px/1.65, captions at 15px in thread colour, nav at 16px (500); tnum on amounts.",
+        "utility": "none",
+        "rationale": "Hot-foil stamping fills in fine joins. Funnel Display's notched joins (visible in n, k and a at display sizes) look like a die cut to survive that, and it stays crisp at 80px on dark leather without the gold-script steakhouse cliché. Onest has open apertures and a generous x-height, which hold up as light text on a dark ground. ≈52 KB in all."
+      },
+      "materials": [
+        "Oxblood leatherette across the page, with a faint inline-SVG feTurbulence grain at 4% opacity (vector, no raster)",
+        "1px dashed thread seams stitched 14px inside every edge of the folder and between compartments",
+        "Foil-stamped type: flat white foil with a 1px darker inner offset for the stamp edge, no gradients",
+        "Blind-stamped lines, tone-on-tone in thread colour, for maker and freshness",
+        "Clear vinyl pocket: a flat 6% white overlay with a 1px highlight on its top edge, no blur",
+        "A card slot (a stitched horizontal slit) and a small card pocket",
+        "Matte flat cards in cyan, mint, lilac and foil white, with 10px corners",
+        "The spine: a 2px darker crease down the middle of the open folder on desktop"
+      ],
+      "firstViewportDesktop": "The near-black table fills the top 300px. Nav row, y 0–64: icon 28px and 'RightSplit' (Funnel 800, 24px, foil) on the left; 'The split · How it works · Price · Privacy · Questions' (Onest 500, 16px, thread colour) on the right. The open folder covers x 64–1376 from y 300 down, with its spine at x 720. Four upright cards rise out of the right leaf's pocket into the table band across x 760–1320, overlapping 8px. Each card's visible height scales with its share (64px base + 2px per dollar): Dana $74.75 on cyan, Ben $36.09 on mint, Cara $25.78 on lilac, Alex $18.04 on foil white, with name and item in Onest 500 15px and the amount in Funnel 800 40px. Left of the fan, on the table: a foil switch 'By what each ordered | Evenly' and the thread-colour caption 'Illustrative: the $154.65 dinner from our journal.' Left leaf (x 104–680): H1 'Bill splitter for iPhone.' in foil at 80px on two lines, hero.secondary 'Scan it. Split it. Done.' (Funnel 600, 28px), the subheadline (Onest 18px, 52ch). Right leaf (x 760–1336): the vinyl pocket mouth where the cards go in; the price in foil, 'Free. Pro $3.99 a year, or $7.99 once.' (Funnel 600, 26px); the stitched card slot with the official badge, 54px, seated on a foil-white tab; and the small card pocket holding the QR at 112px on a white card, 'Scan with your iPhone camera' in table ink. A blind-stamped freshness line ('Lagerland Apps · first released 1 Mar 2026 · updated 15 Mar 2026') runs across both leaves at y≈860.",
+      "firstViewportMobile": "Table strip, y 0–52: 'RightSplit' (Funnel 800, 20px, foil) and a 'Menu' text button. Between y 52 and y 250, four 84px-wide cards rise from the folder's top edge (64px base + 1.4px per dollar), each showing its amount in Funnel 800 22px. The switch 'By item | Evenly' sits above them at 14px. From y 250 the screen is the folder's single leaf, stitched 10px inside its edges: H1 in foil at 46px on two lines, hero.secondary at 22px, the price at 18px, and the card slot with the badge 48px tall at y≈450–500. The subheadline follows. QR hidden below 1024px.",
+      "conversion": "Badge: the official black artwork sits in the folder's card slot on a foil-white tab, so it never meets near-black, at 54px desktop / 48px mobile; it appears again in the back-cover slot. QR: on a white card in the small card pocket on ≥1024px, where a business card would sit. Price: the foil line above the slot, from price.value; the plans come later as three foil rows. Sticky bar: once the slot scrolls away, a leather strip with a stitched top seam slides up from the bottom carrying 'RightSplit · Free · Pro from $3.99/yr' in foil and the badge at 40px on its tab. It hides at the back cover. Smart App Banner: apple-itunes-app meta unchanged; iOS shows it above the table strip.",
+      "visitorPath": [
+        "Spread (hero): left leaf — H1, hero.secondary, subheadline. Right leaf — cards rising from the pocket (illustrative shares) with the Evenly switch, price foil (price.value), card slot with badge, QR card. A blind-stamped maker/freshness line runs across both",
+        "In one answer: quick_answer foil-stamped in the first stitched compartment (speakable), with trust facts blind-stamped — No ads · No account · No tracking · 0 third-party SDKs → /transparency/#rightsplit",
+        "How it comes back: how_it_works intro + 4 steps down a single stitched seam, step numbers foil-stamped 1–4 (HowTo)",
+        "House rule: plateau_disclosure printed on the one paper card in the clear pocket — rule, what it does not do, three notes (foil-white card, table ink, 18px)",
+        "Through the vinyl: the 4 screenshots in the CSS iPhone bezel under a long clear pocket, alt text as foil captions",
+        "What's inside: value_points (4) and features (5) as one stitched list, titles in Funnel 600 24px, descriptions in Onest",
+        "What goes in the slot: plans as three foil-stamped rows on one panel — Free $0 forever, Pro · yearly $3.99 / year, Pro · lifetime $7.99 once ('Most chosen' blind-stamped) — features in thread colour, plans_footnote",
+        "Whose folder this is: who_for (5), and who_not_for (3) as 'Ask for a different tool if…', keeping the Splitwise pointer",
+        "Other folders: comparison_table stamped as a ruled grid (4 columns × 8 rows), RightSplit's column edged in card cyan, footnote, inline badge in a slot",
+        "Reading the receipt: training_vocabulary (4 groups) in a <details> compartment, collapsed by default",
+        "Nothing leaves the folder: privacy summary + transparency.yml (camera only; data leaves only via the share sheet; 0 SDKs; analytics none) → /transparency/#rightsplit, privacy policy, support",
+        "Questions: faq (16) as <details> rows separated by stitch seams",
+        "Other tables: alternatives_to → the five /alternatives/ pages; related_journal (the worked-example post)",
+        "Folder contents: the Quick reference <details> (ai-canonical), visible, with a blind-stamped heading",
+        "More from the maker: you-might-like (computed)",
+        "Back cover: closing — badge in the slot, QR card, price foil, freshness line — then the Lagerland strip"
+      ],
+      "navigation": "A quiet row on the table above the folder: 'RightSplit' (top) and five links — The split, How it works, Price, Privacy, Questions — in Onest 500 thread colour, turning foil with a cyan underline on hover and focus. On phones, 'Menu' opens a stitched leather panel listing the same links as foil-stamped lines. The Lagerland strip below the back cover is the only way out.",
+      "signatureInteraction": "'Split it evenly?' A foil-stamped two-way switch (a real radio group) sits beside the cards: 'By what each ordered' (default) or 'Evenly'. Choosing Evenly lowers or raises all four cards to the same height and changes them to $38.66, and each card gains a thread-colour line with its difference: Alex '+$20.62', Dana '−$36.09'. Switching back restores the RightSplit amounts. aria-live reads 'Evenly: everyone pays $38.66. Alex pays $20.62 more than by item.' No JS: the cards render at by-item heights, with a printed line underneath: 'Split evenly it would be $38.66 each — Alex would pay $20.62 more than the salad cost.' The switch is hidden. Reduced motion: heights and amounts change instantly.",
+      "motionGrammar": "Leather does not move; cards do. Under html.js only: the four cards slide up out of the pocket on first reveal (translateY 40px→0, 240ms ease-out, 60ms stagger); the switch changes card heights over 200ms ease-in-out; the sticky strip rises in 180ms. No parallax, no glows, no count-ups. prefers-reduced-motion: cards are already standing, heights change instantly.",
+      "readModeVariant": "The folder closed. Privacy, support and alternatives pages show a single oxblood leaf with stitched edges and a foil-stamped title ('Privacy policy', 'Support', 'RightSplit vs Splitwise'). The reading column is the paper card held in the clear pocket: foil-white #F3E8EA ground, table-ink text, Onest 400 at 18px/1.65, 66ch, headings in Funnel 600. The quick answer is the first foil-stamped panel on the leather above the card. The transparency.yml facts are blind-stamped beside the privacy text. Alternatives pages stand two cards out of the top edge, 'RightSplit' (cyan) and the competitor (foil white), and print the comparison as two columns on the paper card, with pick-if lists and the badge in a slot at the foot.",
+      "assetsNeeded": "None new: grain and stitching are CSS and inline SVG, and the cards are set type. Optional later: Apple's official white 'Download on the App Store' badge artwork, if the owner wants the badge directly on leather instead of on a foil-white tab.",
+      "risk": "Dark, warm leather sits near the steakhouse rendition, so it must stay off gold, scripts and serifs. The folder must remain one folder: two leaves on desktop and one on mobile, with no extra flaps. Its sections below the hero are stitched compartments of the same leather, so the object reading can thin into 'dark page with dashed borders' if the stitching is not drawn with care. Card shapes could imply that RightSplit takes payment, which it does not, so the copy must say 'RightSplit does the math; everyone pays their own way'. Light-on-dark reading needs the paper card for long text.",
+      "memoryTest": "The burgundy leather check folder with four coloured cards sticking out of the top, each a different height and amount, until you pressed 'Evenly' and they all sank to $38.66."
+    }
+  ],
+  "canon": "Canon (standing exit, never recommended): the blue fintech bill-splitter page played straight. Blue-to-white gradient hero, 'Split bills with friends, fairly' beside an iPhone mockup of the item-assignment screen, App Store badge with QR, three icon cards (Scan · Split · Send), Free / Pro / Lifetime pricing table with Lifetime highlighted, a Splitwise comparison grid and a FAQ accordion, all in a rounded geometric sans with light and dark themes.",
+  "notes": "Roll ran degraded: the roll service was unreachable, so there were no catalog challengers and no quality-bar boards. Seed 844f72bb assigned candidate 6; re-roll 1 gave 4, which was distinct, so no further re-rolls were needed. The seven candidates were ordered by resonance before the roll. Neither roll hit candidate 1, so it appears as IMPECCABLE’S PICK (B). App truth: freemium, 'Free — Pro from $3.99/yr or $7.99 lifetime' (schema 0 / 7.99 / 3 offers), iOS only, live, ratings 5.0 from 1 (no stars anywhere). Content drift the build must not copy: alternatives/tab.html prices Pro at $1.99/year; alternatives/splitwise.html says item-by-item is the default (front matter makes it Pro); the Valentine's journal post promises Venmo/PayPal/iMessage Cash deeplinks and drag-to-assign, which the app FAQ contradicts ('Not directly'); the privacy policy names Contacts and Photos, while transparency.yml lists Camera only. All three directions use the journal's worked example ($154.65 → 74.75 / 36.09 / 25.78 / 18.04; even split 38.66), labelled illustrative. Rounded naively it sums to $154.66, so the interactive demos must implement plateau_disclosure's fair-rounding pass and be checked against the app before shipping. 'Most chosen' on the lifetime plan is front-matter copy (plans[2].summary); render it only as written. training_vocabulary.overline ('Speaks the language') is an eyebrow and is dropped per the craft floor. The markdown body exists but show_body is not set. Faces verified on Fontsource with fontTools (all have tnum): Pathway Extreme (wdth 75–100, wght 100–900), Azeret Mono, Golos Text, Nanum Pen Script, Funnel Display (300–800), Onest. Font budgets: A ≈58 KB, B ≈60 KB, C ≈52 KB, none shared with the sibling boards written so far. No founder, spotlight, roadmap, insight gallery or creative_work blocks exist, so none are drawn."
+}

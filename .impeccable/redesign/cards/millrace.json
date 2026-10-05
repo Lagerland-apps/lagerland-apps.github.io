@@ -1,0 +1,452 @@
+{
+ "surface": "millrace",
+ "dossier": {
+  "mechanism": "Every Millrace level is a closed delivery problem. You get a fixed board, the whole arrival queue of 2s and 4s visible before move one, a single marked inlet that must stay clear, and one vault cell that must hold an exact value within a move budget. Every level was found by search and solved exhaustively, so its shortest solution is a proven number. A level was thrown away if any of 280 no-lookahead strategies could win it, or if random play won more than 2% of the time. The six chapters are pinned to that proven depth: 5, 6, 7, 8, 9, then 10 or more moves.",
+  "audienceScene": "A puzzle player on an iPhone, on a commute or a flight or in bed. They arrive from Google or an AI answer for 'games like Threes', 'logic puzzle game no ads', 'puzzle game with a solution', or an alternatives query (Threes, KAMI 2, Flow Free, Two Dots, Suika Game). Often they are tired of saga games that sell lives and boosters. Within seconds they want to know what a level asks, that it is free with no ads and no account, and that the levels have real depth. Desktop visitors, often coming from the journal essay on how the levels are made, need the QR to get it onto an iPhone or iPad.",
+  "culturalHome": "Deterministic single-player logic puzzles and the people who chase optimal solutions. That includes boxed puzzle games with graded challenge cards, Sokoban level sets, KAMI's move-count 'Perfect', and Threes and the 2048 slide-and-merge lineage, as well as speedcubing's fewest-moves culture and golf's par. Its own vocabulary is the developer's, from the journal: the generator, the exhaustive breadth-first solver, 'the gate', the 'vault', sixteen checks, 280 thoughtless players, 'a puzzle needs a way to go wrong'. The name and icon point at water: a millrace is a mill's channel, and the icon draws one, a walnut channel with a red-orange bar, a green bar and an amber block between them.",
+  "mustProve": "That a level is a closed problem with a proven answer. The first viewport must show the arrival queue in full, the exact target and the budget. The real example is Level 58 in screenshot 1: build exactly 64 on the marked cell, 8 moves left, queue 2 4 2 4 4 4. It must also say that every level's shortest solution is proven before it ships. Alongside that: free in full (price.value 'Free — optional theme packs & undo tokens'), no ads, no account, the working App Store badge, and the QR on desktop.",
+  "categoryDefault": "The mobile-puzzle landing page: a candy gradient or a dark glossy backdrop, bouncy rounded type, floating 3D tiles and confetti, a centred phone mockup, a laurel-and-stars 'Addictive!' strip, a stat row and a feature-card grid. 2048-likes add a beige-and-orange tile grid in a rounded sans. The incumbent already ships a version of this: cream page, serif H1 on the left, amber gameplay phone on the right, a badge row.",
+  "predictableOpposite": "Zen-puzzle minimalism: a white or pastel void, a thin geometric sans, one floating isometric tile and 'calm' copy. Or its engineering twin, the 'proof' page: a black terminal, monospaced solver logs and green PASSED badges.",
+  "literalReading": "The millrace itself: a timber channel carrying water to a mill wheel, with sluice gates, the wheel and flowing water. The icon already depicts it (walnut channel, two coloured cross-bars, an amber block). Only candidate 7 uses it.",
+  "evidence": [
+   "_apps/millrace.md: platforms iOS + iPadOS, status live. price.model free; price.value 'Free — optional theme packs & undo tokens'. schema_price 0, schema_high_price 5.99, schema_offer_count 9, USD. Plans: Free $0 ('The whole game'); Theme packs $1.99 each (4 packs, 16 paid themes + free Classic = 17); Complete Collection $5.99; Undo bundles 10/$0.99, 50/$2.99, 200/$5.99; a $1.99 tip that unlocks nothing. No subscription.",
+   "Mechanic (quick_answer, body, features[1]): fixed board, visible queue, single marked inlet, one exact value on one marked cell, move budget. Two ways to lose: block the inlet, or overshoot (a 128 when it asked for 64). Freeplay is the endless board with a daily board and streaks.",
+   "Proof facts (how_it_works, body, journal how-millrace-levels-are-made): exhaustive BFS proves the shortest solution. All 280 no-lookahead strategies must fail. Random-play odds are computed exactly with a 2% ceiling: 1.31% on Level 1, about 1 in 1,000 at the median, about 1 in a million on the deepest. One to eight candidates in 1,000 survive. Sixteen checks live in the test suite. The deepest level needs all 16 of its 16 moves.",
+   "Chapter table (journal), as levels / shortest / budget: Warm-up 4 / exactly 5 / 7; Tactics 12 / 6 / 8; Pressure 12 / 7 / 8–9; Precision 12 / 8 / 9–10; Deep Water 12 / 9 / 9–11; Mastery 12 / 10–16 / 12–16. Par subtotals follow: 20, 72, 84, 96, 108.",
+   "Screenshot 1 (= hero.alt): Level 58, 'Build exactly 64 on the marked cell', 8 moves left, queue 2 4 2 4 4 4. A walnut-framed 4×4 board on a molten-amber liquid ground. A green bar sits beside the cell ghosting the 64 (the vault) and a red-orange bar at the opposite edge (the inlet). The colour roles are inferred from the screenshot and match the icon.",
+   "Screenshots 2 and 4: level list on a caramel ground (~#8A5617) with lighter caramel cards. Level 1 is 'exactly 16, 3 tiles arriving'; Level 4 is 'exactly 32, 7 arriving'. Deep Water Levels 44–49 are 'exactly 64' with 7–10 arriving. The list header reads '45 of 64 solved'.",
+   "Screenshots 3, 5, 6, 7: the 'Solved!' card ('Best 16 moves'); a Freeplay Hint 'Keeps your 1024 safe in the corner.'; a Coach line on No Moves Left; a Stats sheet. Screenshots 8 and 9 show the Glacier Ice and Midnight Neon themes.",
+   "example_insights: five real lines, from the Coach (Corners, Crowding, Order, Praise) and from Hint. comparison_table compares Threes!, KAMI 2, Flow Free and Two Dots (checked 24 Sep 2026). /alternatives/ pages exist for threes, kami-2, flow-free, two-dots and suika-game (alt_pairs confirmed).",
+   "Privacy (front matter + _data/transparency.yml, manifest_source: source): label 'Data Not Collected'; no networking code; 0 tracking domains; 0 third-party SDKs; no account; only entitlement Game Center; Required Reason API UserDefaults CA92.1; permissions none.",
+   "founder: Organization Lagerland Apps, Finland, one-person studio since 2025. Heading: 'An endless grid can be tuned forever and still not be a game you finish.' Six signals. The signal '19 live apps' matches today's 19 status: live, but must still be computed.",
+   "release: first 2026-09-24, last_updated 2026-09-24, version 1.0. 34 languages / 40 locales claimed. related_journal: how-millrace-levels-are-made. No millrace entry in _data/testimonials.yml and no ratings, so no stars and no quotes anywhere."
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "The challenge-card deck",
+   "family": "game components / printed object",
+   "why": "Boxed logic puzzles such as Rush Hour (1996) taught a generation the format: a numbered challenge card, colour tiers from Beginner to Expert, the solution on the back. It carries the mechanism directly. Each level becomes a card whose front is the closed problem (board, inlet, vault, queue, target, budget) and whose back is the proof (proven shortest solution, exact random-play odds, 280 of 280 strategies failed). The six tiers are the six depth chapters, and the deck's edge shows their real sizes (4 + 12×5)."
+  },
+  {
+   "index": 2,
+   "name": "The gamebook ('turn to 58')",
+   "family": "print / paperback",
+   "why": "Choose Your Own Adventure (1979–) and Fighting Fantasy (1982–) made numbered, branching sections a shared memory. Because nothing in a level is random, a whole Millrace line can be printed as linked sections. Every wrong choice ends ('the inlet is blocked — the end'), and one line reaches the vault in the proven minimum. The Adventure Sheet becomes the target, queue and budget boxes, and the whole thing plays with plain anchor links."
+  },
+  {
+   "index": 3,
+   "name": "The Hakone puzzle box (himitsu-bako)",
+   "family": "craft object / wood marquetry",
+   "why": "Japanese secret boxes are sold by step count (4, 7, 10, 21 moves to open) and wrapped in yosegi marquetry, so collectors buy depth, just as Millrace pins chapters to 5–10+ moves. Each chapter becomes a box of known step count whose panels slide in an order you cannot guess, and the icon's sliding block reads as one panel. Sibling watch: Shogiful also works in Japanese timber."
+  },
+  {
+   "index": 4,
+   "name": "The sounding chart",
+   "family": "cartography",
+   "why": "Admiralty and NOAA charts print measured depths as soundings and contour each depth, and most people recognise the scatter of numbers on pale blue. It carries 'the difficulty curve is search depth'. The scroll descends through six depth contours (5 to 10+), each level is plotted as a sounding, and 'Deep Water' is already a chapter name. The board becomes a harbour inset with the inlet as its mouth."
+  },
+  {
+   "index": 5,
+   "name": "Fewest Moves and God's Number",
+   "family": "competition paperwork / proof",
+   "why": "Speedcubing's Fewest Moves event hands out a printed scramble and scores your written solution by move count. In 2010 an exhaustive computer search proved that every cube position solves in 20 moves or fewer. It carries the mechanism: the scramble is the fixed start, and your line is scored against a computer-proven optimum, which is exactly what the result card's 'Best possible is X moves' means."
+  },
+  {
+   "index": 6,
+   "name": "The scorecard and yardage book",
+   "family": "sport / printed forms",
+   "why": "Everyone knows par, and the app's own body copy says 'the par you are chasing is a computed fact'. It carries the mechanism as a 64-hole scorecard. The PAR row is the proven shortest solution (5, 5, 5, 5, then sixes, through 10–16) and the MAX row is the budget. Chapters become loops with subtotals (Tactics: 12 × 6 = par 72), and the yardage book's measured drawings carry 'measured, not claimed'. Tee red and the green match the app's inlet and vault markers."
+  },
+  {
+   "index": 7,
+   "name": "The millrace itself",
+   "family": "architecture / water engineering (literal reading)",
+   "why": "This is the name's own object, and the icon already draws it: a walnut-lined race, a red-orange cross-bar, a green cross-bar and an amber block riding between. It carries the FAQ's own explanation ('a steady flow arriving at one point… keep the channel clear while you build the delivery'). The sluice is the journal's 'gate', which roughly one to eight candidates in a thousand pass, and the race's staff gauge reads depth. This is the list's single literal candidate."
+  }
+ ],
+ "seed": {
+  "key": "214d9de3",
+  "assigned": 7,
+  "reroll1": 6
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "The Amber Race",
+   "kicker": "THE ROLL",
+   "sourceIndex": 7,
+   "lineage": "The mill race as built, seen from directly above, which is exactly what the app icon draws: the plank-lined headrace from weir to wheel, its sluice gate set in stop-log grooves, the staff gauge bolted to the race wall, the miller's painted toll board. Water colour comes from the app's own amber-liquid level screens (screenshots 1, 3, 5) and from peat-stained races that run tea-amber. The FAQ supplies the mapping: 'a steady flow arriving at one point… keep the channel clear while you build the delivery.' This is the list's one literal reading, committed fully.",
+   "thesis": "The page is one millrace followed downstream. You enter at the red-orange inlet gate, where the queue of arriving tiles waits and the download sits, and the page flows reach by reach to the green vault gate where the delivery is made: the icon scaled into a site. It refuses the category's glossy phone-in-a-gradient hero and the incumbent's copy-left/phone-right split.",
+   "scene": "Looking straight down into a plank-lined race at midday. The water is tea-amber and lit through to the plank floor, with walnut walls on either side and painted gate beams casting soft shadows on the surface. Light scheme only (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Drenched",
+   "palette": [
+    {
+     "hex": "#E2A03F",
+     "role": "Race water: the ground of every Persuade reach. Ink #1F1209 on it 8.1:1"
+    },
+    {
+     "hex": "#F0C77A",
+     "role": "Shallows: the Read-mode reading column, FAQ answers, the quick reference panel. Ink on it 11.5:1"
+    },
+    {
+     "hex": "#3B2616",
+     "role": "Walnut: race walls, the headrace nav beam, section beams, the toll board, table heads, sticky-bar end caps. #F7E4BF lettering on it 11.4:1"
+    },
+    {
+     "hex": "#1F1209",
+     "role": "Ink: all body text and the H1 on water. Focus ring is 3px with a 2px #F7E4BF gap"
+    },
+    {
+     "hex": "#B83F24",
+     "role": "Inlet gate red-orange (the app's inlet marker): the hero inlet beam, the sticky bar and the board's inlet marker only. #FFF1E4 text on it 5.0:1"
+    },
+    {
+     "hex": "#17694E",
+     "role": "Vault green (the app's vault marker): the closing vault beam and the board's vault marker only. #F2FFF8 text on it 6.5:1"
+    },
+    {
+     "hex": "#F6C766",
+     "role": "Tile amber: floating tiles (queue, chapter depths, target). Numerals #5B3A0C on it 6.5:1"
+    }
+   ],
+   "type": {
+    "display": "Rokkitt 600/700/800 (@fontsource/rokkitt, variable 100–900, ~13 KB per latin weight). A Memphis-model slab whose square serifs read as letters routed into a plank or cast on gate gear. Sets the H1 on water (104px desktop / 46px mobile, 800, -0.01em), every beam title (40px / 28px, 700, #F7E4BF on walnut), the staff-gauge depths and tile numerals (600, tabular lining).",
+    "text": "Alegreya Sans 400/500/700 (@fontsource/alegreya-sans, ~24 KB per weight). A humanist sans with calligraphic warmth that holds long paragraphs on a mid-tone ground. Body 19px/1.6 on water at 68ch; captions 15px 500; the price statement 20px 700 on the inlet beam.",
+    "utility": "None. Budgets, odds and counts use Rokkitt tabular figures; no mono anywhere.",
+    "rationale": "Two families, about 110 KB across six files. The slab belongs to timber and cast iron, and the humanist sans to the person reading on the bank. Neither is a training default, and no sibling microsite uses either."
+   },
+   "materials": [
+    "Race water: flat #E2A03F with an inline-SVG feTurbulence caustic layer (white, 7%, soft-light) and the plank floor showing through as 6%-darker seams every 140px",
+    "Walnut plank walls down both page edges (40px desktop, 8px mobile): repeating-gradient grain, a darker seam every 180px, iron bolt heads every 280px",
+    "Cross-beams with rounded ends that overhang the walls, as the icon's bars do, casting a soft contact shadow on the water (0 14px 18px rgba(90,45,0,.35)). Walnut for sections, red-orange for the inlet, green for the vault",
+    "Floating tiles: glossy amber blocks (top face #F9D27A to #F0B548, 6px side #C98A28, radius 10px) with Rokkitt numerals, used only where a tile is real information",
+    "Stop-logs: four horizontal oak boards (#9A6A3A grain) seated in iron grooves at the gate",
+    "Staff gauge: a white-enamel depth board (#F4F1EA, ink 16:1) with black E-graduations, bolted to the left wall",
+    "The miller's toll board: a painted walnut sign with #F7E4BF lettering and ruled price lines",
+    "A recessed walnut plate inside the inlet beam that seats Apple's black badge with its clear space; a white enamel plate for the QR"
+   ],
+   "firstViewportDesktop": "1440×900. Walnut walls run at x 0–40 and 1400–1440 for the full page height, with amber water between. y 0–68: the headrace beam (walnut, ends overhanging the walls). It holds the app icon 40px, 'Millrace' in Rokkitt 800 28px #F7E4BF and, beside it, hero.pre_headline 'Tile delivery puzzle for iPhone and iPad' in Alegreya Sans 500 14px. The anchor links 'The level · The gate · Depth · Prices · Questions' (Alegreya Sans 500 16px) sit at right. y 120–444: H1 'Sixty-four levels. / One inlet. / Nothing is random.' in Rokkitt 800 104px/1.0 ink, x 112, three lines, max 1000px. y 470–534: hero.secondary in Alegreya Sans 500 24px/1.35, 660px. y 566–642: the queue, six 76px amber tiles '2 4 2 4 4 4' in single file from x 112, 14px apart, heading for the inlet notch. Under them a 15px caption: 'Level 58, from the app: build exactly 64 on the marked cell, 8 moves left, every arrival already in view.' y 668–788: the INLET BEAM, #B83F24, 120px deep, full channel width with ends overhanging the walls, and one 88px notch (the inlet) at x 600 under the queue's head tile. Left of the notch: price statement 'Free — the whole game. Optional theme packs & undo tokens.' in Alegreya Sans 700 20px #FFF1E4, two lines, at x 112. Right of the notch: the official App Store badge, 56px tall, on a recessed walnut plate at x 760. Far right: the QR, 112px, on a white enamel plate at x 1180, with 'Scan with your iPhone camera' 14px beneath, inside the beam. y 812–900: downstream, the walnut beam 'Millrace in one paragraph' starts at the fold.",
+   "firstViewportMobile": "390×844. Walls 8px each, water between, 16px text gutters inside the walls. y 0–56: headrace beam with icon 32px and 'Millrace' in Rokkitt 800 22px, plus a 'Menu' peg button at right. y 80–266: H1 in Rokkitt 800 46px/1.0, four lines. y 282–358: hero.secondary 17px/1.45. y 382–426: the queue, six 44px tiles 8px apart (304px). y 434–470: caption 13px, two lines. y 492–652: the inlet beam, 160px deep, with the price statement (17px 700, two lines) and then the badge 48px tall on its walnut plate; no QR below 1024px. From y 676: the 'Millrace in one paragraph' beam and the Quick Answer.",
+   "conversion": "The Smart App Banner stays in head; Safari draws it above the headrace beam. Apple's badge is never redrawn: it sits on a recessed walnut plate inside the red-orange inlet beam, with full clear space. The QR (assets/qr/millrace.svg) sits on a white enamel plate at the beam's right end, desktop ≥1024px only. The price statement is price.value, set on the beam; the plans come later on the toll board. Sticky bar: once the inlet beam leaves the viewport, a 64px copy of it pins to the bottom edge (#B83F24 with walnut end caps). It holds the icon 32px, 'Millrace — Free, no ads' in Alegreya Sans 700 16px and the badge 40px. It runs full width on mobile and 720px centred on desktop, and hides while the vault beam is in view. Closing CTA: the green VAULT beam at the foot of the race, with 'Deliver it to your iPhone or iPad' (Rokkitt 700 40px), price.value, badge and QR. The comparison table's inline CTA is a short red-orange beam with the badge under the footnote.",
+   "visitorPath": [
+    "Headrace beam (nav): icon, wordmark, pre_headline as its descriptor (never an eyebrow), five anchor links",
+    "Hero reach: H1 (hero.headline), hero.secondary, Level 58's arrival queue as six floating tiles (screenshot 1), then the red-orange INLET BEAM carrying price.value, the badge and the desktop QR",
+    "Beam 'Millrace in one paragraph': quick_answer as the visible Quick Answer (speakable) at 22px on water, 68ch. Under it the ai-canonical Quick reference <details> is a hatch hinged to the beam's underside: summary always visible, content in the HTML",
+    "Beam carrying about_heading (anchor: level): the board in plan, an HTML/CSS replica of screenshot 1's exact position (walnut frame; tiles 16 16 / 4 8 / 16 / 4 4; the vault cell ghosting 64 under its green marker; the red-orange inlet marker). Two labelled leader lines ('Inlet: keep it clear', 'Vault: exactly 64') sit beside hero.subheadline, features[1] and the body's opening three paragraphs",
+    "Beam 'What a level has to survive before it ships.' (how_it_works.heading; anchor: gate): the intro, then the four steps as four stop-logs numbered 1–4 because the order is real (HowTo), each with its full detail. The 1,000-candidate field sits upstream (signature). The body's 'manufactured, then tested' section follows with the journal figures (280 strategies, 2% random-play ceiling, one to eight in a thousand)",
+    "The staff gauge (anchor: depth): the six chapters as graduations on the enamel depth board, each reading tier, proven shortest, level count and budget, from 'Warm-up · 5 · 4 levels · budget 7' to 'Mastery · 10–16 · 12 levels · budget 12–16'. Beside it: value_points[2] 'A difficulty curve that is measured' and 'the deepest level needs all 16 of its 16 moves'",
+    "Moorings: the nine screenshots in iPhone bezels floating in a horizontal scroll-snap row, each caption on a small painted mooring board. Prev/next pegs are buttons; without JS it is a plain scrollable row",
+    "Beam 'Why it is built this way': value_points 0, 1 and 3 as three unboxed statements on the water (Rokkitt 700 32px title, Alegreya Sans 19px description)",
+    "Beam carrying example_insights.heading 'One habit at a time, in one true sentence.' (its overline dropped): the intro, then the five Coach and Hint lines on small walnut plaques hung down the right wall in reading order, each with its tag and body",
+    "Beam 'Everything in the race': features (9) as a ruled list on water, titles in Rokkitt 700 22px and descriptions in Alegreya Sans 18px",
+    "The toll board (anchor: prices): the miller's painted walnut board listing Free $0 'The whole game' with its seven inclusions, Theme packs $1.99 each with the four packs, Complete Collection $5.99, and Undo bundles 10/50/200 with the streak payouts. plans_footnote and pricing_note follow in 15px on water",
+    "Beam 'Against the other puzzles' (anchor: compare): comparison_table.intro, then the 9-row table on oak (#EBC98F, ink 11.6:1) with walnut column heads and the Millrace column ruled in vault green. The dated footnote and a short inlet beam with the badge (cta_label) follow, then alternatives_to as links to the five /alternatives/ pages",
+    "Two painted boards: who_for ('It fits if…') and who_not_for ('It doesn't fit if…'), side by side on desktop and stacked on mobile",
+    "The millwright's plate (founder, overline dropped): heading as H2, bio, the six signals with the app count computed from site.apps, support email and response time, and the studio backstory link",
+    "Beam 'Questions' (anchor: faq): the ten FAQ entries as <details> rows on shallows, split by plank seams, the first one open",
+    "Beam 'Nothing leaves the race': privacy.app_privacy_label, the seven notes, and the staff gauge reading the transparency row (tracking domains 0, third-party SDKs 0, account none, leaves device: no). Links go to /transparency/, the privacy policy and support",
+    "Related journal: a long walnut plank linking 'Sixty-four levels, none written by hand — how Millrace proves them'",
+    "'You might also like': other Lagerland apps as small icons with names floating downstream (from site.apps)",
+    "The green VAULT beam: closing CTA with price, badge and QR. Under it, the maker/freshness line: Built by Lagerland Apps · updated 24 Sep 2026 · first released 24 Sep 2026 · v1.0",
+    "Tailrace: the shared 'A Lagerland app' footer strip"
+   ],
+   "navigation": "The headrace beam: wordmark and icon (linking to top) and five anchor links set into the walnut in #F7E4BF type. On mobile a 'Menu' peg opens a <details> drop, a walnut board hanging under the beam with the same links at 20px, and needs no JS. The beam scrolls away with the page; the sticky inlet bar is the only pinned element. Focus is a 3px #1F1209 ring with a 2px #F7E4BF gap on water, inverted on walnut.",
+   "signatureInteraction": "'The gate.' In the how_it_works reach, one inline SVG holds 1,000 tiny amber squares, one per candidate level, floating upstream of four stop-log grooves. Each step is a stop-log. As a step scrolls into view, IntersectionObserver adds .seated and its log drops 24px into the groove in 220ms. When the fourth is seated, the field sinks to 6% opacity except a handful of squares that pass under the gate and stay lit, captioned 'Roughly one to eight candidates in a thousand survive, depending on the chapter.' Which squares pass is illustrative and labelled so. No-JS: the logs render seated, the field already sunk, the survivors lit, and every step's text present. Reduced motion: final state at once, no drops.",
+   "motionGrammar": "Everything moves downstream or not at all. In the hero reach only, the caustic layer drifts down 1,400px in 40s (linear, looping) and the queue tiles bob 2px on a 6s ease-in-out loop. Stop-logs drop once, vertically, and the sticky inlet bar rises from the bottom edge in 220ms. Beams, gauge and text never animate, and nothing fades in on scroll. prefers-reduced-motion: still water, static tiles, logs already seated.",
+   "readModeVariant": "Privacy, support and the five alternatives pages (Threes, KAMI 2, Flow Free, Two Dots, Suika Game) are a quieter side race: the same walnut walls and headrace beam nav. The page title sits on a walnut beam (Rokkitt 800, 44px / 30px). The reading column is the shallows (#F0C77A) in Alegreya Sans 400 19px/1.65 at 66ch, ink 11.5:1, with no caustics and no tiles. Alternatives pages open with two short beams naming each game and what it asks ('Millrace: deliver one exact value' / 'Threes: survive an endless board'). The table is set on oak with walnut heads, the FAQ is <details> rows split by plank seams, and the page closes on a small inlet beam with the badge. Privacy opens with the staff gauge reading the transparency row, linked to /transparency/. Support is the millwright's plate: email, response time and restore-purchase steps.",
+   "assetsNeeded": "None. Walls, water, beams, logs, gauge and tiles are CSS and inline SVG. It uses assets/icons/millrace.png, the nine screenshots and assets/qr/millrace.svg. The board replica copies only what screenshot 1 shows (Level 58 mid-game) and is captioned as such.",
+   "risk": "This is the literal reading. It can tip into theme-park water and turn the page into a picture of the icon, so every reach must work as set text on water, with beams carrying real headings and actions. A long amber drench tires the eye on dense sections, which is why tables and FAQ answers move to oak and shallows. The world sits close to the app's own amber screens; that helps recognition but risks reading as one giant screenshot. The narrow single channel leaves wide desktop margins quiet by design. A linen bank must never creep in, or the page falls into the cream cluster.",
+   "memoryTest": "A website that was a wooden water channel full of amber water. Numbered tiles were queued against a red-orange gate where the download button was, and a green gate at the bottom 'delivered' it to my phone. A thousand little squares went into the sluice and about eight came out.",
+   "specimen": {
+    "bg": "#E2A03F",
+    "ink": "#1F1209",
+    "accent": "#B83F24",
+    "display": "Rokkitt",
+    "dw": 600,
+    "text": "Alegreya Sans",
+    "h1": "Sixty-four levels. One inlet. Nothing is random.",
+    "sub": "A delivery puzzle: one inlet, one exact target, one move budget.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Set pawza-a in Anek Latin, unused elsewhere: wdth 75 for the index tabs and H1, wdth 100 for text. Re-colour the polypropylene as a translucent red file (~#B5332B, white text 5.6:1), and keep the white paper and the yellow 'To file' flag. tare-a keeps the blue triad, because Signboard Sky is the app's own art."
+    },
+    {
+     "sev": "major",
+     "text": "Print the tiles flat, as on millrace-b/c's diagrams: one fill, ink numerals, no gradient and no side face. Let the stop-logs, the staff gauge and the beams carry the depth. Darken the water toward tea-brown (~#B07A2E) away from the reading column, so the tiles read as objects in water, not as a beige-orange grid."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Run one drift pass of 5s or less on first view, or add a visible 'Still the water' toggle to the headrace beam that persists. Let the tiles settle after two bobs. Draw the field of 1,000 candidates as a single <path> or <pattern>, not 1,000 <rect> elements."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "Turn the Card",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "Boxed single-player logic games and their challenge decks, such as Binary Arts/ThinkFun's Rush Hour (1996) and its stablemates. One board and a deck of numbered challenge cards graded in colour tiers from Beginner to Expert, setup on the front and solution on the back, in a vacuum-formed tray inside the box with a folded rule sheet. Lineage only: no ThinkFun names, trade dress or card art.",
+   "thesis": "Every Millrace level is a challenge card whose front is the closed problem and whose back is its proof. The page lays one card on the box tray, lets you turn it over, and unfolds the rule sheet beneath. It refuses the phone-mockup hero: the product's real claim, a proven shortest solution, is printed on the back of a card.",
+   "scene": "A kitchen table by a window in daylight, the game box open on its cobalt plastic tray and the first card already dealt on white card stock. Light scheme (color-scheme: light): the tray is a saturated mid-dark ground, but every reading surface is white card.",
+   "scheme": "light",
+   "colorStrategy": "Full palette",
+   "palette": [
+    {
+     "hex": "#23408E",
+     "role": "Tray cobalt (vacuum-formed insert): page ground, rim-strip nav, sticky bar. White type on it 9.6:1"
+    },
+    {
+     "hex": "#FCFBF7",
+     "role": "Card stock: every card face and the rule sheet. Ink on it 17.3:1"
+    },
+    {
+     "hex": "#15171C",
+     "role": "Ink: all text on card and sheet; also the Mastery tier band (white text)"
+    },
+    {
+     "hex": "#F2C230",
+     "role": "Tier bands, one per chapter: Warm-up #6CC3E8, Tactics #3DA35D, Pressure #F2C230, Precision #EE7A2F (ink on the four light bands ≥5.6:1), Deep Water #0F6E74 (white 6.0:1), Mastery #15171C"
+    },
+    {
+     "hex": "#D2462F",
+     "role": "Inlet marker (the app's red-orange) on card diagrams; 4.4:1 on card as a graphic"
+    },
+    {
+     "hex": "#1F8A5F",
+     "role": "Vault marker (the app's green) on card diagrams and the round 'proven' seal on card backs; 4.2:1 as a graphic"
+    },
+    {
+     "hex": "#F5C35C",
+     "role": "Tile amber: tiles printed on card diagrams, with #15171C numerals"
+    }
+   ],
+   "type": {
+    "display": "Gabarito 800/900 (@fontsource/gabarito, ~20 KB per weight). A sturdy geometric with open counters and toy-box weight whose numerals hold both at card-corner size (24px) and at 120px. Its name is Portuguese for 'answer key'. Sets the tray-printed H1 (88px desktop / 40px mobile, 900), card indices, tier bands and rule-sheet panel titles (36px, 800).",
+    "text": "Figtree 400/600 (@fontsource/figtree, ~11 KB per weight). A plain, friendly geometric grotesque for rule-sheet instructions at 18px/1.6 and card copy at 15–16px, with 600 for card facts and the price statement.",
+    "utility": "None. Moves, budgets and odds use Gabarito tabular figures.",
+    "rationale": "About 63 KB. Printed game components pair one chunky face for numbers and titles with one plain face for instructions, and neither face appears on a sibling microsite."
+   },
+   "materials": [
+    "Cobalt vacuum-formed tray: flat #23408E with a moulded well around the hero card (inset shadow 0 2px 0 rgba(0,0,0,.25), 1px top highlight, 24px radii)",
+    "White card stock with die-cut 14px corners, a 1px #E6E2D8 edge and a soft 0 10px 24px shadow on the tray",
+    "The deck stack under the hero card: 64 stepped 1px edges whose colours follow the real chapter sizes (4 sky, 12 green, 12 yellow, 12 orange, 12 teal, 12 black)",
+    "Tier bands: a 44px coloured band across each card's top with the tier name and card number",
+    "Flat-printed board diagrams: cells #EDE7DA, amber tiles with ink numerals, the inlet as a red-orange bar on its edge cell, the vault as a green bar with the target ghosted in its cell",
+    "The rule sheet: one long white sheet with accordion creases (1px line + 24px soft gradient) between panels, each panel headed by a tier-coloured band",
+    "A round green 'proven' seal printed on card backs"
+   ],
+   "firstViewportDesktop": "1440×900, cobalt tray. y 0–60: the tray's rim strip, with icon 36px, 'Millrace' in Gabarito 900 24px white and pre_headline in Figtree 14px at x 64. At right, six white index tabs with tier-coloured top edges: 'Rules', 'The deck', 'Proof', 'Prices', 'Compare', 'Questions' (Figtree 600 14px ink). y 92–268: H1 printed on the tray in Gabarito 900 88px/1.0 white, centred, two lines: 'Sixty-four levels. One inlet.' / 'Nothing is random.' y 300–780: a centred triptych on one axis. Centre: the hero card, Card 1 · Warm-up, portrait 340×476 at x 550–890 in its moulded well, with the deck's 64 stepped edges showing below and to the right. Its front carries a sky band 'WARM-UP · 1', a 4×4 diagram at 260px, 'Build exactly 16 on the marked cell', '3 tiles arriving' with three queue boxes, 'Budget 7 moves', and a corner button 'Turn over'. Left of the card (x 140–480, top-aligned to it): hero.secondary in Figtree 400 22px/1.45 white. Right of the card (x 960–1300): a white printed sticker block, 340×300, holding 'Free — the whole game' (Gabarito 800 28px ink), 'optional theme packs & undo tokens' (Figtree 16px), the App Store badge 54px and the QR 120px with 'Scan to put it on your iPhone'. Everything sits above the fold. y 800–900: the rule sheet's first crease rises into view. Below 1100px the triptych collapses to one centred column (card, then sticker, then text).",
+   "firstViewportMobile": "390×844. y 0–52: rim strip with icon 28px and 'Millrace' 20px. y 52–92: the six tabs as a horizontally scrolling strip. y 108–268: H1 in Gabarito 900 40px/1.02 white, four lines, centred. y 288–652: the hero card at 260×364, centred, with the deck edge below it; diagram 200px, facts in 14px. y 672–780: price statement (Gabarito 800 22px white, plus a Figtree 15px line) and the badge 48px, centred. No QR. hero.secondary follows below the fold.",
+   "conversion": "The Smart App Banner sits in head. The official badge is printed on a white sticker block on the tray, never redrawn: black on white with clear space. The QR shares that sticker on desktop (≥1024px) only. The price statement is price.value, set in Gabarito on the sticker. Sticky bar: when the sticker leaves the viewport, a 60px cobalt rim strip rises from the bottom with the icon, 'Millrace · Free, no ads' (Figtree 600 16px white) and the badge 40px, and hides over the closing block. The plans reappear as the rule sheet's price panel. Closing CTA: 'The other 63 cards are on the App Store', with the deck back lying face-down on the tray beside the badge, QR and price. The comparison's inline CTA is a badge strip printed under the table.",
+   "visitorPath": [
+    "Tray rim strip: icon, wordmark, pre_headline as descriptor, six index-tab anchor links",
+    "Hero: H1 printed on the tray; Card 1 (Warm-up) in its well with the deck's 64 stepped edges; hero.secondary at left; the price/badge/QR sticker at right",
+    "The same card turned over (signature): Level 1's proof. Shortest solution 5 moves, proven by breadth-first search; budget 7; random play wins 1.31%, computed exactly; all 280 no-lookahead strategies fail it. Carries the green 'proven' seal",
+    "Rule-sheet panel 'Millrace in one paragraph': quick_answer as the visible Quick Answer (speakable), then the ai-canonical Quick reference <details> as a folded flap whose summary is always visible",
+    "Panel titled with about_heading (anchor: rules): the body's opening paragraphs and hero.subheadline, with two cards lying on the sheet edge, 'Blocked inlet' and 'Overshoot', each a card-front diagram with its sentence from features[1]. Diagrams are labelled illustrative",
+    "Panel 'The deck' (anchor: deck): the six chapters as six tier cards fanned on the tray, overlapping at ±6° (a fan, not a grid). Each face shows tier, level count, proven shortest (5, 6, 7, 8, 9, 10–16) and budget range from the journal table. value_points[2] sits under the fan",
+    "Panel carrying how_it_works.heading (anchor: proof): the intro and the four steps as a numbered 1–4 diagram strip (real order, HowTo): candidate card, solver, 280 strategies, tier. Journal figures sit in the margin: one to eight in a thousand survive; random-play ceiling 2%",
+    "Panel 'What's in the box': features (9) as the box-side contents list with tick boxes, plus value_points 0, 1 and 3 as three lines printed on the box side",
+    "Screenshot strip: the nine screens in iPhone bezels on the tray in a horizontal scroll-snap row, with captions as printed labels",
+    "Panel carrying example_insights.heading (overline dropped): the intro, then the five Coach and Hint lines as small tip cards along the sheet edge, each tag on a tier band",
+    "Panel 'Prices' (anchor: prices): plans as a printed price list. Free first, marked 'The whole game', with its seven inclusions; then Theme packs, Complete Collection and Undo bundles, followed by plans_footnote and pricing_note",
+    "Panel 'Compare' (anchor: compare): comparison_table intro, the ruled table with the Millrace column on a sky band, the footnote, a badge strip, and alternatives_to linking the five /alternatives/ pages",
+    "Panel 'Who it's for': who_for and who_not_for as two columns of tick and cross boxes",
+    "Panel carrying the founder heading as H2 (overline dropped): bio, signals with the count computed, support email and response time, and the studio backstory link",
+    "Panel 'Questions' (anchor: faq): ten <details> rows",
+    "Panel 'Nothing in this box is collected' (privacy): app_privacy_label, the notes, transparency-row values, and links to /transparency/, the privacy policy and support",
+    "Related journal panel: link to the essay on how the levels are made",
+    "'You might also like': other Lagerland apps as small icon chips on the tray",
+    "Closing tray: the deck back face-down with badge, QR and price; the maker/freshness line printed on the rim",
+    "Shared Lagerland footer strip"
+   ],
+   "navigation": "The tray's rim strip carries six index tabs (white card, 4px tier-colour top edge in chapter order), as plain anchor links. Past the hero the strip pins to the top at 48px on cobalt, and the tab for the panel in view lifts 4px. On mobile the tabs become a horizontal scroll row under the wordmark. Focus is a 3px white ring with a 2px cobalt offset on the tray, and a 3px ink ring on cards.",
+   "signatureInteraction": "'Turn it over.' The hero card is a <button aria-pressed> holding two faces. Click, tap or Enter turns it on the Y axis (CSS 3D, rotateY 180°, 520ms, perspective 1200px) to reveal the back. The back reads: 'Shortest solution: 5 moves, proven by breadth-first search over every position. Budget: 7. Random play wins this card 1.31% of the time, computed exactly. All 280 thoughtless strategies fail it.' It carries the green 'proven' seal, and a second press turns it back. The fanned tier cards turn the same way to show each chapter's depth and budget. No-JS: without html.js, front and back render as two cards side by side (stacked on mobile) labelled 'Front' and 'Back' on the tray, so every word is visible. Reduced motion: the faces swap with no rotation.",
+   "motionGrammar": "Cards move like cards. A turn is on the Y axis (520ms, cubic-bezier(.3,.7,.2,1)). On first view the six tier cards deal from the deck's position along a short arc, 60ms apart and 260ms each (html.js only; the static fan is the default), and the sticky rim strip rises in 200ms. Nothing loops, floats or parallaxes. prefers-reduced-motion: no deal, and the turn becomes an instant face swap.",
+   "readModeVariant": "Privacy, support and the five alternatives pages show only the rule sheet on the tray, with no hero card; the tab rim strip stays. The title is printed on a tier band at the sheet's head (Gabarito 800, 44px / 30px), and the reading column is the white sheet in Figtree 400 18px/1.65 at 66ch, ink 17:1. Alternatives pages open with two cards face-up: Millrace's Card 1 and a plain typographic card for the competitor ('Threes · endless board · next-tile hint'), with no competitor art or logos. Then come the real table, the honest verdict as two tick-box columns, FAQ <details> and a badge strip. Support is a 'Missing a piece?' panel with email, response time and restore-purchase steps. Privacy opens with a 'Contents of this box' list that reads the transparency row (data collected: none · tracking domains: 0 · third-party SDKs: 0 · account: none), linked to /transparency/.",
+   "assetsNeeded": "Data, not art: the start position (board, inlet edge cell, vault cell, arrival queue) of Level 1 and of one level per chapter for the tier fan, exported from the app's level library. Until then, Card 1's diagram takes its tiles from the Level 1 thumbnail in screenshot 2, the three queue boxes show the count only, and the inlet and vault placement carries a printed 'illustrative layout' note. Every other card fact is already sourced: target 16, 3 arriving, shortest 5, budget 7, random 1.31%. Otherwise it uses the existing icon, screenshots and QR.",
+   "risk": "Familiar: a challenge-card deck is the first physical analogue anyone reaches for with a level-based puzzle. That is why it tops the list and also why it is the least surprising, and ThinkFun's trade dress must be kept at arm's length. Six tier colours on a cobalt tray can read juvenile, louder than the studio's calm voice. The card diagram is only as honest as the level data behind it, and the turn is the page's single proof device, so it must stay fast and keyboard-operable. The triptych hero must not collapse into a copy/product split at mid widths.",
+   "memoryTest": "A blue game-box page with one white challenge card in the middle. I turned it over, and the back said the shortest solution was 5 moves, proven, and that random play wins 1.31% of the time.",
+   "specimen": {
+    "bg": "#23408E",
+    "ink": "#FCFBF7",
+    "accent": "#F2C230",
+    "display": "Gabarito",
+    "dw": 800,
+    "text": "Figtree",
+    "h1": "Sixty-four levels. One inlet. Nothing is random.",
+    "sub": "A delivery puzzle: one inlet, one exact target, one move budget.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Left-align the H1 on the tray rim. Deal one card at true scale, off-axis, and lay its back (the proof) beside it once turned. Print the price and badge on the tray's own moulded label area instead of a third box. Re-mould the tray in black or smoke grey (~#1E2024) so the six tier colours carry the colour."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Put the price statement and badge directly under the H1 (about y280) with the card after them, or shrink the card to about 200x280 so the badge clears y560."
+    },
+    {
+     "sev": "major",
+     "text": "Form the tray in the icon's walnut #3B2616 (white on it is 14.2:1), the app's own wooden race. Card stock, tier bands and sticky strip are unchanged."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "Par Is Proven",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 6,
+   "lineage": "Golf's paper: the club scorecard and the tour yardage book. The scorecard has HOLE, YARDS, PAR and STROKE INDEX rows, OUT and IN subtotal columns, the marker's and player's signature boxes, and local rules printed on the back. The yardage book is a pocket book with a measured plan of every hole and distances pencilled to the yard. It is grounded in the app's own copy, 'the par you are chasing is a computed fact rather than an estimate'. Tee red and the green are the app's inlet and vault colours.",
+   "thesis": "The page is the scorecard for a 64-hole course whose par was computed, not assigned. The hero prints the PAR row across all 64 holes (five, five, five, five, then twelve sixes, through to 10–16), and the rest of the page is the back of the card and the yardage book. It refuses the gradient-and-phone puzzle page for a document a player fills in with a pencil.",
+   "scene": "A player at the first tee on a bright overcast morning, card and pencil in hand: cool white card stock printed in two inks, course green and black, with grey pencil marks. Light scheme only (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Restrained",
+   "palette": [
+    {
+     "hex": "#FBFBF8",
+     "role": "Card stock: the page ground and every surface"
+    },
+    {
+     "hex": "#1C5B3A",
+     "role": "Course-green ink: H1, row labels, par row, rules, section heads. 7.8:1 on card"
+    },
+    {
+     "hex": "#121412",
+     "role": "Black ink: body text and table figures. 17.9:1"
+    },
+    {
+     "hex": "#4F5357",
+     "role": "Pencil graphite: pencilled annotations (Kalam) and the blank YOU row's rules. 7.5:1"
+    },
+    {
+     "hex": "#CFE3B8",
+     "role": "Fairway: the highlighted hole column, the Millrace column in tables, yardage-book fills. Ink on it 13.5:1, green on it 5.9:1"
+    },
+    {
+     "hex": "#C7372B",
+     "role": "Tee red: the inlet marker on drawn boards and the chapter-start tee glyph. 5.1:1"
+    },
+    {
+     "hex": "#F3C318",
+     "role": "Flag yellow: the pin flag on the vault in drawings and the selected-hole marker only. Ink on it 11.1:1"
+    }
+   ],
+   "type": {
+    "display": "Antonio 700 (@fontsource/antonio, ~11 KB). A bold condensed gothic in the line of the Trade Gothic Bold Condensed headers printed on scorecards, narrow enough to fit 64 hole numbers across one row. Sets the uppercase H1 (128px/0.9 desktop, 58px mobile), the row labels HOLE, PAR, MAX and YOU, and section heads (44px).",
+    "text": "News Cycle 400/700 (@fontsource/news-cycle, ~13 KB per weight). A News Gothic revival, the face of printed tickets, forms and scorecard small print. Body 18px/1.6, local rules 17px, table cells 15px with 700 for figures.",
+    "utility": "Kalam 400 (@fontsource/kalam, ~22 KB). A pencil hand used only where a person writes on the card: the Coach and Hint lines pencilled into the yardage-book margin (real app strings) and the marker's initials. Never for any number the page asserts.",
+    "rationale": "About 60 KB across four files. A condensed gothic plus News Gothic is how scorecards are actually printed, and the pencil marks the one thing on a card that is not printed. No sibling uses any of the three."
+   },
+   "materials": [
+    "Cool white card stock with a fine paper tooth (inline SVG noise at 3%) and fold creases where a scorecard folds (1px line + 16px soft shadow)",
+    "A heavily ruled scorecard grid: 1.5px green outer rules, 0.75px inner rules, condensed caps row labels, and a subtotal column after each chapter",
+    "Pencil: graphite strokes in Kalam #4F5357 and pencil underlines drawn as SVG paths with a jittered stroke",
+    "Yardage-book drawings: a featured level's board in 1.5px ink line, fairway-green empty cells, amber tile squares with ink numerals, a red tee marker at the inlet edge, a yellow flag pinned in the vault, and measured callouts in the margin (par, max, arrivals)",
+    "The signature box row: three ruled boxes (MARKER · PLAYER · DATE on a real card) used as PRICE · DOWNLOAD · SCAN",
+    "A punched hole with a pencil loop at the card's top-left corner (CSS), the only ornament"
+   ],
+   "firstViewportDesktop": "1440×900, card-white ground. y 0–56: the card's header strip with a green rule beneath. At left: icon 32px, 'MILLRACE' in Antonio 700 22px green, and 'Tile delivery puzzle for iPhone & iPad · 64 holes · par proven by exhaustive search' in News Cycle 15px. At right: 'THE CARD · LOCAL RULES · HOW PAR IS SET · FEES · QUESTIONS' in Antonio 700 15px, +0.04em. y 88–316: H1 'SIXTY-FOUR LEVELS. ONE INLET. / NOTHING IS RANDOM.' in Antonio 700 128px/0.9 green, two lines, x 96, full width. y 332–360: hero.secondary as one News Cycle 20px line. y 392–604: THE CARD, 1248px wide at x 96. Rows: HOLE (1–64 in ~16px cells, plus six 40px chapter subtotal cells); CHAPTER (six bracketed spans, Warm-up to Mastery); PAR (5 5 5 5 | 6×12 | 7×12 | 8×12 | 9×12 | a 12-cell bracket '10–16') with subtotals 20 · 72 · 84 · 96 · 108 · —; MAX (7 | 8 | 8–9 | 9–10 | 9–11 | 12–16 as chapter brackets); YOU (a blank pencil row). Under the card, a key in News Cycle 14px: 'Par = the proven shortest solution. Max = the move budget.' y 628–740: the signature box row across the card width. PRICE (440px) holds 'Free — the whole game' in News Cycle 700 22px plus 'optional theme packs & undo tokens'. DOWNLOAD (400px) holds the official badge 56px, centred. SCAN (360px) holds the QR 104px with 'Point your iPhone camera here' 13px. y 760: a fold crease, with LOCAL RULES starting below the fold.",
+   "firstViewportMobile": "390×844. y 0–48: header strip with icon 28px, 'MILLRACE' 20px and 'Menu' at right. y 68–300: H1 in Antonio 700 58px/0.92 green, uppercase, five lines. y 312–356: hero.secondary in News Cycle 16px, two lines. y 376–480: the signature box row folded into one box, with the price statement (News Cycle 700 18px) above the badge 48px; no QR. y 500–844: the card folded into chapter strips. Each strip has a 32px chapter header ('WARM-UP · HOLES 1–4 · PAR 20') over a HOLE row and a PAR row of up to 12 cells at 26px. Warm-up and Tactics sit above the fold, and Pressure is cut by it.",
+   "conversion": "The Smart App Banner sits in head. The official badge is printed in the card's DOWNLOAD box, unaltered and with clear space. The QR fills the SCAN box, desktop ≥1024px only. The price statement is price.value in the PRICE box; the plans return as FEES on the back of the card. Sticky bar: when the box row leaves view, a 60px strip of the same boxes, shrunk, pins to the bottom on card white with a green top rule, showing price (News Cycle 700 15px) and the badge 40px, with the QR omitted. Closing CTA: 'Sign for your card', the box row again at full size with price, badge and QR, and the maker/freshness line as the card's small print. The comparison table's inline CTA is a single DOWNLOAD box under the footnote.",
+   "visitorPath": [
+    "Card header strip: icon, wordmark, pre_headline folded into the descriptor line, five uppercase anchor links",
+    "Hero: H1 (hero.headline) in condensed green caps; hero.secondary as one line",
+    "THE CARD (anchor: card): the 64-hole scorecard with HOLE, CHAPTER, PAR, MAX and a blank YOU row, chapter subtotals (20 · 72 · 84 · 96 · 108 · —) and the key line. This is the signature interaction",
+    "Signature box row: PRICE (price.value), DOWNLOAD (badge), SCAN (QR, desktop)",
+    "Course description box: quick_answer as the visible Quick Answer (speakable), then the ai-canonical Quick reference <details> as the card's folded flap, summary visible",
+    "LOCAL RULES on the back of the card (anchor: rules; about_heading as the panel title): the body's opening paragraphs and hero.subheadline set as rules. 'The inlet': block it and the next arrival has nowhere to land. 'Exact delivery': overshoot and the value is gone. 'Max': the budget, never more than two over par and equal to it on two levels. 'Nothing is random': the whole queue is in view. 'Freeplay': the endless board, no par",
+    "HOW PAR IS SET (how_it_works.heading; anchor: par): the intro and the four steps numbered 1–4 (real order, HowTo) down a ruled column, each with its detail. The margin carries the journal's figures: 280 strategies, 2% random-play ceiling, one to eight in a thousand survive",
+    "THE YARDAGE BOOK: three featured holes as pocket-book pages in ink line with measured callouts, each beside its real screenshot in an iPhone bezel. Hole 1 (Warm-up): exactly 16, 3 arriving, par 5, max 7, random play 1.31%. Hole 44 (Deep Water): exactly 64, 9 arriving, par 9. Hole 58 (Mastery): screenshot 1's mid-round position, exactly 64, 8 moves left",
+    "Course notes: value_points (4) as four ruled notes with headings",
+    "The caddie (example_insights.heading, overline dropped): the intro, then the five Coach and Hint lines pencilled in Kalam in the yardage-book margin, each with its tag and its body in News Cycle",
+    "On the course: screenshots 2, 3, 5, 6, 7, 8 and 9 in a horizontal scroll-snap strip with printed captions",
+    "Course facilities: features (9) as a ruled two-column list",
+    "FEES (anchor: fees): 'Green fee: none' is the Free plan, with its seven inclusions and highlight_label. Then the pro-shop list: Theme packs $1.99 each (four packs), Complete Collection $5.99, Undo bundles 10/50/200 with streak payouts. plans_footnote and pricing_note follow as small print",
+    "OTHER COURSES (anchor: compare): comparison_table as a ruled scorecard grid with the Millrace column on fairway, the dated footnote, a DOWNLOAD box, and alternatives_to linking the five /alternatives/ pages",
+    "Members / Not for you: who_for and who_not_for as two ruled columns",
+    "The course designer (founder, overline dropped): heading, bio, signals with the count computed, support email and response time, studio backstory link",
+    "QUESTIONS (anchor: faq): ten <details> rows ruled like card rows",
+    "Local rule, nothing leaves your pocket (privacy): app_privacy_label, the notes, the transparency-row figures, and links to /transparency/, the privacy policy and support",
+    "Related journal: 'How the par is proven', linking the essay (related_journal.anchor as the link text)",
+    "You might also like: other Lagerland apps as a ruled list with icons",
+    "Sign for your card: the closing box row (price, badge, QR) with the maker/freshness line as small print",
+    "Shared Lagerland footer strip"
+   ],
+   "navigation": "The card's header strip: wordmark and five uppercase anchor links in Antonio 700, green on white, with a 2px green underline on hover and focus. It is not sticky; the box-row bar is the only pinned element. On mobile, 'Menu' opens a <details> panel ruled like a card row, with the links at 20px. Focus is a 3px #1C5B3A outline with a 2px white offset everywhere, and focusable table cells also take the fairway fill.",
+   "signatureInteraction": "'Hole by hole.' Every hole number on THE CARD is a focusable button. Hovering, focusing or tapping one fills its column fairway-green, drops a flag-yellow marker above it, and writes a readout under the card such as 'Hole 23 · Pressure · par 7, proven · max 8–9'. The readout uses chapter values now, and per-hole target, arrivals, exact budget and random-play odds once the level table is supplied. Arrow keys move along the row. Chapter brackets jump to the yardage pages, and holes 1, 44 and 58 have full pages. No-JS: the card is a complete, readable <table> with th scope, the readout line shows the key statically, and the links still jump. Reduced motion: the column fills with no transition.",
+   "motionGrammar": "Paper does not move. The only motion: the hole-column fill (120ms), the flag marker settling 6px (160ms) and the sticky box row sliding up (200ms). The readout swaps text with no animation. There are no scroll reveals and no counters. prefers-reduced-motion: fills and the sticky row appear instantly.",
+   "readModeVariant": "Privacy, support and the five alternatives pages are the back of the card: the same header strip, then the title in Antonio 700 uppercase green (48px / 32px) under a crease. The reading column is the card itself in News Cycle 400 18px/1.65 at 66ch, black ink 17.9:1, with section heads in Antonio 700 28px green and tables ruled like the scorecard. Alternatives pages open with a two-player card: 'MILLRACE | THREES' columns with the rows What a game asks · Measure of success · Ads · Price · Privacy label, and a fairway fill on Millrace's column. After it come the existing comparison, the verdict as 'Play Millrace if / Play Threes if' columns, FAQ <details> and a DOWNLOAD box. Privacy opens with a 'Local rule' box that reads the transparency row and links to /transparency/. Support is 'Ask the starter': email, response time and restore-purchase steps.",
+   "assetsNeeded": "Data, not art: the 64-row level table (target, arrivals, proven shortest, budget, random-play odds) and the start positions of Levels 1 and 44, exported from the app's level library. Until then the card prints only what is already sourced: par by chapter (exactly 5 to 9; 10–16 for Mastery), max by chapter range, and the subtotals. The yardage pages draw only the tiles visible in screenshots 1, 2 and 4, with inlet and vault placement marked 'illustrative layout' where not visible. Otherwise it uses the existing icon, nine screenshots and QR.",
+   "risk": "Golf is a borrowed world with country-club connotations a puzzle audience may not share, and the metaphor has seams. The move budget is not golf's maximum-score rule, so the card must define Par and Max right under the grid. A 64-hole row is dense at 1440 (~16px cells), and the page depends on folding cleanly into chapter strips on mobile. An uppercase condensed H1 can shout against the studio's calm voice. If the rules, folds and pencil are weak, white card and green ink collapse into a generic form.",
+   "memoryTest": "A golf scorecard for a 64-hole course. The par row went five, five, five, five, then sixes and sevens, and it said par was proven by a computer. Tactics plays to par 72, and the download button was in the signature box.",
+   "specimen": {
+    "bg": "#FBFBF8",
+    "ink": "#121412",
+    "accent": "#F3C318",
+    "display": "Antonio",
+    "dw": 700,
+    "text": "News Cycle",
+    "h1": "Sixty-four levels. One inlet. Nothing is random.",
+    "sub": "A delivery puzzle: one inlet, one exact target, one move budget.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    }
+   ]
+  }
+ ],
+ "canon": "Canon (the category played straight; not recommended): a molten-amber gradient page with glossy 3D tiles floating around a centred iPhone playing Level 58. Above it, 'Sixty-four levels. One inlet. Nothing is random.' with the App Store badge and QR. Below, a four-stat row (64 levels · 6 chapters · 17 themes · 0 ads), a feature-card grid, the comparison table, then the FAQ.",
+ "notes": "Degraded roll: the roll service was unreachable, so there were no catalog challengers and no quality-bar boards. Key 214d9de3, assigned index 7, re-roll 1 = 6 (distinct on the first try). The candidate order was fixed before the roll. Mapping: A = candidate 7 (THE ROLL; the list's single literal reading, committed in full), B = candidate 1 (IMPECCABLE’S PICK, since neither N nor R1 is 1), C = candidate 6 (SECOND ROLL). Fonts were verified on Fontsource 5.3.0 via npm pack, latin woff2 per weight: Rokkitt 100–900 (~13 KB each), Alegreya Sans 100/300/400/500/700/800/900 (~24 KB), Gabarito 400–900 (~20 KB), Figtree 300–900 (~11 KB), Antonio 100–700 (~11 KB), News Cycle 400/700 (~13 KB), Kalam 300/400/700 (~22 KB). Per-page budgets are about 110 KB (A), 63 KB (B) and 60 KB (C). None of these faces appears in the sibling boards written so far (I deliberately avoided Public Sans, Albert Sans and the Big Shoulders family, which siblings already use). Facts the build must respect: (1) Inlet and vault colours are inferred from screenshot 1 (green bar beside the cell ghosting the 64 = vault; red-orange bar = inlet) and match the icon; confirm with the developer before any diagram ships. (2) Per-level start positions, queues and exact budgets are not in the repo, so B's card diagrams and C's per-hole rows need a level-table export; until then they show only sourced facts and say 'illustrative layout'. (3) Copy says 34 languages / 40 locales, but app_enrichment.yml lists 33 language codes; reconcile. (4) The founder signal '19 live apps' is a literal that matches today's 19 status: live apps; keep it in sync or compute. (5) hero.pre_headline and the founder/example_insights overlines must never render as eyebrows; each style folds them into a descriptor or drops them. (6) No testimonials and no ratings exist for Millrace, so no stars or quotes appear anywhere. (7) redirect_from /apps/zen-2048/ and /apps/calm-2048/ must survive the rebuild. Sibling watch: A's amber drench shares warmth with Allpaid's yellow poster and EarnLock's amber LED digits, but it is a water channel, not a sign or a display. B's cobalt tray and C's white-and-green scorecard collide with no board written so far. Candidate 3 (Hakone box) was flagged against Shogiful's Japanese-timber world and was not dealt.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

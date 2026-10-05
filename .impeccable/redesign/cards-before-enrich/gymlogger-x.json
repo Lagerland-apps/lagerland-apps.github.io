@@ -1,0 +1,274 @@
+{
+  "surface": "gymlogger-x microsite: /apps/gymlogger-x/ (Persuade) + /apps/gymlogger-x/privacy/, /apps/gymlogger-x/support/ and the alternatives pages that target it: /alternatives/strong-workout-app/, /alternatives/fitbod/, /alternatives/jefit/ (Read variants)",
+  "dossier": {
+    "mechanism": "GymLogger X makes the Apple Watch the actual training log. Sets, reps, RPE and rest are entered on the wrist while the phone stays in the locker. A published rule then reads that log and raises a plateau flag: Epley e1RM fails to clear a threshold set by your own 90-day rate of gain (clamped 0.05–1% per session) across four non-deload sessions, while volume holds within 3%. The flag lists possible causes and leaves the programming call to you. Free at the core, $39.99 to own Pro outright, no account.",
+    "audienceScene": "A lifter mid-session in a commercial or garage gym: phone in a locker or gym bag, Apple Watch on the wrist, 90–180 s of rest between sets under flat overhead LED/fluorescent light. The page itself is mostly read on that phone, after searching 'Strong app alternative' or 'Apple Watch strength training app': on the bench between sets, on the commute, or on the sofa that evening.",
+    "culturalHome": "Barbell culture: powerlifting meets (three referee lights, fault cards, attempt cards, Wilks/DOTS on the results sheet), RPE and %1RM charts taped to rack uprights, the paper training log in shorthand (80×6 @8), the community program spreadsheets (5/3/1, nSuns, GZCL, Sheiko, all built around a Training Max and a deload week, as the studio's own 5/3/1 journal post spells out), evidence-based lifting that argues from studies, and the changing room where the phone gets left.",
+    "mustProve": "In the first viewport: (1) the log lives on the wrist, not the phone; (2) the plateau rule is published and checkable, so show the rule (or run it), not a claim about it; (3) it is free to start and $39.99 once for everything, with no account, and the working App Store badge (plus the QR on desktop) is within reach.",
+    "categoryDefault": "Dark gym-app landing: near-black ground, neon green or electric-orange accent, an angled iPhone + Watch render or a muscular stock photo, 'Train smarter. Lift stronger.' (the app's own hero.secondary is exactly this line), three icon feature cards, a pricing table with a 'Most popular' ribbon, and star-rated testimonials.",
+    "predictableOpposite": "Soft wellness minimalism: pale pastel ground, rounded friendly sans, one floating phone, airy 'mindful movement' copy. Calm but indistinguishable from a habit or meditation app, and close to the retired Paper & Ink template.",
+    "literalReading": "'GymLogger' read literally is the paper logbook: a ruled notebook with handwritten sets. Candidate 3 (the lifter's notebook in shorthand) is the one candidate allowed to use it. It pictures what the wrist replaces, not the wrist.",
+    "evidence": [
+      "Price truth: price.model freemium; value 'Free — Pro from $1.99/mo, $17.99/yr, or $39.99 lifetime'; schema_price 0, schema_high_price 39.99, schema_offer_count 4. The plans are Free $0, Pro Monthly $1.99/mo, Pro Annual $17.99/yr (~25% cheaper) and Lifetime $39.99 one-time. Lifetime carries highlight_label 'Best value · ~1 in 3 pick this', break-even ~2.2 years and Family Sharing for up to 5. plans_footnote covers USD pricing, Apple refunds and no auto-renew.",
+      "Platforms iOS + watchOS (no Mac); status live; first_release 2025-09-01, last_updated 2026-05-13; ratings 4.8 from 17. That is below 25, so no stars and no aggregateRating anywhere.",
+      "Blocks present: hero (headline 'Strength training log for iPhone & Apple Watch.', secondary, subheadline, cta_label 'Download Free'), quick_answer, founder (Organization, Lagerland Apps, Finland, 3 signals, response time), plateau_disclosure (rule + what_it_does_not_do), how_it_works (3 steps, which become HowTo), value_points (4), features (6), who_for (6) / who_not_for (4), comparison_table (GymLogger X / Strong / Hevy / Fitbod × 7 rows, verified 2026-05-13), alternatives_to (Strong, Hevy, Fitbod, Jefit, Caliber, Heavyset), screenshots (6), privacy (collection none, tracking false, account false, 5 notes), coach_cta (/apps/gymlogger-x/coaches/), faq (11), related_journal. Absent: spotlight, roadmap, training_vocabulary, insight_gallery, show_body, hero.device.",
+      "transparency.yml: 0 third-party SDKs, 0 tracking domains, no account, no network calls for core logging (optional iCloud only), analytics none, sole permission 'Apple Watch connectivity'. 1,500+ exercises ship inside the app.",
+      "testimonials.yml: 5 real quotes. K.D. (App Store), P.O. (Reddit, on the import function), P.S. (Reddit), R.O. (App Store), M. (App Store, French, with English translation). Quotes may be used; their star fields must not be shown.",
+      "Developer's own reasoning (journal 'the-strength-logger-no-one-asked-for'): 'In the gym, your phone is in a locker, in a bag, on a bench, somewhere not on your body. Your watch is on your body.' Also: plateau detection 'informs without lecturing'; about 30% of paid users pick lifetime. The LiftLog post adds: 'live on Apple Watch and want speed → GymLogger X; live on iPhone and want polish → LiftLog'. So the sibling LiftLog owns polish and equipment, and GymLogger X owns the wrist, speed and the published rule.",
+      "App look: the icon is a navy #0f2f4a dumbbell bent into a U with a teal #3f8a8a check, on off-white. Dark navy UI screens: 1.png live Push Day with set chips, a green CURRENT card and an orange 00:47 rest ring; 2.png Progress Overview with a Plateau Detection list in orange 'Monitoring' and Training Balance push/pull 76:24; coach-hero.png coach profile. Light screens: 3.png PRs/Top 1RM; 4.png Push Day template with a superset; 5.png Training home; 6.png muscle-balance heatmap. SF Pro, with system green, blue and orange.",
+      "Asset gaps: no Apple Watch screenshot exists even though the Watch is the primary surface. All six screenshot alt texts describe screens other than the files (4.png's alt claims a Watch set screen; it is an iPhone template editor; 2.png's alt claims the Program Creator; it is the Progress overview).",
+      "Read surfaces: privacy page (seo block present; overview, data_collection, data_storage, third_parties, sensitive_data, children, changes), support page (seo present), and the Strong, Fitbod and Jefit alternatives pages (card-grid comparisons + FAQPage). The Hevy, Caliber and Heavyset pages target LiftLog. The Strong page's lead wrongly calls GymLogger X a 'native Mac-and-iPhone alternative'. Founder signal prose hard-codes '19 privacy-first apps', which must become a computed count. /apps/gymlogger-x/coaches/ also exists outside this surface list."
+    ]
+  },
+  "candidates": [
+    {
+      "index": 1,
+      "name": "Three White Lights (powerlifting meet judging)",
+      "family": "ritual / object (competition officiating)",
+      "why": "Every lifter has watched a meet clip end on the light board. It carries the mechanism exactly: independent calls (e1RM vs your own bar, volume held within 3%, a fatigue or six-session confirmation) must agree before a red 'no lift' verdict lights. The red light comes with a card naming the cause (frequency, recovery, exercise selection, technique), and the lifter, not the referee, chooses the next attempt. The three attempts also give an honest pricing form."
+    },
+    {
+      "index": 2,
+      "name": "The rack chart (RPE / %1RM table)",
+      "family": "notation / data graphic",
+      "why": "The RTS RPE chart and Epley %1RM tables are taped to rack uprights and known cell by cell. They carry the mechanism because the app's maths is that chart (e1RM = weight × (1 + reps/30), RPE first-class), and the plateau rule reads as the chart's own footnote. A table glanced at between sets is exactly what now lives on the wrist."
+    },
+    {
+      "index": 3,
+      "name": "The lifter's notebook in shorthand",
+      "family": "print / paper (handwritten log)",
+      "why": "This was the universal ritual before apps (Bench 80×6 @8, deloads bracketed, PRs circled) and it is the literal reading of 'Logger', so it is the rut's one allowed use. It carries the mechanism only weakly: the margin can annotate the plateau rule, but the page pictures the phone-free past rather than the wrist."
+    },
+    {
+      "index": 4,
+      "name": "The program spreadsheet",
+      "family": "screen / document grid",
+      "why": "Reddit-era lifters ran their training from passed-around 5/3/1, nSuns, GZCL and Sheiko sheets. These have yellow input cells for a Training Max, formulas rounding to 2.5 kg, week tabs, a deload tab and a formula bar where curious lifters checked the maths. They carry the mechanism because the plateau rule becomes a formula you can read, the prices and break-even become cells that show their working, and the app is the sheet that finally fits on a wrist."
+    },
+    {
+      "index": 5,
+      "name": "The study write-up (structured abstract)",
+      "family": "publication / print",
+      "why": "Lifters who track RPE and e1RM argue from studies (strength-science journals, evidence-based lifting sites). The format carries the mechanism through its sections: the plateau rule becomes Methods (Epley as a numbered equation), who_not_for becomes Limitations, 'no investors' becomes the Conflicts statement, and CSV export becomes Data availability. A published rule is literally a published method."
+    },
+    {
+      "index": 6,
+      "name": "The wrist play card",
+      "family": "textile + print (worn)",
+      "why": "This is the forearm call-card from American football: an elastic sleeve with a clear vinyl window over a grid of numbered calls, read between snaps. It is the one cultural object that is literally information worn on the wrist, so it carries watch-first directly (the playbook, here the phone, stays on the sideline). But it belongs to football, not barbell culture, so resonance with lifters is partial."
+    },
+    {
+      "index": 7,
+      "name": "The locker bank",
+      "family": "architecture / place",
+      "why": "This is the gym's changing room: powder-coated steel doors with pressed louvre vents, engraved name plates, a cam lock and the key on a coiled wrist band with a tag. It is the scene the developer's whole bet starts from ('your phone is in a locker… your watch is on your body'). It carries the mechanism because the phone is literally shut inside while the band on your wrist carries what you need on the floor, and the page can be that one locker door."
+    }
+  ],
+  "seed": {
+    "key": "ae47b3c0",
+    "assigned": 7,
+    "reroll1": 4
+  },
+  "styles": [
+    {
+      "id": "a",
+      "label": "Phone in the Locker",
+      "kicker": "THE ROLL",
+      "sourceIndex": 7,
+      "lineage": "Changing-room locker banks of municipal gyms and Nordic swimming halls. Powder-coated sheet steel (RAL 6033 mint turquoise is almost exactly the icon's check-mark teal), rows of pressed louvre vents at the top and foot of each door, and 8px dark seams between doors. Two-ply engraved laminate plates (navy face cut through to a white core) are screwed on with slotted screws. A pressed-steel card holder takes a slid-in label, and the cam lock's key hangs on a coiled plastic wrist band with a numbered tag. Inside: a hat shelf, a hook, laminated house-rules sheets, and the manufacturer's riveted data plate at the foot.",
+      "thesis": "The page is one locker door, and the phone is shut inside it. The App Store action hangs on the key's wrist band, the thing you actually carry onto the floor. This refuses the category's floating-phone neon hero by making the product's absence from the first viewport the argument.",
+      "scene": "A lifter in a gym changing room before a session, under flat cool fluorescent tubes: the phone goes onto the locker shelf, the key band goes onto the wrist. Deep painted steel with light lettering, so the scheme is dark (color-scheme: dark).",
+      "scheme": "dark",
+      "colorStrategy": "Drenched",
+      "palette": [
+        { "hex": "#235c58", "role": "powder-coat door: page ground for the hero, the wrist section and the closing (mint turquoise deepened for AA; off-white text 6.7:1)" },
+        { "hex": "#112b2c", "role": "locker interior: ground for the long middle after the door opens; also seams and louvre-slot shadows" },
+        { "hex": "#eef1ec", "role": "cut-vinyl lettering: display type and any text set directly on steel" },
+        { "hex": "#13293d", "role": "engraved laminate plate face (icon navy) with white #ffffff core letters: headings, nav, owner's plate" },
+        { "hex": "#fbfbf8", "role": "laminated sheets and the card-holder card: every reading surface" },
+        { "hex": "#14202b", "role": "ink on laminated sheets" },
+        { "hex": "#f0811a", "role": "coiled key band and tags: the action colour only (dark #1a1205 text on it, 7:1)" }
+      ],
+      "type": {
+        "display": "Big Shoulders Display 800 (@fontsource/big-shoulders-display; latin woff2 14.6 KB): H1 112px/0.9 on desktop and 52px on mobile, door-scale vinyl lines at 56px",
+        "text": "Public Sans 400/600 (@fontsource/public-sans; 2 × 14.6 KB): body 17–18px/1.6 on the laminated sheets; 600 caps at +0.08em for the engraved plates and the stamped key tag; tabular figures for kg and prices",
+        "utility": "none. Prices and measurements use Public Sans with tabular figures, and there is no mono costume.",
+        "rationale": "Big Shoulders was drawn from Chicago's civic signage. It is the condensed municipal grotesk of public facilities, it reads as die-cut vinyl on a changing-room door, and its narrow set fits a tall door. Public Sans was built for public-service notices, which is the voice of a laminated facility sheet and of an engraving machine's plain caps. Total about 44 KB."
+      },
+      "materials": [
+        "flat powder-coated sheet steel with 1px edge highlights (no texture images)",
+        "pressed louvre vents: rows of 64×10px rounded slots (inline SVG pattern)",
+        "8px door seams; at desktop width the neighbouring doors show at the viewport edges (aria-hidden)",
+        "two-ply engraved laminate plates with slotted screw heads (CSS)",
+        "pressed-steel card holder with a slid-in white card",
+        "cut-vinyl lettering, flat with no effects",
+        "laminated A4/A5 sheets with rivets and a clear lamination margin",
+        "orange coiled key band and tags (inline SVG coil)",
+        "dark locker interior with hat shelf and hook",
+        "riveted manufacturer's data plate"
+      ],
+      "firstViewportDesktop": "1440×900, full-bleed door paint #235c58. x0–96 and x1344–1440: slivers of the neighbouring doors behind 8px seams, with louvres and blank plates. y0–72: the top louvre band (3 slot rows) carrying, at left, the navy brand plate (icon in a riveted disc + 'GYMLOGGER X' Public Sans 600 caps 15px white) and at right the nav plates Wrist · Rule · Price · Questions, with Privacy and Support smaller. x168–940, y120–460: H1 in cut vinyl, Big Shoulders Display 800 112px, #eef1ec, 3 lines. y480–550: subheadline Public Sans 19px, 62ch. y580–860, x168–860: the steel card holder with the white Quick Answer card (Public Sans 16px #14202b) and, under it, a row of four small engraved plates: iPhone + Apple Watch · 0 third-party SDKs · No account · No ads. x1150–1300: the round cam lock at y300 with the orange band coiling down. Tag 1 (300×170, y500) carries the official App Store badge (54px tall) and stamped 'Free · Pro $1.99/mo · $17.99/yr · $39.99 lifetime'. Tag 2 on the same ring (190×210, y690) carries the 150px QR with 'Scan with your iPhone camera'. No phone in view.",
+      "firstViewportMobile": "390×844, the door at full width with 6px seams at both edges. y0–56: louvre band with the brand plate left and a 'Menu' plate right. y76–290: H1 Big Shoulders Display 800 50px/0.92, 4 lines. y300–330: the cam lock at right, with the orange band coiling to tag 1 (full width minus 32px, y340–500): App Store badge 48px + stamped price line in two rows. y520–700: subheadline 16px. y720–844: the card holder's top lip and the first lines of the Quick Answer card. No QR below 1024px.",
+      "conversion": "The badge is mounted on the key tag hanging from the lock (Apple artwork, unaltered, on the orange plastic). The price is stamped on the same tag from price.value. The QR hangs as a second tag on the same ring (≥1024px only). The sticky bar is a 64px steel strip that slides up from the bottom edge once tag 1 leaves the viewport: the orange band runs coiled along it, ending in a tag with the badge and '$39.99 once · Free to start'. Pricing is the coin-lock tariff plate: an engraved instruction plate listing Free / Pro Monthly / Pro Annual / Lifetime with the highlight label, plans_footnote as its small print, and the badge set beside the coin slot. The closing repeats tag 1 under the manufacturer's plate. The Smart App Banner is the native iOS meta, untouched.",
+      "visitorPath": [
+        "Top louvre band: engraved brand plate + nav plates",
+        "Door face (hero): cut-vinyl H1 + subheadline; card holder with the Quick Answer (speakable); four trust plates; cam lock → key band → tag with badge + price; QR tag on desktop",
+        "Vinyl line across the door: the developer's journal sentence ('your phone is in a locker… your watch is on your body'), linked to the post, then an engraved 'On the band' list from value_points[0] and the Watch FAQ: set entry, RPE prompt, rest timer, live heart rate, standalone, syncs after",
+        "Open the locker (signature): the door swings and the interior hat shelf holds the six iPhone screenshots in CSS bezels, captioned 'stays in the locker: programs, analytics, history' with corrected captions",
+        "House-rules sheet riveted inside the door: plateau_disclosure.rule in plain text, how_it_works steps 1–3 numbered (HowTo), what_it_does_not_do as the sheet's last rule",
+        "Laminated feature sheet: features (6) + value_points 2–4 as a two-column list under small engraved title plates",
+        "Coin-lock tariff plate: plans (4) + highlight label + plans_footnote + badge",
+        "Register sheet on the hook: comparison_table (4 apps × 7 rows) + verified footnote + inline key-tag CTA",
+        "Notes taped inside the door: 5 real testimonials (initials, source, French with translation, no stars); who_for / who_not_for on two engraved plates, 'This locker is yours if' / 'Use another locker if'",
+        "Owner's plate: founder (bio, signals with a computed app count, response time, email, studio link) + coach_cta laminated notice → /apps/gymlogger-x/coaches/",
+        "Nothing leaves the locker: privacy (none collected, no tracking, no account) + transparency facts (0 SDKs, no network for core logging, your iCloud only) → /transparency/ + privacy policy + support",
+        "Key tags on the attendant's hooks: FAQ (11) as details",
+        "Inspection card: Quick reference ai-canonical details, visible",
+        "Neighbouring lockers: alternatives_to plates (Strong, Fitbod and Jefit go to GymLogger pages; Hevy, Caliber and Heavyset to theirs), related_journal, you might also like",
+        "Bottom louvre band + riveted manufacturer's plate: Built by Lagerland Apps · first released 2025-09-01 · last updated 2026-05-13; tag 1 again",
+        "Lagerland strip"
+      ],
+      "navigation": "Engraved laminate plates screwed into the top louvre band: the brand plate links to the top; Wrist · Rule · Price · Questions are anchor links, with Privacy and Support as smaller plates to the sub-pages. Focus ring: a 3px orange #f0811a outline offset 3px, like the band. On mobile, one 'Menu' plate opens (details/summary, no JS) the attendant's key board: a dark #112b2c panel of hooks, each with an orange tag link (sections, Privacy, Support, vs Strong, vs Fitbod, vs Jefit).",
+      "signatureInteraction": "Open the locker. A door panel (the same #235c58 steel with louvres and a lock) covers the interior section. When the section is 35% in view, an IntersectionObserver swings it open: rotateY 0 → −105deg around its left hinge, perspective 1800px, 800ms cubic-bezier(.3,.7,.2,1) with a 3° settle, revealing the phone screenshots on the shelf. A scroll-snap row lets you take shots off the shelf one by one. No-JS: the door panel only exists under html.js, so the interior and all screenshots render open. A 2.5s safety net forces it open. Reduced motion: the door is drawn at its open end state with no swing, and the key tags do not sway.",
+      "motionGrammar": "Heavy and mechanical, moving only like steel and plastic. The door swings with a damped settle (800ms). The key tag sways 3° on hover or focus and settles in 600ms. The sticky band strip slides up in 200ms. Nothing fades or floats in, and every other region holds still on the steel.",
+      "readModeVariant": "Privacy, support and the Strong, Fitbod and Jefit pages keep the door frame: the same top louvre band with the brand plate plus a page plate ('Privacy policy', 'Support', 'Strong alternative'), and steel in the margins only. The reading column is one laminated A4 sheet riveted to the door (#fbfbf8, 68ch, Public Sans 18px/1.65 #14202b), with headings as small engraved plates in the flow and tables as the laminated register. Alternatives pages: page.title in cut vinyl above the sheet; quick_answer in the card holder; 'Pick GymLogger X if / Stay with Strong if' as two engraved plates; the existing FAQ as key tags; the key tag with badge at the foot. Correct the Strong page's false 'Mac-and-iPhone' line. Support: an 'Ask at the desk' sheet with email, response time and what to include. No door swing on Read pages.",
+      "assetsNeeded": "No raster art: louvres, plates, lock and key band are CSS or inline SVG, and the badge, QR and screenshots exist. A production task for every style: 2–3 real Apple Watch screenshots (set entry with RPE prompt, rest timer, session summary), plus corrected alt text for all six existing screenshots.",
+      "risk": "A locker is a mundane, even unlovely object, so it could read as facility signage rather than desire unless the plates, louvres and key band are crafted precisely. The hero deliberately shows no app UI; proof arrives one scroll later when the door opens, so the Quick Answer card must carry the rule summary. A ~9,000px page stretches a real door's proportions, so the interior after the swing has to carry most of the length. The teal drench leans on the icon colour and must read as painted steel, not brand fill.",
+      "memoryTest": "The page was a teal gym locker door. The App Store button hung on the orange locker-key wristband, and when I scrolled the door swung open with the phone sitting on the shelf inside."
+    },
+    {
+      "id": "b",
+      "label": "Three White Lights",
+      "kicker": "IMPECCABLE’S PICK",
+      "sourceIndex": 1,
+      "lineage": "Powerlifting meet officiating under IPF and national-federation rules. The referee light board shows three round lenses, white = good lift, red = no lift, appearing together once all three referees have pressed. Coloured fault cards are raised beside a red light to name the reason. The lifter or coach hands in an attempt card within a minute to declare the next weight. The Technical Rules book is written in numbered clauses, and the scoring table's results sheet carries Wilks, DOTS and GL points.",
+      "thesis": "The plateau rule is judged in public like a lift. Three lenses read your sessions, red lights come with a card naming the possible cause, and the next attempt stays yours. This refuses the category's 'AI coach' black box and floating-phone hero with a working judging console.",
+      "scene": "A lifter at the scorer's table of a local meet, attempt card in hand, under the hall's flat white LED high-bays, with the light board on its stand at the platform edge. Forms and card stock are daylight objects, so the scheme is light; the black housings carry the lenses.",
+      "scheme": "light",
+      "colorStrategy": "Committed",
+      "palette": [
+        { "hex": "#d5e3ec", "role": "bench-card blue attempt stock: the page ground (ink 14:1)" },
+        { "hex": "#fbfbf9", "role": "form and rulebook paper: reading sheets, console table inset, attempt card" },
+        { "hex": "#121619", "role": "ink: text and ruled form boxes" },
+        { "hex": "#17191c", "role": "light-board housing: masthead bar, console panel, sticky bar, lens bezels" },
+        { "hex": "#ffffff", "role": "white lens: a 'progressing / good lift' call" },
+        { "hex": "#d32b1f", "role": "red lens + pre-printed form red: a 'stalled / no lift' call, the verdict strip, form headers (5.3:1 on the blue stock)" }
+      ],
+      "type": {
+        "display": "Chivo 900 (@fontsource/chivo; 14 KB): H1 84px/0.95 on desktop and 42px on mobile, the verdict line 28px, attempt weights",
+        "text": "Chivo 400/600 (2 × 15 KB): body 18px/1.6 on rulebook paper, clause titles and nav in 600",
+        "utility": "Chivo Mono 500 (@fontsource/chivo-mono; 12 KB): weights, reps, e1RM, points and prices in the console, attempt card and results sheet. These are real measurements, aligned to the decimal (182.5).",
+        "rationale": "Meet paperwork (attempt cards, flight sheets, federation results) is printed in plain heavy grotesk. Chivo's 900 has the dense black of a meet flyer, and its 400 holds a rulebook clause at reading size. Its matching mono keeps declared weights aligned the way a scoring table needs. One family, about 57 KB."
+      },
+      "materials": [
+        "blue attempt-card stock as the page ground",
+        "pre-printed forms: ruled ink boxes, red pre-print headers, Chivo Mono entries",
+        "black light-board housing with round CSS lenses (flat lit faces, 1px inner highlight, no glow)",
+        "rulebook paper sheets with numbered clauses",
+        "results-sheet tables with ink rules",
+        "the red cause card raised beside red lenses",
+        "the hand-in slip: a white ruled strip holding badge, price and QR"
+      ],
+      "firstViewportDesktop": "1440×900. y0–72: the black light-board bar #17191c across the full width: icon 28px + 'GymLogger X' Chivo 800 20px white at left; nav right in Chivo 600 15px white (The wrist · The rule · Attempts · Results · Questions; Privacy and Support after a gap). Below, on #d5e3ec within a 1200px container: x120–740, y112–380: H1 Chivo 900 84px #121619, 3 lines. y400–500: subheadline Chivo 400 19px, 58ch. y530–650: the hand-in slip, a white strip with ruled boxes: [App Store badge 52px] [price 'Free · Pro $1.99/mo · $17.99/yr · $39.99 lifetime' Chivo Mono 15px] [QR 100px + 'Scan with your iPhone camera']. x800–1320, y104–860: the judging console, a black housing panel. Three 112px lenses sit in a row, each captioned in white Chivo 600 13px: e1RM under your bar · volume held within 3% · fatigue or 6-session run. Under them sits an inset paper table, 'Bench press: last six non-deload sessions (illustrative)', with editable kg × reps in Chivo Mono 20px, a computed Epley e1RM column and a threshold field clamped 0.05–1%/session. Last comes the verdict strip: three reds + the red card 'Plateau flagged. Possible causes: frequency · recovery · exercise selection · technique. Your call.'",
+      "firstViewportMobile": "390×844. y0–56: black bar with icon + wordmark left and 'Menu' right. On blue stock: H1 Chivo 900 42px/0.98, 4 lines (y76–262); subheadline 16px (y276–420); hand-in slip at full width: badge box (y440–512), then the price line in Chivo Mono 14px (y516–560). y590–844: the console's black panel begins, with three 92px lenses in a row and their captions; the session table and verdict follow just below the fold. No QR.",
+      "conversion": "In the hero, the hand-in slip holds the official badge in its first box, the price statement (from price.value) in Chivo Mono, and the QR in its third box on desktop. Pricing is the attempt card on form paper: Warm-up room = Free ($0, core logging forever); 1st attempt = Pro Monthly $1.99/mo; 2nd = Pro Annual $17.99/yr; 3rd = Lifetime $39.99 one-time with the front-matter label 'Best value · ~1 in 3 pick this'. plans_footnote is the card's small print, and the badge sits in the card's 'hand in at the table' box. The sticky bar is a 56px black light-board strip that slides up when the hero slip leaves: wordmark, three 14px lenses mirroring the console's last call, 'Free · $39.99 lifetime' and the badge. The closing is a final slip with badge + QR + maker line. The Smart App Banner is native, untouched.",
+      "visitorPath": [
+        "Light-board masthead: black bar with wordmark + nav",
+        "Hero: H1 + subheadline + hand-in slip (badge, price, QR) beside the judging console (three lenses, six editable illustrative sessions, verdict + cause card)",
+        "The announcement: Quick Answer on a paper sheet (speakable), with one printed line of facts: iPhone + Apple Watch · 0 third-party SDKs · no account · no ads",
+        "Platform and warm-up room: the wrist is the platform (set entry, RPE prompt, rest timer, live heart rate, standalone, syncs after) and the iPhone is the warm-up room (programs, analytics, history), from value_points[0], the Watch FAQ and the developer's journal line",
+        "Technical rules, plateau: numbered clauses from plateau_disclosure (estimate, threshold, window, volume, confirmation, monitoring, exclusions) + how_it_works steps 1–3 (HowTo) + 'What the referee does not do' (what_it_does_not_do) + screenshot 2 showing the in-app Monitoring flag",
+        "Order of events: features (6) + value_points 2–4 as one long event list (Chivo 800 titles over text, not cards), including Wilks (2020), DOTS and Sinclair",
+        "From the scorer's table: a screenshot strip (6 + coach-hero) in CSS iPhone bezels with corrected captions",
+        "Attempt card: pricing (warm-up Free + three attempts) + plans_footnote + badge",
+        "Results sheet: comparison_table (4 × 7) + 'verified 2026-05-13' footnote + inline slip",
+        "Your meet / not your meet: who_for (6) / who_not_for (4)",
+        "From the warm-up room: 5 real testimonials with initials and source, the French one with translation, no stars",
+        "Organiser's note: founder (Lagerland Apps, Finland; bio, signals with a computed app count, response time, email, studio link) + Coaches' corner from coach_cta → /apps/gymlogger-x/coaches/",
+        "What the table records: privacy (none collected, no tracking, no account) + transparency facts → /transparency/ + privacy policy + support",
+        "Rulings: FAQ (11) as details",
+        "Official record: Quick reference ai-canonical details, visible",
+        "Other flights: alternatives_to links, related_journal, you might also like",
+        "Closing slip: badge + QR + Built by Lagerland Apps · first released 2025-09-01 · last updated 2026-05-13",
+        "Lagerland strip"
+      ],
+      "navigation": "The black light-board bar carries the wordmark and anchor links (The wrist · The rule · Attempts · Results · Questions), with Privacy and Support set apart at the far right. The focus ring is a 3px white outline with a 2px #d32b1f offset ring, legible on both black and blue. On mobile, 'Menu' opens (details/summary) a black panel listing the sections like a flight order sheet, followed by the three alternatives pages.",
+      "signatureInteraction": "Call the lift. The console runs the published rule's strength-and-volume test on six editable illustrative sessions: Epley e1RM per session, a least-squares trend over the last four against a threshold you set inside the 0.05–1% clamp, volume change against −3%, and a 'fatigue signal' toggle or a six-session run for confirmation. After a 400ms deliberation pause the three lenses switch together, as on a real board: red for each stalled signal, white otherwise. Three reds raise the red cause card ('Plateau flagged … your call'); two reds read 'Monitoring'; three whites read 'Good lift: keep progressing'. It is labelled simplified: the app also needs ≥8 sessions, 12 weeks of history and confidence > 0.4. No-JS: server-rendered example values with the lenses in their computed state and the verdict printed. Reduced motion: no pause; lenses switch instantly.",
+      "motionGrammar": "Officiating cadence: discrete and decisive. Lenses change state together after one pause, and the cause card drops in 120ms. The sticky strip slides in 200ms. There are no scroll reveals, no parallax and no glow; everything outside the console holds still on paper.",
+      "readModeVariant": "Privacy, support and the Strong, Fitbod and Jefit pages keep the black light-board bar and the blue stock in the margins. The reading column is a rulebook page (#fbfbf9, 68ch, Chivo 400 18px/1.6). The privacy policy's sections are numbered as clauses because they are a real sequence (Overview, Data collection, Storage, Third parties, Sensitive data, Children, Changes). Alternatives pages: page.title in Chivo 900; quick_answer as the announcement sheet; the head-to-head as a two-column results sheet (GymLogger X | Strong) with honest plain values (no lights or verdicts on competitors); 'Pick GymLogger X if / Stay with Strong if' as two lists; FAQ as rulings; the hand-in slip with badge at the foot. Fix the Strong page's 'Mac-and-iPhone' error. Support is the scorer's table: email, response time and a ruled 'what to include' checklist. The console never appears on Read pages.",
+      "assetsNeeded": "None new: lenses, forms and cards are CSS, and the badge, QR and screenshots exist. Shared production task: real Apple Watch screenshots and corrected alt text for all six screenshots.",
+      "risk": "Familiarity: the three lights are powerlifting's most recognisable image and sports-judging is a known fitness-brand move, so this is the most expected of the seven. Meet vocabulary may feel competitive to the hypertrophy lifter or the K.D. visitor 'who doesn't live in the gym'. Verdict copy must stay calm, matching the app's 'informs without lecturing' stance. The live demo simplifies the real rule and must say so on its face. LiftLog's microsite could also reach for barbell sport, so this world needs coordinating with it.",
+      "memoryTest": "Three big lights on a black board. I typed my bench numbers, they went red together with a card saying 'possible causes… your call', and the prices were set like attempts: opener, second, third."
+    },
+    {
+      "id": "c",
+      "label": "Show Your Working",
+      "kicker": "SECOND ROLL",
+      "sourceIndex": 4,
+      "lineage": "The program spreadsheets passed around r/weightroom and r/powerlifting in the 2010s: Wendler 5/3/1 calculators, nSuns 5/3/1 LP, GZCL's Jacked & Tan and The Rippler, Candito 6-Week, Sheiko in Excel. They share a dark merged title band, yellow 'enter your Training Max' input cells, percentages rounded to 2.5 kg by formula, AMRAP '+' cells, a deload tab, week tabs along the bottom, conditional-format fills, a README tab, and the formula bar where lifters checked the maths.",
+      "thesis": "The page is one workbook where every number shows its formula: the plateau test, e1RM, the annual saving, the lifetime break-even. This refuses the category's 'trust our AI' copy and turns the lifter's own habit of checking the sheet into the proof.",
+      "scene": "Sunday evening at the kitchen table, laptop open on the program sheet, planning next week's numbers; the white sheet is the light source, so the scheme is light.",
+      "scheme": "light",
+      "colorStrategy": "Restrained",
+      "palette": [
+        { "hex": "#ffffff", "role": "cells: the page ground" },
+        { "hex": "#d5dbe0", "role": "1px gridlines; header gutters filled with #f1f3f5" },
+        { "hex": "#16202a", "role": "ink: cell text and formulas" },
+        { "hex": "#0f2f4a", "role": "merged title band (icon navy) with white text 14:1: H1 and sheet headers" },
+        { "hex": "#fff1a6", "role": "input cells: the yellow 'enter your numbers' fill" },
+        { "hex": "#2b7a77", "role": "selection outline, fill handle, focus ring, active sheet tab (icon teal, 5:1 on white)" },
+        { "hex": "#b3261e", "role": "conditional 'plateau' state: text on #fde2df fill (5.3:1); 'progressing' uses #1e7a46 on #dff3e6" }
+      ],
+      "type": {
+        "display": "Carlito 700 (@fontsource/carlito; latin 31 KB): H1 72px/1.0 on desktop and 38px on mobile in the merged navy band, sheet headers 15px",
+        "text": "Carlito 400 (30 KB): cell text 16–17px, merged reading cells 18px/1.6, tabular lining figures for every number",
+        "utility": "Fragment Mono 400 (@fontsource/fragment-mono; 25 KB): only in the formula bar and Name Box, because formulas are code",
+        "rationale": "Carlito is the open, metric-compatible clone of Calibri, the default face of the Excel workbooks these lifting sheets were built in. So '5 × 82.5' columns sit exactly where lifters remember them, and its lining figures are tabular by default. Fragment Mono confines monospace to real formulas. About 87 KB."
+      },
+      "materials": [
+        "white cell grid with 1px gridlines",
+        "frozen header gutters (columns A–L, row numbers) used as real cell references by the formulas",
+        "navy merged title band",
+        "yellow input cells",
+        "teal selection outline with fill-handle square",
+        "formula bar + Name Box",
+        "conditional-format fills as states (plateau / monitoring / progressing)",
+        "images over cells (badge, QR, screenshots)",
+        "cell-comment threads",
+        "sheet tabs + status bar"
+      ],
+      "firstViewportDesktop": "1440×900, white. y0–36: title row with icon 20px + 'GymLogger X' Carlito 700 15px left, and Privacy · Support right. y36–84: the formula bar. The Name Box reads 'Plateau' in Fragment Mono 14px, and after fx the rule is written as a formula in Fragment Mono 15px: =AND(TREND(e1RM, last 4) < CLAMP(your_90d_rate, 0.05%, 1%), VOLUME_CHANGE >= -3%, OR(fatigue, run >= 6), confidence > 0.4). y84–112: column headers A–L, with a 48px row-number gutter at left. Rows 1–3 (y112–330): a merged A1:H3 navy band with the H1 in Carlito 700 72px white, 2 lines. Rows 4–6: subheadline in merged A4:H6, 19px. Right block I3:L9: App Store badge as an image over I3:K4; price row I6:L6 = Free | $1.99/mo | $17.99/yr | $39.99 lifetime (Carlito 700) under a header row; QR over I7:J9 with the cell note 'Scan with your iPhone camera'. Rows 8–13, A–H: a mini session block, 'Bench press (illustrative)' with 4 rows of yellow kg/reps inputs and computed e1RM. The verdict cell A13:H13 is selected (teal outline) with a red conditional fill: 'Plateau flagged: possible causes frequency, recovery, exercise selection, technique. Your call.' Its formula is the one shown in the bar.",
+      "firstViewportMobile": "390×844. y0–44: title row (icon + 'GymLogger X'). y44–84: the sheet-tab strip frozen at the top, scrolling horizontally (Log · Rule · Program · Price · vs Strong · Questions · README). y84–160: the formula bar, wrapping the plateau formula to 3 lines in Fragment Mono 12.5px. Columns A–C with a 32px row gutter. y176–360: merged navy band with the H1 in Carlito 700 38px, 4 lines. y360–470: subheadline cell, 16px. y480–540: badge over cells. y548–620: price as a 2×2 cell block (Free | $1.99/mo / $17.99/yr | $39.99 lifetime). y640–844: the session block begins, with yellow input rows visible. No QR.",
+      "conversion": "In the hero, the official badge is an image placed over cells, its artwork unaltered. The price row comes straight from the plans. The QR is placed over cells on desktop with a cell note. The Price sheet sets the plans as columns with computed rows from the real prices: cost after 1/2/3/5 years (monthly = 1.99×12×n, annual = 17.99×n, lifetime = 39.99), the ~25% annual saving and a break-even of ≈2.2 years (matching front matter). Selecting any of these shows its formula. It also carries the highlight label, plans_footnote as a note cell, and the badge over the last row. The sticky bar is the status bar (32px on desktop under the sheet tabs, 52px on mobile at the bottom), which shows 'Free · Pro from $1.99/mo · $39.99 lifetime' + badge once the hero badge scrolls away. The Smart App Banner is native, untouched.",
+      "visitorPath": [
+        "Frozen frame: title row + formula bar (Name Box + fx) + column headers; sheet tabs (bottom on desktop, top on mobile)",
+        "Log sheet: navy merged title (H1), subheadline cell, get-it block (badge and QR over cells, price row), mini session block with the selected verdict cell",
+        "Note cell: Quick Answer (speakable) + one plain facts row: iPhone + Apple Watch | 0 third-party SDKs | no account | no ads (from transparency.yml), at body size and not as big-number tiles",
+        "Wrist range: a two-column table, 'On the wrist | On the iPhone', from value_points[0], features 'Apple Watch that actually works' and the journal",
+        "Rule sheet: the plain-English rule in a merged cell (plateau_disclosure.rule) + the formula + how_it_works steps 1–3 as rows (HowTo) + the full editable demo + what_it_does_not_do as a note + screenshot 2 (in-app Monitoring flag) over cells",
+        "Program sheet: an illustrative, labelled 4-week PPL block with an automatic deload week (Smart Program Creator: linear / DUP / block / wave), then features (6) + value_points 2–4 as Feature | What it does rows",
+        "Images over cells: six screenshots with corrected captions in the cells below",
+        "Price sheet: 4 plan columns + computed cost-over-time rows + highlight label + plans_footnote + badge",
+        "vs sheet: comparison_table with a frozen first column + the 'verified 2026-05-13' note; constants show their source in the formula bar; links to /alternatives/ pages",
+        "Fit range: who_for / who_not_for",
+        "Comments: 5 real testimonials as cell-comment threads (initials, source, translation), no stars",
+        "Workbook properties: founder (created by Lagerland Apps, Finland; bio, signals with a computed app count, response time, email, studio link) + 'Shared with coaches' (coach_cta) → /apps/gymlogger-x/coaches/",
+        "Data connections: 0 external connections. Privacy facts + transparency (no network for core logging, your iCloud only) → /transparency/ + privacy policy + support",
+        "Questions sheet: FAQ (11) as details rows",
+        "README sheet: Quick reference ai-canonical details, visible",
+        "Linked workbooks: alternatives_to, related_journal, you might also like",
+        "Status bar: Last edited 2026-05-13 by Lagerland Apps · first released 2025-09-01",
+        "Lagerland strip"
+      ],
+      "navigation": "Sheet tabs: Log · Rule · Program · Price · vs Strong · Questions · README, with Privacy and Support set apart at the right end. They are plain anchor links to named ranges (they work without JS). With JS, the active tab tracks scroll with a teal underline. Desktop keeps them frozen at the bottom above the status bar, as in a real workbook; mobile freezes them at the top.",
+      "signatureInteraction": "Show the working. Click, tap or focus (Tab) any computed number on the page: e1RM, trend, verdict, $23.88/yr monthly cost, the ~25% saving, the 2.2-year break-even, cost-after-n-years. The cell takes the teal selection outline, the Name Box shows its address, and the formula bar shows its formula. Yellow input cells (kg, reps, threshold) are editable and recalculate the dependent cells and conditional fills live. No-JS: every value is server-rendered, the plateau formula is server-rendered in the formula bar, and a visible 'Formulas' range on the Rule sheet lists each key formula so crawlers get them too. Reduced motion: the selection jumps without its 120ms slide, and recalculated cells do not flash.",
+      "motionGrammar": "Spreadsheet-instant: no easing theatre. The selection outline moves in 120ms, recalculated cells flash a single yellow fill fading over 300ms, conditional fills switch instantly, and the sheet-tab underline slides in 150ms. Nothing scrolls itself and nothing reveals on scroll.",
+      "readModeVariant": "Privacy, support and the Strong, Fitbod and Jefit pages keep the frozen title row, formula bar and tabs. The formula bar shows the page's key fact as a formula: on privacy, =COUNT(trackers) → 0; on an alternatives page, the lifetime price comparison with its 'verified' source. The reading column is one wide merged cell (A:F) with wrap text: Carlito 18px/1.6, 68ch, no gridlines inside it, gridlines only in the frame. The policy's sections are sheet tabs. Alternatives pages: page.title in the navy band; quick_answer as a note cell; a two-column comparison sheet (GymLogger X | Strong) with a frozen first column; trade-off lists; FAQ rows; the badge in the status bar. Fix the Strong page's 'Mac-and-iPhone' error. Support: a 'Contact' sheet with email, response time and a what-to-include checklist as rows.",
+      "assetsNeeded": "None new: the grid, formula bar and tabs are HTML/CSS, and the badge, QR and screenshots exist. Shared production task: real Apple Watch screenshots and corrected alt text for all six screenshots.",
+      "risk": "A spreadsheet reads as work, not desire, so Persuade could stall at 'it looks like Excel'. The costume line is thin: use the lifting-sheet grammar (merged bands, yellow inputs, tabs, formula bar) and never Office chrome (no ribbon, no menus, no file name). Grids are cramped at 390px, so only columns A–C are shown and the comparison scrolls inside its range. Carlito is plain at display size, so the navy band and scale must carry the headline. It has the most JS of the three (still small vanilla).",
+      "memoryTest": "The whole page was a lifting spreadsheet. I tapped the $39.99 and the formula bar showed the break-even maths, and the plateau rule was literally a formula I could poke with my own numbers."
+    }
+  ],
+  "canon": "Dark gym-app landing played straight: near-black ground, neon-green accent, angled iPhone + Apple Watch renders, 'Train smarter. Lift stronger.' headline, three icon feature cards, a pricing table with a 'Most popular' ribbon, a star-rated testimonial carousel.",
+  "notes": "The roll ran degraded (roll service offline, no catalog challengers, no quality-bar boards). Key ae47b3c0 dealt candidate 7 (Style A, THE ROLL). Re-roll 1 dealt candidate 4 (Style C, SECOND ROLL), which was distinct, so no further re-roll was needed. Neither is #1, so Style B is the top-ranked candidate (IMPECCABLE’S PICK). The candidate list and ranking were fixed before the dice were cast. The three styles differ in world (place/object, competition ritual, document grid), topology (one tall door with a swing reveal; a console-led page of forms and numbered clauses; a frozen-pane workbook with tabs and a formula bar) and lighting (dark teal drench; light blue card stock with black housings; restrained white screen). All faces were verified on Fontsource, with latin woff2 sizes measured: Big Shoulders Display 800 14.6 KB, Public Sans 14.6 KB/weight, Chivo 14–15 KB/weight, Chivo Mono 500 12 KB, Carlito 30–31 KB/weight, Fragment Mono 25 KB. None repeats a sibling microsite's faces or worlds as proposed so far. GymLogger X deliberately avoids gym-equipment material (plates, knurling, chalk) so it does not converge on sister app LiftLog. Content flags for the build: (1) no Apple Watch screenshot exists, although the Watch is the primary surface; (2) all six screenshot alts describe the wrong screens; (3) the founder signal hard-codes '19' apps and should be computed; (4) /alternatives/strong-workout-app/ wrongly says 'Mac-and-iPhone'; (5) /apps/gymlogger-x/coaches/ exists and should wear the winning world too, though it is not in this surface list; (6) hero.secondary 'Train smarter. Lift stronger.' is the category cliché, so none of the styles headlines with it; (7) the Hevy, Caliber and Heavyset alternatives pages target LiftLog and wear LiftLog's world, even though they appear in GymLogger X's alternatives_to links."
+}

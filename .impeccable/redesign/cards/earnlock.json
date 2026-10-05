@@ -1,0 +1,449 @@
+{
+ "surface": "earnlock",
+ "dossier": {
+  "mechanism": "EarnLock prices the doomscroll in body movement: every app you pick stays behind a custom Family Controls shield that shows the exact count left ('3,412 steps until unlock'), until Apple Health records your daily goal (steps free; active minutes or kcal in Premium). The goal is set on a calm day and the craving can't renegotiate it, and a 7-day Shadow Week watches before it blocks anything.",
+  "audienceScene": "An adult on a phone at night, often on the sofa or in bed. They reached the page from a Google or AI answer for 'block apps until you walk' or 'Opal alternative'. They have already tried tap-through blockers and want to know in ten seconds what unlocking costs, whether there's a lifetime price, and whether their Apple Watch counts. Desktop visitors need the QR to get it onto the iPhone.",
+  "culturalHome": "Digital-wellbeing and dopamine-detox culture (Opal, one sec, Brick), the 10,000-steps walking habit and Apple Watch ring culture, and the 'touch grass' / go-for-a-walk ethic. The developer frames it as a Sunday-calm self versus a Thursday-night self and 'a destination, not a wall' (journal: unlock-cost-outside-the-app).",
+  "mustProve": "The first viewport must show that unlocking costs a number of real steps rather than a tap or a timer. It should show that number live and attached to the locked apps (the shield copy), that one goal unlocks everything until midnight, and that it is free with a $19.99 lifetime option. The working App Store badge must be there, plus the QR on desktop.",
+  "categoryDefault": "The Opal-style screen-time landing page: a near-black or indigo-violet gradient, a glowing iPhone mockup in the centre, 'Take back your time', a stat row ('2h 14m saved'), testimonial wall, feature card grid. Its health-flavoured twin is a dark dashboard with neon activity rings, which the app's own green ring icon invites.",
+  "predictableOpposite": "Pastel 'calm wellness': a sunrise gradient, rounded soft sans, airy whitespace, and stock photos of someone walking barefoot through a meadow (touch grass), with a gentle 'breathe' tone.",
+  "literalReading": "Earn + Lock: padlocks, keys, vault doors, coins and piggy banks, as in 'earn your unlock' wage imagery. Only candidate 6 (lockout/tagout tag) uses the lock reading.",
+  "evidence": [
+   "_apps/earnlock.md: platforms iOS + watchOS, status live, price.model freemium, price.value 'Free — Premium from $1.99/mo or $19.99 lifetime'; plans Free $0 / Monthly $1.99/mo / Yearly $9.99/yr (highlight) / Lifetime $19.99 once; every paid tier Family Sharing (up to 5)",
+   "Shield copy triplet in features: '3,412 steps until unlock', '18 minutes of exercise until unlock', '187 active kcal until unlock'",
+   "Spotlight = Shadow Week: 7 days of observation with no blocking. Screenshot 2 'Day 2 of 7 — You would have lost access 4 times today'; screenshot 5 '23 times you'd have been blocked this week', '~30m estimated time saved per day', 'Enable real blocking'",
+   "Screenshot 7 goal picker: Light 4,000 steps ≈ a 35-min walk / Standard 8,000 ≈ 75-min / Challenge 12,000 ≈ 110-min; screenshot 1: ring at 1,974 steps, 'Earn 2,026 more steps to unlock', locked-apps grid",
+   "App UI palette: true-black ground, sage-green ring #87B06F fading to pale mint/teal at goal, white SF Pro numerals, monospaced step figures in the goal picker; icon = sage ring + padlock outline on black",
+   "how_it_works: 3 real steps (pick + goal / HealthKit + live shield / cross the threshold, unlocked until local midnight, partial windows in Premium, math-gated emergency 1/day)",
+   "Blocks present: spotlight, plans + plans_footnote, founder (Organization, Finland), how_it_works, value_points (4), features (9), who_for (6) / who_not_for (5), comparison_table (EarnLock vs Opal, one sec, ScreenZen, Apple Screen Time; 8 rows), screenshots (7), privacy, faq (14), related_journal, alternatives_to (13), release_notes v1.0. Absent: roadmap, training_vocabulary, insight_gallery, plateau_disclosure, coach_cta, creative_work, testimonials",
+   "_data/transparency.yml earnlock: tracking false, 0 tracking domains, 0 third-party SDKs, no account, network calls 'None — no EarnLock server', data leaves device 'No', 3 permissions (HealthKit read, Family Controls .individual, local notifications)",
+   "12 alternatives pages target it: brick, forest, jomo, one-sec, opal, screenzen, stepbloc, steppin, stoic-mode, time-out, unpluq, walkmyscreen (each = hero + quick answer + 2-column compare table + 'When should I pick X instead' + FAQ)",
+   "Journal 'The unlock cost has to live outside the app': 'They are told they are 2,026 steps from Instagram. The unlock is a destination, not a wall' and 'turns the body-cost mechanic from a punishment into a price tag'",
+   "Release: first_release 2026-05-22, last_updated 2026-05-22, ratings count 0 (no stars anywhere); QR assets/qr/earnlock.svg exists"
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "Trail junction fingerpost with walking times",
+   "family": "signage / wayfinding",
+   "why": "Walkers read 'destination + how far on foot' signs by heart. The app's own goal picker already speaks this way ('≈ a 35-min walk'), and the developer calls the shield 'a destination, not a wall'. Carries it as follows: each locked app is a destination on a yellow blade with the steps remaining, the daily goal is the distance, and arriving means 'open until midnight'."
+  },
+  {
+   "index": 2,
+   "name": "Shopfront roller shutter and opening-hours plaque",
+   "family": "architecture / place",
+   "why": "Everyone knows a shuttered shop and its hours sign, and the shield is literally a shutter pulled down over the app. Carries it as follows: the shutter stays down over Instagram until the goal is met, Premium partial windows are a shutter raised 60%, 'open until midnight' is closing time, and the reset at local midnight rolls it back down."
+  },
+  {
+   "index": 3,
+   "name": "Transit day ticket and fare gate",
+   "family": "ticketing / print",
+   "why": "Commuters pass fare gates daily, and a day ticket 'valid until 24:00' is exactly what hitting the goal buys. Carries it as follows: the fare is paid in steps, the gate opens all lines until midnight, Monthly / Yearly / Lifetime map onto travel passes, and Shadow Week is the week the operator only counts journeys."
+  },
+  {
+   "index": 4,
+   "name": "Clip-on pedometer (manpo-kei) with reflective LCD",
+   "family": "instrument / measurement",
+   "why": "This is the original 10,000-steps meter, the walker's own instrument, read in daylight on a belt. Carries it as follows: the remaining count fills the display, MODE cycles steps / active minutes / kcal (the Free vs Premium units), RESET is local midnight, and the pedometer's 7-day memory is Shadow Week."
+  },
+  {
+   "index": 5,
+   "name": "Japanese street vending machine",
+   "family": "machine / object",
+   "why": "Buying from a machine is a universally known ritual, and on Japanese machines every item's price button lights once enough credit is inserted. Carries it as follows: the blocked apps sit behind glass with one price (your daily goal), you insert steps, and every button lights together at the goal. You are the operator who set the price on a calm day, and the machine's sales audit is Shadow Week's would-have-blocked count."
+  },
+  {
+   "index": 6,
+   "name": "Lockout/tagout safety tag (the literal 'lock' reading)",
+   "family": "industrial safety signage",
+   "why": "Anyone who has worked near machinery knows the padlock tag that names who locked it and the only condition for removal. Carries it as follows: 'Locked by: you, on a calm Sunday · Removed when: 4,000 steps · No other key', and the once-a-day math-gated emergency is the supervised removal procedure."
+  },
+  {
+   "index": 7,
+   "name": "Pedestrian countdown signal (hand / walking figure)",
+   "family": "street signal / traffic",
+   "why": "Every phone user has stood at the orange hand watching digits count down to WALK. Carries it as follows: the hand is the shield and the countdown is steps remaining. Ranked last because its cultural meaning is waiting, which is the wait-out-timer mechanism EarnLock argues against."
+  }
+ ],
+ "seed": {
+  "key": "d77c87e0",
+  "assigned": 5,
+  "reroll1": 4
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "Exact Steps Only",
+   "kicker": "THE ROLL",
+   "sourceIndex": 5,
+   "lineage": "Japanese street vending machines (jidō hanbaiki). Sources: the backlit display window with product dummies on shelves, the price button under every item that lights once enough credit is in, the dot-matrix/LED credit display and contactless reader pad on the control column, the operator's price-setting panel inside the door, the riveted maker's nameplate, and the sales-audit printout the operator pulls.",
+   "thesis": "The doomscroll is merchandise behind glass with a single price tag, your daily step goal, and the page is the machine that sells it. Every selection button lights at once when enough steps are in. This refuses the category's dark-gradient phone hero and its 'wall' framing in favour of the developer's 'price tag, not punishment'.",
+   "scene": "Someone in a station underpass or office corridor at night stands at a machine whose own fluorescent-backlit window is the brightest thing there. The machine face is light and the surround is dark, so the scheme is light with a dark frame (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Committed",
+   "palette": [
+    {
+     "hex": "#8DB879",
+     "role": "Baked-enamel machine body in the app icon's sage. Marquee frame, mullions, side panels. Ink on it 7.97:1"
+    },
+    {
+     "hex": "#F4F6EF",
+     "role": "Backlit display window. Reading surfaces: product window, instruction plates, FAQ case, tables. Ink on it 16.6:1"
+    },
+    {
+     "hex": "#111811",
+     "role": "Ink. All text, keypad keys (with #F4F6EF legends), price-button lettering"
+    },
+    {
+     "hex": "#1C201D",
+     "role": "Corridor surround. Page margins, footer floor, sticky pickup-bin bar housing"
+    },
+    {
+     "hex": "#FFB23F",
+     "role": "Amber LED digits on a #0E110D display window. Used only for the credit display and live step counts (10.6:1)"
+    },
+    {
+     "hex": "#2F6B2A",
+     "role": "Lit-lamp green. Lit price-button ring, the EarnLock column in the compare table, focus ring on light surfaces (5.9:1 on window)"
+    },
+    {
+     "hex": "#C8CCC4",
+     "role": "Brushed steel. Keypad plate, badge bezel, coin-slot and reader-pad surrounds"
+    }
+   ],
+   "type": {
+    "display": "Dela Gothic One 400. A heavy Japanese gothic whose Latin is drawn to sit with kana, the voice of machine marquees and sticker lettering. Only H1/H2 on the marquee and plates.",
+    "text": "M PLUS Rounded 1c 400/700/800. The rounded gothic of Japanese machine button labels and product cards: 800 for dummy names and prices, 700 for buttons and the price card, 400 for body at 17–18px.",
+    "utility": "Doto 700. Dot-matrix LED face used only for real numbers: the credit display ('INSERT 2,026 STEPS'), live counts, dates on the nameplate.",
+    "rationale": "Three faces, about 85 KB latin total. Dela carries the machine's shouting marquee voice, M PLUS Rounded is what a buyer actually reads on the buttons, and Doto appears only where a real machine shows a number."
+   },
+   "materials": [
+    "baked enamel steel in flat sage with a faint orange-peel (inline SVG feTurbulence at 3% opacity)",
+    "backlit polycarbonate window with fluorescent falloff, brighter at the top edge (one linear-gradient, no glow halo)",
+    "chrome spiral coils under each product dummy (CSS repeating-linear-gradient diagonals)",
+    "typographic product dummies: app names on tall pale-grey packs, with no third-party logos",
+    "price buttons with a lamp dot, unlit or lit",
+    "brushed-steel keypad plate with black rubber keys",
+    "amber dot-matrix credit display window",
+    "screwed white enamel instruction plates (four CSS screw heads)",
+    "thermal-paper sales-audit printout with a torn edge (CSS mask)",
+    "riveted maker's nameplate",
+    "push-flap pickup bin (dark) at the machine's foot"
+   ],
+   "firstViewportDesktop": "Dark corridor #1C201D. One machine, 1120px wide, centred, top edge at y=24, runs past the fold. Marquee (1120×184, 16px sage enamel frame around a lit #F4F6EF panel): app icon 72px at left, then H1 'Block the doomscroll until you move.' in Dela Gothic One 60px/1.02 ink over 2 lines, with 'Earn your screen time.' in M PLUS Rounded 800 22px under it. Below, the body in its real form: display window 752px (left) | 32px enamel mullion | control column 336px (right). The window shows two shelves (about 290px each) of typographic dummies: 'Instagram' 'TikTok' 'X' / 'YouTube' 'Reddit' 'Anything you pick' (M PLUS 800 22px on grey packs, chrome coils beneath). Each has a price button '4,000 steps' (M PLUS 700 15px) with an unlit lamp and a tiny sage ring glyph at 49%, echoing the icon. Control column, top to bottom from y=232: amber Doto 30px credit display 'INSERT 2,026 STEPS' (336×96); price card 'Free — Premium from $1.99/mo or $19.99 lifetime' (M PLUS 700 17px) at y≈350; the official App Store badge at 56px tall in a brushed-steel bill-acceptor bezel at y≈430; QR 128px in the contactless-reader pad captioned 'Scan with your iPhone camera' at y≈510; keypad nav (2×3 keys) at y≈670. Badge, price and QR all sit above the fold.",
+   "firstViewportMobile": "16px corridor gutters; the machine is 358px wide. Marquee: icon 44px, then H1 in Dela Gothic One 34px/1.05 (3 lines) on the lit panel, then 'Earn your screen time.' M PLUS 800 17px. Below it the amber credit strip (358×56) 'INSERT 2,026 STEPS' Doto 22px. Then the bill-acceptor row: official badge 48px tall with the price statement beside it in two lines (M PLUS 700 14px). Then the window begins with one shelf of three dummies (Instagram, TikTok, X; 18px names, '4,000 steps' buttons), cut by the fold at y≈780 to pull the scroll. No QR below 1024px. The keypad collapses into the sticky top strip's 'Keypad' key.",
+   "conversion": "Smart App Banner stays in head; Safari draws it above the marquee. Apple's badge is never redrawn: it sits recessed in the brushed-steel bill-acceptor bezel with a small printed 'Get it here' plate above it. The QR occupies the contactless-reader pad, desktop ≥1024px only. The price statement comes from price.value, printed on the price card; plans appear later as the operator's price list. The sticky bar is the pickup bin: when the control column scrolls off, a 64px dark #1C201D push-flap bar slides up from the bottom with amber Doto 'FREE · $19.99 LIFETIME', the price.value line in M PLUS 700, and the badge at 40px. On mobile it is full-width and the QR is omitted. The closing CTA ends at the machine's foot, the pickup bin, with badge, QR and price.",
+   "visitorPath": [
+    "Marquee: hero.headline H1, hero.secondary, icon + name",
+    "Display window + control column: locked app names (from hero.subheadline and screenshot 1) with identical '4,000 steps' price buttons; amber credit display; price.value price card; badge; QR; trust stickers on the column side ('iOS 17 + watchOS 10', '0 third-party SDKs', 'No account', 'No ads')",
+    "'How this machine works' screwed enamel plate under the window: the visible Quick Answer (quick_answer + speakable). The ai-canonical Quick reference <details> hangs below it as the hinged service-door panel; its summary is always visible and its content is in the HTML",
+    "'Inside the door: you set the price': the operator's price panel. Goal presets Light 4,000 ≈ 35-min / Standard 8,000 ≈ 75-min / Challenge 12,000 ≈ 110-min (screenshot 7) and the units steps / active minutes / active kcal (Free vs Premium marked). The demo controls live here, with the Sunday-self vs Thursday-self line paraphrased from the journal",
+    "'Test-vend week': the spotlight (Shadow Week) heading + lead. Stats are printed as a thermal sales-audit slip ('7 days', 'Your data', 'One tap'), plus the app's own graduation numbers '23 would-be blocks · ~30m/day', labelled 'from the app's screen'",
+    "'How it vends': how_it_works 3 steps as the machine's real 1-2-3 instruction decal (HowTo), each with its full detail",
+    "'Display samples': the 7 screenshots stand as lit dummies on a horizontal scroll-snap shelf behind glass, each with its alt text as a printed shelf label",
+    "Side-panel plate 'Why this machine is different': value_points (4), set as a ruled list on enamel",
+    "'Selection directory': features (9) as a two-column directory on the lit window, name in M PLUS 800 with description in 400",
+    "Operator's price list placard: plans Free / Monthly / Yearly (lit lamp = highlight) / Lifetime as printed rows with tabular prices and feature lines, plus plans_footnote and a die-cut 'Family Sharing · up to 5' sticker",
+    "'Accepted payment': comparison_table (EarnLock vs Opal, one sec, ScreenZen, Apple Screen Time; EarnLock column lit green) with the footnote and an inline badge, then the alternatives_to list as 'Other machines on this platform' linking to the 12 /alternatives/ pages (Apple Screen Time unlinked)",
+    "'This machine is for / not for': who_for and who_not_for as two printed stickers; 'never parental control' is set in bold",
+    "Operator's permit card inside the door: founder (Lagerland Apps, Finland) heading, bio, signals, support email and response time",
+    "'Customer questions': faq (14) as <details> rows on the lit window",
+    "'What this machine records: nothing': a privacy audit slip from transparency.yml (third_party_sdks 0, network calls none, data leaves device: No, 3 permissions), privacy.notes, the Apple label line, links to /transparency/, the privacy policy and support",
+    "Notice pinned on the side: related_journal essay link + 'The unlock cost has to live outside the app'",
+    "Pickup bin, the closing CTA: badge + QR + price.value",
+    "Riveted maker's nameplate: 'Built by Lagerland Apps · Finland · v1.0 · first released 2026-05-22 · last updated 2026-05-22' (dates in Doto)",
+    "Corridor floor: 'Other Lagerland apps' as a row of small machine nameplates, then the shared 'A Lagerland app' strip"
+   ],
+   "navigation": "The machine's selection keypad. Six black rubber keys with white legends ('Prices', 'How it vends', 'Shadow week', 'Compare', 'Questions', 'Privacy'; M PLUS 700 14px) on a brushed-steel plate in the control column, as plain anchor links. The 'EarnLock' wordmark on the marquee links to top. On scroll and on mobile, a 52px sage enamel strip pins to the top with icon + name and a 'Keypad' key that drops the 2×3 key grid. Keys show a themed focus ring (3px #2F6B2A plus a 2px window-colour gap).",
+   "signatureInteraction": "Insert steps. Three keys beside the credit display ('+500 steps', '+1,000 steps', 'Walk the rest'), or a range input skinned as the coin slot, subtract from the Doto display (INSERT 2,026 → 0). At zero, a class change lights every price lamp in one 120ms sweep, each shelf label flips 'LOCKED' to 'OPEN UNTIL 23:59', and the coil under 'Instagram' turns once. The operator presets (4,000 / 8,000 / 12,000) reprice every button at once. The whole demo is labelled 'Demo — illustrative, not your data'. No-JS: the window renders locked with the real price on every button and a printed line under the shelves: 'All lamps light together when today's goal is met — then every app stays open until midnight.' Reduced motion: lamps switch instantly, digits jump to the final value, the coil does not turn.",
+   "motionGrammar": "Mechanical on/off. Lamps snap on in 80ms, LED digits step in fixed increments, one coil revolution (600ms ease-in-out) happens only on a demo 'vend', and the pickup bar slides up in 200ms. Sections are static enamel: no scroll fades, no floating, no glow beyond a lit lamp.",
+   "readModeVariant": "Privacy, support and the 12 alternatives pages show the machine with its service door open. The corridor surround and a sage enamel marquee strip carry the page title (Dela Gothic One 40px). Inside, the backlit #F4F6EF window is the reading column: M PLUS Rounded 400 18px/1.6, 68ch, ink 16.6:1. Alternatives pages open with an 'Accepted payment' plate (EarnLock: steps | Opal: tap or timer) above the real two-column table. 'When should I pick X instead' is a printed notice, and the FAQ is <details> rows. Support is the 'Out of order? Call the operator' sticker with the email and response time. Privacy opens with the audit slip summarising the transparency row before the policy text.",
+   "assetsNeeded": "None. Enamel, coils, keypad, LED, plates and the pickup bin are CSS and inline SVG; product dummies are typographic (app names only). Uses the existing icon, 7 screenshots and assets/qr/earnlock.svg.",
+   "risk": "The machine can tip into a novelty prop, so the product window stays a hero-only device and every later section must read as plain set text on enamel or lit panels. A vending machine implies per-item prices; every button must carry the same single daily goal or the page misstates the mechanism. App names behind glass flirt with third-party trademarks, so names are text only, with no logos.",
+   "memoryTest": "A sage-green vending machine where Instagram and TikTok sat behind glass priced at 4,000 steps. When I 'inserted' steps, every button lit up at once.",
+   "specimen": {
+    "bg": "#8DB879",
+    "ink": "#111811",
+    "accent": "#FFB23F",
+    "display": "Dela Gothic One",
+    "dw": 400,
+    "text": "M PLUS Rounded 1c",
+    "h1": "Block the doomscroll until you move.",
+    "sub": "Earn your screen time. Move, then scroll.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Dela Gothic One goes to shogiful-b, whose subject is Japanese. Set the marquee in Mochiy Pop One, a Japanese sticker/marquee gothic unused elsewhere. Make all price lamps lighting together the one move, and shrink the credit display to a small red 7-segment strip, as on real machines. That drops Doto here and leaves it on chessful-a and soon-c. Below the hero, keep the page on machine faces (side-panel plates, the audit printout, the pickup bin) instead of plain set panels."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Keep Doto on chessful-a (a dot-matrix LCD that needs letters) and soon-c (a lamp grid). Set earnlock-a's credit display in DSEG14 Classic 700: a 14-segment alphanumeric LED face, 6 KB, with a comma and A to Z, so 'INSERT 2,026 STEPS' renders in one face and reads as a vending-machine display."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "The Junction Post",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "Swiss hiking-trail signalisation (Schweizer Wanderwege): arrow-tipped yellow blades stacked on a galvanised post, each naming destinations with the walking time. Also the white location plate on top, yellow diamond waymarks along the route, the white-red-white tip for mountain paths, and the trailhead information board.",
+   "thesis": "The shield is a signpost, not a wall. Instagram is a destination 2,026 steps away, and the page is a waymarked route from the junction post (offer + action) to the summit (open until midnight). This refuses the category's lock-and-wall imagery and its phone-in-the-centre hero.",
+   "scene": "A walker at a trail junction on an overcast afternoon reads the post in flat, shadowless daylight, so the scheme is light (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Committed",
+   "palette": [
+    {
+     "hex": "#F6C700",
+     "role": "Wayfinding yellow powder-coat. Every blade: the H1 blade, destination blades, section-heading blades. Edges get a 1px #B39100 coat line for definition against the fog ground"
+    },
+    {
+     "hex": "#141412",
+     "role": "Blade lettering and body ink. 11.5:1 on yellow, 15.3:1 on ground"
+    },
+    {
+     "hex": "#E8EBE6",
+     "role": "Overcast ground. The page background between signs"
+    },
+    {
+     "hex": "#FFFFFF",
+     "role": "Location plate and trailhead info boards. Quick Answer, tables, FAQ, long reading"
+    },
+    {
+     "hex": "#8E9594",
+     "role": "Galvanised post and route rail (decorative structure, never text)"
+    },
+    {
+     "hex": "#C8202A",
+     "role": "Mountain-path red (white-red-white tip). Used only for the emergency-unlock and who_not_for blades (5.7:1 on white)"
+    },
+    {
+     "hex": "#2E6B34",
+     "role": "Arrival green. The 'open until midnight' state in the demo and the focus ring on white (6.4:1)"
+    }
+   ],
+   "type": {
+    "display": "Signika 600/700. A humanist sans drawn specifically for wayfinding and signage (low contrast, open apertures, legible at distance), standing in for the Frutiger-family lettering on Swiss trail blades. Used for blades, the location plate and headings.",
+    "text": "Fira Sans 400/500/600. From the Meta lineage of Spiekermann's transit-signage work and built for long reading on screens; tabular figures (tnum) carry every step count and walking time.",
+    "utility": "",
+    "rationale": "Two humanist signage faces, about 120 KB latin. Signika sets the sign and Fira the guidebook, and numbers stay in Fira tabular figures so the step columns align like the time column on a real blade. No mono costume."
+   },
+   "materials": [
+    "powder-coated yellow aluminium blades with arrow tips (CSS clip-path polygon), single- and multi-destination",
+    "galvanised round post as the page spine (22px bar, one-pixel linear sheen)",
+    "stainless clamp bands where blades meet the post",
+    "white enamel location plate on top of the post",
+    "yellow diamond waymarks (rotated squares) marking each section's start on the route rail",
+    "white-red-white blade tip for the hard parts",
+    "white trailhead info boards with a thin map-frame border for long reading",
+    "grey steel register box bolted to the post (holds badge, price, QR)"
+   ],
+   "firstViewportDesktop": "Overcast ground #E8EBE6. A galvanised post (22px, #8E9594) stands at x=320 from y=72 down past the fold: the page spine. On top is the white location plate (420×64): icon 40px + 'EarnLock' Signika 700 26px + 'iPhone · Apple Watch' Fira 500 15px. Clamped to the post, three right-pointing yellow blades run from x=342 to x=1376. Blade 1 (150px): H1 'Block the doomscroll until you move.' Signika 700 54px, 2 lines. Blade 2 is the three-line destination blade (170px): 'Instagram' / 'TikTok' / 'YouTube' in Signika 600 30px at left, each with '2,026 steps' in Fira 600 tnum 28px right-aligned before the arrow tip. Blade 3 (80px): 'Everything you pick — open until midnight' at left, '4,000 steps ≈ 35 min' at right. Hanging left of the post at x=64–296, y≈420, is the grey register box (232×330): official App Store badge 52px tall, price.value 'Free — Premium from $1.99/mo or $19.99 lifetime' Fira 600 16px, QR 120px 'Scan to install on iPhone'. The fold at y=900 cuts the top of the white trailhead board (Quick Answer).",
+   "firstViewportMobile": "The post becomes a 10px rail at x=16 running the full page as the route line. Location plate (white, 358px): icon 32px + 'EarnLock' Signika 700 20px. Blade 1: H1 in Signika 700 32px/1.08, 3 lines, blade full width to an arrow tip at the right gutter. Blade 2: 'Instagram · TikTok · YouTube' Signika 600 19px with '2,026 steps' Fira 600 tnum 19px right. Blade 3: 'Open until midnight — 4,000 steps ≈ 35 min' Fira 600 15px. The register box hangs below: official badge 48px tall + price.value Fira 600 15px. Fold ≈ y=820. No QR.",
+   "conversion": "Smart App Banner unchanged in head. Apple's badge is mounted unaltered in the steel register box on the post, which is the trail's 'take one' box, with price.value printed under it. The QR sits in the same box on ≥1024px with 'Scan to install on iPhone'. The sticky bar is a slim yellow blade (60px) that slides in from the bottom once the register box scrolls away: 'EarnLock — Free · $19.99 lifetime' Signika 600 + badge 40px at the arrow end. Plans are a price blade list, and the closing CTA is the summit marker carrying badge, QR and price.",
+   "visitorPath": [
+    "Junction post: location plate (icon, name, platforms), H1 blade, destination blade (locked apps with remaining steps, from screenshot 1), goal blade (Light 4,000 ≈ 35-min walk, from screenshot 7), register box (badge, price.value, QR)",
+    "Trailhead board: the visible Quick Answer (quick_answer + speakable) on white. The ai-canonical Quick reference <details> is the folded route leaflet tucked under the board (summary visible, content in HTML)",
+    "Blade 'Shadow Week · 7 days': the spotlight heading + lead with spotlight.stats as a three-line trail log, plus screenshots 2 and 5 ('Day 2 of 7 — 4 times', '23 would-be blocks · ~30m/day') labelled as app screens",
+    "Blade 'How the route works': how_it_works 3 steps on the route rail with numbered waymarks 1 → 2 → 3 (HowTo)",
+    "Blade 'Views from the route': the 7 screenshots in a horizontal scroll-snap strip on white boards, alt text as captions",
+    "Blade 'Why it's a destination, not a wall': value_points (4) as route notes",
+    "Blade 'Kit list': features (9) as a two-column checklist, name in Signika 600 and description in Fira",
+    "Blade 'Prices': plans as four destination lines (Free $0 / Monthly $1.99/mo / Yearly $9.99/yr, marked 'most walkers' / Lifetime $19.99 once), each with its feature list, plus plans_footnote and the Family Sharing line",
+    "Blade 'Other routes': comparison_table on a white board with an inline badge, then alternatives_to as a list of 'other routes' linking to the 12 /alternatives/ pages",
+    "Blade 'Who this trail suits': who_for; who_not_for under a white-red-white-tipped blade ('Not parental control', 'Not for Android', medical caution)",
+    "White-red-white blade 'The hard part': the math-gated emergency unlock, 1/day (from features + faq)",
+    "Trail keeper plate: founder (Lagerland Apps · Finland) heading, bio, signals, support email + response time",
+    "Blade 'Questions at the hut': faq (14) as <details>",
+    "Blade 'Leave no trace': privacy (data_collection none, notes, Apple label) with the transparency row (0 SDKs, no server, data leaves device: No), linking to /transparency/, the privacy policy and support",
+    "Route pamphlet: related_journal ('What an iPhone app can actually block') + 'The unlock cost has to live outside the app'",
+    "Summit, the closing CTA: 'Open until midnight.' with badge, QR and price.value. The summit plate carries maker/freshness: Built by Lagerland Apps · v1.0 · first released 2026-05-22 · last updated 2026-05-22",
+    "'Other trails from Lagerland' (other apps), then the shared 'A Lagerland app' strip"
+   ],
+   "navigation": "A junction cluster. The sticky white location-plate header (56px) has icon + 'EarnLock' at left and, at right, five small yellow arrow tabs: 'Prices', 'Shadow Week', 'How it works', 'Questions', 'Privacy' (Signika 600 15px, CSS arrow tips; no unicode arrows). On mobile one yellow 'Routes' blade opens a vertical stack of the same blades. Section waymarks on the rail double as anchor targets. Focus ring: 3px #2E6B34 with a 2px white gap.",
+   "signatureInteraction": "Re-sign the post. A three-position switch under the blades (Light 4,000 ≈ 35 min / Standard 8,000 ≈ 75 min / Challenge 12,000 ≈ 110 min, the app's own presets) and a 'steps walked' slider re-letter every destination blade at once. Digits roll in 180ms and the goal blade's time updates. At 0 remaining, every destination reads 'open until midnight' and the tips switch to arrival green. Labelled 'Illustrative — your numbers come from Apple Health.' No-JS: the post renders the Light example (2,026 steps on every blade), with the three presets listed as a printed line under it. Reduced motion: text changes instantly with no roll.",
+   "motionGrammar": "Grounded and still: signs don't swing and the page doesn't animate on scroll. The only motion is digits re-lettering on the blades (180ms vertical roll) and the sticky blade sliding in (200ms). Waymarks are static.",
+   "readModeVariant": "The location-plate header, then one yellow blade carrying the page title (Signika 700 40px) pointing right, then the white trailhead board as the reading column: Fira Sans 400 18px/1.65, 66ch, on the overcast ground with the route rail at left. On alternatives pages the title blade becomes a two-way blade ('EarnLock' ← | → 'Opal'), the compare table sits on a white board, and 'When should I pick Opal instead' sits under a white-red-white tip. Support is the trail-keeper contact plate; privacy opens with the 'Leave no trace' transparency summary.",
+   "assetsNeeded": "None. Blades, post, waymarks and register box are CSS clip-path and inline SVG. Uses the existing icon, screenshots and QR.",
+   "risk": "Familiarity: 'walking → hiking trail' is the most obvious bridge from this product, it is the developer's own metaphor, and it topped the ranking for that reason. Yellow blades can read as Swiss-tourism pastiche. The Wanderwiki sibling's name invites the same trail world, so if both pages go trail, one must yield. Large areas of yellow tire the eye on a long page, so blades stay headings only and the reading happens on white boards.",
+   "memoryTest": "A yellow hiking signpost told me Instagram was 2,026 steps away, and even the prices were written on the signs.",
+   "specimen": {
+    "bg": "#F6C700",
+    "ink": "#141412",
+    "accent": "#C8202A",
+    "display": "Signika",
+    "dw": 600,
+    "text": "Fira Sans",
+    "h1": "Block the doomscroll until you move.",
+    "sub": "Earn your screen time. Move, then scroll.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Keep Signika on aftershift-c. Letter earnlock-b's blades in Hind 600/700 (Frutiger-model, about 32 KB); Swiss trail blades are lettered in ASTRA-Frutiger. Keep Fira Sans for the guidebook text. Don't move the blades to Fira, because Fira Sans Extra Condensed is xiangqiful-b's display."
+    },
+    {
+     "sev": "major",
+     "text": "Mark the highlighted Yearly row with the blade's arrival-green tip and no popularity text, or with its own summary ('7-day free trial'). Keep Lifetime's front-matter label verbatim."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "Belt-Clip Counter",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 4,
+   "lineage": "The clip-on pedometer: Yamasa's 1965 manpo-kei ('10,000-steps meter') and its 1990s LCD descendants. Elements: a moulded plastic shell, a reflective grey-green LCD with fixed icon segments (STEPS, KCAL, MIN), MODE and RESET buttons, silkscreened legends, a 7-day memory, and a belt clip and battery-cover label on the back.",
+   "thesis": "Your phone becomes the pedometer. The viewport is framed by its cobalt shell, the reflective LCD is the page ground, the remaining count is the headline object, and MODE cycles steps → minutes → kcal. This refuses the category's glowing dark dashboard and neon rings: a passive LCD lit by the sun.",
+   "scene": "A walker on a pavement at midday glances down at the counter clipped to their waistband in direct sun. The LCD is reflective with no backlight, so the scheme is light (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Committed",
+   "palette": [
+    {
+     "hex": "#C5CDB3",
+     "role": "Reflective LCD. The page ground and all reading surfaces. Ink on it 10:1"
+    },
+    {
+     "hex": "#1C2117",
+     "role": "Active segment ink. All text and digits; also the inverse band (LCD-colour text on ink) for highlights such as the Yearly plan and the EarnLock compare column"
+    },
+    {
+     "hex": "#B0B89D",
+     "role": "Unlit ghost segments. The '88,888' underlay behind live digits; decorative only, never text"
+    },
+    {
+     "hex": "#2443B8",
+     "role": "Moulded cobalt shell. Fixed viewport bezel, top strip, button panel, sticky bar, back-label sections"
+    },
+    {
+     "hex": "#F4F3EE",
+     "role": "Silkscreen white. Legends and text printed on the shell (7.35:1 on cobalt), and the QR sticker label"
+    },
+    {
+     "hex": "#8DB879",
+     "role": "MODE button rubber in the app icon's sage (ink legend 7.2:1). The one accent, used only on pressable keys"
+    }
+   ],
+   "type": {
+    "display": "DSEG7 Classic 400/700. Real 7-segment LCD digit forms, used only for live counts, prices, dates and times; 400 sets the ghost '88,888' underlay and 700 the lit digits.",
+    "text": "Hanken Grotesk 400/500/800. The plain neo-grotesk of silkscreen legends on moulded plastic. 800 sets the H1 and section heads on the LCD, 500 the shell legends, 400 the body at 18px.",
+    "utility": "",
+    "rationale": "DSEG7 is the only face that makes the count read as an instrument reading. It has no lowercase letters or '$', so every word, unit and currency sign is in Hanken, as on a real LCD's printed legend. About 60 KB latin."
+   },
+   "materials": [
+    "reflective LCD panel: flat grey-green with a faint 2% polarizer gradient, no glow",
+    "7-segment digits over unlit ghost segments",
+    "fixed LCD icon segments: 'STEPS', 'MIN', 'KCAL', a lock glyph, a 'PREMIUM' flag (inline SVG)",
+    "moulded cobalt ABS shell as a fixed viewport bezel with a 36px outer radius",
+    "silkscreen-white legends printed on the shell",
+    "sage rubber MODE key and a small recessed RESET key",
+    "white adhesive label for the QR",
+    "battery-cover back label (maker plate, no-transmitter privacy statement)"
+   ],
+   "firstViewportDesktop": "The viewport is the device. A fixed 24px cobalt #2443B8 bezel with 36px outer radius frames the window; content scrolls inside. Top shell strip (64px): icon 32px + 'EarnLock' Hanken 800 20px silkscreen-white at left, nav legends at right. On the LCD ground, H1 'Block the doomscroll until you move.' Hanken 800 54px/1.02 ink, 2 lines, at x=72, y=112. The dominant move below it: '3,412' in DSEG7 Classic 700 at 232px over a ghost '88,888' (#B0B89D), spanning x=72–980, with fixed segments to its right: 'STEPS' / 'UNTIL UNLOCK' Hanken 700 24px and the lock glyph. The right LCD column (x=1040–1360) holds the memory rows: '3,412 steps · Free', '18 min exercise · Premium', '187 active kcal · Premium' (DSEG7 34px + Hanken 15px), with the sage MODE key (72px round) under them. The cobalt button panel starts at y≈740: price.value 'Free — Premium from $1.99/mo or $19.99 lifetime' Hanken 700 18px white, the official App Store badge 56px tall, and QR 120px on a white label 'Scan with your iPhone camera'. All visible above the fold.",
+   "firstViewportMobile": "Cobalt top strip 52px (icon 28px, 'EarnLock', 'Menu' shell key); fixed 6px cobalt side rims with 14px LCD padding inside. On the LCD: H1 Hanken 800 32px/1.05 (3 lines), then '3,412' DSEG7 700 at 104px over ghost '88,888', then 'STEPS UNTIL UNLOCK' Hanken 700 15px. Then the MODE key (sage, 56px) with the line '18 min · 187 kcal — Premium' 14px. Then the cobalt button panel: official badge 48px tall + price.value Hanken 700 15px white. Fold ≈ y=800. No QR.",
+   "conversion": "Smart App Banner sits above the shell strip (Safari). Apple's black badge sits unaltered on the cobalt button panel inside a 2px silkscreen-white keyline rectangle. The QR is on a white adhesive label, ≥1024px only. price.value is silkscreened on the shell, and plans become LCD price readouts. Sticky bar: once the button panel scrolls off, the bezel's bottom edge grows into a 64px cobalt strip ('EarnLock · Free — Premium from $1.99/mo or $19.99 lifetime' + badge 40px), full width on mobile. The closing CTA puts '0' on the LCD with 'OPEN UNTIL 23:59', then badge, QR and price.",
+   "visitorPath": [
+    "Shell strip + LCD hero: H1, the giant remaining count, fixed unit segments, memory rows for the three goal units with Free/Premium flags, and hero.subheadline as the LCD caption",
+    "Cobalt button panel: MODE key, price.value, badge, QR, silkscreen trust legends ('NO ACCOUNT · NO SERVER · 0 THIRD-PARTY SDKs · iOS 17 + watchOS 10')",
+    "'READ ME' display page: the visible Quick Answer (quick_answer + speakable). The ai-canonical Quick reference <details> is the 'INFO' submenu below it (summary visible, content in HTML)",
+    "'7-day memory': the spotlight (Shadow Week) heading + lead, with seven LCD day cells D1–D7. Only the real example values are shown: Day 2 = 4 would-be blocks, week total 23, ~30m/day (screenshots 2, 5, labelled); the other cells show ghost '--'. spotlight.stats sit beneath",
+    "'How it counts': how_it_works as three LCD screens in sequence, 1 SET · 2 COUNT · 3 UNLOCK (HowTo), each with its full detail",
+    "'The shield': screenshot 1 large on the LCD with the shield copy, plus value_points (4) as a plain list",
+    "'Display frames': the 7 screenshots in a horizontal scroll-snap row, alt text as captions",
+    "'Modes & functions': features (9) as the device's function table (name | what it does)",
+    "'Prices': plans as readouts ($ in Hanken, digits in DSEG7: 0 / 1.99 per mo / 9.99 per yr / 19.99 once). Yearly is an inverse band; plans_footnote and Family Sharing follow",
+    "'Compared with': comparison_table on the LCD with the EarnLock column in inverse, the footnote and an inline badge; then alternatives_to linking to the 12 /alternatives/ pages",
+    "'Fits / doesn't fit': who_for and who_not_for as two columns",
+    "Back label (cobalt panel, silkscreen white): founder (Lagerland Apps · Finland) heading, bio, signals, support email + response time",
+    "'Questions': faq (14) as <details>",
+    "'No transmitter inside': privacy on the battery-cover label. data_collection none, notes, Apple label; transparency figures in DSEG7 ('0' SDKs, '0' tracking domains, network calls 'None'), linking to /transparency/, the privacy policy and support",
+    "'Further reading': related_journal + the unlock-cost essay",
+    "Closing CTA: the LCD shows '0' / 'OPEN UNTIL 23:59' with badge, QR and price.value",
+    "Silkscreen maker line on the shell: Built by Lagerland Apps · v1.0 · first released 2026-05-22 · last updated 2026-05-22 (dates in DSEG7); other Lagerland apps; shared 'A Lagerland app' strip"
+   ],
+   "navigation": "Silkscreened legends on the top shell strip ('PRICES', 'SHADOW WEEK', 'HOW IT COUNTS', 'QUESTIONS', 'PRIVACY'; Hanken 500 14px, +0.04em) as anchor links, underlined in silkscreen white on hover and focus. On mobile a 'Menu' shell key opens the list on an LCD panel. The fixed bezel keeps the strip visible. Focus ring: 3px #1C2117 on the LCD and 3px #F4F3EE on the shell.",
+   "signatureInteraction": "MODE. A real <button> on the shell cycles the big reading through the app's own shield copy: '3,412 STEPS UNTIL UNLOCK' (Free) → '18 MIN EXERCISE UNTIL UNLOCK' (Premium flag lit) → '187 KCAL UNTIL UNLOCK' (Premium). Segments switch the way an LCD does. A small RESET key shows '00:00 — resets at local midnight'. The memory rows keep all three readings visible at all times, so JS only changes which one is large. No-JS: the steps reading is large and the other two print in the memory rows, so nothing is missing. Reduced motion: an instant swap with no 80ms segment fade.",
+   "motionGrammar": "LCD physics. Segments turn on and off with an 80ms opacity change and no easing or travel; the count changes digit by digit. Nothing slides or reveals on scroll except the sticky shell strip (200ms). The bezel never moves.",
+   "readModeVariant": "The same fixed cobalt bezel and top strip. The LCD ground carries a calm column: Hanken 400 18px/1.6, 68ch, ink 10:1; page title Hanken 800 44px; dates and figures in DSEG7. Alternatives pages open with a two-reading LCD ('EarnLock: steps' | 'Opal: tap or timer') before the real table, with 'When should I pick X instead' as a plain list. Support is the back label with the email and response time. Privacy opens with the 'No transmitter inside' summary from the transparency row.",
+   "assetsNeeded": "None. Shell, LCD, segments and keys are CSS and inline SVG; DSEG7 provides digits and ghost segments. Uses the existing icon, screenshots and QR.",
+   "risk": "A fixed device bezel can read as a gimmick and costs width on phones, so it shrinks to 6px rims at 390. The low-chroma grey-green LCD ground can read as dull unless the cobalt shell and the giant count carry the energy. DSEG7 has no letters or '$', so faces must mix carefully in prices. Long reading on an LCD ground has to hold its 10:1 contrast with no texture behind text.",
+   "memoryTest": "The whole page was a blue pedometer. A huge grey-green LCD said 3,412 steps until unlock, and pressing MODE switched it to minutes and calories.",
+   "specimen": {
+    "bg": "#C5CDB3",
+    "ink": "#1C2117",
+    "accent": "#2443B8",
+    "display": "DSEG7 Classic",
+    "dw": 400,
+    "text": "Hanken Grotesk",
+    "h1": "Block the doomscroll until you move.",
+    "sub": "Earn your screen time. Move, then scroll.",
+    "fontsOk": false,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Keep wayfinding and Signika on earnlock-b, since walk-to-unlock is literally a route and it is EarnLock's #1. Replace aftershift-c with aftershift candidate #6, the sleep diary / double-plotted actogram (instrument/data graphic). One 24-hour row per day carries 'scored against the next shift' directly. Draw it as a plotted raster of sleep bars, not a ruled table, so it stays apart from aftershift-b's rota. Candidate #2, the blackout bedroom at noon, is the alternative if a second dark scene is wanted."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Set the reading at font-size: min(104px, 21.5vw), since five DSEG7 digits measure 4.08em. Print LCD counts without a thousands separator ('3412', as real pedometers do), put the comma-formatted value in a visually hidden span, and mark the ghost aria-hidden. Move the button panel with badge and price directly under 'STEPS UNTIL UNLOCK' and the MODE key below it, so the badge sits at about y480 to 560."
+    },
+    {
+     "sev": "major",
+     "text": "Mould the shell in the icon's black #17191A (silkscreen #F4F3EE on it is 15.9:1) and keep the sage MODE key: the icon's own pair. The LCD stays the light page ground, so the result doesn't become near-black plus neon."
+    }
+   ]
+  }
+ ],
+ "canon": "Canon (the category played straight; not recommended): a near-black page with the app's sage ring glowing behind a centred iPhone mockup, the headline 'Earn your screen time.', App Store badge + QR, a 4-stat row (steps / minutes / kcal / $19.99 lifetime), a feature card grid, the compare table, then FAQ.",
+ "notes": "The roll ran degraded (roll service offline, no catalog challengers, no quality-bar boards). Key d77c87e0, assigned 5, re-roll 1 = 4 (distinct on the first try). Neither roll hit candidate 1, so B is the honest pick. All seven faces were verified on Fontsource with the named weights (npm pack listing): Dela Gothic One 400; M PLUS Rounded 1c 100–900; Doto 100–900; Signika 300–700; Fira Sans 100–900; DSEG7 Classic 300/400/700; Hanken Grotesk 100–900. Data inconsistencies the build must not repeat or should fix first: (1) hero.cta_subline says 'pay once, no subscriptions', but Premium Monthly/Yearly subscriptions exist; reword before reuse. (2) how_it_works says the default goal is 7,500 steps, while the app's presets (screenshots 4, 7) are 4,000 / 8,000 / 12,000; the mocks use the screenshot values. (3) The founder bio says 'the studio's other 17 apps' and signals say '19 privacy-first apps'; both are hard-coded and disagree, so compute counts. (4) Copy says 39 locales but app_enrichment.yml lists 32 language codes. (5) The journal mentions CloudKit for the iPhone-to-Watch handoff while the page says WatchConnectivity with no server; reconcile the privacy wording. (6) alternatives_to includes 'Apple Screen Time (built-in)', which has no /alternatives/ page; render it unlinked. (7) 'Cheapest lifetime among screen-time blockers' is a superlative claim; keep it tied to the dated comparison footnote. No testimonials exist and ratings.count is 0, so no stars or quotes appear anywhere. Sibling watch: B's trail world may collide with Wanderwiki's name; A's sage enamel and C's sage MODE key both borrow the icon green, which is EarnLock's own and not a sibling's.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}

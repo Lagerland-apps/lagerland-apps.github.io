@@ -1,0 +1,265 @@
+{
+  "surface": "xiangqiful — microsite /apps/xiangqiful/ (Persuade) + /apps/xiangqiful/privacy/, /apps/xiangqiful/support/ and the five alternatives pages that target it: /alternatives/xiangqi-com/, /alternatives/pychess/, /alternatives/club-xiangqi/, /alternatives/playok-xiangqi/, /alternatives/chinese-chess-best-xiangqi/ (Read variants of the same world)",
+  "dossier": {
+    "mechanism": "You play one of ten teahouse personalities (strength 400–1900), then Pikafish reads the whole game back on your own device: it grades every move on seven steps, names each mistake in xiangqi's own words (screenless cannon, trapped horse, broken advisors, a missed Iron Bolt) and turns those named mistakes into tomorrow's drills and mate problems. All of it happens on a board you can read without knowing Chinese, because a hybrid piece set puts each western symbol on its character.",
+    "audienceScene": "Two visitors, both mostly on a phone after a search or an AI answer. (1) A western chess player who wants to try xiangqi but was put off by the characters on the pieces; they type 'learn xiangqi' or 'chinese chess app'. (2) A player who grew up with xiangqi or cờ tướng in a park, a family or the diaspora, and wants an engine to go through their own games offline, with no account; they type 'chinese chess offline' or 'pikafish iphone'. Desktop visitors coming from AI answers need the QR to get the app onto their iPhone.",
+    "culturalHome": "Xiangqi's own culture: stone tables in parks, teahouses, Vietnamese sidewalk games, the big demonstration board in the commentary hall after a round, and the Ming and Qing manuals (Shiqing Yaqu 1570, Juzhongmi, the Plum Blossom manual). For the chess crossover, the culture of engine review. The bilingual (character + Latin) everyday world of Hong Kong, Taipei and Chinatowns. Chinese schooling: 田字格 character grids, red-pen marking and the 錯題本 mistake notebook.",
+    "mustProve": "The first viewport has to show three things. First, one mistake named in xiangqi's own words, using the app's own string (e.g. 'Your horse stepped into the line and handed the enemy cannon the screen it needed.'), proof that the review explains rather than scores. Second, that the pieces are readable without Chinese (character + symbol + English name). Third, the offer: free, Premium from $1.99/mo, offline, no account, with the official badge and a desktop QR.",
+    "categoryDefault": "The chess-app page: a dark navy ground, a 3D boxwood board with red and black discs, gold accents, an iPhone mockup on the right, 'Master Chinese Chess', and a grid of feature cards. The 'Chinese' version adds red and gold, lanterns, brush calligraphy and wood grain. The app's own UI (navy plus boxwood plus gold) already sits in this rut.",
+    "predictableOpposite": "A white Swiss minimal page with a flat vector board, one red dot as the accent, and lots of air and tiny type. Calm, but it could sell any board game.",
+    "literalReading": "The page as a xiangqi board: the river 楚河 漢界 across the middle, sections as ranks, discs as bullets. 'Full of xiangqi, move by move.' Only candidate 1 (the commentary board) uses the board, and it uses it as an instrument rather than as the page's map.",
+    "evidence": [
+      "quick_answer: ten AI opponents 400–1900; Pikafish on-device grades and names mistakes (screenless cannon, trapped horse, broken advisors, missed Iron Bolt); 80 lessons in 8 tracks; 902 mate problems, most from eight classical manuals; 150+ drills; three piece sets",
+      "price.model freemium, value 'Free — Premium from $1.99/mo'; plans Free $0 / Premium·Monthly $1.99/mo / Premium·Yearly $9.99/yr (highlight 'Best value') / Lifetime $19.99 once; one-week free trial on both subscriptions; schema_high_price 19.99, offer_count 4; plans_footnote present",
+      "platforms iOS, iPadOS, macOS; status live; release 1.0 first_release 2026-09-30, last_updated 2026-10-01; App Store id6794340136; QR assets/qr/xiangqiful.svg; OG assets/og/xiangqiful.png",
+      "Blocks present: hero (pre_headline, headline 'Chinese chess, taught properly.', secondary, subheadline, cta_label/subline), 9 captioned screenshots, who_for(6)/who_not_for(5), founder (Organization, Finland, story + 5 signals), value_points(4), features(8), how_it_works(6 steps, custom heading), example_insights(6 app-string cards = insight gallery), alternatives_to(5), comparison_table(5 apps × 6 rows + footnote), roadmap(3 shipped + 3 under consideration + disclaimer), privacy(none/no tracking/no account + 6 notes + Apple label), faq(17), related_apps shogiful+chessful, related_journal, show_body. No spotlight, no training_vocabulary, no testimonials, no ratings.",
+      "Nine drill modules named like places: Mate Trail, Cannon Range, Horse Trails, Opening Lab, Palace Workshop, Endgame Studio, Tactics Yard, Tactic Cards, Handicap House",
+      "Opponents (copy + screenshot 7): Xiǎobǎo 400, Nǎinai Chén 500, Ā Fú 620, Chūnhuā 720, Lǎo Wáng 820, Tiěmǎ, Shuāngpào, Qiūyuè, Shīfu 1,900; tiers Novice/Beginner/Intermediate/Advanced; beat one twice and the next sits down. The 10th name and the strengths of opponents 6–9 are not in front matter",
+      "App UI (screenshots 1–9): navy-black ground, boxwood board, cream discs with red (帥 仕 相 傌 俥 炮 兵) or black (將 士 象 馬 車 砲 卒) characters, small western symbols on hybrid discs, gold accent buttons, optional 3D board; Game Review shows WXF moves (P7+1, C2=3, C8=7, H2+1, H2+3) with grade icons, accuracy Red 80% / Black 81%, '3 moments to review — most often: Missed tactic'; Training shows 'Piercing the Heart, Mate in 3, every move must give check' with a readable position",
+      "Icon: black disc with a red 帥 and gold circuit traces on a dark ground",
+      "Journal 'xiangqi-mate-problems-from-classical-manuals': 708 problems from eight manuals (Shiqing Yaqu 227) + 194 original; every line solver-checked, book never corrected; real app strings 'Find the mate. Every move must give check.' and 'Review — due today'",
+      "transparency.yml: 0 third-party SDKs, 0 tracking domains, no networking code, Data Not Collected, Pikafish GPL-3 compiled in, SwiftData with no CloudKit",
+      "Fonts checked on Fontsource (npm pack + fontTools): Atkinson Hyperlegible Next, Sofia Sans and Mona Sans lack ǎ ǐ ǒ ǔ (needed for the pinyin names); Source Sans 3, Fira Sans/Fira Sans Extra Condensed, Lexend, LXGW WenKai TC and Noto Sans/Serif TC have them. In the TC faces the ~60 needed CJK glyphs are spread across 14 slices (1.5–2.9 MB), so each style needs a one-time custom woff2 subset (~25–45 KB)"
+    ]
+  },
+  "candidates": [
+    {
+      "index": 1,
+      "name": "The commentary hall's big board (大盤講棋)",
+      "family": "instrument / place",
+      "why": "After a tournament round, and on decades of Chinese TV lectures, a master replays the game for the room on a giant vertical magnetic board and names each mistake. That is 'the engine reads it back to you, move by move.' It carries the mechanism directly: one pinned board replays a game while the app's own named-mistake strings hang beside it as the master's verdicts. This is the only candidate allowed the literal board."
+    },
+    {
+      "index": 2,
+      "name": "Park stone tables (石桌棋盤)",
+      "family": "architecture / place (stone, outdoors)",
+      "why": "The incised granite tables of Guangzhou parks, Hanoi sidewalks and Columbus Park in New York are the worldwide image of xiangqi, with regulars and kibitzers around them. It carries the ten personalities (a park grandmother who never leaves her palace) as a path of occupied tables, the next one sitting down once you beat the last twice. The review would be a kibitzer's verdict chalked on the stone."
+    },
+    {
+      "index": 3,
+      "name": "The two-colour annotated manual (朱墨套印評點本)",
+      "family": "print / paper",
+      "why": "708 of the 902 mate problems come from eight Ming and Qing manuals. In the 評點 tradition a critic's verdicts are overprinted in vermilion over the black main text. It carries the mechanism as your game set as the main line, with Pikafish's grades and named mistakes as vermilion eyebrow notes (眉批). It sits on the cream + serif + red cluster and would need the hardest correction."
+    },
+    {
+      "index": 4,
+      "name": "The pavement endgame stall (江湖殘局)",
+      "family": "textile / street",
+      "why": "A cloth on the pavement, a famous classical ending (the Seven Stars, which the Advanced track teaches) and a card reading 'Red to move and win': this is the street's own mate problem. It carries the consecutive-check problems, and the app's honesty: book problems that don't hold up were left out, the opposite of a rigged stall. The hustle connotation fights the calm brand."
+    },
+    {
+      "index": 5,
+      "name": "The mistake notebook, marked in red (錯題本 + 紅筆批改)",
+      "family": "school stationery / print",
+      "why": "Anyone schooled in Chinese kept a 錯題本, copying out wrong answers to redo them. A teacher marked it in red pen: tick, circle, cross, a comment, a correction line. Characters were learned one at a time in 田字格 squares. It carries the whole loop literally: your mistake copied in, named, given one thing to do next game and dated for review (SM-2). A 田字格 row teaches the pieces the way the hybrid set does."
+    },
+    {
+      "index": 6,
+      "name": "The tear-off almanac day (老黃曆 宜/忌)",
+      "family": "ephemera / household ritual",
+      "why": "The household almanac gives one thin sheet per day: a huge date numeral, a 宜 (do) list and a 忌 (avoid) list. It carries 'today's training from your weakest skill', with 宜 as the focus drill and 忌 as the mistake costing you most. But it holds only the daily-plan half of the loop, and it risks converging with the calendar worlds of Soon. or Taskful Day."
+    },
+    {
+      "index": 7,
+      "name": "Bilingual metro wayfinding (character over English, line maps)",
+      "family": "signage / wayfinding",
+      "why": "In the metros of Hong Kong, Taipei and Guangzhou the character name is set large over its English twin on enamel panels and tiled walls. That is how millions match characters to Latin at a glance, which is exactly the hybrid piece set. It carries every heading as a bilingual sign, the opponent ladder and your graded game as line maps, the drill modules already named like destinations (Mate Trail, Cannon Range, Palace Workshop), and the roadmap as dashed planned extensions."
+    }
+  ],
+  "seed": {
+    "key": "4b726ce3",
+    "assigned": 7,
+    "reroll1": 5
+  },
+  "styles": [
+    {
+      "id": "a",
+      "label": "Bilingual Concourse",
+      "kicker": "THE ROLL",
+      "sourceIndex": 7,
+      "lineage": "Bilingual metro wayfinding of Hong Kong, Taipei and Guangzhou: the Chinese name set large in Hei over its English twin on white vitreous-enamel panels, glazed square-mosaic station walls in one station colour, strip line maps with station dots and interchange rings, and dashed lines for planned extensions on network maps. It borrows the grammar only; no operator's name, logo, roundel, typeface or colour code.",
+      "thesis": "The page is a station. Every heading is a bilingual sign (character over English, the hybrid piece set as a principle), the opponent ladder and your reviewed game are line maps, and the App Store is the Exit. It refuses both the screenshot-in-a-phone product page and the red-and-gold 'Chinese' costume.",
+      "scene": "A commuter on an underground concourse under flat white ceiling light, reading enamel signs on a glazed teal tile wall while waiting for the train → light.",
+      "scheme": "light",
+      "colorStrategy": "Drenched",
+      "palette": [
+        { "hex": "#0E6A70", "role": "glazed mosaic tile — the page ground behind every panel (white enamel on it 5.8:1)" },
+        { "hex": "#0A4E53", "role": "grout and tile shade — the 2px seams of the 24px tile pattern, the footer band" },
+        { "hex": "#F5F6F2", "role": "vitreous-enamel white — every sign face and reading panel" },
+        { "hex": "#131517", "role": "sign black — all text, line strokes and station dots, the Exit panel, Black pieces (17:1 on enamel)" },
+        { "hex": "#C8102E", "role": "Red-side red — red pieces and Red's moves on the game line only, never decoration (5.4:1 on enamel)" },
+        { "hex": "#8A9095", "role": "planned-line grey — dashed roadmap extensions and 'book' move markers" }
+      ],
+      "type": {
+        "display": "Noto Sans TC 900 for the character line of every sign: 象棋 at 168px in the hero, section characters at 72–96px. It comes from a one-time ~60-glyph subset (the 14 piece characters including 傌 俥 炮 砲, 楚河漢界, 象棋, the section terms). Source Sans 3 700 sets the English line beneath: 64px in the hero, 40px on section signs.",
+        "text": "Source Sans 3 400/600: panel copy at 19px/1.55, sign small print at 15px, the FAQ and fare table.",
+        "utility": "Source Code Pro 500 for real data only: WXF/ICCS notation (C2=5, H2+3), move numbers on the game line, opponent strengths 400–1900.",
+        "rationale": "Source Sans is the Latin half of Source Han Sans (= Noto Sans TC), so each bilingual sign is one superfamily, as a real sign system is. It sits in the humanist lineage of Chinese-metro English signage, and it carries the pinyin tone marks the opponents need (Xiǎobǎo, Nǎinai Chén), which Atkinson Hyperlegible Next and Sofia Sans lack. Budget: SS3 latin 400/600/700 47 KB, plus a cut ~4 KB/weight pinyin-vowel file instead of full latin-ext, SCP 500 12 KB and the CJK subset ~30 KB, ≈ 100 KB in total."
+      },
+      "materials": [
+        "glazed square mosaic tile: 24px tiles, 2px grout, a two-tone glaze variance from a 4-tile inline SVG pattern; flat, no sheen",
+        "vitreous-enamel sign panels: 6px radius, a 1px #0A4E53 edge, printed-flat colour, no drop shadow",
+        "strip line map: a 6px sign-black line, 12px station dots, 20px interchange rings, a terminus bar",
+        "the inverse Exit panel: a sign-black panel with white type and a stroked exit pictogram (the only black panels on the page, and they always lead to the App Store)",
+        "dashed planned-extension line in #8A9095",
+        "wayfinding pictograms drawn as 2.5px stroked SVG (exit, info i, arrow, no-entry, interchange): no emoji, no icon font"
+      ],
+      "firstViewportDesktop": "1440×900. Teal tile wall edge to edge. At the top is a 64px white enamel line strip, full width: app icon 32px in a white roundel and 'Xiangqiful' in SS3 700 22px at left, then the page's stations on one 6px black line (Board · Opponents · Review · Training · Fares · Help), SS3 600 15px names under 12px dots, the current dot enlarged with an outer ring. 40px below, one great enamel sign spans x 80–1360 (1280×560). Its left 64% holds: 象棋 in Noto Sans TC 900 at 168px sign-black; 'Chinese chess, taught properly.' in SS3 700 64px; hero.secondary at 21px; a 2px black rule; the price statement 'Free · Premium from $1.99/mo' in SS3 600 22px. Its right 36% is the inverse Exit sub-panel (sign-black, 460×560): exit pictogram, 'Exit — App Store' in SS3 700 28px white, the official black badge at 56px tall, then the QR (assets/qr/xiangqiful.svg, 136px) on an enamel inset captioned 'Scan to install on iPhone', and cta_subline at 14px. A 112px band along the bottom edge of the sign carries the piece directory: seven hybrid discs at 64px (character + western symbol) with the English names (General, Advisor, Elephant, Horse, Chariot, Cannon, Soldier) at 15px. At the fold (y≈840) the 'line of your game' enamel strip begins, its first interchange ring visible.",
+      "firstViewportMobile": "390×844. Safari's Smart App Banner sits above. A 52px enamel line strip: icon 28px + 'Xiangqiful' 18px at left, a 'Line' button (three stroked station dots + label) at right. Teal tile shows as 16px gutters. The great sign is 358px wide: 象棋 at 92px; the English headline at 34px/1.08 over 2 lines; secondary at 17px; 'Free · Premium from $1.99/mo' at 17px 600. The sign's bottom section is the inverse Exit sub-panel at full sign width: 'Exit — App Store' at 18px white, with the official badge at 48px tall (no QR under 900px). The fold cuts through the piece directory: a scroll-snap row of 72px hybrid discs with English names, three visible.",
+      "conversion": "The official Apple badge always sits on a sign-black Exit panel, framed and never altered. These panels appear in the hero, after the game line, after the fare table and as the last exit. The desktop QR is on an enamel inset inside the hero Exit panel and the last exit. The sticky bar is a 56px enamel direction strip that slides up from the bottom edge once the hero Exit panel scrolls away: exit pictogram, 'Xiangqiful · Free · Premium from $1.99/mo', and the badge at 40px. The price statement is the hero's fare line; the full fare board comes later, with plans_footnote as its small print. Smart App Banner meta (app-id=6794340136) goes in the head.",
+      "visitorPath": [
+        "Concourse sign (hero): 象棋 over 'Chinese chess, taught properly.', secondary, fare line, Exit panel (badge + QR), seven-disc hybrid piece directory (value_points[0])",
+        "Information board: quick_answer at 20px on an enamel panel marked with the info pictogram (speakable). Directly beneath, the 'Quick reference' <details> as a timetable panel with the summary always visible",
+        "棋盤 / Read the board: three sign variants of the same Cannon disc (traditional 炮, western symbol, hybrid), then a seven-row directory giving each piece its movement rule (cannon jumps exactly one piece to capture, horse blocked at the leg, elephant stays home, generals never face each other). Feature 'A board you can read' as the panel's small print; screenshot 3 in an enamel poster frame with its caption",
+        "復盤 / The line of your game: the graded route strip (signature), its six interchange signs carrying the six example_insights cards in the app's own words (tag as line name, headline as sign, body as small print), and 'Red 80% · Black 81%' credited to the app's Game Review screen (screenshot 4)",
+        "From your last move to tomorrow's training (how_it_works heading): six numbered stops on a vertical line, real sequence, with title + detail on each stop's sign; HowTo schema",
+        "對手 / The opponent line: a line map with ten stations in four zones (Novice · Beginner · Intermediate · Advanced). Pinyin names in SS3 600, strengths in SCP, Shīfu as the terminus, and the line rule 'Beat a station twice and the next one opens'. Feature 'Ten teahouse opponents' as station notes; screenshots 7 and 1 as posters",
+        "Destinations / Training: the nine drill modules as a destination directory (Mate Trail → Handicap House), plus 80 lessons in 8 tracks and 902 mate problems linked to the journal essay; screenshots 2, 5, 6 as posters",
+        "Progress: screenshot 8 with feature 'Progress and a skill profile', and the caveat that the rating is Xiangqiful's own estimate",
+        "Fares: a fare board with four rows (Free $0 / Premium · Monthly $1.99/mo / Premium · Yearly $9.99/yr 'Best value' / Lifetime $19.99 once); each row's features open as a <details>; plans_footnote as small print; Exit panel",
+        "This line is for you / Not this line (who_for / who_not_for): an arrow-on direction sign with 6 lines and a no-entry sign with 5",
+        "Interchange (comparison_table): 'Change here to play people', a connections board of 5 apps × 6 rows with the honest footnote, links to the five /alternatives/ pages, inline Exit panel",
+        "Station notice (founder): Lagerland Apps, Finland, the heading, story, five signals and the studio link, with the maker/freshness line (v1.0 · first released 30 Sep 2026 · updated 1 Oct 2026) in the panel footer",
+        "No tracking on this line (privacy): Data Not Collected, 0 SDKs, no networking code and the six notes as a notice panel, linked to /transparency/ and the privacy policy",
+        "Planned extensions (roadmap): three 1.0 stations on the solid line, three 'Under consideration' stations on the dashed grey line, no dates, with the disclaimer",
+        "Enquiries (faq): 17 <details> on an enquiry board",
+        "Other lines: Shogiful and Chessful as connecting-line signs, plus the related journal post",
+        "Last exit: a full-width Exit panel with badge + QR, then the shared Lagerland strip"
+      ],
+      "navigation": "The white enamel line strip at the top is the microsite nav: the page's sections as stations on one black line, with scrollspy enlarging the current station dot. On mobile the 'Line' button opens a full-height vertical line map (links as stations, 48px targets) on enamel over the tile. Sub-pages show the same strip with their own station highlighted and a 'Xiangqiful' terminus linking home. Focus rings are a 3px sign-black ring with a 2px enamel offset.",
+      "signatureInteraction": "'The line of your game'. An inline SVG route strip runs the full width: an illustrative 40-move game where each move is a station marker whose shape encodes the seven grades (best / great / good as filled dots of decreasing size, book a grey ring, inaccuracy a half-filled dot, mistake a ring with a bar, blunder a closed-station square, with a line key). Red's and Black's moves alternate above and below the line. The six key moments are interchange rings. Tapping or hovering one (a real <a href='#moment-n'>) slides its named-mistake sign under the strip with a small position diagram. On desktop a train marker travels the strip in step with scroll (CSS animation-timeline: view(), IntersectionObserver fallback). No-JS: the strip renders static and all six interchange signs are printed in order beneath it. Reduced motion: no train travel; signs swap without the slide.",
+      "motionGrammar": "Signage doesn't animate. Only things that move in a station move: the train marker along a line (linear, tied to scroll), the 'you are here' ring hopping between stations (120ms linear), and signs sliding 8px from their mounting edge with opacity (180ms ease-out). No parallax, no scale, no bounce, no hover lift. Under prefers-reduced-motion everything is static except focus rings.",
+      "readModeVariant": "Privacy, support and the five alternatives pages keep the tile ground and the line strip (with their own station lit). The reading column is one long enamel panel, 68ch, SS3 19px/1.6 in sign-black. H2s are bilingual signs where a true term exists (e.g. 私隱 / Privacy) and English-only otherwise; no invented Chinese. Privacy sections become notice panels with small data-flow pictograms (device → nothing leaves). Support is a 'Help point' panel with the email as the call button. Alternatives pages are an interchange board: 'Xiangqiful ↔ Xiangqi.com' as two connecting lines, the comparison as a connections table, the FAQ as enquiries, and an Exit panel to /apps/xiangqiful/.",
+      "assetsNeeded": "(1) A one-time Noto Sans TC 900 woff2 subset of ~60 glyphs (~30 KB, pyftsubset), named without any Reserved Font Name. (2) A cut pinyin-vowel file from SS3 latin-ext (ā á ǎ à ē é ě è ī í ǐ ì ō ó ǒ ò ū ú ǔ ù ü). (3) SVG exports of the app's seven western piece symbols from its asset catalog; do not redraw them. (4) A stroked pictogram set (exit, info, arrow, no-entry, interchange). (5) From the developer: an illustrative WXF game with Pikafish grades and the six FENs behind the example_insights; until then the strip is labelled 'illustrative'. (6) The full opponent list (10th name, strengths 6–9). Everything else runs on the existing icon, QR and screenshots.",
+      "risk": "The world is borrowed from public transport, not from xiangqi. If line metaphors leak into the copy it becomes a costume. Siblings are already using transit and wayfinding (allpaid's departures poster, earnlock's junction post), so this one must hold to its own devices: bilingual character-over-English signs, glazed tile, the game as a graded line. No yellow, no timetable grid. The drenched teal must stay ground, with all reading on enamel. Bilingual section terms must be checked against the app's zh-Hant localization.",
+      "memoryTest": "The xiangqi app whose page was a metro station: every heading was a Chinese character over its English name, my game was drawn as a line with the mistakes as interchanges, and a black Exit sign took me to the App Store."
+    },
+    {
+      "id": "b",
+      "label": "After-Round Big Board",
+      "kicker": "IMPECCABLE’S PICK",
+      "sourceIndex": 1,
+      "lineage": "The tournament commentary board (大盤 / 掛盤講棋): a giant vertical white magnetic board on a stand, flat discs set on its intersections, slotted name plates above it, a flip move-counter, a ledge tray holding captured discs. A master replays the round for the hall with a pointer and blue dry-erase marker. Chinese TV xiangqi lectures used the same rig for decades.",
+      "thesis": "The page is the after-round lecture. One big lit board stays pinned in the hall and re-sets for each chapter while the commentary scrolls beside it, so the review mechanism is performed rather than described. It refuses the static hero screenshot and the wood-and-gold chess page.",
+      "scene": "A club player in the darkened commentary hall after the last round, on a folding chair, watching the master work the big magnetic board under a bank of stage lights; the board is the brightest thing in the room → dark ground, light board.",
+      "scheme": "dark",
+      "colorStrategy": "Restrained",
+      "palette": [
+        { "hex": "#232220", "role": "hall graphite — the page ground" },
+        { "hex": "#34322E", "role": "stage riser — section bands, the programme strip, the sticky ledge bar, the footer" },
+        { "hex": "#F1F0EC", "role": "lit enamel — the board face, name plates, verdict cards and reading cards" },
+        { "hex": "#18181A", "role": "screen-printed grid lines, black discs, text on enamel" },
+        { "hex": "#B3121B", "role": "red disc ink — Red pieces and Red's moves only (6.1:1 on enamel)" },
+        { "hex": "#1F4FD1", "role": "dry-erase marker blue — arrows, circled intersections, grade marks, active nav plate underline; used only on enamel (5.9:1)" },
+        { "hex": "#E8E4DA", "role": "hall text — body copy set directly on graphite (12.5:1)" }
+      ],
+      "type": {
+        "display": "Fira Sans Extra Condensed 800/700: the banner-plate H1 at 80–96px/0.95, chapter verdicts at 32–44px, name plates (RED · You / BLACK · Shīfu · 1,900), the flip counter numerals at 56px",
+        "text": "Fira Sans 400/500: commentary and all reading copy at 19px/1.6, WXF move record in tabular figures",
+        "utility": "Noto Serif TC 900 subset only: the disc characters and the 楚河 漢界 river lettering, the bold Ming face screen-printed on demonstration boards and discs",
+        "rationale": "The board's slotted name plates and flip counter need narrow, heavy capitals that fit long pinyin names (Nǎinai Chén, Shuāngpào) in a slot, and Fira Sans Extra Condensed is one of the few condensed faces on Fontsource with full tone marks. Fira Sans text keeps one superfamily so the commentary reads like the hall programme. Budget: ExtraCond 800 + 700 latin 50 KB, Fira Sans 400/500 latin 48 KB, cut pinyin-vowel files ~4 KB/weight, Serif TC subset ~35 KB ≈ 145 KB."
+      },
+      "materials": [
+        "matte white enamel board: screen-printed 9×10 intersections, the river band with 楚河 漢界 in Ming bold, palace diagonals, file/rank figures in the margin",
+        "flat magnetic discs: matte, with a 3px rim ring, red or black characters on enamel-white faces (the hybrid set adds the western symbol)",
+        "brushed-aluminium frame and ledge tray, drawn flat (#A7ABAE fill, 1px highlight line, no gradient sheen)",
+        "slotted name plates and a two-digit flip counter above the board",
+        "blue dry-erase marker strokes as inline SVG (round caps, slight width variance): arrows, circles, ticks and question marks drawn as paths, never glyphs",
+        "graphite hall ground with the stage riser as section bands"
+      ],
+      "firstViewportDesktop": "1440×900, graphite hall. Top 56px programme strip on #34322E: icon 28px + 'Xiangqiful' in Fira Sans Extra Condensed 800 24px at left, nav plates at right. Centred below is the rig. A banner plate (enamel, 1040×112) carries the H1 'Chinese chess, taught properly.' in ExtraCond 800 at 84px #18181A. Under it is the board (500×556, centred at x 470–970) in a 10px aluminium frame, set to an illustrative position: a marker-blue arrow traces the red horse's step into the cannon's file and a blue circle rings the enemy cannon. The ledge carries 'Illustrative position' at 13px and two captured discs. The left flank (x 120–440, on graphite) holds two name plates, 'RED · You' and 'BLACK · Shīfu · 1,900', the flip counter '14', and the move record (WXF, Fira tabular 15px) with blue marker grade marks. The right flank (x 1000–1320) holds the verdict card (enamel, 320w). On it: 'Tactics · Screen tactic' at 14px; the app's string 'Your horse stepped into the line and handed the enemy cannon the screen it needed.' in ExtraCond 700 26px; the body at 15px. Below the card, on graphite: 'Free · Premium from $1.99/mo' in Fira 500 20px #E8E4DA, the official badge at 54px, the QR at 104px on an enamel plate captioned 'Scan to install on iPhone', and cta_subline at 14px.",
+      "firstViewportMobile": "390×844, Smart App Banner above. A 48px programme strip (icon, name, 'Programme' button). The banner plate is enamel at full width minus 16px gutters: H1 at 40px/0.95 ExtraCond 800 over 2 lines, 'Free · Premium from $1.99/mo' at 16px, the official badge at 48px inside the plate. A 32px name-plate strip reads 'Move 14 · You (Red) v Shīfu 1,900'. The board is 358px wide (~398 tall) with the blue marker annotation. The verdict card hangs over the board's ledge by 24px, its first line (the app's string at 19px) visible at the fold.",
+      "conversion": "The badge lives where the master keeps his notes: under the verdict card in the hero, on the 'Admission' plate and on the closing board. It is framed by an enamel plate edge, never redrawn. The desktop QR sits on its own enamel plate beside the badge. The sticky bar is the board's ledge: a 56px #34322E bar that rises once the hero badge leaves, with a mini flip counter showing the current chapter, 'Xiangqiful · Free · Premium from $1.99/mo' in Fira 500 and the badge at 40px. The price statement sits under the verdict card; full pricing is four admission plates. Smart App Banner meta goes in the head.",
+      "visitorPath": [
+        "The rig (hero): banner-plate H1, board with an illustrative position and blue marker, name plates and flip counter, the verdict card with the app's own string, the price line, badge + QR, cta_subline",
+        "Programme note: quick_answer on an enamel card under the rig at 20px (speakable), with the 'Quick reference' <details> as the programme's fold-out, summary visible",
+        "Lecture, chapters 1–6, 'What a xiangqi mistake looks like, explained.' (example_insights): each chapter re-sets the pinned board to its illustrative position. The tag is the name plate, the headline is the verdict (ExtraCond 32px), the body is the commentary",
+        "'From your last move to tomorrow's training.' (how_it_works): six numbered flip-plate steps. The board shows the review states: grade marks along the move record, the named pattern, then the 60/25/15 plan as blue marker tallies on the ledge. HowTo schema",
+        "The opponents' bench: ten aluminium-slot name plates in four tier rows (pinyin name, strength, one style line from the copy). Focusing a plate re-sets the board to an illustrative sketch of that style (Shuāngpào's stacked cannons, Nǎinai Chén's closed palace). Screenshot 7 closes it",
+        "Read the pieces (value_points[0] + feature 'A board you can read'): the board switches between traditional, western and hybrid discs via three radio plates on the ledge (CSS :checked, works without JS); screenshot 3",
+        "Homework (training): 80 lessons in 8 named tracks, nine drill modules, 902 mate problems. The board shows 'Piercing the Heart, Mate in 3' transcribed from screenshot 5 (real app content) with 'Find the mate. Every move must give check.' Link to the journal essay; screenshots 2, 5, 6",
+        "Progress: screenshot 8 + feature text with the 'own estimate, not a federation rating' caveat",
+        "Admission (plans): four enamel plates on a rack (Free / Monthly / Yearly 'Best value' / Lifetime $19.99 once), features as lists, plans_footnote, badge",
+        "Who should sit in (who_for / who_not_for): two enamel cards, 'Take a seat if…' (6) and 'Not this hall if…' (5)",
+        "Other halls (comparison_table): a board-side results sheet of 5 apps × 6 rows with the footnote, links to the five alternatives pages, badge",
+        "The organiser's note (founder): story, five signals, studio link, maker/freshness line",
+        "Nothing leaves the hall (privacy): the six notes, Apple's 'Data Not Collected', 0 SDKs, linked to /transparency/ and the privacy policy",
+        "On the programme (roadmap): three 1.0 items as filled plates, three 'Under consideration' as blank plates, with the disclaimer",
+        "Questions from the floor (faq): 17 <details>",
+        "Next door: Shogiful, Chessful, and the related journal post",
+        "Close: the board re-sets to the opening position with the app's own line 'Your move', badge + QR, then the Lagerland strip"
+      ],
+      "navigation": "A slim programme strip on #34322E: the app's name plate plus six plate-tabs (Lecture · Opponents · Pieces · Homework · Admission · Questions). Scrollspy turns the active tab to enamel with a blue marker underline. During the lecture the flip counter on the board doubles as the chapter indicator ('3 / 6'). On mobile a 'Programme' button opens a sheet of plates. Focus is a 3px marker-blue ring on enamel and a 3px #E8E4DA ring on graphite.",
+      "signatureInteraction": "'The Lecture'. On desktop the board is position: sticky in the centre column while chapters scroll on the right and the record updates on the left. When a chapter crosses the reading line, its FEN (in a data attribute) re-sets the board. Discs lift (shadow 0→4px), slide straight along the grid with transforms (240ms, at most 3 discs per change) and seat; marker arrows draw via stroke-dashoffset (400ms); the flip counter turns. One IntersectionObserver, about 4 KB of JS. No-JS and mobile: every chapter carries its own server-rendered static SVG diagram above its text, and the sticky board is just chapter 1's diagram. Reduced motion: discs jump, marks appear whole, the counter changes without a flip.",
+      "motionGrammar": "Only what a commentator does moves: a disc lifts, slides and seats; a marker stroke draws at hand speed; a plate flips (160ms). Nothing else in the hall moves: no scroll reveals, no parallax, no hover lift on cards. With prefers-reduced-motion, state changes are instant.",
+      "readModeVariant": "Privacy, support and alternatives pages keep the graphite hall and the programme strip. The board retires to a small static diagram in the masthead (the opening position) under a banner plate carrying the page title. The reading column is an enamel card, 68ch, Fira Sans 19px/1.6 in #18181A, with H2s in ExtraCond 700 and tables set like the results sheet. Alternatives pages face two name plates across the board ('Xiangqiful — the practice room' / 'Xiangqi.com — the arena', in the copy's own words), then the comparison as the results sheet, the verdict lists on enamel cards, and the FAQ from the floor.",
+      "assetsNeeded": "(1) A one-time Noto Serif TC 900 subset for the disc characters and the river (~35 KB). (2) Cut pinyin-vowel files for Fira Sans and Fira Sans Extra Condensed. (3) From the developer: FEN positions for the six example_insights moments and the five opponent-style sketches; until then each is labelled 'illustrative position'. Piercing the Heart is transcribed from screenshot 5. (4) SVG exports of the app's western piece symbols for the piece-set switch. (5) The marker-stroke set (arrow, circle, tick, question, cross) drawn once as SVG. (6) The full opponent list (10th name, strengths 6–9). Otherwise it runs on the existing icon, QR and screenshots.",
+      "risk": "Honest familiarity: this is my top-ranked direction because it is the most literal carrier. The board is the category's own object, so it sits closest to 'chess app shows a board'. Demonstration-board commentary is also shogi's 大盤解説 and a chess-tournament fixture, so it could converge with Shogiful or Chessful unless the white enamel, blue marker and Ming-bold discs stay specific. It is the most JS-dependent of the three, so the no-JS chapter diagrams must be first-class. Positions must come from the app, not be composed for the page.",
+      "memoryTest": "The page was a big demonstration board in a dark hall. The discs actually slid to new squares as I scrolled, and a blue marker circled the exact mistake the app was naming."
+    },
+    {
+      "id": "c",
+      "label": "The Mistake Notebook",
+      "kicker": "SECOND ROLL",
+      "sourceIndex": 5,
+      "lineage": "The Chinese school exercise book: a stapled 練習本 on pale green 護眼 eye-care paper, a printed 方格 grid with 田字格 practice boxes for learning characters one at a time, and the 錯題本 (mistake notebook) every student keeps, copying each wrong answer to redo it. The teacher marks it in red ballpoint: tick, circle, cross, a wavy underline under the key line, a short comment and a 訂正 correction to rewrite.",
+      "thesis": "The page is your mistake notebook. Each entry is one mistake copied from a game, marked in red, explained, given one thing to do next game and dated for review, so Xiangqiful's loop (play → named mistake → tomorrow's training) is the page's structure. It refuses the feature-card grid and the dark 'engine analysis' dashboard.",
+      "scene": "A player at a desk by a daylit window with the exercise book open, a pencil, and the teacher's red pen beside it → light.",
+      "scheme": "light",
+      "colorStrategy": "Committed",
+      "palette": [
+        { "hex": "#EAF2E4", "role": "護眼 eye-care paper, pale green — the ground on every surface" },
+        { "hex": "#A9CDB2", "role": "printed grid lines — 28px squares and the dotted 田字格 cross (decorative only)" },
+        { "hex": "#2F6B4A", "role": "printed book furniture — header fields, nav, table rules, small labels (5.5:1)" },
+        { "hex": "#2F3336", "role": "pencil graphite — body copy, the copied board's lines and discs (11:1)" },
+        { "hex": "#141414", "role": "ink — the H1 and section headings in the Kai hand" },
+        { "hex": "#C81E1E", "role": "teacher's red ballpoint — marks, comments, the 'Review — due today' note and nothing else (5.0:1)" },
+        { "hex": "#8E959B", "role": "staple steel — the two staples in the gutter" }
+      ],
+      "type": {
+        "display": "LXGW WenKai TC 700/400: the H1 at 84px (mobile 38px), section headings at 40–48px in ink, the teacher's red comments at 22–26px (400), the Kai model characters in the 田字格 boxes, all from one hand",
+        "text": "Lexend 400/500: body at 18px/1.65, printed fields and nav at 14px, tabular figures for WXF moves, dates and prices",
+        "utility": "none: no mono. Notation and numbers use Lexend tabular figures",
+        "rationale": "LXGW WenKai's Latin is drawn from Klee One's textbook hand, so one Kai face writes both the model characters a pupil copies and a teacher's neat red comments, and it covers the pinyin tone marks. Lexend was built from reading-proficiency research for learners, a fit for 'taught properly', and also covers pinyin. Neither is a serif display, which keeps paper + red out of the cream/serif cluster. Budget: WenKai latin 400/700 36 KB + Lexend latin 400/500 29 KB + cut pinyin-vowel files ~12 KB + Kai CJK subset ~45 KB ≈ 122 KB."
+      },
+      "materials": [
+        "pale green 護眼 paper as the full ground, with a printed 28px 方格 grid (CSS background-image, 1px #A9CDB2)",
+        "田字格 boxes with a dotted cross for the piece-character row",
+        "the xiangqi board drawn in pencil over the grid: its 9×10 lines land on grid lines, discs are pencil circles with Kai characters",
+        "red ballpoint marks as SVG strokes: tick, circle, cross, a wavy underline, an arrow for the correction",
+        "the gutter: a 24px soft fold shade with two steel staples",
+        "the inside-cover printed reference table (exercise books print a table there) for the Quick reference"
+      ],
+      "firstViewportDesktop": "1440×900. The open notebook is seen close. At the far left, x 0–200, the edge of yesterday's leaf shows two red ticks. At x≈216 sit the gutter shade and two staples (at 30% and 70% height). The current leaf fills x 232–1440 with its green grid. Its top 48px is the printed header row in Lexend 500 14px #2F6B4A: 'Xiangqiful · Subject: Xiangqi 象棋 · Date ______' and the contents links. Below, the H1 'Chinese chess, taught properly.' runs on one line in WenKai 700 84px ink, sitting on a grid line. Then a band 460px tall. At left is the copied illustrative position drawn in pencil (board 420px wide): the student's horse move struck through with a red cross, the better square ringed in red, a red arrow for the correction. At right, in red WenKai 400 26px, the app's own explanation: 'Your horse stepped into the line and handed the enemy cannon the screen it needed.', with a red wavy underline. Under it in red 20px, 'Next game: check what the cannons would hit if one piece moved.' and 'Review — due today'. A pencil caption reads 'Illustrative position' at 13px. At the foot of the leaf (y≈790–880) is one printed row: 'Free · Premium from $1.99/mo · offline · no account · no ads' in Lexend 500 18px, the official badge at 54px, and the QR at 104px captioned 'Scan to install on iPhone'.",
+      "firstViewportMobile": "390×844, Smart App Banner above. One leaf fills the screen with a 12px gutter strip along the left edge carrying two staple marks; content inside has 16px padding on the grid. Printed header row at 13px #2F6B4A: 'Subject: Xiangqi 象棋 · Date ____' and a 'Contents' button. H1 in WenKai 700 38px over 3 lines; secondary at 17px pencil; 'Free · Premium from $1.99/mo' at 17px 500; the official badge at 48px. From y≈560 the copied board, 358px wide, with the red cross and circle visible above the fold.",
+      "conversion": "The badge is printed into the leaf's foot row in the hero, on the fees slip and on the back cover: framed by a 1px #2F6B4A rule, never redrawn. Red never touches it. The desktop QR sits beside the badge with a pencil caption. The sticky bar is the notebook's printed footer: a 56px #EAF2E4 bar with a 1px #2F6B4A top rule, 'Xiangqiful · Free · Premium from $1.99/mo' in Lexend 500 and the badge at 40px (desktop adds a 'Scan' button that opens the QR in a popover). The price statement is the hero foot row; the full plans are the fees slip. Smart App Banner meta goes in the head.",
+      "visitorPath": [
+        "Today's mistake (hero): header fields, H1, secondary, the copied position marked in red with the app's explanation and 'Review — due today', the foot row with price, badge and QR",
+        "Inside cover: quick_answer written as the first pencil paragraph at 20px (speakable), beside the printed reference table that is the 'Quick reference' <details>, summary visible",
+        "Learn the pieces one at a time: a 田字格 row of seven boxes (Kai model character, western symbol, hybrid, English name, one-line movement rule from the FAQ: cannon jumps exactly one to capture, horse blocked at the leg, stalemate is a loss). Value point 'Play xiangqi without reading Chinese'; screenshot 3 tipped in with its caption",
+        "Six mistakes, marked (example_insights): six notebook entries, each with the tag as a printed field, headline in pencil, body, and the 'next game' sentence in red with a red mark",
+        "How the notebook fills itself (how_it_works heading 'From your last move to tomorrow's training.'): six steps in printed number boxes (a real sequence), the 60/25/15 plan drawn as a red tally bar with its numbers in text; HowTo schema",
+        "Class register: the ten opponents as a register table (pinyin name, strength, style line, two empty 'beaten' tick boxes showing the beat-twice rule). Feature 'Ten teahouse opponents'; screenshots 7 and 1",
+        "Homework: 80 lessons in 8 named tracks, nine drill modules, 902 mate problems with Piercing the Heart (mate in 3) copied in from screenshot 5 under 'Find the mate. Every move must give check.' Link to the journal essay; screenshots 2, 5, 6",
+        "Report card: the five skills named (tactics, defense, positioning, endgame, openings), feature 'Progress and a skill profile' with the own-estimate caveat, screenshot 8. No invented scores",
+        "Fees slip (plans): a printed four-row table (Free $0 / Monthly $1.99/mo / Yearly $9.99/yr 'Best value' / Lifetime $19.99 once), feature lists as <details>, plans_footnote, badge",
+        "Is this notebook yours? who_for with red ticks (6), who_not_for with red crosses (5), drawn as SVG",
+        "Other schools (comparison_table): a ruled table on the grid, 5 apps × 6 rows, the honest footnote, links to the five alternatives pages",
+        "A note from the publisher (founder): story, five signals, studio link, maker/freshness line",
+        "What's not collected (privacy): the six notes as a ruled list, Apple's 'Data Not Collected', links to /transparency/ and the privacy policy",
+        "Next term (roadmap): 1.0 items ticked in red, 'Under consideration' items in pencil, the disclaimer",
+        "Questions in the margin (faq): 17 <details>",
+        "Back cover: Shogiful and Chessful, the journal post, closing badge + QR, then the Lagerland strip"
+      ],
+      "navigation": "A printed header row along the top of the leaf: 'Xiangqiful' plus contents links (Today's mistake · Pieces · Mistakes · Method · Opponents · Homework · Fees · Questions) in Lexend 500 14px #2F6B4A. Scrollspy draws a red pencil underline under the current entry. On mobile a 'Contents' button opens the inside-cover contents table as a sheet. Focus is a 2px #141414 ring with a 2px paper offset, with red never used for focus.",
+      "signatureInteraction": "'Marking'. When each mistake entry reaches the reading line, the teacher's red pen marks it: the wrong move is struck through, the better square circled, the wavy underline runs under the key sentence and 'Review — due today' writes in. These are SVG stroke-dashoffset draws at hand speed (500–700ms, staggered 120ms). Each entry also has a 'Try the correction' <details> that reveals the better-move arrow on the pencil board (no JS needed). No-JS: every mark is present statically. Reduced motion: marks appear complete, with no drawing.",
+      "motionGrammar": "Only the pen moves: strokes draw once, in writing order, and never redraw on scroll-back. Paper, grid and type never move: no reveals, no parallax, no hover lift. <details> open without animated height. Under prefers-reduced-motion nothing draws.",
+      "readModeVariant": "Privacy, support and alternatives pages are single leaves of the same notebook in its lined (橫線) variant for prose. The printed header row is kept; the reading column is 66ch of Lexend 19px/1.65 pencil-graphite with headings in WenKai 700 ink. Red appears only where a teacher would mark: on privacy, 'Data Not Collected' circled; on alternatives, ticks against the honest verdict lists. Support is a 'note to the teacher' leaf with the email as the action. Alternatives pages open with a two-column 'compare' exercise ruled on the grid (Xiangqiful | Xiangqi.com).",
+      "assetsNeeded": "(1) A one-time LXGW WenKai TC 700 + 400 subset of the ~60 needed characters (~45 KB). (2) Cut pinyin-vowel files for WenKai and Lexend. (3) The red-pen mark set as SVG strokes (tick, cross, circle, wavy underline, arrow), drawn once. (4) From the developer: FEN positions for the six example mistakes, labelled illustrative until supplied; Piercing the Heart transcribed from screenshot 5. (5) SVG exports of the app's western piece symbols. (6) The full opponent list. Otherwise it runs on the existing icon, QR and screenshots.",
+      "risk": "Paper plus red pen sits nearest the cream + serif + red cluster. The pale green 護眼 paper, the Kai hand display and the Lexend body keep it out; it fails if the paper drifts warm or the display goes serif. A school notebook can read as child-facing or condescending to experienced diaspora players, so the teacher's voice must stay the app's adult copy, with no stickers, stars or grades. A sibling (Chessful's scoresheet, Shogiful's problem book) could also land on paper, so the 錯題本 and 田字格 specifics must lead. Keep red marks to a few per screen.",
+      "memoryTest": "It was an exercise book: my own mistake copied onto green squared paper, marked up in red pen, with the next thing to practise written underneath and a note that it was due for review today."
+    }
+  ],
+  "canon": "Category standard played straight: dark navy page, a 3D boxwood board with red and black discs and gold accents in an iPhone frame beside 'Master Chinese Chess' and the badge, then a grid of feature cards and an FAQ. The owner's standing exit; not recommended.",
+  "notes": "Degraded roll (roll service unreachable, no catalog challengers): seed 4b726ce3, assigned index 7, re-roll 1 = 5, so no further re-roll was needed. Mapping: A = candidate 7 (THE ROLL), B = candidate 1 (IMPECCABLE’S PICK, since neither N nor R1 is 1), C = candidate 5 (SECOND ROLL). The candidate order was fixed before the roll. Fonts were verified by npm pack + fontTools against Fontsource 5.3.0: all named faces exist with the weights given. Atkinson Hyperlegible Next, Sofia Sans and Mona Sans were rejected because they lack ǎ ǐ ǒ ǔ, which the opponents' pinyin names need. Every style needs a one-time CJK woff2 subset, because the Fontsource TC faces spread the ~60 needed glyphs across 14 slices totalling 1.5–2.9 MB; LXGW WenKai TC's chinese-traditional slice also lacks 傌 俥, which appear only in its numbered slices. Content gaps to fill from the app before building: FENs for the six example_insights moments (all three styles show a position beside a named mistake; until then the diagrams are labelled illustrative), the 10th opponent's name and strengths 6–9, and SVG exports of the western piece symbols. Piercing the Heart (screenshot 5) is the one real position on hand. No ratings, testimonials or user counts exist for this app, and none are shown. Sibling check: allpaid and earnlock already use transit and wayfinding worlds, so A drops exit-yellow and timetable grids and leans on bilingual signs, tile and the game-as-line."
+}

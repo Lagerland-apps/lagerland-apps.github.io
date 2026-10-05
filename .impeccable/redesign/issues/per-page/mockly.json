@@ -1,0 +1,130 @@
+[
+ {
+  "surface": "mockly (vs appmeta)",
+  "style": "c",
+  "severity": "blocker",
+  "issue": "Thumb-Index Leaflet repeats appmeta-c 'The Fifty-Language Leaflet' for the sibling App Store Connect Mac tool. It has the same multilingual instruction-leaflet world: language-code tabs as nav, a thumb index on the right edge, fold creases and a model/action box. It has the same Noto Sans variable system (Noto Sans Display + Noto Sans) and the same deepened app violet (#4A2FC4 vs #4F3FCC). Its violet cover drench also lands on the screenshot-tool category default (violet-gradient hero).",
+  "fix": "Keep the leaflet on appmeta-c, where 50 locales of text side by side is literally a leaflet. Replace mockly-c with mockly candidate #4, the salon hang with tombstone labels: every export hung at true relative size on one wall, each with a museum label giving device · locale · slot · px. No other surface uses an exhibition/architecture world, and it takes Mockly off three paper styles.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "blocker",
+  "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices.",
+  "fix": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "mockly (vs appmeta)",
+  "style": "b",
+  "severity": "major",
+  "issue": "OK to Upload and appmeta-b 'Passed for Press' are both prepress proofs for two sibling Mac tools. In both, the download lives in an 'OK to …' sign-off box, with proof-query marks in the margin, and both are IMPECCABLE'S PICK. If both win, the two microsites read as one print-shop series.",
+  "fix": "Keep proof marks and the sign-off box on appmeta-b, because marked text changes are AppMeta's mechanism. mockly-b keeps imposition, crop marks, the colour bar and ganged trims. It moves the action into the press-run dispatch docket on the gripper edge (no 'OK to upload' approval box, no signature line) and drops the magenta proof-query circles. Caveats go into the slug lines.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "mockly (vs gymlogger-x)",
+  "style": "b",
+  "severity": "major",
+  "issue": "Its whole type system is gymlogger-x-b's: Chivo 900/700 display, Chivo 400/600 text and Chivo Mono for data.",
+  "fix": "gymlogger-x-b keeps Chivo. Set mockly-b in Spline Sans 400–700, with Spline Sans Mono for slug lines only. It is one superfamily and is unused elsewhere on the board.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "mockly (vs chessful, pawza)",
+  "style": "a",
+  "severity": "major",
+  "issue": "The census misses one display collision. Saira Condensed (mockly-a's H1 and piece numerals) is the narrow width of Saira, chessful-a's display face, so two surfaces share a display skeleton. mockly-a's text face, Albert Sans, is also pawza-c's display and text face.",
+  "fix": "chessful-a keeps Saira for its squared 1980s electronics legends. Set mockly-a in Asap Condensed 600/700 for the H1, piece numerals and size labels, and Asap 400/600 for text. That is one family unused elsewhere, and it also clears the Albert Sans share.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "appmeta-pulse, pawza, mockly, aftershift",
+  "style": "b, b, a, b",
+  "severity": "minor",
+  "issue": "A yellow highlighter swipe behind ink is an accent in four styles: aftershift-b, appmeta-pulse-b, pawza-b and mockly-a. A chartreuse near #D6E83C recurs as well: aftershift-a's hi-vis (#D6F03A), pawza-c's tennis ball, mockly-a's highlighter (#E4F53A) and tare-b's lime spot.",
+  "fix": "Keep the swipe on aftershift-b (nurses really do highlight their own row) and appmeta-pulse-b (its only accent). pawza-b loses it with its palette change. mockly-a traces the chosen size in the piece's own ink instead of a highlighter. Keep chartreuse literal (hi-vis tape, the tennis ball) and nowhere else.",
+  "lens": "distinctness"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Raster weight is unbudgeted everywhere. Every microsite puts the app icon in its nav or hero at 24 to 72px, and most put screenshots in carousels or heroes. The only files that exist are 1024px icon PNGs of 0.56 to 3.96 MB (mediakit.png is 3.96 MB; lagerland-mark.png is 1.96 MB, and the current header already ships it at 30px) and 1206x2622 screenshot PNGs of 0.3 to 7.6 MB (soon/2.png is 7.6 MB, mediakit/2.png is 7.1 MB). Nearly every card says assetsNeeded: none, so no style accounts for derivatives. Shipped as-is, a 390px page downloads several MB before the badge is usable.",
+  "fix": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "major",
+  "issue": "Sticky bars hide focus (WCAG 2.2 AA 2.4.11). Every style adds a sticky download bar after the hero, and most also pin a top strip; earnlock-c also fixes side rims, shogiful-a keeps a tag rail and soon-a an earth bar. A focused link, FAQ summary or #anchor target can land underneath them. On a Safari viewport of about 664px, two 52 to 64px bars plus the Smart App Banner can cover more than a quarter of the screen.",
+  "fix": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "mockly",
+  "style": "c",
+  "severity": "major",
+  "issue": "A triple collision with appmeta-c. 'Thumb-Index Leaflet' and 'The Fifty-Language Leaflet' are the same world (a multilingual instruction leaflet indexed by language-code tabs), the same hue (violet #4A2FC4 vs #4F3FCC) and the same type family (Noto Sans Display plus Noto Sans vs Noto Sans), on two sibling Mac apps from the same maker.",
+  "fix": "Keep the leaflet on appmeta, whose mechanism is literally the same text in 50 locales. Give mockly-c the next distinct re-roll (--reroll 2, skipping 1, 3 and 6). If that deals 2 (the literal screenshot run), take candidate #7 instead: the shrink-wrapped Mac software box (one-time $12.99, back-panel screenshots, a system-requirements side panel). Drop Noto and violet along with the world.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "mockly",
+  "style": "b",
+  "severity": "major",
+  "issue": "Shared world with appmeta-b. Each is its surface's #1 pick, both are print proofs, and both put the badge inside an approval box ('OK to print' sign-off box vs 'OK to Upload' approval box), so the two sibling Mac apps would convert through the same device.",
+  "fix": "Keep the sign-off box on appmeta-b, where proofreading is its diff preview. In mockly-b, move the action into the press sheet's own furniture (the gripper-edge strip or the colour-bar ticket), drop the 'OK to …' approval wording and keep proofreader marks off the sheet. The pair then reads as a Dylux galley next to a CMYK imposed sheet.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "mockly",
+  "style": "b,c",
+  "severity": "minor",
+  "issue": "On mobile the approval and model boxes (badge plus 'Send this page to my Mac') sit at about y580 to 800. For this Mac-only app the phone visitor's real action is sending the page to their Mac.",
+  "fix": "Keep 'Send this page to my Mac' (with the price) at y560 or above. On phones the badge may follow it.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "all",
+  "style": "all",
+  "severity": "minor",
+  "issue": "Layout shift from huge display headlines. Many heroes set 100 to 128px condensed or expanded H1s (millrace-c Antonio at 128px, soon-b at 128px, allpaid-a at 112px, gymlogger-x-a at 112px, liftlog-a at wdth 125). When the font swaps in from a system fallback with very different widths, the H1 reflows and the hero shifts.",
+  "fix": "For each display face, declare a metric-matched fallback @font-face (size-adjust, ascent-override and descent-override over a local system face), preload only the display file, and use font-display: swap for text faces and optional for the giant H1 face.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "mockly",
+  "style": "a",
+  "severity": "minor",
+  "issue": "Contrast: 'Trace your size' fades the other sizes to 35%, which takes their size labels down to 1.82:1 (red) and 2.15:1 (ink). Those labels are still content.",
+  "fix": "Fade only the line strokes. Switch the inactive labels to #5E5E63 (5.73:1) instead of lowering their opacity. The text face also collides: Albert Sans is pawza-c's display, so set mockly-a's text in Wix Madefor Text 400/600.",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "mockly",
+  "style": "c",
+  "severity": "minor",
+  "issue": "Contrast: secondary #6B6880 on the violet tint #E9E6FB (table striping, inactive tabs) is 4.39:1. This is moot if the world changes as recommended.",
+  "fix": "Use #67647C (4.65:1).",
+  "lens": "feasibility"
+ },
+ {
+  "surface": "mockly",
+  "style": "a, b, c",
+  "severity": "major",
+  "issue": "The Quick reference becomes a facts chart: a's 'Pattern information', b's job specification, c's 'Technical data'. Each has sizes 17, locales 39, price, network and account rows. The canonical prose and lists (What it does = seo.description, all features, who_for / who_not_for, alternatives_to) are not carried.",
+  "fix": "Keep the full ai-canonical body (it may be relocated, as c does by moving it to the front), with the facts chart as an addition on top.",
+  "lens": "truth-contract"
+ },
+ {
+  "surface": "mockly",
+  "style": "a, b",
+  "severity": "minor",
+  "issue": "Alternatives read-mode draws the competitor as 'one grey outline' (a) or a single grey cell (b) beside Mockly's 17 graded sizes. That implies the competitor supports one export size, a fact the alternatives pages do not state.",
+  "fix": "Drive the competitor graphic from facts on that page (e.g. the number of sizes it documents), or show text only.",
+  "lens": "truth-contract"
+ }
+]

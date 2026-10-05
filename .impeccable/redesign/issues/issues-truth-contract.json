@@ -1,0 +1,334 @@
+{
+  "issues": [
+    {
+      "surface": "tare",
+      "style": "all",
+      "severity": "blocker",
+      "issue": "All three styles put the official 'Download on the App Store' badge, a sticky download bar and 'Free download' / 'Play Chapter I free' copy in the first viewport (a: shelf at y640-800; b: lime price box; c: maker's plate), all linking to app_store_url id6806255929. Tare is status: upcoming, unlisted and unreleased, so the page claims a live App Store listing that does not exist. head.html also emits the Smart App Banner for it, because the test is only layout == app plus an app_store_url.",
+      "fix": "Gate every App Store element on status: wrap the badge, the sticky bar, the QR, cta_label/cta_subline and the apple-itunes-app meta in {% if page.status == 'live' %}. Before launch, render one plain status line in the world's own type, with no Apple artwork and no 'download' verb, e.g. 'Tare is not on the App Store yet. This page holds its rules, privacy and support.' State the price as 'At launch: 20 levels free · $2.99 unlocks 60 more'. Mock the pre-launch state for the owner, and show the live state only as a toggle."
+    },
+    {
+      "surface": "tare",
+      "style": "all",
+      "severity": "major",
+      "issue": "The maker/freshness line prints 'version 1.0 · first released 14 Sep 2026' from release.*. The front-matter comment says those dates are placeholders to replace on the real release day, and the app has not shipped, so the page states a release that did not happen.",
+      "fix": "Print 'first released' only when status is live. Before launch, print 'Version 1.0 in preparation · page updated {{ release.last_updated }}'."
+    },
+    {
+      "surface": "tare",
+      "style": "all",
+      "severity": "major",
+      "issue": "The privacy blocks and hero lines ('no data collected', 'no network code', 'no third-party SDKs') link to /transparency/, but _data/transparency.yml has no tare row (it has 19 rows, all live apps). The link points to no record. Style a admits this ('Tare is not on the record yet'); styles b and c do not.",
+      "fix": "Before build, add a tare row (manifest_source: pending; tracking_domains 0; third_party_sdks 0; network_calls none; data_leaves_device no, all from the front-matter privacy block) and deep-link /transparency/#tare. Until that row exists, the privacy block must say 'Not yet on the transparency record; added at launch' rather than imply a verified entry."
+    },
+    {
+      "surface": "rightsplit",
+      "style": "all",
+      "severity": "major",
+      "issue": "The hero proof is the journal's worked dinner. The four per-diner amounts (74.75 + 36.09 + 25.78 + 18.04) sum to $154.66, but every style sets them under a $154.65 total: a has a 'TOTAL 154.65' row; b has a double-width TOTAL 154.65 with torn receipts; c's caption reads 'the $154.65 dinner'. The same pages print plateau_disclosure's rule that a fairness pass closes any one-cent gap. A bill-splitter whose own showcase is a cent off undercuts its central claim.",
+      "fix": "Run that receipt through the app and print its real output. Under the stated rule the stray cent comes off one diner (likely the highest subtotal, Dana $74.74), so the labels sum to $154.65. Alternatively, keep $154.66 and label it as the journal's 'leftover cent' Example 3 with a link. Never print a total row over labels that do not sum to it."
+    },
+    {
+      "surface": "gymlogger-x",
+      "style": "all",
+      "severity": "major",
+      "issue": "quick_answer, which each style renders high and marks speakable, says the app 'flags plateaus when an exercise stalls for nine or more sessions of consistent effort'. plateau_disclosure and how_it_works say something else: a trend over the four most recent non-deload sessions, at least 8 sessions on the lift, 12 weeks of history, and a 6-session run or fatigue signal to confirm. Styles b and c run the published rule live on six sessions, right beside the contradicting Quick Answer. Style a prints the rule sheet under it.",
+      "fix": "Before build, rewrite the quick_answer clause to match plateau_disclosure, e.g. 'flags a plateau when estimated 1RM stops clearing your own improvement threshold across your last four non-deload sessions while volume holds (it needs 8+ sessions on the lift and 12 weeks of history)'. The AEO answer and the demo must state one rule."
+    },
+    {
+      "surface": "appmeta-pulse",
+      "style": "all",
+      "severity": "major",
+      "issue": "All three styles surface hero.secondary visibly (a: closing line of the operator's note; b: the lead brief; c: on the message board). It reads 'Half the monthly price of AppStats; a third the entry price of Appfigures.' That is false: /alternatives/appstats/ and the read-mode tables in these same styles show $0.99 vs $2.99, about a third. /alternatives/appfigures/ gives no Appfigures entry price, so the 'a third' clause has no source.",
+      "fix": "Correct the front matter before build: 'Truly zero tracking. About a third of AppStats' monthly price ($0.99 vs $2.99).' Drop the Appfigures clause until its price is sourced on the alternatives page."
+    },
+    {
+      "surface": "earnlock",
+      "style": "b",
+      "severity": "major",
+      "issue": "The Prices blade marks Yearly $9.99/yr 'most walkers', an invented claim about how users buy. The front matter gives Yearly only highlight: true. The only label it has is on Lifetime ('Best value · cheapest lifetime among screen-time blockers').",
+      "fix": "Mark the highlighted Yearly row with the blade's arrival-green tip and no popularity text, or with its own summary ('7-day free trial'). Keep Lifetime's front-matter label verbatim."
+    },
+    {
+      "surface": "soon",
+      "style": "b",
+      "severity": "major",
+      "issue": "The Ticket classes table stamps Premium Annual 'Best value'. The front matter gives Annual only highlight: true and no label. With Lifetime at $12.99 once against Annual at $9.99/yr, 'Best value' on the yearly plan is misleading after about 16 months.",
+      "fix": "Mark Annual with a neutral in-world mark (a punched hole or a 'Billed yearly' line). If the owner wants a value stamp, add an approved highlight_label to the front matter first; 'Best long-term value' would belong on Lifetime."
+    },
+    {
+      "surface": "wanderwiki",
+      "style": "all (b is the worst case)",
+      "severity": "major",
+      "issue": "Style b's hero leaf, and the 'Postmarked today' / 'On this day' sections in a and c, depend on a 'verified 13 May snapshot' that does not exist yet. The only On This Day material in the repo is example_insights, and it is wrong. It says Mexico declared war on the US on 13 May 1846 (it was the US on Mexico). It lists Sigourney Weaver as a 13 May birthday (she was born 8 Oct). It names Cornelius's portrait (1839) and Star Trek: Voyager's premiere (January 1995) as 13 May firsts. If the build falls back to the front matter, false history ships in b's first viewport.",
+      "fix": "Correct example_insights in the front matter now. Create _data/wanderwiki_onthisday.yml with 3 to 5 entries, each carrying its Wikipedia article URL, category and retrieval date. Render the hero leaf and the On This Day sections only from that file, with no fallback to example_insights. A style must not ship until the file exists."
+    },
+    {
+      "surface": "studio",
+      "style": "a",
+      "severity": "major",
+      "issue": "The homepage is a Persuade surface, but no App Store badge or QR is visible anywhere on it without interaction. The card itself says 'No badge or QR is in the first viewport: they live in each row's pulled-out box', and those boxes are closed <details> drawers. 'Goods in', the newest release, shows a screenshot and date but no badge.",
+      "fix": "Give 'Goods in' an always-visible badge (and the QR at 1024px and up) for the newest arrival. Place it within 1440×900 and 390×844, e.g. as a white bin label beside the stocktake strip, so one working App Store action shows without opening a drawer."
+    },
+    {
+      "surface": "chessful",
+      "style": "a, b, c",
+      "severity": "major",
+      "issue": "The ai-canonical Quick reference is recast as a short spec table: a 'Specifications' plate with engine, platforms, price, account, network, opponents and dimensions; b's imprint table adds languages 32; c is similar. That drops the canonical body app.html renders (What it is, What it does = seo.description, Positioning, every feature, Best for / Not the right fit, alternatives_to, and the app_enrichment use_cases / recommend_when), which is the AI-citation payload.",
+      "fix": "Keep the ai-canonical body exactly as the Liquid block in _layouts/app.html builds it, restyled in-world. The spec table may sit above it as a lede but must never replace it."
+    },
+    {
+      "surface": "mediakit",
+      "style": "a, b, c",
+      "severity": "major",
+      "issue": "The Quick reference is replaced by a fact box: a's 'Lab use only' box, b's 'Network facts' timetable, c's spec plate. Each lists platforms, OS minimums, Universal Purchase, price, data/network/account and Unrar.swift, and drops the canonical What it does / Key capabilities / Best for / Not for / alternatives_to / use_cases text.",
+      "fix": "Render the full ai-canonical block from app.html inside the box. The spec rows (which correctly show Unrar.swift as 1 third-party SDK) can head it."
+    },
+    {
+      "surface": "mockly",
+      "style": "a, b, c",
+      "severity": "major",
+      "issue": "The Quick reference becomes a facts chart: a's 'Pattern information', b's job specification, c's 'Technical data'. Each has sizes 17, locales 39, price, network and account rows. The canonical prose and lists (What it does = seo.description, all features, who_for / who_not_for, alternatives_to) are not carried.",
+      "fix": "Keep the full ai-canonical body (it may be relocated, as c does by moving it to the front), with the facts chart as an addition on top."
+    },
+    {
+      "surface": "shogiful",
+      "style": "a, c",
+      "severity": "major",
+      "issue": "a's 'club information card' and c's 'manga character data box' list only platforms, engine, price, offline and account in place of the ai-canonical body.",
+      "fix": "Render the app.html ai-canonical content verbatim in the card or data box. Style b's open plate is the model."
+    },
+    {
+      "surface": "soon",
+      "style": "c",
+      "severity": "major",
+      "issue": "Countdown sequence: six engraved template keys select which milestone table 'prints'. The no-JS fallback named is only the trip board plus 'the full milestone table' for that one template. Wedding, Pregnancy, Birthday, Graduation and Move (5 of the 6 example_insights) have no stated no-JS fallback.",
+      "fix": "Server-render all six milestone tables as visible, crawlable tables. The keys should only scroll to or highlight a table and drive the board."
+    },
+    {
+      "surface": "soon",
+      "style": "a, b",
+      "severity": "minor",
+      "issue": "Both print all six templates without JS, but with JS a's type switcher and b's 'Print your ticket' reprint a single template in their place. Rendering crawlers and JS visitors then lose 5 of the 6.",
+      "fix": "Keep the six server-rendered template rows visible when JS runs. The interactive ticket adds a personalised seventh above them instead of replacing them."
+    },
+    {
+      "surface": "chessful",
+      "style": "a",
+      "severity": "minor",
+      "issue": "TAKE BACK: with JS, six motif keys swap a single board, LCD and reading plate, so five example_insights bodies are hidden at any moment. They are visible only in the no-JS mini-board sequence.",
+      "fix": "Keep all six bodies printed on reading plates under the board with JS on. The keys only re-light the LEDs and LCD and scroll to the matching plate."
+    },
+    {
+      "surface": "appmeta-pulse",
+      "style": "all",
+      "severity": "minor",
+      "issue": "All three cards specify 'FAQ x13', but the front matter has 14 entries (FAQPage schema emits 14). A build that follows the card drops one Q&A from the visible page.",
+      "fix": "Render the FAQ from {% for item in page.faq %} and never from a fixed count; fix the cards' visitorPath."
+    },
+    {
+      "surface": "appmeta",
+      "style": "all",
+      "severity": "minor",
+      "issue": "All three cards specify 'FAQ ×16', but the front matter has 15 entries.",
+      "fix": "Loop page.faq. Do not hand-author a sixteenth Q&A to fill the count."
+    },
+    {
+      "surface": "millrace",
+      "style": "all",
+      "severity": "minor",
+      "issue": "All three cards specify 'the ten FAQ entries' / 'ten <details> rows', but the front matter has 11.",
+      "fix": "Loop page.faq so all 11 render, matching the FAQPage schema."
+    },
+    {
+      "surface": "earnlock",
+      "style": "all",
+      "severity": "minor",
+      "issue": "All three cards set 'features (9)', but the front matter has 10. The missing one is likely '39 locales, including 2 RTL'.",
+      "fix": "Loop page.features in the directory, checklist or function table."
+    },
+    {
+      "surface": "studio",
+      "style": "all",
+      "severity": "minor",
+      "issue": "Every studio card adds the Smart App Banner to 'journal posts and guides with exactly one mentioned app'. The contract says the banner is unaffected, and head.html emits it only on layout app. plan.json lists this as an open owner question.",
+      "fix": "Keep head.html's current rule in the studio cards. Re-add the journal and guide banner only if the owner answers the open question yes."
+    },
+    {
+      "surface": "studio",
+      "style": "a, c",
+      "severity": "minor",
+      "issue": "The stocktake and newsflash strips read 'MANIFESTS 18 + 1 PENDING'. transparency.yml splits this as 11 source-verified, 7 App Store-declared ('submission') and 1 pending. '18 manifests' implies 18 read from source, which overstates what the record proves.",
+      "fix": "Compute and print the three states the record uses: '11 source-verified · 7 App Store-declared · 1 pending', grouped by manifest_source, as a's /transparency/ read mode already labels them."
+    },
+    {
+      "surface": "studio",
+      "style": "b, c",
+      "severity": "minor",
+      "issue": "At 390 there is no App Store badge in the first viewport. In b the face-out sleeve appears only on tap; in c, MIX and the subtitle panel are off on phones. Desktop is fine in both.",
+      "fix": "b: render the newest release face-out by default on phones, with the sleeve and badge directly under the lede. c: show the newest app's subtitle panel (tagline, price, badge) under the keypad row on phones."
+    },
+    {
+      "surface": "studio",
+      "style": "c",
+      "severity": "minor",
+      "issue": "Each app's tagline and price.value appear only in the MIX subtitle panel, on hover or focus of its need-line. Phones never see them on P100, and crawlers get them only as hover-state text.",
+      "fix": "Print each app's tagline and price.value on its need-line (a second line on phones). MIX may enlarge them but must not be their only home."
+    },
+    {
+      "surface": "allpaid",
+      "style": "a, b",
+      "severity": "minor",
+      "issue": "The mobile hero panel reads 'No bank login · nothing leaves the phone'. transparency.yml says optional iCloud sync leaves the device to 'Your iCloud only, if enabled'.",
+      "fix": "Say 'No bank login · stays on your iPhone unless you turn on iCloud', linked to /transparency/#allpaid."
+    },
+    {
+      "surface": "appmeta-pulse",
+      "style": "a, c",
+      "severity": "minor",
+      "issue": "c's read-mode word plates read 'ACCOUNT: NONE' and a's privacy record says 'no account'. The transparency row says 'No Lagerland account. Your own App Store Connect API key', and its manifest_source is pending, which neither style shows.",
+      "fix": "Plates and rows should read 'Account: no Lagerland account (your own ASC API key)' and 'Manifest: pending', linked to /transparency/#appmeta-pulse."
+    },
+    {
+      "surface": "appmeta",
+      "style": "c",
+      "severity": "minor",
+      "issue": "The read-mode key-facts table says 'account: none'. The transparency row says 'Your own Apple ID with App Store Connect access', and style a already gets this right ('Account: your own ASC API key').",
+      "fix": "Use 'Account: no Lagerland account (your own App Store Connect credentials, kept in Keychain)'."
+    },
+    {
+      "surface": "earnlock",
+      "style": "a, c",
+      "severity": "minor",
+      "issue": "The hero trust stickers (a) and silkscreen legends (c) state '0 third-party SDKs · No account · No server' without a transparency link. Privacy must be shown, not claimed.",
+      "fix": "Make the sticker or legend row itself a link to /transparency/#earnlock (a sticker that reads 'see the record' is enough)."
+    },
+    {
+      "surface": "chessful",
+      "style": "a, c",
+      "severity": "minor",
+      "issue": "Hero privacy lines are unlinked: a's 'Stockfish on-device · No network · No account' sticker and c's 'offline · no account' install-row line.",
+      "fix": "Link the line to /transparency/#chessful."
+    },
+    {
+      "surface": "soon",
+      "style": "all",
+      "severity": "minor",
+      "issue": "The trust line 'iOS · 0 third-party SDKs · no ads · no account · events stay on your iPhone' sits in the hero, the stub or the shelf with no transparency link.",
+      "fix": "Make the trust line the link to /transparency/#soon."
+    },
+    {
+      "surface": "gymlogger-x",
+      "style": "all",
+      "severity": "minor",
+      "issue": "The trust plates (a), the announcement facts line (b) and the note-cell facts row (c) state '0 third-party SDKs · no account', and none is specified as linked.",
+      "fix": "Link the plates or line to /transparency/#gymlogger-x."
+    },
+    {
+      "surface": "mediakit",
+      "style": "c",
+      "severity": "minor",
+      "issue": "The hero 'Network: none' lamp is a privacy claim with no link.",
+      "fix": "Make the lamp legend a link to /transparency/#mediakit."
+    },
+    {
+      "surface": "chessful",
+      "style": "b",
+      "severity": "minor",
+      "issue": "The visitorPath has no link to /apps/chessful/support/ and no support email or response time. The Preface (founder) lists story, signals and studio link only, and 'Copyright & data' links only the transparency record and the privacy policy.",
+      "fix": "Add the support page link and the support email with its response time to 'Copyright & data' or the Preface."
+    },
+    {
+      "surface": "pawza",
+      "style": "b",
+      "severity": "minor",
+      "issue": "Spread 9 (Privacy) links /transparency/ and the privacy policy but not /apps/pawza/support/. Pawza has no founder block, so the page has no support route outside the read-mode support page itself.",
+      "fix": "Add the support link and email to Spread 9 or the back pages."
+    },
+    {
+      "surface": "xiangqiful",
+      "style": "all",
+      "severity": "minor",
+      "issue": "None of the three visitorPaths links /apps/xiangqiful/support/ or gives the support email. The founder notices carry story, signals and studio link only, and the privacy sections link the transparency record and the privacy policy.",
+      "fix": "Add the support page link, support_email and response_time to the founder notice or the privacy section."
+    },
+    {
+      "surface": "mockly",
+      "style": "a, b",
+      "severity": "minor",
+      "issue": "Alternatives read-mode draws the competitor as 'one grey outline' (a) or a single grey cell (b) beside Mockly's 17 graded sizes. That implies the competitor supports one export size, a fact the alternatives pages do not state.",
+      "fix": "Drive the competitor graphic from facts on that page (e.g. the number of sizes it documents), or show text only."
+    },
+    {
+      "surface": "mediakit",
+      "style": "b",
+      "severity": "minor",
+      "issue": "Alternatives strip map: 'MediaKit network: five lines vs the competitor's single grey line'. The single line is true for HandBrake (video) but false for multi-format tools such as CloudConvert or Wondershare UniConverter.",
+      "fix": "Set the competitor's line count from the media families its alternatives page says it covers, or omit the graphic."
+    },
+    {
+      "surface": "shogiful",
+      "style": "c",
+      "severity": "minor",
+      "issue": "On mobile the narration box with price and badge sits at y712-844, the last 130px of the frame. Safari's bottom toolbar covers that band on load, so the badge is effectively below the fold.",
+      "fix": "Move the narration box (price and badge) directly under the title panel at about y250, and let the board panel and balloon follow."
+    },
+    {
+      "surface": "soon",
+      "style": "b",
+      "severity": "minor",
+      "issue": "On mobile the stub with fare and badge starts at y≈630 and the badge lands at about y700-750, under Safari's toolbar on load.",
+      "fix": "On phones put the stub (fare and badge) right after the title, before the T-field row."
+    },
+    {
+      "surface": "appmeta-pulse",
+      "style": "a",
+      "severity": "minor",
+      "issue": "quick_answer (the operator's note) comes after the full seven-band record: about y950 on desktop and about y1200 on a 390 phone. The AEO answer is meant to sit high.",
+      "fix": "Place the operator's note between the label block and the record (beside the label block on desktop)."
+    },
+    {
+      "surface": "millrace",
+      "style": "b, c",
+      "severity": "minor",
+      "issue": "On phones the Quick Answer follows the turned-card proof section (b), or the 64-hole card folded into six chapter strips (c), so it lands at about 1.3 to 1.6 screens down.",
+      "fix": "On phones, place 'Millrace in one paragraph' (the Quick Answer) directly after the hero action. The card back or full scorecard follows it."
+    },
+    {
+      "surface": "gymlogger-x",
+      "style": "all",
+      "severity": "minor",
+      "issue": "/apps/gymlogger-x/coaches/ is an existing permalinked sub-page, but no read-mode variant mentions it. They cover only privacy, support and Strong, Fitbod and Jefit, so it has no world and no specified seo block.",
+      "fix": "Add the coaches page to each style's read mode, keeping its permalink, title and seo."
+    },
+    {
+      "surface": "earnlock",
+      "style": "all",
+      "severity": "minor",
+      "issue": "/apps/earnlock/terms/ exists but is not covered by any read-mode variant, which list privacy, support and the 12 alternatives pages.",
+      "fix": "Give the terms page the same read-mode frame as privacy, with its seo block."
+    },
+    {
+      "surface": "tare",
+      "style": "a",
+      "severity": "minor",
+      "issue": "The in-game grades are drawn as 'three labelled gold stars' (Hung · Unshaken · Once), including in the hero demo's solve state beside the shelf, badge and price. Gold stars next to an App Store badge read as a rating at a glance.",
+      "fix": "Set grades as words with plain dots, as style c does, or keep the stars inside the solved mobile only and away from the shelf, badge, price and sticky bar."
+    },
+    {
+      "surface": "wanderwiki",
+      "style": "all",
+      "severity": "minor",
+      "issue": "The Lifetime plan summary in the front matter says '≈ $0.61 per Wikipedia language'. value_points[4] and the styles' corrected figure say ≈ $0.76, and 24.99 / 33 = $0.757. Every style's plans table renders the plan summary, so the page would carry both figures.",
+      "fix": "Correct the Lifetime summary to ≈ $0.76 in the front matter before build."
+    },
+    {
+      "surface": "wanderwiki",
+      "style": "c",
+      "severity": "minor",
+      "issue": "The frontispiece sizes each endonym by article count as the hero's dominant visual. The cluster's own journal post says raw article counts are 'a poor size ranking' because of bot-generated stubs (Cebuano, Swedish, Vietnamese). The apparatus note gives only the source.",
+      "fix": "Add the journal's caveat to the apparatus note ('counts include bot-generated stubs; not a measure of depth') with a dated List of Wikipedias link, or size by something the post endorses."
+    }
+  ],
+  "catalogueNotes": "Truth lens, checked against _apps/*.md, _data/transparency.yml, _data/testimonials.yml, _data/app_enrichment.yml, the journal and the alternatives pages. The catalogue is well grounded overall. Most numbers the cards cite trace to front matter, screenshots or journal posts, e.g. Millrace's 1.31% / 280 strategies / chapter budgets, EarnLock's 2,026 and 3,412 steps, AllPaid's sample bills, AppMeta Pulse's 992,55 € portfolio, Chessful's 32 languages, Pawza's 43 languages and ZIPFoundation, and MediaKit's Unrar.swift. No style shows star ratings. Every testimonial used is real (_data/testimonials.yml) and shown without stars. Prices match price.value and plans everywhere except two invented plan labels (EarnLock b's 'most walkers', Soon b's 'Best value'). Several styles caught real content errors and should keep those fixes: the GymLogger X styles flag the Strong page's false 'Mac-and-iPhone' line; the WanderWiki styles flag the faulty On This Day cards and the $0.61/$0.76 per-language mismatch; the Taskful Day styles flag wrong screenshot alts. Recurring risks to fix at build: (1) the ai-canonical block recast as a short spec table (Chessful, MediaKit, Mockly, Shogiful); (2) hand-typed FAQ and feature counts that are wrong (AppMeta Pulse 14, AppMeta 15, Millrace 11, EarnLock features 10), so always loop the data; (3) hero trust lines with no /transparency/ link; (4) existing front-matter contradictions the new layouts would set side by side (the GymLogger X quick_answer vs its plateau rule, AppMeta Pulse 'half the price of AppStats', the RightSplit cent); (5) Tare modelled as a live listing. Front-matter popularity labels such as LiftLog's 'Most chosen', RightSplit's 'Most chosen' and GymLogger X's '~1 in 3 pick this' are allowed because they are in the source. Several styles enlarge them (pills, circles, stamps), so the owner should confirm them against App Store Connect before they are amplified. Typeface and world collisions from the face census, such as the Atkinson Hyperlegible Next text-face monoculture across 7 surfaces and display-face pairs like Dela Gothic One (earnlock a / shogiful b), are outside this lens and left to the distinctness critic."
+}

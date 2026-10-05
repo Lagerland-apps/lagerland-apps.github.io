@@ -1,0 +1,440 @@
+{
+ "surface": "chessful — /apps/chessful/ (Persuade) + /apps/chessful/privacy/, /apps/chessful/support/ and the six /alternatives/ pages that target it (chess-com, chessable, chessis, chessly, lichess, magnus-trainer) as Read variants",
+ "dossier": {
+  "mechanism": "Chessful runs Stockfish on the device over every game you play against its 40 distinct AI opponents. It sorts each significant mistake into one of about thirty named motifs under five skill dimensions (tactics, defense, positional play, openings, endgames) and states it in one or two plain sentences instead of a centipawn line. It then turns those same motifs into tomorrow's spaced-repetition training, offline and with no account.",
+  "audienceScene": "An adult club-level player (roughly 800–1800) who knows the rules and keeps losing without knowing why. Most arrive on a phone in the evening, straight after a lost online game, from Google or an AI answer ('chess app that explains mistakes', 'chess training app iphone', 'Chess.com analysis alternative offline', 'Chessis alternative'). Desktop visitors are comparing apps and need to get the app onto an iPhone, iPad or Mac.",
+  "culturalHome": "Chess-improvement culture: annotated-game books (Chernev's Logical Chess: Move by Move and the 'Move by Move' tradition); Informant-style figurine notation and its language-free signs (!, ?, !?, ±, □, △); the club night with its roll-up vinyl board, plastic Staunton set, carbon-copy scoresheet and the post-mortem; the Soviet school of training from your own games (Dvoretsky's card file of positions); and the dedicated chess computers of the 1980s. Today the audience lives in Chess.com/Lichess eval-bar culture, which does not serve them. The developer adds one more thread: his grandfather was a chess teacher in the Soviet Union, and the annotation voice is calibrated on him (journal: forty-chess-opponents).",
+  "mustProve": "In the first viewport: one real kind of mistake explained as a sentence ('You played Nxd5. The knight was your only back-rank defender.', example_insights 1), set beside what the engine alone shows ('+3.8 → −8.1', how_it_works step 3). The working App Store badge, the desktop QR and the price statement 'Free — Premium from $4.99/mo' are also in view, along with 'iPhone, iPad and Mac · offline · no account'.",
+  "categoryDefault": "A dark navy/black page with a glowing gold knight (the app icon's register), a 3D wooden board in an iPhone bezel beside the headline, an accuracy ring or eval bar, a feature-card grid, a pricing table and an FAQ accordion. The other default is the Chess.com green-and-white platform look.",
+  "predictableOpposite": "A bright, flat 'learn chess' page with a cartoon mascot and gamified streaks (the Duolingo register), or a clinical white 'AI coach' SaaS page full of accuracy charts and centipawn graphs. That second one is the very thing Chessful says does not teach.",
+  "literalReading": "'Chess-ful' read literally gives a page full of chess sets: board and pieces, wood and gold, and the icon's circuit-traced knight ('AI chess'). Candidate 7 (the Bauhaus chess set, a page built from pieces) is the one literal slot. It was not dealt.",
+  "evidence": [
+   "_apps/chessful.md: price.model freemium, price.value 'Free — Premium from $4.99/mo'. Plans: Free $0, Premium Monthly $4.99/mo, Annual $29.99/yr (highlight, ~50% cheaper), Lifetime $39.99 once ('Best long-term value', Family Sharing). Schema 0–39.99, 4 offers, 7-day free trial on Premium. Platforms iOS, iPadOS, macOS (Universal Purchase). Status live, App Store id6761336870.",
+   "Blocks present: hero (pre_headline, headline 'Stop guessing. Start understanding.', subheadline, cta 'Download Free'); founder (Organization, heading 'For the club player who wants a teacher, not a centipawn graph.', story, 4 signals, studio link, support email, response time); who_for 6 / who_not_for 4; value_points 4; features 6; how_it_works 6 steps (HowTo); example_insights 6 worked mistakes (anchor 'templates'); comparison_table (5 apps × 10 rows, verified 2026-05-13); roadmap 7 items; screenshots 6; privacy (nothing collected, no tracking, no account, 5 notes); faq 14; related_journal; show_body + about_heading; related_apps shogiful/xiangqiful; alternatives_to 7. Absent: spotlight, insight_gallery, training_vocabulary, plateau_disclosure, coach_cta.",
+   "how_it_works step 3 holds the page's proof line verbatim. The engine shows '+3.8 → −8.1, line: Nxd5 Qxe1+ Kh2 Qe5+ g3 Qxd5'; Chessful says 'You played Nxd5 — your knight was the only defender of the back rank, and Black's queen took mate in two'.",
+   "App UI (screenshots 1–6): navy ground (~#0B0F1A) and slate cards. Mustard-gold primary buttons ('Train This Pattern', 'Play vs Pebble'). Red 'You played' and green 'Best was' dots, a wood board, figurine move text ('♕b3') and move data in mono ('Move 12. Qb3'). Opponents are listed with ELO and style (Pebble 400 Balanced, Daisy 430 Aggressive, Milo 470 Defensive, Sparky 510 Tactical, Luna 550 Balanced; Robin 580, Otto 610, Ivy 640, Rex …) in tiers of five ('Novice 5/5', 'Beginner 5/5'). Icon: black faceted knight with gold circuit traces on near-black.",
+   "_data/transparency.yml chessful: manifest_source source, 0 tracking domains, 0 third-party SDKs, no account. Network calls 'None. Stockfish 18 engine runs locally on-device.' Data leaves device: No. Analytics none. Required-reason API UserDefaults (CA92.1).",
+   "_data/testimonials.yml: two real Reddit quotes (S.: 'I get to understand both the mistakes and the engine now'; V.V.), tier hero. Ratings count 11, so no stars appear anywhere.",
+   "Alternatives pages targeting it (6): chess-com, chessable, chessis, chessly, lichess, magnus-trainer (layout default, quick_answer, seo, FAQPage + BreadcrumbList JSON-LD, card grids). alternatives_to also lists Really Bad Chess, which has no page.",
+   "Journal: forty-chess-opponents (founder's grandfather, a Soviet chess teacher, 'the voice in Chessful's annotations is … more or less his'). 30-chess-mistake-motifs: 30 motifs in 5 dimensions (tactics 10, defense 5, positional 5, openings 3, endgames 7). how-chessful-builds-adaptive-training: 5 stages, 13-ply at club level, rules not a learned classifier.",
+   "apps/chessful/privacy/index.html has an seo block, overview, data_collection, data_storage (local, no servers), third_parties (StoreKit, Game Center), children, changes and contact. The support page has an seo block and slug. app_enrichment lists 32 UI languages."
+  ]
+ },
+ "candidates": [
+  {
+   "index": 1,
+   "name": "Annotated-games book (Chernev's Logical Chess: Move by Move, 1957, and the 'Move by Move' tradition)",
+   "family": "print / book",
+   "why": "Every stuck club player is told to read the book that explains each move of a master game in plain words, and that is Chessful's promise applied to your own games. It carries the mechanism as book furniture: your move in bold figurine notation with its '?', one sentence of annotation, a hatched diagram at the turning point, and end-of-chapter exercises drawn from your losses (the training queue) with the solutions at the back."
+  },
+  {
+   "index": 2,
+   "name": "Club night and the post-mortem (roll-up vinyl board, plastic Staunton set, carbon-copy scoresheet)",
+   "family": "club equipment / vinyl, paper form and ritual",
+   "why": "Over-the-board chess is really played on a green-and-buff vinyl roll-up board with a duplicate scoresheet, not on wood and gold. The post-mortem (both players replaying the game at the board after the result) is what Chessful does alone with you. It carries the mechanism as your scoresheet: the mistake rows are circled and explained in the margin, then played back on the vinyl board."
+  },
+  {
+   "index": 3,
+   "name": "Trainer's card file (Dvoretsky's position card index; the Leitner box)",
+   "family": "archive / office object",
+   "why": "Soviet-school trainers built training from a student's own games and kept the positions on index cards, and the Leitner box is spaced repetition as a physical object. It carries the mechanism literally: each mistake becomes a card filed behind one of five dimension tabs, and the card moves forward through the box until you solve it twice."
+  },
+  {
+   "index": 4,
+   "name": "Chess Informant's Key to Symbols (Šahovski Informator, Belgrade, from 1966)",
+   "family": "notation system / reference periodical",
+   "why": "Every club player half-knows !, ?, !?, ± and □ from Informant-style annotation, a system built so that nobody needed words. It carries the mechanism by inversion: each sign is followed by the sentence it never said, so the signs become the navigation and the plain sentences become the product."
+  },
+  {
+   "index": 5,
+   "name": "School report card with the teacher's written remarks",
+   "family": "school document / paper form",
+   "why": "Everyone knows the gap between a grade and the teacher's remark beside it. Chessful's founder line ('a teacher, not a centipawn graph') and the grandfather who taught chess live in that gap. It carries the five skill dimensions as subjects, each with a remark taken from a worked example, and 'homework' as tomorrow's session, though it risks talking down to adults."
+  },
+  {
+   "index": 6,
+   "name": "1980s sensory chess computer (Fidelity Chess Challenger, Mephisto, Novag, Saitek)",
+   "family": "consumer electronics / instrument interface",
+   "why": "This was the pre-web offline engine: bought once, no network, an LED lit on the from- and to-squares, LEVEL chosen by pressing a square, and it could never say why. It carries the mechanism as an interface. The board lights your move red and the better one green, the readout gives the reason in a sentence, and LEVEL puts 40 different opponents on 40 squares instead of one engine at 64 settings."
+  },
+  {
+   "index": 7,
+   "name": "Bauhaus chess set (Josef Hartwig, 1923–24; Joost Schmidt's poster)",
+   "family": "industrial design / poster",
+   "why": "Design-minded players know Hartwig's set, where each piece's shape diagrams how it moves (the bishop an X, the rook a cube). It carries 'make the game legible' as geometric motif diagrams, such as a fork drawn as one shape striking two. It is the literal slot (a page built from chess pieces)."
+  }
+ ],
+ "seed": {
+  "key": "a17c58e0",
+  "assigned": 6,
+  "reroll1": 4
+ },
+ "styles": [
+  {
+   "id": "a",
+   "label": "The Sensory Board",
+   "kicker": "THE ROLL",
+   "sourceIndex": 6,
+   "lineage": "The dedicated chess computers of 1977–1990: Fidelity Electronics' Chess Challenger (1977, the first commercial unit) and its Sensory boards, Hegener + Glaser's Mephisto, Novag and SciSys/Saitek. They had a printed playing surface with an LED at each square that lit the from- and to-square of the machine's move. They also had a strip of membrane keys (NEW GAME, LEVEL, TAKE BACK, HINT, VERIFY, INFO), a small LCD readout, a level picked on many models by pressing a square, and a printed level table in the manual. The offline engine you bought once, and it never told you why.",
+   "thesis": "The page is the offline chess machine rebuilt to do what it never could. The board lights the move you played and the better one, the readout says why in a sentence, and LEVEL picks one of 40 different players by square instead of one engine at 64 settings. It refuses the phone-in-a-bezel split hero and the dark eval-graph dashboard.",
+   "scene": "A player at the kitchen table on a weeknight with the unit flat under the overhead lamp. The matte light-grey plastic is lit by the room, and the red and green LED points are the only emitted light → light (color-scheme: light).",
+   "scheme": "light",
+   "colorStrategy": "Committed",
+   "palette": [
+    {
+     "hex": "#D3D5CF",
+     "role": "Housing plastic: ground of every section. Graphite legends read 9.9:1 and secondary legends #4A4F52 read 5.6:1"
+    },
+    {
+     "hex": "#26292B",
+     "role": "Graphite: key strip, LCD bezel, printed legends and body text, the inverted Chessful column in tables"
+    },
+    {
+     "hex": "#EEEFEA",
+     "role": "Printed plate white: light squares, model-label sticker, manual reading plates (graphite 12.7:1), key legends on graphite"
+    },
+    {
+     "hex": "#8C9A8E",
+     "role": "Printed dark squares (sage grey). Pieces carry outlines; graphite on it reads 5.0:1 for coordinates"
+    },
+    {
+     "hex": "#C8261B",
+     "role": "LED red, 'you played', and the NEW GAME key cap (plate-white legend 4.85:1). Red text uses #A8221A (4.9:1 on housing)"
+    },
+    {
+     "hex": "#1E8A47",
+     "role": "LED green, 'best was'. Each LED dot sits in a 2px graphite ring for ≥3:1, and green text uses #11612F (5.1:1)"
+    },
+    {
+     "hex": "#A7B29A",
+     "role": "Reflective LCD window: recessed readout ground, graphite ink 6.6:1"
+    }
+   ],
+   "type": {
+    "display": "Saira (variable, wdth 50–125, wght 100–900; @fontsource-variable/saira full-axis latin 99 KB). H1 and section legends use wdth 112 wght 700, membrane-key legends wdth 100 wght 600 caps 14px, and the 'CHESSFUL' brand plate wdth 125 wght 800.",
+    "text": "Red Hat Text 400/600 (@fontsource/red-hat-text, 14.5 KB each) sets the manual's reading text: the LCD sentence, quick start, Q&A, privacy and about prose at 16–22px.",
+    "utility": "Doto 700 (@fontsource/doto, 4 KB) is a dot-matrix face used only inside the LCD for real data: move lines (Nxd5?  BEST Bf4), ELO numbers and square coordinates.",
+    "rationale": "Saira's squared shoulders read as pad-printed legends on 1980s consumer electronics (the period's Eurostile register) without sci-fi costume. One file gives the wide brand plate and normal-width keycaps. Red Hat Text keeps long instructions comfortable at 16px with open apertures in the same engineered-grotesk tone. Doto is the readout's own matrix and stays on data. Total ≈133 KB."
+   },
+   "materials": [
+    "Matte housing: flat #D3D5CF with a 2% inline-SVG feTurbulence stipple (~400 bytes). Sections are divided by moulded seams (1px graphite over a 1px white highlight) and are never cards",
+    "Printed sensory board: an HTML 8×8 grid of buttons with light and dark printed squares and Saira coordinates on a 12px frame. A 6px LED dot sits at each square's lower-left corner: unlit is a grey ring, lit is a red or green core with a 2px halo",
+    "Membrane keys: pillowed rounded rectangles (radius 6px, 1px top highlight) on a graphite strip. The main legend is Saira caps with a Red Hat 11px sub-legend saying what the key opens",
+    "Recessed LCD window (#A7B29A, 2px inset shadow) carrying a Doto move line and a Red Hat sentence",
+    "Program-module well: a recessed slot in the housing where the official App Store badge sits with the price printed beside it",
+    "Model-label sticker: a #EEEFEA rectangle with fine print holding the QR and the maker line",
+    "Diagram pieces from an open-licence SVG set"
+   ],
+   "firstViewportDesktop": "1440×900: one unit face on the housing ground, no phone. y0–56 housing edge: icon 28px + 'CHESSFUL' (Saira wdth 125 wght 800, 18px graphite) at x80, with 'Chess training & analysis · iPhone · iPad · Mac' (Saira 500, 13px #4A4F52) right-aligned. y76–196: H1 'Stop guessing. Start understanding.' printed across x80–1360 in Saira wdth 112 wght 700 60px graphite, one line. y220–884: the sensory board at x80–744 (8×80px squares + 12px frame) in illustrative position 1. Red LEDs at c3 and d5 mark 'you played ♘xd5', green LEDs at c1 and f4 mark 'better was ♗f4', and e1 is ringed in print. The control panel sits on the same housing at x792–1360. y220–396: recessed LCD with line 1 'Nxd5?   BEST Bf4' (Doto 700 22px) and lines 2–3 'You played Nxd5. The knight was your only back-rank defender.' (Red Hat 600 22/30px). y412–520: six membrane keys, 2×3 at 180×48 (NEW GAME red, LEVEL, TAKE BACK / HINT, VERIFY, INFO). y540–656: the module well (568×116) holds 'Free — Premium from $4.99/mo' (Saira 700 22px) and '7-day free trial on Premium · one purchase for iPhone, iPad and Mac' (Red Hat 14px) on the left, with the official badge 54px tall on the right. y676–884: the model-label sticker (320×208) holds a 128px QR and 'Scan to install on your iPhone'. Beside it, 'Stockfish on-device · No network · No account · 40 opponents' is printed in Saira 600 13px caps.",
+   "firstViewportMobile": "390×844. y0–48 housing edge: icon 24px + 'CHESSFUL' (Saira wdth 125 wght 800 16px), with a graphite KEYS key (72×36) on the right that opens the key grid. y56–128: H1 in Saira wdth 100 wght 700 30/34px, two lines. y138–246: LCD window 358×108 with 'Nxd5?  BEST Bf4' (Doto 16px) and the sentence (Red Hat 600 16/22px, three lines). y256–614: board 358×358 (8×42px + 11px frame) with the red and green LEDs lit. y624–712: module well with the price (Saira 700 18px) and the official badge 148×50. y724 onward: the Quick start plate begins. The QR is hidden.",
+   "conversion": "The badge is official artwork seated in the recessed program-module well and is never restyled. The price is printed beside it as the unit's legend ('Free — Premium from $4.99/mo'). The QR sits on the model-label sticker at ≥1024px with hover:hover. Sticky bar: once the module well scrolls away, the graphite key strip pins to the top on desktop (56px: brand plate, six keys, price legend, 40px badge). On mobile a 64px graphite strip is fixed to the bottom with the icon, price legend and badge. Pricing (#pricing, the NEW GAME key) shows four moulded program modules with pad-printed labels: Free $0, Premium Monthly $4.99/mo, Annual $29.99/yr with a red key-cap tab '~50% cheaper than monthly', and Lifetime $39.99 once marked 'Best long-term value'. Features are printed on each module's label and plans_footnote follows as fine print. A module well with the badge returns after the comparison and in the closing NEW GAME panel. The Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Unit face: housing edge, printed H1, sensory board with example-1 LEDs, LCD sentence, six nav keys, module well (price + badge), model sticker (QR)",
+    "Quick start: quick_answer on a #EEEFEA plate fixed to the housing, marked speakable",
+    "INFO: the ai-canonical quick reference as an open <details> 'Specifications' plate. Two-column spec table: engine Stockfish on-device, platforms, price, account none, network none, opponents 40, skill dimensions 5",
+    "TAKE BACK (#templates): the six example_insights. One board is keyed by six motif-tag keys (Hung piece, Missed fork, Weak king, Repertoire lapse, Opposition, Back rank). Each key relights the LEDs and swaps the LCD, and the body sits on a reading plate. Without JS, six static mini-boards print in sequence",
+    "LEVEL (#opponents): the full board with 40 opponents on squares a1–h5 (files = tiers, ranks = the five players of a tier), plus the printed level table (tier, name, ELO, style). It contrasts '64 levels of one engine' with '40 players' and links the forty-opponents post",
+    "HINT (#how-it-works): 'Operating sequence', the six how_it_works steps as a numbered manual procedure (real sequence; HowTo). The step-3 engine line versus sentence is printed in an LCD window",
+    "Readout memory: six screenshots in a horizontal snap strip, each in a 6px graphite screen window with a Red Hat caption",
+    "What the unit does: value_points 4 + features 6 as a two-column printed legend panel (Saira 600 18px titles, Red Hat 16px text, seams between, no cards)",
+    "Suitable for / Not suitable for: who_for 6 and who_not_for 4 in the manual's suitability box. who_not_for items link the Chess.com, Lichess and Magnus Trainer alternatives",
+    "NEW GAME (#pricing): four program modules + footnote + module well with badge",
+    "Specifications compared (#compare-heading-chessful): comparison_table on a plate with the Chessful column inverted graphite, intro, footnote, then a module well with the badge",
+    "VERIFY (#privacy): status panel of printed LEDs that never light. Network calls none, third-party SDKs 0, tracking domains 0, account not required, data leaves device no, analytics none (transparency.yml), plus privacy.notes and links to /transparency/#chessful and /apps/chessful/privacy/",
+    "About this unit: show_body prose under about_heading on a 68ch reading plate, keeping in-body links (#features, #how-it-works, #templates, #compare-heading-chessful)",
+    "Maker's plate: founder heading, story, 4 signals, studio link, support email + response time. Below it, 'Letters from owners' carries the two real Reddit quotes (S., V.V.) with source",
+    "Firmware updates: roadmap. Shipped items have a lit green LED; targeted items are unlit with their target text, followed by the disclaimer",
+    "Q & A: all 14 FAQ printed open in manual Q/A form (FAQPage)",
+    "Further reading: related_journal, the training and 30-motif posts, the best-chess-apps guide, the six alternatives pages, and 'Other units from this maker' (Shogiful, Xiangqiful)",
+    "Closing NEW GAME panel: module well with badge, QR sticker, price; then the maker/freshness line (Built by Lagerland Apps · first released 2026-04-01 · last updated 2026-05-13) and the shared 'A Lagerland app' strip"
+   ],
+   "navigation": "The six membrane keys are the microsite nav: NEW GAME (#pricing, red cap), LEVEL (#opponents), TAKE BACK (#templates), HINT (#how-it-works), VERIFY (#privacy), INFO (#quick-reference and #faq). Each key carries a plain sub-legend ('LEVEL · 40 opponents'). The active section's key shows a lit red LED dot. Past the hero the key strip pins to the top with the badge. On mobile, KEYS opens a <details> 2×3 key grid.",
+   "signatureInteraction": "Level by Square. The LEVEL board is a CSS grid of 64 <a> squares, with the 40 opponents on a1–h5 and ranks 6–8 printed blank. Tapping or arrow-keying to a square (roving tabindex, Enter to select) lights its LED and writes 'PEBBLE · 400 · BALANCED' to the LCD through an aria-live polite region, and the matching level-table row is marked. Without JS, each square is a plain link to its row in the fully visible level table, and the LCD server-renders the first opponent. Under reduced motion the LED switches instantly with no fade or blink.",
+   "motionGrammar": "Only LEDs move. A lit LED fades in over 120ms as the previous one goes out. HINT blinks the green pair twice (2×300ms), the way a real unit shows its move, then holds steady. Membrane keys press in 1px on :active. No scroll reveals, parallax or sliding panels. prefers-reduced-motion gives instant states with no blink.",
+   "readModeVariant": "Privacy, support and alternatives are the unit's printed manual. The graphite key strip is the masthead (brand plate, six keys linking back to the microsite, badge right), housing grey is the frame, and the reading column is a #EEEFEA plate 68ch wide in Red Hat Text 17/28 graphite with Saira 700 headings. Privacy opens with the VERIFY LED panel (transparency facts), then the policy text. Support is the 'Service' page: the email in Saira 700 24px, response time, what to include, and the maker's plate. Alternatives print 'Chessful or Chess.com' on the housing. The comparison runs as a spec table on the plate, 'Pick Chessful if… / Stay with Chess.com if…' become the Suitable / Not suitable boxes, then Q & A, with a module well and badge at the foot.",
+   "assetsNeeded": "(1) The full 40-opponent roster exported from the app (name, ELO, style, tier). Screenshots show only nine names and tiers of five; the a1–h5 layout assumes 8 tiers × 5, and if that is wrong the opponents go in rating order. (2) Six illustrative positions (FEN) authored for the six example_insights, engine-checked and labelled 'illustrative position'. (3) An open-licence SVG piece set (e.g. cburnett, CC BY-SA 3.0, credited in the footer). Everything else (icon, screenshots, QR, badge) exists.",
+   "risk": "Retro hardware can tip into nostalgia cosplay or a toy look. It has to stay matte, quiet and functional, with the board doing real work. The board-plus-control-panel arrangement must read as one instrument (one housing, keys, wells), not as copy-left/product-right. The chess computer is exactly the 'one engine at levels' that Chessful argues against, so the copy must make that the point and never imply a slider. Younger players may not know the machine, though lit squares and labelled keys read without the reference. Red and green are never the only cue: 'you played' and 'best was' are always printed. A wrong position or roster detail is a visible factual error.",
+   "memoryTest": "A grey chess-computer page. The board lit red on my mistake and green on the better move, a little display told me why in one sentence, and pressing LEVEL let me pick one of forty named opponents by square.",
+   "specimen": {
+    "bg": "#D3D5CF",
+    "ink": "#26292B",
+    "accent": "#C8261B",
+    "display": "Saira",
+    "dw": 100,
+    "text": "Red Hat Text",
+    "h1": "Stop guessing. Start understanding.",
+    "sub": "Understand your mistakes. Improve every game.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Set pawza-a in Anek Latin, unused elsewhere: wdth 75 for the index tabs and H1, wdth 100 for text. Re-colour the polypropylene as a translucent red file (~#B5332B, white text 5.6:1), and keep the white paper and the yellow 'To file' flag. tare-a keeps the blue triad, because Signboard Sky is the app's own art."
+    },
+    {
+     "sev": "major",
+     "text": "chessful-a keeps Saira for its squared 1980s electronics legends. Set mockly-a in Asap Condensed 600/700 for the H1, piece numerals and size labels, and Asap 400/600 for text. That is one family unused elsewhere, and it also clears the Albert Sans share."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Keep the ai-canonical body exactly as the Liquid block in _layouts/app.html builds it, restyled in-world. The spec table may sit above it as a lede but must never replace it."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "label": "Move by Move",
+   "kicker": "IMPECCABLE’S PICK",
+   "sourceIndex": 1,
+   "lineage": "The annotated-games book: Irving Chernev's Logical Chess: Move by Move (1957), which explains every move of 33 master games in plain words, and the tradition it started (Everyman's 'Move by Move' series, the club-library game collection). Its furniture is a contents page, 'who this book is for', a preface, games headed by players and opening, bold figurine moves each followed by a sentence, printed diagrams with diagonally hatched dark squares and a side-to-move mark, a frontispiece facing the title page, chapter exercises with solutions at the back, and a colophon.",
+   "thesis": "The page is the chess book every stuck club player is told to read, written about your own games. Your move is in bold with its '?', one sentence explains it, a hatched diagram shows the turning point, and the exercises are built from your losses with the solutions at the back. It refuses the dark-navy app-landing hero and the centipawn-graph analysis page.",
+   "scene": "A club player on the morning commute, reading on the phone in daylight the way they would read a chess book on the train: white paper, black ink, one green marking pen → light.",
+   "scheme": "light",
+   "colorStrategy": "Restrained",
+   "palette": [
+    {
+     "hex": "#FCFCFA",
+     "role": "Page paper, neutral white (not cream): ground of every page and spread"
+    },
+    {
+     "hex": "#151515",
+     "role": "Ink: text, bold moves, figurines, diagram frame and hatching (17.8:1)"
+    },
+    {
+     "hex": "#5F5F5A",
+     "role": "Secondary ink: running heads, captions, the engine line, imprint (6.3:1)"
+    },
+    {
+     "hex": "#E3E3DE",
+     "role": "Fold and table rule grey: the gutter line, table rules, the order form's dashed tear rule (non-text)"
+    },
+    {
+     "hex": "#1E6A46",
+     "role": "Green marking pen, the teacher's one colour: best-move rings in diagrams, 'Better was' moves, the Pattern line, links, focus ring (6.4:1)"
+    }
+   ],
+   "type": {
+    "display": "Literata (variable, opsz 7–72, wght 200–900; @fontsource-variable/literata opsz+wght roman latin 110 KB) at opsz 72 wght 650 for the title, chapter heads and contents. No italic display anywhere.",
+    "text": "Literata at opsz 12–18, wght 400 for annotations and prose (18/30px), wght 700 for figurine moves, and opsz 8 for diagram coordinates and running heads.",
+    "utility": "No third face. Figurines (♔♕♖♗♘♙) are inline SVG from the diagram piece set, sized 0.9em on the baseline.",
+    "rationale": "TypeTogether made Literata as the reading face for Google Play Books, so it is a book face built for phone screens, which is this page's exact scene. Optical sizes let the title page, the 18px annotation and the 11px diagram coordinates come from one family, as one book's type would. Its sturdy low-contrast serifs keep bold figurine moves crisp at 16px and stay out of the high-contrast-serif cluster. Total ≈110 KB."
+   },
+   "materials": [
+    "Paper pages: on desktop the viewport is two pages on one gutter (1px #E3E3DE fold + a 20px gutter shade at 3% ink). No page edges, drop shadow or desk around it. On phones it is one page",
+    "Printed diagrams: HTML 8×8 tables with a 2px ink frame. Light squares are paper and dark squares are 45° ink hatching (repeating-linear-gradient, 1px line every 4px). Coordinates sit outside, a side-to-move mark beside the frame, played squares are outlined in ink and the better move is ringed in green",
+    "Bold figurine move text with the annotation signs ? ! ?? in ink, followed by one sentence in roman",
+    "Running heads: verso 'Chessful · Move by Move', recto the current chapter. They are the nav",
+    "Book tables with ink rules (comparison, specifications) and an order-form coupon with a dashed tear rule for pricing",
+    "A colophon block for maker/freshness"
+   ],
+   "firstViewportDesktop": "1440×900, the opening spread, with the fold at x=720. The verso (x0–720) is the frontispiece. Its running head (y20–44) reads 'Chessful · Move by Move' (Literata 13px #5F5F5A) at x64 with a 'Contents' link. A hatched diagram 456×456 (8×54px + 12px frame) sits at x132–588, y76–532: illustrative position 1, white-to-move mark, c3 and d5 outlined, f4 ringed green. Caption at x96–624, y556–860: '♘xd5?' in Literata 700 30px; then 'You played Nxd5. The knight was your only back-rank defender. Better was ♗f4, keeping the knight on c3.' in Literata 400 20/30px ink; then 'The engine alone: +3.8 → −8.1 · ♘xd5 ♛xe1+ ♔h2 ♛e5+ g3 ♛xd5' in 15px #5F5F5A tabular figures; then 'Illustrative position' in 12px. The recto (x720–1440) is the title page. Its running head on the right reads 'Chess training & analysis for iPhone, iPad and Mac'. H1 at x800–1360, y150–380: 'Stop guessing. Start understanding.' in Literata opsz 72 wght 650 68/72px, three lines. y408–528: the subheadline in 19/29px ink. Imprint block y650–860: 'Free — Premium from $4.99/mo' in Literata 700 20px; the official badge 54px tall at x800; a 112px QR at x1248–1360 captioned 'Scan to install on your iPhone' (12px); and a foot line 'Lagerland Apps · Finland · first published April 2026 · revised May 2026' in 13px #5F5F5A.",
+   "firstViewportMobile": "390×844, one page. y0–44 running-head strip: 'Chessful · Move by Move' 13px on the left, 'Contents' on the right (opens the contents <details>). y56–160: H1 in Literata opsz 60 wght 650 32/36px, three lines. y172–462: hatched diagram 290×290 (8×34px + 9px frame), centred. y470–600: '♘xd5?' in 700 22px and the sentence in 17/26px, four lines. y612–700: price line 17px and the official badge 148×50. y712 onward: the quick-answer paragraph begins. The QR is hidden.",
+   "conversion": "The badge is official artwork in the title page's imprint position, where a publisher's mark sits. The price is set above it like a jacket-flap price. The QR sits in the imprint's ISBN-block position, captioned 'Scan to install on your iPhone', at ≥1024px with hover:hover. Sticky bar: once the imprint scrolls away, a 52px paper strip with a 1px ink rule slides down. It shows the running head on the left, the current chapter in the middle, and the price line plus a 40px badge on the right. On mobile a 60px paper strip is fixed to the bottom with the icon (32px), price line and badge. Pricing is the Order form (#pricing): a ruled coupon inside a dashed tear rule with four rows. They are Free $0; Premium Monthly $4.99/mo; Premium Annual $29.99/yr marked in green 'recommended, ~50% cheaper than monthly'; and Lifetime $39.99 once, 'Best long-term value'. Each row's features run in after it, plans_footnote is the coupon's small print, and the badge sits on the 'send to' line. A badge line returns under the comparison table and on the back cover. The Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Opening spread: frontispiece (hatched diagram, ♘xd5? with its sentence and the engine line) facing the title page (H1, subheadline, imprint with price, badge, QR, first published / revised)",
+    "In one paragraph: quick_answer set as the book's opening paragraph at 22/34px, speakable",
+    "Edition notes: the ai-canonical quick reference as an open <details> imprint-page table (platforms, engine, price, account, network, languages 32)",
+    "Contents: a real contents page listing every chapter as anchor links. It doubles as the nav",
+    "Preface: founder heading 'For the club player who wants a teacher, not a centipawn graph.', story, 4 signals, studio link, signed 'Lagerland Apps, Finland'. Optional with owner consent: the journal's grandfather line, quoted with its link",
+    "Who this book is for / not for: who_for 6 and who_not_for 4 as two run-in lists. Not-for items link the Chess.com, Lichess and Magnus Trainer pages",
+    "Introduction: show_body under about_heading, 66ch, keeping in-body links",
+    "How to use this book (#how-it-works): the six how_it_works steps numbered 1–6 (HowTo). Step 3's engine line versus sentence is set as a displayed extract",
+    "The games (#templates): six worked examples, two per spread on desktop. Each has a tag heading (Tactics · Hung piece), a hatched diagram, a bold figurine move, the body as annotation and 'Pattern: …' in green",
+    "Exercises from your own games: the training queue explained as end-of-chapter exercises (three diagrams, 'White to move. What did you miss?'). It covers skill buckets, spaced repetition, Free 3 sessions/week vs Premium unlimited and 90/180/365-day trends, and points to the Solutions",
+    "Plates: six screenshots as a two-up spread (mobile: snap strip), captioned by what each shows",
+    "What's in the book: value_points 4 + features 6 as running prose with bold run-in heads, not cards",
+    "Index of opponents: the 40 opponents (needs the roster; until then, prose with the nine screenshot-confirmed names labelled by tier) + the forty-opponents post",
+    "Order form (#pricing)",
+    "Table: Chessful and four alternatives (#compare-heading-chessful): a ruled book table with the Chessful column in bold, intro, footnote, then a badge line",
+    "Copyright & data (#privacy): privacy.notes and a transparency facts table, linking /transparency/#chessful and the privacy policy",
+    "In preparation: roadmap as the next edition's list (when, title, detail, shipped marked 'in this edition') + disclaimer",
+    "Questions readers ask: all 14 FAQ open, question in bold and answer in roman (FAQPage)",
+    "Solutions: the better moves for the exercises, at the back as books do",
+    "Further reading: related_journal, the adaptive-training and 30-motif posts, the best-chess-apps guide, the six alternatives pages; 'Also in this series: Shogiful, Xiangqiful'",
+    "Back cover: the two real Reddit quotes (S., V.V.) with source, then price, badge and QR",
+    "Colophon: Built by Lagerland Apps · first released 2026-04-01 · last updated 2026-05-13 · piece-set credit; then the shared 'A Lagerland app' strip"
+   ],
+   "navigation": "A real contents page is the nav. The verso running head carries 'Contents', which opens a <details> list of chapters (works without JS). The recto running head always names the current chapter, server-rendered as the first chapter and then updated by IntersectionObserver. On mobile the running head is the top strip with 'Contents'. No hamburger icon, no pills.",
+   "signatureInteraction": "Play through. Every bold move in an annotation is a button bound to its diagram. Tap '♘xd5?' to see the position after your move with the played squares outlined, and tap 'Better was ♗f4' to switch to the improvement with the green ring (aria-pressed on the move buttons). Each diagram server-renders both positions as static <table> boards. JS shows one at a time and swaps on tap. Without JS, both print side by side at half size, captioned 'After your move' and 'After the better move'. Under reduced motion the swap is instant with no crossfade.",
+   "motionGrammar": "Paper barely moves. Diagram swaps crossfade over 160ms, and the sticky running-head strip slides 52px in over 180ms. No scroll reveals, parallax or animated numbers. prefers-reduced-motion makes everything instant.",
+   "readModeVariant": "These pages are chapters of the same book. The running-head nav and paper ground carry over as a single page, not a spread, with a 66ch column in Literata 18/30 ink and the chapter title at opsz 60 wght 650. Privacy is the 'Copyright & data' chapter, opening with the transparency facts table. Support is 'Correspondence': the email set at 26px, the response time, what to include. Alternatives become 'Chessful or Chess.com: a comparison', with an optional illustrative diagram, the comparison as a ruled book table, 'Choose Chessful if… / Choose Chess.com if…' as two run-in paragraphs, Questions, and the imprint block with the badge at the foot.",
+   "assetsNeeded": "(1) Six illustrative positions (FEN), each with the after-mistake and after-better-move position, for the six example_insights, engine-checked and labelled. (2) An open-licence SVG piece set for diagrams and inline figurines (e.g. cburnett, CC BY-SA 3.0, credited in the colophon). (3) Optional: the 40-opponent roster for the Index of opponents. Otherwise it runs on existing assets.",
+   "risk": "This is the most familiar of the three. A bookish serif page sits next to the editorial-serif cluster that AI pages fall into. It is the pick because the annotated book is literally the lineage of Chessful's promise, and it escapes the cluster only by being a chess book rather than a magazine: hatched diagrams, bold figurine moves, a contents page and running heads, white not cream, no italic display, no tracked labels. The spread must collapse to one honest page on phones, never a narrow column with fake page edges. The frontispiece facing the title page must read as a book spread, not copy-and-product. A wrong diagram will be spotted by players. Literata's 110 KB leaves no room for a second face.",
+   "memoryTest": "It read like a chess book about my own games. There was a hatched diagram, my move in bold with a question mark, and one plain sentence telling me what I'd missed. The App Store button sat where a publisher's name goes on a title page.",
+   "specimen": {
+    "bg": "#FCFCFA",
+    "ink": "#151515",
+    "accent": "#1E6A46",
+    "display": "Literata",
+    "dw": 200,
+    "text": "Literata",
+    "h1": "Stop guessing. Start understanding.",
+    "sub": "Understand your mistakes. Improve every game.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "xiangqiful-c keeps the hand-marked notebook. chessful-b stays a typeset book. The 'better was' rings become a printed second ink in a non-green colour (e.g. printed blue or red-orange) with no pen strokes. The hero is a single recto page (title page plus frontispiece diagram) instead of an open spread."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "Keep the ai-canonical body exactly as the Liquid block in _layouts/app.html builds it, restyled in-world. The spec table may sit above it as a lede but must never replace it."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "label": "Key to Symbols",
+   "kicker": "SECOND ROLL",
+   "sourceIndex": 4,
+   "lineage": "Chess Informant (Šahovski Informator, Belgrade, from 1966) published master games annotated without words, in figurine algebraic notation and a language-independent sign system. The signs include ! good move, ? mistake, ?? blunder, !? interesting, ?! dubious, □ only move, △ with the idea, ± clear advantage, +− winning, ∞ unclear, ⌓ weak point, → attack, ⇆ counterplay and N novelty. Each volume explains them once, at the front, in a multilingual 'Key to symbols' table.",
+   "thesis": "Chess's most famous annotation system was built to need no words, and Chessful's whole point is the words. The page is set as one long key to symbols: every sign a reader half-knows, followed by the sentence it never said, so the signs are the navigation and the sentences are the product. It refuses the board-in-a-phone hero and the eval-graph dashboard, and there is no board in the first viewport at all.",
+   "scene": "Late evening on the sofa, the lost game still open on the phone in a dark room. The page arrives as a saturated cobalt field with paper-white signs → dark (color-scheme: dark).",
+   "scheme": "dark",
+   "colorStrategy": "Drenched",
+   "palette": [
+    {
+     "hex": "#2338B0",
+     "role": "Cobalt volume colour: page ground everywhere, masthead and sticky bar (the drench)"
+    },
+    {
+     "hex": "#F6F5F0",
+     "role": "Paper white: signs, headlines and sentences on cobalt (8.5:1), and the ground of the paper key pages"
+    },
+    {
+     "hex": "#C9D0F2",
+     "role": "Gloss blue-white: key glosses, captions, the engine line on cobalt (6.1:1)"
+    },
+    {
+     "hex": "#101536",
+     "role": "Deep ink: all text on paper key pages (16.3:1), the QR tile surround"
+    },
+    {
+     "hex": "#F2C14E",
+     "role": "The app's own gold, used only for '!' and 'Better was' moves, the recommended plan mark and the focus ring (5.5:1 on cobalt)"
+    }
+   ],
+   "type": {
+    "display": "Anybody (variable, wdth 50–150, wght 100–900; @fontsource-variable/anybody full-axis latin 57 KB). Sign glyphs (? ! ?! !? N 0) use wdth 150 wght 900 at 96–220px, H1 and row headlines wdth 80 wght 800, nav and labels wdth 90 wght 600, and moves wght 700.",
+    "text": "Source Serif 4 (variable wght 200–900; @fontsource-variable/source-serif-4 wght roman latin 51 KB) sets Chessful's sentences, FAQ, about prose and privacy text at 18–26px in weights 400/600.",
+    "utility": "Inline SVG for the non-ASCII signs (□ △ ± ∓ ⌓ ∞ → ⇆), drawn to Anybody Black's stroke weight, and for figurines. Noto Sans Math (270 KB) and Noto Sans Symbols 2's symbols subset (382 KB) bust the budget and are rejected.",
+    "rationale": "The page argues that notation is the machine and sentences are the teacher, and the type says the same. One variable grotesk spans the key's two jobs: expanded black for signs that read at a glance, condensed for dense key columns, the way a reference periodical's one sans runs both cover and key. Anybody's sturdy, slightly ink-trapped forms keep their character at 220px. A calm transitional book serif carries every sentence Chessful speaks. Total ≈108 KB."
+   },
+   "materials": [
+    "Cobalt drench: flat #2338B0 with no gradient or texture, like a cloth-bound reference volume",
+    "The key table: one two-column grid runs the whole page, a sign column (desktop 280px, mobile 72px) and a gloss column. Rows are divided by 2px paper rules, the key's printed rules. It is real table structure, not cards",
+    "Sign glyphs: Anybody 900 expanded for ASCII signs, plus SVG strokes for □ △ ± ⌓ ∞ ⇆. Signs are position: sticky inside their rows, so the sign stays beside a long gloss",
+    "Paper key pages: #F6F5F0 panels inset in the gloss column carry all long reading (FAQ, comparison table, about, privacy) in ink. White-on-blue paragraphs are never longer than three lines",
+    "Figurine notation in bold Anybody with SVG figurines. The screenshots are the only boards on the page"
+   ],
+   "firstViewportDesktop": "1440×900, three key rows, no board, no phone. y0–64 cobalt masthead: icon 32px + 'Chessful' (Anybody wdth 100 wght 800 22px paper) at x80. The sign nav runs x640–1360 ('? Mistakes · △ Method · ⌓ Training · ± Compared · Price · ∞ Questions', each a sign at 20px plus a word in Anybody 600 15px), followed by a 'Symbols / Sentences' toggle (JS-inserted). 2px paper rule at y64. Sign column x80–360, gloss column x400–1360. Row 1 (y80–296): '?' in Anybody wdth 150 wght 900 at 200px paper. Gloss: 'Stop guessing.' (H1 part 1, Anybody wdth 80 wght 800 96/92px paper) and 'In chess notation, ? marks a mistake. It never says why.' (Source Serif 4 20px #C9D0F2). Rule. Row 2 (y312–596): '!' at 200px in #F2C14E. Gloss: 'Start understanding.' (H1 part 2, same size; the H1 is one element laid across both rows with subgrid). Then '♘xd5?' (Anybody 700 26px), then 'You played Nxd5. The knight was your only back-rank defender. Better was ♗f4.' (Source Serif 4 600 26/36px paper), then 'Engine alone: +3.8 → −8.1' (16px #C9D0F2). Rule. Row 3 (y612–884): the sign column holds the QR, 200px on a 232px paper tile, captioned 'Scan to install on your iPhone' (13px). Gloss: 'Free — Premium from $4.99/mo' (Anybody wdth 90 wght 700 34px paper), 'iPhone, iPad and Mac · Stockfish on-device · offline · no account' (Source Serif 18px #C9D0F2), the official black badge 56px tall, and 'Universal Purchase · 7-day free trial on Premium' (14px).",
+   "firstViewportMobile": "390×844. Sign column x16–88, gloss x100–374. y0–52 masthead: icon 28px + 'Chessful' (Anybody 800 20px), with a 'Key' button on the right that opens a <details> list of every sign and its word. Row 1 (y64–176): '?' at 96px. Gloss: 'Stop guessing.' (Anybody wdth 75 wght 800 36px) and 'In chess notation, ? marks a mistake. It never says why.' (15px, two lines). Row 2 (y184–452): '!' at 96px gold. Gloss: 'Start understanding.' (36px, two lines), '♘xd5?' and the sentence in Source Serif 600 18/26px, five lines. Row 3 (y460–620): the sign column holds the app icon 64px. Gloss: price line (Anybody 700 20px), platforms (14px) and the official badge 148×50. y632 onward: the 'In short' quick-answer row begins. The QR is hidden.",
+   "conversion": "The official black badge sits on cobalt in the install row and is never recoloured. The price is set as that row's headline. The QR is the install row's sign: a scannable sign in the sign column on a paper tile at ≥1024px with hover:hover. On touch and mobile the app icon replaces it. Sticky bar: after the install row leaves, the masthead gains the price (Anybody 700 16px) and a 40px badge at its right end. On mobile a 60px cobalt strip with a 2px paper rule is fixed to the bottom with the icon, price and badge. The Price row (#pricing) is a sub-key of four entries on a paper key page: plan name | price | what's in it. Annual is marked with a gold '!' ('recommended, ~50% cheaper than monthly') and Lifetime with 'Best long-term value', followed by plans_footnote. The install row (QR/icon, price, badge) repeats after the comparison and at the foot. The Smart App Banner meta stays in head.",
+   "visitorPath": [
+    "Masthead: icon, wordmark, sign nav, Symbols / Sentences toggle",
+    "Hero key rows: '?' Stop guessing. / '!' Start understanding. with the example-1 sentence and the engine line / install row (QR or icon, price, badge)",
+    "'In short' row: quick_answer on cobalt at 22/32px, speakable",
+    "'Key' row: the ai-canonical quick reference as an open <details> paper key page (spec table: engine, platforms, price, account, network, opponents, dimensions, languages)",
+    "'?' rows (#templates): six key rows, one per example_insight. Each has the tag as row label, the headline in Anybody 800 32px, the body in Source Serif 19px, a gold '!' line with the better move, the pattern name and a notation line drawn from the body's own moves (no invented evaluations)",
+    "'⌓' weak point → Training: value point 2 plus the five skill dimensions as a sub-key (tactics, defense, positional play, openings, endgames). Spaced repetition, Free 3 sessions/week vs Premium unlimited, 90/180/365-day trends, link to the 30-motif post",
+    "'△' with the idea → Method (#how-it-works): how_it_works steps numbered 1–6 (real sequence; HowTo)",
+    "'Screens' row: six screenshots on paper tiles in a horizontal snap strip with captions",
+    "'40' row: the forty opponents (feature 3, roster names once exported, link to the forty-opponents post). The other features and value points follow as a plain sub-key",
+    "'!?' Worth a try if… (who_for 6) and '?!' Probably not for you if… (who_not_for 4, linking Chess.com, Lichess and Magnus Trainer pages)",
+    "'±' Compared (#compare-heading-chessful): 'In notation, ± means one side stands better. Here is where, row by row, including where the others do.' comparison_table on a paper key page with the Chessful column in bold, intro, footnote, then the install row",
+    "'Price' row (#pricing)",
+    "'0' row (#privacy): '0 tracking domains · 0 third-party SDKs · 0 accounts' as a transparency facts table on paper, privacy.notes, links to /transparency/#chessful and the privacy policy",
+    "'About' row: show_body under about_heading on a paper key page, 66ch, in-body links kept",
+    "'Maker' row: founder heading, story, 4 signals, studio link, support email + response time; then 'Readers write': the two real Reddit quotes (S., V.V.)",
+    "'N' novelty → Roadmap: shipped / targeted items with their dates + disclaimer",
+    "'∞' unclear → Questions: all 14 FAQ open on a paper key page (FAQPage)",
+    "'See also' row: related_journal, the training and 30-motif posts, the best-chess-apps guide, the six alternatives pages, Shogiful and Xiangqiful",
+    "Closing install row; maker/freshness line (Built by Lagerland Apps · first released 2026-04-01 · last updated 2026-05-13); shared 'A Lagerland app' strip"
+   ],
+   "navigation": "The key is the nav. The masthead lists signs with their words ('? Mistakes', '△ Method', '⌓ Training', '± Compared', 'Price', '∞ Questions') as plain links, and the active row's sign is underlined 2px paper. On mobile the 'Key' button opens a <details> list of every row (sign + word + anchor), the literal key to the page. Signs always carry their word, never a sign alone.",
+   "signatureInteraction": "Symbols / Sentences. A masthead toggle (aria-pressed, inserted by JS) sets data-mode='notation' on <html>. The whole page then collapses into pure annotation: moves, signs and the engine line only (e.g. '♗d3? (♕d2!)', '+3.8 → −8.1'), with every sentence hidden. Pressing again brings the words back, so the visitor feels exactly what Chessful adds. Words is the default, and crawlers always get both. Without JS there is no toggle: each row prints the sentence large with its notation line small beneath it. Under reduced motion the swap is instant with no crossfade or height animation.",
+   "motionGrammar": "Typographic only. Signs never animate. On toggle, sentences and notation crossfade over 140ms and rows change height without animation. Signs hold their place as long rows scroll past (CSS sticky, no JS). No reveals, parallax or counters. prefers-reduced-motion makes everything instant.",
+   "readModeVariant": "Cobalt stays the frame: the masthead with sign nav, and the page title in Anybody wdth 80 wght 800 on cobalt. The reading column is a paper key page (#F6F5F0, ink #101536) at 66ch in Source Serif 4 18/30. On desktop the sign column persists as the margin. Privacy has '0' beside the transparency table, then the policy text. Support has 'Write' beside the email (Anybody 700 26px), the response time and what to include. Alternatives use '±' beside the comparison table, '!?' and '?!' beside 'Choose Chessful if… / Stay with Chess.com if…', '∞' beside the FAQ, and the install row at the foot. On mobile the sign column shrinks to 56px with signs at row starts.",
+   "assetsNeeded": "(1) A small SVG set for the non-ASCII signs (□ △ ± ∓ ⌓ ∞ → ⇆), drawn to Anybody Black's stroke weight (~1 KB each). (2) Inline SVG figurines from an open-licence piece set (e.g. cburnett, credited). (3) Optional: the 40-opponent roster for the '40' row. No diagrams are needed. Screenshots, icon, QR and badge exist.",
+   "risk": "It relies on chess-literate wit. Visitors who have never seen annotation signs must still get it instantly, so every sign always carries its word. A cobalt drench is loud for a calm brand, and it may read 'fintech blue' to anyone without the signs, so long reading happens only on paper panels. Signs used as section markers can slide into decoration, so each must keep its real chess meaning (? mistakes, △ with the idea, ⌓ weak point, N novelty, ∞ unclear, !? worth a try, ?! dubious). Having no board above the fold is a bold bet in a category where visitors expect one, so the screenshots must carry the visual proof. The toggle could be mistaken for a language switch, so it is labelled plainly.",
+   "memoryTest": "A bright blue page with a giant question mark next to 'Stop guessing' and an exclamation mark next to 'Start understanding'. Every section was marked with a chess annotation sign, and a switch turned the whole page into symbols and back into plain sentences.",
+   "specimen": {
+    "bg": "#2338B0",
+    "ink": "#F6F5F0",
+    "accent": "#101536",
+    "display": "Anybody",
+    "dw": 100,
+    "text": "Source Serif 4",
+    "h1": "Stop guessing. Start understanding.",
+    "sub": "Understand your mistakes. Improve every game.",
+    "fontsOk": true,
+    "textOk": true
+   },
+   "fixes": [
+    {
+     "sev": "blocker",
+     "text": "Re-derive every visitorPath from the world's own reading order, and enforce two rules. (1) Within a surface, no two styles may share the relative order of more than two of {price, screenshots, comparison, privacy record, founder, FAQ}. (2) At least one style per surface must change GROUPING, not just order: for example, FAQ split into the sections it answers, who_for/who_not_for folded into the price, or the privacy record as the opener. World-native examples: tare-b sets Puzzle No. 1 before the Rules and puts price and answers at the back like a book. studio-a, allpaid-c and rightsplit-a open with the record (bin label, statement, label data) before any feature. soon-b prints the fare and stub (price) on the face, first. gymlogger-x-c shows the plateau formula before any offer. xiangqiful-c files each FAQ as a margin question on the entry it concerns. observa-b ends on 'past issues' (release notes) instead of a closing CTA block. The maker/freshness line and the shared footer strip may stay common."
+    },
+    {
+     "sev": "major",
+     "text": "Drop the gold: '!' and 'Better was' carry weight and size instead of a second colour. Bind the volume in a cloth no other surface drenches in, e.g. deep magenta (~#7E1F56, paper white ≥8:1). Avoid red + gold, which is Xiangqiful's costume, and the greens taken by wanderwiki-c and appmeta-pulse-c."
+    },
+    {
+     "sev": "major",
+     "text": "Add one production task to every style: a one-off script in scripts/ (already excluded from the build, so it is not a deploy build step) that commits derivatives. Icons at 64, 128 and 256px (WebP plus a PNG fallback, about 15 KB or less at 128). Screenshots at 400w, 800w and 1200w WebP (about 40, 90 and 160 KB or less). The studio mark as the clean SVG that studio a/b/c already ask for. Front matter keeps the original paths; one include maps them to the derivatives and emits width/height, srcset/sizes, loading=lazy and decoding=async (eager plus fetchpriority=high only for a single hero image)."
+    },
+    {
+     "sev": "major",
+     "text": "Make it a global contract: html { scroll-padding-top: var(--sticky-top); scroll-padding-bottom: var(--sticky-bottom) }, so focus and anchors never land under a bar. Allow one sticky element per edge, pad the bottom bar with env(safe-area-inset-bottom), and on viewports shorter than 600px hide the top strip while the bottom bar is showing."
+    },
+    {
+     "sev": "major",
+     "text": "On paper, switch the ring to deep ink #101536 (16.3:1). Keep gold only on the dark volume ground."
+    },
+    {
+     "sev": "major",
+     "text": "Give the Informant volume a different colour: violet #3B2A8F. Paper #F6F5F0 on it is 10.05:1, gloss #C9D0F2 is 7.2:1 and gold #F2C14E is 6.54:1. Violet is free once mockly-c leaves it."
+    },
+    {
+     "sev": "major",
+     "text": "Keep the ai-canonical body exactly as the Liquid block in _layouts/app.html builds it, restyled in-world. The spec table may sit above it as a lede but must never replace it."
+    }
+   ]
+  }
+ ],
+ "canon": "Category standard played straight: a dark navy page with the glowing gold circuit-knight icon, a 3D wooden board in an iPhone bezel beside 'Stop guessing. Start understanding.', a badge row, an accuracy ring, a grid of feature cards, a pricing table and an FAQ accordion.",
+ "notes": "The roll ran degraded (no catalog challengers, no quality-bar boards), as expected; the network was not retried. Seed a17c58e0 assigned 6, which maps to A, THE ROLL (1980s sensory chess computer). Re-roll 1 gave 4, which maps to C, SECOND ROLL (Informant key to symbols). Neither is 1, so B is my top-ranked candidate 1 (annotated-games book) as IMPECCABLE’S PICK, and its risk line names its familiarity. The candidate order was fixed before the roll. The seven span seven material families, and the one literal slot (7, Bauhaus set) was not dealt. Sibling check: Shogiful took the ōban demonstration board with sticky magnet replay, the club tag wall and the manga chapter. Chessful avoids the sticky scrollytelling board: A uses keyed squares, B per-diagram move buttons, and C has no board above the fold. No faces are shared with sibling picks (Atkinson, Barlow, Dela Gothic, Signika, Archivo and others are avoided). Font budgets checked against Fontsource latin files: A ≈133 KB (Saira variable 99 + Red Hat Text 400/600 29 + Doto 700 4), B ≈110 KB (Literata opsz+wght roman), C ≈108 KB (Anybody wdth+wght 57 + Source Serif 4 wght 51). Contrast checked: every text pair is ≥4.5:1, and the LED greens rely on a graphite ring for 3:1. Truth flags for the owner: (1) /alternatives/chess-com/ says Chessful already imports PGN, calls it 'analysis-only' and mentions 'optional iCloud sync'. The app page says PGN import is targeted for 2026 Q3 and that the app ships 40 opponents. Read variants must carry the app page's truth, so that copy needs fixing. (2) The roadmap's 'Targeted 2026 Q3' PGN item has passed (today 2026-10-05; last reviewed 2026-05-13). (3) The forty-chess-opponents post says Premium unlocks 'the full forty-opponent roster', but plans put all 40 in Free. (4) The privacy policy names Game Center leaderboards while the FAQ says 'no leaderboards' (screenshot 5 shows Achievements). (5) Screenshot 3 shows 'Best was ♕a3' for a queen that went d1→b3, and a3 is not reachable from d1, so do not transcribe it as a worked example. (6) Only nine opponents are visible (tiers of five). A's Level by Square needs the full roster export, and the 8×5 layout must be confirmed. (7) All diagram positions are illustrative and must be authored, engine-checked and labelled. (8) The founder signal '19 live apps' is a literal and must stay in sync, while new copy computes the count. (9) alternatives_to lists Really Bad Chess, which has no page. (10) Ratings count is 11, so no stars appear anywhere. The two Reddit quotes in testimonials.yml are real and attributed.",
+ "pageFixes": [
+  {
+   "sev": "blocker",
+   "issue": "Below the hero, the three styles of each surface follow one section order with new labels. appmeta-a ≡ appmeta-b, gymlogger-x-a ≡ -b ≡ -c, rightsplit-b ≡ -c, shogiful-b ≡ -c, wanderwiki-a ≡ -b (-c swaps two blocks) and pawza-a ≡ -c. The xiangqiful, earnlock and millrace trios each differ by one swap. Across the 60 microsite styles, one order dominates: hero → quick answer → (quick reference) → how it works → screenshots → features → who_for/who_not_for → price → comparison → privacy → founder/about → (roadmap) → FAQ → further reading → closing. That is one static structure in 60 costumes, which is the thing the owner refused ('do not use the same static structure for each page, build them from scratch'). It also makes the three styles per page skin choices, not page choices."
+  }
+ ]
+}
