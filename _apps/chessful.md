@@ -332,8 +332,8 @@ release:
 
 ratings:
   value: "4.2"
-  count: 14
-  last_synced: "2026-10-04"
+  count: 15
+  last_synced: "2026-10-05"
 
 related_journal:
   slug: forty-chess-opponents
