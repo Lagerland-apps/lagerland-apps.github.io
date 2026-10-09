@@ -2,10 +2,10 @@
 layout: default
 permalink: /apps/aftershift/methodology/
 title: "Shift Recovery Score — Methodology"
-quick_answer: "The Shift Recovery Score is a 0–100 forward-looking estimate of how recovered you are before your next scheduled shift. It combines four weighted inputs — sleep quality (stage composition), sleep continuity (fragmentation), nap contribution (length and timing), and proximity to your next shift (recovery decay) — and is calibrated against shift-work fatigue research rather than the 9-to-5 baseline that consumer sleep apps use. It is informational, not a medical assessment, and it does not diagnose Shift Work Disorder."
+quick_answer: "The Shift Recovery Score is a 0–100 forward-looking estimate of how recovered you are before your next scheduled shift. It is measured over the window between your last shift and your next one — not a midnight-to-midnight day — and combines three weighted inputs: how much you slept in that window against your sleep target, naps included (50%), sleep continuity (30%), and stage balance (20%). It is capped at 79 when the gap before your next shift is shorter than your sleep target, and at 75 in an on-call window. It is informational, not a medical assessment, and it does not diagnose Shift Work Disorder."
 seo:
   title: "Shift Recovery Score Methodology — AfterShift"
-  description: "How the AfterShift Shift Recovery Score is calculated — the four inputs, what each reflects, what the score does not do, and what the literature backs."
+  description: "How the AfterShift Shift Recovery Score is calculated — the three inputs and their weights, the caps, what the score does not do, and what research backs."
   keywords:
     - Shift Recovery Score methodology
     - AfterShift methodology
@@ -28,7 +28,7 @@ seo:
   "description": {{ page.seo.description | jsonify }},
   "url": "{{ site.url }}/apps/aftershift/methodology/",
   "datePublished": "2026-05-13",
-  "dateModified": "2026-05-13",
+  "dateModified": "2026-10-09",
   "inLanguage": "en",
   "publisher": { "@id": "{{ site.url }}/#organization" },
   "isPartOf": { "@id": "{{ site.url }}/#website" },
@@ -60,11 +60,11 @@ seo:
     <p class="overline">Methodology · Public, citable, falsifiable</p>
     <h1 class="h1">Shift Recovery Score —<br><span class="gradient-text">how it is actually calculated.</span></h1>
     <p class="lead">
-      The Shift Recovery Score is the metric AfterShift is built around. It is not a sleep score in the consumer sense; it is a <em>forward-looking</em> estimate of how recovered you are before your next scheduled shift. This page explains the four inputs, what each weighting reflects, what the score deliberately does <em>not</em> do, and what the literature on shift-work fatigue actually backs.
+      The Shift Recovery Score is the metric AfterShift is built around. It is not a sleep score in the consumer sense; it is a <em>forward-looking</em> estimate of how recovered you are before your next scheduled shift. This page explains the three inputs and their weights, the two caps, what the score deliberately does <em>not</em> do, and what the literature on shift-work fatigue actually backs.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/aftershift/">See AfterShift</a>
-      <a class="btn btn-secondary" href="#inputs">Jump to the four inputs</a>
+      <a class="btn btn-secondary" href="#inputs">Jump to the inputs</a>
     </div>
   </div>
 </section>
@@ -77,9 +77,9 @@ seo:
     <div class="card">
       <div class="card-title">What it is</div>
       <ul class="bullets">
-        <li>A single 0–100 estimate, refreshed daily and before each shift</li>
+        <li>A single 0–100 estimate for the window between your last shift and your next one, updated as new sleep comes in</li>
         <li>Forward-looking: the question is "how recovered are you for the <em>next</em> block?", not "how good was last night?"</li>
-        <li>Shift-aware: calibrated against your actual rotation, not a 9-to-5 baseline</li>
+        <li>Shift-aware: measured between your actual shifts, not over a 9-to-5 day</li>
         <li>Nap-aware: pre-shift and recovery naps actually move the number</li>
         <li>Informational: meant to inform a decision, not to make one for you</li>
       </ul>
@@ -90,47 +90,47 @@ seo:
         <li>Not a medical assessment and not a diagnosis of Shift Work Disorder</li>
         <li>Not a replacement for clinical sleep evaluation if your sleep is significantly impaired</li>
         <li>Not a productivity score, fitness score, or generic wellness number</li>
-        <li>Not derived from heart-rate variability alone — HRV is one signal among several, never the sole input</li>
-        <li>Not benchmarked against other users; the score is relative to <em>your own</em> recent baseline</li>
+        <li>Not derived from heart rate or heart-rate variability — AfterShift reads only sleep data from Apple Health</li>
+        <li>Not benchmarked against other users; the score is measured against <em>your own</em> sleep target</li>
       </ul>
     </div>
   </div>
 </section>
 
 <section id="inputs" class="section reveal">
-  <h2 class="h2">The four inputs.</h2>
-  <p class="lead">Every Shift Recovery Score is a weighted combination of four signals. The weights are tuned over time; we update this page when they change.</p>
+  <h2 class="h2">The three inputs — and your next shift.</h2>
+  <p class="lead">Every Shift Recovery Score is a weighted combination of three signals, measured over the window from the end of your last shift to the start of your next one. Your next shift then sets two caps. The weights are fixed in the app; we update this page when they change.</p>
 
   <div class="features-list stagger">
     <div class="feature-row">
       <div class="feature-number">01</div>
       <div>
-        <div class="card-title">Sleep quality — stage composition (Core, Deep, REM)</div>
-        <div class="card-text">From Apple Health, AfterShift reads the breakdown of your primary sleep block into Awake, Core, Deep, and REM. Quality is interpreted against your <em>own</em> recent average, not a population norm — what a 30-year-old nurse on permanent nights produces in a daytime sleep window is structurally different from a 9-to-5 baseline, and the score does not penalise the difference. Deep sleep at 11 a.m. after a night shift is read as the win it actually is. If you do not wear an Apple Watch and only have iPhone sleep tracking, the stage breakdown is coarser; the score adjusts the confidence weighting accordingly.</div>
+        <div class="card-title">Sleep amount, naps included — 50%</div>
+        <div class="card-text">The biggest input is simply how much you slept in the window, against the sleep target you set (treated as at least four hours), up to 100%. Every sleep counts — the main block and every nap — measured as time actually asleep, so a nap you logged by hand and one imported from Apple Health count the same way. A daytime sleep after a night shift counts exactly as much as the same hours at night; the score does not care what the clock said. Nap timing is analysed separately (Premium shows nap timing and grogginess patterns), but it does not change the score.</div>
       </div>
     </div>
 
     <div class="feature-row">
       <div class="feature-number">02</div>
       <div>
-        <div class="card-title">Sleep continuity — how fragmented the block was</div>
-        <div class="card-text">A six-hour sleep broken three times is structurally different from an unbroken six hours, and the literature on shift-work fatigue treats them as different. AfterShift counts wake bouts, measures their distribution within the block, and downweights fragmented sleep. The continuity penalty is largest for fragmentation in the second half of the sleep block (where REM is dense) and smallest for a single short wake near the beginning. The fragmentation score is reported separately on the Trends view so you can see <em>which</em> nights broke up, not just that your total dropped.</div>
+        <div class="card-title">Sleep continuity — 30%</div>
+        <div class="card-text">A six-hour sleep broken three times is structurally different from an unbroken six hours, and the literature on shift-work fatigue treats them as different. AfterShift looks at your longest unbroken stretch — four hours or more earns full credit, and shorter stretches earn progressively less — then subtracts a small penalty when you woke three or more times, growing at six and at ten awakenings. This needs a tracker that writes sleep detail to Apple Health; without it, continuity uses a neutral default. The Trends view shows whether your fragmentation is getting better or worse from cycle to cycle.</div>
       </div>
     </div>
 
     <div class="feature-row">
       <div class="feature-number">03</div>
       <div>
-        <div class="card-title">Nap contribution — length and timing</div>
-        <div class="card-text">This is the input most generic sleep apps get wrong. AfterShift weights recent naps by both length and timing relative to the next shift. A 20-minute pre-shift nap reduces sleep inertia and adds modestly to the score without risking deep-sleep entry. A 90-minute prophylactic nap before a night shift, well-timed, adds significantly more because it captures a full sleep cycle including REM. A 45-minute nap is the worst length for shift workers because it tends to end in slow-wave sleep, producing sleep inertia that costs more than the rest provides — and the score reflects that. Naps logged manually and naps detected from Apple Health are weighted the same; we do not punish manual entries.</div>
+        <div class="card-title">Stage balance — Deep and REM — 20%</div>
+        <div class="card-text">From Apple Health, AfterShift reads the breakdown of your sleep into Awake, Core, Deep, and REM, and scores the share of the window's sleep spent in Deep and REM: 25% or more earns full credit, with lower bands below 25%, 18%, and 12%. Deep sleep at 11 a.m. after a night shift counts the same as Deep sleep at 3 a.m. If your tracker records how long you slept but not stages — or you only log sleep by hand — this input uses a neutral default instead of penalising you.</div>
       </div>
     </div>
 
     <div class="feature-row">
       <div class="feature-number">04</div>
       <div>
-        <div class="card-title">Proximity to your next shift — recovery decay</div>
-        <div class="card-text">The score is not a fixed number that stays the same all day. Recovery decays as the next shift approaches: a Recovery Score of 78 measured the morning after a night shift, with 16 hours until the next block, drops naturally as you spend those 16 hours awake. The decay curve is informed by total time awake, time of day relative to your circadian phase (you decay faster between roughly 2–6 a.m. than at any other time of day, regardless of how rested you are), and whether you have logged a recovery nap inside the window. This is why opening the app right before a shift gives the most useful read.</div>
+        <div class="card-title">Your next shift — two caps</div>
+        <div class="card-text">The window ends when your next shift starts, so a quick turnaround leaves less room to recover. If the whole gap between shifts is shorter than your sleep target, the score is capped at 79 — the top of "Good" — because a full night was never possible (days off are exempt). If the window includes an on-call shift, the score is capped at 75, because unpredictable hours limit how recovered anyone can be. Labels: Poor 0–39, Fair 40–59, Good 60–79, Excellent 80–100.</div>
       </div>
     </div>
   </div>
@@ -153,7 +153,7 @@ seo:
     <div class="card">
       <div class="card-title">Working models, not settled science</div>
       <ul class="bullets">
-        <li>Exact weights for stage composition vs continuity in a recovery score — there is no consensus formula in the literature; ours is calibrated empirically</li>
+        <li>Exact weights for sleep amount vs continuity vs stage composition in a recovery score — there is no consensus formula in the literature; ours (50 / 30 / 20) is a design judgement, not a fitted model</li>
         <li>Optimal nap length for a given shift type — broad guidance exists (short-restorative ~20 min vs full-cycle ~90 min); precise individual optima are not pinned down</li>
         <li>How much a single bad night within a block actually costs compared to a chronically short week — modelled, not measured per individual</li>
       </ul>
@@ -180,7 +180,7 @@ seo:
         <li>Diagnose a sleep disorder — see a sleep specialist if your sleep is significantly impaired</li>
         <li>Decide whether to drive after a shift — that is a binary safety judgment, not a 0–100 score</li>
         <li>Optimise yourself into never feeling tired — shift work imposes real biological costs that no app can eliminate</li>
-        <li>Compare yourself to other AfterShift users; the score is calibrated to your own baseline</li>
+        <li>Compare yourself to other AfterShift users; the score is measured against your own sleep target</li>
       </ul>
     </div>
   </div>

@@ -20,7 +20,7 @@ overview: >
   In one sentence: EarnLock reads your Apple Health activity data and your
   selection of blocked apps on-device only, stores them on-device only, and
   uses them on-device only to decide whether your daily goal is met.
-  We never see any of it. Apple's App Privacy nutrition label confirms
+  We never see any of it. Apple's App Privacy nutrition label shows
   "Data Not Collected" for every release of the app.
 
 data_collection: >
@@ -74,9 +74,10 @@ third_parties: >
 
 sensitive_data: >
   EarnLock reads HealthKit activity data (steps, active energy burned,
-  exercise minutes) and, with your explicit permission, iOS Screen Time data
-  for the apps you have shielded, to compute the conservative
-  screen-time-saved estimate. All of this is read on-device only and never
+  exercise minutes) to evaluate your daily goal. It does not read your iOS
+  Screen Time usage data: the screen-time-saved estimate is computed from
+  an on-device count of how often the shield stopped you opening a blocked
+  app. All of this stays on-device only and is never
   transmitted off the device. EarnLock does not sell, share, or use this
   data for advertising purposes. It is not used outside the app's own
   goal-tracking and insights features.

@@ -22,7 +22,7 @@ faq:
   - q: "How does AfterShift handle caffeine timing for shift workers?"
     a: "AfterShift uses caffeine's roughly five-hour half-life and your upcoming shift block to recommend the latest sensible cutoff that protects your post-shift sleep. The recommendation updates automatically when shifts change. Users consistently report caffeine timing as the most useful feature."
   - q: "Can AfterShift import my shift rotation from my employer's calendar?"
-    a: "Yes. Most large healthcare and aviation employers publish rotations to a calendar feed staff can subscribe to. AfterShift pulls that feed in automatically so you do not have to enter shifts manually. Sleep windows are inferred from existing Apple Health data."
+    a: "Yes. Most large healthcare and aviation employers publish rotations to a calendar feed staff can subscribe to. AfterShift imports shifts from that calendar so you do not have to enter them by hand (keeping the feed synced automatically in the background is a Premium feature). Sleep windows are planned from your shift times and sleep target, and your actual sleep is read from Apple Health."
   - q: "Is AfterShift a medical device or sleep disorder tool?"
     a: "No. AfterShift is an informational app. Its Shift Recovery Score is not a diagnosis, and the app is not a replacement for a sleep clinic. Suspected sleep disorders such as narcolepsy or apnoea should be evaluated by a clinician, not by consumer software."
 mentioned_apps:
@@ -70,7 +70,7 @@ AfterShift bakes the strategy in. Tell the app your upcoming shift block, and it
 
 The other thing I underestimated when I started was how much *administrative load* shift workers carry around their own sleep. Knowing when you slept, knowing when your next shift starts, calculating recovery in your head, deciding whether you need a nap — all of this lives as background processing in their day, on top of the actual job.
 
-AfterShift takes that load. Calendar shift import handles the schedule input automatically (most large employers publish rotations to a calendar feed nurses can subscribe to). The sleep windows are inferred from the existing Apple Health sleep data the user already has. The caffeine timing updates automatically when shifts change. The user doesn't have to keep doing math.
+AfterShift takes that load. Calendar shift import handles the schedule input (most large employers publish rotations to a calendar feed nurses can subscribe to). The sleep windows are planned from the shift times, and actual sleep is read from Apple Health. The caffeine timing updates automatically when shifts change. The user doesn't have to keep doing math.
 
 When the math goes away, the cognitive load goes down. When the cognitive load goes down, the actual sleep gets better. This is the second-order effect I didn't predict.
 

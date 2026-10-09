@@ -25,8 +25,8 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "None — HealthKit and EventKit only (local frameworks). Optional iCloud sync uses your own iCloud."
-    data_leaves_device: "Your iCloud only, if enabled."
+    network_calls: "None — HealthKit and EventKit only (local frameworks). No cloud sync."
+    data_leaves_device: "Nothing, unless you export a report yourself."
     analytics: "None."
     collected_data:
       - "Health & Fitness (purpose: app functionality, not linked, not used for tracking)"
@@ -38,7 +38,7 @@ apps:
     notes: "Calendar and Health data never leave the device."
 
   - slug: allpaid
-    manifest_source: submission
+    manifest_source: pending
     tracking_declared: false
     tracking_domains: 0
     third_party_sdks: 0
@@ -48,10 +48,12 @@ apps:
     data_leaves_device: "Your iCloud only, if enabled."
     analytics: "None."
     collected_data: []
-    required_reason_apis: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
     permissions:
       - "Local notifications — bill due-date reminders"
-    notes: "Bill, subscription, and due-date data stays on-device by default."
+      - "Face ID / Touch ID — optional App Lock"
+    notes: "Bill, subscription, and due-date data stays on-device by default; iCloud Sync is an opt-in Pro feature that uses your own private iCloud. No PrivacyInfo.xcprivacy ships yet; Apple's App Store label reads Data Not Collected."
 
   - slug: appmeta
     manifest_source: source
@@ -115,7 +117,7 @@ apps:
     collected_data: []
     required_reason_apis: []
     permissions:
-      - "HealthKit (read steps, active energy) — measure progress toward the unlock goal"
+      - "HealthKit (read steps, active energy, exercise minutes) — measure progress toward the unlock goal"
       - "Family Controls / Screen Time (.individual mode) — shield distracting apps until the goal is met"
       - "Local notifications — progress and unlock alerts"
     notes: "App Store Privacy Nutrition Label reads \"Data Not Collected.\" HealthKit is read-only and never leaves the device; Family Controls hands EarnLock opaque tokens, so it cannot see which apps you blocked. Self-restriction only, never parental control. No account, no server."
@@ -241,13 +243,17 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "None for receipt scanning and splitting. Sharing the result uses the iOS share sheet (Messages, WhatsApp, etc.) — those apps' own networks, not ours."
+    network_calls: "One: the European Central Bank's public daily exchange-rate file (eurofxref-daily.xml), fetched at most once a day for currency conversion — no user data is sent. Receipt scanning and splitting make no network calls; sharing uses Messages/WhatsApp."
     data_leaves_device: "Only via the iOS share sheet, when you choose."
     analytics: "None."
     collected_data: []
-    required_reason_apis: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1, 1C8F.1)"
+      - "File timestamp (C617.1)"
     permissions:
       - "Camera (when scanning a receipt)"
+      - "Notifications (payment and recurring-bill reminders)"
+      - "Contacts picker (when you add people from Contacts)"
     notes: "Receipt OCR uses on-device Vision framework. No image leaves the device."
 
   - slug: mockly

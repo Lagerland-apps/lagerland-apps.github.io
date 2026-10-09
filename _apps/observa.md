@@ -105,7 +105,7 @@ hero:
 who_for:
   - "You already track with an Apple Watch, Oura ring, Whoop, Garmin, or Fitbit and want to understand what your health data actually means"
   - "You're an Apple Health power user tired of charts without interpretation"
-  - "You want a truly private health app — verified by Apple's App Privacy label as collecting zero data"
+  - "You want a truly private health app — declared on Apple's App Privacy label as collecting zero data"
   - "You care about sleep efficiency, HRV (SDNN), and recovery readiness — not step-count vanity metrics"
   - "You'd rather see correlations against your personal 60-day baseline than single-day numbers"
 

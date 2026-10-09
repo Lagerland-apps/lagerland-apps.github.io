@@ -49,11 +49,11 @@ seo:
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best alternative to OffShift on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "AfterShift is built for the same audience — nurses, paramedics, firefighters, pilots, factory workers — and shares the same on-device, no-account, no-tracking privacy posture. The differences are in emphasis: AfterShift treats naps as first-class recovery (weighted directly into the Shift Recovery Score), times caffeine to your actual next shift rather than a fixed daily cutoff, and surfaces the weakest day inside named rotations like DuPont, Pitman, 2-2-3, and 4-on-4-off." } },
-    { "@type": "Question", "name": "How is AfterShift different from OffShift?", "acceptedAnswer": { "@type": "Answer", "text": "OffShift and AfterShift overlap heavily in audience and privacy model. The substantive differences: (1) AfterShift makes nap contribution a primary input to the Shift Recovery Score rather than a tracked-but-separate signal; (2) AfterShift's caffeine timing is calibrated against your scheduled next shift rather than a textbook 2 p.m. cutoff; (3) AfterShift names the rotation patterns it supports explicitly (DuPont, Pitman, 2-2-3, 4-on-4-off, 12-hour, swing, on-call) and adjusts the score to each." } },
-    { "@type": "Question", "name": "Does AfterShift have an Apple Watch app?", "acceptedAnswer": { "@type": "Answer", "text": "AfterShift uses Apple Health and the built-in iOS Sleep features as its data source. An Apple Watch makes nap detection and sleep-stage data more accurate, but is not required. The full app experience runs on iPhone." } },
+    { "@type": "Question", "name": "What is the best alternative to OffShift on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "AfterShift is built for the same audience — nurses, paramedics, firefighters, pilots, factory workers — and shares the same on-device, no-account, no-tracking privacy posture. The differences are in emphasis: AfterShift treats naps as first-class recovery (counted directly in the Shift Recovery Score), times caffeine to your actual next shift rather than a fixed daily cutoff, and fills your roster from rotations like 2-2-3, 4-on-4-off, or your own cycle of up to 28 days — long enough for DuPont." } },
+    { "@type": "Question", "name": "How is AfterShift different from OffShift?", "acceptedAnswer": { "@type": "Answer", "text": "OffShift and AfterShift overlap heavily in audience and privacy model. The substantive differences: (1) AfterShift counts nap sleep directly in the Shift Recovery Score rather than tracking it as a separate signal; (2) AfterShift's caffeine timing is calibrated against your scheduled next shift rather than a textbook 2 p.m. cutoff; (3) AfterShift scores each window between your actual shifts, whatever the pattern — with rotation presets such as 2-2-3 and 4-on-4-off, custom cycles of up to 28 days, and day, evening, night, and on-call shift types." } },
+    { "@type": "Question", "name": "Does AfterShift have an Apple Watch app?", "acceptedAnswer": { "@type": "Answer", "text": "No. AfterShift has no Apple Watch app — it reads the sleep your Apple Watch (or another tracker) already saves to Apple Health, and you can log naps by hand. A Watch adds sleep-stage and continuity detail, but is not required. The full app experience runs on iPhone, with Home Screen and Lock Screen widgets and a Live Activity in the Dynamic Island." } },
     { "@type": "Question", "name": "Does AfterShift sell my health data?", "acceptedAnswer": { "@type": "Answer", "text": "No. AfterShift has no ads, no third-party trackers, no analytics SDKs, and no data resale. Sleep, naps, and shift data stay on your device. Health data never leaves the device unless you explicitly export a summary." } },
-    { "@type": "Question", "name": "Is AfterShift free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Core sleep tracking, nap tracking, and basic recovery summaries are free. Premium (from $3.99/month) unlocks the full Shift Recovery Score, fatigue and fragmentation insights, smart caffeine timing, multi-week trends, and exportable summaries." } }
+    { "@type": "Question", "name": "Is AfterShift free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Sleep and nap tracking, basic recovery summaries, calendar shift import, next-shift widgets, and shift-timed reminders — including the caffeine cut-off — are free. Premium ($3.99/month, $24.99/year, or $39.99 lifetime) unlocks the full Shift Recovery Score, fatigue and fragmentation insights, cycle-to-cycle trends, automatic calendar sync with overtime tracking, and a shareable PDF report." } }
   ]
 }
 </script>
@@ -80,15 +80,15 @@ seo:
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">How naps factor into your recovery</div>
-      <div class="card-text"><strong>AfterShift:</strong> Naps are a first-class input to the Shift Recovery Score. A well-placed 90-minute pre-shift nap actually moves the number. Length and timing are weighted.<br><br><strong>OffShift:</strong> Tracks naps and has nap-window guidance as part of the sleep plan, but core night sleep is the dominant score driver.</div>
+      <div class="card-text"><strong>AfterShift:</strong> Naps count toward the Shift Recovery Score as real sleep — a 90-minute pre-shift nap actually moves the number. Nap timing and grogginess patterns are shown separately in Premium.<br><br><strong>OffShift:</strong> Tracks naps and has nap-window guidance as part of the sleep plan, but core night sleep is the dominant score driver.</div>
     </div>
     <div class="card">
       <div class="card-title">How caffeine timing is calculated</div>
-      <div class="card-text"><strong>AfterShift:</strong> Calibrated to your <em>actual next shift</em>. The cutoff slides hours later when rotating to nights and hours earlier on a recovery day. No fixed 2 p.m. rule.<br><br><strong>OffShift:</strong> Caffeine cutoffs are part of the personalised sleep plan and shift around your block. Both apps share this idea; AfterShift's framing is more aggressively shift-specific.</div>
+      <div class="card-text"><strong>AfterShift:</strong> Calibrated to your <em>actual next shift</em>. The cut-off reminder moves with your next shift start, your caffeine sensitivity, and how strong your usual drink is. No fixed 2 p.m. rule.<br><br><strong>OffShift:</strong> Caffeine cutoffs are part of the personalised sleep plan and shift around your block. Both apps share this idea; AfterShift's framing is more aggressively shift-specific.</div>
     </div>
     <div class="card">
       <div class="card-title">Rotation pattern awareness</div>
-      <div class="card-text"><strong>AfterShift:</strong> Names the patterns it supports — DuPont, Pitman, 2-2-3, 4-on-4-off, 12-hour, swing, on-call — and surfaces the weakest day inside a block before fatigue compounds.<br><br><strong>OffShift:</strong> Has rotation templates and detects shift patterns from your history. Strong for power users who set up templates once and reuse them.</div>
+      <div class="card-text"><strong>AfterShift:</strong> Rotation presets — three-shift (day → evening → night), 4-on-4-off, 4-on-3-off, 2 days / 2 nights, Panama/Pitman (2-2-3), fixed nights or days — plus custom cycles of up to 28 days (enough for DuPont) and on-call shift types. A sleep-debt trend shows which cycles in a block left you furthest behind.<br><br><strong>OffShift:</strong> Has rotation templates and detects shift patterns from your history. Strong for power users who set up templates once and reuse them.</div>
     </div>
     <div class="card">
       <div class="card-title">Privacy model</div>
@@ -96,11 +96,11 @@ seo:
     </div>
     <div class="card">
       <div class="card-title">Apple Watch & widgets</div>
-      <div class="card-text"><strong>AfterShift:</strong> Apple Health-driven; iPhone-first. An Apple Watch improves nap detection but isn't required.<br><br><strong>OffShift:</strong> Has a dedicated Watch app, complications, Live Activity, and Dynamic Island. If you live on your Watch, this is OffShift's territory.</div>
+      <div class="card-text"><strong>AfterShift:</strong> Apple Health-driven; iPhone-first, with Home Screen and Lock Screen widgets and a Live Activity in the Dynamic Island. No Watch app — an Apple Watch adds sleep-stage detail through Apple Health but isn't required.<br><br><strong>OffShift:</strong> Has a dedicated Watch app, complications, Live Activity, and Dynamic Island. If you live on your Watch, this is OffShift's territory.</div>
     </div>
     <div class="card">
       <div class="card-title">Pricing</div>
-      <div class="card-text"><strong>AfterShift:</strong> Free with Premium from $3.99/month.<br><br><strong>OffShift:</strong> Free with Pro at $3.99/month, $29.99/year, or a one-time lifetime option. If you prefer a lifetime purchase, that's OffShift's edge today.</div>
+      <div class="card-text"><strong>AfterShift:</strong> Free with Premium at $3.99/month, $24.99/year, or $39.99 once for lifetime.<br><br><strong>OffShift:</strong> Free with Pro at $3.99/month, $29.99/year, or a one-time lifetime option. Both apps offer a lifetime purchase.</div>
     </div>
   </div>
 </section>
@@ -113,16 +113,14 @@ seo:
       <ul class="bullets">
         <li>You rely on naps and want them treated as recovery, not as a tracked footnote</li>
         <li>You want caffeine recommendations that move when your next shift moves, not a daily cutoff</li>
-        <li>You think in named rotations (DuPont, Pitman, 2-2-3, 4-on-4-off) and want the app to name them too</li>
+        <li>You work a repeating rotation (2-2-3, 4-on-4-off, or a custom cycle like DuPont) and want it to fill your roster for you</li>
         <li>iPhone-first is fine — you don't need an Apple Watch app to be the centre of gravity</li>
-        <li>You want a monthly Premium price rather than a lifetime purchase commitment</li>
       </ul>
     </div>
     <div class="card">
       <div class="card-title">Stick with OffShift if…</div>
       <ul class="bullets">
-        <li>You wear an Apple Watch and want a strong dedicated Watch app + complications + Live Activity</li>
-        <li>You prefer a one-time lifetime purchase over a monthly subscription</li>
+        <li>You wear an Apple Watch and want a strong dedicated Watch app + complications</li>
         <li>Your rotation is fixed and complex, and OffShift's template engine is the feature you use most</li>
         <li>You already have months of OffShift sleep history you don't want to lose</li>
       </ul>
@@ -142,11 +140,11 @@ seo:
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>What is the best alternative to OffShift on iPhone?</summary><div class="faq-a">AfterShift is built for the same audience — nurses, paramedics, firefighters, pilots, factory workers — and shares the same on-device, no-account, no-tracking privacy posture. The differences are in emphasis: AfterShift treats naps as first-class recovery (weighted directly into the Shift Recovery Score), times caffeine to your actual next shift rather than a fixed daily cutoff, and surfaces the weakest day inside named rotations like DuPont, Pitman, 2-2-3, and 4-on-4-off.</div></details>
-    <details class="faq-item"><summary>How is AfterShift different from OffShift?</summary><div class="faq-a">OffShift and AfterShift overlap heavily in audience and privacy model. The substantive differences: (1) AfterShift makes nap contribution a primary input to the Shift Recovery Score rather than a tracked-but-separate signal; (2) AfterShift's caffeine timing is calibrated against your scheduled next shift rather than a textbook 2 p.m. cutoff; (3) AfterShift names the rotation patterns it supports explicitly (DuPont, Pitman, 2-2-3, 4-on-4-off, 12-hour, swing, on-call) and adjusts the score to each.</div></details>
-    <details class="faq-item"><summary>Does AfterShift have an Apple Watch app?</summary><div class="faq-a">AfterShift uses Apple Health and the built-in iOS Sleep features as its data source. An Apple Watch makes nap detection and sleep-stage data more accurate, but is not required. The full app experience runs on iPhone.</div></details>
+    <details class="faq-item" open><summary>What is the best alternative to OffShift on iPhone?</summary><div class="faq-a">AfterShift is built for the same audience — nurses, paramedics, firefighters, pilots, factory workers — and shares the same on-device, no-account, no-tracking privacy posture. The differences are in emphasis: AfterShift treats naps as first-class recovery (counted directly in the Shift Recovery Score), times caffeine to your actual next shift rather than a fixed daily cutoff, and fills your roster from rotations like 2-2-3, 4-on-4-off, or your own cycle of up to 28 days — long enough for DuPont.</div></details>
+    <details class="faq-item"><summary>How is AfterShift different from OffShift?</summary><div class="faq-a">OffShift and AfterShift overlap heavily in audience and privacy model. The substantive differences: (1) AfterShift counts nap sleep directly in the Shift Recovery Score rather than tracking it as a separate signal; (2) AfterShift's caffeine timing is calibrated against your scheduled next shift rather than a textbook 2 p.m. cutoff; (3) AfterShift scores each window between your actual shifts, whatever the pattern — with rotation presets such as 2-2-3 and 4-on-4-off, custom cycles of up to 28 days, and day, evening, night, and on-call shift types.</div></details>
+    <details class="faq-item"><summary>Does AfterShift have an Apple Watch app?</summary><div class="faq-a">No. AfterShift has no Apple Watch app — it reads the sleep your Apple Watch (or another tracker) already saves to Apple Health, and you can log naps by hand. A Watch adds sleep-stage and continuity detail, but is not required. The full app experience runs on iPhone, with Home Screen and Lock Screen widgets and a Live Activity in the Dynamic Island.</div></details>
     <details class="faq-item"><summary>Does AfterShift sell my health data?</summary><div class="faq-a">No. AfterShift has no ads, no third-party trackers, no analytics SDKs, and no data resale. Sleep, naps, and shift data stay on your device. Health data never leaves the device unless you explicitly export a summary.</div></details>
-    <details class="faq-item"><summary>Is AfterShift free?</summary><div class="faq-a">Yes. Core sleep tracking, nap tracking, and basic recovery summaries are free. Premium (from $3.99/month) unlocks the full Shift Recovery Score, fatigue and fragmentation insights, smart caffeine timing, multi-week trends, and exportable summaries.</div></details>
+    <details class="faq-item"><summary>Is AfterShift free?</summary><div class="faq-a">Yes. Sleep and nap tracking, basic recovery summaries, calendar shift import, next-shift widgets, and shift-timed reminders — including the caffeine cut-off — are free. Premium ($3.99/month, $24.99/year, or $39.99 lifetime) unlocks the full Shift Recovery Score, fatigue and fragmentation insights, cycle-to-cycle trends, automatic calendar sync with overtime tracking, and a shareable PDF report.</div></details>
   </div>
 </section>
 

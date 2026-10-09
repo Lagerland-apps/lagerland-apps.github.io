@@ -3,7 +3,7 @@ layout: app
 slug: allpaid
 name: "AllPaid"
 tagline: "Bills, calmly handled. No bank login."
-quick_answer: "AllPaid is a calm bill and subscription tracker for iPhone that doesn't ask for your bank login. It auto-fills the price and billing cycle for 31 common services — Netflix, Spotify, ChatGPT, Claude, Adobe, Microsoft 365, iCloud, rent, utilities, and more — shows every due date on a monthly calendar, sends one gentle reminder before each payment, and breaks down spending by category. Free, Pro from $1.99/month, $12.99/year, or $24.99 lifetime (≈40% of comparable lifetime unlocks). No ads, no account, no tracking."
+quick_answer: "AllPaid is a calm bill and subscription tracker for iPhone that doesn't ask for your bank login. It auto-fills the price and billing cycle for 40 common services — Netflix, Spotify, ChatGPT, Claude, Adobe, Microsoft 365, iCloud, rent, utilities, and more — shows every due date on a monthly calendar, sends one gentle reminder before each payment, and breaks down spending by category. Free, Pro from $1.99/month, $12.99/year, or $24.99 lifetime (≈40% of comparable lifetime unlocks). No ads, no account, no tracking."
 category: finance
 platforms: ["iOS"]
 status: live
@@ -24,9 +24,9 @@ plans:
     price: "$0"
     summary: "Core bill tracking, calendar, reminders, widgets, Siri, Live Activities — forever."
     features:
-      - "Track up to ~10 bills"
+      - "Track up to 3 bills"
       - "Monthly calendar with daily totals"
-      - "31-service catalog with auto-fill"
+      - "40-service catalog with auto-fill"
       - "Gentle reminders before each due date"
       - "Home Screen / Lock Screen widgets, Siri, Live Activities"
   - name: "Pro · Monthly"
@@ -37,7 +37,7 @@ plans:
       - "Spending analytics — category breakdown, monthly trends, per-bill totals"
       - "Multiple reminders per bill"
       - "Full payment history"
-      - "All Home Screen, Lock Screen, and full calendar widgets"
+      - "iCloud Sync across your devices"
   - name: "Pro · Annual"
     price: "$12.99/yr"
     summary: "Same Pro features, billed once a year. ~46% cheaper than paying monthly."
@@ -62,7 +62,7 @@ og_image: "/assets/og/allpaid.png"
 
 seo:
   title: "AllPaid — Bill Tracker for iPhone, No Bank Login"
-  description: "Bill tracker for iPhone — no bank login. 31 services auto-detected (Netflix, ChatGPT, rent, utilities). $24.99 lifetime. No subscription required."
+  description: "Bill tracker for iPhone — no bank login. 40 services auto-detected (Netflix, ChatGPT, rent, utilities). $24.99 lifetime. No subscription required."
   keywords:
     - bill tracker app
     - bill tracker iPhone no bank login
@@ -85,7 +85,7 @@ seo:
 hero:
   headline: "Every bill. One calm place."
   secondary: "The bill tracker for people who refuse to hand a bank login to a third-party app."
-  subheadline: "AllPaid auto-fills the typical price and billing cycle for 31 common services — Netflix, Spotify, ChatGPT, Claude, Adobe, Microsoft 365, iCloud, rent, utilities — shows every due date on a monthly calendar, and sends one gentle reminder before payment day. Nothing leaves your device. Free, with Pro from $1.99/month, $12.99/year, or $24.99 lifetime — about 40% of what comparable iPhone bill trackers charge for a lifetime unlock."
+  subheadline: "AllPaid auto-fills the typical price and billing cycle for 40 common services — Netflix, Spotify, ChatGPT, Claude, Adobe, Microsoft 365, iCloud, rent, utilities — shows every due date on a monthly calendar, and sends one gentle reminder before payment day. Nothing leaves your device unless you turn on iCloud Sync. Free, with Pro from $1.99/month, $12.99/year, or $24.99 lifetime — about 40% of what comparable iPhone bill trackers charge for a lifetime unlock."
   cta_label: "Download Free"
   alt: "AllPaid — monthly bill calendar on iPhone with upcoming due dates and a daily total"
 
@@ -117,10 +117,10 @@ founder:
   location: "Finland"
   overline: "Why we built this"
   heading: "For the user who already filtered out bank-linked apps."
-  story: "AllPaid exists because every other bill tracker we tried wanted a bank login. Plaid grants any app holding that login persistent read access to every transaction in the account — far beyond the recurring charges users actually want surfaced. We took the other path: a manual-first tracker with a 31-service catalog that pre-fills the boring parts in seconds. Bills live on the device in SwiftData. No account. No upload. The trade-off is honest — AllPaid will not catch a forgotten auto-renewal you never typed in. Everything it does catch, you control."
+  story: "AllPaid exists because every other bill tracker we tried wanted a bank login. Plaid grants any app holding that login persistent read access to every transaction in the account — far beyond the recurring charges users actually want surfaced. We took the other path: a manual-first tracker with a 40-service catalog that pre-fills the boring parts in seconds. Bills live on the device in SwiftData, syncing only through your own private iCloud if you turn that on. No account. No upload to us. The trade-off is honest — AllPaid will not catch a forgotten auto-renewal you never typed in. Everything it does catch, you control."
   signals:
-    - "Local SwiftData storage; the Privacy Manifest declares zero tracking domains and no required-reason APIs beyond standard local storage and notifications"
-    - "31 recognised services across 10 categories — catalog is hard-coded in the app binary, matched in English plus Finnish and German keywords"
+    - "Local SwiftData storage, with optional sync through your own private iCloud; zero third-party SDKs, and the App Store privacy label reads 'Data Not Collected'"
+    - "40 recognised services across 18 categories — catalog is hard-coded in the app binary, matched in English plus Finnish and German keywords"
     - "Funded by honest paid software — no ads, no investor pressure, no aggregator integrations"
     - "20 live apps in the catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
@@ -131,7 +131,7 @@ founder:
 
 value_points:
   - title: "Smart bill detection (no bank link)"
-    description: "Type 'Netflix,' 'Spotify,' or 'ChatGPT' and AllPaid auto-fills the typical price, billing cycle, and category from a built-in catalog of 31 recognized services. Nothing leaves your device."
+    description: "Type 'Netflix,' 'Spotify,' or 'ChatGPT' and AllPaid auto-fills the typical price, billing cycle, and category from a built-in catalog of 40 recognized services. Nothing leaves your device."
   - title: "Monthly calendar, daily totals"
     description: "Every bill on a visual calendar — what's due, what's paid, what's still coming this month. See bunched billing days before they hit your account."
   - title: "Reminders that don't nag"
@@ -140,22 +140,22 @@ value_points:
     description: "$24.99 lifetime — about 40% of what comparable iPhone bill trackers charge for a lifetime unlock. Free tier handles the basics. No subscription required."
 
 how_it_works:
-  intro: "AllPaid is a manual bill tracker built around a 31-service catalog and a monthly calendar. No bank connection, no Plaid, no third-party login. Here's exactly how a bill moves through it."
+  intro: "AllPaid is a manual bill tracker built around a 40-service catalog and a monthly calendar. No bank connection, no Plaid, no third-party login. Here's exactly how a bill moves through it."
   steps:
     - title: "Type the bill name (or pick from the catalog)"
-      detail: "AllPaid ships with 31 recognized services across 10 categories — streaming (Netflix, Spotify, Disney+, YouTube Premium, Apple TV+, HBO Max, Amazon Prime, Crunchyroll, Apple Music), AI tools (ChatGPT, Claude Pro), productivity (Adobe, Microsoft 365, Dropbox, Google One, iCloud), housing (rent, mortgage), utilities (electricity, water, gas), internet & phone, insurance (car, health, home, life), transportation, gym, and student loans. Type any of those and the price, billing cycle, and category pre-fill. For anything not in the catalog, type the name and amount manually — it takes about five seconds."
-    - title: "Confirm the cycle (monthly, yearly, custom)"
+      detail: "AllPaid ships with 40 recognized services across 18 categories — streaming (Netflix, Spotify, Disney+, YouTube Premium, Apple TV+, HBO Max, Amazon Prime, Crunchyroll, Apple Music), AI tools (ChatGPT, Claude Pro), productivity (Adobe, Microsoft 365, Dropbox, Google One, iCloud), housing (rent, mortgage), utilities (electricity, water, gas), internet & phone, insurance (car, health, home, life), transportation, gym, student loans, credit cards, other loans, taxes, savings, groceries, entertainment, pet care, childcare, and donations. Type any of those and the price, billing cycle, and category pre-fill. For anything not in the catalog, type the name and amount manually — it takes about five seconds."
+    - title: "Confirm the cycle (weekly to yearly, or custom)"
       detail: "Most catalog services default to monthly. Annual cycles — home insurance, some software, gym annual passes — are common and projected forward on the calendar. AllPaid does not assume; it shows you exactly when the next charge lands so you can fix a cycle before reminders go wrong."
     - title: "See the next 30 / 60 / 90 days at a glance"
-      detail: "The monthly calendar projects every recurring bill forward. A daily total tells you what's due, what's paid, and what's still coming. Heavy days (rent + utilities + 4 subscriptions all hitting the 1st) become visible weeks before they bite."
+      detail: "The monthly calendar projects every recurring bill forward. A daily total tells you what's due, what's paid, and what's still coming. Heavy days (rent + utilities + 4 subscriptions all hitting the 1st) become visible weeks before they bite. Pro lets you step forward and back through other months."
     - title: "Get one reminder before each due date"
-      detail: "AllPaid sends a single, gentle notification before each bill. From the notification you can mark paid, snooze, or open the bill. No streaks. No red badges. No nagging if you missed yesterday."
+      detail: "AllPaid sends a single, gentle notification the day before each bill (Pro can add earlier ones, such as 14, 7, or 3 days ahead of a monthly bill, plus one on the due day). From the notification you can mark paid, snooze, or open the bill. No streak pressure. No red badges. No nagging if you missed yesterday."
     - title: "Mark paid in one tap — from anywhere"
-      detail: "Tap once in the app, the widget, or the notification. Undo if you tapped too fast. Each payment writes to a local history log used by analytics."
+      detail: "Tap once in the app or on the notification. Undo if you tapped too fast. Each payment writes to a local history log used by analytics."
     - title: "Watch spending clarify over weeks (Pro)"
-      detail: "Pro adds analytics: category breakdown with percentages (streaming, AI tools, utilities, housing, insurance, etc.), per-bill totals, and a monthly-trends chart computed from your local payment history. You can answer 'how much do I actually spend on streaming?' without opening your bank app."
-    - title: "Stays on your device. Always."
-      detail: "No account, no upload, no third-party SDKs. Bills, payments, and analytics live in SwiftData on your iPhone. See the per-app <a href=\"/transparency/#allpaid\">Privacy Manifest</a> for the full list of declared APIs and tracking domains (there are none)."
+      detail: "Pro adds analytics: category breakdown with percentages (streaming, subscriptions, utilities, housing, insurance, etc.), per-bill totals, and a monthly-trends chart computed from your local payment history. You can answer 'how much do I actually spend on streaming?' without opening your bank app."
+    - title: "Stays on your device — or in your own iCloud."
+      detail: "No account, no upload to us, no third-party SDKs. Bills, payments, and analytics live in SwiftData on your iPhone; if you turn on iCloud Sync (Pro), they sync through your own private iCloud database. See the per-app <a href=\"/transparency/#allpaid\">transparency entry</a> for third-party SDKs and tracking domains (there are none)."
 
 example_insights:
   overline: "What an AllPaid month looks like"
@@ -167,7 +167,7 @@ example_insights:
       body: "Three subscriptions, your insurance, and a gym pass all renewed on the 1st of this month — $187 of it could be moved to the 5th by changing renewal dates in those apps. The calendar surfaces the bunching weeks before it hits your account."
     - tag: "Category · Breakdown"
       headline: "Streaming is now your second-biggest category, behind housing."
-      body: "Across the last 90 days, streaming hit $89/mo — Netflix $15.99, Spotify $9.99, Disney+ $8.99, YouTube Premium $13.99, Apple TV+ $9.99, HBO Max $9.99, Amazon Prime $8.99, Apple Music $10.99. Pro's category screen shows which two you've barely opened since the trial converted."
+      body: "Across the last 90 days, streaming hit $89/mo — Netflix $15.99, Spotify $9.99, Disney+ $8.99, YouTube Premium $13.99, Apple TV+ $9.99, HBO Max $9.99, Amazon Prime $8.99, Apple Music $10.99. Pro's category breakdown shows exactly what that share costs you each month."
     - tag: "AI · Subscriptions"
       headline: "You pay $40/mo across ChatGPT and Claude. Same as Adobe."
       body: "AI tools are now a top-five category for many users — AllPaid recognises ChatGPT, OpenAI, Claude, and Anthropic out of the box. Pro's monthly-trend chart shows whether your AI spend is creeping up or steady."
@@ -177,15 +177,15 @@ example_insights:
 
 features:
   - title: "One-tap paid, zero friction"
-    description: "Mark any bill as paid with a single tap — from the app, from a notification, or from a widget. Undo instantly if you tapped too fast."
+    description: "Mark any bill as paid with a single tap — from the app or straight from a notification. Undo instantly if you tapped too fast."
   - title: "Widgets on Home Screen, Lock Screen, and StandBy"
     description: "Upcoming bills at a glance without opening the app. The full calendar widget puts your month on your Home Screen. Lock Screen widgets catch your eye before you even unlock."
   - title: "Spending analytics that clarify (Pro)"
-    description: "Pro breaks down spending by category — streaming, AI tools, subscriptions, utilities, housing, insurance, transportation, health, education. Monthly trend chart computed from your local payment history. Per-bill totals. Clarity, not anxiety."
+    description: "Pro breaks down spending across 19 categories — streaming, subscriptions, utilities, housing, insurance, transportation, credit cards, loans, taxes, and more. Monthly trend chart computed from your local payment history. Per-bill totals. Clarity, not anxiety."
   - title: "Siri and Live Activities"
-    description: "Ask Siri what bills are due. Live Activities show today's and tomorrow's bills on your Lock Screen and Dynamic Island. Bills stay visible without opening the app."
-  - title: "31 recognized services, 10 categories"
-    description: "Auto-fill for Netflix, Spotify, Disney+, YouTube Premium, Apple TV+, HBO Max, Amazon Prime, Crunchyroll, Apple Music, ChatGPT, Claude Pro, Adobe, Microsoft 365, Dropbox, Google One, iCloud, electricity, water, gas, internet, phone, car/health/home/life insurance, rent, mortgage, car payment, transit, gym, and student loans. English plus Finnish and German keywords matched. Anything outside the catalog takes about five seconds to add manually."
+    description: "Ask Siri what bills are due. A Live Activity keeps the next bill due today or tomorrow on your Lock Screen and in the Dynamic Island. Bills stay visible without opening the app."
+  - title: "40 recognized services, 18 categories"
+    description: "Auto-fill for Netflix, Spotify, Disney+, YouTube Premium, Apple TV+, HBO Max, Amazon Prime, Crunchyroll, Apple Music, ChatGPT, Claude Pro, Adobe, Microsoft 365, Dropbox, Google One, iCloud, electricity, water, gas, internet, phone, car/health/home/life insurance, rent, mortgage, car payment, transit, gym, student loans, credit cards, other loans, taxes, savings, groceries, entertainment, pet care, childcare, and donations. English plus Finnish and German keywords matched. Anything outside the catalog takes about five seconds to add manually."
   - title: "Search, sort, share, and note"
     description: "Find any bill instantly with search. Sort by due date, amount, or name. Add notes for account numbers or payment confirmation IDs. Share a single bill with a partner or roommate via the share sheet — no shared account, no household sign-up."
   - title: "No bank login. Ever."
@@ -208,7 +208,7 @@ comparison_table:
     - feature: "Works without a bank login / Plaid"
       values: ["Yes — manual only", "No — Plaid required for detection", "Yes — manual only", "Yes — manual only", "Yes"]
     - feature: "Auto-fills 30+ common services (catalog)"
-      values: ["Yes — 31 services", "Yes — from your transactions", "Manual entry", "Manual entry", "No"]
+      values: ["Yes — 40 services", "Yes — from your transactions", "Manual entry", "Manual entry", "No"]
     - feature: "Monthly calendar view with daily totals"
       values: ["Yes", "Limited", "Limited", "Yes", "No"]
     - feature: "Spending analytics, category breakdown"
@@ -229,7 +229,7 @@ comparison_table:
 
 plateau_disclosure:
   title: "What AllPaid won't do for you"
-  rule: "AllPaid is a manual bill tracker built around a 31-service catalog and a monthly calendar. It is deliberately not a full personal-finance app. The trade-off is what keeps it private, on-device, and one-time-priced."
+  rule: "AllPaid is a manual bill tracker built around a 40-service catalog and a monthly calendar. It is deliberately not a full personal-finance app. The trade-off is what keeps it private, on-device, and one-time-priced."
   what_it_does_not_do: "AllPaid will not connect to your bank. It will not import transactions automatically. It will not negotiate bills down on your behalf. It will not scan your email for receipts. It will not warn you about price hikes for bills you didn't enter — if Spotify raises its price, AllPaid only knows once you update the amount yourself. It is not a budgeting app, an expense categorizer, or a household-finance dashboard."
   notes:
     - "Want automatic detection from your transactions? Try Rocket Money or Truebill — the trade-off is they need your bank login."
@@ -238,9 +238,9 @@ plateau_disclosure:
     - "Want the cheapest possible option with the most rigid privacy? A spreadsheet still works — AllPaid is for everyone who has tried a spreadsheet and given up after week three."
 
 training_vocabulary:
-  overline: "The 31-service catalog"
+  overline: "The 40-service catalog"
   heading: "The bills AllPaid already knows."
-  intro: "AllPaid recognises 31 common services across 10 categories out of the box. Type the name, get the typical price, cycle, and category pre-filled. Matched in English, plus Finnish and German keywords for utilities and housing (sähkö, vesi, vuokra, strom, wasser, miete)."
+  intro: "AllPaid recognises 40 common services across 18 categories out of the box. Type the name, get the typical price, cycle, and category pre-filled. Matched in English, plus Finnish and German keywords for utilities and housing (sähkö, vesi, vuokra, strom, wasser, miete)."
   groups:
     - heading: "Streaming"
       items:
@@ -272,7 +272,10 @@ training_vocabulary:
         - "Car · Health · Home · Life insurance"
         - "Car payment · Transit pass"
         - "Gym"
-        - "Student loan"
+        - "Student loan · Other loans"
+        - "Credit card · Taxes · Savings"
+        - "Groceries · Entertainment"
+        - "Pet care · Childcare · Donations"
 
 privacy:
   data_collection: "none"
@@ -282,28 +285,28 @@ privacy:
     - "No ads, no trackers, no third-party SDKs"
     - "No account or sign-up required"
     - "No bank connection — AllPaid does not use Plaid or any bank-aggregation API"
-    - "All bills, payments, and analytics stored locally on your device"
-    - "See the per-app <a href=\"/transparency/#allpaid\">Privacy Manifest</a> for the declared API usage and tracking-domain list (it's empty)"
+    - "All bills, payments, and analytics stored locally on your device — optional iCloud Sync (Pro) uses your own private iCloud"
+    - "See the per-app <a href=\"/transparency/#allpaid\">transparency entry</a> for third-party SDKs and tracking domains (there are none)"
 
 faq:
   - q: "What is AllPaid?"
-    a: "AllPaid is a calm, privacy-first bill and subscription tracker for iPhone. It tracks bills, subscriptions, and due dates without any bank connection — manual entry plus a 31-service catalog that auto-fills price, cycle, and category. Includes a monthly calendar, gentle reminders, widgets, Siri, Live Activities, and on-device spending analytics. Free; Pro from $1.99/month, $12.99/year, or $24.99 lifetime."
+    a: "AllPaid is a calm, privacy-first bill and subscription tracker for iPhone. It tracks bills, subscriptions, and due dates without any bank connection — manual entry plus a 40-service catalog that auto-fills price, cycle, and category. Includes a monthly calendar, gentle reminders, widgets, Siri, Live Activities, and on-device spending analytics. Free; Pro from $1.99/month, $12.99/year, or $24.99 lifetime."
   - q: "How does smart bill detection work?"
-    a: "When you type a bill name — say 'Netflix' or 'ChatGPT' — AllPaid matches it against a built-in catalog of 31 recognized services and auto-fills the typical price, billing cycle, and category. Nothing leaves your device. The catalog covers streaming (Netflix, Spotify, Disney+, YouTube Premium, Apple TV+, HBO Max, Amazon Prime, Crunchyroll, Apple Music), AI tools (ChatGPT, Claude Pro), productivity (Adobe, Microsoft 365, Dropbox, Google One, iCloud), housing (rent, mortgage), utilities (electricity, water, gas), internet & phone, four kinds of insurance, transportation (car payment, transit), gym, and student loans. Matched in English plus Finnish and German keywords. For anything not in the catalog, type the name and amount manually — it takes about five seconds."
+    a: "When you type a bill name — say 'Netflix' or 'ChatGPT' — AllPaid matches it against a built-in catalog of 40 recognized services and auto-fills the typical price, billing cycle, and category. Nothing leaves your device. The catalog covers streaming (Netflix, Spotify, Disney+, YouTube Premium, Apple TV+, HBO Max, Amazon Prime, Crunchyroll, Apple Music), AI tools (ChatGPT, Claude Pro), productivity (Adobe, Microsoft 365, Dropbox, Google One, iCloud), housing (rent, mortgage), utilities (electricity, water, gas), internet & phone, four kinds of insurance, transportation (car payment, transit), gym, student loans, credit cards, other loans, taxes, savings, groceries, entertainment, pet care, childcare, and donations. Matched in English plus Finnish and German keywords. For anything not in the catalog, type the name and amount manually — it takes about five seconds."
   - q: "How is AllPaid different from Rocket Money?"
-    a: "Rocket Money connects to your bank, automatically detects subscriptions from your transaction history, and offers a paid negotiation service that takes a percentage of any savings it finds. AllPaid does none of that. You add bills manually (or via the 31-service catalog), nothing leaves your device, and there is no monthly fee for the core app. If automated detection from transactions matters more than privacy, Rocket Money fits better. If you would rather not give your bank login to a third-party app, AllPaid is built for you. See the full Rocket Money alternative comparison for the line-by-line breakdown."
+    a: "Rocket Money connects to your bank, automatically detects subscriptions from your transaction history, and offers a paid negotiation service that takes a percentage of any savings it finds. AllPaid does none of that. You add bills manually (or via the 40-service catalog), nothing leaves your device unless you turn on iCloud Sync, and there is no monthly fee for the core app. If automated detection from transactions matters more than privacy, Rocket Money fits better. If you would rather not give your bank login to a third-party app, AllPaid is built for you. See the full Rocket Money alternative comparison for the line-by-line breakdown."
   - q: "Does AllPaid catch free trials before they auto-renew?"
     a: "Only the ones you enter. AllPaid does not scan your email or transactions, so it cannot detect a trial you signed up for and forgot. What it can do: when you add a trial bill with the day it converts, AllPaid projects that date forward on the calendar and sends a gentle reminder the day before. Many users add a 'free trial — review by X' bill the moment they start a trial, and let AllPaid surface the deadline."
   - q: "What does the calendar actually show?"
-    a: "Every bill projected forward on a monthly calendar — what's due, what's paid, and what's still coming. Each day shows a daily total. Heavy billing days (rent + utilities + four subscriptions all hitting the 1st) become visible weeks before they hit your bank account. You can scroll forward and look at the next 30, 60, or 90 days at a glance."
+    a: "Every bill projected forward on a monthly calendar — what's due, what's paid, and what's still coming. Each day shows a daily total. Heavy billing days (rent + utilities + four subscriptions all hitting the 1st) become visible weeks before they hit your bank account. With Pro you can step forward and back a month at a time to see what's coming."
   - q: "Is AllPaid a budgeting app?"
     a: "No. AllPaid focuses specifically on bill tracking, subscription management, and payment reminders — not full budgeting or transaction categorization. There are no envelopes, no spending caps, and no automatic transaction tagging. If you want full budgeting, YNAB, Monarch Money, or Copilot are better fits."
   - q: "Is AllPaid free?"
-    a: "Yes. Core bill tracking, the monthly calendar, reminders, widgets, Siri, and Live Activities are free. Pro unlocks unlimited bills, spending analytics (category breakdown, monthly trends, per-bill totals), multiple reminders per bill, and full payment history — $1.99/month, $12.99/year, or $24.99 lifetime. The $24.99 lifetime price is about 40% of what comparable iPhone bill trackers charge for a lifetime unlock, and the Pro purchase supports Family Sharing — one buy covers up to 5 family members. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes. Core bill tracking, the monthly calendar, reminders, widgets, Siri, and Live Activities are free. The free tier tracks up to 3 bills; saving a fourth opens the Pro upgrade screen. Pro unlocks unlimited bills, spending analytics (category breakdown, monthly trends, per-bill totals), multiple reminders per bill, and full payment history — $1.99/month, $12.99/year, or $24.99 lifetime. The $24.99 lifetime price is about 40% of what comparable iPhone bill trackers charge for a lifetime unlock, and the Pro purchase supports Family Sharing — one buy covers up to 5 family members. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does AllPaid work with Siri and widgets?"
-    a: "Yes. Ask Siri what bills are due and get an instant answer. Home Screen widgets, Lock Screen widgets, and a full monthly-calendar widget all show upcoming bills without opening the app. Live Activities surface today's and tomorrow's bills on your Lock Screen and Dynamic Island."
+    a: "Yes. Ask Siri what bills are due and get an instant answer. Home Screen widgets, Lock Screen widgets, and a full monthly-calendar widget all show upcoming bills without opening the app. A Live Activity surfaces the next bill due today or tomorrow on your Lock Screen and Dynamic Island."
   - q: "Does AllPaid share my financial data?"
-    a: "No. AllPaid has no ads, no third-party trackers, no account requirement, no bank connection, and no data uploading. Your bill information stays entirely on your device. The Privacy Manifest declares zero tracking domains and no Required Reason APIs beyond the standard local-storage and notification permissions — see the full breakdown on the transparency page."
+    a: "No. AllPaid has no ads, no third-party trackers, no account requirement, no bank connection, and no server of its own to upload to. Your bill information stays on your device — or, if you turn on iCloud Sync (Pro), in your own private iCloud database. The App Store privacy label reads 'Data Not Collected' — see the full breakdown on the transparency page."
   - q: "Can I share bills with someone?"
     a: "Yes — one bill at a time, via the iOS share sheet. Useful for splitting rent, internet, or a streaming subscription with a partner or roommate. AllPaid does not require a shared account or a household sign-up — the share is per-bill, on your terms."
 
@@ -325,4 +328,4 @@ ratings:
   count: 6
   last_synced: "2026-10-02"
 ---
-AllPaid is a calm, privacy-first bill and subscription tracker for iPhone. It is the bill tracker for people who refuse to hand a bank login to a third-party app. Bills are added manually or auto-filled from a built-in catalog of 31 common services across 10 categories — streaming (Netflix, Spotify, Disney+, YouTube Premium, Apple TV+, HBO Max, Amazon Prime, Crunchyroll, Apple Music), AI tools (ChatGPT, Claude Pro), productivity and cloud (Adobe, Microsoft 365, Dropbox, Google One, iCloud), housing (rent, mortgage), utilities (electricity, water, gas), internet and phone, four kinds of insurance, transportation, gym, and student loans. Matched in English plus Finnish and German keywords. A monthly calendar projects every recurring bill forward with daily totals — see bunched billing days weeks before they hit your account. Gentle reminders fire once before each due date with one-tap mark-as-paid from notifications, widgets, or Live Activities. Pro adds on-device spending analytics: category breakdown with percentages, monthly trend charts computed from your local payment history, per-bill totals, and unlimited bills. No ads, no trackers, no account, no Plaid, no bank connection. Free with optional Pro from $1.99/month, $12.99/year, or $24.99 lifetime — about 40% of what comparable iPhone bill trackers charge for a lifetime unlock.
+AllPaid is a calm, privacy-first bill and subscription tracker for iPhone. It is the bill tracker for people who refuse to hand a bank login to a third-party app. Bills are added manually or auto-filled from a built-in catalog of 40 common services across 18 categories — streaming (Netflix, Spotify, Disney+, YouTube Premium, Apple TV+, HBO Max, Amazon Prime, Crunchyroll, Apple Music), AI tools (ChatGPT, Claude Pro), productivity and cloud (Adobe, Microsoft 365, Dropbox, Google One, iCloud), housing (rent, mortgage), utilities (electricity, water, gas), internet and phone, four kinds of insurance, transportation, gym, student loans, credit cards, other loans, taxes, savings, groceries, entertainment, pet care, childcare, and donations. Matched in English plus Finnish and German keywords. A monthly calendar projects every recurring bill forward with daily totals — see bunched billing days weeks before they hit your account. Gentle reminders fire once before each due date with one-tap mark-as-paid in the app or straight from the notification. Pro adds on-device spending analytics: category breakdown with percentages, monthly trend charts computed from your local payment history, per-bill totals, and unlimited bills. No ads, no trackers, no account, no Plaid, no bank connection. Free with optional Pro from $1.99/month, $12.99/year, or $24.99 lifetime — about 40% of what comparable iPhone bill trackers charge for a lifetime unlock.

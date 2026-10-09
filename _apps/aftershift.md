@@ -27,15 +27,16 @@ plans:
       - "Sleep tracking and nap tracking"
       - "Basic recovery summaries"
       - "Calendar shift import"
-      - "Local-only storage, optional iCloud sync"
+      - "Shift-timed reminders, including caffeine cut-off"
+      - "On-device storage — no account, no cloud sync"
   - name: "Premium · Monthly"
     price: "$3.99/mo"
     summary: "Full Premium, billed monthly. Cancel anytime."
     features:
       - "Full Shift Recovery Score"
       - "Fatigue and fragmentation insights"
-      - "Smart caffeine timing tied to your next shift"
-      - "Multi-week trends and exportable summaries"
+      - "Automatic calendar sync, multiple calendars & overtime tracking"
+      - "Cycle-to-cycle trends and a shareable PDF report"
       - "Cancel anytime"
   - name: "Premium · Annual"
     price: "$24.99/yr"
@@ -88,7 +89,7 @@ hero:
   secondary: "Naps count as real recovery here — weighted into your Shift Recovery Score alongside core sleep."
   subheadline: "AfterShift scores how recovered you are before your next shift and times caffeine to the schedule you actually work — DuPont, Pitman, 2-2-3, 4-on-4-off, 12-hour, or on-call. Never compared to a 9-to-5 baseline."
   cta_label: "Download Free"
-  alt: "AfterShift Shift Recovery Score after a 12-hour night shift on iPhone, with sleep timeline showing naps and core sleep"
+  alt: "AfterShift Today screen on iPhone showing the countdown to the next shift, Readiness rated Good during an on-call window, and a Sleep Score of 80"
 
 who_for:
   - "You work rotating, night, or on-call shifts and generic sleep apps keep comparing you to a 9-to-5"
@@ -123,11 +124,11 @@ value_points:
 
 features:
   - title: "Shift Recovery Score"
-    description: "A single number that factors in your sleep quality, sleep continuity, nap contribution, and proximity to your next shift. Designed so you can tell — at a glance, before you clock in — whether you're recovered enough."
+    description: "A single number built from how much you have slept since your last shift (naps included), how unbroken that sleep was, and your Deep and REM balance — capped when the gap before your next shift is too short for a full sleep, or when you are on call. Designed so you can tell — at a glance, before you clock in — whether you're recovered enough."
   - title: "Sleep stages in context"
     description: "Track Awake, Core, Deep, and REM sleep — but interpreted against your rotation, not someone else's Monday morning. Deep sleep at 11 a.m. after a night shift is the win it actually is."
   - title: "Fatigue & fragmentation insights"
-    description: "Spot fragmented-sleep weeks before fatigue compounds. Pattern-based explanations show why certain rotations feel harder — and which days inside a block are your weakest link."
+    description: "Spot fragmented-sleep weeks before fatigue compounds. Pattern-based explanations show why certain rotations feel harder — and which cycles inside a block left you furthest behind."
   - title: "Smart caffeine timing"
     description: "See when caffeine still helps versus when it starts pushing your next sleep window out of reach. Timed to your actual next shift, not a fixed daily cutoff."
   - title: "Calendar shift import"
@@ -137,23 +138,23 @@ features:
 
 screenshots:
   - src: "/assets/screenshots/aftershift/1.png"
-    alt: "AfterShift Shift Recovery Score on iPhone showing 72 of 100 after a 12-hour night shift, with breakdown of sleep quality, continuity, and nap contribution"
-    caption: "Shift Recovery Score — how recovered you are before your next block"
+    alt: "AfterShift Today screen on iPhone showing the countdown to the next day shift with overtime buttons, Readiness rated Good during an on-call window, and a Sleep Score of 80"
+    caption: "Readiness and Sleep Score before your next shift"
   - src: "/assets/screenshots/aftershift/2.png"
-    alt: "AfterShift sleep timeline view showing Core, Deep, REM and Awake stages overlaid against the user's actual night shift hours"
-    caption: "Sleep stages, read against your actual rotation"
+    alt: "AfterShift Recovery screen on iPhone for an on-call recovery window, with a Sleep Score of 80 across the last 12 sleeps and a Shift Recovery Score of 75, rated Good"
+    caption: "Shift Recovery Score for the window between your shifts"
   - src: "/assets/screenshots/aftershift/3.png"
-    alt: "AfterShift nap tracker on iPhone logging a 90-minute prophylactic nap before an on-call shift, with recovery contribution displayed"
-    caption: "Naps logged as first-class recovery, not a footnote"
+    alt: "AfterShift Your Plan card on iPhone with a flexible rest window, a suggested 25-minute nap, and an on-call tip"
+    caption: "A sleep window and suggested nap, planned around your next shift"
   - src: "/assets/screenshots/aftershift/4.png"
-    alt: "AfterShift smart caffeine timing view showing the latest safe coffee time before tonight's sleep window — calibrated to the next scheduled shift"
+    alt: "AfterShift Caffeine Timing card on iPhone with a 6-hour cutoff, 16 drinks this week and none late, above Trends for sleep duration, fragmentation and sleep depth"
     caption: "Caffeine timing tied to your next shift"
   - src: "/assets/screenshots/aftershift/5.png"
-    alt: "AfterShift weekly fatigue and fragmentation chart on iPhone, highlighting which days inside a 4-on-4-off rotation accumulated the most sleep debt"
-    caption: "Spot the weakest day in a 4-on-4-off block before fatigue compounds"
+    alt: "AfterShift sleep debt trend chart on iPhone labelled Recovering, with a plain-language explanation and Log Nap and Caffeine buttons"
+    caption: "Sleep debt, cycle by cycle — with a plain-language read on what it means"
   - src: "/assets/screenshots/aftershift/6.png"
-    alt: "AfterShift calendar shift import on iPhone, automatically detecting rotating night shifts and building recovery insights around them"
-    caption: "Calendar shift import — no manual rebuild every roster change"
+    alt: "AfterShift Roster tab on iPhone showing a two-week calendar for February 2026 with an on-call shift from 8 AM to 8 AM"
+    caption: "Your roster, shift by shift — imported from your calendar or filled from a rotation"
 
 privacy:
   data_collection: "none"
@@ -177,16 +178,16 @@ faq:
     a: "Generic sleep apps assume a regular schedule and compare you to a 9-to-5 benchmark. Other shift-work apps mostly score core night sleep and treat naps as a footnote. AfterShift is built around two ideas the others miss: (1) naps are first-class recovery and are factored into the Shift Recovery Score, and (2) caffeine timing is calibrated to your actual next shift, not a textbook 2 p.m. cutoff. AfterShift is also private by default — no account, no tracking, no health-data resale."
 
   - q: "What is the Shift Recovery Score, and how is it calculated?"
-    a: "The Shift Recovery Score is a single 0–100 number that estimates how recovered you are before your next shift. It combines four inputs: sleep quality (stage composition: Core, Deep, REM), sleep continuity (how fragmented the block was), nap contribution (recent naps weighted by length and timing), and proximity to your next shift (recovery decays as the next block approaches). The score is informational — it is not a medical assessment and is not a diagnosis of Shift Work Disorder. See <a href=\"/apps/aftershift/methodology/\">the full Shift Recovery Score methodology page</a> for input weightings, decay model, and what the literature does and does not support."
+    a: "The Shift Recovery Score is a single 0–100 number that estimates how recovered you are before your next shift, measured over the window between your last shift and your next one. It combines three inputs: how much you slept in that window against your sleep target, naps included (50%); sleep continuity — your longest unbroken stretch and how many times you woke (30%); and stage balance — the share of Deep and REM sleep (20%). If the gap before your next shift is shorter than your sleep target, the score is capped at 79; an on-call window is capped at 75. The score is informational — it is not a medical assessment and is not a diagnosis of Shift Work Disorder. See <a href=\"/apps/aftershift/methodology/\">the full Shift Recovery Score methodology page</a> for the weightings, the caps, and what the literature does and does not support."
 
   - q: "Why do naps count toward recovery in AfterShift?"
-    a: "Because for shift workers, naps are not a failure mode — they are a recovery strategy. A 20-minute pre-shift nap reduces sleep inertia on a long block; a 90-minute mid-shift nap protects REM and Deep sleep when the main sleep window is short. Sleep researchers studying rotating and on-call work consistently treat naps as legitimate recovery, especially prophylactic naps before night shifts. AfterShift weights nap length and timing into the Shift Recovery Score so a well-placed nap actually moves the number."
+    a: "Because for shift workers, naps are not a failure mode — they are a recovery strategy. A 20-minute pre-shift nap reduces sleep inertia on a long block; a 90-minute mid-shift nap protects REM and Deep sleep when the main sleep window is short. Sleep researchers studying rotating and on-call work consistently treat naps as legitimate recovery, especially prophylactic naps before night shifts. AfterShift counts the sleep from every nap between your shifts toward the Shift Recovery Score, so a nap actually moves the number — and Premium shows your nap timing and grogginess patterns."
 
   - q: "Does AfterShift help with Shift Work Disorder (SWSD)?"
     a: "AfterShift is an informational recovery tracker, not a treatment for Shift Work Disorder. SWSD is a circadian rhythm sleep-wake disorder classified in the <a href=\"https://aasm.org/clinical-resources/international-classification-sleep-disorders/\" rel=\"noopener\">ICSD-3</a> and should be diagnosed and treated by a sleep specialist. AfterShift can help you see your own patterns — fragmented weeks, caffeine timing, nap contribution — but if your sleep is significantly impaired by your schedule, talk to a clinician. The U.S. <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\">NIOSH shift work resources</a> are a reasonable starting point."
 
   - q: "Which shift patterns does AfterShift support?"
-    a: "Any pattern you can put in your calendar. The app has specific awareness of common rotations — DuPont (4 nights / 3 off / 3 days / 1 off / 3 nights / 3 off / 4 days / 7 off), Pitman (2-2-3), 4-on-4-off, 12-hour days/nights, swing shifts, and unpredictable on-call. Calendar shift import detects work blocks automatically, and the Shift Recovery Score adjusts to whatever you actually work — including forward rotations (day → evening → night), which sleep science generally favors over backward rotations."
+    a: "Any pattern you can put in your calendar or set up as a repeating rotation. Built-in rotation presets cover a forward-rotating three-shift pattern (day → evening → night — the direction sleep science generally favors over backward rotation), 4-on-4-off, 4-on-3-off, 2 days / 2 nights, Panama/Pitman (2-2-3), fixed nights, and fixed days, and you can build your own cycle of up to 28 days — long enough for a full DuPont (4 nights / 3 off / 3 days / 1 off / 3 nights / 3 off / 4 days / 7 off). Day, evening, night, and on-call shift types take your own times, so 12-hour days/nights and swing shifts fit too. Calendar shift import detects work blocks automatically, and the Shift Recovery Score is measured over whatever window sits between the shifts you actually work."
 
   - q: "Does AfterShift give caffeine timing recommendations?"
     a: "Yes — and they are not a fixed daily cutoff. AfterShift looks at your next scheduled shift and your current sleep window, then shows when caffeine still helps versus when it starts pushing your next sleep out of reach. For a worker rotating to nights, the right caffeine cutoff is hours later than a 9-to-5 textbook would suggest; for the recovery day after a night block, it may be hours earlier."
@@ -195,13 +196,13 @@ faq:
     a: "No. AfterShift is a recovery tracking and planning tool. It provides calm, clear insights — not medical diagnoses or treatment recommendations. If you suspect Shift Work Disorder, chronic insomnia, sleep apnea, or any other clinical sleep condition, see a sleep specialist."
 
   - q: "Is AfterShift free?"
-    a: "Yes. Core features — sleep tracking, nap tracking, and basic recovery summaries — are free. Premium unlocks the full Shift Recovery Score, fatigue and fragmentation insights, smart caffeine timing, multi-week trends, and exportable summaries — $3.99/month, $24.99/year, or $39.99 lifetime. Lifetime supports Family Sharing — one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes. Core features — sleep tracking, nap tracking, basic recovery summaries, calendar shift import, repeating rotations, next-shift widgets and Live Activity, and shift-timed reminders (wind-down, caffeine cut-off, nap window) — are free. Premium unlocks the full Shift Recovery Score, fatigue and fragmentation insights, cycle-to-cycle trends, automatic calendar sync across multiple calendars with overtime tracking, a shareable PDF report, and explanations written on-device by Apple Intelligence on supported iPhones — $3.99/month, $24.99/year, or $39.99 lifetime. Lifetime supports Family Sharing — one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
 
   - q: "Does AfterShift sell my health data?"
-    a: "No. AfterShift has no ads, no third-party trackers, no analytics SDKs, and no data resale. Your sleep, naps, and shift data stay on your device and in your private iCloud (if you choose to enable iCloud). Health data never leaves the device unless you explicitly export a summary."
+    a: "No. AfterShift has no ads, no third-party trackers, no analytics SDKs, and no data resale. Your sleep, naps, and shift data stay on your device — there is no account and no cloud sync. Health data never leaves the device unless you explicitly export a summary."
 
   - q: "Do I need an Apple Watch?"
-    a: "No — an iPhone with Apple Health is enough to get useful data, especially if you use the built-in iOS Sleep features. An Apple Watch makes nap detection and sleep-stage data more accurate, but is not required."
+    a: "No — AfterShift has no Apple Watch app and does not need one. You can log naps in the app and sleep through Siri or Shortcuts, and it imports sleep from any app or device that saves it to Apple Health. An Apple Watch (or another tracker that records sleep stages) adds the stage and continuity detail behind part of the Shift Recovery Score; without it, those parts use neutral defaults."
 
   - q: "Should I get morning light after a night shift, or block it?"
     a: "Both — at different times, for different goals. If you are staying on a night-shift schedule, block bright morning light on the commute home (sunglasses help) and sleep in a dark room: bright light tells your circadian clock it is daytime and makes it harder to fall asleep. If you are transitioning back to day life, the opposite is true — get bright light in the morning to phase-advance your clock. AfterShift uses your scheduled shifts to indicate which mode you are in. For the full circadian-science background, sleep specialists and the U.S. <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\">NIOSH shift work resources</a> cover light exposure timing in detail."
@@ -216,7 +217,7 @@ faq:
     a: "AfterShift does not give supplement recommendations — that conversation belongs with a clinician or pharmacist. What we can fairly say from the literature: low-dose melatonin (0.3–3 mg) taken at the start of your intended sleep window is the use case sleep researchers most often discuss for shift workers, and it acts as a circadian phase-shifter as much as a sedative — meaning when you take it matters more than how much. Higher doses are not better and increase next-day grogginess in some people. Melatonin sold in the U.S. is unregulated and dose-labelled inconsistently. The U.S. <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\">NIOSH shift work module</a> and the AASM's clinical guidance both cover melatonin timing for shift workers in more depth — talk to your clinician before starting any supplement."
 
   - q: "What are sleep latency and sleep efficiency, and does AfterShift track them?"
-    a: "Sleep latency is how long it takes you to fall asleep after lights-out; sleep efficiency is the percentage of time in bed actually spent asleep. Both are standard metrics in sleep science. For shift workers, both numbers usually get worse with daytime sleep — bright daylight, ambient noise, and a circadian system still saying \"this is the wrong time\" all push latency up and efficiency down. AfterShift reads both signals from Apple Health when available and surfaces them in the Trends view. They feed into the sleep-quality input of the Shift Recovery Score but are not the score itself — a chronically low sleep efficiency on daytime sleep is a structural problem with your sleep environment (light, noise, partner schedule) more than a number to chase."
+    a: "Sleep latency is how long it takes you to fall asleep after lights-out; sleep efficiency is the percentage of time in bed actually spent asleep. Both are standard metrics in sleep science. For shift workers, both numbers usually get worse with daytime sleep — bright daylight, ambient noise, and a circadian system still saying \"this is the wrong time\" all push latency up and efficiency down. AfterShift does not measure sleep latency. When Apple Health has separate in-bed and asleep data, sleep efficiency feeds the Sleep Score (the \"how well did I sleep\" number); the Shift Recovery Score itself is built from sleep length, continuity, and stage balance. Either way, a chronically low sleep efficiency on daytime sleep is a structural problem with your sleep environment (light, noise, partner schedule) more than a number to chase."
 
   - q: "What is social jet lag, and does it matter for shift workers?"
     a: "Social jet lag is the term sleep researchers use for the gap between your biologically preferred sleep timing and the schedule your work or social life imposes — most people experience some on Monday mornings after a freer weekend. For shift workers it is the same mechanism but much larger: a permanent night-shift nurse spending days off with daytime-sleeping family is essentially flying across time zones every weekend, and the recovery cost is real. AfterShift does not separately label social jet lag, but the fragmentation and recovery-score patterns across rotation transitions are where you see it — the day after a forced realignment is almost always your weakest recovery day in the block, and the score reflects that. The MCTQ (Munich ChronoType Questionnaire) is the validated tool researchers use to quantify social jet lag if you want a formal read."
@@ -249,7 +250,7 @@ founder:
   support_email: "lagerland.apps@proton.me"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
-    - "Architecture is GDPR-first: local storage, optional iCloud sync, zero analytics SDKs"
+    - "Architecture is GDPR-first: on-device storage, no cloud sync, zero analytics SDKs"
     - "Lagerland's App Store catalogue is built on the same data discipline — no advertising SDKs, no required accounts, no health-data resale"
     - "Funded by honest paid software — no ads, no investor pressure, no growth-hacking"
     - "Methodology is public and citable — see the Shift Recovery Score page for inputs, weights, and what the literature does and does not support"
@@ -262,4 +263,4 @@ Most sleep apps were designed for a person who goes to bed at 11 p.m. and wakes 
 
 AfterShift was built to fix that mismatch — by an independent Apple studio that watched too many friends in scrubs and uniforms get the same patronising notification. Naps are real recovery. Daytime sleep before a night shift is a win, not a failure. The right caffeine cutoff depends on what shift you are walking into, not on the time on the clock. Those positions are not radical; they are how sleep researchers studying shift work have framed the problem for two decades. AfterShift makes them the default.
 
-The Shift Recovery Score is the metric we are proudest of. It is not a sleep score in the consumer sense. It is a forward-looking estimate: given the sleep and naps you have had since your last shift, given the rotation pattern you are on, given how fragmented your recent sleep has been — how recovered are you for the next block? A seven-hour daytime sleep before a night shift can produce a higher score than an eight-hour night sleep before a day shift, because the former is set up to support the upcoming work block and the latter is misaligned. Generic sleep apps reverse that. We do not.
+The Shift Recovery Score is the metric we are proudest of. It is not a sleep score in the consumer sense. It is a forward-looking estimate: given the sleep and naps you have had since your last shift, given how long you have until the next one, given how fragmented that sleep has been — how recovered are you for the next block? Seven hours of daytime sleep before a night shift counts exactly as much as seven hours at night: the score cares how much you slept between your shifts, not what time the clock said. Generic sleep apps penalise the daytime sleep. We do not.

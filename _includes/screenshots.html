@@ -27,10 +27,10 @@
         Mac apps render in the clean window card instead. {% endcomment -%}
       <figure class="shot{% if include.app.hero.device == 'mac' %} shot--window{% endif %}">
         {%- if include.app.hero.device == "mac" -%}
-        <img src="{{ shot_src }}" alt="{{ shot_alt }}" loading="lazy">
+        <img src="{{ shot_src }}" alt="{{ shot_alt | escape }}" loading="lazy">
         {%- else -%}
         <div class="framed-shot">
-          <img src="{{ shot_src }}" alt="{{ shot_alt }}" loading="lazy">
+          <img src="{{ shot_src }}" alt="{{ shot_alt | escape }}" loading="lazy">
         </div>
         {%- endif -%}
         {%- if shot_caption -%}

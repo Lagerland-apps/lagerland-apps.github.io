@@ -109,12 +109,12 @@
         (hero.device: mac in front matter) keep the clean window card. {% endcomment -%}
       {%- if include.app.hero.device == "mac" -%}
       <div class="hero-media">
-        <img class="hero-shot" src="{{ hero_img }}" alt="{{ hero_alt }}" loading="eager" decoding="async" fetchpriority="high">
+        <img class="hero-shot" src="{{ hero_img }}" alt="{{ hero_alt | escape }}" loading="eager" decoding="async" fetchpriority="high">
       </div>
       {%- else -%}
       <div class="hero-media hero-media--framed">
         <div class="framed-shot framed-shot--lift">
-          <img class="hero-shot" src="{{ hero_img }}" alt="{{ hero_alt }}" loading="eager" decoding="async" fetchpriority="high">
+          <img class="hero-shot" src="{{ hero_img }}" alt="{{ hero_alt | escape }}" loading="eager" decoding="async" fetchpriority="high">
         </div>
       </div>
       {%- endif -%}

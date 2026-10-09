@@ -121,7 +121,7 @@ The tip follows the food. If everyone ordered about the same, divide the total w
 
 The free equal split applies the percentage to the total amount you type. Enter the after-tax total from the dinner above and choose 18%: $188.61, which Round fairly, on by default, splits as $47.16 for one person and $47.15 for the other three, so the shares add up to the cent. That is the post-tax tip, $2.13 more than the pre-tax version. If the bill already includes a service charge, the 0% preset is the one to tap.
 
-In Pro, item splitting gives each person the tip on what they ordered, and when a scanned receipt has tax and tip lines, RightSplit spreads both in proportion to each person's items. There are no accounts; only the person holding the phone needs the app.
+In Pro+, item splitting gives each person the tip on what they ordered, and when a scanned receipt has tax and tip lines, RightSplit spreads both in proportion to each person's items. There are no accounts; only the person holding the phone needs the app.
 
 What it won't do is choose the percentage. RightSplit doesn't know whether you are at a buffet or a steakhouse, so the table above is still the part you bring.
 
