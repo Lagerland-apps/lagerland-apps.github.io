@@ -13,7 +13,7 @@ seo:
     - "sleep app nurses"
     - "aftershift"
 date: 2026-01-24
-last_updated: 2026-08-14
+last_updated: 2026-10-09
 lede: "Most sleep apps assume an 11pm bedtime and a 7am alarm. The people who keep hospitals, planes, and emergency rooms running don't live that life. AfterShift is the app I built after hearing the same complaint from too many friends in scrubs."
 quick_answer: "AfterShift is a sleep app built for rotating-shift workers — nurses, pilots, paramedics — whose schedules break the 9-to-5 assumptions baked into generic sleep trackers. It accepts daytime sleep blocks and pre-shift naps as normal, calculates a forward-looking Shift Recovery Score, times caffeine cutoffs against upcoming shifts, and imports rotations from calendar feeds automatically."
 faq:
@@ -64,7 +64,7 @@ The other surprise in building AfterShift was how much research exists on caffei
 
 The simplified version: caffeine has a half-life of about five hours. Drinking it three hours before bed leaves enough in your system to disrupt sleep onset and architecture. Drinking it at the start of a night shift will keep you alert at the worst possible time — when you finally try to sleep at 9am. The right strategy depends on which way your shift is rotating, and most shift workers reverse-engineer it through years of trial and error.
 
-AfterShift bakes the strategy in. Tell the app your upcoming shift block, and it will tell you the latest sensible caffeine cutoff to protect your post-shift sleep. It's not glamorous. It is, by user feedback, the single most-mentioned feature.
+AfterShift bakes the strategy in. Tell the app your upcoming shift block, and it will tell you the latest sensible caffeine cutoff to protect your post-shift sleep. It's not glamorous. It is, by user feedback, the single most-mentioned feature. The rest of the routine for the day after a night shift, from blackout shades to the nap before the next one, is in [how to sleep after a night shift](/journal/how-to-sleep-after-a-night-shift/).
 
 ## What it takes off the user's plate
 

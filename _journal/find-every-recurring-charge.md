@@ -14,6 +14,7 @@ seo:
     - "find forgotten subscriptions"
     - "recurring payments list"
 date: 2026-07-01
+last_updated: 2026-10-09
 lede: "Most people audit their subscriptions by scrolling a bank statement, which is the one method almost guaranteed to miss the expensive ones. Recurring charges do not live in one list. They live in eight, and the yearly ones are invisible eleven months out of twelve. Here is the full checklist, in the order that finds the most money first."
 quick_answer: "There is no single list of your recurring charges, so a proper audit means working through eight records in order: Apple subscriptions (Settings, tap your name, Subscriptions), Google Play subscriptions, PayPal automatic payments, Amazon memberships and Subscribe and Save, your email receipts, Apple's separate purchase history, a 13-month card-statement sweep for repeating merchant names, and your password manager's account list. Do the four platform screens first — they take five minutes and typically surface the most charges — and scan a full 13 months of statements, because annual renewals appear only once a year."
 faq:
@@ -121,7 +122,7 @@ The checklist above is the answer to *how do I get the discovery without the acc
 
 ## What do you do with the list once you have it?
 
-This is where most audits fail. People find eleven forgotten charges, cancel four, feel good, and then rebuild the same mess over eighteen months, because nothing captured the seven they kept or the renewal dates attached to them.
+This is where most audits fail. People find eleven forgotten charges, cancel four, feel good, and then rebuild the same mess over eighteen months, because nothing captured the seven they kept or the renewal dates attached to them. Once you know what you are keeping, [a bill calendar built around your paydays](/journal/how-to-organize-bills-each-month/) shows which paycheck has to cover each charge.
 
 The list needs to live somewhere that projects forward. A note does not do that. A spreadsheet does, until the third week. [AllPaid](/apps/allpaid/) is the studio's answer to this specific job: you type a service name, it auto-fills the typical price, billing cycle and category from a built-in catalogue of 31 common services — Netflix, Spotify, ChatGPT, Claude, Adobe, Microsoft 365, iCloud, rent, utilities — and from then on every bill is projected onto a monthly calendar with one gentle reminder before each due date. It is free, with Pro at $1.99/month, $12.99/year, or $24.99 once, and it never asks for a bank login because it has no mechanism to use one. Bills stay in local storage on the iPhone; the [transparency page](/transparency/) lists the declared APIs and the empty tracking-domain list.
 

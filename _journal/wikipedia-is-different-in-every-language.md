@@ -15,6 +15,7 @@ seo:
     - "german wikipedia vs english wikipedia"
     - "wikipedia article count by language"
 date: 2026-07-16
+last_updated: 2026-10-09
 lede: "The languages sidebar on a Wikipedia article looks like a language switcher. It is not. Each language Wikipedia is an independent encyclopedia with its own editors, its own inclusion rules, and its own article set, and two editions can disagree about facts, framing, length, and whether a subject merits an article at all. Here is what actually differs, how big each edition really is, and why reading a topic twice in two languages is a real research technique."
 quick_answer: "Wikipedia articles are usually written, not translated. Each language edition is a separate project with its own editor community, notability rules, sourcing norms, and image policy, so the article on a given subject in German, Japanese, or Finnish is a different article from the English one, not a rendering of it. The languages sidebar links articles about the same concept via Wikidata; it makes no claim that the text matches. This is why reading the same topic in a second edition, with browser translation if needed, routinely surfaces sources and sections the English article never had."
 faq:
@@ -145,7 +146,7 @@ None of this makes a deck automatically virtuous. A swipe deck ranked on dwell t
 
 WanderWiki is a discovery client, and it is worth being precise about what that excludes.
 
-It runs on iPhone, iOS 18.2 and later. It carries 33 Wikipedia language editions — 33 of roughly 340, a real limitation and not a rounding error. Three modes: Random across the full encyclopedia, For You across 10 interest categories, and Today in History. Ad-free, no account, and individual articles save for offline reading in folders. It is paid software: a 3-day free trial, then $1.99/month, $8.99/year, or $24.99 once. That is the trade for having no ads and no engagement model to feed.
+It runs on iPhone, iOS 18.2 and later. It carries 33 Wikipedia language editions — 33 of roughly 340, a real limitation and not a rounding error. Three modes: Random across the full encyclopedia, For You across 10 interest categories, and Today in History. How random that Random draw really is, and how to make one land on a featured article instead, is in [a guide to finding interesting Wikipedia articles](/journal/how-to-find-interesting-wikipedia-articles/). Ad-free, no account, and individual articles save for offline reading in folders. It is paid software: a 3-day free trial, then $1.99/month, $8.99/year, or $24.99 once. That is the trade for having no ads and no engagement model to feed.
 
 The part relevant to this post is the category mapping. Interest categories are mapped per language against that edition's own category tree, so choosing German plus Science queries Wissenschaft, Physik, and Chemie rather than machine-translated English category names. That is the principle from the top of this page implemented in one place: the German Wikipedia's category structure is the German Wikipedia's, and pointing English category names at it returns the wrong articles or none. The data side is documented per-app on the [transparency page](/transparency/).
 

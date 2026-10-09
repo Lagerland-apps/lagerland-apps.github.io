@@ -13,7 +13,7 @@ seo:
     - "local image converter mac"
     - "mediakit"
 date: 2026-03-28
-last_updated: 2026-08-14
+last_updated: 2026-10-09
 lede: "Almost every online image converter you've used in the last decade uploaded your file to a server you don't control, processed it there, and gave you back a download. The convenience is real. The privacy implication is not small. MediaKit is the studio's argument that 133 of those tools should run on your Mac instead."
 quick_answer: "Online image, video, audio, and PDF converters upload private files to operator infrastructure that holds them well after the conversion is done. MediaKit is a Mac app that runs 133 equivalent tools locally — including HEIC bulk, video compression, PDF redaction, and RAR v5 extraction on Apple Silicon — with full Shortcuts support. Five tools are free forever."
 faq:
@@ -70,7 +70,7 @@ MediaKit is a Mac app with 133 local conversion tools, organised by media type:
 - **PDF**: merge, split, redact, sign, OCR, page reorder, compress.
 - **Archive**: ZIP, TAR, GZIP — and crucially, **RAR v5 extraction natively on Apple Silicon**, which has been a long-standing pain point for users who get RAR archives in 2026 (more often than you'd think — academic and design workflows still use it heavily).
 
-Every tool runs entirely on the Mac. No file leaves the device. No upload, no cloud round-trip, no operator retention policy to read.
+Every tool runs entirely on the Mac. No file leaves the device. No upload, no cloud round-trip, no operator retention policy to read. For the most common video job, getting a clip under an email attachment limit, the limits and the bitrate arithmetic are in [a separate guide](/journal/compress-a-video-for-email/).
 
 The tools all support **Shortcuts integration**, which means they can be composed into automated workflows. *"Compress all videos in this Downloads folder, output to ~/Compressed, delete originals over 100MB."* That's a Shortcut, runs on a schedule, never touches the internet.
 

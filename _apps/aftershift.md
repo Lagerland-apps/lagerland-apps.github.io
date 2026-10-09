@@ -105,6 +105,7 @@ who_not_for:
 
 alternatives_to:
   - "OffShift"
+  - "Shift Worker"
   - "ShiftSleep"
   - "Timeshifter (Shift Work)"
   - "Sleep Aid for Shift Workers"

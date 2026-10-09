@@ -3,7 +3,7 @@ layout: journal
 slug: making-shogi-readable-without-kanji
 title: "Shogi pieces in English: how to read the board without learning kanji"
 date: 2026-06-11
-last_updated: 2026-08-14
+last_updated: 2026-10-09
 seo:
   title: "Shogi Pieces in English: Read the Board Without Kanji"
   description: "Every shogi piece in English — names, kanji, how each moves, what it promotes to — plus how to read shogi notation (P-7f, S*4e). No Japanese needed."
@@ -96,7 +96,7 @@ So a few worked examples:
 - **`Bx8h+`** — bishop captures on 8h and promotes to a horse.
 - **`S3ax2b`** — and if you have seen the Hosking-numeric form **`S31x22`**, it is the identical move: a silver on file 3, rank 1 capturing on file 2, rank 2.
 
-That's the whole system. Piece letter, what happened, where. (Full tables, including the rarer disambiguation marks, live on the [Wikipedia shogi-notation page](https://en.wikipedia.org/wiki/Shogi_notation).)
+That's the whole system. Piece letter, what happened, where. (Full tables, including the rarer disambiguation marks, live on the [Wikipedia shogi-notation page](https://en.wikipedia.org/wiki/Shogi_notation).) To see it in use, [the beginner's guide to shogi openings](/journal/shogi-openings-for-beginners/) writes out two opening lines in this notation.
 
 ## Why the characters are the real barrier — and why I didn't just translate them
 

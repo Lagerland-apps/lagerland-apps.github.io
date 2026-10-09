@@ -14,6 +14,7 @@ seo:
     - "proportional tip split"
     - "how to split a bill evenly"
 date: 2026-08-13
+last_updated: 2026-10-09
 lede: "There is no single correct way to split a restaurant bill. There are about six defensible ways, they produce answers that differ by twenty dollars a head, and your table has never agreed on which one it uses. Here is every rule with the arithmetic worked all the way out — tax, tip, the shared bottle, and the cent that will not divide."
 quick_answer: "Split the bill in three passes. First, assign every item to whoever ordered it. Second, distribute tax and tip in proportion to each person's subtotal, not by headcount — on a $120 subtotal with 8.875% tax and a 20% tip, the $58 steak carries $5.15 of tax and $11.60 of tip while the $14 salad carries $1.24 and $2.80. Third, split shared plates only among the people who actually had them, and give the leftover cents to whoever paid. Even-splitting is fine when the orders are similar and quietly expensive when they are not."
 faq:
@@ -58,7 +59,7 @@ Two notes on that table.
 
 US sales tax is added on top, and the rate is local. New York City's combined state and local rate is 8.875% — 4% state, 4.5% city, and a 0.375% Metropolitan Commuter Transportation District surcharge — which you can check in the New York State Department of Taxation and Finance's [Publication 718 rate tables](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf). In the EU and UK, VAT is already baked into every printed price, so there is no tax layer to distribute at all. That single structural difference is why American and European bill-splitting arguments sound nothing alike: in Europe the line item is the whole truth, and in the US it is roughly three-quarters of what you will actually pay once tax and tip land on top.
 
-Whether the tip goes on the pre-tax subtotal or the post-tax total is convention rather than rule. The traditional answer is pre-tax, because the tax is not the restaurant's money. The suggested-tip lines printed at the bottom of many US checks are computed on the post-tax total. On the bill below, that is the difference between $24.00 and $26.13. Neither is wrong. Announcing which one you used is what matters.
+Whether the tip goes on the pre-tax subtotal or the post-tax total is convention rather than rule. The traditional answer is pre-tax, because the tax is not the restaurant's money. The suggested-tip lines printed at the bottom of many US checks are computed on the post-tax total. On the bill below, that is the difference between $24.00 and $26.13. Neither is wrong. Announcing which one you used is what matters. How large the tip should be in the first place depends on the setting, and [the US tipping guide](/journal/how-much-to-tip-in-the-us/) has the ranges, situation by situation.
 
 The UK has a related wrinkle worth knowing: since the [Employment (Allocation of Tips) Act 2023](https://www.legislation.gov.uk/ukpga/2023/13/contents) came into force in October 2024, employers must pass on 100% of qualifying tips and service charges to staff. It does not change your arithmetic. It does mean the discretionary service line is now more likely to reach the people who served you than it once was.
 

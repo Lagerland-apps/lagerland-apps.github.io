@@ -131,6 +131,7 @@ alternatives_to:
   - "Countdowns (Apalon)"
   - "Dreamdays"
   - "Days Matter"
+  - "Countdown Star"
   - "Wedding Happy"
   - "TheWait (former name of Soon.)"
 

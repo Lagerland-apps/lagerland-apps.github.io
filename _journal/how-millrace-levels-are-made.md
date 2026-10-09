@@ -3,6 +3,7 @@ layout: journal
 slug: how-millrace-levels-are-made
 title: "Sixty-four levels, none written by hand: how Millrace finds and proves its puzzles"
 date: 2026-09-24
+last_updated: 2026-10-09
 seo:
   title: "How Puzzle Levels Are Generated and Verified — Millrace"
   description: "How Millrace's 64 puzzle levels are generated and verified: found by search, solved exhaustively, and discarded if any of 280 thoughtless strategies wins."
@@ -87,7 +88,7 @@ The battery at the gate's heart: 4 policies that push one direction until they c
 
 The battery's first version was circular, and it's worth saying so: its 70 policies never looked at the inlet, so "none of them solves it" only meant "players who ignore the inlet die to the inlet". Adding rule-aware players broke six of the eight puzzles that had passed it.
 
-The line sits at one move on purpose. Looking two moves ahead — where will the next arrival land? — isn't thoughtless; it is the skill the levels teach. The gate certifies that the content has depth, not that you can't think.
+The line sits at one move on purpose. Looking two moves ahead — where will the next arrival land? — isn't thoughtless; it is the skill the levels teach. The gate certifies that the content has depth, not that you can't think. [How to plan moves ahead in Millrace](/journal/how-to-plan-moves-ahead-in-tile-puzzles/) shows that lookahead in play, with Level 1 worked move by move.
 
 Chance gets the same treatment. The move budget makes each level's state graph finite and loop-free, so a random player's odds are computed exactly by a memoised walk, not simulated. The ceiling is 2%, Warm-up included. Across the 64 levels the odds run from about one in a million on the deepest boards to 1.31% on Level 1; the median sits near one in a thousand.
 

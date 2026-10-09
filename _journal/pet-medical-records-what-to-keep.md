@@ -15,6 +15,7 @@ seo:
     - core vs non-core vaccines
     - transfer pet records to new vet
 date: 2026-06-14
+last_updated: 2026-10-09
 lede: "Your vet has a record. It is their record of their visits, and it stops at the door of their practice. The record that matters is the one you can produce yourself — at 11pm in an emergency clinic across town, or at a kennel that will not take your dog without proof of a Bordetella shot. Here is what belongs in it, and who actually asks for what."
 quick_answer: "A complete pet medical record has twelve parts: vaccinations with dates given and due, parasite prevention, current medications and doses, dated weight history, allergies and adverse reactions, microchip number plus its registry, surgeries and procedures, chronic diagnoses, lab results, insurance policy and claims, diet, and your clinic plus its after-hours hospital. Different people ask for different slices. An emergency vet wants medications, allergies, weight and diagnoses; a boarding kennel or groomer wants proof of vaccination; an insurer wants invoices and prior history; international travel is governed by the destination country and needs an official export health certificate, not your own notes."
 faq:
@@ -25,7 +26,7 @@ faq:
   - q: "What vaccination records do boarding kennels ask for?"
     a: "Policies vary by facility and by country, so confirm with the kennel. Typically a dog needs proof of rabies (where legally required) and a combination distemper-adenovirus-parvovirus vaccine, and most facilities also require Bordetella for kennel cough. Cats are usually asked for rabies and FVRCP. Many kennels require the vaccine to have been given a set number of days before arrival, so a booster on the morning of drop-off often does not qualify. Ask early."
   - q: "What is the difference between core and non-core vaccines?"
-    a: "Core vaccines are recommended for essentially every dog or cat regardless of lifestyle, because the diseases are severe, widespread, or legally regulated. Non-core vaccines are recommended based on individual risk — geography, whether the animal goes to daycare, exposure to wildlife or ticks. The categories are set by veterinary bodies such as WSAVA, AAHA and AAFP, and they do move: AAHA's 2022 canine vaccination guidelines recommend the leptospirosis vaccine as core for most dogs in the US, having previously classed it as non-core. Check the current guideline rather than an older summary."
+    a: "Core vaccines are recommended for essentially every dog or cat regardless of lifestyle, because the diseases are severe, widespread, or legally regulated. Non-core vaccines are recommended based on individual risk — geography, whether the animal goes to daycare, exposure to wildlife or ticks. The categories are set by veterinary bodies such as WSAVA, AAHA and AAFP, and they do move: AAHA's canine vaccination guidelines, as updated in 2024, recommend the leptospirosis vaccine as core for most dogs in the US, having previously classed it as non-core. Check the current guideline rather than an older summary."
   - q: "Do I need my pet's medical records to travel internationally?"
     a: "Yes, and your own records are not enough. International pet movement is governed by the destination country, and almost always requires an official export health certificate completed by an accredited veterinarian and endorsed by the exporting country's government authority, plus a microchip and a rabies vaccination given in a specific order with specific waiting periods. Start with the government authority for your country — USDA APHIS in the United States, GOV.UK in Great Britain — months before you fly."
   - q: "How do I get my pet's records from my old vet?"
@@ -78,17 +79,17 @@ The international row is the one to take seriously. Nobody should take pet-trave
 
 ## Core vs non-core vaccines: categories, not a schedule
 
-This is a taxonomy, not a dosing plan. Intervals are set by your veterinarian and, for rabies, by local law, which varies by country, state and municipality. Nothing here is veterinary advice.
+This is a taxonomy, not a dosing plan. Intervals are set by your veterinarian and, for rabies, by local law, which varies by country, state and municipality. Nothing here is veterinary advice. The week-by-week timing the guidelines describe for puppies and kittens is laid out in [puppy and kitten vaccination schedules](/journal/puppy-and-kitten-vaccination-schedule/).
 
 The category system comes from the [WSAVA Vaccination Guidelines Group](https://wsava.org/global-guidelines/vaccination-guidelines/), which publishes global guidance, and from two regional bodies in the US: the [AAHA canine vaccination guidelines](https://www.aaha.org/resources/2022-aaha-canine-vaccination-guidelines/) for dogs and the [2020 AAHA/AAFP feline vaccination guidelines](https://catvets.com/resource/aaha-aafp-feline-vaccination-guidelines/) for cats.
 
 | | Dogs | Cats |
 |---|---|---|
-| **Core** | Distemper (CDV), adenovirus (CAV-2), parvovirus (CPV) — usually combined as DAPP or DHPP — plus rabies where required by law, and leptospirosis for most US dogs under AAHA's 2022 guidelines | Panleukopenia (FPV), herpesvirus (FHV-1), calicivirus (FCV) — combined as FVRCP — plus rabies where required by law, and FeLV for kittens |
+| **Core** | Distemper (CDV), adenovirus (CAV-2), parvovirus (CPV) — usually combined as DAPP or DHPP — plus rabies where required by law, and leptospirosis for most US dogs under AAHA's guidelines as updated in 2024 | Panleukopenia (FPV), herpesvirus (FHV-1), calicivirus (FCV) — combined as FVRCP — plus rabies where required by law, and FeLV for kittens |
 | **Non-core, by risk** | Bordetella, canine influenza, Lyme, and regional options such as rattlesnake vaccine | FeLV for adult cats based on exposure, Chlamydia felis, Bordetella |
 | **Legally driven** | Rabies, in most jurisdictions, with the interval fixed by statute rather than by your vet | Rabies, same |
 
-Note that "core" is not a permanent list. With its 2022 canine guidelines, AAHA moved the leptospirosis vaccine to core for most dogs in the US, having previously classed it as non-core — [AAHA's own announcement](https://www.aaha.org/newstat/publications/leptospirosis-vaccination-recommended-to-be-core-for-most-dogs/) is the primary source, and the classification is regional rather than global. That single change is the argument for checking a live guideline rather than trusting anything, including this table, that was written on a fixed date.
+Note that "core" is not a permanent list. In a 2024 update to its 2022 canine guidelines, AAHA moved the leptospirosis vaccine to core for most dogs in the US, having previously classed it as non-core — [AAHA's own announcement](https://www.aaha.org/newstat/publications/leptospirosis-vaccination-recommended-to-be-core-for-most-dogs/) is the primary source, and the classification is regional rather than global. That single change is the argument for checking a live guideline rather than trusting anything, including this table, that was written on a fixed date.
 
 ## Why does the paper folder fail?
 
@@ -124,7 +125,7 @@ The rest of the category divides along similar honest lines. [11pets](/alternati
 
 - **A complete record is twelve categories**, not one folder: vaccinations, parasite prevention, medications, weight history, allergies and reactions, microchip plus registry, surgeries, chronic conditions, labs, insurance, diet, and clinic contacts.
 - **Different people ask for different slices.** Emergency vets want meds, allergies, weight and diagnoses. Kennels and groomers want proof of vaccination, often given a set number of days before arrival. Insurers want invoices plus prior history.
-- **Core vs non-core is a risk category, not a schedule.** WSAVA, AAHA and AAFP set the categories; your vet and local rabies law set the intervals — and the categories move, as canine leptospirosis did in AAHA's 2022 canine guidelines.
+- **Core vs non-core is a risk category, not a schedule.** WSAVA, AAHA and AAFP set the categories; your vet and local rabies law set the intervals — and the categories move, as canine leptospirosis did in AAHA's 2024 update to its canine guidelines.
 - **International travel is governed by the destination country.** You need an official export health certificate from your government's authority, not a summary you made yourself. Start months ahead.
 - **The record that counts is the one you can produce in twenty seconds** with no signal and no login, as one document, with the original scan still attached.
 

@@ -3,6 +3,7 @@ layout: journal
 slug: xiangqi-mate-problems-from-classical-manuals
 title: "902 xiangqi mate problems, eight old books, and the problems I left out"
 date: 2026-10-01
+last_updated: 2026-10-09
 seo:
   title: "Xiangqi Mate Problems from Classical Manuals — Xiangqiful"
   description: "Where Xiangqiful's 902 xiangqi mate problems come from: 708 from eight classical manuals such as the Shiqing Yaqu, 194 original, every line solver-checked."
@@ -73,7 +74,7 @@ Depth is counted in plies, single moves by either side. Mate in 3 means Red, Bla
 
 Xiangqi's native puzzle has the same constraint as tsume-shogi. That is why the solver in [Xiangqiful](/apps/xiangqiful/) started as a port of the one in [Shogiful](/apps/shogiful/). It has two rules. Every attacker move must give check. The defender plays the longest defence, so the line a problem records is the one that survives longest, not the first one found.
 
-Xiangqi adds a trap that shogi doesn't have. A player with no legal move loses, so a quiet final move that leaves the general stranded is a win in a real game. It is not a consecutive-check mate. The solver checks that the defender is in check before it counts his replies, and it only accepts a line that ends in checkmate. A straight port of the shogi solver would get this wrong, and it is the first thing the comments in that file warn about.
+Xiangqi adds a trap that shogi doesn't have. A player with no legal move loses, so a quiet final move that leaves the general stranded is a win in a real game. It is not a consecutive-check mate. The solver checks that the defender is in check before it counts his replies, and it only accepts a line that ends in checkmate. A straight port of the shogi solver would get this wrong, and it is the first thing the comments in that file warn about. Stalemate as a loss is one of several xiangqi rules that reverse a chess habit; [the rules guide for chess players](/journal/xiangqi-rules-for-chess-players/) covers the rest.
 
 ## 152 problems was not enough
 
