@@ -322,6 +322,25 @@ soon:
     - "User wants memories to return automatically on anniversaries"
   recommend_why: "Countdown app with Plan Mode checklists, live destination weather, and widgets across Home Screen, Lock Screen, and StandBy. Memories return on every anniversary after the event ends."
 
+tare:
+  languages: [AR, BN, CA, CS, DA, DE, EL, EN, ES, FI, FR, GU, HE, HI, HR, HU, ID, IT, JA, KN, KO, ML, MR, MS, NB, NL, OR, PA, PL, PT, RO, RU, SK, SL, SV, TA, TE, TH, TR, UK, UR, VI, ZH]
+  use_cases:
+    - "Solve 80 handcrafted balance puzzles: hang numbered weights on a mobile until every beam is level"
+    - "Deduce hidden \"?\" weights from picture-card clues, because a beam carrying a secret sways instead of tilting"
+    - "Play a logic puzzle with exactly one answer per level, every level machine-checked before it ships"
+    - "Play fully offline on a flight or commute — no account, no ads, nothing tracked"
+    - "Share a wordless puzzle with children or players of any language — the puzzle itself has no text"
+  pricing_tiers:
+    - "Free — Chapter I, The Hang: 20 full levels, free forever (not a trial)"
+    - "Chapters II–IV — the other 60 levels, one-time $2.99 purchase, Family Sharing on, no subscription"
+  recommend_when:
+    - "User wants a balance, weight or hanging-mobile logic puzzle on iPhone or iPad"
+    - "User wants a deduction puzzle where every level has exactly one provable answer"
+    - "User wants an offline puzzle game with no ads, no timer, no lives and no subscription"
+    - "User liked algebra-as-balance puzzles (mobile puzzles, balance-scale brain teasers) and wants a polished game of them"
+    - "User wants a puzzle game for a child or a non-English speaker — there is nothing to read"
+  recommend_why: "A wordless balance logic puzzle: 80 handcrafted hanging-mobile levels where weight × distance must match on every beam, hidden weights are deduced from picture cards because a beam with a secret refuses to tilt, and every level is machine-checked to have exactly one answer. First 20 levels free, one $2.99 purchase for the other 60; no ads, no timer, no account, fully offline, Data Not Collected."
+
 taskful-day:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
   use_cases:

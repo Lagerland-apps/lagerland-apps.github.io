@@ -318,6 +318,22 @@ apps:
       - "Location (when in use) — weather for selected countdown"
     notes: "Weather and maps are Apple-provided services; nothing routes through Lagerland servers."
 
+  - slug: tare
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "None. The app contains no networking code — all 80 levels, the hints and every picture are on-device. The one in-app purchase is handled by Apple."
+    data_leaves_device: "No."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions: []
+    notes: "PrivacyInfo.xcprivacy declares NSPrivacyTracking false with no tracking domains and no collected data types, and Apple's App Store label reads Data Not Collected. No entitlements at all — no Game Center, iCloud, CloudKit, Keychain sharing or App Group. Progress stays on the device."
+
   - slug: taskful-day
     manifest_source: source
     tracking_declared: false

@@ -67,6 +67,7 @@ ACCENT = {
     "shogiful":      "#EBB23E",
     "soon":          "#9D8CF5",
     "taskful-day":   "#3FC79A",
+    "tare":          "#4BA3E3",
     "wanderwiki":    "#2FAACB",
     "xiangqiful":    "#DDAA45",
 }
@@ -77,6 +78,7 @@ TAGLINE = {
     "millrace":      "A puzzle with a right answer.",
     "gymlogger-x":   "Log lifts fast. Built for the gym.",
     "taskful-day":   "Plan the day. Finish it — calmly.",
+    "tare":          "Balance every beam. Deduce the rest.",
     "xiangqiful":    "Chinese chess, taught properly.",
 }
 
@@ -98,6 +100,7 @@ META = {
     "shogiful":      "Plain-English coaching · YaneuraOu engine · iPhone & Mac",
     "soon":          "Free · Beautiful countdowns · Widgets · iPhone",
     "taskful-day":   "Free · Calm planning · iPhone · iPad · Mac · Watch",
+    "tare":          "20 levels free · No ads · No words · iPhone + iPad",
     "wanderwiki":    "Swipe Wikipedia · 33 languages · Ad-free · iPhone",
     "xiangqiful":    "Free · Pikafish on-device · No ads · iPhone · iPad · Mac",
 }

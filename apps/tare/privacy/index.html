@@ -1,11 +1,8 @@
 ---
 layout: privacy
 
-# Tare is UNLISTED pre-launch — see the note in _apps/tare.md. `sitemap: false`
-# keeps this page out of sitemap.xml until release; the URL itself must be live
-# because the app hard-codes it (UI/Settings/AppLinks.swift privacyPage) and App
-# Store Connect's privacy policy URL points here. Remove the flag on launch.
-sitemap: false
+# The app hard-codes this URL (UI/Settings/AppLinks.swift privacyPage) and App
+# Store Connect's privacy policy URL points here — never move it.
 
 seo:
   title: "Tare Privacy Policy — No Data Collected, No Account"
@@ -37,13 +34,15 @@ data_storage: >
   so you can pick up where you stopped. If you buy the chapter unlock, it keeps a
   single record that Chapters II–IV are unlocked — no price, no date, and no
   receipt — so the chapter wall draws correctly when the game starts. Your
-  settings (sound, haptics, high contrast, and your chosen canvas) are saved in the
-  game's local preferences. This is stored with Apple's SwiftData and UserDefaults
+  settings (sound, haptics, hints, high contrast, and your chosen canvas) are saved
+  in the game's local preferences. This is stored with Apple's SwiftData and UserDefaults
   on the device only. It is not uploaded, not synced to iCloud, and not shared with
-  anyone, and deleting Tare removes it. Some things Tare deliberately never writes
-  down at all: how often you use the Lantern hint, and how many levels you have
-  solved in a session (used only to decide whether to show Apple's review prompt),
-  exist in memory while the game is open and are gone when it closes.
+  anyone, and deleting Tare removes it. If you have switched hints on and ask for
+  one, the level you are playing remembers only that a hint was used, because a
+  hint costs that attempt's third star; how many hints you ask for is never
+  written down. How many levels you have solved in a session (used only to decide
+  whether to show Apple's review prompt) exists in memory while the game is open
+  and is gone when it closes.
 
 third_parties: >
   Tare contains no third-party software of any kind — no analytics, advertising,
@@ -55,11 +54,13 @@ third_parties: >
   that the unlock belongs to you. Family Sharing of that purchase is managed by
   Apple in the same way. After you finish certain chapters, Tare may ask iOS to
   show Apple's standard rating prompt; iOS decides whether it appears, and Tare
-  learns nothing about what you do with it. Finally, four links in the game open
-  outside it: Rate Tare opens the App Store, Privacy opens this page in your
-  browser, Support opens your own mail app addressed to our support email (nothing
-  is pre-filled and nothing is sent unless you write and send it yourself), and the
-  unlock screen's Terms of Use opens Apple's standard licence agreement. Once you
+  learns nothing about what you do with it. Finally, a few rows in Settings lead
+  outside the game: Share Tare opens the system share sheet with a plain link to
+  Tare's App Store page (no tracking or referral code is added), Rate Tare opens
+  the App Store's review page, Feedback opens your own mail app addressed to our
+  support email (nothing is pre-filled and nothing is sent unless you write and
+  send it yourself), Privacy opens this page in your browser, and Terms of use —
+  also on the unlock screen — opens Apple's standard licence agreement. Once you
   leave the game through one of those links, that app or website's own privacy
   practices apply.
 

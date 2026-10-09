@@ -273,7 +273,7 @@ founder:
     - "All 64 levels are machine-verified before shipping: solvable, shortest solution confirmed, and screened against no-lookahead strategies"
     - "Localised into 34 languages across 40 App Store locales, with no hardcoded player-facing strings"
     - "Funded by honest paid software — optional cosmetic packs, never ads or data"
-    - "19 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
+    - "20 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"
@@ -281,6 +281,8 @@ founder:
 support:
   email: "lagerland.apps@proton.me"
   url: "/apps/millrace/support/"
+
+related_apps: ["tare", "chessful", "shogiful"]
 
 related_journal:
   slug: "how-millrace-levels-are-made"
@@ -328,3 +330,5 @@ Apple's App Store privacy label reads **Data Not Collected**. The app's Privacy 
 The game is free in full. Optional purchases are cosmetic theme packs and consumable undo tokens — and no level ever requires a token to finish.
 
 Millrace runs natively on iPhone and iPad, requires iOS or iPadOS 18, and is localised into 34 languages across 40 App Store locales.
+
+If you like puzzles that end in a provable answer, [Tare](/apps/tare/) comes from the same studio: a wordless balance puzzle of hanging mobiles where hidden weights are deduced from picture cards, and every one of its 80 levels is machine-checked to have exactly one solution.

@@ -95,7 +95,7 @@ Finally, no two levels may share a canonical form: tile values replaced by rank,
 
 ## Why the gate lives in the test suite
 
-None of this is a script I ran once. The sixteen checks live in the test target; the generator filters with the same functions, and the suite asserts each property over the shipped library, so a level that stops passing fails the tests, naming the property that broke. A search that runs out of budget fails too — unproven is unshippable. And the gate must prove itself: a board from the earlier library is kept as a fixture, and the suite fails if it ever gets through. Re-proving all 64 levels takes just under a hundred seconds.
+None of this is a script I ran once. The sixteen checks live in the test target; the generator filters with the same functions, and the suite asserts each property over the shipped library, so a level that stops passing fails the tests, naming the property that broke. A search that runs out of budget fails too — unproven is unshippable. And the gate must prove itself: a board from the earlier library is kept as a fixture, and the suite fails if it ever gets through. Re-proving all 64 levels takes just under a hundred seconds. Tare's balance puzzles are built by hand rather than generated, but they pass the same kind of gate; [here is how it proves all 80](/journal/how-to-solve-balance-puzzles/).
 
 The Hint inside a level runs the same solver, so the two cannot drift apart, and one check plays every level on the hint alone: it must win in exactly the shortest number of moves. For [Chessful's forty opponents](/journal/forty-chess-opponents/), difficulty was a matter of character; here it had to stop being a feeling and become a number the tests check.
 
