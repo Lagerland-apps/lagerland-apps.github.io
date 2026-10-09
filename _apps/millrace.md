@@ -331,4 +331,4 @@ The game is free in full. Optional purchases are cosmetic theme packs and consum
 
 Millrace runs natively on iPhone and iPad, requires iOS or iPadOS 18, and is localised into 34 languages across 40 App Store locales.
 
-If you like puzzles that end in a provable answer, [Tare](/apps/tare/) comes from the same studio: a wordless balance puzzle of hanging mobiles where hidden weights are deduced from picture cards, and every one of its 80 levels is machine-checked to have exactly one solution.
+If you like puzzles that end in a provable answer, [Tare](/apps/tare/) comes from the same studio: a wordless balance puzzle of hanging mobiles where hidden weights are deduced from picture cards, and every one of its 80 levels is machine-checked to have exactly one solution. For how both compare with Threes, Flow Free, Baba Is You and the rest, see [the best logic puzzle games for iPhone](/guides/best-logic-puzzle-games-iphone/).
