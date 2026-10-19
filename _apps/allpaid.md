@@ -324,8 +324,8 @@ release:
   last_audited: "2026-05-13"
 
 ratings:
-  value: "4.8"
-  count: 6
-  last_synced: "2026-10-02"
+  value: "4.9"
+  count: 7
+  last_synced: "2026-10-19"
 ---
 AllPaid is a calm, privacy-first bill and subscription tracker for iPhone. It is the bill tracker for people who refuse to hand a bank login to a third-party app. Bills are added manually or auto-filled from a built-in catalog of 40 common services across 18 categories — streaming (Netflix, Spotify, Disney+, YouTube Premium, Apple TV+, HBO Max, Amazon Prime, Crunchyroll, Apple Music), AI tools (ChatGPT, Claude Pro), productivity and cloud (Adobe, Microsoft 365, Dropbox, Google One, iCloud), housing (rent, mortgage), utilities (electricity, water, gas), internet and phone, four kinds of insurance, transportation, gym, student loans, credit cards, other loans, taxes, savings, groceries, entertainment, pet care, childcare, and donations. Matched in English plus Finnish and German keywords. A monthly calendar projects every recurring bill forward with daily totals — see bunched billing days weeks before they hit your account. Gentle reminders fire once before each due date with one-tap mark-as-paid in the app or straight from the notification. Pro adds on-device spending analytics: category breakdown with percentages, monthly trend charts computed from your local payment history, per-bill totals, and unlimited bills. No ads, no trackers, no account, no Plaid, no bank connection. Free with optional Pro from $1.99/month, $12.99/year, or $24.99 lifetime — about 40% of what comparable iPhone bill trackers charge for a lifetime unlock.
