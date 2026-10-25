@@ -11,6 +11,7 @@ seo:
     - "no tracking app"
 title: "Privacy Policy"
 app_name: "AppMeta"
+last_updated: 2026-10-25
 
 overview: >
   AppMeta is designed to help developers manage App Store metadata safely and efficiently.
@@ -22,22 +23,44 @@ data_collection: >
   AppMeta processes information you explicitly provide or access through the app,
   such as app metadata (names, descriptions, keywords, URLs),
   localization content, version information,
-  in-app purchase and subscription metadata,
+  in-app purchase, subscription and Game Center metadata,
+  TestFlight builds, customer reviews, sales and analytics reports,
   and related configuration data retrieved from App Store Connect.
+  If you use live keyword research, it also processes the keyword phrases you check
+  and the public App Store results for them.
   This information is used only to provide AppMeta’s core functionality,
   including local editing, diff previews, and syncing changes to App Store Connect.
 
 data_storage: >
   By default, all app metadata and workspace data is stored locally on your Mac.
   AppMeta does not operate its own servers for storing your data.
-  App Store Connect API credentials are stored securely in the macOS Keychain.
+  App Store Connect API credentials are stored securely in the macOS Keychain,
+  as items that stay on that Mac and don’t sync through iCloud.
+  API keys you add for AI providers or Apple Ads are stored in the Keychain the same way.
   If you choose to use macOS or iCloud features such as backups,
   your data may be included according to your system settings.
 
 third_parties: >
-  AppMeta does not use third-party analytics, advertising, or tracking services.
+  AppMeta does not use third-party analytics, advertising, or tracking services,
+  and it never sends your data to a Lagerland server.
   AppMeta communicates directly with Apple’s App Store Connect API
-  to fetch and update your app data.
+  (api.appstoreconnect.apple.com) to fetch and update your app data;
+  that is the only place your App Store Connect credentials are used.
+  Analytics report files are downloaded from the storage links that API returns.
+  AppMeta also makes these requests, each only for the feature named:
+  Apple’s public App Store services (apps.apple.com, itunes.apple.com,
+  search.itunes.apple.com and amp-api-edge.apps.apple.com) for app icons,
+  competitor apps and prices you choose to track, and live keyword research,
+  which is off until you turn it on; Apple Ads (api.ads.apple.com and appleid.apple.com),
+  only if you connect your own Apple Ads account for keyword popularity;
+  and the European Central Bank’s exchange-rate service (data-api.ecb.europa.eu)
+  to convert sales figures into one currency.
+  None of these requests carries your App Store Connect credentials;
+  they carry what is being looked up, such as app IDs, keyword phrases or currency codes.
+  If you choose a cloud AI provider (Anthropic, OpenAI, Google,
+  or an OpenAI-compatible endpoint you configure), the text you ask it to translate
+  or analyze is sent to that provider with your own API key, under the provider’s terms.
+  Apple Intelligence runs on your Mac.
   Apple may process limited data as part of services you choose to use,
   such as App Store Connect, Keychain, and in-app purchases.
 

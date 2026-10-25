@@ -2,74 +2,77 @@
 layout: app
 slug: wanderwiki
 name: "WanderWiki"
-tagline: "Swipe Wikipedia in 33 languages. Ad-free."
-quick_answer: "WanderWiki is a Wikipedia discovery app for iPhone (iOS 18.2+) that turns the encyclopedia into a swipe-based card deck. Three modes — Random, For You (10 interest categories), and Today in History (5 categories from Wikipedia's official REST API: Selected, Events, Births, Deaths, Holidays) — surface fascinating articles across 33 Wikipedia language editions. Per-language Wikipedia category mappings: pick German + Science and it queries Wissenschaft, Physik, Chemie — not translated English categories. Articles are reformatted for calm reading; saved articles work offline; folders organise your reading list. Home Screen, Lock Screen, and StandBy widgets included. Free 3-day trial, then $1.99/month, $8.99/year, or $24.99 lifetime. No ads, no behavioral tracking, no account."
+tagline: "Swipe Wikipedia in 32 languages. Ad-free."
+quick_answer: "WanderWiki is a Wikipedia discovery app for iPhone and iPad (iOS 18.2+) that turns the encyclopedia into a swipe-based card deck. Random pulls from the whole encyclopedia, Browse narrows the deck to one of 16 topics, For You blends the topics you pick, and Today in History reads Wikipedia's official On This Day feed in five categories (Selected, Events, Births, Deaths, Holidays). It covers 32 Wikipedia language editions; in 17 of them the topics map to that edition's own categories, so German + Science queries Wissenschaft, Physik and Chemie, not translated English categories. Saved articles download for offline reading and sort into folders, any article can be read aloud, and five widgets bring On This Day, Continue Reading and more to the Home Screen and Lock Screen. Free for 20 articles a day; WanderWiki Plus adds For You, Today in History and unlimited swiping for $1.99/month, $8.99/year, or $24.99 once. No ads, no behavioral tracking, no account."
 category: education
-platforms: ["iOS"]
+platforms: ["iOS", "iPadOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6758459119"
 
 price:
   model: freemium
-  value: "Free trial — from $1.99/mo, $8.99/yr, or $24.99 lifetime"
+  value: "Free (20 articles a day) — Plus from $1.99/mo, $8.99/yr, or $24.99 lifetime"
 schema_price: "0"
 schema_high_price: "24.99"
 schema_offer_count: "4"
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew. The App Store's in-app purchase list also shows a $0.99 weekly plan, kept for existing subscribers and no longer sold in the app, and an optional $1.00 tip (Support the Developer, in Settings)."
+pricing_note: "Transparent pricing on the App Store. Cancel anytime. The free plan needs no card and no account: 20 articles a day, reset at midnight."
 
 plans:
-  - name: "Free trial"
+  - name: "Free"
     price: "$0"
-    summary: "Full access for 3 days. No card, no account."
+    summary: "20 articles a day, every day. No card, no account."
     features:
-      - "All 33 Wikipedia language editions unlocked"
-      - "All three discovery modes (Random, For You, Today in History)"
-      - "Widgets, folders, offline saved articles"
+      - "Random and Browse (16 topics) — 20 articles a day, reset at local midnight"
+      - "Save, like, search, and folders"
+      - "All 32 Wikipedia language editions"
+      - "Widgets and read-aloud"
   - name: "Monthly"
     price: "$1.99/mo"
-    summary: "Full WanderWiki, billed monthly. Cancel anytime."
+    summary: "WanderWiki Plus, billed monthly. Cancel anytime."
     features:
-      - "All 33 language editions"
-      - "Random, For You, and Today in History modes"
-      - "Home Screen / Lock Screen / StandBy widgets"
-      - "Offline saved articles in folders"
+      - "For You — articles from the topics you pick"
+      - "Today in History — Wikipedia's On This Day feed"
+      - "Unlimited swiping"
+      - "Everything in Free"
   - name: "Annual"
     price: "$8.99/yr"
     summary: "Same features, billed once a year. ~62% cheaper than monthly."
     features:
       - "Everything in Monthly"
       - "~62% cheaper than monthly over a year"
+      - "Free trial for new subscribers — the paywall shows its length"
     highlight: true
   - name: "Lifetime"
     price: "$24.99 once"
-    summary: "All features. ≈ $0.61 per Wikipedia language unlocked — pay once, read forever."
+    summary: "WanderWiki Plus for good — about a year of monthly billing, paid once."
     features:
       - "Everything in Annual"
       - "One-time purchase, no renewal"
       - "Family Sharing — share with up to 5 family members at no extra cost"
       - "Future features included"
-      - "Restores on every iPhone signed in with the same Apple ID"
+      - "Restores on every iPhone and iPad signed in with the same Apple ID"
     highlight_label: "Best long-term value"
 
 icon: "/assets/icons/wanderwiki.png"
 og_image: "/assets/og/wanderwiki.png"
 
 seo:
-  title: "WanderWiki — Swipe Wikipedia in 33 Languages, Ad-Free"
-  description: "Swipe Wikipedia in 33 languages. 3 modes (Random, For You, Today in History), widgets, offline folders. Full Wikipedia, no ads. $24.99 lifetime."
+  title: "WanderWiki — Swipe Wikipedia in 32 Languages, Ad-Free"
+  description: "Swipe Wikipedia in 32 languages: Random, Browse, For You and Today in History, widgets, offline folders. No ads. Free for 20 articles a day."
   keywords:
     - swipe Wikipedia app
     - Wikipedia discovery app iPhone
-    - WikiCards alternative
+    - WikiScroll alternative
     - Wiki Rabbit alternative
     - swipe through Wikipedia
     - random Wikipedia articles app
     - Today in History app
     - Wikipedia reader iPhone no ads
     - multilingual Wikipedia app
-    - 33 Wikipedia languages
+    - 32 Wikipedia languages
     - educational discovery app iPhone
     - knowledge discovery iPhone
     - curiosity learning app
@@ -82,8 +85,8 @@ seo:
 
 hero:
   headline: "Swipe. Learn. Repeat."
-  secondary: "33 Wikipedia language editions. Three discovery modes. Zero ads, zero algorithms, zero account."
-  subheadline: "WanderWiki turns Wikipedia into a swipe-based card deck — across all 33 Wikipedia language editions (English, German, French, Japanese, Chinese, Korean, Hindi, Arabic, Finnish, and 24 more), with three modes (Random across the full encyclopedia · For You across 10 interest categories · Today in History with five subcategories from Wikipedia's official REST API), offline saved articles organised in folders, and Home Screen + Lock Screen + StandBy widgets. From $1.99/month or $24.99 lifetime. No ads. Built on Wikipedia's official REST API, attributed under CC BY-SA 4.0."
+  secondary: "32 Wikipedia language editions. Random, Browse, For You and Today in History. No ads, no account, no engagement algorithm."
+  subheadline: "WanderWiki turns Wikipedia into a swipe-based card deck on iPhone and iPad — across 32 Wikipedia language editions (English, German, French, Japanese, Chinese, Korean, Hindi, Arabic, Finnish, and 23 more), with four ways in (Random across the full encyclopedia · Browse one of 16 topics · For You across the topics you pick · Today in History with five subcategories from Wikipedia's official REST API), saved articles that download for offline reading and sort into folders, read-aloud, and five widgets. Free for 20 articles a day; WanderWiki Plus from $1.99/month or $24.99 lifetime. No ads. Built on Wikipedia's official APIs, used under CC BY-SA 4.0."
   cta_label: "Try Free"
   alt: "WanderWiki — Wikipedia article card being swiped through on iPhone, in a discovery deck"
   video: "/assets/videos/wanderwiki_preview.mov"
@@ -91,28 +94,25 @@ hero:
 
 who_for:
   - "You browse Wikipedia for fun and want discovery without searching first"
-  - "You read Wikipedia in more than one language (or want to start) — WanderWiki ships 33 language editions"
+  - "You read Wikipedia in more than one language (or want to start) — WanderWiki carries 32 language editions"
   - "You want a calm replacement for doomscrolling that doesn't sell you back to advertisers"
-  - "You loved 'Random Article' on desktop Wikipedia and want that ritual on iPhone"
-  - "You want offline saved articles organised in folders for flights, commutes, or quiet reading"
-  - "You want widgets surfacing a fresh article on your Home Screen or Lock Screen every day"
+  - "You loved 'Random Article' on desktop Wikipedia and want that ritual on iPhone or iPad"
+  - "You want saved articles that open offline, organised in folders, for flights, commutes, or quiet reading"
+  - "You want widgets that put today's history, or two articles to choose between, on your Home Screen or Lock Screen"
 
 who_not_for:
   - "You want academic-grade citations, references, and source-checking — WanderWiki is a reading deck, not a research tool"
   - "You need edit access, talk pages, or other Wikipedia editor features (use Wikipedia's official app)"
-  - "You want curated long-form magazine content (Curio, Pocket, Apple News+ fit better)"
-  - "You want a free Wikipedia swiper with no subscription — WikiCards is free and runs on iPhone, Mac, and Vision Pro (English only)"
+  - "You want curated long-form magazine content (Curio or Apple News+ fit better)"
+  - "You want a free Wikipedia feed with nothing to install — WikiTok is free, open source, and runs in any browser"
+  - "You read a Wikipedia edition outside WanderWiki's 32, such as Bengali, Persian, or Urdu"
 
 alternatives_to:
-  - "WikiCards"
-  - "Wiki Rabbit"
-  - "WikiDex"
   - "WikiScroll"
-  - "Random-Wiki-Explorer"
-  - "Wikipedia app"
-  - "Kiwix"
   - "WikiTok"
   - "Wikiwand"
+  - "Wikipedia app"
+  - "Kiwix"
 
 founder:
   entity_type: "Organization"
@@ -121,11 +121,11 @@ founder:
   location: "Finland"
   overline: "Why we built this"
   heading: "Wikipedia, the way 'Random Article' used to feel."
-  story: "WanderWiki exists because Wikipedia is the best free thing on the internet and almost nobody reads it for fun anymore. The five-minute windows that used to be 'Random Article' on desktop became doomscroll-shaped on the iPhone — algorithmic feeds optimised for time-on-app, not for the encyclopedia. We wanted Random Article — the desktop ritual where you click 'Random' and end up reading about the history of fountain pens at 11pm — back on the iPhone, built for swiping. We built the iPhone-only version (iOS 18.2+) on purpose: 33 Wikipedia language editions with per-language category mappings (pick German + Science and the app queries Wissenschaft, Physik, Chemie — not translated English categories), three discovery modes, widgets, offline saved articles in folders. The competitors we benchmarked against — WikiCards (free, English-only) and Wiki Rabbit (free with ads, Good Articles subset only) — both ship something good. We chose the paid lane so the app has no ads, no algorithm to maximise time-on-app, and no behavioral tracking. From $1.99/month or $24.99 lifetime. The maker uses it every morning."
+  story: "WanderWiki exists because Wikipedia is the best free thing on the internet and almost nobody reads it for fun anymore. The five-minute windows that used to be 'Random Article' on desktop became doomscroll-shaped on the iPhone — algorithmic feeds optimised for time-on-app, not for the encyclopedia. We wanted Random Article — the desktop ritual where you click 'Random' and end up reading about the history of fountain pens at 11pm — back on the phone, built for swiping. WanderWiki launched on iPhone in February 2026 and now runs on iPad too (iOS 18.2+): 32 Wikipedia language editions, with topics mapped to the edition's own categories in 17 of them (pick German + Science and the app queries Wissenschaft, Physik, Chemie — not translated English categories), four ways to wander, widgets, read-aloud, and saved articles that open offline in folders. The apps we benchmarked against — WikiScroll and Wiki Rabbit, both free with ads — each ship something good. We chose the paid lane so the app has no ads, no algorithm to maximise time-on-app, and no behavioral tracking. Free for 20 articles a day; WanderWiki Plus from $1.99/month or $24.99 lifetime. The maker uses it every morning."
   signals:
-    - "Built on Wikipedia's official REST API (api/rest_v1/feed/onthisday/) — not scraping, not crawling, no backend caching of full articles on a Lagerland server"
-    - "33 Wikipedia language editions supported with per-language category mappings — verified in the WanderWikiShared package's allowlist"
-    - "Privacy Manifest declares no tracking domains and no third-party SDKs — on-device SwiftData only"
+    - "Built on Wikipedia's official APIs — the REST API for articles and the On This Day feed (api/rest_v1/feed/onthisday/), the Action API for categories, search, and related pages. No scraping, no crawling, no Lagerland server caching articles"
+    - "32 Wikipedia language editions, defined once in the WanderWikiShared package that the app and its widgets share, with a unit test that keeps the two in step"
+    - "Privacy Manifest declares no tracking and no tracking domains; no third-party SDKs; reading data stays on the device in SwiftData"
     - "Funded by honest paid software — no ads, no investor pressure, no engagement-maximisation telemetry"
     - "20 live apps in the catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
@@ -135,124 +135,125 @@ founder:
   response_time: "Support emails go to one inbox and are answered personally — usually within a day."
 
 value_points:
-  - title: "33 Wikipedia language editions"
-    description: "English, German, French, Spanish, Japanese, Chinese, Korean, Italian, Portuguese, Russian, Finnish, Swedish, Dutch, Polish, Turkish, Arabic, Hindi, Vietnamese, Indonesian, Thai, Ukrainian, Czech, Danish, Norwegian (both legacy and Bokmål), Malay, Hebrew, Greek, Hungarian, Romanian, Slovak, Catalan, Croatian. WikiCards is English-only. Wiki Rabbit doesn't mention languages."
-  - title: "Three honest discovery modes"
-    description: "Random surfaces from the entire encyclopedia. For You uses your interest selections across 10 categories — preference, not behavioral tracking. Today in History pulls Wikipedia's official On This Day feed (5 subcategories: Selected, Events, Births, Deaths, Holidays)."
-  - title: "Widgets, folders, and offline reading"
-    description: "Home Screen, Lock Screen, and StandBy widgets surface a fresh article every day. Save any article, organise into folders, read offline. The reading list builds with you across weeks and months."
+  - title: "32 Wikipedia language editions"
+    description: "English, German, French, Spanish, Japanese, Chinese, Korean, Italian, Portuguese, Russian, Finnish, Swedish, Dutch, Polish, Turkish, Arabic, Hindi, Vietnamese, Indonesian, Thai, Ukrainian, Czech, Danish, Norwegian (Bokmål), Malay, Hebrew, Greek, Hungarian, Romanian, Slovak, Catalan, Croatian. In the first 17, topics map to the edition's own categories; in the rest, For You and Browse fall back to random articles from that edition, and the app tells you. WikiScroll lets you pick a reading language but doesn't say how many; Wiki Rabbit's listing is English-only."
+  - title: "Four honest ways to wander"
+    description: "Random surfaces from the entire encyclopedia. Browse drops you into one of 16 topics. For You blends the topics you choose — preference, not behavioral tracking. Today in History pulls Wikipedia's official On This Day feed (5 subcategories: Selected, Events, Births, Deaths, Holidays). Random and Browse are free; For You and Today in History come with WanderWiki Plus."
+  - title: "Widgets, folders, offline reading, read-aloud"
+    description: "Five widgets — On This Day, Reading Year, Continue Reading, Got a Minute, and Two Doors — most in Lock Screen sizes too, plus Surprise Me and Continue Reading controls for Control Center. Save any article and its full text downloads for offline reading; sort saves into folders; tap Listen to have it read aloud."
   - title: "No ads, no algorithm, no account"
-    description: "Wiki Rabbit ships banner ads on its free tier. WikiCards is free but English-only. WanderWiki charges from $1.99/month or $24.99 lifetime so the app has no commercial incentive to maximise your screen time. No account. No behavioral tracking."
-  - title: "$24.99 lifetime ≈ $0.76 per Wikipedia language unlocked"
-    description: "33 Wikipedia language editions, one-time price, no subscription. Zero competitors offer multi-language Wikipedia in a swipe-card app — WikiCards is free but English-only; Wiki Rabbit is free with ads, English-only, and capped at the Good Articles subset; Wikipedia's official app has all ~300 editions but is built for search, not swipe."
+    description: "WikiScroll and Wiki Rabbit both show ads. WanderWiki is free for 20 articles a day and charges from $1.99/month or $24.99 lifetime for Plus, so the app has no commercial incentive to maximise your screen time. No account. No behavioral tracking."
+  - title: "$24.99 once — about a year of monthly billing"
+    description: "WanderWiki Plus is $1.99/month, $8.99/year, or $24.99 once with Family Sharing, and the free tier already covers all 32 editions. Wikipedia's official app carries all 300+ editions but is built for search, not swipe; WikiTok's free web feed covers 41 editions but has no app, topics, or offline saves."
 
 how_it_works:
-  intro: "WanderWiki is a Wikipedia card-deck on iPhone (iOS 18.2+). The data source is Wikipedia's official REST API; everything else runs locally in SwiftData. Here's how a session moves through it."
+  intro: "WanderWiki is a Wikipedia card deck on iPhone and iPad (iOS 18.2+). The data comes from Wikipedia's official APIs; everything you do with it stays on the device in SwiftData. Here's how a session moves through it."
   steps:
-    - title: "Pick your Wikipedia language (one of 33)"
-      detail: "On first launch, choose your preferred Wikipedia edition: English, German, French, Spanish, Japanese, Chinese, Korean, Hindi, Arabic, Finnish — or any of 24 others. The choice is honoured everywhere: Random pulls from that edition, For You uses native-language category names for that edition (German Science queries Wissenschaft, Physik, Chemie — not translated English categories), Today in History queries that edition's On This Day feed. Switch any time."
-    - title: "Pick interests across 10 categories (For You only)"
-      detail: "Ten interest categories ship in WanderWiki: Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography. Each maps to ~8–12 Wikipedia categories per language for high-yield article queries. For You blends articles from the categories you pick. Skip this step entirely if you only want Random and Today in History."
+    - title: "Pick your Wikipedia language (one of 32)"
+      detail: "WanderWiki starts on English Wikipedia; switch to any of the other 31 editions in Settings — German, French, Spanish, Japanese, Chinese, Korean, Hindi, Arabic, Finnish, and more. The choice is honoured everywhere: Random pulls from that edition; in the 17 editions with mapped categories, For You and Browse query that edition's own category names (German Science queries Wissenschaft, Physik, Chemie — not translated English categories); Today in History uses the edition's own On This Day feed where Wikipedia publishes one (19 of the 32) and the English feed otherwise. Switch any time."
+    - title: "Pick interests across 16 topics"
+      detail: "Sixteen topics ship in WanderWiki: Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography, Literature, Movies, Food, Architecture, Mathematics, Politics. Each maps to a hand-picked list of Wikipedia categories — around 50 in English, about a dozen in each of the other 16 mapped editions. For You blends the topics you pick; Browse lets you dive into one."
     - title: "Open the deck and swipe"
-      detail: "Swipe up or tap to advance. Three modes accessible from the deck UI: Random (full Wikipedia, surprise me), For You (interests you picked), Today in History (Wikipedia's official feed for the current date). Each card is a Wikipedia article reformatted for mobile reading — no sidebar links, no infobox clutter, no rabbit-hole bait."
+      detail: "Swipe up for the next card; tap a card to open the article. Switch between Random, For You, and Today in History at the top of the feed, or open Browse for a single topic. Each card shows the article's lead image, title, and opening lines. When an article pulls you in, Where Next offers three related articles to follow."
     - title: "Tap to read the full article, calm-formatted"
-      detail: "Articles open in a reading view stripped of Wikipedia's visual noise — the original text, properly typeset for an iPhone screen, with attribution back to the source Wikipedia article (the CC BY-SA 4.0 license requires this; we do it inline, not buried in settings)."
+      detail: "Articles open in a reader built on Wikipedia's mobile HTML with the clutter hidden — no edit pencils, infoboxes, navboxes, or reference lists. Pick one of four reader themes (System, Sepia, Solarized, True Black); the reader remembers where you stopped and shows the reading time. Tap Listen to hear the article read aloud. Open in Wikipedia is one tap away in the toolbar, and the CC BY-SA 4.0 content license is linked in Settings."
     - title: "Save for offline, organise in folders"
-      detail: "Save any article with one tap. Saved articles cache for offline reading — flights, subway tunnels, that one corner of the cabin. Organise saved articles into folders by topic, project, or whatever shape your curiosity has this month."
-    - title: "Like/dislike to refine For You (optional, on-device)"
-      detail: "Tap like or dislike on an article and For You learns from those signals. This is the only adaptive surface in WanderWiki — driven by signals you give explicitly, stored on-device in SwiftData, never sent anywhere. Skip it entirely if you want pure Random."
+      detail: "Save any article with one tap and WanderWiki downloads its full text, so it opens without a connection — flights, subway tunnels, that one corner of the cabin. Organise saved articles into folders by topic, project, or whatever shape your curiosity has this month. Saved articles also show up in Spotlight search."
+    - title: "Like what you love, hide what you don't (on-device)"
+      detail: "Likes collect in your Liked list. 'Show less like this' or 'Hide this article' keeps that article out of your Where Next suggestions. For You itself follows only the topics you picked — nothing is inferred from what you like, skip, or linger on, and none of these signals leave your device."
     - title: "Today in History as a daily ritual"
-      detail: "WanderWiki queries Wikipedia's REST API endpoint /api/rest_v1/feed/onthisday/<category>/<MM>/<DD> for the five canonical Wikipedia On This Day categories: Selected, Events, Births, Deaths, Holidays. The widget surfaces a fresh selection every day. A small daily ritual that makes any morning more interesting."
+      detail: "WanderWiki queries Wikipedia's REST API endpoint /api/rest_v1/feed/onthisday/<category>/<MM>/<DD> for the five canonical Wikipedia On This Day categories: Selected, Events, Births, Deaths, Holidays. In the app it's part of WanderWiki Plus; the On This Day widget brings the day's moments, with photographs, to your Home Screen. A small daily ritual that makes any morning more interesting."
     - title: "Widgets do the surfacing for you"
-      detail: "Home Screen, Lock Screen, and StandBy widgets show a fresh article (or Today-in-History event) without opening the app. Tap to open the article in the deck. The widget allowlist is shared with the main app via the WanderWikiShared package — language consistency is enforced in CI so your widget never silently falls back to English."
+      detail: "Five widgets: On This Day; Reading Year (your streak and every day you finished an article); Continue Reading (the articles you're partway through); Got a Minute (pick 2, 5, 10, or 20 minutes and it picks one of your articles that fits); and Two Doors (one article close to your interests, one far outside them). Most come in Lock Screen sizes. Surprise Me and Continue Reading are also controls for Control Center, the Lock Screen, and the Action button. The widgets read the same language list as the app, from the shared WanderWikiShared package."
 
 features:
-  - title: "33 Wikipedia language editions, with native-language category queries"
-    description: "WanderWiki ships every major Wikipedia language edition — English, German, French, Spanish, Japanese, Chinese, Korean, Italian, Portuguese, Russian, Finnish, Swedish, Dutch, Polish, Turkish, Arabic, Hindi, Vietnamese, Indonesian, Thai, Ukrainian, Czech, Danish, Norwegian (legacy + Bokmål), Malay, Hebrew, Greek, Hungarian, Romanian, Slovak, Catalan, Croatian. Each interest category maps to ~8–12 native-language Wikipedia categories. Pick German + Science and the app queries Wissenschaft, Physik, Chemie, Biologie — not translated English category names. WikiCards is English-only; Wiki Rabbit's language coverage isn't published."
+  - title: "32 Wikipedia language editions, with native-language category queries in 17"
+    description: "WanderWiki reads English, German, French, Spanish, Japanese, Chinese, Korean, Italian, Portuguese, Russian, Finnish, Swedish, Dutch, Polish, Turkish, Arabic, Hindi, Vietnamese, Indonesian, Thai, Ukrainian, Czech, Danish, Norwegian (Bokmål), Malay, Hebrew, Greek, Hungarian, Romanian, Slovak, Catalan, and Croatian Wikipedia. In the first 17, each topic maps to that edition's own categories: pick German + Science and the app queries Wissenschaft, Physik, Chemie, Biologie — not translated English category names. In the other 15, For You and Browse fall back to random articles from the edition you chose. WikiScroll doesn't publish its language count; Wiki Rabbit's listing is English-only."
   - title: "Random: the whole encyclopedia, not a curated subset"
-    description: "One swipe, one surprise — pulled from your selected Wikipedia edition's full article corpus. Wiki Rabbit limits its random surface to the 'Good Articles' subset (~38,000 articles). WanderWiki surfaces from the full encyclopedia (~7 million articles in English alone)."
-  - title: "For You: 10 interest categories, preference-driven (not behavioral)"
-    description: "Pick interests across ten categories: Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography. WanderWiki blends articles from the Wikipedia categories you opted into, with optional like/dislike refinement that stays on-device. It is not a recommendation algorithm trained on your dwell time, scroll velocity, or behavioral profile — it is preference-driven discovery."
+    description: "One swipe, one surprise — pulled from your selected Wikipedia edition through Wikipedia's random-article endpoint. The app skips disambiguation pages, lists, and stubs too short to summarise. Wiki Rabbit draws only from Wikipedia's Good Articles collection; WanderWiki surfaces from the full encyclopedia (~7 million articles in English alone)."
+  - title: "Browse and For You: 16 topics, chosen by you"
+    description: "Browse drops you into one topic — free, within the daily 20. For You (WanderWiki Plus) blends the topics you pick: Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography, Literature, Movies, Food, Architecture, Mathematics, Politics. It is not a recommendation algorithm trained on your dwell time, scroll velocity, likes, or behavioral profile — it follows the topics you chose and nothing else."
   - title: "Today in History — Wikipedia's official On This Day feed, five categories"
-    description: "Powered by <a href=\"https://en.wikipedia.org/api/rest_v1/#/Feed/onThisDay\" rel=\"noopener\" target=\"_blank\">Wikipedia's official REST API</a> endpoint <code>/api/rest_v1/feed/onthisday/&lt;category&gt;/&lt;MM&gt;/&lt;DD&gt;</code>. Five canonical categories: Selected (curated highlights), Events, Births, Deaths, Holidays. Updates daily; runs in the widget; surfaces in the deck. A small daily ritual that makes any morning more interesting."
-  - title: "Widgets, folders, offline reading"
-    description: "Home Screen, Lock Screen, and StandBy widgets surface a fresh article without opening the app. Save any article with one tap; cached articles read offline (flights, transit tunnels, anywhere off-grid). Organise saved articles into folders. The reading list builds with you over months."
-  - title: "Calm formatting, attribution back to Wikipedia"
-    description: "Articles are reformatted for the iPhone reading surface — original Wikipedia text, properly typeset, no sidebar clutter, no infobox sprawl, no auto-played media. <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" rel=\"noopener\" target=\"_blank\">CC BY-SA 4.0</a> attribution links back to the source article inline (not buried in settings) — the license requires it; we wanted to anyway."
-  - title: "Built on Wikipedia's official REST API — no scraping, no backend"
-    description: "Articles, summaries, and On This Day feeds all come from <a href=\"https://en.wikipedia.org/api/rest_v1/\" rel=\"noopener\" target=\"_blank\">Wikipedia's official REST API</a>. No scraping, no crawl, no Lagerland server caching your reading. Likes, dislikes, saved articles, folders, and weekly stats all live in SwiftData on your iPhone."
+    description: "Powered by <a href=\"https://en.wikipedia.org/api/rest_v1/#/Feed/onThisDay\" rel=\"noopener\" target=\"_blank\">Wikipedia's official REST API</a> endpoint <code>/api/rest_v1/feed/onthisday/&lt;category&gt;/&lt;MM&gt;/&lt;DD&gt;</code>. Five canonical categories: Selected (curated highlights), Events, Births, Deaths, Holidays. In your edition's own language where Wikipedia publishes the feed (19 of the 32 editions), in English otherwise. Part of WanderWiki Plus in the app; the On This Day widget works on every tier."
+  - title: "Five widgets and two controls"
+    description: "On This Day, Reading Year, Continue Reading, Got a Minute, and Two Doors, with Lock Screen sizes for most of them and full-page layouts on iOS 27. Surprise Me and Continue Reading also work as controls in Control Center, on the Lock Screen, and on the Action button."
+  - title: "Saved articles offline, in folders — and read aloud"
+    description: "Save any article with one tap; its full text downloads so it reads offline (flights, transit tunnels, anywhere off-grid). Organise saved articles into folders, find them from Spotlight, and pick up where you stopped — the reader remembers your place. Listen mode reads any article aloud, with play and pause on the Lock Screen."
+  - title: "Calm formatting, linked back to Wikipedia"
+    description: "Articles are reformatted for the phone and tablet reading surface — original Wikipedia text, properly typeset, with no sidebar clutter, no infobox sprawl, no auto-played media, and four reader themes. Open in Wikipedia is one tap away in the reader, shared images credit Wikipedia, and the <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" rel=\"noopener\" target=\"_blank\">CC BY-SA 4.0</a> content license is linked in Settings."
+  - title: "Search, Where Next, Siri, and on-device summaries"
+    description: "Search the Wikipedia edition you read. Where Next offers three related articles when you want to keep going. Siri and the Shortcuts app can open a surprise article, today's history, or one of your topics. On iPhones and iPads with Apple Intelligence (iOS 26+), cards can show a one-line summary generated on the device."
+  - title: "A reading streak and one daily reminder"
+    description: "WanderWiki counts the days in a row you discover a new article, on your Profile and in the Reading Year widget. If you allow notifications — it asks the first time you save an article — it sends one reminder a day, at 9:00 unless you change it, usually naming one of the day's On This Day picks. Change the time, set quiet hours, or turn it off in Settings."
+  - title: "Built on Wikipedia's official APIs — no scraping, no backend"
+    description: "Articles, summaries, categories, search, and On This Day feeds all come from <a href=\"https://en.wikipedia.org/api/rest_v1/\" rel=\"noopener\" target=\"_blank\">Wikipedia's official REST API</a> and its Action API, and images from Wikimedia's image server. No scraping, no crawl, no Lagerland server caching your reading. Likes, saved articles, folders, reading progress, your streak, and weekly stats all live in SwiftData on your device."
 
 screenshots:
   - src: "/assets/screenshots/wanderwiki/1.png"
-    alt: "WanderWiki — a Wikipedia article card being swiped through on iPhone, in the Random discovery deck"
+    alt: "WanderWiki — a Today in History card for NASA (1961) on iPhone, with like, save, and share buttons beside it"
   - src: "/assets/screenshots/wanderwiki/3.png"
-    alt: "WanderWiki — For You discovery mode on iPhone with 10 interest categories: Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography"
+    alt: "WanderWiki — the Doug Williams (quarterback) article open in Wikipedia's mobile site inside the app"
   - src: "/assets/screenshots/wanderwiki/5.png"
-    alt: "WanderWiki — Today in History mode on iPhone showing events, births, and deaths from the current date via Wikipedia's official On This Day feed"
+    alt: "WanderWiki — Profile screen with the Music interest selected and tabs for liked and saved articles"
   - src: "/assets/screenshots/wanderwiki/4.png"
-    alt: "WanderWiki — full Wikipedia article reading view on iPhone with calm typography and attribution back to the source under CC BY-SA 4.0"
+    alt: "WanderWiki — a Random card for John de Grey, 1st Baron Grey de Rotherfield, with like, save, and share buttons"
 
 comparison_table:
-  intro: "Each column below is a question a curious Wikipedia reader actually asks when picking a swipe-Wikipedia app. WikiCards is the closest free competitor; Wiki Rabbit ships ads on its free tier; Wikipedia's official app is the encyclopedia itself."
-  competitors: ["WanderWiki", "WikiCards", "Wiki Rabbit", "Wikipedia (official)"]
+  intro: "Each row below is a question a curious Wikipedia reader actually asks when picking a swipe-Wikipedia app. WikiScroll is the closest native rival and runs on ads; Wiki Rabbit is free with ads and draws only from Good Articles; Wikipedia's official app is the encyclopedia itself."
+  competitors: ["WanderWiki", "WikiScroll", "Wiki Rabbit", "Wikipedia (official)"]
   rows:
     - feature: "Number of Wikipedia language editions"
-      values: ["33 — with native-language category queries", "1 — English only", "Not published", "All 300+ — but built for search, not swipe"]
+      values: ["32 — 17 with native-language category queries", "Multiple; count not published", "Not published; English-only listing", "All 300+ — but built for search, not swipe"]
     - feature: "Pricing model"
-      values: ["$1.99/mo · $8.99/yr · $24.99 lifetime (3-day trial)", "Free, no IAPs", "Free with banner ads", "Free, no ads"]
+      values: ["Free for 20 articles a day; Plus $1.99/mo · $8.99/yr · $24.99 lifetime", "Free with ads; premium from $4.99/week", "Free with ads", "Free, no ads"]
     - feature: "Source article scope"
-      values: ["Full Wikipedia (~7M articles in en alone)", "Full Wikipedia", "Good Articles subset only (~38K articles)", "Full Wikipedia"]
-    - feature: "Today in History (Wikipedia's official On This Day feed)"
-      values: ["Yes — all 5 categories (Selected · Events · Births · Deaths · Holidays)", "No", "No", "Yes — buried in Explore feed"]
-    - feature: "Interest-based discovery (For You)"
-      values: ["Yes — 10 interest categories, preference-driven, on-device like/dislike", "No — random only", "Yes — 'Session For You' (session-scoped personalisation)", "Limited — Explore feed"]
-    - feature: "Home Screen / Lock Screen / StandBy widgets"
-      values: ["Yes — language-allowlist enforced in CI", "No", "No", "Limited"]
-    - feature: "Multi-language widget (shows your chosen Wikipedia edition)"
-      values: ["Yes — widget honors your chosen Wikipedia edition (any of 33)", "No — English-only", "No", "No — Wikipedia's design team has wanted per-widget language since 2021"]
+      values: ["Full Wikipedia (~7M articles in en alone)", "Random Wikipedia articles", "Good Articles collection only", "Full Wikipedia"]
+    - feature: "Today in History (this day in the past)"
+      values: ["Yes — all 5 On This Day categories (Plus)", "Yes — Timeline Mode", "No", "Yes — in the Explore feed"]
+    - feature: "Interest-based discovery"
+      values: ["Yes — 16 topics you pick; Browse one topic free", "Yes — personalised feed from topics you choose", "Yes — 'Session For You', adapts to what you open, skip, and linger on", "Limited — Explore feed"]
+    - feature: "Widgets"
+      values: ["Yes — 5 widgets, Lock Screen sizes, Control Center controls", "Yes — Home Screen", "No", "Yes"]
     - feature: "Picture of the Day support"
-      values: ["No — out of scope (use Wikipedia's official app)", "No", "No", "Yes — in Explore feed and widget"]
+      values: ["No — out of scope (use Wikipedia's official app)", "Not listed", "No", "Yes — in Explore feed and widget"]
     - feature: "Offline saved articles + folders"
-      values: ["Yes — folders organise the reading list", "Bookmarks only", "Bookmarks only", "Yes — reading list"]
+      values: ["Yes — full text offline, sorted into folders", "Save for later; offline not listed", "Bookmarks only", "Yes — reading lists"]
     - feature: "Behavioral tracking / engagement-optimised algorithm"
-      values: ["No — preference and explicit like/dislike only, on-device", "No", "Session-scoped personalisation (resets each session)", "No — official app, no ads"]
+      values: ["No — For You follows only the topics you pick; App Store label: Data Not Collected", "App Store label: Data Used to Track You", "Session-scoped personalisation (resets each session)", "No — official app, no ads"]
     - feature: "Platforms"
-      values: ["iPhone (iOS 18.2+)", "iPhone + Mac (M1+) + Vision Pro", "iPhone (iOS 17.6+)", "iPhone, iPad, Mac, Web"]
-    - feature: "Age rating"
-      values: ["4+", "18+", "4+", "4+"]
-    - feature: "Attribution to source Wikipedia article (CC BY-SA 4.0)"
-      values: ["Yes — inline on every card", "Yes", "Yes", "Native — it's Wikipedia"]
-  footnote: "Competitor pricing and features reflect each app's public App Store page as of 2026-05-13. WikiCards is genuinely free with no in-app purchases; Wiki Rabbit shows banner ads on its free tier; Wikipedia's official app is free, ad-free, and built and operated by the Wikimedia Foundation. Apps change frequently — verify before switching. WanderWiki is independent and is not affiliated with or endorsed by the Wikimedia Foundation; Wikipedia content is used under the Creative Commons Attribution-ShareAlike 4.0 license."
+      values: ["iPhone and iPad (iOS 18.2+); Apple-silicon Mac and Vision Pro via the iPad app", "iPhone (iOS 15+)", "iPhone (iOS 17.6+)", "iPhone, iPad, Mac, Web"]
+  footnote: "Competitor pricing and features reflect each app's public App Store page as of 2026-10-25. WikiScroll shows ads and sells premium options in the app; Wiki Rabbit is free and shows ads; Wikipedia's official app is free, ad-free, and built and operated by the Wikimedia Foundation. Apps change frequently — verify before switching. WanderWiki is independent and is not affiliated with or endorsed by the Wikimedia Foundation; Wikipedia content is used under the Creative Commons Attribution-ShareAlike 4.0 license."
 
 plateau_disclosure:
   title: "What WanderWiki won't do for you"
-  rule: "WanderWiki is a Wikipedia reading deck for iPhone. It is deliberately not a research tool, not a Wikipedia editor, and not a multi-platform app. The trade-offs are what keep it ad-free, on-device, and focused."
-  what_it_does_not_do: "WanderWiki will not give you Wikipedia edit access, talk pages, or watchlists — use Wikipedia's official app for that. It will not run on iPad, Mac, or Vision Pro — it is iPhone-only (iOS 18.2+) by design; WikiCards is the cross-Apple-platform alternative. It will not auto-translate articles into a language they aren't already published in — translation is a Wikipedia decision, not an app decision. It will not provide academic-grade citation management. It will not run a recommendation algorithm trained on your behavior — For You is preference-driven, with optional like/dislike signals stored on-device. It will not show banner ads on any tier."
+  rule: "WanderWiki is a Wikipedia reading deck for iPhone and iPad. It is deliberately not a research tool and not a Wikipedia editor. The trade-offs are what keep it ad-free, on-device, and focused."
+  what_it_does_not_do: "WanderWiki will not give you Wikipedia edit access, talk pages, or watchlists — use Wikipedia's official app for that. It has no web or desktop version; the App Store also offers it on Apple-silicon Macs and Apple Vision Pro, where the iPad app runs as is. It will not auto-translate articles into a language they aren't already published in — translation is a Wikipedia decision, not an app decision. It reads 32 editions of roughly 340, maps topics to native categories in 17 of them, and gets Today in History in the edition's own language in 19 (English otherwise). It hides reference lists in the reader and offers no citation management. It does not sync between devices yet; saved articles stay on the device that saved them. It will not run a recommendation algorithm trained on your behavior — For You follows the topics you pick. It will not show banner ads on any tier."
   notes:
-    - "Want a free swipe-Wikipedia app on Mac or Vision Pro? WikiCards is the option — English only, but free and multi-platform."
+    - "Want a free Wikipedia feed on a laptop, or in any browser? WikiTok runs at wikitok.io — free, open source, in 41 editions."
     - "Want article-level explanations of why each article was chosen? Wiki Rabbit ships that today, on a free-with-ads tier."
     - "Want Wikipedia editor tools (edit, talk, watchlist, contributions)? Wikipedia's official app is built for that."
     - "Want Picture of the Day or trending articles? Wikipedia's official app surfaces both in its Explore feed and widget — WanderWiki focuses on swipeable article discovery instead."
-    - "Want long-form curated magazine content? Curio (audio articles), Apple News+, and Pocket fit better."
+    - "Want long-form curated magazine content? Curio (audio articles) and Apple News+ fit better."
 
 training_vocabulary:
-  overline: "Speaks Wikipedia's language — in 33 of them"
-  heading: "The 33 Wikipedia editions, 10 interests, and 5 On This Day categories."
-  intro: "WanderWiki ships every major Wikipedia language edition with native-language category queries, ten interest categories with per-language mappings, and the five canonical On This Day categories from Wikipedia's official REST API."
+  overline: "Speaks Wikipedia's language — in 32 of them"
+  heading: "The 32 Wikipedia editions, 16 topics, and 5 On This Day categories."
+  intro: "WanderWiki reads 32 Wikipedia language editions, sixteen interest topics with native-language category queries in 17 of those editions, and the five canonical On This Day categories from Wikipedia's official REST API."
   groups:
-    - heading: "33 Wikipedia language editions"
+    - heading: "32 Wikipedia language editions"
       items:
-        - "European (Latin script): en, de, fr, es, it, pt, nl, pl, fi, sv, da, no, nb, cs, sk, hu, ro, hr, ca, tr"
+        - "European (Latin script): en, de, fr, es, it, pt, nl, pl, fi, sv, da, no (Bokmål), cs, sk, hu, ro, hr, ca, tr"
         - "European (non-Latin script): ru, uk, el, he"
         - "Asian: ja, zh, ko, hi, vi, id, th, ms"
         - "Middle Eastern: ar"
-    - heading: "10 'For You' interest categories"
+        - "Native category lists for For You and Browse: en, de, fr, es, it, pt, nl, pl, fi, sv, tr, ru, ja, zh, ko, hi, ar"
+    - heading: "16 interest topics"
       items:
-        - "Science · Technology · History"
-        - "Arts · Music · Sports"
-        - "Nature · Space"
-        - "Philosophy · Geography"
-        - "Each maps to ~8–12 native-language Wikipedia categories per supported edition"
+        - "Science · Technology · History · Arts"
+        - "Music · Sports · Nature · Space"
+        - "Philosophy · Geography · Literature · Movies"
+        - "Food · Architecture · Mathematics · Politics"
+        - "Each maps to around 50 Wikipedia categories in English and about a dozen in each of the other 16 mapped editions"
     - heading: "5 Today-in-History categories"
       items:
         - "Selected — Wikipedia's curated highlights for the date"
@@ -260,31 +261,33 @@ training_vocabulary:
         - "Births — notable people born on this date"
         - "Deaths — notable people who died on this date"
         - "Holidays — holidays observed on this date"
+        - "Edition's own feed in 19 editions (en, de, fr, es, it, pt, nl, pl, fi, sv, tr, ru, uk, cs, ja, zh, ko, hi, ar); English elsewhere"
     - heading: "Architecture & data sources"
       items:
-        - "Wikipedia REST API: /api/rest_v1/page/summary, /feed/onthisday/&lt;category&gt;/&lt;MM&gt;/&lt;DD&gt;"
-        - "SwiftUI + SwiftData + StoreKit 2"
-        - "Widget extension with CI-enforced language allowlist parity"
-        - "Content licensed CC BY-SA 4.0; attribution surfaced inline on each card"
-        - "Privacy Manifest declares zero tracking domains, no third-party SDKs"
+        - "Wikipedia REST API: /page/random/summary, /page/summary, /page/mobile-html, /feed/onthisday/&lt;category&gt;/&lt;MM&gt;/&lt;DD&gt;"
+        - "Wikipedia Action API: category members, search, related pages"
+        - "SwiftUI + SwiftData + StoreKit 2 + WidgetKit + App Intents"
+        - "App and widget extension share one language list (WanderWikiShared), checked by a unit test"
+        - "Content licensed CC BY-SA 4.0; license linked in Settings, Open in Wikipedia in the reader"
+        - "Privacy Manifest declares no tracking and zero tracking domains; no third-party SDKs"
 
 example_insights:
   overline: "What a Today-in-History card looks like"
   heading: "Real Wikipedia outputs, in plain English."
-  intro: "Today in History pulls Wikipedia's official On This Day feed — the same data Wikipedia surfaces on its own homepage and via /api/rest_v1/feed/onthisday/. These are the kinds of cards the deck surfaces, every day, in 33 languages."
+  intro: "Today in History pulls Wikipedia's official On This Day feed — the same data Wikipedia surfaces on its own homepage and via /api/rest_v1/feed/onthisday/. These are the kinds of cards the deck surfaces every day, in your edition's own language in 19 editions and in English elsewhere."
   cards:
     - tag: "May 13 · Birth"
-      headline: "Stevie Wonder turns 76 today."
-      body: "Born 1950 in Saginaw, Michigan, Stevie Wonder signed to Motown at 11, won 25 Grammys, and made Songs in the Key of Life. Today in History (Births) surfaces him alongside other May 13 birthdays — Sigourney Weaver (1949), Sebastian Maniscalco (1973), and Iván Hurtado (1974)."
+      headline: "Stevie Wonder was born on May 13, 1950."
+      body: "Born in Saginaw, Michigan, Stevie Wonder signed to Motown at 11, won 25 Grammys, and made Songs in the Key of Life. Today in History (Births) surfaces him alongside other May 13 birthdays in Wikipedia's feed — Daphne du Maurier (1907), Bea Arthur (1922), and Robert Pattinson (1986)."
     - tag: "May 13 · Event"
-      headline: "Mexico declared war on the United States — May 13, 1846."
-      body: "The Mexican–American War begins. WanderWiki's Today in History (Events) surfaces this alongside other May 13 firsts: the first photograph of a person (1841, by Robert Cornelius), the launch of Star Trek: Voyager (1995, UPN's flagship), and the founding of Jamestown (1607)."
+      headline: "The United States declared war on Mexico — May 13, 1846."
+      body: "The Mexican–American War begins, after the US annexation of Texas. WanderWiki's Today in History (Events) surfaces it alongside other May 13 entries: Brazil's Golden Law abolishing slavery (1888), the first Formula One World Championship race at Silverstone (1950), and Alison Hargreaves becoming the first woman to climb Everest without bottled oxygen or Sherpa support (1995)."
     - tag: "For You · Science"
-      headline: "Pick Science in German — get Wissenschaft, not 'Wissenschaft'."
-      body: "When you switch WanderWiki to the German Wikipedia edition and pick Science as a For You interest, the app queries the actual German category tree — Wissenschaft, Naturwissenschaft, Physik, Chemie, Biologie, Astronomie, Geowissenschaft, Medizin — not a machine translation of English category names. That's why For You returns genuinely native-feeling German articles instead of low-quality machine-translated stubs."
+      headline: "Pick Science in German — get Wissenschaft, not 'Science'."
+      body: "When you switch WanderWiki to the German Wikipedia edition and pick Science as an interest, the app queries the German category tree — Wissenschaft, Naturwissenschaft, Physik, Chemie, Biologie, Astronomie, Geowissenschaft, Medizin — rather than English category names. That's why For You and Browse return articles German editors filed under their own categories. It works this way in 17 editions; in the other 15, those modes fall back to random articles from the edition you chose."
     - tag: "Folders · Habit"
       headline: "A 'flights' folder grows every week without any effort."
-      body: "Save articles for offline as you encounter them, organise them into folders (e.g., 'flights', 'before-bed', 'philosophy'). The flights folder becomes a no-WiFi reading list for the next trip; the before-bed folder becomes a calm wind-down ritual. The widget refreshes daily but the folders persist."
+      body: "Save articles as you encounter them — their full text downloads for offline reading — and organise them into folders (e.g., 'flights', 'before-bed', 'philosophy'). The flights folder becomes a no-WiFi reading list for the next trip; the before-bed folder becomes a calm wind-down ritual. The widgets refresh daily but the folders persist."
 
 privacy:
   data_collection: "none"
@@ -293,38 +296,41 @@ privacy:
   notes:
     - "No ads on any tier, no third-party trackers, no analytics SDKs"
     - "No account or sign-up required"
-    - "No backend caching of full articles — articles fetched live from Wikipedia's official REST API"
-    - "Saved articles, folders, likes, dislikes, and weekly stats stored locally in SwiftData on your iPhone"
-    - "Wikipedia content used under <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" rel=\"noopener\" target=\"_blank\">Creative Commons CC BY-SA 4.0</a> license; attribution to the source article surfaced inline on every card"
+    - "No WanderWiki server — articles come straight from Wikipedia's official APIs, and saved articles download to your device"
+    - "Saved articles, folders, likes, hidden articles, reading progress, your streak, and weekly stats stored locally in SwiftData on your device"
+    - "On-device Apple Intelligence summaries, where available, are generated on the device and never sent anywhere"
+    - "Wikipedia content used under the <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" rel=\"noopener\" target=\"_blank\">Creative Commons CC BY-SA 4.0</a> license; the license is linked in Settings and every article opens in Wikipedia from the reader"
     - "See the per-app <a href=\"/transparency/#wanderwiki\">Privacy Manifest</a> for the declared API usage and tracking-domain list (it's empty)"
 
 faq:
   - q: "What is WanderWiki?"
-    a: "WanderWiki is a Wikipedia discovery app for iPhone (iOS 18.2+). It turns the encyclopedia into a swipe-based card deck with three modes — Random across the full encyclopedia, For You across 10 interest categories, and Today in History with 5 subcategories from Wikipedia's official REST API — across 33 Wikipedia language editions with native-language category queries. Home Screen, Lock Screen, and StandBy widgets included. Free 3-day trial, then $1.99/month, $8.99/year, or $24.99 lifetime. No ads, no behavioral tracking, no account."
-  - q: "How is WanderWiki different from WikiCards?"
-    a: "WikiCards is a free swipe-Wikipedia app that runs on iPhone, Mac, and Vision Pro — English only, random articles only, 18+ age rating. WanderWiki is iPhone-only (iOS 18.2+) and paid (from $1.99/month or $24.99 lifetime). What WanderWiki adds: 33 Wikipedia language editions with native-language category queries (German Science queries Wissenschaft, Physik, Chemie — not translated English categories), three discovery modes (Random + For You by interest + Today in History from Wikipedia's official On This Day feed), Home Screen + Lock Screen + StandBy widgets, offline saved articles organised in folders, and a 4+ age rating. If you want free and multi-Apple-platform English-only, pick WikiCards. If you read Wikipedia in multiple languages, want Today in History as a daily ritual, or want widgets and folders, pick WanderWiki."
+    a: "WanderWiki is a Wikipedia discovery app for iPhone and iPad (iOS 18.2+). It turns the encyclopedia into a swipe-based card deck with four ways in — Random across the full encyclopedia, Browse for one of 16 topics, For You across the topics you pick, and Today in History with 5 subcategories from Wikipedia's official REST API — across 32 Wikipedia language editions, 17 of them with native-language category queries. Saved articles open offline in folders, articles can be read aloud, and five widgets cover On This Day, Continue Reading, and more. Free for 20 articles a day; WanderWiki Plus adds For You, Today in History, and unlimited swiping for $1.99/month, $8.99/year, or $24.99 lifetime. No ads, no behavioral tracking, no account."
+  - q: "How is WanderWiki different from WikiScroll?"
+    a: "The feeds are close: both swipe through random Wikipedia articles, both have a this-day-in-history mode, topic picks, saves, and widgets. WikiScroll is free with ads, sells premium in the app, and its App Store privacy label says data may be used to track you; it runs on iPhones back to iOS 15. WanderWiki has no ads and an App Store label of Data Not Collected; it is free for 20 articles a day, with WanderWiki Plus from $1.99/month or $24.99 lifetime. WanderWiki adds saved articles that open offline, folders, read-aloud, and a published list of 32 Wikipedia editions, and runs on iPhone and iPad from iOS 18.2. The full comparison is on the WikiScroll alternative page."
   - q: "How is WanderWiki different from Wiki Rabbit?"
-    a: "Wiki Rabbit ships banner ads on its free tier and limits its random surface to Wikipedia's curated 'Good Articles' subset (~38,000 articles). WanderWiki has no ads at any tier and surfaces from full Wikipedia (~7 million articles in English alone, across 33 language editions). Wiki Rabbit offers session-scoped personalisation and a 'rabbit-hole trail' showing browsing history; WanderWiki uses your explicit interest selections (10 categories) and optional on-device like/dislike signals — not behavioural tracking. If you want a 'why this article' explanation surface, Wiki Rabbit. If you want no ads, full Wikipedia, multi-language, and widgets, WanderWiki."
+    a: "Wiki Rabbit is free with ads and draws only from Wikipedia's curated Good Articles collection. WanderWiki has no ads at any tier and surfaces from full Wikipedia (~7 million articles in English alone, across 32 language editions). Wiki Rabbit adapts during a session to what you open, skip, and linger on, and shows a rabbit-hole trail of where you've been; WanderWiki's For You uses only the topics you pick (16 to choose from) — not behavioral tracking. If you want a 'why this article' explanation surface, Wiki Rabbit. If you want no ads, full Wikipedia, multi-language, offline saves, and widgets, WanderWiki."
   - q: "Is WanderWiki an official Wikipedia app?"
-    a: "No. WanderWiki is an independent app built by Lagerland Apps. It uses Wikipedia content via Wikipedia's official REST API under the Creative Commons Attribution-ShareAlike 4.0 license, with attribution to the source article surfaced inline on every card. WanderWiki is not affiliated with or endorsed by the Wikimedia Foundation. For Wikipedia editing, talk pages, watchlists, and other editor tools, use Wikipedia's own official app."
+    a: "No. WanderWiki is an independent app built by Lagerland Apps. It uses Wikipedia content via Wikipedia's official APIs under the Creative Commons Attribution-ShareAlike 4.0 license; every article opens in Wikipedia from the reader, and the license is linked in Settings. WanderWiki is not affiliated with or endorsed by the Wikimedia Foundation. For Wikipedia editing, talk pages, watchlists, and other editor tools, use Wikipedia's own official app."
   - q: "Which Wikipedia language editions does WanderWiki support?"
-    a: "Thirty-three: English (en), German (de), French (fr), Spanish (es), Italian (it), Portuguese (pt), Dutch (nl), Polish (pl), Finnish (fi), Swedish (sv), Danish (da), Norwegian — both legacy (no) and Bokmål (nb) — Czech (cs), Slovak (sk), Hungarian (hu), Romanian (ro), Croatian (hr), Catalan (ca), Turkish (tr), Russian (ru), Ukrainian (uk), Greek (el), Hebrew (he), Japanese (ja), Chinese (zh), Korean (ko), Hindi (hi), Vietnamese (vi), Indonesian (id), Thai (th), Malay (ms), and Arabic (ar). Each edition is queried natively — For You's interest categories map to ~8–12 native-language Wikipedia categories per edition, so German Science returns articles from Wissenschaft, Physik, Chemie — not from a machine translation of English categories."
+    a: "Thirty-two: English (en), German (de), French (fr), Spanish (es), Italian (it), Portuguese (pt), Dutch (nl), Polish (pl), Finnish (fi), Swedish (sv), Danish (da), Norwegian Bokmål (no), Czech (cs), Slovak (sk), Hungarian (hu), Romanian (ro), Croatian (hr), Catalan (ca), Turkish (tr), Russian (ru), Ukrainian (uk), Greek (el), Hebrew (he), Japanese (ja), Chinese (zh), Korean (ko), Hindi (hi), Vietnamese (vi), Indonesian (id), Thai (th), Malay (ms), and Arabic (ar). In 17 of them — en, de, fr, es, it, pt, nl, pl, fi, sv, tr, ru, ja, zh, ko, hi, ar — topics map to the edition's own categories, so German Science returns articles from Wissenschaft, Physik, Chemie; in the others, For You and Browse fall back to random articles from that edition. Today in History uses the edition's own feed in 19 editions and English elsewhere."
   - q: "How does the For You mode work?"
-    a: "Pick interests across ten categories: Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography. WanderWiki blends articles drawn from the Wikipedia categories you selected, in your chosen Wikipedia language edition. Optional like/dislike signals refine the surface — those signals are stored on-device in SwiftData and never sent anywhere. For You is preference-driven discovery, not behavioural surveillance — there is no model trained on dwell time, scroll velocity, or engagement metrics."
+    a: "Pick interests across sixteen topics: Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography, Literature, Movies, Food, Architecture, Mathematics, Politics. WanderWiki blends articles drawn from the Wikipedia categories behind the topics you selected, in your chosen Wikipedia language edition. That's all it uses: likes, skips, and reading time don't feed it, and there is no model trained on dwell time, scroll velocity, or engagement metrics. For You is part of WanderWiki Plus; Browse, which dives into a single topic, is free."
   - q: "How does Today in History work?"
-    a: "Today in History queries Wikipedia's official REST API endpoint /api/rest_v1/feed/onthisday/&lt;category&gt;/&lt;MM&gt;/&lt;DD&gt; for the current date. Five categories: Selected (Wikipedia's curated highlights), Events (notable events on this date in any year), Births (notable people born), Deaths (notable people who died), and Holidays (observed on this date). Daily updates run in the widget. Pulls in your chosen Wikipedia language edition."
+    a: "Today in History queries Wikipedia's official REST API endpoint /api/rest_v1/feed/onthisday/&lt;category&gt;/&lt;MM&gt;/&lt;DD&gt; for the current date. Five categories: Selected (Wikipedia's curated highlights), Events (notable events on this date in any year), Births (notable people born), Deaths (notable people who died), and Holidays (observed on this date). It reads your chosen edition's feed where Wikipedia publishes one (19 of the 32 editions) and the English feed otherwise. In the app it's part of WanderWiki Plus; the On This Day widget works on every tier."
   - q: "Does WanderWiki have widgets?"
-    a: "Yes. Home Screen, Lock Screen, and StandBy widgets surface a fresh article — random, For You, or Today in History — without opening the app. The widget allowlist is shared with the main app via the WanderWikiShared Swift package; CI enforces parity so your widget never silently falls back to English when the main app is set to a non-English Wikipedia edition."
+    a: "Yes, five: On This Day (the day's history, with photographs), Reading Year (your streak and every day you finished an article), Continue Reading (articles you're partway through), Got a Minute (pick 2, 5, 10, or 20 minutes and it picks one of your articles that fits), and Two Doors (one article close to your interests, one far outside them). Most come in Lock Screen sizes, and Surprise Me and Continue Reading are also controls for Control Center, the Lock Screen, and the Action button. The widgets read the same language list as the app through the shared WanderWikiShared package."
   - q: "Can I read articles offline?"
-    a: "Yes. Tap save on any article and WanderWiki caches the full reading view for offline access. Saved articles can be organised into folders (for flights, before bed, philosophy, whatever shape your curiosity takes this month). Folders and saved articles persist across reinstalls if you back up your device."
+    a: "Yes. Tap save on any article and WanderWiki downloads its full text, so it opens without a connection. Saved articles can be organised into folders (for flights, before bed, philosophy, whatever shape your curiosity takes this month) and found from Spotlight. They live on the device — there's no iCloud sync yet, so they move to a new device only through a device backup. The swipe feed itself loads live from Wikipedia and needs a connection."
   - q: "Does WanderWiki use a recommendation algorithm?"
-    a: "No — at least not in the sense people usually mean. Random is purely random. For You is driven by interest selections you make explicitly (10 categories) and optional like/dislike signals that stay on-device in SwiftData. There is no behavioural model, no engagement-optimisation loop, no dwell-time tracking, no scroll-velocity tracking, no cross-app tracking. We don't have a backend that could even receive such signals."
+    a: "No — at least not in the sense people usually mean. Random is purely random. Browse and For You draw from the topics you choose. Likes collect in a list, and 'Show less like this' or 'Hide' only keeps an article out of your Where Next suggestions. There is no behavioural model, no engagement-optimisation loop, no dwell-time tracking, no scroll-velocity tracking, no cross-app tracking. We don't have a backend that could even receive such signals."
+  - q: "Does WanderWiki have streaks or notifications?"
+    a: "One of each, both small. WanderWiki counts the days in a row you discover a new article, on your Profile and in the Reading Year widget. If you allow notifications — it asks the first time you save an article — it sends one reminder a day, at 9:00 unless you change it, usually naming one of the day's On This Day picks. You can change the time, set quiet hours, or turn it off in Settings."
   - q: "Is WanderWiki free?"
-    a: "WanderWiki offers a 3-day free trial with full access. After that, three price tiers: $1.99/month, $8.99/year, or $24.99 lifetime. The lifetime option is the best long-term value — about ten months of yearly billing, and it supports Family Sharing so one purchase covers up to 5 family members at no extra cost. No ads on any tier. No IAPs beyond the unlock. No subscription auto-converts to a higher tier. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes, for 20 articles a day: Random and Browse, with save, like, search, folders, widgets, and read-aloud included, in all 32 editions. The count resets at local midnight. WanderWiki Plus unlocks For You, Today in History, and unlimited swiping for $1.99/month, $8.99/year (with a free trial for new subscribers), or $24.99 lifetime — about a year of monthly billing — which supports Family Sharing so one purchase covers up to 5 family members. No ads on any tier. The only other in-app purchase is an optional $1.00 tip. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does WanderWiki work on iPad, Mac, or Vision Pro?"
-    a: "Not currently. WanderWiki is iPhone-only (iOS 18.2+) by design — the swipe-card UI, widget layout, and reading deck are built for the iPhone reading surface. WikiCards is the cross-Apple-platform alternative (iPhone, Mac M1+, Vision Pro) but is English-only and offers only random articles."
+    a: "Yes on iPad: WanderWiki runs on iPhone and iPad (iOS and iPadOS 18.2+), with a sidebar layout on iPad. The App Store also offers it on Macs with Apple silicon (macOS 15.2+) and on Apple Vision Pro (visionOS 2.2+), where the iPad app runs as is rather than in a version built for those devices. There is no web version; for that, WikiTok runs in any browser."
   - q: "Does WanderWiki track my reading?"
-    a: "No. WanderWiki has no third-party SDKs, no analytics, no tracking domains, no account, and no backend caching of full articles. Likes, dislikes, saved articles, folders, weekly stats — all live in SwiftData on your iPhone. The only network call is to Wikipedia's official REST API (api.wikimedia.org), and only to fetch the article you're currently viewing or the On This Day feed for the current date."
+    a: "No. WanderWiki has no third-party SDKs, no analytics, no tracking domains, no account, and no server of its own. Likes, saved articles, folders, reading progress, your streak — all live in SwiftData on your device. Its network requests go to Wikipedia: the language edition you chose (for example en.wikipedia.org) for articles, categories, search, and the On This Day feed, and Wikimedia's image server for pictures. Purchases go through Apple."
 
 related_journal:
   slug: reading-without-a-feed
@@ -335,14 +341,14 @@ support:
   url: "/apps/wanderwiki/support/"
 
 release:
-  first_release: "2026-02-01"
-  last_updated: "2026-05-13"
-  last_audited: "2026-05-13"
-  audit_round: "4 (doomscroll body copy + related_journal corrected to reading-without-a-feed)"
+  first_release: "2026-02-07"
+  last_updated: "2026-10-23"
+  last_audited: "2026-10-25"
+  audit_round: "5 (every claim checked against the app source and the live App Store listing)"
 
 ratings:
   value: "5.0"
   count: 2
   last_synced: "2026-04-15"
 ---
-WanderWiki is a Wikipedia discovery app for iPhone (iOS 18.2+) that turns the encyclopedia into a swipe-based card deck. Three modes — Random across the full encyclopedia, For You across 10 interest categories (Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography), and Today in History with five subcategories from Wikipedia's official On This Day feed (Selected, Events, Births, Deaths, Holidays) — surface fascinating articles across 33 Wikipedia language editions with native-language category queries. Pick German + Science and the app queries Wissenschaft, Physik, Chemie — not translated English categories. Articles are reformatted for calm iPhone reading with attribution back to the source under Creative Commons CC BY-SA 4.0. Save any article and read offline; organise saved articles into folders. Home Screen, Lock Screen, and StandBy widgets surface fresh articles daily. Optional like/dislike signals refine For You — preference-driven, on-device, never sent anywhere. Built on Wikipedia's official REST API. SwiftUI + SwiftData + StoreKit 2. No ads at any tier, no third-party SDKs, no analytics, no backend caching of articles. Free 3-day trial, then $1.99/month, $8.99/year, or $24.99 lifetime. The competitive set — WikiCards (free, English-only, multi-platform), Wiki Rabbit (free with ads, Good Articles subset only) — both ship something good; WanderWiki chose the paid lane so the app has no commercial incentive to maximise screen time.
+WanderWiki is a Wikipedia discovery app for iPhone and iPad (iOS 18.2+) that turns the encyclopedia into a swipe-based card deck. Four ways in — Random across the full encyclopedia, Browse for one of 16 topics, For You across the topics you pick (Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography, Literature, Movies, Food, Architecture, Mathematics, Politics), and Today in History with five subcategories from Wikipedia's official On This Day feed (Selected, Events, Births, Deaths, Holidays) — surface articles across 32 Wikipedia language editions. In 17 of them topics map to the edition's own categories: pick German + Science and the app queries Wissenschaft, Physik, Chemie — not translated English categories. Articles are reformatted for calm reading, with Open in Wikipedia one tap away and the CC BY-SA 4.0 license linked in Settings. Save any article and its full text downloads for offline reading; organise saved articles into folders; have any article read aloud. Five widgets (On This Day, Reading Year, Continue Reading, Got a Minute, Two Doors) and two Control Center controls bring it to the Home Screen and Lock Screen. For You follows only the topics you choose — nothing is inferred from what you like or skip, and nothing leaves the device. Built on Wikipedia's official APIs. SwiftUI + SwiftData + StoreKit 2. No ads at any tier, no third-party SDKs, no analytics, no WanderWiki server. Free for 20 articles a day; WanderWiki Plus adds For You, Today in History, and unlimited swiping for $1.99/month, $8.99/year, or $24.99 lifetime. The competitive set — WikiScroll and Wiki Rabbit, both free with ads — each ship something good; WanderWiki chose the paid lane so the app has no commercial incentive to maximise screen time.

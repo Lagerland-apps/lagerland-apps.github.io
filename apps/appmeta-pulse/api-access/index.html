@@ -2,7 +2,7 @@
 layout: default
 permalink: /apps/appmeta-pulse/api-access/
 title: "AppMeta Pulse — API Access & Methodology"
-quick_answer: "AppMeta Pulse authenticates to App Store Connect using Apple's official API with a .p8 key you generate in App Store Connect → Users and Access → Keys. The .p8 private key, Key ID, and Issuer ID are stored in your system Keychain. Each API call uses a short-lived JWT signed locally with ES256 — Apple's documented requirement caps token lifetime at 20 minutes. AppMeta Pulse reads Sales and Trends, subscription, App Store analytics, catalog, and customer-review endpoints; its only writes are review replies you choose to send and the analytics report requests Apple needs to prepare impressions data. Queries hit api.appstoreconnect.apple.com directly over HTTPS — nothing is routed through Lagerland servers."
+quick_answer: "AppMeta Pulse authenticates to App Store Connect using Apple's official API with a .p8 key you generate, with the Admin role, in App Store Connect → Users and Access → Integrations. The .p8 private key, Key ID, and Issuer ID are stored in your system Keychain. Each API call uses a short-lived JWT signed locally with ES256 — Apple's documented requirement caps token lifetime at 20 minutes. AppMeta Pulse reads Sales and Trends, subscription, App Store analytics, catalog, and customer-review endpoints; its only writes are review replies you choose to send and the analytics report requests Apple needs to prepare impressions data. Queries hit api.appstoreconnect.apple.com directly over HTTPS — nothing is routed through Lagerland servers."
 seo:
   title: "AppMeta Pulse — API Access & Methodology"
   description: "How AppMeta Pulse authenticates to App Store Connect — .p8 key, ES256 JWT, role-to-endpoint mapping, what the app does and cannot do. Public, citable."
@@ -30,7 +30,7 @@ seo:
   "description": {{ page.seo.description | jsonify }},
   "url": "{{ site.url }}/apps/appmeta-pulse/api-access/",
   "datePublished": "2026-05-13",
-  "dateModified": "2026-09-22",
+  "dateModified": "2026-10-25",
   "inLanguage": "en",
   "publisher": { "@id": "{{ site.url }}/#organization" },
   "isPartOf": { "@id": "{{ site.url }}/#website" },
@@ -82,9 +82,9 @@ seo:
       <ul class="bullets">
         <li>Sign in to <a href="https://appstoreconnect.apple.com/" rel="noopener">App Store Connect</a> with an account that has permission to create API keys (Admin or Account Holder).</li>
         <li>Open <strong>Users and Access → Integrations → App Store Connect API</strong>.</li>
-        <li>Generate a new key. Pick a <strong>role</strong> (Sales, Finance, Developer, App Manager, Admin, etc.). The role determines what AppMeta Pulse can read — see the endpoint table below for the minimum role per report.</li>
+        <li>Generate a new key with the <strong>Admin</strong> role. AppMeta Pulse asks for Admin because it is the role that covers sales reports, App Analytics, and review replies together; App Manager and Developer keys can't read sales reports, and Apple answers them with a 403 error.</li>
         <li>Download the <code>.p8</code> private key file. <strong>Apple only lets you download it once</strong> — if you lose it, you regenerate.</li>
-        <li>Copy the <strong>Key ID</strong> (10-character string) and the <strong>Issuer ID</strong> (your team's UUID, shown above the keys list).</li>
+        <li>Copy the <strong>Key ID</strong> (10-character string) and the <strong>Issuer ID</strong> (your team's UUID, shown above the keys list). Pulse also needs your <strong>Vendor Number</strong> from Payments and Financial Reports to download sales reports.</li>
       </ul>
     </div>
     <div class="card">
@@ -93,7 +93,7 @@ seo:
         <li>Paste or import the <code>.p8</code> file, Key ID, and Issuer ID into AppMeta Pulse.</li>
         <li>The three values are stored together in the system <strong>Keychain</strong> — the same secure storage iOS and macOS use for passwords and Wi-Fi credentials.</li>
         <li>None of the three is written to plain files, iCloud Drive, iCloud Sync, third-party servers, or analytics SDKs. With iCloud Sync on, the Issuer ID is replaced by a one-way hash and the Key ID by a short hash; the account name and vendor number you entered do sync.</li>
-        <li>Revoke the key any time in App Store Connect → Users and Access → Keys. Revocation takes effect at Apple's API immediately; the app cannot circumvent it.</li>
+        <li>Revoke the key any time in App Store Connect → Users and Access → Integrations. Revocation takes effect at Apple's API immediately; the app cannot circumvent it.</li>
       </ul>
     </div>
   </div>
@@ -135,20 +135,24 @@ seo:
 </section>
 
 <section id="endpoints" class="section reveal">
-  <h2 class="h2">Endpoints called, and the role required for each.</h2>
-  <p class="lead">Per Apple's <a href="https://developer.apple.com/help/app-store-connect/manage-your-team/roles-and-permissions/" rel="noopener">role permissions matrix</a>, the role you pick when generating the key determines which reports the key can read. AppMeta Pulse exposes exactly the views the role allows — never more.</p>
+  <h2 class="h2">Endpoints called, and the role they need.</h2>
+  <p class="lead">AppMeta Pulse asks for one key with the <strong>Admin</strong> role, because that role covers everything below. Apple's <a href="https://developer.apple.com/help/app-store-connect/manage-your-team/roles-and-permissions/" rel="noopener">role permissions</a> decide what a key can reach; when a request is refused, Settings → Connection in the app shows which data source failed and why.</p>
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">Sales and Trends reports</div>
-      <div class="card-text">Endpoint: <code>GET /v1/salesReports</code>. Returns daily, weekly, monthly, or yearly aggregated proceeds, units, and refunds by app and territory.<br><br><strong>Minimum role required:</strong> Sales, Finance, Admin, or Account Holder (per Apple's role permissions). App Manager and Developer roles do <em>not</em> have access to this endpoint — keys with those roles will see permission errors here.<br><br>This is the endpoint that drives the top-line revenue, downloads, and country breakdown views.</div>
+      <div class="card-text">Endpoint: <code>GET /v1/salesReports</code> with report type <code>SALES</code>, daily (and yearly for the By Year chart), using your Vendor Number. Returns units, customer price, and developer proceeds per product and territory.<br><br><strong>Role:</strong> Admin. App Manager and Developer keys can list your apps but can't download sales reports; Apple answers them with a 403 error, and the app says so at sign-in.<br><br>This is the endpoint that drives the proceeds, sales, downloads, and territory views.</div>
     </div>
     <div class="card">
       <div class="card-title">Subscription reports</div>
-      <div class="card-text">Endpoint: <code>GET /v1/salesReports</code> with report types <code>SUBSCRIPTION</code> and <code>SUBSCRIPTION_EVENT</code>.<br><br><strong>Minimum role required:</strong> Sales, Finance, Admin, or Account Holder. Same access scope as Sales reports.<br><br>Drives the subscription health view — active subscribers, trial conversions, cancellations, refunds.</div>
+      <div class="card-text">Endpoint: <code>GET /v1/salesReports</code> with report types <code>SUBSCRIPTION</code> and <code>SUBSCRIPTION_EVENT</code>, daily.<br><br><strong>Role:</strong> Admin, as for the Sales report.<br><br>Drives the subscription views — MRR, active subscriptions, trials, trial-to-paid conversion, churn, and cancellations.</div>
     </div>
     <div class="card">
-      <div class="card-title">App Analytics (where available)</div>
-      <div class="card-text">Endpoint: App Analytics report endpoints.<br><br><strong>Minimum role required:</strong> Admin, Account Holder, App Manager, Developer, Marketing, or Sales — App Analytics has broader role access than Sales reports.<br><br>If your key has only one of the analytics-eligible roles (e.g. App Manager) but lacks Sales access, AppMeta Pulse will show analytics-derived counts but not paid-out proceeds. The app surfaces this state clearly rather than failing silently.</div>
+      <div class="card-title">App Analytics</div>
+      <div class="card-text">Endpoints: <code>GET</code> on <code>/v1/apps/{id}/analyticsReportRequests</code>, the reports, instances, and segments under it, plus the time-limited download links Apple returns; and <code>POST /v1/analyticsReportRequests</code> for an app that has no request yet (an ongoing one, plus a one-time snapshot for history on the first sync), which asks Apple to start preparing the reports.<br><br><strong>Role:</strong> Admin. With a key that lacks it, Pulse skips analytics for that app and reports it in Settings → Connection.<br><br>Drives impressions, product page views, and the App Store conversion funnel.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Catalog and customer reviews</div>
+      <div class="card-text">Endpoints: <code>GET /v1/apps</code>, each app's in-app purchases and subscription groups, and <code>GET /v1/apps/{id}/customerReviews</code> with any developer responses.<br><br><strong>Role:</strong> a key that can't post replies can still read reviews; replying needs Admin, and the app asks for an Admin key when a reply is refused.<br><br>Drives the app list, product names, and the reviews screens.</div>
     </div>
     <div class="card">
       <div class="card-title">Endpoints AppMeta Pulse does NOT call</div>
@@ -172,7 +176,7 @@ seo:
     <div class="card">
       <div class="card-title">At Apple's API level</div>
       <ul class="bullets">
-        <li>The role you set on the API key determines what the key can do. A key with the Sales role cannot write to anything, even if a request tried.</li>
+        <li>The role you set on the API key determines what the key can do. An Admin key could change far more than Pulse ever asks of it, so the limits on what Pulse changes are the code limits listed on the left, not the key's role.</li>
         <li>You can revoke the key in App Store Connect at any time; the next API call from AppMeta Pulse will fail with 401 and the app surfaces that state clearly.</li>
         <li>Apple's API enforces the role at the request level — not on trust of the calling app.</li>
       </ul>
@@ -186,11 +190,11 @@ seo:
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">Sales and Trends</div>
-      <div class="card-text">Apple updates Sales and Trends with next-day data — today's purchases appear tomorrow morning UTC. Same cadence as the App Store Connect web dashboard. AppMeta Pulse polls on-demand and on a refresh interval; the data shown is whatever Apple has currently published for your account.</div>
+      <div class="card-text">Apple publishes each day's report the following day, generally by 8 a.m. Pacific Time (<a href="https://developer.apple.com/help/app-store-connect/reference/reporting/sales-and-trends-reports-availability" rel="noopener">Apple</a>). Same cadence as the App Store Connect web dashboard; App Store analytics arrive a day or two later. AppMeta Pulse checks in the background about hourly until the new day is in, and again when you open the app or pull to refresh; the data shown is whatever Apple has currently published for your account.</div>
     </div>
     <div class="card">
       <div class="card-title">Financial Reports</div>
-      <div class="card-text">Apple publishes monthly Financial Reports on a delayed cadence — typically 30+ days after the fiscal month ends. These are the canonical reconciliation source for tax filing and accounting. AppMeta Pulse displays Sales and Trends figures (next-day) by default; for tax filing, reconcile against Apple's monthly <a href="https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/" rel="noopener">downloadable Financial Reports</a>.</div>
+      <div class="card-text">Apple publishes monthly Financial Reports after each fiscal month closes. These are the canonical reconciliation source for tax filing and accounting. AppMeta Pulse only reads Sales and Trends figures (next-day), not Payments and Financial Reports; for tax filing, reconcile against Apple's monthly <a href="https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/" rel="noopener">downloadable Financial Reports</a>.</div>
     </div>
   </div>
 </section>
@@ -202,8 +206,8 @@ seo:
       <div class="card-title">Honest limits</div>
       <ul class="bullets">
         <li>Numbers can never be fresher than Apple's reporting cadence. We cannot accelerate Apple's overnight ETL.</li>
-        <li>Exchange rates and tax categories in Apple's Sales and Trends are rolling averages — they will not always match what hits your bank account.</li>
-        <li>If you generated your API key with a role that lacks Sales access (e.g. App Manager only), the app will show what that role <em>can</em> read and clearly note what it cannot.</li>
+        <li>Pulse converts every amount into your display currency with the European Central Bank's monthly average rates. Apple pays with its own exchange rates and after withholding and bank fees, so converted totals will not match what hits your bank account.</li>
+        <li>If your API key's role can't read a data source (an App Manager or Developer key can't download reports), Settings → Connection says which one failed and why, rather than showing empty charts silently.</li>
         <li>App Store Connect API rate limits are managed by Apple. Heavy refresh during a sales spike may briefly throttle; the app backs off rather than retrying aggressively.</li>
       </ul>
     </div>
@@ -232,7 +236,7 @@ seo:
 <section class="cta-section reveal">
   <p class="overline">Use it</p>
   <h2 class="h2">Open AppMeta Pulse.</h2>
-  <p class="lead">App Store Connect on iPhone, iPad, and Mac. No build, pricing, or metadata controls, zero data collection on the privacy label, .p8 key in your Keychain, your data goes nowhere but Apple.</p>
+  <p class="lead">App Store Connect on your iPhone. No build, pricing, or metadata controls, zero data collection on the privacy label, .p8 key in your Keychain, your data goes nowhere but Apple.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/appmeta-pulse/">Learn about AppMeta Pulse</a>
     <a class="btn btn-secondary" href="/alternatives/appstats/">AppMeta Pulse vs AppStats</a>

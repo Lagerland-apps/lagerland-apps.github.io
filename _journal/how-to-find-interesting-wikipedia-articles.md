@@ -3,6 +3,7 @@ layout: journal
 slug: how-to-find-interesting-wikipedia-articles
 title: "How to find a random Wikipedia article that is worth reading"
 date: 2026-04-11
+last_updated: 2026-10-25
 seo:
   title: "How to Find Random and Interesting Wikipedia Articles"
   description: "Random article, random featured articles, Did you know, On this day and Unusual articles: where Wikipedia's best pages are, and how random Random is."
@@ -29,7 +30,7 @@ faq:
   - q: "Where can I find interesting or unusual Wikipedia articles?"
     a: "Start with the Main Page: Today's featured article, the Did you know hooks to new and newly improved articles, and On this day. Wikipedia:Unusual articles is a long list, kept by editors, of odd but verifiable articles grouped by subject, and Wikipedia:Vital articles lists the topics editors think most deserve a high-quality article, in levels from 10 to 50,000."
   - q: "Can WanderWiki show random Wikipedia articles?"
-    a: "Yes. WanderWiki's Random mode asks Wikipedia's REST API for a random article, the API's version of the Random article link, and shows it as a card you can swipe past or open to read in full. For You draws from interests you choose rather than from what you linger on, and Today in History shows what happened on today's date. It needs no account and shows no ads."
+    a: "Yes. WanderWiki's Random mode asks Wikipedia's REST API for a random article, the API's version of the Random article link, skips disambiguation pages, lists, and very short stubs, and shows the result as a card you can swipe past or open to read in full. For You draws from interests you choose rather than from what you linger on, and Today in History shows what happened on today's date. It needs no account and shows no ads."
 mentioned_apps:
   - wanderwiki
 read_time: "6 min read"
@@ -103,7 +104,7 @@ The Main Page is the other way in, and each of its sections runs on rules worth 
 
 ## Where WanderWiki fits
 
-[WanderWiki](/apps/wanderwiki/) puts three of these routes into a card deck on iPhone. **Random** asks Wikipedia's REST API for a random article, the API's version of the Random article link, so anything in the encyclopedia can come up. **For You** draws from topics you choose, which narrows the draw the way a category does, without watching what you linger on. **Today in History** shows what happened on today's date. Swipe to the next card, or open one to read the full article reformatted for the phone, and save the ones you want to keep.
+[WanderWiki](/apps/wanderwiki/) puts three of these routes into a card deck on iPhone. **Random** asks Wikipedia's REST API for a random article, the API's version of the Random article link, so almost anything in the encyclopedia can come up; the app skips disambiguation pages, lists, and stubs too short to summarise. **For You** draws from topics you choose, which narrows the draw the way a category does, without watching what you linger on. **Today in History** shows what happened on today's date. Swipe to the next card, or open one to read the full article reformatted for the phone, and save the ones you want to keep.
 
 There is no account and no advertising. The [privacy page](/apps/wanderwiki/privacy/) sets out that saved articles and interests are stored on the device and that articles come from Wikipedia's public APIs. Why it is a deck you put down rather than a feed you scroll is the subject of [an earlier post](/journal/reading-without-a-feed/).
 

@@ -61,32 +61,34 @@ apps:
     tracking_domains: 0
     third_party_sdks: 0
     third_party_sdks_list: []
-    account_required: "Your own Apple ID with App Store Connect access. Credentials are stored in macOS Keychain — never transmitted to Lagerland."
-    network_calls: "Apple App Store Connect API only. No other endpoints."
-    data_leaves_device: "Only to Apple's App Store Connect API, with your own credentials."
+    account_required: "An App Store Connect team API key (Issuer ID, Key ID, .p8) from your own developer account; no AppMeta account. Stored in macOS Keychain on that Mac only — never transmitted to Lagerland."
+    network_calls: "App Store Connect API (api.appstoreconnect.apple.com) and the report download links it returns; Apple's public App Store endpoints (apps.apple.com, itunes.apple.com, search.itunes.apple.com, amp-api-edge.apps.apple.com) for app icons, competitor prices and opt-in keyword research; Apple Ads (api.ads.apple.com, appleid.apple.com) only if you connect it; ECB exchange rates (data-api.ecb.europa.eu) for sales charts; your chosen AI provider, if any. No Lagerland server."
+    data_leaves_device: "Listing data goes only to Apple's App Store Connect API, with your own key. Keyword phrases and app IDs you look up go to Apple's public App Store endpoints, and text you ask a cloud AI provider to translate or analyze goes to that provider. Nothing goes to Lagerland."
     analytics: "None."
     collected_data: []
     required_reason_apis:
       - "UserDefaults (CA92.1)"
-    permissions: []
+    permissions:
+      - "Notifications — optional alerts for new reviews and diagnostics"
     notes: "Native Mac client for App Store Connect. Edits happen locally, then submit via Apple's API."
 
   - slug: appmeta-pulse
-    manifest_source: pending
+    manifest_source: source
     tracking_declared: false
     tracking_domains: 0
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: "No Lagerland account. Your own App Store Connect API key."
-    network_calls: "Apple's App Store Connect API (plus the analytics report download links it returns), Apple's iTunes Lookup and the app icons it points to, the App Store for purchases, Apple's Translation framework when you translate a review, and the European Central Bank's public exchange-rate API."
-    data_leaves_device: "To App Store Connect with your own key (including review replies you send), and your apps' IDs to Apple's iTunes Lookup. Nothing reaches Lagerland unless you email us."
+    network_calls: "Apple's App Store Connect API (plus the analytics report download links it returns), Apple's iTunes Lookup and the app icons it points to, the App Store for purchases, Apple's Translation framework when you translate a review, the European Central Bank's public exchange-rate API, and, with iCloud Sync on, Apple's iCloud (CloudKit) and push service."
+    data_leaves_device: "To App Store Connect with your own key (including review replies you send), and your apps' IDs to Apple's iTunes Lookup. With iCloud Sync on, your history, reviews, and settings (never the .p8 key) also go to your own private iCloud database. Nothing reaches Lagerland unless you email us."
     analytics: "None."
     collected_data: []
     required_reason_apis:
-      - "UserDefaults — used; not yet declared in a manifest"
-      - "File timestamp — used; not yet declared in a manifest"
+      - "UserDefaults (CA92.1, 1C8F.1)"
+      - "File timestamp (C617.1)"
+      - "Disk space (E174.1)"
     permissions: []
-    notes: "No Privacy Manifest ships yet, so this row describes the code rather than a manifest. No build, pricing, or metadata controls; the only App Store Connect writes are review replies you send and analytics report requests."
+    notes: "Privacy manifests ship in the app and its widget. No build, pricing, or metadata controls; the only App Store Connect writes are review replies you send and analytics report requests."
 
   - slug: chessful
     manifest_source: source
@@ -123,20 +125,26 @@ apps:
     notes: "App Store Privacy Nutrition Label reads \"Data Not Collected.\" HealthKit is read-only and never leaves the device; Family Controls hands EarnLock opaque tokens, so it cannot see which apps you blocked. Self-restriction only, never parental control. No account, no server."
 
   - slug: gymlogger-x
-    manifest_source: submission
+    manifest_source: source
     tracking_declared: false
     tracking_domains: 0
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "None for core logging. Optional iCloud sync uses your own iCloud."
-    data_leaves_device: "Your iCloud only, if enabled."
-    analytics: "None."
-    collected_data: []
-    required_reason_apis: []
+    network_calls: "Workout data syncs through your own iCloud (CloudKit private database). Lagerland's own server (a Cloudflare Worker) receives a random install ID, the install date and an optional referral code on first launch, and the transaction ID, product and subscription dates when you buy Pro; the optional how-did-you-hear survey loads its coach list from the same server. No workout or health data is sent."
+    data_leaves_device: "Workouts: your own iCloud, and Apple Health if you allow it. Lagerland's server: a random install ID, referral code and purchase records only."
+    analytics: "No analytics SDK; a random install ID is used for referral attribution."
+    collected_data:
+      - "Health & Fitness (purpose: app functionality, not linked, not used for tracking)"
+      - "Device ID — random install ID (purpose: app functionality, analytics; not linked, not used for tracking)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1, 1C8F.1)"
+      - "File timestamp (C617.1)"
+      - "System boot time (35F9.1)"
     permissions:
-      - "Apple Watch connectivity — log sets from the wrist"
-    notes: "1,500+ exercises and programs ship inside the app. Nothing is fetched from a server."
+      - "Apple Watch connectivity — log sets from the wrist while the iPhone runs the session"
+      - "HealthKit — save workouts; read heart rate and active energy"
+    notes: "1,500 exercises and 44 programs ship inside the app. The App Store label reads \"Data Not Collected\", while the app's own privacy manifest declares the two data types above."
 
   - slug: liftlog
     manifest_source: source
@@ -145,8 +153,8 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "None for core logging. Optional iCloud sync uses your own iCloud."
-    data_leaves_device: "Your iCloud only, if enabled."
+    network_calls: "None for logging. StoreKit contacts Apple for the one-time purchase; there is no cloud sync."
+    data_leaves_device: "Only what you send: workouts and active energy to Apple Health if you turn on export, and backup or CSV files you share."
     analytics: "None."
     collected_data: []
     required_reason_apis:
@@ -156,6 +164,8 @@ apps:
       - "System boot time (35F9.1)"
     permissions:
       - "Haptics — confirmed set logging"
+      - "HealthKit (write-only workouts and active energy) — optional Apple Health export"
+      - "Local notifications — rest-complete and training reminders (optional)"
     notes: "Required Reason APIs are all standard app-functionality categories — no fingerprinting use."
 
   - slug: mediakit
@@ -365,12 +375,13 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "Wikipedia public API only (en.wikipedia.org and other language editions, depending on user selection). No account, no API key, no headers identifying the user."
+    network_calls: "Wikipedia's public APIs only (en.wikipedia.org and other language editions, depending on user selection), plus Wikimedia's image server (upload.wikimedia.org) for article images. No account, no API key, no headers identifying the user."
     data_leaves_device: "Article requests to Wikipedia, the same as a browser visiting the site."
     analytics: "None."
     collected_data: []
     required_reason_apis:
       - "UserDefaults (CA92.1)"
       - "File timestamp (C617.1)"
-    permissions: []
+    permissions:
+      - "Notifications (asked the first time you save an article) — one local daily reminder, retimable or off in Settings"
     notes: "Wikipedia client. Articles are fetched from Wikipedia's public API just like a web visit."

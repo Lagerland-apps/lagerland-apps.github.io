@@ -3,7 +3,7 @@ layout: app
 slug: appmeta
 name: "AppMeta"
 tagline: "App Store Connect, native on your Mac."
-quick_answer: "AppMeta is a native macOS client for App Store Connect. It edits app metadata across all 50 ASC locales side-by-side, previews every diff before it pushes, runs AI keyword analysis through your own provider (Anthropic, OpenAI, Google, any OpenAI-compatible endpoint, or Apple Intelligence on-device), manages TestFlight and reviews, and handles full submission flow. macOS 14+ Sonoma. App Store Connect API v1 with JWT and a .p8 key stored in macOS Keychain — no app-specific passwords, no browser session. $17.99/year or $29.99 lifetime."
+quick_answer: "AppMeta is a native macOS client for App Store Connect. It edits app metadata across all 50 ASC locales side-by-side, shows each changed field next to the live App Store Connect value before it pushes, checks your keywords on-device and, if you turn it on, estimates live keyword difficulty and demand from the App Store. AI translation and keyword suggestions run through your own provider (Anthropic, OpenAI, Google, any OpenAI-compatible endpoint, or Apple Intelligence on-device). It also edits In-App Purchases, subscriptions and Game Center, manages TestFlight builds and reviews, and submits versions for review. macOS 14+ Sonoma. App Store Connect API v1 with a team key (.p8) stored in macOS Keychain — no app-specific passwords, no browser session. The free download runs in demo mode; connecting your account takes Pro at $17.99/year or $29.99 lifetime."
 category: developer-tools
 platforms: ["macOS"]
 status: live
@@ -17,7 +17,7 @@ schema_price: "17.99"
 schema_high_price: "29.99"
 schema_offer_count: "2"
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. The free download runs in demo mode with sample data; connecting your own App Store Connect account needs Pro. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
 
 plans:
   - name: "Annual"
@@ -25,14 +25,15 @@ plans:
     summary: "Full AppMeta, billed once a year. Cancel anytime."
     features:
       - "All 50 App Store Connect locales, side-by-side editing"
-      - "Word-level diff preview before any push"
+      - "Live value next to your edit before any push"
       - "On-device keyword diagnosis (no AI required)"
-      - "Five AI providers — BYO key (incl. Apple Intelligence on-device)"
+      - "Live keyword difficulty and demand (opt-in)"
+      - "Five AI options — your own key, a local model, or Apple Intelligence on-device"
       - "TestFlight, reviews, IAPs, Subscription Groups, Game Center"
-      - "Sales Analytics + crash diagnostics"
+      - "Sales analytics + performance diagnostics"
   - name: "Lifetime"
     price: "$29.99 once"
-    summary: "All AppMeta features. Roughly 16 months of annual — then yours."
+    summary: "All AppMeta features. About 20 months of annual — then yours."
     features:
       - "Everything in Annual"
       - "One-time purchase, no renewal"
@@ -46,7 +47,7 @@ og_image: "/assets/og/appmeta.png"
 
 seo:
   title: "AppMeta — App Store Connect for Mac with IAPs + Game Center"
-  description: "Native Mac client for App Store Connect. 50 locales, IAP + Game Center + reviews + TestFlight in one Mac app. BYO-AI keywords. $17.99/yr or $29.99 lifetime."
+  description: "Native Mac client for App Store Connect. 50 locales, IAP + Game Center + reviews + TestFlight in one app. BYO-AI keywords. $17.99/yr or $29.99 lifetime."
   keywords:
     - app store connect Mac app
     - app store connect native Mac client
@@ -72,30 +73,29 @@ hero:
   device: mac
   headline: "App Store Connect. Finally native."
   secondary: "The native Mac client that handles all 50 locales, In-App Purchases, Subscription Groups, and Game Center — same tool Lagerland ships 20 apps with."
-  subheadline: "AppMeta edits metadata across all 50 ASC locales side-by-side, manages In-App Purchases and Subscription Groups, edits Game Center Achievements and Leaderboards, previews word-level diffs before any push, and runs AI keyword analysis through your own provider — including Apple Intelligence on-device for the times you don't want a single character leaving the Mac. Five AI providers supported (Anthropic, OpenAI, Google, Ollama / LM Studio, Apple Intelligence). $17.99/year or $29.99 lifetime."
+  subheadline: "AppMeta edits metadata across all 50 ASC locales side-by-side, manages In-App Purchases and Subscription Groups, edits Game Center Achievements and Leaderboards, shows the live App Store Connect value next to every change before a push, and checks your keywords on-device, with optional live difficulty and demand readings from the App Store. AI translation and keyword ideas run through your own provider — including Apple Intelligence on-device for the times you don't want a single character leaving the Mac. Five AI options (Anthropic, OpenAI, Google, Ollama / LM Studio, Apple Intelligence). $17.99/year or $29.99 lifetime."
   cta_label: "Download Free"
-  alt: "AppMeta — native Mac editor for App Store Connect metadata with side-by-side locales and word-level diff preview"
+  alt: "AppMeta on macOS — the What's New field for every locale in one view, with the app's versions as tabs"
 
 who_for:
   - "You ship iOS or macOS apps and the App Store Connect web UI is the slowest tool in your release flow"
   - "You manage metadata across 10+ locales and refuse to scroll through 50 separate tabs to update one field"
-  - "You've been burned by a silent overwrite on ASC web and want a diff preview before anything pushes"
-  - "You want keyboard-first editing with the speed of a native Mac app, not a re-skinned browser"
+  - "You've been burned by a silent overwrite on ASC web and want to see the live value next to your change before anything pushes"
+  - "You want keyboard shortcuts and the speed of a native Mac app, not a re-skinned browser"
   - "You'd rather pay $29.99 once than rent ASC tooling for $10–$70/month indefinitely"
   - "You want your ASC credentials in macOS Keychain, not a browser session that times out daily"
 
 who_not_for:
   - "You ship one app a year and the ASC web UI is good enough for the few times you touch it"
   - "Your release pipeline is fully automated through Fastlane / CI and you never edit metadata by hand"
-  - "You need competitive rank tracking, keyword popularity scoring, and competitor intelligence — that's Appfigures / AppTweak / Sensor Tower territory, not AppMeta's"
-  - "You want a web-based dashboard your whole team can hit from any browser — AppMetaHub or ASO.dev fit that better"
+  - "You need keyword rank tracking over time and competitor keyword research — that's Appfigures / AppTweak / Sensor Tower territory, not AppMeta's"
+  - "You need team seats, or a tool that runs in a browser or on Windows — AppMetaHub (web) or ASO.dev (seats, more platforms) fit that better"
 
 related_journal:
   slug: "app-store-keyword-field-100-characters"
   anchor: "How the App Store keyword field works — 100 characters, commas, and the words Apple already indexes"
 alternatives_to:
   - "Itsyconnect"
-  - "NativeConnect"
   - "App Store Connect web UI"
   - "Fastlane deliver"
   - "AppMetaHub"
@@ -109,122 +109,128 @@ founder:
   location: "Finland"
   overline: "Why we built this"
   heading: "We ship 20 apps. AppMeta is the tool we built for ourselves."
-  story: "AppMeta exists because every other workflow for managing App Store metadata broke for us at scale. The web UI is fine when you ship one app — it's torture when you ship 20. Fastlane deliver is great in CI but unworkable for interactive editing across 50 locales. NativeConnect was the closest native competitor and quietly let its marketing domain expire mid-2025. So we built the tool we needed: a native Mac app that opens fast, edits all 50 ASC locales side-by-side, shows a word-level diff before anything pushes, and runs AI keyword analysis through whichever provider we trust that week — including Apple Intelligence on-device for the times we don't want a single character leaving the Mac. Every Lagerland release on the App Store ships through AppMeta. It's the tool we use every day."
+  story: "AppMeta exists because every other workflow for managing App Store metadata broke for us at scale. The web UI is fine when you ship one app — it's torture when you ship 20. Fastlane deliver is great in CI but unworkable for interactive editing across 50 locales. NativeConnect, once the closest native client, was pulled from the Mac App Store back in 2020. So we built the tool we needed: a native Mac app that opens fast, edits all 50 ASC locales side-by-side, shows the live value next to every change before anything pushes, and runs AI translation and keyword ideas through whichever provider we trust that week — including Apple Intelligence on-device for the times we don't want a single character leaving the Mac. Every Lagerland release on the App Store ships through AppMeta. It's the tool we use every day."
   signals:
     - "Same tool Lagerland uses to ship every release of all 20 apps in the catalogue"
     - "Built on the App Store Connect API v1 with JWT auth and .p8 keys stored in macOS Keychain — no app-specific passwords, no browser session"
     - "SwiftUI + SwiftData, macOS 14+ Sonoma minimum, no analytics SDKs, no backend servers"
-    - "Five AI providers supported out of the box — Anthropic, OpenAI, Google, OpenAI-compatible (Ollama / LM Studio), Apple Intelligence on-device"
+    - "Five AI options out of the box — Anthropic, OpenAI, Google, OpenAI-compatible (Ollama / LM Studio), Apple Intelligence on-device"
   external_link:
-    label: "See the 19 Lagerland apps shipped with AppMeta →"
+    label: "See the 20 Lagerland apps shipped with AppMeta →"
     href: "/apps/"
   support_email: "lagerland.apps@proton.me"
   response_time: "Support emails go to one inbox and are answered personally — usually within a day."
 
 value_points:
   - title: "All 50 ASC locales, side-by-side"
-    description: "AppMeta loads the canonical App Store Connect locale set — all 50, including the 11 Indian-region locales Apple added in 2026 (Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, plus Slovenian and Urdu). Edit them at once or one at a time. Never tab-switch through 50 browser pages again."
-  - title: "Diff preview before any push"
-    description: "Word-level diff on every field, every locale. Push per-field, per-locale, or everything in one shot. Rollback-friendly workflow — no silent overwrites, no surprise revisions sneaking through."
-  - title: "Five AI providers. Your key, your spend."
-    description: "Keyword diagnosis runs locally — overlaps with subtitle, duplicate stems, wasted-character usage, locale-gap detection. Generation uses whichever provider you trust: Anthropic Claude (Sonnet 4.6 default), OpenAI GPT (GPT-4o default), Google Gemini (2.0 Flash), any OpenAI-compatible endpoint (Ollama on llama3.2, LM Studio, local proxies), or Apple Intelligence on-device (requires macOS 26 — zero API key, zero network)."
+    description: "AppMeta loads the canonical App Store Connect locale set — all 50, including the 11 locales Apple added in 2026 (Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, Slovenian and Urdu). Edit one locale's fields together, or one field across every locale at once. Never tab-switch through 50 browser pages again."
+  - title: "See every change before it pushes"
+    description: "Every changed field shows the live App Store Connect value next to your edit, in every locale. Push per-field, per-locale, or everything in one shot. Fields that changed on App Store Connect since your last fetch are flagged, and Discard All Local Changes brings the live listing back in one step — no silent overwrites."
+  - title: "Five AI options. Your key, your spend."
+    description: "Keyword diagnosis runs locally — words already in your name or subtitle, words repeated across phrases, wasted characters, and the same phrases repeated across locales. Translation and keyword suggestions use whichever provider you trust: Anthropic Claude, OpenAI GPT or Google Gemini with your own key, any OpenAI-compatible endpoint (Ollama, LM Studio, local proxies), or Apple Intelligence on-device (requires macOS 26 — zero API key, zero network)."
   - title: "Pay annually, or pay once and ship forever"
-    description: "$17.99/year or $29.99 lifetime. Compare: AppMetaHub Indie is $120/year; ASO.dev Indie is $224.99/year. AppMeta's lifetime tier costs less than two months of ASO.dev Indie — and doesn't disappear when you stop paying."
+    description: "$17.99/year or $29.99 lifetime. Compare: AppMetaHub Indie was $120/year in May 2026; ASO.dev Indie is $348/year per seat, billed yearly. AppMeta's lifetime tier costs about what one month of ASO.dev Indie does — and doesn't disappear when you stop paying."
 
 how_it_works:
-  intro: "AppMeta is a native macOS client for the App Store Connect API v1. JWT auth with a .p8 key, edits stored locally in SwiftData, diffs computed against your last fetched snapshot. Here's how a metadata change moves through it."
+  intro: "AppMeta is a native macOS client for the App Store Connect API v1. JWT auth with a .p8 key, edits stored locally in SwiftData, changes compared against your last fetched snapshot. Here's how a metadata change moves through it."
   steps:
     - title: "Connect with your App Store Connect API key (.p8)"
-      detail: "AppMeta uses the modern App Store Connect API v1, not an app-specific password and not a scraped browser session. Generate a .p8 key in App Store Connect's Users and Access, paste the Issuer ID, Key ID, and the .p8 file into AppMeta once. The private key is stored in macOS Keychain — never in a plaintext file, never sent to a Lagerland server, never sent anywhere except api.appstoreconnect.apple.com."
-    - title: "Fetch metadata for all 50 locales"
-      detail: "AppMeta pulls the current state of your app's metadata across all 50 ASC locales — including the 11 Indian-region locales added in 2026 (Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, plus Slovenian and Urdu) — and stores it locally in SwiftData. From this point on you can work offline, with sync happening on push."
-    - title: "Edit side-by-side, keyboard-first"
-      detail: "Every editable ASC field — name (30 chars), subtitle (30 chars), promotional text (170 chars), keywords (100 chars), description (4000 chars), what's new (4000 chars), support and marketing URLs — with real-time character-count validation. Keyboard-first navigation between fields and locales. Never wait on a browser page-load again."
+      detail: "AppMeta uses the modern App Store Connect API v1, not an app-specific password and not a scraped browser session. Generate a team key in App Store Connect's Users and Access, then enter the Issuer ID, Key ID, and the .p8 file into AppMeta once. Individual keys won't work, because they have no Issuer ID. AppMeta checks the key against your app list before saving it. All three values go into macOS Keychain on that Mac only, and the private key never leaves it: AppMeta signs short-lived tokens with it, and those go only to api.appstoreconnect.apple.com — never to a Lagerland server."
+    - title: "Fetch metadata for all your locales"
+      detail: "AppMeta pulls the current state of your app's metadata in every locale it has, and can add any of the 50 ASC locales — including the 11 added in 2026 (Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, Slovenian and Urdu). It stores the working copy locally in SwiftData, so your edits survive a relaunch and only go to App Store Connect when you push."
+    - title: "Edit side-by-side, with shortcuts"
+      detail: "Every editable ASC field — name (30 chars), subtitle (30 chars), promotional text (170 chars), keywords (100 chars), description (4000 chars), what's new (4000 chars), support, marketing and privacy policy URLs — with live character counts that count the way App Store Connect does. Work locale by locale, or pick one field and edit it in every locale at once, copying from the previous version where it helps. Keyboard shortcuts move between locales, open the change preview and push. Never wait on a browser page-load again."
     - title: "Run keyword diagnosis (no AI required)"
-      detail: "AppMeta's Keyword Optimizer runs entirely on-device against the metadata you've already entered: detects keyword/subtitle overlap (wasted ranking surface), duplicate stems within a locale ('app' and 'application' both eat your 100 chars), locales with keywords no other locale uses (opportunity gaps), and storefront coverage gaps. No network call, no API key, no AI."
+      detail: "AppMeta's Keyword Optimizer runs entirely on-device against the metadata you've already entered: it flags keyword words that already appear in your name or subtitle (wasted ranking surface), words repeated across keyword phrases, duplicate phrases, fields over the limit, and the same phrase repeated across locales that share a language or storefront. It matches exact words, so plurals and other word forms are still yours to catch. A storefront view shows which of 57 storefronts your localizations cover directly, by fallback, or not at all. No network call, no API key, no AI."
+    - title: "Check live difficulty and demand (optional)"
+      detail: "Turn on live keyword research and AppMeta asks the App Store itself. Difficulty is a 0–100 score built from the ten apps that rank for a phrase — their ratings and how closely their names and subtitles target it — and you can open the evidence behind every score. Demand comes from Apple's search suggestions, or from Apple's own popularity figures if you connect your Apple Ads account. The two combine into an opportunity reading, and a sweep can check every combination your name, subtitle and keyword field can spell out. It's off until you switch it on."
     - title: "Generate suggestions with your AI provider (optional)"
-      detail: "When you want AI-generated keyword candidates or auto-localized metadata, pick a provider: Anthropic Claude (Sonnet 4.6 default, your API key), OpenAI GPT (GPT-4o default, your API key), Google Gemini (2.0 Flash, your API key), any OpenAI-compatible endpoint (Ollama on llama3.2, LM Studio, local proxies — no key required), or Apple Intelligence on-device (zero API key, zero network — requires macOS 26 and Apple Intelligence enabled). You pay your provider directly; AppMeta meters nothing."
-    - title: "Preview the diff, push what you want"
-      detail: "Before anything touches App Store Connect, AppMeta computes a word-level diff between your local edits and the last fetched server state. Push per-field, per-locale, or everything in one operation. Push only fr-FR's subtitle. Push every locale's keywords but nothing else. The granularity is yours."
+      detail: "When you want AI-generated keyword candidates or translated metadata, pick a provider: Anthropic Claude, OpenAI GPT or Google Gemini (your API key), any OpenAI-compatible endpoint (Ollama, LM Studio, local proxies — no key required), or Apple Intelligence on-device (zero API key, zero network — requires macOS 26 and Apple Intelligence enabled). You pay your provider directly; AppMeta meters nothing."
+    - title: "Preview the changes, push what you want"
+      detail: "Before anything touches App Store Connect, AppMeta lists every changed field with the last fetched App Store Connect value next to your edit. Push per-field, per-locale, or everything in one operation. Push only fr-FR's subtitle. Push every locale's keywords but nothing else. Refresh first, and any field that changed on App Store Connect since your last fetch is flagged, or shows its new live value next to your edit, rather than being overwritten unseen. The granularity is yours."
     - title: "Submit, manage reviews, run TestFlight — same app"
-      detail: "App Review Information, version pricing, age ratings, app privacy details, full version submission — handled in AppMeta. Read and reply to App Store reviews across regions from one view. Manage TestFlight builds, beta metadata, testing groups. In-App Purchases, Subscription Groups, Game Center (Achievements, Leaderboards, Leaderboard Sets) editable with the same locale-aware UI. The entire release surface, native on macOS 14+."
+      detail: "App Review Information, base price and territory availability, categories, age ratings, phased release, attaching a build and submitting the version for review — handled in AppMeta. App Privacy details are the exception: AppMeta checks that a privacy policy URL is set and opens App Store Connect for the data declarations. Read and reply to App Store reviews from every storefront in one list. In TestFlight, edit What to Test and the beta description, add builds to groups, set export compliance and expire builds. In-App Purchases, Subscription Groups, Game Center (Achievements, Leaderboards, Leaderboard Sets) editable with the same locale-aware UI. The release surface, native on macOS 14+."
 
 features:
   - title: "All 50 App Store Connect locales — including the 11 added in 2026"
-    description: "AppMeta ships with the canonical App Store Connect locale set: 50 locales as of 2026, including Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, Slovenian, and Urdu — the 11 locales Apple added in 2026. Side-by-side editing across all of them. Real-time character-count validation on every field."
-  - title: "Word-level diff preview before every push"
-    description: "Every change shows a word-level diff against your last fetched server state before it touches App Store Connect. Push per-field, per-locale, or everything in one operation. No silent overwrites — the failure mode that plagues the web UI for anyone editing in parallel with a teammate or running an automated pipeline alongside manual edits."
-  - title: "Five AI providers — your key, your spend, your choice"
-    description: "Generate keyword suggestions and auto-localize through whichever model you trust: <a href=\"https://www.anthropic.com/claude\" rel=\"noopener\" target=\"_blank\">Anthropic Claude</a> (Sonnet 4.6 default), <a href=\"https://platform.openai.com/\" rel=\"noopener\" target=\"_blank\">OpenAI GPT</a> (GPT-4o default), <a href=\"https://ai.google.dev/\" rel=\"noopener\" target=\"_blank\">Google Gemini</a> (2.0 Flash), any OpenAI-compatible endpoint (<a href=\"https://ollama.com/\" rel=\"noopener\" target=\"_blank\">Ollama</a> on llama3.2, LM Studio, local proxies — no key required), or <a href=\"https://www.apple.com/apple-intelligence/\" rel=\"noopener\" target=\"_blank\">Apple Intelligence</a> on-device (macOS 26 required, zero API key, zero network call). You pay your provider directly. AppMeta meters nothing."
+    description: "AppMeta ships with the canonical App Store Connect locale set: 50 locales as of 2026, including Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, Slovenian, and Urdu — the 11 locales Apple added in 2026. Edit locale by locale, or one field across every locale side by side. Live character counts on every field, measured the way App Store Connect measures them."
+  - title: "The live value next to your edit, before every push"
+    description: "Every changed field shows the last fetched App Store Connect value beside your edit before it touches App Store Connect. Push per-field, per-locale, or everything in one operation. Refresh before you push and fields that changed on the server since your last fetch are flagged, so a teammate's edit or an automated pipeline's change shows up instead of being overwritten unseen — the failure mode that plagues the web UI."
+  - title: "Five AI options — your key, your spend, your choice"
+    description: "Generate keyword suggestions and translate your listing through whichever model you trust: <a href=\"https://www.anthropic.com/claude\" rel=\"noopener\" target=\"_blank\">Anthropic Claude</a>, <a href=\"https://platform.openai.com/\" rel=\"noopener\" target=\"_blank\">OpenAI GPT</a> or <a href=\"https://ai.google.dev/\" rel=\"noopener\" target=\"_blank\">Google Gemini</a> with your own key, any OpenAI-compatible endpoint (<a href=\"https://ollama.com/\" rel=\"noopener\" target=\"_blank\">Ollama</a>, LM Studio, local proxies — no key required), or <a href=\"https://www.apple.com/apple-intelligence/\" rel=\"noopener\" target=\"_blank\">Apple Intelligence</a> on-device (macOS 26 required, zero API key, zero network call). You pay your provider directly. AppMeta meters nothing."
   - title: "On-device keyword diagnosis — no AI required"
-    description: "AppMeta's Keyword Optimizer runs entirely locally against the metadata you've already entered. Detects keyword/subtitle overlaps, duplicate stems within a locale, locale-gap opportunities, search-coverage gaps, and storefront-coverage anomalies. Useful even with zero AI configured."
+    description: "AppMeta's Keyword Optimizer runs entirely locally against the metadata you've already entered. It flags keyword words already in your name or subtitle, words repeated across phrases, duplicate phrases, fields over the limit, and phrases repeated across locales that share a language or storefront. Search coverage counts the one-, two- and three-word combinations your name, subtitle and keywords can form, and a storefront view maps which of 57 storefronts your localizations cover. Matching is exact-word, so plurals aren't merged. Useful even with zero AI configured."
+  - title: "Live keyword difficulty, demand and competitor pricing (opt-in)"
+    description: "Switch on live research and AppMeta reads the App Store directly: a 0–100 difficulty score from the ten apps that rank for each phrase, with every app and number behind it on show; demand from Apple's search suggestions, or Apple's popularity figures if you connect your own Apple Ads account; and an opportunity reading that combines the two. Add competitor apps to compare the in-app purchase prices the App Store lists for them with yours, territory by territory. Live research stays off until you turn it on, competitor checks run only for apps you add, and a blank is shown as unknown, never as zero."
   - title: "App Store Connect API v1 with .p8 / JWT — credentials in macOS Keychain"
-    description: "AppMeta uses Apple's modern App Store Connect API v1 with JWT authentication and a .p8 key. No app-specific password, no scraped browser session. The private key is stored in macOS Keychain — never in a plaintext file. The only network endpoint AppMeta talks to is api.appstoreconnect.apple.com (and your chosen AI provider's API, if any)."
+    description: "AppMeta uses Apple's modern App Store Connect API v1 with JWT authentication and a team .p8 key (individual keys aren't supported, because they have no Issuer ID). No app-specific password, no scraped browser session. The Issuer ID, Key ID and private key are stored in macOS Keychain as this-Mac-only items — never in a plaintext file. Tokens signed with the key go only to api.appstoreconnect.apple.com. AppMeta's other requests go to Apple's public App Store endpoints, Apple Ads (if you connect it), the European Central Bank's exchange-rate API for sales charts, and your chosen AI provider — never to a Lagerland server."
   - title: "Submissions, reviews, TestFlight, IAPs, Game Center — one app"
-    description: "App Review Information, version pricing, age ratings, privacy details, full submission flow. Read and reply to App Store reviews across regions. Manage TestFlight builds and testing groups. Edit In-App Purchases and Subscription Groups. Edit Game Center Achievements, Leaderboards, and Leaderboard Sets — all with locale-aware UI. The entire ASC release surface, native on the Mac."
+    description: "App Review Information, base price and availability, categories, age ratings, phased release and submission for review. Read and reply to App Store reviews from every storefront, filtered by rating. TestFlight: What to Test, beta description, adding builds to groups, export compliance and expiry. Create and edit In-App Purchases, subscriptions and Subscription Groups — localizations, prices, availability and introductory offers. Edit Game Center Achievements, Leaderboards, and Leaderboard Sets with locale-aware UI. App Privacy details stay in App Store Connect."
   - title: "Sales analytics and diagnostics built in"
-    description: "Sales Analytics view pulls revenue and unit data through the ASC API. Diagnostics tab inspects crash signatures, call stacks, and performance metrics — the same data App Store Connect surfaces under Xcode Organizer, in a faster, browse-able UI."
-  - title: "Screenshot upload for every device — including IAP review screenshots"
-    description: "Drag-and-drop screenshot management for every App Store device class (iPhone, iPad, Mac, Apple Watch, Apple TV, Apple Vision). Also handles the hyper-specific case competitors usually miss: review screenshots for In-App Purchases and Subscription Groups, which Apple requires for review but which the ASC web UI buries three menus deep."
+    description: "The Sales and Analytics view pulls proceeds, units and subscription reports through the ASC API, plus the App Store funnel from Apple's analytics reports, converted to one currency with ECB exchange rates. Diagnostics shows Apple's performance metrics (launch time, memory, hangs, disk writes, battery, terminations) and, per build, hang and disk-write signatures with their call stacks — the data Xcode Organizer surfaces, in a faster, browse-able UI."
+  - title: "Screenshot upload for Apple's device classes — including IAP review screenshots"
+    description: "Drag-and-drop screenshot upload for iPhone, iPad, Mac, Apple Watch and Apple TV display sizes. Also handles the hyper-specific case competitors usually miss: the review screenshot Apple requires for each In-App Purchase and subscription, which the ASC web UI buries three menus deep. Apple Vision Pro screenshots and App Preview videos aren't supported yet."
 
 screenshots:
   - src: "/assets/screenshots/appmeta/1.png"
-    alt: "AppMeta — App Store Connect metadata editor on macOS, side-by-side locale comparison"
+    alt: "AppMeta on macOS — the What's New field for every locale in one view, with the app's versions as tabs"
   - src: "/assets/screenshots/appmeta/2.png"
-    alt: "AppMeta — word-level diff preview before pushing changes to App Store Connect"
+    alt: "AppMeta — In-App Purchase editor with base-territory price, territory availability, review screenshot and reference name"
   - src: "/assets/screenshots/appmeta/3.png"
-    alt: "AppMeta — keyword optimizer with overlap detection and locale-gap analysis on macOS"
+    alt: "AppMeta — TestFlight build detail with expiry, export compliance, What to Test and group distribution"
   - src: "/assets/screenshots/appmeta/4.png"
-    alt: "AppMeta — AI provider picker showing Anthropic Claude, OpenAI, Google Gemini, OpenAI-compatible, and Apple Intelligence options"
+    alt: "AppMeta — locale list with sync status next to the App Info and version metadata fields for one locale"
 
 comparison_table:
-  intro: "Each column below is a question an indie iOS developer actually asks before paying for an ASC tool. Itsyconnect is the closest direct competitor — a native Mac client, one-time priced, BYO-AI. AppMetaHub and ASO.dev are strong web/subscription competitors. NativeConnect's marketing site went offline mid-2025. Fastlane deliver is the free CLI baseline."
-  competitors: ["AppMeta", "Itsyconnect", "NativeConnect", "AppMetaHub", "ASO.dev (Mac)", "Fastlane deliver"]
+  intro: "Each row below is a question an indie iOS developer actually asks before paying for an ASC tool. Itsyconnect is the closest direct competitor — a free, MIT-licensed Mac client built on Electron, with BYO-AI and an MCP server. AppMetaHub (web) and ASO.dev (apps for Mac, iPhone, Windows and more) are subscription competitors. Fastlane deliver is the free CLI baseline."
+  competitors: ["AppMeta", "Itsyconnect", "AppMetaHub", "ASO.dev", "Fastlane deliver"]
   rows:
     - feature: "Native Mac app (not a browser / not a CLI)"
-      values: ["Yes — SwiftUI + SwiftData, macOS 14+", "Yes — native macOS", "Was native (AppKit) — currently inactive", "No — web only", "Yes — Universal app (iOS/iPad/Mac/Watch/Vision)", "No — CLI only"]
+      values: ["Yes — SwiftUI + SwiftData, macOS 14+", "Desktop app built on Electron (Next.js / React)", "No — web only", "Yes — plus iPhone, iPad, Windows, Linux and Android apps", "No — CLI only"]
     - feature: "Pricing model"
-      values: ["$17.99/yr or $29.99 lifetime", "€19.99 one-time, lifetime (free for 1 app)", "Was one-time (unverified)", "$10/mo Indie · $23/mo Pro", "$24.99/mo Indie · $68.99/mo Pro", "Free (open source)"]
+      values: ["$17.99/yr or $29.99 lifetime", "Free, no limits (MIT open source)", "$10/mo Indie · $23/mo Pro", "Per seat: $29/mo Indie · $69/mo Pro, billed yearly", "Free (open source)"]
     - feature: "3-year total cost (Indie tier)"
-      values: ["$29.99 lifetime (or $68.97 annual)", "≈ $22 (€19.99 lifetime)", "Unknown", "≈ $360 (12 × $10 × 3)", "≈ $810 (12 × $22.50 × 3, yearly rate)", "$0"]
+      values: ["$29.99 lifetime (or $53.97 annual)", "$0", "≈ $360 (12 × $10 × 3)", "≈ $1,044 (3 × $348, billed yearly)", "$0"]
     - feature: "Number of App Store Connect locales supported"
-      values: ["50 — canonical 2026 set, including the 11 added in 2026", "Not published", "Unverified — site offline", "37", "Multiple — count not published", "25+ via .txt files"]
+      values: ["50 — canonical 2026 set, including the 11 added in 2026", "All locales at once (count not published)", "37", "50", "Per-locale .txt files"]
     - feature: "Manages In-App Purchases + Subscription Groups + Game Center"
-      values: ["Yes — all three, locale-aware UI", "No — not listed on site", "Partial (when active)", "No — metadata + screenshots focus", "IAPs yes; Game Center not mentioned", "No"]
-    - feature: "Screenshot management (drag-and-drop, all device types, IAP review screenshots)"
-      values: ["Yes — including IAP / subscription review screenshots", "Yes", "Yes (when active)", "Yes — drag-and-drop", "Yes", "Yes — via .txt files"]
-    - feature: "Word-level diff before push"
-      values: ["Yes — per-field, per-locale", "Yes — change tracking", "Was a key feature", "Yes — word-level", "Yes — change highlighting", "No — push or don't"]
-    - feature: "AI keyword analysis (BYO API key)"
-      values: ["5 providers — Anthropic, OpenAI, Google, OpenAI-compatible (Ollama / LM Studio), Apple Intelligence on-device", "6 providers — Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek", "Unknown — site offline", "Yes — Pro plan only", "Yes — subscription tier dependent", "No"]
+      values: ["Yes — all three, locale-aware UI", "No — not in its README or source", "No — metadata + screenshots focus", "IAPs and subscriptions yes; Game Center not listed", "No"]
+    - feature: "Screenshot upload (drag-and-drop, IAP review screenshots)"
+      values: ["Yes — iPhone, iPad, Mac, Watch, TV, plus IAP / subscription review screenshots (no App Previews)", "Yes", "Yes — drag-and-drop", "Yes", "Yes — from screenshot folders, plus App Previews"]
+    - feature: "Review changes before push"
+      values: ["Live value next to your edit — push by field, locale or all", "Opt-in diff mode; push all at once", "Yes — word-level", "Yes — change highlighting", "HTML preview of local files; no comparison with live"]
+    - feature: "AI (bring your own key)"
+      values: ["5 options — Anthropic, OpenAI, Google, OpenAI-compatible (Ollama / LM Studio), Apple Intelligence on-device", "6 providers — Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek", "Yes — Pro plan only", "Translation: Google Translate, or DeepL / ChatGPT / Claude with your keys", "No"]
     - feature: "Apple Intelligence on-device support (no API key, no network)"
-      values: ["Yes — macOS 26 required", "No — six cloud providers", "No", "No", "No", "No"]
-    - feature: "Crash diagnostics + Sales Analytics in-app"
-      values: ["Yes — crash signatures, call stacks, perf metrics, sales analytics", "Yes — crash tracking, analytics", "Partial (when active)", "No", "Yes — analytics & A/B testing", "No"]
+      values: ["Yes — macOS 26 required", "No — six cloud providers", "No", "No", "No"]
+    - feature: "Diagnostics + sales analytics in-app"
+      values: ["Yes — sales, subscriptions, App Store funnel, performance metrics, hang and disk-write call stacks", "Yes — crash tracking, analytics", "No", "Yes — analytics & A/B testing", "No"]
     - feature: "MCP server (Claude Code / Cursor / Codex integration)"
-      values: ["Not yet — on roadmap", "Yes — Claude Code, Cursor, Codex, OpenCode", "No", "Yes", "No", "No"]
+      values: ["No", "Yes — Claude Code, Cursor, Codex, OpenCode", "Yes", "Yes — local", "No"]
     - feature: "Open source"
-      values: ["No — proprietary, funded by paid software", "Yes — open source + self-hosted Docker option", "Unknown — inactive", "No", "No", "Yes — MIT licensed"]
-    - feature: "Credentials in macOS Keychain"
-      values: ["Yes — .p8 key in Keychain (hardware-encrypted)", "Yes — AES-256-GCM encrypted on-device", "Yes (when active)", "Stored server-side", "Yes — on-device storage", "Local .p8 file"]
-  footnote: "Competitor pricing and features reflect each tool's public landing page and App Store description as of 2026-05-13. Itsyconnect Pro is €19.99 lifetime with a free tier for 1 app + 1 developer account; AppMetaHub Indie is $10/mo billed annually ($120/year); ASO.dev Indie is $24.99/mo or $224.99/year (yearly rate ≈ $18.75/mo); NativeConnect's marketing domain (nativeconnect.app) currently 301-redirects off-product so the App Store listing's status is unverified. Verify current pricing before switching."
+      values: ["No — proprietary, funded by paid software", "Yes — MIT, plus a self-hosted Docker option", "No", "No", "Yes — MIT licensed"]
+    - feature: "Where your App Store Connect key is stored"
+      values: ["Mac Keychain, this Mac only", "AES-256-GCM, master key in the Keychain", "Stored server-side", "On device; optional encrypted sync for teams", "Local .p8 file or Apple ID session"]
+  footnote: "Itsyconnect, ASO.dev and fastlane details were checked on 2026-10-25: Itsyconnect against its GitHub README and v1.14.2 release, ASO.dev against its pricing page (per seat, excluding VAT), fastlane against docs.fastlane.tools. AppMetaHub figures come from its landing page as of 2026-05-13 and weren't rechecked; Indie was then $10/mo billed annually ($120/year). Verify current pricing before switching."
 
 plateau_disclosure:
   title: "What AppMeta won't do for you"
   rule: "AppMeta is a native Mac client for the App Store Connect API v1 — an editing and submission surface that runs locally on macOS 14+. It's deliberately not a competitive-intelligence platform or a CI replacement. The trade-off is what keeps it one-time-priced and entirely on your Mac."
-  what_it_does_not_do: "AppMeta will not track competitor keyword rankings — that's Appfigures, AppTweak, Sensor Tower, or RespectASO territory. It will not run inside your CI pipeline as a CLI — Fastlane deliver still belongs in CI, and AppMeta is for interactive editing on the desktop. It will not give you Apple Search Ads campaign management. It will not run on iOS or iPad (it's a macOS app, by design). AI keyword suggestions are only as good as the provider you point it at — bring an API key (Claude / GPT / Gemini) or use Ollama or Apple Intelligence on-device."
+  what_it_does_not_do: "AppMeta will not track keyword rankings over time or research competitors' keywords — that's Appfigures, AppTweak, Sensor Tower, or RespectASO territory; its live research estimates difficulty and demand for the phrases you check. It will not run inside your CI pipeline as a CLI — Fastlane deliver still belongs in CI, and AppMeta is for interactive editing on the desktop. It will not upload builds or give you Apple Search Ads campaign management. It will not run on iOS or iPad (it's a macOS app, by design). AI keyword suggestions are only as good as the provider you point it at — bring an API key (Claude / GPT / Gemini) or use Ollama or Apple Intelligence on-device."
   notes:
-    - "Want to drive AppMeta from Claude Code, Cursor, Codex, or OpenCode via MCP? Not yet — MCP server support is on the AppMeta roadmap. Itsyconnect ships it today if your workflow depends on it."
-    - "Want competitive rank tracking and keyword popularity scoring? Pair AppMeta with Appfigures or AppTweak — different jobs, complementary tools."
+    - "Want to drive AppMeta from Claude Code, Cursor, Codex, or OpenCode via MCP? AppMeta has no MCP server. Itsyconnect ships one today if your workflow depends on it."
+    - "Want rank tracking over time? Pair AppMeta with Appfigures or AppTweak — different jobs, complementary tools."
     - "Want to run metadata pushes in CI? Keep Fastlane deliver in your release pipeline; AppMeta handles the interactive desktop editing flow."
-    - "Want to edit from your iPhone or iPad? AppMeta is macOS only — ASO.dev's Universal app is the closest alternative for cross-Apple-platform editing."
-    - "Want Apple Search Ads campaign management? That's a different product surface; AppMeta covers App Store Connect, not Apple Search Ads Manager."
+    - "Want to edit from your iPhone or iPad? AppMeta is macOS only — ASO.dev's iPhone and iPad apps are the closest alternative for editing away from the Mac."
+    - "Want Apple Search Ads campaign management? That's a different product surface. AppMeta only reads keyword popularity from Apple Ads, and only if you connect your account."
+    - "Want to change promotional text on a live version? AppMeta locks version fields once a version is live, promotional text included, so for now make that edit in App Store Connect."
+    - "Want to fill in App Privacy details (the privacy 'nutrition label')? That stays in App Store Connect; AppMeta links you there from its submission checklist."
     - "Want open source code you can audit and self-host? AppMeta is proprietary — funded by paid software, not advertising or telemetry. Itsyconnect is the open-source option in this category."
 
 training_vocabulary:
   overline: "Speaks ASC's language"
   heading: "The fields, locales, and APIs AppMeta touches."
-  intro: "AppMeta uses Apple's official App Store Connect API v1 with JWT authentication. Below is the canonical surface — the ASC fields with their character limits, the 50 locales supported, the auth model, and the API endpoints AppMeta talks to."
+  intro: "AppMeta uses Apple's official App Store Connect API v1 with JWT authentication. Below is the canonical surface — the ASC fields with their character limits, the 50 locales supported, the auth model, and the endpoints AppMeta talks to."
   groups:
     - heading: "App Store fields (with limits)"
       items:
@@ -238,90 +244,92 @@ training_vocabulary:
     - heading: "Beyond metadata"
       items:
         - "App Review Information (contact, demo account, notes)"
-        - "Pricing & Availability (per-version, per-storefront)"
-        - "Age ratings, App Privacy details, categories"
-        - "TestFlight builds, beta metadata, testing groups"
+        - "Pricing (base price; Apple equalizes the rest) and availability per territory"
+        - "Age ratings, categories, phased release (App Privacy details stay in App Store Connect)"
+        - "TestFlight builds, What to Test, beta description, build groups"
         - "In-App Purchases & Subscription Groups (locale-aware)"
         - "Game Center: Achievements, Leaderboards, Leaderboard Sets"
         - "App Store reviews — read and reply"
-        - "Sales Analytics + Diagnostics (crash signatures, perf metrics)"
+        - "Sales Analytics + Diagnostics (performance metrics, hang and disk-write signatures)"
     - heading: "50 ASC locales (2026)"
       items:
         - "ar-SA · bn · ca · cs · da · de-DE · el · en-AU · en-CA · en-GB · en-US"
         - "es-ES · es-MX · fi · fr-CA · fr-FR · gu · he · hi · hr · hu · id · it"
         - "ja · kn · ko · ml · mr · ms · nl-NL · no · or · pa · pl"
         - "pt-BR · pt-PT · ro · ru · sk · sl · sv · ta · te · th"
-        - "tr · uk · ur · vi · zh-Hans · zh-Hant — plus the 11 locales Apple added in 2026"
+        - "tr · uk · ur · vi · zh-Hans · zh-Hant — including the 11 locales Apple added in 2026"
     - heading: "Auth & API"
       items:
         - "App Store Connect API v1 (api.appstoreconnect.apple.com)"
-        - "JWT authentication with .p8 private key"
+        - "JWT authentication with a team .p8 private key (individual keys have no Issuer ID)"
         - "Issuer ID + Key ID stored in macOS Keychain"
         - ".p8 private key stored in macOS Keychain — never in a plaintext file"
-        - "No app-specific password, no browser session, no scraping"
-        - "Five AI providers: Anthropic Claude, OpenAI GPT, Google Gemini, OpenAI-compatible (Ollama / LM Studio), Apple Intelligence on-device"
+        - "No app-specific password, no browser session"
+        - "Optional: App Store search and lookup, Apple Ads (popularity), ECB exchange rates"
+        - "Five AI options: Anthropic Claude, OpenAI GPT, Google Gemini, OpenAI-compatible (Ollama / LM Studio), Apple Intelligence on-device"
 
 example_insights:
   overline: "What an AppMeta diagnosis looks like"
   heading: "Real ASO outputs, in plain English."
-  intro: "AppMeta's Keyword Optimizer runs on-device against your existing metadata before any AI is involved. These are the kinds of plain-English diagnoses it surfaces — none of them require an API key."
+  intro: "AppMeta's Keyword Optimizer runs on-device against your existing metadata before any AI is involved. These are the kinds of plain-English diagnoses it surfaces — none of them require an API key or a network call."
   cards:
     - tag: "Overlap · Wasted chars"
       headline: "Your en-US subtitle eats 14 characters of your keywords field."
-      body: "AppMeta detected that 4 keywords in en-US already appear verbatim in your subtitle. App Store search treats subtitle + name + keywords as one corpus, so those 14 characters are not earning you any additional ranking. Replace them with 4 unranked stems and recover the surface area."
-    - tag: "Locale gap · Opportunity"
-      headline: "fr-FR has 7 keywords that no other locale uses."
-      body: "Either those 7 French keywords are intentional (regional terms, brand names) or they're stale translations from an old version. AppMeta surfaces the gap; you decide. The most common cause: a French translator added regional vocabulary that never propagated to fr-CA, leaving you with a half-localized French market."
-    - tag: "Duplicate stems · Cleanup"
-      headline: "Your es-ES keywords contain both 'aplicación' and 'app' — pick one."
-      body: "Apple's stemmer treats them as the same root. You're using two of your 100 character slots on the same ranking signal. AppMeta flags every duplicate stem within a locale automatically; pick whichever variant matches local search behavior and reclaim the chars."
+      body: "AppMeta detected that 4 keywords in en-US already appear verbatim in your subtitle. Apple already indexes your name and subtitle, so those 14 characters are not earning you any additional ranking. Replace them with 4 new words and recover the surface area."
+    - tag: "Cross-locale · Duplicates"
+      headline: "en-GB repeats 6 of your en-US keyword phrases."
+      body: "AppMeta flags phrases that appear in more than one locale of the same language, or in locales that share a storefront. If those locales are indexed in the same storefront, the repeats may be spending characters twice on one signal. AppMeta shows the overlap and suggests keeping each phrase in the primary locale; you decide."
+    - tag: "Repeated words · Cleanup"
+      headline: "Your es-ES keywords use 'fotos' in three different phrases."
+      body: "A word only needs to appear once in the keyword field, so the second and third 'fotos' buy you nothing. AppMeta flags words repeated across phrases or already in the name and subtitle, and counts the characters they cost. It matches exact words, so 'foto' and 'fotos' count as different words — plurals are still yours to catch."
     - tag: "Storefront coverage"
-      headline: "Your 'productivity' keyword ranks in en-US but nowhere else."
-      body: "AppMeta cross-references your keywords against the Storefront Intelligence dataset and flags terms that perform well in one storefront but appear unused in the rest. This is the cheapest A/B test in ASO — copy a working keyword from your strongest storefront into the four next-most-similar ones and watch."
+      headline: "Brazil is covered only by your pt-PT listing."
+      body: "AppMeta maps 57 storefronts to the localizations usually associated with them and shows which ones your locales cover directly, which are covered only by fallback, and which aren't covered at all. The mapping is ASO best practice, not an Apple table, and the app labels it that way."
 
 privacy:
   data_collection: "none"
   tracking: false
   account_required: false
   notes:
-    - "No backend servers — AppMeta runs entirely on your Mac"
+    - "No backend servers — AppMeta runs entirely on your Mac, and nothing goes to Lagerland"
     - "No third-party analytics SDKs, no tracking domains, no telemetry"
-    - "App Store Connect credentials stored in macOS Keychain (issuer ID, key ID, .p8 private key) — never in plaintext, never sent to Lagerland"
-    - "AppMeta talks only to <code>api.appstoreconnect.apple.com</code> (and your chosen AI provider, if you configure one)"
+    - "App Store Connect credentials stored in macOS Keychain (issuer ID, key ID, .p8 private key) as this-Mac-only items — never in plaintext, never sent to Lagerland"
+    - "Tokens signed with your key go only to <code>api.appstoreconnect.apple.com</code>; analytics report files download from the storage links Apple's API returns"
+    - "Other requests go to Apple or to a provider you pick: Apple's public App Store endpoints (<code>apps.apple.com</code>, <code>itunes.apple.com</code>, <code>search.itunes.apple.com</code>, <code>amp-api-edge.apps.apple.com</code>) for app icons, competitor prices and live keyword research, which is off until you turn it on; <code>api.ads.apple.com</code> and <code>appleid.apple.com</code> only if you connect Apple Ads; <code>data-api.ecb.europa.eu</code> for exchange rates in sales charts; and your chosen AI provider, if you configure one"
     - "AI provider API keys, when set, are stored in macOS Keychain via the same path as ASC credentials"
     - "See the per-app <a href=\"/transparency/#appmeta\">Privacy Manifest</a> for the declared API usage and tracking-domain list (it's empty)"
 
 faq:
   - q: "What is AppMeta?"
-    a: "AppMeta is a native macOS client for App Store Connect. It edits app metadata across all 50 ASC locales side-by-side, previews word-level diffs before any push, runs AI keyword analysis through whichever provider you trust (Anthropic Claude, OpenAI GPT, Google Gemini, OpenAI-compatible endpoints like Ollama, or Apple Intelligence on-device), and handles full submissions — TestFlight, reviews, In-App Purchases, Game Center — without a browser. macOS 14+ Sonoma. App Store Connect API v1 with JWT and a .p8 key in macOS Keychain. $17.99/year or $29.99 lifetime."
+    a: "AppMeta is a native macOS client for App Store Connect. It edits app metadata across all 50 ASC locales side-by-side, shows the live App Store Connect value next to every change before a push, checks keywords on-device with optional live difficulty and demand readings, runs AI translation and keyword suggestions through whichever provider you trust (Anthropic Claude, OpenAI GPT, Google Gemini, OpenAI-compatible endpoints like Ollama, or Apple Intelligence on-device), and handles the rest of a release — TestFlight, reviews, In-App Purchases, Game Center and submission for review — without a browser. macOS 14+ Sonoma. App Store Connect API v1 with JWT and a team .p8 key in macOS Keychain. $17.99/year or $29.99 lifetime."
   - q: "Is AppMeta an alternative to App Store Connect?"
-    a: "AppMeta works alongside App Store Connect using Apple's official ASC API v1. It provides a faster, safer editing surface than the web UI with features the browser doesn't have — side-by-side editing across all 50 locales, word-level diff preview before any push, keyword diagnosis without an AI call, and five AI providers when you do want generation. Everything goes through Apple's API; nothing is scraped, nothing is stored on a Lagerland server."
+    a: "AppMeta works alongside App Store Connect using Apple's official ASC API v1. It provides a faster, safer editing surface than the web UI with features the browser doesn't have — side-by-side editing across all 50 locales, the live value next to your edit before any push, keyword diagnosis without an AI call, and five AI options when you do want generation. Your App Store Connect data goes through Apple's API; nothing is scraped from App Store Connect, and nothing is stored on a Lagerland server. A few things still need the website, such as App Privacy details."
   - q: "How is AppMeta different from Fastlane deliver?"
-    a: "Fastlane deliver is a CLI tool built for CI/CD pipelines — strong when you want metadata in version control and automatic uploads on every release. AppMeta is a desktop tool for the interactive editing surface itself — all 50 locales visible at once, word-level diffs before pushes, keyword optimization, review management, In-App Purchase and Game Center editing. They are complementary: many developers keep Fastlane deliver in their release pipeline and use AppMeta for the manual editing flow."
+    a: "Fastlane deliver is a CLI tool built for CI/CD pipelines — strong when you want metadata in version control and automatic uploads on every release. AppMeta is a desktop tool for the interactive editing surface itself — every locale of a field visible at once, the live value next to each change before a push, keyword optimization, review management, In-App Purchase and Game Center editing. They are complementary: many developers keep Fastlane deliver in their release pipeline and use AppMeta for the manual editing flow."
   - q: "How is AppMeta different from Itsyconnect?"
-    a: "Itsyconnect is an excellent native Mac client for App Store Connect at €19.99 lifetime (≈$22) — close to AppMeta's $29.99 lifetime. The honest difference is scope. AppMeta manages In-App Purchases, Subscription Groups, and Game Center (Achievements, Leaderboards, Leaderboard Sets) with locale-aware UI — Itsyconnect doesn't list any of those three. AppMeta supports Apple Intelligence on-device for keyword analysis (zero API key, zero network call, requires macOS 26) — Itsyconnect offers six cloud-only AI providers (Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek). Itsyconnect offers MCP integration with Claude Code, Cursor, Codex, and OpenCode — AppMeta does not yet, though it's on the roadmap. Itsyconnect is open source with a self-hosted Docker option; AppMeta is proprietary, funded by honest paid software. The decision: ship a simple app and never touch IAPs / Game Center and want MCP from your IDE → Itsyconnect is the cheaper fit. Ship across many locales, monetize through subscriptions, ship Game Center content, or want Apple Intelligence keyword analysis on-device → AppMeta is the broader-scope tool."
+    a: "Itsyconnect is a good App Store Connect client for the Mac, and it's free and MIT-licensed, built on Electron with a self-hosted Docker option. AppMeta is a native SwiftUI app at $17.99/year or $29.99 lifetime. The honest difference is scope. AppMeta creates and edits In-App Purchases, subscriptions and Subscription Groups, and Game Center (Achievements, Leaderboards, Leaderboard Sets), with locale-aware UI — Itsyconnect doesn't cover any of those. AppMeta can run its AI on-device with Apple Intelligence (zero API key, zero network call, requires macOS 26) or a local model — Itsyconnect offers six cloud providers (Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek). Itsyconnect has an MCP server for Claude Code, Cursor, Codex, and OpenCode and a wider analytics view — AppMeta has no MCP server. The decision: you don't sell IAPs or use Game Center, or you want free, open source or MCP → Itsyconnect. You monetize through in-app purchases, ship Game Center content, or want on-device AI → AppMeta. The full comparison is on the Itsyconnect alternative page."
   - q: "How is AppMeta different from NativeConnect?"
-    a: "NativeConnect was a native AppKit Mac client for App Store Connect in the same shape as AppMeta. As of 2026-05, the NativeConnect marketing website (nativeconnect.app) 301-redirects off-product, suggesting the project is no longer actively maintained. AppMeta is the actively-maintained native Mac client in that category — built on SwiftUI + SwiftData, macOS 14+, App Store Connect API v1, with regular updates. Verify NativeConnect's current status on the App Store before deciding."
+    a: "NativeConnect was a native Mac client for App Store Connect in the same shape as AppMeta. It was pulled from the Mac App Store in 2020 and hasn't been available since, so it isn't a current option. AppMeta is an actively maintained native Mac client in that category — built on SwiftUI + SwiftData, macOS 14+, App Store Connect API v1, with regular updates."
   - q: "How is AppMeta different from AppMetaHub and ASO.dev?"
-    a: "AppMetaHub and ASO.dev are excellent web-based metadata editors at subscription pricing — AppMetaHub Indie is $10/month, ASO.dev Indie is $24.99/month or $224.99/year. AppMeta is a native Mac app (not a browser) at $17.99/year or $29.99 lifetime. Three years of AppMetaHub Indie is around $360, three years of ASO.dev Indie is around $675, three years of AppMeta is $29.99 lifetime or $68.97 annual. The structural trade-off: web tools give you any-browser access; AppMeta gives you native performance, offline editing, and a lifetime option. AppMeta also supports more locales (50 vs AppMetaHub's 37 as of 2026-05)."
+    a: "AppMetaHub and ASO.dev are subscription tools. AppMetaHub is a web app; its Indie plan was $10/month in May 2026. ASO.dev has apps for Mac, iPhone, iPad, Windows, Linux and Android and is priced per seat — Indie is $29/month billed yearly ($348/year) as of October 2026. AppMeta is a native Mac app at $17.99/year or $29.99 lifetime. Three years of AppMetaHub Indie is around $360, three years of ASO.dev Indie is around $1,044, three years of AppMeta is $29.99 lifetime or $53.97 annual. The structural trade-off: they give you a browser or more platforms, team seats and (for ASO.dev) rank tracking; AppMeta gives you a native Mac app, edits saved locally until you push, Game Center editing and a lifetime option. AppMeta also supports more locales than AppMetaHub did in May 2026 (50 vs 37)."
   - q: "Which AI providers does AppMeta support for keyword generation?"
-    a: "Five, out of the box: Anthropic Claude (Sonnet 4.6 default, your API key), OpenAI GPT (GPT-4o default, your API key), Google Gemini (2.0 Flash, your API key), any OpenAI-compatible endpoint (Ollama on llama3.2, LM Studio, local proxies — no key required), and Apple Intelligence on-device (requires macOS 26 and Apple Intelligence enabled — zero API key, zero network call). You pay your provider directly; AppMeta does not meter, proxy, or store your prompts or responses anywhere. Switching providers is one menu pick."
+    a: "Five options, out of the box: Anthropic Claude, OpenAI GPT and Google Gemini with your own API key, any OpenAI-compatible endpoint (Ollama, LM Studio, local proxies — no key required), and Apple Intelligence on-device (requires macOS 26 and Apple Intelligence enabled — zero API key, zero network call). You pay your provider directly; requests go from your Mac straight to the provider, and AppMeta doesn't meter or proxy them. Switching providers is one menu pick."
   - q: "Does AppMeta need an AI API key to work?"
-    a: "No. AppMeta's Keyword Optimizer — overlap detection, duplicate-stem cleanup, locale-gap analysis, storefront coverage diagnostics — runs entirely on-device against your existing metadata, with no AI call required. AI keyword generation is opt-in and requires either a third-party API key (Claude / GPT / Gemini), a local endpoint (Ollama / LM Studio), or macOS 26 with Apple Intelligence."
+    a: "No. AppMeta's Keyword Optimizer — overlap detection, repeated-word cleanup, cross-locale duplicates, storefront coverage — runs entirely on-device against your existing metadata, with no AI call required. Live difficulty and demand readings come from the App Store and need no AI key either. AI keyword generation is opt-in and requires either a third-party API key (Claude / GPT / Gemini), a local endpoint (Ollama / LM Studio), or macOS 26 with Apple Intelligence."
   - q: "Is AppMeta safe? Where do my App Store Connect credentials go?"
-    a: "AppMeta uses Apple's official App Store Connect API v1 — no scraping, no app-specific password, no browser session. You generate a .p8 API key in App Store Connect (Users and Access → Keys → App Store Connect API) and paste the Issuer ID, Key ID, and .p8 file into AppMeta once. All three are stored in macOS Keychain — the private key is never written to a plaintext file. The only network endpoint AppMeta talks to is <code>api.appstoreconnect.apple.com</code> (and your chosen AI provider, if you configure one). See the per-app Privacy Manifest on the transparency page for the full declared API usage."
+    a: "AppMeta uses Apple's official App Store Connect API v1 — no scraping, no app-specific password, no browser session. You generate a team API key in App Store Connect (Users and Access → Integrations → App Store Connect API) and enter the Issuer ID, Key ID, and .p8 file into AppMeta once; individual keys aren't supported, because they have no Issuer ID. All three are stored in macOS Keychain as items that stay on that Mac — the private key is never written to a plaintext file. Tokens signed with it go only to <code>api.appstoreconnect.apple.com</code>. AppMeta also contacts Apple's public App Store endpoints (app icons, competitor prices and, if you turn it on, live keyword research), Apple Ads if you connect it, the European Central Bank's exchange-rate API for sales charts, and your chosen AI provider. None of these is a Lagerland server. See the per-app Privacy Manifest on the transparency page for the declared API usage."
   - q: "Is AppMeta free?"
-    a: "AppMeta is free to download with a full demo mode (browse the UI with sample data — no Apple Developer account required to evaluate the app). Pro is $17.99/year, or $29.99 lifetime — one-time, no recurring fees. Applies across every Mac you sign in to the App Store with. Prices in USD; the App Store shows your local currency at checkout."
+    a: "AppMeta is free to download and runs in demo mode: you can walk through every screen with realistic sample data, no Apple Developer account required. Connecting your own App Store Connect account needs Pro — $17.99/year, or $29.99 lifetime, one-time, no recurring fees. Applies across every Mac you sign in to the App Store with. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Can I submit apps for review through AppMeta?"
-    a: "Yes. AppMeta supports the full submission flow — App Review Information, version pricing and availability, categories, age ratings, App Privacy details, and version submission. The entire release surface without a browser tab."
+    a: "Yes. App Review Information, base price and territory availability, categories, age ratings, phased release, attaching a build and submitting the version for review all happen in AppMeta. App Privacy details are the exception: AppMeta checks that a privacy policy URL is set and opens App Store Connect for the data declarations. Builds themselves are uploaded with Xcode, Transporter or fastlane."
   - q: "How many App Store Connect locales does AppMeta support?"
-    a: "All 50 ASC locales as of 2026. AppMeta's canonical locale list includes the 11 locales Apple added in 2026: Bangla (bn), Gujarati (gu), Kannada (kn), Malayalam (ml), Marathi (mr), Odia (or), Punjabi (pa), Tamil (ta), Telugu (te), Slovenian (sl), and Urdu — alongside the previously-supported 39 locales. AppMeta updates the locale list when Apple does."
+    a: "All 50 ASC locales as of 2026. AppMeta's canonical locale list includes the 11 locales Apple added in 2026: Bangla (bn), Gujarati (gu), Kannada (kn), Malayalam (ml), Marathi (mr), Odia (or), Punjabi (pa), Tamil (ta), Telugu (te), Slovenian (sl), and Urdu (ur) — alongside the previously-supported 39 locales. AppMeta updates the locale list when Apple does."
   - q: "Does AppMeta manage In-App Purchases, subscriptions, and Game Center?"
-    a: "Yes. In-App Purchases and Subscription Groups are editable with locale-aware UI. Game Center Achievements, Leaderboards, and Leaderboard Sets are editable with the same per-locale workflow. Reviews are readable and repliable across all regions in one view."
+    a: "Yes. In-App Purchases, subscriptions and Subscription Groups are editable with locale-aware UI, including prices, availability, introductory offers and review screenshots. Game Center Achievements, Leaderboards, and Leaderboard Sets are editable with the same per-locale workflow. Reviews from every storefront are readable and repliable in one list."
   - q: "Will AppMeta replace Appfigures, AppTweak, or Sensor Tower?"
-    a: "No — different tools for different jobs. AppMeta is a metadata editor and submission client for the App Store Connect API. Appfigures, AppTweak, Sensor Tower, and RespectASO are competitive-intelligence platforms — keyword rank tracking, popularity scoring, competitor research, market analysis. Most indie developers use one of each: AppMeta for editing, an intelligence platform for research."
+    a: "No — different tools for different jobs. AppMeta is a metadata editor and submission client for the App Store Connect API. It can estimate difficulty and demand for the keywords you check, but it doesn't track rankings over time or research competitors' keywords. Appfigures, AppTweak, Sensor Tower, and RespectASO are competitive-intelligence platforms — keyword rank tracking, competitor research, market analysis. Most indie developers use one of each: AppMeta for editing, an intelligence platform for research."
   - q: "What macOS version does AppMeta require?"
-    a: "macOS 14 (Sonoma) and later. Apple Intelligence on-device support requires macOS 26 and Apple Intelligence enabled. The other four AI providers (Anthropic, OpenAI, Google, OpenAI-compatible) work on any supported macOS version."
+    a: "macOS 14 (Sonoma) and later. Apple Intelligence on-device support requires macOS 26 and Apple Intelligence enabled. The other four AI options (Anthropic, OpenAI, Google, OpenAI-compatible) work on any supported macOS version."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -329,12 +337,12 @@ support:
 
 release:
   first_release: "2026-02-01"
-  last_updated: "2026-05-13"
-  last_audited: "2026-05-13"
-  audit_round: "3 (response to Itsyconnect entering SERP)"
+  last_updated: "2026-10-21"
+  last_audited: "2026-10-25"
+  audit_round: "4 (copy checked against the 2.7.0 source)"
 
 related_apps:
   - appmeta-pulse
   - mockly
 ---
-AppMeta is a native macOS client for App Store Connect, built for indie iOS and macOS developers who ship more than one app and want their editing surface on the desktop rather than in a browser tab. It edits app metadata across all 50 ASC locales side-by-side — including the 11 Indian-region locales Apple added in 2026 (Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, plus Slovenian and Urdu) — with real-time character-count validation, word-level diff preview before any push, and per-field, per-locale, or all-at-once sync granularity. Keyword diagnosis runs entirely on-device: keyword/subtitle overlap detection, duplicate-stem cleanup, locale-gap analysis, search-coverage diagnostics, and storefront-coverage anomalies. AI keyword generation is opt-in and runs through whichever provider you trust — Anthropic Claude (Sonnet 4.6 default), OpenAI GPT (GPT-4o), Google Gemini (2.0 Flash), any OpenAI-compatible endpoint (Ollama on llama3.2, LM Studio, local proxies), or Apple Intelligence on-device (macOS 26, zero API key, zero network call). The full release surface is in one app: TestFlight build management, beta metadata, review reading and reply, App Review Information, pricing, age ratings, App Privacy details, full version submission, In-App Purchases, Subscription Groups, and Game Center editing (Achievements, Leaderboards, Leaderboard Sets) with locale-aware UI. Built on the App Store Connect API v1 with JWT authentication and a .p8 private key stored in macOS Keychain — no app-specific password, no scraped browser session. SwiftUI + SwiftData, macOS 14+ Sonoma. No backend servers, no analytics SDKs, no tracking domains. $17.99/year or $29.99 lifetime. The same tool Lagerland ships every release of all 20 catalogue apps with.
+AppMeta is a native macOS client for App Store Connect, built for indie iOS and macOS developers who ship more than one app and want their editing surface on the desktop rather than in a browser tab. It edits app metadata across all 50 ASC locales side-by-side — including the 11 locales Apple added in 2026 (Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, Slovenian and Urdu) — with live character counts, the live App Store Connect value next to every change before a push, and per-field, per-locale, or all-at-once sync granularity. Keyword diagnosis runs entirely on-device: keyword/subtitle overlap detection, repeated-word cleanup, cross-locale duplicates, search-coverage counts, and storefront coverage. Live keyword research is opt-in: difficulty from the apps that rank for a phrase, demand from Apple's search suggestions or your own Apple Ads account, and competitor in-app purchase prices. AI keyword generation and translation are opt-in and run through whichever provider you trust — Anthropic Claude, OpenAI GPT, Google Gemini, any OpenAI-compatible endpoint (Ollama, LM Studio, local proxies), or Apple Intelligence on-device (macOS 26, zero API key, zero network call). The release surface is in one app: TestFlight builds and What to Test, review reading and reply, App Review Information, pricing and availability, age ratings, submission for review, In-App Purchases, Subscription Groups, and Game Center editing (Achievements, Leaderboards, Leaderboard Sets) with locale-aware UI. App Privacy details stay in App Store Connect. Built on the App Store Connect API v1 with JWT authentication and a team .p8 private key stored in macOS Keychain — no app-specific password, no scraped browser session. SwiftUI + SwiftData, macOS 14+ Sonoma. No backend servers, no analytics SDKs, no tracking domains. Free demo mode; $17.99/year or $29.99 lifetime to connect your account. The same tool Lagerland ships every release of all 20 catalogue apps with.

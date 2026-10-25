@@ -3,6 +3,7 @@ layout: journal
 slug: when-does-apple-pay-developers
 title: "When does Apple pay developers? The App Store fiscal calendar, payment dates and missing months"
 date: 2026-10-17
+last_updated: 2026-10-25
 seo:
   title: "When Does Apple Pay Developers? Fiscal Calendar Explained"
   description: "Apple pays App Store proceeds within 45 days of each fiscal month's end. The fiscal calendar, 2026 payment dates, thresholds, currency, and missing months."
@@ -114,4 +115,4 @@ Sales and Trends counts a purchase when the customer starts it and estimates USD
 
 [AppMeta Pulse](/apps/appmeta-pulse/) reads the daily Sales and Trends reports through the App Store Connect API. It doesn't read Payments and Financial Reports, so it can't tell you when a payment will land or what it will be after conversion and fees. For that, the Payments page above is the source.
 
-Payments and Financial Reports is still the first place Pulse sends you: the Vendor Number it needs to download sales reports is shown there, under your legal entity name. After that, Pulse covers the daily side, with proceeds by app, refunds, and subscription figures such as the [MRR worked out from Apple's Subscription report](/journal/how-to-calculate-mrr-for-app-store-subscriptions/). It also keeps its own copy of the daily reports after Apple's one-year window for them closes.
+Payments and Financial Reports is still the first place Pulse sends you: the Vendor Number it needs to download sales reports is shown there, under your legal entity name. After that, Pulse covers the daily side, with proceeds and downloads by app, net of refunds, and subscription figures such as the [MRR worked out from Apple's Subscription report](/journal/how-to-calculate-mrr-for-app-store-subscriptions/). It also keeps its own copy of the daily reports after Apple's one-year window for them closes.

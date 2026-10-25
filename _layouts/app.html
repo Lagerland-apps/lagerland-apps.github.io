@@ -61,12 +61,12 @@ layout: default
   },
   {%- endif -%}
   {%- comment %}
-    priceCurrency defaults to EUR for catalogue consistency; apps with
-    USD-priced App Store listings (US-only pricing tiers, indie-dev
-    tooling) can override via `price_currency:` frontmatter so the
+    priceCurrency defaults to USD because every app's visible price.value
+    is the US App Store price in dollars. An app priced in another
+    currency can override via `price_currency:` frontmatter so the
     schema currency matches the visible price.
   {%- endcomment -%}
-  {%- assign price_currency = page.price_currency | default: "EUR" -%}
+  {%- assign price_currency = page.price_currency | default: "USD" -%}
   "offers": {%- assign price_model = page.price.model | downcase -%}
   {%- if price_model contains 'one-time' -%}
   {

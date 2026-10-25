@@ -3,6 +3,7 @@ layout: journal
 slug: how-to-estimate-your-one-rep-max
 title: "How to estimate your one-rep max: Epley, Brzycki and five other formulas, worked through"
 date: 2026-06-06
+last_updated: 2026-10-25
 seo:
   title: "How to Estimate Your One-Rep Max: 1RM Formulas"
   description: "Estimate your one-rep max from a set of reps with Epley, Brzycki or Lombardi, see why the formulas drift past 10 reps, and when to test a true single."
@@ -30,7 +31,7 @@ faq:
   - q: "When should I test a true one-rep max?"
     a: "When the exact number is the point: a powerlifting meet, a program whose percentages are built on a tested max, or the end of a peaking block when you are fresh. Not when you are stalled, tired, or coming back from a layoff. Use safeties or spotters and a gradual warm-up, and if you are working around an injury, get advice from a clinician or a coach who can watch you lift."
   - q: "Which 1RM formula does GymLogger X use?"
-    a: "Epley, everywhere an estimated 1RM appears. A logged single counts as its own 1RM rather than being run through the formula. The rep-max table shows your best weight at 1, 3, 5, 8, 10 and 12 reps, marks any slot it had to estimate, and only fills the 1RM slot with a single you actually lifted."
+    a: "Epley, everywhere an estimated 1RM appears. A logged single counts as its own 1RM rather than being run through the formula. The rep-max table shows your best weight at 1, 3, 5, 8, 10 and 12 reps and marks any slot it had to estimate; only a single you actually lifted counts as an actual 1RM there."
 mentioned_apps:
   - gymlogger-x
 read_time: "7 min read"
@@ -133,6 +134,6 @@ A few details follow from the reasoning in this post:
 
 - A logged single is its own 1RM. The app doesn't run a single through the formula and hand you 103.3 kg for a 100 kg lift.
 - The rep-max table on each exercise shows your best weight at 1, 3, 5, 8, 10 and 12 reps. Slots come from sets you actually lifted where possible, and any slot the app had to estimate is labelled as an estimate.
-- The 1RM slot in that table only takes a single you really did. Everything else about your max is an estimate, and the screen says so.
+- Only a single you really did counts as an actual 1RM in that table. Until you log one, the 1RM slot shows an estimate, and the screen says so.
 
 The plateau rule built on top of this is published in full on the [app page](/apps/gymlogger-x/), and the reasoning behind making the Apple Watch the logging surface is in [the post on why GymLogger X exists](/journal/the-strength-logger-no-one-asked-for/). If you are still choosing an app, the [guide to workout apps without a subscription](/guides/workout-app-without-subscription/) compares the field by pricing model.

@@ -13,14 +13,14 @@ seo:
     - "pay what you want app"
     - "liftlog"
 date: 2026-04-25
-last_updated: 2026-08-14
+last_updated: 2026-10-25
 lede: "LiftLog — a design-led strength training log for iPhone — is on the App Store today. There is no subscription. After seven days free with no card on file, you decide what it's worth to you: $9.99, $19.99, $29.99, or $39.99. Once. Here's why."
 quick_answer: "LiftLog is a design-led iPhone strength training log priced on a pay-what-you-can model. After a seven-day free trial with no card on file, the user picks one of four one-time tiers — Fair $9.99, Good $19.99, Generous $29.99, or Patron $39.99 — all unlocking the same app. No subscription, no auto-renew."
 faq:
   - q: "How much does LiftLog cost after the free trial?"
     a: "After the seven-day card-free trial, LiftLog offers four one-time tiers: Fair $9.99, Good $19.99, Generous $29.99, or Patron $39.99. All four tiers unlock the same app with no extra features behind a higher price. There is no subscription and no auto-renewal."
   - q: "What is the difference between LiftLog and GymLogger X?"
-    a: "GymLogger X is the studio's Apple-Watch-first strength logger priced at $39.99 lifetime or $17.99 a year. LiftLog is iPhone-first and design-led, with a custom haptic keypad and a pay-what-you-can purchase model. Live on the watch and want speed: GymLogger X. Live on iPhone and want polish: LiftLog."
+    a: "GymLogger X is the studio's other strength logger, with an Apple Watch app for logging sets and Pro priced at $39.99 lifetime or $17.99 a year. LiftLog is iPhone-only and design-led, with a custom haptic keypad and a pay-what-you-can purchase model. Want to log from the watch: GymLogger X. Live on iPhone and want polish: LiftLog."
   - q: "Why does LiftLog use pay-what-you-can pricing instead of a subscription?"
     a: "Strength training history accumulates value over years, so charging monthly rent on a user's own data felt structurally wrong for a one-person studio. A one-time tier ladder gives the user agency over what the app is worth to them while keeping the training journal accessible if the studio ever disappears."
   - q: "Does LiftLog require an account or cloud sync?"
@@ -77,14 +77,14 @@ A few clarifications, because I've already had two friends ask:
 
 ## Why LiftLog *and* GymLogger X
 
-Lagerland Apps already has a strength training app: [GymLogger X](/apps/gymlogger-x/). Apple Watch is a first-class client; Smart Programs and plateau detection do real work; the price is $39.99 lifetime or $17.99/year. That app is not going anywhere. People who want a fast Apple-Watch-led logger should buy GymLogger X — it's the better tool for that job.
+Lagerland Apps already has a strength training app: [GymLogger X](/apps/gymlogger-x/). It has an Apple Watch app for logging sets from the wrist, generated programs and plateau detection; the price is $39.99 lifetime or $17.99/year. That app is not going anywhere. People who want a fast logger they can use from Apple Watch should buy GymLogger X — it's the better tool for that job.
 
 LiftLog is a different bet:
 
-- **Design-led, iPhone-first.** Tabular numerics, a custom haptic numeric keypad during sets, a restrained dark navy palette, [periodized programs](/journal/choosing-a-strength-program-you-will-finish/) visualized as a clean dashboard. This is the app for lifters who care how their tools feel, not just what they do.
+- **Design-led, iPhone-first.** Tabular numerics, a custom haptic numeric keypad during sets, a restrained navy palette, and [programs](/journal/choosing-a-strength-program-you-will-finish/) you build yourself, with supersets and giant sets. This is the app for lifters who care how their tools feel, not just what they do.
 - **A pricing experiment.** GymLogger X is the conventional answer (lifetime + optional annual). LiftLog is the contrarian one (pay what you can, once). I want both in the catalogue so I can learn from both.
 
-If you can't decide between them, the heuristic is simple: live on Apple Watch and want speed → GymLogger X. Live on iPhone and want polish → LiftLog. Want to support an indie studio's pricing experiment → LiftLog at the Patron tier. None of these are wrong answers.
+If you can't decide between them, the heuristic is simple: want to log from Apple Watch → GymLogger X. Live on iPhone and want polish → LiftLog. Want to support an indie studio's pricing experiment → LiftLog at the Patron tier. None of these are wrong answers.
 
 ## What I'll be watching
 

@@ -13,6 +13,7 @@ seo:
     - "marketing screenshots app"
     - "mockly"
 date: 2026-03-14
+last_updated: 2026-10-25
 lede: "App Store screenshots are the highest-leverage assets in the indie marketing stack and most indie developers, including past versions of me, treat them as the worst chore of every release. Mockly is the studio's argument that the workflow should be a native Mac app, not a YAML-driven CI script."
 quick_answer: "Mockly is a native Mac alternative to fastlane snapshot, frameit, and deliver for indie iOS developers who treat App Store screenshots as editorial work. It composes layouts with 3D Metal-rendered device frames, swaps screenshots and copy across 20+ App Store locales, and uploads directly to App Store Connect. $12.99 lifetime with Family Sharing support."
 faq:
@@ -76,7 +77,7 @@ It does not, deliberately, replace the automation pipeline. If your studio has a
 
 ## Why $12.99 lifetime, with Family Sharing
 
-The pricing decision here is the most aligned with the [AppMeta pricing decision](/journal/native-mac-client-for-app-store-connect/) from a few weeks back: a one-time purchase, lifetime access, no subscription.
+The pricing decision here is the most aligned with the [AppMeta pricing decision](/journal/native-mac-client-for-app-store-connect/) from a few weeks back: a one-time purchase, lifetime access, no subscription required.
 
 The specific addition for Mockly is **Family Sharing support**. A two-developer studio (me and a co-founder, two indie partners, a couple-run studio) can share a single $12.99 license. This was a deliberate choice — the alternative would have been per-seat pricing, which is the right call for SaaS but the wrong call for a tool that small studios use intermittently.
 

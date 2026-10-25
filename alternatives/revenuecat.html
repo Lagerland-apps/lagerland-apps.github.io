@@ -2,7 +2,7 @@
 layout: default
 permalink: /alternatives/revenuecat/
 title: "RevenueCat Alternative"
-quick_answer: "RevenueCat and AppMeta Pulse do different jobs. RevenueCat is an in-app purchase backend: an SDK and server that handle entitlements, paywalls and experiments across the App Store, Google Play, Stripe and other stores, with charts and a free mobile app on top. It is free up to $2,500 in monthly tracked revenue, then 1% of tracked revenue. AppMeta Pulse adds nothing to your app: it reads Apple's own Sales and Trends and Subscription reports with your App Store Connect API key and shows proceeds, MRR, trials and refunds for every app in the account. Pick RevenueCat if you want it to run your purchases; pick Pulse if you only want to read your App Store numbers."
+quick_answer: "RevenueCat and AppMeta Pulse do different jobs. RevenueCat is an in-app purchase backend: an SDK and server that handle entitlements, paywalls and experiments across the App Store, Google Play, Stripe and other stores, with charts and a free mobile app on top. It is free up to $2,500 in monthly tracked revenue, then 1% of tracked revenue. AppMeta Pulse adds nothing to your app: it reads Apple's own Sales and Trends and Subscription reports with your App Store Connect API key and shows proceeds, MRR, trials and downloads for every app in the account. Pick RevenueCat if you want it to run your purchases; pick Pulse if you only want to read your App Store numbers."
 seo:
   title: "RevenueCat Alternative With No SDK — AppMeta Pulse"
   description: "AppMeta Pulse vs RevenueCat: RevenueCat runs your in-app purchases with an SDK and charts; Pulse reads Apple's own reports with nothing added to your app."
@@ -85,7 +85,7 @@ seo:
     </div>
     <div class="card">
       <div class="card-title">Which numbers you see</div>
-      <div class="card-text"><strong>AppMeta Pulse:</strong> Apple's own terms. Proceeds after commission and tax by default, or Sales with one setting; MRR from Apple's Subscription report; trials, refunds and downloads. The figures are next-day, because Apple publishes daily reports the following day.<br><br><strong>RevenueCat:</strong> RevenueCat's metrics: active trials, active subscriptions, MRR, revenue, new and active customers, updated in near real time. The Overview's revenue card is gross, before store fees and taxes.<br><br>Expect the two to differ. They measure at different points and on different bases.</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> Apple's own terms. Proceeds after commission and tax by default, or Sales with one setting; MRR from Apple's Subscription report; trials, and downloads net of refunds. The figures are next-day, because Apple publishes daily reports the following day.<br><br><strong>RevenueCat:</strong> RevenueCat's metrics: active trials, active subscriptions, MRR, revenue, new and active customers, updated in near real time. The Overview's revenue card is gross, before store fees and taxes.<br><br>Expect the two to differ. They measure at different points and on different bases.</div>
     </div>
     <div class="card">
       <div class="card-title">Stores and customers</div>
@@ -144,7 +144,7 @@ seo:
       <div class="card-title">Pick AppMeta Pulse if…</div>
       <ul class="bullets">
         <li>You write your own StoreKit code and don't want a purchase backend just to see charts</li>
-        <li>You want numbers in Apple's own terms, proceeds and sales, that line up with App Store Connect</li>
+        <li>You want numbers in Apple's own terms, proceeds and sales, read from Apple's own reports</li>
         <li>You have paid apps or older apps that will never get an SDK update</li>
         <li>You want history from the day you connect: Pulse downloads the last year of Apple's daily reports</li>
         <li>You want a privacy label that says Data Not Collected</li>
@@ -187,7 +187,7 @@ seo:
 <section class="cta-section reveal">
   <p class="overline">Try it</p>
   <h2 class="h2">Open AppMeta Pulse.</h2>
-  <p class="lead">Your App Store proceeds, MRR and refunds, read from Apple's own reports. No SDK, zero data collection on the privacy label, from $0.99/month.</p>
+  <p class="lead">Your App Store proceeds, MRR and subscriptions, read from Apple's own reports. No SDK, zero data collection on the privacy label, from $0.99/month.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/appmeta-pulse/">Learn about AppMeta Pulse</a>
     <a class="btn btn-secondary" href="/alternatives/app-store-connect-app/">AppMeta Pulse vs the App Store Connect app</a>

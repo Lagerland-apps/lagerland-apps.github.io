@@ -32,7 +32,7 @@ faq:
   - q: "When is the App Store Connect Subscription report available?"
     a: "Daily Sales and Trends reports, the Subscription report among them, are available the following day, generally by 8 a.m. Pacific Time, and a report day runs from midnight to 11:59 p.m. Pacific Time. Apple lists the Subscription report's availability condition as at least one auto-renewable subscription sold, including introductory prices. Daily reports are kept for one year after they become available."
   - q: "How does AppMeta Pulse calculate MRR?"
-    a: "AppMeta Pulse downloads the daily Subscription report through the App Store Connect API with your own key. For each row it multiplies Developer Proceeds by Active Standard Price Subscriptions and divides by the number of months the plan covers (1, 2, 3, 6 or 12), keeps the totals per proceeds currency, and converts them to your display currency with the European Central Bank's monthly average rates only when the number is shown. Trials are counted separately and never enter MRR. Over a period, Pulse shows the average MRR across the days that have a report."
+    a: "AppMeta Pulse downloads the daily Subscription report through the App Store Connect API with your own key. For each row it multiplies Developer Proceeds by Active Standard Price Subscriptions and divides by the number of months the plan covers (1, 2, 3, 6 or 12, or about 0.23 for a weekly plan), keeps the totals per proceeds currency, and converts them to your display currency with the European Central Bank's monthly average rates only when the number is shown. Trials are counted separately and never enter MRR. Over a period, Pulse shows the average MRR across the days that have a report."
 mentioned_apps:
   - appmeta-pulse
 read_time: "8 min read"
@@ -116,7 +116,7 @@ Daily Sales and Trends reports are available the following day, generally by 8 a
 
 ## How AppMeta Pulse calculates it
 
-[AppMeta Pulse](/apps/appmeta-pulse/) downloads the daily Subscription report through the App Store Connect API, using a key you create that stays in your Keychain. The [API access page](/apps/appmeta-pulse/api-access/) lists the endpoints it calls and the role the key needs. For each row, Pulse multiplies Developer Proceeds by Active Standard Price Subscriptions and divides by the number of months the plan covers: 1, 2, 3, 6 or 12. Trials are counted and shown on their own; they never enter MRR. Introductory and promotional offers stay out too, because the standard-price column already excludes them.
+[AppMeta Pulse](/apps/appmeta-pulse/) downloads the daily Subscription report through the App Store Connect API, using a key you create that stays in your Keychain. The [API access page](/apps/appmeta-pulse/api-access/) lists the endpoints it calls and the role the key needs. For each row, Pulse multiplies Developer Proceeds by Active Standard Price Subscriptions and divides by the number of months the plan covers: 1, 2, 3, 6 or 12, or about 0.23 for a weekly plan. Trials are counted and shown on their own; they never enter MRR. Introductory and promotional offers stay out too, because the standard-price column already excludes them.
 
 The totals are kept per proceeds currency. Conversion happens only when a number is shown, into the display currency you choose in Settings, using the European Central Bank's monthly average rates.
 
