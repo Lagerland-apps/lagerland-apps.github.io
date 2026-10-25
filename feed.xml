@@ -3,12 +3,15 @@ permalink: /feed.xml
 layout: none
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ site.url }}/" xml:lang="en">
   <title>Lagerland Apps — Journal</title>
-  <subtitle>Rebrand stories, shipping notes, and essays about building privacy-first Apple apps as a one-person studio.</subtitle>
+  <subtitle>Sourced how-to guides (sleep, strength training, bills, pet health, chess, shogi, xiangqi, App Store Connect) and essays from a one-person, privacy-first Apple app studio.</subtitle>
   <link href="{{ site.url }}/feed.xml" rel="self"/>
   <link href="{{ site.url }}/journal/"/>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
+{%- assign posts = site.journal | sort: "date" | reverse -%}
+{%- assign feed_updated = posts.first.date -%}
+{%- for p in posts -%}{%- assign _u = p.last_updated | default: p.date | date: '%s' | plus: 0 -%}{%- assign _f = feed_updated | date: '%s' | plus: 0 -%}{%- if _u > _f -%}{%- assign feed_updated = p.last_updated | default: p.date -%}{%- endif -%}{%- endfor %}
+  <updated>{{ feed_updated | date_to_xmlschema }}</updated>
   <id>{{ site.url }}/</id>
   <author>
     <name>Lagerland Apps</name>
@@ -18,7 +21,6 @@ layout: none
   <rights>&#169; {{ "now" | date: "%Y" }} Lagerland Apps</rights>
   <icon>{{ site.url }}/assets/icons/lagerland-mark.png</icon>
   <logo>{{ site.url }}/assets/icons/lagerland-mark.png</logo>
-{%- assign posts = site.journal | sort: "date" | reverse -%}
 {% for post in posts %}
   <entry>
     <title>{{ post.title | xml_escape }}</title>

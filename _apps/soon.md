@@ -341,6 +341,7 @@ related_journal:
 # in-body contextual links return 5–25% organic uplift.
 show_body: true
 about_heading: "What Soon. does — countdown app, planner, widgets, weather"
+last_updated: 2026-10-09
 ---
 Soon. is a [countdown and planner app for iPhone](#features) — the complete rebuild of TheWait — that turns important moments into living countdowns. Trips, weddings, birthdays, anniversaries, graduations, due dates, and personal milestones each render full-bleed with a photo background you pin yourself, live weather for the destination, and daily notes that shift as the date approaches.
 

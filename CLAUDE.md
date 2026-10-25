@@ -1,8 +1,60 @@
 # CLAUDE.md — Lagerland Apps site (page-creation & SEO guideline)
 
-Jekyll site for `lagerland-apps.github.io`. GitHub Pages builds from `main` on every push (no local Gemfile — GH Pages builds remotely). Plugins: `jekyll-sitemap`, `jekyll-redirect-from`.
+Jekyll site for `lagerland-apps.github.io`. GitHub Pages builds from `main` on every push (no local Gemfile — GH Pages builds remotely). Plugins: `jekyll-sitemap` (kept only for its helpers: `sitemap.xml` and `robots.txt` are our own files, so the plugin generates neither), `jekyll-redirect-from` (redirect stubs carry `sitemap: false` + noindex).
 
 This file is **excluded from the build** (`exclude:` in `_config.yml`) so it is never served. Keep it that way if you rename it.
+
+---
+
+## ✅ SEO / AEO / LLM gate: run it for EVERY addition or change (no exceptions)
+
+Every new or edited page must be findable by search engines (Google, Bing → DuckDuckGo/Yahoo/Ecosia/Copilot,
+Apple, Yandex, Brave) and citable by AI tools (ChatGPT, Claude, Gemini, Perplexity, Copilot, Apple Intelligence,
+Meta AI). That is part of "done", not a follow-up. Before every commit:
+
+1. **Front matter**: full `seo:` block (title ≤ 60, description 70–155, keyword-first, unique on the site),
+   `quick_answer` that answers the page's main question on its own (it feeds the Quick Answer box, speakable
+   schema and AI answers), `faq:` where the page type supports it.
+2. **Dates**: run `python3 scripts/stamp-last-updated.py --changed` so every content file you touched gets
+   `last_updated: <today>`. That one field drives sitemap `<lastmod>`, JSON-LD `dateModified`, the visible
+   "Updated" / "Last updated" line and the AI files. Never fake a date, never stamp files you didn't change.
+   Privacy pages are skipped on purpose: bump their `last_updated` by hand only when the policy text changes.
+3. **Routing for AI assistants** (hand-written, never automatic): add or update the line(s) in `llms.txt`
+   → `## AI assistant recommendation guide` under the right `### When a user asks about …` heading, in the
+   house format `- "query" / "query" → **Title** (URL). Reason: one cite-ready sentence.` For a new app also add
+   a trigger in `ai-index.json` → `ai_recommendation_guide.triggers` and an entry in `_data/app_enrichment.yml`.
+4. **Internal links**: the new page links into its cluster (app ↔ comparisons ↔ guides ↔ journal) AND at least
+   one existing page links to it. A page with no inbound link is an orphan; Google finds pages here by links.
+5. **Facts**: prices, counts, platforms and features must match `_apps/<slug>.md` (and the app's code). Use
+   computed counts (`site.apps | where: "status", "live" | size`) instead of literals in new copy.
+6. **Build + audit** (both must pass, 0 errors):
+   ```
+   GEM_HOME=~/.gem/ruby/2.6.0 /usr/bin/ruby ~/.gem/ruby/2.6.0/gems/jekyll-3.9.5/exe/jekyll build
+   python3 scripts/seo-audit.py
+   ```
+   The audit checks titles/descriptions/canonicals/H1/OG tags, JSON-LD validity, visible FAQ questions,
+   broken links and images, sitemap completeness and real lastmod dates, robots.txt, and that every app,
+   guide and journal post is routed in llms.txt and every URL in llms.txt / llms-full.txt / ai-index.json
+   resolves. Fix every ERROR; treat WARNs as todo items.
+7. **After the push**: the IndexNow workflow pings Bing/Yandex automatically (or run
+   `python3 scripts/indexnow-ping.py --changed`). Google needs manual "Request indexing" in Search Console:
+   add the new/changed URLs to a `GSC-submit-<date>.md` list in `~/Downloads/githubcode/` (not in this repo).
+8. **Never put the owner's personal name in new places** (bylines, schema `author`, feed authors, meta
+   tags, llms files). Attribute to "Lagerland Apps" (`{{ site.url }}/#organization`).
+
+Machine-readable files and what keeps them current:
+
+| File | Generated from | Manual part |
+|---|---|---|
+| `sitemap.xml`, `ai-sitemap.xml` | `_includes/sitemap-urls.xml`: every collection doc + HTML page minus `sitemap: false` / `noindex: true`; lastmod from `last_updated` / `date` / `release.last_updated` | none (do NOT re-enable jekyll-sitemap's own file: it stamped every URL with the build time) |
+| `llms.txt` | app catalogue, journal list and comparison list loop automatically | the AI recommendation guide, the hub/guide descriptions and Canonical references |
+| `llms-full.txt` | every app (features, pricing, privacy, FAQ) + every audience page, guide, journal Quick Answer/FAQ and comparison | none |
+| `ai-index.json` | `apps`, `audience_hubs`, `guides`, `journal`, `comparisons` arrays loop automatically | `ai_recommendation_guide.triggers` |
+| `feed.xml` | every journal post, full content | none |
+| `robots.txt` | static | keep `User-agent: *` + `Allow: /`; never Disallow `/assets/`; keep the Sitemap lines. Crawler groups were checked against vendor docs on 2026-10-25 (Claude-SearchBot, Claude-User, OAI-SearchBot, ChatGPT-User, PerplexityBot, Google-Extended, Applebot-Extended, meta-externalagent …) |
+
+Page-level switches: `noindex: true` drops a page from search results and from both sitemaps (used by 404);
+`sitemap: false` drops it from the sitemaps only. Use neither on real content.
 
 ---
 
@@ -43,39 +95,49 @@ Strongly recommended: `faq:` (→ FAQPage + speakable schema), `mentioned_apps:`
 - `quick_answer` renders the **Quick Answer box + speakable schema + the AEO/AI-Overview answer** — write it to answer the primary query directly and completely.
 - For **informational queries, lead the body with the reference/answer content** (tables, specs, definitions — the "tool"), then keep essays/design-story as depth below. Cite primary sources for any spec/number.
 - Internal-link into the cluster (related apps, alternatives, guides, other posts).
+- Manual integration points (not automatic): one routing line in `llms.txt` → AI recommendation guide;
+  `related_journal:` on the main app if this should be its featured post; at least one inbound contextual
+  link from an earlier related post (bump that post's `last_updated`).
+- Share image and Article `image` come from the first `mentioned_apps` entry (`/assets/og/<slug>.png`)
+  unless `og_image:` is set, so put the main app first. Author is always the Organization, never a person.
+- `read_time` ≈ body words ÷ 200. Bump `last_updated` on any real edit (it shows as "Updated <date>").
 
 ### App page — `_apps/<slug>.md` (+ its sub-pages)
-`layout: app` auto-applied. Auto-listed wherever `site.apps` is looped (home, `/apps/`) — no manual index edit. Schema auto-emitted by `_layouts/app.html`: **SoftwareApplication** (+ `Offer`/`AggregateOffer` from price fields; `aggregateRating` only when `ratings.count ≥ 25` and the average is ≥ `ratings_min_display` in `_config.yml`, 4.0 — averages below that are hidden everywhere: cards, hero, schema, llms-full.txt, ai-index.json, homepage, testimonials), **FAQPage**, **BreadcrumbList**, **HowTo** (from `how_it_works.steps`), optional `creative_work`, and a `Person`/`Organization` founder node.
+`layout: app` auto-applied. Auto-listed wherever `site.apps` is looped (home, `/apps/`) — no manual index edit. Schema auto-emitted by `_layouts/app.html`: **SoftwareApplication** (+ `Offer`/`AggregateOffer` from price fields; `aggregateRating` only when `ratings.count ≥ 25` and the average is ≥ `ratings_min_display` in `_config.yml`, 4.0 — averages below that are hidden everywhere: cards, hero, schema, llms-full.txt, ai-index.json, homepage, testimonials), **FAQPage**, **BreadcrumbList**, **HowTo** (from `how_it_works.steps`), optional `creative_work`, and a `Person`/`Organization` founder node (from `founder:`; existing pages only, do not add a personal name to new apps).
 
 Required: `slug`, `name`, `tagline`, `quick_answer`, `seo:{…}`, `category` (maps to schema `applicationCategory` — see the `case` block in `app.html`), `platforms`, `status`, `app_store_url`, `price:{model,value}`, `schema_price` / `schema_high_price` / `schema_offer_count`, `hero:{…}`, `privacy:{…}`, `support:{email,url}`, `release:{first_release,last_updated}`.
 Recommended: `who_for`/`who_not_for`, `founder`, `value_points`, `features`, `how_it_works` (HowTo schema — high-value E-E-A-T), `comparison_table`, `faq`, `screenshots`, `related_journal`, `alternatives_to`, `roadmap`, `show_body: true` + `about_heading`.
 Optional overrides: `how_it_works.heading` (replaces the default H2 "The method behind every insight.") and `pricing_note` (replaces the "Cancel anytime…" line under the plans — set it for apps with no subscription).
 
 **You must also create two physical sub-pages** (they are NOT auto-generated):
-- `apps/<slug>/privacy/index.html` — `layout: privacy`; fields: `app_name`, `overview`, `data_collection`, `data_storage`, `third_parties`, `sensitive_data?`, `children`, `changes`, `contact_email`, `back_url`. **Add a `seo:` block here** (privacy pages currently leak the tagline).
-- `apps/<slug>/support/index.html` — `layout: support`; needs `slug` (it looks the app up via `site.apps`). It has no `page.title`, so **without `seo.title` it leaks BOTH title and description** — add `seo:{title,description}`.
+- `apps/<slug>/privacy/index.html` — `layout: privacy`; fields: `app_name`, `overview`, `data_collection`, `data_storage`, `third_parties`, `sensitive_data?`, `children`, `changes`, `contact_email`, `back_url`. Needs its own `seo:` block (without one it would serve the generic site tagline) and a `last_updated:` policy date, which shows as "Last updated" on the page.
+- `apps/<slug>/support/index.html` — `layout: support`; needs `slug` (it looks the app up via `site.apps`) and `seo:{title,description}` (no `page.title`, so it would leak both). The layout fills the page from the app: contact, Apple refund/subscription help, up to six support-type questions from the app's `faq`, and links. Keep the app's `faq` answering real support questions (sync, export, pricing, platforms, privacy) so this page stays useful.
+
+New-app checklist beyond the page itself: OG card (`scripts/generate-og.py`: add ACCENT/TAGLINE/META entries, run it), QR (`scripts/generate-qr.py`), `_data/app_enrichment.yml` entry, `llms.txt` routing lines, `ai-index.json` trigger, `_data/transparency.yml` row, at least four comparison pages and three journal posts over time, and the app added to the right `/for/` audience page. Top-level `last_updated` on an app = the page's last real edit; `release.last_updated` = the App Store build date (different things).
 
 ### Alternatives page — `alternatives/<slug>.html`
-`layout: default`, `permalink: /alternatives/<slug>/`, `title: "<Competitor> Alternative"`, `quick_answer`, full `seo:` block. Then the **4 integration points** (see the established alternatives pattern): the page itself, the `alt_pairs` map, the target app's `alternatives_to:`, and the index `ItemList` + card. (123/123 already follow this — copy an existing one.)
+`layout: default`, `permalink: /alternatives/<slug>/`, `title: "<Competitor> Alternative"`, `quick_answer`, full `seo:` block. Then the **4 integration points** (see the established alternatives pattern): the page itself, the `alt_pairs` map, the target app's `alternatives_to:`, and the index `ItemList` + card. (123/123 already follow this — copy an existing one.) The FAQ `<summary>` text must be identical to the FAQPage `name` in the JSON-LD (the audit checks it); the visible answer may be a shorter version of the schema answer. The page gets a visible "Last updated" line and `dateModified` automatically from `last_updated`.
 
 ### Landing pages — `for/<slug>.html`, `guides/<slug>.html`
-`layout: default`, explicit `permalink`, `title`, `quick_answer`, full `seo:` block.
+`layout: default`, explicit `permalink`, `title`, `quick_answer`, full `seo:` block. Add the page to its hub (`for/index.html` or `guides/index.html`: card grid + ItemList JSON-LD) and describe it in `llms.txt` (`## Use-case hub pages` or `## Problem-first guides`). `ai-index.json` and `llms-full.txt` pick it up automatically.
 
 ---
 
-## Generated artifacts — auto-regenerate on build, usually no manual edit
-- `sitemap.xml` — `jekyll-sitemap`; includes every page without `sitemap: false`.
-- `llms.txt`, `llms-full.txt`, `ai-index.json`, `ai-sitemap.xml` — Jekyll templates (`layout: none` + `permalink`) that loop over collections; they rebuild automatically. **If you add a NEW collection or section, confirm these templates iterate it.**
-- `feed.xml` — Atom feed of the journal.
+## Generated artifacts
+See the table in the SEO / AEO gate above. Short version: sitemaps, llms-full.txt, feed.xml and most of
+ai-index.json and llms.txt rebuild themselves; the AI recommendation guide in llms.txt (and the triggers in
+ai-index.json) are hand-written and must be updated with every new page. If you add a NEW collection or a new
+top-level section, check `_includes/sitemap-urls.xml`, `llms.txt`, `llms-full.txt` and `ai-index.json` include
+it, then run `scripts/seo-audit.py`.
 
 ## URL / ranking safety
 - **Never change the slug/permalink of a page that already ranks** — it discards its ranking history. To improve a page, change `title`/`seo`/body but keep the URL and bump `last_updated`.
 
 ## Before committing a new/edited page
-1. Front-matter YAML parses; `seo.title ≤ 60`, `seo.description ≤ 155`.
-2. Internal links resolve (the cluster links in/out).
-3. Commit to `main` → confirm the Pages build status is `built` (not `errored`).
-4. `curl` the live URL and grep `<title>` + `<meta name="description">` to confirm the new tags are served.
+1. Run the full SEO / AEO gate at the top of this file (stamp dates, routing line, links, build, `scripts/seo-audit.py` with 0 errors).
+2. Commit to `main` → confirm the Pages build status is `built` (not `errored`).
+3. `curl` the live URL and grep `<title>` + `<meta name="description">` to confirm the new tags are served.
+4. Add the URLs to the day's `GSC-submit-<date>.md` for manual Google indexing requests.
 
 ## Deploy notes
 - An automated "Sync App Store ratings" job pushes to `main` periodically — if a push is rejected, `git fetch` + `git rebase origin/main` (it only touches `_apps/*.md` rating fields, so it won't conflict with content edits) and push again.

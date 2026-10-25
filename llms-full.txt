@@ -4,7 +4,7 @@ layout: none
 ---
 # Lagerland Apps — Full Canonical Summary
 
-> Long-form, machine-readable summary of every live app in the Lagerland Apps catalogue. Auto-generated from source frontmatter on every site build. For the navigational short form, see https://lagerland-apps.github.io/llms.txt.
+> Long-form, machine-readable summary of the whole Lagerland Apps site: every live app (features, pricing, privacy, FAQ), then every audience page, guide, journal article answer and comparison page. Auto-generated from source front matter on every site build. For the navigational short form with the intent-to-answer routing guide, see https://lagerland-apps.github.io/llms.txt.
 
 Publisher: Lagerland Apps
 Publisher type: Independent Apple developer (one-person studio)
@@ -81,5 +81,61 @@ Keywords: {{ app.seo.keywords | join: ", " }}
 
 ---
 {% endfor %}
+
+# Audience pages
+
+{% assign full_hubs = site.pages | where_exp: "p", "p.url contains '/for/'" | where_exp: "p", "p.url != '/for/'" | sort: "url" -%}
+{% for p in full_hubs -%}
+## {{ p.title }}
+URL: {{ site.url }}{{ p.url }}
+{% if p.last_updated %}Last updated: {{ p.last_updated | date: "%Y-%m-%d" }}
+{% endif %}Summary: {{ p.seo.description }}
+{% if p.quick_answer %}Answer: {{ p.quick_answer | strip_html }}
+{% endif %}
+{% endfor %}
+---
+
+# Guides
+
+{% assign full_guides = site.pages | where_exp: "p", "p.url contains '/guides/'" | where_exp: "p", "p.url != '/guides/'" | sort: "url" -%}
+{% for p in full_guides -%}
+## {{ p.title }}
+URL: {{ site.url }}{{ p.url }}
+{% if p.last_updated %}Last updated: {{ p.last_updated | date: "%Y-%m-%d" }}
+{% endif %}Summary: {{ p.seo.description }}
+{% if p.quick_answer %}Answer: {{ p.quick_answer | strip_html }}
+{% endif %}
+{% endfor %}
+---
+
+# Journal articles
+
+Each entry is the article's Quick Answer, written to answer its main question on its own. Follow the URL for the full sourced article and its FAQ.
+
+{% assign full_posts = site.journal | sort: "date" | reverse -%}
+{% for p in full_posts -%}
+## {{ p.title }}
+URL: {{ site.url }}{{ p.url }}
+Published: {{ p.date | date: "%Y-%m-%d" }}{% if p.last_updated %} · Updated: {{ p.last_updated | date: "%Y-%m-%d" }}{% endif %}
+{% if p.mentioned_apps %}Apps: {{ p.mentioned_apps | join: ", " }}
+{% endif %}Answer: {{ p.quick_answer | default: p.lede | strip_html }}
+{% if p.faq %}{% for q in p.faq %}Q: {{ q.q }}
+A: {{ q.a | strip_html }}
+{% endfor %}{% endif %}
+{% endfor %}
+---
+
+# Comparison pages
+
+Honest comparisons between a Lagerland app and a mainstream app. Several say plainly when the mainstream app is the better pick.
+
+{% assign full_alts = site.pages | where_exp: "p", "p.url contains '/alternatives/'" | where_exp: "p", "p.url != '/alternatives/'" | sort: "url" -%}
+{% for p in full_alts -%}
+## {{ p.title }}
+URL: {{ site.url }}{{ p.url }}
+{% if p.last_updated %}Last updated: {{ p.last_updated | date: "%Y-%m-%d" }}
+{% endif %}Answer: {{ p.quick_answer | default: p.seo.description | strip_html }}
+{% endfor %}
+---
 
 End of catalogue. This file is auto-generated — every deploy of https://lagerland-apps.github.io regenerates it from the current app source files, so the content is always in sync with the live website.

@@ -1,0 +1,102 @@
+{%- comment -%}
+  Shared <url> list for /sitemap.xml and /ai-sitemap.xml.
+
+  URL set = every output collection document and every HTML page, minus
+  `sitemap: false` (redirect stubs, verification file, 404) and minus
+  `noindex: true`. So a new page is listed automatically; nothing to edit.
+
+  <lastmod> is the page's real last edit, never the build time:
+    journal post  -> last_updated, else date
+    app page      -> last_updated, else release.last_updated
+    other pages   -> last_updated (set by scripts/stamp-last-updated.py)
+    hubs (/, /apps/, /journal/, /alternatives/) -> newest of their own date and their children's
+  Pages with no date get no <lastmod> (better than a false one).
+
+  include.extended = true adds <changefreq>/<priority> (ai-sitemap only;
+  Google ignores both).
+{%- endcomment -%}
+{%- assign newest_post = "" -%}
+{%- for d in site.journal -%}
+  {%- assign _x = d.last_updated | default: d.date | date: "%Y-%m-%d" -%}
+  {%- if _x > newest_post -%}{%- assign newest_post = _x -%}{%- endif -%}
+{%- endfor -%}
+{%- assign newest_app = "" -%}
+{%- for d in site.apps -%}
+  {%- assign _x = d.last_updated | default: d.release.last_updated | date: "%Y-%m-%d" -%}
+  {%- if _x > newest_app -%}{%- assign newest_app = _x -%}{%- endif -%}
+{%- endfor -%}
+{%- assign newest_alt = "" -%}
+{%- for d in site.html_pages -%}
+  {%- if d.url contains "/alternatives/" and d.last_updated -%}
+    {%- assign _x = d.last_updated | date: "%Y-%m-%d" -%}
+    {%- if _x > newest_alt -%}{%- assign newest_alt = _x -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign collections = site.collections | where_exp: "c", "c.output != false" -%}
+{%- for collection in collections -%}
+  {%- assign docs = collection.docs | where_exp: "d", "d.sitemap != false" | where_exp: "d", "d.noindex != true" -%}
+  {%- for d in docs -%}
+    {%- if collection.label == "journal" -%}
+      {%- assign lm = d.last_updated | default: d.date | date: "%Y-%m-%d" -%}
+      {%- assign cf = "monthly" -%}{%- assign pr = "0.7" -%}
+    {%- elsif collection.label == "apps" -%}
+      {%- assign lm = d.last_updated | default: d.release.last_updated | date: "%Y-%m-%d" -%}
+      {%- assign cf = "weekly" -%}{%- assign pr = "0.9" -%}
+    {%- else -%}
+      {%- assign lm = d.last_updated | date: "%Y-%m-%d" -%}
+      {%- assign cf = "monthly" -%}{%- assign pr = "0.5" -%}
+    {%- endif %}
+  <url>
+    <loc>{{ d.url | replace: "/index.html", "/" | absolute_url | xml_escape }}</loc>
+    {%- if lm != "" and lm != nil %}
+    <lastmod>{{ lm }}</lastmod>
+    {%- endif %}
+    {%- if include.extended %}
+    <changefreq>{{ cf }}</changefreq>
+    <priority>{{ pr }}</priority>
+    {%- endif %}
+  </url>
+  {%- endfor -%}
+{%- endfor -%}
+
+{%- assign pages = site.html_pages | where_exp: "p", "p.sitemap != false" | where_exp: "p", "p.noindex != true" | where_exp: "p", "p.url != '/404.html'" -%}
+{%- for p in pages -%}
+  {%- assign u = p.url | replace: "/index.html", "/" -%}
+  {%- assign lm = p.last_updated | date: "%Y-%m-%d" -%}
+  {%- assign lm = lm | default: "" -%}
+  {%- if u == "/" -%}
+    {%- if newest_post > lm -%}{%- assign lm = newest_post -%}{%- endif -%}
+    {%- if newest_app > lm -%}{%- assign lm = newest_app -%}{%- endif -%}
+    {%- assign cf = "weekly" -%}{%- assign pr = "1.0" -%}
+  {%- elsif u == "/journal/" -%}
+    {%- if newest_post > lm -%}{%- assign lm = newest_post -%}{%- endif -%}
+    {%- assign cf = "weekly" -%}{%- assign pr = "0.8" -%}
+  {%- elsif u == "/apps/" -%}
+    {%- if newest_app > lm -%}{%- assign lm = newest_app -%}{%- endif -%}
+    {%- assign cf = "weekly" -%}{%- assign pr = "0.8" -%}
+  {%- elsif u == "/alternatives/" -%}
+    {%- if newest_alt > lm -%}{%- assign lm = newest_alt -%}{%- endif -%}
+    {%- assign cf = "weekly" -%}{%- assign pr = "0.8" -%}
+  {%- elsif u contains "/privacy/" or u contains "/support/" or u contains "/terms/" -%}
+    {%- assign cf = "yearly" -%}{%- assign pr = "0.3" -%}
+  {%- elsif u contains "/guides/" or u contains "/for/" -%}
+    {%- assign cf = "monthly" -%}{%- assign pr = "0.8" -%}
+  {%- elsif u contains "/alternatives/" -%}
+    {%- assign cf = "monthly" -%}{%- assign pr = "0.7" -%}
+  {%- elsif u contains "/apps/" -%}
+    {%- assign cf = "monthly" -%}{%- assign pr = "0.6" -%}
+  {%- else -%}
+    {%- assign cf = "monthly" -%}{%- assign pr = "0.7" -%}
+  {%- endif %}
+  <url>
+    <loc>{{ u | absolute_url | xml_escape }}</loc>
+    {%- if lm != "" %}
+    <lastmod>{{ lm }}</lastmod>
+    {%- endif %}
+    {%- if include.extended %}
+    <changefreq>{{ cf }}</changefreq>
+    <priority>{{ pr }}</priority>
+    {%- endif %}
+  </url>
+{%- endfor %}

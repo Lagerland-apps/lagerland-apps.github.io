@@ -261,6 +261,7 @@ founder:
   external_link:
     href: "/apps/aftershift/methodology/"
     label: "Read the Shift Recovery Score methodology →"
+last_updated: 2026-10-25
 ---
 
 Most sleep apps were designed for a person who goes to bed at 11 p.m. and wakes up at 7 a.m. Walk through the onboarding flow of any major one — the questions assume a fixed bedtime, a steady wake time, and weekends free. Then look at how the people who keep hospitals, fire stations, factories, and cockpits running through the night are forced to use them. A nurse logs a five-hour daytime sleep after a string of night shifts; the app politely tells her she had a *poor night* and should go to bed earlier. The model of "a person" baked into the app and the model of the person actually using it are not the same model.

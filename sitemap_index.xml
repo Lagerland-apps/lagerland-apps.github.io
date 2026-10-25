@@ -7,10 +7,10 @@ sitemap: false
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>{{ site.url }}/sitemap.xml</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
   </sitemap>
   <sitemap>
     <loc>{{ site.url }}/ai-sitemap.xml</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
   </sitemap>
 </sitemapindex>

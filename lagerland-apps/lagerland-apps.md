@@ -27,6 +27,7 @@ faq:
     a: "No. Every app ships with zero third-party analytics, no advertising SDKs, and no required accounts. User data stays on-device wherever possible; any sync uses the user's own iCloud account."
   - q: "What platforms does Lagerland Apps build for?"
     a: "Lagerland Apps builds native applications for iPhone, iPad, Apple Watch, and Mac. Apps are built with SwiftUI, HealthKit, StoreKit and CoreData/SwiftData — no cross-platform wrappers, no Electron."
+last_updated: 2026-10-09
 ---
 
 <script type="application/ld+json">

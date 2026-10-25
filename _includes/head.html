@@ -22,24 +22,45 @@
 {%- assign page_title = page.seo.title | default: page.title | default: site.title -%}
 {%- assign page_desc  = page.seo.description | default: site.description -%}
 {%- assign page_url   = site.url | append: page.url -%}
-{%- assign og_image   = page.og_image | default: '/assets/og/default.png' -%}
+{%- comment %} Share image: explicit og_image, else (journal posts) the card of
+  the first app the post mentions, else the site default. Keep this logic in
+  sync with the Article `image` in _layouts/journal.html. {% endcomment -%}
+{%- assign og_image = page.og_image -%}
+{%- if og_image == nil and page.mentioned_apps and page.mentioned_apps.size > 0 -%}
+  {%- assign _og_candidate = '/assets/og/' | append: page.mentioned_apps[0] | append: '.png' -%}
+  {%- assign _og_hit = site.static_files | where: "path", _og_candidate | first -%}
+  {%- if _og_hit -%}{%- assign og_image = _og_candidate -%}{%- endif -%}
+{%- endif -%}
+{%- assign og_image = og_image | default: '/assets/og/default.png' -%}
+{%- assign is_article = false -%}
+{%- if page.collection == "journal" -%}{%- assign is_article = true -%}{%- endif -%}
 
-<title>{{ page_title }}</title>
-<meta name="description" content="{{ page_desc }}">
+{%- comment %} Escaped with escape_once so a literal & in front matter becomes
+  &amp; while an existing &amp; is not double-escaped. {% endcomment %}
+<title>{{ page_title | escape_once }}</title>
+<meta name="description" content="{{ page_desc | escape_once }}">
 <meta name="author" content="Lagerland Apps">
 <meta name="publisher" content="Lagerland Apps">
+{%- comment %} `noindex: true` in front matter keeps a page out of search
+  results (and out of sitemap.xml / ai-sitemap.xml) while links still pass. {% endcomment %}
+{%- if page.noindex %}
+<meta name="robots" content="noindex, follow">
+{%- else %}
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+{%- endif %}
 {%- if page.seo.keywords %}
-<meta name="keywords" content="{{ page.seo.keywords | join: ', ' }}">
+<meta name="keywords" content="{{ page.seo.keywords | join: ', ' | escape_once }}">
 {%- endif %}
 
 <link rel="icon" type="image/svg+xml" href="{{ site.url }}/assets/icons/favicon.svg">
 <link rel="icon" type="image/png" sizes="1024x1024" href="{{ site.url }}/assets/icons/lagerland-mark.png">
 <link rel="apple-touch-icon" href="{{ site.url }}/assets/icons/lagerland-mark.png">
 <link rel="mask-icon" href="{{ site.url }}/assets/icons/favicon.svg" color="#A78BFA">
+{%- unless page.noindex %}
 <link rel="canonical" href="{{ page_url }}">
 <link rel="alternate" hreflang="en" href="{{ page_url }}">
 <link rel="alternate" hreflang="x-default" href="{{ page_url }}">
+{%- endunless %}
 <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed.xml" title="Lagerland Apps journal (Atom feed)">
 <link rel="alternate" type="application/json" href="{{ site.url }}/ai-index.json" title="AI-readable app index">
 <link rel="alternate" type="text/plain" href="{{ site.url }}/llms.txt" title="LLM summary (llms.txt)">
@@ -82,23 +103,29 @@
   {%- endif -%}
 {%- endif -%}
 
-<meta property="og:type" content="{% if page.layout == 'app' %}product{% else %}website{% endif %}">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ page_title }}">
-<meta property="og:description" content="{{ page_desc }}">
+<meta property="og:type" content="{% if is_article %}article{% elsif page.layout == 'app' %}product{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.title | escape_once }}">
+<meta property="og:title" content="{{ page_title | escape_once }}">
+<meta property="og:description" content="{{ page_desc | escape_once }}">
 <meta property="og:url" content="{{ page_url }}">
 <meta property="og:image" content="{{ site.url }}{{ og_image }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:alt" content="{{ page.hero.alt | default: page_title | escape }}">
+<meta property="og:image:alt" content="{{ page.hero.alt | default: page_title | escape_once }}">
 <meta property="og:locale" content="en_US">
+{%- if is_article %}
+<meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%d' }}">
+<meta property="article:modified_time" content="{{ page.last_updated | default: page.date | date: '%Y-%m-%d' }}">
+<meta property="article:author" content="{{ site.url }}/lagerland-apps/">
+<meta property="article:publisher" content="{{ site.url }}/">
+{%- endif %}
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page_title }}">
-<meta name="twitter:description" content="{{ page_desc }}">
+<meta name="twitter:title" content="{{ page_title | escape_once }}">
+<meta name="twitter:description" content="{{ page_desc | escape_once }}">
 <meta name="twitter:image" content="{{ site.url }}{{ og_image }}">
-<meta name="twitter:image:alt" content="{{ page.hero.alt | default: page_title | escape }}">
+<meta name="twitter:image:alt" content="{{ page.hero.alt | default: page_title | escape_once }}">
 
 {%- comment %} Organization + WebSite JSON-LD (site-wide, gives Google an entity anchor) {% endcomment %}
 <script type="application/ld+json">
@@ -150,6 +177,15 @@
   ]
 }
 </script>
+
+{%- comment %} Freshness: pages that carry `last_updated` (comparison pages,
+  guides, audience pages, hubs) get dateModified merged into their existing
+  `#webpage` node. Journal posts and app pages emit their own dates. {% endcomment %}
+{%- if page.last_updated and page.collection == nil and page.layout != "privacy" and page.layout != "support" and page.noindex != true %}
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebPage", "@id": "{{ page_url }}#webpage", "url": "{{ page_url }}", "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}"}
+</script>
+{%- endif %}
 
 <script src="/assets/js/animations.js" defer></script>
 <script data-goatcounter="https://lagerlandapps.goatcounter.com/count"

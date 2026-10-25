@@ -11,6 +11,7 @@ seo:
     - iOS app changelog
     - macOS app developer notes
     - privacy-first app design
+last_updated: 2026-06-21
 ---
 
 {%- assign posts = site.journal | sort: "date" | reverse -%}
@@ -33,6 +34,10 @@ seo:
       "url": "{{ site.url }}{{ post.url }}",
       "headline": {{ post.title | jsonify }},
       "datePublished": "{{ post.date | date: '%Y-%m-%d' }}",
+      "dateModified": "{{ post.last_updated | default: post.date | date: '%Y-%m-%d' }}",
+      {%- assign _img = '/assets/og/default.png' -%}
+      {%- if post.og_image -%}{%- assign _img = post.og_image -%}{%- elsif post.mentioned_apps and post.mentioned_apps.size > 0 -%}{%- assign _cand = '/assets/og/' | append: post.mentioned_apps[0] | append: '.png' -%}{%- assign _hit = site.static_files | where: "path", _cand | first -%}{%- if _hit -%}{%- assign _img = _cand -%}{%- endif -%}{%- endif %}
+      "image": "{{ site.url }}{{ _img }}",
       "author": { "@id": "{{ site.url }}/#organization" }
     }{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}

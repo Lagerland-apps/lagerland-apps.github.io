@@ -402,7 +402,8 @@ permalink: /ai-index.json
       "pricing": {
         "model": {{ app.price.model | jsonify }},
         "display": {{ app.price.value | jsonify }},
-        "schema_price_eur": {{ app.schema_price | default: "0" | jsonify }}
+        "schema_price": {{ app.schema_price | default: "0" | jsonify }},
+        "currency": {{ app.price_currency | default: "USD" | jsonify }}
       },
       "privacy": {
         "third_party_tracking": {% if app.privacy.tracking %}true{% else %}false{% endif %},
@@ -448,6 +449,9 @@ permalink: /ai-index.json
         {%- endfor -%}
         {%- endif -%}
       ],
+      "page_last_updated": {{ app.last_updated | date: "%Y-%m-%d" | default: "" | jsonify }},
+      "privacy_policy_url": "{{ site.url }}{{ app.url }}privacy/",
+      "support_url": "{{ site.url }}{{ app.url }}support/",
       "release": {
         "first_release": {{ app.release.first_release | default: "" | jsonify }},
         "last_updated": {{ app.release.last_updated | default: "" | jsonify }}
@@ -455,5 +459,31 @@ permalink: /ai-index.json
     }
     {%- assign first = false -%}
   {%- endfor -%}
+  ],
+  {%- comment %} Everything below is generated from the live page set, so new
+    hubs, guides, journal posts and comparison pages appear automatically. {% endcomment %}
+  {%- assign idx_hubs = site.pages | where_exp: "p", "p.url contains '/for/'" | where_exp: "p", "p.url != '/for/'" | sort: "url" %}
+  "audience_hubs": [
+    {%- for p in idx_hubs %}
+    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}", "summary": {{ p.seo.description | jsonify }}, "quick_answer": {{ p.quick_answer | default: "" | strip_html | jsonify }}, "last_updated": {{ p.last_updated | date: "%Y-%m-%d" | default: "" | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  {%- assign idx_guides = site.pages | where_exp: "p", "p.url contains '/guides/'" | where_exp: "p", "p.url != '/guides/'" | sort: "url" %}
+  "guides": [
+    {%- for p in idx_guides %}
+    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}", "summary": {{ p.seo.description | jsonify }}, "quick_answer": {{ p.quick_answer | default: "" | strip_html | jsonify }}, "last_updated": {{ p.last_updated | date: "%Y-%m-%d" | default: "" | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  {%- assign idx_posts = site.journal | sort: "date" | reverse %}
+  "journal": [
+    {%- for p in idx_posts %}
+    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}", "date_published": "{{ p.date | date: '%Y-%m-%d' }}", "date_modified": "{{ p.last_updated | default: p.date | date: '%Y-%m-%d' }}", "quick_answer": {{ p.quick_answer | default: p.lede | strip_html | jsonify }}, "mentioned_apps": {{ p.mentioned_apps | default: empty | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  {%- assign idx_alts = site.pages | where_exp: "p", "p.url contains '/alternatives/'" | where_exp: "p", "p.url != '/alternatives/'" | sort: "url" %}
+  "comparisons": [
+    {%- for p in idx_alts %}
+    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}", "summary": {{ p.seo.description | jsonify }}, "quick_answer": {{ p.quick_answer | default: "" | strip_html | jsonify }}, "last_updated": {{ p.last_updated | date: "%Y-%m-%d" | default: "" | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
   ]
 }

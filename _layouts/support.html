@@ -1,35 +1,126 @@
 ---
 layout: default
 ---
-{% assign app = site.apps | where: "slug", page.slug | first %}
+{%- comment -%}
+  Per-app support page. Each page is made unique (not thin boilerplate) by
+  pulling the app's own support-type FAQ entries from _apps/<slug>.md.
+  No FAQPage schema here on purpose: the same Q&A already carries FAQPage
+  markup on the app page, and duplicate FAQ markup across URLs adds nothing.
+{%- endcomment -%}
+{%- assign app = site.apps | where: "slug", page.slug | first -%}
+{%- assign app_abs = site.url | append: app.url -%}
+{%- assign page_abs = site.url | append: page.url -%}
+{%- assign support_name = app.name | append: " Support" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": "{{ page_abs }}#webpage",
+  "url": "{{ page_abs }}",
+  "name": {{ page.seo.title | default: support_name | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "en",
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ app_abs }}#app" },
+  "publisher": { "@id": "{{ site.url }}/#organization" },
+  {%- if page.last_updated %}
+  "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
+  {%- endif %}
+  "mainEntity": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "{{ app.support.email | default: site.email }}",
+    "availableLanguage": "English"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Apps", "item": "{{ site.url }}/apps/" },
+      { "@type": "ListItem", "position": 3, "name": {{ app.name | jsonify }}, "item": "{{ app_abs }}" },
+      { "@type": "ListItem", "position": 4, "name": "Support", "item": "{{ page_abs }}" }
+    ]
+  }
+}
+</script>
 
 <section class="section">
+  <p class="overline"><a href="{{ app.url }}">{{ app.name }}</a> · Help &amp; contact</p>
   <h1 class="h1">{{ app.name }} Support</h1>
 
   <p class="lead">
-    Need help with {{ app.name }}?
+    Every message about {{ app.name }} is read and answered by the developer who builds it. Common questions and useful links are below the contact details.
   </p>
 
   <div class="card">
     <div class="card-title">Contact support</div>
     <p class="card-text">
-      If you’re experiencing a problem, have a question, or want to share feedback, email us:
+      If you’re experiencing a problem, have a question, or want to share feedback, email:
     </p>
 
     <p>
-      <a href="mailto:{{ app.support.email }}">
-        {{ app.support.email }}
+      <a href="mailto:{{ app.support.email | default: site.email }}?subject={{ app.name | url_encode }}%20support">
+        {{ app.support.email | default: site.email }}
       </a>
     </p>
 
     <p class="card-text">Please include:</p>
     <ul class="bullets">
-      <li>App version</li>
+      <li>{{ app.name }} version (shown in the app’s settings or on its App Store page)</li>
       <li>Device model</li>
-      <li>iOS version</li>
-      <li>What you expected to happen</li>
+      <li>{{ app.platforms | join: " / " | default: "iOS" }} version</li>
+      <li>What you expected to happen, and what happened instead</li>
     </ul>
   </div>
+</section>
+
+<section class="section">
+  <h2 class="h2">Before you email</h2>
+  <ul class="bullets">
+    <li>Update to the latest version from the <a href="{{ app.app_store_url }}" rel="noopener">App Store</a>; many fixes ship there first.</li>
+    <li>If you subscribed to a paid tier, you can manage or cancel it in <strong>Settings → your name → Subscriptions</strong> on iPhone or iPad, or in the App Store app on Mac.</li>
+    <li>Refunds for App Store purchases are handled by Apple at <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a>.</li>
+    {%- unless app.privacy.account_required %}
+    <li>{{ app.name }} has no sign-up and no Lagerland account, so there is no password to reset or account to recover.</li>
+    {%- endunless %}
+  </ul>
+</section>
+
+{%- assign support_faq = '' | split: '' -%}
+{%- assign support_words = "sync,icloud,export,backup,delete,data,cancel,refund,restore,price,cost,pay,subscription,lifetime,purchase,account,offline,privacy,private,watch,ipad,mac,language,require,work with,does it,can i" | split: "," -%}
+{%- for item in app.faq -%}
+  {%- assign qd = item.q | downcase -%}
+  {%- for w in support_words -%}
+    {%- if qd contains w -%}{%- assign support_faq = support_faq | push: item -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if support_faq.size >= 6 -%}{%- break -%}{%- endif -%}
+{%- endfor -%}
+{%- if support_faq.size < 3 -%}{%- assign support_faq = app.faq | slice: 0, 6 -%}{%- endif -%}
+
+{%- if support_faq.size > 0 %}
+<section class="section">
+  <h2 class="h2">Common {{ app.name }} questions</h2>
+  <div class="faq">
+    {%- for item in support_faq %}
+    <details class="faq-item">
+      <summary>{{ item.q }}</summary>
+      <div class="faq-a">{{ item.a }}</div>
+    </details>
+    {%- endfor %}
+  </div>
+  <p class="small" style="margin-top:16px;">More answers: <a href="{{ app.url }}#faq">all {{ app.name }} questions</a>.</p>
+</section>
+{%- endif %}
+
+<section class="section">
+  <h2 class="h2">Useful links</h2>
+  <ul class="bullets">
+    <li><a href="{{ app.url }}">{{ app.name }}</a>: features, pricing and screenshots</li>
+    <li><a href="{{ app.url }}privacy/">{{ app.name }} privacy policy</a>: what the app stores and where</li>
+    <li><a href="/transparency/">Transparency report</a>: every Lagerland app’s tracking, SDKs and network calls, field by field</li>
+    <li><a href="{{ app.app_store_url }}" rel="noopener">{{ app.name }} on the App Store</a></li>
+  </ul>
 
   <div class="actions" style="margin-top:24px;">
     <a class="btn btn-secondary" href="{{ app.url }}">

@@ -185,5 +185,6 @@ support:
 release:
   first_release: "2026-04-01"
   last_updated: "2026-04-13"
+last_updated: 2026-07-11
 ---
 MediaKit is a native iPhone and Mac app that consolidates 152 local tools for video, audio, image, PDF, archive, and ebook work into a single drag-and-drop interface. It's a Universal Purchase — buy once, use on both iPhone and Mac. Every operation runs on-device using Apple's AVFoundation, CoreImage, PDFKit, Vision, and Speech frameworks — no uploads, no servers, no account. Drop any file and MediaKit picks the right tool instantly. Includes 21 built-in presets for YouTube, Instagram, Discord, Podcast, Email, iPhone export, and broadcast LUFS, plus six Shortcuts actions for automation and Mac menu bar access to every tool. Free 3-day trial with full access. Five core tools — Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress — stay free forever. Pro unlocks the remaining 147 tools and batch processing. Published by Lagerland Apps.

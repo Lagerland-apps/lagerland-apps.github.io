@@ -276,5 +276,6 @@ ratings:
   value: "4.8"
   count: 17
   last_synced: "2026-06-22"
+last_updated: 2026-10-25
 ---
 GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — built as a private alternative to Strong, Hevy, and Fitbod with the cheapest lifetime tier ($39.99) and no account required. The Smart Program Creator builds personalised periodised training (Full Body, Upper/Lower, PPL, Push/Pull, Arnold, Bro Split) with linear, DUP, block, or wave periodisation, reps-in-reserve targets, and scheduled deload weeks, and a 44-program library adds ready-made plans. Pro insights surface plateau detection (e1RM failing to clear a threshold derived from your own recent rate of gain, while volume holds steady), muscle balance analysis (push:pull, upper:lower, front:back), training load monitoring, and fatigue tracking. On Apple Watch you log each set's reps and weight, run rest timers, and see live heart rate while the iPhone runs the session. Tracks personal records, 1RM estimates (Epley), volume trends, and training consistency. No ads, no accounts, no tracking, no AI nagging. Free at the core; Pro from $1.99/month, $17.99/year, or $39.99 lifetime.

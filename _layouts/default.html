@@ -8,6 +8,11 @@
     {% include header.html %}
     <main class="container">
       {{ content }}
+      {%- if page.last_updated and page.collection == nil and page.layout == "default" %}
+        {%- if page.url contains "/alternatives/" or page.url contains "/guides/" or page.url contains "/for/" %}
+      <p class="small page-updated" style="text-align:center;margin:var(--s-5) 0 0;">Last updated <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: "%B %-d, %Y" }}</time></p>
+        {%- endif %}
+      {%- endif %}
     </main>
     {% include footer.html %}
   </body>

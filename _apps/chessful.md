@@ -346,6 +346,7 @@ related_journal:
 show_body: true
 about_heading: "What Chessful does — chess training, analysis, 40 opponents"
 related_apps: ["shogiful", "xiangqiful"]
+last_updated: 2026-10-09
 ---
 Chessful is a [chess training & analysis app for iPhone, iPad, and Mac](#features) — built around the idea that Stockfish's centipawn numbers don't help most players improve. The app reviews every move you make, then turns the engine's output into plain English: which piece you hung, which fork you missed, which prophylactic move would have saved the position. From there, [Chessful builds an adaptive training queue](#how-it-works) targeted at the patterns where you actually lose — tactics, defense, positional play, openings, endgames — using spaced repetition and forty AI opponents tuned to specific playing styles.
 

@@ -253,6 +253,7 @@ founder:
 related_apps:
   - appmeta
   - mockly
+last_updated: 2026-10-25
 ---
 
 Apple's own App Store Connect app is built to <em>manage</em> a developer business — submit builds, reply to reviews, edit metadata, manage TestFlight. That is the right tool for the work. It is not the right tool for the question almost every indie publisher actually asks ten times a day: <em>how is yesterday looking?</em> Open the official app on a phone and you are three taps and a loading spinner away from a number you wanted in two seconds.

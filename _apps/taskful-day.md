@@ -251,5 +251,6 @@ ratings:
   value: "5.0"
   count: 4
   last_synced: "2026-06-03"
+last_updated: 2026-05-31
 ---
 Taskful Day is a calm daily planner for iPhone, iPad, and Mac. It turns overwhelming to-do lists into realistic day plans with focus sessions, smart insights, voice capture, daily journaling, and multiple visual views — all with zero ads, zero tracking, and zero guilt. Designed for people who want to plan mindfully and finish their days feeling clear instead of behind. The Mac app brings the same calm planning experience to the desktop, while iCloud sync keeps the same day visible on whichever device you happen to be using.

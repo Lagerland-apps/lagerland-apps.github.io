@@ -359,6 +359,7 @@ ratings:
   value: "5.0"
   count: 2
   last_synced: "2026-10-24"
+last_updated: 2026-10-01
 ---
 Xiangqiful is a [xiangqi training and analysis app for iPhone, iPad and Mac](#features). Xiangqi is Chinese chess: two armies of sixteen pieces on the intersections of a nine-by-ten board, a river across the middle, and a palace at each end that the generals may never leave. It is one of the most played board games in the world, and outside Asia most people bounce off it at first sight, because every piece is a Chinese character painted on a wooden disc.
 
