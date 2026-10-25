@@ -111,7 +111,8 @@ def main():
             p = Page(); p.feed(src)
             url = url_for(path)
             if p.refresh: redirects.add(url); continue
-            if url.endswith(("/google9835ba948bb89980.html", "/yandex_ad81e17bf10db464.html")): continue
+            if url.endswith(("/google9835ba948bb89980.html", "/yandex_ad81e17bf10db464.html",
+                             "/naver8c063a2d4bfcc331b0d1f7f45c9ef55b.html")): continue
             meta = {}
             for m in p.metas:
                 k = m.get("name") or m.get("property")
