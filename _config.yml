@@ -36,6 +36,10 @@ defaults:
     values:
       sitemap: false
   - scope:
+      path: "yandex_ad81e17bf10db464.html"
+    values:
+      sitemap: false
+  - scope:
       path: "404.html"
     values:
       sitemap: false

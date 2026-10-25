@@ -84,11 +84,12 @@ SKIP_EXACT = {
     "README.md", "CLAUDE.md", "robots.txt", "feed.xml", "humans.txt",
     "llms.txt", "llms-full.txt", "ai-index.json", "ai-sitemap.xml",
     "sitemap.xml", "sitemap_index.xml", "404.html", ".gitignore",
-    # Search Console verification token — a real 200 page but never
-    # indexable (config sets sitemap:false, and it has no front matter of
-    # its own to detect). It's the one file that would otherwise reach the
-    # extension-preserving fallback below.
+    # Search Console / Yandex Webmaster verification tokens — real 200
+    # pages but never indexable (config sets sitemap:false, and they have
+    # no front matter of their own to detect). They're the only files that
+    # would otherwise reach the extension-preserving fallback below.
     "google9835ba948bb89980.html",
+    "yandex_ad81e17bf10db464.html",
 }
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---", re.DOTALL)
 PERMALINK_RE = re.compile(r"^permalink:\s*[\"']?(/[^\"'\n]*)", re.MULTILINE)
