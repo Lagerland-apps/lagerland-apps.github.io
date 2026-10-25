@@ -15,6 +15,7 @@ seo:
     - "upper lower split 4 days"
     - "novice linear progression when to stop"
 date: 2026-08-06
+last_updated: 2026-10-25
 lede: "Between two competently written strength programs run by the same person for the same twelve weeks, the difference in results is small. The difference between twelve weeks completed and twelve weeks abandoned in week five is enormous. So the useful comparison is not which program is best — it is which one survives your actual calendar. Here is that comparison, with the progression rules spelled out."
 quick_answer: "Pick the split you can attend, then pick a progression model that matches your training age. Full body three days a week suits beginners and unpredictable schedules; Upper/Lower four days suits intermediates with four reliable slots; PPL six days only works if six days is genuinely realistic, because a strict rotation desynchronises after two missed sessions. Novices should run linear progression until it stops working, then move to double progression. Percentage-based cycles like Jim Wendler's 5/3/1 suit lifters who want a low-decision runway. Every one of these needs a written log to run at all."
 faq:
@@ -68,7 +69,7 @@ The split is the easy half. The progression model decides what you do on a Tuesd
 | **Percentage / Training Max (5/3/1)** | A fixed increment to the *Training Max*, not to your 1RM | Once per completed cycle: +2.5 kg / 5 lb upper, +5 kg / 10 lb lower | If the AMRAP set falls below the prescribed minimum reps, hold the Training Max or cut it ~10% next cycle | Built in. Week four is the deload at 40/50/60% of the Training Max |
 | **Autoregulated / RPE** | Load, chosen to hit a target RPE or reps-in-reserve | Every set. A top set at RPE 8, back-offs a set percentage below it | There is no failed session, only a lighter one. The load that hits RPE 8 today is the prescription | Deload when the load at a given RPE drops for two or more sessions, or on a fixed 4–6 week cadence |
 
-A worked example, because double progression is the one people describe correctly and then run incorrectly. Dumbbell rows, 3 sets of 8 to 12, at 30 kg. Session one: 12, 10, 9 — no increase, two sets missed the top. Session two: 12, 12, 10. Still no. Session three: 12, 12, 12. Now you take the smallest increment your gym has, go to 32 kg, and expect roughly 9, 8, 8. That is not a step backwards. The bracket resets and you climb it again, and it may take five weeks.
+A worked example, because double progression is the one people describe correctly and then run incorrectly. Dumbbell rows, 3 sets of 8 to 12, at 30 kg. Session one: 12, 10, 9 — no increase, two sets missed the top. Session two: 12, 12, 10. Still no. Session three: 12, 12, 12. Now you take the smallest increment your gym has, go to 32 kg, and expect roughly 9, 8, 8. That is not a step backwards. The bracket resets and you climb it again, and it may take five weeks. The other versions of the add-weight rule, and the plate arithmetic for lifts where 2.5 kg is too big a jump, are in [double progression explained](/journal/double-progression-explained/).
 
 ## What is 5/3/1, exactly?
 
@@ -104,7 +105,7 @@ The heuristic I use: **two resets on the same lift with no new personal record b
 ## How to choose, in four questions
 
 1. **How many days did you actually train in the last eight weeks?** Count them, divide by eight. That is your days per week — not your intention, not your best month. Three means full body. Four means Upper/Lower. Six means PPL, if and only if six is a number you have hit before.
-2. **How long is a session on your worst weekday?** Under 50 minutes and two things fit: full body three times a week, or 5/3/1 with trimmed assistance. A 75-minute PPL leg day does not shrink to 45 minutes; it becomes a skipped one.
+2. **How long is a session on your worst weekday?** Under 50 minutes and two things fit: full body three times a week, or 5/3/1 with trimmed assistance. A 75-minute PPL leg day does not shrink to 45 minutes; it becomes a skipped one. Most of any session is rest, and [how long you rest between sets](/journal/how-long-to-rest-between-sets/) is the first thing to trim, starting with the isolation work rather than the heavy lifts.
 3. **What is your training age in this specific lift?** Under six months of consistent barbell work: linear. Six months to two years: double progression. Beyond: percentage cycles or autoregulation, and expect progress measured per quarter.
 4. **What has hurt, and what made it hurt?** If flat barbell benching aggravates a shoulder, no split solves that. Pick a structure that lets you swap the movement without deleting a day — organised by movement pattern, not by a fixed list of named exercises.
 

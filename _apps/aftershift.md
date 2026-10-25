@@ -104,6 +104,9 @@ who_not_for:
   - "You want medical diagnosis or treatment for Shift Work Disorder (talk to a sleep specialist)"
   - "You won't use Apple Health or the Apple Sleep tracking on your iPhone or Apple Watch"
 
+related_journal:
+  slug: "how-to-sleep-after-a-night-shift"
+  anchor: "How to sleep after a night shift — the drive home, the dark room, the nap and the days off"
 alternatives_to:
   - "OffShift"
   - "Shift Worker"
@@ -111,6 +114,7 @@ alternatives_to:
   - "Timeshifter (Shift Work)"
   - "Sleep Aid for Shift Workers"
   - "SleepSync"
+  - "RISE Sleep Tracker"
 
 value_points:
   - title: "Naps count here"

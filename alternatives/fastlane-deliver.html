@@ -1,0 +1,194 @@
+---
+layout: default
+permalink: /alternatives/fastlane-deliver/
+title: "Fastlane deliver Alternative"
+quick_answer: "fastlane deliver is the free, open-source command-line tool for uploading App Store metadata, screenshots and builds, and it belongs in CI. AppMeta is a paid native Mac app for the editing you do by hand: all 50 locales side by side, each change shown next to the live App Store Connect value, plus In-App Purchases, Game Center and customer reviews, which fastlane has no actions for. Many developers keep deliver in the pipeline and edit in AppMeta."
+seo:
+  title: "fastlane deliver Alternative: AppMeta, a Mac GUI for ASC"
+  description: "A fastlane deliver alternative for hand-editing. AppMeta is a native Mac app for App Store Connect metadata, IAPs and Game Center. deliver still suits CI."
+  keywords:
+    - fastlane deliver alternative
+    - fastlane deliver gui
+    - upload_to_app_store alternative
+    - fastlane metadata editor
+    - app store connect metadata editor mac
+    - appmeta vs fastlane
+---
+
+{%- assign app = site.apps | where: "slug", "appmeta" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/alternatives/fastlane-deliver/#webpage",
+  "url": "{{ site.url }}/alternatives/fastlane-deliver/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Alternatives", "item": "{{ site.url }}/alternatives/" },
+      { "@type": "ListItem", "position": 3, "name": "Fastlane deliver alternative", "item": "{{ site.url }}/alternatives/fastlane-deliver/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is the best GUI alternative to fastlane deliver?", "acceptedAnswer": { "@type": "Answer", "text": "For interactive editing, AppMeta is a native Mac app for the App Store Connect API that shows all 50 locales side by side and compares each change with the live value before pushing. It also handles In-App Purchases, Game Center and customer reviews, which fastlane has no actions for. It doesn't replace deliver in CI." } },
+    { "@type": "Question", "name": "Is fastlane deliver free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. fastlane, including deliver, is free and open source under the MIT license, and it's actively maintained. AppMeta costs $17.99/year or $29.99 lifetime. It's worth paying for if you edit listings by hand often enough that a Mac interface saves you time." } },
+    { "@type": "Question", "name": "Does fastlane deliver show a diff before uploading?", "acceptedAnswer": { "@type": "Answer", "text": "It shows a preview. deliver renders your local metadata and screenshots into an HTML page and asks you to confirm before uploading. That page shows what you are about to send; it doesn't compare it with what is live on App Store Connect. The --force flag skips the preview, which is what CI runs use. AppMeta shows the live value and your edit side by side for every changed field." } },
+    { "@type": "Question", "name": "Can fastlane manage In-App Purchases, Game Center or reviews?", "acceptedAnswer": { "@type": "Answer", "text": "Not through its actions. fastlane's action list has nothing for creating or editing In-App Purchases, subscriptions, Game Center items or customer review replies. TestFlight uploads go through the separate pilot action. AppMeta covers IAPs, subscriptions, Game Center, TestFlight and reviews in one app." } },
+    { "@type": "Question", "name": "Does AppMeta upload builds or run in CI?", "acceptedAnswer": { "@type": "Answer", "text": "No. AppMeta doesn't upload binaries and has no command-line mode. Upload builds with Xcode, Transporter or fastlane, then choose the build for your version and submit it for review in AppMeta. If your whole release runs in CI, fastlane is the right tool for that part." } },
+    { "@type": "Question", "name": "Can I use fastlane deliver and AppMeta together?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and many developers will. Keep deliver in your release pipeline and use AppMeta for hand edits. Pick one source of truth: if deliver's metadata files live in git and you change text in AppMeta, run fastlane deliver download_metadata afterwards so the next CI upload doesn't overwrite your edits with the old files." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Command line vs Mac app · Different jobs</p>
+    <h1 class="h1">A fastlane deliver alternative<br><span class="gradient-text">for the editing you still do by hand.</span></h1>
+    <p class="lead">fastlane deliver is free, open source, and the standard way to push App Store metadata, screenshots and builds from CI. It's very good at that. What it doesn't give you is a place to read and edit 50 locales at once, or any handling of In-App Purchases, Game Center or customer reviews. AppMeta is a native Mac app for that interactive side, and plenty of developers end up using both.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/apps/appmeta/">See AppMeta</a>
+      <a class="btn btn-secondary" href="#compare">Compare</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section id="compare" class="section reveal">
+  <h2 class="h2">How does AppMeta compare to fastlane deliver?</h2>
+  <p class="lead">deliver automates a release. AppMeta is for a person editing a listing. They overlap on metadata and screenshots and split everywhere else.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Interface</div>
+      <div class="card-text"><strong>AppMeta:</strong> A Mac app. Every locale side by side, with character counts that update as you type.<br><br><strong>fastlane deliver:</strong> A command-line action configured by a Deliverfile. Metadata lives in plain .txt files under fastlane/metadata/&lt;locale&gt;/.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Automation</div>
+      <div class="card-text"><strong>AppMeta:</strong> None. It's built for someone at the keyboard, not a pipeline.<br><br><strong>fastlane deliver:</strong> Unattended uploads and submission from GitHub Actions, GitLab CI, Jenkins, Bitrise, Codemagic and other CI services.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Checking changes</div>
+      <div class="card-text"><strong>AppMeta:</strong> Shows the live App Store Connect value next to your edit for every changed field before anything is pushed, and flags fields changed on the server since your last fetch.<br><br><strong>fastlane deliver:</strong> Renders your local files into an HTML preview and asks you to confirm, without comparing them to what's live. <code>--force</code> skips the preview in CI. Before submitting, it can run precheck, which scans for placeholder text, unreachable URLs and other common rejection reasons.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">What it covers</div>
+      <div class="card-text"><strong>AppMeta:</strong> Listing metadata, screenshots, In-App Purchases and subscriptions, Game Center, TestFlight, customer reviews and submission.<br><br><strong>fastlane deliver:</strong> Metadata, screenshots, App Previews, binaries, review information, submission and phased release. TestFlight is fastlane's separate pilot action. There's no fastlane action for IAPs, Game Center or reviews.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Cost and setup</div>
+      <div class="card-text"><strong>AppMeta:</strong> $17.99/year or $29.99 lifetime, installed from the Mac App Store.<br><br><strong>fastlane deliver:</strong> Free under the MIT license. Needs Ruby 3.2 or later and a fastlane setup in your project.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Where your metadata lives</div>
+      <div class="card-text"><strong>AppMeta:</strong> A local working copy on your Mac, fetched from App Store Connect.<br><br><strong>fastlane deliver:</strong> Text files you can commit to git and review in pull requests, which is one of deliver's biggest strengths.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">AppMeta vs fastlane deliver, feature by feature</h2>
+  <p class="lead">A GUI for interactive editing next to the CLI most iOS teams already run.</p>
+  <div class="card" style="overflow-x:auto;padding:0;">
+    <table class="compare-matrix" style="width:100%;border-collapse:collapse;font-size:var(--text-sm);">
+      <thead>
+        <tr style="text-align:left;">
+          <th style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-2);">Feature</th>
+          <th style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-2);">AppMeta</th>
+          <th style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-2);">fastlane deliver</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Interface</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Mac app</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Command line + Deliverfile</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Price</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">$17.99/year or $29.99 lifetime</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Free, open source (MIT)</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Runs in CI</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Metadata storage</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Local working copy fetched from App Store Connect</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">.txt files per locale, easy to keep in git</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Pull existing metadata</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Fetch in the app</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><code>deliver download_metadata</code> / <code>deliver init</code></td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Review before upload</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Live value vs your edit, per field</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">HTML preview of local files; no comparison with live</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Push granularity</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">One field, one locale or all locales</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Whole run (skip flags for metadata, screenshots, binary)</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Binary upload</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No (use Xcode or Transporter)</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Screenshots</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Upload for iPhone, iPad, Mac, Apple Watch, Apple TV</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, plus App Preview videos</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Submit for review / phased release</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>In-App Purchases and subscriptions</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No fastlane action</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Game Center</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No fastlane action</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Customer reviews</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Read and reply</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No fastlane action</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>TestFlight</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Built in</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Separate action (pilot)</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Keyword analysis</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">On-device checks + optional AI</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">None (precheck covers rejection risks)</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Authentication</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">App Store Connect API key, stored in the Keychain</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">API key file, or Apple ID + 2FA session that expires</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);"><strong>Requirements</strong></td><td style="padding:var(--s-3) var(--s-4);">macOS 14 or later</td><td style="padding:var(--s-3) var(--s-4);">Ruby 3.2+; macOS (other OSes partly)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="testimonials-footnote" style="margin-top:var(--s-3);">fastlane details were checked on 25 October 2026 against docs.fastlane.tools and the fastlane GitHub repository (release 2.241.1). Behaviour can change between releases, so check the deliver docs for your version.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Who should keep fastlane deliver, and who should add AppMeta?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Add AppMeta if…</div>
+      <ul class="bullets">
+        <li>You edit listings by hand across many locales</li>
+        <li>You want to see the live value next to your change before anything is pushed</li>
+        <li>You manage In-App Purchases, subscriptions or Game Center</li>
+        <li>You reply to customer reviews</li>
+        <li>You'd rather not keep a Ruby toolchain around for metadata edits</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Keep fastlane deliver if…</div>
+      <ul class="bullets">
+        <li>Your release is scripted and runs in CI</li>
+        <li>You want metadata in git, reviewed in pull requests</li>
+        <li>You upload binaries from the same pipeline</li>
+        <li>You want free and open-source tooling</li>
+        <li>You never touch metadata by hand between releases</li>
+      </ul>
+    </div>
+  </div>
+  <p class="lead" style="margin-top:var(--s-4);text-align:center;">If you use both, pick one source of truth. When deliver's text files live in git and you edit in AppMeta, run <code>fastlane deliver download_metadata</code> afterwards so the next CI upload doesn't put the old text back.</p>
+</section>
+
+{% if app %}
+<section class="section reveal">
+  <h2 class="h2">About AppMeta</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>What is the best GUI alternative to fastlane deliver?</summary><div class="faq-a">For interactive editing, AppMeta is a native Mac app for the App Store Connect API that shows all 50 locales side by side and compares each change with the live value before pushing. It also handles In-App Purchases, Game Center and customer reviews, which fastlane has no actions for. It doesn't replace deliver in CI.</div></details>
+    <details class="faq-item"><summary>Is fastlane deliver free?</summary><div class="faq-a">Yes. fastlane, including deliver, is free and open source under the MIT license, and it's actively maintained. AppMeta costs $17.99/year or $29.99 lifetime. It's worth paying for if you edit listings by hand often enough that a Mac interface saves you time.</div></details>
+    <details class="faq-item"><summary>Does fastlane deliver show a diff before uploading?</summary><div class="faq-a">It shows a preview. deliver renders your local metadata and screenshots into an HTML page and asks you to confirm before uploading. That page shows what you are about to send; it doesn't compare it with what is live on App Store Connect. The --force flag skips the preview, which is what CI runs use. AppMeta shows the live value and your edit side by side for every changed field.</div></details>
+    <details class="faq-item"><summary>Can fastlane manage In-App Purchases, Game Center or reviews?</summary><div class="faq-a">Not through its actions. fastlane's action list has nothing for creating or editing In-App Purchases, subscriptions, Game Center items or customer review replies. TestFlight uploads go through the separate pilot action. AppMeta covers IAPs, subscriptions, Game Center, TestFlight and reviews in one app.</div></details>
+    <details class="faq-item"><summary>Does AppMeta upload builds or run in CI?</summary><div class="faq-a">No. AppMeta doesn't upload binaries and has no command-line mode. Upload builds with Xcode, Transporter or fastlane, then choose the build for your version and submit it for review in AppMeta. If your whole release runs in CI, fastlane is the right tool for that part.</div></details>
+    <details class="faq-item"><summary>Can I use fastlane deliver and AppMeta together?</summary><div class="faq-a">Yes, and many developers will. Keep deliver in your release pipeline and use AppMeta for hand edits. Pick one source of truth: if deliver's metadata files live in git and you change text in AppMeta, run fastlane deliver download_metadata afterwards so the next CI upload doesn't overwrite your edits with the old files.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Try it</p>
+  <h2 class="h2">Open AppMeta.</h2>
+  <p class="lead">Keep fastlane for the pipeline. Use AppMeta when a person needs to read, compare and edit the listing.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{{ app.app_store_url }}" rel="noopener">Get AppMeta</a>
+    <a class="btn btn-secondary" href="/apps/appmeta/">See full page</a>
+  </div>
+</section>

@@ -90,6 +90,9 @@ who_not_for:
   - "You need competitive rank tracking, keyword popularity scoring, and competitor intelligence — that's Appfigures / AppTweak / Sensor Tower territory, not AppMeta's"
   - "You want a web-based dashboard your whole team can hit from any browser — AppMetaHub or ASO.dev fit that better"
 
+related_journal:
+  slug: "app-store-keyword-field-100-characters"
+  anchor: "How the App Store keyword field works — 100 characters, commas, and the words Apple already indexes"
 alternatives_to:
   - "Itsyconnect"
   - "NativeConnect"
@@ -97,6 +100,7 @@ alternatives_to:
   - "Fastlane deliver"
   - "AppMetaHub"
   - "ASO.dev"
+  - "Helm for App Store Connect"
 
 founder:
   entity_type: "Organization"

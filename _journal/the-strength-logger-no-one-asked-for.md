@@ -13,7 +13,7 @@ seo:
     - "gym logger watch"
     - "gymlogger x"
 date: 2026-03-07
-last_updated: 2026-08-14
+last_updated: 2026-10-25
 lede: "Strong, Hevy, and Fitbod already exist. The strength-training logger market is well-served. I shipped GymLogger X anyway, and the reason isn't features — it's that nobody else seems to think Apple Watch deserves to be the actual workout log."
 quick_answer: "GymLogger X treats Apple Watch as the primary strength-training log, not a phone companion. Set entry, rest timers, and live heart rate live on the wrist; the iPhone is for analytics, program editing, and history. Pro adds plateau detection that informs without lecturing. Pricing is free core, $17.99 a year, or $39.99 lifetime."
 faq:
@@ -60,9 +60,9 @@ The other piece of the bet is the analytics layer.
 
 Most strength loggers track sets and reps and stop there. The Pro tiers add some trend lines. None of them, in my experience, will quietly tell you: *your bench press has been stalled at 100kg×5 for nine weeks across three different programs, and the most likely cause is your recovery, not your programming.*
 
-GymLogger X Pro does try to make that observation, gently. The *plateau detection* feature looks at your last twelve weeks of data per exercise and flags when an exercise has stopped progressing despite consistent effort. The output is a small banner, not a notification — *"Your bench press is plateauing. Possible causes: training frequency, recovery, exercise selection. Tap for analysis."*
+GymLogger X Pro does try to make that observation, gently. The *plateau detection* feature looks at your last twelve weeks of data per exercise and flags when an exercise has stopped progressing despite consistent effort. The output is a small banner, not a notification — *"Your bench press is plateauing. Possible causes: training frequency, recovery, exercise selection. Tap for analysis."* The progress it measures is each lift's estimated one-rep max, and [how that estimate is calculated, and where the formulas stop being trustworthy](/journal/how-to-estimate-your-one-rep-max/), has its own post.
 
-What it does *not* do is automatically restructure your program for you, change your weights, or send you a coach's nag. Those are real features in other apps. They are also things I think the user should choose to do, not the app's place to impose. Plateau detection in GymLogger X is informational. The next move is yours.
+What it does *not* do is automatically restructure your program for you, change your weights, or send you a coach's nag. Those are real features in other apps. They are also things I think the user should choose to do, not the app's place to impose. Plateau detection in GymLogger X is informational. The next move is yours, and if it points toward a lighter week, [when to deload](/journal/when-to-deload/) covers the signs and what the evidence says.
 
 ## The lifetime price
 
@@ -76,7 +76,7 @@ About 30% of GymLogger X paid users choose the lifetime tier. They are vocal, th
 
 Back to the calendar. This weekend the US shifts to daylight-saving time. Most US adults will lose an hour of sleep on Sunday night, and most of them will not realise that the loss has measurable consequences for the following week's training.
 
-The research on this is unambiguous. Acute sleep restriction reduces strength performance by 5-10% on the day after, raises perceived exertion noticeably, and depresses recovery markers (HRV, resting heart rate) for several days. In the gym, this presents as: a lift that felt easy last Tuesday feels heavy this Tuesday, and the user blames their effort rather than their sleep.
+The research on this is unambiguous. Acute sleep restriction reduces strength performance by 5-10% on the day after, raises perceived exertion noticeably, and depresses recovery markers (HRV, resting heart rate) for several days. In the gym, this presents as: a lift that felt easy last Tuesday feels heavy this Tuesday, and the user blames their effort rather than their sleep. If you rate your sets, [how RPE and reps in reserve work](/journal/rpe-and-rir-explained/) explains why the same load can rate harder after a short night.
 
 If you started a new strength program on January 1 and you've been progressing well, this is the week the curve will flatten. **It is not your training. It is the time change.** Take Tuesday's session at last week's weights instead of pushing for new ones. Resume normal progression next week. GymLogger X will not lecture you, but I will.
 

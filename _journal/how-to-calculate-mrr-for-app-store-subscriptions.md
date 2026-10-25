@@ -3,6 +3,7 @@ layout: journal
 slug: how-to-calculate-mrr-for-app-store-subscriptions
 title: "How to calculate MRR for App Store subscriptions from Apple's Subscription report"
 date: 2026-06-27
+last_updated: 2026-10-25
 seo:
   title: "How to Calculate MRR for App Store Subscriptions"
   description: "Calculate MRR for App Store subscriptions from Apple's Subscription report: the formula, the divisor for each plan length, which counts to use, and why."
@@ -89,7 +90,7 @@ The 380 annual subscribers contribute more MRR than the 120 monthly ones, yet in
 
 ## Four decisions that make two MRR numbers disagree
 
-**1. Proceeds or price.** Customer Price is what the buyer paid, including Apple's commission and, in many storefronts, tax. Developer Proceeds is what you are owed. Under Apple's [subscription terms](https://developer.apple.com/app-store/subscriptions/) you receive 70% of the price minus applicable taxes during a subscriber's first year of paid service and 85% after that. Members of the [Small Business Program](https://developer.apple.com/app-store/small-business-program/) receive 85% from the start. An MRR built on price overstates your income by the commission and any included tax.
+**1. Proceeds or price.** Customer Price is what the buyer paid, including Apple's commission and, in many storefronts, tax. Developer Proceeds is what you are owed. Under Apple's [subscription terms](https://developer.apple.com/app-store/subscriptions/) you receive 70% of the price minus applicable taxes during a subscriber's first year of paid service and 85% after that. Members of the [Small Business Program](https://developer.apple.com/app-store/small-business-program/) receive 85% from the start. An MRR built on price overstates your income by the commission and any included tax. For what every money column in the sales reports holds, from Customer Price to Developer Proceeds, see [App Store proceeds vs sales](/journal/app-store-proceeds-vs-sales/).
 
 **2. Who counts as paying.** Free trials are pipeline, not revenue. Introductory and promotional offers are the judgment call: they bring in money, but at a temporary price. Using only Active Standard Price Subscriptions gives the conservative figure, made of subscribers paying the standard price. Including discounted offers raises the number and makes it less stable.
 

@@ -56,7 +56,7 @@ Optional overrides: `how_it_works.heading` (replaces the default H2 "The method 
 - `apps/<slug>/support/index.html` — `layout: support`; needs `slug` (it looks the app up via `site.apps`). It has no `page.title`, so **without `seo.title` it leaks BOTH title and description** — add `seo:{title,description}`.
 
 ### Alternatives page — `alternatives/<slug>.html`
-`layout: default`, `permalink: /alternatives/<slug>/`, `title: "<Competitor> Alternative"`, `quick_answer`, full `seo:` block. Then the **4 integration points** (see the established alternatives pattern): the page itself, the `alt_pairs` map, the target app's `alternatives_to:`, and the index `ItemList` + card. (96/96 already follow this — copy an existing one.)
+`layout: default`, `permalink: /alternatives/<slug>/`, `title: "<Competitor> Alternative"`, `quick_answer`, full `seo:` block. Then the **4 integration points** (see the established alternatives pattern): the page itself, the `alt_pairs` map, the target app's `alternatives_to:`, and the index `ItemList` + card. (123/123 already follow this — copy an existing one.)
 
 ### Landing pages — `for/<slug>.html`, `guides/<slug>.html`
 `layout: default`, explicit `permalink`, `title`, `quick_answer`, full `seo:` block.

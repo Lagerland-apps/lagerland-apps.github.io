@@ -1,0 +1,197 @@
+---
+layout: default
+permalink: /alternatives/app-store-connect-app/
+title: "App Store Connect App Alternative"
+quick_answer: "AppMeta Pulse is a monitoring dashboard for App Store Connect on iPhone, and for most developers it works next to Apple's free App Store Connect app rather than replacing it. Apple's app manages the business: app status and submissions, TestFlight testers and builds, review replies, marketing assets, and push notifications. AppMeta Pulse reads Apple's daily sales and subscription reports and shows proceeds or sales, MRR, active subscriptions, trials and refunds per app, with 12 widgets and no controls for builds, pricing or metadata. It needs your own App Store Connect API key and costs from $0.99 a month after a free trial; Apple's app is free and signs in with your Apple Account."
+seo:
+  title: "App Store Connect App Alternative — AppMeta Pulse"
+  description: "AppMeta Pulse vs Apple's App Store Connect app: Apple's free app runs releases and TestFlight; Pulse is a dashboard for proceeds, MRR and refunds."
+  keywords:
+    - app store connect app alternative
+    - app store connect iphone app
+    - appmeta pulse vs app store connect
+    - app store connect proceeds on iphone
+    - app store connect widget
+    - app store mrr iphone app
+    - read-only app store connect dashboard
+---
+
+{%- assign app = site.apps | where: "slug", "appmeta-pulse" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/alternatives/app-store-connect-app/#webpage",
+  "url": "{{ site.url }}/alternatives/app-store-connect-app/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Alternatives", "item": "{{ site.url }}/alternatives/" },
+      { "@type": "ListItem", "position": 3, "name": "App Store Connect app alternative", "item": "{{ site.url }}/alternatives/app-store-connect-app/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is AppMeta Pulse a replacement for the App Store Connect app?", "acceptedAnswer": {"@type": "Answer", "text": "For most developers, no. Apple's App Store Connect app manages the business: app status and submissions, TestFlight, review replies, marketing assets and notifications. AppMeta Pulse is a dashboard for the money side, with proceeds, sales, MRR, subscriptions, trials and refunds across your apps, and no controls for builds, pricing or metadata. Many people keep both."}},
+    {"@type": "Question", "name": "Does the App Store Connect app show proceeds and subscriptions?", "acceptedAnswer": {"@type": "Answer", "text": "Its App Store listing says it shows sales and trends information. It doesn't describe subscription metrics such as MRR. On the web, App Store Connect's Analytics has a subscriptions dashboard. AppMeta Pulse reads Apple's daily Sales and Subscription reports and shows proceeds or sales, MRR, active subscriptions and trials for each app."}},
+    {"@type": "Question", "name": "Why does AppMeta Pulse need an API key when Apple's app doesn't?", "acceptedAnswer": {"@type": "Answer", "text": "Apple's app signs in with your Apple Account because Apple runs App Store Connect. Third-party apps reach the same data through the official App Store Connect API, which uses a key you create. AppMeta Pulse asks for a key with the Admin role plus your Vendor Number, keeps the key in the iOS Keychain, and calls Apple's servers directly."}},
+    {"@type": "Question", "name": "Can AppMeta Pulse submit builds or manage TestFlight?", "acceptedAnswer": {"@type": "Answer", "text": "No. AppMeta Pulse has no code for builds, submissions, TestFlight, pricing or metadata. The only things it sends to App Store Connect are review replies you write and the analytics report requests Apple needs before preparing impressions data. For releases, use Apple's App Store Connect app or the website."}},
+    {"@type": "Question", "name": "Which app has notifications and widgets?", "acceptedAnswer": {"@type": "Answer", "text": "Apple's App Store Connect app sends notifications for app status changes, new reviews, tester feedback and featuring; its listing doesn't mention widgets. AppMeta Pulse has no push notifications and offers 12 Home Screen and Lock Screen widgets for proceeds, sales, MRR, trends, subscriptions and reviews."}},
+    {"@type": "Question", "name": "How much do they cost?", "acceptedAnswer": {"@type": "Answer", "text": "Apple's App Store Connect app is free. AppMeta Pulse has a free trial, then costs from $0.99 a month; check the App Store listing for the current plans in your currency."}}
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">App Store Connect on iPhone · Companion, not a replacement</p>
+    <h1 class="h1">Already using the<br><span class="gradient-text">App Store Connect app?</span></h1>
+    <p class="lead">
+      Apple's App Store Connect app is free, made by the company that runs the store, and rated 4.7 from about 15,000 ratings. It is where you check review status, move testers and builds around in TestFlight, reply to reviews and get notified when something changes. It is a management tool, and a good one. AppMeta Pulse does a narrower job: the daily look at money and subscriptions across every app you ship, in Apple's own report terms, from an app that has no code for builds, pricing or metadata. Most people who try Pulse keep Apple's app installed too.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/apps/appmeta-pulse/">See AppMeta Pulse</a>
+      <a class="btn btn-secondary" href="#compare">Compare side-by-side</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section id="compare" class="section reveal">
+  <h2 class="h2">How does AppMeta Pulse compare to the App Store Connect app?</h2>
+  <p class="lead">They overlap on two things, sales figures and review replies. Everything else splits cleanly: Apple's app manages releases, Pulse reads reports.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">What each app is for</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> A dashboard. It reads Apple's daily Sales and Trends reports, the subscription reports, App Store impressions and page views, and customer reviews. Its only writes are review replies you send and the analytics report requests Apple needs before it prepares impressions data.<br><br><strong>App Store Connect app:</strong> A management app. Its App Store listing covers app status and App Store submissions, TestFlight tester groups, builds and feedback, sales and trends, ratings and reviews, marketing assets for launches and featuring, and notifications.<br><br>If you need to act on a release from your phone, Apple's app is the one that can.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Price and sign-in</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> Free trial, then from $0.99 a month. You connect an App Store Connect API key with the Admin role, its Issuer ID and Key ID, and your Vendor Number. The key stays in the iOS Keychain.<br><br><strong>App Store Connect app:</strong> Free. You sign in with your Apple Account, so there is no key to create, and team members can use it with their own App Store Connect access.<br><br>Apple's app is cheaper and quicker to set up. That is a real advantage.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Money and subscription numbers</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> Proceeds by default, or Sales with one setting, per app and across the portfolio. MRR, active subscriptions and trials from Apple's Subscription report, refunds, downloads, and period-over-period trends, with amounts converted into one display currency.<br><br><strong>App Store Connect app:</strong> Sales and trends information, according to its listing. The listing doesn't describe subscription metrics such as MRR; on the web, App Store Connect's Analytics has a subscriptions dashboard.<br><br>Both read the same Apple data. The difference is how much of it each puts on one screen.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Notifications and widgets</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> No push notifications. 12 Home Screen and Lock Screen widgets for proceeds, sales, MRR, trends, subscriptions and reviews, refreshed from Apple's daily reports.<br><br><strong>App Store Connect app:</strong> Notifications for app status changes, new reviews, tester feedback and featuring. Its listing doesn't mention widgets.<br><br>If you want to hear the moment App Review approves a build, Apple's app wins this category.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Review replies</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> Read and reply to customer reviews, with optional reply drafts written on-device by Apple Intelligence where your iPhone supports it.<br><br><strong>App Store Connect app:</strong> View and respond to your latest ratings and reviews.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Platforms and privacy label</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> iPhone app, iOS 17 or later; the App Store also lists it for Apple silicon Macs and Apple Vision Pro. Privacy label: Data Not Collected.<br><br><strong>App Store Connect app:</strong> iPhone and iPad, iOS 17 or later. Its privacy label lists data linked to you, such as contact info and identifiers, and data not linked to you, such as usage data and diagnostics.<br><br>Apple already runs your App Store Connect account, so its label sits inside a relationship you have anyway. Pulse's label matters because it is a third party reading your sales.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">AppMeta Pulse vs the App Store Connect app, feature by feature</h2>
+  <p class="lead">From each app's App Store listing and, for AppMeta Pulse, its source code. Checked October 2026.</p>
+  <div class="card" style="overflow-x:auto;padding:0;">
+    <table class="compare-matrix" style="width:100%;border-collapse:collapse;font-size:var(--text-sm);">
+      <thead>
+        <tr style="text-align:left;">
+          <th style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-2);">Feature</th>
+          <th style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-2);">AppMeta Pulse</th>
+          <th style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-2);">App Store Connect app</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Made by</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Lagerland Apps, an independent studio</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Apple</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Price</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Free trial, then from $0.99/month</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Free</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Sign-in</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Your App Store Connect API key (Admin) and Vendor Number</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Your Apple Account</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>App status and submissions</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>TestFlight testers and builds</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Sales and Trends figures</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, proceeds or sales from the daily Sales report</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>MRR, active subscriptions, trials</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, from the Subscription report</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Not described in its listing</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Refunds</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Counted per app and period</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Not described in its listing</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Currency</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Converts every row into one display currency (ECB monthly rates)</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Not described in its listing</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Reply to reviews</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, with optional on-device AI drafts</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Push notifications</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes: status, reviews, tester feedback, featuring</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Widgets</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">12, Home Screen and Lock Screen</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">None listed</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Marketing assets</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Can change your account</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Only review replies and analytics report requests</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, it is a management tool</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>History</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Keeps its own copy of daily reports after Apple's one-year download window</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Not described in its listing</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Platforms</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">iPhone; also listed for Apple silicon Mac and Apple Vision Pro</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">iPhone, iPad</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Privacy label</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Data Not Collected</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Data linked to you, including contact info and identifiers</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>App Store rating</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Not enough ratings to show yet</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">4.7 from about 15,000 ratings</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);"><strong>Best for</strong></td><td style="padding:var(--s-3) var(--s-4);">A daily look at proceeds, MRR and refunds across apps</td><td style="padding:var(--s-3) var(--s-4);">Managing releases, testers and reviews on the go</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Who should pick AppMeta Pulse, and who should stick with Apple's app?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Pick AppMeta Pulse if…</div>
+      <ul class="bullets">
+        <li>You open App Store Connect mostly to see how yesterday sold, not to ship something</li>
+        <li>You sell subscriptions and want MRR, active subscriptions and trials on one screen</li>
+        <li>You ship several apps and want proceeds per app and for the whole portfolio</li>
+        <li>You want widgets on the Home Screen or Lock Screen instead of opening an app</li>
+        <li>You want an app that cannot touch builds, pricing or metadata, even by accident</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Stick with the App Store Connect app if…</div>
+      <ul class="bullets">
+        <li>You need TestFlight, submissions and app status from your phone</li>
+        <li>Push notifications for App Review and new reviews are how you keep up</li>
+        <li>You don't want to create an API key or pay for a second app</li>
+        <li>You need an iPad layout</li>
+        <li>Apple's sales and trends view already tells you what you need to know</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% if app %}
+<section class="section reveal">
+  <h2 class="h2">About AppMeta Pulse</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Is AppMeta Pulse a replacement for the App Store Connect app?</summary><div class="faq-a">For most developers, no. Apple's App Store Connect app manages the business: app status and submissions, TestFlight, review replies, marketing assets and notifications. AppMeta Pulse is a dashboard for the money side, with proceeds, sales, MRR, subscriptions, trials and refunds across your apps, and no controls for builds, pricing or metadata. Many people keep both.</div></details>
+    <details class="faq-item"><summary>Does the App Store Connect app show proceeds and subscriptions?</summary><div class="faq-a">Its App Store listing says it shows sales and trends information. It doesn't describe subscription metrics such as MRR. On the web, App Store Connect's Analytics has a subscriptions dashboard. AppMeta Pulse reads Apple's daily Sales and Subscription reports and shows proceeds or sales, MRR, active subscriptions and trials for each app.</div></details>
+    <details class="faq-item"><summary>Why does AppMeta Pulse need an API key when Apple's app doesn't?</summary><div class="faq-a">Apple's app signs in with your Apple Account because Apple runs App Store Connect. Third-party apps reach the same data through the official App Store Connect API, which uses a key you create. AppMeta Pulse asks for a key with the Admin role plus your Vendor Number, keeps the key in the iOS Keychain, and calls Apple's servers directly.</div></details>
+    <details class="faq-item"><summary>Can AppMeta Pulse submit builds or manage TestFlight?</summary><div class="faq-a">No. AppMeta Pulse has no code for builds, submissions, TestFlight, pricing or metadata. The only things it sends to App Store Connect are review replies you write and the analytics report requests Apple needs before preparing impressions data. For releases, use Apple's App Store Connect app or the website.</div></details>
+    <details class="faq-item"><summary>Which app has notifications and widgets?</summary><div class="faq-a">Apple's App Store Connect app sends notifications for app status changes, new reviews, tester feedback and featuring; its listing doesn't mention widgets. AppMeta Pulse has no push notifications and offers 12 Home Screen and Lock Screen widgets for proceeds, sales, MRR, trends, subscriptions and reviews.</div></details>
+    <details class="faq-item"><summary>How much do they cost?</summary><div class="faq-a">Apple's App Store Connect app is free. AppMeta Pulse has a free trial, then costs from $0.99 a month; check the App Store listing for the current plans in your currency.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Try it</p>
+  <h2 class="h2">Open AppMeta Pulse.</h2>
+  <p class="lead">A calm App Store Connect dashboard for proceeds, MRR and refunds, next to the app you already use for releases. Zero data collection on the privacy label, from $0.99/month.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/apps/appmeta-pulse/">Learn about AppMeta Pulse</a>
+    <a class="btn btn-secondary" href="/alternatives/revenuecat/">AppMeta Pulse vs RevenueCat</a>
+  </div>
+</section>

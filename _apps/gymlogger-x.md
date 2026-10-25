@@ -159,6 +159,8 @@ alternatives_to:
   - "Jefit"
   - "Caliber"
   - "Heavyset"
+  - "StrongLifts 5x5"
+  - "Alpha Progression"
 
 # 7-row comparison table — fact-checked against each competitor's public App Store page,
 # landing page, and pricing documentation. Sources and verification date in the footnote.

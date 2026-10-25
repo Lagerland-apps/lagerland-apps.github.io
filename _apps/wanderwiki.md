@@ -111,6 +111,8 @@ alternatives_to:
   - "Random-Wiki-Explorer"
   - "Wikipedia app"
   - "Kiwix"
+  - "WikiTok"
+  - "Wikiwand"
 
 founder:
   entity_type: "Organization"

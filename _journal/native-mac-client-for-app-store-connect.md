@@ -13,7 +13,7 @@ seo:
     - "asc api tool"
     - "appmeta"
 date: 2026-02-21
-last_updated: 2026-08-14
+last_updated: 2026-10-25
 lede: "App Store Connect is the most consequential web app most indie developers use, and it has been the same web app for ten years. AppMeta is the studio's quietest app and arguably the most useful — a native Mac client for the ASC API, built for the day you're shipping in fourteen locales and need to stop scrolling."
 quick_answer: "AppMeta is a native Mac client for the App Store Connect API built for indie developers shipping across many locales. It offers side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, a unified review inbox across every app, and version submission. Priced as a $29.99 one-time lifetime purchase, or $17.99 a year, with a free demo mode."
 faq:
@@ -46,16 +46,16 @@ App Store Connect's design constraints are not Apple's fault, in fairness. They 
 What ASC isn't optimised for is the workflow of an indie developer with five-to-fifty apps shipping across twenty locales. Specifically:
 
 - **Localised metadata editing is one-locale-at-a-time.** Editing a description in fourteen languages means switching the locale dropdown fourteen times. There is no side-by-side view.
-- **Keyword fields are 100 characters per locale**, with no cross-locale gap analysis. Indies rediscover the same keyword waste in every language because there's no tool to surface it.
+- **Keyword fields are 100 characters per locale**, with no cross-locale gap analysis. Indies rediscover the same keyword waste in every language because there's no tool to surface it. (The rules for that field, and the folklore around it, now have [their own post](/journal/app-store-keyword-field-100-characters/).)
 - **Review responses are a per-app web flow** with no inbox. If you have ten apps, you have ten places to check.
-- **Version submission requires a multi-step flow with hidden state.** "Did I save the export compliance? Did I tick advertising identifier? Did I attach the encryption form?" These have all bitten me.
+- **Version submission requires a multi-step flow with hidden state.** "Did I save the export compliance? Did I tick advertising identifier? Did I attach the encryption form?" These have all bitten me. So has forgetting [which fields only change with a new version](/journal/app-store-fields-that-need-a-new-version/).
 - **The web app does not run while you're offline.** The flight where you wanted to triage twelve reviews in a row is the flight you can't.
 
 Every one of these is a real friction. None of them are catastrophic individually. Together they are why I had a recurring "App Store Connect" calendar block on my Friday afternoons for two years before I shipped AppMeta.
 
 ## What does a native App Store Connect client actually change?
 
-The core of AppMeta is a Mac client that talks directly to the App Store Connect REST API and gives you a side-by-side view of your apps' metadata. The four things it changes:
+The core of AppMeta is a Mac client that talks directly to the App Store Connect REST API and gives you a side-by-side view of your apps' metadata. It signs in with an API key you create yourself in App Store Connect; [the key setup guide](/journal/app-store-connect-api-key-setup/) walks through that. The four things it changes:
 
 **Side-by-side localised editing.** The English description is in the left pane. The German, French, Japanese, and Spanish versions are tabs in the right pane. You edit one, the diff is highlighted across the others, and you push when you're ready. The hour-long localisation pass collapses into ten minutes.
 

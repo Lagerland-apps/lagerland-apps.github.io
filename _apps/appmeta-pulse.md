@@ -102,6 +102,9 @@ who_not_for:
   - "You need to actually edit metadata, submit builds, or change pricing — use AppMeta (our sister app) for that"
   - "Your team already uses a shared enterprise analytics stack like RevenueCat, Sensor Tower, or Data.ai for paid plan reasons"
 
+related_journal:
+  slug: "app-store-proceeds-vs-sales"
+  anchor: "App Store proceeds vs sales — what each money column in App Store Connect means"
 alternatives_to:
   - "AppStats"
   - "App Sales — Store Reports"

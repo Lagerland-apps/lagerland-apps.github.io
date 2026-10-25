@@ -3,6 +3,7 @@ layout: journal
 slug: how-to-sleep-after-a-night-shift
 title: "How to sleep after a night shift: the drive home, the dark room, the nap and the days off"
 date: 2026-03-21
+last_updated: 2026-10-25
 seo:
   title: "How to Sleep After a Night Shift: A Step-by-Step Plan"
   description: "How to sleep after a night shift, from NIOSH guidance: bed soon after you get home, a dark, quiet room, caffeine early, and a nap before the next night."
@@ -92,7 +93,7 @@ NIOSH recommends napping before you go back to work if you can: it adds to your 
 
 In 2007, the American Academy of Sleep Medicine's practice parameters rated [planned napping before or during the night shift](https://aasm.org/practice-parameters-published-in-the-journal-sleep-highlight-recommendations-for-the-evaluation-and-treatment-of-circadian-rhythm-sleep-disorders/) a "standard", its highest-certainty category, for improving night workers' alertness and performance.
 
-Long naps have a cost: grogginess on waking, called sleep inertia. Waking after about [20 or about 90 minutes](https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/05.html) tends to leave you less groggy than waking after about an hour, in deep sleep, and that grogginess may clear within 15 to 30 minutes. It [lasts longer](https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/03.html) when you are short of sleep, so leave time before you drive or do anything where a mistake matters.
+Long naps have a cost: grogginess on waking, called sleep inertia. Waking after about [20 or about 90 minutes](https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/05.html) tends to leave you less groggy than waking after about an hour, in deep sleep, and that grogginess may clear within 15 to 30 minutes. It [lasts longer](https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/03.html) when you are short of sleep, so leave time before you drive or do anything where a mistake matters. If you work on call, where a phone can wake you at any hour, [how to sleep on call](/journal/how-to-sleep-on-call/) covers that kind of grogginess in more detail.
 
 ## Days off: keep part of the window
 

@@ -1,0 +1,195 @@
+---
+layout: default
+permalink: /alternatives/itsyconnect/
+title: "Itsyconnect Alternative"
+quick_answer: "Itsyconnect is a free, MIT-licensed App Store Connect client for Mac, built on Electron, with analytics, TestFlight feedback, an MCP server and a self-hosted Docker version. AppMeta is a paid native SwiftUI Mac app ($17.99/year or $29.99 lifetime) that also creates and edits In-App Purchases, subscriptions and Game Center, and can run its AI on-device with Apple Intelligence. If your apps don't sell in-app purchases or use Game Center, Itsyconnect is the better deal."
+seo:
+  title: "Itsyconnect Alternative: AppMeta, a Native SwiftUI Mac App"
+  description: "Itsyconnect alternative for Mac. AppMeta is a native SwiftUI App Store Connect client that also edits In-App Purchases, subscriptions and Game Center."
+  keywords:
+    - itsyconnect alternative
+    - itsyconnect vs appmeta
+    - app store connect mac app
+    - native app store connect client
+    - in-app purchase editor mac
+    - game center editor mac
+    - free app store connect client
+---
+
+{%- assign app = site.apps | where: "slug", "appmeta" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/alternatives/itsyconnect/#webpage",
+  "url": "{{ site.url }}/alternatives/itsyconnect/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Alternatives", "item": "{{ site.url }}/alternatives/" },
+      { "@type": "ListItem", "position": 3, "name": "Itsyconnect alternative", "item": "{{ site.url }}/alternatives/itsyconnect/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is the best Itsyconnect alternative for Mac?", "acceptedAnswer": { "@type": "Answer", "text": "If you need In-App Purchase, subscription or Game Center editing, AppMeta is the closest alternative. It's a native SwiftUI client for the App Store Connect API that edits all 50 locales side by side and shows each change next to the live value before it pushes. If you only need listing metadata, releases, TestFlight and reviews, Itsyconnect already does that well for free." } },
+    { "@type": "Question", "name": "Is Itsyconnect free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Itsyconnect is free with no limit on apps or developer accounts, and its source is MIT-licensed on GitHub. Earlier 2026 versions had a paid Pro tier, which was dropped in May 2026. AppMeta costs $17.99/year or $29.99 lifetime, and its free download runs in demo mode with sample data." } },
+    { "@type": "Question", "name": "Is Itsyconnect a native Mac app?", "acceptedAnswer": { "@type": "Answer", "text": "It's a desktop Mac app, but it's built on Electron with a Next.js and React interface rather than SwiftUI or AppKit. That shared web stack is also what lets it run as a Docker web app. AppMeta is written in SwiftUI with SwiftData. For many people the feature differences will matter more than the stack." } },
+    { "@type": "Question", "name": "Does Itsyconnect manage In-App Purchases, subscriptions or Game Center?", "acceptedAnswer": { "@type": "Answer", "text": "Not as of October 2026. Its README and source don't include IAP, subscription or Game Center editing. AppMeta creates and edits In-App Purchases, subscriptions and subscription groups (localizations, prices, territory availability, introductory offers and the review screenshot), plus Game Center achievements, leaderboards and leaderboard sets." } },
+    { "@type": "Question", "name": "Does AppMeta have an MCP server like Itsyconnect?", "acceptedAnswer": { "@type": "Answer", "text": "No. Itsyconnect ships an optional MCP server that lets Claude Code, Codex, Cursor or OpenCode read and update listings, and it respects diff mode. AppMeta has no MCP server today. If editing App Store Connect from a coding agent is central to how you work, Itsyconnect is the better fit." } },
+    { "@type": "Question", "name": "Can I use AppMeta and Itsyconnect on the same app?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Both use the App Store Connect API with your own key and keep their working copy on your Mac. If you edit a field in one, refresh the other before pushing. AppMeta flags fields that changed on App Store Connect since your last fetch, so you don't overwrite a newer value by accident." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">App Store Connect clients · Mac · Honest comparison</p>
+    <h1 class="h1">An Itsyconnect alternative<br><span class="gradient-text">for apps that sell in-app purchases.</span></h1>
+    <p class="lead">Itsyconnect is a good App Store Connect client, and it's free. Nick Ustinov publishes it under the MIT license, and it covers releases, TestFlight, reviews, analytics and an MCP server for coding agents. AppMeta does the same everyday listing work in a native SwiftUI app and goes further into In-App Purchases, subscription groups and Game Center. It also costs money, so here is where each one is the better pick.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/apps/appmeta/">See AppMeta</a>
+      <a class="btn btn-secondary" href="#compare">Compare</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section id="compare" class="section reveal">
+  <h2 class="h2">How does AppMeta compare to Itsyconnect?</h2>
+  <p class="lead">Both are Mac apps that talk to Apple's App Store Connect API with your own key. The differences are price, how they're built, and how much of the store setup beyond the listing they reach.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Price and license</div>
+      <div class="card-text"><strong>AppMeta:</strong> $17.99/year or $29.99 lifetime. The free download runs in demo mode with sample data; connecting your own account needs Pro. Closed source.<br><br><strong>Itsyconnect:</strong> Free, with no limit on apps or developer accounts. MIT-licensed, so you can read the code that handles your API key.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">How it's built</div>
+      <div class="card-text"><strong>AppMeta:</strong> SwiftUI and SwiftData, macOS 14 Sonoma or later, sold on the Mac App Store.<br><br><strong>Itsyconnect:</strong> Electron with a Next.js and React interface, macOS 11 or later, distributed as a signed DMG on GitHub. It can also run as a Docker web app.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">In-app purchases and Game Center</div>
+      <div class="card-text"><strong>AppMeta:</strong> Creates and edits In-App Purchases, subscriptions and subscription groups: localizations, prices, territory availability, introductory offers and the review screenshot Apple asks for. Also Game Center achievements, leaderboards and leaderboard sets.<br><br><strong>Itsyconnect:</strong> Not supported today. Its README doesn't list them and its source has no modules for IAPs, subscriptions or Game Center.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Checking changes before a push</div>
+      <div class="card-text"><strong>AppMeta:</strong> Every changed field shows the live App Store Connect value next to your edit. Push one field, one locale or all locales, and fields that changed on the server since your last fetch are flagged.<br><br><strong>Itsyconnect:</strong> An opt-in diff mode stages changes locally, shows a before/after view, lets you discard single fields, then pushes everything at once.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI</div>
+      <div class="card-text"><strong>AppMeta:</strong> Your own key for Anthropic, OpenAI or Google, a local model through Ollama or LM Studio, or Apple Intelligence on-device on macOS 26.<br><br><strong>Itsyconnect:</strong> Your own key for Anthropic, OpenAI, Google, xAI, Mistral or DeepSeek, plus AI translation of the text inside screenshots.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Analytics and automation</div>
+      <div class="card-text"><strong>AppMeta:</strong> Sales analytics and crash and performance diagnostics. No MCP server.<br><br><strong>Itsyconnect:</strong> A wider analytics view (impressions, sessions, conversion funnel, portfolio proceeds) and an MCP server for Claude Code, Codex, Cursor and OpenCode.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">AppMeta vs Itsyconnect, feature by feature</h2>
+  <p class="lead">The two Mac App Store Connect clients side by side.</p>
+  <div class="card" style="overflow-x:auto;padding:0;">
+    <table class="compare-matrix" style="width:100%;border-collapse:collapse;font-size:var(--text-sm);">
+      <thead>
+        <tr style="text-align:left;">
+          <th style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-2);">Feature</th>
+          <th style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-2);">AppMeta</th>
+          <th style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-2);">Itsyconnect</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Price</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">$17.99/year or $29.99 lifetime (demo mode free)</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Free, no limits</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Source code</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Closed source</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Open source, MIT</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Built with</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">SwiftUI + SwiftData</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Electron, Next.js, React</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Minimum macOS</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">macOS 14 Sonoma</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">macOS 11 Big Sur</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Where to get it</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Mac App Store</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Signed DMG from GitHub</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Self-hosted web version</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, Docker (no built-in login; put it behind a proxy)</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Listing metadata across locales</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">All 50 App Store Connect locales, side by side</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">All locales at once</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Review before push</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Live value vs your edit per field; push by field, locale or all</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Opt-in diff mode; push all at once</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>In-App Purchases and subscriptions</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Create, edit, localize, price, intro offers, review screenshots</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Game Center</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Achievements, leaderboards, leaderboard sets</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>TestFlight</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Builds, groups, What to Test, expiry, export compliance</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Builds, groups, testers, tester feedback with crash logs</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Customer reviews</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Read, reply, AI-drafted replies</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Filter, translate, reply, AI drafts, cross-app review center</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Analytics</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Sales analytics, crash and performance diagnostics</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Impressions, downloads, proceeds, sessions, crashes, funnel</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Keyword tools</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">On-device overlap and duplicate checks, live difficulty estimates</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Character budgets, duplicate detection</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>AI providers</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Anthropic, OpenAI, Google, Ollama / LM Studio, Apple Intelligence</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>MCP server</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);"><strong>Credential storage</strong></td><td style="padding:var(--s-3) var(--s-4);">Mac Keychain, this device only</td><td style="padding:var(--s-3) var(--s-4);">AES-256-GCM, master key in the Keychain</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="testimonials-footnote" style="margin-top:var(--s-3);">Itsyconnect details were checked on 25 October 2026 against its GitHub README, license and release notes (v1.14.2). Its website still mentions an older license and a Mac App Store build; the repository is the current source. Features change, so check before switching.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Who should pick AppMeta and who should pick Itsyconnect?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Pick AppMeta if…</div>
+      <ul class="bullets">
+        <li>You sell in-app purchases or subscriptions and want to edit them with the same locale workflow as your listing</li>
+        <li>You ship Game Center achievements or leaderboards</li>
+        <li>You want AI that stays on the Mac, through Apple Intelligence or a local model</li>
+        <li>You want to push one field or one locale at a time</li>
+        <li>You prefer a SwiftUI app installed from the Mac App Store</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Pick Itsyconnect if…</div>
+      <ul class="bullets">
+        <li>You want a free tool, or one whose source you can audit</li>
+        <li>You want an MCP server so a coding agent can edit your listings</li>
+        <li>You want the deeper analytics dashboard and TestFlight tester feedback</li>
+        <li>You want a self-hosted web version, or you're still on macOS 11 to 13</li>
+        <li>Your apps don't sell in-app purchases or use Game Center</li>
+      </ul>
+    </div>
+  </div>
+  <p class="lead" style="margin-top:var(--s-4);text-align:center;">Both use the App Store Connect API with your own key, so trying one doesn't lock you out of the other.</p>
+</section>
+
+{% if app %}
+<section class="section reveal">
+  <h2 class="h2">About AppMeta</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>What is the best Itsyconnect alternative for Mac?</summary><div class="faq-a">If you need In-App Purchase, subscription or Game Center editing, AppMeta is the closest alternative. It's a native SwiftUI client for the App Store Connect API that edits all 50 locales side by side and shows each change next to the live value before it pushes. If you only need listing metadata, releases, TestFlight and reviews, Itsyconnect already does that well for free.</div></details>
+    <details class="faq-item"><summary>Is Itsyconnect free?</summary><div class="faq-a">Yes. Itsyconnect is free with no limit on apps or developer accounts, and its source is MIT-licensed on GitHub. Earlier 2026 versions had a paid Pro tier, which was dropped in May 2026. AppMeta costs $17.99/year or $29.99 lifetime, and its free download runs in demo mode with sample data.</div></details>
+    <details class="faq-item"><summary>Is Itsyconnect a native Mac app?</summary><div class="faq-a">It's a desktop Mac app, but it's built on Electron with a Next.js and React interface rather than SwiftUI or AppKit. That shared web stack is also what lets it run as a Docker web app. AppMeta is written in SwiftUI with SwiftData. For many people the feature differences will matter more than the stack.</div></details>
+    <details class="faq-item"><summary>Does Itsyconnect manage In-App Purchases, subscriptions or Game Center?</summary><div class="faq-a">Not as of October 2026. Its README and source don't include IAP, subscription or Game Center editing. AppMeta creates and edits In-App Purchases, subscriptions and subscription groups (localizations, prices, territory availability, introductory offers and the review screenshot), plus Game Center achievements, leaderboards and leaderboard sets.</div></details>
+    <details class="faq-item"><summary>Does AppMeta have an MCP server like Itsyconnect?</summary><div class="faq-a">No. Itsyconnect ships an optional MCP server that lets Claude Code, Codex, Cursor or OpenCode read and update listings, and it respects diff mode. AppMeta has no MCP server today. If editing App Store Connect from a coding agent is central to how you work, Itsyconnect is the better fit.</div></details>
+    <details class="faq-item"><summary>Can I use AppMeta and Itsyconnect on the same app?</summary><div class="faq-a">Yes. Both use the App Store Connect API with your own key and keep their working copy on your Mac. If you edit a field in one, refresh the other before pushing. AppMeta flags fields that changed on App Store Connect since your last fetch, so you don't overwrite a newer value by accident.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Try it</p>
+  <h2 class="h2">Open AppMeta.</h2>
+  <p class="lead">Native on the Mac, every locale side by side, and the in-app purchase work that most App Store Connect clients leave out.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{{ app.app_store_url }}" rel="noopener">Get AppMeta</a>
+    <a class="btn btn-secondary" href="/apps/appmeta/">See full page</a>
+  </div>
+</section>

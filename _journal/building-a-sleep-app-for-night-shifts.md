@@ -13,7 +13,7 @@ seo:
     - "sleep app nurses"
     - "aftershift"
 date: 2026-01-24
-last_updated: 2026-10-09
+last_updated: 2026-10-25
 lede: "Most sleep apps assume an 11pm bedtime and a 7am alarm. The people who keep hospitals, planes, and emergency rooms running don't live that life. AfterShift is the app I built after hearing the same complaint from too many friends in scrubs."
 quick_answer: "AfterShift is a sleep app built for rotating-shift workers — nurses, pilots, paramedics — whose schedules break the 9-to-5 assumptions baked into generic sleep trackers. It accepts daytime sleep blocks and pre-shift naps as normal, calculates a forward-looking Shift Recovery Score, times caffeine cutoffs against upcoming shifts, and imports rotations from calendar feeds automatically."
 faq:
@@ -42,7 +42,7 @@ That conversation was the start of [AfterShift](/apps/aftershift/). This is what
 
 Open any major consumer sleep app and walk through onboarding. You'll be asked when you go to bed, when you wake up, and what your weekend pattern is. The implicit model is a five-day workweek with weekends free, plus the assumption that "night" means a single uninterrupted block of darkness.
 
-Now imagine a typical nurse's twelve-hour rotation: three days on, three days off, two-week cycle, with the days flipping to nights halfway through. Her sleep windows might be 10pm-6am one week, 9am-3pm the next, with a chaotic transition night in between. The sleep app's model breaks. The recovery scores are nonsensical. The caffeine recommendations actively harm her.
+Now imagine a typical nurse's twelve-hour rotation: three days on, three days off, two-week cycle, with the days flipping to nights halfway through. Her sleep windows might be 10pm-6am one week, 9am-3pm the next, with a chaotic transition night in between. The sleep app's model breaks. The recovery scores are nonsensical. The caffeine recommendations actively harm her. (Most rosters like hers are variations on a handful of named patterns; [rotating shift schedules explained](/journal/rotating-shift-schedules-explained/) lays out DuPont, 2-2-3 and the rest, and which are hardest on sleep.)
 
 This is a real population. The US has about 4 million registered nurses, several hundred thousand commercial pilots, plus paramedics, firefighters, police, factory workers, refinery operators, and a long tail of other rotating-shift workers. Generic sleep apps don't serve any of them well.
 

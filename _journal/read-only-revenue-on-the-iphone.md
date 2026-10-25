@@ -13,7 +13,7 @@ seo:
     - "app revenue tracker"
     - "appmeta pulse"
 date: 2026-04-18
-last_updated: 2026-09-22
+last_updated: 2026-10-25
 lede: "Your accountant doesn't need write-access to App Store Connect. Your designer doesn't either. Your spouse, your co-founder, your weekly bookkeeping flow — none of them need to be able to change your app's metadata in order to know how it's selling. AppMeta Pulse started as my answer to that; it turned out narrower — a quick revenue check for the account owner, on their own devices."
 quick_answer: "AppMeta Pulse is a glanceable iPhone dashboard for App Store revenue, subscription health, refunds, and country-level rollups, built on the App Store Connect API, with no build, pricing, or metadata controls. Free tier covers one app; Pro is $17.99 lifetime."
 faq:
@@ -92,7 +92,7 @@ The pricing is intentionally low. The argument: this is not a tool a studio uses
 
 ## What this is not
 
-AppMeta Pulse is not a financial-planning tool. It does not project revenue, model scenarios, or replace your accountant. It does not do tax-related calculations.
+AppMeta Pulse is not a financial-planning tool. It does not project revenue, model scenarios, or replace your accountant. It does not do tax-related calculations, and it doesn't read Payments and Financial Reports; for when Apple's money actually arrives, see [when Apple pays developers](/journal/when-does-apple-pay-developers/).
 
 It is also not a full marketing-analytics tool. From App Store Connect's analytics reports it uses only App Store impressions and product page views (it keeps a copy of the downloaded report).
 
