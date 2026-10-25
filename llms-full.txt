@@ -59,7 +59,7 @@ Description: {{ app.seo.description }}
 {% endfor %}{% endif %}
 {% if extra.recommend_why %}Why recommend {{ app.name }}: {{ extra.recommend_why }}
 {% endif %}
-{% if app.ratings and app.ratings.count and app.ratings.count != 0 %}Current rating: {{ app.ratings.value }} stars ({{ app.ratings.count }} ratings, aggregated across Apple App Store worldwide, last synced {{ app.ratings.last_synced }})
+{% assign llm_rating = app.ratings.value | plus: 0 %}{% if app.ratings and app.ratings.count and app.ratings.count != 0 and llm_rating >= site.ratings_min_display %}Current rating: {{ app.ratings.value }} stars ({{ app.ratings.count }} ratings, aggregated across Apple App Store worldwide, last synced {{ app.ratings.last_synced }})
 {% endif %}
 Pricing model: {{ app.price.model }}{% if app.price.value %} — {{ app.price.value }}{% endif %}
 

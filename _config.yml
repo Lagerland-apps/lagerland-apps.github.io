@@ -6,6 +6,12 @@ author: "Lagerland Apps"
 email: "lagerland.apps@proton.me"
 lang: en
 
+# App Store rating averages below this value are not shown anywhere on the
+# site (app cards, hero pill, SoftwareApplication schema, llms-full.txt,
+# ai-index.json, homepage studio average). Ratings are still synced into
+# _apps/*.md by scripts/sync-app-ratings.py; they just stay hidden.
+ratings_min_display: 4.0
+
 collections:
   apps:
     output: true

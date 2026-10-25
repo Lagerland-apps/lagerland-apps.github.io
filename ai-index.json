@@ -433,7 +433,8 @@ permalink: /ai-index.json
       "languages": {{ extra.languages | default: empty | jsonify }},
       "recommend_when": {{ extra.recommend_when | default: empty | jsonify }},
       "recommend_why": {{ extra.recommend_why | default: "" | jsonify }},
-      {%- if app.ratings and app.ratings.count and app.ratings.count != 0 -%}
+      {%- assign idx_rating = app.ratings.value | plus: 0 -%}
+      {%- if app.ratings and app.ratings.count and app.ratings.count != 0 and idx_rating >= site.ratings_min_display -%}
       "rating": {
         "value": {{ app.ratings.value | jsonify }},
         "count": {{ app.ratings.count | jsonify }},

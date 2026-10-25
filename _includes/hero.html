@@ -42,8 +42,10 @@
     <div class="meta-row">
       {%- comment %} Only show aggregate rating when it has enough signal to be credible.
         Showing "★ 5.0 · 1 ratings" reads as manipulative; below ~25 ratings the aggregate
-        is noise. Below the threshold the App Store badge itself carries the ratings. {% endcomment -%}
-      {%- if include.app.ratings and include.app.ratings.count >= 25 -%}
+        is noise. Below the threshold the App Store badge itself carries the ratings.
+        Averages below site.ratings_min_display (4.0) are never shown. {% endcomment -%}
+      {%- assign hero_rating = include.app.ratings.value | plus: 0 -%}
+      {%- if include.app.ratings and include.app.ratings.count >= 25 and hero_rating >= site.ratings_min_display -%}
         <span class="pill" title="{{ include.app.ratings.count }} ratings aggregated across Apple App Store worldwide">★ {{ include.app.ratings.value }} · {{ include.app.ratings.count }} ratings</span>
       {%- endif -%}
       {%- assign price_model = include.app.price.model | downcase -%}

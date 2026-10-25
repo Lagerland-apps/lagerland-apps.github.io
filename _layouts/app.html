@@ -49,8 +49,9 @@ layout: default
   },
   {%- comment %} Only emit aggregateRating when there is enough rating signal to back it.
     Match the visible-UI threshold in _includes/hero.html — Google flags schema that does
-    not match visible content. {% endcomment -%}
-  {%- if page.ratings and page.ratings.count and page.ratings.count >= 25 -%}
+    not match visible content. Same 4.0 floor (site.ratings_min_display) as the hero. {% endcomment -%}
+  {%- assign schema_rating = page.ratings.value | plus: 0 -%}
+  {%- if page.ratings and page.ratings.count and page.ratings.count >= 25 and schema_rating >= site.ratings_min_display -%}
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": {{ page.ratings.value | jsonify }},

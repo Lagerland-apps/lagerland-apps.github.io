@@ -201,7 +201,8 @@ seo:
       <span class="trust-value" data-count="{{ live_apps.size }}" data-suffix="">{{ live_apps.size }}</span>
       <span class="trust-label">Apps Published</span>
     </div>
-    {%- if total_reviews > 0 %}
+    {%- assign avg_rating = avg10 | default: 0 | divided_by: 10.0 -%}
+    {%- if total_reviews > 0 and avg_rating >= site.ratings_min_display %}
     <span class="trust-divider"></span>
     <div class="trust-item">
       <span class="trust-value">{{ avg_int }}.{{ avg_dec }}<span class="trust-star" aria-hidden="true">★</span></span>

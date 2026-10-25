@@ -28,7 +28,8 @@
     <p class="overline">What people are saying</p>
     <h2 class="h2" id="testimonials-heading-{{ include.slug }}">Real words from real users.</h2>
     <div class="testimonials-meta">
-      {%- if t_rated > 0 -%}
+      {%- assign t_rating_min10 = site.ratings_min_display | times: 10 -%}
+      {%- if t_rated > 0 and t_rating_avg >= t_rating_min10 -%}
         <span class="pill pill--stars" aria-label="Average rating {{ t_rating_int }}.{{ t_rating_dec }} out of 5 across {{ t_rated }} rated reviews">
           <span class="pill-stars" aria-hidden="true">★★★★★</span>
           {{ t_rating_int }}.{{ t_rating_dec }} · {{ t_rated }} rated reviews
