@@ -439,9 +439,9 @@ layout: default
   {%- assign founder_heading  = page.founder.heading  | default: "A one-person studio. That's the point." -%}
   {%- assign founder_story    = page.founder.story    | default: page.founder.bio -%}
   {%- comment %} entity_type lets each app declare Person or Organization for the founder block.
-    Default is Person for backwards compat with existing app pages. Apps that want to
-    surface the studio identity instead of an individual founder set entity_type: "Organization". {% endcomment -%}
-  {%- assign founder_entity = page.founder.entity_type | default: "Person" -%}
+    Default is Organization: the site never names a person (owner's rule). Person is
+    only used if a page explicitly sets entity_type: "Person". {% endcomment -%}
+  {%- assign founder_entity = page.founder.entity_type | default: "Organization" -%}
   {%- assign founder_itemtype = "https://schema.org/Person" -%}
   {%- if founder_entity == "Organization" -%}{%- assign founder_itemtype = "https://schema.org/Organization" -%}{%- endif -%}
   {%- comment %} CTA button label: studio gets neutral "Email us directly"; named individual gets first-name slicing. {% endcomment -%}

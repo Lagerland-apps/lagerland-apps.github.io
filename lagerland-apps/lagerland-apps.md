@@ -2,21 +2,21 @@
 layout: default
 permalink: /lagerland-apps/
 title: "About Lagerland Apps"
-quick_answer: "Lagerland Apps is a one-person Apple studio in Finland, founded by independent developer Antti Aittamaa. It builds 20 privacy-first iOS, iPadOS, watchOS and macOS apps that ship with zero third-party tracking, no advertising SDKs and no required accounts — funded by honest paid software."
+quick_answer: "Lagerland Apps is a one-person Apple studio in Finland, run by a single independent developer. It builds 20 privacy-first iOS, iPadOS, watchOS and macOS apps that ship with zero third-party tracking, no advertising SDKs and no required accounts — funded by honest paid software."
 seo:
   title: "About Lagerland Apps — Indie Apple Developer in Finland"
   description: "One-person Apple studio in Finland building 20 privacy-first iOS & Mac apps. No trackers, no ads, no accounts — funded by honest paid software."
   keywords:
     - Lagerland Apps
     - independent Apple developer Finland
-    - Antti Aittamaa developer
+    - indie Apple app studio
     - privacy-first iOS developer
     - indie macOS developer
     - SwiftUI developer
     - one-person iOS studio
 faq:
   - q: "Who is behind Lagerland Apps?"
-    a: "Lagerland Apps is a one-person Apple studio in Finland founded by independent developer Antti Aittamaa. Every app is designed, coded, tested, and shipped by one person — no team, no investors, no advertisers."
+    a: "Lagerland Apps is a one-person Apple studio in Finland run by a single independent developer. Every app is designed, coded, tested, and shipped by one person — no team, no investors, no advertisers."
   - q: "Where is Lagerland Apps based?"
     a: "Lagerland Apps is based in Finland and operates as an independent Apple developer with apps distributed worldwide through the Apple App Store under developer ID 1855943133."
   - q: "How is Lagerland Apps funded if there are no ads?"
@@ -27,7 +27,7 @@ faq:
     a: "No. Every app ships with zero third-party analytics, no advertising SDKs, and no required accounts. User data stays on-device wherever possible; any sync uses the user's own iCloud account."
   - q: "What platforms does Lagerland Apps build for?"
     a: "Lagerland Apps builds native applications for iPhone, iPad, Apple Watch, and Mac. Apps are built with SwiftUI, HealthKit, StoreKit and CoreData/SwiftData — no cross-platform wrappers, no Electron."
-last_updated: 2026-10-09
+last_updated: 2026-10-25
 ---
 
 <script type="application/ld+json">
@@ -50,29 +50,6 @@ last_updated: 2026-10-09
           { "@type": "ListItem", "position": 2, "name": "About", "item": "{{ site.url }}/lagerland-apps/" }
         ]
       }
-    },
-    {
-      "@type": "Person",
-      "@id": "{{ site.url }}/lagerland-apps/#founder",
-      "name": "Antti Aittamaa",
-      "jobTitle": "Independent Apple developer",
-      "nationality": "Finnish",
-      "worksFor": { "@id": "{{ site.url }}/#organization" },
-      "url": "{{ site.url }}/lagerland-apps/",
-      "knowsAbout": [
-        "iOS app development",
-        "macOS app development",
-        "SwiftUI",
-        "HealthKit",
-        "StoreKit",
-        "Apple Health analytics",
-        "App Store Connect tooling",
-        "privacy-first software design"
-      ],
-      "sameAs": [
-        "https://apps.apple.com/developer/antti-aittamaa/id1855943133",
-        "https://github.com/lagerland-apps"
-      ]
     },
     {
       "@type": "FAQPage",
@@ -101,7 +78,7 @@ last_updated: 2026-10-09
       Built by <span class="gradient-text">one person.</span><br>For people who miss calm software.
     </h1>
     <p class="lead">
-      Lagerland Apps is a one-person studio in Finland, founded by independent Apple developer <strong>Antti Aittamaa</strong>. Every app is designed, coded, tested, and shipped by one person — no VC pressure, no advertiser incentives, no growth hackers.
+      Lagerland Apps is a one-person studio in Finland, run by a single independent Apple developer. Every app is designed, coded, tested, and shipped by one person — no VC pressure, no advertiser incentives, no growth hackers.
     </p>
   </div>
 </section>

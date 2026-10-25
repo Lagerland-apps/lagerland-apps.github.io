@@ -39,8 +39,10 @@ Meta AI). That is part of "done", not a follow-up. Before every commit:
 7. **After the push**: the IndexNow workflow pings Bing/Yandex automatically (or run
    `python3 scripts/indexnow-ping.py --changed`). Google needs manual "Request indexing" in Search Console:
    add the new/changed URLs to a `GSC-submit-<date>.md` list in `~/Downloads/githubcode/` (not in this repo).
-8. **Never put the owner's personal name in new places** (bylines, schema `author`, feed authors, meta
-   tags, llms files). Attribute to "Lagerland Apps" (`{{ site.url }}/#organization`).
+8. **Never put the owner's personal name anywhere** (pages, bylines, schema `author`/`founder`/`Person`
+   nodes, feed authors, meta tags, keywords, llms files, alt text). It was removed sitewide on 2026-10-25.
+   Attribute to "Lagerland Apps" (`{{ site.url }}/#organization`). Link the App Store developer page as
+   `https://apps.apple.com/developer/id1855943133` (Apple's default URL carries the name in its slug).
 
 Machine-readable files and what keeps them current:
 
@@ -103,7 +105,7 @@ Strongly recommended: `faq:` (→ FAQPage + speakable schema), `mentioned_apps:`
 - `read_time` ≈ body words ÷ 200. Bump `last_updated` on any real edit (it shows as "Updated <date>").
 
 ### App page — `_apps/<slug>.md` (+ its sub-pages)
-`layout: app` auto-applied. Auto-listed wherever `site.apps` is looped (home, `/apps/`) — no manual index edit. Schema auto-emitted by `_layouts/app.html`: **SoftwareApplication** (+ `Offer`/`AggregateOffer` from price fields; `aggregateRating` only when `ratings.count ≥ 25` and the average is ≥ `ratings_min_display` in `_config.yml`, 4.0 — averages below that are hidden everywhere: cards, hero, schema, llms-full.txt, ai-index.json, homepage, testimonials), **FAQPage**, **BreadcrumbList**, **HowTo** (from `how_it_works.steps`), optional `creative_work`, and a `Person`/`Organization` founder node (from `founder:`; existing pages only, do not add a personal name to new apps).
+`layout: app` auto-applied. Auto-listed wherever `site.apps` is looped (home, `/apps/`) — no manual index edit. Schema auto-emitted by `_layouts/app.html`: **SoftwareApplication** (+ `Offer`/`AggregateOffer` from price fields; `aggregateRating` only when `ratings.count ≥ 25` and the average is ≥ `ratings_min_display` in `_config.yml`, 4.0 — averages below that are hidden everywhere: cards, hero, schema, llms-full.txt, ai-index.json, homepage, testimonials), **FAQPage**, **BreadcrumbList**, **HowTo** (from `how_it_works.steps`), optional `creative_work`, and a founder-story node from `founder:` (always `entity_type: "Organization"`, `name: "Lagerland Apps"`; Organization is also the layout default, and no page names a person).
 
 Required: `slug`, `name`, `tagline`, `quick_answer`, `seo:{…}`, `category` (maps to schema `applicationCategory` — see the `case` block in `app.html`), `platforms`, `status`, `app_store_url`, `price:{model,value}`, `schema_price` / `schema_high_price` / `schema_offer_count`, `hero:{…}`, `privacy:{…}`, `support:{email,url}`, `release:{first_release,last_updated}`.
 Recommended: `who_for`/`who_not_for`, `founder`, `value_points`, `features`, `how_it_works` (HowTo schema — high-value E-E-A-T), `comparison_table`, `faq`, `screenshots`, `related_journal`, `alternatives_to`, `roadmap`, `show_body: true` + `about_heading`.

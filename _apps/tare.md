@@ -220,6 +220,7 @@ privacy:
   policy_url: "/apps/tare/privacy/"
 
 founder:
+  entity_type: "Organization"
   name: "Lagerland Apps"
   role: "Independent Apple studio · Finland"
   photo: "/assets/icons/lagerland-mark.png"
@@ -250,7 +251,7 @@ related_journal:
 
 show_body: true
 about_heading: "What Tare is — a balance puzzle you solve by deduction"
-last_updated: 2026-10-09
+last_updated: 2026-10-25
 ---
 
 Tare is a logic puzzle disguised as a toy. Each level is a painted hanging mobile on a sky-blue board, with a shelf of numbered weights beneath it. Your job is to hang every weight on a hook so that **every beam balances at the same time**.

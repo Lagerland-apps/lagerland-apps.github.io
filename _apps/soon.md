@@ -112,10 +112,11 @@ who_not_for:
 # shipped by one person in Finland. The rebuild story is the strongest narrative
 # asset on this page and was previously waived.
 founder:
+  entity_type: "Organization"
   overline: "Why I built this"
   heading: "Rebuilt from TheWait — by the person who shipped it."
-  name: "Antti Aittamaa"
-  role: "Independent Apple developer, Lagerland Apps"
+  name: "Lagerland Apps"
+  role: "Independent Apple developer · Finland · one-person studio since 2025"
   location: "Finland"
   photo: "/assets/icons/lagerland-mark.png"
   bio: "I shipped TheWait years ago as a single-purpose countdown, and it kept growing into things its architecture couldn't support — Lock Screen widgets, StandBy, weather forecasts, smart checklists. Soon. is the full rewrite: new code, new icon, new name, same person at the keyboard. There is no team. One developer in Finland, designing, coding, and answering support email for every Lagerland app — including this one. If something doesn't work, email me directly and I'll fix it."
@@ -341,7 +342,7 @@ related_journal:
 # in-body contextual links return 5–25% organic uplift.
 show_body: true
 about_heading: "What Soon. does — countdown app, planner, widgets, weather"
-last_updated: 2026-10-09
+last_updated: 2026-10-25
 ---
 Soon. is a [countdown and planner app for iPhone](#features) — the complete rebuild of TheWait — that turns important moments into living countdowns. Trips, weddings, birthdays, anniversaries, graduations, due dates, and personal milestones each render full-bleed with a photo background you pin yourself, live weather for the destination, and daily notes that shift as the date approaches.
 
