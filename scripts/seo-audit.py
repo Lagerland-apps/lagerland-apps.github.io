@@ -14,11 +14,12 @@ breadcrumb targets exist; FAQPage questions and answers are visible on the page;
 Article has headline/date/image/author; internal links and images resolve.
 Site-wide: sitemap.xml == every indexable page (no redirects, no noindex, no 404s),
 ai-sitemap.xml has the same set, lastmod values are real dates (not all one build
-stamp); llms.txt / llms-full.txt / ai-index.json parse and every URL in them
+stamp: a date shared by most URLs passes only when git shows their source files
+edited that day, as after a real sitewide edit); llms.txt / llms-full.txt / ai-index.json parse and every URL in them
 resolves; every app, guide and journal post is routed in llms.txt; robots.txt
 allows crawling and lists the sitemaps.
 """
-import argparse, collections, html, json, os, re, sys
+import argparse, collections, datetime, html, importlib.util, json, os, re, subprocess, sys
 from html.parser import HTMLParser
 from urllib.parse import urlparse, unquote
 import xml.etree.ElementTree as ET
@@ -72,6 +73,37 @@ def norm(s):
     s = html.unescape(re.sub(r"<[^>]+>", " ", s or ""))
     s = s.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
     return re.sub(r"\s+", " ", s).strip().lower()
+
+
+BOT_PREFIX = "Sync App Store ratings"  # the ratings bot only rewrites rating fields; its commits are not edits
+
+
+def git_edited_urls(repo, day):
+    """Live URLs whose source file git shows as edited on `day` (YYYY-MM-DD): committed that day by anyone but
+    the ratings bot, or changed in the working tree when `day` is today. None when git can't answer.
+    Source paths map to URLs through scripts/indexnow-ping.py, so both scripts share one mapping."""
+    try:
+        spec = importlib.util.spec_from_file_location(
+            "indexnow_ping", os.path.join(repo, "scripts", "indexnow-ping.py"))
+        mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+        since = (datetime.date.fromisoformat(day) - datetime.timedelta(days=2)).isoformat()
+        log = subprocess.run(["git", "-C", repo, "log", f"--since={since}", "--format=@@%cs%x09%s", "--name-only"],
+                             capture_output=True, text=True, check=True).stdout
+        files, take = set(), False
+        for line in log.splitlines():
+            if line.startswith("@@"):
+                d, _, subject = line[2:].partition("\t")
+                take = d == day and not subject.startswith(BOT_PREFIX)
+            elif line.strip() and take:
+                files.add(line.strip())
+        if day == datetime.date.today().isoformat():
+            st = subprocess.run(["git", "-C", repo, "status", "--porcelain", "--untracked-files=all"],
+                                capture_output=True, text=True, check=True).stdout
+            for line in st.splitlines():
+                files.add(line[3:].split(" -> ")[-1].strip().strip('"'))
+    except Exception:
+        return None
+    return {u for u in map(mod.path_to_url, files) if u}
 
 
 def main():
@@ -213,7 +245,29 @@ def main():
     vals = [v for v in s1.values() if v]
     if vals:
         top, n = collections.Counter(vals).most_common(1)[0]
-        if n > 0.8 * len(s1): err("sitemap lastmod is the same for >80% of URLs (looks like a build stamp)", "sitemap.xml", f"{top} x{n}")
+        if n > 0.8 * len(s1):
+            # One date on most URLs is either a build stamp (the old jekyll-sitemap bug: every lastmod set to
+            # the build day) or a real sitewide edit, like the 2026-10-26 copy rewrite. Git tells them apart:
+            # a date is real when the page's source file was edited that day. Hubs take the newest date of
+            # their section, so they count as backed when any page in their section is.
+            repo_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            edited = git_edited_urls(repo_dir, top)
+            same = [u for u, v in s1.items() if v == top]
+            if edited is None:
+                err("sitemap lastmod is the same for >80% of URLs (looks like a build stamp; git unavailable to confirm)",
+                    "sitemap.xml", f"{top} x{n}")
+            else:
+                hubs = {SITE + "/": ("/apps/", "/journal/"), SITE + "/apps/": ("/apps/",),
+                        SITE + "/journal/": ("/journal/",), SITE + "/alternatives/": ("/alternatives/",)}
+                def backed(u):
+                    if u in edited: return True
+                    return any(e[len(SITE):].startswith(sec) for sec in hubs.get(u, ()) for e in edited)
+                unbacked = [u for u in same if not backed(u)]
+                if len(unbacked) > 0.2 * n:
+                    err("sitemap lastmod is the same for >80% of URLs and git shows no edit that day for many "
+                        "(looks like a build stamp)", "sitemap.xml", f"{top} x{n}, {len(unbacked)} without a git edit")
+                else:
+                    for u in unbacked: warn("sitemap lastmod not backed by a git edit that day", u, top)
     for u, v in s1.items():
         if not v and u in indexable: warn("sitemap URL without lastmod (set last_updated)", u)
 
