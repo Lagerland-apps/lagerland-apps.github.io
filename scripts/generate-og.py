@@ -15,6 +15,17 @@ Usage:
     python3 scripts/generate-og.py                 # all apps
     python3 scripts/generate-og.py --only millrace shogiful
     python3 scripts/generate-og.py --dry-run       # list what would render
+    python3 scripts/generate-og.py --lang de       # assets/og/de/<slug>.png for every app translated into de
+    python3 scripts/generate-og.py --lang de --only observa --out /tmp/og   # write somewhere else
+
+--lang <code> (TRANSLATION.md 4.13, 6.8): the tagline comes from the translated app page
+`<code>/apps/<slug>/index.md` (`og_tagline` when set, else `tagline`), the small value line from its
+`og_meta` (omitted when absent: the English META line is English), and the screenshot from
+`assets/screenshots/<slug>/<code>/` when that folder holds every file the master `screenshots:` list names
+(otherwise the English shot). Apps without a translated page are skipped. Languages whose script the
+bundled Latin-1 Inter/Newsreader subsets do not cover need a font file in scripts/og-assets/fonts/ (see
+SCRIPT_FONTS); the script stops with the missing file's name rather than render tofu.
+Without --lang the output is exactly what it was before the option existed.
 """
 
 import argparse
@@ -110,6 +121,19 @@ VARIANT = {}
 # Pick a specific screenshot when the first one is a busy marketing collage.
 SHOT = {}
 
+# --lang: languages whose text the bundled Latin-1 font subsets cannot draw, and the font file (variable
+# woff2, OFL, self-hosted in scripts/og-assets/fonts/) each one needs. Never fetched from the network.
+SCRIPT_FONTS = {
+    "pl": "inter-latin-ext.woff2", "tr": "inter-latin-ext.woff2",
+    "ru": "inter-cyrillic.woff2",
+    "ar": "noto-sans-arabic.woff2",
+    "zh": "noto-sans-sc.woff2", "ja": "noto-sans-jp.woff2", "ko": "noto-sans-kr.woff2",
+}
+RTL_LANGS = {"ar"}
+LANG_CODES = ("de", "fr", "it", "es", "pt", "zh", "ja", "ko", "id", "es-mx", "pt-br", "pl", "tr", "nl", "ru", "ar")
+# Signs outside Latin-1 that the bundled Inter subset carries (dashes, quotes, ellipsis, euro, bullet).
+LATIN1_EXTRA = set("\u2013\u2014\u2018\u2019\u201c\u201d\u2026\u20ac\u2022\u00b7\u2122")
+
 
 def b64_font(name):
     return base64.b64encode((FONTS_DIR / name).read_bytes()).decode()
@@ -157,8 +181,8 @@ def first_shot(slug):
     return shots[0] if shots else None
 
 
-def mockup_html(slug, light):
-    shot = first_shot(slug)
+def mockup_html(slug, light, shot=None):
+    shot = shot or first_shot(slug)
     if shot is None:
         return ""
     if is_landscape(slug):
@@ -177,14 +201,17 @@ def mockup_html(slug, light):
         </div>"""
 
 
-def render_html(slug, fm):
+def render_html(slug, fm, tagline=None, meta=None, shot=None, extra_css="", text_dir=""):
     accent = ACCENT.get(slug, "#6FE3FF")
     light = VARIANT.get(slug) == "light"
     name = fm.get("name", slug).rstrip(".")
-    tagline = TAGLINE.get(slug) or fm.get("tagline") or ""
-    meta = META.get(slug, "")
+    if tagline is None:
+        tagline = TAGLINE.get(slug) or fm.get("tagline") or ""
+    if meta is None:
+        meta = META.get(slug, "")
+    dir_attr = f' dir="{text_dir}"' if text_dir else ""
     icon = b64_img(ICONS_DIR / f"{slug}.png", 200)
-    mock = mockup_html(slug, light)
+    mock = mockup_html(slug, light, shot)
     lay = "lay-mac" if is_landscape(slug) else "lay-phone"
 
     if light:
@@ -246,7 +273,7 @@ html,body{{width:{W}px;height:{H}px}}
 .mac .bar{{height:34px;background:#232A52;display:flex;align-items:center;gap:9px;padding-left:16px}}
 .mac .bar span{{width:13px;height:13px;border-radius:50%;background:rgba(255,255,255,.22)}}
 .mac img{{display:block;width:100%}}
-</style></head><body>
+{extra_css}</style></head><body>
 <div class="card {lay}">
   <div class="left">
     <div class="idrow">
@@ -254,8 +281,8 @@ html,body{{width:{W}px;height:{H}px}}
       <div class="studio">Lagerland Apps</div>
     </div>
     <div class="name">{name}</div>
-    <div class="tag">{tagline}</div>
-    <div class="meta">{meta}</div>
+    <div class="tag"{dir_attr}>{tagline}</div>
+    <div class="meta"{dir_attr}>{meta}</div>
   </div>
   {mock}
   <div class="domain">{DOMAIN}</div>
@@ -290,18 +317,54 @@ def parse_app(path):
     return yaml.safe_load(m.group(1)) if m else {}
 
 
+def localized_shot(slug, code, fm):
+    """First screenshot from assets/screenshots/<slug>/<code>/ when the folder holds the master's full set."""
+    files = [Path(str(s.get("src", ""))).name for s in (fm.get("screenshots") or []) if isinstance(s, dict) and s.get("src")]
+    d = SHOTS_DIR / slug / code
+    if not files or not all((d / f).is_file() for f in files):
+        return None
+    english = first_shot(slug)
+    pick = d / english.name if english is not None and (d / english.name).is_file() else d / files[0]
+    return pick
+
+
+def lang_font_css(code, texts):
+    """Extra @font-face + font stacks for --lang, or exit naming the missing font file."""
+    font = SCRIPT_FONTS.get(code)
+    if font is None:
+        bad = sorted({ch for t in texts for ch in t if ord(ch) > 0xFF and ch not in LATIN1_EXTRA})
+        if bad:
+            sys.exit(f"--lang {code}: text has characters the Latin-1 fonts cannot draw ({''.join(bad)!r}). "
+                     f"Add a covering font to {FONTS_DIR} and to SCRIPT_FONTS for {code!r}.")
+        return ""
+    path = FONTS_DIR / font
+    if not path.is_file():
+        sys.exit(f"--lang {code}: missing font file {path} (an OFL face covering this script; "
+                 f"not downloaded automatically). Add it, then run again.")
+    fam = "OGScript"
+    return (f"@font-face{{font-family:'{fam}';font-weight:100 900;font-display:block;"
+            f"src:url(data:font/woff2;base64,{b64_font(font)}) format('woff2')}}\n"
+            f".card,.tag,.meta{{font-family:'Inter','{fam}',sans-serif}}\n"
+            f".name{{font-family:'Inter','{fam}',sans-serif}}\n")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="*", help="only these slugs")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--lang", choices=LANG_CODES, help="render assets/og/<code>/<slug>.png from translated pages")
+    ap.add_argument("--out", help="output directory (default assets/og, or assets/og/<code> with --lang)")
     args = ap.parse_args()
+    if args.lang:
+        return main_lang(args)
 
     apps = sorted(APPS_DIR.glob("*.md"))
     if args.only:
         want = set(args.only)
         apps = [p for p in apps if p.stem in want]
 
-    OG_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir = Path(args.out) if args.out else OG_DIR
+    out_dir.mkdir(parents=True, exist_ok=True)
     for path in apps:
         slug = path.stem
         fm = parse_app(path)
@@ -311,8 +374,45 @@ def main():
                   f"layout={'mac' if is_landscape(slug) else 'phone'}")
             continue
         html = render_html(slug, fm)
-        size = capture(html, OG_DIR / f"{slug}.png")
+        size = capture(html, out_dir / f"{slug}.png")
         print(f"  ✓ {slug:14} {size//1024} KB")
+
+
+def main_lang(args):
+    code = args.lang
+    out_dir = Path(args.out) if args.out else OG_DIR / code
+    apps = sorted(APPS_DIR.glob("*.md"))
+    if args.only:
+        apps = [p for p in apps if p.stem in set(args.only)]
+    jobs = []
+    for path in apps:
+        slug = path.stem
+        page = REPO_ROOT / code / "apps" / slug / "index.md"
+        if not page.is_file():
+            page = page.with_suffix(".html")
+        if not page.is_file():
+            print(f"  - {slug:14} no translated page {code}/apps/{slug}/index.md, skipped")
+            continue
+        fm, tfm = parse_app(path), parse_app(page)
+        tagline = tfm.get("og_tagline") or tfm.get("tagline")
+        if not tagline:
+            print(f"  ! {slug:14} {page.relative_to(REPO_ROOT)} has no tagline/og_tagline, skipped")
+            continue
+        jobs.append((slug, fm, str(tagline).strip(), str(tfm.get("og_meta") or "").strip(), localized_shot(slug, code, fm)))
+    if not jobs:
+        print(f"No translated app pages for {code}.")
+        return
+    extra = lang_font_css(code, [fm.get("name", "") + t + m for _, fm, t, m, _ in jobs])
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for slug, fm, tagline, meta, shot in jobs:
+        where = f"{code} screenshot" if shot else "English screenshot"
+        if args.dry_run:
+            print(f"would render {code}/{slug:14} tagline={tagline!r} ({where})")
+            continue
+        html = render_html(slug, fm, tagline=tagline, meta=meta, shot=shot, extra_css=extra,
+                           text_dir="rtl" if code in RTL_LANGS else "")
+        size = capture(html, out_dir / f"{slug}.png")
+        print(f"  ✓ {code}/{slug:14} {size//1024} KB ({where})")
 
 
 if __name__ == "__main__":

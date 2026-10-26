@@ -79,9 +79,9 @@ GLOBAL_TRIGGERS = (
 )
 
 # Source files that never correspond to a crawlable HTML page.
-SKIP_PREFIXES = ("scripts/", "_site/", ".github/", "assets/", ".well-known/")
+SKIP_PREFIXES = ("scripts/", "_site/", ".github/", "assets/", ".well-known/", "_i18n/", ".impeccable/")
 SKIP_EXACT = {
-    "README.md", "CLAUDE.md", "robots.txt", "feed.xml", "humans.txt",
+    "README.md", "CLAUDE.md", "TRANSLATION.md", "PRODUCT.md", "DESIGN.md", "robots.txt", "feed.xml", "humans.txt",
     "llms.txt", "llms-full.txt", "ai-index.json", "ai-sitemap.xml",
     "sitemap.xml", "sitemap_index.xml", "404.html", ".gitignore",
     # Search Console / Yandex Webmaster / Naver Search Advisor verification
@@ -93,6 +93,43 @@ SKIP_EXACT = {
     "yandex_ad81e17bf10db464.html",
     "naver8c063a2d4bfcc331b0d1f7f45c9ef55b.html",
 }
+# Translated pages live under /<code>/ (TRANSLATION.md). Each has an explicit permalink, so path_to_url maps
+# them like any other page. A language is pinged only once `_data/locales.yml` marks it `live: true`; before
+# that its pages are noindex and stay out of the sitemaps, so pinging them would only waste crawl budget.
+# Changes to `_data/i18n/*.yml`, `_data/locales.yml` and `_data/i18n_map.json` (interface strings, locale
+# rules, the hreflang map) count as sitewide through the `_data/` trigger above.
+LANG_CODES = ("de", "fr", "it", "es", "pt", "zh", "ja", "ko", "id", "es-mx", "pt-br", "pl", "tr", "nl", "ru", "ar")
+LANG_DIR_RE = re.compile(r"^/?(%s)/" % "|".join(sorted(LANG_CODES, key=len, reverse=True)))
+LOCALES_FILE = REPO_ROOT / "_data" / "locales.yml"
+_LIVE = None
+
+
+def live_languages():
+    """Codes with `live: true` in _data/locales.yml. A tiny line parser (stdlib only, this runs in CI without
+    PyYAML): a top-level `code:` line opens a block, an indented `live: true` inside it marks it live."""
+    global _LIVE
+    if _LIVE is None:
+        _LIVE, cur = set(), None
+        try:
+            lines = LOCALES_FILE.read_text(encoding="utf-8").splitlines()
+        except OSError:
+            lines = []
+        for line in lines:
+            top = re.match(r"^([A-Za-z][\w-]*):\s*(#.*)?$", line)
+            if top:
+                cur = top.group(1)
+            elif cur and re.match(r"^\s+live:\s*(true|yes|on)\s*(#.*)?$", line, re.I):
+                _LIVE.add(cur)
+    return _LIVE
+
+
+def url_language_live(url):
+    """False for a URL in a language folder whose language is not live; True otherwise (English included)."""
+    path = url[len(SITE_URL):] if url.startswith(SITE_URL) else url
+    m = LANG_DIR_RE.match(path)
+    return not m or m.group(1) in live_languages()
+
+
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---", re.DOTALL)
 PERMALINK_RE = re.compile(r"^permalink:\s*[\"']?(/[^\"'\n]*)", re.MULTILINE)
 SITEMAP_FALSE_RE = re.compile(r"^sitemap:\s*false\b", re.MULTILINE)
@@ -135,10 +172,15 @@ def path_to_url(rel_path):
     if fm and SITEMAP_FALSE_RE.search(fm):
         return None  # deliberately kept out of the index
 
+    lang_dir = LANG_DIR_RE.match(rel_path)
+    if lang_dir and lang_dir.group(1) not in live_languages():
+        return None  # language not live yet: noindex, not in any sitemap
+
     if fm:
         permalink = PERMALINK_RE.search(fm)
         if permalink:
-            return SITE_URL + permalink.group(1).strip()
+            url = SITE_URL + permalink.group(1).strip()
+            return url if url_language_live(url) else None
 
     if rel_path.startswith("_apps/") and rel_path.endswith(".md"):
         return f"{SITE_URL}/apps/{Path(rel_path).stem}/"
@@ -244,6 +286,10 @@ def collect_changed_urls(base_ref, verbose):
 
 def submit(urls, dry_run, verbose):
     urls = dedupe(urls)
+    skipped = [u for u in urls if not url_language_live(u)]
+    if skipped:
+        print(f"Skipping {len(skipped)} URL(s) of languages that are not live (locales.yml live: true).")
+        urls = [u for u in urls if url_language_live(u)]
     if not urls:
         print("Nothing to submit.")
         return 0

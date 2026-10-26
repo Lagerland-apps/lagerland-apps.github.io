@@ -14,12 +14,16 @@ Usage (run from the repo root):
 
 Never touched: privacy pages (their last_updated is the policy's effective
 date; change it by hand when the policy text changes), files without front
-matter, and anything outside the content folders below.
+matter, and anything outside the content folders below. Translated pages in the
+language folders (de/, fr/, ... TRANSLATION.md) are content too; their privacy
+pages are skipped like the English ones (layout: privacy or a /privacy/ path).
 """
 import argparse, datetime, os, re, subprocess, sys
 
 CONTENT_DIRS = ("_apps/", "_journal/", "alternatives/", "guides/", "for/",
                 "apps/", "journal/", "lagerland-apps/", "transparency/", "support/")
+# Translated pages live in one folder per language (TRANSLATION.md 2, 4.13): de/, fr/, ..., es-mx/, pt-br/.
+LANG_DIR_RE = re.compile(r"^(de|fr|it|es|pt|zh|ja|ko|id|es-mx|pt-br|pl|tr|nl|ru|ar)/")
 BOT_PREFIX = "Sync App Store ratings"
 
 
@@ -30,7 +34,7 @@ def git(*args):
 def is_content(path):
     if not (path.endswith(".html") or path.endswith(".md")):
         return False
-    return path == "index.html" or path.startswith(CONTENT_DIRS)
+    return path == "index.html" or path.startswith(CONTENT_DIRS) or bool(LANG_DIR_RE.match(path))
 
 
 def last_commit_date(path):
@@ -57,7 +61,7 @@ def stamp(path, date, only_if_missing=False, dry=False):
     if not parts:
         return "skip (no front matter)"
     fm, rest = parts
-    if re.search(r"^layout:\s*privacy\s*$", fm, re.M):
+    if re.search(r"^layout:\s*privacy\s*$", fm, re.M) or "/privacy/" in "/" + path.replace(os.sep, "/"):
         return "skip (privacy policy date is set by hand)"
     has = re.search(r"^last_updated:.*$", fm, re.M)
     if has and only_if_missing:
