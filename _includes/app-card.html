@@ -1,32 +1,35 @@
 {%- comment %}
   Reusable app card: a small perforated stamp of the icon in its series
   colour, then name, tagline, description and printed labels.
-  Usage: {% include app-card.html app=app %}
+  Usage: {% include app-card.html app=app %}   (app = the master; words come from its page in the current language)
 {% endcomment -%}
+{%- include tx-app.html app=include.app -%}{%- assign ac_tx = tx_app -%}
+{%- assign ac_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 {%- include app-facts.html app=include.app -%}
 {%- include series.html app=include.app -%}
 {%- assign card_plat = f_platforms | join: " · " | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Watch" | replace: "visionOS", "Vision Pro" -%}
-<a class="card card-app card-app--stamp series-{{ series_key }}" href="{{ include.app.url }}">
+<a class="card card-app card-app--stamp series-{{ series_key }}" href="{{ ac_tx.url }}">
   <span class="mini-stamp" aria-hidden="true"><span class="mini-stamp__paper"><span class="mini-stamp__field">
     <img src="/assets/icons/sm/{{ include.app.slug }}.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
   </span></span></span>
   <span class="card-app__body">
     <span class="app-name">{{ include.app.name }}</span>
-    <span class="app-tagline">{{ include.app.tagline }}</span>
-    {%- if include.app.seo and include.app.seo.description %}
-    <span class="card-text">{% include app-text.html app=include.app text=include.app.seo.description %}</span>
+    <span class="app-tagline">{{ ac_tx.tagline }}</span>
+    {%- if ac_tx.seo and ac_tx.seo.description %}
+    <span class="card-text">{% include app-text.html app=include.app text=ac_tx.seo.description %}</span>
     {%- endif %}
     <span class="meta-row">
       {%- if f_app_free == false and f_app_price != "" -%}
-        <span class="pill pill--price">One-time purchase</span>
+        <span class="pill pill--price">{{ ac_t.price_one_time }}</span>
       {%- elsif f_has_plans -%}
-        <span class="pill pill--price">Free &middot; Pro</span>
+        <span class="pill pill--price">{{ ac_t.pill_free_pro }}</span>
       {%- else -%}
-        <span class="pill pill--price">Free</span>
+        <span class="pill pill--price">{{ ac_t.price_free }}</span>
       {%- endif -%}
       {%- assign card_rating = include.app.ratings.value | plus: 0 -%}
       {%- if include.app.ratings and include.app.ratings.count >= 3 and card_rating >= site.ratings_min_display -%}
-        <span class="pill">Rated {{ include.app.ratings.value }} &middot; {{ include.app.ratings.count }} ratings</span>
+        {%- assign ac_rated = ac_t.pill_rated | replace: "{value}", include.app.ratings.value | replace: "{count}", include.app.ratings.count -%}
+        <span class="pill">{{ ac_rated }}</span>
       {%- endif -%}
       {%- if card_plat != "" %}<span class="pill">{{ card_plat }}</span>{% endif -%}
     </span>

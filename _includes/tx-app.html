@@ -1,0 +1,17 @@
+{%- comment -%}
+  For another app shown on the current page (card, stamp, list, footer link): finds that app's translated page in
+  the current page's language. Words (tagline, description, URL) come from tx_app, facts from the master doc.
+    app     the master document from site.apps
+  Sets tx_app (the translated page, or the master on English pages and when no translation exists) and tx_en
+  (true when a non-English page has no translation of this app: lists skip it, links fall back to English).
+{%- endcomment -%}
+{%- assign tx_app = include.app -%}
+{%- assign tx_en = false -%}
+{%- if page.lang and page.lang != "en" -%}
+  {%- unless i18n_apps_lang == page.lang -%}
+    {%- assign i18n_apps = site.pages | where: "lang", page.lang | where: "layout", "app" -%}
+    {%- assign i18n_apps_lang = page.lang -%}
+  {%- endunless -%}
+  {%- assign _txa = i18n_apps | where: "slug", include.app.slug | first -%}
+  {%- if _txa -%}{%- assign tx_app = _txa -%}{%- else -%}{%- assign tx_en = true -%}{%- endif -%}
+{%- endif -%}

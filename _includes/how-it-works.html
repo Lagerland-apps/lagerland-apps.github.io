@@ -12,11 +12,13 @@
         - title:  "Reads from Apple Health"
           detail: "On first launch …"
 {%- endcomment -%}
-{%- assign hiw = include.app.how_it_works -%}
+{%- assign hiw_tx = include.tx | default: include.app -%}
+{%- assign hiw_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign hiw = hiw_tx.how_it_works -%}
 {%- if hiw and hiw.steps and hiw.steps.size > 0 -%}
 <section id="how-it-works" class="section--lg">
   <div class="section-center">
-    <h2 class="h2 reveal">{{ hiw.heading | default: "The method behind every insight." }}</h2>
+    <h2 class="h2 reveal">{{ hiw.heading | default: hiw_t.how_heading_default }}</h2>
     {%- if hiw.intro -%}
     <p class="lead reveal" style="max-width:60ch;margin:var(--s-3) auto 0;">{{ hiw.intro }}</p>
     {%- endif -%}

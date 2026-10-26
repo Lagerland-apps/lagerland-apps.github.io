@@ -1,10 +1,21 @@
-# Display rules for prices and the standard price line, per language.
-# English is the only language today. A translated site adds one block here (e.g. `de:`) and sets
-# `lang: de` and `territory: DEU` on its pages; every price helper reads those two values.
-# Currency rules: symbol, where it goes (before/after), decimals, decimal and group separators.
-# Strings feed the standard price line ("Free — Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime").
+# One block per language (TRANSLATION.md 4.3). The key is the language code = folder name = page.lang.
+#   territory    App Store Connect territory whose prices the language shows (catalog.json meta.territories)
+#   html_lang    <html lang> value; hreflang: the hreflang codes this language's pages carry
+#   og_locale    og:locale; dir: ltr or rtl; native_name: the name in the language switcher
+#   live         false until the language's go-live commit. A language that is not live gets noindex on every
+#                page, stays out of the sitemaps, the switcher, hreflang and the footer language links.
+#   currencies   symbol, where it goes (before/after), decimals, decimal and group separators. Must match
+#                what the App Store shows in that storefront (checked date in the language sheet).
+#   strings      the standard price line ("Free, Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime"),
+#                the platform list join word and the free-trial label pattern ({n} = number of days/months).
 en:
   territory: USA
+  html_lang: en
+  hreflang: [en]
+  og_locale: en_US
+  dir: ltr
+  native_name: "English"
+  live: true
   currencies:
     USD: { symbol: "$", position: before, decimals: 2, decimal: ".", group: "," }
   strings:
@@ -20,3 +31,6 @@ en:
     one_time_purchase: "one-time purchase"
     default_tier: "Premium"
     family_sharing: "Family Sharing"
+    trial_days: "{n}-day free trial"
+    trial_months: "{n}-month free trial"
+    trial_years: "{n}-year free trial"

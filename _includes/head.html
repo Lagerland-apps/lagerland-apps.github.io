@@ -11,26 +11,29 @@
   VIEW/OPEN install prompt at the top of the app page, deep-linking straight
   into the App Store. It converts best of any install surface on the site
   and costs nothing. The numeric id is parsed out of app_store_url (…/app/idXXXXXXXX). {% endcomment -%}
-{%- if page.layout == "app" and page.app_store_url -%}
-  {%- assign _asid = page.app_store_url | split: "/id" | last | split: "?" | first -%}
+{%- comment %} Facts of an app page come from its master document (a translated app page carries words only). {% endcomment -%}
+{%- if page.layout == "app" -%}{%- assign head_app = site.apps | where: "slug", page.slug | first -%}{%- endif -%}
+{%- if page.layout == "app" and head_app.app_store_url -%}
+  {%- assign _asid = head_app.app_store_url | split: "/id" | last | split: "?" | first -%}
   {%- if _asid != "" -%}
 <meta name="apple-itunes-app" content="app-id={{ _asid }}">
   {%- endif -%}
 {%- endif -%}
 
-{%- assign page_title = page.seo.title | default: page.title | default: site.title -%}
-{%- assign page_desc  = page.seo.description | default: site.description -%}
+{%- assign head_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign head_loc = site.data.locales[page.lang] | default: site.data.locales.en -%}
+{%- assign head_en = true -%}{%- if page.lang and page.lang != "en" -%}{%- assign head_en = false -%}{%- endif -%}
+{%- comment %} A language that is not live yet (locales.yml live: false) is noindex everywhere. {% endcomment -%}
+{%- assign head_noindex = page.noindex -%}{%- if head_loc.live != true -%}{%- assign head_noindex = true -%}{%- endif -%}
+{%- assign head_site_title = site.title -%}{%- assign head_site_desc = site.description -%}
+{%- unless head_en -%}{%- assign head_site_title = head_t.site_title -%}{%- assign head_site_desc = head_t.site_description -%}{%- endunless -%}
+{%- assign page_title = page.seo.title | default: page.title | default: head_site_title -%}
+{%- assign page_desc  = page.seo.description | default: head_site_desc -%}
 {%- assign page_url   = site.url | append: page.url -%}
 {%- comment %} Share image: explicit og_image, else (journal posts) the card of
   the first app the post mentions, else the site default. Keep this logic in
   sync with the Article `image` in _layouts/journal.html. {% endcomment -%}
-{%- assign og_image = page.og_image -%}
-{%- if og_image == nil and page.mentioned_apps and page.mentioned_apps.size > 0 -%}
-  {%- assign _og_candidate = '/assets/og/' | append: page.mentioned_apps[0] | append: '.png' -%}
-  {%- assign _og_hit = site.static_files | where: "path", _og_candidate | first -%}
-  {%- if _og_hit -%}{%- assign og_image = _og_candidate -%}{%- endif -%}
-{%- endif -%}
-{%- assign og_image = og_image | default: '/assets/og/default.png' -%}
+{%- include og-image.html -%}
 {%- assign is_article = false -%}
 {%- if page.collection == "journal" -%}{%- assign is_article = true -%}{%- endif -%}
 
@@ -42,7 +45,7 @@
 <meta name="publisher" content="Lagerland Apps">
 {%- comment %} `noindex: true` in front matter keeps a page out of search
   results (and out of sitemap.xml / ai-sitemap.xml) while links still pass. {% endcomment %}
-{%- if page.noindex %}
+{%- if head_noindex %}
 <meta name="robots" content="noindex, follow">
 {%- else %}
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -55,15 +58,42 @@
 <link rel="icon" type="image/png" sizes="1024x1024" href="{{ site.url }}/assets/icons/lagerland-mark.png">
 <link rel="apple-touch-icon" href="{{ site.url }}/assets/icons/lagerland-mark.png">
 <link rel="mask-icon" href="{{ site.url }}/assets/icons/favicon.svg" color="#A78BFA">
+{%- comment %} hreflang (TRANSLATION.md 4.6, 7.1): every live version of this page, itself included, plus x-default
+  to English, from _data/i18n_map.json (scripts/i18n.py map). The set is identical on every version. A page with no
+  translations keeps the English pair; a local-only page has none. {% endcomment -%}
+{%- assign i18n_versions = site.data.i18n_map[page.ref] | default: site.data.i18n_map[page.url] -%}
+{%- comment %} Canonical is always the page's own URL; a page of a language that is not live yet keeps it (it is noindex,
+  not a duplicate) but gets no hreflang. {% endcomment -%}
 {%- unless page.noindex %}
 <link rel="canonical" href="{{ page_url }}">
+{%- endunless %}
+{%- unless head_noindex %}
+{%- if i18n_versions %}
+  {%- for _lp in site.data.locales -%}{%- assign _lc = _lp[0] -%}
+    {%- assign _lv = i18n_versions[_lc] -%}
+    {%- if _lv and _lp[1].live -%}
+      {%- for _hl in _lp[1].hreflang %}
+<link rel="alternate" hreflang="{{ _hl }}" href="{{ site.url }}{{ _lv }}">
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ i18n_versions.en }}">
+{%- elsif head_en %}
 <link rel="alternate" hreflang="en" href="{{ page_url }}">
 <link rel="alternate" hreflang="x-default" href="{{ page_url }}">
+{%- endif %}
 {%- endunless %}
+{%- if head_en %}
 <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed.xml" title="Lagerland Apps journal (Atom feed)">
 <link rel="alternate" type="application/json" href="{{ site.url }}/ai-index.json" title="AI-readable app index">
 <link rel="alternate" type="text/plain" href="{{ site.url }}/llms.txt" title="LLM summary (llms.txt)">
 <link rel="alternate" type="text/plain" href="{{ site.url }}/llms-full.txt" title="LLM full catalogue (llms-full.txt)">
+{%- else %}
+<link rel="alternate" type="application/atom+xml" href="{{ site.url }}/{{ page.lang }}/feed.xml" title="{{ head_t.feed_link_title | escape_once }}">
+<link rel="alternate" type="application/json" href="{{ site.url }}/ai-index.json" title="{{ head_t.ai_index_link_title | escape_once }}">
+<link rel="alternate" type="text/plain" href="{{ site.url }}/{{ page.lang }}/llms.txt" title="{{ head_t.llms_link_title | escape_once }}">
+<link rel="alternate" type="text/plain" href="{{ site.url }}/{{ page.lang }}/llms-full.txt" title="{{ head_t.llms_full_link_title | escape_once }}">
+{%- endif %}
 <link rel="sitemap" type="application/xml" href="{{ site.url }}/sitemap_index.xml">
 <link rel="alternate" type="application/xml" href="{{ site.url }}/sitemap.xml" title="XML sitemap">
 <link rel="alternate" type="application/xml" href="{{ site.url }}/ai-sitemap.xml" title="AI crawler sitemap">
@@ -91,7 +121,7 @@
 {%- endif -%}
 
 <meta property="og:type" content="{% if is_article %}article{% elsif page.layout == 'app' %}product{% else %}website{% endif %}">
-<meta property="og:site_name" content="{{ site.title | escape_once }}">
+<meta property="og:site_name" content="{{ head_site_title | escape_once }}">
 <meta property="og:title" content="{{ page_title | escape_once }}">
 <meta property="og:description" content="{{ page_desc | escape_once }}">
 <meta property="og:url" content="{{ page_url }}">
@@ -100,7 +130,14 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="{{ page.hero.alt | default: page_title | escape_once }}">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="{{ head_loc.og_locale }}">
+{%- if i18n_versions and head_noindex != true -%}
+  {%- for _lp in site.data.locales -%}{%- assign _lc = _lp[0] -%}
+    {%- if i18n_versions[_lc] and _lp[1].live and _lp[0] != page.lang %}
+<meta property="og:locale:alternate" content="{{ _lp[1].og_locale }}">
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif %}
 {%- if is_article %}
 <meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%d' }}">
 <meta property="article:modified_time" content="{{ page.last_updated | default: page.date | date: '%Y-%m-%d' }}">
@@ -151,6 +188,8 @@
         "https://github.com/lagerland-apps"
       ]
     },
+    {%- comment %} One WebSite node per language (TRANSLATION.md 4.6); one shared Organization. {% endcomment %}
+    {%- if head_en %}
     {
       "@type": "WebSite",
       "@id": "{{ site.url }}/#website",
@@ -160,6 +199,17 @@
       "publisher": { "@id": "{{ site.url }}/#organization" },
       "inLanguage": "en"
     }
+    {%- else %}
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/{{ page.lang }}/#website",
+      "url": "{{ site.url }}/{{ page.lang }}/",
+      "name": {{ head_site_title | jsonify }},
+      "description": {{ head_site_desc | jsonify }},
+      "publisher": { "@id": "{{ site.url }}/#organization" },
+      "inLanguage": {{ head_loc.html_lang | jsonify }}
+    }
+    {%- endif %}
   ]
 }
 </script>
@@ -167,7 +217,7 @@
 {%- comment %} Freshness: pages that carry `last_updated` (comparison pages,
   guides, audience pages, hubs) get dateModified merged into their existing
   `#webpage` node. Journal posts and app pages emit their own dates. {% endcomment %}
-{%- if page.last_updated and page.collection == nil and page.layout != "privacy" and page.layout != "support" and page.noindex != true %}
+{%- if page.last_updated and page.collection == nil and page.layout != "privacy" and page.layout != "support" and page.layout != "app" and page.layout != "journal" and head_noindex != true %}
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebPage", "@id": "{{ page_url }}#webpage", "url": "{{ page_url }}", "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}"}
 </script>

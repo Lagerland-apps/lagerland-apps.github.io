@@ -1,0 +1,15 @@
+{%- comment -%}
+  Free-trial label in the page's language, built from the catalog's free_trial.duration ("1 week", "3 days",
+  "1 month") with the patterns trial_days / trial_months / trial_years in _data/locales.yml strings.
+    trial  a catalog free_trial object
+{%- endcomment -%}
+{%- assign _ts = site.data.locales[page.lang].strings | default: site.data.locales.en.strings -%}
+{%- assign _tp = include.trial.duration | split: " " -%}
+{%- assign _tn = _tp[0] | plus: 0 -%}
+{%- assign _tu = _tp[1] | default: "" -%}
+{%- if _tu contains "week" -%}{%- assign _tn = _tn | times: 7 -%}{%- assign _tpat = _ts.trial_days -%}
+{%- elsif _tu contains "month" -%}{%- assign _tpat = _ts.trial_months -%}
+{%- elsif _tu contains "year" -%}{%- assign _tpat = _ts.trial_years -%}
+{%- else -%}{%- assign _tpat = _ts.trial_days -%}{%- endif -%}
+{%- if _tpat and _tn > 0 -%}{%- assign _tout = _tpat | replace: "{n}", _tn -%}{%- else -%}{%- assign _tout = include.trial.label -%}{%- endif -%}
+{{- _tout -}}

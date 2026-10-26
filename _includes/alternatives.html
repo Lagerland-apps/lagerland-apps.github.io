@@ -11,6 +11,10 @@
 {% endcomment -%}
 
 {%- if include.app.alternatives_to and include.app.alternatives_to.size > 0 -%}
+{%- assign al_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- comment %} Comparison pages are linked in the page's language when translated, otherwise in English with the
+  marker (TRANSLATION.md 7.6). {% endcomment -%}
+{%- capture al_hub -%}{% include l.html url="/alternatives/" %}{%- endcapture -%}{%- assign al_hub_en = l_en -%}
 
 {%- comment %} Map competitor display name (downcased) → /alternatives/<slug>/ page when a comparison exists. Keep this in sync with files under /alternatives/. {% endcomment -%}
 {%- assign alt_pairs = "strong:strong-workout-app,hevy:hevy,caliber:caliber,ladder:ladder,heavyset:heavyset,streaks:streaks-app,autosleep:autosleep,splitwise:splitwise,tricount:tricount,settle up:settle-up,tab:tab,venmo split:venmo-split,rocket money:rocket-money,chess.com:chess-com,lichess:lichess,magnus trainer:magnus-trainer,chessis:chessis,chessly:chessly,handbrake:handbrake,appfigures:appfigures,picsew:picsew,shift worker:shift-worker,countdown star:countdown-star,wikipedia:wikipedia-app,wikipedia app:wikipedia-app,app store connect:app-store-connect-web,app store connect web ui:app-store-connect-web,offshift:offshift,athlytic:athlytic,bevel:bevel,gentler streak:gentler-streak,days matter:days-matter,countdowns (apalon):countdowns-apalon,dreamdays:dreamdays,wedding happy:wedding-happy,appstats:appstats,app sales - store reports:app-sales-store-reports,opal:opal,time out:time-out,stepbloc:stepbloc,steppin:steppin,walkmyscreen:walkmyscreen,chessable:chessable,bobby:bobby,subby:subby,trackmysubs:trackmysubs,habitica:habitica,productive:productive,way of life:way-of-life,habitnow:habitnow,fitbod:fitbod,jefit:jefit,previewed:previewed,rotato:rotato,appmockup:appmockup,fastlane frameit / snapshot:fastlane-frameit,kiwix:kiwix,permute:permute,adapter:adapter,cloudconvert:cloudconvert,convertio:convertio,wondershare uniconverter:wondershare-uniconverter,hitpaw video converter:hitpaw-video-converter,imazing heic converter:imazing-heic-converter,xnconvert:xnconvert,izip:izip,compress videos & resize video:compress-videos-resize-video,image size:image-size,pdf expert:pdf-expert,documents by readdle:documents-by-readdle,whoop:whoop,oura:oura,hrv4training:hrv4training,welltory:welltory,11pets:11pets,petdesk:petdesk,pawprint:pawprint,medika:medika,petnoter:petnoter,vetkeep:vetkeep,shogi wars:shogi-wars,lishogi:lishogi,81dojo:81dojo,shogiquest:shogi-quest,kanazawa shogi:kanazawa-shogi,piyoshogi:piyoshogi,forest:forest,one sec:one-sec,screenzen:screenzen,jomo:jomo,brick:brick,unpluq:unpluq,stoic mode:stoic-mode,applaunchpad:applaunchpad,screenshot studio:screenshot-studio,screenshots.pro:screenshots-pro,threes:threes,kami 2:kami-2,flow free:flow-free,two dots:two-dots,suika game:suika-game,xiangqi.com:xiangqi-com,pychess:pychess,club xiangqi:club-xiangqi,playok:playok-xiangqi,chinese chess - best xiangqi:chinese-chess-best-xiangqi,baba is you:baba-is-you,good sudoku:good-sudoku,dragonbox algebra:dragonbox-algebra,nonograms katana:nonograms-katana,simon tatham's puzzles:simon-tatham-puzzles,itsyconnect:itsyconnect,fastlane deliver:fastlane-deliver,aso.dev:aso-dev,helm for app store connect:helm-app-store-connect,app store connect (official apple app):app-store-connect-app,revenuecat:revenuecat,wikitok:wikitok,wikiwand:wikiwand,wikiscroll:wikiscroll,stronglifts 5x5:stronglifts-5x5,alpha progression:alpha-progression,timeshifter (shift work):timeshifter,rise sleep tracker:rise-sleep-tracker,shiftsleep:shiftsleep" | split: "," -%}
@@ -36,8 +40,9 @@
 
 <section class="section reveal" aria-labelledby="alt-compact-{{ include.app.slug }}">
   <div class="section-center">
-    <h2 class="h2" id="alt-compact-{{ include.app.slug }}">{{ include.app.name }} vs the alternatives</h2>
-    <p class="lead">Each competitor has its own side-by-side page with the same feature differences as the table above, plus screenshots and a verdict.</p>
+    {%- assign al_h = al_t.alt_compact_heading | replace: "{name}", include.app.name %}
+    <h2 class="h2" id="alt-compact-{{ include.app.slug }}">{{ al_h }}</h2>
+    <p class="lead">{{ al_t.alt_compact_lead }}</p>
   </div>
   <ul class="pair-list">
     {%- for competitor in include.app.alternatives_to -%}
@@ -51,18 +56,20 @@
       {%- endfor -%}
       <li>
         {%- if competitor_slug != "" -%}
-          <a class="pair-row" href="/alternatives/{{ competitor_slug }}/"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">vs</span> {{ competitor }}</span><span class="pair-row__go">Read the comparison</span></a>
+          {%- assign al_url = "/alternatives/" | append: competitor_slug | append: "/" -%}
+          <a class="pair-row" href="{% include l.html url=al_url %}"{% if l_en %} hreflang="en"{% endif %}><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ competitor }}</span><span class="pair-row__go">{{ al_t.alt_read }}{% if l_en %} <span class="en-marker">{{ al_t.english_marker }}</span>{% endif %}</span></a>
         {%- else -%}
-          <span class="pair-row"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">vs</span> {{ competitor }}</span><span class="pair-row__go">comparison coming</span></span>
+          <span class="pair-row"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ competitor }}</span><span class="pair-row__go">{{ al_t.alt_coming }}</span></span>
         {%- endif -%}
       </li>
     {%- endfor -%}
   </ul>
   <div class="actions" style="margin-top:var(--s-4);justify-content:center;">
     {%- if comparison_url != "" -%}
-      <a class="btn btn-secondary" href="/alternatives/{{ comparison_url }}/">See the full comparison</a>
+      {%- assign al_url = "/alternatives/" | append: comparison_url | append: "/" -%}
+      <a class="btn btn-secondary" href="{% include l.html url=al_url %}"{% if l_en %} hreflang="en"{% endif %}>{{ al_t.alt_full }}{% if l_en %} <span class="en-marker">{{ al_t.english_marker }}</span>{% endif %}</a>
     {%- endif -%}
-    <a class="btn btn-secondary" href="/alternatives/">All alternative comparisons</a>
+    <a class="btn btn-secondary" href="{{ al_hub }}"{% if al_hub_en %} hreflang="en"{% endif %}>{{ al_t.alt_all_comparisons }}{% if al_hub_en %} <span class="en-marker">{{ al_t.english_marker }}</span>{% endif %}</a>
   </div>
 </section>
 
@@ -70,8 +77,12 @@
 
 <section class="section reveal">
   <div class="section-center">
-    <h2 class="h2">{{ include.app.name }} as an alternative to…</h2>
-    <p class="lead">{{ include.app.name }} is a privacy-first alternative to several popular apps in the {{ include.app.category | replace: '-', ' ' }} category. It needs no account and has no tracking or advertising, for Apple users who want to opt out of the data economy.</p>
+    {%- assign al_cat_key = include.app.category | replace: '-', '_' -%}
+    {%- assign al_cat = al_t.categories[al_cat_key] | default: include.app.category -%}
+    {%- assign al_h = al_t.alt_heading | replace: "{name}", include.app.name -%}
+    {%- assign al_lead = al_t.alt_lead | replace: "{name}", include.app.name | replace: "{category}", al_cat %}
+    <h2 class="h2">{{ al_h }}</h2>
+    <p class="lead">{{ al_lead }}</p>
   </div>
 
   <ul class="pair-list">
@@ -86,22 +97,24 @@
       {%- endfor -%}
       <li>
         {%- if competitor_slug != "" -%}
-        <a class="pair-row" href="/alternatives/{{ competitor_slug }}/"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">vs</span> {{ competitor }}</span><span class="pair-row__go">Read the comparison</span></a>
+        {%- assign al_url = "/alternatives/" | append: competitor_slug | append: "/" -%}
+        <a class="pair-row" href="{% include l.html url=al_url %}"{% if l_en %} hreflang="en"{% endif %}><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ competitor }}</span><span class="pair-row__go">{{ al_t.alt_read }}{% if l_en %} <span class="en-marker">{{ al_t.english_marker }}</span>{% endif %}</span></a>
         {%- else -%}
-        <span class="pair-row"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">vs</span> {{ competitor }}</span><span class="pair-row__go">comparison coming</span></span>
+        <span class="pair-row"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ competitor }}</span><span class="pair-row__go">{{ al_t.alt_coming }}</span></span>
         {%- endif -%}
       </li>
     {%- endfor -%}
   </ul>
 
   {%- if comparison_url != "" -%}
+    {%- assign al_url = "/alternatives/" | append: comparison_url | append: "/" -%}
     <div class="actions" style="margin-top:var(--s-4);justify-content:center;">
-      <a class="btn btn-secondary" href="/alternatives/{{ comparison_url }}/">See the full comparison</a>
-      <a class="btn btn-secondary" href="/alternatives/">All alternatives</a>
+      <a class="btn btn-secondary" href="{% include l.html url=al_url %}"{% if l_en %} hreflang="en"{% endif %}>{{ al_t.alt_full }}{% if l_en %} <span class="en-marker">{{ al_t.english_marker }}</span>{% endif %}</a>
+      <a class="btn btn-secondary" href="{{ al_hub }}"{% if al_hub_en %} hreflang="en"{% endif %}>{{ al_t.alt_all }}{% if al_hub_en %} <span class="en-marker">{{ al_t.english_marker }}</span>{% endif %}</a>
     </div>
   {%- else -%}
     <div class="actions" style="margin-top:var(--s-4);justify-content:center;">
-      <a class="btn btn-secondary" href="/alternatives/">All alternative comparisons</a>
+      <a class="btn btn-secondary" href="{{ al_hub }}"{% if al_hub_en %} hreflang="en"{% endif %}>{{ al_t.alt_all_comparisons }}{% if al_hub_en %} <span class="en-marker">{{ al_t.english_marker }}</span>{% endif %}</a>
     </div>
   {%- endif -%}
 </section>

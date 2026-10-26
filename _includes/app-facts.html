@@ -3,7 +3,9 @@
   (exported from App Store Connect by scripts/sync-asc-master.mjs). Include it once, then use the f_* variables:
     {% include app-facts.html app=page %}
   Variables assigned here leak into the including template on purpose (Jekyll include scope).
-    app        the app document (page, or an item of site.apps)
+    app        the app document (page, or an item of site.apps): the master, where the facts live
+    text       optional; the page whose words to use for price_lead, price_tier and price_override (a translated
+               app page). Default: app.
     territory  optional; default page.territory, then the language's territory, then USA
   An app with no catalog entry renders without platforms or price (the audit reports it as an error): run
   scripts/sync-asc-master.mjs once the app exists in App Store Connect.
@@ -42,7 +44,8 @@
 {%- if f_p -%}{%- capture f_weekly -%}{%- include money.html amount=f_p.amount currency=f_p.currency -%}{%- endcapture -%}{%- endif -%}
 {%- assign f_p = f_cat.plans.lifetime.prices[f_terr] -%}
 {%- if f_p -%}{%- capture f_lifetime -%}{%- include money.html amount=f_p.amount currency=f_p.currency -%}{%- endcapture -%}{%- endif -%}
-{%- assign f_trial = f_cat.plans.monthly.free_trial.label | default: f_cat.plans.yearly.free_trial.label | default: f_cat.plans.weekly.free_trial.label | default: "" -%}
+{%- assign f_trial_src = f_cat.plans.monthly.free_trial | default: f_cat.plans.yearly.free_trial | default: f_cat.plans.weekly.free_trial -%}
+{%- if f_trial_src -%}{%- capture f_trial -%}{%- include trial.html trial=f_trial_src -%}{%- endcapture -%}{%- endif -%}
 {%- for f_pair in f_cat.plans -%}{%- if f_pair[1].family_sharing -%}{%- assign f_family = true -%}{%- endif -%}{%- endfor -%}
 {%- assign f_has_plans = false -%}
 {%- if f_monthly != "" or f_yearly != "" or f_weekly != "" or f_lifetime != "" -%}{%- assign f_has_plans = true -%}{%- endif -%}
@@ -69,6 +72,10 @@
   {%- assign f_l = f_cat.plans.lifetime.prices[f_terr].amount | plus: 0 | times: 1.0 -%}
   {%- assign f_lifetime_years = f_l | divided_by: f_y | round -%}
 {%- endif -%}
+
+{%- comment %} ---- zero in the territory's currency, for "free" plan cards ({P_ZERO}) ---- {%- endcomment -%}
+{%- assign f_terr_row = site.data.catalog.meta.territories | where: "code", f_terr | first -%}
+{%- capture f_zero -%}{%- include money.html amount="0" currency=f_terr_row.currency decimals=0 -%}{%- endcapture -%}
 
 {%- comment %} ---- the app's own (upfront) price ---- {%- endcomment -%}
 {%- assign f_app_free = true -%}
@@ -128,8 +135,9 @@
 {%- endif -%}
 
 {%- comment %} ---- the standard price line, or the app's override ---- {%- endcomment -%}
-{%- if include.app.price_override -%}
-  {%- capture f_price_value -%}{%- include tokens.html text=include.app.price_override -%}{%- endcapture -%}
+{%- assign f_tx = include.text | default: include.app -%}
+{%- if f_tx.price_override -%}
+  {%- capture f_price_value -%}{%- include tokens.html text=f_tx.price_override -%}{%- endcapture -%}
 {%- elsif f_cat == nil -%}
   {%- assign f_price_value = "" -%}
 {%- elsif f_app_free == false -%}
@@ -143,7 +151,7 @@
   {%- elsif f_pieces.size == 2 -%}{%- capture f_list -%}{{ f_pieces[0] }} {{ f_str.or }} {{ f_pieces[1] }}{%- endcapture -%}
   {%- else -%}{%- capture f_list -%}{{ f_pieces[0] }}, {{ f_pieces[1] }}, {{ f_str.or }} {{ f_pieces[2] }}{%- endcapture -%}
   {%- endif -%}
-  {%- capture f_price_value -%}{{ include.app.price_lead | default: f_str.free }}, {{ include.app.price_tier | default: f_str.default_tier }} {{ f_str.from }} {{ f_list }}{%- endcapture -%}
+  {%- capture f_price_value -%}{{ f_tx.price_lead | default: f_str.free }}, {{ f_tx.price_tier | default: f_str.default_tier }} {{ f_str.from }} {{ f_list }}{%- endcapture -%}
 {%- else -%}
   {%- assign f_price_value = "" -%}
 {%- endif -%}

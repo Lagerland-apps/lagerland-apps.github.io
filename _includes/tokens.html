@@ -8,7 +8,7 @@
   offer (e.g. {P_MONTHLY} on a yearly-only app), so callers can hide that card/line instead of showing a blank.
   Tokens about an app: {P_MONTHLY} {P_YEARLY} {P_WEEKLY} {P_LIFETIME} {P_APP} {P_IAP_MIN} {P_IAP_MAX}
           {P_IAP:<exact label>} {TRIAL} {PLATFORMS} {SAVE_YEARLY} {YEARLY_MONTHS} {LIFETIME_MONTHS}
-          {LIFETIME_YEARS} {P_MONTHLY_ANNUAL}   (SAVE_YEARLY = % saved paying yearly vs 12 x monthly, the
+          {LIFETIME_YEARS} {P_MONTHLY_ANNUAL} {P_ZERO}   (P_ZERO = 0 in the territory's currency; SAVE_YEARLY = % saved paying yearly vs 12 x monthly, the
           *_MONTHS/YEARS ones express a price as months of monthly / years of yearly, all from the app's own prices)
   Global tokens: {APP_COUNT} (live apps) and {APP_COUNT_OTHER} (live apps minus one, for "the studio's other N apps").
 {%- endcomment -%}
@@ -22,8 +22,8 @@
 {%- endif -%}
 {%- if include.global_only != true -%}
   {%- assign tk_platforms = f_platforms | join: ", " -%}
-  {%- assign tk_names = "P_MONTHLY|P_YEARLY|P_WEEKLY|P_LIFETIME|P_APP|P_IAP_MIN|P_IAP_MAX|TRIAL|PLATFORMS|SAVE_YEARLY|YEARLY_MONTHS|LIFETIME_MONTHS|LIFETIME_YEARS|P_MONTHLY_ANNUAL" | split: "|" -%}
-  {%- assign tk_vals = "" | split: "" | push: f_monthly | push: f_yearly | push: f_weekly | push: f_lifetime | push: f_app_price | push: f_iap_min | push: f_iap_max | push: f_trial | push: tk_platforms | push: f_save_yearly | push: f_yearly_months | push: f_lifetime_months | push: f_lifetime_years | push: f_monthly_annual -%}
+  {%- assign tk_names = "P_MONTHLY|P_YEARLY|P_WEEKLY|P_LIFETIME|P_APP|P_IAP_MIN|P_IAP_MAX|TRIAL|PLATFORMS|SAVE_YEARLY|YEARLY_MONTHS|LIFETIME_MONTHS|LIFETIME_YEARS|P_MONTHLY_ANNUAL|P_ZERO" | split: "|" -%}
+  {%- assign tk_vals = "" | split: "" | push: f_monthly | push: f_yearly | push: f_weekly | push: f_lifetime | push: f_app_price | push: f_iap_min | push: f_iap_max | push: f_trial | push: tk_platforms | push: f_save_yearly | push: f_yearly_months | push: f_lifetime_months | push: f_lifetime_years | push: f_monthly_annual | push: f_zero -%}
   {%- for tk_name in tk_names -%}
     {%- assign tk_tag = "{" | append: tk_name | append: tk_sfx | append: "}" -%}
     {%- if tk_out contains tk_tag -%}

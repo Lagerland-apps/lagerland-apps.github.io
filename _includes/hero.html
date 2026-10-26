@@ -4,75 +4,83 @@
   and the leaflet's technical details (denomination, devices, data,
   issue dates). Prices and platforms come from the App Store Connect
   catalog via app-facts.html.
+    app  the master document (facts)     tx  the page with the words (default: app)
 {%- endcomment -%}
-{%- include app-facts.html app=include.app -%}
+{%- assign h_tx = include.tx | default: include.app -%}
+{%- assign h_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- include app-facts.html app=include.app text=h_tx -%}
 {%- include series.html app=include.app -%}
 {%- assign hero_plat = f_platforms | join: " · " | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Apple Watch" | replace: "visionOS", "Apple Vision Pro" -%}
 {%- assign first_day = include.app.release.first_release -%}
 <section class="hero hero--leaflet series-{{ series_key }}">
   <div class="leaflet-stamp reveal-scale">
     {%- if first_day -%}{%- assign fd = first_day | date: "%d.%m.%y" -%}{%- endif -%}
-    {% include stamp.html app=include.app tag="div" eager=true postmark=first_day postmark_date=fd postmark_label="FIRST DAY" %}
+    {% include stamp.html app=include.app tx=h_tx tag="div" eager=true postmark=first_day postmark_date=fd postmark_label=h_t.postmark_first_day %}
     {%- if first_day -%}
-    <p class="leaflet-caption">{{ series_label }} series · first issued {{ first_day | date: "%-d %B %Y" }}</p>
+    {%- capture h_fd -%}{% include date.html date=first_day fmt="dmy" %}{%- endcapture -%}
+    {%- assign h_caption = h_t.leaflet_caption | replace: "{series}", series_label | replace: "{date}", h_fd -%}
+    <p class="leaflet-caption">{{ h_caption }}</p>
     {%- endif -%}
   </div>
 
   <div class="hero-left reveal">
-    <ol class="crumbs" aria-label="Breadcrumb">
-      <li><a href="/">The sheet</a></li>
-      <li><a href="/#series-{{ series_key }}">{{ series_label }}</a></li>
+    {%- assign h_home = "/" -%}{%- if page.lang and page.lang != "en" -%}{%- capture h_home -%}{% include l.html url="/" %}{%- endcapture -%}{%- endif %}
+    <ol class="crumbs" aria-label="{{ h_t.breadcrumb }}">
+      <li><a href="{{ h_home }}">{{ h_t.crumb_sheet }}</a></li>
+      <li><a href="{{ h_home }}#series-{{ series_key }}">{{ series_label }}</a></li>
       <li aria-current="page">{{ include.app.name }}</li>
     </ol>
-    <h1 class="h1">{{ include.app.hero.headline }}</h1>
-    {%- if include.app.hero.secondary -%}
-    <p class="hero-eyebrow">{{ include.app.hero.secondary }}</p>
+    <h1 class="h1">{{ h_tx.hero.headline }}</h1>
+    {%- if h_tx.hero.secondary -%}
+    <p class="hero-eyebrow">{{ h_tx.hero.secondary }}</p>
     {%- endif -%}
-    <p class="lead">{{ include.app.hero.subheadline }}</p>
-    {%- if include.app.hero.pre_headline -%}
-    <p class="hero-pre">{{ include.app.hero.pre_headline }}</p>
+    <p class="lead">{{ h_tx.hero.subheadline }}</p>
+    {%- if h_tx.hero.pre_headline -%}
+    <p class="hero-pre">{{ h_tx.hero.pre_headline }}</p>
     {%- endif -%}
 
     <div class="actions actions--hero-cta">
       {% include appstore-badge.html url=include.app.app_store_url name=include.app.name %}
-      <a class="btn btn-secondary" href="#features">See how it works</a>
+      <a class="btn btn-secondary" href="#features">{{ h_t.see_how_it_works }}</a>
     </div>
 
-    {%- if include.app.hero.cta_subline -%}
-    <p class="cta-subline">{{ include.app.hero.cta_subline }}</p>
+    {%- if h_tx.hero.cta_subline -%}
+    <p class="cta-subline">{{ h_tx.hero.cta_subline }}</p>
     {%- endif -%}
 
     {%- comment %} Desktop-only "scan to install": most marketing traffic is on
       a Mac, the product is an iPhone app. Hidden on touch via CSS. {% endcomment -%}
     {%- assign _qr = "/assets/qr/" | append: include.app.slug | append: ".svg" -%}
     <div class="qr-install" aria-hidden="true">
-      <img class="qr-install__img" src="{{ _qr }}" alt="QR code to install {{ include.app.name }} on the App Store" width="88" height="88" loading="lazy" decoding="async">
+      {%- assign h_qr_alt = h_t.qr_alt | replace: "{name}", include.app.name %}
+      <img class="qr-install__img" src="{{ _qr }}" alt="{{ h_qr_alt }}" width="88" height="88" loading="lazy" decoding="async">
       <div class="qr-install__copy">
-        <strong>On your Mac?</strong>
-        <span>Point your iPhone camera here to install.</span>
+        <strong>{{ h_t.qr_on_mac }}</strong>
+        <span>{{ h_t.qr_point_camera }}</span>
       </div>
     </div>
 
     <dl class="tech">
-      <dt>Price</dt>
-      <dd>{% if f_price_value != "" %}{{ f_price_value }}{% else %}Free{% endif %}</dd>
+      <dt>{{ h_t.tech_price }}</dt>
+      <dd>{% if f_price_value != "" %}{{ f_price_value }}{% else %}{{ h_t.price_free }}{% endif %}</dd>
       {%- if hero_plat != "" %}
-      <dt>Runs on</dt><dd>{{ hero_plat }}</dd>
+      <dt>{{ h_t.tech_runs_on }}</dt><dd>{{ hero_plat }}</dd>
       {%- endif %}
-      <dt>Your data</dt>
+      <dt>{{ h_t.tech_your_data }}</dt>
       <dd>{%- assign dc = include.app.privacy.data_collection | default: "none" | downcase -%}
-        {%- if dc == "none" -%}No data collected (Apple App Privacy label){%- else -%}{{ include.app.privacy.data_collection }}{%- endif -%}
-        {%- unless include.app.privacy.account_required %} · no account{% endunless -%}
-        {%- unless include.app.privacy.tracking %} · no tracking{% endunless -%}</dd>
+        {%- if dc == "none" -%}{{ h_t.tech_no_data }}{%- else -%}{{ h_tx.privacy.data_collection | default: include.app.privacy.data_collection }}{%- endif -%}
+        {%- unless include.app.privacy.account_required %} · {{ h_t.tech_no_account }}{% endunless -%}
+        {%- unless include.app.privacy.tracking %} · {{ h_t.tech_no_tracking }}{% endunless -%}</dd>
       {%- comment %} Only show aggregate rating when it has enough signal to be credible
         (≥ 25 ratings and at or above site.ratings_min_display). {% endcomment -%}
       {%- assign hero_rating = include.app.ratings.value | plus: 0 -%}
       {%- if include.app.ratings and include.app.ratings.count >= 25 and hero_rating >= site.ratings_min_display %}
-      <dt>Rating</dt><dd>{{ include.app.ratings.value }} out of 5 from {{ include.app.ratings.count }} App Store ratings</dd>
+      {%- assign h_rating = h_t.tech_rating_text | replace: "{value}", include.app.ratings.value | replace: "{count}", include.app.ratings.count %}
+      <dt>{{ h_t.tech_rating }}</dt><dd>{{ h_rating }}</dd>
       {%- endif %}
       {%- if include.app.release.last_updated %}
-      <dt>Last update</dt>
-      <dd class="hero-updated-dd"><time datetime="{{ include.app.release.last_updated }}">{{ include.app.release.last_updated | date: "%-d %B %Y" }}</time>{%- if include.app.release.version %} · version {{ include.app.release.version }}{%- endif -%}</dd>
+      <dt>{{ h_t.tech_last_update }}</dt>
+      <dd class="hero-updated-dd"><time datetime="{{ include.app.release.last_updated }}">{% include date.html date=include.app.release.last_updated fmt="dmy" %}</time>{%- if include.app.release.version %} · {{ h_t.colophon_version }} {{ include.app.release.version }}{%- endif -%}</dd>
       {%- endif %}
     </dl>
   </div>

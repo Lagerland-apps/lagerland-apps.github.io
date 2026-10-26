@@ -2108,3 +2108,28 @@ a:hover .card-journal-cta, a:hover .card-compared-cta { color: var(--blue); }
   .sheet-bar__shot { width: 46px; height: 96px; }
 }
 @media (max-width: 640px) { .sheet-bar__shot:not([hidden]) + .sheet-bar__icon { display: block; } }
+
+/* ===== Languages (TRANSLATION.md 4.9, 4.10) =====
+   Nothing here changes an English page: the switcher, the footer language row and the marker only render once a
+   second language is live, and the :lang() rules match other languages only. */
+.en-marker { font-weight: 400; font-size: 0.85em; color: var(--ink-3); white-space: nowrap; }
+.lang-switch { display: inline-flex; align-items: center; gap: 2px; margin-left: var(--s-2); padding-left: var(--s-2); border-left: 1px dashed var(--cut); }
+.lang-switch .lang-switch__item { font-weight: 500; padding: 8px 8px; }
+.lang-switch span.lang-switch__item { color: var(--ink); font-weight: 700; }
+.footer-langs { max-width: var(--container); margin: 0 auto; padding: var(--s-3) var(--s-4) 0; display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); font-size: var(--text-sm); }
+.footer-langs span[aria-current] { font-weight: 600; }
+.privacy-reference { font-style: italic; }
+/* Long compound words: let the browser hyphenate body text (needs the right <html lang>) */
+:is(:lang(de), :lang(nl), :lang(pl), :lang(ru)) :is(p, li, dd, .card-text, .lead, .faq-a) { hyphens: auto; -webkit-hyphens: auto; }
+/* CJK: no letter-spacing, no forced capitals, no italics; Korean keeps words whole; system fonts per language */
+:is(:lang(ja), :lang(ko), :lang(zh)) * { letter-spacing: 0 !important; text-transform: none !important; font-style: normal !important; }
+:lang(ko) body { word-break: keep-all; }
+:is(:lang(ja), :lang(zh)) body { line-break: strict; }
+:is(:lang(ja), :lang(ko), :lang(zh)) :is(p, li, .lead, .faq-a) { line-height: 1.75; }
+:lang(ja) body { font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans CJK JP", "Noto Sans JP", sans-serif; }
+:lang(ko) body { font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK KR", "Noto Sans KR", sans-serif; }
+:lang(zh) body { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+@media (max-width: 720px) {
+  .lang-switch { display: flex; flex-wrap: wrap; margin: var(--s-3) 0 0; padding: var(--s-2) 0 0; border-left: 0; border-top: 1px dashed var(--cut); }
+  .nav .lang-switch a.lang-switch__item { font-family: var(--font-body); font-size: var(--text-sm); border-bottom: 0; padding: 8px 8px; }
+}

@@ -1,24 +1,40 @@
 ---
 layout: default
 ---
+{%- comment -%}
+  A translated privacy page (<lang>/apps/<slug>/privacy/) carries slug, ref, title, seo, the policy prose and the
+  English policy date as last_updated. The app name, contact address and back link come from the master; a line
+  from t says the English text is the reference.
+{%- endcomment -%}
+{%- include t.html -%}
+{%- assign pv_app = nil -%}
+{%- if page.slug -%}{%- assign pv_app = site.apps | where: "slug", page.slug | first -%}{%- endif -%}
+{%- assign pv_name = page.app_name | default: pv_app.name -%}
+{%- assign pv_email = page.contact_email | default: pv_app.support.email | default: site.email -%}
+{%- assign pv_back = page.back_url -%}
+{%- if pv_back == nil and pv_app -%}{%- include tx-app.html app=pv_app -%}{%- assign pv_back = tx_app.url -%}{%- endif -%}
+{%- assign pv_covers = t.privacy_covers | replace: "{name}", pv_name -%}
 <section class="section">
   <h1 class="h1">{{ page.title }}</h1>
 
-  {% if page.app_name %}
+  {% if pv_name %}
     <p class="lead">
-      This privacy policy covers <strong>{{ page.app_name }}</strong>.
+      {{ pv_covers }}
     </p>
   {% endif %}
 
   {% if page.last_updated %}
     <p class="small">
-      Last updated: <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: "%B %-d, %Y" }}</time>
+      {{ t.privacy_last_updated }} <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{% include date.html date=page.last_updated %}</time>
     </p>
   {% endif %}
+  {%- if page.lang != "en" %}
+    <p class="small privacy-reference">{{ t.privacy_reference_note }}</p>
+  {%- endif %}
 
   <!-- INTRO -->
   <section class="privacy-block">
-    <h2 class="h3">Overview</h2>
+    <h2 class="h3">{{ t.privacy_overview }}</h2>
     <p>
       {{ page.overview }}
     </p>
@@ -26,11 +42,12 @@ layout: default
 
   <!-- DATA COLLECTION -->
   <section class="privacy-block">
-    <h2 class="h3">Data Collection</h2>
+    <h2 class="h3">{{ t.privacy_h_data_collection }}</h2>
 
     {% if page.data_collection == "none" %}
+      {%- assign pv_none = t.privacy_no_personal_data | replace: "{name}", pv_name %}
       <p>
-        {{ page.app_name }} does not collect personal data.
+        {{ pv_none }}
       </p>
     {% else %}
       <p>
@@ -41,7 +58,7 @@ layout: default
 
   <!-- DATA STORAGE -->
   <section class="privacy-block">
-    <h2 class="h3">Data Storage & Processing</h2>
+    <h2 class="h3">{{ t.privacy_h_storage }}</h2>
     <p>
       {{ page.data_storage }}
     </p>
@@ -50,7 +67,7 @@ layout: default
   <!-- ICLOUD SYNC (optional: one string or a list of paragraphs) -->
   {% if page.icloud_sync %}
   <section class="privacy-block">
-    <h2 class="h3">iCloud Sync</h2>
+    <h2 class="h3">{{ t.privacy_h_icloud }}</h2>
     {% for paragraph in page.icloud_sync %}
       <p>
         {{ paragraph }}
@@ -61,11 +78,12 @@ layout: default
 
   <!-- THIRD PARTIES -->
   <section class="privacy-block">
-    <h2 class="h3">Third-Party Services</h2>
+    <h2 class="h3">{{ t.privacy_h_third_parties }}</h2>
 
     {% if page.third_parties == "none" %}
+      {%- assign pv_tp = t.privacy_no_third_parties | replace: "{name}", pv_name %}
       <p>
-        {{ page.app_name }} does not use third-party analytics, advertising, or tracking services.
+        {{ pv_tp }}
       </p>
     {% else %}
       <p>
@@ -77,7 +95,7 @@ layout: default
   <!-- YOUR CHOICES (optional: one string or a list of paragraphs) -->
   {% if page.your_choices %}
   <section class="privacy-block">
-    <h2 class="h3">Your Choices, Retention &amp; Deletion</h2>
+    <h2 class="h3">{{ t.privacy_h_choices }}</h2>
     {% for paragraph in page.your_choices %}
       <p>
         {{ paragraph }}
@@ -89,7 +107,7 @@ layout: default
   <!-- YOUR RIGHTS (optional: one string or a list of paragraphs) -->
   {% if page.your_rights %}
   <section class="privacy-block">
-    <h2 class="h3">Your Rights</h2>
+    <h2 class="h3">{{ t.privacy_h_rights }}</h2>
     {% for paragraph in page.your_rights %}
       <p>
         {{ paragraph }}
@@ -101,7 +119,7 @@ layout: default
   <!-- HEALTH / SENSITIVE DATA -->
   {% if page.sensitive_data %}
   <section class="privacy-block">
-    <h2 class="h3">Health & Sensitive Data</h2>
+    <h2 class="h3">{{ t.privacy_h_sensitive }}</h2>
     <p>
       {{ page.sensitive_data }}
     </p>
@@ -110,7 +128,7 @@ layout: default
 
   <!-- CHILDREN -->
   <section class="privacy-block">
-    <h2 class="h3">Children’s Privacy</h2>
+    <h2 class="h3">{{ t.privacy_h_children }}</h2>
     <p>
       {{ page.children }}
     </p>
@@ -118,7 +136,7 @@ layout: default
 
   <!-- CHANGES -->
   <section class="privacy-block">
-    <h2 class="h3">Changes to This Policy</h2>
+    <h2 class="h3">{{ t.privacy_h_changes }}</h2>
     <p>
       {{ page.changes }}
     </p>
@@ -126,17 +144,18 @@ layout: default
 
   <!-- CONTACT -->
   <section class="privacy-block">
-    <h2 class="h3">Contact</h2>
+    <h2 class="h3">{{ t.privacy_h_contact }}</h2>
     <p>
-      If you have questions about this privacy policy, you can contact us at
-      <a href="mailto:{{ page.contact_email }}">{{ page.contact_email }}</a>.
+      {{ t.privacy_contact_text }}
+      <a href="mailto:{{ pv_email }}">{{ pv_email }}</a>.
     </p>
   </section>
 
-  {% if page.back_url %}
+  {% if pv_back %}
+    {%- assign pv_back_label = t.back_to | replace: "{name}", pv_name %}
     <div class="actions" style="margin-top:32px;">
-      <a class="btn btn-secondary" href="{{ page.back_url }}">
-        Back to {{ page.app_name }}
+      <a class="btn btn-secondary" href="{{ pv_back }}">
+        {{ pv_back_label }}
       </a>
     </div>
   {% endif %}

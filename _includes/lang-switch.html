@@ -1,0 +1,24 @@
+{%- comment -%}
+  Language switcher (TRANSLATION.md 4.9): the live versions of the current page, each named in its own language,
+  with hreflang and lang on the link. No flags, no redirects. Renders nothing when the page has one version.
+    where  "header" (inside the main nav) or "footer"
+{%- endcomment -%}
+{%- assign ls_versions = site.data.i18n_map[page.ref] | default: site.data.i18n_map[page.url] -%}
+{%- assign ls_count = 0 -%}
+{%- if ls_versions -%}
+  {%- for _lp in site.data.locales -%}{%- assign _lc = _lp[0] -%}{%- if ls_versions[_lc] and _lp[1].live -%}{%- assign ls_count = ls_count | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- endif -%}
+{%- if ls_count > 1 %}
+      <span class="lang-switch lang-switch--{{ include.where }}" role="group" aria-label="{{ t.lang_switch_label }}">
+        {%- for _lp in site.data.locales -%}{%- assign _lc = _lp[0] -%}
+          {%- assign _lv = ls_versions[_lc] -%}
+          {%- if _lv and _lp[1].live -%}
+            {%- if _lp[0] == page.lang -%}
+        <span class="lang-switch__item" aria-current="true" lang="{{ _lp[1].html_lang }}">{{ _lp[1].native_name }}</span>
+            {%- else -%}
+        <a class="lang-switch__item" href="{{ _lv }}" hreflang="{{ _lp[1].html_lang }}" lang="{{ _lp[1].html_lang }}">{{ _lp[1].native_name }}</a>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </span>
+{%- endif -%}

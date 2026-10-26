@@ -1,0 +1,25 @@
+{%- comment -%}
+  Share image of the current page, assigned to og_image (used by head.html, the app and journal JSON-LD).
+  Order: explicit og_image on the page; on a translated page the card in its language
+  (/assets/og/<lang>/<slug>.png) when it exists; the app's English card (app pages: the master's og_image;
+  journal posts: the first mentioned app); the site default.
+{%- endcomment -%}
+{%- assign og_image = page.og_image -%}
+{%- assign _og_slug = nil -%}
+{%- if page.layout == "app" -%}{%- assign _og_slug = page.slug -%}
+{%- elsif page.mentioned_apps and page.mentioned_apps.size > 0 -%}{%- assign _og_slug = page.mentioned_apps[0] -%}{%- endif -%}
+{%- if og_image == nil and _og_slug and page.lang and page.lang != "en" -%}
+  {%- assign _og_candidate = '/assets/og/' | append: page.lang | append: '/' | append: _og_slug | append: '.png' -%}
+  {%- assign _og_hit = site.static_files | where: "path", _og_candidate | first -%}
+  {%- if _og_hit -%}{%- assign og_image = _og_candidate -%}{%- endif -%}
+{%- endif -%}
+{%- if og_image == nil and page.layout == "app" -%}
+  {%- assign _og_master = site.apps | where: "slug", page.slug | first -%}
+  {%- assign og_image = _og_master.og_image -%}
+{%- endif -%}
+{%- if og_image == nil and _og_slug -%}
+  {%- assign _og_candidate = '/assets/og/' | append: _og_slug | append: '.png' -%}
+  {%- assign _og_hit = site.static_files | where: "path", _og_candidate | first -%}
+  {%- if _og_hit -%}{%- assign og_image = _og_candidate -%}{%- endif -%}
+{%- endif -%}
+{%- assign og_image = og_image | default: '/assets/og/default.png' -%}

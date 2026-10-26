@@ -7,11 +7,20 @@ layout: default
   No FAQPage schema here on purpose: the same Q&A already carries FAQPage
   markup on the app page, and duplicate FAQ markup across URLs adds nothing.
 {%- endcomment -%}
+{%- comment -%}
+  Translated support pages (<lang>/apps/<slug>/support/) carry slug, ref and seo only; the app's facts come from the
+  master and the questions from the app's page in the same language (tx-app.html).
+{%- endcomment -%}
+{%- include t.html -%}
 {%- assign app = site.apps | where: "slug", page.slug | first -%}
+{%- include tx-app.html app=app -%}{%- assign app_tx = tx_app -%}
 {%- include app-facts.html app=app -%}
-{%- assign app_abs = site.url | append: app.url -%}
+{%- assign app_abs = site.url | append: app_tx.url -%}
 {%- assign page_abs = site.url | append: page.url -%}
-{%- assign support_name = app.name | append: " Support" -%}
+{%- assign support_name = t.support_title | replace: "{name}", app.name -%}
+{%- assign sp_platforms = f_platforms | join: " / " | default: "iOS" -%}
+{%- assign sp_inc1 = t.support_include_version | replace: "{name}", app.name -%}
+{%- assign sp_inc3 = t.support_include_os | replace: "{platforms}", sp_platforms -%}
 
 <script type="application/ld+json">
 {
@@ -21,7 +30,7 @@ layout: default
   "url": "{{ page_abs }}",
   "name": {{ page.seo.title | default: support_name | jsonify }},
   "description": {{ page.seo.description | jsonify }},
-  "inLanguage": "en",
+  "inLanguage": {{ loc.html_lang | jsonify }},
   "isPartOf": { "@id": "{{ site.url }}/#website" },
   "about": { "@id": "{{ app_abs }}#app" },
   "publisher": { "@id": "{{ site.url }}/#organization" },
@@ -37,27 +46,28 @@ layout: default
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
-      { "@type": "ListItem", "position": 2, "name": "Apps", "item": "{{ site.url }}/apps/" },
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}{% include l.html url="/" %}" },
+      { "@type": "ListItem", "position": 2, "name": {{ t.nav_apps | jsonify }}, "item": "{{ site.url }}{% include l.html url="/apps/" %}" },
       { "@type": "ListItem", "position": 3, "name": {{ app.name | jsonify }}, "item": "{{ app_abs }}" },
-      { "@type": "ListItem", "position": 4, "name": "Support", "item": "{{ page_abs }}" }
+      { "@type": "ListItem", "position": 4, "name": {{ t.nav_support | jsonify }}, "item": "{{ page_abs }}" }
     ]
   }
 }
 </script>
 
 <section class="section">
-  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">The sheet</a></li><li><a href="{{ app.url }}">{{ app.name }}</a></li><li aria-current="page">Help &amp; contact</li></ol>
-  <h1 class="h1">{{ app.name }} Support</h1>
+  {%- assign sp_lead = t.support_lead | replace: "{name}", app.name %}
+  <ol class="crumbs" aria-label="{{ t.breadcrumb }}"><li><a href="{% include l.html url="/" %}">{{ t.crumb_sheet }}</a></li><li><a href="{{ app_tx.url }}">{{ app.name }}</a></li><li aria-current="page">{{ t.support_crumb }}</li></ol>
+  <h1 class="h1">{{ support_name }}</h1>
 
   <p class="lead">
-    The developer who builds {{ app.name }} reads and answers every message about it. Common questions and useful links are below the contact details.
+    {{ sp_lead }}
   </p>
 
   <div class="card">
-    <div class="card-title">Contact support</div>
+    <div class="card-title">{{ t.support_contact }}</div>
     <p class="card-text">
-      For a problem, a question, or feedback, email:
+      {{ t.support_email_intro }}
     </p>
 
     <p>
@@ -66,42 +76,48 @@ layout: default
       </a>
     </p>
 
-    <p class="card-text">Please include:</p>
+    <p class="card-text">{{ t.support_please_include }}</p>
     <ul class="bullets">
-      <li>{{ app.name }} version (shown in the app’s settings or on its App Store page)</li>
-      <li>Device model</li>
-      <li>{{ f_platforms | join: " / " | default: "iOS" }} version</li>
-      <li>What you expected to happen, and what happened instead</li>
+      <li>{{ sp_inc1 }}</li>
+      <li>{{ t.support_include_device }}</li>
+      <li>{{ sp_inc3 }}</li>
+      <li>{{ t.support_include_expected }}</li>
     </ul>
   </div>
 </section>
 
 <section class="section">
-  <h2 class="h2">Before you email</h2>
+  {%- assign sp_update = t.support_tip_update | replace: "{app_store_url}", app.app_store_url -%}
+  {%- assign sp_noacct = t.support_tip_no_account | replace: "{name}", app.name %}
+  <h2 class="h2">{{ t.support_before_heading }}</h2>
   <ul class="bullets">
-    <li>Update to the latest version from the <a href="{{ app.app_store_url }}" rel="noopener">App Store</a>; many fixes ship there first.</li>
-    <li>If you subscribed to a paid tier, you can manage or cancel it in <strong>Settings → your name → Subscriptions</strong> on iPhone or iPad, or in the App Store app on Mac.</li>
-    <li>Refunds for App Store purchases are handled by Apple at <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a>.</li>
+    <li>{{ sp_update }}</li>
+    <li>{{ t.support_tip_subscriptions }}</li>
+    <li>{{ t.support_tip_refunds }}</li>
     {%- unless app.privacy.account_required %}
-    <li>{{ app.name }} has no sign-up and no Lagerland account, so there is no password to reset or account to recover.</li>
+    <li>{{ sp_noacct }}</li>
     {%- endunless %}
   </ul>
 </section>
 
+{%- comment %} Up to six support-type questions from the app's FAQ in this language, picked by keywords in that
+  language (t.support_words); the first six questions when fewer than three match. {% endcomment -%}
 {%- assign support_faq = '' | split: '' -%}
-{%- assign support_words = "sync,icloud,export,backup,delete,data,cancel,refund,restore,price,cost,pay,subscription,lifetime,purchase,account,offline,privacy,private,watch,ipad,mac,language,require,work with,does it,can i" | split: "," -%}
-{%- for item in app.faq -%}
+{%- assign support_words = t.support_words | split: "," -%}
+{%- for item in app_tx.faq -%}
   {%- assign qd = item.q | downcase -%}
   {%- for w in support_words -%}
     {%- if qd contains w -%}{%- assign support_faq = support_faq | push: item -%}{%- break -%}{%- endif -%}
   {%- endfor -%}
   {%- if support_faq.size >= 6 -%}{%- break -%}{%- endif -%}
 {%- endfor -%}
-{%- if support_faq.size < 3 -%}{%- assign support_faq = app.faq | slice: 0, 6 -%}{%- endif -%}
+{%- if support_faq.size < 3 -%}{%- assign support_faq = app_tx.faq | slice: 0, 6 -%}{%- endif -%}
 
 {%- if support_faq.size > 0 %}
 <section class="section">
-  <h2 class="h2">Common {{ app.name }} questions</h2>
+  {%- assign sp_common = t.support_common | replace: "{name}", app.name -%}
+  {%- assign sp_more = t.support_more | replace: "{name}", app.name %}
+  <h2 class="h2">{{ sp_common }}</h2>
   <div class="faq">
     {%- for item in support_faq %}
     <details class="faq-item">
@@ -110,22 +126,25 @@ layout: default
     </details>
     {%- endfor %}
   </div>
-  <p class="small" style="margin-top:16px;">More answers: <a href="{{ app.url }}#faq">all {{ app.name }} questions</a>.</p>
+  <p class="small" style="margin-top:16px;">{{ t.support_more_label }} <a href="{{ app_tx.url }}#faq">{{ sp_more }}</a>.</p>
 </section>
 {%- endif %}
 
 <section class="section">
-  <h2 class="h2">Useful links</h2>
+  {%- assign sp_pp = t.support_link_privacy | replace: "{name}", app.name -%}
+  {%- assign sp_as = t.support_link_app_store | replace: "{name}", app.name -%}
+  {%- assign sp_back = t.back_to | replace: "{name}", app.name %}
+  <h2 class="h2">{{ t.support_links_heading }}</h2>
   <ul class="bullets">
-    <li><a href="{{ app.url }}">{{ app.name }}</a>: features, pricing and screenshots</li>
-    <li><a href="{{ app.url }}privacy/">{{ app.name }} privacy policy</a>: what the app stores and where</li>
-    <li><a href="/transparency/">Transparency report</a>: every Lagerland app’s tracking, SDKs and network calls, field by field</li>
-    <li><a href="{{ app.app_store_url }}" rel="noopener">{{ app.name }} on the App Store</a></li>
+    <li><a href="{{ app_tx.url }}">{{ app.name }}</a>{{ t.support_link_app_desc }}</li>
+    <li><a href="{{ app_tx.url }}privacy/">{{ sp_pp }}</a>{{ t.support_link_privacy_desc }}</li>
+    <li><a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}>{{ t.support_link_transparency }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>{{ t.support_link_transparency_desc }}</li>
+    <li><a href="{{ app.app_store_url }}" rel="noopener">{{ sp_as }}</a></li>
   </ul>
 
   <div class="actions" style="margin-top:24px;">
-    <a class="btn btn-secondary" href="{{ app.url }}">
-      Back to {{ app.name }}
+    <a class="btn btn-secondary" href="{{ app_tx.url }}">
+      {{ sp_back }}
     </a>
   </div>
 </section>

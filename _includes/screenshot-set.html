@@ -1,0 +1,22 @@
+{%- comment -%}
+  Which screenshot set an app page shows (TRANSLATION.md 6.8). The master's `screenshots:` list names the files
+  for every language. On a translated page, the set in assets/screenshots/<slug>/<lang>/ is used only when it holds
+  every file of that list; otherwise the whole English set. One strip never mixes languages.
+    app  the master document
+  Sets shots_from ("/assets/screenshots/<slug>/") and shots_dir ("" for English, else the localized folder prefix):
+  a file's localized path is src | replace: shots_from, shots_dir.
+{%- endcomment -%}
+{%- assign shots_from = "/assets/screenshots/" | append: include.app.slug | append: "/" -%}
+{%- assign shots_dir = "" -%}
+{%- if page.lang and page.lang != "en" -%}
+  {%- assign _sd = shots_from | append: page.lang | append: "/" -%}
+  {%- assign _s_ok = true -%}
+  {%- for _s in include.app.screenshots -%}
+    {%- assign _sp = _s.src | default: _s -%}
+    {%- unless _sp contains shots_from -%}{%- assign _s_ok = false -%}{%- break -%}{%- endunless -%}
+    {%- assign _sp = _sp | replace: shots_from, _sd -%}
+    {%- assign _shit = site.static_files | where: "path", _sp | first -%}
+    {%- unless _shit -%}{%- assign _s_ok = false -%}{%- break -%}{%- endunless -%}
+  {%- endfor -%}
+  {%- if _s_ok -%}{%- assign shots_dir = _sd -%}{%- endif -%}
+{%- endif -%}

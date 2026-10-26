@@ -1,4 +1,5 @@
 {%- assign qa = include.text | default: page.quick_answer -%}
+{%- assign qa_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 {%- if qa and qa != "" -%}
 {%- comment %}
   SpeakableSpecification: tells voice assistants (Siri, Assistant,
@@ -15,8 +16,8 @@
   }
 }
 </script>
-<aside class="quick-answer reveal" aria-label="Quick answer" itemscope itemtype="https://schema.org/Answer">
-  <p class="quick-answer__label">Quick answer</p>
+<aside class="quick-answer reveal" aria-label="{{ qa_t.quick_answer }}" itemscope itemtype="https://schema.org/Answer">
+  <p class="quick-answer__label">{{ qa_t.quick_answer }}</p>
   <p class="quick-answer__body" itemprop="text">{{ qa }}</p>
 </aside>
 {%- endif -%}

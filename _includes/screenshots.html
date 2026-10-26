@@ -6,26 +6,40 @@
     2. Hash:   { src: "/path/to/img.png", alt: "Alt for screen readers" }
     3. Hash:   { src: "/path/to/img.png", caption: "Visible caption (also used as alt)" }
   Mac apps (hero.device: mac) get wide landscape stamps.
+    app  the master (files, device)     tx  the page with the words: screenshot_captions, same order as the master
+         list, each item { alt: ..., caption: ... } or a plain string (alt). Default: the master's own alt/caption.
+  Files come from the language's folder when it holds the complete set (screenshot-set.html), else English.
 {%- endcomment -%}
 {%- include series.html app=include.app -%}
+{%- include screenshot-set.html app=include.app -%}
+{%- assign sc_tx = include.tx | default: include.app -%}
+{%- assign sc_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign sc_title = sc_t.shots_heading | replace: "{name}", include.app.name -%}
 <section id="screenshots" class="shots-band bleed series-{{ series_key }}" aria-labelledby="shots-title-{{ include.app.slug }}">
   <div class="section-head">
-    <h2 class="h2" id="shots-title-{{ include.app.slug }}">{{ include.app.name }}, screen by screen</h2>
-    <div class="section-sub">Real screenshots from the App Store listing. Scroll or drag the strip.</div>
+    <h2 class="h2" id="shots-title-{{ include.app.slug }}">{{ sc_title }}</h2>
+    <div class="section-sub">{{ sc_t.shots_sub }}</div>
   </div>
 
   <div class="shots">
     {% for s in include.app.screenshots %}
+      {%- assign sc_words = sc_tx.screenshot_captions[forloop.index0] -%}
+      {%- assign shot_alt_fallback = sc_t.shot_alt_fallback | replace: "{name}", include.app.name | replace: "{n}", forloop.index -%}
       {%- if s.src -%}
         {%- assign shot_src = s.src -%}
-        {%- capture shot_alt_fallback %}{{ include.app.name }} screenshot {{ forloop.index }}{% endcapture -%}
+        {%- if sc_tx.screenshot_captions -%}
+          {%- if sc_words.alt or sc_words.caption -%}{%- assign shot_alt = sc_words.alt | default: sc_words.caption | default: shot_alt_fallback -%}{%- assign shot_caption = sc_words.caption -%}
+          {%- else -%}{%- assign shot_alt = sc_words | default: shot_alt_fallback -%}{%- assign shot_caption = nil -%}{%- endif -%}
+        {%- else -%}
         {%- assign shot_alt = s.alt | default: s.caption | default: shot_alt_fallback -%}
         {%- assign shot_caption = s.caption -%}
+        {%- endif -%}
       {%- else -%}
         {%- assign shot_src = s -%}
-        {%- capture shot_alt %}{{ include.app.name }} screenshot {{ forloop.index }}{% endcapture -%}
+        {%- assign shot_alt = shot_alt_fallback -%}
         {%- assign shot_caption = nil -%}
       {%- endif -%}
+      {%- if shots_dir != "" -%}{%- assign shot_src = shot_src | replace: shots_from, shots_dir -%}{%- endif -%}
       <figure class="shot{% if include.app.hero.device == 'mac' %} shot--window{% endif %}">
         <div class="shot__paper">
           <img src="{{ shot_src }}" alt="{{ shot_alt | escape }}" loading="lazy" decoding="async">

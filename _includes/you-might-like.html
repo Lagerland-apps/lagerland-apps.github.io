@@ -11,7 +11,14 @@
 {% endcomment -%}
 
 {%- assign current_slug = include.app.slug -%}
+{%- assign yml_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 {%- assign live_apps = site.apps | where: "status", "live" -%}
+{%- comment %} On a translated page only apps that have a page in its language (TRANSLATION.md 12.1). {% endcomment -%}
+{%- if page.lang and page.lang != "en" -%}
+  {%- assign yml_keep = "" | split: "" -%}
+  {%- for a in live_apps -%}{%- include tx-app.html app=a -%}{%- unless tx_en -%}{%- assign yml_keep = yml_keep | push: a -%}{%- endunless -%}{%- endfor -%}
+  {%- assign live_apps = yml_keep -%}
+{%- endif -%}
 {%- assign related = '' | split: '' -%}
 
 {%- comment %} 1. Explicit related_apps from frontmatter (curated audience adjacency) {% endcomment -%}
@@ -55,8 +62,8 @@
 {%- if related.size > 0 -%}
 <section class="section--lg reveal">
   <div class="section-center">
-    <h2 class="h2">You might also like</h2>
-    <p class="lead">More privacy-first apps from the same independent developer.</p>
+    <h2 class="h2">{{ yml_t.yml_heading }}</h2>
+    <p class="lead">{{ yml_t.yml_lead }}</p>
   </div>
   <div class="grid grid-2 stagger">
     {%- for app in related -%}

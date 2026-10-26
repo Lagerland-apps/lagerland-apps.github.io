@@ -5,34 +5,39 @@
   The rating line comes from the app's synced `ratings:` (App Store), not from the quotes.
 {% endcomment -%}
 
+{%- comment %} Quotes stay in the language the user wrote them in, with lang on the element (TRANSLATION.md 6.2). {% endcomment -%}
 {%- assign t_list = site.data.testimonials[include.slug] -%}
+{%- assign tq_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign tq_app = include.app | default: page -%}
 {%- if t_list and t_list.size > 0 -%}
-
+{%- assign tq_h = tq_t.testimonials_heading | replace: "{name}", include.name -%}
 <section class="section testimonials reveal" aria-labelledby="testimonials-heading-{{ include.slug }}">
   <div class="testimonials-head">
-    <h2 class="h2" id="testimonials-heading-{{ include.slug }}">What people say about {{ include.name }}</h2>
-    {%- assign t_app_rating = page.ratings.value | plus: 0 -%}
-    {%- if page.ratings and page.ratings.count >= 3 and t_app_rating >= site.ratings_min_display -%}
-    <p class="testimonials-meta">Rated {{ page.ratings.value }} out of 5 from {{ page.ratings.count }} App Store ratings · quotes from the App Store and Reddit, unedited</p>
+    <h2 class="h2" id="testimonials-heading-{{ include.slug }}">{{ tq_h }}</h2>
+    {%- assign t_app_rating = tq_app.ratings.value | plus: 0 -%}
+    {%- if tq_app.ratings and tq_app.ratings.count >= 3 and t_app_rating >= site.ratings_min_display -%}
+    {%- assign tq_meta = tq_t.testimonials_meta_rated | replace: "{value}", tq_app.ratings.value | replace: "{count}", tq_app.ratings.count -%}
+    <p class="testimonials-meta">{{ tq_meta }}</p>
     {%- else -%}
-    <p class="testimonials-meta">From the App Store and Reddit · quoted unedited</p>
+    <p class="testimonials-meta">{{ tq_t.testimonials_meta }}</p>
     {%- endif -%}
   </div>
   {%- assign t_hero = t_list | where: "tier", "hero" -%}
   {%- assign t_rest = t_list | where_exp: "t", "t.tier != 'hero'" -%}
   {%- assign t_show = t_hero | concat: t_rest | slice: 0, 4 -%}
   <div class="quotes">
-    {%- for t in t_show -%}
-      {%- assign lang = t.language | default: 'en' -%}
+    {%- for tq in t_show -%}
+      {%- assign lang = tq.language | default: 'en' -%}
     <figure class="quote" lang="{{ lang }}">
-      <blockquote class="quote__text">{{ t.quote }}</blockquote>
-      {%- if lang != 'en' and t.translation_en and t.translation_en != '' %}
-      <p class="quote__translation" lang="en"><span>In English:</span> {{ t.translation_en }}</p>
+      <blockquote class="quote__text">{{ tq.quote }}</blockquote>
+      {%- if lang != 'en' and tq.translation_en and tq.translation_en != '' %}
+      <p class="quote__translation" lang="en"><span>{{ tq_t.testimonials_in_english }}</span> {{ tq.translation_en }}</p>
       {%- endif %}
-      <figcaption class="quote__meta"><span class="quote__author">{{ t.author }}</span> · {{ t.source }}{% if t.rating %} · {{ t.rating }} of 5{% endif %}</figcaption>
+      {%- assign tq_of5 = tq_t.rating_of_5 | replace: "{value}", tq.rating %}
+      <figcaption class="quote__meta"><span class="quote__author">{{ tq.author }}</span> · {{ tq.source }}{% if tq.rating %} · {{ tq_of5 }}{% endif %}</figcaption>
     </figure>
     {%- endfor -%}
   </div>
-  <p class="testimonials-footnote">Quotes shown verbatim. Names reduced to initials for privacy.</p>
+  <p class="testimonials-footnote">{{ tq_t.testimonials_footnote }}</p>
 </section>
 {%- endif -%}

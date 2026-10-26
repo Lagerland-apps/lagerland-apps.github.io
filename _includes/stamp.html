@@ -2,21 +2,26 @@
   One app as a perforated stamp.
   Usage: {% include stamp.html app=app index=n postmark=true tag="a" %}
   Denomination and devices come from the App Store Connect catalog (app-facts).
+    app  the master document     tx  optional: the page with the words (tagline, url). Without it, the app's page in
+         the current page's language is looked up (tx-app.html).
 {%- endcomment -%}
-{%- include app-facts.html app=include.app -%}
+{%- if include.tx -%}{%- assign st_tx = include.tx -%}{%- else -%}{%- include tx-app.html app=include.app -%}{%- assign st_tx = tx_app -%}{%- endif -%}
+{%- assign st_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- include app-facts.html app=include.app text=st_tx -%}
 {%- include series.html app=include.app -%}
 {%- if f_app_free == false and f_app_price != "" -%}
   {%- assign st_denom = f_app_price -%}
 {%- elsif f_has_plans -%}
-  {%- assign st_denom = "Free · Pro" -%}
+  {%- assign st_denom = st_t.denom_free_pro -%}
 {%- else -%}
-  {%- assign st_denom = "Free" -%}
+  {%- assign st_denom = st_t.price_free -%}
 {%- endif -%}
 {%- assign st_plat = f_platforms | join: " · " | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Watch" | replace: "visionOS", "Vision Pro" -%}
 {%- assign st_first = include.app.release.first_release -%}
 {%- assign st_tag = include.tag | default: "a" -%}
 {%- assign st_shot = include.app.screenshots[0].src | default: include.app.screenshots[0] -%}
-<{{ st_tag }} class="stamp series-{{ series_key }}"{% if st_tag == "a" %} href="{{ include.app.url }}" aria-label="{{ include.app.name }}: {{ include.app.tagline | escape }} {{ st_denom }}. {{ st_plat | replace: ' · ', ', ' }}."{% endif %} id="stamp-{{ include.app.slug }}" data-series="{{ series_key }}" data-slug="{{ include.app.slug }}" data-name="{{ include.app.name | escape }}" data-tag="{{ include.app.tagline | escape }}" data-store="{{ include.app.app_store_url }}"{% if st_shot %} data-shot="{{ st_shot }}"{% endif %} style="--i:{{ include.index | default: 0 }}">
+{%- if st_shot -%}{%- include screenshot-set.html app=include.app -%}{%- if shots_dir != "" -%}{%- assign st_shot = st_shot | replace: shots_from, shots_dir -%}{%- endif -%}{%- endif -%}
+<{{ st_tag }} class="stamp series-{{ series_key }}"{% if st_tag == "a" %} href="{{ st_tx.url }}" aria-label="{{ include.app.name }}: {{ st_tx.tagline | escape }} {{ st_denom }}. {{ st_plat | replace: ' · ', ', ' }}."{% endif %} id="stamp-{{ include.app.slug }}" data-series="{{ series_key }}" data-slug="{{ include.app.slug }}" data-name="{{ include.app.name | escape }}" data-tag="{{ st_tx.tagline | escape }}" data-store="{{ include.app.app_store_url }}"{% if st_shot %} data-shot="{{ st_shot }}"{% endif %} style="--i:{{ include.index | default: 0 }}">
   <span class="stamp__paper"><span class="stamp__field">
     <span class="stamp__top">{% if st_first %}<time class="stamp__date" datetime="{{ st_first | date: '%Y-%m-%d' }}">{{ st_first | date: "%d.%m.%y" }}</time>{% else %}<span></span>{% endif %}<span class="stamp__denom">{{ st_denom }}</span></span>
     <img class="stamp__icon" src="/assets/icons/sm/{{ include.app.slug }}.webp" alt="" width="128" height="128" {% if include.eager %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">

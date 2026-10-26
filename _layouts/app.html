@@ -2,10 +2,19 @@
 layout: default
 ---
 
+{%- comment %}
+  Facts and words (TRANSLATION.md 4.5): `m` is the master document _apps/<slug>.md, where every fact lives (name,
+  category, prices via the catalog, platforms, screenshot files, release dates, ratings, App Store link). `page`
+  holds the words. On an English app page m and page are the same document; a translated app page
+  (<lang>/apps/<slug>/index.md) carries words only. Read facts from m., words from page.
+{%- endcomment -%}
+{%- include t.html -%}
+{%- assign m = site.apps | where: "slug", page.slug | first -%}
+{%- include og-image.html -%}
 {% comment %} ===== Structured Data (JSON-LD) ===== {% endcomment %}
 
 {% assign app_url = site.url | append: page.url %}
-{% include app-facts.html app=page %}
+{% include app-facts.html app=m text=page %}
 {% assign operating_systems = f_platforms | join: ", " %}
 {% assign keywords = page.seo.keywords | join: ", " %}
 {% assign schema_price = f_schema_price %}
@@ -14,7 +23,7 @@ layout: default
 {% assign schema_offer_count = f_offers | append: "" %}
 
 {%- comment %} Map internal category slug to schema.org applicationCategory {% endcomment -%}
-{%- case page.category -%}
+{%- case m.category -%}
   {%- when 'health' or 'fitness' -%}{%- assign schema_cat = 'HealthApplication' -%}
   {%- when 'productivity' -%}{%- assign schema_cat = 'BusinessApplication' -%}
   {%- when 'lifestyle' -%}{%- assign schema_cat = 'LifestyleApplication' -%}
@@ -34,15 +43,15 @@ layout: default
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "@id": {{ app_url | append: "#app" | jsonify }},
-  "name": {{ page.name | jsonify }},
+  "name": {{ m.name | jsonify }},
   "description": {{ page.seo.description | jsonify }},
   "url": {{ app_url | jsonify }},
-  "image": {{ page.og_image | absolute_url | jsonify }},
+  "image": {{ og_image | absolute_url | jsonify }},
   "applicationCategory": {{ schema_cat | jsonify }},
-  "applicationSubCategory": {{ page.category | jsonify }},
+  "applicationSubCategory": {{ m.category | jsonify }},
   "operatingSystem": {{ operating_systems | jsonify }},
   "keywords": {{ keywords | jsonify }},
-  "inLanguage": "en",
+  "inLanguage": {{ loc.html_lang | jsonify }},
   "isAccessibleForFree": {% if schema_price == "0" %}true{% else %}false{% endif %},
   "publisher": {
     "@type": "Organization",
@@ -51,12 +60,12 @@ layout: default
   {%- comment %} Only emit aggregateRating when there is enough rating signal to back it.
     Match the visible-UI threshold in _includes/hero.html: Google flags schema that does
     not match visible content. Same 4.0 floor (site.ratings_min_display) as the hero. {% endcomment -%}
-  {%- assign schema_rating = page.ratings.value | plus: 0 -%}
-  {%- if page.ratings and page.ratings.count and page.ratings.count >= 25 and schema_rating >= site.ratings_min_display -%}
+  {%- assign schema_rating = m.ratings.value | plus: 0 -%}
+  {%- if m.ratings and m.ratings.count and m.ratings.count >= 25 and schema_rating >= site.ratings_min_display -%}
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": {{ page.ratings.value | jsonify }},
-    "ratingCount": {{ page.ratings.count | jsonify }},
+    "ratingValue": {{ m.ratings.value | jsonify }},
+    "ratingCount": {{ m.ratings.count | jsonify }},
     "bestRating": "5",
     "worstRating": "1"
   },
@@ -66,11 +75,11 @@ layout: default
     USD on the English pages, see _data/locales.yml.
   {%- endcomment -%}
   {%- assign price_currency = f_currency -%}
-  "offers": {%- assign price_model = page.price.model | downcase -%}
+  "offers": {%- assign price_model = m.price.model | downcase -%}
   {%- if price_model contains 'one-time' -%}
   {
     "@type": "Offer",
-    "url": {{ page.app_store_url | jsonify }},
+    "url": {{ m.app_store_url | jsonify }},
     "priceCurrency": {{ price_currency | jsonify }},
     "price": {{ schema_price | jsonify }},
     "availability": "https://schema.org/InStock",
@@ -79,7 +88,7 @@ layout: default
   {%- else -%}
   {
     "@type": "AggregateOffer",
-    "url": {{ page.app_store_url | jsonify }},
+    "url": {{ m.app_store_url | jsonify }},
     "priceCurrency": {{ price_currency | jsonify }},
     "lowPrice": "0",
     "highPrice": {{ schema_high_price | jsonify }},
@@ -87,17 +96,20 @@ layout: default
     "availability": "https://schema.org/InStock",
     "seller": { "@id": "{{ site.url }}/#organization" }
   }
-  {%- endif -%}{%- if page.screenshots and page.screenshots.size > 0 -%},
+  {%- endif -%}{%- if m.screenshots and m.screenshots.size > 0 -%},
+  {%- include screenshot-set.html app=m %}
   "screenshot": [
-    {%- for s in page.screenshots -%}
-      {%- if s.src -%}{{ s.src | absolute_url | jsonify }}{%- else -%}{{ s | absolute_url | jsonify }}{%- endif -%}{%- unless forloop.last -%},{%- endunless -%}
+    {%- for s in m.screenshots -%}
+      {%- if s.src -%}{%- assign _ss = s.src -%}{%- else -%}{%- assign _ss = s -%}{%- endif -%}
+      {%- if shots_dir != "" -%}{%- assign _ss = _ss | replace: shots_from, shots_dir -%}{%- endif -%}
+      {{ _ss | absolute_url | jsonify }}{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
   ]{%- endif -%}{%- if page.features and page.features.size > 0 -%},
   "featureList": [
     {%- for f in page.features -%}
       {{ f.title | jsonify }}{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
-  ]{%- endif -%}{%- if page.release_notes and page.release_notes.size > 0 -%},
+  ]{%- endif -%}{%- if m.release_notes and m.release_notes.size > 0 -%},
   {%- comment %}
     Concatenate the visible release-notes block into a single
     SoftwareApplication.releaseNotes string. Structured freshness
@@ -105,12 +117,12 @@ layout: default
     available to crawlers as a schema field.
   {%- endcomment -%}
   {%- capture release_notes_string -%}
-    {%- for entry in page.release_notes -%}{{ entry.date }}: {{ entry.note }}{%- unless forloop.last -%} · {% endunless -%}{%- endfor -%}
+    {%- for entry in m.release_notes -%}{{ entry.date }}: {{ page.release_notes[forloop.index0].note | default: entry.note }}{%- unless forloop.last -%} · {% endunless -%}{%- endfor -%}
   {%- endcapture -%}
-  "releaseNotes": {{ release_notes_string | jsonify }}{%- endif -%}{%- if page.release.first_release -%},
-  "datePublished": {{ page.release.first_release | jsonify }}{%- endif -%}{%- if page.release.last_updated -%},
-  "dateModified": {{ page.release.last_updated | jsonify }}{%- endif -%}{%- if page.release.version -%},
-  "softwareVersion": {{ page.release.version | jsonify }}{%- endif -%}
+  "releaseNotes": {{ release_notes_string | jsonify }}{%- endif -%}{%- if m.release.first_release -%},
+  "datePublished": {{ m.release.first_release | jsonify }}{%- endif -%}{%- if m.release.last_updated -%},
+  "dateModified": {{ m.release.last_updated | jsonify }}{%- endif -%}{%- if m.release.version -%},
+  "softwareVersion": {{ m.release.version | jsonify }}{%- endif -%}
 }
 </script>
 
@@ -141,9 +153,9 @@ layout: default
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
-    { "@type": "ListItem", "position": 2, "name": "Apps", "item": "{{ site.url }}/apps/" },
-    { "@type": "ListItem", "position": 3, "name": {{ page.name | jsonify }}, "item": {{ app_url | jsonify }} }
+    { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}{% include l.html url="/" %}" },
+    { "@type": "ListItem", "position": 2, "name": {{ t.nav_apps | jsonify }}, "item": "{{ site.url }}{% include l.html url="/apps/" %}" },
+    { "@type": "ListItem", "position": 3, "name": {{ m.name | jsonify }}, "item": {{ app_url | jsonify }} }
   ]
 }
 </script>
@@ -161,11 +173,12 @@ layout: default
   "@context": "https://schema.org",
   "@type": "HowTo",
   "@id": "{{ app_url }}#how-it-works",
-  "name": "How {{ page.name }} works",
+  {%- assign howto_name = t.howto_name | replace: "{name}", m.name %}
+  "name": {{ howto_name | jsonify }},
   {%- if page.how_it_works.intro %}
   "description": {{ page.how_it_works.intro | jsonify }},
   {%- endif %}
-  "inLanguage": "en",
+  "inLanguage": {{ loc.html_lang | jsonify }},
   "isPartOf": { "@id": "{{ app_url }}#app" },
   "step": [
     {%- for step in page.how_it_works.steps -%}
@@ -207,14 +220,14 @@ layout: default
   "datePublished": {{ page.creative_work.date_published | jsonify }}{%- endif -%}{%- if page.creative_work.number_of_episodes %},
   "numberOfEpisodes": {{ page.creative_work.number_of_episodes | jsonify }}{%- endif -%},
   "isAccessibleForFree": false,
-  "image": {{ page.og_image | absolute_url | jsonify }},
+  "image": {{ og_image | absolute_url | jsonify }},
   "url": {{ app_url | jsonify }},
   "subjectOf": { "@id": "{{ app_url }}#app" }
 }
 </script>
 {%- endif -%}
 
-{%- include series.html app=page -%}
+{%- include series.html app=m -%}
 <article class="app leaflet-body series-{{ series_key }}">
 
   {%- comment %}
@@ -230,7 +243,7 @@ layout: default
   {% endcomment -%}
 
   {% comment %} ===== HERO ===== {% endcomment %}
-  {% include hero.html app=page %}
+  {% include hero.html app=m tx=page %}
 
   {% comment %}
     ===== STICKY DOWNLOAD BAR =====
@@ -238,36 +251,37 @@ layout: default
     so the download path is never more than a glance away on these long pages.
     Icon + name + price on the left, official App Store badge on the right.
   {% endcomment %}
-  {%- assign price_model = page.price.model | downcase -%}
+  {%- assign price_model = m.price.model | downcase -%}
+  {%- assign icon_alt = t.app_icon_alt | replace: "{name}", m.name -%}
   <div class="sticky-cta" id="sticky-cta" data-hidden="true">
     <div class="sticky-cta__inner">
-      <img class="sticky-cta__icon" src="{{ page.icon }}" alt="{{ page.name }} app icon" width="40" height="40" loading="lazy" decoding="async">
+      <img class="sticky-cta__icon" src="{{ m.icon }}" alt="{{ icon_alt }}" width="40" height="40" loading="lazy" decoding="async">
       <div class="sticky-cta__meta">
-        <span class="sticky-cta__name">{{ page.name }}</span>
+        <span class="sticky-cta__name">{{ m.name }}</span>
         {%- if price_model contains 'one-time' -%}
-          <span class="sticky-cta__price">One-time purchase</span>
+          <span class="sticky-cta__price">{{ t.sticky_one_time }}</span>
         {%- elsif price_model contains 'freemium' -%}
-          <span class="sticky-cta__price">Free · Pro optional</span>
+          <span class="sticky-cta__price">{{ t.sticky_freemium }}</span>
         {%- elsif price_model contains 'subscription' -%}
-          <span class="sticky-cta__price">Free trial</span>
+          <span class="sticky-cta__price">{{ t.sticky_trial }}</span>
         {%- elsif price_model contains 'free' -%}
-          <span class="sticky-cta__price">Free</span>
+          <span class="sticky-cta__price">{{ t.sticky_free }}</span>
         {%- endif -%}
       </div>
-      {% include appstore-badge.html url=page.app_store_url name=page.name class="asb--sm" %}
+      {% include appstore-badge.html url=m.app_store_url name=m.name class="asb--sm" %}
     </div>
   </div>
 
   {% comment %} ===== SCREENSHOTS: se-tenant strip directly under the leaflet ===== {% endcomment %}
-  {% if page.screenshots %}
-    {% include screenshots.html app=page %}
+  {% if m.screenshots %}
+    {% include screenshots.html app=m tx=page %}
   {% endif %}
 
   {% comment %} ===== QUICK ANSWER (AEO direct-extraction block) ===== {% endcomment %}
   {% include quick-answer.html %}
 
   {% comment %} ===== JUMP NAV (in-page anchors, rendered when page.jump_nav is true) ===== {% endcomment %}
-  {% include jump-nav.html app=page %}
+  {% include jump-nav.html app=m tx=page %}
 
 
   {% comment %}
@@ -302,7 +316,7 @@ layout: default
 
   {% comment %} ===== MENTIONED IN (renders only when page.mentioned_in is set; put real external mentions here) ===== {% endcomment %}
   {% if page.mentioned_in and page.mentioned_in.size > 0 %}
-  <section class="section reveal" aria-label="Mentioned in">
+  <section class="section reveal" aria-label="{{ t.mentioned_in }}">
     <div class="section-center">
     </div>
     <div class="mentioned-row" style="display:flex;flex-wrap:wrap;gap:var(--s-3) var(--s-5);justify-content:center;align-items:center;opacity:0.85;">
@@ -318,11 +332,12 @@ layout: default
   {% endif %}
 
   {% comment %} ===== TESTIMONIALS TICKER (renders only if data exists for slug) ===== {% endcomment %}
-  {% include testimonials-ticker.html slug=page.slug name=page.name %}
+  {% include testimonials-ticker.html slug=m.slug name=m.name app=m %}
 
   {% comment %} ===== VALUE POINTS ===== {% endcomment %}
   {% if page.value_points %}
-  <section class="section" aria-label="Why {{ page.name }}">
+  {%- assign why_label = t.why_app | replace: "{name}", m.name %}
+  <section class="section" aria-label="{{ why_label }}">
     <div class="leaflet-cols stagger">
       {% for item in page.value_points %}
       <div class="leaflet-col">
@@ -335,7 +350,7 @@ layout: default
   {% endif %}
 
   {% comment %} ===== PRICING (placed high: after value points, before screenshots, so the commitment moment lands in the first 2-3 mobile screens) ===== {% endcomment %}
-  {% include pricing.html app=page %}
+  {% include pricing.html app=m tx=page %}
 
   {% comment %}
     ===== ABOUT / LONGFORM BODY (renders when page.show_body is true) =====
@@ -346,10 +361,12 @@ layout: default
     links. SearchPilot split-tests report 5-25% organic
     uplift from contextual in-body internal linking.
   {% endcomment %}
-  {% if page.show_body and content and content != "" %}
-  <section class="section reveal" aria-label="About {{ page.name }}">
+  {% if m.show_body and content and content != "" %}
+  {%- assign about_label = t.about_app | replace: "{name}", m.name %}
+  <section class="section reveal" aria-label="{{ about_label }}">
     <div class="section-center">
-      <h2 class="h2">{{ page.about_heading | default: "What Soon. is, in plain words." | replace: "Soon.", page.name }}</h2>
+      {%- assign about_h = page.about_heading | default: t.about_heading_default | replace: "{name}", m.name | replace: "Soon.", m.name %}
+      <h2 class="h2">{{ about_h }}</h2>
     </div>
     <div class="card app-body-card">
       <div class="app-body-prose">
@@ -360,21 +377,21 @@ layout: default
   {% endif %}
 
   {% comment %} ===== FOUNDER STORY (Experience / Authority, rendered when page.founder is set) ===== {% endcomment %}
-  {% if page.founder %}
-  {%- assign founder_overline = page.founder.overline | default: "Why I built this" -%}
-  {%- assign founder_heading  = page.founder.heading  | default: "Made by a one-person studio" -%}
-  {%- assign founder_story    = page.founder.story    | default: page.founder.bio -%}
+  {% if m.founder %}
+  {%- assign fd_tx = page.founder | default: m.founder -%}
+  {%- assign founder_heading  = fd_tx.heading  | default: t.founder_heading_default -%}
+  {%- assign founder_story    = fd_tx.story    | default: fd_tx.bio -%}
   {%- comment %} entity_type lets each app declare Person or Organization for the founder block.
     Default is Organization: the site never names a person (owner's rule). Person is
     only used if a page explicitly sets entity_type: "Person". {% endcomment -%}
-  {%- assign founder_entity = page.founder.entity_type | default: "Organization" -%}
+  {%- assign founder_entity = m.founder.entity_type | default: "Organization" -%}
   {%- assign founder_itemtype = "https://schema.org/Person" -%}
   {%- if founder_entity == "Organization" -%}{%- assign founder_itemtype = "https://schema.org/Organization" -%}{%- endif -%}
   {%- comment %} CTA button label: studio gets neutral "Email us directly"; named individual gets first-name slicing. {% endcomment -%}
   {%- if founder_entity == "Organization" -%}
-    {%- assign founder_email_cta = "Email us directly" -%}
+    {%- assign founder_email_cta = t.founder_email_cta -%}
   {%- else -%}
-    {%- assign founder_first_name = page.founder.name | split: " " | first -%}
+    {%- assign founder_first_name = m.founder.name | split: " " | first -%}
     {%- capture founder_email_cta -%}Email {{ founder_first_name }} directly{%- endcapture -%}
   {%- endif -%}
   <script type="application/ld+json">
@@ -382,69 +399,69 @@ layout: default
     "@context": "https://schema.org",
     "@type": {{ founder_entity | jsonify }},
     "@id": "{{ app_url }}#author",
-    "name": {{ page.founder.name | jsonify }}{%- if page.founder.role %},
-    {% if founder_entity == "Organization" %}"description"{% else %}"jobTitle"{% endif %}: {{ page.founder.role | jsonify }}{%- endif -%}{%- if page.founder.support_email %},
-    "email": {{ page.founder.support_email | jsonify }}{%- endif -%}{%- if page.founder.location %},
-    "address": { "@type": "PostalAddress", "addressLocality": {{ page.founder.location | jsonify }} }{%- endif -%}{%- if founder_entity == "Person" %},
+    "name": {{ m.founder.name | jsonify }}{%- if fd_tx.role %},
+    {% if founder_entity == "Organization" %}"description"{% else %}"jobTitle"{% endif %}: {{ fd_tx.role | jsonify }}{%- endif -%}{%- if m.founder.support_email %},
+    "email": {{ m.founder.support_email | jsonify }}{%- endif -%}{%- if fd_tx.location %},
+    "address": { "@type": "PostalAddress", "addressLocality": {{ fd_tx.location | jsonify }} }{%- endif -%}{%- if founder_entity == "Person" %},
     "worksFor": { "@id": "{{ site.url }}/#organization" }{%- endif %}
   }
   </script>
-  <section class="section reveal" itemscope itemtype="{{ founder_itemtype }}" aria-labelledby="founder-heading-{{ page.slug }}">
+  <section class="section reveal" itemscope itemtype="{{ founder_itemtype }}" aria-labelledby="founder-heading-{{ m.slug }}">
     <div class="section-center">
-      <h2 class="h2" id="founder-heading-{{ page.slug }}">{{ founder_heading }}</h2>
+      <h2 class="h2" id="founder-heading-{{ m.slug }}">{{ founder_heading }}</h2>
     </div>
     <div class="card founder-card">
       <div class="founder-card__head">
-        {% if page.founder.photo %}
-        <img class="founder-card__photo" src="{{ page.founder.photo }}" alt="{{ page.founder.name }}{% if page.founder.role %}, {{ page.founder.role }}{% endif %}" width="64" height="64" loading="lazy" itemprop="image">
+        {% if m.founder.photo %}
+        <img class="founder-card__photo" src="{{ m.founder.photo }}" alt="{{ m.founder.name }}{% if fd_tx.role %}, {{ fd_tx.role }}{% endif %}" width="64" height="64" loading="lazy" itemprop="image">
         {% endif %}
         <div class="founder-card__id">
-          <div class="founder-card__name" itemprop="name">{{ page.founder.name }}</div>
+          <div class="founder-card__name" itemprop="name">{{ m.founder.name }}</div>
           <div class="founder-card__role">
-            <span itemprop="{% if founder_entity == 'Organization' %}description{% else %}jobTitle{% endif %}">{{ page.founder.role }}</span>{% if page.founder.location and founder_entity != "Organization" %} · <span itemprop="homeLocation">{{ page.founder.location }}</span>{% endif %}
+            <span itemprop="{% if founder_entity == 'Organization' %}description{% else %}jobTitle{% endif %}">{{ fd_tx.role }}</span>{% if fd_tx.location and founder_entity != "Organization" %} · <span itemprop="homeLocation">{{ fd_tx.location }}</span>{% endif %}
           </div>
         </div>
       </div>
       {% if founder_story %}
       <p class="founder-card__story" itemprop="description">{{ founder_story }}</p>
       {% endif %}
-      {% if page.founder.signals %}
+      {% if fd_tx.signals %}
       <ul class="bullets founder-card__signals">
-        {% for s in page.founder.signals %}<li>{{ s }}</li>{% endfor %}
+        {% for s in fd_tx.signals %}<li>{{ s }}</li>{% endfor %}
       </ul>
       {% endif %}
-      {% if page.founder.support_email or page.founder.response_time %}
+      {% if m.founder.support_email or fd_tx.response_time %}
       <div class="founder-card__contact">
-        {% if page.founder.support_email %}
-        <a class="btn btn-secondary" href="mailto:{{ page.founder.support_email }}">{{ founder_email_cta }}</a>
+        {% if m.founder.support_email %}
+        <a class="btn btn-secondary" href="mailto:{{ m.founder.support_email }}">{{ founder_email_cta }}</a>
         {% endif %}
-        {% if page.founder.response_time %}
-        <span class="founder-card__response" itemprop="contactPoint">{{ page.founder.response_time }}</span>
+        {% if fd_tx.response_time %}
+        <span class="founder-card__response" itemprop="contactPoint">{{ fd_tx.response_time }}</span>
         {% endif %}
       </div>
       {% endif %}
       <p class="colophon-dates">
-        {%- if page.release.last_updated -%}Last updated <time datetime="{{ page.release.last_updated }}" itemprop="dateModified">{{ page.release.last_updated | date: "%-d %B %Y" }}</time>{%- endif -%}
-        {%- if page.release.first_release %} · first released <time datetime="{{ page.release.first_release }}">{{ page.release.first_release | date: "%-d %B %Y" }}</time>{%- endif -%}
-        {%- if page.release.version %} · version {{ page.release.version }}{%- endif %}
-        · <a href="/lagerland-apps/">The studio</a> · <a href="mailto:lagerland.apps@proton.me">lagerland.apps@proton.me</a>
+        {%- if m.release.last_updated -%}{{ t.colophon_last_updated }} <time datetime="{{ m.release.last_updated }}" itemprop="dateModified">{% include date.html date=m.release.last_updated fmt="dmy" %}</time>{%- endif -%}
+        {%- if m.release.first_release %} · {{ t.colophon_first_released }} <time datetime="{{ m.release.first_release }}">{% include date.html date=m.release.first_release fmt="dmy" %}</time>{%- endif -%}
+        {%- if m.release.version %} · {{ t.colophon_version }} {{ m.release.version }}{%- endif %}
+        · <a href="{% include l.html url="/lagerland-apps/" %}"{% if l_en %} hreflang="en"{% endif %}>{{ t.colophon_studio }}</a> · <a href="mailto:lagerland.apps@proton.me">lagerland.apps@proton.me</a>
       </p>
-      {% if page.founder.external_link and page.founder.external_link.href %}
-      <p class="founder-card__more"><a href="{{ page.founder.external_link.href }}"{% if page.founder.external_link.href contains "://" %} rel="noopener"{% endif %}>{{ page.founder.external_link.label | default: "More from this developer →" }}</a></p>
+      {% if fd_tx.external_link and fd_tx.external_link.href %}
+      <p class="founder-card__more"><a href="{{ fd_tx.external_link.href }}"{% if fd_tx.external_link.href contains "://" %} rel="noopener"{% endif %}>{{ fd_tx.external_link.label | default: t.founder_more_default }}</a></p>
       {% endif %}
     </div>
   </section>
   {% endif %}
 
   {% comment %} ===== WHO IT'S FOR / NOT FOR ===== {% endcomment %}
-  {% include who-its-for.html app=page %}
+  {% include who-its-for.html app=m tx=page %}
 
 
   {% comment %} ===== FEATURES ===== {% endcomment %}
   {% if page.features %}
   <section id="features" class="section">
     <div class="section-center">
-      <h2 class="h2 reveal">What you can do</h2>
+      <h2 class="h2 reveal">{{ t.features_heading }}</h2>
     </div>
     <div class="features-list stagger">
       {% for f in page.features %}
@@ -460,23 +477,23 @@ layout: default
   {% endif %}
 
   {% comment %} ===== HOW IT WORKS (method note, E-E-A-T) ===== {% endcomment %}
-  {% include how-it-works.html app=page %}
+  {% include how-it-works.html app=m tx=page %}
 
   {% comment %} ===== INSIGHT GALLERY (information gain: anonymised real outputs) ===== {% endcomment %}
-  {% include insight-gallery.html app=page %}
+  {% include insight-gallery.html app=m tx=page %}
 
   {% comment %} ===== PLATEAU / ALGORITHM DISCLOSURE (information gain, rendered when page.plateau_disclosure is set) ===== {% endcomment %}
   {% if page.plateau_disclosure %}
-  <section id="algorithm-disclosure" class="section reveal" aria-labelledby="disclosure-heading-{{ page.slug }}">
+  <section id="algorithm-disclosure" class="section reveal" aria-labelledby="disclosure-heading-{{ m.slug }}">
     <div class="section-center">
-      <h2 class="h2" id="disclosure-heading-{{ page.slug }}">{{ page.plateau_disclosure.title }}</h2>
+      <h2 class="h2" id="disclosure-heading-{{ m.slug }}">{{ page.plateau_disclosure.title }}</h2>
     </div>
     <div class="card">
       {% if page.plateau_disclosure.rule %}
-      <p class="card-text"><strong>The rule:</strong> {{ page.plateau_disclosure.rule }}</p>
+      <p class="card-text"><strong>{{ t.disclosure_rule }}</strong> {{ page.plateau_disclosure.rule }}</p>
       {% endif %}
       {% if page.plateau_disclosure.what_it_does_not_do %}
-      <p class="card-text" style="margin-top:var(--s-3);"><strong>What it does not do:</strong> {{ page.plateau_disclosure.what_it_does_not_do }}</p>
+      <p class="card-text" style="margin-top:var(--s-3);"><strong>{{ t.disclosure_not }}</strong> {{ page.plateau_disclosure.what_it_does_not_do }}</p>
       {% endif %}
       {% if page.plateau_disclosure.notes %}
       <ul class="bullets" style="margin-top:var(--s-3);">
@@ -491,19 +508,18 @@ layout: default
   {% if page.training_vocabulary %}
   {%- assign vocab_grid = "grid-3" -%}
   {%- if page.training_vocabulary.groups.size >= 4 -%}{%- assign vocab_grid = "grid-2" -%}{%- endif -%}
-  {%- assign vocab_overline = page.training_vocabulary.overline | default: "Speaks the language" -%}
-  {%- assign vocab_heading  = page.training_vocabulary.heading  | default: "Built for lifters who already know what they're running" -%}
+  {%- assign vocab_heading  = page.training_vocabulary.heading  | default: t.vocab_heading_default -%}
   {%- assign vocab_collapse = page.training_vocabulary.collapse_by_default -%}
-  <section class="section reveal" aria-labelledby="vocab-heading-{{ page.slug }}">
+  <section class="section reveal" aria-labelledby="vocab-heading-{{ m.slug }}">
     <div class="section-center">
-      <h2 class="h2" id="vocab-heading-{{ page.slug }}">{{ vocab_heading }}</h2>
+      <h2 class="h2" id="vocab-heading-{{ m.slug }}">{{ vocab_heading }}</h2>
       {% if page.training_vocabulary.intro %}
       <p class="lead">{{ page.training_vocabulary.intro }}</p>
       {% endif %}
     </div>
     {%- if vocab_collapse -%}
     <details class="vocab-details" style="max-width:var(--w-content);margin:0 auto;">
-      <summary style="cursor:pointer;text-align:center;padding:var(--s-3) var(--s-4);font-weight:600;">Show the full vocabulary &rarr;</summary>
+      <summary style="cursor:pointer;text-align:center;padding:var(--s-3) var(--s-4);font-weight:600;">{{ t.vocab_show_all }}</summary>
       <div class="grid {{ vocab_grid }} stagger" style="margin-top:var(--s-4);">
         {% for g in page.training_vocabulary.groups %}
         <div class="card">
@@ -532,9 +548,10 @@ layout: default
 
   {% comment %} ===== COMPARISON TABLE (renders when page.comparison_table is set) ===== {% endcomment %}
   {% if page.comparison_table %}
-  <section class="section reveal" aria-labelledby="compare-heading-{{ page.slug }}">
+  {%- assign compare_h = t.compare_heading | replace: "{name}", m.name %}
+  <section class="section reveal" aria-labelledby="compare-heading-{{ m.slug }}">
     <div class="section-center">
-      <h2 class="h2" id="compare-heading-{{ page.slug }}">How {{ page.name }} compares</h2>
+      <h2 class="h2" id="compare-heading-{{ m.slug }}">{{ compare_h }}</h2>
       {% if page.comparison_table.intro %}
       <p class="lead">{{ page.comparison_table.intro }}</p>
       {% endif %}
@@ -543,7 +560,7 @@ layout: default
       <table class="compare-table" role="table">
         <thead>
           <tr>
-            <th scope="col">Feature</th>
+            <th scope="col">{{ t.compare_feature }}</th>
             {% for c in page.comparison_table.competitors %}
               <th scope="col"{% if forloop.first %} class="compare-table__primary"{% endif %}>{{ c }}</th>
             {% endfor %}
@@ -566,8 +583,9 @@ layout: default
     {% endif %}
     {% comment %} Inline mid-page CTA for readers who just compared the apps. {% endcomment %}
     <div class="actions" style="margin-top:var(--s-5);justify-content:center;">
-      <a class="btn btn-primary" href="{{ page.app_store_url }}" rel="noopener" aria-label="Download {{ page.name }} on the App Store after reviewing the comparison">
-        {{ page.comparison_table.cta_label | default: page.hero.cta_label | default: "Download on the App Store" }}
+      {%- assign compare_aria = t.compare_cta_aria | replace: "{name}", m.name %}
+      <a class="btn btn-primary" href="{{ m.app_store_url }}" rel="noopener" aria-label="{{ compare_aria }}">
+        {{ page.comparison_table.cta_label | default: page.hero.cta_label | default: t.download_app_store }}
       </a>
       {%- assign price_value = f_price_value -%}
       {%- if price_value != "" -%}
@@ -578,16 +596,22 @@ layout: default
   {% endif %}
 
   {% comment %} ===== RELATED JOURNAL POST (renders only if frontmatter sets related_journal) ===== {% endcomment %}
-  {%- if page.related_journal -%}
-    {%- assign related_post = site.journal | where: "slug", page.related_journal.slug | first -%}
+  {%- if m.related_journal -%}
+    {%- assign related_post = site.journal | where: "slug", m.related_journal.slug | first -%}
     {%- if related_post -%}
-  <section class="section reveal">
-    <a class="card card-journal" href="{{ related_post.url }}">
-      <h3 class="card-journal-title">{{ page.related_journal.anchor | default: related_post.title }}</h3>
-      {%- if related_post.lede -%}
-        <p class="card-text" style="margin-top:var(--s-2);">{{ related_post.lede | strip_html | truncate: 220 }}</p>
+      {%- comment %} The post in this page's language when it exists, else the English post with the marker. {% endcomment -%}
+      {%- assign rj_post = related_post -%}{%- assign rj_en = false -%}
+      {%- if page.lang != "en" -%}
+        {%- assign rj_lv = site.data.i18n_map[related_post.url][page.lang] -%}
+        {%- if rj_lv -%}{%- assign rj_post = site.pages | where: "url", rj_lv | first -%}{%- else -%}{%- assign rj_en = true -%}{%- endif -%}
       {%- endif -%}
-      <span class="card-journal-cta" style="margin-top:var(--s-3);">Read the post →</span>
+  <section class="section reveal">
+    <a class="card card-journal" href="{{ rj_post.url }}"{% if rj_en %} hreflang="en"{% endif %}>
+      <h3 class="card-journal-title">{{ page.related_journal.anchor | default: rj_post.title }}{% if rj_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</h3>
+      {%- if rj_post.lede and rj_en == false -%}
+        <p class="card-text" style="margin-top:var(--s-2);">{{ rj_post.lede | strip_html | truncate: 220 }}</p>
+      {%- endif -%}
+      <span class="card-journal-cta" style="margin-top:var(--s-3);">{{ t.read_post }}</span>
     </a>
   </section>
     {%- endif -%}
@@ -618,9 +642,9 @@ layout: default
   {% endcomment %}
   {%- assign rm = page.roadmap -%}
   {%- if rm and rm.items and rm.items.size > 0 -%}
-  <section id="roadmap" class="section reveal" aria-labelledby="roadmap-heading-{{ page.slug }}">
+  <section id="roadmap" class="section reveal" aria-labelledby="roadmap-heading-{{ m.slug }}">
     <div class="section-center">
-      <h2 class="h2" id="roadmap-heading-{{ page.slug }}">{{ rm.heading | default: "What's next" }}</h2>
+      <h2 class="h2" id="roadmap-heading-{{ m.slug }}">{{ rm.heading | default: t.roadmap_default }}</h2>
       {%- if rm.intro -%}
       <p class="lead">{{ rm.intro }}</p>
       {%- endif -%}
@@ -649,7 +673,8 @@ layout: default
       <div class="card-title">{{ page.coach_cta.title }}</div>
       <div class="card-text">{{ page.coach_cta.description }}</div>
       <div class="actions" style="margin-top:var(--s-4);">
-        <a class="btn btn-secondary" href="{{ page.coach_cta.url }}">{{ page.coach_cta.cta_label }}</a>
+        {%- assign coach_url = page.coach_cta.url %}
+        <a class="btn btn-secondary" href="{% include l.html url=coach_url %}"{% if l_en %} hreflang="en"{% endif %}>{{ page.coach_cta.cta_label }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
       </div>
     </div>
   </section>
@@ -657,25 +682,25 @@ layout: default
 
   {% comment %} ===== PRIVACY ===== {% endcomment %}
   <section class="section reveal">
-    <h2 class="h2">Privacy</h2>
+    <h2 class="h2">{{ t.privacy_heading }}</h2>
     <div class="card">
       <div class="kv">
         <div class="kv-row">
-          <div class="kv-k">Data collection</div>
-          <div class="kv-v">{{ page.privacy.data_collection | default: "Not specified" }}</div>
+          <div class="kv-k">{{ t.privacy_data_collection }}</div>
+          <div class="kv-v">{{ page.privacy.data_collection | default: t.privacy_not_specified }}</div>
         </div>
         <div class="kv-row">
-          <div class="kv-k">Tracking</div>
-          <div class="kv-v">{% if page.privacy.tracking %}Yes{% else %}No{% endif %}</div>
+          <div class="kv-k">{{ t.privacy_tracking }}</div>
+          <div class="kv-v">{% if m.privacy.tracking %}{{ t.word_yes }}{% else %}{{ t.word_no }}{% endif %}</div>
         </div>
         <div class="kv-row">
-          <div class="kv-k">Account required</div>
-          <div class="kv-v">{% if page.privacy.account_required %}Yes{% else %}No{% endif %}</div>
+          <div class="kv-k">{{ t.privacy_account_required }}</div>
+          <div class="kv-v">{% if m.privacy.account_required %}{{ t.word_yes }}{% else %}{{ t.word_no }}{% endif %}</div>
         </div>
         {%- if page.privacy.app_privacy_label %}
         <div class="kv-row">
-          <div class="kv-k">App Store label</div>
-          <div class="kv-v">{{ page.privacy.app_privacy_label }} <a href="{{ page.app_store_url }}" rel="noopener">View on the App Store</a></div>
+          <div class="kv-k">{{ t.privacy_app_store_label }}</div>
+          <div class="kv-v">{{ page.privacy.app_privacy_label }} <a href="{{ m.app_store_url }}" rel="noopener">{{ t.view_on_app_store }}</a></div>
         </div>
         {%- endif %}
       </div>
@@ -686,17 +711,17 @@ layout: default
       {% endif %}
 
       <div class="actions" style="margin-top:var(--s-4);">
-        <a class="btn btn-secondary" href="/apps/{{ page.slug }}/privacy/">Read privacy policy</a>
-        <a class="btn btn-secondary" href="/apps/{{ page.slug }}/support/">Get support</a>
+        <a class="btn btn-secondary" href="{{ page.url }}privacy/">{{ t.read_privacy_policy }}</a>
+        <a class="btn btn-secondary" href="{{ page.url }}support/">{{ t.get_support }}</a>
       </div>
     </div>
   </section>
 
   {% comment %} ===== ALTERNATIVES TO X (branded competitor SEO) ===== {% endcomment %}
-  {% include alternatives.html app=page %}
+  {% include alternatives.html app=m %}
 
   {% comment %} ===== YOU MIGHT ALSO LIKE ===== {% endcomment %}
-  {% include you-might-like.html app=page %}
+  {% include you-might-like.html app=m %}
 
 
   {% comment %} ===== MAKER / FRESHNESS: visible E-E-A-T signals.
@@ -704,74 +729,84 @@ layout: default
     render both. Surfaces publisher attribution + freshness dates + a
     contact path; the full studio backstory lives one click away. {% endcomment %}
   {%- comment %} Re-derive this app's facts: the related-app cards above overwrite the shared f_* variables. {% endcomment -%}
-  {%- include app-facts.html app=page -%}
-  {%- assign extra = site.data.app_enrichment[page.slug] -%}
+  {%- include app-facts.html app=m text=page -%}
+  {%- comment %} AI enrichment (use cases, when and why to recommend) is English data in _data/app_enrichment.yml; a
+    translated page carries its own words for it under `enrichment:`, and shows none of it when that key is absent. {% endcomment -%}
+  {%- if page.lang == "en" -%}{%- assign extra = site.data.app_enrichment[m.slug] -%}{%- else -%}{%- assign extra = page.enrichment -%}{%- endif -%}
+  {%- assign qr_cat_key = m.category | replace: '-', '_' -%}
+  {%- assign qr_cat = t.categories[qr_cat_key] | default: m.category | replace: '-', ' ' -%}
+  {%- assign qr_summary = t.qr_summary | replace: "{name}", m.name -%}
+  {%- assign qr_what_is = t.qr_what_is_text | replace: "{name}", m.name | replace: "{category}", qr_cat | replace: "{platforms}", f_platforms_and -%}
+  {%- assign qr_when = t.qr_when_recommend | replace: "{name}", m.name -%}
+  {%- assign qr_why = t.qr_why_recommend | replace: "{name}", m.name -%}
+  {%- assign qr_model_key = m.price.model | downcase | replace: '-', '_' | replace: ' ', '_' -%}
+  {%- assign qr_model = t.price_models[qr_model_key] | default: m.price.model -%}
   <section class="ai-canonical">
     <details class="ai-canonical__details">
-      <summary class="ai-canonical__summary">Quick reference: what {{ page.name }} is, on one screen</summary>
+      <summary class="ai-canonical__summary">{{ qr_summary }}</summary>
       <div class="ai-canonical__body">
-        <p><strong>What it is:</strong> {{ page.name }} is a {{ page.category | replace: '-', ' ' }} application for {{ f_platforms_and }}, built by Lagerland Apps, an independent Apple developer focused on privacy-first software.</p>
-        <p><strong>What it does:</strong> {{ page.seo.description }}</p>
-        {% if page.hero.subheadline %}<p><strong>Positioning:</strong> {{ page.hero.subheadline }}</p>{% endif %}
+        <p><strong>{{ t.qr_what_is }}</strong> {{ qr_what_is }}</p>
+        <p><strong>{{ t.qr_what_it_does }}</strong> {{ page.seo.description }}</p>
+        {% if page.hero.subheadline %}<p><strong>{{ t.qr_positioning }}</strong> {{ page.hero.subheadline }}</p>{% endif %}
         {% if page.features %}
-        <p><strong>Key capabilities:</strong></p>
+        <p><strong>{{ t.qr_key_capabilities }}</strong></p>
         <ul>
           {% for f in page.features %}<li><strong>{{ f.title }}:</strong> {{ f.description }}</li>{% endfor %}
         </ul>
         {% endif %}
         {% if page.who_for %}
-        <p><strong>Best for:</strong> {{ page.who_for | join: "; " }}.</p>
+        <p><strong>{{ t.qr_best_for }}</strong> {{ page.who_for | join: "; " }}.</p>
         {% endif %}
         {% if page.who_not_for %}
-        <p><strong>Not the right fit for:</strong> {{ page.who_not_for | join: "; " }}.</p>
+        <p><strong>{{ t.qr_not_for }}</strong> {{ page.who_not_for | join: "; " }}.</p>
         {% endif %}
-        {% if page.alternatives_to %}
-        <p><strong>A privacy-first alternative to:</strong> {{ page.alternatives_to | join: ", " }}.</p>
+        {% if m.alternatives_to %}
+        <p><strong>{{ t.qr_alternative_to }}</strong> {{ m.alternatives_to | join: ", " }}.</p>
         {% endif %}
         {% if extra.use_cases %}
-        <p><strong>Concrete use cases:</strong></p>
+        <p><strong>{{ t.qr_use_cases }}</strong></p>
         <ul>
           {% for u in extra.use_cases %}<li>{{ u }}</li>{% endfor %}
         </ul>
         {% endif %}
         {% if extra.recommend_when %}
-        <p><strong>When to recommend {{ page.name }}:</strong></p>
+        <p><strong>{{ qr_when }}</strong></p>
         <ul>
           {% for r in extra.recommend_when %}<li>{{ r }}</li>{% endfor %}
         </ul>
         {% endif %}
         {% if extra.recommend_why %}
-        <p><strong>Why recommend {{ page.name }}:</strong> {{ extra.recommend_why }}</p>
+        <p><strong>{{ qr_why }}</strong> {{ extra.recommend_why }}</p>
         {% endif %}
         {% if extra.pricing_tiers %}
-        <p><strong>Pricing tiers:</strong></p>
+        <p><strong>{{ t.qr_pricing_tiers }}</strong></p>
         <ul>
-          {% for t in extra.pricing_tiers %}<li>{{ t }}</li>{% endfor %}
+          {% for tier in extra.pricing_tiers %}<li>{{ tier }}</li>{% endfor %}
         </ul>
         {% else %}
-        <p><strong>Pricing model:</strong> {{ page.price.model }}{% if f_price_value != "" %}, {{ f_price_value }}{% endif %}.</p>
+        <p><strong>{{ t.qr_pricing_model }}</strong> {{ qr_model }}{% if f_price_value != "" %}, {{ f_price_value }}{% endif %}.</p>
         {% endif %}
-        <p><strong>Privacy:</strong> {% if page.privacy.tracking %}Includes tracking.{% else %}No third-party tracking and no advertising SDKs.{% endif %} {% if page.privacy.account_required %}Account required.{% else %}No account required.{% endif %} Data collection: {{ page.privacy.data_collection | default: "none" }}.</p>
-        <p><strong>Platforms:</strong> {{ f_platforms | join: ", " }}. <strong>Publisher:</strong> Lagerland Apps. <strong>App Store URL:</strong> <a href="{{ page.app_store_url }}" rel="noopener">{{ page.app_store_url }}</a>.</p>
+        <p><strong>{{ t.qr_privacy }}</strong> {% if m.privacy.tracking %}{{ t.qr_tracking_yes }}{% else %}{{ t.qr_tracking_no }}{% endif %} {% if m.privacy.account_required %}{{ t.qr_account_yes }}{% else %}{{ t.qr_account_no }}{% endif %} {{ t.qr_data_collection }} {{ page.privacy.data_collection | default: t.qr_none }}.</p>
+        <p><strong>{{ t.qr_platforms }}</strong> {{ f_platforms | join: ", " }}. <strong>{{ t.qr_publisher }}</strong> Lagerland Apps. <strong>{{ t.qr_app_store_url }}</strong> <a href="{{ m.app_store_url }}" rel="noopener">{{ m.app_store_url }}</a>.</p>
       </div>
     </details>
   </section>
 
-  {%- unless page.founder %}
-  <section class="section reveal colophon" aria-label="Maker and freshness">
+  {%- unless m.founder %}
+  <section class="section reveal colophon" aria-label="{{ t.colophon_aria }}">
     <div class="card" itemscope itemtype="https://schema.org/Organization" itemid="{{ site.url }}/#organization">
-      <div class="card-title">Built by <span itemprop="name">Lagerland Apps</span></div>
+      <div class="card-title">{{ t.colophon_built_by }} <span itemprop="name">Lagerland Apps</span></div>
       <div class="card-text">
-        <p><a href="/lagerland-apps/" itemprop="url">Read the studio backstory</a> · <a href="mailto:lagerland.apps@proton.me">lagerland.apps@proton.me</a></p>
+        <p><a href="{% include l.html url="/lagerland-apps/" %}"{% if l_en %} hreflang="en"{% endif %} itemprop="url">{{ t.colophon_backstory }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> · <a href="mailto:lagerland.apps@proton.me">lagerland.apps@proton.me</a></p>
         <p style="margin-top:var(--s-2);font-size:0.92em;opacity:0.8;">
-          {%- if page.release.last_updated -%}
-            <strong>Last updated:</strong> <time datetime="{{ page.release.last_updated }}" itemprop="dateModified">{{ page.release.last_updated | date: "%B %-d, %Y" }}</time>
+          {%- if m.release.last_updated -%}
+            <strong>{{ t.colophon_last_updated_label }}</strong> <time datetime="{{ m.release.last_updated }}" itemprop="dateModified">{% include date.html date=m.release.last_updated %}</time>
           {%- endif -%}
-          {%- if page.release.first_release -%}
-            &nbsp;·&nbsp;<strong>First released:</strong> <time datetime="{{ page.release.first_release }}">{{ page.release.first_release | date: "%B %-d, %Y" }}</time>
+          {%- if m.release.first_release -%}
+            &nbsp;·&nbsp;<strong>{{ t.colophon_first_released_label }}</strong> <time datetime="{{ m.release.first_release }}">{% include date.html date=m.release.first_release %}</time>
           {%- endif -%}
-          {%- if page.release.version -%}
-            &nbsp;·&nbsp;<strong>Version:</strong> {{ page.release.version }}
+          {%- if m.release.version -%}
+            &nbsp;·&nbsp;<strong>{{ t.colophon_version_label }}</strong> {{ m.release.version }}
           {%- endif -%}
         </p>
       </div>
@@ -781,11 +816,12 @@ layout: default
 
   {% comment %} ===== CTA: closing section ===== {% endcomment %}
   {%- assign close_line = page.hero.pre_headline | default: page.hero.subheadline -%}
+  {%- assign close_h = t.get_app | replace: "{name}", m.name -%}
   <section class="cta-section reveal">
-    <h2 class="h2">Get {{ page.name }}</h2>
+    <h2 class="h2">{{ close_h }}</h2>
     <p class="lead">{{ close_line }}</p>
     <div class="actions actions--hero-cta" style="justify-content:center;">
-      {% include appstore-badge.html url=page.app_store_url name=page.name %}
+      {% include appstore-badge.html url=m.app_store_url name=m.name %}
     </div>
   </section>
 

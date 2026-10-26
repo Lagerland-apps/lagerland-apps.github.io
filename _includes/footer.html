@@ -1,80 +1,106 @@
+{%- comment %} Every visible word comes from t (_data/i18n/<lang>.yml). Links go to the page language's version when it
+  exists, otherwise to English with hreflang="en" and the english_marker label. On a translated page the app columns
+  list only apps that have a page in that language (TRANSLATION.md 12.1). {% endcomment -%}
 <footer class="footer">
     <div class="footer-hero">
       <p class="footer-wordmark">Lagerland Apps</p>
-      <p class="footer-tagline">An independent Apple studio, one person in Finland. Every app made, priced and answered for by the same hands since 2025.</p>
+      <p class="footer-tagline">{{ t.footer_tagline }}</p>
       <span class="badge-privacy">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">
           <path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z"/>
           <path d="m9 12 2 2 4-4"/>
         </svg>
-        No tracking in any app
+        {{ t.footer_no_tracking }}
       </span>
     </div>
     <div class="footer-grid">
       <div class="footer-col">
-        <h4>The studio</h4>
-        <p class="small">Privacy-first iOS &amp; macOS apps from an independent Apple developer. None of them show ads, track you, or ask you to make an account.</p>
-        <p class="small"><a href="/lagerland-apps/">About the developer</a></p>
+        <h4>{{ t.footer_studio_heading }}</h4>
+        <p class="small">{{ t.footer_studio_text }}</p>
+        <p class="small"><a href="{% include l.html url="/lagerland-apps/" %}"{% if l_en %} hreflang="en"{% endif %}>{{ t.footer_about_developer }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a></p>
       </div>
 
       {%- assign live_apps = site.apps | where: "status", "live" -%}
 
       <div class="footer-col">
-        <h4>Health &amp; planning</h4>
+        <h4>{{ t.footer_health_planning }}</h4>
         {%- assign cats = 'health,fitness,productivity,lifestyle' | split: ',' -%}
         {%- for cat in cats -%}
           {%- assign col_apps = live_apps | where: "category", cat -%}
           {%- for app in col_apps -%}
-            <a href="{{ app.url }}">{{ app.name }}</a>
+            {%- include tx-app.html app=app -%}
+            {%- unless tx_en %}<a href="{{ tx_app.url }}">{{ app.name }}</a>{% endunless -%}
           {%- endfor -%}
         {%- endfor -%}
         <br>
-        <h4 style="margin-top:var(--s-4);">Money</h4>
+        <h4 style="margin-top:var(--s-4);">{{ t.footer_money }}</h4>
         {%- assign col_apps = live_apps | where: "category", "finance" -%}
-        {%- for app in col_apps -%}<a href="{{ app.url }}">{{ app.name }}</a>{%- endfor -%}
+        {%- for app in col_apps -%}{%- include tx-app.html app=app -%}{%- unless tx_en %}<a href="{{ tx_app.url }}">{{ app.name }}</a>{% endunless -%}{%- endfor -%}
       </div>
 
       <div class="footer-col">
-        <h4>Developer tools</h4>
+        <h4>{{ t.footer_developer_tools }}</h4>
         {%- assign cats = 'developer-tools,business,graphics' | split: ',' -%}
         {%- for cat in cats -%}
           {%- assign col_apps = live_apps | where: "category", cat -%}
           {%- for app in col_apps -%}
-            <a href="{{ app.url }}">{{ app.name }}</a>
+            {%- include tx-app.html app=app -%}
+            {%- unless tx_en %}<a href="{{ tx_app.url }}">{{ app.name }}</a>{% endunless -%}
           {%- endfor -%}
         {%- endfor -%}
         <br>
-        <h4 style="margin-top:var(--s-4);">Reading, games, utilities</h4>
+        <h4 style="margin-top:var(--s-4);">{{ t.footer_reading_games }}</h4>
         {%- assign cats = 'education,books,games,utilities' | split: ',' -%}
         {%- for cat in cats -%}
           {%- assign col_apps = live_apps | where: "category", cat -%}
           {%- for app in col_apps -%}
-            <a href="{{ app.url }}">{{ app.name }}</a>
+            {%- include tx-app.html app=app -%}
+            {%- unless tx_en %}<a href="{{ tx_app.url }}">{{ app.name }}</a>{% endunless -%}
           {%- endfor -%}
         {%- endfor -%}
       </div>
 
       <div class="footer-col">
-        <h4>Browse</h4>
-        <a href="/apps/">All apps</a>
-        <a href="/for/">Who it's for</a>
-        <a href="/for/shift-workers/">For shift workers</a>
-        <a href="/for/apple-health-power-users/">For Apple Health users</a>
-        <a href="/for/indie-ios-developers/">For indie iOS devs</a>
-        <a href="/for/calm-productivity/">Calm productivity</a>
-        <a href="/alternatives/">Alternatives</a>
-        <a href="/transparency/">Transparency</a>
+        <h4>{{ t.footer_browse }}</h4>
+        {%- assign ft_links = "/apps/|footer_all_apps,/for/|footer_who_for,/for/shift-workers/|footer_for_shift_workers,/for/apple-health-power-users/|footer_for_health_users,/for/indie-ios-developers/|footer_for_indie_devs,/for/calm-productivity/|footer_calm_productivity,/alternatives/|footer_alternatives,/transparency/|footer_transparency" | split: "," -%}
+        {%- for ft_item in ft_links -%}
+        {%- assign ft_parts = ft_item | split: "|" -%}{%- assign ft_url = ft_parts[0] -%}{%- assign ft_key = ft_parts[1] %}
+        <a href="{% include l.html url=ft_url %}"{% if l_en %} hreflang="en"{% endif %}>{{ t[ft_key] }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+        {%- endfor %}
         <br>
-        <h4 style="margin-top:var(--s-4);">Company</h4>
-        <a href="/lagerland-apps/">About</a>
-        <a href="/support/">Support</a>
-        <a href="/transparency/">Privacy &amp; transparency</a>
-        <a href="mailto:lagerland.apps@proton.me">Email us</a>
-        <a href="/apps/gymlogger-x/coaches/">For Coaches</a>
+        <h4 style="margin-top:var(--s-4);">{{ t.footer_company }}</h4>
+        {%- assign ft_links = "/lagerland-apps/|footer_about,/support/|footer_support,/transparency/|footer_privacy_transparency" | split: "," -%}
+        {%- for ft_item in ft_links -%}
+        {%- assign ft_parts = ft_item | split: "|" -%}{%- assign ft_url = ft_parts[0] -%}{%- assign ft_key = ft_parts[1] %}
+        <a href="{% include l.html url=ft_url %}"{% if l_en %} hreflang="en"{% endif %}>{{ t[ft_key] }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+        {%- endfor %}
+        <a href="mailto:lagerland.apps@proton.me">{{ t.footer_email_us }}</a>
+        <a href="{% include l.html url="/apps/gymlogger-x/coaches/" %}"{% if l_en %} hreflang="en"{% endif %}>{{ t.footer_for_coaches }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
       </div>
     </div>
+    {%- comment %} Language links: every live language, to this page's version in it when there is one, otherwise to
+      that language's home. Renders nothing while English is the only live language. {% endcomment -%}
+    {%- assign ft_versions = site.data.i18n_map[page.ref] | default: site.data.i18n_map[page.url] -%}
+    {%- assign ft_langs = "" | split: "" -%}
+    {%- for _lp in site.data.locales -%}{%- assign _lc = _lp[0] -%}{%- if _lp[1].live and _lp[0] != "en" -%}{%- assign ft_langs = ft_langs | push: _lp[0] -%}{%- endif -%}{%- endfor -%}
+    {%- if ft_langs.size > 0 %}
+    <nav class="footer-langs" aria-label="{{ t.lang_switch_label }}">
+      {%- for _lp in site.data.locales -%}{%- assign _lc = _lp[0] -%}
+        {%- if _lp[1].live -%}
+          {%- if _lp[0] == "en" -%}{%- assign _lhome = "/" -%}{%- else -%}{%- assign _lhome = "/" | append: _lp[0] | append: "/" -%}{%- endif -%}
+          {%- assign _lv = ft_versions[_lc] | default: _lhome -%}
+          {%- if _lp[0] == page.lang %}
+      <span lang="{{ _lp[1].html_lang }}" aria-current="true">{{ _lp[1].native_name }}</span>
+          {%- else %}
+      <a href="{{ _lv }}" hreflang="{{ _lp[1].html_lang }}" lang="{{ _lp[1].html_lang }}">{{ _lp[1].native_name }}</a>
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor %}
+    </nav>
+    {%- endif %}
+    {%- assign ft_year = "now" | date: "%Y" -%}{%- assign ft_copy = t.footer_copyright | replace: "{year}", ft_year %}
     <div class="footer-meta">
-      <span>&copy; {{ "now" | date: "%Y" }} Lagerland Apps · All rights reserved</span>
-      <span>Issued at 63°N · made on a MacBook</span>
+      <span>{{ ft_copy }}</span>
+      <span>{{ t.footer_issued }}</span>
     </div>
 </footer>

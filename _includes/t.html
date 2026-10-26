@@ -1,0 +1,8 @@
+{%- comment -%}
+  Interface strings and locale rules for the current page's language. Include once at the top of every layout
+  (and of any content page that prints interface strings); includes rendered inside it see `t` and `loc`.
+    t    _data/i18n/<lang>.yml (English when the language has no file)
+    loc  the language's block in _data/locales.yml
+{%- endcomment -%}
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign loc = site.data.locales[page.lang] | default: site.data.locales.en -%}

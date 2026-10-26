@@ -2,16 +2,12 @@
 layout: default
 ---
 
+{%- comment %} A translated post is a plain page (<lang>/journal/<slug>/index.md, layout: journal) with its own date
+  (the day the translation was published), words and FAQ; mentioned_apps is copied from English. {% endcomment -%}
+{%- include t.html -%}
 {% assign post_url = site.url | append: page.url %}
-{%- comment %} Same image choice as _includes/head.html: explicit og_image,
-  else the first mentioned app's card, else the site default. {% endcomment -%}
-{%- assign og_image = page.og_image -%}
-{%- if og_image == nil and page.mentioned_apps and page.mentioned_apps.size > 0 -%}
-  {%- assign _og_candidate = '/assets/og/' | append: page.mentioned_apps[0] | append: '.png' -%}
-  {%- assign _og_hit = site.static_files | where: "path", _og_candidate | first -%}
-  {%- if _og_hit -%}{%- assign og_image = _og_candidate -%}{%- endif -%}
-{%- endif -%}
-{%- assign og_image = og_image | default: '/assets/og/default.png' -%}
+{%- comment %} Same image choice as _includes/head.html (og-image.html). {% endcomment -%}
+{%- include og-image.html -%}
 
 <script type="application/ld+json">
 {
@@ -29,7 +25,7 @@ layout: default
     "width": 1200,
     "height": 630
   },
-  "inLanguage": "en",
+  "inLanguage": {{ loc.html_lang | jsonify }},
   "author": { "@id": "{{ site.url }}/#organization" },
   "publisher": { "@id": "{{ site.url }}/#organization" },
   "isPartOf": { "@id": "{{ site.url }}/#website" },
@@ -37,7 +33,8 @@ layout: default
   {%- if page.mentioned_apps and page.mentioned_apps.size > 0 -%},
   "mentions": [
     {%- for slug in page.mentioned_apps -%}
-      { "@id": "{{ site.url }}/apps/{{ slug }}/#app" }{%- unless forloop.last -%},{%- endunless -%}
+      {%- assign jr_app = "/apps/" | append: slug | append: "/" -%}
+      { "@id": "{{ site.url }}{% include l.html url=jr_app %}#app" }{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
   ]
   {%- endif %}
@@ -77,8 +74,8 @@ layout: default
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
-    { "@type": "ListItem", "position": 2, "name": "Journal", "item": "{{ site.url }}/journal/" },
+    { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}{% include l.html url="/" %}" },
+    { "@type": "ListItem", "position": 2, "name": {{ t.nav_journal | jsonify }}, "item": "{{ site.url }}{% include l.html url="/journal/" %}" },
     { "@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": "{{ post_url }}" }
   ]
 }
@@ -88,7 +85,7 @@ layout: default
   <header class="hero hero--home">
     <div class="hero-left reveal">
       <p class="overline">
-        <a href="/journal/">Journal</a> · <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.read_time %} · {{ page.read_time }}{% endif %}{% if page.last_updated %}{% assign _lu = page.last_updated | date: '%Y-%m-%d' %}{% assign _pd = page.date | date: '%Y-%m-%d' %}{% if _lu != _pd %} · Updated <time datetime="{{ _lu }}">{{ page.last_updated | date: "%B %-d, %Y" }}</time>{% endif %}{% endif %}
+        <a href="{% include l.html url="/journal/" %}"{% if l_en %} hreflang="en"{% endif %}>{{ t.nav_journal }}</a> · <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% include date.html date=page.date %}</time>{% if page.read_time %} · {{ page.read_time }}{% endif %}{% if page.last_updated %}{% assign _lu = page.last_updated | date: '%Y-%m-%d' %}{% assign _pd = page.date | date: '%Y-%m-%d' %}{% if _lu != _pd %} · {{ t.journal_updated }} <time datetime="{{ _lu }}">{% include date.html date=page.last_updated %}</time>{% endif %}{% endif %}
       </p>
       <h1 class="h1">{{ page.title }}</h1>
       {% if page.lede %}<p class="lead">{{ page.lede }}</p>{% endif %}
@@ -105,7 +102,7 @@ layout: default
 
   {% if page.faq %}
   <section id="faq" class="section reveal">
-    <div class="section-center"><p class="overline">Questions</p><h2 class="h2">Frequently asked</h2></div>
+    <div class="section-center"><p class="overline">{{ t.journal_questions }}</p><h2 class="h2">{{ t.journal_faq_heading }}</h2></div>
     <div class="faq" style="margin:0 auto;">
       {%- for item in page.faq -%}
       <details class="faq-item"{% if forloop.first %} open{% endif %}>
@@ -119,11 +116,11 @@ layout: default
 
   {% if page.mentioned_apps %}
   <section class="section reveal">
-    <div class="section-center"><p class="overline">Mentioned in this post</p><h2 class="h2">Apps in this post</h2></div>
+    <div class="section-center"><p class="overline">{{ t.journal_mentioned_overline }}</p><h2 class="h2">{{ t.journal_mentioned_heading }}</h2></div>
     {%- assign mentioned = '' | split: '' -%}
     {%- for slug in page.mentioned_apps -%}
       {%- assign m = site.apps | where: "slug", slug | first -%}
-      {%- if m -%}{%- assign mentioned = mentioned | push: m -%}{%- endif -%}
+      {%- if m -%}{%- include tx-app.html app=m -%}{%- unless tx_en -%}{%- assign mentioned = mentioned | push: m -%}{%- endunless -%}{%- endif -%}
     {%- endfor -%}
     {%- if mentioned.size > 0 -%}
     <div class="grid grid-2 stagger">
@@ -134,11 +131,11 @@ layout: default
   {% endif %}
 
   <section class="cta-section reveal">
-    <p class="overline">More from the journal</p>
-    <h2 class="h2">Read another post</h2>
+    <p class="overline">{{ t.journal_more_overline }}</p>
+    <h2 class="h2">{{ t.journal_more_heading }}</h2>
     <div class="actions">
-      <a class="btn btn-primary" href="/journal/">All journal posts</a>
-      <a class="btn btn-secondary" href="/apps/">Browse apps</a>
+      <a class="btn btn-primary" href="{% include l.html url="/journal/" %}"{% if l_en %} hreflang="en"{% endif %}>{{ t.journal_all_posts }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+      <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>{{ t.browse_apps }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
     </div>
   </section>
 </article>

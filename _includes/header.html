@@ -1,24 +1,28 @@
+{%- comment %} Nav links go to the page language's version of each hub when it exists, otherwise to English with
+  hreflang="en" and the t.english_marker label (TRANSLATION.md 7.6). {% endcomment -%}
+{%- assign hd_nav = "/apps/|nav_apps,/alternatives/|nav_comparisons,/journal/|nav_journal,/transparency/|nav_transparency,/lagerland-apps/|nav_about,/support/|nav_support" | split: "," -%}
 <header class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="/">
+    <a class="brand" href="{% include l.html url="/" %}">
       <img class="brand-mark" src="{{ site.url }}/assets/icons/lagerland-mark.png" alt="" width="30" height="30" decoding="async">
       <span class="brand-name">Lagerland Apps</span>
     </a>
-    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+    <button class="nav-toggle" aria-label="{{ t.nav_menu }}" aria-expanded="false">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
         <line x1="4" y1="7" x2="20" y2="7"/>
         <line x1="4" y1="12" x2="20" y2="12"/>
         <line x1="4" y1="17" x2="20" y2="17"/>
       </svg>
     </button>
-    <nav class="nav" aria-label="Main">
-      <a href="/apps/"{% if page.url contains "/apps/" %} aria-current="page"{% endif %}>Apps</a>
-      <a href="/alternatives/"{% if page.url contains "/alternatives/" %} aria-current="page"{% endif %}>Comparisons</a>
-      <a href="/journal/"{% if page.url contains "/journal/" %} aria-current="page"{% endif %}>Journal</a>
-      <a href="/transparency/"{% if page.url contains "/transparency/" %} aria-current="page"{% endif %}>Transparency</a>
-      <a href="/lagerland-apps/"{% if page.url contains "/lagerland-apps/" %} aria-current="page"{% endif %}>About</a>
-      <a href="/support/"{% if page.url == "/support/" %} aria-current="page"{% endif %}>Support</a>
+    <nav class="nav" aria-label="{{ t.nav_main }}">
+      {%- for hd_item in hd_nav -%}
+      {%- assign hd_parts = hd_item | split: "|" -%}
+      {%- assign hd_url = hd_parts[0] -%}{%- assign hd_key = hd_parts[1] %}
+      <a href="{% include l.html url=hd_url %}"{% if l_en %} hreflang="en"{% endif %}{% if hd_url == "/support/" %}{% if page.url == l_href %} aria-current="page"{% endif %}{% elsif page.url contains hd_url %} aria-current="page"{% endif %}>{{ t[hd_key] }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+      {%- endfor %}
+      {%- include lang-switch.html where="header" %}
     </nav>
-    <span class="topbar-imprint" aria-hidden="true">Sheet 2025-{{ site.time | date: "%Y" }} · Issued in Finland<svg class="reg-mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="5.5"/><path d="M8 0v16M0 8h16"/></svg></span>
+    {%- assign hd_year = site.time | date: "%Y" -%}{%- assign hd_imprint = t.header_imprint | replace: "{year}", hd_year %}
+    <span class="topbar-imprint" aria-hidden="true">{{ hd_imprint }}<svg class="reg-mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="5.5"/><path d="M8 0v16M0 8h16"/></svg></span>
   </div>
 </header>

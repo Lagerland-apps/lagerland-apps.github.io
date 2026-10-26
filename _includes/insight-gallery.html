@@ -13,11 +13,11 @@
           body:     "Days you train lower body after 18:00 …"
           tag:      "Sleep · Pattern"
 {%- endcomment -%}
-{%- assign gallery = include.app.example_insights -%}
+{%- assign ig_tx = include.tx | default: include.app -%}
+{%- assign ig_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign gallery = ig_tx.example_insights -%}
 {%- if gallery and gallery.cards and gallery.cards.size > 0 -%}
-{%- capture default_overline %}What a{% if include.app.name | slice: 0, 1 | downcase == "o" or include.app.name | slice: 0, 1 | downcase == "a" or include.app.name | slice: 0, 1 | downcase == "e" or include.app.name | slice: 0, 1 | downcase == "i" or include.app.name | slice: 0, 1 | downcase == "u" %}n{% endif %} {{ include.app.name }} insight looks like{% endcapture -%}
-{%- assign gallery_overline = gallery.overline | default: default_overline -%}
-{%- assign gallery_heading  = gallery.heading  | default: "Real insights, in plain English." -%}
+{%- assign gallery_heading  = gallery.heading  | default: ig_t.insights_heading_default -%}
 {%- assign gallery_anchor   = gallery.anchor   | default: "insights" -%}
 <section id="{{ gallery_anchor }}" class="section reveal">
   <div class="section-center">

@@ -22,3 +22,45 @@ seo:
     Or try <a href="/alternatives/">app comparisons</a>, <a href="/guides/">guides</a> or the <a href="/journal/">journal</a>.
   </p>
 </section>
+{%- comment %}
+  GitHub Pages serves this one file for every missing URL, in every language (TRANSLATION.md 4.9). The English text
+  above is the no-JS default. For each live language a <template> holds the same block in that language, and the
+  script swaps it in when the missing URL starts with /<code>/. Links go to that language's hubs when they exist.
+  Nothing renders while English is the only live language.
+{%- endcomment -%}
+{%- assign nf_any = false -%}
+{%- for _lp in site.data.locales -%}{%- assign _lc = _lp[0] -%}
+  {%- if _lp[1].live and _lp[0] != "en" -%}
+    {%- assign nf_any = true -%}
+    {%- assign nf_t = site.data.i18n[_lc] -%}
+    {%- assign nf_home = "/" | append: _lp[0] | append: "/" -%}
+    {%- assign nf_apps = site.data.i18n_map["/apps/"][_lc] | default: "/apps/" -%}
+    {%- assign nf_alt = site.data.i18n_map["/alternatives/"][_lc] | default: "/alternatives/" -%}
+    {%- assign nf_guides = site.data.i18n_map["/guides/"][_lc] | default: "/guides/" -%}
+    {%- assign nf_journal = site.data.i18n_map["/journal/"][_lc] | default: "/journal/" -%}
+    {%- assign nf_more = nf_t.not_found_more | replace: "{alternatives}", nf_alt | replace: "{guides}", nf_guides | replace: "{journal}", nf_journal %}
+<template class="nf-lang" data-lang="{{ _lp[0] }}" data-html-lang="{{ _lp[1].html_lang }}" data-dir="{{ _lp[1].dir }}" data-title="{{ nf_t.not_found_title | escape }}">
+  <p class="lead">{{ nf_t.not_found_lead }}</p>
+  <div class="actions" style="justify-content:center;">
+    <a class="btn btn-primary" href="{{ nf_home }}">{{ nf_t.not_found_home }}</a>
+    <a class="btn btn-secondary" href="{{ nf_apps }}">{{ nf_t.browse_apps }}</a>
+  </div>
+  <p class="small" style="margin-top:24px;">{{ nf_more }}</p>
+</template>
+  {%- endif -%}
+{%- endfor %}
+{%- if nf_any %}
+<script>
+(function () {
+  var seg = location.pathname.split("/")[1];
+  var tpl = document.querySelector('template.nf-lang[data-lang="' + seg + '"]');
+  var box = document.querySelector(".page-404");
+  if (!tpl || !box) return;
+  while (box.children.length > 1) box.removeChild(box.lastElementChild);
+  box.insertAdjacentHTML("beforeend", tpl.innerHTML);
+  document.documentElement.lang = tpl.getAttribute("data-html-lang");
+  document.documentElement.dir = tpl.getAttribute("data-dir");
+  document.title = tpl.getAttribute("data-title");
+})();
+</script>
+{%- endif %}

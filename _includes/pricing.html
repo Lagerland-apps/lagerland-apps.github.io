@@ -1,6 +1,14 @@
+{%- comment %}
+  app  the master (plan kinds and price tokens, catalog facts)
+  tx   the page with the words (default: app): plans (same order as the master, text keys only: name, price,
+       summary, features, highlight_label; `price` is the display string with tokens, e.g. "{P_LIFETIME} einmalig",
+       "{P_ZERO}"; `kind` and `highlight` stay in the master), plans_footnote, pricing_note, value_math, release_notes (note only)
+{%- endcomment -%}
+{%- assign pr_tx = include.tx | default: include.app -%}
+{%- assign pr_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 <section id="pricing" class="section reveal">
-  {%- include app-facts.html app=include.app -%}
-  <h2 class="h2">Pricing</h2>
+  {%- include app-facts.html app=include.app text=pr_tx -%}
+  <h2 class="h2">{{ pr_t.pricing_heading }}</h2>
 
   {%- comment %}
     Optional value-math callout. It renders when frontmatter exposes
@@ -9,10 +17,10 @@
     competitive copy belongs above the pricing detail so the math
     frames how the visitor reads the price.
   {%- endcomment -%}
-  {%- if include.app.value_math -%}
+  {%- if pr_tx.value_math -%}
   <aside class="value-math" role="note">
-    <strong class="value-math__label">{{ include.app.value_math.label | default: "Why the price looks small:" }}</strong>
-    <span class="value-math__body">{{ include.app.value_math.body }}</span>
+    <strong class="value-math__label">{{ pr_tx.value_math.label | default: pr_t.value_math_default }}</strong>
+    <span class="value-math__body">{{ pr_tx.value_math.body }}</span>
   </aside>
   {%- endif -%}
 
@@ -30,41 +38,44 @@
   {%- if include.app.plans and include.app.plans.size > 0 -%}
   <div class="plans-grid">
     {%- for plan in include.app.plans -%}
+    {%- assign plan_words = pr_tx.plans[forloop.index0] | default: plan -%}
     {%- comment %} Plan price is a token string ({P_MONTHLY}/mo ...) filled from the catalog. A plan whose token
       refers to something App Store Connect does not currently sell (or flags not-for-sale) is not shown. {%- endcomment -%}
-    {%- capture plan_price -%}{%- include tokens.html text=plan.price -%}{%- endcapture -%}
+    {%- assign plan_price_text = plan_words.price | default: plan.price -%}
+    {%- capture plan_price -%}{%- include tokens.html text=plan_price_text -%}{%- endcapture -%}
     {%- unless tk_missing -%}
     {%- assign plan_catalog = f_cat.plans[plan.kind] -%}
     <div class="plan-card">
       <div class="plan-head">
-      <div class="plan-stamp"><span class="plan-name">{{ plan.name }}</span><span class="plan-price">{{ plan_price }}</span></div>
-      {%- if plan_catalog.free_trial -%}<div class="plan-meta plan-meta--trial">{{ plan_catalog.free_trial.label }}</div>{%- endif -%}
+      <div class="plan-stamp"><span class="plan-name">{{ plan_words.name }}</span><span class="plan-price">{{ plan_price }}</span></div>
+      {%- if plan_catalog.free_trial -%}<div class="plan-meta plan-meta--trial">{% include trial.html trial=plan_catalog.free_trial %}</div>{%- endif -%}
       {%- if plan_catalog.family_sharing -%}<div class="plan-meta plan-meta--family">{{ f_str.family_sharing }}</div>{%- endif -%}
-      {%- if plan.summary -%}<div class="plan-summary">{{ plan.summary }}</div>{%- endif -%}
+      {%- if plan_words.summary -%}<div class="plan-summary">{{ plan_words.summary }}</div>{%- endif -%}
       </div>
-      {%- if plan.features and plan.features.size > 0 -%}
+      {%- if plan_words.features and plan_words.features.size > 0 -%}
       <ul class="plan-features">
-        {%- for f in plan.features -%}<li>{{ f }}</li>{%- endfor -%}
+        {%- for f in plan_words.features -%}<li>{{ f }}</li>{%- endfor -%}
       </ul>
       {%- endif -%}
     </div>
     {%- endunless -%}
     {%- endfor -%}
   </div>
-  {%- if include.app.plans_footnote -%}
-  <p class="plans-footnote">{{ include.app.plans_footnote }}</p>
+  {%- if pr_tx.plans_footnote -%}
+  <p class="plans-footnote">{{ pr_tx.plans_footnote }}</p>
   {%- endif -%}
   {%- else -%}
   <div class="pricing-card">
     <div class="price-row">
       <div>
-        <div class="card-title">{{ include.app.name }} pricing</div>
-        <div class="card-text">Prices are listed on the App Store. Cancel anytime.</div>
+        {%- assign pr_card_title = pr_t.pricing_card_title | replace: "{name}", include.app.name %}
+        <div class="card-title">{{ pr_card_title }}</div>
+        <div class="card-text">{{ pr_t.pricing_card_text }}</div>
       </div>
-      <div class="price-pill">{{ f_price_value | default: "See App Store" }}</div>
+      <div class="price-pill">{{ f_price_value | default: pr_t.see_app_store }}</div>
     </div>
     <div class="actions">
-      <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">View on the App Store</a>
+      <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">{{ pr_t.view_on_app_store }}</a>
     </div>
   </div>
   {%- endif -%}
@@ -77,12 +88,13 @@
   {%- endcomment -%}
   {%- if include.app.release_notes and include.app.release_notes.size > 0 -%}
   <details class="release-notes">
-    <summary class="release-notes__summary">What changed recently: {{ include.app.release_notes.size }} dated updates</summary>
+    {%- assign pr_rn = pr_t.release_notes_summary | replace: "{count}", include.app.release_notes.size %}
+    <summary class="release-notes__summary">{{ pr_rn }}</summary>
     <ol class="release-notes__list">
       {%- for entry in include.app.release_notes -%}
       <li class="release-notes__item">
-        <time class="release-notes__date" datetime="{{ entry.date }}">{{ entry.date | date: "%-d %B %Y" }}</time>
-        <span class="release-notes__note">{{ entry.note }}</span>
+        <time class="release-notes__date" datetime="{{ entry.date }}">{% include date.html date=entry.date fmt="dmy" %}</time>
+        <span class="release-notes__note">{{ pr_tx.release_notes[forloop.index0].note | default: entry.note }}</span>
       </li>
       {%- endfor -%}
     </ol>
@@ -91,9 +103,9 @@
 
   {%- if include.app.plans and include.app.plans.size > 0 -%}
   <div class="pricing-foot">
-    <p class="pricing-note">{{ include.app.pricing_note | default: "Prices are listed on the App Store. Cancel anytime. The free plan has no time limit and needs no trial or card." }}</p>
+    <p class="pricing-note">{{ pr_tx.pricing_note | default: pr_t.pricing_note_default }}</p>
     <div class="actions">
-      <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">View on the App Store</a>
+      <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">{{ pr_t.view_on_app_store }}</a>
     </div>
   </div>
   {%- endif -%}

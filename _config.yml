@@ -21,6 +21,12 @@ collections:
     permalink: /journal/:slug/
 
 defaults:
+  # Every page and document is English unless its language folder says otherwise (TRANSLATION.md 4.2).
+  # Each language adds one entry: - scope: { path: "<code>" }  values: { lang: <code> }
+  - scope:
+      path: ""
+    values:
+      lang: en
   - scope:
       path: ""
       type: apps

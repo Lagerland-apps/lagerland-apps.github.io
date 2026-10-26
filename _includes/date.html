@@ -1,0 +1,14 @@
+{%- comment -%}
+  A visible date in the page's language. JSON-LD, sitemaps and datetime attributes stay ISO and never use this.
+    date  the date      fmt  "long" (default; English "October 26, 2026") or "dmy" (English "26 October 2026")
+  Patterns and month names come from _data/i18n/<lang>.yml: date_long, date_dmy, months.
+{%- endcomment -%}
+{%- assign _dt = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign _dp = _dt.date_long -%}
+{%- if include.fmt == "dmy" -%}{%- assign _dp = _dt.date_dmy -%}{%- endif -%}
+{%- assign _dm = include.date | date: "%-m" | minus: 1 -%}
+{%- assign _dd = include.date | date: "%-d" -%}
+{%- assign _dy = include.date | date: "%Y" -%}
+{%- assign _dmn = _dt.months[_dm] -%}
+{%- assign _dout = _dp | replace: "{d}", _dd | replace: "{month}", _dmn | replace: "{Y}", _dy -%}
+{{- _dout -}}

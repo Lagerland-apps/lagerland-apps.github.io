@@ -3,9 +3,10 @@
   Connect catalog (see _includes/tokens.html). On an app's own page and its support/privacy pages the app's own
   tokens are expanded too; every other page only gets the global ones.
 {%- endcomment -%}
+{%- include t.html -%}
 {%- capture default_page_html -%}
 <!doctype html>
-<html lang="en">
+<html lang="{{ loc.html_lang }}" dir="{{ loc.dir }}">
   <head>
     {% include head.html %}
   </head>
@@ -16,7 +17,7 @@
       {{ content }}
       {%- if page.last_updated and page.collection == nil and page.layout == "default" %}
         {%- if page.url contains "/alternatives/" or page.url contains "/guides/" or page.url contains "/for/" %}
-      <p class="small page-updated" style="text-align:center;margin:var(--s-5) 0 0;">Last updated <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: "%B %-d, %Y" }}</time></p>
+      <p class="small page-updated" style="text-align:center;margin:var(--s-5) 0 0;">{{ t.last_updated }} <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{% include date.html date=page.last_updated %}</time></p>
         {%- endif %}
       {%- endif %}
     </main>
@@ -27,7 +28,8 @@
 {%- capture default_page_html -%}{%- include tokens-xapp.html text=default_page_html -%}{%- endcapture -%}
 {%- assign default_page_app = site.data.catalog.apps[page.slug] -%}
 {%- if default_page_app -%}
-  {%- include app-facts.html app=page -%}
+  {%- assign default_page_master = site.apps | where: "slug", page.slug | first -%}
+  {%- include app-facts.html app=default_page_master text=page -%}
   {%- include tokens.html text=default_page_html -%}
 {%- else -%}
   {%- include tokens.html text=default_page_html global_only=true -%}

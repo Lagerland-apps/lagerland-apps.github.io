@@ -3,25 +3,30 @@
   frontmatter defines page.who_for and/or page.who_not_for arrays.
   Renders nothing otherwise, so it is safe to include on every app page.
 {% endcomment -%}
-{%- if include.app.who_for or include.app.who_not_for -%}
+{%- assign wf_tx = include.tx | default: include.app -%}
+{%- assign wf_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- if wf_tx.who_for or wf_tx.who_not_for -%}
+{%- assign wf_h = wf_t.who_heading | replace: "{name}", include.app.name -%}
+{%- assign wf_yes = wf_t.who_for_title | replace: "{name}", include.app.name -%}
+{%- assign wf_no = wf_t.who_not_for_title | replace: "{name}", include.app.name -%}
 <section class="section reveal">
   <div class="section-center">
-    <h2 class="h2">Is {{ include.app.name }} right for you?</h2>
+    <h2 class="h2">{{ wf_h }}</h2>
   </div>
   <div class="leaflet-cols leaflet-cols--2 stagger">
-    {%- if include.app.who_for -%}
+    {%- if wf_tx.who_for -%}
     <div class="leaflet-col">
-      <div class="card-title">You'll love {{ include.app.name }} if…</div>
+      <div class="card-title">{{ wf_yes }}</div>
       <ul class="bullets">
-        {%- for item in include.app.who_for -%}<li>{{ item }}</li>{%- endfor -%}
+        {%- for item in wf_tx.who_for -%}<li>{{ item }}</li>{%- endfor -%}
       </ul>
     </div>
     {%- endif -%}
-    {%- if include.app.who_not_for -%}
+    {%- if wf_tx.who_not_for -%}
     <div class="leaflet-col">
-      <div class="card-title">{{ include.app.name }} may not be for you if…</div>
+      <div class="card-title">{{ wf_no }}</div>
       <ul class="bullets">
-        {%- for item in include.app.who_not_for -%}<li>{{ item }}</li>{%- endfor -%}
+        {%- for item in wf_tx.who_not_for -%}<li>{{ item }}</li>{%- endfor -%}
       </ul>
     </div>
     {%- endif -%}

@@ -3,7 +3,8 @@
     amount   customer price as delivered by the catalog (e.g. "3.99", "18.0", "5500")
     currency ISO code (default USD)
     lang     default: page.lang, then site.lang
-  Output is trimmed; wrap the include in a capture block to keep it in a variable. Falls back to "<amount> <CUR>" when the
+    decimals optional override of the currency's decimals (0 for {P_ZERO})
+  position: before ("$3.99"), before_space ("€ 3,99"), after ("3,99 €"). Output is trimmed; wrap the include in a capture block to keep it in a variable. Falls back to "<amount> <CUR>" when the
   language has no rule for that currency, so a missing rule is visible instead of silently wrong.
 {%- endcomment -%}
 {%- assign m_lang = include.lang | default: page.lang | default: site.lang | default: "en" -%}
@@ -16,7 +17,7 @@
   {%- assign m_parts = include.amount | append: "" | split: "." -%}
   {%- assign m_rest = m_parts[0] -%}
   {%- assign m_frac = m_parts[1] | default: "" -%}
-  {%- assign m_dec = m_fmt.decimals | default: 2 -%}
+  {%- assign m_dec = include.decimals | default: m_fmt.decimals | default: 2 -%}
   {%- assign m_int = "" -%}
   {%- for m_i in (1..6) -%}
     {%- assign m_len = m_rest | size -%}
@@ -36,6 +37,8 @@
   {%- endif -%}
   {%- if m_fmt.position == "after" -%}
 {{- m_num }} {{ m_fmt.symbol -}}
+  {%- elsif m_fmt.position == "before_space" -%}
+{{- m_fmt.symbol }} {{ m_num -}}
   {%- else -%}
 {{- m_fmt.symbol }}{{ m_num -}}
   {%- endif -%}

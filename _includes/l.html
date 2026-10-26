@@ -1,0 +1,20 @@
+{%- comment -%}
+  Prints the href for an internal English URL in the current page's language: the translated URL when
+  _data/i18n_map.json has one, otherwise the English URL. Sets l_en = true when a non-English page falls back
+  to English, so the caller adds hreflang="en" and the t.english_marker label (TRANSLATION.md 7.6).
+    url  English URL, optionally with a #fragment
+{%- endcomment -%}
+{%- assign l_en = false -%}
+{%- assign l_href = include.url -%}
+{%- if page.lang and page.lang != "en" -%}
+  {%- assign _lparts = include.url | split: "#" -%}
+  {%- assign _lk = _lparts[0] -%}
+  {%- assign _lv = site.data.i18n_map[_lk][page.lang] -%}
+  {%- if _lv -%}
+    {%- assign l_href = _lv -%}
+    {%- if _lparts[1] -%}{%- assign l_href = l_href | append: "#" | append: _lparts[1] -%}{%- endif -%}
+  {%- else -%}
+    {%- assign l_en = true -%}
+  {%- endif -%}
+{%- endif -%}
+{{- l_href -}}
