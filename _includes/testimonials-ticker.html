@@ -16,7 +16,9 @@
     <h2 class="h2" id="testimonials-heading-{{ include.slug }}">{{ tq_h }}</h2>
     {%- assign t_app_rating = tq_app.ratings.value | plus: 0 -%}
     {%- if tq_app.ratings and tq_app.ratings.count >= 3 and t_app_rating >= site.ratings_min_display -%}
-    {%- assign tq_meta = tq_t.testimonials_meta_rated | replace: "{value}", tq_app.ratings.value | replace: "{count}", tq_app.ratings.count -%}
+    {%- assign tq_str = site.data.locales[page.lang].strings | default: site.data.locales.en.strings -%}
+    {%- assign tq_rv = tq_app.ratings.value | append: "" | replace: ".", tq_str.decimal -%}
+    {%- assign tq_meta = tq_t.testimonials_meta_rated | replace: "{value}", tq_rv | replace: "{count}", tq_app.ratings.count -%}
     <p class="testimonials-meta">{{ tq_meta }}</p>
     {%- else -%}
     <p class="testimonials-meta">{{ tq_t.testimonials_meta }}</p>

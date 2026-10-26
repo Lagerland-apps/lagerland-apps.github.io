@@ -28,7 +28,8 @@
       {%- endif -%}
       {%- assign card_rating = include.app.ratings.value | plus: 0 -%}
       {%- if include.app.ratings and include.app.ratings.count >= 3 and card_rating >= site.ratings_min_display -%}
-        {%- assign ac_rated = ac_t.pill_rated | replace: "{value}", include.app.ratings.value | replace: "{count}", include.app.ratings.count -%}
+        {%- assign ac_rv = include.app.ratings.value | append: "" | replace: ".", f_str.decimal -%}
+        {%- assign ac_rated = ac_t.pill_rated | replace: "{value}", ac_rv | replace: "{count}", include.app.ratings.count -%}
         <span class="pill">{{ ac_rated }}</span>
       {%- endif -%}
       {%- if card_plat != "" %}<span class="pill">{{ card_plat }}</span>{% endif -%}

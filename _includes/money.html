@@ -4,7 +4,8 @@
     currency ISO code (default USD)
     lang     default: page.lang, then site.lang
     decimals optional override of the currency's decimals (0 for {P_ZERO})
-  position: before ("$3.99"), before_space ("€ 3,99"), after ("3,99 €"). Output is trimmed; wrap the include in a capture block to keep it in a variable. Falls back to "<amount> <CUR>" when the
+  position: before ("$3.99"), before_space ("€ 3,99"), after ("3,99 €"); space: the character between number and
+  symbol (default a plain space; the App Store uses a no-break space in most European storefronts). Output is trimmed; wrap the include in a capture block to keep it in a variable. Falls back to "<amount> <CUR>" when the
   language has no rule for that currency, so a missing rule is visible instead of silently wrong.
 {%- endcomment -%}
 {%- assign m_lang = include.lang | default: page.lang | default: site.lang | default: "en" -%}
@@ -35,10 +36,11 @@
   {%- else -%}
     {%- assign m_num = m_int -%}
   {%- endif -%}
+  {%- assign m_sp = m_fmt.space | default: " " -%}
   {%- if m_fmt.position == "after" -%}
-{{- m_num }} {{ m_fmt.symbol -}}
+{{- m_num }}{{ m_sp }}{{ m_fmt.symbol -}}
   {%- elsif m_fmt.position == "before_space" -%}
-{{- m_fmt.symbol }} {{ m_num -}}
+{{- m_fmt.symbol }}{{ m_sp }}{{ m_num -}}
   {%- else -%}
 {{- m_fmt.symbol }}{{ m_num -}}
   {%- endif -%}

@@ -75,7 +75,8 @@
         (≥ 25 ratings and at or above site.ratings_min_display). {% endcomment -%}
       {%- assign hero_rating = include.app.ratings.value | plus: 0 -%}
       {%- if include.app.ratings and include.app.ratings.count >= 25 and hero_rating >= site.ratings_min_display %}
-      {%- assign h_rating = h_t.tech_rating_text | replace: "{value}", include.app.ratings.value | replace: "{count}", include.app.ratings.count %}
+      {%- assign h_rv = include.app.ratings.value | append: "" | replace: ".", f_str.decimal -%}
+      {%- assign h_rating = h_t.tech_rating_text | replace: "{value}", h_rv | replace: "{count}", include.app.ratings.count %}
       <dt>{{ h_t.tech_rating }}</dt><dd>{{ h_rating }}</dd>
       {%- endif %}
       {%- if include.app.release.last_updated %}
