@@ -290,7 +290,7 @@ release:
 
 show_body: true
 about_heading: "What Millrace is — a delivery puzzle with merge mechanics"
-last_updated: 2026-10-26
+last_updated: 2026-10-09
 ---
 
 Millrace is a delivery puzzle for iPhone and iPad. It uses merge mechanics — matching numbers combine when they collide — but it is not an endless grid with a high-score table. Each of its 64 levels is a closed problem with a specific right answer.
