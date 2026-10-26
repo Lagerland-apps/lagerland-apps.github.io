@@ -9,7 +9,7 @@ script is re-run. Never hand-edit the outputs.
 
 ```
 cd lagerland-apps.github.io-main
-node scripts/sync-asc-master.mjs                 # ~800 API calls, 2-4 min
+node scripts/sync-asc-master.mjs                 # ~1,200 API calls, 5-10 min
 node scripts/sync-asc-master.mjs --app pawza     # refetch ONE app (slug, App Store ID or name fragment) and merge it into the existing JSON; ~40 calls
 node scripts/sync-asc-master.mjs --env <file>    # other env file (default ~/Downloads/HealthLogger/.env)
 node scripts/sync-asc-master.mjs --out <dir>     # where the CSV/MD go (default: the parent folder)
@@ -61,6 +61,18 @@ the customer price in that storefront's own currency (tax-inclusive where Apple 
    any localization (early exit on the first hit). Apple requires iPad screenshots for iPad-capable apps. An
    app that supports iPad but has no iPad screenshots uploaded would show as iPhone-only; if a row looks
    wrong, check the screenshots in App Store Connect first. "iPhone app running on Mac" is not detected.
+3b. **Apple Watch**: also no API field. `platforms.watchos` is set (same state as iPhone) when either signal
+   fires on the iOS version (live one if any): (a) its build, `GET /v1/appStoreVersions/{id}/build` then
+   `GET /v1/builds/{id}?include=buildBundles`, has an embedded watch app (an entitlement path matching
+   `.app/Watch/<name>.app`), or (b) its localizations carry `APP_WATCH_*` screenshot sets. Both signals are stored
+   in `platform_detail.watchos` (`in_build`, `watch_screenshots`, `checked_version`) so a disagreement is visible.
+   Only iOS versions are checked; Mac-only apps get no watch flag. A watch app that is not in the uploaded build
+   and has no watch screenshots (like EarnLock today) is reported as no watch support.
+3c. **App's own price**: `GET /v1/apps/{id}/appPriceSchedule`, then `/v1/appPriceSchedules/{id}/manualPrices` and
+   `/automaticPrices` with the territory filter (price point `customerPrice`, same current-price rule as IAPs).
+   Stored as `app_price: {free, prices[CODE]}`; `free` is true when the USA price is 0. Paid-upfront apps (Mockly,
+   12.99 USD) show up here, not in the IAP list. `null` means no price schedule yet (unreleased app, Fidaro).
+   The CSV has an `app_price` row per app and the MD platform table has a Watch column and an App price column.
 4. **Subscriptions**: `subscriptionGroups` then `subscriptions` per group. Period comes from
    `subscriptionPeriod` (ONE_WEEK = weekly, ONE_MONTH = monthly, ONE_YEAR = yearly ...). All states are kept
    (APPROVED, READY_TO_SUBMIT, DEVELOPER_REMOVED_FROM_SALE ...), so filter on `state` before showing a price.

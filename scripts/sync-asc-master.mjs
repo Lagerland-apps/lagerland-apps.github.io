@@ -148,16 +148,56 @@ async function iapPrices(iapId) {
   return { base: sch.data.relationships.baseTerritory?.data?.id || null, prices: resolve(entries.filter((e) => e.amount != null)) };
 }
 
-// iPad support has no API field of its own. The reliable signal is whether the version carries iPad screenshot sets.
-async function supportsIpad(versionId) {
+// iPad and Apple Watch support have no API field of their own. Signals used:
+//  - iPad:  the version carries iPad screenshot sets (Apple requires them for iPad-capable apps)
+//  - Watch: (a) the version's build bundle contains an embedded "/Watch/<name>.app" (entitlement paths), and
+//           (b) the version carries Apple Watch screenshot sets. Either one counts; both are kept as evidence.
+async function screenshotSignals(versionId) {
   const locs = await getAll(`/v1/appStoreVersions/${versionId}/appStoreVersionLocalizations?limit=200`);
-  let found = false;
+  const sig = { ipad: false, watch: false };
   await pool(locs.data, 6, async (l) => {
-    if (found) return;
+    if (sig.ipad && sig.watch) return;
     const s = await get(`/v1/appStoreVersionLocalizations/${l.id}/appScreenshotSets?limit=50&fields[appScreenshotSets]=screenshotDisplayType`);
-    if (s.data.some((x) => x.attributes.screenshotDisplayType.startsWith("APP_IPAD") || x.attributes.screenshotDisplayType.startsWith("IMESSAGE_APP_IPAD"))) found = true;
+    for (const x of s.data) {
+      const t = x.attributes.screenshotDisplayType;
+      if (t.startsWith("APP_IPAD") || t.startsWith("IMESSAGE_APP_IPAD")) sig.ipad = true;
+      if (t.startsWith("APP_WATCH")) sig.watch = true;
+    }
   });
-  return found;
+  return sig;
+}
+
+async function buildHasWatchApp(versionId) {
+  let b;
+  try { b = await get(`/v1/appStoreVersions/${versionId}/build`); } catch (e) { if (e.status === 404) return null; throw e; }
+  if (!b.data) return null; // no build attached to this version
+  const r = await get(`/v1/builds/${b.data.id}?include=buildBundles`);
+  return (r.included || []).some((x) => Object.keys(x.attributes.entitlements || {}).some((k) => /\.app\/Watch\/[^/]+\.app/.test(k)));
+}
+
+// The app's own (upfront) price from the app price schedule: 0 = free app. Manual + automatic prices cover all storefronts.
+async function appPrice(appId) {
+  let sch;
+  try { sch = await get(`/v1/apps/${appId}/appPriceSchedule`); } catch (e) { if (e.status === 404) return null; throw e; }
+  if (!sch.data) return null;
+  const entries = [];
+  for (const kind of ["manualPrices", "automaticPrices"]) {
+    let r;
+    try { r = await getAll(`/v1/appPriceSchedules/${sch.data.id}/${kind}?${TERR}&include=appPricePoint,territory&limit=200`); } catch (e) { if (e.status === 404) return null; throw e; } // unreleased app: no schedule yet
+    const { data, included } = r;
+    const pp = {};
+    for (const i of included) {
+      if (i.type === "appPricePoints") pp[i.id] = i.attributes.customerPrice;
+      if (i.type === "territories") currencies[i.id] = i.attributes.currency;
+    }
+    for (const d of data) entries.push({
+      territory: d.relationships.territory.data.id,
+      amount: pp[d.relationships.appPricePoint.data?.id] ?? null,
+      startDate: d.attributes.startDate, endDate: d.attributes.endDate,
+    });
+  }
+  const prices = resolve(entries.filter((e) => e.amount != null));
+  return { free: Number(prices.USA?.amount ?? NaN) === 0, prices };
 }
 
 async function platforms(appId) {
@@ -173,8 +213,12 @@ async function platforms(appId) {
     out[k] = live ? "live" : "pending";
     detail[k] = { live_version: live?.versionString || null, latest_version: vs[0].versionString, latest_state: vs[0].appStoreState };
     if (plat === "IOS") {
-      const ipad = await supportsIpad(latest.id);
-      out.ipad = ipad ? out[k] : null;
+      const sig = await screenshotSignals(latest.id);
+      const build = await buildHasWatchApp(latest.id);
+      out.ipad = sig.ipad ? out[k] : null;
+      const watch = sig.watch || build === true;
+      out.watchos = watch ? out[k] : null;
+      detail.watchos = { in_build: build, watch_screenshots: sig.watch, checked_version: latest.versionString };
     }
   }
   return { platforms: out, detail };
@@ -230,7 +274,7 @@ for (const a of apps) {
   });
   result.push({
     id: a.id, slug: slugs[a.id] || null, name: a.attributes.name, bundle_id: a.attributes.bundleId,
-    app_store_url: `https://apps.apple.com/app/id${a.id}`, platforms: plat, platform_detail: detail,
+    app_store_url: `https://apps.apple.com/app/id${a.id}`, app_price: await appPrice(a.id), platforms: plat, platform_detail: detail,
     products: [...subs.sort((x, y) => x.product_id.localeCompare(y.product_id)), ...iapRows.sort((x, y) => (x.kind === "lifetime" ? -1 : 0) - (y.kind === "lifetime" ? -1 : 0) || x.product_id.localeCompare(y.product_id))],
   });
 }
@@ -258,15 +302,19 @@ fs.writeFileSync(path.join(ROOT, "_data/asc_master.json"), JSON.stringify(master
 const fmt = (p) => (p ? `${p.amount} ${p.currency}${p.next ? ` (→ ${p.next.amount} from ${p.next.from})` : ""}` : "");
 const yn = (b) => (b === true ? "yes" : b === false ? "no" : "");
 const q = (s) => `"${String(s ?? "").replace(/"/g, '""')}"`;
-const head = ["app", "app_id", "slug", "iphone", "ipad", "macos", "kind", "period/type", "product_id", "name", "state", "family_sharing", "free_trial", "shown_in_app", ...CODES.map((c) => `${c} (${currencies[c]})`)];
+const head = ["app", "app_id", "slug", "iphone", "ipad", "macos", "watchos", "kind", "period/type", "product_id", "name", "state", "family_sharing", "free_trial", "shown_in_app", ...CODES.map((c) => `${c} (${currencies[c]})`)];
 const rows = [head.map(q).join(",")];
+for (const a of result) {
+  const plat = [a.name, a.id, a.slug, a.platforms.iphone || "", a.platforms.ipad || "", a.platforms.macos || "", a.platforms.watchos || ""];
+  if (a.app_price) rows.push([...plat, "app_price", a.app_price.free ? "free app" : "paid app", "", "App download price", "", "", "", "", ...CODES.map((c) => fmt(a.app_price.prices[c]))].map(q).join(","));
+}
 for (const a of result) for (const p of a.products)
-  rows.push([a.name, a.id, a.slug, a.platforms.iphone || "", a.platforms.ipad || "", a.platforms.macos || "", p.kind, p.period || p.iap_type, p.product_id, p.name, p.state, yn(p.family_sharable), p.intro_offer?.summary || "", p.offered_in_app === false ? "NO (not for sale)" : "", ...CODES.map((c) => fmt(p.prices[c]))].map(q).join(","));
+  rows.push([a.name, a.id, a.slug, a.platforms.iphone || "", a.platforms.ipad || "", a.platforms.macos || "", a.platforms.watchos || "", p.kind, p.period || p.iap_type, p.product_id, p.name, p.state, yn(p.family_sharable), p.intro_offer?.summary || "", p.offered_in_app === false ? "NO (not for sale)" : "", ...CODES.map((c) => fmt(p.prices[c]))].map(q).join(","));
 fs.writeFileSync(path.join(OUT_DIR, "MASTER-prices.csv"), rows.join("\n") + "\n");
 
 const mark = (s) => (s === "live" ? "✅" : s === "pending" ? "⏳" : "–");
-let md = `# Master table (App Store Connect API)\n\nGenerated ${master.generated_at}. ✅ live · ⏳ not live yet · – not supported.\n\n## Platforms\n\n| App | iPhone | iPad | macOS | Other |\n|---|---|---|---|---|\n`;
-for (const a of result) md += `| ${a.name} | ${mark(a.platforms.iphone)} | ${mark(a.platforms.ipad)} | ${mark(a.platforms.macos)} | ${Object.keys(a.platforms).filter((k) => !["iphone", "ipad", "macos"].includes(k)).join(", ")} |\n`;
+let md = `# Master table (App Store Connect API)\n\nGenerated ${master.generated_at}. ✅ live · ⏳ not live yet · – not supported.\n\n## Platforms\n\n| App | iPhone | iPad | macOS | Watch | App price (USA) | Other |\n|---|---|---|---|---|---|---|\n`;
+for (const a of result) md += `| ${a.name} | ${mark(a.platforms.iphone)} | ${mark(a.platforms.ipad)} | ${mark(a.platforms.macos)} | ${mark(a.platforms.watchos)} | ${a.app_price ? (a.app_price.free ? "Free" : fmt(a.app_price.prices.USA)) : "?"} | ${Object.keys(a.platforms).filter((k) => !["iphone", "ipad", "macos", "watchos"].includes(k)).join(", ")} |\n`;
 for (const a of result) {
   md += `\n## ${a.name}\n\n| Product | Type | State | Family sharing | Free trial | In app UI | ${CODES.join(" | ")} |\n|---|---|---|---|---|---|${CODES.map(() => "---").join("|")}|\n`;
   for (const p of a.products) md += `| ${p.product_id} | ${p.period || p.kind === "lifetime" ? p.period || "lifetime" : p.iap_type} | ${p.state} | ${yn(p.family_sharable) || "–"} | ${p.intro_offer?.summary || "–"} | ${p.offered_in_app === false ? "NOT FOR SALE (hidden)" : "–"} | ${CODES.map((c) => fmt(p.prices[c]) || "n/a").join(" | ")} |\n`;
