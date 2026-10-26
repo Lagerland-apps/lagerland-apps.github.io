@@ -31,6 +31,35 @@ en:
     one_time_purchase: "one-time purchase"
     default_tier: "Premium"
     family_sharing: "Family Sharing"
+    decimal: "."
     trial_days: "{n}-day free trial"
     trial_months: "{n}-month free trial"
     trial_years: "{n}-year free trial"
+de:
+  territory: DEU
+  html_lang: de
+  hreflang: [de]
+  og_locale: de_DE
+  dir: ltr
+  native_name: "Deutsch"
+  live: false
+  # Checked 2026-10-26 in the German App Store (apps.apple.com/de): "9,99 €" with a no-break space (U+00A0).
+  currencies:
+    EUR: { symbol: "€", position: after, space: " ", decimals: 2, decimal: ",", group: "." }
+  strings:
+    free: "Kostenlos"
+    from: "ab"
+    per_month: "/Monat"
+    per_year: "/Jahr"
+    per_week: "/Woche"
+    lifetime: "einmalig"
+    once: "einmalig"
+    or: "oder"
+    and: "und"
+    one_time_purchase: "Einmalkauf"
+    default_tier: "Premium"
+    family_sharing: "Familienfreigabe"
+    decimal: ","
+    trial_days: "{n} Tage gratis testen"
+    trial_months: "{n} Monate gratis testen"
+    trial_years: "{n} Jahr gratis testen"

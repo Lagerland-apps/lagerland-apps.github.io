@@ -28,6 +28,10 @@ defaults:
     values:
       lang: en
   - scope:
+      path: "de"
+    values:
+      lang: de
+  - scope:
       path: ""
       type: apps
     values:

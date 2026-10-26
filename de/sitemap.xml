@@ -1,0 +1,9 @@
+---
+layout: none
+permalink: /de/sitemap.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- include sitemap-urls.xml lang="de" %}
+</urlset>
