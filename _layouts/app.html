@@ -62,10 +62,8 @@ layout: default
   },
   {%- endif -%}
   {%- comment %}
-    priceCurrency defaults to USD because every app's visible price.value
-    is the US App Store price in dollars. An app priced in another
-    currency can override via `price_currency:` frontmatter so the
-    schema currency matches the visible price.
+    priceCurrency is the catalog currency for the page's territory (f_currency):
+    USD on the English pages, see _data/locales.yml.
   {%- endcomment -%}
   {%- assign price_currency = f_currency -%}
   "offers": {%- assign price_model = page.price.model | downcase -%}

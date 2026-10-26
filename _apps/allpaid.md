@@ -5,14 +5,12 @@ name: "AllPaid"
 tagline: "Bills, calmly handled. No bank login."
 quick_answer: "AllPaid is a calm bill and subscription tracker for iPhone that doesn't ask for your bank login. It auto-fills the price and billing cycle for 40 common services — Netflix, Spotify, ChatGPT, Claude, Adobe, Microsoft 365, iCloud, rent, utilities, and more — shows every due date on a monthly calendar, sends one gentle reminder before each payment, and breaks down spending by category. Free, Pro from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime (≈40% of comparable lifetime unlocks). No ads, no account, no tracking."
 category: finance
-platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757253009"
 
 price:
   model: freemium
-  value: "Free — Pro from $1.99/mo, $12.99/yr, or $24.99 lifetime"
 price_tier: "Pro"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."

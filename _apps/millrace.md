@@ -8,14 +8,12 @@ redirect_from:
   - /apps/calm-2048/
 quick_answer: "Millrace is a tile-delivery puzzle for iPhone and iPad. Each of its 64 levels gives you a fixed board, a queue of tiles you can see before they arrive, and a move budget. Tiles enter one at a time through a single marked inlet on the edge of the grid, and your job is to build one exact value on one marked cell before the budget runs out. There are two ways to lose and both are yours to avoid: slide a tile over the inlet so the next arrival has nowhere to land, or overshoot the target by building a 128 when the level asked for a 64. Nothing is random. Every level was found by search and proved solvable by an automated solver before it shipped, so the shortest solution is known exactly. A separate Freeplay mode holds the endless merge board. The whole game is free — no ads, no subscription, no account — and it works fully offline and collects no data."
 category: games
-platforms: ["iOS", "iPadOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6759511759"
 
 price:
   model: free
-  value: "Free — optional theme packs & undo tokens"
 price_override: "Free — optional theme packs & undo tokens"
 
 plans_footnote: "The game is free in full — all 64 levels, Freeplay, the daily board, Hint, the Coach, and Game Center. Every purchase below is optional and none is ever required to finish a level. Theme packs are one-time, non-consumable unlocks restorable with your Apple Account. Undo bundles are consumable tokens. There is also an optional {P_IAP:Millrace Tip Jar} “Support the Developer” tip, which unlocks nothing. US pricing shown; Apple derives other storefronts and shows your local currency at checkout. Refunds go through the standard App Store flow. There are no subscriptions."

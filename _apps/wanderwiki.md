@@ -5,14 +5,12 @@ name: "WanderWiki"
 tagline: "Swipe Wikipedia in 32 languages. Ad-free."
 quick_answer: "WanderWiki is a Wikipedia discovery app for iPhone and iPad (iOS 18.2+) that turns the encyclopedia into a swipe-based card deck. Random pulls from the whole encyclopedia, Browse narrows the deck to one of 16 topics, For You blends the topics you pick, and Today in History reads Wikipedia's official On This Day feed in five categories (Selected, Events, Births, Deaths, Holidays). It covers 32 Wikipedia language editions; in 17 of them the topics map to that edition's own categories, so German + Science queries Wissenschaft, Physik and Chemie, not translated English categories. Saved articles download for offline reading and sort into folders, any article can be read aloud, and five widgets bring On This Day, Continue Reading and more to the Home Screen and Lock Screen. Free for 20 articles a day; WanderWiki Plus adds For You, Today in History and unlimited swiping for {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once. No ads, no behavioral tracking, no account."
 category: education
-platforms: ["iOS", "iPadOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6758459119"
 
 price:
   model: freemium
-  value: "Free (20 articles a day) — Plus from $1.99/mo, $8.99/yr, or $24.99 lifetime"
 price_lead: "Free (20 articles a day)"
 price_tier: "Plus"
 

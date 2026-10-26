@@ -5,7 +5,6 @@ name: "EarnLock"
 tagline: "Earn your screen time. Move, then scroll."
 quick_answer: "EarnLock is an iOS and Apple Watch app that locks distracting apps — Instagram, TikTok, X, Reddit, YouTube, anything you choose — until you earn your screen time by hitting a daily activity goal you set yourself. The free tier locks one app and unlocks it via daily steps; Premium adds unlimited apps, active minutes, and active energy. Apple's Family Controls renders a custom shield with a live progress ring (\"3,412 steps until unlock\") over each blocked app. Widgets keep the count visible, and Premium adds a Live Activity plus the Apple Watch app and complications, which read Apple Health directly so the count works without the iPhone. Streaks, rest days, a math-gated emergency unlock (1/day), most-attempted-blocked-app insights, a screen-time-saved estimate, and a reflection log are all built in. 39 locales (incl. 2 RTL), no account, no analytics SDK, no server. Free; Premium {P_MONTHLY}/month, {P_YEARLY}/year (with a 7-day free trial), or {P_LIFETIME} lifetime. Every paid tier — Monthly, Yearly, and Lifetime — is Family Sharing eligible: one purchase covers up to 5 family members at no extra cost."
 category: lifestyle
-platforms: ["iOS", "watchOS"]
 status: live
 jump_nav: true
 
@@ -13,7 +12,6 @@ app_store_url: "https://apps.apple.com/app/id6771099230"
 
 price:
   model: freemium
-  value: "Free — Premium from $1.99/mo or $19.99 lifetime"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. Lifetime is a one-time purchase — {P_LIFETIME} once, no auto-renew, no card kept on file beyond Apple's own. Every paid tier (Monthly, Yearly, Lifetime) is Family Sharing eligible — one purchase covers up to 5 family members at no extra cost."
 

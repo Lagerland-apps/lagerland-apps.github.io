@@ -24,7 +24,7 @@ faq:
   - q: "Is RightSplit better than splitting the bill equally?"
     a: "For two people, equal-split and item-level produce roughly the same result. For four people, item-level recovers around $20–$40 per dinner for whoever ordered modestly. For groups of ten, the swing can be $80–$150 per person, which is the point where equal-splitting turns a fun dinner into an awkward Venmo argument."
   - q: "How much does RightSplit cost?"
-    a: "The free tier of RightSplit covers equal splits, the tip calculator, your last five splits and your first receipt scan, which is enough for most two-person scenarios. Pro+ adds unlimited scans, item-level and uneven splits, unlimited history and Spaces for $3.99 a year or $7.99 lifetime."
+    a: "The free tier of RightSplit covers equal splits, the tip calculator, your last five splits and your first receipt scan, which is enough for most two-person scenarios. Pro+ adds unlimited scans, item-level and uneven splits, unlimited history and Spaces for {P_YEARLY@rightsplit} a year or {P_LIFETIME@rightsplit} lifetime."
 mentioned_apps:
   - rightsplit
 read_time: "4 min read"

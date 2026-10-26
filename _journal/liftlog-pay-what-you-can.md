@@ -77,7 +77,7 @@ A few clarifications, because I've already had two friends ask:
 
 ## Why LiftLog *and* GymLogger X
 
-Lagerland Apps already has a strength training app: [GymLogger X](/apps/gymlogger-x/). It has an Apple Watch app for logging sets from the wrist, generated programs and plateau detection; the price is $39.99 lifetime or $17.99/year. That app is not going anywhere. People who want a fast logger they can use from Apple Watch should buy GymLogger X — it's the better tool for that job.
+Lagerland Apps already has a strength training app: [GymLogger X](/apps/gymlogger-x/). It has an Apple Watch app for logging sets from the wrist, generated programs and plateau detection; the price is {P_LIFETIME@gymlogger-x} lifetime or {P_YEARLY@gymlogger-x}/year. That app is not going anywhere. People who want a fast logger they can use from Apple Watch should buy GymLogger X — it's the better tool for that job.
 
 LiftLog is a different bet:
 

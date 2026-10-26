@@ -5,14 +5,12 @@ name: "RightSplit"
 tagline: "Split bills from receipts."
 quick_answer: "RightSplit is a receipt-scanning bill splitter for iPhone. Snap a photo of any restaurant or bar receipt, assign each item to the person who ordered it, split shared dishes, spread tax and tip fairly, and send everyone their total via iMessage or WhatsApp. Free for equal splits, tip and your first receipt scan; Pro+ ({P_YEARLY}/year or {P_LIFETIME} lifetime) unlocks unlimited scans, item-by-item splits and Spaces for trips and shared homes. No ads, no account, no tracking — receipts read on-device with Apple's Vision framework."
 category: finance
-platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757268612"
 
 price:
   model: freemium
-  value: "Free — Pro+ from $3.99/yr or $7.99 lifetime"
 price_tier: "Pro+"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."

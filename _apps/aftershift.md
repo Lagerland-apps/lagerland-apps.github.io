@@ -5,14 +5,12 @@ name: "AfterShift"
 tagline: "The shift-worker sleep app where naps count as real recovery."
 quick_answer: "AfterShift is a sleep and recovery app for shift workers — nurses, paramedics, firefighters, pilots, and anyone on rotating, night, or on-call schedules. The iPhone app tracks naps as first-class recovery, scores how recovered you are before your next shift, and times caffeine to the schedule you actually work — not a 9-to-5 baseline. Free with Premium from {P_MONTHLY}/mo, {P_YEARLY}/yr, or {P_LIFETIME} lifetime. No ads, no health data selling, no account required."
 category: health
-platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757163182"
 
 price:
   model: freemium
-  value: "Free — Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
 

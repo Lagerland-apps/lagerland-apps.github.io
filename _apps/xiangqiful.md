@@ -17,13 +17,11 @@ status: live
 quick_answer: "Xiangqiful is a xiangqi (Chinese chess) training and game-analysis app for iPhone, iPad and Mac. You play ten AI opponents with distinct styles, from strength 400 to 1900. Afterwards Pikafish — the open-source engine that tops the computer-xiangqi rating lists — reviews every move on your device, grades it, names each mistake in xiangqi's own terms (a screenless cannon, a trapped horse, broken advisors, a missed Iron Bolt mate) and builds your next training session from what you missed. It includes 80 free lessons in 8 tracks, 902 mate problems — most from eight classical manuals — and more than 150 drills, and three piece sets — traditional characters, western symbols or a hybrid of both — so you can play without reading Chinese. Free, with Premium at {P_MONTHLY}/month or {P_YEARLY}/year (each with a one-week free trial) or {P_LIFETIME} once. Fully offline, no account, no ads, no data collected."
 
 category: games
-platforms: ["iOS", "iPadOS", "macOS"]
 
 app_store_url: "https://apps.apple.com/app/id6794340136"
 
 price:
   model: freemium
-  value: "Free — Premium from $1.99/mo"
 
 plans_footnote: "Prices in USD; the App Store shows your local price at checkout. Monthly and Yearly each start with a one-week free trial for new subscribers; cancel before it ends and you are not charged. They renew automatically unless turned off at least 24 hours before the current period ends — manage or cancel them in your Apple Account settings. Lifetime is a one-time purchase with nothing to renew. One purchase covers iPhone, iPad and Mac. Refunds are handled by Apple through the standard App Store refund flow."
 

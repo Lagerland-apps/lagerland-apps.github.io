@@ -5,7 +5,6 @@ name: "Pawza"
 tagline: "Your pet's whole life, in one place."
 quick_answer: "Pawza is a private pet health record keeper for iPhone and iPad. Snap any vet document and on-device AI reads it and fills in vaccinations, medications, and visit notes automatically. Track shots, meds, weight trends, and photos for every pet, get a gentle reminder on the day anything is due, and export a clean vet-visit PDF in one tap. Free for one pet; Pawza Pro unlocks unlimited pets and scans, AI auto-fill and summaries, the unlimited photo gallery, and the vet PDF — from {P_MONTHLY}/month, {P_YEARLY}/year (7-day free trial), or {P_LIFETIME} once with Family Sharing. No ads, no tracking, no account. Data stays on your device with optional iCloud sync."
 category: health
-platforms: ["iOS", "iPadOS"]
 status: live
 show_body: true
 
@@ -13,7 +12,6 @@ app_store_url: "https://apps.apple.com/app/id6773507068"
 
 price:
   model: freemium
-  value: "Free — Pawza Pro from $2.99/mo"
 price_tier: "Pawza Pro"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The Lifetime tier is a one-time purchase — no auto-renew. Monthly and Yearly include a 7-day free trial and can be cancelled anytime in Settings before renewal. Pawza is universal — one purchase runs on both iPhone and iPad."

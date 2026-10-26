@@ -5,14 +5,12 @@ name: "MediaKit"
 tagline: "Every media tool. One app for iPhone & Mac."
 quick_answer: "MediaKit is a native iPhone and Mac app with 152 local tools for compressing, converting, and editing video, audio, images, PDFs, and archives. Drop any file and it picks the right tool — every operation runs on-device via Apple frameworks, never uploaded. Free 3-day trial; five core tools stay free forever. Pro from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime. No tracking, no account."
 category: utilities
-platforms: ["iOS", "macOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6761451361"
 
 price:
   model: freemium
-  value: "Free trial — Pro from $3.99/mo, $22.99/yr, or $39.99 lifetime"
 price_lead: "Free trial"
 price_tier: "Pro"
 

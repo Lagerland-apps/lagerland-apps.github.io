@@ -5,7 +5,6 @@ name: "Mockly"
 tagline: "Professional App Store screenshots for Mac."
 quick_answer: "Mockly is a native macOS app that turns your screenshots into App Store–ready exports: real 3D device frames rendered with Apple's Metal framework, percentage-based layouts that scale across every device size, AI translation across 39 App Store locales, and direct upload to App Store Connect by device and locale. Everything runs locally on your Mac — no server, no account, no upload of pre-release assets to a third party. One-time {P_APP}, Family Sharing included. Subscription competitors in this category run $19–$49 per month."
 category: graphics
-platforms: ["macOS"]
 status: live
 jump_nav: true
 
@@ -17,7 +16,6 @@ app_store_url: "https://apps.apple.com/app/id6756589122"
 
 price:
   model: one-time-purchase
-  value: "$12.99 — one-time purchase"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. Mockly is a one-time purchase — no auto-renew, no recurring fees."
 

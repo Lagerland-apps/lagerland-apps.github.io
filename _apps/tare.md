@@ -16,13 +16,11 @@ status: live
 quick_answer: "Tare is a wordless balance logic puzzle for iPhone and iPad. Each level is a painted hanging mobile: you drag weights numbered 1 to 9 onto hooks so that every beam balances at once — weight times distance from the pivot must match on both sides, and a nested beam's whole load acts at the hook it hangs from. From the first chapter some weights hide inside a bubble marked “?”, and any beam carrying an unsolved “?” sways instead of tilting, so the scale can never tell you what the secret weighs. Small picture cards show how the pieces compare, and you deduce the value from those. There are 80 handcrafted levels in four chapters, each one machine-checked to have exactly one answer. The first 20 are free to keep; one {P_IAP:Tare Full Access} purchase unlocks the other 60 for good, with Family Sharing. No ads, no timers, no lives, no account, fully offline, and no data collected."
 
 category: games
-platforms: ["iOS", "iPadOS"]
 
 app_store_url: "https://apps.apple.com/app/id6806255929"
 
 price:
   model: free
-  value: "20 levels free · $2.99 unlocks 60 more"
 price_override: "20 levels free · {P_IAP:Tare Full Access} unlocks 60 more"
 
 pricing_note: "Every price is on the App Store listing. There is no subscription to cancel, and Chapter I stays free — no trial, no card."

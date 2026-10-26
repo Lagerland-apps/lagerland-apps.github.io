@@ -24,7 +24,7 @@ faq:
   - q: "What is the difference between AppMeta and AppMeta Pulse?"
     a: "AppMeta is the native Mac client for the write surface of App Store Connect — metadata editing, review responses, version submission. AppMeta Pulse is the iPhone-side monitoring companion: revenue, subscription health, and country rollups, plus, since the end of April 2026, customer reviews you can reply to. They share an API surface and a pricing philosophy but solve different jobs."
   - q: "How much does AppMeta Pulse cost?"
-    a: "AppMeta Pulse is free to download, and the free download opens a demo on sample data. Your own numbers, the portfolio view, and the widgets need a subscription or the lifetime unlock. When this post was written that was $0.99 a month, $8.99 a year, or $17.99 lifetime; the App Store now lists $0.99 a month, $1.99 a year, or $2.99 lifetime. The lifetime tier is the recommended option for a tool used briefly but relied on."
+    a: "AppMeta Pulse is free to download, and the free download opens a demo on sample data. Your own numbers, the portfolio view, and the widgets need a subscription or the lifetime unlock. When this post was written that was $0.99 a month, $8.99 a year, or $17.99 lifetime; the App Store now lists {P_MONTHLY@appmeta-pulse} a month, {P_YEARLY@appmeta-pulse} a year, or {P_LIFETIME@appmeta-pulse} lifetime. The lifetime tier is the recommended option for a tool used briefly but relied on."
 mentioned_apps:
   - appmeta-pulse
   - appmeta
@@ -88,7 +88,7 @@ Pulse doesn't do this. It has no shared access tokens and no way to give another
 
 ## The pricing structure
 
-Pulse is free to download, and the free download runs a demo on sample data so you can see what it does. Your own numbers, the portfolio view, and the widgets need Pro. At the time of writing, Pro was $0.99/month, $8.99/year, or $17.99 lifetime; the App Store now lists $0.99/month, $1.99/year, or $2.99 lifetime.
+Pulse is free to download, and the free download runs a demo on sample data so you can see what it does. Your own numbers, the portfolio view, and the widgets need Pro. At the time of writing, Pro was $0.99/month, $8.99/year, or $17.99 lifetime; the App Store now lists {P_MONTHLY@appmeta-pulse}/month, {P_YEARLY@appmeta-pulse}/year, or {P_LIFETIME@appmeta-pulse} lifetime.
 
 The pricing is intentionally low. The argument: this is not a tool a studio uses for hours a day; it's a tool you check briefly and rely on. Pricing it like a productivity-software flagship would mismatch its actual position in the indie's stack. A one-time lifetime price puts it firmly in the "buy it and forget about it" tier, which is the right tier for what it does.
 

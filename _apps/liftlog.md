@@ -5,14 +5,12 @@ name: "LiftLog"
 tagline: "The lift log that feels like equipment."
 quick_answer: "LiftLog is a design-led strength training log for iPhone built around tabular numerics, a custom haptic keypad for logging sets, and athlete-grade polish. It ships 40 ready programs (StrongLifts 5×5, Starting Strength, PPL, Upper/Lower, 5/3/1 and more) whose weights progress automatically, and tracks estimated 1RM, volume, and Rep PRs at 1/3/5/10 reps. Free 7-day trial, no card. Pay-what-you-can one-time from {P_IAP:Minimum} to {P_IAP:Patron}. No subscription, no tracking, no account."
 category: fitness
-platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6760043411"
 
 price:
   model: one-time
-  value: "Free 7-day trial — then $9.99–$39.99 (pay what you can, one-time)"
 price_override: "Free 7-day trial — then {P_IAP_MIN}–{P_IAP_MAX} (pay what you can, one-time)"
 free_tier: false
 

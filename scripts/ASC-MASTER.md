@@ -41,7 +41,7 @@ How the site uses it (Phase 1 of PLAN-master-data-on-site.md):
 - `_includes/app-facts.html` is the single reader. `{% include app-facts.html app=page %}` assigns `f_platforms`,
   `f_platforms_and`, `f_monthly`/`f_yearly`/`f_weekly`/`f_lifetime`/`f_app_price`, `f_trial`, `f_family`,
   `f_price_value` (standard line or override), and the structured-data numbers `f_schema_price`, `f_schema_high`,
-  `f_offers`, `f_currency`. Layouts and includes call it right before use, never read `platforms:`/`price:` directly.
+  `f_offers`, `f_currency`. Layouts and includes call it right before use; nothing reads `platforms:` or `price.value` any more (they were removed).
 - `_includes/money.html` formats one price using `_data/locales.yml` (currency symbol, position, decimals,
   separators). A currency without a rule prints as "5500 KRW", so a missing localization rule is visible.
 - `_includes/tokens.html` expands tokens in a string: `{P_MONTHLY} {P_YEARLY} {P_WEEKLY} {P_LIFETIME} {P_APP}
@@ -173,9 +173,18 @@ This file is the only hand-written data; everything else is fetched.
 - `platforms.*: pending` means a version exists but is not on the store yet (e.g. a new iOS version of a
   Mac-only app waiting for review).
 
-## Planned use on the site
+## How to keep the site current (and what is left typed)
 
-The app pages still carry hand-written `price:` / `plans:` / `platforms:` front matter. The master JSON is
-meant to replace those (computed in the layouts from `site.data.asc_master`, joined by `slug`), so a price
-change in App Store Connect plus one script run updates the website. Until that wiring exists, treat the JSON
-as the reference when editing `_apps/*.md`.
+Workflow after any change in App Store Connect (price, trial, Family Sharing, platform, new app version):
+1. `node scripts/sync-asc-master.mjs` (or `--app <slug>` for one app), which rewrites `_data/catalog.json`.
+2. Build, run `python3 scripts/seo-audit.py` (0 errors), stamp the pages whose visible text changed, commit
+   `_data/catalog.json`.
+
+`_apps/*.md` front matter no longer has `platforms:` or `price.value` (removed 2026-10-26; the catalog is the only
+source). `price.model` stays, as an editorial label for the pills. An app page without a catalog entry renders without
+platforms and price and the audit reports it as an error.
+
+Left typed on purpose, by rule: competitor prices; example amounts; claims relative to a competitor ("67% cheaper
+than AppStats"); the hidden WanderWiki weekly; and a handful of our own prices inside mixed sentences about a
+competitor. After a price change, `grep` the old amount in `alternatives/ _journal/ guides/` to find any of those.
+Journal posts that quote a past price ("was $8.99 a year") are history and stay as written.

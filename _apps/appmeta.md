@@ -5,14 +5,12 @@ name: "AppMeta"
 tagline: "App Store Connect, native on your Mac."
 quick_answer: "AppMeta is a native macOS client for App Store Connect. It edits app metadata across all 50 ASC locales side-by-side, shows each changed field next to the live App Store Connect value before it pushes, checks your keywords on-device and, if you turn it on, estimates live keyword difficulty and demand from the App Store. AI translation and keyword suggestions run through your own provider (Anthropic, OpenAI, Google, any OpenAI-compatible endpoint, or Apple Intelligence on-device). It also edits In-App Purchases, subscriptions and Game Center, manages TestFlight builds and reviews, and submits versions for review. macOS 14+ Sonoma. App Store Connect API v1 with a team key (.p8) stored in macOS Keychain — no app-specific passwords, no browser session. The free download runs in demo mode; connecting your account takes Pro at {P_YEARLY}/year or {P_LIFETIME} lifetime."
 category: developer-tools
-platforms: ["macOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6758547802"
 
 price:
   model: freemium
-  value: "$17.99/year or $29.99 lifetime"
 price_override: "{P_YEARLY}/year or {P_LIFETIME} lifetime"
 free_tier: false
 

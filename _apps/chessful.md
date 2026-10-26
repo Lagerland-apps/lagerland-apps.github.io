@@ -5,14 +5,12 @@ name: "Chessful"
 tagline: "Understand your mistakes. Improve every game."
 quick_answer: "Chessful is a chess training and game analysis app for iPhone, iPad, and Mac. It uses Stockfish to review every move, then explains your mistakes in plain language and builds adaptive training from your actual weaknesses — tactics, defense, openings, endgames. Includes 40 AI opponents. Free with Premium from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime. Fully offline, no account, no ads, no tracking."
 category: games
-platforms: ["iOS", "iPadOS", "macOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6761336870"
 
 price:
   model: freemium
-  value: "Free — Premium from $4.99/mo"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew. Universal Purchase across iPhone, iPad, and Mac."
 

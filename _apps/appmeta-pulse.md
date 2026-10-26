@@ -5,14 +5,12 @@ name: "AppMeta Pulse"
 tagline: "The monitoring-first App Store Connect dashboard for indie iOS developers."
 quick_answer: "AppMeta Pulse is a monitoring-first App Store Connect dashboard for iPhone. Indie iOS developers use it to check proceeds or sales, MRR, active subscriptions, trial conversions, and downloads across their entire app portfolio in seconds, and to reply to App Store reviews — without opening a browser, and with no controls for builds, pricing, or metadata. It has 12 Home Screen and Lock Screen widgets. Built on Apple's official App Store Connect API with an Admin key you create. The App Store also offers it on Apple silicon Macs and Apple Vision Pro, where it runs as the iPhone app. Free download with a demo on sample data; {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime, with a 7-day free trial. No ads, no tracking, no analytics SDKs."
 category: business
-platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6758788164"
 
 price:
   model: subscription
-  value: "Free trial — from $0.99/mo"
 price_lead: "Free trial"
 price_tier: "Pro"
 free_tier: false

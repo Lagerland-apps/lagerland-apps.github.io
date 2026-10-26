@@ -15,7 +15,7 @@ seo:
 date: 2026-02-21
 last_updated: 2026-10-25
 lede: "App Store Connect is the most consequential web app most indie developers use, and it has been the same web app for ten years. AppMeta is the studio's quietest app and arguably the most useful — a native Mac client for the ASC API, built for the day you're shipping in fourteen locales and need to stop scrolling."
-quick_answer: "AppMeta is a native Mac client for the App Store Connect API built for indie developers shipping across many locales. It offers side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, review replies for each of your apps, and version submission. Priced as a $29.99 one-time lifetime purchase, or $17.99 a year, with a free demo mode."
+quick_answer: "AppMeta is a native Mac client for the App Store Connect API built for indie developers shipping across many locales. It offers side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, review replies for each of your apps, and version submission. Priced as a {P_LIFETIME@appmeta} one-time lifetime purchase, or {P_YEARLY@appmeta} a year, with a free demo mode."
 faq:
   - q: "Is there a native Mac app for App Store Connect?"
     a: "AppMeta is a native macOS client for the App Store Connect API. It gives you side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, review replies for every app in your catalogue, and version submission — all without using the App Store Connect web interface."

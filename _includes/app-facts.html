@@ -5,7 +5,8 @@
   Variables assigned here leak into the including template on purpose (Jekyll include scope).
     app        the app document (page, or an item of site.apps)
     territory  optional; default page.territory, then the language's territory, then USA
-  When the app has no catalog entry everything falls back to its front matter, so a new app page still renders.
+  An app with no catalog entry renders without platforms or price (the audit reports it as an error): run
+  scripts/sync-asc-master.mjs once the app exists in App Store Connect.
   Editorial front matter this include honours (none of it is a number):
     price_lead      text before the dash in the standard price line (default "Free")
     price_tier      name of the paid tier (default "Premium")
@@ -19,7 +20,7 @@
 {%- assign f_count = site.data.catalog.meta.live_app_count -%}
 
 {%- comment %} ---- platforms ---- {%- endcomment -%}
-{%- if f_cat -%}{%- assign f_platforms = f_cat.platforms -%}{%- else -%}{%- assign f_platforms = include.app.platforms -%}{%- endif -%}
+{%- assign f_platforms = f_cat.platforms | default: empty -%}
 {%- comment %} "A", "A and B", "A, B, and C": for running sentences. {%- endcomment -%}
 {%- assign f_platforms_and = "" -%}
 {%- for f_pl in f_platforms -%}
@@ -130,7 +131,7 @@
 {%- if include.app.price_override -%}
   {%- capture f_price_value -%}{%- include tokens.html text=include.app.price_override -%}{%- endcapture -%}
 {%- elsif f_cat == nil -%}
-  {%- assign f_price_value = include.app.price.value -%}
+  {%- assign f_price_value = "" -%}
 {%- elsif f_app_free == false -%}
   {%- capture f_price_value -%}{{ f_app_price }} — {{ f_str.one_time_purchase }}{%- endcapture -%}
 {%- elsif f_has_plans -%}
@@ -144,5 +145,5 @@
   {%- endif -%}
   {%- capture f_price_value -%}{{ include.app.price_lead | default: f_str.free }} — {{ include.app.price_tier | default: f_str.default_tier }} {{ f_str.from }} {{ f_list }}{%- endcapture -%}
 {%- else -%}
-  {%- assign f_price_value = include.app.price.value -%}
+  {%- assign f_price_value = "" -%}
 {%- endif -%}

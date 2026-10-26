@@ -5,14 +5,12 @@ name: "Soon."
 tagline: "Countdowns worth waiting for."
 quick_answer: "Soon. is a countdown and planner app for iPhone that turns trips, weddings, birthdays, anniversaries, and milestones into living countdowns with full-bleed photo backgrounds, live destination weather, smart Plan Mode checklists, and widgets for Home Screen, Lock Screen, and StandBy. Free with Premium from {P_MONTHLY}/month or {P_LIFETIME} lifetime. No ads, no tracking, no account required."
 category: lifestyle
-platforms: ["iOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757280643"
 
 price:
   model: freemium
-  value: "Free — Premium from $1.99/mo"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
 

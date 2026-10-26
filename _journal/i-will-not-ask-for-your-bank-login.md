@@ -94,6 +94,6 @@ For everyone else — the user who knows roughly what they pay for, wants to be 
 
 This post is going up on the 31st of January, and I am aware the timing is not accidental. Tax season is when people look at their finances most carefully and most apprehensively. It is also the season when fintech apps run their biggest advertising spend, because conversion is highest when anxiety is highest.
 
-The point of [AllPaid](/apps/allpaid/) is to be the calmer answer in that window. No bank login. No surveillance. No anxiety-driven onboarding. Just the boring, useful, local thing that helps you not miss a bill and not pay a late fee. Free, with Pro at $1.99 a month, $12.99 a year, or $24.99 lifetime — no subscription required.
+The point of [AllPaid](/apps/allpaid/) is to be the calmer answer in that window. No bank login. No surveillance. No anxiety-driven onboarding. Just the boring, useful, local thing that helps you not miss a bill and not pay a late fee. Free, with Pro at {P_MONTHLY@allpaid} a month, {P_YEARLY@allpaid} a year, or {P_LIFETIME@allpaid} lifetime — no subscription required.
 
 If this is the year you stop handing over read-access to your bank in exchange for features you could write yourself, this is the studio that thinks you're right.

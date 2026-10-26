@@ -5,7 +5,6 @@ name: "Observa"
 tagline: "Sleep, energy & recovery insights."
 quick_answer: "Observa is a private health insights app for iPhone and iPad that reads your Apple Health data — sleep stages, HRV (SDNN) trends, ECG sinus-rhythm, resting heart rate, activity — no matter which device recorded it (Apple Watch, Oura, Whoop, Garmin, Fitbit, or any app that writes to Apple Health), and explains in plain language which of your habits actually shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. No servers, no account, no data upload (verified by Apple's App Privacy nutrition label). Free with Pro from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime."
 category: health
-platforms: ["iOS", "iPadOS"]
 status: live
 jump_nav: true
 
@@ -13,7 +12,6 @@ app_store_url: "https://apps.apple.com/app/id6757438990"
 
 price:
   model: freemium
-  value: "Free — Pro from $2.99/mo"
 price_tier: "Pro"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew. All plans run on iPhone and iPad; Observa reads from Apple Health, so any device that writes there — Apple Watch, Oura, Whoop, Garmin, Fitbit — works with no separate pairing."

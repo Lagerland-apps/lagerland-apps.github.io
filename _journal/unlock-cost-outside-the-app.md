@@ -108,6 +108,6 @@ These are the costs. I think they are the right costs to pay.
 
 A screen-time blocker that can be talked out of blocking in the moment is not a blocker — it is decoration. A screen-time blocker that ships behavioural data to a third-party server is not a tool — it is a study you didn't sign up for.
 
-[EarnLock](/apps/earnlock/) is the version of the category that takes both of those positions seriously. Free; Premium $1.99/month, $9.99/year (with a 7-day free trial), or $19.99 lifetime. Every paid tier — Monthly, Yearly, and Lifetime — is Family Sharing eligible.
+[EarnLock](/apps/earnlock/) is the version of the category that takes both of those positions seriously. Free; Premium {P_MONTHLY@earnlock}/month, {P_YEARLY@earnlock}/year (with a 7-day free trial), or {P_LIFETIME@earnlock} lifetime. Every paid tier — Monthly, Yearly, and Lifetime — is Family Sharing eligible.
 
 If you can unlock it in two taps, it isn't a blocker.

@@ -5,14 +5,12 @@ name: "Shogiful"
 tagline: "Master shogi. Move by move."
 quick_answer: "Shogiful is a shogi (Japanese chess) training and game analysis app for iPhone, iPad, and Mac. It uses YaneuraOu — the strongest open-source shogi engine — to review every move you play, explains your mistakes in plain language, and builds adaptive training from your real weaknesses, including the parts of shogi chess apps can't teach: drops, promotions, castle defense, and tsume. Western piece sets make the board readable without knowing any kanji. Includes 10 AI opponents and a tsume-shogi puzzle library. Free with Premium from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime. Fully offline, no account, no ads, no tracking."
 category: games
-platforms: ["iOS", "iPadOS", "macOS"]
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6761656926"
 
 price:
   model: freemium
-  value: "Free — Premium from $1.99/mo"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The Lifetime tier is a one-time purchase — no auto-renew. Universal Purchase across iPhone, iPad, and Mac."
 
