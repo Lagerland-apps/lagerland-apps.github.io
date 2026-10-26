@@ -47,7 +47,7 @@ plans:
   - name: "Lifetime"
     price: "{P_LIFETIME} once"
     kind: lifetime
-    summary: "WanderWiki Plus for good, paid once, for about what a year of monthly billing costs."
+    summary: "WanderWiki Plus for good, paid once, for about what {LIFETIME_MONTHS} months of monthly billing cost."
     features:
       - "Everything in Annual"
       - "One-time purchase, no renewal"

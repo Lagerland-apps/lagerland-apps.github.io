@@ -126,7 +126,7 @@ hero:
   secondary: "Earn your screen time."
   subheadline: "EarnLock locks Instagram, TikTok, X, YouTube, Reddit, or whatever you pick until you hit a daily activity goal you set yourself: steps in the free tier, active minutes or calories in Premium. The shield over each blocked app shows a live progress ring counting down (\"3,412 steps until unlock\"). The Apple Watch app keeps the count on your wrist when the iPhone isn't with you. No account, no analytics SDK, and no server. {P_LIFETIME} lifetime."
   cta_label: "Download Free"
-  cta_subline: "{P_LIFETIME} lifetime · pay once, no subscriptions, no account."
+  cta_subline: "{P_LIFETIME} lifetime · no subscription required, no account."
   alt: "EarnLock home screen on iPhone showing 1,974 steps on a live progress ring with “Earn 2,026 more steps to unlock” beneath, and the Locked apps grid including Instagram and TikTok"
 
 founder:

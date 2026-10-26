@@ -15,16 +15,16 @@ seo:
 last_updated: 2026-10-26
 date: 2026-01-01
 lede: "It's the first day of the year, and all over the internet people are listing what they will build, ship, optimize, and grow. This is a shorter list: what this studio is choosing not to do."
-quick_answer: "Lagerland Apps is choosing not to add advertising SDKs, not to chase a ten-app year, not to bolt streaks or daily-engagement loops onto its catalogue, not to ship fashionable AI features that earn no place, and not to raise outside funding. The fourteen-app catalogue stays where it is, and the plan is to refine what exists and keep the bar for new apps high."
+quick_answer: "Lagerland Apps is choosing not to add advertising SDKs, not to chase a ten-app year, not to bolt streaks or daily-engagement loops onto its catalogue, not to ship fashionable AI features that earn no place, and not to raise outside funding. The plan was to keep the catalogue at fourteen apps and refine what exists; that part didn't hold, and the catalogue has since grown to {APP_COUNT}."
 faq:
   - q: "Will Lagerland Apps add advertising or analytics SDKs in 2026?"
-    a: "No. Lagerland Apps has zero third-party tracking SDKs across the entire fourteen-app catalogue: no analytics, no advertising networks, and no telemetry that quietly fingerprints users. That will not change in 2026. Adding an ad SDK would undo the studio's whole positioning, and the studio isn't willing to make that trade."
+    a: "No. Lagerland Apps has zero third-party tracking SDKs across the entire catalogue: no analytics, no advertising networks, and no telemetry that quietly fingerprints users. That will not change in 2026. Adding an ad SDK would undo the studio's whole positioning, and the studio isn't willing to make that trade."
   - q: "Is Lagerland Apps raising outside funding?"
     a: "No. There is no funding round planned for 2026. The studio is one person, the apps are profitable, and investors would bring ambitions that do not fit a one-person operation. The honest version of 'we are not raising right now' is 'we do not want to.'"
   - q: "Will any Lagerland app add a streak counter or daily engagement loop?"
     a: "That was the plan on 1 January 2026, and three apps have since added one: EarnLock has a step-goal streak with a weekly rest day, Millrace pays out extra undos at daily-streak milestones, and WanderWiki added a reading streak with an optional daily reminder. Taskful Day and AfterShift still have no streak, no daily nag, and no social comparison."
   - q: "How many new apps will Lagerland Apps ship in 2026?"
-    a: "Few, if any. The current fourteen-app catalogue is at the limit of what one person can support properly. A new app will only ship in 2026 if the idea is good enough to displace something else. AI features will only appear where they earn a place; Observa and Chessful are the existing examples."
+    a: "The plan in January was few, if any, because fourteen apps already seemed the limit of what one person can support properly. That didn't hold: the catalogue has since grown to {APP_COUNT} apps. AI features will only appear where they earn a place; Observa and Chessful are the existing examples."
 mentioned_apps:
   - taskful-day
   - aftershift

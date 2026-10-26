@@ -58,7 +58,7 @@ plans:
       - "Everything in Pro Annual, permanently unlocked"
       - "Not a subscription, so nothing auto-renews or expires"
       - "Family Sharing with up to 5 family members at no extra cost"
-      - "Break-even vs the annual tier in ~2.2 years of use"
+      - "Break-even vs the annual tier in about {LIFETIME_YEARS} years of use"
       - "Cheapest lifetime tier among major lifting apps ({P_LIFETIME} vs Hevy $74.99 vs Strong $99.99)"
       - "Future Pro features are included at no extra charge"
     highlight_label: "Best value · ~1 in 3 pick this"

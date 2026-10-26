@@ -91,7 +91,7 @@ The SaaS competitors aren't doing anything wrong. AppLaunchpad, Screenshots.pro,
 
 - **App Store Connect upload via Keychain.** When you push the finished screenshots to ASC, you authenticate via Apple's framework, and credentials live in Keychain. The upload goes straight to App Store Connect's API, matched to each device and locale, with no manual browser uploads and no third party in between.
 
-- **One-time $12.99.** Family Sharing for up to six people. The architecture makes the low cost possible, and the low cost makes the one-time price possible.
+- **One-time {P_APP@mockly}.** Family Sharing for up to six people. The architecture makes the low cost possible, and the low cost makes the one-time price possible.
 
 The price follows from the architecture. Marketing didn't set it.
 

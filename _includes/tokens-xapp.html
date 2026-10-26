@@ -16,4 +16,10 @@
     {%- endif -%}
   {%- endfor -%}
 {%- endif -%}
+{%- if xa_out contains "{APP_COUNT" -%}
+  {%- comment -%} Global counts too, so feeds and AI files that only run this include get them. {%- endcomment -%}
+  {%- assign xa_count = site.data.catalog.meta.live_app_count -%}
+  {%- assign xa_other = xa_count | minus: 1 -%}
+  {%- assign xa_out = xa_out | replace: "{APP_COUNT_OTHER}", xa_other | replace: "{APP_COUNT}", xa_count -%}
+{%- endif -%}
 {{- xa_out -}}

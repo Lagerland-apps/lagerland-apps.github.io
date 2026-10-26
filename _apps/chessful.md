@@ -237,40 +237,6 @@ comparison_table:
       values: ["iPhone + iPad + Mac (Universal Purchase)", "Web + iPhone + iPad + Mac + Android", "Web + iPhone + iPad + Android", "iPhone + iPad + Mac + Vision", "Android primary; iOS limited"]
   footnote: "Competitor positioning summarised from each app's public landing page and App Store listing on 2026-05-13. Pricing and features change often, so check before switching."
 
-# Roadmap: addresses the three most-asked product-gap questions
-# (PGN / Lichess / Chess.com import; Apple Watch; puzzle trainer) on-page
-# rather than burying them in FAQ.
-roadmap:
-  overline: "Roadmap"
-  heading: "What's shipped, what's next."
-  intro: "Chessful covers offline play, analysis, and adaptive training on iPhone, iPad, and Mac today. Below is the public roadmap. Dates are targets, not commitments; if one slips, you'll hear about it here first."
-  items:
-    - when: "Shipped"
-      title: "Stockfish analysis + plain-language explanations"
-      detail: "Live today on iPhone, iPad, and Mac. Every move is reviewed, and every significant mistake is translated into a sentence a club player can read."
-      status: "shipped"
-    - when: "Shipped"
-      title: "40 AI opponents + 5-dimension skill tracking"
-      detail: "Forty distinct opponent personalities, each with its own opening repertoire and structural preference. Skill tracking across tactics, defense, positional play, openings, endgames."
-      status: "shipped"
-    - when: "Shipped"
-      title: "Adaptive training queue with spaced repetition"
-      detail: "Training sessions generated from the motifs detected in your own losses, scheduled with spaced repetition."
-      status: "shipped"
-    - when: "Targeted 2026 Q3"
-      title: "PGN import for your existing games"
-      detail: "Import any PGN file (one game or a tournament archive) and have Chessful analyse the lot, building your skill profile from games you've already played. Standard PGN parsing, so it works with exports from any chess platform."
-    - when: "Targeted 2026 Q4"
-      title: "Chess.com & Lichess game import"
-      detail: "Paste a Chess.com or Lichess username and pull your last N games into Chessful's analyser and training queue. Read-only: nothing is posted or synced back. Imports are stored on-device only."
-    - when: "Targeted 2026 Q4"
-      title: "Apple Watch Smart Stack complication"
-      detail: "Today's training-queue card on the wrist. Tap to start a 5-minute pattern-recognition session. It syncs through standard iOS pairing, with no separate account."
-    - when: "Under consideration"
-      title: "Standalone puzzle / tactics trainer"
-      detail: "A puzzle mode separate from the games-derived training queue, drawing on a curated motif library. It is out of scope for now, since Chessful is built on the idea that training from your own losses beats generic puzzle-rush, but we're looking at whether a complementary mode would help new users before they have many games logged."
-  disclaimer: "Roadmap last reviewed 2026-05-13. Targeted dates can slip; shipped items are live on the App Store."
-
 screenshots:
   - src: "/assets/screenshots/chessful/1.png"
     alt: "Chessful game review on iPhone with an accuracy score and key moments"
@@ -306,7 +272,7 @@ faq:
   - q: "How is Chessful different from Magnus Trainer?"
     a: "Magnus Trainer is a celebrity-coached lessons app, with content curated by Magnus Carlsen and his team and organised as bite-sized games and theory courses. Chessful has no celebrity content; its training comes from the specific patterns in your own losses. The two complement each other, Magnus Trainer for structured lessons and Chessful for adaptive training on your real weaknesses, and many improving players use both."
   - q: "How is Chessful different from Chessis?"
-    a: "Chessis is the closest direct peer: both have Stockfish, on-device analysis, plain-language explanations, and one-time pricing. Chessful adds the adaptive training queue (spaced repetition on motifs from your games), 40 distinct AI opponents to play against, and Universal Purchase across iPhone, iPad, and Mac. Chessis is currently Android-primary, with one-time Pro pricing and a tight focus on the analysis flow."
+    a: "Chessis is the closest direct peer: both have Stockfish, on-device analysis, plain-language explanations, and a one-time purchase option. Chessful adds the adaptive training queue (spaced repetition on motifs from your games), 40 distinct AI opponents to play against, and Universal Purchase across iPhone, iPad, and Mac. Chessis is currently Android-primary, with one-time Pro pricing and a tight focus on the analysis flow."
   - q: "Is Chessful good for beginners?"
     a: "Chessful suits players who know the rules and have played at least a few full games. If you're an absolute beginner learning how the pieces move, start with a teaching app, because Chessful's training assumes you can read a position. It is aimed at players rated around 800 to 1800 who are stuck on a plateau and don't understand why."
   - q: "Does Chessful work offline?"
@@ -320,11 +286,11 @@ faq:
   - q: "Does Chessful need an account?"
     a: "No. Chessful needs no account, no sign-up, and no personal information. Your games, analysis, and training progress stay on your device. Universal Purchase status syncs through standard iCloud Keychain, which is Apple's mechanism and not a Chessful account."
   - q: "Can I import games from Chess.com or Lichess?"
-    a: "Not yet. Chess.com and Lichess game import is targeted for 2026 Q4 (see the roadmap on this page). PGN import, the universal format for exchanging chess games, is targeted for 2026 Q3 and will come first. When the Chess.com and Lichess import ships, you'll be able to paste a username and pull your recent games into Chessful's analyser and training queue."
+    a: "No. Chessful doesn't import games from Chess.com or Lichess, or PGN files. It analyses the games you play in the app against its 40 AI opponents and builds your training queue from those."
   - q: "Does Chessful have a tactics-puzzle trainer like Chess.com?"
-    a: "Chessful's training queue comes from the mistake patterns in your own games, not from a generic puzzle pool, on the view that adaptive training on your real weaknesses works better than puzzle-rush. A standalone curated puzzle mode is under consideration on the roadmap, mainly to help new users before they have many games logged in the app."
+    a: "Chessful's training queue comes from the mistake patterns in your own games, not from a generic puzzle pool, on the view that adaptive training on your real weaknesses works better than puzzle-rush. There is no standalone puzzle mode."
   - q: "Does Chessful work on Apple Watch?"
-    a: "Not yet. Apple Watch support (a Smart Stack complication with today's training-queue card) is targeted for 2026 Q4 (see the roadmap on this page). Dates are targets, not commitments. iPad and Mac are supported today via Universal Purchase."
+    a: "No. Chessful has no Apple Watch app. It runs on iPhone, iPad, and Mac, with one Universal Purchase covering all three."
   - q: "Is Chessful a replacement for Chess.com or Lichess?"
     a: "No. Chessful has no ranked play, live human matchmaking, or leaderboards. It is for the player who wants to improve against varied AI opponents with readable explanations, without an account or a daily quota. For ranked human play, Chess.com and Lichess remain the right tools, and many improving players use Chessful for analysis and training alongside one of them for matchmaking."
 

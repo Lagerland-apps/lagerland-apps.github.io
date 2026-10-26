@@ -95,7 +95,7 @@ The free tier of Soon. doesn't notify at all. Plan Mode shows on the event card 
 
 It doesn't restructure your checklist. If you hide a task, it stays hidden, and Soon. won't re-add it next week. If you move a task from T-14 to T-21, that is where it stays.
 
-It doesn't share. Soon. is on-device only. Plan Mode checklists don't sync between users, so two people planning the same wedding each install Soon. and create the event separately. (Shared events through opt-in iCloud are on the long-term roadmap, and the privacy model has to survive that change.)
+It doesn't share. Soon. is on-device only. Plan Mode checklists don't sync between users, so two people planning the same wedding each install Soon. and create the event separately.
 
 It doesn't optimise. No algorithm watches which tasks you complete and reweights the template. The template you start with is the template you get, and any personalisation comes from your own edits.
 

@@ -29,7 +29,7 @@ mentioned_apps:
   - gymlogger-x
   - liftlog
 read_time: "5 min read"
-excerpt: "GymLogger X entered a crowded category. This post explains the bet behind it: set logging on the Apple Watch with the iPhone running the session in your bag, a $39.99 lifetime option, and plateau detection that doesn't lecture. It ends with a note on why daylight-saving weekend is the worst weekend to start a new training program."
+excerpt: "GymLogger X entered a crowded category. This post explains the bet behind it: set logging on the Apple Watch with the iPhone running the session in your bag, a {P_LIFETIME@gymlogger-x} lifetime option, and plateau detection that doesn't lecture. It ends with a note on why daylight-saving weekend is the worst weekend to start a new training program."
 ---
 
 It's the first weekend of March. The clocks shift forward in the US tomorrow night, which, through a quirk of biology, makes this the worst week of the year to [start a new training program](/journal/choosing-a-strength-program-you-will-finish/). More on that later.
@@ -68,7 +68,7 @@ It does *not* restructure your program for you, change your weights, or send you
 
 GymLogger X ships with the freemium model the studio has stuck to: core logging is free for good, Pro is {P_YEARLY@gymlogger-x}/year, and there is a one-time {P_LIFETIME@gymlogger-x} lifetime option for users who don't want a subscription on a tool they intend to use for a decade.
 
-The lifetime tier is the one I get asked about most. For a studio chasing recurring revenue, the math on it is poor. A user who buys lifetime in year one and uses the app for seven years has paid the studio about a third of what an annual subscriber would have. The tier exists anyway because strength training is a long-term practice, and a user's training history shouldn't depend on keeping a subscription going.
+The lifetime tier is the one I get asked about most. For a studio chasing recurring revenue, the math on it is poor. A user who buys lifetime in year one and uses the app for seven years has paid the studio a fraction of what an annual subscriber would have. The tier exists anyway because strength training is a long-term practice, and a user's training history shouldn't depend on keeping a subscription going.
 
 About 30% of GymLogger X paid users choose the lifetime tier. They are vocal and loyal, and they are the users I'm proudest to serve.
 

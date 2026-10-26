@@ -14,8 +14,8 @@ seo:
     - "liftlog"
 date: 2026-04-25
 last_updated: 2026-10-26
-lede: "LiftLog, a design-led strength training log for iPhone, is on the App Store today. It has no subscription. After seven days free with no card on file, you decide what it's worth to you: $9.99, $19.99, $29.99, or $39.99, paid once. This post explains why."
-quick_answer: "LiftLog is a design-led iPhone strength training log priced on a pay-what-you-can model. After a seven-day free trial with no card on file, the user picks one of four one-time tiers (Fair $9.99, Good $19.99, Generous $29.99, or Patron $39.99), and all four unlock the same app. There is no subscription and no auto-renew."
+lede: "LiftLog, a design-led strength training log for iPhone, is on the App Store today. It has no subscription. After seven days free with no card on file, you decide what it's worth to you: {P_IAP:Minimum@liftlog}, {P_IAP:Suggested@liftlog}, {P_IAP:Supporter@liftlog}, or {P_IAP:Patron@liftlog}, paid once. This post explains why."
+quick_answer: "LiftLog is a design-led iPhone strength training log priced on a pay-what-you-can model. After a seven-day free trial with no card on file, the user picks one of four one-time tiers (Fair {P_IAP:Minimum@liftlog}, Good {P_IAP:Suggested@liftlog}, Generous {P_IAP:Supporter@liftlog}, or Patron {P_IAP:Patron@liftlog}), and all four unlock the same app. There is no subscription and no auto-renew."
 faq:
   - q: "How much does LiftLog cost after the free trial?"
     a: "After the seven-day card-free trial, LiftLog offers four one-time tiers: Fair {P_IAP:Minimum@liftlog}, Good {P_IAP:Suggested@liftlog}, Generous {P_IAP:Supporter@liftlog}, or Patron {P_IAP:Patron@liftlog}. All four unlock the same app; a higher price buys no extra features. There is no subscription and no auto-renewal."
@@ -34,7 +34,7 @@ excerpt: "LiftLog launches as Lagerland Apps's first pay-what-you-can app: a sev
 
 [LiftLog](/apps/liftlog/) is on the App Store today.
 
-The one thing to know about it: **there is no subscription.** You get seven days free with no card on file. After that, you choose a one-time tier between $9.99 and $39.99 and you own the app. Nothing auto-renews, there's no trial trap, and a lapsed subscription can never lock you out of your training history.
+The one thing to know about it: **there is no subscription.** You get seven days free with no card on file. After that, you choose a one-time tier between {P_IAP:Minimum@liftlog} and {P_IAP:Patron@liftlog} and you own the app. Nothing auto-renews, there's no trial trap, and a lapsed subscription can never lock you out of your training history.
 
 The rest of this post covers why I built LiftLog this way and what I'm trying to learn from it.
 
@@ -52,10 +52,10 @@ So LiftLog is one-time. You pay once, you own it.
 
 After the seven-day free trial, the app shows you four tiers:
 
-- **Fair, $9.99.** The entry tier. If this is the most you can justify for the app, pick it, with no guilt and no asterisk.
-- **Good, $19.99.** The middle. If LiftLog has earned a serious share of your training time and you expect to keep using it, this is where I think most users will land.
+- **Fair, {P_IAP:Minimum@liftlog}.** The entry tier. If this is the most you can justify for the app, pick it, with no guilt and no asterisk.
+- **Good, {P_IAP:Suggested@liftlog}.** The middle. If LiftLog has earned a serious share of your training time and you expect to keep using it, this is where I think most users will land.
 - **Generous, {P_IAP:Supporter@liftlog}.** A step up for users who want to support the work, or who have benefited from indie software in the past and want to give back.
-- **Patron, $39.99.** The top tier. Same app, no extra unlocks. It exists so people who want to back the studio at a level closer to a year of competitor subscriptions can do that openly, without a hidden option or a tip jar.
+- **Patron, {P_IAP:Patron@liftlog}.** The top tier. Same app, no extra unlocks. It exists so people who want to back the studio at a level closer to a year of competitor subscriptions can do that openly, without a hidden option or a tip jar.
 
 All four tiers unlock the same product. Nothing is locked behind a higher number. You choose what LiftLog is worth to you; the features are the same either way.
 
@@ -63,7 +63,7 @@ All four tiers unlock the same product. Nothing is locked behind a higher number
 
 A slider would be more flexible, but every UX paper I've read on charitable giving and pay-what-you-want pricing says the same thing: give people too many options and they freeze, and when they freeze, the median amount paid drops. Four tiers give people a real choice without overload.
 
-Four also creates anchoring. If the only options were $9.99 and $19.99, almost everyone would pick $9.99. With $29.99 and $39.99 visible, $19.99 reads as moderate instead of top-end, and some users will choose to pay above the median. That's the bet.
+Four also creates anchoring. If the only options were {P_IAP:Minimum@liftlog} and {P_IAP:Suggested@liftlog}, almost everyone would pick {P_IAP:Minimum@liftlog}. With {P_IAP:Supporter@liftlog} and {P_IAP:Patron@liftlog} visible, {P_IAP:Suggested@liftlog} reads as moderate instead of top-end, and some users will choose to pay above the median. That's the bet.
 
 The labels matter too. Naming the tiers *Fair / Good / Generous / Patron* (and not *Basic / Standard / Plus / Pro*) makes clear that more money doesn't buy more app. It buys the studio more runway, and I want the labels to say so plainly.
 
@@ -90,9 +90,9 @@ If you can't decide, it comes down to this. To log from Apple Watch, get GymLogg
 
 I honestly don't know how this will turn out. The questions I want answered:
 
-- **What's the median tier choice?** I expect $19.99 (Good). If it's $9.99 (Fair) by a wide margin, the anchoring isn't working and I need to rethink the labels or the tier ladder.
+- **What's the median tier choice?** I expect {P_IAP:Suggested@liftlog} (Good). If it's {P_IAP:Minimum@liftlog} (Fair) by a wide margin, the anchoring isn't working and I need to rethink the labels or the tier ladder.
 - **What's the conversion rate from trial to paid tier?** Industry benchmarks for paid trials with no card up front sit around 5 to 15%. Dropping the card requirement reduces friction, but it also drops the auto-renew lock-in behind a lot of "subscription" revenue.
-- **Do Patrons cluster geographically or demographically?** I don't track users individually, but the App Store gives me country-level rollups and tier-level revenue. If a lot of Patron purchases come from regions where $39.99 is a serious amount of money, that changes how I think about the model.
+- **Do Patrons cluster geographically or demographically?** I don't track users individually, but the App Store gives me country-level rollups and tier-level revenue. If a lot of Patron purchases come from regions where {P_IAP:Patron@liftlog} is a serious amount of money, that changes how I think about the model.
 - **Do reviews mention the pricing?** This is the qualitative signal I care about most. If users find the tier ladder respectful and unusual, the model is working. If it feels gimmicky or guilt-trippy, it isn't, and I'll write a follow-up explaining what I changed.
 
 I'll publish a follow-up here in three to six months with whatever the data says, including the bad numbers if there are any.
@@ -107,4 +107,4 @@ Either way, your training history stays on your device, with no third-party trac
 
 ---
 
-[LiftLog is available on the App Store.](https://apps.apple.com/app/id6760043411) It's free for seven days with no card required. After the trial you choose a one-time price: $9.99, $19.99, $29.99, or $39.99.
+[LiftLog is available on the App Store.](https://apps.apple.com/app/id6760043411) It's free for seven days with no card required. After the trial you choose a one-time price: {P_IAP:Minimum@liftlog}, {P_IAP:Suggested@liftlog}, {P_IAP:Supporter@liftlog}, or {P_IAP:Patron@liftlog}.

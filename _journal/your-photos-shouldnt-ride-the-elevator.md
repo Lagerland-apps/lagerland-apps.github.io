@@ -22,7 +22,7 @@ faq:
   - q: "Can my Mac convert HEIC, MP4, PDF, and RAR files locally?"
     a: "Yes. MediaKit runs 133 local conversion tools on Apple Silicon, including HEIC to JPG bulk, video compression, PDF redaction, OCR, and RAR v5 extraction. Apple Silicon's hardware encoders make local conversion competitive with a cloud round trip, and often faster."
   - q: "How many MediaKit tools are free without paying?"
-    a: "Five tools are permanently free: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. They cover roughly 70% of casual cases. The remaining 128 tools and batch processing are unlocked during a 3-day trial, then require a one-time Pro purchase. There is no subscription."
+    a: "Five tools are permanently free: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. They cover roughly 70% of casual cases. The remaining 128 tools and batch processing are unlocked during a 3-day trial, then require Pro: a monthly or yearly plan, or a one-time lifetime purchase."
   - q: "Does MediaKit support Shortcuts automation?"
     a: "Yes. Every tool supports Shortcuts integration, so workflows like 'compress all videos in Downloads, output to ~/Compressed, delete originals over 100MB' can run on a schedule entirely on-device. The workflow never touches the internet."
 mentioned_apps:

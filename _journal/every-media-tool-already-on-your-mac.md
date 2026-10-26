@@ -19,7 +19,7 @@ faq:
   - q: "Is there a Mac alternative to CloudConvert or Smallpdf?"
     a: "MediaKit is a native macOS app with 133 conversion tools that runs every operation locally on Apple frameworks like AVFoundation, CoreImage, PDFKit, Vision, and AppleArchive. Files never leave the machine, unlike CloudConvert, Zamzar, Smallpdf, or iLovePDF, which upload to operator infrastructure for processing."
   - q: "Which MediaKit tools are free forever?"
-    a: "Five tools are free with no time limit and no nag screen: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. The remaining 128 tools are unlocked during a three-day trial, then require a one-time Pro purchase. There is no subscription."
+    a: "Five tools are free with no time limit and no nag screen: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. The remaining 128 tools are unlocked during a three-day trial, then require Pro, sold monthly, yearly, or as a one-time lifetime purchase. A subscription is optional."
   - q: "Can MediaKit replace Final Cut Pro or DaVinci Resolve?"
     a: "No. MediaKit performs everyday linear operations like compress, convert, trim, crop, merge, and normalize. It has no timeline and is not a non-linear editor, so if you are cutting a film, use Final Cut Pro or DaVinci Resolve."
   - q: "Does MediaKit work with Shortcuts?"
@@ -75,7 +75,7 @@ I do not think most users *want* to upload sensitive files to strangers. I think
 
 The free tier is five tools: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. These are the operations the median Mac user actually performs: the email-attachment compress, the iPhone-photo-to-JPG, the audio rip. They stay free for good, with no nag screen, countdown, or upsell modal blocking the export.
 
-The first three days, every one of the 133 tools is unlocked, so you can find out whether the long tail matters to you before you decide. After three days, the five free tools stay free; the remaining 128 require Pro. Pro is a one-time purchase, so there is no subscription to forget to cancel.
+The first three days, every one of the 133 tools is unlocked, so you can find out whether the long tail matters to you before you decide. After three days, the five free tools stay free; the remaining 128 require Pro. Pro is sold monthly, yearly, or as a one-time lifetime purchase, so you can skip the subscription entirely.
 
 Pricing the free tier this way is, in the indie Mac segment, slightly unusual. Handbrake, ImageOptim, and Keka are all free. The studio's argument is that the operations a typical user runs *most often* should be free in MediaKit too, permanently and not as a trial extension. If you only ever compress videos and convert HEIC, MediaKit costs you nothing, and you still get a sandboxed App Store app instead of a Homebrew install of FFmpeg.
 

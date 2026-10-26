@@ -16,7 +16,7 @@ seo:
     - millrace in-app purchases
     - millrace
 lede: "Free on the App Store covers very different deals. You pay for some free puzzle games with your attention, for others with your patience or a subscription. This post explains each model, how to spot it on a product page before you install, and lists everything Millrace sells: nine optional items, none of which a level needs."
-quick_answer: "Free puzzle games are usually paid for in one or more of six ways: ads between levels; rewarded videos that trade an ad for extra moves, a hint or a life; lives or energy that run out when you fail and refill on a timer or for money; boosters and extra moves sold per level; subscriptions; and one-time purchases such as ad removal, level packs or cosmetics. Most can be spotted before you install. The App Store product page shows In-App Purchases next to the Get button and lists the items by name and price, and the App Privacy section shows what data the developer declares, including any used to track you. Millrace has no ads, lives, energy or subscription, and all 64 levels, Freeplay, the daily board, Hint and the Coach are free. It sells nine optional items: four theme packs at $1.99 each, or all sixteen paid themes for $5.99; undo bundles of 10, 50 and 200 for $0.99, $2.99 and $5.99; and a $1.99 tip that unlocks nothing. Undo inside a level is free and unlimited. Undo tokens, the closest thing it sells to a booster, are spent only in Freeplay."
+quick_answer: "Free puzzle games are usually paid for in one or more of six ways: ads between levels; rewarded videos that trade an ad for extra moves, a hint or a life; lives or energy that run out when you fail and refill on a timer or for money; boosters and extra moves sold per level; subscriptions; and one-time purchases such as ad removal, level packs or cosmetics. Most can be spotted before you install. The App Store product page shows In-App Purchases next to the Get button and lists the items by name and price, and the App Privacy section shows what data the developer declares, including any used to track you. Millrace has no ads, lives, energy or subscription, and all 64 levels, Freeplay, the daily board, Hint and the Coach are free. It sells nine optional items: four theme packs at {P_IAP:Millrace Designer Pack 1@millrace} each, or all sixteen paid themes for {P_IAP:Millrace Complete Collection@millrace}; undo bundles of 10, 50 and 200 for {P_IAP:Millrace Undo 10@millrace}, {P_IAP:Millrace Undo 50@millrace} and {P_IAP:Millrace Undo 200@millrace}; and a {P_IAP:Millrace Tip Jar@millrace} tip that unlocks nothing. Undo inside a level is free and unlimited. Undo tokens, the closest thing it sells to a booster, are spent only in Freeplay."
 faq:
   - q: "How do free puzzle games make money?"
     a: "Through some mix of ads, rewarded videos, lives or energy that refill on a timer or for money, boosters and extra moves sold per level, subscriptions, and one-time purchases such as ad removal, level packs or cosmetic themes. Many free games combine several. A game that shows no ads and sells only one-time cosmetic or convenience items is paid for by the players who choose to buy something they don't need."
@@ -25,7 +25,7 @@ faq:
   - q: "Does Millrace have ads, lives or energy?"
     a: "No. There are no ads, lives, energy meter or timers, and you can restart any level as often as you like. All 64 levels are open from the start, with nothing locked behind progress or a purchase. The app contains no networking code, so it has no way to download an ad, and its App Store privacy label reads Data Not Collected."
   - q: "What can you buy in Millrace?"
-    a: "Nine optional items. Four theme packs at $1.99 each (Designer Pack 1, Designer Pack 2, Summer Pack and Winter Pack), the Complete Collection of all sixteen paid themes for $5.99, undo bundles of 10, 50 and 200 for $0.99, $2.99 and $5.99, and a $1.99 Support the Developer tip that unlocks nothing. There is no subscription. These are US prices; Apple shows local prices in other storefronts."
+    a: "Nine optional items. Four theme packs at {P_IAP:Millrace Designer Pack 1@millrace} each (Designer Pack 1, Designer Pack 2, Summer Pack and Winter Pack), the Complete Collection of all sixteen paid themes for {P_IAP:Millrace Complete Collection@millrace}, undo bundles of 10, 50 and 200 for {P_IAP:Millrace Undo 10@millrace}, {P_IAP:Millrace Undo 50@millrace} and {P_IAP:Millrace Undo 200@millrace}, and a {P_IAP:Millrace Tip Jar@millrace} Support the Developer tip that unlocks nothing. There is no subscription. These are US prices; Apple shows local prices in other storefronts."
   - q: "Do I need undo tokens to finish Millrace's levels?"
     a: "No. Inside a level, Undo is free and unlimited and never touches your tokens. Tokens are spent only in Freeplay, the endless board. Even there, one free token arrives each day while you hold fewer than three, and daily-streak milestones at 3, 7, 14 and 30 days pay out 2, 5, 10 and 20 tokens, once each."
   - q: "Is Millrace really free, or is it a free trial?"
@@ -66,17 +66,17 @@ Millrace has no ads, lives or subscription. It sells cosmetic themes, undo token
 
 | Item | Price (US) | Kind | What you get |
 |---|---|---|---|
-| Designer Pack 1 | $1.99 | One-time | Studio Clay, Paper & Ink, Sakura Pastel, Amber, Heartwood |
-| Designer Pack 2 | $1.99 | One-time | Concrete Studio, Sunset Dunes, Glacier Ice, Brushed Metal, Midnight Neon |
-| Summer Pack | $1.99 | One-time | Lido, Riviera, Agrumi |
-| Winter Pack | $1.99 | One-time | Hygge Hearth, Aurora Drift, Evergreen Noël |
-| Complete Collection | $5.99 | One-time | All sixteen paid themes |
-| 10 Undos | $0.99 | Consumable | Undo tokens for Freeplay |
-| 50 Undos | $2.99 | Consumable | Undo tokens for Freeplay |
-| 200 Undos | $5.99 | Consumable | Undo tokens for Freeplay |
-| Support the Developer | $1.99 | Tip | A "Thank you." and nothing else |
+| Designer Pack 1 | {P_IAP:Millrace Designer Pack 1@millrace} | One-time | Studio Clay, Paper & Ink, Sakura Pastel, Amber, Heartwood |
+| Designer Pack 2 | {P_IAP:Millrace Designer Pack 2@millrace} | One-time | Concrete Studio, Sunset Dunes, Glacier Ice, Brushed Metal, Midnight Neon |
+| Summer Pack | {P_IAP:Millrace Summer Pack@millrace} | One-time | Lido, Riviera, Agrumi |
+| Winter Pack | {P_IAP:Millrace Winter Pack@millrace} | One-time | Hygge Hearth, Aurora Drift, Evergreen Noël |
+| Complete Collection | {P_IAP:Millrace Complete Collection@millrace} | One-time | All sixteen paid themes |
+| 10 Undos | {P_IAP:Millrace Undo 10@millrace} | Consumable | Undo tokens for Freeplay |
+| 50 Undos | {P_IAP:Millrace Undo 50@millrace} | Consumable | Undo tokens for Freeplay |
+| 200 Undos | {P_IAP:Millrace Undo 200@millrace} | Consumable | Undo tokens for Freeplay |
+| Support the Developer | {P_IAP:Millrace Tip Jar@millrace} | Tip | A "Thank you." and nothing else |
 
-Bought separately, the four packs cost $7.96, so the Complete Collection is cheaper. Theme purchases restore with your Apple Account. There is no subscription. Apple derives the prices for other storefronts and shows your local currency at checkout.
+The Complete Collection costs less than buying the four packs separately. Theme purchases restore with your Apple Account. There is no subscription. Apple derives the prices for other storefronts and shows your local currency at checkout.
 
 Free: all 64 campaign levels, Freeplay, the daily board, Hint, the Coach, Game Center and the Classic theme, which is one of seventeen. You can preview a paid theme on your own board for five moves before you decide.
 

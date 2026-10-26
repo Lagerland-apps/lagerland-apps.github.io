@@ -30,7 +30,7 @@ mentioned_apps:
   - appmeta-pulse
   - mockly
 read_time: "6 min read"
-excerpt: "AppMeta is a native Mac client for the App Store Connect API with per-locale metadata editing, diff preview, keyword analysis, review responses, and version submission. This post covers why the indie iOS workflow needed it, the trade-offs, and why the studio shipped it as a $29.99 lifetime purchase first and added a yearly option later."
+excerpt: "AppMeta is a native Mac client for the App Store Connect API with per-locale metadata editing, diff preview, keyword analysis, review responses, and version submission. This post covers why the indie iOS workflow needed it, the trade-offs, and why the studio shipped it as a {P_LIFETIME@appmeta} lifetime purchase first and added a yearly option later."
 ---
 
 App Store Connect, Apple's web tool for shipping apps, is the web app that matters most in an indie iOS developer's day. It's where you manage metadata, push builds to TestFlight, respond to reviews, set pricing, file privacy declarations, and submit for review. Almost every studio I know spends an hour a day in it during ship weeks.
@@ -74,7 +74,7 @@ App Store Connect tooling is a developer tool, and developer tools have a long h
 
 I shipped AppMeta as a one-time {P_LIFETIME@appmeta} purchase because subscriptions give a tool like this a specific bad incentive. Every month you have to ship enough perceived value to justify the next charge, and that pressure pushes the roadmap toward *more features* when it should go toward the right ones. AppMeta's job is to be a fast, reliable native client, and features added to get through a renewal cycle would make it worse at that.
 
-A one-time purchase imposes a different discipline. The tool has to be worth $29.99 once, and the next sale has to come from a new user who thinks so, not from a renewal charged to an existing one. Revenue comes in more slowly, and in exchange the design stays honest.
+A one-time purchase imposes a different discipline. The tool has to be worth {P_LIFETIME@appmeta} once, and the next sale has to come from a new user who thinks so, not from a renewal charged to an existing one. Revenue comes in more slowly, and in exchange the design stays honest.
 
 ## What AppMeta is not
 

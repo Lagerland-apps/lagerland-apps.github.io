@@ -20,7 +20,7 @@ jump_nav: true
 
 # Structured pricing tiers, from the live App Store In-App Purchases list
 # (US, UK, Canada, Australia, euro and other storefronts checked 2026-10-25):
-# $0.99/month, $1.99/year, $2.99 lifetime. The free download only opens a demo
+# monthly, yearly and lifetime (prices from _data/catalog.json). The free download only opens a demo
 # on sample data; your own numbers need a subscription or Lifetime.
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase: it does not auto-renew, and no card is kept on file beyond Apple's own. You generate the App Store Connect API key (.p8) yourself in App Store Connect → Users and Access → Integrations with the Admin role, and it is stored on-device in Keychain. The methodology page lists the endpoints it calls."
 
@@ -51,7 +51,7 @@ plans:
     highlight_label: "Best long-term value"
     features:
       - "Everything in Pro, unlocked permanently"
-      - "Costs about a year and a half of the yearly plan"
+      - "One payment in place of a yearly renewal"
       - "{P_LIFETIME}, against AppStats' $49.99 lifetime"
       - "Future Pro features included at no extra cost"
       - "No subscription or auto-renew, and access does not expire"

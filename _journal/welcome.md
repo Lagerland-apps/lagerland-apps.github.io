@@ -12,10 +12,10 @@ seo:
     - "indie developer journal"
 date: 2025-12-27
 lede: "A short note on why Lagerland Apps now has a journal, and what you can expect to find here."
-quick_answer: "The Lagerland Apps journal documents the work of a one-person Apple studio shipping fourteen iOS and macOS apps. It carries rebrand stories, shipping notes with real design reasoning, and occasional essays on privacy-first design and honest monetisation. It is not a marketing blog, a Swift tutorial site, or an AI-generated content farm. Every post is written by the developer."
+quick_answer: "The Lagerland Apps journal documents the work of a one-person Apple studio shipping {APP_COUNT} iOS and macOS apps. It carries rebrand stories, shipping notes with real design reasoning, and occasional essays on privacy-first design and honest monetisation. It is not a marketing blog, a Swift tutorial site, or an AI-generated content farm. Every post is written by the developer."
 faq:
   - q: "What is the Lagerland Apps journal?"
-    a: "The Lagerland Apps journal documents the work of a one-person Apple studio shipping fourteen iOS and macOS apps. It carries rebrand stories such as TheWait becoming Soon., shipping notes with real design reasoning, and occasional essays on privacy-first design and honest monetisation. It is not a marketing blog or an AI content farm."
+    a: "The Lagerland Apps journal documents the work of a one-person Apple studio shipping {APP_COUNT} iOS and macOS apps. It carries rebrand stories such as TheWait becoming Soon., shipping notes with real design reasoning, and occasional essays on privacy-first design and honest monetisation. It is not a marketing blog or an AI content farm."
   - q: "Is the Lagerland Apps journal written by AI?"
     a: "No. Every post is written by one independent developer, the same person who designs, codes, and ships every app in the catalogue, without a ghostwriter, a marketing team, or a generative pipeline. Posts go up when there is something real to document, never to an algorithmic schedule."
   - q: "How often does Lagerland Apps publish journal posts?"
@@ -30,7 +30,7 @@ excerpt: "The Lagerland Apps journal is a place for rebrand stories, shipping no
 last_updated: 2026-10-26
 ---
 
-Lagerland Apps is a one-person studio shipping 14 iOS and macOS apps. Until now, the website has been app-page-first: you land on an app, learn about it, and install it. That's still the goal, but some stories are too broad for a single app page, and this journal is for those.
+Lagerland Apps is a one-person studio shipping iOS and macOS apps (14 when this post went up, {APP_COUNT} today). Until now, the website has been app-page-first: you land on an app, learn about it, and install it. That's still the goal, but some stories are too broad for a single app page, and this journal is for those.
 
 ## What is the Lagerland Apps journal?
 

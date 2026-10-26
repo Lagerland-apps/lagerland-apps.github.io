@@ -15,7 +15,7 @@ price:
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The Lifetime tier is a one-time purchase with no auto-renewal. Universal Purchase across iPhone, iPad, and Mac."
 
 # Free / Premium-Monthly / Premium-Annual / Lifetime: same upgrade-ladder
-# presentation as Chessful. Lifetime sits at 10 months of monthly Premium.
+# presentation as Chessful. Lifetime is priced against months of monthly Premium.
 plans:
   - name: "Free"
     price: "$0"
@@ -152,7 +152,7 @@ features:
   - title: "Coaching on drops and promotions"
     description: "Drops and promotions are where chess players lose shogi games. Shogiful's mistake detection treats them as first-class categories: it tells you when a knight drop would have forked king and rook, when promoting your silver was wrong, and when the engine found a forced mate your attack walked past."
   - title: "Tsume-shogi puzzle library"
-    description: "Classical checkmate problems, where every attacker move is a check and every hand piece is used. The library starts with 76 problems verified for correctness on-device (30 one-move, 46 three-move) and grows toward ~500 on the roadmap. Problems are scheduled with spaced repetition and mixed with exercises generated from your own games."
+    description: "Classical checkmate problems, where every attacker move is a check and every hand piece is used. The library starts with 76 problems verified for correctness on-device (30 one-move, 46 three-move). Problems are scheduled with spaced repetition and mixed with exercises generated from your own games."
   - title: "10 AI opponents across 4 tiers"
     description: "From Hana, who blunders like a true beginner at around 500 strength, to Sensei at roughly 1800, each opponent has a distinct style: aggressive attackers, castle builders, drop tacticians, endgame specialists. Beat one twice to unlock the next. Games are untimed, with no clock or byoyomi, so you can analyze as long as you like."
   - title: "Skill tracking across five dimensions"
@@ -232,34 +232,6 @@ comparison_table:
       values: ["iPhone + iPad + Mac (Universal Purchase)", "iPhone + Android", "Web", "Web + mobile apps", "iPhone + Android + web"]
   footnote: "Competitor positioning summarised from each platform's public landing page and store listing on 2026-06-11. Pricing and features change often, so check before switching. If you want ranked play against humans, those platforms are the right tools; Shogiful is for training between those games."
 
-roadmap:
-  overline: "Roadmap"
-  heading: "What's shipped, what's next."
-  intro: "Shogiful v1 covers offline play, full-game analysis, and adaptive training on iPhone, iPad, and Mac today. Below is the public roadmap. Dates are targets, not commitments; if one slips, you'll hear about it here first."
-  items:
-    - when: "Shipped"
-      title: "YaneuraOu analysis + plain-language coaching"
-      detail: "Live today on iPhone, iPad, and Mac. Every move is reviewed on-device, and every significant mistake is translated into a sentence you can read, in English or Japanese."
-      status: "shipped"
-    - when: "Shipped"
-      title: "Western piece sets + traditional kanji"
-      detail: "Symbolic Western pieces with movement indicators, or traditional kanji tiles, switchable any time, with a piece guide one tap away during games."
-      status: "shipped"
-    - when: "Shipped"
-      title: "10 AI opponents, tsume puzzles, weakness training"
-      detail: "Four tiers from true beginner to advanced, bundled tsume-shogi problems, and training sessions generated from the mistakes in your own games with spaced repetition."
-      status: "shipped"
-    - when: "Targeted 2026 Q3"
-      title: "Expanded tsume library (~500 problems)"
-      detail: "Five-, seven-, and nine-move tsume shards added to the bundled one- and three-move problems, sourced from public-domain Edo-era collections and engine-verified positions."
-    - when: "Targeted 2026 Q4"
-      title: "More languages"
-      detail: "Korean, Chinese (Simplified and Traditional), German, French, Spanish, and Portuguese on top of the English + Japanese that ship today."
-    - when: "Under consideration"
-      title: "KIF import, castle recognition, joseki training, handicap games"
-      detail: "Importing game records from Shogi Wars and 81Dojo (KIF format) for analysis, named castle-formation detection, opening training by formation, and traditional handicap (koma-ochi) games against the AI roster."
-  disclaimer: "Roadmap last reviewed 2026-06-11. Targeted dates can slip; shipped items are live on the App Store."
-
 screenshots:
   - src: "/assets/screenshots/shogiful/1.png"
     caption: "Play a full game on a 3D wooden board against the AI opponent roster."
@@ -305,7 +277,7 @@ faq:
   - q: "Does Shogiful have time controls?"
     a: "No, on purpose. Games against Shogiful's AI opponents are untimed, with no clock and no byoyomi countdown. Take as long as you want on any move, then analyze at the same pace. For timed practice ahead of online play, the online platforms (Shogi Wars, Lishogi, 81Dojo) are the right place."
   - q: "What is tsume-shogi, and does Shogiful include it?"
-    a: "Tsume-shogi are shogi's classical checkmate puzzles: every attacking move must be a check, every piece in hand must be used, and the defender plays the longest resistance. Shogiful bundles a verified tsume library running from one-move beginner problems to multi-move calculations, scheduled with spaced repetition alongside exercises generated from your own games. An expanded library of ~500 problems is on the roadmap."
+    a: "Tsume-shogi are shogi's classical checkmate puzzles: every attacking move must be a check, every piece in hand must be used, and the defender plays the longest resistance. Shogiful bundles a verified tsume library running from one-move beginner problems to multi-move calculations, scheduled with spaced repetition alongside exercises generated from your own games."
   - q: "Does Shogiful work offline?"
     a: "Yes, completely. The engine, the analysis, the coaching explanations, the training system, and all 10 AI opponents run on your device. It never needs an internet connection, and there's no account to sign into."
   - q: "Is Shogiful free? What does Premium cost?"
@@ -315,9 +287,9 @@ faq:
   - q: "Can I play against other people in Shogiful?"
     a: "No, by design. Shogiful is a training product with 10 AI opponents in distinct styles, from true beginner to advanced strength, unlocked as you beat them. For ranked human play, Shogi Wars, Lishogi, and 81Dojo are the right tools; Shogiful is meant to make you better before and between those games."
   - q: "Does Shogiful support Japanese?"
-    a: "Yes. Shogiful ships in English and Japanese from day one, with JSA-standard shogi terminology in Japanese and both Western and KIF notation styles available. More languages are on the roadmap."
+    a: "Yes. Shogiful ships in English and Japanese from day one, with JSA-standard shogi terminology in Japanese and both Western and KIF notation styles available."
   - q: "Can I import my games from Shogi Wars or 81Dojo?"
-    a: "Not yet. KIF import (the standard shogi game-record format both platforms export) is under consideration on the roadmap. If it ships, you'll be able to bring your online games into Shogiful's analyzer and build your weakness profile from games you've already played."
+    a: "No. Shogiful doesn't import KIF game records, the format both platforms export. It analyses the games you play in the app and builds your weakness profile from those."
 
 support:
   email: "lagerland.apps@proton.me"

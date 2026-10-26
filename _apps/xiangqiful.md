@@ -68,7 +68,7 @@ plans:
   - name: "Lifetime"
     price: "{P_LIFETIME} once"
     kind: lifetime
-    summary: "All of Premium for about ten months of Monthly, then yours for good."
+    summary: "All of Premium for about {LIFETIME_MONTHS} months of Monthly, then yours for good."
     features:
       - "Everything in Premium"
       - "One-time purchase with nothing to renew or cancel"
@@ -258,31 +258,6 @@ comparison_table:
     - feature: "Price"
       values: ["Free; {P_MONTHLY}/mo or {P_YEARLY}/yr (1-week trial), or {P_LIFETIME} lifetime", "Free; optional ad-free subscription", "Free, donation-funded", "Free; optional paid membership", "Free, no IAP; ad tracking"]
   footnote: "Competitor positioning summarised from each platform's public listing or site on 2026-10-01. Pricing and features change, so verify before switching. If you want to play people, use those platforms; Xiangqiful is for training between games."
-
-roadmap:
-  overline: "Roadmap"
-  heading: "What shipped in 1.0, and what's being considered."
-  intro: "Xiangqiful 1.0, released on 30 September 2026, covers play, engine analysis and training on iPhone, iPad and Mac. Beyond it, these are the ideas on the list. There are no dates, because we would rather not promise one and miss it."
-  items:
-    - when: "Version 1.0"
-      title: "Ten opponents, on-device Pikafish analysis, plain-language coaching."
-      detail: " Every move graded and every key mistake explained in xiangqi's own terms, on your device, with no account."
-    - when: "Version 1.0"
-      title: "80 lessons, 902 mate problems, 150+ drills and spaced repetition."
-      detail: " Eight lesson tracks, nine drill modules and a daily plan built from your own weaknesses."
-    - when: "Version 1.0"
-      title: "Three piece sets, a 3D board and more than 30 languages."
-      detail: " Traditional, western and hybrid pieces, WXF and Chinese notation, and native apps for iPhone, iPad and Mac."
-    - when: "Under consideration"
-      title: "Opening explorer and repertoire builder."
-      detail: " Build and drill your own opening lines on top of the Opening Lab's ten families."
-    - when: "Under consideration"
-      title: "A longer opponent ladder and an endgame classics library."
-      detail: " More opponents between the existing rungs, and more of the classical endgame studies the Advanced track starts on."
-    - when: "Under consideration"
-      title: "XQF import, iCloud sync and widgets."
-      detail: " Bringing in game records in the XQF format, syncing progress between your own devices, and training reminders on the Home Screen."
-  disclaimer: "Roadmap last reviewed 2026-10-01. Items under consideration are ideas, not commitments."
 
 privacy:
   data_collection: "none"
