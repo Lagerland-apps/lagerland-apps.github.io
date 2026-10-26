@@ -1,34 +1,19 @@
 {%- comment %}
   Testimonials ticker — premium marquee with hover-to-translate.
   Usage: {% include testimonials-ticker.html slug=page.slug name=page.name %}
-  Reads from site.data.testimonials[slug]; renders nothing if empty.
+  Reads quotes from site.data.testimonials[slug]; renders nothing if empty.
+  The rating line comes from the app's synced `ratings:` (App Store), not from the quotes.
 {% endcomment -%}
 
 {%- assign t_list = site.data.testimonials[include.slug] -%}
 {%- if t_list and t_list.size > 0 -%}
 
-{%- comment %} Aggregate stats for the eyebrow row {% endcomment -%}
-{%- assign t_total = t_list.size -%}
-{%- assign t_rated = 0 -%}
-{%- assign t_rating_sum = 0 -%}
-{%- for t in t_list -%}
-  {%- if t.rating -%}
-    {%- assign t_rated = t_rated | plus: 1 -%}
-    {%- assign t_rating_sum = t_rating_sum | plus: t.rating -%}
-  {%- endif -%}
-{%- endfor -%}
-{%- if t_rated > 0 -%}
-  {%- assign t_rating_avg = t_rating_sum | times: 10 | divided_by: t_rated -%}
-  {%- assign t_rating_int = t_rating_avg | divided_by: 10 -%}
-  {%- assign t_rating_dec = t_rating_avg | modulo: 10 -%}
-{%- endif -%}
-
 <section class="section testimonials reveal" aria-labelledby="testimonials-heading-{{ include.slug }}">
   <div class="testimonials-head">
     <h2 class="h2" id="testimonials-heading-{{ include.slug }}">What people say about {{ include.name }}</h2>
-    {%- assign t_rating_min10 = site.ratings_min_display | times: 10 -%}
-    {%- if t_rated > 0 and t_rating_avg >= t_rating_min10 -%}
-    <p class="testimonials-meta">Rated {{ t_rating_int }}.{{ t_rating_dec }} out of 5 across {{ t_rated }} rated reviews · App Store and Reddit · quoted unedited</p>
+    {%- assign t_app_rating = page.ratings.value | plus: 0 -%}
+    {%- if page.ratings and page.ratings.count >= 3 and t_app_rating >= site.ratings_min_display -%}
+    <p class="testimonials-meta">Rated {{ page.ratings.value }} out of 5 from {{ page.ratings.count }} App Store ratings · quotes from the App Store and Reddit, unedited</p>
     {%- else -%}
     <p class="testimonials-meta">From the App Store and Reddit · quoted unedited</p>
     {%- endif -%}

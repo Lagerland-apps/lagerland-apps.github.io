@@ -87,6 +87,17 @@ observa:
     tier: "hero"
     translation_en: "Great app for tracking recovery, sleep, and stress clearly and in detail. I especially appreciate the respect for privacy: everything stays on the iPhone, no account, no ads. The new charts are really clean and easy to read. 👍"
 
+  - quote: "根拠があるので若返ると楽しい😀"
+    author: "V."
+    source: "App Store"
+    language: "ja"
+    translation_en: "Since there is evidence behind it, getting younger is fun 😀"
+
+  - quote: "Lots of customisations with latest update & overall a fantastic app. Has all your health data well presented & also offers statistical correlations which not many apps do. Definitely worth trying!"
+    author: "F."
+    source: "App Store"
+    language: "en"
+
 soon:
   # Curated to the five most specific, most credible quotes.
   # Short praise ("Best looking app ever", "very well done I like it", "love it!")
@@ -136,3 +147,77 @@ chessful:
     source: "Reddit"
     language: "en"
     tier: "hero"
+
+  - quote: "It's simple, minimalistic, has training based on your mistakes and the support is really outstanding!"
+    author: "M."
+    source: "App Store"
+    language: "en"
+
+  - quote: "Nice app, which has improved my chess as a newbie. I made an improvement suggestion and received an immediate response. This was implemented within days. I love the Training and Learn sections. Stockfish analysis also helps and would recommend."
+    author: "P."
+    source: "App Store"
+    language: "en"
+
+  - quote: "Finally a chess app that actually helps to improve!"
+    author: "A."
+    source: "App Store"
+    language: "en"
+
+allpaid:
+  - quote: "Honestly, I've tried several apps to track bills and subscriptions, but AllPaid is completely different. I love that it requires no account and no internet — everything stays on my device. The contract renewal reminders are brilliant: it alerted me 7 days before my broadband renewed, saving me from hidden price hikes. The monthly calendar is clear and easy, and the widgets let me see my bills without even opening the app. Highly recommend it."
+    author: "M.O."
+    source: "App Store"
+    language: "en"
+    tier: "hero"
+
+shogiful:
+  - quote: "It's a simple idea but really helpful: AI-explanations of your mistakes. It makes reviewing games much more enjoyable. The guided training system is also something that no other app offers right now. Recommended!"
+    author: "J.B."
+    source: "App Store"
+    language: "en"
+    tier: "hero"
+
+  - quote: "The Best App I have found so far. Keep up the Great work"
+    author: "M."
+    source: "App Store"
+    language: "en"
+
+  - quote: "Great app to learn Shogi"
+    author: "A."
+    source: "App Store"
+    language: "en"
+
+xiangqiful:
+  - quote: "The best app to learn to play Xiangqi"
+    author: "A."
+    source: "App Store"
+    language: "en"
+    tier: "hero"
+
+aftershift:
+  - quote: "I like a lot of features in this app, including the ability to set a custom schedule without a set rotation that includes days, swings, nights. I like that it connects to Apple health."
+    author: "I."
+    source: "App Store"
+    language: "en"
+    tier: "hero"
+
+  - quote: "Truly helpful for night shifter!"
+    author: "L."
+    source: "App Store"
+    language: "en"
+
+liftlog:
+  - quote: "Hyvä treenipäiväkirja. Sisältää kaikki mitä tarvitaan, tähän hintaan pakko-ostos."
+    author: "A."
+    source: "App Store"
+    language: "fi"
+    tier: "hero"
+    translation_en: "A good training diary. It has everything you need, a must-buy at this price."
+
+pawza:
+  - quote: "Una app muy intuitiva y fácil de usar, super útil y muy practica."
+    author: "J."
+    source: "App Store"
+    language: "es"
+    tier: "hero"
+    translation_en: "A very intuitive and easy-to-use app, super useful and very practical."
