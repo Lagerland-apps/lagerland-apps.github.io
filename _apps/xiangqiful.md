@@ -61,10 +61,10 @@ plans:
   - name: "Premium · Yearly"
     price: "{P_YEARLY}/yr"
     kind: yearly
-    summary: "The same Premium, billed once a year after a one-week free trial — about 58% less than paying monthly."
+    summary: "The same Premium, billed once a year after a one-week free trial — about {SAVE_YEARLY}% less than paying monthly."
     features:
       - "Everything in Premium · Monthly, including the one-week free trial"
-      - "About 58% less than twelve months of Monthly"
+      - "About {SAVE_YEARLY}% less than twelve months of Monthly"
       - "Cancel anytime in your Apple Account settings before it renews"
     highlight_label: "Best value"
   - name: "Lifetime"

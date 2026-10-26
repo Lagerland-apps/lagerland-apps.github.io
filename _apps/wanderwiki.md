@@ -40,10 +40,10 @@ plans:
   - name: "Annual"
     price: "{P_YEARLY}/yr"
     kind: yearly
-    summary: "Same features, billed once a year. ~62% cheaper than monthly."
+    summary: "Same features, billed once a year. ~{SAVE_YEARLY}% cheaper than monthly."
     features:
       - "Everything in Monthly"
-      - "~62% cheaper than monthly over a year"
+      - "~{SAVE_YEARLY}% cheaper than monthly over a year"
       - "Free trial for new subscribers — the paywall shows its length"
     highlight: true
   - name: "Lifetime"

@@ -112,7 +112,7 @@ plans:
   - name: "Pro+ · lifetime"
     highlight: true
     price: "{P_LIFETIME} once"
-    summary: "Most chosen. Pay once, own it forever — pays for itself in two years vs the yearly tier."
+    summary: "Most chosen. Pay once, own it forever — pays for itself in {LIFETIME_YEARS} years vs the yearly tier."
     features:
       - "Everything in Pro+ yearly"
       - "One purchase, no recurring charge"

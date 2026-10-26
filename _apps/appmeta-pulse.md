@@ -45,7 +45,7 @@ plans:
       - "Per-app breakdowns and period-over-period trends"
       - "Top territories per app from Sales and Trends data"
       - "12 Home Screen and Lock Screen widgets, and replies to App Store reviews"
-      - "Yearly is about 83% cheaper than monthly billing ({P_YEARLY} vs $11.88/yr)"
+      - "Yearly is about {SAVE_YEARLY}% cheaper than monthly billing ({P_YEARLY} vs {P_MONTHLY_ANNUAL}/yr)"
   - name: "Lifetime"
     price: "{P_LIFETIME} one-time"
     kind: lifetime

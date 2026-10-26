@@ -5,6 +5,9 @@
   offer (e.g. {P_MONTHLY} on a yearly-only app), so callers can hide that card/line instead of showing a blank.
   Tokens: {P_MONTHLY} {P_YEARLY} {P_WEEKLY} {P_LIFETIME} {P_APP} {P_IAP_MIN} {P_IAP_MAX} {P_IAP:<exact label>}
           {TRIAL} {PLATFORMS}            (about the app whose facts were just assigned)
+          {SAVE_YEARLY} (% saved by paying yearly instead of 12 months of monthly), {YEARLY_MONTHS} and
+          {LIFETIME_MONTHS} (price as months of monthly), {LIFETIME_YEARS} (lifetime as years of yearly),
+          {P_MONTHLY_ANNUAL} (12 x monthly). All computed from the app's own prices.
           {APP_COUNT} {APP_COUNT_OTHER}  (global: live apps, and live apps minus one for "the studio's other N apps")
     global_only=true  expands only the global tokens (pages that are not one app's page).
 {%- endcomment -%}
@@ -22,8 +25,13 @@
 {%- if tk_out contains "{P_IAP_MIN}" and f_iap_min == "" %}{% assign tk_missing = true %}{% endif -%}
 {%- if tk_out contains "{P_IAP_MAX}" and f_iap_max == "" %}{% assign tk_missing = true %}{% endif -%}
 {%- if tk_out contains "{TRIAL}" and f_trial == "" %}{% assign tk_missing = true %}{% endif -%}
+{%- if tk_out contains "{SAVE_YEARLY}" and f_save_yearly == "" %}{% assign tk_missing = true %}{% endif -%}
+{%- if tk_out contains "{YEARLY_MONTHS}" and f_yearly_months == "" %}{% assign tk_missing = true %}{% endif -%}
+{%- if tk_out contains "{LIFETIME_MONTHS}" and f_lifetime_months == "" %}{% assign tk_missing = true %}{% endif -%}
+{%- if tk_out contains "{LIFETIME_YEARS}" and f_lifetime_years == "" %}{% assign tk_missing = true %}{% endif -%}
+{%- if tk_out contains "{P_MONTHLY_ANNUAL}" and f_monthly_annual == "" %}{% assign tk_missing = true %}{% endif -%}
 {%- assign tk_platforms = f_platforms | join: ", " -%}
-{%- assign tk_out = tk_out | replace: "{P_MONTHLY}", f_monthly | replace: "{P_YEARLY}", f_yearly | replace: "{P_WEEKLY}", f_weekly | replace: "{P_LIFETIME}", f_lifetime | replace: "{P_APP}", f_app_price | replace: "{P_IAP_MIN}", f_iap_min | replace: "{P_IAP_MAX}", f_iap_max | replace: "{TRIAL}", f_trial | replace: "{PLATFORMS}", tk_platforms -%}
+{%- assign tk_out = tk_out | replace: "{P_MONTHLY}", f_monthly | replace: "{P_YEARLY}", f_yearly | replace: "{P_WEEKLY}", f_weekly | replace: "{P_LIFETIME}", f_lifetime | replace: "{P_APP}", f_app_price | replace: "{P_IAP_MIN}", f_iap_min | replace: "{P_IAP_MAX}", f_iap_max | replace: "{TRIAL}", f_trial | replace: "{SAVE_YEARLY}", f_save_yearly | replace: "{YEARLY_MONTHS}", f_yearly_months | replace: "{LIFETIME_MONTHS}", f_lifetime_months | replace: "{LIFETIME_YEARS}", f_lifetime_years | replace: "{P_MONTHLY_ANNUAL}", f_monthly_annual | replace: "{PLATFORMS}", tk_platforms -%}
 {%- for tk_o in f_cat.other_iaps -%}
   {%- assign tk_tag = "{P_IAP:" | append: tk_o.label | append: "}" -%}
   {%- if tk_out contains tk_tag -%}

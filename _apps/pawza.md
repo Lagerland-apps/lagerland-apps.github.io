@@ -42,11 +42,11 @@ plans:
   - name: "Pro · Yearly"
     price: "{P_YEARLY}/yr"
     kind: yearly
-    summary: "Same Pro features, billed once a year. 7-day free trial — about 44% cheaper than monthly."
+    summary: "Same Pro features, billed once a year. 7-day free trial — about {SAVE_YEARLY}% cheaper than monthly."
     highlight: true
     features:
       - "Everything in Pro · Monthly"
-      - "About 44% cheaper than monthly over a year"
+      - "About {SAVE_YEARLY}% cheaper than monthly over a year"
       - "7-day free trial, cancel anytime"
   - name: "Lifetime"
     price: "{P_LIFETIME} once"

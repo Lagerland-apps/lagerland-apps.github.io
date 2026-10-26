@@ -54,6 +54,10 @@ How the site uses it (Phase 1 of PLAN-master-data-on-site.md):
   (cards, lists, `llms.txt`) goes through `_includes/app-text.html`, and `llms-full.txt` / `ai-index.json` expand
   per app block. So prose in `_apps/*.md`, `_data/app_enrichment.yml` and `lagerland-apps/` may use tokens freely.
   Never write a bare `{P_...}` in YAML outside a quoted string (YAML would read it as a mapping).
+- Derived own-price claims are tokens too, computed from the app's own plans: `{SAVE_YEARLY}` (% saved by paying
+  yearly vs 12 months of monthly), `{YEARLY_MONTHS}` / `{LIFETIME_MONTHS}` (price as months of monthly, rounded),
+  `{LIFETIME_YEARS}` (lifetime as years of yearly), `{P_MONTHLY_ANNUAL}` (12 x monthly). Claims relative to
+  competitors ("about 40% of what comparable apps charge") stay hand-written because the competitor price is typed.
 - What stays typed on purpose: competitor prices, illustrative amounts in examples ("$612 of bills"), derived
   figures, the hidden WanderWiki weekly plan, and our own price quoted on another app's page (e.g. LiftLog's FAQ
   about GymLogger X). Cross-app tokens come with Phase 3.

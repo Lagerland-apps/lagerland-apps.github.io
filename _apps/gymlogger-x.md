@@ -47,10 +47,10 @@ plans:
   - name: "Pro Annual"
     price: "{P_YEARLY} / year"
     kind: yearly
-    summary: "Same Pro features, billed once a year. ~25% cheaper than paying monthly."
+    summary: "Same Pro features, billed once a year. ~{SAVE_YEARLY}% cheaper than paying monthly."
     features:
       - "Everything in Pro Monthly"
-      - "~25% cheaper than paying monthly all year"
+      - "~{SAVE_YEARLY}% cheaper than paying monthly all year"
       - "Cancel anytime"
   - name: "Lifetime"
     price: "{P_LIFETIME} one-time"

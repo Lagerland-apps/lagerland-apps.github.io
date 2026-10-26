@@ -40,16 +40,16 @@ plans:
   - name: "Pro · Annual"
     price: "{P_YEARLY}/yr"
     kind: yearly
-    summary: "Same Pro features, billed once a year. ~46% cheaper than paying monthly."
+    summary: "Same Pro features, billed once a year. ~{SAVE_YEARLY}% cheaper than paying monthly."
     features:
       - "Everything in Pro · Monthly"
-      - "~46% cheaper than monthly over a year"
+      - "~{SAVE_YEARLY}% cheaper than monthly over a year"
       - "Cancel anytime"
     highlight: true
   - name: "Lifetime"
     price: "{P_LIFETIME} once"
     kind: lifetime
-    summary: "All Pro features. Roughly 13 months of monthly Pro — then yours."
+    summary: "All Pro features. Roughly {LIFETIME_MONTHS} months of monthly Pro — then yours."
     features:
       - "Everything in Pro · Annual"
       - "One-time purchase, no renewal"

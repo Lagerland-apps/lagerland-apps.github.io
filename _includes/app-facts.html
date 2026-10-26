@@ -46,6 +46,29 @@
 {%- assign f_has_plans = false -%}
 {%- if f_monthly != "" or f_yearly != "" or f_weekly != "" or f_lifetime != "" -%}{%- assign f_has_plans = true -%}{%- endif -%}
 
+{%- comment %} ---- derived figures for savings claims (own prices only; competitor claims stay hand-written) ---- {%- endcomment -%}
+{%- assign f_save_yearly = "" -%}{%- assign f_yearly_months = "" -%}{%- assign f_lifetime_months = "" -%}{%- assign f_lifetime_years = "" -%}{%- assign f_monthly_annual = "" -%}
+{%- if f_monthly != "" -%}
+  {%- assign f_m = f_cat.plans.monthly.prices[f_terr].amount | plus: 0 | times: 1.0 -%}
+  {%- if f_yearly != "" -%}
+    {%- assign f_y = f_cat.plans.yearly.prices[f_terr].amount | plus: 0 | times: 1.0 -%}
+    {%- assign f_save_yearly = f_y | divided_by: f_m | divided_by: 12 | times: 100 | minus: 100 | times: -1 | round -%}
+    {%- assign f_yearly_months = f_y | divided_by: f_m | round -%}
+    {%- assign f_m12 = f_m | times: 12 | round: 2 -%}
+    {%- assign f_m_cur = f_cat.plans.monthly.prices[f_terr].currency -%}
+    {%- capture f_monthly_annual -%}{%- include money.html amount=f_m12 currency=f_m_cur -%}{%- endcapture -%}
+  {%- endif -%}
+  {%- if f_lifetime != "" -%}
+    {%- assign f_l = f_cat.plans.lifetime.prices[f_terr].amount | plus: 0 | times: 1.0 -%}
+    {%- assign f_lifetime_months = f_l | divided_by: f_m | round -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if f_yearly != "" and f_lifetime != "" -%}
+  {%- assign f_y = f_cat.plans.yearly.prices[f_terr].amount | plus: 0 | times: 1.0 -%}
+  {%- assign f_l = f_cat.plans.lifetime.prices[f_terr].amount | plus: 0 | times: 1.0 -%}
+  {%- assign f_lifetime_years = f_l | divided_by: f_y | round -%}
+{%- endif -%}
+
 {%- comment %} ---- the app's own (upfront) price ---- {%- endcomment -%}
 {%- assign f_app_free = true -%}
 {%- if f_cat.app_price and f_cat.app_price.free == false -%}

@@ -47,16 +47,16 @@ plans:
   - name: "Premium · Annual"
     price: "{P_YEARLY}/yr"
     kind: yearly
-    summary: "Same Premium features, billed once a year. Roughly 5 months of monthly Premium."
+    summary: "Same Premium features, billed once a year. Roughly {YEARLY_MONTHS} months of monthly Premium."
     features:
       - "Everything in Premium · Monthly"
-      - "~58% cheaper than paying monthly all year"
+      - "~{SAVE_YEARLY}% cheaper than paying monthly all year"
       - "7-day free trial · cancel anytime"
     highlight: true
   - name: "Lifetime"
     price: "{P_LIFETIME} once"
     kind: lifetime
-    summary: "All Premium features. Roughly 8 months of monthly Premium — then yours."
+    summary: "All Premium features. Roughly {LIFETIME_MONTHS} months of monthly Premium — then yours."
     features:
       - "Everything in Premium · Annual"
       - "One-time purchase, no renewal"
