@@ -264,6 +264,11 @@ Every loop that lists apps or posts on a translated page filters by language:
 `site.journal` and must never pick up translated pages (translations are plain pages, not collection documents,
 so they cannot leak into those loops).
 
+Screenshots follow the same idea: `_includes/screenshots.html` and the JSON-LD `screenshot` list take the file
+names from the master's `screenshots:` list and load them from `assets/screenshots/<slug>/<code>/` when that folder
+holds the full set (checked with `site.static_files`, as `head.html` already does for share images), otherwise
+from the English folder (section 6.8).
+
 ### 4.6 `_includes/head.html`
 
 - `<html lang>` and `dir` from the locale block (in `_layouts/default.html`).
@@ -371,7 +376,8 @@ Write each per-language file as a short stub that includes a shared template, so
   - `check` fails on: a fact field in a translation file, a missing text field the English page has, a missing
     key in `_data/i18n/<code>.yml`, a `ref` that points nowhere, a missing `permalink`, a translated page linking
     to an English page that now has a version in its language, and leftover English interface strings
-    (any `en.yml` value found verbatim on a non-English page).
+    (any `en.yml` value found verbatim on a non-English page). It also warns, per language, about apps still
+    showing English screenshots and about incomplete localized screenshot sets.
 - `scripts/stamp-last-updated.py`: add the language folders to `CONTENT_DIRS` (a pattern such as
   `^[a-z]{2}(-[a-z]{2})?/`). Translated privacy pages keep the privacy exception.
 - `scripts/indexnow-ping.py`: works through explicit permalinks; confirm a translated page maps to its URL and
@@ -388,7 +394,8 @@ Write each per-language file as a short stub that includes a shared template, so
     files resolves; each per-language sitemap equals that language's indexable pages.
   - WARN for internal links from a translated page to an English page (expected while tiers are incomplete).
 - `scripts/generate-og.py`: a `--lang` option that renders `assets/og/<code>/<slug>.png` with the translated
-  tagline and a font that covers the script (add CJK, Arabic, Cyrillic and latin-ext fonts to `scripts/og-assets/fonts/`).
+  tagline and a font that covers the script (add CJK, Arabic, Cyrillic and latin-ext fonts to `scripts/og-assets/fonts/`),
+  and the localized first screenshot when the language has a set.
 
 ### 4.14 Build time
 
@@ -425,7 +432,7 @@ on each page:
 - Local competitors found for Tier 3.
 - Review log: which pages had a native review, a back-translation check, and when. Reviewers are noted by role,
   never by name on the site.
-- Per-language status: tiers done, stale pages open.
+- Per-language status: tiers done, stale pages open, apps still showing English screenshots.
 
 ### 5.2 Setup commit for the language
 
@@ -501,8 +508,9 @@ inbound link from an existing page in the same language and a routing line in `/
   Marketing URL to `/<code>/apps/<slug>/`, Support URL to `/<code>/apps/<slug>/support/`, Privacy Policy URL
   (App Information) to `/<code>/apps/<slug>/privacy/`. The App Store then sends readers of that language to their
   own pages.
-- Screenshots: if a localized marketing screenshot set exists for the language, use it from
-  `assets/screenshots/<slug>/<code>/`; otherwise the English set. Alt texts and captions are always translated.
+- Screenshots: the owner provides the localized screenshots for each app in each language (section 6.8).
+  When an app has no set for the language, its page shows the English set. Alt texts and captions are always
+  translated, whichever set is shown.
 - Testimonials: a quote is shown in the language the user wrote it in, with `lang` set on the element. Prefer
   reviews from that storefront in that language. A translation of a quote is labeled as a translation and is never
   presented as the user's own words.
@@ -553,6 +561,24 @@ A page with no English twin (a local competitor, a market-specific guide). Rules
 - Same SEO gate, same routing line in the language's llms.txt, same inbound-link rule.
 - Consider whether the English site needs the page too; if yes, the English page is written and the two are
   linked with `ref`.
+
+### 6.8 Localized screenshots
+
+- The owner provides the screenshots for each app in each language. Never make them here: no mock-ups, no
+  machine-edited text inside an English screenshot, no screenshots captured from a half-translated build.
+- Location: `assets/screenshots/<slug>/<code>/`, with the same file names, count, order, sizes and format as
+  the English set in `assets/screenshots/<slug>/`, processed the same way. The `screenshots:` list in
+  `_apps/<slug>.md` stays the one list of files for every language.
+- Fallback: a page uses the language folder when it holds every file the English list names. If the folder is
+  missing or incomplete, the page shows the whole English set. One strip never mixes languages.
+- The choice applies everywhere a screenshot appears: the strip under the hero (`_includes/screenshots.html`),
+  the `screenshot` list in the SoftwareApplication JSON-LD, and the language's OG card (`generate-og.py --lang`
+  uses the localized first screenshot when the set exists).
+- A set that arrives after the page is live needs no page edit. Rebuild, regenerate that app's OG card for the
+  language, and stamp the translated app page by hand, because the page visibly changed:
+  `python3 scripts/stamp-last-updated.py <code>/apps/<slug>/index.md`.
+- `scripts/i18n.py check` lists, per language, the apps still showing English screenshots and any incomplete
+  set. Keep that list in the language sheet.
 
 ---
 
@@ -749,6 +775,7 @@ counts as done there:
 - The app's line in that language's `/<code>/llms.txt` routing guide and in `ai-index.json` (automatic through the map).
 - Glossary entries from the app's string catalog; localized App Store name if any.
 - OG card for each language (`generate-og.py --lang`).
+- Localized screenshot sets, placed per language as the owner provides them (6.8). The English set shows until then.
 - App Store Connect localized URLs (6.2).
 - The app on the language's audience page (`/<code>/for/`) when that page exists.
 
@@ -847,6 +874,7 @@ Gregorian dates with the month names used in Saudi Arabia (أكتوبر). Latin 
 [ ] Keyword research for every Tier 1 page recorded in the sheet
 [ ] Tier 1 pages written, humanized, fact-diffed; back-translation check on home, app pages, about
 [ ] /<code>/llms.txt with its AI recommendation guide in the language; /<code>/llms-full.txt, feed, sitemap
+[ ] Localized screenshots placed where the owner provided them; apps still on English sets listed in the sheet
 [ ] OG cards for the language
 [ ] i18n.py map, stamp, build, i18n.py check, seo-audit.py: 0 errors
 [ ] Switcher shows the language; English footer links /<code>/; root llms.txt "Other languages" updated
@@ -875,6 +903,7 @@ Gregorian dates with the month names used in Saudi Arabia (أكتوبر). Latin 
 [ ] English version shipped through the repo CLAUDE.md gate
 [ ] New interface strings added to every live language file
 [ ] New app: translated app, support and privacy pages in every live language, OG cards, ASC localized URLs
+[ ] New app: localized screenshot sets placed per language as the owner provides them (English until then)
 [ ] New guide, comparison or post: queued per language in the sheets where there is local demand
 [ ] English text edits: i18n.py stale reviewed; factual changes synced into every language
 ```
