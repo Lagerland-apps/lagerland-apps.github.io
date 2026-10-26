@@ -49,7 +49,7 @@ last_updated: 2026-10-25
   "mainEntity": [
     { "@type": "Question", "name": "What is a good native alternative to Appfigures?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is a native iPhone alternative to Appfigures and similar dashboards. It uses your own App Store Connect API key to read directly from App Store Connect's API, so your sales, downloads, subscriptions, and refunds never pass through a third-party data warehouse." } },
     { "@type": "Question", "name": "Does AppMeta Pulse store my App Store Connect data on a server?", "acceptedAnswer": { "@type": "Answer", "text": "Not on ours. AppMeta Pulse fetches data on your device, using your App Store Connect API key stored in the iOS Keychain. With iCloud Sync on, the data is also kept in your own private iCloud database on Apple's servers, which we can't access. Lagerland Apps never sees your revenue, downloads, or any business data." } },
-    { "@type": "Question", "name": "How much does AppMeta Pulse cost compared to Appfigures?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is $0.99 a month, $1.99 a year, or $2.99 once for lifetime access, with a 7-day free trial, and covers every app in your account. Appfigures and similar SaaS dashboards typically charge per-app or per-seat at higher tiers." } },
+    { "@type": "Question", "name": "How much does AppMeta Pulse cost compared to Appfigures?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is {P_MONTHLY@appmeta-pulse} a month, {P_YEARLY@appmeta-pulse} a year, or {P_LIFETIME@appmeta-pulse} once for lifetime access, with a 7-day free trial, and covers every app in your account. Appfigures and similar SaaS dashboards typically charge per-app or per-seat at higher tiers." } },
     { "@type": "Question", "name": "Does AppMeta Pulse support multiple developer accounts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AppMeta Pulse supports switching between multiple App Store Connect accounts you have access to, useful for indie developers and small teams managing more than one team." } }
   ]
 }
@@ -89,7 +89,7 @@ last_updated: 2026-10-25
     </div>
     <div class="card">
       <div class="card-title">Pricing</div>
-      <div class="card-text"><strong>AppMeta Pulse:</strong> $0.99/month, $1.99/year, or $2.99 lifetime, for every app in your account.<br><br><strong>Appfigures:</strong> Tiered SaaS, scaling with apps and seats.</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> {P_MONTHLY@appmeta-pulse}/month, {P_YEARLY@appmeta-pulse}/year, or {P_LIFETIME@appmeta-pulse} lifetime, for every app in your account.<br><br><strong>Appfigures:</strong> Tiered SaaS, scaling with apps and seats.</div>
     </div>
   </div>
 </section>
@@ -131,7 +131,7 @@ last_updated: 2026-10-25
   <div class="faq">
     <details class="faq-item" open><summary>What is a good native alternative to Appfigures?</summary><div class="faq-a">AppMeta Pulse is a native iPhone alternative to Appfigures and similar dashboards. It uses your own App Store Connect API key to read directly from App Store Connect's API, so your sales, downloads, subscriptions, and refunds never pass through a third-party data warehouse.</div></details>
     <details class="faq-item"><summary>Does AppMeta Pulse store my App Store Connect data on a server?</summary><div class="faq-a">Not on ours. AppMeta Pulse fetches data on your device, using your App Store Connect API key stored in the iOS Keychain. With iCloud Sync on, the data is also kept in your own private iCloud database on Apple's servers, which we can't access. Lagerland Apps never sees your revenue, downloads, or any business data.</div></details>
-    <details class="faq-item"><summary>How much does AppMeta Pulse cost compared to Appfigures?</summary><div class="faq-a">AppMeta Pulse is $0.99 a month, $1.99 a year, or $2.99 once for lifetime access, with a 7-day free trial, and covers every app in your account. Appfigures and similar SaaS dashboards typically charge per-app or per-seat at higher tiers.</div></details>
+    <details class="faq-item"><summary>How much does AppMeta Pulse cost compared to Appfigures?</summary><div class="faq-a">AppMeta Pulse is {P_MONTHLY@appmeta-pulse} a month, {P_YEARLY@appmeta-pulse} a year, or {P_LIFETIME@appmeta-pulse} once for lifetime access, with a 7-day free trial, and covers every app in your account. Appfigures and similar SaaS dashboards typically charge per-app or per-seat at higher tiers.</div></details>
     <details class="faq-item"><summary>Does AppMeta Pulse support multiple developer accounts?</summary><div class="faq-a">Yes. AppMeta Pulse supports switching between multiple App Store Connect accounts you have access to, useful for indie developers and small teams managing more than one team.</div></details>
   </div>
 </section>
@@ -139,7 +139,7 @@ last_updated: 2026-10-25
 <section class="cta-section reveal">
   <p class="overline">Try it</p>
   <h2 class="h2">Open AppMeta Pulse.</h2>
-  <p class="lead">Your sales, on your device, read directly from Apple. From $0.99/month.</p>
+  <p class="lead">Your sales, on your device, read directly from Apple. From {P_MONTHLY@appmeta-pulse}/month.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/appmeta-pulse/">Learn about AppMeta Pulse</a>
   </div>

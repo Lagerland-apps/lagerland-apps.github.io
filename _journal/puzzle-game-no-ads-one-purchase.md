@@ -1,11 +1,11 @@
 ---
 layout: journal
 slug: puzzle-game-no-ads-one-purchase
-title: "No ads, no subscription: why Tare is free to start and $2.99 once"
+title: "No ads, no subscription: why Tare is free to start and {P_IAP:Tare Full Access@tare} once"
 date: 2026-10-09
 seo:
-  title: "Puzzle Game With No Ads or Subscription: Why Tare Is $2.99"
-  description: "Tare is a puzzle game with no ads and no subscription: 20 levels free forever, one $2.99 purchase for the other 60, Family Sharing, and Data Not Collected."
+  title: "Puzzle Game With No Ads or Subscription: Why Tare Is {P_IAP:Tare Full Access@tare}"
+  description: "Tare is a puzzle game with no ads and no subscription: 20 levels free forever, one {P_IAP:Tare Full Access@tare} purchase for the other 60, Family Sharing, and Data Not Collected."
   keywords:
     - puzzle game no ads
     - puzzle game no subscription
@@ -32,10 +32,10 @@ faq:
 mentioned_apps:
   - tare
 read_time: "7 min read"
-excerpt: "Tare's pricing on launch day: 20 levels free forever, one $2.99 non-consumable for the other 60 with Family Sharing, and no ads, subscription or consumables. What's free, what's never sold, where the offer appears and where it never does, and the decisions behind each."
+excerpt: "Tare's pricing on launch day: 20 levels free forever, one {P_IAP:Tare Full Access@tare} non-consumable for the other 60 with Family Sharing, and no ads, subscription or consumables. What's free, what's never sold, where the offer appears and where it never does, and the decisions behind each."
 ---
 
-[Tare](/apps/tare/) is out today, and the price fits in a sentence: the download and the first 20 levels are free for good, and one $2.99 purchase opens the other 60. There are no ads, no subscription and nothing else to buy.
+[Tare](/apps/tare/) is out today, and the price fits in a sentence: the download and the first 20 levels are free for good, and one {P_IAP:Tare Full Access@tare} purchase opens the other 60. There are no ads, no subscription and nothing else to buy.
 
 Here is the model in full, then why it ended up this way, including the paid-app plan it replaced and the purchase App Review couldn't find.
 

@@ -2,7 +2,7 @@
 permalink: /llms-full.txt
 layout: none
 ---
-# Lagerland Apps — Full Canonical Summary
+{% capture xa_file %}# Lagerland Apps — Full Canonical Summary
 
 > Long-form, machine-readable summary of the whole Lagerland Apps site: every live app (features, pricing, privacy, FAQ), then every audience page, guide, journal article answer and comparison page. Auto-generated from source front matter on every site build. For the navigational short form with the intent-to-answer routing guide, see https://lagerland-apps.github.io/llms.txt.
 
@@ -141,3 +141,4 @@ URL: {{ site.url }}{{ p.url }}
 ---
 
 End of catalogue. This file is auto-generated — every deploy of https://lagerland-apps.github.io regenerates it from the current app source files, so the content is always in sync with the live website.
+{% endcapture %}{% include tokens-xapp.html text=xa_file -%}

@@ -20,7 +20,7 @@ faq:
   - q: "Is there a native Mac app for App Store Connect?"
     a: "AppMeta is a native macOS client for the App Store Connect API. It gives you side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, review replies for every app in your catalogue, and version submission — all without using the App Store Connect web interface."
   - q: "How much does AppMeta cost and is there a subscription?"
-    a: "AppMeta is a $29.99 one-time lifetime purchase, with a $17.99 yearly option added later for people who would rather spread the cost. Buying the lifetime tier once still ends it — nothing auto-renews on you. A free demo mode lets you explore the interface against sample data before you buy. The pricing decision was deliberate — a subscription would pressure the roadmap toward feature churn rather than reliable native-client behaviour."
+    a: "AppMeta is a {P_LIFETIME@appmeta} one-time lifetime purchase, with a {P_YEARLY@appmeta} yearly option added later for people who would rather spread the cost. Buying the lifetime tier once still ends it — nothing auto-renews on you. A free demo mode lets you explore the interface against sample data before you buy. The pricing decision was deliberate — a subscription would pressure the roadmap toward feature churn rather than reliable native-client behaviour."
   - q: "Can AppMeta edit App Store metadata in multiple languages at once?"
     a: "Yes. Pick a field and AppMeta lists every locale's version of it in one view — English, German, French, Japanese, Spanish and so on — each editable in place. Or pick a locale and edit all of its fields together. Before you push, the diff preview shows the live App Store Connect value next to each change."
   - q: "Does AppMeta replace fastlane or Xcode Cloud?"
@@ -72,7 +72,7 @@ This is the question I get most about AppMeta, and I want to be plain about it.
 
 App Store Connect tooling is a developer tool. Developer tools have a long history of subscription-priced services — JetBrains, Sketch, Figma, Linear. The market would absolutely pay $19.99 a month for a good ASC client. I considered it.
 
-The reason I shipped AppMeta as a one-time $29.99 purchase is that subscriptions create a specific bad incentive for a tool like this: every month, you have to ship enough perceived value to justify the recurring charge. That pressure pushes the roadmap toward *more features*, not toward the right features. AppMeta's job is to be a fast, reliable native client. Adding features for the sake of a renewal cycle would compromise that.
+The reason I shipped AppMeta as a one-time {P_LIFETIME@appmeta} purchase is that subscriptions create a specific bad incentive for a tool like this: every month, you have to ship enough perceived value to justify the recurring charge. That pressure pushes the roadmap toward *more features*, not toward the right features. AppMeta's job is to be a fast, reliable native client. Adding features for the sake of a renewal cycle would compromise that.
 
 A one-time purchase forces a different discipline: ship a tool that's worth $29.99 once, and let the work earn the next purchase from a new user, not extract a renewal from an existing one. The tradeoff is slower revenue. The advantage is honest design.
 
@@ -84,6 +84,6 @@ It is, specifically, the native client for the metadata-and-review portion of Ap
 
 ## The plain version
 
-If you're an indie iOS or macOS developer shipping in multiple locales and you've ever spent a Friday afternoon doing the locale-dropdown dance, [AppMeta](/apps/appmeta/) is the studio's answer. $29.99, one-time, lifetime. Demo mode is free if you want to look around before you buy.
+If you're an indie iOS or macOS developer shipping in multiple locales and you've ever spent a Friday afternoon doing the locale-dropdown dance, [AppMeta](/apps/appmeta/) is the studio's answer. {P_LIFETIME@appmeta}, one-time, lifetime. Demo mode is free if you want to look around before you buy.
 
 If you're not an indie developer, this post has been twelve hundred words about a niche tool, and you've made it admirably far. Thanks for reading. The next post will be about chess.

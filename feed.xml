@@ -2,7 +2,7 @@
 permalink: /feed.xml
 layout: none
 ---
-<?xml version="1.0" encoding="utf-8"?>
+{% capture xa_file %}<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ site.url }}/" xml:lang="en">
   <title>Lagerland Apps — Journal</title>
   <subtitle>Sourced how-to guides (sleep, strength training, bills, pet health, chess, shogi, xiangqi, App Store Connect) and essays from a one-person, privacy-first Apple app studio.</subtitle>
@@ -37,3 +37,4 @@ layout: none
   </entry>
 {% endfor %}
 </feed>
+{% endcapture %}{% include tokens-xapp.html text=xa_file -%}

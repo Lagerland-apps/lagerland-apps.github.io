@@ -4,7 +4,7 @@ slug: liftlog-pay-what-you-can
 title: "LiftLog ships. You pick the price."
 seo:
   title: "LiftLog: A Strength Log With No Subscription, Pay Once"
-  description: "A design-led iPhone strength log with no subscription: seven days free, then you pick the price once — $9.99 to $39.99. Why pay-what-you-can beats renting."
+  description: "A design-led iPhone strength log with no subscription: seven days free, then you pick the price once — {P_IAP:Minimum@liftlog} to {P_IAP:Patron@liftlog}. Why pay-what-you-can beats renting."
   keywords:
     - "strength log no subscription"
     - "workout tracker pay once"
@@ -18,9 +18,9 @@ lede: "LiftLog — a design-led strength training log for iPhone — is on the A
 quick_answer: "LiftLog is a design-led iPhone strength training log priced on a pay-what-you-can model. After a seven-day free trial with no card on file, the user picks one of four one-time tiers — Fair $9.99, Good $19.99, Generous $29.99, or Patron $39.99 — all unlocking the same app. No subscription, no auto-renew."
 faq:
   - q: "How much does LiftLog cost after the free trial?"
-    a: "After the seven-day card-free trial, LiftLog offers four one-time tiers: Fair $9.99, Good $19.99, Generous $29.99, or Patron $39.99. All four tiers unlock the same app with no extra features behind a higher price. There is no subscription and no auto-renewal."
+    a: "After the seven-day card-free trial, LiftLog offers four one-time tiers: Fair {P_IAP:Minimum@liftlog}, Good {P_IAP:Suggested@liftlog}, Generous {P_IAP:Supporter@liftlog}, or Patron {P_IAP:Patron@liftlog}. All four tiers unlock the same app with no extra features behind a higher price. There is no subscription and no auto-renewal."
   - q: "What is the difference between LiftLog and GymLogger X?"
-    a: "GymLogger X is the studio's other strength logger, with an Apple Watch app for logging sets and Pro priced at $39.99 lifetime or $17.99 a year. LiftLog is iPhone-only and design-led, with a custom haptic keypad and a pay-what-you-can purchase model. Want to log from the watch: GymLogger X. Live on iPhone and want polish: LiftLog."
+    a: "GymLogger X is the studio's other strength logger, with an Apple Watch app for logging sets and Pro priced at {P_LIFETIME@gymlogger-x} lifetime or {P_YEARLY@gymlogger-x} a year. LiftLog is iPhone-only and design-led, with a custom haptic keypad and a pay-what-you-can purchase model. Want to log from the watch: GymLogger X. Live on iPhone and want polish: LiftLog."
   - q: "Why does LiftLog use pay-what-you-can pricing instead of a subscription?"
     a: "Strength training history accumulates value over years, so charging monthly rent on a user's own data felt structurally wrong for a one-person studio. A one-time tier ladder gives the user agency over what the app is worth to them while keeping the training journal accessible if the studio ever disappears."
   - q: "Does LiftLog require an account or cloud sync?"
@@ -29,7 +29,7 @@ mentioned_apps:
   - liftlog
   - gymlogger-x
 read_time: "6 min read"
-excerpt: "LiftLog launches as Lagerland Apps's first pay-what-you-can app — a seven-day card-free trial followed by a one-time tier the user chooses ($9.99 Fair / $19.99 Good / $29.99 Generous / $39.99 Patron). This post explains the bet, the four tiers, why GymLogger X still exists alongside it, and what I'll be watching to learn whether the model works."
+excerpt: "LiftLog launches as Lagerland Apps's first pay-what-you-can app — a seven-day card-free trial followed by a one-time tier the user chooses ({P_IAP:Minimum@liftlog} Fair / {P_IAP:Suggested@liftlog} Good / {P_IAP:Supporter@liftlog} Generous / {P_IAP:Patron@liftlog} Patron). This post explains the bet, the four tiers, why GymLogger X still exists alongside it, and what I'll be watching to learn whether the model works."
 ---
 
 [LiftLog](/apps/liftlog/) is on the App Store today.
@@ -54,7 +54,7 @@ After the seven-day free trial, the app shows you four tiers:
 
 - **Fair — $9.99.** The entry tier. If LiftLog is genuinely the cheapest version of the app you can justify, this is the right choice. No guilt, no asterisk.
 - **Good — $19.99.** The middle. If LiftLog has earned a serious amount of your training time and feels like the tool you'll keep using, this is the calibration most users will land on.
-- **Generous — $29.99.** A step up for users who want the work supported, or who have benefited from indie software in the past and choose to lean in.
+- **Generous — {P_IAP:Supporter@liftlog}.** A step up for users who want the work supported, or who have benefited from indie software in the past and choose to lean in.
 - **Patron — $39.99.** The top tier. Same app, no extra unlocks. This tier exists so people who want to back the studio at a level closer to a year of competitor subscriptions have a way to do that — without it being awkward, hidden, or a tip jar.
 
 All four tiers unlock the same product. No content gating, no "premium" features behind a higher number. The choice is about what LiftLog is worth to you, not about which features you get.
@@ -101,7 +101,7 @@ I'll publish a follow-up here in three to six months with whatever the data says
 
 If you train, [download LiftLog](/apps/liftlog/). Seven days, no card, full access. After that, pick a tier or don't — and if you don't, we part on good terms.
 
-If pay-what-you-can pricing isn't your thing, [GymLogger X](/apps/gymlogger-x/) is right there at $39.99 lifetime. Same studio, same privacy principles, different shape.
+If pay-what-you-can pricing isn't your thing, [GymLogger X](/apps/gymlogger-x/) is right there at {P_LIFETIME@gymlogger-x} lifetime. Same studio, same privacy principles, different shape.
 
 Either way, your training history stays on your device, no third-party tracking, no advertising SDKs, no required account. The app is small. The studio is one person. The principles aren't going anywhere.
 

@@ -109,7 +109,7 @@ The economics for 2026 indie pipelines:
 - **Figma + manual translation + manual upload:** Free (within Figma free plan). Time cost is the 10–30 hours described above. For an app shipping 3 releases per year that's 30–90 hours per year — half a developer-week.
 - **Figma + AI translation (BYO API) + manual upload:** ~$2–5 of API calls per release. Time cost drops to 4–10 hours.
 - **Subscription SaaS (Screenshots.pro / AppLaunchpad Pro / Screenshot Studio):** $19–$49 per month = $228–$588 per year. Time cost drops to 1–3 hours per release.
-- **[Mockly](/apps/mockly/) (one-time $12.99):** Time cost drops to 90 min first release, 15 min subsequent releases. AI translation against your own API key (~$0.50–$2 per release at 2026 API prices).
+- **[Mockly](/apps/mockly/) (one-time {P_APP@mockly}):** Time cost drops to 90 min first release, 15 min subsequent releases. AI translation against your own API key (~$0.50–$2 per release at 2026 API prices).
 
 The cost-of-tool is small compared to the cost-of-time. The decision is mostly about which workflow architecture you adopt, not which logo is on the tool.
 

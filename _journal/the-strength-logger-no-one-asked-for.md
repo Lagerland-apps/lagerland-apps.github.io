@@ -66,7 +66,7 @@ What it does *not* do is automatically restructure your program for you, change 
 
 ## The lifetime price
 
-GymLogger X ships with a freemium model that the studio has stuck to: core logging is free forever, Pro is $17.99/year, and there is a one-time **$39.99 lifetime** option for users who don't want a subscription on a tool they intend to use for a decade.
+GymLogger X ships with a freemium model that the studio has stuck to: core logging is free forever, Pro is {P_YEARLY@gymlogger-x}/year, and there is a one-time **{P_LIFETIME@gymlogger-x} lifetime** option for users who don't want a subscription on a tool they intend to use for a decade.
 
 The lifetime tier is the one I most often get asked about. The math on it is, candidly, not great for a studio chasing recurring revenue. A user who buys lifetime in year one and uses the app for seven years has paid the studio about a third of what an annual subscriber would have paid. The lifetime tier exists anyway because strength training is a long-term practice and a user's training history should not be conditional on continuing a subscription.
 

@@ -74,7 +74,7 @@ For four people, item-level splitting recovers an average of $20-40 per dinner o
 
 For ten people — bachelor parties, family dinners, work outings — item-level vs. equal-split can be a $80-150 swing per person. At that point, equal-splitting isn't just unfair; it's the thing that turns a fun dinner into an awkward Venmo argument the next morning.
 
-[RightSplit](/apps/rightsplit/) Pro+ adds unlimited receipt scans, item-level splitting, uneven splits (the person with the bigger appetite explicitly takes a 1.5× share), unlimited history and Spaces. $3.99 a year, or $7.99 lifetime. The free tier covers equal splits, the tip calculator, your last five splits and your first receipt scan, which is enough for most two-person scenarios.
+[RightSplit](/apps/rightsplit/) Pro+ adds unlimited receipt scans, item-level splitting, uneven splits (the person with the bigger appetite explicitly takes a 1.5× share), unlimited history and Spaces. {P_YEARLY@rightsplit} a year, or {P_LIFETIME@rightsplit} lifetime. The free tier covers equal splits, the tip calculator, your last five splits and your first receipt scan, which is enough for most two-person scenarios.
 
 ## A note on small kindnesses
 

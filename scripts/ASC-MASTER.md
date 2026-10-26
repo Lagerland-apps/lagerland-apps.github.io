@@ -58,6 +58,18 @@ How the site uses it (Phase 1 of PLAN-master-data-on-site.md):
   yearly vs 12 months of monthly), `{YEARLY_MONTHS}` / `{LIFETIME_MONTHS}` (price as months of monthly, rounded),
   `{LIFETIME_YEARS}` (lifetime as years of yearly), `{P_MONTHLY_ANNUAL}` (12 x monthly). Claims relative to
   competitors ("about 40% of what comparable apps charge") stay hand-written because the competitor price is typed.
+- Cross-app tokens (Phase 3): pages about several apps (comparison pages, journal, guides, AI files) write one
+  app's price as `{P_MONTHLY@pawza}`, `{P_LIFETIME@earnlock}`, `{P_IAP:Minimum@liftlog}`: the same tokens with
+  `@<app slug>` before the closing brace. `_includes/tokens-xapp.html` expands them from that app's catalog entry;
+  `default.html`, `feed.xml`, `llms.txt`, `llms-full.txt` and `ai-index.json` all run it. A heading that contains a
+  token needs an explicit anchor (`## Why {P_APP@mockly} lifetime {#why-1299-lifetime}`), otherwise kramdown builds
+  the anchor id from the token text and changes the URL fragment.
+- How the Phase 3 conversion was decided (so it can be repeated for new pages): a typed price becomes a token only
+  when it equals the catalog price of an app that the sentence names (or the table cell marked
+  `compare-table__primary`) and the wording says monthly / yearly / lifetime; or, on a comparison page, when it sits in
+  front matter, a lead paragraph, or an FAQ answer whose question names the featured app, with no competitor name,
+  other brand possessive ("StepBloc's") or comparison word nearby. Anything else stays typed. A price of ours that
+  differs from the catalog (Chessful and Observa pages) was converted too, which corrects it.
 - What stays typed on purpose: competitor prices, illustrative amounts in examples ("$612 of bills"), derived
   figures, the hidden WanderWiki weekly plan, and our own price quoted on another app's page (e.g. LiftLog's FAQ
   about GymLogger X). Cross-app tokens come with Phase 3.

@@ -102,4 +102,4 @@ Learn one opening for Red and one answer to the Central Cannon for Black, and le
 
 Moves can be shown in WXF or Chinese notation, and switching relabels the games you have already played. After each game, Pikafish reviews every move on your device, and Game Review names an early slip as an opening inaccuracy. If you are still learning how the pieces move, start with [the xiangqi rules for chess players](/journal/xiangqi-rules-for-chess-players/). Shogi players will notice a similar first decision in [Static Rook against Ranging Rook](/journal/shogi-openings-for-beginners/).
 
-Xiangqiful is free, with Premium at $1.99 a month or $9.99 a year (each with a one-week free trial) or $19.99 once. To play these openings against people, see [the guide to xiangqi apps for iPhone](/guides/best-xiangqi-apps-iphone/).
+Xiangqiful is free, with Premium at {P_MONTHLY@xiangqiful} a month or {P_YEARLY@xiangqiful} a year (each with a one-week free trial) or {P_LIFETIME@xiangqiful} once. To play these openings against people, see [the guide to xiangqi apps for iPhone](/guides/best-xiangqi-apps-iphone/).

@@ -24,7 +24,7 @@ faq:
   - q: "Will AllPaid catch forgotten subscriptions I do not remember paying for?"
     a: "No. That is the one case where a bank-linked app has a real edge, and AllPaid is honest about it. If finding forgotten charges from years ago is your primary need, an aggregator-based tool is the better fit. AllPaid is for the user who knows roughly what they pay for and wants reminders, not surveillance."
   - q: "How much does AllPaid cost?"
-    a: "AllPaid is free, with Pro at $1.99 a month, $12.99 a year, or $24.99 lifetime. There is no required account, no email signup, no third-party tracking, and no advertising SDKs. Bills are stored locally on the device, with calendar views, partner sharing, widgets, and Siri integration available without any cloud account."
+    a: "AllPaid is free, with Pro at {P_MONTHLY@allpaid} a month, {P_YEARLY@allpaid} a year, or {P_LIFETIME@allpaid} lifetime. There is no required account, no email signup, no third-party tracking, and no advertising SDKs. Bills are stored locally on the device, with calendar views, partner sharing, widgets, and Siri integration available without any cloud account."
 mentioned_apps:
   - allpaid
 read_time: "5 min read"

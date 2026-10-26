@@ -20,7 +20,7 @@ faq:
   - q: "Is there a native Mac alternative to fastlane snapshot?"
     a: "Mockly is a native macOS app that replaces fastlane snapshot, frameit, and deliver for indie iOS developers whose screenshot work is editorial. It composes layouts with 3D Metal-rendered device frames, swaps screenshots and copy across 20+ App Store locales, and uploads directly to App Store Connect — no Ruby, no YAML, no Xcode UI tests."
   - q: "How much does Mockly cost?"
-    a: "Mockly is $12.99 lifetime with Family Sharing support, which means a two-developer studio or co-founder pair can share a single license. The pricing is intentionally one-time rather than per-seat because small indie tools should treat their small indie users as a household, not a contract."
+    a: "Mockly is {P_APP@mockly} lifetime with Family Sharing support, which means a two-developer studio or co-founder pair can share a single license. The pricing is intentionally one-time rather than per-seat because small indie tools should treat their small indie users as a household, not a contract."
   - q: "Does Mockly replace fastlane entirely?"
     a: "No. Studios with deep CI/CD investments and regenerated-on-every-release pipelines should keep fastlane. Mockly is for the editorial moment upstream of the pipeline — composing what each screenshot says, with overlay copy and multiple devices — which is the bulk of the work for design-led indie shops."
   - q: "How are device frames rendered in Mockly?"
@@ -75,11 +75,11 @@ The feature set, briefly:
 
 It does not, deliberately, replace the automation pipeline. If your studio has a deep CI/CD investment and screenshots that need to regenerate from running tests on every release, fastlane stays in your stack. Mockly is for the editorial moment that lives upstream of the pipeline — the *deciding what the screenshot says* part — and for the studios for whom that's the bulk of the work.
 
-## Why $12.99 lifetime, with Family Sharing
+## Why {P_APP@mockly} lifetime, with Family Sharing {#why-1299-lifetime-with-family-sharing}
 
 The pricing decision here is the most aligned with the [AppMeta pricing decision](/journal/native-mac-client-for-app-store-connect/) from a few weeks back: a one-time purchase, lifetime access, no subscription required.
 
-The specific addition for Mockly is **Family Sharing support**. A two-developer studio (me and a co-founder, two indie partners, a couple-run studio) can share a single $12.99 license. This was a deliberate choice — the alternative would have been per-seat pricing, which is the right call for SaaS but the wrong call for a tool that small studios use intermittently.
+The specific addition for Mockly is **Family Sharing support**. A two-developer studio (me and a co-founder, two indie partners, a couple-run studio) can share a single {P_APP@mockly} license. This was a deliberate choice — the alternative would have been per-seat pricing, which is the right call for SaaS but the wrong call for a tool that small studios use intermittently.
 
 The studio loses some revenue to Family Sharing. The studio gains, I think, the right shape of relationship with the user. A small indie tool should treat its small indie users as a household, not a contract.
 
@@ -89,6 +89,6 @@ I'm not arguing every iOS developer should switch to Mockly. The largest, most a
 
 What I'm arguing is that a meaningful fraction of indie developers — the studios where screenshot work is editorial first and pipelined second — would be better served by a GUI tool than a CI script, and that almost no one builds GUI tools for indie iOS workflows because the audience is "just" tens of thousands of developers globally.
 
-That audience is the audience this studio happens to be in. [Mockly](/apps/mockly/) is for them. $12.99, lifetime, Family Sharing supported. If it doesn't fit your workflow, fastlane will still be there next release.
+That audience is the audience this studio happens to be in. [Mockly](/apps/mockly/) is for them. {P_APP@mockly}, lifetime, Family Sharing supported. If it doesn't fit your workflow, fastlane will still be there next release.
 
 If you've ever sworn at a Ruby script in the middle of a Friday ship, this might be the weekend to reconsider what part of the chore is actually necessary.

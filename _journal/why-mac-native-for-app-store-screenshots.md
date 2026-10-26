@@ -65,7 +65,7 @@ Several reasons, in roughly ascending order of how often they actually matter:
 
 **Speed.** Local Metal rendering at 4K, with full 3D device geometry and lighting, takes milliseconds per screenshot. The same render through a remote service typically takes 1-10 seconds per screenshot once you account for upload, queueing, render, download. For a project producing 234 screenshots (6 device sizes × 39 locales), this is the difference between a 5-second render and a 5-minute render. The local version also doesn't depend on the vendor's servers staying up tonight.
 
-**Lower total cost.** Once the rendering happens locally, the natural pricing model is a one-time purchase. The cost structure of a Mac app — distributed via the App Store, no server bills — supports a $20–$50 one-time price comfortably. The cost structure of a SaaS web app — render farms running 24/7 — pretty much requires a subscription. This is why Mockly is $12.99 once and most competitors are $19–$49 per month.
+**Lower total cost.** Once the rendering happens locally, the natural pricing model is a one-time purchase. The cost structure of a Mac app — distributed via the App Store, no server bills — supports a $20–$50 one-time price comfortably. The cost structure of a SaaS web app — render farms running 24/7 — pretty much requires a subscription. This is why Mockly is {P_APP@mockly} once and most competitors are $19–$49 per month.
 
 **No account or login required.** This isn't an ideological preference — there's just nothing for an account to authenticate against. The app doesn't store anything server-side because there's no server. You don't need to recover your account if you change machines, because there isn't one. The friction reduction is real and the privacy reduction is real and they're both downstream of "the rendering happens here."
 
@@ -108,4 +108,4 @@ For solo developers and small teams, the ratio of GUI-tool setup time (an hour) 
 - Mac-native means rendering happens on your machine via Metal, AI translation calls your own provider directly, App Store Connect auth lives in Keychain. Every byte stays local until you push to Apple.
 - The reason web apps dominate isn't user preference — it's that the SaaS subscription business model only works if rendering happens on the vendor's infrastructure.
 - Mac-native is structurally better for the user, structurally worse for the vendor. That's why it's rare.
-- [Mockly](/apps/mockly/) is the Mac-native version. $12.99 once, no subscription, no server, no account.
+- [Mockly](/apps/mockly/) is the Mac-native version. {P_APP@mockly} once, no subscription, no server, no account.

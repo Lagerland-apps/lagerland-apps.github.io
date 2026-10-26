@@ -16,7 +16,7 @@ seo:
     - HRV insights iPhone
     - recovery app no account
     - health coach alternative privacy
-last_updated: 2026-07-11
+last_updated: 2026-10-26
 ---
 
 {%- assign app = site.apps | where: "slug", "observa" | first -%}
@@ -50,7 +50,7 @@ last_updated: 2026-07-11
   "mainEntity": [
     { "@type": "Question", "name": "What is the best Bevel alternative?", "acceptedAnswer": { "@type": "Answer", "text": "If you want plain-English Apple Health interpretation without a cloud AI coach, Observa is the closest match. Observa reads Apple Health and Apple Watch data — HRV (SDNN), ECG, sleep stages, RHR, workouts — and surfaces named correlations against a 60-day personal baseline. Everything runs on-device. No account, no servers, no analytics SDKs." } },
     { "@type": "Question", "name": "Is Observa a connected health coach like Bevel?", "acceptedAnswer": { "@type": "Answer", "text": "No — that's a deliberate design choice. Bevel pairs wearables, bloodwork, and lifestyle data with an AI coach that runs in the cloud; Observa is the opposite philosophy. It's a translation layer for the Apple Health data you already have, with every computation staying on your device." } },
-    { "@type": "Question", "name": "Is Observa cheaper than Bevel?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Observa is free with optional Pro from $2.99/month or $49.99 lifetime. Bevel typically runs as a multi-tier subscription. Pricing changes — check both App Store listings for current figures." } },
+    { "@type": "Question", "name": "Is Observa cheaper than Bevel?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Observa is free with optional Pro from {P_MONTHLY@observa}/month or {P_LIFETIME@observa} lifetime. Bevel typically runs as a multi-tier subscription. Pricing changes — check both App Store listings for current figures." } },
     { "@type": "Question", "name": "Why pick on-device over a cloud-based health coach?", "acceptedAnswer": { "@type": "Answer", "text": "Cloud coaches need to upload your health data to work. That trades privacy for breadth — they can also see your bloodwork, your lab records, your medical history. Observa is the opposite trade: narrower scope (Apple Health only) but verified on-device by Apple's App Privacy nutrition label, which lists Observa as collecting zero data." } }
   ]
 }
@@ -106,7 +106,7 @@ last_updated: 2026-07-11
   <div class="faq">
     <details class="faq-item"><summary>What is the best Bevel alternative?</summary><div class="faq-a">If you want plain-English Apple Health interpretation without a cloud coach, Observa is the closest match. It reads Apple Health and Apple Watch data and surfaces named correlations against a 60-day personal baseline — everything on-device, no account, no servers.</div></details>
     <details class="faq-item"><summary>Is Observa a connected health coach like Bevel?</summary><div class="faq-a">No — and that's deliberate. Bevel pairs wearables, bloodwork, and lifestyle data with an AI coach in the cloud. Observa is a translation layer for the Apple Health data you already have, with every computation staying on your device.</div></details>
-    <details class="faq-item"><summary>Is Observa cheaper than Bevel?</summary><div class="faq-a">Yes. Observa is free with optional Pro from $2.99/month or $49.99 lifetime. Bevel typically runs as a multi-tier subscription. Pricing changes — check both App Store listings for current figures.</div></details>
+    <details class="faq-item"><summary>Is Observa cheaper than Bevel?</summary><div class="faq-a">Yes. Observa is free with optional Pro from {P_MONTHLY@observa}/month or {P_LIFETIME@observa} lifetime. Bevel typically runs as a multi-tier subscription. Pricing changes — check both App Store listings for current figures.</div></details>
     <details class="faq-item"><summary>Why pick on-device over a cloud-based health coach?</summary><div class="faq-a">Cloud coaches need to upload your health data to work. That trades privacy for breadth — they can also see your bloodwork, lab records, medical history. Observa is the opposite trade: narrower scope (Apple Health only) but verified on-device by Apple's App Privacy nutrition label, which lists Observa as collecting zero data.</div></details>
   </div>
 </section>

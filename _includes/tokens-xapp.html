@@ -1,0 +1,19 @@
+{%- comment -%}
+  Cross-app tokens: a text about several apps (comparison pages, journal, guides, AI files) writes the price of a
+  specific app as {P_MONTHLY@pawza}, {P_IAP:Minimum@liftlog} and so on. This include expands every such token
+  from that app's catalog entry and prints the text. It re-assigns the f_* facts, so include app-facts.html again
+  afterwards if the current page's own facts are needed.
+    text   the string containing tokens
+{%- endcomment -%}
+{%- assign xa_out = include.text -%}
+{%- if xa_out contains "@" -%}
+  {%- for xa_app in site.apps -%}
+    {%- assign xa_sfx = "@" | append: xa_app.slug -%}
+    {%- assign xa_probe = xa_sfx | append: "}" -%}
+    {%- if xa_out contains xa_probe -%}
+      {%- include app-facts.html app=xa_app -%}
+      {%- capture xa_out -%}{%- include tokens.html text=xa_out sfx=xa_sfx -%}{%- endcapture -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{{- xa_out -}}

@@ -51,7 +51,7 @@ last_updated: 2026-10-25
     {"@type": "Question", "name": "Why does AppMeta Pulse need an API key when Apple's app doesn't?", "acceptedAnswer": {"@type": "Answer", "text": "Apple's app signs in with your Apple Account because Apple runs App Store Connect. Third-party apps reach the same data through the official App Store Connect API, which uses a key you create. AppMeta Pulse asks for a key with the Admin role plus your Vendor Number, keeps the key in the iOS Keychain, and calls Apple's servers directly."}},
     {"@type": "Question", "name": "Can AppMeta Pulse submit builds or manage TestFlight?", "acceptedAnswer": {"@type": "Answer", "text": "No. AppMeta Pulse has no code for builds, submissions, TestFlight, pricing or metadata. The only things it sends to App Store Connect are review replies you write and the analytics report requests Apple needs before preparing impressions data. For releases, use Apple's App Store Connect app or the website."}},
     {"@type": "Question", "name": "Which app has notifications and widgets?", "acceptedAnswer": {"@type": "Answer", "text": "Apple's App Store Connect app sends notifications for app status changes, new reviews, tester feedback and featuring; its listing doesn't mention widgets. AppMeta Pulse has no push notifications and offers 12 Home Screen and Lock Screen widgets for proceeds, sales, MRR, trends, subscriptions and reviews."}},
-    {"@type": "Question", "name": "How much do they cost?", "acceptedAnswer": {"@type": "Answer", "text": "Apple's App Store Connect app is free. AppMeta Pulse has a free trial, then costs from $0.99 a month; check the App Store listing for the current plans in your currency."}}
+    {"@type": "Question", "name": "How much do they cost?", "acceptedAnswer": {"@type": "Answer", "text": "Apple's App Store Connect app is free. AppMeta Pulse has a free trial, then costs from {P_MONTHLY@appmeta-pulse} a month; check the App Store listing for the current plans in your currency."}}
   ]
 }
 </script>
@@ -82,7 +82,7 @@ last_updated: 2026-10-25
     </div>
     <div class="card">
       <div class="card-title">Price and sign-in</div>
-      <div class="card-text"><strong>AppMeta Pulse:</strong> Free trial, then from $0.99 a month. You connect an App Store Connect API key with the Admin role, its Issuer ID and Key ID, and your Vendor Number. The key stays in the iOS Keychain.<br><br><strong>App Store Connect app:</strong> Free. You sign in with your Apple Account, so there is no key to create, and team members can use it with their own App Store Connect access.<br><br>Apple's app is cheaper and quicker to set up. That is a real advantage.</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> Free trial, then from {P_MONTHLY@appmeta-pulse} a month. You connect an App Store Connect API key with the Admin role, its Issuer ID and Key ID, and your Vendor Number. The key stays in the iOS Keychain.<br><br><strong>App Store Connect app:</strong> Free. You sign in with your Apple Account, so there is no key to create, and team members can use it with their own App Store Connect access.<br><br>Apple's app is cheaper and quicker to set up. That is a real advantage.</div>
     </div>
     <div class="card">
       <div class="card-title">Money and subscription numbers</div>
@@ -183,14 +183,14 @@ last_updated: 2026-10-25
     <details class="faq-item"><summary>Why does AppMeta Pulse need an API key when Apple's app doesn't?</summary><div class="faq-a">Apple's app signs in with your Apple Account because Apple runs App Store Connect. Third-party apps reach the same data through the official App Store Connect API, which uses a key you create. AppMeta Pulse asks for a key with the Admin role plus your Vendor Number, keeps the key in the iOS Keychain, and calls Apple's servers directly.</div></details>
     <details class="faq-item"><summary>Can AppMeta Pulse submit builds or manage TestFlight?</summary><div class="faq-a">No. AppMeta Pulse has no code for builds, submissions, TestFlight, pricing or metadata. The only things it sends to App Store Connect are review replies you write and the analytics report requests Apple needs before preparing impressions data. For releases, use Apple's App Store Connect app or the website.</div></details>
     <details class="faq-item"><summary>Which app has notifications and widgets?</summary><div class="faq-a">Apple's App Store Connect app sends notifications for app status changes, new reviews, tester feedback and featuring; its listing doesn't mention widgets. AppMeta Pulse has no push notifications and offers 12 Home Screen and Lock Screen widgets for proceeds, sales, MRR, trends, subscriptions and reviews.</div></details>
-    <details class="faq-item"><summary>How much do they cost?</summary><div class="faq-a">Apple's App Store Connect app is free. AppMeta Pulse has a free trial, then costs from $0.99 a month; check the App Store listing for the current plans in your currency.</div></details>
+    <details class="faq-item"><summary>How much do they cost?</summary><div class="faq-a">Apple's App Store Connect app is free. AppMeta Pulse has a free trial, then costs from {P_MONTHLY@appmeta-pulse} a month; check the App Store listing for the current plans in your currency.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Try it</p>
   <h2 class="h2">Open AppMeta Pulse.</h2>
-  <p class="lead">A calm App Store Connect dashboard for proceeds, MRR and subscriptions, next to the app you already use for releases. Zero data collection on the privacy label, from $0.99/month.</p>
+  <p class="lead">A calm App Store Connect dashboard for proceeds, MRR and subscriptions, next to the app you already use for releases. Zero data collection on the privacy label, from {P_MONTHLY@appmeta-pulse}/month.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/appmeta-pulse/">Learn about AppMeta Pulse</a>
     <a class="btn btn-secondary" href="/alternatives/revenuecat/">AppMeta Pulse vs RevenueCat</a>
