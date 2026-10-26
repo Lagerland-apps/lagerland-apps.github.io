@@ -232,13 +232,19 @@ comparison_table:
 
 screenshots:
   - src: "/assets/screenshots/rightsplit/1.png"
-    alt: "RightSplit receipt scanner on iPhone — take a photo of the restaurant bill or choose one from the gallery, and every line item and total is read on-device"
+    alt: "RightSplit split screen with total, tip and adjustable amounts per person"
   - src: "/assets/screenshots/rightsplit/2.png"
-    alt: "RightSplit split-by-items screen — each person's items and total, with the tip slider and people count above"
+    alt: "RightSplit receipt items assigned to people with tap-to-assign chips"
   - src: "/assets/screenshots/rightsplit/3.png"
-    alt: "RightSplit shared items — a shared item split between the people who shared it, with a check showing how much of the total is still unassigned"
+    alt: "RightSplit completed split with payment request buttons for each person"
   - src: "/assets/screenshots/rightsplit/4.png"
-    alt: "RightSplit split summary on iPhone — each person's total with Text and WhatsApp buttons, plus the receipt's subtotal, tax and tip"
+    alt: "RightSplit receipt detail with a per-person breakdown"
+  - src: "/assets/screenshots/rightsplit/5.png"
+    alt: "RightSplit spaces list with trips and shared groups"
+  - src: "/assets/screenshots/rightsplit/6.png"
+    alt: "RightSplit trip detail with expenses, receipts and where the money went"
+  - src: "/assets/screenshots/rightsplit/7.png"
+    alt: "RightSplit split by items with a running total per person"
 
 privacy:
   data_collection: "none"

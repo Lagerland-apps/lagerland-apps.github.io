@@ -206,17 +206,21 @@ features:
 
 screenshots:
   - src: "/assets/screenshots/gymlogger-x/1.png"
-    alt: "GymLogger X Push Day workout on iPhone — barbell bench press set 1 logged at 12 reps × 80 kg beside last session's sets, with a 47-second rest timer running"
+    alt: "GymLogger X workout screen with a weight and reps target for today"
   - src: "/assets/screenshots/gymlogger-x/2.png"
-    alt: "GymLogger X Progress overview on iPhone with a trend summary, two exercises on plateau Monitoring, and a push/pull training-balance bar"
+    alt: "GymLogger X progress screen flagging a stalled lift with a trend chart"
   - src: "/assets/screenshots/gymlogger-x/3.png"
-    alt: "GymLogger X personal records tab on iPhone ranking top estimated 1RMs — barbell squat 105 kg, bench press 87.1 kg — with filters for best weight, highest reps, and 1RM"
+    alt: "GymLogger X progress overview with a suggested increase"
   - src: "/assets/screenshots/gymlogger-x/4.png"
-    alt: "GymLogger X workout template editor on iPhone for Push Day, with bench press and overhead press grouped as a superset"
+    alt: "GymLogger X training programs list with proven templates such as push pull legs"
   - src: "/assets/screenshots/gymlogger-x/5.png"
-    alt: "GymLogger X Training screen on iPhone with Start Empty Workout, Start From Template, an active 2-Day Split Routine program, and a completed program"
+    alt: "GymLogger X muscle balance heatmap showing undertrained muscles"
   - src: "/assets/screenshots/gymlogger-x/6.png"
-    alt: "GymLogger X 30-day muscle balance heatmap on iPhone, flagging overloaded quadriceps and front shoulders and neglected glutes"
+    alt: "GymLogger X Home Screen widgets with the training plan and a year of sessions"
+  - src: "/assets/screenshots/gymlogger-x/7.png"
+    alt: "GymLogger X on Apple Watch logging a set from the gym floor"
+  - src: "/assets/screenshots/gymlogger-x/8.png"
+    alt: "GymLogger X feature summary: no ads, no account, Apple Watch, iCloud sync and 34 languages"
 
 privacy:
   data_collection: "none"

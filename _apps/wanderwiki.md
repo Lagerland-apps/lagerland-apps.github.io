@@ -190,13 +190,19 @@ features:
 
 screenshots:
   - src: "/assets/screenshots/wanderwiki/1.png"
-    alt: "WanderWiki — a Today in History card for NASA (1961) on iPhone, with like, save, and share buttons beside it"
+    alt: "WanderWiki feed that scrolls Wikipedia like a social feed"
+  - src: "/assets/screenshots/wanderwiki/2.png"
+    alt: "WanderWiki browse screen with topic tiles"
   - src: "/assets/screenshots/wanderwiki/3.png"
-    alt: "WanderWiki — the Doug Williams (quarterback) article open in Wikipedia's mobile site inside the app"
-  - src: "/assets/screenshots/wanderwiki/5.png"
-    alt: "WanderWiki — Profile screen with the Music interest selected and tabs for liked and saved articles"
+    alt: "WanderWiki trail suggesting three related pages from the one you are reading"
   - src: "/assets/screenshots/wanderwiki/4.png"
-    alt: "WanderWiki — a Random card for John de Grey, 1st Baron Grey de Rotherfield, with like, save, and share buttons"
+    alt: "WanderWiki For You feed tuned to your interests"
+  - src: "/assets/screenshots/wanderwiki/5.png"
+    alt: "WanderWiki On This Day in history"
+  - src: "/assets/screenshots/wanderwiki/6.png"
+    alt: "WanderWiki saved articles available offline"
+  - src: "/assets/screenshots/wanderwiki/7.png"
+    alt: "WanderWiki extra-large widget showing a whole page of history"
 
 comparison_table:
   intro: "Each row below is a question a curious Wikipedia reader actually asks when picking a swipe-Wikipedia app. WikiScroll is the closest native rival and runs on ads; Wiki Rabbit is free with ads and draws only from Good Articles; Wikipedia's official app is the encyclopedia itself."

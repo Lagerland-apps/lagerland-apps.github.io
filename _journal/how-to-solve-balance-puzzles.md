@@ -1,11 +1,11 @@
 ---
 layout: journal
 slug: how-to-solve-balance-puzzles
-title: "How to solve a balance puzzle, and how Tare proves all 80 of its levels"
+title: "How to solve a balance puzzle, and how Tare proves every level has one answer"
 date: 2026-10-09
 seo:
   title: "How to Solve Balance Puzzles and Hanging Mobiles — Tare"
-  description: "How to solve a balance puzzle: weight × distance, nested beams and clue cards on a real level, then how Tare proves each of its 80 levels has one answer."
+  description: "How to solve a balance puzzle: weight × distance, nested beams and clue cards on a real level, then how Tare proves each level has one answer."
   keywords:
     - how to solve balance puzzles
     - balance puzzle
@@ -15,8 +15,8 @@ seo:
     - torque puzzle
     - puzzle with one solution
     - tare balance puzzle
-lede: "Tare's 80 levels are hanging mobiles you balance with numbered weights, and some of the weights are hidden. Every one was built by hand, and none ships until the test suite proves three things about it: it has exactly one answer, its cards alone name every hidden weight, and its decoys fit nowhere. Here is how to solve one, and how that proof works."
-quick_answer: "To solve a balance puzzle, use the lever rule: a beam is level when weight × distance from the pivot is equal on both sides, so a 2 two notches out balances a 4 one notch out. A beam hanging from another beam acts as one weight equal to everything below it, so solve the deepest beams first and carry their totals up. Two beams hung the same distance either side of a pivot must carry equal loads. In Tare, read the clue cards before you place anything: a beam carrying a hidden “?” sways instead of tilting, so the cards are the only way to learn its value. A card can show two sides equal, one side heavier, or a balance on unequal arms, and pieces with the same silhouette always weigh the same. Each of Tare's 80 handcrafted levels is checked by its test suite before it ships: an exhaustive solver must find exactly one balanced arrangement, the cards alone must pin every hidden weight to one value from 1 to 9, and every decoy must fit no balanced arrangement."
+lede: "Tare's levels are hanging mobiles you balance with numbered weights, and some of the weights are hidden. Every one was built by hand, and none ships until the test suite proves three things about it: it has exactly one answer, its cards alone name every hidden weight, and its decoys fit nowhere. Here is how to solve one, and how that proof works."
+quick_answer: "To solve a balance puzzle, use the lever rule: a beam is level when weight × distance from the pivot is equal on both sides, so a 2 two notches out balances a 4 one notch out. A beam hanging from another beam acts as one weight equal to everything below it, so solve the deepest beams first and carry their totals up. Two beams hung the same distance either side of a pivot must carry equal loads. In Tare, read the clue cards before you place anything: a beam carrying a hidden “?” sways instead of tilting, so the cards are the only way to learn its value. A card can show two sides equal, one side heavier, or a balance on unequal arms, and pieces with the same silhouette always weigh the same. Each of Tare's handcrafted levels is checked by its test suite before it ships: an exhaustive solver must find exactly one balanced arrangement, the cards alone must pin every hidden weight to one value from 1 to 9, and every decoy must fit no balanced arrangement."
 faq:
   - q: "How do you solve a balance puzzle?"
     a: "Use the lever rule: a beam is level when the sum of weight × distance from the pivot is the same on both sides. Treat any beam hanging from another as a single weight equal to everything below it, and work from the deepest beam upward. Two beams hung at the same distance either side of a pivot must carry the same load, which often splits the available weights in half. If some weights are unknown, work out their values from the clues before you place anything, then arrange."
@@ -31,12 +31,16 @@ faq:
   - q: "What is a decoy in Tare?"
     a: "A piece in the tray that belongs on no hook. The first one appears in the last level of Chapter III, and every Chapter IV level has one or two. Because every hook takes exactly one weight, pieces minus hooks always tells you how many decoys there are; which pieces they are is what you have to prove. The test suite checks that each decoy fits no balanced arrangement at all, and a decoy never shares a weight with a piece that hangs."
   - q: "Is Tare free?"
-    a: "Tare is a free download for iPhone and iPad. Chapter I's 20 levels are free to keep, and one $2.99 purchase unlocks the other 60. There are no ads, it works offline, and its App Store privacy label is Data Not Collected."
+    a: "Tare is a free download for iPhone and iPad. Chapter I's 20 levels are free to keep, and one {P_IAP:Tare Full Access@tare} purchase unlocks the other 180. There are no ads, it works offline, and its App Store privacy label is Data Not Collected."
 mentioned_apps:
   - tare
 read_time: "9 min read"
-excerpt: "Tare's launch-day design essay: how to solve a hanging-mobile balance puzzle, worked through on a real level, and how a gate in the test suite proves each of the 80 handcrafted levels has one balanced arrangement, hidden weights the cards alone determine, and decoys that fit nowhere."
+excerpt: "Tare's launch-day design essay: how to solve a hanging-mobile balance puzzle, worked through on a real level, and how a gate in the test suite proves each handcrafted level has one balanced arrangement, hidden weights the cards alone determine, and decoys that fit nowhere."
+last_updated: 2026-10-26
 ---
+
+> **Update, version 1.1:** Tare now has 200 levels in ten chapters of twenty. Chapter I is still free, and one purchase unlocks the other 180. Every one of the 200 levels has exactly one answer. This post is the launch-day record: its level numbers, tables and counts describe the 80 levels of Chapters I–IV in version 1.0.
+
 
 Every level of [Tare](/apps/tare/) is a hanging mobile: beams on strings, hooks on the beams, and a shelf of weights numbered 1 to 9. You hang every weight so that every beam balances at once. Some hide inside a “?” bubble drawn at one fixed size, and the scale won't tell you what they weigh; small picture cards above the board will. All 80 were built by hand, and none ships until a gate in the test suite has proved three things about it:
 
@@ -126,4 +130,4 @@ Counting all 80 in order, each idea arrives on a fixed level: the first nested b
 
 The solver's own counts show the climb. Chapter I's first level took it 2 weight-into-hook trials; Chapter IV's level 19 took 600. On levels with nothing hidden, a simulated player who never counts hangs everything at random, then keeps making the swap that most reduces the tilt, from 300 fixed starts. It solves the first three levels every time, Chapter I's level 18 one time in ten, and the finale 13% of the time. Ignore the cards on Chapter IV's level 17 and 294 combinations of hidden values and arrangements balance; with them, one does. Chapter IV's level 11 puts exactly 36 on one side of a beam, the cap.
 
-Tare is a free download for iPhone and iPad. Chapter I's 20 levels are free to keep, and one $2.99 purchase unlocks the other 60. There are no ads, it works offline, and its App Store privacy label reads Data Not Collected; the [privacy policy](/apps/tare/privacy/) has the details. How the first levels teach all of this without a word is in [designing a puzzle with no words](/journal/wordless-puzzle-game-design/), and why the rest costs $2.99 once is in [no ads, no subscription](/journal/puzzle-game-no-ads-one-purchase/). If a level seems to need a guess, it doesn't: the cards are enough, and the tests have checked that they are.
+Tare is a free download for iPhone and iPad. Chapter I's 20 levels are free to keep, and one {P_IAP:Tare Full Access@tare} purchase unlocks the other 180. There are no ads, it works offline, and its App Store privacy label reads Data Not Collected; the [privacy policy](/apps/tare/privacy/) has the details. How the first levels teach all of this without a word is in [designing a puzzle with no words](/journal/wordless-puzzle-game-design/), and why the rest costs $2.99 once is in [no ads, no subscription](/journal/puzzle-game-no-ads-one-purchase/). If a level seems to need a guess, it doesn't: the cards are enough, and the tests have checked that they are.

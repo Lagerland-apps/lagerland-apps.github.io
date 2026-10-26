@@ -5,7 +5,7 @@ title: "No ads, no subscription: why Tare is free to start and {P_IAP:Tare Full 
 date: 2026-10-09
 seo:
   title: "Puzzle Game With No Ads or Subscription: Why Tare Is {P_IAP:Tare Full Access@tare}"
-  description: "Tare is a puzzle game with no ads and no subscription: 20 levels free forever, one {P_IAP:Tare Full Access@tare} purchase for the other 60, Family Sharing, and Data Not Collected."
+  description: "Tare is a puzzle game with no ads and no subscription: 20 levels free forever, one {P_IAP:Tare Full Access@tare} purchase for the other 180, Family Sharing, and Data Not Collected."
   keywords:
     - puzzle game no ads
     - puzzle game no subscription
@@ -14,11 +14,11 @@ seo:
     - free first chapter
     - family sharing in-app purchase
     - offline puzzle game no ads
-lede: "Tare is out today as a free download. Chapter I's 20 levels are free for good, and one $2.99 purchase opens the other 60. There are no ads, no subscription and nothing else to buy. Here is the whole model in one table, the paid-app plan it replaced, and how the purchase turned out to be too quiet for App Review."
-quick_answer: "Tare is a free download for iPhone and iPad. Its first chapter, 20 levels, is free forever and is not a trial. One $2.99 non-consumable in-app purchase unlocks Chapters II to IV, the other 60 levels, for good, and Family Sharing covers your family group. There are no ads, no subscription, no consumables, no lives or energy, and nothing else to buy in version 1.0: hints cost a level's third star rather than money, and stars and chapter canvases are earned by playing. The purchase is offered from the chapter wall, the unlit levels of the paid chapters and Settings, and is never pushed at launch or after a solve. Restore purchases is always in Settings and on the unlock screen. Once granted, the unlock is removed only if the App Store reports the purchase revoked, never because the store can't be reached. Chapters still open in order after buying: Chapter II opens when 16 of Chapter I's 20 levels are solved. The game has no networking code or analytics, and its App Store privacy label reads Data Not Collected."
+lede: "Tare is out today as a free download. Chapter I's 20 levels are free for good, and one {P_IAP:Tare Full Access@tare} purchase opens the other 60. There are no ads, no subscription and nothing else to buy. Here is the whole model in one table, the paid-app plan it replaced, and how the purchase turned out to be too quiet for App Review."
+quick_answer: "Tare is a free download for iPhone and iPad. Its first chapter, 20 levels, is free forever and is not a trial. One {P_IAP:Tare Full Access@tare} non-consumable in-app purchase unlocks Chapters II to X, the other 180 levels, for good, and Family Sharing covers your family group. There are no ads, no subscription, no consumables, no lives or energy, and nothing else to buy in version 1.0: hints cost a level's third star rather than money, and stars and chapter canvases are earned by playing. The purchase is offered from the chapter wall, the unlit levels of the paid chapters and Settings, and is never pushed at launch or after a solve. Restore purchases is always in Settings and on the unlock screen. Once granted, the unlock is removed only if the App Store reports the purchase revoked, never because the store can't be reached. Chapters still open in order after buying: Chapter II opens when 16 of Chapter I's 20 levels are solved. The game has no networking code or analytics, and its App Store privacy label reads Data Not Collected."
 faq:
   - q: "Is Tare free?"
-    a: "The download is free, and Chapter I, 20 full levels, is free forever. It is not a timed trial and nothing in it is gated. One $2.99 purchase unlocks Chapters II, III and IV, the other 60 levels. The app shows the price in your local currency, taken from the App Store."
+    a: "The download is free, and Chapter I, 20 full levels, is free forever. It is not a timed trial and nothing in it is gated. One {P_IAP:Tare Full Access@tare} purchase unlocks Chapters II to X, the other 180 levels. The app shows the price in your local currency, taken from the App Store."
   - q: "Is Tare a subscription?"
     a: "No. The unlock is a single non-consumable in-app purchase: you pay once and keep it. There is no subscription, no consumable, no in-game currency and no energy meter, and the launch plan rules out consumables and subscriptions for good."
   - q: "Does Tare have ads?"
@@ -32,25 +32,29 @@ faq:
 mentioned_apps:
   - tare
 read_time: "7 min read"
-excerpt: "Tare's pricing on launch day: 20 levels free forever, one {P_IAP:Tare Full Access@tare} non-consumable for the other 60 with Family Sharing, and no ads, subscription or consumables. What's free, what's never sold, where the offer appears and where it never does, and the decisions behind each."
+excerpt: "Tare's pricing on launch day: 20 levels free forever, one {P_IAP:Tare Full Access@tare} non-consumable for the other 180 with Family Sharing, and no ads, subscription or consumables. What's free, what's never sold, where the offer appears and where it never does, and the decisions behind each."
+last_updated: 2026-10-26
 ---
+
+> **Update, version 1.1:** Tare now has 200 levels in ten chapters of twenty. Chapter I is still free forever, and the one purchase now unlocks Chapters II–X, the other 180 levels. This post is the launch-day record of version 1.0, which had 80 levels, so the table, button names and chapter numbers below describe Chapters II–IV.
+
 
 [Tare](/apps/tare/) is out today, and the price fits in a sentence: the download and the first 20 levels are free for good, and one {P_IAP:Tare Full Access@tare} purchase opens the other 60. There are no ads, no subscription and nothing else to buy.
 
 Here is the model in full, then why it ended up this way, including the paid-app plan it replaced and the purchase App Review couldn't find.
 
-## What's free, what's $2.99, and what's never sold
+## What's free, what's {P_IAP:Tare Full Access@tare}, and what's never sold
 
 | | What it is | Cost |
 |---|---|---|
 | The download | The game, Settings, and every accessibility option | Free |
 | Chapter I · The Hang | 20 levels: the wordless onboarding, the first nested beams, the first hidden weights and cards | Free forever. Not a trial, never gated |
-| Chapters II–IV | 60 levels: The Secret, The Cascade and The Exhibition, in three more worlds | $2.99 once, one non-consumable, Family Sharing on |
+| Chapters II–IV | 60 levels: The Secret, The Cascade and The Exhibition, in three more worlds | {P_IAP:Tare Full Access@tare} once, one non-consumable, Family Sharing on |
 | Hints | Off until you switch them on in Settings | Never money. The first hint on an attempt costs that attempt's third star |
 | Stars and chapter canvases | Earned by playing. Finishing a chapter lets you pick its world as the backdrop for the whole game | Never sold |
 | Ads, subscriptions, consumables, lives, energy, timers | None | — |
 
-The price on the unlock screen comes from the App Store, so it shows your own currency. $2.99 is the US base, and Apple sets the equivalent in every other storefront. The app has no price written into it anywhere.
+The price on the unlock screen comes from the App Store, so it shows your own currency. {P_IAP:Tare Full Access@tare} is the US base, and Apple sets the equivalent in every other storefront. The app has no price written into it anywhere.
 
 ## Where the offer appears, and where it doesn't
 
@@ -72,11 +76,11 @@ On 1 September I played the first two finished chapters and found every level a 
 
 A free chapter removes the screenshot question. By the time anyone sees the price, they have solved twenty levels, read their first picture cards and watched a “?” open. The launch plan puts it plainly: the free chapter, not the price tag, is now what does the persuading. The store description also says exactly what's free in its second line, because a free listing that doesn't say so reads like a demo.
 
-## Why $2.99, and why it won't be on sale
+## Why {P_IAP:Tare Full Access@tare}, and why it won't be on sale
 
-$2.99 is the lowest price the launch plan considers still reads as something crafted rather than a trinket. It is set once in US dollars, with worldwide automatic pricing.
+{P_IAP:Tare Full Access@tare} is the lowest price the launch plan considers still reads as something crafted rather than a trinket. It is set once in US dollars, with worldwide automatic pricing.
 
-There is no launch discount, and the plan rules out discounts for the first year. Its judgement is that no price below $2.99 would earn back what it costs in credibility. It also means that, for the first year at least, nobody who buys early pays more than someone who waits for a sale.
+There is no launch discount, and the plan rules out discounts for the first year. Its judgement is that no price below {P_IAP:Tare Full Access@tare} would earn back what it costs in credibility. It also means that, for the first year at least, nobody who buys early pays more than someone who waits for a sale.
 
 ## Why no ads, subscription or consumables
 

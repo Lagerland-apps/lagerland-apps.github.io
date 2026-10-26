@@ -192,13 +192,21 @@ features:
 
 screenshots:
   - src: "/assets/screenshots/allpaid/1.png"
-    alt: "AllPaid — monthly bill calendar on iPhone with upcoming due dates and a daily total for each day"
-  - src: "/assets/screenshots/allpaid/en-US_1_1.png"
-    alt: "AllPaid — bill list on iPhone showing Netflix, Spotify, rent, and utilities with next due dates"
+    alt: "AllPaid bills list on iPhone with upcoming bills, amounts and mark-as-paid buttons"
+  - src: "/assets/screenshots/allpaid/2.png"
+    alt: "AllPaid analytics screen with total spending and a category donut chart"
   - src: "/assets/screenshots/allpaid/3.png"
-    alt: "AllPaid — Pro spending analytics on iPhone showing category breakdown by streaming, subscriptions, housing, and utilities"
+    alt: "AllPaid monthly summary with a due-date calendar, paid and remaining totals"
   - src: "/assets/screenshots/allpaid/4.png"
-    alt: "AllPaid — bill detail view on iPhone with amount, monthly cycle, next due date, and one-tap mark-as-paid"
+    alt: "AllPaid lock screen notification reminding that a bill is due tomorrow"
+  - src: "/assets/screenshots/allpaid/5.png"
+    alt: "AllPaid Home Screen widgets with a month calendar and upcoming bills"
+  - src: "/assets/screenshots/allpaid/6.png"
+    alt: "AllPaid extra-large calendar widget showing bills due across a month"
+  - src: "/assets/screenshots/allpaid/7.png"
+    alt: "AllPaid extra-large horizon widget listing bills due this week with a running total"
+  - src: "/assets/screenshots/allpaid/8.png"
+    alt: "AllPaid extra-large rhythm widget showing a year of paid bills as a heatmap"
 
 comparison_table:
   intro: "Each column below is a question someone shopping for a bill tracker actually asks. Rocket Money, Bobby, and What's Due all do something well — AllPaid is the choice when you want manual entry, no bank login, the lowest lifetime price, and analytics that stay on the device."

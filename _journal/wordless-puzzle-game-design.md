@@ -14,7 +14,7 @@ seo:
     - voiceover puzzle game
     - colorblind friendly puzzle game
     - puzzle game for any language
-lede: "Tare has 80 levels and not one word on the playing field: no tutorial screen, no arrows, no “drag here”. The puzzle had to teach itself, and with no text to label, accessibility had to reach the board itself. Here is what the first levels teach and how, then what it took to make the same puzzle work with VoiceOver, high contrast and large type."
+lede: "Tare has 200 levels and not one word on the playing field: no tutorial screen, no arrows, no “drag here”. The puzzle had to teach itself, and with no text to label, accessibility had to reach the board itself. Here is what the first levels teach and how, then what it took to make the same puzzle work with VoiceOver, high contrast and large type."
 quick_answer: "Tare teaches its rules without text by building each early level so that the only thing left to try is the lesson. Level 1 has one piece in the tray and one empty hook, so the only move balances the beam. Level 2 has two hooks and two equal weights, so every hook gets filled. Level 3 hangs a 2 and a 4 on notches 2 and 1: with the 4 far out the beam tips, and swapped it balances. Level 4 makes you choose hooks, and level 5 starts with a piece on the wrong hook. Every known weight shows its value twice, as a numeral and as domino pips, and grows with its weight, while a hidden “?” is always one fixed size. A full but wrong board gives one small shudder, never red and never a buzzer. A test fails if the code that draws the level contains any text but numerals and the “?”. For accessibility, VoiceOver reads the mobile as named beams and hooks with place and return actions in the app's 50 App Store locales, a High contrast switch clears 4.5:1, numerals follow Dynamic Type and give way to pips, Reduce Motion turns the sway into a pulse, and hooks catch a piece from 60 points away."
 faq:
   - q: "Does Tare have any text?"
@@ -33,9 +33,13 @@ mentioned_apps:
   - tare
 read_time: "8 min read"
 excerpt: "Tare's launch-day essay on designing without words: what each early level teaches and how, why no channel ever leaks a hidden weight, and the VoiceOver tree, contrast, Dynamic Type and motion settings that make the same puzzle playable without sight or with low vision."
+last_updated: 2026-10-26
 ---
 
-Every level of [Tare](/apps/tare/) is a hanging mobile that you balance with numbered weights, and none of the 80 has a word on the playing field. There is no tutorial screen, no hand icon and no arrow. The puzzle had to teach the rule, the hidden weights and the cards that reveal them by itself. And because there is no text to label, accessibility couldn't be a layer of button labels added at the end.
+> **Update, version 1.1:** Tare now has 200 levels in ten chapters of twenty. Chapter I, onboarding included, is still free, and one purchase unlocks the other 180. This post is the launch-day essay, written when Tare had 80 levels.
+
+
+Every level of [Tare](/apps/tare/) is a hanging mobile that you balance with numbered weights, and none of the 200 has a word on the playing field. There is no tutorial screen, no hand icon and no arrow. The puzzle had to teach the rule, the hidden weights and the cards that reveal them by itself. And because there is no text to label, accessibility couldn't be a layer of button labels added at the end.
 ## What the first levels teach, and how
 
 | You need to know | How Tare shows it | Level |
@@ -50,7 +54,7 @@ Every level of [Tare](/apps/tare/) is a hanging mobile that you balance with num
 | A beam with a secret won't tell you | A “?” starts hung, and its beam sways instead of tilting | 11 |
 | The sway climbs | A “?” on a lower beam makes the beam above it sway too | 13 |
 
-Two signals run through all 80 levels:
+Two signals run through every level:
 
 - **Every known weight states its value twice**, as a numeral and as domino pips, and its size grows with its weight: 32 points across for a 1, 96 for a 9. A hidden “?” is always 52 points, whatever it weighs.
 - **A full but wrong board shudders once**: a damped 1.2° shake over half a second, with a soft haptic. No red, no buzzer, no failure screen. A drop that misses every hook isn't even that; the piece glides back to its slot.
@@ -108,4 +112,4 @@ Right-to-left languages turned up a different problem. In Arabic, Hebrew and Urd
 - **Sound off by default (20 September).** I played the finished build and didn't want its sounds on unless a player asks. That cost a teaching channel, since the notes taught weight by ear. Level 1's lesson now rests on the beam going level and still, which works because the level allows no other action.
 - **The idle line became a teacher only (19 September).** It used to appear by itself after 8 seconds on every level, and it made levels too easy. Now it appears unasked only on levels 1 to 5. Elsewhere, hints are a Settings switch, off by default: each press draws one line from the next piece to its hook, never for the last piece, and the first press on an attempt costs that attempt's third star.
 
-Tare is a free download for iPhone and iPad on iOS and iPadOS 18 or later. Chapter I's 20 levels, onboarding included, are free to keep, and one $2.99 purchase unlocks the other 60; [why it is priced that way](/journal/puzzle-game-no-ads-one-purchase/) is its own post. If you came for the rule-learning, compare [Baba Is You](/alternatives/baba-is-you/), whose rules are built out of word blocks, and [DragonBox Algebra](/alternatives/dragonbox-algebra/), which also teaches through balancing. For the wider field, see [the best logic puzzle games for iPhone](/guides/best-logic-puzzle-games-iphone/).
+Tare is a free download for iPhone and iPad on iOS and iPadOS 18 or later. Chapter I's 20 levels, onboarding included, are free to keep, and one {P_IAP:Tare Full Access@tare} purchase unlocks the other 180; [why it is priced that way](/journal/puzzle-game-no-ads-one-purchase/) is its own post. If you came for the rule-learning, compare [Baba Is You](/alternatives/baba-is-you/), whose rules are built out of word blocks, and [DragonBox Algebra](/alternatives/dragonbox-algebra/), which also teaches through balancing. For the wider field, see [the best logic puzzle games for iPhone](/guides/best-logic-puzzle-games-iphone/).

@@ -245,19 +245,19 @@ comparison_table:
 
 screenshots:
   - src: "/assets/screenshots/earnlock/1.png"
-    alt: "EarnLock home screen on iPhone — large progress ring at 1,974 steps with “Earn 2,026 more steps to unlock” beneath, and the Locked apps grid showing X, Instagram, Facebook, Discord, LinkedIn, TikTok, WhatsApp, Snapchat, and YouTube each marked with a lock badge"
+    alt: "EarnLock home screen on iPhone showing a step ring and locked apps that unlock as you walk"
   - src: "/assets/screenshots/earnlock/2.png"
-    alt: "EarnLock home screen on iPhone after the goal is met — full green ring at 8,400 steps with “All apps unlocked until midnight ✓”, and a Shadow Mode card reading “Day 2 of 7 — You would have lost access 4 times today”"
+    alt: "EarnLock year grid showing days earned over twelve months"
   - src: "/assets/screenshots/earnlock/3.png"
-    alt: "EarnLock Insights screen on iPhone — Month tab selected, May 2026 calendar heatmap of goal-met days, Total earned 187,600 steps, Best week (Week 3) at 64,800 steps"
+    alt: "EarnLock monthly insights with total steps and best week"
   - src: "/assets/screenshots/earnlock/4.png"
-    alt: "EarnLock Change goal sheet on iPhone — unit picker with Steps selected (Active minutes and Active calories also available), preset cards for Light 4,000 steps, Standard 8,000 steps, Challenge 12,000 steps, and a Custom 8,000 steps option, with a Save goal button"
+    alt: "EarnLock Home Screen widgets showing steps and progress to unlock"
   - src: "/assets/screenshots/earnlock/5.png"
-    alt: "EarnLock Shadow Week graduation screen on iPhone — “Your shadow week is done — Ready to actually block? Your data shows you'd save ~30m/day”, with stats “23 times you'd have been blocked this week” and “~30m estimated time saved per day”, and an Enable real blocking button"
+    alt: "EarnLock shadow week summary before real app blocking is turned on"
   - src: "/assets/screenshots/earnlock/6.png"
-    alt: "EarnLock Choose Activities picker on iPhone — Apple's Family Controls list with Discord, Facebook, Instagram, LinkedIn, and Snapchat selected, plus All Apps & Categories and Social grouped at the top"
+    alt: "EarnLock Live Activity and Apple Watch showing how close you are to unlocking"
   - src: "/assets/screenshots/earnlock/7.png"
-    alt: "EarnLock onboarding goal picker on iPhone — “Pick your goal — How hard do you want to work for it?” with three cards: Light 4,000 steps (≈ a 35-min walk), Standard 8,000 steps highlighted (≈ a 75-min walk), and Challenge 12,000 steps (≈ a 110-min walk)"
+    alt: "EarnLock full-page widget with a progress calendar"
 
 privacy:
   data_collection: "none"

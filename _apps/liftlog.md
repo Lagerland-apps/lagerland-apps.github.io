@@ -252,17 +252,31 @@ features:
 
 screenshots:
   - src: "/assets/screenshots/liftlog/1.png"
-    alt: "LiftLog workout session on iPhone — bench press set rows in large tabular numerics, two sets checked off, and last session's 100 kg × 5 shown above them"
+    alt: "LiftLog paywall: free for 7 days, no card and no auto-renew"
   - src: "/assets/screenshots/liftlog/2.png"
-    alt: "LiftLog custom numeric keypad during a squat set — ±2.5 kg steps, Next, and a Log set · start rest key"
+    alt: "LiftLog exercise detail for the barbell bench press with how-to steps"
   - src: "/assets/screenshots/liftlog/3.png"
-    alt: "LiftLog Progress screen — this month, total workouts, total volume and total sets, the last 30 days vs. the prior 30, and the activity heatmap"
+    alt: "LiftLog personal bests and rep PRs with an estimated 1RM chart"
   - src: "/assets/screenshots/liftlog/4.png"
-    alt: "LiftLog bench press detail — estimated 1RM, best set and best volume, Rep PRs at 1, 3 and 5 reps, and the estimated 1RM trend chart"
+    alt: "LiftLog active workout logging weight and reps for each set"
   - src: "/assets/screenshots/liftlog/5.png"
-    alt: "LiftLog Programs list on iPhone — Push / Pull / Legs marked active, with Bro Split, Upper / Lower, Starting Strength and Full Body 3× programs"
+    alt: "LiftLog home screen with the next workout and recent sessions"
   - src: "/assets/screenshots/liftlog/6.png"
-    alt: "LiftLog exercise detail for the barbell bench press — animated X-ray-style form demo, primary and secondary muscles, and numbered How To steps"
+    alt: "LiftLog paywall with one-time pricing tiers"
+  - src: "/assets/screenshots/liftlog/7.png"
+    alt: "LiftLog privacy screen: workouts stay on your phone with no account"
+  - src: "/assets/screenshots/liftlog/8.png"
+    alt: "LiftLog three-day push pull legs program detail"
+  - src: "/assets/screenshots/liftlog/9.png"
+    alt: "LiftLog progress screen with monthly workouts, volume and an activity heatmap"
+  - src: "/assets/screenshots/liftlog/10.png"
+    alt: "LiftLog programs list with the active program"
+  - src: "/assets/screenshots/liftlog/11.png"
+    alt: "LiftLog set entry with a numeric keypad for weight and reps"
+  - src: "/assets/screenshots/liftlog/12.png"
+    alt: "LiftLog templates catalog with goal and frequency filters"
+  - src: "/assets/screenshots/liftlog/13.png"
+    alt: "LiftLog rest timer between sets"
 
 privacy:
   data_collection: "none"
@@ -321,6 +335,6 @@ ratings:
   value: "5.0"
   count: 1
   last_synced: "2026-04-29"
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 ---
 LiftLog is a design-led strength training log for iPhone. Built around a tabular-numeric type system, haptic-rich workout sessions, and a restrained navy palette in light and dark mode, LiftLog renders weights, reps, PRs, and volume with the clarity of a stadium scoreboard. The workout session view replaces the system numeric keypad with a custom haptic-feedback grid pad designed for thumbs between working sets; completing a set gives a haptic tap and a green sweep across the row, and a set that beats your best adds a heavy haptic, a brief glow, and a PR badge. LiftLog ships 40 ready programs — StrongLifts 5×5, Starting Strength, GZCLP, Texas Method, Wendler 5/3/1, PHUL, PHAT, Push / Pull / Legs, Upper / Lower and more — plus your own, with supersets and giant sets. Each exercise carries its own progression rule (double progression, linear, percent of Training Max, or RPE), and a lift that misses its targets three sessions in a row drops to 90%. Progress tracking shows total workouts, total volume, and total sets, the last 30 days against the prior 30, and a 26-week activity heatmap. Per-exercise analytics include estimated 1RM trend lines (Adaptive Brzycki/Epley by default), best set, best volume, and Rep PRs at 1, 3, 5, and 10 reps. The exercise library holds 1,500 exercises, each with an animated X-ray-style form demo and numbered How To steps, filterable by muscle group or equipment. Home Screen and Lock Screen widgets show your streak, week, and next session, and Siri can start a workout, log a set, or start your rest timer. Pricing is the unusual part: free for seven days with no card on file, no auto-renew, and no trial trap, after which the user picks a one-time tier — {P_IAP:Minimum} (Fair), {P_IAP:Suggested} (Good), {P_IAP:Supporter} (Generous), or {P_IAP:Patron} (Patron). One purchase, shared with your family through Family Sharing, no subscription, training history never held hostage. No third-party tracking, no advertising SDKs, no required account. Workout history stays on device — there is no cloud sync — with JSON and CSV export and optional Apple Health export. Sister app to GymLogger X — pick LiftLog for design-led iPhone polish and pay-what-you-can pricing; pick GymLogger X for logging from Apple Watch and a {P_IAP:Patron} lifetime price.
