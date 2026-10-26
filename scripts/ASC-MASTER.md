@@ -1,0 +1,103 @@
+# App Store Connect master table
+
+One generated table of every app: supported platforms, subscription / lifetime / other-IAP prices in 17
+territories, free trials and Family Sharing. **Source of truth is the App Store Connect API and nothing else**
+(not `_apps/*.md`, not the website, not the app code). Prices are changed in App Store Connect, then this
+script is re-run. Never hand-edit the outputs.
+
+## Run it
+
+```
+cd lagerland-apps.github.io-main
+node scripts/sync-asc-master.mjs                 # ~800 API calls, 2-4 min
+node scripts/sync-asc-master.mjs --app pawza     # refetch ONE app (slug, App Store ID or name fragment) and merge it into the existing JSON; ~40 calls
+node scripts/sync-asc-master.mjs --env <file>    # other env file (default ~/Downloads/HealthLogger/.env)
+node scripts/sync-asc-master.mjs --out <dir>     # where the CSV/MD go (default: the parent folder)
+```
+
+Needs Node 18+ (built-in `fetch` and `crypto`, no npm install). Credentials come from an env file holding
+`APP_STORE_CONNECT_ISSUER_ID`, `APP_STORE_CONNECT_KEY_ID`, `APP_STORE_CONNECT_API_KEY_PATH` (path to the `.p8`).
+All app `.env` files share the same team key. Secrets are never printed or written to the outputs.
+Re-run after any price, trial, Family Sharing or platform change, and before a release of site copy that quotes prices.
+
+## Outputs
+
+| File | In repo? | Use |
+|---|---|---|
+| `_data/asc_master.json` | yes (`_data` is never published) | machine-readable master, for Jekyll (`site.data.asc_master`) |
+| `../MASTER-prices.csv` | no (parent folder) | one row per product; open in Numbers/Excel |
+| `../MASTER.md` | no (parent folder) | readable platform matrix plus a price table per app |
+
+JSON shape: `territories[]` (`code`, `key`, `currency`) and `apps[]` with `id`, `slug`, `name`, `bundle_id`,
+`app_store_url`, `platforms` (`iphone` / `ipad` / `macos` = `live` | `pending` | absent), `platform_detail`
+(live version, latest version and state) and `products[]`. A product has `kind` (`subscription` | `lifetime` |
+`iap`), `period` (subscriptions: weekly, monthly, yearly ...), `iap_type`, `product_id`, `name`, `state`,
+`family_sharable`, `intro_offer` (subscriptions: `summary` plus `per_territory`), `base_territory` (IAPs) and
+`prices[CODE]` = `{amount, currency, since, next?}` or `null` when the product is not sold there.
+`slug` is joined from `_apps/*.md` by App Store ID and is the only thing read from the site.
+
+## Territories
+
+USA, DEU, FRA, ITA, ESP, PRT, CHN, JPN, KOR, IDN, MEX, BRA, POL, TUR, NLD, RUS, SAU (Saudi Arabia is our
+reading of "Arabia"). Edit the `TERRITORIES` list at the top of the script to change the columns. Prices are
+the customer price in that storefront's own currency (tax-inclusive where Apple shows it that way).
+
+## Logic, endpoint by endpoint
+
+1. **Apps**: `GET /v1/apps`. Every app on the team, including unreleased ones (Fidaro).
+2. **Platforms**: `GET /v1/apps/{id}/appStoreVersions`, grouped by `platform` (IOS to `iphone`, MAC_OS to
+   `macos`, plus tvOS / visionOS if they appear). A platform is `live` when it has a `READY_FOR_SALE` version,
+   otherwise `pending` (in review or being prepared). Pagination is always followed (`links.next`).
+3. **iPad**: the API has no iPad flag and build `deviceProtocols` is empty. The signal used: the iOS version
+   (live one if any) has an `appScreenshotSets` entry whose `screenshotDisplayType` starts with `APP_IPAD`, in
+   any localization (early exit on the first hit). Apple requires iPad screenshots for iPad-capable apps. An
+   app that supports iPad but has no iPad screenshots uploaded would show as iPhone-only; if a row looks
+   wrong, check the screenshots in App Store Connect first. "iPhone app running on Mac" is not detected.
+4. **Subscriptions**: `subscriptionGroups` then `subscriptions` per group. Period comes from
+   `subscriptionPeriod` (ONE_WEEK = weekly, ONE_MONTH = monthly, ONE_YEAR = yearly ...). All states are kept
+   (APPROVED, READY_TO_SUBMIT, DEVELOPER_REMOVED_FROM_SALE ...), so filter on `state` before showing a price.
+5. **Subscription prices**: `GET /v1/subscriptions/{id}/prices?filter[territory]=...&include=subscriptionPricePoint,territory`.
+   Returns the price history per territory. The current price is the entry with the latest `startDate` on or
+   before today (`null` startDate = initial price). A later entry becomes `next: {amount, from}` so scheduled
+   price changes are visible.
+6. **Free trials**: `GET /v1/subscriptions/{id}/introductoryOffers?include=territory` (`include=territory` is
+   required, otherwise the territory link is missing). Offers active today (`startDate` <= today, no past
+   `endDate`) are kept per territory as `{mode, duration, periods}`. `intro_offer.summary` is one line, for
+   example "free trial: 1 week", or "varies by territory", or null when there is no offer. Promotional offers
+   and offer codes are not included.
+7. **Family Sharing**: the `familySharable` attribute on each subscription and in-app purchase.
+8. **In-app purchases**: `GET /v1/apps/{id}/inAppPurchasesV2`. A NON_CONSUMABLE whose product ID contains
+   "lifetime" is `kind: lifetime`; everything else is `kind: iap` with its `iap_type` (consumable tips and
+   packs, non-consumable themes / programs / tiers).
+9. **IAP prices**: `GET /v2/inAppPurchases/{id}/iapPriceSchedule`, then `/v1/inAppPurchasePriceSchedules/{id}/manualPrices`
+   and `/automaticPrices` with the territory filter. The same "latest startDate <= today, not ended" rule as
+   subscriptions applies. The schedule's base territory is Finland (FIN) on current products; other
+   territories are manual prices, so they are exactly what is set in App Store Connect.
+10. **Robustness**: JWT (ES256, 20 min, re-signed every 10), retry with backoff on 429 / 5xx, pagination on
+    every list, small concurrency pools. Roughly 800 calls per run is far below Apple's hourly limit.
+
+## The one manual input: `_data/asc_master_overrides.json`
+
+The API cannot say whether a product is shown in the app's own paywall. Products that exist in App Store
+Connect but are not offered to users are declared by `product_id` in `_data/asc_master_overrides.json`
+(`offered_in_app: false` plus a note). The script copies them onto the product as `offered_in_app` /
+`offered_note`, and the CSV/MD show "NO (not for sale)". Currently: the MediaKit and WanderWiki weekly plans.
+Products without an entry have no `offered_in_app` field (unknown, assume offered). Site code must skip
+`offered_in_app == false` products when listing plans. Remove the entry when a plan goes live in the app.
+This file is the only hand-written data; everything else is fetched.
+
+## Reading the output
+
+- `prices[CODE] === null` means the product has no price (not for sale) in that territory. Today that only
+  happens for the Fidaro test products.
+- `state` matters: only `APPROVED` products are live. `DEVELOPER_REMOVED_FROM_SALE`, `MISSING_METADATA` and
+  `READY_TO_SUBMIT` rows are kept on purpose so nothing is hidden.
+- `platforms.*: pending` means a version exists but is not on the store yet (e.g. a new iOS version of a
+  Mac-only app waiting for review).
+
+## Planned use on the site
+
+The app pages still carry hand-written `price:` / `plans:` / `platforms:` front matter. The master JSON is
+meant to replace those (computed in the layouts from `site.data.asc_master`, joined by `slug`), so a price
+change in App Store Connect plus one script run updates the website. Until that wiring exists, treat the JSON
+as the reference when editing `_apps/*.md`.
