@@ -34,9 +34,10 @@ mentioned_apps:
   - appmeta-pulse
 read_time: "7 min read"
 excerpt: "A reference to the money columns in App Store Connect: units, sales, proceeds, customer price and developer proceeds, the 30% and 15% commission rates, where tax comes out, how refunds appear, and why Sales and Trends never quite matches Payments and Financial Reports."
+last_updated: 2026-10-26
 ---
 
-Sales is what customers paid. Proceeds is what you keep. In Apple's own words, proceeds are "the Customer Price minus applicable taxes and Apple's commission" ([Apple](https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders/)). The rest of this page is detail around that sentence: which column holds which figure, which rate applies, and why the totals move from one report to the next.
+Sales is what customers paid. Proceeds is what you keep. In Apple's own words, proceeds are "the Customer Price minus applicable taxes and Apple's commission" ([Apple](https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders/)). Below: which column holds which figure, which rate applies, and why the totals move from one report to the next.
 
 ## What does each number in App Store Connect mean?
 
@@ -52,7 +53,7 @@ Paraphrasing Apple's definitions for [Sales and Trends](https://developer.apple.
 | Partner Share | Financial reports | Final proceeds per unit | No | Yes |
 | Extended Partner Share | Financial reports | Quantity multiplied by Partner Share | No | Yes |
 
-The trap in the downloadable report is that both money columns are per unit. Apple's sample row has 100 universal app purchases in the United States, where "Customers paid .99 USD for each unit and you received .70 USD for each" ([Apple](https://developer.apple.com/help/app-store-connect/reference/summary-sales-report)). That row is 99.00 USD of sales and 70.00 USD of proceeds. Add up the Developer Proceeds column without multiplying by Units and a busy app's revenue shrinks to a fraction of itself.
+In the downloadable report, both money columns are per unit, which is easy to miss. Apple's sample row has 100 universal app purchases in the United States, where "Customers paid .99 USD for each unit and you received .70 USD for each" ([Apple](https://developer.apple.com/help/app-store-connect/reference/summary-sales-report)). That row is 99.00 USD of sales and 70.00 USD of proceeds. Add up the Developer Proceeds column without multiplying by Units and a busy app's revenue shrinks to a fraction of itself.
 
 ## How does a customer price turn into proceeds?
 
@@ -71,7 +72,7 @@ A rough example for a 4.99 EUR price in Germany, where the price includes 19% VA
 | Proceeds rate | 70% | 85% |
 | Developer Proceeds, about | 2.94 | 3.56 |
 
-Treat that as arithmetic, not a quote. Apple works out proceeds for each storefront from its own price points and tax rules, so the real figure can be a cent or two off. The same price point earns different proceeds in different countries because the tax inside the price differs, and Apple notes that it "may need to adjust prices or your proceeds due to changes in tax regulations or foreign exchange rates" ([Apple](https://developer.apple.com/news?id=y3w8ck7j)).
+That is my arithmetic, not Apple's figure. Apple works out proceeds for each storefront from its own price points and tax rules, so the real figure can be a cent or two off. The same price point earns different proceeds in different countries because the tax inside the price differs, and Apple notes that it "may need to adjust prices or your proceeds due to changes in tax regulations or foreign exchange rates" ([Apple](https://developer.apple.com/news?id=y3w8ck7j)).
 
 ## What commission rates does Apple charge?
 

@@ -2,8 +2,8 @@
 layout: default
 title: Lagerland Apps
 seo:
-  title: "Lagerland Apps — 20 Private, No-Tracking iOS & Mac Apps"
-  description: "Indie Apple studio in Finland: 20 privacy-first iPhone, iPad, Watch and Mac apps. No advertising SDKs, no IDFA, no accounts — EU-built, GDPR-default."
+  title: "Lagerland Apps: 20 Private, No-Tracking iOS & Mac Apps"
+  description: "Indie Apple studio in Finland: 20 privacy-first iPhone, iPad, Watch and Mac apps with no ad SDKs, IDFA or accounts, built in the EU with GDPR by default."
   keywords:
     - privacy-first iOS apps
     - privacy-first macOS apps
@@ -33,7 +33,7 @@ last_updated: 2026-10-26
   "inLanguage": "en",
   "mainEntity": {
     "@type": "ItemList",
-    "name": "Lagerland Apps — complete catalogue",
+    "name": "Lagerland Apps: complete catalogue",
     "numberOfItems": {{ live_apps.size }},
     "itemListElement": [
     {%- for app in live_apps -%}
@@ -64,7 +64,7 @@ last_updated: 2026-10-26
       "name": "Who makes Lagerland Apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lagerland Apps is a one-person, independent Apple studio based in Finland, shipping privacy-first apps for iPhone, iPad, Apple Watch, and Mac since 2025. Every app is designed, coded, and supported by the same developer — no VC, no advertisers, no data brokers. Built under EU jurisdiction with GDPR as the default."
+        "text": "Lagerland Apps is a one-person, independent Apple studio based in Finland, shipping privacy-first apps for iPhone, iPad, Apple Watch, and Mac since 2025. The same developer designs, codes, and supports every app, with no VC, advertisers, or data brokers involved. The apps are built under EU jurisdiction with GDPR as the default."
       }
     },
     {
@@ -80,7 +80,7 @@ last_updated: 2026-10-26
       "name": "Do the apps require accounts or a login?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. None of the apps require an account or email sign-up. You download from the App Store and start using them — nothing to register, nothing to lose access to."
+        "text": "No. None of the apps require an account or email sign-up. You download from the App Store and start using them, with nothing to register and no account to lose access to."
       }
     },
     {
@@ -88,7 +88,7 @@ last_updated: 2026-10-26
       "name": "How do you make money if there are no ads?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Through honest paid apps: one-time purchases, optional Pro subscriptions, and a freemium model where the core experience is free. The apps work for you, not for advertisers."
+        "text": "The people who use the apps pay for them, through one-time purchases, optional Pro subscriptions, and a freemium model where the core experience is free. No advertiser pays for anything."
       }
     },
     {
@@ -96,7 +96,7 @@ last_updated: 2026-10-26
       "name": "Do the apps work on iPhone, iPad, and Mac?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most apps target iPhone and iPad, several include Apple Watch support, and developer tools like AppMeta and Mockly are native Mac apps. Each app page lists its supported platforms."
+        "text": "Most apps run on iPhone and iPad, several also support Apple Watch, and developer tools like AppMeta and Mockly are native Mac apps. Each app page lists its supported platforms."
       }
     },
     {
@@ -104,7 +104,7 @@ last_updated: 2026-10-26
       "name": "What are the best alternatives to mainstream tracker-heavy apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lagerland Apps offers privacy-first alternatives across categories: Taskful Day (now native on iPhone, iPad, and Mac) instead of feed-based planners, GymLogger X instead of subscription-locked workout loggers, Observa as a private Apple Health analytics alternative, and AllPaid as a calm bill tracker alternative to ad-supported finance apps."
+        "text": "Lagerland Apps has privacy-first alternatives in several categories: Taskful Day (now native on iPhone, iPad, and Mac) instead of feed-based planners, GymLogger X instead of subscription-locked workout loggers, Observa as a private Apple Health analytics alternative, and AllPaid as a calm bill tracker alternative to ad-supported finance apps."
       }
     }
   ]
@@ -136,7 +136,7 @@ last_updated: 2026-10-26
 {%- assign series_labels = "Health & body,Planning & reading,Money,Games,Tools & Mac" | split: "," -%}
 
 <!-- ============================
-     THE ISSUE — sheet margin + the sheet of stamps
+     THE ISSUE: sheet margin + the sheet of stamps
      ============================ -->
 <section class="issue bleed" aria-labelledby="issue-title">
   <div class="issue-selvedge">
@@ -150,7 +150,7 @@ last_updated: 2026-10-26
       <li><a class="series-tab series-{{ key }}" href="#series-{{ key }}" data-series="{{ key }}"><i></i>{{ series_labels[forloop.index0] }}<b>{{ n }}</b></a></li>
       {%- endfor -%}
     </ul>
-    <div class="issue-imprint" aria-hidden="true"><span>Sheet 2025–{{ site.time | date: "%Y" }}</span><span>Issued in Finland</span></div>
+    <div class="issue-imprint" aria-hidden="true"><span>Sheet 2025-{{ site.time | date: "%Y" }}</span><span>Issued in Finland</span></div>
     <span class="issue-margin-note" aria-hidden="true">Lagerland Apps · no ad SDKs · no IDFA · no accounts</span>
   </div>
 
@@ -181,9 +181,9 @@ last_updated: 2026-10-26
 </section>
 
 <!-- ============================
-     SHEET NOTES — who makes this, in plain words (entity block for humans + LLMs)
+     SHEET NOTES: who makes this, in plain words (entity block for humans + LLMs)
      ============================ -->
-{%- comment %} Weighted-average App Store rating across live apps. Values are stored as strings like "5.0" — multiply by 10 to keep integer math precise to one decimal. {% endcomment -%}
+{%- comment %} Weighted-average App Store rating across live apps. Values are stored as strings like "5.0"; multiply by 10 to keep integer math precise to one decimal. {% endcomment -%}
 {%- assign sum_w10 = 0 -%}
 {%- assign total_reviews = 0 -%}
 {%- for app in live_apps -%}
@@ -206,9 +206,9 @@ last_updated: 2026-10-26
 <section id="about-strip" class="section section--notes reveal">
   <div class="about-strip">
     <div>
-      <h2 class="h2">One person, every app, the same rules.</h2>
-      <p>Lagerland Apps is a one-person Apple studio in Finland building <strong>{{ site.data.catalog.meta.live_app_count }} privacy-first applications</strong> for iPhone, iPad, Apple Watch and Mac. Every app is free of third-party trackers, ships zero advertising SDKs and requires no account. It is funded by honest paid software, one-time purchases, optional Pro subscriptions or free tiers, never by ads, data brokers or growth-hack dark patterns.</p>
-      <p>Categories: health analytics, daily planning, bill tracking, workout logging, reading, board games and puzzles, Apple developer tools and utilities. For people who refuse ad-supported apps, want their data to stay local, and prefer single-purpose tools over bloated platforms.</p>
+      <h2 class="h2">One person makes every app</h2>
+      <p>Lagerland Apps is a one-person Apple studio in Finland building <strong>{{ site.data.catalog.meta.live_app_count }} privacy-first applications</strong> for iPhone, iPad, Apple Watch and Mac. Every app is free of third-party trackers, ships zero advertising SDKs and requires no account. The software pays for itself through one-time purchases, optional Pro subscriptions or free tiers, and never through ads, data brokers or growth-hack dark patterns.</p>
+      <p>Categories: health analytics, daily planning, bill tracking, workout logging, reading, board games and puzzles, Apple developer tools and utilities. The apps are for people who refuse ad-supported apps, want their data to stay local, and prefer single-purpose tools to bloated platforms.</p>
       <p><a href="/transparency/">See the per-app privacy data</a> · <a href="/lagerland-apps/">About the studio</a></p>
     </div>
     <dl class="tech" aria-label="Studio facts">
@@ -226,11 +226,11 @@ last_updated: 2026-10-26
 </section>
 
 <!-- ============================
-     THE CATALOGUE — every series, with what each app does (SEO + intent)
+     THE CATALOGUE: every series, with what each app does (SEO + intent)
      ============================ -->
 <section id="apps" class="section--lg" aria-labelledby="apps-title">
   <h2 class="h2 reveal" id="apps-title">Apps by what you need</h2>
-  <p class="lead reveal">Five series, one maker. Every app is single-purpose, private by default and built to feel calm.</p>
+  <p class="lead reveal">Five series from one maker. Each app does one job, is private by default, and is meant to feel calm.</p>
 
   {%- assign series_heads = "Health, sleep & recovery|Plan your day & read|Money & bills|Games worth your attention|Tools for Apple developers & Mac" | split: "|" -%}
   {%- assign series_leads = "Understand your body, your habits and your workouts without handing your health data to advertisers.|Daily planning, countdowns, screen-time and Wikipedia reading that stay on your device.|Track what you owe, split what you share and never miss a due date. No bank login.|Chess, shogi, xiangqi and logic puzzles with no lives, no ads and no dark patterns.|Native Mac and iOS tools for App Store Connect, App Store screenshots and media conversion." | split: "|" -%}
@@ -264,11 +264,11 @@ last_updated: 2026-10-26
 </section>
 
 <!-- ============================
-     COMPARED-TO — surface /alternatives/ pages from the home page
+     COMPARED-TO: surface /alternatives/ pages from the home page
      ============================ -->
 <section class="section reveal" aria-labelledby="compare-title">
   {%- assign comparison_count = site.pages | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 -%}
-  <h2 class="h2" id="compare-title">Honest comparisons with the apps you know</h2>
+  <h2 class="h2" id="compare-title">Comparisons with the apps you know</h2>
   <p class="lead">{{ comparison_count }} side-by-side comparisons against the mainstream apps most people are coming from. Four are here; the rest are on the comparisons page.</p>
   <div class="pairs stagger">
     {%- assign pa = site.apps | where: "slug", "gymlogger-x" | first -%}{%- include series.html app=pa -%}
@@ -290,7 +290,7 @@ last_updated: 2026-10-26
         <span class="blank-stamp"><span>Streaks</span></span>
       </span>
       <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">vs</span> Streaks</span>
-      <span class="card-text">A calm daily planner without flame counters, no red X for missed days, no guilt mechanics — now Universal across iPhone, iPad, and Mac.</span>
+      <span class="card-text">A calm daily planner with no flame counters and no red X or guilt for missed days, now Universal across iPhone, iPad, and Mac.</span>
       <span class="pair__go">Read the comparison</span></span>
     </a>
     {%- assign pa = site.apps | where: "slug", "observa" | first -%}{%- include series.html app=pa -%}
@@ -301,7 +301,7 @@ last_updated: 2026-10-26
         <span class="blank-stamp"><span>AutoSleep</span></span>
       </span>
       <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">vs</span> AutoSleep</span>
-      <span class="card-text">An interpretation layer over Apple Health sleep, HRV, and recovery — rather than a direct tracker replacement.</span>
+      <span class="card-text">Observa interprets the sleep, HRV, and recovery data in Apple Health. It does not replace a tracker directly.</span>
       <span class="pair__go">Read the comparison</span></span>
     </a>
     {%- assign pa = site.apps | where: "slug", "appmeta" | first -%}{%- include series.html app=pa -%}
@@ -322,7 +322,7 @@ last_updated: 2026-10-26
 </section>
 
 <!-- ============================
-     JOURNAL PREVIEW — freshness + topical authority
+     JOURNAL PREVIEW: freshness + topical authority
      ============================ -->
 {%- assign latest_posts = site.journal | sort: "date" | reverse | slice: 0, 2 -%}
 {%- if latest_posts.size > 0 -%}
@@ -350,11 +350,11 @@ last_updated: 2026-10-26
 {%- endif -%}
 
 <!-- ============================
-     TRANSPARENCY TABLE — proof, not slogan
+     TRANSPARENCY TABLE: the evidence for the claim
      ============================ -->
 <section class="section reveal" aria-labelledby="transparency-title">
   <h2 class="h2" id="transparency-title">Transparency at a glance</h2>
-  <p class="lead">The "no tracking" claim, made specific: how a sample of the apps handle your data, backed by Apple's own Privacy Nutrition Labels.</p>
+  <p class="lead">What "no tracking" means in detail for a sample of the apps, backed by Apple's own Privacy Nutrition Labels.</p>
 
   {%- comment %} Rows are generated from _data/transparency.yml (the same
     audited dataset that drives /transparency/) so the homepage sample can
@@ -379,7 +379,7 @@ last_updated: 2026-10-26
         <tr>
           <th scope="row"><a href="{{ app.url }}">{{ app.name }}</a></th>
           <td>{{ row.tracking_domains | default: 0 }}</td>
-          <td>{% if row.third_party_sdks == 0 %}None{% else %}{{ row.third_party_sdks }} — {{ row.third_party_sdks_list | map: "name" | join: ", " }}{% endif %}</td>
+          <td>{% if row.third_party_sdks == 0 %}None{% else %}{{ row.third_party_sdks }}: {{ row.third_party_sdks_list | map: "name" | join: ", " }}{% endif %}</td>
           <td>{% if row.account_required == false %}No{% else %}Your own Apple&nbsp;ID (via&nbsp;Apple){% endif %}</td>
           <td>{{ row.analytics | default: "None." }}</td>
         </tr>
@@ -389,19 +389,19 @@ last_updated: 2026-10-26
     </table>
   </div>
   <p class="small transparency-footnote">
-    A representative sample. No IDFA is ever requested across the catalogue, and no advertising SDKs are linked into any app. <a href="/transparency/"><strong>See the per-app Privacy Manifest data for all {{ site.data.catalog.meta.live_app_count }} apps →</strong></a>
+    This is a representative sample. No app in the catalogue requests the IDFA or links an advertising SDK. <a href="/transparency/"><strong>See the per-app Privacy Manifest data for all {{ site.data.catalog.meta.live_app_count }} apps →</strong></a>
   </p>
 </section>
 
 <!-- ============================
-     FAQ — Homepage (questions match the FAQPage JSON-LD above)
+     FAQ: homepage (questions match the FAQPage JSON-LD above)
      ============================ -->
 <section id="faq" class="section reveal" aria-labelledby="faq-title">
   <h2 class="h2" id="faq-title">Frequently asked</h2>
   <div class="faq">
     <details class="faq-item" open>
       <summary>Who makes Lagerland Apps?</summary>
-      <div class="faq-a">Lagerland Apps is a one-person, independent Apple studio based in Finland, shipping privacy-first apps for iPhone, iPad, Apple Watch, and Mac since 2025. Every app is designed, coded, and supported by the same developer — no VC, no advertisers, no data brokers. Built under EU jurisdiction with GDPR as the default, not a compliance afterthought.</div>
+      <div class="faq-a">Lagerland Apps is a one-person, independent Apple studio based in Finland, shipping privacy-first apps for iPhone, iPad, Apple Watch, and Mac since 2025. The same developer designs, codes, and supports every app, with no VC, advertisers, or data brokers involved. The apps are built under EU jurisdiction with GDPR as the default.</div>
     </details>
     <details class="faq-item">
       <summary>Do Lagerland apps track me or collect personal data?</summary>
@@ -409,29 +409,29 @@ last_updated: 2026-10-26
     </details>
     <details class="faq-item">
       <summary>Do the apps require accounts or a login?</summary>
-      <div class="faq-a">No. None of the apps require an account or email sign-up. You download from the App Store and start using them — nothing to register, nothing to lose access to.</div>
+      <div class="faq-a">No. None of the apps require an account or email sign-up. You download from the App Store and start using them, with nothing to register and no account to lose access to.</div>
     </details>
     <details class="faq-item">
       <summary>How do you make money if there are no ads?</summary>
-      <div class="faq-a">Through honest paid apps: one-time purchases, optional Pro subscriptions, and freemium models where the core experience is free. The apps work for you, not for advertisers.</div>
+      <div class="faq-a">The people who use the apps pay for them, through one-time purchases, optional Pro subscriptions, and freemium models where the core experience is free. No advertiser pays for anything.</div>
     </details>
     <details class="faq-item">
       <summary>Do the apps work on iPhone, iPad, and Mac?</summary>
-      <div class="faq-a">Most apps target iPhone and iPad, several include Apple Watch support, and developer tools like AppMeta and Mockly are native Mac apps. Each app page lists its supported platforms.</div>
+      <div class="faq-a">Most apps run on iPhone and iPad, several also support Apple Watch, and developer tools like AppMeta and Mockly are native Mac apps. Each app page lists its supported platforms.</div>
     </details>
     <details class="faq-item">
       <summary>What are the best alternatives to mainstream tracker-heavy apps?</summary>
-      <div class="faq-a">Lagerland Apps offers privacy-first alternatives across categories: Taskful Day (now native on iPhone, iPad, and Mac) instead of feed-based planners, GymLogger X instead of subscription-locked workout loggers, Observa as a private Apple Health analytics alternative, and AllPaid as a calm bill tracker alternative to ad-supported finance apps.</div>
+      <div class="faq-a">Lagerland Apps has privacy-first alternatives in several categories: Taskful Day (now native on iPhone, iPad, and Mac) instead of feed-based planners, GymLogger X instead of subscription-locked workout loggers, Observa as a private Apple Health analytics alternative, and AllPaid as a calm bill tracker alternative to ad-supported finance apps.</div>
     </details>
   </div>
 </section>
 
 <!-- ============================
-     CLOSE — the sheet's bottom margin
+     CLOSE: the sheet's bottom margin
      ============================ -->
 <section class="cta-section">
   <h2 class="h2">Pick an app from the sheet and keep your data where it is.</h2>
-  <p class="lead">No data harvesting, no dark patterns, no subscriptions you forget about. Software that works for you on iPhone, iPad, Apple Watch and Mac.</p>
+  <p class="lead">Apps for iPhone, iPad, Apple Watch and Mac that don't harvest your data, use dark patterns, or leave you paying for a subscription you forgot about.</p>
   <div class="actions">
     <a class="btn btn-primary" href="#issue-title">Back to the sheet</a>
     <a class="btn btn-secondary" href="mailto:lagerland.apps@proton.me">Email the maker</a>

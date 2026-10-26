@@ -2,10 +2,10 @@
 layout: default
 permalink: /lagerland-apps/
 title: "About Lagerland Apps"
-quick_answer: "Lagerland Apps is a one-person Apple studio in Finland, run by a single independent developer. It builds {APP_COUNT} privacy-first iOS, iPadOS, watchOS and macOS apps that ship with zero third-party tracking, no advertising SDKs and no required accounts — funded by honest paid software."
+quick_answer: "Lagerland Apps is a one-person Apple studio in Finland, run by a single independent developer. It builds {APP_COUNT} privacy-first iOS, iPadOS, watchOS, and macOS apps with no third-party tracking, no advertising SDKs, and no required accounts. The studio is funded by people paying for the software."
 seo:
-  title: "About Lagerland Apps — Indie Apple Developer in Finland"
-  description: "One-person Apple studio in Finland building {APP_COUNT} privacy-first iOS & Mac apps. No trackers, no ads, no accounts — funded by honest paid software."
+  title: "About Lagerland Apps: Indie Apple Developer in Finland"
+  description: "One-person Apple studio in Finland building {APP_COUNT} privacy-first iOS & Mac apps with no trackers, ads, or accounts, funded by paid software."
   keywords:
     - Lagerland Apps
     - independent Apple developer Finland
@@ -16,17 +16,17 @@ seo:
     - one-person iOS studio
 faq:
   - q: "Who is behind Lagerland Apps?"
-    a: "Lagerland Apps is a one-person Apple studio in Finland run by a single independent developer. Every app is designed, coded, tested, and shipped by one person — no team, no investors, no advertisers."
+    a: "Lagerland Apps is a one-person Apple studio in Finland run by a single independent developer. One person designs, codes, tests, and ships every app. There is no team, no investor, and no advertiser."
   - q: "Where is Lagerland Apps based?"
     a: "Lagerland Apps is based in Finland and operates as an independent Apple developer with apps distributed worldwide through the Apple App Store under developer ID 1855943133."
   - q: "How is Lagerland Apps funded if there are no ads?"
-    a: "Through honest paid software: one-time purchases, optional Pro subscriptions, and freemium tiers with permanently free core features. No advertising, no data sales, no dark patterns."
+    a: "People pay for the software: one-time purchases, optional Pro subscriptions, and free tiers whose core features stay free. The studio sells no advertising and no data, and uses no dark patterns."
   - q: "How many apps does Lagerland Apps publish?"
-    a: "Lagerland Apps currently publishes {APP_COUNT} live apps across health, daily planning, finance, reading, fitness, games, Apple developer tools, and utilities — all for Apple platforms."
+    a: "Lagerland Apps currently publishes {APP_COUNT} live apps across health, daily planning, finance, reading, fitness, games, Apple developer tools, and utilities, all for Apple platforms."
   - q: "Does Lagerland Apps collect any user data?"
-    a: "No. Every app ships with zero third-party analytics, no advertising SDKs, and no required accounts. User data stays on-device wherever possible; any sync uses the user's own iCloud account."
+    a: "No. No app includes third-party analytics or advertising SDKs, and none requires an account. User data stays on-device wherever possible; any sync uses the user's own iCloud account."
   - q: "What platforms does Lagerland Apps build for?"
-    a: "Lagerland Apps builds native applications for iPhone, iPad, Apple Watch, and Mac. Apps are built with SwiftUI, HealthKit, StoreKit and CoreData/SwiftData — no cross-platform wrappers, no Electron."
+    a: "Lagerland Apps builds native applications for iPhone, iPad, Apple Watch, and Mac. Apps are built with SwiftUI, HealthKit, StoreKit and CoreData/SwiftData, without cross-platform wrappers or Electron."
 last_updated: 2026-10-26
 ---
 
@@ -75,10 +75,10 @@ last_updated: 2026-10-26
   <div class="hero-left reveal">
     <p class="overline">Independent Apple developer · One-person studio · Finland</p>
     <h1 class="h1">
-      Built by <span class="gradient-text">one person.</span><br>For people who miss calm software.
+      Built by <span class="gradient-text">one person</span><br>for people who miss calm software.
     </h1>
     <p class="lead">
-      Lagerland Apps is a one-person studio in Finland, run by a single independent Apple developer. Every app is designed, coded, tested, and shipped by one person — no VC pressure, no advertiser incentives, no growth hackers.
+      Lagerland Apps is a one-person studio in Finland, run by a single independent Apple developer. One person designs, codes, tests, and ships every app, with no investors or advertisers to answer to.
     </p>
   </div>
 </section>
@@ -87,20 +87,20 @@ last_updated: 2026-10-26
   <h2 class="h2">The philosophy</h2>
   <div class="grid grid-2 stagger">
     <div class="card">
-      <div class="card-title">Privacy is the default, not a feature</div>
-      <div class="card-text">No third-party tracking SDKs. No advertising networks. No analytics that identify users. Data stays on your device; any cloud sync uses your own iCloud account.</div>
+      <div class="card-title">Private by default</div>
+      <div class="card-text">The apps have no third-party tracking SDKs, no advertising networks, and no analytics that identify you. Data stays on your device, and any cloud sync uses your own iCloud account.</div>
     </div>
     <div class="card">
-      <div class="card-title">Honest monetization</div>
-      <div class="card-text">One-time purchases, optional Pro subscriptions, and freemium models with permanently free core features. No dark patterns, no auto-charging trials, no ads.</div>
+      <div class="card-title">How the apps are paid for</div>
+      <div class="card-text">One-time purchases, optional Pro subscriptions, and free tiers whose core features stay free. There are no ads, no dark patterns, and no trials that start charging on their own.</div>
     </div>
     <div class="card">
       <div class="card-title">Single-purpose tools</div>
-      <div class="card-text">Each app does one thing well. Rather than one bloated platform, the catalogue is a family of focused tools you can use together or alone.</div>
+      <div class="card-text">Each app does one job. The catalogue is a set of small, focused tools you can use together or on their own.</div>
     </div>
     <div class="card">
       <div class="card-title">Apple-native engineering</div>
-      <div class="card-text">Built with SwiftUI, HealthKit, StoreKit, CoreData/SwiftData, and Apple's own frameworks. No cross-platform wrappers, no Electron, no compromises on feel.</div>
+      <div class="card-text">Built with SwiftUI, HealthKit, StoreKit, CoreData/SwiftData, and Apple's own frameworks. The apps use no cross-platform wrappers or Electron, so they behave the way Apple software should.</div>
     </div>
   </div>
 </section>
@@ -117,7 +117,7 @@ last_updated: 2026-10-26
 
 {%- assign live_apps = site.apps | where: "status", "live" -%}
 <section class="section reveal">
-  <h2 class="h2">The catalogue — {{ live_apps.size }} apps</h2>
+  <h2 class="h2">The catalogue: {{ live_apps.size }} apps</h2>
   <p class="lead">Every live app from Lagerland Apps. Browse by category on the <a href="/apps/">full catalogue page</a>, or explore them individually below.</p>
   <div class="grid grid-2 stagger">
     {%- for app in live_apps -%}{% include app-card.html app=app %}{%- endfor -%}

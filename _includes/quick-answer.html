@@ -1,7 +1,7 @@
 {%- assign qa = include.text | default: page.quick_answer -%}
 {%- if qa and qa != "" -%}
 {%- comment %}
-  SpeakableSpecification — tells voice assistants (Siri, Assistant,
+  SpeakableSpecification: tells voice assistants (Siri, Assistant,
   Alexa) which paragraph to read when asked "what is <app>?". The
   ".quick-answer__body" CSS selector is what the schema points to.
 {%- endcomment -%}

@@ -1,4 +1,4 @@
-# Per-app transparency data — sourced from each app's PrivacyInfo.xcprivacy
+# Per-app transparency data, sourced from each app's PrivacyInfo.xcprivacy
 # (where committed) and project structure verified against the GitHub repo on
 # the date shown. Fields use Apple's terms where possible:
 #   - tracking_declared      : value of NSPrivacyTracking
@@ -25,16 +25,16 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "None — HealthKit and EventKit only (local frameworks). No cloud sync."
+    network_calls: "None. HealthKit and EventKit only (local frameworks), and no cloud sync."
     data_leaves_device: "Nothing, unless you export a report yourself."
     analytics: "None."
     collected_data:
       - "Health & Fitness (purpose: app functionality, not linked, not used for tracking)"
     required_reason_apis:
-      - "UserDefaults (CA92.1 — read/write app-specific user defaults)"
+      - "UserDefaults (CA92.1: read/write app-specific user defaults)"
     permissions:
-      - "Calendar (read-only) — detect work shifts"
-      - "HealthKit (read sleep) — calculate recovery between shifts"
+      - "Calendar (read-only): detect work shifts"
+      - "HealthKit (read sleep): calculate recovery between shifts"
     notes: "Calendar and Health data never leave the device."
 
   - slug: allpaid
@@ -51,8 +51,8 @@ apps:
     required_reason_apis:
       - "UserDefaults (CA92.1)"
     permissions:
-      - "Local notifications — bill due-date reminders"
-      - "Face ID / Touch ID — optional App Lock"
+      - "Local notifications: bill due-date reminders"
+      - "Face ID / Touch ID: optional App Lock"
     notes: "Bill, subscription, and due-date data stays on-device by default; iCloud Sync is an opt-in Pro feature that uses your own private iCloud. No PrivacyInfo.xcprivacy ships yet; Apple's App Store label reads Data Not Collected."
 
   - slug: appmeta
@@ -61,7 +61,7 @@ apps:
     tracking_domains: 0
     third_party_sdks: 0
     third_party_sdks_list: []
-    account_required: "An App Store Connect team API key (Issuer ID, Key ID, .p8) from your own developer account; no AppMeta account. Stored in macOS Keychain on that Mac only — never transmitted to Lagerland."
+    account_required: "An App Store Connect team API key (Issuer ID, Key ID, .p8) from your own developer account; no AppMeta account. Stored in the macOS Keychain on that Mac only and never transmitted to Lagerland."
     network_calls: "App Store Connect API (api.appstoreconnect.apple.com) and the report download links it returns; Apple's public App Store endpoints (apps.apple.com, itunes.apple.com, search.itunes.apple.com, amp-api-edge.apps.apple.com) for app icons, competitor prices and opt-in keyword research; Apple Ads (api.ads.apple.com, appleid.apple.com) only if you connect it; ECB exchange rates (data-api.ecb.europa.eu) for sales charts; your chosen AI provider, if any. No Lagerland server."
     data_leaves_device: "Listing data goes only to Apple's App Store Connect API, with your own key. Keyword phrases and app IDs you look up go to Apple's public App Store endpoints, and text you ask a cloud AI provider to translate or analyze goes to that provider. Nothing goes to Lagerland."
     analytics: "None."
@@ -69,7 +69,7 @@ apps:
     required_reason_apis:
       - "UserDefaults (CA92.1)"
     permissions:
-      - "Notifications — optional alerts for new reviews and diagnostics"
+      - "Notifications: optional alerts for new reviews and diagnostics"
     notes: "Native Mac client for App Store Connect. Edits happen locally, then submit via Apple's API."
 
   - slug: appmeta-pulse
@@ -113,16 +113,16 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "None — no EarnLock server. HealthKit and Family Controls are local frameworks."
+    network_calls: "None. There is no EarnLock server; HealthKit and Family Controls are local frameworks."
     data_leaves_device: "No."
     analytics: "None."
     collected_data: []
     required_reason_apis: []
     permissions:
-      - "HealthKit (read steps, active energy, exercise minutes) — measure progress toward the unlock goal"
-      - "Family Controls / Screen Time (.individual mode) — shield distracting apps until the goal is met"
-      - "Local notifications — progress and unlock alerts"
-    notes: "App Store Privacy Nutrition Label reads \"Data Not Collected.\" HealthKit is read-only and never leaves the device; Family Controls hands EarnLock opaque tokens, so it cannot see which apps you blocked. Self-restriction only, never parental control. No account, no server."
+      - "HealthKit (read steps, active energy, exercise minutes): measure progress toward the unlock goal"
+      - "Family Controls / Screen Time (.individual mode): shield distracting apps until the goal is met"
+      - "Local notifications: progress and unlock alerts"
+    notes: "App Store Privacy Nutrition Label reads \"Data Not Collected.\" HealthKit is read-only and never leaves the device; Family Controls hands EarnLock opaque tokens, so it cannot see which apps you blocked. It is for restricting yourself, never parental control, and it has no account and no server."
 
   - slug: gymlogger-x
     manifest_source: source
@@ -136,14 +136,14 @@ apps:
     analytics: "No analytics SDK; a random install ID is used for referral attribution."
     collected_data:
       - "Health & Fitness (purpose: app functionality, not linked, not used for tracking)"
-      - "Device ID — random install ID (purpose: app functionality, analytics; not linked, not used for tracking)"
+      - "Device ID: random install ID (purpose: app functionality, analytics; not linked, not used for tracking)"
     required_reason_apis:
       - "UserDefaults (CA92.1, 1C8F.1)"
       - "File timestamp (C617.1)"
       - "System boot time (35F9.1)"
     permissions:
-      - "Apple Watch connectivity — log sets from the wrist while the iPhone runs the session"
-      - "HealthKit — save workouts; read heart rate and active energy"
+      - "Apple Watch connectivity: log sets from the wrist while the iPhone runs the session"
+      - "HealthKit: save workouts; read heart rate and active energy"
     notes: "1,500 exercises and 44 programs ship inside the app. The App Store label reads \"Data Not Collected\", while the app's own privacy manifest declares the two data types above."
 
   - slug: liftlog
@@ -163,10 +163,10 @@ apps:
       - "Disk space (E174.1)"
       - "System boot time (35F9.1)"
     permissions:
-      - "Haptics — confirmed set logging"
-      - "HealthKit (write-only workouts and active energy) — optional Apple Health export"
-      - "Local notifications — rest-complete and training reminders (optional)"
-    notes: "Required Reason APIs are all standard app-functionality categories — no fingerprinting use."
+      - "Haptics: confirmed set logging"
+      - "HealthKit (write-only workouts and active energy): optional Apple Health export"
+      - "Local notifications: rest-complete and training reminders (optional)"
+    notes: "Required Reason APIs are all standard app-functionality categories, with no fingerprinting use."
 
   - slug: mediakit
     manifest_source: submission
@@ -184,8 +184,8 @@ apps:
     collected_data: []
     required_reason_apis: []
     permissions:
-      - "User-Selected File — only when you drag a file in"
-    notes: "152 native tools for video, audio, image, PDF, and archive work — all processed locally."
+      - "User-Selected File: only when you drag a file in"
+    notes: "152 native tools for video, audio, image, PDF, and archive work, all processed locally."
 
   - slug: millrace
     manifest_source: source
@@ -194,7 +194,7 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "None. The app contains no networking code — levels, the solver, the 3D board and every theme run on-device. Optional Game Center and in-app purchases are handled by Apple."
+    network_calls: "None. The app contains no networking code: levels, the solver, the 3D board and every theme run on-device. Optional Game Center and in-app purchases are handled by Apple."
     data_leaves_device: "No."
     analytics: "None."
     collected_data: []
@@ -218,8 +218,8 @@ apps:
     required_reason_apis:
       - "UserDefaults (CA92.1)"
     permissions:
-      - "HealthKit (read sleep, HRV, ECG, activity) — generate insights"
-      - "HealthKit (write entries) — save insights back to Apple Health"
+      - "HealthKit (read sleep, HRV, ECG, activity): generate insights"
+      - "HealthKit (write entries): save insights back to Apple Health"
     notes: "On-device pattern detection. Apple Health data never leaves your device."
 
   - slug: pawza
@@ -229,22 +229,22 @@ apps:
     third_party_sdks: 1
     third_party_sdks_list: ["ZIPFoundation (local archive handling for export; no network)"]
     account_required: false
-    network_calls: "None — document scanning and AI extraction run on-device. Optional iCloud sync uses your own CloudKit private database."
+    network_calls: "None. Document scanning and AI extraction run on-device. Optional iCloud sync uses your own CloudKit private database."
     data_leaves_device: "Your iCloud only, if enabled. Compatible with Advanced Data Protection."
     analytics: "None."
     collected_data:
-      - "Health & Fitness (vaccinations, medications — purpose: app functionality, not linked, not used for tracking)"
+      - "Health & Fitness (vaccinations, medications; purpose: app functionality, not linked, not used for tracking)"
       - "Photos or Videos (purpose: app functionality, not linked, not used for tracking)"
-      - "Other User Content (notes, scanned documents — purpose: app functionality, not linked, not used for tracking)"
+      - "Other User Content (notes, scanned documents; purpose: app functionality, not linked, not used for tracking)"
       - "Purchase History (purpose: app functionality, not linked, not used for tracking)"
     required_reason_apis:
-      - "UserDefaults (CA92.1 — read/write app-specific user defaults)"
-      - "File Timestamp (C617.1 — access file timestamps within the app container)"
+      - "UserDefaults (CA92.1: read/write app-specific user defaults)"
+      - "File Timestamp (C617.1: access file timestamps within the app container)"
     permissions:
-      - "Camera — scan vet documents"
-      - "Photo Library — attach existing photos and documents"
-      - "Local notifications — vaccination, medication, and checkup reminders"
-    notes: "Records, photos, scanned documents, and notes stay on-device by default. Document scanning (Vision OCR) and AI extraction (Apple Intelligence on iOS 26+) run on-device — documents are never uploaded. Optional iCloud sync uses your own private CloudKit database."
+      - "Camera: scan vet documents"
+      - "Photo Library: attach existing photos and documents"
+      - "Local notifications: vaccination, medication, and checkup reminders"
+    notes: "Records, photos, scanned documents, and notes stay on-device by default. Document scanning (Vision OCR) and AI extraction (Apple Intelligence on iOS 26+) run on-device, and documents are never uploaded. Optional iCloud sync uses your own private CloudKit database."
 
   - slug: rightsplit
     manifest_source: submission
@@ -253,7 +253,7 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "One: the European Central Bank's public daily exchange-rate file (eurofxref-daily.xml), fetched at most once a day for currency conversion — no user data is sent. Receipt scanning and splitting make no network calls; sharing uses Messages/WhatsApp."
+    network_calls: "One: the European Central Bank's public daily exchange-rate file (eurofxref-daily.xml), fetched at most once a day for currency conversion. No user data is sent. Receipt scanning and splitting make no network calls; sharing uses Messages/WhatsApp."
     data_leaves_device: "Only via the iOS share sheet, when you choose."
     analytics: "None."
     collected_data: []
@@ -272,14 +272,14 @@ apps:
     tracking_domains: 0
     third_party_sdks: 0
     third_party_sdks_list: []
-    account_required: "Optional Apple ID with App Store Connect access — only if you choose to upload screenshots."
+    account_required: "Optional Apple ID with App Store Connect access, needed only if you choose to upload screenshots."
     network_calls: "Apple App Store Connect API (only if you upload). Optional AI translation (only when you opt in and request a translation)."
     data_leaves_device: "Only what you choose to upload (screenshots to App Store Connect, text to a translation service when you request it)."
     analytics: "None."
     collected_data: []
     required_reason_apis: []
     permissions:
-      - "User-Selected File — open and save screenshots"
+      - "User-Selected File: open and save screenshots"
     notes: "Rendering uses Apple's Metal locally. Translation and upload are explicit user actions. Formerly ScreenFlow Studio."
 
   - slug: shogiful
@@ -305,7 +305,7 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "None of its own. The app contains no networking code — the Pikafish engine and its 53 MB neural network are bundled and run on-device. Optional Game Center and in-app purchases are handled by Apple."
+    network_calls: "None of its own. The app contains no networking code; the Pikafish engine and its 53 MB neural network are bundled and run on-device. Optional Game Center and in-app purchases are handled by Apple."
     data_leaves_device: "No."
     analytics: "None."
     collected_data: []
@@ -315,7 +315,7 @@ apps:
       - "System boot time (35F9.1)"
       - "Disk space (E174.1)"
     permissions: []
-    notes: "PrivacyInfo.xcprivacy declares NSPrivacyTracking false and no collected data types, and Apple's App Store label reads Data Not Collected. Games, analysis and training progress are stored on the device with SwiftData and no CloudKit container. Pikafish (GPL-3) is compiled into the app — the only outside code."
+    notes: "PrivacyInfo.xcprivacy declares NSPrivacyTracking false and no collected data types, and Apple's App Store label reads Data Not Collected. Games, analysis and training progress are stored on the device with SwiftData and no CloudKit container. Pikafish (GPL-3), compiled into the app, is the only outside code."
 
   - slug: soon
     manifest_source: submission
@@ -330,8 +330,8 @@ apps:
     collected_data: []
     required_reason_apis: []
     permissions:
-      - "Calendar (read-only) — turn events into countdowns"
-      - "Location (when in use) — weather for selected countdown"
+      - "Calendar (read-only): turn events into countdowns"
+      - "Location (when in use): weather for selected countdown"
     notes: "Weather and maps are Apple-provided services; nothing routes through Lagerland servers."
 
   - slug: tare
@@ -341,14 +341,14 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "None. The app contains no networking code — all 80 levels, the hints and every picture are on-device. The one in-app purchase is handled by Apple."
+    network_calls: "None. The app contains no networking code; all 80 levels, the hints and every picture are on-device. The one in-app purchase is handled by Apple."
     data_leaves_device: "No."
     analytics: "None."
     collected_data: []
     required_reason_apis:
       - "UserDefaults (CA92.1)"
     permissions: []
-    notes: "PrivacyInfo.xcprivacy declares NSPrivacyTracking false with no tracking domains and no collected data types, and Apple's App Store label reads Data Not Collected. No entitlements at all — no Game Center, iCloud, CloudKit, Keychain sharing or App Group. Progress stays on the device."
+    notes: "PrivacyInfo.xcprivacy declares NSPrivacyTracking false with no tracking domains and no collected data types, and Apple's App Store label reads Data Not Collected. It has no entitlements at all: no Game Center, iCloud, CloudKit, Keychain sharing or App Group. Progress stays on the device."
 
   - slug: taskful-day
     manifest_source: source
@@ -365,7 +365,7 @@ apps:
       - "UserDefaults (CA92.1)"
       - "File timestamp (C617.1)"
     permissions:
-      - "Microphone (only when you use voice capture) — speech-to-text runs on-device via Apple's SpeechFramework"
+      - "Microphone (only when you use voice capture): speech-to-text runs on-device via Apple's SpeechFramework"
     notes: "Universal Purchase across iPhone, iPad, and Mac. Voice capture is processed on-device."
 
   - slug: wanderwiki
@@ -383,5 +383,5 @@ apps:
       - "UserDefaults (CA92.1)"
       - "File timestamp (C617.1)"
     permissions:
-      - "Notifications (asked the first time you save an article) — one local daily reminder, retimable or off in Settings"
+      - "Notifications (asked the first time you save an article): one local daily reminder, retimable or off in Settings"
     notes: "Wikipedia client. Articles are fetched from Wikipedia's public API just like a web visit."

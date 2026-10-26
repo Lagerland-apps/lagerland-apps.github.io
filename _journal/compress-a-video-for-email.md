@@ -15,13 +15,13 @@ seo:
     - mail drop size limit
     - compress video on iphone
     - mediakit
-lede: "Every email provider caps what it will carry, and video reaches the cap fast. Here are the limits Gmail, Outlook and iCloud Mail publish, why a 25 MB limit does not take a 25 MB file, the arithmetic that turns a target size into a bitrate, and how MediaKit runs that arithmetic on iPhone or Mac without uploading the clip."
+lede: "Every email provider caps what it will carry, and video reaches the cap fast. This post covers the limits Gmail, Outlook and iCloud Mail publish, why a 25 MB limit does not take a 25 MB file, the arithmetic that turns a target size into a bitrate, and how MediaKit does that arithmetic on iPhone or Mac without uploading the clip."
 quick_answer: "To email a video, make the file smaller than your provider's limit with room to spare. Personal Gmail accepts 25 MB of attachments, the Outlook app 20 MB per message for internet accounts such as Outlook.com, iCloud Mail 20 MB, and Exchange work accounts 10 MB by default. Attachments travel Base64-encoded, which Microsoft says adds about 33%, so aim for about three-quarters of the limit: roughly 18 MB for Gmail and 15 MB for Outlook or iCloud Mail. To find the bitrate, multiply the target in megabytes by 8,000 and divide by the clip's length in seconds; that is the total in kbps. Subtract the audio bitrate (128 kbps is typical) and the rest is the video budget. Lower the resolution until the budget suits it, keep H.264 so the clip plays everywhere, and send a link instead when the budget gets too thin: Mail Drop carries up to 5 GB."
 faq:
   - q: "What is the maximum video size you can email with Gmail?"
     a: "Personal Gmail accounts can send up to 25 MB of attachments in one message, counted together; work and school accounts follow limits set by their Google Workspace administrator. Above the limit, Gmail removes the attachment and adds it as a Google Drive link instead. Because attachments are Base64-encoded in transit, aim for a video of about 18 MB if it has to arrive as a real attachment."
   - q: "Why does my video bounce when it is under the attachment limit?"
-    a: "Three common reasons. Attachments are Base64-encoded before they travel, and Microsoft's Exchange documentation says that adds about 33% to the message, so a file near the limit can exceed it once encoded. Some limits count the whole message, not just the attachment; Microsoft says Outlook's 20 MB limit includes the email. And the recipient's server has its own limit, which may be lower than yours, such as the 10 MB default on Exchange."
+    a: "There are three common reasons. Attachments are Base64-encoded before they travel, and Microsoft's Exchange documentation says that adds about 33% to the message, so a file near the limit can exceed it once encoded. Some limits count the whole message, not just the attachment; Microsoft says Outlook's 20 MB limit includes the email. And the recipient's server has its own limit, which may be lower than yours, such as the 10 MB default on Exchange."
   - q: "How do I calculate the bitrate for a target file size?"
     a: "Multiply the target size in megabytes by 8,000 to get kilobits, divide by the clip's length in seconds to get the total bitrate in kbps, then subtract the audio bitrate. What remains is the video bitrate. For an 18 MB target and a 90-second clip: 18 × 8,000 = 144,000 kilobits, divided by 90 is 1,600 kbps, minus 128 kbps of audio leaves about 1,470 kbps for the picture."
   - q: "Should I use H.264 or HEVC for a video I am emailing?"
@@ -34,9 +34,10 @@ mentioned_apps:
   - mediakit
 read_time: "6 min read"
 excerpt: "A reference for emailing video: the attachment limits Gmail, Outlook, Exchange, iCloud Mail and Mail Drop publish, why Base64 encoding means aiming for three-quarters of the limit, a bitrate table for clips from 30 seconds to five minutes, and how MediaKit's Target size mode runs the same arithmetic on iPhone and Mac."
+last_updated: 2026-10-26
 ---
 
-At the 8 Mbps that YouTube recommends for 1080p uploads, one minute of video is 60 MB. That is more than twice what Gmail will attach. Getting a clip into an email is a small sum: pick a target below your provider's limit, work out the bitrate that fits it, and re-encode at that bitrate. Below are the numbers for each step, then how [MediaKit](/apps/mediakit/) does it on iPhone and Mac without sending the clip anywhere first.
+At the 8 Mbps that YouTube recommends for 1080p uploads, one minute of video is 60 MB. That is more than twice what Gmail will attach. Getting a clip into an email is a small sum: pick a target below your provider's limit, work out the bitrate that fits it, and re-encode at that bitrate. This post gives the numbers for each step, then shows how [MediaKit](/apps/mediakit/) does it on iPhone and Mac without sending the clip anywhere first.
 
 ## How big a video can you email?
 
@@ -48,7 +49,7 @@ At the 8 Mbps that YouTube recommends for 1080p uploads, one minute of video is 
 | iCloud Mail | 20 MB | Incoming and outgoing messages | Up to 5 GB with Mail Drop turned on |
 | Mail Drop (Apple Mail, iCloud Mail) | 5 GB | The message including attachments; each link expires after 30 days | Mail Drop can't send it |
 
-Limits as each provider's help page stated them in July 2026: [Gmail Help](https://support.google.com/mail/answer/6584), [Microsoft Support](https://support.microsoft.com/en-us/office/send-large-files-with-outlook-8c698842-b462-4a4c-8d53-5c5dd04f77ef), and Apple's pages on [iCloud Mail limits](https://support.apple.com/en-us/102198) and [Mail Drop](https://support.apple.com/en-us/108329). Work and school accounts can be set lower by their administrators, and the receiving server applies its own limit. Microsoft's [Exchange documentation](https://learn.microsoft.com/en-us/exchange/mail-flow/message-size-limits) puts it plainly: a message must fit the limits of both sender and recipient. The smallest limit on the route is the one that counts.
+Limits as each provider's help page stated them in July 2026: [Gmail Help](https://support.google.com/mail/answer/6584), [Microsoft Support](https://support.microsoft.com/en-us/office/send-large-files-with-outlook-8c698842-b462-4a4c-8d53-5c5dd04f77ef), and Apple's pages on [iCloud Mail limits](https://support.apple.com/en-us/102198) and [Mail Drop](https://support.apple.com/en-us/108329). Work and school accounts can be set lower by their administrators, and the receiving server applies its own limit. Microsoft's [Exchange documentation](https://learn.microsoft.com/en-us/exchange/mail-flow/message-size-limits) says a message must fit the limits of both sender and recipient, so the smallest limit on the route decides.
 
 ## Why a 25 MB limit does not take a 25 MB file
 
@@ -100,13 +101,13 @@ A rough rule: if your video budget is well under half of YouTube's figure for th
 
 ## When to send a link instead
 
-Compression has a floor, and the five-minute row of the table finds it: 270 kbps is about a quarter of what YouTube suggests for 360p. When the budget falls that low, a link serves the recipient better than an attachment.
+The five-minute row of the table is where compression stops being useful: 270 kbps is about a quarter of what YouTube suggests for 360p. When the budget falls that low, a link serves the recipient better than an attachment.
 
 - **Mail Drop** in Apple Mail and iCloud Mail sends files up to 5 GB as a download link that expires after 30 days. Mail offers it when a message is larger than your provider allows.
 - **Gmail** swaps an attachment over 25 MB for a Google Drive link on its own.
 - **Outlook** points you to compressing the file or sharing it from cloud storage.
 
-The trade is simple: the recipient gets the full-quality original, and a copy sits on a server for as long as the link lives.
+With a link, the recipient gets the full-quality original, and a copy sits on a server for as long as the link lives.
 
 ## Doing it in MediaKit
 

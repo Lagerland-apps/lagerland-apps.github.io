@@ -2,10 +2,10 @@
 layout: default
 permalink: /for/indie-ios-developers/
 title: "Apps for Indie iOS Developers"
-quick_answer: "The native Mac toolkit for indie iOS developers shipping on the App Store: AppMeta (local metadata, localisation, version and IAP editor via the App Store Connect API), AppMeta Pulse (revenue, subscription and download dashboard for iPhone), and Mockly (batch-generate localised App Store screenshots). Keychain-secured credentials, no middleman server."
+quick_answer: "The native Mac toolkit for indie iOS developers shipping on the App Store: AppMeta (local metadata, localisation, version and IAP editor via the App Store Connect API), AppMeta Pulse (revenue, subscription and download dashboard for iPhone), and Mockly (batch-generate localised App Store screenshots). Credentials stay in the Keychain and no middleman server sits in between."
 seo:
-  title: "Mac Tools for Indie iOS Developers — App Store Connect"
-  description: "Native Mac apps for indie iOS developers: local App Store Connect metadata editing, revenue dashboards, and screenshot generation. No browser tabs."
+  title: "Mac Tools for Indie iOS Developers: App Store Connect"
+  description: "Native Mac apps for indie iOS developers: local App Store Connect metadata editing, revenue dashboards, and screenshot generation, outside the browser."
   keywords:
     - App Store Connect metadata editor Mac
     - indie iOS developer tools
@@ -51,10 +51,10 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is there a native Mac app for App Store Connect?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — AppMeta is a native Mac client for App Store Connect that lets you edit metadata, localizations, IAPs, and version info locally, without using the web UI. Credentials are stored in Keychain and requests go directly to the App Store Connect API." } },
-    { "@type": "Question", "name": "How do I monitor App Store revenue and subscriptions on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is an iPhone companion for App Store Connect that shows revenue, subscription metrics, and a multi-app dashboard — designed for indie developers shipping multiple apps who don't want to open the App Store Connect website every day." } },
+    { "@type": "Question", "name": "Is there a native Mac app for App Store Connect?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AppMeta is a native Mac client for App Store Connect. You edit metadata, localizations, IAPs, and version info locally instead of in the web UI. Credentials are stored in Keychain and requests go directly to the App Store Connect API." } },
+    { "@type": "Question", "name": "How do I monitor App Store revenue and subscriptions on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is an iPhone companion for App Store Connect that shows revenue, subscription metrics, and a multi-app dashboard. It is meant for indie developers with several apps who don't want to open the App Store Connect website every day." } },
     { "@type": "Question", "name": "What's the fastest way to generate localised App Store screenshots?", "acceptedAnswer": { "@type": "Answer", "text": "Mockly is a native Mac app for batch-generating localised App Store screenshots. It supports bulk language import, Apple device frames, and batch export in every required App Store size." } },
-    { "@type": "Question", "name": "Are these tools a replacement for Fastlane?", "acceptedAnswer": { "@type": "Answer", "text": "They complement it. Fastlane is a CLI automation toolchain; these are native GUI apps for the everyday editing, monitoring, and screenshot workflows most indie developers touch manually. Use them side-by-side." } }
+    { "@type": "Question", "name": "Are these tools a replacement for Fastlane?", "acceptedAnswer": { "@type": "Answer", "text": "They work alongside it. Fastlane is a CLI automation toolchain; these are native GUI apps for the editing, monitoring, and screenshot work most indie developers still do by hand. You can use both." } }
   ]
 }
 </script>
@@ -63,7 +63,7 @@ last_updated: 2026-10-26
   <div class="hero-left reveal">
     <p class="overline">Native Mac tools for indie App Store shipping</p>
     <h1 class="h1">Ship without<br><span class="gradient-text">App Store Connect tab fatigue.</span></h1>
-    <p class="lead">You know the feeling: 7 browser tabs open to App Store Connect, metadata edits spread across three languages, screenshots re-exported six times because one locale needed a tweak. These are the native Mac tools that replace the worst of that workflow.</p>
+    <p class="lead">A typical release: 7 browser tabs open to App Store Connect, metadata edits spread across three languages, screenshots re-exported six times because one locale needed a tweak. These native Mac tools take over the worst parts of that work.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#stack">See the stack</a>
       <a class="btn btn-secondary" href="#faq">FAQ</a>
@@ -75,14 +75,14 @@ last_updated: 2026-10-26
 
 <section class="section reveal">
   <h2 class="h2">Built by an indie iOS dev, for indie iOS devs</h2>
-  <p class="lead">Lagerland Apps is a one-person studio shipping {{ site.data.catalog.meta.live_app_count }} apps across iOS and macOS. The developer tools below weren't built to sell — they were built because the developer needed them. They happen to also be the only native Mac apps for their niches.</p>
+  <p class="lead">Lagerland Apps is a one-person studio shipping {{ site.data.catalog.meta.live_app_count }} apps across iOS and macOS. The developer tools below started as tools the developer needed, and selling them came later. They are also the only native Mac apps for their niches.</p>
 </section>
 
 <section id="stack" class="section--lg reveal">
   <div class="section-center">
     <p class="overline">The stack</p>
     <h2 class="h2">Three native Mac apps</h2>
-    <p class="lead">One-time purchases. No subscriptions on the core tools. Keychain-secured credentials, local API calls, no middleman server.</p>
+    <p class="lead">The core tools are one-time purchases with no subscriptions. Credentials are kept in the Keychain and API calls go straight from your device, with no middleman server.</p>
   </div>
   <div class="grid grid-2 stagger">
     {%- for app in apps_for -%}{% include app-card.html app=app %}{%- endfor -%}
@@ -92,27 +92,27 @@ last_updated: 2026-10-26
 <section class="section reveal">
   <h2 class="h2">What does the indie iOS dev workflow look like?</h2>
   <div class="grid grid-2 stagger">
-    <div class="card"><div class="card-title">1. AppMeta → daily metadata work</div><div class="card-text">Open your app, edit descriptions, tweak keywords, manage localisations, update IAP details. Diff preview shows exactly what will change on the App Store before you submit. No more web-UI accidents.</div></div>
-    <div class="card"><div class="card-title">2. Mockly → release screenshot prep</div><div class="card-text">Batch-import captures, add device frames, generate every required size in every language at once. What used to be a day of tedious exporting becomes a 10-minute build step.</div></div>
-    <div class="card"><div class="card-title">3. AppMeta Pulse → passive revenue monitoring</div><div class="card-text">Monitoring-first iPhone dashboard for App Store Connect metrics. Glance at revenue, subscription changes, and per-app breakdowns without opening the website.</div></div>
-    <div class="card"><div class="card-title">All three, or pick one</div><div class="card-text">They share nothing beyond the same developer's tooling philosophy. Buy the one that fixes your worst workflow problem today.</div></div>
+    <div class="card"><div class="card-title">1. AppMeta → daily metadata work</div><div class="card-text">Open your app, edit descriptions and keywords, manage localisations, and update IAP details. A diff preview shows exactly what will change on the App Store before you submit, which prevents the usual web-UI accidents.</div></div>
+    <div class="card"><div class="card-title">2. Mockly → release screenshot prep</div><div class="card-text">Batch-import captures, add device frames, and generate every required size in every language at once. A day of exporting turns into a 10-minute build step.</div></div>
+    <div class="card"><div class="card-title">3. AppMeta Pulse → passive revenue monitoring</div><div class="card-text">An iPhone dashboard for App Store Connect metrics. Check revenue, subscription changes, and per-app breakdowns without opening the website.</div></div>
+    <div class="card"><div class="card-title">All three, or pick one</div><div class="card-text">The three apps are independent of each other and only share a developer. Buy the one that fixes your worst workflow problem first.</div></div>
   </div>
 </section>
 
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>Is there a native Mac app for App Store Connect?</summary><div class="faq-a">Yes — AppMeta is a native Mac client for App Store Connect that lets you edit metadata, localizations, IAPs, and version info locally, without using the web UI. Credentials are stored in Keychain and requests go directly to the App Store Connect API.</div></details>
-    <details class="faq-item"><summary>How do I monitor App Store revenue and subscriptions on iPhone?</summary><div class="faq-a">AppMeta Pulse is an iPhone companion for App Store Connect that shows revenue, subscription metrics, and a multi-app dashboard — designed for indie developers shipping multiple apps who don't want to open the App Store Connect website every day.</div></details>
+    <details class="faq-item" open><summary>Is there a native Mac app for App Store Connect?</summary><div class="faq-a">Yes. AppMeta is a native Mac client for App Store Connect. You edit metadata, localizations, IAPs, and version info locally instead of in the web UI. Credentials are stored in Keychain and requests go directly to the App Store Connect API.</div></details>
+    <details class="faq-item"><summary>How do I monitor App Store revenue and subscriptions on iPhone?</summary><div class="faq-a">AppMeta Pulse is an iPhone companion for App Store Connect that shows revenue, subscription metrics, and a multi-app dashboard. It is meant for indie developers with several apps who don't want to open the App Store Connect website every day.</div></details>
     <details class="faq-item"><summary>What's the fastest way to generate localised App Store screenshots?</summary><div class="faq-a">Mockly is a native Mac app for batch-generating localised App Store screenshots. It supports bulk language import, Apple device frames, and batch export in every required App Store size.</div></details>
-    <details class="faq-item"><summary>Are these tools a replacement for Fastlane?</summary><div class="faq-a">They complement it. Fastlane is a CLI automation toolchain; these are native GUI apps for the everyday editing, monitoring, and screenshot workflows most indie developers touch manually. Use them side-by-side.</div></details>
+    <details class="faq-item"><summary>Are these tools a replacement for Fastlane?</summary><div class="faq-a">They work alongside it. Fastlane is a CLI automation toolchain; these are native GUI apps for the editing, monitoring, and screenshot work most indie developers still do by hand. You can use both.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Start here</p>
-  <h2 class="h2">Most dev tab-fatigue? AppMeta.</h2>
-  <p class="lead">AppMeta is the single app that replaces the most App Store Connect web-UI time. If you're picking one, pick this.</p>
+  <h2 class="h2">If you buy one, buy AppMeta</h2>
+  <p class="lead">Of the three, AppMeta saves the most time in the App Store Connect web UI.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/appmeta/">Learn about AppMeta</a>
     <a class="btn btn-secondary" href="/apps/">See all apps</a>

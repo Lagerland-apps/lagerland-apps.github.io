@@ -32,6 +32,7 @@ faq:
 mentioned_apps:
   - aftershift
 read_time: "9 min read"
+last_updated: 2026-10-26
 ---
 
 A rotating schedule is a roster in which your shift times change on a repeating cycle, usually so that a fixed number of crews can cover a workplace around the clock. A handful of named patterns cover most of them. The names are used loosely, and two employers can mean different rosters by the same word, so the sequence matters more than the label.
@@ -54,15 +55,15 @@ Why does almost every row say 42? A week has 168 hours. Four crews covering it i
 
 ## Why do Pitman, Panama and 2-2-3 sound like the same thing?
 
-Because they mostly are. Scheduling guides use all three names for the same 14-day, 12-hour cadence, and some keep Panama for the version where crews also alternate between days and nights. Continental is looser still: in some workplaces it means the 8-hour, 28-day forward rotation in the table, in others any 2-2-3 rota. If your roster has a name, write out the next 28 days as D, E, N and off. That list is what your sleep responds to.
+They mostly are. Scheduling guides use all three names for the same 14-day, 12-hour cadence, and some keep Panama for the version where crews also alternate between days and nights. Continental is looser still: in some workplaces it means the 8-hour, 28-day forward rotation in the table, in others any 2-2-3 rota. Whatever your roster is called, write out the next 28 days as D, E, N and off, since that sequence is what your sleep responds to.
 
 ## How does each pattern move between days and nights?
 
-Two things decide how hard a switch is: which way the clock moves, and how many hours you get between the last shift of one kind and the first of the next.
+How hard a switch is depends on which way the clock moves and on how many hours you get between the last shift of one kind and the first of the next.
 
 NIOSH's free training course for nurses names the direction ([Module 5](https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod5/04.html)). Day to evening to night is a forward rotation; night to evening to day is a backward one. It also names the speed: fast rotation changes shift within a week, slow rotation keeps each shift for two weeks or more, and weekly rotation sits in between.
 
-In an 8-hour, three-shift system, the arithmetic is unforgiving. Move forward from a 14:00 to 22:00 afternoon to a 22:00 to 06:00 night the next day and you have 24 hours between shifts. Move backward from that night to an afternoon shift the same day and you have 8. A 22:00 finish followed by a 06:00 start also leaves 8 hours, and those 8 hours have to cover the commute, a meal and sleep.
+In an 8-hour, three-shift system the gaps get small quickly. Move forward from a 14:00 to 22:00 afternoon to a 22:00 to 06:00 night the next day and you have 24 hours between shifts. Move backward from that night to an afternoon shift the same day and you have 8. A 22:00 finish followed by a 06:00 start also leaves 8 hours, and those 8 hours have to cover the commute, a meal and sleep.
 
 Twelve-hour systems have only days and nights, so the gap matters more than the direction. Applied to the table:
 
@@ -76,7 +77,7 @@ Twelve-hour systems have only days and nights, so the gap matters more than the 
 
 The usual explanation is that the human body clock runs slightly longer than 24 hours, so it is easier to push it later, as a forward rotation does, than to pull it earlier, as a backward one does.
 
-The largest study I found on rotation direction and sleep is [Shon and colleagues' 2016 study of 4,750 Korean electronics workers](https://pmc.ncbi.nlm.nih.gov/articles/PMC5011337/) on a three-shift system with 06:00, 14:00 and 22:00 starts. About 38% of the backward-rotating workers had poor sleep quality on the Pittsburgh Sleep Quality Index, against about 28% of the forward-rotating ones. After adjustment, backward rotation carried 1.95 times the odds of poor sleep, and the link was stronger in workers aged 30 and over. It was a cross-sectional study and didn't record rotation speed, so it shows an association rather than proof.
+The largest study I found on rotation direction and sleep is [Shon and colleagues' 2016 study of 4,750 Korean electronics workers](https://pmc.ncbi.nlm.nih.gov/articles/PMC5011337/) on a three-shift system with 06:00, 14:00 and 22:00 starts. About 38% of the backward-rotating workers had poor sleep quality on the Pittsburgh Sleep Quality Index, against about 28% of the forward-rotating ones. After adjustment, backward rotation carried 1.95 times the odds of poor sleep, and the link was stronger in workers aged 30 and over. It was a cross-sectional study and didn't record rotation speed, so it shows an association, not proof.
 
 Studies that changed people's schedules point the same way. A review of field research by [Sallinen and Kecklund (2010)](https://www.sjweh.fi/article/2900) found that moving workers from slowly backward-rotating to rapidly forward-rotating shifts improved alertness and, to some extent, sleep. NIOSH's guidance says forward rotations are easier to adjust to, and that weekly rotation is the hardest speed and best avoided ([Module 5, continued](https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod5/06.html)).
 
@@ -86,7 +87,7 @@ What the evidence doesn't settle is fast versus slow. NIOSH notes that some U.S.
 
 A quick return is a changeover with 11 hours or less between two shifts. [Vedaa and colleagues' 2016 systematic review](https://cronfa.swansea.ac.uk/Record/cronfa22100) of 22 studies found signs that quick returns harm sleep, sleepiness and fatigue in the short term; the evidence on longer-term health and work-life balance was inconclusive. Sallinen and Kecklund saw the same pattern across shift systems: night shifts, early-morning shifts and quick returns went with shorter sleep and more sleepiness.
 
-Eleven hours isn't an arbitrary line. It is the minimum daily rest in the [EU Working Time Directive](https://eur-lex.europa.eu/eli/dir/2003/88/oj), which allows exceptions when shift workers change shift, and the minimum gap between shifts that NIOSH's course cites from Knauth and Hornberger. The course's own example is an evening shift ending at 11:30 p.m. followed by a 7 or 8 a.m. day shift. Take out the drive both ways, a meal and the time it takes to fall asleep, and even a full 11 hours leaves well short of a full night.
+The eleven-hour line comes from regulation and guidance. It is the minimum daily rest in the [EU Working Time Directive](https://eur-lex.europa.eu/eli/dir/2003/88/oj), which allows exceptions when shift workers change shift, and the minimum gap between shifts that NIOSH's course cites from Knauth and Hornberger. The course's own example is an evening shift ending at 11:30 p.m. followed by a 7 or 8 a.m. day shift. Take out the drive both ways, a meal and the time it takes to fall asleep, and even a full 11 hours leaves well short of a full night.
 
 ## Which schedules are hardest on sleep?
 
@@ -102,7 +103,7 @@ No schedule is best for everyone. NIOSH says researchers [cannot recommend a sin
 | Long night shifts | 8 hours or less is better tolerated on evenings and nights | 12-hour nights in DuPont, Pitman and 4-on-4-off |
 | Rest after a run | Consider two rest days after three 12-hour shifts | DuPont's three days, one day off, three nights |
 
-Twelve-hour shifts get a footnote. Sallinen and Kecklund found that moving from 8- to 12-hour shifts did not necessarily harm sleep. Longer shifts mean fewer changeovers and so fewer chances for a quick return, which is part of why 12-hour rosters have spread despite the long nights.
+On twelve-hour shifts, Sallinen and Kecklund found that moving from 8- to 12-hour shifts did not necessarily harm sleep. Longer shifts mean fewer changeovers and so fewer chances for a quick return, which is part of why 12-hour rosters have spread despite the long nights.
 
 ## What can you do on a roster you didn't choose?
 
@@ -112,8 +113,8 @@ NIOSH also says nurses adjust better when they have some control over their sche
 
 ## Where AfterShift fits
 
-I built [AfterShift](/apps/aftershift/) for people on these rosters, and it doesn't need to know what your pattern is called. It reads shifts from your calendar, working out from the title and start time whether each is a day, evening, night or on-call shift, or you add them by hand. Then it looks at each window between the end of one shift and the start of the next, not a midnight-to-midnight day.
+I built [AfterShift](/apps/aftershift/) for people on these rosters, and it doesn't need to know what your pattern is called. It reads shifts from your calendar, working out from the title and start time whether each is a day, evening, night or on-call shift, or you add them by hand. Then it measures each window from the end of one shift to the start of the next, not a midnight-to-midnight day.
 
 Two parts of it are written for the switches above. When your next shift starts earlier on the clock than the last one, a backward step, the plan calls the gap an available sleep window, notes that fast shift changes often shorten continuous sleep, and suggests a nap. When the whole gap is shorter than your sleep target, the Shift Recovery Score is capped at 79, the top of Good, because a full sleep was never possible in that window; days off are exempt. The [methodology page](/apps/aftershift/methodology/) has the weights and caps, and a sleep-debt trend shows which stretches of a cycle left you furthest behind.
 
-None of this changes your roster. What it gives you is your own record of which changeovers cost the most sleep, which is useful evidence if you ever ask to swap them. The [design post](/journal/building-a-sleep-app-for-night-shifts/) explains why the app measures shift to shift in the first place.
+The app can't change your roster, but it gives you a record of which changeovers cost you the most sleep, which is useful evidence if you ever ask to swap them. The [design post](/journal/building-a-sleep-app-for-night-shifts/) explains why the app measures shift to shift in the first place.

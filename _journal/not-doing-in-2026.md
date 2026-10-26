@@ -4,7 +4,7 @@ slug: not-doing-in-2026
 title: "What I'm not doing in 2026"
 seo:
   title: "What This Indie App Studio Is Not Doing in 2026"
-  description: "A short anti-roadmap from a one-person Apple studio — no ads, no engagement metrics, no VC, no AI slop. What Lagerland Apps won't build in 2026, and why."
+  description: "A short anti-roadmap from a one-person Apple studio: what Lagerland Apps won't build in 2026 (ads, engagement metrics, VC money, AI slop) and why."
   keywords:
     - "indie app studio"
     - "one-person app business"
@@ -12,62 +12,62 @@ seo:
     - "indie developer 2026"
     - "privacy-first apps"
     - "lagerland apps"
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 date: 2026-01-01
-lede: "It's the first day of the year. Everywhere on the internet, people are listing what they will build, ship, optimize, and grow. Here's a shorter list — what this studio is choosing not to do."
-quick_answer: "Lagerland Apps is choosing not to add advertising SDKs, not to chase a ten-app year, not to bolt streaks or daily-engagement loops onto its catalogue, not to ship fashionable AI features that earn no place, and not to raise outside funding. The fourteen-app catalogue stays where it is. Refinements over additions, fewer apps, higher bar."
+lede: "It's the first day of the year, and all over the internet people are listing what they will build, ship, optimize, and grow. This is a shorter list: what this studio is choosing not to do."
+quick_answer: "Lagerland Apps is choosing not to add advertising SDKs, not to chase a ten-app year, not to bolt streaks or daily-engagement loops onto its catalogue, not to ship fashionable AI features that earn no place, and not to raise outside funding. The fourteen-app catalogue stays where it is, and the plan is to refine what exists and keep the bar for new apps high."
 faq:
   - q: "Will Lagerland Apps add advertising or analytics SDKs in 2026?"
-    a: "No. Lagerland Apps has zero third-party tracking SDKs across the entire fourteen-app catalogue — no analytics, no advertising networks, no telemetry that quietly fingerprints — and that will not change in 2026. The first ad SDK is the first time the studio's whole positioning collapses, which is not a trade the studio is willing to make."
+    a: "No. Lagerland Apps has zero third-party tracking SDKs across the entire fourteen-app catalogue: no analytics, no advertising networks, and no telemetry that quietly fingerprints users. That will not change in 2026. Adding an ad SDK would undo the studio's whole positioning, and the studio isn't willing to make that trade."
   - q: "Is Lagerland Apps raising outside funding?"
-    a: "No. There is no funding round planned for 2026. The studio is one person, the apps are profitable, and investors would add ambitions that do not fit a one-person operation. The honest version of 'we are not raising right now' is 'we do not want to.'"
+    a: "No. There is no funding round planned for 2026. The studio is one person, the apps are profitable, and investors would bring ambitions that do not fit a one-person operation. The honest version of 'we are not raising right now' is 'we do not want to.'"
   - q: "Will any Lagerland app add a streak counter or daily engagement loop?"
-    a: "That was the plan on 1 January 2026, and three apps have since added one: EarnLock has a step-goal streak with a weekly rest day, Millrace pays out extra undos at daily-streak milestones, and WanderWiki added a reading streak with an optional daily reminder. Taskful Day and AfterShift still have no streak, no daily nag and no social comparison."
+    a: "That was the plan on 1 January 2026, and three apps have since added one: EarnLock has a step-goal streak with a weekly rest day, Millrace pays out extra undos at daily-streak milestones, and WanderWiki added a reading streak with an optional daily reminder. Taskful Day and AfterShift still have no streak, no daily nag, and no social comparison."
   - q: "How many new apps will Lagerland Apps ship in 2026?"
-    a: "Few, if any. The current fourteen-app catalogue is at the limit of what one person can support thoughtfully. A new app will only ship in 2026 if the idea is good enough to displace something else. Genuine AI capability will only appear where it earns a place — Observa and Chessful are the existing examples."
+    a: "Few, if any. The current fourteen-app catalogue is at the limit of what one person can support properly. A new app will only ship in 2026 if the idea is good enough to displace something else. AI features will only appear where they earn a place; Observa and Chessful are the existing examples."
 mentioned_apps:
   - taskful-day
   - aftershift
   - observa
   - chessful
 read_time: "3 min read"
-excerpt: "An anti-resolution post for the start of 2026. Lagerland Apps is a one-person Apple studio and this is what it is choosing not to do this year — no advertising SDKs, no ten-app years, no engagement loops, no chasing what every other indie studio chases."
+excerpt: "An anti-resolution post for the start of 2026. Lagerland Apps is a one-person Apple studio, and this is what it is choosing not to do this year: advertising SDKs, ten-app years, engagement loops, and the other things every indie studio chases."
 ---
 
-It's the first day of 2026. The pleasant tradition of writing public roadmaps has already begun on every developer corner of the internet, and I'm sure most of them are sincere.
+It's the first day of 2026. Developers everywhere have started publishing their roadmaps for the year, a pleasant tradition, and I'm sure most of them are sincere.
 
-I'd like to do the opposite. Here is what I am **not** doing this year.
+I'd like to do the opposite and list what I am **not** doing this year.
 
 ## Not adding a single advertising SDK
 
-Lagerland Apps has zero third-party tracking SDKs across the entire catalogue. No analytics. No advertising networks. No "anonymized" telemetry that quietly fingerprints. That isn't going to change in 2026, and it isn't going to change because someone offers an attractive revenue share, either. The first time I add an ads SDK is the first time the studio's whole positioning collapses.
+Lagerland Apps has zero third-party tracking SDKs across the entire catalogue. That means no analytics, no advertising networks, and no "anonymized" telemetry that quietly fingerprints people. It won't change in 2026, and an attractive revenue share offer won't change it either. The day I add an ads SDK, the studio's whole positioning falls apart.
 
 ## Not chasing a ten-app year
 
-The catalogue today is fourteen apps. I don't need a fifteenth, sixteenth, twentieth. The studio is one person, and the surface area is already at the limit of what one person can support thoughtfully. If I ship a new app this year, it will be because the idea is good enough to displace something else — not because the calendar said it was time.
+The catalogue today is fourteen apps. I don't need a fifteenth, sixteenth, or twentieth. The studio is one person, and fourteen apps is already about as many as one person can support properly. If I ship a new app this year, it will be because the idea is good enough to displace something else, and not because the calendar said it was time.
 
 ## Not turning anything into a daily-engagement product
 
-Several of the apps would be more "successful" by App Store metrics if I added streaks, daily notifications, badges, or social comparison. Taskful Day would convert harder if I shipped a streak counter. AfterShift would have a higher retention curve with a daily nag. I am not doing any of that. I'd rather have a smaller userbase that doesn't resent me.
+Several of the apps would look more "successful" by App Store metrics if I added streaks, daily notifications, badges, or social comparison. Taskful Day would convert harder with a streak counter. AfterShift would retain more users with a daily nag. I'm not doing any of that. I'd rather have a smaller userbase that doesn't resent me.
 
 ## Not chasing AI features for AI's sake
 
-This is the one I expect the most disagreement on. I use language models in my own workflow. I think they're useful. I will absolutely add genuine AI capability to apps where it earns a place — Observa's plain-language interpretation of HRV is one example, Chessful's mistake explanation is another. But "tap here to summarize your day with AI" buttons that don't change anything are noise, and I'd rather ship no AI feature than a fashionable one.
+I expect the most disagreement on this one. I use language models in my own workflow, and I think they're useful. Where AI really earns a place in an app, I'll add it: Observa's plain-language interpretation of HRV is one example, and Chessful's mistake explanations are another. But a "tap here to summarize your day with AI" button that changes nothing is noise, and I'd rather ship no AI feature than a fashionable one.
 
 ## Not raising
 
-There is no funding round in the plans for 2026. I don't need one. The studio is small, the apps are profitable, and adding investors to a one-person operation would mean adding ambitions that don't fit. The honest version of "we're not raising right now" is "we don't want to."
+There is no funding round in the plans for 2026, and I don't need one. The studio is small, the apps are profitable, and investors in a one-person operation would bring ambitions that don't fit. The honest version of "we're not raising right now" is "we don't want to."
 
 ## Not going dark
 
-The other thing I'm not doing is disappearing. This journal is new, and I plan to write more honestly through 2026 than I have in any previous year — including when things go wrong, which they will. There will be shipping notes, rebrand stories, post-mortems on pricing experiments, and quiet essays about why a particular feature exists. None of it on a content-marketing schedule. All of it because there's something worth saying.
+I'm also not disappearing. This journal is new, and I plan to write more honestly through 2026 than in any previous year, including when things go wrong, which they will. Expect shipping notes, rebrand stories, post-mortems on pricing experiments, and short essays about why a particular feature exists. I'll write when there's something worth saying, not on a content-marketing schedule.
 
 ## What does this mean for the apps in 2026?
 
-For the apps you might already use, the practical answer to "what's coming in 2026" is more of the same: better refinements, fewer additions, the same privacy posture, the same one-time-or-honest-freemium pricing. For new apps that ship this year, the bar will be high and the count will be low. Good.
+If you already use the apps, what's coming in 2026 is more of the same: refinements over additions, the same privacy posture, and the same one-time-or-honest-freemium pricing. New apps that ship this year will face a high bar, so there won't be many of them. I'm fine with that.
 
-If that's the kind of studio you want to use software from, you're in the right place. If you want a studio that ships fifteen new features a quarter and live-streams its OKRs, there are several excellent ones — and I mean that — but it isn't this one.
+If that's the kind of studio you want software from, you're in the right place. If you want a studio that ships fifteen new features a quarter and live-streams its OKRs, there are several excellent ones (I mean that), but this isn't one of them.
 
 Welcome to 2026.
 
-*Update, 25 October 2026: two of these didn't hold. The catalogue grew this year rather than staying at fourteen, and three apps now have a streak of some kind: EarnLock (a step-goal streak with a weekly rest day), Millrace (extra undos at daily-streak milestones) and WanderWiki (a reading streak with an optional daily reminder). Taskful Day and AfterShift still have none.*
+*Update, 25 October 2026: two of these didn't hold. The catalogue grew this year instead of staying at fourteen, and three apps now have a streak of some kind: EarnLock (a step-goal streak with a weekly rest day), Millrace (extra undos at daily-streak milestones), and WanderWiki (a reading streak with an optional daily reminder). Taskful Day and AfterShift still have none.*

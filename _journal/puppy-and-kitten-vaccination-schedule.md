@@ -15,7 +15,7 @@ seo:
     - fvrcp schedule
     - when do puppies get rabies shot
     - pawza
-lede: "Most puppies and kittens get their first vaccines at six to eight weeks. What comes after is where owners lose track: how many more doses, how far apart, why the last one has to wait until 16 weeks, and why the vet wants another visit at six months or a year. Three sets of veterinary guidelines answer those questions and mostly agree. Here they are side by side, with the dates worth keeping from every certificate."
+lede: "Most puppies and kittens get their first vaccines at six to eight weeks. What comes after is where owners lose track: how many more doses, how far apart, why the last one has to wait until 16 weeks, and why the vet wants another visit at six months or a year. Three sets of veterinary guidelines answer those questions and mostly agree. Below they are side by side, along with the dates worth keeping from every certificate."
 quick_answer: "Puppies start core vaccines (distemper, adenovirus and parvovirus, often combined with parainfluenza) at 6 to 8 weeks and repeat them every 2 to 4 weeks until the last dose falls at 16 weeks or older. Kittens start FVRCP (panleukopenia, herpesvirus and calicivirus) from 6 weeks and repeat it every 3 to 4 weeks until 16 to 20 weeks, plus two FeLV doses 3 to 4 weeks apart from 8 weeks. Rabies follows local law. A booster follows the series: WSAVA and the AAHA/AAFP cat guidelines point to about 6 months, AAHA's dog guidelines to within a year. After that, core boosters are usually every 3 years, while leptospirosis, kennel cough, Lyme and canine flu vaccines are yearly. Your vet sets the exact schedule."
 excerpt: "Puppy and kitten vaccination schedules from the AAHA canine, AAHA/AAFP feline and WSAVA guidelines, in two week-by-week tables: when the series starts, why the last dose must land at 16 weeks or later, when the first booster is due, and which vaccines are yearly. Plus the five dates and numbers worth copying from every certificate."
 faq:
@@ -36,6 +36,7 @@ faq:
 mentioned_apps:
   - pawza
 read_time: "7 min read"
+last_updated: 2026-10-26
 ---
 
 There are three sets of guidelines behind almost every small-animal vaccination schedule: the [AAHA canine guidelines](https://www.aaha.org/globalassets/02-guidelines/2022-aaha-canine-vaccination-guidelines/resources/2022-aaha-canine-vaccinations-guidelines.pdf) (2022, updated in 2024), the [AAHA/AAFP feline guidelines](https://www.aaha.org/globalassets/02-guidelines/feline-vaccination-guidlines/resource-center/2020-aahaa-afp-feline-vaccination-guidelines.pdf) (2020), both written for North America, and the [WSAVA guidelines](https://wsava.org/wp-content/uploads/2024/05/2024-Guidelines-for-the-Vaccination-of-Dogs-and-Cats.pdf) (2024), written for vets worldwide. They are guidance for vets, not a calendar to follow without one. Your vet adjusts for the animal, the products in stock and local disease, and rabies is set by law. The tables below are what the guidelines say.
@@ -102,14 +103,14 @@ Keep the certificates themselves, not just notes of them, especially for rabies.
 
 ## Where Pawza fits
 
-[Pawza](/apps/pawza/) is a pet health record app for iPhone and iPad. It does not contain a vaccination schedule and does not decide what your pet needs; the dates come from your vet's paperwork, so it works with any vet's protocol and any country's rabies rules. What it does is keep those dates and tell you when one comes up.
+[Pawza](/apps/pawza/) is a pet health record app for iPhone and iPad. It does not contain a vaccination schedule and does not decide what your pet needs; the dates come from your vet's paperwork, so it works with any vet's protocol and any country's rabies rules. It keeps those dates and tells you when one comes up.
 
 - **Scanning a certificate.** Pawza reads the page on the device. The review screen lists each vaccine with its name, the date administered, the next due date and an optional lot number, and nothing is saved until you have checked them. With Pawza Pro on an iPhone or iPad with Apple Intelligence (iOS 26 or later) the fields fill in automatically; otherwise you fill them in from the recognised text.
 - **A reminder for the printed due date.** If the certificate gives a next due date, Pawza offers to add a vaccination reminder for that day.
 - **Adding one by hand.** Logging a vaccination record by hand offers the same reminder, set one year from the date given.
 
-One honest caveat, because the schedules above make it matter: both of those reminders repeat yearly by default. That is right for leptospirosis or kennel cough. It is wrong for a puppy or kitten series 2 to 4 weeks apart and for a 3-year booster. Open the reminder, set the date your vet gave you, and change Repeats to Never; add one reminder per dose for a series. A reminder fires on the date you set, so if a kennel wants boosters given some days before arrival, set it earlier. You can mark a reminder time-sensitive so it breaks through Focus, and the list sorts everything into overdue, today, this week and later.
+Given the schedules above, note that both of those reminders repeat yearly by default. That is right for leptospirosis or kennel cough. It is wrong for a puppy or kitten series 2 to 4 weeks apart and for a 3-year booster. Open the reminder, set the date your vet gave you, and change Repeats to Never; add one reminder per dose for a series. A reminder fires on the date you set, so if a kennel wants boosters given some days before arrival, set it earlier. You can mark a reminder time-sensitive so it breaks through Focus, and the list sorts everything into overdue, today, this week and later.
 
 With Pro, the vet-visit PDF lists every vaccination with its last date and next due date, on pages you can hand to a new clinic or a boarding kennel. The free version covers one pet. There is no Pawza account and no Pawza server: records stay on your device, with optional sync through your own iCloud. The reasons are in [why vet paperwork should stay on your phone](/journal/vet-paperwork-stays-on-your-phone/).
 
-The schedule belongs to your vet. The dates on the certificates belong to you, and keeping them is what lets you answer "when was the last one?" without a phone call.
+Your vet sets the schedule. If you keep the dates from the certificates, you can answer "when was the last one?" without a phone call.

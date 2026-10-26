@@ -34,9 +34,10 @@ mentioned_apps:
   - appmeta
 read_time: "7 min read"
 excerpt: "One table of every App Store product page field and when you can change it: promotional text versus description, keywords, screenshots, name, subtitle, URLs and the any-time settings, plus the difference between App Information and version information, and the review tracks that skip a new version."
+last_updated: 2026-10-26
 ---
 
-App Store Connect splits your product page into things you can change on the live app and things that wait for the next version. Apple's [table of required, localizable and editable properties](https://developer.apple.com/help/app-store-connect/reference/app-information/required-localizable-and-editable-properties) marks the properties that "can be localized and edited at any time without submitting a new version of your app." Everything else changes with a version. Here is the product page, field by field.
+App Store Connect splits your product page into things you can change on the live app and things that wait for the next version. Apple's [table of required, localizable and editable properties](https://developer.apple.com/help/app-store-connect/reference/app-information/required-localizable-and-editable-properties) marks the properties that "can be localized and edited at any time without submitting a new version of your app." Everything else changes with a version.
 
 ## Which App Store fields need a new version?
 
@@ -65,7 +66,7 @@ Sources: the editable-properties table above, Apple's [Platform version informat
 
 ## Promotional text vs description: what's the difference?
 
-They sit next to each other on the product page and do different jobs.
+They sit next to each other on the product page, but Apple treats them differently.
 
 | | Promotional text | Description |
 |---|---|---|
@@ -130,4 +131,4 @@ Screenshots follow the same window, and the [screenshot guidelines post](/journa
 
 [AppMeta](/apps/appmeta/) keeps the same split App Store Connect does. App Information fields (name, subtitle, privacy policy URL) and version fields are separate sections, and each push goes to the right API record. When the newest version on a platform is live, in review or waiting for release, AppMeta locks its version fields and says why, and you can create the next version from inside the app, then copy fields over from the previous one. Before anything is pushed, the preview shows the current App Store Connect value next to your change for every field and localization. AppMeta signs in with an API key you create yourself; the [setup guide](/journal/app-store-connect-api-key-setup/) walks through it.
 
-One gap, plainly: AppMeta applies that version lock to promotional text too. To change promotional text on a live version with no update in progress, use the App Store Connect website for now.
+AppMeta has one gap: it applies that version lock to promotional text too. To change promotional text on a live version with no update in progress, use the App Store Connect website for now.

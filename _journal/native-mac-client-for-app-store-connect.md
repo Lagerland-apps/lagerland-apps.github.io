@@ -4,7 +4,7 @@ slug: native-mac-client-for-app-store-connect
 title: "On building a native Mac client for App Store Connect"
 seo:
   title: "AppMeta: A Native Mac Client for App Store Connect"
-  description: "AppMeta is a native Mac client for the App Store Connect API — edit metadata, localizations, versions, and IAPs without living in browser tabs."
+  description: "AppMeta is a native Mac client for the App Store Connect API. Edit metadata, localizations, versions, and IAPs without living in browser tabs."
   keywords:
     - "app store connect mac app"
     - "native app store connect client"
@@ -13,77 +13,77 @@ seo:
     - "asc api tool"
     - "appmeta"
 date: 2026-02-21
-last_updated: 2026-10-25
-lede: "App Store Connect is the most consequential web app most indie developers use, and it has been the same web app for ten years. AppMeta is the studio's quietest app and arguably the most useful — a native Mac client for the ASC API, built for the day you're shipping in fourteen locales and need to stop scrolling."
+last_updated: 2026-10-26
+lede: "For most indie developers, App Store Connect is the web app that matters most, and it has been the same web app for ten years. AppMeta is the studio's least visible app and possibly its most useful one: a native Mac client for the ASC API, made for the day you're shipping in fourteen locales and need to stop scrolling."
 quick_answer: "AppMeta is a native Mac client for the App Store Connect API built for indie developers shipping across many locales. It offers side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, review replies for each of your apps, and version submission. Priced as a {P_LIFETIME@appmeta} one-time lifetime purchase, or {P_YEARLY@appmeta} a year, with a free demo mode."
 faq:
   - q: "Is there a native Mac app for App Store Connect?"
-    a: "AppMeta is a native macOS client for the App Store Connect API. It gives you side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, review replies for every app in your catalogue, and version submission — all without using the App Store Connect web interface."
+    a: "AppMeta is a native macOS client for the App Store Connect API. It gives you side-by-side localised metadata editing, diff preview before push, cross-locale keyword analysis, review replies for every app in your catalogue, and version submission, all without opening the App Store Connect web interface."
   - q: "How much does AppMeta cost and is there a subscription?"
-    a: "AppMeta is a {P_LIFETIME@appmeta} one-time lifetime purchase, with a {P_YEARLY@appmeta} yearly option added later for people who would rather spread the cost. Buying the lifetime tier once still ends it — nothing auto-renews on you. A free demo mode lets you explore the interface against sample data before you buy. The pricing decision was deliberate — a subscription would pressure the roadmap toward feature churn rather than reliable native-client behaviour."
+    a: "AppMeta is a {P_LIFETIME@appmeta} one-time lifetime purchase, with a {P_YEARLY@appmeta} yearly option added later for people who would rather spread the cost. If you buy the lifetime tier, you pay once and nothing auto-renews. A free demo mode lets you explore the interface against sample data before you buy. The lifetime price was a deliberate choice: a subscription would push the roadmap toward feature churn, and the app's job is to be a reliable native client."
   - q: "Can AppMeta edit App Store metadata in multiple languages at once?"
-    a: "Yes. Pick a field and AppMeta lists every locale's version of it in one view — English, German, French, Japanese, Spanish and so on — each editable in place. Or pick a locale and edit all of its fields together. Before you push, the diff preview shows the live App Store Connect value next to each change."
+    a: "Yes. Pick a field and AppMeta lists every locale's version of it in one view (English, German, French, Japanese, Spanish and so on), each editable in place. Or pick a locale and edit all of its fields together. Before you push, the diff preview shows the live App Store Connect value next to each change."
   - q: "Does AppMeta replace fastlane or Xcode Cloud?"
-    a: "No. AppMeta is not a build pipeline tool. It does not replace fastlane, Xcode Cloud, or your CI. It also does not generate screenshots — that is Mockly's job — and the iPhone revenue dashboard is AppMeta Pulse. AppMeta handles the metadata, review and submission side of App Store Connect."
+    a: "No. AppMeta is not a build pipeline tool. It does not replace fastlane, Xcode Cloud, or your CI. It also does not generate screenshots, which is Mockly's job, and the iPhone revenue dashboard is AppMeta Pulse. AppMeta handles the metadata, review and submission side of App Store Connect."
 mentioned_apps:
   - appmeta
   - appmeta-pulse
   - mockly
 read_time: "6 min read"
-excerpt: "AppMeta is a native Mac client for the App Store Connect API — per-locale metadata editing, diff preview, keyword analysis, review responses, and version submission. This post explains why the indie iOS workflow needed it, what the trade-offs are, and why the studio shipped it as a $29.99 lifetime purchase first, before adding a yearly option alongside it."
+excerpt: "AppMeta is a native Mac client for the App Store Connect API with per-locale metadata editing, diff preview, keyword analysis, review responses, and version submission. This post covers why the indie iOS workflow needed it, the trade-offs, and why the studio shipped it as a $29.99 lifetime purchase first and added a yearly option later."
 ---
 
-App Store Connect — Apple's web tool for shipping apps — is the single most consequential web app in the indie iOS developer's day. It's how you manage metadata, push builds to TestFlight, respond to reviews, set pricing, file privacy declarations, and submit for review. Almost every studio I know spends an hour a day in it during ship weeks.
+App Store Connect, Apple's web tool for shipping apps, is the web app that matters most in an indie iOS developer's day. It's where you manage metadata, push builds to TestFlight, respond to reviews, set pricing, file privacy declarations, and submit for review. Almost every studio I know spends an hour a day in it during ship weeks.
 
-It is also, structurally, a web app from 2014 that has accreted features for a decade. It works. It is also, on a long-haul flight or in a tab adjacent to fifteen others, miserable.
+Underneath, it is a web app from 2014 that has piled on features for a decade. It works. On a long-haul flight, or in a tab next to fifteen others, it is also miserable.
 
-[AppMeta](/apps/appmeta/) is the native Mac client I built to stop being miserable.
+I built [AppMeta](/apps/appmeta/), a native Mac client, so I could stop being miserable.
 
 ## The problem ASC has, specifically
 
-App Store Connect's design constraints are not Apple's fault, in fairness. They are managing the metadata for several million apps across two hundred regions in forty languages, with regulatory edge cases in every market. Building a great web tool against that surface area is a hard problem, and the team that ships ASC ships a *lot*.
+In fairness, App Store Connect's design constraints are not Apple's fault. Apple manages the metadata for several million apps across two hundred regions in forty languages, with regulatory edge cases in every market. Building a great web tool on top of all that is hard, and the team behind ASC ships a *lot*.
 
-What ASC isn't optimised for is the workflow of an indie developer with five-to-fifty apps shipping across twenty locales. Specifically:
+What ASC isn't optimised for is an indie developer with five to fifty apps shipping across twenty locales. The specific problems:
 
-- **Localised metadata editing is one-locale-at-a-time.** Editing a description in fourteen languages means switching the locale dropdown fourteen times. There is no side-by-side view.
-- **Keyword fields are 100 characters per locale**, with no cross-locale gap analysis. Indies rediscover the same keyword waste in every language because there's no tool to surface it. (The rules for that field, and the folklore around it, now have [their own post](/journal/app-store-keyword-field-100-characters/).)
+- **Localised metadata editing is one locale at a time.** Editing a description in fourteen languages means switching the locale dropdown fourteen times. There is no side-by-side view.
+- **Keyword fields are 100 characters per locale**, with no cross-locale gap analysis. Indies find the same keyword waste again in every language because no tool points it out. (The rules for that field, and the folklore around it, now have [their own post](/journal/app-store-keyword-field-100-characters/).)
 - **Review responses are a per-app web flow** with no inbox. If you have ten apps, you have ten places to check.
 - **Version submission requires a multi-step flow with hidden state.** "Did I save the export compliance? Did I tick advertising identifier? Did I attach the encryption form?" These have all bitten me. So has forgetting [which fields only change with a new version](/journal/app-store-fields-that-need-a-new-version/).
 
-Every one of these is a real friction. None of them are catastrophic individually. Together they are why I had a recurring "App Store Connect" calendar block on my Friday afternoons for two years before I shipped AppMeta.
+None of these is catastrophic on its own. Together they are why I had a recurring "App Store Connect" calendar block on Friday afternoons for two years before I shipped AppMeta.
 
 ## What does a native App Store Connect client actually change?
 
-The core of AppMeta is a Mac client that talks directly to the App Store Connect REST API and gives you a side-by-side view of your apps' metadata. It signs in with an API key you create yourself in App Store Connect; [the key setup guide](/journal/app-store-connect-api-key-setup/) walks through that. The four things it changes:
+At its centre, AppMeta is a Mac client that talks directly to the App Store Connect REST API and shows your apps' metadata side by side. It signs in with an API key you create yourself in App Store Connect; [the key setup guide](/journal/app-store-connect-api-key-setup/) walks through that. It changes four things.
 
-**Side-by-side localised editing.** Pick a field and every locale's version of it is on one screen: the English description, then the German, French, Japanese, and Spanish ones below it, each editable in place. Or pick a locale and edit all of its fields together. Changed fields are marked, and you push when you're ready. The hour-long localisation pass collapses into ten minutes.
+**Side-by-side localised editing.** Pick a field and every locale's version of it is on one screen: the English description, then the German, French, Japanese, and Spanish ones below it, each editable in place. Or pick a locale and edit all of its fields together. Changed fields are marked, and you push when you're ready. The hour-long localisation pass takes ten minutes.
 
-**Diff preview before push.** AppMeta shows you exactly what will change against the current live metadata before the push happens. This is the feature I trust more than I trust myself, because *it caught a typo in five different localisations on the day before I would have shipped them.* Once that happens to you once, you do not ship without a diff preview again.
+**Diff preview before push.** Before anything is pushed, AppMeta shows exactly what will change against the current live metadata. I trust this feature more than I trust myself, because *it caught a typo in five different localisations the day before I would have shipped them.* After that happens to you once, you don't ship without a diff preview again.
 
-**Cross-locale keyword analysis.** AppMeta computes per-character keyword utilisation across every locale and surfaces wasted space, duplicates, and gaps. This used to be a spreadsheet I maintained by hand. It is now a panel in the app.
+**Cross-locale keyword analysis.** AppMeta computes per-character keyword use across every locale and points out wasted space, duplicates, and gaps. I used to keep this in a spreadsheet by hand. Now it's a panel in the app.
 
-**Reviews in a native list.** Each app's reviews, from every storefront, sit in one list you can sort by date or rating, a click away in the sidebar instead of behind ten slow page loads. Pick a review, type a response, send. The response goes through ASC's regulated channels — Apple is the source of truth — but the workflow stays on the Mac.
+**Reviews in a native list.** Each app's reviews, from every storefront, sit in one list you can sort by date or rating, one click away in the sidebar instead of behind ten slow page loads. Pick a review, type a response, send. The response still goes through ASC's regulated channels, with Apple as the source of truth, but you never leave the Mac.
 
-There's also version submission, screenshot management, pricing changes, and a few smaller things. The point isn't the feature checklist. The point is that *every minute of friction the web tool adds* compounds over a year of shipping.
+There's also version submission, screenshot management, pricing changes, and a few smaller things. What matters more than the checklist is that *every minute of friction the web tool adds* compounds over a year of shipping.
 
 ## Why a lifetime price, not a subscription
 
-This is the question I get most about AppMeta, and I want to be plain about it.
+People ask me about this more than anything else about AppMeta, so here is the plain answer.
 
-App Store Connect tooling is a developer tool. Developer tools have a long history of subscription-priced services — JetBrains, Sketch, Figma, Linear. The market would absolutely pay $19.99 a month for a good ASC client. I considered it.
+App Store Connect tooling is a developer tool, and developer tools have a long history of subscription pricing: JetBrains, Sketch, Figma, Linear. The market would happily pay $19.99 a month for a good ASC client. I considered it.
 
-The reason I shipped AppMeta as a one-time {P_LIFETIME@appmeta} purchase is that subscriptions create a specific bad incentive for a tool like this: every month, you have to ship enough perceived value to justify the recurring charge. That pressure pushes the roadmap toward *more features*, not toward the right features. AppMeta's job is to be a fast, reliable native client. Adding features for the sake of a renewal cycle would compromise that.
+I shipped AppMeta as a one-time {P_LIFETIME@appmeta} purchase because subscriptions give a tool like this a specific bad incentive. Every month you have to ship enough perceived value to justify the next charge, and that pressure pushes the roadmap toward *more features* when it should go toward the right ones. AppMeta's job is to be a fast, reliable native client, and features added to get through a renewal cycle would make it worse at that.
 
-A one-time purchase forces a different discipline: ship a tool that's worth $29.99 once, and let the work earn the next purchase from a new user, not extract a renewal from an existing one. The tradeoff is slower revenue. The advantage is honest design.
+A one-time purchase imposes a different discipline. The tool has to be worth $29.99 once, and the next sale has to come from a new user who thinks so, not from a renewal charged to an existing one. Revenue comes in more slowly, and in exchange the design stays honest.
 
 ## What AppMeta is not
 
-AppMeta is not a build pipeline tool. It does not replace fastlane, Xcode Cloud, or your CI. It does not generate screenshots — that's [Mockly](/apps/mockly/)'s job. Revenue on the phone is [AppMeta Pulse](/apps/appmeta-pulse/), the iPhone-side companion.
+AppMeta is not a build pipeline tool. It does not replace fastlane, Xcode Cloud, or your CI. It does not generate screenshots; that's [Mockly](/apps/mockly/)'s job. Revenue on the phone is [AppMeta Pulse](/apps/appmeta-pulse/), the iPhone companion.
 
-It is, specifically, the native client for the metadata-and-review portion of App Store Connect. The thing you spend an hour a day in during ship weeks. The thing that needed to stop being miserable.
+It is the native client for the metadata and review side of App Store Connect, the part you spend an hour a day in during ship weeks and the part that needed to stop being miserable.
 
-## The plain version
+## The short version
 
-If you're an indie iOS or macOS developer shipping in multiple locales and you've ever spent a Friday afternoon doing the locale-dropdown dance, [AppMeta](/apps/appmeta/) is the studio's answer. {P_LIFETIME@appmeta}, one-time, lifetime. Demo mode is free if you want to look around before you buy.
+If you're an indie iOS or macOS developer shipping in multiple locales and you've spent a Friday afternoon flipping through the locale dropdown, [AppMeta](/apps/appmeta/) is the studio's answer: {P_LIFETIME@appmeta}, one time, lifetime. Demo mode is free if you want to look around before you buy.
 
-If you're not an indie developer, this post has been twelve hundred words about a niche tool, and you've made it admirably far. Thanks for reading. The next post will be about chess.
+If you're not an indie developer, this has been twelve hundred words about a niche tool, and you've made it admirably far. Thanks for reading. The next post will be about chess.

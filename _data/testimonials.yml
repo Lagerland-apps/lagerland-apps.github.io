@@ -3,13 +3,13 @@
 # Structure: testimonials[<app-slug>] = [ { quote, author, source, rating?, language, tier, translation_en? }, ... ]
 #
 # Fields:
-#   quote          – exact user quote, in the original language
-#   author         – initials or short handle (privacy-safe)
-#   source         – "App Store" | "Reddit" | "Email" | …
-#   rating         – 1–5 (omit if not a star-rated source)
-#   language       – BCP-47 code ("en", "fr", "de", "es", …)
-#   tier           – "hero" (large, prioritised) | "ticker" (marquee only)
-#   translation_en – English translation, only when language != "en"
+#   quote          : exact user quote, in the original language
+#   author         : initials or short handle (privacy-safe)
+#   source         : "App Store" | "Reddit" | "Email" | …
+#   rating         : 1 to 5 (omit if not a star-rated source)
+#   language       : BCP-47 code ("en", "fr", "de", "es", …)
+#   tier           : "hero" (large, prioritised) | "ticker" (marquee only)
+#   translation_en : English translation, only when language != "en"
 # ============================================================
 
 gymlogger-x:
@@ -48,12 +48,12 @@ gymlogger-x:
     rating: 5
     language: "fr"
     tier: "hero"
-    translation_en: "Installed the app today and it's already top-tier! No videos, but super clear, well-explained diagrams that guide the exercises perfectly. First session this morning was smooth — intuitive interface, motivating reminders. Perfect for getting started with strength training! 💪"
+    translation_en: "Installed the app today and it's already top-tier! No videos, but super clear, well-explained diagrams that guide the exercises perfectly. First session this morning was smooth, with an intuitive interface and motivating reminders. Perfect for getting started with strength training! 💪"
 
 observa:
   # Curated to the five strongest, most specific quotes.
   # Short filler ("great UI", "the data amount is insane", "it is worth a lot")
-  # was deliberately left out — it dilutes the credible long quotes.
+  # was left out on purpose because it dilutes the credible long quotes.
   - quote: "This is the kind of app Apple probably thinks Apple Health already is. The correlation engine is what makes it work — raw health data without context is basically useless for most people. 'Your HRV is 54' means nothing. 'Your sleep tanks every time you train late' is actually actionable. Huge respect for keeping everything on-device with no account, too. Health apps shipping deeply personal data to random servers has become weirdly normalized lately, so seeing one go the opposite direction is refreshing."
     author: "H.P."
     source: "Reddit"
@@ -101,7 +101,7 @@ observa:
 soon:
   # Curated to the five most specific, most credible quotes.
   # Short praise ("Best looking app ever", "very well done I like it", "love it!")
-  # was deliberately left out — it dilutes the strong, substantive testimonials.
+  # was left out on purpose because it dilutes the substantive testimonials.
   - quote: "The emotional framing is what makes this feel different from the usual countdown apps. Most of them are just timers, but the photo plus weather angle makes the waiting feel attached to a real future moment instead of an abstract number. The anniversary return for past events is also smart, because it turns the app from a one-time utility into something people might keep around after the trip or wedding is over."
     author: "P.S."
     source: "Reddit"
@@ -134,7 +134,7 @@ soon:
 
 chessful:
   # Curated from Reddit messages. Names reduced to initials.
-  # Off-topic parts (feature-request asides, opening pleasantries) trimmed —
+  # Off-topic parts (feature-request asides, opening pleasantries) trimmed;
   # the quote itself is kept verbatim within each kept sentence.
   - quote: "Hey, just wanted to tell you how amazing Chessful has become. I'm actually able to improve on my mistakes — I get to understand both the mistakes and the engine now."
     author: "S."

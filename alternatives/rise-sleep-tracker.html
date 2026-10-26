@@ -14,7 +14,7 @@ seo:
     - rise app night shift
     - shift work sleep app iphone
     - energy app for nurses
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 ---
 
 {%- assign app = site.apps | where: "slug", "aftershift" | first -%}
@@ -46,7 +46,7 @@ last_updated: 2026-10-25
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best alternative to RISE for shift workers?", "acceptedAnswer": { "@type": "Answer", "text": "If your sleep keeps moving because of night, rotating or on-call shifts, AfterShift is built for that case. It measures each gap between your shifts rather than a fixed night, counts daytime sleep and naps from Apple Health toward a Shift Recovery Score, and times caffeine to your next shift. If you keep regular hours and want a sleep-debt and energy forecast, RISE is the more complete app." } },
+    { "@type": "Question", "name": "What is the best alternative to RISE for shift workers?", "acceptedAnswer": { "@type": "Answer", "text": "If your sleep keeps moving because of night, rotating or on-call shifts, AfterShift is built for that case. It measures each gap between your shifts, whenever it falls, counts daytime sleep and naps from Apple Health toward a Shift Recovery Score, and times caffeine to your next shift. If you keep regular hours and want a sleep-debt and energy forecast, RISE is the more complete app." } },
     { "@type": "Question", "name": "Does RISE work for night shifts?", "acceptedAnswer": { "@type": "Answer", "text": "Partly, by its own account. RISE's help centre says it can still help on overnight or changing schedules and that sleep debt tracking, the Smart Alarm and its relaxation tools work on any schedule. It also says the Melatonin Window may not be a reliable bedtime guide if your schedule rotates, and that RISE doesn't record daytime sleep automatically, so you may need to log naps by hand." } },
     { "@type": "Question", "name": "How is AfterShift different from RISE?", "acceptedAnswer": { "@type": "Answer", "text": "RISE predicts your energy peaks and dips from your circadian rhythm and tracks sleep debt against a sleep need it estimates for you. AfterShift starts from your roster: it measures the window between the end of one shift and the start of the next, scores it on sleep amount, continuity and stages with naps included, caps the score when the gap is too short for a full sleep or you are on call, and plans the next sleep window and caffeine cut-off around the shift ahead." } },
     { "@type": "Question", "name": "How much do RISE and AfterShift cost?", "acceptedAnswer": { "@type": "Answer", "text": "RISE Premium is $69.99 a year on the U.S. App Store after a 7-day free trial, and its listing says a subscription or trial is required to access app content. AfterShift is free to download with core sleep and nap tracking, calendar shift import and caffeine reminders; Premium is {P_MONTHLY@aftershift} a month, {P_YEARLY@aftershift} a year, or {P_LIFETIME@aftershift} once for lifetime." } },
@@ -61,7 +61,7 @@ last_updated: 2026-10-25
     <p class="overline">Sleep debt · Energy · Shift-aware recovery</p>
     <h1 class="h1">Looking for a<br><span class="gradient-text">RISE alternative for shift work?</span></h1>
     <p class="lead">
-      RISE is one of the most popular sleep apps on the App Store, and for people who sleep at roughly the same time each night its sleep-debt and energy forecasts are genuinely useful. Shift work is where it gets harder, and RISE says so itself. AfterShift starts from your roster instead of the clock: it scores each gap between shifts, counts daytime sleep and naps, and times caffeine to your next start.
+      RISE is one of the most popular sleep apps on the App Store, and for people who sleep at roughly the same time each night its sleep-debt and energy forecasts are useful. It has a harder time with shift work, and RISE says so itself. AfterShift starts from your roster: it scores each gap between shifts, counts daytime sleep and naps, and times caffeine to your next start.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/aftershift/">See AfterShift</a>
@@ -74,7 +74,7 @@ last_updated: 2026-10-25
 
 <section id="compare" class="section reveal">
   <h2 class="h2">How does AfterShift compare to RISE?</h2>
-  <p class="lead">RISE is a general sleep and energy app; AfterShift is a narrow tool for one kind of schedule. Here is where that matters.</p>
+  <p class="lead">RISE is a general sleep and energy app; AfterShift is a narrow tool for one kind of schedule.</p>
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">What a day looks like to the app</div>
@@ -86,7 +86,7 @@ last_updated: 2026-10-25
     </div>
     <div class="card">
       <div class="card-title">Sleep debt and energy</div>
-      <div class="card-text"><strong>AfterShift:</strong> A sleep-debt trend per shift cycle (building, stable, recovering) and a recovery score before each shift. No energy forecast.<br><br><strong>RISE:</strong> Its signature features: sleep debt against a sleep need it estimates for you, and an energy schedule predicting your daily peaks and dips. RISE says sleep debt tracking works on any schedule.</div>
+      <div class="card-text"><strong>AfterShift:</strong> A sleep-debt trend per shift cycle (building, stable, recovering) and a recovery score before each shift. No energy forecast.<br><br><strong>RISE:</strong> Its best-known features are sleep debt against a sleep need it estimates for you, and an energy schedule predicting your daily peaks and dips. RISE says sleep debt tracking works on any schedule.</div>
     </div>
     <div class="card">
       <div class="card-title">Caffeine</div>
@@ -104,8 +104,8 @@ last_updated: 2026-10-25
 </section>
 
 <section class="section reveal">
-  <h2 class="h2">AfterShift vs RISE — feature-by-feature</h2>
-  <p class="lead">At a glance, as listed on the U.S. App Store and each developer's site in October 2026.</p>
+  <h2 class="h2">AfterShift vs RISE, feature by feature</h2>
+  <p class="lead">As listed on the U.S. App Store and each developer's site in October 2026.</p>
   <div class="card" style="overflow-x:auto;padding:0;">
     <table class="compare-matrix" style="width:100%;border-collapse:collapse;font-size:var(--text-sm);">
       <thead>
@@ -140,7 +140,7 @@ last_updated: 2026-10-25
       <div class="card-title">Pick AfterShift if…</div>
       <ul class="bullets">
         <li>You work nights, rotations or on-call, and your main sleep often happens in daylight</li>
-        <li>You want naps counted as recovery, not logged as an afterthought</li>
+        <li>You want naps to count toward your recovery</li>
         <li>You want caffeine timing tied to your next shift</li>
         <li>You want a free tier, no account and no tracking</li>
       </ul>
@@ -169,7 +169,7 @@ last_updated: 2026-10-25
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>What is the best alternative to RISE for shift workers?</summary><div class="faq-a">If your sleep keeps moving because of night, rotating or on-call shifts, AfterShift is built for that case. It measures each gap between your shifts rather than a fixed night, counts daytime sleep and naps from Apple Health toward a Shift Recovery Score, and times caffeine to your next shift. If you keep regular hours and want a sleep-debt and energy forecast, RISE is the more complete app.</div></details>
+    <details class="faq-item" open><summary>What is the best alternative to RISE for shift workers?</summary><div class="faq-a">If your sleep keeps moving because of night, rotating or on-call shifts, AfterShift is built for that case. It measures each gap between your shifts, whenever it falls, counts daytime sleep and naps from Apple Health toward a Shift Recovery Score, and times caffeine to your next shift. If you keep regular hours and want a sleep-debt and energy forecast, RISE is the more complete app.</div></details>
     <details class="faq-item"><summary>Does RISE work for night shifts?</summary><div class="faq-a">Partly, by its own account. RISE's help centre says it can still help on overnight or changing schedules and that sleep debt tracking, the Smart Alarm and its relaxation tools work on any schedule. It also says the Melatonin Window may not be a reliable bedtime guide if your schedule rotates, and that RISE doesn't record daytime sleep automatically, so you may need to log naps by hand.</div></details>
     <details class="faq-item"><summary>How is AfterShift different from RISE?</summary><div class="faq-a">RISE predicts your energy peaks and dips from your circadian rhythm and tracks sleep debt against a sleep need it estimates for you. AfterShift starts from your roster: it measures the window between the end of one shift and the start of the next, scores it on sleep amount, continuity and stages with naps included, caps the score when the gap is too short for a full sleep or you are on call, and plans the next sleep window and caffeine cut-off around the shift ahead.</div></details>
     <details class="faq-item"><summary>How much do RISE and AfterShift cost?</summary><div class="faq-a">RISE Premium is $69.99 a year on the U.S. App Store after a 7-day free trial, and its listing says a subscription or trial is required to access app content. AfterShift is free to download with core sleep and nap tracking, calendar shift import and caffeine reminders; Premium is {P_MONTHLY@aftershift} a month, {P_YEARLY@aftershift} a year, or {P_LIFETIME@aftershift} once for lifetime.</div></details>
@@ -181,7 +181,7 @@ last_updated: 2026-10-25
 <section class="cta-section reveal">
   <p class="overline">Try it</p>
   <h2 class="h2">Open AfterShift.</h2>
-  <p class="lead">Recovery measured between your shifts, not against a 9-to-5 night. Daytime sleep and naps counted. No account, no tracking.</p>
+  <p class="lead">AfterShift measures recovery between your shifts and counts daytime sleep and naps. It has no account and no tracking.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/aftershift/">Learn about AfterShift</a>
   </div>

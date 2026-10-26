@@ -34,9 +34,10 @@ mentioned_apps:
   - xiangqiful
 read_time: "7 min read"
 excerpt: "A chess player's guide to xiangqi rules: the board and palace, every piece beside its chess cousin with its catch, and the rules that reverse a chess habit: stalemate loses, the generals may not face each other, perpetual check loses, and the cannon needs a screen."
+last_updated: 2026-10-26
 ---
 
-A chess player who sits down at a xiangqi board recognises most of it within a minute. There are two armies, a king-like piece to trap, a rook and a knight. The rules that are different are few, but most of them reverse a chess habit, and those are the ones that cost games. This is the full list, with the board first and the reasoning after.
+A chess player who sits down at a xiangqi board recognises most of it within a minute. There are two armies, a king-like piece to trap, a rook and a knight. Only a few rules differ, but most of them reverse a chess habit, and those are the ones that cost games. Below is the full list, with the board first and the reasoning after.
 
 ## The board
 
@@ -50,7 +51,7 @@ A chess player who sits down at a xiangqi board recognises most of it within a m
 
 | Piece | Red / Black | WXF letter | Chess cousin | How it moves | The catch | Rough value |
 |---|---|---|---|---|---|---|
-| General | 帥 / 將 | K | King | One point orthogonally | Never leaves the palace and never moves diagonally | — |
+| General | 帥 / 將 | K | King | One point orthogonally | Never leaves the palace and never moves diagonally | n/a |
 | Advisor | 仕 / 士 | A | None | One point diagonally | Never leaves the palace, so it has five points in all | 2 |
 | Elephant | 相 / 象 | E | Bishop, loosely | Exactly two points diagonally | Blocked if the point in between is occupied; never crosses the river | 2 |
 | Horse | 傌 / 馬 | H | Knight | One point straight, then one diagonally outward | Does not jump: a piece on the first point blocks it | 4 |
@@ -64,11 +65,11 @@ The values are the rough table given on Wikipedia, which rates horse and cannon 
 
 ### Stalemate is a loss, not a draw
 
-A player with no legal move loses, in check or not. The Chinese term is 困毙 (*kùnbì*). For a chess player it is the most expensive habit to unlearn. Steering a lost position toward stalemate hands your opponent the win. It works the other way too: boxing in the enemy general without checking it is a real way to win. It is also a reason to keep an escape point for your own general.
+A player with no legal move loses, in check or not. The Chinese term is 困毙 (*kùnbì*). For a chess player it is the most expensive habit to unlearn, because steering a lost position toward stalemate hands your opponent the win. It works the other way too: boxing in the enemy general without checking it is a real way to win, and a reason to keep an escape point for your own general.
 
 ### The generals may never face each other
 
-If the two generals stand on the same file with nothing between them, the position is illegal. A move that would create it cannot be played, as if the general could fly down the file and capture. Two things follow. A piece standing between the generals is pinned to that file, whatever it is. And in the endgame your general controls its whole open file, so it can take escape points away from the enemy general from the far end of the board. Many basic mates use your own general this way.
+If the two generals stand on the same file with nothing between them, the position is illegal. A move that would create it cannot be played, as if the general could fly down the file and capture. Two things follow. A piece standing between the generals is pinned to that file, whatever it is, and in the endgame your general controls its whole open file, so it can take escape points away from the enemy general from the far end of the board. Many basic mates use your own general this way.
 
 ### Perpetual check loses
 
@@ -96,11 +97,11 @@ Advisors stay in the palace and elephants stay on their own side of the river. N
 
 ## How Xiangqiful handles the rules
 
-[Xiangqiful](/apps/xiangqiful/) enforces checkmate and stalemate as wins. For repetition it uses a simplified rule. If a position occurs three times and one side gave check on every one of its moves in the cycle, that side loses. If both sides were checking, or neither was, the game is drawn. Sixty moves without a capture is also a draw. Perpetual chasing is not adjudicated, so the app is stricter than chess and simpler than a tournament arbiter.
+[Xiangqiful](/apps/xiangqiful/) enforces checkmate and stalemate as wins. For repetition it uses a simplified rule. If a position occurs three times and one side gave check on every one of its moves in the cycle, that side loses. If both sides were checking, or neither was, the game is drawn. Sixty moves without a capture is also a draw. The app does not adjudicate perpetual chasing, so it is stricter than chess and simpler than a tournament arbiter.
 
 The first time stalemate or a perpetual check decides one of your games, the game-over sheet explains the rule that just applied ("In xiangqi, having no move loses" and "Checking forever loses"). Each explanation appears once, in the first game that rule decides.
 
-The Fundamentals track teaches the same list in ten lessons, among them "The Cannon and Its Screen", "The Horse and Its Leg", "Stalemate — the Chess Player's Trap" and "Perpetual Check Loses". Each one is a short explanation, a demonstration or a puzzle, and a quiz. All 80 lessons in the app are free. On the board, tapping a piece marks the points it can legally reach. Tap a cannon and the board also marks the screen it would jump over, which is the board's answer to the question "how did that cannon reach me?"
+The Fundamentals track teaches the same list in ten lessons, among them "The Cannon and Its Screen", "The Horse and Its Leg", "Stalemate - the Chess Player's Trap" and "Perpetual Check Loses". Each one is a short explanation, a demonstration or a puzzle, and a quiz. All 80 lessons in the app are free. On the board, tapping a piece marks the points it can legally reach. Tap a cannon and the board also marks the screen it would jump over, which is the board's answer to the question "how did that cannon reach me?"
 
 The pieces come in three sets: traditional characters, western symbols, or a hybrid with the symbol on the character, so you can learn the rules before you learn to read 傌 and 炮. After a game, Pikafish reviews every move on your device, and Game Review names mistakes in these terms, such as a screenless cannon or a trapped horse. When you are ready for xiangqi's own puzzle form, every move must give check, and stalemate does not count as mate; [the post on Xiangqiful's 902 mate problems](/journal/xiangqi-mate-problems-from-classical-manuals/) explains where they come from.
 

@@ -15,7 +15,7 @@ seo:
     - bishop exchange shogi
     - yagura opening
     - shogi joseki
-lede: "A chess player can learn a few first moves and get by. Shogi asks a bigger question first: where is your rook going to live? Every shogi opening answers it one of two ways, and the answer decides your castle, your attack and the kind of game you will play. Here is the map, two lines written out move by move, and a way to pick your first opening."
+lede: "A chess player can learn a few first moves and get by. Shogi asks a bigger question first: where is your rook going to live? Every shogi opening answers it one of two ways, and the answer decides your castle, your attack and the kind of game you will play. This post maps the openings, writes out two lines move by move, and suggests how to pick your first one."
 quick_answer: "Every shogi opening starts with one decision: where the rook goes. In a Static Rook (居飛車, ibisha) opening the rook stays on its starting file, 2h for Black, and the attack comes up that file while the king castles on the left, usually in a Yagura, Boat or Anaguma castle. In a Ranging Rook (振り飛車, furibisha) opening the rook moves to the fifth, sixth, seventh or eighth file and the king castles on the right, usually in a Mino castle. In both, king and rook end up on opposite sides of the board. The main Static Rook systems are Yagura, Bishop Exchange, Side Pawn Capture and Double Wing Attack. The main Ranging Rook systems are Central Rook, Fourth File Rook, Third File Rook and Opposing Rook. A beginner should pick one family and learn its castle and its main attacking plan before anything else. Fourth File Rook with a Mino castle (castle first, then open the sixth file) and Static Rook with Climbing Silver (march the right silver up the second file) are the two shortest plans to learn."
 faq:
   - q: "What is the difference between Static Rook and Ranging Rook in shogi?"
@@ -34,6 +34,7 @@ mentioned_apps:
   - shogiful
 read_time: "8 min read"
 excerpt: "Every shogi opening answers one question first: where does the rook live? This beginner's map covers Static Rook against Ranging Rook, the main systems and the castles that go with them, the Fourth File Rook and Bishop Exchange written out move by move, and how to choose a first opening."
+last_updated: 2026-10-26
 ---
 
 Every shogi opening starts with one decision: does your rook stay where it started, or does it move across the board? Shogi players call the two answers **Static Rook** (居飛車, *ibisha*) and **Ranging Rook** (振り飛車, *furibisha*), and nearly every named opening belongs to one of them. Once you know which family you are in, you know roughly where your king will castle and which file your attack will come down.
@@ -65,7 +66,7 @@ Each player chooses separately, so there are three kinds of game: Double Static 
 | Third File Rook | 三間飛車, sangenbisha | Ranging Rook | R-7h (R-3b for Gote) | Mino |
 | Opposing Rook | 向かい飛車, mukaibisha | Ranging Rook | R-8h, facing the opponent's rook (R-2b for Gote) | Mino |
 
-The Ranging Rook names count files from Gote's side, which is why Black's Fourth File Rook sits on the sixth file ([Wikipedia's Ranging Rook page](https://en.wikipedia.org/wiki/Ranging_Rook) has the full list). Two more names you will meet early are attacking methods rather than openings. **Climbing Silver** (棒銀, *bōgin*) walks the right silver up the rook's file, S-3h, S-2g, S-2f, S-2e, to support a break on the second file. **Right Fourth File Rook** (右四間飛車) moves the rook to 4h to hit the opponent's fourth file, and still counts as Static Rook.
+The Ranging Rook names count files from Gote's side, which is why Black's Fourth File Rook sits on the sixth file ([Wikipedia's Ranging Rook page](https://en.wikipedia.org/wiki/Ranging_Rook) has the full list). You will also meet two names early that are attacking methods, not openings. **Climbing Silver** (棒銀, *bōgin*) walks the right silver up the rook's file, S-3h, S-2g, S-2f, S-2e, to support a break on the second file. **Right Fourth File Rook** (右四間飛車) moves the rook to 4h to hit the opponent's fourth file, and still counts as Static Rook.
 
 ## Two lines, move by move
 
@@ -77,8 +78,8 @@ Black plays Ranging Rook from move one:
 
 - **3. B-7g** comes before the king walks. Gote's rook pawn on 8e wants P-8f, and from 7g the bishop covers 8f, so that exchange never works. Walk the king first and P-8f opens the eighth file straight into your camp.
 - **4. R-6h** puts the rook behind the pawn on 6f. From here rook and pawn work as one unit: every quiet move that follows prepares P-6e.
-- **5–8.** The king walks to 2h and the right silver steps to 3h. King 2h, silver 3h, golds 4i and 5h is the [Mino castle](https://en.wikipedia.org/wiki/Mino_castle), and it is nearly finished before the first exchange.
-- **9. P-6e** is the break the setup was built for. If Gote does not take, Px6d wins a pawn; after Px6e Rx6e the rook stands on the fifth rank with a pawn in hand.
+- **5 to 8.** The king walks to 2h and the right silver steps to 3h. King 2h, silver 3h, golds 4i and 5h is the [Mino castle](https://en.wikipedia.org/wiki/Mino_castle), and it is nearly finished before the first exchange.
+- **9. P-6e** is the break the whole setup prepares. If Gote does not take, Px6d wins a pawn; after Px6e Rx6e the rook stands on the fifth rank with a pawn in hand.
 - **11. G6i-5h** completes the Mino.
 
 The plan fits in one sentence: castle on the right, then open the file your rook is standing on.

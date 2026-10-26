@@ -119,7 +119,7 @@ layout: default
 
   {% if page.mentioned_apps %}
   <section class="section reveal">
-    <div class="section-center"><p class="overline">Mentioned in this post</p><h2 class="h2">Apps in this story</h2></div>
+    <div class="section-center"><p class="overline">Mentioned in this post</p><h2 class="h2">Apps in this post</h2></div>
     {%- assign mentioned = '' | split: '' -%}
     {%- for slug in page.mentioned_apps -%}
       {%- assign m = site.apps | where: "slug", slug | first -%}
@@ -135,7 +135,7 @@ layout: default
 
   <section class="cta-section reveal">
     <p class="overline">More from the journal</p>
-    <h2 class="h2">Keep reading.</h2>
+    <h2 class="h2">Read another post</h2>
     <div class="actions">
       <a class="btn btn-primary" href="/journal/">All journal posts</a>
       <a class="btn btn-secondary" href="/apps/">Browse apps</a>

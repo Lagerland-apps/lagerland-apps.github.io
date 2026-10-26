@@ -3,10 +3,10 @@ layout: journal
 slug: when-to-deload
 title: "When to deload: the signs, the common schemes, and how good the evidence really is"
 date: 2026-10-14
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 seo:
   title: "When to Deload: Signs, Schemes and How Often"
-  description: "When to deload from lifting: the signs, how often athletes do it (about every 5–6 weeks), what to cut, and what deload research does and doesn't show."
+  description: "When to deload from lifting: the signs, how often athletes do it (about every 5 to 6 weeks), what to cut, and what deload research does and doesn't show."
   keywords:
     - when to deload
     - deload week
@@ -16,7 +16,7 @@ seo:
     - deload volume vs intensity
     - deload weightlifting
     - gymlogger x
-lede: "A deload is the week most lifters plan and few can explain. Everyone agrees you take one; the arguments are about when, what you cut, and whether it does anything at all. The honest state of the evidence is a consensus of coaches, a large survey of athletes and a small number of controlled trials. That is enough to give practical answers, as long as you know which kind of answer you are getting."
+lede: "A deload is the week most lifters plan and few can explain. Everyone agrees you take one; the arguments are about when, what you cut, and whether it does anything at all. The evidence so far is a consensus of coaches, a large survey of athletes and a small number of controlled trials. That is enough for practical answers, as long as you know which kind of answer you are getting."
 quick_answer: "Deload when your program schedules it, or when two or more of these line up: performance stalls across several lifts, joints and muscles feel beaten up, your usual weights rate harder than normal, or outside stress is high. Most strength and physique athletes in a 2024 survey of 246 competitors deloaded for about 6 days every 5 to 6 weeks, and coaches commonly plan one every 4 to 8 weeks. The usual deload keeps the same exercises and training days but cuts the number of sets, uses lighter loads and stops further from failure. The evidence is mostly expert consensus and survey data; the few controlled trials found deloads did not hurt muscle growth, while one found a full week off cost some lower-body strength."
 excerpt: "What a deload is by expert consensus, the signs that it is time for one, the common ways to run it (volume, intensity, effort, a week off), how often athletes actually deload, what the controlled trials found, and how GymLogger X schedules deload weeks and treats them in its plateau rule."
 faq:
@@ -27,7 +27,7 @@ faq:
   - q: "Should a deload reduce volume or intensity?"
     a: "Volume first. Reducing volume was the one point every coach in the 2023 Delphi panel agreed on. In the 2024 survey, 78.9% of athletes cut their weekly sets during a deload, 83.7% lowered the load on multi-joint lifts and 84.9% trained further from failure, while 63.0% kept the same number of sessions per week. Most deloads in practice cut all three a little rather than one a lot."
   - q: "Is a deload week necessary?"
-    a: "Not proven. In the 2024 survey, 65.0% of athletes said they felt they could progress without deloading. In Coleman and colleagues' 2024 trial, trained lifters who took a full week off in the middle of a 9-week program gained about as much muscle as those who trained straight through, but somewhat less lower-body strength. A 2026 trial in untrained men found that cutting sets and frequency in weeks 4 and 8 did not hinder muscle growth or 10-rep strength. A deload is a reasonable tool for managing fatigue, not a requirement."
+    a: "Not proven. In the 2024 survey, 65.0% of athletes said they felt they could progress without deloading. In Coleman and colleagues' 2024 trial, trained lifters who took a full week off in the middle of a 9-week program gained about as much muscle as those who trained straight through, but somewhat less lower-body strength. A 2026 trial in untrained men found that cutting sets and frequency in weeks 4 and 8 did not hinder muscle growth or 10-rep strength. A deload is a reasonable tool for managing fatigue, but nobody has shown you need one."
   - q: "How long should a deload last?"
     a: "About a week. The 2024 survey put the typical deload at 6.4 days, with a range of 1 to 14. The Delphi paper's background describes deloads as usually lasting around seven days, sometimes as short as a single session or as long as two weeks."
   - q: "How does GymLogger X handle deloads?"
@@ -43,7 +43,7 @@ A deload is a short, planned stretch of easier training, usually about a week, t
 2. Lighter loads, especially on the big multi-joint lifts.
 3. More reps in reserve: you stop each set further from failure.
 
-When to take one is the harder question. Here is what the research and the people who coach for a living say.
+When to take one is the harder question, and the research and the people who coach for a living answer it below.
 
 ## What is a deload, by definition?
 

@@ -1,10 +1,10 @@
 {%- comment %}
   Cross-promo: picks up to 3 OTHER live apps.
   Priority:
-    1. Explicit `related_apps:` list (array of slugs) in frontmatter — used first,
-       in order. Lets pages curate audience-adjacent recommendations across
-       categories (e.g. Mockly → AppMeta + AppMeta Pulse: same
-       indie-developer audience, different category).
+    1. Explicit `related_apps:` list (array of slugs) in frontmatter, used first
+       and in order. Lets a page pick apps for the same audience from another
+       category (e.g. Mockly → AppMeta + AppMeta Pulse: same indie-developer
+       audience, different category).
     2. Same-category apps (excluding current).
     3. Any other live apps to fill to 3.
   Usage: {% include you-might-like.html app=page %}
@@ -56,7 +56,7 @@
 <section class="section--lg reveal">
   <div class="section-center">
     <h2 class="h2">You might also like</h2>
-    <p class="lead">Other calm, privacy-first apps from the same independent developer.</p>
+    <p class="lead">More privacy-first apps from the same independent developer.</p>
   </div>
   <div class="grid grid-2 stagger">
     {%- for app in related -%}

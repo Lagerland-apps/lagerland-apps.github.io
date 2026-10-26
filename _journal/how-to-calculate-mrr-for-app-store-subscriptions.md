@@ -3,7 +3,7 @@ layout: journal
 slug: how-to-calculate-mrr-for-app-store-subscriptions
 title: "How to calculate MRR for App Store subscriptions from Apple's Subscription report"
 date: 2026-06-27
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 seo:
   title: "How to Calculate MRR for App Store Subscriptions"
   description: "Calculate MRR for App Store subscriptions from Apple's Subscription report: the formula, the divisor for each plan length, which counts to use, and why."
@@ -83,7 +83,7 @@ Made-up numbers for an app with a monthly plan and an annual plan, from one day'
 | Monthly | 1 Month | 3.49 | 120 | 3.49 × 120 ÷ 1 | 418.80 |
 | Annual, first year | 1 Year | 20.99 | 300 | 20.99 × 300 ÷ 12 | 524.75 |
 | Annual, Rate After One Year | 1 Year | 25.49 | 80 | 25.49 × 80 ÷ 12 | 169.93 |
-| Annual, free trial (45 active) | 1 Year | — | 0 | not counted | 0.00 |
+| Annual, free trial (45 active) | 1 Year | n/a | 0 | not counted | 0.00 |
 | **Total** | | | | | **1,113.48 USD** |
 
 The 380 annual subscribers contribute more MRR than the 120 monthly ones, yet in a sales report they appear only as lumps on their renewal days. That gap is the reason MRR exists.

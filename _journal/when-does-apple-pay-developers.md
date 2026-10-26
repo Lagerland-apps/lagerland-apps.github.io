@@ -3,7 +3,7 @@ layout: journal
 slug: when-does-apple-pay-developers
 title: "When does Apple pay developers? The App Store fiscal calendar, payment dates and missing months"
 date: 2026-10-17
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 seo:
   title: "When Does Apple Pay Developers? Fiscal Calendar Explained"
   description: "Apple pays App Store proceeds within 45 days of each fiscal month's end. The fiscal calendar, 2026 payment dates, thresholds, currency, and missing months."
@@ -60,20 +60,20 @@ Apple's help pages link to the official calendar inside App Store Connect, which
 
 | Fiscal month | Sales period | Payment |
 |---|---|---|
-| November 2025 | Nov 2 – Nov 29, 2025 | Fri, Jan 2, 2026 |
-| December 2025 | Nov 30 – Dec 27, 2025 | Thu, Jan 29 |
-| January 2026 (5 weeks) | Dec 28, 2025 – Jan 31 | Thu, Mar 5 |
-| February 2026 | Feb 1 – Feb 28 | Thu, Apr 2 |
-| March 2026 | Mar 1 – Mar 28 | Thu, Apr 30 |
-| April 2026 (5 weeks) | Mar 29 – May 2 | Thu, Jun 4 |
-| May 2026 | May 3 – May 30 | Thu, Jul 2 |
-| June 2026 | May 31 – Jun 27 | Thu, Jul 30 |
-| July 2026 (5 weeks) | Jun 28 – Aug 1 | Thu, Sep 3 |
-| August 2026 | Aug 2 – Aug 29 | Thu, Oct 1 |
-| September 2026 | Aug 30 – Sep 26 | Thu, Oct 29 (expected) |
-| October 2026 (5 weeks) | Sep 27 – Oct 31 | Thu, Dec 3 (expected) |
+| November 2025 | Nov 2 to Nov 29, 2025 | Fri, Jan 2, 2026 |
+| December 2025 | Nov 30 to Dec 27, 2025 | Thu, Jan 29 |
+| January 2026 (5 weeks) | Dec 28, 2025 to Jan 31 | Thu, Mar 5 |
+| February 2026 | Feb 1 to Feb 28 | Thu, Apr 2 |
+| March 2026 | Mar 1 to Mar 28 | Thu, Apr 30 |
+| April 2026 (5 weeks) | Mar 29 to May 2 | Thu, Jun 4 |
+| May 2026 | May 3 to May 30 | Thu, Jul 2 |
+| June 2026 | May 31 to Jun 27 | Thu, Jul 30 |
+| July 2026 (5 weeks) | Jun 28 to Aug 1 | Thu, Sep 3 |
+| August 2026 | Aug 2 to Aug 29 | Thu, Oct 1 |
+| September 2026 | Aug 30 to Sep 26 | Thu, Oct 29 (expected) |
+| October 2026 (5 weeks) | Sep 27 to Oct 31 | Thu, Dec 3 (expected) |
 
-The pattern is 33 days from the Saturday a fiscal month ends to a Thursday payment, with New Year's Day pushing one payment to a Friday. That sits inside Apple's 45-day promise, but the promise is the 45 days, not the Thursday. Treat the last two rows as estimates until Payments and Financial Reports shows an expected payment date.
+The pattern is 33 days from the Saturday a fiscal month ends to a Thursday payment, with New Year's Day pushing one payment to a Friday. That sits inside Apple's 45-day promise, but Apple only promises the 45 days. The Thursday is only the pattern so far. Treat the last two rows as estimates until Payments and Financial Reports shows an expected payment date.
 
 A fiscal month can also carry a calendar month's name while starting in the previous one. Fiscal January 2026 began on December 28, 2025, so a purchase on December 30 sits in a January financial report. Sales and Trends, which uses calendar days in Pacific Time, files the same purchase under December.
 

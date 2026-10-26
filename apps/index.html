@@ -2,8 +2,8 @@
 layout: default
 title: Apps
 seo:
-  title: "All Apps — Privacy-First iOS & macOS Apps by Lagerland Apps"
-  description: "The full Lagerland Apps catalogue: privacy-first iPhone, iPad, Apple Watch & Mac apps for health, productivity, finance, and dev tools. No tracking, no ads."
+  title: "All Apps: Privacy-First iOS & macOS Apps by Lagerland Apps"
+  description: "The full Lagerland Apps catalogue: privacy-first iPhone, iPad, Apple Watch & Mac apps for health, productivity, finance, and dev tools. No tracking or ads."
   keywords:
     - privacy-first iOS apps list
     - best no-tracking iPhone apps
@@ -38,7 +38,7 @@ last_updated: 2026-10-26
   },
   "mainEntity": {
     "@type": "ItemList",
-    "name": "Lagerland Apps — full catalogue",
+    "name": "Lagerland Apps: full catalogue",
     "numberOfItems": {{ live_apps.size }},
     "itemListElement": [
       {%- for app in live_apps -%}
@@ -59,7 +59,7 @@ last_updated: 2026-10-26
   <div class="hero-left reveal">
     <p class="overline">{{ site.data.catalog.meta.live_app_count }} apps · {{ "" }}7 categories · 100% privacy-first</p>
     <h1 class="h1">All apps for <span class="gradient-text">iPhone, iPad, and Mac.</span></h1>
-    <p class="lead">Every app in the Lagerland Apps catalogue — grouped by the problem it solves. No tracking, no ads, no accounts. Built and shipped by one independent Apple developer.</p>
+    <p class="lead">Every app in the Lagerland Apps catalogue, grouped by the problem it solves. None of them track you, show ads, or need an account, and one independent Apple developer builds and ships all of them.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#health">Start browsing</a>
       <a class="btn btn-secondary" href="/#faq">How it works</a>
@@ -76,7 +76,7 @@ last_updated: 2026-10-26
   {%- if cluster_apps.size > 0 -%}
     <div id="health" class="section reveal">
       <h2 class="h2">Health, sleep &amp; recovery apps</h2>
-      <p class="lead">Understand your body, sleep, and workouts — without handing health data to advertisers. Ideal for Apple Health power users, shift workers, and anyone tracking recovery over vanity metrics.</p>
+      <p class="lead">Apps for understanding your body, sleep, and workouts without handing health data to advertisers. They suit Apple Health power users, shift workers, and anyone who tracks recovery ahead of vanity metrics.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -90,7 +90,7 @@ last_updated: 2026-10-26
   {%- if cluster_apps.size > 0 -%}
     <div id="plan" class="section reveal">
       <h2 class="h2">Planners &amp; life-event apps</h2>
-      <p class="lead">Daily planners, countdown apps, and calm productivity tools. All local, all private, all designed to reduce overwhelm instead of adding to it.</p>
+      <p class="lead">Daily planners, countdown apps, and calm productivity tools. Each keeps your data local and private and tries to make the day feel less crowded.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -102,7 +102,7 @@ last_updated: 2026-10-26
   {%- if cluster_apps.size > 0 -%}
     <div id="money" class="section reveal">
       <h2 class="h2">Money, bills &amp; subscriptions</h2>
-      <p class="lead">Track bills, split shared expenses, and never miss a due date. Your financial data stays on your device — no cloud sync to a third party, no account required.</p>
+      <p class="lead">Track bills, split shared expenses, and see due dates before they pass. Your financial data stays on your device, with no account and no cloud sync to a third party.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -116,7 +116,7 @@ last_updated: 2026-10-26
   {%- if cluster_apps.size > 0 -%}
     <div id="developer" class="section reveal">
       <h2 class="h2">Developer tools for Apple platforms</h2>
-      <p class="lead">Native macOS and iOS apps for App Store Connect workflows — metadata editing, revenue monitoring, and localised screenshot generation. Built by an indie iOS dev, for indie iOS devs.</p>
+      <p class="lead">Native macOS and iOS apps for App Store Connect work: metadata editing, revenue monitoring, and localised screenshot generation. An indie iOS developer made them for other indie iOS developers.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -130,7 +130,7 @@ last_updated: 2026-10-26
   {%- if cluster_apps.size > 0 -%}
     <div id="reading" class="section reveal">
       <h2 class="h2">Reading &amp; discovery apps</h2>
-      <p class="lead">Rediscover long-form reading and Wikipedia on your own terms. Calm, feed-free, offline-ready.</p>
+      <p class="lead">Long-form reading and Wikipedia on your own terms, in calm apps with no feed that also work offline.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -141,8 +141,8 @@ last_updated: 2026-10-26
   {%- assign cluster_apps = live_apps | where: "category", "games" -%}
   {%- if cluster_apps.size > 0 -%}
     <div id="games" class="section reveal">
-      <h2 class="h2">Premium games — no ads, no lives, no dark patterns</h2>
-      <p class="lead">Puzzle and board games built for attention, not engagement metrics. No energy timers, no forced ads, no fake urgency.</p>
+      <h2 class="h2">Premium games without ads, lives, or dark patterns</h2>
+      <p class="lead">Puzzle and board games made for focused play. They have no energy timers, forced ads, or fake urgency to push engagement numbers.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -154,7 +154,7 @@ last_updated: 2026-10-26
   {%- if cluster_apps.size > 0 -%}
     <div id="utilities" class="section reveal">
       <h2 class="h2">Utilities &amp; file conversion</h2>
-      <p class="lead">Local-first file conversion and utility apps for Mac. Files never leave your device — no uploads to web tools, no quota, no privacy trade-offs.</p>
+      <p class="lead">Local-first file conversion and utility apps for Mac. Files never leave your device, so nothing goes to a web tool and there is no quota.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -165,8 +165,8 @@ last_updated: 2026-10-26
 
 <section class="cta-section reveal">
   <p class="overline">New to Lagerland Apps?</p>
-  <h2 class="h2">Start with the flagship.</h2>
-  <p class="lead">Observa is our most-installed app — a private Apple Health insights companion that turns your existing data into plain-language answers.</p>
+  <h2 class="h2">Start with Observa</h2>
+  <p class="lead">Observa is our most-installed app: a private Apple Health insights companion that turns your existing data into plain-language answers.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/observa/">Learn about Observa</a>
     <a class="btn btn-secondary" href="/lagerland-apps/">About the developer</a>

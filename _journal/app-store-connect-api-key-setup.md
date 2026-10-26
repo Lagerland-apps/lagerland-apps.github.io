@@ -28,14 +28,15 @@ faq:
   - q: "Which role should an App Store Connect API key have?"
     a: "The least that covers the tool's job. You can't change a key's role later, so decide before you click Generate. Per Apple's permissions table, App Manager can create versions, edit App Store details, submit apps and manage TestFlight, In-App Purchases and Game Center, but can't reply to customer reviews or view Sales and Trends. Sales and Finance can read reports but not edit metadata. Admin can do all of it, and Apple notes that a key with the Admin role can also create and delete users."
   - q: "How long does an App Store Connect API token last?"
-    a: "For most requests, at most 20 minutes. Apple rejects tokens whose lifetime, exp minus iat, is longer than that, except for a short list of read-only resources that accept scoped tokens for up to six months. Apple also recommends reusing a signed token for many requests until it expires rather than signing a new one for each request."
+    a: "For most requests, at most 20 minutes. Apple rejects tokens whose lifetime, exp minus iat, is longer than that, except for a short list of read-only resources that accept scoped tokens for up to six months. Apple also recommends reusing one signed token for many requests until it expires, instead of signing a new token for each request."
 mentioned_apps:
   - appmeta
 read_time: "7 min read"
 excerpt: "A step-by-step reference for App Store Connect API keys: requesting access, team keys versus individual keys, which role to choose, where the Issuer ID and Key ID live, why the .p8 downloads only once, how to store and revoke a key, and what the JWT signed with it contains."
+last_updated: 2026-10-26
 ---
 
-An App Store Connect API key is a key pair. Apple keeps the public half; you download the private half as a `.p8` file and use it to sign the short-lived tokens that every API request carries. Here is everything a tool will ask you for, and where it lives.
+An App Store Connect API key is a key pair. Apple keeps the public half; you download the private half as a `.p8` file and use it to sign the short-lived tokens that every API request carries. A tool will ask you for four things, listed below with where each one lives.
 
 ## What does a tool need from you?
 
@@ -46,11 +47,11 @@ An App Store Connect API key is a key pair. Apple keeps the public half; you dow
 | Private key (.p8) | The private half of the key pair, a small text file | Download API Key link, available a single time |
 | Role | What the key is allowed to do | Chosen under Access when you generate the key, fixed after that |
 
-The `.p8` file is a PEM text file that begins with `-----BEGIN PRIVATE KEY-----`. If a tool complains that your key is the wrong format and the file says `BEGIN EC PRIVATE KEY`, you probably have a key made with OpenSSL rather than one downloaded from App Store Connect.
+The `.p8` file is a PEM text file that begins with `-----BEGIN PRIVATE KEY-----`. If a tool complains that your key is the wrong format and the file says `BEGIN EC PRIVATE KEY`, you probably have a key made with OpenSSL, not one downloaded from App Store Connect.
 
 ## Team key or individual key?
 
-Apple offers two kinds. The difference matters more than the setup steps.
+Apple offers two kinds, and picking the wrong one causes more trouble than any of the setup steps.
 
 | | Team key | Individual key |
 |---|---|---|
@@ -127,7 +128,7 @@ A token App Store Connect won't accept usually comes back as 401 with the code `
 
 ## How AppMeta uses your key
 
-[AppMeta](/apps/appmeta/), the Mac client for App Store Connect I [wrote about in February](/journal/native-mac-client-for-app-store-connect/), takes a team key: it asks for the Issuer ID, the Key ID and the `.p8` file, so individual keys, which have no Issuer ID, don't fit it. Before it saves anything it signs a token and asks App Store Connect for your app list, so a mismatched ID or a revoked key shows up as an error on the setup screen rather than later.
+[AppMeta](/apps/appmeta/), the Mac client for App Store Connect I [wrote about in February](/journal/native-mac-client-for-app-store-connect/), takes a team key: it asks for the Issuer ID, the Key ID and the `.p8` file, so individual keys, which have no Issuer ID, don't fit it. Before it saves anything it signs a token and asks App Store Connect for your app list, so a mismatched ID or a revoked key shows up as an error on the setup screen, before you've saved anything.
 
 The three values go into the macOS Keychain as items that stay on that Mac and don't sync through iCloud. AppMeta signs 20-minute ES256 tokens locally and reuses each one until it's about two minutes from expiring, and the only server it sends them to is `api.appstoreconnect.apple.com`. Removing the account in AppMeta deletes the Keychain items.
 

@@ -3,7 +3,7 @@
   <h2 class="h2">Pricing</h2>
 
   {%- comment %}
-    Optional value-math callout — renders when frontmatter exposes
+    Optional value-math callout. It renders when frontmatter exposes
     `value_math:` (a one-line conversion anchor that compares this
     app's price to the category's subscription median). Honest
     competitive copy belongs above the pricing detail so the math
@@ -22,7 +22,7 @@
     original single-row pricing card.
 
     Per-plan `highlight_label:` sets a custom badge ("Best value",
-    "What I recommend", "Lifetime") — defensible and honest. Legacy
+    "What I recommend", "Lifetime"), which keeps the claim honest. Legacy
     `highlight: true` still renders with the older "Most chosen"
     badge for backward compatibility, but the custom label takes
     precedence when provided.
@@ -59,7 +59,7 @@
     <div class="price-row">
       <div>
         <div class="card-title">{{ include.app.name }} pricing</div>
-        <div class="card-text">Transparent pricing on the App Store. Cancel anytime.</div>
+        <div class="card-text">Prices are listed on the App Store. Cancel anytime.</div>
       </div>
       <div class="price-pill">{{ f_price_value | default: "See App Store" }}</div>
     </div>
@@ -70,14 +70,14 @@
   {%- endif -%}
 
   {%- comment %}
-    Release notes — shared across both pricing branches. Renders
+    Release notes, shared across both pricing branches. Renders
     a collapsible "What changed recently" list when frontmatter
     exposes `release_notes:`. Demonstrates active development;
     Helpful Content sweeps reward visible freshness signals.
   {%- endcomment -%}
   {%- if include.app.release_notes and include.app.release_notes.size > 0 -%}
   <details class="release-notes">
-    <summary class="release-notes__summary">What changed recently — {{ include.app.release_notes.size }} dated updates</summary>
+    <summary class="release-notes__summary">What changed recently: {{ include.app.release_notes.size }} dated updates</summary>
     <ol class="release-notes__list">
       {%- for entry in include.app.release_notes -%}
       <li class="release-notes__item">
@@ -91,7 +91,7 @@
 
   {%- if include.app.plans and include.app.plans.size > 0 -%}
   <div class="pricing-foot">
-    <p class="pricing-note">{{ include.app.pricing_note | default: "Transparent pricing on the App Store. Cancel anytime. Free plan is free forever — no trial, no card." }}</p>
+    <p class="pricing-note">{{ include.app.pricing_note | default: "Prices are listed on the App Store. Cancel anytime. The free plan has no time limit and needs no trial or card." }}</p>
     <div class="actions">
       <a class="btn btn-primary" href="{{ include.app.app_store_url }}" rel="noopener">View on the App Store</a>
     </div>

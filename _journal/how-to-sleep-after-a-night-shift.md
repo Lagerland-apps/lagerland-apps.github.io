@@ -3,7 +3,7 @@ layout: journal
 slug: how-to-sleep-after-a-night-shift
 title: "How to sleep after a night shift: the drive home, the dark room, the nap and the days off"
 date: 2026-03-21
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 seo:
   title: "How to Sleep After a Night Shift: A Step-by-Step Plan"
   description: "How to sleep after a night shift, from NIOSH guidance: bed soon after you get home, a dark, quiet room, caffeine early, and a nap before the next night."
@@ -16,7 +16,7 @@ seo:
     - caffeine cutoff night shift
     - night shift days off sleep
     - aftershift
-lede: "Sleeping in daylight after a night shift is hard for reasons that have little to do with discipline. Your body clock says it is morning, the street is awake and the sun is up. Some of the most specific public advice on what to do about it sits in a free NIOSH training course written for nurses. Here it is in the order you will need it: the end of the shift, the drive home, the bedroom, the nap and the days off."
+lede: "Sleeping in daylight after a night shift is hard for reasons that have little to do with discipline. Your body clock says it is morning, the street is awake and the sun is up. Some of the most specific public advice on what to do about it sits in a free NIOSH training course written for nurses. Below it is in the order you will need it: the end of the shift, the drive home, the bedroom, the nap and the days off."
 quick_answer: "Go to bed as soon as you get home and sleep as long as you can; NIOSH's shift-work training says the more of that sleep you get before 2 p.m., the better rested you will be. Make the bedroom dark enough that you cannot see your hand, block noise with earplugs or white noise, and silence the phone. Have caffeine only early in the shift and stop several hours before it ends, because its half-life is 5 to 6 hours. Wear dark sunglasses home only if someone else is driving. Nap before the next night shift if you can: afternoon and evening naps of 1.5 to 3 hours improved night-shift alertness in studies NIOSH cites. On days off, stay up until 3 or 4 a.m. and sleep until about noon so part of your sleep window stays fixed. If poor sleep lasts several weeks, talk to a doctor."
 excerpt: "A step-by-step guide to sleeping after a night shift, condensed from NIOSH's training course for nurses: what to do in the last hours of the shift, on the drive home, in the bedroom, before the next night and on days off, plus when poor daytime sleep is worth a visit to the doctor."
 faq:
@@ -33,7 +33,7 @@ faq:
   - q: "How should I sleep on days off from night shifts?"
     a: "NIOSH describes a compromise: on days off, stay up until 3 or 4 a.m. and sleep until noon or 1 p.m., so a block such as 8 a.m. to noon is sleep time on work days and days off alike. It also warns against staying awake all day before the first night shift of a run or after the last one."
   - q: "When is poor sleep after night shifts a medical problem?"
-    a: "The American Academy of Sleep Medicine says many people find a new shift hard at first, but if after several weeks you still have trouble falling or staying asleep, or feel tired even after 7 to 8 hours of sleep, you may have shift work disorder. That is a diagnosis for a doctor, not an app. Talk to your doctor or a sleep specialist, including before trying any sleep aid."
+    a: "The American Academy of Sleep Medicine says many people find a new shift hard at first, but if after several weeks you still have trouble falling or staying asleep, or feel tired even after 7 to 8 hours of sleep, you may have shift work disorder. Only a doctor can diagnose that. Talk to your doctor or a sleep specialist, including before trying any sleep aid."
 mentioned_apps:
   - aftershift
 read_time: "8 min read"
@@ -115,6 +115,6 @@ Persistent sleep problems should not be ignored, NIOSH says, and a [sleep disord
 - **It times caffeine against your sleep, not the clock.** Setup asks for your one-way commute and your caffeine sensitivity, which sets a cutoff of 4, 6 or 8 hours before sleep. Caffeine you log from the Today tab is marked good, borderline or late over the last 14 days.
 - **The Coach tab** has short explainers on light, naps, caffeine timing and the daytime sleep environment.
 
-The Shift Recovery Score is built from sleep length, continuity and the timing of your next shift, and like everything else on the screen it is information, not a verdict. There is no account, and your data stays on your device; the [privacy page](/apps/aftershift/privacy/) has the details, and [the design post](/journal/building-a-sleep-app-for-night-shifts/) explains why the app treats daytime sleep as normal.
+The Shift Recovery Score is built from sleep length, continuity and the timing of your next shift, and like everything else on the screen it is there to inform you; it doesn't judge your sleep. There is no account, and your data stays on your device; the [privacy page](/apps/aftershift/privacy/) has the details, and [the design post](/journal/building-a-sleep-app-for-night-shifts/) explains why the app treats daytime sleep as normal.
 
 The advice itself is free and older than any app: a dark room, early caffeine, a nap before the next night, and a doctor if the sleep still won't come.

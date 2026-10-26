@@ -2,15 +2,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#F4C21B">
 <meta name="color-scheme" content="light">
-{%- comment %} Set html.js before first paint — the scroll-reveal CSS only
+{%- comment %} Set html.js before first paint. The scroll-reveal CSS only
   hides content under html.js, so no-JS visitors (and crawlers) always get
   fully visible pages. {% endcomment %}
 <script>document.documentElement.classList.add('js');</script>
 
-{%- comment %} Safari Smart App Banner — on iOS this shows Apple's native
+{%- comment %} Safari Smart App Banner: on iOS this shows Apple's native
   VIEW/OPEN install prompt at the top of the app page, deep-linking straight
-  into the App Store. Highest-converting install surface on the whole site,
-  and free. The numeric id is parsed out of app_store_url (…/app/idXXXXXXXX). {% endcomment -%}
+  into the App Store. It converts best of any install surface on the site
+  and costs nothing. The numeric id is parsed out of app_store_url (…/app/idXXXXXXXX). {% endcomment -%}
 {%- if page.layout == "app" and page.app_store_url -%}
   {%- assign _asid = page.app_store_url | split: "/id" | last | split: "?" | first -%}
   {%- if _asid != "" -%}
@@ -68,10 +68,10 @@
 <link rel="alternate" type="application/xml" href="{{ site.url }}/sitemap.xml" title="XML sitemap">
 <link rel="alternate" type="application/xml" href="{{ site.url }}/ai-sitemap.xml" title="AI crawler sitemap">
 
-{%- comment %} rel="me" identity verification — links the site to the
+{%- comment %} rel="me" identity verification links the site to the
   publisher's verifiable identities so search engines (and Mastodon
-  / IndieAuth) can confirm authorship. Adds an extra E-E-A-T signal
-  with effectively zero maintenance cost. {% endcomment -%}
+  / IndieAuth) can confirm authorship. It is one more E-E-A-T signal
+  and needs no maintenance. {% endcomment -%}
 <link rel="me" href="https://github.com/lagerland-apps">
 <link rel="me" href="mailto:lagerland.apps@proton.me">
 
@@ -84,7 +84,7 @@
 <link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: '%Y%m%d%H%M' }}">
 
 
-{%- comment %} Per-app LCP preload — the leaflet stamp's icon is the largest
+{%- comment %} Per-app LCP preload: the leaflet stamp's icon is the largest
   image in the app-page first viewport (set by _includes/hero.html). {% endcomment -%}
 {%- if page.layout == "app" and page.slug %}
 <link rel="preload" as="image" href="/assets/icons/sm/{{ page.slug }}.webp">
@@ -132,7 +132,7 @@
         "width": 1024,
         "height": 1024
       },
-      "description": "One-person Apple studio in Finland building {{ site.data.catalog.meta.live_app_count }} privacy-first iOS, iPadOS, watchOS and macOS apps since 2025. No advertising SDKs, no IDFA, no accounts — GDPR by default.",
+      "description": "One-person Apple studio in Finland building {{ site.data.catalog.meta.live_app_count }} privacy-first iOS, iPadOS, watchOS and macOS apps since 2025. The apps use no advertising SDKs, no IDFA, and no accounts, so they are GDPR-compliant by default.",
       "foundingDate": "2025",
       "address": {
         "@type": "PostalAddress",

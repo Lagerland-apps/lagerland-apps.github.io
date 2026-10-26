@@ -8,7 +8,7 @@
   An app with no catalog entry renders without platforms or price (the audit reports it as an error): run
   scripts/sync-asc-master.mjs once the app exists in App Store Connect.
   Editorial front matter this include honours (none of it is a number):
-    price_lead      text before the dash in the standard price line (default "Free")
+    price_lead      text before the comma in the standard price line (default "Free")
     price_tier      name of the paid tier (default "Premium")
     price_override  replaces the standard line; may use tokens (see tokens.html)
     free_tier       false when there is no free tier (changes the schema lowPrice rule)
@@ -133,7 +133,7 @@
 {%- elsif f_cat == nil -%}
   {%- assign f_price_value = "" -%}
 {%- elsif f_app_free == false -%}
-  {%- capture f_price_value -%}{{ f_app_price }} — {{ f_str.one_time_purchase }}{%- endcapture -%}
+  {%- capture f_price_value -%}{{ f_app_price }}, {{ f_str.one_time_purchase }}{%- endcapture -%}
 {%- elsif f_has_plans -%}
   {%- assign f_pieces = "" | split: "" -%}
   {%- if f_monthly != "" -%}{%- capture f_piece -%}{{ f_monthly }}{{ f_str.per_month }}{%- endcapture -%}{%- assign f_pieces = f_pieces | push: f_piece -%}{%- endif -%}
@@ -143,7 +143,7 @@
   {%- elsif f_pieces.size == 2 -%}{%- capture f_list -%}{{ f_pieces[0] }} {{ f_str.or }} {{ f_pieces[1] }}{%- endcapture -%}
   {%- else -%}{%- capture f_list -%}{{ f_pieces[0] }}, {{ f_pieces[1] }}, {{ f_str.or }} {{ f_pieces[2] }}{%- endcapture -%}
   {%- endif -%}
-  {%- capture f_price_value -%}{{ include.app.price_lead | default: f_str.free }} — {{ include.app.price_tier | default: f_str.default_tier }} {{ f_str.from }} {{ f_list }}{%- endcapture -%}
+  {%- capture f_price_value -%}{{ include.app.price_lead | default: f_str.free }}, {{ include.app.price_tier | default: f_str.default_tier }} {{ f_str.from }} {{ f_list }}{%- endcapture -%}
 {%- else -%}
   {%- assign f_price_value = "" -%}
 {%- endif -%}

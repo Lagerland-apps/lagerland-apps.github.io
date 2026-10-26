@@ -3,7 +3,7 @@ layout: journal
 slug: how-to-estimate-your-one-rep-max
 title: "How to estimate your one-rep max: Epley, Brzycki and five other formulas, worked through"
 date: 2026-06-06
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 seo:
   title: "How to Estimate Your One-Rep Max: 1RM Formulas"
   description: "Estimate your one-rep max from a set of reps with Epley, Brzycki or Lombardi, see why the formulas drift past 10 reps, and when to test a true single."
@@ -16,7 +16,7 @@ seo:
     - one rep max calculator
     - lombardi 1rm formula
     - gymlogger x
-lede: "You rarely need to grind out a true single to know roughly what it would be. A hard set of five already contains most of the answer, and there are half a dozen published formulas for pulling it out. They agree closely in the middle of the rep range and fall apart at the edges. Here is each formula, what it says about the same set, and where to stop trusting it."
+lede: "You rarely need to grind out a true single to know roughly what it would be. A hard set of five already contains most of the answer, and there are half a dozen published formulas for pulling it out. They agree closely in the middle of the rep range and fall apart at the edges. Below is each formula, what it says about the same set, and where to stop trusting it."
 quick_answer: "To estimate your one-rep max, take a set you did close to failure and put the weight and reps into a formula. Epley is weight × (1 + reps ÷ 30); Brzycki is weight × 36 ÷ (37 − reps). For 100 kg lifted 5 times, Epley gives 116.7 kg and Brzycki 112.5 kg. Use a set of roughly 3 to 10 reps: past 10 the formulas spread by double-digit kilos, and a 2006 rep-max study advised against using more than 10 reps in linear equations. Pick one formula and use it every time, because the trend matters more than the exact number. Test a true single only when the number itself is needed, for a meet or a program built on a tested max."
 excerpt: "The seven common one-rep max formulas side by side, a worked table showing what each one says about the same set from 3 to 20 reps, why the estimates drift past about ten reps, a percent-of-max table for choosing working weights, and when a real single is worth testing."
 faq:
@@ -63,7 +63,7 @@ They look different, but most of them encode the same idea: each extra rep you c
 
 ## What does each formula say about the same set?
 
-Here is every formula applied to 100 kg. The formulas are proportional to the weight, so for 140 kg multiply a row by 1.4.
+This is every formula applied to 100 kg. The formulas are proportional to the weight, so for 140 kg multiply a row by 1.4.
 
 | Reps at 100 kg | Epley | Brzycki | Lander | Lombardi | Mayhew | O'Conner | Wathen | Spread |
 |---|---|---|---|---|---|---|---|---|
@@ -74,8 +74,6 @@ Here is every formula applied to 100 kg. The formulas are proportional to the we
 | 12 | 140.0 | 144.0 | 144.4 | 128.2 | 135.4 | 130.0 | 141.5 | 16.2 |
 | 15 | 150.0 | 163.6 | 163.3 | 131.1 | 141.7 | 137.5 | 150.9 | 32.5 |
 | 20 | 166.7 | 211.8 | 208.9 | 134.9 | 151.2 | 150.0 | 164.5 | 76.8 |
-
-Three things stand out.
 
 From 3 to 10 reps, the spread between the highest and lowest estimate stays under 10 kg on a 100 kg set. Epley and Brzycki meet exactly at 10 reps; below 10, Epley reads a little higher.
 
@@ -95,7 +93,7 @@ The last one is about you, not the maths. Every formula assumes the set ended at
 
 ## Which formula should you use?
 
-Honestly, the one you will use every time. An estimated max is most useful as a trend line, and any of the mainstream formulas applied the same way to similar sets will show the same trend. Switching between them week to week manufactures progress or regression that never happened.
+Whichever one you will use every time. An estimated max is most useful as a trend line, and any of the mainstream formulas applied the same way to similar sets will show the same trend. Switching between them week to week manufactures progress or regression that never happened.
 
 Some habits that keep the number honest:
 

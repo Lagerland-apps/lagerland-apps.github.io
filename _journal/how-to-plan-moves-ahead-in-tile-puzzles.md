@@ -4,7 +4,7 @@ slug: how-to-plan-moves-ahead-in-tile-puzzles
 title: "How to plan moves ahead in a tile puzzle: six checks, and Millrace's Level 1 move by move"
 date: 2026-09-27
 seo:
-  title: "How to Plan Moves Ahead in a Tile Puzzle — Millrace Guide"
+  title: "How to Plan Moves Ahead in a Tile Puzzle: Millrace Guide"
   description: "How to plan moves ahead in a tile puzzle: six checks for Millrace's inlet, visible queue, exact target and move budget, with Level 1 solved in five moves."
   keywords:
     - how to plan moves ahead in puzzle games
@@ -15,8 +15,8 @@ seo:
     - millrace level 1 solution
     - millrace strategy
     - millrace
-lede: "Nothing in a Millrace level is random, so every level can be planned to the end before your first swipe. In practice, planning is a short list of checks you run before each move. Here are the six that matter, why each follows from the rules, and Level 1 played move by move, including the two swipes that lose it on the spot."
-quick_answer: "To plan ahead in Millrace, read the whole level before your first swipe, then run the same checks before every move. 1) Read the chapter as a number: every Warm-up level's shortest solution is 5 moves, Tactics 6, Pressure 7, Precision 8, Deep Water 9 and Mastery 10 to 16, so the move budget minus that number is your slack — two spare moves on 56 levels, one on six, none on two. 2) Work out which tiles add up to the exact target. 3) While any tile is still due, never slide toward the inlet's edge unless that slide completes the delivery: the tile that just arrived cannot leave the edge, so the next one has nowhere to land. 4) On the two slides along that edge, count the tiles in the inlet's line; if they pack onto the inlet, that slide loses too. 5) Count the queue: once the last tile has arrived, the inlet stops mattering and the remaining moves are free for carrying the target. 6) Decide early whether you will build the value elsewhere and slide it onto the marked cell, or make the final merge on the cell itself. Keeping the inlet clear is necessary but never enough: every level is tested against 24 strategies that keep the inlet clear and look no further, and all 24 lose."
+lede: "Nothing in a Millrace level is random, so every level can be planned to the end before your first swipe. In practice, planning is a short list of checks you run before each move. This post gives the six that matter, why each follows from the rules, and Level 1 played move by move, including the two swipes that lose it on the spot."
+quick_answer: "To plan ahead in Millrace, read the whole level before your first swipe, then run the same checks before every move. 1) Read the chapter as a number: every Warm-up level's shortest solution is 5 moves, Tactics 6, Pressure 7, Precision 8, Deep Water 9 and Mastery 10 to 16, so the move budget minus that number is your slack: two spare moves on 56 levels, one on six, none on two. 2) Work out which tiles add up to the exact target. 3) While any tile is still due, never slide toward the inlet's edge unless that slide completes the delivery: the tile that just arrived cannot leave the edge, so the next one has nowhere to land. 4) On the two slides along that edge, count the tiles in the inlet's line; if they pack onto the inlet, that slide loses too. 5) Count the queue: once the last tile has arrived, the inlet stops mattering and the remaining moves are free for carrying the target. 6) Decide early whether you will build the value elsewhere and slide it onto the marked cell, or make the final merge on the cell itself. Keeping the inlet clear is necessary but never enough: every level is tested against 24 strategies that keep the inlet clear and look no further, and all 24 lose."
 faq:
   - q: "What is the best strategy for Millrace?"
     a: "Plan from the numbers the level gives you. The chapter tells you the shortest solution (5 moves in Warm-up, then 6, 7, 8 and 9, and 10 to 16 in Mastery), so you know your spare moves before you start. Work out which tiles make the exact target, never slide toward the inlet's edge while a tile is still due unless that slide wins, check that the other slides don't push a tile onto the inlet, and watch for the moment the queue runs out, after which the inlet no longer matters."
@@ -34,6 +34,7 @@ mentioned_apps:
   - millrace
 read_time: "8 min read"
 excerpt: "A strategy guide to Millrace's tile-delivery levels: the rules that matter for planning, six checks to run before each swipe, and Levels 1 and 8 worked through with their real boards, queues and move counts."
+last_updated: 2026-10-26
 ---
 
 [Millrace](/apps/millrace/) is a tile-delivery puzzle: build one exact value on one marked cell inside a move budget, while tiles keep arriving through a single inlet on the board's edge. The board is fixed and every arriving tile is shown before your first move, so a level can be planned to the end. The campaign screen states the core rule in one line: "Tiles keep arriving at the marked cell. Block it and you lose."
@@ -46,7 +47,7 @@ excerpt: "A strategy guide to Millrace's tile-delivery levels: the rules that ma
 | Tiles arrive through one inlet, on an edge, never in a corner. | Every arrival lands on the same cell. |
 | After each move, the next tile in the queue lands on the inlet. Only 2s and 4s arrive, and the whole queue is shown. | You know every future arrival before you start. |
 | If the inlet is occupied when a tile is due, the run ends: Blocked. | While tiles remain, the inlet must be empty after every move. |
-| The goal is one exact value on one marked cell, the vault. | Too small isn't finished, and merging past it — a 32 when the level asks for 16 — destroys it. |
+| The goal is one exact value on one marked cell, the vault. | Too small isn't finished, and merging past it (a 32 when the level asks for 16) destroys it. |
 | The goal is checked before the next tile arrives. | The winning move can't be spoiled by the inlet. |
 | The move budget is two above the shortest solution on 56 levels, one above on 6, and equal to it on 2. | At most two spare moves; on Levels 51 and 64, none. |
 | Every legal first move leaves the level winnable. | Your first swipe can never lose. |
@@ -86,7 +87,7 @@ Start with the arithmetic. 16 is 8 + 8, and the second 8 can come from the two 4
 | 2 | Right | The bottom 4s merge: · · 8 8. The new 2 slides off the inlet to the right edge. Another 2 arrives. | 1 |
 | 3 | Right | The 8s merge into the 16 in the bottom-right corner; the two 2s in the inlet's row merge into a 4. The last 2 arrives. | 0 |
 | 4 | Up | Nothing else is coming, so the inlet no longer matters. The right column rises, lifting the 16 into the vault's row. | 0 |
-| 5 | Left | The 16 slides along the third row onto the vault. Solved. | — |
+| 5 | Left | The 16 slides along the third row onto the vault. Solved. | none |
 
 The 16 is built in the far corner, away from the arrivals, and carried to the vault only after the queue is empty. That is check 5 and check 6 working together.
 

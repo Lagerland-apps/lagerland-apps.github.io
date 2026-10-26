@@ -14,7 +14,7 @@ seo:
     - "app store connect keywords"
     - "app store keywords per localization"
     - "appmeta"
-lede: "The keyword field is the one piece of App Store metadata that customers never see, and it decides a lot about who finds you. Apple's rules for it fit on an index card. Most of the advice around it is folklore. Here is what Apple actually documents, what it doesn't, and how to spend 100 characters without wasting a third of them."
+lede: "Customers never see the keyword field, yet it decides a lot about who finds your app. Apple's rules for it would fit on an index card, and most of the advice around it is folklore. This post covers what Apple documents, what it leaves out, and how to spend 100 characters without wasting a third of them."
 quick_answer: "The App Store keyword field holds 100 characters per localization. Separate terms with commas and no spaces (spaces are fine inside a phrase, as in Real Estate), because every space and comma counts toward the limit. Apple says your app is already searchable by its name, subtitle and company name, and that its category is indexed, so don't spend keyword characters repeating words from those. Apple also says to skip plurals of words you already have, generic words like app, filler words like the, competitor names and trademarked terms. Each localization has its own keyword field, and keyword changes go live with your next approved app version."
 faq:
   - q: "How many characters can App Store keywords be?"
@@ -33,9 +33,10 @@ mentioned_apps:
   - appmeta
 read_time: "7 min read"
 excerpt: "A reference for the App Store keyword field: the 100-character limit, commas without spaces, the words Apple says are already indexed elsewhere, plurals, per-localization fields, a worked example of a wasted field and a fixed one, and the common ASO claims Apple doesn't document."
+last_updated: 2026-10-26
 ---
 
-The keyword field in App Store Connect is a single line of text per localization, and nobody browsing the App Store ever reads it. Apple's search guide says keywords "help determine where your app appears in search results." Here are its rules in one place, with where each one comes from.
+The keyword field in App Store Connect is a single line of text per localization, and nobody browsing the App Store ever reads it. Apple's search guide says keywords "help determine where your app appears in search results." Below are its rules in one place, each with its source.
 
 ## What are the rules for the App Store keyword field?
 
@@ -54,13 +55,13 @@ Apple calls improper keyword use a common reason for App Store rejections, so th
 
 ## How does App Store Connect count the 100 characters?
 
-Everything in the field counts: letters, commas and spaces. That is why the no-spaces rule matters. A field written the way people write lists, with a space after every comma, loses one character at every comma. Ten terms, nine wasted characters.
+Everything in the field counts, letters, commas and spaces alike, which is why the no-spaces rule matters. Write the field the way people write lists, with a space after every comma, and ten terms cost you nine characters for nothing.
 
 Apple's own pages disagree on the unit. The product page and search guides say 100 characters; the App Store Connect reference says 100 bytes. The counter in the App Store Connect form follows neither exactly: it counts the way JavaScript measures text length, in UTF-16 code units. For English, the other Latin-script languages, Cyrillic, Greek, and almost all Chinese, Japanese and Korean characters, that is one unit per character, so the distinction never comes up. It does come up in scripts that write vowels as combining signs. The Hindi word किराना (grocery) reads as three syllables but is six units. A Hindi keyword field can look two-thirds full and already be at the limit, so trust the counter in App Store Connect over a text editor's.
 
 ## Which words are already indexed somewhere else?
 
-This is where most of the wasted characters come from. Apple documents more of it than the folklore suggests.
+Most wasted characters go on words like these, and Apple documents more of this than the folklore suggests.
 
 | Where the word appears | Searchable? | What Apple documents |
 |---|---|---|
@@ -96,11 +97,11 @@ Out of 94 characters, the new words are streaks, reminders and best. The rewrite
 
 `streak,reminder,checklist,planner,journal,mood,water,sleep,focus,discipline,self care,todo,morning`
 
-Fourteen words, none of them in the name, subtitle or category, no spaces after commas, one form of each word. It only works if the app really does track mood, water and sleep. Apple's rule against irrelevant terms applies to the rewrite too.
+That is fourteen words, none of them in the name, subtitle or category, with no spaces after commas and one form of each word. It only works if the app really does track mood, water and sleep, because Apple's rule against irrelevant terms applies to the rewrite too.
 
 ## What does Apple not document? The ASO folklore
 
-Plenty of keyword advice is reasonable and still unverified. These are the claims I see most, sorted by what Apple has actually written down.
+Plenty of keyword advice is reasonable and still unverified. These are the claims I see most, sorted by what Apple has written down.
 
 | Claim | Status |
 |---|---|
@@ -121,7 +122,7 @@ The English variants are a good example. English (U.S.), English (U.K.), English
 
 ## When do keyword changes go live?
 
-The keyword field sits in the version section of App Store Connect, beside the description, so an edit ships with your next approved version. There's no way to change keywords alone on a live version. That is the strongest argument for treating the field as a small, planned change each release rather than something you rewrite in a hurry. Apple also notes that metadata updates can take up to 24 hours to appear in every storefront.
+The keyword field sits in the version section of App Store Connect, beside the description, so an edit ships with your next approved version. There's no way to change keywords alone on a live version. So plan a small keyword change for each release; a hurried rewrite has to wait for review like any other version. Apple also notes that metadata updates can take up to 24 hours to appear in every storefront.
 
 ## Where AppMeta fits
 

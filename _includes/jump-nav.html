@@ -5,13 +5,13 @@
 
   Renders only when the host page sets `jump_nav: true` in frontmatter
   (so existing pages that don't want it stay unchanged). Anchors are
-  conditional — they appear only if the corresponding section actually
+  conditional: they appear only if the corresponding section actually
   exists on the page.
 {%- endcomment -%}
 {%- if include.app.jump_nav -%}
 {%- comment %}
   Ordering follows DOM order on the rendered page.
-  Pricing is included as an anchor when EITHER plans OR value_math is set —
+  Pricing is included as an anchor when EITHER plans OR value_math is set, since
   both render the same #pricing section, and one-time-purchase apps that
   surface a value-math callout often place pricing early (the price is
   the conversion fact, not an afterthought).

@@ -1,10 +1,10 @@
 ---
 layout: journal
 slug: soon-rebrand
-title: "TheWait is now Soon. — why we rebuilt and rebranded"
+title: "TheWait is now Soon. Why we rebuilt and rebranded"
 seo:
-  title: "TheWait Is Now Soon. — Why We Rebuilt the Countdown App"
-  description: "After a year of quiet growth, TheWait is rebuilt and relaunched as Soon. — why the old name had to go, what changed under the hood, what stays."
+  title: "TheWait Is Now Soon: Why We Rebuilt the Countdown App"
+  description: "After a year of slow growth, TheWait is rebuilt and relaunched as Soon. Why the old name had to go, what changed under the hood, and what stays."
   keywords:
     - "soon app"
     - "thewait app"
@@ -13,77 +13,73 @@ seo:
     - "soon countdown"
     - "app rebrand"
 date: 2026-04-13
-last_updated: 2026-08-14
-lede: "After a year of quietly growing, TheWait has been fully rebuilt and relaunched as Soon. Here's why the old name had to go, what changed under the hood, and what stays the same for existing users."
-quick_answer: "TheWait was rebranded and rebuilt from scratch as Soon. in April 2026 because the old name framed countdowns as passive waiting rather than active anticipation. The rebuild adds Plan Mode checklists, StandBy widgets, natural-language search, iOS Calendar sync, memory cycling on anniversaries, and 39 languages. Existing TheWait events, themes, and purchases migrate automatically."
+last_updated: 2026-10-26
+lede: "After a year of slow growth, TheWait has been fully rebuilt and relaunched as Soon. This post covers why the old name had to go, what changed under the hood, and what stays the same for existing users."
+quick_answer: "TheWait was rebranded and rebuilt from scratch as Soon. in April 2026 because the old name framed countdowns as passive waiting, when the app is about looking forward to something. The rebuild adds Plan Mode checklists, StandBy widgets, natural-language search, iOS Calendar sync, memory cycling on anniversaries, and 39 languages. Existing TheWait events, themes, and purchases migrate automatically."
 faq:
   - q: "What happened to TheWait countdown app?"
-    a: "TheWait was rebuilt from scratch and rebranded as Soon. in April 2026. The old name framed the experience as passive waiting; the new name captures the active anticipation the app is actually about. Existing TheWait events, themes, and purchases migrate automatically — the upgrade is free for previous users."
+    a: "TheWait was rebuilt from scratch and rebranded as Soon. in April 2026. The old name described the app as passive waiting; the new one fits the anticipation the app is about. Existing TheWait events, themes, and purchases migrate automatically, and the upgrade is free for previous users."
   - q: "What is new in Soon. compared to TheWait?"
     a: "Soon. adds Plan Mode with smart checklists tailored to event types like trips and weddings, every iOS widget size including StandBy, natural-language search such as 'birthdays this month', iOS Calendar sync, anniversary memory cycling, and 39 languages including Japanese, Arabic, Hebrew, and Korean."
   - q: "How much does Soon. cost?"
-    a: "Soon. is free with up to 5 events forever. Premium is {P_LIFETIME@soon} lifetime, {P_MONTHLY@soon} a month, or {P_YEARLY@soon} a year with a 7-day free trial. Premium unlocks unlimited events, weather intelligence, daily notes, recurring events, and event notifications. There is no auto-charging without consent."
+    a: "Soon. is free with up to 5 events forever. Premium is {P_LIFETIME@soon} lifetime, {P_MONTHLY@soon} a month, or {P_YEARLY@soon} a year with a 7-day free trial. Premium unlocks unlimited events, weather intelligence, daily notes, recurring events, and event notifications. Nothing is charged automatically without your consent."
   - q: "Does Soon. require an account or upload my events to a server?"
-    a: "No. Soon. has no ads, no tracking, and no required account. Events stay on the device. Weather requests use approximate location or a place name only — never precise location. The app is built and maintained by the same one-person studio that ships the rest of the Lagerland Apps catalogue."
+    a: "No. Soon. has no ads or tracking and needs no account. Events stay on the device. Weather requests use approximate location or a place name only, never precise location. The app is built and maintained by the same one-person studio that ships the rest of the Lagerland Apps catalogue."
 mentioned_apps:
   - soon
 read_time: "5 min read"
-excerpt: "TheWait became Soon. in April 2026 — a full rebuild with a new name, new icon, Plan Mode, StandBy widgets, and 39 languages. Everything existing users loved carries over."
+excerpt: "TheWait became Soon. in April 2026: a full rebuild with a new name, a new icon, Plan Mode, StandBy widgets, and 39 languages. Everything existing users liked carries over."
 ---
 
-TheWait started as a simple countdown app. You pinned an event, you watched the days tick down, and that was the whole deal. Over a year, it grew: widgets, themes, calendar sync, photo backgrounds. But the name — *TheWait* — kept holding it back.
+TheWait started as a simple countdown app. You pinned an event and watched the days tick down, and that was it. Over a year it grew widgets, themes, calendar sync, and photo backgrounds. The name, *TheWait*, kept holding it back.
 
-In April 2026, I fully rebuilt and rebranded the app as **[Soon.](/apps/soon/)**. New name, new icon, new home. Here's why.
+In April 2026 I rebuilt the app from scratch and rebranded it as **[Soon.](/apps/soon/)**, with a new name, a new icon, and a new home.
 
 ## Why rename TheWait to Soon.?
 
-*TheWait* tells you what the app is about in a literal sense. You're waiting. The app counts down.
+*TheWait* describes the app literally. You wait, and the app counts down.
 
-But that framing gets the emotional point exactly wrong.
+That framing gets the feeling wrong. People use countdown apps because they're looking forward to something. Waiting is passive and carries delay, patience, and endurance with it. Anticipation is active: you enjoy the thing a little before it arrives. When you're counting down to a trip, a wedding, a birth, or a milestone, part of you is already there.
 
-Countdown apps aren't really about waiting. They're about **anticipating**. There's a difference. Waiting is passive — it's a word associated with delay, patience, endurance. Anticipating is active — it's a feeling you cultivate, a joy you borrow from the future. When you're counting down to a trip, a wedding, a birth, or a milestone, you're not stuck in the wait. You're already partly there.
-
-*Soon.* captures that better. The period at the end is deliberate — it's a full sentence, a quiet statement. The thing you're looking forward to isn't far. It's Soon.
+*Soon.* says that better. The period at the end is deliberate, because it makes the name a full sentence: the thing you're looking forward to isn't far off.
 
 ## What changed under the hood
 
-This wasn't a simple name swap. The entire app was rebuilt from scratch. New additions include:
+The whole app was rebuilt from scratch. New additions include:
 
-- **Plan Mode.** Every countdown now ships with a smart timeline and checklist tailored to the event type. Trips get packing lists and transport reminders. Weddings get their own rhythm. You don't have to build your own checklist — the app knows what a birthday, wedding, or graduation typically needs, and it assembles the prep automatically.
+- **Plan Mode.** Every countdown now comes with a smart timeline and checklist tailored to the event type. Trips get packing lists and transport reminders, and weddings get their own schedule. The app knows what a birthday, wedding, or graduation typically needs and assembles the prep for you, so you don't have to write the checklist yourself.
 
-- **StandBy widgets.** Every iOS widget size and style — Home Screen, Lock Screen, StandBy, ring, minimal, timeline. Your most anticipated moment can now be visible on every screen you already use.
+- **StandBy widgets.** Every iOS widget size and style: Home Screen, Lock Screen, StandBy, ring, minimal, and timeline. The event you're most looking forward to can sit on every screen you already use.
 
 - **Natural language search.** Type *"trips in July"*, *"birthdays this month"*, or *"anniversaries in 2027"* and Soon. understands what you mean.
 
-- **Memories that return.** When a countdown ends, it doesn't disappear. It becomes a memory, and Soon. quietly brings it back on every anniversary. The moment never fades — it just cycles.
+- **Memories that return.** A countdown that ends becomes a memory, and Soon. brings it back on every anniversary.
 
-- **iOS Calendar sync.** Any iOS Calendar event can become a countdown with a single tap. The dates you already track become the moments you can feel.
+- **iOS Calendar sync.** Any iOS Calendar event can become a countdown with a single tap.
 
 - **39 languages.** Full localization including Japanese, Chinese, Arabic, Hebrew, Korean, and every major European language.
 
 ## What stayed the same
 
-The philosophy didn't change. Soon. is still:
+- **Private by default.** Soon. has no ads, tracking, or account. Your events stay on your device. Weather requests use approximate location or a place name only, never precise location.
 
-- **Private by default.** No ads, no tracking, no account. Your events stay on your device. Weather requests use approximate location or a place name only — never precise location.
+- **A one-time purchase option.** Premium is {P_LIFETIME@soon} lifetime (or {P_MONTHLY@soon}/month, or {P_YEARLY@soon}/year if you prefer) with a 7-day free trial. Nothing is charged automatically without your consent.
 
-- **A one-time purchase option.** Premium is {P_LIFETIME@soon} lifetime (or {P_MONTHLY@soon}/month, or {P_YEARLY@soon}/year if you prefer) with a 7-day free trial. No auto-charging without consent.
-
-- **Built by one person.** Same developer, same catalogue, same principles. Soon. is part of the broader [Lagerland Apps](/lagerland-apps/) family of privacy-first tools.
+- **Built by one person.** Same developer, same catalogue, same principles. Soon. is part of the [Lagerland Apps](/lagerland-apps/) family of privacy-first tools.
 
 ## What existing TheWait users need to know
 
-If you used TheWait, **everything carries over.** Your events, your themes, your data — it all migrates automatically. You'll see the new name, the new icon, the new Plan Mode, and you'll have access to every new feature without paying for a second app. The upgrade is free.
+If you used TheWait, **everything carries over.** Your events, themes, and data migrate automatically. You'll see the new name, the new icon, and Plan Mode, and you get every new feature without paying for a second app. The upgrade is free.
 
 ## Why indie studios should rename when it matters
 
-I'll be honest: renaming an app is terrifying. App Store rankings reset. Existing users get confused. Some coverage dies on the old name. For a year I resisted doing it.
+Renaming an app is frightening. App Store rankings reset, existing users get confused, and some coverage stays attached to the old name. I resisted doing it for a year.
 
-But a wrong name is a daily tax. Every person who sees your app sees the wrong framing. Every conversation starts with explaining. Every review mentions the oddness. Eventually, you realise the cost of keeping it outweighs the cost of changing it — and the cost of changing it is mostly just courage.
+A wrong name costs you every day, though. Everyone who sees the app sees the wrong framing, every conversation starts with an explanation, and every review mentions how odd the name is. Eventually the cost of keeping it is higher than the cost of changing it, and most of the cost of changing it is nerve.
 
-For apps in this category — countdown, anticipation, moments worth waiting for — *Soon.* is a better name than *TheWait*. It was worth the pain.
+For a countdown app, where the whole point is moments worth waiting for, *Soon.* is a better name than *TheWait*. It was worth the pain.
 
-If you're building something and the name is quietly wrong, this is permission to change it.
+If you're building something and the name is slightly wrong, take this as permission to change it.
 
 ---
 

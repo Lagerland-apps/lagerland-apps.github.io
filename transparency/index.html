@@ -2,9 +2,9 @@
 layout: default
 permalink: /transparency/
 title: "Transparency"
-quick_answer: "No Lagerland app tracks you: every Privacy Manifest we ship sets NSPrivacyTracking to false with zero tracking domains, and no app contains an advertising SDK. This page lists, per app, what's actually declared — Required Reason APIs, the data the App Store sees, and what network calls the binary makes — verified against the source repository on the date shown."
+quick_answer: "No Lagerland app tracks you: every Privacy Manifest we ship sets NSPrivacyTracking to false with zero tracking domains, and no app contains an advertising SDK. This page lists, per app, what is declared: Required Reason APIs, the data the App Store sees, and the network calls the binary makes, checked against the source repository on the date shown."
 seo:
-  title: "Transparency — Every Lagerland App, Field by Field"
+  title: "Transparency: Every Lagerland App, Field by Field"
   description: "Per-app Privacy Manifest data for every Lagerland app: tracking, tracking domains, Required Reason APIs, third-party SDKs, and network calls."
   keywords:
     - Privacy Manifest iOS
@@ -14,7 +14,7 @@ seo:
     - no-tracking iOS apps
     - on-device iOS apps
     - privacy-first Apple developer
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 ---
 
 <script type="application/ld+json">
@@ -60,7 +60,7 @@ last_updated: 2026-10-25
     <p class="overline">Receipts</p>
     <h1 class="h1">Transparency,<br><span class="gradient-text">field by field.</span></h1>
     <p class="lead">
-      No Lagerland app tracks you: every Privacy Manifest we ship declares <strong>NSPrivacyTracking = false</strong> and zero tracking domains, and no app contains an advertising SDK. This page lists, per app, exactly what's declared — Required Reason APIs, what data the App Store sees, and what network calls the binary makes.
+      No Lagerland app tracks you: every Privacy Manifest we ship declares <strong>NSPrivacyTracking = false</strong> and zero tracking domains, and no app contains an advertising SDK. This page lists, per app, exactly what's declared: Required Reason APIs, the data the App Store sees, and the network calls the binary makes.
     </p>
     <p class="small">Last audit: <time datetime="{{ site.data.transparency.last_audit }}">{{ site.data.transparency.last_audit | date: "%B %-d, %Y" }}</time>. Re-verified whenever an app ships.</p>
   </div>
@@ -76,10 +76,10 @@ last_updated: 2026-10-25
     <p class="overline">What you're looking at</p>
     <h2 class="h2" style="margin-bottom:var(--s-3);">Privacy Manifests &amp; Required Reason APIs</h2>
     <p class="lead">
-      From iOS 17, Apple requires every app and every linked SDK to ship a <strong>Privacy Manifest</strong> (<code>PrivacyInfo.xcprivacy</code>) — a machine-readable declaration of what data is collected, whether it's used for tracking, and which "Required Reason" APIs the app calls. Apple's review process validates these declarations, and the values surface in the public Privacy Nutrition Label on every App Store listing.
+      From iOS 17, Apple requires every app and every linked SDK to ship a <strong>Privacy Manifest</strong> (<code>PrivacyInfo.xcprivacy</code>), a machine-readable declaration of what data is collected, whether it's used for tracking, and which "Required Reason" APIs the app calls. Apple's review process validates these declarations, and the values surface in the public Privacy Nutrition Label on every App Store listing.
     </p>
     <p class="small">
-      <strong>NSPrivacyTracking</strong> is the single most important key: <code>false</code> means the app is forbidden, by its own declaration and by Apple's review, from linking user data to third-party data for advertising or measurement. <strong>NSPrivacyTrackingDomains</strong> lists every domain the binary may contact for tracking purposes — empty arrays only. <strong>Required Reason APIs</strong> are categories of system APIs (UserDefaults, file timestamps, disk space, system boot time) that can be misused for fingerprinting; Apple enforces declared reasons so misuse becomes detectable. Below: the actual declaration for each Lagerland app.
+      <strong>NSPrivacyTracking</strong> is the most important key: <code>false</code> means the app is forbidden, by its own declaration and by Apple's review, from linking user data to third-party data for advertising or measurement. <strong>NSPrivacyTrackingDomains</strong> lists every domain the binary may contact for tracking purposes; in every Lagerland app it is an empty array. <strong>Required Reason APIs</strong> are categories of system APIs (UserDefaults, file timestamps, disk space, system boot time) that can be misused for fingerprinting; Apple enforces declared reasons so misuse can be detected. The declaration for each Lagerland app follows below.
     </p>
     <p class="small" style="margin-top:var(--s-3);">
       Read more from Apple: <a href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files" rel="noopener" target="_blank">Privacy Manifest files</a> · <a href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api" rel="noopener" target="_blank">Required Reason APIs</a> · <a href="https://developer.apple.com/app-store/app-privacy-details/" rel="noopener" target="_blank">App Store Privacy Nutrition Labels</a>.
@@ -130,7 +130,7 @@ last_updated: 2026-10-25
             {%- if row.third_party_sdks == 0 -%}
               0
             {%- else -%}
-              {{ row.third_party_sdks }} —
+              {{ row.third_party_sdks }}:
               {%- for sdk in row.third_party_sdks_list -%}
                 <a href="{{ sdk.url }}" rel="noopener" target="_blank">{{ sdk.name }}</a>{% unless forloop.last %}, {% endunless %}
               {%- endfor %}
@@ -208,14 +208,14 @@ last_updated: 2026-10-25
 <section class="section reveal">
   <div class="about-strip">
     <p class="overline">What's not on this list</p>
-    <h2 class="h2" style="margin-bottom:var(--s-3);">Things every Lagerland app refuses to do</h2>
+    <h2 class="h2" style="margin-bottom:var(--s-3);">What no Lagerland app does</h2>
     <ul class="transparency-refuses">
-      <li><strong>No advertising SDKs.</strong> No Meta, no Google Mobile Ads, no AppLovin, no Unity Ads, no IronSource, no AdMob, no MoPub, no anything that loads creatives or matches users.</li>
-      <li><strong>No third-party analytics.</strong> No Firebase, no Mixpanel, no Amplitude, no Segment, no Heap, no PostHog SaaS, no Sentry telemetry that identifies users.</li>
-      <li><strong>No attribution / MMP.</strong> No Adjust, no AppsFlyer, no Branch, no Singular, no Kochava, no Tenjin.</li>
-      <li><strong>No IDFA request.</strong> None of the apps call <code>ATTrackingManager.requestTrackingAuthorization</code> — Apple's review confirms this against the absence of <code>NSUserTrackingUsageDescription</code> in the Info.plist.</li>
-      <li><strong>No account systems.</strong> Where sync exists, it's iCloud sync (your iCloud, your encryption, optionally Advanced Data Protection). Where App Store Connect credentials are used (AppMeta, Mockly), they're <em>yours</em>, stored in macOS Keychain, talking directly to Apple's APIs.</li>
-      <li><strong>No dark patterns.</strong> No trial that auto-charges without explicit consent, no streak guilt mechanics, no notification spam, no "you can cancel anytime" copy that hides retention friction.</li>
+      <li><strong>No advertising SDKs.</strong> That means nothing from Meta, Google Mobile Ads, AppLovin, Unity Ads, IronSource, AdMob, or MoPub, and nothing else that loads creatives or matches users.</li>
+      <li><strong>No third-party analytics.</strong> None of Firebase, Mixpanel, Amplitude, Segment, Heap, or PostHog SaaS, and no Sentry telemetry that identifies users.</li>
+      <li><strong>No attribution / MMP.</strong> None of Adjust, AppsFlyer, Branch, Singular, Kochava, or Tenjin.</li>
+      <li><strong>No IDFA request.</strong> None of the apps call <code>ATTrackingManager.requestTrackingAuthorization</code>, and Apple's review confirms this against the absence of <code>NSUserTrackingUsageDescription</code> in the Info.plist.</li>
+      <li><strong>No account systems.</strong> Where sync exists, it's iCloud sync (your iCloud, your encryption, optionally Advanced Data Protection). Where App Store Connect credentials are used (AppMeta, Mockly), they're <em>yours</em>, stored in macOS Keychain and sent directly to Apple's APIs.</li>
+      <li><strong>No dark patterns.</strong> There is no trial that auto-charges without explicit consent, no streak guilt mechanic, no notification spam, and no "you can cancel anytime" copy that hides retention friction.</li>
     </ul>
   </div>
 </section>
@@ -227,7 +227,7 @@ last_updated: 2026-10-25
   <p class="overline">Verify yourself</p>
   <h2 class="h2">Open the App Store. Tap "App Privacy."</h2>
   <p class="lead">
-    Every claim on this page is duplicated, in Apple's exact format, on every Lagerland app's Privacy Nutrition Label. If anything ever drifts from what's declared above, Apple's review will catch it — and so will this page.
+    Every claim on this page also appears, in Apple's format, on each Lagerland app's Privacy Nutrition Label. If an app ever drifts from what's declared above, Apple's review will catch it, and so will this page.
   </p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/">Browse all apps</a>

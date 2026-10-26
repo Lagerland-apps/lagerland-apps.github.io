@@ -14,7 +14,7 @@ seo:
     - same direction cannons
     - xiangqi wxf notation
     - xiangqi opening for beginners
-lede: "Xiangqi opening theory is narrower than chess theory. One first move is the most common, a handful of named answers meet it, and five quieter first moves make up the rest of the list. Here are the ten openings worth knowing by name, the notation they are written in, and the main line of the Central Cannon against the Screen Horses, move by move."
+lede: "Xiangqi opening theory is narrower than chess theory. One first move is the most common, a handful of named answers meet it, and five quieter first moves make up the rest of the list. This post covers the ten openings worth knowing by name, the notation they are written in, and the main line of the Central Cannon against the Screen Horses, move by move."
 quick_answer: "The most common xiangqi opening is the Central Cannon, 1. C2=5 (炮二平五), which moves a cannon to the middle file and aims it at the soldier in front of Black's palace. Black's main answers are the Screen Horses (屏风马), developing both horses to guard that soldier; the Same Direction Cannons (顺炮, 1... C8=5) and Opposite Cannons (列炮, 1... C2=5), which answer with Black's own central cannon from the same or the other wing; and the Reversed Palace Horses (反宫马), which tuck a cannon into the advisor's corner between the horses. Red's quieter first moves are the Elephant Opening (飞相局, 1. E3+5), the Immortal Points the Way (仙人指路, 1. P7+1), the Horse Opening (起马局, 1. H2+3), the Cross-Palace Cannon (过宫炮, 1. C2=6) and the Advisor-Corner Cannon (士角炮, 1. C2=4). Whatever the opening, the first principle is the same: bring the chariots out early onto open files."
 faq:
   - q: "What is the most common opening in xiangqi?"
@@ -26,16 +26,17 @@ faq:
   - q: "What is the difference between Same Direction Cannons and Opposite Cannons?"
     a: "Both answer the Central Cannon with Black's own central cannon. In the Same Direction Cannons (顺炮, 1. C2=5 C8=5) Black's cannon comes from the same side of the board as Red's, so the position stays nearly symmetrical. In the Opposite Cannons (列炮, 1. C2=5 C2=5) it comes from the other wing, which leaves Black's undeveloped side facing Red's coming attack and makes the game sharper."
   - q: "Which xiangqi openings should a beginner learn first?"
-    a: "One opening for Red and one answer to the Central Cannon for Black. The Central Cannon and the Screen Horses are the natural pair, because they are the most common opening and the most common reply. Learn the plans, especially where the chariots go, rather than long move orders."
+    a: "One opening for Red and one answer to the Central Cannon for Black. The Central Cannon and the Screen Horses are the natural pair, because they are the most common opening and the most common reply. Learn the plans, especially where the chariots go, before any long move orders."
   - q: "How does Xiangqiful teach xiangqi openings?"
     a: "The Openings lesson track has ten lessons: opening principles, eight openings, and choosing a repertoire. Opening Lab has ten opening families with five lines each. Most are played as Red; the Screen Horses and Reversed Palace Horses are played as Black. A wrong move does not end the line: the app says so, shows the wanted move and lets you try again. The lessons and the Central Cannon family are free; the other nine families are Premium."
 mentioned_apps:
   - xiangqiful
 read_time: "7 min read"
 excerpt: "The ten xiangqi openings worth knowing by name, in WXF and Chinese notation: the Central Cannon and its four main answers, plus the Elephant, Immortal Points the Way, Horse, Cross-Palace and Advisor-Corner openings. With a notation primer and the Central Cannon against Screen Horses main line."
+last_updated: 2026-10-26
 ---
 
-Xiangqi openings are named after one move. If Red's first move puts a cannon on the central file, it is a Central Cannon game, and the opening is then named after Black's answer. If Red plays anything else, the opening is named after that move. These are the ten names worth learning first.
+Xiangqi openings are named after one move. If Red's first move puts a cannon on the central file, it is a Central Cannon game, and the opening is then named after Black's answer. If Red plays anything else, the opening is named after that move. The ten below are the names to learn first.
 
 ## How to read the moves
 
@@ -58,7 +59,7 @@ So C2=5 is a cannon moving sideways from column 2 to column 5, and H8+7 is a hor
 | Same Direction Cannons | 顺炮 | 1. C2=5 C8=5 | Black | A central cannon from the same wing; near-symmetry and a race to develop |
 | Opposite Cannons | 列炮 | 1. C2=5 C2=5 | Black | A central cannon from the other wing; sharper, counterattacking |
 | Reversed Palace Horses | 反宫马 | 1. C2=5 H8+7 2. H2+3 C2=4 3. R1=2 H2+3 | Black | Screen Horses with a cannon in the advisor's corner between them |
-| Elephant Opening | 飞相局 | 1. E3+5 | Red | A solid first move that threatens nothing and commits to nothing |
+| Elephant Opening | 飞相局 | 1. E3+5 | Red | A solid first move that makes no threat and no commitment |
 | Immortal Points the Way | 仙人指路 | 1. P7+1 | Red | One soldier forward, keeping every plan open until Black declares |
 | Horse Opening | 起马局 | 1. H2+3 | Red | A horse first, keeping the cannon plans available |
 | Cross-Palace Cannon | 过宫炮 | 1. C2=6 | Red | The cannon crosses in front of its own palace to attack the far wing |
@@ -90,7 +91,7 @@ You will reach this position again and again, and from here the game turns on wh
 
 ## Which openings to learn first
 
-Learn one opening for Red and one answer to the Central Cannon for Black, and learn what to do in them rather than how many moves deep they go. The Central Cannon and the Screen Horses are the natural pair because you will meet them most. Whichever you choose, the chariots decide the opening: get them out early, onto open files. Wikipedia mentions an old saying against moving a chariot in the first three moves and notes that modern play often ignores it. The main line above has both chariots moving by move three.
+Learn one opening for Red and one answer to the Central Cannon for Black, and learn the plans in them before you learn them many moves deep. The Central Cannon and the Screen Horses are the natural pair because you will meet them most. Whichever you choose, the chariots decide the opening: get them out early, onto open files. Wikipedia mentions an old saying against moving a chariot in the first three moves and notes that modern play often ignores it. The main line above has both chariots moving by move three.
 
 ## How Xiangqiful teaches openings
 

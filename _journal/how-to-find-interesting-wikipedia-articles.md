@@ -3,7 +3,7 @@ layout: journal
 slug: how-to-find-interesting-wikipedia-articles
 title: "How to find a random Wikipedia article that is worth reading"
 date: 2026-04-11
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 seo:
   title: "How to Find Random and Interesting Wikipedia Articles"
   description: "Random article, random featured articles, Did you know, On this day and Unusual articles: where Wikipedia's best pages are, and how random Random is."
@@ -39,7 +39,7 @@ excerpt: "Every route Wikipedia offers to something worth reading, from the Rand
 
 The Random article link in Wikipedia's sidebar does exactly what it says, and that is its limit. English Wikipedia has more than seven million articles. About 7,000 of them are featured articles, the grade the community gives its best writing: roughly one in a thousand. Pressing Random is a good way to meet the encyclopedia and a slow way to find its best pages.
 
-Wikipedia has better-aimed routes built in. Here they are, from fully random to hand-picked, followed by how to combine them.
+Wikipedia has better-aimed routes built in, ranging from fully random to hand-picked, and they work well in combination.
 
 ## Every built-in way to find something to read
 
@@ -83,7 +83,7 @@ Bookmark those two addresses and you have Random buttons that only land on revie
 
 ## The hand-picked routes
 
-The Main Page is the other way in, and each of its sections runs on rules worth knowing.
+The Main Page is the other way in. Each of its sections has its own selection rules.
 
 **Today's featured article** is one featured article a day, so it clears the same bar as the random featured link.
 
@@ -95,7 +95,7 @@ The Main Page is the other way in, and each of its sections runs on rules worth 
 
 **[Vital articles](https://en.wikipedia.org/wiki/Wikipedia:Vital_articles)** works the other way round. It lists the subjects editors think most deserve a high-quality article, in five levels from the 10 most vital up to 50,000, which makes it a reading list for the central topics rather than the edges.
 
-## A routine that uses all of it
+## Combining the routes
 
 1. **Five spare minutes:** press Random a few times and stop at the first article you want to finish.
 2. **Wanting a sure thing:** use the featured or good article links above.
@@ -108,4 +108,4 @@ The Main Page is the other way in, and each of its sections runs on rules worth 
 
 There is no account and no advertising. The [privacy page](/apps/wanderwiki/privacy/) sets out that saved articles and interests are stored on the device and that articles come from Wikipedia's public APIs. Why it is a deck you put down rather than a feed you scroll is the subject of [an earlier post](/journal/reading-without-a-feed/).
 
-What the app does not try to replace is the website. If what you want is specifically a random featured article, the RandomInCategory address above is the most direct route there is.
+The app doesn.t replace the website. If you specifically want a random featured article, the RandomInCategory address above is the most direct route.

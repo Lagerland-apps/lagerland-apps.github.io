@@ -1,17 +1,16 @@
 {%- comment %}
-  Official-style "Download on the App Store" badge, inline SVG so it is crisp at
-  any size, needs no network fetch, and inherits no CSP risk. Apple's badge is a
-  recognised trust object — using it (rather than a generic text button) lifts
-  install intent because users' eyes are trained to find it.
+  Official-style "Download on the App Store" badge as inline SVG: crisp at any
+  size, no network fetch, no CSP risk. People already know Apple's badge and look
+  for it, so it gets more installs than a generic text button.
 
   Usage:
     {% include appstore-badge.html url=page.app_store_url name=page.name %}
     {% include appstore-badge.html url=... name=... class="asb--sm" %}
 
   Params:
-    url   (required) — App Store product URL
-    name  (required) — app name, for the aria-label
-    class (optional) — extra class on the <a> (e.g. size modifier)
+    url   (required): App Store product URL
+    name  (required): app name, for the aria-label
+    class (optional): extra class on the <a> (e.g. size modifier)
 {% endcomment -%}
 <a class="asb {{ include.class }}" href="{{ include.url }}" rel="noopener"
    aria-label="Download {{ include.name }} on the App Store">

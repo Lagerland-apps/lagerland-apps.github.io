@@ -31,65 +31,66 @@ faq:
 mentioned_apps:
   - liftlog
 read_time: "6 min read"
+last_updated: 2026-10-26
 ---
 
-The rest timer is the least glamorous setting in a training log and the one that decides session length. Five exercises, three sets each, three minutes between sets: that is about 40 minutes of rest. Halve the rest and the session loses about 20 minutes. Whether you lose anything else depends on the lift.
+The rest timer is the dullest setting in a training log, and it decides how long a session takes. Five exercises, three sets each, three minutes between sets: that is about 40 minutes of rest. Halve the rest and the session loses about 20 minutes. Whether you lose anything else depends on the lift.
 
 ## How long should you rest between sets?
 
 | Situation | Rest | Where the number comes from |
 |---|---|---|
-| Very heavy compound sets, 1–5 reps | 3–5 min | ACSM 2009: 3–5 minutes for advanced lifters training heavy |
-| Compound lifts, 6–12 reps (squat, bench, row, press) | 2–3 min | ACSM 2009: at least 2–3 minutes for core lifts; 3 minutes beat 1 in a 2016 trial |
-| Isolation and machine work (curls, raises, leg extensions) | 60–90 s | ACSM 2009: 1–2 minutes for assistance exercises; a 2024 meta-analysis saw no clear gain past 90 seconds |
-| High-rep, endurance-focused sets | 30–90 s | ACSM 2009: under 90 seconds for local muscular endurance |
+| Very heavy compound sets, 1-5 reps | 3-5 min | ACSM 2009: 3-5 minutes for advanced lifters training heavy |
+| Compound lifts, 6-12 reps (squat, bench, row, press) | 2-3 min | ACSM 2009: at least 2-3 minutes for core lifts; 3 minutes beat 1 in a 2016 trial |
+| Isolation and machine work (curls, raises, leg extensions) | 60-90 s | ACSM 2009: 1-2 minutes for assistance exercises; a 2024 meta-analysis saw no clear gain past 90 seconds |
+| High-rep, endurance-focused sets | 30-90 s | ACSM 2009: under 90 seconds for local muscular endurance |
 | Opposing-muscle supersets (row + press) | Rest after the pair | 2025 meta-analysis: shorter sessions, similar volume and results |
 | Short on time | Cut isolation rest first, then add a set | 2022 trial: growth tracked total volume, not rest length |
 
-Two rules sit under that table. Rest longer on the heavy lifts you do first, and on anything where your next set comes up well short of the last one. Rest less on small-muscle work, where it costs the fewest reps.
+In short: rest longer on the heavy lifts you do first, and on anything where your next set comes up well short of the last one. Rest less on small-muscle work, where shorter rest costs the fewest reps.
 
 ## What does the research say about rest between sets?
 
-The evidence has shifted from fixed prescriptions toward a looser picture: rest matters mainly through the reps it lets you keep.
+The evidence has moved away from fixed prescriptions. Rest now looks like it matters mainly through the reps it lets you keep.
 
 | Source | What it compared | What it found |
 |---|---|---|
-| [ACSM position stand, 2009](https://pubmed.ncbi.nlm.nih.gov/19204579/) | Guideline, not a single study | At least 2–3 min for heavy core lifts, 1–2 min for assistance work and for hypertrophy, 3–5 min for advanced heavy loading, under 90 s for endurance |
+| [ACSM position stand, 2009](https://pubmed.ncbi.nlm.nih.gov/19204579/) | Guideline, not a single study | At least 2-3 min for heavy core lifts, 1-2 min for assistance work and for hypertrophy, 3-5 min for advanced heavy loading, under 90 s for endurance |
 | [Schoenfeld et al., 2016](https://pubmed.ncbi.nlm.nih.gov/26605807/) | 1 vs 3 min rest, 21 trained men, 8 weeks | 3 min gave larger squat and bench 1RM gains and more thigh muscle thickness; no difference in muscular endurance |
 | [Grgic et al., 2017](https://pubmed.ncbi.nlm.nih.gov/28641044/) | Review of 6 studies on hypertrophy | Short and long rest both build muscle; trained lifters may do better with longer rest |
-| [Grgic et al., 2018](https://pubmed.ncbi.nlm.nih.gov/28933024/) | Review of 23 studies on strength | Strength rises even with under 60 s; over 2 min looks best for trained lifters, 60–120 s is enough for untrained |
+| [Grgic et al., 2018](https://pubmed.ncbi.nlm.nih.gov/28933024/) | Review of 23 studies on strength | Strength rises even with under 60 s; over 2 min looks best for trained lifters, 60-120 s is enough for untrained |
 | [Singer et al., 2024](https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2024.1429789/full) | Bayesian meta-analysis, 9 studies | Small hypertrophy benefit for rest over 60 s; no appreciable difference beyond 90 s |
 | [ACSM overview of reviews, 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC12965823/) | 137 systematic reviews | Inter-set rest did not affect strength; not enough data to say whether it affects hypertrophy |
 
-The 2016 trial is the one most often quoted, and it is a good one: trained men, 3 sets of 8–12 reps on seven exercises, three full-body sessions a week, and rest as the only difference between groups. Its limits are its size and its length. Twenty-one people for eight weeks can show a difference; it cannot pin down a precise optimum.
+The 2016 trial is the one most often quoted, and it is a good one: trained men, 3 sets of 8-12 reps on seven exercises, three full-body sessions a week, and rest as the only difference between groups. Its limits are size and length. Twenty-one people over eight weeks can show a difference, but they cannot pin down a precise optimum.
 
 The 2026 ACSM document is the newest and the most cautious. Where the 2009 stand gave specific minutes, the 2026 review gives no rest recommendation at all, because across the reviews it covered, rest length was not a significant factor for strength and the hypertrophy data were too thin to call ([Currier et al., 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC12965823/)).
 
-Rest still matters, but less than effort and total volume, and mostly through its effect on volume.
+Rest still matters, though less than effort and total volume, and mostly through its effect on volume.
 
 ## Why does longer rest help, when it does?
 
-Because it keeps reps on the later sets. Rest a minute between heavy sets and the second and third sets usually come up short of the first. Over weeks, that is less total work.
+It keeps reps on the later sets. Rest a minute between heavy sets and the second and third sets usually come up short of the first. Over weeks, that is less total work.
 
-[Longo et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/35622106/) tested this directly. Twenty-eight people trained one leg at a time on knee extensions at 80% of one-rep max for ten weeks, with 1 or 3 minutes of rest and some protocols matched for total volume load. Quadriceps growth followed volume load: about 13% in the long-rest and volume-matched short-rest conditions, about 7% in the others. Strength rose similarly across all of them. The authors' conclusion was that volume load, not the rest interval, drove the growth.
+[Longo et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/35622106/) tested this directly. Twenty-eight people trained one leg at a time on knee extensions at 80% of one-rep max for ten weeks, with 1 or 3 minutes of rest and some protocols matched for total volume load. Quadriceps growth followed volume load: about 13% in the long-rest and volume-matched short-rest conditions, about 7% in the others. Strength rose similarly across all of them. The authors concluded that volume load drove the growth and the rest interval itself did not.
 
 Singer and colleagues read their 2024 meta-analysis the same way: the benefit of resting past 60 seconds is probably mediated by smaller losses in volume load, and those losses level off as rest gets longer.
 
-The practical version is simple. Rest long enough that the next set is not cut short. If you rest less, for time or preference, add a set to make up the reps.
+In practice, rest long enough that the next set is not cut short. If you rest less, for time or preference, add a set to make up the reps.
 
 ## How do you shorten a workout without losing much?
 
-1. **Cut rest on isolation and machine work first.** Curls, raises and leg extensions recover quickly between sets. Keep the longer rest on the first heavy compound lift of the day.
-2. **Pair opposing exercises.** A [2025 meta-analysis in Sports Medicine](https://pubmed.ncbi.nlm.nih.gov/39903375/) found supersets cut session time while keeping total reps and volume load similar, with similar long-term strength and hypertrophy. Opposing pairs such as a row with a bench press kept volume best. Pairs with similar movements, such as bench press and dips, reduced it, and supersets in general felt harder and caused more fatigue.
-3. **Rest less and add a set.** Longo's volume-matched conditions are the evidence that this works.
+1. Cut rest on isolation and machine work first. Curls, raises and leg extensions recover quickly between sets. Keep the longer rest on the first heavy compound lift of the day.
+2. Pair opposing exercises. A [2025 meta-analysis in Sports Medicine](https://pubmed.ncbi.nlm.nih.gov/39903375/) found supersets cut session time while keeping total reps and volume load similar, with similar long-term strength and hypertrophy. Opposing pairs such as a row with a bench press kept volume best. Pairs with similar movements, such as bench press and dips, reduced it, and supersets in general felt harder and caused more fatigue.
+3. Rest less and add a set. Longo's volume-matched conditions show this works.
 
 ## Should you time your rest at all?
 
-I think so, for a reason that has little to do with physiology. Any progression rule that moves on reps assumes the reps are comparable from one session to the next. If Tuesday's sets had two minutes between them and Friday's had four because you were on your phone, the rep counts in your log are measuring the rest as much as the lifting. That matters most under [double progression](/journal/double-progression-explained/), where the weight only goes up once every set reaches the top of the rep range.
+I think so, though the reason has little to do with physiology. Any progression rule that moves on reps assumes the reps are comparable from one session to the next. If Tuesday's sets had two minutes between them and Friday's had four because you were on your phone, the rep counts in your log are measuring the rest as much as the lifting. That matters most under [double progression](/journal/double-progression-explained/), where the weight only goes up once every set reaches the top of the rep range.
 
-A timer keeps the variable fixed. It also stops rest creeping the other way on days when you are in a hurry.
+A timer keeps that variable fixed, and it stops rest creeping the other way on days when you are in a hurry.
 
-This is training information, not medical advice. If you have a heart condition or high blood pressure, or get dizzy during heavy sets, ask a clinician how to approach heavy lifting and rest.
+This is training information and not medical advice. If you have a heart condition or high blood pressure, or get dizzy during heavy sets, ask a clinician how to approach heavy lifting and rest.
 
 ## How LiftLog times rest
 
