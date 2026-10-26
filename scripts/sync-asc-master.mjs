@@ -298,6 +298,52 @@ const master = {
 };
 fs.writeFileSync(path.join(ROOT, "_data/asc_master.json"), JSON.stringify(master, null, 2) + "\n");
 
+// ---- site export: _data/catalog.json (committed; read by Jekyll) ----
+// Keyed by app slug. No product IDs, bundle IDs, App Store IDs of products or names: the master JSON is gitignored
+// because those contain the owner's name, so this file must never carry them (guard below throws if one slips in).
+const SITE_PLATFORMS = [["iphone", "iOS"], ["ipad", "iPadOS"], ["macos", "macOS"], ["watchos", "watchOS"]];
+const TRIAL_LABEL = { "3 days": "3-day", "1 week": "7-day", "2 weeks": "14-day", "1 month": "1-month", "2 months": "2-month", "3 months": "3-month", "6 months": "6-month", "1 year": "1-year" };
+const slimPrices = (prices) => Object.fromEntries(CODES.map((c) => [c, prices[c] ? { amount: prices[c].amount, currency: prices[c].currency } : null]));
+function trialOf(intro) {
+  if (!intro) return null;
+  const per = Object.values(intro.per_territory).filter(Boolean);
+  const first = intro.per_territory.USA || per[0];
+  if (!first || first.mode !== "free trial" || first.periods !== 1) return null;
+  const word = TRIAL_LABEL[first.duration];
+  return { label: word ? `${word} free trial` : `${first.duration} free trial`, duration: first.duration, varies: intro.summary === "varies by territory" };
+}
+const catalogApps = {};
+for (const a of result) {
+  if (!a.slug) continue;
+  const live = Object.entries(a.platforms).some(([k, v]) => v === "live" && ["iphone", "ipad", "macos", "watchos"].includes(k));
+  const plans = {};
+  const others = [];
+  for (const p of a.products) {
+    if (p.state !== "APPROVED" || p.offered_in_app === false) continue; // only products actually on sale and shown
+    if (p.kind === "subscription") {
+      plans[p.period] = { family_sharing: !!p.family_sharable, free_trial: trialOf(p.intro_offer), prices: slimPrices(p.prices) };
+    } else if (p.kind === "lifetime") {
+      plans.lifetime ||= { family_sharing: !!p.family_sharable, free_trial: null, prices: slimPrices(p.prices) };
+    } else {
+      others.push({ type: p.iap_type, label: p.name, family_sharing: !!p.family_sharable, prices: slimPrices(p.prices) });
+    }
+  }
+  catalogApps[a.slug] = {
+    live,
+    platforms: SITE_PLATFORMS.filter(([k]) => a.platforms[k] === "live").map(([, label]) => label),
+    app_price: a.app_price ? { free: a.app_price.free, prices: slimPrices(a.app_price.prices) } : null,
+    plans, other_iaps: others,
+  };
+}
+const catalog = {
+  meta: { generated_at: master.generated_at, source: "App Store Connect API", live_app_count: Object.values(catalogApps).filter((x) => x.live).length,
+    territories: TERRITORIES.map(([code, key]) => ({ code, key, currency: currencies[code] || null })) },
+  apps: catalogApps,
+};
+const catalogJson = JSON.stringify(catalog, null, 2) + "\n";
+if (/carlos|deketkuli/i.test(catalogJson)) throw new Error("catalog.json would contain the owner name; refusing to write it (check product labels)");
+fs.writeFileSync(path.join(ROOT, "_data/catalog.json"), catalogJson);
+
 // ---- human views ----
 const fmt = (p) => (p ? `${p.amount} ${p.currency}${p.next ? ` (→ ${p.next.amount} from ${p.next.from})` : ""}` : "");
 const yn = (b) => (b === true ? "yes" : b === false ? "no" : "");

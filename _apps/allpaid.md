@@ -13,9 +13,7 @@ app_store_url: "https://apps.apple.com/app/id6757253009"
 price:
   model: freemium
   value: "Free — Pro from $1.99/mo, $12.99/yr, or $24.99 lifetime"
-schema_price: "0"
-schema_high_price: "24.99"
-schema_offer_count: "4"
+price_tier: "Pro"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
 
@@ -30,7 +28,8 @@ plans:
       - "Gentle reminders before each due date"
       - "Home Screen / Lock Screen widgets, Siri, Live Activities"
   - name: "Pro · Monthly"
-    price: "$1.99/mo"
+    price: "{P_MONTHLY}/mo"
+    kind: monthly
     summary: "Full Pro, billed monthly. Cancel anytime."
     features:
       - "Unlimited bills"
@@ -39,7 +38,8 @@ plans:
       - "Full payment history"
       - "iCloud Sync across your devices"
   - name: "Pro · Annual"
-    price: "$12.99/yr"
+    price: "{P_YEARLY}/yr"
+    kind: yearly
     summary: "Same Pro features, billed once a year. ~46% cheaper than paying monthly."
     features:
       - "Everything in Pro · Monthly"
@@ -47,7 +47,8 @@ plans:
       - "Cancel anytime"
     highlight: true
   - name: "Lifetime"
-    price: "$24.99 once"
+    price: "{P_LIFETIME} once"
+    kind: lifetime
     summary: "All Pro features. Roughly 13 months of monthly Pro — then yours."
     features:
       - "Everything in Pro · Annual"
@@ -327,6 +328,6 @@ ratings:
   value: "4.9"
   count: 7
   last_synced: "2026-10-19"
-last_updated: 2026-10-09
+last_updated: 2026-10-26
 ---
 AllPaid is a calm, privacy-first bill and subscription tracker for iPhone. It is the bill tracker for people who refuse to hand a bank login to a third-party app. Bills are added manually or auto-filled from a built-in catalog of 40 common services across 18 categories — streaming (Netflix, Spotify, Disney+, YouTube Premium, Apple TV+, HBO Max, Amazon Prime, Crunchyroll, Apple Music), AI tools (ChatGPT, Claude Pro), productivity and cloud (Adobe, Microsoft 365, Dropbox, Google One, iCloud), housing (rent, mortgage), utilities (electricity, water, gas), internet and phone, four kinds of insurance, transportation, gym, student loans, credit cards, other loans, taxes, savings, groceries, entertainment, pet care, childcare, and donations. Matched in English plus Finnish and German keywords. A monthly calendar projects every recurring bill forward with daily totals — see bunched billing days weeks before they hit your account. Gentle reminders fire once before each due date with one-tap mark-as-paid in the app or straight from the notification. Pro adds on-device spending analytics: category breakdown with percentages, monthly trend charts computed from your local payment history, per-bill totals, and unlimited bills. No ads, no trackers, no account, no Plaid, no bank connection. Free with optional Pro from $1.99/month, $12.99/year, or $24.99 lifetime — about 40% of what comparable iPhone bill trackers charge for a lifetime unlock.

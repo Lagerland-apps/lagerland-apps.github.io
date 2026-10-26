@@ -386,6 +386,7 @@ permalink: /ai-index.json
   {%- assign live_apps = site.apps | where: "status", "live" -%}
   {%- assign first = true -%}
   {%- for app in live_apps -%}
+    {%- include app-facts.html app=app -%}
     {%- unless first -%},{%- endunless -%}
     {
       "name": {{ app.name | jsonify }},
@@ -394,16 +395,18 @@ permalink: /ai-index.json
       "app_store_url": {{ app.app_store_url | jsonify }},
       "tagline": {{ app.tagline | jsonify }},
       "category": {{ app.category | jsonify }},
-      "platforms": {{ app.platforms | jsonify }},
+      "platforms": {{ f_platforms | jsonify }},
       "description": {{ app.seo.description | default: app.tagline | jsonify }},
       "headline": {{ app.hero.headline | jsonify }},
       "positioning": {{ app.hero.subheadline | jsonify }},
       "keywords": {{ app.seo.keywords | default: empty | jsonify }},
       "pricing": {
         "model": {{ app.price.model | jsonify }},
-        "display": {{ app.price.value | jsonify }},
-        "schema_price": {{ app.schema_price | default: "0" | jsonify }},
-        "currency": {{ app.price_currency | default: "USD" | jsonify }}
+        "display": {{ f_price_value | jsonify }},
+        "schema_price": {{ f_schema_price | jsonify }},
+        "currency": {{ f_currency | jsonify }},
+        "free_trial": {{ f_trial | jsonify }},
+        "family_sharing": {{ f_family | jsonify }}
       },
       "privacy": {
         "third_party_tracking": {% if app.privacy.tracking %}true{% else %}false{% endif %},

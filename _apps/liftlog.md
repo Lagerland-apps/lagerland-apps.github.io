@@ -13,9 +13,8 @@ app_store_url: "https://apps.apple.com/app/id6760043411"
 price:
   model: one-time
   value: "Free 7-day trial — then $9.99–$39.99 (pay what you can, one-time)"
-schema_price: "9.99"
-schema_high_price: "39.99"
-schema_offer_count: "5"
+price_override: "Free 7-day trial — then {P_IAP_MIN}–{P_IAP_MAX} (pay what you can, one-time)"
+free_tier: false
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. All four tiers are one-time purchases — same app, no recurring fees, no auto-renew — and Family Sharing is on, so one purchase covers your household."
 pricing_note: "Every price is on the App Store listing. There is no subscription to cancel: seven days free with no card, then one payment at the tier you choose."
@@ -30,7 +29,7 @@ plans:
       - "1RM, Rep PRs, 26-week activity heatmap"
       - "Widgets, Siri, and Apple Health export"
   - name: "Fair"
-    price: "$9.99 once"
+    price: "{P_IAP:Minimum} once"
     summary: "Entry tier. The whole app, forever."
     features:
       - "Everything in the trial"
@@ -38,7 +37,7 @@ plans:
       - "All future feature updates"
       - "No subscription, no auto-renew"
   - name: "Good"
-    price: "$19.99 once"
+    price: "{P_IAP:Suggested} once"
     summary: "The honest middle. Same app, picked because the work is worth it."
     features:
       - "Everything in Fair"
@@ -52,7 +51,7 @@ plans:
       - "Everything in Good"
       - "Funds new programs and analytics"
   - name: "Patron"
-    price: "$39.99 once"
+    price: "{P_IAP:Patron} once"
     summary: "Top tier. For fans backing a tiny indie studio."
     features:
       - "Everything in Generous"
@@ -324,6 +323,6 @@ ratings:
   value: "5.0"
   count: 1
   last_synced: "2026-04-29"
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 ---
 LiftLog is a design-led strength training log for iPhone. Built around a tabular-numeric type system, haptic-rich workout sessions, and a restrained navy palette in light and dark mode, LiftLog renders weights, reps, PRs, and volume with the clarity of a stadium scoreboard. The workout session view replaces the system numeric keypad with a custom haptic-feedback grid pad designed for thumbs between working sets; completing a set gives a haptic tap and a green sweep across the row, and a set that beats your best adds a heavy haptic, a brief glow, and a PR badge. LiftLog ships 40 ready programs — StrongLifts 5×5, Starting Strength, GZCLP, Texas Method, Wendler 5/3/1, PHUL, PHAT, Push / Pull / Legs, Upper / Lower and more — plus your own, with supersets and giant sets. Each exercise carries its own progression rule (double progression, linear, percent of Training Max, or RPE), and a lift that misses its targets three sessions in a row drops to 90%. Progress tracking shows total workouts, total volume, and total sets, the last 30 days against the prior 30, and a 26-week activity heatmap. Per-exercise analytics include estimated 1RM trend lines (Adaptive Brzycki/Epley by default), best set, best volume, and Rep PRs at 1, 3, 5, and 10 reps. The exercise library holds 1,500 exercises, each with an animated X-ray-style form demo and numbered How To steps, filterable by muscle group or equipment. Home Screen and Lock Screen widgets show your streak, week, and next session, and Siri can start a workout, log a set, or start your rest timer. Pricing is the unusual part: free for seven days with no card on file, no auto-renew, and no trial trap, after which the user picks a one-time tier — $9.99 (Fair), $19.99 (Good), $29.99 (Generous), or $39.99 (Patron). One purchase, shared with your family through Family Sharing, no subscription, training history never held hostage. No third-party tracking, no advertising SDKs, no required account. Workout history stays on device — there is no cloud sync — with JSON and CSV export and optional Apple Health export. Sister app to GymLogger X — pick LiftLog for design-led iPhone polish and pay-what-you-can pricing; pick GymLogger X for logging from Apple Watch and a $39.99 lifetime price.

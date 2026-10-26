@@ -1,0 +1,125 @@
+{%- comment -%}
+  Single source of platform / price / trial facts for one app, read from _data/catalog.json
+  (exported from App Store Connect by scripts/sync-asc-master.mjs). Include it once, then use the f_* variables:
+    {% include app-facts.html app=page %}
+  Variables assigned here leak into the including template on purpose (Jekyll include scope).
+    app        the app document (page, or an item of site.apps)
+    territory  optional; default page.territory, then the language's territory, then USA
+  When the app has no catalog entry everything falls back to its front matter, so a new app page still renders.
+  Editorial front matter this include honours (none of it is a number):
+    price_lead      text before the dash in the standard price line (default "Free")
+    price_tier      name of the paid tier (default "Premium")
+    price_override  replaces the standard line; may use tokens (see tokens.html)
+    free_tier       false when there is no free tier (changes the schema lowPrice rule)
+{%- endcomment -%}
+{%- assign f_lang = page.lang | default: site.lang | default: "en" -%}
+{%- assign f_str = site.data.locales[f_lang].strings | default: site.data.locales.en.strings -%}
+{%- assign f_terr = include.territory | default: page.territory | default: site.data.locales[f_lang].territory | default: "USA" -%}
+{%- assign f_cat = site.data.catalog.apps[include.app.slug] -%}
+{%- assign f_count = site.data.catalog.meta.live_app_count -%}
+
+{%- comment %} ---- platforms ---- {%- endcomment -%}
+{%- if f_cat -%}{%- assign f_platforms = f_cat.platforms -%}{%- else -%}{%- assign f_platforms = include.app.platforms -%}{%- endif -%}
+{%- comment %} "A", "A and B", "A, B, and C": for running sentences. {%- endcomment -%}
+{%- assign f_platforms_and = "" -%}
+{%- for f_pl in f_platforms -%}
+  {%- if forloop.first -%}{%- assign f_platforms_and = f_pl -%}
+  {%- elsif forloop.last and forloop.length == 2 -%}{%- assign f_platforms_and = f_platforms_and | append: " " | append: f_str.and | append: " " | append: f_pl -%}
+  {%- elsif forloop.last -%}{%- assign f_platforms_and = f_platforms_and | append: ", " | append: f_str.and | append: " " | append: f_pl -%}
+  {%- else -%}{%- assign f_platforms_and = f_platforms_and | append: ", " | append: f_pl -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment %} ---- plan prices (formatted strings, empty when the plan is not offered) ---- {%- endcomment -%}
+{%- assign f_monthly = "" -%}{%- assign f_yearly = "" -%}{%- assign f_weekly = "" -%}{%- assign f_lifetime = "" -%}{%- assign f_app_price = "" -%}
+{%- assign f_trial = "" -%}{%- assign f_family = false -%}
+{%- assign f_p = f_cat.plans.monthly.prices[f_terr] -%}
+{%- if f_p -%}{%- capture f_monthly -%}{%- include money.html amount=f_p.amount currency=f_p.currency -%}{%- endcapture -%}{%- endif -%}
+{%- assign f_p = f_cat.plans.yearly.prices[f_terr] -%}
+{%- if f_p -%}{%- capture f_yearly -%}{%- include money.html amount=f_p.amount currency=f_p.currency -%}{%- endcapture -%}{%- endif -%}
+{%- assign f_p = f_cat.plans.weekly.prices[f_terr] -%}
+{%- if f_p -%}{%- capture f_weekly -%}{%- include money.html amount=f_p.amount currency=f_p.currency -%}{%- endcapture -%}{%- endif -%}
+{%- assign f_p = f_cat.plans.lifetime.prices[f_terr] -%}
+{%- if f_p -%}{%- capture f_lifetime -%}{%- include money.html amount=f_p.amount currency=f_p.currency -%}{%- endcapture -%}{%- endif -%}
+{%- assign f_trial = f_cat.plans.monthly.free_trial.label | default: f_cat.plans.yearly.free_trial.label | default: f_cat.plans.weekly.free_trial.label | default: "" -%}
+{%- for f_pair in f_cat.plans -%}{%- if f_pair[1].family_sharing -%}{%- assign f_family = true -%}{%- endif -%}{%- endfor -%}
+{%- assign f_has_plans = false -%}
+{%- if f_monthly != "" or f_yearly != "" or f_weekly != "" or f_lifetime != "" -%}{%- assign f_has_plans = true -%}{%- endif -%}
+
+{%- comment %} ---- the app's own (upfront) price ---- {%- endcomment -%}
+{%- assign f_app_free = true -%}
+{%- if f_cat.app_price and f_cat.app_price.free == false -%}
+  {%- assign f_p = f_cat.app_price.prices[f_terr] -%}
+  {%- if f_p -%}{%- assign f_app_free = false -%}{%- capture f_app_price -%}{%- include money.html amount=f_p.amount currency=f_p.currency -%}{%- endcapture -%}{%- endif -%}
+{%- endif -%}
+
+{%- comment %} ---- other in-app purchases: cheapest and dearest one-time tier ---- {%- endcomment -%}
+{%- assign f_iap_min = "" -%}{%- assign f_iap_max = "" -%}
+{%- assign f_min_n = 1000000 -%}{%- assign f_max_n = -1 -%}
+{%- for f_o in f_cat.other_iaps -%}
+  {%- assign f_p = f_o.prices[f_terr] -%}
+  {%- if f_o.type == "non_consumable" and f_p -%}
+    {%- assign f_n = f_p.amount | plus: 0 -%}
+    {%- if f_n < f_min_n -%}{%- assign f_min_n = f_n -%}{%- capture f_iap_min -%}{%- include money.html amount=f_p.amount currency=f_p.currency -%}{%- endcapture -%}{%- endif -%}
+    {%- if f_n > f_max_n -%}{%- assign f_max_n = f_n -%}{%- capture f_iap_max -%}{%- include money.html amount=f_p.amount currency=f_p.currency -%}{%- endcapture -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment %} ---- structured-data numbers (schema.org lowPrice / highPrice / offerCount, unformatted decimals) ---- {%- endcomment -%}
+{%- assign f_low_n = 1000000 -%}{%- assign f_low_s = "0" -%}{%- assign f_high_n = -1 -%}{%- assign f_high_s = "0" -%}
+{%- assign f_offers = 0 -%}
+{%- assign f_currency = "USD" -%}
+{%- for f_pair in f_cat.plans -%}
+  {%- assign f_p = f_pair[1].prices[f_terr] -%}
+  {%- if f_p -%}
+    {%- assign f_offers = f_offers | plus: 1 -%}{%- assign f_currency = f_p.currency -%}{%- assign f_n = f_p.amount | plus: 0 -%}
+    {%- if f_n < f_low_n -%}{%- assign f_low_n = f_n -%}{%- assign f_low_s = f_p.amount -%}{%- endif -%}
+    {%- if f_n > f_high_n -%}{%- assign f_high_n = f_n -%}{%- assign f_high_s = f_p.amount -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- for f_o in f_cat.other_iaps -%}
+  {%- assign f_p = f_o.prices[f_terr] -%}
+  {%- if f_p -%}
+    {%- assign f_offers = f_offers | plus: 1 -%}{%- assign f_currency = f_p.currency -%}{%- assign f_n = f_p.amount | plus: 0 -%}
+    {%- if f_o.type == "non_consumable" and f_n < f_low_n -%}{%- assign f_low_n = f_n -%}{%- assign f_low_s = f_p.amount -%}{%- endif -%}
+    {%- if f_n > f_high_n -%}{%- assign f_high_n = f_n -%}{%- assign f_high_s = f_p.amount -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if f_app_free == false -%}
+  {%- assign f_p = f_cat.app_price.prices[f_terr] -%}
+  {%- assign f_currency = f_p.currency -%}{%- assign f_n = f_p.amount | plus: 0 -%}
+  {%- if f_n > f_high_n -%}{%- assign f_high_s = f_p.amount -%}{%- endif -%}
+  {%- assign f_schema_price = f_p.amount -%}{%- assign f_offers = f_offers | plus: 1 -%}
+{%- elsif include.app.free_tier == false -%}
+  {%- assign f_schema_price = f_low_s -%}
+{%- else -%}
+  {%- assign f_schema_price = "0" -%}
+{%- endif -%}
+{%- assign f_schema_high = f_high_s -%}
+{%- if f_cat == nil -%}
+  {%- assign f_schema_price = include.app.schema_price | default: "0" -%}
+  {%- assign f_schema_high = include.app.schema_high_price | default: f_schema_price -%}
+  {%- assign f_offers = include.app.schema_offer_count | default: "2" -%}
+  {%- assign f_currency = include.app.price_currency | default: "USD" -%}
+{%- endif -%}
+
+{%- comment %} ---- the standard price line, or the app's override ---- {%- endcomment -%}
+{%- if include.app.price_override -%}
+  {%- capture f_price_value -%}{%- include tokens.html text=include.app.price_override -%}{%- endcapture -%}
+{%- elsif f_cat == nil -%}
+  {%- assign f_price_value = include.app.price.value -%}
+{%- elsif f_app_free == false -%}
+  {%- capture f_price_value -%}{{ f_app_price }} — {{ f_str.one_time_purchase }}{%- endcapture -%}
+{%- elsif f_has_plans -%}
+  {%- assign f_pieces = "" | split: "" -%}
+  {%- if f_monthly != "" -%}{%- capture f_piece -%}{{ f_monthly }}{{ f_str.per_month }}{%- endcapture -%}{%- assign f_pieces = f_pieces | push: f_piece -%}{%- endif -%}
+  {%- if f_yearly != "" -%}{%- capture f_piece -%}{{ f_yearly }}{{ f_str.per_year }}{%- endcapture -%}{%- assign f_pieces = f_pieces | push: f_piece -%}{%- endif -%}
+  {%- if f_lifetime != "" -%}{%- capture f_piece -%}{{ f_lifetime }} {{ f_str.lifetime }}{%- endcapture -%}{%- assign f_pieces = f_pieces | push: f_piece -%}{%- endif -%}
+  {%- if f_pieces.size == 1 -%}{%- assign f_list = f_pieces[0] -%}
+  {%- elsif f_pieces.size == 2 -%}{%- capture f_list -%}{{ f_pieces[0] }} {{ f_str.or }} {{ f_pieces[1] }}{%- endcapture -%}
+  {%- else -%}{%- capture f_list -%}{{ f_pieces[0] }}, {{ f_pieces[1] }}, {{ f_str.or }} {{ f_pieces[2] }}{%- endcapture -%}
+  {%- endif -%}
+  {%- capture f_price_value -%}{{ include.app.price_lead | default: f_str.free }} — {{ include.app.price_tier | default: f_str.default_tier }} {{ f_str.from }} {{ f_list }}{%- endcapture -%}
+{%- else -%}
+  {%- assign f_price_value = include.app.price.value -%}
+{%- endif -%}

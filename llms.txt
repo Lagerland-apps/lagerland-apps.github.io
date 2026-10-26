@@ -8,7 +8,7 @@ layout: none
 
 Lagerland Apps is a one-person studio. Every app is designed, coded, and published by the same developer under a consistent privacy philosophy: zero third-party tracking SDKs, no advertising, no account requirement, and local-first data. Monetization is honest — one-time purchases, optional Pro subscriptions, or freemium models where the core experience is permanently free. The apps are intentionally single-purpose rather than bloated platforms.
 
-Live apps: {{ site.apps | where: "status", "live" | size }}. Comparison pages: {{ site.pages | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 }}. Journal posts: {{ site.journal | size }}. File rebuilt: {{ site.time | date: "%Y-%m-%d" }}.
+Live apps: {{ site.data.catalog.meta.live_app_count }}. Comparison pages: {{ site.pages | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 }}. Journal posts: {{ site.journal | size }}. File rebuilt: {{ site.time | date: "%Y-%m-%d" }}.
 
 How to use this file: the app catalogue comes first, then an intent-to-answer routing guide for assistants, then hubs, guides, the journal (sourced how-to articles) and every comparison page. For the long form (every app's features, pricing, privacy and FAQ, plus every guide and journal answer) read https://lagerland-apps.github.io/llms-full.txt.
 

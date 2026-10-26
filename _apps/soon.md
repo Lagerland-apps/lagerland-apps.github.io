@@ -13,9 +13,6 @@ app_store_url: "https://apps.apple.com/app/id6757280643"
 price:
   model: freemium
   value: "Free — Premium from $1.99/mo"
-schema_price: "0"
-schema_high_price: "12.99"
-schema_offer_count: "4"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
 
@@ -35,7 +32,8 @@ plans:
       - "Reflection mode"
       - "39 languages"
   - name: "Premium · Monthly"
-    price: "$1.99/mo"
+    price: "{P_MONTHLY}/mo"
+    kind: monthly
     summary: "All Premium features, billed monthly. Cancel anytime."
     features:
       - "Unlimited events"
@@ -47,7 +45,8 @@ plans:
       - "Event notifications"
       - "7-day free trial · cancel anytime"
   - name: "Premium · Annual"
-    price: "$9.99/yr"
+    price: "{P_YEARLY}/yr"
+    kind: yearly
     summary: "Same Premium features, billed once a year. Roughly 5 months of monthly Premium."
     features:
       - "Everything in Premium · Monthly"
@@ -55,7 +54,8 @@ plans:
       - "7-day free trial · cancel anytime"
     highlight: true
   - name: "Lifetime"
-    price: "$12.99 once"
+    price: "{P_LIFETIME} once"
+    kind: lifetime
     summary: "All Premium features. Roughly 8 months of monthly Premium — then yours."
     features:
       - "Everything in Premium · Annual"
@@ -342,7 +342,7 @@ related_journal:
 # in-body contextual links return 5–25% organic uplift.
 show_body: true
 about_heading: "What Soon. does — countdown app, planner, widgets, weather"
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 ---
 Soon. is a [countdown and planner app for iPhone](#features) — the complete rebuild of TheWait — that turns important moments into living countdowns. Trips, weddings, birthdays, anniversaries, graduations, due dates, and personal milestones each render full-bleed with a photo background you pin yourself, live weather for the destination, and daily notes that shift as the date approaches.
 

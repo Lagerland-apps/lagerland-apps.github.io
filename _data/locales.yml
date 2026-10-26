@@ -1,0 +1,22 @@
+# Display rules for prices and the standard price line, per language.
+# English is the only language today. A translated site adds one block here (e.g. `de:`) and sets
+# `lang: de` and `territory: DEU` on its pages; every price helper reads those two values.
+# Currency rules: symbol, where it goes (before/after), decimals, decimal and group separators.
+# Strings feed the standard price line ("Free — Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime").
+en:
+  territory: USA
+  currencies:
+    USD: { symbol: "$", position: before, decimals: 2, decimal: ".", group: "," }
+  strings:
+    free: "Free"
+    from: "from"
+    per_month: "/mo"
+    per_year: "/yr"
+    per_week: "/wk"
+    lifetime: "lifetime"
+    once: "once"
+    or: "or"
+    and: "and"
+    one_time_purchase: "one-time purchase"
+    default_tier: "Premium"
+    family_sharing: "Family Sharing"

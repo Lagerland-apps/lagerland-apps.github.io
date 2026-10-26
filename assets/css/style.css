@@ -1352,6 +1352,12 @@ html.js .dot--live { animation: livePulse 2.4s ease-in-out infinite; }
   color: var(--text-primary);
   margin: var(--s-1) 0;
 }
+.plan-meta {
+  font-size: var(--text-xs, 0.8125rem);
+  color: var(--text-secondary);
+  margin-bottom: var(--s-1);
+}
+.plan-meta--trial { font-weight: 600; }
 .plan-summary {
   font-size: var(--text-sm);
   color: var(--text-secondary);

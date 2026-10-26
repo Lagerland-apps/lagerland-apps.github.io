@@ -13,15 +13,15 @@ app_store_url: "https://apps.apple.com/app/id6758547802"
 price:
   model: freemium
   value: "$17.99/year or $29.99 lifetime"
-schema_price: "17.99"
-schema_high_price: "29.99"
-schema_offer_count: "2"
+price_override: "{P_YEARLY}/year or {P_LIFETIME} lifetime"
+free_tier: false
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. The free download runs in demo mode with sample data; connecting your own App Store Connect account needs Pro. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
 
 plans:
   - name: "Annual"
-    price: "$17.99/yr"
+    price: "{P_YEARLY}/yr"
+    kind: yearly
     summary: "Full AppMeta, billed once a year. Cancel anytime."
     features:
       - "All 50 App Store Connect locales, side-by-side editing"
@@ -32,7 +32,8 @@ plans:
       - "TestFlight, reviews, IAPs, Subscription Groups, Game Center"
       - "Sales analytics + performance diagnostics"
   - name: "Lifetime"
-    price: "$29.99 once"
+    price: "{P_LIFETIME} once"
+    kind: lifetime
     summary: "All AppMeta features. About 20 months of annual — then yours."
     features:
       - "Everything in Annual"
@@ -344,6 +345,6 @@ release:
 related_apps:
   - appmeta-pulse
   - mockly
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 ---
 AppMeta is a native macOS client for App Store Connect, built for indie iOS and macOS developers who ship more than one app and want their editing surface on the desktop rather than in a browser tab. It edits app metadata across all 50 ASC locales side-by-side — including the 11 locales Apple added in 2026 (Bangla, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, Slovenian and Urdu) — with live character counts, the live App Store Connect value next to every change before a push, and per-field, per-locale, or all-at-once sync granularity. Keyword diagnosis runs entirely on-device: keyword/subtitle overlap detection, repeated-word cleanup, cross-locale duplicates, search-coverage counts, and storefront coverage. Live keyword research is opt-in: difficulty from the apps that rank for a phrase, demand from Apple's search suggestions or your own Apple Ads account, and competitor in-app purchase prices. AI keyword generation and translation are opt-in and run through whichever provider you trust — Anthropic Claude, OpenAI GPT, Google Gemini, any OpenAI-compatible endpoint (Ollama, LM Studio, local proxies), or Apple Intelligence on-device (macOS 26, zero API key, zero network call). The release surface is in one app: TestFlight builds and What to Test, review reading and reply, App Review Information, pricing and availability, age ratings, submission for review, In-App Purchases, Subscription Groups, and Game Center editing (Achievements, Leaderboards, Leaderboard Sets) with locale-aware UI. App Privacy details stay in App Store Connect. Built on the App Store Connect API v1 with JWT authentication and a team .p8 private key stored in macOS Keychain — no app-specific password, no scraped browser session. SwiftUI + SwiftData, macOS 14+ Sonoma. No backend servers, no analytics SDKs, no tracking domains. Free demo mode; $17.99/year or $29.99 lifetime to connect your account. The same tool Lagerland ships every release of all 20 catalogue apps with.

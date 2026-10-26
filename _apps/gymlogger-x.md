@@ -12,9 +12,7 @@ app_store_url: "https://apps.apple.com/app/id6755734580"
 price:
   model: freemium
   value: "Free — Pro from $1.99/mo, $17.99/yr, or $39.99 lifetime"
-schema_price: "0"
-schema_high_price: "39.99"
-schema_offer_count: "4"
+price_tier: "Pro"
 
 # Plans grid — Free / Pro Monthly / Pro Annual / Lifetime. The plans_footnote
 # carries the USD-pricing disclaimer for international buyers and the App-Store
@@ -35,7 +33,8 @@ plans:
       - "Apple Health workout export and a plate calculator"
       - "On-device storage, synced through your own iCloud"
   - name: "Pro Monthly"
-    price: "$1.99 / mo"
+    price: "{P_MONTHLY} / mo"
+    kind: monthly
     summary: "Full Pro, billed monthly. Cancel anytime."
     features:
       - "Unlimited programs and templates"
@@ -46,14 +45,16 @@ plans:
       - "Animated exercise demos and custom exercises"
       - "Import workouts and programs from CSV"
   - name: "Pro Annual"
-    price: "$17.99 / year"
+    price: "{P_YEARLY} / year"
+    kind: yearly
     summary: "Same Pro features, billed once a year. ~25% cheaper than paying monthly."
     features:
       - "Everything in Pro Monthly"
       - "~25% cheaper than paying monthly all year"
       - "Cancel anytime"
   - name: "Lifetime"
-    price: "$39.99 one-time"
+    price: "{P_LIFETIME} one-time"
+    kind: lifetime
     summary: "Everything in Pro, forever. About one in three Pro users picks this tier — training history is a multi-year asset."
     features:
       - "Everything in Pro Annual — permanently unlocked"
@@ -276,6 +277,6 @@ ratings:
   value: "4.8"
   count: 17
   last_synced: "2026-06-22"
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 ---
 GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — built as a private alternative to Strong, Hevy, and Fitbod with the cheapest lifetime tier ($39.99) and no account required. The Smart Program Creator builds personalised periodised training (Full Body, Upper/Lower, PPL, Push/Pull, Arnold, Bro Split) with linear, DUP, block, or wave periodisation, reps-in-reserve targets, and scheduled deload weeks, and a 44-program library adds ready-made plans. Pro insights surface plateau detection (e1RM failing to clear a threshold derived from your own recent rate of gain, while volume holds steady), muscle balance analysis (push:pull, upper:lower, front:back), training load monitoring, and fatigue tracking. On Apple Watch you log each set's reps and weight, run rest timers, and see live heart rate while the iPhone runs the session. Tracks personal records, 1RM estimates (Epley), volume trends, and training consistency. No ads, no accounts, no tracking, no AI nagging. Free at the core; Pro from $1.99/month, $17.99/year, or $39.99 lifetime.

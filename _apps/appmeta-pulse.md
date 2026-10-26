@@ -13,10 +13,9 @@ app_store_url: "https://apps.apple.com/app/id6758788164"
 price:
   model: subscription
   value: "Free trial — from $0.99/mo"
-price_currency: "USD"
-schema_price: "0.99"
-schema_high_price: "2.99"
-schema_offer_count: "4"
+price_lead: "Free trial"
+price_tier: "Pro"
+free_tier: false
 
 # Enable in-page "Jump to" anchor nav (renders only when sections exist).
 jump_nav: true
@@ -37,7 +36,8 @@ plans:
       - "iPhone app; the App Store also offers it on Apple silicon Macs and Apple Vision Pro"
       - "Zero analytics SDKs, zero tracking — verifiable on the App Store privacy label"
   - name: "Pro"
-    price: "$0.99 / mo · $1.99 / yr"
+    price: "{P_MONTHLY} / mo · {P_YEARLY} / yr"
+    kind: monthly
     summary: "Your own numbers, monthly or yearly. 7-day free trial; cancel anytime."
     features:
       - "Proceeds or sales, units, and new subscriptions across your portfolio"
@@ -47,7 +47,8 @@ plans:
       - "12 Home Screen and Lock Screen widgets, and replies to App Store reviews"
       - "Yearly is about 83% cheaper than monthly billing ($1.99 vs $11.88/yr)"
   - name: "Lifetime"
-    price: "$2.99 one-time"
+    price: "{P_LIFETIME} one-time"
+    kind: lifetime
     summary: "Pay once, use forever."
     highlight_label: "Best long-term value"
     features:
@@ -253,7 +254,7 @@ founder:
 related_apps:
   - appmeta
   - mockly
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 ---
 
 Apple's own App Store Connect app is built to <em>manage</em> a developer business — submit builds, reply to reviews, edit metadata, manage TestFlight. That is the right tool for the work. It is not the right tool for the question almost every indie publisher actually asks ten times a day: <em>how is yesterday looking?</em> Open the official app on a phone and you are three taps and a loading spinner away from a number you wanted in two seconds.

@@ -15,7 +15,7 @@ seo:
     - iPad apps without ads
     - Apple Health analytics app
     - iOS apps without subscriptions
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 ---
 
 {%- comment %} ===== Structured data: ItemList of all live apps + FAQPage ===== {% endcomment -%}
@@ -126,7 +126,7 @@ last_updated: 2026-10-25
       Calm, private software<br>
       <span class="gradient-text">for people who notice details.</span>
     </h1>
-    <p class="hero-eyebrow">{{ live_apps.size }} indie iOS, iPadOS, watchOS and macOS apps — no ads, no accounts, no tracking.</p>
+    <p class="hero-eyebrow">{{ site.data.catalog.meta.live_app_count }} indie iOS, iPadOS, watchOS and macOS apps — no ads, no accounts, no tracking.</p>
     <p class="lead">
       Started in Finland in 2025 as a one-person Apple studio. Every app passes Apple's App Tracking Transparency check with no IDFA request and zero advertising SDKs. Built under EU jurisdiction, with GDPR as the default — not a feature.
     </p>
@@ -164,7 +164,7 @@ last_updated: 2026-10-25
   <div class="about-strip">
     <p class="overline">About Lagerland Apps</p>
     <p class="lead">
-      A one-person Apple studio in Finland building <strong>{{ live_apps.size }} privacy-first applications</strong> for iPhone, iPad, Apple Watch, and Mac. Every app is free of third-party trackers, ships zero advertising SDKs, and requires no account. Funded by honest paid software — one-time purchases, optional Pro subscriptions, or freemium tiers — never by ads, data brokers, or growth-hack dark patterns.
+      A one-person Apple studio in Finland building <strong>{{ site.data.catalog.meta.live_app_count }} privacy-first applications</strong> for iPhone, iPad, Apple Watch, and Mac. Every app is free of third-party trackers, ships zero advertising SDKs, and requires no account. Funded by honest paid software — one-time purchases, optional Pro subscriptions, or freemium tiers — never by ads, data brokers, or growth-hack dark patterns.
     </p>
     <p class="small">
       Categories: health analytics · daily planning · bill tracking · workout logging · reading · Apple developer tools · utilities.
@@ -199,7 +199,7 @@ last_updated: 2026-10-25
     <div class="trust-item">
       {%- comment %} Real value server-rendered — JS only replays it as a
         count-up. Crawlers and no-JS visitors must never see "0". {% endcomment -%}
-      <span class="trust-value" data-count="{{ live_apps.size }}" data-suffix="">{{ live_apps.size }}</span>
+      <span class="trust-value" data-count="{{ site.data.catalog.meta.live_app_count }}" data-suffix="">{{ site.data.catalog.meta.live_app_count }}</span>
       <span class="trust-label">Apps Published</span>
     </div>
     {%- assign avg_rating = avg10 | default: 0 | divided_by: 10.0 -%}
@@ -467,7 +467,7 @@ last_updated: 2026-10-25
       </tbody>
     </table>
     <p class="small transparency-footnote">
-      A representative sample. No IDFA is ever requested across the catalogue, and no advertising SDKs are linked into any app. <a href="/transparency/"><strong>See the per-app Privacy Manifest data for all {{ site.apps | where: "status", "live" | size }} apps →</strong></a>
+      A representative sample. No IDFA is ever requested across the catalogue, and no advertising SDKs are linked into any app. <a href="/transparency/"><strong>See the per-app Privacy Manifest data for all {{ site.data.catalog.meta.live_app_count }} apps →</strong></a>
     </p>
   </div>
 </section>

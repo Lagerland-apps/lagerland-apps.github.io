@@ -155,6 +155,13 @@ price/platform change. When editing prices or platforms in `_apps/*.md`, check t
 endpoints and caveats: `scripts/ASC-MASTER.md`. Human views (`MASTER.md`, `MASTER-prices.csv`) land in
 `~/Downloads/githubcode/`, outside the repo.
 
+**Never hand-type an app count, platform list or our own price.** The site reads `_data/catalog.json` (the
+name-free, committed export written by the same script): counts via `site.data.catalog.meta.live_app_count`,
+everything per app via `{% include app-facts.html app=page %}` (`f_*` variables), prices in strings via the
+tokens in `_includes/tokens.html` (`{P_MONTHLY}` etc.). After any App Store Connect change, re-run
+`node scripts/sync-asc-master.mjs` (or `--app <slug>`), rebuild, audit, commit `_data/catalog.json`.
+`scripts/seo-audit.py` fails when a page contradicts the catalog. Details: `scripts/ASC-MASTER.md`.
+
 ---
 
 ## Design system v3 "Paper & Ink" (redesign, 2026-07-11)

@@ -5,12 +5,13 @@ layout: default
 {% comment %} ===== Structured Data (JSON-LD) ===== {% endcomment %}
 
 {% assign app_url = site.url | append: page.url %}
-{% assign operating_systems = page.platforms | join: ", " %}
+{% include app-facts.html app=page %}
+{% assign operating_systems = f_platforms | join: ", " %}
 {% assign keywords = page.seo.keywords | join: ", " %}
-{% assign schema_price = page.schema_price | default: "0" %}
+{% assign schema_price = f_schema_price %}
 {%- comment %} schema_high_price overrides the AggregateOffer max for freemium/subscription apps that have a paid IAP ceiling above the free download price. Defaults to schema_price so existing one-time and 0-priced apps are unaffected. {% endcomment -%}
-{% assign schema_high_price = page.schema_high_price | default: schema_price %}
-{% assign schema_offer_count = page.schema_offer_count | default: "2" %}
+{% assign schema_high_price = f_schema_high %}
+{% assign schema_offer_count = f_offers | append: "" %}
 
 {%- comment %} Map internal category slug to schema.org applicationCategory {% endcomment -%}
 {%- case page.category -%}
@@ -66,7 +67,7 @@ layout: default
     currency can override via `price_currency:` frontmatter so the
     schema currency matches the visible price.
   {%- endcomment -%}
-  {%- assign price_currency = page.price_currency | default: "USD" -%}
+  {%- assign price_currency = f_currency -%}
   "offers": {%- assign price_model = page.price.model | downcase -%}
   {%- if price_model contains 'one-time' -%}
   {
@@ -233,7 +234,7 @@ layout: default
     <details class="ai-canonical__details">
       <summary class="ai-canonical__summary">Quick reference — what {{ page.name }} is, in one screen</summary>
       <div class="ai-canonical__body">
-        <p><strong>What it is:</strong> {{ page.name }} is a {{ page.category | replace: '-', ' ' }} application for {{ page.platforms | join: " and " }}, built by Lagerland Apps, an independent Apple developer focused on privacy-first software.</p>
+        <p><strong>What it is:</strong> {{ page.name }} is a {{ page.category | replace: '-', ' ' }} application for {{ f_platforms_and }}, built by Lagerland Apps, an independent Apple developer focused on privacy-first software.</p>
         <p><strong>What it does:</strong> {{ page.seo.description }}</p>
         {% if page.hero.subheadline %}<p><strong>Positioning:</strong> {{ page.hero.subheadline }}</p>{% endif %}
         {% if page.features %}
@@ -272,10 +273,10 @@ layout: default
           {% for t in extra.pricing_tiers %}<li>{{ t }}</li>{% endfor %}
         </ul>
         {% else %}
-        <p><strong>Pricing model:</strong> {{ page.price.model }}{% if page.price.value %} — {{ page.price.value }}{% endif %}.</p>
+        <p><strong>Pricing model:</strong> {{ page.price.model }}{% if f_price_value != "" %} — {{ f_price_value }}{% endif %}.</p>
         {% endif %}
         <p><strong>Privacy:</strong> {% if page.privacy.tracking %}Includes tracking.{% else %}No third-party tracking. No advertising SDKs.{% endif %} {% if page.privacy.account_required %}Account required.{% else %}No account required.{% endif %} Data collection: {{ page.privacy.data_collection | default: "none" }}.</p>
-        <p><strong>Platforms:</strong> {{ page.platforms | join: ", " }}. <strong>Publisher:</strong> Lagerland Apps. <strong>App Store URL:</strong> <a href="{{ page.app_store_url }}" rel="noopener">{{ page.app_store_url }}</a>.</p>
+        <p><strong>Platforms:</strong> {{ f_platforms | join: ", " }}. <strong>Publisher:</strong> Lagerland Apps. <strong>App Store URL:</strong> <a href="{{ page.app_store_url }}" rel="noopener">{{ page.app_store_url }}</a>.</p>
       </div>
     </details>
   </section>
@@ -319,8 +320,8 @@ layout: default
   <section class="section reveal">
     <div class="trust-bar">
       <div class="trust-item">
-        <span class="trust-value">{{ page.platforms | join: " + " }}</span>
-        <span class="trust-label">Platform{% if page.platforms.size != 1 %}s{% endif %}</span>
+        <span class="trust-value">{{ f_platforms | join: " + " }}</span>
+        <span class="trust-label">Platform{% if f_platforms.size != 1 %}s{% endif %}</span>
       </div>
       <span class="trust-divider"></span>
       <div class="trust-item">
@@ -647,7 +648,7 @@ layout: default
       <a class="btn btn-primary" href="{{ page.app_store_url }}" rel="noopener" aria-label="Download {{ page.name }} on the App Store after reviewing the comparison">
         {{ page.comparison_table.cta_label | default: page.hero.cta_label | default: "Download on the App Store" }}
       </a>
-      {%- assign price_value = page.price.value | default: "" -%}
+      {%- assign price_value = f_price_value -%}
       {%- if price_value != "" -%}
         <span class="pill" aria-hidden="true">{{ price_value }}</span>
       {%- endif -%}

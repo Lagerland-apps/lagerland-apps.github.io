@@ -23,10 +23,7 @@ app_store_url: "https://apps.apple.com/app/id6806255929"
 price:
   model: free
   value: "20 levels free · $2.99 unlocks 60 more"
-price_currency: "USD"
-schema_price: "0"
-schema_high_price: "2.99"
-schema_offer_count: "2"
+price_override: "20 levels free · {P_IAP:Tare Full Access} unlocks 60 more"
 
 pricing_note: "Every price is on the App Store listing. There is no subscription to cancel, and Chapter I stays free — no trial, no card."
 
@@ -45,7 +42,7 @@ plans:
       - "No ads, no account, works offline"
     highlight: true
   - name: "Chapters II–IV"
-    price: "$2.99 once"
+    price: "{P_IAP:Tare Full Access} once"
     summary: "The other sixty levels. Yours forever."
     features:
       - "The Secret — reading the cards, tilted comparisons and ratios"
@@ -251,7 +248,7 @@ related_journal:
 
 show_body: true
 about_heading: "What Tare is — a balance puzzle you solve by deduction"
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 ---
 
 Tare is a logic puzzle disguised as a toy. Each level is a painted hanging mobile on a sky-blue board, with a shelf of numbered weights beneath it. Your job is to hang every weight on a hook so that **every beam balances at the same time**.

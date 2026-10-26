@@ -14,9 +14,7 @@ app_store_url: "https://apps.apple.com/app/id6773507068"
 price:
   model: freemium
   value: "Free — Pawza Pro from $2.99/mo"
-schema_price: "0"
-schema_high_price: "39.99"
-schema_offer_count: "4"
+price_tier: "Pawza Pro"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The Lifetime tier is a one-time purchase — no auto-renew. Monthly and Yearly include a 7-day free trial and can be cancelled anytime in Settings before renewal. Pawza is universal — one purchase runs on both iPhone and iPad."
 
@@ -32,7 +30,8 @@ plans:
       - "Weight tracking with trend charts"
       - "On-device storage — no account required"
   - name: "Pro · Monthly"
-    price: "$2.99/mo"
+    price: "{P_MONTHLY}/mo"
+    kind: monthly
     summary: "Full Pawza Pro, billed monthly. 7-day free trial."
     features:
       - "Unlimited pets"
@@ -41,7 +40,8 @@ plans:
       - "Unlimited searchable photo gallery"
       - "Vet-visit PDF generator"
   - name: "Pro · Yearly"
-    price: "$19.99/yr"
+    price: "{P_YEARLY}/yr"
+    kind: yearly
     summary: "Same Pro features, billed once a year. 7-day free trial — about 44% cheaper than monthly."
     highlight: true
     features:
@@ -49,7 +49,8 @@ plans:
       - "About 44% cheaper than monthly over a year"
       - "7-day free trial, cancel anytime"
   - name: "Lifetime"
-    price: "$39.99 once"
+    price: "{P_LIFETIME} once"
+    kind: lifetime
     summary: "All Pro features, one payment. Roughly two years of yearly Pro — then it's yours."
     features:
       - "Everything in Pro · Yearly"
@@ -302,6 +303,6 @@ ratings:
   value: "5.0"
   count: 1
   last_synced: "2026-08-13"
-last_updated: 2026-10-09
+last_updated: 2026-10-26
 ---
 Pawza is a private pet health record keeper for iPhone and iPad that keeps every pet's medical life in one place — vaccinations, medications, weight, vet visits, notes, and photos — and removes the most tedious part of doing so. Its defining feature is AI document scanning: photograph any vet document — a vaccination certificate, a lab result, a prescription label, a discharge note — and Pawza reads it on-device and fills in the structured records for you. Text is extracted with Apple's Vision OCR, and with Pawza Pro on devices with Apple Intelligence (iOS 26 and later) an on-device model turns that text into fields like vaccine name, date given, due date, medication, dose, and clinic; otherwise Pawza falls back to OCR-assisted entry. Either way the processing is local — documents are never uploaded to a Pawza server, because Pawza has no server. You always review and confirm before anything is written to your records. Around that, Pawza tracks vaccinations and medication courses with proper given/due dates, sends gentle local reminders on the day each shot, refill, deworming, flea/tick treatment, or checkup is due, charts weight trends with Swift Charts so a slow gain or loss is obvious early, keeps a searchable photo gallery, and — with Pawza Pro — exports a pet's entire history as a clean, printable vet-visit PDF in one tap. Pawza is free for one pet with full records, reminders, and weight tracking and no account required; Pawza Pro unlocks unlimited pets and scans, AI auto-fill and summaries for scanned records, the unlimited photo gallery, and the vet PDF for $2.99/month or $19.99/year (each with a 7-day free trial) or $39.99 once as a Lifetime purchase that includes Family Sharing for up to five family members. Privacy is structural rather than promised: there is no Pawza account and no Pawza server, records live on-device in Apple's SwiftData, optional sync uses your own private iCloud database through your Apple ID and is compatible with Advanced Data Protection, and there are no ads, no analytics SDKs, and no tracking. Pawza is a universal app — one purchase runs on both iPhone and iPad with an adaptive iPad layout — and requires iOS 17.6 or later.

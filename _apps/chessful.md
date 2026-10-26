@@ -13,9 +13,6 @@ app_store_url: "https://apps.apple.com/app/id6761336870"
 price:
   model: freemium
   value: "Free — Premium from $4.99/mo"
-schema_price: "0"
-schema_high_price: "39.99"
-schema_offer_count: "4"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew. Universal Purchase across iPhone, iPad, and Mac."
 
@@ -34,7 +31,8 @@ plans:
       - "Basic skill tracking across the 5 dimensions"
       - "Works fully offline, no account"
   - name: "Premium · Monthly"
-    price: "$4.99/mo"
+    price: "{P_MONTHLY}/mo"
+    kind: monthly
     summary: "Full Premium, billed monthly. Cancel anytime."
     features:
       - "Unlimited deep game analysis with full move-by-move commentary"
@@ -44,7 +42,8 @@ plans:
       - "Alternative-move exploration with strategic reasoning"
       - "7-day free trial · cancel anytime"
   - name: "Premium · Annual"
-    price: "$29.99/yr"
+    price: "{P_YEARLY}/yr"
+    kind: yearly
     summary: "Same Premium features, billed once a year. ~50% cheaper than paying monthly."
     features:
       - "Everything in Premium · Monthly"
@@ -52,7 +51,8 @@ plans:
       - "7-day free trial · cancel anytime"
     highlight: true
   - name: "Lifetime"
-    price: "$39.99 once"
+    price: "{P_LIFETIME} once"
+    kind: lifetime
     summary: "All Premium features. Roughly 10 months of monthly Premium — then yours."
     features:
       - "Everything in Premium · Annual"
@@ -346,7 +346,7 @@ related_journal:
 show_body: true
 about_heading: "What Chessful does — chess training, analysis, 40 opponents"
 related_apps: ["shogiful", "xiangqiful"]
-last_updated: 2026-10-09
+last_updated: 2026-10-26
 ---
 Chessful is a [chess training & analysis app for iPhone, iPad, and Mac](#features) — built around the idea that Stockfish's centipawn numbers don't help most players improve. The app reviews every move you make, then turns the engine's output into plain English: which piece you hung, which fork you missed, which prophylactic move would have saved the position. From there, [Chessful builds an adaptive training queue](#how-it-works) targeted at the patterns where you actually lose — tactics, defense, positional play, openings, endgames — using spaced repetition and forty AI opponents tuned to specific playing styles.
 

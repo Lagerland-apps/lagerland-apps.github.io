@@ -24,10 +24,6 @@ app_store_url: "https://apps.apple.com/app/id6794340136"
 price:
   model: freemium
   value: "Free — Premium from $1.99/mo"
-price_currency: "USD"
-schema_price: "0"
-schema_high_price: "19.99"
-schema_offer_count: "4"
 
 plans_footnote: "Prices in USD; the App Store shows your local price at checkout. Monthly and Yearly each start with a one-week free trial for new subscribers; cancel before it ends and you are not charged. They renew automatically unless turned off at least 24 hours before the current period ends — manage or cancel them in your Apple Account settings. Lifetime is a one-time purchase with nothing to renew. One purchase covers iPhone, iPad and Mac. Refunds are handled by Apple through the standard App Store refund flow."
 
@@ -51,7 +47,8 @@ plans:
       - "The first drill set in every one of the nine drill modules"
       - "All three piece sets and the 3D board, offline, no account"
   - name: "Premium · Monthly"
-    price: "$1.99/mo"
+    price: "{P_MONTHLY}/mo"
+    kind: monthly
     summary: "Full Premium, billed monthly, after a one-week free trial. Cancel anytime."
     features:
       - "One-week free trial for new subscribers"
@@ -62,7 +59,8 @@ plans:
       - "Deep multi-line engine analysis in Game Review"
       - "The full progress dashboard: skill radar, weakness trends and this week against last"
   - name: "Premium · Yearly"
-    price: "$9.99/yr"
+    price: "{P_YEARLY}/yr"
+    kind: yearly
     summary: "The same Premium, billed once a year after a one-week free trial — about 58% less than paying monthly."
     features:
       - "Everything in Premium · Monthly, including the one-week free trial"
@@ -70,7 +68,8 @@ plans:
       - "Cancel anytime in your Apple Account settings before it renews"
     highlight_label: "Best value"
   - name: "Lifetime"
-    price: "$19.99 once"
+    price: "{P_LIFETIME} once"
+    kind: lifetime
     summary: "All of Premium for about ten months of Monthly — then yours for good."
     features:
       - "Everything in Premium"
@@ -359,7 +358,7 @@ ratings:
   value: "5.0"
   count: 2
   last_synced: "2026-10-24"
-last_updated: 2026-10-01
+last_updated: 2026-10-26
 ---
 Xiangqiful is a [xiangqi training and analysis app for iPhone, iPad and Mac](#features). Xiangqi is Chinese chess: two armies of sixteen pieces on the intersections of a nine-by-ten board, a river across the middle, and a palace at each end that the generals may never leave. It is one of the most played board games in the world, and outside Asia most people bounce off it at first sight, because every piece is a Chinese character painted on a wooden disc.
 

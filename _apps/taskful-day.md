@@ -13,9 +13,7 @@ app_store_url: "https://apps.apple.com/app/id6757345400"
 price:
   model: freemium
   value: "Free — Pro from $2.99/mo"
-schema_price: "0"
-schema_high_price: "39.99"
-schema_offer_count: "4"
+price_tier: "Pro"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
 
@@ -31,7 +29,8 @@ plans:
       - "Tasks roll forward without guilt — no streaks, no red badges"
       - "One workspace. All data stays on this device."
   - name: "Pro · Monthly"
-    price: "$2.99/mo"
+    price: "{P_MONTHLY}/mo"
+    kind: monthly
     summary: "Full Pro, billed monthly. Universal Purchase across iPhone, iPad, and Mac."
     features:
       - "iCloud sync across iPhone, iPad, and Mac (your own iCloud account)"
@@ -41,7 +40,8 @@ plans:
       - "Apple Reminders re-import"
       - "Universal Purchase — one Pro, three platforms"
   - name: "Pro · Annual"
-    price: "$24.99/yr"
+    price: "{P_YEARLY}/yr"
+    kind: yearly
     summary: "Same Pro features, billed once a year. ~30% cheaper than paying monthly."
     features:
       - "Everything in Pro · Monthly"
@@ -49,7 +49,8 @@ plans:
       - "Cancel anytime"
     highlight: true
   - name: "Lifetime"
-    price: "$39.99 once"
+    price: "{P_LIFETIME} once"
+    kind: lifetime
     summary: "All Pro features. Roughly 13 months of monthly Pro — then yours."
     features:
       - "Everything in Pro · Annual"
@@ -251,6 +252,6 @@ ratings:
   value: "5.0"
   count: 4
   last_synced: "2026-06-03"
-last_updated: 2026-05-31
+last_updated: 2026-10-26
 ---
 Taskful Day is a calm daily planner for iPhone, iPad, and Mac. It turns overwhelming to-do lists into realistic day plans with focus sessions, smart insights, voice capture, daily journaling, and multiple visual views — all with zero ads, zero tracking, and zero guilt. Designed for people who want to plan mindfully and finish their days feeling clear instead of behind. The Mac app brings the same calm planning experience to the desktop, while iCloud sync keeps the same day visible on whichever device you happen to be using.

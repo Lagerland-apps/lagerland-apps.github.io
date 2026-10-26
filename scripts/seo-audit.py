@@ -253,6 +253,62 @@ def main():
     if re.search(r"(?im)^disallow:\s*/\s*$", rb): err("robots.txt disallows the whole site for some agent", "robots.txt")
     if f"Sitemap: {SITE}/sitemap.xml" not in rb: err("robots.txt does not list sitemap.xml", "robots.txt")
 
+    # Master data (App Store Connect export) vs what the built pages say.
+    # _data/catalog.json comes from scripts/sync-asc-master.mjs; pages must never contradict it.
+    repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    cat_path = os.path.join(repo, "_data", "catalog.json")
+    try:
+        cat = json.load(open(cat_path, encoding="utf-8"))
+    except Exception as e:
+        cat = None
+        err("_data/catalog.json missing or invalid (run scripts/sync-asc-master.mjs)", "_data/catalog.json", str(e)[:100])
+    if cat:
+        live_n = cat["meta"]["live_app_count"]
+        site_live = set()
+        for fn in os.listdir(os.path.join(repo, "_apps")):
+            if fn.endswith(".md"):
+                fm = open(os.path.join(repo, "_apps", fn), encoding="utf-8").read().split("\n---", 1)[0]
+                if re.search(r"(?m)^status:\s*live\s*$", fm): site_live.add(fn[:-3])
+        cat_live = {k for k, v in cat["apps"].items() if v["live"]}
+        for slug in sorted(site_live ^ cat_live):
+            err("app is live in only one of _apps/*.md and the App Store Connect catalog", "/apps/" + slug + "/")
+        for slug, c in cat["apps"].items():
+            f = os.path.join(root, "apps", slug, "index.html")
+            if not c["live"] or not os.path.isfile(f): continue
+            h = open(f, encoding="utf-8").read()
+            m = re.search(r"<strong>Platforms:</strong>\s*([^<]*?)\.\s*<strong>", h)
+            want = ", ".join(c["platforms"])
+            if not m or m.group(1).strip() != want:
+                err("page platforms differ from the catalog", "/apps/" + slug + "/", f"page={m.group(1).strip() if m else None!r} catalog={want!r}")
+            known = set()
+            for pl in c["plans"].values():
+                if pl["prices"].get("USA"): known.add(pl["prices"]["USA"]["amount"])
+            for o in c["other_iaps"]:
+                if o["prices"].get("USA"): known.add(o["prices"]["USA"]["amount"])
+            if c["app_price"] and c["app_price"]["prices"].get("USA"): known.add(c["app_price"]["prices"]["USA"]["amount"])
+            money = {f"{float(x):.2f}" for x in known} | {"0.00"}
+            # the price pills (hero, sticky, comparison CTA) and every plan card
+            shown = re.findall(r'class="pill[^"]*"[^>]*>([^<]*\$[^<]*)<', h) + re.findall(r'class="plan-price">([^<]*)<', h)
+            for txt in shown:
+                for amt in re.findall(r"\$(\d[\d,]*\.?\d*)", txt):
+                    if f"{float(amt.replace(',', '')):.2f}" not in money:
+                        err("page price is not in the App Store Connect catalog", "/apps/" + slug + "/", f"${amt} in {txt.strip()[:50]!r}")
+        count_re = re.compile(r"\b(\d{2})\s+(?:live |privacy-first |indie |iOS |free )*apps\b", re.I)
+        for dp, _, fns in os.walk(root):
+            for fn in fns:
+                if not fn.endswith((".html", ".txt", ".json", ".xml")): continue
+                fp = os.path.join(dp, fn)
+                t = open(fp, encoding="utf-8", errors="ignore").read()
+                rel = "/" + os.path.relpath(fp, root).replace(os.sep, "/")
+                if re.search(r"\{(?:P_[A-Z_]+|P_IAP:[^}]*|TRIAL|PLATFORMS|APP_COUNT)\}", t):
+                    err("unresolved price/platform token in output", rel)
+                if re.search(r'class="plan-price">\s*(?:/|<)', t):
+                    err("plan card rendered without a price", rel)
+                if fn.endswith(".html") and "/_" not in rel:
+                    for n in set(count_re.findall(re.sub(r"<[^>]+>", " ", t))):
+                        if int(n) != live_n and int(n) >= 15:
+                            warn("hard-typed app count differs from the catalog count", rel, f"{n} vs {live_n}")
+
     # Report
     n_err = sum(len(v) for (lvl, _), v in findings.items() if lvl == "ERROR")
     n_warn = sum(len(v) for (lvl, _), v in findings.items() if lvl == "WARN")

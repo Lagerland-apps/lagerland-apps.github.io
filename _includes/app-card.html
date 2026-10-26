@@ -1,6 +1,7 @@
 {%- comment %}
   Reusable app card. Usage: {% include _app-card.html app=app %}
 {% endcomment -%}
+{%- include app-facts.html app=include.app -%}
 <a class="card card-app" href="{{ include.app.url }}">
   <div class="app-badge" style="margin-bottom:var(--s-3);">
     {% if include.app.icon %}<img class="app-icon" src="{{ include.app.icon }}" alt="{{ include.app.name }} icon" loading="lazy">{% endif %}
@@ -30,6 +31,6 @@
       <span class="pill">&#9733; {{ include.app.ratings.value }} &middot; {{ include.app.ratings.count }}</span>
     {%- endif -%}
     {% if include.app.category %}<span class="pill">{{ include.app.category | replace: '-', ' ' }}</span>{% endif %}
-    {% if include.app.platforms %}<span class="pill">{{ include.app.platforms | join: " &middot; " }}</span>{% endif %}
+    {% if f_platforms.size > 0 %}<span class="pill">{{ f_platforms | join: " &middot; " }}</span>{% endif %}
   </div>
 </a>

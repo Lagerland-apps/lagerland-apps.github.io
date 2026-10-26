@@ -13,9 +13,6 @@ app_store_url: "https://apps.apple.com/app/id6761656926"
 price:
   model: freemium
   value: "Free — Premium from $1.99/mo"
-schema_price: "0"
-schema_high_price: "19.99"
-schema_offer_count: "4"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The Lifetime tier is a one-time purchase — no auto-renew. Universal Purchase across iPhone, iPad, and Mac."
 
@@ -32,7 +29,8 @@ plans:
       - "Traditional kanji and Western piece sets — switch anytime"
       - "Works fully offline, no account"
   - name: "Premium · Monthly"
-    price: "$1.99/mo"
+    price: "{P_MONTHLY}/mo"
+    kind: monthly
     summary: "Full Premium, billed monthly. Cancel anytime."
     features:
       - "Unlimited game analysis with move-by-move coaching"
@@ -40,7 +38,8 @@ plans:
       - "Deep analysis — higher engine depth with multiple candidate lines"
       - "Full progress view: skill radar, rating estimate, accuracy trends"
   - name: "Premium · Annual"
-    price: "$9.99/yr"
+    price: "{P_YEARLY}/yr"
+    kind: yearly
     summary: "Same Premium features, billed once a year. ~58% cheaper than paying monthly."
     features:
       - "Everything in Premium · Monthly"
@@ -48,7 +47,8 @@ plans:
       - "Cancel anytime in Settings before renewal"
     highlight: true
   - name: "Lifetime"
-    price: "$19.99 once"
+    price: "{P_LIFETIME} once"
+    kind: lifetime
     summary: "All Premium features. Ten months of monthly Premium — then yours forever."
     features:
       - "Everything in Premium · Annual"
@@ -341,7 +341,7 @@ ratings:
   count: 18
   last_synced: "2026-10-22"
 related_apps: ["xiangqiful", "chessful"]
-last_updated: 2026-10-09
+last_updated: 2026-10-26
 ---
 Shogiful is a [shogi training & analysis app for iPhone, iPad, and Mac](#features) — shogi being the Japanese form of chess, played on a 9×9 board where captured pieces return to play. It's built around a simple observation: the biggest barrier to shogi outside Japan isn't the rules, it's the kanji on the pieces. Shogiful ships [Western piece sets with movement indicators](#features) so the board is readable from your first game ([the design story is documented in the journal](/journal/making-shogi-readable-without-kanji/)), then backs the playing experience with the thing improving players actually need — a real engine reviewing every move and explaining mistakes in sentences instead of evaluation numbers.
 

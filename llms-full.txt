@@ -13,18 +13,18 @@ Contact: lagerland.apps@proton.me
 Platforms: iOS, iPadOS, macOS, watchOS, visionOS (per-app; see individual entries)
 Privacy philosophy: No third-party tracking, no advertising SDKs, no required accounts, local-first data
 Distribution: Apple App Store
-Total live apps: {{ site.apps | where: "status", "live" | size }}
+Total live apps: {{ site.data.catalog.meta.live_app_count }}
 Last rebuilt: {{ site.time | date: "%Y-%m-%d" }}
 
 ---
 {% assign live_apps = site.apps | where: "status", "live" %}
-{% for app in live_apps %}
+{% for app in live_apps %}{% include app-facts.html app=app %}
 ## {{ app.name }}
 
 URL: {{ site.url }}{{ app.url }}
 App Store: {{ app.app_store_url }}
 Category: {{ app.category | replace: '-', ' ' }}
-Platforms: {{ app.platforms | join: ", " }}
+Platforms: {{ f_platforms | join: ", " }}
 Tagline: {{ app.tagline }}
 {% if app.hero.headline %}Headline: {{ app.hero.headline }}{% endif %}
 {% if app.hero.subheadline %}Positioning: {{ app.hero.subheadline }}{% endif %}
@@ -61,7 +61,9 @@ Description: {{ app.seo.description }}
 {% endif %}
 {% assign llm_rating = app.ratings.value | plus: 0 %}{% if app.ratings and app.ratings.count and app.ratings.count != 0 and llm_rating >= site.ratings_min_display %}Current rating: {{ app.ratings.value }} stars ({{ app.ratings.count }} ratings, aggregated across Apple App Store worldwide, last synced {{ app.ratings.last_synced }})
 {% endif %}
-Pricing model: {{ app.price.model }}{% if app.price.value %} — {{ app.price.value }}{% endif %}
+Pricing model: {{ app.price.model }}{% if f_price_value != "" %} — {{ f_price_value }}{% endif %}{% if f_trial != "" %}
+Free trial: {{ f_trial }}{% endif %}{% if f_family %}
+Family Sharing: yes{% endif %}
 
 Privacy:
 - Tracking: {% if app.privacy.tracking %}Yes{% else %}No third-party tracking{% endif %}

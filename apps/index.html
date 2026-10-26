@@ -13,7 +13,7 @@ seo:
     - calm productivity apps iPhone
     - privacy-first health apps Apple
     - independent iOS developer catalogue
-last_updated: 2026-06-21
+last_updated: 2026-10-26
 ---
 
 {%- assign live_apps = site.apps | where: "status", "live" -%}
@@ -57,7 +57,7 @@ last_updated: 2026-06-21
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">{{ live_apps.size }} apps · {{ "" }}7 categories · 100% privacy-first</p>
+    <p class="overline">{{ site.data.catalog.meta.live_app_count }} apps · {{ "" }}7 categories · 100% privacy-first</p>
     <h1 class="h1">All apps for <span class="gradient-text">iPhone, iPad, and Mac.</span></h1>
     <p class="lead">Every app in the Lagerland Apps catalogue — grouped by the problem it solves. No tracking, no ads, no accounts. Built and shipped by one independent Apple developer.</p>
     <div class="actions">

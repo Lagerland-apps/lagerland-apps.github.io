@@ -8,6 +8,7 @@ layout: default
   markup on the app page, and duplicate FAQ markup across URLs adds nothing.
 {%- endcomment -%}
 {%- assign app = site.apps | where: "slug", page.slug | first -%}
+{%- include app-facts.html app=app -%}
 {%- assign app_abs = site.url | append: app.url -%}
 {%- assign page_abs = site.url | append: page.url -%}
 {%- assign support_name = app.name | append: " Support" -%}
@@ -69,7 +70,7 @@ layout: default
     <ul class="bullets">
       <li>{{ app.name }} version (shown in the app’s settings or on its App Store page)</li>
       <li>Device model</li>
-      <li>{{ app.platforms | join: " / " | default: "iOS" }} version</li>
+      <li>{{ f_platforms | join: " / " | default: "iOS" }} version</li>
       <li>What you expected to happen, and what happened instead</li>
     </ul>
   </div>

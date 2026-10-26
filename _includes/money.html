@@ -1,0 +1,42 @@
+{%- comment -%}
+  Formats one price for display, using the language's currency rules in _data/locales.yml.
+    amount   customer price as delivered by the catalog (e.g. "3.99", "18.0", "5500")
+    currency ISO code (default USD)
+    lang     default: page.lang, then site.lang
+  Output is trimmed; wrap the include in a capture block to keep it in a variable. Falls back to "<amount> <CUR>" when the
+  language has no rule for that currency, so a missing rule is visible instead of silently wrong.
+{%- endcomment -%}
+{%- assign m_lang = include.lang | default: page.lang | default: site.lang | default: "en" -%}
+{%- assign m_loc = site.data.locales[m_lang] | default: site.data.locales.en -%}
+{%- assign m_cur = include.currency | default: "USD" -%}
+{%- assign m_fmt = m_loc.currencies[m_cur] | default: site.data.locales.en.currencies[m_cur] -%}
+{%- if m_fmt == nil -%}
+{{- include.amount }} {{ m_cur -}}
+{%- else -%}
+  {%- assign m_parts = include.amount | append: "" | split: "." -%}
+  {%- assign m_rest = m_parts[0] -%}
+  {%- assign m_frac = m_parts[1] | default: "" -%}
+  {%- assign m_dec = m_fmt.decimals | default: 2 -%}
+  {%- assign m_int = "" -%}
+  {%- for m_i in (1..6) -%}
+    {%- assign m_len = m_rest | size -%}
+    {%- if m_len > 3 -%}
+      {%- assign m_cut = m_len | minus: 3 -%}
+      {%- assign m_tail = m_rest | slice: m_cut, 3 -%}
+      {%- assign m_int = m_fmt.group | default: "" | append: m_tail | append: m_int -%}
+      {%- assign m_rest = m_rest | slice: 0, m_cut -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign m_int = m_rest | append: m_int -%}
+  {%- if m_dec > 0 -%}
+    {%- assign m_frac = m_frac | append: "000000" | slice: 0, m_dec -%}
+    {%- assign m_num = m_int | append: m_fmt.decimal | append: m_frac -%}
+  {%- else -%}
+    {%- assign m_num = m_int -%}
+  {%- endif -%}
+  {%- if m_fmt.position == "after" -%}
+{{- m_num }} {{ m_fmt.symbol -}}
+  {%- else -%}
+{{- m_fmt.symbol }}{{ m_num -}}
+  {%- endif -%}
+{%- endif -%}

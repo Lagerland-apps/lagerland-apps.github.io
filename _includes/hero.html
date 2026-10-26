@@ -1,3 +1,4 @@
+{%- include app-facts.html app=include.app -%}
 <section class="hero">
   <div class="hero-left reveal">
     <div class="app-badge">
@@ -60,11 +61,11 @@
       {%- endif -%}
       <span class="pill">No tracking</span>
       <span class="pill">No account</span>
-      {% if include.app.platforms %}
-        <span class="pill">{{ include.app.platforms | join: " · " }}</span>
+      {% if f_platforms.size > 0 %}
+        <span class="pill">{{ f_platforms | join: " · " }}</span>
       {% endif %}
-      {% if include.app.price.value %}
-        <span class="pill">{{ include.app.price.value }}</span>
+      {% if f_price_value != "" %}
+        <span class="pill">{{ f_price_value }}</span>
       {% endif %}
     </div>
 
@@ -104,7 +105,7 @@
       {%- endif -%}
       {%- assign hero_alt = include.app.hero.alt | default: first_shot_alt | default: include.app.hero.headline | default: include.app.tagline -%}
       {%- if hero_alt == include.app.hero.headline or hero_alt == include.app.tagline -%}
-        {%- assign first_platform = include.app.platforms | first -%}
+        {%- assign first_platform = f_platforms | first -%}
         {%- assign hero_alt = include.app.name | append: " — " | append: hero_alt | append: " (" | append: first_platform | append: ")" -%}
       {%- endif -%}
       {%- comment %} Portrait iPhone shots get the CSS device bezel; Mac apps

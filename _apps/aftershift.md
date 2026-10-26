@@ -13,9 +13,6 @@ app_store_url: "https://apps.apple.com/app/id6757163182"
 price:
   model: freemium
   value: "Free — Premium from $3.99/mo, $24.99/yr, or $39.99 lifetime"
-schema_price: "0"
-schema_high_price: "39.99"
-schema_offer_count: "4"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
 
@@ -30,7 +27,8 @@ plans:
       - "Shift-timed reminders, including caffeine cut-off"
       - "On-device storage — no account, no cloud sync"
   - name: "Premium · Monthly"
-    price: "$3.99/mo"
+    price: "{P_MONTHLY}/mo"
+    kind: monthly
     summary: "Full Premium, billed monthly. Cancel anytime."
     features:
       - "Full Shift Recovery Score"
@@ -39,7 +37,8 @@ plans:
       - "Cycle-to-cycle trends and a shareable PDF report"
       - "Cancel anytime"
   - name: "Premium · Annual"
-    price: "$24.99/yr"
+    price: "{P_YEARLY}/yr"
+    kind: yearly
     summary: "Same Premium features, billed once a year. ~48% cheaper than paying monthly."
     features:
       - "Everything in Premium · Monthly"
@@ -47,7 +46,8 @@ plans:
       - "Cancel anytime"
     highlight: true
   - name: "Lifetime"
-    price: "$39.99 once"
+    price: "{P_LIFETIME} once"
+    kind: lifetime
     summary: "All Premium features. Roughly 10 months of monthly Premium — then yours."
     features:
       - "Everything in Premium · Annual"
@@ -261,7 +261,7 @@ founder:
   external_link:
     href: "/apps/aftershift/methodology/"
     label: "Read the Shift Recovery Score methodology →"
-last_updated: 2026-10-25
+last_updated: 2026-10-26
 ---
 
 Most sleep apps were designed for a person who goes to bed at 11 p.m. and wakes up at 7 a.m. Walk through the onboarding flow of any major one — the questions assume a fixed bedtime, a steady wake time, and weekends free. Then look at how the people who keep hospitals, fire stations, factories, and cockpits running through the night are forced to use them. A nurse logs a five-hour daytime sleep after a string of night shifts; the app politely tells her she had a *poor night* and should go to bed earlier. The model of "a person" baked into the app and the model of the person actually using it are not the same model.

@@ -16,10 +16,7 @@ app_store_url: "https://apps.apple.com/app/id6759511759"
 price:
   model: free
   value: "Free — optional theme packs & undo tokens"
-schema_price: "0"
-schema_high_price: "5.99"
-schema_offer_count: "9"
-price_currency: "USD"
+price_override: "Free — optional theme packs & undo tokens"
 
 plans_footnote: "The game is free in full — all 64 levels, Freeplay, the daily board, Hint, the Coach, and Game Center. Every purchase below is optional and none is ever required to finish a level. Theme packs are one-time, non-consumable unlocks restorable with your Apple Account. Undo bundles are consumable tokens. There is also an optional $1.99 “Support the Developer” tip, which unlocks nothing. US pricing shown; Apple derives other storefronts and shows your local currency at checkout. Refunds go through the standard App Store flow. There are no subscriptions."
 
@@ -39,7 +36,7 @@ plans:
       - "Fully offline — no sign-in, no tracking"
     highlight_label: "The whole game"
   - name: "Theme packs"
-    price: "$1.99 each"
+    price: "{P_IAP:Millrace Designer Pack 1} each"
     summary: "Optional 3D material themes for the board, bought à la carte and kept for good."
     features:
       - "Designer Pack 1 — Studio Clay, Paper &amp; Ink, Sakura Pastel, Amber, Heartwood"
@@ -48,13 +45,13 @@ plans:
       - "Winter Pack — Hygge Hearth, Aurora Drift, Evergreen Noël"
       - "One-time purchase, restorable with your Apple Account"
   - name: "Complete Collection"
-    price: "$5.99"
+    price: "{P_IAP:Millrace Complete Collection}"
     summary: "All sixteen paid themes at once, cheaper than the four packs bought separately."
     features:
       - "Every theme in all four packs"
       - "One-time purchase, no subscription"
   - name: "Undo bundles"
-    price: "from $0.99"
+    price: "from {P_IAP:Millrace Undo 10}"
     summary: "Consumable undo tokens. One arrives free each day while you hold fewer than three."
     features:
       - "10 undos — $0.99"
@@ -295,7 +292,7 @@ release:
 
 show_body: true
 about_heading: "What Millrace is — a delivery puzzle with merge mechanics"
-last_updated: 2026-10-09
+last_updated: 2026-10-26
 ---
 
 Millrace is a delivery puzzle for iPhone and iPad. It uses merge mechanics — matching numbers combine when they collide — but it is not an endless grid with a high-score table. Each of its 64 levels is a closed problem with a specific right answer.

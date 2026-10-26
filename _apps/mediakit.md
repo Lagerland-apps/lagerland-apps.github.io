@@ -13,9 +13,8 @@ app_store_url: "https://apps.apple.com/app/id6761451361"
 price:
   model: freemium
   value: "Free trial — Pro from $3.99/mo, $22.99/yr, or $39.99 lifetime"
-schema_price: "0"
-schema_high_price: "39.99"
-schema_offer_count: "4"
+price_lead: "Free trial"
+price_tier: "Pro"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
 
@@ -28,7 +27,8 @@ plans:
       - "Five tools stay free forever: Video Compress, Image Compress, Image Resize, Audio Convert, PDF Compress"
       - "Everything runs on-device — no upload, no account"
   - name: "Pro · Monthly"
-    price: "$3.99/mo"
+    price: "{P_MONTHLY}/mo"
+    kind: monthly
     summary: "Full Pro, billed monthly. Cancel anytime."
     features:
       - "All 152 tools across video, audio, image, PDF, archive"
@@ -37,7 +37,8 @@ plans:
       - "All six Shortcuts actions"
       - "Menu bar access to every tool"
   - name: "Pro · Annual"
-    price: "$22.99/yr"
+    price: "{P_YEARLY}/yr"
+    kind: yearly
     summary: "Same Pro features, billed once a year. ~52% cheaper than paying monthly."
     features:
       - "Everything in Pro · Monthly"
@@ -45,7 +46,8 @@ plans:
       - "Cancel anytime"
     highlight: true
   - name: "Lifetime"
-    price: "$39.99 once"
+    price: "{P_LIFETIME} once"
+    kind: lifetime
     summary: "All Pro features. Roughly 10 months of monthly Pro — then yours."
     features:
       - "Everything in Pro · Annual"
@@ -185,6 +187,6 @@ support:
 release:
   first_release: "2026-04-01"
   last_updated: "2026-04-13"
-last_updated: 2026-07-11
+last_updated: 2026-10-26
 ---
 MediaKit is a native iPhone and Mac app that consolidates 152 local tools for video, audio, image, PDF, archive, and ebook work into a single drag-and-drop interface. It's a Universal Purchase — buy once, use on both iPhone and Mac. Every operation runs on-device using Apple's AVFoundation, CoreImage, PDFKit, Vision, and Speech frameworks — no uploads, no servers, no account. Drop any file and MediaKit picks the right tool instantly. Includes 21 built-in presets for YouTube, Instagram, Discord, Podcast, Email, iPhone export, and broadcast LUFS, plus six Shortcuts actions for automation and Mac menu bar access to every tool. Free 3-day trial with full access. Five core tools — Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress — stay free forever. Pro unlocks the remaining 147 tools and batch processing. Published by Lagerland Apps.

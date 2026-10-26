@@ -14,9 +14,6 @@ app_store_url: "https://apps.apple.com/app/id6771099230"
 price:
   model: freemium
   value: "Free — Premium from $1.99/mo or $19.99 lifetime"
-schema_price: "0"
-schema_high_price: "19.99"
-schema_offer_count: "4"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. Lifetime is a one-time purchase — $19.99 once, no auto-renew, no card kept on file beyond Apple's own. Every paid tier (Monthly, Yearly, Lifetime) is Family Sharing eligible — one purchase covers up to 5 family members at no extra cost."
 
@@ -39,7 +36,8 @@ plans:
       - "Shadow Week, today's insights (most-attempted app, time-saved estimate), one-tap reflection"
       - "On-device only — no account, no server, no analytics SDK"
   - name: "Premium · Monthly"
-    price: "$1.99/mo"
+    price: "{P_MONTHLY}/mo"
+    kind: monthly
     summary: "Full Premium, billed monthly. Cancel anytime."
     features:
       - "Unlimited blocked apps and categories"
@@ -53,7 +51,8 @@ plans:
       - "Streak shields — every 7th day at 150% of your goal banks one (up to 3)"
       - "Family Sharing — covers up to 5 family members at no extra cost"
   - name: "Premium · Yearly"
-    price: "$9.99/yr"
+    price: "{P_YEARLY}/yr"
+    kind: yearly
     summary: "Same Premium features, billed once a year. 7-day free trial. ~58% cheaper than monthly."
     features:
       - "Everything in Premium · Monthly"
@@ -63,7 +62,8 @@ plans:
       - "Cancel anytime"
     highlight: true
   - name: "Lifetime"
-    price: "$19.99 once"
+    price: "{P_LIFETIME} once"
+    kind: lifetime
     summary: "All Premium features, forever. Roughly 10 months of monthly Premium — then yours."
     features:
       - "Everything in Premium · Yearly"
@@ -321,6 +321,6 @@ ratings:
   count: 0
   last_synced: "2026-05-22"
   display_label: "New release"
-last_updated: 2026-10-09
+last_updated: 2026-10-26
 ---
 EarnLock is an iOS and Apple Watch app that locks distracting apps until you earn screen time by hitting a daily activity goal — steps in the free tier, active minutes or active energy in Premium. Apple's Family Controls renders a custom shield with a live progress ring (\"3,412 steps until unlock\") over every blocked app, so you always know how far you are from the threshold. With Premium, Apple Watch is a first-class surface: the Watch app reads HealthKit directly and complications put the count on the watch face, so it keeps running on long walks, runs, and gym sessions without the iPhone. Widgets — and, in Premium, a Live Activity — keep the same count visible everywhere else. Partial progress pays too: from 50% of the goal, a timed window of progress × 120 minutes opens. Streaks build on consecutive goal-met days; one rest day per week protects the streak. A math-gated emergency unlock (1/day) handles genuine emergencies without becoming the default escape hatch. The free tier blocks one app and includes today's most-attempted-blocked-app card and a clearly labelled screen-time-saved estimate; Premium adds unlimited apps, Smart Schedules (work hours / evenings / weekends / sleep), Week and Month insights, streak shields, and a log of your one-tap reflections. 39 locales out of the box including Arabic and Hebrew (RTL). No account, no analytics SDK, no advertising SDK, no third-party SDKs of any kind — and no EarnLock server, ever. HealthKit is read on-device only and never leaves the device; Family Controls hands EarnLock opaque tokens so iOS itself prevents EarnLock from seeing which apps you blocked. Apple's App Privacy nutrition label reads \"Data Not Collected\" for every release. Free; Premium $1.99/month, $9.99/year (with a 7-day free trial), or $19.99 lifetime. Every paid tier — Monthly, Yearly, and Lifetime — is Family Sharing eligible, covering up to 5 family members at no extra cost. Cheapest lifetime tier among major screen-time blockers. iOS 17+ and watchOS 10+. Self-restriction only — never parental control.

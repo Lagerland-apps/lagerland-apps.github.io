@@ -13,10 +13,7 @@ app_store_url: "https://apps.apple.com/app/id6757268612"
 price:
   model: freemium
   value: "Free — Pro+ from $3.99/yr or $7.99 lifetime"
-schema_price: "0"
-schema_high_price: "7.99"
-schema_offer_count: "3"
-price_currency: "USD"
+price_tier: "Pro+"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase — no auto-renew."
 
@@ -100,7 +97,8 @@ plans:
       - "Your last 5 splits in history"
       - "No account, no tracking, no ads"
   - name: "Pro+ · yearly"
-    price: "$3.99 / year"
+    price: "{P_YEARLY} / year"
+    kind: yearly
     summary: "Unlimited scans and item-by-item splitting — what most people install RightSplit for."
     features:
       - "Everything in Free"
@@ -304,6 +302,6 @@ ratings:
   value: "5.0"
   count: 1
   last_synced: "2026-04-15"
-last_updated: 2026-10-09
+last_updated: 2026-10-26
 ---
 RightSplit is a bill splitting app for iPhone that scans receipts, detects items automatically, and calculates what each person owes. Supports item-level assignment so each person pays for what they ordered, with shared dish splitting for bottles, appetizers, and group items. Smart tip calculation distributes tips proportionally with fair rounding. Share payment requests instantly via iMessage, WhatsApp, or copy-paste. Receipt OCR runs on-device with Apple's Vision framework — receipts never leave your phone. Free with equal splitting, the tip calculator, your last five splits and your first receipt scan. Pro+ unlocks unlimited scans, item-based splitting, uneven splits, per-person tip breakdown, unlimited split history, and Spaces that keep a trip's or shared home's balances and settle-up plan on your phone — $3.99/year or $7.99 lifetime. No ads, no tracking, no account required.

@@ -18,8 +18,6 @@ app_store_url: "https://apps.apple.com/app/id6756589122"
 price:
   model: one-time-purchase
   value: "$12.99 — one-time purchase"
-schema_price: "12.99"
-price_currency: "USD"
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. Mockly is a one-time purchase — no auto-renew, no recurring fees."
 
@@ -246,6 +244,6 @@ support:
 release:
   first_release: "2026-02-01"
   last_updated: "2026-05-27"
-last_updated: 2026-10-09
+last_updated: 2026-10-26
 ---
 Mockly is a professional native macOS tool for creating App Store screenshots with real 3D device frames rendered using Apple's Metal framework. It features deterministic rendering (the on-screen preview matches the export pixel-for-pixel), percentage-based layout positioning that scales across every Apple device size (iPhone 6.9" through 5.5", iPad 13" through 11", Mac 2880×1800, Apple Watch 410×502, and visionOS 3840×2160), AI-powered in-place text translation across 39 App Store Connect locales, multi-language screenshot management, bulk import from folders organised by language, professional templates, and direct upload to App Store Connect with credentials managed by Apple's Keychain. Built for indie iOS, iPadOS, and macOS developers, studios, and ASO professionals shipping in multiple markets. One-time purchase at $12.99 with Family Sharing — subscription competitors in this category charge $19–$49 per month. No subscriptions, no tracking, no data collection, no upload of pre-release screenshots to a third-party server. Formerly known as ScreenFlow Studio — renamed to Mockly in 2026.
