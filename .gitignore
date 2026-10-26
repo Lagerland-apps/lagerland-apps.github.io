@@ -18,3 +18,7 @@ Thumbs.db
 # Ruby / Bundler (in case a Gemfile is added later)
 .bundle/
 vendor/
+
+# Master table data: product IDs contain the owner name; generated locally by scripts/sync-asc-master.mjs
+_data/asc_master.json
+_data/asc_master_overrides.json
