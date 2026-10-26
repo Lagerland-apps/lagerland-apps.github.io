@@ -30,6 +30,7 @@ mentioned_apps:
   - chessful
 read_time: "9 min read"
 excerpt: "The design note for Chessful's adaptive training engine — how raw Stockfish output becomes motif classification, how motifs become skill-bucket flags, and how flags become a spaced-repetition queue derived from your own losses, not a generic puzzle pool."
+last_updated: 2026-10-26
 ---
 
 Most chess apps that say "adaptive training" mean one of two things. They either mean "we have a difficulty slider," or they mean "we have a recommendation algorithm over a fixed puzzle library." Neither of those is what Chessful does.
@@ -109,4 +110,4 @@ It's also a way of saying that **algorithmic transparency is a Lagerland default
 
 ---
 
-[Chessful is available on the App Store.](https://apps.apple.com/app/id6761336870) Free tier covers 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, and three training sessions per week. Premium unlocks unlimited deep analysis, unlimited adaptive training, full progress tracking with 90/180/365-day skill-trend graphs, and alternative-move exploration: $4.99/month, $29.99/year, or $39.99 once for lifetime access with a 7-day free trial. The companion design note on the forty AI opponents lives at [Forty chess opponents, and none of them are me](/journal/forty-chess-opponents/).
+[Chessful is available on the App Store.](https://apps.apple.com/app/id6761336870) Free tier covers 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, and three training sessions per week. Premium unlocks unlimited deep analysis, unlimited adaptive training, full progress tracking with 90/180/365-day skill-trend graphs, and alternative-move exploration: {P_MONTHLY@chessful}/month, {P_YEARLY@chessful}/year, or {P_LIFETIME@chessful} once for lifetime access with a 7-day free trial. The companion design note on the forty AI opponents lives at [Forty chess opponents, and none of them are me](/journal/forty-chess-opponents/).
