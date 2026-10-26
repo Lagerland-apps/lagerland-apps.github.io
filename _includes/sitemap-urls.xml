@@ -14,6 +14,11 @@
 
   include.extended = true adds <changefreq>/<priority> (ai-sitemap only;
   Google ignores both).
+
+  Languages (TRANSLATION.md 4.12): include.lang limits the list to one language (the per-language
+  /<code>/sitemap.xml); without it every language is listed. Pages of a language that is not live yet
+  (_data/locales.yml live: false) are never listed. A translated hub (/<code>/, /<code>/apps/, ...) takes the newest
+  date of its own language's pages.
 {%- endcomment -%}
 {%- assign newest_post = "" -%}
 {%- for d in site.journal -%}
@@ -27,13 +32,14 @@
 {%- endfor -%}
 {%- assign newest_alt = "" -%}
 {%- for d in site.html_pages -%}
-  {%- if d.url contains "/alternatives/" and d.last_updated -%}
+  {%- if d.url contains "/alternatives/" and d.last_updated and d.lang == "en" -%}
     {%- assign _x = d.last_updated | date: "%Y-%m-%d" -%}
     {%- if _x > newest_alt -%}{%- assign newest_alt = _x -%}{%- endif -%}
   {%- endif -%}
 {%- endfor -%}
 
 {%- assign collections = site.collections | where_exp: "c", "c.output != false" -%}
+{%- if include.lang and include.lang != "en" -%}{%- assign collections = "" | split: "" -%}{%- endif -%}
 {%- for collection in collections -%}
   {%- assign docs = collection.docs | where_exp: "d", "d.sitemap != false" | where_exp: "d", "d.noindex != true" -%}
   {%- for d in docs -%}
@@ -61,22 +67,42 @@
 {%- endfor -%}
 
 {%- assign pages = site.html_pages | where_exp: "p", "p.sitemap != false" | where_exp: "p", "p.noindex != true" | where_exp: "p", "p.url != '/404.html'" -%}
+{%- if include.lang -%}{%- assign pages = pages | where: "lang", include.lang -%}{%- endif -%}
 {%- for p in pages -%}
+  {%- assign _sl = p.lang | default: "en" -%}
+  {%- unless site.data.locales[_sl].live -%}{%- continue -%}{%- endunless -%}
   {%- assign u = p.url | replace: "/index.html", "/" -%}
   {%- assign lm = p.last_updated | date: "%Y-%m-%d" -%}
   {%- assign lm = lm | default: "" -%}
-  {%- if u == "/" -%}
-    {%- if newest_post > lm -%}{%- assign lm = newest_post -%}{%- endif -%}
-    {%- if newest_app > lm -%}{%- assign lm = newest_app -%}{%- endif -%}
+  {%- comment %} uh = the URL without the language prefix, so hubs are recognised in every language {% endcomment -%}
+  {%- assign uh = u -%}
+  {%- assign n_post = newest_post -%}{%- assign n_app = newest_app -%}{%- assign n_alt = newest_alt -%}
+  {%- if _sl != "en" -%}
+    {%- assign _spre = "/" | append: _sl -%}
+    {%- assign uh = u | remove_first: _spre -%}
+    {%- if uh == "/" or uh == "/journal/" or uh == "/apps/" or uh == "/alternatives/" -%}
+      {%- assign n_post = "" -%}{%- assign n_app = "" -%}{%- assign n_alt = "" -%}
+      {%- assign _slp = site.pages | where: "lang", _sl -%}
+      {%- for d in _slp -%}
+        {%- assign _x = d.last_updated | default: d.date | date: "%Y-%m-%d" -%}
+        {%- if d.layout == "journal" and _x > n_post -%}{%- assign n_post = _x -%}{%- endif -%}
+        {%- if d.layout == "app" and _x > n_app -%}{%- assign n_app = _x -%}{%- endif -%}
+        {%- if d.url contains "/alternatives/" and _x > n_alt -%}{%- assign n_alt = _x -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if uh == "/" -%}
+    {%- if n_post > lm -%}{%- assign lm = n_post -%}{%- endif -%}
+    {%- if n_app > lm -%}{%- assign lm = n_app -%}{%- endif -%}
     {%- assign cf = "weekly" -%}{%- assign pr = "1.0" -%}
-  {%- elsif u == "/journal/" -%}
-    {%- if newest_post > lm -%}{%- assign lm = newest_post -%}{%- endif -%}
+  {%- elsif uh == "/journal/" -%}
+    {%- if n_post > lm -%}{%- assign lm = n_post -%}{%- endif -%}
     {%- assign cf = "weekly" -%}{%- assign pr = "0.8" -%}
-  {%- elsif u == "/apps/" -%}
-    {%- if newest_app > lm -%}{%- assign lm = newest_app -%}{%- endif -%}
+  {%- elsif uh == "/apps/" -%}
+    {%- if n_app > lm -%}{%- assign lm = n_app -%}{%- endif -%}
     {%- assign cf = "weekly" -%}{%- assign pr = "0.8" -%}
-  {%- elsif u == "/alternatives/" -%}
-    {%- if newest_alt > lm -%}{%- assign lm = newest_alt -%}{%- endif -%}
+  {%- elsif uh == "/alternatives/" -%}
+    {%- if n_alt > lm -%}{%- assign lm = n_alt -%}{%- endif -%}
     {%- assign cf = "weekly" -%}{%- assign pr = "0.8" -%}
   {%- elsif u contains "/privacy/" or u contains "/support/" or u contains "/terms/" -%}
     {%- assign cf = "yearly" -%}{%- assign pr = "0.3" -%}

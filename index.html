@@ -267,7 +267,7 @@ last_updated: 2026-10-26
      COMPARED-TO: surface /alternatives/ pages from the home page
      ============================ -->
 <section class="section reveal" aria-labelledby="compare-title">
-  {%- assign comparison_count = site.pages | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 -%}
+  {%- assign comparison_count = site.pages | where: "lang", "en" | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 -%}
   <h2 class="h2" id="compare-title">Comparisons with the apps you know</h2>
   <p class="lead">{{ comparison_count }} side-by-side comparisons against the mainstream apps most people are coming from. Four are here; the rest are on the comparisons page.</p>
   <div class="pairs stagger">

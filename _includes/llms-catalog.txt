@@ -1,0 +1,16 @@
+{%- comment -%}
+  The app catalogue of llms.txt, in the language of the including page (root /llms.txt: English; /<code>/llms.txt:
+  that language): every live app that has a page in that language, grouped by category, with the page's meta
+  description. Group headings: _data/i18n/<lang>.yml llms_groups.
+{%- endcomment -%}
+{%- assign lc_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign lc_groups = "health:health fitness|planning:productivity lifestyle|money:finance|developer:developer-tools business graphics|reading:education books|games:games|utilities:utilities" | split: "|" -%}
+{% assign live_apps = site.apps | where: "status", "live" %}
+{%- for lc_g in lc_groups -%}
+{%- assign lc_parts = lc_g | split: ":" -%}{%- assign lc_key = lc_parts[0] -%}{%- assign lc_cats = lc_parts[1] | split: " " -%}
+{%- assign lc_n = 0 -%}{%- for app in live_apps -%}{%- if lc_cats contains app.category -%}{%- include tx-app.html app=app -%}{%- unless tx_en -%}{%- assign lc_n = lc_n | plus: 1 -%}{%- endunless -%}{%- endif -%}{%- endfor -%}
+{%- if lc_n == 0 -%}{%- continue -%}{%- endif %}
+## {{ lc_t.llms_groups[lc_key] }}
+{% for app in live_apps %}{% if lc_cats contains app.category %}{% include tx-app.html app=app %}{% unless tx_en %}- [{{ app.name }}]({{ site.url }}{{ tx_app.url }}): {% include app-text.html app=app text=tx_app.seo.description %}
+{% endunless %}{% endif %}{% endfor %}
+{%- endfor %}

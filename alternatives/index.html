@@ -207,7 +207,7 @@ last_updated: 2026-10-26
 <section class="section--lg reveal">
   <div class="section-center">
     <p class="overline">By category</p>
-    <h2 class="h2">All {{ site.pages | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 }} comparisons</h2>
+    <h2 class="h2">All {{ site.pages | where: "lang", "en" | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 }} comparisons</h2>
   </div>
 
   <div class="section reveal">

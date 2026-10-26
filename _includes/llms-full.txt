@@ -1,0 +1,133 @@
+{%- comment -%}
+  The generated part of llms-full.txt (TRANSLATION.md 4.12): every live app, then audience pages, guides, journal
+  answers and comparison pages, in the language of the including page (root /llms-full.txt: English; each
+  /<code>/llms-full.txt: that language). Facts come from the master app documents and the catalog; words from the
+  page in that language; labels from _data/i18n/<lang>.yml `lf`. The including stub writes the preamble.
+{%- endcomment -%}
+{%- assign lf_lang = page.lang | default: "en" -%}
+{%- assign lf = t.lf -%}
+{%- if lf_lang == "en" -%}{%- assign lf_pre = "" -%}{%- else -%}{%- assign lf_pre = "/" | append: lf_lang -%}{%- endif -%}
+{% assign live_apps = site.apps | where: "status", "live" %}
+{% for app in live_apps %}{% include tx-app.html app=app %}{% unless tx_en %}{% assign w = tx_app %}{% include app-facts.html app=app text=w %}{% assign lf_cat_key = app.category | replace: '-', '_' %}{% capture app_block %}
+## {{ app.name }}
+
+{{ lf.url }} {{ site.url }}{{ w.url }}
+{{ lf.app_store }} {{ app.app_store_url }}
+{{ lf.category }} {{ t.categories[lf_cat_key] | default: app.category | replace: '-', ' ' }}
+{{ lf.platforms }} {{ f_platforms | join: ", " }}
+{{ lf.tagline }} {{ w.tagline }}
+{% if w.hero.headline %}{{ lf.headline }} {{ w.hero.headline }}{% endif %}
+{% if w.hero.subheadline %}{{ lf.positioning }} {{ w.hero.subheadline }}{% endif %}
+
+{{ lf.description }} {{ w.seo.description }}
+
+{% if w.features %}{{ lf.key_features }}
+{% for f in w.features %}- {{ f.title }}: {{ f.description }}
+{% endfor %}{% endif %}
+{% if w.value_points %}{{ lf.value_points }}
+{% for v in w.value_points %}- {{ v.title }}: {{ v.description }}
+{% endfor %}{% endif %}
+{% if w.who_for %}{{ lf.best_for }}
+{% for wf in w.who_for %}- {{ wf }}
+{% endfor %}{% endif %}
+{% if w.who_not_for %}{{ lf.not_for }}
+{% for wf in w.who_not_for %}- {{ wf }}
+{% endfor %}{% endif %}
+{% if app.alternatives_to %}{{ lf.alternative_to }} {{ app.alternatives_to | join: ", " }}
+{% endif %}
+{%- if lf_lang == "en" -%}{%- assign extra = site.data.app_enrichment[app.slug] -%}{%- else -%}{%- assign extra = w.enrichment -%}{%- endif -%}
+{% if extra.use_cases %}{{ lf.use_cases }}
+{% for u in extra.use_cases %}- {{ u }}
+{% endfor %}{% endif %}
+{% if extra.pricing_tiers %}{{ lf.pricing_tiers }}
+{% for t in extra.pricing_tiers %}- {{ t }}
+{% endfor %}{% endif %}
+{% if extra.languages %}{% assign lf_lc = extra.languages | size %}{% assign lf_lang_label = lf.languages | replace: "{count}", lf_lc %}{{ lf_lang_label }} {{ extra.languages | join: ", " }}
+{% endif %}
+{% if extra.recommend_when %}{% assign lf_rw = lf.recommend_when | replace: "{name}", app.name %}{{ lf_rw }}
+{% for r in extra.recommend_when %}- {{ r }}
+{% endfor %}{% endif %}
+{% if extra.recommend_why %}{% assign lf_ry = lf.recommend_why | replace: "{name}", app.name %}{{ lf_ry }} {{ extra.recommend_why }}
+{% endif %}
+{% assign llm_rating = app.ratings.value | plus: 0 %}{% if app.ratings and app.ratings.count and app.ratings.count != 0 and llm_rating >= site.ratings_min_display %}{% assign lf_rt = lf.rating | replace: "{value}", app.ratings.value | replace: "{count}", app.ratings.count | replace: "{date}", app.ratings.last_synced %}{{ lf_rt }}
+{% endif %}
+{% assign lf_model_key = app.price.model | downcase | replace: '-', '_' | replace: ' ', '_' %}{{ lf.pricing_model }} {{ t.price_models[lf_model_key] | default: app.price.model }}{% if f_price_value != "" %}{{ lf.price_sep }}{{ f_price_value }}{% endif %}{% if f_trial != "" %}
+{{ lf.free_trial }} {{ f_trial }}{% endif %}{% if f_family %}
+{{ lf.family_sharing_yes }}{% endif %}
+
+{{ lf.privacy }}
+- {{ lf.tracking }} {% if app.privacy.tracking %}{{ t.word_yes }}{% else %}{{ lf.no_tracking }}{% endif %}
+- {{ lf.account_required }} {% if app.privacy.account_required %}{{ t.word_yes }}{% else %}{{ t.word_no }}{% endif %}
+- {{ lf.data_collection }} {{ w.privacy.data_collection | default: app.privacy.data_collection | default: t.qr_none }}
+{% if w.privacy.notes %}{% for n in w.privacy.notes %}- {{ n }}
+{% endfor %}{% endif %}
+{% if w.faq %}{{ lf.faq }}
+{% for q in w.faq %}{{ lf.q }} {{ q.q }}
+{{ lf.a }} {{ q.a }}
+
+{% endfor %}{% endif %}
+{% if app.release %}{% if app.release.first_release %}{{ lf.first_release }} {{ app.release.first_release }}{% endif %}
+{% if app.release.last_updated %}{{ lf.last_updated }} {{ app.release.last_updated }}{% endif %}{% endif %}
+
+{{ lf.keywords }} {{ w.seo.keywords | join: ", " }}
+
+---
+{% endcapture %}{% include tokens.html text=app_block %}{% endunless %}{% endfor %}
+
+{{ lf.h_audience }}
+
+{% assign lf_hub = lf_pre | append: "/for/" %}{% assign full_hubs = site.pages | where: "lang", lf_lang | where_exp: "p", "p.url contains '/for/'" | where_exp: "p", "p.url != lf_hub" | sort: "url" -%}
+{% for p in full_hubs -%}
+## {{ p.title }}
+{{ lf.url }} {{ site.url }}{{ p.url }}
+{% if p.last_updated %}{{ lf.last_updated }} {{ p.last_updated | date: "%Y-%m-%d" }}
+{% endif %}{{ lf.summary }} {{ p.seo.description }}
+{% if p.quick_answer %}{{ lf.answer }} {{ p.quick_answer | strip_html }}
+{% endif %}
+{% endfor %}
+---
+
+{{ lf.h_guides }}
+
+{% assign lf_hub = lf_pre | append: "/guides/" %}{% assign full_guides = site.pages | where: "lang", lf_lang | where_exp: "p", "p.url contains '/guides/'" | where_exp: "p", "p.url != lf_hub" | sort: "url" -%}
+{% for p in full_guides -%}
+## {{ p.title }}
+{{ lf.url }} {{ site.url }}{{ p.url }}
+{% if p.last_updated %}{{ lf.last_updated }} {{ p.last_updated | date: "%Y-%m-%d" }}
+{% endif %}{{ lf.summary }} {{ p.seo.description }}
+{% if p.quick_answer %}{{ lf.answer }} {{ p.quick_answer | strip_html }}
+{% endif %}
+{% endfor %}
+---
+
+{{ lf.h_journal }}
+
+{{ lf.journal_intro }}
+
+{% if lf_lang == "en" %}{% assign full_posts = site.journal | sort: "date" | reverse -%}{% else %}{% assign full_posts = site.pages | where: "lang", lf_lang | where: "layout", "journal" | sort: "date" | reverse -%}{% endif -%}
+{% for p in full_posts -%}
+## {{ p.title }}
+{{ lf.url }} {{ site.url }}{{ p.url }}
+{{ lf.published }} {{ p.date | date: "%Y-%m-%d" }}{% if p.last_updated %} · {{ lf.updated }} {{ p.last_updated | date: "%Y-%m-%d" }}{% endif %}
+{% if p.mentioned_apps %}{{ lf.apps }} {{ p.mentioned_apps | join: ", " }}
+{% endif %}{{ lf.answer }} {{ p.quick_answer | default: p.lede | strip_html }}
+{% if p.faq %}{% for q in p.faq %}{{ lf.q }} {{ q.q }}
+{{ lf.a }} {{ q.a | strip_html }}
+{% endfor %}{% endif %}
+{% endfor %}
+---
+
+{{ lf.h_comparisons }}
+
+{{ lf.comparisons_intro }}
+
+{% assign lf_hub = lf_pre | append: "/alternatives/" %}{% assign full_alts = site.pages | where: "lang", lf_lang | where_exp: "p", "p.url contains '/alternatives/'" | where_exp: "p", "p.url != lf_hub" | sort: "url" -%}
+{% for p in full_alts -%}
+## {{ p.title }}
+{{ lf.url }} {{ site.url }}{{ p.url }}
+{% if p.last_updated %}{{ lf.last_updated }} {{ p.last_updated | date: "%Y-%m-%d" }}
+{% endif %}{{ lf.answer }} {{ p.quick_answer | default: p.seo.description | strip_html }}
+{% endfor %}
+---
+
+{{ lf.end }}

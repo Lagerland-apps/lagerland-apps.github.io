@@ -1,0 +1,15 @@
+{%- comment -%}
+  For ai-index.json: prints `, "localized_urls": {"de": "https://…/de/…", …}` for an English URL that has live
+  translations (from _data/i18n_map.json), and nothing otherwise.
+    url  the English URL
+{%- endcomment -%}
+{%- assign _alv = site.data.i18n_map[include.url] -%}
+{%- if _alv -%}
+  {%- assign _alo = "" -%}
+  {%- for _lp in site.data.locales -%}{%- assign _lc = _lp[0] -%}
+    {%- if _lp[0] != "en" and _lp[1].live and _alv[_lc] -%}
+      {%- capture _alo -%}{{ _alo }}{% if _alo != "" %}, {% endif %}{{ _lp[0] | jsonify }}: "{{ site.url }}{{ _alv[_lc] }}"{%- endcapture -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if _alo != "" -%}, "localized_urls": { {{ _alo }} }{%- endif -%}
+{%- endif -%}

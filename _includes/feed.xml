@@ -1,0 +1,46 @@
+{%- comment -%}
+  Atom feed of one language's journal (TRANSLATION.md 4.12). Root /feed.xml and each /<code>/feed.xml are stubs that
+  include this with lang=<code>. English lists site.journal; a language lists its translated posts (plain pages with
+  layout: journal). Title and subtitle come from _data/i18n/<lang>.yml (feed_title, feed_subtitle).
+{%- endcomment -%}
+{%- assign fd_lang = include.lang | default: "en" -%}
+{%- assign fd_t = site.data.i18n[fd_lang] | default: site.data.i18n.en -%}
+{%- assign fd_loc = site.data.locales[fd_lang] | default: site.data.locales.en -%}
+{%- if fd_lang == "en" -%}{%- assign fd_pre = "" -%}{%- assign posts = site.journal | sort: "date" | reverse -%}
+{%- else -%}{%- assign fd_pre = "/" | append: fd_lang -%}{%- assign posts = site.pages | where: "lang", fd_lang | where: "layout", "journal" | sort: "date" | reverse -%}{%- endif -%}
+{%- capture fd_journal -%}{% include l.html url="/journal/" %}{%- endcapture -%}
+{% capture xa_file %}<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ site.url }}/" xml:lang="{{ fd_loc.html_lang }}">
+  <title>{{ fd_t.feed_title }}</title>
+  <subtitle>{{ fd_t.feed_subtitle }}</subtitle>
+  <link href="{{ site.url }}{{ fd_pre }}/feed.xml" rel="self"/>
+  <link href="{{ site.url }}{{ fd_journal }}"/>
+{%- assign feed_updated = posts.first.date -%}
+{%- for p in posts -%}{%- assign _u = p.last_updated | default: p.date | date: '%s' | plus: 0 -%}{%- assign _f = feed_updated | date: '%s' | plus: 0 -%}{%- if _u > _f -%}{%- assign feed_updated = p.last_updated | default: p.date -%}{%- endif -%}{%- endfor %}
+  <updated>{{ feed_updated | date_to_xmlschema }}</updated>
+  <id>{{ site.url }}/</id>
+  <author>
+    <name>Lagerland Apps</name>
+    <email>lagerland.apps@proton.me</email>
+    <uri>{{ site.url }}{{ fd_pre }}/lagerland-apps/</uri>
+  </author>
+  <rights>&#169; {{ "now" | date: "%Y" }} Lagerland Apps</rights>
+  <icon>{{ site.url }}/assets/icons/lagerland-mark.png</icon>
+  <logo>{{ site.url }}/assets/icons/lagerland-mark.png</logo>
+{% for post in posts %}
+  <entry>
+    <title>{{ post.title | xml_escape }}</title>
+    <link href="{{ site.url }}{{ post.url }}" rel="alternate" type="text/html"/>
+    <id>{{ site.url }}{{ post.url }}</id>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.last_updated | default: post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Lagerland Apps</name>
+      <uri>{{ site.url }}{{ fd_pre }}/lagerland-apps/</uri>
+    </author>
+    {% if post.lede %}<summary type="html">{{ post.lede | xml_escape }}</summary>{% endif %}
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+{% endfor %}
+</feed>
+{% endcapture %}{% include tokens-xapp.html text=xa_file -%}

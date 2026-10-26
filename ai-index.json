@@ -21,6 +21,16 @@ permalink: /ai-index.json
       "https://github.com/lagerland-apps"
     ]
   },
+  {%- comment %} Languages the site is live in (TRANSLATION.md 4.12): each one's home and AI files. {% endcomment %}
+  "languages": [
+    {%- assign _ai_first = true -%}
+    {%- for _lp in site.data.locales -%}{%- assign _lc = _lp[0] -%}{%- if _lp[1].live -%}
+      {%- if _lp[0] == "en" -%}{%- assign _ai_pre = "" -%}{%- else -%}{%- assign _ai_pre = "/" | append: _lp[0] -%}{%- endif -%}
+      {%- unless _ai_first %},{% endunless %}
+    {"code": {{ _lp[0] | jsonify }}, "hreflang": {{ _lp[1].hreflang | jsonify }}, "name": {{ _lp[1].native_name | jsonify }}, "home": "{{ site.url }}{{ _ai_pre }}/", "llms_txt": "{{ site.url }}{{ _ai_pre }}/llms.txt", "llms_full_txt": "{{ site.url }}{{ _ai_pre }}/llms-full.txt"}
+      {%- assign _ai_first = false -%}
+    {%- endif -%}{%- endfor %}
+  ],
   "privacy_philosophy": {
     "third_party_tracking": false,
     "advertising": false,
@@ -392,7 +402,7 @@ permalink: /ai-index.json
     {
       "name": {{ app.name | jsonify }},
       "slug": {{ app.slug | jsonify }},
-      "url": "{{ site.url }}{{ app.url }}",
+      "url": "{{ site.url }}{{ app.url }}"{% include ai-localized.html url=app.url %},
       "app_store_url": {{ app.app_store_url | jsonify }},
       "tagline": {{ app.tagline | jsonify }},
       "category": {{ app.category | jsonify }},
@@ -467,28 +477,28 @@ permalink: /ai-index.json
   ],
   {%- comment %} Everything below is generated from the live page set, so new
     hubs, guides, journal posts and comparison pages appear automatically. {% endcomment %}
-  {%- assign idx_hubs = site.pages | where_exp: "p", "p.url contains '/for/'" | where_exp: "p", "p.url != '/for/'" | sort: "url" %}
+  {%- assign idx_hubs = site.pages | where: "lang", "en" | where_exp: "p", "p.url contains '/for/'" | where_exp: "p", "p.url != '/for/'" | sort: "url" %}
   "audience_hubs": [
     {%- for p in idx_hubs %}
-    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}", "summary": {{ p.seo.description | jsonify }}, "quick_answer": {{ p.quick_answer | default: "" | strip_html | jsonify }}, "last_updated": {{ p.last_updated | date: "%Y-%m-%d" | default: "" | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}"{% include ai-localized.html url=p.url %}, "summary": {{ p.seo.description | jsonify }}, "quick_answer": {{ p.quick_answer | default: "" | strip_html | jsonify }}, "last_updated": {{ p.last_updated | date: "%Y-%m-%d" | default: "" | jsonify }}}{% unless forloop.last %},{% endunless %}
     {%- endfor %}
   ],
-  {%- assign idx_guides = site.pages | where_exp: "p", "p.url contains '/guides/'" | where_exp: "p", "p.url != '/guides/'" | sort: "url" %}
+  {%- assign idx_guides = site.pages | where: "lang", "en" | where_exp: "p", "p.url contains '/guides/'" | where_exp: "p", "p.url != '/guides/'" | sort: "url" %}
   "guides": [
     {%- for p in idx_guides %}
-    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}", "summary": {{ p.seo.description | jsonify }}, "quick_answer": {{ p.quick_answer | default: "" | strip_html | jsonify }}, "last_updated": {{ p.last_updated | date: "%Y-%m-%d" | default: "" | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}"{% include ai-localized.html url=p.url %}, "summary": {{ p.seo.description | jsonify }}, "quick_answer": {{ p.quick_answer | default: "" | strip_html | jsonify }}, "last_updated": {{ p.last_updated | date: "%Y-%m-%d" | default: "" | jsonify }}}{% unless forloop.last %},{% endunless %}
     {%- endfor %}
   ],
   {%- assign idx_posts = site.journal | sort: "date" | reverse %}
   "journal": [
     {%- for p in idx_posts %}
-    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}", "date_published": "{{ p.date | date: '%Y-%m-%d' }}", "date_modified": "{{ p.last_updated | default: p.date | date: '%Y-%m-%d' }}", "quick_answer": {{ p.quick_answer | default: p.lede | strip_html | jsonify }}, "mentioned_apps": {{ p.mentioned_apps | default: empty | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}"{% include ai-localized.html url=p.url %}, "date_published": "{{ p.date | date: '%Y-%m-%d' }}", "date_modified": "{{ p.last_updated | default: p.date | date: '%Y-%m-%d' }}", "quick_answer": {{ p.quick_answer | default: p.lede | strip_html | jsonify }}, "mentioned_apps": {{ p.mentioned_apps | default: empty | jsonify }}}{% unless forloop.last %},{% endunless %}
     {%- endfor %}
   ],
-  {%- assign idx_alts = site.pages | where_exp: "p", "p.url contains '/alternatives/'" | where_exp: "p", "p.url != '/alternatives/'" | sort: "url" %}
+  {%- assign idx_alts = site.pages | where: "lang", "en" | where_exp: "p", "p.url contains '/alternatives/'" | where_exp: "p", "p.url != '/alternatives/'" | sort: "url" %}
   "comparisons": [
     {%- for p in idx_alts %}
-    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}", "summary": {{ p.seo.description | jsonify }}, "quick_answer": {{ p.quick_answer | default: "" | strip_html | jsonify }}, "last_updated": {{ p.last_updated | date: "%Y-%m-%d" | default: "" | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {"title": {{ p.title | jsonify }}, "url": "{{ site.url }}{{ p.url }}"{% include ai-localized.html url=p.url %}, "summary": {{ p.seo.description | jsonify }}, "quick_answer": {{ p.quick_answer | default: "" | strip_html | jsonify }}, "last_updated": {{ p.last_updated | date: "%Y-%m-%d" | default: "" | jsonify }}}{% unless forloop.last %},{% endunless %}
     {%- endfor %}
   ]
 }
