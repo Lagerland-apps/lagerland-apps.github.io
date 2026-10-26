@@ -63,6 +63,8 @@ exclude:
   - CLAUDE.md
   - PRODUCT.md
   - DESIGN.md
+  - TRANSLATION.md
+  - _i18n
   - assets/icons/sm/*.json
   - scripts/
   - README.md
