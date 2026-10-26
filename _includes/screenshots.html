@@ -1,16 +1,21 @@
-<section id="screenshots" class="section reveal">
+{%- comment -%}
+  Screenshots as a se-tenant strip: joined, perforated stamps on the
+  yellow sheet margin, one per screen, framed in the app's series colour.
+  Supports three shapes per entry:
+    1. String: "/path/to/img.png"  (generic alt fallback)
+    2. Hash:   { src: "/path/to/img.png", alt: "Alt for screen readers" }
+    3. Hash:   { src: "/path/to/img.png", caption: "Visible caption (also used as alt)" }
+  Mac apps (hero.device: mac) get wide landscape stamps.
+{%- endcomment -%}
+{%- include series.html app=include.app -%}
+<section id="screenshots" class="shots-band bleed series-{{ series_key }}" aria-labelledby="shots-title-{{ include.app.slug }}">
   <div class="section-head">
-    <h2 class="h2">Screenshots</h2>
-    <div class="section-sub">Swipe or drag to explore</div>
+    <h2 class="h2" id="shots-title-{{ include.app.slug }}">{{ include.app.name }}, screen by screen</h2>
+    <div class="section-sub">Real screenshots from the App Store listing. Scroll or drag the strip.</div>
   </div>
 
   <div class="shots">
     {% for s in include.app.screenshots %}
-      {%- comment %} Supports three shapes:
-        1. String: "/path/to/img.png"  (generic alt fallback)
-        2. Hash:   { src: "/path/to/img.png", alt: "Alt for screen readers" }
-        3. Hash:   { src: "/path/to/img.png", caption: "Visible caption (also used as alt)" }
-      {% endcomment -%}
       {%- if s.src -%}
         {%- assign shot_src = s.src -%}
         {%- capture shot_alt_fallback %}{{ include.app.name }} screenshot {{ forloop.index }}{% endcapture -%}
@@ -21,30 +26,14 @@
         {%- capture shot_alt %}{{ include.app.name }} screenshot {{ forloop.index }}{% endcapture -%}
         {%- assign shot_caption = nil -%}
       {%- endif -%}
-      {%- comment %} iPhone gallery shots use the same .framed-shot bezel as the
-        hero (minus the hero's --lift shadow, which the scroll container would
-        clip — see .shot .framed-shot in style.css for the contained shadow).
-        Mac apps render in the clean window card instead. {% endcomment -%}
       <figure class="shot{% if include.app.hero.device == 'mac' %} shot--window{% endif %}">
-        {%- if include.app.hero.device == "mac" -%}
-        <img src="{{ shot_src }}" alt="{{ shot_alt | escape }}" loading="lazy">
-        {%- else -%}
-        <div class="framed-shot">
-          <img src="{{ shot_src }}" alt="{{ shot_alt | escape }}" loading="lazy">
+        <div class="shot__paper">
+          <img src="{{ shot_src }}" alt="{{ shot_alt | escape }}" loading="lazy" decoding="async">
         </div>
-        {%- endif -%}
         {%- if shot_caption -%}
         <figcaption class="shot-caption">{{ shot_caption }}</figcaption>
         {%- endif -%}
       </figure>
     {% endfor %}
   </div>
-
-  {% if include.app.screenshots.size > 1 %}
-  <div class="shots-indicators">
-    {% for s in include.app.screenshots %}
-      <span class="shots-dot {% if forloop.first %}active{% endif %}"></span>
-    {% endfor %}
-  </div>
-  {% endif %}
 </section>

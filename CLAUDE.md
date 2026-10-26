@@ -164,13 +164,38 @@ tokens in `_includes/tokens.html` (`{P_MONTHLY}` etc.). After any App Store Conn
 
 ---
 
-## Design system v3 "Paper & Ink" (redesign, 2026-07-11)
+## Design system v4 "The Issue" (redesign, 2026-10-26)
 
-- **Tokens**: `assets/css/style.css` — `:root` is the LIGHT "paper" theme; `@media (prefers-color-scheme: dark)` holds the "ink" theme. All theming lives in those two blocks; components must reference tokens, never hard-coded colors.
-- **Fonts**: self-hosted latin subsets in `assets/fonts/` — Inter variable 400–600 (UI/body) + Newsreader 500–600 roman & 500 italic (display/headings). Preloaded in `head.html`. Do not add third-party font hosts.
-- **Motion contract**: content must NEVER be hidden without JS. `head.html` sets `html.js` before first paint; reveal CSS applies only under `html.js`, and `animations.js` has a 2.5s force-visible safety net. Any stat animated by `[data-count]` must have its REAL value server-rendered in the text node (crawlers must never see "0").
-- **Device frames**: app-page heroes and the screenshots carousel wrap shots in the pure-CSS iPhone bezel (`.framed-shot`). Mac apps with landscape shots opt out via `hero: device: mac` in front matter (currently appmeta, mediakit, mockly). Set this flag for any future app whose screenshots aren't portrait-iPhone.
-- **Counts are computed**: app counts come from `{{ site.apps | where: "status", "live" | size }}` and comparison counts from `site.pages | where_exp` — never hardcode 18/95 in new copy (prose in _apps founder signals is the one place literals remain; keep them in sync when adding an app).
+The studio publishes its apps like a post office issues stamps: one sheet, one stamp per app, one maker.
+Direction contract: `.impeccable/surfaces/index-html.md`; product record: `PRODUCT.md` (both excluded from the build).
+DESIGN.md (written by the Impeccable documenter) holds the full token reference.
+
+- **Tokens**: `assets/css/style.css` `:root` only. Light only, no dark theme (the world is printed paper).
+  Postal yellow `--selv` for chrome and loud bands, cool stamp paper `--paper`, ink `--ink`/`--ink-2`/`--ink-3`,
+  postal blue `--blue` reserved for primary actions and focus. Legacy token names (`--accent`, `--bg-card`, …)
+  are aliased so inline styles on old pages keep working. Never hard-code colours in components.
+- **Series**: five stamp series, mapped from `category` in `_includes/series.html`: health (health, fitness),
+  plan (productivity, lifestyle, education, books — the default), money (finance), games, tools
+  (developer-tools, business, graphics, utilities). Each has a frame colour and tint (`.series-<key>` sets `--s`/`--t`).
+  A new category needs a line in series.html.
+- **Stamps**: `_includes/stamp.html` (perforated stamp; denomination and devices come from the catalog via
+  app-facts), `_includes/postmark.html`. The homepage sheet is generated from `site.apps` in first-release order
+  (`release.first_release`); only the newest app is postmarked. App pages open with the leaflet
+  (`_includes/hero.html`): big stamp + first-day postmark, headline, App Store badge, details table.
+  Screenshots render as a se-tenant strip (`_includes/screenshots.html`) directly under the hero.
+- **Small icons**: stamps and cards load `assets/icons/sm/<slug>.webp` (256px). After adding or changing an app
+  icon run `python3 scripts/generate-icons-sm.py` — a missing file shows a broken stamp.
+- **Fonts**: self-hosted `assets/fonts/jost-var.woff2` (display, OFL) + `inter-var.woff2` (body). Newsreader is
+  retired (files kept, not loaded). Do not add third-party font hosts.
+- **No kicker labels**: an `.overline` directly above a heading is hidden by CSS (the heading carries its own
+  weight). Don't add new ones; `.overline` used as card meta (dates) still shows.
+- **Prices on cards**: app cards show "Free · Pro" / "Free" / "One-time purchase", never another app's price —
+  the SEO audit treats any price on an app page as that app's own price.
+- **Motion contract**: content must NEVER be hidden without JS. `head.html` sets `html.js` before first paint;
+  reveal CSS applies only under `html.js`; `animations.js` has a 2.5s force-visible safety net. The sheet's
+  deal-in, filter and stamp lift live in `initSheet()`. Any `[data-count]` stat server-renders its real value.
+- **Device frames**: Mac apps with landscape shots keep `hero: device: mac` (appmeta, mediakit, mockly) → wide stamps.
+- **Counts are computed**: app counts from `site.data.catalog.meta.live_app_count` / `site.apps | where: "status", "live"`.
 - **Homepage transparency sample** is generated from `_data/transparency.yml` (same source as /transparency/) — edit the data file, not the table.
 - `scripts/`, `README.md`, `2.png` are excluded from the build (`_config.yml`); /scripts/* is no longer served publicly.
 - `/for/` now has a hub page (for/index.html) — new audience pages must be added to its card grid + ItemList JSON-LD and to llms.txt.

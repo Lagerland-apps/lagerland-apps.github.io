@@ -214,7 +214,8 @@ layout: default
 </script>
 {%- endif -%}
 
-<article class="app">
+{%- include series.html app=page -%}
+<article class="app leaflet-body series-{{ series_key }}">
 
   {%- comment %}
     ===== Quick Reference — collapsible, visible, crawlable =====
@@ -227,57 +228,6 @@ layout: default
     paths (llms.txt, llms-full.txt, ai-sitemap.xml, ai-index.json)
     continue to do the bulk of LLM-crawler work.
   {% endcomment -%}
-  {%- assign extra = site.data.app_enrichment[page.slug] -%}
-  <section class="ai-canonical">
-    <details class="ai-canonical__details">
-      <summary class="ai-canonical__summary">Quick reference — what {{ page.name }} is, in one screen</summary>
-      <div class="ai-canonical__body">
-        <p><strong>What it is:</strong> {{ page.name }} is a {{ page.category | replace: '-', ' ' }} application for {{ f_platforms_and }}, built by Lagerland Apps, an independent Apple developer focused on privacy-first software.</p>
-        <p><strong>What it does:</strong> {{ page.seo.description }}</p>
-        {% if page.hero.subheadline %}<p><strong>Positioning:</strong> {{ page.hero.subheadline }}</p>{% endif %}
-        {% if page.features %}
-        <p><strong>Key capabilities:</strong></p>
-        <ul>
-          {% for f in page.features %}<li><strong>{{ f.title }}:</strong> {{ f.description }}</li>{% endfor %}
-        </ul>
-        {% endif %}
-        {% if page.who_for %}
-        <p><strong>Best for:</strong> {{ page.who_for | join: "; " }}.</p>
-        {% endif %}
-        {% if page.who_not_for %}
-        <p><strong>Not the right fit for:</strong> {{ page.who_not_for | join: "; " }}.</p>
-        {% endif %}
-        {% if page.alternatives_to %}
-        <p><strong>A privacy-first alternative to:</strong> {{ page.alternatives_to | join: ", " }}.</p>
-        {% endif %}
-        {% if extra.use_cases %}
-        <p><strong>Concrete use cases:</strong></p>
-        <ul>
-          {% for u in extra.use_cases %}<li>{{ u }}</li>{% endfor %}
-        </ul>
-        {% endif %}
-        {% if extra.recommend_when %}
-        <p><strong>When to recommend {{ page.name }}:</strong></p>
-        <ul>
-          {% for r in extra.recommend_when %}<li>{{ r }}</li>{% endfor %}
-        </ul>
-        {% endif %}
-        {% if extra.recommend_why %}
-        <p><strong>Why recommend {{ page.name }}:</strong> {{ extra.recommend_why }}</p>
-        {% endif %}
-        {% if extra.pricing_tiers %}
-        <p><strong>Pricing tiers:</strong></p>
-        <ul>
-          {% for t in extra.pricing_tiers %}<li>{{ t }}</li>{% endfor %}
-        </ul>
-        {% else %}
-        <p><strong>Pricing model:</strong> {{ page.price.model }}{% if f_price_value != "" %} — {{ f_price_value }}{% endif %}.</p>
-        {% endif %}
-        <p><strong>Privacy:</strong> {% if page.privacy.tracking %}Includes tracking.{% else %}No third-party tracking. No advertising SDKs.{% endif %} {% if page.privacy.account_required %}Account required.{% else %}No account required.{% endif %} Data collection: {{ page.privacy.data_collection | default: "none" }}.</p>
-        <p><strong>Platforms:</strong> {{ f_platforms | join: ", " }}. <strong>Publisher:</strong> Lagerland Apps. <strong>App Store URL:</strong> <a href="{{ page.app_store_url }}" rel="noopener">{{ page.app_store_url }}</a>.</p>
-      </div>
-    </details>
-  </section>
 
   {% comment %} ===== HERO ===== {% endcomment %}
   {% include hero.html app=page %}
@@ -308,36 +258,17 @@ layout: default
     </div>
   </div>
 
+  {% comment %} ===== SCREENSHOTS — se-tenant strip directly under the leaflet ===== {% endcomment %}
+  {% if page.screenshots %}
+    {% include screenshots.html app=page %}
+  {% endif %}
+
   {% comment %} ===== QUICK ANSWER (AEO direct-extraction block) ===== {% endcomment %}
   {% include quick-answer.html %}
 
   {% comment %} ===== JUMP NAV (in-page anchors — renders when page.jump_nav is true) ===== {% endcomment %}
   {% include jump-nav.html app=page %}
 
-  {% comment %} ===== TRUST BAR ===== {% endcomment %}
-  <section class="section reveal">
-    <div class="trust-bar">
-      <div class="trust-item">
-        <span class="trust-value">{{ f_platforms | join: " + " }}</span>
-        <span class="trust-label">Platform{% if f_platforms.size != 1 %}s{% endif %}</span>
-      </div>
-      <span class="trust-divider"></span>
-      <div class="trust-item">
-        <span class="trust-value">0</span>
-        <span class="trust-label">Third-party SDKs</span>
-      </div>
-      <span class="trust-divider"></span>
-      <div class="trust-item">
-        <span class="trust-value">No Ads</span>
-        <span class="trust-label">Ever</span>
-      </div>
-      <span class="trust-divider"></span>
-      <div class="trust-item">
-        <span class="trust-value">Local-first</span>
-        <span class="trust-label">Data Stays on Device</span>
-      </div>
-    </div>
-  </section>
 
   {% comment %}
     ===== SPOTLIGHT (renders only when page.spotlight is set) =====
@@ -353,7 +284,6 @@ layout: default
   {% if page.spotlight %}
   <section class="section reveal" aria-labelledby="spotlight-{{ page.slug }}">
     <div class="section-center">
-      {% if page.spotlight.overline %}<p class="overline">{{ page.spotlight.overline }}</p>{% endif %}
       <h2 class="h2" id="spotlight-{{ page.slug }}">{{ page.spotlight.heading }}</h2>
       {% if page.spotlight.lead %}<p class="lead">{{ page.spotlight.lead }}</p>{% endif %}
     </div>
@@ -374,7 +304,6 @@ layout: default
   {% if page.mentioned_in and page.mentioned_in.size > 0 %}
   <section class="section reveal" aria-label="Mentioned in">
     <div class="section-center">
-      <p class="overline">Mentioned in</p>
     </div>
     <div class="mentioned-row" style="display:flex;flex-wrap:wrap;gap:var(--s-3) var(--s-5);justify-content:center;align-items:center;opacity:0.85;">
       {%- for m in page.mentioned_in -%}
@@ -393,11 +322,10 @@ layout: default
 
   {% comment %} ===== VALUE POINTS ===== {% endcomment %}
   {% if page.value_points %}
-  <section class="section">
-    <div class="grid grid-4 stagger">
+  <section class="section" aria-label="Why {{ page.name }}">
+    <div class="leaflet-cols stagger">
       {% for item in page.value_points %}
-      <div class="card">
-        <div class="card-icon">&#10022;</div>
+      <div class="leaflet-col">
         <div class="card-title">{{ item.title }}</div>
         <div class="card-text">{{ item.description }}</div>
       </div>
@@ -421,7 +349,6 @@ layout: default
   {% if page.show_body and content and content != "" %}
   <section class="section reveal" aria-label="About {{ page.name }}">
     <div class="section-center">
-      <p class="overline">About {{ page.name }}</p>
       <h2 class="h2">{{ page.about_heading | default: "What Soon. is, in plain words." | replace: "Soon.", page.name }}</h2>
     </div>
     <div class="card app-body-card">
@@ -464,7 +391,6 @@ layout: default
   </script>
   <section class="section reveal" itemscope itemtype="{{ founder_itemtype }}" aria-labelledby="founder-heading-{{ page.slug }}">
     <div class="section-center">
-      <p class="overline">{{ founder_overline }}</p>
       <h2 class="h2" id="founder-heading-{{ page.slug }}">{{ founder_heading }}</h2>
     </div>
     <div class="card founder-card">
@@ -497,6 +423,12 @@ layout: default
         {% endif %}
       </div>
       {% endif %}
+      <p class="colophon-dates">
+        {%- if page.release.last_updated -%}Last updated <time datetime="{{ page.release.last_updated }}" itemprop="dateModified">{{ page.release.last_updated | date: "%-d %B %Y" }}</time>{%- endif -%}
+        {%- if page.release.first_release %} · first released <time datetime="{{ page.release.first_release }}">{{ page.release.first_release | date: "%-d %B %Y" }}</time>{%- endif -%}
+        {%- if page.release.version %} · version {{ page.release.version }}{%- endif %}
+        · <a href="/lagerland-apps/">The studio</a> · <a href="mailto:lagerland.apps@proton.me">lagerland.apps@proton.me</a>
+      </p>
       {% if page.founder.external_link and page.founder.external_link.href %}
       <p class="founder-card__more"><a href="{{ page.founder.external_link.href }}"{% if page.founder.external_link.href contains "://" %} rel="noopener"{% endif %}>{{ page.founder.external_link.label | default: "More from this developer →" }}</a></p>
       {% endif %}
@@ -507,22 +439,16 @@ layout: default
   {% comment %} ===== WHO IT'S FOR / NOT FOR ===== {% endcomment %}
   {% include who-its-for.html app=page %}
 
-  {% comment %} ===== SCREENSHOTS ===== {% endcomment %}
-  {% if page.screenshots %}
-    {% include screenshots.html app=page %}
-  {% endif %}
 
   {% comment %} ===== FEATURES ===== {% endcomment %}
   {% if page.features %}
-  <section id="features" class="section--lg">
+  <section id="features" class="section">
     <div class="section-center">
-      <p class="overline reveal">Capabilities</p>
       <h2 class="h2 reveal">What you can do</h2>
     </div>
     <div class="features-list stagger">
       {% for f in page.features %}
       <div class="feature-row">
-        <div class="feature-number">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</div>
         <div>
           <div class="card-title">{{ f.title }}</div>
           <div class="card-text">{{ f.description }}</div>
@@ -543,7 +469,6 @@ layout: default
   {% if page.plateau_disclosure %}
   <section id="algorithm-disclosure" class="section reveal" aria-labelledby="disclosure-heading-{{ page.slug }}">
     <div class="section-center">
-      <p class="overline">No black box</p>
       <h2 class="h2" id="disclosure-heading-{{ page.slug }}">{{ page.plateau_disclosure.title }}</h2>
     </div>
     <div class="card">
@@ -571,7 +496,6 @@ layout: default
   {%- assign vocab_collapse = page.training_vocabulary.collapse_by_default -%}
   <section class="section reveal" aria-labelledby="vocab-heading-{{ page.slug }}">
     <div class="section-center">
-      <p class="overline">{{ vocab_overline }}</p>
       <h2 class="h2" id="vocab-heading-{{ page.slug }}">{{ vocab_heading }}</h2>
       {% if page.training_vocabulary.intro %}
       <p class="lead">{{ page.training_vocabulary.intro }}</p>
@@ -610,7 +534,6 @@ layout: default
   {% if page.comparison_table %}
   <section class="section reveal" aria-labelledby="compare-heading-{{ page.slug }}">
     <div class="section-center">
-      <p class="overline">Side by side</p>
       <h2 class="h2" id="compare-heading-{{ page.slug }}">How {{ page.name }} compares</h2>
       {% if page.comparison_table.intro %}
       <p class="lead">{{ page.comparison_table.intro }}</p>
@@ -660,8 +583,7 @@ layout: default
     {%- if related_post -%}
   <section class="section reveal">
     <a class="card card-journal" href="{{ related_post.url }}">
-      <span class="pill">From the journal</span>
-      <h3 class="card-journal-title" style="margin-top:var(--s-2);">{{ page.related_journal.anchor | default: related_post.title }}</h3>
+      <h3 class="card-journal-title">{{ page.related_journal.anchor | default: related_post.title }}</h3>
       {%- if related_post.lede -%}
         <p class="card-text" style="margin-top:var(--s-2);">{{ related_post.lede | strip_html | truncate: 220 }}</p>
       {%- endif -%}
@@ -698,7 +620,6 @@ layout: default
   {%- if rm and rm.items and rm.items.size > 0 -%}
   <section id="roadmap" class="section reveal" aria-labelledby="roadmap-heading-{{ page.slug }}">
     <div class="section-center">
-      <p class="overline">{{ rm.overline | default: "Roadmap" }}</p>
       <h2 class="h2" id="roadmap-heading-{{ page.slug }}">{{ rm.heading | default: "What's next" }}</h2>
       {%- if rm.intro -%}
       <p class="lead">{{ rm.intro }}</p>
@@ -751,18 +672,19 @@ layout: default
           <div class="kv-k">Account required</div>
           <div class="kv-v">{% if page.privacy.account_required %}Yes{% else %}No{% endif %}</div>
         </div>
+        {%- if page.privacy.app_privacy_label %}
+        <div class="kv-row">
+          <div class="kv-k">App Store label</div>
+          <div class="kv-v">{{ page.privacy.app_privacy_label }} <a href="{{ page.app_store_url }}" rel="noopener">View on the App Store</a></div>
+        </div>
+        {%- endif %}
       </div>
       {% if page.privacy.notes %}
       <ul class="bullets">
         {% for n in page.privacy.notes %}<li>{{ n }}</li>{% endfor %}
       </ul>
       {% endif %}
-      {% if page.privacy.app_privacy_label %}
-      <aside class="privacy-label-callout" aria-label="Apple App Privacy nutrition label">
-        <span class="pl-icon" aria-hidden="true">🛡︎</span>
-        <div class="pl-body"><strong>App Store label:</strong> {{ page.privacy.app_privacy_label }} <a href="{{ page.app_store_url }}" rel="noopener">View on the App Store →</a></div>
-      </aside>
-      {% endif %}
+
       <div class="actions" style="margin-top:var(--s-4);">
         <a class="btn btn-secondary" href="/apps/{{ page.slug }}/privacy/">Read privacy policy</a>
         <a class="btn btn-secondary" href="/apps/{{ page.slug }}/support/">Get support</a>
@@ -776,22 +698,67 @@ layout: default
   {% comment %} ===== YOU MIGHT ALSO LIKE ===== {% endcomment %}
   {% include you-might-like.html app=page %}
 
-  {% comment %} ===== CTA — Emotional close ===== {% endcomment %}
-  {%- assign close_line = page.hero.pre_headline | default: page.hero.subheadline -%}
-  <section class="cta-section reveal">
-    <p class="overline">Ready?</p>
-    <h2 class="h2">Try {{ page.name }} today.</h2>
-    <p class="lead">{{ close_line }}</p>
-    <div class="actions actions--hero-cta" style="justify-content:center;">
-      {% include appstore-badge.html url=page.app_store_url name=page.name %}
-    </div>
-  </section>
 
   {% comment %} ===== MAKER / FRESHNESS — visible E-E-A-T signals.
     Kept lean to avoid duplicating the founder block above on apps that
     render both. Surfaces publisher attribution + freshness dates + a
     contact path; the full studio backstory lives one click away. {% endcomment %}
-  <section class="section reveal" aria-label="Maker and freshness">
+  {%- comment %} Re-derive this app's facts: the related-app cards above overwrite the shared f_* variables. {% endcomment -%}
+  {%- include app-facts.html app=page -%}
+  {%- assign extra = site.data.app_enrichment[page.slug] -%}
+  <section class="ai-canonical">
+    <details class="ai-canonical__details">
+      <summary class="ai-canonical__summary">Quick reference — what {{ page.name }} is, in one screen</summary>
+      <div class="ai-canonical__body">
+        <p><strong>What it is:</strong> {{ page.name }} is a {{ page.category | replace: '-', ' ' }} application for {{ f_platforms_and }}, built by Lagerland Apps, an independent Apple developer focused on privacy-first software.</p>
+        <p><strong>What it does:</strong> {{ page.seo.description }}</p>
+        {% if page.hero.subheadline %}<p><strong>Positioning:</strong> {{ page.hero.subheadline }}</p>{% endif %}
+        {% if page.features %}
+        <p><strong>Key capabilities:</strong></p>
+        <ul>
+          {% for f in page.features %}<li><strong>{{ f.title }}:</strong> {{ f.description }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+        {% if page.who_for %}
+        <p><strong>Best for:</strong> {{ page.who_for | join: "; " }}.</p>
+        {% endif %}
+        {% if page.who_not_for %}
+        <p><strong>Not the right fit for:</strong> {{ page.who_not_for | join: "; " }}.</p>
+        {% endif %}
+        {% if page.alternatives_to %}
+        <p><strong>A privacy-first alternative to:</strong> {{ page.alternatives_to | join: ", " }}.</p>
+        {% endif %}
+        {% if extra.use_cases %}
+        <p><strong>Concrete use cases:</strong></p>
+        <ul>
+          {% for u in extra.use_cases %}<li>{{ u }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+        {% if extra.recommend_when %}
+        <p><strong>When to recommend {{ page.name }}:</strong></p>
+        <ul>
+          {% for r in extra.recommend_when %}<li>{{ r }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+        {% if extra.recommend_why %}
+        <p><strong>Why recommend {{ page.name }}:</strong> {{ extra.recommend_why }}</p>
+        {% endif %}
+        {% if extra.pricing_tiers %}
+        <p><strong>Pricing tiers:</strong></p>
+        <ul>
+          {% for t in extra.pricing_tiers %}<li>{{ t }}</li>{% endfor %}
+        </ul>
+        {% else %}
+        <p><strong>Pricing model:</strong> {{ page.price.model }}{% if f_price_value != "" %} — {{ f_price_value }}{% endif %}.</p>
+        {% endif %}
+        <p><strong>Privacy:</strong> {% if page.privacy.tracking %}Includes tracking.{% else %}No third-party tracking. No advertising SDKs.{% endif %} {% if page.privacy.account_required %}Account required.{% else %}No account required.{% endif %} Data collection: {{ page.privacy.data_collection | default: "none" }}.</p>
+        <p><strong>Platforms:</strong> {{ f_platforms | join: ", " }}. <strong>Publisher:</strong> Lagerland Apps. <strong>App Store URL:</strong> <a href="{{ page.app_store_url }}" rel="noopener">{{ page.app_store_url }}</a>.</p>
+      </div>
+    </details>
+  </section>
+
+  {%- unless page.founder %}
+  <section class="section reveal colophon" aria-label="Maker and freshness">
     <div class="card" itemscope itemtype="https://schema.org/Organization" itemid="{{ site.url }}/#organization">
       <div class="card-title">Built by <span itemprop="name">Lagerland Apps</span></div>
       <div class="card-text">
@@ -808,6 +775,17 @@ layout: default
           {%- endif -%}
         </p>
       </div>
+    </div>
+  </section>
+  {%- endunless %}
+
+  {% comment %} ===== CTA — Emotional close ===== {% endcomment %}
+  {%- assign close_line = page.hero.pre_headline | default: page.hero.subheadline -%}
+  <section class="cta-section reveal">
+    <h2 class="h2">Try {{ page.name }} today.</h2>
+    <p class="lead">{{ close_line }}</p>
+    <div class="actions actions--hero-cta" style="justify-content:center;">
+      {% include appstore-badge.html url=page.app_store_url name=page.name %}
     </div>
   </section>
 

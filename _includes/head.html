@@ -1,8 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0B0D1A" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#F6F2EA" media="(prefers-color-scheme: light)">
-<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F4C21B">
+<meta name="color-scheme" content="light">
 {%- comment %} Set html.js before first paint — the scroll-reveal CSS only
   hides content under html.js, so no-JS visitors (and crawlers) always get
   fully visible pages. {% endcomment %}
@@ -79,28 +78,15 @@
 {%- comment %} Self-hosted fonts (latin subsets). Preload the two faces used
   above the fold; font-display: swap + metric-close fallbacks avoid CLS.
   crossorigin is required on font preloads even same-origin. {% endcomment %}
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/newsreader-roman.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jost-var.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-var.woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/style.css">
 
-{%- if page.url == "/" %}
-<link rel="preload" as="image" href="/assets/screenshots/observa/1.png">
-{%- endif %}
 
-{%- comment %} Per-app LCP preload — the first screenshot is the hero-shot image
-  on every app landing page (set by _includes/hero.html). Preloading it cuts the
-  LCP discovery wait and typically saves 100–300ms on cold loads. Handles both
-  string and hash-shape screenshots. {% endcomment -%}
-{%- if page.layout == "app" and page.screenshots and page.screenshots[0] -%}
-  {%- assign lcp_first = page.screenshots[0] -%}
-  {%- if lcp_first.src -%}
-    {%- assign lcp_href = lcp_first.src -%}
-  {%- else -%}
-    {%- assign lcp_href = lcp_first -%}
-  {%- endif -%}
-  {%- if lcp_href -%}
-<link rel="preload" as="image" href="{{ lcp_href }}">
-  {%- endif -%}
+{%- comment %} Per-app LCP preload — the leaflet stamp's icon is the largest
+  image in the app-page first viewport (set by _includes/hero.html). {% endcomment -%}
+{%- if page.layout == "app" and page.slug %}
+<link rel="preload" as="image" href="/assets/icons/sm/{{ page.slug }}.webp">
 {%- endif -%}
 
 <meta property="og:type" content="{% if is_article %}article{% elsif page.layout == 'app' %}product{% else %}website{% endif %}">

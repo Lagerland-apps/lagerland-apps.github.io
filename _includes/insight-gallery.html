@@ -21,7 +21,6 @@
 {%- assign gallery_anchor   = gallery.anchor   | default: "insights" -%}
 <section id="{{ gallery_anchor }}" class="section reveal">
   <div class="section-center">
-    <p class="overline">{{ gallery_overline }}</p>
     <h2 class="h2">{{ gallery_heading }}</h2>
     {%- if gallery.intro -%}
     <p class="lead" style="max-width:60ch;margin:var(--s-3) auto 0;">{{ gallery.intro }}</p>
@@ -31,7 +30,6 @@
   <div class="insight-grid stagger">
     {%- for card in gallery.cards -%}
     <article class="insight-card">
-      {%- if card.tag -%}<span class="insight-tag">{{ card.tag }}</span>{%- endif -%}
       <h3 class="insight-headline">{{ card.headline }}</h3>
       <p class="insight-body">{{ card.body }}</p>
     </article>

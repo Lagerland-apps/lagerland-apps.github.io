@@ -35,17 +35,13 @@
     {%- capture plan_price -%}{%- include tokens.html text=plan.price -%}{%- endcapture -%}
     {%- unless tk_missing -%}
     {%- assign plan_catalog = f_cat.plans[plan.kind] -%}
-    {%- assign plan_badge_text = plan.highlight_label | default: "" -%}
-    {%- if plan_badge_text == "" and plan.highlight %}{%- assign plan_badge_text = "Most chosen" -%}{%- endif -%}
-    {%- assign is_highlighted = false -%}
-    {%- if plan_badge_text != "" %}{%- assign is_highlighted = true -%}{%- endif -%}
-    <div class="plan-card{% if is_highlighted %} plan-card--highlight{% endif %}">
-      {%- if plan_badge_text != "" -%}<span class="plan-badge">{{ plan_badge_text }}</span>{%- endif -%}
-      <div class="plan-name">{{ plan.name }}</div>
-      <div class="plan-price">{{ plan_price }}</div>
+    <div class="plan-card">
+      <div class="plan-head">
+      <div class="plan-stamp"><span class="plan-name">{{ plan.name }}</span><span class="plan-price">{{ plan_price }}</span></div>
       {%- if plan_catalog.free_trial -%}<div class="plan-meta plan-meta--trial">{{ plan_catalog.free_trial.label }}</div>{%- endif -%}
       {%- if plan_catalog.family_sharing -%}<div class="plan-meta plan-meta--family">{{ f_str.family_sharing }}</div>{%- endif -%}
       {%- if plan.summary -%}<div class="plan-summary">{{ plan.summary }}</div>{%- endif -%}
+      </div>
       {%- if plan.features and plan.features.size > 0 -%}
       <ul class="plan-features">
         {%- for f in plan.features -%}<li>{{ f }}</li>{%- endfor -%}

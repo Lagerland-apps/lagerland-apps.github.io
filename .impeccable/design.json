@@ -1,0 +1,697 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T18:05:37+00:00",
+  "title": "Design System: Lagerland Apps",
+  "extensions": {
+    "colorMeta": {
+      "postal-blue": {
+        "role": "primary",
+        "displayName": "Postal Blue",
+        "canonical": "#1D3FD6",
+        "oklch": "oklch(46.1% 0.231 266)",
+        "tonalRamp": [
+          "#01042D",
+          "#061569",
+          "#1128AD",
+          "#244AE1",
+          "#4171FF",
+          "#689BFF",
+          "#9DC6FF",
+          "#D5EEFF"
+        ]
+      },
+      "postal-blue-deep": {
+        "role": "primary",
+        "displayName": "Postal Blue Deep",
+        "canonical": "#1632B4",
+        "oklch": "oklch(40.2% 0.205 266)",
+        "tonalRamp": [
+          "#020629",
+          "#081A62",
+          "#1530A1",
+          "#2A51D3",
+          "#4876FB",
+          "#6F9DFF",
+          "#A2C7FF",
+          "#D8EEFF"
+        ]
+      },
+      "postal-blue-wash": {
+        "role": "primary",
+        "displayName": "Postal Blue Wash",
+        "canonical": "#E8ECFC",
+        "oklch": "oklch(94.5% 0.022 275)",
+        "tonalRamp": [
+          "#0A0B0F",
+          "#23252C",
+          "#3F414D",
+          "#5D616E",
+          "#7E8290",
+          "#A1A4B2",
+          "#C6C9D2",
+          "#EDEEF4"
+        ]
+      },
+      "selvedge-yellow": {
+        "role": "secondary",
+        "displayName": "Selvedge Yellow",
+        "canonical": "#F4C21B",
+        "oklch": "oklch(83.5% 0.166 89)",
+        "tonalRamp": [
+          "#150800",
+          "#391F00",
+          "#613900",
+          "#865800",
+          "#AA7A00",
+          "#CA9F00",
+          "#E4C678",
+          "#FEEDC2"
+        ]
+      },
+      "selvedge-yellow-deep": {
+        "role": "secondary",
+        "displayName": "Selvedge Yellow Deep",
+        "canonical": "#E6B30F",
+        "oklch": "oklch(79.1% 0.160 88)",
+        "tonalRamp": [
+          "#150800",
+          "#391F00",
+          "#613800",
+          "#875700",
+          "#AA7900",
+          "#CB9E17",
+          "#E5C67B",
+          "#FFEDC4"
+        ]
+      },
+      "selvedge-tab": {
+        "role": "secondary",
+        "displayName": "Selvedge Tab",
+        "canonical": "#FFF6D2",
+        "oklch": "oklch(97.1% 0.048 96)",
+        "tonalRamp": [
+          "#0D0B04",
+          "#292514",
+          "#494227",
+          "#696142",
+          "#8B8362",
+          "#ADA587",
+          "#CFC9B4",
+          "#F2EFE2"
+        ]
+      },
+      "selvedge-ink": {
+        "role": "secondary",
+        "displayName": "Selvedge Ink",
+        "canonical": "#463C16",
+        "oklch": "oklch(35.8% 0.057 95)",
+        "tonalRamp": [
+          "#0E0B03",
+          "#2A2510",
+          "#4B4221",
+          "#6B613B",
+          "#8D825B",
+          "#AFA581",
+          "#D0C9B0",
+          "#F3EFE0"
+        ]
+      },
+      "sheet-paper": {
+        "role": "neutral",
+        "displayName": "Sheet Paper",
+        "canonical": "#F4F5F1",
+        "oklch": "oklch(96.8% 0.005 118)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#252523",
+          "#42423F",
+          "#61625E",
+          "#82837F",
+          "#A5A5A2",
+          "#C9C9C7",
+          "#EEEFED"
+        ]
+      },
+      "stamp-paper": {
+        "role": "neutral",
+        "displayName": "Stamp Paper",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#15171D",
+        "oklch": "oklch(20.5% 0.012 271)",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#242529",
+          "#404248",
+          "#5E6168",
+          "#7F828A",
+          "#A2A5AC",
+          "#C7C9CE",
+          "#EDEEF1"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#3F4452",
+        "oklch": "oklch(38.8% 0.025 270)",
+        "tonalRamp": [
+          "#0A0B0F",
+          "#22252D",
+          "#3D424E",
+          "#5B6170",
+          "#7C8292",
+          "#9FA5B3",
+          "#C5C9D4",
+          "#ECEEF5"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#5A5F6D",
+        "oklch": "oklch(48.6% 0.023 270)",
+        "tonalRamp": [
+          "#0A0B0F",
+          "#22252C",
+          "#3D424D",
+          "#5C616F",
+          "#7D8291",
+          "#A0A5B3",
+          "#C5C9D3",
+          "#ECEEF4"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "rgba(21, 23, 29, 0.14)",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#242529",
+          "#404248",
+          "#5E6168",
+          "#7F828A",
+          "#A2A5AC",
+          "#C7C9CE",
+          "#EDEEF1"
+        ]
+      },
+      "rule-2": {
+        "role": "neutral",
+        "displayName": "Rule 2",
+        "canonical": "rgba(21, 23, 29, 0.28)",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#242529",
+          "#404248",
+          "#5E6168",
+          "#7F828A",
+          "#A2A5AC",
+          "#C7C9CE",
+          "#EDEEF1"
+        ]
+      },
+      "cut-line": {
+        "role": "neutral",
+        "displayName": "Cut Line",
+        "canonical": "rgba(21, 23, 29, 0.38)",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#242529",
+          "#404248",
+          "#5E6168",
+          "#7F828A",
+          "#A2A5AC",
+          "#C7C9CE",
+          "#EDEEF1"
+        ]
+      },
+      "ok-green": {
+        "role": "neutral",
+        "displayName": "OK Green",
+        "canonical": "#1E6B45",
+        "oklch": "oklch(47.1% 0.097 157)",
+        "tonalRamp": [
+          "#000F06",
+          "#022E19",
+          "#054F2F",
+          "#26714B",
+          "#4B946B",
+          "#75B690",
+          "#A9D6BA",
+          "#DDF6E6"
+        ]
+      },
+      "series-health": {
+        "role": "tertiary",
+        "displayName": "Health Green",
+        "canonical": "#2B7556",
+        "oklch": "oklch(50.7% 0.089 163)",
+        "tonalRamp": [
+          "#000F07",
+          "#022D1D",
+          "#064F35",
+          "#267152",
+          "#4B9372",
+          "#76B596",
+          "#A9D5BF",
+          "#DDF6E8"
+        ]
+      },
+      "series-health-tint": {
+        "role": "tertiary",
+        "displayName": "Health Tint",
+        "canonical": "#DCEFE3",
+        "oklch": "oklch(93.5% 0.026 158)",
+        "tonalRamp": [
+          "#080C0A",
+          "#1F2822",
+          "#38463D",
+          "#55665C",
+          "#76877D",
+          "#9AAAA0",
+          "#C1CCC5",
+          "#EAF0EC"
+        ]
+      },
+      "series-plan": {
+        "role": "tertiary",
+        "displayName": "Planning Vermilion",
+        "canonical": "#A33D22",
+        "oklch": "oklch(49.8% 0.141 36)",
+        "tonalRamp": [
+          "#1C0300",
+          "#460E01",
+          "#761E04",
+          "#A13B20",
+          "#C85E43",
+          "#E8876D",
+          "#FDB5A2",
+          "#FFE3D8"
+        ]
+      },
+      "series-plan-tint": {
+        "role": "tertiary",
+        "displayName": "Planning Tint",
+        "canonical": "#FBE3D7",
+        "oklch": "oklch(93.2% 0.031 48)",
+        "tonalRamp": [
+          "#0F0A07",
+          "#2D221D",
+          "#4F3E35",
+          "#715C52",
+          "#937D72",
+          "#B4A096",
+          "#D4C6BE",
+          "#F5ECE8"
+        ]
+      },
+      "series-money": {
+        "role": "tertiary",
+        "displayName": "Money Ochre",
+        "canonical": "#87610A",
+        "oklch": "oklch(51.9% 0.104 81)",
+        "tonalRamp": [
+          "#130900",
+          "#352100",
+          "#5B3B00",
+          "#7F5A00",
+          "#A27B2F",
+          "#C39F5F",
+          "#DFC599",
+          "#FBEDD3"
+        ]
+      },
+      "series-money-tint": {
+        "role": "tertiary",
+        "displayName": "Money Tint",
+        "canonical": "#F6EAC8",
+        "oklch": "oklch(93.8% 0.046 91)",
+        "tonalRamp": [
+          "#0E0B04",
+          "#2A2514",
+          "#4A4128",
+          "#6B6043",
+          "#8D8263",
+          "#AFA588",
+          "#D0C9B4",
+          "#F2EEE2"
+        ]
+      },
+      "series-games": {
+        "role": "tertiary",
+        "displayName": "Games Plum",
+        "canonical": "#74357F",
+        "oklch": "oklch(44.4% 0.134 321)",
+        "tonalRamp": [
+          "#140417",
+          "#37143D",
+          "#5E2767",
+          "#83438E",
+          "#A765B2",
+          "#C88BD2",
+          "#E3B8EA",
+          "#FEE5FF"
+        ]
+      },
+      "series-games-tint": {
+        "role": "tertiary",
+        "displayName": "Games Tint",
+        "canonical": "#EEDFF1",
+        "oklch": "oklch(92.1% 0.029 321)",
+        "tonalRamp": [
+          "#0D0A0E",
+          "#29222B",
+          "#483E4B",
+          "#695C6C",
+          "#8A7D8D",
+          "#ADA0AF",
+          "#CFC6D0",
+          "#F2ECF3"
+        ]
+      },
+      "series-tools": {
+        "role": "tertiary",
+        "displayName": "Tools Teal",
+        "canonical": "#1C6380",
+        "oklch": "oklch(47.0% 0.082 230)",
+        "tonalRamp": [
+          "#000D15",
+          "#012939",
+          "#044961",
+          "#246A87",
+          "#498CAA",
+          "#74AECA",
+          "#A8D0E4",
+          "#DCF3FF"
+        ]
+      },
+      "series-tools-tint": {
+        "role": "tertiary",
+        "displayName": "Tools Tint",
+        "canonical": "#D8EBF1",
+        "oklch": "oklch(92.8% 0.022 219)",
+        "tonalRamp": [
+          "#080C0D",
+          "#1E272A",
+          "#374549",
+          "#54646A",
+          "#74868B",
+          "#98A8AD",
+          "#C0CBCF",
+          "#E9F0F2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page H1; tighter on the homepage selvedge."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section H2s and series headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "H3, app names, pair and cover titles."
+      },
+      "denomination": {
+        "displayName": "Denomination",
+        "purpose": "Prices on stamps and plan stamps; tabular numerals."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, 17px Inter."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Lead paragraphs in Ink 2, max 60ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Pills, meta, captions, crumbs."
+      },
+      "imprint": {
+        "displayName": "Imprint",
+        "purpose": "Uppercase tracked printer marginal text on the selvedge only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "stamp-rest",
+        "value": "drop-shadow(0 1px 1.5px rgba(21,23,29,0.16))",
+        "purpose": "Filter on every stamp, shot and plan stamp lying on the sheet."
+      },
+      {
+        "name": "stamp-lifted",
+        "value": "drop-shadow(0 16px 16px rgba(21,23,29,0.26))",
+        "purpose": "Hovered, focused or selected stamp, with translateY(-8px) rotate(-2deg) scale(1.05)."
+      },
+      {
+        "name": "elev-1",
+        "value": "0 1px 1px rgba(21,23,29,0.08)",
+        "purpose": "Cards at rest."
+      },
+      {
+        "name": "elev-2",
+        "value": "0 2px 4px rgba(21,23,29,0.08), 0 1px 1px rgba(21,23,29,0.06)",
+        "purpose": "App icons in lists and bars."
+      },
+      {
+        "name": "elev-3",
+        "value": "0 12px 22px -10px rgba(21,23,29,0.28)",
+        "purpose": "Card and cover hover."
+      },
+      {
+        "name": "elev-4",
+        "value": "0 24px 44px -18px rgba(21,23,29,0.34)",
+        "purpose": "Legacy hero screenshots."
+      },
+      {
+        "name": "topbar-scrolled",
+        "value": "0 6px 14px -10px rgba(21,23,29,0.35)",
+        "purpose": "Top bar once the page scrolls."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The one exponential ease-out: stamp lift, drawer, reveals."
+      },
+      {
+        "name": "dur-fast",
+        "value": "0.15s",
+        "purpose": "Colour and border changes."
+      },
+      {
+        "name": "dur-md",
+        "value": "0.35s",
+        "purpose": "Stamp lift, card hover, drawer."
+      },
+      {
+        "name": "dur-reveal",
+        "value": "0.5s",
+        "purpose": "Scroll reveals, gated on html.js."
+      },
+      {
+        "name": "sheet-deal",
+        "value": "28ms stagger per stamp, from translateY(10px) rotate(-1.5deg)",
+        "purpose": "Stamps laid down in issue order on first load; visible without JS."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sheet-stack",
+        "value": "1180px"
+      },
+      {
+        "name": "leaflet-stack",
+        "value": "980px"
+      },
+      {
+        "name": "grid-2",
+        "value": "880px"
+      },
+      {
+        "name": "sheet-4col",
+        "value": "860px"
+      },
+      {
+        "name": "pairs-1col",
+        "value": "760px"
+      },
+      {
+        "name": "nav-drawer",
+        "value": "720px"
+      },
+      {
+        "name": "booklet",
+        "value": "640px"
+      },
+      {
+        "name": "rows-stack",
+        "value": "560px"
+      },
+      {
+        "name": "phone",
+        "value": "480px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one blue action: App Store button and primary CTAs.",
+      "html": "<button class=\"ds-btn-primary\">Get it on the App Store</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;min-height:50px;padding:0 22px;border-radius:2px;border:1.5px solid transparent;background:#1D3FD6;color:#fff;font:600 0.9375rem/1.2 Inter,system-ui,sans-serif;cursor:pointer;transition:background .15s,transform .35s cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{background:#1632B4}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:3px solid #1D3FD6;outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ink-outlined button that fills with ink on hover.",
+      "html": "<button class=\"ds-btn-secondary\">See how it works</button>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;min-height:50px;padding:0 22px;border-radius:2px;border:1.5px solid #15171D;background:transparent;color:#15171D;font:600 0.9375rem/1.2 Inter,system-ui,sans-serif;cursor:pointer;transition:background .15s,color .15s}.ds-btn-secondary:hover{background:#15171D;color:#fff}.ds-btn-secondary:focus-visible{outline:3px solid #1D3FD6;outline-offset:2px}"
+    },
+    {
+      "name": "Series Filter Tab",
+      "kind": "chip",
+      "refersTo": "series-tab",
+      "description": "Paper tab on the yellow selvedge; pressed state is postal blue.",
+      "html": "<div class=\"ds-tabs-wrap\"><button class=\"ds-tab is-pressed\"><i></i>Whole sheet<b>20</b></button><button class=\"ds-tab\" style=\"--s:#2B7556\"><i></i>Health &amp; body<b>4</b></button></div>",
+      "css": ".ds-tabs-wrap{background:#F4C21B;padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:400px}.ds-tab{display:flex;align-items:center;gap:10px;min-height:46px;padding:10px 12px;background:#FFF6D2;border:1px solid rgba(21,23,29,.2);border-radius:2px;color:#15171D;font:600 .9375rem/1.2 Inter,system-ui,sans-serif;cursor:pointer}.ds-tab i{width:12px;height:12px;background:var(--s,#15171D)}.ds-tab b{margin-left:auto;font-family:Jost,Futura,sans-serif;font-weight:500;font-variant-numeric:tabular-nums}.ds-tab:hover{border-color:#15171D}.ds-tab.is-pressed{background:#1D3FD6;border-color:#1D3FD6;color:#fff}.ds-tab.is-pressed i{background:#fff}.ds-tab:focus-visible{outline:3px solid #1D3FD6;outline-offset:2px}"
+    },
+    {
+      "name": "Pill",
+      "kind": "chip",
+      "refersTo": "pill",
+      "description": "Square printed label for meta and prices.",
+      "html": "<span class=\"ds-pill\">iPhone · iPad</span> <span class=\"ds-pill ds-pill--price\">Free · Pro</span>",
+      "css": ".ds-pill{display:inline-flex;align-items:center;font:500 .8125rem/1.3 Inter,system-ui,sans-serif;color:#3F4452;padding:4px 9px;border-radius:2px;border:1px solid rgba(21,23,29,.28);background:#fff}.ds-pill--price{color:#15171D;border-color:#15171D;font-weight:600}"
+    },
+    {
+      "name": "Stamp",
+      "kind": "custom",
+      "refersTo": "stamp",
+      "description": "The signature: perforated stamp with series frame, lifts on hover/focus.",
+      "html": "<a href=\"#\" class=\"ds-stamp\"><span class=\"ds-stamp__paper\"><span class=\"ds-stamp__field\"><span class=\"ds-stamp__top\"><span>2026-10-09</span><b>Free</b></span><span class=\"ds-stamp__icon\"></span><span class=\"ds-stamp__name\">Tare</span><span class=\"ds-stamp__plat\">iPhone · iPad</span></span></span></a>",
+      "css": ".ds-stamp{--s:#74357F;--t:#EEDFF1;display:block;width:150px;aspect-ratio:5/5.6;color:#15171D;text-decoration:none;filter:drop-shadow(0 1px 1.5px rgba(21,23,29,.16));transition:transform .35s cubic-bezier(.16,1,.3,1),filter .35s cubic-bezier(.16,1,.3,1)}.ds-stamp:hover,.ds-stamp:focus-visible{transform:translateY(-8px) rotate(-2deg) scale(1.05);filter:drop-shadow(0 16px 16px rgba(21,23,29,.26));outline:none}.ds-stamp:focus-visible .ds-stamp__field{outline:3px solid #1D3FD6;outline-offset:-8px}.ds-stamp__paper{display:block;height:100%;padding:8px;background:#fff;-webkit-mask:linear-gradient(#000 0 0) content-box,radial-gradient(circle 4px,#0000 96%,#000) -8px -8px/16px 16px round;mask:linear-gradient(#000 0 0) content-box,radial-gradient(circle 4px,#0000 96%,#000) -8px -8px/16px 16px round}.ds-stamp__field{display:grid;grid-template-rows:auto 1fr auto auto;justify-items:center;height:100%;padding:8px 8px 9px;background:var(--t);border:3px solid var(--s);box-sizing:border-box}.ds-stamp__top{justify-self:stretch;display:flex;justify-content:space-between;font:500 .72rem/1.2 Jost,Futura,sans-serif;color:var(--s);font-variant-numeric:tabular-nums}.ds-stamp__top b{font-weight:700;font-size:.8rem}.ds-stamp__icon{align-self:center;width:42%;aspect-ratio:1;border-radius:22.5%;background:var(--s);box-shadow:0 3px 8px -2px rgba(21,23,29,.35);margin:6px 0 5px}.ds-stamp__name{font:700 .98rem/1.1 Jost,Futura,sans-serif}.ds-stamp__plat{font:400 .72rem/1.25 Inter,system-ui,sans-serif;color:#3F4452}"
+    },
+    {
+      "name": "Denomination Stamp",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Pricing plan printed as a stamp with a ring of holes.",
+      "html": "<div class=\"ds-plan\"><span class=\"ds-plan__name\">Lifetime</span><span class=\"ds-plan__price\">€19.99</span></div>",
+      "css": ".ds-plan{--s:#2B7556;--t:#DCEFE3;position:relative;display:grid;gap:4px;width:200px;padding:18px 16px 16px;background:var(--t);border:3px solid var(--s);outline:8px solid #fff;margin:14px;filter:drop-shadow(0 1px 1.5px rgba(21,23,29,.16))}.ds-plan::before{content:\"\";position:absolute;inset:-14px;pointer-events:none;background:radial-gradient(circle 4px,#F4F5F1 96%,transparent) top left/16px 16px repeat-x,radial-gradient(circle 4px,#F4F5F1 96%,transparent) bottom left/16px 16px repeat-x,radial-gradient(circle 4px,#F4F5F1 96%,transparent) top left/16px 16px repeat-y,radial-gradient(circle 4px,#F4F5F1 96%,transparent) top right/16px 16px repeat-y}.ds-plan__name{color:var(--s);font:600 .9375rem/1.2 Jost,Futura,sans-serif}.ds-plan__price{font:700 2rem/1.1 Jost,Futura,sans-serif;letter-spacing:-.02em;color:#15171D;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "App Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Mini stamp beside name and tagline, series top border; mini stamp tilts on hover.",
+      "html": "<a href=\"#\" class=\"ds-card\"><span class=\"ds-mini\"><span class=\"ds-mini__paper\"><span class=\"ds-mini__field\"><span></span></span></span></span><span><span class=\"ds-card__name\">Observa</span><span class=\"ds-card__tag\">Apple Health insights, on device.</span></span></a>",
+      "css": ".ds-card{--s:#2B7556;--t:#DCEFE3;display:grid;grid-template-columns:84px 1fr;gap:16px 24px;max-width:420px;padding:24px;background:#fff;border:1px solid rgba(21,23,29,.14);border-top:4px solid var(--s);border-radius:2px;box-shadow:0 1px 1px rgba(21,23,29,.08);color:#15171D;text-decoration:none;transition:box-shadow .35s cubic-bezier(.16,1,.3,1),transform .35s cubic-bezier(.16,1,.3,1)}.ds-card:hover{box-shadow:0 12px 22px -10px rgba(21,23,29,.28);transform:translateY(-3px)}.ds-card:hover .ds-mini{transform:rotate(-3deg) translateY(-2px)}.ds-card:focus-visible{outline:3px solid #1D3FD6;outline-offset:3px}.ds-mini{display:block;filter:drop-shadow(0 1px 1.2px rgba(21,23,29,.18));transition:transform .35s cubic-bezier(.16,1,.3,1)}.ds-mini__paper{display:block;padding:6px;background:#fff;-webkit-mask:linear-gradient(#000 0 0) content-box,radial-gradient(circle 3px,#0000 96%,#000) -6px -6px/12px 12px round;mask:linear-gradient(#000 0 0) content-box,radial-gradient(circle 3px,#0000 96%,#000) -6px -6px/12px 12px round}.ds-mini__field{display:grid;place-items:center;aspect-ratio:5/6;background:var(--t);border:2px solid var(--s)}.ds-mini__field span{width:66%;aspect-ratio:1;border-radius:22.5%;background:var(--s)}.ds-card__name{display:block;font:650 1.5rem/1.2 Jost,Futura,sans-serif}.ds-card__tag{display:block;font:400 .9375rem/1.5 Inter,system-ui,sans-serif;color:#3F4452}"
+    },
+    {
+      "name": "Top Bar",
+      "kind": "nav",
+      "refersTo": "topbar",
+      "description": "Yellow printed top margin with ink links and an ink current-page bar.",
+      "html": "<nav class=\"ds-topbar\"><span class=\"ds-brand\">Lagerland Apps</span><a href=\"#\" aria-current=\"page\">Apps</a><a href=\"#\">Journal</a><a href=\"#\">Guides</a></nav>",
+      "css": ".ds-topbar{display:flex;align-items:center;gap:4px;height:60px;padding:0 24px;background:#F4C21B;border-bottom:1px dashed rgba(21,23,29,.38)}.ds-brand{font:700 1.3rem/1 Jost,Futura,sans-serif;letter-spacing:-.01em;color:#15171D;margin-right:36px}.ds-topbar a{color:#15171D;font:600 .9375rem/1.2 Inter,system-ui,sans-serif;padding:8px 12px;text-decoration:none;border-bottom:2px solid transparent;transition:border-color .15s}.ds-topbar a:hover{border-bottom-color:rgba(21,23,29,.38)}.ds-topbar a[aria-current=\"page\"]{border-bottom-color:#15171D}.ds-topbar a:focus-visible{outline:3px solid #1D3FD6;outline-offset:3px}"
+    },
+    {
+      "name": "Postmark",
+      "kind": "custom",
+      "refersTo": "stamp",
+      "description": "Two ink rings with place and date plus wavy cancellation lines; newest app only.",
+      "html": "<span class=\"ds-postmark\"><svg viewBox=\"0 0 230 120\" fill=\"none\"><g stroke=\"currentColor\" stroke-width=\"2.4\"><circle cx=\"70\" cy=\"60\" r=\"52\"/><circle cx=\"70\" cy=\"60\" r=\"37\"/><path d=\"M128 32q10-7 20 0t20 0t20 0t20 0M128 50q10-7 20 0t20 0t20 0t20 0M128 68q10-7 20 0t20 0t20 0t20 0M128 86q10-7 20 0t20 0t20 0t20 0\"/></g><text x=\"70\" y=\"53\" text-anchor=\"middle\" font-family=\"Jost, Futura, sans-serif\" font-size=\"12\" letter-spacing=\"1.5\" fill=\"currentColor\">HELSINKI</text><text x=\"70\" y=\"74\" text-anchor=\"middle\" font-family=\"Jost, Futura, sans-serif\" font-weight=\"700\" font-size=\"17\" fill=\"currentColor\">09.10.26</text></svg></span>",
+      "css": ".ds-postmark{display:block;width:180px;color:#15171D;opacity:.78}.ds-postmark svg{display:block;width:100%;height:auto}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Issue",
+    "overview": "**Creative North Star: \"The Issue\"**\n\nThe studio publishes its apps the way a post office issues stamps: one printed sheet, one perforated stamp per app, one maker. Every surface is printed matter on light paper. The postal-yellow selvedge (the sheet's printed margin) carries the chrome: the top bar, the homepage masthead column, the screenshot band, the closing band and the footer. Cool sheet paper is the ground; white stamp paper carries anything that is \"issued\". Ink does the talking. A single postal blue is held back for the one thing a visitor should do and for keyboard focus.\n\nDensity is that of a stamp sheet and its leaflet: the homepage is a tight 5×4 grid of stamps with release date, denomination, icon, name and devices; an app page is the stamp's leaflet, a big stamp beside its headline, then printed columns separated by perforation rules. Structure comes from rules, dashed cut lines and series-coloured frames, never from boxed cards nested in cards. Motion has one gesture: a stamp lifts off the sheet (rotate, rise, deeper shadow) on an exponential ease-out.\n\nConfirmed rejections (PRODUCT.md, owner 2026-10-26): not playful or toy-like, not corporate SaaS, not dark-first, not so minimal the apps get lost. The direction contract also refuses the dark SaaS hero with floating device mockups, gradient headlines and a stat bar.",
+    "keyCharacteristics": [
+      "Light only; printed paper, no dark theme.",
+      "Postal-yellow selvedge for chrome and loud bands; cool paper ground; white stamp paper.",
+      "Five stamp series, each a frame colour plus a pale tint, assigned from the app's category.",
+      "Perforated edges, postmarks with wavy cancellation lines, dashed cut lines, tabular numerals.",
+      "One postal blue: primary action, pressed filter, focus. Body links are ink.",
+      "Jost (geometric postal sans) for display and denominations; Inter for reading."
+    ],
+    "rules": [
+      {
+        "name": "The One Blue Rule",
+        "body": "Postal blue appears only on the primary action, the pressed series filter, link hover/focus, and focus outlines. Body links are ink with a 35% ink underline. If blue shows up anywhere at rest that isn't the thing to press, it is wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Series From Category Rule",
+        "body": "A stamp's colour is never chosen by hand: it comes from the app's `category` through the series mapping, and frame and tint always travel together. A new category needs a mapping line, not a new colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Printed Paper Rule",
+        "body": "Light only. There is no dark theme; the world is paper and ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Numerals Rule",
+        "body": "Dates, denominations, tables, `time` and spec values set `tabular-nums`. A sheet is a record; its numbers line up.",
+        "section": "typography"
+      },
+      {
+        "name": "The Heading Stands Alone Rule",
+        "body": "No label line above a heading. The heading carries its own weight.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lift Rule",
+        "body": "Shadows answer state, never decorate. A stamp lies flat until hovered, focused or selected, then lifts in one exponential ease-out (cubic-bezier(0.16, 1, 0.3, 1), 0.35s). Reduced motion removes the lift.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** take every colour from the `:root` tokens; components set series colour only through the series class (`--s` frame, `--t` tint).",
+      "**Do** map a new app's category to a series in the series mapping before it ships; unmapped categories fall to Planning Vermilion.",
+      "**Do** read prices, devices and app counts from the catalogue; never type them into a stamp, card or headline.",
+      "**Do** give every stamp its small icon at `assets/icons/sm/<slug>.webp` (256px, generated by the icon script); a missing file prints a broken stamp.",
+      "**Do** keep content visible without JavaScript: reveal and deal-in states apply only under `html.js`, with a force-visible fallback.",
+      "**Do** separate sheet parts with 1px dashed cut lines and open lists and columns with a 2px ink top rule.",
+      "**Do** set dates, denominations and tables in tabular numerals.",
+      "**Do** keep app icons at Apple's 22.5% squircle and everything else at 2–4px or square.",
+      "**Do** attribute everything to \"Lagerland Apps\"."
+    ],
+    "donts": [
+      "**Don't** use postal blue at rest for anything but the primary action, the pressed filter and focus; body links stay ink.",
+      "**Don't** add a dark theme or dark sections; the world is printed paper.",
+      "**Don't** put a label or kicker line above a heading; an overline directly above a heading is hidden by the stylesheet.",
+      "**Don't** nest cards in cards, or box content inside the leaflet body.",
+      "**Don't** use gradient fills, washes or gradient text; gradients only draw perforation holes, the FAQ plus sign and edge fades.",
+      "**Don't** postmark more than the newest app on the sheet.",
+      "**Don't** load fonts from a third-party host.",
+      "**Don't** put the owner's personal name anywhere."
+    ]
+  }
+}

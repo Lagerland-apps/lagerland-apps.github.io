@@ -1,0 +1,12 @@
+{%- comment -%}
+  Maps an app's category to one of the five stamp series.
+  Usage: {% include series.html app=app %} → series_key, series_label
+{%- endcomment -%}
+{%- assign _c = include.app.category -%}
+{%- case _c -%}
+  {%- when "health" or "fitness" -%}{%- assign series_key = "health" -%}{%- assign series_label = "Health & body" -%}
+  {%- when "finance" -%}{%- assign series_key = "money" -%}{%- assign series_label = "Money" -%}
+  {%- when "games" -%}{%- assign series_key = "games" -%}{%- assign series_label = "Games" -%}
+  {%- when "developer-tools" or "business" or "graphics" or "utilities" -%}{%- assign series_key = "tools" -%}{%- assign series_label = "Tools & Mac" -%}
+  {%- else -%}{%- assign series_key = "plan" -%}{%- assign series_label = "Planning & reading" -%}
+{%- endcase -%}

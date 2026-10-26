@@ -22,3 +22,10 @@ vendor/
 # Master table data: product IDs contain the owner name; generated locally by scripts/sync-asc-master.mjs
 _data/asc_master.json
 _data/asc_master_overrides.json
+
+# Impeccable design tooling: local engine binary, decision mocks and review captures
+.claude/skills/impeccable/scripts/bin/
+.impeccable/mocks/
+.impeccable/review/
+.impeccable/build/
+.impeccable/before-after.png

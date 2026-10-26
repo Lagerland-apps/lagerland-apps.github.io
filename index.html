@@ -113,68 +113,75 @@ last_updated: 2026-10-26
 
 {%- comment %} The visible "about-strip" further down replaces the previous hidden ai-canonical block; the FAQPage Speakable selector now points to .about-strip and .faq-a. {% endcomment -%}
 
+
+{%- comment %} ===== The sheet: every live app in issue (first-release) order ===== {% endcomment -%}
+{%- assign st_keys = "" | split: "" -%}
+{%- for app in live_apps -%}
+  {%- capture st_k -%}{{ app.release.first_release | date: "%Y-%m-%d" }}|{{ app.slug }}{%- endcapture -%}
+  {%- assign st_keys = st_keys | push: st_k -%}
+{%- endfor -%}
+{%- assign st_keys = st_keys | sort -%}
+{%- assign sheet_apps = "" | split: "" -%}
+{%- assign series_trail = "" -%}
+{%- for k in st_keys -%}
+  {%- assign st_slug = k | split: "|" | last -%}
+  {%- assign st_app = live_apps | where: "slug", st_slug | first -%}
+  {%- assign sheet_apps = sheet_apps | push: st_app -%}
+  {%- include series.html app=st_app -%}
+  {%- assign series_trail = series_trail | append: "|" | append: series_key | append: "|" -%}
+{%- endfor -%}
+{%- assign series_trail = series_trail | append: "END" -%}
+{%- assign newest = sheet_apps | last -%}
+{%- assign series_keys = "health,plan,money,games,tools" | split: "," -%}
+{%- assign series_labels = "Health & body,Planning & reading,Money,Games,Tools & Mac" | split: "," -%}
+
 <!-- ============================
-     HERO — confident split, framed product art
+     THE ISSUE — sheet margin + the sheet of stamps
      ============================ -->
-<section class="hero hero--home">
-  <div class="hero-left reveal">
-    <span class="hero-proof">
-      <span class="dot--live" aria-hidden="true"></span>
-      Independent Apple studio<span class="hide-sm"> · Built in Finland · Zero tracking</span>
-    </span>
-    <h1 class="h1">
-      Calm, private software<br>
-      <span class="gradient-text">for people who notice details.</span>
-    </h1>
-    <p class="hero-eyebrow">{{ site.data.catalog.meta.live_app_count }} indie iOS, iPadOS, watchOS and macOS apps — no ads, no accounts, no tracking.</p>
-    <p class="lead">
-      Started in Finland in 2025 as a one-person Apple studio. Every app passes Apple's App Tracking Transparency check with no IDFA request and zero advertising SDKs. Built under EU jurisdiction, with GDPR as the default — not a feature.
-    </p>
-    <div class="actions">
-      <a class="btn btn-primary" href="#apps">Browse all apps</a>
-      <a class="btn btn-secondary" href="#about-strip">How we prove it →</a>
-    </div>
+<section class="issue bleed" aria-labelledby="issue-title">
+  <div class="issue-selvedge">
+    <h1 id="issue-title">{{ site.data.catalog.meta.live_app_count }} apps. One maker. No tracking in any of them.</h1>
+    <p class="issue-lede">An independent Apple studio in Finland. Every app on this sheet is made, priced and answered for by the same person, with no ads, no accounts and no data leaving your device.</p>
+    <ul class="series-tabs" aria-label="Show a series on the sheet">
+      <li><a class="series-tab is-pressed" href="#apps" data-series="all"><i style="background:var(--ink)"></i>Whole sheet<b>{{ sheet_apps.size }}</b></a></li>
+      {%- for key in series_keys -%}
+        {%- capture needle -%}|{{ key }}|{%- endcapture -%}
+        {%- assign n = series_trail | split: needle | size | minus: 1 -%}
+      <li><a class="series-tab series-{{ key }}" href="#series-{{ key }}" data-series="{{ key }}"><i></i>{{ series_labels[forloop.index0] }}<b>{{ n }}</b></a></li>
+      {%- endfor -%}
+    </ul>
+    <div class="issue-imprint" aria-hidden="true"><span>Sheet 2025–{{ site.time | date: "%Y" }}</span><span>Issued in Finland</span></div>
+    <span class="issue-margin-note" aria-hidden="true">Lagerland Apps · no ad SDKs · no IDFA · no accounts</span>
   </div>
 
-  <div class="hero-right reveal-scale">
-    <div class="hero-composition">
-      <div class="framed-shot framed-shot--lift device device--phone">
-        <img src="/assets/screenshots/observa/1.png"
-             alt="Observa — Apple Health analytics on iPhone"
-             width="240" height="520" loading="eager" decoding="async">
+  <div class="issue-sheet-wrap">
+    <ul class="sheet" aria-label="All {{ sheet_apps.size }} apps, in the order they were released">
+      {%- for app in sheet_apps -%}
+        {%- if app.slug == newest.slug -%}
+          {%- assign pm_date = app.release.first_release | date: "%d.%m.%y" -%}
+      <li>{% include stamp.html app=app index=forloop.index0 postmark=true postmark_date=pm_date eager=true %}</li>
+        {%- else -%}
+      <li>{% include stamp.html app=app index=forloop.index0 eager=true %}</li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+
+    {%- assign newest_shot = newest.screenshots[0].src | default: newest.screenshots[0] -%}
+    <div class="sheet-bar" aria-live="polite">
+      {%- if newest_shot %}<img class="sheet-bar__shot" src="{{ newest_shot }}" alt="" width="60" height="120" loading="lazy" decoding="async">{% endif %}
+      <img class="sheet-bar__icon" src="/assets/icons/sm/{{ newest.slug }}.webp" alt="" width="46" height="46" decoding="async">
+      <div class="sheet-bar__text">
+        <span class="sheet-bar__name">{{ newest.name }}</span>
+        <span class="sheet-bar__tag">{{ newest.tagline }}</span>
+        <span class="sheet-bar__note">Newest on the sheet · first released {{ newest.release.first_release | date: "%-d %B %Y" }}</span>
       </div>
-      <div class="framed-shot framed-shot--lift framed-shot--no-island device device--tablet">
-        <img src="/assets/screenshots/taskful-day/1.png"
-             alt="Taskful Day — calm daily planner on iPad"
-             width="320" height="430" loading="eager" decoding="async">
-      </div>
-      <div class="framed-shot framed-shot--lift framed-shot--no-island device device--watch">
-        <img src="/assets/screenshots/gymlogger-x/1.png"
-             alt="GymLogger X — a Push Day workout being logged on iPhone"
-             width="130" height="160" loading="eager" decoding="async">
-      </div>
+      <a class="btn btn-primary" href="{{ newest.app_store_url }}" rel="noopener">Get {{ newest.name }} on the App Store</a>
     </div>
   </div>
 </section>
 
 <!-- ============================
-     ABOUT STRIP — visible framing for humans + LLMs
-     ============================ -->
-<section id="about-strip" class="section reveal">
-  <div class="about-strip">
-    <p class="overline">About Lagerland Apps</p>
-    <p class="lead">
-      A one-person Apple studio in Finland building <strong>{{ site.data.catalog.meta.live_app_count }} privacy-first applications</strong> for iPhone, iPad, Apple Watch, and Mac. Every app is free of third-party trackers, ships zero advertising SDKs, and requires no account. Funded by honest paid software — one-time purchases, optional Pro subscriptions, or freemium tiers — never by ads, data brokers, or growth-hack dark patterns.
-    </p>
-    <p class="small">
-      Categories: health analytics · daily planning · bill tracking · workout logging · reading · Apple developer tools · utilities.
-      <br>For people who refuse ad-supported apps, want local-first data, and prefer single-purpose tools over bloated platforms.
-    </p>
-  </div>
-</section>
-
-<!-- ============================
-     TRUST BAR — Social proof
+     SHEET NOTES — who makes this, in plain words (entity block for humans + LLMs)
      ============================ -->
 {%- comment %} Weighted-average App Store rating across live apps. Values are stored as strings like "5.0" — multiply by 10 to keep integer math precise to one decimal. {% endcomment -%}
 {%- assign sum_w10 = 0 -%}
@@ -194,204 +201,123 @@ last_updated: 2026-10-26
   {%- assign avg_intx10 = avg_int | times: 10 -%}
   {%- assign avg_dec = avg10 | minus: avg_intx10 -%}
 {%- endif -%}
-<section class="section reveal">
-  <div class="trust-bar">
-    <div class="trust-item">
-      {%- comment %} Real value server-rendered — JS only replays it as a
-        count-up. Crawlers and no-JS visitors must never see "0". {% endcomment -%}
-      <span class="trust-value" data-count="{{ site.data.catalog.meta.live_app_count }}" data-suffix="">{{ site.data.catalog.meta.live_app_count }}</span>
-      <span class="trust-label">Apps Published</span>
+{%- assign avg_rating = avg10 | default: 0 | divided_by: 10.0 -%}
+
+<section id="about-strip" class="section section--notes reveal">
+  <div class="about-strip">
+    <div>
+      <h2 class="h2">One person, every app, the same rules.</h2>
+      <p>Lagerland Apps is a one-person Apple studio in Finland building <strong>{{ site.data.catalog.meta.live_app_count }} privacy-first applications</strong> for iPhone, iPad, Apple Watch and Mac. Every app is free of third-party trackers, ships zero advertising SDKs and requires no account. It is funded by honest paid software, one-time purchases, optional Pro subscriptions or free tiers, never by ads, data brokers or growth-hack dark patterns.</p>
+      <p>Categories: health analytics, daily planning, bill tracking, workout logging, reading, board games and puzzles, Apple developer tools and utilities. For people who refuse ad-supported apps, want their data to stay local, and prefer single-purpose tools over bloated platforms.</p>
+      <p><a href="/transparency/">See the per-app privacy data</a> · <a href="/lagerland-apps/">About the studio</a></p>
     </div>
-    {%- assign avg_rating = avg10 | default: 0 | divided_by: 10.0 -%}
-    {%- if total_reviews > 0 and avg_rating >= site.ratings_min_display %}
-    <span class="trust-divider"></span>
-    <div class="trust-item">
-      <span class="trust-value">{{ avg_int }}.{{ avg_dec }}<span class="trust-star" aria-hidden="true">★</span></span>
-      <span class="trust-label">Avg across {{ total_reviews }} App Store reviews</span>
-    </div>
-    {%- endif %}
-    <span class="trust-divider"></span>
-    <div class="trust-item">
-      <span class="trust-value">Zero</span>
-      <span class="trust-label">Trackers or Ads</span>
-    </div>
-    <span class="trust-divider"></span>
-    <div class="trust-item">
-      <span class="trust-value">Local-first</span>
-      <span class="trust-label">Data Stays on Device</span>
-    </div>
+    <dl class="tech" aria-label="Studio facts">
+      <dt>Apps on the sheet</dt><dd>{{ site.data.catalog.meta.live_app_count }}, all live on the App Store</dd>
+      <dt>Devices</dt><dd>iPhone, iPad, Apple Watch, Mac</dd>
+      <dt>Advertising SDKs</dt><dd>None in any app</dd>
+      <dt>Tracking (IDFA)</dt><dd>Never requested</dd>
+      <dt>Accounts</dt><dd>Never required</dd>
+      {%- if total_reviews > 0 and avg_rating >= site.ratings_min_display %}
+      <dt>App Store rating</dt><dd>{{ avg_int }}.{{ avg_dec }} average across {{ total_reviews }} reviews</dd>
+      {%- endif %}
+      <dt>Made in</dt><dd>Finland, EU · GDPR by default</dd>
+    </dl>
   </div>
 </section>
 
 <!-- ============================
-     FEATURED APP — Spotlight
+     THE CATALOGUE — every series, with what each app does (SEO + intent)
      ============================ -->
-{% assign featured = site.apps | where: "slug", "observa" | first %}
-{% if featured %}
-<section class="section reveal-scale">
-  <div class="spotlight-card">
-    <div class="spotlight-content">
-      <span class="pill">Featured</span>
-      <h2 class="h2" style="margin-bottom:var(--s-2);">{{ featured.name }}</h2>
-      <p class="lead">{{ featured.hero.subheadline }}</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="{{ featured.url }}">Learn more</a>
-      </div>
+<section id="apps" class="section--lg" aria-labelledby="apps-title">
+  <h2 class="h2 reveal" id="apps-title">Apps by what you need</h2>
+  <p class="lead reveal">Five series, one maker. Every app is single-purpose, private by default and built to feel calm.</p>
+
+  {%- assign series_heads = "Health, sleep & recovery|Plan your day & read|Money & bills|Games worth your attention|Tools for Apple developers & Mac" | split: "|" -%}
+  {%- assign series_leads = "Understand your body, your habits and your workouts without handing your health data to advertisers.|Daily planning, countdowns, screen-time and Wikipedia reading that stay on your device.|Track what you owe, split what you share and never miss a due date. No bank login.|Chess, shogi, xiangqi and logic puzzles with no lives, no ads and no dark patterns.|Native Mac and iOS tools for App Store Connect, App Store screenshots and media conversion." | split: "|" -%}
+  {%- for key in series_keys -%}
+  <div class="series-block series-{{ key }} reveal" id="series-{{ key }}">
+    <div class="series-block__head">
+      <span class="series-swatch" aria-hidden="true"></span>
+      <h3>{{ series_heads[forloop.index0] }}</h3>
+      <p>{{ series_leads[forloop.index0] }}</p>
     </div>
-    <div class="spotlight-media">
-      {%- comment %} screenshots[0] may be a bare string or a { src, caption } hash —
-        resolve the URL and a descriptive alt the same way hero.html / screenshots.html do,
-        so the raw hash is never interpolated into the attribute. {% endcomment -%}
-      {%- assign featured_shot = featured.screenshots[0] -%}
-      {%- assign featured_img = featured_shot.src | default: featured_shot -%}
-      {%- assign featured_alt = featured_shot.alt | default: featured_shot.caption | default: featured.hero.alt | default: featured.name -%}
-      <img src="{{ featured_img }}" alt="{{ featured_alt }}" loading="lazy">
-    </div>
+    <ul class="series-list">
+      {%- for app in sheet_apps -%}
+        {%- include series.html app=app -%}
+        {%- if series_key == key -%}
+          {%- include app-facts.html app=app -%}
+          {%- if f_app_free == false and f_app_price != "" -%}{%- assign row_denom = f_app_price | append: " once" -%}
+          {%- elsif f_has_plans -%}{%- assign row_denom = "Free · Pro" -%}
+          {%- else -%}{%- assign row_denom = "Free" -%}{%- endif -%}
+          {%- assign row_plat = f_platforms | join: " · " | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Watch" -%}
+      <li><a class="series-row" href="{{ app.url }}">
+        <span class="mini-stamp" aria-hidden="true"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/{{ app.slug }}.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span><span class="series-row__name">{{ app.name }}</span>
+          <span class="series-row__desc">{% if app.seo and app.seo.description %}{% include app-text.html app=app text=app.seo.description %}{% else %}{{ app.tagline }}{% endif %}</span></span>
+        <span class="series-row__meta"><strong>{{ row_denom }}</strong>{{ row_plat }}</span>
+      </a></li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
   </div>
-</section>
-{% endif %}
-
-<!-- ============================
-     INTENT CLUSTERS — category H2s (SEO + intent signals)
-     ============================ -->
-<section id="apps" class="section--lg">
-  <div class="section-center">
-    <p class="overline reveal">The Collection</p>
-    <h2 class="h2 reveal">Apps by what you need</h2>
-    <p class="lead reveal">Browse by intent. Every app is single-purpose, private by default, and designed to feel calm.</p>
-  </div>
-
-  {%- comment %} Cluster 1: Health, sleep & recovery {% endcomment -%}
-  {%- assign cluster_apps = '' | split: '' -%}
-  {%- assign health_cats = 'health,fitness' | split: ',' -%}
-  {%- for cat in health_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
-  {%- if cluster_apps.size > 0 -%}
-    <div class="section reveal">
-      <h3 class="h2" style="margin-bottom:var(--s-2);">Health, sleep &amp; recovery</h3>
-      <p class="lead" style="margin-bottom:var(--s-4);">Understand your body, your habits, and your workouts — without handing your health data to advertisers.</p>
-      <div class="grid grid-2 stagger">
-        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
-      </div>
-    </div>
-  {%- endif -%}
-
-  {%- comment %} Cluster 2: Plan your life {% endcomment -%}
-  {%- assign cluster_apps = '' | split: '' -%}
-  {%- assign plan_cats = 'productivity,lifestyle' | split: ',' -%}
-  {%- for cat in plan_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
-  {%- if cluster_apps.size > 0 -%}
-    <div class="section reveal">
-      <h3 class="h2" style="margin-bottom:var(--s-2);">Plan your life</h3>
-      <p class="lead" style="margin-bottom:var(--s-4);">Daily planning and life-event countdowns that stay on your device.</p>
-      <div class="grid grid-2 stagger">
-        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
-      </div>
-    </div>
-  {%- endif -%}
-
-  {%- comment %} Cluster 3: Money & bills {% endcomment -%}
-  {%- assign cluster_apps = live_apps | where: "category", "finance" -%}
-  {%- if cluster_apps.size > 0 -%}
-    <div class="section reveal">
-      <h3 class="h2" style="margin-bottom:var(--s-2);">Money &amp; bills</h3>
-      <p class="lead" style="margin-bottom:var(--s-4);">Track what you owe, split what you share, and never miss a due date.</p>
-      <div class="grid grid-2 stagger">
-        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
-      </div>
-    </div>
-  {%- endif -%}
-
-  {%- comment %} Cluster 4: Developer tools {% endcomment -%}
-  {%- assign cluster_apps = '' | split: '' -%}
-  {%- assign dev_cats = 'developer-tools,business,graphics' | split: ',' -%}
-  {%- for cat in dev_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
-  {%- if cluster_apps.size > 0 -%}
-    <div class="section reveal">
-      <h3 class="h2" style="margin-bottom:var(--s-2);">Developer tools for Apple platforms</h3>
-      <p class="lead" style="margin-bottom:var(--s-4);">Native Mac and iOS tools for App Store Connect, metadata, and screenshot workflows.</p>
-      <div class="grid grid-2 stagger">
-        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
-      </div>
-    </div>
-  {%- endif -%}
-
-  {%- comment %} Cluster 5: Reading & discovery {% endcomment -%}
-  {%- assign cluster_apps = '' | split: '' -%}
-  {%- assign read_cats = 'education,books' | split: ',' -%}
-  {%- for cat in read_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
-  {%- if cluster_apps.size > 0 -%}
-    <div class="section reveal">
-      <h3 class="h2" style="margin-bottom:var(--s-2);">Reading &amp; discovery</h3>
-      <p class="lead" style="margin-bottom:var(--s-4);">Rediscover long-form reading and Wikipedia on your own terms — calm, feed-free, offline-ready.</p>
-      <div class="grid grid-2 stagger">
-        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
-      </div>
-    </div>
-  {%- endif -%}
-
-  {%- comment %} Cluster 6: Games {% endcomment -%}
-  {%- assign cluster_apps = live_apps | where: "category", "games" -%}
-  {%- if cluster_apps.size > 0 -%}
-    <div class="section reveal">
-      <h3 class="h2" style="margin-bottom:var(--s-2);">Games worth your attention</h3>
-      <p class="lead" style="margin-bottom:var(--s-4);">Premium puzzle games with no lives, no ads, and no dark patterns.</p>
-      <div class="grid grid-2 stagger">
-        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
-      </div>
-    </div>
-  {%- endif -%}
-
-  {%- comment %} Cluster 7: Utilities {% endcomment -%}
-  {%- assign cluster_apps = live_apps | where: "category", "utilities" -%}
-  {%- if cluster_apps.size > 0 -%}
-    <div class="section reveal">
-      <h3 class="h2" style="margin-bottom:var(--s-2);">Conversion &amp; utilities</h3>
-      <p class="lead" style="margin-bottom:var(--s-4);">Powerful local file conversion without uploading anything to a web tool.</p>
-      <div class="grid grid-2 stagger">
-        {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
-      </div>
-    </div>
-  {%- endif -%}
+  {%- endfor -%}
 </section>
 
 <!-- ============================
      COMPARED-TO — surface /alternatives/ pages from the home page
      ============================ -->
-<section class="section reveal">
-  <div class="section-center">
-    <p class="overline">Compared to mainstream apps</p>
-    <h2 class="h2">Honest, non-hostile comparisons</h2>
-    {%- assign comparison_count = site.pages | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 -%}
-    <p class="lead">{{ comparison_count }} side-by-side comparisons against the mainstream apps most people are coming from. Four shown here; the rest live on the alternatives hub.</p>
+<section class="section reveal" aria-labelledby="compare-title">
+  {%- assign comparison_count = site.pages | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 -%}
+  <h2 class="h2" id="compare-title">Honest comparisons with the apps you know</h2>
+  <p class="lead">{{ comparison_count }} side-by-side comparisons against the mainstream apps most people are coming from. Four are here; the rest are on the comparisons page.</p>
+  <div class="pairs stagger">
+    {%- assign pa = site.apps | where: "slug", "gymlogger-x" | first -%}{%- include series.html app=pa -%}
+    <a class="pair series-{{ series_key }}" href="/alternatives/strong-workout-app/">
+      <span class="pair__stamps" aria-hidden="true">
+        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/gymlogger-x.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span class="pair__vs">vs</span>
+        <span class="blank-stamp"><span>Strong</span></span>
+      </span>
+      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">vs</span> Strong</span>
+      <span class="card-text">Fast native workout logger with Apple Watch set logging, no account, and an alternative to subscription-only pricing.</span>
+      <span class="pair__go">Read the comparison</span></span>
+    </a>
+    {%- assign pa = site.apps | where: "slug", "taskful-day" | first -%}{%- include series.html app=pa -%}
+    <a class="pair series-{{ series_key }}" href="/alternatives/streaks-app/">
+      <span class="pair__stamps" aria-hidden="true">
+        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/taskful-day.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span class="pair__vs">vs</span>
+        <span class="blank-stamp"><span>Streaks</span></span>
+      </span>
+      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">vs</span> Streaks</span>
+      <span class="card-text">A calm daily planner without flame counters, no red X for missed days, no guilt mechanics — now Universal across iPhone, iPad, and Mac.</span>
+      <span class="pair__go">Read the comparison</span></span>
+    </a>
+    {%- assign pa = site.apps | where: "slug", "observa" | first -%}{%- include series.html app=pa -%}
+    <a class="pair series-{{ series_key }}" href="/alternatives/autosleep/">
+      <span class="pair__stamps" aria-hidden="true">
+        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/observa.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span class="pair__vs">vs</span>
+        <span class="blank-stamp"><span>AutoSleep</span></span>
+      </span>
+      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">vs</span> AutoSleep</span>
+      <span class="card-text">An interpretation layer over Apple Health sleep, HRV, and recovery — rather than a direct tracker replacement.</span>
+      <span class="pair__go">Read the comparison</span></span>
+    </a>
+    {%- assign pa = site.apps | where: "slug", "appmeta" | first -%}{%- include series.html app=pa -%}
+    <a class="pair series-{{ series_key }}" href="/alternatives/app-store-connect-web/">
+      <span class="pair__stamps" aria-hidden="true">
+        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/appmeta.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span class="pair__vs">vs</span>
+        <span class="blank-stamp"><span>App Store Connect (web)</span></span>
+      </span>
+      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">vs</span> App Store Connect (web)</span>
+      <span class="card-text">A native Mac client for App Store Connect metadata with diff previews, Keychain-secured credentials, and side-by-side localisation editing.</span>
+      <span class="pair__go">Read the comparison</span></span>
+    </a>
   </div>
-  <div class="grid grid-2 stagger compared-to-grid">
-    <a class="card card-compared" href="/alternatives/strong-workout-app/">
-      <span class="pill">Fitness</span>
-      <h3 class="card-compared-title">GymLogger X <span class="card-compared-vs">vs</span> Strong</h3>
-      <p class="card-text">Fast native workout logger with Apple Watch set logging, no account, and an alternative to subscription-only pricing.</p>
-      <span class="card-compared-cta">Read the comparison →</span>
-    </a>
-    <a class="card card-compared" href="/alternatives/streaks-app/">
-      <span class="pill">Productivity</span>
-      <h3 class="card-compared-title">Taskful Day <span class="card-compared-vs">vs</span> Streaks</h3>
-      <p class="card-text">A calm daily planner without flame counters, no red X for missed days, no guilt mechanics — now Universal across iPhone, iPad, and Mac.</p>
-      <span class="card-compared-cta">Read the comparison →</span>
-    </a>
-    <a class="card card-compared" href="/alternatives/autosleep/">
-      <span class="pill">Health</span>
-      <h3 class="card-compared-title">Observa <span class="card-compared-vs">vs</span> AutoSleep</h3>
-      <p class="card-text">An interpretation layer over Apple Health sleep, HRV, and recovery — rather than a direct tracker replacement.</p>
-      <span class="card-compared-cta">Read the comparison →</span>
-    </a>
-    <a class="card card-compared" href="/alternatives/app-store-connect-web/">
-      <span class="pill">Developer tools</span>
-      <h3 class="card-compared-title">AppMeta <span class="card-compared-vs">vs</span> App Store Connect (web)</h3>
-      <p class="card-text">A native Mac client for App Store Connect metadata with diff previews, Keychain-secured credentials, and side-by-side localisation editing.</p>
-      <span class="card-compared-cta">Read the comparison →</span>
-    </a>
-  </div>
-  <div class="section-center" style="margin-top:var(--s-5);">
-    <a class="btn btn-secondary" href="/alternatives/">See all {{ site.pages | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 }} comparisons →</a>
+  <div class="actions">
+    <a class="btn btn-secondary" href="/alternatives/">See all {{ comparison_count }} comparisons</a>
   </div>
 </section>
 
@@ -400,26 +326,25 @@ last_updated: 2026-10-26
      ============================ -->
 {%- assign latest_posts = site.journal | sort: "date" | reverse | slice: 0, 2 -%}
 {%- if latest_posts.size > 0 -%}
-<section class="section reveal">
-  <div class="section-center">
-    <p class="overline">From the journal</p>
-    <h2 class="h2">Shipping notes &amp; honest essays</h2>
-    <p class="lead">Design reasoning, rebrand stories, and notes on privacy-first software — written by the developer, not a content farm.</p>
-  </div>
-  <div class="grid grid-2 stagger journal-preview">
+<section class="section reveal" aria-labelledby="journal-title">
+  <h2 class="h2" id="journal-title">From the journal</h2>
+  <p class="lead">Shipping notes, design reasoning and notes on privacy-first software, written by the developer.</p>
+  <div class="covers stagger">
     {%- for post in latest_posts -%}
-      <a class="card card-journal" href="{{ post.url }}">
-        <span class="pill">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h3 class="card-journal-title" style="margin-top:var(--s-2);">{{ post.title }}</h3>
+      {%- assign pm = post.date | date: "%d.%m.%y" -%}
+      <a class="cover" href="{{ post.url }}">
+        {% include postmark.html date=pm label="JOURNAL" %}
+        <time class="cover__date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %B %Y" }}</time>
+        <h3 class="cover__title">{{ post.title }}</h3>
         {%- if post.lede -%}
-          <p class="card-text" style="margin-top:var(--s-2);">{{ post.lede | strip_html | truncate: 180 }}</p>
+          <p class="card-text">{{ post.lede | strip_html | truncate: 180 }}</p>
         {%- endif -%}
-        <span class="card-journal-cta" style="margin-top:var(--s-3);">Read the post →</span>
+        <span class="pair__go">Read the post</span>
       </a>
     {%- endfor -%}
   </div>
-  <div class="section-center" style="margin-top:var(--s-5);">
-    <a class="btn btn-secondary" href="/journal/">Browse the journal →</a>
+  <div class="actions">
+    <a class="btn btn-secondary" href="/journal/">Browse the journal</a>
   </div>
 </section>
 {%- endif -%}
@@ -427,17 +352,13 @@ last_updated: 2026-10-26
 <!-- ============================
      TRANSPARENCY TABLE — proof, not slogan
      ============================ -->
-<section class="section reveal">
-  <div class="section-center">
-    <p class="overline">Receipts</p>
-    <h2 class="h2">Transparency at a glance</h2>
-    <p class="lead">The "no tracking" claim, made specific. A representative sample of how every Lagerland app handles your data — and how Apple's own Privacy Nutrition Labels back it up.</p>
-  </div>
+<section class="section reveal" aria-labelledby="transparency-title">
+  <h2 class="h2" id="transparency-title">Transparency at a glance</h2>
+  <p class="lead">The "no tracking" claim, made specific: how a sample of the apps handle your data, backed by Apple's own Privacy Nutrition Labels.</p>
 
   {%- comment %} Rows are generated from _data/transparency.yml (the same
     audited dataset that drives /transparency/) so the homepage sample can
-    never drift from the source of truth again. Only structured fields are
-    shown here; the prose detail lives on the transparency page. {% endcomment -%}
+    never drift from the source of truth again. {% endcomment -%}
   {%- assign sample_slugs = "observa,taskful-day,gymlogger-x,allpaid,mediakit,appmeta" | split: "," -%}
   <div class="transparency-table-wrap">
     <table class="transparency-table">
@@ -466,20 +387,17 @@ last_updated: 2026-10-26
         {%- endfor -%}
       </tbody>
     </table>
-    <p class="small transparency-footnote">
-      A representative sample. No IDFA is ever requested across the catalogue, and no advertising SDKs are linked into any app. <a href="/transparency/"><strong>See the per-app Privacy Manifest data for all {{ site.data.catalog.meta.live_app_count }} apps →</strong></a>
-    </p>
   </div>
+  <p class="small transparency-footnote">
+    A representative sample. No IDFA is ever requested across the catalogue, and no advertising SDKs are linked into any app. <a href="/transparency/"><strong>See the per-app Privacy Manifest data for all {{ site.data.catalog.meta.live_app_count }} apps →</strong></a>
+  </p>
 </section>
 
 <!-- ============================
-     FAQ — Homepage
+     FAQ — Homepage (questions match the FAQPage JSON-LD above)
      ============================ -->
-<section id="faq" class="section reveal">
-  <div class="section-center">
-    <p class="overline">Questions</p>
-    <h2 class="h2">Frequently asked</h2>
-  </div>
+<section id="faq" class="section reveal" aria-labelledby="faq-title">
+  <h2 class="h2" id="faq-title">Frequently asked</h2>
   <div class="faq">
     <details class="faq-item" open>
       <summary>Who makes Lagerland Apps?</summary>
@@ -509,16 +427,13 @@ last_updated: 2026-10-26
 </section>
 
 <!-- ============================
-     CTA — Emotional close
+     CLOSE — the sheet's bottom margin
      ============================ -->
-<section class="cta-section reveal">
-  <p class="overline">Built different</p>
-  <h2 class="h2">Apps that put you first.</h2>
-  <p class="lead">
-    No data harvesting. No dark patterns. No subscriptions you forget about. Just software that works for you — on iPhone, iPad, Apple Watch, and Mac.
-  </p>
+<section class="cta-section">
+  <h2 class="h2">Pick an app from the sheet and keep your data where it is.</h2>
+  <p class="lead">No data harvesting, no dark patterns, no subscriptions you forget about. Software that works for you on iPhone, iPad, Apple Watch and Mac.</p>
   <div class="actions">
-    <a class="btn btn-primary" href="#apps">Explore all apps</a>
-    <a class="btn btn-secondary" href="mailto:lagerland.apps@proton.me">Get in touch</a>
+    <a class="btn btn-primary" href="#issue-title">Back to the sheet</a>
+    <a class="btn btn-secondary" href="mailto:lagerland.apps@proton.me">Email the maker</a>
   </div>
 </section>

@@ -1,36 +1,34 @@
 {%- comment %}
-  Reusable app card. Usage: {% include _app-card.html app=app %}
+  Reusable app card: a small perforated stamp of the icon in its series
+  colour, then name, tagline, description and printed labels.
+  Usage: {% include app-card.html app=app %}
 {% endcomment -%}
 {%- include app-facts.html app=include.app -%}
-<a class="card card-app" href="{{ include.app.url }}">
-  <div class="app-badge" style="margin-bottom:var(--s-3);">
-    {% if include.app.icon %}<img class="app-icon" src="{{ include.app.icon }}" alt="{{ include.app.name }} icon" loading="lazy">{% endif %}
-    <div class="app-meta">
-      <div class="app-name">{{ include.app.name }}</div>
-      <div class="app-tagline">{{ include.app.tagline }}</div>
-    </div>
-  </div>
-  {% if include.app.seo and include.app.seo.description %}
-    <div class="card-text">{% include app-text.html app=include.app text=include.app.seo.description %}</div>
-  {% endif %}
-  <div class="meta-row" style="margin-top:var(--s-3);">
-    {%- comment %} Price / cost model first — "is it free?" is the primary
-      download-intent filter, so surface it on the card, not just the app page. {% endcomment -%}
-    {%- assign card_price_model = include.app.price.model | downcase -%}
-    {%- if card_price_model contains 'one-time' -%}
-      <span class="pill pill--price">One-time</span>
-    {%- elsif card_price_model contains 'freemium' -%}
-      <span class="pill pill--price">Free &middot; Pro</span>
-    {%- elsif card_price_model contains 'subscription' -%}
-      <span class="pill pill--price">Free trial</span>
-    {%- elsif card_price_model contains 'free' -%}
-      <span class="pill pill--price">Free</span>
-    {%- endif -%}
-    {%- assign card_rating = include.app.ratings.value | plus: 0 -%}
-    {%- if include.app.ratings and include.app.ratings.count >= 3 and card_rating >= site.ratings_min_display -%}
-      <span class="pill">&#9733; {{ include.app.ratings.value }} &middot; {{ include.app.ratings.count }}</span>
-    {%- endif -%}
-    {% if include.app.category %}<span class="pill">{{ include.app.category | replace: '-', ' ' }}</span>{% endif %}
-    {% if f_platforms.size > 0 %}<span class="pill">{{ f_platforms | join: " &middot; " }}</span>{% endif %}
-  </div>
+{%- include series.html app=include.app -%}
+{%- assign card_plat = f_platforms | join: " · " | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Watch" | replace: "visionOS", "Vision Pro" -%}
+<a class="card card-app card-app--stamp series-{{ series_key }}" href="{{ include.app.url }}">
+  <span class="mini-stamp" aria-hidden="true"><span class="mini-stamp__paper"><span class="mini-stamp__field">
+    <img src="/assets/icons/sm/{{ include.app.slug }}.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+  </span></span></span>
+  <span class="card-app__body">
+    <span class="app-name">{{ include.app.name }}</span>
+    <span class="app-tagline">{{ include.app.tagline }}</span>
+    {%- if include.app.seo and include.app.seo.description %}
+    <span class="card-text">{% include app-text.html app=include.app text=include.app.seo.description %}</span>
+    {%- endif %}
+    <span class="meta-row">
+      {%- if f_app_free == false and f_app_price != "" -%}
+        <span class="pill pill--price">One-time purchase</span>
+      {%- elsif f_has_plans -%}
+        <span class="pill pill--price">Free &middot; Pro</span>
+      {%- else -%}
+        <span class="pill pill--price">Free</span>
+      {%- endif -%}
+      {%- assign card_rating = include.app.ratings.value | plus: 0 -%}
+      {%- if include.app.ratings and include.app.ratings.count >= 3 and card_rating >= site.ratings_min_display -%}
+        <span class="pill">Rated {{ include.app.ratings.value }} &middot; {{ include.app.ratings.count }} ratings</span>
+      {%- endif -%}
+      {%- if card_plat != "" %}<span class="pill">{{ card_plat }}</span>{% endif -%}
+    </span>
+  </span>
 </a>

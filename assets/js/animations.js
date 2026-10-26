@@ -14,6 +14,7 @@
      [data-count]                        → stat count-up (server-rendered
                                            real value; animation only)
      #sticky-cta[data-hidden]            → app-page download bar
+     .sheet / .series-tab / .sheet-bar   → homepage stamp sheet
    ================================================================== */
 (function () {
   'use strict';
@@ -239,6 +240,102 @@
     io.observe(heroCta);
   }
 
+
+  /* ---- The sheet (homepage) ---------------------------------------
+     Series tabs filter the sheet in place (without JS they are plain
+     links to the series lists below). Pointing at a stamp lifts it
+     and moves its name, tagline and App Store link into the bar
+     under the sheet. On first load the stamps are laid down in issue
+     order — once, and never under reduced motion. */
+  function initSheet() {
+    var sheet = document.querySelector('.sheet');
+    if (!sheet) return;
+    var stamps = Array.prototype.slice.call(sheet.querySelectorAll('.stamp'));
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.series-tab'));
+    var bar = document.querySelector('.sheet-bar');
+
+    // Deal the stamps in, once.
+    if (!REDUCED) {
+      sheet.classList.add('is-dealing');
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          sheet.classList.remove('is-dealing');
+          setTimeout(function () { sheet.classList.add('is-dealt'); }, 900);
+        });
+      });
+    } else {
+      sheet.classList.add('is-dealt');
+    }
+
+    // Filter by series.
+    function setSeries(key) {
+      var all = !key || key === 'all';
+      sheet.classList.toggle('is-filtered', !all);
+      stamps.forEach(function (st) {
+        st.classList.toggle('is-match', !all && st.getAttribute('data-series') === key);
+      });
+      tabs.forEach(function (t) {
+        var k = t.getAttribute('data-series');
+        var on = (!all && k === key) || (all && k === 'all');
+        t.setAttribute('aria-pressed', on ? 'true' : 'false');
+        t.classList.toggle('is-pressed', on);
+      });
+    }
+    tabs.forEach(function (t) {
+      t.setAttribute('role', 'button');
+      t.setAttribute('aria-pressed', t.classList.contains('is-pressed') ? 'true' : 'false');
+      t.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        var key = t.getAttribute('data-series');
+        var pressed = t.getAttribute('aria-pressed') === 'true';
+        setSeries(pressed ? 'all' : key);
+        var first = !pressed && key !== 'all' ? sheet.querySelector('.stamp.is-match') : null;
+        if (first) show(first);
+        if (window.innerWidth < 1180) sheet.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth', block: 'start' });
+      });
+    });
+
+    // The bar follows the stamp you point at.
+    if (!bar) return;
+    var icon = bar.querySelector('.sheet-bar__icon');
+    var shot = bar.querySelector('.sheet-bar__shot');
+    var name = bar.querySelector('.sheet-bar__name');
+    var tag = bar.querySelector('.sheet-bar__tag');
+    var note = bar.querySelector('.sheet-bar__note');
+    var btn = bar.querySelector('.btn');
+    var labels = {};
+    tabs.forEach(function (t) { labels[t.getAttribute('data-series')] = t.textContent.replace(/\d+\s*$/, '').trim(); });
+    var current = null;
+    function show(st) {
+      if (current === st) return;
+      if (current) current.classList.remove('is-lifted');
+      current = st;
+      st.classList.add('is-lifted');
+      var n = st.getAttribute('data-name');
+      var date = st.querySelector('.stamp__date');
+      icon.src = '/assets/icons/sm/' + st.getAttribute('data-slug') + '.webp';
+      if (shot) {
+        var s = st.getAttribute('data-shot');
+        shot.hidden = !s;
+        if (s) shot.src = s;
+      }
+      name.textContent = n;
+      tag.textContent = st.getAttribute('data-tag');
+      note.textContent = (labels[st.getAttribute('data-series')] || '') + (date ? ' · first released ' + date.textContent : '');
+      btn.href = st.getAttribute('data-store');
+      btn.textContent = 'Get ' + n + ' on the App Store';
+    }
+    stamps.forEach(function (st) {
+      st.addEventListener('mouseenter', function () { show(st); });
+      st.addEventListener('focus', function () { show(st); });
+    });
+    sheet.addEventListener('mouseleave', function () {
+      if (current) current.classList.remove('is-lifted');
+      current = null;
+    });
+  }
+
   /* ---- Boot ------------------------------------------------------ */
   function init() {
     initStagger();
@@ -247,6 +344,7 @@
     initMobileMenu();
     initCarousel();
     initFaqAccordion();
+    initSheet();
     initSmoothScroll();
     initCounters();
     initStickyCta();

@@ -61,6 +61,9 @@ include:
 # generators, a personal notifier) that was previously served publicly.
 exclude:
   - CLAUDE.md
+  - PRODUCT.md
+  - DESIGN.md
+  - assets/icons/sm/*.json
   - scripts/
   - README.md
   - 2.png

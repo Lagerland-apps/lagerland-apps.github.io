@@ -1,22 +1,24 @@
 <header class="topbar">
   <div class="topbar-inner">
     <a class="brand" href="/">
-      <img class="brand-mark" src="{{ site.url }}/assets/icons/lagerland-mark.png" alt="Lagerland" width="30" height="30" decoding="async">
-      <span class="brand-name">Lagerland</span>
+      <img class="brand-mark" src="{{ site.url }}/assets/icons/lagerland-mark.png" alt="" width="30" height="30" decoding="async">
+      <span class="brand-name">Lagerland Apps</span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
         <line x1="4" y1="7" x2="20" y2="7"/>
         <line x1="4" y1="12" x2="20" y2="12"/>
         <line x1="4" y1="17" x2="20" y2="17"/>
       </svg>
     </button>
-    <nav class="nav">
-      <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
+    <nav class="nav" aria-label="Main">
       <a href="/apps/"{% if page.url contains "/apps/" %} aria-current="page"{% endif %}>Apps</a>
+      <a href="/alternatives/"{% if page.url contains "/alternatives/" %} aria-current="page"{% endif %}>Comparisons</a>
       <a href="/journal/"{% if page.url contains "/journal/" %} aria-current="page"{% endif %}>Journal</a>
+      <a href="/transparency/"{% if page.url contains "/transparency/" %} aria-current="page"{% endif %}>Transparency</a>
       <a href="/lagerland-apps/"{% if page.url contains "/lagerland-apps/" %} aria-current="page"{% endif %}>About</a>
       <a href="/support/"{% if page.url == "/support/" %} aria-current="page"{% endif %}>Support</a>
     </nav>
+    <span class="topbar-imprint" aria-hidden="true">Sheet 2025–{{ site.time | date: "%Y" }} · Issued in Finland<svg class="reg-mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="5.5"/><path d="M8 0v16M0 8h16"/></svg></span>
   </div>
 </header>

@@ -36,11 +36,10 @@
 
 <section class="section reveal" aria-labelledby="alt-compact-{{ include.app.slug }}">
   <div class="section-center">
-    <p class="overline">More comparisons</p>
     <h2 class="h2" id="alt-compact-{{ include.app.slug }}">{{ include.app.name }} vs the alternatives</h2>
     <p class="lead">Read a dedicated side-by-side for each competitor — same feature deltas as the table above, expanded with screenshots and verdicts.</p>
   </div>
-  <ul class="alt-strip">
+  <ul class="pair-list">
     {%- for competitor in include.app.alternatives_to -%}
       {%- assign competitor_key = competitor | downcase -%}
       {%- assign competitor_slug = "" -%}
@@ -52,9 +51,9 @@
       {%- endfor -%}
       <li>
         {%- if competitor_slug != "" -%}
-          <a href="/alternatives/{{ competitor_slug }}/" aria-label="{{ include.app.name }} vs {{ competitor }} — full comparison">{{ include.app.name }} vs {{ competitor }} →</a>
+          <a class="pair-row" href="/alternatives/{{ competitor_slug }}/"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">vs</span> {{ competitor }}</span><span class="pair-row__go">Read the comparison</span></a>
         {%- else -%}
-          <span class="alt-strip__pending">{{ include.app.name }} vs {{ competitor }} <em>(comparison coming)</em></span>
+          <span class="pair-row"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">vs</span> {{ competitor }}</span><span class="pair-row__go">comparison coming</span></span>
         {%- endif -%}
       </li>
     {%- endfor -%}
@@ -71,12 +70,11 @@
 
 <section class="section reveal">
   <div class="section-center">
-    <p class="overline">Branded comparisons</p>
-    <h2 class="h2">A privacy-first alternative to…</h2>
+    <h2 class="h2">{{ include.app.name }} as an alternative to…</h2>
     <p class="lead">{{ include.app.name }} is built as a calmer, privacy-first alternative to several popular apps in the {{ include.app.category | replace: '-', ' ' }} space. No account, no tracking, no advertising — designed for Apple users who want to opt out of the data economy.</p>
   </div>
 
-  <div class="grid grid-4 stagger">
+  <ul class="pair-list">
     {%- for competitor in include.app.alternatives_to -%}
       {%- assign competitor_key = competitor | downcase -%}
       {%- assign competitor_slug = "" -%}
@@ -86,19 +84,15 @@
           {%- assign competitor_slug = parts[1] -%}
         {%- endif -%}
       {%- endfor -%}
-      {%- if competitor_slug != "" -%}
-        <a class="card" href="/alternatives/{{ competitor_slug }}/" aria-label="{{ include.app.name }} vs {{ competitor }} — see the comparison">
-          <div class="card-title">{{ competitor }}</div>
-          <div class="card-text">{{ include.app.name }} as a privacy-first alternative to {{ competitor }} — see the comparison →</div>
-        </a>
-      {%- else -%}
-        <div class="card">
-          <div class="card-title">{{ competitor }}</div>
-          <div class="card-text">{{ include.app.name }} as a privacy-first alternative to {{ competitor }}.</div>
-        </div>
-      {%- endif -%}
+      <li>
+        {%- if competitor_slug != "" -%}
+        <a class="pair-row" href="/alternatives/{{ competitor_slug }}/"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">vs</span> {{ competitor }}</span><span class="pair-row__go">Read the comparison</span></a>
+        {%- else -%}
+        <span class="pair-row"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">vs</span> {{ competitor }}</span><span class="pair-row__go">comparison coming</span></span>
+        {%- endif -%}
+      </li>
     {%- endfor -%}
-  </div>
+  </ul>
 
   {%- if comparison_url != "" -%}
     <div class="actions" style="margin-top:var(--s-4);justify-content:center;">
