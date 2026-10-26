@@ -75,12 +75,13 @@
 <link rel="me" href="https://github.com/lagerland-apps">
 <link rel="me" href="mailto:lagerland.apps@proton.me">
 
-{%- comment %} Self-hosted fonts (latin subsets). Preload the two faces used
+{%- comment %} style.css and animations.js carry ?v=<build time> so a redesign never meets a cached old file.
+  Self-hosted fonts (latin subsets). Preload the two faces used
   above the fold; font-display: swap + metric-close fallbacks avoid CLS.
   crossorigin is required on font preloads even same-origin. {% endcomment %}
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jost-var.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-var.woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: '%Y%m%d%H%M' }}">
 
 
 {%- comment %} Per-app LCP preload — the leaflet stamp's icon is the largest
@@ -172,6 +173,6 @@
 </script>
 {%- endif %}
 
-<script src="/assets/js/animations.js" defer></script>
+<script src="/assets/js/animations.js?v={{ site.time | date: '%Y%m%d%H%M' }}" defer></script>
 <script data-goatcounter="https://lagerlandapps.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
