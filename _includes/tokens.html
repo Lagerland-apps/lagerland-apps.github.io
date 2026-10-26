@@ -4,10 +4,16 @@
   Output is the expanded text. `tk_missing` becomes true when a token referred to something this app does not
   offer (e.g. {P_MONTHLY} on a yearly-only app), so callers can hide that card/line instead of showing a blank.
   Tokens: {P_MONTHLY} {P_YEARLY} {P_WEEKLY} {P_LIFETIME} {P_APP} {P_IAP_MIN} {P_IAP_MAX} {P_IAP:<exact label>}
-          {TRIAL} {PLATFORMS} {APP_COUNT}
+          {TRIAL} {PLATFORMS}            (about the app whose facts were just assigned)
+          {APP_COUNT} {APP_COUNT_OTHER}  (global: live apps, and live apps minus one for "the studio's other N apps")
+    global_only=true  expands only the global tokens (pages that are not one app's page).
 {%- endcomment -%}
 {%- assign tk_out = include.text -%}
 {%- assign tk_missing = false -%}
+{%- assign tk_count = site.data.catalog.meta.live_app_count -%}
+{%- assign tk_other = tk_count | minus: 1 -%}
+{%- assign tk_out = tk_out | replace: "{APP_COUNT_OTHER}", tk_other | replace: "{APP_COUNT}", tk_count -%}
+{%- if include.global_only != true -%}
 {%- if tk_out contains "{P_MONTHLY}" and f_monthly == "" %}{% assign tk_missing = true %}{% endif -%}
 {%- if tk_out contains "{P_YEARLY}" and f_yearly == "" %}{% assign tk_missing = true %}{% endif -%}
 {%- if tk_out contains "{P_WEEKLY}" and f_weekly == "" %}{% assign tk_missing = true %}{% endif -%}
@@ -17,7 +23,7 @@
 {%- if tk_out contains "{P_IAP_MAX}" and f_iap_max == "" %}{% assign tk_missing = true %}{% endif -%}
 {%- if tk_out contains "{TRIAL}" and f_trial == "" %}{% assign tk_missing = true %}{% endif -%}
 {%- assign tk_platforms = f_platforms | join: ", " -%}
-{%- assign tk_out = tk_out | replace: "{P_MONTHLY}", f_monthly | replace: "{P_YEARLY}", f_yearly | replace: "{P_WEEKLY}", f_weekly | replace: "{P_LIFETIME}", f_lifetime | replace: "{P_APP}", f_app_price | replace: "{P_IAP_MIN}", f_iap_min | replace: "{P_IAP_MAX}", f_iap_max | replace: "{TRIAL}", f_trial | replace: "{PLATFORMS}", tk_platforms | replace: "{APP_COUNT}", f_count -%}
+{%- assign tk_out = tk_out | replace: "{P_MONTHLY}", f_monthly | replace: "{P_YEARLY}", f_yearly | replace: "{P_WEEKLY}", f_weekly | replace: "{P_LIFETIME}", f_lifetime | replace: "{P_APP}", f_app_price | replace: "{P_IAP_MIN}", f_iap_min | replace: "{P_IAP_MAX}", f_iap_max | replace: "{TRIAL}", f_trial | replace: "{PLATFORMS}", tk_platforms -%}
 {%- for tk_o in f_cat.other_iaps -%}
   {%- assign tk_tag = "{P_IAP:" | append: tk_o.label | append: "}" -%}
   {%- if tk_out contains tk_tag -%}
@@ -28,4 +34,5 @@
     {%- else -%}{%- assign tk_missing = true -%}{%- endif -%}
   {%- endif -%}
 {%- endfor -%}
+{%- endif -%}
 {{- tk_out -}}

@@ -3,7 +3,7 @@ layout: app
 slug: liftlog
 name: "LiftLog"
 tagline: "The lift log that feels like equipment."
-quick_answer: "LiftLog is a design-led strength training log for iPhone built around tabular numerics, a custom haptic keypad for logging sets, and athlete-grade polish. It ships 40 ready programs (StrongLifts 5×5, Starting Strength, PPL, Upper/Lower, 5/3/1 and more) whose weights progress automatically, and tracks estimated 1RM, volume, and Rep PRs at 1/3/5/10 reps. Free 7-day trial, no card. Pay-what-you-can one-time from $9.99 to $39.99. No subscription, no tracking, no account."
+quick_answer: "LiftLog is a design-led strength training log for iPhone built around tabular numerics, a custom haptic keypad for logging sets, and athlete-grade polish. It ships 40 ready programs (StrongLifts 5×5, Starting Strength, PPL, Upper/Lower, 5/3/1 and more) whose weights progress automatically, and tracks estimated 1RM, volume, and Rep PRs at 1/3/5/10 reps. Free 7-day trial, no card. Pay-what-you-can one-time from {P_IAP:Minimum} to {P_IAP:Patron}. No subscription, no tracking, no account."
 category: fitness
 platforms: ["iOS"]
 status: live
@@ -45,7 +45,7 @@ plans:
   - name: "Generous"
     highlight: true
     highlight_label: "Preselected in the app"
-    price: "$29.99 once"
+    price: "{P_IAP:Supporter} once"
     summary: "The tier the paywall preselects. In the app, it's the one marked as funding three months of development."
     features:
       - "Everything in Good"
@@ -95,7 +95,7 @@ hero:
   headline: "The strength training log for iPhone."
   secondary: "Train the way you log."
   subheadline: "Design-led strength tracker for iPhone — tabular numerics, a custom haptic keypad for every set, 40 ready programs (StrongLifts, PPL, Upper/Lower, 5/3/1) whose weights progress on their own, and PR moments rendered with the polish of a piece of equipment."
-  pre_headline: "Open it. Log one workout. If LiftLog isn't worth $9.99 to you, don't pay. Seven days free, no card on file, no auto-renew — then you decide what it's worth, once."
+  pre_headline: "Open it. Log one workout. If LiftLog isn't worth {P_IAP:Minimum} to you, don't pay. Seven days free, no card on file, no auto-renew — then you decide what it's worth, once."
   cta_label: "Start 7-Day Free Trial — No Card"
   alt: "LiftLog workout session on iPhone — bench press set rows in large tabular numerics, two sets checked off, and last session's 100 kg × 5 shown above them"
 
@@ -170,7 +170,7 @@ comparison_table:
   rows:
     - feature: "Pricing model"
       values:
-        - "Pay-what-you-can $9.99–$39.99, one-time"
+        - "Pay-what-you-can {P_IAP:Minimum}–{P_IAP:Patron}, one-time"
         - "Free + Pro subscription"
         - "Free + Pro subscription"
         - "Subscription only"
@@ -222,7 +222,7 @@ comparison_table:
         - "Read-only without Pro"
         - "Read-only without Pro"
         - "Lost when sub lapses"
-  footnote: "Competitor details reflect publicly documented features as of 2026. LiftLog's pay-what-you-can pricing means you choose your tier — $9.99 Fair, $19.99 Good, $29.99 Generous, $39.99 Patron — once. The App Store is the canonical source for current pricing."
+  footnote: "Competitor details reflect publicly documented features as of 2026. LiftLog's pay-what-you-can pricing means you choose your tier — {P_IAP:Minimum} Fair, {P_IAP:Suggested} Good, {P_IAP:Supporter} Generous, {P_IAP:Patron} Patron — once. The App Store is the canonical source for current pricing."
 
 value_points:
   - title: "Numbers are the product"
@@ -230,7 +230,7 @@ value_points:
   - title: "Workout sessions designed for working sets"
     description: "A custom numeric keypad with haptic feedback. Set completion sweeps a green confirmation across the row. The rest timer counts down in a progress ring that stays pinned while you scroll. Built for thumbs holding a phone between sets — not a designer's portfolio shot."
   - title: "Pay what you can. Once."
-    description: "Seven days free, no card required. Then choose what LiftLog is worth: $9.99 Fair, $19.99 Good, $29.99 Generous, $39.99 Patron. One-time. No auto-renew. No trial trap. No subscription tax on your training history."
+    description: "Seven days free, no card required. Then choose what LiftLog is worth: {P_IAP:Minimum} Fair, {P_IAP:Suggested} Good, {P_IAP:Supporter} Generous, {P_IAP:Patron} Patron. One-time. No auto-renew. No trial trap. No subscription tax on your training history."
   - title: "PR moments that feel like moments"
     description: "When a set beats your best, LiftLog notices. A heavy haptic, a brief glow on the set, and a PR badge that stays on the row. Your best lifts deserve a celebration — not just a row."
 
@@ -250,7 +250,7 @@ features:
   - title: "Privacy by default"
     description: "No third-party analytics. No advertising SDKs. No social feed. No required account. Workout history lives on your device — there is no cloud sync — and exports as JSON or CSV whenever you want it."
   - title: "Pay-what-you-can pricing — once"
-    description: "Free for seven days, no card on file. After the trial, choose your tier: $9.99 Fair, $19.99 Good, $29.99 Generous, $39.99 Patron. One-time payment. No auto-renew. No trial trap. You own it — and your training history isn't held hostage by a lapsed subscription."
+    description: "Free for seven days, no card on file. After the trial, choose your tier: {P_IAP:Minimum} Fair, {P_IAP:Suggested} Good, {P_IAP:Supporter} Generous, {P_IAP:Patron} Patron. One-time payment. No auto-renew. No trial trap. You own it — and your training history isn't held hostage by a lapsed subscription."
 
 screenshots:
   - src: "/assets/screenshots/liftlog/1.png"
@@ -279,13 +279,13 @@ privacy:
 
 faq:
   - q: "What is LiftLog?"
-    a: "LiftLog is a design-led strength training log for iPhone. It's built around a tabular-numeric type system, haptic-rich workout sessions with a custom numeric keypad, 40 ready programs (StrongLifts 5×5, Starting Strength, PPL, Upper/Lower, 5/3/1, GZCLP and more) whose weights progress automatically, and per-exercise analytics — estimated 1RM, best set, best volume, Rep PRs at 1/3/5/10 reps, and a 26-week activity heatmap. Free seven-day trial, no card required, then a one-time pay-what-you-can purchase from $9.99 to $39.99."
+    a: "LiftLog is a design-led strength training log for iPhone. It's built around a tabular-numeric type system, haptic-rich workout sessions with a custom numeric keypad, 40 ready programs (StrongLifts 5×5, Starting Strength, PPL, Upper/Lower, 5/3/1, GZCLP and more) whose weights progress automatically, and per-exercise analytics — estimated 1RM, best set, best volume, Rep PRs at 1/3/5/10 reps, and a 26-week activity heatmap. Free seven-day trial, no card required, then a one-time pay-what-you-can purchase from {P_IAP:Minimum} to {P_IAP:Patron}."
   - q: "How is LiftLog different from GymLogger X?"
     a: "LiftLog and GymLogger X are sister apps from Lagerland Apps that approach strength training from different angles. GymLogger X is a fast, minimalist logger with an Apple Watch app for logging sets from the wrist (the Watch relays them to your iPhone) — free at the core, with Pro at $39.99 lifetime or $17.99 a year. LiftLog is design-led and iPhone-only: tabular numerics, haptic-rich sessions, restrained typography, and a pay-what-you-can one-time purchase from $9.99 to $39.99. Pick GymLogger X if you want to log from Apple Watch. Pick LiftLog if you care about the polish and craft of every screen — and like the idea of choosing your own price."
   - q: "How much does LiftLog cost?"
-    a: "LiftLog is free for seven days — no card required and no auto-renew. After the trial, you choose what it's worth to you: $9.99 (Fair), $19.99 (Good), $29.99 (Generous), or $39.99 (Patron). All four are one-time payments — no subscription, no recurring charge, no trial trap. Pick the tier that matches what the app is worth to you and you own it. Family Sharing is on, so one purchase covers your household."
+    a: "LiftLog is free for seven days — no card required and no auto-renew. After the trial, you choose what it's worth to you: {P_IAP:Minimum} (Fair), {P_IAP:Suggested} (Good), {P_IAP:Supporter} (Generous), or {P_IAP:Patron} (Patron). All four are one-time payments — no subscription, no recurring charge, no trial trap. Pick the tier that matches what the app is worth to you and you own it. Family Sharing is on, so one purchase covers your household."
   - q: "Why pay-what-you-can pricing?"
-    a: "Strength training is a long-term practice. We don't think your training history should be held hostage by a lapsed subscription, and we don't want a credit card on file just to start. Seven days free without a card means you only pay if it earns your money. The four-tier ladder lets newer lifters in at $9.99 while letting fans support the work at $39.99 — the same app, your call. The launch journal post explains the bet in more detail: https://lagerland-apps.github.io/journal/liftlog-pay-what-you-can/"
+    a: "Strength training is a long-term practice. We don't think your training history should be held hostage by a lapsed subscription, and we don't want a credit card on file just to start. Seven days free without a card means you only pay if it earns your money. The four-tier ladder lets newer lifters in at {P_IAP:Minimum} while letting fans support the work at {P_IAP:Patron} — the same app, your call. The launch journal post explains the bet in more detail: https://lagerland-apps.github.io/journal/liftlog-pay-what-you-can/"
   - q: "Does LiftLog support Apple Watch?"
     a: "No — LiftLog is iPhone-only by design. The workout session view is built around a custom numeric keypad and haptic feedback that wouldn't translate to a small wrist screen. If you want to log from Apple Watch, GymLogger X is the better fit — it has an Apple Watch app for logging sets, which relays them to your iPhone."
   - q: "What programs does LiftLog support?"
@@ -305,7 +305,7 @@ faq:
   - q: "Is there a plate calculator?"
     a: "Yes. Open it from the active workout or from Settings, type a target weight or tap a common one, and it shows the plates for each side and draws the loaded bar. It assumes a standard 20 kg / 45 lb barbell and a standard plate set — 25 kg down to 1.25 kg, or 45 lb down to 2.5 lb — so it can't yet account for a different bar or for fractional plates."
   - q: "How fresh is LiftLog's content and pricing?"
-    a: "This page is maintained alongside each App Store release. The last-updated and first-release dates are shown in the page footer. The pay-what-you-can tiers ($9.99 / $19.99 / $29.99 / $39.99) and the 7-day trial without a card are the live App Store configuration — if Apple's StoreKit ever shows different numbers, the App Store is canonical."
+    a: "This page is maintained alongside each App Store release. The last-updated and first-release dates are shown in the page footer. The pay-what-you-can tiers ({P_IAP:Minimum} / {P_IAP:Suggested} / {P_IAP:Supporter} / {P_IAP:Patron}) and the 7-day trial without a card are the live App Store configuration — if Apple's StoreKit ever shows different numbers, the App Store is canonical."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -325,4 +325,4 @@ ratings:
   last_synced: "2026-04-29"
 last_updated: 2026-10-26
 ---
-LiftLog is a design-led strength training log for iPhone. Built around a tabular-numeric type system, haptic-rich workout sessions, and a restrained navy palette in light and dark mode, LiftLog renders weights, reps, PRs, and volume with the clarity of a stadium scoreboard. The workout session view replaces the system numeric keypad with a custom haptic-feedback grid pad designed for thumbs between working sets; completing a set gives a haptic tap and a green sweep across the row, and a set that beats your best adds a heavy haptic, a brief glow, and a PR badge. LiftLog ships 40 ready programs — StrongLifts 5×5, Starting Strength, GZCLP, Texas Method, Wendler 5/3/1, PHUL, PHAT, Push / Pull / Legs, Upper / Lower and more — plus your own, with supersets and giant sets. Each exercise carries its own progression rule (double progression, linear, percent of Training Max, or RPE), and a lift that misses its targets three sessions in a row drops to 90%. Progress tracking shows total workouts, total volume, and total sets, the last 30 days against the prior 30, and a 26-week activity heatmap. Per-exercise analytics include estimated 1RM trend lines (Adaptive Brzycki/Epley by default), best set, best volume, and Rep PRs at 1, 3, 5, and 10 reps. The exercise library holds 1,500 exercises, each with an animated X-ray-style form demo and numbered How To steps, filterable by muscle group or equipment. Home Screen and Lock Screen widgets show your streak, week, and next session, and Siri can start a workout, log a set, or start your rest timer. Pricing is the unusual part: free for seven days with no card on file, no auto-renew, and no trial trap, after which the user picks a one-time tier — $9.99 (Fair), $19.99 (Good), $29.99 (Generous), or $39.99 (Patron). One purchase, shared with your family through Family Sharing, no subscription, training history never held hostage. No third-party tracking, no advertising SDKs, no required account. Workout history stays on device — there is no cloud sync — with JSON and CSV export and optional Apple Health export. Sister app to GymLogger X — pick LiftLog for design-led iPhone polish and pay-what-you-can pricing; pick GymLogger X for logging from Apple Watch and a $39.99 lifetime price.
+LiftLog is a design-led strength training log for iPhone. Built around a tabular-numeric type system, haptic-rich workout sessions, and a restrained navy palette in light and dark mode, LiftLog renders weights, reps, PRs, and volume with the clarity of a stadium scoreboard. The workout session view replaces the system numeric keypad with a custom haptic-feedback grid pad designed for thumbs between working sets; completing a set gives a haptic tap and a green sweep across the row, and a set that beats your best adds a heavy haptic, a brief glow, and a PR badge. LiftLog ships 40 ready programs — StrongLifts 5×5, Starting Strength, GZCLP, Texas Method, Wendler 5/3/1, PHUL, PHAT, Push / Pull / Legs, Upper / Lower and more — plus your own, with supersets and giant sets. Each exercise carries its own progression rule (double progression, linear, percent of Training Max, or RPE), and a lift that misses its targets three sessions in a row drops to 90%. Progress tracking shows total workouts, total volume, and total sets, the last 30 days against the prior 30, and a 26-week activity heatmap. Per-exercise analytics include estimated 1RM trend lines (Adaptive Brzycki/Epley by default), best set, best volume, and Rep PRs at 1, 3, 5, and 10 reps. The exercise library holds 1,500 exercises, each with an animated X-ray-style form demo and numbered How To steps, filterable by muscle group or equipment. Home Screen and Lock Screen widgets show your streak, week, and next session, and Siri can start a workout, log a set, or start your rest timer. Pricing is the unusual part: free for seven days with no card on file, no auto-renew, and no trial trap, after which the user picks a one-time tier — {P_IAP:Minimum} (Fair), {P_IAP:Suggested} (Good), {P_IAP:Supporter} (Generous), or {P_IAP:Patron} (Patron). One purchase, shared with your family through Family Sharing, no subscription, training history never held hostage. No third-party tracking, no advertising SDKs, no required account. Workout history stays on device — there is no cloud sync — with JSON and CSV export and optional Apple Health export. Sister app to GymLogger X — pick LiftLog for design-led iPhone polish and pay-what-you-can pricing; pick GymLogger X for logging from Apple Watch and a {P_IAP:Patron} lifetime price.

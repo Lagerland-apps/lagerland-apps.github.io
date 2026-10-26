@@ -3,7 +3,7 @@ layout: app
 slug: mediakit
 name: "MediaKit"
 tagline: "Every media tool. One app for iPhone & Mac."
-quick_answer: "MediaKit is a native iPhone and Mac app with 152 local tools for compressing, converting, and editing video, audio, images, PDFs, and archives. Drop any file and it picks the right tool — every operation runs on-device via Apple frameworks, never uploaded. Free 3-day trial; five core tools stay free forever. Pro from $3.99/month, $22.99/year, or $39.99 lifetime. No tracking, no account."
+quick_answer: "MediaKit is a native iPhone and Mac app with 152 local tools for compressing, converting, and editing video, audio, images, PDFs, and archives. Drop any file and it picks the right tool — every operation runs on-device via Apple frameworks, never uploaded. Free 3-day trial; five core tools stay free forever. Pro from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime. No tracking, no account."
 category: utilities
 platforms: ["iOS", "macOS"]
 status: live
@@ -172,7 +172,7 @@ faq:
   - q: "Which file formats does MediaKit support?"
     a: "Video: MP4, MOV, MKV, AVI, WebM, M4V, ProRes, HEVC. Audio: MP3, M4A, WAV, FLAC, AIFF, AAC, ALAC. Image: PNG, JPG, HEIC, WebP, TIFF, GIF, AVIF, RAW. Documents: PDF, EPUB, CBZ, HTML, RTF. Archives: ZIP, TAR, GZIP, XZ, BZIP2, and RAR v4 and v5."
   - q: "Is MediaKit free?"
-    a: "Yes, to start. You get full access to all 152 tools for 3 days. After the trial, five tools stay free forever: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Pro unlocks the remaining 147 tools and batch processing — $3.99/month, $22.99/year, or $39.99 lifetime. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes, to start. You get full access to all 152 tools for 3 days. After the trial, five tools stay free forever: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Pro unlocks the remaining 147 tools and batch processing — {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does MediaKit work offline?"
     a: "Yes. Because everything runs on-device, MediaKit works without an internet connection."
   - q: "Which devices does MediaKit support?"

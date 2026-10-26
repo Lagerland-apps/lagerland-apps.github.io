@@ -3,7 +3,7 @@ layout: app
 slug: taskful-day
 name: "Taskful Day"
 tagline: "Plan the day. Finish the day — calmly. Now on Mac."
-quick_answer: "Taskful Day is a calm daily planner for iPhone, iPad, and Mac that turns overwhelming to-do lists into realistic day plans with focus sessions, voice capture, mood journaling, and four visual day views. Unfinished tasks roll forward without guilt — no streaks, no red badges. iCloud sync across devices. Free with Pro from $2.99/month. No ads, no tracking, no account."
+quick_answer: "Taskful Day is a calm daily planner for iPhone, iPad, and Mac that turns overwhelming to-do lists into realistic day plans with focus sessions, voice capture, mood journaling, and four visual day views. Unfinished tasks roll forward without guilt — no streaks, no red badges. iCloud sync across devices. Free with Pro from {P_MONTHLY}/month. No ads, no tracking, no account."
 category: productivity
 platforms: ["iOS", "iPadOS", "macOS", "watchOS"]
 status: live
@@ -89,7 +89,7 @@ seo:
 
 hero:
   headline: "Your day, actually planned. Now on Mac."
-  secondary: "Universal Purchase: one download, three devices. Free with optional Pro from $2.99/mo, $24.99/yr, or $39.99 lifetime."
+  secondary: "Universal Purchase: one download, three devices. Free with optional Pro from {P_MONTHLY}/mo, {P_YEARLY}/yr, or {P_LIFETIME} lifetime."
   subheadline: "Taskful Day turns an overwhelming to-do list into a calm, realistic plan you can actually finish — with time-blocking, focus sessions (Pomodoro defaults), smart insights, and zero guilt. Native on iPhone, iPad, and Mac, with iCloud sync keeping every device in step."
   cta_label: "Download Free"
   alt: "Taskful Day — today's plan view on iPhone with a focus session running"
@@ -132,7 +132,7 @@ comparison_table:
     - feature: "Native on iPhone, iPad, AND Mac"
       values: ["Yes — Universal Purchase", "iOS / iPad / Watch", "Separate purchase per platform", "Cross-platform via account", "iOS + macOS Catalyst"]
     - feature: "One-time lifetime purchase option"
-      values: ["$39.99 lifetime", "$5.99 one-time (iOS)", "$9.99 iOS + $19.99 iPad + $49.99 Mac", "Subscription only", "Subscription (one-time also available)"]
+      values: ["{P_LIFETIME} lifetime", "$5.99 one-time (iOS)", "$9.99 iOS + $19.99 iPad + $49.99 Mac", "Subscription only", "Subscription (one-time also available)"]
     - feature: "No account required (iCloud-only sync)"
       values: ["Yes — your iCloud, no Lagerland account", "Yes", "Yes — iCloud sync", "Account required", "Account required for sync"]
     - feature: "Zero third-party tracking SDKs"
@@ -225,7 +225,7 @@ faq:
   - q: "Does Taskful Day have a focus timer?"
     a: "Yes. Focus Orbit is an immersive focus mode with a session timer, distraction-free design, and tracking of focused minutes over time. It works the same on iPhone, iPad, and Mac."
   - q: "Is Taskful Day free?"
-    a: "Yes. The core experience is completely free on iPhone, iPad, and Mac. Pro unlocks advanced analytics, widgets, iCloud sync, multiple workspaces, and Reminders import — $2.99/month, $24.99/year, or $39.99 lifetime, applied across every device via Universal Purchase. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes. The core experience is completely free on iPhone, iPad, and Mac. Pro unlocks advanced analytics, widgets, iCloud sync, multiple workspaces, and Reminders import — {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime, applied across every device via Universal Purchase. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does Taskful Day track or sell my data?"
     a: "No. Taskful Day has no ads, no trackers, and no account requirement. Your data stays on your device or your personal iCloud — it's never shared."
   - q: "Can I import tasks from Apple Reminders?"

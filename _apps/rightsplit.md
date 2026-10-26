@@ -3,7 +3,7 @@ layout: app
 slug: rightsplit
 name: "RightSplit"
 tagline: "Split bills from receipts."
-quick_answer: "RightSplit is a receipt-scanning bill splitter for iPhone. Snap a photo of any restaurant or bar receipt, assign each item to the person who ordered it, split shared dishes, spread tax and tip fairly, and send everyone their total via iMessage or WhatsApp. Free for equal splits, tip and your first receipt scan; Pro+ ($3.99/year or $7.99 lifetime) unlocks unlimited scans, item-by-item splits and Spaces for trips and shared homes. No ads, no account, no tracking — receipts read on-device with Apple's Vision framework."
+quick_answer: "RightSplit is a receipt-scanning bill splitter for iPhone. Snap a photo of any restaurant or bar receipt, assign each item to the person who ordered it, split shared dishes, spread tax and tip fairly, and send everyone their total via iMessage or WhatsApp. Free for equal splits, tip and your first receipt scan; Pro+ ({P_YEARLY}/year or {P_LIFETIME} lifetime) unlocks unlimited scans, item-by-item splits and Spaces for trips and shared homes. No ads, no account, no tracking — receipts read on-device with Apple's Vision framework."
 category: finance
 platforms: ["iOS"]
 status: live
@@ -22,7 +22,7 @@ og_image: "/assets/og/rightsplit.png"
 
 seo:
   title: "Bill Splitter for iPhone — Scan, Split, Send | RightSplit"
-  description: "Scan a receipt on iPhone. Item-by-item splits, shared dishes, fair tip math, send via iMessage or WhatsApp. No account. Free; Pro+ $3.99/yr or $7.99 once."
+  description: "Scan a receipt on iPhone. Item-by-item splits, shared dishes, fair tip math, send via iMessage or WhatsApp. No account. Free; Pro+ {P_YEARLY}/yr or {P_LIFETIME} once."
   keywords:
     - bill splitter app
     - receipt scanner splitter
@@ -41,7 +41,7 @@ hero:
   headline: "Bill splitter for iPhone."
   secondary: "Scan it. Split it. Done."
   subheadline: "You ordered the $14 salad. You paid for someone's $48 steak. RightSplit scans the receipt, reads every line item, and calculates exactly what each person owes — including shared bottles and tip — in under sixty seconds. iMessage or WhatsApp the totals. No account, no sign-up."
-  pre_headline: "Free forever for equal splits, tip calc and your first receipt scan. Pro+ unlocks unlimited scans and item-by-item fairness — $3.99/year, or $7.99 once and you own it. No subscription trap. No card on file just to try it."
+  pre_headline: "Free forever for equal splits, tip calc and your first receipt scan. Pro+ unlocks unlimited scans and item-by-item fairness — {P_YEARLY}/year, or {P_LIFETIME} once and you own it. No subscription trap. No card on file just to try it."
   cta_label: "Download Free"
   alt: "RightSplit on iPhone — the Scan Receipt screen, ready to photograph a restaurant bill"
 
@@ -111,7 +111,7 @@ plans:
       - "Cancel anytime — no penalty"
   - name: "Pro+ · lifetime"
     highlight: true
-    price: "$7.99 once"
+    price: "{P_LIFETIME} once"
     summary: "Most chosen. Pay once, own it forever — pays for itself in two years vs the yearly tier."
     features:
       - "Everything in Pro+ yearly"
@@ -184,7 +184,7 @@ comparison_table:
   rows:
     - feature: "Pricing"
       values:
-        - "Free + $3.99/yr or $7.99 lifetime"
+        - "Free + {P_YEARLY}/yr or {P_LIFETIME} lifetime"
         - "Free + Pro subscription"
         - "Free"
         - "Free + Pro subscription"
@@ -254,7 +254,7 @@ privacy:
 
 faq:
   - q: "What is RightSplit?"
-    a: "RightSplit is a bill splitting app for iPhone that scans receipts, detects items automatically, and calculates what each person owes — including shared dishes, tip, and rounding. Share payment requests instantly via iMessage or WhatsApp. Free for equal splits and your first receipt scan; Pro+ unlocks unlimited scans, item-based splitting and Spaces at $3.99/year or $7.99 lifetime."
+    a: "RightSplit is a bill splitting app for iPhone that scans receipts, detects items automatically, and calculates what each person owes — including shared dishes, tip, and rounding. Share payment requests instantly via iMessage or WhatsApp. Free for equal splits and your first receipt scan; Pro+ unlocks unlimited scans, item-based splitting and Spaces at {P_YEARLY}/year or {P_LIFETIME} lifetime."
   - q: "How does the receipt scanner work?"
     a: "Take a photo of your receipt and RightSplit reads the items and prices automatically using Apple's on-device Vision framework (the same OCR Apple uses for Live Text). No manual typing required — it detects line items, totals, and tax. The receipt image never leaves your phone. Your first scan is free; unlimited scanning is part of Pro+."
   - q: "Which OCR engine does RightSplit use?"
@@ -266,7 +266,7 @@ faq:
   - q: "How do I send people their share?"
     a: "After splitting, tap a name to send that person their amount via iMessage or WhatsApp — 'Hey Mike! Your share of the bill at Luigi's is $23.40.' — or copy the full breakdown to paste into any app. Nothing to install on the other person's phone. Sending is included in your free first scan; after that it's part of Pro+."
   - q: "Is RightSplit free?"
-    a: "Yes. Equal splits, the tip calculator, fair rounding, your last five splits and your first receipt scan are free forever. Pro+ unlocks unlimited scans, item-based splitting (the headline feature), uneven splits, per-person tip breakdown, sending totals by iMessage or WhatsApp, unlimited history, Spaces for trips and shared homes, home-currency conversion and the payment tracker — $3.99 per year, or $7.99 once and you own it. There's no card on file to start, and no auto-renew on the lifetime tier. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes. Equal splits, the tip calculator, fair rounding, your last five splits and your first receipt scan are free forever. Pro+ unlocks unlimited scans, item-based splitting (the headline feature), uneven splits, per-person tip breakdown, sending totals by iMessage or WhatsApp, unlimited history, Spaces for trips and shared homes, home-currency conversion and the payment tracker — {P_YEARLY} per year, or {P_LIFETIME} once and you own it. There's no card on file to start, and no auto-renew on the lifetime tier. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does RightSplit need an account?"
     a: "No. RightSplit works immediately with no sign-up, no account, and no personal information required. Only one person at the table needs the app — you scan, split, and send everyone their total."
   - q: "Does RightSplit store my receipts online?"
@@ -304,4 +304,4 @@ ratings:
   last_synced: "2026-04-15"
 last_updated: 2026-10-26
 ---
-RightSplit is a bill splitting app for iPhone that scans receipts, detects items automatically, and calculates what each person owes. Supports item-level assignment so each person pays for what they ordered, with shared dish splitting for bottles, appetizers, and group items. Smart tip calculation distributes tips proportionally with fair rounding. Share payment requests instantly via iMessage, WhatsApp, or copy-paste. Receipt OCR runs on-device with Apple's Vision framework — receipts never leave your phone. Free with equal splitting, the tip calculator, your last five splits and your first receipt scan. Pro+ unlocks unlimited scans, item-based splitting, uneven splits, per-person tip breakdown, unlimited split history, and Spaces that keep a trip's or shared home's balances and settle-up plan on your phone — $3.99/year or $7.99 lifetime. No ads, no tracking, no account required.
+RightSplit is a bill splitting app for iPhone that scans receipts, detects items automatically, and calculates what each person owes. Supports item-level assignment so each person pays for what they ordered, with shared dish splitting for bottles, appetizers, and group items. Smart tip calculation distributes tips proportionally with fair rounding. Share payment requests instantly via iMessage, WhatsApp, or copy-paste. Receipt OCR runs on-device with Apple's Vision framework — receipts never leave your phone. Free with equal splitting, the tip calculator, your last five splits and your first receipt scan. Pro+ unlocks unlimited scans, item-based splitting, uneven splits, per-person tip breakdown, unlimited split history, and Spaces that keep a trip's or shared home's balances and settle-up plan on your phone — {P_YEARLY}/year or {P_LIFETIME} lifetime. No ads, no tracking, no account required.

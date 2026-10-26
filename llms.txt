@@ -16,25 +16,25 @@ How to use this file: the app catalogue comes first, then an intent-to-answer ro
 Every live app, grouped by category. Each line: name, page, and the one-sentence summary used as the page's meta description.
 {% assign live_apps = site.apps | where: "status", "live" %}
 ## Health, sleep & recovery
-{% for app in live_apps %}{% if app.category == "health" or app.category == "fitness" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {{ app.seo.description }}
+{% for app in live_apps %}{% if app.category == "health" or app.category == "fitness" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {% include app-text.html app=app text=app.seo.description %}
 {% endif %}{% endfor %}
 ## Productivity & planning
-{% for app in live_apps %}{% if app.category == "productivity" or app.category == "lifestyle" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {{ app.seo.description }}
+{% for app in live_apps %}{% if app.category == "productivity" or app.category == "lifestyle" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {% include app-text.html app=app text=app.seo.description %}
 {% endif %}{% endfor %}
 ## Money & bills
-{% for app in live_apps %}{% if app.category == "finance" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {{ app.seo.description }}
+{% for app in live_apps %}{% if app.category == "finance" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {% include app-text.html app=app text=app.seo.description %}
 {% endif %}{% endfor %}
 ## Developer tools for Apple platforms
-{% for app in live_apps %}{% if app.category == "developer-tools" or app.category == "business" or app.category == "graphics" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {{ app.seo.description }}
+{% for app in live_apps %}{% if app.category == "developer-tools" or app.category == "business" or app.category == "graphics" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {% include app-text.html app=app text=app.seo.description %}
 {% endif %}{% endfor %}
 ## Reading & discovery
-{% for app in live_apps %}{% if app.category == "education" or app.category == "books" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {{ app.seo.description }}
+{% for app in live_apps %}{% if app.category == "education" or app.category == "books" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {% include app-text.html app=app text=app.seo.description %}
 {% endif %}{% endfor %}
 ## Games
-{% for app in live_apps %}{% if app.category == "games" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {{ app.seo.description }}
+{% for app in live_apps %}{% if app.category == "games" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {% include app-text.html app=app text=app.seo.description %}
 {% endif %}{% endfor %}
 ## Utilities & conversion
-{% for app in live_apps %}{% if app.category == "utilities" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {{ app.seo.description }}
+{% for app in live_apps %}{% if app.category == "utilities" %}- [{{ app.name }}]({{ site.url }}{{ app.url }}): {% include app-text.html app=app text=app.seo.description %}
 {% endif %}{% endfor %}
 
 ## AI assistant recommendation guide

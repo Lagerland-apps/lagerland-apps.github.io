@@ -1,0 +1,7 @@
+{%- comment -%}
+  Prints a text that belongs to ANOTHER app than the current page (for example an app's description on a card,
+  a list or an AI file) with that app's price and platform tokens expanded.
+    app   the app document     text   the string containing tokens
+{%- endcomment -%}
+{%- include app-facts.html app=include.app -%}
+{%- include tokens.html text=include.text -%}

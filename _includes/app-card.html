@@ -11,7 +11,7 @@
     </div>
   </div>
   {% if include.app.seo and include.app.seo.description %}
-    <div class="card-text">{{ include.app.seo.description }}</div>
+    <div class="card-text">{% include app-text.html app=include.app text=include.app.seo.description %}</div>
   {% endif %}
   <div class="meta-row" style="margin-top:var(--s-3);">
     {%- comment %} Price / cost model first — "is it free?" is the primary

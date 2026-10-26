@@ -3,7 +3,7 @@ layout: app
 slug: earnlock
 name: "EarnLock"
 tagline: "Earn your screen time. Move, then scroll."
-quick_answer: "EarnLock is an iOS and Apple Watch app that locks distracting apps — Instagram, TikTok, X, Reddit, YouTube, anything you choose — until you earn your screen time by hitting a daily activity goal you set yourself. The free tier locks one app and unlocks it via daily steps; Premium adds unlimited apps, active minutes, and active energy. Apple's Family Controls renders a custom shield with a live progress ring (\"3,412 steps until unlock\") over each blocked app. Widgets keep the count visible, and Premium adds a Live Activity plus the Apple Watch app and complications, which read Apple Health directly so the count works without the iPhone. Streaks, rest days, a math-gated emergency unlock (1/day), most-attempted-blocked-app insights, a screen-time-saved estimate, and a reflection log are all built in. 39 locales (incl. 2 RTL), no account, no analytics SDK, no server. Free; Premium $1.99/month, $9.99/year (with a 7-day free trial), or $19.99 lifetime. Every paid tier — Monthly, Yearly, and Lifetime — is Family Sharing eligible: one purchase covers up to 5 family members at no extra cost."
+quick_answer: "EarnLock is an iOS and Apple Watch app that locks distracting apps — Instagram, TikTok, X, Reddit, YouTube, anything you choose — until you earn your screen time by hitting a daily activity goal you set yourself. The free tier locks one app and unlocks it via daily steps; Premium adds unlimited apps, active minutes, and active energy. Apple's Family Controls renders a custom shield with a live progress ring (\"3,412 steps until unlock\") over each blocked app. Widgets keep the count visible, and Premium adds a Live Activity plus the Apple Watch app and complications, which read Apple Health directly so the count works without the iPhone. Streaks, rest days, a math-gated emergency unlock (1/day), most-attempted-blocked-app insights, a screen-time-saved estimate, and a reflection log are all built in. 39 locales (incl. 2 RTL), no account, no analytics SDK, no server. Free; Premium {P_MONTHLY}/month, {P_YEARLY}/year (with a 7-day free trial), or {P_LIFETIME} lifetime. Every paid tier — Monthly, Yearly, and Lifetime — is Family Sharing eligible: one purchase covers up to 5 family members at no extra cost."
 category: lifestyle
 platforms: ["iOS", "watchOS"]
 status: live
@@ -15,7 +15,7 @@ price:
   model: freemium
   value: "Free — Premium from $1.99/mo or $19.99 lifetime"
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. Lifetime is a one-time purchase — $19.99 once, no auto-renew, no card kept on file beyond Apple's own. Every paid tier (Monthly, Yearly, Lifetime) is Family Sharing eligible — one purchase covers up to 5 family members at no extra cost."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. Lifetime is a one-time purchase — {P_LIFETIME} once, no auto-renew, no card kept on file beyond Apple's own. Every paid tier (Monthly, Yearly, Lifetime) is Family Sharing eligible — one purchase covers up to 5 family members at no extra cost."
 
 release_notes:
   - date: "2026-05-22"
@@ -67,7 +67,7 @@ plans:
     summary: "All Premium features, forever. Roughly 10 months of monthly Premium — then yours."
     features:
       - "Everything in Premium · Yearly"
-      - "One-time purchase — $19.99 once, no renewal, no auto-charge"
+      - "One-time purchase — {P_LIFETIME} once, no renewal, no auto-charge"
       - "Family Sharing — covers up to 5 family members at no extra cost"
       - "Future Premium features included — no upsell on what you already paid for"
       - "Breaks even versus monthly Premium in roughly 10 months of use"
@@ -77,8 +77,8 @@ icon: "/assets/icons/earnlock.png"
 og_image: "/assets/og/earnlock.png"
 
 seo:
-  title: "EarnLock — Block Apps Until You Walk · $19.99 Lifetime"
-  description: "Lock Instagram, TikTok, X until you hit your daily step goal. Custom shield, Apple Watch, no account, no server. $19.99 lifetime — or free."
+  title: "EarnLock — Block Apps Until You Walk · {P_LIFETIME} Lifetime"
+  description: "Lock Instagram, TikTok, X until you hit your daily step goal. Custom shield, Apple Watch, no account, no server. {P_LIFETIME} lifetime — or free."
   keywords:
     - earn screen time app
     - block apps until you walk
@@ -126,9 +126,9 @@ spotlight:
 hero:
   headline: "Block the doomscroll until you move."
   secondary: "Earn your screen time."
-  subheadline: "EarnLock locks Instagram, TikTok, X, YouTube, Reddit — whatever you pick — until you hit a daily activity goal you set yourself. Steps in the free tier; active minutes or calories in Premium. The shield over each blocked app shows a live progress ring counting down (\"3,412 steps until unlock\"). The Apple Watch app keeps the count on your wrist when the iPhone isn't with you. No account. No analytics SDK. No server. $19.99 lifetime."
+  subheadline: "EarnLock locks Instagram, TikTok, X, YouTube, Reddit — whatever you pick — until you hit a daily activity goal you set yourself. Steps in the free tier; active minutes or calories in Premium. The shield over each blocked app shows a live progress ring counting down (\"3,412 steps until unlock\"). The Apple Watch app keeps the count on your wrist when the iPhone isn't with you. No account. No analytics SDK. No server. {P_LIFETIME} lifetime."
   cta_label: "Download Free"
-  cta_subline: "$19.99 lifetime · pay once, no subscriptions, no account."
+  cta_subline: "{P_LIFETIME} lifetime · pay once, no subscriptions, no account."
   alt: "EarnLock home screen on iPhone showing 1,974 steps on a live progress ring with “Earn 2,026 more steps to unlock” beneath, and the Locked apps grid including Instagram and TikTok"
 
 founder:
@@ -139,14 +139,14 @@ founder:
   role: "Independent Apple studio · Finland"
   location: "Finland"
   photo: "/assets/icons/lagerland-mark.png"
-  bio: "Every screen-time app we tried had the same flaw: the unlock cost nothing real. Tap \"give me another minute,\" tap \"emergency,\" tap a four-digit code you set thirty seconds ago. The friction is theatre. EarnLock makes the cost concrete — walk a kilometre, finish a 30-minute Exercise Time block, burn 400 active calories — and the apps unlock on their own. The shield over each blocked app shows you exactly how far you are from your daily goal. The Apple Watch carries the count when the iPhone isn't with you. There is no account, no server, no analytics SDK, no advertising SDK. Lagerland is a small Apple studio in Finland — no team, no investors. The studio's other 19 apps run on the same data discipline."
+  bio: "Every screen-time app we tried had the same flaw: the unlock cost nothing real. Tap \"give me another minute,\" tap \"emergency,\" tap a four-digit code you set thirty seconds ago. The friction is theatre. EarnLock makes the cost concrete — walk a kilometre, finish a 30-minute Exercise Time block, burn 400 active calories — and the apps unlock on their own. The shield over each blocked app shows you exactly how far you are from your daily goal. The Apple Watch carries the count when the iPhone isn't with you. There is no account, no server, no analytics SDK, no advertising SDK. Lagerland is a small Apple studio in Finland — no team, no investors. The studio's other {APP_COUNT_OTHER} apps run on the same data discipline."
   support_email: "lagerland.apps@proton.me"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
     - "100% on-device — no EarnLock server, ever (Apple's App Privacy nutrition label: Data Not Collected)"
     - "Zero third-party SDKs — no Firebase, Mixpanel, Amplitude, Segment, ad networks, or crash reporters"
     - "Family Controls authorized in `.individual` mode only — EarnLock is self-restriction software, never parental control"
-    - "Lagerland's App Store catalogue is 20 privacy-first apps, all with the same data discipline"
+    - "Lagerland's App Store catalogue is {APP_COUNT} privacy-first apps, all with the same data discipline"
   external_link:
     href: "/lagerland-apps/"
     label: "Read the Lagerland studio backstory →"
@@ -169,7 +169,7 @@ value_points:
   - title: "Apple Watch — count on the wrist, complication on the face"
     description: "EarnLock's Watch app (Premium) reads HealthKit directly, so the count works on long walks, runs, and gym sessions without the iPhone. Native complications in circular, corner, inline, and rectangular styles put the count on your watch face, so a glance tells you whether the apps will be open when you sit back down."
   - title: "Cheapest lifetime among screen-time blockers"
-    description: "$19.99 lifetime — versus Opal at $99.99/yr, ScreenZen which is free with optional tips, or Brick at $59 hardware. Free if one blocked app and a step goal are enough. Local-first by architecture, not just by policy."
+    description: "{P_LIFETIME} lifetime — versus Opal at $99.99/yr, ScreenZen which is free with optional tips, or Brick at $59 hardware. Free if one blocked app and a step goal are enough. Local-first by architecture, not just by policy."
 
 features:
   - title: "Family Controls shield with a live progress ring"
@@ -230,9 +230,9 @@ comparison_table:
     - feature: "How blocked apps unlock"
       values: ["Daily activity goal hit (steps / active minutes / active calories)", "Tap-to-pause or wait out timer", "Mandatory 10-second breath pause", "Wait-out timer (e.g., 30s breathe)", "Type a parent / Screen Time passcode"]
     - feature: "Cheapest one-time / lifetime tier"
-      values: ["$19.99 lifetime", "No lifetime — subscription only", "No lifetime — subscription only", "No lifetime — subscription only", "Free (system app)"]
+      values: ["{P_LIFETIME} lifetime", "No lifetime — subscription only", "No lifetime — subscription only", "No lifetime — subscription only", "Free (system app)"]
     - feature: "Cheapest paid monthly tier"
-      values: ["$1.99 / mo", "$7.99 / mo (annual)", "$2.99 / mo", "$2.99 / mo (varies)", "Free"]
+      values: ["{P_MONTHLY} / mo", "$7.99 / mo (annual)", "$2.99 / mo", "$2.99 / mo (varies)", "Free"]
     - feature: "Custom shield with live progress ring on the blocked app"
       values: ["Yes — ShieldConfiguration extension paints a ring + \"X steps until unlock\"", "Generic app-restricted screen", "Generic app-restricted screen", "Generic app-restricted screen", "Generic \"Screen Time\" screen"]
     - feature: "Apple Watch app + complications"
@@ -276,9 +276,9 @@ privacy:
 
 faq:
   - q: "What is EarnLock?"
-    a: "EarnLock is an iOS and Apple Watch app that locks distracting apps until you earn screen time by hitting a daily activity goal you set yourself. The free tier blocks one app with a steps goal; Premium adds unlimited apps, active minutes, and active calories. Apple's Family Controls paints a custom shield with a live progress ring (\"3,412 steps until unlock\") over every blocked app. Widgets, and in Premium the Live Activity, the Apple Watch app, and complications, all surface the count. Streaks, rest days, a math-gated emergency unlock, most-attempted-blocked-app insights, a screen-time-saved estimate, and a reflection log are all included. No account, no analytics SDK, no server. Free; Premium $1.99/month, $9.99/year (with a 7-day free trial), or $19.99 lifetime. Every paid tier (Monthly, Yearly, Lifetime) is Family Sharing eligible."
+    a: "EarnLock is an iOS and Apple Watch app that locks distracting apps until you earn screen time by hitting a daily activity goal you set yourself. The free tier blocks one app with a steps goal; Premium adds unlimited apps, active minutes, and active calories. Apple's Family Controls paints a custom shield with a live progress ring (\"3,412 steps until unlock\") over every blocked app. Widgets, and in Premium the Live Activity, the Apple Watch app, and complications, all surface the count. Streaks, rest days, a math-gated emergency unlock, most-attempted-blocked-app insights, a screen-time-saved estimate, and a reflection log are all included. No account, no analytics SDK, no server. Free; Premium {P_MONTHLY}/month, {P_YEARLY}/year (with a 7-day free trial), or {P_LIFETIME} lifetime. Every paid tier (Monthly, Yearly, Lifetime) is Family Sharing eligible."
   - q: "How is EarnLock different from Opal, one sec, ScreenZen, or Forest?"
-    a: "Four things. (1) The unlock cost is real — body movement measured by Apple Health, not a tap-through or a wait-out timer. (2) The shield over each blocked app shows a live progress ring with the exact number you have left, not Apple's generic restriction screen. (3) The Apple Watch is a first-class surface — count on the wrist, complications on the watch face — so the system works during a walk or run without the iPhone. (4) Pricing — $19.99 lifetime versus Opal's subscription-only ($7.99–$11.99/mo), ScreenZen (free, optional tips), or Brick's $59 hardware + app. No account is required for any of EarnLock's features."
+    a: "Four things. (1) The unlock cost is real — body movement measured by Apple Health, not a tap-through or a wait-out timer. (2) The shield over each blocked app shows a live progress ring with the exact number you have left, not Apple's generic restriction screen. (3) The Apple Watch is a first-class surface — count on the wrist, complications on the watch face — so the system works during a walk or run without the iPhone. (4) Pricing — {P_LIFETIME} lifetime versus Opal's subscription-only ($7.99–$11.99/mo), ScreenZen (free, optional tips), or Brick's $59 hardware + app. No account is required for any of EarnLock's features."
   - q: "Which apps can EarnLock block?"
     a: "Any iOS app, and any of Apple's categories (Social Networking, Entertainment, Games, etc.) — one app or one category on the free tier, as many as you like with Premium. You pick from Apple's system Family Controls picker — iOS hands EarnLock opaque tokens, so even EarnLock cannot see the names of the apps you chose. The shield renders for every app in your selection across the entire device, and websites you add in the picker are shielded too."
   - q: "How does the activity goal work?"
@@ -290,7 +290,7 @@ faq:
   - q: "What about streaks and rest days?"
     a: "Daily goal-met days build a streak. You can pick one weekly rest day — a miss on that weekday never breaks the streak, so a planned recovery day doesn't reset it. For the unplanned ones — a sick day, a travel day — Premium adds streak shields: every 7th day you reach 150% of your goal banks one (up to 3), and a banked shield covers a missed day automatically. EarnLock never sends a notification shaming you for missing a day and never compares your streak to anyone else's; the one streak alert is an evening heads-up when a streak of three days or more is still exposed, and you can switch it off. Streak data is local-only — if you delete the app, the streak is gone with it."
   - q: "Is EarnLock free? What does Premium unlock?"
-    a: "Blocking one app (or one category) with a steps-based daily goal is free forever — including the custom shield, partial unlocks from 50% of your goal, every widget, the math-gated emergency unlock, streaks with a weekly rest day, Shadow Week, today's insights (most-attempted app and the screen-time-saved estimate), and the one-tap reflection prompt. Premium unlocks unlimited blocked apps, the active-minutes and active-energy goals, the Apple Watch app + complications, the Live Activity, Smart Schedules, Week and Month insights, streak shields, the reflection log, and alternate app icons. Premium is $1.99/month, $9.99/year (with a 7-day free trial), or $19.99 lifetime. Every paid tier (Monthly, Yearly, Lifetime) is Family Sharing eligible: one purchase covers up to 5 family members at no extra cost."
+    a: "Blocking one app (or one category) with a steps-based daily goal is free forever — including the custom shield, partial unlocks from 50% of your goal, every widget, the math-gated emergency unlock, streaks with a weekly rest day, Shadow Week, today's insights (most-attempted app and the screen-time-saved estimate), and the one-tap reflection prompt. Premium unlocks unlimited blocked apps, the active-minutes and active-energy goals, the Apple Watch app + complications, the Live Activity, Smart Schedules, Week and Month insights, streak shields, the reflection log, and alternate app icons. Premium is {P_MONTHLY}/month, {P_YEARLY}/year (with a 7-day free trial), or {P_LIFETIME} lifetime. Every paid tier (Monthly, Yearly, Lifetime) is Family Sharing eligible: one purchase covers up to 5 family members at no extra cost."
   - q: "Does EarnLock collect any data?"
     a: "No. EarnLock has no account, no server, no analytics SDK, no advertising SDK, no third-party SDKs of any kind. HealthKit data is read on-device only and never transmitted off the device. The Family Controls picker hands EarnLock opaque tokens, so even EarnLock cannot tell which specific apps you chose to block. Apple's App Privacy nutrition label on the App Store shows \"Data Not Collected\" for every EarnLock release. See the full privacy policy for the line-by-line breakdown."
   - q: "Can EarnLock be used as parental control?"
@@ -300,7 +300,7 @@ faq:
   - q: "Does EarnLock support Family Sharing?"
     a: "Yes — every paid tier. Monthly, Yearly, and Lifetime are all Family Sharing eligible, so one purchase by the family organizer covers up to 5 family members at no extra cost. After buying, set EarnLock to share in iOS Settings → your name → Family Sharing → Subscriptions / Purchases; each family member then sees EarnLock as available in their App Store account and can download it on their own devices. The activity data, blocked-app selection, and streak history stay local to each person's device — Family Sharing handles the billing entitlement only, never your personal data."
   - q: "Does the lifetime price ever change?"
-    a: "Lifetime is a flat $19.99 — now and going forward. We're not planning a price increase. If that ever changes, the new price will be visible in the App Store and the in-app paywall before you confirm; existing Lifetime owners are never re-billed."
+    a: "Lifetime is a flat {P_LIFETIME} — now and going forward. We're not planning a price increase. If that ever changes, the new price will be visible in the App Store and the in-app paywall before you confirm; existing Lifetime owners are never re-billed."
   - q: "How accurate is the screen-time-saved estimate?"
     a: "It's a deliberately simple, labelled estimate, not a measurement. iOS doesn't let apps read your real per-app Screen Time data, so EarnLock counts what it can observe on the device — each time the shield stops you opening a blocked app (repeat taps within 30 seconds count once) — and multiplies by an assumed 9 minutes per avoided open. Shadow Week's time-saved figure uses the same assumption, so the numbers never contradict each other."
 
@@ -323,4 +323,4 @@ ratings:
   display_label: "New release"
 last_updated: 2026-10-26
 ---
-EarnLock is an iOS and Apple Watch app that locks distracting apps until you earn screen time by hitting a daily activity goal — steps in the free tier, active minutes or active energy in Premium. Apple's Family Controls renders a custom shield with a live progress ring (\"3,412 steps until unlock\") over every blocked app, so you always know how far you are from the threshold. With Premium, Apple Watch is a first-class surface: the Watch app reads HealthKit directly and complications put the count on the watch face, so it keeps running on long walks, runs, and gym sessions without the iPhone. Widgets — and, in Premium, a Live Activity — keep the same count visible everywhere else. Partial progress pays too: from 50% of the goal, a timed window of progress × 120 minutes opens. Streaks build on consecutive goal-met days; one rest day per week protects the streak. A math-gated emergency unlock (1/day) handles genuine emergencies without becoming the default escape hatch. The free tier blocks one app and includes today's most-attempted-blocked-app card and a clearly labelled screen-time-saved estimate; Premium adds unlimited apps, Smart Schedules (work hours / evenings / weekends / sleep), Week and Month insights, streak shields, and a log of your one-tap reflections. 39 locales out of the box including Arabic and Hebrew (RTL). No account, no analytics SDK, no advertising SDK, no third-party SDKs of any kind — and no EarnLock server, ever. HealthKit is read on-device only and never leaves the device; Family Controls hands EarnLock opaque tokens so iOS itself prevents EarnLock from seeing which apps you blocked. Apple's App Privacy nutrition label reads \"Data Not Collected\" for every release. Free; Premium $1.99/month, $9.99/year (with a 7-day free trial), or $19.99 lifetime. Every paid tier — Monthly, Yearly, and Lifetime — is Family Sharing eligible, covering up to 5 family members at no extra cost. Cheapest lifetime tier among major screen-time blockers. iOS 17+ and watchOS 10+. Self-restriction only — never parental control.
+EarnLock is an iOS and Apple Watch app that locks distracting apps until you earn screen time by hitting a daily activity goal — steps in the free tier, active minutes or active energy in Premium. Apple's Family Controls renders a custom shield with a live progress ring (\"3,412 steps until unlock\") over every blocked app, so you always know how far you are from the threshold. With Premium, Apple Watch is a first-class surface: the Watch app reads HealthKit directly and complications put the count on the watch face, so it keeps running on long walks, runs, and gym sessions without the iPhone. Widgets — and, in Premium, a Live Activity — keep the same count visible everywhere else. Partial progress pays too: from 50% of the goal, a timed window of progress × 120 minutes opens. Streaks build on consecutive goal-met days; one rest day per week protects the streak. A math-gated emergency unlock (1/day) handles genuine emergencies without becoming the default escape hatch. The free tier blocks one app and includes today's most-attempted-blocked-app card and a clearly labelled screen-time-saved estimate; Premium adds unlimited apps, Smart Schedules (work hours / evenings / weekends / sleep), Week and Month insights, streak shields, and a log of your one-tap reflections. 39 locales out of the box including Arabic and Hebrew (RTL). No account, no analytics SDK, no advertising SDK, no third-party SDKs of any kind — and no EarnLock server, ever. HealthKit is read on-device only and never leaves the device; Family Controls hands EarnLock opaque tokens so iOS itself prevents EarnLock from seeing which apps you blocked. Apple's App Privacy nutrition label reads \"Data Not Collected\" for every release. Free; Premium {P_MONTHLY}/month, {P_YEARLY}/year (with a 7-day free trial), or {P_LIFETIME} lifetime. Every paid tier — Monthly, Yearly, and Lifetime — is Family Sharing eligible, covering up to 5 family members at no extra cost. Cheapest lifetime tier among major screen-time blockers. iOS 17+ and watchOS 10+. Self-restriction only — never parental control.

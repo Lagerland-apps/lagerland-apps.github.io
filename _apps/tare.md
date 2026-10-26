@@ -13,7 +13,7 @@ tagline: "A wordless balance logic puzzle. Hang the weights, level every beam, d
 # (marketing/app-store/screenshots/iphone-6.9/en-US/, Signboard Sky), 990px.
 status: live
 
-quick_answer: "Tare is a wordless balance logic puzzle for iPhone and iPad. Each level is a painted hanging mobile: you drag weights numbered 1 to 9 onto hooks so that every beam balances at once — weight times distance from the pivot must match on both sides, and a nested beam's whole load acts at the hook it hangs from. From the first chapter some weights hide inside a bubble marked “?”, and any beam carrying an unsolved “?” sways instead of tilting, so the scale can never tell you what the secret weighs. Small picture cards show how the pieces compare, and you deduce the value from those. There are 80 handcrafted levels in four chapters, each one machine-checked to have exactly one answer. The first 20 are free to keep; one $2.99 purchase unlocks the other 60 for good, with Family Sharing. No ads, no timers, no lives, no account, fully offline, and no data collected."
+quick_answer: "Tare is a wordless balance logic puzzle for iPhone and iPad. Each level is a painted hanging mobile: you drag weights numbered 1 to 9 onto hooks so that every beam balances at once — weight times distance from the pivot must match on both sides, and a nested beam's whole load acts at the hook it hangs from. From the first chapter some weights hide inside a bubble marked “?”, and any beam carrying an unsolved “?” sways instead of tilting, so the scale can never tell you what the secret weighs. Small picture cards show how the pieces compare, and you deduce the value from those. There are 80 handcrafted levels in four chapters, each one machine-checked to have exactly one answer. The first 20 are free to keep; one {P_IAP:Tare Full Access} purchase unlocks the other 60 for good, with Family Sharing. No ads, no timers, no lives, no account, fully offline, and no data collected."
 
 category: games
 platforms: ["iOS", "iPadOS"]
@@ -74,7 +74,7 @@ hero:
   secondary: "Some weights won't say what they weigh — and the scale won't tell you."
   subheadline: "Every level is a painted hanging mobile. Drag each weight onto a hook until every beam comes to rest at once — heavy near the middle, light far out, and one nudge ripples all the way up. Then the secrets arrive: weights hidden inside a “?” bubble, and little picture cards that are the only way to work out what they weigh. Twenty levels free, no timer, nothing to read."
   cta_label: "Play Chapter I free"
-  cta_subline: "Free download · 20 levels free · one $2.99 unlock for the other 60 · no ads · no data collected"
+  cta_subline: "Free download · 20 levels free · one {P_IAP:Tare Full Access} unlock for the other 60 · no ads · no data collected"
   alt: "Tare on iPhone — a three-tier hanging mobile on a sky-blue board, with weights numbered 5, 2, 6, 3 and 3 on its hooks"
 
 screenshots:
@@ -183,7 +183,7 @@ faq:
   - q: "Is every level actually solvable?"
     a: "Yes. Every level is built by hand and then checked by a solver before it ships. It must have exactly one balanced arrangement, every hidden weight must be determined by its cards alone, and any decoy piece must fit no balanced arrangement at all. A level that fails any of those checks does not ship."
   - q: "Is Tare free?"
-    a: "The download is free, and Chapter I — twenty full levels — is free forever. It is not a timed trial. One $2.99 purchase unlocks Chapters II, III and IV, the other sixty levels, for good. It is a one-time purchase, not a subscription, and it works for your whole family through Family Sharing. There are no ads and nothing else to buy."
+    a: "The download is free, and Chapter I — twenty full levels — is free forever. It is not a timed trial. One {P_IAP:Tare Full Access} purchase unlocks Chapters II, III and IV, the other sixty levels, for good. It is a one-time purchase, not a subscription, and it works for your whole family through Family Sharing. There are no ads and nothing else to buy."
   - q: "I bought the unlock. Why is Chapter II still closed?"
     a: "Chapters open in order, purchase or not. Chapter II opens once you have solved 16 of Chapter I's 20 levels, and each later chapter opens the same way from the one before it. Within a chapter you can skip ahead up to three levels past the last one you solved."
   - q: "How do I restore my purchase on a new iPhone or iPad?"
@@ -270,7 +270,7 @@ Every level is built by hand and then **proven by machine** before it ships. It 
 - **The Cascade** (Deep Sea): mobiles three beams deep as the norm.
 - **The Exhibition** (Evening Stars): more pieces on the shelf than hooks on the mobile, so you have to prove which ones belong nowhere.
 
-Each chapter holds twenty levels. The first chapter is free forever. One $2.99 purchase opens the other sixty, with Family Sharing and no subscription.
+Each chapter holds twenty levels. The first chapter is free forever. One {P_IAP:Tare Full Access} purchase opens the other sixty, with Family Sharing and no subscription.
 
 ## What it does not do
 

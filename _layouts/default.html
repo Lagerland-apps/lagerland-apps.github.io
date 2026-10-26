@@ -1,3 +1,9 @@
+{%- comment -%}
+  Everything below is rendered first, then price/platform/count tokens in the text are filled from the App Store
+  Connect catalog (see _includes/tokens.html). On an app's own page and its support/privacy pages the app's own
+  tokens are expanded too; every other page only gets the global ones.
+{%- endcomment -%}
+{%- capture default_page_html -%}
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,3 +23,11 @@
     {% include footer.html %}
   </body>
 </html>
+{%- endcapture -%}
+{%- assign default_page_app = site.data.catalog.apps[page.slug] -%}
+{%- if default_page_app -%}
+  {%- include app-facts.html app=page -%}
+  {%- include tokens.html text=default_page_html -%}
+{%- else -%}
+  {%- include tokens.html text=default_page_html global_only=true -%}
+{%- endif %}

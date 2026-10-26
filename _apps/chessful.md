@@ -3,7 +3,7 @@ layout: app
 slug: chessful
 name: "Chessful"
 tagline: "Understand your mistakes. Improve every game."
-quick_answer: "Chessful is a chess training and game analysis app for iPhone, iPad, and Mac. It uses Stockfish to review every move, then explains your mistakes in plain language and builds adaptive training from your actual weaknesses — tactics, defense, openings, endgames. Includes 40 AI opponents. Free with Premium from $4.99/month, $29.99/year, or $39.99 lifetime. Fully offline, no account, no ads, no tracking."
+quick_answer: "Chessful is a chess training and game analysis app for iPhone, iPad, and Mac. It uses Stockfish to review every move, then explains your mistakes in plain language and builds adaptive training from your actual weaknesses — tactics, defense, openings, endgames. Includes 40 AI opponents. Free with Premium from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime. Fully offline, no account, no ads, no tracking."
 category: games
 platforms: ["iOS", "iPadOS", "macOS"]
 status: live
@@ -93,7 +93,7 @@ seo:
 hero:
   pre_headline: "Chess training & analysis app for iPhone, iPad, and Mac"
   headline: "Stop guessing. Start understanding."
-  subheadline: "Chessful analyzes your games with Stockfish, explains your mistakes in plain language, and builds adaptive training around your real weaknesses — tactics, defense, openings, endgames. 40 AI opponents, fully offline. Free with Premium from $4.99/month."
+  subheadline: "Chessful analyzes your games with Stockfish, explains your mistakes in plain language, and builds adaptive training around your real weaknesses — tactics, defense, openings, endgames. 40 AI opponents, fully offline. Free with Premium from {P_MONTHLY}/month."
   cta_label: "Download Free"
   alt: "Chessful — chess game being analyzed with Stockfish on iPhone, with plain-language commentary"
 
@@ -125,7 +125,7 @@ founder:
     - "Stockfish runs on-device — no cloud analysis, no rate-limited daily quota, no account"
     - "Forty distinct AI opponents engineered to feel like forty different players, not one engine at forty noise settings (see the [forty-opponents journal post](/journal/forty-chess-opponents/) for the design note)"
     - "Privacy Manifest declares zero tracking domains and no required-reason APIs beyond local storage"
-    - "20 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
+    - "{APP_COUNT} live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"
@@ -232,7 +232,7 @@ comparison_table:
     - feature: "Live human matchmaking"
       values: ["No (intentional)", "Yes — global", "Yes — global, free", "No", "No"]
     - feature: "Lifetime / one-time pricing"
-      values: ["$39.99 lifetime", "Subscription only ($9.99–$14/mo)", "Free / donation", "$299.99 lifetime (else subscription)", "One-time Pro purchase"]
+      values: ["{P_LIFETIME} lifetime", "Subscription only ($9.99–$14/mo)", "Free / donation", "$299.99 lifetime (else subscription)", "One-time Pro purchase"]
     - feature: "Privacy — no tracking, no third-party SDKs"
       values: ["Zero tracking SDKs, App Privacy: nothing collected", "Standard analytics + ads SDKs", "No ads, minimal analytics", "Standard Chess.com analytics", "Minimal — no ads on Pro"]
     - feature: "Platforms"
@@ -308,7 +308,7 @@ faq:
   - q: "What chess engine does Chessful use?"
     a: "Chessful uses Stockfish — the same world-class open-source engine that powers Chess.com's analysis and Lichess's evaluation. It runs locally on your iPhone, iPad, or Mac at a depth tuned to the device. Chessful then translates Stockfish's centipawn output into plain-language sentences using motif detectors and a small on-device language model."
   - q: "Is Chessful free? What does Premium cost?"
-    a: "Chessful is free to try with the 40 AI opponents, basic game analysis on every game, three training sessions per week, and basic skill tracking — no ads, no account. Premium unlocks unlimited deep game analysis, unlimited adaptive training, the full progress dashboard with 90/180/365-day skill-trend graphs, and alternative-move exploration. Premium is $4.99/month, $29.99/year, or $39.99 once for lifetime access with a 7-day free trial. Lifetime supports Family Sharing — one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Chessful is free to try with the 40 AI opponents, basic game analysis on every game, three training sessions per week, and basic skill tracking — no ads, no account. Premium unlocks unlimited deep game analysis, unlimited adaptive training, the full progress dashboard with 90/180/365-day skill-trend graphs, and alternative-move exploration. Premium is {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once for lifetime access with a 7-day free trial. Lifetime supports Family Sharing — one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does Chessful track my improvement?"
     a: "Yes. Chessful tracks your skills across five areas — tactics, defense, positional play, openings, and endgames — showing how each improves over time. The Free tier shows basic counts; Premium adds 90 / 180 / 365-day trend graphs so you can see whether the last three weeks of training is actually moving the dial on (say) endgame technique."
   - q: "Does Chessful need an account?"
@@ -356,4 +356,4 @@ Every part of Chessful runs on your device. Stockfish, the motif detectors, the 
 
 The forty AI opponents took disproportionate engineering effort and are documented separately in the [forty-opponents journal post](/journal/forty-chess-opponents/) — each opponent has its own opening repertoire, structural preference, and characteristic blind spots, so games feel like playing different players rather than a single engine at forty noise settings. The [adaptive training methodology](/journal/how-chessful-builds-adaptive-training/) is documented in a separate post.
 
-Free tier: 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, three training sessions per week, basic skill tracking. Premium: unlimited deep analysis, unlimited adaptive training, full progress tracking with 90/180/365-day trend graphs, alternative-move exploration. $4.99/month, $29.99/year, or $39.99 once for [lifetime](/apps/chessful/#pricing) with a 7-day free trial. [No tracking, no ads, no account](/apps/chessful/privacy/) — verified by the App Store privacy nutrition label. The same play–analyze–train loop exists for two other chess games: [Shogiful](/apps/shogiful/) for shogi (Japanese chess) and [Xiangqiful](/apps/xiangqiful/) for xiangqi (Chinese chess). Published by Lagerland Apps, an independent Apple developer in Finland.
+Free tier: 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, three training sessions per week, basic skill tracking. Premium: unlimited deep analysis, unlimited adaptive training, full progress tracking with 90/180/365-day trend graphs, alternative-move exploration. {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once for [lifetime](/apps/chessful/#pricing) with a 7-day free trial. [No tracking, no ads, no account](/apps/chessful/privacy/) — verified by the App Store privacy nutrition label. The same play–analyze–train loop exists for two other chess games: [Shogiful](/apps/shogiful/) for shogi (Japanese chess) and [Xiangqiful](/apps/xiangqiful/) for xiangqi (Chinese chess). Published by Lagerland Apps, an independent Apple developer in Finland.

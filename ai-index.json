@@ -388,6 +388,7 @@ permalink: /ai-index.json
   {%- for app in live_apps -%}
     {%- include app-facts.html app=app -%}
     {%- unless first -%},{%- endunless -%}
+    {%- capture ai_obj -%}
     {
       "name": {{ app.name | jsonify }},
       "slug": {{ app.slug | jsonify }},
@@ -460,6 +461,7 @@ permalink: /ai-index.json
         "last_updated": {{ app.release.last_updated | default: "" | jsonify }}
       }
     }
+    {%- endcapture -%}{%- include tokens.html text=ai_obj -%}
     {%- assign first = false -%}
   {%- endfor -%}
   ],

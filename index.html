@@ -42,7 +42,7 @@ last_updated: 2026-10-26
         "position": {{ forloop.index }},
         "url": "{{ site.url }}{{ app.url }}",
         "name": {{ app.name | jsonify }},
-        "description": {{ app.seo.description | default: app.tagline | jsonify }}
+        "description": {% capture list_desc %}{% include app-text.html app=app text=app.seo.description %}{% endcapture %}{{ list_desc | default: app.tagline | jsonify }}
       }{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
     ]

@@ -3,7 +3,7 @@ layout: app
 slug: appmeta-pulse
 name: "AppMeta Pulse"
 tagline: "The monitoring-first App Store Connect dashboard for indie iOS developers."
-quick_answer: "AppMeta Pulse is a monitoring-first App Store Connect dashboard for iPhone. Indie iOS developers use it to check proceeds or sales, MRR, active subscriptions, trial conversions, and downloads across their entire app portfolio in seconds, and to reply to App Store reviews — without opening a browser, and with no controls for builds, pricing, or metadata. It has 12 Home Screen and Lock Screen widgets. Built on Apple's official App Store Connect API with an Admin key you create. The App Store also offers it on Apple silicon Macs and Apple Vision Pro, where it runs as the iPhone app. Free download with a demo on sample data; $0.99/month, $1.99/year, or $2.99 lifetime, with a 7-day free trial. No ads, no tracking, no analytics SDKs."
+quick_answer: "AppMeta Pulse is a monitoring-first App Store Connect dashboard for iPhone. Indie iOS developers use it to check proceeds or sales, MRR, active subscriptions, trial conversions, and downloads across their entire app portfolio in seconds, and to reply to App Store reviews — without opening a browser, and with no controls for builds, pricing, or metadata. It has 12 Home Screen and Lock Screen widgets. Built on Apple's official App Store Connect API with an Admin key you create. The App Store also offers it on Apple silicon Macs and Apple Vision Pro, where it runs as the iPhone app. Free download with a demo on sample data; {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime, with a 7-day free trial. No ads, no tracking, no analytics SDKs."
 category: business
 platforms: ["iOS"]
 status: live
@@ -45,7 +45,7 @@ plans:
       - "Per-app breakdowns and period-over-period trends"
       - "Top territories per app from Sales and Trends data"
       - "12 Home Screen and Lock Screen widgets, and replies to App Store reviews"
-      - "Yearly is about 83% cheaper than monthly billing ($1.99 vs $11.88/yr)"
+      - "Yearly is about 83% cheaper than monthly billing ({P_YEARLY} vs $11.88/yr)"
   - name: "Lifetime"
     price: "{P_LIFETIME} one-time"
     kind: lifetime
@@ -54,7 +54,7 @@ plans:
     features:
       - "Everything in Pro — permanently unlocked"
       - "Costs about a year and a half of the yearly plan"
-      - "$2.99, against AppStats' $49.99 lifetime"
+      - "{P_LIFETIME}, against AppStats' $49.99 lifetime"
       - "Future Pro features included — no upsell on what you already paid for"
       - "No subscription, no auto-renew, no expiring access"
 
@@ -63,7 +63,7 @@ og_image: "/assets/og/appmeta-pulse.png"
 
 seo:
   title: "AppMeta Pulse: App Store Connect Dashboard for iPhone"
-  description: "Monitoring-first App Store Connect dashboard for indie iOS devs. Proceeds, MRR and subscriptions in seconds on iPhone. From $0.99/mo. Zero tracking."
+  description: "Monitoring-first App Store Connect dashboard for indie iOS devs. Proceeds, MRR and subscriptions in seconds on iPhone. From {P_MONTHLY}/mo. Zero tracking."
   keywords:
     - App Store Connect iPhone app
     - App Store Connect dashboard iPhone
@@ -89,7 +89,7 @@ seo:
 hero:
   pre_headline: "For indie iOS developers shipping multiple apps."
   headline: "The fast, calm App Store Connect dashboard."
-  secondary: "Truly zero tracking — not just \"privacy-styled.\" A third of AppStats' monthly price, and $2.99 for lifetime access."
+  secondary: "Truly zero tracking — not just \"privacy-styled.\" A third of AppStats' monthly price, and {P_LIFETIME} for lifetime access."
   subheadline: "Check proceeds, MRR, active subscriptions, trial conversions, and downloads across your entire portfolio in seconds — on your iPhone. Built on Apple's official App Store Connect API. No browser. No build, pricing, or metadata controls. No accidents."
   cta_label: "Download Free"
   alt: "AppMeta Pulse — App Store Connect dashboard on iPhone, showing seven days of proceeds, units, new subscriptions, and monthly subscription revenue across a multi-app portfolio"
@@ -205,7 +205,7 @@ faq:
     a: "No. There are no \"submit build,\" \"edit metadata,\" or \"change pricing\" buttons anywhere in the app, and it has no code for those App Store Connect endpoints, so pushing the wrong build or hiking the wrong price is impossible inside AppMeta Pulse. The one thing you can change is a review reply: you write it, tap send, and can edit or delete it later."
 
   - q: "Is AppMeta Pulse free?"
-    a: "Free to download, and the free download opens a demo on sample data. To see your own numbers you need a subscription or the lifetime unlock: $0.99/month, $1.99/year, or $2.99 once, and the subscription starts with a 7-day free trial. The $2.99 lifetime tier compares with AppStats' $49.99 lifetime."
+    a: "Free to download, and the free download opens a demo on sample data. To see your own numbers you need a subscription or the lifetime unlock: {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once, and the subscription starts with a 7-day free trial. The {P_LIFETIME} lifetime tier compares with AppStats' $49.99 lifetime."
 
   - q: "Does it support multiple apps?"
     a: "Yes. AppMeta Pulse shows performance metrics across every app in your App Store Connect account. Per-app breakdowns let you see how each app contributes to total proceeds, downloads, and subscription health — the use case the official App Store Connect web UI handles poorly on a phone. If you work with more than one App Store Connect team, you can add each account and switch between them."
@@ -239,11 +239,11 @@ founder:
   name: "Lagerland Apps"
   role: "Independent Apple studio · Finland"
   photo: "/assets/icons/lagerland-mark.png"
-  bio: "AppMeta Pulse exists because checking App Store revenue on a phone has been quietly broken for a decade. Apple's official App Store Connect app focuses on management — submitting builds, replying to reviews, editing metadata — not on the 10-second \"how did yesterday do?\" glance that indie publishers actually need. Web-based dashboards run $9.99+/month and route your data through third-party analytics. Other iPhone trackers charge more and collect usage data for advertising. We ship 20 apps through App Store Connect and wanted a calm, private dashboard with no ad SDKs, no middleman servers, and no surprises on the privacy label. So we built one."
+  bio: "AppMeta Pulse exists because checking App Store revenue on a phone has been quietly broken for a decade. Apple's official App Store Connect app focuses on management — submitting builds, replying to reviews, editing metadata — not on the 10-second \"how did yesterday do?\" glance that indie publishers actually need. Web-based dashboards run $9.99+/month and route your data through third-party analytics. Other iPhone trackers charge more and collect usage data for advertising. We ship {APP_COUNT} apps through App Store Connect and wanted a calm, private dashboard with no ad SDKs, no middleman servers, and no surprises on the privacy label. So we built one."
   support_email: "lagerland.apps@proton.me"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
-    - "Lagerland Apps publishes 20 apps through App Store Connect — AppMeta Pulse is the dashboard we use every day on our own portfolio"
+    - "Lagerland Apps publishes {APP_COUNT} apps through App Store Connect — AppMeta Pulse is the dashboard we use every day on our own portfolio"
     - "Zero third-party SDKs, zero advertising trackers, zero collected data — declared on the App Store privacy label"
     - "Architecture: App Store Connect API key in system Keychain, direct HTTPS to Apple — your data never touches Lagerland servers"
     - "Funded by honest paid software — no ads, no investor pressure, no growth-hacking"

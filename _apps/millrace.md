@@ -18,7 +18,7 @@ price:
   value: "Free — optional theme packs & undo tokens"
 price_override: "Free — optional theme packs & undo tokens"
 
-plans_footnote: "The game is free in full — all 64 levels, Freeplay, the daily board, Hint, the Coach, and Game Center. Every purchase below is optional and none is ever required to finish a level. Theme packs are one-time, non-consumable unlocks restorable with your Apple Account. Undo bundles are consumable tokens. There is also an optional $1.99 “Support the Developer” tip, which unlocks nothing. US pricing shown; Apple derives other storefronts and shows your local currency at checkout. Refunds go through the standard App Store flow. There are no subscriptions."
+plans_footnote: "The game is free in full — all 64 levels, Freeplay, the daily board, Hint, the Coach, and Game Center. Every purchase below is optional and none is ever required to finish a level. Theme packs are one-time, non-consumable unlocks restorable with your Apple Account. Undo bundles are consumable tokens. There is also an optional {P_IAP:Millrace Tip Jar} “Support the Developer” tip, which unlocks nothing. US pricing shown; Apple derives other storefronts and shows your local currency at checkout. Refunds go through the standard App Store flow. There are no subscriptions."
 
 pricing_note: "Every price is on the App Store listing. There is no subscription to cancel, and the free game stays free — no trial, no card."
 
@@ -54,9 +54,9 @@ plans:
     price: "from {P_IAP:Millrace Undo 10}"
     summary: "Consumable undo tokens. One arrives free each day while you hold fewer than three."
     features:
-      - "10 undos — $0.99"
-      - "50 undos — $2.99"
-      - "200 undos — $5.99"
+      - "10 undos — {P_IAP:Millrace Undo 10}"
+      - "50 undos — {P_IAP:Millrace Undo 50}"
+      - "200 undos — {P_IAP:Millrace Undo 200}"
       - "Or earn them: daily-streak milestones at 3, 7, 14 and 30 days pay out 2, 5, 10 and 20 undos"
       - "Optional — you never need them to finish a level"
 
@@ -224,7 +224,7 @@ faq:
   - q: "Is there an endless mode?"
     a: "Yes — Freeplay, one tap from the level list. No goal, no move limit: slide, combine matching numbers, and see how far you get. It keeps personal bests, a daily streak, and a daily board that is the same for every player in the world. The campaign is what the app opens on, but Freeplay is not an afterthought."
   - q: "How much does Millrace cost?"
-    a: "Nothing, for the whole game. All 64 levels, Freeplay, the daily board, Hint, the Coach and Game Center are free, with no ads and no subscription. The only purchases are optional: theme packs at $1.99 each or all sixteen paid themes for $5.99, undo bundles from $0.99, and a $1.99 tip that unlocks nothing."
+    a: "Nothing, for the whole game. All 64 levels, Freeplay, the daily board, Hint, the Coach and Game Center are free, with no ads and no subscription. The only purchases are optional: theme packs at {P_IAP:Millrace Designer Pack 1} each or all sixteen paid themes for {P_IAP:Millrace Complete Collection}, undo bundles from {P_IAP:Millrace Undo 10}, and a {P_IAP:Millrace Tip Jar} tip that unlocks nothing."
   - q: "Do I need to buy undo tokens?"
     a: "No. No level requires them and you can restart any level as many times as you like. They are a consumable safety net, mostly for Freeplay, sold in bundles of 10, 50 or 200. One free token arrives each day while you are holding fewer than three, and daily-streak milestones at 3, 7, 14 and 30 days pay out 2, 5, 10 and 20 more."
   - q: "What does the Coach do, and can I turn it off?"
@@ -270,7 +270,7 @@ founder:
     - "All 64 levels are machine-verified before shipping: solvable, shortest solution confirmed, and screened against no-lookahead strategies"
     - "Localised into 34 languages across 40 App Store locales, with no hardcoded player-facing strings"
     - "Funded by honest paid software — optional cosmetic packs, never ads or data"
-    - "20 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
+    - "{APP_COUNT} live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"

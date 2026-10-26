@@ -47,6 +47,16 @@ How the site uses it (Phase 1 of PLAN-master-data-on-site.md):
 - `_includes/tokens.html` expands tokens in a string: `{P_MONTHLY} {P_YEARLY} {P_WEEKLY} {P_LIFETIME} {P_APP}
   {P_IAP_MIN} {P_IAP_MAX} {P_IAP:<exact label>} {TRIAL} {PLATFORMS} {APP_COUNT}`. A plan card or line whose token
   refers to something not on sale is hidden.
+- Where tokens are expanded (Phase 2): `_layouts/default.html` renders the whole page first, then expands tokens once
+  (covers `<head>` tags, JSON-LD, body, FAQ and footer of every page). On an app's own page, and its support and
+  privacy pages, the app's own tokens are expanded; elsewhere only `{APP_COUNT}` and `{APP_COUNT_OTHER}`
+  ("the studio's other N apps" = live apps minus one). Text that belongs to a different app than the current page
+  (cards, lists, `llms.txt`) goes through `_includes/app-text.html`, and `llms-full.txt` / `ai-index.json` expand
+  per app block. So prose in `_apps/*.md`, `_data/app_enrichment.yml` and `lagerland-apps/` may use tokens freely.
+  Never write a bare `{P_...}` in YAML outside a quoted string (YAML would read it as a mapping).
+- What stays typed on purpose: competitor prices, illustrative amounts in examples ("$612 of bills"), derived
+  figures, the hidden WanderWiki weekly plan, and our own price quoted on another app's page (e.g. LiftLog's FAQ
+  about GymLogger X). Cross-app tokens come with Phase 3.
 - Territory = `page.territory` (default from `_data/locales.yml` for the page's `lang`, English = USA / USD).
   A translated page sets `lang` and `territory`; add that language's block to `locales.yml`.
 - App count everywhere = `site.data.catalog.meta.live_app_count`.

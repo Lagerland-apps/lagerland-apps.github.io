@@ -18,7 +18,7 @@ Last rebuilt: {{ site.time | date: "%Y-%m-%d" }}
 
 ---
 {% assign live_apps = site.apps | where: "status", "live" %}
-{% for app in live_apps %}{% include app-facts.html app=app %}
+{% for app in live_apps %}{% include app-facts.html app=app %}{% capture app_block %}
 ## {{ app.name }}
 
 URL: {{ site.url }}{{ app.url }}
@@ -82,7 +82,7 @@ A: {{ q.a }}
 Keywords: {{ app.seo.keywords | join: ", " }}
 
 ---
-{% endfor %}
+{% endcapture %}{% include tokens.html text=app_block %}{% endfor %}
 
 # Audience pages
 

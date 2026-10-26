@@ -2,7 +2,7 @@
 layout: app
 slug: gymlogger-x
 name: "GymLogger X"
-quick_answer: "GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — built as a private alternative to Strong, Hevy, and Fitbod. You start a session on the iPhone, then log each set's reps and weight from the wrist, with rest timers and live heart rate. The Smart Program Creator builds periodized programs (PPL, Upper/Lower, Full Body and more) with scheduled deload weeks, the app tracks estimated 1RM, and Pro flags a plateau when a lift's estimated 1RM stops climbing across your four most recent sessions while volume holds. Free at the core. $1.99/month, $17.99/year, or $39.99 lifetime — the cheapest one-time tier among major lifting apps. No ads, no tracking, no account."
+quick_answer: "GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — built as a private alternative to Strong, Hevy, and Fitbod. You start a session on the iPhone, then log each set's reps and weight from the wrist, with rest timers and live heart rate. The Smart Program Creator builds periodized programs (PPL, Upper/Lower, Full Body and more) with scheduled deload weeks, the app tracks estimated 1RM, and Pro flags a plateau when a lift's estimated 1RM stops climbing across your four most recent sessions while volume holds. Free at the core. {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime — the cheapest one-time tier among major lifting apps. No ads, no tracking, no account."
 category: fitness
 platforms: ["iOS", "watchOS"]
 status: live
@@ -61,7 +61,7 @@ plans:
       - "No subscription, no auto-renew, no expiring access"
       - "Family Sharing — share with up to 5 family members at no extra cost"
       - "Break-even vs the annual tier in ~2.2 years of use"
-      - "Cheapest lifetime tier among major lifting apps ($39.99 vs Hevy $74.99 vs Strong $99.99)"
+      - "Cheapest lifetime tier among major lifting apps ({P_LIFETIME} vs Hevy $74.99 vs Strong $99.99)"
       - "Future Pro features included — no upsell on what you already paid for"
     highlight_label: "Best value · ~1 in 3 pick this"
 
@@ -70,7 +70,7 @@ og_image: "/assets/og/gymlogger-x.png"
 
 seo:
   title: "GymLogger X — Strong & Hevy Alternative for Apple Watch"
-  description: "A private alternative to Strong, Hevy & Fitbod. Apple Watch set logging, smart programs & plateau detection. $39.99 lifetime — no account."
+  description: "A private alternative to Strong, Hevy & Fitbod. Apple Watch set logging, smart programs & plateau detection. {P_LIFETIME} lifetime — no account."
   keywords:
     - Strong app alternative
     - Hevy alternative
@@ -93,7 +93,7 @@ seo:
 hero:
   headline: "Strength training log for iPhone & Apple Watch."
   secondary: "Train smarter. Lift stronger."
-  subheadline: "Your training history shouldn't be a subscription. GymLogger X is a private workout tracker with Apple Watch set logging, smart periodized programs, estimated-1RM tracking, and a $39.99 lifetime price. No ads, no account, no AI talking through your sets."
+  subheadline: "Your training history shouldn't be a subscription. GymLogger X is a private workout tracker with Apple Watch set logging, smart periodized programs, estimated-1RM tracking, and a {P_LIFETIME} lifetime price. No ads, no account, no AI talking through your sets."
   cta_label: "Download Free"
   alt: "GymLogger X Push Day workout on iPhone — barbell bench press set 1 logged at 12 reps × 80 kg beside last session's sets, with the rest timer running"
 
@@ -112,7 +112,7 @@ founder:
   response_time: "Support emails are answered personally, usually within a day."
   signals:
     - "Architecture is GDPR-first: on-device storage, sync through your own iCloud, zero analytics SDKs"
-    - "Lagerland's App Store catalogue is 20 privacy-first apps, all with the same data discipline"
+    - "Lagerland's App Store catalogue is {APP_COUNT} privacy-first apps, all with the same data discipline"
     - "Funded by honest paid software — no ads, no investor pressure, no growth-hacking"
   external_link:
     href: "/lagerland-apps/"
@@ -169,7 +169,7 @@ comparison_table:
   competitors: ["GymLogger X", "Strong", "Hevy", "Fitbod"]
   rows:
     - feature: "Cheapest one-time / lifetime tier"
-      values: ["$39.99 lifetime", "$99.99 lifetime (Strong PRO Forever)", "$74.99 lifetime", "Subscription only — no lifetime"]
+      values: ["{P_LIFETIME} lifetime", "$99.99 lifetime (Strong PRO Forever)", "$74.99 lifetime", "Subscription only — no lifetime"]
     - feature: "Use the app with no account or sign-up"
       values: ["Yes — no email, no Apple ID", "Account required (Apple / Google / email)", "Account required", "Account required"]
     - feature: "Apple Watch — log a full session without the iPhone"
@@ -190,7 +190,7 @@ value_points:
   - title: "Plateau detection that's actually transparent"
     description: "Pro flags a plateau when e1RM stops clearing a threshold set by your own 90-day rate of gain while volume holds steady. No black-box AI — the rule is published in plain English so you can argue with it."
   - title: "Cheapest lifetime tier. Your data, your devices."
-    description: "$39.99 lifetime — cheaper than Hevy's $74.99 or Strong's $99.99 lifetime, and Fitbod doesn't offer one. Workouts stay on your devices and sync through your own iCloud, and every finished session can be saved to Apple Health."
+    description: "{P_LIFETIME} lifetime — cheaper than Hevy's $74.99 or Strong's $99.99 lifetime, and Fitbod doesn't offer one. Workouts stay on your devices and sync through your own iCloud, and every finished session can be saved to Apple Health."
 
 features:
   - title: "Smart Program Creator"
@@ -239,9 +239,9 @@ coach_cta:
 
 faq:
   - q: "What is GymLogger X?"
-    a: "GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — a private alternative to Strong, Hevy, and Fitbod. It includes 1,500 exercises (animated demos with Pro), the Smart Program Creator, a 44-program library, estimated-1RM tracking, plateau detection, and Apple Watch set logging. Free at the core; Pro from $1.99/month, $17.99/year, or $39.99 lifetime."
+    a: "GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — a private alternative to Strong, Hevy, and Fitbod. It includes 1,500 exercises (animated demos with Pro), the Smart Program Creator, a 44-program library, estimated-1RM tracking, plateau detection, and Apple Watch set logging. Free at the core; Pro from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime."
   - q: "How is GymLogger X different from Strong, Hevy, and Fitbod?"
-    a: "Four practical differences. First, no account is required — Strong, Hevy, and Fitbod all need one. Second, the session is built for logging from Apple Watch: set entry, rest timers, and live heart rate on the wrist while the iPhone runs the session in your bag. Third, the lifetime tier is $39.99 — cheaper than Hevy's $74.99 or Strong's $99.99 lifetime, and Fitbod doesn't offer one. Fourth, the plateau detection rule is published in plain English (e1RM failing to clear a threshold set by your own 90-day rate of gain, while volume holds steady) rather than hidden inside opaque AI."
+    a: "Four practical differences. First, no account is required — Strong, Hevy, and Fitbod all need one. Second, the session is built for logging from Apple Watch: set entry, rest timers, and live heart rate on the wrist while the iPhone runs the session in your bag. Third, the lifetime tier is {P_LIFETIME} — cheaper than Hevy's $74.99 or Strong's $99.99 lifetime, and Fitbod doesn't offer one. Fourth, the plateau detection rule is published in plain English (e1RM failing to clear a threshold set by your own 90-day rate of gain, while volume holds steady) rather than hidden inside opaque AI."
   - q: "What is the Smart Program Creator?"
     a: "It generates personalised periodised training based on your goals, equipment, schedule, experience level, and injury history. Supports Full Body, Upper/Lower, PPL, Push/Pull, Arnold, and Bro Split with linear, DUP, block, or wave periodisation, a rep range and reps-in-reserve target for each exercise, and scheduled deload weeks. You can preview the whole program and swap exercises before you start. During a session each exercise pre-fills the weight you used last time; the app does not raise your weights for you. Free accounts keep one program; Pro removes the limit."
   - q: "Does GymLogger X support RPE and RIR?"
@@ -253,7 +253,7 @@ faq:
   - q: "How does the plateau detection algorithm work?"
     a: "Plateau detection flags an exercise when its estimated 1RM (Epley) stops clearing an improvement threshold derived from your own 90-day rate of gain on that lift (kept between 0.05% and 1% per session), across your four most recent non-deload sessions, while total volume has not dropped more than 3%. Confirming needs a fatigue signal or at least six sessions on the lift behind it, and a confidence score of at least 0.4. We update the published rule when the thresholds change. The flag does not auto-restructure your program — it surfaces on the exercise with the likely cause (volume, intensity, variation, or recovery) and two suggestions, and leaves the programming call to you."
   - q: "Is GymLogger X free? What does Pro unlock?"
-    a: "Core logging is free forever — unlimited set logging on iPhone and Apple Watch, the exercise library, one program at a time, three templates, the last 30 days of history, and Apple Health export. Pro unlocks unlimited programs and templates, the full 44-program library, your full history, plateau detection, muscle balance and training load analytics, animated demos, custom exercises, and CSV import. Pro is $1.99/month, $17.99/year, or $39.99 lifetime — pick the lifetime option if you plan to use the app for more than ~2 years. Lifetime supports Family Sharing — one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Core logging is free forever — unlimited set logging on iPhone and Apple Watch, the exercise library, one program at a time, three templates, the last 30 days of history, and Apple Health export. Pro unlocks unlimited programs and templates, the full 44-program library, your full history, plateau detection, muscle balance and training load analytics, animated demos, custom exercises, and CSV import. Pro is {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime — pick the lifetime option if you plan to use the app for more than ~2 years. Lifetime supports Family Sharing — one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does GymLogger X need an account or internet connection?"
     a: "No. Logging works fully offline with no account — no email, no Apple ID sign-in, no sign-up flow. Workouts are stored on your device and synced through your own private iCloud, and finished sessions can be saved to Apple Health. Lagerland's server never receives your workouts: the app sends it only a random install ID (with a referral code, if you used one) and, when you buy Pro, the purchase details needed to verify it."
   - q: "Can I export my data if I leave?"
@@ -279,4 +279,4 @@ ratings:
   last_synced: "2026-06-22"
 last_updated: 2026-10-26
 ---
-GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — built as a private alternative to Strong, Hevy, and Fitbod with the cheapest lifetime tier ($39.99) and no account required. The Smart Program Creator builds personalised periodised training (Full Body, Upper/Lower, PPL, Push/Pull, Arnold, Bro Split) with linear, DUP, block, or wave periodisation, reps-in-reserve targets, and scheduled deload weeks, and a 44-program library adds ready-made plans. Pro insights surface plateau detection (e1RM failing to clear a threshold derived from your own recent rate of gain, while volume holds steady), muscle balance analysis (push:pull, upper:lower, front:back), training load monitoring, and fatigue tracking. On Apple Watch you log each set's reps and weight, run rest timers, and see live heart rate while the iPhone runs the session. Tracks personal records, 1RM estimates (Epley), volume trends, and training consistency. No ads, no accounts, no tracking, no AI nagging. Free at the core; Pro from $1.99/month, $17.99/year, or $39.99 lifetime.
+GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch — built as a private alternative to Strong, Hevy, and Fitbod with the cheapest lifetime tier ({P_LIFETIME}) and no account required. The Smart Program Creator builds personalised periodised training (Full Body, Upper/Lower, PPL, Push/Pull, Arnold, Bro Split) with linear, DUP, block, or wave periodisation, reps-in-reserve targets, and scheduled deload weeks, and a 44-program library adds ready-made plans. Pro insights surface plateau detection (e1RM failing to clear a threshold derived from your own recent rate of gain, while volume holds steady), muscle balance analysis (push:pull, upper:lower, front:back), training load monitoring, and fatigue tracking. On Apple Watch you log each set's reps and weight, run rest timers, and see live heart rate while the iPhone runs the session. Tracks personal records, 1RM estimates (Epley), volume trends, and training consistency. No ads, no accounts, no tracking, no AI nagging. Free at the core; Pro from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime.

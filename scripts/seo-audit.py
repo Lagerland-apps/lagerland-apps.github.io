@@ -305,9 +305,12 @@ def main():
                 if re.search(r'class="plan-price">\s*(?:/|<)', t):
                     err("plan card rendered without a price", rel)
                 if fn.endswith(".html") and "/_" not in rel:
-                    for n in set(count_re.findall(re.sub(r"<[^>]+>", " ", t))):
-                        if int(n) != live_n and int(n) >= 15:
-                            warn("hard-typed app count differs from the catalog count", rel, f"{n} vs {live_n}")
+                    plain = re.sub(r"<[^>]+>", " ", t)
+                    for cm in count_re.finditer(plain):
+                        n = int(cm.group(1))
+                        if n == live_n or n < 15: continue
+                        if n == live_n - 1 and plain[max(0, cm.start() - 6):cm.start()].lower() == "other ": continue  # "the studio's other N apps"
+                        warn("hard-typed app count differs from the catalog count", rel, f"{n} vs {live_n}")
 
     # Report
     n_err = sum(len(v) for (lvl, _), v in findings.items() if lvl == "ERROR")

@@ -3,7 +3,7 @@ layout: app
 slug: shogiful
 name: "Shogiful"
 tagline: "Master shogi. Move by move."
-quick_answer: "Shogiful is a shogi (Japanese chess) training and game analysis app for iPhone, iPad, and Mac. It uses YaneuraOu — the strongest open-source shogi engine — to review every move you play, explains your mistakes in plain language, and builds adaptive training from your real weaknesses, including the parts of shogi chess apps can't teach: drops, promotions, castle defense, and tsume. Western piece sets make the board readable without knowing any kanji. Includes 10 AI opponents and a tsume-shogi puzzle library. Free with Premium from $1.99/month, $9.99/year, or $19.99 lifetime. Fully offline, no account, no ads, no tracking."
+quick_answer: "Shogiful is a shogi (Japanese chess) training and game analysis app for iPhone, iPad, and Mac. It uses YaneuraOu — the strongest open-source shogi engine — to review every move you play, explains your mistakes in plain language, and builds adaptive training from your real weaknesses, including the parts of shogi chess apps can't teach: drops, promotions, castle defense, and tsume. Western piece sets make the board readable without knowing any kanji. Includes 10 AI opponents and a tsume-shogi puzzle library. Free with Premium from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime. Fully offline, no account, no ads, no tracking."
 category: games
 platforms: ["iOS", "iPadOS", "macOS"]
 status: live
@@ -93,7 +93,7 @@ seo:
 hero:
   pre_headline: "Shogi training & analysis app for iPhone, iPad, and Mac"
   headline: "The shogi teacher that speaks your language."
-  subheadline: "Shogiful analyzes your games with YaneuraOu, explains your mistakes in plain English, and builds training around your real weaknesses — drops, promotions, castle defense, endgame attacks. Western piece sets mean you never need to read kanji to play. 10 AI opponents, tsume puzzles, fully offline. Free with Premium from $1.99/month."
+  subheadline: "Shogiful analyzes your games with YaneuraOu, explains your mistakes in plain English, and builds training around your real weaknesses — drops, promotions, castle defense, endgame attacks. Western piece sets mean you never need to read kanji to play. 10 AI opponents, tsume puzzles, fully offline. Free with Premium from {P_MONTHLY}/month."
   cta_label: "Download Free"
   alt: "Shogiful — a shogi game in progress on a 3D wooden board on iPhone, mid-game against the AI opponent Kiri"
 
@@ -123,7 +123,7 @@ founder:
     - "YaneuraOu NNUE runs on-device — no cloud analysis, no quota, no account"
     - "Mistake detection built for shogi, not adapted from chess: drop mistakes, promotion decisions, castle weaknesses, and missed tsume are first-class categories"
     - "English and Japanese localization from day one, with JSA-standard shogi terminology"
-    - "20 live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
+    - "{APP_COUNT} live apps in the Lagerland catalogue, all under the same data discipline: no tracking, no ads, no required accounts"
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"
@@ -227,7 +227,7 @@ comparison_table:
     - feature: "Live human matchmaking"
       values: ["No (intentional)", "Yes — millions of players", "Yes — free", "Yes — international dojo", "Yes — quick matches"]
     - feature: "Lifetime / one-time pricing"
-      values: ["$19.99 lifetime", "Subscription for unlimited play", "Free / donation", "Free (membership options)", "Free with ads/IAP"]
+      values: ["{P_LIFETIME} lifetime", "Subscription for unlimited play", "Free / donation", "Free (membership options)", "Free with ads/IAP"]
     - feature: "Privacy — no tracking, no third-party SDKs"
       values: ["Zero tracking SDKs, nothing collected", "Standard mobile analytics", "Open source, minimal", "Standard web analytics", "Standard mobile analytics"]
     - feature: "Platforms"
@@ -311,7 +311,7 @@ faq:
   - q: "Does Shogiful work offline?"
     a: "Yes — completely. The engine, the analysis, the coaching explanations, the training system, and all 10 AI opponents run on your device. No internet connection is ever needed, and there's no account to sign into."
   - q: "Is Shogiful free? What does Premium cost?"
-    a: "Shogiful is free to download and play: all 10 AI opponents with unlimited games, 2 full game analyses per day, and 3 training puzzles per day — no ads, no account. Premium unlocks unlimited analysis, unlimited training, deep multi-line analysis, and the full progress view. Premium is $1.99/month, $9.99/year, or $19.99 once for lifetime access. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Shogiful is free to download and play: all 10 AI opponents with unlimited games, 2 full game analyses per day, and 3 training puzzles per day — no ads, no account. Premium unlocks unlimited analysis, unlimited training, deep multi-line analysis, and the full progress view. Premium is {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once for lifetime access. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does Shogiful need an account?"
     a: "No. Shogiful requires no account, no sign-up, and no personal information. Your games, analysis, and training progress stay on your device. Purchases restore through your Apple ID — Apple's mechanism, not a Shogiful account."
   - q: "Can I play against other people in Shogiful?"
@@ -351,4 +351,4 @@ From the analysis, Shogiful [builds an adaptive training queue](#how-it-works): 
 
 Everything runs on your device. There is no cloud, no account, no daily quota from a server, no ads. The trade-off is that Shogiful does not offer online play against humans — for that, Shogi Wars, Lishogi, and 81Dojo remain the right tools, and the [side-by-side comparison](#compare-heading-shogiful) is honest about it. Shogiful is the practice room, not the arena. For the full category view — including PiyoShogi and the classic offline apps — see [our honest guide to the best shogi apps for iPhone](/guides/best-shogi-apps-iphone/).
 
-Free tier: all 10 opponents with unlimited games, 2 game analyses per day, 3 training puzzles per day. Premium: unlimited analysis and training, deep multi-line analysis, and the full progress view — $1.99/month, $9.99/year, or $19.99 once for [lifetime](/apps/shogiful/#pricing). [No tracking, no ads, no account](/apps/shogiful/privacy/). Its siblings are built on the same play–analyze–train loop: [Chessful](/apps/chessful/) for Western chess and [Xiangqiful](/apps/xiangqiful/) for xiangqi (Chinese chess). Published by Lagerland Apps, an independent Apple developer in Finland.
+Free tier: all 10 opponents with unlimited games, 2 game analyses per day, 3 training puzzles per day. Premium: unlimited analysis and training, deep multi-line analysis, and the full progress view — {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once for [lifetime](/apps/shogiful/#pricing). [No tracking, no ads, no account](/apps/shogiful/privacy/). Its siblings are built on the same play–analyze–train loop: [Chessful](/apps/chessful/) for Western chess and [Xiangqiful](/apps/xiangqiful/) for xiangqi (Chinese chess). Published by Lagerland Apps, an independent Apple developer in Finland.

@@ -14,7 +14,7 @@ tagline: "Master xiangqi. Move by move."
 # horse, broken advisors, Iron Bolt) when naming mistakes.
 status: live
 
-quick_answer: "Xiangqiful is a xiangqi (Chinese chess) training and game-analysis app for iPhone, iPad and Mac. You play ten AI opponents with distinct styles, from strength 400 to 1900. Afterwards Pikafish — the open-source engine that tops the computer-xiangqi rating lists — reviews every move on your device, grades it, names each mistake in xiangqi's own terms (a screenless cannon, a trapped horse, broken advisors, a missed Iron Bolt mate) and builds your next training session from what you missed. It includes 80 free lessons in 8 tracks, 902 mate problems — most from eight classical manuals — and more than 150 drills, and three piece sets — traditional characters, western symbols or a hybrid of both — so you can play without reading Chinese. Free, with Premium at $1.99/month or $9.99/year (each with a one-week free trial) or $19.99 once. Fully offline, no account, no ads, no data collected."
+quick_answer: "Xiangqiful is a xiangqi (Chinese chess) training and game-analysis app for iPhone, iPad and Mac. You play ten AI opponents with distinct styles, from strength 400 to 1900. Afterwards Pikafish — the open-source engine that tops the computer-xiangqi rating lists — reviews every move on your device, grades it, names each mistake in xiangqi's own terms (a screenless cannon, a trapped horse, broken advisors, a missed Iron Bolt mate) and builds your next training session from what you missed. It includes 80 free lessons in 8 tracks, 902 mate problems — most from eight classical manuals — and more than 150 drills, and three piece sets — traditional characters, western symbols or a hybrid of both — so you can play without reading Chinese. Free, with Premium at {P_MONTHLY}/month or {P_YEARLY}/year (each with a one-week free trial) or {P_LIFETIME} once. Fully offline, no account, no ads, no data collected."
 
 category: games
 platforms: ["iOS", "iPadOS", "macOS"]
@@ -97,7 +97,7 @@ hero:
   pre_headline: "Xiangqi (Chinese chess) training & analysis app for iPhone, iPad and Mac"
   headline: "Chinese chess, taught properly."
   secondary: "Play a game, and the engine reads it back to you — move by move."
-  subheadline: "Ten teahouse opponents with real personalities, from a park grandmother who never leaves her palace to Shīfu, the master at the top of the ladder. After every game, Pikafish reviews your moves on your device, names what went wrong in xiangqi's own terms and turns the moves you missed into tomorrow's training. Can't read the characters yet? Start with western symbols. Free, with Premium from $1.99/month."
+  subheadline: "Ten teahouse opponents with real personalities, from a park grandmother who never leaves her palace to Shīfu, the master at the top of the ladder. After every game, Pikafish reviews your moves on your device, names what went wrong in xiangqi's own terms and turns the moves you missed into tomorrow's training. Can't read the characters yet? Start with western symbols. Free, with Premium from {P_MONTHLY}/month."
   cta_label: "Download Free"
   cta_subline: "Free download · all 10 opponents and 80 lessons free · no ads · no account · works offline"
   alt: "Xiangqiful on iPhone — a game against Shīfu, strength 1,900, on the 3D board with traditional wooden discs, red to move"
@@ -258,7 +258,7 @@ comparison_table:
     - feature: "Live play against people"
       values: ["No (intentional)", "Yes", "Yes — free", "Yes — novice to master", "No"]
     - feature: "Price"
-      values: ["Free; $1.99/mo or $9.99/yr (1-week trial), or $19.99 lifetime", "Free; optional ad-free subscription", "Free, donation-funded", "Free; optional paid membership", "Free, no IAP; ad tracking"]
+      values: ["Free; {P_MONTHLY}/mo or {P_YEARLY}/yr (1-week trial), or {P_LIFETIME} lifetime", "Free; optional ad-free subscription", "Free, donation-funded", "Free; optional paid membership", "Free, no IAP; ad tracking"]
   footnote: "Competitor positioning summarised from each platform's public listing or site on 2026-10-01. Pricing and features change — verify before switching. If you want to play people, those platforms are the right tools; Xiangqiful is the training companion, not the arena."
 
 roadmap:
@@ -318,7 +318,7 @@ faq:
   - q: "Does Xiangqiful work offline?"
     a: "Yes, completely. The engine, the analysis, the lessons, the puzzles and all ten opponents run on your device, so it plays the same in airplane mode. A connection is needed only for things Apple handles: buying or restoring Premium, and Game Center if you use it."
   - q: "Is Xiangqiful free? What does Premium cost?"
-    a: "Xiangqiful is free to download, and the free tier has no time limit: unlimited games against all ten opponents, all 80 lessons, the skill assessment, the first drill set in every drill module, 2 full game analyses a day, 3 training puzzles a day (mate problems included) and 2 in-game coach hints a day. Premium removes the daily limits, opens every drill in every module, and adds deep multi-line analysis and the full progress dashboard. It costs $1.99 a month or $9.99 a year — each with a one-week free trial for new subscribers — or $19.99 once for lifetime access. Prices are in USD; the App Store shows your local price. There are no ads in either tier."
+    a: "Xiangqiful is free to download, and the free tier has no time limit: unlimited games against all ten opponents, all 80 lessons, the skill assessment, the first drill set in every drill module, 2 full game analyses a day, 3 training puzzles a day (mate problems included) and 2 in-game coach hints a day. Premium removes the daily limits, opens every drill in every module, and adds deep multi-line analysis and the full progress dashboard. It costs {P_MONTHLY} a month or {P_YEARLY} a year — each with a one-week free trial for new subscribers — or {P_LIFETIME} once for lifetime access. Prices are in USD; the App Store shows your local price. There are no ads in either tier."
   - q: "Where do the mate problems come from?"
     a: "There are 902 of them, from mate in 1 to mate in 7, and every one is a consecutive-check problem: each attacking move must give check. 194 were composed for Xiangqiful; most of the rest come from eight classical manuals, among them the Shiqing Yaqu of 1570 and the Juzhongmi, and the source is recorded on every problem. Every line was re-checked by the app's own solver, and the books were not corrected to make a problem fit — a book problem that does not really work was left out."
   - q: "What are the tips in Settings?"
@@ -370,4 +370,4 @@ Ten opponents give you someone to play at every level, from strength 400 to 1900
 
 Everything runs on your device. There is no account, no server, no ads and nothing collected; the [privacy policy](/apps/xiangqiful/privacy/) sets out what stays on your device and what Apple handles instead. The trade-off is that there is no online play: Xiangqiful is the practice room, not the arena. If you also play Japanese or Western chess, [Shogiful](/apps/shogiful/) and [Chessful](/apps/chessful/) are built on the same loop.
 
-Free: all ten opponents with unlimited games, all 80 lessons, the first drill set in every module, plus two game analyses, three training puzzles and two coach hints a day. Premium lifts the daily limits, opens every drill, and adds deep multi-line analysis and the full progress dashboard — $1.99 a month or $9.99 a year, each after a one-week free trial, or $19.99 once. Published by Lagerland Apps, an independent Apple developer in Finland.
+Free: all ten opponents with unlimited games, all 80 lessons, the first drill set in every module, plus two game analyses, three training puzzles and two coach hints a day. Premium lifts the daily limits, opens every drill, and adds deep multi-line analysis and the full progress dashboard — {P_MONTHLY} a month or {P_YEARLY} a year, each after a one-week free trial, or {P_LIFETIME} once. Published by Lagerland Apps, an independent Apple developer in Finland.

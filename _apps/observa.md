@@ -3,7 +3,7 @@ layout: app
 slug: observa
 name: "Observa"
 tagline: "Sleep, energy & recovery insights."
-quick_answer: "Observa is a private health insights app for iPhone and iPad that reads your Apple Health data — sleep stages, HRV (SDNN) trends, ECG sinus-rhythm, resting heart rate, activity — no matter which device recorded it (Apple Watch, Oura, Whoop, Garmin, Fitbit, or any app that writes to Apple Health), and explains in plain language which of your habits actually shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. No servers, no account, no data upload (verified by Apple's App Privacy nutrition label). Free with Pro from $2.99/month, $22.99/year, or $49.99 lifetime."
+quick_answer: "Observa is a private health insights app for iPhone and iPad that reads your Apple Health data — sleep stages, HRV (SDNN) trends, ECG sinus-rhythm, resting heart rate, activity — no matter which device recorded it (Apple Watch, Oura, Whoop, Garmin, Fitbit, or any app that writes to Apple Health), and explains in plain language which of your habits actually shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. No servers, no account, no data upload (verified by Apple's App Privacy nutrition label). Free with Pro from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime."
 category: health
 platforms: ["iOS", "iPadOS"]
 status: live
@@ -77,7 +77,7 @@ og_image: "/assets/og/observa.png"
 
 seo:
   title: "Apple Health Insights for Sleep, HRV & Recovery — Observa"
-  description: "Plain-English sleep, HRV & recovery insights from your Apple Health data. 100% on-device. No account. Free; Pro from $2.99/mo."
+  description: "Plain-English sleep, HRV & recovery insights from your Apple Health data. 100% on-device. No account. Free; Pro from {P_MONTHLY}/mo."
   keywords:
     - Apple Health insights app
     - Apple Health analytics
@@ -227,7 +227,7 @@ founder:
     - "Independent Apple developer, building privacy-first iOS and macOS apps from Finland since 2025"
     - "Observa runs 100% on-device — Apple's App Privacy nutrition label lists zero data collected"
     - "No analytics SDKs, no third-party trackers, no growth team — a one-person studio with a long-term commitment to the app"
-    - "20 live apps in the catalogue, all under the same privacy philosophy: no tracking, no ads, no required accounts"
+    - "{APP_COUNT} live apps in the catalogue, all under the same privacy philosophy: no tracking, no ads, no required accounts"
   external_link:
     label: "More apps from Lagerland Apps →"
     href: "/apps/"
@@ -246,7 +246,7 @@ faq:
   - q: "What are HRV and ECG insights?"
     a: "Observa tracks HRV (SDNN, the time-domain metric Apple Health provides) against your personal 60-day baseline, flags drops greater than one standard deviation, and uses Apple Watch ECG recordings — from which it also computes RMSSD and pNN50 — together with ECG sinus-rhythm data to estimate autonomic recovery state — the balance between sympathetic ('fight-or-flight') and parasympathetic ('rest-and-digest') activity. Translation: instead of a graph, you get a sentence like 'Your nervous system is 18% below baseline today — likely a recovery day.'"
   - q: "Is Observa free?"
-    a: "Yes. Daily insight cards and core single-variable pattern recognition are free, forever. Pro unlocks multi-variable correlations, long-term trend analysis (90 / 180 / 365 days), weekly reflections, and per-pattern confidence scoring — $2.99/month, $22.99/year, or $49.99 lifetime. Lifetime supports Family Sharing — one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes. Daily insight cards and core single-variable pattern recognition are free, forever. Pro unlocks multi-variable correlations, long-term trend analysis (90 / 180 / 365 days), weekly reflections, and per-pattern confidence scoring — {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime. Lifetime supports Family Sharing — one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does Observa give medical advice?"
     a: "No. Observa is an informational wellness tool. It surfaces statistical patterns in data you already collect, for self-awareness — not medical diagnoses or treatment recommendations. If something looks off, talk to a clinician."
   - q: "Does Observa upload my health data?"
