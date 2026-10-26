@@ -16,7 +16,7 @@ Read order for any translation session: repo `CLAUDE.md`, then this file, then t
 
 | Item | Status |
 |---|---|
-| Phase 0 groundwork (section 4) | not started |
+| Phase 0 groundwork (section 4) | done 2026-10-26 (what it built: 4.16) |
 | Languages live | none |
 
 Update this table in the same commit that finishes Phase 0 or launches a language. Per-language status
@@ -191,10 +191,30 @@ about_heading: "..."
 ```
 
 Fact fields never appear in a translation file: `name`, `category`, `status`, `app_store_url`, `price`,
-`plans`, `schema_*`, `icon`, `screenshots` (files), `hero.device`, `release`, `ratings`, `alternatives_to`,
-`support.email`, `founder.entity_type`, `show_body`. Text fields (`tagline`, `quick_answer`, `seo`, hero text,
-`who_for`, `features`, `faq`, `how_it_works`, `privacy` prose, `plans_footnote`, `pricing_note`, `price_lead`,
-`price_tier`, captions, alt texts, founder story) are all translated. `scripts/i18n.py check` enforces both lists.
+`schema_*`, `icon`, `og_image`, `screenshots` (files), `hero.device`, `hero.video`, `release`, `ratings`,
+`alternatives_to`, `related_apps`, `support`, `founder.entity_type`, `founder.support_email`, `founder.photo`,
+`privacy.tracking`, `privacy.account_required`, `show_body`, `jump_nav`, `free_tier`, and inside lists
+`plans[].kind`, `plans[].highlight`, `release_notes[].date`, `related_journal.slug`. Text fields (`tagline`,
+`quick_answer`, `seo`, hero text, `who_for`, `features`, `faq`, `how_it_works`, `privacy` prose, `plans_footnote`,
+`pricing_note`, `price_lead`, `price_tier`, `price_override`, captions, alt texts, founder story,
+`comparison_table`, `example_insights` and the other optional sections) are all translated.
+`scripts/i18n.py check` enforces both lists.
+
+Lists that pair words with facts are translated item by item, in the master's order and length:
+
+- `plans`: each item carries `name`, `price`, `summary`, `features`, `highlight_label`. `price` is the card's
+  display string, tokens plus words ("{P_LIFETIME} einmalig", "{P_ZERO}"), so it is text; `kind` stays in the
+  master. A currency sign typed into it fails the check.
+- `release_notes`: `note` only; the dates come from the master.
+- `screenshot_captions`: one item per master screenshot, `{ alt: "..." }` and/or `{ caption: "..." }` mirroring
+  the master item.
+- `related_journal`: `{ anchor: "..." }`; the post is the master's, shown in the page language when translated.
+- `enrichment` (optional): the words of `_data/app_enrichment.yml` for this app (`use_cases`, `recommend_when`,
+  `recommend_why`, `pricing_tiers`) in the language. Without it the quick-reference block and llms-full.txt leave
+  those lines out on that language.
+
+Support and privacy translations carry `slug` (the app slug) so the layouts find the app; they never carry
+`name`, `support`, `app_name`, `contact_email` or `back_url`.
 
 ### 4.2 `_config.yml`
 
@@ -215,9 +235,14 @@ de:
   og_locale: de_DE
   dir: ltr
   native_name: "Deutsch"          # shown in the language switcher
+  live: false                     # true only in the go-live commit (see below)
   currencies:
-    EUR: { symbol: "€", position: after, decimals: 2, decimal: ",", group: "." }
-  strings: { free: "Kostenlos", from: "ab", per_month: "/Monat", ... }   # every key that en has
+    EUR: { symbol: "€", position: after, decimals: 2, decimal: ",", group: "." }   # position: before, before_space, after
+  strings: { free: "Kostenlos", from: "ab", per_month: "/Monat", ..., trial_days: "{n} Tage gratis testen" }   # every key that en has
+
+`live` is the one switch for a language. While it is false the language's pages build but carry noindex (with a
+self canonical), stay out of every sitemap, get no hreflang, and do not appear in the switcher, the footer
+language row, ai-index.json or the 404 page. The go-live commit sets it to true.
 ```
 
 Currency formats must match what the App Store shows in that storefront. Open one of the apps in that storefront
@@ -233,8 +258,9 @@ on the web, copy the format, and note the date you checked in the language sheet
 | id | `Rp 39.000` (no decimals) | ar | `17.99 ر.س` or `SAR 17.99`, and which digits (check) |
 
 The trial label (`7-day free trial`) and the platform list join word come from the catalog and `strings`.
-The trial label is English in the catalog today, so Phase 0 builds it from `free_trial.duration` with a per-language
-pattern in `strings` instead of printing the English label.
+The trial label is built from the catalog's `free_trial.duration` with the patterns `trial_days`, `trial_months`
+and `trial_years` in `strings` (`_includes/trial.html`). A zero price is the token `{P_ZERO}` (0 in the
+territory's currency, no decimals), so no translation ever types "$0" or "0 €".
 
 ### 4.4 Interface strings: `_data/i18n/<code>.yml`
 
@@ -413,6 +439,48 @@ correct lang, hreflang, prices, dates and strings, and is deleted before the com
 
 ---
 
+### 4.16 What Phase 0 built (reference)
+
+Done 2026-10-26. Build time: 9.9 s before, about 12.5 s after, for the same 277 English pages.
+
+- Strings: `_data/i18n/en.yml` holds every visible word of `_layouts/` and `_includes/` (about 300 keys, some
+  nested: `months`, `categories`, `price_models`, `series`, `lf`, `llms_groups`). Layouts start with
+  `{% include t.html %}` (assigns `t` and `loc`). YAML reads the bare keys `yes`/`no` as booleans, so they are
+  `word_yes`/`word_no`. Liquid cannot take `}` inside `{{ }}` or nested brackets (`a[b[0]]`): replace
+  placeholders and look up nested keys in `{% assign %}` first.
+- Facts and words: `_layouts/app.html` reads facts from `m` (the master) and words from `page`; the includes take
+  `app=` (master) and `tx=` (words). Other apps on a page (cards, stamps, footer, lists) find their page in the
+  current language with `_includes/tx-app.html` and are left out on a translated page that has no translation.
+- Links: `_includes/l.html url="/apps/"` prints the same-language URL from `_data/i18n_map.json` or the English
+  URL, and sets `l_en` so the caller adds `hreflang="en"` and `t.english_marker`.
+- Dates: `_includes/date.html date=... fmt="long"|"dmy"`. Prices: `money.html` (position `before_space` added),
+  `trial.html`, `{P_ZERO}`. Screenshots: `_includes/screenshot-set.html` (6.8). Share image: `_includes/og-image.html`.
+- Head: `<html lang dir>`, hreflang and `og:locale:alternate` from the map for live languages, one WebSite node per
+  language (`site_title`, `site_description` in the strings), per-language feed and llms alternates.
+- Switcher: `_includes/lang-switch.html` in the header nav; a language row in the footer (every live language, to
+  this page's version or that language's home). Both render nothing while English is the only live language.
+- 404: one template per live language inside `404.html`, swapped in by a few lines of JS for `/<code>/` paths.
+- Machine files, as shared includes: `_includes/sitemap-urls.xml lang=`, `_includes/feed.xml lang=`,
+  `_includes/llms-full.txt` (generated part, labels in `t.lf`), `_includes/llms-catalog.txt` (the app catalogue of
+  llms.txt). English loops over `site.pages` filter `where: "lang", "en"`. ai-index.json has `languages` and
+  `localized_urls`.
+- Per-language stubs, created in a language's setup commit:
+  - `<code>/sitemap.xml`: front matter `layout: none`, `permalink: /<code>/sitemap.xml`, `sitemap: false`; body
+    as root sitemap.xml with `{%- include sitemap-urls.xml lang="<code>" %}`.
+  - `<code>/feed.xml`: `permalink: /<code>/feed.xml`, `layout: none`; body `{% include feed.xml lang="<code>" %}`.
+  - `<code>/llms-full.txt`: as root llms-full.txt, with the preamble written in the language.
+  - `<code>/llms.txt`: hand-written in the language, with `{% include llms-catalog.txt %}` for the catalogue and
+    the language's own AI recommendation guide.
+- CSS: switcher, footer row, `.en-marker`, hyphenation for de, nl, pl, ru and the CJK rules (4.10). The
+  right-to-left conversion of physical CSS properties (4.10) and the extra font subsets (4.11) are not done:
+  they land in the setup commit of ar, and of pl, tr, ru, respectively.
+- Scripts: `scripts/i18n.py` (`map`, `stale`, `check`; needs PyYAML, like generate-og.py), the translation checks in
+  `seo-audit.py`, language folders in `stamp-last-updated.py`, live-language filter in `indexnow-ping.py`,
+  `generate-og.py --lang <code>` (fonts for non-Latin-1 scripts go in `scripts/og-assets/fonts/` under the names in
+  its `SCRIPT_FONTS`).
+
+---
+
 ## 5. Launching one language
 
 ### 5.1 The language sheet `_i18n/<code>.md`
@@ -436,8 +504,8 @@ on each page:
 
 ### 5.2 Setup commit for the language
 
-- `_config.yml` default for the folder; the locale block in `_data/locales.yml`; `_data/i18n/<code>.yml` with
-  every key translated and humanized.
+- `_config.yml` default for the folder; the locale block in `_data/locales.yml` with `live: false`;
+  `_data/i18n/<code>.yml` with every key translated and humanized; the per-language stubs from 4.16.
 - Fonts if the script needs them (4.11).
 - The language is not yet in the switcher and nothing links to it.
 
@@ -457,8 +525,10 @@ For each Tier 1 page, before writing it:
 
 Translate the Tier 1 pages with the per-page workflow (section 6), review them (section 9), create
 `/<code>/llms.txt` with its AI recommendation guide in that language, generate the OG cards, then in one commit:
-add the language to the switcher, link `/<code>/` from the English footer, run the full gate (section 10), push,
-and do the after-publish steps (section 11).
+set `live: true` in the language's locale block (that adds it to the switcher, the English footer's language row,
+hreflang and the sitemaps), add the root llms.txt "Other languages" line, the `/<code>/sitemap.xml` entry in
+`sitemap_index.xml` and its `Sitemap:` line in robots.txt, run the full gate (section 10), push, and do the
+after-publish steps (section 11).
 
 ### 5.5 Tiers 2 to 4
 
@@ -877,7 +947,7 @@ Gregorian dates with the month names used in Saudi Arabia (أكتوبر). Latin 
 [ ] Localized screenshots placed where the owner provided them; apps still on English sets listed in the sheet
 [ ] OG cards for the language
 [ ] i18n.py map, stamp, build, i18n.py check, seo-audit.py: 0 errors
-[ ] Switcher shows the language; English footer links /<code>/; root llms.txt "Other languages" updated
+[ ] live: true in locales.yml (switcher, English footer row, hreflang); root llms.txt "Other languages" updated
 [ ] robots.txt Sitemap line; sitemap_index.xml entry
 [ ] Push; curl check; GSC-submit list; sitemap submitted to the market's webmaster tools
 [ ] App Store Connect localized Marketing, Support and Privacy URLs for every app
