@@ -23,12 +23,12 @@
 
 {%- comment %} ---- platforms ---- {%- endcomment -%}
 {%- assign f_platforms = f_cat.platforms | default: empty -%}
-{%- comment %} "A", "A and B", "A, B, and C": for running sentences. {%- endcomment -%}
+{%- comment %} "A", "A and B", "A, B, and C": for running sentences (strings.serial_comma is "," in English, "" in German). {%- endcomment -%}
 {%- assign f_platforms_and = "" -%}
 {%- for f_pl in f_platforms -%}
   {%- if forloop.first -%}{%- assign f_platforms_and = f_pl -%}
   {%- elsif forloop.last and forloop.length == 2 -%}{%- assign f_platforms_and = f_platforms_and | append: " " | append: f_str.and | append: " " | append: f_pl -%}
-  {%- elsif forloop.last -%}{%- assign f_platforms_and = f_platforms_and | append: ", " | append: f_str.and | append: " " | append: f_pl -%}
+  {%- elsif forloop.last -%}{%- assign f_platforms_and = f_platforms_and | append: f_str.serial_comma | append: " " | append: f_str.and | append: " " | append: f_pl -%}
   {%- else -%}{%- assign f_platforms_and = f_platforms_and | append: ", " | append: f_pl -%}
   {%- endif -%}
 {%- endfor -%}
@@ -149,7 +149,7 @@
   {%- if f_lifetime != "" -%}{%- capture f_piece -%}{{ f_lifetime }} {{ f_str.lifetime }}{%- endcapture -%}{%- assign f_pieces = f_pieces | push: f_piece -%}{%- endif -%}
   {%- if f_pieces.size == 1 -%}{%- assign f_list = f_pieces[0] -%}
   {%- elsif f_pieces.size == 2 -%}{%- capture f_list -%}{{ f_pieces[0] }} {{ f_str.or }} {{ f_pieces[1] }}{%- endcapture -%}
-  {%- else -%}{%- capture f_list -%}{{ f_pieces[0] }}, {{ f_pieces[1] }}, {{ f_str.or }} {{ f_pieces[2] }}{%- endcapture -%}
+  {%- else -%}{%- capture f_list -%}{{ f_pieces[0] }}, {{ f_pieces[1] }}{{ f_str.serial_comma }} {{ f_str.or }} {{ f_pieces[2] }}{%- endcapture -%}
   {%- endif -%}
   {%- capture f_price_value -%}{{ f_tx.price_lead | default: f_str.free }}, {{ f_tx.price_tier | default: f_str.default_tier }} {{ f_str.from }} {{ f_list }}{%- endcapture -%}
 {%- else -%}

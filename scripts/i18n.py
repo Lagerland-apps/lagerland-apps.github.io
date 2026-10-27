@@ -689,10 +689,23 @@ def check_built(repo, F, site, imap, i18n_data, en_strings):
                         F.err("translated page links to an English page that has a version in its language",
                               url, "%s -> use %s" % (path, tr))
                 text = ws(html.unescape(" ".join(v.chunks)))
+                for kp in keep_english(repo):
+                    text = text.replace(kp, " ")
                 for s in cands:
                     if s in text:
                         F.err("leftover English interface string", url, repr(s[:70]))
     return n
+
+
+def keep_english(repo):
+    """Proper names that stay in English in every language (_i18n/keep-english.txt, one per line, # comments).
+    They are removed from a page's text before the leftover-English check, so "App Tracking Transparency" does
+    not count as the interface string "Transparency"."""
+    fp = repo.p("_i18n", "keep-english.txt")
+    if not os.path.isfile(fp):
+        return []
+    lines = [l.strip() for l in open(fp, encoding="utf-8")]
+    return sorted((l for l in lines if l and not l.startswith("#")), key=len, reverse=True)
 
 
 def cmd_check(repo, args):

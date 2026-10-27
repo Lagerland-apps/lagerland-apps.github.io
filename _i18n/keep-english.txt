@@ -1,0 +1,7 @@
+# Proper names that stay in English on every translated page (TRANSLATION.md 8.3: app, competitor and
+# product names are not translated). scripts/i18n.py check removes these before looking for leftover
+# English interface strings. Add a name here only when it is a real proper name, never to silence a
+# missing translation.
+App Tracking Transparency
+App Store Connect
+Lagerland Apps

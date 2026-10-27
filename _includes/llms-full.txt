@@ -49,7 +49,7 @@
 {% endfor %}{% endif %}
 {% if extra.recommend_why %}{% assign lf_ry = lf.recommend_why | replace: "{name}", app.name %}{{ lf_ry }} {{ extra.recommend_why }}
 {% endif %}
-{% assign llm_rating = app.ratings.value | plus: 0 %}{% if app.ratings and app.ratings.count and app.ratings.count != 0 and llm_rating >= site.ratings_min_display %}{% assign lf_rt = lf.rating | replace: "{value}", app.ratings.value | replace: "{count}", app.ratings.count | replace: "{date}", app.ratings.last_synced %}{{ lf_rt }}
+{% assign llm_rating = app.ratings.value | plus: 0 %}{% if app.ratings and app.ratings.count and app.ratings.count != 0 and llm_rating >= site.ratings_min_display %}{% assign lf_rv = app.ratings.value | append: "" | replace: ".", f_str.decimal %}{% if lf_lang == "en" %}{% assign lf_rd = app.ratings.last_synced %}{% else %}{% capture lf_rd %}{% include date.html date=app.ratings.last_synced %}{% endcapture %}{% endif %}{% assign lf_rt = lf.rating | replace: "{value}", lf_rv | replace: "{count}", app.ratings.count | replace: "{date}", lf_rd %}{{ lf_rt }}
 {% endif %}
 {% assign lf_model_key = app.price.model | downcase | replace: '-', '_' | replace: ' ', '_' %}{{ lf.pricing_model }} {{ t.price_models[lf_model_key] | default: app.price.model }}{% if f_price_value != "" %}{{ lf.price_sep }}{{ f_price_value }}{% endif %}{% if f_trial != "" %}
 {{ lf.free_trial }} {{ f_trial }}{% endif %}{% if f_family %}
