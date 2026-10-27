@@ -1,0 +1,73 @@
+---
+layout: default
+ref: /support/
+permalink: /de/support/
+translated_from: 2026-10-26
+title: "Support: Hilfe, Kontakt und App-Abo kündigen"
+quick_answer: "Ein App-Abo kündigst du auf dem iPhone oder iPad unter Einstellungen → dein Name → Abonnements, auf dem Mac in der App „App Store“. Bei Fehlern, Fragen oder Feedback zu einer Lagerland-App schreibst du direkt an lagerland.apps@proton.me. Rückerstattungen für Käufe im App Store wickelt Apple über reportaproblem.apple.com ab."
+seo:
+  title: "App-Abo kündigen, Hilfe und Kontakt: Lagerland Apps"
+  description: "Hilfe zu jeder Lagerland-App: Schreib dem Entwickler direkt, kündige ein App-Abo auf dem iPhone und finde Support-Seite, FAQ und Datenschutzerklärung."
+  keywords:
+    - app abo kündigen iphone
+    - app store abo kündigen iphone
+    - lagerland apps support
+    - lagerland apps kontakt
+    - app entwickler kontaktieren
+    - app store rückerstattung
+    - datenschutzerklärung app
+last_updated: 2026-10-27
+---
+{%- include t.html -%}
+<section class="section">
+  <h1 class="h1">Support: Hilfe, Kontakt und App-Abo kündigen</h1>
+  <p class="lead">
+    Du brauchst Hilfe bei einer unserer Apps? Schreib uns.
+  </p>
+
+  {% include quick-answer.html %}
+
+  <div class="grid grid-2">
+    <div class="card">
+      <div class="card-title">Support kontaktieren</div>
+      <div class="card-text">
+        Fehler, Fragen oder Feedback schickst du per E-Mail an:
+      </div>
+      <p>
+        <a href="mailto:lagerland.apps@proton.me">
+          lagerland.apps@proton.me
+        </a>
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Bevor du schreibst</div>
+      <div class="card-text">
+        Mit diesen Angaben können wir dir schneller antworten:
+        <ul class="bullets">
+          <li>Name der App</li>
+          <li>Gerätemodell</li>
+          <li>Version von iOS, iPadOS oder macOS</li>
+          <li>Was du erwartet hast und was stattdessen passiert ist</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="h2">Support für jede App</h2>
+  <p class="lead">Jede App hat eine eigene Support-Seite mit häufigen Fragen und eine eigene Datenschutzerklärung.</p>
+  <ul class="bullets">
+  {%- assign support_apps = site.apps | where: "status", "live" | sort: "name" -%}
+  {%- for a in support_apps -%}
+    {%- include tx-app.html app=a -%}
+    {%- unless tx_en -%}
+    {%- capture a_support %}{{ a.url }}support/{% endcapture -%}
+    {%- capture a_privacy %}{{ a.url }}privacy/{% endcapture %}
+    <li><a href="{% include l.html url=a_support %}"{% if l_en %} hreflang="en"{% endif %}>Support für {{ a.name }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> · <a href="{% include l.html url=a_privacy %}"{% if l_en %} hreflang="en"{% endif %}>Datenschutzerklärung{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>{% if tx_app.tagline %}: {{ tx_app.tagline }}{% endif %}</li>
+    {%- endunless -%}
+  {%- endfor %}
+  </ul>
+  <p class="small" style="margin-top:16px;">{{ t.support_tip_subscriptions }} {{ t.support_tip_refunds }} Wie jede App mit deinen Daten umgeht, steht im <a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}>Transparenzbericht{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+</section>

@@ -187,6 +187,16 @@ English (write „manipulative Tricks“); „Macher“ for "maker"; „kalkulie
 tut irgendetwas“ for "No X does anything"; „ohne Leben“ / „Lebenssystem“ for game lives (write „begrenzte
 Leben“); „dort“ as filler; a generic „Pro“ tier where the app's German UI says Premium or Pro+.
 
+Found in reviews (batch 5, 2026-10-27): „Hilfe mit“ for "help with" (write „Hilfe bei“); „X als Standard“ for
+"X by default" (write „standardmäßig X“); „Bezahlt wird …“ for "funded by" (write „finanziert“); „sich vor X
+rechtfertigen“ for "answer to X" (write „X Rechenschaft schuldig sein“); „App-Release“ (write „App-Version“ or
+„Update“); „je“ for "ever" in conditionals (write „jemals“); „Reichweitenmessung“ for Apple's ad "measurement"
+(write „Messung von Werbung“); „für Tracking verwendet“ (Apple writes „zum Tracking … verwendet“) and „tracken“
+where Apple's label says „verfolgen“ („über Apps und Websites anderer Unternehmen hinweg verfolgen“); capital
+„Sie“ after a colon meaning "they" (rephrase so it can't read as formal address); „mit“ + a quoted label in the
+nominative („Apps mit <em>noch kein Manifest</em>“: write „mit dem Vermerk …“); lists that put free tiers among
+ways to pay („bezahlen … mit kostenlosen Grundversionen“: give the free tier its own sentence).
+
 Stock phrasing: „In der heutigen schnelllebigen Welt“, „Tauchen wir ein“, „Es ist wichtig zu beachten, dass“,
 „spielt eine entscheidende Rolle“, „nahtlos“, „maßgeschneidert“, „ganzheitlich“, „Zusammenfassend lässt sich
 sagen“, „nicht nur …, sondern auch …“. Translationese: split compounds, „Sinn machen“, English title case, du/Sie
