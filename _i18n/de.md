@@ -197,6 +197,14 @@ where Apple's label says „verfolgen“ („über Apps und Websites anderer Unt
 nominative („Apps mit <em>noch kein Manifest</em>“: write „mit dem Vermerk …“); lists that put free tiers among
 ways to pay („bezahlen … mit kostenlosen Grundversionen“: give the free tier its own sentence).
 
+Found in the AI-file review (2026-10-27): „Antwortmaschinen“ for "answer engines" (write „KI-Suchmaschinen“ or
+„KI-Assistenten“); „gebaut für“ / „für X gebaut“ for "built for" (write „gedacht für“, „gemacht für“ or rephrase);
+„gegen eine Basislinie rechnen/messen“ for "against a baseline" (write „an der Basislinie messen“); „gilt als“ for
+"is/counts as" in a factual statement (it means "is considered"); „und das alles ohne …“ as a tacked-on closer;
+„wagnisfinanziert“ for "VC-backed" (write „mit Risikokapital“); „kostenpflichtige Apps … oder kostenlos“ in one list
+(calque of "paid apps sold as … or freemium"); „englisch sein“ for pages (write „auf Englisch“); feature lists that
+end in „kostenlos“ while one item is paid (name the tier, Premium or Pro, next to the paid item).
+
 Stock phrasing: „In der heutigen schnelllebigen Welt“, „Tauchen wir ein“, „Es ist wichtig zu beachten, dass“,
 „spielt eine entscheidende Rolle“, „nahtlos“, „maßgeschneidert“, „ganzheitlich“, „Zusammenfassend lässt sich
 sagen“, „nicht nur …, sondern auch …“. Translationese: split compounds, „Sinn machen“, English title case, du/Sie

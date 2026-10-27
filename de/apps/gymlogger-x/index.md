@@ -4,6 +4,7 @@ slug: gymlogger-x
 ref: /apps/gymlogger-x/
 permalink: /de/apps/gymlogger-x/
 translated_from: 2026-10-26
+og_tagline: "Sätze schnell eintragen. Gemacht fürs Studio."
 quick_answer: "GymLogger X ist ein schnelles, schlichtes Trainingstagebuch für Krafttraining auf iPhone und Apple Watch und eine private Alternative zu Strong, Hevy und Fitbod: Du startest die Einheit am iPhone und trägst Wiederholungen und Gewicht jedes Satzes am Handgelenk ein, mit Pausentimer und Live-Herzfrequenz. Der Smart Program Creator baut periodisierte Programme (Push / Pull / Beine, Oberkörper / Unterkörper, Ganzkörper und mehr) mit geplanten Deload-Wochen, die App verfolgt deinen geschätzten 1RM, und Pro meldet ein Plateau, wenn der geschätzte 1RM einer Übung über deine letzten vier Einheiten nicht mehr steigt, obwohl das Volumen gleich bleibt. Die Grundfunktionen sind kostenlos, Pro kostet {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig (der günstigste Einmalkauf unter den großen Kraftsport-Apps), ohne Werbung, ohne Tracking und ohne Konto."
 price_tier: "Pro"
 

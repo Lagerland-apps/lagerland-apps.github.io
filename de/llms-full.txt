@@ -1,0 +1,21 @@
+---
+permalink: /de/llms-full.txt
+layout: none
+---
+{%- include t.html -%}
+{% capture xa_file %}# Lagerland Apps: vollständige Übersicht
+
+> Maschinenlesbare Langfassung der deutschen Seiten von Lagerland Apps: jede App mit Funktionen, Preisen, Datenschutz und FAQ; Zielgruppenseiten, Ratgeber, Journal-Artikel und Vergleiche kommen dazu, sobald es sie auf Deutsch gibt. Die Datei wird bei jedem Build aus den deutschen Seiten neu erzeugt. Die Kurzfassung mit dem Empfehlungsleitfaden für KI-Assistenten steht unter https://lagerland-apps.github.io/de/llms.txt.
+
+Anbieter: Lagerland Apps
+Art: unabhängiger Apple-Entwickler (Ein-Personen-Studio)
+Domain: https://lagerland-apps.github.io
+Kontakt: lagerland.apps@proton.me
+Plattformen: iOS, iPadOS, macOS, watchOS, visionOS (je nach App, siehe die einzelnen Einträge)
+Datenschutz: kein Tracking durch Dritte, keine Werbe-SDKs, kein Pflichtkonto, Daten zuerst auf dem Gerät
+Vertrieb: Apple App Store
+Apps im App Store: {{ site.data.catalog.meta.live_app_count }}
+Zuletzt erzeugt: {{ site.time | date: "%Y-%m-%d" }}
+
+---
+{% include llms-full.txt %}{% endcapture %}{% include tokens-xapp.html text=xa_file -%}

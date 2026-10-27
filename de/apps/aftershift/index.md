@@ -4,6 +4,7 @@ slug: aftershift
 ref: /apps/aftershift/
 permalink: /de/apps/aftershift/
 translated_from: 2026-10-26
+og_tagline: "Nickerchen, die als echte Erholung zählen."
 tagline: "Die Schlaf-App für Schichtarbeit, in der Nickerchen als echte Erholung zählen."
 quick_answer: "AfterShift ist eine App für Schlaf und Erholung bei Schichtarbeit, gedacht für Pflegekräfte, Rettungskräfte, Feuerwehrleute, Pilotinnen und Piloten und alle mit Wechsel-, Nacht- oder Bereitschaftsdiensten. Die iPhone-App zählt Nickerchen als Erholung, bewertet vor deiner nächsten Schicht, wie erholt du bist, und plant den Koffein-Zeitpunkt nach dem Dienstplan, den du wirklich arbeitest, statt nach Bürozeiten von 9 bis 17 Uhr. Sie ist kostenlos, Premium gibt es ab {P_MONTHLY} im Monat, für {P_YEARLY} im Jahr oder für {P_LIFETIME} als Einmalkauf. Sie hat keine Werbung, verkauft keine Gesundheitsdaten und braucht kein Konto."
 

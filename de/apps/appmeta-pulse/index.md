@@ -4,6 +4,7 @@ slug: appmeta-pulse
 ref: /apps/appmeta-pulse/
 permalink: /de/apps/appmeta-pulse/
 translated_from: 2026-10-26
+og_tagline: "Dein App-Store-Connect-Dashboard."
 tagline: "Das App-Store-Connect-Dashboard für Indie-iOS-Entwickler, gebaut fürs Monitoring."
 quick_answer: "AppMeta Pulse ist ein App-Store-Connect-Dashboard fürs iPhone, gebaut fürs Monitoring. Indie-iOS-Entwickler sehen damit in Sekunden Erlös oder Verkäufe, MRR, aktive Abonnements, Probeabo-Konversionen und Downloads ihres ganzen App-Portfolios und antworten auf Bewertungen im App Store, ohne einen Browser zu öffnen. Schalter für Builds, Preise oder Metadaten gibt es nicht. Die App bringt 12 Widgets für Home-Bildschirm und Sperrbildschirm mit und arbeitet mit Apples offizieller App Store Connect API und einem Admin-Schlüssel, den du selbst anlegst. Der App Store bietet sie auch für Macs mit Apple Chip und für die Apple Vision Pro an, wo sie als iPhone-App läuft. Der Download ist kostenlos und öffnet eine Demo mit Beispieldaten; für deine eigenen Zahlen zahlst du {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig; das Abo beginnt mit einer kostenlosen Testphase. Keine Werbung, kein Tracking, keine Analyse-SDKs."
 

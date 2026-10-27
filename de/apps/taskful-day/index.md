@@ -4,6 +4,7 @@ slug: taskful-day
 ref: /apps/taskful-day/
 permalink: /de/apps/taskful-day/
 translated_from: 2026-10-26
+og_tagline: "Den Tag planen. In Ruhe schaffen."
 tagline: "Den Tag in Ruhe planen und ihn auch schaffen. Jetzt auch auf dem Mac."
 quick_answer: "Taskful Day ist eine ruhige Tagesplaner-App für iPhone, iPad und Mac, die aus einer überladenen To-do-Liste einen realistischen Tagesplan macht, mit Fokus-Sitzungen, Spracheingabe, Stimmungstagebuch und vier Tagesansichten. Was liegen bleibt, wandert automatisch auf den nächsten Tag, ohne Streaks und ohne rote Kennzeichen, und iCloud hält deine Geräte synchron. Die App ist kostenlos, Pro gibt es ab {P_MONTHLY} im Monat, und es gibt keine Werbung, kein Tracking und kein Konto."
 

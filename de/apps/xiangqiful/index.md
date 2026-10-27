@@ -4,6 +4,7 @@ slug: xiangqiful
 ref: /apps/xiangqiful/
 permalink: /de/apps/xiangqiful/
 translated_from: 2026-10-26
+og_tagline: "Chinesisches Schach, richtig erklärt."
 tagline: "Xiangqi lernen, Zug für Zug."
 
 quick_answer: "Xiangqiful ist eine App für chinesisches Schach (Xiangqi) zum Trainieren und Analysieren von Partien, für iPhone, iPad und Mac. Du spielst gegen zehn KI-Gegner mit eigenem Stil, von Spielstärke 400 bis 1900. Danach prüft Pikafish, die Open-Source-Engine an der Spitze der Ranglisten für Computer-Xiangqi, jeden deiner Züge auf deinem Gerät, bewertet ihn, benennt jeden Fehler mit den Begriffen des Xiangqi (eine Kanone ohne Schanzstein, ein gefangenes Pferd, eine beschädigte Beraterdeckung, ein verpasstes Matt mit dem Eisernen Riegel) und stellt aus dem, was du übersehen hast, deine nächste Trainingseinheit zusammen. Dazu kommen 80 kostenlose Lektionen in 8 Lernpfaden, 902 Mattaufgaben (die meisten aus acht klassischen Lehrbüchern) und mehr als 150 Übungen. Mit drei Figurensätzen (traditionelle Schriftzeichen, westliche Symbole oder eine Mischung aus beidem) spielst du, ohne Chinesisch lesen zu können. Die App ist kostenlos, Premium kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr (jeweils {TRIAL}) oder {P_LIFETIME} einmalig. Sie funktioniert komplett offline, ohne Konto und ohne Werbung, und erfasst keine Daten."

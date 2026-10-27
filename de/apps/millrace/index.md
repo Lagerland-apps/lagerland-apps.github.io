@@ -4,6 +4,7 @@ slug: millrace
 ref: /apps/millrace/
 permalink: /de/apps/millrace/
 translated_from: 2026-10-26
+og_tagline: "Ein Puzzle mit einer richtigen Lösung."
 tagline: "Ein Liefer-Puzzle: ein Zulauf, ein exaktes Ziel, ein festes Zugbudget."
 quick_answer: "Millrace ist eine Logik-Puzzle-App für iPhone und iPad: ein Liefer-Puzzle mit Kacheln. Jedes der 64 Level gibt dir ein festes Spielfeld, eine Warteschlange von Kacheln, die du schon vor ihrer Ankunft siehst, und ein Zugbudget. Die Kacheln kommen einzeln durch einen markierten Zulauf am Rand des Spielfelds herein, und du musst auf einem markierten Zielfeld genau einen bestimmten Wert bauen, bevor die Züge ausgehen. Verlieren kannst du auf zwei Arten, und beide gehen auf deine eigenen Züge zurück: Du schiebst eine Kachel auf den Zulauf, sodass die nächste keinen Platz mehr hat, oder du schießt über das Ziel hinaus und baust eine 128, wo das Level eine 64 verlangt. Nichts ist zufällig. Jedes Level wurde per Suche gefunden und vor der Veröffentlichung von einem automatischen Solver als lösbar bewiesen, die kürzeste Lösung ist also genau bekannt. Das endlose Merge-Spielfeld gibt es im eigenen Modus „Freies Spiel“. Das ganze Spiel ist kostenlos, ohne Werbung, ohne Abo und ohne Konto, es läuft komplett offline und erfasst keine Daten."
 

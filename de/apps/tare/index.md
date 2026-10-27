@@ -4,6 +4,7 @@ slug: tare
 ref: /apps/tare/
 permalink: /de/apps/tare/
 translated_from: 2026-10-26
+og_tagline: "Jeden Balken ausgleichen. Den Rest erschließen."
 tagline: "Ein Logikrätsel ohne Worte rund ums Gleichgewicht. Gewichte aufhängen, jeden Balken ausgleichen, die verdeckten erschließen."
 
 quick_answer: "Tare ist eine Logikrätsel-App ohne Worte für iPhone und iPad: Jedes Level ist ein gemaltes Mobile, und du hängst Gewichte mit den Zahlen 1 bis 9 so an die Haken, dass alle Balken gleichzeitig im Gleichgewicht sind. Gewicht mal Abstand zum Drehpunkt muss auf beiden Seiten gleich sein, und ein angehängter Balken zieht mit seiner ganzen Last an dem Haken, an dem er hängt. Ab dem ersten Kapitel stecken manche Gewichte in einer Blase mit „?“, und ein Balken mit einem ungelösten „?“ schwankt nur, statt sich zu neigen. Die Waage verrät das Geheimnis also nie: Du erschließt den Wert aus kleinen Bildkarten, die zeigen, wie die Teile zueinander stehen. Es gibt 200 handgemachte Level in zehn Kapiteln, und jedes ist maschinell darauf geprüft, dass es genau eine Lösung hat. Die ersten 20 sind kostenlos und bleiben es; ein Kauf für {P_IAP:Tare Full Access} schaltet die übrigen 180 dauerhaft frei, mit Familienfreigabe. Tare hat keine Werbung, keinen Timer, keine begrenzten Leben und kein Konto, läuft komplett offline und erfasst keine Daten."
