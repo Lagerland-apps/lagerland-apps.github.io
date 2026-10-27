@@ -91,7 +91,7 @@ Abbreviations: ap = apps.apple.com/de, ah = https://www.apple.com/de/health/, ig
 | VoiceOver | VoiceOver | ig TOC | English kept |
 | Larger Text (user setting behind Dynamic Type) | „Größerer Text“ | https://support.apple.com/de-de/guide/iphone/iph3c076905a/ios | |
 | Offline | offline / Offline- (e.g. "offline anhören", "Offline-Karten", "Offline-Modus") | ig TOC | Apple uses the English word |
-| Privacy & Security | Privatsphäre und Sicherheit | ig TOC | |
+| Privacy & Security | „Datenschutz & Sicherheit“ | support.apple.com/de-de/guide/iphone/iph251e92810/ios (corrected 2026-10-27) | |
 | App Tracking | App-Tracking ("Zustimmungen zum App-Tracking verwalten") | ig TOC | |
 
 ## Built-in apps
@@ -171,4 +171,17 @@ In-app purchase price format: `2,99 €`. Comma decimal, then a **NO-BREAK SPACE
 | Report a Problem (feature name) | „Problem melden“ | Only third-party German sites use it; Apple's DE support article names the URL only |
 | Universal Purchase | "Universal Purchase" (English kept) or "universeller Kauf" | German developer/App Store Connect help pages 404; German tech press uses "Universal Purchase" / "Universalkäufe" |
 | Dynamic Type (developer term) | Dynamic Type (English kept) | HIG and developer docs are not localized to German; the user-facing setting is „Größerer Text“ (verified) |
-| Reduce Motion (setting label) | „Bewegung reduzieren“ | Only seen in the Tare App Store description (developer text) and as a TOC phrase "Bewegung auf dem Bildschirm reduzieren"; not checked on the setting itself |
+
+## Added from reviews
+
+| English | German as Apple writes it | Source | Note |
+|---|---|---|---|
+| Advanced Data Protection (for iCloud) | in running text: „den erweiterten Datenschutz für iCloud“ (lowercase, inflected); as the quoted settings label: „Erweiterter Datenschutz“ | support.apple.com/de-de/108756, /102651 (checked 2026-10-27) | |
+| Privacy & Security (Settings) | „Datenschutz & Sicherheit“ | iOS Settings (to verify per page) | |
+| Reduce Motion (setting label) | „Bewegung reduzieren“ | support.apple.com/de-de/111781 (confirmed 2026-10-27) | Moved here from the unverified list |
+| Data Protection (iOS file encryption) | „Datensicherheit“ (e.g. „durch die Datensicherheit von iOS geschützt“) | support.apple.com/de-de/guide/security/secf6276da8a/web ; /sece3bee0835/web (checked 2026-10-27) | Not „Datenschutzfunktion“ |
+| Share With App Developers (Analytics & Improvements) | „Mit App-Entwicklungsteams teilen“ (Einstellungen > „Datenschutz & Sicherheit“ > „Analyse & Verbesserungen“) | apple.com/legal/privacy/data/de/app-analytics/ ; support.apple.com/de-de/108971 (checked 2026-10-27) | „Mit App-Entwicklern teilen“ is the old iOS 8/9 label |
+| Standard data protection (iCloud) | „standardmäßiger Datenschutz“ (inflected: „beim standardmäßigen Datenschutz“) | support.apple.com/de-de/102651 (checked 2026-10-27) | Not „Standarddatenschutz“ |
+| Apple Push Notification service (APNs) | „Apple Push-Benachrichtigungsdienst (APNS)“; silent pushes: „stille Push-Benachrichtigungen“ | support.apple.com/de-de/guide/security/aside/sec19eabb530/web (checked 2026-10-27) | „Mitteilungen“ stays right for notifications the user sees |
+| Background App Refresh | „Hintergrundaktualisierung“ (Einstellungen > „Allgemein“ > „Hintergrundaktualisierung“) | support.apple.com/de-de/118408 (checked 2026-10-27) | Not „Hintergrundaktualisierung von Apps“ |
+| Delete data from iCloud (storage path) | „iCloud“ > „Speicher“ (oder „Accountspeicher verwalten“) > „Daten aus iCloud löschen“ | support.apple.com/de-de/108922 (checked 2026-10-27) | Apple also writes „Daten auf iCloud löschen“ for some apps |

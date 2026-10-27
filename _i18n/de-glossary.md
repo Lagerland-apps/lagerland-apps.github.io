@@ -52,6 +52,13 @@ AfterShift 4 / 195 (du), AllPaid 1 / 36 (du), AppMeta **174 / 45 (mixed, mostly 
 | Calendar sync (Premium) | Calendar Sync (`calendar.sectionTitle`) | Kalender-Synchronisierung | `calendar.upgradeAutoSync` = "Upgrade: Auto-Synchronisierung, mehrere Kalender & Überstunden" |
 | Overtime | Overtime: (`nextShift.overtime`) | Überstunden: | |
 | Repeating rotation | Repeating rotation (`roster.rotation`) | Wiederkehrender Schichtrhythmus | `rotation.presets` "Common rotations" = "Häufige Rhythmen". **Flag:** `roster.tapToAdd` German drops "or set up a repeating rotation" |
+| Three-shift (day → evening → night) | `rotation.preset.threeShift` (+ `.sub`) | Dreischichtsystem („Tag → Abend → Nacht, je 2 Tage“) | Site writes „Tag → Abend → Nacht“; keep the arrows (UI string). Not „Früh/Spät“ |
+| 4-on-4-off | `rotation.preset.fourOnFourOff` | 4 Dienst / 4 frei | Never „4 an / 4 frei“; in lists „im Rhythmus DuPont, Pitman, 2-2-3, 4 Dienst / 4 frei …“ |
+| 4-on-3-off | `rotation.preset.fourOnThreeOff` | 4 Dienst / 3 frei | |
+| 2 days / 2 nights | `rotation.preset.ddnn` | 2 Tag / 2 Nacht | |
+| Panama/Pitman (2-2-3) | `rotation.preset.panama` | Panama (2-2-3) | Site adds „auch Pitman genannt“ where English says Panama/Pitman |
+| Fixed nights | `rotation.preset.fixedNights` | Dauernachtschicht | |
+| Fixed days | `rotation.preset.fixedDays` | Dauertagschicht | |
 | Trends | Trends (`trends.title`) | Trends | `today.section.trends` "Trends & Insights" = "Trends & Einblicke" |
 | Export / PDF report | Export Sleep Report (`settings.exportReport`) | Schlafbericht exportieren | `premium.export.title` "Export report" = "Bericht exportieren" |
 | Premium | AfterShift Premium (`paywall.premiumTitle`) | AfterShift Premium | **Flag:** app also shows "Pro" (`locked.proBadge`, `pro.chipLabel`, "Unlock with Pro") in English and German; site uses Premium |

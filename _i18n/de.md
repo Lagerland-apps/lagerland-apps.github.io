@@ -226,6 +226,28 @@ mixed. Added for this site: „Erlebnis“ for "experience", „Lösung“ for a
 - Until all 20 app pages exist, the German home and hub show only apps with a German page while counts from the
   catalog say 20. Go-live requires all 20, so this never ships.
 
+- `privacy.data_collection` when the English value is "none": lowercase „keine“ (it prints mid-sentence in the quick
+  reference: „Erfasste Daten: keine.“).
+- Every app page's price note uses one sentence: „Die Preise gelten für den deutschen App Store. In anderen Ländern
+  zeigt der App Store beim Kauf die Preise in deiner Landeswährung.“
+- Four-digit numbers without a separator (1500 Übungen); from five digits a dot (12.500).
+- who_for / who_not_for items are full sentences starting with „Du“ (headings „{name} passt zu dir:“).
+- Competitor prices: US prices never appear; either a German-storefront price checked on the day (date in the
+  page's footnote) or a plain description („Abo“, „Einmalkauf“).
+
+- Plan card names follow the app's paywall wording (e.g. „Premium · Monatlich“ / „Jährlich“ / „Lebenslang“ or the
+  app's own word for lifetime), not the App Store purchase names („Monatsabo“, „Jahresabo“).
+- Where the English page contradicts itself or the app code on a checkable fact (a free-tier limit, the language of
+  explanations), the German page states the one value that is consistent and backed by the code, and the case is
+  listed in ~/Downloads/githubcode/english-issues-from-de-review-2026-10-27.md for the English fix. Open questions
+  that need the owner's decision stay as on the English page.
+
+- The site's "Best value" badge (highlight_label) is „Bestes Preis-Leistungs-Verhältnis“ on every page, and
+  "Best long-term value" is „Auf lange Sicht das beste Angebot“; a "cheapest" claim („am günstigsten“) is not used
+  for lifetime plans.
+- Trial lengths are never typed: `{TRIAL}` (prints „7 Tage gratis testen“, use it alone or in brackets) or
+  „kostenlose Testphase“ without a length. Plan cards print the trial label themselves.
+
 ## Apps still on English screenshots
 
 All 20 (SCREENSHOTS: none yet). Alt texts and captions are German regardless.
