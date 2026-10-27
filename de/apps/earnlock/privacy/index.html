@@ -1,0 +1,98 @@
+---
+layout: privacy
+slug: earnlock
+ref: /apps/earnlock/privacy/
+permalink: /de/apps/earnlock/privacy/
+translated_from: 2026-10-09
+last_updated: 2026-10-09
+title: "Datenschutzerklärung"
+seo:
+  title: "EarnLock: Datenschutzerklärung, kein Tracking"
+  description: "EarnLock-Datenschutz: kein Tracking durch Drittanbieter, keine Werbung, kein Konto. Deine Daten bleiben auf dem Gerät. Was die App verarbeitet."
+  keywords:
+    - earnlock datenschutz
+    - earnlock datenschutzerklärung
+    - earnlock datenerfassung
+    - app ohne tracking
+    - app blocker ohne tracking
+    - datenschutzfreundliche app
+overview: >
+  EarnLock folgt beim Datenschutz einem einzigen Grundsatz: Deine Daten bleiben
+  auf deinem Gerät. Es gibt keinen EarnLock-Server. Nichts, was du in der App
+  tust, wird an uns oder an Dritte übertragen. Diese Seite beschreibt, welche
+  Daten die App nutzt und warum, statt dich mit vagen Versprechen um Vertrauen
+  zu bitten. In einem Satz: EarnLock liest deine Aktivitätsdaten aus Apple Health
+  und deine Auswahl gesperrter Apps nur auf dem Gerät, speichert sie nur auf dem
+  Gerät und nutzt sie nur auf dem Gerät, um festzustellen, ob du dein Tagesziel
+  erreicht hast. Wir sehen nichts davon. Apples Angabe unter „App-Datenschutz“ im App Store lautet für jede Version der App „Keine Daten erfasst“.
+
+data_collection: >
+  EarnLock erfasst keine personenbezogenen Daten. Die App liest drei Arten von
+  Informationen auf dem Gerät, und zwar nur, um die Sperre mit Tagesziel
+  umzusetzen: (1) Aktivitätsdaten aus HealthKit, also deine täglichen Schritte,
+  den aktiven Energieverbrauch und die Trainingsminuten. Damit prüft die App
+  deinen Fortschritt beim täglichen Aktivitätsziel, das deine ausgewählten Apps
+  freischaltet. HealthKit wird nur gelesen (wir schreiben nie in Health), nur auf
+  deinem Gerät gelesen und von EarnLock nie vom Gerät übertragen. Auch Apples
+  HealthKit-Framework selbst gibt diese Daten weder an uns noch an Dritte weiter.
+  Du kannst EarnLock den Zugriff auf Health jederzeit entziehen: in der App
+  „Einstellungen“ unter „Datenschutz &amp; Sicherheit“ → „Health“ → „EarnLock“.
+  (2) Family-Controls-Tokens für die Apps, die du sperren willst. Wenn du in der
+  Family-Controls-Auswahl von iOS Apps auswählst, gibt iOS EarnLock für jede
+  ausgewählte App ein anonymes Token, nicht den Namen, die Kennung oder
+  das Symbol der App. Diese Tokens liegen nur auf deinem Gerät, in einem
+  App-Group-Container, den die EarnLock-App mit ihren iOS-Erweiterungen teilt
+  (Shield, Shield Action, DeviceActivityMonitor sowie die Erweiterung für
+  Live-Aktivitäten und Widgets). Die Tokens sind nach Apples Konzept nicht lesbar: Selbst EarnLock kann nicht erkennen, welche App du ausgewählt
+  hast. Die Auswahl verlässt nie das Gerät, und du kannst sie jederzeit in EarnLock löschen („Einstellungen“ → „Gesperrte Apps“ →
+  „Bearbeiten“). (3) StoreKit-Transaktionen. Wenn du ein Abo abschließt oder „Lebenslang“ als Einmalkauf erwirbst, schickt Apple EarnLock ein verifiziertes
+  Transaktionsobjekt, das nur die Produkt-ID und den Berechtigungsstatus enthält.
+  Zahlungsdaten, Name, E-Mail-Adresse oder andere personenbezogene Daten sieht
+  die App nicht. Zahlungsabwicklung, Erstattungen und Aboverwaltung übernehmen
+  vollständig Apples StoreKit und der App Store, nicht EarnLock. EarnLock schreibt
+  nur einen einzigen Ja/Nein-Wert (isPremium) in den App-Group-Container, damit
+  Widgets und die Apple-Watch-App den richtigen Zustand anzeigen.
+
+data_storage: >
+  Alle EarnLock-Daten werden lokal auf deinem Gerät gespeichert, in der Sandbox
+  der App und in einem App-Group-Container, den sie mit ihren iOS-Erweiterungen
+  teilt. Es gibt überhaupt kein EarnLock-Backend: keine Server, keine Datenbanken,
+  keine Analyse-Pipeline. Der Verlauf deiner Serien, die Einträge im Reflexionsprotokoll, die Schätzungen eingesparter Bildschirmzeit und deine Auswahl
+  gesperrter Apps liegen in Apples Standard-Containern, die das iOS-Backup
+  einschließt, wenn du das iCloud-Backup aktiviert hast. Löschst du EarnLock von
+  deinem Gerät, werden der Container der App, der App-Group-Container und alles
+  darin entfernt.
+
+third_parties: >
+  EarnLock nutzt keine Analyse-, Werbe- oder Tracking-Dienste von Drittanbietern.
+  Die App enthält keinerlei SDKs von Drittanbietern: kein Firebase, Mixpanel,
+  Amplitude, Segment, Sentry oder Bugsnag, keine Werbenetzwerke und keine
+  Attributionsnetzwerke. EarnLock nutzt ausschließlich Apples eigene Frameworks:
+  SwiftUI, SwiftData, HealthKit, FamilyControls, ManagedSettings, DeviceActivity,
+  ActivityKit, WidgetKit, WatchConnectivity und StoreKit 2. Apple verarbeitet in
+  begrenztem Umfang Daten im Rahmen von Diensten, die du selbst nutzt, etwa bei
+  Käufen im App Store, beim Zugriff auf HealthKit und bei der Verbindung mit der
+  Apple Watch. Keine dieser Daten gelangt an EarnLock als Entwickler.
+
+sensitive_data: >
+  EarnLock liest Aktivitätsdaten aus HealthKit (Schritte, aktiver
+  Energieverbrauch, Trainingsminuten), um dein Tagesziel auszuwerten. Deine Nutzungsdaten aus „Bildschirmzeit“ in iOS liest die App nicht: Die Schätzung
+  der eingesparten Bildschirmzeit beruht auf einer Zählung auf dem Gerät, wie oft das Sperrschild dich davon abgehalten hat, eine gesperrte App zu öffnen. All das
+  bleibt nur auf dem Gerät und wird nie davon übertragen. EarnLock verkauft diese
+  Daten nicht, gibt sie nicht weiter und nutzt sie nicht für Werbung. Sie werden
+  nur für die App-eigenen Funktionen zur Zielverfolgung und für die Auswertungen
+  verwendet.
+
+children: >
+  EarnLock ist für Erwachsene gedacht, die die App auf ihrem eigenen iPhone
+  nutzen. Die App autorisiert Apples Family-Controls-Framework nur im Modus
+  .individual, nie im Modus .child, der für die Kindersicherung bei
+  minderjährigen Mitgliedern einer Familienfreigabe gedacht ist. EarnLock ist
+  Software zur Selbstbeschränkung, niemals eine Kindersicherung. Wir erfassen
+  wissentlich keine Daten von irgendjemandem, gleich welchen Alters.
+
+changes: >
+  Ändert sich diese Datenschutzerklärung, ändert sich auch das Datum bei „Stand“
+  oben auf dieser Seite. Wesentliche Änderungen werden in den Versionshinweisen
+  der App im App Store vermerkt.
+---
