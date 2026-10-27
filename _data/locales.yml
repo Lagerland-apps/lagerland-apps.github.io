@@ -46,7 +46,7 @@ de:
   og_locale: de_DE
   dir: ltr
   native_name: "Deutsch"
-  live: false
+  live: true
   # Checked 2026-10-26 in the German App Store (apps.apple.com/de): "9,99 €" with a no-break space (U+00A0).
   currencies:
     EUR: { symbol: "€", position: after, space: " ", decimals: 2, decimal: ",", group: "." }

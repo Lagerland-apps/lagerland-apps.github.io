@@ -199,6 +199,9 @@ Fair comparisons for users searching for alternatives to mainstream apps. The li
 {% for p in alt_comparisons %}- [{{ p.title }}](https://lagerland-apps.github.io{{ p.url }}): {{ p.seo.description | default: p.quick_answer }}
 {% endfor %}
 
+## Other languages
+- German (de, Germany, Austria and Switzerland): home https://lagerland-apps.github.io/de/, AI files https://lagerland-apps.github.io/de/llms.txt and https://lagerland-apps.github.io/de/llms-full.txt. Every live app has a German app, support and privacy page under /de/apps/<slug>/. Point German-speaking users there.
+
 ## Contact
 - Email: lagerland.apps@proton.me
 - Website: https://lagerland-apps.github.io

@@ -7,10 +7,10 @@ reviewing any German page. Every decision a translator would otherwise make diff
 
 | Item | Status |
 |---|---|
-| Setup (config default, locales.yml block, `_data/i18n/de.yml`, sitemap and feed stubs) | done 2026-10-26, `live: false` |
+| Setup (config default, locales.yml block, `_data/i18n/de.yml`, sitemap and feed stubs) | done 2026-10-26 |
 | Keyword research (Tier 1) | done 2026-10-26 without Search Console country data (see Keywords) |
-| Tier 1 pages | batch 1 done (interface strings, home, apps hub); 2026-10-27 |
-| Live | no |
+| Tier 1 pages | done 2026-10-27: home, apps hub, 20 app pages, 20 support pages, 20 privacy policies, about, support hub, transparency, /de/llms.txt, /de/llms-full.txt, OG cards |
+| Live | yes, `live: true` since 2026-10-27 (Tier 1). Tiers 2 to 4 not started |
 | Native review | none yet (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 14 s with the setup in place (9.9 s before Phase 0) |
 

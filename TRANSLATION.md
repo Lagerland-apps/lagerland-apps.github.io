@@ -17,7 +17,7 @@ Read order for any translation session: repo `CLAUDE.md`, then this file, then t
 | Item | Status |
 |---|---|
 | Phase 0 groundwork (section 4) | done 2026-10-26 (what it built: 4.16) |
-| Languages live | none |
+| Languages live | de (German), 2026-10-27: Tier 1 |
 
 Update this table in the same commit that finishes Phase 0 or launches a language. Per-language status
 (tiers done, open stale pages) lives in each language sheet.
