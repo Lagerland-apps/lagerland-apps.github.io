@@ -1,0 +1,44 @@
+# German words for _data/transparency.yml (facts stay there: counts, booleans, SDK names, dates).
+# Keyed by app slug, same field names as the English file. Pages in /de/ read words from here.
+# Fields filled so far: analytics (home page sample). The transparency page batch fills the rest.
+apps:
+  aftershift:
+    analytics: "Keine."
+  allpaid:
+    analytics: "Keine."
+  appmeta:
+    analytics: "Keine."
+  appmeta-pulse:
+    analytics: "Keine."
+  chessful:
+    analytics: "Keine."
+  earnlock:
+    analytics: "Keine."
+  gymlogger-x:
+    analytics: "Kein Analyse-SDK. Eine zufällige Installations-ID ordnet Weiterempfehlungen zu."
+  liftlog:
+    analytics: "Keine."
+  mediakit:
+    analytics: "Keine."
+  millrace:
+    analytics: "Keine."
+  observa:
+    analytics: "Keine."
+  pawza:
+    analytics: "Keine."
+  rightsplit:
+    analytics: "Keine."
+  mockly:
+    analytics: "Keine."
+  shogiful:
+    analytics: "Keine."
+  xiangqiful:
+    analytics: "Keine."
+  soon:
+    analytics: "Keine."
+  tare:
+    analytics: "Keine."
+  taskful-day:
+    analytics: "Keine."
+  wanderwiki:
+    analytics: "Keine."

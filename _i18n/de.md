@@ -9,7 +9,7 @@ reviewing any German page. Every decision a translator would otherwise make diff
 |---|---|
 | Setup (config default, locales.yml block, `_data/i18n/de.yml`, sitemap and feed stubs) | done 2026-10-26, `live: false` |
 | Keyword research (Tier 1) | done 2026-10-26 without Search Console country data (see Keywords) |
-| Tier 1 pages | not started |
+| Tier 1 pages | batch 1 done (interface strings, home, apps hub); 2026-10-27 |
 | Live | no |
 | Native review | none yet (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 14 s with the setup in place (9.9 s before Phase 0) |
@@ -176,6 +176,17 @@ Not translated as-is; each needs the owner's call or an English fix first. Detai
 
 ## Tells to cut in German (TRANSLATION.md 8.2, plus what reviews find)
 
+Found in reviews (batch 1, 2026-10-27): commas before „oder“/„und“ produced by templates (check rendered output,
+not just the YAML); „Gratis“ creeping in for "Free" outside trial wording (the site says „Kostenlos“; „gratis
+testen“ only for trials); „sie“ for „eine Person“ reads as "she", so rephrase when the subject is the developer;
+calques „datierte Updates“, „Deine Wahl“, „Hilfe bekommen“, „Siehe …“; „aus {count} Bewertungen“ (write „bei“);
+{n} patterns need singular forms („1 Tag“); short keyword stems („mac“, „sicher“) match ordinary words;
+„indie X for indie X“ calques repeat words; „Leben“ for game lives (write „Lebenssystem“); „Dark Patterns“ left in
+English (write „manipulative Tricks“); „Macher“ for "maker"; „kalkuliert“ for "priced" (it means costing: write
+„legt die Preise fest“); stacked noun chains copied from English comparisons („X für Y einer Z vorziehen“); „Kein X
+tut irgendetwas“ for "No X does anything"; „ohne Leben“ / „Lebenssystem“ for game lives (write „begrenzte
+Leben“); „dort“ as filler; a generic „Pro“ tier where the app's German UI says Premium or Pro+.
+
 Stock phrasing: „In der heutigen schnelllebigen Welt“, „Tauchen wir ein“, „Es ist wichtig zu beachten, dass“,
 „spielt eine entscheidende Rolle“, „nahtlos“, „maßgeschneidert“, „ganzheitlich“, „Zusammenfassend lässt sich
 sagen“, „nicht nur …, sondern auch …“. Translationese: split compounds, „Sinn machen“, English title case, du/Sie
@@ -195,7 +206,25 @@ mixed. Added for this site: „Erlebnis“ for "experience", „Lösung“ for a
 
 | Page | Writer | Humanizer + fact diff + glossary | Back-translation | Native review |
 |---|---|---|---|---|
-| `_data/i18n/de.yml` | main session | 2026-10-26 (self) | n/a | no native review yet |
+| `_data/i18n/de.yml` | main session | 2026-10-26 (self); reviewer agent 2026-10-27, 8 must-fix + 29 should-fix applied | n/a | no native review yet |
+| `/de/` home | writer agent | reviewer agent 2026-10-27, 2 must-fix + 15 should-fix applied (Pro tier label kept on stamps, see decisions) | 2026-10-27, 101 claims, matches English | no native review yet |
+| `/de/apps/` hub | writer agent | reviewer agent 2026-10-27, 0 must-fix + 8 should-fix (6 applied; "jede App" and the #health anchor are fine once all app pages exist) | n/a | no native review yet |
+
+## Decisions from reviews
+
+- App Store category words follow Apple's German App Store: „Wirtschaft“ (Business), „Entwickler-Tools“ (Developer
+  Tools). Reviewer's knowledge, not yet checked on a live storefront page.
+- The App Store badge is drawn as SVG text with Apple's German wording („Laden im“ / „App Store“); Apple asks for
+  its own badge artwork. Owner call whether to switch to Apple's de-de badge files.
+
+- Stamp and card price labels keep the generic „Kostenlos · Pro“ (English "Free · Pro"): it stands for "has a
+  paid upgrade" across all apps, as in English, and is short enough for the stamp. In running text name the tier
+  each app's German UI uses (Premium, Pro+, Pro), or say „optionale Abos“.
+- Taskful Day's devices on the home page are typed as „iPhone, iPad und Mac“, as on the English page, while the
+  catalog also lists watchOS. Known exception until the Watch open question is settled; then take the list from
+  the catalog.
+- Until all 20 app pages exist, the German home and hub show only apps with a German page while counts from the
+  catalog say 20. Go-live requires all 20, so this never ships.
 
 ## Apps still on English screenshots
 

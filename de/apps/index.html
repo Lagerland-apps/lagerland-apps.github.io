@@ -1,0 +1,192 @@
+---
+layout: default
+ref: /apps/
+permalink: /de/apps/
+translated_from: 2026-10-26
+title: "Apps ohne Werbung für iPhone, iPad und Mac"
+quick_answer: "Lagerland Apps bietet {APP_COUNT} Apps ohne Werbung für iPhone, iPad, Apple Watch und Mac an: für Gesundheit und Schlaf, Tagesplanung, Rechnungen und geteilte Ausgaben, Lesen, Spiele, Dateikonvertierung und die Arbeit mit App Store Connect. Keine davon trackt dich oder verlangt ein Konto. Alle stammen von einem einzigen unabhängigen Apple-Entwickler."
+seo:
+  title: "iPhone-Apps ohne Werbung: der Katalog von Lagerland Apps"
+  description: "Nützliche iPhone-Apps für Gesundheit, Planung, Finanzen und Entwicklertools, dazu Spiele, auch für iPad, Apple Watch und Mac. Ohne Tracking, ohne Werbung."
+  keywords:
+    - iphone apps ohne werbung
+    - beste iphone apps
+    - nützliche iphone apps
+    - apps ohne tracking
+    - mac apps ohne werbung
+    - apple watch apps ohne werbung
+    - datenschutzfreundliche apps
+    - indie entwickler apps
+last_updated: 2026-10-27
+---
+
+{%- include t.html -%}
+{%- assign live_apps = site.apps | where: "status", "live" -%}
+
+{%- comment %} Only apps that have a German page (TRANSLATION.md 6.3, writer brief). {% endcomment -%}
+{%- assign de_apps = '' | split: '' -%}
+{%- for app in live_apps -%}
+  {%- include tx-app.html app=app -%}
+  {%- unless tx_en -%}{%- assign de_apps = de_apps | push: app -%}{%- endunless -%}
+{%- endfor -%}
+
+{%- comment %} Clusters, computed up front so the overline can count the non-empty ones. {% endcomment -%}
+{%- assign c_health = '' | split: '' -%}
+{%- assign cats = 'health,fitness' | split: ',' -%}
+{%- for cat in cats -%}{%- assign m = de_apps | where: "category", cat -%}{%- assign c_health = c_health | concat: m -%}{%- endfor -%}
+{%- assign c_plan = '' | split: '' -%}
+{%- assign cats = 'productivity,lifestyle' | split: ',' -%}
+{%- for cat in cats -%}{%- assign m = de_apps | where: "category", cat -%}{%- assign c_plan = c_plan | concat: m -%}{%- endfor -%}
+{%- assign c_money = de_apps | where: "category", "finance" -%}
+{%- assign c_dev = '' | split: '' -%}
+{%- assign cats = 'developer-tools,business,graphics' | split: ',' -%}
+{%- for cat in cats -%}{%- assign m = de_apps | where: "category", cat -%}{%- assign c_dev = c_dev | concat: m -%}{%- endfor -%}
+{%- assign c_read = '' | split: '' -%}
+{%- assign cats = 'education,books' | split: ',' -%}
+{%- for cat in cats -%}{%- assign m = de_apps | where: "category", cat -%}{%- assign c_read = c_read | concat: m -%}{%- endfor -%}
+{%- assign c_games = de_apps | where: "category", "games" -%}
+{%- assign c_util = de_apps | where: "category", "utilities" -%}
+{%- assign n_cats = 0 -%}
+{%- if c_health.size > 0 -%}{%- assign n_cats = n_cats | plus: 1 -%}{%- endif -%}
+{%- if c_plan.size > 0 -%}{%- assign n_cats = n_cats | plus: 1 -%}{%- endif -%}
+{%- if c_money.size > 0 -%}{%- assign n_cats = n_cats | plus: 1 -%}{%- endif -%}
+{%- if c_dev.size > 0 -%}{%- assign n_cats = n_cats | plus: 1 -%}{%- endif -%}
+{%- if c_read.size > 0 -%}{%- assign n_cats = n_cats | plus: 1 -%}{%- endif -%}
+{%- if c_games.size > 0 -%}{%- assign n_cats = n_cats | plus: 1 -%}{%- endif -%}
+{%- if c_util.size > 0 -%}{%- assign n_cats = n_cats | plus: 1 -%}{%- endif -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/de/apps/#webpage",
+  "url": "{{ site.url }}/de/apps/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/de/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "de",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/de/" },
+      { "@type": "ListItem", "position": 2, "name": "Apps", "item": "{{ site.url }}/de/apps/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Lagerland Apps: alle Apps",
+    "numberOfItems": {{ de_apps.size }},
+    "itemListElement": [
+      {%- for app in de_apps -%}
+      {%- include tx-app.html app=app -%}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "url": "{{ site.url }}{{ tx_app.url }}",
+        "name": {{ app.name | jsonify }},
+        "description": {% capture list_desc %}{% include app-text.html app=app text=tx_app.seo.description %}{% endcapture %}{{ list_desc | default: tx_app.tagline | jsonify }}
+      }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">{% if de_apps.size > 0 %}{{ de_apps.size }} {% if de_apps.size == 1 %}App{% else %}Apps{% endif %} · {{ n_cats }} {% if n_cats == 1 %}Kategorie{% else %}Kategorien{% endif %} · {% endif %}100&nbsp;% datenschutzfreundlich</p>
+    <h1 class="h1">Apps ohne Werbung für <span class="gradient-text">iPhone, iPad und Mac.</span></h1>
+    <p class="lead">Hier findest du jede App von Lagerland Apps, sortiert nach dem Problem, das sie löst. Keine davon trackt dich, zeigt Werbung oder verlangt ein Konto. Entwickelt und veröffentlicht werden alle von einem einzigen unabhängigen Apple-Entwickler.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#health">Apps ansehen</a>
+      <a class="btn btn-secondary" href="{% include l.html url="/#faq" %}"{% if l_en %} hreflang="en"{% endif %}>So funktioniert’s{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg">
+
+  {%- if c_health.size > 0 -%}
+    <div id="health" class="section reveal">
+      <h2 class="h2">Gesundheit, Schlaf und Erholung</h2>
+      <p class="lead">Diese Apps helfen dir, deinen Körper, deinen Schlaf und dein Training zu verstehen, ohne dass deine Gesundheitsdaten bei Werbefirmen landen. Sie passen zu Leuten, die Apple Health intensiv nutzen, zu Schichtarbeitenden und zu allen, die lieber ihre Erholung verfolgen als Zahlen zum Angeben.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_health -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_plan.size > 0 -%}
+    <div id="plan" class="section reveal">
+      <h2 class="h2">Tagesplaner und Countdowns für besondere Anlässe</h2>
+      <p class="lead">Planer, Countdown-Apps und ruhige Apps für deine Aufgaben. Deine Daten bleiben lokal und privat, und jede dieser Apps soll deinen Tag ein bisschen weniger voll wirken lassen.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_plan -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_money.size > 0 -%}
+    <div id="money" class="section reveal">
+      <h2 class="h2">Geld, Rechnungen und Abos</h2>
+      <p class="lead">Behalte Rechnungen im Blick, teile gemeinsame Ausgaben auf und sieh Fälligkeiten, bevor sie verstreichen. Deine Finanzdaten bleiben auf deinem Gerät. Du brauchst kein Konto, und nichts wird mit der Cloud eines Drittanbieters synchronisiert.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_money -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_dev.size > 0 -%}
+    <div id="developer" class="section reveal">
+      <h2 class="h2">Entwicklertools für Apple-Plattformen</h2>
+      <p class="lead">Native Apps für macOS und iOS rund um App Store Connect: Metadaten bearbeiten, Umsätze im Auge behalten und lokalisierte Screenshots erstellen. Ein unabhängiger iOS-Entwickler hat sie für andere unabhängige iOS-Entwickler gebaut.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_dev -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_read.size > 0 -%}
+    <div id="reading" class="section reveal">
+      <h2 class="h2">Lesen und Entdecken</h2>
+      <p class="lead">Lange Texte und Wikipedia so lesen, wie du es willst: in Apps ohne Feed, die auch offline funktionieren.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_read -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_games.size > 0 -%}
+    <div id="games" class="section reveal">
+      <h2 class="h2">Spiele ohne Werbung, begrenzte Leben und manipulative Tricks</h2>
+      <p class="lead">Puzzle- und Brettspiele zum konzentrierten Spielen. Es gibt keine Energie-Timer, keine erzwungene Werbung und keinen künstlichen Zeitdruck, der nur die Nutzungszahlen nach oben treiben soll.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_games -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_util.size > 0 -%}
+    <div id="utilities" class="section reveal">
+      <h2 class="h2">Dienstprogramme und Dateikonvertierung</h2>
+      <p class="lead">Apps für den Mac, die Dateien lokal konvertieren, und weitere Dienstprogramme. Deine Dateien verlassen dein Gerät nie, deshalb geht nichts an ein Web-Tool, und es gibt kein Kontingent.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_util -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Neu bei Lagerland Apps?</p>
+  <h2 class="h2">Fang mit Observa an</h2>
+  <p class="lead">Observa ist unsere meistinstallierte App. Sie wertet die Daten, die schon in Apple Health liegen, privat aus und macht daraus Antworten in verständlicher Sprache.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/observa/" %}"{% if l_en %} hreflang="en"{% endif %}>Mehr über Observa{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/lagerland-apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Über den Entwickler{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>
