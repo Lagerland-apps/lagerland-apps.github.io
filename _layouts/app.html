@@ -718,7 +718,7 @@ layout: default
   </section>
 
   {% comment %} ===== ALTERNATIVES TO X (branded competitor SEO) ===== {% endcomment %}
-  {% include alternatives.html app=m %}
+  {% include alternatives.html app=m tx=page %}
 
   {% comment %} ===== YOU MIGHT ALSO LIKE ===== {% endcomment %}
   {% include you-might-like.html app=m %}
@@ -755,13 +755,19 @@ layout: default
         </ul>
         {% endif %}
         {% if page.who_for %}
-        <p><strong>{{ t.qr_best_for }}</strong> {{ page.who_for | join: "; " }}.</p>
+        {%- comment %} Items written as full sentences (ending in a period, as on German pages) are joined with spaces;
+          short English phrases with "; " and a closing period. {% endcomment -%}
+        {%- assign qr_list = page.who_for | join: "; " -%}{%- assign qr_end = qr_list | slice: -1, 1 %}
+        <p><strong>{{ t.qr_best_for }}</strong> {% if qr_end == "." %}{{ page.who_for | join: " " }}{% else %}{{ qr_list }}.{% endif %}</p>
         {% endif %}
         {% if page.who_not_for %}
-        <p><strong>{{ t.qr_not_for }}</strong> {{ page.who_not_for | join: "; " }}.</p>
+        {%- comment %} Items written as full sentences (ending in a period, as on German pages) are joined with spaces;
+          short English phrases with "; " and a closing period. {% endcomment -%}
+        {%- assign qr_list = page.who_not_for | join: "; " -%}{%- assign qr_end = qr_list | slice: -1, 1 %}
+        <p><strong>{{ t.qr_not_for }}</strong> {% if qr_end == "." %}{{ page.who_not_for | join: " " }}{% else %}{{ qr_list }}.{% endif %}</p>
         {% endif %}
         {% if m.alternatives_to %}
-        <p><strong>{{ t.qr_alternative_to }}</strong> {{ m.alternatives_to | join: ", " }}.</p>
+        <p><strong>{{ t.qr_alternative_to }}</strong> {{ page.alternatives_labels | default: m.alternatives_to | join: ", " }}.</p>
         {% endif %}
         {% if extra.use_cases %}
         <p><strong>{{ t.qr_use_cases }}</strong></p>

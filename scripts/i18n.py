@@ -40,7 +40,7 @@ APP_FACT_KEYS = ("name", "category", "status", "app_store_url", "price", "schema
                  "related_apps", "support", "show_body", "jump_nav", "free_tier", "redirect_from", "plans_kind")
 APP_FACT_SUBKEYS = {"hero": ("device", "video", "video_poster"),
                     "privacy": ("tracking", "account_required", "policy_url"),
-                    "founder": ("entity_type", "support_email", "photo"),
+                    "founder": ("entity_type", "support_email", "photo", "name"),
                     "related_journal": ("slug",)}
 PLAN_FACT_KEYS = ("kind", "highlight")
 # `price` is the plan card's display string: tokens plus words ("{P_LIFETIME} once"), so it is translated.
@@ -448,6 +448,12 @@ def check_app(repo, pg, F):
                 if not nonempty(b.get("note")):
                     F.err("text field the English master has is missing", where, "release_notes[%d].note" % i)
     shots = m.get("screenshots") or []
+    al = fm.get("alternatives_labels")
+    if al is not None:
+        ma = m.get("alternatives_to") or []
+        if not isinstance(al, list) or len(al) != len(ma):
+            F.err("alternatives_labels must have the master's alternatives_to length", where,
+                  "master %d, translation %s" % (len(ma), len(al) if isinstance(al, list) else "not a list"))
     caps = fm.get("screenshot_captions")
     if any(isinstance(s, dict) and (s.get("alt") or s.get("caption")) for s in shots):
         if not isinstance(caps, list):
@@ -601,16 +607,27 @@ def check_screenshots(repo, F, trans):
 class Visible(HTMLParser):
     """Visible text of a page plus alt/aria-label/title attribute values; skips script and style."""
 
-    def __init__(self):
+    VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
+
+    def __init__(self, page_lang=None):
         super().__init__(convert_charrefs=True)
         self.chunks, self.anchors, self._skip = [], [], 0
         self.refresh = False
+        # Text inside an element whose lang differs from the page's (a review quoted in English, an app name
+        # with lang="en") is meant to stay in that language, so it is not checked for leftover English.
+        self.page_lang, self._stack = page_lang, []
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if tag in ("script", "style"):
             self._skip += 1
             return
+        if tag not in self.VOID:
+            other = bool(self.page_lang and a.get("lang") and a.get("lang") != self.page_lang
+                          and tag not in ("html",))
+            self._stack.append((tag, other))
+            if other:
+                self._skip += 1
         if tag == "meta" and (a.get("http-equiv") or "").lower() == "refresh":
             self.refresh = True
         if tag == "a":
@@ -622,6 +639,14 @@ class Visible(HTMLParser):
     def handle_endtag(self, tag):
         if tag in ("script", "style") and self._skip:
             self._skip -= 1
+            return
+        for i in range(len(self._stack) - 1, -1, -1):
+            if self._stack[i][0] == tag:
+                for _t, other in self._stack[i:]:
+                    if other and self._skip:
+                        self._skip -= 1
+                del self._stack[i:]
+                break
 
     def handle_data(self, d):
         if not self._skip:
@@ -666,7 +691,7 @@ def check_built(repo, F, site, imap, i18n_data, en_strings):
                 fp = os.path.join(dp, fn)
                 rel = "/" + os.path.relpath(fp, site).replace(os.sep, "/")
                 url = rel[:-10] if rel.endswith("/index.html") else rel
-                v = Visible()
+                v = Visible(code)
                 v.feed(open(fp, encoding="utf-8", errors="replace").read())
                 if v.refresh:
                     continue

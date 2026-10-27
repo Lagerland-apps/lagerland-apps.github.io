@@ -33,7 +33,7 @@
 {% if w.who_not_for %}{{ lf.not_for }}
 {% for wf in w.who_not_for %}- {{ wf }}
 {% endfor %}{% endif %}
-{% if app.alternatives_to %}{{ lf.alternative_to }} {{ app.alternatives_to | join: ", " }}
+{% if app.alternatives_to %}{{ lf.alternative_to }} {{ w.alternatives_labels | default: app.alternatives_to | join: ", " }}
 {% endif %}
 {%- if lf_lang == "en" -%}{%- assign extra = site.data.app_enrichment[app.slug] -%}{%- else -%}{%- assign extra = w.enrichment -%}{%- endif -%}
 {% if extra.use_cases %}{{ lf.use_cases }}

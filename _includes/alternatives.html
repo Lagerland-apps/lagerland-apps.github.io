@@ -12,6 +12,10 @@
 
 {%- if include.app.alternatives_to and include.app.alternatives_to.size > 0 -%}
 {%- assign al_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- comment %} Competitor names are facts (the master's alternatives_to, also the key into alt_pairs). A translated page
+  may relabel entries that carry English words ("Apple Health (for interpretation)") with `alternatives_labels`,
+  same length and order. {% endcomment -%}
+{%- assign al_labels = include.tx.alternatives_labels -%}
 {%- comment %} Comparison pages are linked in the page's language when translated, otherwise in English with the
   marker (TRANSLATION.md 7.6). {% endcomment -%}
 {%- capture al_hub -%}{% include l.html url="/alternatives/" %}{%- endcapture -%}{%- assign al_hub_en = l_en -%}
@@ -57,9 +61,9 @@
       <li>
         {%- if competitor_slug != "" -%}
           {%- assign al_url = "/alternatives/" | append: competitor_slug | append: "/" -%}
-          <a class="pair-row" href="{% include l.html url=al_url %}"{% if l_en %} hreflang="en"{% endif %}><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ competitor }}</span><span class="pair-row__go">{{ al_t.alt_read }}{% if l_en %} <span class="en-marker">{{ al_t.english_marker }}</span>{% endif %}</span></a>
+          <a class="pair-row" href="{% include l.html url=al_url %}"{% if l_en %} hreflang="en"{% endif %}><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ al_labels[forloop.index0] | default: competitor }}</span><span class="pair-row__go">{{ al_t.alt_read }}{% if l_en %} <span class="en-marker">{{ al_t.english_marker }}</span>{% endif %}</span></a>
         {%- else -%}
-          <span class="pair-row"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ competitor }}</span><span class="pair-row__go">{{ al_t.alt_coming }}</span></span>
+          <span class="pair-row"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ al_labels[forloop.index0] | default: competitor }}</span><span class="pair-row__go">{{ al_t.alt_coming }}</span></span>
         {%- endif -%}
       </li>
     {%- endfor -%}
@@ -98,9 +102,9 @@
       <li>
         {%- if competitor_slug != "" -%}
         {%- assign al_url = "/alternatives/" | append: competitor_slug | append: "/" -%}
-        <a class="pair-row" href="{% include l.html url=al_url %}"{% if l_en %} hreflang="en"{% endif %}><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ competitor }}</span><span class="pair-row__go">{{ al_t.alt_read }}{% if l_en %} <span class="en-marker">{{ al_t.english_marker }}</span>{% endif %}</span></a>
+        <a class="pair-row" href="{% include l.html url=al_url %}"{% if l_en %} hreflang="en"{% endif %}><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ al_labels[forloop.index0] | default: competitor }}</span><span class="pair-row__go">{{ al_t.alt_read }}{% if l_en %} <span class="en-marker">{{ al_t.english_marker }}</span>{% endif %}</span></a>
         {%- else -%}
-        <span class="pair-row"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ competitor }}</span><span class="pair-row__go">{{ al_t.alt_coming }}</span></span>
+        <span class="pair-row"><span class="pair-row__names">{{ include.app.name }} <span class="pair-row__vs">{{ al_t.alt_vs }}</span> {{ al_labels[forloop.index0] | default: competitor }}</span><span class="pair-row__go">{{ al_t.alt_coming }}</span></span>
         {%- endif -%}
       </li>
     {%- endfor -%}

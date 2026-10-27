@@ -70,7 +70,8 @@
       <div>
         {%- assign pr_card_title = pr_t.pricing_card_title | replace: "{name}", include.app.name %}
         <div class="card-title">{{ pr_card_title }}</div>
-        <div class="card-text">{{ pr_t.pricing_card_text }}</div>
+        {%- comment %} An app sold with an upfront price has nothing to cancel. {% endcomment %}
+        <div class="card-text">{% if f_app_free == false %}{{ pr_t.pricing_card_text_once }}{% else %}{{ pr_t.pricing_card_text }}{% endif %}</div>
       </div>
       <div class="price-pill">{{ f_price_value | default: pr_t.see_app_store }}</div>
     </div>
