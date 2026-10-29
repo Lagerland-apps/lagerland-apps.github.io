@@ -14,29 +14,29 @@ seo:
     - free first chapter
     - family sharing in-app purchase
     - offline puzzle game no ads
-lede: "Tare is out today as a free download. Chapter I's 20 levels are free for good, and one {P_IAP:Tare Full Access@tare} purchase opens the rest (60 levels at launch, 180 since the ten-chapter update). There are no ads or subscriptions and nothing else to buy. Below is the whole model in one table, the paid-app plan it replaced, and the story of a purchase so quiet that App Review couldn't find it."
-quick_answer: "Tare is a free download for iPhone and iPad. Its first chapter, 20 levels, is free for good and is not a trial. One {P_IAP:Tare Full Access@tare} non-consumable in-app purchase unlocks Chapters II to X, the other 180 levels, permanently, and Family Sharing covers your family group. Version 1.0 has no ads, subscription, consumables, lives or energy, and nothing else to buy. Hints are paid for with a level's third star, never with money, and stars and chapter canvases are earned by playing. The purchase is offered from the chapter wall, the unlit levels of the paid chapters and Settings, and it is never pushed at launch or after a solve. Restore purchases is always in Settings and on the unlock screen. Once granted, the unlock is removed only if the App Store reports the purchase revoked; a store that can't be reached never removes it. Chapters still open in order after buying: Chapter II opens when 16 of Chapter I's 20 levels are solved. The game has no networking code or analytics, and its App Store privacy label reads Data Not Collected."
+lede: "Tare is out today as a free download. Chapter I's 20 levels are free for good, and one {P_IAP:Tare Full Access@tare} purchase opens the rest (60 levels at launch, 180 in the ten-chapter game). There are no ads or subscriptions and nothing else to buy. Below is the whole model in one table, the paid-app plan it replaced, and the story of a purchase so quiet that App Review couldn't find it."
+quick_answer: "Tare is a free download for iPhone and iPad. Its first chapter, 20 levels, is free for good and is not a trial. One {P_IAP:Tare Full Access@tare} non-consumable in-app purchase unlocks Chapters II to X, the other 180 levels, permanently, and Family Sharing covers your family group. Tare has no ads, subscription, consumables, lives, or energy, and nothing else to buy. Hints are paid for with a level's third star, never with money, and stars and chapter canvases are earned by playing. The purchase is offered from the chapter wall, the unlit levels of the paid chapters and Settings, and it is never pushed at launch or after a solve. Restore purchases is always in Settings and on the unlock screen. Once granted, the unlock is removed only if the App Store reports the purchase revoked; a store that can't be reached never removes it. Chapters still open in order after buying. The game opens no network connections of its own, has no analytics, and its App Store privacy label reads Data Not Collected."
 faq:
   - q: "Is Tare free?"
     a: "The download is free, and Chapter I, 20 full levels, is free for good. It is not a timed trial, and nothing in it is gated. One {P_IAP:Tare Full Access@tare} purchase unlocks Chapters II to X, the other 180 levels. The app takes the price from the App Store and shows it in your local currency."
   - q: "Is Tare a subscription?"
-    a: "No. The unlock is a single non-consumable in-app purchase that you pay for once and keep. There is no subscription, consumable, in-game currency or energy meter, and the launch plan rules out consumables and subscriptions for good."
+    a: "No. The unlock is a single non-consumable in-app purchase that you pay for once and keep. There is no subscription, consumable, in-game currency, or energy meter."
   - q: "Does Tare have ads?"
-    a: "No. Tare has no ads, analytics or third-party SDKs, and it contains no networking code, so it plays the same in airplane mode. Its App Store privacy label reads Data Not Collected, and the purchase leaves that unchanged: Apple's own store handles it, and the game keeps only the fact that the chapters are unlocked."
+    a: "No. Tare has no ads, analytics, or third-party SDKs, and it opens no network connections of its own, so it plays the same in airplane mode. Its App Store privacy label reads Data Not Collected, and the purchase leaves that unchanged: Apple's own store handles it, and the game keeps only the fact that the chapters are unlocked."
   - q: "Does the purchase work with Family Sharing, and how do I restore it?"
     a: "Family Sharing is on, so one purchase covers your family group. To restore on a new iPhone or iPad, open Settings in the game and tap Restore purchases; the unlock screen has the same button. Both are always visible, whether or not you have bought anything."
   - q: "I bought the unlock. Why is Chapter II still closed?"
-    a: "Chapters open in order whether you have bought the unlock or not. Chapter II opens once you have solved 16 of Chapter I's 20 levels, and each later chapter opens the same way from the one before. The unlock screen says so before you pay. Within a chapter you can skip ahead past up to three unsolved levels."
-  - q: "Will Tare go on sale?"
-    a: "There is no launch discount, and the launch plan rules out discounts for the first year. For at least that year, buying now does not mean paying more than someone who waits for a sale."
+    a: "Chapters open in order whether you have bought the unlock or not. Keep solving Chapter I and Chapter II opens, and each later chapter opens the same way from the one before. The unlock screen says so before you pay. Within a chapter you can skip ahead past up to three unsolved levels."
+  - q: "Did Tare launch with a discount?"
+    a: "No. Tare launched at its regular price, with no introductory discount. The launch plan judged that a lower price would cost more in credibility than it would earn."
 mentioned_apps:
   - tare
 read_time: "7 min read"
 excerpt: "Tare's pricing on launch day: 20 levels free, one {P_IAP:Tare Full Access@tare} non-consumable for the other 180 with Family Sharing, and no ads, subscription or consumables. What's free, what's never sold, where the offer appears and where it doesn't, and the reasons for each decision."
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
-> **Update, version 1.1:** Tare now has 200 levels in ten chapters of twenty. Chapter I is still free, and the one purchase now unlocks Chapters II to X, the other 180 levels. This post is the launch-day record of version 1.0, which had 80 levels, so the table, button names and chapter numbers below describe Chapters II to IV.
+> **Note:** Tare has 200 levels in ten chapters of twenty. Chapter I is free, and the one purchase unlocks Chapters II to X, the other 180 levels. This post is the launch-day record of version 1.0, which had 80 levels, so the table, button names, and chapter numbers below describe Chapters II to IV.
 
 
 [Tare](/apps/tare/) is out today, and the price fits in a sentence: the download and the first 20 levels are free for good, and one {P_IAP:Tare Full Access@tare} purchase opens the other 60. There are no ads or subscriptions and nothing else to buy.
@@ -76,19 +76,19 @@ On 1 September I played the first two finished chapters and found every level a 
 
 A free chapter settles the screenshot question. By the time anyone sees the price, they have solved twenty levels, read their first picture cards and watched a "?" open. The launch plan now leaves the persuading to the free chapter instead of the price tag. The store description says exactly what's free in its second line, because a free listing that doesn't say so reads like a demo.
 
-## Why {P_IAP:Tare Full Access@tare}, and why it won't be on sale
+## Why {P_IAP:Tare Full Access@tare}, with no launch discount
 
 {P_IAP:Tare Full Access@tare} is the lowest price that, by the launch plan's judgement, still reads as something crafted and not a trinket. It is set once in US dollars, with worldwide automatic pricing.
 
-There is no launch discount, and the plan rules out discounts for the first year. It reckons that no price below {P_IAP:Tare Full Access@tare} would earn back what it costs in credibility. For the first year at least, that also means nobody who buys early pays more than someone who waits for a sale.
+There was no launch discount. The plan reckons that no price below {P_IAP:Tare Full Access@tare} would earn back what it costs in credibility.
 
 ## Why no ads, subscription or consumables
 
-Tare has no networking code. It plays the same in airplane mode, and its App Store privacy label reads Data Not Collected. Ads would bring network code and a third-party SDK into a game built to have neither.
+Tare opens no network connections of its own. It plays the same in airplane mode, and its App Store privacy label reads Data Not Collected. Ads would bring network connections and a third-party SDK into a game built to have neither.
 
 The purchase leaves the label as it was. StoreKit is Apple's own store, not an SDK the game reports through. The game records nothing about the purchase beyond the fact that the chapters are open, and no analytics are attached to the offer, neither when it is shown nor when it is dismissed.
 
-Subscriptions and consumables are ruled out entirely; the plan's words are "no consumables, no subscriptions, ever". The blueprint describes Tare as a crafted object, and it is sold like one, once. Hints cost a star. Nothing in a level can be bought, and stars and canvases can only be earned. If anything else is ever sold, the plan limits it to optional cosmetic theme packs released alongside free levels, and the canvases you earn would never be part of them.
+The launch plan ruled out subscriptions and consumables in so many words: "no consumables, no subscriptions, ever". The design brief describes Tare as a crafted object, and it is sold like one, once. Hints cost a star. Nothing in a level can be bought, and stars and canvases can only be earned.
 
 ## Family Sharing, restoring, and keeping the unlock
 
@@ -98,7 +98,7 @@ Restore purchases is always visible, in Settings and on the unlock screen, wheth
 
 Once granted, the unlock stays. The app clears it only when the App Store reports the purchase revoked, for example after a refund, and never because the store couldn't be reached. The design rules out locking a paying player out of an offline game to re-check a purchase.
 
-Chapters still open in order. Chapter II opens when 16 of Chapter I's 20 levels are solved, and the unlock screen says the chapters open in order before you pay, so buying at level 3 holds no surprise. Within a chapter you can skip past up to three unsolved levels, so no single puzzle walls you off.
+Chapters still open in order. Chapter II opens as you work through Chapter I, and the unlock screen says the chapters open in order before you pay, so buying at level 3 holds no surprise. Within a chapter you can skip past up to three unsolved levels, so no single puzzle walls you off.
 
 There are no error codes. If the App Store doesn't answer, the unlock screen shows Try again, with Restore and the terms still there, and the button on the wall stays where it was.
 
@@ -110,7 +110,7 @@ So on 1 October the same Open Chapters II-IV button went into Settings, directly
 
 ## Ratings and sharing
 
-Tare asks for a rating only with Apple's standard prompt, and only in two places: when you finish Chapter II and when you finish Chapter IV, and only if you've solved at least three levels in that session. That count lives in memory and is never saved. Finishing the free chapter never triggers the prompt, so it can't appear anywhere near the purchase.
+Tare asks for a rating only with Apple's standard prompt, and only in two places: when you finish Chapter II and when you finish Chapter IV, and only if you've solved at least three levels in that session. Finishing the free chapter never triggers the prompt, so it can't appear anywhere near the purchase.
 
 Settings also has a Share Tare row. It hands the system share sheet the plain App Store link with no campaign or referrer parameter, because in the plan's words a shared link that reports who shared it is "analytics by another name". The [privacy policy](/apps/tare/privacy/) lists what stays on your device.
 

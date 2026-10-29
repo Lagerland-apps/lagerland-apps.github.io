@@ -29,12 +29,12 @@ faq:
   - q: "Do I need to memorise joseki to play shogi?"
     a: "Not at first. Joseki are the standard opening sequences, and knowing why each move is played matters more than knowing the sequence. Learn one family, its castle and its main pawn break, and learn the punishment for the one or two natural-looking moves that lose material early, such as walking the king before the bishop covers 8f against Gote's rook pawn."
   - q: "How does Shogiful teach shogi openings?"
-    a: "Through three parts of the app. The Openings lesson track has ten lessons, from choosing your rook to choosing your opening. Joseki Lab has 55 opening lines in 11 families, where you play your own side's moves and the opponent's replies are played for you, with a note at the key moments and the refutation shown if you play a known sideline. Castle Atelier drills building, breaking and repairing twelve castles. Game Review also shows a badge naming the castle you built in each analysed game."
+    a: "Through three parts of the app. The Openings lesson track runs from choosing your rook to choosing your opening. Joseki Lab has 55 opening lines in 11 families, where you play your own side's moves and the opponent's replies are played for you, with a note at the key moments and the refutation shown if you play a known sideline. Castle Atelier drills building, breaking and repairing twelve castles. Game Review also shows a badge naming the castle you built in each analysed game."
 mentioned_apps:
   - shogiful
 read_time: "8 min read"
 excerpt: "Every shogi opening answers one question first: where does the rook live? This beginner's map covers Static Rook against Ranging Rook, the main systems and the castles that go with them, the Fourth File Rook and Bishop Exchange written out move by move, and how to choose a first opening."
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 Every shogi opening starts with one decision: does your rook stay where it started, or does it move across the board? Shogi players call the two answers **Static Rook** (居飛車, *ibisha*) and **Ranging Rook** (振り飛車, *furibisha*), and nearly every named opening belongs to one of them. Once you know which family you are in, you know roughly where your king will castle and which file your attack will come down.
@@ -106,12 +106,12 @@ Leave Side Pawn Capture and the deep Bishop Exchange lines for later. Both turn 
 
 [Shogiful](/apps/shogiful/) splits opening study into three parts.
 
-**The Openings lesson track** has ten lessons. It starts with "Choosing your rook" and covers Static Rook basics, the Ranging Rook families, Fourth File, Central, Third File and Opposing Rook, Climbing Silver and the Bishop Exchange. It ends with "Choosing your opening", which gives the same advice as above: one family, its castle and its main attack.
+**The Openings lesson track** starts with "Choosing your rook" and covers Static Rook basics, the Ranging Rook families, Fourth File, Central, Third File and Opposing Rook, Climbing Silver and the Bishop Exchange. It ends with "Choosing your opening", which gives the same advice as above: one family, its castle and its main attack.
 
 **Joseki Lab** has 55 opening lines in 11 families: Static Rook, Ranging Rook, Fourth File Rook, Third File Rook, Central Rook, Side Pawn Capture, Bishop Exchange, Yagura, Right Fourth File, Anaguma Openings and Double Static Rook. You play your own side's moves and the opponent's replies are played for you. Short notes appear at the moments that matter, under "What just happened". If you play a known sideline, the drill explains how it is punished instead of just marking it wrong. Where the opponent has a second main defence, a card shows it to you. Lines you miss come back sooner through spaced repetition. The two lines above are Joseki Lab lines, and the move notes are condensed from their commentary.
 
 The lines did not always go that far. Until early August, 38 of the 55 contained no capture at all. Each one built the formation and stopped exactly where the real game starts, so the Climbing Silver line ended the moment the silver reached 2f. A two-star App Store review pointed it out before any test did. Every line now plays through the first exchange of pieces, and each family shows two defences in full.
 
-**Castle Atelier** drills twelve castles, from Mino and Yagura to both Anagumas. You build them, break into them, and repair them after an intrusion. After each analysed game, Game Review shows a badge naming the castle you actually built. YaneuraOu runs the analysis on your device, so there is no account and no server.
+**Castle Atelier** drills twelve castles, from Mino and Yagura to both Anagumas. You build them, break into them, and repair them after an intrusion. After each analysed game, Game Review shows a badge naming the castle you actually built. YaneuraOu runs the analysis on your device, and you need no account.
 
-Shogiful is free to download, with Premium from {P_MONTHLY@shogiful} a month, {P_YEARLY@shogiful} a year or {P_LIFETIME@shogiful} once. If you would rather try openings against people, the online platforms such as [Lishogi](/alternatives/lishogi/) and [81Dojo](/alternatives/81dojo/) are built for that, and [the guide to shogi apps for iPhone](/guides/best-shogi-apps-iphone/) covers the rest of the field.
+Shogiful is free to download, with Premium at {P_MONTHLY@shogiful} a month, {P_YEARLY@shogiful} a year, or {P_LIFETIME@shogiful} once. If you would rather try openings against people, the online platforms such as [Lishogi](/alternatives/lishogi/) and [81Dojo](/alternatives/81dojo/) are built for that, and [the guide to shogi apps for iPhone](/guides/best-shogi-apps-iphone/) covers the rest of the field.
