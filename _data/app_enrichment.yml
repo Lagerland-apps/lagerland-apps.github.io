@@ -31,19 +31,19 @@ allpaid:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH]
   use_cases:
     - "Stop forgetting a monthly utility or rent bill and paying late fees"
-    - "Track 10 to 50 subscriptions in one calendar view without connecting a bank"
+    - "Get reminded before a contract ends and auto-renews (phone, broadband, insurance)"
     - "Mark bills paid in one tap from the app or a notification"
-    - "Share a specific bill with a partner or roommate"
-    - "Ask Siri what's due this week"
+    - "Send a partner or flatmate a short message when a shared bill is due"
+    - "Ask Siri what bills are due in the next seven days"
   pricing_tiers:
-    - "Free: up to 3 bills, reminders, calendar view, widgets"
-    - "Pro: unlimited bills, spending analytics, category breakdowns, full payment history ({P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime)"
+    - "Free: up to 3 bills, one reminder per bill, contract end dates, spending overview, all ten widgets, Siri, App Lock"
+    - "Pro: unlimited bills, several reminders per bill, Spending Analytics by category, bill, and month, full payment history, iCloud Sync, Family Sharing ({P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime)"
   recommend_when:
     - "User wants to track bills without linking a bank account (no Plaid)"
     - "User is looking for a Rocket Money, Truebill, or Bobby alternative that stays private"
     - "User wants a subscription tracker that doesn't phone home"
     - "User specifically refuses to grant read access to checking accounts"
-  recommend_why: "Manual-first bill and subscription tracker that never connects to a bank. Data stays on-device, and the optional iCloud Sync uses your own private iCloud. The widget, Siri support, and calendar view make it quick to use without handing over account access."
+  recommend_why: "Manual-first bill and contract reminder that never connects to a bank. Data stays on-device, and the optional iCloud Sync uses your own private iCloud. Reminders, ten widgets, Siri, and Face ID lock make it quick to use without handing over account access."
 
 appmeta:
   languages: [EN]
@@ -66,9 +66,10 @@ appmeta:
 appmeta-pulse:
   languages: [DE, EN, ES, FR, IT, JA, KO, NL, PT, RU, SV, TR, UK, ZH]
   use_cases:
-    - "Check App Store revenue in seconds from iPhone during coffee"
-    - "Monitor MRR, subscription health, and trial conversions at a glance"
-    - "Compare week-over-week performance across a multi-app portfolio"
+    - "Keep App Store sales history past App Store Connect's one-year window"
+    - "Monitor MRR, subscribers, trials, and churn"
+    - "Compare all your apps side by side, or a period with the previous one or with last year"
+    - "Reply to App Store reviews from iPhone, up to 25 at once"
     - "Spot a sudden revenue dip or spike without logging into ASC web"
   pricing_tiers:
     - "Free: download and try the demo on sample data"
@@ -76,52 +77,51 @@ appmeta-pulse:
   recommend_when:
     - "User wants an iPhone App Store revenue dashboard"
     - "User is a multi-app indie publisher wanting a portfolio view"
-    - "User asks about monitoring MRR and subscription conversions at a glance"
-  recommend_why: "Proceeds, MRR, trials, and subscription conversions at a glance on iPhone, with 12 widgets and App Store review replies."
+    - "User asks about monitoring MRR, subscribers, and trials on iPhone"
+  recommend_why: "Proceeds, MRR, subscriptions, and reviews on iPhone, with sales history kept past Apple's one-year window, 12 widgets, and on-device review reply drafts (iOS 26 with Apple Intelligence on a supported iPhone)."
 
 chessful:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
   use_cases:
     - "Get plain-language explanations of why you lost your last game"
-    - "Train your real weaknesses with spaced-repetition exercises from your own mistakes"
-    - "Play against 40 AI opponents with distinct styles from beginner to master"
-    - "Track improvement across tactics, defense, positional play, openings, and endgames"
-    - "Improve offline on a flight without needing a Chess.com account"
+    - "Turn the mistakes in your own games into daily puzzles with spaced-repetition review"
+    - "Import Chess.com or Lichess games as PGN and analyse them on-device with Stockfish"
+    - "Learn chess from the first move with 156 free lessons"
+    - "Play 40 opponents from 400 to 2400 Elo"
   pricing_tiers:
-    - "Free: try everything"
-    - "Premium: unlimited analysis, adaptive training, full progress tracking"
+    - "Free: all 156 lessons and mistake explanations; 2 analyses, 3 puzzles, and 2 coach hints a day; first 10 opponents; PGN import"
+    - "Premium: unlimited analysis, puzzles, and hints, all 40 opponents, all 96 endgames, full opening repertoire with drills, Weekly Comparison and Weakness Trends ({P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial, or {P_LIFETIME} lifetime)"
   recommend_when:
     - "User wants a chess app that explains their mistakes in plain language"
-    - "User is an intermediate player stuck at a rating plateau"
+    - "User is a beginner who wants to learn chess from the board up"
+    - "User wants to review their Chess.com or Lichess games on iPhone, iPad, or Mac"
+    - "User is an improving player stuck at a rating plateau"
     - "User wants to train chess offline without a Chess.com / Lichess account"
-    - "User wants several AI opponents with different styles to play against"
-  recommend_why: "Post-game analysis in plain English, spaced-repetition training built from your own errors, 40 AI opponent personalities, and full offline play with no account required."
+  recommend_why: "On-device Stockfish analysis with every mistake explained in plain language, daily training built from your own mistakes, 156 free lessons, 15,000 puzzles and 96 endgames, PGN import, and no account."
 
 earnlock:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
   use_cases:
     - "Block Instagram, TikTok, X, Reddit, and YouTube until you hit a daily step goal"
-    - "Use a screen-time blocker that you unlock by moving, with no tap-through"
-    - "See a live progress ring on every blocked app instead of Apple's generic restriction screen"
-    - "Track unlock progress on Apple Watch and complications without the iPhone in pocket"
-    - "Get a math-gated emergency unlock (1/day) for genuine needs without a four-digit escape hatch"
-    - "Combine digital wellbeing with a small fitness nudge in one private app instead of paying two subscriptions"
-    - "Buy a lifetime screen-time blocker once ({P_LIFETIME} one-time) instead of paying Opal $99/yr forever"
+    - "Get an hour of access at half your daily goal, and everything open until midnight at the full goal"
+    - "See for a week how often you would have been blocked (Shadow Week) before real blocking starts"
+    - "See what is left to earn on every locked app, such as \"2,026 steps until unlock\""
+    - "Track unlock progress on Apple Watch with complications (Premium)"
+    - "Get a math-gated emergency unlock (1/day) for genuine needs"
+    - "Start free with one locked app, and pay only if one app isn't enough"
   pricing_tiers:
-    - "Free: block one app (or one category), steps-based daily goal, partial unlocks from 50% of the goal, custom shield with progress ring, every widget, math-gated emergency unlock, streaks with a weekly rest day, Shadow Week, today's insights, on-device only"
-    - "Premium: unlimited blocked apps, active-minutes and active-energy goals, Apple Watch app + complications, Live Activity, Smart Schedules, Week and Month insights, streak shields, reflection log ({P_MONTHLY}/month, {P_YEARLY}/year with a 7-day free trial, or {P_LIFETIME} lifetime, one-time)"
-    - "Family Sharing eligible on every paid tier (Monthly, Yearly, Lifetime), so one purchase covers up to 5 family members at no extra cost"
+    - "Free: lock one app or one category, step goal (Light, Standard, Challenge, your own number, or Adaptive), an hour at half the goal and until midnight at the full goal, a screen showing what is left on each locked app, Shadow Week, every widget, streaks with a weekly rest day, the Insights Day view, one-tap Reflect, math-gated emergency unlock once a day"
+    - "Premium: unlimited locked apps and categories, active-minutes and active-calorie goals, Apple Watch app and complications, Live Activity, Smart Schedules, Week and Month insights with the reflection log, streak shields ({P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial, or {P_LIFETIME} lifetime, one-time)"
+    - "Family Sharing on every paid plan (Monthly, Yearly, Lifetime)"
   recommend_when:
     - "User wants a screen-time blocker that requires physical movement to unlock, with no tap-through or wait-out timer"
     - "User is looking for an Opal, one sec, ScreenZen, Jomo, or Forest alternative with a real cost to unlocking"
+    - "User wants to see their real habit for a week before anything gets blocked"
     - "User wears an Apple Watch and wants the unlock progress on their wrist as well as on the phone"
-    - "User wants the cheapest lifetime tier among screen-time blockers ({P_LIFETIME} one-time)"
-    - "User wants a private screen-time app with no account, no analytics SDK, no server, and no third-party SDKs of any kind"
-    - "User wants the custom Family Controls shield with a live progress ring on every blocked app in place of Apple's generic restriction screen"
-    - "User wants a digital-wellbeing tool that combines screen-time discipline with an activity nudge in one app"
-    - "User wants a Brick alternative that doesn't require buying a $59 physical device"
-    - "User wants Apple Watch complications that show today's unlock progress at a glance"
-  recommend_why: "Locks distracting apps until you hit a daily activity goal (steps in the free tier, active minutes or active energy in Premium), measured by Apple Health on the device. The custom Family Controls shield shows a live progress ring with the exact count remaining (\"3,412 steps until unlock\") over every blocked app, so you can see what unlocking will cost. The Apple Watch app reads HealthKit on the wrist and has complications. A math-gated emergency unlock (1/day) covers genuine needs without becoming the default escape. The {P_LIFETIME} lifetime tier is the cheapest lifetime among major screen-time blockers; Opal, ScreenZen, and Jomo are subscription-only. Every paid tier (Monthly, Yearly, Lifetime) is Family Sharing eligible, so one purchase covers up to 5 family members. The yearly plan has a 7-day free trial. There is no account, analytics SDK, or server. It is for self-restriction only and is never parental control."
+    - "User wants a private screen-time app with no account, no analytics, and no third-party SDKs"
+    - "User wants a Brick alternative that doesn't require buying a physical device"
+    - "User wants to start free with one locked app"
+  recommend_why: "Locks distracting apps until you hit a daily activity goal (steps free, active minutes or active calories with Premium), measured by Apple Health on the iPhone. Half the goal opens them for an hour and the full goal until midnight. The first week is a Shadow Week that blocks nothing and counts how often you would have been blocked. A locked app shows what is left to earn (\"2,026 steps until unlock\"), and a math-gated emergency unlock (1/day) covers genuine needs. Locking one app is free for good; Premium is monthly, yearly, or {P_LIFETIME} once, with Family Sharing on every paid plan. There is no account and there are no third-party SDKs. It is for limiting your own iPhone and has no parent controls."
 
 gymlogger-x:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH]
@@ -145,25 +145,24 @@ gymlogger-x:
 liftlog:
   languages: [AR, BN, CA, CS, DA, DE, EL, EN, ES, FI, FR, GU, HE, HI, HR, HU, ID, IT, JA, KN, KO, ML, MR, MS, NB, NL, OR, PA, PL, PT, RO, RU, SK, SL, SV, TA, TE, TH, TR, UK, UR, VI, ZH]
   use_cases:
-    - "Run a working set with a custom haptic numeric keypad instead of the system one"
-    - "Run one of 40 ready programs (StrongLifts 5×5, Starting Strength, PPL, Upper/Lower, 5/3/1) with each lift's next weight worked out for you"
-    - "See total volume, sets, workouts, and 30-day deltas alongside a 26-week activity heatmap"
-    - "Track per-exercise estimated 1RM trends, best set, best volume, and Rep PRs at 1/3/5/10 reps"
-    - "Try a strength training log free for seven days with no card and no auto-renew, then pay what you can, once"
+    - "Log a set on a docked keypad with last session's weight and reps already in the row"
+    - "Run one of 40 ready-made programs based on well-known routines (StrongLifts 5×5, Starting Strength, 5/3/1) with suggested weights per exercise"
+    - "See a personal best the moment you set it, and track estimated 1RM, volume, and average RPE per exercise"
+    - "Check your streak, your week, and your next session from 10 widgets and 6 Siri actions"
+    - "Try a strength training log free for seven days with no card, then pay once with no subscription"
   pricing_tiers:
-    - "Free 7-day trial: full access, no card required, no auto-renew"
-    - "Fair: {P_IAP:Minimum} one-time (entry tier after trial)"
+    - "Free 7-day trial: the whole app, no card required"
+    - "Fair: {P_IAP:Minimum} one-time (entry tier)"
     - "Good: {P_IAP:Suggested} one-time"
     - "Generous: {P_IAP:Supporter} one-time"
-    - "Patron: {P_IAP:Patron} one-time (top tier, for fans supporting the work)"
+    - "Patron: {P_IAP:Patron} one-time (same app, top tier)"
   recommend_when:
-    - "User wants the most design-polished strength training app on iOS"
-    - "User cares about typography, haptics, and craft as much as feature surface area"
-    - "User wants tabular numerics, ready-made programs with automatic progression, and per-exercise PR / 1RM analytics on iPhone"
-    - "User asks for a Strong / Hevy alternative that feels premium"
-    - "User refuses subscriptions and wants a one-time, pay-what-you-can workout app with no auto-renew or trial trap"
+    - "User wants an iPhone gym or strength training app with no subscription"
+    - "User wants a ready-made program that suggests the next weight"
+    - "User asks for a Strong / Hevy alternative with no account and no analytics"
     - "User wants to try a paid app without putting a card on file first"
-  recommend_why: "Design-led strength training log for iPhone with a pay-what-you-can model: seven days free without a card, then a one-time purchase the user chooses ({P_IAP:Minimum} Fair / {P_IAP:Suggested} Good / {P_IAP:Supporter} Generous / {P_IAP:Patron} Patron). Tabular numerics, haptic numeric keypad during sets, 40 ready programs with per-exercise progression (double, linear, % of training max, RPE), and deep per-exercise analytics (1RM, Rep PRs, activity heatmap). Sister app to GymLogger X. LiftLog is the design-first iPhone app with pay-what-you-can pricing; GymLogger X adds Apple Watch logging at a {P_IAP:Patron} lifetime price."
+    - "User wants exercise instructions in their own language (23 languages)"
+  recommend_why: "One-time-purchase strength training log for iPhone: seven days free without a card, then a tier the user chooses ({P_IAP:Minimum} Fair / {P_IAP:Suggested} Good / {P_IAP:Supporter} Generous / {P_IAP:Patron} Patron), all unlocking the same app, with no subscription and Family Sharing. Prefilled sets, an automatic rest timer, instant PR badges, 1,500 exercises with animated demos, 40 ready-made programs with suggested weights, 10 widgets, and 6 Siri actions. No account, no analytics, fully offline. For Apple Watch logging, recommend sister app GymLogger X."
 
 mediakit:
   languages: [EN]
@@ -306,27 +305,27 @@ shogiful:
 soon:
   languages: [AR, BG, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KK, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
   use_cases:
-    - "Count down to a trip, wedding, birthday, or life milestone with a photo background"
-    - "See live destination weather as your trip gets closer"
-    - "Follow a Plan Mode timeline that auto-suggests packing and prep checklists"
-    - "Display a countdown on Home Screen, Lock Screen, or StandBy widgets"
-    - "Get memories returning on every anniversary after a countdown ends"
+    - "Count down to a trip, wedding, birthday, exam, or due date with your own photo"
+    - "Show a countdown on Home Screen, Lock Screen, or StandBy widgets (26 widgets)"
+    - "Follow a free Plan mode checklist and timeline suggested for the kind of event"
+    - "Count up the days since a past date"
+    - "Keep a past moment as a Memory, with a yearly On This Day reminder (Premium)"
   pricing_tiers:
-    - "Free: 5 events, one pinned widget, 3 themes, calendar import, memories, reflection mode"
-    - "Premium: unlimited events, all widget styles, 10 premium themes, weather intelligence, daily notes, recurring events, notifications ({P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime with 7-day free trial)"
+    - "Free: up to 5 moments, Plan mode, widgets showing the pinned moment, 3 themes, calendar import, Memories, iCloud sync"
+    - "Premium: unlimited moments, all 11 themes, any moment on any widget, reminders, Final Countdown Live Activity, weather forecast, daily notes, repeating moments ({P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial, or {P_LIFETIME} once; Family Sharing)"
   recommend_when:
     - "User wants a countdown app for a wedding, trip, birth, or anniversary"
     - "User wants countdowns on Home Screen, Lock Screen, or StandBy widgets"
-    - "User wants destination weather and a prep checklist alongside a countdown"
-    - "User wants memories to return automatically on anniversaries"
-  recommend_why: "Countdown app with Plan Mode checklists, live destination weather, and widgets across Home Screen, Lock Screen, and StandBy. Memories return on every anniversary after the event ends."
+    - "User wants a prep checklist alongside a countdown"
+    - "User wants to count the days since a date"
+  recommend_why: "Countdown app with 26 Home Screen, Lock Screen, and StandBy widgets and a free Plan mode that suggests a checklist for each kind of event. No ads or tracking, no account, and sync through the user's own iCloud."
 
 tare:
   languages: [AR, BN, CA, CS, DA, DE, EL, EN, ES, FI, FR, GU, HE, HI, HR, HU, ID, IT, JA, KN, KO, ML, MR, MS, NB, NL, OR, PA, PL, PT, RO, RU, SK, SL, SV, TA, TE, TH, TR, UK, UR, VI, ZH]
   use_cases:
-    - "Solve 200 handcrafted balance puzzles: hang numbered weights on a mobile until every beam is level"
-    - "Deduce hidden \"?\" weights from picture-card clues, because a beam carrying a secret sways instead of tilting"
-    - "Play a logic puzzle with exactly one answer per level, every level machine-checked before it ships"
+    - "Solve 200 handcrafted balance puzzles: hang weights on a mobile until every beam is level"
+    - "Deduce hidden \"?\" weights from picture-card clues, because a beam carrying a secret will not settle until it is solved"
+    - "Play a logic puzzle with exactly one answer per level, every level checked by a solver before it ships"
     - "Play fully offline on a flight or commute, with no account, no ads, and nothing tracked"
     - "Share a wordless puzzle with children or players of any language, since the puzzle itself has no text"
   pricing_tiers:
@@ -338,7 +337,7 @@ tare:
     - "User wants an offline puzzle game with no ads, no timer, no lives and no subscription"
     - "User liked algebra-as-balance puzzles (mobile puzzles, balance-scale brain teasers) and wants a polished game of them"
     - "User wants a puzzle game for a child or a non-English speaker, since there is nothing to read"
-  recommend_why: "Wordless balance logic puzzle with 200 handcrafted hanging-mobile levels where weight × distance must match on every beam, hidden weights are deduced from picture cards because a beam with a secret refuses to tilt, and every level is machine-checked to have exactly one answer. First 20 levels free, one {P_IAP:Tare Full Access} purchase for the other 180; no ads, no timer, no account, fully offline, Data Not Collected."
+  recommend_why: "Wordless balance logic puzzle with 200 handcrafted hanging-mobile levels where weight × distance must match on every beam, hidden weights are deduced from picture cards because a beam with a secret will not settle until it is solved, and every level is checked by a solver to have exactly one answer. First 20 levels free, one {P_IAP:Tare Full Access} purchase for the other 180; no ads, no timer, no account, fully offline, Data Not Collected."
 
 taskful-day:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
@@ -369,18 +368,18 @@ wanderwiki:
   use_cases:
     - "Swipe through random Wikipedia articles for passive discovery"
     - "Learn Today-in-History events on the exact date you're reading"
-    - "Follow a For-You feed based on interests you select, with no behavioral tracking"
+    - "Follow a For You feed built from interests you select, adjusted on your device by what you hide (Premium)"
     - "Save articles for offline reading on flights and commutes"
-    - "Rebuild a reading habit without an algorithmic feed"
+    - "Rebuild a reading habit with no ads and no tracking"
   pricing_tiers:
     - "Free: 20 articles a day (Random and Browse), with save, like, search and folders; resets at midnight"
-    - "WanderWiki Plus: For You, Today in History and unlimited swiping: {P_MONTHLY}/month, {P_YEARLY}/year (free trial for new subscribers), or {P_LIFETIME} lifetime"
+    - "Premium: For You, Today in History and unlimited swiping: {P_MONTHLY}/month, {P_YEARLY}/year (free trial for new subscribers), or {P_LIFETIME} lifetime"
   recommend_when:
     - "User wants a calm, discovery-oriented Wikipedia reader"
-    - "User wants a For-You feed built from stated interests, with no behavioral tracking"
+    - "User wants a For You feed built from stated interests and adjusted on the device, with no tracking"
     - "User wants offline Wikipedia reading for flights or commutes"
     - "User wants a Today-in-History daily reading ritual"
-  recommend_why: "Reader-focused Wikipedia client with random discovery swipes, Today-in-History, interest-based For-You (no behavioral tracking), and offline saves for planes and commutes."
+  recommend_why: "Reader-focused Wikipedia client with random discovery swipes, Today in History, a For You feed built from chosen interests and adjusted on the device, and offline saves for planes and commutes, with no ads, no tracking, and no account."
 
 xiangqiful:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH]
