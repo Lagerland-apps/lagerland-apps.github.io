@@ -2,20 +2,20 @@
 layout: default
 permalink: /alternatives/fastlane-frameit/
 title: "Fastlane frameit Alternative"
-quick_answer: "Mockly is a native Mac GUI alternative to fastlane frameit for developers who want to design their screenshots by hand. frameit is the free, open-source command-line tool that frames screenshots with device bezels and title text through a Framefile and ImageMagick, which suits CI well. Mockly covers the visual side: real 3D Metal device frames, AI translation with your own API key, and direct App Store Connect upload, with no config files, for a one-time {P_APP@mockly}."
+quick_answer: "Mockly is a Mac app alternative to fastlane frameit for developers who want to design their screenshots by hand. frameit is the free, open-source command-line tool that frames screenshots with device bezels and title text through a Framefile and ImageMagick, and it suits CI well. Mockly is a Mac app: you put your screenshots on six 3D device models, write and translate the text for all 50 App Store languages in one project, and upload to App Store Connect with your API key, for {P_APP@mockly} once."
 seo:
   title: "Fastlane frameit Alternative: Mockly, GUI, No Config"
-  description: "A fastlane frameit alternative with a GUI, not a Framefile. Mockly is a native Mac app with real 3D device frames, AI translation, and App Store sync."
+  description: "Mockly vs fastlane frameit: design App Store screenshots in a Mac app with 3D devices, 50 languages, AI translation, and App Store Connect upload."
   keywords:
     - fastlane frameit alternative
     - frameit alternative GUI
     - Mockly vs fastlane frameit
-    - App Store screenshot tool no CLI
+    - App Store screenshot tool Mac
     - device frame screenshots Mac
     - fastlane screenshots alternative
     - 3D device mockup Mac
     - App Store Connect upload Mac
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "mockly" | first -%}
@@ -47,23 +47,21 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best fastlane frameit alternative with a GUI?", "acceptedAnswer": { "@type": "Answer", "text": "Mockly is the closest GUI alternative to fastlane frameit. frameit is the free command-line tool that frames screenshots with device bezels and title text via a Framefile and ImageMagick. Mockly does the same visual job in a native Mac app, with real 3D Metal frames, AI translation with your own API key, and App Store Connect upload. It needs no config files and costs {P_APP@mockly} once." } },
-    { "@type": "Question", "name": "Is fastlane frameit free, and why would I pay for Mockly?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, frameit is free and open-source, and it works very well inside a CI pipeline where everything is scripted. Mockly is worth {P_APP@mockly} when you want to work visually: drag a screenshot in, position a real 3D device frame, translate with your own AI key, preview exactly what exports, and upload to App Store Connect. You never write a Framefile or install ImageMagick." } },
-    { "@type": "Question", "name": "Does Mockly use 3D device frames unlike frameit?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. frameit composites flat 2D device bezels around your screenshot. Mockly renders real 3D device geometry with Metal, so you can rotate, scale, and angle the device, with the preview matching the export pixel-for-pixel." } },
-    { "@type": "Question", "name": "Can I keep using frameit in CI and Mockly for design?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and that's a sensible split. Many teams run frameit in CI for automated, reproducible framing on every build, and open Mockly when they want a polished, localized 3D hero set for the store listing. The two tools work fine side by side." } },
-    { "@type": "Question", "name": "Does Mockly need a Framefile or ImageMagick?", "acceptedAnswer": { "@type": "Answer", "text": "No. Mockly uses no Framefile or JSON config and doesn't depend on ImageMagick. It's a self-contained Mac app where everything is done visually, and export covers every device size App Store Connect requires from a single project." } },
-    { "@type": "Question", "name": "Does Mockly upload to App Store Connect?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Mockly uploads finished, localized screenshots straight to App Store Connect with Keychain-secured credentials. With frameit you'd hand the framed images to another step (such as fastlane deliver) to upload." } }
+    { "@type": "Question", "name": "What is the best fastlane frameit alternative with a GUI?", "acceptedAnswer": { "@type": "Answer", "text": "Mockly. frameit frames screenshots from the command line with a Framefile and ImageMagick. Mockly does the design side in a Mac app, with six 3D device models, text and backgrounds, all 50 App Store languages in one project, AI translation with your own key, and upload to App Store Connect. It costs {P_APP@mockly} once." } },
+    { "@type": "Question", "name": "Is fastlane frameit free, and why would I pay for Mockly?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, frameit is free and open source, and it works very well in a CI pipeline where everything is scripted. Mockly is worth {P_APP@mockly} when you want to work visually: put a screenshot on a 3D device, write the text once, translate it with your own AI key or a CSV, and upload the set to App Store Connect, without a Framefile or ImageMagick." } },
+    { "@type": "Question", "name": "Does Mockly use 3D device frames unlike frameit?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. frameit composites flat 2D bezels around your screenshot. Mockly places your screenshot on a 3D model of an iPhone, iPad, MacBook Pro, or Apple Watch, which you turn on three axes and render Realistic, Clay, or UI Only, in perspective or orthographic projection." } },
+    { "@type": "Question", "name": "Can I keep using frameit in CI and Mockly for design?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it's a sensible split. Keep fastlane in CI for automated captures and framing, and open Mockly when you want a designed, localized set for the store listing. If your capture files follow Mockly's naming pattern of language, page, and device, link the output folder and each file lands on the right device in every language." } },
+    { "@type": "Question", "name": "Does Mockly need a Framefile or ImageMagick?", "acceptedAnswer": { "@type": "Answer", "text": "No. Mockly is a Mac app from the Mac App Store, with no Framefile, config file, or ImageMagick. You set everything in the app, and Save Images exports PNG or HEIC at the exact size of the artboard you picked." } },
+    { "@type": "Question", "name": "Does Mockly upload to App Store Connect?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Add your App Store Connect API key (Key ID, Issuer ID, and .p8 file), pick an app and version, and Mockly uploads the rendered pages for the languages you choose. It replaces the screenshots already in that display type. With frameit you'd hand the framed images to fastlane deliver." } }
   ]
 }
 </script>
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">App Store screenshot tooling · Native Mac · No config files</p>
-    <h1 class="h1">A fastlane frameit alternative<br><span class="gradient-text">with a GUI instead of a Framefile.</span></h1>
-    <p class="lead">
-      fastlane frameit is a popular developer CLI for framing screenshots. It's free and scriptable, works well in CI, and is driven by a Framefile and ImageMagick. Mockly does the same job visually: drag a screenshot in, place a real 3D Metal device frame, translate with your own AI key, and upload to App Store Connect, without config files or dependencies. It costs {P_APP@mockly}, once.
-    </p>
+    <p class="overline">App Store screenshots · Mac app · No command line</p>
+    <h1 class="h1">A fastlane frameit alternative<br><span class="gradient-text">for designing screenshots by hand.</span></h1>
+    <p class="lead">fastlane frameit is a popular command-line tool for framing screenshots. It's free and scriptable, works well in CI, and is driven by a Framefile and ImageMagick. Mockly does the design side in a Mac app: drop your screenshots onto 3D devices, write the text once, translate it for up to 50 App Store languages, and upload the set to App Store Connect. It costs {P_APP@mockly}, once.</p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/mockly/">See Mockly</a>
       <a class="btn btn-secondary" href="#compare">Compare</a>
@@ -75,12 +73,12 @@ last_updated: 2026-10-26
 
 <section id="compare" class="section reveal">
   <h2 class="h2">How does Mockly compare to fastlane frameit?</h2>
-  <p class="lead">Both frame screenshots. frameit is a CLI made for CI, and Mockly is a GUI made for design work.</p>
+  <p class="lead">Both put your screenshots in a device. frameit is a command-line tool built for CI, and Mockly is a Mac app built for design work.</p>
   <div class="grid grid-2 stagger">
-    <div class="card"><div class="card-title">Interface</div><div class="card-text"><strong>Mockly:</strong> Native Mac GUI where you drag, position, and preview.<br><br><strong>frameit:</strong> Command line, driven by a Framefile.</div></div>
-    <div class="card"><div class="card-title">Frames</div><div class="card-text"><strong>Mockly:</strong> Real 3D Metal-rendered device geometry.<br><br><strong>frameit:</strong> Flat 2D device bezels composited with ImageMagick.</div></div>
-    <div class="card"><div class="card-title">Automation</div><div class="card-text"><strong>Mockly:</strong> Visual, manual, design-led; ASC upload built in.<br><br><strong>frameit:</strong> Fully scriptable in CI; pairs with fastlane deliver to upload.</div></div>
-    <div class="card"><div class="card-title">Cost &amp; setup</div><div class="card-text"><strong>Mockly:</strong> {P_APP@mockly} once, no dependencies.<br><br><strong>frameit:</strong> Free and open-source; needs Ruby/fastlane + ImageMagick.</div></div>
+    <div class="card"><div class="card-title">Interface</div><div class="card-text"><strong>Mockly:</strong> A Mac app with a page list, a canvas, and an inspector for devices, text, images, and backgrounds.<br><br><strong>fastlane frameit:</strong> Command line, driven by a Framefile.</div></div>
+    <div class="card"><div class="card-title">Devices</div><div class="card-text"><strong>Mockly:</strong> Six 3D models (iPhone 17 Pro Max, iPad Pro 11-inch and 12.9-inch, MacBook Pro 16-inch, Apple Watch Ultra, and Apple Watch Series 11). Set rotation on X, Y, and Z, scale, and offset, and render Realistic, Clay, or UI Only.<br><br><strong>fastlane frameit:</strong> Flat 2D device bezels composited with ImageMagick.</div></div>
+    <div class="card"><div class="card-title">Automation</div><div class="card-text"><strong>Mockly:</strong> You work by hand in the app. To bring in a folder of captures, name the files by language, page, and device and link the folder, and each file lands on the right device.<br><br><strong>fastlane frameit:</strong> Fully scriptable in CI. Pairs with fastlane snapshot to capture and fastlane deliver to upload.</div></div>
+    <div class="card"><div class="card-title">Cost and setup</div><div class="card-text"><strong>Mockly:</strong> {P_APP@mockly} once, from the Mac App Store. There's no Ruby, fastlane, or ImageMagick to install.<br><br><strong>fastlane frameit:</strong> Free and open source. Needs Ruby, fastlane, and ImageMagick.</div></div>
   </div>
 </section>
 
@@ -97,53 +95,66 @@ last_updated: 2026-10-26
         </tr>
       </thead>
       <tbody>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Interface</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">GUI (Mac app)</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Command line</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Device frames</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">3D (Metal)</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">2D bezels</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Config required</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">None</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Framefile + ImageMagick</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>CI automation</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Not the focus</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Excellent</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Translation</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Your own AI API key</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Manual / per-locale text</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>App Store Connect upload</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Built in</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Via fastlane deliver</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);"><strong>Cost</strong></td><td style="padding:var(--s-3) var(--s-4);">{P_APP@mockly} once</td><td style="padding:var(--s-3) var(--s-4);">Free, open-source</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Interface</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Mac app</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Command line</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Device frames</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Six 3D models</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">2D bezels</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Setup</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Install from the Mac App Store</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Framefile, Ruby, and ImageMagick</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>CI automation</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">None, you work in the app</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Excellent</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Translation</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">AI with your own key, or CSV</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Per-locale text you write</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>App Store Connect upload</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Built in, with your API key</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Through fastlane deliver</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);"><strong>Cost</strong></td><td style="padding:var(--s-3) var(--s-4);">{P_APP@mockly} once</td><td style="padding:var(--s-3) var(--s-4);">Free, open source</td></tr>
       </tbody>
     </table>
   </div>
 </section>
 
 <section class="section reveal">
-  <h2 class="h2">When to pick Mockly</h2>
-  <ul class="bullets">
-    <li>You want a visual, design-led workflow instead of a Framefile</li>
-    <li>You want real 3D device frames, not flat 2D bezels</li>
-    <li>You want AI translation with your own key and direct App Store Connect upload</li>
-    <li>You'd rather not install Ruby, fastlane, and ImageMagick to frame a screenshot</li>
-  </ul>
+  <h2 class="h2">Who should pick Mockly vs fastlane frameit?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Pick Mockly if…</div>
+      <ul class="bullets">
+        <li>You want to design screenshots visually instead of editing a Framefile</li>
+        <li>You want 3D devices you can turn to any angle instead of flat bezels</li>
+        <li>You want AI translation with your own key and upload to App Store Connect in one app</li>
+        <li>You'd rather not install Ruby, fastlane, and ImageMagick to frame a screenshot</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Keep fastlane frameit if…</div>
+      <ul class="bullets">
+        <li>You frame screenshots automatically in CI on every build</li>
+        <li>You already run fastlane snapshot and deliver and want the whole chain scripted</li>
+        <li>You want a free, open-source pipeline that nobody has to open by hand</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
+{% if app %}
 <section class="section reveal">
-  <h2 class="h2">When to keep fastlane frameit instead</h2>
-  <ul class="bullets">
-    <li>You frame screenshots automatically in CI on every build</li>
-    <li>You already run fastlane (snapshot + deliver) and want it all scripted</li>
-    <li>You want a free, open-source, fully reproducible pipeline</li>
-  </ul>
+  <h2 class="h2">About Mockly</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
 </section>
+{% endif %}
 
-<section class="section reveal">
-  <h2 class="h2">FAQ</h2>
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item"><summary>What is the best fastlane frameit alternative with a GUI?</summary><div class="faq-a">Mockly. frameit frames screenshots with a Framefile and ImageMagick on the command line; Mockly does the same visual job in a native Mac app with 3D Metal frames, AI translation with your own key, and ASC upload. It needs no config files and costs {P_APP@mockly} once.</div></details>
-    <details class="faq-item"><summary>Is fastlane frameit free, and why would I pay for Mockly?</summary><div class="faq-a">frameit is free and open-source and works very well in CI. Mockly is worth {P_APP@mockly} for a visual workflow: drag in, place a 3D frame, translate with your own key, preview exactly what exports, and upload, all without a Framefile or ImageMagick.</div></details>
-    <details class="faq-item"><summary>Does Mockly use 3D device frames unlike frameit?</summary><div class="faq-a">Yes. frameit composites flat 2D bezels; Mockly renders real 3D geometry with Metal that you can rotate, scale, and angle, and the preview matches the export.</div></details>
-    <details class="faq-item"><summary>Can I keep using frameit in CI and Mockly for design?</summary><div class="faq-a">Yes. Run frameit in CI for reproducible framing on every build, and use Mockly for a polished, localized 3D hero set. The two work fine side by side.</div></details>
-    <details class="faq-item"><summary>Does Mockly need a Framefile or ImageMagick?</summary><div class="faq-a">No. It uses no Framefile or JSON config and doesn't need ImageMagick. It's self-contained, and export covers every required device size from one project.</div></details>
-    <details class="faq-item"><summary>Does Mockly upload to App Store Connect?</summary><div class="faq-a">Yes, it uploads directly with Keychain-secured credentials. With frameit you'd pass framed images to fastlane deliver to upload.</div></details>
+    <details class="faq-item" open><summary>What is the best fastlane frameit alternative with a GUI?</summary><div class="faq-a">Mockly. frameit frames screenshots from the command line with a Framefile and ImageMagick. Mockly does the design side in a Mac app, with six 3D device models, text and backgrounds, all 50 App Store languages in one project, AI translation with your own key, and upload to App Store Connect. It costs {P_APP@mockly} once.</div></details>
+    <details class="faq-item"><summary>Is fastlane frameit free, and why would I pay for Mockly?</summary><div class="faq-a">Yes, frameit is free and open source, and it works very well in a CI pipeline where everything is scripted. Mockly is worth {P_APP@mockly} when you want to work visually: put a screenshot on a 3D device, write the text once, translate it with your own AI key or a CSV, and upload the set to App Store Connect, without a Framefile or ImageMagick.</div></details>
+    <details class="faq-item"><summary>Does Mockly use 3D device frames unlike frameit?</summary><div class="faq-a">Yes. frameit composites flat 2D bezels around your screenshot. Mockly places your screenshot on a 3D model of an iPhone, iPad, MacBook Pro, or Apple Watch, which you turn on three axes and render Realistic, Clay, or UI Only, in perspective or orthographic projection.</div></details>
+    <details class="faq-item"><summary>Can I keep using frameit in CI and Mockly for design?</summary><div class="faq-a">Yes, and it's a sensible split. Keep fastlane in CI for automated captures and framing, and open Mockly when you want a designed, localized set for the store listing. If your capture files follow Mockly's naming pattern of language, page, and device, link the output folder and each file lands on the right device in every language.</div></details>
+    <details class="faq-item"><summary>Does Mockly need a Framefile or ImageMagick?</summary><div class="faq-a">No. Mockly is a Mac app from the Mac App Store, with no Framefile, config file, or ImageMagick. You set everything in the app, and Save Images exports PNG or HEIC at the exact size of the artboard you picked.</div></details>
+    <details class="faq-item"><summary>Does Mockly upload to App Store Connect?</summary><div class="faq-a">Yes. Add your App Store Connect API key (Key ID, Issuer ID, and .p8 file), pick an app and version, and Mockly uploads the rendered pages for the languages you choose. It replaces the screenshots already in that display type. With frameit you'd hand the framed images to fastlane deliver.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
-  <p class="overline">Ready?</p>
-  <h2 class="h2">Try Mockly today.</h2>
-  <p class="lead">Frame screenshots visually with 3D frames, AI translation, and ASC upload, and skip the config. {P_APP@mockly}, once.</p>
+  <p class="overline">Try it</p>
+  <h2 class="h2">Try Mockly.</h2>
+  <p class="lead">Design App Store screenshots on 3D devices, translate them, and upload them, all in one Mac app, for {P_APP@mockly} once.</p>
   <div class="actions">
     <a class="btn btn-primary" href="{{ app.app_store_url }}" rel="noopener">Get Mockly</a>
     <a class="btn btn-secondary" href="/apps/mockly/">See full page</a>

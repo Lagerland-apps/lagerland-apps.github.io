@@ -3,7 +3,7 @@ layout: journal
 slug: app-store-screenshot-review-guidelines-explained
 title: "App Store screenshot guidelines (2026): sizes, requirements, and what gets rejected"
 date: 2026-05-13
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 seo:
   title: "App Store Screenshot Guidelines 2026: Sizes & Rules"
   description: "App Store screenshot specs: sizes (6.9-inch iPhone, 13-inch iPad), counts, and formats, plus the §2.3.3 rules that get apps rejected."
@@ -121,9 +121,9 @@ The content rule is enforced strictly here. The video must be **actual app foota
 
 4. **If you do show metrics, match the demo state of the shipping build.** Use the same fixture data your TestFlight build uses. Don't render "247K users" if the demo state shows "1.2K."
 
-5. **Treat the device frame as cosmetics.** Pick whatever visual style fits your brand: 3D Metal render, flat outline, tilted angle, transparent background, or no frame at all. Reviewers don't care about the frame, only about what's on the screen inside it.
+5. **Treat the device frame as cosmetics.** Pick whatever visual style fits your brand: a 3D device, a flat outline, tilted angle, transparent background, or no frame at all. Reviewers don't care about the frame, only about what's on the screen inside it.
 
-A capture-first tool like [Mockly](/apps/mockly/) complies with §2.3.3 by default because its workflow runs in the safe order: *capture the real screen first, render the device frame around it second.* The screen content is your actual app, and the frame is a render placed around it. The reverse workflow (mock up a concept screen in Figma, drop it into a phone outline, export) is the one most likely to drift into rejection territory, because it invites you to design screens the app doesn't have yet.
+A capture-first tool like [Mockly](/apps/mockly/) keeps you in the safe order: *capture the real screen first, render the device frame around it second.* The screen of each 3D device shows a capture you took from your app, and your text and background sit around it. Whether a set passes review still depends on what those captures show, and no tool can guarantee approval. The reverse workflow (mock up a concept screen in Figma, drop it into a phone outline, export) is the one most likely to drift into rejection territory, because it invites you to design screens the app doesn't have yet.
 
 ## TL;DR
 
@@ -134,4 +134,4 @@ A capture-first tool like [Mockly](/apps/mockly/) complies with §2.3.3 by defau
 - **App Previews:** up to 3, 15 to 30 seconds, 886 × 1920 on iPhone, with the same "real footage only" rule.
 - **Capture-first workflows pass cleanly;** design-first workflows tend to drift.
 
-For the surrounding workflow, see the [native screenshot tooling argument](/journal/the-case-for-native-screenshot-tooling/), [shipping screenshots in 39 languages](/journal/shipping-app-store-screenshots-in-39-languages/), and the rest of the [indie iOS developer tools](/for/indie-ios-developers/). The specs change with each new device, while the intent of §2.3.3 has held for nearly a decade. The rejection emails keep arriving because most indie pipelines treat compliance as an afterthought.
+For the surrounding workflow, see the [native screenshot tooling argument](/journal/the-case-for-native-screenshot-tooling/), [shipping screenshots in every App Store language](/journal/shipping-app-store-screenshots-in-39-languages/), and the rest of the [indie iOS developer tools](/for/indie-ios-developers/). The specs change with each new device, while the intent of §2.3.3 has held for nearly a decade. The rejection emails keep arriving because most indie pipelines treat compliance as an afterthought.

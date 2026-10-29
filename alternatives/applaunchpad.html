@@ -2,22 +2,20 @@
 layout: default
 permalink: /alternatives/applaunchpad/
 title: "AppLaunchpad Alternative"
-quick_answer: "Mockly is a native Mac alternative to AppLaunchpad's web-based App Store screenshot generator. Both ship templates and localisation tooling. Mockly renders 3D device frames locally with Apple's Metal framework, runs AI translation on your own API key, uploads straight to App Store Connect, and costs {P_APP@mockly} once, with no subscription. Your pre-release screenshots never leave your Mac."
+quick_answer: "Mockly is a Mac alternative to AppLaunchpad, the web-based App Store screenshot generator. AppLaunchpad's strength is its large template library, and Mockly has no templates: you build each layout from 3D devices, text, images, and backgrounds. In return Mockly keeps your projects on your Mac, holds all 50 App Store languages in one project, translates with your own OpenAI, Anthropic, or Google key, and uploads to App Store Connect. It costs {P_APP@mockly} once, with no subscription."
 seo:
   title: "AppLaunchpad Alternative: Native Mac App Store Screenshots"
-  description: "An AppLaunchpad alternative for indie Mac developers. Real 3D Metal-rendered device frames, AI translation, direct ASC upload. {P_APP@mockly} once."
+  description: "Mockly vs AppLaunchpad: a Mac app for App Store screenshots with 3D devices, 50 languages, AI translation on your own key, and upload."
   keywords:
     - AppLaunchpad alternative
     - alternative to AppLaunchpad
     - Mockly vs AppLaunchpad
-    - native Mac App Store screenshot tool
-    - 3D device frame screenshot Mac
+    - Mac App Store screenshot tool
+    - 3D device mockup Mac
     - App Store Connect upload Mac
     - one-time App Store screenshot tool
-    - private screenshot maker Mac
-    - Metal-rendered App Store screenshots
     - App Store screenshot localization Mac
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "mockly" | first -%}
@@ -49,19 +47,19 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best AppLaunchpad alternative?", "acceptedAnswer": { "@type": "Answer", "text": "Mockly is the closest match if you want a native Mac app instead of a browser tool. It covers the same workflow (device frames, localisation, App Store Connect submission), but it renders locally with Apple's Metal framework, calls translation APIs with your own key, and costs {P_APP@mockly} once with Family Sharing." } },
-    { "@type": "Question", "name": "Does Mockly have a free tier like AppLaunchpad?", "acceptedAnswer": { "@type": "Answer", "text": "No. Mockly is a one-time {P_APP@mockly} purchase with no free tier and no recurring fee; that price pays for an app that runs on your Mac instead of on the vendor's render farm. If you only ship one or two screenshot sets a year, AppLaunchpad's free tier may suit you better. If you ship localised screenshots regularly, paying {P_APP@mockly} once costs less than any annual subscription tier." } },
-    { "@type": "Question", "name": "Why is native Mac better for App Store screenshots?", "acceptedAnswer": { "@type": "Answer", "text": "Pre-release screenshots don't pass through a third-party server. Metal rendering is deterministic and GPU-accelerated, so re-rendering tomorrow produces byte-for-byte identical output. And a Mac app can be sold for a one-time price, which a web SaaS with server costs usually can't." } },
-    { "@type": "Question", "name": "Does Mockly have templates like AppLaunchpad?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Mockly ships with professional templates and lets you build custom layouts from scratch with percentage-based positioning. Its template library is smaller than AppLaunchpad's web library today, but every template is fully editable, and the percentage-based layout engine scales one template across iPhone, iPad, Mac, Watch, and visionOS sizes automatically." } }
+    { "@type": "Question", "name": "What is the best AppLaunchpad alternative?", "acceptedAnswer": { "@type": "Answer", "text": "If you want a Mac app instead of a browser tool, Mockly covers the same workflow: device mockups, localization, and upload to App Store Connect. Your projects stay on your Mac, AI translation runs through your own OpenAI, Anthropic, or Google key, and Mockly costs {P_APP@mockly} once with no subscription. It has no templates, so it suits people who build their own layouts." } },
+    { "@type": "Question", "name": "Does Mockly have a free tier like AppLaunchpad?", "acceptedAnswer": { "@type": "Answer", "text": "No. Mockly is a one-time {P_APP@mockly} purchase with no free tier and no recurring fee, and every editor feature comes with it. If you only make one or two screenshot sets a year, AppLaunchpad's free tier may be enough. If you ship localized screenshots with every release, Mockly is a single purchase you keep." } },
+    { "@type": "Question", "name": "Why is native Mac better for App Store screenshots?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on what you need. A Mac app keeps your projects as files on your Mac, so unreleased screenshots don't sit on a vendor's service, and editing and exporting work offline. In Mockly, text leaves the Mac only when you run AI Translate, going with your key to the provider you chose, and screenshots leave it only when you upload them to Apple. A web tool is better if you work in a browser or rely on templates." } },
+    { "@type": "Question", "name": "Does Mockly have templates like AppLaunchpad?", "acceptedAnswer": { "@type": "Answer", "text": "No. Mockly has no templates. You build each layout from 3D devices, text blocks, image layers, and backgrounds, then use Duplicate and Copy Style to repeat it across pages and languages. If you want to start from a ready-made design, AppLaunchpad's library is the better fit." } }
   ]
 }
 </script>
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">App Store screenshot tooling · Native Mac · One-time</p>
+    <p class="overline">App Store screenshots · Mac app · One purchase</p>
     <h1 class="h1">Looking for an<br><span class="gradient-text">AppLaunchpad alternative?</span></h1>
-    <p class="lead">AppLaunchpad is an established web tool for making App Store screenshots, with a large template library and a workable flow. Mockly does the same job as a native Mac app. It renders 3D device frames with Metal, translates with AI on your own API key, and uploads directly to App Store Connect, all on your Mac. It costs {P_APP@mockly} once; AppLaunchpad's paid tiers are a subscription.</p>
+    <p class="lead">AppLaunchpad is an established web tool for App Store screenshots, with a large template library and a quick path from template to export. If you no longer start from its templates and build your own layouts anyway, most of what the subscription buys is the browser editor. Mockly is a Mac app built for that way of working: compose each page from 3D devices, text, images, and backgrounds, repeat the look with Duplicate and Copy Style, keep all 50 App Store languages in one project, and upload the set to App Store Connect. It costs {P_APP@mockly} once.</p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/mockly/">See Mockly</a>
       <a class="btn btn-secondary" href="#compare">Compare</a>
@@ -73,50 +71,65 @@ last_updated: 2026-10-26
 
 <section id="compare" class="section reveal">
   <h2 class="h2">How does Mockly compare to AppLaunchpad?</h2>
-  <p class="lead">One is a Mac app and one is a web service, and they suit different people.</p>
+  <p class="lead">One is a Mac app you buy once and one is a web service with templates, and they suit different people.</p>
   <div class="grid grid-2 stagger">
-    <div class="card"><div class="card-title">Architecture</div><div class="card-text"><strong>Mockly:</strong> Native macOS app. Sandboxed, notarised, Metal-rendered. Project files stay on your Mac.<br><br><strong>AppLaunchpad:</strong> Web-based SaaS. Templates, rendering, and project storage are all on the vendor's infrastructure.</div></div>
-    <div class="card"><div class="card-title">Pricing</div><div class="card-text"><strong>Mockly:</strong> {P_APP@mockly} once. Family Sharing included.<br><br><strong>AppLaunchpad:</strong> Freemium with paid tiers; check the current pricing page. Recurring subscription for the features most pros need.</div></div>
-    <div class="card"><div class="card-title">Templates</div><div class="card-text"><strong>Mockly:</strong> Professional template set plus a percentage-based layout engine that scales one design across every device size.<br><br><strong>AppLaunchpad:</strong> Larger template library covering a wider range of visual styles. This is the strongest part of the product.</div></div>
-    <div class="card"><div class="card-title">Pre-release data handling</div><div class="card-text"><strong>Mockly:</strong> Pre-release screenshots stay on your Mac. Useful for NDA / client work.<br><br><strong>AppLaunchpad:</strong> Files transit the vendor's servers. Reasonable for most public app updates; matters more for embargoed launches.</div></div>
+    <div class="card"><div class="card-title">Where the work happens</div><div class="card-text"><strong>Mockly:</strong> A Mac app for macOS 14 or later. Projects are files on your Mac, and editing and exporting work offline.<br><br><strong>AppLaunchpad:</strong> A web app. Templates, rendering, and project storage are on the vendor's service.</div></div>
+    <div class="card"><div class="card-title">Pricing</div><div class="card-text"><strong>Mockly:</strong> {P_APP@mockly} once, with no subscription and no free tier. Every editor feature comes with the purchase.<br><br><strong>AppLaunchpad:</strong> Free tier plus paid tiers on subscription. Check its pricing page for current plans.</div></div>
+    <div class="card"><div class="card-title">Templates</div><div class="card-text"><strong>Mockly:</strong> None. You build each layout from devices, text blocks, image layers, and backgrounds, and repeat it with Duplicate and Copy Style.<br><br><strong>AppLaunchpad:</strong> A large template library in many visual styles. This is the strongest part of the product.</div></div>
+    <div class="card"><div class="card-title">Languages and translation</div><div class="card-text"><strong>Mockly:</strong> All 50 App Store languages in one project, each able to carry its own text, screenshots, and layout. AI Translate uses your own OpenAI, Anthropic, or Google key, or you round-trip a CSV with a translator.<br><br><strong>AppLaunchpad:</strong> Localization tools in the browser.</div></div>
+    <div class="card"><div class="card-title">Devices</div><div class="card-text"><strong>Mockly:</strong> Six 3D models: iPhone 17 Pro Max, iPad Pro 11-inch and 12.9-inch, MacBook Pro 16-inch, Apple Watch Ultra, and Apple Watch Series 11. Turn each on three axes and render it Realistic, Clay, or UI Only.<br><br><strong>AppLaunchpad:</strong> Device frames inside its templates.</div></div>
+    <div class="card"><div class="card-title">Upload</div><div class="card-text"><strong>Mockly:</strong> Upload to App Store Connect with your API key. It replaces the screenshots in that display type for the languages you pick.<br><br><strong>AppLaunchpad:</strong> Export, then upload. Check its site for its current App Store Connect options.</div></div>
   </div>
 </section>
 
 <section class="section reveal">
-  <h2 class="h2">When to pick Mockly</h2>
-  <ul class="bullets">
-    <li>You'd rather pay once than carry a recurring screenshot-tool line item on your books</li>
-    <li>You handle pre-release or client work where pre-launch screenshots shouldn't pass through a SaaS server</li>
-    <li>You want deterministic Metal rendering, where the same project always gives the same render</li>
-    <li>You prefer a native macOS workflow (Keychain auth for ASC, sandboxed app, real menu bar)</li>
-    <li>You're comfortable with a smaller initial template library in exchange for a percentage-based layout engine</li>
-  </ul>
+  <h2 class="h2">Who should pick Mockly vs AppLaunchpad?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Pick Mockly if…</div>
+      <ul class="bullets">
+        <li>You'd rather pay once than carry a recurring screenshot-tool subscription</li>
+        <li>You prefer to build your own layouts and don't need a template library</li>
+        <li>You want each language to follow your source layout until you unlink it for a long headline or a different background</li>
+        <li>You ship in many languages and want AI translation billed to your own OpenAI, Anthropic, or Google account</li>
+        <li>You want the finished set uploaded to App Store Connect from the same app</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Keep AppLaunchpad if…</div>
+      <ul class="bullets">
+        <li>The template library is the reason you use it</li>
+        <li>You work from a browser and don't use a Mac for screenshot work</li>
+        <li>You have many projects in AppLaunchpad and don't want to rebuild them</li>
+        <li>You update screenshots so rarely that the free tier covers you</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
+{% if app %}
 <section class="section reveal">
-  <h2 class="h2">When to keep AppLaunchpad instead</h2>
-  <ul class="bullets">
-    <li>The web template library is the feature that sells the product for you</li>
-    <li>You work primarily from a browser and don't run a Mac as your screenshot workstation</li>
-    <li>You're already deeply invested in AppLaunchpad projects and don't want to rebuild</li>
-    <li>You ship screenshot updates so rarely that the free tier covers you</li>
-  </ul>
+  <h2 class="h2">About Mockly</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
 </section>
+{% endif %}
 
-<section class="section reveal">
-  <h2 class="h2">FAQ</h2>
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item"><summary>What is the best AppLaunchpad alternative?</summary><div class="faq-a">Mockly is the closest match for indie devs who want a native Mac app. It covers the same workflow (device frames, localisation, ASC submission), renders locally, and costs {P_APP@mockly} once.</div></details>
-    <details class="faq-item"><summary>Does Mockly have a free tier like AppLaunchpad?</summary><div class="faq-a">No. Mockly is {P_APP@mockly} once, with no free tier. If you ship rarely, AppLaunchpad's free tier may suit you better. If you ship localised screenshots regularly, paying {P_APP@mockly} once costs less than any annual subscription tier.</div></details>
-    <details class="faq-item"><summary>Why is native Mac better for App Store screenshots?</summary><div class="faq-a">Pre-release files don't pass through a third-party server, Metal rendering is deterministic and fast, and a native app can be sold for a one-time price.</div></details>
-    <details class="faq-item"><summary>Does Mockly have templates like AppLaunchpad?</summary><div class="faq-a">Yes: professional templates plus custom layouts with percentage-based positioning. The template library is smaller, but the layout engine scales one design across every Apple device size.</div></details>
+    <details class="faq-item" open><summary>What is the best AppLaunchpad alternative?</summary><div class="faq-a">If you want a Mac app instead of a browser tool, Mockly covers the same workflow: device mockups, localization, and upload to App Store Connect. Your projects stay on your Mac, AI translation runs through your own OpenAI, Anthropic, or Google key, and Mockly costs {P_APP@mockly} once with no subscription. It has no templates, so it suits people who build their own layouts.</div></details>
+    <details class="faq-item"><summary>Does Mockly have a free tier like AppLaunchpad?</summary><div class="faq-a">No. Mockly is a one-time {P_APP@mockly} purchase with no free tier and no recurring fee, and every editor feature comes with it. If you only make one or two screenshot sets a year, AppLaunchpad's free tier may be enough. If you ship localized screenshots with every release, Mockly is a single purchase you keep.</div></details>
+    <details class="faq-item"><summary>Why is native Mac better for App Store screenshots?</summary><div class="faq-a">It depends on what you need. A Mac app keeps your projects as files on your Mac, so unreleased screenshots don't sit on a vendor's service, and editing and exporting work offline. In Mockly, text leaves the Mac only when you run AI Translate, going with your key to the provider you chose, and screenshots leave it only when you upload them to Apple. A web tool is better if you work in a browser or rely on templates.</div></details>
+    <details class="faq-item"><summary>Does Mockly have templates like AppLaunchpad?</summary><div class="faq-a">No. Mockly has no templates. You build each layout from 3D devices, text blocks, image layers, and backgrounds, then use Duplicate and Copy Style to repeat it across pages and languages. If you want to start from a ready-made design, AppLaunchpad's library is the better fit.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
-  <p class="overline">Ready?</p>
-  <h2 class="h2">Try Mockly today.</h2>
-  <p class="lead">A native Mac app with Metal rendering and direct App Store Connect upload, for {P_APP@mockly} once.</p>
+  <p class="overline">Try it</p>
+  <h2 class="h2">Try Mockly.</h2>
+  <p class="lead">Build your own layouts on 3D devices, in 50 languages, and upload them to App Store Connect, for {P_APP@mockly} once.</p>
   <div class="actions">
     <a class="btn btn-primary" href="{{ app.app_store_url }}" rel="noopener">Get Mockly</a>
     <a class="btn btn-secondary" href="/apps/mockly/">See full page</a>

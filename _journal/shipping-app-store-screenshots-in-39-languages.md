@@ -4,7 +4,7 @@ slug: shipping-app-store-screenshots-in-39-languages
 title: "How to ship a localised App Store screenshot set in 39 languages without losing your weekend"
 seo:
   title: "Localized App Store Screenshots in 39 Languages, Fast"
-  description: "App Store Connect accepts 39 locales; most apps ship one. Why localizing screenshots eats 10 to 30 hours per release, and how to ship all 39 quickly."
+  description: "Mockly lists 50 App Store languages; most apps ship one. Why localizing screenshots eats a weekend per release, and a workflow that scales."
   keywords:
     - "localized app store screenshots"
     - "app store screenshot localization"
@@ -13,114 +13,116 @@ seo:
     - "localize screenshots"
     - "app store locales"
 date: 2026-05-13
-lede: "App Store Connect accepts screenshots in 39 locales. Most indie apps ship in one, because the manual workflow takes 10 to 30 hours per release, and any change to a single screenshot means redoing the localisation pass. This post walks through a reproducible workflow that takes 90 minutes for the first release and 15 minutes for each subsequent one."
-quick_answer: "Localising App Store screenshots into 39 languages manually takes 10 to 30 hours per release: design once, translate text, lay out per locale, render per device size, upload per slot in App Store Connect. A reproducible workflow that fits in an afternoon: capture base-locale screenshots once, build the layout with text as a separate overlay layer that is never baked into the image, run automated AI translation across all 39 locales preserving fonts and positioning, render each device × locale combination from a single source, and bulk-upload via the App Store Connect API. Keeping text as an editable layer on top of the image is the architectural decision most indie screenshot pipelines get wrong."
+lede: "App Store Connect takes screenshots in dozens of languages, and Mockly lists 50 of them. Most indie apps ship in one, because the manual workflow can eat a weekend on the first release, and any change to a single screenshot means redoing the localisation pass. This post walks through a workflow that keeps the text editable, so adding languages becomes mostly mechanical work."
+quick_answer: "Localising App Store screenshots by hand is slow because every language repeats every step: design, translate, lay out, export per device size, and upload per language in App Store Connect. The fix is to keep the text as a separate, editable layer that is never baked into the screenshot image. Capture your base screenshots once, build the layout with text on top, translate the text for each language with AI or a translator, export each language from the same source, and upload through the App Store Connect API instead of the web form. Mockly works this way: one project holds up to 50 App Store languages, translates the text blocks with your own OpenAI, Anthropic, or Google key or through a CSV file, and uploads to App Store Connect."
 faq:
   - q: "What's the actual time cost of manual screenshot localisation for 39 languages?"
-    a: "Roughly 10 to 30 hours per release for a typical indie app shipping 6 screenshots per device class. The breakdown: 1 to 2 hours building each base screenshot, 1 to 3 hours translating 6 strings × 39 languages (with revisions), 4 to 8 hours laying out each locale × device combination, 2 to 4 hours uploading via the App Store Connect web UI (with locale-by-locale tab switching). Every time you tweak a single source screenshot, the localisation pass has to be redone."
+    a: "It adds up to many hours per release for a typical indie app with six screenshots per device size. The work splits into building each base screenshot, translating every caption into every language (with revisions), laying out each language and device combination, and uploading through the App Store Connect web form one language at a time. Every time you change one source screenshot, most of the localisation pass has to be redone. Mockly now lists 50 App Store languages, and the cost grows with each one you add."
   - q: "Why is the manual workflow so slow?"
-    a: "Most screenshot designs bake text into the image, so every locale needs a separate flat re-render. App Store Connect's web UI was not built for bulk upload; it is a per-locale, per-device-class form that requires manual file selection. And human translation roundtrips add days, and machine translation without preserving font and positioning produces output that looks broken in right-to-left languages."
+    a: "Most screenshot designs bake text into the image, so every language needs a separate flat re-render. The App Store Connect web form was not built for bulk upload: you pick a language, then a device size, then select the files by hand. Human translation round trips add days, and machine translation pasted into a fixed layout often overflows or breaks the design."
   - q: "What does 'text as an overlay layer' mean in practice?"
-    a: "The base screenshot is a clean capture of the app UI with no marketing text in it. The feature copy ('Track every workout in one tap.') lives in a separate text layer on top of the screenshot in your design tool: a Figma component, a Sketch text node, or a Mockly text overlay. When you localise, only the text layer changes per locale; the underlying screenshot stays the same across all 39 versions. That is what makes rendering 39 versions cheap."
+    a: "The base screenshot is a clean capture of the app UI with no marketing text in it. The feature copy ('Track every workout in one tap.') lives in a separate text layer on top of the screenshot in your design tool: a Figma component, a Sketch text node, or a text block in Mockly. When you localise, only the text layer changes per language, and the screenshot underneath can stay the same in every version. That is what makes many languages cheap."
   - q: "How does AI translation handle right-to-left languages like Arabic and Hebrew?"
-    a: "Cleanly when the layout engine knows about RTL, badly when it doesn't. Apple's App Store Connect requires Arabic and Hebrew screenshots in right-to-left layout, so a left-aligned overlay text in English becomes right-aligned in Arabic, and the visual hierarchy may flip. A tool that runs AI translation and naively pastes the result into the same coordinates produces broken-looking Arabic. A tool that respects RTL layout via Apple's standard text-direction handling produces output that reads correctly to a native Arabic reader."
+    a: "Check them by hand. A translation pasted into a layout built for English keeps the English alignment, which can look wrong to an Arabic or Hebrew reader. Treat those languages as their own layout: in Mockly, unlink the language from the source and adjust its text blocks, and have a native speaker review the first release."
   - q: "Is App Store Connect's bulk upload API actually faster than the web UI?"
-    a: "Yes, by 5 to 10× for a full 39-locale set. The web UI requires selecting each locale tab, dragging the file for each device size, waiting for upload confirmation, then repeating. The Connect API accepts a JSON manifest specifying every (locale, device class, screenshot slot) combination and uploads them in parallel. For 234 screenshots (6 sets × 39 locales) the web UI takes 2 to 4 hours of attention; the API takes under 3 minutes of compute."
+    a: "For a full multi-language set, yes. The web form makes you select each language, pick each device size, add the files, and wait for each upload before moving on. The App Store Connect API lets a tool upload every language and device size in one run without that clicking. Mockly uses the API with your own App Store Connect key, and fastlane deliver does the same from the command line."
 mentioned_apps:
   - mockly
-read_time: "10 min read"
-excerpt: "App Store Connect accepts screenshots in 39 locales. Most indie apps ship in one because the manual workflow takes 10 to 30 hours per release. This post walks through a reproducible workflow that does it in 90 minutes for the first release and 15 minutes per release after."
-last_updated: 2026-10-26
+read_time: "8 min read"
+excerpt: "App Store Connect takes screenshots in dozens of languages, and Mockly lists 50. Most indie apps ship in one because the manual workflow eats a weekend per release. This post walks through a workflow that keeps the text editable, so adding languages becomes mechanical."
+last_updated: 2026-10-29
 ---
 
-App Store Connect accepts screenshots in 39 locales. Almost every indie app ships in one, usually en-US, sometimes also Japanese or German. The gap between what's possible and what gets done comes down to the manual workflow, which takes long enough to consume an entire weekend on the first attempt and an evening on every subsequent release.
+App Store Connect takes screenshots in dozens of languages, and Mockly's language list now holds 50 of them. Almost every indie app ships in one, usually en-US, sometimes also Japanese or German. The gap between what's possible and what gets done comes down to the manual workflow, which can consume a whole weekend on the first attempt and an evening on every release after that.
 
-This post is the workflow I'd recommend to any indie developer going from one locale to 39, with the upfront cost cut to about 90 minutes and the per-release cost to about 15 minutes. The manual workflow is expensive because most screenshot pipelines bake text into images, which makes the localisation pass O(n) in human hours. If you keep text as an editable overlay layer, the localisation pass becomes O(1) in human hours and O(n) in machine compute, which is a much better trade.
+The title of this post says 39, the number it started with. The workflow below is the same whatever the count, and the rest of the post uses today's number where it describes Mockly.
+
+This is the workflow I'd recommend to any indie developer going from one language to many. The manual workflow is expensive because most screenshot pipelines bake text into images, which makes the localisation pass grow in human hours with every language you add. If you keep text as an editable overlay layer, the human work stays roughly the same and the per-language work becomes mechanical, which is a much better trade.
 
 ## Why the manual workflow is so slow
 
-If you're doing this manually today, your time probably looks something like this for a release with 6 screenshots per device class across 4 device classes (iPhone 6.9", 6.7", iPad 13", Mac):
+If you're doing this by hand today, a release with 6 screenshots per device size across a few device sizes (iPhone 6.9", iPad 13", Mac) breaks down like this:
 
-- **Design pass:** 1 to 2 hours to build the 6 base screenshots in Figma or your design tool of choice. This is the actual creative work, and the time is well spent.
+- **Design pass:** building the 6 base screenshots in Figma or your design tool of choice. This is the real creative work, and the time is well spent.
 
-- **Localisation prep:** 1 to 3 hours getting feature copy translated. Either you wait for human translators (multi-day roundtrip), or you batch-paste into ChatGPT/Claude/DeepL and edit the worst output, or you've already invested in a translation memory tool.
+- **Localisation prep:** getting the feature copy translated. Either you wait for human translators (a multi-day round trip), or you batch-paste into an AI tool and fix the worst output, or you've already invested in a translation memory tool.
 
-- **Layout pass:** This is the slow part. 6 screenshots × 39 locales = 234 unique layouts. If each takes 1 minute to render (in a fast workflow with text-as-layer) you get 4 hours. If each takes 5 minutes (baked-text workflow with per-locale edits and re-renders) you get 20 hours.
+- **Layout pass:** this is the slow part. 6 screenshots in 39 languages is 234 layouts, and at 50 languages it's 300. If text is a layer, each one is a quick check. If text is baked in, each one is an edit and a re-render.
 
-- **App Store Connect upload pass:** The web UI is a per-locale, per-device-class form. You select a locale tab, drag in 6 files for iPhone 6.9", wait for upload, switch to iPhone 6.7", drag in 6 more, repeat for iPad and Mac, switch to the next locale, and do it all again. Plan for 2 to 4 hours of attention.
+- **App Store Connect upload pass:** the web form works per language and per device size. You select a language, add 6 files for the iPhone size, wait for the upload, switch to iPad, add 6 more, repeat for Mac, switch to the next language, and do it all again.
 
-That's 8 to 30 hours total per release, depending entirely on whether your screenshot pipeline keeps text as a layer or bakes it in. Every subsequent release that changes a single source screenshot or a single string repeats most of the pain.
+The total depends almost entirely on whether your screenshot pipeline keeps text as a layer or bakes it in. Every later release that changes a single source screenshot or a single string repeats most of the pain.
 
-That is why almost every indie app ships in one or two locales. Apple is right to want localised screenshots, and its requirements are reasonable; the consumer tooling makes the workflow so expensive that nobody actually does it.
+That is why almost every indie app ships in one or two languages. Apple is right to want localised screenshots, and its requirements are reasonable. The consumer tooling makes the workflow so expensive that few people do it.
 
-## The architecture that makes 39 locales cheap
+## The architecture that makes many languages cheap
 
 Keep your text as a separate, editable overlay layer, and never bake it into the screenshot image. Once you adopt that constraint, everything downstream becomes mechanical.
 
 What that means in each tool:
 
-- **In Figma:** the base screenshot is one component (a flat image layer). The feature copy is a separate Text node on top of it. To localise, you duplicate the frame and edit the Text node's content; the base image stays referenced from the same source.
+- **In Figma:** the base screenshot is one component (a flat image layer). The feature copy is a separate Text node on top of it. To localise, you duplicate the frame and edit the Text node's content, and the base image stays referenced from the same source.
 
-- **In Sketch:** same pattern. Flat screenshot layer, text node on top. Localise the text node.
+- **In Sketch:** the same pattern. Flat screenshot layer, text node on top. Localise the text node.
 
-- **In Mockly:** the architecture is built in. Every screenshot is a project with the raw capture as one layer, the device frame as a 3D rendered layer, and overlaid text as separate editable text elements. AI translation operates on the text elements only; the captured screen content is byte-identical across all 39 locales.
+- **In Mockly:** the structure is built in. A project is a list of pages, each with your screenshot on a 3D device, text blocks on top, and a background. Each language follows the source language until you unlink it, and AI Translate changes only the text blocks. If a language needs its own screenshots, a different image, or a smaller headline, you change that language and leave the rest alone.
 
 Once text is a layer, you can:
 
-1. Run AI translation against all 39 locales in seconds rather than days.
-2. Render each (locale × device size) combination from the same source in milliseconds rather than minutes.
-3. Re-render the entire 234-screenshot bundle bit-for-bit identically when you change a single string.
+1. Translate every caption into every language in one pass instead of one language at a time.
+2. Export each language from the same source instead of rebuilding it.
+3. Change a single string and export the set again without touching the layout.
 
-That is how a release gets down to 15 minutes: the expensive parts (rendering, layout, upload) become mechanical compute instead of human labour.
+That is how a release shrinks to a short session: the slow parts (layout, export, upload) become mechanical instead of manual.
 
-## The 90-minute first-release workflow
+## The first-release workflow
 
-Assuming you've done the initial design pass already (the 1 to 2 hours of actual creative work) and you have base screenshots with text-as-layer:
+This assumes you've done the initial design pass (the real creative work) and have base screenshots with text as a layer.
 
-**Step 1 (15 min):** Set up locale list. App Store Connect supports 39 locales; you don't have to ship all of them. Pick the 5 to 10 that match your largest addressable markets. Most indie apps see meaningful conversion lift from English + Japanese + Simplified Chinese + German + Spanish + Korean. Expand from there as data justifies.
+**Step 1: Set up the language list.** Mockly lists 50 App Store languages, and you don't have to ship all of them. Start with the languages that match your largest markets, often English, Japanese, Simplified Chinese, German, Spanish, and Korean, and expand when your data justifies it.
 
-**Step 2 (10 min):** Configure your AI translation provider. OpenAI's GPT-4, Anthropic's Claude, and DeepL are the three I'd recommend in 2026. All produce App-Store-acceptable output with English/Japanese/Chinese/German source-target pairs. For RTL languages (Arabic, Hebrew), spot-check Claude or use a native speaker review pass for the first release.
+**Step 2: Choose a translation route.** In Mockly you can add your own OpenAI, Anthropic, or Google key and choose the model for each provider in Settings, or export a CSV for a translator and import it back. For languages you can't read yourself, plan a native-speaker review on the first release. AI output is machine translation.
 
-**Step 3 (5 min):** Run translation. If you're using Mockly: paste your base text strings, select target locales, click "Translate." Output goes straight into the layered project per locale. If you're using a manual workflow: paste each base string into the AI tool, get the 39-locale output, paste back into your design tool one locale at a time.
+**Step 3: Translate.** In Mockly, open the Text Editing tab, choose AI Translate, pick the target languages, and translate one page or all pages. Text blocks marked Do not translate (your app name, for example) are skipped. In a manual workflow, you paste each base string into an AI tool and paste the results back into your design tool one language at a time.
 
-**Step 4 (20 min):** Render every (device × locale) combination. Mockly handles this with one button and ~50 milliseconds per render. A manual Figma workflow can be scripted with the Figma API but requires upfront setup; without scripting, this is the part where the 90-minute workflow stretches.
+**Step 4: Export every language.** Mockly's Save Images writes every page as PNG or HEIC at the artboard's exact pixel size, for the current language or all of them. A Figma workflow can be scripted with the Figma API, but that takes setup, and without it this is the step where the afternoon stretches.
 
-**Step 5 (10 min):** Spot-check the RTL languages and any high-stakes locale (typically Japanese, where the character density differs from English and overflow is common). Adjust text overlay sizes if anything looks off.
+**Step 5: Spot-check.** Look at any right-to-left language and any high-stakes language (often Japanese, where character density differs from English, and German, where headlines run long). If one needs its own text size or layout, unlink it and adjust only that language.
 
-**Step 6 (5 min):** Upload via App Store Connect API. Mockly's direct upload pipeline handles this; Fastlane `deliver` is the open-source alternative if you've invested in Fastlane setup. Either way, it takes ~3 minutes of compute for a full 234-screenshot bundle.
+**Step 6: Upload.** Mockly uploads through the App Store Connect API with your API key, reads the display type from the artboard, and replaces the screenshots already in that display type for the languages you pick. fastlane `deliver` is the open-source alternative if you've already set up fastlane.
 
-Total: about 65 minutes if everything goes smoothly, 90 if you hit one or two spot-check issues. After this, every subsequent release is 15 minutes because the architecture is in place.
+After the first release, later ones are mostly steps 3, 4, and 6, because the structure is already in place.
 
 ## What goes wrong, and how to avoid it
 
-**RTL languages need explicit handling.** Arabic and Hebrew layouts flip: left-aligned overlay text should become right-aligned, and visual reading order may need to mirror. Tools that use Apple's standard text-direction APIs handle this automatically; tools that don't will produce broken-looking Arabic output. Always native-speaker-review the first Arabic release.
+**Right-to-left languages need a look.** Arabic and Hebrew readers expect right-aligned text, and a caption pasted into an English layout keeps its English alignment. Treat these languages as their own layout, and have a native speaker review the first Arabic or Hebrew release.
 
-**Japanese and Chinese character density is different.** A 7-word English headline fits in a header band; the same headline in Japanese may be 3 characters wide, and in German may be 12 words long and overflow. Build the text overlay with auto-resize or explicit length budgets per locale instead of fixed pixel widths.
+**Japanese and Chinese character density is different.** A 7-word English headline fits in a header band. The same headline in Japanese may be a few characters wide, and in German it may run long and overflow. Set text sizes per language where needed instead of trusting one fixed width.
 
-**Sometimes the AI translation gets a domain term wrong.** "Workout" in fitness context translates differently from "workout" in general fitness. Use a glossary or instruct the AI translation tool with brand-specific term mappings. For a fitness app: provide a 5-term glossary mapping reps / sets / RPE / etc. to native equivalents.
+**Sometimes the AI translation gets a domain term wrong.** "Set" in a fitness app means something different from "set" in a settings screen. Give the translator, human or AI, a short glossary of your product terms, and read the output for the terms that matter.
 
-**Don't translate proper nouns.** Your app name stays "Strava" in every locale. Some translation tools will helpfully render "Strava" into the target script (it shouldn't); confirm proper-noun handling on first run.
+**Don't translate proper nouns.** Your app name stays the same in every language. Some translation tools will helpfully transliterate it into the target script. In Mockly, mark that text block Do not translate, and check proper nouns on the first run.
 
-**App Store Connect rate limits matter for bulk upload.** The Connect API has burst limits. Tools that respect them (Mockly's pipeline, Fastlane deliver with proper config) upload cleanly; tools that hammer the API can get temporary backoff.
+**Uploads replace what's there.** Uploading through the API (Mockly or fastlane deliver) replaces the screenshots in that display type. Check the set before you send it, especially for languages you can't read.
 
 ## What the actual tools cost
 
-The economics for 2026 indie pipelines:
+The trade-offs for indie pipelines:
 
-- **Figma + manual translation + manual upload:** Free (within Figma free plan). Time cost is the 10 to 30 hours described above. For an app shipping 3 releases per year that's 30 to 90 hours per year, or half a developer-week.
-- **Figma + AI translation (BYO API) + manual upload:** ~$2 to $5 of API calls per release. Time cost drops to 4 to 10 hours.
-- **Subscription SaaS (Screenshots.pro / AppLaunchpad Pro / Screenshot Studio):** $19 to $49 per month, or $228 to $588 per year. Time cost drops to 1 to 3 hours per release.
-- **[Mockly](/apps/mockly/) (one-time {P_APP@mockly}):** Time cost drops to 90 min first release, 15 min subsequent releases. AI translation against your own API key (~$0.50 to $2 per release at 2026 API prices).
+- **Figma, manual translation, and manual upload:** free within Figma's free plan. The cost is your time, and it repeats every release.
+- **Figma, AI translation on your own key, and manual upload:** a small API bill per release. Translation gets quick, and layout and upload stay manual.
+- **Subscription web tools (Screenshots.pro, AppLaunchpad, Screenshot Studio):** $19 to $49 per month when we last checked. Most of the workflow moves into the tool.
+- **[Mockly](/apps/mockly/) (one-time {P_APP@mockly}, no subscription):** a Mac app that holds up to 50 languages in one project, translates with your own AI key (your provider bills you) or a CSV file, and uploads to App Store Connect.
 
-The price of the tool is small next to the cost of the time. What matters most is which workflow architecture you adopt.
+The price of the tool is small next to the cost of your time. What matters most is which workflow architecture you adopt.
 
 ## TL;DR
 
-- **39-locale localisation manually costs 10 to 30 hours per release** and most indie apps skip it entirely for this reason.
+- **Localising screenshots by hand costs many hours per release,** and most indie apps skip it for that reason.
 - **The fix is architectural:** keep overlaid text as a separate editable layer in your design tool, and never bake it into the screenshot image.
-- **Once text-as-layer is in place,** AI translation runs in seconds, rendering in milliseconds, and the App Store Connect API bulk-uploads in minutes.
-- **First release: 90 minutes. Subsequent releases: 15 minutes.** The first hour of architecture work pays back many hours over each year of releases.
-- **Watch for RTL handling (Arabic/Hebrew),** character density differences (Japanese/Chinese/German), proper-noun preservation, and App Store Connect API rate limits.
-- **Related reading:** [Why Mac-native is the right architecture for App Store screenshots](/journal/why-mac-native-for-app-store-screenshots/) explains why local rendering matters for the architecture above, and [What every App Store Review Guidelines screenshot rule actually means](/journal/app-store-screenshot-review-guidelines-explained/) covers the compliance side of the same pipeline.
+- **Once text is a layer,** translation, export, and upload become mechanical steps you repeat each release.
+- **The first release takes the longest.** Later releases reuse the same structure.
+- **Watch for right-to-left languages (Arabic, Hebrew),** character density (Japanese, Chinese, German), proper nouns, and uploads that replace the existing set.
+- **Related reading:** [Why Mac-native is the right architecture for App Store screenshots](/journal/why-mac-native-for-app-store-screenshots/) explains why local projects matter for the setup above, and [What every App Store Review Guidelines screenshot rule actually means](/journal/app-store-screenshot-review-guidelines-explained/) covers the compliance side of the same pipeline.
 
-Whether you can ship 39 locales comes down to whether your text layer is editable. Get that right and the rest is mechanical.
+Whether you can ship every language comes down to whether your text layer is editable. Get that right and the rest is mechanical.
