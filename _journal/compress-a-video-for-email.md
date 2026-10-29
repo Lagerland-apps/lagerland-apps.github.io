@@ -15,7 +15,7 @@ seo:
     - mail drop size limit
     - compress video on iphone
     - mediakit
-lede: "Every email provider caps what it will carry, and video reaches the cap fast. This post covers the limits Gmail, Outlook and iCloud Mail publish, why a 25 MB limit does not take a 25 MB file, the arithmetic that turns a target size into a bitrate, and how MediaKit does that arithmetic on iPhone or Mac without uploading the clip."
+lede: "Every email provider caps what it will carry, and video reaches the cap fast. This post covers the limits Gmail, Outlook, and iCloud Mail publish, why a 25 MB limit does not take a 25 MB file, the arithmetic that turns a target size into a bitrate, and how MediaKit does that arithmetic on iPhone or Mac without uploading the clip."
 quick_answer: "To email a video, make the file smaller than your provider's limit with room to spare. Personal Gmail accepts 25 MB of attachments, the Outlook app 20 MB per message for internet accounts such as Outlook.com, iCloud Mail 20 MB, and Exchange work accounts 10 MB by default. Attachments travel Base64-encoded, which Microsoft says adds about 33%, so aim for about three-quarters of the limit: roughly 18 MB for Gmail and 15 MB for Outlook or iCloud Mail. To find the bitrate, multiply the target in megabytes by 8,000 and divide by the clip's length in seconds; that is the total in kbps. Subtract the audio bitrate (128 kbps is typical) and the rest is the video budget. Lower the resolution until the budget suits it, keep H.264 so the clip plays everywhere, and send a link instead when the budget gets too thin: Mail Drop carries up to 5 GB."
 faq:
   - q: "What is the maximum video size you can email with Gmail?"
@@ -25,16 +25,16 @@ faq:
   - q: "How do I calculate the bitrate for a target file size?"
     a: "Multiply the target size in megabytes by 8,000 to get kilobits, divide by the clip's length in seconds to get the total bitrate in kbps, then subtract the audio bitrate. What remains is the video bitrate. For an 18 MB target and a 90-second clip: 18 × 8,000 = 144,000 kilobits, divided by 90 is 1,600 kbps, minus 128 kbps of audio leaves about 1,470 kbps for the picture."
   - q: "Should I use H.264 or HEVC for a video I am emailing?"
-    a: "H.264 in an MP4, unless you know the recipient is on a recent Apple device. Apple says HEVC compresses better than H.264, so an HEVC file looks better at the same size, but you don't control what the attachment is opened on, and H.264 is the format almost everything plays. If the recipient is on a current iPhone, iPad or Mac, HEVC buys extra quality at the same size."
+    a: "H.264 in an MP4, unless you know the recipient is on a recent Apple device. Apple says HEVC compresses better than H.264, so an HEVC file looks better at the same size, but you don't control what the attachment is opened on, and H.264 is the format almost everything plays. If the recipient is on a current iPhone, iPad, or Mac, HEVC buys extra quality at the same size."
   - q: "What if my video is too long to compress small enough?"
     a: "Send a link. Mail Drop in Apple Mail and iCloud Mail sends files up to 5 GB as a download link that expires after 30 days, and Mail offers it when a message is too large for your provider. Gmail swaps an oversized attachment for a Google Drive link on its own. A five-minute clip squeezed into 15 MB leaves about 270 kbps for video, a quarter of what YouTube suggests even for 360p uploads."
   - q: "Can MediaKit compress a video to a specific file size?"
-    a: "Yes. Video Compress has a Target size mode that takes a number in KB, MB or GB. MediaKit divides the target by the clip's length, takes out the audio bitrate you chose, holds back 3%, encodes, then measures the file it wrote and encodes again with a corrected bitrate if it missed. It runs on-device on iPhone and Mac, and Video Compress is one of five tools that stay free after the three-day trial."
+    a: "Yes. Video Compress has a Target size mode that takes a number in KB, MB, or GB. MediaKit divides the target by the clip's length, takes out the audio bitrate you chose, holds back 3%, encodes, then measures the file it wrote and encodes again with a corrected bitrate if it missed. If it still can't get under the target, it stops with an error instead of handing you a file that is too big. It runs on the device on iPhone and Mac, and Video Compress is one of five tools that stay free for good after the first three days."
 mentioned_apps:
   - mediakit
 read_time: "6 min read"
-excerpt: "A reference for emailing video: the attachment limits Gmail, Outlook, Exchange, iCloud Mail and Mail Drop publish, why Base64 encoding means aiming for three-quarters of the limit, a bitrate table for clips from 30 seconds to five minutes, and how MediaKit's Target size mode runs the same arithmetic on iPhone and Mac."
-last_updated: 2026-10-26
+excerpt: "A reference for emailing video: the attachment limits Gmail, Outlook, Exchange, iCloud Mail, and Mail Drop publish, why Base64 encoding means aiming for three-quarters of the limit, a bitrate table for clips from 30 seconds to five minutes, and how MediaKit's Target size mode runs the same arithmetic on iPhone and Mac."
+last_updated: 2026-10-29
 ---
 
 At the 8 Mbps that YouTube recommends for 1080p uploads, one minute of video is 60 MB. That is more than twice what Gmail will attach. Getting a clip into an email is a small sum: pick a target below your provider's limit, work out the bitrate that fits it, and re-encode at that bitrate. This post gives the numbers for each step, then shows how [MediaKit](/apps/mediakit/) does it on iPhone and Mac without sending the clip anywhere first.
@@ -91,7 +91,7 @@ Figures are rounded down.
 
 ## Which resolution and codec to choose
 
-A bitrate is only generous or thin relative to the frame it has to fill. For scale, YouTube's [recommended upload settings](https://support.google.com/youtube/answer/1722171) for standard frame rates ask for 8 Mbps at 1080p, 5 Mbps at 720p, 2.5 Mbps at 480p and 1 Mbps at 360p. Those figures are high, because YouTube re-encodes everything it receives, but they show how fast the need falls with frame size: 1080p has 2.25 times the pixels of 720p.
+A bitrate is only generous or thin relative to the frame it has to fill. For scale, YouTube's [recommended upload settings](https://support.google.com/youtube/answer/1722171) for standard frame rates ask for 8 Mbps at 1080p, 5 Mbps at 720p, 2.5 Mbps at 480p, and 1 Mbps at 360p. Those figures are high, because YouTube re-encodes everything it receives, but they show how fast the need falls with frame size: 1080p has 2.25 times the pixels of 720p.
 
 A rough rule: if your video budget is well under half of YouTube's figure for the clip's resolution, step down one resolution. By that rule, a one-minute clip at 18 MB (2,270 kbps) sits better at 720p than at 1080p, and at 7.5 MB (870 kbps) it belongs at 480p or below. Three other settings move the result:
 
@@ -111,7 +111,7 @@ With a link, the recipient gets the full-quality original, and a copy sits on a 
 
 ## Doing it in MediaKit
 
-[MediaKit](/apps/mediakit/) runs the arithmetic above on the device, on iPhone and on Mac, and never uploads the clip. Video Compress is one of the five tools that stay free after the three-day trial.
+[MediaKit](/apps/mediakit/) runs the arithmetic above on the device, on iPhone and on Mac, and never uploads the clip. Video Compress is one of the five tools that stay free for good after the first three days, one file at a time.
 
 1. **Open the clip.** On a Mac, drag it onto the window. On iPhone, add it from Photos or Files, or send it from another app's share sheet.
 2. **Choose the video Compress tool** and set **Mode** to **Target size**.
@@ -119,6 +119,6 @@ With a link, the recipient gets the full-quality original, and a copy sits on a 
 4. **Open Advanced.** Set **Max resolution** using the bitrate table, leave **Codec** on H.264 for email, and choose **64 kbps (voice)** under **Audio bitrate** if the clip is mostly speech.
 5. **Run it, then check the size** of the result before you attach it.
 
-In Target size mode MediaKit does steps one to four of the sum itself: it divides the target by the clip's length, takes out the audio bitrate you chose and holds back 3%, encodes, then measures the file it wrote and encodes again with a corrected bitrate if it missed. A 4K or 1440p source starts with Max resolution set to 1080p; for a small target, set it lower.
+In Target size mode MediaKit does steps one to four of the sum itself: it divides the target by the clip's length, takes out the audio bitrate you chose and holds back 3%, encodes, then measures the file it wrote and encodes again with a corrected bitrate if it missed. It never hands you a file over the target: if it can't get under, it stops with an error. A 4K or 1440p source starts with Max resolution set to 1080p; for a small target, set it lower.
 
 If you already use HandBrake for this job, the [HandBrake comparison](/alternatives/handbrake/) covers where the two differ, and the [Compress Videos & Resize Video comparison](/alternatives/compress-videos-resize-video/) does the same on iPhone. Why the studio keeps this work off other people's servers is the subject of [an earlier post](/journal/your-photos-shouldnt-ride-the-elevator/), and the wider toolkit is in [this one](/journal/every-media-tool-already-on-your-mac/).
