@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T15:34:11.802Z",
+    "generated_at": "2026-10-29T20:02:13.812Z",
     "source": "App Store Connect API",
     "live_app_count": 20,
     "territories": [
@@ -6894,7 +6894,7 @@
       },
       "plans": {
         "monthly": {
-          "family_sharing": false,
+          "family_sharing": true,
           "free_trial": null,
           "prices": {
             "USA": {
@@ -6968,7 +6968,7 @@
           }
         },
         "yearly": {
-          "family_sharing": false,
+          "family_sharing": true,
           "free_trial": null,
           "prices": {
             "USA": {
@@ -7042,7 +7042,7 @@
           }
         },
         "lifetime": {
-          "family_sharing": false,
+          "family_sharing": true,
           "free_trial": null,
           "prices": {
             "USA": {
