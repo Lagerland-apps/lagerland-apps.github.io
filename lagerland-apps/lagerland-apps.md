@@ -2,32 +2,32 @@
 layout: default
 permalink: /lagerland-apps/
 title: "About Lagerland Apps"
-quick_answer: "Lagerland Apps is a one-person Apple studio in Finland, run by a single independent developer. It builds {APP_COUNT} privacy-first iOS, iPadOS, watchOS, and macOS apps with no third-party tracking, no advertising SDKs, and no required accounts. The studio is funded by people paying for the software."
+quick_answer: "Lagerland Apps is a one-person Apple studio in Finland. One independent developer designs, codes, tests, and supports all {APP_COUNT} of its apps for iPhone, iPad, Apple Watch, and Mac. No app contains advertising or analytics SDKs, requests the IDFA, or asks you to create an account, and none sends your data to a server run by the studio. The studio is funded by the people who pay for the apps."
 seo:
   title: "About Lagerland Apps: Indie Apple Developer in Finland"
-  description: "One-person Apple studio in Finland building {APP_COUNT} privacy-first iOS & Mac apps with no trackers, ads, or accounts, funded by paid software."
+  description: "A one-person Apple studio in Finland with {APP_COUNT} apps for iPhone, iPad, Apple Watch, and Mac, with no ads, trackers, or accounts. Funded by paid apps."
   keywords:
     - Lagerland Apps
     - independent Apple developer Finland
     - indie Apple app studio
     - privacy-first iOS developer
     - indie macOS developer
-    - SwiftUI developer
     - one-person iOS studio
+    - indie developer
 faq:
   - q: "Who is behind Lagerland Apps?"
-    a: "Lagerland Apps is a one-person Apple studio in Finland run by a single independent developer. One person designs, codes, tests, and ships every app. There is no team, no investor, and no advertiser."
+    a: "Lagerland Apps is a one-person Apple studio in Finland run by a single independent developer. One person designs, codes, tests, ships, and supports every app. There is no team, no investor, and no advertiser."
   - q: "Where is Lagerland Apps based?"
-    a: "Lagerland Apps is based in Finland and operates as an independent Apple developer with apps distributed worldwide through the Apple App Store under developer ID 1855943133."
+    a: "Lagerland Apps is based in Finland, in the EU, and publishes its apps worldwide on the App Store under developer ID 1855943133."
   - q: "How is Lagerland Apps funded if there are no ads?"
-    a: "People pay for the software: one-time purchases, optional Pro subscriptions, and free tiers whose core features stay free. The studio sells no advertising and no data, and uses no dark patterns."
+    a: "The people who use the apps pay for them. Most apps are free to download, with an optional paid upgrade sold as a subscription, a one-time purchase, or both. Mockly is the one app you pay for up front. The studio sells no advertising and no data."
   - q: "How many apps does Lagerland Apps publish?"
-    a: "Lagerland Apps currently publishes {APP_COUNT} live apps across health, daily planning, finance, reading, fitness, games, Apple developer tools, and utilities, all for Apple platforms."
+    a: "Lagerland Apps publishes {APP_COUNT} live apps for Apple platforms, covering health and training, daily planning, bills, reading, board games and logic puzzles, tools for App Store developers, and file conversion."
   - q: "Does Lagerland Apps collect any user data?"
-    a: "No. No app includes third-party analytics or advertising SDKs, and none requires an account. User data stays on-device wherever possible; any sync uses the user's own iCloud account."
+    a: "No app contains a third-party analytics or advertising SDK, none requires an account, and none sends your data to a server run by the studio. Your data stays on your device, and the apps that sync use your own iCloud. Apps that need the internet for their job, such as WanderWiki for Wikipedia or the developer tools for App Store Connect, connect to that service directly."
   - q: "What platforms does Lagerland Apps build for?"
-    a: "Lagerland Apps builds native applications for iPhone, iPad, Apple Watch, and Mac. Apps are built with SwiftUI, HealthKit, StoreKit and CoreData/SwiftData, without cross-platform wrappers or Electron."
-last_updated: 2026-10-26
+    a: "Lagerland Apps builds native apps for iPhone, iPad, Apple Watch, and Mac with Apple's own frameworks, without cross-platform wrappers or Electron. Each app page lists the devices that app runs on."
+last_updated: 2026-10-29
 ---
 
 <script type="application/ld+json">
@@ -78,7 +78,7 @@ last_updated: 2026-10-26
       Built by <span class="gradient-text">one person</span><br>for people who miss calm software.
     </h1>
     <p class="lead">
-      Lagerland Apps is a one-person studio in Finland, run by a single independent Apple developer. One person designs, codes, tests, and ships every app, with no investors or advertisers to answer to.
+      Lagerland Apps is a one-person studio in Finland. One independent Apple developer designs, codes, tests, ships, and supports every app, and answers to the people who pay for them, with no investors or advertisers in between.
     </p>
   </div>
 </section>
@@ -88,19 +88,19 @@ last_updated: 2026-10-26
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">Private by default</div>
-      <div class="card-text">The apps have no third-party tracking SDKs, no advertising networks, and no analytics that identify you. Data stays on your device, and any cloud sync uses your own iCloud account.</div>
+      <div class="card-text">No app carries an advertising or analytics SDK or requests the IDFA, and none sends your data to a server of ours. Your data stays on your device, and any sync uses your own iCloud. The <a href="/transparency/">transparency page</a> lists what each app declares.</div>
     </div>
     <div class="card">
       <div class="card-title">How the apps are paid for</div>
-      <div class="card-text">One-time purchases, optional Pro subscriptions, and free tiers whose core features stay free. There are no ads, no dark patterns, and no trials that start charging on their own.</div>
+      <div class="card-text">Most apps are free to download, with an optional upgrade sold as a subscription, a one-time purchase, or both. Mockly is the one app you pay for up front. Every purchase goes through Apple, so you see the price before you confirm, and you manage or cancel a subscription in Settings on iPhone or iPad or in the App Store app on Mac.</div>
     </div>
     <div class="card">
       <div class="card-title">Single-purpose tools</div>
-      <div class="card-text">Each app does one job. The catalogue is a set of small, focused tools you can use together or on their own.</div>
+      <div class="card-text">Each app does one job: plan the day, log a workout, remember a bill, learn a board game. You install the ones you need and nothing else.</div>
     </div>
     <div class="card">
-      <div class="card-title">Apple-native engineering</div>
-      <div class="card-text">Built with SwiftUI, HealthKit, StoreKit, CoreData/SwiftData, and Apple's own frameworks. The apps use no cross-platform wrappers or Electron, so they behave the way Apple software should.</div>
+      <div class="card-title">Native to Apple devices</div>
+      <div class="card-text">Built with Apple's own frameworks, without cross-platform wrappers or Electron. The apps use what your device already has, such as Apple Health, widgets, Siri, and iCloud, where the app needs them.</div>
     </div>
   </div>
 </section>
@@ -108,10 +108,10 @@ last_updated: 2026-10-26
 <section class="section reveal">
   <h2 class="h2">Platforms</h2>
   <div class="grid grid-4 stagger">
-    <div class="card"><div class="card-title">iPhone</div><div class="card-text">iOS apps across productivity, health, finance, reading, and lifestyle.</div></div>
-    <div class="card"><div class="card-title">iPad</div><div class="card-text">Universal apps that scale up to iPad with proper iPadOS-native layouts.</div></div>
-    <div class="card"><div class="card-title">Apple Watch</div><div class="card-text">Direct-to-watch logging for workouts and quick-capture flows.</div></div>
-    <div class="card"><div class="card-title">Mac</div><div class="card-text">Native macOS developer tools for App Store Connect workflows and local file conversion.</div></div>
+    <div class="card"><div class="card-title">iPhone</div><div class="card-text">Almost every app, from health and planning to bills, reading, and games.</div></div>
+    <div class="card"><div class="card-title">iPad</div><div class="card-text">The board games, both logic puzzles, Observa, Pawza, Taskful Day, and WanderWiki.</div></div>
+    <div class="card"><div class="card-title">Apple Watch</div><div class="card-text">GymLogger X, Observa, and Taskful Day, plus EarnLock's Watch app with Premium.</div></div>
+    <div class="card"><div class="card-title">Mac</div><div class="card-text">AppMeta and Mockly for App Store developers, MediaKit, Taskful Day, and the three board games.</div></div>
   </div>
 </section>
 

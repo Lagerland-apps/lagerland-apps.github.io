@@ -2,7 +2,7 @@
 layout: default
 permalink: /apps/appmeta-pulse/api-access/
 title: "AppMeta Pulse: API Access & Methodology"
-quick_answer: "AppMeta Pulse authenticates to App Store Connect using Apple's official API with a .p8 key you generate, with the Admin role, in App Store Connect → Users and Access → Integrations. The .p8 private key, Key ID, and Issuer ID are stored in your system Keychain. Each API call uses a short-lived JWT signed locally with ES256; Apple's documented requirement caps token lifetime at 20 minutes. AppMeta Pulse reads Sales and Trends, subscription, App Store analytics, catalog, and customer-review endpoints; its only writes are review replies you choose to send and the analytics report requests Apple needs to prepare impressions data. Queries go to api.appstoreconnect.apple.com directly over HTTPS, and nothing is routed through Lagerland servers."
+quick_answer: "AppMeta Pulse authenticates to App Store Connect using Apple's official API with a .p8 key you generate, with the Admin role, in App Store Connect → Users and Access → Integrations. The .p8 private key, Key ID, and Issuer ID are stored in the iPhone Keychain, and the key never leaves the device. Each API call uses a short-lived JWT signed locally with ES256; Apple's documented requirement caps token lifetime at 20 minutes. AppMeta Pulse reads Sales and Trends, subscription, App Store analytics, catalog, and customer-review endpoints; its only writes are review replies you choose to send and the analytics report requests Apple needs to prepare impressions data. Queries go to api.appstoreconnect.apple.com directly over HTTPS, and nothing is routed through Lagerland servers."
 seo:
   title: "AppMeta Pulse: API Access & Methodology"
   description: "How AppMeta Pulse authenticates to App Store Connect: .p8 key, ES256 JWT, role-to-endpoint mapping, and what the app does and cannot do."
@@ -11,13 +11,12 @@ seo:
     - App Store Connect API .p8 key
     - App Store Connect API role
     - App Store Connect JWT token
-    - App Store Connect API read-only
     - Sales and Trends API endpoint
     - subscription reports API
     - App Store Connect API ES256
     - App Store Connect Sales role
     - Keychain stored API key iPhone
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "appmeta-pulse" | first -%}
@@ -31,7 +30,7 @@ last_updated: 2026-10-26
   "description": {{ page.seo.description | jsonify }},
   "url": "{{ site.url }}/apps/appmeta-pulse/api-access/",
   "datePublished": "2026-05-13",
-  "dateModified": "2026-10-25",
+  "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
   "inLanguage": "en",
   "publisher": { "@id": "{{ site.url }}/#organization" },
   "isPartOf": { "@id": "{{ site.url }}/#website" },
@@ -92,8 +91,8 @@ last_updated: 2026-10-26
       <div class="card-title">In AppMeta Pulse (the app)</div>
       <ul class="bullets">
         <li>Paste or import the <code>.p8</code> file, Key ID, and Issuer ID into AppMeta Pulse.</li>
-        <li>The three values are stored together in the system <strong>Keychain</strong>, the same secure storage iOS and macOS use for passwords and Wi-Fi credentials.</li>
-        <li>None of the three is written to plain files, iCloud Drive, iCloud Sync, third-party servers, or analytics SDKs. With iCloud Sync on, the Issuer ID is replaced by a one-way hash and the Key ID by a short hash; the account name and vendor number you entered do sync.</li>
+        <li>The three values are stored together in the iPhone <strong>Keychain</strong>, the secure storage iOS uses for passwords and Wi-Fi credentials. The .p8 key is kept for this device only.</li>
+        <li>The .p8 key is never written to plain files, iCloud Drive, iCloud Sync, or any server, and the app contains no analytics SDKs. With iCloud Sync on, the account name and vendor number you entered sync to your own private iCloud database; the key stays on this iPhone.</li>
         <li>Revoke the key any time in App Store Connect → Users and Access → Integrations. Revocation takes effect at Apple's API immediately; the app cannot circumvent it.</li>
       </ul>
     </div>
@@ -145,7 +144,7 @@ last_updated: 2026-10-26
     </div>
     <div class="card">
       <div class="card-title">Subscription reports</div>
-      <div class="card-text">Endpoint: <code>GET /v1/salesReports</code> with report types <code>SUBSCRIPTION</code> and <code>SUBSCRIPTION_EVENT</code>, daily.<br><br><strong>Role:</strong> Admin, as for the Sales report.<br><br>Drives the subscription views: MRR, active subscriptions, trials, trial-to-paid conversion, churn, and cancellations.</div>
+      <div class="card-text">Endpoint: <code>GET /v1/salesReports</code> with report types <code>SUBSCRIPTION</code> and <code>SUBSCRIPTION_EVENT</code>, daily.<br><br><strong>Role:</strong> Admin, as for the Sales report.<br><br>Drives the subscription views: MRR, active subscriptions, trials, churn, and cancellations. The trial and conversion figures are estimates built from new subscriptions and the current number of active trials, not an exact trial-to-paid rate.</div>
     </div>
     <div class="card">
       <div class="card-title">App Analytics</div>
@@ -177,8 +176,8 @@ last_updated: 2026-10-26
     <div class="card">
       <div class="card-title">At Apple's API level</div>
       <ul class="bullets">
-        <li>The role you set on the API key determines what the key can do. An Admin key could change far more than Pulse ever asks of it, so the limits on what Pulse changes are the code limits listed on the left, not the key's role.</li>
-        <li>You can revoke the key in App Store Connect at any time; the next API call from AppMeta Pulse will fail with 401 and the app shows that state clearly.</li>
+        <li>The role you set on the API key determines what the key can do. An Admin key could change far more than Pulse ever asks of it. What Pulse can change is set by its code, listed on the left.</li>
+        <li>You can revoke the key in App Store Connect at any time; the next API call from AppMeta Pulse fails with a 401 error, and Settings → Connection shows it.</li>
         <li>Apple's API enforces the role on every request and does not rely on trusting the calling app.</li>
       </ul>
     </div>
@@ -191,7 +190,7 @@ last_updated: 2026-10-26
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">Sales and Trends</div>
-      <div class="card-text">Apple publishes each day's report the following day, generally by 8 a.m. Pacific Time (<a href="https://developer.apple.com/help/app-store-connect/reference/reporting/sales-and-trends-reports-availability" rel="noopener">Apple</a>). That is the same cadence as the App Store Connect web dashboard; App Store analytics arrive a day or two later. AppMeta Pulse checks in the background about hourly until the new day is in, and again when you open the app or pull to refresh; the data shown is whatever Apple has currently published for your account.</div>
+      <div class="card-text">Apple publishes each day's report the following day, generally by 8 a.m. Pacific Time (<a href="https://developer.apple.com/help/app-store-connect/reference/reporting/sales-and-trends-reports-availability" rel="noopener">Apple</a>). That is the same cadence as the App Store Connect web dashboard; App Store analytics arrive a day or two later. AppMeta Pulse refreshes in the background about hourly (iOS decides the exact timing) and syncs again when you open the app. It shows whatever Apple has published for your account so far.</div>
     </div>
     <div class="card">
       <div class="card-title">Financial Reports</div>
@@ -206,20 +205,19 @@ last_updated: 2026-10-26
     <div class="card">
       <div class="card-title">Honest limits</div>
       <ul class="bullets">
-        <li>Numbers can never be fresher than Apple's reporting cadence. We cannot accelerate Apple's overnight ETL.</li>
+        <li>Numbers can never be fresher than Apple's reporting cadence. Pulse can't make Apple publish its reports sooner.</li>
         <li>Pulse converts every amount into your display currency with the European Central Bank's monthly average rates. Apple pays with its own exchange rates and after withholding and bank fees, so converted totals will not match what hits your bank account.</li>
         <li>If your API key's role can't read a data source (an App Manager or Developer key can't download reports), Settings → Connection says which one failed and why, so you don't get silently empty charts.</li>
-        <li>App Store Connect API rate limits are managed by Apple. Heavy refresh during a sales spike may briefly throttle; the app backs off and does not retry aggressively.</li>
+        <li>Apple sets the App Store Connect API rate limits. Very frequent syncing can be throttled for a while.</li>
       </ul>
     </div>
     <div class="card">
       <div class="card-title">What is under our control</div>
       <ul class="bullets">
-        <li>Where the .p8 key lives (the system Keychain, never iCloud Drive, a plaintext file, or a third-party server).</li>
+        <li>Where the .p8 key lives (the iPhone Keychain, never iCloud Drive, a plaintext file, or a third-party server).</li>
         <li>Where your data goes when iCloud Sync is on (your own private iCloud database, which we can't access; the .p8 key never syncs).</li>
-        <li>What the app does with your data after fetching it (keeps it for you; nothing is sent to us, and the App Store privacy label, which you can check on the listing, declares zero data collection).</li>
+        <li>What the app does with your data after fetching it (keeps it on your iPhone; nothing is sent to us, and there is no Pulse server).</li>
         <li>Which App Store Connect writes the app makes (only the review replies you send and analytics report requests, listed above).</li>
-        <li>Honest disclosure when something changes (this page is dated and updated when the model changes).</li>
       </ul>
     </div>
   </div>
@@ -237,7 +235,7 @@ last_updated: 2026-10-26
 <section class="cta-section reveal">
   <p class="overline">Use it</p>
   <h2 class="h2">Try AppMeta Pulse</h2>
-  <p class="lead">App Store Connect on your iPhone, without build, pricing, or metadata controls. The privacy label declares zero data collection, the .p8 key stays in your Keychain, and your data goes only to Apple.</p>
+  <p class="lead">App Store Connect sales, subscriptions, and reviews on your iPhone. Pulse can't change your prices, builds, or metadata, the .p8 key stays in your iPhone Keychain, and your requests go only to Apple.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/appmeta-pulse/">Learn about AppMeta Pulse</a>
     <a class="btn btn-secondary" href="/alternatives/appstats/">AppMeta Pulse vs AppStats</a>

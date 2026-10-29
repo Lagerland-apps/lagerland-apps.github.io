@@ -2,12 +2,12 @@
 layout: default
 ref: /apps/
 permalink: /de/apps/
-translated_from: 2026-10-26
+translated_from: 2026-10-29
 title: "Apps ohne Werbung für iPhone, iPad und Mac"
-quick_answer: "Lagerland Apps bietet {APP_COUNT} Apps ohne Werbung für iPhone, iPad, Apple Watch und Mac an: für Gesundheit und Schlaf, Tagesplanung, Rechnungen und geteilte Ausgaben, Lesen, Spiele, Dateikonvertierung und die Arbeit mit App Store Connect. Keine davon trackt dich oder verlangt ein Konto. Alle stammen von einem einzigen unabhängigen Apple-Entwickler."
+quick_answer: "Lagerland Apps hat {APP_COUNT} Apps ohne Werbung für iPhone, iPad, Apple Watch und Mac, hier nach ihrer Aufgabe sortiert: Gesundheit, Schlaf und Training; Tagesplanung und Countdowns; Rechnungen und geteilte Kosten; Wikipedia lesen; Brettspiele und Logikrätsel; Werkzeuge für App-Store-Entwickler; Dateien umwandeln. Keine App zeigt Werbung, trackt dich oder verlangt ein Konto. Alle stammen von einem einzigen unabhängigen Entwickler in Finnland."
 seo:
   title: "iPhone-Apps ohne Werbung: der Katalog von Lagerland Apps"
-  description: "Nützliche iPhone-Apps für Gesundheit, Planung, Finanzen und Entwicklertools, dazu Spiele, auch für iPad, Apple Watch und Mac. Ohne Tracking, ohne Werbung."
+  description: "Nützliche iPhone-Apps für Gesundheit, Planung, Rechnungen und Entwicklertools, dazu Spiele, auch für iPad, Apple Watch und Mac. Ohne Werbung und Tracking."
   keywords:
     - iphone apps ohne werbung
     - beste iphone apps
@@ -17,7 +17,7 @@ seo:
     - apple watch apps ohne werbung
     - datenschutzfreundliche apps
     - indie entwickler apps
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 {%- include t.html -%}
@@ -95,9 +95,9 @@ last_updated: 2026-10-27
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">{% if de_apps.size > 0 %}{{ de_apps.size }} {% if de_apps.size == 1 %}App{% else %}Apps{% endif %} · {{ n_cats }} {% if n_cats == 1 %}Kategorie{% else %}Kategorien{% endif %} · {% endif %}100&nbsp;% datenschutzfreundlich</p>
-    <h1 class="h1">Apps ohne Werbung für <span class="gradient-text">iPhone, iPad und Mac.</span></h1>
-    <p class="lead">Hier findest du jede App von Lagerland Apps, sortiert nach dem Problem, das sie löst. Keine davon trackt dich, zeigt Werbung oder verlangt ein Konto. Entwickelt und veröffentlicht werden alle von einem einzigen unabhängigen Apple-Entwickler.</p>
+    <p class="overline">{% if de_apps.size > 0 %}{{ de_apps.size }} {% if de_apps.size == 1 %}App{% else %}Apps{% endif %} · eine Person · {% endif %}keine Werbung</p>
+    <h1 class="h1">Apps ohne Werbung für <span class="gradient-text">iPhone, iPad, Watch und Mac.</span></h1>
+    <p class="lead">Hier findest du jede App von Lagerland Apps, sortiert nach ihrer Aufgabe. Keine davon zeigt Werbung, trackt dich oder verlangt ein Konto. Eine einzige Person in Finnland entwickelt und betreut sie alle und legt ihre Preise fest. Auf jeder Karte siehst du, ob die App kostenlos ist, kostenlos mit Pro oder ein Einmalkauf.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#health">Apps ansehen</a>
       <a class="btn btn-secondary" href="{% include l.html url="/#faq" %}"{% if l_en %} hreflang="en"{% endif %}>So funktioniert’s{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
@@ -112,7 +112,7 @@ last_updated: 2026-10-27
   {%- if c_health.size > 0 -%}
     <div id="health" class="section reveal">
       <h2 class="h2">Gesundheit, Schlaf und Erholung</h2>
-      <p class="lead">Diese Apps helfen dir, deinen Körper, deinen Schlaf und dein Training zu verstehen, ohne dass deine Gesundheitsdaten bei Werbefirmen landen. Sie passen zu Leuten, die Apple Health intensiv nutzen, zu Schichtarbeitenden und zu allen, die lieber ihre Erholung verfolgen als Zahlen zum Angeben.</p>
+      <p class="lead">Erholung von Schicht zu Schicht für Nachtarbeit, ein täglicher Bereitschaftswert aus deinen Daten in Apple Health, zwei Trainingstagebücher fürs Krafttraining und die Gesundheitsakte für dein Haustier. Deine Gesundheitsdaten bleiben auf deinem Gerät oder in deiner eigenen iCloud.</p>
       <div class="grid grid-2 stagger">
         {%- for app in c_health -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -121,8 +121,8 @@ last_updated: 2026-10-27
 
   {%- if c_plan.size > 0 -%}
     <div id="plan" class="section reveal">
-      <h2 class="h2">Tagesplaner und Countdowns für besondere Anlässe</h2>
-      <p class="lead">Planer, Countdown-Apps und ruhige Apps für deine Aufgaben. Deine Daten bleiben lokal und privat, und jede dieser Apps soll deinen Tag ein bisschen weniger voll wirken lassen.</p>
+      <h2 class="h2">Tagesplaner, Countdowns und Bildschirmzeit</h2>
+      <p class="lead">Ein Tagesplaner, in dem Unerledigtes von selbst weiterwandert, Countdowns zu den Tagen, die dir wichtig sind, und ein App-Blocker, der ablenkende Apps gesperrt hält, bis du dich an dem Tag genug bewegt hast.</p>
       <div class="grid grid-2 stagger">
         {%- for app in c_plan -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -132,7 +132,7 @@ last_updated: 2026-10-27
   {%- if c_money.size > 0 -%}
     <div id="money" class="section reveal">
       <h2 class="h2">Geld, Rechnungen und Abos</h2>
-      <p class="lead">Behalte Rechnungen im Blick, teile gemeinsame Ausgaben auf und sieh Fälligkeiten, bevor sie verstreichen. Deine Finanzdaten bleiben auf deinem Gerät. Du brauchst kein Konto, und nichts wird mit der Cloud eines Drittanbieters synchronisiert.</p>
+      <p class="lead">Erinnerungen an Rechnungen und Vertragsverlängerungen, die sich nie mit deiner Bank verbinden, und eine App zum Rechnungteilen, die den Kassenbon scannt und allen ihren Anteil schickt. Keine der beiden braucht ein Konto.</p>
       <div class="grid grid-2 stagger">
         {%- for app in c_money -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -142,7 +142,7 @@ last_updated: 2026-10-27
   {%- if c_dev.size > 0 -%}
     <div id="developer" class="section reveal">
       <h2 class="h2">Entwicklertools für Apple-Plattformen</h2>
-      <p class="lead">Native Apps für macOS und iOS rund um App Store Connect: Metadaten bearbeiten, Umsätze im Auge behalten und lokalisierte Screenshots erstellen. Ein unabhängiger iOS-Entwickler hat sie für andere unabhängige iOS-Entwickler gebaut.</p>
+      <p class="lead">Deinen App-Store-Eintrag auf dem Mac bearbeiten und vergleichen, Erlöse, MRR und Bewertungen auf dem iPhone verfolgen und App-Store-Screenshots in 3D gestalten. Gemacht von jemandem, der selbst Apps im App Store veröffentlicht.</p>
       <div class="grid grid-2 stagger">
         {%- for app in c_dev -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -152,7 +152,7 @@ last_updated: 2026-10-27
   {%- if c_read.size > 0 -%}
     <div id="reading" class="section reveal">
       <h2 class="h2">Lesen und Entdecken</h2>
-      <p class="lead">Lange Texte und Wikipedia so lesen, wie du es willst: in Apps ohne Feed, die auch offline funktionieren.</p>
+      <p class="lead">Zufällige Wikipedia-Artikel, eine Karte nach der anderen, in 32 Sprachen, und gespeicherte Artikel liest du auch offline.</p>
       <div class="grid grid-2 stagger">
         {%- for app in c_read -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -161,8 +161,8 @@ last_updated: 2026-10-27
 
   {%- if c_games.size > 0 -%}
     <div id="games" class="section reveal">
-      <h2 class="h2">Spiele ohne Werbung, begrenzte Leben und manipulative Tricks</h2>
-      <p class="lead">Puzzle- und Brettspiele zum konzentrierten Spielen. Es gibt keine Energie-Timer, keine erzwungene Werbung und keinen künstlichen Zeitdruck, der nur die Nutzungszahlen nach oben treiben soll.</p>
+      <h2 class="h2">Brettspiele und Logikrätsel ohne Werbung</h2>
+      <p class="lead">Schach, Shogi und Xiangqi mit Engines auf dem Gerät, die deine Partien auswerten und dir zeigen, wo sie gekippt sind, dazu zwei Logikrätsel, die offline laufen. Keins davon zeigt Werbung.</p>
       <div class="grid grid-2 stagger">
         {%- for app in c_games -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -171,8 +171,8 @@ last_updated: 2026-10-27
 
   {%- if c_util.size > 0 -%}
     <div id="utilities" class="section reveal">
-      <h2 class="h2">Dienstprogramme und Dateikonvertierung</h2>
-      <p class="lead">Apps für den Mac, die Dateien lokal konvertieren, und weitere Dienstprogramme. Deine Dateien verlassen dein Gerät nie, deshalb geht nichts an ein Web-Tool, und es gibt kein Kontingent.</p>
+      <h2 class="h2">Dateien komprimieren und umwandeln</h2>
+      <p class="lead">Videos, Audio, Bilder, PDFs und Archive auf iPhone und Mac komprimieren und umwandeln. Die Werkzeuge laufen auf deinem Gerät, deine Dateien landen also nie bei einem Online-Konverter.</p>
       <div class="grid grid-2 stagger">
         {%- for app in c_util -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -182,11 +182,11 @@ last_updated: 2026-10-27
 </section>
 
 <section class="cta-section reveal">
-  <p class="overline">Neu bei Lagerland Apps?</p>
-  <h2 class="h2">Fang mit Observa an</h2>
-  <p class="lead">Observa ist unsere meistinstallierte App. Sie wertet die Daten, die schon in Apple Health liegen, privat aus und macht daraus Antworten in verständlicher Sprache.</p>
+  <p class="overline">Unsicher, womit du anfangen sollst?</p>
+  <h2 class="h2">Vergleich sie mit der App, die du jetzt nutzt</h2>
+  <p class="lead">Jeder Vergleich stellt eine Lagerland-App Punkt für Punkt neben eine bekannte App und sagt klar, wann die andere App die bessere Wahl ist.</p>
   <div class="actions">
-    <a class="btn btn-primary" href="{% include l.html url="/apps/observa/" %}"{% if l_en %} hreflang="en"{% endif %}>Mehr über Observa{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-primary" href="{% include l.html url="/alternatives/" %}"{% if l_en %} hreflang="en"{% endif %}>Zu den Vergleichen{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
     <a class="btn btn-secondary" href="{% include l.html url="/lagerland-apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Über den Entwickler{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
   </div>
 </section>

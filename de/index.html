@@ -2,12 +2,12 @@
 layout: default
 ref: /
 permalink: /de/
-translated_from: 2026-10-26
+translated_from: 2026-10-29
 title: "Lagerland Apps: Apps ohne Tracking"
-quick_answer: "Lagerland Apps ist ein Ein-Personen-Studio aus Finnland, das {APP_COUNT} Apps ohne Tracking für iPhone, iPad, Apple Watch und Mac entwickelt. Keine davon enthält ein Werbe-SDK, fragt nach der IDFA oder verlangt eine Anmeldung. Es gibt Apps für Gesundheit und Training, Tagesplanung und Lesen, Rechnungen, Brettspiele und Rätsel sowie Werkzeuge für Apple-Entwickler und den Mac."
+quick_answer: "Lagerland Apps ist ein Ein-Personen-Studio aus Finnland mit {APP_COUNT} Apps ohne Tracking im App Store, für iPhone, iPad, Apple Watch und Mac. Es gibt Apps für Gesundheit und Training, Tagesplanung, Fixkosten und Rechnungen, Brettspiele und Logikrätsel sowie Werkzeuge für App-Store-Entwickler. Keine App zeigt Werbung, fragt nach der Werbe-ID (IDFA) oder verlangt ein Konto, und keine schickt deine Daten an einen Server des Studios. Bezahlt werden die Apps von den Menschen, die sie nutzen: über optionale Upgrades oder Einmalkäufe."
 seo:
   title: "Apps ohne Tracking: Lagerland Apps für iPhone und Mac"
-  description: "{APP_COUNT} datenschutzfreundliche Apps für iPhone, iPad, Apple Watch und Mac aus Finnland: ohne Werbung, ohne IDFA, ohne Anmeldung. DSGVO ab Werk."
+  description: "{APP_COUNT} Apps für iPhone, iPad, Apple Watch und Mac, alle von einer Person aus Finnland. Keine zeigt Werbung, trackt dich oder verlangt ein Konto."
   keywords:
     - apps ohne tracking
     - iphone apps ohne werbung
@@ -15,7 +15,7 @@ seo:
     - apps ohne anmeldung
     - apps ohne werbung
     - indie apple entwickler
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 {%- include t.html -%}
 
@@ -27,8 +27,8 @@ last_updated: 2026-10-27
   {%- unless tx_en -%}{%- assign de_apps = de_apps | push: app -%}{%- endunless -%}
 {%- endfor -%}
 
-{%- comment %} Taskful Day's devices as the English page states them (pair + FAQ). {% endcomment -%}
-{%- assign tf_devices = "iPhone, iPad und Mac" -%}
+{%- comment %} Taskful Day's devices as the English page states them (pair + FAQ), matching the catalog. {% endcomment -%}
+{%- assign tf_devices = "iPhone, iPad, Mac und Apple Watch" -%}
 
 {%- comment %} ===== Structured data: ItemList of the apps with a German page + FAQPage ===== {% endcomment -%}
 <script type="application/ld+json">
@@ -77,7 +77,7 @@ last_updated: 2026-10-27
       "name": "Wer steckt hinter Lagerland Apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lagerland Apps ist ein unabhängiges Apple-Studio aus Finnland, hinter dem eine einzige Person steht. Seit 2025 bringt das Studio Apps ohne Tracking für iPhone, iPad, Apple Watch und Mac heraus. Dieselbe Person entwirft, programmiert und betreut jede App, ohne Risikokapital, Werbekunden oder Datenhändler. Die Apps entstehen unter EU-Recht, mit der DSGVO als Standard."
+        "text": "Lagerland Apps ist ein unabhängiges Apple-Studio aus Finnland, hinter dem eine einzige Person steht. Seit 2025 erscheinen von dort Apps für iPhone, iPad, Apple Watch und Mac. Dieselbe Person entwirft, programmiert und betreut jede App. Weder Investoren noch Werbekunden oder Datenhändler sind beteiligt, und das Studio arbeitet unter EU-Recht, standardmäßig nach der DSGVO."
       }
     },
     {
@@ -85,7 +85,7 @@ last_updated: 2026-10-27
       "name": "Tracken mich die Apps von Lagerland oder sammeln sie persönliche Daten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nein. Jede App besteht Apples Prüfung zur App Tracking Transparency, ohne die IDFA abzufragen, enthält kein einziges Werbe-SDK und keine Analyse, die Nutzer identifiziert. Daten bleiben, wo immer es geht, auf dem Gerät, jede Synchronisierung läuft über dein eigenes iCloud-Konto (funktioniert auch mit dem erweiterten Datenschutz für iCloud), und du kannst das im Bereich „App-Datenschutz“ jeder App im App Store nachprüfen."
+        "text": "Nein. Keine App fragt nach der Werbe-ID (IDFA) oder enthält ein Werbe- oder Analyse-SDK, und keine schickt deine Daten an einen Server des Studios. Deine Daten bleiben auf deinem Gerät, und Apps mit Synchronisierung nutzen deine eigene iCloud. Manche Apps gehen für ihre Aufgabe online: WanderWiki lädt Artikel aus Wikipedia, und die Entwicklerwerkzeuge sprechen mit App Store Connect und, wenn du einen eigenen Schlüssel hinterlegst, mit dem KI-Anbieter deiner Wahl. Diese Apps verbinden sich direkt mit dem jeweiligen Dienst. Auf der Transparenzseite steht, was jede App angibt."
       }
     },
     {
@@ -93,7 +93,7 @@ last_updated: 2026-10-27
       "name": "Kann ich die Apps ohne Anmeldung nutzen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Keine der Apps verlangt ein Konto oder eine Registrierung per E-Mail. Du lädst sie aus dem App Store und legst los: Es gibt nichts zu registrieren und kein Konto, auf das du den Zugriff verlieren könntest."
+        "text": "Ja. Keine App verlangt, dass du ein Konto anlegst oder dich mit einer E-Mail-Adresse registrierst. Du lädst sie und legst los. Die Entwicklerwerkzeuge (AppMeta, AppMeta Pulse und der Upload in Mockly) verbinden sich mit deinem eigenen App-Store-Connect-Konto, über einen API-Schlüssel, den du bei Apple erstellst."
       }
     },
     {
@@ -101,7 +101,7 @@ last_updated: 2026-10-27
       "name": "Wie finanzieren sich die Apps ohne Werbung?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Die Menschen, die die Apps nutzen, bezahlen sie: über Einmalkäufe, optionale Abos und Freemium-Modelle, bei denen der Kern der App kostenlos ist. Von Werbekunden kommt kein Geld."
+        "text": "Die Menschen, die die Apps nutzen, bezahlen dafür. Die meisten Apps sind kostenlos, mit einem optionalen Upgrade, das es als Abo, als Einmalkauf oder in beiden Formen gibt. Mockly ist die einzige App, die du vorab kaufst. Von Werbekunden kommt kein Geld."
       }
     },
     {
@@ -109,7 +109,7 @@ last_updated: 2026-10-27
       "name": "Laufen die Apps auf iPhone, iPad und Mac?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Die meisten Apps laufen auf iPhone und iPad, mehrere auch auf der Apple Watch, und Entwicklertools wie AppMeta und Mockly sind native Mac-Apps. Auf jeder App-Seite stehen die unterstützten Geräte."
+        "text": "Fast jede App läuft auf dem iPhone, AppMeta und Mockly sind Mac-Apps. Chessful, Shogiful, Xiangqiful, Taskful Day und MediaKit laufen auch auf dem Mac. GymLogger X, Observa und Taskful Day haben eine Apple-Watch-App, bei EarnLock gehört die Apple-Watch-App zu Premium. Viele Apps laufen auch auf dem iPad. Auf jeder App-Seite stehen die unterstützten Geräte."
       }
     },
     {
@@ -117,7 +117,7 @@ last_updated: 2026-10-27
       "name": "Was sind gute Alternativen zu bekannten Apps mit viel Tracking?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lagerland Apps hat Alternativen ohne Tracking in mehreren Kategorien: Taskful Day (nativ auf {{ tf_devices }}) statt Planern mit Feed, GymLogger X statt Trainingstagebüchern, die nur im Abo laufen, Observa als private Auswertung deiner Daten aus Apple Health und AllPaid als unaufgeregte Fixkosten-App statt werbefinanzierter Finanz-Apps."
+        "text": "Fang bei der Aufgabe an, die du erledigen willst. Taskful Day ist ein Tagesplaner für {{ tf_devices }}, in dem Unerledigtes von selbst weiterwandert. GymLogger X ist ein Trainingstagebuch fürs Krafttraining mit Apple-Watch-App, und Pro gibt es auch als Einmalkauf. Observa macht aus deinen Daten in Apple Health einen täglichen Bereitschaftswert und wertet alles auf deinem Gerät aus. AllPaid erinnert dich an Rechnungen und Vertragsverlängerungen, ohne sich mit deiner Bank zu verbinden. Auf der Vergleichsseite steht jede App neben den Apps, die die meisten kennen."
       }
     }
   ]
@@ -150,7 +150,7 @@ last_updated: 2026-10-27
 <section class="issue bleed" aria-labelledby="issue-title">
   <div class="issue-selvedge">
     <h1 id="issue-title">{{ site.data.catalog.meta.live_app_count }} Apps ohne Tracking. Alle von einer Person.</h1>
-    <p class="issue-lede">Ein unabhängiges Apple-Studio in Finnland. Jede App auf diesem Bogen entwickelt dieselbe Person, sie legt die Preise fest und beantwortet die Fragen dazu, ohne Werbung, ohne Konto und ohne dass Daten dein Gerät verlassen.</p>
+    <p class="issue-lede">Ein unabhängiges Apple-Studio in Finnland. Eine Person entwickelt jede App auf diesem Bogen, legt ihre Preise fest und steht für sie ein. Keine davon zeigt dir Werbung, verlangt eine Anmeldung oder schickt deine Daten an uns.</p>
     <ul class="series-tabs" aria-label="Eine Serie auf dem Bogen zeigen">
       <li><a class="series-tab is-pressed" href="#apps" data-series="all"><i style="background:var(--ink)"></i>Ganzer Bogen<b>{{ sheet_apps.size }}</b></a></li>
       {%- for key in series_keys -%}
@@ -223,16 +223,18 @@ last_updated: 2026-10-27
   <div class="about-strip">
     <div>
       <h2 class="h2">Alle Apps aus einer Hand</h2>
-      <p>Lagerland Apps ist ein Apple-Studio in Finnland, hinter dem eine einzige Person steht. Es entwickelt <strong>{{ site.data.catalog.meta.live_app_count }} datenschutzfreundliche Apps</strong> für iPhone, iPad, Apple Watch und Mac. Keine App enthält Tracker von Drittanbietern oder ein Werbe-SDK, keine verlangt ein Konto. Die Software finanziert sich über Einmalkäufe, optionale Abos oder eine kostenlose Grundversion, nie über Werbung, Datenhändler oder manipulative Wachstumstricks.</p>
-      <p>Die Bereiche: Gesundheitsauswertung, Tagesplanung, Rechnungen und Fixkosten, Trainingstagebuch, Lesen, Brettspiele und Rätsel, Werkzeuge für Apple-Entwickler und Dienstprogramme. Die Apps sind für Leute, die werbefinanzierte Apps nicht wollen, ihre Daten lieber lokal behalten und Einzweck-Apps aufgeblähten Plattformen vorziehen.</p>
-      <p><a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}>Datenschutzangaben jeder App ansehen{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> · <a href="{% include l.html url="/lagerland-apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Über das Studio{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a></p>
+      <p>Hinter Lagerland Apps steht eine einzige Person in Finnland, mit <strong>{{ site.data.catalog.meta.live_app_count }} datenschutzfreundlichen Apps</strong> für iPhone, iPad, Apple Watch und Mac. Dieselbe Person entwirft, programmiert, testet und betreut jede davon. Wenn du einen Fehler meldest, liest also genau die Person deine E-Mail, die ihn auch behebt.</p>
+      <p>Ohne Investoren und ohne Werbeeinnahmen verdient eine App hier nur dann Geld, wenn sie dir das wert ist. Deshalb enthält keine App ein Werbe- oder Analyse-SDK, keine fragt nach der IDFA, und bei keiner musst du ein Konto anlegen. Deine Daten bleiben auf deinem Gerät oder in deiner eigenen iCloud. Die wenigen Apps, die online gehen, verbinden sich direkt mit dem Dienst, den sie brauchen, etwa WanderWiki mit Wikipedia oder die Entwicklerwerkzeuge mit App Store Connect.</p>
+      <p>Die Apps decken Gesundheit und Training, Tagesplanung, Fixkosten und Rechnungen, Brettspiele und Logikrätsel sowie Werkzeuge für App-Store-Entwickler ab. Jede erledigt eine Aufgabe.</p>
+      <p><a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}>Ansehen, was jede App über deine Daten angibt{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> · <a href="{% include l.html url="/lagerland-apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Über das Studio{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a></p>
     </div>
     <dl class="tech" aria-label="Fakten zum Studio">
       <dt>Apps</dt><dd>{{ site.data.catalog.meta.live_app_count }}, alle im App Store erhältlich</dd>
       <dt>Geräte</dt><dd>iPhone, iPad, Apple Watch, Mac</dd>
       <dt>Werbe-SDKs</dt><dd>In keiner App</dd>
       <dt>Tracking (IDFA)</dt><dd>Wird nie abgefragt</dd>
-      <dt>Konto</dt><dd>Nie nötig</dd>
+      <dt>Konto</dt><dd>Musst du nie anlegen</dd>
+      <dt>Deine Daten auf unseren Servern</dt><dd>Keine</dd>
       {%- if total_reviews > 0 and avg_rating >= site.ratings_min_display %}
       <dt>Bewertung im App Store</dt><dd>{{ avg_int }},{{ avg_dec }} im Schnitt aus {{ total_reviews }} Bewertungen</dd>
       {%- endif %}
@@ -241,15 +243,34 @@ last_updated: 2026-10-27
   </div>
 </section>
 
+{%- comment %} Two real quotes from _data/testimonials.yml, shown in German translation (marked as translated). {% endcomment -%}
+{%- assign q1 = site.data.testimonials.chessful | where: "author", "P." | first -%}
+{%- assign q2 = site.data.testimonials.observa | where: "author", "I.D." | first -%}
+{%- if q1 and q2 -%}
+<section class="section reveal" aria-labelledby="voices-title">
+  <h2 class="h2" id="voices-title">Was das in der Praxis heißt</h2>
+  <div class="grid grid-2 stagger">
+    <figure class="card">
+      <blockquote class="card-text">„Schöne App, mit der ich als Schachanfänger besser geworden bin. Ich habe einen Verbesserungsvorschlag geschickt und sofort eine Antwort bekommen. Umgesetzt war er innerhalb weniger Tage. Training und die Lektionen gefallen mir sehr. Die Stockfish-Analyse hilft auch, ich kann die App empfehlen.“</blockquote>
+      <figcaption class="small">{{ q1.author }}, {{ q1.source }}, über <a href="{% include l.html url="/apps/chessful/" %}">Chessful</a> (aus dem Englischen übersetzt)</figcaption>
+    </figure>
+    <figure class="card">
+      <blockquote class="card-text">„So sollte es sein. Für die meisten vielleicht etwas technisch, aber zu viele Apps stellen Behauptungen auf, ohne zu sagen, ob die Zahl überhaupt gut ist. Observa zeigt dir tatsächlich die Basislinie hinter der Erkenntnis.“</blockquote>
+      <figcaption class="small">{{ q2.author }}, {{ q2.source }}, über <a href="{% include l.html url="/apps/observa/" %}">Observa</a> (aus dem Englischen übersetzt)</figcaption>
+    </figure>
+  </div>
+</section>
+{%- endif -%}
+
 <!-- ============================
      THE CATALOGUE: every series, with what each app does (SEO + intent)
      ============================ -->
 <section id="apps" class="section--lg" aria-labelledby="apps-title">
-  <h2 class="h2 reveal" id="apps-title">Apps nach Zweck</h2>
+  <h2 class="h2 reveal" id="apps-title">Die passende App für deine Aufgabe</h2>
   <p class="lead reveal">Fünf Serien von einer Person. Jede App erledigt eine Aufgabe, behält deine Daten von Haus aus bei dir und soll sich ruhig anfühlen.</p>
 
-  {%- assign series_heads = "Gesundheit, Schlaf und Erholung|Den Tag planen und lesen|Geld und Rechnungen|Spiele, die deine Aufmerksamkeit verdienen|Werkzeuge für Apple-Entwickler und den Mac" | split: "|" -%}
-  {%- assign series_leads = "Verstehe deinen Körper, deine Gewohnheiten und dein Training, ohne deine Gesundheitsdaten an Werbefirmen zu geben.|Tagesplanung, Countdowns, Bildschirmzeit und Wikipedia-Lektüre, die auf deinem Gerät bleiben.|Behalte im Blick, was du schuldest, teile gemeinsame Kosten und verpasse keine Fälligkeit. Ohne Bank-Login.|Schach, Shogi, Xiangqi und Logikrätsel ohne begrenzte Leben, ohne Werbung und ohne manipulative Tricks.|Native Mac- und iOS-Werkzeuge für App Store Connect, App-Store-Screenshots und das Umwandeln von Medien." | split: "|" -%}
+  {%- assign series_heads = "Gesundheit, Schlaf und Training|Den Tag planen und lesen|Geld und Rechnungen|Brettspiele und Logikrätsel|Werkzeuge für App-Store-Entwickler und den Mac" | split: "|" -%}
+  {%- assign series_leads = "Schlaf und Erholung bei Schichtarbeit, ein täglicher Bereitschaftswert aus Apple Health, Trainingstagebücher fürs Krafttraining und die Gesundheitsakte deines Haustiers.|Ein Tagesplaner, in dem Unerledigtes von selbst weiterwandert, Countdowns zu den Tagen, auf die du wartest, ein App-Blocker, den du mit Bewegung entsperrst, und Wikipedia, ein Wisch nach dem anderen.|Erinnerungen an Rechnungen und Vertragsverlängerungen ganz ohne Verbindung zur Bank und eine App, die den Kassenbon liest und allen sagt, was sie zahlen.|Schach, Shogi und Xiangqi mit Engines auf dem Gerät, die deine Partien auswerten, dazu zwei Logikrätsel. Keins davon zeigt Werbung.|Mac- und iPhone-Werkzeuge für Einträge, Verkäufe und Bewertungen in App Store Connect, für App-Store-Screenshots und zum Umwandeln von Dateien direkt auf deinem Gerät." | split: "|" -%}
   {%- for key in series_keys -%}
   {%- capture needle -%}|{{ key }}|{%- endcapture -%}
   {%- assign n = series_trail | split: needle | size | minus: 1 -%}
@@ -266,7 +287,7 @@ last_updated: 2026-10-27
         {%- if series_key == key -%}
           {%- include tx-app.html app=app -%}
           {%- include app-facts.html app=app text=tx_app -%}
-          {%- if f_app_free == false and f_app_price != "" -%}{%- assign row_denom = f_app_price | append: " " | append: loc.strings.once -%}
+          {%- if f_app_free == false and f_app_price != "" -%}{%- assign row_denom = t.price_one_time -%}
           {%- elsif f_has_plans -%}{%- assign row_denom = t.denom_free_pro -%}
           {%- else -%}{%- assign row_denom = t.price_free -%}{%- endif -%}
           {%- assign row_plat = f_platforms | join: " · " | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Watch" -%}
@@ -290,7 +311,7 @@ last_updated: 2026-10-27
 <section class="section reveal" aria-labelledby="compare-title">
   {%- assign comparison_count = site.pages | where: "lang", "en" | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 -%}
   <h2 class="h2" id="compare-title">Vergleiche mit den Apps, die du kennst</h2>
-  <p class="lead">{{ comparison_count }} direkte Vergleiche mit den bekannten Apps, von denen die meisten umsteigen. Vier stehen hier, die übrigen auf der Vergleichsseite.</p>
+  <p class="lead">{{ comparison_count }} direkte Vergleiche mit den Apps, von denen die meisten umsteigen, jeweils mit dem Hinweis, wann die andere App die bessere Wahl ist. Vier stehen hier, die übrigen auf der Vergleichsseite.</p>
   <div class="pairs stagger">
     {%- assign pa = site.apps | where: "slug", "gymlogger-x" | first -%}{%- include series.html app=pa -%}
     <a class="pair series-{{ series_key }}" href="{% include l.html url="/alternatives/strong-workout-app/" %}"{% if l_en %} hreflang="en"{% endif %}>
@@ -300,7 +321,7 @@ last_updated: 2026-10-27
         <span class="blank-stamp"><span>Strong</span></span>
       </span>
       <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> Strong</span>
-      <span class="card-text">Schnelles, natives Trainingstagebuch: Sätze direkt auf der Apple Watch eintragen, ohne Anmeldung und ohne ein Preismodell, das nur aus Abos besteht.</span>
+      <span class="card-text">Sätze schnell eintragen, auf dem iPhone und der Apple Watch, ohne Konto. Mit Pro erkennt die App Plateaus und Ermüdung in deinen eigenen Einträgen, und Pro gibt es auch als Einmalkauf.</span>
       <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
     </a>
     {%- assign pa = site.apps | where: "slug", "taskful-day" | first -%}{%- include series.html app=pa -%}
@@ -311,7 +332,7 @@ last_updated: 2026-10-27
         <span class="blank-stamp"><span>Streaks</span></span>
       </span>
       <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> Streaks</span>
-      <span class="card-text">Ein Tagesplaner ohne Flammen-Zähler, ohne rotes X und ohne schlechtes Gewissen für verpasste Tage. Eine App für {{ tf_devices }}.</span>
+      <span class="card-text">Ein Tagesplaner, in dem Unerledigtes von selbst weiterwandert und eine Serie nur eine Statistik unter vielen ist, auf {{ tf_devices }}.</span>
       <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
     </a>
     {%- assign pa = site.apps | where: "slug", "observa" | first -%}{%- include series.html app=pa -%}
@@ -322,7 +343,7 @@ last_updated: 2026-10-27
         <span class="blank-stamp"><span>AutoSleep</span></span>
       </span>
       <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> AutoSleep</span>
-      <span class="card-text">Observa wertet die Daten zu Schlaf, HRV und Erholung in Apple Health aus. Einen Tracker ersetzt die App nicht direkt.</span>
+      <span class="card-text">Observa wertet die Daten zu Schlaf, HRV und Erholung aus, die schon in Apple Health liegen. Einen Schlaftracker ersetzt die App nicht.</span>
       <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
     </a>
     {%- assign pa = site.apps | where: "slug", "appmeta" | first -%}{%- include series.html app=pa -%}
@@ -333,7 +354,7 @@ last_updated: 2026-10-27
         <span class="blank-stamp"><span>App Store Connect (Web)</span></span>
       </span>
       <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> App Store Connect (Web)</span>
-      <span class="card-text">Ein nativer Mac-Client für die Metadaten in App Store Connect: Änderungen vorab als Diff ansehen, Zugangsdaten sicher im Schlüsselbund, Lokalisierungen nebeneinander bearbeiten.</span>
+      <span class="card-text">Eine native Mac-App für App Store Connect: alle Sprachen in einem Fenster, ein Diff auf Feldebene vor dem Hochladen und dein API-Schlüssel im Schlüsselbund des Mac.</span>
       <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
     </a>
   </div>
@@ -349,7 +370,7 @@ last_updated: 2026-10-27
 {%- if latest_posts.size > 0 -%}
 <section class="section reveal" aria-labelledby="journal-title">
   <h2 class="h2" id="journal-title">Aus dem Journal</h2>
-  <p class="lead">Notizen zu neuen Versionen, Designentscheidungen und Software, die deine Daten in Ruhe lässt, vom Entwickler selbst geschrieben.</p>
+  <p class="lead">Versionshinweise, Designentscheidungen und praktische Ratgeber, vom Entwickler selbst geschrieben.</p>
   <div class="covers stagger">
     {%- for post in latest_posts -%}
       {%- assign pm = post.date | date: "%d.%m.%y" -%}
@@ -375,7 +396,7 @@ last_updated: 2026-10-27
      ============================ -->
 <section class="section reveal" aria-labelledby="transparency-title">
   <h2 class="h2" id="transparency-title">Transparenz auf einen Blick</h2>
-  <p class="lead">Was „kein Tracking“ im Einzelnen heißt, an einer Auswahl der Apps gezeigt und belegt durch Apples eigene Angaben im Bereich „App-Datenschutz“.</p>
+  <p class="lead">Was „kein Tracking“ in der Praxis heißt, an einer Auswahl der Apps gezeigt, aus dem Datenschutzmanifest und dem Code jeder App.</p>
 
   {%- comment %} Rows come from _data/transparency.yml (facts) and _data/i18n_transparency/de.yml (words),
     the same data that drives /transparency/. {% endcomment -%}
@@ -401,7 +422,7 @@ last_updated: 2026-10-27
           <th scope="row"><a href="{% include l.html url=app.url %}"{% if l_en %} hreflang="en"{% endif %}>{{ app.name }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a></th>
           <td>{{ row.tracking_domains | default: 0 }}</td>
           <td>{% if row.third_party_sdks == 0 %}Keine{% else %}{{ row.third_party_sdks }}: {{ row.third_party_sdks_list | map: "name" | join: ", " }}{% endif %}</td>
-          <td>{% if row.account_required == false %}{{ t.word_no }}{% else %}Dein eigener Apple&nbsp;Account (über&nbsp;Apple){% endif %}</td>
+          <td>{% if row.account_required == false %}{{ t.word_no }}{% else %}Kein Lagerland-Konto, nur dein eigener API-Schlüssel für App&nbsp;Store&nbsp;Connect{% endif %}</td>
           <td>{{ row_an | default: "Keine." }}</td>
         </tr>
           {%- endif -%}
@@ -410,7 +431,7 @@ last_updated: 2026-10-27
     </table>
   </div>
   <p class="small transparency-footnote">
-    Das ist eine repräsentative Auswahl. Keine App im Katalog fragt nach der IDFA oder bindet ein Werbe-SDK ein. <a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}><strong>Die Datenschutzmanifest-Daten aller {{ site.data.catalog.meta.live_app_count }} Apps ansehen →</strong>{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    Das ist eine Auswahl. Keine App im Katalog fragt nach der IDFA oder bindet ein Werbe-SDK ein. <a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}><strong>Die Datenschutzmanifeste aller {{ site.data.catalog.meta.live_app_count }} Apps ansehen →</strong>{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
   </p>
 </section>
 
@@ -422,27 +443,27 @@ last_updated: 2026-10-27
   <div class="faq">
     <details class="faq-item" open>
       <summary>Wer steckt hinter Lagerland Apps?</summary>
-      <div class="faq-a">Lagerland Apps ist ein unabhängiges Apple-Studio aus Finnland, hinter dem eine einzige Person steht. Seit 2025 bringt das Studio Apps ohne Tracking für iPhone, iPad, Apple Watch und Mac heraus. Dieselbe Person entwirft, programmiert und betreut jede App, ohne Risikokapital, Werbekunden oder Datenhändler. Die Apps entstehen unter EU-Recht, mit der DSGVO als Standard.</div>
+      <div class="faq-a">Lagerland Apps ist ein unabhängiges Apple-Studio aus Finnland, hinter dem eine einzige Person steht. Seit 2025 erscheinen von dort Apps für iPhone, iPad, Apple Watch und Mac. Dieselbe Person entwirft, programmiert und betreut jede App. Weder Investoren noch Werbekunden oder Datenhändler sind beteiligt, und das Studio arbeitet unter EU-Recht, standardmäßig nach der DSGVO.</div>
     </details>
     <details class="faq-item">
       <summary>Tracken mich die Apps von Lagerland oder sammeln sie persönliche Daten?</summary>
-      <div class="faq-a">Nein. Jede App besteht Apples Prüfung zur <a href="https://developer.apple.com/app-store/user-privacy-and-data-use/" rel="noopener" target="_blank" hreflang="en"><strong>App Tracking Transparency</strong></a>, ohne die IDFA abzufragen, enthält <strong>kein einziges Werbe-SDK</strong> und keine Analyse, die Nutzer identifiziert. Daten bleiben, wo immer es geht, auf dem Gerät, jede Synchronisierung läuft über dein eigenes iCloud-Konto (funktioniert auch mit dem erweiterten Datenschutz für iCloud), und du kannst das im Bereich <a href="https://developer.apple.com/app-store/app-privacy-details/" rel="noopener" target="_blank" hreflang="en"><strong>„App-Datenschutz“</strong></a> jeder App im App Store nachprüfen.</div>
+      <div class="faq-a">Nein. Keine App fragt nach der Werbe-ID (IDFA) oder enthält ein Werbe- oder Analyse-SDK, und keine schickt deine Daten an einen Server des Studios. Deine Daten bleiben auf deinem Gerät, und Apps mit Synchronisierung nutzen deine eigene iCloud. Manche Apps gehen für ihre Aufgabe online: WanderWiki lädt Artikel aus Wikipedia, und die Entwicklerwerkzeuge sprechen mit App Store Connect und, wenn du einen eigenen Schlüssel hinterlegst, mit dem KI-Anbieter deiner Wahl. Diese Apps verbinden sich direkt mit dem jeweiligen Dienst. Auf der <a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}>Transparenzseite{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> steht, was jede App angibt.</div>
     </details>
     <details class="faq-item">
       <summary>Kann ich die Apps ohne Anmeldung nutzen?</summary>
-      <div class="faq-a">Ja. Keine der Apps verlangt ein Konto oder eine Registrierung per E-Mail. Du lädst sie aus dem App Store und legst los: Es gibt nichts zu registrieren und kein Konto, auf das du den Zugriff verlieren könntest.</div>
+      <div class="faq-a">Ja. Keine App verlangt, dass du ein Konto anlegst oder dich mit einer E-Mail-Adresse registrierst. Du lädst sie und legst los. Die Entwicklerwerkzeuge (AppMeta, AppMeta Pulse und der Upload in Mockly) verbinden sich mit deinem eigenen App-Store-Connect-Konto, über einen API-Schlüssel, den du bei Apple erstellst.</div>
     </details>
     <details class="faq-item">
       <summary>Wie finanzieren sich die Apps ohne Werbung?</summary>
-      <div class="faq-a">Die Menschen, die die Apps nutzen, bezahlen sie: über Einmalkäufe, optionale Abos und Freemium-Modelle, bei denen der Kern der App kostenlos ist. Von Werbekunden kommt kein Geld.</div>
+      <div class="faq-a">Die Menschen, die die Apps nutzen, bezahlen dafür. Die meisten Apps sind kostenlos, mit einem optionalen Upgrade, das es als Abo, als Einmalkauf oder in beiden Formen gibt. Mockly ist die einzige App, die du vorab kaufst. Von Werbekunden kommt kein Geld.</div>
     </details>
     <details class="faq-item">
       <summary>Laufen die Apps auf iPhone, iPad und Mac?</summary>
-      <div class="faq-a">Die meisten Apps laufen auf iPhone und iPad, mehrere auch auf der Apple Watch, und Entwicklertools wie AppMeta und Mockly sind native Mac-Apps. Auf jeder App-Seite stehen die unterstützten Geräte.</div>
+      <div class="faq-a">Fast jede App läuft auf dem iPhone, AppMeta und Mockly sind Mac-Apps. Chessful, Shogiful, Xiangqiful, Taskful Day und MediaKit laufen auch auf dem Mac. GymLogger X, Observa und Taskful Day haben eine Apple-Watch-App, bei EarnLock gehört die Apple-Watch-App zu Premium. Viele Apps laufen auch auf dem iPad. Auf jeder App-Seite stehen die unterstützten Geräte.</div>
     </details>
     <details class="faq-item">
       <summary>Was sind gute Alternativen zu bekannten Apps mit viel Tracking?</summary>
-      <div class="faq-a">Lagerland Apps hat Alternativen ohne Tracking in mehreren Kategorien: Taskful Day (nativ auf {{ tf_devices }}) statt Planern mit Feed, GymLogger X statt Trainingstagebüchern, die nur im Abo laufen, Observa als private Auswertung deiner Daten aus Apple Health und AllPaid als unaufgeregte Fixkosten-App statt werbefinanzierter Finanz-Apps.</div>
+      <div class="faq-a">Fang bei der Aufgabe an, die du erledigen willst. <a href="{% include l.html url="/apps/taskful-day/" %}"{% if l_en %} hreflang="en"{% endif %}>Taskful Day{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> ist ein Tagesplaner für {{ tf_devices }}, in dem Unerledigtes von selbst weiterwandert. <a href="{% include l.html url="/apps/gymlogger-x/" %}"{% if l_en %} hreflang="en"{% endif %}>GymLogger X{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> ist ein Trainingstagebuch fürs Krafttraining mit Apple-Watch-App, und Pro gibt es auch als Einmalkauf. <a href="{% include l.html url="/apps/observa/" %}"{% if l_en %} hreflang="en"{% endif %}>Observa{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> macht aus deinen Daten in Apple Health einen täglichen Bereitschaftswert und wertet alles auf deinem Gerät aus. <a href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> erinnert dich an Rechnungen und Vertragsverlängerungen, ohne sich mit deiner Bank zu verbinden. Auf der <a href="{% include l.html url="/alternatives/" %}"{% if l_en %} hreflang="en"{% endif %}>Vergleichsseite{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> steht jede App neben den Apps, die die meisten kennen.</div>
     </details>
   </div>
 </section>
@@ -452,7 +473,7 @@ last_updated: 2026-10-27
      ============================ -->
 <section class="cta-section">
   <h2 class="h2">Such dir eine App vom Bogen aus und behalte deine Daten, wo sie sind.</h2>
-  <p class="lead">Apps für iPhone, iPad, Apple Watch und Mac, die deine Daten nicht abgreifen, nicht mit manipulativen Tricks arbeiten und dich nicht für ein vergessenes Abo zahlen lassen.</p>
+  <p class="lead">Auf jeder App-Seite steht, was kostenlos ist, was das Upgrade kostet und was die App mit deinen Daten macht, bevor du auf „Laden“ tippst.</p>
   <div class="actions">
     <a class="btn btn-primary" href="#issue-title">Zurück zum Bogen</a>
     <a class="btn btn-secondary" href="mailto:lagerland.apps@proton.me">Dem Entwickler schreiben</a>

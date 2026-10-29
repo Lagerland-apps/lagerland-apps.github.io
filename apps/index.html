@@ -1,19 +1,19 @@
 ---
 layout: default
 title: Apps
+quick_answer: "Lagerland Apps has {APP_COUNT} apps for iPhone, iPad, Apple Watch, and Mac, grouped here by the job they do: health, sleep, and training; planning and countdowns; bills and shared costs; Wikipedia reading; board games and logic puzzles; tools for App Store developers; and file conversion. No app shows ads, tracks you, or asks you to create an account. One independent developer in Finland makes all of them."
 seo:
-  title: "All Apps: Privacy-First iOS & macOS Apps by Lagerland Apps"
-  description: "The full Lagerland Apps catalogue: privacy-first iPhone, iPad, Apple Watch & Mac apps for health, productivity, finance, and dev tools. No tracking or ads."
+  title: "iPhone Apps Without Ads: All {APP_COUNT} Lagerland Apps"
+  description: "Every Lagerland app for iPhone, iPad, Apple Watch, and Mac, by what it does: health, planning, bills, games, and developer tools. No ads, no tracking."
   keywords:
+    - iphone apps without ads
+    - apps without tracking
     - privacy-first iOS apps list
-    - best no-tracking iPhone apps
     - indie Apple developer apps
-    - macOS apps without analytics
-    - Apple Watch apps no subscription
-    - calm productivity apps iPhone
-    - privacy-first health apps Apple
-    - independent iOS developer catalogue
-last_updated: 2026-10-26
+    - mac apps without ads
+    - apple watch apps
+    - useful iphone apps
+last_updated: 2026-10-29
 ---
 
 {%- assign live_apps = site.apps | where: "status", "live" -%}
@@ -57,15 +57,17 @@ last_updated: 2026-10-26
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">{{ site.data.catalog.meta.live_app_count }} apps · {{ "" }}7 categories · 100% privacy-first</p>
-    <h1 class="h1">All apps for <span class="gradient-text">iPhone, iPad, and Mac.</span></h1>
-    <p class="lead">Every app in the Lagerland Apps catalogue, grouped by the problem it solves. None of them track you, show ads, or need an account, and one independent Apple developer builds and ships all of them.</p>
+    <p class="overline">{{ site.data.catalog.meta.live_app_count }} apps · one maker · no ads</p>
+    <h1 class="h1">Apps without ads for <span class="gradient-text">iPhone, iPad, Watch, and Mac.</span></h1>
+    <p class="lead">Every Lagerland app, grouped by the job it does. None of them shows ads, tracks you, or asks you to make an account. One independent Apple developer in Finland builds, prices, and supports all of them, and each card shows whether the app is free, free with Pro, or a one-time purchase.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#health">Start browsing</a>
       <a class="btn btn-secondary" href="/#faq">How it works</a>
     </div>
   </div>
 </section>
+
+{% include quick-answer.html %}
 
 <section class="section--lg">
 
@@ -76,7 +78,7 @@ last_updated: 2026-10-26
   {%- if cluster_apps.size > 0 -%}
     <div id="health" class="section reveal">
       <h2 class="h2">Health, sleep &amp; recovery apps</h2>
-      <p class="lead">Apps for understanding your body, sleep, and workouts without handing health data to advertisers. They suit Apple Health power users, shift workers, and anyone who tracks recovery ahead of vanity metrics.</p>
+      <p class="lead">Recovery measured shift to shift for night workers, a daily Readiness score from your Apple Health data, two strength training logs, and health records for your pet. Your health data stays on your device or in your own iCloud.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -89,8 +91,8 @@ last_updated: 2026-10-26
   {%- for cat in plan_cats -%}{%- assign m = live_apps | where: "category", cat -%}{%- assign cluster_apps = cluster_apps | concat: m -%}{%- endfor -%}
   {%- if cluster_apps.size > 0 -%}
     <div id="plan" class="section reveal">
-      <h2 class="h2">Planners &amp; life-event apps</h2>
-      <p class="lead">Daily planners, countdown apps, and calm productivity tools. Each keeps your data local and private and tries to make the day feel less crowded.</p>
+      <h2 class="h2">Planners, countdowns &amp; screen time</h2>
+      <p class="lead">A day planner where unfinished tasks move forward on their own, countdowns to the dates you care about, and an app blocker that keeps distracting apps locked until you have moved enough that day.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -102,7 +104,7 @@ last_updated: 2026-10-26
   {%- if cluster_apps.size > 0 -%}
     <div id="money" class="section reveal">
       <h2 class="h2">Money, bills &amp; subscriptions</h2>
-      <p class="lead">Track bills, split shared expenses, and see due dates before they pass. Your financial data stays on your device, with no account and no cloud sync to a third party.</p>
+      <p class="lead">Reminders for bills and contract renewals that never connect to your bank, and a bill splitter that scans the receipt and sends everyone their share. Neither app needs an account.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -116,7 +118,7 @@ last_updated: 2026-10-26
   {%- if cluster_apps.size > 0 -%}
     <div id="developer" class="section reveal">
       <h2 class="h2">Developer tools for Apple platforms</h2>
-      <p class="lead">Native macOS and iOS apps for App Store Connect work: metadata editing, revenue monitoring, and localised screenshot generation. An indie iOS developer made them for other indie iOS developers.</p>
+      <p class="lead">Edit and diff your App Store listing on a Mac, follow proceeds, MRR, and reviews on your iPhone, and build App Store screenshots in 3D. Made by a developer who publishes on the App Store too.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -130,7 +132,7 @@ last_updated: 2026-10-26
   {%- if cluster_apps.size > 0 -%}
     <div id="reading" class="section reveal">
       <h2 class="h2">Reading &amp; discovery apps</h2>
-      <p class="lead">Long-form reading and Wikipedia on your own terms, in calm apps with no feed that also work offline.</p>
+      <p class="lead">Random Wikipedia articles one card at a time, in 32 languages, with saved articles you can read offline.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -141,8 +143,8 @@ last_updated: 2026-10-26
   {%- assign cluster_apps = live_apps | where: "category", "games" -%}
   {%- if cluster_apps.size > 0 -%}
     <div id="games" class="section reveal">
-      <h2 class="h2">Premium games without ads, lives, or dark patterns</h2>
-      <p class="lead">Puzzle and board games made for focused play. They have no energy timers, forced ads, or fake urgency to push engagement numbers.</p>
+      <h2 class="h2">Board games and logic puzzles without ads</h2>
+      <p class="lead">Chess, shogi, and xiangqi with on-device engines that review your games and show you where they turned, plus two logic puzzles that work offline. None of them shows ads.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -153,8 +155,8 @@ last_updated: 2026-10-26
   {%- assign cluster_apps = live_apps | where: "category", "utilities" -%}
   {%- if cluster_apps.size > 0 -%}
     <div id="utilities" class="section reveal">
-      <h2 class="h2">Utilities &amp; file conversion</h2>
-      <p class="lead">Local-first file conversion and utility apps for Mac. Files never leave your device, so nothing goes to a web tool and there is no quota.</p>
+      <h2 class="h2">File compression &amp; conversion</h2>
+      <p class="lead">Compress and convert video, audio, images, PDFs, and archives on iPhone and Mac. The tools run on your device, so your files are never uploaded to a web converter.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -164,11 +166,11 @@ last_updated: 2026-10-26
 </section>
 
 <section class="cta-section reveal">
-  <p class="overline">New to Lagerland Apps?</p>
-  <h2 class="h2">Start with Observa</h2>
-  <p class="lead">Observa is our most-installed app: a private Apple Health insights companion that turns your existing data into plain-language answers.</p>
+  <p class="overline">Not sure where to start?</p>
+  <h2 class="h2">Compare against the app you use now</h2>
+  <p class="lead">Each comparison sets a Lagerland app against a well-known one, feature by feature, and says plainly when the other app is the better pick.</p>
   <div class="actions">
-    <a class="btn btn-primary" href="/apps/observa/">Learn about Observa</a>
+    <a class="btn btn-primary" href="/alternatives/">See the comparisons</a>
     <a class="btn btn-secondary" href="/lagerland-apps/">About the developer</a>
   </div>
 </section>

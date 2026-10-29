@@ -1,22 +1,31 @@
 ---
 layout: default
 title: Support
+quick_answer: "For bugs, questions, or feedback about any Lagerland app, email lagerland.apps@proton.me; the developer who builds the app reads and answers it. To cancel or manage a subscription, open Settings, tap your name, then Subscriptions on iPhone or iPad, or use the App Store app on Mac. Refunds for App Store purchases are handled by Apple at reportaproblem.apple.com."
 seo:
-  title: "Lagerland Apps Support: Help for Every App"
-  description: "Help and contact for every Lagerland app: email the developer directly, find each app's support page, privacy policy and common questions."
-last_updated: 2026-10-26
+  title: "Lagerland Apps Support: Help, Contact, Subscriptions"
+  description: "Help for every Lagerland app: email the developer, cancel or manage a subscription, get a refund, and find each app's support and privacy pages."
+  keywords:
+    - lagerland apps support
+    - lagerland apps contact
+    - cancel app subscription iphone
+    - app store refund
+    - app privacy policy
+last_updated: 2026-10-29
 ---
 <section class="section">
   <h1 class="h1">Support</h1>
   <p class="lead">
-    Need help with one of our apps? Write to us.
+    Need help with one of the apps? Write in. The person who builds the app reads your email and answers it.
   </p>
+
+  {% include quick-answer.html %}
 
   <div class="grid grid-2">
     <div class="card">
       <div class="card-title">Contact support</div>
       <div class="card-text">
-        For bugs, questions, or feedback, email us:
+        Send bugs, questions, or feedback to:
       </div>
       <p>
         <a href="mailto:lagerland.apps@proton.me">
@@ -28,12 +37,12 @@ last_updated: 2026-10-26
     <div class="card">
       <div class="card-title">Before you email</div>
       <div class="card-text">
-        Including the following helps us respond faster:
+        These details help get you an answer faster:
         <ul class="bullets">
           <li>App name</li>
           <li>Device model</li>
           <li>iOS, iPadOS or macOS version</li>
-          <li>What you expected vs. what happened</li>
+          <li>What you expected and what happened instead</li>
         </ul>
       </div>
     </div>
@@ -49,5 +58,5 @@ last_updated: 2026-10-26
     <li><a href="{{ a.url }}support/">{{ a.name }} support</a> · <a href="{{ a.url }}privacy/">privacy policy</a>{% if a.tagline %}: {{ a.tagline }}{% endif %}</li>
   {%- endfor %}
   </ul>
-  <p class="small" style="margin-top:16px;">Refunds for App Store purchases are handled by Apple at <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a>. For how each app handles data, see the <a href="/transparency/">transparency report</a>.</p>
+  <p class="small" style="margin-top:16px;">{{ site.data.i18n.en.support_tip_subscriptions }} {{ site.data.i18n.en.support_tip_refunds }} For how each app handles data, see the <a href="/transparency/">transparency report</a>.</p>
 </section>

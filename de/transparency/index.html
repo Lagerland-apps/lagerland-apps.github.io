@@ -2,9 +2,9 @@
 layout: default
 ref: /transparency/
 permalink: /de/transparency/
-translated_from: 2026-10-26
+translated_from: 2026-10-29
 title: "App-Tracking-Transparenz: jede App, Feld für Feld"
-quick_answer: "Keine App von Lagerland Apps trackt dich: Jedes Datenschutzmanifest (Privacy Manifest), das wir ausliefern, setzt NSPrivacyTracking auf false und nennt keine Tracking-Domains, und keine App enthält ein Werbe-SDK. Diese Seite zeigt für jede App, was angegeben ist: Required-Reason-APIs, die Daten, die der App Store sieht, und die Netzwerkzugriffe der App, abgeglichen mit dem Quellcode-Repository zum angegebenen Datum."
+quick_answer: "Keine App von Lagerland Apps trackt dich. Jedes Datenschutzmanifest (Privacy Manifest), das das Studio ausliefert, setzt NSPrivacyTracking auf false und nennt keine Tracking-Domains, keine App enthält ein Werbe-SDK, und keine fragt nach der Werbe-ID (IDFA). Diese Seite zeigt für jede App, was sie angibt und was ihr Code tut: Tracking, SDKs von Drittanbietern, Konten, Netzwerkzugriffe, Daten, die das Gerät verlassen, und Required-Reason-APIs, Stand des angegebenen Prüfdatums."
 seo:
   title: "App-Tracking-Transparenz: jede Lagerland-App im Detail"
   description: "App-Tracking-Transparenz bei Lagerland Apps: das Privacy Manifest jeder App mit Tracking-Domains, Required-Reason-APIs, Dritt-SDKs und Netzwerkzugriffen."
@@ -17,7 +17,7 @@ seo:
     - nsprivacytracking
     - required reason api
     - apps ohne tracking
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 {%- include t.html -%}
@@ -78,9 +78,9 @@ last_updated: 2026-10-27
     <p class="overline">Belege</p>
     <h1 class="h1">App-Tracking-Transparenz,<br><span class="gradient-text">Feld für Feld.</span></h1>
     <p class="lead">
-      Keine Lagerland-App trackt dich: Jedes Datenschutzmanifest, das wir ausliefern, gibt <strong>NSPrivacyTracking = false</strong> und null Tracking-Domains an, und keine App enthält ein Werbe-SDK. Hier steht für jede App genau, was angegeben ist: Required-Reason-APIs, die Daten, die der App Store sieht, und die Netzwerkzugriffe der App.
+      Keine Lagerland-App trackt dich. Jedes Datenschutzmanifest, das das Studio ausliefert, gibt <strong>NSPrivacyTracking = false</strong> und keine Tracking-Domains an, und keine App enthält ein Werbe-SDK. Unten steht App für App, was sie angibt und was ihr Code tut: SDKs, Konten, Netzwerkzugriffe und die Daten, die dein Gerät verlassen.
     </p>
-    <p class="small">Letzte Prüfung: <time datetime="{{ site.data.transparency.last_audit }}">{% include date.html date=site.data.transparency.last_audit %}</time>. Erneut geprüft wird bei jeder neuen App-Version.</p>
+    <p class="small">Letzte Prüfung: <time datetime="{{ site.data.transparency.last_audit }}">{% include date.html date=site.data.transparency.last_audit %}</time>.</p>
   </div>
 </section>
 
@@ -94,10 +94,10 @@ last_updated: 2026-10-27
     <p class="overline">Was du hier siehst</p>
     <h2 class="h2" style="margin-bottom:var(--s-3);">Datenschutzmanifeste und Required-Reason-APIs</h2>
     <p class="lead">
-      Seit iOS 17 verlangt Apple von jeder App und jedem eingebundenen SDK ein <strong>Datenschutzmanifest</strong> (Privacy Manifest, Datei <code>PrivacyInfo.xcprivacy</code>). Darin steht maschinenlesbar, welche Daten erfasst werden, ob sie dem Tracking dienen und welche APIs mit Begründungspflicht („Required Reason“) die App aufruft. Apple kontrolliert diese Angaben bei der App-Prüfung, und die Werte erscheinen öffentlich im Bereich „App-Datenschutz“ jeder App im App Store.
+      Seit iOS 17 verlangt Apple von Apps und den SDKs darin ein <strong>Datenschutzmanifest</strong> (Privacy Manifest, Datei <code>PrivacyInfo.xcprivacy</code>). Darin steht maschinenlesbar, welche Daten erfasst werden, ob sie zum Tracking verwendet werden und welche APIs mit Begründungspflicht („Required Reason“) die App aufruft. Der Bereich „App-Datenschutz“ auf einer App-Store-Seite ist davon getrennt: Er zeigt die Antworten, die der Entwickler Apple in App Store Connect gibt.
     </p>
     <p class="small">
-      <strong>NSPrivacyTracking</strong> ist der wichtigste Schlüssel: <code>false</code> heißt, dass die App Nutzerdaten nicht mit Daten Dritter für Werbung oder die Messung von Werbung verknüpfen darf, nach ihrer eigenen Angabe und nach Apples Prüfung. <strong>NSPrivacyTrackingDomains</strong> listet jede Domain, die die App zu Tracking-Zwecken kontaktieren darf; in jeder Lagerland-App ist diese Liste leer. <strong>Required-Reason-APIs</strong> sind Kategorien von System-APIs (UserDefaults, Dateizeitstempel, Speicherplatz, Systemstartzeit), die sich für Fingerprinting missbrauchen lassen, also um Geräte wiederzuerkennen. Apple verlangt dafür angegebene Gründe, damit Missbrauch auffällt. Die Angaben jeder Lagerland-App folgen weiter unten.
+      <strong>NSPrivacyTracking</strong> ist der wichtigste Schlüssel: <code>false</code> erklärt, dass die App dich nicht trackt, wie Apple es definiert: Die App verknüpft deine Daten nicht mit Daten anderer Unternehmen für Werbung oder die Messung von Werbung und gibt sie nicht an Datenhändler weiter. <strong>NSPrivacyTrackingDomains</strong> listet jede Domain, die die App zu Tracking-Zwecken kontaktieren darf; in jeder Lagerland-App ist diese Liste leer. <strong>Required-Reason-APIs</strong> sind Kategorien von System-APIs (UserDefaults, Dateizeitstempel, Speicherplatz, Systemstartzeit), die sich für Fingerprinting missbrauchen lassen, also um Geräte wiederzuerkennen. Deshalb verlangt Apple, dass Apps angeben, wofür sie sie nutzen. Die Angaben jeder Lagerland-App folgen weiter unten.
     </p>
     <p class="small" style="margin-top:var(--s-3);">
       Mehr dazu bei Apple <span class="en-marker">{{ t.english_marker }}</span>: <a href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files" rel="noopener" target="_blank" hreflang="en">Privacy Manifest files</a> · <a href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api" rel="noopener" target="_blank" hreflang="en">Required Reason APIs</a> · <a href="https://developer.apple.com/app-store/app-privacy-details/" rel="noopener" target="_blank" hreflang="en">App Privacy Details</a>.
@@ -112,7 +112,7 @@ last_updated: 2026-10-27
   <div class="section-center">
     <p class="overline">Angaben pro App</p>
     <h2 class="h2">Alle {{ rows.size }} Apps</h2>
-    <p class="lead">Jeder Eintrag zeigt, was eine App angibt. Bei Apps mit dem Vermerk <em>im Quellcode geprüft</em> liegt das Datenschutzmanifest im Quellcode-Repository. Apps mit dem Vermerk <em>im App Store angegeben</em> geben dieselben Werte in der App-Store-Binärdatei und öffentlich unter „App-Datenschutz“ an. Apps mit dem Vermerk <em>noch kein Manifest</em> liefern bisher kein Datenschutzmanifest aus, ihr Eintrag beschreibt deshalb, was der Code tut.</p>
+    <p class="lead">Jeder Eintrag zeigt, was eine App angibt. Bei Apps mit dem Vermerk <em>im Quellcode geprüft</em> liegt das Datenschutzmanifest im Quellcode-Repository. Apps mit dem Vermerk <em>im App Store angegeben</em> liefern ihr Manifest in der App-Store-Version aus; vergleiche ihren Eintrag mit dem Bereich „App-Datenschutz“ auf der App-Store-Seite. Apps mit dem Vermerk <em>noch kein Manifest</em> liefern bisher kein Datenschutzmanifest aus, ihr Eintrag beschreibt deshalb, was der Code tut.</p>
   </div>
 
   <div class="transparency-grid">
@@ -234,9 +234,10 @@ last_updated: 2026-10-27
       <li><strong>Keine Werbe-SDKs.</strong> Also nichts von Meta, Google Mobile Ads, AppLovin, Unity Ads, IronSource, AdMob oder MoPub und auch sonst nichts, das Werbemittel lädt oder Nutzer abgleicht.</li>
       <li><strong>Keine Analyse von Drittanbietern.</strong> Weder Firebase, Mixpanel, Amplitude, Segment, Heap noch PostHog als SaaS, und keine Sentry-Telemetrie, die Nutzer identifiziert.</li>
       <li><strong>Keine Attribution, kein MMP.</strong> Weder Adjust, AppsFlyer, Branch, Singular, Kochava noch Tenjin.</li>
-      <li><strong>Keine Abfrage der IDFA.</strong> Keine der Apps ruft <code>ATTrackingManager.requestTrackingAuthorization</code> auf, und Apples Prüfung bestätigt das anhand des fehlenden Eintrags <code>NSUserTrackingUsageDescription</code> in der Info.plist. Deshalb fragt dich keine Lagerland-App, ob sie dich über Apps und Websites anderer Unternehmen hinweg verfolgen darf.</li>
-      <li><strong>Keine Kontosysteme.</strong> Wo es eine Synchronisierung gibt, läuft sie über iCloud (dein iCloud, deine Verschlüsselung, auf Wunsch mit dem erweiterten Datenschutz für iCloud). Wo Zugangsdaten für App Store Connect im Spiel sind (AppMeta, Mockly), sind es <em>deine</em>, gespeichert im macOS-Schlüsselbund und direkt an Apples APIs gesendet.</li>
-      <li><strong>Keine manipulativen Tricks.</strong> Keine Testphase, die ohne deine ausdrückliche Zustimmung kostenpflichtig weiterläuft, keine Serien, die dir ein schlechtes Gewissen machen, keine Flut von Mitteilungen und kein „jederzeit kündbar“, hinter dem Hürden beim Kündigen stecken.</li>
+      <li><strong>Keine Abfrage der IDFA.</strong> Keine der Apps ruft <code>ATTrackingManager.requestTrackingAuthorization</code> auf oder enthält den Schlüssel <code>NSUserTrackingUsageDescription</code>, den die Tracking-Abfrage braucht. Deshalb kann keine Lagerland-App dich fragen, ob sie dich über Apps und Websites anderer Unternehmen hinweg verfolgen darf.</li>
+      <li><strong>Keine Kontosysteme.</strong> Wo eine App synchronisiert, nutzt sie deine eigene iCloud. Wo eine App mit App Store Connect arbeitet (AppMeta, AppMeta Pulse und der Upload in Mockly), nutzt sie <em>deinen</em> API-Schlüssel und schickt ihn nur an Apple; AppMeta und AppMeta Pulse bewahren ihn im Schlüsselbund auf.</li>
+      <li><strong>Kein Server des Studios.</strong> Keine App schickt deine Daten an einen Server von Lagerland Apps. Apps, die für ihre Aufgabe das Internet brauchen, verbinden sich direkt mit diesem Dienst, etwa WanderWiki mit Wikipedia.</li>
+      <li><strong>Käufe nur über Apple.</strong> Testphasen und Abos laufen über Apples Kaufdialog, der Preis und Verlängerung zeigt, bevor du bestätigst, und du kündigst sie in den Einstellungen wie jedes andere Abo aus dem App Store.</li>
     </ul>
   </div>
 </section>
@@ -248,7 +249,7 @@ last_updated: 2026-10-27
   <p class="overline">Selbst nachprüfen</p>
   <h2 class="h2">Öffne den App Store und sieh unter „App-Datenschutz“ nach.</h2>
   <p class="lead">
-    Jede Angabe auf dieser Seite steht in Apples Format auch im Bereich „App-Datenschutz“ jeder Lagerland-App. Sollte eine App jemals von den Angaben oben abweichen, fällt das bei Apples Prüfung auf und auf dieser Seite ebenso.
+    Vergleiche jeden Eintrag oben mit dem Bereich „App-Datenschutz“ auf der App-Store-Seite der App. Wenn du einen Unterschied findest, schreib an <a href="mailto:lagerland.apps@proton.me">lagerland.apps@proton.me</a>, damit die Seite oder die App korrigiert werden kann.
   </p>
   <div class="actions">
     <a class="btn btn-primary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Alle Apps ansehen{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
