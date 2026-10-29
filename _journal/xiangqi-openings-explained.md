@@ -20,7 +20,7 @@ faq:
   - q: "What is the most common opening in xiangqi?"
     a: "The Central Cannon, 1. C2=5 (炮二平五 in Chinese notation). Red moves a cannon to the middle file, where Red's own central soldier acts as its screen, so it threatens the black soldier on e6 from the first move. Black has to answer that threat, which is why the main defences are all named as replies to the Central Cannon."
   - q: "What is the best defence against the Central Cannon?"
-    a: "The Screen Horses (屏风马) are the most common answer, and a solid one: both black horses develop to c7 and g7, where each guards the central soldier and the other horse. The Same Direction Cannons and Opposite Cannons answer with a central cannon of Black's own and lead to sharper games, and the Reversed Palace Horses are a solid variation of the Screen Horses with a cannon between the horses."
+    a: "The Screen Horses (屏风马) are the most common answer, and a solid one: both black horses develop to c7 and g7, where both guard the central soldier. The Same Direction Cannons and Opposite Cannons answer with a central cannon of Black's own and lead to sharper games, and the Reversed Palace Horses are a solid variation of the Screen Horses with a cannon between the horses."
   - q: "How do you read xiangqi notation like C2=5?"
     a: "In WXF notation the letter is the piece (K general, A advisor, E elephant, H horse, R chariot, C cannon, P soldier) and the first number is the column it starts on, counted 1 to 9 from the moving player's own right. Then + means forward, - backward, and = sideways. For a straight-moving piece going forward or back the last number is the distance; otherwise it is the destination column. C2=5 is a cannon moving sideways from column 2 to column 5."
   - q: "What is the difference between Same Direction Cannons and Opposite Cannons?"
@@ -55,7 +55,7 @@ So C2=5 is a cannon moving sideways from column 2 to column 5, and H8+7 is a hor
 | Opening | Chinese | First moves | Played by | The idea |
 |---|---|---|---|---|
 | Central Cannon | 中炮 | 1. C2=5 | Red | Cannon on the middle file, aimed at e6 and the palace |
-| Screen Horses | 屏风马 | 1. C2=5 H8+7 2. H2+3 H2+3 | Black | Both horses guard the central soldier and each other |
+| Screen Horses | 屏风马 | 1. C2=5 H8+7 2. H2+3 H2+3 | Black | Both horses guard the central soldier |
 | Same Direction Cannons | 顺炮 | 1. C2=5 C8=5 | Black | A central cannon from the same wing; near-symmetry and a race to develop |
 | Opposite Cannons | 列炮 | 1. C2=5 C2=5 | Black | A central cannon from the other wing; sharper, counterattacking |
 | Reversed Palace Horses | 反宫马 | 1. C2=5 H8+7 2. H2+3 C2=4 3. R1=2 H2+3 | Black | Screen Horses with a cannon in the advisor's corner between them |
