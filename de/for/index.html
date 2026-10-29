@@ -1,0 +1,63 @@
+---
+layout: default
+ref: /for/
+permalink: /de/for/
+translated_from: 2026-10-29
+title: "Für wen?"
+quick_answer: "Hier stellt Lagerland Apps seine Apple-Apps für bestimmte Gruppen von Menschen zusammen. Jede Seite empfiehlt zwei bis vier Apps, sagt, was jede davon für diese Gruppe tut, und nennt die App, mit der du anfangen solltest. Auf Deutsch gibt es bisher die Seite für Schichtarbeit: AfterShift misst deinen Schlaf von einer Schicht zur nächsten, Observa macht aus Apple Health einen täglichen Bereitschaftswert, Taskful Day trägt Unerledigtes weiter, und AllPaid erinnert dich an Rechnungen, ohne nach deinem Bank-Login zu fragen."
+seo:
+  title: "Für wen? Apps von Lagerland Apps nach Zielgruppe"
+  description: "Apple-Apps für eine bestimmte Gruppe zusammengestellt. Auf Deutsch bisher: Apps für Schichtarbeit, Nachtschicht und Schlaf, alle ohne Konto."
+  keywords:
+    - apps für schichtarbeiter
+    - schichtarbeit app
+    - apps für pflegekräfte
+    - schichtarbeit schlaf
+    - iphone apps nach zielgruppe
+last_updated: 2026-10-29
+---
+{%- include t.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/de/for/#webpage",
+  "url": "{{ site.url }}/de/for/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "de",
+  "isPartOf": { "@id": "{{ site.url }}/de/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/de/" },
+      { "@type": "ListItem", "position": 2, "name": "Für wen?", "item": "{{ site.url }}/de/for/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Apps für Schichtarbeit und Schlaf", "url": "{{ site.url }}/de/for/shift-workers/" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Zielgruppe → Apps</p>
+    <h1 class="h1">Apps, die zu deinem<br><span class="gradient-text">Alltag und deiner Arbeit passen.</span></h1>
+    <p class="lead">Kurze Seiten, die einige unserer Apps einem bestimmten Arbeitsrhythmus oder Beruf zuordnen und sagen, mit welcher App du anfangen solltest.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="grid grid-2 stagger">
+    <a class="card card-app" href="/de/for/shift-workers/">
+      <div class="card-title">Für Schichtarbeiter</div>
+      <div class="card-text">Pflege, Rettungsdienst und alle mit Nacht- oder Wechselschicht: Schlaf, gemessen von einer Schicht zur nächsten, ein täglicher Bereitschaftswert und Aufgaben und Rechnungen, die nicht untergehen, wenn sich deine Arbeitszeiten verschieben.</div>
+    </a>
+  </div>
+</section>

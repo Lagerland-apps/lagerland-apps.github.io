@@ -1,0 +1,72 @@
+---
+layout: default
+ref: /journal/
+permalink: /de/journal/
+translated_from: 2026-10-29
+title: "Journal"
+quick_answer: "Das Journal von Lagerland Apps beantwortet Alltagsfragen zu Schlaf, Bewegung, Training und Geld mit Quellen und sagt dazu, wo eine unserer Apps hilft. Auf Deutsch gibt es bisher Artikel dazu, wie du nach der Nachtschicht schläfst, wie viele Schritte am Tag gesund sind, wie lange die Pause zwischen zwei Sätzen sein sollte und wie du alle laufenden Abos findest, ohne dein Bankkonto zu verknüpfen. Die Gesundheitsartikel ersetzen keine ärztliche Beratung."
+seo:
+  title: "Journal: Schlaf, Schritte, Satzpausen und Abos"
+  description: "Artikel mit Quellen: Schlafen nach der Nachtschicht, wie viele Schritte am Tag gesund sind, Satzpausen im Krafttraining und laufende Abos finden."
+  keywords:
+    - schlafen nach nachtschicht
+    - wie viele schritte am tag
+    - satzpause wie lange
+    - abos finden und kündigen
+    - lagerland apps journal
+last_updated: 2026-10-29
+---
+{%- include t.html -%}
+{%- assign posts = site.pages | where: "lang", "de" | where: "layout", "journal" | sort: "date" | reverse -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": "{{ site.url }}/de/journal/#blog",
+  "url": "{{ site.url }}/de/journal/",
+  "name": "Lagerland Apps Journal",
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "de",
+  "publisher": { "@id": "{{ site.url }}/#organization" },
+  "isPartOf": { "@id": "{{ site.url }}/de/#website" },
+  "blogPost": [
+    {%- for post in posts -%}
+    {
+      "@type": "BlogPosting",
+      "url": "{{ site.url }}{{ post.url }}",
+      "headline": {{ post.title | jsonify }},
+      "inLanguage": "de",
+      "datePublished": "{{ post.date | date: '%Y-%m-%d' }}",
+      "dateModified": "{{ post.last_updated | default: post.date | date: '%Y-%m-%d' }}",
+      {%- assign _img = '/assets/og/default.png' -%}
+      {%- if post.og_image -%}{%- assign _img = post.og_image -%}{%- elsif post.mentioned_apps and post.mentioned_apps.size > 0 -%}{%- assign _cand = '/assets/og/' | append: post.mentioned_apps[0] | append: '.png' -%}{%- assign _hit = site.static_files | where: "path", _cand | first -%}{%- if _hit -%}{%- assign _img = _cand -%}{%- endif -%}{%- endif %}
+      "image": "{{ site.url }}{{ _img }}",
+      "author": { "@id": "{{ site.url }}/#organization" }
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Journal · Notizen aus einem Ein-Personen-Studio</p>
+    <h1 class="h1">Anleitungen mit Quellen<br><span class="gradient-text">für Schlaf, Training und Geld.</span></h1>
+    <p class="lead">Artikel, die eine konkrete Frage beantworten, mit den Studien und Quellen dahinter, und dazu sagen, wo eine unserer Apps hilft und wo nicht.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg">
+  <div class="grid grid-2 stagger">
+    {%- for post in posts -%}
+      <a class="card card-app" href="{{ post.url }}">
+        <p class="overline">{% include date.html date=post.date %}{% if post.read_time %} · {{ post.read_time }}{% endif %}</p>
+        <div class="card-title" style="margin-top:var(--s-2);">{{ post.title }}</div>
+        {% if post.lede %}<div class="card-text">{{ post.lede }}</div>{% endif %}
+      </a>
+    {%- endfor -%}
+  </div>
+</section>

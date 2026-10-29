@@ -3,6 +3,42 @@
     "de": "/de/",
     "en": "/"
   },
+  "/alternatives/": {
+    "de": "/de/alternatives/",
+    "en": "/alternatives/"
+  },
+  "/alternatives/hevy/": {
+    "de": "/de/alternatives/hevy/",
+    "en": "/alternatives/hevy/"
+  },
+  "/alternatives/one-sec/": {
+    "de": "/de/alternatives/one-sec/",
+    "en": "/alternatives/one-sec/"
+  },
+  "/alternatives/opal/": {
+    "de": "/de/alternatives/opal/",
+    "en": "/alternatives/opal/"
+  },
+  "/alternatives/oura/": {
+    "de": "/de/alternatives/oura/",
+    "en": "/alternatives/oura/"
+  },
+  "/alternatives/splitwise/": {
+    "de": "/de/alternatives/splitwise/",
+    "en": "/alternatives/splitwise/"
+  },
+  "/alternatives/strong-workout-app/": {
+    "de": "/de/alternatives/strong-workout-app/",
+    "en": "/alternatives/strong-workout-app/"
+  },
+  "/alternatives/tricount/": {
+    "de": "/de/alternatives/tricount/",
+    "en": "/alternatives/tricount/"
+  },
+  "/alternatives/whoop/": {
+    "de": "/de/alternatives/whoop/",
+    "en": "/alternatives/whoop/"
+  },
   "/apps/": {
     "de": "/de/apps/",
     "en": "/apps/"
@@ -246,6 +282,46 @@
   "/apps/xiangqiful/support/": {
     "de": "/de/apps/xiangqiful/support/",
     "en": "/apps/xiangqiful/support/"
+  },
+  "/for/": {
+    "de": "/de/for/",
+    "en": "/for/"
+  },
+  "/for/shift-workers/": {
+    "de": "/de/for/shift-workers/",
+    "en": "/for/shift-workers/"
+  },
+  "/guides/": {
+    "de": "/de/guides/",
+    "en": "/guides/"
+  },
+  "/guides/best-chess-apps-iphone/": {
+    "de": "/de/guides/best-chess-apps-iphone/",
+    "en": "/guides/best-chess-apps-iphone/"
+  },
+  "/guides/workout-app-without-subscription/": {
+    "de": "/de/guides/workout-app-without-subscription/",
+    "en": "/guides/workout-app-without-subscription/"
+  },
+  "/journal/": {
+    "de": "/de/journal/",
+    "en": "/journal/"
+  },
+  "/journal/find-every-recurring-charge/": {
+    "de": "/de/journal/find-every-recurring-charge/",
+    "en": "/journal/find-every-recurring-charge/"
+  },
+  "/journal/how-long-to-rest-between-sets/": {
+    "de": "/de/journal/how-long-to-rest-between-sets/",
+    "en": "/journal/how-long-to-rest-between-sets/"
+  },
+  "/journal/how-many-steps-a-day-to-aim-for/": {
+    "de": "/de/journal/how-many-steps-a-day-to-aim-for/",
+    "en": "/journal/how-many-steps-a-day-to-aim-for/"
+  },
+  "/journal/how-to-sleep-after-a-night-shift/": {
+    "de": "/de/journal/how-to-sleep-after-a-night-shift/",
+    "en": "/journal/how-to-sleep-after-a-night-shift/"
   },
   "/lagerland-apps/": {
     "de": "/de/lagerland-apps/",

@@ -1,0 +1,69 @@
+---
+layout: default
+ref: /guides/
+permalink: /de/guides/
+translated_from: 2026-10-29
+title: "Ratgeber"
+quick_answer: "Die Ratgeber von Lagerland Apps fangen bei einem konkreten Problem an, vergleichen die Apps, die es lösen, und nennen die Vor- und Nachteile jeder App. Auf Deutsch gibt es bisher diese: welche Schach-App fürs iPhone die beste ist, je nachdem, ob du spielen, Eröffnungen lernen oder deine Fehler verstehen willst, und welche Fitness-App du fürs Krafttraining nutzen kannst, ohne jeden Monat zu zahlen. Jeder Ratgeber nennt konkrete Apps, sagt, wem welche passt, und kennzeichnet unsere eigenen Apps als unsere."
+seo:
+  title: "Ratgeber: iPhone-Apps nach Problem ehrlich verglichen"
+  description: "Ratgeber, die bei einem Problem anfangen: die beste Schach-App fürs iPhone und eine Fitness-App ohne Abo, mit Vor- und Nachteilen jeder App."
+  keywords:
+    - iphone apps ratgeber
+    - beste schach app iphone
+    - fitness app ohne abo
+    - trainingstagebuch app ohne abo
+    - iphone apps vergleich
+    - apps ohne werbung
+last_updated: 2026-10-29
+---
+{%- include t.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/de/guides/#webpage",
+  "url": "{{ site.url }}/de/guides/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "de",
+  "isPartOf": { "@id": "{{ site.url }}/de/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/de/" },
+      { "@type": "ListItem", "position": 2, "name": "Ratgeber", "item": "{{ site.url }}/de/guides/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Fitness-App ohne Abo", "url": "{{ site.url }}/de/guides/workout-app-without-subscription/" },
+      { "@type": "ListItem", "position": 2, "name": "Die beste Schach-App fürs iPhone", "url": "{{ site.url }}/de/guides/best-chess-apps-iphone/" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Problem → Lösung</p>
+    <h1 class="h1">Ratgeber, die bei einem<br><span class="gradient-text">echten Problem anfangen.</span></h1>
+    <p class="lead">Kurze Ratgeber, die von einem konkreten Ärger ausgehen (<em>„Ich will eine Fitness-App, ohne jeden Monat zu zahlen“</em>), die Apps vergleichen, die ihn lösen, und sagen, was jede davon kann und was nicht.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="grid grid-2 stagger">
+    <a class="card card-app" href="/de/guides/workout-app-without-subscription/">
+      <div class="card-title">„Ich will eine Fitness-App, ohne jeden Monat zu zahlen.“</div>
+      <div class="card-text">Fitbod gibt es nur im Abo, Strong und Hevy verkaufen Pro als Abo oder als Einmalkauf. LiftLog ist ein Einmalkauf ohne Abo, und GymLogger X hat eine kostenlose Version, Pro gibt es als Abo oder für {P_LIFETIME@gymlogger-x} einmalig.</div>
+    </a>
+    <a class="card card-app" href="/de/guides/best-chess-apps-iphone/">
+      <div class="card-title">„Welche Schach-App ist die beste, und welche hilft mir wirklich, besser zu werden?“</div>
+      <div class="card-text">Lichess, Chess.com, Chessful, Chessable und weitere, verglichen nach Aufgabe: spielen, Eröffnungen lernen oder verstehen, warum du verlierst. Kostenlose Apps zuerst.</div>
+    </a>
+  </div>
+</section>

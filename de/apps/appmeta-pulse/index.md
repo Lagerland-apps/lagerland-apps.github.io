@@ -204,7 +204,7 @@ founder:
     - "Der API-Schlüssel bleibt im Schlüsselbund des iPhone, und die Anfragen gehen über HTTPS direkt an Apple"
     - "Finanziert durch die Verkäufe der Apps selbst, ohne Werbung und ohne Investoren"
   external_link:
-    href: "/alternatives/"
+    href: "/alternatives/appstats/"
     label: "So schneidet AppMeta Pulse gegen AppStats, App Sales und Appfigures ab (auf Englisch)"
 
 enrichment:

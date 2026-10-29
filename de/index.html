@@ -117,7 +117,7 @@ last_updated: 2026-10-29
       "name": "Was sind gute Alternativen zu bekannten Apps mit viel Tracking?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Fang bei der Aufgabe an, die du erledigen willst. Taskful Day ist ein Tagesplaner für {{ tf_devices }}, in dem Unerledigtes von selbst weiterwandert. GymLogger X ist ein Trainingstagebuch fürs Krafttraining mit Apple-Watch-App, und Pro gibt es auch als Einmalkauf. Observa macht aus deinen Daten in Apple Health einen täglichen Bereitschaftswert und wertet alles auf deinem Gerät aus. AllPaid erinnert dich an Rechnungen und Vertragsverlängerungen, ohne sich mit deiner Bank zu verbinden. Auf der Vergleichsseite steht jede App neben den Apps, die die meisten kennen."
+        "text": "Fang bei der Aufgabe an, die du erledigen willst. Taskful Day ist ein Tagesplaner für {{ tf_devices }}, in dem Unerledigtes von selbst weiterwandert. GymLogger X ist ein Trainingstagebuch fürs Krafttraining mit Apple-Watch-App, und Pro gibt es auch als Einmalkauf. Observa macht aus deinen Daten in Apple Health einen täglichen Bereitschaftswert und wertet alles auf deinem Gerät aus. AllPaid erinnert dich an Rechnungen und Vertragsverlängerungen, ohne sich mit deiner Bank zu verbinden. Auf der Vergleichsseite stehen unsere Apps neben bekannten Apps, von denen viele umsteigen."
       }
     }
   ]
@@ -306,10 +306,10 @@ last_updated: 2026-10-29
 </section>
 
 <!-- ============================
-     COMPARED-TO: surface /alternatives/ pages from the home page (English-only for now)
+     COMPARED-TO: surface /alternatives/ pages from the home page (German comparisons)
      ============================ -->
 <section class="section reveal" aria-labelledby="compare-title">
-  {%- assign comparison_count = site.pages | where: "lang", "en" | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 -%}
+  {%- assign comparison_count = site.pages | where: "lang", "de" | where_exp: "p", "p.url contains '/de/alternatives/'" | size | minus: 1 -%}
   <h2 class="h2" id="compare-title">Vergleiche mit den Apps, die du kennst</h2>
   <p class="lead">{{ comparison_count }} direkte Vergleiche mit den Apps, von denen die meisten umsteigen, jeweils mit dem Hinweis, wann die andere App die bessere Wahl ist. Vier stehen hier, die übrigen auf der Vergleichsseite.</p>
   <div class="pairs stagger">
@@ -324,37 +324,37 @@ last_updated: 2026-10-29
       <span class="card-text">Sätze schnell eintragen, auf dem iPhone und der Apple Watch, ohne Konto. Mit Pro erkennt die App Plateaus und Ermüdung in deinen eigenen Einträgen, und Pro gibt es auch als Einmalkauf.</span>
       <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
     </a>
-    {%- assign pa = site.apps | where: "slug", "taskful-day" | first -%}{%- include series.html app=pa -%}
-    <a class="pair series-{{ series_key }}" href="{% include l.html url="/alternatives/streaks-app/" %}"{% if l_en %} hreflang="en"{% endif %}>
+    {%- assign pa = site.apps | where: "slug", "earnlock" | first -%}{%- include series.html app=pa -%}
+    <a class="pair series-{{ series_key }}" href="{% include l.html url="/alternatives/opal/" %}"{% if l_en %} hreflang="en"{% endif %}>
       <span class="pair__stamps" aria-hidden="true">
-        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/taskful-day.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/earnlock.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
         <span class="pair__vs">{{ t.alt_vs }}</span>
-        <span class="blank-stamp"><span>Streaks</span></span>
+        <span class="blank-stamp"><span>Opal</span></span>
       </span>
-      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> Streaks</span>
-      <span class="card-text">Ein Tagesplaner, in dem Unerledigtes von selbst weiterwandert und eine Serie nur eine Statistik unter vielen ist, auf {{ tf_devices }}.</span>
+      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> Opal</span>
+      <span class="card-text">EarnLock hält ablenkende Apps gesperrt, bis du dein tägliches Bewegungsziel erreichst, gemessen von Apple Health. Eine App zu sperren ist dauerhaft kostenlos, und du brauchst kein Konto.</span>
       <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
     </a>
     {%- assign pa = site.apps | where: "slug", "observa" | first -%}{%- include series.html app=pa -%}
-    <a class="pair series-{{ series_key }}" href="{% include l.html url="/alternatives/autosleep/" %}"{% if l_en %} hreflang="en"{% endif %}>
+    <a class="pair series-{{ series_key }}" href="{% include l.html url="/alternatives/whoop/" %}"{% if l_en %} hreflang="en"{% endif %}>
       <span class="pair__stamps" aria-hidden="true">
         <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/observa.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
         <span class="pair__vs">{{ t.alt_vs }}</span>
-        <span class="blank-stamp"><span>AutoSleep</span></span>
+        <span class="blank-stamp"><span>Whoop</span></span>
       </span>
-      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> AutoSleep</span>
-      <span class="card-text">Observa wertet die Daten zu Schlaf, HRV und Erholung aus, die schon in Apple Health liegen. Einen Schlaftracker ersetzt die App nicht.</span>
+      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> Whoop</span>
+      <span class="card-text">Jeden Morgen ein Bereitschaftswert aus der Apple Watch, die du schon trägst, ohne zweites Band und ohne Mitgliedschaft. Die täglichen Werte sind kostenlos.</span>
       <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
     </a>
-    {%- assign pa = site.apps | where: "slug", "appmeta" | first -%}{%- include series.html app=pa -%}
-    <a class="pair series-{{ series_key }}" href="{% include l.html url="/alternatives/app-store-connect-web/" %}"{% if l_en %} hreflang="en"{% endif %}>
+    {%- assign pa = site.apps | where: "slug", "rightsplit" | first -%}{%- include series.html app=pa -%}
+    <a class="pair series-{{ series_key }}" href="{% include l.html url="/alternatives/splitwise/" %}"{% if l_en %} hreflang="en"{% endif %}>
       <span class="pair__stamps" aria-hidden="true">
-        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/appmeta.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/rightsplit.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
         <span class="pair__vs">{{ t.alt_vs }}</span>
-        <span class="blank-stamp"><span>App Store Connect (Web)</span></span>
+        <span class="blank-stamp"><span>Splitwise</span></span>
       </span>
-      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> App Store Connect (Web)</span>
-      <span class="card-text">Eine native Mac-App für App Store Connect: alle Sprachen in einem Fenster, ein Diff auf Feldebene vor dem Hochladen und dein API-Schlüssel im Schlüsselbund des Mac.</span>
+      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> Splitwise</span>
+      <span class="card-text">Kassenbon scannen, antippen, wer was hatte, und jeder Person ihren Betrag mit Bezahllink schicken. Außer dir braucht niemand die App oder ein Konto.</span>
       <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
     </a>
   </div>
@@ -463,7 +463,7 @@ last_updated: 2026-10-29
     </details>
     <details class="faq-item">
       <summary>Was sind gute Alternativen zu bekannten Apps mit viel Tracking?</summary>
-      <div class="faq-a">Fang bei der Aufgabe an, die du erledigen willst. <a href="{% include l.html url="/apps/taskful-day/" %}"{% if l_en %} hreflang="en"{% endif %}>Taskful Day{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> ist ein Tagesplaner für {{ tf_devices }}, in dem Unerledigtes von selbst weiterwandert. <a href="{% include l.html url="/apps/gymlogger-x/" %}"{% if l_en %} hreflang="en"{% endif %}>GymLogger X{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> ist ein Trainingstagebuch fürs Krafttraining mit Apple-Watch-App, und Pro gibt es auch als Einmalkauf. <a href="{% include l.html url="/apps/observa/" %}"{% if l_en %} hreflang="en"{% endif %}>Observa{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> macht aus deinen Daten in Apple Health einen täglichen Bereitschaftswert und wertet alles auf deinem Gerät aus. <a href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> erinnert dich an Rechnungen und Vertragsverlängerungen, ohne sich mit deiner Bank zu verbinden. Auf der <a href="{% include l.html url="/alternatives/" %}"{% if l_en %} hreflang="en"{% endif %}>Vergleichsseite{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> steht jede App neben den Apps, die die meisten kennen.</div>
+      <div class="faq-a">Fang bei der Aufgabe an, die du erledigen willst. <a href="{% include l.html url="/apps/taskful-day/" %}"{% if l_en %} hreflang="en"{% endif %}>Taskful Day{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> ist ein Tagesplaner für {{ tf_devices }}, in dem Unerledigtes von selbst weiterwandert. <a href="{% include l.html url="/apps/gymlogger-x/" %}"{% if l_en %} hreflang="en"{% endif %}>GymLogger X{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> ist ein Trainingstagebuch fürs Krafttraining mit Apple-Watch-App, und Pro gibt es auch als Einmalkauf. <a href="{% include l.html url="/apps/observa/" %}"{% if l_en %} hreflang="en"{% endif %}>Observa{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> macht aus deinen Daten in Apple Health einen täglichen Bereitschaftswert und wertet alles auf deinem Gerät aus. <a href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> erinnert dich an Rechnungen und Vertragsverlängerungen, ohne sich mit deiner Bank zu verbinden. Auf der <a href="{% include l.html url="/alternatives/" %}"{% if l_en %} hreflang="en"{% endif %}>Vergleichsseite{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> stehen unsere Apps neben bekannten Apps, von denen viele umsteigen.</div>
     </details>
   </div>
 </section>

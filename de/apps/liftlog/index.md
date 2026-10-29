@@ -135,8 +135,8 @@ comparison_table:
     - feature: "Preismodell"
       values:
         - "Einmalkauf, {P_IAP:Minimum} bis {P_IAP:Patron}"
-        - "Kostenlos + Pro-Abo"
-        - "Kostenlos + Pro-Abo"
+        - "Kostenlos + Pro als Abo oder Einmalkauf"
+        - "Kostenlos + Pro als Abo oder Einmalkauf"
         - "Nur Abo"
     - feature: "Kostenlos testen ohne Karte"
       values:
@@ -186,7 +186,7 @@ comparison_table:
         - "Ohne Pro nur lesbar"
         - "Ohne Pro nur lesbar"
         - "Weg, wenn das Abo ausläuft"
-  footnote: "Die Angaben zur Konkurrenz beruhen auf öffentlich dokumentierten Funktionen, Stand 2026. Bei LiftLog wählst du deine Stufe einmal: {P_IAP:Minimum} Fair, {P_IAP:Suggested} Gut, {P_IAP:Supporter} Großzügig oder {P_IAP:Patron} Förderer. Maßgeblich für aktuelle Preise ist der App Store."
+  footnote: "Die Angaben zur Konkurrenz beruhen auf öffentlich dokumentierten Funktionen, Stand 2026. Die Preismodelle haben wir am 29. Oktober 2026 im deutschen App Store geprüft. Bei LiftLog wählst du deine Stufe einmal: {P_IAP:Minimum} Fair, {P_IAP:Suggested} Gut, {P_IAP:Supporter} Großzügig oder {P_IAP:Patron} Förderer. Maßgeblich für aktuelle Preise ist der App Store."
 
 value_points:
   - title: "Einmal zahlen. Behalten."
@@ -246,7 +246,7 @@ faq:
   - q: "Was ist LiftLog?"
     a: "LiftLog ist eine Krafttraining-App fürs iPhone. Gewicht und Wiederholungen tippst du auf einer festen Zifferntastatur ein, jeder Satz ist mit den Werten der letzten Einheit vorausgefüllt, und der Pausen-Timer startet, sobald du einen Satz abhakst. Dazu kommen 1500 Übungen mit animierten Demos, 40 fertige Programme, die dir das nächste Gewicht vorschlagen können, Rekordanzeigen, Fortschrittsdiagramme, 10 Widgets und Siri-Aktionen. Die App ist 7 Tage kostenlos ohne Karte, danach ein Einmalkauf von {P_IAP:Minimum} bis {P_IAP:Patron}."
   - q: "Was kostet LiftLog, und gibt es ein Abo?"
-    a: "Ein Abo gibt es nicht. LiftLog ist 7 Tage kostenlos, ohne Karte. Danach kaufst du die App einmal in der Stufe, die du wählst: {P_IAP:Minimum} (Fair), {P_IAP:Suggested} (Gut), {P_IAP:Supporter} (Großzügig) oder {P_IAP:Patron} (Förderer). Jede Stufe schaltet dieselbe App frei, nichts verlängert sich, künftige Updates sind inklusive, und die Familienfreigabe ist aktiv. Ein Kauf reicht also für deine Familiengruppe."
+    a: "Ein Abo gibt es nicht. LiftLog ist 7 Tage kostenlos, ohne Karte. Danach kaufst du die App einmal in der Stufe, die du wählst: {P_IAP:Minimum} (Fair), {P_IAP:Suggested} (Gut), {P_IAP:Supporter} (Großzügig) oder {P_IAP:Patron} (Förderer). Jede Stufe schaltet dieselbe App frei, nichts verlängert sich, künftige Updates sind inklusive, und die Familienfreigabe ist aktiv. Ein Kauf reicht also für deine Familiengruppe. Wie LiftLog und GymLogger X neben Strong, Hevy und Fitbod abschneiden, zeigt der Ratgeber <a href=\"/de/guides/workout-app-without-subscription/\">Fitness-App ohne Abo</a>."
   - q: "Was passiert, wenn die 7-tägige Testphase endet?"
     a: "Kaufst du nicht, behältst du den Lesezugriff. Dein Verlauf, die Workout-Details, die Fortschrittsdiagramme, die Übungsbibliothek, der Scheibenrechner, die Widgets, die Siri-Abfragen, Export und Import deiner Daten und „Zuletzt gelöscht“ bleiben kostenlos, und ein laufendes Workout kannst du noch beenden. Für neue Workouts, das Bearbeiten von Programmen, eigene Übungen, das Bearbeiten gespeicherter Sätze und das Eintragen des Körpergewichts brauchst du den Einmalkauf."
   - q: "Warum gibt es vier Preise für dieselbe App?"

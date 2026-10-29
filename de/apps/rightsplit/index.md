@@ -168,7 +168,7 @@ comparison_table:
         - "Kostenlos + {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig"
         - "Kostenlos + Pro-Abo"
         - "Kostenlos"
-        - "Kostenlos + Pro-Abo"
+        - "Kostenlos, ohne In-App-Käufe"
     - feature: "Konto nötig"
       values:
         - "Nein"
@@ -211,7 +211,7 @@ comparison_table:
         - "Eingeschränkt"
         - "Ja"
         - "Eingeschränkt"
-  footnote: "Die Angaben zu den anderen Apps geben ihre öffentlich beschriebenen Funktionen wieder, Stand 2026. Splitwise ist das richtige Werkzeug, wenn die ganze Gruppe einen gemeinsamen Saldo sehen und ergänzen soll. RightSplit kümmert sich um die einzelne Rechnung, dazu kommen in Pro+ Bereiche für Reisen und gemeinsame Haushalte, die auf einem Handy bleiben."
+  footnote: "Die Angaben zu den anderen Apps geben ihre öffentlich beschriebenen Funktionen wieder, Stand 2026. Den Preis von Tricount haben wir am 29. Oktober 2026 im deutschen App Store geprüft. Splitwise ist das richtige Werkzeug, wenn die ganze Gruppe einen gemeinsamen Saldo sehen und ergänzen soll. RightSplit kümmert sich um die einzelne Rechnung, dazu kommen in Pro+ Bereiche für Reisen und gemeinsame Haushalte, die auf einem Handy bleiben."
 
 privacy:
   data_collection: "keine"
@@ -250,7 +250,7 @@ faq:
   - q: "Funktioniert es mit Belegen, in denen die Mehrwertsteuer schon enthalten ist?"
     a: "Ja. RightSplit nimmt jeden Artikel mit seinem gedruckten Preis. Ist die Mehrwertsteuer schon in jeder Zeile enthalten, wie in der EU und in Großbritannien üblich, gibt es keine eigene Steuerzeile zum Verteilen, und die Aufteilung entspricht dem Beleg. Weist der Beleg die Steuer in einer eigenen Zeile aus, wie meist in den USA, liest RightSplit sie als Steuer und verteilt sie pro Person."
   - q: "Auf wie viele Personen kann ich eine Rechnung aufteilen?"
-    a: "Auf dem Bildschirm zum Aufteilen stellst du die Zahl der Personen ein, und bei einem gescannten Beleg fügst du die Personen am Tisch hinzu. Für eine Reise oder einen gemeinsamen Haushalt halten Bereiche in Pro+ den Saldo jeder Person auf deinem Handy fest. Sollen alle in der Gruppe dieselbe Gruppenkasse auf dem eigenen Handy sehen und ergänzen, passt eine Gruppen-App wie <a href=\"/alternatives/splitwise/\" hreflang=\"en\">Splitwise</a> (auf Englisch) besser, für Reisekassen auch <a href=\"/alternatives/tricount/\" hreflang=\"en\">Tricount</a> (auf Englisch)."
+    a: "Auf dem Bildschirm zum Aufteilen stellst du die Zahl der Personen ein, und bei einem gescannten Beleg fügst du die Personen am Tisch hinzu. Für eine Reise oder einen gemeinsamen Haushalt halten Bereiche in Pro+ den Saldo jeder Person auf deinem Handy fest. Sollen alle in der Gruppe dieselbe Gruppenkasse auf dem eigenen Handy sehen und ergänzen, passt eine Gruppen-App wie <a href=\"/de/alternatives/splitwise/\">Splitwise</a> besser, für Reisekassen auch <a href=\"/de/alternatives/tricount/\">Tricount</a>."
   - q: "Funktioniert RightSplit mit Apple Pay, Venmo oder PayPal?"
     a: "RightSplit verlinkt diese Dienste, bewegt selbst aber nie Geld. Speicherst du deinen eigenen Venmo-, PayPal.me-, Revolut- oder Wise-Namen, deine IBAN oder Apple Pay, enthält die Nachricht an jede Person einen Bezahllink mit ihrem Betrag, und die Zahlung erledigt sie in diesem Dienst. Welche Methoden es gibt, hängt von der Region ab, und ein Link kann nicht bestätigen, dass das Geld angekommen ist, deshalb markierst du selbst, wer bezahlt hat. Mehr im <a href=\"/alternatives/venmo-split/\" hreflang=\"en\">Vergleich von RightSplit und Venmo Split</a> (auf Englisch)."
   - q: "Gibt es RightSplit für iPad, Mac oder Apple Watch?"
@@ -258,7 +258,7 @@ faq:
   - q: "Hat RightSplit Widgets?"
     a: "Ja, 18 Stück, davon 12 kostenlos. Der Splitrechner ist eine Tastatur auf dem Home-Bildschirm, die aufteilt, ohne dass du die App öffnest; andere zeigen deine letzte Aufteilung, deine letzten Aufteilungen und deine Statistik. Mit Pro+ zeigen „Ausgleichen“ und „Ausstehend von“, wer dir noch Geld schuldet, und du markierst direkt im Widget, wer bezahlt hat. Das Widget „Bezahl mich“ gehört zu Pro+ und bleibt aus, bis du „Im Widget zeigen“ einschaltest."
   - q: "Was unterscheidet RightSplit von Splitwise?"
-    a: "<a href=\"/alternatives/splitwise/\" hreflang=\"en\">Splitwise</a> (auf Englisch) ist für gemeinsame Gruppenkassen gemacht: für die WG, laufende Kosten auf einer Reise und Schulden, die sich über Monate ansammeln, und alle tragen ein und prüfen den Saldo mit dem eigenen Konto. RightSplit ist ein Rechner auf deinem Handy: Du scannst einen Kassenbon, teilst ihn auf und schickst die Beträge, ohne Konten anzulegen oder Freunde hinzuzufügen. Für eine Reise oder einen gemeinsamen Haushalt sammeln Bereiche in Pro+ Belege und Ausgaben, führen den Saldo jeder Person und rechnen die wenigsten Überweisungen zum Ausgleich aus. Bereiche liegen nur auf deinem Handy und werden nicht synchronisiert, der Rest der Gruppe sieht also, was du ihnen schickst, und keinen gemeinsamen Live-Saldo. Mehr im <a href=\"/alternatives/splitwise/\" hreflang=\"en\">ausführlichen Vergleich mit Splitwise</a> (auf Englisch) sowie in den Vergleichen mit <a href=\"/alternatives/tab/\" hreflang=\"en\">Tab</a>, <a href=\"/alternatives/tricount/\" hreflang=\"en\">Tricount</a>, <a href=\"/alternatives/settle-up/\" hreflang=\"en\">Settle Up</a> und <a href=\"/alternatives/venmo-split/\" hreflang=\"en\">Venmo Split</a> (alle auf Englisch)."
+    a: "<a href=\"/de/alternatives/splitwise/\">Splitwise</a> ist für gemeinsame Gruppenkassen gemacht: für die WG, laufende Kosten auf einer Reise und Schulden, die sich über Monate ansammeln, und alle tragen ein und prüfen den Saldo mit dem eigenen Konto. RightSplit ist ein Rechner auf deinem Handy: Du scannst einen Kassenbon, teilst ihn auf und schickst die Beträge, ohne Konten anzulegen oder Freunde hinzuzufügen. Für eine Reise oder einen gemeinsamen Haushalt sammeln Bereiche in Pro+ Belege und Ausgaben, führen den Saldo jeder Person und rechnen die wenigsten Überweisungen zum Ausgleich aus. Bereiche liegen nur auf deinem Handy und werden nicht synchronisiert, der Rest der Gruppe sieht also, was du ihnen schickst, und keinen gemeinsamen Live-Saldo. Mehr im <a href=\"/de/alternatives/splitwise/\">ausführlichen Vergleich mit Splitwise</a> und im <a href=\"/de/alternatives/tricount/\">Vergleich mit Tricount</a> sowie in den Vergleichen mit <a href=\"/alternatives/tab/\" hreflang=\"en\">Tab</a>, <a href=\"/alternatives/settle-up/\" hreflang=\"en\">Settle Up</a> und <a href=\"/alternatives/venmo-split/\" hreflang=\"en\">Venmo Split</a> (alle drei auf Englisch)."
   - q: "Gibt es RightSplit auf Deutsch?"
     a: "Ja. Die App ist auf Deutsch, Widgets eingeschlossen. Im deutschen App Store heißt sie „RightSplit: Beleg Teilen“."
 

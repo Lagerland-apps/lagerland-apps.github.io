@@ -1,0 +1,152 @@
+---
+layout: default
+ref: /for/shift-workers/
+permalink: /de/for/shift-workers/
+translated_from: 2026-10-29
+title: "Apps für Schichtarbeit und Schlaf"
+quick_answer: "Für Schichtarbeit und Schlaf auf dem iPhone fängst du am besten mit AfterShift an. Die App misst deinen Schlaf vom Ende einer Schicht bis zum Beginn der nächsten, Nickerchen eingeschlossen, füllt deinen Dienstplan aus einem wiederkehrenden Schichtrhythmus 8 Wochen im Voraus und stimmt Koffein-Stopp und Nickerchen-Erinnerungen auf deine nächste Schicht ab. Dazu kommen Observa für einen täglichen Bereitschaftswert aus Schlaf, HRV und Ruheherzfrequenz in Apple Health, Taskful Day als Tagesplaner, der Unerledigtes weiterträgt, und AllPaid für Zahlungserinnerungen ohne Bank-Login. Keine der vier Apps verlangt ein Konto, und keine schickt deine Daten an Lagerland Apps."
+seo:
+  title: "Schichtarbeit und Schlaf: iPhone-Apps für Schichtarbeiter"
+  description: "iPhone-Apps für Pflege, Rettungsdienst und alle mit Nacht- oder Wechselschicht: Schlaf von Schicht zu Schicht, täglicher Bereitschaftswert, kein Konto."
+  keywords:
+    - schichtarbeit schlaf
+    - schichtarbeit schlaf tipps
+    - nachtschicht schlafen
+    - schichtarbeit app
+    - schlaf app schichtarbeit
+    - nachtschicht erholung app
+    - apps für pflegekräfte
+    - schichtarbeit apple health
+last_updated: 2026-10-29
+---
+{%- include t.html -%}
+{%- assign shift_apps_slugs = "aftershift,observa,taskful-day,allpaid" | split: "," -%}
+{%- assign shift_apps = '' | split: '' -%}
+{%- for slug in shift_apps_slugs -%}
+  {%- assign match = site.apps | where: "slug", slug | first -%}
+  {%- if match and match.status == "live" -%}{%- assign shift_apps = shift_apps | push: match -%}{%- endif -%}
+{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/de/for/shift-workers/#webpage",
+  "url": "{{ site.url }}/de/for/shift-workers/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/de/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "de",
+  "audience": {
+    "@type": "PeopleAudience",
+    "audienceType": "Schichtarbeiter, Pflegekräfte, Rettungsdienst, Feuerwehr und alle im Wechselschichtdienst"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/de/" },
+      { "@type": "ListItem", "position": 2, "name": "Für Schichtarbeiter", "item": "{{ site.url }}/de/for/shift-workers/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "de",
+  "mainEntity": [
+    { "@type": "Question", "name": "Welche Schlaf-App eignet sich für Schichtarbeit auf dem iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "AfterShift haben wir genau dafür gemacht. Die meisten Schlaftracker zählen deinen Tag von Mitternacht bis Mitternacht und teilen den Schlaf nach einer Nachtschicht damit in zwei Hälften. AfterShift misst den Schlaf vom Ende einer Schicht bis zum Beginn der nächsten, rechnet Nickerchen in dieses Fenster ein und stimmt Koffein-Stopp und Nickerchen-Erinnerungen auf deine nächste Schicht ab. Dienstplan, Schlafimport und Erinnerungen sind kostenlos; Erholungszustand, Schlafbewertung, Schichterholungswert und Trends gehören zu AfterShift Premium." } },
+    { "@type": "Question", "name": "Wie behalte ich in der Nachtschicht in der Pflege meine Erholung im Blick?", "acceptedAnswer": { "@type": "Answer", "text": "Führ deinen Dienstplan in AfterShift und lass deinen Schlaf samt Nickerchen aus Apple Health importieren. Koffein und zusätzliche Nickerchen trägst du dort ebenfalls ein. Willst du jeden Tag wissen, wie es deinem Körper geht, nimm Observa dazu: Die App berechnet die Bereitschaft aus Schlaf, HRV (SDNN), Ruheherzfrequenz und Trainingsbelastung, gemessen an deiner eigenen Basislinie, und „Warum dieser Wert?“ nennt, was den Wert bewegt hat. Dafür brauchst du eine Apple Watch oder eine Schlaf-App, die deinen Schlaf in Apple Health speichert." } },
+    { "@type": "Question", "name": "Sind diese Apps kostenlos?", "acceptedAnswer": { "@type": "Answer", "text": "Alle vier kannst du kostenlos laden, und jede hat eine kostenlose Version, die du dauerhaft nutzen kannst. Bei AfterShift sind Dienstplan, Schlafimport und die auf deine Schichten abgestimmten Erinnerungen kostenlos, Premium ergänzt die Erholungswerte und Trends. Bei Observa sind Bereitschaftswert, Schlafwert und Stresseinschätzung jeden Tag kostenlos, Pro ergänzt Langzeittrends, das Funktionelle Alter, den EKG-Verlauf und die Trainingsanalyse. Taskful Day ist für deine ersten 50 Aufgaben kostenlos, AllPaid für bis zu 3 Rechnungen. Keine der vier Apps verlangt ein Konto." } },
+    { "@type": "Question", "name": "Funktionieren die Apps auch, wenn sich mein Schichtmodell ändert?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. In AfterShift wählst du einen von sieben vorgegebenen Schichtrhythmen, etwa 4 Dienst / 4 frei oder Panama (2-2-3), oder legst einen eigenen Zyklus von bis zu 28 Tagen an, und die App füllt deinen Dienstplan 8 Wochen im Voraus. Schichtarten und freie Tage benennst du selbst, sodass lange Tagdienste, Nachtdienste und Bereitschaften alle hineinpassen. Ändert sich der Plan, hältst du eine Schicht gedrückt, um sie zu verlängern, zu verschieben oder zu tauschen. Taskful Day plant immer einen Tag, und was du nicht geschafft hast, landet beim nächsten Öffnen auf dem heutigen Tag." } },
+    { "@type": "Question", "name": "Arbeiten die Apps mit der Apple Watch zusammen?", "acceptedAnswer": { "@type": "Answer", "text": "Observa und AfterShift lesen beide aus Apple Health. Was deine Apple Watch dort speichert, kommt also ohne extra Kopplung bei ihnen an. AfterShift liest deinen Schlaf. Observa liest Schlaf, Herzfrequenz, HRV und Trainings und hat außerdem eine eigene Apple-Watch-App mit Bereitschaft und Trainingsempfehlung. Auch Taskful Day hat eine Apple-Watch-App, die mit der iPhone-App zusammenarbeitet. AfterShift und AllPaid sind iPhone-Apps." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Für Pflege · Rettungsdienst · Feuerwehr · Wechselschicht</p>
+    <h1 class="h1">Schichtarbeit und Schlaf:<br><span class="gradient-text">die iPhone-Apps für deinen Dienstplan.</span></h1>
+    <p class="lead">
+      Die meisten Schlaf-Apps messen dich an einem Arbeitstag von 9 bis 17 Uhr. Arbeitest du im Wechsel, in der Nacht oder schläfst du in mehreren Abschnitten, zählen sie deinen Schlaf im falschen Zeitfenster und setzen dir Ziele, die nicht zu deiner Woche passen. AfterShift geht stattdessen von deinem Dienstplan aus, und drei weitere Apps ergänzen es.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">Die Apps ansehen</a>
+      <a class="btn btn-secondary" href="#faq">Häufige Fragen</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Was passt an den meisten Schlaf-Apps für Schichtarbeiter nicht?</h2>
+  <p class="lead">Diese Apps gehen davon aus, dass du einmal am Tag schläfst, nachts und am Stück, und sie zählen von Mitternacht bis Mitternacht. Du machst aber vor der Nachtschicht ein Nickerchen, schläfst danach in zwei Abschnitten, und dein „Tag“ beginnt, wann immer deine letzte Schicht endete. Ein Tracker für Bürozeiten verteilt diesen Schlaf auf zwei Kalendertage, und aus einem guten Schlaf werden zwei kurze Nächte.</p>
+  <p class="lead">AfterShift misst stattdessen das Fenster zwischen deinen Schichten. Die anderen drei Apps kümmern sich um das, was liegen bleibt, wenn sich deine Arbeitszeiten ständig verschieben: deine Erholung einschätzen, den Tag planen, an dem du wach bist, und an die Rechnungen denken.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Die Apps</p>
+    <h2 class="h2">Vier Apps ohne Tracking, die zusammenarbeiten</h2>
+    <p class="lead">Du kannst sie zusammen oder einzeln nutzen. Alle vier stammen von Lagerland Apps, einem datenschutzfreundlichen Ein-Personen-Studio aus Finnland. Keine verlangt, dass du ein Konto anlegst, und keine schickt deine Daten an uns.</p>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in shift_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Wie arbeiten die Apps bei Schichtarbeit zusammen?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">1. AfterShift: der Dienstplan</div>
+      <div class="card-text">Du legst deinen Schichtrhythmus einmal fest, und AfterShift füllt deinen Dienstplan 8 Wochen im Voraus. Du legst so viele Schichtarten und freie Tage an, wie es an deinem Arbeitsplatz gibt, auch lange Tagdienste und Nachtdienste. Der Schlaf kommt aus Apple Health, Nickerchen werden als Nickerchen markiert, und die Erinnerungen für Entspannung, Koffein-Stopp und Nickerchen richten sich nach deiner nächsten Schicht. Premium ergänzt den Erholungszustand für deine nächste Schicht, die Schlafbewertung und den Schichterholungswert.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">2. Observa: die Auswertung</div>
+      <div class="card-text">Observa liest Schlaf, HRV (SDNN), Ruheherzfrequenz und Trainings, die deine Apple Watch in Apple Health speichert, und macht daraus einen täglichen Bereitschaftswert, einen Schlafwert und eine Stresseinschätzung, jeweils gemessen an deiner eigenen Basislinie. Tipp auf „Warum dieser Wert?“, um zu sehen, was ihn bewegt hat. Die täglichen Werte sind kostenlos.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">3. Taskful Day: die Tagesplanung</div>
+      <div class="card-text">Taskful Day plant immer einen Tag und schreibt dir nicht vor, wann dieser Tag beginnt. Aufgaben, die du vor einer Reihe von Nachtdiensten nicht mehr geschafft hast, landen beim Öffnen der App auf dem heutigen Tag. So wird die Liste nie zu einem roten Berg überfälliger Aufgaben. Eine Aufgabe legst du an, indem du einen Satz tippst, sie einsprichst oder Siri fragst.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">4. AllPaid: die Rechnungen</div>
+      <div class="card-text">Wenn sich dein Schlaf jede Woche verschiebt, gehen Fälligkeitstermine leicht unter. Du trägst Miete, Nebenkosten und Abos einmal ein, und AllPaid erinnert dich vor jedem Fälligkeitstag und schiebt eine Rechnung auf ihren nächsten Termin, sobald du sie als bezahlt markierst. Nach deinem Bank-Login fragt die App nie, und bis zu 3 Rechnungen sind kostenlos.</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center">
+    <p class="overline">Fragen</p>
+    <h2 class="h2">Häufige Fragen</h2>
+  </div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Welche Schlaf-App eignet sich für Schichtarbeit auf dem iPhone?</summary><div class="faq-a">AfterShift haben wir genau dafür gemacht. Die meisten Schlaftracker zählen deinen Tag von Mitternacht bis Mitternacht und teilen den Schlaf nach einer Nachtschicht damit in zwei Hälften. AfterShift misst den Schlaf vom Ende einer Schicht bis zum Beginn der nächsten, rechnet Nickerchen in dieses Fenster ein und stimmt Koffein-Stopp und Nickerchen-Erinnerungen auf deine nächste Schicht ab. Dienstplan, Schlafimport und Erinnerungen sind kostenlos; Erholungszustand, Schlafbewertung, Schichterholungswert und Trends gehören zu AfterShift Premium.</div></details>
+    <details class="faq-item"><summary>Wie behalte ich in der Nachtschicht in der Pflege meine Erholung im Blick?</summary><div class="faq-a">Führ deinen Dienstplan in AfterShift und lass deinen Schlaf samt Nickerchen aus Apple Health importieren. Koffein und zusätzliche Nickerchen trägst du dort ebenfalls ein. Willst du jeden Tag wissen, wie es deinem Körper geht, nimm Observa dazu: Die App berechnet die Bereitschaft aus Schlaf, HRV (SDNN), Ruheherzfrequenz und Trainingsbelastung, gemessen an deiner eigenen Basislinie, und „Warum dieser Wert?“ nennt, was den Wert bewegt hat. Dafür brauchst du eine Apple Watch oder eine Schlaf-App, die deinen Schlaf in Apple Health speichert.</div></details>
+    <details class="faq-item"><summary>Sind diese Apps kostenlos?</summary><div class="faq-a">Alle vier kannst du kostenlos laden, und jede hat eine kostenlose Version, die du dauerhaft nutzen kannst. Bei AfterShift sind Dienstplan, Schlafimport und die auf deine Schichten abgestimmten Erinnerungen kostenlos, Premium ergänzt die Erholungswerte und Trends. Bei Observa sind Bereitschaftswert, Schlafwert und Stresseinschätzung jeden Tag kostenlos, Pro ergänzt Langzeittrends, das Funktionelle Alter, den EKG-Verlauf und die Trainingsanalyse. Taskful Day ist für deine ersten 50 Aufgaben kostenlos, AllPaid für bis zu 3 Rechnungen. Keine der vier Apps verlangt ein Konto.</div></details>
+    <details class="faq-item"><summary>Funktionieren die Apps auch, wenn sich mein Schichtmodell ändert?</summary><div class="faq-a">Ja. In AfterShift wählst du einen von sieben vorgegebenen Schichtrhythmen, etwa 4 Dienst / 4 frei oder Panama (2-2-3), oder legst einen eigenen Zyklus von bis zu 28 Tagen an, und die App füllt deinen Dienstplan 8 Wochen im Voraus. Schichtarten und freie Tage benennst du selbst, sodass lange Tagdienste, Nachtdienste und Bereitschaften alle hineinpassen. Ändert sich der Plan, hältst du eine Schicht gedrückt, um sie zu verlängern, zu verschieben oder zu tauschen. Taskful Day plant immer einen Tag, und was du nicht geschafft hast, landet beim nächsten Öffnen auf dem heutigen Tag.</div></details>
+    <details class="faq-item"><summary>Arbeiten die Apps mit der Apple Watch zusammen?</summary><div class="faq-a">Observa und AfterShift lesen beide aus Apple Health. Was deine Apple Watch dort speichert, kommt also ohne extra Kopplung bei ihnen an. AfterShift liest deinen Schlaf. Observa liest Schlaf, Herzfrequenz, HRV und Trainings und hat außerdem eine eigene Apple-Watch-App mit Bereitschaft und Trainingsempfehlung. Auch Taskful Day hat eine Apple-Watch-App, die mit der iPhone-App zusammenarbeitet. AfterShift und AllPaid sind iPhone-Apps.</div></details>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Mehr zum Schlafen nach der Nachtschicht</h2>
+  <p class="lead">Wie du nach einem Nachtdienst zur Ruhe kommst, steht in unserem Journal-Artikel <a href="{% include l.html url="/journal/how-to-sleep-after-a-night-shift/" %}"{% if l_en %} hreflang="en"{% endif %}>Schlafen nach der Nachtschicht{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Bereit?</p>
+  <h2 class="h2">Fang mit AfterShift an</h2>
+  <p class="lead">Gib deinen Schichtrhythmus einmal ein, und AfterShift füllt die nächsten 8 Wochen. Die anderen Apps nimmst du dazu, wenn du sie brauchst.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/aftershift/" %}"{% if l_en %} hreflang="en"{% endif %}>Mehr über AfterShift{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Alle Apps ansehen{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

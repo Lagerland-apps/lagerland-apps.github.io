@@ -1,0 +1,146 @@
+---
+layout: default
+ref: /alternatives/
+permalink: /de/alternatives/
+translated_from: 2026-10-29
+title: "Alternativen"
+quick_answer: "Die Vergleichsseiten stellen eine App von Lagerland Apps neben eine bekannte App, von der viele umsteigen, erklären, was sich wirklich unterscheidet, und sagen, wem welche App passt, auch wenn die bekannte App die bessere Wahl ist. Auf Deutsch gibt es bisher Vergleiche mit Splitwise und Tricount (RightSplit), Strong (GymLogger X), Hevy (LiftLog), Opal und one sec (EarnLock) sowie Oura und Whoop (Observa). Preise der anderen Apps nennen wir nur, wenn wir sie für Deutschland geprüft haben, und dann mit Datum."
+seo:
+  title: "Alternativen zu Splitwise, Opal, Strong, Oura und mehr"
+  description: "Ehrliche Vergleiche: RightSplit, GymLogger X, LiftLog, EarnLock und Observa neben Splitwise, Tricount, Strong, Hevy, Opal, one sec, Oura und Whoop."
+  keywords:
+    - splitwise alternative
+    - tricount alternative
+    - strong app alternative
+    - hevy alternative
+    - opal app alternative
+    - alternative zu one sec
+    - oura ring alternative
+    - whoop alternative apple watch
+last_updated: 2026-10-29
+---
+{%- include t.html -%}
+{%- assign de_alt_count = site.pages | where: "lang", "de" | where_exp: "p", "p.url contains '/de/alternatives/'" | size | minus: 1 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/de/alternatives/#webpage",
+  "url": "{{ site.url }}/de/alternatives/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "de",
+  "isPartOf": { "@id": "{{ site.url }}/de/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/de/" },
+      { "@type": "ListItem", "position": 2, "name": "Alternativen", "item": "{{ site.url }}/de/alternatives/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Vergleiche auf Deutsch",
+    "numberOfItems": {{ de_alt_count }},
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "url": "{{ site.url }}/de/alternatives/oura/",               "name": "Oura-Ring-Alternative: Observa" },
+      { "@type": "ListItem", "position": 2, "url": "{{ site.url }}/de/alternatives/whoop/",              "name": "Whoop-Alternative: Observa" },
+      { "@type": "ListItem", "position": 3, "url": "{{ site.url }}/de/alternatives/strong-workout-app/", "name": "Strong-App-Alternative: GymLogger X" },
+      { "@type": "ListItem", "position": 4, "url": "{{ site.url }}/de/alternatives/hevy/",               "name": "Hevy-Alternative: LiftLog" },
+      { "@type": "ListItem", "position": 5, "url": "{{ site.url }}/de/alternatives/opal/",               "name": "Opal-Alternative: EarnLock" },
+      { "@type": "ListItem", "position": 6, "url": "{{ site.url }}/de/alternatives/one-sec/",            "name": "Alternative zu one sec: EarnLock" },
+      { "@type": "ListItem", "position": 7, "url": "{{ site.url }}/de/alternatives/splitwise/",          "name": "Splitwise-Alternative: RightSplit" },
+      { "@type": "ListItem", "position": 8, "url": "{{ site.url }}/de/alternatives/tricount/",           "name": "Tricount-Alternative: RightSplit" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Ehrliche Vergleiche · {{ de_alt_count }} Seiten auf Deutsch</p>
+    <h1 class="h1">Alternativen zu<br><span class="gradient-text">bekannten Apps.</span></h1>
+    <p class="lead">Faire Vergleiche zwischen Apps von Lagerland Apps und bekannten Apps, von denen viele umsteigen. Jede Seite erklärt, was sich wirklich unterscheidet, und sagt dir, wenn du bei deiner bisherigen App besser aufgehoben bist.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Nach Kategorie</p>
+    <h2 class="h2">Alle {{ de_alt_count }} Vergleiche auf Deutsch</h2>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Schlaf, HRV und Erholung</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/de/alternatives/oura/">
+        <span class="pill">Gesundheit</span>
+        <h3 class="card-compared-title">Observa <span class="card-compared-vs">{{ t.alt_vs }}</span> Oura Ring</h3>
+        <p class="card-text">Schlaf und Erholung aus Apple Health ausgewertet, ohne einen Ring zu kaufen. Die täglichen Werte sind kostenlos, und die Auswertung läuft auf deinem Gerät.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/whoop/">
+        <span class="pill">Gesundheit</span>
+        <h3 class="card-compared-title">Observa <span class="card-compared-vs">{{ t.alt_vs }}</span> Whoop</h3>
+        <p class="card-text">Jeden Morgen ein Bereitschaftswert aus der Apple Watch, die du schon trägst, ohne zweites Band und ohne Mitgliedschaft. Die täglichen Werte sind kostenlos.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Krafttraining</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/de/alternatives/strong-workout-app/">
+        <span class="pill">Fitness</span>
+        <h3 class="card-compared-title">GymLogger X <span class="card-compared-vs">{{ t.alt_vs }}</span> Strong</h3>
+        <p class="card-text">Ein schnelles Trainingstagebuch mit kostenloser App für die Apple Watch, ohne Konto. Pro gibt es als Abo oder als Einmalkauf.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/hevy/">
+        <span class="pill">Fitness</span>
+        <h3 class="card-compared-title">LiftLog <span class="card-compared-vs">{{ t.alt_vs }}</span> Hevy</h3>
+        <p class="card-text">Ein Trainingstagebuch für dich allein, ohne Konto und ohne Social Feed, mit 40 fertigen Programmen, die dir das nächste Gewicht vorschlagen können. 7 Tage kostenlos, danach ein Einmalkauf von {P_IAP:Minimum@liftlog} bis {P_IAP:Patron@liftlog}, ohne Abo.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Bildschirmzeit</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/de/alternatives/opal/">
+        <span class="pill">Bildschirmzeit</span>
+        <h3 class="card-compared-title">EarnLock <span class="card-compared-vs">{{ t.alt_vs }}</span> Opal</h3>
+        <p class="card-text">Sperrt ablenkende Apps, bis du dein tägliches Bewegungsziel erreichst: Schritte, mit Premium auch Bewegungsminuten oder aktive Kalorien. Eine App zu sperren ist dauerhaft kostenlos, und Premium gibt es auch für {P_LIFETIME@earnlock} einmalig.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/one-sec/">
+        <span class="pill">Bildschirmzeit</span>
+        <h3 class="card-compared-title">EarnLock <span class="card-compared-vs">{{ t.alt_vs }}</span> one sec</h3>
+        <p class="card-text">one sec schiebt eine Atempause ein, die du wegtippen kannst. EarnLock hält die Apps gesperrt, bis du dich wirklich bewegt hast, und für echten Bedarf gibt es einmal am Tag eine Notentsperrung hinter einer Rechenaufgabe.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Rechnungen teilen</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/de/alternatives/splitwise/">
+        <span class="pill">Finanzen</span>
+        <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Splitwise</h3>
+        <p class="card-text">Kassenbon scannen, antippen, wer was hatte, und jeder Person ihren Betrag mit Bezahllink schicken. Ohne Konto; die Aufteilung nach Artikeln gehört zu Pro+.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/tricount/">
+        <span class="pill">Finanzen</span>
+        <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Tricount</h3>
+        <p class="card-text">Tricount führt die Kasse einer ganzen Reise, RightSplit rechnet die eine Rechnung ab, die vor dir liegt. Scannen, aufteilen und verschicken, ohne eine Gruppe anzulegen.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+</section>

@@ -10,7 +10,8 @@ reviewing any German page. Every decision a translator would otherwise make diff
 | Setup (config default, locales.yml block, `_data/i18n/de.yml`, sitemap and feed stubs) | done 2026-10-26 |
 | Keyword research (Tier 1) | done 2026-10-26 without Search Console country data (see Keywords) |
 | Tier 1 pages | done 2026-10-27: home, apps hub, 20 app pages, 20 support pages, 20 privacy policies, about, support hub, transparency, /de/llms.txt, /de/llms-full.txt, OG cards |
-| Live | yes, `live: true` since 2026-10-27 (Tier 1). Tiers 2 to 4 not started |
+| Live | yes, `live: true` since 2026-10-27 (Tier 1) |
+| Tiers 2 to 4, batch 1 | written and integrated 2026-10-29, no native review yet: hubs /de/guides/, /de/for/, /de/alternatives/, /de/journal/; guides best-chess-apps-iphone, workout-app-without-subscription; for/shift-workers; comparisons splitwise, tricount, strong-workout-app, hevy, one-sec, opal, oura, whoop; journal how-to-sleep-after-a-night-shift, how-many-steps-a-day-to-aim-for, how-long-to-rest-between-sets, find-every-recurring-charge. Research: ~/Downloads/githubcode/de-tier2-4-research-2026-10-29.md (next batch listed there, section 4); writer notes de-batch1-DG1 to DG4-2026-10-29.md |
 | Native review | none yet (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 14 s with the setup in place (9.9 s before Phase 0) |
 
@@ -140,6 +141,28 @@ data filtered to Germany is still missing: Claude in Chrome was not connected, a
 | WanderWiki (swipe Wikipedia) | `wikipedia zufälliger artikel` | `wikipedia app`, `wikipedia app offline`, `wissen app` |
 | Xiangqiful (xiangqi) | `chinesisches schach` | `xiangqi app`, `chinesisches schach app`, `chinesisches schach regeln` |
 
+Tiers 2 to 4, batch 1 (2026-10-29, Google suggest de/DE and the German storefront; details in
+~/Downloads/githubcode/de-tier2-4-research-2026-10-29.md). Hubs have no generic German query of their own and carry
+their children's queries.
+
+| Page | Primary query | Secondary queries |
+|---|---|---|
+| /de/guides/best-chess-apps-iphone/ | `beste schach app iphone` | `beste schach app für anfänger`, `beste schach app zum lernen`, `schach app ohne werbung`, `chess.com oder lichess` |
+| /de/guides/workout-app-without-subscription/ | `fitness app ohne abo` | `trainingstagebuch app ohne abo`, `gym app ohne abo`, `workout app ohne abo` |
+| /de/for/shift-workers/ | `schichtarbeit schlaf` | `nachtschicht schlafen`, `schichtarbeit app`, `apps für pflegekräfte` |
+| /de/alternatives/splitwise/ | `splitwise alternative` | `splitwise alternative kostenlos`, `splitwise alternative ohne anmeldung`, `rechnung teilen app` |
+| /de/alternatives/tricount/ | `tricount alternative` | `rechnung teilen app ohne anmeldung`, `kosten teilen app` |
+| /de/alternatives/strong-workout-app/ | `strong app alternative` | `trainingstagebuch app`, `trainingstagebuch apple watch` |
+| /de/alternatives/hevy/ | `hevy alternative` | `hevy alternative ohne abo`, `trainingstagebuch app ohne abo`, `gym app ohne abo` |
+| /de/alternatives/one-sec/ | `one sec kostenlose alternative` (written „Alternative zu one sec“) | `one sec app kosten`, `app wie one sec` |
+| /de/alternatives/opal/ | `opal app alternative` | `opal app kosten` |
+| /de/alternatives/oura/ | `oura ring alternative` | `oura alternative apple watch`, „ohne Ring“ |
+| /de/alternatives/whoop/ | `whoop alternative apple watch` | `whoop alternative ohne band` |
+| /de/journal/how-to-sleep-after-a-night-shift/ | `schlafen nach nachtschicht` | `nach nachtschicht nicht schlafen können`, `vor oder nach nachtschicht schlafen` |
+| /de/journal/how-many-steps-a-day-to-aim-for/ | `wie viele schritte am tag` | `wie viele schritte am tag sind gesund`, `10000 schritte mythos`, `schritte pro tag nach alter` |
+| /de/journal/how-long-to-rest-between-sets/ | `satzpause wie lange` | `pause zwischen sätzen muskelaufbau`, `optimale pausenzeit krafttraining` |
+| /de/journal/find-every-recurring-charge/ | `abos finden und kündigen` | `versteckte abos finden`, `laufende abos herausfinden` |
+
 Wording rules from the research: privacy is said as „ohne Tracking“, „ohne Werbung“, „ohne Anmeldung“ (the
 English "privacy" is not searched); „Trainingstagebuch“ beats "Workout Tracker"; for AllPaid lead with
 „Fixkosten“ and „Zahlungserinnerung“ (plain „Rechnung“ pulls in Apple invoice phishing); for Tare lead with
@@ -265,6 +288,13 @@ mixed. Added for this site: „Erlebnis“ for "experience", „Lösung“ for a
   for lifetime plans.
 - Trial lengths are never typed: `{TRIAL}` (prints „7 Tage gratis testen“, use it alone or in brackets) or
   „kostenlose Testphase“ without a length. Plan cards print the trial label themselves.
+
+Tiers 2 to 4, batch 1 (2026-10-29): 15 pages plus 4 hubs, written by writer agents (self copy-edit, writer back-translation
+of hero and quick_answer only), integrated the same day (hubs, llms.txt routing, inbound links, i18n map). No separate
+reviewer, no back-translation agent, no native review yet. Market changes against English and open questions are in
+the writer notes (de-batch1-DG1 to DG4-2026-10-29.md): Chessis dropped (not sold in DE); Strong and Hevy sell a
+one-time Pro in the German store (English pages say subscription only); Tricount shows no IAPs in DE; Rocket Money
+not sold in DE (Finanzguru is the local bank-linked example, local-only comparison planned).
 
 ## Apps still on English screenshots
 
