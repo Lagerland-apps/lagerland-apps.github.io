@@ -3,14 +3,14 @@ layout: app
 slug: appmeta-pulse
 ref: /apps/appmeta-pulse/
 permalink: /de/apps/appmeta-pulse/
-translated_from: 2026-10-26
-og_tagline: "Dein App-Store-Connect-Dashboard."
-tagline: "Das App-Store-Connect-Dashboard für Indie-iOS-Entwickler, gebaut fürs Monitoring."
-quick_answer: "AppMeta Pulse ist ein App-Store-Connect-Dashboard fürs iPhone, gebaut fürs Monitoring. Indie-iOS-Entwickler sehen damit in Sekunden Erlös oder Verkäufe, MRR, aktive Abonnements, Probeabo-Konversionen und Downloads ihres ganzen App-Portfolios und antworten auf Bewertungen im App Store, ohne einen Browser zu öffnen. Schalter für Builds, Preise oder Metadaten gibt es nicht. Die App bringt 12 Widgets für Home-Bildschirm und Sperrbildschirm mit und arbeitet mit Apples offizieller App Store Connect API und einem Admin-Schlüssel, den du selbst anlegst. Der App Store bietet sie auch für Macs mit Apple Chip und für die Apple Vision Pro an, wo sie als iPhone-App läuft. Der Download ist kostenlos und öffnet eine Demo mit Beispieldaten; für deine eigenen Zahlen zahlst du {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig; das Abo beginnt mit einer kostenlosen Testphase. Keine Werbung, kein Tracking, keine Analyse-SDKs."
+translated_from: 2026-10-29
+og_tagline: "Dein App-Store-Geschäft auf dem iPhone."
+tagline: "Deine App-Store-Verkäufe, Abos und Bewertungen auf dem iPhone, mit dauerhaft gespeicherter Historie."
+quick_answer: "AppMeta Pulse ist eine iPhone-App für Indie-Entwickler, die im App Store verkaufen: Sie zeigt Erlös, MRR, Abonnenten, Probeabos und Bewertungen all deiner Apps aus App Store Connect und speichert jeden abgerufenen Tag auf deinem iPhone, auch über Apples Zeitfenster von etwa einem Jahr hinaus. Auf Bewertungen antwortest du einzeln oder auf bis zu 25 auf einmal, mit Antwortentwürfen, die Apple Intelligence auf dem Gerät schreibt (iOS 26 auf einem unterstützten iPhone, Entwürfe auf Englisch), und den Monat verfolgst du mit 12 Widgets für Home-Bildschirm und Sperrbildschirm. Du brauchst einen API-Schlüssel für App Store Connect mit der Rolle „Admin“, der im Schlüsselbund deines iPhone bleibt, und die App enthält weder Werbung noch Tracking oder Analysetools von Drittanbietern. Der kostenlose Download öffnet eine Demo mit Beispieldaten; für deine eigenen Zahlen zahlst du {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}, und beide Abos kannst du vorher {TRIAL}."
 
 seo:
   title: "App-Store-Connect-Dashboard fürs iPhone | AppMeta Pulse"
-  description: "App-Store-Connect-Dashboard fürs iPhone: Erlös, MRR, Abos und Downloads aller deiner Apps in Sekunden. Ab {P_MONTHLY} im Monat, ohne Tracking."
+  description: "App-Store-Connect-Dashboard fürs iPhone: Erlös, MRR und Bewertungen aller Apps, Verkaufshistorie über Apples ein Jahr hinaus und 12 Widgets."
   keywords:
     - app store connect dashboard
     - app store connect app
@@ -18,63 +18,61 @@ seo:
     - app store connect apps
     - app store connect widget
     - app store umsatz iphone
+    - app store bewertungen beantworten
     - appstats alternative
 
 price_lead: "Kostenlos testen"
-price_tier: "Vollversion"
+price_tier: "Pro"
 
-plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Die Preise von AppStats stammen aus dem deutschen App Store, Stand 27. Oktober 2026. Erstattungen laufen über Apple, über den normalen Erstattungsweg im App Store. „Lebenslang“ ist ein Einmalkauf: Er verlängert sich nicht automatisch, und außer bei Apple selbst wird keine Karte hinterlegt. Den API-Schlüssel für App Store Connect (.p8) legst du selbst in App Store Connect unter „Users and Access“ → „Integrations“ mit der Rolle „Admin“ an, und er wird auf dem Gerät im Schlüsselbund gespeichert. Welche Endpunkte die App aufruft, steht auf der Methodik-Seite."
+plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, über den normalen Erstattungsweg im App Store. „Lebenslang“ ist ein Einmalkauf und verlängert sich nicht automatisch. Den API-Schlüssel für App Store Connect (.p8) legst du selbst in App Store Connect unter „Users and Access“, „Integrations“ mit der Rolle „Admin“ an, und er wird im Schlüsselbund dieses iPhone gespeichert. Welche Endpunkte die App aufruft, steht auf der Seite zum API-Zugriff."
 
 plans:
   - name: "Kostenloser Download"
     price: "{P_ZERO}"
-    summary: "Probier die ganze App im Demomodus mit Beispieldaten aus. Für deine eigenen Zahlen brauchst du ein Abo, das mit einer kostenlosen Testphase beginnt, oder „Lebenslang“."
+    summary: "Probier die App mit Beispieldaten aus, bevor du zahlst. Für deine eigenen Zahlen brauchst du Pro oder „Lebenslang“."
     features:
-      - "Demomodus mit Beispiel-Apps und Beispielzahlen, bis zu drei Tage lang"
-      - "Sobald du abonniert hast, verbindest du deinen eigenen API-Schlüssel für App Store Connect (Rolle „Admin“); er bleibt im Schlüsselbund dieses iPhone"
-      - "iPhone-App; der App Store bietet sie auch für Macs mit Apple Chip und für die Apple Vision Pro an"
-      - "Keine Analyse-SDKs und kein Tracking, wie das App-Datenschutz-Etikett im App Store zeigt"
-  - name: "Monatlich · Jährlich"
+      - "Demo mit fünf Beispiel-Apps und 455 Tagen Beispieldaten, an bis zu 3 Nutzungstagen"
+      - "Deinen eigenen API-Schlüssel für App Store Connect (Rolle „Admin“) verbindest du, sobald du abonniert oder „Lebenslang“ gekauft hast"
+      - "Nur fürs iPhone, ab iOS 17"
+  - name: "Pro"
     price: "{P_MONTHLY}/Monat · {P_YEARLY}/Jahr"
-    summary: "Deine eigenen Zahlen, monatlich oder jährlich abgerechnet. Mit kostenloser Testphase, jederzeit kündbar."
+    summary: "Alle Funktionen mit deinen eigenen Daten aus App Store Connect, monatlich oder jährlich abgerechnet. Beide Abos kannst du zuerst {TRIAL}, und sie sind jederzeit kündbar."
     features:
-      - "Erlös oder Verkäufe, Einheiten und neue Abos über dein ganzes Portfolio"
-      - "MRR, aktive Abonnements, Probeabos, Konversion von Probeabo zu Bezahlabo, Churn und Kündigungen"
-      - "Aufschlüsselung pro App und Vergleich mit dem vorherigen Zeitraum"
-      - "Top-Länder und -Regionen pro App aus den Daten von „Verkäufe und Trends“"
-      - "12 Widgets für Home-Bildschirm und Sperrbildschirm, dazu Antworten auf Bewertungen im App Store"
-      - "Jährlich ist etwa {SAVE_YEARLY} % günstiger als monatliche Abrechnung ({P_YEARLY} statt {P_MONTHLY_ANNUAL} im Jahr)"
+      - "Erlös oder Verkäufe, Einheiten, MRR, Abonnenten, Probeabos und Churn für jede App"
+      - "Verkaufshistorie auf deinem iPhone gespeichert, mit Vorjahresvergleich, sobald sie lang genug ist"
+      - "Bewertungen lesen, übersetzen und beantworten, bis zu 25 auf einmal, mit Antwortentwürfen auf dem Gerät"
+      - "12 Widgets für Home-Bildschirm und Sperrbildschirm"
+      - "Optionale iCloud-Synchronisierung zwischen deinen iPhones"
+      - "Jährlich sparst du etwa {SAVE_YEARLY} % gegenüber monatlicher Zahlung"
   - name: "Lebenslang"
     price: "{P_LIFETIME} einmalig"
-    summary: "Einmal zahlen, dauerhaft nutzen."
-    highlight_label: "Auf lange Sicht das beste Angebot"
+    summary: "Alle Pro-Funktionen für eine einzige Zahlung."
+    highlight_label: "Einmalkauf"
     features:
-      - "Alles aus Monatlich und Jährlich, dauerhaft freigeschaltet"
-      - "Eine Zahlung statt einer jährlichen Verlängerung"
-      - "{P_LIFETIME}, während der Einmalkauf bei AppStats 59,99 € kostet"
-      - "Künftige Funktionen ohne Aufpreis inklusive"
-      - "Kein Abo, keine automatische Verlängerung, und der Zugang läuft nicht ab"
+      - "Alles aus Pro, dauerhaft freigeschaltet"
+      - "Eine Zahlung, keine Verlängerung"
+      - "Auf einem anderen iPhone mit „Käufe wiederherstellen“ zurückholen"
 
 hero:
-  pre_headline: "Für Indie-iOS-Entwickler mit mehreren Apps im Store."
-  headline: "Das schnelle, ruhige App-Store-Connect-Dashboard fürs iPhone."
-  secondary: "Die App erfasst überhaupt keine Daten, so steht es in ihrem App-Datenschutz-Etikett im App Store. Sie kostet ein Drittel des Monatspreises von AppStats oder {P_LIFETIME} für dauerhaften Zugang."
-  subheadline: "Erlös, MRR, aktive Abonnements, Probeabo-Konversionen und Downloads deines ganzen Portfolios siehst du in Sekunden auf dem iPhone. Die App nutzt Apples offizielle App Store Connect API, braucht keinen Browser und hat keine Schalter für Builds, Preise oder Metadaten, die du aus Versehen drücken könntest."
+  pre_headline: "Für Indie-Entwickler, die Apps und Abos im App Store verkaufen"
+  headline: "Dein ganzes App-Store-Geschäft auf dem iPhone, dauerhaft gespeichert."
+  secondary: "App Store Connect liefert tägliche Verkaufsdaten für etwa ein Jahr. AppMeta Pulse speichert jeden abgerufenen Tag auf deinem iPhone, und mit wachsender Historie wird auch der Vorjahresvergleich vollständig."
+  subheadline: "Erlös, MRR, Abonnenten und Bewertungen für jede App, die du verkaufst, auf 12 Widgets für Home-Bildschirm und Sperrbildschirm. Bewertungen beantwortest du vom Handy aus, mit Antwortentwürfen, die Apple Intelligence auf dem Gerät schreibt."
   cta_label: "Kostenlos laden"
   alt: "AppMeta Pulse als App-Store-Connect-Dashboard auf dem iPhone mit Erlös, Einheiten, neuen Abos und monatlichem Abo-Umsatz der letzten sieben Tage über ein Portfolio aus mehreren Apps"
 
 who_for:
-  - "Du bist Indie-iOS-Entwickler oder ein kleines Studio mit mehreren Apps und willst den Umsatz des Tages auf einen Blick sehen."
-  - "Du hast es satt, dich im Browser bei App Store Connect anzumelden, nur um den Erlös von gestern zu prüfen."
-  - "Du willst ein Dashboard ohne Schalter für Preise, Builds oder Metadaten, damit du nie versehentlich einen Preis änderst, einen Build einreichst oder Metadaten kaputt machst."
-  - "Du willst MRR, den Zustand deiner Abos, Probeabo-Konversionen und Downloads auf einem Bildschirm."
-  - "Du willst nicht, dass deine Daten aus App Store Connect durch Analyse-SDKs von Drittanbietern oder Werbenetzwerke laufen."
+  - "Du verkaufst Apps oder Abos im App Store und schaust öfter auf deine Zahlen, als du App Store Connect öffnest."
+  - "Du willst eine Verkaufshistorie, die nicht nach Apples einem Jahr endet, und einen ehrlichen Vergleich mit dem Vorjahr."
+  - "Du beantwortest Bewertungen im App Store und machst das lieber vom Handy aus, gesammelt, wenn sich welche angestaut haben."
+  - "Du willst sehen, wie der Monat läuft, direkt auf dem Home-Bildschirm und ohne eine App zu öffnen."
+  - "Dein API-Schlüssel und deine Zahlen sollen nicht über den Server eines anderen laufen."
 
 who_not_for:
-  - "Du hast nur eine App im Store, und die Weboberfläche von App Store Connect reicht dir."
-  - "Du willst ein iPad-Layout; AppMeta Pulse ist eine iPhone-App."
-  - "Du musst Metadaten bearbeiten, Versionen zur Prüfung einreichen oder Preise ändern. Das kann unsere Schwester-App AppMeta."
-  - "Dein Team zahlt schon für eine gemeinsame Enterprise-Analyseplattform wie RevenueCat, Sensor Tower oder Data.ai."
+  - "Du willst bei jedem Verkauf sofort benachrichtigt werden; AppMeta Pulse verschickt keine Mitteilungen."
+  - "Du willst die App auf dem iPad oder Mac; AppMeta Pulse läuft nur auf dem iPhone."
+  - "Du kannst keinen Admin-Schlüssel anlegen; Schlüssel mit den Rollen „App Manager“ und „Developer“ können keine Verkaufsberichte lesen."
+  - "Du willst deinen Store-Eintrag, In-App-Käufe oder TestFlight bearbeiten. Das macht unsere Mac-App AppMeta."
 
 related_journal:
   anchor: "Erlös und Verkäufe im App Store: was jede Geldspalte in App Store Connect bedeutet"
@@ -87,28 +85,32 @@ alternatives_labels:
   - "RevenueCat"
 
 value_points:
-  - title: "Zahlen beim Öffnen"
-    description: "Erlös, Abos und Downloads des zuletzt gemeldeten Tages stehen auf dem Bildschirm, sobald die App startet. Du sparst dir App Store Connect im Browser, die verschachtelten Berichte und den Ladekreis bei „Verkäufe und Trends“."
-  - title: "Fürs Monitoring gebaut"
-    description: "AppMeta Pulse enthält keinen Code, der Preise ändert, Builds einreicht, Metadaten bearbeitet oder Einstellungen in deinem Account in App Store Connect verstellt. Schreibend greift die App nur zu, wenn du eine Antwort auf eine Bewertung abschickst und wenn sie die Anforderungen für Analytics-Berichte sendet, die Apple braucht, um die Daten zu den Abrufen (Impressionen) vorzubereiten."
-  - title: "Apples eigene Begriffe"
-    description: "Erlös (nach Apples Anteil von 15 bis 30 % und etwaigen Steuern), Verkäufe, Einheiten, aktive Abonnements, Probeabo-Konversionen und Kündigungen, beschriftet mit denselben Begriffen wie in App Store Connect."
-  - title: "Keine Datenerfassung"
-    description: "Die App schickt uns keine Analysedaten, kein Werbe-Tracking, keine Nutzungsdaten und keine Diagnosedaten, so steht es im App-Datenschutz-Etikett im App Store. Die Zugangsdaten liegen im Schlüsselbund des Systems, und die Abfragen gehen direkt an Apple."
+  - title: "Historie, die App Store Connect überdauert"
+    description: "Apple liefert tägliche Verkaufsdaten für etwa ein Jahr. AppMeta Pulse speichert jeden abgerufenen Tag auf deinem iPhone, bis du ihn löschst, dazu eine Originalkopie jedes Berichts, den Apple schickt. Sobald ein volles Jahr gespeichert ist, vergleicht „Trends“ dieses Jahr mit dem Vorjahr."
+  - title: "Bewertungen vom Handy aus beantworten"
+    description: "Die Bewertungen aller Apps in einer Liste, unbeantwortete mit wenigen Sternen zuerst. Fremdsprachige Bewertungen übersetzt du auf dem Gerät und antwortest dann einzeln oder auf bis zu 25 auf einmal. Unter iOS 26 mit Apple Intelligence auf einem unterstützten iPhone schreibt die App auf dem Gerät zwei englische Entwürfe, die du bearbeitest und abschickst."
+  - title: "12 Widgets, vier davon für den Monat"
+    description: "Erlös, Abos und Bewertungen auf dem Home-Bildschirm und dem Sperrbildschirm. „Tempo“, „Hauptbuch“, „Verlauf“ und „Bewegung nach App“ zeigen, wie die Woche oder der Monat läuft und welche App die Zahl bewegt hat."
+  - title: "Dein Schlüssel bleibt auf dem iPhone"
+    description: "Der .p8-Schlüssel liegt im Schlüsselbund dieses iPhone und wird nie synchronisiert, auch nicht mit eingeschalteter iCloud-Synchronisierung. Die Anfragen gehen von deinem iPhone an Apple. Einen Server von AppMeta Pulse dazwischen gibt es nicht."
 
 features:
-  - title: "Umsatz auf einen Blick"
-    description: "Erlös des letzten Tages (oder Verkäufe, wenn dir das lieber ist), Einheiten und neue Abos erscheinen, sobald du die App öffnest. Die Aufschlüsselung pro App zeigt, welche Apps tragen und welche Aufmerksamkeit brauchen. Jeder Betrag wird in die Anzeigewährung umgerechnet, die du wählst, mit den monatlichen Kursen der Europäischen Zentralbank."
-  - title: "Zustand deiner Abos"
-    description: "Monatlich wiederkehrender Umsatz (MRR), aktive Abonnements, laufende Probeabos, die Konversionsrate von Probeabo zu Bezahlabo, Churn und die letzten Kündigungen, ohne dass du dich durch die verschachtelten Abo-Berichte von App Store Connect klicken musst."
-  - title: "Trends vergleichen"
-    description: "Vergleiche die letzten 7, 30 oder 90 Tage, das laufende Jahr oder einen eigenen Zeitraum mit dem Zeitraum davor oder mit denselben Tagen im Vorjahr. So fällt ein Umsatzeinbruch früh auf, genauso wie Wachstum, das die Standardansichten von App Store Connect hinter Tabs verstecken."
-  - title: "Jede App im Portfolio"
-    description: "Ob du fünf Apps im Store hast oder fünfzehn: Du siehst App für App, was jede zu Erlös, Downloads und Abo-Kennzahlen beiträgt, über den ganzen Katalog in deinem Account in App Store Connect."
-  - title: "Verkäufe und Trends plus Abo-Berichte auf dem iPhone"
-    description: "Apple verteilt diese Kennzahlen in App Store Connect auf die Bereiche „Verkäufe und Trends“ und „Abonnements“. Pulse zeigt sie auf einem Bildschirm und aktualisiert sie, wann du willst."
-  - title: "Für den kurzen Blick gemacht"
-    description: "Ausgelegt auf zehn Sekunden beim Morgenkaffee oder einen Wochenrückblick auf die Trends, während du am Flughafen wartest, ohne einen Browser zu öffnen."
+  - title: "Dashboard"
+    description: "Erlös oder Verkäufe für den letzten Tag oder die letzten 7, 30, 60 oder 90 Tage, mit der Veränderung gegenüber dem Zeitraum davor. Daneben stehen Einheiten und neue Abos, darunter MRR, aktive Abonnements und aktive Probeabos. Eine Fußzeile zeigt, ob Verkäufe, Abos und Analytics aktuell sind."
+  - title: "Abos"
+    description: "Aktive Abonnenten, Probeabos, Churn und MRR, pro App oder über alle, mit der Tabelle „Nach Produkt“ und Diagrammen für 30, 60 oder 90 Tage. „Letzte Aktivität“ listet neue, umgewandelte und gekündigte Abos."
+  - title: "Trends und Vorjahresvergleich"
+    description: "Vergleiche 7, 30 oder 90 Tage, das laufende Jahr oder eine eigene Länge mit dem Vorzeitraum oder mit dem Vorjahr, für Verkäufe, Erlös, Einheiten, Abos, In-App-Käufe, MRR und Updates. „Nach Jahr“ zeigt die Downloads pro Jahr aus Apples Jahresberichten, „Nach Land oder Region“ die acht stärksten Länder einer App."
+  - title: "Alle Apps nebeneinander"
+    description: "Eine durchsuchbare Liste deiner Apps mit dem letzten Tag, den Einheiten, der Summe über 7 Tage und einer Mini-Kurve. Öffne eine App für ihr Diagramm im Vergleich zum Vorzeitraum, ihre fünf stärksten Länder und Regionen und ihre Bewertungen."
+  - title: "Funnel im App Store"
+    description: "Abrufe, Produktseitenaufrufe, Downloads und Konversionsrate, mit einem Diagramm zur gleitenden 14-Tage-Konversion. Apples Analytics-Daten kommen etwa zwei Tage nach dem Tag, den sie abdecken."
+  - title: "Bewertungen, Antworten und Vorlagen"
+    description: "Filtere Bewertungen nach App, Sternen, Stimmung oder Antwortstatus. Stimmung und wiederkehrende Begriffe ermittelt die App auf dem Gerät. Schreibe, bearbeite oder lösche deine öffentlichen Antworten, speichere Antwortvorlagen und beantworte bis zu 25 offene Bewertungen in einem Durchgang."
+  - title: "iCloud-Synchronisierung und ein zweites iPhone"
+    description: "Die optionale iCloud-Synchronisierung hält Historie, Bewertungen, Einstellungen und Vorlagen über deine private iCloud auf all deinen iPhones aktuell. Ein weiteres iPhone mit demselben Apple Account zeigt deine Zahlen, ohne dass der API-Schlüssel darauf gespeichert ist."
+  - title: "Deine Währung, deine Sprache"
+    description: "Beträge werden mit den monatlichen Durchschnittskursen der Europäischen Zentralbank in deine Währung umgerechnet und sind daher Schätzwerte. Wechsle zwischen mehreren Accounts in App Store Connect, exportiere Verkäufe als CSV und nutze die App neben Englisch in 17 weiteren Sprachen, darunter Deutsch."
 
 screenshot_captions:
   - alt: "AppMeta-Pulse-Dashboard auf dem iPhone mit Erlös und Abo-Status"
@@ -117,77 +119,89 @@ screenshot_captions:
   - alt: "App-Liste in AppMeta Pulse mit Erlös und 7-Tage-Trend für jede App"
   - alt: "Analytics in AppMeta Pulse mit dem Vergleich dieses Jahres mit dem Vorjahr"
   - alt: "Abo-Kennzahlen in AppMeta Pulse: MRR, Probeabos und Churn"
-  - alt: "App-Analytics in AppMeta Pulse mit Abrufen (Impressionen), Produktseitenaufrufen und Downloads"
+  - alt: "App-Analytics in AppMeta Pulse mit Abrufen, Produktseitenaufrufen und Downloads"
   - alt: "Funktionsübersicht von AppMeta Pulse für Indie-Entwickler: iCloud-Synchronisierung, mehrere Teams, Ziele und Kurzbefehle"
 
 privacy:
   data_collection: "keine"
   notes:
-    - "Keine Werbung, keine Analysetools oder SDKs von Drittanbietern"
-    - "Liest über Apples offizielle App Store Connect API; schreibend nur für Antworten auf Bewertungen, die du abschickst, und für Anforderungen von Analytics-Berichten"
-    - "API-Schlüssel (.p8) und Schlüssel-ID für App Store Connect liegen im Schlüsselbund des Systems"
-    - "Abfragen gehen direkt an die Server von Apple; keine Daten laufen über Server von Lagerland"
-    - "Keine Erfassung von Daten, Diagnosedaten oder Nutzungstelemetrie"
-    - "Mit eingeschalteter iCloud-Synchronisierung liegen deine Daten zusätzlich in deiner eigenen privaten iCloud-Datenbank, auf die wir keinen Zugriff haben; der .p8-Schlüssel wird nie synchronisiert"
+    - "Keine Werbung, kein Tracking und keine Analysetools oder SDKs von Drittanbietern"
+    - "Kein Server von AppMeta Pulse: Die Anfragen gehen von deinem iPhone an Apple, die Wechselkurse kommen von der Europäischen Zentralbank"
+    - "Der API-Schlüssel für App Store Connect (.p8) bleibt im Schlüsselbund dieses iPhone und wird nie synchronisiert"
+    - "Schreibend greift die App auf App Store Connect nur für Antworten auf Bewertungen zu, die du abschickst, und für Anforderungen von Analytics-Berichten"
+    - "Antwortentwürfe, Stimmungsanalyse und Übersetzung laufen auf dem Gerät"
+    - "Die iCloud-Synchronisierung ist optional und speichert deine Daten in deiner eigenen privaten iCloud-Datenbank"
 
 faq:
   - q: "Was ist AppMeta Pulse?"
-    a: "AppMeta Pulse ist ein schnelles App-Store-Connect-Dashboard fürs iPhone, gebaut fürs Monitoring. Der App Store bietet es auch für Macs mit Apple Chip und für die Apple Vision Pro an, wo es als iPhone-App läuft. Es zeigt Erlös oder Verkäufe, MRR, aktive Abonnements, Probeabo-Konversionen und Downloads für jede App in deinem Account in App Store Connect, und du kannst auf Bewertungen von Kunden antworten, ohne einen Browser zu öffnen. Schalter für Builds, Preise oder Metadaten hat es nicht."
+    a: "AppMeta Pulse ist eine iPhone-App, die deine Verkäufe, Abos und Bewertungen aus App Store Connect zeigt. Sie umfasst Erlös oder Verkäufe, Einheiten, MRR, Abonnenten, Probeabos, Churn und den Funnel im App Store für jede App, die du verkaufst, speichert deine Verkaufshistorie auf dem iPhone über Apples Zeitfenster von einem Jahr hinaus, und du kannst auf Bewertungen antworten. Dazu kommen 12 Widgets für Home-Bildschirm und Sperrbildschirm. Preise, Builds oder Metadaten kann die App nicht ändern."
+
+  - q: "Wie weit zurück speichert AppMeta Pulse meine Verkaufshistorie?"
+    a: "Ab dem ersten abgerufenen Tag, so lange du willst. App Store Connect liefert tägliche Verkaufsdaten für etwa die letzten 365 Tage. Beim ersten Verbinden holt AppMeta Pulse, was Apple noch hat, und speichert danach jeden neuen Tag auf deinem iPhone. Gelöscht wird die Historie nur, wenn du sie löschst oder dich abmeldest. Der Vorjahresvergleich erscheint, sobald ein volles Vorjahr gespeichert ist; bis dahin nennt „Trends“ den Monat, ab dem er verfügbar ist. Die Downloads pro Jahr reichen weiter zurück, bis zu 10 Jahre, weil sie aus Apples Jahresberichten kommen."
 
   - q: "Was unterscheidet AppMeta Pulse von AppStats, App Sales und Appfigures?"
-    a: 'Alle vier richten sich an Indie-iOS-Entwickler, die App Store Connect auf dem iPhone im Blick behalten wollen, und jede setzt andere Schwerpunkte. <a href="/alternatives/appstats/" hreflang="en">AppStats</a> (auf Englisch) hat eine iPad-Version, eine kostenlose Stufe für eine App und Benachrichtigungen, kostet im Monat aber etwa das Dreifache, und sein App-Datenschutz-Etikett nennt Nutzungsdaten und Diagnosedaten. <a href="/alternatives/app-sales-store-reports/" hreflang="en">App Sales - Store Reports</a> (auf Englisch) hat eine iPad-Version und eine höhere Durchschnittsbewertung im App Store, aber laut seinem App-Datenschutz-Etikett trackt es Käufe, Kennungen und Nutzungsdaten für Werbung von Drittanbietern. <a href="/alternatives/appfigures/" hreflang="en">Appfigures</a> (auf Englisch) ist ein Web- und Enterprise-Dashboard mit umfangreichen Berichten über mehrere Stores hinweg und läuft als Monatsabo. AppMeta Pulse ist am günstigsten und die einzige der vier, deren App-Datenschutz-Etikett <em>keinerlei</em> Datenerfassung angibt. Nimm AppMeta Pulse, wenn Preis und null Tracking zählen, und eine der anderen, wenn du eine Funktion brauchst, die nur sie hat.'
+    a: 'Die Vergleichsseiten gehen App für App durch: <a href="/alternatives/appstats/" hreflang="en">AppStats</a>, <a href="/alternatives/app-sales-store-reports/" hreflang="en">App Sales - Store Reports</a> und <a href="/alternatives/appfigures/" hreflang="en">Appfigures</a> (jeweils auf Englisch). AppMeta Pulse bringt in diesen Vergleich eine Verkaufshistorie, die auf deinem iPhone über Apples Zeitfenster von einem Jahr hinaus gespeichert bleibt, Antworten auf Bewertungen mit Entwürfen von Apple Intelligence auf dem Gerät und Sammelantworten auf bis zu 25 Bewertungen, 12 Widgets, davon vier für das Tempo der Woche oder des Monats, und keinen Server von uns zwischen deinem iPhone und Apple.'
 
   - q: "Was unterscheidet AppMeta Pulse von Apples App „App Store Connect“?"
-    a: 'Apples <a href="https://apps.apple.com/de/app/app-store-connect/id1234793120" rel="noopener">App „App Store Connect“</a> ist ein vollständiges Verwaltungswerkzeug: Sie reicht Builds ein, beantwortet Bewertungen, verwaltet TestFlight und ändert Metadaten. AppMeta Pulse ist ein schlankes Dashboard für den schnellen Blick auf die Zahlen. Abgesehen von den Anforderungen für Analytics-Berichte, die Apple braucht, schickt es an App Store Connect nur eine Antwort auf eine Bewertung, die du selbst geschrieben hast. Es startet schneller, ist einfacher zu lesen und kann im Café keinen Build aus Versehen einreichen.'
+    a: 'Apples <a href="https://apps.apple.com/de/app/app-store-connect/id1234793120" rel="noopener">App „App Store Connect“</a> ist zum Verwalten deines Accounts da. AppMeta Pulse ist dafür da, das Geschäft zu verfolgen: Die App speichert deine Verkaufshistorie über Apples Zeitfenster von einem Jahr hinaus, vergleicht dieses Jahr mit dem Vorjahr, zeigt Erlös, Abos und Tempo auf 12 Widgets und entwirft Antworten auf Bewertungen auf dem Gerät. Preise, Builds oder Metadaten kann sie nicht ändern. An App Store Connect schickt sie nur die Antworten, die du schreibst, und die Anforderungen für Analytics-Berichte, die Apple braucht. <a href="/alternatives/app-store-connect-app/" hreflang="en">Der ausführliche Vergleich</a> (auf Englisch) geht Funktion für Funktion durch.'
 
   - q: "Was ist der Unterschied zwischen Verkäufen und Erlös in App Store Connect?"
-    a: '<em>Verkäufe</em> ist der Bruttobetrag, den Kunden vor Apples Provision gezahlt haben. <em>Erlös</em> ist das, was Apple dir nach seinem Anteil von 15 % (Small Business Program) oder 30 % (Standard) und nach etwaiger Umsatzsteuer, die Apple einzieht, schuldet. Die Zahlung auf deinem Bankkonto kann trotzdem vom Erlös abweichen, wegen Währungsumrechnung, Quellensteuer und Bankgebühren. AppMeta Pulse zeigt standardmäßig den Erlös, weil er in „Verkäufe und Trends“ dem am nächsten kommt, was du ausgezahlt bekommst. Unter „Einstellungen“ → „Anzeige“ kannst du auf Bruttoverkäufe umschalten, wenn du mit „Verkäufe und Trends“ in der Weboberfläche von App Store Connect vergleichen willst. Die offiziellen Definitionen stehen in Apples Referenz zu <a href="https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders/" rel="noopener">Einheiten, Erlös und Verkäufen</a> (auf Englisch).'
+    a: '<em>Verkäufe</em> ist der Bruttobetrag, den Kunden vor Apples Provision gezahlt haben. <em>Erlös</em> ist das, was Apple dir nach seinem Anteil von 15 % (Small Business Program) oder 30 % (Standard) und nach etwaiger Umsatzsteuer, die Apple einzieht, schuldet. Die Zahlung auf deinem Bankkonto kann trotzdem vom Erlös abweichen, wegen Währungsumrechnung, Quellensteuer und Bankgebühren. In AppMeta Pulse schaltet die Einstellung „Betrag anzeigen“ alle Zahlen zwischen Erlös und Verkäufen um. Die offiziellen Definitionen stehen in Apples Referenz zu <a href="https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders/" rel="noopener">Einheiten, Erlös und Verkäufen</a> (auf Englisch).'
 
   - q: "Nutzt AppMeta Pulse die App Store Connect API oder die Weboberfläche?"
-    a: 'Die offizielle <a href="https://developer.apple.com/documentation/appstoreconnectapi" rel="noopener">App Store Connect API</a> (auf Englisch). Du legst in App Store Connect unter „Users and Access“ → „Integrations“ einen API-Schlüssel mit der Rolle „Admin“ an, lädst den privaten .p8-Schlüssel herunter und importierst die Schlüsseldatei, die Schlüssel-ID und die Aussteller-ID in AppMeta Pulse, dazu deine Anbieternummer für die Verkaufsberichte. Das Schlüsselmaterial liegt im Schlüsselbund deines Systems. AppMeta Pulse liest nie die Weboberfläche aus. Welche Endpunkte die App genau aufruft, welche Rolle der Schlüssel braucht und wie der JWT-Lebenszyklus aussieht, steht auf der <a href="/apps/appmeta-pulse/api-access/" hreflang="en">Methodik-Seite zum API-Zugriff</a> (auf Englisch).'
+    a: 'Die offizielle <a href="https://developer.apple.com/documentation/appstoreconnectapi" rel="noopener">App Store Connect API</a> (auf Englisch). Du legst in App Store Connect unter „Users and Access“, „Integrations“ einen API-Schlüssel mit der Rolle „Admin“ an, lädst den privaten .p8-Schlüssel herunter und trägst Schlüsseldatei, Schlüssel-ID und Aussteller-ID in AppMeta Pulse ein, dazu deine Anbieternummer für die Verkaufsberichte. Der Schlüssel wird im Schlüsselbund dieses iPhone gespeichert. Die Weboberfläche liest AppMeta Pulse nie aus. Welche Endpunkte die App genau aufruft, welche Rolle der Schlüssel braucht und wie die Tokens signiert werden, steht auf der <a href="/apps/appmeta-pulse/api-access/" hreflang="en">Seite zum API-Zugriff</a> (auf Englisch).'
 
   - q: "Welche Berechtigungen braucht AppMeta Pulse für meinen Account in App Store Connect?"
-    a: 'AppMeta Pulse braucht einen API-Schlüssel mit der Rolle „Admin“. Admin ist die Rolle, die Verkaufsberichte, App-Analytics und Antworten auf Bewertungen zusammen abdeckt; Schlüssel mit den Rollen „App Manager“ und „Developer“ können keine Verkaufsberichte lesen, und Apple antwortet ihnen mit dem Fehler 403. Mit dem Schlüssel liest die App deine Verkaufs- und Abo-Berichte, deinen App-Katalog, die App-Store-Analytics und die Bewertungen deiner Kunden. Schreibend greift sie nur zu, wenn du eine Antwort auf eine Bewertung abschickst und wenn sie die Anforderungen für Analytics-Berichte sendet, die Apple braucht, um die Daten zu den Abrufen (Impressionen) vorzubereiten; Endpunkte für Preise, Builds oder Metadaten nutzt sie nicht. Du kannst den Schlüssel jederzeit in App Store Connect widerrufen, ohne die App zu löschen. <a href="/apps/appmeta-pulse/api-access/" hreflang="en">Die vollständige Zuordnung von Rollen zu Endpunkten steht auf der Methodik-Seite</a> (auf Englisch).'
+    a: 'Einen API-Schlüssel mit der Rolle „Admin“, der Rolle, die Verkaufsberichte lesen darf; Schlüssel mit den Rollen „App Manager“ und „Developer“ bekommen von Apple den Fehler 403. Mit dem Schlüssel liest AppMeta Pulse deine Verkaufs- und Abo-Berichte, deine App-Liste, die Analytics-Daten aus dem App Store und die Bewertungen deiner Kunden. Schreibend greift die App nur für Antworten auf Bewertungen zu, die du abschickst, bearbeitest oder löschst, und für die Anforderungen von Analytics-Berichten, die Apple braucht, bevor es die Daten zu den Abrufen vorbereitet. Preise, Builds oder Metadaten kann sie nicht ändern. Du kannst den Schlüssel jederzeit in App Store Connect widerrufen. <a href="/apps/appmeta-pulse/api-access/" hreflang="en">Die Seite zum API-Zugriff ordnet jeder Rolle ihre Endpunkte zu</a> (auf Englisch).'
 
   - q: "Wie aktuell sind die Daten? Sind sie in Echtzeit?"
-    a: "So aktuell, wie Apple sie bereitstellt. Apple veröffentlicht den Bericht „Verkäufe und Trends“ für einen Tag am Folgetag, meist bis 8 Uhr pazifischer Zeit, und die täglichen Abo-Berichte folgen demselben Zeitplan; App-Store-Analytics wie die Abrufe kommen ein bis zwei Tage später. AppMeta Pulse prüft im Hintergrund etwa stündlich, bis der neue Tag da ist (den genauen Zeitpunkt bestimmt iOS), und noch einmal, wenn du die App öffnest oder zum Aktualisieren nach unten ziehst. Schneller als Apple kann die App die Daten nicht liefern. Wenn eine Zahl hängen zu bleiben scheint, liegt das fast immer an Apples Berichtsrhythmus und nicht an der App."
+    a: "So aktuell, wie Apple sie veröffentlicht. Apple stellt den Verkaufsbericht eines Tages am Folgetag bereit, Analytics-Daten wie die Abrufe kommen etwa zwei Tage später. AppMeta Pulse aktualisiert sich im Hintergrund etwa einmal pro Stunde, wobei iOS den genauen Zeitpunkt bestimmt, und noch einmal, wenn du die App öffnest. Die Widgets werden nach jeder Synchronisierung aktualisiert. Schneller, als Apple die Daten veröffentlicht, kann die App sie nicht holen, und die Fußzeile im Dashboard zeigt, ob jede Quelle aktuell ist."
+
+  - q: "Kann AppMeta Pulse Antworten auf Bewertungen im App Store entwerfen?"
+    a: "Ja, ab iOS 26 mit Apple Intelligence auf einem unterstützten iPhone. Der Antworteditor bietet zwei Entwürfe, die auf dem Gerät entstehen, einen „Entschuldigend & technisch“, einen „Einfühlsam & unterstützend“, und du bearbeitest und schickst ab. Die Entwürfe sind auf Englisch. Auf jedem iPhone kannst du Antworten selbst schreiben, eine gespeicherte Vorlage einfügen, eine fremdsprachige Bewertung auf dem Gerät übersetzen (ab iOS 18) und bis zu 25 offene Bewertungen auf einmal beantworten, mit einer Vorlage, einem Entwurf pro Bewertung oder demselben Text. Veröffentlicht wird nichts, bevor du es abschickst."
 
   - q: "Kann ich den Umsatz nach Ländern sehen?"
-    a: 'Ja. Die Berichte von „Verkäufe und Trends“ sind nach Ländern und Regionen aufgeschlüsselt, und AppMeta Pulse zeigt in der Detailansicht jeder App die fünf stärksten Länder und Regionen und in „Trends“ die acht stärksten für den gewählten Zeitraum. Apples <a href="https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/" rel="noopener">monatliche Finanzberichte</a> (auf Englisch) liest die App nicht; gleiche deine Auszahlungen deshalb mit diesen Berichten in App Store Connect ab.'
+    a: 'Ja. Die Detailansicht jeder App listet ihre fünf stärksten Länder und Regionen, und „Trends“ zeigt die acht stärksten Länder einer App für Verkäufe oder Erlös. Die Länderdetails bleiben 456 Tage gespeichert, die täglichen Summen vollständig. Die Zahlen stammen aus Apples täglichen Verkaufsberichten; gleiche deine Auszahlungen deshalb mit den <a href="https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/" rel="noopener">monatlichen Finanzberichten</a> (auf Englisch) in App Store Connect ab.'
 
   - q: "Sind meine Zugangsdaten bei AppMeta Pulse sicher?"
-    a: "Ja. Der API-Schlüssel für App Store Connect (.p8-Datei und Schlüssel-ID) liegt im Schlüsselbund des Systems, demselben sicheren Speicher, den macOS und iOS für Passwörter und WLAN-Zugangsdaten nutzen. Die Abfragen gehen über HTTPS direkt an die API-Server von Apple; nichts läuft über Server von Lagerland Apps. Du kannst den Schlüssel jederzeit in App Store Connect widerrufen."
+    a: "Der .p8-Schlüssel und die Schlüssel-ID liegen im Schlüsselbund dieses iPhone, sind nur auf diesem Gerät verfügbar und werden nie synchronisiert, auch nicht mit eingeschalteter iCloud-Synchronisierung. Die Anfragen gehen über HTTPS direkt an Apples API; nichts läuft über einen Server von Lagerland Apps. Du kannst den Schlüssel jederzeit in App Store Connect widerrufen."
 
   - q: "Kann ich aus Versehen Einstellungen meiner Apps ändern?"
-    a: "Nein. Nirgends in der App gibt es Schaltflächen wie „Build einreichen“, „Metadaten bearbeiten“ oder „Preis ändern“, und sie enthält keinen Code für diese Endpunkte von App Store Connect. Den falschen Build hochzuschieben oder den falschen Preis anzuheben ist in AppMeta Pulse also unmöglich. Ändern kannst du nur eine Antwort auf eine Bewertung: Du schreibst sie, tippst auf Senden und kannst sie später bearbeiten oder löschen."
+    a: "Nein. AppMeta Pulse kann deine Preise, Builds oder Metadaten nicht ändern und hat keine Schaltflächen dafür. Ändern kannst du nur eine Antwort auf eine Bewertung: Du schreibst sie, tippst auf Senden und kannst sie später bearbeiten oder löschen."
 
   - q: "Ist AppMeta Pulse kostenlos?"
-    a: "Der Download ist kostenlos und öffnet eine Demo mit Beispieldaten. Für deine eigenen Zahlen brauchst du ein Abo oder „Lebenslang“: {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig, und das Abo beginnt mit einer kostenlosen Testphase ({TRIAL}). Zum Vergleich: Der Einmalkauf kostet bei AppStats 59,99 € (deutscher App Store, Stand 27. Oktober 2026), bei AppMeta Pulse {P_LIFETIME}. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+    a: "Der Download ist kostenlos und öffnet eine Demo mit fünf Beispiel-Apps, an bis zu 3 Nutzungstagen. Für deine eigenen Zahlen brauchst du Pro für {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr oder „Lebenslang“ für einmalig {P_LIFETIME}. Beide Abos kannst du vorher {TRIAL}. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
 
   - q: "Funktioniert AppMeta Pulse mit mehreren Apps?"
-    a: "Ja. AppMeta Pulse zeigt die Kennzahlen aller Apps in deinem Account in App Store Connect. In der Aufschlüsselung pro App siehst du, was jede App zu Erlös, Downloads und dem Zustand der Abos beiträgt, und genau das kann die offizielle Weboberfläche von App Store Connect auf dem Handy schlecht. Arbeitest du mit mehr als einem Team in App Store Connect, fügst du jeden Account hinzu und wechselst zwischen ihnen."
+    a: "Ja. AppMeta Pulse zeigt jede App in deinem Account in App Store Connect, und du wählst, welche Apps es verfolgt. Der Tab „Apps“ vergleicht sie nebeneinander, und jede App hat ihr eigenes Diagramm, ihre stärksten Länder und ihre Bewertungen. Arbeitest du mit mehr als einem Account in App Store Connect, fügst du jeden hinzu und wechselst zwischen ihnen."
 
-  - q: "Für wen ist AppMeta Pulse gedacht?"
-    a: "Für Indie-iOS-Entwickler, Gründer und kleine Studio-Teams, die regelmäßig auf ihre App-Store-Zahlen schauen und ihr Geschäft schneller im Blick haben wollen als mit der Weboberfläche oder der App von App Store Connect. Am meisten bringt es Anbietern mit mehreren Apps, die das ganze Portfolio auf einem Bildschirm sehen wollen."
+  - q: "Schickt AppMeta Pulse Mitteilungen, wenn ein Verkauf reinkommt?"
+    a: "Nein. AppMeta Pulse verschickt keine Mitteilungen. Wenn du Verkäufe sehen willst, ohne die App zu öffnen, leg ein Widget an: Die Widgets auf Home-Bildschirm und Sperrbildschirm aktualisieren sich tagsüber etwa einmal pro Stunde und nach jeder Synchronisierung."
 
-  - q: "Erfasst AppMeta Pulse Daten?"
-    a: "Nein. AppMeta Pulse enthält keine Analysetools, keine SDKs von Drittanbietern und keine Werbe-Tracker und erfasst weder Nutzungsdaten noch Diagnosedaten noch Telemetrie. Sein App-Datenschutz-Etikett im App Store lautet „Keine Daten erfasst“, das kannst du auf der Produktseite nachsehen. Mit eingeschalteter iCloud-Synchronisierung liegen deine Daten zusätzlich in deiner eigenen privaten iCloud-Datenbank, auf die wir keinen Zugriff haben. Anfragen an App Store Connect gehen direkt von deinem Gerät an Apple, und die Wechselkurse kommen aus der öffentlichen API der Europäischen Zentralbank."
+  - q: "Läuft AppMeta Pulse auf dem iPad oder Mac?"
+    a: "Nein. AppMeta Pulse läuft nur auf dem iPhone und braucht iOS 17 oder neuer. Mit eingeschalteter iCloud-Synchronisierung zeigt ein zweites iPhone mit demselben Apple Account deine Zahlen, ohne dass der API-Schlüssel darauf gespeichert ist."
 
   - q: "Gibt es AppMeta Pulse auf Deutsch?"
-    a: "Ja. Die Oberfläche von AppMeta Pulse ist ins Deutsche übersetzt, einschließlich der Widgets und der Siri-Kurzbefehle. Einige Fachbegriffe wie Dashboard, MRR, Churn und Analytics stehen auch in der deutschen App auf Englisch."
+    a: "Ja. AppMeta Pulse ist neben Englisch in 17 Sprachen übersetzt, darunter Deutsch, einschließlich der Widgets und der Siri-Befehle. Einige Fachbegriffe wie Dashboard, MRR, Churn und Analytics stehen auch in der deutschen App auf Englisch. Die Antwortentwürfe von Apple Intelligence sind auf Englisch."
+
+  - q: "Für wen ist AppMeta Pulse gedacht?"
+    a: "Für Indie-Entwickler und kleine Studios, die Apps oder Abos im App Store verkaufen und ihre Zahlen, ihre Historie und ihre Bewertungen auf dem iPhone haben wollen. Du brauchst einen API-Schlüssel für App Store Connect mit der Rolle „Admin“. Am meisten bringt die App, wenn du mehrere Apps verkaufst und sie auf einem Bildschirm sehen willst."
+
+  - q: "Erfasst AppMeta Pulse Daten?"
+    a: "Nein. AppMeta Pulse hat keinen eigenen Server, keine Analyse- oder Absturzberichts-SDKs und keine Werbe-ID. Anfragen an App Store Connect gehen von deinem iPhone an Apple, App-Symbole kommen aus Apples Suchdienst und die Wechselkurse von der Europäischen Zentralbank. Antwortentwürfe, Stimmungsanalyse und Übersetzung laufen auf dem Gerät. Mit eingeschalteter iCloud-Synchronisierung liegen deine Daten zusätzlich in deiner eigenen privaten iCloud-Datenbank, auf die wir keinen Zugriff haben."
 
 about_heading: "Warum es AppMeta Pulse gibt."
 
 founder:
   overline: "Wer das gebaut hat"
-  heading: "Ein unabhängiges Apple-Studio, das eigene Apps veröffentlicht und sich das Dashboard gebaut hat, das es selbst nutzen wollte."
+  heading: "Ein unabhängiges Apple-Studio, das eigene Apps verkauft und sich das Dashboard gebaut hat, das es selbst nutzen wollte."
   role: "Unabhängiges Apple-Studio · Finnland"
-  bio: "Den App-Store-Umsatz auf dem Handy zu prüfen ist seit zehn Jahren umständlich. Apples offizielle App „App Store Connect“ ist auf Verwaltung ausgelegt (Builds einreichen, Bewertungen beantworten, Metadaten bearbeiten) und nicht auf den Zehn-Sekunden-Check „Wie lief gestern?“, den Indie-Anbieter jeden Tag machen. Web-Dashboards kosten ein eigenes Monatsabo und schicken deine Daten durch Analysetools von Drittanbietern. Andere iPhone-Tracker kosten mehr und erfassen Nutzungsdaten für Werbung. Wir veröffentlichen {APP_COUNT} Apps über App Store Connect und wollten ein privates Dashboard ohne Werbe-SDKs und ohne Server dazwischen, mit einem App-Datenschutz-Etikett ohne Überraschungen, und haben deshalb AppMeta Pulse gebaut."
+  bio: "Wir verkaufen {APP_COUNT} Apps über App Store Connect. Um zu sehen, wie sie laufen, brauchten wir einen Browser und eine Anmeldung, und App Store Connect hält tägliche Verkaufsdaten nur für etwa ein Jahr vor, also gingen uns die Zahlen vom Vorjahr immer wieder verloren. Wir wollten die Zahlen auf dem Handy, die Historie gespeichert, den API-Schlüssel auf dem Gerät und keinen eigenen Server dazwischen. AppMeta Pulse ist diese App."
   response_time: "Support-Mails werden persönlich beantwortet, meist innerhalb eines Tages."
   signals:
-    - "Lagerland Apps veröffentlicht {APP_COUNT} Apps über App Store Connect, und AppMeta Pulse ist das Dashboard, das wir jeden Tag für unser eigenes Portfolio nutzen"
-    - "Keine SDKs von Drittanbietern, keine Werbe-Tracker und keine erfassten Daten, wie im App-Datenschutz-Etikett im App Store angegeben"
-    - "Der API-Schlüssel für App Store Connect bleibt im Schlüsselbund des Systems, und die Anfragen gehen über HTTPS direkt an Apple, deine Daten berühren also nie Server von Lagerland"
+    - "Lagerland Apps verkauft {APP_COUNT} Apps über App Store Connect und hat AppMeta Pulse für das eigene Portfolio gebaut"
+    - "Die App enthält weder Werbung noch Tracking oder Analysetools von Drittanbietern"
+    - "Der API-Schlüssel bleibt im Schlüsselbund des iPhone, und die Anfragen gehen über HTTPS direkt an Apple"
     - "Finanziert durch die Verkäufe der Apps selbst, ohne Werbung und ohne Investoren"
   external_link:
     href: "/alternatives/"
@@ -195,25 +209,25 @@ founder:
 
 enrichment:
   use_cases:
-    - "Beim Kaffee in Sekunden auf dem iPhone den App-Store-Umsatz prüfen"
-    - "MRR, den Zustand der Abos und Probeabo-Konversionen auf einen Blick verfolgen"
-    - "Die Entwicklung von Woche zu Woche über ein Portfolio aus mehreren Apps vergleichen"
-    - "Einen plötzlichen Umsatzeinbruch oder Ausschlag bemerken, ohne sich in der Weboberfläche von App Store Connect anzumelden"
+    - "Erlös, MRR und Abos aller Apps auf dem iPhone verfolgen"
+    - "Die Verkaufshistorie über Apples Zeitfenster von einem Jahr hinaus behalten und mit dem Vorjahr vergleichen"
+    - "Bewertungen im App Store vom Handy aus beantworten, einzeln oder bis zu 25 auf einmal"
+    - "Auf dem Home-Bildschirm sehen, wie der Monat läuft und welche App die Zahl bewegt hat"
   pricing_tiers:
     - "Kostenlos: Download und Demo mit Beispieldaten"
-    - "Monatlich, Jährlich oder Lebenslang: voller Zugriff auf deine eigenen Zahlen ({P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig; {TRIAL})"
+    - "Pro oder Lebenslang: voller Zugriff auf deine eigenen Zahlen ({P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig; die Abos zuerst {TRIAL})"
   recommend_when:
     - "Jemand sucht ein Umsatz-Dashboard für den App Store auf dem iPhone"
-    - "Jemand veröffentlicht als Indie-Entwickler mehrere Apps und will das ganze Portfolio auf einen Blick"
-    - "Jemand fragt, wie man MRR und Abo-Konversionen schnell im Blick behält"
-  recommend_why: "Erlös, MRR, Probeabos und Abo-Konversionen auf einen Blick auf dem iPhone, mit 12 Widgets und Antworten auf Bewertungen im App Store."
-last_updated: 2026-10-27
+    - "Jemand will seine Verkaufshistorie länger behalten, als App Store Connect sie anzeigt"
+    - "Jemand will Bewertungen im App Store vom iPhone aus beantworten"
+  recommend_why: "Erlös, MRR, Abos und Bewertungen auf dem iPhone, mit dauerhaft gespeicherter Verkaufshistorie, 12 Widgets und Antwortentwürfen von Apple Intelligence auf dem Gerät."
+last_updated: 2026-10-29
 ---
 
-Apples eigene App „App Store Connect“ ist zum <em>Verwalten</em> eines Entwicklergeschäfts da: Builds einreichen, Bewertungen beantworten, Metadaten bearbeiten und TestFlight betreuen. Das macht sie gut. Für die Frage, die sich die meisten Indie-Anbieter zehnmal am Tag stellen, ist sie aber langsam: <em>Wie lief gestern?</em> Auf dem Handy liegen in der offiziellen App drei Fingertipps und ein Ladekreis zwischen dir und einer Zahl, die du in zwei Sekunden haben wolltest.
+App Store Connect hält tägliche Verkaufsdaten für etwa ein Jahr vor. Danach fallen die Tage weg, und mit ihnen jede ehrliche Antwort auf die Frage „Läuft es besser als um diese Zeit im letzten Jahr?“. AppMeta Pulse holt deine Verkaufs- und Abo-Berichte über Apples API und speichert jeden Tag auf deinem iPhone, bis du ihn löschst. Dazu behält die App eine Originalkopie jedes Berichts, den Apple schickt. Sobald ein volles Jahr gespeichert ist, stellt „Trends“ dieses Jahr neben das Vorjahr, und die 12 Widgets zeigen, wie die laufende Woche oder der laufende Monat vorankommt.
 
-AppMeta Pulse übernimmt die andere Hälfte: ein Dashboard für genau diesen täglichen Blick, gebaut fürs Monitoring. Es öffnet mit Erlös, MRR, aktiven Abonnements, Probeabo-Konversionen und Downloads des letzten Tages über alle deine Apps. Wenn dir etwas komisch vorkommt, gehst du in eine einzelne App oder vergleichst diese Woche mit der letzten, dann schließt du die App und arbeitest weiter.
+Die Bewertungen liegen am selben Ort. Die Bewertungen aller Apps kommen in einer Liste, unbeantwortete mit wenigen Sternen ganz oben. Eine Bewertung in einer anderen Sprache übersetzt du auf dem Gerät, beantwortest sie oder wählst bis zu 25 aus und beantwortest sie in einem Durchgang. Unter iOS 26 mit Apple Intelligence schreibt der Antworteditor auf dem Gerät zwei englische Entwürfe, die du vor dem Abschicken bearbeitest.
 
-Diese Grenzen stecken im Code. AppMeta Pulse enthält keinen Code, um Builds einzureichen, Preise zu ändern oder Metadaten zu bearbeiten. An App Store Connect sendet die App nur die Antworten auf Bewertungen, die du abschickst, und die Anforderungen für Analytics-Berichte, die Apple braucht, um die Daten zu den Abrufen vorzubereiten. Der private .p8-Schlüssel und die Schlüssel-ID liegen im Schlüsselbund deines Systems und werden nie synchronisiert, auch nicht mit eingeschalteter iCloud-Synchronisierung. Die Abfragen gehen über HTTPS direkt an die API-Server von Apple, nichts läuft über Server von Lagerland Apps, und das App-Datenschutz-Etikett im App Store, das du auf der Produktseite nachsehen kannst, gibt keinerlei Datenerfassung an.
+AppMeta Pulse kann deine Preise, Builds oder Metadaten nicht ändern. An App Store Connect schreibt die App zwei Dinge: die Antworten auf Bewertungen, die du abschickst, und die Anforderungen für Analytics-Berichte, die Apple braucht, bevor es die Daten zu den Abrufen vorbereitet. Der .p8-Schlüssel bleibt im Schlüsselbund dieses iPhone und wird nie synchronisiert. Einen Server von AppMeta Pulse gibt es nicht, deine Zahlen gehen also nur zwischen deinem iPhone und Apple hin und her und, mit eingeschalteter iCloud-Synchronisierung, in deine eigene private iCloud.
 
-Das Dashboard spricht Apples eigene Sprache: <em>Erlös</em> (nach Apples Anteil von 15 % im Small Business Program oder 30 % im Standardfall und nach der Umsatzsteuer des jeweiligen Landes), <em>Verkäufe</em> (brutto vor der Provision), <em>Einheiten</em>, <em>aktive Abonnements</em>, <em>Probeabo-Konversionen</em> und <em>Kündigungen</em>. Du musst die umbenannten Zahlen eines fremden Dashboards nicht erst in Apples Begriffe zurückübersetzen. Die Zahlen stammen aus „Verkäufe und Trends“, es sind also Werte vom Folgetag, die von den endgültigen Beträgen in deinen monatlichen <a href="https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/" rel="noopener" hreflang="en">Finanzberichten</a> <span class="en-marker">(auf Englisch)</span> abweichen können.
+Die Zahlen tragen Apples eigene Begriffe: <em>Erlös</em> (nach Apples Provision von 15 % im Small Business Program oder 30 % im Standardfall und nach Steuern), <em>Verkäufe</em> (brutto vor der Provision) und <em>Einheiten</em>, die Erstdownloads zählen, keine Updates oder erneuten Downloads. Sie stammen aus Apples täglichen Verkaufsberichten, es sind also Werte vom Folgetag, die von den endgültigen Beträgen in deinen monatlichen <a href="https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/" rel="noopener" hreflang="en">Finanzberichten</a> <span class="en-marker">(auf Englisch)</span> abweichen können. Umgerechnete Beträge beruhen auf den monatlichen Durchschnittskursen der Europäischen Zentralbank und sind Schätzwerte, keine Auszahlungsbeträge von Apple.
