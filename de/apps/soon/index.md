@@ -3,13 +3,13 @@ layout: app
 slug: soon
 ref: /apps/soon/
 permalink: /de/apps/soon/
-translated_from: 2026-10-26
-tagline: "Countdowns für Tage, auf die sich das Warten lohnt."
-quick_answer: "Soon. ist eine Countdown-App mit Planer fürs iPhone. Reisen, Hochzeiten, Geburtstage, Jahrestage und Meilensteine bekommen je einen Countdown mit Foto im Hintergrund, Live-Wetter am Reiseziel, einer Checkliste im Planmodus und Widgets für Home-Bildschirm, Sperrbildschirm und StandBy. Die App ist kostenlos, Premium gibt es ab {P_MONTHLY} im Monat oder für {P_LIFETIME} als Einmalkauf, und sie kommt ohne Werbung, ohne Tracking und ohne Konto aus."
+translated_from: 2026-10-29
+tagline: "Countdowns für die Momente, die dir wichtig sind, immer im Blick."
+quick_answer: "Soon. ist eine Countdown-App fürs iPhone für Reisen, Hochzeiten, Geburtstage, Prüfungen und den Geburtstermin eines Babys, und sie zählt auch die Tage seit einem vergangenen Datum. Jeder Moment bekommt dein eigenes Foto, eine kostenlose Checkliste mit Zeitleiste passend zur Art des Ereignisses und einen Platz in 26 Widgets für Home-Bildschirm, Sperrbildschirm und StandBy. Bis zu 5 Momente sind kostenlos, und Premium ({P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} als Einmalkauf; beide Abos kannst du zuerst {TRIAL}) bringt unbegrenzte Momente, Erinnerungen vor dem Tag, die Wettervorhersage und eine Live-Aktivität auf dem Sperrbildschirm. Soon. hat weder Werbung noch Tracking, braucht kein Konto und synchronisiert über deine eigene iCloud."
 
 seo:
-  title: "Countdown-App fürs iPhone mit Foto-Widgets | Soon."
-  description: "Countdown-App fürs iPhone: Tage zählen bis Urlaub, Hochzeit oder Geburtstag, mit Foto-Widgets, Reisewetter und Checklisten. Kostenlos, Premium ab {P_MONTHLY}."
+  title: "Countdown-App fürs iPhone mit 26 Widgets | Soon."
+  description: "Tage zählen bis Urlaub, Hochzeit oder Geburtstag: Countdown-App fürs iPhone mit 26 Widgets, Checkliste je Ereignis und iCloud-Sync. Kostenlos."
   keywords:
     - countdown app iphone
     - countdown widget iphone
@@ -18,44 +18,44 @@ seo:
     - countdown widget sperrbildschirm
     - hochzeit countdown app
     - geburtstag countdown app
-    - countdown planer app
+    - tage zählen seit datum app
 
 plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, auf dem üblichen Erstattungsweg im App Store. Der Einmalkauf wird einmal bezahlt und verlängert sich nicht automatisch."
 
 plans:
   - name: "Kostenlos"
     price: "{P_ZERO}"
-    summary: "Fünf Ereignisse, ein angeheftetes Widget und drei Themen, ohne Zeitlimit."
+    summary: "Bis zu 5 Momente mit Plan, Widgets und iCloud-Synchronisierung, ohne Zeitlimit."
     features:
-      - "5 Ereignisse gleichzeitig"
-      - "1 angeheftetes Widget (Home-Bildschirm, Sperrbildschirm oder StandBy)"
-      - "3 Themen (Classic, Soft, Midnight)"
-      - "Import aus dem iOS-Kalender"
-      - "Erinnerungen an vergangene Momente (Jahrestage kommen von selbst wieder)"
-      - "Notizen zum Zurückblicken"
-      - "39 Sprachen"
+      - "Bis zu 5 Momente, die runter- oder hochzählen"
+      - "Planmodus: Checkliste und Zeitleiste für jede Art von Ereignis"
+      - "Widgets für Home-Bildschirm, Sperrbildschirm und StandBy mit deinem angehefteten Moment"
+      - "3 Themen (Sunrise, Ocean und Forest) und 1 Foto pro Moment"
+      - "Kalenderimport, Suche, Siri und Spotlight"
+      - "Erinnerungen an vergangene Momente und iCloud-Synchronisierung zwischen deinen Geräten"
+      - "Teilen als Bild, mit kleinem Soon.-Wasserzeichen"
   - name: "Premium · Monatlich"
     price: "{P_MONTHLY}/Monat"
-    summary: "Alle Premium-Funktionen, monatlich abgerechnet. Jederzeit kündbar."
+    summary: "Alles aus Premium, monatlich abgerechnet. Jederzeit kündbar."
     features:
-      - "Unbegrenzte Ereignisse"
-      - "Alle Widget-Stile (klein, mittel, groß, Ring, Minimal, Zeitleiste)"
-      - "10 Premium-Themen"
-      - "Live-Wetter am Reiseziel"
-      - "Tägliche Notizen, die sich ändern, je näher das Datum rückt"
-      - "Wiederkehrende Countdowns"
-      - "Mitteilungen zu Ereignissen"
+      - "Unbegrenzte Momente und beliebig viele angeheftete Momente"
+      - "Alle 11 Themen und bis zu 10 Fotos pro Moment"
+      - "Jedes Widget, jeweils mit dem Moment deiner Wahl"
+      - "Mitteilungen 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst"
+      - "Finaler Countdown auf dem Sperrbildschirm und in der Dynamic Island"
+      - "Wettervorhersage, tägliche Notizen und wiederkehrende Momente"
+      - "Baby-Plan, Erinnerungen im Planmodus und „An diesem Tag“"
       - "{TRIAL} · jederzeit kündbar"
   - name: "Premium · Jährlich"
     price: "{P_YEARLY}/Jahr"
-    summary: "Dieselben Premium-Funktionen, einmal im Jahr abgerechnet. Kostet etwa so viel wie {YEARLY_MONTHS} Monate Premium · Monatlich."
+    summary: "Dasselbe Premium, einmal im Jahr abgerechnet. Etwa {SAVE_YEARLY} % günstiger als monatlich."
     features:
       - "Alles aus Premium · Monatlich"
       - "Übers Jahr etwa {SAVE_YEARLY} % günstiger als monatlich"
       - "{TRIAL} · jederzeit kündbar"
   - name: "Einmalkauf"
     price: "{P_LIFETIME} einmalig"
-    summary: "Alle Premium-Funktionen für etwa so viel wie {LIFETIME_MONTHS} Monate Premium · Monatlich, einmal bezahlt."
+    summary: "Alles aus Premium, einmal bezahlt."
     features:
       - "Alles aus Premium · Jährlich"
       - "Einmal bezahlt, keine Verlängerung"
@@ -63,36 +63,38 @@ plans:
       - "Mit Familienfreigabe"
 
 hero:
-  pre_headline: "Countdown- und Planer-App fürs iPhone"
-  headline: "Countdown-App fürs iPhone: für Tage, die du kaum erwarten kannst"
-  subheadline: "Soon. ist eine Countdown-App fürs iPhone. Jede Reise, jede Hochzeit, jeder Geburtstag und jeder Meilenstein bekommt einen eigenen Countdown mit Foto über den ganzen Bildschirm, Live-Wetter am Reiseziel, einer Checkliste im Planmodus und Widgets für Home-Bildschirm, Sperrbildschirm und StandBy. Kostenlos, Premium ab {P_MONTHLY} im Monat. Keine Werbung, kein Tracking, kein Konto."
+  pre_headline: "Countdown-App fürs iPhone"
+  headline: "Dein großer Tag auf dem Sperrbildschirm, mit einem Plan für die Vorbereitung."
+  secondary: "Die Momente, die dir wichtig sind, immer im Blick."
+  subheadline: "Leg eine Reise, eine Hochzeit oder einen Geburtstag an, und Soon. macht daraus einen Countdown mit deinem eigenen Foto, einer Checkliste für genau diese Art von Tag und Widgets für Home-Bildschirm, Sperrbildschirm und StandBy. Bis zu 5 Momente sind kostenlos, ganz ohne Werbung und Tracking."
   cta_label: "Kostenlos laden"
-  alt: "Reise-Countdown in Soon. auf dem iPhone, mit Foto über den ganzen Bildschirm und Live-Wetter am Reiseziel"
+  alt: "Soon. auf dem iPhone mit einer Countdown-Karte über den ganzen Bildschirm für einen Sommerurlaub"
 
 who_for:
-  - "Du planst eine Reise, eine Hochzeit, einen Geburtstag, einen Abschluss oder einen anderen Meilenstein und willst ihn jeden Tag vor Augen haben."
-  - "Du magst iOS-Widgets und willst deine Countdowns auf dem Home-Bildschirm, dem Sperrbildschirm und in StandBy sehen."
-  - "Du willst, dass Packlisten und Zeitpläne von selbst auftauchen, wenn das Datum näher rückt."
-  - "Du willst das Live-Wetter an deinem Reiseziel sehen, je näher die Reise rückt."
-  - "Du willst deine Countdowns auf dem iPhone haben, ohne Werbefirmen deinen Standort zu überlassen."
+  - "Du zählst die Tage bis zu einer Reise, einer Hochzeit, einem Geburtstag, einer Prüfung oder dem Geburtstermin eines Babys und willst sie jeden Tag sehen."
+  - "Du willst den Countdown auf dem Home-Bildschirm, dem Sperrbildschirm oder in StandBy haben statt irgendwo im Kalender."
+  - "Du hättest gern eine Checkliste für den Tag, ohne sie selbst von null aufzubauen."
+  - "Du willst auch die Tage seit etwas zählen: seit einem Meilenstein, einer Serie oder dem Tag, an dem etwas begann."
+  - "Du willst deine Termine auf deinem iPhone und in deiner eigenen iCloud haben, fern von Werbenetzwerken."
 
 who_not_for:
+  - "Du brauchst Countdowns auf iPad, Mac oder Apple Watch (Soon. gibt es nur fürs iPhone)."
+  - "Du willst einen Live-Countdown mit Partner oder Familie teilen (Soon. teilt Countdowns als Bild)."
+  - "Du suchst einen Aufgabenmanager mit Projekten und Tags."
   - "Du hältst deinen Home-Bildschirm aus Prinzip frei von Widgets."
-  - "Du brauchst nur einen einfachen Kalendertermin mit Hinweis und willst keine Fotos und täglichen Notizen drumherum."
-  - "Du suchst einen Aufgabenmanager nach GTD mit Projekten und Tags."
 
 founder:
-  overline: "Warum ich das gebaut habe"
-  heading: "Aus TheWait neu gebaut, vom Entwickler, der es veröffentlicht hat."
-  role: "Unabhängiger Apple-Entwickler · Finnland · Ein-Personen-Studio seit 2025"
+  overline: "Wer dahintersteht"
+  heading: "Ein unabhängiges Apple-Studio, das den Tag, auf den du wartest, dorthin bringt, wo du ihn siehst."
+  role: "Unabhängiges Apple-Studio · Finnland"
   location: "Finnland"
-  bio: "Vor Jahren habe ich TheWait veröffentlicht, einen Countdown, der genau eine Sache konnte. Danach kamen immer wieder Wünsche, die seine Architektur nicht hergab: Widgets für den Sperrbildschirm, StandBy, Wettervorhersagen, Checklisten. Soon. ist die komplette Neuentwicklung, mit neuem Code, neuem Icon und neuem Namen, geschrieben von derselben Person. Ein Team gibt es nicht. Ein Entwickler in Finnland gestaltet und programmiert jede Lagerland-App und beantwortet ihre Support-Mails, auch die zu dieser. Wenn etwas nicht funktioniert, schreib mir direkt, und ich behebe es."
-  response_time: "Ich beantworte Support-Mails persönlich, meist innerhalb eines Tages."
+  bio: "Ein Datum im Kalender gerät leicht aus dem Blick. Soon. holt es auf die Bildschirme, auf die du jeden Tag schaust, und legt einen Plan daneben, damit aus dem Warten Vorfreude wird. Lagerland Apps ist ein kleines Apple-Studio in Finnland, ohne Investoren und ohne Werbekunden. Soon. finanziert sich über die Leute, die Premium wählen. Deshalb zeigt auch die kostenlose Version keine Werbung, und in der App stecken keine Tracker."
+  response_time: "Support-Mails werden persönlich beantwortet, meist innerhalb eines Tages."
   signals:
-    - "Ursprünglicher Entwickler von TheWait. Soon. ist von Grund auf neu gebaut, kein umbenanntes TheWait"
-    - "Seit 2025 {APP_COUNT} Apple-Apps unter Lagerland veröffentlicht, alle mit Fokus auf Datenschutz"
-    - "Die Ereignisse bleiben auf deinem iPhone, und Wetterabfragen nutzen nur einen ungefähren Standort"
-    - "In 39 Sprachen übersetzt, darunter Sprachen mit Schrift von rechts nach links (Arabisch, Hebräisch) und CJK (Japanisch, Koreanisch, Chinesisch)"
+    - "In der App gibt es weder Werbung noch Tracking noch SDKs von Drittanbietern"
+    - "Deine Momente liegen auf deinem iPhone und in deiner eigenen privaten iCloud, ohne Server von Lagerland dazwischen"
+    - "Jede Lagerland-App folgt denselben Datenregeln: keine Werbe-SDKs und kein Konto als Pflicht"
+    - "Finanziert von Leuten, die Premium kaufen, ohne Werbung und ohne Investoren"
 
 alternatives_labels:
   - "Countdowns (Apalon)"
@@ -103,99 +105,102 @@ alternatives_labels:
   - "TheWait (früherer Name von Soon.)"
 
 value_points:
-  - title: "Countdowns mit Foto und Wettervorhersage"
-    description: "Jedes Ereignis bekommt ein Foto über den ganzen Bildschirm, Live-Wetter vom Reiseziel und tägliche Notizen, die sich ändern, je näher das Datum rückt."
+  - title: "26 Widgets für den Tag, auf den du wartest"
+    description: "Leg einen Countdown auf den Home-Bildschirm, den Sperrbildschirm oder in StandBy, von einer einzelnen Zahl bis zur Ansicht über das ganze Jahr. Ab iOS 18 passt zusätzlich eine Steuerung mit den verbleibenden Tagen ins Kontrollzentrum."
   - title: "Zu jedem Countdown gehört ein Plan"
-    description: "Jeder Countdown hat eine eigene Zeitleiste und Checkliste. Die Anreise buchst du 30 Tage vorher, gepackt wird drei Tage vorher, und du kommst vorbereitet an."
-  - title: "Widgets für jeden Bildschirm"
-    description: "Widgets für Home-Bildschirm, Sperrbildschirm und StandBy in allen iOS-Größen: klein, mittel, groß, Ring, Minimal und Zeitleiste."
-  - title: "Von Haus aus privat"
-    description: "Soon. hat keine Werbung, kein Tracking und kein Konto. Deine Ereignisse bleiben auf deinem Gerät, solange du sie behältst."
+    description: "Soon. schlägt eine Checkliste mit Zeitleiste für die Art von Ereignis vor, die du gewählt hast, von Reise und Hochzeit bis Prüfung und Konzert. Der Planmodus ist kostenlos."
+  - title: "Nach dem Tag bleibt die Erinnerung"
+    description: "Ist ein Moment vorbei, behältst du ihn als Erinnerung, die die Tage seitdem zählt. Mit Premium fügst du Fotos und eine Notiz hinzu und bekommst jedes Jahr am Jahrestag einen Hinweis."
+  - title: "Privat, weil die App so gebaut ist"
+    description: "Du legst kein Konto an. Deine Momente bleiben auf deinem iPhone und, wenn du sie einschaltest, in deiner eigenen privaten iCloud. Die App enthält weder Werbung noch Tracking noch SDKs von Drittanbietern."
 
 features:
-  - title: "Countdowns mit Foto über den ganzen Bildschirm"
-    description: "Hefte ein Foto an ein Ereignis, und es füllt den Bildschirm hinter dem Countdown. So siehst du den Ort oder die Menschen zusammen mit der Zahl der Tage."
+  - title: "Dein Foto hinter dem Countdown"
+    description: "Nimm ein eigenes Foto, ein ausgewähltes Foto passend zur Art des Ereignisses oder einen Farbverlauf und schneide es zu. Du hast 11 Themen zur Wahl, 3 davon kostenlos. Premium ergänzt eine Galerie mit bis zu 10 Fotos pro Moment."
   - title: "Planmodus"
-    description: "Jeder Countdown bringt eine Zeitleiste und eine Checkliste für seine Art von Ereignis mit. Reisen bekommen Packlisten und Aufgaben für die Anreise, Hochzeiten einen eigenen Zeitplan. Jede Aufgabe taucht an dem Tag auf, an dem sie fällig ist."
-  - title: "Live-Wetter"
-    description: "Sieh die Vorhersage für dein Reiseziel, wenn das Datum näher rückt, damit du weißt, was in den Koffer gehört. Nur mit Premium."
-  - title: "Suche in normaler Sprache"
-    description: "Tipp „Reisen im Juli“, „Geburtstage diesen Monat“ oder „Jahrestage 2027“, und Soon. findet die passenden Ereignisse in Sekunden."
-  - title: "Erinnerungen, die wiederkommen"
-    description: "Ist ein Countdown abgelaufen, wird er zu einer Erinnerung, und Soon. holt ihn an jedem Jahrestag zurück."
-  - title: "Kalender-Synchronisierung"
-    description: "Mach mit einem Tippen aus jedem Termin im iOS-Kalender einen Countdown."
+    description: "Jeder Moment kann eine Checkliste und eine Zeitleiste mit Meilensteinen haben. Soon. schlägt einen Plan für Reise, Hochzeit, Geburtstag, Prüfung, Arbeit, Feiertag, Gesundheit, Baby, Konzert und Sport vor, und „Auf Vorschläge zurücksetzen“ holt ihn zurück. Premium ergänzt Erinnerungen im Planmodus."
+  - title: "Hoch- und runterzählen"
+    description: "Gib einem Moment ein vergangenes Datum, und er zählt die Tage seitdem. Das Hochzählen erscheint auch in Widgets, auf dem Sperrbildschirm und in der Steuerung im Kontrollzentrum."
+  - title: "Mitteilungen und der Finale Countdown"
+    description: "Mit Premium erinnert dich Soon. 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst. In den letzten 24 Stunden läuft der Finale Countdown auf dem Sperrbildschirm und in der Dynamic Island, und mit „Auf dem Sperrbildschirm behalten“ zeigt er den Countdown bis zu 90 Tage vorher."
+  - title: "Die Vorhersage für deinen großen Tag"
+    description: "Füg einem Moment einen Ort hinzu, und sobald das Datum höchstens 7 Tage entfernt ist, zeigt Soon. die Vorhersage von Apple Wetter dafür. Mit Premium."
+  - title: "Suchen, wie du sprichst"
+    description: "Tipp etwa „reise im juli“ oder „letzten sommer“, um Momente und Erinnerungen zu finden. Die Suche läuft auf deinem iPhone."
+  - title: "Kalenderimport, Siri und Spotlight"
+    description: "Mach mit einem Tippen aus einem Termin in deinem Kalender einen Countdown. Frag Siri, wie viele Tage es noch bis zu deinem Moment in Soon. sind, und finde deine Momente in Spotlight. Mit Premium trägst du einen Countdown auch in deinen Kalender ein."
+  - title: "Tägliche Notizen"
+    description: "Mit Premium bekommst du jeden Tag eine kurze Notiz, die sich ändert, je näher das Datum rückt, im Ton „Ruhig“ oder „Verspielt“. Die Notizen entstehen aus Vorlagen auf deinem iPhone, nicht durch KI."
 
 how_it_works:
-  intro: "Der Planmodus stellt die Checkliste zusammen und verteilt sie auf die Tage. So läuft es zwischen dem Anlegen eines Ereignisses und dem großen Tag ab."
+  heading: "Vom Datum bis zum großen Tag."
+  intro: "Was zwischen dem Anlegen eines Moments und dem Tag passiert, auf den er runterzählt."
   steps:
-    - title: "Du wählst die Art des Ereignisses"
-      detail: "Leg ein Ereignis an und wähle eine Art: Reise, Hochzeit, Geburtstag, Baby, Abschluss, Umzug, Konzert, Jahrestag oder Moment (eigenes Ereignis). Jede Art lädt ihre eigene Checklisten-Vorlage. Eigene Ereignisse beginnen leer."
-    - title: "Soon. plant die Checkliste vom Datum aus rückwärts"
-      detail: "Jede Vorlage ist eine Liste von Aufgaben, die am Datum des Ereignisses verankert sind (T-90, T-30, T-14, T-3, T-1, also 90, 30, 14 und 3 Tage sowie 1 Tag vorher). Sobald du das Ereignis speicherst, legt Soon. jede Aufgabe auf einen eigenen Kalendertag, vom Datum aus zurückgezählt. Du siehst die Checkliste, der Zeitplan läuft im Hintergrund."
-    - title: "Mitteilungen kommen am Fälligkeitstag jeder Aufgabe"
-      detail: "Schaltest du die Mitteilungen zu Ereignissen ein (Premium), schickt Soon. pro Aufgabe eine Mitteilung an ihrem geplanten Tag. Tägliches Drängeln oder gebündelte Mitteilungen gibt es nie. Für eine Reise in 30 Tagen bekommst du bei T-30 einen einzigen Hinweis „Anreise buchen“ und nicht 30 tägliche Mitteilungen."
-    - title: "Das Wetter kommt dazu, wenn das Datum näher rückt"
-      detail: "Premium ergänzt das Wetter am Reiseziel. Soon. holt die Vorhersage für den Ort, den du angibst, über Apple WeatherKit. Die Abfrage schickt nur einen Ortsnamen oder ungefähre Koordinaten, nie deinen genauen Standort. Ab T-10, wenn die Vorhersage nützlich wird, steht sie auf der Countdown-Karte."
-    - title: "In der letzten Woche kommen tägliche Notizen"
-      detail: "Premium ergänzt kurze tägliche Notizen, die sich zwischen T-7 und T-0 ändern. Hochzeiten bekommen andere Texte als Reisen. Die Notizen sind einmal geschrieben und Teil der App, ohne KI-Generierung und ohne Überwachung."
-    - title: "Aus dem Countdown wird eine Erinnerung"
-      detail: "Ist das Datum vorbei, wird das Ereignis zu einer Erinnerung. Am selben Tag im nächsten Jahr und in jedem Jahr danach zeigt Soon. es wieder auf deinem Home-Bildschirm, als wiederkehrenden Countdown zum Jahrestag, um den du dich nicht kümmern musst."
+    - title: "Moment anlegen"
+      detail: "Tipp auf + und beantworte „Worauf wartest du?“ mit einem Titel und einem Datum, dazu eine Uhrzeit, wenn der Countdown auf die Minute laufen soll. Wähl ein Symbol, ein Thema und ein Foto. Oder importier einen Termin aus deinem Kalender."
+    - title: "Dorthin legen, wo du ihn siehst"
+      detail: "Hefte den Moment an die große Karte oben auf dem Tab „Start“. Leg ein Widget auf den Home-Bildschirm, den Sperrbildschirm oder in StandBy, oder ab iOS 18 die Steuerung ins Kontrollzentrum. Kostenlose Widgets zeigen deinen angehefteten Moment, mit Premium wählst du für jedes Widget einen Moment."
+    - title: "Einen Plan für den Tag bekommen"
+      detail: "Öffne „Planen“, und Soon. schlägt eine Checkliste und eine Zeitleiste für diese Art von Ereignis vor. Hak Aufgaben ab und füg eigene Meilensteine hinzu. Mit Premium bekommt ein Moment der Art „Baby“ einen geführten Plan Woche für Woche, und Aufgaben im Plan können dich erinnern."
+    - title: "Zusehen, wie er näher rückt"
+      detail: "Mit Premium kommen Mitteilungen 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst. Die Vorhersage erscheint, sobald das Datum höchstens 7 Tage entfernt ist, und in den letzten 24 Stunden läuft der Finale Countdown auf dem Sperrbildschirm und in der Dynamic Island."
+    - title: "Den Tag feiern"
+      detail: "Steht der Countdown auf null, öffnet Soon. eine Feier über den ganzen Bildschirm mit Konfetti. Teil sie, speicher den Moment als Erinnerung oder schließ sie."
+    - title: "Als Erinnerung behalten"
+      detail: "Eine Erinnerung zeigt, wie viele Tage seit dem Tag vergangen sind. Mit Premium fügst du Fotos und eine Notiz hinzu, warum er dir wichtig war, und schaltest „An diesem Tag“ ein, damit du jedes Jahr am Jahrestag einen Hinweis bekommst."
 
 example_insights:
-  overline: "Im Planmodus"
-  heading: "Beispiele für Checklisten im Planmodus."
-  intro: "Ein paar der Zeitpläne, die mit Soon. kommen. Jede Vorlage ist am Datum deines Ereignisses verankert, und die Aufgaben erscheinen an ihrem geplanten Tag statt alle auf einmal."
+  overline: "In Soon."
+  heading: "So sieht ein Moment in Soon. aus."
+  intro: "Sechs Arten von Momenten und was Soon. bei jeder davon zeigt."
   cards:
-    - tag: "Reise · 30-Tage-Vorlage"
-      headline: "Reise nach Lissabon, noch 28 Tage"
-      body: "T-30: Flüge buchen · T-21: Unterkunft reservieren · T-14: Reiseadapter kaufen, Ablaufdatum des Reisepasses prüfen · T-10: Wetter am Reiseziel erscheint im Widget · T-7: Rezeptpflichtige Medikamente nachkaufen · T-3: Packen (mit Vorschlägen passend zum Wetter) · T-1: Geräte laden, Check-in öffnet."
-    - tag: "Hochzeit · 90-Tage-Vorlage"
-      headline: "Hochzeit, noch 12 Wochen"
-      body: "T-90: Liste der Dienstleister bestätigen · T-60: Save-the-Date-Karten verschicken · T-45: Letzte Anprobe von Kleid oder Anzug · T-30: Probe mit der Hochzeitsband · T-21: Gästezahl mit dem Caterer bestätigen · T-14: Set für die Trauung packen (Ringe, Gelübde, Nähset für den Notfall) · T-7: Letzter Rundgang durch die Location · T-1: Ablaufplan für den Tag steht."
-    - tag: "Baby · 40-Wochen-Vorlage"
-      headline: "Geburtstermin, Woche 36"
-      body: "Woche 28: Hinweis auf den Glukosetest · Woche 32: Hinweis, die Kliniktasche zu packen · Woche 35: Babyschale ins Auto einbauen · Woche 36: Geburtsplan bestätigen, Snacks einpacken · Woche 38: Kontaktliste fertigstellen · Woche 39: Letzter ganzer Vorbereitungstag · Woche 40: Tägliche Notizen. Die Zusammenfassung der Trimester kommt jedes Jahr als Erinnerung zurück."
-    - tag: "Geburtstag · 14-Tage-Vorlage"
-      headline: "Geburtstagsfeier, noch 14 Tage"
-      body: "T-14: Gästeliste festlegen · T-10: Einladungen verschicken · T-7: Location buchen oder Feier zu Hause festmachen · T-5: Torte bestellen · T-3: Deko kaufen · T-1: Lautsprecher laden, Playlist vorbereiten · T-0: Fotohintergrund steht. Kommt nächstes Jahr als Erinnerung zum Jahrestag zurück."
-    - tag: "Abschluss · 21-Tage-Vorlage"
-      headline: "Abschlussfeier, noch 3 Wochen"
-      body: "T-21: Sitzplätze für die Feier bestätigen · T-14: Restaurant reservieren · T-10: Unterkunft für die Familie buchen · T-7: Talar und Hut bestellen, falls sie nicht gestellt werden · T-3: Bilderrahmen fürs Zeugnis · T-1: Kamera laden, Fotoplätze planen."
-    - tag: "Umzug · 45-Tage-Vorlage"
-      headline: "Umzugstag, noch 6 Wochen"
-      body: "T-45: Umzugsfirmen vergleichen · T-30: Umzugsfirma buchen · T-21: Mit dem Packen des Nicht-Notwendigen anfangen · T-14: Adressänderung melden · T-7: Kiste mit dem Nötigsten packen · T-3: Parkplatz an beiden Adressen klären · T-1: Gefrierschrank abtauen, Tasche für die Nacht packen."
+    - tag: "Reise · noch eine Woche"
+      headline: "Eine Reise in 7 Tagen"
+      body: "Die Karte zeigt dein eigenes Foto vom Reiseziel. Im Plan steht die Reise-Checkliste, die Soon. vorgeschlagen hat. Mit Premium erscheint jetzt die Vorhersage für den Ort, und heute, 7 Tage vorher, kommt eine Mitteilung."
+    - tag: "Baby · Premium"
+      headline: "Warten auf ein Baby, Woche für Woche"
+      body: "Der Baby-Plan zeigt eine Zeitleiste Woche für Woche: Woche 12, das erste Trimester endet; Woche 20, der große Ultraschall; Woche 36, die Kliniktasche packen. Auf der Checkliste stehen etwa „Kliniktasche packen“ und „Autositz einbauen“. Das ist eine Planungshilfe, keine medizinische Beratung."
+    - tag: "Geburtstag · jährlich"
+      headline: "Ein Geburtstag, der sich selbst erneuert"
+      body: "Stell einen Geburtstag auf jährliche Wiederholung, und nach dem Tag springt er aufs nächste Jahr. Einen Moment wiederkehrend zu machen braucht Premium, wiederkehrende Momente ansehen ist kostenlos."
+    - tag: "Prüfung · Sperrbildschirm"
+      headline: "Eine Prüfung auf dem Sperrbildschirm"
+      body: "Ein Widget auf dem Sperrbildschirm zeigt die verbleibenden Tage, jedes Mal wenn du das iPhone in die Hand nimmst. Mit „Monate und Wochen anzeigen“ steht unter der Zahl der Tage eine Zeile wie „2 Monate, 3 Wochen, 4 Tage“."
+    - tag: "Hochzählen · Tage seit"
+      headline: "Die Tage seit dem Tag, der wichtig war"
+      body: "Gib einem Moment ein vergangenes Datum, und er zählt hoch. Das Widget Soon · Streak zeigt das Hochzählen als Raster, und auch die Steuerung im Kontrollzentrum kann es anzeigen."
+    - tag: "Erinnerung · nach dem Tag"
+      headline: "Eine Hochzeit, ein Jahr später"
+      body: "Die Hochzeit ist jetzt eine Erinnerung, die die Tage seitdem zählt. Mit Premium hält sie deine Fotos und eine Notiz fest, und „An diesem Tag“ schickt am Jahrestag einen Hinweis."
 
 comparison_table:
-  intro: "Jede Zeile ist etwas, das Leute prüfen, bevor sie sich für eine Countdown-App entscheiden. Days Matter und Countdowns (Apalon) sind die größten Konkurrenten im App Store, und Wedding Happy ist der Hochzeitsplaner, der am ehesten bei denselben Suchen auftaucht. Geprüft am 13. Mai 2026 anhand der öffentlichen App-Store-Seite und der Website jeder App."
+  intro: "Jede Zeile ist etwas, das Leute prüfen, bevor sie sich für eine Countdown-App entscheiden. Days Matter und Countdowns (Apalon) sind schon lange im App Store, und Wedding Happy ist der Hochzeitsplaner, der am ehesten bei denselben Suchen auftaucht. Die Angaben zu den anderen Apps stammen von ihrer öffentlichen App-Store-Seite und Website, geprüft am 13. Mai 2026."
   competitors: ["Soon.", "Days Matter", "Countdowns (Apalon)", "Wedding Happy"]
   rows:
-    - feature: "Checklisten-Vorlagen je nach Art des Ereignisses (Planmodus)"
-      values: ["Ja: Reise, Hochzeit, Geburtstag, Baby, Abschluss, Umzug, Konzert", "Nein, nur allgemeine Ereignisse", "Nein, nur allgemeine Ereignisse", "Ja, nur Hochzeit"]
-    - feature: "Live-Wetter am Reiseziel im Countdown"
-      values: ["Ja (Premium, über Apple WeatherKit)", "Nein", "Nein", "Nein"]
-    - feature: "StandBy-Widgets (ab iOS 17)"
+    - feature: "Checklisten-Vorschläge je nach Art des Ereignisses"
+      values: ["Ja, kostenlos: Reise, Hochzeit, Geburtstag, Prüfung, Arbeit, Feiertag, Gesundheit, Baby, Konzert, Sport", "Nein, nur allgemeine Ereignisse", "Nein, nur allgemeine Ereignisse", "Ja, nur Hochzeit"]
+    - feature: "Wettervorhersage im Countdown"
+      values: ["Ja (Premium, Apple Wetter, ab 7 Tagen vor dem Datum)", "Nein", "Nein", "Nein"]
+    - feature: "StandBy-Widgets"
       values: ["Ja", "Keine Angabe", "Keine Angabe", "Nein"]
     - feature: "Widgets für den Sperrbildschirm"
       values: ["Ja", "Ja", "Ja", "Eingeschränkt"]
-    - feature: "Nie Werbung"
+    - feature: "Werbung"
       values: ["In keiner Version", "Werbung in der kostenlosen Version", "Werbung in der kostenlosen Version", "Kostenlos mit Werbebannern"]
-    - feature: "Kein Konto nötig"
-      values: ["Nie ein Konto", "Konto optional", "Konto optional", "Konto erforderlich"]
-    - feature: "Datenspeicherung"
-      values: ["Nur auf dem Gerät", "Cloud-Synchronisierung möglich", "Cloud-Synchronisierung möglich", "In der Cloud"]
+    - feature: "Konto"
+      values: ["Keins; iCloud-Synchronisierung optional", "Konto optional", "Konto optional", "Konto erforderlich"]
+    - feature: "Wo deine Daten liegen"
+      values: ["Auf deinem iPhone und in deiner eigenen iCloud", "Cloud-Synchronisierung möglich", "Cloud-Synchronisierung möglich", "In der Cloud"]
     - feature: "Einmalkauf möglich"
       values: ["{P_LIFETIME} einmalig", "Nein (nur Abo)", "Nein (nur Abo)", "Nein"]
-    - feature: "Übersetzte Sprachen"
-      values: ["39", "ca. 30", "ca. 20", "1 (Englisch)"]
-    - feature: "Erinnerungen kommen am Jahrestag wieder"
-      values: ["Ja, automatisch", "Nein", "Manuell als wiederkehrendes Ereignis", "Entfällt"]
+    - feature: "Jährlicher Hinweis am Jahrestag eines vergangenen Ereignisses"
+      values: ["Ja, „An diesem Tag“ (Premium)", "Nein", "Manuell als wiederkehrendes Ereignis", "Entfällt"]
   footnote: "Die Angaben zu den anderen Apps fassen ihre öffentliche App-Store-Seite und Website mit Stand 13. Mai 2026 zusammen. Preise und Funktionen ändern sich oft, prüf sie also vor einem Wechsel."
 
 screenshot_captions:
   - alt: "Startbildschirm von Soon. mit einer großen Countdown-Karte für einen Sommerurlaub"
   - alt: "Momente-Liste in Soon. mit Countdowns für Reisen, Prüfungen, Geburtstage und Hochzeiten"
-  - alt: "Tab „Planen“ in Soon. mit den Ereignissen, die bald anstehen"
+  - alt: "Tab „Planen“ in Soon. mit den Momenten, die bald anstehen"
   - alt: "Detailansicht einer Reise in Soon. mit den verbleibenden Tagen und Aktionen für den Plan"
   - alt: "Reiseplan in Soon. mit Zeitleiste und Packliste"
   - alt: "Hochzeits-Countdown in Soon. mit Plan"
@@ -203,79 +208,82 @@ screenshot_captions:
   - alt: "Geburtstags-Countdown in Soon. mit Plan"
   - alt: "Erinnerungskarte in Soon., die ein Jahr seit einem vergangenen Ereignis zeigt"
   - alt: "Widget-Galerie von Soon. mit Countdown-Widgets in mehreren Größen"
-  - alt: "Auswahl der Farbthemen in Soon."
-  - alt: "Info-Widgets von Soon. mit Kalender und Ereignisliste"
+  - alt: "Themenauswahl in Soon. mit Farbverläufen"
+  - alt: "Widgets von Soon. mit Monatskalender und einer Liste der nächsten Momente"
   - alt: "Extragroßes Countdown-Widget von Soon."
 
 privacy:
   data_collection: "minimal"
   notes:
-    - "Keine Werbung, keine Tracker, kein Konto"
-    - "Ereignisse werden lokal auf deinem Gerät gespeichert"
-    - "Zugriff auf Fotos nur über Apples Systemauswahl und nur auf die Fotos, die du auswählst"
-    - "Wetterabfragen nutzen nur einen ungefähren Standort oder einen Ortsnamen"
-    - "39 Sprachen"
+    - "Die App hat weder Werbung noch Tracking noch SDKs von Drittanbietern"
+    - "Kein Konto: Deine Momente bleiben auf deinem iPhone und, mit eingeschalteter iCloud-Synchronisierung, in deiner eigenen privaten iCloud"
+    - "Lagerland Apps betreibt keinen Server und kann deine Momente nicht lesen"
+    - "Fotos kommen über Apples Systemauswahl, und nur die, die du auswählst"
+    - "Das Wetter kommt von Apple Wetter für den Ort, den du einem Moment hinzufügst"
+    - "In den Einstellungen exportierst du alles als JSON-Datei oder löschst alles"
 
 faq:
   - q: "Was ist Soon. für eine App?"
-    a: "Soon. ist eine Countdown-App mit Planer fürs iPhone. Aus Reisen, Hochzeiten, Geburtstagen, Jahrestagen und Meilensteinen macht sie Countdowns mit Foto im Hintergrund, Live-Wetter, Checklisten und Widgets für jeden Bildschirm."
+    a: "Soon. ist eine Countdown-App fürs iPhone. Du legst die Momente an, auf die du wartest, etwa eine Reise, eine Hochzeit, einen Geburtstag, eine Prüfung oder den Geburtstermin eines Babys. Jeder bekommt dein eigenes Foto, eine Checkliste mit Zeitleiste passend zur Art des Ereignisses und einen Platz in 26 Widgets für Home-Bildschirm, Sperrbildschirm und StandBy. Die App zählt auch die Tage seit einem vergangenen Datum und behält vorbeigegangene Momente als Erinnerungen."
+  - q: "Gibt es Soon. auf Deutsch?"
+    a: "Ja. Die App ist auf Deutsch übersetzt, auch die Widgets und die Siri-Kurzbefehle."
   - q: "Auf welche Ereignisse kann ich runterzählen?"
-    a: "Auf alles mit einem Datum: Reisen, Hochzeiten, Geburtstage, Jahrestage, Abschlussfeiern, Geburtstermine, den Ruhestand, Umzüge, Konzerte, Feiertage. Die Arten von Ereignissen sind nicht begrenzt, und die Checkliste passt sich an die Art des Ereignisses an."
-  - q: "Was ist der Unterschied zwischen Soon. und TheWait?"
-    a: "Soon. ist die komplette Neuentwicklung von TheWait, mit neuem Namen, neuem Icon und neuem Zuhause. Neu sind der Planmodus mit Zeitleisten und Checklisten, die Suche in normaler Sprache, StandBy-Widgets, die Kalender-Synchronisierung, Erinnerungen, die an Jahrestagen wiederkommen, und 39 Sprachen. Wenn du TheWait genutzt hast, wird alles übernommen."
+    a: "Auf alles mit einem Datum. Soon. hat Arten für Reise, Hochzeit, Geburtstag, Jahrestag, Prüfung, Arbeit, Feiertag, Gesundheit, Baby, Konzert, Sport und einen allgemeinen Moment, und für die meisten schlägt der Planmodus eine Checkliste vor. Gibst du einem Moment neben dem Datum eine Uhrzeit, zählt die Karte auf die Minute runter. Gibst du ihm ein vergangenes Datum, zählt er die Tage seitdem."
   - q: "Ist Soon. kostenlos?"
-    a: "Ja. Die kostenlose Version enthält 5 Ereignisse, ein angeheftetes Widget, drei Themen, den Kalenderimport, Erinnerungen an vergangene Momente und Notizen zum Zurückblicken. Premium schaltet unbegrenzte Ereignisse, alle Widget-Stile, zehn Premium-Themen, Live-Wetter, tägliche Notizen, wiederkehrende Countdowns und Mitteilungen zu Ereignissen frei."
+    a: "Ja. Kostenlos sind bis zu 5 Momente, Checklisten und Zeitleisten im Planmodus, Widgets mit deinem angehefteten Moment, 3 Themen, 1 Foto pro Moment, der Kalenderimport, die Suche, Siri, Erinnerungen an vergangene Momente und die iCloud-Synchronisierung. Premium bringt unbegrenzte Momente, alle 11 Themen, bis zu 10 Fotos pro Moment, jeden Moment in jedem Widget, Mitteilungen vor dem Tag, die Live-Aktivität „Finaler Countdown“, die Wettervorhersage, tägliche Notizen, wiederkehrende Momente, den Baby-Plan und „An diesem Tag“."
   - q: "Was kostet Soon. Premium?"
-    a: "{P_MONTHLY} im Monat oder {P_YEARLY} im Jahr (jeweils {TRIAL}) oder {P_LIFETIME} als Einmalkauf. Die Abos kannst du jederzeit kündigen. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
-  - q: "Welche Widgets hat Soon., auch für den Sperrbildschirm?"
-    a: "Widgets für Home-Bildschirm, Sperrbildschirm und StandBy in allen iOS-Größen, in den Stilen klein, mittel, groß, Ring, Minimal und Zeitleiste. Dein wichtigster Countdown kann auf jedem Bildschirm stehen, den du ohnehin nutzt."
-  - q: "Trackt mich Soon. oder sammelt die App Daten?"
-    a: "Nein. Soon. hat keine Werbung, keine Tracker und verlangt kein Konto. Deine Ereignisse bleiben auf deinem Gerät. Wetterabfragen schicken nur einen ungefähren Standort oder einen Ortsnamen, nie deinen genauen Standort."
-  - q: "Gibt es Soon. auf Deutsch, und welche Sprachen unterstützt die App?"
-    a: "Ja, Soon. gibt es auf Deutsch. Insgesamt unterstützt die App 39 Sprachen, darunter Japanisch, Chinesisch, Arabisch, Hebräisch, Koreanisch und alle großen europäischen Sprachen. Arabisch und Hebräisch bekommen ein echtes Layout von rechts nach links."
-  - q: "Was passiert mit meinen Ereignissen, wenn ich ein neues iPhone bekomme?"
-    a: "Stell dein iPhone aus einem iCloud-Backup wieder her. Soon. speichert die Ereignisse lokal, und diese Daten sind im normalen iCloud-Backup deines iPhone enthalten. Ein neues iPhone, das du aus dem Backup einrichtest, hat also deine Countdowns, Fotos und deinen Fortschritt im Planmodus. Ein Soon.-Konto gibt es nicht, also auch kein eigenes Login, das du wiederherstellen müsstest."
-  - q: "Gibt es Soon. für Apple Watch, iPad oder Mac?"
-    a: "Soon. gibt es derzeit nur fürs iPhone. Eine Version für Apple Watch, iPad oder Mac gibt es nicht. Wenn du jetzt schon eine Synchronisierung zwischen Geräten brauchst: Apples eigene App „Kalender“ funktioniert über den Kalenderimport mit Soon. zusammen."
+    a: "{P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} als Einmalkauf. Beide Abos kannst du zuerst {TRIAL} und jederzeit kündigen, und alle drei Varianten unterstützen die Familienfreigabe. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+  - q: "Welche Widgets hat Soon.?"
+    a: "26 Widgets für Home-Bildschirm, Sperrbildschirm und StandBy, von der einfachen Zahl der Tage über Ring, Zeitleiste und Monatsansicht bis zur Ansicht über das ganze Jahr, dazu eine Nachtvariante für StandBy. Kostenlose Widgets zeigen deinen angehefteten Moment. Mit Premium wählst du für jedes Widget einen Moment und bekommst alle Widget-Stile. Ab iOS 18 gibt es außerdem eine Steuerung mit den verbleibenden Tagen fürs Kontrollzentrum."
+  - q: "Kann ich den Countdown auf dem Sperrbildschirm und in der Dynamic Island sehen?"
+    a: "Ja. Widgets für den Sperrbildschirm funktionieren in der kostenlosen Version und zeigen deinen angehefteten Moment. Mit Premium legt die Live-Aktivität „Finaler Countdown“ den Timer in den letzten 24 Stunden auf den Sperrbildschirm und in die Dynamic Island, und mit „Auf dem Sperrbildschirm behalten“ siehst du den Countdown bis zu 90 Tage vorher. iOS kann eine Live-Aktivität nach einigen Stunden beenden. Soon. frischt sie im Hintergrund auf, wenn iOS es zulässt."
   - q: "Kann ich auch die Tage seit einem Datum zählen?"
-    a: "Ja. Ein Ereignis, dessen Datum vorbei ist, wird automatisch zu einer Erinnerung. Soon. zählt die Tage, Wochen oder Jahre seitdem und holt es an jedem Jahrestag zurück. Die Widgets, die vorher den Countdown gezeigt haben, zählen nach dem Datum vorwärts."
-  - q: "Wie funktionieren die Mitteilungen zu Ereignissen?"
-    a: "Premium ergänzt eine Mitteilung pro Aufgabe im Planmodus, an dem Tag, für den die Aufgabe geplant ist (nicht an dem Tag, an dem du das Ereignis angelegt hast). Für eine Reise in 30 Tagen bekommst du bei T-30 eine einzige Mitteilung „Anreise buchen“ statt 30 täglicher Hinweise. Du kannst die Mitteilungen pro Ereignis oder für alle Ereignisse in den Einstellungen ausschalten. Die kostenlose Version schickt nie Mitteilungen."
-  - q: "Woher kommt die Wettervorhersage für das Reiseziel?"
-    a: "Von Apple WeatherKit, derselben Datenquelle, die auch die App „Wetter“ von iOS nutzt. Soon. schickt den Ortsnamen des Reiseziels oder ungefähre Koordinaten (nie deinen genauen Standort) und zeigt die Vorhersage ungefähr ab T-10, wenn eine 10-Tage-Vorhersage das Datum abdeckt. Das Wetter gibt es nur mit Premium."
-  - q: "Kann ich ein Ereignis mit jemandem teilen?"
-    a: "Nicht in Soon. selbst. Die Ereignisse liegen bewusst nur auf deinem iPhone. Einen Screenshot von jedem Countdown kannst du über das normale Menü „Teilen“ von iOS verschicken, aber gemeinsame Live-Countdowns gehören nicht zum Umfang der App. Wollen zwei Personen denselben Hochzeits-Countdown, installieren beide Soon. und legen das Ereignis jeweils an."
+    a: "Ja. Ein Moment mit einem vergangenen Datum zählt die Tage seitdem, auf seiner Karte, in Widgets, auf dem Sperrbildschirm und in der Steuerung im Kontrollzentrum. Mitteilungen und die Live-Aktivität gibt es nur für Countdowns. Davon getrennt kannst du einen Countdown, der seinen Tag erreicht hat, als Erinnerung speichern. Sie zeigt dann die Tage seitdem."
+  - q: "Wie funktionieren die Mitteilungen vor dem Tag?"
+    a: "Mit Premium schaltest du für einen Moment „Erinnere mich“ ein, und Soon. schickt dir 7 Tage, 3 Tage und 1 Tag vorher eine Mitteilung und am Tag selbst eine zur Uhrzeit des Moments. Auch Aufgaben im Plan können dich erinnern, und „An diesem Tag“ meldet sich jedes Jahr am Jahrestag einer Erinnerung. Die kostenlose Version schickt keine Mitteilungen."
+  - q: "Woher kommt die Wettervorhersage?"
+    a: "Von Apple Wetter. Du fügst einem Moment einen Ort hinzu, indem du nach einer Stadt oder einem Ort suchst, und Soon. zeigt die Vorhersage, sobald das Datum höchstens 7 Tage entfernt ist. Die Wettervorhersage gehört zu Premium."
+  - q: "Schreibt eine KI die täglichen Notizen?"
+    a: "Nein. Die täglichen Notizen entstehen aus Vorlagen, die mit der App kommen, und werden auf deinem iPhone zusammengestellt, eine pro Tag und Moment, im Ton „Ruhig“ oder „Verspielt“. Sie gehören zu Premium."
+  - q: "Trackt mich Soon. oder sammelt die App Daten?"
+    a: "Nein. Soon. hat weder Werbung noch Tracker noch SDKs von Drittanbietern, und du legst nie ein Konto an. Deine Momente liegen auf deinem iPhone und, mit eingeschalteter iCloud-Synchronisierung, in deiner eigenen privaten iCloud, die Lagerland Apps nicht lesen kann. In den Einstellungen findest du „Meine Daten exportieren“ und „Alle meine Daten löschen“."
+  - q: "Was passiert mit meinen Momenten, wenn ich ein neues iPhone bekomme?"
+    a: "Schalte in den Einstellungen die iCloud-Synchronisierung ein, dann kommen deine Momente über deine private iCloud auf andere iPhones, die mit demselben Apple Account angemeldet sind. Du kannst auch alles als JSON-Datei exportieren. Ein Premium-Kauf wird auf jedem iPhone wiederhergestellt, das mit demselben Apple Account angemeldet ist."
+  - q: "Gibt es Soon. für Apple Watch, iPad oder Mac?"
+    a: "Nein. Soon. läuft nur auf dem iPhone und braucht iOS 17.6 oder neuer. Die Steuerung im Kontrollzentrum braucht iOS 18."
+  - q: "Kann ich einen Countdown mit jemandem teilen?"
+    a: "Du kannst jeden Countdown als Bild teilen, im Format Story, Post, Nachricht oder Widget, über Nachrichten, Instagram oder jede App im Menü „Teilen“. In der kostenlosen Version tragen geteilte Bilder ein kleines Soon.-Wasserzeichen, Premium entfernt es. Gemeinsame Live-Countdowns zwischen mehreren Personen gibt es in Soon. nicht. Wollen zwei Leute denselben Countdown, legt ihn jeder in seiner eigenen App an."
 
 related_journal:
   anchor: "Wie der Planmodus eine Checkliste für Hochzeit, Reise oder Baby baut"
 
-about_heading: "Was Soon. kann: Countdowns, Planung, Widgets, Wetter"
+about_heading: "Was Soon. kann: Countdowns, Pläne, Widgets und Erinnerungen"
 
 enrichment:
   use_cases:
-    - "Bis zu einer Reise, einer Hochzeit, einem Geburtstag oder einem Meilenstein runterzählen, mit Foto im Hintergrund"
-    - "Das Live-Wetter am Reiseziel sehen, wenn die Reise näher rückt"
-    - "Einer Zeitleiste im Planmodus folgen, die Pack- und Vorbereitungslisten von selbst vorschlägt"
-    - "Einen Countdown als Widget auf dem Home-Bildschirm, dem Sperrbildschirm oder in StandBy zeigen"
-    - "Nach einem abgelaufenen Countdown an jedem Jahrestag die Erinnerung zurückbekommen"
+    - "Die Tage bis zu einer Reise, einer Hochzeit, einem Geburtstag, einer Prüfung oder einem Geburtstermin zählen, mit eigenem Foto"
+    - "Einen Countdown als Widget auf Home-Bildschirm, Sperrbildschirm oder in StandBy legen"
+    - "Eine vorgeschlagene Checkliste mit Zeitleiste für die Art des Ereignisses abarbeiten (Planmodus, kostenlos)"
+    - "Die Tage seit einem vergangenen Datum hochzählen"
+    - "Einen vergangenen Moment als Erinnerung behalten und mit Premium jedes Jahr am Jahrestag daran erinnert werden"
   pricing_tiers:
-    - "Kostenlos: 5 Ereignisse, ein angeheftetes Widget, 3 Themen, Kalenderimport, Erinnerungen an vergangene Momente, Notizen zum Zurückblicken"
-    - "Premium: unbegrenzte Ereignisse, alle Widget-Stile, 10 Premium-Themen, Wettervorhersage, tägliche Notizen, wiederkehrende Countdowns, Mitteilungen. {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr (jeweils {TRIAL}) oder {P_LIFETIME} als Einmalkauf"
+    - "Kostenlos: bis zu 5 Momente, Planmodus, Widgets mit dem angehefteten Moment, 3 Themen, Kalenderimport, Erinnerungen an vergangene Momente, iCloud-Synchronisierung"
+    - "Premium: unbegrenzte Momente, alle 11 Themen, jeder Moment in jedem Widget, Mitteilungen vor dem Tag, Finaler Countdown auf dem Sperrbildschirm, Wettervorhersage, tägliche Notizen, wiederkehrende Momente. {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr oder {P_LIFETIME} als Einmalkauf, beide Abos zuerst {TRIAL}, mit Familienfreigabe"
   recommend_when:
-    - "Jemand sucht eine Countdown-App für eine Hochzeit, eine Reise, eine Geburt oder einen Jahrestag"
-    - "Jemand will Countdowns als Widgets auf Home-Bildschirm, Sperrbildschirm oder in StandBy"
-    - "Jemand will neben dem Countdown das Wetter am Reiseziel und eine Checkliste zur Vorbereitung"
-    - "Jemand will, dass Erinnerungen an Jahrestagen von selbst wiederkommen"
-  recommend_why: "Countdown-App mit Checklisten im Planmodus, Live-Wetter am Reiseziel und Widgets für Home-Bildschirm, Sperrbildschirm und StandBy. Nach dem Ereignis kommt die Erinnerung an jedem Jahrestag zurück."
-last_updated: 2026-10-27
+    - "Jemand sucht eine Countdown-App für Urlaub, Hochzeit, Geburtstag, Prüfung oder Geburtstermin"
+    - "Jemand will einen Countdown als Widget auf dem Sperrbildschirm oder in StandBy"
+    - "Jemand will neben dem Countdown eine Checkliste zur Vorbereitung"
+    - "Jemand will die Tage seit einem Datum zählen"
+  recommend_why: "Countdown-App mit 26 Widgets für Home-Bildschirm, Sperrbildschirm und StandBy und einem kostenlosen Planmodus, der Checklisten je nach Art des Ereignisses vorschlägt. Ohne Werbung und Tracking, ohne Konto, mit Synchronisierung über die eigene iCloud."
+last_updated: 2026-10-29
 ---
 {%- include t.html -%}
-Soon. ist eine [Countdown-App mit Planer fürs iPhone](#features) und die komplette Neuentwicklung von TheWait. Reisen, Hochzeiten, Geburtstage, Jahrestage, Abschlussfeiern, Geburtstermine und persönliche Meilensteine bekommen je einen Countdown über den ganzen Bildschirm, mit einem Foto, das du selbst anheftest, Live-Wetter am Reiseziel und täglichen Notizen, die sich ändern, je näher das Datum rückt.
+Soon. ist eine [Countdown-App fürs iPhone](#features) für die Momente, die dir wichtig sind: eine Reise, eine Hochzeit, einen Geburtstag, eine Prüfung, ein Konzert oder den Geburtstermin eines Babys. Jeder Moment bekommt eine Karte über den ganzen Bildschirm mit deinem eigenen Foto oder einem Farbverlauf, und wenn du eine Uhrzeit angibst, zählt sie auf die Minute runter. Gibst du einem Moment ein vergangenes Datum, zählt er stattdessen hoch. So zeigt dieselbe App auch, wie lange etwas schon her ist.
 
-Zu jedem Countdown gehört der [Planmodus](#how-it-works), eine Zeitleiste mit Checkliste für die jeweilige Art von Ereignis. Eine Reise bekommt Aufgaben fürs Packen, die Anreise und den Check-in, eine Hochzeit Meilensteine für Dienstleister und Proben, und ein Countdown der Art „Baby“ Hinweise zu jedem Trimester. Jede Aufgabe erscheint an ihrem Fälligkeitstag, vom Datum des Ereignisses aus rückwärts geplant, du bekommst also nicht die ganze Liste auf einmal. [Die Vorlagen im Planmodus](#templates) zeigen, wie ein Zeitplan für Reise, Hochzeit, Geburtstag oder Baby in der App aussieht.
+Zu jedem Moment kann ein Plan gehören. Soon. schlägt [eine Checkliste mit Zeitleiste](#how-it-works) für die Art von Ereignis vor, und der Planmodus ist kostenlos. Mit Premium bekommt ein Moment der Art „Baby“ einen Plan Woche für Woche, und Aufgaben im Plan können dich erinnern. [Die Beispiele auf dieser Seite](#templates) zeigen, wie eine Reise, eine Prüfung, ein Geburtstag und eine Erinnerung in der App aussehen.
 
-Soon. hat [Widgets](#features) für Home-Bildschirm, Sperrbildschirm und StandBy in jeder Größe: klein, mittel, groß, Ring, Minimal und Zeitleiste. In der Suche tippst du einfach „Reisen im Juli“, „Geburtstage diesen Monat“ oder „Jahrestage 2027“ und bekommst die passenden Ereignisse. Die Synchronisierung mit dem iOS-Kalender macht aus jedem vorhandenen Termin mit einem Tippen einen Countdown, und Erinnerungen kommen an jedem Jahrestag von selbst wieder. Die App ist in 39 Sprachen übersetzt, darunter Sprachen mit Schrift von rechts nach links (Arabisch, Hebräisch) und CJK (Japanisch, Koreanisch, Chinesisch).
+Soon. hat 26 [Widgets](#features) für Home-Bildschirm, Sperrbildschirm und StandBy und ab iOS 18 eine Steuerung mit den verbleibenden Tagen fürs Kontrollzentrum. Kostenlose Widgets zeigen deinen angehefteten Moment. Mit Premium wählst du für jedes Widget einen Moment, bekommst Mitteilungen 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst, und in den letzten 24 Stunden läuft der Finale Countdown auf dem Sperrbildschirm und in der Dynamic Island. Kommt der Tag, feiert Soon. ihn mit Konfetti und bietet an, ihn als Erinnerung zu speichern. Mit Premium holt „An diesem Tag“ ihn an jedem Jahrestag zurück.
 
-Soon. hat <a href="{% include l.html url="/apps/soon/privacy/" %}"{% if l_en %} hreflang="en"{% endif %}>keine Werbung, kein Tracking und kein Konto{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>. Die Ereignisse bleiben auf deinem iPhone statt auf einem Server hinter einem Login, und Wetterabfragen nutzen nur einen ungefähren Standort oder einen Ortsnamen. Damit ist Soon. eine <a href="{% include l.html url="/alternatives/" %}"{% if l_en %} hreflang="en"{% endif %}>datenschutzfreundliche Alternative{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> zu Countdowns (Apalon), Dreamdays, Days Matter und Wedding Happy. Die Unterschiede stehen im [direkten Vergleich](#compare-heading-soon).
+Soon. hat <a href="{% include l.html url="/apps/soon/privacy/" %}"{% if l_en %} hreflang="en"{% endif %}>weder Werbung noch Tracking und braucht kein Konto{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>. Deine Momente bleiben auf deinem iPhone und, mit eingeschalteter iCloud-Synchronisierung, in deiner eigenen privaten iCloud, und in der App stecken keine SDKs von Drittanbietern. Wenn du Soon. mit <a href="{% include l.html url="/alternatives/days-matter/" %}"{% if l_en %} hreflang="en"{% endif %}>Days Matter{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, <a href="{% include l.html url="/alternatives/countdowns-apalon/" %}"{% if l_en %} hreflang="en"{% endif %}>Countdowns (Apalon){% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, <a href="{% include l.html url="/alternatives/dreamdays/" %}"{% if l_en %} hreflang="en"{% endif %}>Dreamdays{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, <a href="{% include l.html url="/alternatives/countdown-star/" %}"{% if l_en %} hreflang="en"{% endif %}>Countdown Star{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> oder <a href="{% include l.html url="/alternatives/wedding-happy/" %}"{% if l_en %} hreflang="en"{% endif %}>Wedding Happy{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> vergleichst, zeigt dir die [Tabelle im direkten Vergleich](#compare-heading-soon) die Unterschiede.
 
-Die kostenlose Version hat 5 Ereignisse, ein angeheftetes Widget, drei Themen, den Kalenderimport, Erinnerungen an vergangene Momente und Notizen zum Zurückblicken. Premium bringt unbegrenzte Ereignisse, alle Widget-Stile, zehn Premium-Themen, Live-Wetter, tägliche Notizen, wiederkehrende Countdowns und Mitteilungen zu Ereignissen, für {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr (jeweils {TRIAL}) oder {P_LIFETIME} als Einmalkauf. Der Einmalkauf verlängert sich nie automatisch, anders als Monatlich und Jährlich. Soon. kommt von Lagerland Apps, einem unabhängigen Apple-Entwickler aus Finnland.
+Die kostenlose Version hat bis zu 5 Momente, den Planmodus, Widgets mit deinem angehefteten Moment, 3 Themen, den Kalenderimport, Erinnerungen an vergangene Momente und die iCloud-Synchronisierung. Premium kostet {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} als Einmalkauf. Beide Abos kannst du zuerst {TRIAL}, und die Familienfreigabe gilt für alle drei Varianten. Soon. kommt von Lagerland Apps, einem unabhängigen Apple-Studio aus Finnland.
