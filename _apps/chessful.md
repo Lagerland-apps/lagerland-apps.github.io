@@ -320,7 +320,7 @@ ratings:
 
 related_journal:
   slug: forty-chess-opponents
-  anchor: "Forty chess opponents, and why no two of them are the same engine"
+  anchor: "Forty chess opponents, and how each one plays differently"
 
 # Render the markdown body as a visible "About Chessful." section with
 # contextual in-body internal links to the methodology, templates,

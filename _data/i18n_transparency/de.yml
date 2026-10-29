@@ -29,7 +29,7 @@ apps:
     permissions:
       - "Lokale Mitteilungen: Erinnerungen an Fälligkeitstage"
       - "Face ID / Touch ID: optionale App-Sperre"
-    notes: "Rechnungen, Abos und Fälligkeitstermine bleiben standardmäßig auf dem Gerät. Die iCloud-Synchronisation ist eine Pro-Funktion, die du selbst einschaltest, und nutzt dein eigenes privates iCloud. Eine PrivacyInfo.xcprivacy liefert die App bisher nicht aus; Apples Angabe im App Store lautet „Keine Daten erfasst“."
+    notes: "Rechnungen, Abos und Fälligkeitstermine bleiben standardmäßig auf dem Gerät. Die iCloud-Synchronisation ist eine Pro-Funktion, die du selbst einschaltest, und nutzt dein eigenes privates iCloud. Eine PrivacyInfo.xcprivacy liefert die App bisher nicht aus. Kein Konto, keine Werbung und kein Tracking."
   appmeta:
     account_required: "Ein Team-API-Schlüssel für App Store Connect (Issuer ID, Key ID, .p8) aus deinem eigenen Entwickler-Account, kein AppMeta-Konto. Er liegt nur auf diesem Mac im macOS-Schlüsselbund und wird nie an Lagerland übertragen."
     network_calls: "Die App Store Connect API (api.appstoreconnect.apple.com) und die Download-Links für Berichte, die sie zurückgibt; Apples öffentliche App-Store-Endpunkte (apps.apple.com, itunes.apple.com, search.itunes.apple.com, amp-api-edge.apps.apple.com) für App-Symbole, Preise der Konkurrenz und die optionale Schlüsselwortrecherche; Apple Ads (api.ads.apple.com, appleid.apple.com) nur, wenn du es verbindest; die Wechselkurse der EZB (data-api.ecb.europa.eu) für die Verkaufsdiagramme; dein gewählter KI-Anbieter, falls du einen nutzt. Kein Server von Lagerland."
@@ -65,14 +65,13 @@ apps:
       - "HealthKit (Schritte, aktive Energie und Trainingsminuten lesen): Fortschritt zum Entsperrziel messen"
       - "Family Controls / Bildschirmzeit (Modus .individual): ablenkende Apps sperren, bis das Ziel erreicht ist"
       - "Lokale Mitteilungen: Hinweise zu Fortschritt und Entsperrung"
-    notes: "Im App Store steht unter App-Datenschutz „Keine Daten erfasst“. HealthKit wird nur gelesen und verlässt nie das Gerät. Family Controls gibt EarnLock nur Tokens, aus denen die App nicht ablesen kann, welche Apps du gesperrt hast. EarnLock ist zur Selbstbeschränkung gedacht, nie als Kindersicherung, und hat weder Konto noch Server."
+    notes: "Kein Konto, keine Analyse und keine eigenen Netzwerkverbindungen. HealthKit wird nur gelesen und verlässt nie das Gerät. Family Controls gibt EarnLock nur Tokens, aus denen die App nicht ablesen kann, welche Apps du gesperrt hast. EarnLock ist zur Selbstbeschränkung gedacht, nie als Kindersicherung, und hat weder Konto noch Server."
   gymlogger-x:
-    network_calls: "Trainingsdaten werden über dein eigenes iCloud synchronisiert (private CloudKit-Datenbank). Der eigene Server von Lagerland (ein Cloudflare Worker) erhält beim ersten Start eine zufällige Installations-ID, das Installationsdatum und optional einen Empfehlungscode, beim Kauf von Pro die Transaktions-ID, das Produkt und die Datumsangaben des Abos. Die optionale Umfrage, wie du auf die App gekommen bist, lädt ihre Liste der Coaches vom selben Server. Trainings- oder Gesundheitsdaten werden nicht gesendet."
-    data_leaves_device: "Trainings: in dein eigenes iCloud und, wenn du es erlaubst, in Apple Health. An den Server von Lagerland: nur eine zufällige Installations-ID, der Empfehlungscode und Kaufdaten."
-    analytics: "Kein Analyse-SDK. Eine zufällige Installations-ID ordnet Weiterempfehlungen zu."
+    network_calls: "Trainingsdaten werden über dein eigenes iCloud synchronisiert (private CloudKit-Datenbank), wenn du bei iCloud angemeldet bist. Die App hat keinen eigenen Server und kontaktiert keinen Server des Studios."
+    data_leaves_device: "Trainings: in dein eigenes iCloud und, wenn du es erlaubst, in Apple Health. An Lagerland geht nichts."
+    analytics: "Keine. Kein Analyse-SDK, und nichts wird hochgeladen."
     collected_data:
       - "Gesundheit und Fitness (Zweck: App-Funktionalität; nicht mit dir verknüpft, nicht zum Tracking verwendet)"
-      - "Geräte-ID: zufällige Installations-ID (Zweck: App-Funktionalität, Analyse; nicht mit dir verknüpft, nicht zum Tracking verwendet)"
     required_reason_apis:
       - "UserDefaults (CA92.1, 1C8F.1)"
       - "Dateizeitstempel (C617.1)"
@@ -80,7 +79,7 @@ apps:
     permissions:
       - "Verbindung zur Apple Watch: Sätze am Handgelenk eintragen, während das iPhone die Einheit führt"
       - "HealthKit: Trainings speichern; Herzfrequenz und aktive Energie lesen"
-    notes: "1500 Übungen und 44 Programme sind in der App enthalten. Im App Store steht unter App-Datenschutz „Keine Daten erfasst“, das Datenschutzmanifest der App gibt dagegen die beiden oben genannten Datentypen an."
+    notes: "1500 Übungen und 44 Programme sind in der App enthalten. Installations-ID, Kaufdaten, Coach-Login und Empfehlungssystem wurden entfernt, die App sendet also nichts mehr an einen Server des Studios. Das Datenschutzmanifest gibt kein Tracking und den einen oben genannten Datentyp an."
   liftlog:
     network_calls: "Fürs Protokollieren keine. StoreKit kontaktiert Apple für den Einmalkauf; eine Cloud-Synchronisierung gibt es nicht."
     data_leaves_device: "Nur was du selbst weitergibst: Trainings und aktive Energie an Apple Health, wenn du den Export einschaltest, und Backup- oder CSV-Dateien, die du teilst."
@@ -108,9 +107,9 @@ apps:
     analytics: "Keine."
     required_reason_apis:
       - "UserDefaults (CA92.1)"
-    notes: "PrivacyInfo.xcprivacy setzt NSPrivacyTracking auf false, ohne Tracking-Domains und ohne erfasste Datentypen, und Apples Angabe im App Store lautet „Keine Daten erfasst“. Das einzige Entitlement ist Game Center; kein iCloud, kein CloudKit, kein Schlüsselbund und keine App Group. Der Fortschritt bleibt auf dem Gerät."
+    notes: "PrivacyInfo.xcprivacy setzt NSPrivacyTracking auf false, ohne Tracking-Domains und ohne erfasste Datentypen, und die App bindet keine Werbe- oder Analyse-SDKs ein. Das einzige Entitlement ist Game Center; kein iCloud, kein CloudKit, kein Schlüsselbund und keine App Group. Der Fortschritt bleibt auf dem Gerät."
   observa:
-    network_calls: "Keine. Alle Korrelationsanalysen laufen auf dem Gerät."
+    network_calls: "Keine eigenen. Alle Analysen laufen auf dem Gerät; online gehen nur Käufe, die Apple abwickelt, und Links, die du öffnest."
     data_leaves_device: "Nein."
     analytics: "Keine."
     collected_data:
@@ -119,13 +118,13 @@ apps:
       - "UserDefaults (CA92.1)"
     permissions:
       - "HealthKit (Schlaf, HRV, EKG und Aktivität lesen): Erkenntnisse erzeugen"
-      - "HealthKit (Einträge schreiben): Erkenntnisse in Apple Health speichern"
+      - "HealthKit (Einträge schreiben): eingetragenes Wasser und auf der Apple Watch aufgezeichnete Trainings speichern"
     notes: "Muster werden auf dem Gerät erkannt. Daten aus Apple Health verlassen dein Gerät nie."
   pawza:
     third_party_sdks_list:
       - "ZIPFoundation (lokale Archivverarbeitung für den Export, kein Netzwerk)"
-    network_calls: "Keine. Dokumentenscan und KI-Auslesen laufen auf dem Gerät. Die optionale iCloud-Synchronisierung nutzt deine eigene private CloudKit-Datenbank."
-    data_leaves_device: "Nur in dein iCloud, wenn du es einschaltest. Funktioniert mit dem erweiterten Datenschutz für iCloud."
+    network_calls: "Keine eigenen. Dokumentenscan und KI-Auslesen laufen auf dem Gerät. Die optionale iCloud-Synchronisierung nutzt deine eigene private CloudKit-Datenbank."
+    data_leaves_device: "Nur in dein iCloud, wenn du es einschaltest."
     analytics: "Keine."
     collected_data:
       - "Gesundheit und Fitness (Impfungen, Medikamente; Zweck: App-Funktionalität; nicht mit dir verknüpft, nicht zum Tracking verwendet)"
@@ -139,7 +138,7 @@ apps:
       - "Kamera: Dokumente vom Tierarzt scannen"
       - "Fotomediathek: vorhandene Fotos und Dokumente anhängen"
       - "Lokale Mitteilungen: Erinnerungen an Impfungen, Medikamente und Kontrolltermine"
-    notes: "Akten, Fotos, gescannte Dokumente und Notizen bleiben standardmäßig auf dem Gerät. Dokumentenscan (Texterkennung mit Vision) und KI-Auslesen (Apple Intelligence ab iOS 26) laufen auf dem Gerät, Dokumente werden nie hochgeladen. Die optionale iCloud-Synchronisierung nutzt deine eigene private CloudKit-Datenbank."
+    notes: "Akten, Fotos, gescannte Dokumente und Notizen bleiben standardmäßig auf dem Gerät. Der Dokumentenscan (Texterkennung mit Vision) läuft für alle auf dem Gerät. Das KI-Auslesen mit Apple Intelligence braucht Pawza Pro und iOS 26 oder neuer auf einem geeigneten Gerät und läuft ebenfalls auf dem Gerät. Dokumente werden zur Verarbeitung nicht hochgeladen. Die optionale iCloud-Synchronisierung nutzt deine eigene private CloudKit-Datenbank."
   rightsplit:
     network_calls: "Eine: die öffentliche Datei mit den täglichen Wechselkursen der Europäischen Zentralbank (eurofxref-daily.xml), höchstens einmal am Tag abgerufen, um Währungen umzurechnen. Nutzerdaten werden dabei nicht gesendet. Belege scannen und aufteilen kommt ohne Netzwerk aus; geteilt wird über Nachrichten oder WhatsApp."
     data_leaves_device: "Nur über das Menü „Teilen“ von iOS, wenn du es so willst."
@@ -153,13 +152,13 @@ apps:
       - "Kontaktauswahl (wenn du Personen aus deinen Kontakten hinzufügst)"
     notes: "Die Texterkennung auf Belegen nutzt Apples Vision-Framework auf dem Gerät. Kein Bild verlässt das Gerät."
   mockly:
-    account_required: "Optional ein Apple Account mit Zugriff auf App Store Connect, nur nötig, wenn du Screenshots hochladen willst."
-    network_calls: "Apples App Store Connect API (nur beim Hochladen). Optionale KI-Übersetzung (nur wenn du sie einschaltest und eine Übersetzung anforderst)."
-    data_leaves_device: "Nur was du hochladen willst: Screenshots an App Store Connect und Text an einen Übersetzungsdienst, wenn du eine Übersetzung anforderst."
+    account_required: "Kein Lagerland-Konto. Dein eigener API-Schlüssel für App Store Connect, nur wenn du Screenshots hochlädst."
+    network_calls: "Apples App Store Connect API (nur beim Hochladen). Der KI-Anbieter, den du wählst (OpenAI, Anthropic oder Google), nur wenn du eine Übersetzung anforderst. Käufe laufen über Apple. Kein Server von Lagerland."
+    data_leaves_device: "Nur was du selbst sendest: beim Hochladen die gerenderten Screenshots an Apple, beim Übersetzen den Text, die Zielsprachen und deinen KI-Schlüssel an den gewählten Anbieter. Die Schlüssel liegen im macOS-Schlüsselbund."
     analytics: "Keine."
     permissions:
       - "Vom Benutzer ausgewählte Dateien: Screenshots öffnen und speichern"
-    notes: "Gerendert wird lokal mit Apples Metal. Übersetzen und Hochladen löst du immer selbst aus. Früher hieß die App ScreenFlow Studio."
+    notes: "Gerendert wird auf deinem Mac. Übersetzen und Hochladen löst du immer selbst aus. Früher hieß die App ScreenFlow Studio."
   shogiful:
     network_calls: "Keine zu Dritten. Die Engine YaneuraOu läuft lokal; ihre Datei mit dem neuronalen Netz wird einmal von Apples App-Store-Servern geladen (On-Demand Resources)."
     data_leaves_device: "Nein. Die optionale iCloud-Synchronisierung nutzt dein eigenes iCloud."

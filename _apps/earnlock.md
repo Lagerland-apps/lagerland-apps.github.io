@@ -66,7 +66,7 @@ plans:
     features:
       - "Everything in Premium · Yearly"
       - "One-time purchase, no renewal"
-      - "Restores through your Apple ID on a new iPhone"
+      - "Restores through your Apple Account on a new iPhone"
       - "Family Sharing"
     highlight_label: "Pay once"
 
@@ -127,7 +127,7 @@ founder:
   signals:
     - "No EarnLock server: the app makes no network connections of its own"
     - "No third-party SDKs of any kind, including analytics, ads, and crash reporting"
-    - "No account; Premium restores through your Apple ID"
+    - "No account; Premium restores through your Apple Account"
     - "Lagerland's App Store catalogue is {APP_COUNT} privacy-first apps under the same data rules"
   external_link:
     href: "/lagerland-apps/"
@@ -221,7 +221,7 @@ comparison_table:
     - feature: "Apple Watch app + complications"
       values: ["Yes (Premium); the watch reads its own Health data", "iPhone only", "iPhone only", "iPhone only", "Yes, system-wide"]
     - feature: "Account or sign-up required"
-      values: ["No account needed", "Account required", "Account required", "Account required", "Apple ID (system-level)"]
+      values: ["No account needed", "Account required", "Account required", "Account required", "Apple Account (system-level)"]
     - feature: "Third-party tracking SDKs"
       values: ["None", "Multiple: analytics & ads", "Some: analytics", "Some: analytics", "Apple only"]
     - feature: "Daily emergency unlock"
@@ -283,7 +283,7 @@ faq:
   - q: "Does EarnLock support Family Sharing?"
     a: "Yes. Monthly, Yearly, and Lifetime all support Family Sharing, so the members of your Apple family group can use Premium too. Each person's goals, locked apps, and streaks stay on their own iPhone."
   - q: "Is Lifetime really a one-time payment?"
-    a: "Yes. Lifetime is one payment of {P_LIFETIME} with no renewal, and it restores through your Apple ID if you move to a new iPhone. The App Store shows the price before you confirm."
+    a: "Yes. Lifetime is one payment of {P_LIFETIME} with no renewal, and it restores through your Apple Account if you move to a new iPhone. The App Store shows the price before you confirm."
   - q: "How accurate is the screen-time-saved estimate?"
     a: "It's an estimate, and the card says so. iOS doesn't let apps read your real per-app Screen Time, so EarnLock counts what it can see: each time a locked app stops you. It multiplies those attempts by 9 minutes."
 

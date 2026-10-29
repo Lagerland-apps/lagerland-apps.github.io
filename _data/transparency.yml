@@ -53,7 +53,7 @@ apps:
     permissions:
       - "Local notifications: bill due-date reminders"
       - "Face ID / Touch ID: optional App Lock"
-    notes: "Bill, subscription, and due-date data stays on-device by default; iCloud Sync is an opt-in Pro feature that uses your own private iCloud. No PrivacyInfo.xcprivacy ships yet; Apple's App Store label reads Data Not Collected."
+    notes: "Bill, subscription, and due-date data stays on-device by default; iCloud Sync is an opt-in Pro feature that uses your own private iCloud. No PrivacyInfo.xcprivacy ships yet. No account, no ads, and no tracking."
 
   - slug: appmeta
     manifest_source: source
@@ -122,7 +122,7 @@ apps:
       - "HealthKit (read steps, active energy, exercise minutes): measure progress toward the unlock goal"
       - "Family Controls / Screen Time (.individual mode): shield distracting apps until the goal is met"
       - "Local notifications: progress and unlock alerts"
-    notes: "App Store Privacy Nutrition Label reads \"Data Not Collected.\" HealthKit is read-only and never leaves the device; Family Controls hands EarnLock opaque tokens, so it cannot see which apps you blocked. It is for restricting yourself, never parental control, and it has no account and no server."
+    notes: "No account, no analytics, and no network connections of its own. HealthKit is read-only and never leaves the device; Family Controls hands EarnLock opaque tokens, so it cannot see which apps you blocked. It is for restricting yourself, never parental control, and it has no account and no server."
 
   - slug: gymlogger-x
     manifest_source: source
@@ -131,12 +131,11 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "Workout data syncs through your own iCloud (CloudKit private database). Lagerland's own server (a Cloudflare Worker) receives a random install ID, the install date and an optional referral code on first launch, and the transaction ID, product and subscription dates when you buy Pro; the optional how-did-you-hear survey loads its coach list from the same server. No workout or health data is sent."
-    data_leaves_device: "Workouts: your own iCloud, and Apple Health if you allow it. Lagerland's server: a random install ID, referral code and purchase records only."
-    analytics: "No analytics SDK; a random install ID is used for referral attribution."
+    network_calls: "Workout data syncs through your own iCloud (CloudKit private database) when you're signed in to iCloud. The app has no server of its own and contacts no studio server."
+    data_leaves_device: "Workouts: your own iCloud, and Apple Health if you allow it. Nothing goes to Lagerland."
+    analytics: "None. No analytics SDK, and nothing is uploaded."
     collected_data:
       - "Health & Fitness (purpose: app functionality, not linked, not used for tracking)"
-      - "Device ID: random install ID (purpose: app functionality, analytics; not linked, not used for tracking)"
     required_reason_apis:
       - "UserDefaults (CA92.1, 1C8F.1)"
       - "File timestamp (C617.1)"
@@ -144,7 +143,7 @@ apps:
     permissions:
       - "Apple Watch connectivity: log sets from the wrist while the iPhone runs the session"
       - "HealthKit: save workouts; read heart rate and active energy"
-    notes: "1,500 exercises and 44 programs ship inside the app. The App Store label reads \"Data Not Collected\", while the app's own privacy manifest declares the two data types above."
+    notes: "1,500 exercises and 44 programs ship inside the app. The install ID, purchase records, coach login, and referral system were removed, so the app no longer sends anything to a studio server. The privacy manifest declares no tracking and the one data type above."
 
   - slug: liftlog
     manifest_source: source
@@ -201,7 +200,7 @@ apps:
     required_reason_apis:
       - "UserDefaults (CA92.1)"
     permissions: []
-    notes: "PrivacyInfo.xcprivacy declares NSPrivacyTracking false with no tracking domains and no collected data types, and Apple's App Store label reads Data Not Collected. The only entitlement is Game Center; no iCloud, CloudKit, Keychain or App Group. Progress stays on the device."
+    notes: "PrivacyInfo.xcprivacy declares NSPrivacyTracking false with no tracking domains and no collected data types, and the app links no advertising or analytics SDKs. The only entitlement is Game Center; no iCloud, CloudKit, Keychain or App Group. Progress stays on the device."
 
   - slug: observa
     manifest_source: source
@@ -210,7 +209,7 @@ apps:
     third_party_sdks: 0
     third_party_sdks_list: []
     account_required: false
-    network_calls: "None. All correlation analysis runs on-device."
+    network_calls: "None of its own. All analysis runs on-device; only purchases, handled by Apple, and links you open go online."
     data_leaves_device: "No."
     analytics: "None."
     collected_data:
@@ -219,7 +218,7 @@ apps:
       - "UserDefaults (CA92.1)"
     permissions:
       - "HealthKit (read sleep, HRV, ECG, activity): generate insights"
-      - "HealthKit (write entries): save insights back to Apple Health"
+      - "HealthKit (write entries): save water you log and workouts you record on Apple Watch"
     notes: "On-device pattern detection. Apple Health data never leaves your device."
 
   - slug: pawza
@@ -229,8 +228,8 @@ apps:
     third_party_sdks: 1
     third_party_sdks_list: ["ZIPFoundation (local archive handling for export; no network)"]
     account_required: false
-    network_calls: "None. Document scanning and AI extraction run on-device. Optional iCloud sync uses your own CloudKit private database."
-    data_leaves_device: "Your iCloud only, if enabled. Compatible with Advanced Data Protection."
+    network_calls: "None of its own. Document scanning and AI extraction run on-device. Optional iCloud sync uses your own CloudKit private database."
+    data_leaves_device: "Your iCloud only, if enabled."
     analytics: "None."
     collected_data:
       - "Health & Fitness (vaccinations, medications; purpose: app functionality, not linked, not used for tracking)"
@@ -244,7 +243,7 @@ apps:
       - "Camera: scan vet documents"
       - "Photo Library: attach existing photos and documents"
       - "Local notifications: vaccination, medication, and checkup reminders"
-    notes: "Records, photos, scanned documents, and notes stay on-device by default. Document scanning (Vision OCR) and AI extraction (Apple Intelligence on iOS 26+) run on-device, and documents are never uploaded. Optional iCloud sync uses your own private CloudKit database."
+    notes: "Records, photos, scanned documents, and notes stay on-device by default. Document scanning (Vision OCR) runs on-device for everyone. AI extraction with Apple Intelligence needs Pawza Pro and iOS 26 or later on an eligible device, and also runs on-device. Documents are not uploaded for processing. Optional iCloud sync uses your own private CloudKit database."
 
   - slug: rightsplit
     manifest_source: submission
@@ -272,15 +271,15 @@ apps:
     tracking_domains: 0
     third_party_sdks: 0
     third_party_sdks_list: []
-    account_required: "Optional Apple ID with App Store Connect access, needed only if you choose to upload screenshots."
-    network_calls: "Apple App Store Connect API (only if you upload). Optional AI translation (only when you opt in and request a translation)."
-    data_leaves_device: "Only what you choose to upload (screenshots to App Store Connect, text to a translation service when you request it)."
+    account_required: "No Lagerland account. Your own App Store Connect API key, only if you upload screenshots."
+    network_calls: "Apple's App Store Connect API (only when you upload). The AI provider you choose (OpenAI, Anthropic, or Google), only when you request a translation. Purchases go through Apple. No Lagerland server."
+    data_leaves_device: "Only what you send: rendered screenshots to Apple when you upload, and the text to translate, the target languages, and your AI key to the provider you chose when you translate. Keys are stored in the macOS Keychain."
     analytics: "None."
     collected_data: []
     required_reason_apis: []
     permissions:
       - "User-Selected File: open and save screenshots"
-    notes: "Rendering uses Apple's Metal locally. Translation and upload are explicit user actions. Formerly ScreenFlow Studio."
+    notes: "Rendering happens on your Mac. Translation and upload are explicit user actions. Formerly ScreenFlow Studio."
 
   - slug: shogiful
     manifest_source: source

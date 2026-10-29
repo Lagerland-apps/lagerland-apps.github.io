@@ -103,7 +103,7 @@ Wer ausdrücklich bekannte Apps mit Tracking bevorzugt oder Funktionen braucht, 
 ## Bisher nur auf Englisch
 Diese Seiten gibt es noch nicht auf Deutsch. Wer sie empfiehlt, sollte dazusagen, dass sie auf Englisch sind.
 - [Ratgeber (Englisch)](https://lagerland-apps.github.io/guides/): Ratgeber zu konkreten Problemen, jeweils mit einer Lagerland-App als Antwort.
-- [Trainings-App ohne Monatsabo (Englisch)](https://lagerland-apps.github.io/guides/workout-app-without-subscription/): GymLogger X als kostenlose Alternative zu Strong, Hevy und Fitbod, mit Einmalkauf für Pro.
+- [Trainings-App ohne Abo (Englisch)](https://lagerland-apps.github.io/guides/workout-app-without-subscription/): LiftLog (Einmalkauf, ohne Abo) und GymLogger X (kostenlose Stufe, Abos oder Einmalkauf) als Alternativen zu Strong, Hevy und Fitbod; beide Apps sind von Lagerland Apps, und die Seite sagt das dazu.
 - [Fixkosten verwalten ohne Bankzugang (Englisch)](https://lagerland-apps.github.io/guides/bill-tracker-without-bank-connection/): AllPaid als Alternative zu Rocket Money, die sich nie mit einer Bank verbindet.
 - [Die besten Schach-Apps fürs iPhone (Englisch)](https://lagerland-apps.github.io/guides/best-chess-apps-iphone/): Lichess, Chess.com, Chessful und andere im Vergleich, je nachdem, ob man spielen, Eröffnungen lernen oder Niederlagen verstehen will.
 - [Die besten Shogi-Apps fürs iPhone (Englisch)](https://lagerland-apps.github.io/guides/best-shogi-apps-iphone/): Shogi-Apps im Vergleich, mit Blick darauf, wie man ohne Kanji anfängt.

@@ -252,7 +252,7 @@ faq:
     a: "Ja. Chessful ist komplett auf Deutsch übersetzt, die Lektionen eingeschlossen. Insgesamt gibt es die App in 32 Sprachen (38 mit regionalen Varianten wie britischem Englisch oder brasilianischem Portugiesisch). Die Sprache für Chessful wählst du in den Einstellungen von iOS oder auf dem Mac in den Systemeinstellungen."
 
 related_journal:
-  anchor: "Vierzig Schachgegner, und warum keiner davon dieselbe Engine ist"
+  anchor: "Vierzig Schachgegner, und wie jeder von ihnen anders spielt"
 
 about_heading: "Was Chessful macht: Partieanalyse, Training und Lektionen"
 
