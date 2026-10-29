@@ -2,7 +2,7 @@
 layout: app
 slug: tare
 name: "Tare"
-tagline: "A wordless balance logic puzzle. Hang the weights, level every beam, deduce the hidden ones."
+tagline: "A wordless balance puzzle. Hang the weights, balance every beam, and deduce the hidden ones."
 
 # Live since 2026-10-09 (v1.0). Facts are checked against the shipped build
 # (~/Downloads/weightbalance, e2595ca) and the live en-US listing
@@ -13,7 +13,7 @@ tagline: "A wordless balance logic puzzle. Hang the weights, level every beam, d
 # (marketing/app-store/screenshots/iphone-6.9/en-US/, Signboard Sky), 990px.
 status: live
 
-quick_answer: "Tare is a wordless balance logic puzzle for iPhone and iPad. Each level is a painted hanging mobile: you drag weights numbered 1 to 9 onto hooks so that every beam balances at once. Weight times distance from the pivot must match on both sides, and a nested beam's whole load acts at the hook it hangs from. From the first chapter some weights hide inside a bubble marked “?”, and any beam carrying an unsolved “?” sways instead of tilting, so the scale never tells you what the secret weighs. Small picture cards show how the pieces compare, and you deduce the value from those. There are 200 handcrafted levels in ten chapters, each one machine-checked to have exactly one answer. The first 20 are free to keep; one {P_IAP:Tare Full Access} purchase unlocks the other 180 for good, with Family Sharing. It has no ads, timers, lives, or account, works fully offline, and collects no data."
+quick_answer: "Tare is a wordless balance logic puzzle for iPhone and iPad. Each level is a painted hanging mobile: you hang weights on its hooks until every beam balances, and you deduce the hidden “?” weights from small picture cards instead of guessing. There are 200 handcrafted levels in ten chapters, and every level is checked to have exactly one answer. The first 20 levels are free; one {P_IAP:Tare Full Access} purchase opens the other 180, with no subscription. It has no ads, timer, or lives, works offline, and collects no data."
 
 category: games
 
@@ -25,38 +25,37 @@ price_override: "20 levels free · {P_IAP:Tare Full Access} unlocks 180 more"
 
 pricing_note: "Every price is on the App Store listing. There is no subscription to cancel, and Chapter I stays free, with no trial and no card."
 
-plans_footnote: "Tare is a free download, and Chapter I stays free: it never expires and nothing in it is locked. The one purchase is a non-consumable. You pay once, keep it, restore it any time from Settings or the unlock screen, and share it with up to five family members through Family Sharing. There are no subscriptions, consumables, ads, or energy meter. Chapters still open in order after you buy: Chapter II opens once you have solved 16 of Chapter I's 20 levels. US pricing shown; the App Store shows your local price at checkout."
+plans_footnote: "Tare is a free download, and Chapter I stays free for good. The one purchase is a non-consumable: you pay once, it stays yours, and you can restore it any time from Settings or the unlock screen. It works with Family Sharing. There are no subscriptions, ads, or other purchases. Chapters still open in order after you buy. US pricing shown; the App Store shows your local price at checkout."
 
 plans:
   - name: "Chapter I"
     price: "Free"
-    summary: "The Hang: twenty full levels, yours to keep, with no time limit."
+    summary: "The Hang: twenty full levels, free to keep, with no time limit."
     features:
-      - "20 handcrafted levels, including the wordless onboarding"
-      - "Your first hidden weights and picture cards"
-      - "Optional hints, off until you switch them on"
-      - "Three gold stars to earn on every level"
-      - "Sound, haptics, and every accessibility option"
-      - "No ads or account, and it works offline"
+      - "20 handcrafted levels, starting with five that teach the game without a word"
+      - "Your first nested beams, hidden weights, and picture cards"
+      - "Up to three gold stars on every level"
+      - "Hints, off until you switch them on"
+      - "Optional sound, haptics on iPhone, and every accessibility setting"
+      - "No ads or account, and it plays offline"
     highlight: true
   - name: "Chapters II to X"
     price: "{P_IAP:Tare Full Access} once"
     summary: "The other 180 levels, yours to keep."
     features:
-      - "The Secret: reading the cards, tilted comparisons, and ratios"
-      - "The Cascade: mobiles three beams deep"
-      - "The Exhibition: more pieces than hooks, and some belong nowhere"
-      - "Six more chapters: The Ledger, The Inventory, The Fulcrum, The Forgery, The Restoration, and The Retrospective"
-      - "Nine more worlds, from Twilight Meadow and Deep Sea to Evening Stars and beyond"
-      - "One-time purchase with no subscription"
+      - "Nine more chapters, from The Secret to The Retrospective"
+      - "More hidden weights to deduce and deeper mobiles to balance"
+      - "Spare pieces from Chapter IV on, so part of the puzzle is what to leave out"
+      - "Nine more painted worlds, from Twilight Meadow to Summer Fields"
+      - "One purchase and no subscription"
       - "Family Sharing included"
 
 icon: "/assets/icons/tare.png"
 og_image: "/assets/og/tare.png"
 
 seo:
-  title: "Tare: Balance Logic Puzzle for iPhone & iPad, 200 Levels"
-  description: "Tare is a wordless balance logic puzzle: hang weights, level every beam, deduce the hidden ones. 200 levels, 20 free, offline, no ads or data collected."
+  title: "Tare: Wordless Balance Logic Puzzle for iPhone and iPad"
+  description: "Wordless balance logic puzzle for iPhone and iPad. Deduce hidden weights from picture cards. 200 handmade levels, 20 free, offline, no ads."
   keywords:
     - "balance puzzle game"
     - "logic puzzle iphone"
@@ -65,22 +64,22 @@ seo:
     - "offline puzzle game no wifi"
     - "puzzle game no ads"
     - "deduction puzzle"
-    - "math logic puzzle for adults"
+    - "logic puzzle for adults"
 
 hero:
-  pre_headline: "Wordless balance logic puzzle for iPhone and iPad"
-  headline: "Hang the weights, balance every beam, and deduce the rest."
-  secondary: "Some weights hide what they weigh, and the scale won't give it away."
-  subheadline: "Every level is a painted hanging mobile. Drag each weight onto a hook until every beam comes to rest at once: heavy near the middle, light far out, and one nudge ripples all the way up. Then the secrets arrive, as weights hidden inside a “?” bubble and little picture cards that are the only way to work out what they weigh. Twenty levels are free, with no timer and nothing to read."
+  pre_headline: "Wordless balance puzzle for iPhone and iPad"
+  headline: "Deduce every hidden weight and bring the whole mobile to rest."
+  secondary: "200 handcrafted levels, each checked to have exactly one answer. The first 20 are free."
+  subheadline: "Every level is a painted hanging mobile. Hang the weights from the tray and the beams tip and settle as you go: heavy pieces near the middle, light ones farther out. Some weights hide behind a “?”, and the picture cards above the board are how you work them out. There is no timer and nothing to read."
   cta_label: "Play Chapter I free"
   cta_subline: "Free download · 20 levels free · one {P_IAP:Tare Full Access} unlock for the other 180 · no ads · no data collected"
-  alt: "Tare on iPhone: a three-tier hanging mobile on a sky-blue board, with weights numbered 5, 2, 6, 3 and 3 on its hooks"
+  alt: "Tare on iPhone: a three-tier hanging mobile on a sky-blue board, with weights numbered 5, 2, 6, 3, and 3 on its hooks"
 
 screenshots:
   - src: "/assets/screenshots/tare/1.webp"
-    caption: "A three-tier mobile in the Morning Sky. Every weight shows its number twice, as a numeral and as domino pips."
+    caption: "A three-tier mobile in the Morning Sky, the first of ten painted worlds."
   - src: "/assets/screenshots/tare/2.webp"
-    caption: "Deep Sea: the top beam leans until the pieces on the shelf below find the right hooks, then the whole mobile settles."
+    caption: "Deep Sea: the top beam leans until the pieces in the tray below find the right hooks, then the whole mobile settles."
   - src: "/assets/screenshots/tare/3.webp"
     caption: "Twilight Meadow: two picture cards above the board show how the hidden “?” piece compares. Read them to work out what it weighs."
   - src: "/assets/screenshots/tare/4.webp"
@@ -91,58 +90,59 @@ screenshots:
     caption: "No ads, timers, or words on screen, only the mobile."
 
 who_for:
-  - "You love logic puzzles with one real answer (sudoku, nonograms, Kakuro) and want something that feels physical"
-  - "You want a brain teaser you can play offline, on a plane or underground, with no sign-in"
-  - "You like to take your time, with no timer, lives, move counter, or anyone watching"
-  - "You want a game the whole family can play in any language, because there is nothing to read"
-  - "You would rather pay once for the whole game than see ads or pay a subscription"
+  - "You like logic puzzles with one real answer, such as sudoku, nonograms, or Kakuro, and want one that feels physical"
+  - "You want a brain teaser that plays offline, on a plane or underground, with no sign-in"
+  - "You like to take your time, with no timer, lives, or move counter"
+  - "You want a game anyone can play in any language, because there is nothing to read"
+  - "You would rather pay once than watch ads or keep a subscription"
+  - "You play with VoiceOver, Reduce Motion, or high contrast"
 
 who_not_for:
-  - "You want a physics sandbox or a reflex game. Tare is turn-free and exact, and nothing falls over"
-  - "You want leaderboards or multiplayer; there is no Game Center and no score"
-  - "You play on Android or Mac; Tare is iPhone and iPad only (iOS 18 or later)"
-  - "You need progress to sync between devices; this version keeps it on the device you play on"
+  - "You want a reflex game or a physics sandbox. Tare is a slow, exact logic puzzle"
+  - "You want leaderboards, achievements, or multiplayer. Tare has no Game Center and no score"
+  - "You play on Android or Mac. Tare is for iPhone and iPad with iOS 18 or later"
+  - "You need progress to sync between devices. It stays on the device you play on"
 
 value_points:
-  - title: "The scale can't be cheated"
-    description: "A beam carrying an unsolved “?” never tilts truthfully. It sways slowly and never settles, so you can't hang a secret weight and watch which way the beam goes. The only way to know what it weighs is to read the picture cards and reason it out. That rule is what makes Tare a logic puzzle instead of trial and error."
-  - title: "Every level has exactly one answer"
-    description: "All 200 levels are built by hand and then proven by machine before they ship: exactly one arrangement balances, every hidden weight is pinned down by its cards alone, and any decoy piece fits no balanced arrangement at all. When a level clicks, your reasoning got you there."
-  - title: "No timer or lives"
-    description: "Take all the time you like. There is no move counter, failure screen, or red buzzer; a complete but wrong board just gives a gentle shudder. Hints are there if you switch them on, they are free, and the only price is the third star on that level."
-  - title: "Nothing to read, and no data collected"
-    description: "The puzzle itself has no words at all, so anyone can play it at any age in any language. There are no ads, account, analytics, or network code. It plays the same in airplane mode, and nothing about you leaves your device."
+  - title: "The scale won't give the answer away"
+    description: "A beam carrying a hidden “?” weight will not settle until you have worked out what the weight is. Hanging it and watching which way the beam tips tells you nothing. The picture cards above the board show how the pieces compare, and reading them is the only way through."
+  - title: "Exactly one answer, every level"
+    description: "All 200 levels are handmade, then checked by a solver: exactly one arrangement balances, every hidden weight follows from its cards, and spare pieces fit nowhere. When you are stuck, a clean answer exists."
+  - title: "Take as long as you like"
+    description: "There is no timer, move counter, lives, or fail screen. A full board that doesn't balance gives a small shudder and lets you keep going. Hints stay off until you switch them on, and asking for one costs that level's third star."
+  - title: "Any language, and no data collected"
+    description: "The puzzle has no words on it, so it plays the same in every language. Tare shows no ads, needs no account, and collects no data. Your progress stays on your device."
 
 features:
   - title: "Painted hanging mobiles"
-    description: "Each weight hangs from a notch on a chalk-white beam. A weight's pull is its number times its distance from the pivot, so a 2 at the second notch balances a 4 at the first. A nested beam's whole load acts at the hook it hangs from, so one change ripples up the whole tower."
+    description: "Drag weights from the tray onto hooks along each beam. A heavy weight near the middle balances a light one farther out. Beams hang from other beams, so one change ripples up the whole mobile, and the structures grow from a first wobbly hang to many-layered towers."
   - title: "Hidden weights and picture cards"
-    description: "Some weights hide inside a soap bubble marked “?”. Cards pinned above the board quote the pieces in miniature: this one equals that, this one outweighs that pair, these two balance on unequal arms. Hold a piece and the cards that mention it lift, so you always know which clue to read."
+    description: "Some weights arrive as a frosted bubble marked “?”. Small picture cards pinned above the board show how pieces compare, and you reason out each secret weight from them. Tap a card to enlarge it. When a new kind of card first appears, a short wordless sequence shows what it means."
   - title: "Ten chapters, ten worlds"
-    description: "The Hang in a Morning Sky, The Secret in a Twilight Meadow, The Cascade in the Deep Sea, The Exhibition under Evening Stars, then six more chapters (The Ledger, The Inventory, The Fulcrum, The Forgery, The Restoration, and The Retrospective), twenty levels each. They run from your first wobbly hang to many-layered mobiles with more pieces than hooks. Finish a chapter and its world becomes a canvas you can choose for the whole game."
-  - title: "The click"
-    description: "Hang the last piece right and the beams stop swaying, gold stars pop, sparks fly, and the sun comes out. With Sound on, the whole mobile rings out in a single chord. Every weight has its own note, and heavier is lower, so a solved mobile sounds balanced."
+    description: "200 levels in ten chapters, from The Hang to The Retrospective, each in a painted world of its own: Morning Sky, Twilight Meadow, Deep Sea, Evening Stars, Rose Dawn, Firefly Forest, Coral Reef, Polar Night, Sunset Hills, and Summer Fields. From Chapter IV the tray holds spare pieces that belong nowhere. Finish a chapter 20 out of 20 and its world becomes a background you can choose in Settings."
+  - title: "The solve"
+    description: "When the last piece finds its hook, the beams stop swaying, gold stars pop, sparks fly, and light washes over the board. Turn Sound on in Settings and the mobile rings out in a single chord. Tap to skip the celebration."
   - title: "Hints, only if you want them"
-    description: "Hints are off until you switch them on in Settings. Then a lantern button sits on every level, and each press draws one line from the next piece to its hook. It never hangs anything for you and it never shows the last piece, so you always finish the mobile yourself. The first hint on a level costs its third star; asking again costs nothing more."
-  - title: "Three gold stars"
-    description: "Every solve earns at least one star. Solve it without ever filling the board wrongly for two, and without taking a piece back off or asking for a hint for all three. Your best is kept, the celebration is the same at any grade, and nothing is locked behind stars."
+    description: "Hints are off by default. Switch them on in Settings and a hint button appears on each level. A hint draws a line showing where the next piece goes. It never shows the final piece and never reveals a hidden weight, so you always finish the mobile yourself. Asking costs that level's third star."
+  - title: "Up to three gold stars"
+    description: "A clean solve earns three stars. Rehang a piece or ask for a hint and it drops to two; fill the board wrongly first and it drops to one. Your best grade is kept, and stars never lock anything."
   - title: "Accessibility"
-    description: "Every known weight shows both a numeral and domino pips, so colour is never the only cue. VoiceOver reads the mobile as named beams and hooks with place and return actions, in all 50 of the app's languages. The numeral grows with Dynamic Type, a High contrast switch clears 4.5:1, and Reduce Motion and Reduce Transparency are respected."
-  - title: "Silent until you choose"
-    description: "Tare starts silent: sound is off until you turn it on, and haptics have their own switch on devices that have them. The game follows your device's light or dark appearance. A gentle parallax gives the board depth when you tilt the phone and turns itself off under Reduce Motion."
+    description: "VoiceOver reads the mobile as named beams, hooks, and weights, with actions to place a piece or return it to the tray. Menus and labels grow with Dynamic Type. A High contrast switch keeps flat colours at 4.5:1 or better, Reduce Motion and Reduce Transparency are respected, and the pieces come in distinct shapes, so colour is never the only cue."
+  - title: "Quiet until you choose"
+    description: "Sound starts off; switch it on to hear notes as you place pieces and the chord on every solve. On iPhone, haptics let you feel each weight seat. Every world has a day and a night look that follows your device, and the painted room behind the mobile leans a little as you tilt the phone, except under Reduce Motion."
 
 how_it_works:
-  heading: "One rule, and a scale you cannot ask."
-  intro: "Tare runs on one rule: a beam is level when the pull on both sides is equal, and pull is weight times distance from the pivot. This is how a level plays out."
+  heading: "One rule, and a scale that keeps its secrets."
+  intro: "A beam is level when the pull on both sides is equal, and pull is weight times distance from the pivot. Here is how a level plays out."
   steps:
     - title: "Read the mobile"
-      detail: "Beams hang from a pivot, with hooks at notches one to four on either side. Weights on the shelf below carry a number from 1 to 9, shown as a numeral and as pips. Some beams hang from other beams, and a hanging beam pulls with the total of everything below it."
+      detail: "Beams hang from a pivot, with hooks along each side. The weights wait in the tray below. Some beams hang from other beams, and a hanging beam pulls with everything below it."
     - title: "Hang the pieces"
-      detail: "Drag a weight near a hook and it snaps on; drop it on an occupied hook to swap. Beams with nothing hidden on them tilt honestly as you go, so you can feel your way toward balance on the easy branches."
+      detail: "Drag a weight onto a hook. Beams with nothing hidden on them tip and settle as you place pieces, so you can feel your way toward balance."
     - title: "Deduce the hidden weights"
-      detail: "A beam carrying a “?” sways and will not tell you which way it leans. Read the picture cards above the board (equal, heavier, or balanced on unequal arms) and work out what the secret must weigh before you hang the rest."
-    - title: "Fill every hook, and let it rest"
-      detail: "When every hook is full and every beam is level, the mobile settles and the bubbles show what they held. If the board is full but wrong, it gives one gentle shudder, with no red and no buzzer, and you try again."
+      detail: "A beam carrying a “?” won't settle until you have deduced it. Read the picture cards above the board and work out what each hidden weight must be."
+    - title: "Fill every hook and let it rest"
+      detail: "When every beam is level, the mobile comes to rest and the solve plays out. A full board that doesn't balance gives one small shudder, and you try again."
 
 alternatives_to:
   - "Baba Is You"
@@ -174,45 +174,44 @@ comparison_table:
 
 faq:
   - q: "What kind of game is Tare?"
-    a: "A wordless balance logic puzzle. Each of its 200 levels is a hanging mobile, and you place numbered weights on hooks so that every beam balances at the same time. From early on some weights are hidden, and you work out their values from picture-card clues. It feels physical, but it is exact: every level has one correct arrangement that can be reasoned out."
+    a: "Tare is a wordless balance logic puzzle for iPhone and iPad. Each of its 200 levels is a hanging mobile, and you hang weights on hooks until every beam balances at once. Some weights are hidden, and you work out their values from picture cards. It feels like a toy, but each level has exactly one correct arrangement that you can reason out."
   - q: "How does balancing work?"
-    a: "A beam is level when weight times distance is equal on both sides of its pivot. A 2 on the second notch balances a 4 on the first; a 3 on the fourth notch balances a 6 on the second. When one beam hangs from another, it pulls on its hook with the total weight of everything hanging below it. That is the whole rulebook, and the game teaches it without a word in its first levels."
-  - q: "What are the “?” weights, and why won't the beam tilt?"
-    a: "They are weights hidden inside a bubble. Any beam carrying an unsolved “?” deliberately sways instead of tilting, so you cannot hang the secret and read its weight off the scale. The picture cards pinned above the board show how the pieces compare, and those cards alone are enough to pin down every hidden value. Once you solve the level, the bubbles show what they held."
+    a: "A beam is level when weight times distance from the pivot is equal on both sides. A 2 on the second notch balances a 4 on the first. When one beam hangs from another, it pulls on its hook with everything hanging below it. The game teaches this in its first five levels without a word."
+  - q: "What are the “?” weights?"
+    a: "They are weights hidden inside a frosted bubble. A beam carrying one will not settle until you have deduced its value, so you can't read the answer off the scale. The picture cards pinned above the board show how the pieces compare, and you reason out each hidden weight from them."
   - q: "Is every level actually solvable?"
-    a: "Yes. Every level is built by hand and then checked by a solver before it ships. It must have exactly one balanced arrangement, every hidden weight must be determined by its cards alone, and any decoy piece must fit no balanced arrangement at all. A level that fails any of those checks does not ship."
+    a: "Yes. Every level is handmade and then checked by a solver. It must have exactly one balanced arrangement, every hidden weight must follow from its cards, and any spare piece must fit nowhere."
   - q: "Is Tare free?"
-    a: "The download is free, and Chapter I (twenty full levels) stays free; it is not a timed trial. One {P_IAP:Tare Full Access} purchase unlocks Chapters II to X, the other 180 levels, for good. It is a one-time purchase, not a subscription, and it works for your whole family through Family Sharing. There are no ads and nothing else to buy."
+    a: "The download is free, and Chapter I, with its 20 levels, stays free; it is not a timed trial. One {P_IAP:Tare Full Access} purchase opens Chapters II to X, the other 180 levels, for good. It is a one-time purchase with no subscription, and it works with Family Sharing. There are no ads and nothing else to buy."
   - q: "I bought the unlock. Why is Chapter II still closed?"
-    a: "Chapters open in order, purchase or not. Chapter II opens once you have solved 16 of Chapter I's 20 levels, and each later chapter opens the same way from the one before it. Within a chapter you can skip ahead up to three levels past the last one you solved."
+    a: "Chapters open in order, purchase or not. Keep solving Chapter I and Chapter II opens, and each later chapter opens the same way. Within a chapter you can play up to three levels past the last one you solved."
   - q: "How do I restore my purchase on a new iPhone or iPad?"
-    a: "Open Settings in the game and tap Restore purchases; the unlock screen has the same button. The purchase is tied to your Apple Account, so it comes back on any device signed in to it, and to family members through Family Sharing."
+    a: "Open Settings in the game and tap Restore purchases. The unlock screen has the same button."
   - q: "Are there hints?"
-    a: "Yes, if you want them. Hints are off by default; switch on Hints in Settings and a lantern button appears on every level. Each press draws one line from the next piece to the hook it belongs on. It never places a piece for you and never shows the last one, so you always finish the mobile yourself. Hints are free, but the first one you ask for on a level costs that attempt's third star; further presses cost nothing, and restarting the level gives you a fresh attempt at all three. In the first five levels a teaching line also appears by itself if you sit idle for a while."
+    a: "Yes, if you want them. Hints are off by default. Switch on Hints in Settings and a hint button appears on each level. A hint draws a line showing where the next piece goes. It never shows the final piece and never reveals a hidden weight. Asking for a hint costs that level's third star. On the first five levels, a guiding line also appears by itself if you pause for a while."
   - q: "What do the three stars mean?"
-    a: "One star means you solved it. Two mean you solved it without ever filling the board wrongly. Three mean you also never took a piece you had hung back off and never asked for a hint. Pieces that start the level already hanging can be moved for free. Your best result is kept, the celebration is the same whatever you earn, and nothing in the game is locked behind stars."
+    a: "Three stars is a clean solve. Taking a piece back off or asking for a hint brings it to two, and filling the board wrongly before you solve it brings it to one. Your best grade is kept, and nothing in the game is locked behind stars."
   - q: "Does Tare work offline, and does it collect data?"
-    a: "It works completely offline. The game contains no networking code, so it behaves the same in airplane mode. It has no account, ads, analytics, or third-party SDKs, and it collects no data. Your progress and settings stay on your device. The only things that involve Apple are the purchase itself and the standard App Store review prompt."
+    a: "Tare works completely offline; all 200 levels are in the app. Only buying and restoring the unlock need a connection, through Apple. The game opens no network connections of its own, has no account, ads, analytics, or third-party SDKs, and collects no data. Your progress and settings stay on your device."
   - q: "Can children or people who don't read English play it?"
-    a: "Yes. The puzzle itself has no words, so it plays the same in every language and at any age. The few screens around it (Settings, chapter names, the unlock screen) are translated into 50 App Store locales. There are no ads, chat, or accounts, nothing is collected, and purchases go through Apple, so Ask to Buy and Screen Time apply."
+    a: "Yes. The puzzle has no words, so anyone can play it in any language and at any age. The few screens around it, such as Settings and the unlock screen, are translated into 50 languages."
   - q: "Does it run on iPad or Mac, and does progress sync?"
-    a: "Tare runs on iPhone and iPad and needs iOS or iPadOS 18 or later. On iPhone it plays in portrait. On iPad it turns with the device and the mobile sits in a centred column, and from iPadOS 26 you can resize its window. There is no Mac or Vision Pro version. Progress is stored on the device you play on and does not sync between devices in this version; the unlock itself restores on any device with your Apple Account."
+    a: "Tare runs on iPhone and iPad with iOS or iPadOS 18 or later. On iPhone it plays in portrait. On iPad it turns with the device and draws the game large in a centred column. There is no Mac, Apple Watch, or Vision Pro version. Progress stays on the device you play on and does not sync between devices."
   - q: "Is Tare accessible?"
-    a: "Yes, accessibility has been part of the game from the start. Every known weight shows a numeral and domino pips, so colour is never the only cue. VoiceOver reads the mobile as a tree of named beams, hooks, and weights with place and return actions, in every language the app ships in. There is a High contrast switch, the numeral scales with Dynamic Type, hooks have a generous 60-point snap, and Reduce Motion and Reduce Transparency are both respected."
+    a: "Yes. VoiceOver reads the mobile as named beams, hooks, and weights, with actions to place a piece or return it to the tray. Menus and labels scale with Dynamic Type. A High contrast switch keeps flat colours at 4.5:1 or better, Reduce Motion and Reduce Transparency are respected, and the pieces come in distinct shapes, so colour is never the only cue."
 
 privacy:
   tracking: false
   account_required: false
   data_collection: "none"
-  app_privacy_label: "Apple's App Store privacy label for Tare reads “Data Not Collected.” The app requests no tracking (no IDFA), links no advertising or analytics SDKs, has no networking code and no entitlements, and its Privacy Manifest declares NSPrivacyTracking false and no collected data types."
+  app_privacy_label: "Apple's App Store privacy label for Tare reads “Data Not Collected.” The app does no tracking, includes no advertising or analytics SDKs, and its Privacy Manifest declares no tracking and no collected data."
   notes:
-    - "No account, no server, and no networking code anywhere in the game"
-    - "Progress, star grades and settings are stored only on your device"
-    - "No analytics, advertising or third-party SDKs of any kind"
-    - "How many hints you ask for is never stored; a level only remembers that a hint cost its third star"
-    - "The motion sensor is read live for a parallax effect and never stored; it stops under Reduce Motion"
-    - "The one purchase is handled entirely by Apple; the game keeps only the fact that the chapters are unlocked"
-    - "No permission prompts: no camera, photos, microphone, location, contacts or health data"
+    - "No account, and the game opens no network connections of its own"
+    - "Progress, star grades, and settings are stored only on your device"
+    - "No analytics, advertising, or third-party SDKs"
+    - "The motion sensor drives a background parallax effect; it switches off under Reduce Motion"
+    - "Apple handles the one purchase; the game keeps only the fact that the chapters are unlocked"
+    - "No permission prompts for camera, photos, microphone, location, contacts, or health data"
   policy_url: "/apps/tare/privacy/"
 
 founder:
@@ -220,14 +219,13 @@ founder:
   name: "Lagerland Apps"
   role: "Independent Apple studio · Finland"
   photo: "/assets/icons/lagerland-mark.png"
-  bio: "Tare started as a quiet museum piece, hairline beams on warm paper. It was tasteful and dull, and its first levels were single flat beams nobody needed to think about. So the chapters were rebuilt to ramp up, every screen was redrawn as a painted toy on a sky-blue board, and solving a level got a proper celebration. The one thing that never changed is the rule I would defend over everything else: a beam with a secret on it sways instead of tilting. Without that, the hidden weights are a guessing game. With it, every level is a proof you get to finish yourself."
+  bio: "Tare started as a quiet museum piece, hairline beams on warm paper. It was tasteful and dull, and its first levels were flat beams nobody needed to think about. So we rebuilt the chapters to ramp up, redrew every screen as a painted toy on a sky-blue board, and gave each solve a proper celebration. One rule never changed: a beam with a secret on it won't settle until you have worked the secret out. Without that rule the hidden weights would be a guessing game. With it, every level is a proof you finish yourself."
   support_email: "lagerland.apps@proton.me"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
-    - "No ads, analytics, third-party SDKs, or networking code; every framework it links is Apple's"
-    - "All 200 levels machine-proven before shipping: one solution, hidden weights fixed by their cards, decoys that fit nowhere"
-    - "Every picture in the game is drawn in code with SwiftUI; the only recorded assets are its sounds"
-    - "VoiceOver, Dynamic Type, High contrast, Reduce Motion and Reduce Transparency built in from the first release"
+    - "No ads, analytics, or third-party SDKs, and no network connections of its own"
+    - "Every level checked by a solver before it ships: one answer, hidden weights fixed by their cards, spare pieces that fit nowhere"
+    - "VoiceOver, Dynamic Type, High contrast, Reduce Motion, and Reduce Transparency support"
     - "Paid for by one purchase, never by ads or data"
 
 support:
@@ -247,35 +245,35 @@ related_journal:
 
 show_body: true
 about_heading: "What Tare is: a balance puzzle you solve by deduction"
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
-Tare is a logic puzzle that looks like a toy. Each level is a painted hanging mobile on a sky-blue board, with a shelf of numbered weights beneath it. Your job is to hang every weight on a hook so that **every beam balances at the same time**.
+Tare is a logic puzzle that looks like a toy. Each level is a painted hanging mobile on a sky-blue board, with a tray of weights beneath it. Your job is to hang every weight on a hook so that **every beam balances at the same time**.
 
-The rule fits in one line: a beam is level when **weight × distance from the pivot** is equal on both sides. A 2 on the second notch balances a 4 on the first. When one beam hangs from another, it pulls on its hook with everything below it, so a single move near the bottom ripples all the way up the tower.
+The rule fits in one line: a beam is level when **weight times distance from the pivot** is equal on both sides. A 2 on the second notch balances a 4 on the first. When one beam hangs from another, it pulls on its hook with everything below it, so a single move near the bottom ripples all the way up.
 
 ## The rule that makes it a logic puzzle
 
-Early in the game, some weights arrive hidden inside a bubble marked with a **“?”**. Hanging one and watching the beam tip won't tell you what it weighs, because **a beam carrying an unsolved “?” sways and never tells the truth.**
+From the first chapter, some weights arrive hidden inside a frosted bubble marked **“?”**. Hanging one and watching the beam won't tell you what it weighs, because **a beam carrying an unsolved “?” will not settle.**
 
-Small picture cards pinned above the board give you the clues. Each one quotes a few of the pieces in miniature, showing that this one equals that one, that one outweighs a pair, or that two of them balance on unequal arms. The cards alone are enough to pin down every hidden value, and you have to reason it out. When the last piece goes on and the mobile comes to rest, you *know* why it balanced.
+Small picture cards pinned above the board give you the clues. Each shows how a few of the pieces compare, and the cards are enough to pin down every hidden value. You have to reason it out. When the last piece goes on and the mobile comes to rest, you know why it balanced.
 
-Every level is built by hand and then **proven by machine** before it ships. It must have exactly one balanced arrangement, every hidden weight must be fixed by its cards, and every decoy must fit no balanced arrangement at all. [How to solve a balance puzzle, and how the proof works](/journal/how-to-solve-balance-puzzles/) walks through a real level step by step.
+Every level is built by hand and then **checked by a solver** before it ships. It must have exactly one balanced arrangement, every hidden weight must follow from its cards, and every spare piece must fit nowhere. [How to solve a balance puzzle, and how the proof works](/journal/how-to-solve-balance-puzzles/) walks through a real level step by step.
 
 ## Ten chapters
 
-- **The Hang** (Morning Sky, free): arranging weights on every shape of mobile, your first nested beam and your first secrets.
-- **The Secret** (Twilight Meadow): reading the cards, with tilted comparisons that bracket a value and ratio cards on unequal arms.
-- **The Cascade** (Deep Sea): mobiles three beams deep as the norm.
-- **The Exhibition** (Evening Stars): more pieces on the shelf than hooks on the mobile, so you have to prove which ones belong nowhere.
-- **The Ledger, The Inventory, The Fulcrum, The Forgery, The Restoration and The Retrospective**: six more chapters, each in a world of its own, that keep combining those ideas into larger mobiles with more hidden weights and decoys.
+- **The Hang** (Morning Sky, free): five levels that teach the game without words, then your first nested beam and your first hidden weights.
+- **The Secret** (Twilight Meadow): more hidden weights, and more cards to read.
+- **The Cascade** (Deep Sea): beams hanging from beams, deeper than before.
+- **The Exhibition** (Evening Stars): more pieces in the tray than hooks on the mobile, so you have to work out which ones belong nowhere.
+- **The Ledger, The Inventory, The Fulcrum, The Forgery, The Restoration, and The Retrospective**: six more chapters, each in a world of its own, that combine the earlier ideas into harder puzzles.
 
 Each chapter holds twenty levels. The first chapter stays free. One {P_IAP:Tare Full Access} purchase opens the other 180, with Family Sharing and no subscription.
 
-## What it does not do
+## What Tare leaves out
 
-Tare has no ads, timer, lives, move counter, or score, and no account or sign-in. It has no analytics, third-party SDKs, or networking code, so it plays the same underground as it does on Wi-Fi. Hints are off unless you switch them on, and they cost nothing but a level's third star; the game never counts how many you ask for.
+Tare has no ads, timer, lives, move counter, or score, and no account or sign-in. It has no analytics or third-party SDKs and opens no network connections of its own, so it plays the same underground as it does on Wi-Fi. Hints stay off until you switch them on, and asking for one costs that level's third star.
 
-Apple's App Store privacy label reads **Data Not Collected**. The app's Privacy Manifest declares no tracking, no tracking domains and no collected data types, and the only Required Reason API it declares is local settings storage. It has no entitlements at all: no iCloud, no Game Center, no Keychain sharing. The [privacy policy](/apps/tare/privacy/) sets out exactly what stays on your device and what Apple handles instead.
+Apple's App Store privacy label reads **Data Not Collected**, and the app's Privacy Manifest declares no tracking and no collected data. The [privacy policy](/apps/tare/privacy/) sets out what stays on your device and what Apple handles instead.
 
-Tare runs on iPhone and iPad with iOS or iPadOS 18 or later, and its few words are translated into 50 App Store locales. If you like puzzles that end in a provable answer, [Millrace](/apps/millrace/) comes from the same studio: a tile-delivery puzzle whose 64 levels are each proved solvable by an exhaustive solver. For how both compare with Baba Is You, Good Sudoku, Flow Free and the rest, see [the best logic puzzle games for iPhone](/guides/best-logic-puzzle-games-iphone/).
+Tare runs on iPhone and iPad with iOS or iPadOS 18 or later, and its few words are translated into 50 languages. If you like puzzles that end in a provable answer, [Millrace](/apps/millrace/) is a tile-delivery puzzle from the same studio. For how both compare with Baba Is You, Good Sudoku, Flow Free, and the rest, see [the best logic puzzle games for iPhone](/guides/best-logic-puzzle-games-iphone/).
