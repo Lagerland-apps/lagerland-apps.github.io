@@ -2,8 +2,8 @@
 layout: app
 slug: chessful
 name: "Chessful"
-tagline: "Understand your mistakes. Improve every game."
-quick_answer: "Chessful is a chess training and game analysis app for iPhone, iPad, and Mac. It uses Stockfish to review every move, explains your mistakes in plain language, and builds adaptive training from your actual weaknesses in tactics, defense, openings, and endgames. It includes 40 AI opponents. Free, with Premium from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime. Works fully offline, with no account, no ads, and no tracking."
+tagline: "Chess that explains your mistakes, then trains you on them."
+quick_answer: "Chessful is a chess training and game analysis app for iPhone, iPad, and Mac: Stockfish checks every move of your games on the device, each mistake is explained in plain language at your level, and your mistakes become the puzzles in your daily training. It suits beginners and improving players alike, with 156 free lessons, 15,000 puzzles in 53 themes, 96 endgames, 40 opponents from 400 to 2400 Elo, and PGN import for your Chess.com or Lichess games. It is free with daily limits (2 analyses, 3 puzzles, and 2 coach hints a day); Premium is {P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} once. There is no account, and the app has no ads, analytics, or tracking."
 category: games
 status: live
 
@@ -12,33 +12,31 @@ app_store_url: "https://apps.apple.com/app/id6761336870"
 price:
   model: freemium
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase with no auto-renewal. Universal Purchase across iPhone, iPad, and Mac."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew. Universal Purchase across iPhone, iPad, and Mac."
 
-# Free / Premium-Monthly / Premium-Annual / Lifetime: surfaces the full upgrade
-# ladder. Lifetime sits at roughly 10 months of monthly Premium, which is the
-# conversion math you want readers to see at a glance.
 plans:
   - name: "Free"
     price: "$0"
-    summary: "Stockfish analysis, 40 AI opponents, and the core training loop."
+    summary: "All 156 lessons, every mistake explained, and a daily allowance of the rest."
     features:
-      - "Play any of the 40 AI opponents"
-      - "Stockfish analysis of every move you make"
-      - "Plain-language mistake summaries on each game"
-      - "3 free training sessions per week"
-      - "Basic skill tracking across the 5 dimensions"
-      - "Works fully offline, no account"
+      - "All 156 lessons, from the board to strategy"
+      - "2 game analyses, 3 puzzles, and 2 coach hints a day"
+      - "Every mistake explained, with review of past mistakes that doesn't use up your puzzles"
+      - "The first 10 opponents (400 to 700 Elo)"
+      - "PGN import of your Chess.com or Lichess games"
+      - "The first endgame in each of the 7 categories"
+      - "Estimated rating, skill bars, rating graph, and 59 achievements"
   - name: "Premium · Monthly"
     price: "{P_MONTHLY}/mo"
     kind: monthly
     summary: "Full Premium, billed monthly. Cancel anytime."
     features:
-      - "Unlimited deep game analysis with full move-by-move commentary"
-      - "Unlimited adaptive training sessions"
-      - "Full progress tracking across tactics, defense, positional play, openings, endgames"
-      - "Long-term skill-trend graphs (90 / 180 / 365 days)"
-      - "Alternative-move exploration with strategic reasoning"
-      - "7-day free trial · cancel anytime"
+      - "Unlimited game analysis, puzzles, and coach hints"
+      - "All 40 opponents, up to 2400 Elo"
+      - "All 96 endgame positions"
+      - "Your full opening repertoire with engine correction, plus line drills"
+      - "Weekly Comparison and Weakness Trends"
+      - "{TRIAL} · cancel anytime"
   - name: "Premium · Annual"
     price: "{P_YEARLY}/yr"
     kind: yearly
@@ -46,26 +44,25 @@ plans:
     features:
       - "Everything in Premium · Monthly"
       - "~{SAVE_YEARLY}% cheaper than monthly over a year"
-      - "7-day free trial · cancel anytime"
+      - "{TRIAL} · cancel anytime"
     highlight: true
   - name: "Lifetime"
     price: "{P_LIFETIME} once"
     kind: lifetime
-    summary: "All Premium features, paid once. Costs about the same as {LIFETIME_MONTHS} months of monthly Premium."
+    summary: "All Premium features for one payment."
     features:
       - "Everything in Premium · Annual"
       - "One-time purchase, no renewal"
       - "Universal Purchase across iPhone, iPad, and Mac"
-      - "Restores on every device signed in with the same Apple ID"
-      - "Family Sharing: share with up to 5 family members at no extra cost"
-    highlight_label: "Best long-term value"
+      - "Restores on every device signed in with the same Apple Account"
+      - "Family Sharing included"
 
 icon: "/assets/icons/chessful.png"
 og_image: "/assets/og/chessful.png"
 
 seo:
   title: "Chess Training & Analysis App for iPhone & Mac | Chessful"
-  description: "Chess training app for iPhone, iPad, Mac. Stockfish analysis explained in plain language, adaptive training, 40 AI opponents. Free, fully offline."
+  description: "Chess app that explains every mistake in your games, then trains you on them. On-device Stockfish, 156 lessons, 15,000 puzzles. iPhone, iPad, Mac."
   keywords:
     - chess training app
     - chess training app iphone
@@ -74,40 +71,42 @@ seo:
     - chess game analysis
     - chess game analysis app
     - chess improvement app
-    - chess tactics trainer
-    - chess coach app
     - chess mistakes explained
+    - chess coach app
     - chess puzzles app
-    - learn chess strategy
+    - chess puzzles offline
+    - chess lessons app
+    - learn chess app
     - chess endgame trainer
+    - chess opening repertoire app
+    - import pgn iphone
+    - analyze lichess games iphone
     - offline chess app
-    - chess skill tracker
-    - adaptive chess training
     - Stockfish iPhone
-    - chess analysis without account
     - chess app no ads
-    - chess.com alternative offline
 
 hero:
-  pre_headline: "Chess training & analysis app for iPhone, iPad, and Mac"
-  headline: "Find out why you lost, then train on it."
-  subheadline: "Chessful analyzes your games with Stockfish, explains your mistakes in plain language, and builds adaptive training around your real weaknesses in tactics, defense, openings, and endgames. It has 40 AI opponents and works fully offline. Free, with Premium from {P_MONTHLY}/month."
+  pre_headline: "Chess training and game analysis for iPhone, iPad, and Mac"
+  headline: "Find out why you lost, then train on those exact mistakes."
+  secondary: "Stockfish checks every move on your device. Each mistake shows what you played, what was best, and why, in words pitched at your level."
+  subheadline: "Your mistakes become the puzzles in your daily training, and spaced review brings back the ones you miss. Around that sit 156 free lessons, 15,000 puzzles, 96 endgames, and 40 opponents from 400 to 2400 Elo. Bring in your Chess.com or Lichess games as PGN files."
   cta_label: "Download Free"
-  alt: "Chessful analyzing a chess game with Stockfish on iPhone, with plain-language commentary"
+  alt: "Chessful game review on iPhone with an accuracy score and the key moments of the game"
 
 who_for:
-  - "You know the rules but keep losing and don't understand why"
-  - "You want plain-language explanations of your mistakes, not raw Stockfish evaluation numbers"
-  - "You're stuck at a rating plateau and want training built from your own weaknesses"
-  - "You prefer playing offline without a Chess.com or Lichess account"
-  - "You care about pattern recognition across tactics, defense, positional play, openings, and endgames"
-  - "You want the app on iPhone, iPad, and Mac, with one purchase covering all three"
+  - "You keep losing the same way and can't see why"
+  - "You want each mistake explained in a sentence you can follow"
+  - "You have games on Chess.com or Lichess and want them reviewed from a PGN export"
+  - "You're new to chess and want lessons that start with the board itself"
+  - "You want puzzles aimed at the mistakes you actually make"
+  - "You study on iPhone, iPad, and Mac, and want one purchase to cover all three"
 
 who_not_for:
-  - "You primarily want to play live online matchmaking and chase ELO"
-  - "You're an absolute beginner learning how pieces move (start with a teaching app first)"
-  - "You want social features, tournaments, or community play"
-  - "You want a celebrity-coached experience (Magnus Trainer is built around that pitch; Chessful is not)"
+  - "You mainly want live games against people, with matchmaking and clocks"
+  - "You want tournaments, chat, or a community"
+  - "You need your games to sync between devices (each device keeps its own data)"
+  - "You play on an Intel Mac or Apple Vision Pro"
+  - "You want a celebrity-coached course (Magnus Trainer is built around that; Chessful is not)"
 
 # Organization-type founder block: attributes to the studio rather than a
 # named person. Same pattern as allpaid.md.
@@ -117,13 +116,13 @@ founder:
   role: "Independent Apple developer · Finland · one-person studio since 2025"
   location: "Finland"
   overline: "Why we built this"
-  heading: "For the club player who wants mistakes explained in words."
-  story: "We built Chessful after trying every chess analysis app and engine UI on iOS and Mac. Each one shows you a centipawn line and assumes you can read it. Most players can't, and that has nothing to do with how serious they are: reading engine lines is a different skill from playing chess. Chessful translates the engine output into the sentences a teacher would write, then turns them into spaced-repetition training on the patterns where you actually lose. Stockfish runs entirely on the device, and the explanations come from hand-curated motif detectors plus a small language model running locally. Nothing leaves your phone."
+  heading: "For players who want their mistakes explained in words."
+  story: "An engine can tell you a move was bad. The evaluation and the line of moves it prints rarely tell you why, and reading them is a skill of its own. Chessful puts a plain sentence next to each mistake, worded for the level you choose, and builds your training from the mistakes you actually make. Stockfish is compiled into the app, so your games are analysed on your iPhone, iPad, or Mac. The app makes no network calls of its own; only purchases and the optional Game Center sign-in talk to Apple's servers."
   signals:
-    - "Stockfish runs on-device, so there is no cloud analysis, no rate-limited daily quota, and no account"
-    - "Forty AI opponents, each built to play like a different person instead of one engine at forty noise settings (design notes in the [forty-opponents journal post](/journal/forty-chess-opponents/))"
-    - "Privacy Manifest declares zero tracking domains and no required-reason APIs beyond local storage"
-    - "{APP_COUNT} live apps in the Lagerland catalogue, all with the same data rules: no tracking, no ads, no required accounts"
+    - "Stockfish runs inside the app, so analysis happens on your device and needs no account"
+    - "Forty named opponents in eight tiers, each with a play style, strengths, and weaknesses (design notes in the [forty-opponents journal post](/journal/forty-chess-opponents/))"
+    - "The privacy manifest declares no tracking, no tracking domains, and no collected data types"
+    - "{APP_COUNT} live apps in the Lagerland catalogue, all built without tracking, ads, or required accounts"
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"
@@ -140,99 +139,107 @@ alternatives_to:
   - "Really Bad Chess"
 
 value_points:
-  - title: "Understand why you lost"
-    description: "After every game, Chessful shows where you went wrong, what you missed, and why it mattered, in words instead of engine numbers: the hung piece, the missed fork, the prophylactic move you skipped."
-  - title: "Train your real weaknesses"
-    description: "Hanging pieces, missed tactics, weak defense: your training adapts to what you actually struggle with, using spaced repetition on patterns taken from your own losses."
-  - title: "Watch yourself improve"
-    description: "Track progress across tactics, defense, positional play, openings, and endgames. Long-term trend graphs (90 / 180 / 365 days on Premium) show how each skill grows, which a rating alone can't."
-  - title: "Offline and private"
-    description: "Stockfish runs on the device. There is no account, no server, no daily analysis quota, and no ads, so it works on a flight, in a kitchen, or anywhere without signal."
+  - title: "Know why you lost"
+    description: "After a game, Stockfish checks every move on your device and rates each one from Brilliant to Blunder. Each mistake shows what you played, what was best, why the better move works, and the line that punishes yours."
+  - title: "Train on your own mistakes"
+    description: "Today's Training turns the mistakes from your analysed games into a 5, 10, or 15 minute session. Review past mistakes uses spaced repetition to bring misses back until you stop making them."
+  - title: "Start from the first move"
+    description: "All 156 lessons are free, from the board itself to strategy. Explanations match the level you pick, from just learning the rules to rated 1400+."
+  - title: "Your games stay on your device"
+    description: "There is no account to create. The app has no ads, analytics, or tracking. Playing, analysis, lessons, and puzzles all work offline."
 
 features:
-  - title: "Game analysis you understand"
-    description: "Stockfish reviews every move, and Chessful explains the result in clear, simple sentences. Blunders, missed tactics, weak moves, prophylactic skips, and structural concessions are each described so you learn from them instead of nodding at a centipawn graph."
-  - title: "Training built from your games"
-    description: "Chessful finds the patterns in your mistakes (a hanging back rank, a missed fork shape, a recurring opening lapse) and generates focused training sessions. Spaced repetition gives your weakest areas the most attention without flooding you."
-  - title: "40 unique AI opponents"
-    description: "Each opponent plays like a different person, with its own opening repertoire, structural preferences, and blind spots, from club beginner to master strength. None of them is the engine with a noise slider."
-  - title: "Skill tracking across five dimensions"
-    description: "Tactics, defense, positional play, openings, and endgames are each tracked separately over time. Premium adds 90 / 180 / 365-day trend graphs so you can see where you're growing and where you've plateaued."
-  - title: "Explore better alternatives"
-    description: "After analysis, browse the moves you should have played and the ideas behind them: which square the engine prefers, and why that square mattered structurally."
-  - title: "Universal Purchase across iPhone, iPad, and Mac"
-    description: "One purchase covers all three platforms: iPhone for quick games and training, iPad for board-sized study, Mac for detailed post-game review. Progress and Premium status sync via standard iCloud Keychain."
+  - title: "Game Review with on-device Stockfish"
+    description: "Stockfish checks every move of a game and gives you an accuracy score, the key moments, and a rating for each move from Brilliant to Blunder. Step through the engine's best line move by move. Free players get 2 analyses a day; Premium is unlimited."
+  - title: "Every mistake explained"
+    description: "Each mistake card shows what you played, what was best, how much the evaluation dropped, and a plain-language explanation of why. It also plays out the line that punishes your move. Mistakes are sorted into 10 types, such as Hanging Piece, Missed Fork, Missed Pin, and Endgame Error, and Train This Pattern takes you straight to practice."
+  - title: "Import your Chess.com and Lichess games"
+    description: "Export a PGN file from either site and open it in Chessful, or paste the PGN text. One import takes up to 500 games, flags duplicates, and lets you choose which side you played. There is no account to connect; the file is all Chessful needs."
+  - title: "Daily training from your mistakes"
+    description: "Today's Training picks a focus area (Tactics, Defense, Positioning, Endgame, or Openings) and builds a session of 3, 5, or 8 puzzles from your own games. Miss one and you play the right move yourself; score under 70% and it offers to re-drill the misses."
+  - title: "15,000 puzzles in 53 themes"
+    description: "A tactics library drawn from the Lichess open puzzle database, from forks and pins to named checkmate patterns. Every puzzle was checked with an engine, the difficulty adapts to your puzzle rating, and it all works offline."
+  - title: "96 endgames against full-strength Stockfish"
+    description: "Play out Lucena, Philidor, Vančura, and more across 7 categories, from basic mates to classic studies. The first position in each category is free; Premium opens all 96."
+  - title: "40 opponents from 400 to 2400 Elo"
+    description: "Climb a ladder of named opponents in 8 tiers, from Pebble to The Grandmaster, each with a play style, strengths, and weaknesses. Play on a 2D board or a 3D wood board. Stuck mid-game on the 2D board? Ask the Coach for the best move or the evaluation of every legal move."
+  - title: "Your opening repertoire"
+    description: "Chessful reads your analysed games and shows the openings you play most, how you score in each, and where you leave the book. Premium adds the full move tree, engine corrections, and drills for the lines you keep getting wrong."
+  - title: "Progress you can read"
+    description: "Track an estimated rating, five skill bars, a rating graph, and 59 achievements, with optional Game Center leaderboards. Premium adds Weekly Comparison and Weakness Trends. The rating is Chessful's own estimate, separate from FIDE, Chess.com, or Lichess ratings."
+  - title: "iPhone, iPad, and Mac"
+    description: "One Universal Purchase covers all three. On a Mac with Apple silicon you get menu commands and keyboard shortcuts for new games, moves, and copying FEN or PGN. Your games stay on the device you played them on."
 
 # Methodology disclosure: the highest-leverage E-E-A-T artefact for a
 # product page in a category where most competitors hide their algorithm.
 # Emits HowTo schema automatically via _layouts/app.html.
 how_it_works:
-  intro: "Chessful's adaptive training does most of the teaching. This is what happens between you losing a game and Chessful generating tomorrow's training session."
+  intro: "This is what happens between the end of a game and your next training session."
   steps:
-    - title: "Stockfish reviews every move"
-      detail: "When a game ends, Chessful runs Stockfish locally over the full move list and records an evaluation for each move. The engine runs on-device, with no cloud calls, no rate-limited quota, and no account. It is the same Stockfish you'd see on Chess.com or Lichess, running on your iPhone, iPad, or Mac."
-    - title: "Motif detectors classify each mistake"
-      detail: "Raw centipawn loss is unreadable. A layered model, engine output combined with hand-curated motif detectors, sorts each significant mistake into one of about thirty categories: hung piece, missed fork, missed pin, weak back rank, prophylactic skip, opening repertoire lapse, endgame technique error, and so on. Each motif maps to one of the five skill dimensions."
-    - title: "Plain-language explanation generated"
-      detail: "A small on-device language model turns the motif label and engine evaluation into one or two sentences a club player can read. \"You played Nxd5, but your knight was the only defender of the back rank, and Black's queen took mate in two\" beats \"+3.8 → −8.1, line: Nxd5 Qxe1+ Kh2 Qe5+ g3 Qxd5\" every time."
-    - title: "Patterns added to your skill buckets"
-      detail: "Each detected mistake updates a counter for its skill dimension. After three games where you skipped a prophylactic move, the Defense bucket gets a flag; after two missed fork shapes, the Tactics bucket does. The buckets are visible, so you can see which patterns are piling up."
-    - title: "Spaced-repetition training queue generated"
-      detail: "Each training session pulls from the flagged buckets on a spaced-repetition schedule: positions seen most recently come back sooner, and positions you've solved correctly twice in a row drop out. Sessions take 5 to 10 minutes. The Free tier allows three sessions per week; Premium is unlimited."
-    - title: "Skill graphs update"
-      detail: "After each session the five skill trend graphs update. Premium adds 90 / 180 / 365-day views, so you can check whether the last three weeks of training actually moved (say) your endgame technique, or whether you've plateaued and need to try something else."
+    - title: "Play a game or import one"
+      detail: "Play one of the 40 opponents in the app, or import your Chess.com or Lichess games from a PGN file. Imported games can be edited or deleted later."
+    - title: "Stockfish checks every move"
+      detail: "Stockfish runs on your iPhone, iPad, or Mac and evaluates every move of the game. You see your accuracy, the key moments, and a rating for each move from Brilliant to Blunder."
+    - title: "Each mistake is explained"
+      detail: "For every mistake you get what you played, what was best, the size of the evaluation drop, a plain-language explanation worded for your coaching level, and the line that punishes your move. Each one is tagged with one of 10 mistake types."
+    - title: "Your mistakes become today's training"
+      detail: "Today's Training builds a session from the mistakes in your analysed games, aimed at one focus area. Choose 5, 10, or 15 minutes. Free players get 3 puzzles a day; Premium is unlimited."
+    - title: "Spaced review brings misses back"
+      detail: "Review past mistakes schedules the puzzles you got wrong with spaced repetition, so they come back until you solve them. These reviews don't count against the free daily puzzles."
+    - title: "Progress shows what changed"
+      detail: "Your estimated rating and the five skill bars (Tactics, Defense, Positioning, Endgame, and Openings) update as you play, analyse, and train. Premium adds Weekly Comparison and Weakness Trends."
 
-# Example "mistake explained" gallery: the page's strongest USP, shown
-# rather than described. Anchored to /apps/chessful/#templates.
+# Example mistake cards: the page's strongest USP, shown rather than
+# described. Anchored to /apps/chessful/#templates.
 example_insights:
   anchor: "templates"
   overline: "What Chessful explains"
-  heading: "What a plain-language mistake looks like in Chessful."
-  intro: "Six worked examples of Chessful turning a Stockfish evaluation into something a club player can use. Each is the kind of mistake the adaptive trainer then drills in tomorrow's session."
+  heading: "What a mistake card in Chessful looks like."
+  intro: "Six illustrations written for this page to show the format of a mistake card. Your own games produce your own cards, worded for the coaching level you choose, and each card can send you to practice on the same pattern."
   cards:
-    - tag: "Tactics · Hung piece"
-      headline: "You played Nxd5. The knight was your only back-rank defender."
-      body: "After Nxd5, Black plays Qxe1+, because the knight you just captured with was your only defender of the e1 square. Mate in 2. The right move was Bf4, keeping the knight on c3 where it stops the queen's path. Pattern: defender-removal blindness."
-    - tag: "Tactics · Missed fork"
-      headline: "You played Bd3. Black had a fork on c2."
-      body: "Black's knight on b4 was one move from c2, forking your queen and rook. After Bd3, you walked into it: Nxc2+ wins the exchange. The right move was Qd2, defending c2 with the queen. Pattern: enemy-piece radius blindness."
-    - tag: "Defense · Weak king"
-      headline: "You castled into a half-open f-file with no defenders."
-      body: "Castling short looked safe, but Black had a rook on f8 and the f-pawn was missing. Three moves later, Rxf2 cracked the position open. The right plan was to develop the knight to g3 first, blocking the f-file before castling. Pattern: structural-prerequisite skip."
-    - tag: "Openings · Repertoire lapse"
-      headline: "Move 7 deviated from your usual French setup."
-      body: "You've played the French Defense Winawer 23 times in your games. Move 7 here was Nf6 instead of the usual Qa5+. The deviation lost a tempo and let White's bishop reach an active square. Pattern: repertoire drift. Chessful flags this for opening drill."
-    - tag: "Endgame · Technique error"
-      headline: "King and pawn endgame: you took the opposition the wrong way."
-      body: "With pawns on e5 vs e6, you played Kd4 and lost the opposition. The right move was Kf4, taking the opposition and forcing Black's king to retreat. The pawn promotes in 7 moves. Pattern: opposition direction error. Chessful queues opposition-pattern training."
-    - tag: "Tactics · Back-rank mate"
-      headline: "You played h3 to give the king luft. It was three moves too late."
-      body: "Black's rook had already swung to d8 and the queen was on e7, so back-rank mate was already threatened. h3 was correct prophylaxis, but the right time to play it was move 18, not move 24. Pattern: prophylactic-timing miss. Chessful drills the recognition pattern."
+    - tag: "Hanging Piece · Blunder"
+      headline: "You played Qxa7. Best was Be3."
+      body: "Taking the pawn pulled your queen off d4, and the knight on c3 lost its only defender. The card shows how far the evaluation dropped, explains in a sentence why the knight was loose, and plays out the line that wins it."
+    - tag: "Missed Fork · Mistake"
+      headline: "You played h3. Best was Nd5."
+      body: "From d5 your knight would have attacked the queen on c7 and the rook on e7 at once. The card names the fork, explains why Nd5 works, and Train This Pattern opens practice on forks."
+    - tag: "Missed Pin · Mistake"
+      headline: "You played Be2. Best was Bb5."
+      body: "From b5 your bishop would have pinned the knight on c6 to the king on e8. The card shows the pin on the board, explains why the knight could no longer move, and plays out the line that wins material."
+    - tag: "Poor King Safety · Mistake"
+      headline: "You played g4. Best was Nf3."
+      body: "Pushing the pawn in front of your castled king opened a path to it. The explanation says what the move weakened, and the refutation shows how Black's pieces get in."
+    - tag: "Endgame Error · Mistake"
+      headline: "You played Kd3. Best was Kf4."
+      body: "In this king and pawn ending, Kd3 handed Black the opposition and the pawn could no longer promote. The card explains the idea in a sentence and shows the winning line with Kf4."
+    - tag: "Opening Inaccuracy · Inaccuracy"
+      headline: "You played Bd3. Best was Nf3."
+      body: "A move-order slip in the opening. The card says which piece belonged on its square first and why, and the same game feeds your Opening Repertoire, which shows where you left the book."
 
 # Side-by-side comparison: replaces the templated alternatives card grid
 # with substantive feature deltas. Auto-triggers the mid-page CTA.
 comparison_table:
-  intro: "Each row is a question a serious chess player asks before installing a training or analysis app. Chess.com is the dominant online platform, Lichess the free open-source alternative, Magnus Trainer the celebrity-coached training app (now owned by Chess.com), and Chessis the closest on-device, analysis-focused peer. Checked against each app's public landing page and App Store listing on 2026-05-13."
+  intro: "Each row is a question players ask before installing a chess training or analysis app. Chess.com is the largest online platform, Lichess the free open-source alternative, Magnus Trainer the celebrity-coached training app (now owned by Chess.com), and Chessis the closest on-device, analysis-focused peer. Competitor columns were checked against each app's public landing page and App Store listing on 2026-05-13."
   competitors: ["Chessful", "Chess.com", "Lichess", "Magnus Trainer", "Chessis"]
   rows:
-    - feature: "Fully offline (no internet required)"
+    - feature: "Analysis works offline"
       values: ["Yes, Stockfish runs on-device", "No, cloud analysis", "Mostly cloud", "No, cloud", "Yes, Stockfish on-device"]
     - feature: "Account required"
-      values: ["No account ever", "Required", "Optional but expected", "Required (Chess.com)", "No account"]
+      values: ["No account", "Required", "Optional but expected", "Required (Chess.com)", "No account"]
     - feature: "Daily analysis quota"
-      values: ["Unlimited (Premium); unlimited basic analysis on Free", "1 game review/day on Free; unlimited on paid", "Unlimited (free)", "Lessons-based, not analysis-based", "Unlimited (Pro)"]
+      values: ["Free: 2 games a day; Premium: unlimited", "1 game review/day on Free; unlimited on paid", "Unlimited (free)", "Lessons-based, not analysis-based", "Unlimited (Pro)"]
     - feature: "Plain-language mistake explanations"
-      values: ["Yes, motif detectors + on-device LM", "Centipawn lines + Game Review (paid)", "Centipawn lines + community annotations", "Lessons rather than per-game review", "Yes, game-report sentences"]
-    - feature: "Adaptive training built from your games"
-      values: ["Yes, spaced repetition on detected motifs", "Lessons + puzzles, not derived from your games", "Puzzle Storm + study tool, not adaptive", "Curated lessons, not drawn from your games", "Mistakes report, no training queue"]
+      values: ["Yes, for every mistake, at your level", "Centipawn lines + Game Review (paid)", "Centipawn lines + community annotations", "Lessons rather than per-game review", "Yes, game-report sentences"]
+    - feature: "Training built from your games"
+      values: ["Yes, daily sessions + spaced review of misses", "Lessons + puzzles, not derived from your games", "Puzzle Storm + study tool, not adaptive", "Curated lessons, not drawn from your games", "Mistakes report, no training queue"]
     - feature: "Number of AI opponents"
-      values: ["40, distinct styles", "1 engine + bots library", "1 engine + bots", "Magnus + ~12 personality bots", "Not focused on play"]
+      values: ["40, from 400 to 2400 Elo", "1 engine + bots library", "1 engine + bots", "Magnus + ~12 personality bots", "Not focused on play"]
     - feature: "Live human matchmaking"
-      values: ["No (intentional)", "Yes, global", "Yes, global and free", "No", "No"]
+      values: ["No", "Yes, global", "Yes, global and free", "No", "No"]
     - feature: "Lifetime / one-time pricing"
-      values: ["{P_LIFETIME} lifetime", "Subscription only ($9.99 to $14/mo)", "Free / donation", "$299.99 lifetime (else subscription)", "One-time Pro purchase"]
+      values: ["{P_LIFETIME} lifetime", "Subscription only", "Free / donation", "Lifetime option, otherwise subscription", "One-time Pro purchase"]
     - feature: "Privacy: no tracking, no third-party SDKs"
-      values: ["Zero tracking SDKs, App Privacy: nothing collected", "Standard analytics + ads SDKs", "No ads, minimal analytics", "Standard Chess.com analytics", "Minimal, no ads on Pro"]
+      values: ["No ads, analytics, tracking, or third-party SDKs", "Standard analytics + ads SDKs", "No ads, minimal analytics", "Standard Chess.com analytics", "Minimal, no ads on Pro"]
     - feature: "Platforms"
       values: ["iPhone + iPad + Mac (Universal Purchase)", "Web + iPhone + iPad + Mac + Android", "Web + iPhone + iPad + Android", "iPhone + iPad + Mac + Vision", "Android primary; iOS limited"]
   footnote: "Competitor positioning summarised from each app's public landing page and App Store listing on 2026-05-13. Pricing and features change often, so check before switching."
@@ -251,48 +258,52 @@ screenshots:
   - src: "/assets/screenshots/chessful/6.webp"
     alt: "Chessful play screen listing computer opponents by level"
   - src: "/assets/screenshots/chessful/7.webp"
-    alt: "Chessful dashboard with rating, skills and today training"
+    alt: "Chessful dashboard with rating, skills, and today's training"
 
 privacy:
   data_collection: "none"
   tracking: false
   account_required: false
   notes:
-    - "No ads, no trackers"
-    - "No account or sign-up required"
-    - "All analysis runs locally on your device: Stockfish, the motif detectors, and the explanation model"
-    - "Works fully offline, with no cloud calls and no daily analysis quota"
-    - "Universal Purchase across iPhone, iPad, and Mac via standard Apple infrastructure"
+    - "No account or sign-up"
+    - "No ads, analytics, tracking, or third-party SDKs"
+    - "Stockfish runs on your device, and your games, mistakes, and training history stay there"
+    - "Playing, analysis, lessons, and puzzles work offline; purchases and the optional Game Center sign-in use Apple's servers"
+    - "Settings → Reset Everything erases all Chessful data on the device"
 
 faq:
   - q: "What is Chessful?"
-    a: "Chessful is a chess training and game analysis app for iPhone, iPad, and Mac. It analyzes your games with Stockfish, explains your mistakes in plain language, and builds adaptive training sessions focused on your real weaknesses across five skill dimensions: tactics, defense, positional play, openings, and endgames."
-  - q: "How is Chessful different from Chess.com or Lichess?"
-    a: "Chess.com and Lichess are online platforms that run on network effects: millions of opponents, ranked play, a daily analysis quota. Chessful is fully offline, runs on-device, needs no account, and is made for the player who wants a teacher more than a community. Stockfish runs locally on your iPhone, iPad, or Mac, explanations come in plain language instead of centipawn lines, and training is generated from your own losses instead of a generic puzzle library."
-  - q: "How is Chessful different from Magnus Trainer?"
-    a: "Magnus Trainer is a celebrity-coached lessons app, with content curated by Magnus Carlsen and his team and organised as bite-sized games and theory courses. Chessful has no celebrity content; its training comes from the specific patterns in your own losses. The two complement each other, Magnus Trainer for structured lessons and Chessful for adaptive training on your real weaknesses, and many improving players use both."
-  - q: "How is Chessful different from Chessis?"
-    a: "Chessis is the closest direct peer: both have Stockfish, on-device analysis, plain-language explanations, and a one-time purchase option. Chessful adds the adaptive training queue (spaced repetition on motifs from your games), 40 distinct AI opponents to play against, and Universal Purchase across iPhone, iPad, and Mac. Chessis is currently Android-primary, with one-time Pro pricing and a tight focus on the analysis flow."
+    a: "Chessful is a chess training and game analysis app for iPhone, iPad, and Mac. Stockfish checks every move of your games on the device, each mistake is explained in plain language at your level, and your mistakes become the puzzles in your daily training. It also includes 156 lessons, 15,000 puzzles in 53 themes, 96 endgames to play out, an opening repertoire built from your games, and 40 opponents from 400 to 2400 Elo."
+  - q: "Can I import my games from Chess.com or Lichess?"
+    a: "Yes, as PGN files. Export your games from Chess.com or Lichess, then open the file in Chessful from Files, iCloud Drive, or AirDrop, or paste the PGN text. One import takes up to 500 games, flags duplicates, and lets you pick which side you played. Chessful doesn't connect to either site or fetch games by username. Importing is unlimited; analysing imported games counts toward the free 2 analyses a day."
   - q: "Is Chessful good for beginners?"
-    a: "Chessful suits players who know the rules and have played at least a few full games. If you're an absolute beginner learning how the pieces move, start with a teaching app, because Chessful's training assumes you can read a position. It is aimed at players rated around 800 to 1800 who are stuck on a plateau and don't understand why."
+    a: "Yes. The Learn tab has 156 free lessons in seven sections, starting with the board itself and the way the pieces move, then checkmates, tactics, openings, endgames, thinking, and strategy. Set your coaching level to \"Just learning the rules\" and the mistake explanations are worded for that level. Players who already know the rules can go straight to playing and analysing games."
+  - q: "Does Chessful have chess puzzles?"
+    a: "Yes, two kinds. The tactics library has 15,000 puzzles in 53 themes, from forks and pins to named checkmate patterns, drawn from the Lichess open puzzle database and checked with an engine. Today's Training adds puzzles built from the mistakes in your own games. Free players get 3 puzzles a day across both; reviewing past mistakes doesn't count toward that. Premium is unlimited."
+  - q: "How is Chessful different from Chess.com or Lichess?"
+    a: "Chess.com and Lichess are online platforms built around playing other people. Chessful is a training app: you play its 40 built-in opponents or import your games from either site as PGN, Stockfish analyses them on your device, every mistake is explained in words, and your training is built from those mistakes. There is no account. Chessful has no online play, so you can keep your Chess.com or Lichess account for games against people and use Chessful to review those games."
+  - q: "How is Chessful different from Magnus Trainer?"
+    a: "Magnus Trainer teaches through courses and games built around Magnus Carlsen. Chessful has no celebrity content. It analyses your own games, explains each mistake, and builds your training from them, alongside 156 lessons, 15,000 puzzles, and 96 endgames."
+  - q: "How is Chessful different from Chessis?"
+    a: "Both analyse games with Stockfish on the device and explain mistakes in sentences. Chessful adds the training around the analysis: daily sessions built from your mistakes, spaced review of misses, 156 lessons, 15,000 puzzles, 96 endgames, and 40 opponents to play, with one Universal Purchase across iPhone, iPad, and Mac."
   - q: "Does Chessful work offline?"
-    a: "Yes. Every part of Chessful runs entirely on your device: Stockfish analysis, motif detection, plain-language explanations, adaptive training, and the 40 AI opponents. It never needs an internet connection, so you can play and analyse on a flight, in a kitchen, or on the subway."
+    a: "Yes, for everything you do with chess. Playing, Stockfish analysis, lessons, the puzzle library, endgames, and openings all run on bundled content and a bundled engine. Buying or restoring Premium, loading prices, and Game Center need a connection."
   - q: "What chess engine does Chessful use?"
-    a: "Chessful uses Stockfish, the open-source engine behind Chess.com's analysis and Lichess's evaluation. It runs locally on your iPhone, iPad, or Mac at a depth tuned to the device. Chessful then turns Stockfish's centipawn output into plain-language sentences using motif detectors and a small on-device language model."
+    a: "Stockfish, with NNUE, compiled into the app. It runs on your iPhone, iPad, or Mac. Game Review evaluates every move of your game, and the endgame trainer uses Stockfish at full strength as your opponent. Chessful then explains each mistake in plain language."
   - q: "Is Chessful free? What does Premium cost?"
-    a: "Chessful is free to try with the 40 AI opponents, basic analysis of every game, three training sessions per week, and basic skill tracking, with no ads and no account. Premium unlocks unlimited deep game analysis, unlimited adaptive training, the full progress dashboard with 90/180/365-day skill-trend graphs, and alternative-move exploration. Premium is {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once for lifetime access, with a 7-day free trial. Lifetime supports Family Sharing, so one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Chessful is free to download with daily limits: 2 game analyses, 3 puzzles, and 2 coach hints a day, the first 10 opponents, and the first endgame in each category. All 156 lessons, every mistake explanation, PGN import, and progress tracking are free. Premium removes the daily limits and unlocks all 40 opponents, all 96 endgames, the full opening repertoire with line drills, and Weekly Comparison and Weakness Trends. It costs {P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} once for lifetime access. Family Sharing is included. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does Chessful track my improvement?"
-    a: "Yes. Chessful tracks five skill areas (tactics, defense, positional play, openings, and endgames) and shows how each changes over time. The Free tier shows basic counts; Premium adds 90 / 180 / 365-day trend graphs so you can see whether the last three weeks of training actually moved (say) your endgame technique."
+    a: "Yes. Progress shows an estimated rating, a rating graph, game stats, five skill bars (Tactics, Defense, Positioning, Endgame, and Openings), an activity view, and 59 achievements, all free. Premium adds Weekly Comparison and Weakness Trends. The rating is Chessful's own estimate, separate from FIDE, Chess.com, or Lichess ratings."
   - q: "Does Chessful need an account?"
-    a: "No. Chessful needs no account, no sign-up, and no personal information. Your games, analysis, and training progress stay on your device. Universal Purchase status syncs through standard iCloud Keychain, which is Apple's mechanism and not a Chessful account."
-  - q: "Can I import games from Chess.com or Lichess?"
-    a: "No. Chessful doesn't import games from Chess.com or Lichess, or PGN files. It analyses the games you play in the app against its 40 AI opponents and builds your training queue from those."
-  - q: "Does Chessful have a tactics-puzzle trainer like Chess.com?"
-    a: "Chessful's training queue comes from the mistake patterns in your own games, not from a generic puzzle pool, on the view that adaptive training on your real weaknesses works better than puzzle-rush. There is no standalone puzzle mode."
-  - q: "Does Chessful work on Apple Watch?"
-    a: "No. Chessful has no Apple Watch app. It runs on iPhone, iPad, and Mac, with one Universal Purchase covering all three."
+    a: "No. There is no sign-up and no Chessful account. Your games, analysis, and training history are stored on your device. Game Center is optional, and purchases go through your Apple Account."
+  - q: "Do my games sync between iPhone, iPad, and Mac?"
+    a: "No. Each device keeps its own games and progress, and Chessful has no iCloud sync. Your Premium purchase does carry over: Universal Purchase covers iPhone, iPad, and Mac, and Restore Purchases brings it back on any device signed in with the same Apple Account."
   - q: "Is Chessful a replacement for Chess.com or Lichess?"
-    a: "No. Chessful has no ranked play, live human matchmaking, or leaderboards. It is for the player who wants to improve against varied AI opponents with readable explanations, without an account or a daily quota. For ranked human play, Chess.com and Lichess remain the right tools, and many improving players use Chessful for analysis and training alongside one of them for matchmaking."
+    a: "Not for playing people. Chessful has no online play, matchmaking, or clocks; every game is against its built-in opponents. It is for reviewing and training: import your Chess.com or Lichess games as PGN, see each mistake explained, and practise on them."
+  - q: "Does Chessful work on Apple Watch or Apple Vision Pro?"
+    a: "No. Chessful runs on iPhone, iPad, and Mac (Apple silicon only, not Intel Macs), with one Universal Purchase covering all three."
+  - q: "What languages is Chessful available in?"
+    a: "Chessful ships in 32 languages (38 locales counting regional variants such as UK English, Mexican Spanish, and Brazilian Portuguese), lessons included. Pick the language for Chessful in iOS Settings, or in System Settings on a Mac."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -313,19 +324,16 @@ related_journal:
 
 # Render the markdown body as a visible "About Chessful." section with
 # contextual in-body internal links to the methodology, templates,
-# comparison, and privacy sections. SearchPilot: in-body contextual
-# links return 5 to 25% organic uplift.
+# comparison, and privacy sections.
 show_body: true
-about_heading: "What Chessful does: chess training, analysis, and 40 opponents"
+about_heading: "What Chessful does: chess analysis, training, and lessons"
 related_apps: ["shogiful", "xiangqiful"]
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
-Chessful is a [chess training & analysis app for iPhone, iPad, and Mac](#features), built on the observation that Stockfish's centipawn numbers don't help most players improve. The app reviews every move you make, then turns the engine's output into plain English: which piece you hung, which fork you missed, which prophylactic move would have saved the position. From there, [Chessful builds an adaptive training queue](#how-it-works) aimed at the patterns where you actually lose (tactics, defense, positional play, openings, endgames), using spaced repetition and forty AI opponents tuned to specific playing styles.
+Chessful is a [chess training and analysis app for iPhone, iPad, and Mac](#features) for players who keep losing the same way and can't see why. When a game ends, Stockfish checks every move on your device. Each mistake gets a card with what you played, what was best, a short explanation worded for your level, and the line that punishes your move. Those mistakes then become the puzzles in [your daily training](#how-it-works), and spaced review brings back the ones you miss until you solve them.
 
-The engine is not what separates Chessful from Chess.com, Lichess, and Magnus Trainer, since they all run Stockfish or a derivative. The difference is the [layer on top of the engine](#how-it-works): motif detectors that sort each significant mistake into one of about thirty categories (hung piece, missed fork, weak back rank, prophylactic skip, repertoire lapse, endgame technique error), and a small on-device language model that expands each one into one or two sentences you can read. The [example explanations](#templates) show what this looks like in practice.
+An engine evaluation on its own is a number and a line of moves. Chessful adds the sentence that explains it and sorts each mistake into one of ten types, from Hanging Piece and Missed Fork to Endgame Error and Opening Inaccuracy, so your training aims at the types you repeat. The [example mistake cards](#templates) show the format.
 
-Every part of Chessful runs on your device: Stockfish, the motif detectors, the explanation model, and the forty AI opponents. There is no cloud, no rate-limited daily analysis quota, no account to make, and no daily ranking attached to your name. The trade-off is that Chessful has no ranked play or live human matchmaking; for those, Chess.com and Lichess remain the right tools. Chessful is for the player who wants a teacher more than a community. The [side-by-side comparison](#compare-heading-chessful) lists the full feature differences against Chess.com, Lichess, Magnus Trainer, and Chessis. For the whole category in one place (which app fits playing, learning openings, or understanding your losses), see our [honest guide to the best chess apps for iPhone](/guides/best-chess-apps-iphone/).
+You can play your games in the app against 40 opponents from 400 to 2400 Elo (the [forty-opponents journal post](/journal/forty-chess-opponents/) covers how the ladder was designed), or import the games you already played on Chess.com or Lichess as PGN files. Around the analysis sit 156 lessons that start with the board itself, 15,000 puzzles in 53 themes, 96 endgames to play out against full-strength Stockfish, and an opening repertoire built from your own games. For the whole category in one place, see our [guide to the best chess apps for iPhone](/guides/best-chess-apps-iphone/), and the [side-by-side comparison](#compare-heading-chessful) with Chess.com, Lichess, Magnus Trainer, and Chessis.
 
-The forty AI opponents took a disproportionate share of the engineering work and have their own [forty-opponents journal post](/journal/forty-chess-opponents/). Each opponent has its own opening repertoire, structural preference, and blind spots, so games feel like playing different people instead of one engine at forty noise settings. The [adaptive training methodology](/journal/how-chessful-builds-adaptive-training/) is covered in a separate post.
-
-Free users get 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, three training sessions per week, and basic skill tracking. Premium adds unlimited deep analysis, unlimited adaptive training, full progress tracking with 90/180/365-day trend graphs, and alternative-move exploration, for {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once for [lifetime](/apps/chessful/#pricing), with a 7-day free trial. [No tracking, no ads, no account](/apps/chessful/privacy/), as the App Store privacy nutrition label confirms. The same play, analyze, and train loop exists for two other chess games: [Shogiful](/apps/shogiful/) for shogi (Japanese chess) and [Xiangqiful](/apps/xiangqiful/) for xiangqi (Chinese chess). Published by Lagerland Apps, an independent Apple developer in Finland.
+Chessful has no online play, and your games stay on the device you played them on. The free version includes every lesson and every explanation, with 2 analyses, 3 puzzles, and 2 coach hints a day. Premium removes those limits and opens all 40 opponents, all 96 endgames, and the full repertoire, for {P_MONTHLY}/month or {P_YEARLY}/year with a {TRIAL}, or {P_LIFETIME} once for [lifetime](/apps/chessful/#pricing). There is [no account, and the app has no ads, analytics, or tracking](/apps/chessful/privacy/). Lagerland Apps also makes [Shogiful](/apps/shogiful/) for shogi (Japanese chess) and [Xiangqiful](/apps/xiangqiful/) for xiangqi (Chinese chess). Chessful is published by Lagerland Apps, an independent Apple developer in Finland.
