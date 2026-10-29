@@ -2,10 +2,10 @@
 layout: default
 permalink: /alternatives/venmo-split/
 title: "Venmo Split Alternative"
-quick_answer: "RightSplit does the bill math that comes before a Venmo payment; it does not replace Venmo, which handles the payment itself. Scan the restaurant receipt on iPhone and split it item-by-item with proportional tip, then each person pays through whichever app they prefer: Venmo, Apple Pay, Wise, or cash. OCR runs on-device, there is no account, and equal splits are free."
+quick_answer: "RightSplit does the bill math that comes before a Venmo payment; it does not replace Venmo, which moves the money. Scan the restaurant receipt on your iPhone, tap who had each item, and RightSplit sends each person their exact amount with a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay, so friends can pay with the service they already use. The receipt is read on the device, there is no account, and equal splits are free."
 seo:
   title: "Venmo Split Alternative: RightSplit Bill Math"
-  description: "Split the bill before sending Venmo requests. RightSplit scans receipts on iPhone and splits item-by-item with fair tip; then pay any way. No account."
+  description: "Split the bill before anyone pays on Venmo. RightSplit reads the receipt on iPhone, splits it by item, and sends each person a pay link. No account."
   keywords:
     - Venmo split alternative
     - split a bill before Venmo
@@ -15,7 +15,7 @@ seo:
     - receipt scanner for Venmo
     - item-based bill split iPhone
     - no account bill splitter
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "rightsplit" | first -%}
@@ -47,19 +47,19 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is RightSplit a Venmo alternative?", "acceptedAnswer": { "@type": "Answer", "text": "Not directly. Venmo is a payment app and RightSplit is a bill-splitting app, and the division is on purpose: one app does the math (item-level fairness, proportional tip, fair rounding) and another does the payment. After RightSplit calculates each person's total, you send Venmo requests, Apple Pay, Wise transfers, or whatever payment method your group uses." } },
-    { "@type": "Question", "name": "Does RightSplit integrate with Venmo?", "acceptedAnswer": { "@type": "Answer", "text": "Only lightly, because RightSplit never moves money. It sends each person's total via iMessage, WhatsApp, or copy-paste as a short line like 'Hey Mike! Your share of the bill at Luigi's is $23.40.' If you save your own Venmo handle (or PayPal.me, Revolut or Wise), the pay button next to each person opens that service with their amount filled in where the service allows it. From there, each person pays through whichever app they prefer. RightSplit is not locked into a single payment provider." } },
-    { "@type": "Question", "name": "Why not use Venmo's split feature directly?", "acceptedAnswer": { "@type": "Answer", "text": "Venmo's split assumes equal division, the same amount for everyone. RightSplit covers the case Venmo doesn't: when someone ordered a $14 salad and someone else ordered a $48 steak, an equal split is unfair. RightSplit does the item-level math first, and you can still pay via Venmo afterwards if you like." } }
+    { "@type": "Question", "name": "Is RightSplit a Venmo alternative?", "acceptedAnswer": { "@type": "Answer", "text": "Not directly. Venmo is a payment app and RightSplit is a bill-splitting calculator: RightSplit works out each person's amount, item by item, and Venmo or another service moves the money. Each person's message carries a tap-to-pay link for the method you saved, whether that is Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay." } },
+    { "@type": "Question", "name": "Does RightSplit integrate with Venmo?", "acceptedAnswer": { "@type": "Answer", "text": "Through links, and RightSplit never moves money itself. Save your Venmo handle (or PayPal.me, Revolut, Wise, your IBAN, or Apple Pay), and Send Payment Requests writes one message per person with the place, their exact amount, and a link that opens that service. Send it by Messages or WhatsApp, or copy it. A link can't confirm that a payment arrived, so you mark people paid yourself." } },
+    { "@type": "Question", "name": "Why not use Venmo's split feature directly?", "acceptedAnswer": { "@type": "Answer", "text": "Venmo's split works from one total and the friends you pick on Venmo. RightSplit covers the dinner where the orders differ: it reads the receipt, lets you tap who had each item, divides shared dishes among the people who shared them, and divides tax and tip per person. You can still collect through Venmo afterwards, and friends who aren't on Venmo can use another link." } }
   ]
 }
 </script>
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">The math before the payment · On-device OCR · No account</p>
+    <p class="overline">The math before the payment · Read on your iPhone · No account</p>
     <h1 class="h1">A Venmo Split alternative<br><span class="gradient-text">for the math, not the payment.</span></h1>
     <p class="lead">
-      Venmo handles payments well in the US. The hard part is deciding how much each person owes when one ordered the $14 salad and another ordered the $48 steak. RightSplit does that math first: scan the receipt, assign the items, and the tip is distributed fairly. Then everyone pays however they want, whether that's Venmo, Apple Pay, Wise, or cash, without being tied to one service.
+      Venmo handles payments well in the US. The hard part is deciding how much each person owes when one ordered the salad and another ordered the steak. RightSplit does that math first: scan the receipt, tap who had what, and tax and tip are divided per person. Then each person gets a message with their amount and a link to pay you by Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/rightsplit/">See RightSplit</a>
@@ -76,19 +76,19 @@ last_updated: 2026-10-26
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">What it does</div>
-      <div class="card-text"><strong>RightSplit:</strong> Calculates fair, item-level totals from a scanned receipt, including proportional tip.<br><br><strong>Venmo Split:</strong> Divides one number equally between selected friends and sends payment requests.</div>
+      <div class="card-text"><strong>RightSplit:</strong> Works out each person's total from a scanned receipt, item by item, and sends it with a pay link. It never moves money itself.<br><br><strong>Venmo Split:</strong> Splits one payment between Venmo friends and sends them payment requests.</div>
     </div>
     <div class="card">
       <div class="card-title">Item-level fairness</div>
-      <div class="card-text"><strong>RightSplit:</strong> Yes. Each person pays for what they ordered, including their share of any shared dishes.<br><br><strong>Venmo Split:</strong> Equal-split only. The $14-salad eater pays the same as the $48-steak eater.</div>
+      <div class="card-text"><strong>RightSplit:</strong> Yes, with Pro+. Each person pays for what they ordered, plus their share of any dishes they shared.<br><br><strong>Venmo Split:</strong> Works from the total you enter; it doesn't read the receipt or assign items to people.</div>
     </div>
     <div class="card">
       <div class="card-title">Geography</div>
-      <div class="card-text"><strong>RightSplit:</strong> Works anywhere iPhones work; reads receipts in 16 languages on-device.<br><br><strong>Venmo:</strong> US-only.</div>
+      <div class="card-text"><strong>RightSplit:</strong> Reads receipts in 16 languages on the device and splits in 58 currencies. Pay links cover Venmo, PayPal.me, Revolut, Wise, IBAN, and Apple Pay; which ones work depends on the region.<br><br><strong>Venmo:</strong> US-only.</div>
     </div>
     <div class="card">
       <div class="card-title">Does the group need accounts?</div>
-      <div class="card-text"><strong>RightSplit:</strong> No. Share the total as plain text to anyone.<br><br><strong>Venmo:</strong> Yes, every recipient needs a Venmo account.</div>
+      <div class="card-text"><strong>RightSplit:</strong> No. Each person gets a message they can read without installing anything.<br><br><strong>Venmo:</strong> Yes, every recipient needs a Venmo account.</div>
     </div>
   </div>
 </section>
@@ -97,7 +97,7 @@ last_updated: 2026-10-26
   <h2 class="h2">Use them together?</h2>
   <div class="card">
     <div class="card-text">
-      Yes. For many US users the intended workflow is to scan the receipt with RightSplit, get the fair per-person totals, then send Venmo requests for those amounts. The payment habit stays the same and the numbers behind it are fairer.
+      Yes. Save your Venmo handle in RightSplit, scan the receipt, and tap who had what. Each person's message carries a Venmo link with their amount, and with Pro+ a Live Activity on your Lock Screen counts people off as they pay. The payment habit stays the same, and the numbers behind it match what everyone ordered.
     </div>
   </div>
 </section>
@@ -109,10 +109,10 @@ last_updated: 2026-10-26
       <div class="card-title">Pick RightSplit (and still use Venmo) if…</div>
       <ul class="bullets">
         <li>Your group's bills aren't fair to split equally</li>
-        <li>You want documented OCR + proportional tip math</li>
+        <li>You want shared dishes divided only among the people who shared them</li>
         <li>Some people at the table aren't on Venmo (outside US, or Apple Pay-only)</li>
-        <li>You want the math to stay private, without a shared payment app</li>
-        <li>You'd rather pay once ({P_LIFETIME@rightsplit} lifetime) than rent a feature</li>
+        <li>You want the receipt and everyone's names to stay on your phone</li>
+        <li>You'd rather pay once ({P_LIFETIME@rightsplit}) than subscribe</li>
       </ul>
     </div>
     <div class="card">
@@ -121,7 +121,7 @@ last_updated: 2026-10-26
         <li>Your group always splits equally and that's already fair</li>
         <li>You're all in the US and all on Venmo already</li>
         <li>You don't want a separate app for the math step</li>
-        <li>The amounts are small enough that fairness doesn't bother you</li>
+        <li>The orders are similar enough that an equal split is close enough</li>
       </ul>
     </div>
   </div>
@@ -139,9 +139,9 @@ last_updated: 2026-10-26
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>Is RightSplit a Venmo alternative?</summary><div class="faq-a">Not directly. Venmo is a payment app and RightSplit is a bill-splitting app, and the division is on purpose: one app does the math (item-level fairness, proportional tip, fair rounding) and another does the payment. After RightSplit calculates each person's total, you send Venmo requests, Apple Pay, Wise transfers, or whatever payment method your group uses.</div></details>
-    <details class="faq-item"><summary>Does RightSplit integrate with Venmo?</summary><div class="faq-a">Only lightly, because RightSplit never moves money. It sends each person's total via iMessage, WhatsApp, or copy-paste as a short line like 'Hey Mike! Your share of the bill at Luigi's is $23.40.' If you save your own Venmo handle (or PayPal.me, Revolut or Wise), the pay button next to each person opens that service with their amount filled in where the service allows it. From there, each person pays through whichever app they prefer. RightSplit is not locked into a single payment provider.</div></details>
-    <details class="faq-item"><summary>Why not use Venmo's split feature directly?</summary><div class="faq-a">Venmo's split assumes equal division, the same amount for everyone. RightSplit covers the case Venmo doesn't: when someone ordered a $14 salad and someone else ordered a $48 steak, an equal split is unfair. RightSplit does the item-level math first, and you can still pay via Venmo afterwards if you like.</div></details>
+    <details class="faq-item" open><summary>Is RightSplit a Venmo alternative?</summary><div class="faq-a">Not directly. Venmo is a payment app and RightSplit is a bill-splitting calculator: RightSplit works out each person's amount, item by item, and Venmo or another service moves the money. Each person's message carries a tap-to-pay link for the method you saved, whether that is Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay.</div></details>
+    <details class="faq-item"><summary>Does RightSplit integrate with Venmo?</summary><div class="faq-a">Through links, and RightSplit never moves money itself. Save your Venmo handle (or PayPal.me, Revolut, Wise, your IBAN, or Apple Pay), and Send Payment Requests writes one message per person with the place, their exact amount, and a link that opens that service. Send it by Messages or WhatsApp, or copy it. A link can't confirm that a payment arrived, so you mark people paid yourself.</div></details>
+    <details class="faq-item"><summary>Why not use Venmo's split feature directly?</summary><div class="faq-a">Venmo's split works from one total and the friends you pick on Venmo. RightSplit covers the dinner where the orders differ: it reads the receipt, lets you tap who had each item, divides shared dishes among the people who shared them, and divides tax and tip per person. You can still collect through Venmo afterwards, and friends who aren't on Venmo can use another link.</div></details>
   </div>
 </section>
 
@@ -155,7 +155,7 @@ last_updated: 2026-10-26
     </a>
     <a class="card" href="/alternatives/tab/">
       <div class="card-title">vs Tab</div>
-      <div class="card-text">Tab's simplicity with documented OCR + tip math transparency.</div>
+      <div class="card-text">A scan-and-tap splitter like Tab that also asks for the money.</div>
     </a>
     <a class="card" href="/alternatives/tricount/">
       <div class="card-title">vs Tricount</div>
@@ -163,7 +163,7 @@ last_updated: 2026-10-26
     </a>
     <a class="card" href="/alternatives/settle-up/">
       <div class="card-title">vs Settle Up</div>
-      <div class="card-text">RightSplit is one-bill-fast; Settle Up is for ongoing group debts.</div>
+      <div class="card-text">RightSplit settles one bill; Settle Up tracks ongoing group debts.</div>
     </a>
   </div>
 </section>

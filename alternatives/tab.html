@@ -2,20 +2,20 @@
 layout: default
 permalink: /alternatives/tab/
 title: "Tab Bill Splitter Alternative"
-quick_answer: "RightSplit is an iPhone alternative to Tab (the simple bill splitter) for people who want the same scan-the-receipt workflow with privacy, fair item-level math, and clear pricing. It reads receipts on-device with Apple's Vision framework, splits item by item with proportional tip distribution, and sends totals via iMessage or WhatsApp. It is free; Pro+ is {P_YEARLY@rightsplit}/year or {P_LIFETIME@rightsplit} lifetime."
+quick_answer: "RightSplit is an iPhone alternative to Tab, the simple bill splitter, for people who also want the app to ask for the money. Like Tab, it scans the receipt and lets you tap who had each item. RightSplit then sends each person a message with their exact amount and a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay, and with Pro+ it tracks who has paid. The receipt is read on your iPhone and there is no account. Equal splits and your first scan are free; item splits are Pro+."
 seo:
-  title: "Tab Alternative: RightSplit On-Device Receipt OCR"
-  description: "Tab app alternative for iPhone. RightSplit scans the receipt on-device and splits it item by item with fair tip math. Free; Pro+ {P_YEARLY@rightsplit}/yr."
+  title: "Tab Alternative: RightSplit Scans and Asks for the Money"
+  description: "Tab alternative for iPhone. RightSplit reads the receipt on the device, splits it by item, and sends everyone their amount with a tap-to-pay link."
   keywords:
     - Tab app alternative
     - Tab bill splitter alternative
     - bill splitter iPhone no account
     - RightSplit vs Tab
-    - on-device receipt OCR iPhone
+    - on-device receipt scanner iPhone
     - item-based bill splitter
-    - privacy-first bill splitting
-    - fair tip distribution app
-last_updated: 2026-10-26
+    - bill splitter with payment links
+    - split bill and request money
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "rightsplit" | first -%}
@@ -47,19 +47,19 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best Tab alternative for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "RightSplit is a privacy-first iPhone alternative to Tab. It scans receipts on-device using Apple's Vision framework, splits item-by-item with shared dishes and proportional tip, and shares each person's total via iMessage or WhatsApp. Free; Pro+ is {P_YEARLY@rightsplit}/year or {P_LIFETIME@rightsplit} lifetime." } },
-    { "@type": "Question", "name": "Is RightSplit free like Tab?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. RightSplit's free tier covers equal splits, the tip calculator and your first receipt scan, with no card on file. Unlimited scans and item-based splitting (the main reason most people want a bill splitter) are the Pro+ upgrade at {P_YEARLY@rightsplit}/year or {P_LIFETIME@rightsplit} lifetime. No subscription is required, and the lifetime tier does not auto-renew." } },
-    { "@type": "Question", "name": "Does RightSplit upload receipt photos like some scan-based apps?", "acceptedAnswer": { "@type": "Answer", "text": "No. Receipt OCR runs entirely on-device using Apple's Vision framework (VNRecognizeTextRequest). The image and parsed items never leave your phone, and there are no servers, cloud storage, or third-party analytics." } }
+    { "@type": "Question", "name": "What is the best Tab alternative for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "RightSplit fits if you like Tab's scan-and-tap workflow and want the app to collect the money too. You scan the receipt, tap who had each item, and Send Payment Requests writes one message per person with their exact amount and a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay. With Pro+, a Live Activity on your Lock Screen counts people off as they pay. There is no account, and the receipt is read on your iPhone." } },
+    { "@type": "Question", "name": "Is RightSplit free like Tab?", "acceptedAnswer": { "@type": "Answer", "text": "Partly. Equal splits with tip, fair rounding, your last five splits, split templates, 12 widgets, and your first receipt scan are free for good. Unlimited scans and splitting by item are part of Pro+, at {P_YEARLY@rightsplit} a year after a {TRIAL@rightsplit}, or {P_LIFETIME@rightsplit} once. If you only need free item splitting, Tab is the better pick." } },
+    { "@type": "Question", "name": "Does RightSplit upload receipt photos?", "acceptedAnswer": { "@type": "Answer", "text": "No. On an iPhone with Apple Intelligence turned on (iOS 26 or later on an eligible iPhone), Apple Intelligence reads the receipt on the device. Every other iPhone uses an on-device scanner built on Apple's text recognition. The photo is never uploaded, there is no cloud sync, and RightSplit carries no third-party analytics or ad SDKs." } }
   ]
 }
 </script>
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">Receipt-OCR splitting · On-device · No account</p>
-    <h1 class="h1">A Tab alternative<br><span class="gradient-text">that explains its math.</span></h1>
+    <p class="overline">Receipt splitting · Read on your iPhone · No account</p>
+    <h1 class="h1">A Tab alternative<br><span class="gradient-text">that also asks for the money.</span></h1>
     <p class="lead">
-      Tab is the classic simple iPhone bill splitter: snap a photo, tap items, and you're done. RightSplit follows the same workflow and documents how it splits each item, with on-device Apple Vision OCR, proportional tip distribution, fair rounding, and multi-currency handling. It is just as quick at the table, and you can see how the math works.
+      Tab is the classic simple iPhone bill splitter: you snap the receipt and tap the items. RightSplit works the same way at the table and carries on after it. Each person gets a message with their exact amount and a tap-to-pay link, and with Pro+ a Live Activity on your Lock Screen shows who has paid and who still owes you.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/rightsplit/">See RightSplit</a>
@@ -72,23 +72,23 @@ last_updated: 2026-10-26
 
 <section id="compare" class="section reveal">
   <h2 class="h2">How does RightSplit compare to Tab?</h2>
-  <p class="lead">The workflow is the same. RightSplit documents more of its math.</p>
+  <p class="lead">Both apps turn a photo of the receipt into items you tap onto people. The differences are in what happens after the split, and in what you pay.</p>
   <div class="grid grid-2 stagger">
     <div class="card">
-      <div class="card-title">OCR transparency</div>
-      <div class="card-text"><strong>RightSplit:</strong> Apple's on-device Vision framework (VNRecognizeTextRequest) in 16 receipt languages. The image never leaves the phone.<br><br><strong>Tab:</strong> Photo-tap workflow; OCR engine not publicly documented.</div>
+      <div class="card-title">Reading the receipt</div>
+      <div class="card-text"><strong>RightSplit:</strong> Apple Intelligence reads it on an eligible iPhone with Apple Intelligence turned on (iOS 26 or later); every other iPhone uses an on-device scanner. It reads receipts in 16 languages, the photo stays on the phone, and every line is editable.<br><br><strong>Tab:</strong> Photo-and-tap workflow; how the receipt is read is not publicly documented.</div>
     </div>
     <div class="card">
-      <div class="card-title">Tip math</div>
-      <div class="card-text"><strong>RightSplit:</strong> Tip is split in proportion to each person's share of the subtotal, so the $14-salad eater pays less tip than the $48-steak eater. The rounding rules are published.<br><br><strong>Tab:</strong> Standard tax + tip calculation; per-person tip distribution not publicly documented.</div>
+      <div class="card-title">Getting paid back</div>
+      <div class="card-text"><strong>RightSplit:</strong> One message per person with their amount and a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay. With Pro+, a Live Activity tracks who has paid, and a reminder comes a day later if someone hasn't.<br><br><strong>Tab:</strong> Built around working out each person's total at the table.</div>
     </div>
     <div class="card">
       <div class="card-title">Pricing</div>
-      <div class="card-text"><strong>RightSplit:</strong> Free + Pro+ {P_YEARLY@rightsplit}/yr or {P_LIFETIME@rightsplit} lifetime (one-time, yours to keep).<br><br><strong>Tab:</strong> Free app on the App Store.</div>
+      <div class="card-text"><strong>RightSplit:</strong> Equal splits and your first scan are free. Pro+ is {P_YEARLY@rightsplit}/yr or {P_LIFETIME@rightsplit} once, and adds unlimited scans and item splits.<br><br><strong>Tab:</strong> Free app on the App Store, item splitting included.</div>
     </div>
     <div class="card">
       <div class="card-title">Privacy</div>
-      <div class="card-text"><strong>RightSplit:</strong> No third-party tracking, ads, or analytics SDKs. <a href="/transparency/#rightsplit">See the Privacy Manifest.</a><br><br><strong>Tab:</strong> Standard category analytics likely.</div>
+      <div class="card-text"><strong>RightSplit:</strong> No account, no ads, and no third-party analytics or SDKs. Receipts, amounts, and names stay on your iPhone. <a href="/transparency/#rightsplit">See the transparency entry.</a><br><br><strong>Tab:</strong> See its App Store privacy label.</div>
     </div>
   </div>
 </section>
@@ -99,19 +99,19 @@ last_updated: 2026-10-26
     <div class="card">
       <div class="card-title">Pick RightSplit if…</div>
       <ul class="bullets">
-        <li>You want to know exactly which OCR engine reads your receipt</li>
-        <li>You care how the tip is distributed and want it proportional, not quietly split equally</li>
-        <li>You want a lifetime pricing option ({P_LIFETIME@rightsplit} once) over a free-only app that could add ads later</li>
-        <li>You want a privacy manifest that spells out what runs on-device</li>
-        <li>You're in the EU/UK and need VAT-inclusive receipt handling</li>
+        <li>You end up chasing people for their share after the dinner</li>
+        <li>Your friends pay with different services, from Venmo and PayPal to Revolut, Wise, or a bank transfer</li>
+        <li>You want the receipt read on your iPhone, with every line editable before you assign it</li>
+        <li>You travel and split in other currencies: 58 of them, with receipts read in 16 languages</li>
+        <li>You want a split on your Home Screen: Pocket Split is a free widget that does the math without opening the app</li>
       </ul>
     </div>
     <div class="card">
       <div class="card-title">Stick with Tab if…</div>
       <ul class="bullets">
-        <li>Tab's free tier works for your needs and you don't want any paid tier</li>
-        <li>You're already used to Tab's tap-to-claim UI conventions</li>
-        <li>You don't need the item-level proportional tip math</li>
+        <li>You want item splitting free, with no paid tier at all</li>
+        <li>You only need the totals and collect the money yourself</li>
+        <li>You're used to Tab's tap-to-claim screens and they work for your group</li>
       </ul>
     </div>
   </div>
@@ -129,9 +129,9 @@ last_updated: 2026-10-26
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>What is the best Tab alternative for iPhone?</summary><div class="faq-a">RightSplit is a privacy-first iPhone alternative to Tab. It scans receipts on-device using Apple's Vision framework, splits item-by-item with shared dishes and proportional tip, and shares each person's total via iMessage or WhatsApp. Free; Pro+ is {P_YEARLY@rightsplit}/year or {P_LIFETIME@rightsplit} lifetime.</div></details>
-    <details class="faq-item"><summary>Is RightSplit free like Tab?</summary><div class="faq-a">Yes. RightSplit's free tier covers equal splits, the tip calculator and your first receipt scan, with no card on file. Unlimited scans and item-based splitting (the main reason most people want a bill splitter) are the Pro+ upgrade at {P_YEARLY@rightsplit}/year or {P_LIFETIME@rightsplit} lifetime. No subscription is required, and the lifetime tier does not auto-renew.</div></details>
-    <details class="faq-item"><summary>Does RightSplit upload receipt photos like some scan-based apps?</summary><div class="faq-a">No. Receipt OCR runs entirely on-device using Apple's Vision framework (VNRecognizeTextRequest). The image and parsed items never leave your phone, and there are no servers, cloud storage, or third-party analytics.</div></details>
+    <details class="faq-item" open><summary>What is the best Tab alternative for iPhone?</summary><div class="faq-a">RightSplit fits if you like Tab's scan-and-tap workflow and want the app to collect the money too. You scan the receipt, tap who had each item, and Send Payment Requests writes one message per person with their exact amount and a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay. With Pro+, a Live Activity on your Lock Screen counts people off as they pay. There is no account, and the receipt is read on your iPhone.</div></details>
+    <details class="faq-item"><summary>Is RightSplit free like Tab?</summary><div class="faq-a">Partly. Equal splits with tip, fair rounding, your last five splits, split templates, 12 widgets, and your first receipt scan are free for good. Unlimited scans and splitting by item are part of Pro+, at {P_YEARLY@rightsplit} a year after a {TRIAL@rightsplit}, or {P_LIFETIME@rightsplit} once. If you only need free item splitting, Tab is the better pick.</div></details>
+    <details class="faq-item"><summary>Does RightSplit upload receipt photos?</summary><div class="faq-a">No. On an iPhone with Apple Intelligence turned on (iOS 26 or later on an eligible iPhone), Apple Intelligence reads the receipt on the device. Every other iPhone uses an on-device scanner built on Apple's text recognition. The photo is never uploaded, there is no cloud sync, and RightSplit carries no third-party analytics or ad SDKs.</div></details>
   </div>
 </section>
 
@@ -141,19 +141,19 @@ last_updated: 2026-10-26
   <div class="grid grid-4 stagger">
     <a class="card" href="/alternatives/splitwise/">
       <div class="card-title">vs Splitwise</div>
-      <div class="card-text">RightSplit settles one bill now; Splitwise tracks running balances over months.</div>
+      <div class="card-text">RightSplit settles one bill now; Splitwise keeps a shared balance over months.</div>
     </a>
     <a class="card" href="/alternatives/tricount/">
       <div class="card-title">vs Tricount</div>
-      <div class="card-text">RightSplit is the one-off-receipt workflow; Tricount is group-trip ledgers.</div>
+      <div class="card-text">RightSplit splits the receipt in front of you; Tricount keeps a shared trip ledger.</div>
     </a>
     <a class="card" href="/alternatives/settle-up/">
       <div class="card-title">vs Settle Up</div>
-      <div class="card-text">RightSplit settles one bill fast; Settle Up is for ongoing group debts.</div>
+      <div class="card-text">RightSplit settles one bill; Settle Up tracks ongoing group debts.</div>
     </a>
     <a class="card" href="/alternatives/venmo-split/">
       <div class="card-title">vs Venmo Split</div>
-      <div class="card-text">RightSplit does the math privately; Venmo handles the payment.</div>
+      <div class="card-text">RightSplit works out who owes what; Venmo moves the money.</div>
     </a>
   </div>
 </section>
@@ -161,7 +161,7 @@ last_updated: 2026-10-26
 <section class="cta-section reveal">
   <p class="overline">Try it</p>
   <h2 class="h2">Open RightSplit.</h2>
-  <p class="lead">Scan the receipt and settle the bill, without an account.</p>
+  <p class="lead">Scan the receipt, tap who had what, and send everyone their number.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/rightsplit/">Learn about RightSplit</a>
   </div>

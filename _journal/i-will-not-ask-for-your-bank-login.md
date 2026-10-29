@@ -13,18 +13,18 @@ seo:
     - "no bank link finance app"
     - "allpaid"
 date: 2026-01-31
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 lede: "It's the last day of January and the bank-aggregator apps are advertising themselves into every podcast in America. The pitch is convenience. The price is your read access to your own checking account. AllPaid deliberately skips the bank connection."
-quick_answer: "Bill tracker apps that ask for bank logins route credentials through aggregators like Plaid, granting persistent read access to every transaction in the account, far more than the recurring charges the user wants to see. AllPaid never connects to a bank. It is manual-first, stores bills locally on the device, and has no account system."
+quick_answer: "Bill tracker apps that ask for bank logins route credentials through aggregators like Plaid, which can usually read every transaction in the account until you revoke access, far more than the recurring charges the user wants to see. AllPaid never connects to a bank. You add bills by hand, they stay on your iPhone, and there is no account to create."
 faq:
   - q: "Is there a bill tracker that does not require connecting to my bank?"
-    a: "AllPaid is a manual-first iOS bill and subscription tracker that never connects to a bank or to an aggregator like Plaid. You type bills in once, and the app stores them locally on the device with no account, no email collection, and no profile. Nothing leaves the phone unless you share it or turn on iCloud Sync, which uses your own private iCloud."
+    a: "AllPaid is a manual-first iOS bill and subscription tracker that never connects to a bank or to an aggregator like Plaid. You type each bill in once and the app keeps it on your iPhone. There is no account, so AllPaid never asks for your email. Nothing leaves the phone unless you share a bill or turn on iCloud Sync (Pro), which uses your own private iCloud."
   - q: "What does Plaid actually see when a bill app asks me to log in to my bank?"
     a: "Plaid stores credentials or an OAuth token derived from them and gains persistent read access to every transaction in the account, not only recurring charges. That access continues until you revoke it. Aggregators are regulated businesses, and the data also feeds their wider products, which onboarding screens rarely mention."
   - q: "Will AllPaid catch forgotten subscriptions I do not remember paying for?"
     a: "No. In that one case a bank-linked app has a real edge. If finding forgotten charges from years ago is your main need, an aggregator-based tool is the better fit. AllPaid is for people who know roughly what they pay for and want reminders without handing over their transaction history."
   - q: "How much does AllPaid cost?"
-    a: "AllPaid is free, with Pro at {P_MONTHLY@allpaid} a month, {P_YEARLY@allpaid} a year, or {P_LIFETIME@allpaid} lifetime. There is no required account, no email signup, no third-party tracking, and no advertising SDKs. Bills are stored locally on the device, with calendar views, partner sharing, widgets, and Siri integration available without any cloud account."
+    a: "AllPaid is free for up to 3 bills, with reminders, contract end dates, all ten widgets, Siri, and App Lock. Pro adds unlimited bills, more reminders, Spending Analytics, payment history, and iCloud Sync for {P_MONTHLY@allpaid} a month, {P_YEARLY@allpaid} a year, or {P_LIFETIME@allpaid} once. You never create an account, and the app carries no ads, analytics, or third-party SDKs."
 mentioned_apps:
   - allpaid
 read_time: "5 min read"
@@ -67,13 +67,13 @@ Either way, the user pays with read access to their entire financial life for a 
 
 [AllPaid](/apps/allpaid/) starts from a different premise: most people have somewhere between five and forty recurring bills, and entering them once is not a difficult problem.
 
-The app is manual-first. You type in your bills, your subscriptions, the rent, the utilities. The app stores them locally on your device, reminds you when they're due, supports a calendar view, lets you tick them off, and shares specific bills with a partner if needed. With widgets and Siri integration there is almost no daily friction; *"Hey Siri, what's due this week?"* takes one tap. There's a Pro tier that adds spending analytics and full payment history, also fully on-device.
+The app is manual-first. You type in your bills, your subscriptions, the rent, the utilities, and the contracts that renew every year or two. The app keeps them on your iPhone, reminds you at 9:00 before each one is due, shows the month's bills in a monthly summary and a calendar widget, and lets you mark a bill paid straight from the notification. It reminds you before a contract ends, too, and can send a partner a short message about a bill that's coming up. Widgets and Siri keep the daily friction low: ask Siri *"What bills are due in AllPaid"* and it reads out the next seven days. A Pro tier adds Spending Analytics and full payment history, and those stay on the device as well.
 
 What the app does not do, and will not do:
 
 - It does not connect to your bank.
 - It does not connect to a third-party aggregator.
-- It does not have an account system, so there is no login, email collection or profile.
+- It does not have an account system, so it never asks for a login or an email address.
 - It does not see anything you do not type into it.
 
 On paper this is less convenient than a Plaid-connected app. In practice the gap is smaller than people expect. Entering everything the first time takes about fifteen minutes if you have a long list. After that, the work is tapping a notification to mark a bill paid, which is the same effort a bank-linked app asks for, at a lower cost.
@@ -84,12 +84,12 @@ Bank-linked bill apps catch one category of bill that AllPaid will miss: **the s
 
 If [finding forgotten charges](/journal/find-every-recurring-charge/) is the user's primary need, a bank-linked tool is the better fit, and I'd recommend one. Just know what you are giving up when you connect it.
 
-Manual-first works for everyone else: people who know roughly what they pay for, want a reminder to pay it, want to share rent with a roommate, want a calendar view of the next thirty days, and don't want a third party reading their checking account in perpetuity.
+Manual-first works for everyone else: people who know roughly what they pay for, want a reminder to pay it, want to nudge a roommate when rent is due, want to see the month's bills at a glance, and don't want a third party reading their checking account in perpetuity.
 
 ## A note on tax season
 
 This post is going up on the 31st of January, and the timing is deliberate. Tax season is when people look at their finances most carefully and most apprehensively. It is also the season when fintech apps run their biggest advertising spend, because conversion is highest when anxiety is highest.
 
-[AllPaid](/apps/allpaid/) is meant to be the calmer answer in that window. It skips the bank login and the anxious onboarding, keeps everything local, and does the boring job of making sure you don't miss a bill or pay a late fee. It's free, with Pro at {P_MONTHLY@allpaid} a month, {P_YEARLY@allpaid} a year, or {P_LIFETIME@allpaid} lifetime, so no subscription is required.
+[AllPaid](/apps/allpaid/) is meant to be the calmer answer in that window. It skips the bank login and the anxious onboarding, keeps your bills on your iPhone, and does the boring job of making sure you don't miss a bill or pay a late fee. It's free for up to three bills, with Pro at {P_MONTHLY@allpaid} a month, {P_YEARLY@allpaid} a year, or {P_LIFETIME@allpaid} once.
 
 If this is the year you stop trading read access to your bank for features you could write down yourself, we think you're right.

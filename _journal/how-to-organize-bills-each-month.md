@@ -34,7 +34,7 @@ mentioned_apps:
   - allpaid
 read_time: "8 min read"
 excerpt: "The bill-calendar method step by step, with pay-by dates from the CFPB's own tool, a 2026 biweekly pay schedule showing one paycheck's bill load swing from $330 to $1,690, the transfer formula that flattens it, and the federal rules that keep credit card due dates from moving."
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 A list of bills answers *what do I owe this month*. The question that produces a short week is a different one: *which paycheck is paying for which bill*. A month can balance on paper, with income comfortably above bills, and still put $1,690 of bills on one paycheck and $330 on the next, because the rent, the car loan and the insurance all land in the same fortnight.
@@ -98,11 +98,11 @@ The threshold worth knowing is 30 days. The CFPB's guide to [reading your credit
 
 ## Where AllPaid fits, and where it doesn't
 
-[AllPaid](/apps/allpaid/) holds the bill side of this calendar. Each bill gets a name, an optional amount, a due date and a repeat, such as monthly or yearly. Type a name it recognises, such as Netflix or rent, and it offers to fill in the cycle and category, plus a typical price for common subscriptions; amounts for rent and utilities are left to you.
+[AllPaid](/apps/allpaid/) holds the bill side of this calendar. Each bill gets a name, an optional amount, a due date and a repeat, such as monthly or yearly. Type a name it recognises, such as Netflix, and it suggests the category and how often the bill repeats; tap Apply to use them. The amount is optional, so a utility bill that changes every month still fits.
 
-The calendar button opens the Monthly Summary: the month as a grid with a dot on every day a bill is due, which changes colour once the bill is paid, and three totals across the top for due, paid and remaining. Reminders arrive at 9:00 local time the day before a bill is due. Pro adds earlier ones, such as three days or a week ahead, and one on the due day itself. To build in the CFPB's margin, either enter the pay-by date as the due date or use the three-day reminder. From the notification you can mark the bill paid or snooze it for two hours or until tomorrow, and marking a repeating bill paid moves it to its next due date. Ask Siri "What bills are due in AllPaid" and it reads out the next seven days.
+The button at the top of the bills list opens the monthly summary, with the month's bills and totals; Pro lets you step through past and future months, and the Monthly Calendar widget puts the month on your Home Screen. Reminders arrive at 9:00 local time the day before a bill is due. Pro lets you add earlier ones, picked from choices that fit how often the bill repeats, and one on the due day itself. To build in the CFPB's margin, either enter the pay-by date as the due date or add an earlier reminder. From the notification you can mark the bill paid or snooze it for two hours or until tomorrow, and marking a repeating bill paid moves it to its next due date. Ask Siri "What bills are due in AllPaid" and it reads out the next seven days.
 
-Two decisions are deliberate. A bill whose date has gone by is labelled *Due date passed*, not *overdue*, because the app's design brief asks for calm, neutral language and rules out overdue panic states. And AllPaid never asks for a bank login; the reasoning is in [I will not ask for your bank login](/journal/i-will-not-ask-for-your-bank-login/).
+Two decisions are deliberate. A bill whose date has gone by is labelled *Due date passed*, not *overdue*, because AllPaid keeps its wording neutral and has no red overdue state. And AllPaid never asks for a bank login; the reasoning is in [I will not ask for your bank login](/journal/i-will-not-ask-for-your-bank-login/).
 
 That second decision is also its limit here. AllPaid does not know when you are paid and has no income field, so steps 3 to 5 (paydays, pay-period totals, the transfer amount) stay on paper or in a note. It also cannot remind you about a bill you never entered.
 
