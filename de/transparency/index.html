@@ -73,14 +73,14 @@ last_updated: 2026-10-29
 }
 </script>
 
-<section class="hero hero--home">
+<section class="hero">
   <div class="hero-left reveal">
     <p class="overline">Belege</p>
-    <h1 class="h1">App-Tracking-Transparenz,<br><span class="gradient-text">Feld für Feld.</span></h1>
+    <h1 class="h1">App-Tracking-Transparenz,<br>Feld für Feld.</h1>
     <p class="lead">
       Keine Lagerland-App trackt dich. Jedes Datenschutzmanifest, das das Studio ausliefert, gibt <strong>NSPrivacyTracking = false</strong> und keine Tracking-Domains an, und keine App enthält ein Werbe-SDK. Unten steht App für App, was sie angibt und was ihr Code tut: SDKs, Konten, Netzwerkzugriffe und die Daten, die dein Gerät verlassen.
     </p>
-    <p class="small">Letzte Prüfung: <time datetime="{{ site.data.transparency.last_audit }}">{% include date.html date=site.data.transparency.last_audit %}</time>.</p>
+    <p class="hero-updated">Letzte Prüfung: <time datetime="{{ site.data.transparency.last_audit }}">{% include date.html date=site.data.transparency.last_audit %}</time>.</p>
   </div>
 </section>
 
@@ -90,18 +90,20 @@ last_updated: 2026-10-29
      PRIVACY MANIFEST EXPLAINER
      ============================ -->
 <section class="section reveal">
-  <div class="about-strip">
+  <div class="about-strip about-strip--split">
     <p class="overline">Was du hier siehst</p>
-    <h2 class="h2" style="margin-bottom:var(--s-3);">Datenschutzmanifeste und Required-Reason-APIs</h2>
+    <h2 class="h2">Datenschutzmanifeste und Required-Reason-APIs</h2>
+    <div class="about-strip__body">
     <p class="lead">
       Seit iOS 17 verlangt Apple von Apps und den SDKs darin ein <strong>Datenschutzmanifest</strong> (Privacy Manifest, Datei <code>PrivacyInfo.xcprivacy</code>). Darin steht maschinenlesbar, welche Daten erfasst werden, ob sie zum Tracking verwendet werden und welche APIs mit Begründungspflicht („Required Reason“) die App aufruft. Der Bereich „App-Datenschutz“ auf einer App-Store-Seite ist davon getrennt: Er zeigt die Antworten, die der Entwickler Apple in App Store Connect gibt.
     </p>
     <p class="small">
       <strong>NSPrivacyTracking</strong> ist der wichtigste Schlüssel: <code>false</code> erklärt, dass die App dich nicht trackt, wie Apple es definiert: Die App verknüpft deine Daten nicht mit Daten anderer Unternehmen für Werbung oder die Messung von Werbung und gibt sie nicht an Datenhändler weiter. <strong>NSPrivacyTrackingDomains</strong> listet jede Domain, die die App zu Tracking-Zwecken kontaktieren darf; in jeder Lagerland-App ist diese Liste leer. <strong>Required-Reason-APIs</strong> sind Kategorien von System-APIs (UserDefaults, Dateizeitstempel, Speicherplatz, Systemstartzeit), die sich für Fingerprinting missbrauchen lassen, also um Geräte wiederzuerkennen. Deshalb verlangt Apple, dass Apps angeben, wofür sie sie nutzen. Die Angaben jeder Lagerland-App folgen weiter unten.
     </p>
-    <p class="small" style="margin-top:var(--s-3);">
+    <p class="small">
       Mehr dazu bei Apple <span class="en-marker">{{ t.english_marker }}</span>: <a href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files" rel="noopener" target="_blank" hreflang="en">Privacy Manifest files</a> · <a href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api" rel="noopener" target="_blank" hreflang="en">Required Reason APIs</a> · <a href="https://developer.apple.com/app-store/app-privacy-details/" rel="noopener" target="_blank" hreflang="en">App Privacy Details</a>.
     </p>
+    </div>
   </div>
 </section>
 
@@ -115,6 +117,14 @@ last_updated: 2026-10-29
     <p class="lead">Jeder Eintrag zeigt, was eine App angibt. Bei Apps mit dem Vermerk <em>im Quellcode geprüft</em> liegt das Datenschutzmanifest im Quellcode-Repository. Apps mit dem Vermerk <em>im App Store angegeben</em> liefern ihr Manifest in der App-Store-Version aus; vergleiche ihren Eintrag mit dem Bereich „App-Datenschutz“ auf der App-Store-Seite. Apps mit dem Vermerk <em>noch kein Manifest</em> liefern bisher kein Datenschutzmanifest aus, ihr Eintrag beschreibt deshalb, was der Code tut.</p>
   </div>
 
+  <nav class="transparency-index" aria-label="Apps auf dieser Seite">
+    <ul>
+    {%- for row in rows -%}
+      {%- assign app = site.apps | where: "slug", row.slug | first -%}
+      <li><a href="#{{ row.slug }}">{{ app.name | default: row.slug }}</a></li>
+    {%- endfor -%}
+    </ul>
+  </nav>
   <div class="transparency-grid">
   {%- for row in rows -%}
     {%- assign app = site.apps | where: "slug", row.slug | first -%}
@@ -122,9 +132,12 @@ last_updated: 2026-10-29
     {%- assign tw = tw_all[row.slug] -%}
     {%- capture app_href %}{% include l.html url=app.url %}{% endcapture -%}
     {%- assign app_en = l_en -%}
-    <article class="transparency-card" id="{{ row.slug }}">
+    {%- include series.html app=app -%}
+    <article class="transparency-card series-{{ series_key }}" id="{{ row.slug }}">
       <header class="transparency-card-head">
-        <img class="app-icon" src="{{ app.icon | default: '/assets/icons/lagerland-mark.png' }}" alt="App-Symbol von {{ app.name }}" loading="lazy" width="48" height="48">
+        <span class="mini-stamp" aria-hidden="true"><span class="mini-stamp__paper"><span class="mini-stamp__field">
+          <img src="/assets/icons/sm/{{ row.slug }}.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        </span></span></span>
         <div>
           <h3 class="transparency-card-name">
             <a href="{{ app_href }}"{% if app_en %} hreflang="en"{% endif %}>{{ app.name | default: row.slug }}{% if app_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
@@ -227,9 +240,9 @@ last_updated: 2026-10-29
      EXPLAIN THE ABSENCES
      ============================ -->
 <section class="section reveal">
-  <div class="about-strip">
+  <div class="about-strip about-strip--split">
     <p class="overline">Was hier fehlt</p>
-    <h2 class="h2" style="margin-bottom:var(--s-3);">Was keine Lagerland-App tut</h2>
+    <h2 class="h2">Was keine Lagerland-App tut</h2>
     <ul class="transparency-refuses">
       <li><strong>Keine Werbe-SDKs.</strong> Also nichts von Meta, Google Mobile Ads, AppLovin, Unity Ads, IronSource, AdMob oder MoPub und auch sonst nichts, das Werbemittel lädt oder Nutzer abgleicht.</li>
       <li><strong>Keine Analyse von Drittanbietern.</strong> Weder Firebase, Mixpanel, Amplitude, Segment, Heap noch PostHog als SaaS, und keine Sentry-Telemetrie, die Nutzer identifiziert.</li>

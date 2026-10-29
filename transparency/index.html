@@ -55,14 +55,14 @@ last_updated: 2026-10-29
 }
 </script>
 
-<section class="hero hero--home">
+<section class="hero">
   <div class="hero-left reveal">
     <p class="overline">Receipts</p>
-    <h1 class="h1">Transparency,<br><span class="gradient-text">field by field.</span></h1>
+    <h1 class="h1">Transparency,<br>field by field.</h1>
     <p class="lead">
       No Lagerland app tracks you. Every Privacy Manifest the studio ships declares <strong>NSPrivacyTracking = false</strong> and no tracking domains, and no app contains an advertising SDK. Below, app by app, is what each one declares and what its code does: SDKs, accounts, network calls, and the data that leaves your device.
     </p>
-    <p class="small">Last audit: <time datetime="{{ site.data.transparency.last_audit }}">{{ site.data.transparency.last_audit | date: "%B %-d, %Y" }}</time>.</p>
+    <p class="hero-updated">Last audit: <time datetime="{{ site.data.transparency.last_audit }}">{{ site.data.transparency.last_audit | date: "%B %-d, %Y" }}</time>.</p>
   </div>
 </section>
 
@@ -72,18 +72,20 @@ last_updated: 2026-10-29
      PRIVACY MANIFEST EXPLAINER
      ============================ -->
 <section class="section reveal">
-  <div class="about-strip">
+  <div class="about-strip about-strip--split">
     <p class="overline">What you're looking at</p>
-    <h2 class="h2" style="margin-bottom:var(--s-3);">Privacy Manifests &amp; Required Reason APIs</h2>
+    <h2 class="h2">Privacy Manifests &amp; Required Reason APIs</h2>
+    <div class="about-strip__body">
     <p class="lead">
       Since iOS 17, Apple has asked apps and the SDKs inside them to ship a <strong>Privacy Manifest</strong> (<code>PrivacyInfo.xcprivacy</code>): a machine-readable file that says what data is collected, whether it is used for tracking, and which "Required Reason" APIs the app calls. The App Privacy section (the Privacy Nutrition Label) on an App Store page is a separate set of answers the developer gives Apple in App Store Connect.
     </p>
     <p class="small">
       <strong>NSPrivacyTracking</strong> is the most important key: <code>false</code> declares that the app does not track you as Apple defines it, which means it does not link your data with other companies' data for advertising or advertising measurement, or share it with data brokers. <strong>NSPrivacyTrackingDomains</strong> lists every domain the binary may contact for tracking purposes; in every Lagerland app it is an empty array. <strong>Required Reason APIs</strong> are categories of system APIs (UserDefaults, file timestamps, disk space, system boot time) that can be misused for fingerprinting, so Apple asks apps to state why they use them. The declaration for each Lagerland app follows below.
     </p>
-    <p class="small" style="margin-top:var(--s-3);">
+    <p class="small">
       Read more from Apple: <a href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files" rel="noopener" target="_blank">Privacy Manifest files</a> · <a href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api" rel="noopener" target="_blank">Required Reason APIs</a> · <a href="https://developer.apple.com/app-store/app-privacy-details/" rel="noopener" target="_blank">App Store Privacy Nutrition Labels</a>.
     </p>
+    </div>
   </div>
 </section>
 
@@ -98,12 +100,23 @@ last_updated: 2026-10-29
   </div>
 
   {%- assign rows = site.data.transparency.apps | sort: "slug" -%}
+  <nav class="transparency-index" aria-label="Apps on this page">
+    <ul>
+    {%- for row in rows -%}
+      {%- assign app = site.apps | where: "slug", row.slug | first -%}
+      <li><a href="#{{ row.slug }}">{{ app.name | default: row.slug }}</a></li>
+    {%- endfor -%}
+    </ul>
+  </nav>
   <div class="transparency-grid">
   {%- for row in rows -%}
     {%- assign app = site.apps | where: "slug", row.slug | first -%}
-    <article class="transparency-card" id="{{ row.slug }}">
+    {%- include series.html app=app -%}
+    <article class="transparency-card series-{{ series_key }}" id="{{ row.slug }}">
       <header class="transparency-card-head">
-        <img class="app-icon" src="{{ app.icon | default: '/assets/icons/lagerland-mark.png' }}" alt="{{ app.name }} icon" loading="lazy" width="48" height="48">
+        <span class="mini-stamp" aria-hidden="true"><span class="mini-stamp__paper"><span class="mini-stamp__field">
+          <img src="/assets/icons/sm/{{ row.slug }}.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        </span></span></span>
         <div>
           <h3 class="transparency-card-name">
             <a href="{{ app.url }}">{{ app.name | default: row.slug }}</a>
@@ -206,9 +219,9 @@ last_updated: 2026-10-29
      EXPLAIN THE ABSENCES
      ============================ -->
 <section class="section reveal">
-  <div class="about-strip">
+  <div class="about-strip about-strip--split">
     <p class="overline">What's not on this list</p>
-    <h2 class="h2" style="margin-bottom:var(--s-3);">What no Lagerland app does</h2>
+    <h2 class="h2">What no Lagerland app does</h2>
     <ul class="transparency-refuses">
       <li><strong>No advertising SDKs.</strong> That means nothing from Meta, Google Mobile Ads, AppLovin, Unity Ads, IronSource, AdMob, or MoPub, and nothing else that loads creatives or matches users.</li>
       <li><strong>No third-party analytics.</strong> None of Firebase, Mixpanel, Amplitude, Segment, Heap, or PostHog SaaS, and no Sentry telemetry that identifies users.</li>
