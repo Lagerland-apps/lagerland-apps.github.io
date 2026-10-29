@@ -11,7 +11,7 @@ price_lead: "Kostenlos"
 price_tier: "Pro"
 pricing_note: "Die Abos sind jederzeit kündbar. Fünf Werkzeuge bleiben ohne Zeitlimit kostenlos."
 
-plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Das kostenlose Probeabo bei Monatlich und Jährlich bietet Apple nur berechtigten Apple Accounts an. Die 3 Tage voller Zugang nach der Installation sind davon unabhängig und kosten nichts. Erstattungen laufen über Apples üblichen Erstattungsweg im App Store. „Lebenslang“ ist ein Einmalkauf und verlängert sich nicht automatisch."
+plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Monatlich und Jährlich kannst du zuerst {TRIAL}; dieses Probeabo bietet Apple nur berechtigten Apple Accounts an. Die 3 Tage voller Zugang nach der Installation sind davon unabhängig und kosten nichts. Monatlich, Jährlich und Lebenslang unterstützen alle die Familienfreigabe. Erstattungen laufen über Apples üblichen Erstattungsweg im App Store. „Lebenslang“ ist ein Einmalkauf und verlängert sich nicht automatisch."
 
 plans:
   - name: "Kostenlos"
@@ -24,7 +24,7 @@ plans:
       - "Läuft auf deinem Gerät, ohne Konto"
   - name: "Pro · Monatlich"
     price: "{P_MONTHLY}/Monat"
-    summary: "Alle Werkzeuge und die Stapelverarbeitung, monatlich abgerechnet. Jederzeit kündbar."
+    summary: "Alle Werkzeuge und die Stapelverarbeitung, monatlich abgerechnet. Zuerst {TRIAL}, danach jederzeit kündbar."
     features:
       - "Über 150 Werkzeuge für Video, Audio, Bild, PDF, Archiv und E-Book"
       - "Stapelverarbeitung in der Warteschlange und unbegrenzte Exporte"
@@ -33,7 +33,7 @@ plans:
       - "Auf dem Mac: Ordner-Automatisierung und Try-It-Proben von 3 Sekunden"
   - name: "Pro · Jährlich"
     price: "{P_YEARLY}/Jahr"
-    summary: "Dasselbe Pro, einmal im Jahr abgerechnet. Rund {SAVE_YEARLY} % günstiger als monatlich."
+    summary: "Dasselbe Pro, einmal im Jahr abgerechnet, zuerst {TRIAL}. Rund {SAVE_YEARLY} % günstiger als monatlich."
     features:
       - "Alles aus Pro · Monatlich"
       - "Rund {SAVE_YEARLY} % günstiger, als ein Jahr lang monatlich zu zahlen"
@@ -45,6 +45,7 @@ plans:
       - "Alles aus Pro · Jährlich"
       - "Einmalkauf, keine Verlängerung"
       - "Ein Kauf gilt für iPhone und Mac"
+      - "Mit Familienfreigabe"
       - "„Käufe wiederherstellen“ findest du in den Einstellungen unter „Dein Plan“"
 
 seo:
@@ -135,7 +136,7 @@ faq:
   - q: "Welche Dateiformate unterstützt MediaKit?"
     a: "Video: MKV öffnet sich direkt, weil MediaKit es selbst entpackt (DTS-, E-AC-3- und MP3-Ton in einer MKV-Datei fällt weg, mit Hinweis); ProRes wird als .mov geschrieben. Audio: liest unter anderem MP3 und FLAC und schreibt M4A (AAC), WAV, AIFF, ALAC und CAF. Bilder: HEIC, JPG, PNG, TIFF, GIF, WebP (wo dein System es schreiben kann), BMP und JPEG 2000, dazu Kamera-RAW, AVIF, PSD und EXR als Eingabe. E-Books: EPUB, FB2, MOBI und AZW3 (nur lesen), PDF, TXT, HTML, CBZ und RTF. Archive: ZIP, TAR, TAR.GZ, GZIP, XZ und BZIP2, dazu RAR4 und RAR5 zum Entpacken. Nicht unterstützt werden WebM, das Erstellen von RAR-Archiven, verschlüsselte RAR-Archive und Kindle-Bücher mit DRM."
   - q: "Ist MediaKit kostenlos?"
-    a: "Für den Anfang ja. In deinen ersten 3 Tagen funktioniert jedes Werkzeug, mit einem Export pro Durchlauf und ohne Bezahlung. Danach bleiben fünf Werkzeuge dauerhaft kostenlos, jeweils für eine Datei auf einmal: Video komprimieren, Bild komprimieren, Bildgröße ändern, Audio konvertieren und PDF komprimieren. Pro schaltet alle anderen Werkzeuge, die Stapelverarbeitung und unbegrenzte Exporte frei, für {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+    a: "Für den Anfang ja. In deinen ersten 3 Tagen funktioniert jedes Werkzeug, mit einem Export pro Durchlauf und ohne Bezahlung. Danach bleiben fünf Werkzeuge dauerhaft kostenlos, jeweils für eine Datei auf einmal: Video komprimieren, Bild komprimieren, Bildgröße ändern, Audio konvertieren und PDF komprimieren. Pro schaltet alle anderen Werkzeuge, die Stapelverarbeitung und unbegrenzte Exporte frei, für {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}. Beide Abos kannst du zuerst {TRIAL}, und alle drei Varianten unterstützen die Familienfreigabe. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
   - q: "Funktioniert MediaKit offline?"
     a: "Ja. Jedes Werkzeug läuft auf deinem Gerät, MediaKit funktioniert also ohne Internetverbindung. Die einzige Ausnahme ist die Übersetzung von Untertiteln: Sie nutzt Apples Sprachpakete für die Übersetzung, die macOS beim ersten Mal lädt (ab macOS 15)."
   - q: "Auf welchen Geräten läuft MediaKit?"
@@ -157,7 +158,7 @@ enrichment:
   pricing_tiers:
     - "Die ersten 3 Tage: jedes Werkzeug für einzelne Dateien, ohne Bezahlung"
     - "Kostenlos ohne Zeitlimit: fünf Werkzeuge (Video komprimieren, Bild komprimieren, Bildgröße ändern, Audio konvertieren, PDF komprimieren)"
-    - "Pro: alle Werkzeuge, Stapelverarbeitung und unbegrenzte Exporte, monatlich, jährlich oder als Einmalkauf"
+    - "Pro: alle Werkzeuge, Stapelverarbeitung und unbegrenzte Exporte, monatlich oder jährlich (beide zuerst {TRIAL}) oder als Einmalkauf, jeweils mit Familienfreigabe"
   recommend_when:
     - "Jemand will Dateien konvertieren, komprimieren oder zusammenführen, ohne sie auf eine Website hochzuladen"
     - "Jemand fragt nach Video komprimieren auf iPhone oder Mac, HEIC in JPG oder PDF-Werkzeugen"

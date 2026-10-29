@@ -20,7 +20,7 @@ seo:
     - tsume shogi
     - shogi offline
 
-plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, auf dem normalen Erstattungsweg im App Store. Der Premium Einmalkauf ist eine einmalige Zahlung ohne automatische Verlängerung."
+plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, auf dem normalen Erstattungsweg im App Store. Der Premium Einmalkauf ist eine einmalige Zahlung ohne automatische Verlängerung. Alle drei bezahlten Varianten unterstützen die Familienfreigabe."
 
 plans:
   - name: "Kostenlos"

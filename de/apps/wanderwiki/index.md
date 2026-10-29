@@ -10,7 +10,7 @@ quick_answer: "WanderWiki ist eine App für iPhone und iPad (ab iOS 18.2), mit d
 price_lead: "Kostenlos (20 Artikel am Tag)"
 price_tier: "Premium"
 
-plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, auf dem üblichen Weg für Rückerstattungen im App Store. Der Einmalkauf verlängert sich nicht automatisch. In der Liste der In-App-Käufe im App Store steht außerdem ein älteres Wochenabo, das für bestehende Abonnenten weiterläuft, in der App aber nicht mehr verkauft wird, sowie ein freiwilliges Trinkgeld von {P_IAP:Support the developer} in den Einstellungen, das nichts freischaltet."
+plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, auf dem üblichen Weg für Rückerstattungen im App Store. Der Einmalkauf verlängert sich nicht automatisch. Monatlich, Jährlich und Lebenslang unterstützen alle die Familienfreigabe. Ein freiwilliges Trinkgeld von {P_IAP:Support the developer} in den Einstellungen schaltet nichts frei."
 pricing_note: "Jederzeit kündbar in den Einstellungen deines Apple Accounts. Für die kostenlose Version brauchst du weder Karte noch Konto: 20 Artikel am Tag, zurückgesetzt um Mitternacht Ortszeit."
 
 plans:

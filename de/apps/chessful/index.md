@@ -20,7 +20,7 @@ seo:
     - schach app offline
     - stockfish iphone
 
-plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, auf dem normalen Erstattungsweg im App Store. „Lebenslang“ ist ein Einmalkauf ohne automatische Verlängerung. Universal Purchase: Ein Kauf gilt auf iPhone, iPad und Mac."
+plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, auf dem normalen Erstattungsweg im App Store. „Lebenslang“ ist ein Einmalkauf ohne automatische Verlängerung. Alle drei bezahlten Varianten unterstützen die Familienfreigabe. Universal Purchase: Ein Kauf gilt auf iPhone, iPad und Mac."
 
 plans:
   - name: "Kostenlos"

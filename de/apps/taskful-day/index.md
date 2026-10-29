@@ -192,7 +192,7 @@ faq:
   - q: "Ist Taskful Day kostenlos?"
     a: "Taskful Day kannst du kostenlos laden, und jede neue Installation bekommt 7 Tage Pro, ohne Kreditkarte. Danach legst du in der kostenlosen Version insgesamt bis zu 50 Aufgaben an, mit einem Arbeitsbereich. Pro bringt unbegrenzte Aufgaben, iCloud-Synchronisierung, die Tagesansichten, das Wochenraster, den Fokus-Timer und 21 Widgets für den Home-Bildschirm, für {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
   - q: "Was passiert, wenn die 7 Tage Pro vorbei sind?"
-    a: "Deine Aufgaben bleiben. Pro-Designs springen auf „System“ zurück, und es gelten die Grenzen der kostenlosen Version: insgesamt 50 Aufgaben, ein Arbeitsbereich, ein Checklistenschritt pro Aufgabe und eine aktive Rückfrage. Die Testphase startet von selbst, wenn die Einführung endet, und fragt nie nach Zahlungsdaten."
+    a: "Deine Aufgaben bleiben. Pro-Designs springen auf „System“ zurück, und es gelten die Grenzen der kostenlosen Version: insgesamt 50 Aufgaben, ein Arbeitsbereich, ein Checklistenschritt pro Aufgabe und eine aktive Rückfrage. Die Gratiswoche startet von selbst, wenn die Einführung endet. Sie ist kein Probeabo im App Store und fragt nie nach Zahlungsdaten."
   - q: "Trackt oder verkauft Taskful Day meine Daten?"
     a: "Nein. Es gibt kein Konto, keine Werbung und keine Analyse-SDKs oder SDKs von Drittanbietern, und Taskful Day hat keinen eigenen Server. Deine Daten bleiben auf dem Gerät oder in deinem eigenen, privaten iCloud, wenn du die iCloud-Synchronisierung einschaltest."
   - q: "Kann ich Aufgaben aus der App „Erinnerungen“ importieren?"

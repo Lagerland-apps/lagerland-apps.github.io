@@ -3,7 +3,7 @@ layout: app
 slug: earnlock
 name: "EarnLock"
 tagline: "Lock distracting apps until you earn them with steps."
-quick_answer: "EarnLock is an iPhone app that keeps the apps you lose time to locked until you have moved enough that day, with Apple Health keeping score. Reach half your goal and they open for an hour; reach all of it and they stay open until midnight. Locking one app or category with a step goal is free for good, every widget included, and Premium ({P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once) adds unlimited apps, active minutes and calories, the Apple Watch app, and Smart Schedules. There is no account, and your data stays on your iPhone."
+quick_answer: "EarnLock is an iPhone app that keeps the apps you lose time to locked until you have moved enough that day, with Apple Health keeping score. Reach half your goal and they open for an hour; reach all of it and they stay open until midnight. Locking one app or category with a step goal is free for good, every widget included, and Premium ({P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once) adds unlimited apps, active minutes and calories, a Live Activity, and Smart Schedules. There is no account, and your data stays on your iPhone."
 category: lifestyle
 status: live
 jump_nav: true
@@ -17,7 +17,7 @@ plans_footnote: "Prices in USD; the App Store shows your local currency at check
 
 release_notes:
   - date: "2026-05-22"
-    note: "EarnLock 1.0: apps that unlock when you hit a daily activity goal, partial and full unlocks, Shadow Week, a math-gated emergency unlock, streaks with a weekly rest day, widgets, a Live Activity, and the Apple Watch app."
+    note: "EarnLock 1.0: apps that unlock when you hit a daily activity goal, partial and full unlocks, Shadow Week, a math-gated emergency unlock, streaks with a weekly rest day, widgets, and a Live Activity."
 
 plans:
   - name: "Free"
@@ -40,7 +40,6 @@ plans:
     features:
       - "Unlimited locked apps and categories"
       - "Earn with active minutes or active calories as well as steps"
-      - "The Apple Watch app and complications"
       - "A Live Activity and Dynamic Island countdown"
       - "Smart Schedules for work hours, evenings, weekends, and sleep"
       - "Insights Week and Month, with a heatmap and your reflection log"
@@ -85,7 +84,6 @@ seo:
     - screen time blocker activity
     - block instagram until you walk
     - app blocker no account
-    - apple watch screen time blocker
     - lifetime app blocker
     - opal alternative
     - one sec alternative
@@ -172,8 +170,8 @@ features:
     description: "Premium lets the rules change with the time of day. Start from Work hours, Evenings, Weekends, and Sleep, and set each one to Light, Standard, Challenge, or blocking off. Where two schedules overlap, the shorter one wins."
   - title: "Every widget is free"
     description: "Five Home Screen widgets and a Lock Screen widget come with every plan: today's ring, a grid of every day you earned, your history by month, 30 days, or year, your streak, and a summary. On iOS 27 a widget can fill a whole Home Screen page. If your phone slept through midnight, the Today widgets say \"Open the app to catch up\" instead of showing yesterday as today."
-  - title: "Apple Watch and a Live Activity"
-    description: "With Premium, the Apple Watch app reads its own Health data and shows your ring, your count, and how far you are from unlocking, with a Reflect button and complications for your watch face. On the iPhone, a Live Activity appears at 80% of your goal and counts down the last stretch on the Lock Screen and in the Dynamic Island."
+  - title: "A Live Activity for the last stretch"
+    description: "With Premium, a Live Activity appears at 80% of your goal and counts down the last stretch on the Lock Screen and in the Dynamic Island, so you can see how close you are without opening the app."
   - title: "39 locales"
     description: "EarnLock is translated into 39 locales, including regional versions of English, Spanish, French, and Portuguese, and Arabic and Hebrew, which read right to left."
 
@@ -189,7 +187,7 @@ who_not_for:
   - "You want a lock with no way out. EarnLock has a once-a-day emergency unlock by design, and iOS lets you turn off its Screen Time access"
   - "You can't carry an iPhone or wear an Apple Watch while you move. Progress comes only from Apple Health"
   - "You have a medical condition that daily activity goals could affect. EarnLock is not a medical device and gives no health advice, so ask your doctor first"
-  - "You use an iPad, a Mac, or Android. EarnLock is an iPhone app, with an Apple Watch app in Premium"
+  - "You use an iPad, a Mac, or Android. EarnLock runs on iPhone only"
 
 alternatives_to:
   - "Opal"
@@ -214,12 +212,10 @@ comparison_table:
       values: ["Daily activity goal (steps; active minutes or calories with Premium)", "Tap-to-pause or wait out timer", "Mandatory 10-second breath pause", "Wait-out timer (e.g., 30s breathe)", "Type a parent / Screen Time passcode"]
     - feature: "Cheapest one-time / lifetime tier"
       values: ["{P_LIFETIME} lifetime", "No lifetime, subscription only", "No lifetime, subscription only", "Free (optional tips)", "Free (system app)"]
-    - feature: "Cheapest paid monthly tier"
-      values: ["{P_MONTHLY} / mo", "$7.99 / mo (annual)", "$2.99 / mo", "Free (optional tips)", "Free"]
+    - feature: "Paid plan"
+      values: ["{P_MONTHLY} / mo, or Lifetime", "Subscription", "Subscription", "Free (optional tips)", "Free"]
     - feature: "Blocked app shows what's left to unlock"
       values: ["Yes: \"N steps until unlock\"", "Generic app-restricted screen", "Generic app-restricted screen", "Generic app-restricted screen", "Generic \"Screen Time\" screen"]
-    - feature: "Apple Watch app + complications"
-      values: ["Yes (Premium); the watch reads its own Health data", "iPhone only", "iPhone only", "iPhone only", "Yes, system-wide"]
     - feature: "Account or sign-up required"
       values: ["No account needed", "Account required", "Account required", "Account required", "Apple ID (system-level)"]
     - feature: "Third-party tracking SDKs"
@@ -240,7 +236,7 @@ screenshots:
   - src: "/assets/screenshots/earnlock/5.webp"
     alt: "EarnLock Shadow Week summary before real app blocking is turned on"
   - src: "/assets/screenshots/earnlock/6.webp"
-    alt: "EarnLock Live Activity and Apple Watch showing how close you are to unlocking"
+    alt: "EarnLock Live Activity on the Lock Screen showing how many steps are left until unlock"
   - src: "/assets/screenshots/earnlock/7.webp"
     alt: "EarnLock full-page widget with a progress calendar"
 
@@ -257,7 +253,7 @@ privacy:
 
 faq:
   - q: "What is EarnLock?"
-    a: "EarnLock is an iPhone app that keeps distracting apps locked until you reach a daily activity goal, measured by Apple Health. Half the goal opens them for an hour, and the full goal opens them until midnight. Locking one app or category with a step goal is free for good. Premium adds unlimited apps, active minutes and active calories, the Apple Watch app, a Live Activity, Smart Schedules, and Week and Month insights, for {P_MONTHLY}/month or {P_YEARLY}/year (each starting with a {TRIAL}) or {P_LIFETIME} once. There is no account, and your data stays on your iPhone."
+    a: "EarnLock is an iPhone app that keeps distracting apps locked until you reach a daily activity goal, measured by Apple Health. Half the goal opens them for an hour, and the full goal opens them until midnight. Locking one app or category with a step goal is free for good. Premium adds unlimited apps, active minutes and active calories, a Live Activity, Smart Schedules, and Week and Month insights, for {P_MONTHLY}/month or {P_YEARLY}/year (each starting with a {TRIAL}) or {P_LIFETIME} once. There is no account, and your data stays on your iPhone."
   - q: "How is EarnLock different from Opal, one sec, ScreenZen, or Forest?"
     a: "Those apps put a pause, a timer, or a tap between you and the app. EarnLock puts a daily activity goal there, measured by Apple Health: halfway opens your apps for an hour, and the full goal opens them until midnight. It also starts with a Shadow Week that blocks nothing and counts how often you would have been blocked, so your first real lock fits your habit. It needs no account, locking one app is free for good, and Premium is available monthly, yearly, or as a one-time {P_LIFETIME} purchase."
   - q: "Which apps can EarnLock block?"
@@ -265,13 +261,13 @@ faq:
   - q: "How does the activity goal work?"
     a: "You pick a unit and a daily goal: steps on the free tier, or active minutes or active calories with Premium. Presets are Light, Standard, and Challenge (4,000, 8,000, or 12,000 steps), or you can set your own number or choose Adaptive. EarnLock reads your progress from Apple Health on your iPhone. At 50% your locked apps open for a window sized to your progress, an hour at halfway, then lock again. At 100% they stay open until midnight. Below 50% everything stays locked, and the day resets at midnight."
   - q: "Does EarnLock work on Apple Watch?"
-    a: "Yes, with Premium. The Watch app reads its own Health data and shows your ring, your count, and how far you are from unlocking, plus a Reflect button. Complications come in circular, corner, inline, and rectangular styles. Without Premium the Watch app shows a locked state. The iPhone is still the device that locks and unlocks your apps, and it passes your Premium status to the watch."
+    a: "EarnLock has no Apple Watch app. It runs on iPhone, which locks and unlocks your apps. If you wear an Apple Watch while you move, the activity it records goes to Apple Health, and EarnLock counts it toward your goal."
   - q: "What if I genuinely need to use a blocked app for something urgent?"
     a: "Use the emergency unlock in Settings. Solve a two-digit math problem, choose 15, 30, or 60 minutes, and your apps open. You get one per day. The math is enough friction to stop a reflex and quick enough for a real need."
   - q: "What about streaks and rest days?"
     a: "Every day you reach your full goal adds to your streak. You can pick a weekly rest day, and a miss on that day won't break the streak. With Premium, every seventh day at 150% of your goal banks a streak shield (you can hold three), and a shield covers a missed day automatically. A streak-at-risk reminder is one of the notification types you can switch off, and quiet hours keep reminders out of the night."
   - q: "Is EarnLock free? What does Premium unlock?"
-    a: "Locking one app or one category with a step goal is free for good. The free tier includes partial and full unlocks, the screen that shows what's left on each locked app, Shadow Week, every widget, streaks with a weekly rest day, the Insights Day view, one-tap Reflect, and the emergency unlock. Premium adds unlimited apps, active minutes and active calories, the Apple Watch app and complications, the Live Activity, Smart Schedules, Week and Month insights with the reflection log, streak shields, a once-a-week skip of the 24-hour goal cooldown, and three alternate app icons. Premium is {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once, and all three support Family Sharing."
+    a: "Locking one app or one category with a step goal is free for good. The free tier includes partial and full unlocks, the screen that shows what's left on each locked app, Shadow Week, every widget, streaks with a weekly rest day, the Insights Day view, one-tap Reflect, and the emergency unlock. Premium adds unlimited apps, active minutes and active calories, the Live Activity, Smart Schedules, Week and Month insights with the reflection log, streak shields, a once-a-week skip of the 24-hour goal cooldown, and three alternate app icons. Premium is {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once, and all three support Family Sharing."
   - q: "Does EarnLock collect any data?"
     a: "No. EarnLock has no account, makes no network connections of its own, and includes no analytics, advertising, or other third-party SDKs. Apple Health is read on your iPhone and never written to or sent anywhere. Your goals, streaks, reflections, and schedules are stored on the device. The Screen Time picker gives EarnLock opaque tokens, so the app can't see which apps you chose. The privacy policy has the details."
   - q: "Can I export or delete my EarnLock data?"
@@ -279,7 +275,7 @@ faq:
   - q: "Can EarnLock be used as parental control?"
     a: "No. EarnLock is built for limiting your own iPhone. There is no parent side to it: nothing to manage remotely and no passcode for someone else to hold. For a child's device, use Screen Time with Family Sharing in iOS Settings."
   - q: "What devices does EarnLock support?"
-    a: "iPhone with iOS 17 or later, in portrait. The Premium Apple Watch app needs watchOS 10 or later. The Control Center control needs iOS 18, and full-page widgets need iOS 27. EarnLock needs Apple Health and Screen Time access to work. There is no iPad, Mac, or Android version."
+    a: "iPhone only, with iOS 17 or later, in portrait. The Control Center control needs iOS 18, and full-page widgets need iOS 27. EarnLock needs Apple Health and Screen Time access to work. There is no Apple Watch, iPad, Mac, or Android version."
   - q: "Does EarnLock support Family Sharing?"
     a: "Yes. Monthly, Yearly, and Lifetime all support Family Sharing, so the members of your Apple family group can use Premium too. Each person's goals, locked apps, and streaks stay on their own iPhone."
   - q: "Is Lifetime really a one-time payment?"
@@ -310,4 +306,4 @@ EarnLock is an iPhone app that keeps the apps you lose time to locked until you 
 
 The first week is a Shadow Week. Blocking is only simulated while EarnLock counts how often you would have been blocked, and at the end you turn on real blocking with your own numbers in front of you. Open a locked app later and EarnLock's screen tells you exactly what's left, such as "2,026 steps until unlock". For real needs there is a math-gated emergency unlock, once a day.
 
-Locking one app or category is free for good, and so are Shadow Week, streaks with a weekly rest day, the Insights Day view, one-tap Reflect, and every widget. Premium adds unlimited apps, active minutes and active calories, the Apple Watch app and complications, a Live Activity, Smart Schedules, Week and Month insights, and streak shields, for {P_MONTHLY}/month or {P_YEARLY}/year (each starting with a {TRIAL}) or {P_LIFETIME} once, with Family Sharing on all three. EarnLock needs iOS 17 or later and comes in 39 locales. It has no account and no third-party SDKs, and your data stays on your iPhone.
+Locking one app or category is free for good, and so are Shadow Week, streaks with a weekly rest day, the Insights Day view, one-tap Reflect, and every widget. Premium adds unlimited apps, active minutes and active calories, a Live Activity, Smart Schedules, Week and Month insights, and streak shields, for {P_MONTHLY}/month or {P_YEARLY}/year (each starting with a {TRIAL}) or {P_LIFETIME} once, with Family Sharing on all three. EarnLock needs iOS 17 or later and comes in 39 locales. It has no account and no third-party SDKs, and your data stays on your iPhone.

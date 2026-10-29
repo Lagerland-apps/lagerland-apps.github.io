@@ -22,7 +22,7 @@ seo:
     - "xiangqi lernen"
     - "pikafish iphone"
 
-plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Bei einem neuen Abo beginnen Monatlich und Jährlich mit einer kostenlosen Testphase; kündigst du vor ihrem Ende, zahlst du nichts. Beide Abos verlängern sich automatisch, wenn du sie nicht spätestens 24 Stunden vor Ende des laufenden Zeitraums kündigst; verwalten und kündigen kannst du sie in den Einstellungen deines Apple Account. „Lebenslang“ ist ein Einmalkauf, der sich nicht verlängert. Erstattungen laufen über Apple, auf dem üblichen Weg im App Store."
+plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Bei einem neuen Abo beginnen Monatlich und Jährlich mit einer kostenlosen Testphase; kündigst du vor ihrem Ende, zahlst du nichts. Beide Abos verlängern sich automatisch, wenn du sie nicht spätestens 24 Stunden vor Ende des laufenden Zeitraums kündigst; verwalten und kündigen kannst du sie in den Einstellungen deines Apple Account. „Lebenslang“ ist ein Einmalkauf, der sich nicht verlängert. Monatlich, Jährlich und Lebenslang unterstützen alle die Familienfreigabe. Erstattungen laufen über Apple, auf dem üblichen Weg im App Store."
 
 plans:
   - name: "Kostenlos"
@@ -60,6 +60,7 @@ plans:
     features:
       - "Alles aus Premium"
       - "Einmalkauf, nichts zu verlängern oder zu kündigen"
+      - "Mit Familienfreigabe"
 
 hero:
   pre_headline: "Xiangqi-App für chinesisches Schach: Lektionen, Training und Partieanalyse auf iPhone, iPad und Mac"
@@ -235,7 +236,7 @@ faq:
   - q: "Funktioniert Xiangqiful offline?"
     a: "Ja. Lektionen, Partien, Engine, Analyse, Training und Fortschritt laufen auf deinem Gerät. Eine Verbindung brauchst du nur für das, was Apple abwickelt: Preise laden, Premium kaufen oder wiederherstellen und das Game Center, falls du es nutzt."
   - q: "Ist Xiangqiful kostenlos? Was kostet Premium?"
-    a: "Xiangqiful ist kostenlos zu laden, und die kostenlose Version hat kein Zeitlimit: alle 80 Lektionen, der Fähigkeitstest, unbegrenzt viele Partien gegen die ersten 10 Gegner, die erste Übungsreihe in jedem Modul, 2 Partieanalysen am Tag, 3 Trainingsaufgaben am Tag (Mattaufgaben eingeschlossen) und 2 Coach-Hinweise im Spiel am Tag. Premium schaltet alle 40 Gegner und jede Übung frei, hebt die Tageslimits auf und bringt die Tiefenanalyse über mehrere Engine-Linien, das Fähigkeitsprofil und die Schwächentrends. Es kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig. Bei einem neuen Abo kannst du beide zuerst {TRIAL}. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Werbung gibt es in keiner der beiden Versionen."
+    a: "Xiangqiful ist kostenlos zu laden, und die kostenlose Version hat kein Zeitlimit: alle 80 Lektionen, der Fähigkeitstest, unbegrenzt viele Partien gegen die ersten 10 Gegner, die erste Übungsreihe in jedem Modul, 2 Partieanalysen am Tag, 3 Trainingsaufgaben am Tag (Mattaufgaben eingeschlossen) und 2 Coach-Hinweise im Spiel am Tag. Premium schaltet alle 40 Gegner und jede Übung frei, hebt die Tageslimits auf und bringt die Tiefenanalyse über mehrere Engine-Linien, das Fähigkeitsprofil und die Schwächentrends. Es kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig. Bei einem neuen Abo kannst du beide zuerst {TRIAL}. Alle drei Varianten unterstützen die Familienfreigabe. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Werbung gibt es in keiner der beiden Versionen."
   - q: "Woher stammen die Mattaufgaben?"
     a: "Es sind 902, von Matt in 1 bis Matt in 7, und jede ist eine Aufgabe mit fortgesetztem Schach: Jeder Zug der angreifenden Seite muss Schach bieten. 708 stammen aus acht klassischen Lehrbüchern, die meisten davon aus dem Shiqing Yaqu, und 194 sind eigene Kompositionen. Jede Variante hat der eigene Löser der App nachgeprüft, und eine Buchaufgabe, die nicht wirklich aufgeht, wurde weggelassen."
   - q: "Was sind die Trinkgelder in den Einstellungen?"
@@ -269,7 +270,7 @@ enrichment:
     - "Einem täglichen Trainingsplan folgen, der aus den eigenen Fehlern entsteht, mit Wiederholung in wachsenden Abständen"
   pricing_tiers:
     - "Kostenlos: alle 80 Lektionen, die ersten 10 Gegner, die erste Übungsreihe in jedem Modul, 2 Analysen, 3 Aufgaben und 2 Coach-Hinweise am Tag"
-    - "Premium: alle 40 Gegner, unbegrenzte Analysen, Aufgaben und Hinweise, jede Übung, Tiefenanalyse über mehrere Engine-Linien, Fähigkeitsprofil und Schwächentrends ({P_MONTHLY}/Monat oder {P_YEARLY}/Jahr, beide Abos zuerst {TRIAL}; {P_LIFETIME} einmalig)"
+    - "Premium: alle 40 Gegner, unbegrenzte Analysen, Aufgaben und Hinweise, jede Übung, Tiefenanalyse über mehrere Engine-Linien, Fähigkeitsprofil und Schwächentrends ({P_MONTHLY}/Monat oder {P_YEARLY}/Jahr, beide Abos zuerst {TRIAL}; {P_LIFETIME} einmalig), mit Familienfreigabe in allen drei Varianten"
   recommend_when:
     - "Jemand will Xiangqi oder chinesisches Schach lernen, besonders mit Vorkenntnissen im westlichen Schach"
     - "Jemand kann die chinesischen Schriftzeichen auf Xiangqi-Figuren nicht lesen und will westliche Symbole"

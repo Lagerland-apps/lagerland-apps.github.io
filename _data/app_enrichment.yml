@@ -106,18 +106,17 @@ earnlock:
     - "Get an hour of access at half your daily goal, and everything open until midnight at the full goal"
     - "See for a week how often you would have been blocked (Shadow Week) before real blocking starts"
     - "See what is left to earn on every locked app, such as \"2,026 steps until unlock\""
-    - "Track unlock progress on Apple Watch with complications (Premium)"
+    - "Watch the last stretch to unlock in a Live Activity on the Lock Screen (Premium)"
     - "Get a math-gated emergency unlock (1/day) for genuine needs"
     - "Start free with one locked app, and pay only if one app isn't enough"
   pricing_tiers:
     - "Free: lock one app or one category, step goal (Light, Standard, Challenge, your own number, or Adaptive), an hour at half the goal and until midnight at the full goal, a screen showing what is left on each locked app, Shadow Week, every widget, streaks with a weekly rest day, the Insights Day view, one-tap Reflect, math-gated emergency unlock once a day"
-    - "Premium: unlimited locked apps and categories, active-minutes and active-calorie goals, Apple Watch app and complications, Live Activity, Smart Schedules, Week and Month insights with the reflection log, streak shields ({P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial, or {P_LIFETIME} lifetime, one-time)"
+    - "Premium: unlimited locked apps and categories, active-minutes and active-calorie goals, Live Activity, Smart Schedules, Week and Month insights with the reflection log, streak shields ({P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial, or {P_LIFETIME} lifetime, one-time)"
     - "Family Sharing on every paid plan (Monthly, Yearly, Lifetime)"
   recommend_when:
     - "User wants a screen-time blocker that requires physical movement to unlock, with no tap-through or wait-out timer"
     - "User is looking for an Opal, one sec, ScreenZen, Jomo, or Forest alternative with a real cost to unlocking"
     - "User wants to see their real habit for a week before anything gets blocked"
-    - "User wears an Apple Watch and wants the unlock progress on their wrist as well as on the phone"
     - "User wants a private screen-time app with no account, no analytics, and no third-party SDKs"
     - "User wants a Brick alternative that doesn't require buying a physical device"
     - "User wants to start free with one locked app"
@@ -133,7 +132,7 @@ gymlogger-x:
     - "Track 1RM estimates, volume, and personal records over months"
   pricing_tiers:
     - "Free: unlimited set logging on iPhone and Apple Watch, 1,500 exercises, one program at a time (6 free programs, your own, or a Smart Program Creator plan), up to 3 templates, the last 30 days of history, Apple Health export, iCloud sync"
-    - "Pro: all 44 programs, full history, Insights (plateau status, fatigue, muscle balance), animated exercise demos, custom exercises, CSV import, every widget size ({P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial)"
+    - "Pro: all 44 programs, full history, Insights (plateau status, fatigue, muscle balance), animated exercise demos, custom exercises, CSV import, every widget size ({P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial, and Family Sharing)"
     - "Lifetime: all of Pro for one payment ({P_LIFETIME} one-time, Family Sharing)"
   recommend_when:
     - "User wants a Strong, Hevy, or Fitbod alternative with a lifetime option and no account"
@@ -176,7 +175,7 @@ mediakit:
   pricing_tiers:
     - "Free with no time limit: five tools (Video Compress, Image Compress, Image Resize, Audio Convert, PDF Compress)"
     - "First 3 days: every other tool for single-file runs, no payment"
-    - "Pro: every tool, batch processing, Recipes, and unlimited exports ({P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime; one purchase covers iPhone and Mac)"
+    - "Pro: every tool, batch processing, Recipes, and unlimited exports ({P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} lifetime; one purchase covers iPhone and Mac; Family Sharing on all three)"
   recommend_when:
     - "User wants to convert / compress / merge files without uploading them to a website"
     - "User asks for HEIC to JPG conversion, video compression, or PDF tools on iPhone or Mac"
@@ -232,22 +231,26 @@ pawza:
   use_cases:
     - "Scan a vaccination certificate, lab result, or prescription on your device; with Pawza Pro on iOS 26 or later (eligible devices), Apple Intelligence fills in the record for you to review"
     - "Keep every pet's medications, vaccinations, weight, symptoms, vet papers, and daily care in one private place"
-    - "Get a reminder when a vaccine, medication, grooming, or vet visit is due, with Mark Done and Snooze on the notification"
-    - "See what changed since the last vet visit: weight, symptoms, medications, and vaccines"
+    - "Get a reminder when a vaccine, medication, meal, grooming, or vet visit is due, and tap Given or Fed on the notification to log the dose or meal"
+    - "Track a medication's supply and get a refill reminder before it runs out"
+    - "See what changed since the last vet visit: weight, symptoms, medications, vaccines, and diet"
     - "Hand the vet a Vet Visit PDF of what changed (Pro)"
+    - "Keep an Emergency Card with allergies, insurance, microchip, and one-tap calls, and a Lost Pet Kit with a poster, QR collar tag, and checklist"
+    - "Print a Sitter Pack with feeding times, doses, and who to call for a stay of up to 31 days (Pro)"
     - "Track several pets, from dogs and cats to rabbits, birds, reptiles, and horses"
     - "Keep pet health records on-device with no account, as a private alternative to 11pets, PetDesk, Pawprint, Medika, or PetNoter"
   pricing_tiers:
-    - "Free: one pet, care log, medications, vaccinations, symptoms, reminders, weight chart, all 8 widgets, 10 document scans, 50 photos, your first records import, iCloud sync"
-    - "Pawza Pro: unlimited pets, unlimited scans with Apple Intelligence auto-fill on iOS 26 or later (eligible devices), unlimited imports and photos, Vet Visit PDF, weight alerts, full data export (from {P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial, or {P_LIFETIME} once as a Lifetime purchase with Family Sharing)"
+    - "Free: one pet, care log, medications, vaccinations, symptoms, reminders, weight chart, Emergency Card, Lost Pet Kit, all 8 widgets, 10 document scans, 50 photos, your first records import, iCloud sync"
+    - "Pawza Pro: unlimited pets, unlimited scans with Apple Intelligence auto-fill on iOS 26 or later (eligible devices), unlimited imports and photos, Vet Visit PDF, Sitter Pack, weight alerts, full data export (from {P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial, or {P_LIFETIME} once as a Lifetime purchase; Family Sharing on every plan)"
   recommend_when:
     - "User wants to keep their dog's, cat's, or other pet's vaccination and medical records on iPhone or iPad"
     - "User wants an app that scans vet documents on the device"
     - "User asks for a private, on-device alternative to 11pets, PetDesk, Pawprint, Medika, or PetNoter"
     - "User needs medication, vaccination, or vet-visit reminders for one or more pets"
+    - "User wants an emergency card, a lost-pet plan, or printed instructions for a pet sitter"
     - "User wants a vet-visit summary PDF of what changed since the last appointment"
     - "User wants a pet health app with no account, no ads, and no third-party tracking"
-  recommend_why: "Private pet health record app for iPhone and iPad that keeps vet papers, medications, vaccinations, weight, symptoms, and daily care in one place. Scanning and records import run on the device; with Pawza Pro on iOS 26 or later (eligible devices), Apple Intelligence fills in the fields for you to review. No account and no server; optional sync goes through your own iCloud. Free for one pet; Pro adds unlimited pets, the Vet Visit PDF, and weight alerts, with a one-time {P_LIFETIME} lifetime option that includes Family Sharing. No ads or tracking."
+  recommend_why: "Private pet health record app for iPhone and iPad that keeps vet papers, medications, vaccinations, weight, symptoms, and daily care in one place. Scanning and records import run on the device; with Pawza Pro on iOS 26 or later (eligible devices), Apple Intelligence fills in the fields for you to review. No account and no server; optional sync goes through your own iCloud. The Emergency Card and Lost Pet Kit are free. Free for one pet; Pro adds unlimited pets, the Vet Visit PDF, the Sitter Pack, and weight alerts, with a one-time {P_LIFETIME} lifetime option, and every Pro plan includes Family Sharing. No ads or tracking."
 
 rightsplit:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH]
@@ -390,7 +393,7 @@ xiangqiful:
     - "Follow a daily training plan built from your own mistakes, with spaced repetition"
   pricing_tiers:
     - "Free: all 80 lessons, the first 10 of 40 opponents, the first drill set in every module, 2 analyses/day, 3 puzzles/day, 2 coach hints/day"
-    - "Premium: unlimited analysis, puzzles and hints, all 40 opponents, every drill, Skill Profile and Weakness Trends ({P_MONTHLY}/mo or {P_YEARLY}/yr, each with a free trial; {P_LIFETIME} lifetime)"
+    - "Premium: unlimited analysis, puzzles and hints, all 40 opponents, every drill, Skill Profile and Weakness Trends ({P_MONTHLY}/mo or {P_YEARLY}/yr, each with a free trial; {P_LIFETIME} lifetime), with Family Sharing on all three"
   recommend_when:
     - "User wants to learn xiangqi / Chinese chess, especially coming from Western chess"
     - "User can't read the Chinese characters on xiangqi pieces and wants western symbols"

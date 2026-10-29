@@ -5,10 +5,10 @@ ref: /apps/rightsplit/
 permalink: /de/apps/rightsplit/
 translated_from: 2026-10-29
 tagline: "Beleg scannen, antippen, wer was hatte, und allen ihren Betrag schicken."
-quick_answer: "RightSplit ist ein Rechner zum Rechnung teilen fürs iPhone, der kein Konto braucht und deine Belege, Beträge und Namen auf dem Handy lässt. Du scannst den Kassenbon, tippst an, wer welche Artikel hatte, und schickst jeder Person eine Nachricht mit ihrem genauen Betrag und einem Bezahllink für Venmo, PayPal.me, Revolut, Wise, IBAN oder Apple Pay. Gleiche Aufteilung mit Trinkgeld, faires Runden und dein erster Belegscan sind kostenlos; Pro+ ({P_YEARLY}/Jahr oder {P_LIFETIME} einmalig) bringt unbegrenzte Scans, die Aufteilung nach Artikeln und ungleiche Aufteilung, Bereiche für Reisen und gemeinsame Haushalte sowie die Zahlungsverfolgung."
+quick_answer: "RightSplit ist ein Rechner zum Rechnung teilen fürs iPhone, der kein Konto braucht und deine Belege, Beträge und Namen auf dem Handy lässt. Du scannst den Kassenbon, tippst an, wer welche Artikel hatte, und schickst jeder Person eine Nachricht mit ihrem genauen Betrag und einem Bezahllink für Venmo, PayPal.me, Revolut, Wise, IBAN oder Apple Pay. Gleiche Aufteilung mit Trinkgeld, faires Runden und dein erster Belegscan sind kostenlos; Pro+ ({P_YEARLY}/Jahr, zuerst {TRIAL}, oder {P_LIFETIME} einmalig) bringt unbegrenzte Scans, die Aufteilung nach Artikeln und ungleiche Aufteilung, Bereiche für Reisen und gemeinsame Haushalte sowie die Zahlungsverfolgung."
 price_tier: "Pro+"
 
-plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen wickelt Apple über das normale Erstattungsverfahren des App Store ab. Pro+ · Lebenslang ist ein Einmalkauf und verlängert sich nicht automatisch."
+plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen wickelt Apple über das normale Erstattungsverfahren des App Store ab. Pro+ · Jährlich kannst du bei einem neuen Abo zuerst {TRIAL}. Pro+ · Lebenslang ist ein Einmalkauf und verlängert sich nicht automatisch."
 
 seo:
   title: "Rechnung teilen per App: Kassenbon scannen | RightSplit"
@@ -84,7 +84,7 @@ plans:
       - "Kein Konto und keine Werbung"
   - name: "Pro+ · Jährlich"
     price: "{P_YEARLY}/Jahr"
-    summary: "Unbegrenzte Scans, Aufteilung nach Artikeln und ungleiche Aufteilung, Bereiche und Zahlungsverfolgung, einmal im Jahr abgerechnet."
+    summary: "Unbegrenzte Scans, Aufteilung nach Artikeln und ungleiche Aufteilung, Bereiche und Zahlungsverfolgung, einmal im Jahr abgerechnet, zuerst {TRIAL}."
     features:
       - "Alles aus Kostenlos"
       - "Unbegrenzte Belegscans"
@@ -94,7 +94,7 @@ plans:
       - "Zahlungsverfolgung auf dem Sperrbildschirm und Erinnerungen an offene Beträge"
       - "Pay-Me-Karte mit QR-Code und 6 weitere Widgets"
       - "Unbegrenzter Aufteilungsverlauf"
-      - "Jederzeit kündbar"
+      - "Zuerst {TRIAL}, danach jederzeit kündbar"
   - name: "Pro+ · Lebenslang"
     price: "{P_LIFETIME} einmalig"
     summary: "Alles aus Pro+ mit einer einzigen Zahlung, kein Abo nötig."
@@ -236,7 +236,7 @@ faq:
   - q: "Wie schicke ich allen ihren Anteil?"
     a: "„Zahlungsaufforderungen senden“ schreibt jeder Person eine eigene Nachricht mit dem Ort, ihrem genauen Betrag und einem Bezahllink für die Zahlungsmethode, die du gespeichert hast. Du verschickst sie per Nachrichten oder WhatsApp oder kopierst sie in eine beliebige App. Die andere Person muss nichts installieren."
   - q: "Ist RightSplit kostenlos?"
-    a: "Ja. Gleiche Aufteilung mit Trinkgeld, faires Runden, deine letzten fünf Aufteilungen, Vorlagen, Siri, 12 Widgets und dein erster Belegscan sind dauerhaft kostenlos. Pro+ bringt unbegrenzte Scans, die Aufteilung nach Artikeln und geteilte Gerichte, das Anpassen einzelner Anteile, Trinkgeld pro Person, unbegrenzten Verlauf, Bereiche, die Zahlungsverfolgung mit Erinnerungen an offene Beträge, die Pay-Me-Karte und 6 weitere Widgets. Pro+ kostet {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}; der Einmalkauf verlängert sich nicht. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+    a: "Ja. Gleiche Aufteilung mit Trinkgeld, faires Runden, deine letzten fünf Aufteilungen, Vorlagen, Siri, 12 Widgets und dein erster Belegscan sind dauerhaft kostenlos. Pro+ bringt unbegrenzte Scans, die Aufteilung nach Artikeln und geteilte Gerichte, das Anpassen einzelner Anteile, Trinkgeld pro Person, unbegrenzten Verlauf, Bereiche, die Zahlungsverfolgung mit Erinnerungen an offene Beträge, die Pay-Me-Karte und 6 weitere Widgets. Pro+ kostet {P_YEARLY} im Jahr, das Abo kannst du zuerst {TRIAL}, oder einmalig {P_LIFETIME}; der Einmalkauf verlängert sich nicht. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
   - q: "Brauche ich für RightSplit ein Konto oder eine Anmeldung?"
     a: "Nein. RightSplit funktioniert, sobald du die App öffnest, ohne Registrierung und ohne persönliche Angaben. Nur eine Person am Tisch braucht die App: Du scannst, teilst auf und schickst allen ihren Betrag."
   - q: "Speichert RightSplit meine Belege online?"

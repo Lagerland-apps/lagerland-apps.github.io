@@ -8,7 +8,7 @@ og_tagline: "Schlaf und Erholung von Schicht zu Schicht."
 tagline: "Schlaf und Erholung im Blick, abgestimmt auf deinen Dienstplan."
 quick_answer: "AfterShift ist eine iPhone-App für Schlaf und Erholung bei Schichtarbeit, gemacht für Pflege, Rettungsdienst, Feuerwehr, Produktion und Logistik und für alle mit Nacht-, Wechsel- oder Bereitschaftsdienst. Sie misst deinen Schlaf von Schicht zu Schicht statt von Mitternacht bis Mitternacht, übernimmt ihn samt Nickerchen aus Apple Health, füllt deinen Dienstplan aus einem wiederkehrenden Schichtrhythmus 8 Wochen im Voraus und stimmt die Erinnerungen für Entspannung, Koffein-Stopp und Nickerchen auf deine nächste Schicht ab. Das alles ist kostenlos. Premium kostet {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME} und ergänzt den Erholungszustand, die Schlafbewertung, den Schichterholungswert und Trends; beide Abos kannst du zuerst {TRIAL}. Du brauchst kein Konto, es gibt keine Werbung, und deine Daten gehen nie an einen Server."
 
-plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über den normalen Erstattungsweg von Apple im App Store. Der Einmalkauf verlängert sich nicht automatisch."
+plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über den normalen Erstattungsweg von Apple im App Store. Der Einmalkauf verlängert sich nicht automatisch. Alle drei bezahlten Varianten unterstützen die Familienfreigabe."
 
 plans:
   - name: "Kostenlos"

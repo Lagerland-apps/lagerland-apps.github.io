@@ -14,13 +14,13 @@ price:
 price_override: "{P_YEARLY}/year or {P_LIFETIME} lifetime"
 free_tier: false
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. The free download runs Demo Mode with sample data, and connecting your own App Store Connect account needs Pro. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. The free download runs Demo Mode with sample data, and connecting your own App Store Connect account needs Pro. Yearly starts with a {TRIAL} for new subscribers. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew."
 
 plans:
   - name: "Yearly"
     price: "{P_YEARLY}/yr"
     kind: yearly
-    summary: "All of AppMeta Pro, billed once a year. Cancel anytime."
+    summary: "All of AppMeta Pro, billed once a year after a {TRIAL}. Cancel anytime."
     features:
       - "Every locale in one editor, or one field across all locales"
       - "A field-level diff against App Store Connect before every listing push"
@@ -190,9 +190,7 @@ comparison_table:
     - feature: "Native Mac app (not a browser / not a CLI)"
       values: ["Yes, native macOS app for macOS 14+", "Desktop app built on Electron (Next.js / React)", "No, web only", "Yes, plus iPhone, iPad, Windows, Linux, and Android apps", "No, CLI only"]
     - feature: "Pricing model"
-      values: ["{P_YEARLY}/yr or {P_LIFETIME} lifetime", "Free, no limits (MIT open source)", "$10/mo Indie · $23/mo Pro", "Per seat: $29/mo Indie · $69/mo Pro, billed yearly", "Free (open source)"]
-    - feature: "3-year total cost (Indie tier)"
-      values: ["{P_LIFETIME} lifetime (or three years at {P_YEARLY})", "$0", "≈ $360 (12 × $10 × 3)", "≈ $1,044 (3 × $348, billed yearly)", "$0"]
+      values: ["{P_YEARLY}/yr or {P_LIFETIME} lifetime", "Free, no limits (MIT open source)", "Subscription: Indie or Pro", "Subscription per seat: Indie or Pro, billed yearly", "Free (open source)"]
     - feature: "Number of App Store Connect locales supported"
       values: ["50 App Store Connect locale codes", "All locales at once (count not published)", "37", "50", "Per-locale .txt files"]
     - feature: "Manages In-App Purchases + Subscription Groups + Game Center"
@@ -213,7 +211,7 @@ comparison_table:
       values: ["No, proprietary, funded by paid software", "Yes, MIT, plus a self-hosted Docker option", "No", "No", "Yes, MIT licensed"]
     - feature: "Where your App Store Connect key is stored"
       values: ["Mac Keychain, this Mac only, not synced to iCloud", "AES-256-GCM, master key in the Keychain", "Stored server-side", "On device; optional encrypted sync for teams", "Local .p8 file or Apple ID session"]
-  footnote: "Itsyconnect, ASO.dev and fastlane details were checked on 2026-10-25: Itsyconnect against its GitHub README and v1.14.2 release, ASO.dev against its pricing page (per seat, excluding VAT), fastlane against docs.fastlane.tools. AppMetaHub figures come from its landing page as of 2026-05-13 and weren't rechecked; Indie was then $10/mo billed annually ($120/year). Verify current pricing before switching."
+  footnote: "Itsyconnect, ASO.dev and fastlane details were checked on 2026-10-25: Itsyconnect against its GitHub README and v1.14.2 release, ASO.dev against its pricing page (per seat, excluding VAT), fastlane against docs.fastlane.tools. AppMetaHub details come from its landing page as of 2026-05-13 and weren't rechecked. Verify current pricing before switching."
 
 plateau_disclosure:
   title: "What AppMeta won't do for you"
@@ -312,7 +310,7 @@ faq:
   - q: "How is AppMeta different from NativeConnect?"
     a: "NativeConnect was a native Mac client for App Store Connect in the same shape as AppMeta. It was pulled from the Mac App Store in 2020 and hasn't been available since, so it isn't a current option. AppMeta is a native Mac client in that category, built on the App Store Connect API for macOS 14 or later, and it is updated regularly."
   - q: "How is AppMeta different from AppMetaHub and ASO.dev?"
-    a: "AppMetaHub and ASO.dev are subscription tools. AppMetaHub is a web app; its Indie plan was $10/month in May 2026. ASO.dev has apps for Mac, iPhone, iPad, Windows, Linux, and Android and is priced per seat; Indie is $29/month billed yearly ($348/year) as of October 2026. AppMeta is a native Mac app at {P_YEARLY}/year or {P_LIFETIME} lifetime. Three years of AppMetaHub Indie is around $360, three years of ASO.dev Indie is around $1,044, and three years of AppMeta is {P_LIFETIME} lifetime or three payments of {P_YEARLY}. They give you a browser or more platforms, team seats, and (for ASO.dev) rank tracking. AppMeta gives you a native Mac app, edits kept on your Mac until you push, Game Center editing, and a lifetime option. AppMeta also manages more locales than AppMetaHub did in May 2026 (50 vs 37)."
+    a: "AppMetaHub and ASO.dev are subscription tools. AppMetaHub is a web app with a monthly Indie plan. ASO.dev has apps for Mac, iPhone, iPad, Windows, Linux, and Android and is priced per seat, billed yearly. AppMeta is a native Mac app at {P_YEARLY}/year or {P_LIFETIME} lifetime. They give you a browser or more platforms, team seats, and (for ASO.dev) rank tracking. AppMeta gives you a native Mac app, edits kept on your Mac until you push, Game Center editing, and a lifetime option. AppMeta also manages more locales than AppMetaHub did in May 2026 (50 vs 37)."
   - q: "Which AI providers does AppMeta support?"
     a: "Five: Apple Intelligence on your Mac (macOS 26 on a Mac that supports it, no key), Anthropic Claude, OpenAI, and Google Gemini with your own API key, and any OpenAI-compatible server such as Ollama or LM Studio (no key needed). You pick the provider in Settings and pay it directly; AppMeta sells no AI usage. With a cloud provider, the text you translate or analyze goes from your Mac to that provider. With Apple Intelligence, it stays on your Mac."
   - q: "Does AppMeta need an AI API key to work?"
@@ -320,7 +318,7 @@ faq:
   - q: "Is AppMeta safe? Where do my App Store Connect credentials go?"
     a: "AppMeta uses Apple's App Store Connect API, with no app-specific password and no browser session. You create a team API key in App Store Connect (Users and Access → Integrations → App Store Connect API) and enter the Issuer ID, Key ID, and .p8 file in AppMeta once. All three are stored in the Mac Keychain as items for that Mac only, not synced to iCloud. AppMeta signs short-lived tokens on your Mac, and the .p8 never leaves it. There is no AppMeta server. Other requests go to Apple's public App Store endpoints for keyword research (if you turn it on), Apple Ads (if you connect it), the European Central Bank for exchange rates, and your AI provider (if you add one). See the per-app Privacy Manifest on the transparency page for the declared API usage."
   - q: "Is AppMeta free?"
-    a: "AppMeta is free to download and runs Demo Mode: every screen with sample apps, locales, keywords, IAPs, reviews, and sales, no account needed. Writes are disabled in Demo Mode. Connecting your own App Store Connect account needs Pro: {P_YEARLY}/year, or {P_LIFETIME} lifetime as a one-time purchase. Demo Mode lets you try every screen before you buy. Prices in USD; the App Store shows your local currency at checkout."
+    a: "AppMeta is free to download and runs Demo Mode: every screen with sample apps, locales, keywords, IAPs, reviews, and sales, no account needed. Writes are disabled in Demo Mode. Connecting your own App Store Connect account needs Pro: {P_YEARLY}/year, starting with a {TRIAL}, or {P_LIFETIME} lifetime as a one-time purchase. Demo Mode lets you try every screen before you buy. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Can I submit apps for review through AppMeta?"
     a: "Yes. Attach a build, add the version for review, and manage phased release for the iOS version. The Submission tab checks App Review Info, Content Rights, Categories, Pricing, Availability, Age Rating, License Agreement, Privacy, and Copyright. App Privacy details are read-only in AppMeta, with a link to App Store Connect. Add for Review submits right away, without a confirmation step. Builds themselves are uploaded with Xcode, Transporter, or fastlane."
   - q: "How many App Store Connect locales does AppMeta support?"

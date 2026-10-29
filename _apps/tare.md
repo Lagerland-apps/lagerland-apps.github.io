@@ -164,7 +164,7 @@ comparison_table:
     - feature: "Hidden values to deduce"
       values: ["Yes: “?” weights, from picture cards", "No", "No, only empty cells", "Yes: the box, which becomes x", "The hidden picture", "Varies by puzzle"]
     - feature: "Price"
-      values: ["Free; 20 levels free, {P_IAP:Tare Full Access} once for the other 180", "$6.99 once, no in-app purchases", "Free with ads; $4.99 Full Game Unlock; or Apple Arcade", "Free to start; Kahoot! Kids $5.99/month or $35.99/year", "Free; $2.99 VIP removes ads; hint packs", "Free and open source, no in-app purchases"]
+      values: ["Free; 20 levels free, {P_IAP:Tare Full Access} once for the other 180", "Paid once, no in-app purchases", "Free with ads; one-time Full Game Unlock; or Apple Arcade", "Free to start; Kahoot! Kids subscription", "Free; one-time VIP removes ads; hint packs", "Free and open source, no in-app purchases"]
     - feature: "App Store privacy label"
       values: ["Data Not Collected", "Data Not Collected", "Data Not Linked to You, incl. third-party advertising", "Data Linked to You, incl. analytics", "Data Not Linked to You", "Data Not Collected"]
     - feature: "Platforms"

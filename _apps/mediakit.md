@@ -14,7 +14,7 @@ price:
 price_lead: "Free"
 price_tier: "Pro"
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple offers the free trial on Monthly and Annual only to eligible Apple Accounts. The 3 days of full access after you install the app are separate and need no payment. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Monthly and Annual each start with a {TRIAL}, which Apple offers only to eligible Apple Accounts. The 3 days of full access after you install the app are separate and need no payment. Monthly, Annual, and Lifetime all support Family Sharing. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew."
 
 plans:
   - name: "Free"
@@ -28,7 +28,7 @@ plans:
   - name: "Pro · Monthly"
     price: "{P_MONTHLY}/mo"
     kind: monthly
-    summary: "Every tool and batch processing, billed monthly. Cancel anytime."
+    summary: "Every tool and batch processing, billed monthly, starting with a {TRIAL}. Cancel anytime."
     features:
       - "More than 150 tools for video, audio, image, PDF, archive, and ebook files"
       - "Batch processing in the Queue, with unlimited exports"
@@ -38,7 +38,7 @@ plans:
   - name: "Pro · Annual"
     price: "{P_YEARLY}/yr"
     kind: yearly
-    summary: "The same Pro, billed once a year. ~{SAVE_YEARLY}% cheaper than paying monthly."
+    summary: "The same Pro, billed once a year, starting with a {TRIAL}. ~{SAVE_YEARLY}% cheaper than paying monthly."
     features:
       - "Everything in Pro · Monthly"
       - "~{SAVE_YEARLY}% cheaper than monthly over a year"
@@ -52,6 +52,7 @@ plans:
       - "Everything in Pro · Annual"
       - "One-time purchase, no renewal"
       - "One purchase covers iPhone and Mac"
+      - "Family Sharing included"
       - "Restore Purchases sits in Settings under Your Plan"
 
 icon: "/assets/icons/mediakit.png"
@@ -183,7 +184,7 @@ faq:
   - q: "Which file formats does MediaKit support?"
     a: "Video: MKV opens directly, because MediaKit unpacks it itself (DTS, E-AC-3, and MP3 audio inside an MKV is dropped, with a notice); ProRes is written to .mov. Audio: reads formats including MP3 and FLAC and writes M4A (AAC), WAV, AIFF, ALAC, and CAF. Images: HEIC, JPG, PNG, TIFF, GIF, WebP (where your system can write it), BMP, and JPEG 2000, plus camera RAW, AVIF, PSD, and EXR as input. Ebooks: EPUB, FB2, MOBI and AZW3 (read-only), PDF, TXT, HTML, CBZ, and RTF. Archives: ZIP, TAR, TAR.GZ, GZIP, XZ, and BZIP2, plus RAR4 and RAR5 for extracting. WebM, RAR creation, encrypted RAR, and DRM-protected Kindle books are not supported."
   - q: "Is MediaKit free?"
-    a: "Yes, to start. For your first 3 days every tool works, one export per run, with no payment. After that, five tools stay free for good, one file at a time: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Pro unlocks every other tool, batch processing, and unlimited exports for {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes, to start. For your first 3 days every tool works, one export per run, with no payment. After that, five tools stay free for good, one file at a time: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Pro unlocks every other tool, batch processing, and unlimited exports for {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once, and all three support Family Sharing. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does MediaKit work offline?"
     a: "Yes. Every tool runs on your device, so MediaKit works without an internet connection. The one exception is subtitle translation, which uses Apple's Translation language packs; macOS downloads them the first time (macOS 15 or later)."
   - q: "Which devices does MediaKit support?"

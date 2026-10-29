@@ -9,12 +9,12 @@ quick_answer: "AppMeta ist eine Mac-App für Indie-Entwickler, die ihre Einträg
 
 price_override: "{P_YEARLY}/Jahr oder {P_LIFETIME} einmalig"
 
-plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Der kostenlose Download läuft im Demomodus mit Beispieldaten; um dein eigenes App-Store-Connect-Konto zu verbinden, brauchst du Pro. Erstattungen laufen über Apple, auf dem üblichen Weg für App-Store-Rückerstattungen. Lebenslang ist ein Einmalkauf und verlängert sich nicht automatisch."
+plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Der kostenlose Download läuft im Demomodus mit Beispieldaten; um dein eigenes App-Store-Connect-Konto zu verbinden, brauchst du Pro. Bei einem neuen Abo kannst du „Jährlich“ zuerst {TRIAL}. Erstattungen laufen über Apple, auf dem üblichen Weg für App-Store-Rückerstattungen. Lebenslang ist ein Einmalkauf und verlängert sich nicht automatisch."
 
 plans:
   - name: "Jährlich"
     price: "{P_YEARLY}/Jahr"
-    summary: "AppMeta Pro komplett, einmal im Jahr abgerechnet. Jederzeit kündbar."
+    summary: "AppMeta Pro komplett, einmal im Jahr abgerechnet, zuerst {TRIAL}. Jederzeit kündbar."
     features:
       - "Alle Sprachen in einem Editor, oder ein Feld über alle Sprachen"
       - "Vor jedem Push des Eintrags ein Vergleich Feld für Feld mit App Store Connect"
@@ -159,8 +159,6 @@ comparison_table:
       values: ["Ja, native macOS-App ab macOS 14", "Desktop-App auf Electron-Basis (Next.js / React)", "Nein, nur Web", "Ja, dazu Apps für iPhone, iPad, Windows, Linux und Android", "Nein, nur Kommandozeile"]
     - feature: "Preismodell"
       values: ["{P_YEARLY}/Jahr oder {P_LIFETIME} einmalig", "Kostenlos, ohne Einschränkungen (Open Source, MIT)", "Abo: Indie oder Pro", "Abo pro Platz: Indie oder Pro, jährlich abgerechnet", "Kostenlos (Open Source)"]
-    - feature: "Kosten über 3 Jahre (Indie-Stufe)"
-      values: ["{P_LIFETIME} einmalig (oder drei Jahre zu je {P_YEARLY})", "Kostenlos", "3 Jahre Abo", "3 Jahre Abo, pro Platz", "Kostenlos"]
     - feature: "Anzahl unterstützter Sprachen von App Store Connect"
       values: ["50 Sprachcodes von App Store Connect", "Alle Sprachen auf einmal (Anzahl nicht veröffentlicht)", "37", "50", ".txt-Dateien pro Sprache"]
     - feature: "Verwaltet In-App-Käufe, Abonnementgruppen und Game Center"
@@ -286,7 +284,7 @@ faq:
   - q: "Ist AppMeta sicher? Wo landen meine Zugangsdaten für App Store Connect?"
     a: "AppMeta nutzt Apples App Store Connect API, ohne app-spezifisches Passwort und ohne Browsersitzung. Du erstellst in App Store Connect einen Team-API-Schlüssel (Benutzer und Zugriff → Integrationen → App Store Connect API) und gibst Issuer ID, Key ID und die .p8-Datei einmal in AppMeta ein. Alle drei liegen im Mac-Schlüsselbund als Einträge nur für diesen Mac, ohne iCloud-Abgleich. AppMeta signiert kurzlebige Tokens auf deinem Mac, und die .p8-Datei verlässt ihn nie. Einen Server von AppMeta gibt es nicht. Weitere Anfragen gehen an Apples öffentliche App-Store-Endpunkte für die Keyword-Recherche (wenn du sie einschaltest), an Apple Ads (wenn du es verbindest), an die Europäische Zentralbank für Wechselkurse und an deinen KI-Anbieter (wenn du einen einträgst). Die angegebene API-Nutzung steht im Datenschutzmanifest der App auf der Transparenzseite."
   - q: "Ist AppMeta kostenlos?"
-    a: "AppMeta ist kostenlos zu laden und läuft im Demomodus: jeder Bildschirm mit Beispiel-Apps, Sprachen, Schlüsselwörtern, In-App-Käufen, Bewertungen und Verkäufen, ohne Konto. Im Demomodus ist Schreiben gesperrt. Um dein eigenes App-Store-Connect-Konto zu verbinden, brauchst du Pro: {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig als Einmalkauf. Im Demomodus kannst du jeden Bildschirm ausprobieren, bevor du kaufst. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+    a: "AppMeta ist kostenlos zu laden und läuft im Demomodus: jeder Bildschirm mit Beispiel-Apps, Sprachen, Schlüsselwörtern, In-App-Käufen, Bewertungen und Verkäufen, ohne Konto. Im Demomodus ist Schreiben gesperrt. Um dein eigenes App-Store-Connect-Konto zu verbinden, brauchst du Pro: {P_YEARLY}/Jahr, das Abo kannst du zuerst {TRIAL}, oder {P_LIFETIME} einmalig als Einmalkauf. Im Demomodus kannst du jeden Bildschirm ausprobieren, bevor du kaufst. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
   - q: "Kann ich Apps über AppMeta zur Prüfung einreichen?"
     a: "Ja. Du ordnest einen Build zu, fügst die Version zur Prüfung hinzu und steuerst die stufenweise Freigabe für die iOS-Version. Der Tab „Einreichung“ prüft Infos zur App-Prüfung, Inhaltsrechte, Kategorien, Preisgestaltung, Verfügbarkeit, Altersfreigabe, Lizenzvereinbarung, Datenschutz und Copyright. Die Angaben zum App-Datenschutz sind in AppMeta schreibgeschützt, mit einem Link zu App Store Connect. „Zur Prüfung hinzufügen“ reicht sofort ein, ohne Rückfrage. Die Builds selbst lädst du mit Xcode, Transporter oder fastlane hoch."
   - q: "Wie viele Sprachen von App Store Connect unterstützt AppMeta?"

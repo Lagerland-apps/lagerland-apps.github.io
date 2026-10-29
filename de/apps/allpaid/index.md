@@ -8,7 +8,7 @@ tagline: "Erinnerungen an Rechnungen und Verträge fürs iPhone, ohne Bank-Login
 quick_answer: "AllPaid ist eine Fixkosten-App mit Zahlungserinnerung fürs iPhone, die nie nach deinem Bank-Login fragt. Du trägst Miete, Nebenkosten, Abos und Verträge einmal ein, und AllPaid erinnert dich um 9:00 Uhr vor jedem Fälligkeitstag, schiebt eine bezahlte Rechnung auf den nächsten Termin und erinnert dich, bevor ein Vertrag endet. Bis zu 3 Rechnungen sind kostenlos; Pro bringt unbegrenzte Rechnungen, mehr Erinnerungen, die Ausgabenanalyse, den Zahlungsverlauf und die iCloud-Synchronisation für {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig. Es gibt kein Konto und keine Werbung, und deine Rechnungen bleiben auf deinem iPhone."
 price_tier: "Pro"
 
-plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen wickelt Apple über das normale Erstattungsverfahren des App Store ab. Lebenslang ist ein Einmalkauf und verlängert sich nicht."
+plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Ist dein Apple Account berechtigt, kannst du Monatlich zuerst {TRIAL} und Jährlich zuerst 7 Tage gratis testen. Erstattungen wickelt Apple über das normale Erstattungsverfahren des App Store ab. Lebenslang ist ein Einmalkauf und verlängert sich nicht."
 
 plans:
   - name: "Kostenlos"
@@ -23,7 +23,7 @@ plans:
       - "Ein Anhang pro Rechnung"
   - name: "Pro · Monatlich"
     price: "{P_MONTHLY}/Monat"
-    summary: "Alle Pro-Funktionen, monatlich abgerechnet. Jederzeit kündbar."
+    summary: "Alle Pro-Funktionen, monatlich abgerechnet. Zuerst {TRIAL}, danach jederzeit kündbar."
     features:
       - "Unbegrenzte Rechnungen"
       - "Mehrere Erinnerungen pro Rechnung und eine am Fälligkeitstag"
@@ -34,7 +34,7 @@ plans:
       - "Familienfreigabe für bis zu 5 Familienmitglieder"
   - name: "Pro · Jährlich"
     price: "{P_YEARLY}/Jahr"
-    summary: "Dieselben Pro-Funktionen, einmal im Jahr abgerechnet. Rund {SAVE_YEARLY} % günstiger als monatlich."
+    summary: "Dieselben Pro-Funktionen, einmal im Jahr abgerechnet, zuerst 7 Tage gratis testen. Rund {SAVE_YEARLY} % günstiger als monatlich."
     features:
       - "Alles aus Pro · Monatlich"
       - "Übers Jahr rund {SAVE_YEARLY} % günstiger als monatlich"
@@ -260,7 +260,7 @@ faq:
   - q: "Ist AllPaid ein Haushaltsbuch?"
     a: "Nein. AllPaid kümmert sich um Rechnungen, Abos, Verträge und Zahlungserinnerungen. Ein vollständiges Haushaltsbuch, Einnahmen oder die Kategorisierung von Umsätzen gibt es nicht. Willst du ein vollständiges Haushaltsbuch, passen YNAB, Monarch Money oder Copilot besser."
   - q: "Ist die Fixkosten-App AllPaid kostenlos?"
-    a: "Ja. Kostenlos verwaltest du bis zu 3 Rechnungen mit einer Erinnerung am Tag vor jedem Fälligkeitstag, dazu Vertragsende, Ausgabenübersicht, alle zehn Widgets, Siri und die App-Sperre. Speicherst du eine vierte Rechnung, öffnet sich der Pro-Bildschirm. Pro schaltet unbegrenzte Rechnungen, mehrere Erinnerungen pro Rechnung samt Erinnerung am Fälligkeitstag, die Ausgabenanalyse, den vollständigen Zahlungsverlauf, bis zu 50 Anhänge pro Rechnung und die iCloud-Synchronisation frei, für {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig. Monats- und Jahresabo beginnen mit einem kostenlosen Probezeitraum, wenn dein Apple Account dafür berechtigt ist. Ein Pro-Kauf gilt über die Familienfreigabe für bis zu 5 Familienmitglieder. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+    a: "Ja. Kostenlos verwaltest du bis zu 3 Rechnungen mit einer Erinnerung am Tag vor jedem Fälligkeitstag, dazu Vertragsende, Ausgabenübersicht, alle zehn Widgets, Siri und die App-Sperre. Speicherst du eine vierte Rechnung, öffnet sich der Pro-Bildschirm. Pro schaltet unbegrenzte Rechnungen, mehrere Erinnerungen pro Rechnung samt Erinnerung am Fälligkeitstag, die Ausgabenanalyse, den vollständigen Zahlungsverlauf, bis zu 50 Anhänge pro Rechnung und die iCloud-Synchronisation frei, für {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig. Ist dein Apple Account berechtigt, kannst du das Monatsabo zuerst {TRIAL} und das Jahresabo zuerst 7 Tage gratis testen. Ein Pro-Kauf gilt über die Familienfreigabe für bis zu 5 Familienmitglieder. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
   - q: "Funktioniert AllPaid mit Siri und Widgets?"
     a: "Ja. Frag Siri „What bills are due in AllPaid“, und sie liest dir die Rechnungen der nächsten sieben Tage vor; die Siri-Befehle gibt es allerdings nur auf Englisch. AllPaid hat zehn Widgets für Home-Bildschirm und Sperrbildschirm, darunter Nächste Rechnung, Monatskalender, Bevorstehend und Verträge, mit extragroßen Layouts ab iOS 27. Widgets öffnen die App; als bezahlt markieren kannst du darin nichts."
   - q: "Gibt es AllPaid für iPad, Mac oder Apple Watch?"

@@ -13,7 +13,7 @@ price:
   model: freemium
 price_tier: "Pro"
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. For eligible Apple Accounts, Monthly starts with a {TRIAL} and Annual with a 7-day free trial. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew."
 
 plans:
   - name: "Free"
@@ -29,7 +29,7 @@ plans:
   - name: "Pro · Monthly"
     price: "{P_MONTHLY}/mo"
     kind: monthly
-    summary: "Full Pro, billed monthly. Cancel anytime."
+    summary: "Full Pro, billed monthly, starting with a {TRIAL}. Cancel anytime."
     features:
       - "Unlimited bills"
       - "Several reminders per bill, plus one on the due day"
@@ -41,7 +41,7 @@ plans:
   - name: "Pro · Annual"
     price: "{P_YEARLY}/yr"
     kind: yearly
-    summary: "Same Pro features, billed once a year. ~{SAVE_YEARLY}% cheaper than paying monthly."
+    summary: "Same Pro features, billed once a year, starting with a 7-day free trial. ~{SAVE_YEARLY}% cheaper than paying monthly."
     features:
       - "Everything in Pro · Monthly"
       - "~{SAVE_YEARLY}% cheaper than monthly over a year"
@@ -313,7 +313,7 @@ faq:
   - q: "Is AllPaid a budgeting app?"
     a: "No. AllPaid covers bill tracking, subscriptions, contracts, and payment reminders. It does not do full budgeting, income tracking, or transaction categorization. If you want full budgeting, YNAB, Monarch Money, or Copilot are better fits."
   - q: "Is AllPaid free?"
-    a: "Yes. Free tracks up to 3 bills with a reminder the day before each one, contract end dates, the spending overview, all ten widgets, Siri, and App Lock. Saving a fourth bill opens the Pro screen. Pro unlocks unlimited bills, several reminders per bill plus due-day reminders, Spending Analytics, full payment history, up to 50 attachments per bill, and iCloud Sync for {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once. The monthly and yearly plans start with a free trial if your Apple Account is eligible. One Pro purchase covers up to 5 family members through Family Sharing. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes. Free tracks up to 3 bills with a reminder the day before each one, contract end dates, the spending overview, all ten widgets, Siri, and App Lock. Saving a fourth bill opens the Pro screen. Pro unlocks unlimited bills, several reminders per bill plus due-day reminders, Spending Analytics, full payment history, up to 50 attachments per bill, and iCloud Sync for {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once. If your Apple Account is eligible, the monthly plan starts with a {TRIAL} and the yearly plan with a 7-day free trial. One Pro purchase covers up to 5 family members through Family Sharing. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does AllPaid work with Siri and widgets?"
     a: "Yes. Ask Siri \"What bills are due in AllPaid\" and it reads out the bills due in the next seven days. AllPaid has ten Home Screen and Lock Screen widgets, including Next Bill, Monthly Calendar, Coming Up, and Contracts, with extra-large layouts on iOS 27. Widgets open the app; they can't mark a bill paid."
   - q: "Does AllPaid work on iPad, Mac, or Apple Watch?"

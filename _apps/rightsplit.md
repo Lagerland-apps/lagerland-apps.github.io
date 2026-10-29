@@ -3,7 +3,7 @@ layout: app
 slug: rightsplit
 name: "RightSplit"
 tagline: "Scan the bill, tap who had what, send everyone their number."
-quick_answer: "RightSplit is a bill-splitting calculator for iPhone that needs no account and keeps your receipts, amounts, and names on the phone. You scan the receipt, tap who had which items, and send each person a message with their exact amount and a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay. Equal splits with tip, fair rounding, and your first receipt scan are free; Pro+ ({P_YEARLY}/year, or {P_LIFETIME} once) adds unlimited scans, item-by-item and uneven splits, Spaces for trips and shared homes, and a payment tracker."
+quick_answer: "RightSplit is a bill-splitting calculator for iPhone that needs no account and keeps your receipts, amounts, and names on the phone. You scan the receipt, tap who had which items, and send each person a message with their exact amount and a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay. Equal splits with tip, fair rounding, and your first receipt scan are free; Pro+ ({P_YEARLY}/year after a {TRIAL}, or {P_LIFETIME} once) adds unlimited scans, item-by-item and uneven splits, Spaces for trips and shared homes, and a payment tracker."
 category: finance
 status: live
 
@@ -13,7 +13,7 @@ price:
   model: freemium
 price_tier: "Pro+"
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. The lifetime tier is a one-time purchase and does not auto-renew."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Pro+ · yearly starts with a {TRIAL} for new subscribers. The lifetime tier is a one-time purchase and does not auto-renew."
 
 icon: "/assets/icons/rightsplit.png"
 og_image: "/assets/og/rightsplit.png"
@@ -104,7 +104,7 @@ plans:
   - name: "Pro+ · yearly"
     price: "{P_YEARLY} / year"
     kind: yearly
-    summary: "Unlimited scans, item-by-item and uneven splits, Spaces, and the payment tracker, billed once a year."
+    summary: "Unlimited scans, item-by-item and uneven splits, Spaces, and the payment tracker, billed once a year after a {TRIAL}."
     features:
       - "Everything in Free"
       - "Unlimited receipt scans"
@@ -114,7 +114,7 @@ plans:
       - "Payment tracker on the Lock Screen, and reminders for unpaid shares"
       - "Pay-Me Card with a QR code, and 6 more widgets"
       - "Unlimited split history"
-      - "Cancel anytime"
+      - "{TRIAL} · cancel anytime"
   - name: "Pro+ · lifetime"
     highlight: true
     price: "{P_LIFETIME} once"
@@ -275,7 +275,7 @@ faq:
   - q: "How do I send people their share?"
     a: "Send Payment Requests builds one message per person with the place, their exact amount, and a tap-to-pay link for the payment method you saved. Send it by Messages or WhatsApp, or copy it into any app. The other person doesn't need to install anything."
   - q: "Is RightSplit free?"
-    a: "Yes. Equal splits with tip, fair rounding, your last five splits, split templates, Siri, 12 widgets, and your first receipt scan are free for good. Pro+ adds unlimited scans, split by items and shared dishes, adjusting one person's share, the tip breakdown, unlimited history, Spaces, the payment tracker and unpaid reminders, the Pay-Me Card, and 6 more widgets. It costs {P_YEARLY} per year, or {P_LIFETIME} once; the lifetime purchase does not renew. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes. Equal splits with tip, fair rounding, your last five splits, split templates, Siri, 12 widgets, and your first receipt scan are free for good. Pro+ adds unlimited scans, split by items and shared dishes, adjusting one person's share, the tip breakdown, unlimited history, Spaces, the payment tracker and unpaid reminders, the Pay-Me Card, and 6 more widgets. It costs {P_YEARLY} per year, starting with a {TRIAL}, or {P_LIFETIME} once; the lifetime purchase does not renew. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does RightSplit need an account?"
     a: "No. RightSplit works the moment you open it, with no sign-up and no personal details. Only one person at the table needs the app: you scan, split, and send everyone their amount."
   - q: "Does RightSplit store my receipts online?"
@@ -319,4 +319,4 @@ last_updated: 2026-10-29
 ---
 RightSplit is a bill-splitting calculator for iPhone. Scan a receipt with the camera, pick a photo, or share one in from another app, and every line becomes an item you can edit. On an iPhone with Apple Intelligence turned on (iOS 26 or later), Apple Intelligence reads the receipt on the device; every other iPhone uses Apple's on-device text recognition. Tap who had each item, split shared dishes between the people who shared them, and RightSplit divides tax and tip per person, with fair rounding so the shares add up to the total. Send Payment Requests then writes each person a message with the place, their exact amount, and a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay.
 
-The free version covers equal splits with tip, fair rounding, your last five splits, templates, Siri, 12 widgets, and your first receipt scan. Pro+ adds unlimited scans, split by items, uneven splits, unlimited history, a Lock Screen payment tracker, and Spaces that keep a trip's or a shared home's balances and the fewest transfers to settle them, for {P_YEARLY}/year or {P_LIFETIME} once. RightSplit reads receipts in 16 languages, and splits in 58 currencies. There is no account and no ads, and your receipts, amounts, and names stay on your iPhone.
+The free version covers equal splits with tip, fair rounding, your last five splits, templates, Siri, 12 widgets, and your first receipt scan. Pro+ adds unlimited scans, split by items, uneven splits, unlimited history, a Lock Screen payment tracker, and Spaces that keep a trip's or a shared home's balances and the fewest transfers to settle them, for {P_YEARLY}/year (starting with a {TRIAL}) or {P_LIFETIME} once. RightSplit reads receipts in 16 languages, and splits in 58 currencies. There is no account and no ads, and your receipts, amounts, and names stay on your iPhone.

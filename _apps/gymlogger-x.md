@@ -16,7 +16,7 @@ price_tier: "Pro"
 # Plans grid: Free / Pro Monthly / Pro Annual / Lifetime. The plans_footnote
 # carries the USD-pricing disclaimer for international buyers and the App Store
 # refund pointer, so purchase questions are answered next to the price.
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew. Pro Monthly, Pro Annual, and Lifetime all support Family Sharing."
 
 plans:
   - name: "Free"

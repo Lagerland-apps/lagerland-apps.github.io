@@ -10,7 +10,8 @@ tagline: "Learn Chinese chess from your first move, then play, review, and train
 # graded "from best to blunder" (no step count); "a strong open-source engine",
 # never "tops the rating lists"; no engine file size; no "movement guide" wording;
 # "VoiceOver support", never "throughout"; no Dynamic Type, light mode, sound,
-# Family Sharing or sync claims; the rating is Xiangqiful's own estimate.
+# sync claims; the rating is Xiangqiful's own estimate. Family Sharing on Monthly,
+# Yearly, and Lifetime comes from MASTER.md (2026-10-29), which beats the blueprint.
 status: live
 
 quick_answer: "Xiangqiful is a xiangqi (Chinese chess) app for iPhone, iPad, and Mac that teaches you from your first move, then has the Pikafish engine review your games on your device and builds your training from the mistakes it finds. It has 80 free lessons, 902 mate puzzles (708 of them from eight classical manuals), and 40 opponents with distinct play styles, and its western and hybrid piece sets let you play before you can read the characters. The free tier includes the first 10 opponents and 2 game analyses, 3 puzzles, and 2 coach hints a day; Premium is {P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} once. It works offline and needs no account, and the app shows no ads and collects no data."
@@ -22,7 +23,7 @@ app_store_url: "https://apps.apple.com/app/id6794340136"
 price:
   model: freemium
 
-plans_footnote: "Prices in USD; the App Store shows your local price at checkout. Monthly and Yearly each start with a {TRIAL} for new subscribers; cancel before it ends and you are not charged. They renew automatically unless turned off at least 24 hours before the current period ends; manage or cancel them in your Apple Account settings. Lifetime is a one-time purchase with nothing to renew. Apple handles refunds through the standard App Store refund flow."
+plans_footnote: "Prices in USD; the App Store shows your local price at checkout. Monthly and Yearly each start with a {TRIAL} for new subscribers; cancel before it ends and you are not charged. They renew automatically unless turned off at least 24 hours before the current period ends; manage or cancel them in your Apple Account settings. Lifetime is a one-time purchase with nothing to renew. Monthly, Yearly, and Lifetime all support Family Sharing. Apple handles refunds through the standard App Store refund flow."
 
 # Free / Monthly / Yearly / Lifetime. The Free column lists only the limits in
 # blueprint §3 (2 analyses, 3 puzzles, 2 coach hints a day; first 10 opponents;
@@ -67,6 +68,7 @@ plans:
     features:
       - "Everything in Premium"
       - "One-time purchase with nothing to renew or cancel"
+      - "Family Sharing included"
 
 icon: "/assets/icons/xiangqiful.png"
 og_image: "/assets/og/xiangqiful.png"
@@ -285,7 +287,7 @@ faq:
   - q: "Does Xiangqiful work offline?"
     a: "Yes. Lessons, games, the engine, analysis, training, and progress all run on your device. A connection is needed only for things Apple handles: loading prices, buying or restoring Premium, and Game Center if you use it."
   - q: "Is Xiangqiful free? What does Premium cost?"
-    a: "Xiangqiful is free to download, and the free tier has no time limit: all 80 lessons, the skill assessment, unlimited games against the first 10 opponents, the first drill set in every module, 2 game analyses a day, 3 training puzzles a day (mate puzzles included), and 2 in-game coach hints a day. Premium opens all 40 opponents and every drill, removes the daily limits, and adds deep multi-line analysis, the skill profile, and weakness trends. It costs {P_MONTHLY} a month or {P_YEARLY} a year, each with a {TRIAL} for new subscribers, or {P_LIFETIME} once. Prices are in USD; the App Store shows your local price. There are no ads in either tier."
+    a: "Xiangqiful is free to download, and the free tier has no time limit: all 80 lessons, the skill assessment, unlimited games against the first 10 opponents, the first drill set in every module, 2 game analyses a day, 3 training puzzles a day (mate puzzles included), and 2 in-game coach hints a day. Premium opens all 40 opponents and every drill, removes the daily limits, and adds deep multi-line analysis, the skill profile, and weakness trends. It costs {P_MONTHLY} a month or {P_YEARLY} a year, each with a {TRIAL} for new subscribers, or {P_LIFETIME} once, and all three support Family Sharing. Prices are in USD; the App Store shows your local price. There are no ads in either tier."
   - q: "Where do the mate puzzles come from?"
     a: "There are 902 of them, from mate in 1 to mate in 7, and every one is a consecutive-check problem: each attacking move must give check. 708 come from eight classical manuals, with the Shiqing Yaqu supplying the most, and 194 are original compositions. Every line was re-checked by the app's own solver, and a book problem that does not really work was left out."
   - q: "What are the tips in Settings?"

@@ -12,7 +12,7 @@ app_store_url: "https://apps.apple.com/app/id6757163182"
 price:
   model: freemium
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew. Monthly, Annual, and Lifetime all support Family Sharing."
 
 plans:
   - name: "Free"

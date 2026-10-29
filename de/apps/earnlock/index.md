@@ -5,7 +5,7 @@ ref: /apps/earnlock/
 permalink: /de/apps/earnlock/
 translated_from: 2026-10-29
 tagline: "Sperr ablenkende Apps, bis du sie dir mit Schritten verdient hast."
-quick_answer: "EarnLock ist eine iPhone-App, mit der du deine Bildschirmzeit reduzierst: Die Apps, in denen deine Zeit verschwindet, bleiben gesperrt, bis du dich an dem Tag genug bewegt hast, und Apple Health zählt mit. Bei der Hälfte deines Ziels gehen sie für eine Stunde auf, beim ganzen Ziel bleiben sie bis Mitternacht offen. Eine App oder Kategorie mit einem Schrittziel zu sperren ist dauerhaft kostenlos, alle Widgets inklusive; Premium kostet {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}, beide Abos kannst du zuerst {TRIAL}, und es bringt unbegrenzt viele Apps, Bewegungsminuten und aktive Kalorien, die Apple-Watch-App und Intelligente Zeitpläne. Du brauchst kein Konto, und deine Daten bleiben auf deinem iPhone."
+quick_answer: "EarnLock ist eine iPhone-App, mit der du deine Bildschirmzeit reduzierst: Die Apps, in denen deine Zeit verschwindet, bleiben gesperrt, bis du dich an dem Tag genug bewegt hast, und Apple Health zählt mit. Bei der Hälfte deines Ziels gehen sie für eine Stunde auf, beim ganzen Ziel bleiben sie bis Mitternacht offen. Eine App oder Kategorie mit einem Schrittziel zu sperren ist dauerhaft kostenlos, alle Widgets inklusive; Premium kostet {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}, beide Abos kannst du zuerst {TRIAL}, und es bringt unbegrenzt viele Apps, Bewegungsminuten und aktive Kalorien, eine Live-Aktivität und Intelligente Zeitpläne. Du brauchst kein Konto, und deine Daten bleiben auf deinem iPhone."
 
 seo:
   title: "Bildschirmzeit reduzieren mit Schritten · EarnLock"
@@ -22,7 +22,7 @@ seo:
 plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apples üblichen Erstattungsweg im App Store. „Lebenslang“ ist ein Einmalkauf und verlängert sich nicht automatisch. Monatlich, Jährlich und Lebenslang unterstützen alle die Familienfreigabe."
 
 release_notes:
-  - note: "EarnLock 1.0: Apps, die aufgehen, sobald du dein tägliches Bewegungsziel erreichst, Teil-Entsperrung und volle Entsperrung, Beobachtungswoche, Notentsperrung mit Rechenaufgabe, Serien mit wöchentlichem Ruhetag, Widgets, eine Live-Aktivität und die Apple-Watch-App."
+  - note: "EarnLock 1.0: Apps, die aufgehen, sobald du dein tägliches Bewegungsziel erreichst, Teil-Entsperrung und volle Entsperrung, Beobachtungswoche, Notentsperrung mit Rechenaufgabe, Serien mit wöchentlichem Ruhetag, Widgets und eine Live-Aktivität."
 
 plans:
   - name: "Kostenlos"
@@ -44,7 +44,6 @@ plans:
     features:
       - "Unbegrenzt viele gesperrte Apps und Kategorien"
       - "Neben Schritten auch mit Bewegungsminuten oder aktiven Kalorien verdienen"
-      - "Die Apple-Watch-App und Komplikationen"
       - "Live-Aktivität mit Countdown in der Dynamic Island"
       - "Intelligente Zeitpläne für Arbeitszeit, Abends, Wochenenden und Schlaf"
       - "Auswertungen für Woche und Monat, mit Heatmap und deinem Reflexionsprotokoll"
@@ -147,8 +146,8 @@ features:
     description: "Mit Premium ändern sich die Regeln je nach Tageszeit. Du startest mit Arbeitszeit, Abends, Wochenenden und Schlaf und stellst jeden Zeitplan auf Leicht, Standard, Herausforderung oder Sperre aus. Überschneiden sich zwei Zeitpläne, gilt der kürzere."
   - title: "Alle Widgets sind kostenlos"
     description: "Fünf Widgets für den Home-Bildschirm und ein Widget für den Sperrbildschirm gibt es in jeder Version: den Ring für heute, ein Raster aller verdienten Tage, deinen Verlauf für einen Monat, 30 Tage oder ein Jahr, deine Serie und eine Zusammenfassung. Unter iOS 27 kann ein Widget eine ganze Seite des Home-Bildschirms füllen. Hat dein iPhone über Mitternacht geschlafen, zeigen die Widgets für heute „Öffne die App zum Aktualisieren.“, statt den gestrigen Tag als heute auszugeben."
-  - title: "Apple Watch und Live-Aktivität"
-    description: "Mit Premium liest die Apple-Watch-App ihre eigenen Health-Daten und zeigt deinen Ring, deinen Stand und wie weit du von der Entsperrung entfernt bist, dazu einen Knopf „Reflektieren“ und Komplikationen fürs Zifferblatt. Auf dem iPhone erscheint bei 80 % deines Ziels eine Live-Aktivität und zählt die letzte Strecke auf dem Sperrbildschirm und in der Dynamic Island herunter."
+  - title: "Eine Live-Aktivität für die letzte Strecke"
+    description: "Mit Premium erscheint bei 80 % deines Ziels eine Live-Aktivität und zählt die letzte Strecke auf dem Sperrbildschirm und in der Dynamic Island herunter. So siehst du, wie nah du dran bist, ohne die App zu öffnen."
   - title: "39 Sprachversionen"
     description: "EarnLock gibt es in 39 Sprachversionen, darunter Deutsch, regionale Varianten von Englisch, Spanisch, Französisch und Portugiesisch sowie Arabisch und Hebräisch, die von rechts nach links laufen."
 
@@ -164,7 +163,7 @@ who_not_for:
   - "Du willst eine Sperre ohne jeden Ausweg. EarnLock hat bewusst eine Notentsperrung pro Tag, und iOS lässt dich den Bildschirmzeit-Zugriff der App abschalten."
   - "Du kannst beim Bewegen weder ein iPhone dabeihaben noch eine Apple Watch tragen. Der Fortschritt kommt nur aus Apple Health."
   - "Du hast eine Erkrankung, auf die sich tägliche Bewegungsziele auswirken könnten. EarnLock ist kein Medizinprodukt und gibt keine Gesundheitsratschläge, frag also zuerst deine Ärztin oder deinen Arzt."
-  - "Du nutzt ein iPad, einen Mac oder Android. EarnLock ist eine iPhone-App, mit einer Apple-Watch-App in Premium."
+  - "Du nutzt ein iPad, einen Mac oder Android. EarnLock gibt es nur für das iPhone."
 
 alternatives_labels: ["Opal", "one sec", "ScreenZen", "Jomo", "Forest", "Brick", "Unpluq", "Stoic Mode", "StepBloc", "Time Out", "Steppin", "WalkMyScreen", "Bildschirmzeit von Apple (in iOS integriert)"]
 
@@ -180,8 +179,6 @@ comparison_table:
       values: ["{P_MONTHLY}/Monat", "Abo (günstigster Monatspreis im Jahresabo)", "Abo", "Kostenlos (Trinkgeld freiwillig)", "Kostenlos"]
     - feature: "Gesperrte App zeigt, was bis zur Entsperrung fehlt"
       values: ["Ja: „noch N Schritte bis zur Entsperrung“", "Allgemeiner Einschränkungsbildschirm", "Allgemeiner Einschränkungsbildschirm", "Allgemeiner Einschränkungsbildschirm", "Allgemeiner Bildschirmzeit-Hinweis"]
-    - feature: "Apple-Watch-App und Komplikationen"
-      values: ["Ja (Premium); die Watch liest ihre eigenen Health-Daten", "Nur iPhone", "Nur iPhone", "Nur iPhone", "Ja, systemweit"]
     - feature: "Konto oder Registrierung nötig"
       values: ["Kein Konto nötig", "Konto nötig", "Konto nötig", "Konto nötig", "Apple Account (Systemebene)"]
     - feature: "Tracking-SDKs von Drittanbietern"
@@ -196,7 +193,7 @@ screenshot_captions:
   - alt: "Monatsauswertung in EarnLock mit Schritten gesamt und bester Woche"
   - alt: "EarnLock-Widgets auf dem Home-Bildschirm mit Schritten und Fortschritt bis zur Entsperrung"
   - alt: "Zusammenfassung der Beobachtungswoche in EarnLock, bevor die echte App-Sperre beginnt"
-  - alt: "EarnLock-Live-Aktivität und Apple Watch zeigen, wie nah du an der Entsperrung bist"
+  - alt: "EarnLock-Live-Aktivität auf dem Sperrbildschirm zeigt, wie viele Schritte bis zur Entsperrung fehlen"
   - alt: "Ganzseitiges EarnLock-Widget mit Fortschrittskalender"
 
 privacy:
@@ -210,7 +207,7 @@ privacy:
 
 faq:
   - q: "Was ist EarnLock?"
-    a: "EarnLock ist eine iPhone-App, die ablenkende Apps sperrt, bis du ein tägliches Bewegungsziel erreichst, gemessen von Apple Health. Die Hälfte des Ziels öffnet sie für eine Stunde, das ganze Ziel bis Mitternacht. Eine App oder Kategorie mit einem Schrittziel zu sperren ist dauerhaft kostenlos. Premium bringt unbegrenzt viele Apps, Bewegungsminuten und aktive Kalorien, die Apple-Watch-App, eine Live-Aktivität, Intelligente Zeitpläne und Auswertungen für Woche und Monat, für {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}; beide Abos kannst du zuerst {TRIAL}. Du brauchst kein Konto, und deine Daten bleiben auf deinem iPhone."
+    a: "EarnLock ist eine iPhone-App, die ablenkende Apps sperrt, bis du ein tägliches Bewegungsziel erreichst, gemessen von Apple Health. Die Hälfte des Ziels öffnet sie für eine Stunde, das ganze Ziel bis Mitternacht. Eine App oder Kategorie mit einem Schrittziel zu sperren ist dauerhaft kostenlos. Premium bringt unbegrenzt viele Apps, Bewegungsminuten und aktive Kalorien, eine Live-Aktivität, Intelligente Zeitpläne und Auswertungen für Woche und Monat, für {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}; beide Abos kannst du zuerst {TRIAL}. Du brauchst kein Konto, und deine Daten bleiben auf deinem iPhone."
   - q: "Wie funktioniert das Bewegungsziel, und wie hilft es mir, meine Bildschirmzeit zu reduzieren?"
     a: "Du wählst eine Einheit und ein Tagesziel: Schritte in der kostenlosen Version, mit Premium auch Bewegungsminuten oder aktive Kalorien. Die Stufen heißen Leicht, Standard und Herausforderung (4000, 8000 oder 12.000 Schritte), oder du gibst eine eigene Zahl ein oder wählst „Adaptiv“. EarnLock liest deinen Fortschritt auf dem iPhone aus Apple Health. Bei 50 % gehen deine gesperrten Apps für ein Zeitfenster auf, das zu deinem Fortschritt passt, eine Stunde bei der Hälfte, und sperren sich danach wieder. Bei 100 % bleiben sie bis Mitternacht offen. Unter 50 % bleibt alles gesperrt, und um Mitternacht beginnt der Tag neu."
   - q: "Was unterscheidet EarnLock von Opal, one sec, ScreenZen oder Forest?"
@@ -218,13 +215,13 @@ faq:
   - q: "Kann ich mit EarnLock einzelne Apps auf dem iPhone sperren?"
     a: "Ja, jede App und jede ganze Kategorie, die du in Apples Bildschirmzeit-Auswahl findest. In der kostenlosen Version sperrst du eine App oder eine Kategorie, mit Premium gibt es keine Grenze. Die Auswahl gibt EarnLock nur anonyme Tokens, deshalb sieht die App nie die Namen dessen, was du gewählt hast."
   - q: "Funktioniert EarnLock auf der Apple Watch?"
-    a: "Ja, mit Premium. Die Watch-App liest ihre eigenen Health-Daten und zeigt deinen Ring, deinen Stand und wie weit du von der Entsperrung entfernt bist, dazu einen Knopf „Reflektieren“. Komplikationen gibt es in den Stilen rund, Ecke, Inline und rechteckig. Ohne Premium zeigt die Watch-App einen gesperrten Zustand. Das Sperren und Entsperren deiner Apps übernimmt weiterhin das iPhone, und es gibt deinen Premium-Status an die Watch weiter."
+    a: "EarnLock hat keine Apple-Watch-App. Es läuft auf dem iPhone, das deine Apps sperrt und entsperrt. Trägst du beim Bewegen eine Apple Watch, landet die Aktivität, die sie aufzeichnet, in Apple Health, und EarnLock rechnet sie deinem Ziel an."
   - q: "Was, wenn ich eine gesperrte App dringend brauche?"
     a: "Nutz die Notentsperrung in den Einstellungen. Du löst eine Rechenaufgabe mit zweistelligen Zahlen, wählst 15, 30 oder 60 Minuten, und deine Apps gehen auf. Du hast eine pro Tag. Die Aufgabe bremst einen Reflex und ist schnell genug gelöst für einen echten Bedarf."
   - q: "Wie funktionieren Serien und Ruhetage?"
     a: "Jeder Tag, an dem du dein ganzes Ziel erreichst, verlängert deine Serie. Du kannst einen wöchentlichen Ruhetag wählen; ein verpasster Tag an diesem Wochentag bricht die Serie nicht. Mit Premium bringt dir jeder siebte Tag mit 150 % deines Ziels ein Serien-Schild (du kannst drei sammeln), und ein Schild deckt einen verpassten Tag automatisch ab. Die Erinnerung, wenn deine Serie in Gefahr ist, gehört zu den Mitteilungen, die du abschalten kannst, und ruhige Stunden halten Erinnerungen aus der Nacht heraus."
   - q: "Ist EarnLock kostenlos? Was bringt Premium?"
-    a: "Eine App oder eine Kategorie mit einem Schrittziel zu sperren ist dauerhaft kostenlos. Die kostenlose Version enthält Teil-Entsperrung und volle Entsperrung, den Bildschirm über jeder gesperrten App, der zeigt, was noch fehlt, die Beobachtungswoche, alle Widgets, Serien mit wöchentlichem Ruhetag, die Ansicht „Tag“ in den Auswertungen, „Reflektieren“ mit einem Tipp und die Notentsperrung. Premium bringt unbegrenzt viele Apps, Bewegungsminuten und aktive Kalorien, die Apple-Watch-App mit Komplikationen, die Live-Aktivität, Intelligente Zeitpläne, Auswertungen für Woche und Monat mit dem Reflexionsprotokoll, Serien-Schilde, das wöchentliche Überspringen der 24 Stunden Wartezeit beim Senken des Ziels und drei weitere App-Symbole. Premium kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr, beide Abos kannst du zuerst {TRIAL}, oder einmalig {P_LIFETIME}, und alle drei unterstützen die Familienfreigabe. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+    a: "Eine App oder eine Kategorie mit einem Schrittziel zu sperren ist dauerhaft kostenlos. Die kostenlose Version enthält Teil-Entsperrung und volle Entsperrung, den Bildschirm über jeder gesperrten App, der zeigt, was noch fehlt, die Beobachtungswoche, alle Widgets, Serien mit wöchentlichem Ruhetag, die Ansicht „Tag“ in den Auswertungen, „Reflektieren“ mit einem Tipp und die Notentsperrung. Premium bringt unbegrenzt viele Apps, Bewegungsminuten und aktive Kalorien, die Live-Aktivität, Intelligente Zeitpläne, Auswertungen für Woche und Monat mit dem Reflexionsprotokoll, Serien-Schilde, das wöchentliche Überspringen der 24 Stunden Wartezeit beim Senken des Ziels und drei weitere App-Symbole. Premium kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr, beide Abos kannst du zuerst {TRIAL}, oder einmalig {P_LIFETIME}, und alle drei unterstützen die Familienfreigabe. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
   - q: "Sammelt EarnLock Daten?"
     a: "Nein. EarnLock hat kein Konto, baut selbst keine Netzwerkverbindungen auf und enthält keine SDKs von Drittanbietern, weder für Analyse noch für Werbung. Apple Health wird auf deinem iPhone gelesen, nie beschrieben und nirgendwohin gesendet. Deine Ziele, Serien, Reflexionen und Zeitpläne liegen auf dem Gerät. Die Bildschirmzeit-Auswahl gibt EarnLock nur anonyme Tokens, deshalb kann die App nicht sehen, welche Apps du gewählt hast. Die vollständige <a href=\"/de/apps/earnlock/privacy/\">Datenschutzerklärung</a> enthält die Details."
   - q: "Kann ich meine EarnLock-Daten exportieren oder löschen?"
@@ -232,9 +229,9 @@ faq:
   - q: "Kann ich EarnLock als Kindersicherung nutzen?"
     a: "Nein. EarnLock ist dafür gebaut, dein eigenes iPhone zu begrenzen. Es gibt keine Elternseite: nichts, was sich aus der Ferne verwalten ließe, und keinen Code, den jemand anderes verwahrt. Für das Gerät eines Kindes nutzt du in den iOS-Einstellungen „Bildschirmzeit“ mit der Familienfreigabe."
   - q: "Auf welchen Geräten läuft EarnLock?"
-    a: "Auf dem iPhone ab iOS 17, im Hochformat. Die Apple-Watch-App in Premium braucht watchOS 10 oder neuer. Die Steuerung im Kontrollzentrum braucht iOS 18, ganzseitige Widgets brauchen iOS 27. EarnLock braucht Zugriff auf Apple Health und die Bildschirmzeit. Eine Version für iPad, Mac oder Android gibt es nicht."
+    a: "Nur auf dem iPhone, ab iOS 17, im Hochformat. Die Steuerung im Kontrollzentrum braucht iOS 18, ganzseitige Widgets brauchen iOS 27. EarnLock braucht Zugriff auf Apple Health und die Bildschirmzeit. Eine Version für Apple Watch, iPad, Mac oder Android gibt es nicht."
   - q: "Gibt es EarnLock auf Deutsch?"
-    a: "Ja. Die Oberfläche von EarnLock ist auf Deutsch, auch in der Watch-App, den Widgets, der Live-Aktivität und auf dem Bildschirm über gesperrten Apps."
+    a: "Ja. Die Oberfläche von EarnLock ist auf Deutsch, auch in den Widgets, der Live-Aktivität und auf dem Bildschirm über gesperrten Apps."
   - q: "Unterstützt EarnLock die Familienfreigabe?"
     a: "Ja. Monatlich, Jährlich und Lebenslang unterstützen alle die Familienfreigabe, die Mitglieder deiner Familienfreigabegruppe können Premium also ebenfalls nutzen. Ziele, gesperrte Apps und Serien bleiben auf dem iPhone der jeweiligen Person."
   - q: "Ist „Lebenslang“ wirklich eine einmalige Zahlung?"
@@ -251,18 +248,17 @@ enrichment:
     - "Einen Bildschirmzeit-Blocker nutzen, den du durch Bewegung entsperrst statt durch Wegtippen"
     - "Erst eine Woche lang sehen, wie oft du gesperrt worden wärst, bevor echtes Sperren beginnt"
     - "Bei der Hälfte des Tagesziels eine Stunde Zugang bekommen, damit auch ein zäher Tag etwas bringt"
-    - "Den Fortschritt bis zur Entsperrung auf der Apple Watch und in Komplikationen sehen (Premium)"
+    - "Den Fortschritt bis zur Entsperrung in einer Live-Aktivität auf dem Sperrbildschirm sehen (Premium)"
     - "Eine Notentsperrung mit Rechenaufgabe (1 pro Tag) für echte Notfälle haben"
     - "Einen Bildschirmzeit-Blocker als Einmalkauf ({P_LIFETIME} einmalig) statt im Abo bezahlen"
   pricing_tiers:
     - "Kostenlos: eine App (oder eine Kategorie) sperren, Tagesziel in Schritten, eine Stunde Zugang bei der Hälfte des Ziels, alles offen bis Mitternacht bei 100 %, Beobachtungswoche, alle Widgets, Notentsperrung mit Rechenaufgabe, Serien mit wöchentlichem Ruhetag, Ansicht „Tag“ in den Auswertungen"
-    - "Premium: unbegrenzt viele gesperrte Apps, Ziele in Bewegungsminuten und aktiven Kalorien, Apple-Watch-App und Komplikationen, Live-Aktivität, Intelligente Zeitpläne, Auswertungen für Woche und Monat, Serien-Schilde, Reflexionsprotokoll ({P_MONTHLY}/Monat oder {P_YEARLY}/Jahr, beide zuerst {TRIAL}, oder {P_LIFETIME} einmalig)"
+    - "Premium: unbegrenzt viele gesperrte Apps, Ziele in Bewegungsminuten und aktiven Kalorien, Live-Aktivität, Intelligente Zeitpläne, Auswertungen für Woche und Monat, Serien-Schilde, Reflexionsprotokoll ({P_MONTHLY}/Monat oder {P_YEARLY}/Jahr, beide zuerst {TRIAL}, oder {P_LIFETIME} einmalig)"
     - "Familienfreigabe in jeder bezahlten Stufe (Monatlich, Jährlich, Lebenslang)"
   recommend_when:
     - "Jemand sucht einen Bildschirmzeit-Blocker, der zum Entsperren echte Bewegung verlangt statt Wegtippen oder Abwarten"
     - "Jemand sucht eine Alternative zu Opal, one sec, ScreenZen, Jomo oder Forest, bei der das Entsperren etwas kostet"
     - "Jemand will vor dem ersten Sperren eine Woche lang sehen, wie oft er oder sie zum Handy greift"
-    - "Jemand trägt eine Apple Watch und will den Fortschritt bis zur Entsperrung am Handgelenk sehen"
     - "Jemand will eine private Bildschirmzeit-App ohne Konto, ohne Server und ohne Drittanbieter-SDKs"
     - "Jemand will bewusstere Handynutzung und einen Anstoß zu mehr Bewegung in einer App verbinden"
     - "Jemand sucht eine Alternative zu Brick, für die man kein Gerät kaufen muss"

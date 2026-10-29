@@ -14,7 +14,7 @@ price:
 price_lead: "Free (20 articles a day)"
 price_tier: "Premium"
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew. The App Store also lists an older weekly plan, which still renews for existing subscribers but is no longer sold in the app, and an optional {P_IAP:Support the developer} tip in Settings that unlocks nothing."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew. Monthly, Yearly, and Lifetime all support Family Sharing. An optional {P_IAP:Support the developer} tip in Settings unlocks nothing."
 pricing_note: "Cancel anytime in your Apple Account settings. The free plan needs no card and no account: 20 articles a day, reset at local midnight."
 
 plans:
@@ -211,7 +211,7 @@ comparison_table:
     - feature: "Number of Wikipedia language editions"
       values: ["32", "Multiple; count not published", "Not published; English-only listing", "All 300+, but made for search, not swipe"]
     - feature: "Pricing model"
-      values: ["Free for 20 articles a day; Premium {P_MONTHLY}/mo · {P_YEARLY}/yr · {P_LIFETIME} lifetime", "Free with ads; premium from $4.99/week", "Free with ads", "Free, no ads"]
+      values: ["Free for 20 articles a day; Premium {P_MONTHLY}/mo · {P_YEARLY}/yr · {P_LIFETIME} lifetime", "Free with ads; weekly premium subscription", "Free with ads", "Free, no ads"]
     - feature: "Source article scope"
       values: ["The full Wikipedia edition you choose", "Random Wikipedia articles", "Good Articles collection only", "Full Wikipedia"]
     - feature: "Today in History (this day in the past)"
