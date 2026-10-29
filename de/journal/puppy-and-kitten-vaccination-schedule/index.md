@@ -109,7 +109,7 @@ Ein Impfnachweis klärt Fragen, die das Gedächtnis nicht beantworten kann. Halt
 4. **Die Chargennummer,** die genau das Fläschchen bestimmt, falls je eine Reaktion gemeldet werden muss. Die WSAVA ermutigt Tierärztinnen und Tierärzte, jede mögliche Nebenwirkung an Hersteller und Behörde zu melden.
 5. **Praxis und Tierärztin oder Tierarzt,** die geimpft haben.
 
-Heb die Nachweise selbst auf, nicht nur Notizen dazu, vor allem bei Tollwut. Tierpensionen und Hundefriseure wollen meist einen Impfnachweis sehen, manche verlangen, dass die Impfung eine bestimmte Zahl von Tagen vor der Ankunft liegt. Wer wonach fragt, steht im Artikel [was in die Gesundheitsakte eines Haustiers gehört](/journal/pet-medical-records-what-to-keep/){: hreflang="en"} (auf Englisch).
+Heb die Nachweise selbst auf, nicht nur Notizen dazu, vor allem bei Tollwut. Tierpensionen und Hundefriseure wollen meist einen Impfnachweis sehen, manche verlangen, dass die Impfung eine bestimmte Zahl von Tagen vor der Ankunft liegt. Wer wonach fragt, steht im Artikel [was in die Gesundheitsakte eines Haustiers gehört](/de/journal/pet-medical-records-what-to-keep/).
 
 ## Wo Pawza dazu passt
 

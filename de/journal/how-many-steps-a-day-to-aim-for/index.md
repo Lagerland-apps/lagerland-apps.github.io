@@ -95,7 +95,7 @@ Diese Minuten überschätzen den Aufwand, denn die Tagessumme zählt jeden Schri
 3. **Erhöh es, wenn es leicht wird.** Nach ein paar Wochen, in denen du es schaffst, kostet der nächste Schritt wenig; wer zu hoch anfängt, gibt meist auf.
 4. **Plan für die Tage, die anders sind.** Ein Bürotag und ein Samstag bringen selten dieselbe Zahl, deshalb kann es sinnvoll sein, ihnen verschiedene Ziele zu geben.
 
-Als tägliche Gesundheitskennzahl taugt die Schrittzahl wenig; sie schwankt damit, wo dein Handy lag und was für ein Tag es war ([mehr dazu](/journal/apple-health-metrics-worth-interpreting/){: hreflang="en"}, auf Englisch). Als Ziel funktioniert sie besser, denn eine Tagessumme ist genau das, was diese Studien gemessen haben.
+Als tägliche Gesundheitskennzahl taugt die Schrittzahl wenig; sie schwankt damit, wo dein Handy lag und was für ein Tag es war ([mehr dazu](/de/journal/apple-health-metrics-worth-interpreting/)). Als Ziel funktioniert sie besser, denn eine Tagessumme ist genau das, was diese Studien gemessen haben.
 
 ## Wie EarnLock die Zahl nutzt
 

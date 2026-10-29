@@ -89,7 +89,7 @@ Für die Praxis heißt das: Pausiere lang genug, dass der nächste Satz nicht zu
 
 ## Solltest du deine Pausen überhaupt stoppen?
 
-Ich finde schon, auch wenn der Grund wenig mit Physiologie zu tun hat. Jede Progressionsregel, die sich nach Wiederholungen richtet, setzt voraus, dass die Wiederholungen von Einheit zu Einheit vergleichbar sind. Lagen am Dienstag zwei Minuten zwischen den Sätzen und am Freitag vier, weil du am Handy warst, messen die Wiederholungszahlen in deinem Trainingstagebuch die Pause genauso wie das Heben. Am meisten zählt das bei der [doppelten Progression](/journal/double-progression-explained/){: hreflang="en"} (auf Englisch), bei der das Gewicht erst steigt, wenn jeder Satz das obere Ende des Wiederholungsbereichs erreicht.
+Ich finde schon, auch wenn der Grund wenig mit Physiologie zu tun hat. Jede Progressionsregel, die sich nach Wiederholungen richtet, setzt voraus, dass die Wiederholungen von Einheit zu Einheit vergleichbar sind. Lagen am Dienstag zwei Minuten zwischen den Sätzen und am Freitag vier, weil du am Handy warst, messen die Wiederholungszahlen in deinem Trainingstagebuch die Pause genauso wie das Heben. Am meisten zählt das bei der [doppelten Progression](/de/journal/double-progression-explained/), bei der das Gewicht erst steigt, wenn jeder Satz das obere Ende des Wiederholungsbereichs erreicht.
 
 Ein Timer hält diese Größe konstant, und er verhindert, dass die Pause an eiligen Tagen in die andere Richtung schrumpft.
 

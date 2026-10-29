@@ -109,4 +109,4 @@ Daraus folgen ein paar praktische Regeln:
 - **Im Winter liegt die HRV niedriger als im Sommer.** Saisonale Drift ist normal, und sie für eine Krankheit zu halten, ist der häufige Fehler.
 - **Lies die SDNN als Abweichung von deiner eigenen Basislinie.** Die HRV ist ungefähr log-normalverteilt; vergleiche jeden Tag prozentual mit deinem persönlichen Mittelwert statt mit festen Grenzen in Millisekunden.
 
-Die Zahl stand schon immer in deiner App „Health“. Gefehlt hat eine Basislinie, an der du sie messen kannst.
+Die Zahl stand schon immer in deiner App „Health“. Gefehlt hat eine Basislinie, an der du sie messen kannst. Warum wir Observa deshalb ums Deuten statt ums Messen gebaut haben, steht in [Apple-Health-Daten verstehen](/de/journal/your-apple-health-data-doesnt-mean-what-you-think/).

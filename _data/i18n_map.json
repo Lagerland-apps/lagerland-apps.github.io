@@ -27,6 +27,22 @@
     "de": "/de/alternatives/brick/",
     "en": "/alternatives/brick/"
   },
+  "/alternatives/caliber/": {
+    "de": "/de/alternatives/caliber/",
+    "en": "/alternatives/caliber/"
+  },
+  "/alternatives/cloudconvert/": {
+    "de": "/de/alternatives/cloudconvert/",
+    "en": "/alternatives/cloudconvert/"
+  },
+  "/alternatives/compress-videos-resize-video/": {
+    "de": "/de/alternatives/compress-videos-resize-video/",
+    "en": "/alternatives/compress-videos-resize-video/"
+  },
+  "/alternatives/convertio/": {
+    "de": "/de/alternatives/convertio/",
+    "en": "/alternatives/convertio/"
+  },
   "/alternatives/countdown-star/": {
     "de": "/de/alternatives/countdown-star/",
     "en": "/alternatives/countdown-star/"
@@ -39,9 +55,33 @@
     "de": "/de/alternatives/forest/",
     "en": "/alternatives/forest/"
   },
+  "/alternatives/habitica/": {
+    "de": "/de/alternatives/habitica/",
+    "en": "/alternatives/habitica/"
+  },
+  "/alternatives/habitnow/": {
+    "de": "/de/alternatives/habitnow/",
+    "en": "/alternatives/habitnow/"
+  },
   "/alternatives/hevy/": {
     "de": "/de/alternatives/hevy/",
     "en": "/alternatives/hevy/"
+  },
+  "/alternatives/image-size/": {
+    "de": "/de/alternatives/image-size/",
+    "en": "/alternatives/image-size/"
+  },
+  "/alternatives/jomo/": {
+    "de": "/de/alternatives/jomo/",
+    "en": "/alternatives/jomo/"
+  },
+  "/alternatives/ladder/": {
+    "de": "/de/alternatives/ladder/",
+    "en": "/alternatives/ladder/"
+  },
+  "/alternatives/lichess/": {
+    "de": "/de/alternatives/lichess/",
+    "en": "/alternatives/lichess/"
   },
   "/alternatives/one-sec/": {
     "de": "/de/alternatives/one-sec/",
@@ -55,13 +95,25 @@
     "de": "/de/alternatives/oura/",
     "en": "/alternatives/oura/"
   },
+  "/alternatives/productive/": {
+    "de": "/de/alternatives/productive/",
+    "en": "/alternatives/productive/"
+  },
   "/alternatives/screenzen/": {
     "de": "/de/alternatives/screenzen/",
     "en": "/alternatives/screenzen/"
   },
+  "/alternatives/settle-up/": {
+    "de": "/de/alternatives/settle-up/",
+    "en": "/alternatives/settle-up/"
+  },
   "/alternatives/splitwise/": {
     "de": "/de/alternatives/splitwise/",
     "en": "/alternatives/splitwise/"
+  },
+  "/alternatives/streaks-app/": {
+    "de": "/de/alternatives/streaks-app/",
+    "en": "/alternatives/streaks-app/"
   },
   "/alternatives/strong-workout-app/": {
     "de": "/de/alternatives/strong-workout-app/",
@@ -71,6 +123,14 @@
     "de": "/de/alternatives/tricount/",
     "en": "/alternatives/tricount/"
   },
+  "/alternatives/unpluq/": {
+    "de": "/de/alternatives/unpluq/",
+    "en": "/alternatives/unpluq/"
+  },
+  "/alternatives/way-of-life/": {
+    "de": "/de/alternatives/way-of-life/",
+    "en": "/alternatives/way-of-life/"
+  },
   "/alternatives/welltory/": {
     "de": "/de/alternatives/welltory/",
     "en": "/alternatives/welltory/"
@@ -78,6 +138,10 @@
   "/alternatives/whoop/": {
     "de": "/de/alternatives/whoop/",
     "en": "/alternatives/whoop/"
+  },
+  "/alternatives/wikipedia-app/": {
+    "de": "/de/alternatives/wikipedia-app/",
+    "en": "/alternatives/wikipedia-app/"
   },
   "/apps/": {
     "de": "/de/apps/",
@@ -327,6 +391,14 @@
     "de": "/de/for/",
     "en": "/for/"
   },
+  "/for/apple-health-power-users/": {
+    "de": "/de/for/apple-health-power-users/",
+    "en": "/for/apple-health-power-users/"
+  },
+  "/for/calm-productivity/": {
+    "de": "/de/for/calm-productivity/",
+    "en": "/for/calm-productivity/"
+  },
   "/for/shift-workers/": {
     "de": "/de/for/shift-workers/",
     "en": "/for/shift-workers/"
@@ -343,6 +415,18 @@
     "de": "/de/guides/best-logic-puzzle-games-iphone/",
     "en": "/guides/best-logic-puzzle-games-iphone/"
   },
+  "/guides/best-shogi-apps-iphone/": {
+    "de": "/de/guides/best-shogi-apps-iphone/",
+    "en": "/guides/best-shogi-apps-iphone/"
+  },
+  "/guides/best-xiangqi-apps-iphone/": {
+    "de": "/de/guides/best-xiangqi-apps-iphone/",
+    "en": "/guides/best-xiangqi-apps-iphone/"
+  },
+  "/guides/bill-tracker-without-bank-connection/": {
+    "de": "/de/guides/bill-tracker-without-bank-connection/",
+    "en": "/guides/bill-tracker-without-bank-connection/"
+  },
   "/guides/workout-app-without-subscription/": {
     "de": "/de/guides/workout-app-without-subscription/",
     "en": "/guides/workout-app-without-subscription/"
@@ -351,9 +435,17 @@
     "de": "/de/journal/",
     "en": "/journal/"
   },
+  "/journal/apple-health-metrics-worth-interpreting/": {
+    "de": "/de/journal/apple-health-metrics-worth-interpreting/",
+    "en": "/journal/apple-health-metrics-worth-interpreting/"
+  },
   "/journal/apple-watch-hrv-without-a-baseline/": {
     "de": "/de/journal/apple-watch-hrv-without-a-baseline/",
     "en": "/journal/apple-watch-hrv-without-a-baseline/"
+  },
+  "/journal/bill-splitting-math-tax-tip-shared-plates/": {
+    "de": "/de/journal/bill-splitting-math-tax-tip-shared-plates/",
+    "en": "/journal/bill-splitting-math-tax-tip-shared-plates/"
   },
   "/journal/choosing-a-strength-program-you-will-finish/": {
     "de": "/de/journal/choosing-a-strength-program-you-will-finish/",
@@ -362,6 +454,14 @@
   "/journal/compress-a-video-for-email/": {
     "de": "/de/journal/compress-a-video-for-email/",
     "en": "/journal/compress-a-video-for-email/"
+  },
+  "/journal/countdown-psychology-why-anticipation-beats-reminders/": {
+    "de": "/de/journal/countdown-psychology-why-anticipation-beats-reminders/",
+    "en": "/journal/countdown-psychology-why-anticipation-beats-reminders/"
+  },
+  "/journal/double-progression-explained/": {
+    "de": "/de/journal/double-progression-explained/",
+    "en": "/journal/double-progression-explained/"
   },
   "/journal/find-every-recurring-charge/": {
     "de": "/de/journal/find-every-recurring-charge/",
@@ -379,17 +479,57 @@
     "de": "/de/journal/how-much-to-tip-in-the-us/",
     "en": "/journal/how-much-to-tip-in-the-us/"
   },
+  "/journal/how-plan-mode-builds-a-checklist/": {
+    "de": "/de/journal/how-plan-mode-builds-a-checklist/",
+    "en": "/journal/how-plan-mode-builds-a-checklist/"
+  },
   "/journal/how-to-estimate-your-one-rep-max/": {
     "de": "/de/journal/how-to-estimate-your-one-rep-max/",
     "en": "/journal/how-to-estimate-your-one-rep-max/"
+  },
+  "/journal/how-to-find-interesting-wikipedia-articles/": {
+    "de": "/de/journal/how-to-find-interesting-wikipedia-articles/",
+    "en": "/journal/how-to-find-interesting-wikipedia-articles/"
+  },
+  "/journal/how-to-organize-bills-each-month/": {
+    "de": "/de/journal/how-to-organize-bills-each-month/",
+    "en": "/journal/how-to-organize-bills-each-month/"
   },
   "/journal/how-to-sleep-after-a-night-shift/": {
     "de": "/de/journal/how-to-sleep-after-a-night-shift/",
     "en": "/journal/how-to-sleep-after-a-night-shift/"
   },
+  "/journal/how-to-sleep-on-call/": {
+    "de": "/de/journal/how-to-sleep-on-call/",
+    "en": "/journal/how-to-sleep-on-call/"
+  },
+  "/journal/i-will-not-ask-for-your-bank-login/": {
+    "de": "/de/journal/i-will-not-ask-for-your-bank-login/",
+    "en": "/journal/i-will-not-ask-for-your-bank-login/"
+  },
+  "/journal/making-shogi-readable-without-kanji/": {
+    "de": "/de/journal/making-shogi-readable-without-kanji/",
+    "en": "/journal/making-shogi-readable-without-kanji/"
+  },
+  "/journal/pet-medical-records-what-to-keep/": {
+    "de": "/de/journal/pet-medical-records-what-to-keep/",
+    "en": "/journal/pet-medical-records-what-to-keep/"
+  },
   "/journal/puppy-and-kitten-vaccination-schedule/": {
     "de": "/de/journal/puppy-and-kitten-vaccination-schedule/",
     "en": "/journal/puppy-and-kitten-vaccination-schedule/"
+  },
+  "/journal/puzzle-game-no-ads-one-purchase/": {
+    "de": "/de/journal/puzzle-game-no-ads-one-purchase/",
+    "en": "/journal/puzzle-game-no-ads-one-purchase/"
+  },
+  "/journal/puzzle-games-without-ads-or-lives/": {
+    "de": "/de/journal/puzzle-games-without-ads-or-lives/",
+    "en": "/journal/puzzle-games-without-ads-or-lives/"
+  },
+  "/journal/resolutions-and-the-fitness-app-trap/": {
+    "de": "/de/journal/resolutions-and-the-fitness-app-trap/",
+    "en": "/journal/resolutions-and-the-fitness-app-trap/"
   },
   "/journal/rotating-shift-schedules-explained/": {
     "de": "/de/journal/rotating-shift-schedules-explained/",
@@ -399,13 +539,33 @@
     "de": "/de/journal/rpe-and-rir-explained/",
     "en": "/journal/rpe-and-rir-explained/"
   },
+  "/journal/shogi-openings-for-beginners/": {
+    "de": "/de/journal/shogi-openings-for-beginners/",
+    "en": "/journal/shogi-openings-for-beginners/"
+  },
+  "/journal/what-14-days-of-apple-health-can-reveal/": {
+    "de": "/de/journal/what-14-days-of-apple-health-can-reveal/",
+    "en": "/journal/what-14-days-of-apple-health-can-reveal/"
+  },
+  "/journal/what-an-iphone-app-can-actually-block/": {
+    "de": "/de/journal/what-an-iphone-app-can-actually-block/",
+    "en": "/journal/what-an-iphone-app-can-actually-block/"
+  },
   "/journal/when-to-deload/": {
     "de": "/de/journal/when-to-deload/",
     "en": "/journal/when-to-deload/"
   },
+  "/journal/xiangqi-openings-explained/": {
+    "de": "/de/journal/xiangqi-openings-explained/",
+    "en": "/journal/xiangqi-openings-explained/"
+  },
   "/journal/xiangqi-rules-for-chess-players/": {
     "de": "/de/journal/xiangqi-rules-for-chess-players/",
     "en": "/journal/xiangqi-rules-for-chess-players/"
+  },
+  "/journal/your-apple-health-data-doesnt-mean-what-you-think/": {
+    "de": "/de/journal/your-apple-health-data-doesnt-mean-what-you-think/",
+    "en": "/journal/your-apple-health-data-doesnt-mean-what-you-think/"
   },
   "/lagerland-apps/": {
     "de": "/de/lagerland-apps/",

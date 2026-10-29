@@ -13,6 +13,8 @@ reviewing any German page. Every decision a translator would otherwise make diff
 | Live | yes, `live: true` since 2026-10-27 (Tier 1) |
 | Tiers 2 to 4, batch 1 | written and integrated 2026-10-29, no native review yet: hubs /de/guides/, /de/for/, /de/alternatives/, /de/journal/; guides best-chess-apps-iphone, workout-app-without-subscription; for/shift-workers; comparisons splitwise, tricount, strong-workout-app, hevy, one-sec, opal, oura, whoop; journal how-to-sleep-after-a-night-shift, how-many-steps-a-day-to-aim-for, how-long-to-rest-between-sets, find-every-recurring-charge. Research: ~/Downloads/githubcode/de-tier2-4-research-2026-10-29.md (next batch listed there, section 4); writer notes de-batch1-DG1 to DG4-2026-10-29.md |
 | Tiers 2 to 4, batch 2 | written and integrated 2026-10-29, no native review yet: guide best-logic-puzzle-games-iphone; comparisons alpha-progression, athlytic, autosleep, bevel, brick, countdown-star, fitbod, forest, screenzen, welltory, plus the local-only /de/alternatives/finanzguru-alternative/ (AllPaid; `local_only: true`, no ref, no hreflang); journal apple-watch-hrv-without-a-baseline, choosing-a-strength-program-you-will-finish, compress-a-video-for-email, how-much-to-tip-in-the-us, how-to-estimate-your-one-rep-max, puppy-and-kitten-vaccination-schedule, rotating-shift-schedules-explained, rpe-and-rir-explained, when-to-deload, xiangqi-rules-for-chess-players. Not translated (research: skip): dragonbox-algebra, pawprint (German pages link the English ones with the marker). Writer notes de-batch2-DG5 to DG9-2026-10-29.md |
+| Tiers 2 to 4, batch 3 | written and integrated 2026-10-29, no native review yet: guides best-shogi-apps-iphone, best-xiangqi-apps-iphone, bill-tracker-without-bank-connection; for/apple-health-power-users, for/calm-productivity; comparisons caliber, compress-videos-resize-video, convertio, cloudconvert, habitica, habitnow, image-size, jomo, ladder, lichess, productive, settle-up, streaks-app, unpluq, way-of-life, wikipedia-app. Writer notes de-batch3-DG10 to DG14-2026-10-29.md |
+| Tiers 2 to 4, batch 4 | written and integrated 2026-10-29, no native review yet: 19 journal posts (apple-health-metrics-worth-interpreting, what-14-days-of-apple-health-can-reveal, your-apple-health-data-doesnt-mean-what-you-think, how-to-sleep-on-call, double-progression-explained, resolutions-and-the-fitness-app-trap, bill-splitting-math-tax-tip-shared-plates, how-to-organize-bills-each-month, i-will-not-ask-for-your-bank-login, pet-medical-records-what-to-keep, what-an-iphone-app-can-actually-block, making-shogi-readable-without-kanji, shogi-openings-for-beginners, xiangqi-openings-explained, puzzle-games-without-ads-or-lives, puzzle-game-no-ads-one-purchase, countdown-psychology-why-anticipation-beats-reminders, how-plan-mode-builds-a-checklist, how-to-find-interesting-wikipedia-articles). The related_journal cards of AllPaid, EarnLock, Observa, Pawza, RightSplit, Shogiful and Soon. now open the German posts. Writer notes de-batch4-DG15 to DG18-2026-10-29.md |
 | Native review | none yet (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 14 s with the setup in place (9.9 s before Phase 0) |
 
@@ -185,6 +187,46 @@ their children's queries.
 | /de/journal/rpe-and-rir-explained/ | `rpe skala` | `rpe skala krafttraining`, `rir krafttraining bedeutung` |
 | /de/journal/when-to-deload/ | `deload woche` | `deload woche sinnvoll`, `deload woche wie oft` |
 | /de/journal/xiangqi-rules-for-chess-players/ | `chinesisches schach regeln` | `xiangqi regeln`, `xiangqi für schachspieler` |
+| /de/guides/best-shogi-apps-iphone/ | `shogi app` | `shogi lernen app`, `japanisches schach`, `shogi app kostenlos` |
+| /de/guides/best-xiangqi-apps-iphone/ | `chinesisches schach app` | `xiangqi app`, `chinesisches schach lernen` |
+| /de/guides/bill-tracker-without-bank-connection/ | `haushaltsbuch app ohne bankverbindung` | `fixkosten app`, `budget app ohne bankverbindung` |
+| /de/for/apple-health-power-users/ | `apple health daten auswerten` | `apple health auswertung app`, `hrv apple watch werte` |
+| /de/for/calm-productivity/ | `tagesplaner app` (angle „ohne Streak-Druck“; shares the primary with Taskful Day) | `gewohnheiten app` |
+| /de/alternatives/caliber/ | `caliber alternative` | `caliber app deutsch` |
+| /de/alternatives/ladder/ | `ladder app alternative` | `ladder app kosten` |
+| /de/alternatives/jomo/ | `jomo alternative` | |
+| /de/alternatives/unpluq/ | `unpluq alternative` | `unpluq alternative ohne tag` |
+| /de/alternatives/settle-up/ | `settle up app alternative` | `settle up alternative` |
+| /de/alternatives/habitica/ | `habitica alternative` | `habitica app deutsch` |
+| /de/alternatives/habitnow/ | `habitnow iphone` | `habitnow ios`, `habitnow alternative` |
+| /de/alternatives/productive/ | `productive app alternative` | `productive app kosten` |
+| /de/alternatives/streaks-app/ | `streaks app alternative` | `streaks alternative`, `tagesplaner app adhs` |
+| /de/alternatives/way-of-life/ | `way of life app alternative` | `way of life app kosten` |
+| /de/alternatives/lichess/ | `schach app lichess` | `lichess app`, `lichess alternative` |
+| /de/alternatives/wikipedia-app/ | `wikipedia alternative app` | |
+| /de/alternatives/compress-videos-resize-video/ | `video komprimieren iphone` (shares the primary with MediaKit) | |
+| /de/alternatives/image-size/ | `bilder verkleinern iphone` | |
+| /de/alternatives/cloudconvert/ | `cloudconvert alternative` | |
+| /de/alternatives/convertio/ | `convertio alternative` | |
+| /de/journal/apple-health-metrics-worth-interpreting/ | `apple health daten auswerten` (shared with /de/for/apple-health-power-users/) | `apple health werte erklärt`, `welche apple health werte sind wichtig` |
+| /de/journal/what-14-days-of-apple-health-can-reveal/ | `apple health daten` (not researched) | `wie viele tage daten hrv` |
+| /de/journal/your-apple-health-data-doesnt-mean-what-you-think/ | `apple health daten verstehen` (not researched) | `hrv deuten` |
+| /de/journal/how-to-sleep-on-call/ | `bereitschaftsdienst schlafen` | `rufbereitschaft schlafen` |
+| /de/journal/double-progression-explained/ | `doppelte progression` | `progression krafttraining` |
+| /de/journal/resolutions-and-the-fitness-app-trap/ | `gute vorsätze fitness` (thin) | `fitness app schlechtes gewissen` |
+| /de/journal/bill-splitting-math-tax-tip-shared-plates/ | `rechnung aufteilen restaurant` (not researched) | `rechnung teilen trinkgeld` |
+| /de/journal/how-to-organize-bills-each-month/ | `rechnungen organisieren` (thin) | `fixkosten planen`, `fixkosten übersicht monat` |
+| /de/journal/i-will-not-ask-for-your-bank-login/ | `fixkosten app ohne bankverbindung` (opinion post) | `app ohne bankzugang` |
+| /de/journal/pet-medical-records-what-to-keep/ | `impfpass hund` | `eu heimtierausweis hund`, `tierarztunterlagen aufbewahren` |
+| /de/journal/what-an-iphone-app-can-actually-block/ | `apps sperren iphone` | `app blocker iphone`, `einzelne apps sperren iphone` |
+| /de/journal/making-shogi-readable-without-kanji/ | `shogi figuren namen deutsch` | `shogi steine bedeutung` |
+| /de/journal/shogi-openings-for-beginners/ | `shogi eröffnungen` (exists only) | `statischer turm beweglicher turm` |
+| /de/journal/xiangqi-openings-explained/ | `xiangqi eröffnung` (exists only) | `chinesisches schach eröffnung` |
+| /de/journal/puzzle-games-without-ads-or-lives/ | `puzzle spiele ohne werbung` | `spiele ohne werbung und kostenlos ios` |
+| /de/journal/puzzle-game-no-ads-one-purchase/ | `spiele ohne werbung iphone` | `puzzle spiel ohne abo` |
+| /de/journal/countdown-psychology-why-anticipation-beats-reminders/ | `vorfreude psychologie` (thin) | `psychologie der vorfreude` |
+| /de/journal/how-plan-mode-builds-a-checklist/ | `hochzeit checkliste app` | `hochzeit checkliste planung` |
+| /de/journal/how-to-find-interesting-wikipedia-articles/ | `wikipedia zufälliger artikel` (shared with WanderWiki) | `interessante wikipedia artikel` |
 
 Wording rules from the research: privacy is said as „ohne Tracking“, „ohne Werbung“, „ohne Anmeldung“ (the
 English "privacy" is not searched); „Trainingstagebuch“ beats "Workout Tracker"; for AllPaid lead with
@@ -323,6 +365,16 @@ Tiers 2 to 4, batch 2 (2026-10-29): 22 pages, writer agents with self copy-edit 
 separate reviewer, back-translation agent or native review yet. Open points are in de-batch2-DG5 to DG9 (Alpha
 Progression RIR free or Pro; English forest/screenzen pages possibly outdated; Baba Is You has no German; AllPaid
 monthly trial 3 days in the master vs {TRIAL}).
+
+Tiers 2 to 4, batch 3 (2026-10-29): 21 pages, writer agents with self copy-edit only, integrated the same day. No
+separate reviewer, back-translation agent or native review yet. English pages to recheck per the DG10 to DG14 notes:
+Streaks has a Mac app, Productive has a Watch app, Way of Life has no iPad version in the German store, Convertio's
+"around 100 MB", Unpluq's "needs Premium"; the research file's HabitNow ID is a different app.
+
+Tiers 2 to 4, batch 4 (2026-10-29): 19 journal posts, writer agents with self copy-edit only, integrated the same day.
+No separate reviewer, back-translation agent or native review yet. The Millrace post title was shortened to stay under
+the 110-character Article headline limit. Open points are in de-batch4-DG15 to DG18 (Observa Pro vs Premium; Xiangqiful
+„Zentralkanone“ vs „Mittelkanone“; the Soon. weather line was cut from the countdown post).
 
 ## Apps still on English screenshots
 
