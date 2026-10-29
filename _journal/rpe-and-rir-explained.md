@@ -17,7 +17,7 @@ seo:
     - gymlogger x
 lede: "Two lifters can both do 3 sets of 5 at 100 kg and be having completely different workouts. One finished every set with three reps to spare; the other ground out the last rep of each. RPE and RIR are the two ways lifters write that difference down. They count the same thing from opposite ends, and the scale most people use comes from one specific study."
 quick_answer: "In lifting, RPE (rating of perceived exertion) is a 1-10 score for how hard a set was, anchored to RIR (reps in reserve): how many more good reps you could have done. RPE 10 means no reps left, RPE 9 means one left, RPE 8 means two, and so on, so RPE = 10 − RIR in the usual range. The scale comes from Zourdos and colleagues' 2016 study, which also allows half points such as 8.5 for one or two reps left. People are imperfect at it: a 2022 meta-analysis found lifters underestimated their remaining reps by about one on average, with better accuracy closer to failure and on sets of 12 reps or fewer. Rate the last rep straight after the set, and check yourself now and then with a set taken to failure where that is safe."
-excerpt: "The RIR-based RPE scale for lifting as a reference table, how RPE converts to reps in reserve, what the research says about how accurately lifters judge it, practical rules for rating a set honestly, how autoregulation uses the number, and how GymLogger X writes RIR into its programs."
+excerpt: "The RIR-based RPE scale for lifting as a reference table, how RPE converts to reps in reserve, what the research says about how accurately lifters judge it, practical rules for rating a set honestly, how autoregulation uses the number, and where GymLogger X stands on rating sets."
 faq:
   - q: "What does RPE 8 mean in lifting?"
     a: "RPE 8 means you finished the set with about two good reps left in reserve. On the scale published by Zourdos and colleagues in 2016, RPE 10 is maximal effort with no reps left, 9 is one rep left, 8 is two, and 7 is three. Half points cover the in-between: RPE 8.5 means you could definitely have done one more and maybe two."
@@ -30,11 +30,11 @@ faq:
   - q: "Should beginners use RPE?"
     a: "They can, but RIR is usually easier to start with, because how many more reps could I have done is a more concrete question than how hard was that. Novices in Zourdos and colleagues' study rated a true one-rep max lower than experienced lifters did, which suggests the top of the scale takes practice. Many beginner programs add load on a fixed schedule instead, which needs no rating at all."
   - q: "Does GymLogger X track RPE or RIR?"
-    a: "GymLogger X uses RIR as a target inside the programs its Smart Program Creator builds: each exercise gets sets, a rep range and a reps-in-reserve figure, and deload weeks raise that target. Programs imported from a spreadsheet can carry an RIR or RPE column, with RPE converted as 10 minus RPE. The app does not ask you to rate each logged set; it records weight and reps, and its strength and plateau analytics are built from those."
+    a: "No. A logged set in GymLogger X records weight and reps, plus whether it was a warm-up; there is no per-set RPE or RIR entry. Its estimated maxes, strength trend, and plateau status are built from those numbers, so if you want to rate every set, choose a log with an RPE field."
 mentioned_apps:
   - gymlogger-x
 read_time: "8 min read"
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 RPE and RIR describe the same thing: how close a set came to the point where you could not do another good rep.
@@ -110,16 +110,6 @@ They carry the same information, so pick the one you will actually record. RIR i
 
 Consistency matters more than the choice. A rating you give every hard set, the same way, builds a record of what a given RPE costs you in kilos. A rating you remember once a fortnight records little more than your mood.
 
-## How GymLogger X uses reps in reserve
+## Does GymLogger X track RPE or RIR?
 
-In [GymLogger X](/apps/gymlogger-x/), RIR is part of the prescription. When the Smart Program Creator builds a program, each exercise gets sets, a rep range and a reps-in-reserve target, and the program preview shows it alongside them, for example 3 × 8-12 at RIR 2. The targets follow a few fixed rules:
-
-- The starting point depends on the goal. Compound lifts in a hypertrophy program start at 8-12 reps with 2 in reserve; a strength program starts them at 3-6 reps with 1 in reserve; general fitness at 10-15 reps with 3.
-- Lifters aged 40 and over get one extra rep in reserve, and 55 and over get two.
-- If you tell it about an injury, movements that load that area get two or four extra reps in reserve, depending on the phase you are in.
-- In a linear cycle, the target tightens by up to two reps across the weeks before the deload.
-- Deload weeks cut the sets roughly in half and raise the reps-in-reserve target, by three in most program styles.
-
-If you import a program from a spreadsheet, the importer reads an RIR column, or an RPE column converted as 10 − RPE.
-
-What GymLogger X doesn't do is ask you to rate each set. A logged set is the weight and the reps, entered on the iPhone or from the Apple Watch, and the strength trend, estimated maxes and plateau rule are all built from those two numbers. I would rather the app worked from what the bar did than from a rating that research says drifts by a rep. Still, if you want a per-set RPE column in your log, that is a real gap, and you should know about it before you choose.
+No. [GymLogger X](/apps/gymlogger-x/) doesn't ask you to rate each set. A logged set is the weight and the reps, plus a warm-up flag, entered on the iPhone or from the Apple Watch, and the estimated maxes, the strength trend, and the plateau status are all built from those numbers. I would rather the app worked from what the bar did than from a rating that research says drifts by a rep. Still, if you want a per-set RPE column in your log, that is a real gap, and you should know about it before you choose.

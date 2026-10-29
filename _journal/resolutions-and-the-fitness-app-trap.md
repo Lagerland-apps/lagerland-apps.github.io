@@ -19,9 +19,9 @@ faq:
   - q: "Why does my fitness app make me feel guilty after one missed day?"
     a: "Most fitness apps measure consistency with a streak counter that resets to zero on a single miss. That fragility drives engagement: the apps know a missed day produces panic-opens to protect the streak. The guilt is a product behaviour designed to raise daily active users, and it says nothing about your willpower."
   - q: "What does a fitness app without streaks or guilt mechanics look like?"
-    a: "It has no streak counter on the home screen, brings missed tasks back as follow-ups without marking them red, has no leaderboards against friends you did not choose to compete with, and lets you leave for a week without losing data. Taskful Day and GymLogger X follow these rules."
+    a: "It has no streak counter on the home screen, brings missed tasks back as follow-ups without marking them red, has no leaderboards against friends you did not choose to compete with, and lets you leave for a week without losing data. Taskful Day carries missed tasks forward without marking them red, and GymLogger X has no leaderboard and sends no notifications."
   - q: "Which Lagerland Apps tools replace guilt-driven fitness apps?"
-    a: "Taskful Day is a daily planner with no streak counter and unfinished tasks that roll forward without ceremony. GymLogger X is a strength-training log with no social feed, no leaderboard, and no streak guilt. It tracks sets, reps, PRs, and 1RM trends, and skipping a week does not turn the app red."
+    a: "Taskful Day is a day planner where unfinished tasks carry forward to today on their own and the Today list never shows an overdue badge; a streak is one stat in its Analytics, not the center of the app. GymLogger X is a strength-training log with no social feed or leaderboard, and it sends no notifications at all. It tracks sets, reps, PRs, and 1RM trends, and your history is there when you come back after a week off."
   - q: "Are streaks effective for building habits?"
     a: "They keep users in the short term and do a poor job of keeping habits in the long term. Streaks reward opening the app every day whether or not the habit happened, which leads to fake logging, or to people giving up at the first miss. Bringing missed tasks back as follow-ups keeps people coming back without punishing them."
 mentioned_apps:
@@ -29,7 +29,7 @@ mentioned_apps:
   - gymlogger-x
 read_time: "4 min read"
 excerpt: "Why most fitness apps are designed to make you feel bad on day three, and what calmer, privacy-first alternatives look like. Written for the first week of January, without preaching about resolutions."
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 It's the third of January and the fitness apps are already doing the thing.
@@ -62,9 +62,9 @@ A handful of design choices reliably mark an app that will still treat you well 
 
 ## What this studio ships
 
-[Taskful Day](/apps/taskful-day/) is a daily planner with no streak counter, flame, or red X. Unfinished tasks roll forward to tomorrow. There is a focus-session timer and a reflective view if you want them, and nothing pretends to know whether you had a "good day" or a "bad day."
+[Taskful Day](/apps/taskful-day/) is a day planner where unfinished tasks carry forward to today on their own, and the Today list never shows an overdue badge. A streak is one stat in its Analytics, not a flame on the home screen. There is a Focus Mode timer (with Pro) and a Journal if you want them, and the Analytics screen describes its own charts as "just a pattern, not a judgment."
 
-[GymLogger X](/apps/gymlogger-x/) is a strength-training log without a social feed, leaderboard, or streak guilt. It tracks sets, reps, PRs, and 1RM trends. If you skip a week, the app does not turn red.
+[GymLogger X](/apps/gymlogger-x/) is a strength-training log with no social feed or leaderboard, and it sends no notifications at all, so it never pings you about a missed session. It tracks sets, reps, PRs, and 1RM trends, and when you come back after a week away, your history is where you left it.
 
 Fitness apps don't have to be flat and joyless. Pacing and motivation take real craft, and so does the small celebration when you hit a personal record. My complaint is with a baseline that runs on guilt. A celebration should come from what the user achieved, and the app shouldn't squeeze it out of them by punishing the rest of their life.
 
