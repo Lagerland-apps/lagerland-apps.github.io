@@ -31,7 +31,7 @@ faq:
 mentioned_apps:
   - liftlog
 read_time: "6 min read"
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 The rest timer is the dullest setting in a training log, and it decides how long a session takes. Five exercises, three sets each, three minutes between sets: that is about 40 minutes of rest. Halve the rest and the session loses about 20 minutes. Whether you lose anything else depends on the lift.
@@ -94,10 +94,10 @@ This is training information and not medical advice. If you have a heart conditi
 
 ## How LiftLog times rest
 
-[LiftLog](/apps/liftlog/) starts the rest timer when you log a working set. Warm-up sets do not trigger it, and neither do timed cardio sets. The timer draws as a ring and has buttons to add or remove 15 seconds or skip.
+[LiftLog](/apps/liftlog/) starts the rest timer when you log a working set. Warm-up sets don't trigger it. The timer shows as a ring with the next set underneath, and has buttons to add or take off 15 seconds or skip the rest.
 
-The default is 90 seconds, with 30 seconds, 1, 2, 3 and 5 minutes available in settings. Each exercise in a program can carry its own rest, and you can change it for an exercise during a workout. The bundled example programs set rest per exercise along the lines of the table above: most heavy sets of five reps or fewer get 3 to 4 minutes, most sets of six to eleven get 1 to 2 minutes, and most high-rep work gets 45 to 60 seconds.
+You pick your default rest in Settings, from 30 seconds to 5 minutes. Each exercise can carry its own rest instead: presets of 30 seconds, 1, 1.5, 2, 3, and 5 minutes, or a fine-tune between 10 and 600 seconds. That is enough to follow the table above, with long rest on the first heavy lift and short rest on the isolation work.
 
-For supersets and giant sets there is no rest between the exercises in a group. The timer starts after the last exercise of the round.
+For supersets and giant sets, focus moves to the next exercise in the group after you log a set, so the logging screen follows the order you train in.
 
-The timer keeps counting if you lock the phone or switch apps. Sound, haptics and a rest-complete notification for when the phone is locked can each be turned off in settings. Programs and progression rules are covered in [choosing a strength program you will finish](/journal/choosing-a-strength-program-you-will-finish/).
+The timer keeps counting in the background. It ends with a sound and a haptic, each of which you can turn off, and it can send a "Rest complete" notification if you've left the app. Programs and progression rules are covered in [choosing a strength program you will finish](/journal/choosing-a-strength-program-you-will-finish/).

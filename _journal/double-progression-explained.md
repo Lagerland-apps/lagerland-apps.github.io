@@ -33,10 +33,10 @@ faq:
 mentioned_apps:
   - liftlog
 read_time: "9 min read"
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
-Most strength programs start with linear progression: a little more weight every session. On most lifts it works for a few months and then stops, usually on the press first. How to tell when that phase is over is in [choosing a strength program you will finish](/journal/choosing-a-strength-program-you-will-finish/). What most people run next is double progression. It is also the default rule in the strength log I build, so this is the long version.
+Most strength programs start with linear progression: a little more weight every session. On most lifts it works for a few months and then stops, usually on the press first. How to tell when that phase is over is in [choosing a strength program you will finish](/journal/choosing-a-strength-program-you-will-finish/). What most people run next is double progression. It is also one of the progression schemes in the strength log I build, so this is the long version.
 
 ## What is double progression?
 
@@ -139,10 +139,8 @@ This is training information, not medical advice. If a load jump hurts rather th
 
 ## How LiftLog runs it
 
-In [LiftLog](/apps/liftlog/), progression is a setting on each exercise in a program rather than on the program as a whole. The choices are double progression, linear, a percentage of a training max, RPE-based, or off. Nearly nine in ten exercise rows in the bundled example programs use double progression.
+In [LiftLog](/apps/liftlog/), progression is a setting on each exercise in a program rather than on the program as a whole. The schemes are Double progression, Linear, % of training max, and RPE / RIR.
 
-The rule is the strict variant from the table above. You set the target sets and a rep range, and the weight goes up only when every target set reaches the top of the range. A session inside the range holds the weight. A session where fewer than the target number of sets reach the bottom counts as a miss, and after three misses in a row the weight drops to 90% and the climb restarts. The increment, the number of misses and the drop are all editable per exercise.
+With a scheme on an exercise, each pending set arrives filled in with the weight the program prescribes, under a chip such as "Target 80 kg × 8 · Double". When the workout ends, Workout Complete includes a progression summary, and the Progression review labels each exercise Progressed, Hold, Missed, or Deload. Smart weight suggestions are on by default; one switch in Settings turns them off if you would rather keep the books yourself.
 
-When a workout ends, the recap labels each exercise Progressed, Hold, Missed or Deload and shows the next session's weight and reps, and the program list previews that next target under each exercise. Bodyweight exercises get a reps-only mode that adds one rep at a time.
-
-For microloading, the increment and the rounding step can both be set in 0.5 kg steps. Change both. With a 1 kg increment and rounding left at 2.5 kg, the next weight rounds back to where it was. The built-in plate calculator assumes a standard plate set down to 1.25 kg, so fractional plates are still your own bookkeeping.
+For microloading, the Plate Calculator shows which plates go on each side of the bar and notes when a weight can't be loaded exactly. If you own fractional plates, check the suggested weight against what is actually on your rack.
