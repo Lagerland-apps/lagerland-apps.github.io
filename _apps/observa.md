@@ -2,8 +2,8 @@
 layout: app
 slug: observa
 name: "Observa"
-tagline: "Sleep, energy & recovery insights."
-quick_answer: "Observa is a private health insights app for iPhone and iPad that reads your Apple Health data (sleep stages, HRV (SDNN) trends, ECG sinus-rhythm, resting heart rate, activity), no matter which device recorded it (Apple Watch, Oura, Whoop, Garmin, Fitbit, or any app that writes to Apple Health), and explains in plain language which of your habits shift your sleep efficiency, recovery readiness, and energy. Every correlation runs locally on your device against a personal 60-day baseline. There are no servers or account, and no data is uploaded, which Apple's App Privacy nutrition label confirms. Free, with Pro at {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime."
+tagline: "Readiness, sleep, and HRV from Apple Health, explained."
+quick_answer: "Observa is an iPhone, iPad, and Apple Watch app that turns your Apple Health data into a daily Readiness score, a Sleep Score, and a stress read, each measured against your own baseline and explained in plain language. Ask \"Should I train today?\" and it answers Push, Maintain, Recover, or Rest, with the reason. There is no account and no ads, and your health data stays on your device. The daily scores are free, every Pro feature is unlocked for your first 7 days without signup, and Pro costs {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once."
 category: health
 status: live
 jump_nav: true
@@ -14,45 +14,47 @@ price:
   model: freemium
 price_tier: "Pro"
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase that never auto-renews. All plans run on iPhone and iPad. Observa reads from Apple Health, so any device that writes there (Apple Watch, Oura, Whoop, Garmin, Fitbit) works with no separate pairing."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew. Every paid plan supports Family Sharing, and Pro works on iPhone, iPad, and Apple Watch."
 
 release_notes:
-  - date: "2026-05-13"
-    note: "Documented the correlation engine end-to-end in the new How-it-works method note. The algorithm itself is unchanged."
-  - date: "2026-04-22"
-    note: "Pro: shipped the multi-variable correlation engine: training load × screen time × caffeine timing → next-morning HRV."
-  - date: "2026-03-30"
-    note: "Pro: long-term trend analysis (90 / 180 / 365 day windows) and per-pattern confidence scoring."
-  - date: "2026-02-18"
-    note: "60-day rolling baseline added for HRV (SDNN), RHR, sleep efficiency, deep-sleep share, REM share."
-  - date: "2026-01-01"
-    note: "Observa 1.0: daily insight cards, core single-variable pattern recognition, fully on-device."
+  - date: "2026-10-16"
+    note: "Apple Watch workout screens now in your language, plus fixes for the training call, sleep consistency across time zones, and symptom saving."
+  - date: "2026-10-03"
+    note: "Full-page widgets on iOS 27 (Today, Folio, Last 14 days, and Trend), and \"Why this score?\" opens straight from the Today widget."
+  - date: "2026-09-11"
+    note: "Apple Watch app with complications, a Workout Live Activity, \"Should I train today?\" in Siri, and \"Why this score?\" explainers."
+  - date: "2026-08-12"
+    note: "Configurable widgets (Focus, Trend, Stack, Grid, Breakdown, and Insight), water imported from Apple Health, and sleep debt measured against your own goal."
+  - date: "2026-07-10"
+    note: "Pro: Functional Age, an estimate of how your fitness compares with people of your age."
 
 plans:
   - name: "Free"
     price: "$0"
-    summary: "Daily plain-English Apple Health insights, on-device and free for good, with no trial, card, or account."
+    summary: "Your daily scores, the reasons behind them, and a training call every morning. Free for good, with no account."
     features:
-      - "Daily insight card from your Apple Health data"
-      - "Core pattern recognition (single-variable correlations)"
-      - "Sleep, HRV, and recovery explained in plain English"
-      - "Local-only processing, with no account or upload"
-      - "Free for good, with no trial or credit card"
+      - "Readiness, Sleep Score, Stress, and Today's Plan"
+      - "\"Why this score?\" and \"Should I train today?\""
+      - "A daily coaching note and a morning check-in"
+      - "7-day trends"
+      - "Siri and Shortcuts, plus Readiness, check-in, water, and workouts on Apple Watch"
+      - "Every Pro feature for your first 7 days, with no signup or card"
   - name: "Pro · Monthly"
     price: "{P_MONTHLY}/mo"
     kind: monthly
-    summary: "Full Pro, billed monthly. Cancel anytime."
+    summary: "Full Pro, billed monthly. Starts with a {TRIAL}. Cancel anytime."
     features:
-      - "Multi-variable correlation engine (training load × caffeine × sleep)"
-      - "Personal 60-day baseline tracking with deviation alerts"
-      - "Long-term trend analysis (90 / 180 / 365 days)"
-      - "Weekly reflection: what worked, what didn't, what to try"
-      - "Per-pattern confidence scoring (n trials, statistical confidence)"
-      - "Export every insight as plain text"
+      - "Trends over 30, 90, and 365 days"
+      - "The full analysis screen behind every metric"
+      - "Functional Age, Advanced HRV, ECG history, and heart-rate recovery"
+      - "Training Status, Load Trends, Personal Records, and Workout Replay"
+      - "Your data in Home Screen and Lock Screen widgets"
+      - "All 14 themes, and workout reports as PDF without a watermark"
+      - "Cancel anytime"
   - name: "Pro · Annual"
     price: "{P_YEARLY}/yr"
     kind: yearly
-    summary: "Same Pro features, billed once a year. ~{SAVE_YEARLY}% cheaper than monthly."
+    summary: "Same Pro features, billed once a year. Starts with a {TRIAL}. ~{SAVE_YEARLY}% cheaper than paying monthly."
     features:
       - "Everything in Pro · Monthly"
       - "~{SAVE_YEARLY}% cheaper than monthly over a year"
@@ -65,54 +67,50 @@ plans:
     features:
       - "Everything in Pro · Annual"
       - "One-time purchase, no renewal"
-      - "Family Sharing with up to 5 family members at no extra cost"
-      - "Future Pro features included"
-      - "Restores on every device signed in with the same Apple ID"
-    highlight_label: "Best long-term value"
+      - "Family Sharing included"
 
 icon: "/assets/icons/observa.png"
 og_image: "/assets/og/observa.png"
 
 seo:
-  title: "Apple Health Insights for Sleep, HRV & Recovery: Observa"
-  description: "Plain-English sleep, HRV & recovery insights from your Apple Health data, 100% on-device with no account. Free; Pro from {P_MONTHLY}/mo."
+  title: "Apple Health Insights for Readiness, Sleep & HRV: Observa"
+  description: "A daily Readiness score from your Apple Health sleep, HRV, and heart data, with every score explained and all analysis on your device. Free, with Pro."
   keywords:
     - Apple Health insights app
-    - Apple Health analytics
-    - sleep pattern analysis
-    - HRV insights app
+    - readiness score app
+    - should I train today app
+    - HRV app Apple Watch
     - SDNN HRV tracker iPhone
-    - RMSSD ECG analysis iPhone
-    - ECG recovery insights
-    - recovery readiness app
+    - sleep score app iPhone
+    - sleep debt tracker
+    - recovery app Apple Watch
     - private health app
-    - Apple Watch HRV interpretation
+    - functional age app
+    - Apple Watch readiness complication
     - AutoSleep alternative
     - Athlytic alternative
     - Bevel alternative
-    - on-device health analytics
-    - sleep efficiency tracking
-    - resting heart rate baseline
 
 hero:
-  pre_headline: "Your data already knows why."
-  headline: "Apple Health Insights for Sleep, HRV & Recovery."
-  subheadline: "Observa reads your Apple Health and Apple Watch data (sleep stages, HRV (SDNN), ECG, resting heart rate) and explains in plain English what moves your sleep quality, recovery readiness, and energy. It measures against your personal baselines, runs on-device, and needs no account."
+  pre_headline: "Apple Health insights for readiness, sleep, and HRV"
+  headline: "Know whether to train today, and why."
+  secondary: "A daily Readiness score from your sleep, HRV, resting heart rate, and training load, with a plain-language reason behind every number."
+  subheadline: "Observa reads what your iPhone and Apple Watch already save to Apple Health and measures each night and morning against your own baseline, not a generic target. There is no account to create, and your health data stays on your device."
   cta_label: "Download Free"
-  alt: "Observa Apple Health insight card on iPhone explaining a sleep, HRV, or recovery pattern"
+  alt: "Observa on iPhone explaining today's Readiness, sleep, and HRV from Apple Health"
 
 who_for:
-  - "You already track with an Apple Watch, Oura ring, Whoop, Garmin, or Fitbit and want to understand what your health data means"
-  - "You're an Apple Health power user tired of charts without interpretation"
-  - "You want a private health app that Apple's App Privacy label lists as collecting zero data"
-  - "You care more about sleep efficiency, HRV (SDNN), and recovery readiness than step counts"
-  - "You'd rather see correlations against your personal 60-day baseline than single-day numbers"
+  - "Your Apple Watch saves sleep, HRV, and heart data to Apple Health, and you want to know what the numbers mean"
+  - "You train and want a straight answer each morning: push, maintain, recover, or rest"
+  - "You track your sleep and want sleep debt measured against your own goal, not a fixed 8 hours"
+  - "You'd rather glance at your watch, a widget, or ask Siri than dig through dashboards"
+  - "You want health insights without an account, ads, or a cloud upload"
 
 who_not_for:
-  - "You want a medical diagnostic tool (Observa is informational, not clinical)"
-  - "You don't use Apple Health at all, with no Apple Watch, ring, or other Health-connected device feeding it data"
-  - "You prefer raw dashboards and charts over plain-language interpretation"
-  - "You want a cloud-synced, multi-device social coach (Observa stays on-device, by design)"
+  - "You want a diagnosis or a medical device (Observa shows what Apple Health recorded and does not detect conditions)"
+  - "You don't use Apple Health, since every score is built from the data in it"
+  - "You want calorie goals or diet logging (nutrition in Observa is context only)"
+  - "You need a Mac or Android app, sync across devices, or a full data export"
 
 alternatives_to:
   - "Bevel"
@@ -126,66 +124,70 @@ alternatives_to:
   - "Apple Health (for interpretation)"
 
 value_points:
-  - title: "Explanations for your numbers"
-    description: "Observa interprets your health data with single-variable correlations on the free tier and multi-variable ones on Pro, and tells you which habits move which metrics for you."
-  - title: "Patterns against your baseline"
-    description: "Every insight is measured against a rolling 60-day personal baseline. A 'low HRV' day means low for you, not for an average 30-year-old."
-  - title: "Calm daily cards"
-    description: "Daily insight cards and weekly reflections in everyday language. There are no streaks, scolding, or crowded dashboards."
-  - title: "Private by design, and verified"
-    description: "Observa has no ads, trackers, account, or servers. Apple's App Privacy label lists zero data collection. Your Health data never leaves your device."
+  - title: "Private by construction"
+    description: "Observa has no account and no ads, and it carries no analytics SDKs. The app makes no network calls of its own, so your health data is processed and stored on your device. Only purchases and the links you open use the internet."
+  - title: "Measured against you"
+    description: "Readiness, Sleep, and Stress compare you with your own typical range and show how confident each read is. For roughly the first week, Readiness says \"Building your baseline\" while Observa learns your normal."
+  - title: "Every score explained"
+    description: "Tap \"Why this score?\" to see which signals sit in your usual range and which moved the score most. It covers Readiness, Sleep, and Stress, on iPhone and on Apple Watch."
+  - title: "Answers wherever you look"
+    description: "Ask Siri \"Should I train today?\", check a widget on your Home Screen or Lock Screen, or raise your wrist to a complication. The answer comes with its reason."
 
 how_it_works:
-  intro: "Observa finds correlations in your health data and puts them into plain sentences, in six steps."
+  intro: "From Apple Health to a straight answer each morning, in six steps."
   steps:
-    - title: "Reads from Apple Health"
-      detail: "On first launch, Observa requests read access to sleep stages, HRV (SDNN), ECG, resting heart rate, workouts, mindfulness, and active energy. It writes nothing and syncs nothing in the background beyond your own device."
-    - title: "Builds your personal baseline (60 days)"
-      detail: "For every metric Observa tracks (HRV (SDNN), RHR, sleep efficiency, deep-sleep share, REM share), it computes a rolling 60-day mean and standard deviation. New days are scored against your baseline, not a population average."
-    - title: "Finds single-variable patterns"
-      detail: "On the free tier, Observa flags correlations between one stressor (e.g. late workout) and one outcome (e.g. deep sleep). A pattern surfaces once it crosses both a minimum sample size (n ≥ 10) and a confidence threshold (p ≤ 0.10)."
-    - title: "Pro: multi-variable correlations"
-      detail: "Pro adds combined-variable analysis (training load × screen time × caffeine timing → HRV next morning) and longer trend windows (90 / 180 / 365 days)."
-    - title: "Translates into plain English"
-      detail: "Every insight is written as a sentence you can act on, and a tap shows the numbers behind it. For example: 'You sleep 18% less deeply on days you train legs after 18:00. Confidence: 87%, n=14 over 60 days.'"
-    - title: "Stays on-device"
-      detail: "All computation happens in the Observa app on your iPhone or iPad, with no servers, analytics SDKs, or account. The App Privacy nutrition label lists zero data collected."
+    - title: "Allow Apple Health access"
+      detail: "Observa asks for the core categories up front, such as sleep, heart rate, HRV, and workouts. Optional ones, like ECG, cycle, or body measurements, stay off until you turn them on in Privacy & Permissions."
+    - title: "Observa learns your baseline"
+      detail: "Scores compare you with your own typical range. Readiness shows \"Building your baseline\" for about the first 7 nights and labels its confidence as your data builds up."
+    - title: "Read your morning scores"
+      detail: "Readiness runs from 0 to 100 and weighs sleep at 35%, HRV at 25%, resting heart rate at 25%, and training load at 15%. The Sleep Score and Stress sit alongside it, and \"Why this score?\" shows what moved each one."
+    - title: "Decide what to do today"
+      detail: "\"Should I train today?\" returns Push, Maintain, Recover, or Rest from your readiness and training load, with the reason. Today's Plan suggests a recovery focus and an intensity."
+    - title: "See what tends to matter for you"
+      detail: "Patterns ranks the habits that tend to line up with your recovery, sleep, and HRV over 14, 28, or 90 days. Each card shows its confidence and why you're seeing it. Patterns are associations, not causes."
+    - title: "Everything stays on the device"
+      detail: "The analysis runs on your iPhone, iPad, or Apple Watch. There is no account and no iCloud sync, and the app makes no network calls of its own."
 
 example_insights:
-  intro: "A sample of the daily insight cards Observa generates. Wording, numbers, and confidence are exactly what you'd see in the app."
+  intro: "The kinds of cards Observa shows. The wording below is illustrative; yours is built from your own Apple Health data."
   cards:
-    - headline: "Late leg-day costs you deep sleep."
-      body: "Days you train lower body after 18:00, your deep sleep averages 18% below baseline. n=14 over 60 days · 87% confidence."
-      tag: "Sleep · Pattern"
-    - headline: "Your HRV recovers fast, within reason."
-      body: "After a high-strain day, your HRV (SDNN) returns to baseline within 36 hours. Two-day clusters break the pattern."
-      tag: "HRV · Recovery"
-    - headline: "Caffeine after 14:00 reads in your ECG."
-      body: "Coffee logged after 14:00 correlates with +4 bpm resting heart rate the following morning. n=23 · 91% confidence."
-      tag: "Recovery · Habit"
-    - headline: "Your sleep efficiency holds, even on short nights."
-      body: "On 6-hour nights, your sleep efficiency stays at 91%, so when you sleep less, you don't waste the time you have."
-      tag: "Sleep · Strength"
-    - headline: "Two rest days a week beat one."
-      body: "Weeks with two non-consecutive rest days show a +12% HRV (SDNN) baseline vs single-rest-day weeks. n=8 weeks."
-      tag: "Recovery · Programming"
-    - headline: "Wind-down window matters more than total sleep."
-      body: "Screen-time within 30 minutes of sleep onset correlates with −24% deep sleep more strongly than total hours slept."
-      tag: "Sleep · Behavior"
+    - headline: "Should I train today? Maintain."
+      body: "Readiness is Moderate. Sleep and resting heart rate are in your usual range, and HRV is below it, so keep today's session steady."
+      tag: "Recovery · Training call"
+    - headline: "Why this score?"
+      body: "HRV moved your Readiness most today. Sleep, resting heart rate, and training load are all within your usual range."
+      tag: "Recovery · Explainer"
+    - headline: "Sleep debt: slight."
+      body: "You slept less than your own sleep goal over recent nights. Observa measures debt against the goal you set."
+      tag: "Sleep · Debt"
+    - headline: "Stress: moderate."
+      body: "The drivers are named: resting heart rate above your usual range and a short night. A 7-day micro-trend shows which way it's heading."
+      tag: "Stress · Drivers"
+    - headline: "Later workouts tend to line up with lower HRV."
+      body: "A ranked pattern with its confidence label. Tap \"Why am I seeing this?\" for the details, then mark it Feels accurate or Doesn't apply."
+      tag: "HRV · Pattern"
+    - headline: "Your chronotype: Intermediate."
+      body: "Classified from your last 14 nights. Pro adds recommendations and a circadian timeline."
+      tag: "Sleep · Chronotype"
 
 features:
-  - title: "Pattern recognition against your baseline"
-    description: "Single-variable correlations on free, multi-variable on Pro. Every pattern is scored against your personal 60-day baseline with a minimum sample size (n ≥ 10) before it appears."
-  - title: "HRV & ECG recovery readiness"
-    description: "Tracks HRV (SDNN, the time-domain metric Apple Health records) against your baseline, computes RMSSD and pNN50 from your Apple Watch ECG recordings, and reads ECG sinus-rhythm data to describe your autonomic recovery state in a sentence instead of a graph."
-  - title: "Sleep quality decoded"
-    description: "Sleep efficiency %, deep-sleep share, REM share, sleep latency, and heart-rate dip, explained in sentences. See which habits shift each metric for you specifically."
-  - title: "Activity-to-energy correlation"
-    description: "See how exercise type, training load, rest days, and movement patterns affect your subjective energy and next-morning HRV."
-  - title: "Daily card, weekly reflection"
-    description: "Start each day with one calm insight card. End each week with a reflection that names what worked, what didn't, and one thing to try."
-  - title: "Built on Apple Health, locked to your device"
-    description: "Observa reads data you already collect, whether it comes from an Apple Watch, an Oura ring, a Whoop, a Garmin, a Fitbit, or any app that writes to Apple Health. You log nothing by hand and can switch wearables freely. It uses no servers, as Apple's App Privacy nutrition label confirms."
+  - title: "Readiness and the training call"
+    description: "A 0 to 100 Readiness score each morning from sleep, HRV, resting heart rate, and training load, banded Ready, Moderate, or Low. \"Should I train today?\" turns it into Push, Maintain, Recover, or Rest, with the reason, in the app, through Siri, in a widget, or on your wrist."
+  - title: "Sleep Score, stages, and sleep debt"
+    description: "A daily Sleep Score from duration, efficiency, consistency, and overnight recovery signals. See your Deep, REM, Core, and Awake time, how your heart behaved overnight, and four Sleep Quality factors. Sleep debt is tracked against your own sleep goal, and a bedtime reminder helps keep the routine."
+  - title: "Stress and Today's Plan"
+    description: "A Low, Moderate, or High stress state with its drivers named, such as low HRV, elevated resting heart rate, or short sleep. Today's Plan turns your recovery into a focus and a suggested intensity."
+  - title: "Patterns"
+    description: "Find out which habits tend to line up with better recovery, sleep, and HRV. Up to four ranked cards over 14, 28, or 90 days, each with a confidence label and a \"Why am I seeing this?\" note. Patterns are associations, not causes, and the wording says so."
+  - title: "Heart, HRV, and Functional Age"
+    description: "Resting heart rate and HRV (SDNN, as Apple Health records it) against your baseline, plus cardio fitness from your VO₂ max. Pro adds Functional Age, a norm-based estimate of how your fitness compares with people of your age, and your ECG recordings and history from Apple Health. Both are informational, not clinical."
+  - title: "Workouts and training load"
+    description: "Training load compares your last 7 days with your last 28, and every workout gets an Effort Score from 0 to 100. Pro adds Training Status, Load Trends, Monotony & Strain, Personal Records, and Workout Replay with route, heart rate, and zones."
+  - title: "Apple Watch app and complications"
+    description: "Readiness, the training call, and \"Why this score?\" on your wrist, plus a morning check-in, water logging, and workout recording with live heart rate. The Watch app runs on its own on watchOS 10 or later, and its complications sit on your watch face."
+  - title: "Widgets, Siri, and Live Activities"
+    description: "Configure Home Screen and Lock Screen widgets with the metrics you choose; on iOS 27 there are full-page widgets too. Ask Siri for your Readiness or Sleep Score, or log water and your check-in by voice. Water and workouts also run as Live Activities."
 
 screenshots:
   - src: "/assets/screenshots/observa/1.webp"
@@ -193,13 +195,13 @@ screenshots:
   - src: "/assets/screenshots/observa/2.webp"
     alt: "Observa chronotype analysis showing a morning lark profile"
   - src: "/assets/screenshots/observa/3.webp"
-    alt: "Observa Home Screen widgets showing sleep, recovery and steps"
+    alt: "Observa Home Screen widgets showing sleep, recovery, and steps"
   - src: "/assets/screenshots/observa/4.webp"
-    alt: "Observa a whole morning on one page with readiness and sleep widgets"
+    alt: "Observa full-page widget with readiness and sleep for the whole morning"
   - src: "/assets/screenshots/observa/5.webp"
-    alt: "Observa ECG recording with HRV metrics"
+    alt: "Observa ECG recording from Apple Health next to HRV values"
   - src: "/assets/screenshots/observa/6.webp"
-    alt: "Observa readiness score with a seven-day comparison"
+    alt: "Observa Readiness score with a seven-day comparison"
   - src: "/assets/screenshots/observa/7.webp"
     alt: "Observa respiratory trends chart"
   - src: "/assets/screenshots/observa/8.webp"
@@ -213,13 +215,13 @@ privacy:
   data_collection: "none"
   tracking: false
   account_required: false
-  app_privacy_label: "Apple's App Privacy nutrition label lists Observa as collecting zero data. You can verify this on the App Store page before downloading."
+  app_privacy_label: "Check the privacy details on Observa's App Store page before you download."
   notes:
-    - "No ads, trackers, or analytics SDKs, as Apple's App Privacy nutrition label confirms"
-    - "No health data uploaded or shared with anyone, including Lagerland Apps"
-    - "No account required, so Observa has no way of knowing who you are"
-    - "All correlations and baselines computed and stored locally on your device"
-    - "iCloud sync between your own Apple devices is end-to-end encrypted by Apple, off by default"
+    - "No account, no ads, and no tracking"
+    - "Your health data is processed and stored on your device and never uploaded"
+    - "No analytics or third-party SDKs, and no network calls of its own; only purchases and links you open go online"
+    - "No iCloud sync. Delete All Data clears Observa's own data and leaves Apple Health untouched"
+    - "Observa writes to Apple Health only when you log water or record a workout on Apple Watch"
 
 founder:
   entity_type: "Organization"
@@ -228,12 +230,12 @@ founder:
   location: "Finland"
   overline: "Who built this"
   heading: "Made by a one-person studio"
-  story: "Observa is built by a single independent developer at Lagerland Apps, working from Finland since 2025. After 14 months of staring at AutoSleep scores and Apple Health dashboards without ever learning anything from them, the most surprising finding once Observa's pattern engine ran against the studio's own data was that screen-time within 30 minutes of sleep onset correlated more strongly with deep-sleep loss than total hours slept. Observa found that pattern, and because it runs entirely on your device, no one at Lagerland Apps ever sees your data either."
+  story: "Observa comes from Lagerland Apps, an independent studio in Finland. Apple Health collects a great deal about your sleep and your heart and says very little about what it means for today. Observa answers that question on the device itself, so nobody at Lagerland Apps ever sees your data."
   signals:
-    - "Independent Apple developer, building privacy-first iOS and macOS apps from Finland since 2025"
-    - "Observa runs 100% on-device; Apple's App Privacy nutrition label lists zero data collected"
-    - "A one-person studio with no analytics SDKs, third-party trackers, or growth team, planning to keep the app going for the long term"
-    - "{APP_COUNT} live apps in the catalogue, all with the same privacy rules: no tracking, no ads, and no required accounts"
+    - "Independent Apple developer, building privacy-first apps from Finland since 2025"
+    - "Observa needs no account and carries no analytics SDKs; the analysis runs on your device"
+    - "A one-person studio, paid for by people who buy the software, without investors or a growth team"
+    - "{APP_COUNT} live apps in the catalogue, none with ads or tracking, and none that requires an account"
   external_link:
     label: "More apps from Lagerland Apps"
     href: "/apps/"
@@ -242,29 +244,35 @@ founder:
 
 faq:
   - q: "What is Observa?"
-    a: "Observa is a health insights app for iPhone and iPad that analyses your Apple Health data to find personal patterns in sleep, recovery, energy, and activity, whether that data comes from an Apple Watch, an Oura ring, a Whoop, a Garmin, a Fitbit, or any app that writes to Apple Health. It goes past tracking and interprets the data against your own 60-day baseline."
+    a: "Observa is a health insights app for iPhone, iPad, and Apple Watch. It reads your Apple Health data and turns it into a daily Readiness score, a Sleep Score, and a stress read, each measured against your own baseline and explained in plain language. It also answers \"Should I train today?\" and shows which habits tend to line up with your recovery, sleep, and HRV. There is no account, and the analysis runs on your device."
   - q: "How is Observa different from other health apps?"
-    a: "Most health apps show you numbers and charts. Observa uses single-variable (free) and multi-variable (Pro) correlation analysis against your personal 60-day baseline to explain in plain English what those numbers mean for your body and habits. It also runs entirely on-device, verified by Apple's App Privacy nutrition label."
+    a: "Your scores are compared with your own typical range, not a generic target, and each one shows how confident it is. Every score comes with \"Why this score?\", which names the signals that moved it. Observa is also private by construction. You never create an account, and the app makes no network calls of its own, so your health data stays on your device."
+  - q: "How does the Readiness score work?"
+    a: "Readiness is a 0 to 100 score built each day from sleep (35%), HRV (25%), resting heart rate (25%), and training load (15%). Breathing, blood oxygen, body, energy, and cycle data can adjust it when you have them. It is banded Ready, Moderate, or Low, and for about the first 7 nights it shows \"Building your baseline\" while Observa learns your normal. \"Why this score?\" shows which signals moved it most."
   - q: "Does Observa work with Apple Watch?"
-    a: "Yes. Observa reads data collected by Apple Watch through Apple Health, including heart rate, HRV (SDNN), ECG, sleep stages, resting heart rate, wrist temperature, and activity metrics. No separate pairing needed. ECG insights require Apple Watch Series 4 or later; HRV and sleep work on Series 3 and later."
-  - q: "Does Observa work with Oura, Whoop, Garmin, or Fitbit, or do I need an Apple Watch?"
-    a: "You do not need an Apple Watch. Observa interprets whatever is in Apple Health, regardless of which device recorded it. If your Oura ring, Whoop, Garmin, Fitbit, or another wearable writes sleep, HRV, or resting-heart-rate data into Apple Health, Observa reads and interprets it exactly the same way it reads Apple Watch data. You keep the device you already own and add Observa's interpretation, with no extra membership. Oura and Whoop can share to Apple Health from their own apps; Garmin and Fitbit usually need a small third-party bridge app (such as Health Sync) to write into Apple Health first. ECG-specific insights are the one exception: they require an Apple Watch, because ECG is an Apple Watch feature."
-  - q: "What are HRV and ECG insights?"
-    a: "Observa tracks HRV (SDNN, the time-domain metric Apple Health provides) against your personal 60-day baseline, flags drops greater than one standard deviation, and uses Apple Watch ECG recordings (from which it also computes RMSSD and pNN50) together with ECG sinus-rhythm data to estimate autonomic recovery state, the balance between sympathetic ('fight-or-flight') and parasympathetic ('rest-and-digest') activity. You get a sentence instead of a graph, such as 'Your nervous system is 18% below baseline today, likely a recovery day.'"
+    a: "Yes, in two ways. Observa reads what your Apple Watch saves to Apple Health, such as sleep stages, heart rate, HRV, resting heart rate, blood oxygen, and workouts. It also has its own Apple Watch app for watchOS 10 or later, with Readiness, the training call, \"Why this score?\", a morning check-in, water logging, and workout recording, plus complications for your watch face. The Watch app runs on its own."
+  - q: "Do I need an Apple Watch?"
+    a: "Observa reads Apple Health, whichever device or app saved the data there. An Apple Watch is recommended, because sleep stages, HRV, blood oxygen, ECG, and VO₂ max only appear when a device records them."
+  - q: "How does Observa handle HRV and ECG data?"
+    a: "Apple Health records heart rate variability as SDNN, and that is the HRV Observa shows: your daily value against your own baseline, with 7 days of trend free and 30, 90, or 365 days with Pro. HRV also feeds 25% of your Readiness score. With Pro, the ECG card shows your latest ECG recording with its waveform and the classification history from Apple Health. Observa displays what Apple Health recorded; it does not detect or diagnose any condition."
   - q: "Is Observa free?"
-    a: "Yes. Daily insight cards and core single-variable pattern recognition are free for good. Pro unlocks multi-variable correlations, long-term trend analysis (90 / 180 / 365 days), weekly reflections, and per-pattern confidence scoring for {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime. Lifetime supports Family Sharing, so one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes. Readiness, the Sleep Score, Stress, Today's Plan, \"Why this score?\", the training call, the daily coaching note, 7-day trends, and Siri are free for good. Every Pro feature is unlocked for your first 7 days, with no signup or card. Pro adds 30, 90, and 365-day trends, the full analysis screens, Functional Age, Advanced HRV, ECG history, training analysis, widget data, and all 14 themes. It costs {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once, with Family Sharing on every paid plan. Separately from those first 7 days in the app, the monthly and yearly subscriptions each start with a {TRIAL} through the App Store. Prices are in USD; the App Store shows your local currency at checkout."
   - q: "Does Observa give medical advice?"
-    a: "No. Observa is an informational wellness tool. It points out statistical patterns in data you already collect, for self-awareness. It does not diagnose or recommend treatment. If something looks off, talk to a clinician."
+    a: "No. Observa is not a medical device. It shows patterns and scores from data you already collect, for your own understanding. It does not diagnose, treat, or detect any condition, and its ECG, rhythm, and blood oxygen views display what Apple Health recorded. If something looks off, talk to a clinician."
   - q: "Does Observa upload my health data?"
-    a: "No. All health data stays on your device. Observa has no servers, no accounts, and no cloud processing. Your data is never shared with anyone, Lagerland Apps included. Apple's App Privacy nutrition label lists Observa as collecting zero data."
+    a: "No. Your health data is processed and stored on your device. Observa works without an account or servers and carries no analytics or third-party SDKs. The app makes no network calls of its own; only purchases and the links you open use the internet. Your data is never shared with anyone, Lagerland Apps included."
   - q: "Do I need to log anything manually?"
-    a: "No. Observa reads from Apple Health automatically. If you already wear an Apple Watch or use Health-connected apps (sleep trackers, meditation apps, nutrition apps), Observa can start finding patterns immediately. The first useful pattern usually surfaces around day 14."
-  - q: "What sample size and confidence does Observa require before showing a pattern?"
-    a: "Patterns surface once they cross both a minimum sample size (n ≥ 10 observations) and a confidence threshold (p ≤ 0.10). You'll see the n and confidence on every Pro card so you can judge for yourself. The free tier shows patterns with stricter defaults to keep the daily card high-signal."
+    a: "No. Observa reads Apple Health automatically, so the scores fill in from data your iPhone and Apple Watch already save. Logging is optional: a three-question morning check-in, water in one tap or by voice, symptoms, and body measurements."
+  - q: "How does Observa decide which patterns to show?"
+    a: "Patterns looks at your data over 14, 28, or 90 days and compares habits with outcomes such as recovery, sleep, and HRV, including delayed effects. A pattern only appears when it passes a significance check, and Observa shows up to four, ranked. Each card carries a confidence label and a \"Why am I seeing this?\" note, and you can mark it Feels accurate or Doesn't apply. The wording says \"tends to align with\", because these are associations, not causes."
   - q: "How is Observa an alternative to AutoSleep, Athlytic, or Bevel?"
-    a: "AutoSleep, Athlytic, and Bevel give you scores and charts: heart-rate dip during sleep, recovery percentages, Body Charge style numbers, and sleep stage breakdowns. Observa gives you sentences that say what moves those numbers for you specifically: which workouts shift your acute:chronic training-load ratio, which late-night habits cost you deep sleep, which weekly patterns predict next-morning HRV. And unlike Bevel and Athlytic, Observa runs 100% on-device with no account and no server."
+    a: "Observa suits you if you want a daily Readiness score and a training call with the reasons spelled out, measured against your own baseline, and you'd rather your health data never leave your device. It has no account and no ads, and it runs on iPhone, iPad, and Apple Watch. The comparison pages go app by app: <a href=\"/alternatives/autosleep/\">AutoSleep</a>, <a href=\"/alternatives/athlytic/\">Athlytic</a>, <a href=\"/alternatives/bevel/\">Bevel</a>, <a href=\"/alternatives/gentler-streak/\">Gentler Streak</a>, <a href=\"/alternatives/whoop/\">Whoop</a>, <a href=\"/alternatives/oura/\">Oura</a>, <a href=\"/alternatives/hrv4training/\">HRV4Training</a>, and <a href=\"/alternatives/welltory/\">Welltory</a>."
+  - q: "Does Observa sync between devices or export my data?"
+    a: "No. There is no account and no iCloud sync, so Observa's data lives on the device. The Apple Watch app keeps in step with your iPhone directly. The only export is a workout report: free users can share one a month as a PNG with a watermark, and Pro shares unlimited reports as PNG or PDF without one. A Pro purchase restores through Restore Purchases in Settings."
   - q: "What does Observa actually measure?"
-    a: "Observa reads ten core metrics from Apple Health and interprets them against your personal 60-day baseline. HRV (SDNN) is the time-domain heart-rate variability metric Apple Health records; Observa also computes RMSSD and pNN50 from your Apple Watch ECG recordings. RHR is resting heart rate, tracked for baseline drift. Sleep efficiency is the percentage of time in bed actually asleep. Deep-sleep share and REM share are the fractions of the night spent in each stage. Sleep latency is how long it took to fall asleep. Heart-rate dip is how far your overnight heart rate drops below daytime resting (a classic AutoSleep metric). Wrist temperature is the overnight skin temperature shift on Apple Watch Series 8 and later. Respiratory rate is breaths per minute during sleep. ECG sinus-rhythm is the rhythm classification Apple Watch reports. Each is interpreted as a sentence and scored against your own trend instead of a population average, because your chronotype, training programme, and life rhythm shape your baseline."
+    a: "Everything comes from Apple Health. Sleep: duration, efficiency, consistency, stages, overnight heart rate and its dip, and sleep debt against your goal. Recovery: Readiness, HRV (SDNN), resting heart rate, and stress. Heart: walking heart rate, VO₂ max, heart-rate zones and recovery, and ECG recordings. Activity and workouts: steps, active minutes, distance, flights, training load, and Effort Score. Breathing: respiratory rate and blood oxygen. Body and energy: weight, body fat, lean mass, and active and resting energy. Optional cycle context widens your baselines across the month. Each one is read against your own typical range."
+  - q: "Which iPhone, iPad, and Apple Watch does Observa need?"
+    a: "Observa needs iOS 17.6 or later on iPhone or iPad, and the Apple Watch app needs watchOS 10 or later. The full-page widgets need iOS 27. There is no Mac or Android version, and on iPhone the app runs in portrait."
 
 related_journal:
   slug: what-14-days-of-apple-health-can-reveal
@@ -284,4 +292,4 @@ ratings:
   last_synced: "2026-10-10"
 last_updated: 2026-10-29
 ---
-Observa is a health insights app for iPhone and iPad that turns Apple Health data into personal, pattern-based insights about sleep, recovery, energy, and activity. Using single-variable and multi-variable correlation analysis against a rolling 60-day personal baseline, HRV (SDNN) trend tracking, Apple Watch ECG sinus-rhythm interpretation, and long-term trend detection, Observa explains in plain English what consistently affects your sleep efficiency, recovery readiness, and energy, in sentences instead of charts. It reads data you already collect through Apple Watch, an Oura ring, a Whoop, a Garmin, a Fitbit, or any Health-connected app, requiring no manual logging. Daily insight cards show your current state against your baseline, weekly reflections name what worked, and per-pattern confidence scoring lets you judge each insight for yourself. The app is free, with optional Pro for advanced analytics. It has no ads or trackers, needs no account, and keeps all data on your device, as Apple's App Privacy nutrition label confirms.
+Observa is a health insights app for iPhone, iPad, and Apple Watch that turns Apple Health data into a daily read on how recovered you are. Each morning it gives you a Readiness score from sleep, HRV (SDNN), resting heart rate, and training load, a Sleep Score, and a stress state, all measured against your own baseline. "Why this score?" names the signals behind each number, and "Should I train today?" answers Push, Maintain, Recover, or Rest, in the app, through Siri, in a widget, or on your wrist. Patterns shows which habits tend to line up with your recovery, sleep, and HRV. The daily scores are free; Pro adds long-term trends, full analysis screens, Functional Age, ECG history, and training analysis. Observa has no account and no ads, carries no analytics SDKs, and keeps your health data on your device.
