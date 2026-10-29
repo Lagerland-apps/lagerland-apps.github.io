@@ -2,7 +2,8 @@
 layout: app
 slug: gymlogger-x
 name: "GymLogger X"
-quick_answer: "GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch and a private alternative to Strong, Hevy, and Fitbod. You start a session on the iPhone, then log each set's reps and weight from the wrist, with rest timers and live heart rate. The Smart Program Creator builds periodized programs (PPL, Upper/Lower, Full Body and more) with scheduled deload weeks, the app tracks estimated 1RM, and Pro flags a plateau when a lift's estimated 1RM stops climbing across your four most recent sessions while volume holds. The core is free. Pro is {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime, the cheapest one-time tier among major lifting apps. It has no ads or tracking and needs no account."
+tagline: "Log sets fast, follow a proven program, and spot a stalled lift early."
+quick_answer: "GymLogger X is a strength training log for iPhone, with an Apple Watch app, for lifters who want fast set logging and a program to follow. Logging, the Apple Watch app, the Smart Program Creator, and 6 of its 44 ready-made programs are free, one program at a time. Pro adds all 44 programs, your full history, and Insights that flag plateaus, fatigue, and muscle imbalances from your own logs, for {P_MONTHLY}/month or {P_YEARLY}/year (each starts with a {TRIAL}) or {P_LIFETIME} once. There are no ads, and you never make an account."
 category: fitness
 status: live
 
@@ -13,87 +14,88 @@ price:
 price_tier: "Pro"
 
 # Plans grid: Free / Pro Monthly / Pro Annual / Lifetime. The plans_footnote
-# carries the USD-pricing disclaimer for international buyers and the App-Store
-# refund pointer so the most common purchase-friction objections are answered
-# next to the price, not buried in the FAQ.
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple via the standard App Store refund flow. The lifetime tier is a one-time purchase that never auto-renews, and no card is kept on file beyond Apple's own."
+# carries the USD-pricing disclaimer for international buyers and the App Store
+# refund pointer, so purchase questions are answered next to the price.
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew."
 
 plans:
   - name: "Free"
     price: "$0"
-    summary: "Core logging stays free, with no trial, card, or account needed."
+    summary: "Log every workout, run one program, and keep the last 30 days of history."
     features:
-      - "Unlimited set / rep / weight logging on iPhone and Apple Watch"
-      - "1,500 exercises with muscle and equipment filters"
-      - "One program at a time, built by hand, by the Smart Program Creator, or picked from six free built-ins (Linear 5×5, the Golden Six, split routines)"
-      - "Up to three saved workout templates"
-      - "PR alerts, per-exercise 1RM and volume charts, and the last 30 days of history"
-      - "Apple Health workout export and a plate calculator"
-      - "On-device storage, synced through your own iCloud"
+      - "Unlimited workout logging on iPhone and Apple Watch"
+      - "Supersets, giant sets, warm-up sets, and a plate calculator that knows your gym's plates"
+      - "The Heart Rate Rest Timer, with an Apple Watch"
+      - "1,500 exercises with search and filters, and a history and chart for each one"
+      - "One program at a time: one of 6 free programs, your own, or one from the Smart Program Creator"
+      - "Up to 3 workout templates and the last 30 days of history"
+      - "Weekly Summary, Live Activities, the Start Workout control, and some small and Lock Screen widgets"
+      - "Apple Health export and iCloud sync"
   - name: "Pro Monthly"
     price: "{P_MONTHLY} / mo"
     kind: monthly
-    summary: "Full Pro, billed monthly. Cancel anytime."
+    summary: "All of Pro, billed monthly. Starts with a {TRIAL}."
     features:
-      - "Unlimited programs and templates"
-      - "The full program library: 38 more programs, from 5×5 ramps and the Texas Method to a peaking block"
-      - "Your full workout history, PR board and strength trends"
-      - "Plateau detection (the published adaptive-threshold rule)"
-      - "Muscle balance (push:pull, upper:lower, front:back), training load and readiness analytics"
-      - "Animated exercise demos and custom exercises"
+      - "All 44 programs, with as many active programs and templates as you want"
+      - "Your full workout history and every personal record"
+      - "Insights: Next Move, readiness, load ratio, muscle balance, and plateau status"
+      - "Recovery and fatigue signals, Set Volume against MEV, MAV, and MRV, and the muscle heatmap"
+      - "Animated exercise demos with instructions, and your own custom exercises"
       - "Import workouts and programs from CSV"
+      - "Every widget size, full-page widgets on iOS 27, and 8 color themes"
+      - "Cancel anytime"
   - name: "Pro Annual"
     price: "{P_YEARLY} / year"
     kind: yearly
-    summary: "Same Pro features, billed once a year. ~{SAVE_YEARLY}% cheaper than paying monthly."
+    summary: "All of Pro, billed once a year. ~{SAVE_YEARLY}% cheaper than paying monthly. Starts with a {TRIAL}."
     features:
       - "Everything in Pro Monthly"
-      - "~{SAVE_YEARLY}% cheaper than paying monthly all year"
+      - "~{SAVE_YEARLY}% cheaper than 12 months of Pro Monthly"
       - "Cancel anytime"
   - name: "Lifetime"
     price: "{P_LIFETIME} one-time"
     kind: lifetime
-    summary: "Everything in Pro, for good. About one in three Pro users picks this tier, since a training history is worth keeping for years."
+    summary: "All of Pro for one payment."
     features:
-      - "Everything in Pro Annual, permanently unlocked"
-      - "Not a subscription, so nothing auto-renews or expires"
-      - "Family Sharing with up to 5 family members at no extra cost"
-      - "Break-even vs the annual tier in about {LIFETIME_YEARS} years of use"
-      - "Cheapest lifetime tier among major lifting apps ({P_LIFETIME} vs Hevy $74.99 vs Strong $99.99)"
-      - "Future Pro features are included at no extra charge"
-    highlight_label: "Best value · ~1 in 3 pick this"
+      - "Everything in Pro, unlocked for good"
+      - "One-time purchase that never renews"
+      - "Family Sharing"
+    highlight_label: "Pay once"
 
 icon: "/assets/icons/gymlogger-x.png"
 og_image: "/assets/og/gymlogger-x.png"
 
 seo:
-  title: "GymLogger X: Strong & Hevy Alternative for Apple Watch"
-  description: "A private alternative to Strong, Hevy & Fitbod. Apple Watch set logging, smart programs & plateau detection. {P_LIFETIME} lifetime, no account."
+  title: "Strength Training Log for iPhone & Apple Watch | GymLogger X"
+  description: "Strength training log for iPhone and Apple Watch: 1,500 exercises, 44 programs, and plateau and fatigue signals from your own logs. Free, no account."
   keywords:
+    - strength training log app
+    - Apple Watch strength training app
+    - workout log iPhone
+    - gym tracker Apple Watch
     - Strong app alternative
     - Hevy alternative
     - Fitbod alternative
     - Caliber alternative
-    - workout tracker no subscription
-    - Apple Watch strength training app
-    - private workout log iPhone
     - lifetime price workout tracker
     - strength training app no account
     - gym log app offline
     - PPL upper lower tracker
-    - 1RM calculator app
+    - 5x5 program app
     - plateau detection workout app
     - progressive overload tracker
     - training program generator iPhone
+    - plate calculator app
     - powerlifting log app
     - hypertrophy program app
 
 hero:
-  headline: "Strength training log for iPhone & Apple Watch."
-  secondary: "Train smarter. Lift stronger."
-  subheadline: "GymLogger X is a private workout tracker with Apple Watch set logging, smart periodized programs, estimated-1RM tracking, and a {P_LIFETIME} lifetime price, so your training history isn't tied to a subscription. It has no ads, needs no account, and no AI talks through your sets."
+  pre_headline: "Strength training log for iPhone and Apple Watch"
+  headline: "Know what to lift today, and spot a stalled lift early."
+  secondary: "1,500 exercises, 44 ready-made programs (6 of them free), and 40 languages. There are no ads, and you never make an account."
+  subheadline: "Every set row shows what you lifted last time. The rest timer runs on your Lock Screen, and with an Apple Watch it can tell you when your heart rate has recovered. Pro reads your own logs and names the next move: rest, push, or work on a weak point."
   cta_label: "Download Free"
-  alt: "GymLogger X Push Day workout on iPhone: barbell bench press set 1 logged at 12 reps × 80 kg beside last session's sets, with the rest timer running"
+  alt: "GymLogger X workout on iPhone: an upper-body strength day with barbell bench press sets and last time's 225 lbs × 6 shown"
 
 # Founder block: Experience / Authority signal (rendered above features when present).
 # entity_type lets the layout pick the correct schema.org itemtype (Person vs Organization).
@@ -105,50 +107,49 @@ founder:
   role: "Independent Apple studio · Finland"
   location: "Finland"
   photo: "/assets/icons/lagerland-mark.png"
-  bio: "We built GymLogger X because every workout app we tried rented our training history back to us through a subscription, leaked data to ad networks, or treated Apple Watch as a second-class mirror of the iPhone screen. We wanted a log we could rely on for a decade without paying rent on our own data, and we couldn't find one. Lagerland has no team, investors, or advertisers behind it. It's a small Apple studio in Finland that builds the apps we wanted to use."
+  bio: "We wanted a log that keeps up at the rack, a program we could follow without building one, and a clear signal when a lift stops moving. GymLogger X does those three things from your own training history, with the analysis worked out on your iPhone. It shows no ads, asks for no account, and keeps your workouts on your devices and in your own iCloud. Lagerland Apps is a small independent Apple studio in Finland, with no investors or advertisers behind it."
   support_email: "lagerland.apps@proton.me"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
-    - "Architecture is GDPR-first: on-device storage, sync through your own iCloud, zero analytics SDKs"
+    - "Workouts are stored on your device and synced through your own iCloud, and the app has no analytics SDKs"
     - "Lagerland's App Store catalogue is {APP_COUNT} privacy-first apps, all handling data the same way"
-    - "Paid for by people buying the software, without ads, investors, or growth-hacking"
+    - "Funded by people who buy the apps, with no ads or investors"
   external_link:
     href: "/lagerland-apps/"
     label: "Read the Lagerland studio backstory"
 
-# Plateau detection transparency: the algorithm rule disclosed publicly
+# Plateau and insight transparency: what the app measures and what it leaves to you.
 plateau_disclosure:
-  title: "How GymLogger X plateau detection actually works"
-  rule: "Pro flags a plateau on an exercise when two signals agree across your four most recent non-deload sessions: the trend in estimated 1RM (Epley) fails to clear an improvement threshold computed from your own 90-day rate of gain on that lift (kept between 0.05% and 1% per session), while total volume has not fallen more than 3%. In other words, you are working at least as hard for no more strength. Confirming also requires either a fatigue signal (training the lift twice in seven days, on back-to-back days, or with volume rising) or at least six non-deload sessions on the lift, plus a computed confidence score of at least 0.4; below that score you never see the flag. Three sessions meeting the same strength-and-volume test raise an earlier Monitoring flag instead. Detection stays off entirely for your first 12 weeks of training, and lifts whose 90-day rate of gain is under 0.08% per session, including lifts that have not moved at all, go to a separate trend analysis that labels them progressing, maintaining, regressing or uncertain, because a four-session window cannot tell a 0.08% gain from zero. We update this page when the thresholds change."
-  what_it_does_not_do: "It will not auto-restructure your program or change your weights. It will not nag you with notifications. It shows the flag on the exercise with the likely cause (volume too high, intensity held too high, too little variation, or too little recovery) and two suggestions, such as a deload week or a change of rep range. You decide what to change in your programming."
+  title: "How GymLogger X spots a stalled lift"
+  rule: "Every logged set feeds an estimated 1RM for that exercise, using the Epley formula on sets of 3 or more reps. Strength Progress (Pro) charts that estimate over time, keeps a Rep-Max table of estimated against actual bests, and gives each lift an overload score and a status: Plateau, Watching, or Plateau Predicted. Insights then compares your recent training with your own history: readiness, weekly load ratio, recovery debt, Push/Pull, Upper/Lower, and Front/Back balance, and weekly hard sets per muscle against the MEV, MAV, and MRV volume landmarks. Warm-up sets and deload weeks stay out of the set counts."
+  what_it_does_not_do: "Everything is worked out by fixed rules on your iPhone. There is no chat bot and no language model, and nothing is sent to a server. The Next Move card and up to three coaching suggestions tell you what your data shows, and any change to your program is yours to make. The app sends no notifications. Readiness, fatigue, and the conditioning score are training guidance, not medical advice."
 
-# Method note: the same algorithm as plateau_disclosure, but structured as
-# HowToStep[] so the layout emits HowTo JSON-LD eligible for SERP HowTo
-# rendering and AI Overview citation. The visible "how-it-works" include
-# also renders these steps as a numbered method list.
+# Method note: structured as HowToStep[] so the layout emits HowTo JSON-LD.
+# The visible "how-it-works" include also renders these steps as a numbered list.
 how_it_works:
-  intro: "GymLogger X turns logged sets into a plateau warning with a published three-step rule. There is no machine learning involved, and you can check every step yourself."
+  intro: "GymLogger X turns the sets you log into a plain next step. It follows three steps, all on your iPhone."
   steps:
-    - title: "Estimate 1RM from every set"
-      detail: "Each set's load and reps are converted to an estimated 1RM using the Epley formula (weight × (1 + reps / 30)), with reps capped at 30; a single counts as its own 1RM. The session's per-exercise e1RM is the highest value across its sets, and deload sessions (those from a generated program's deload week, plus any you mark as one) are left out of the analysis entirely so a light week cannot fake a flat trend."
-    - title: "Compare against a threshold built from your own rate of gain"
-      detail: "GymLogger X does not use one fixed percentage for everybody. It measures how fast you have actually been gaining on that lift over the last 90 days and sets the bar from that, kept between 0.05% and 1% per session. It then fits a trend line through your four most recent non-deload sessions. Detection needs at least eight sessions on the lift, relaxed to five if you train it infrequently, and a lift gaining under 0.08% per session over 90 days gets a trend reading instead of a plateau flag."
-    - title: "Surface the flag, name the cause, leave the call to you"
-      detail: "If the trend fails to clear your threshold while total volume holds within 3%, the exercise is flagged: as Monitoring after three such sessions, and as a confirmed plateau after four, provided a fatigue signal or at least six sessions on the lift back it up and the confidence score reaches 0.4. A confirmed flag names the likely cause (volume, intensity, variation, or recovery) and two suggestions. It does not auto-restructure your program or send notifications, and any change to the programming is yours to make."
+    - title: "Log weight and reps"
+      detail: "Each set row shows your previous weight and reps and the target. Mark a set as a warm-up and it still counts toward tonnage but stays out of weekly set volume. Sessions from a deload week are recognized as deloads, and you can mark any past session as one."
+    - title: "Estimate 1RM and follow the trend"
+      detail: "GymLogger X estimates your 1RM with the Epley formula from sets of 3 or more reps and charts it for every exercise. With Pro, Strength Progress shows the trend, a Rep-Max table, an overload score, and a plateau status for each lift."
+    - title: "Read the next move"
+      detail: "With Pro, the Next Move card on the Progress tab says whether to rest, deal with a plateau, work on a weak point, or train as planned. Once you have enough history, up to three plain-language suggestions explain why. You decide what changes in your program."
 
 who_for:
-  - "You do strength training and want a fast, minimalist log without a social fitness feed"
-  - "You wear an Apple Watch and want to log sets from your wrist while the phone stays in your bag"
-  - "You follow PPL, Upper/Lower, Full Body, or periodized programs and want plateau detection"
-  - "You care about estimated 1RM and want a plateau rule you can read for yourself"
-  - "You're a coach who wants clients to follow your program day by day, imported from a spreadsheet (Pro)"
-  - "You refuse subscription-locked workout apps and want a non-recurring lifetime option"
+  - "You already lift and want a set logger that keeps up with weights, reps, supersets, and plates"
+  - "You'd rather follow a proven program (5×5, push/pull/legs, upper/lower, full body, conjugate) than design one"
+  - "You want estimated 1RM trends, PRs, volume per muscle, and plateau and fatigue signals from your own history"
+  - "You wear an Apple Watch and want heart rate and calories attached to your lifting sessions"
+  - "You're moving from a spreadsheet or another app and want to bring your history with you (CSV import, Pro)"
+  - "You're a coach whose clients would rather follow your spreadsheet program in an app (Import Program, Pro)"
 
 who_not_for:
-  - "You primarily do cardio, group fitness, or bodyweight-only routines"
-  - "You want guided video workouts or an AI trainer talking through sessions"
-  - "You rely on social features, public leaderboards, or workout sharing"
-  - "You train on Android (the app is iOS only for now)"
+  - "You mostly do cardio or group fitness classes"
+  - "You want an AI chat coach or follow-along video workouts"
+  - "You want to train with only your Apple Watch: every workout starts on the iPhone"
+  - "You use Android, or want your log on iPad or Mac (GymLogger X runs on iPhone, with an Apple Watch app)"
+  - "You want workout reminders: the app sends no notifications"
 
 alternatives_to:
   - "Strong"
@@ -160,108 +161,106 @@ alternatives_to:
   - "StrongLifts 5x5"
   - "Alpha Progression"
 
-# 6-row comparison table, fact-checked against each competitor's public App Store page,
-# landing page, and pricing documentation. Sources and verification date in the footnote.
+# Comparison table, competitor facts checked against each app's public sources (footnote).
+# No typed prices: pricing models are described in words.
 comparison_table:
-  intro: "Strong, Hevy, and Fitbod are good apps, and millions of people use them happily. These are the differences that matter when you pick where to keep a decade of training history, checked against each app's public sources on the date in the footnote."
+  intro: "Strong, Hevy, and Fitbod are popular, capable apps. These are the practical differences when you choose where to keep years of training history."
   competitors: ["GymLogger X", "Strong", "Hevy", "Fitbod"]
   rows:
-    - feature: "Cheapest one-time / lifetime tier"
-      values: ["{P_LIFETIME} lifetime", "$99.99 lifetime (Strong PRO Forever)", "$74.99 lifetime", "Subscription only, no lifetime"]
+    - feature: "Pricing model"
+      values: ["Free, with Pro monthly, yearly, or lifetime", "Free, with Pro subscription or lifetime", "Free, with Pro subscription or lifetime", "Subscription only"]
     - feature: "Use the app with no account or sign-up"
-      values: ["Yes, without email or Apple ID", "Account required (Apple / Google / email)", "Account required", "Account required"]
+      values: ["Yes, nothing to sign up for", "Account required", "Account required", "Account required"]
     - feature: "Apple Watch: log a full session without the iPhone"
-      values: ["No. Logs sets from the wrist; the iPhone runs the session", "Yes, fully standalone", "Live-syncs to iPhone (not fully standalone)", "No. Must connect to iPhone to log the workout"]
-    - feature: "CSV export of every set / rep"
-      values: ["No. Apple Health workout export only", "Pro tier only", "Yes", "Limited"]
-    - feature: "Plateau / progression rule published in plain English"
-      values: ["Yes, algorithm disclosed", "No", "No", "No, proprietary AI"]
-    - feature: "App Store nutrition label"
-      values: ["Data Not Collected", "Multiple data categories Linked to You", "Multiple data categories Linked to You", "Multiple data categories Linked to You"]
-  footnote: "Verified 2026-05-13 against each app's public App Store page, developer landing page, and pricing / help documentation: strongapp.io, hevyapp.com, fitbod.me. Competitor offerings change often, so check again before switching."
+      values: ["No. You log sets on the wrist; the iPhone starts the session", "Yes, standalone", "Live-syncs with the iPhone", "No. The watch must connect to the iPhone"]
+    - feature: "CSV export of every set"
+      values: ["No. Workouts go to Apple Health", "Pro tier only", "Yes", "Limited"]
+  footnote: "Competitor details checked on 2026-05-13 against each app's App Store page, website, and help pages (strongapp.io, hevyapp.com, fitbod.me). They change often, so check again before you switch. The App Store shows current prices."
 
 value_points:
-  - title: "Log from the wrist"
-    description: "Start the session on your iPhone, then log each set's reps and weight, run rest timers, and watch live heart rate on Apple Watch. The phone keeps the record and can stay in your bag."
-  - title: "Programs built around you"
-    description: "Smart Program Creator builds periodized Full Body, Upper/Lower, PPL, Push/Pull, Arnold, or Bro Split programs (linear, DUP, block, or wave) with scheduled deload weeks. Tell it your equipment, schedule, and injuries."
-  - title: "A plateau rule you can read"
-    description: "Pro flags a plateau when e1RM stops clearing a threshold set by your own 90-day rate of gain while volume holds steady. The rule is published in plain English, so you can argue with it."
-  - title: "Cheapest lifetime tier, data on your devices"
-    description: "{P_LIFETIME} lifetime is cheaper than Hevy's $74.99 or Strong's $99.99 lifetime, and Fitbod doesn't offer one. Workouts stay on your devices and sync through your own iCloud, and every finished session can be saved to Apple Health."
+  - title: "Last time's numbers, already in the row"
+    description: "Before you type anything, every set row shows your previous weight and reps and the target. Supersets and giant sets log like straight sets. The plate calculator works out each side of the bar from the plates your gym actually has, and the rest timer sits on your Lock Screen and in the Dynamic Island."
+  - title: "44 programs, or one built around you"
+    description: "Six programs are free, including Linear 5×5 Foundation and The Golden Six. Pro adds 38 more, from push/pull/legs and the Texas Method to the Conjugate Method and a 6-week peaking block. The Smart Program Creator builds a plan around your equipment, schedule, goals, and injuries. Start a Pro program while subscribed and you can finish it even if the subscription ends."
+  - title: "Signals from your own logs"
+    description: "With Pro, the Next Move card tells you to rest, deal with a plateau, work on a weak point, or train as planned. Behind it are your readiness, weekly load ratio, recovery debt, muscle balance, and plateau status for each lift, all worked out on your iPhone with no chat bot involved."
+  - title: "Your wrist and your Home Screen"
+    description: "The free Apple Watch app logs sets and shows live heart rate, calories, and rest. Its Heart Rate Rest Timer can tell you when your heart rate has recovered. Twelve widgets, two Live Activities, and a Start Workout control (iOS 18 or later) keep today's plan in view; on iOS 27, six widgets can fill a whole Home Screen page with Pro."
 
 features:
+  - title: "Fast set logging"
+    description: "Start an empty workout or a saved template in two taps. Log weight and reps in kg or lbs, mark warm-up sets, add sets, swap an exercise for a program variant, and pick up where you left off if you leave mid-workout. The Workout Complete screen shows volume, your top lift, new records, and the muscles you trained."
+  - title: "Training Programs"
+    description: "44 ready-made programs, 1 to 8 weeks long, with filters for goal, level, days, and equipment. Six are free: Whole Body Program, The Golden Six, 2-, 3-, and 4-Day Split Routines, and Linear 5×5 Foundation. Pro adds 38, including push/pull/legs, German Volume Training, the Texas Method, Powerbuilding 5-Day, and Hybrid Strength (Lift + Run). Preview any program, or customize a copy."
   - title: "Smart Program Creator"
-    description: "Tell GymLogger X your goals, equipment, schedule, experience level, and injury history. It generates a periodized program (linear, DUP, block, or wave) with injury-aware exercise selection, a rep range and reps-in-reserve target for every exercise, and scheduled deload weeks. Supports Full Body, Upper/Lower, PPL, Push/Pull, Arnold, and Bro Split. Free accounts keep one program; Pro removes the limit."
-  - title: "Plateau detection with a published rule"
-    description: "Pro flags a stall when an exercise's estimated 1RM stops clearing a threshold built from your own recent rate of gain, while total volume holds steady. Muscle balance (push:pull, upper:lower, front:back, plus neglected muscles), training load tracking, and fatigue monitoring help you read your own training. The rule is published below."
-  - title: "A built-in program library"
-    description: "44 ready-made programs: six free, including a linear 5×5 and the Golden Six, and 38 more with Pro: 5×5 variations, the Texas Method, Push/Pull/Legs, powerbuilding, glute specializations, and a 6-week peaking block. Preview every week before you start, or customize a copy."
-  - title: "Apple Watch set logging"
-    description: "Log reps and weight for each set from your wrist, with rest timers, live heart rate, and the workout at a glance. The iPhone starts and runs the session; sets logged on the watch wait there until the phone receives them."
-  - title: "Strength numbers and charts"
-    description: "Personal records, estimated 1RM (Epley), volume trends, weekly summaries, weekly hard sets per muscle, and training consistency, each with its own chart. There is also a rep-max table at 1/3/5/8/10/12 reps per exercise, and a plate calculator for loading the bar."
-  - title: "Templates, supersets, giant sets"
-    description: "Save any workout as a template and reuse it next week with one tap (three templates on the free tier). Supersets and giant sets are built in, and you can mark warm-up sets so they stay out of your weekly set counts."
+    description: "A step-by-step wizard asks about your equipment, goals, injuries, schedule, and preferences, then builds a program: full body, upper/lower, push/pull/legs, push/pull, Arnold, or bro split, for 4, 8, or 12 weeks or ongoing, with linear, undulating, block, or wave periodization. The preview shows deload weeks, a prehab warm-up, and injury accommodations, and you can swap exercises or regenerate. Free users keep one program at a time; Pro removes the limit."
+  - title: "Insights and plateau signals (Pro)"
+    description: "Estimated 1RM charts with a plateau status for each lift, readiness and fatigue signals, weekly load ratio, Push/Pull, Upper/Lower, and Front/Back balance, weekly sets per muscle against MEV, MAV, and MRV, a muscle heatmap over 7, 14, or 28 days, and every personal record in one list. Program reports end with adherence and a rule-based Coach Verdict."
+  - title: "Apple Watch app"
+    description: "Start the workout on your iPhone, then log sets on the wrist with weight and rep steppers, watch live heart rate, time, and calories, and run the rest ring with 15-second adjustments. Finished workouts are saved to Apple Health as strength training. The Watch app is free."
+  - title: "Widgets and Live Activities"
+    description: "Twelve widgets for the Home Screen and Lock Screen, including Training Grid (a year of training, one square per day), Muscle Map, Today, Lift Ladder, and Record. Two Live Activities show the running workout and the rest countdown on the Lock Screen and in the Dynamic Island. Some small and Lock Screen sizes are free; the rest need Pro."
 
 screenshots:
   - src: "/assets/screenshots/gymlogger-x/1.webp"
-    alt: "GymLogger X workout screen with a weight and reps target for today"
+    alt: "GymLogger X workout on iPhone: barbell bench press sets with last time's 225 lbs × 6 shown beside the set rows"
   - src: "/assets/screenshots/gymlogger-x/2.webp"
-    alt: "GymLogger X progress screen flagging a stalled lift with a trend chart"
+    alt: "GymLogger X Progress Insights with a Next Move suggestion, a readiness score, and an estimated 1RM chart"
   - src: "/assets/screenshots/gymlogger-x/3.webp"
-    alt: "GymLogger X progress overview with a suggested increase"
+    alt: "GymLogger X Progress Overview with training load and a suggestion that there is room to push"
   - src: "/assets/screenshots/gymlogger-x/4.webp"
-    alt: "GymLogger X training programs list with proven templates such as push pull legs"
+    alt: "GymLogger X Training Programs catalog with filters and programs such as Linear 5×5 Foundation and Upper/Lower"
   - src: "/assets/screenshots/gymlogger-x/5.webp"
-    alt: "GymLogger X muscle balance heatmap showing undertrained muscles"
+    alt: "GymLogger X muscle heatmap showing overloaded quadriceps and undertrained glutes and chest"
   - src: "/assets/screenshots/gymlogger-x/6.webp"
-    alt: "GymLogger X Home Screen widgets with the training plan and a year of sessions"
+    alt: "GymLogger X Home Screen widgets with a bench press record, a muscle map, and a year of sessions on a training grid"
   - src: "/assets/screenshots/gymlogger-x/7.webp"
-    alt: "GymLogger X on Apple Watch logging a set from the gym floor"
+    alt: "GymLogger X on Apple Watch showing heart rate and calories during barbell bench press, next to the workout on iPhone"
   - src: "/assets/screenshots/gymlogger-x/8.webp"
-    alt: "GymLogger X feature summary: no ads, no account, Apple Watch, iCloud sync and 34 languages"
+    alt: "GymLogger X feature tiles: no ads, no account, Apple Watch, Apple Health, iCloud sync, plate calculator, and Lock Screen widgets"
 
 privacy:
   data_collection: "none"
   tracking: false
   account_required: false
   notes:
-    - "No ads, no analytics SDKs, no social feed"
-    - "No account required: no email, Apple ID sign-in, or sign-up"
-    - "Workouts stay on your devices and in your own private iCloud"
-    - "Apple Health export saves finished sessions as strength-training workouts"
-    - "GDPR-first by architecture: the data never leaves your devices and iCloud"
+    - "No ads, and no third-party analytics or advertising SDKs"
+    - "No account: there is nothing to sign up for"
+    - "Workouts are stored on your iPhone and synced through your own private iCloud when you're signed in to iCloud"
+    - "The app has no server of its own and sends your workouts nowhere else"
+    - "Apple Health: finished workouts are saved as strength training, and heart rate and active energy are read for your insights"
 
 coach_cta:
   title: "For Coaches"
-  description: "Coaches can recommend GymLogger X through a referral partnership, and clients can import a coach's spreadsheet program (Pro) and follow it day by day."
-  cta_label: "Learn about the coach program"
+  description: "Share your program as a spreadsheet (week, day, exercise, sets, and reps). Clients import it once with Pro and follow it day by day."
+  cta_label: "See how coaches use it"
   url: "/apps/gymlogger-x/coaches/"
 
 faq:
   - q: "What is GymLogger X?"
-    a: "GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch and a private alternative to Strong, Hevy, and Fitbod. It includes 1,500 exercises (animated demos with Pro), the Smart Program Creator, a 44-program library, estimated-1RM tracking, plateau detection, and Apple Watch set logging. The core is free; Pro costs {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime."
+    a: "GymLogger X is a strength training log for iPhone, with an Apple Watch app. You log sets with last time's numbers already in the row, follow one of 44 ready-made programs or one the Smart Program Creator builds for you, and, with Pro, get plateau, fatigue, and muscle-balance signals from your own logs. It has 1,500 exercises (animated demos with Pro) and runs in 40 languages. The core is free; Pro is {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once."
   - q: "How is GymLogger X different from Strong, Hevy, and Fitbod?"
-    a: "There are four practical differences. GymLogger X needs no account, while Strong, Hevy, and Fitbod all need one. The session is set up for logging from Apple Watch: set entry, rest timers, and live heart rate on the wrist while the iPhone runs the session in your bag. The lifetime tier is {P_LIFETIME}, cheaper than Hevy's $74.99 or Strong's $99.99 lifetime, and Fitbod doesn't offer one. And the plateau detection rule is published in plain English (e1RM failing to clear a threshold set by your own 90-day rate of gain, while volume holds steady), where the others keep theirs inside their own AI."
+    a: "GymLogger X needs no account; when we checked on 2026-05-13, Strong, Hevy, and Fitbod all asked you to sign up. Its Apple Watch app is free and has a rest timer that can tell you when your heart rate has recovered. Pro comes as a subscription or a one-time lifetime purchase. And its coaching is rule-based and worked out on your iPhone from your own logs, with no chat bot. The comparison pages go into detail: <a href=\"/alternatives/strong-workout-app/\">Strong</a> and <a href=\"/alternatives/fitbod/\">Fitbod</a>."
   - q: "What is the Smart Program Creator?"
-    a: "It generates personalised periodised training based on your goals, equipment, schedule, experience level, and injury history. Supports Full Body, Upper/Lower, PPL, Push/Pull, Arnold, and Bro Split with linear, DUP, block, or wave periodisation, a rep range and reps-in-reserve target for each exercise, and scheduled deload weeks. You can preview the whole program and swap exercises before you start. During a session each exercise pre-fills the weight you used last time; the app does not raise your weights for you. Free accounts keep one program; Pro removes the limit."
+    a: "It is a wizard that builds a program from your equipment, goals, injuries, schedule, and preferences. You pick a split (full body, upper/lower, push/pull/legs, push/pull, Arnold, or bro split), days per week, session length, a length of 4, 8, or 12 weeks or ongoing, and linear, undulating, block, or wave periodization. Injuries are entered by body part, with movements to avoid. The preview shows deload weeks, a prehab warm-up, and injury accommodations, and you can swap an exercise or regenerate before you start. It is free to use; free users keep one program at a time."
   - q: "Does GymLogger X support RPE and RIR?"
-    a: "Partly. Programs from the Smart Program Creator give each exercise a reps-in-reserve (RIR) target, shown in the program preview, and programs imported from a spreadsheet can carry an RIR or RPE column. Logged sets record weight and reps only (there is no per-set RPE or RIR entry), and the analytics, including the plateau rule, work from those two numbers. <a href=\"/journal/rpe-and-rir-explained/\">RPE and RIR, explained</a> covers why, and what that means if you rate every set."
+    a: "Not when you log. A logged set records weight and reps, plus whether it was a warm-up; there is no per-set RPE or RIR entry, and the analytics, plateau status included, work from weight and reps. <a href=\"/journal/rpe-and-rir-explained/\">RPE and RIR, explained</a> covers what that means if you rate every set."
   - q: "Does GymLogger X calculate Wilks, DOTS, or Sinclair?"
-    a: "No. GymLogger X does not compute Wilks, DOTS, or Sinclair scores. It tracks estimated 1RM (Epley) for every lift, a rep-max table at 1, 3, 5, 8, 10, and 12 reps, and your personal records, and it has a plate calculator for loading the bar."
+    a: "No. GymLogger X doesn't calculate Wilks, DOTS, or Sinclair scores. It estimates 1RM for every lift with the Epley formula, keeps a Rep-Max table and your personal records, and has a plate calculator for loading the bar."
   - q: "Does GymLogger X work on Apple Watch without the iPhone?"
-    a: "No. The iPhone starts and runs the workout; the Apple Watch app is where you log each set's reps and weight, run rest timers, and see live heart rate. The phone can stay in your bag nearby, and sets logged on the watch wait there until the iPhone receives them."
-  - q: "How does the plateau detection algorithm work?"
-    a: "Plateau detection flags an exercise when its estimated 1RM (Epley) stops clearing an improvement threshold derived from your own 90-day rate of gain on that lift (kept between 0.05% and 1% per session), across your four most recent non-deload sessions, while total volume has not dropped more than 3%. Confirming needs a fatigue signal or at least six sessions on the lift behind it, and a confidence score of at least 0.4. We update the published rule when the thresholds change. The flag does not auto-restructure your program. It appears on the exercise with the likely cause (volume, intensity, variation, or recovery) and two suggestions, and leaves the programming call to you."
+    a: "No. The Apple Watch app is a companion: you start the workout on your iPhone, and sets you log on the watch go through the phone. On the wrist you log weight and reps, see heart rate, time, and calories, and run the rest timer. Heart rate and calories need Health permission on the watch."
+  - q: "How does plateau detection work?"
+    a: "GymLogger X estimates your 1RM for each exercise with the Epley formula, from sets of 3 or more reps, and follows the trend across your sessions. With Pro, Strength Progress gives each lift a status (Plateau, Watching, or Plateau Predicted) and an overload score, and the Next Move card turns that into a suggestion such as a rest day or a change of approach. It all runs on your iPhone by fixed rules. It doesn't change your program or send notifications; you decide what to do."
   - q: "Is GymLogger X free? What does Pro unlock?"
-    a: "Core logging is free for good: unlimited set logging on iPhone and Apple Watch, the exercise library, one program at a time, three templates, the last 30 days of history, and Apple Health export. Pro unlocks unlimited programs and templates, the full 44-program library, your full history, plateau detection, muscle balance and training load analytics, animated demos, custom exercises, and CSV import. Pro is {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime; the lifetime option pays off if you plan to use the app for more than ~2 years. Lifetime supports Family Sharing, so one purchase covers up to 5 family members at no extra cost. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Logging is free for good: unlimited workouts on iPhone and Apple Watch, the Heart Rate Rest Timer, 1,500 exercises, one program at a time (6 free programs, your own, or one from the Smart Program Creator), 3 templates, the last 30 days of history, Apple Health export, and iCloud sync. Pro unlocks all 44 programs, unlimited programs and templates, your full history, Insights, recovery and plateau signals, the muscle heatmap, animated demos, custom exercises, CSV import, every widget, and 8 color themes. Pro is {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once, and it supports Family Sharing. Prices are in USD; the App Store shows your local currency at checkout."
+  - q: "What happens to my program if my Pro subscription ends?"
+    a: "If you started a Pro program while subscribed, you can finish it after the subscription ends. Free limits apply to everything else: one active program, 3 templates, and the last 30 days of history, with older sessions kept and unlocked again when you upgrade."
   - q: "Does GymLogger X need an account or internet connection?"
-    a: "No. Logging works fully offline with no account, email, Apple ID sign-in, or sign-up flow. Workouts are stored on your device and synced through your own private iCloud, and finished sessions can be saved to Apple Health. Lagerland's server never receives your workouts: the app sends it only a random install ID (with a referral code, if you used one) and, when you buy Pro, the purchase details needed to verify it."
+    a: "No. There is no account and no sign-up, and logging works fully offline, exercise demos included. Workouts are stored on your iPhone and synced through your own private iCloud when you're signed in to iCloud, and finished workouts are saved to Apple Health. The app has no server of its own, so your workouts are never sent to us."
   - q: "Can I export my data if I leave?"
-    a: "Not as a spreadsheet; there is no CSV export of sets and reps yet. Each finished workout can be saved to Apple Health as a strength-training session, any workout can be shared as text listing every set, and your history stays in your own iCloud. Coming from another app? Pro can import your workouts from a CSV."
+    a: "There is no file export. Each finished workout is saved to Apple Health as a strength training session, any workout can be shared as text, and the recap and Weekly Summary can be shared as images. Coming from another app or a spreadsheet? Pro imports workouts from CSV, TSV, or TXT files, with a column-mapping step."
   - q: "What if my exercise isn't in the 1,500-exercise library?"
-    a: "Create your own with Pro. A custom exercise takes a name, primary muscles, equipment, and difficulty, and is logged and tracked like any built-in lift, plateau detection included."
+    a: "Create it with Pro. A custom exercise takes a name, equipment, and muscle groups, and you log it like any built-in one. Pro also lets you edit the name, equipment, and muscles of built-in exercises, and reset them to the default."
 
 support:
   email: "lagerland.apps@proton.me"
@@ -273,12 +272,12 @@ release:
 
 related_journal:
   slug: "choosing-a-strength-program-you-will-finish"
-  anchor: "PPL, Upper/Lower or 5/3/1 - choosing a program you will actually finish"
+  anchor: "PPL, Upper/Lower, or 5/3/1: choosing a program you will actually finish"
 
 ratings:
   value: "4.8"
   count: 17
   last_synced: "2026-06-22"
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
-GymLogger X is a fast, minimalist strength training tracker for iPhone and Apple Watch, made as a private alternative to Strong, Hevy, and Fitbod. It has the cheapest lifetime tier ({P_LIFETIME}) and needs no account. The Smart Program Creator builds personalised periodised training (Full Body, Upper/Lower, PPL, Push/Pull, Arnold, Bro Split) with linear, DUP, block, or wave periodisation, reps-in-reserve targets, and scheduled deload weeks, and a 44-program library adds ready-made plans. Pro adds plateau detection (e1RM failing to clear a threshold derived from your own recent rate of gain, while volume holds steady), muscle balance analysis (push:pull, upper:lower, front:back), training load monitoring, and fatigue tracking. On Apple Watch you log each set's reps and weight, run rest timers, and see live heart rate while the iPhone runs the session. The app tracks personal records, 1RM estimates (Epley), volume trends, and training consistency. It has no ads, accounts, tracking, or AI nagging. The core is free; Pro costs {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime.
+GymLogger X is a strength training log for iPhone, with an Apple Watch app. Every set row shows what you lifted last time, supersets and giant sets log like straight sets, and the plate calculator loads the bar from the plates your gym has. You can follow one of 44 ready-made programs (6 free, 38 with Pro) or let the Smart Program Creator build one around your equipment, schedule, goals, and injuries. With Pro, Insights reads your own history and shows readiness, fatigue, weekly load ratio, muscle balance, and a plateau status for each lift, worked out by fixed rules on your iPhone. On Apple Watch you log sets, see live heart rate, and can let the rest timer tell you when your heart rate has recovered; the workout starts on the iPhone. The app has 1,500 exercises, 12 widgets, and two Live Activities, and runs in 40 languages. There are no ads and no account, and workouts sync through your own iCloud. The core is free; Pro costs {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once.
