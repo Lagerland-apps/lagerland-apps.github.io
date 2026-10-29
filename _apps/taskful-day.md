@@ -2,8 +2,8 @@
 layout: app
 slug: taskful-day
 name: "Taskful Day"
-tagline: "Plan the day and finish it, calmly. Now on Mac."
-quick_answer: "Taskful Day is a calm daily planner for iPhone, iPad, and Mac that turns overwhelming to-do lists into realistic day plans, with focus sessions, voice capture, mood journaling, and four visual day views. Unfinished tasks roll forward to the next day with no streaks or red badges. iCloud keeps your devices in sync. It is free, with Pro from {P_MONTHLY}/month, and has no ads, no tracking, and no account."
+tagline: "A day planner where unfinished tasks move on without guilt."
+quick_answer: "Taskful Day is a day planner for iPhone, iPad, Mac, and Apple Watch. Unfinished tasks carry forward to today on their own, so the Today list never turns into a red overdue pile, and you can add a task by typing a sentence, speaking it, asking Siri, or using your watch. The free version lets you create up to 50 tasks in total. Pro ({P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once) adds unlimited tasks, iCloud sync, the Day Clock, Energy River, and Day Map views, and 21 Home Screen widgets, and every new install gets 7 days of Pro free with no card. There is no account to create, and the app has no ads or tracking."
 category: productivity
 status: live
 
@@ -18,25 +18,27 @@ plans_footnote: "Prices in USD; the App Store shows your local currency at check
 plans:
   - name: "Free"
     price: "$0"
-    summary: "The full planner, with a single workspace stored on-device only."
+    summary: "The planner, for up to 50 tasks in total. Every new install starts with 7 days of Pro, no card needed."
     features:
-      - "All four visual day views: Day Clock, Energy River, Day Map, Focus Orbit"
-      - "Focus Orbit immersive timer (Pomodoro 25-minute default)"
-      - "Voice task capture with on-device speech recognition"
-      - "End-of-day mood journal and reflection prompts"
-      - "Tasks roll forward with no streaks and no red badges"
-      - "One workspace, with all data kept on this device"
+      - "Create up to 50 tasks (a lifetime total: deleting tasks doesn't reset it)"
+      - "Type-a-sentence capture, the Inbox, Siri, and voice capture on iPhone and iPad"
+      - "Automatic carry-forward, recurring tasks, and reminders you can snooze"
+      - "Journal and the weekly Analytics view"
+      - "3 Lock Screen widgets and the Control Center capture button"
+      - "Apple Watch: Now, Today, Tomorrow, and capture from your wrist"
+      - "One workspace and 5 themes"
   - name: "Pro · Monthly"
     price: "{P_MONTHLY}/mo"
     kind: monthly
-    summary: "Full Pro, billed monthly. Universal Purchase across iPhone, iPad, and Mac."
+    summary: "All of Pro, billed monthly."
     features:
-      - "iCloud sync across iPhone, iPad, and Mac (your own iCloud account)"
-      - "Full analytics + pattern insights across weeks and months"
-      - "All Home Screen, Lock Screen, and StandBy widgets"
-      - "Multiple workspaces, so work, personal, and side projects each get their own space"
-      - "Apple Reminders re-import"
-      - "Universal Purchase: one Pro, three platforms"
+      - "Unlimited tasks, workspaces, checklist steps, and check-ins"
+      - "Day Clock, Energy River, Day Map, and the Schedule week grid"
+      - "The Focus Mode timer, with a Live Activity on iPhone"
+      - "21 Home Screen widgets, up to a full page on iOS 27"
+      - "iCloud Sync through your own private iCloud"
+      - "Monthly, quarterly, and yearly Analytics, plus 10 more themes"
+      - "Re-import from Apple Reminders whenever you like"
   - name: "Pro · Annual"
     price: "{P_YEARLY}/yr"
     kind: yearly
@@ -53,15 +55,13 @@ plans:
     features:
       - "Everything in Pro · Annual"
       - "One-time purchase, no renewal"
-      - "Restores on every device signed in with the same Apple ID"
-      - "Family Sharing supported"
 
 icon: "/assets/icons/taskful-day.png"
 og_image: "/assets/og/taskful-day.png"
 
 seo:
-  title: "Taskful Day: Calm Daily Planner for iPhone, iPad & Mac"
-  description: "Calm daily planner for iPhone, iPad & Mac. Realistic day plans with no streaks or guilt, ADHD-friendly focus sessions, iCloud sync. Universal Purchase."
+  title: "Taskful Day: Calm Day Planner for iPhone, iPad & Mac"
+  description: "Day planner for iPhone, iPad, Mac, and Apple Watch. Unfinished tasks carry forward on their own. 21 widgets, no account. Try Pro free for 7 days."
   keywords:
     - daily planner app
     - daily planner Mac
@@ -84,26 +84,31 @@ seo:
     - mindful productivity app
     - iCloud sync planner
     - cross-platform planner Apple
+    - apple watch to do list
+    - time blocking app
 
 hero:
-  headline: "Your day, actually planned. Now on Mac."
-  secondary: "Universal Purchase: one download, three devices. Free with optional Pro from {P_MONTHLY}/mo, {P_YEARLY}/yr, or {P_LIFETIME} lifetime."
-  subheadline: "Taskful Day turns an overwhelming to-do list into a calm, realistic plan you can finish, with time-blocking, focus sessions (Pomodoro defaults), smart insights, and nothing that makes you feel guilty. It runs natively on iPhone, iPad, and Mac, and iCloud sync keeps every device in step."
+  pre_headline: "A day planner for iPhone, iPad, Mac, and Apple Watch."
+  headline: "What you don't finish today is waiting on tomorrow's list."
+  secondary: "Unfinished tasks carry forward on their own, and the Today list shows no overdue badge. Free to download, with 7 days of Pro on every new install and no card needed."
+  subheadline: "Type a task the way you'd say it and Taskful Day picks out the date, time, and priority. With Pro, see the day as a 24-hour clock, a river of time, or a map, block out the week on a grid, and keep it all in front of you with 21 Home Screen widgets."
   cta_label: "Download Free"
   alt: "Taskful Day today's plan view on iPhone with a focus session running"
 
 who_for:
-  - "You've uninstalled streak-based habit apps because missing a day demotivated you"
-  - "You have ADHD or a variable schedule and need realistic daily planning instead of backlog management"
-  - "You want an immersive focus-session timer inside your planner"
-  - "You journal daily and want mood/reflection data alongside task completion"
-  - "You want your tasks on your device or in your own iCloud, not on someone else's server"
-  - "You plan your day on Mac while you work and check it on iPhone or iPad through the day"
+  - "Unfinished lists leave you feeling behind, and you want leftover tasks to move to today without a red overdue pile"
+  - "You plan around time and like to see the day as a clock or a timeline, or to block out the week on a grid"
+  - "You capture on the go: a typed sentence, your voice, Siri, Control Center, or your Apple Watch"
+  - "You plan at your Mac and check the day on your iPhone, iPad, or watch"
+  - "You want your planner on the Home Screen, not buried in an app"
+  - "You'd rather not create an account, and you want your tasks on your device or in your own iCloud"
 
 who_not_for:
-  - "You manage team projects and need shared task lists with assignees"
-  - "You rely on a deep GTD workflow with contexts, tags, and projects across years"
+  - "You manage team projects and need shared lists with assignees"
+  - "You run a GTD system built on tags, contexts, and nested projects"
   - "You want Kanban boards, Gantt charts, or dependency graphs"
+  - "You need two-way sync with Apple Calendar or Reminders (Taskful Day shows Calendar events read-only and imports Reminders one way)"
+  - "You need Android or a web app"
 
 alternatives_to:
   - "Streaks"
@@ -118,68 +123,70 @@ alternatives_to:
   - "Sorted³"
 
 comparison_table:
-  intro: "Each column below answers a question people ask when shopping for a calm daily planner. Streaks, Things 3, TickTick, and Structured each do something well. Taskful Day fits if you want to focus on one day, skip streak guilt, and make one Universal Purchase across iPhone, iPad, and Mac."
+  intro: "Each row below answers a question people ask when shopping for a day planner. Streaks, Things 3, TickTick, and Structured each do something well. Taskful Day fits if you want one day at a time, leftover tasks that move forward on their own, and one app for iPhone, iPad, Mac, and Apple Watch."
   competitors: ["Taskful Day", "Streaks", "Things 3", "TickTick", "Structured"]
   rows:
     - feature: "Single-day focus (no infinite backlog)"
-      values: ["Yes, the core design", "Habits only", "No, multi-project", "No, multi-project", "Yes, timeline-first"]
-    - feature: "No streaks, no red badges, no guilt mechanics"
-      values: ["Yes", "No, streaks are the product", "Yes", "No, badges & achievements", "Yes"]
-    - feature: "Built-in focus session timer (Pomodoro defaults)"
-      values: ["Yes, Focus Orbit, 25-min default", "No", "No", "Yes, Premium tier", "Yes"]
-    - feature: "Native on iPhone, iPad, AND Mac"
-      values: ["Yes, Universal Purchase", "iOS / iPad / Watch", "Separate purchase per platform", "Cross-platform via account", "iOS + macOS Catalyst"]
+      values: ["Yes, built around today", "Habits only", "No, multi-project", "No, multi-project", "Yes, timeline-first"]
+    - feature: "Streaks at the center of the app"
+      values: ["No, a streak is one stat in Analytics", "Yes, streaks are the product", "No", "Badges and achievements", "No"]
+    - feature: "Built-in focus timer"
+      values: ["Yes, Focus Mode (Pro)", "No", "No", "Yes, Premium tier", "Yes"]
+    - feature: "On iPhone, iPad, AND Mac"
+      values: ["Yes, plus an Apple Watch app", "iOS / iPad / Watch", "Separate purchase per platform", "Cross-platform via account", "iOS + macOS Catalyst"]
     - feature: "One-time lifetime purchase option"
-      values: ["{P_LIFETIME} lifetime", "$5.99 one-time (iOS)", "$9.99 iOS + $19.99 iPad + $49.99 Mac", "Subscription only", "Subscription (one-time also available)"]
-    - feature: "No account required (iCloud-only sync)"
-      values: ["Yes, your iCloud, no Lagerland account", "Yes", "Yes, iCloud sync", "Account required", "Account required for sync"]
-    - feature: "Zero third-party tracking SDKs"
-      values: ["0", "Standard analytics", "Standard analytics", "Standard analytics", "Standard analytics"]
+      values: ["{P_LIFETIME} lifetime", "One-time purchase (iOS)", "One-time purchase per platform", "Subscription only", "Subscription, one-time also available"]
+    - feature: "No account required"
+      values: ["Yes, optional sync through your own iCloud (Pro)", "Yes", "Yes, iCloud sync", "Account required", "Account required for sync"]
+    - feature: "Third-party tracking or analytics SDKs"
+      values: ["None", "See its App Store privacy label", "See its App Store privacy label", "See its App Store privacy label", "See its App Store privacy label"]
   footnote: "Competitor pricing and features reflect each app's public landing page and App Store description on 2026-05. Apps change often, so check current pricing on the App Store before switching."
 
 value_points:
-  - title: "Plan what matters"
-    description: "Pick the tasks that actually belong in your day. Everything else stays in the inbox until you're ready for it."
-  - title: "Focus deeply"
-    description: "The immersive focus mode blocks distractions and tracks your sessions, which helps deep work turn into a habit."
-  - title: "Everywhere you work"
-    description: "Now native on Mac as well as iPhone and iPad. Plan on the desktop, capture on the phone, review on the iPad, and iCloud keeps every device in sync."
-  - title: "Private by default"
-    description: "No ads, no tracking, no account. Your tasks stay on your device or in your personal iCloud."
+  - title: "Leftovers move on by themselves"
+    description: "When you open Taskful Day on a new day, yesterday's unfinished tasks are already on today's list. The original date is kept for your Analytics, and the Today list shows no overdue badge. One switch in Settings turns it off."
+  - title: "Capture it the way you think it"
+    description: "Type \"dentist tomorrow 3pm high priority\" and the date, time, and priority land in their fields. The keyword rules understand 8 languages. Speak a task on iPhone or iPad, ask Siri, tap the Control Center button, or dictate on your watch."
+  - title: "See the day, then plan the week"
+    description: "With Pro, the Day Clock lays your tasks around a 24-hour dial, Energy River draws the day as a flowing timeline, and Day Map shows where the day is crowded. The Schedule grid lets you drag tasks across a week of hours, with your Apple Calendar events shown beside them."
+  - title: "Private by design"
+    description: "There's no account and no Lagerland server. The app carries no analytics or third-party SDKs. Your tasks stay on the device unless you turn on iCloud Sync, which uses your own private iCloud."
 
 how_it_works:
-  intro: "Taskful Day is a single-day planner with four ways to see the day, a built-in focus timer, and a forgiving rollover rule. This is how a day moves through it."
+  intro: "Taskful Day plans one day at a time and moves whatever is left to the next one. This is how a day moves through it."
   steps:
-    - title: "Capture in under two seconds"
-      detail: "Type, or hold the mic: on-device speech recognition through Apple's Speech framework parses the task and any date or time you mention. Nothing leaves the device for transcription. Depending on what you said, the task lands in the inbox or directly on today."
-    - title: "Pick today's plan"
-      detail: "From the inbox, choose what actually belongs in today. Everything else stays there until you're ready. The aim is to define a realistic day before it starts, and clearing the backlog can wait."
-    - title: "Time-block the day in the view that fits"
-      detail: "Day Clock shows the day as a circular timeline. Day Map lays out time-blocks in a line. Energy River matches tasks to your energy rhythm. All of them show the same plan, so you can switch whenever your mood changes."
-    - title: "Drop into a focus session"
-      detail: "Focus Orbit is an immersive timer with a 25-minute Pomodoro default that you can change. The screen narrows, distractions fade back, and the session is logged. The focused minutes you track are the pattern data the analytics read."
-    - title: "End the day with a quick journal"
-      detail: "A short evening prompt records your mood and notes. Over weeks, the analytics show the link between how you planned, how you felt, and what you actually finished, written as a sentence or two per pattern so you don't have to interpret charts."
-    - title: "Tasks roll forward, not away"
-      detail: "Anything not done today moves to tomorrow automatically. There are no red badges and no streak to lose. A missed day doesn't reset progress; the task just comes up again the next day."
-    - title: "Sync across iPhone, iPad, and Mac (Pro)"
-      detail: "Pro users get iCloud sync through their own iCloud account, and Lagerland never sees the data. Plan on the Mac at the desk, capture on the phone, review on the iPad. One Pro purchase covers all three platforms (Universal Purchase)."
+    - title: "Capture it in one line"
+      detail: "Type a sentence in the Add a task bar and Taskful Day picks out the date, time, priority, and category. Write \"Groceries: milk, eggs, bread\" and you get a checklist. For a thought you can't place yet, use the Inbox: it needs no fields, and you pick Today, Tomorrow, or Later when you're ready."
+    - title: "Shape today"
+      detail: "Add a duration, a category, notes, a repeat rule, or a reminder when you want one. Group the Today list by time of day or by category, and drag pending tasks into the order you'll do them."
+    - title: "See how the day fits (Pro)"
+      detail: "Swipe from the list to the Day Clock, Energy River, or Day Map. Energy River estimates the shape of your day from the tasks you scheduled; it doesn't measure your body. For the week ahead, the Schedule grid lets you move tasks between hours and days."
+    - title: "Work on one thing"
+      detail: "Open any task in Focus Mode to see it on its own, with its checklist steps and a few related tasks around it. With Pro, start a 10, 25, or 45 minute timer, or set your own between 5 and 120 minutes. On iPhone, follow it on the Lock Screen and in the Dynamic Island."
+    - title: "Note how the day felt"
+      detail: "In the Journal, pick Great, Good, Neutral, or Stressed and add a note if you like. The entry sits next to a summary of what you completed, what's still pending, and your focus time."
+    - title: "Let the rest carry forward"
+      detail: "Anything unfinished moves to today the next time you open the app. Recurring tasks keep their rhythm when they carry over. You can also carry tasks forward by hand from a past day, or select several and move them at once."
+    - title: "Look back without a verdict"
+      detail: "Analytics shows your completion rate, trends, and categories for the week, with longer ranges in Pro. Its footer says it plainly: \"This is just a pattern, not a judgment.\""
 
 features:
-  - title: "Instant capture"
-    description: "Voice input with smart date recognition. Speak a task and Taskful Day files it where it belongs, so a thought takes under two seconds to capture."
-  - title: "Four ways to see your day"
-    description: "Day Clock, Energy River, Day Map, and Focus Orbit each suit a different mindset. Day Clock and Day Map work as visual <a href=\"https://en.wikipedia.org/wiki/Timeboxing\" rel=\"noopener\" target=\"_blank\">time-blocking</a> surfaces; Energy River matches your tasks to your energy rhythm; Focus Orbit is the Pomodoro-style timer for deep work."
-  - title: "Focus sessions"
-    description: "Start an immersive Focus Orbit session: set a timer, cut distractions, and get on with the work. The app tracks how many focused minutes you actually complete."
-  - title: "Tasks roll forward, not away"
-    description: "Unfinished tasks move to tomorrow automatically, without red badges or guilt, and each morning starts fresh."
-  - title: "Reflect and improve"
-    description: "The end-of-day journal records your mood and notes. Over weeks, you'll see the patterns between how you plan, how you feel, and what you actually finish."
-  - title: "Workspaces for every part of life"
-    description: "Keep work and personal tasks in separate workspaces, each with only its own tasks, and switch between them when your context changes."
-  - title: "Native on iPhone, iPad, and Mac"
-    description: "Taskful Day now runs as a native Mac app alongside iPhone and iPad, made for the desktop instead of a stretched phone window. iCloud sync keeps your day identical wherever you open it: plan on the Mac, capture on the phone, review on the iPad."
+  - title: "Natural-language capture"
+    description: "Type it like you'd say it, and Taskful Day finds the date, time, and priority while keeping the title clean. Keyword rules cover English, German, French, Spanish, Italian, Portuguese, Swedish, and Finnish. Voice capture on iPhone and iPad shows you the parsed task before it's saved."
+  - title: "Carry forward"
+    description: "Unfinished tasks move to today automatically, on by default, with a switch in Settings and a per-task toggle. Batch \"Move to Today\" and a five-second Undo cover the rest."
+  - title: "Day Clock, Energy River, and Day Map"
+    description: "Three Pro views of the same day: a 24-hour dial with a Now hand, a flowing timeline with a full-screen landscape view on iPhone, and a map in Regions, Heatmap, or Day-part mode."
+  - title: "Schedule week grid"
+    description: "With Pro, <a href=\"https://en.wikipedia.org/wiki/Timeboxing\" rel=\"noopener\" target=\"_blank\">time-block</a> your week on a 7-day grid. Drag a task to move it, and each block's height follows its duration. Apple Calendar events can sit beside your tasks, read-only, and overlaps are flagged."
+  - title: "Focus Mode"
+    description: "One task on screen, its checklist steps, and related tasks orbiting around it. Pro adds the timer and a Live Activity on iPhone, with +5 min and End buttons on the Lock Screen and in the Dynamic Island."
+  - title: "21 Home Screen widgets"
+    description: "Next Task, Today's Tasks, Now & Next, From Earlier, Year in Squares, Month, Hours, and more, with Pro. Tick tasks off or carry them forward right from the widget. Six kinds fill a whole page on iOS 27, and eight come in extra-large on iPad. The three Lock Screen widgets are free."
+  - title: "Apple Watch"
+    description: "See Now, Today, and Tomorrow, swipe to complete or snooze, and dictate a new task with the same parser as the phone. The watch app needs the iPhone app installed. Pro adds Inbox triage, the workspace switcher, and two more complications."
+  - title: "iPad and Mac"
+    description: "On iPad, a three-zone layout with a sidebar, a month calendar, and multiple windows. On the Mac, a toolbar, menus, keyboard shortcuts like ⌘N for a new task, right-click menus, and widgets on the desktop. Voice capture is iPhone and iPad only."
 
 screenshots:
   - src: "/assets/screenshots/taskful-day/1.webp"
@@ -208,42 +215,47 @@ privacy:
   tracking: false
   account_required: false
   notes:
-    - "No ads, ever"
-    - "No third-party tracking or analytics SDKs"
-    - "No account required"
-    - "Data stored locally or in your personal iCloud"
+    - "No account, no ads, and no analytics or third-party SDKs"
+    - "Tasks stay on your device unless you turn on iCloud Sync (Pro), which uses your own private iCloud"
+    - "Voice capture runs on the device when your language supports it; otherwise audio goes to Apple's speech service only if you allow it"
+    - "Calendar events are read for display only and never stored or synced"
+    - "Export My Data and Delete All My Data are in Settings"
 
 faq:
   - q: "What is Taskful Day?"
-    a: "Taskful Day is a calm daily planner and to-do list for iPhone, iPad, and Mac. It helps you plan realistic days, focus, and get through your list without guilt, and iCloud sync keeps the same plan on every Apple device."
+    a: "Taskful Day is a day planner and to-do list for iPhone, iPad, Mac, and Apple Watch. You plan one day at a time, unfinished tasks carry forward to the next day on their own, and you can add tasks by typing a sentence, speaking, asking Siri, or using your watch. Pro adds visual day views, a time-block week grid, a focus timer, 21 Home Screen widgets, and iCloud sync."
   - q: "Is Taskful Day available on Mac?"
-    a: "Yes. Taskful Day is available as a native Mac app on the Mac App Store, alongside iPhone and iPad. iCloud sync keeps the day you plan on your Mac identical to the day you check on your phone or iPad."
+    a: "Yes. Taskful Day runs on Mac with macOS 14 or later, with its own toolbar, menus, keyboard shortcuts, right-click menus, multiple windows, and desktop widgets. Voice capture and Lock Screen widgets stay on iPhone and iPad, and the focus Live Activity on iPhone. With Pro, iCloud Sync keeps your Mac and your other devices on the same plan."
   - q: "Is the Mac version a separate purchase?"
-    a: "No. Taskful Day is one Universal Purchase across iPhone, iPad, and Mac. Buy or subscribe to Pro once and it unlocks on every Apple device signed in to the same Apple ID."
+    a: "No. Taskful Day is a single App Store app that runs on iPhone, iPad, and Mac, and it's free to download on each."
   - q: "Does Taskful Day sync between iPhone, iPad, and Mac?"
-    a: "Yes. Taskful Day uses your personal iCloud account to keep tasks, plans, focus sessions, and journal entries in sync across iPhone, iPad, and Mac. Nothing is sent to a third-party server; sync runs through your own iCloud."
+    a: "Yes, with Pro. iCloud Sync is optional and runs through your own private iCloud, so tasks, checklists, reminders, workspaces, the Inbox, and your Journal stay in step across your devices. Taskful Day has no server of its own. Turning sync on or off takes an app restart."
   - q: "Is Taskful Day good for ADHD?"
-    a: "Yes. Taskful Day was designed around the kinds of friction that break ADHD planning. It has no streaks to lose and no red badges for missed days, keeps the scope to a realistic single day instead of an infinite backlog, and includes Focus Orbit (a Pomodoro-style focus session timer) for the moments when getting started is the hardest part. Tasks roll forward automatically, so a missed day doesn't reset months of progress. For background on how Apple frames cognitive accessibility, focus, and friction, see <a href=\"https://www.apple.com/accessibility/\" rel=\"noopener\" target=\"_blank\">Apple's Accessibility page</a>."
+    a: "Taskful Day isn't an ADHD tool or a medical product, but parts of its design may help if long lists overwhelm you. Unfinished tasks carry forward on their own, and the Today list shows no overdue badge. You can drop a thought into the Inbox and decide later when it happens. Focus Mode puts one task on screen at a time, and Pro adds a timer. The 7-day Pro trial lets you try all of it first."
   - q: "Does Taskful Day work on Apple Watch?"
-    a: "Not yet. Taskful Day runs natively on iPhone, iPad, and Mac with iCloud sync, and there is no watchOS app at this time. If you need Apple Watch support, that is a fair reason to wait or look elsewhere."
+    a: "Yes. The Apple Watch app shows Now, Today, and Tomorrow, lets you complete or snooze tasks with a swipe, and captures new tasks by dictation or Scribble. It needs the iPhone app installed. Inbox triage, the workspace switcher, and the Carried Forward and Journal Streak complications are Pro; the Today complication is free."
   - q: "How is Taskful Day different from other to-do apps?"
-    a: "Most to-do apps build up an endless backlog. Taskful Day works one day at a time, with focus sessions, mood journaling, and smart insights that help you plan better over time. It's also one of the few calm-design planners that runs natively on iPhone, iPad, and Mac instead of as a web wrapper."
+    a: "Most to-do apps keep a growing backlog and mark what you missed. Taskful Day plans one day at a time, moves unfinished tasks to today automatically, and shows no overdue badge on the Today list. It also lets you see the day as a clock, a timeline, or a map, and works across iPhone, iPad, Mac, and Apple Watch without an account."
   - q: "Does Taskful Day have a focus timer?"
-    a: "Yes. Focus Orbit is an immersive focus mode with a session timer, a distraction-free design, and tracking of focused minutes over time. It works the same on iPhone, iPad, and Mac."
+    a: "Yes, with Pro. Focus Mode shows one task with its checklist steps, and Pro adds a timer of 10, 25, or 45 minutes, or anything from 5 to 120. On iPhone the countdown also runs as a Live Activity on the Lock Screen and in the Dynamic Island."
   - q: "Is Taskful Day free?"
-    a: "Yes. The core app is completely free on iPhone, iPad, and Mac. Pro unlocks advanced analytics, widgets, iCloud sync, multiple workspaces, and Reminders import for {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime, applied across every device through Universal Purchase. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Taskful Day is free to download, and every new install gets 7 days of Pro with no card needed. After that, the free version lets you create up to 50 tasks in total, with one workspace. Pro adds unlimited tasks, iCloud Sync, the visual day views, the week grid, the focus timer, and 21 Home Screen widgets for {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once. Prices in USD; the App Store shows your local currency at checkout."
+  - q: "What happens when the 7-day Pro trial ends?"
+    a: "Your tasks stay. Pro themes switch back to System, and the free limits apply: 50 tasks in total, one workspace, one checklist step per task, and one active check-in. The trial starts on its own when onboarding ends and never asks for payment details."
   - q: "Does Taskful Day track or sell my data?"
-    a: "No. Taskful Day has no ads, no trackers, and no account requirement. Your data stays on your device or in your personal iCloud and is never shared."
+    a: "No. There's no account, no ads, and no analytics or third-party SDKs, and Taskful Day has no server of its own. Your data stays on the device, or in your own private iCloud if you turn on iCloud Sync."
   - q: "Can I import tasks from Apple Reminders?"
-    a: "Yes. Taskful Day can import from Apple Reminders on iPhone, iPad, and Mac, so you can switch without starting over."
+    a: "Yes. Taskful Day imports your incomplete reminders once, one way, skips duplicates, and turns bullet notes into checklist steps. On the free version the first import counts toward the 50-task total and shows how many reminders wait for Pro. Pro imports everything and can import again later."
   - q: "Does it work on iPad?"
-    a: "Yes. Taskful Day runs natively on iPhone, iPad, and Mac, with iCloud sync keeping your plan in sync across all three."
+    a: "Yes. On iPad, Taskful Day has a three-zone layout with a sidebar, a month calendar, and room for multiple windows, and eight of its widgets come in extra-large. It runs on iPadOS 17.6 or later."
+  - q: "Can I export my data?"
+    a: "Yes. Settings has Export My Data, which saves your tasks with their notes and checklist steps as a JSON file, and Delete All My Data, which erases everything."
   - q: "What macOS version does Taskful Day support?"
-    a: "Taskful Day runs as a native Mac app on modern macOS. Check the Mac App Store listing for the current minimum macOS version supported on your Mac."
+    a: "Taskful Day needs macOS 14 or later on the Mac, iOS 17.6 or later on iPhone, and iPadOS 17.6 or later on iPad. The Apple Watch app needs watchOS 10.6 or later."
 
 related_journal:
   slug: planning-on-phone-finishing-on-desk
-  anchor: "Why Taskful Day had to be a native Mac app, not Catalyst"
+  anchor: "The day I plan on my phone is not the day I finish at my desk"
 
 support:
   email: "lagerland.apps@proton.me"
@@ -260,4 +272,4 @@ ratings:
   last_synced: "2026-06-03"
 last_updated: 2026-10-29
 ---
-Taskful Day is a calm daily planner for iPhone, iPad, and Mac. It turns overwhelming to-do lists into realistic day plans with focus sessions, smart insights, voice capture, daily journaling, and several visual views, and it has no ads and no tracking. It's meant for people who want to plan with some care and end the day feeling clear instead of behind. The Mac app brings the same planner to the desktop, and iCloud sync keeps the same day visible on whichever device you happen to be using.
+Taskful Day is a day planner for iPhone, iPad, Mac, and Apple Watch. You plan one day at a time, and whatever you don't finish moves to the next day on its own. Add tasks by typing a sentence, speaking, asking Siri, or using your watch. With Pro, see the day as a clock, a timeline, or a map, block out the week on a grid, and keep it on your Home Screen with 21 widgets. There's no account to create, and your tasks stay on your device or in your own iCloud.
