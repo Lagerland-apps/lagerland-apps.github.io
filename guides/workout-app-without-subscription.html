@@ -2,7 +2,7 @@
 layout: default
 permalink: /guides/workout-app-without-subscription/
 title: "Workout app without a subscription"
-quick_answer: "GymLogger X is the strength-training workout app for iPhone and Apple Watch with no required subscription. Its free tier covers core logging and the 1,500-exercise library; Pro features (unlimited programs, full history, plateau detection, analytics) cost {P_MONTHLY@gymlogger-x}/month, {P_YEARLY@gymlogger-x}/year or {P_LIFETIME@gymlogger-x} once for lifetime access, where Strong, Hevy and Fitbod charge recurring monthly payments."
+quick_answer: "For a workout app with no subscription at all, LiftLog is a gym tracker for iPhone that you pay for once: 7 days free with no card, then a one-time purchase from {P_IAP:Minimum@liftlog} to {P_IAP:Patron@liftlog}. If you want a free tier and an Apple Watch app, GymLogger X logs workouts free on iPhone and Apple Watch, and its Pro tier (all 44 programs, full history, and plateau and fatigue Insights) costs {P_MONTHLY@gymlogger-x}/month, {P_YEARLY@gymlogger-x}/year, or {P_LIFETIME@gymlogger-x} once: subscriptions or a lifetime option. Strong, Hevy, and Fitbod charge recurring payments for their paid tiers. Both LiftLog and GymLogger X are made by Lagerland Apps, the publisher of this guide."
 seo:
   title: "Track Workouts Without a Subscription: iPhone Apps"
   description: "Strong, Hevy, and Fitbod lock core features behind subscriptions. How to log lifts, follow a program, and track progress without paying monthly."
@@ -14,13 +14,14 @@ seo:
     - lift tracker no subscription
     - Hevy alternative free
     - best free strength training app
-    - Apple Watch workout log no subscription
+    - Apple Watch workout log free
     - workout app without monthly fee
     - cheap workout tracker iPhone
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "gymlogger-x" | first -%}
+{%- assign liftlog = site.apps | where: "slug", "liftlog" | first -%}
 
 <script type="application/ld+json">
 {
@@ -49,10 +50,10 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is there a good workout app without a monthly subscription?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. GymLogger X is a strength-training workout logger for iPhone and Apple Watch that has a free tier for core logging and a lifetime purchase option ({P_LIFETIME@gymlogger-x} one-time) instead of a mandatory subscription. Most popular alternatives (Strong, Hevy, Fitbod, Caliber) put core features behind recurring payments." } },
-    { "@type": "Question", "name": "What's the cheapest way to track workouts on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "The cheapest approach is a free app with an optional one-time upgrade. GymLogger X's free tier covers basic set/rep logging, the 1,500-exercise library and one program at a time. Pro unlocks unlimited programs, your full history, plateau detection, and analytics for {P_MONTHLY@gymlogger-x}/month, {P_YEARLY@gymlogger-x}/year, or {P_LIFETIME@gymlogger-x} once for lifetime access." } },
-    { "@type": "Question", "name": "Can I log workouts from Apple Watch without paying for a subscription?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. GymLogger X's Apple Watch app is included in the free tier. You start the session on the iPhone, then log each set's reps and weight, run rest timers and see live heart rate from your wrist while the phone stays in your bag." } },
-    { "@type": "Question", "name": "Why are most workout apps subscription-only?", "acceptedAnswer": { "@type": "Answer", "text": "Subscriptions produce predictable recurring revenue, which is attractive to app publishers but frustrating for users who want to pay once for a tool they use daily. A few indie developers still offer lifetime purchases; GymLogger X and Mockly are two examples from the same developer." } }
+    { "@type": "Question", "name": "Is there a good workout app without a monthly subscription?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. LiftLog (ours) has no subscription at all: 7 days free with no card, then one payment at a tier you choose from {P_IAP:Minimum@liftlog} to {P_IAP:Patron@liftlog}. GymLogger X (also ours) has a free tier for logging on iPhone and Apple Watch, and its Pro tier is a subscription or a one-time {P_LIFETIME@gymlogger-x} Lifetime purchase. Most popular alternatives (Strong, Hevy, Fitbod, Caliber) put core features behind recurring payments." } },
+    { "@type": "Question", "name": "What's the cheapest way to track workouts on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "A free app with an optional one-time upgrade. GymLogger X's free tier covers unlimited logging on iPhone and Apple Watch, the 1,500-exercise library, one program at a time, and the last 30 days of history. Pro adds all 44 programs, your full history, and Insights that flag plateaus, fatigue, and muscle imbalances, for {P_MONTHLY@gymlogger-x}/month, {P_YEARLY@gymlogger-x}/year, or {P_LIFETIME@gymlogger-x} once. If you'd rather pay once for everything from the start, LiftLog is a one-time purchase from {P_IAP:Minimum@liftlog} after a 7-day free trial." } },
+    { "@type": "Question", "name": "Can I log workouts from Apple Watch without paying for a subscription?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. GymLogger X's Apple Watch app is included in the free tier. You start the session on the iPhone, then log each set's reps and weight, run rest timers, and see live heart rate from your wrist while the phone stays in your bag." } },
+    { "@type": "Question", "name": "Why are most workout apps subscription-only?", "acceptedAnswer": { "@type": "Answer", "text": "Subscriptions give app publishers predictable recurring revenue, which frustrates users who want to pay once for a tool they'll use daily. A few indie developers still sell apps for a one-time price, LiftLog (ours) among them." } }
   ]
 }
 </script>
@@ -64,7 +65,7 @@ last_updated: 2026-10-26
       "I want a workout app<br><span class="gradient-text">without paying monthly forever."</span>
     </h1>
     <p class="lead">
-      Strong and Hevy each charge $5/month and Fitbod charges $10/month. For an app you'll use 3 to 5 times a week for the rest of your lifting career, that adds up to $1,500+ over a decade just to save sets and reps. There is a cheaper way.
+      Strong and Hevy each charge $5/month and Fitbod charges $10/month. For an app you'll use 3 to 5 times a week for the rest of your lifting career, that adds up to $600 or more over a decade just to save sets and reps. There is a cheaper way.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="#answer">Skip to the answer</a>
@@ -78,7 +79,7 @@ last_updated: 2026-10-26
 <section class="section reveal">
   <h2 class="h2">Why is subscription-only workout pricing a real problem?</h2>
   <p class="lead">Workout logging suits a one-time purchase: it is simple in scope, infrequently updated, and used in bursts of 45 to 90 minutes. Saving a set of numbers does not require a recurring server bill.</p>
-  <p class="lead">Even so, the biggest workout loggers have all moved to subscription-only pricing:</p>
+  <p class="lead">Even so, the biggest workout loggers put their core features behind a subscription:</p>
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">Strong</div>
@@ -90,7 +91,7 @@ last_updated: 2026-10-26
     </div>
     <div class="card">
       <div class="card-title">Fitbod</div>
-      <div class="card-text">AI-generated workouts at ~$10/month. It works, and it is the most expensive option in the category.</div>
+      <div class="card-text">AI-generated workouts at ~$10/month. It works, and it costs about twice as much as Strong or Hevy.</div>
     </div>
     <div class="card">
       <div class="card-title">Caliber</div>
@@ -102,25 +103,27 @@ last_updated: 2026-10-26
 <section id="answer" class="section--lg reveal">
   <div class="section-center">
     <p class="overline">The answer</p>
-    <h2 class="h2">GymLogger X: free tier plus optional lifetime</h2>
-    <p class="lead">A fast, native strength tracker for iPhone and Apple Watch. Core logging is free, and the Lifetime option is a one-time {P_LIFETIME@gymlogger-x} in place of an open-ended monthly charge.</p>
+    <h2 class="h2">LiftLog or GymLogger X: pay once, or start free</h2>
+    <p class="lead">Both apps are ours. <a href="/apps/liftlog/">LiftLog</a> has no subscription at all: you get 7 days free with no card, then pay once, at a tier you choose from {P_IAP:Minimum@liftlog} to {P_IAP:Patron@liftlog}. <a href="/apps/gymlogger-x/">GymLogger X</a> is a strength tracker for iPhone and Apple Watch whose free tier covers logging; its Pro tier is a subscription or a one-time {P_LIFETIME@gymlogger-x} Lifetime purchase in place of an open-ended monthly charge.</p>
   </div>
   {% if app %}
   <div class="grid grid-2 stagger">
+    {% if liftlog %}{% include app-card.html app=liftlog %}{% endif %}
     {% include app-card.html app=app %}
   </div>
   {% endif %}
 </section>
 
 <section class="section reveal">
-  <h2 class="h2">What do you get in the free tier?</h2>
+  <h2 class="h2">What do you get in GymLogger X's free tier?</h2>
   <div class="grid grid-2 stagger">
     <div class="card"><div class="card-title">Fast set logging</div><div class="card-text">Set, rep, and weight entry in as few taps as possible. Supersets and giant sets are built in.</div></div>
-    <div class="card"><div class="card-title">1,500 exercises</div><div class="card-text">Full exercise library with muscle targeting and equipment filters. Custom exercises and animated demos come with Pro.</div></div>
-    <div class="card"><div class="card-title">Apple Watch logging</div><div class="card-text">Log each set's reps and weight, run rest timers and see live heart rate from the wrist. The session starts on the iPhone, which can stay in your bag.</div></div>
-    <div class="card"><div class="card-title">Personal records</div><div class="card-text">PR alerts as you lift, and a 1RM and volume chart on every exercise. The free history view covers the last 30 days; Pro unlocks the rest, the PR board and strength trends.</div></div>
+    <div class="card"><div class="card-title">1,500 exercises</div><div class="card-text">The full exercise library with search and filters, and a history and chart for each exercise. Custom exercises and animated demos come with Pro.</div></div>
+    <div class="card"><div class="card-title">Apple Watch logging</div><div class="card-text">Log each set's reps and weight, run rest timers, and see live heart rate from the wrist. The session starts on the iPhone, which can stay in your bag.</div></div>
+    <div class="card"><div class="card-title">Personal records</div><div class="card-text">The Workout Complete screen calls out each new record. The free history view covers the last 30 days; Pro unlocks the rest, every personal record in one place, and strength trends.</div></div>
   </div>
-  <p class="lead" style="margin-top:var(--s-4);">What's behind Pro: unlimited programs (free keeps one from the Smart Program Creator or the library), your full history, plateau detection, animated exercise demos, advanced analytics, and muscle imbalance detection. These are useful if you want them, but you can log workouts well without any of them.</p>
+  <p class="lead" style="margin-top:var(--s-4);">What's behind Pro: all 44 programs and as many active programs as you want (free runs one at a time: one of 6 free programs, your own, or one from the Smart Program Creator), your full history, Insights that flag plateaus, fatigue, and muscle imbalances, animated exercise demos, and custom exercises. They are useful if you want them, but you can log workouts well without any of them.</p>
+  <p class="lead">LiftLog works the other way round. After the 7-day trial there is no free tier, but one payment covers the whole app: 1,500 exercises with animated demos, 40 ready-made programs that can suggest your next weight, and 10 Home Screen and Lock Screen widgets.</p>
 </section>
 
 <section class="section reveal">
@@ -129,27 +132,29 @@ last_updated: 2026-10-26
     <p><strong>Strong Pro:</strong> ~$5/month × 10 years = <strong>~$600</strong></p>
     <p><strong>Hevy Pro:</strong> ~$5/month × 10 years = <strong>~$600</strong></p>
     <p><strong>Fitbod:</strong> ~$10/month × 10 years = <strong>~$1,200</strong></p>
-    <p><strong>GymLogger X Lifetime:</strong> <strong>{P_LIFETIME@gymlogger-x}</strong>, once, forever</p>
-    <p class="small" style="margin-top:var(--s-3);">Numbers are indicative of current App Store pricing and may change. Over a decade of consistent lifting, a one-time purchase still costs an order of magnitude less.</p>
+    <p><strong>LiftLog:</strong> <strong>{P_IAP:Minimum@liftlog} to {P_IAP:Patron@liftlog}</strong>, once, at the tier you choose</p>
+    <p><strong>GymLogger X Lifetime:</strong> <strong>{P_LIFETIME@gymlogger-x}</strong>, once, with no renewal</p>
+    <p class="small" style="margin-top:var(--s-3);">Competitor numbers are indicative of current App Store pricing and may change.</p>
   </div>
 </section>
 
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>Is there a good workout app without a monthly subscription?</summary><div class="faq-a">Yes. GymLogger X has a free tier for core logging and a lifetime purchase option ({P_LIFETIME@gymlogger-x} one-time) instead of a mandatory subscription. Most popular alternatives (Strong, Hevy, Fitbod, Caliber) put core features behind recurring payments.</div></details>
-    <details class="faq-item"><summary>What's the cheapest way to track workouts on iPhone?</summary><div class="faq-a">A free app with an optional one-time upgrade. GymLogger X's free tier covers basic set/rep logging, the 1,500-exercise library and one program at a time. Pro unlocks unlimited programs, your full history, plateau detection, and analytics for {P_MONTHLY@gymlogger-x}/month, {P_YEARLY@gymlogger-x}/year, or {P_LIFETIME@gymlogger-x} once for lifetime access.</div></details>
-    <details class="faq-item"><summary>Can I log workouts from Apple Watch without paying for a subscription?</summary><div class="faq-a">Yes. GymLogger X's Apple Watch app is included in the free tier. You start the session on the iPhone, then log each set's reps and weight, run rest timers and see live heart rate from your wrist while the phone stays in your bag.</div></details>
-    <details class="faq-item"><summary>Why are most workout apps subscription-only?</summary><div class="faq-a">Subscriptions give app publishers predictable recurring revenue, which frustrates users who want to pay once for a tool they'll use daily. A few indie developers still offer lifetime purchases.</div></details>
+    <details class="faq-item" open><summary>Is there a good workout app without a monthly subscription?</summary><div class="faq-a">Yes. LiftLog (ours) has no subscription at all: 7 days free with no card, then one payment at a tier you choose from {P_IAP:Minimum@liftlog} to {P_IAP:Patron@liftlog}. GymLogger X (also ours) has a free tier for logging on iPhone and Apple Watch, and its Pro tier is a subscription or a one-time {P_LIFETIME@gymlogger-x} Lifetime purchase. Most popular alternatives (Strong, Hevy, Fitbod, Caliber) put core features behind recurring payments.</div></details>
+    <details class="faq-item"><summary>What's the cheapest way to track workouts on iPhone?</summary><div class="faq-a">A free app with an optional one-time upgrade. GymLogger X's free tier covers unlimited logging on iPhone and Apple Watch, the 1,500-exercise library, one program at a time, and the last 30 days of history. Pro adds all 44 programs, your full history, and Insights that flag plateaus, fatigue, and muscle imbalances, for {P_MONTHLY@gymlogger-x}/month, {P_YEARLY@gymlogger-x}/year, or {P_LIFETIME@gymlogger-x} once. If you'd rather pay once for everything from the start, LiftLog is a one-time purchase from {P_IAP:Minimum@liftlog} after a 7-day free trial.</div></details>
+    <details class="faq-item"><summary>Can I log workouts from Apple Watch without paying for a subscription?</summary><div class="faq-a">Yes. GymLogger X's Apple Watch app is included in the free tier. You start the session on the iPhone, then log each set's reps and weight, run rest timers, and see live heart rate from your wrist while the phone stays in your bag.</div></details>
+    <details class="faq-item"><summary>Why are most workout apps subscription-only?</summary><div class="faq-a">Subscriptions give app publishers predictable recurring revenue, which frustrates users who want to pay once for a tool they'll use daily. A few indie developers still sell apps for a one-time price, LiftLog (ours) among them.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Try it</p>
-  <h2 class="h2">Open GymLogger X.</h2>
-  <p class="lead">The free tier is enough to log every workout. Pay for Pro only if you want Smart Programs or plateau detection.</p>
+  <h2 class="h2">Pick the one that fits.</h2>
+  <p class="lead">LiftLog is one payment after a 7-day free trial, with no subscription. GymLogger X's free tier logs every workout on iPhone and Apple Watch, and you pay for Pro only if you want all 44 programs, your full history, or plateau and fatigue Insights.</p>
   <div class="actions">
-    <a class="btn btn-primary" href="/apps/gymlogger-x/">Learn about GymLogger X</a>
+    <a class="btn btn-primary" href="/apps/liftlog/">Learn about LiftLog</a>
+    <a class="btn btn-secondary" href="/apps/gymlogger-x/">Learn about GymLogger X</a>
     <a class="btn btn-secondary" href="/alternatives/strong-workout-app/">Compared with Strong</a>
   </div>
 </section>

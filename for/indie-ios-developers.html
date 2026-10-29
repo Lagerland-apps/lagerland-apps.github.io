@@ -2,22 +2,22 @@
 layout: default
 permalink: /for/indie-ios-developers/
 title: "Apps for Indie iOS Developers"
-quick_answer: "The native Mac toolkit for indie iOS developers shipping on the App Store: AppMeta (local metadata, localisation, version and IAP editor via the App Store Connect API), AppMeta Pulse (revenue, subscription and download dashboard for iPhone), and Mockly (batch-generate localised App Store screenshots). Credentials stay in the Keychain and no middleman server sits in between."
+quick_answer: "For indie developers shipping on the App Store, three Lagerland apps take over the slow parts of App Store Connect. AppMeta (Mac) edits every locale of your listing in one window and shows a field-level diff against the live listing before you push. Mockly (Mac) builds App Store screenshots on 3D device models across all 50 App Store languages and uploads them to App Store Connect. AppMeta Pulse (iPhone) shows proceeds, MRR, subscribers, trials, and reviews for all your apps, and keeps your sales history after Apple's roughly one-year window. Your API key stays in the Keychain, and requests go straight to Apple."
 seo:
-  title: "Mac Tools for Indie iOS Developers: App Store Connect"
-  description: "Native Mac apps for indie iOS developers: local App Store Connect metadata editing, revenue dashboards, and screenshot generation, outside the browser."
+  title: "App Store Connect Tools for Indie iOS Developers"
+  description: "Mac and iPhone apps for indie iOS developers: edit and diff your App Store listing, build localized screenshots, and track sales and reviews."
   keywords:
     - App Store Connect metadata editor Mac
     - indie iOS developer tools
-    - App Store Connect revenue dashboard
+    - App Store Connect revenue dashboard iPhone
     - App Store screenshot generator Mac
     - native App Store Connect app
     - App Store Connect alternative
     - iOS developer Mac apps
     - App Store Connect API client
     - localized screenshot tool Mac
-    - App Store metadata local editor
-last_updated: 2026-10-26
+    - App Store review reply app
+last_updated: 2026-10-29
 ---
 
 {%- assign slugs = "appmeta,appmeta-pulse,mockly" | split: "," -%}
@@ -51,19 +51,19 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is there a native Mac app for App Store Connect?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AppMeta is a native Mac client for App Store Connect. You edit metadata, localizations, IAPs, and version info locally instead of in the web UI. Credentials are stored in Keychain and requests go directly to the App Store Connect API." } },
-    { "@type": "Question", "name": "How do I monitor App Store revenue and subscriptions on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is an iPhone companion for App Store Connect that shows revenue, subscription metrics, and a multi-app dashboard. It is meant for indie developers with several apps who don't want to open the App Store Connect website every day." } },
-    { "@type": "Question", "name": "What's the fastest way to generate localised App Store screenshots?", "acceptedAnswer": { "@type": "Answer", "text": "Mockly is a native Mac app for batch-generating localised App Store screenshots. It supports bulk language import, Apple device frames, and batch export in every required App Store size." } },
-    { "@type": "Question", "name": "Are these tools a replacement for Fastlane?", "acceptedAnswer": { "@type": "Answer", "text": "They work alongside it. Fastlane is a CLI automation toolchain; these are native GUI apps for the editing, monitoring, and screenshot work most indie developers still do by hand. You can use both." } }
+    { "@type": "Question", "name": "Is there a native Mac app for App Store Connect?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AppMeta is a Mac app for App Store Connect. It puts every locale of your listing in one window, shows a field-level diff against the live listing before you push, and handles In-App Purchases, subscriptions, TestFlight, Game Center, reviews, and submission. Your API key is kept in the Mac Keychain, and requests go straight to Apple. The free download runs Demo Mode on sample data; connecting your own account needs Pro." } },
+    { "@type": "Question", "name": "How do I monitor App Store revenue and subscriptions on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is an iPhone app that shows proceeds, MRR, subscribers, trials, and reviews for all your apps from App Store Connect. It keeps every day it fetches on your iPhone, so your sales history outlasts Apple's roughly one-year window, and 12 Home Screen and Lock Screen widgets show how the month is going. It needs an App Store Connect API key with the Admin role, which stays in the iPhone's Keychain." } },
+    { "@type": "Question", "name": "What's the fastest way to generate localised App Store screenshots?", "acceptedAnswer": { "@type": "Answer", "text": "Mockly is a Mac app built for this job. You keep all 50 App Store languages in one project, translate the captions with AI through your own OpenAI, Anthropic, or Google key or bring them in from a CSV file, and put your real screenshots on 3D iPhone, iPad, MacBook Pro, and Apple Watch models. Then export exact-size PNG or HEIC files, or upload the pages to App Store Connect with your API key. Mockly is a one-time purchase with no subscription." } },
+    { "@type": "Question", "name": "Are these tools a replacement for Fastlane?", "acceptedAnswer": { "@type": "Answer", "text": "They work alongside it. Fastlane automates releases from the command line. AppMeta and Mockly are Mac apps for the listing and screenshot work you still do by hand, and AppMeta Pulse follows sales and reviews on your iPhone. If your metadata and screenshots already run end to end through Fastlane or CI, you may not need AppMeta or Mockly." } }
   ]
 }
 </script>
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">Native Mac tools for indie App Store shipping</p>
+    <p class="overline">Mac and iPhone tools for indie App Store releases</p>
     <h1 class="h1">Ship without<br><span class="gradient-text">App Store Connect tab fatigue.</span></h1>
-    <p class="lead">A typical release: 7 browser tabs open to App Store Connect, metadata edits spread across three languages, screenshots re-exported six times because one locale needed a tweak. These native Mac tools take over the worst parts of that work.</p>
+    <p class="lead">A release means editing the same fields in every locale, exporting the screenshots again because one caption changed, and opening App Store Connect in a browser to see whether anyone bought anything. Two Mac apps and one iPhone app take over those jobs.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#stack">See the stack</a>
       <a class="btn btn-secondary" href="#faq">FAQ</a>
@@ -75,14 +75,14 @@ last_updated: 2026-10-26
 
 <section class="section reveal">
   <h2 class="h2">Built by an indie iOS dev, for indie iOS devs</h2>
-  <p class="lead">Lagerland Apps is a one-person studio shipping {{ site.data.catalog.meta.live_app_count }} apps across iOS and macOS. The developer tools below started as tools the developer needed, and selling them came later. They are also the only native Mac apps for their niches.</p>
+  <p class="lead">Lagerland Apps is a one-person studio shipping {{ site.data.catalog.meta.live_app_count }} apps across iOS and macOS, every one of them through App Store Connect. These three tools handle the listing, screenshot, and sales work on those releases.</p>
 </section>
 
 <section id="stack" class="section--lg reveal">
   <div class="section-center">
     <p class="overline">The stack</p>
-    <h2 class="h2">Three native Mac apps</h2>
-    <p class="lead">Each tool can be bought with a one-time payment, and none of them requires a subscription. Credentials are kept in the Keychain and API calls go straight from your device, with no middleman server.</p>
+    <h2 class="h2">Two Mac apps and one iPhone app</h2>
+    <p class="lead">Mockly is a one-time purchase, and AppMeta and AppMeta Pulse offer a Lifetime purchase next to their subscriptions. AppMeta and AppMeta Pulse open a demo on sample data before you pay. Your App Store Connect API key stays in the Keychain, and requests go from your device to Apple with no server of ours in between.</p>
   </div>
   <div class="grid grid-2 stagger">
     {%- for app in apps_for -%}{% include app-card.html app=app %}{%- endfor -%}
@@ -92,9 +92,9 @@ last_updated: 2026-10-26
 <section class="section reveal">
   <h2 class="h2">What does the indie iOS dev workflow look like?</h2>
   <div class="grid grid-2 stagger">
-    <div class="card"><div class="card-title">1. AppMeta → daily metadata work</div><div class="card-text">Open your app, edit descriptions and keywords, manage localisations, and update IAP details. A diff preview shows exactly what will change on the App Store before you submit, which prevents the usual web-UI accidents.</div></div>
-    <div class="card"><div class="card-title">2. Mockly → release screenshot prep</div><div class="card-text">Batch-import captures, add device frames, and generate every required size in every language at once. A day of exporting turns into a 10-minute build step.</div></div>
-    <div class="card"><div class="card-title">3. AppMeta Pulse → passive revenue monitoring</div><div class="card-text">An iPhone dashboard for App Store Connect metrics. Check revenue, subscription changes, and per-app breakdowns without opening the website.</div></div>
+    <div class="card"><div class="card-title">1. AppMeta (Mac) → your listing</div><div class="card-text">Every locale of your listing in one window, or one field across all locales. Before you push, a field-level diff shows what will change against the live listing. Keyword difficulty and demand are measured against the live App Store, with the evidence shown, and In-App Purchases, TestFlight, and submission sit in the same app.</div></div>
+    <div class="card"><div class="card-title">2. Mockly (Mac) → your screenshots</div><div class="card-text">Put your real screenshots on 3D iPhone, iPad, MacBook Pro, and Apple Watch models, write the captions once, and keep all 50 App Store languages in one project. Translate with your own AI key or a CSV file, then export exact-size PNG or HEIC files or upload straight to App Store Connect.</div></div>
+    <div class="card"><div class="card-title">3. AppMeta Pulse (iPhone) → your sales and reviews</div><div class="card-text">Proceeds, MRR, subscribers, trials, and reviews for all your apps, with every day it fetches kept on your iPhone after Apple's roughly one-year window. Answer reviews one at a time or up to 25 at once, and check the month's pace on a widget.</div></div>
     <div class="card"><div class="card-title">All three, or pick one</div><div class="card-text">The three apps are independent of each other and only share a developer. Buy the one that fixes your worst workflow problem first.</div></div>
   </div>
 </section>
@@ -102,17 +102,17 @@ last_updated: 2026-10-26
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>Is there a native Mac app for App Store Connect?</summary><div class="faq-a">Yes. AppMeta is a native Mac client for App Store Connect. You edit metadata, localizations, IAPs, and version info locally instead of in the web UI. Credentials are stored in Keychain and requests go directly to the App Store Connect API.</div></details>
-    <details class="faq-item"><summary>How do I monitor App Store revenue and subscriptions on iPhone?</summary><div class="faq-a">AppMeta Pulse is an iPhone companion for App Store Connect that shows revenue, subscription metrics, and a multi-app dashboard. It is meant for indie developers with several apps who don't want to open the App Store Connect website every day.</div></details>
-    <details class="faq-item"><summary>What's the fastest way to generate localised App Store screenshots?</summary><div class="faq-a">Mockly is a native Mac app for batch-generating localised App Store screenshots. It supports bulk language import, Apple device frames, and batch export in every required App Store size.</div></details>
-    <details class="faq-item"><summary>Are these tools a replacement for Fastlane?</summary><div class="faq-a">They work alongside it. Fastlane is a CLI automation toolchain; these are native GUI apps for the editing, monitoring, and screenshot work most indie developers still do by hand. You can use both.</div></details>
+    <details class="faq-item" open><summary>Is there a native Mac app for App Store Connect?</summary><div class="faq-a">Yes. AppMeta is a Mac app for App Store Connect. It puts every locale of your listing in one window, shows a field-level diff against the live listing before you push, and handles In-App Purchases, subscriptions, TestFlight, Game Center, reviews, and submission. Your API key is kept in the Mac Keychain, and requests go straight to Apple. The free download runs Demo Mode on sample data; connecting your own account needs Pro.</div></details>
+    <details class="faq-item"><summary>How do I monitor App Store revenue and subscriptions on iPhone?</summary><div class="faq-a">AppMeta Pulse is an iPhone app that shows proceeds, MRR, subscribers, trials, and reviews for all your apps from App Store Connect. It keeps every day it fetches on your iPhone, so your sales history outlasts Apple's roughly one-year window, and 12 Home Screen and Lock Screen widgets show how the month is going. It needs an App Store Connect API key with the Admin role, which stays in the iPhone's Keychain.</div></details>
+    <details class="faq-item"><summary>What's the fastest way to generate localised App Store screenshots?</summary><div class="faq-a">Mockly is a Mac app built for this job. You keep all 50 App Store languages in one project, translate the captions with AI through your own OpenAI, Anthropic, or Google key or bring them in from a CSV file, and put your real screenshots on 3D iPhone, iPad, MacBook Pro, and Apple Watch models. Then export exact-size PNG or HEIC files, or upload the pages to App Store Connect with your API key. Mockly is a one-time purchase with no subscription.</div></details>
+    <details class="faq-item"><summary>Are these tools a replacement for Fastlane?</summary><div class="faq-a">They work alongside it. Fastlane automates releases from the command line. AppMeta and Mockly are Mac apps for the listing and screenshot work you still do by hand, and AppMeta Pulse follows sales and reviews on your iPhone. If your metadata and screenshots already run end to end through Fastlane or CI, you may not need AppMeta or Mockly.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Start here</p>
-  <h2 class="h2">If you buy one, buy AppMeta</h2>
-  <p class="lead">Of the three, AppMeta saves the most time in the App Store Connect web UI.</p>
+  <h2 class="h2">Start with AppMeta</h2>
+  <p class="lead">If editing your listing in the browser is the slowest part of your release, start here. Demo Mode shows the whole app on sample data before you connect your account.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/appmeta/">Learn about AppMeta</a>
     <a class="btn btn-secondary" href="/apps/">See all apps</a>
