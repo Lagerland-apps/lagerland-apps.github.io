@@ -16,7 +16,7 @@ seo:
     - xiangqi perpetual check
     - xiangqi pieces
 lede: "If you play chess, you already know half of xiangqi. The chariot is a rook, the horse is almost a knight, and checkmate still ends the game. The other half is a short list of rules, and most of it reverses a chess habit. Here is the board, every piece next to its chess cousin, and the rules that cost chess players their first games."
-quick_answer: "Xiangqi (Chinese chess) is played on the 90 intersections of a board nine lines wide and ten lines long, with a river across the middle and a three-by-three palace at each end. Red moves first. The chariot moves exactly like a rook and the horse moves like a knight, but the horse cannot jump: a piece next to it blocks the move. The cannon moves like a rook but captures only by jumping exactly one piece. The general and its two advisors never leave the palace, the general moves one point orthogonally, the elephants never cross the river, and soldiers never promote, though they gain a sideways step once across the river. Five rules catch chess players out. Stalemate is a loss for the player with no move, not a draw. The two generals may never face each other on an open file. A player who repeats the position by checking on every move loses, so perpetual check is not a draw. Elephants and advisors can never attack. And there is no castling, no en passant and no pawn double step."
+quick_answer: "Xiangqi (Chinese chess) is played on the 90 intersections of a board nine lines wide and ten lines long, with a river across the middle and a three-by-three palace at each end. Red moves first. The chariot moves exactly like a rook and the horse moves like a knight, but the horse cannot jump: a piece next to it blocks the move. The cannon moves like a rook but captures only by jumping exactly one piece. The general and its two advisors never leave the palace, the general moves one point orthogonally, the elephants never cross the river, and soldiers never promote, though they gain a sideways step once across the river. Five rules catch chess players out. Stalemate is a loss for the player with no move, not a draw. The two generals may never face each other on an open file. A player who repeats the position by checking on every move loses, so perpetual check is not a draw. Elephants and advisors can never attack. And there is no castling, no en passant, and no pawn double step."
 faq:
   - q: "What are the main differences between xiangqi and chess?"
     a: "Pieces stand on the intersections of a 9 by 10 board, not in squares, and a river and two palaces restrict where some pieces can go. The general is confined to its palace and moves one point orthogonally. The horse can be blocked at the leg, the cannon captures by jumping exactly one piece, elephants cannot cross the river, and soldiers never promote. Stalemate loses instead of drawing, the generals may not face each other on an open file, and perpetual check loses for the side giving it."
@@ -34,7 +34,7 @@ mentioned_apps:
   - xiangqiful
 read_time: "7 min read"
 excerpt: "A chess player's guide to xiangqi rules: the board and palace, every piece beside its chess cousin with its catch, and the rules that reverse a chess habit: stalemate loses, the generals may not face each other, perpetual check loses, and the cannon needs a screen."
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 A chess player who sits down at a xiangqi board recognises most of it within a minute. There are two armies, a king-like piece to trap, a rook and a knight. Only a few rules differ, but most of them reverse a chess habit, and those are the ones that cost games. Below is the full list, with the board first and the reasoning after.
@@ -85,7 +85,7 @@ The horse moves like a knight, one point straight and one diagonally outward, bu
 
 ### Some pieces can never attack
 
-Advisors stay in the palace and elephants stay on their own side of the river. Neither can ever reach the enemy general. A side left with only a general, advisors and elephants cannot force a win. That is why the attacking pieces, chariots, horses, cannons and crossed soldiers, are what decide most endgames.
+Advisors stay in the palace and elephants stay on their own side of the river. Neither can ever reach the enemy general. A side left with only a general, advisors, and elephants cannot force a win. That is why the attacking pieces (chariots, horses, cannons, and crossed soldiers) decide most endgames.
 
 ### The rest of the list
 
@@ -101,8 +101,8 @@ Advisors stay in the palace and elephants stay on their own side of the river. N
 
 The first time stalemate or a perpetual check decides one of your games, the game-over sheet explains the rule that just applied ("In xiangqi, having no move loses" and "Checking forever loses"). Each explanation appears once, in the first game that rule decides.
 
-The Fundamentals track teaches the same list in ten lessons, among them "The Cannon and Its Screen", "The Horse and Its Leg", "Stalemate - the Chess Player's Trap" and "Perpetual Check Loses". Each one is a short explanation, a demonstration or a puzzle, and a quiz. All 80 lessons in the app are free. On the board, tapping a piece marks the points it can legally reach. Tap a cannon and the board also marks the screen it would jump over, which is the board's answer to the question "how did that cannon reach me?"
+The Fundamentals track teaches most of this list in ten lessons, among them "The Cannon and Its Screen", "The Horse and Its Leg", and "Stalemate - the Chess Player's Trap". The Advanced track covers repetition in "Perpetual Check and Perpetual Chase". All 80 lessons in the app are free.
 
-The pieces come in three sets: traditional characters, western symbols, or a hybrid with the symbol on the character, so you can learn the rules before you learn to read 傌 and 炮. After a game, Pikafish reviews every move on your device, and Game Review names mistakes in these terms, such as a screenless cannon or a trapped horse. When you are ready for xiangqi's own puzzle form, every move must give check, and stalemate does not count as mate; [the post on Xiangqiful's 902 mate problems](/journal/xiangqi-mate-problems-from-classical-manuals/) explains where they come from.
+The pieces come in three sets (traditional characters, western symbols, or a hybrid with the symbol on the character), so you can learn the rules before you learn to read 傌 and 炮. After a game, Pikafish reviews every move on your device, and Game Review names mistakes in these terms, such as a screenless cannon or a trapped horse. When you are ready for xiangqi's own puzzle form, every move must give check, and stalemate does not count as mate; [the post on Xiangqiful's 902 mate problems](/journal/xiangqi-mate-problems-from-classical-manuals/) explains where they come from.
 
-Xiangqiful is free, with Premium at {P_MONTHLY@xiangqiful} a month or {P_YEARLY@xiangqiful} a year (each with a one-week free trial) or {P_LIFETIME@xiangqiful} once. It has no online play. To play people, [PyChess](/alternatives/pychess/) and [Xiangqi.com](/alternatives/xiangqi-com/) are the usual places, and [the guide to xiangqi apps for iPhone](/guides/best-xiangqi-apps-iphone/) compares the rest.
+Xiangqiful is free, with Premium at {P_MONTHLY@xiangqiful} a month or {P_YEARLY@xiangqiful} a year (each with a {TRIAL@xiangqiful}), or {P_LIFETIME@xiangqiful} once. It has no online play. To play people, [PyChess](/alternatives/pychess/) and [Xiangqi.com](/alternatives/xiangqi-com/) are the usual places, and [the guide to xiangqi apps for iPhone](/guides/best-xiangqi-apps-iphone/) compares the rest.

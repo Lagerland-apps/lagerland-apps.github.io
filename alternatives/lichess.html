@@ -2,20 +2,20 @@
 layout: default
 permalink: /alternatives/lichess/
 title: "Lichess Alternative for Offline Training"
-quick_answer: "Chessful is a privacy-first iPhone, iPad, and Mac alternative to Lichess for offline training and analysis. Both run Stockfish and both have no ads. Lichess is an online community platform with millions of opponents and a large puzzle database. Chessful is an on-device training & analysis app for the player who wants a teacher: it explains mistakes in plain language, builds adaptive training from your own losses, and has 40 distinct AI opponents. It runs fully offline, with no account and no daily quota."
+quick_answer: "Chessful is an iPhone, iPad, and Mac companion to Lichess for offline training and analysis. Both use Stockfish and neither shows ads. Lichess is a free online platform with live games against people. Chessful is a training app: import your Lichess games as PGN, Stockfish checks every move on your device, each mistake is explained in plain language, and your mistakes become your daily training. It works offline with no account. Free players get 2 analyses a day; Premium is unlimited."
 seo:
   title: "Lichess Alternative: Chessful, Offline Chess Training"
-  description: "Lichess is an online community. Chessful is its offline companion: same Stockfish, no account, plain-language mistake analysis, adaptive training."
+  description: "Keep Lichess for live games. Chessful reviews your Lichess games offline: import the PGN, Stockfish runs on-device, every mistake explained in words."
   keywords:
     - Lichess alternative
     - Lichess offline alternative
     - Lichess iPhone alternative
     - Chessful vs Lichess
+    - analyze lichess games iphone
     - offline chess training app
     - chess training without account
     - Stockfish iPhone offline
-    - chess analysis no internet
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "chessful" | first -%}
@@ -47,11 +47,11 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is there a Lichess alternative that works offline?", "acceptedAnswer": { "@type": "Answer", "text": "Chessful is the closest on-device match for Lichess on privacy and price, though it has no live human matchmaking. Lichess runs Stockfish in the cloud and gives free unlimited analysis when you're online. Chessful runs Stockfish on your iPhone, iPad, or Mac with no internet at all, no account and no daily quota, and it adds plain-language mistake explanations plus adaptive training built from your own games." } },
-    { "@type": "Question", "name": "Is Chessful a replacement for Lichess?", "acceptedAnswer": { "@type": "Answer", "text": "No. Lichess is the right tool for ranked human play, live matchmaking, the Puzzle Storm, and its very large opening database. Chessful offers none of those. It is an offline training & analysis app meant to be used alongside Lichess (or Chess.com). Most improving players who try Chessful keep Lichess for live play and use Chessful for the work that happens between games." } },
-    { "@type": "Question", "name": "Can I import my Lichess games into Chessful?", "acceptedAnswer": { "@type": "Answer", "text": "No. Chessful doesn't import Lichess games or PGN files. It analyses the games you play in the app and builds its adaptive training queue from those." } },
-    { "@type": "Question", "name": "Why use Chessful instead of just Lichess's free analysis?", "acceptedAnswer": { "@type": "Answer", "text": "Lichess's analysis shows centipawn graphs and engine lines, and Chessful turns those into plain-language sentences (\"you played Nxd5; the knight was your only back-rank defender, mate in 2\"). Chessful's training queue comes from the patterns in your own mistakes, with spaced repetition, where Lichess draws on a generic puzzle pool. And Chessful runs fully offline on iPhone, iPad, and Mac, with no account and no daily quota, which helps on flights, on the subway, or when you don't want a chess profile attached to your name." } },
-    { "@type": "Question", "name": "Is Chessful free like Lichess?", "acceptedAnswer": { "@type": "Answer", "text": "Chessful has a no-ads free tier with the 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, and three training sessions per week. Premium unlocks unlimited deep analysis, unlimited adaptive training, full skill graphs, and alternative-move exploration: {P_MONTHLY@chessful}/month, {P_YEARLY@chessful}/year, or {P_LIFETIME@chessful} once for lifetime access with a 7-day free trial. Lichess is fully free and donation-supported. Chessful is paid software from an indie developer, and the payments fund its on-device-only privacy model." } }
+    { "@type": "Question", "name": "Is there a Lichess alternative that works offline?", "acceptedAnswer": { "@type": "Answer", "text": "Chessful works offline for everything you do with chess, though it has no live games against people. Lichess runs Stockfish in the cloud and gives free unlimited analysis when you're online. Chessful runs Stockfish on your iPhone, iPad, or Mac with no internet and no account, explains each mistake in plain language, and builds your training from your own games. Only purchases and Game Center need a connection." } },
+    { "@type": "Question", "name": "Is Chessful a replacement for Lichess?", "acceptedAnswer": { "@type": "Answer", "text": "No. Lichess is the right tool for rated games against people, live matchmaking, Puzzle Storm, and its large opening database. Chessful has none of those. It is a training and analysis app to use alongside Lichess or Chess.com: play your games there, then bring them to Chessful to see what went wrong." } },
+    { "@type": "Question", "name": "Can I import my Lichess games into Chessful?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, as PGN files. Export your games from Lichess, then open the file in Chessful from Files, iCloud Drive, or AirDrop, or paste the PGN text. One import takes up to 500 games, flags duplicates, and lets you pick which side you played. Chessful doesn't connect to Lichess or fetch games by username." } },
+    { "@type": "Question", "name": "Why use Chessful instead of just Lichess's free analysis?", "acceptedAnswer": { "@type": "Answer", "text": "Lichess's analysis shows an evaluation graph and engine lines. Chessful adds the words: each mistake card shows what you played, what was best, why the better move works, and the line that punishes yours, worded for the coaching level you pick. Your mistakes then become the puzzles in your daily training, and spaced repetition brings back the ones you miss. It all works offline, with no account." } },
+    { "@type": "Question", "name": "Is Chessful free like Lichess?", "acceptedAnswer": { "@type": "Answer", "text": "Partly. Chessful is free with daily limits: 2 analyses, 3 puzzles, and 2 coach hints a day, plus all 156 lessons, every mistake explanation, and the first 10 opponents. Premium removes the limits and opens all 40 opponents and all 96 endgames for {P_MONTHLY@chessful}/month or {P_YEARLY@chessful}/year, each with a {TRIAL@chessful}, or {P_LIFETIME@chessful} once. Lichess is fully free and donation-supported." } }
   ]
 }
 </script>
@@ -61,7 +61,7 @@ last_updated: 2026-10-26
     <p class="overline">Offline · Stockfish · No account</p>
     <h1 class="h1">A Lichess alternative<br><span class="gradient-text">for the work you do between games.</span></h1>
     <p class="lead">
-      Lichess is one of the best things on the internet: free, ad-free, open source, with millions of opponents. Chessful doesn't try to replace it. It is an on-device companion that runs the same Stockfish with no internet, no account and no daily quota, and adds plain-language mistake explanations and adaptive training built from your own losses. The same player can use both.
+      Lichess is free, ad-free, open source, and full of opponents. Chessful doesn't try to replace it. Import your Lichess games as PGN, and Stockfish checks every move on your device, with no internet and no account. Each mistake comes with a sentence that explains it, and the mistakes you make become your daily training. The same player can use both.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/chessful/">See Chessful</a>
@@ -78,27 +78,27 @@ last_updated: 2026-10-26
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">Where the analysis runs</div>
-      <div class="card-text"><strong>Chessful:</strong> Stockfish runs on your iPhone, iPad, or Mac and never needs the internet, so it works on a flight or on the subway.<br><br><strong>Lichess:</strong> Stockfish runs in the cloud. It is free and unlimited but needs a connection. The mobile app caches some functionality.</div>
+      <div class="card-text"><strong>Chessful:</strong> Stockfish runs on your iPhone, iPad, or Mac and needs no connection, so it works on a flight or on the subway.<br><br><strong>Lichess:</strong> Stockfish runs in the cloud. It is free and unlimited but needs a connection.</div>
     </div>
     <div class="card">
       <div class="card-title">How mistakes are explained</div>
-      <div class="card-text"><strong>Chessful:</strong> Plain-language sentences such as "you played Nxd5; the knight was your only back-rank defender." Motif detectors + on-device language model.<br><br><strong>Lichess:</strong> Centipawn graph and engine lines. Excellent and free, but reading them well takes practice.</div>
+      <div class="card-text"><strong>Chessful:</strong> A card for each mistake: what you played, what was best, why, and the refutation line, worded for your coaching level and tagged with one of 10 mistake types.<br><br><strong>Lichess:</strong> Evaluation graph and engine lines. Excellent and free, but reading them well takes practice.</div>
     </div>
     <div class="card">
-      <div class="card-title">Adaptive training</div>
-      <div class="card-text"><strong>Chessful:</strong> Training sessions generated from the specific patterns in your mistakes (hung piece, missed fork, weak back rank…). Spaced repetition keeps the right patterns on rotation.<br><br><strong>Lichess:</strong> Puzzle Storm, Puzzle Racer, generic puzzle pool by theme. Not derived from your games.</div>
+      <div class="card-title">Training</div>
+      <div class="card-text"><strong>Chessful:</strong> Today's Training builds puzzles from your own mistakes, and spaced repetition brings misses back. The library adds 15,000 puzzles in 53 themes, drawn from the Lichess open puzzle database and bundled for offline use.<br><br><strong>Lichess:</strong> Puzzle Storm, Puzzle Racer, and a large themed puzzle pool, not derived from your games.</div>
     </div>
     <div class="card">
       <div class="card-title">Live human play</div>
-      <div class="card-text"><strong>Chessful:</strong> No live human play. It has 40 distinct AI opponents, each with its own repertoire and structural preference.<br><br><strong>Lichess:</strong> Live human matchmaking at any time of day, which is what it is best known for.</div>
+      <div class="card-text"><strong>Chessful:</strong> None. You play 40 built-in opponents from 400 to 2400 Elo, each with a play style, strengths, and weaknesses.<br><br><strong>Lichess:</strong> Live games against people at any time of day, which is what it is best known for.</div>
     </div>
     <div class="card">
-      <div class="card-title">Account / privacy</div>
-      <div class="card-text"><strong>Chessful:</strong> No account or sign-up, and no data leaves the device. The App Privacy nutrition label declares zero data collected.<br><br><strong>Lichess:</strong> Optional account for ranked play, minimal analytics, no ads. As good as it gets for an online platform, though it is still online.</div>
+      <div class="card-title">Account and privacy</div>
+      <div class="card-text"><strong>Chessful:</strong> No account or sign-up. No ads, analytics, or tracking, and your games stay on your device.<br><br><strong>Lichess:</strong> Optional account for rated play, minimal analytics, no ads. As good as it gets for an online platform, though it is still online.</div>
     </div>
     <div class="card">
       <div class="card-title">Price</div>
-      <div class="card-text"><strong>Chessful:</strong> Free tier with 40 opponents + 3 training sessions/week. Premium {P_MONTHLY@chessful}/mo, {P_YEARLY@chessful}/yr, or {P_LIFETIME@chessful} lifetime.<br><br><strong>Lichess:</strong> Free, donation-supported. The non-profit funds the servers via Patreon-style donations.</div>
+      <div class="card-text"><strong>Chessful:</strong> Free with daily limits (2 analyses, 3 puzzles, 2 coach hints). Premium {P_MONTHLY@chessful}/mo, {P_YEARLY@chessful}/yr, or {P_LIFETIME@chessful} lifetime.<br><br><strong>Lichess:</strong> Free, funded by donations to the non-profit.</div>
     </div>
   </div>
 </section>
@@ -109,25 +109,24 @@ last_updated: 2026-10-26
     <div class="card">
       <div class="card-title">Use Chessful for…</div>
       <ul class="bullets">
-        <li>Post-game analysis that reads like a teacher talking</li>
-        <li>Training sessions built from your own losses instead of generic puzzles</li>
-        <li>Playing offline when you don't want a connection or an account</li>
-        <li>Forty distinct AI opponents tuned to specific styles</li>
-        <li>iPhone, iPad, and Mac (Universal Purchase, on-device)</li>
+        <li>Reviewing your Lichess games with each mistake explained in words</li>
+        <li>Training built from your own mistakes instead of a general puzzle pool</li>
+        <li>Playing and analysing offline, without an account</li>
+        <li>156 lessons and 96 endgames when you want structured study</li>
+        <li>iPhone, iPad, and Mac with one Universal Purchase</li>
       </ul>
     </div>
     <div class="card">
       <div class="card-title">Keep Lichess for…</div>
       <ul class="bullets">
-        <li>Ranked live human play</li>
-        <li>Puzzle Storm, Puzzle Racer, and the very large puzzle library</li>
+        <li>Rated live games against people</li>
+        <li>Puzzle Storm, Puzzle Racer, and the full puzzle library</li>
         <li>The opening database, the study tool, and broadcasts</li>
         <li>Free unlimited cloud analysis when you're online</li>
-        <li>Supporting a non-profit that makes the internet better</li>
+        <li>Supporting a non-profit</li>
       </ul>
     </div>
   </div>
-  <p class="lead" style="margin-top:var(--s-4);text-align:center;">Many improving players run both: Lichess for the games, Chessful for the work between them.</p>
 </section>
 
 {% if app %}
@@ -142,18 +141,18 @@ last_updated: 2026-10-26
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>Is there a Lichess alternative that works offline?</summary><div class="faq-a">Chessful is the closest on-device match for Lichess on privacy and price, though it has no live human matchmaking. Lichess runs Stockfish in the cloud and gives free unlimited analysis when you're online. Chessful runs Stockfish on your iPhone, iPad, or Mac with no internet at all, no account and no daily quota, and it adds plain-language mistake explanations plus adaptive training built from your own games.</div></details>
-    <details class="faq-item"><summary>Is Chessful a replacement for Lichess?</summary><div class="faq-a">No. Lichess is the right tool for ranked human play, live matchmaking, the Puzzle Storm, and its very large opening database. Chessful offers none of those. It is an offline training & analysis app meant to be used alongside Lichess (or Chess.com).</div></details>
-    <details class="faq-item"><summary>Can I import my Lichess games into Chessful?</summary><div class="faq-a">No. Chessful doesn't import Lichess games or PGN files. It analyses the games you play in the app and builds its adaptive training queue from those.</div></details>
-    <details class="faq-item"><summary>Why use Chessful instead of just Lichess's free analysis?</summary><div class="faq-a">Lichess's analysis shows centipawn graphs and engine lines, and Chessful turns those into plain-language sentences. Chessful's training queue comes from the patterns in your own mistakes, with spaced repetition, where Lichess draws on a generic puzzle pool. And Chessful runs fully offline on iPhone, iPad, and Mac, with no account and no daily quota.</div></details>
-    <details class="faq-item"><summary>Is Chessful free like Lichess?</summary><div class="faq-a">Chessful has a no-ads free tier with the 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, and three training sessions per week. Premium unlocks unlimited deep analysis, unlimited adaptive training, full skill graphs, and alternative-move exploration: {P_MONTHLY@chessful}/month, {P_YEARLY@chessful}/year, or {P_LIFETIME@chessful} once for lifetime access with a 7-day free trial. Lichess is free and donation-supported.</div></details>
+    <details class="faq-item" open><summary>Is there a Lichess alternative that works offline?</summary><div class="faq-a">Chessful works offline for everything you do with chess, though it has no live games against people. Lichess runs Stockfish in the cloud and gives free unlimited analysis when you're online. Chessful runs Stockfish on your iPhone, iPad, or Mac with no internet and no account, explains each mistake in plain language, and builds your training from your own games. Only purchases and Game Center need a connection.</div></details>
+    <details class="faq-item"><summary>Is Chessful a replacement for Lichess?</summary><div class="faq-a">No. Lichess is the right tool for rated games against people, live matchmaking, Puzzle Storm, and its large opening database. Chessful has none of those. It is a training and analysis app to use alongside Lichess or Chess.com: play your games there, then bring them to Chessful to see what went wrong.</div></details>
+    <details class="faq-item"><summary>Can I import my Lichess games into Chessful?</summary><div class="faq-a">Yes, as PGN files. Export your games from Lichess, then open the file in Chessful from Files, iCloud Drive, or AirDrop, or paste the PGN text. One import takes up to 500 games, flags duplicates, and lets you pick which side you played. Chessful doesn't connect to Lichess or fetch games by username.</div></details>
+    <details class="faq-item"><summary>Why use Chessful instead of just Lichess's free analysis?</summary><div class="faq-a">Lichess's analysis shows an evaluation graph and engine lines. Chessful adds the words: each mistake card shows what you played, what was best, why the better move works, and the line that punishes yours, worded for the coaching level you pick. Your mistakes then become the puzzles in your daily training, and spaced repetition brings back the ones you miss. It all works offline, with no account.</div></details>
+    <details class="faq-item"><summary>Is Chessful free like Lichess?</summary><div class="faq-a">Partly. Chessful is free with daily limits: 2 analyses, 3 puzzles, and 2 coach hints a day, plus all 156 lessons, every mistake explanation, and the first 10 opponents. Premium removes the limits and opens all 40 opponents and all 96 endgames for {P_MONTHLY@chessful}/month or {P_YEARLY@chessful}/year, each with a {TRIAL@chessful}, or {P_LIFETIME@chessful} once. Lichess is fully free and donation-supported.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Try it</p>
   <h2 class="h2">Open Chessful</h2>
-  <p class="lead">The same Stockfish, on your device, with explanations a teacher would give.</p>
+  <p class="lead">Bring your Lichess games and see each mistake explained, on your device.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/chessful/">Learn about Chessful</a>
   </div>

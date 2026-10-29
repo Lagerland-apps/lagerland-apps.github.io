@@ -2,20 +2,20 @@
 layout: default
 permalink: /alternatives/chessly/
 title: "Chessly Alternative"
-quick_answer: "Chessful is a privacy-first iPhone, iPad, and Mac alternative to Chessly for players who want training drawn from their own games. Chessly is Levy Rozman's (GothamChess) platform for opening-repertoire video courses. Chessful builds adaptive training from the specific mistake patterns in your own losses and has no video courses. Many improving players use both: Chessly for the opening curriculum, Chessful for the improvement that comes after you've memorised the lines."
+quick_answer: "Chessful is an alternative to Chessly for iPhone, iPad, and Mac that checks the openings you actually play. Chessly is Levy Rozman's (GothamChess) platform for opening-repertoire video courses. Chessful has no videos. Its Opening Repertoire reads your analysed games and shows your most-played openings, how you score in each, and where you leave the book. Stockfish runs on your device, explains each mistake in plain language, and turns your mistakes into daily training. Use Chessly to learn a repertoire and Chessful to see how it holds up in your games."
 seo:
   title: "Chessly Alternative: Chessful, Training From Your Games"
-  description: "A Chessly alternative that trains you on your own losses, with adaptive drills, 40 AI opponents and no subscription required."
+  description: "A Chessly alternative that shows where you leave the book in the openings you really play, explains each mistake in words, and needs no account."
   keywords:
     - Chessly alternative
     - Chessly GothamChess alternative
     - Chessly opening courses alternative
     - Chessful vs Chessly
-    - chess training without subscription
-    - adaptive chess training app
+    - chess opening repertoire app
     - chess training from your own games
     - Stockfish iPhone offline
-last_updated: 2026-10-26
+    - chess training app no account
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "chessful" | first -%}
@@ -47,21 +47,21 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best Chessly alternative for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Chessful is the closest alternative to Chessly for a player who wants training more than ranked play. Chessly sells opening-repertoire video courses by Levy Rozman (GothamChess) and other titled players. Chessful builds an adaptive training queue from the specific mistake patterns in your own losses, and runs on iPhone, iPad, and Mac. They work well together: Chessly for the opening curriculum, Chessful for the pattern-recognition work once the openings are learned." } },
-    { "@type": "Question", "name": "Does Chessful have video opening courses like Chessly?", "acceptedAnswer": { "@type": "Answer", "text": "No. Chessful has no video courses and no coach-authored curriculum. Its training engine detects the specific mistake patterns in your own games (with motif detectors on top of Stockfish output) and drills the patterns you're actually missing. The idea is that fixing your real losses does more for you than watching strong players explain positions you haven't met yet." } },
-    { "@type": "Question", "name": "How much does Chessful cost compared to Chessly?", "acceptedAnswer": { "@type": "Answer", "text": "Chessful's free tier has no time limit or ads and includes 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, and 3 training sessions per week. Premium is {P_MONTHLY@chessful}/month, {P_YEARLY@chessful}/year, or {P_LIFETIME@chessful} once for lifetime access, with a 7-day free trial. Chessly sells video courses, with a paid membership; check Chessly for current prices. With Chessful you don't get a coach-led opening curriculum." } },
-    { "@type": "Question", "name": "Can I use both Chessly and Chessful?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and many improving players do, because they cover different parts of improvement. Chessly is an opening curriculum: you work through a structured repertoire by a strong coach. Chessful covers what happens after move 12, such as middlegame mistakes, defensive blind spots, and the endgame technique errors that decide most club-level games. Players who use both typically open Chessly for dedicated opening study and Chessful for the play-and-train cycle in between." } },
-    { "@type": "Question", "name": "Does Chessful detect repertoire drift like Chessly's opening focus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. \"Repertoire drift\" is one of the thirty mistake motifs Chessful's classifier detects. It fires when you leave your usual opening setup in a way that loses a tempo, allows an early piece exchange you don't normally allow, or transposes into a structure outside your repertoire, and Chessful then queues drills for it. Chessful tracks the repertoire you actually play from your games, while Chessly teaches you a recommended repertoire from scratch." } }
+    { "@type": "Question", "name": "What is the best Chessly alternative for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Chessful suits a player who already has an opening and wants to see how it goes in real games. Chessly sells opening-repertoire video courses by Levy Rozman (GothamChess) and other titled players. Chessful analyses your games with Stockfish on your iPhone, iPad, or Mac, shows where you leave the book in Opening Repertoire, explains each mistake in plain language, and builds your daily training from those mistakes. They work well together: Chessly for the opening curriculum, Chessful for what happens once the game leaves it." } },
+    { "@type": "Question", "name": "Does Chessful have video opening courses like Chessly?", "acceptedAnswer": { "@type": "Answer", "text": "No. Chessful has no video courses and no coach-presented curriculum. It has 156 interactive lessons, free, that start with the board itself and include sections on openings, endgames, and strategy. Its training comes from the mistakes in your own games, each tagged with one of 10 types such as Missed Fork, Poor King Safety, or Opening Inaccuracy." } },
+    { "@type": "Question", "name": "How much does Chessful cost compared to Chessly?", "acceptedAnswer": { "@type": "Answer", "text": "Chessful is free with daily limits: 2 analyses, 3 puzzles, and 2 coach hints a day, the first 10 opponents, and all 156 lessons. Premium removes the limits for {P_MONTHLY@chessful}/month or {P_YEARLY@chessful}/year, each with a {TRIAL@chessful}, or {P_LIFETIME@chessful} once. Chessly sells video courses with a paid membership; check Chessly for current prices." } },
+    { "@type": "Question", "name": "Can I use both Chessly and Chessful?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Chessly is an opening curriculum: you work through a structured repertoire with a strong coach. Chessful covers the rest of the game you actually played, from hanging pieces and missed forks to king safety and endgame errors. Import your games from Chess.com or Lichess as PGN, and Chessful turns their mistakes into training." } },
+    { "@type": "Question", "name": "Does Chessful check the openings I play?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Opening Repertoire reads your analysed games and shows the openings you play most, how you score in each, and where you leave the book. Premium adds the full move tree, engine corrections, and drills for the lines you keep getting wrong. Chessful tracks the repertoire you actually play, while Chessly teaches you a recommended repertoire from scratch." } }
   ]
 }
 </script>
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">Adaptive · Offline · No subscription required</p>
+    <p class="overline">Your own games · On-device Stockfish · No account</p>
     <h1 class="h1">A Chessly alternative<br><span class="gradient-text">built from the games you've actually played.</span></h1>
     <p class="lead">
-      Chessly is GothamChess's course platform: Levy Rozman and other titled players walk you through structured opening repertoires on video. Chessful has no video courses and no curriculum. Its training comes from the specific mistake patterns in your own losses, including repertoire drift in the openings you actually play, and it drills them with spaced repetition. You can use both.
+      Chessly is GothamChess's course platform, where Levy Rozman and other titled players walk you through opening repertoires on video. The real test comes in your own games, when an opponent plays a move the course didn't cover. Chessful's Opening Repertoire reads your analysed games and shows which openings you really play, how you score in each, and where you leave the book. Stockfish checks the rest of the game on your device, and each mistake is explained in plain language and comes back in your daily training.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/chessful/">See Chessful</a>
@@ -78,27 +78,27 @@ last_updated: 2026-10-26
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">Training source</div>
-      <div class="card-text"><strong>Chessful:</strong> Training queue generated from the mistakes in your own games, classified into about thirty motifs, drilled with spaced repetition.<br><br><strong>Chessly:</strong> Structured opening-repertoire video courses by Levy Rozman (GothamChess) and other titled players, taught as a curriculum.</div>
+      <div class="card-text"><strong>Chessful:</strong> Today's Training builds a session from the mistakes in your analysed games, and spaced repetition brings misses back.<br><br><strong>Chessly:</strong> Opening-repertoire video courses by Levy Rozman (GothamChess) and other titled players, taught as a curriculum.</div>
     </div>
     <div class="card">
-      <div class="card-title">Video courses</div>
-      <div class="card-text"><strong>Chessful:</strong> None. Training comes from your own games.<br><br><strong>Chessly:</strong> Built around GothamChess, with Levy Rozman and other titled players presenting the courses.</div>
+      <div class="card-title">Lessons</div>
+      <div class="card-text"><strong>Chessful:</strong> 156 interactive lessons, all free, from the board itself to strategy. No video.<br><br><strong>Chessly:</strong> Video courses presented by GothamChess and other titled players.</div>
     </div>
     <div class="card">
-      <div class="card-title">Scope</div>
-      <div class="card-text"><strong>Chessful:</strong> Tactics, defense, positional play, openings, and endgames, all five skill dimensions drawn from your games.<br><br><strong>Chessly:</strong> Openings primarily, with some middlegame and endgame coverage in specific courses.</div>
+      <div class="card-title">Openings</div>
+      <div class="card-text"><strong>Chessful:</strong> Opening Repertoire shows your most-played openings, your score in each, and where you leave the book. Premium adds the full tree, engine corrections, and line drills.<br><br><strong>Chessly:</strong> Openings primarily, with some middlegame and endgame coverage in specific courses.</div>
     </div>
     <div class="card">
       <div class="card-title">Pricing</div>
-      <div class="card-text"><strong>Chessful:</strong> Free tier; Premium {P_MONTHLY@chessful}/mo, {P_YEARLY@chessful}/yr, or {P_LIFETIME@chessful} lifetime (7-day free trial).<br><br><strong>Chessly:</strong> Paid video courses and membership. Check Chessly for current prices.</div>
+      <div class="card-text"><strong>Chessful:</strong> Free with daily limits; Premium {P_MONTHLY@chessful}/mo or {P_YEARLY@chessful}/yr (each with a {TRIAL@chessful}), or {P_LIFETIME@chessful} lifetime.<br><br><strong>Chessly:</strong> Paid video courses and membership. Check Chessly for current prices.</div>
     </div>
     <div class="card">
       <div class="card-title">Offline support</div>
-      <div class="card-text"><strong>Chessful:</strong> Fully offline. Stockfish, the motif detectors, and the training engine all run on the device.<br><br><strong>Chessly:</strong> Video courses stream, or download for offline use. It is account-based.</div>
+      <div class="card-text"><strong>Chessful:</strong> Playing, analysis, lessons, puzzles, and endgames work offline. Purchases and Game Center need a connection.<br><br><strong>Chessly:</strong> Video courses stream, or download for offline use. It is account-based.</div>
     </div>
     <div class="card">
       <div class="card-title">Account requirement</div>
-      <div class="card-text"><strong>Chessful:</strong> No account at any point.<br><br><strong>Chessly:</strong> Account required for course progress and subscription management.</div>
+      <div class="card-text"><strong>Chessful:</strong> No account.<br><br><strong>Chessly:</strong> Account required for course progress and subscription management.</div>
     </div>
   </div>
 </section>
@@ -109,24 +109,23 @@ last_updated: 2026-10-26
     <div class="card">
       <div class="card-title">Pick Chessful if you want…</div>
       <ul class="bullets">
-        <li>Training built on the patterns you actually miss</li>
-        <li>Plain-language mistake explanations on every game</li>
-        <li>40 distinct AI opponents to play against in-app</li>
-        <li>Fully offline play with no account and no required subscription</li>
-        <li>Repertoire-drift detection on the openings you already play</li>
+        <li>A check on the openings you already play, with your score in each and where you leave the book</li>
+        <li>Training built from the mistakes you actually make</li>
+        <li>Each mistake explained in plain language, worded for your level</li>
+        <li>Your Chess.com or Lichess games reviewed from a PGN export</li>
+        <li>40 opponents to play in the app, from 400 to 2400 Elo</li>
       </ul>
     </div>
     <div class="card">
       <div class="card-title">Pick Chessly if you want…</div>
       <ul class="bullets">
-        <li>Structured opening video courses by Levy Rozman (GothamChess) and other titled players</li>
-        <li>Video instruction with on-screen explanation of repertoire choices</li>
-        <li>Curriculum-led learning when you don't yet have a settled repertoire</li>
-        <li>Direct exposure to a strong coach's repertoire philosophy</li>
+        <li>Opening video courses by Levy Rozman (GothamChess) and other titled players</li>
+        <li>Video instruction that explains repertoire choices on screen</li>
+        <li>A curriculum to follow when you don't yet have a settled repertoire</li>
+        <li>A strong coach's repertoire philosophy, first-hand</li>
       </ul>
     </div>
   </div>
-  <p class="lead" style="margin-top:var(--s-4);text-align:center;">Many improving players run both, using Chessly for the openings and Chessful for everything after move 12.</p>
 </section>
 
 {% if app %}
@@ -141,18 +140,18 @@ last_updated: 2026-10-26
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>What is the best Chessly alternative for iPhone?</summary><div class="faq-a">Chessful is the closest alternative to Chessly for a player who wants training more than ranked play. Chessly sells opening-repertoire video courses by Levy Rozman (GothamChess) and other titled players. Chessful builds an adaptive training queue from the specific mistake patterns in your own losses. They work well together: Chessly for the opening curriculum, Chessful for the pattern-recognition work once the openings are learned.</div></details>
-    <details class="faq-item"><summary>Does Chessful have video opening courses like Chessly?</summary><div class="faq-a">No. Chessful has no video courses. Its training engine detects the specific mistake patterns in your own games and drills the patterns you're actually missing.</div></details>
-    <details class="faq-item"><summary>How much does Chessful cost compared to Chessly?</summary><div class="faq-a">Chessful's free tier has no time limit or ads. Premium is {P_MONTHLY@chessful}/month, {P_YEARLY@chessful}/year, or {P_LIFETIME@chessful} once for lifetime access, with a 7-day free trial. Chessly sells video courses with a paid membership; check Chessly for current prices.</div></details>
-    <details class="faq-item"><summary>Can I use both Chessly and Chessful?</summary><div class="faq-a">Yes, and many improving players do. Chessly is an opening curriculum; Chessful covers what happens after move 12. Players who use both typically open Chessly for dedicated opening study and Chessful for the play-and-train cycle in between.</div></details>
-    <details class="faq-item"><summary>Does Chessful detect repertoire drift like Chessly's opening focus?</summary><div class="faq-a">Yes. "Repertoire drift" is one of the thirty mistake motifs Chessful's classifier detects, and it fires when you leave your usual opening setup. Chessful tracks the repertoire you actually play from your games, while Chessly teaches you a recommended repertoire from scratch.</div></details>
+    <details class="faq-item" open><summary>What is the best Chessly alternative for iPhone?</summary><div class="faq-a">Chessful suits a player who already has an opening and wants to see how it goes in real games. Chessly sells opening-repertoire video courses by Levy Rozman (GothamChess) and other titled players. Chessful analyses your games with Stockfish on your iPhone, iPad, or Mac, shows where you leave the book in Opening Repertoire, explains each mistake in plain language, and builds your daily training from those mistakes. They work well together: Chessly for the opening curriculum, Chessful for what happens once the game leaves it.</div></details>
+    <details class="faq-item"><summary>Does Chessful have video opening courses like Chessly?</summary><div class="faq-a">No. Chessful has no video courses and no coach-presented curriculum. It has 156 interactive lessons, free, that start with the board itself and include sections on openings, endgames, and strategy. Its training comes from the mistakes in your own games, each tagged with one of 10 types such as Missed Fork, Poor King Safety, or Opening Inaccuracy.</div></details>
+    <details class="faq-item"><summary>How much does Chessful cost compared to Chessly?</summary><div class="faq-a">Chessful is free with daily limits: 2 analyses, 3 puzzles, and 2 coach hints a day, the first 10 opponents, and all 156 lessons. Premium removes the limits for {P_MONTHLY@chessful}/month or {P_YEARLY@chessful}/year, each with a {TRIAL@chessful}, or {P_LIFETIME@chessful} once. Chessly sells video courses with a paid membership; check Chessly for current prices.</div></details>
+    <details class="faq-item"><summary>Can I use both Chessly and Chessful?</summary><div class="faq-a">Yes. Chessly is an opening curriculum: you work through a structured repertoire with a strong coach. Chessful covers the rest of the game you actually played, from hanging pieces and missed forks to king safety and endgame errors. Import your games from Chess.com or Lichess as PGN, and Chessful turns their mistakes into training.</div></details>
+    <details class="faq-item"><summary>Does Chessful check the openings I play?</summary><div class="faq-a">Yes. Opening Repertoire reads your analysed games and shows the openings you play most, how you score in each, and where you leave the book. Premium adds the full move tree, engine corrections, and drills for the lines you keep getting wrong. Chessful tracks the repertoire you actually play, while Chessly teaches you a recommended repertoire from scratch.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Try it</p>
   <h2 class="h2">Open Chessful</h2>
-  <p class="lead">Training built from the games you've actually played.</p>
+  <p class="lead">See where your openings go wrong in the games you play.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/chessful/">Learn about Chessful</a>
   </div>
