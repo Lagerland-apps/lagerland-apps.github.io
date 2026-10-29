@@ -1,0 +1,135 @@
+---
+layout: default
+ref: /for/apple-health-power-users/
+permalink: /de/for/apple-health-power-users/
+translated_from: 2026-10-29
+title: "Apple-Health-Daten auswerten: Apps für Apple-Watch-Profis"
+quick_answer: "Willst du deine Apple-Health-Daten auswerten, statt nur Diagramme anzuschauen, fang mit Observa an. Die App macht jeden Morgen aus Schlaf, HRV (SDNN), Ruheherzfrequenz und Trainingsbelastung einen Bereitschaftswert von 0 bis 100, gemessen an deiner eigenen Basislinie, beantwortet „Soll ich heute trainieren?“ samt Begründung und läuft auf iPhone, iPad und Apple Watch, wobei die Auswertung auf deinem Gerät passiert. Dazu kommen GymLogger X, ein Trainingstagebuch für Krafttraining mit Apple-Watch-App, das deine abgeschlossenen Trainings in Apple Health speichert, und AfterShift, wenn du im Schichtdienst arbeitest und deinen Schlaf zwischen den Schichten messen willst. Keine der drei Apps verlangt ein Konto oder zeigt Werbung."
+seo:
+  title: "Apple-Health-Daten auswerten: Apps für die Apple Watch"
+  description: "Deine Apple Watch zeichnet Schlaf, HRV und Herzdaten längst auf. Observa macht daraus jeden Tag einen Bereitschaftswert mit Grund, auf deinem Gerät."
+  keywords:
+    - apple health daten auswerten
+    - apple health auswertung app
+    - apple health apps
+    - hrv apple watch werte
+    - hrv app iphone
+    - apple watch daten auswerten
+    - bereitschaftswert apple watch
+    - apple health app ohne konto
+last_updated: 2026-10-29
+---
+{%- include t.html -%}
+{%- assign slugs = "observa,gymlogger-x,aftershift" | split: "," -%}
+{%- assign apps_for = '' | split: '' -%}
+{%- for slug in slugs -%}{%- assign m = site.apps | where: "slug", slug | first -%}{%- if m and m.status == "live" -%}{%- assign apps_for = apps_for | push: m -%}{%- endif -%}{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/de/for/apple-health-power-users/#webpage",
+  "url": "{{ site.url }}/de/for/apple-health-power-users/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/de/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "de",
+  "audience": { "@type": "PeopleAudience", "audienceType": "Intensive Nutzer von Apple Watch und Apple Health" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/de/" },
+      { "@type": "ListItem", "position": 2, "name": "Apple-Health-Daten auswerten", "item": "{{ site.url }}/de/for/apple-health-power-users/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "de",
+  "mainEntity": [
+    { "@type": "Question", "name": "Mit welcher App kann ich meine Apple-Health-Daten auswerten?", "acceptedAnswer": { "@type": "Answer", "text": "Willst du aus deinen Apple-Health-Daten eine Entscheidung für heute machen, ist Observa die App, die wir dafür entwickelt haben. Jeden Morgen berechnet sie die Bereitschaft von 0 bis 100 aus Schlaf, HRV (SDNN), Ruheherzfrequenz und Trainingsbelastung, gemessen an deiner eigenen Basislinie, und „Soll ich heute trainieren?“ antwortet mit Steigern, Halten, Erholen oder Ruhen, samt Begründung. „Warum dieser Wert?“ zeigt, welche Signale jede Zahl bewegt haben. Die täglichen Werte sind kostenlos, und die Auswertung läuft auf deinem Gerät." } },
+    { "@type": "Question", "name": "Lädt Observa meine Gesundheitsdaten hoch?", "acceptedAnswer": { "@type": "Answer", "text": "Nein. Die Auswertung läuft auf deinem iPhone, iPad oder deiner Apple Watch, und die App baut selbst keine Netzwerkverbindungen auf. Es gibt kein Konto und keine iCloud-Synchronisierung, und Observa enthält keine Analyse-SDKs. Nur Käufe und Links, die du öffnest, gehen ins Internet." } },
+    { "@type": "Question", "name": "Was unterscheidet Observa von AutoSleep oder Gentler Streak?", "acceptedAnswer": { "@type": "Answer", "text": "AutoSleep zeichnet deinen Schlaf aus den Daten der Apple Watch auf und bewertet ihn. Gentler Streak gibt dir jeden Tag vor, wie viel Bewegung guttut. Observa liest jeden Morgen das größere Bild in Apple Health und fasst Schlaf, HRV (SDNN), Ruheherzfrequenz und Trainingsbelastung zu einem Bereitschaftswert zusammen, mit einer Trainingsempfehlung und den Gründen dafür. Den Schlaf liest Observa aus Apple Health, egal welche App ihn gespeichert hat, deshalb kann es neben beiden laufen." } },
+    { "@type": "Question", "name": "Kann ich Observa zusammen mit meiner Trainings-App nutzen?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Observa liest Trainings aus Apple Health, egal welche App sie gespeichert hat. GymLogger X, unser Trainingstagebuch für Krafttraining, speichert jedes abgeschlossene Training in Apple Health, sobald du es erlaubst. Diese Trainings zählen zu Observas Trainingsbelastung, die 15 % der Bereitschaft ausmacht und in die Trainingsempfehlung einfließt." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Für alle, die Apple Watch und Apple Health intensiv nutzen</p>
+    <h1 class="h1">Die Daten sammelst du schon.<br><span class="gradient-text">Diese Apps werten sie aus.</span></h1>
+    <p class="lead">Trägst du seit Jahren eine Apple Watch, liegen in Apple Health Jahre deines Schlafs, deiner HRV, deiner Herzfrequenz und deiner Trainings. Die App „Health“ zeigt sie als Diagramme. Diese Apps machen daraus eine Empfehlung für heute, samt Begründung.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">Die Apps ansehen</a>
+      <a class="btn btn-secondary" href="#faq">Häufige Fragen</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Was fehlt, wenn du nur Apple Health nutzt?</h2>
+  <p class="lead">Apple Health speichert deine Daten zuverlässig und zeigt sie als Diagramme und Durchschnittswerte. Was du daraus machst, bleibt dir überlassen: ob die HRV von heute Morgen <em>für dich</em> niedrig ist, was sie gedrückt hat und ob heute ein harter oder ein leichter Trainingstag sein sollte.</p>
+  <p class="lead">Die Apps unten sind für alle, die die Daten schon haben und wissen wollen, was sie bedeuten. Wie du deine HRV-Werte einordnest, solange noch keine Basislinie da ist, erklärt unser Artikel <a href="{% include l.html url="/journal/apple-watch-hrv-without-a-baseline/" %}"{% if l_en %} hreflang="en"{% endif %}>HRV-Werte der Apple Watch richtig lesen{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Die Apps</p>
+    <h2 class="h2">Drei Apps, die über Apple Health zusammenarbeiten</h2>
+    <p class="lead">Alle drei stammen von Lagerland Apps, einem unabhängigen Studio aus Finnland. Keine verlangt ein Konto oder zeigt Werbung, und keine schickt deine Gesundheitsdaten an uns.</p>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in apps_for -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Warum diese drei Apps zusammen?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Observa: die tägliche Auswertung</div>
+      <div class="card-text">Jeden Morgen ein Bereitschaftswert aus Schlaf, HRV (SDNN, so wie Apple Health sie aufzeichnet), Ruheherzfrequenz und Trainingsbelastung, dazu ein Schlafwert mit Schlafschuld, gemessen an deinem eigenen Ziel, und eine Stresseinschätzung, die ihre Gründe nennt. „Muster“ ordnet die Gewohnheiten, die über 14, 28 oder 90 Tage mit deiner Erholung zusammenhängen. Pro ergänzt Trends über 30, 90 und 365 Tage, das Funktionelle Alter, den EKG-Verlauf und die Trainingsanalyse.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">GymLogger X: das Training</div>
+      <div class="card-text">Ein Trainingstagebuch für Krafttraining auf dem iPhone, mit einer Apple-Watch-App, die dir während deiner Sätze die Herzfrequenz live zeigt. Sobald du den Zugriff auf Apple Health erlaubst, wird jedes abgeschlossene Training dort als Krafttraining gespeichert, und Observa rechnet es in deine Trainingsbelastung ein.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">AfterShift: der Dienstplan (optional)</div>
+      <div class="card-text">Arbeitest du im Schichtdienst, liest AfterShift deinen Schlaf aus Apple Health und misst ihn vom Ende einer Schicht bis zum Beginn der nächsten, Nickerchen eingeschlossen. So wird der Schlaf nach einer Nachtschicht nicht auf zwei Kalendertage verteilt. Mehr dazu auf unserer Seite <a href="{% include l.html url="/for/shift-workers/" %}"{% if l_en %} hreflang="en"{% endif %}>Schichtarbeit und Schlaf{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Datenschutz</div>
+      <div class="card-text">Keine dieser Apps schickt deine Gesundheits- oder Trainingsdaten an Lagerland Apps oder enthält ein Analyse-SDK von Drittanbietern. Observa und AfterShift behalten ihre Daten auf dem Gerät. GymLogger X speichert deine Trainings auf deinen Geräten, in deinem eigenen iCloud-Konto und in Apple Health.</div>
+    </div>
+  </div>
+  <p class="card-text" style="margin-top:var(--s-3);">Nutzt du schon eine andere App? Unsere Vergleiche: <a href="{% include l.html url="/alternatives/autosleep/" %}"{% if l_en %} hreflang="en"{% endif %}>Observa oder AutoSleep{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> · <a href="{% include l.html url="/alternatives/athlytic/" %}"{% if l_en %} hreflang="en"{% endif %}>oder Athlytic{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> · <a href="{% include l.html url="/alternatives/welltory/" %}"{% if l_en %} hreflang="en"{% endif %}>oder Welltory{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a></p>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Fragen</p><h2 class="h2">Häufige Fragen</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Mit welcher App kann ich meine Apple-Health-Daten auswerten?</summary><div class="faq-a">Willst du aus deinen Apple-Health-Daten eine Entscheidung für heute machen, ist Observa die App, die wir dafür entwickelt haben. Jeden Morgen berechnet sie die Bereitschaft von 0 bis 100 aus Schlaf, HRV (SDNN), Ruheherzfrequenz und Trainingsbelastung, gemessen an deiner eigenen Basislinie, und „Soll ich heute trainieren?“ antwortet mit Steigern, Halten, Erholen oder Ruhen, samt Begründung. „Warum dieser Wert?“ zeigt, welche Signale jede Zahl bewegt haben. Die täglichen Werte sind kostenlos, und die Auswertung läuft auf deinem Gerät.</div></details>
+    <details class="faq-item"><summary>Lädt Observa meine Gesundheitsdaten hoch?</summary><div class="faq-a">Nein. Die Auswertung läuft auf deinem iPhone, iPad oder deiner Apple Watch, und die App baut selbst keine Netzwerkverbindungen auf. Es gibt kein Konto und keine iCloud-Synchronisierung, und Observa enthält keine Analyse-SDKs. Nur Käufe und Links, die du öffnest, gehen ins Internet.</div></details>
+    <details class="faq-item"><summary>Was unterscheidet Observa von AutoSleep oder Gentler Streak?</summary><div class="faq-a">AutoSleep zeichnet deinen Schlaf aus den Daten der Apple Watch auf und bewertet ihn. Gentler Streak gibt dir jeden Tag vor, wie viel Bewegung guttut. Observa liest jeden Morgen das größere Bild in Apple Health und fasst Schlaf, HRV (SDNN), Ruheherzfrequenz und Trainingsbelastung zu einem Bereitschaftswert zusammen, mit einer Trainingsempfehlung und den Gründen dafür. Den Schlaf liest Observa aus Apple Health, egal welche App ihn gespeichert hat, deshalb kann es neben beiden laufen.</div></details>
+    <details class="faq-item"><summary>Kann ich Observa zusammen mit meiner Trainings-App nutzen?</summary><div class="faq-a">Ja. Observa liest Trainings aus Apple Health, egal welche App sie gespeichert hat. GymLogger X, unser Trainingstagebuch für Krafttraining, speichert jedes abgeschlossene Training in Apple Health, sobald du es erlaubst. Diese Trainings zählen zu Observas Trainingsbelastung, die 15 % der Bereitschaft ausmacht und in die Trainingsempfehlung einfließt.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Hier anfangen</p>
+  <h2 class="h2">Fang mit Observa an</h2>
+  <p class="lead">Observa liest, was deine Watch und deine anderen Apps schon in Apple Health speichern. Die täglichen Werte sind kostenlos, und in den ersten 7 Tagen sind alle Pro-Funktionen ohne Anmeldung freigeschaltet.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/observa/" %}"{% if l_en %} hreflang="en"{% endif %}>Mehr über Observa{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Alle Apps ansehen{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>
