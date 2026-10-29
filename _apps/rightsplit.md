@@ -189,7 +189,7 @@ comparison_table:
         - "Free + {P_YEARLY}/yr or {P_LIFETIME} lifetime"
         - "Free + Pro subscription"
         - "Free"
-        - "Free + Pro subscription"
+        - "Free, no in-app purchases"
     - feature: "Account required"
       values:
         - "No"
@@ -232,7 +232,7 @@ comparison_table:
         - "Limited"
         - "Yes"
         - "Limited"
-  footnote: "Competitor details reflect publicly documented features as of 2026. Splitwise is the right tool when the whole group needs to see and add to a shared balance. RightSplit handles the single bill, with Pro+ Spaces for trips and shared homes kept on one phone."
+  footnote: "Competitor details reflect publicly documented features as of 2026. Tricount pricing checked in the US App Store on 29 October 2026. Splitwise is the right tool when the whole group needs to see and add to a shared balance. RightSplit handles the single bill, with Pro+ Spaces for trips and shared homes kept on one phone."
 
 screenshots:
   - src: "/assets/screenshots/rightsplit/1.webp"

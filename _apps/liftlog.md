@@ -152,8 +152,8 @@ comparison_table:
     - feature: "Pricing model"
       values:
         - "One-time purchase, {P_IAP:Minimum} to {P_IAP:Patron}"
-        - "Free + Pro subscription"
-        - "Free + Pro subscription"
+        - "Free + Pro subscription or lifetime"
+        - "Free + Pro subscription or lifetime"
         - "Subscription only"
     - feature: "Free trial with no card required"
       values:
@@ -203,7 +203,7 @@ comparison_table:
         - "Read-only without Pro"
         - "Read-only without Pro"
         - "Lost when sub lapses"
-  footnote: "Competitor details reflect publicly documented features as of 2026. With LiftLog you choose your tier once: {P_IAP:Minimum} Fair, {P_IAP:Suggested} Good, {P_IAP:Supporter} Generous, or {P_IAP:Patron} Patron. The App Store is the canonical source for current pricing."
+  footnote: "Competitor details reflect publicly documented features as of 2026. Pricing models checked in the US App Store on 29 October 2026. With LiftLog you choose your tier once: {P_IAP:Minimum} Fair, {P_IAP:Suggested} Good, {P_IAP:Supporter} Generous, or {P_IAP:Patron} Patron. The App Store is the canonical source for current pricing."
 
 value_points:
   - title: "Pay once. Keep it."
