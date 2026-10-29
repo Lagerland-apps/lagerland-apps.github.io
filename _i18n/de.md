@@ -12,6 +12,7 @@ reviewing any German page. Every decision a translator would otherwise make diff
 | Tier 1 pages | done 2026-10-27: home, apps hub, 20 app pages, 20 support pages, 20 privacy policies, about, support hub, transparency, /de/llms.txt, /de/llms-full.txt, OG cards |
 | Live | yes, `live: true` since 2026-10-27 (Tier 1) |
 | Tiers 2 to 4, batch 1 | written and integrated 2026-10-29, no native review yet: hubs /de/guides/, /de/for/, /de/alternatives/, /de/journal/; guides best-chess-apps-iphone, workout-app-without-subscription; for/shift-workers; comparisons splitwise, tricount, strong-workout-app, hevy, one-sec, opal, oura, whoop; journal how-to-sleep-after-a-night-shift, how-many-steps-a-day-to-aim-for, how-long-to-rest-between-sets, find-every-recurring-charge. Research: ~/Downloads/githubcode/de-tier2-4-research-2026-10-29.md (next batch listed there, section 4); writer notes de-batch1-DG1 to DG4-2026-10-29.md |
+| Tiers 2 to 4, batch 2 | written and integrated 2026-10-29, no native review yet: guide best-logic-puzzle-games-iphone; comparisons alpha-progression, athlytic, autosleep, bevel, brick, countdown-star, fitbod, forest, screenzen, welltory, plus the local-only /de/alternatives/finanzguru-alternative/ (AllPaid; `local_only: true`, no ref, no hreflang); journal apple-watch-hrv-without-a-baseline, choosing-a-strength-program-you-will-finish, compress-a-video-for-email, how-much-to-tip-in-the-us, how-to-estimate-your-one-rep-max, puppy-and-kitten-vaccination-schedule, rotating-shift-schedules-explained, rpe-and-rir-explained, when-to-deload, xiangqi-rules-for-chess-players. Not translated (research: skip): dragonbox-algebra, pawprint (German pages link the English ones with the marker). Writer notes de-batch2-DG5 to DG9-2026-10-29.md |
 | Native review | none yet (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 14 s with the setup in place (9.9 s before Phase 0) |
 
@@ -162,6 +163,28 @@ their children's queries.
 | /de/journal/how-many-steps-a-day-to-aim-for/ | `wie viele schritte am tag` | `wie viele schritte am tag sind gesund`, `10000 schritte mythos`, `schritte pro tag nach alter` |
 | /de/journal/how-long-to-rest-between-sets/ | `satzpause wie lange` | `pause zwischen sätzen muskelaufbau`, `optimale pausenzeit krafttraining` |
 | /de/journal/find-every-recurring-charge/ | `abos finden und kündigen` | `versteckte abos finden`, `laufende abos herausfinden` |
+| /de/guides/best-logic-puzzle-games-iphone/ | `logikrätsel app` | `denkspiele app ohne werbung`, `rätsel app ohne werbung`, `puzzle spiele ohne werbung` |
+| /de/alternatives/alpha-progression/ | `alpha progression alternative` | `alpha progression app kosten`, `alpha progression apple watch` |
+| /de/alternatives/fitbod/ | `fitbod alternative` | `fitbod app kosten`, `fitbod alternative apple watch` |
+| /de/alternatives/athlytic/ | `athlytic alternative` | `athlytic app alternative deutsch`, `athlytic app kosten` |
+| /de/alternatives/autosleep/ | `autosleep alternative` | `schlafschuld app iphone`, `schlaf analyse app apple watch` |
+| /de/alternatives/bevel/ | `bevel alternative` | `bevel app kosten` |
+| /de/alternatives/welltory/ | `welltory alternative` | `welltory app kosten`, `welltory app deutsch` |
+| /de/alternatives/brick/ | `brick alternative` | `brick alternative deutschland`, `brick apps sperren` |
+| /de/alternatives/forest/ | `forest app alternative` | `forest app kostenlos`, `forest app kosten` |
+| /de/alternatives/screenzen/ | `screenzen alternative` | `screenzen app deutsch` |
+| /de/alternatives/countdown-star/ | `countdown star alternative` | `countdown app iphone`, `countdown widget sperrbildschirm` |
+| /de/alternatives/finanzguru-alternative/ (local-only) | `finanzguru alternative` | `finanzguru alternative kostenlos`, `finanzguru alternative ohne bankverbindung` |
+| /de/journal/apple-watch-hrv-without-a-baseline/ | `hrv apple watch werte` | `hrv apple watch gute werte`, `hrv apple watch normal`, `hrv baseline apple watch` |
+| /de/journal/choosing-a-strength-program-you-will-finish/ | `ganzkörper oder split` | `trainingsplan push pull legs`, `oberkörper unterkörper split` |
+| /de/journal/compress-a-video-for-email/ | `video komprimieren für email` | `video per mail verschicken zu groß`, `e-mail anhang größe limit` |
+| /de/journal/how-much-to-tip-in-the-us/ | `trinkgeld usa` | `trinkgeld usa wie viel`, `trinkgeld usa restaurant`, `trinkgeld usa hotel` |
+| /de/journal/how-to-estimate-your-one-rep-max/ | `1rm berechnen` | `1rm berechnen formel`, `maximalkraft berechnen`, `maximalkraft berechnen tabelle` |
+| /de/journal/puppy-and-kitten-vaccination-schedule/ | `impfplan welpen deutschland` | `katze impfung wann`, `kitten impfungen` |
+| /de/journal/rotating-shift-schedules-explained/ | `schichtmodelle` | `schichtsystem 2 früh 2 spät 2 nacht`, `vorwärts rotierende schichten` |
+| /de/journal/rpe-and-rir-explained/ | `rpe skala` | `rpe skala krafttraining`, `rir krafttraining bedeutung` |
+| /de/journal/when-to-deload/ | `deload woche` | `deload woche sinnvoll`, `deload woche wie oft` |
+| /de/journal/xiangqi-rules-for-chess-players/ | `chinesisches schach regeln` | `xiangqi regeln`, `xiangqi für schachspieler` |
 
 Wording rules from the research: privacy is said as „ohne Tracking“, „ohne Werbung“, „ohne Anmeldung“ (the
 English "privacy" is not searched); „Trainingstagebuch“ beats "Workout Tracker"; for AllPaid lead with
@@ -295,6 +318,11 @@ reviewer, no back-translation agent, no native review yet. Market changes agains
 the writer notes (de-batch1-DG1 to DG4-2026-10-29.md): Chessis dropped (not sold in DE); Strong and Hevy sell a
 one-time Pro in the German store (English pages say subscription only); Tricount shows no IAPs in DE; Rocket Money
 not sold in DE (Finanzguru is the local bank-linked example, local-only comparison planned).
+
+Tiers 2 to 4, batch 2 (2026-10-29): 22 pages, writer agents with self copy-edit only, integrated the same day. No
+separate reviewer, back-translation agent or native review yet. Open points are in de-batch2-DG5 to DG9 (Alpha
+Progression RIR free or Pro; English forest/screenzen pages possibly outdated; Baba Is You has no German; AllPaid
+monthly trial 3 days in the master vs {TRIAL}).
 
 ## Apps still on English screenshots
 

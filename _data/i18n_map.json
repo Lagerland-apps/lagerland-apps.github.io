@@ -7,6 +7,38 @@
     "de": "/de/alternatives/",
     "en": "/alternatives/"
   },
+  "/alternatives/alpha-progression/": {
+    "de": "/de/alternatives/alpha-progression/",
+    "en": "/alternatives/alpha-progression/"
+  },
+  "/alternatives/athlytic/": {
+    "de": "/de/alternatives/athlytic/",
+    "en": "/alternatives/athlytic/"
+  },
+  "/alternatives/autosleep/": {
+    "de": "/de/alternatives/autosleep/",
+    "en": "/alternatives/autosleep/"
+  },
+  "/alternatives/bevel/": {
+    "de": "/de/alternatives/bevel/",
+    "en": "/alternatives/bevel/"
+  },
+  "/alternatives/brick/": {
+    "de": "/de/alternatives/brick/",
+    "en": "/alternatives/brick/"
+  },
+  "/alternatives/countdown-star/": {
+    "de": "/de/alternatives/countdown-star/",
+    "en": "/alternatives/countdown-star/"
+  },
+  "/alternatives/fitbod/": {
+    "de": "/de/alternatives/fitbod/",
+    "en": "/alternatives/fitbod/"
+  },
+  "/alternatives/forest/": {
+    "de": "/de/alternatives/forest/",
+    "en": "/alternatives/forest/"
+  },
   "/alternatives/hevy/": {
     "de": "/de/alternatives/hevy/",
     "en": "/alternatives/hevy/"
@@ -23,6 +55,10 @@
     "de": "/de/alternatives/oura/",
     "en": "/alternatives/oura/"
   },
+  "/alternatives/screenzen/": {
+    "de": "/de/alternatives/screenzen/",
+    "en": "/alternatives/screenzen/"
+  },
   "/alternatives/splitwise/": {
     "de": "/de/alternatives/splitwise/",
     "en": "/alternatives/splitwise/"
@@ -34,6 +70,10 @@
   "/alternatives/tricount/": {
     "de": "/de/alternatives/tricount/",
     "en": "/alternatives/tricount/"
+  },
+  "/alternatives/welltory/": {
+    "de": "/de/alternatives/welltory/",
+    "en": "/alternatives/welltory/"
   },
   "/alternatives/whoop/": {
     "de": "/de/alternatives/whoop/",
@@ -299,6 +339,10 @@
     "de": "/de/guides/best-chess-apps-iphone/",
     "en": "/guides/best-chess-apps-iphone/"
   },
+  "/guides/best-logic-puzzle-games-iphone/": {
+    "de": "/de/guides/best-logic-puzzle-games-iphone/",
+    "en": "/guides/best-logic-puzzle-games-iphone/"
+  },
   "/guides/workout-app-without-subscription/": {
     "de": "/de/guides/workout-app-without-subscription/",
     "en": "/guides/workout-app-without-subscription/"
@@ -306,6 +350,18 @@
   "/journal/": {
     "de": "/de/journal/",
     "en": "/journal/"
+  },
+  "/journal/apple-watch-hrv-without-a-baseline/": {
+    "de": "/de/journal/apple-watch-hrv-without-a-baseline/",
+    "en": "/journal/apple-watch-hrv-without-a-baseline/"
+  },
+  "/journal/choosing-a-strength-program-you-will-finish/": {
+    "de": "/de/journal/choosing-a-strength-program-you-will-finish/",
+    "en": "/journal/choosing-a-strength-program-you-will-finish/"
+  },
+  "/journal/compress-a-video-for-email/": {
+    "de": "/de/journal/compress-a-video-for-email/",
+    "en": "/journal/compress-a-video-for-email/"
   },
   "/journal/find-every-recurring-charge/": {
     "de": "/de/journal/find-every-recurring-charge/",
@@ -319,9 +375,37 @@
     "de": "/de/journal/how-many-steps-a-day-to-aim-for/",
     "en": "/journal/how-many-steps-a-day-to-aim-for/"
   },
+  "/journal/how-much-to-tip-in-the-us/": {
+    "de": "/de/journal/how-much-to-tip-in-the-us/",
+    "en": "/journal/how-much-to-tip-in-the-us/"
+  },
+  "/journal/how-to-estimate-your-one-rep-max/": {
+    "de": "/de/journal/how-to-estimate-your-one-rep-max/",
+    "en": "/journal/how-to-estimate-your-one-rep-max/"
+  },
   "/journal/how-to-sleep-after-a-night-shift/": {
     "de": "/de/journal/how-to-sleep-after-a-night-shift/",
     "en": "/journal/how-to-sleep-after-a-night-shift/"
+  },
+  "/journal/puppy-and-kitten-vaccination-schedule/": {
+    "de": "/de/journal/puppy-and-kitten-vaccination-schedule/",
+    "en": "/journal/puppy-and-kitten-vaccination-schedule/"
+  },
+  "/journal/rotating-shift-schedules-explained/": {
+    "de": "/de/journal/rotating-shift-schedules-explained/",
+    "en": "/journal/rotating-shift-schedules-explained/"
+  },
+  "/journal/rpe-and-rir-explained/": {
+    "de": "/de/journal/rpe-and-rir-explained/",
+    "en": "/journal/rpe-and-rir-explained/"
+  },
+  "/journal/when-to-deload/": {
+    "de": "/de/journal/when-to-deload/",
+    "en": "/journal/when-to-deload/"
+  },
+  "/journal/xiangqi-rules-for-chess-players/": {
+    "de": "/de/journal/xiangqi-rules-for-chess-players/",
+    "en": "/journal/xiangqi-rules-for-chess-players/"
   },
   "/lagerland-apps/": {
     "de": "/de/lagerland-apps/",
