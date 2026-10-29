@@ -28,12 +28,12 @@ faq:
   - q: "How long does it take to walk 8,000 steps?"
     a: "At about 110 steps a minute, a brisk walk, 8,000 steps is roughly 75 minutes of continuous walking. In practice it takes less deliberate walking than that, because your daily total also includes every step you take at home, at work and on errands."
   - q: "What step goal should I set in EarnLock?"
-    a: "EarnLock offers three presets, Light (4,000 steps), Standard (8,000, the default) and Challenge (12,000), plus a custom number. A good choice is a goal you reach on an ordinary day only if you add one deliberate walk. You can raise the goal at any time; lowering it starts a 24-hour cooldown before it can be lowered again, so one hard day can only lower it once."
+    a: "EarnLock offers three presets, Light (4,000 steps), Standard (8,000) and Challenge (12,000), plus your own number or Adaptive, which rises 3% after a day you hit it and eases 5% after a day you miss. A good choice is a goal you reach on an ordinary day only if you add one deliberate walk. You can raise the goal at any time; lowering it takes effect after 24 hours, so one hard day can't shrink it on the spot. Halfway to the goal still opens your apps for an hour."
 mentioned_apps:
   - earnlock
 read_time: "8 min read"
 excerpt: "What four large studies found about daily step counts and health, where the 10,000 figure came from, whether pace matters, how long each goal takes to walk, and how to pick a step goal you can keep when it locks your apps. Then how EarnLock's Light, Standard and Challenge goals map onto the research."
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 Most adults get the bulk of the benefit the research can see somewhere between about 6,000 and 10,000 steps a day. Where exactly depends on age, and benefits start far lower than that. The 10,000 figure came from a slogan. Most of the numbers you read about steps come from the four studies below.
@@ -96,16 +96,16 @@ Step count is a weak number to read for health day to day; it moves with where y
 
 ## How EarnLock uses the number
 
-[EarnLock](/apps/earnlock/) keeps the apps you choose shielded until you reach a daily activity goal, so the goal you pick decides whether it feels like a fair price or a wall. [The argument for paying in movement](/journal/unlock-cost-outside-the-app/) is a separate post; this is how the goal itself works.
+[EarnLock](/apps/earnlock/) keeps the apps you choose locked until you reach a daily activity goal, so the goal you pick decides whether it feels like a fair price or a wall. [The argument for paying in movement](/journal/unlock-cost-outside-the-app/) is a separate post; this is how the goal itself works.
 
-- **Three presets and a custom number.** Onboarding offers Light (4,000 steps), Standard (8,000, selected by default) and Challenge (12,000), each with a walking-time estimate based on 110 steps a minute rounded to five minutes: about 35, 75 and 110 minutes. A custom number can be set later from the goal settings.
-- **Steps, or Apple's own activity measures.** Steps is the free goal. Premium adds active minutes, which is Apple's Exercise time, the green ring that [Apple describes](https://support.apple.com/guide/watch/track-daily-activity-apd3bf6d85a6/watchos) as minutes of brisk activity (presets 20, 30 and 45), and active energy (150, 300 and 500 kcal).
-- **One total per day, from Apple Health.** EarnLock asks HealthKit for today's total since local midnight. HealthKit's statistics queries [merge data from all sources](https://developer.apple.com/documentation/healthkit/hkstatistics) before adding it up, and Health [ranks overlapping sources](https://support.apple.com/en-us/108779), so steps your iPhone and Apple Watch both counted aren't counted twice. The Apple Watch app reads Health on the wrist, so the count is there on a walk without the phone.
-- **The shield shows the gap.** A blocked app shows how many steps are still needed. If the shield's copy of your count is too old to trust, it asks you to open the app and shows no number.
-- **The day resets at midnight.** Reach the goal and the apps stay open until local midnight; then the count starts again from zero.
-- **Raising is free; lowering waits.** You can raise the goal at any time. Lowering it starts a 24-hour cooldown before it can be lowered again. Premium has an optional bypass, usable once every seven days.
-- **Different goals for different days.** Premium schedules can swap in Light, Standard or Challenge for chosen days and hours, which is the weekend-versus-desk-day point above.
-- **A week to calibrate.** For the first seven days nothing is blocked. EarnLock records how often the goal would have stopped you, so you can adjust before it starts to cost anything.
+- **Three presets, a custom number, or Adaptive.** The presets are Light (4,000 steps), Standard (8,000) and Challenge (12,000). You can also type your own number, or choose Adaptive, which rises 3% after a day you hit the goal and eases 5% after a day you miss, within fixed limits.
+- **Steps, or Apple's own activity measures.** Steps is the free goal. Premium adds active minutes, which is Apple's Exercise time, the green ring that [Apple describes](https://support.apple.com/guide/watch/track-daily-activity-apd3bf6d85a6/watchos) as minutes of brisk activity (presets 20, 30 and 45), and active calories (150, 300 and 500 kcal).
+- **One total per day, from Apple Health.** EarnLock reads today's total from Apple Health on your iPhone. Health [ranks overlapping sources](https://support.apple.com/en-us/108779) when it adds up a day, so steps your iPhone and Apple Watch both counted aren't counted twice. With Premium, EarnLock's Apple Watch app reads its own Health data and shows how far you are from unlocking.
+- **The lock shows the gap.** A locked app shows how many steps are still needed, such as "2,026 steps until unlock".
+- **Halfway counts, and the day resets at midnight.** At half your goal the apps open for an hour. Reach the full goal and they stay open until local midnight; then the count starts again from zero.
+- **Raising is instant; lowering waits.** You can raise the goal at any time. Lowering it takes effect after 24 hours, so a weak moment can't shrink it. Premium can skip that wait once a week.
+- **Different goals for different days.** Premium's Smart Schedules (Work hours, Evenings, Weekends, and Sleep) can each use Light, Standard or Challenge, which is the weekend-versus-desk-day point above.
+- **A week to calibrate.** The first seven days are a Shadow Week: nothing is blocked, and EarnLock counts how often you would have been blocked, so you can adjust before it starts to cost anything.
 
 Some step apps sell screen time by the step; [Steppin](/alternatives/steppin/), for example, pays out minutes per hundred steps. EarnLock's threshold asks for one daily total, which is the unit all of the studies above used.
 

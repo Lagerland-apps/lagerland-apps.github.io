@@ -2,24 +2,23 @@
 layout: default
 permalink: /alternatives/stoic-mode/
 title: "Stoic Mode Alternative"
-quick_answer: "EarnLock is a movement-based, privacy-first Stoic Mode alternative. Stoic-style screen-time tools use friction, reflection, and focus-period shields to make you reconsider before you scroll. EarnLock uses Apple's Family Controls to shield the apps you pick, such as Instagram, TikTok, X, YouTube, or Reddit, until you hit a real daily activity goal (steps in the free tier; active minutes or calories in Premium) measured by Apple Health. The shield shows a live progress ring and \"X steps until unlock\". It has a full Apple Watch app. It is free to start, then {P_LIFETIME@earnlock} lifetime (one-time) or {P_MONTHLY@earnlock}/mo / {P_YEARLY@earnlock}/yr (7-day free trial on yearly), and every paid tier is Family Sharing eligible. There is no account, analytics SDK, or server."
+quick_answer: "EarnLock is an iPhone alternative to Stoic Mode for people who want the block to hold. Stoic-style screen-time tools use friction, reflection, and focus-period shields to make you reconsider before you scroll. EarnLock keeps the apps you pick locked until you reach a daily activity goal measured by Apple Health: halfway opens them for an hour, and the full goal opens them until midnight. Locking one app with a step goal is free for good, there is no account, and Premium is {P_MONTHLY@earnlock}/month, {P_YEARLY@earnlock}/year, or {P_LIFETIME@earnlock} once. A Stoic-style tool is the better pick if awareness and reflection work for you."
 seo:
   title: "Stoic Mode Alternative: EarnLock Blocks Until You Move"
-  description: "A Stoic Mode alternative that locks Instagram, TikTok, and YouTube until you hit a daily activity goal. The block is enforced, and there is no account."
+  description: "EarnLock vs Stoic Mode: apps stay locked until your daily step goal, and halfway opens an hour. Free for one app, no account, lifetime option."
   keywords:
     - Stoic Mode alternative
     - alternative to Stoic Mode
     - EarnLock vs Stoic Mode
-    - Stoic app blocker alternative
+    - app like Stoic Mode
     - movement-based app blocker
-    - block apps until activity goal
-    - Family Controls custom shield
-    - private screen time blocker
+    - screen time blocker with steps
+    - walk to unlock apps
+    - block apps until you walk
+    - app blocker no account
+    - lifetime app blocker
     - Apple Watch screen time blocker
-    - HealthKit screen time blocker
-    - app blocker no subscription
-    - enforced app blocker iPhone
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "earnlock" | first -%}
@@ -51,21 +50,21 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best alternative to Stoic Mode?", "acceptedAnswer": { "@type": "Answer", "text": "EarnLock is a movement-based, privacy-first alternative to Stoic-style screen-time tools. Stoic-style apps rely on friction, awareness, and focus-period shields. EarnLock shields your chosen apps through Apple's Family Controls until you hit a real daily activity goal (steps, active minutes, or active energy) measured by Apple Health, with a live progress ring on every blocked app. It is free to start, or {P_LIFETIME@earnlock} lifetime (one-time), and has no account, analytics SDK, or server." } },
-    { "@type": "Question", "name": "How is EarnLock different from Stoic Mode?", "acceptedAnswer": { "@type": "Answer", "text": "Stoic-style tools add friction and awareness so you choose differently, with focus-period shields on top. EarnLock enforces a block tied to your body: the app stays shielded until you hit a daily activity goal measured by Apple Health. EarnLock also draws a live progress ring on each blocked app and has a full Apple Watch app. It needs no account and contains no tracking SDKs." } },
-    { "@type": "Question", "name": "Does EarnLock enforce a harder block?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Intervention-first tools are designed to make you reconsider, and they don't stop you outright. EarnLock keeps the app shielded until your daily activity goal is met, with one emergency unlock per day that asks you to solve a math problem. If you want a block that holds, EarnLock is the firmer commitment." } },
-    { "@type": "Question", "name": "How much does EarnLock cost?", "acceptedAnswer": { "@type": "Answer", "text": "EarnLock is free to start. Blocking one app with a steps goal, the custom shield, partial unlocks, widgets, streaks, and the emergency unlock cost nothing. Premium adds unlimited apps, active-minute and calorie goals, the Apple Watch app, schedules, and Week and Month insights for {P_MONTHLY@earnlock}/month, {P_YEARLY@earnlock}/year (with a 7-day free trial), or {P_LIFETIME@earnlock} lifetime (one-time). Every paid tier is Family Sharing eligible. Compare against Stoic Mode's current pricing before switching." } },
-    { "@type": "Question", "name": "Is EarnLock private?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. EarnLock has no account, no server, and no third-party SDKs of any kind, analytics and advertising included. It reads HealthKit data on the device and never sends it anywhere. Apple's App Privacy nutrition label shows Data Not Collected for every release. It is for restricting yourself and is not a parental control app." } },
-    { "@type": "Question", "name": "Can EarnLock block the same apps Stoic Mode can?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. EarnLock blocks any iOS app or category you choose in Apple's Family Controls picker. It can shield at the system level whatever distractions a Stoic-style tool helps you avoid, and it keeps them locked until you move." } }
+    { "@type": "Question", "name": "What is the best alternative to Stoic Mode?", "acceptedAnswer": { "@type": "Answer", "text": "If you want a lock that holds, EarnLock is a Stoic Mode alternative built around movement. It locks the apps you pick until you reach a daily activity goal measured by Apple Health. Halfway opens them for an hour, and the full goal opens them until midnight. Locking one app with a step goal is free for good, and there is no account. If reflection and friction already work for you, a Stoic-style tool is the gentler choice." } },
+    { "@type": "Question", "name": "How is EarnLock different from Stoic Mode?", "acceptedAnswer": { "@type": "Answer", "text": "Stoic-style tools ask you to reconsider and leave the decision with you. EarnLock keeps the app locked until Apple Health shows you've moved enough that day, with a math-gated emergency unlock once a day. A locked app shows what's left, such as \"2,026 steps until unlock\". EarnLock also starts with a Shadow Week that blocks nothing and counts how often you would have been blocked, and its Reflect button lets you log why you reached." } },
+    { "@type": "Question", "name": "Does EarnLock enforce a harder block?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Intervention-first tools are designed to make you reconsider, and they don't stop you outright. EarnLock keeps the app locked until your daily activity goal is met, with one emergency unlock per day behind a two-digit math problem. iOS still lets you turn off EarnLock's Screen Time access, so it's a commitment you choose." } },
+    { "@type": "Question", "name": "How much does EarnLock cost?", "acceptedAnswer": { "@type": "Answer", "text": "Locking one app or category with a step goal is free for good, with partial and full unlocks, Shadow Week, streaks with a weekly rest day, the Insights Day view, every widget, and the emergency unlock. Premium adds unlimited apps, active minutes and active calories, the Apple Watch app, a Live Activity, Smart Schedules, and Week and Month insights for {P_MONTHLY@earnlock}/month or {P_YEARLY@earnlock}/year, each with a {TRIAL@earnlock}, or {P_LIFETIME@earnlock} once. All three support Family Sharing. Check Stoic Mode's current pricing before you compare." } },
+    { "@type": "Question", "name": "Is EarnLock private?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. EarnLock has no account, makes no network connections of its own, and includes no analytics, advertising, or other third-party SDKs. Apple Health is read on your iPhone and never written to or sent anywhere, and Apple's Screen Time picker gives EarnLock opaque tokens instead of the names of your apps. EarnLock is built for limiting your own iPhone and has no parent controls." } },
+    { "@type": "Question", "name": "Can EarnLock block the same apps Stoic Mode can?", "acceptedAnswer": { "@type": "Answer", "text": "For apps, EarnLock locks any app or whole category you can choose in Apple's Screen Time picker: one on the free tier, as many as you like with Premium. They differ in what it takes to get back in." } }
   ]
 }
 </script>
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">Movement-based · Private · On-device</p>
+    <p class="overline">Movement-based · No account · On-device</p>
     <h1 class="h1">Looking for a<br><span class="gradient-text">Stoic Mode alternative?</span></h1>
-    <p class="lead">Stoic-style screen-time tools work through friction, awareness, and focus-period shields that ask you to reconsider before you scroll. That's a thoughtful approach, but you can still ignore it. EarnLock enforces the block: the apps stay shielded until you move, counting steps, active minutes, or active calories from Apple Health. The shield shows a live progress ring with the exact count remaining. It is free to start, or {P_LIFETIME@earnlock} lifetime, one-time.</p>
+    <p class="lead">Stoic-style screen-time tools work through friction, awareness, and focus-period shields that ask you to reconsider before you scroll. It's a thoughtful approach, and some days you'll ignore it. EarnLock keeps the apps you pick locked until Apple Health shows you've moved. Halfway to your goal they open for an hour, and the full goal opens them until midnight. EarnLock keeps a reflective step too: tap Reflect and log why you reached for the phone.</p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/earnlock/">See EarnLock</a>
       <a class="btn btn-secondary" href="#compare">Compare side by side</a>
@@ -77,7 +76,7 @@ last_updated: 2026-10-26
 
 <section id="compare" class="section reveal">
   <h2 class="h2">How does EarnLock compare to Stoic Mode?</h2>
-  <p class="lead">Compared against Stoic Mode's public description. Its features and pricing change and vary by version, so check again before switching.</p>
+  <p class="lead">Stoic Mode details come from its public description, and several cells say "check current" because that information was inconclusive. Check again before switching.</p>
   <div class="card" style="overflow-x:auto;">
     <table class="compare-table" role="table">
       <thead>
@@ -90,65 +89,65 @@ last_updated: 2026-10-26
       <tbody>
         <tr>
           <th scope="row">Core approach</th>
-          <td class="compare-table__primary">Enforced block: apps stay shielded until a daily activity goal is met</td>
+          <td class="compare-table__primary">Apps stay locked until a daily activity goal is met</td>
           <td>Intervention first: friction and awareness, with focus-period shields</td>
         </tr>
         <tr>
-          <th scope="row">Unlock cost is physical movement</th>
-          <td class="compare-table__primary">Yes, steps, active minutes, or calories measured by Apple Health</td>
-          <td>No, it relies on intention and timed focus periods</td>
+          <th scope="row">Unlock cost is movement</th>
+          <td class="compare-table__primary">Yes, measured by Apple Health</td>
+          <td>No; it relies on intention and timed focus periods</td>
         </tr>
         <tr>
-          <th scope="row">Custom shield with live progress ring on the blocked app</th>
-          <td class="compare-table__primary">Yes, a ShieldConfiguration extension draws a ring and "X steps until unlock"</td>
-          <td>Focus-period shield; check for an activity progress ring</td>
+          <th scope="row">What a locked app shows</th>
+          <td class="compare-table__primary">EarnLock's screen with what's left, such as "2,026 steps until unlock", and an Earn it button</td>
+          <td>A focus-period shield</td>
         </tr>
         <tr>
-          <th scope="row">Apple Watch app + complications</th>
-          <td class="compare-table__primary">Yes, the Watch reads HealthKit on the wrist and the count keeps running without the iPhone</td>
+          <th scope="row">A trial week before blocking</th>
+          <td class="compare-table__primary">Shadow Week: seven days that block nothing and count how often you would have been blocked</td>
+          <td>Check current features</td>
+        </tr>
+        <tr>
+          <th scope="row">Reflection</th>
+          <td class="compare-table__primary">Tap Reflect and pick why you reached: Boredom, Anxiety, FOMO, Habit, or Other</td>
+          <td>Reflection and mindfulness are central</td>
+        </tr>
+        <tr>
+          <th scope="row">Price</th>
+          <td class="compare-table__primary">Free for one app or category. Premium {P_MONTHLY@earnlock}/month or {P_YEARLY@earnlock}/year, each with a {TRIAL@earnlock}, or {P_LIFETIME@earnlock} once</td>
+          <td>Check current pricing</td>
+        </tr>
+        <tr>
+          <th scope="row">Apple Watch app</th>
+          <td class="compare-table__primary">Yes, with Premium: the watch reads its own Health data and has complications. The iPhone does the locking</td>
           <td>Check current support</td>
         </tr>
         <tr>
-          <th scope="row">Cheapest one-time / lifetime tier</th>
-          <td class="compare-table__primary">{P_LIFETIME@earnlock} lifetime (one-time)</td>
-          <td>Check current pricing</td>
-        </tr>
-        <tr>
-          <th scope="row">Free tier</th>
-          <td class="compare-table__primary">Yes, one blocked app with steps-based unlocks, with no time limit</td>
-          <td>Check current pricing</td>
-        </tr>
-        <tr>
-          <th scope="row">Account or sign-up required</th>
-          <td class="compare-table__primary">No, it needs neither an email nor an Apple ID</td>
+          <th scope="row">Account</th>
+          <td class="compare-table__primary">No account</td>
           <td>Check current requirements</td>
         </tr>
         <tr>
-          <th scope="row">Third-party tracking SDKs</th>
-          <td class="compare-table__primary">None. App Store privacy label: "Data Not Collected"</td>
-          <td>Check current nutrition label</td>
-        </tr>
-        <tr>
-          <th scope="row">Family Sharing eligible</th>
-          <td class="compare-table__primary">Yes, every paid tier; one purchase covers up to 5 family members</td>
-          <td>Check current App Store terms</td>
+          <th scope="row">Third-party SDKs</th>
+          <td class="compare-table__primary">None. The app makes no network connections of its own</td>
+          <td>See Stoic Mode's App Privacy label</td>
         </tr>
       </tbody>
     </table>
   </div>
-  <p class="testimonials-footnote" style="margin-top:var(--s-3);">Verified 2026-06-14 against Stoic Mode's public description. Details vary by version. Several cells say "check current" because the public information was inconclusive, so check again before switching.</p>
+  <p class="testimonials-footnote" style="margin-top:var(--s-3);">Checked 2026-06-14 against Stoic Mode's public description. Details vary by version, and several cells say "check current" because the public information was inconclusive, so check again before switching.</p>
 </section>
 
 <section class="section reveal">
   <h2 class="h2">When should I pick Stoic Mode instead?</h2>
-  <p class="lead">Pick a Stoic-style intervention tool if any of these matter more to you than an enforced block tied to movement:</p>
+  <p class="lead">Pick a Stoic-style intervention tool if any of these matter more to you than a lock tied to movement:</p>
   <ul class="bullets">
-    <li>You think awareness and friction change habits better over time than a hard wall does. For many people that's true.</li>
-    <li>You want reflection and mindfulness as part of how you limit screen time.</li>
-    <li>You don't want a block tied to movement, or you can't rely on step / activity data.</li>
-    <li>Its focus-period and intervention features fit your routine better. Check the current feature set first.</li>
+    <li>You think awareness and friction change habits better over time than a lock does. For many people that's true.</li>
+    <li>You want reflection and mindfulness at the center of how you limit screen time.</li>
+    <li>You don't want your screen time tied to movement, or you can't rely on activity data.</li>
+    <li>Its focus periods and interventions fit your routine better. Check the current feature set first.</li>
   </ul>
-  <p>EarnLock is for someone who has tried the gentle approach and wants the block to hold. The unlock costs a walk or a workout; Apple's Family Controls does the blocking, Apple Health does the counting, and the count sits on their wrist.</p>
+  <p>EarnLock is for someone who has tried the gentle approach and wants the lock to hold until they've moved. The reflective step stays: tap Reflect when you reach for a locked app and log why.</p>
 </section>
 
 {% if app %}
@@ -163,19 +162,19 @@ last_updated: 2026-10-26
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>What is the best alternative to Stoic Mode?</summary><div class="faq-a">EarnLock is a movement-based, privacy-first alternative to Stoic-style screen-time tools. Stoic-style apps rely on friction, awareness, and focus-period shields. EarnLock shields your chosen apps through Apple's Family Controls until you hit a real daily activity goal (steps, active minutes, or active energy) measured by Apple Health, with a live progress ring on every blocked app. It is free to start, or {P_LIFETIME@earnlock} lifetime (one-time), and has no account, analytics SDK, or server.</div></details>
-    <details class="faq-item"><summary>How is EarnLock different from Stoic Mode?</summary><div class="faq-a">Stoic-style tools add friction and awareness so you choose differently, with focus-period shields on top. EarnLock enforces a block tied to your body: the app stays shielded until you hit a daily activity goal measured by Apple Health. EarnLock also draws a live progress ring on each blocked app and has a full Apple Watch app. It needs no account and contains no tracking SDKs.</div></details>
-    <details class="faq-item"><summary>Does EarnLock enforce a harder block?</summary><div class="faq-a">Yes. Intervention-first tools are designed to make you reconsider, and they don't stop you outright. EarnLock keeps the app shielded until your daily activity goal is met, with one emergency unlock per day that asks you to solve a math problem. If you want a block that holds, EarnLock is the firmer commitment.</div></details>
-    <details class="faq-item"><summary>How much does EarnLock cost?</summary><div class="faq-a">EarnLock is free to start. Blocking one app with a steps goal, the custom shield, partial unlocks, widgets, streaks, and the emergency unlock cost nothing. Premium adds unlimited apps, active-minute and calorie goals, the Apple Watch app, schedules, and Week and Month insights for {P_MONTHLY@earnlock}/month, {P_YEARLY@earnlock}/year (with a 7-day free trial), or {P_LIFETIME@earnlock} lifetime (one-time). Every paid tier is Family Sharing eligible. Compare against Stoic Mode's current pricing before switching.</div></details>
-    <details class="faq-item"><summary>Is EarnLock private?</summary><div class="faq-a">Yes. EarnLock has no account, no server, and no third-party SDKs of any kind, analytics and advertising included. It reads HealthKit data on the device and never sends it anywhere. Apple's App Privacy nutrition label shows Data Not Collected for every release. It is for restricting yourself and is not a parental control app.</div></details>
-    <details class="faq-item"><summary>Can EarnLock block the same apps Stoic Mode can?</summary><div class="faq-a">Yes. EarnLock blocks any iOS app or category you choose in Apple's Family Controls picker. It can shield at the system level whatever distractions a Stoic-style tool helps you avoid, and it keeps them locked until you move.</div></details>
+    <details class="faq-item" open><summary>What is the best alternative to Stoic Mode?</summary><div class="faq-a">If you want a lock that holds, EarnLock is a Stoic Mode alternative built around movement. It locks the apps you pick until you reach a daily activity goal measured by Apple Health. Halfway opens them for an hour, and the full goal opens them until midnight. Locking one app with a step goal is free for good, and there is no account. If reflection and friction already work for you, a Stoic-style tool is the gentler choice.</div></details>
+    <details class="faq-item"><summary>How is EarnLock different from Stoic Mode?</summary><div class="faq-a">Stoic-style tools ask you to reconsider and leave the decision with you. EarnLock keeps the app locked until Apple Health shows you've moved enough that day, with a math-gated emergency unlock once a day. A locked app shows what's left, such as "2,026 steps until unlock". EarnLock also starts with a Shadow Week that blocks nothing and counts how often you would have been blocked, and its Reflect button lets you log why you reached.</div></details>
+    <details class="faq-item"><summary>Does EarnLock enforce a harder block?</summary><div class="faq-a">Yes. Intervention-first tools are designed to make you reconsider, and they don't stop you outright. EarnLock keeps the app locked until your daily activity goal is met, with one emergency unlock per day behind a two-digit math problem. iOS still lets you turn off EarnLock's Screen Time access, so it's a commitment you choose.</div></details>
+    <details class="faq-item"><summary>How much does EarnLock cost?</summary><div class="faq-a">Locking one app or category with a step goal is free for good, with partial and full unlocks, Shadow Week, streaks with a weekly rest day, the Insights Day view, every widget, and the emergency unlock. Premium adds unlimited apps, active minutes and active calories, the Apple Watch app, a Live Activity, Smart Schedules, and Week and Month insights for {P_MONTHLY@earnlock}/month or {P_YEARLY@earnlock}/year, each with a {TRIAL@earnlock}, or {P_LIFETIME@earnlock} once. All three support Family Sharing. Check Stoic Mode's current pricing before you compare.</div></details>
+    <details class="faq-item"><summary>Is EarnLock private?</summary><div class="faq-a">Yes. EarnLock has no account, makes no network connections of its own, and includes no analytics, advertising, or other third-party SDKs. Apple Health is read on your iPhone and never written to or sent anywhere, and Apple's Screen Time picker gives EarnLock opaque tokens instead of the names of your apps. EarnLock is built for limiting your own iPhone and has no parent controls.</div></details>
+    <details class="faq-item"><summary>Can EarnLock block the same apps Stoic Mode can?</summary><div class="faq-a">For apps, EarnLock locks any app or whole category you can choose in Apple's Screen Time picker: one on the free tier, as many as you like with Premium. They differ in what it takes to get back in.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Start here</p>
   <h2 class="h2">Try EarnLock.</h2>
-  <p class="lead">Move to unlock your apps, with Apple Health counting. No account, server, or analytics SDK.</p>
+  <p class="lead">Your apps open when Apple Health shows you've moved, and halfway earns an hour. Locking one app is free, with no account.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/earnlock/">Learn about EarnLock</a>
   </div>

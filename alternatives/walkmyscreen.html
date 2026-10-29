@@ -2,26 +2,23 @@
 layout: default
 permalink: /alternatives/walkmyscreen/
 title: "WalkMyScreen iPhone Alternative"
-quick_answer: "WalkMyScreen is an Android-only screen-time blocker (Google Play) that converts steps into screen time. Per their public website, the iOS version is listed as Coming Soon. Until WalkMyScreen ships on iPhone, EarnLock is the closest iOS equivalent: lock your selected apps until you hit a daily activity goal measured by Apple Health: steps in the free tier, active minutes or active calories in Premium. EarnLock draws a custom shield with a live progress ring on every blocked app (\"3,412 steps until unlock\"). It has a full Apple Watch app that reads HealthKit on the wrist, with complications across every face style. There is no account, no analytics SDK, and no server. Free; Premium {P_MONTHLY@earnlock}/mo or {P_YEARLY@earnlock}/yr (yearly with a 7-day free trial); {P_LIFETIME@earnlock} lifetime."
+quick_answer: "WalkMyScreen is an Android app that turns steps into screen time; on its website the iPhone version is still listed as coming soon. On iPhone today, EarnLock does a similar job: it keeps the apps you pick locked until you reach a daily activity goal measured by Apple Health. Halfway opens them for an hour, and the full goal opens them until midnight. Both apps need no account. Locking one app with a step goal is free for good, and Premium is {P_MONTHLY@earnlock}/month, {P_YEARLY@earnlock}/year (each with a {TRIAL@earnlock}), or {P_LIFETIME@earnlock} once. WalkMyScreen is the pick on Android, and it is fully free."
 seo:
   title: "WalkMyScreen for iPhone: EarnLock iOS Equivalent"
-  description: "WalkMyScreen is Android-only (iOS coming soon). EarnLock is the closest iPhone equivalent: lock apps until you hit a daily goal. {P_LIFETIME@earnlock} lifetime."
+  description: "WalkMyScreen is Android only for now. On iPhone, EarnLock locks apps until your daily step goal; halfway opens an hour. Free for one app."
   keywords:
     - WalkMyScreen iPhone
-    - WalkMyScreen iOS alternative
-    - WalkMyScreen for Apple Watch
-    - WalkMyScreen alternative iPhone
+    - WalkMyScreen iOS
+    - WalkMyScreen alternative
     - EarnLock vs WalkMyScreen
-    - walk to unlock apps iPhone
-    - steps to unlock apps iPhone
-    - free screen time blocker iPhone
-    - private screen time blocker
-    - Family Controls custom shield
+    - steps for screen time iPhone
+    - steps unlock apps iPhone
+    - walk to unlock apps
+    - block apps until you walk
+    - app blocker no account
+    - lifetime app blocker
     - Apple Watch screen time blocker
-    - HealthKit screen time blocker
-    - movement-based app blocker iOS
-    - earn screen time iPhone
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "earnlock" | first -%}
@@ -42,7 +39,7 @@ last_updated: 2026-10-26
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/" },
       { "@type": "ListItem", "position": 2, "name": "Alternatives", "item": "{{ site.url }}/alternatives/" },
-      { "@type": "ListItem", "position": 3, "name": "WalkMyScreen iPhone alternative", "item": "{{ site.url }}/alternatives/walkmyscreen/" }
+      { "@type": "ListItem", "position": 3, "name": "WalkMyScreen alternative", "item": "{{ site.url }}/alternatives/walkmyscreen/" }
     ]
   }
 }
@@ -53,23 +50,23 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Does WalkMyScreen work on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Not at the time of writing. Per WalkMyScreen's public website, the app currently ships on Android (Google Play) only; the iOS version is listed as Coming Soon with no published release date. Until WalkMyScreen launches on iPhone, EarnLock is the closest iOS-native equivalent. It uses the same activity-as-unlock concept, built on Apple's Family Controls and HealthKit, with a full Apple Watch app and complications." } },
-    { "@type": "Question", "name": "What is the best WalkMyScreen alternative for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "EarnLock is the closest iOS-native equivalent to WalkMyScreen. Both apps lock distracting apps behind a daily step goal, and both work without an account and keep data on the device. EarnLock also has a full Apple Watch app with complications, a custom Family Controls shield with a live progress ring on every blocked app (\"X steps until unlock\"), active-minute and active-calorie goal modes in Premium, and 39 locales. EarnLock is free for the steps tier, with {P_MONTHLY@earnlock}/month, {P_YEARLY@earnlock}/year, or a {P_LIFETIME@earnlock} lifetime purchase for Premium." } },
-    { "@type": "Question", "name": "How does EarnLock compare to WalkMyScreen?", "acceptedAnswer": { "@type": "Answer", "text": "Both use steps to unlock screen time, both are strict about privacy (WalkMyScreen explicitly says No login. No account. No data leaves your phone.; EarnLock's Apple App Privacy label reads Data Not Collected), and both block social apps. They differ on platform: WalkMyScreen is Android today with iOS coming, and EarnLock is iOS + watchOS today. They differ on money: WalkMyScreen is 100% free with an ad-reward bonus (+5 min per ad), while EarnLock is free + {P_LIFETIME@earnlock} lifetime Premium with no ads anywhere. And EarnLock has an Apple Watch app, which WalkMyScreen does not (Android has no equivalent)." } },
-    { "@type": "Question", "name": "Is there a free WalkMyScreen alternative for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, EarnLock has a free tier. It includes blocking one iOS app or category via Apple's Family Controls picker, a steps-based daily goal that unlocks it when you cross it, partial unlocks from 50% of the goal, the custom shield with the live progress ring, Lock Screen and Home Screen widgets, the math-gated emergency unlock (1/day), the streak engine with weekly rest day, and on-device-only data (no account, no server, no analytics SDK). Premium adds unlimited apps, active-minutes and active-calorie goals, the Apple Watch app and complications, the Live Activity, Smart Schedules, Week and Month insights, and the reflection log." } },
-    { "@type": "Question", "name": "Will WalkMyScreen launch on iPhone soon?", "acceptedAnswer": { "@type": "Answer", "text": "WalkMyScreen's website lists iOS as Coming Soon without a specific date or beta link. If you need a working iOS app today, EarnLock ships on iPhone and Apple Watch. If you specifically want WalkMyScreen's product on iOS, watch their website for the launch; the two apps are not affiliated." } },
-    { "@type": "Question", "name": "Why does EarnLock use Apple's Family Controls instead of an Accessibility-based blocker?", "acceptedAnswer": { "@type": "Answer", "text": "On iOS, Family Controls (ManagedSettings + DeviceActivity + ShieldConfiguration) is the only Apple-sanctioned API for blocking arbitrary apps systemwide. It lets the custom shield show a live progress ring on every blocked app, where a workaround could only nag the user after the fact. The catch is that Family Controls hands EarnLock opaque tokens, so even EarnLock cannot see which apps you blocked. That is also why EarnLock has nothing to send to a server even if it wanted to. WalkMyScreen on Android uses a different API surface; the iOS port (when it ships) will need to use Family Controls too." } }
+    { "@type": "Question", "name": "Does WalkMyScreen work on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Not yet. WalkMyScreen is on Google Play for Android, and its website lists the iPhone version as coming soon. On iPhone today, EarnLock locks the apps you pick until you reach a daily activity goal measured by Apple Health." } },
+    { "@type": "Question", "name": "What is the best WalkMyScreen alternative for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "EarnLock works on the same idea on iPhone: your movement unlocks your apps. It locks the apps you pick until you reach a daily goal in steps (free) or active minutes or active calories (Premium). Halfway opens them for an hour, and the full goal opens them until midnight. It needs no account, and locking one app is free for good." } },
+    { "@type": "Question", "name": "How does EarnLock compare to WalkMyScreen?", "acceptedAnswer": { "@type": "Answer", "text": "Both use steps to unlock screen time, and both need no account. WalkMyScreen earns you minutes as you walk on top of a baseline, runs on Android, and is free with optional ads for bonus minutes. EarnLock uses one daily goal with an hour at halfway, runs on iPhone with an Apple Watch app in Premium, and starts with a Shadow Week that blocks nothing and counts how often you would have been blocked." } },
+    { "@type": "Question", "name": "Is there a free WalkMyScreen alternative for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Locking one app or category with a step goal is free for good, with partial and full unlocks, Shadow Week, streaks with a weekly rest day, the Insights Day view, every widget, and the emergency unlock. Premium adds unlimited apps, active minutes and active calories, the Apple Watch app, a Live Activity, Smart Schedules, and Week and Month insights for {P_MONTHLY@earnlock}/month or {P_YEARLY@earnlock}/year, each with a {TRIAL@earnlock}, or {P_LIFETIME@earnlock} once. All three support Family Sharing." } },
+    { "@type": "Question", "name": "Will WalkMyScreen launch on iPhone soon?", "acceptedAnswer": { "@type": "Answer", "text": "Its website lists the iPhone version as coming soon, with no date when this page was checked. Until it ships, EarnLock is available on the App Store." } },
+    { "@type": "Question", "name": "Why does EarnLock use Apple's Screen Time controls?", "acceptedAnswer": { "@type": "Answer", "text": "On iPhone, Apple's Screen Time controls are the way an app can lock other apps. You choose what to lock in Apple's own picker, which gives EarnLock opaque tokens instead of the names of your apps. iOS also lets you turn that access off in Settings, so the lock is a commitment you choose." } }
   ]
 }
 </script>
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">iOS + Apple Watch · No account · {P_LIFETIME@earnlock} lifetime</p>
-    <h1 class="h1">Looking for <span class="gradient-text">WalkMyScreen on iPhone?</span></h1>
-    <p class="lead">WalkMyScreen is currently an Android app; the iOS version is listed on their website as Coming Soon. Until that ships, EarnLock is the closest iPhone equivalent. The idea is the same (your steps unlock the scroll), built on Apple's Family Controls and HealthKit, with a full Apple Watch app, complications across every face style, a custom shield with the exact count remaining on every blocked app, and 39 locales. It has no account, no analytics SDK, and no server. Free; {P_LIFETIME@earnlock} lifetime.</p>
+    <p class="overline">On iPhone today · Movement-based · No account</p>
+    <h1 class="h1">Looking for<br><span class="gradient-text">WalkMyScreen on iPhone?</span></h1>
+    <p class="lead">WalkMyScreen is an Android app, and its website still lists the iPhone version as coming soon. If you're on an iPhone now, EarnLock works on the same idea: your steps unlock the scroll. The apps you pick stay locked until Apple Health shows you've moved, halfway to your goal opens them for an hour, and the full goal opens them until midnight. Locking one app is free for good, with no account.</p>
     <div class="actions">
-      <a class="btn btn-primary" href="/apps/earnlock/">See EarnLock for iPhone</a>
+      <a class="btn btn-primary" href="/apps/earnlock/">See EarnLock</a>
       <a class="btn btn-secondary" href="#compare">Compare side by side</a>
     </div>
   </div>
@@ -79,77 +76,77 @@ last_updated: 2026-10-26
 
 <section id="compare" class="section reveal">
   <h2 class="h2">How does EarnLock compare to WalkMyScreen?</h2>
-  <p class="lead">Compared against WalkMyScreen's public website (walkmyscreen.com). Check again before switching: WalkMyScreen's iOS version is listed as Coming Soon and will likely have different specs at launch.</p>
+  <p class="lead">WalkMyScreen details come from its public website, checked on 2026-10-29. The two apps run on different phones, so for most people the platform decides.</p>
   <div class="card" style="overflow-x:auto;">
     <table class="compare-table" role="table">
       <thead>
         <tr>
           <th scope="col">Feature</th>
-          <th scope="col" class="compare-table__primary">EarnLock (iOS)</th>
-          <th scope="col">WalkMyScreen (Android · iOS soon)</th>
+          <th scope="col" class="compare-table__primary">EarnLock</th>
+          <th scope="col">WalkMyScreen</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Platform shipping today</th>
-          <td class="compare-table__primary">iOS 17+ · watchOS 10+</td>
-          <td>Android (Google Play); iOS listed as Coming Soon</td>
+          <th scope="row">Available today on</th>
+          <td class="compare-table__primary">iPhone (iOS 17 or later), plus the Apple Watch app with Premium</td>
+          <td>Android (Google Play); iPhone listed as coming soon</td>
         </tr>
         <tr>
           <th scope="row">How blocked apps unlock</th>
-          <td class="compare-table__primary">Daily activity goal hit (steps / active minutes / active calories), one commitment per day</td>
-          <td>Earn minutes via steps (every 1,000 steps = bonus minutes; configurable baseline 10-120 minutes)</td>
+          <td class="compare-table__primary">A daily activity goal from Apple Health. Halfway opens an hour; the full goal opens them until midnight</td>
+          <td>Earn minutes with steps, on top of a baseline you set</td>
         </tr>
         <tr>
-          <th scope="row">Custom shield with live progress ring on the blocked app</th>
-          <td class="compare-table__primary">Yes, a ShieldConfiguration extension draws a ring + "X steps until unlock"</td>
-          <td>Android's system-level block screen; iOS implementation TBD at launch</td>
+          <th scope="row">What a locked app shows</th>
+          <td class="compare-table__primary">EarnLock's screen with what's left, such as "2,026 steps until unlock", and an Earn it button</td>
+          <td>Android's block screen</td>
         </tr>
         <tr>
-          <th scope="row">Apple Watch app + complications</th>
-          <td class="compare-table__primary">Yes, a full app that reads HealthKit on the Watch, with complications on every face style</td>
-          <td>N/A; Android-only at present</td>
+          <th scope="row">A trial week before blocking</th>
+          <td class="compare-table__primary">Shadow Week: seven days that block nothing and count how often you would have been blocked</td>
+          <td>Not listed</td>
         </tr>
         <tr>
-          <th scope="row">Pricing model</th>
-          <td class="compare-table__primary">Free baseline; Premium {P_MONTHLY@earnlock}/mo, {P_YEARLY@earnlock}/yr (7-day trial), or {P_LIFETIME@earnlock} lifetime</td>
-          <td>100% free; ad-reward bonus (+5 min per ad watched)</td>
+          <th scope="row">Price</th>
+          <td class="compare-table__primary">Free for one app or category. Premium {P_MONTHLY@earnlock}/month or {P_YEARLY@earnlock}/year, each with a {TRIAL@earnlock}, or {P_LIFETIME@earnlock} once</td>
+          <td>Free; optional ads earn bonus minutes</td>
         </tr>
         <tr>
-          <th scope="row">Account or sign-up required</th>
-          <td class="compare-table__primary">No; no email or Apple ID required</td>
-          <td>No: "No login. No account."</td>
+          <th scope="row">Account</th>
+          <td class="compare-table__primary">No account</td>
+          <td>No account</td>
         </tr>
         <tr>
-          <th scope="row">Data leaves the device</th>
-          <td class="compare-table__primary">No; Apple App Privacy label reads Data Not Collected</td>
-          <td>No: "No data leaves your phone. Ever."</td>
+          <th scope="row">Where data lives</th>
+          <td class="compare-table__primary">On your iPhone; the app makes no network connections of its own</td>
+          <td>On your phone, per its website</td>
         </tr>
         <tr>
-          <th scope="row">Anti-cheat: settings hardening</th>
-          <td class="compare-table__primary">Streak engine + math-gated emergency unlock; Family Controls makes the unlock authoritative</td>
-          <td>"Settings changes take effect the next day, so no cheating"</td>
+          <th scope="row">Guard against cheating</th>
+          <td class="compare-table__primary">A 24-hour wait before a lowered goal takes effect, and one math-gated emergency unlock a day</td>
+          <td>Settings changes take effect the next day</td>
         </tr>
         <tr>
           <th scope="row">Languages</th>
-          <td class="compare-table__primary">39 locales (incl. Arabic + Hebrew RTL)</td>
+          <td class="compare-table__primary">39 locales, including Arabic and Hebrew</td>
           <td>7: English, German, Spanish, French, Polish, Portuguese, Ukrainian</td>
         </tr>
       </tbody>
     </table>
   </div>
-  <p class="testimonials-footnote" style="margin-top:var(--s-3);">Verified 2026-05-23 against WalkMyScreen's public website (walkmyscreen.com). The iOS version is listed as Coming Soon; if and when it launches, check again before switching.</p>
+  <p class="testimonials-footnote" style="margin-top:var(--s-3);">Checked 2026-10-29 against WalkMyScreen's public website (platforms, iPhone status, pricing, account, languages). If its iPhone version launches, check again before switching.</p>
 </section>
 
 <section class="section reveal">
-  <h2 class="h2">When should I wait for WalkMyScreen on iOS instead?</h2>
-  <p class="lead">Wait for WalkMyScreen's iOS launch if any of these matter more to you than having an app today:</p>
+  <h2 class="h2">When should I wait for WalkMyScreen on iPhone instead?</h2>
+  <p class="lead">Choose WalkMyScreen, or wait for its iPhone version, if any of these matter more to you than having an app today:</p>
   <ul class="bullets">
-    <li>You're on Android right now and just need an answer for your phone. WalkMyScreen already ships on Google Play. EarnLock is iOS + watchOS only and is not planned for Android.</li>
-    <li>You specifically want a 100% ad-supported free product with no paid tier, which is WalkMyScreen's model. EarnLock is free for the steps tier with an optional Premium / lifetime.</li>
-    <li>You want the same product on both Android and iOS for a household. Once its iOS version launches, WalkMyScreen will fit that better than two different apps.</li>
+    <li>You're on Android. WalkMyScreen is on Google Play now; EarnLock is an iPhone app.</li>
+    <li>You want a product that is completely free, with optional ads for bonus minutes. EarnLock's free tier covers one app, and Premium is paid.</li>
+    <li>Your household mixes Android and iPhone, and you'd like one app for everyone once WalkMyScreen's iPhone version is out.</li>
   </ul>
-  <p>EarnLock is for the iPhone owner who wants something working today, on their iPhone and their Apple Watch, with the custom shield and 39 locales, and doesn't want to wait for an unreleased iOS port from another developer.</p>
+  <p>EarnLock is for the iPhone owner who wants a steps-to-unlock app working today, with a Shadow Week to start and an Apple Watch app with Premium.</p>
 </section>
 
 {% if app %}
@@ -164,19 +161,19 @@ last_updated: 2026-10-26
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>Does WalkMyScreen work on iPhone?</summary><div class="faq-a">Not at the time of writing. Per WalkMyScreen's public website, the app currently ships on Android (Google Play) only; the iOS version is listed as Coming Soon with no published release date. Until WalkMyScreen launches on iPhone, EarnLock is the closest iOS-native equivalent. It uses the same activity-as-unlock concept, built on Apple's Family Controls and HealthKit, with a full Apple Watch app and complications.</div></details>
-    <details class="faq-item"><summary>What is the best WalkMyScreen alternative for iPhone?</summary><div class="faq-a">EarnLock is the closest iOS-native equivalent to WalkMyScreen. Both apps lock distracting apps behind a daily step goal, and both work without an account and keep data on the device. EarnLock also has a full Apple Watch app with complications, a custom Family Controls shield with a live progress ring on every blocked app ("X steps until unlock"), active-minute and active-calorie goal modes in Premium, and 39 locales. EarnLock is free for the steps tier, with {P_MONTHLY@earnlock}/month, {P_YEARLY@earnlock}/year, or a {P_LIFETIME@earnlock} lifetime purchase for Premium.</div></details>
-    <details class="faq-item"><summary>How does EarnLock compare to WalkMyScreen?</summary><div class="faq-a">Both use steps to unlock screen time, both are strict about privacy (WalkMyScreen explicitly says No login. No account. No data leaves your phone.; EarnLock's Apple App Privacy label reads Data Not Collected), and both block social apps. They differ on platform: WalkMyScreen is Android today with iOS coming, and EarnLock is iOS + watchOS today. They differ on money: WalkMyScreen is 100% free with an ad-reward bonus (+5 min per ad), while EarnLock is free + {P_LIFETIME@earnlock} lifetime Premium with no ads anywhere. And EarnLock has an Apple Watch app, which WalkMyScreen does not (Android has no equivalent).</div></details>
-    <details class="faq-item"><summary>Is there a free WalkMyScreen alternative for iPhone?</summary><div class="faq-a">Yes, EarnLock has a free tier. It includes blocking one iOS app or category via Apple's Family Controls picker, a steps-based daily goal that unlocks it when you cross it, partial unlocks from 50% of the goal, the custom shield with the live progress ring, Lock Screen and Home Screen widgets, the math-gated emergency unlock (1/day), the streak engine with weekly rest day, and on-device-only data (no account, no server, no analytics SDK). Premium adds unlimited apps, active-minutes and active-calorie goals, the Apple Watch app and complications, the Live Activity, Smart Schedules, Week and Month insights, and the reflection log.</div></details>
-    <details class="faq-item"><summary>Will WalkMyScreen launch on iPhone soon?</summary><div class="faq-a">WalkMyScreen's website lists iOS as Coming Soon without a specific date or beta link. If you need a working iOS app today, EarnLock ships on iPhone and Apple Watch. If you specifically want WalkMyScreen's product on iOS, watch their website for the launch; the two apps are not affiliated.</div></details>
-    <details class="faq-item"><summary>Why does EarnLock use Apple's Family Controls instead of an Accessibility-based blocker?</summary><div class="faq-a">On iOS, Family Controls (ManagedSettings + DeviceActivity + ShieldConfiguration) is the only Apple-sanctioned API for blocking arbitrary apps systemwide. It lets the custom shield show a live progress ring on every blocked app, where a workaround could only nag the user after the fact. The catch is that Family Controls hands EarnLock opaque tokens, so even EarnLock cannot see which apps you blocked. That is also why EarnLock has nothing to send to a server even if it wanted to. WalkMyScreen on Android uses a different API surface; the iOS port (when it ships) will need to use Family Controls too.</div></details>
+    <details class="faq-item" open><summary>Does WalkMyScreen work on iPhone?</summary><div class="faq-a">Not yet. WalkMyScreen is on Google Play for Android, and its website lists the iPhone version as coming soon. On iPhone today, EarnLock locks the apps you pick until you reach a daily activity goal measured by Apple Health.</div></details>
+    <details class="faq-item"><summary>What is the best WalkMyScreen alternative for iPhone?</summary><div class="faq-a">EarnLock works on the same idea on iPhone: your movement unlocks your apps. It locks the apps you pick until you reach a daily goal in steps (free) or active minutes or active calories (Premium). Halfway opens them for an hour, and the full goal opens them until midnight. It needs no account, and locking one app is free for good.</div></details>
+    <details class="faq-item"><summary>How does EarnLock compare to WalkMyScreen?</summary><div class="faq-a">Both use steps to unlock screen time, and both need no account. WalkMyScreen earns you minutes as you walk on top of a baseline, runs on Android, and is free with optional ads for bonus minutes. EarnLock uses one daily goal with an hour at halfway, runs on iPhone with an Apple Watch app in Premium, and starts with a Shadow Week that blocks nothing and counts how often you would have been blocked.</div></details>
+    <details class="faq-item"><summary>Is there a free WalkMyScreen alternative for iPhone?</summary><div class="faq-a">Yes. Locking one app or category with a step goal is free for good, with partial and full unlocks, Shadow Week, streaks with a weekly rest day, the Insights Day view, every widget, and the emergency unlock. Premium adds unlimited apps, active minutes and active calories, the Apple Watch app, a Live Activity, Smart Schedules, and Week and Month insights for {P_MONTHLY@earnlock}/month or {P_YEARLY@earnlock}/year, each with a {TRIAL@earnlock}, or {P_LIFETIME@earnlock} once. All three support Family Sharing.</div></details>
+    <details class="faq-item"><summary>Will WalkMyScreen launch on iPhone soon?</summary><div class="faq-a">Its website lists the iPhone version as coming soon, with no date when this page was checked. Until it ships, EarnLock is available on the App Store.</div></details>
+    <details class="faq-item"><summary>Why does EarnLock use Apple's Screen Time controls?</summary><div class="faq-a">On iPhone, Apple's Screen Time controls are the way an app can lock other apps. You choose what to lock in Apple's own picker, which gives EarnLock opaque tokens instead of the names of your apps. iOS also lets you turn that access off in Settings, so the lock is a commitment you choose.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Start here</p>
   <h2 class="h2">Try EarnLock on iPhone.</h2>
-  <p class="lead">Move to unlock your apps, with Apple Health as the proof. Subscribe, or pay {P_LIFETIME@earnlock} once for lifetime. No account needed.</p>
+  <p class="lead">Your steps open your apps, and halfway earns an hour. Locking one app is free, with no account.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/earnlock/">Learn about EarnLock</a>
   </div>

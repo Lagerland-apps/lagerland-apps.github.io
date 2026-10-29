@@ -2,26 +2,23 @@
 layout: default
 permalink: /alternatives/steppin/
 title: "Steppin Alternative"
-quick_answer: "EarnLock is the lifetime-priced, Apple Watch-first alternative to Steppin. Both apps tie screen time to step counts and both apps have Data Not Collected privacy labels. They differ in how the unlock works, which devices they run on, and pricing. Steppin pays out screen time linearly (1 minute per 100 steps, configurable); EarnLock unlocks at a daily goal you commit to in the morning, one decision per day. EarnLock has a full Apple Watch app with complications; Steppin is iPhone only. EarnLock's lifetime tier is {P_LIFETIME@earnlock} (one-time); Steppin has no lifetime, and its subscriptions are Weekly $2.99, Monthly $7.99, or Annual $29.99. EarnLock ships 39 locales (incl. Arabic + Hebrew RTL); Steppin ships 4 (English, German, Japanese, Spanish)."
+quick_answer: "EarnLock is an iPhone alternative to Steppin for people who'd rather make one decision a day. Both apps tie screen time to steps. Steppin pays out minutes as you walk (by default 1 minute per 100 steps). EarnLock uses one daily goal: halfway opens your apps for an hour, and the full goal opens them until midnight. EarnLock adds a Shadow Week, an Apple Watch app with Premium, a one-time Lifetime option, and 39 locales. Locking one app with a step goal is free for good, and Premium is {P_MONTHLY@earnlock}/month, {P_YEARLY@earnlock}/year, or {P_LIFETIME@earnlock} once. Steppin is the better pick if you like earning minutes as you go."
 seo:
   title: "Steppin Alternative: EarnLock, Watch + {P_LIFETIME@earnlock} Lifetime"
-  description: "Steppin alternative with a {P_LIFETIME@earnlock} lifetime tier, a full Apple Watch app, and a live progress shield. Unlocks at a daily goal instead of per step."
+  description: "EarnLock vs Steppin: one daily goal instead of minutes per 100 steps. Halfway opens an hour. Apple Watch app with Premium, lifetime option."
   keywords:
     - Steppin alternative
     - alternative to Steppin app
     - EarnLock vs Steppin
-    - Steppin Apple Watch
-    - cheaper Steppin alternative
-    - lifetime Steppin alternative
-    - steps for screen time iPhone
+    - app like Steppin
+    - steps for screen time app
+    - steps unlock apps iPhone
     - walk to unlock apps
-    - earn screen time alternative
-    - Family Controls custom shield
+    - block apps until you walk
+    - app blocker no account
+    - lifetime app blocker
     - Apple Watch screen time blocker
-    - HealthKit screen time blocker
-    - private screen time blocker
-    - app blocker no subscription
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "earnlock" | first -%}
@@ -53,21 +50,21 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best alternative to Steppin?", "acceptedAnswer": { "@type": "Answer", "text": "EarnLock is the closest direct alternative to Steppin. Both apps connect step counts to screen-time access, and both have Apple App Privacy labels reading Data Not Collected. They differ in the unlock mechanic, the devices they cover, and the pricing model. Steppin pays out earned minutes linearly (1 minute per 100 steps, configurable). EarnLock unlocks at a daily goal: you set the threshold in the morning, and crossing it unlocks the rest of your calendar day. EarnLock has a full Apple Watch app with complications; Steppin is iPhone only. EarnLock's lifetime tier is {P_LIFETIME@earnlock} (one-time); Steppin has no lifetime, only subscriptions ($2.99/wk, $7.99/mo, $29.99/yr)." } },
-    { "@type": "Question", "name": "How is EarnLock different from Steppin?", "acceptedAnswer": { "@type": "Answer", "text": "Four things. (1) Unlock mechanic: Steppin converts steps into minutes, a vending-machine model where every 100 steps earns 1 minute (configurable). EarnLock locks the whole day behind a goal threshold; once you cross it, the apps unlock for the rest of the calendar day. (2) Apple Watch: EarnLock has a full Watch app (Premium) with circular, corner, inline, and rectangular complications; Steppin is iPhone only. (3) Pricing: EarnLock's lifetime is {P_LIFETIME@earnlock} (one-time) and yearly is {P_YEARLY@earnlock}; Steppin has no lifetime; Annual is $29.99 and Monthly $7.99. (4) Languages: EarnLock ships 39 locales including Arabic and Hebrew RTL; Steppin ships 4 (English, German, Japanese, Spanish)." } },
-    { "@type": "Question", "name": "Is EarnLock cheaper than Steppin?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, by a wide margin. EarnLock's Annual is {P_YEARLY@earnlock} against Steppin's Annual at $29.99. EarnLock's Monthly is {P_MONTHLY@earnlock} against Steppin's $7.99. EarnLock also has a {P_LIFETIME@earnlock} one-time lifetime tier; Steppin has no lifetime option. Both apps have a free baseline. If you plan to use a screen-time blocker for years, lifetime makes the most sense: you pay {P_LIFETIME@earnlock} once and never see another paywall." } },
-    { "@type": "Question", "name": "Does Steppin work on Apple Watch?", "acceptedAnswer": { "@type": "Answer", "text": "Per Steppin's App Store listing (developer Boston Venture Studio, app ID 6737981423), the app runs on iPhone only. No Apple Watch app is listed. EarnLock has a full watchOS app. The Watch reads HealthKit directly, so step counting keeps running during long walks, runs, and gym sessions without the iPhone in your pocket, and complications fit every face style. The iPhone's shields lift once the Watch's activity has synced into Apple Health on the phone." } },
-    { "@type": "Question", "name": "Steppin gives me minutes per step. Why does EarnLock use a daily goal instead?", "acceptedAnswer": { "@type": "Answer", "text": "The two apps follow different ideas about behavior change. Steppin's per-step earning model gives continuous micro-rewards: walk a bit, earn a bit, scroll a bit. EarnLock's daily-goal model is a single commitment per day: you pick the threshold in the morning, and either you hit it or you don't. Hitting it unlocks the apps for the rest of the calendar day. Falling short earns at most a timed partial window once you pass 50% (an hour at halfway), plus the one math-gated emergency unlock. The per-step model can turn into a loop of small unlocks; the daily goal asks for one decision and then stays out of the way. Either can work, so pick the one that fits how you want your phone use to feel." } },
-    { "@type": "Question", "name": "Which is more private, EarnLock or Steppin?", "acceptedAnswer": { "@type": "Answer", "text": "They are tied at the strictest tier. Both apps have Apple App Privacy labels reading Data Not Collected, meaning no analytics SDK, no advertising SDK, and no data leaving the device. Both read HealthKit on-device only, and neither tracks you across other apps. The differences are elsewhere: the unlock mechanic, Apple Watch support, lifetime pricing, and locale coverage." } }
+    { "@type": "Question", "name": "What is the best alternative to Steppin?", "acceptedAnswer": { "@type": "Answer", "text": "If you'd rather set one goal than earn minutes all day, EarnLock is a Steppin alternative built on a daily goal. It locks the apps you pick until you reach your goal in steps (free) or active minutes or active calories (Premium), measured by Apple Health. Halfway opens them for an hour, and the full goal opens them until midnight. Locking one app is free for good, and Premium includes an Apple Watch app and a one-time Lifetime option." } },
+    { "@type": "Question", "name": "How is EarnLock different from Steppin?", "acceptedAnswer": { "@type": "Answer", "text": "Steppin converts steps into minutes as you walk. EarnLock measures your activity against one daily goal: halfway opens your apps for an hour, and 100% opens them until midnight. EarnLock also starts with a Shadow Week that blocks nothing and counts how often you would have been blocked, has an Apple Watch app with Premium, and comes in 39 locales. Steppin is iPhone only." } },
+    { "@type": "Question", "name": "How much does EarnLock cost compared with Steppin?", "acceptedAnswer": { "@type": "Answer", "text": "Locking one app or category with a step goal is free for good, with partial and full unlocks, Shadow Week, streaks with a weekly rest day, the Insights Day view, every widget, and the emergency unlock. Premium adds unlimited apps, active minutes and active calories, the Apple Watch app, a Live Activity, Smart Schedules, and Week and Month insights for {P_MONTHLY@earnlock}/month or {P_YEARLY@earnlock}/year, each with a {TRIAL@earnlock}, or {P_LIFETIME@earnlock} once. All three support Family Sharing. Steppin's listing showed subscriptions only ($2.99 a week, $7.99 a month, or $29.99 a year) when this page was checked. Check both listings for current prices in your country." } },
+    { "@type": "Question", "name": "Does Steppin work on Apple Watch?", "acceptedAnswer": { "@type": "Answer", "text": "Steppin's App Store listing shows an iPhone app only, with no Apple Watch app. With Premium, EarnLock's Apple Watch app reads its own Health data and shows your ring, your count, and how far you are from unlocking, with a Reflect button and circular, corner, inline, and rectangular complications. The iPhone is still the device that locks and unlocks your apps, and it passes your Premium status to the watch." } },
+    { "@type": "Question", "name": "Steppin gives me minutes per step. Why does EarnLock use a daily goal instead?", "acceptedAnswer": { "@type": "Answer", "text": "A per-step exchange keeps you negotiating all day. A daily goal asks for one decision, and EarnLock softens it: halfway opens your apps for an hour right away, so a slow day still earns something, and the full goal opens them until midnight. If you choose Adaptive, the goal rises 3% after a day you hit it and eases 5% after a day you miss." } },
+    { "@type": "Question", "name": "Which is more private, EarnLock or Steppin?", "acceptedAnswer": { "@type": "Answer", "text": "Both take privacy seriously. Steppin's App Privacy label reports no data collected. EarnLock has no account, makes no network connections of its own, and includes no third-party SDKs, and Apple Health is read on your iPhone and never written to or sent anywhere." } }
   ]
 }
 </script>
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">Daily goal-gate · Apple Watch · {P_LIFETIME@earnlock} lifetime</p>
+    <p class="overline">Movement-based · Apple Watch · On-device</p>
     <h1 class="h1">Looking for a<br><span class="gradient-text">Steppin alternative?</span></h1>
-    <p class="lead">Steppin earns you 1 minute of screen time for every 100 steps, like a vending machine. With EarnLock you commit to a daily goal in the morning, and the apps unlock when you cross it. Either approach can work. EarnLock also has a full Apple Watch app, a {P_LIFETIME@earnlock} lifetime tier (Steppin is subscription-only at $29.99/yr or $7.99/mo), a custom shield with the exact count remaining on every blocked app, and 39 locales including Arabic and Hebrew RTL.</p>
+    <p class="lead">Steppin earns you screen time as you walk: by default, 1 minute for every 100 steps. EarnLock asks for one daily goal instead. Halfway there, your apps open for an hour; at the full goal they stay open until midnight. Either model can work. EarnLock also starts with a Shadow Week that only counts, adds an Apple Watch app with Premium, and sells Premium as a one-time {P_LIFETIME@earnlock} purchase as well as monthly or yearly.</p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/earnlock/">See EarnLock</a>
       <a class="btn btn-secondary" href="#compare">Compare side by side</a>
@@ -79,7 +76,7 @@ last_updated: 2026-10-26
 
 <section id="compare" class="section reveal">
   <h2 class="h2">How does EarnLock compare to Steppin?</h2>
-  <p class="lead">Compared against Steppin's public App Store listing (developer: Boston Venture Studio, Inc., app ID 6737981423). Competitor offerings change often, so check again before switching.</p>
+  <p class="lead">Steppin details come from its US App Store listing. Both apps turn steps into screen time; they differ in how the exchange works.</p>
   <div class="card" style="overflow-x:auto;">
     <table class="compare-table" role="table">
       <thead>
@@ -92,74 +89,74 @@ last_updated: 2026-10-26
       <tbody>
         <tr>
           <th scope="row">How blocked apps unlock</th>
-          <td class="compare-table__primary">Daily activity goal hit (steps / active minutes / active calories), one commitment per day</td>
+          <td class="compare-table__primary">A daily activity goal from Apple Health. Halfway opens an hour; the full goal opens them until midnight</td>
           <td>Linear earning: 1 minute of screen time per 100 steps (configurable)</td>
         </tr>
         <tr>
-          <th scope="row">Custom shield with live progress ring on the blocked app</th>
-          <td class="compare-table__primary">Yes, a ShieldConfiguration extension draws a ring + "X steps until unlock"</td>
-          <td>Not described in public listing; verify in the app</td>
+          <th scope="row">What a locked app shows</th>
+          <td class="compare-table__primary">EarnLock's screen with what's left, such as "2,026 steps until unlock", and an Earn it button</td>
+          <td>Not described in the public listing</td>
         </tr>
         <tr>
-          <th scope="row">Apple Watch app + complications</th>
-          <td class="compare-table__primary">Yes, a full app that reads HealthKit on the Watch, with complications on every face style</td>
-          <td>No, iPhone only</td>
+          <th scope="row">A trial week before blocking</th>
+          <td class="compare-table__primary">Shadow Week: seven days that block nothing and count how often you would have been blocked</td>
+          <td>Not listed</td>
         </tr>
         <tr>
-          <th scope="row">Cheapest one-time / lifetime tier</th>
-          <td class="compare-table__primary">{P_LIFETIME@earnlock} lifetime (one-time)</td>
-          <td>No lifetime; subscription only</td>
+          <th scope="row">Free tier</th>
+          <td class="compare-table__primary">One app or category, locked with a step goal, for good</td>
+          <td>A free baseline</td>
         </tr>
         <tr>
-          <th scope="row">Cheapest paid yearly tier</th>
-          <td class="compare-table__primary">{P_YEARLY@earnlock} / year (7-day free trial; Family Sharing eligible across 5 family members)</td>
-          <td>$29.99 / year (Pro Annual)</td>
+          <th scope="row">Paid plans</th>
+          <td class="compare-table__primary">{P_MONTHLY@earnlock}/month or {P_YEARLY@earnlock}/year (each with a {TRIAL@earnlock}), or {P_LIFETIME@earnlock} once</td>
+          <td>Subscriptions only: $2.99/week, $7.99/month, or $29.99/year</td>
         </tr>
         <tr>
-          <th scope="row">Cheapest paid monthly tier</th>
-          <td class="compare-table__primary">{P_MONTHLY@earnlock} / month</td>
-          <td>$7.99 / month; or Weekly $2.99</td>
+          <th scope="row">Apple Watch app</th>
+          <td class="compare-table__primary">Yes, with Premium: the watch reads its own Health data and has complications. The iPhone does the locking</td>
+          <td>No; iPhone only</td>
         </tr>
         <tr>
-          <th scope="row">Account or sign-up required</th>
-          <td class="compare-table__primary">No; no email or Apple ID required</td>
-          <td>Not explicitly disclosed on App Store listing; check the app</td>
+          <th scope="row">Account</th>
+          <td class="compare-table__primary">No account</td>
+          <td>Not stated on the listing</td>
         </tr>
         <tr>
-          <th scope="row">App Privacy label (App Store)</th>
-          <td class="compare-table__primary">Data Not Collected, every release</td>
-          <td>Data Not Collected; developer reports no data collection</td>
+          <th scope="row">Privacy</th>
+          <td class="compare-table__primary">No third-party SDKs; the app makes no network connections of its own</td>
+          <td>App Privacy label: no data collected</td>
         </tr>
         <tr>
           <th scope="row">Languages</th>
-          <td class="compare-table__primary">39 locales (incl. Arabic + Hebrew RTL)</td>
+          <td class="compare-table__primary">39 locales, including Arabic and Hebrew</td>
           <td>4: English, German, Japanese, Spanish</td>
         </tr>
         <tr>
           <th scope="row">Platforms</th>
-          <td class="compare-table__primary">iOS 17+ · watchOS 10+</td>
-          <td>iOS 17+ · iPhone only</td>
+          <td class="compare-table__primary">iPhone (iOS 17 or later), plus the Apple Watch app with Premium</td>
+          <td>iPhone (iOS 17 or later)</td>
         </tr>
         <tr>
-          <th scope="row">Family Sharing eligible</th>
-          <td class="compare-table__primary">Yes, every paid tier (Monthly, Yearly, Lifetime); one purchase covers up to 5 family members</td>
-          <td>Not disclosed on App Store listing; check per-IAP setting before buying</td>
+          <th scope="row">Family Sharing</th>
+          <td class="compare-table__primary">Yes, on Monthly, Yearly, and Lifetime</td>
+          <td>Not stated on the listing</td>
         </tr>
       </tbody>
     </table>
   </div>
-  <p class="testimonials-footnote" style="margin-top:var(--s-3);">Verified 2026-05-23 against Steppin's public App Store listing (apps.apple.com/us/app/steppin-steps-for-screen-time/id6737981423). Mechanism descriptions follow each app's own published documentation; check again before switching.</p>
+  <p class="testimonials-footnote" style="margin-top:var(--s-3);">Checked 2026-05-23 against Steppin's public App Store listing. Mechanism descriptions follow each app's own published documentation; check again before switching.</p>
 </section>
 
 <section class="section reveal">
   <h2 class="h2">When should I pick Steppin instead?</h2>
-  <p class="lead">Pick Steppin if any of these matter more to you than Apple Watch, the lifetime tier, and the daily goal model:</p>
+  <p class="lead">Pick Steppin if any of these matter more to you than a daily goal and the Apple Watch app:</p>
   <ul class="bullets">
-    <li>You prefer continuous micro-rewards to a single daily commitment. Walking a little to earn a little is Steppin's design, and it suits some people's habits better than a daily goal.</li>
-    <li>You're already comfortable with Steppin's per-step exchange rate and don't want to switch unlock mental models.</li>
-    <li>You don't wear an Apple Watch and only need step tracking on the iPhone, where Steppin's iPhone-only app may feel simpler.</li>
+    <li>You prefer small, continuous rewards to a single daily goal. Walking a little to earn a little is Steppin's design, and it suits some habits better.</li>
+    <li>You're used to Steppin's exchange rate and don't want to learn a different model.</li>
+    <li>You only need step tracking on the iPhone, and Steppin's simpler setup is all you want.</li>
   </ul>
-  <p>EarnLock is for the person who tried Steppin's per-step model and found it became a constant negotiation: earn a few minutes, scroll, earn a few more, scroll. The daily goal asks for one decision in the morning and then stays out of the way.</p>
+  <p>EarnLock is for the person who found the per-step model turned into a running negotiation: earn a few minutes, scroll, earn a few more. A daily goal is one decision, and halfway still earns an hour.</p>
 </section>
 
 {% if app %}
@@ -174,19 +171,19 @@ last_updated: 2026-10-26
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>What is the best alternative to Steppin?</summary><div class="faq-a">EarnLock is the closest direct alternative to Steppin. Both apps connect step counts to screen-time access, and both have Apple App Privacy labels reading Data Not Collected. They differ in the unlock mechanic, the devices they cover, and the pricing model. Steppin pays out earned minutes linearly (1 minute per 100 steps, configurable). EarnLock unlocks at a daily goal: you set the threshold in the morning, and crossing it unlocks the rest of your calendar day. EarnLock has a full Apple Watch app with complications; Steppin is iPhone only. EarnLock's lifetime tier is {P_LIFETIME@earnlock} (one-time); Steppin has no lifetime, only subscriptions ($2.99/wk, $7.99/mo, $29.99/yr).</div></details>
-    <details class="faq-item"><summary>How is EarnLock different from Steppin?</summary><div class="faq-a">Four things. (1) Unlock mechanic: Steppin converts steps into minutes, a vending-machine model where every 100 steps earns 1 minute (configurable). EarnLock locks the whole day behind a goal threshold; once you cross it, the apps unlock for the rest of the calendar day. (2) Apple Watch: EarnLock has a full Watch app (Premium) with circular, corner, inline, and rectangular complications; Steppin is iPhone only. (3) Pricing: EarnLock's lifetime is {P_LIFETIME@earnlock} (one-time) and yearly is {P_YEARLY@earnlock}; Steppin has no lifetime; Annual is $29.99 and Monthly $7.99. (4) Languages: EarnLock ships 39 locales including Arabic and Hebrew RTL; Steppin ships 4 (English, German, Japanese, Spanish).</div></details>
-    <details class="faq-item"><summary>Is EarnLock cheaper than Steppin?</summary><div class="faq-a">Yes, by a wide margin. EarnLock's Annual is {P_YEARLY@earnlock} against Steppin's Annual at $29.99. EarnLock's Monthly is {P_MONTHLY@earnlock} against Steppin's $7.99. EarnLock also has a {P_LIFETIME@earnlock} one-time lifetime tier; Steppin has no lifetime option. Both apps have a free baseline. If you plan to use a screen-time blocker for years, lifetime makes the most sense: you pay {P_LIFETIME@earnlock} once and never see another paywall.</div></details>
-    <details class="faq-item"><summary>Does Steppin work on Apple Watch?</summary><div class="faq-a">Per Steppin's App Store listing (developer Boston Venture Studio, app ID 6737981423), the app runs on iPhone only. No Apple Watch app is listed. EarnLock has a full watchOS app. The Watch reads HealthKit directly, so step counting keeps running during long walks, runs, and gym sessions without the iPhone in your pocket, and complications fit every face style. The iPhone's shields lift once the Watch's activity has synced into Apple Health on the phone.</div></details>
-    <details class="faq-item"><summary>Steppin gives me minutes per step. Why does EarnLock use a daily goal instead?</summary><div class="faq-a">The two apps follow different ideas about behavior change. Steppin's per-step earning model gives continuous micro-rewards: walk a bit, earn a bit, scroll a bit. EarnLock's daily-goal model is a single commitment per day: you pick the threshold in the morning, and either you hit it or you don't. Hitting it unlocks the apps for the rest of the calendar day. Falling short earns at most a timed partial window once you pass 50% (an hour at halfway), plus the one math-gated emergency unlock. The per-step model can turn into a loop of small unlocks; the daily goal asks for one decision and then stays out of the way. Either can work, so pick the one that fits how you want your phone use to feel.</div></details>
-    <details class="faq-item"><summary>Which is more private, EarnLock or Steppin?</summary><div class="faq-a">They are tied at the strictest tier. Both apps have Apple App Privacy labels reading Data Not Collected, meaning no analytics SDK, no advertising SDK, and no data leaving the device. Both read HealthKit on-device only, and neither tracks you across other apps. The differences are elsewhere: the unlock mechanic, Apple Watch support, lifetime pricing, and locale coverage.</div></details>
+    <details class="faq-item" open><summary>What is the best alternative to Steppin?</summary><div class="faq-a">If you'd rather set one goal than earn minutes all day, EarnLock is a Steppin alternative built on a daily goal. It locks the apps you pick until you reach your goal in steps (free) or active minutes or active calories (Premium), measured by Apple Health. Halfway opens them for an hour, and the full goal opens them until midnight. Locking one app is free for good, and Premium includes an Apple Watch app and a one-time Lifetime option.</div></details>
+    <details class="faq-item"><summary>How is EarnLock different from Steppin?</summary><div class="faq-a">Steppin converts steps into minutes as you walk. EarnLock measures your activity against one daily goal: halfway opens your apps for an hour, and 100% opens them until midnight. EarnLock also starts with a Shadow Week that blocks nothing and counts how often you would have been blocked, has an Apple Watch app with Premium, and comes in 39 locales. Steppin is iPhone only.</div></details>
+    <details class="faq-item"><summary>How much does EarnLock cost compared with Steppin?</summary><div class="faq-a">Locking one app or category with a step goal is free for good, with partial and full unlocks, Shadow Week, streaks with a weekly rest day, the Insights Day view, every widget, and the emergency unlock. Premium adds unlimited apps, active minutes and active calories, the Apple Watch app, a Live Activity, Smart Schedules, and Week and Month insights for {P_MONTHLY@earnlock}/month or {P_YEARLY@earnlock}/year, each with a {TRIAL@earnlock}, or {P_LIFETIME@earnlock} once. All three support Family Sharing. Steppin's listing showed subscriptions only ($2.99 a week, $7.99 a month, or $29.99 a year) when this page was checked. Check both listings for current prices in your country.</div></details>
+    <details class="faq-item"><summary>Does Steppin work on Apple Watch?</summary><div class="faq-a">Steppin's App Store listing shows an iPhone app only, with no Apple Watch app. With Premium, EarnLock's Apple Watch app reads its own Health data and shows your ring, your count, and how far you are from unlocking, with a Reflect button and circular, corner, inline, and rectangular complications. The iPhone is still the device that locks and unlocks your apps, and it passes your Premium status to the watch.</div></details>
+    <details class="faq-item"><summary>Steppin gives me minutes per step. Why does EarnLock use a daily goal instead?</summary><div class="faq-a">A per-step exchange keeps you negotiating all day. A daily goal asks for one decision, and EarnLock softens it: halfway opens your apps for an hour right away, so a slow day still earns something, and the full goal opens them until midnight. If you choose Adaptive, the goal rises 3% after a day you hit it and eases 5% after a day you miss.</div></details>
+    <details class="faq-item"><summary>Which is more private, EarnLock or Steppin?</summary><div class="faq-a">Both take privacy seriously. Steppin's App Privacy label reports no data collected. EarnLock has no account, makes no network connections of its own, and includes no third-party SDKs, and Apple Health is read on your iPhone and never written to or sent anywhere.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Start here</p>
   <h2 class="h2">Try EarnLock.</h2>
-  <p class="lead">Move to unlock your apps, with Apple Health as the proof. {P_LIFETIME@earnlock} lifetime, with no subscription required and no account.</p>
+  <p class="lead">One daily goal opens your apps, and halfway earns an hour. Locking one app is free, with no account.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/earnlock/">Learn about EarnLock</a>
   </div>
