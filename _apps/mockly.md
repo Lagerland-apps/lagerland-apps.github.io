@@ -2,8 +2,8 @@
 layout: app
 slug: mockly
 name: "Mockly"
-tagline: "Professional App Store screenshots for Mac."
-quick_answer: "Mockly is a native macOS app that turns your screenshots into App Store-ready exports. It frames them in real 3D devices rendered with Apple's Metal framework, uses percentage-based layouts that scale across every device size, translates text into 39 App Store locales with AI, and uploads directly to App Store Connect by device and locale. Everything runs locally on your Mac, with no server, no account, and no upload of pre-release assets to a third party. It costs {P_APP} once, with Family Sharing included. Subscription competitors in this category charge $19 to $49 per month."
+tagline: "Build, translate, and upload App Store screenshots on your Mac."
+quick_answer: "Mockly is a Mac app for building App Store screenshots. You put your real screenshots on 3D iPhone, iPad, MacBook Pro, and Apple Watch models, add text and backgrounds, and keep all 50 App Store languages in one project, translated with AI through your own OpenAI, Anthropic, or Google key or through a CSV file. It exports exact-size PNG or HEIC files, or uploads the pages to App Store Connect with your API key. Mockly costs {P_APP} once, with no subscription, and runs on macOS 14 or later."
 category: graphics
 status: live
 jump_nav: true
@@ -17,57 +17,50 @@ app_store_url: "https://apps.apple.com/app/id6756589122"
 price:
   model: one-time-purchase
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Refunds are handled by Apple through the standard App Store refund flow. Mockly is a one-time purchase with no auto-renew and no recurring fees."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Mockly is a one-time purchase and does not renew."
 
 value_math:
-  label: "How the price compares."
-  body: "Subscription App Store screenshot tools in this category charge $19 to $49 per month, or $228 to $588 a year. Mockly is {P_APP} once, with Family Sharing, which is less than a single month of most of them."
+  label: "What it costs."
+  body: "Mockly is {P_APP} once, with no subscription, and every editor feature comes with the purchase. AI translation runs on your own OpenAI, Anthropic, or Google key, so your provider bills you for it directly."
 
 icon: "/assets/icons/mockly.png"
 og_image: "/assets/og/mockly.png"
 
 seo:
-  title: "App Store Screenshot Maker for Mac: Mockly"
-  description: "Native Mac App Store screenshot maker with real 3D device frames, AI translation, and direct ASC upload. {P_APP} once, no subscription."
+  title: "App Store Screenshot Maker for Mac in 50 Languages: Mockly"
+  description: "Make App Store screenshots on your Mac with 3D iPhone, iPad, MacBook, and Apple Watch models, in 50 languages, and upload them to App Store Connect."
   keywords:
-    - App Store screenshot maker for Mac
-    - App Store screenshot generator
-    - native Mac App Store screenshots
-    - 3D device frame Mac app
-    - Metal-rendered screenshot tool
-    - App Store Connect upload tool
-    - App Store screenshot localization Mac
+    - app store screenshot maker for mac
+    - app store screenshot generator
+    - localize app store screenshots
+    - app store screenshots in 50 languages
+    - 3d device mockup mac
+    - upload screenshots to app store connect
     - one-time purchase screenshot tool
-    - Fastlane snapshot alternative
-    - Picsew alternative Mac
-    - Screenshot Studio alternative
-    - AppLaunchpad alternative
-    - Screenshots Pro alternative
-    - Rotato alternative
-    - ASO screenshot maker
     - indie developer screenshot tool
 
 hero:
   device: mac
-  pre_headline: "App Store screenshots, made on your Mac."
-  headline: "App Store Screenshot Maker for Mac."
-  subheadline: "Mockly renders real 3D device frames in Metal, translates your captions into 39 App Store locales with AI, and uploads straight to App Store Connect by device and language. It all happens on your Mac, so your pre-release screenshots never go through a browser or anyone's server."
+  pre_headline: "App Store screenshot maker for Mac"
+  headline: "Design your App Store screenshots once, then ship them in 50 languages."
+  secondary: "For indie Apple developers. One purchase, no subscription."
+  subheadline: "Put your real screenshots on 3D iPhone, iPad, MacBook Pro, and Apple Watch models, write the captions once, and translate them with your own OpenAI, Anthropic, or Google key. When the set is ready, Mockly exports exact-size PNG or HEIC files or uploads the pages straight to App Store Connect."
   cta_label: "Get Mockly"
-  alt: "Mockly 3D iPhone device mockup with an App Store screenshot composed on Mac"
+  alt: "Mockly on a Mac with three iPhone screenshot pages side by side, the Localizations list, and the artboard settings"
 
 who_for:
-  - "You're an indie iOS, iPadOS, or macOS developer shipping apps in multiple languages"
-  - "You're a solo marketer or ASO professional making App Store screenshots without a designer"
-  - "You want real 3D device frames rendered in Metal instead of flat 2D mockup overlays"
-  - "You want to upload finished screenshots to App Store Connect by device size and locale, without a browser"
-  - "You'd rather pay {P_APP} once than $19 to $49 a month for a SaaS subscription"
-  - "You ship pre-release apps under NDA and don't want screenshots routed through a third-party server"
+  - "You're an indie iOS or macOS developer who makes your own App Store screenshots"
+  - "You ship in several languages and want each language's text, screenshots, and layout in one project"
+  - "You work with a translator and want the screenshot text as a CSV file you can hand over and import back"
+  - "You already pay for OpenAI, Anthropic, or Google and want to translate captions with that key"
+  - "You'd rather buy a screenshot tool once than subscribe to one"
 
 who_not_for:
-  - "Your team has Fastlane snapshot and frameit fully wired into CI and you never touch GUI tools"
-  - "You only ship a single-locale app and don't need localization management"
-  - "You're making marketing campaign creatives for use outside the App Store (Figma fits that better)"
-  - "You want App Store Preview video assets (Mockly handles still screenshots, not video)"
+  - "You need App Store preview videos. Mockly makes still screenshots"
+  - "You want to start from a library of ready-made templates. In Mockly you build each layout yourself"
+  - "Your screenshots are captured and framed in CI with fastlane, and nobody opens a design tool"
+  - "You work on Windows, the web, or an iPad. Mockly runs on a Mac only"
+  - "You need to upload to Google Play. Mockly has a Google Play artboard size, but it uploads to App Store Connect only"
 
 alternatives_to:
   - "Screenshot Studio"
@@ -80,93 +73,93 @@ alternatives_to:
   - "Fastlane frameit / snapshot"
 
 value_points:
-  - title: "Real 3D device frames"
-    description: "Device frames are 3D models rendered with Metal. Rotate, scale, and position them with numeric values. The preview matches the export pixel for pixel, so what you submit is what you saw."
-  - title: "Ship in every App Store locale"
-    description: "Mockly translates overlaid text in place into 39 App Store locales and keeps your fonts, positioning, and right-to-left languages intact. Every market lives in one project."
-  - title: "Upload without leaving the app"
-    description: "Mockly uploads to App Store Connect directly, sorted by device size and locale, so you don't open a browser or move files around by hand."
-  - title: "One price, no subscription"
-    description: "Pay {P_APP} once. Subscription competitors in this category charge $19 to $49 per month, or $228 to $588 a year. Mockly costs less than a single month of those tools."
+  - title: "Fifty App Store languages in one project"
+    description: "Add any of the 50 App Store Connect languages and give each one its own text, screenshots, and images. A language follows your source language until you unlink it, so a long German headline or a different Japanese background changes that language and leaves the rest alone."
+  - title: "Upload from the app"
+    description: "Connect your App Store Connect API key, and Mockly lists your apps and versions, renders the pages, and uploads them for the languages you pick. The upload replaces the screenshots already in that display type, so check the set before you send it."
+  - title: "Real 3D devices at any angle"
+    description: "Six 3D models: iPhone 17 Pro Max, iPad Pro 11-inch and 12.9-inch, MacBook Pro 16-inch, Apple Watch Ultra, and Apple Watch Series 11. Turn each one on three axes and render it Realistic, Clay, or UI Only."
+  - title: "Bought once"
+    description: "Mockly is {P_APP} once, with no subscription. AI translation uses your own OpenAI, Anthropic, or Google key, and your provider bills you for it."
 
 how_it_works:
-  intro: "Mockly is a deterministic render pipeline with an App Store Connect uploader. These are the steps from raw screenshot to upload."
+  heading: "From a blank project to screenshots in App Store Connect."
+  intro: "A Mockly project is a list of pages, one per screenshot, with every language inside it. A release goes through these steps."
   steps:
-    - title: "Drop your raw screenshots in"
-      detail: "Bulk-import a folder of screenshots organised by language and device size, or drag them in one at a time. Mockly reads each image's resolution and puts it in the right device class."
-    - title: "Frame each shot in a real 3D device"
-      detail: "Every device frame is a 3D model rendered with Apple's Metal framework instead of a 2D PNG overlay. Rotate, tilt, scale, and position it with numeric values. The exporter produces exactly what the on-screen preview shows."
-    - title: "Layout with percentage-based coordinates"
-      detail: "Position every element with percentage coordinates. The same layout holds across iPhone 6.9\", 6.7\", 6.5\", 5.5\", iPad 13\", 12.9\", 11\", Mac 2880×1800, Apple Watch 410×502, and visionOS 3840×2160 without per-resolution adjustment."
-    - title: "Localise overlaid text into 39 App Store locales"
-      detail: "Mockly's AI translation pass localises every overlaid text element in place, keeping fonts, positioning, and right-to-left scripts, for any combination of the 39 locales App Store Connect accepts. You bring your own API key, and nothing goes through a Lagerland server."
-    - title: "Render the export bundle"
-      detail: "Each screenshot is rendered once per device class and locale, as a separate file at the exact dimensions App Store Connect requires (iPhone 6.9\" 1290×2868, iPad 13\" 2064×2752, Mac 2880×1800, and so on). Rendering is deterministic: re-render the same project tomorrow and the bytes are identical."
-    - title: "Upload directly to App Store Connect"
-      detail: "Sign in to App Store Connect through Apple's secure framework (credentials never leave Keychain), and Mockly uploads each screenshot to the correct device size and locale slot. That replaces about 30 minutes of moving files by hand per release with one button."
+    - title: "Lay out the pages"
+      detail: "Pick an artboard preset (iPhone 6.9-inch or 6.5-inch, iPad, Mac, Apple Watch, a landscape variant, or the 1080×1920 Google Play size) and add a page for each screenshot. Rename, duplicate, and drag pages into order in the sidebar."
+    - title: "Put your screenshots on 3D devices"
+      detail: "Add a device, drop in its screen image, and set its rotation on X, Y, and Z, its scale, and its offset. To fill every page in every language at once, link a folder of images named by language, page, and device (for example de_de_page2_1.png), and Mockly puts each file on the right device."
+    - title: "Write and style the text"
+      detail: "Add text blocks with a font from the bundled library, stroke, and shadow, then use Copy Style to repeat the look on other blocks and pages. Set a colour, gradient, or built-in background, including panoramic ones, and add image layers for logos and badges."
+    - title: "Add languages and translate"
+      detail: "Add languages from the list of 50 and choose your source language. Translate the text blocks with AI Translate using your own key (blocks marked Do not translate are skipped), or export a CSV for a translator and import it back. Unlink a language when it needs its own text size, image, or background."
+    - title: "Export or upload"
+      detail: "Save Images exports every page as PNG or HEIC at the artboard's exact pixel size, for the current language or all of them. Or open Upload to App Store Connect: Mockly reads the display type from the artboard and replaces that type's screenshots for the languages you choose."
 
 example_insights:
-  overline: "What Mockly exports"
-  heading: "Exports at the exact dimensions App Store Connect requires."
-  intro: "Examples of captioned exports across device classes and locales."
+  overline: "What one project holds"
+  heading: "One project holds every page, device, and language."
+  intro: "What a single Mockly project can hold and produce."
   cards:
-    - headline: "iPhone 6.9\": exact 1290×2868 output"
-      body: "A 3D-framed iPhone 16 Pro Max screenshot with overlaid feature copy, rendered locally at 1290×2868 in roughly 50ms on an M-series Mac. Re-render the same project tomorrow and the bytes are identical."
-      tag: "Render · Determinism"
-    - headline: "Same layout, 39 locales"
-      body: "One project produces 39 sets of localised screenshots (Japanese, Simplified Chinese, German, French, Arabic, and the rest), with text translated in place and fonts preserved."
-      tag: "Localisation · Scale"
-    - headline: "iPad 13\" in landscape and portrait"
-      body: "iPad Pro M4 device frame at 2064×2752, with native landscape support. The layout system is the same; only the aspect ratio changes."
-      tag: "Device · iPad"
-    - headline: "Mac 2880×1800, Studio Display crop"
-      body: "Mac App Store screenshots in the exact 2880×1800 dimensions App Store Connect expects, with bezel options and shadow control."
-      tag: "Device · Mac"
-    - headline: "Apple Watch + Apple Vision Pro coverage"
-      body: "The same source produces Watch 410×502 frames and visionOS 3840×2160 environment renders alongside the iPhone set."
-      tag: "Device · Coverage"
-    - headline: "Bulk upload to App Store Connect"
-      body: "234 screenshots (6 sets × 39 locales) uploaded to the correct device and locale slots in App Store Connect in under two minutes, without opening a browser tab."
-      tag: "Workflow · Upload"
+    - headline: "50 languages from one source"
+      body: "Choose a source language and add any of the 50 App Store Connect languages, or add them all at once. Each language can carry its own text, screenshots, and images."
+      tag: "Localization"
+    - headline: "Six 3D device models"
+      body: "iPhone 17 Pro Max, iPad Pro 11-inch and 12.9-inch, MacBook Pro 16-inch, Apple Watch Ultra, and Apple Watch Series 11, each with its own screen image per language if you want one."
+      tag: "Devices"
+    - headline: "Three device styles"
+      body: "Render any device Realistic, Clay, or UI Only, in perspective or orthographic projection, with adjustable light."
+      tag: "Rendering"
+    - headline: "A folder of screenshots, placed for you"
+      body: "Link a folder of simulator screenshots named by language, page, and device, and each file lands on the right device on every page, in every language."
+      tag: "Import"
+    - headline: "Screenshot text as a CSV"
+      body: "The Text Editing tab shows every text block in every language. Export CSV for a translator or an agency, then import the finished file."
+      tag: "Translation"
+    - headline: "Exact-size PNG or HEIC"
+      body: "Save Images writes each page at the artboard's exact pixel size, for one language or all of them, with file names based on the language code."
+      tag: "Export"
 
 features:
-  - title: "3D Metal rendering engine"
-    description: "Device frames are 3D models rendered with Apple's Metal framework instead of flat 2D PNG overlays. Output is deterministic, so your preview matches your export pixel for pixel."
-  - title: "Localise across 39 App Store locales"
-    description: "AI translation replaces text in place for every locale App Store Connect accepts, keeping fonts, positioning, and right-to-left scripts. Bring your own API key."
-  - title: "Direct App Store Connect upload"
-    description: "Mockly signs in through Apple's secure framework and sends each screenshot to the correct device size and locale slot. Credentials stay in Keychain and never pass through a Lagerland server."
-  - title: "Percentage-based precision layout"
-    description: "Position elements with percentage coordinates instead of pixels, and the layout holds across iPhone 6.9\" / 6.7\" / 6.5\" / 5.5\", iPad 13\" / 12.9\" / 11\", Mac 2880×1800, Apple Watch 410×502, and visionOS 3840×2160."
-  - title: "Bulk import and smart templates"
-    description: "Drop in a folder of raw screenshots organised by language and device, and Mockly puts each file in the right slot. Start from a template or build your own layout."
-  - title: "Native Mac, sandboxed, on-device"
-    description: "A native macOS app, not an Electron wrapper, and it is sandboxed, signed, and notarised. Your pre-release screenshots never leave your Mac for a third-party server. Apple's App Privacy nutrition label lists zero data collected."
+  - title: "Upload to App Store Connect"
+    description: "Add your App Store Connect API key (Key ID, Issuer ID, and .p8 file), pick an app and version, and Mockly uploads the rendered pages for the languages you choose. It shows the progress of each file and a list of results. Existing screenshots for that display type are replaced."
+  - title: "50 App Store languages"
+    description: "Add languages one by one, add them all, or search by name. The link-to-source switch in the Devices, Images, Background, and Text tabs keeps a language in step with your source language or frees it for its own layout."
+  - title: "AI Translate with your own key"
+    description: "Translate the text blocks on one page or on all pages into the languages you pick, using OpenAI, Anthropic, or Google, and choose the model for each provider in Settings. AI output is machine translation, so read it before you ship."
+  - title: "3D devices, camera, and light"
+    description: "Six 3D models of iPhone, iPad, MacBook Pro, and Apple Watch, with rotation on three axes, scale, offset, and three styles. Switch between perspective and orthographic projection, set the light, and let a device run past the edge of the artboard with Device Overflow."
+  - title: "Text, images, and backgrounds"
+    description: "Text blocks with fonts, weights, stroke, and shadow, plus Copy Style. Image layers sit in front of or behind the devices, with shadow, border, corner radius, and a different image per language if you need one. Backgrounds can be a colour, a gradient, or a built-in image."
+  - title: "A native Mac app"
+    description: "Mockly runs on macOS 14 or later, on Apple Silicon and Intel Macs. Projects are files you save and reopen from Finder, and editing and exporting work offline. The interface is in 10 languages, including German, French, Japanese, and Korean."
 
 screenshots:
   - src: "/assets/screenshots/mockly/1.webp"
-    alt: "Mockly for Mac: App Store screenshots without the busywork, with a project of three artboards"
+    alt: "Mockly on a MacBook with three iPhone screenshot pages, the Localizations list, and the artboard settings"
   - src: "/assets/screenshots/mockly/2.webp"
-    alt: "Mockly localization view for designing once and shipping every language"
+    alt: "Mockly showing the same three screenshot pages with German captions"
   - src: "/assets/screenshots/mockly/3.webp"
-    alt: "Mockly real-time 3D device frame preview"
+    alt: "Mockly canvas with three iPhone pages next to the camera, lighting, and device overflow settings"
   - src: "/assets/screenshots/mockly/4.webp"
-    alt: "Mockly AI translation of screenshot captions"
+    alt: "Mockly AI Translation sheet with the source language, the scope, and the target languages"
   - src: "/assets/screenshots/mockly/5.webp"
-    alt: "Mockly one-click upload of screenshots to App Store Connect"
+    alt: "Mockly App Store Connect upload panel asking for the Issuer ID, Key ID, and private key"
   - src: "/assets/screenshots/mockly/6.webp"
-    alt: "Mockly made for indie developers who ship, with a five-star rating badge"
+    alt: "Mockly app icon above the editor with three iPhone screenshot pages"
 
 privacy:
   data_collection: "none"
   tracking: false
   account_required: false
-  app_privacy_label: "Apple's App Privacy nutrition label lists Mockly as collecting zero data. Pre-release screenshots, project files, and App Store Connect credentials never leave your Mac for a Lagerland server."
+  app_privacy_label: "Lagerland Apps collects no data from Mockly. Your projects and settings stay on your Mac, and your keys are kept in its Keychain. When you translate, the text and your key go to the AI provider you chose. When you upload, the screenshots go to Apple."
   notes:
-    - "No analytics, no third-party trackers, no telemetry SDKs"
-    - "No account required for the app itself; App Store Connect credentials are handled by Apple's frameworks and stored in Keychain"
-    - "Pre-release screenshots and project files stored locally on your Mac"
-    - "AI translation uses your own API key, called directly from your Mac, and translations never go through a Lagerland server"
+    - "Mockly needs no account and contains no analytics or tracking SDKs. Lagerland Apps runs no server for it"
+    - "Projects are files saved where you choose on your Mac"
+    - "AI keys and your App Store Connect key are stored in the macOS Keychain and sent only to the provider you select or to Apple"
+    - "AI Translate sends the text of your text blocks and the target languages to the provider you chose, signed with your key"
+    - "Upload to App Store Connect sends the rendered screenshots to Apple"
 
 founder:
   entity_type: "Organization"
@@ -174,13 +167,13 @@ founder:
   role: "Independent Apple developer · Finland · one-person studio since 2025"
   location: "Finland"
   overline: "Who built this"
-  heading: "Made by a one-person studio."
-  story: "Mockly is built by a single independent developer at Lagerland Apps, working from Finland since 2025. After years of shipping indie iOS apps, we found every credible screenshot tool was subscription-priced, web-based, or both. So Lagerland Apps built a native Mac one, with 3D Metal rendering, AI translation that runs on your own API key, and a direct App Store Connect uploader that keeps credentials in Keychain. Everything stays on your machine, because pre-release screenshots under NDA shouldn't go anywhere else."
+  heading: "Made by a one-person studio in Finland."
+  story: "Mockly is made by Lagerland Apps, a one-person studio in Finland. Every release of an Apple app needs screenshots for each device size and each language, and doing that by hand means exporting files one at a time and dragging them into App Store Connect. Mockly keeps the whole set in one Mac project: the pages, the 3D devices, the text in 50 languages, and the upload. It needs no account, and Lagerland Apps runs no server for it."
   signals:
-    - "Native macOS app: Metal-rendered, sandboxed, and notarised, with no Electron wrapper"
-    - "App Privacy nutrition label lists zero data collected"
-    - "No analytics SDKs, third-party trackers, or growth team; a one-person studio that plans to keep the app going for the long term"
-    - "{APP_COUNT} live apps in the catalogue, all with the same privacy rules: no tracking, no ads, and no required accounts"
+    - "Native Mac app for macOS 14 or later, on Apple Silicon and Intel"
+    - "Works without an account, and Lagerland Apps collects no data from it"
+    - "One-time purchase with no subscription"
+    - "{APP_COUNT} live apps from the same studio, none with ads or tracking"
   external_link:
     label: "More apps from Lagerland Apps →"
     href: "/apps/"
@@ -188,42 +181,46 @@ founder:
   response_time: "Support emails go to one inbox and are answered personally, usually within a day."
 
 release_notes:
-  - date: "2026-04-05"
-    note: "Localisation pass expanded to all 39 App Store Connect locales, including right-to-left support for Arabic and Hebrew."
-  - date: "2026-03-12"
-    note: "Direct App Store Connect upload: push every device size and locale with one button. Credentials are handled through Apple's Keychain framework."
-  - date: "2026-02-24"
-    note: "Percentage-based layout engine: position elements with % coordinates so layouts scale across every device class without per-resolution adjustment."
-  - date: "2026-02-12"
-    note: "AI translation engine with bring-your-own API key. Preserves fonts, positioning, and right-to-left scripts."
-  - date: "2026-02-01"
-    note: "Mockly 1.0: native macOS, 3D Metal device-frame rendering, bulk import, and professional templates."
+  - date: "2026-08-15"
+    note: "Choose the AI model for each provider in Settings, and translate with an OpenAI, Anthropic, or Google key. A failed translation now says why it failed."
+  - date: "2026-06-30"
+    note: "Image layers with a different image per language, Help & Feedback in Settings, and fixes for reopening saved projects and the save prompt."
+  - date: "2026-05-18"
+    note: "App Store Connect upload fixes: the correct iPhone 6.9-inch artboard size, clearer error messages, and reuse of existing screenshot sets."
+  - date: "2026-04-26"
+    note: "AI translation of text blocks, and a new app icon."
+  - date: "2026-03-15"
+    note: "Rebuilt from scratch, under the earlier name ScreenFlow Studio: 3D devices, per-language overrides, App Store Connect upload, and bundled fonts and backgrounds."
 
 faq:
   - q: "What is Mockly?"
-    a: "Mockly is a native macOS app for making App Store screenshots with real 3D device frames rendered by Apple's Metal framework. It has percentage-based layouts that scale across every device size, AI translation into 39 App Store locales, and direct upload to App Store Connect. It all runs locally on your Mac, with no account and no server."
+    a: "Mockly is a Mac app for making App Store screenshots. You place your real screenshots on 3D iPhone, iPad, MacBook Pro, and Apple Watch models, add text, images, and backgrounds, and keep up to 50 App Store languages in one project. It exports PNG or HEIC files at exact sizes or uploads the pages to App Store Connect. It costs {P_APP} once, with no subscription."
   - q: "How is Mockly different from other screenshot tools?"
-    a: "Mockly is a native Mac app, so your pre-release screenshots never leave your machine, while most competitors are web apps. Its device frames are 3D models rendered in Metal instead of flat 2D PNG overlays. It costs {P_APP} once instead of $19 to $49 per month. And it uploads to App Store Connect directly, which skips the browser upload step every web competitor still needs."
+    a: "Mockly is a Mac app you buy once. One project holds all 50 App Store languages, each with its own text, screenshots, and layout where you need it, and translation runs through your own AI key or a CSV file. The devices are 3D models you can turn on three axes. When the set is done, Mockly uploads it to App Store Connect with your API key, so you don't drag files into the browser."
   - q: "What sizes does Mockly export?"
-    a: "Every size App Store Connect requires. iPhone: 6.9\" (1290×2868), 6.7\" (1290×2796), 6.5\" (1242×2688), 5.5\" (1242×2208). iPad: 13\" (2064×2752), 12.9\" (2048×2732), 11\" (1668×2388). Mac App Store: 2880×1800, 2560×1600, 1440×900, 1280×800. Apple Watch: 410×502, 396×484, 368×448. Apple TV: 1920×1080, 3840×2160. visionOS: 3840×2160. Positions are stored as percentages, so layouts scale on their own and one project produces every size."
-  - q: "Does Mockly support all Apple App Store locales?"
-    a: "Yes. Mockly supports all 39 locales App Store Connect accepts, including English (US, UK, AU, CA), Japanese, Simplified and Traditional Chinese, Korean, German, French (FR, CA), Spanish (ES, MX), Portuguese (PT, BR), Italian, Dutch, Polish, Czech, Slovak, Hungarian, Romanian, Russian, Turkish, Arabic, Hebrew, Greek, Swedish, Norwegian, Danish, Finnish, Indonesian, Malay, Thai, Vietnamese, Hindi, Ukrainian, Catalan, and Croatian. It handles right-to-left scripts (Arabic, Hebrew) natively."
-  - q: "Can I localise screenshots for multiple languages?"
-    a: "Yes. Mockly's AI translation localises overlaid text in place across the 39 App Store locales and keeps fonts, positioning, and right-to-left scripts. You bring your own API key, the calls go out from your Mac, and nothing passes through a Lagerland server. One project can hold and produce every locale."
+    a: "Mockly has artboard presets for iPhone 6.9-inch and 6.5-inch, iPad, Mac, and Apple Watch, landscape variants, and a 1080×1920 Google Play size. Save Images exports every page as PNG or HEIC at the exact pixel size of the artboard you picked, for the current language or for all of them."
+  - q: "Does Mockly support all App Store languages?"
+    a: "Yes. Mockly lists the 50 App Store Connect languages. Add them one at a time, add them all at once, or search by name. Each language can have its own text, screenshots, images, and background, or follow your source language."
+  - q: "Can I localize screenshots for multiple languages?"
+    a: "Yes. Write the text once in your source language, then translate it with AI Translate using your own OpenAI, Anthropic, or Google key, or export a CSV for a translator and import it back. Text blocks marked Do not translate are skipped. If one language needs a different layout, unlink it from the source and change only that language."
   - q: "Is Mockly a subscription?"
-    a: "No. Mockly is a one-time purchase at {P_APP}, with Family Sharing for up to six members. Subscription tools in this category charge $19 to $49 per month, or $228 to $588 a year. Mockly costs less than a single month of most of them, with no recurring fees and no features held back."
+    a: "No. Mockly is a one-time purchase at {P_APP}, and every editor feature comes with it. AI Translate uses your own OpenAI, Anthropic, or Google key, and your provider bills you for that use."
   - q: "Can I upload directly to App Store Connect?"
-    a: "Yes. Mockly signs in to your App Store Connect account through Apple's secure framework, with credentials kept in macOS Keychain. It then sends each screenshot to the correct device size and locale slot in seconds, without a browser, manual file handling, or a third-party server."
-  - q: "Does Mockly handle App Store Preview videos?"
-    a: "No. Mockly only makes still screenshots, which most visitors see first on an App Store page. App Store Preview video is a separate format with its own recording, encoding, and submission requirements, and we chose to focus on screenshots."
+    a: "Yes. Add your App Store Connect API key (Key ID, Issuer ID, and .p8 file) in Settings. Mockly lists your apps and versions, reads the display type from the artboard, renders the pages, and uploads them for the languages you choose. It replaces the screenshots already in that display type, and it shows the progress of each file and a list of results."
+  - q: "Where does Mockly store my API keys?"
+    a: "In the macOS Keychain on your Mac. Your AI key is sent only to the provider you selected, because that provider needs it to answer the request. Your App Store Connect key is used only to sign requests to Apple. Lagerland Apps runs no server and never sees either key."
+  - q: "Does Mockly handle App Store preview videos?"
+    a: "No. Mockly makes still screenshots and exports them as PNG or HEIC. It has no video or PDF export."
   - q: "Does Mockly work with Fastlane?"
-    a: "Mockly is a GUI alternative to Fastlane snapshot and frameit. If your team has Fastlane fully wired into CI/CD, you may not need Mockly. Most indie developers find Fastlane takes more setup than a tool that comes with templates and a direct upload pipeline. The two can also be used side by side."
+    a: "Mockly is a Mac app you work in by hand, and fastlane snapshot and frameit run from scripts. If your screenshots are captured and framed in CI, you may not need Mockly. If you capture with fastlane and design in Mockly, link the output folder in Mockly once the files follow its naming pattern of language, page, and device."
+  - q: "Does Mockly run on Windows, iPhone, or iPad?"
+    a: "No. Mockly is a Mac app for macOS 14 or later, on Apple Silicon and Intel Macs. It makes screenshots for iPhone, iPad, Mac, and Apple Watch listings, plus a Google Play size."
   - q: "Does Mockly collect any data?"
-    a: "No. Apple's App Privacy nutrition label lists Mockly as collecting zero data. The app has no analytics or telemetry SDKs and needs no account. All project files and pre-release screenshots stay on your Mac, and AI translation calls go straight from your machine using your own API key."
+    a: "No. Mockly needs no account and has no analytics or tracking SDKs, and Lagerland Apps runs no server for it. Projects and settings stay on your Mac, and your keys are kept in its Keychain. Text leaves the Mac only when you run AI Translate, and it goes, with your key, to the provider you chose. Screenshots leave it only when you upload them to App Store Connect."
   - q: "How do Mockly screenshots comply with App Store Review Guidelines §2.3.3?"
-    a: "App Store Review Guidelines §2.3.3 requires screenshots to show the app running on the device, not just illustrations, conceptual mockups, or pre-rendered marketing art that doesn't match how the app behaves. Mockly places your real captured screenshots inside a rendered 3D device frame, so the screen content is the actual app. Overlaid feature copy and background colours are fine under §2.3.3 as long as the screen itself shows the real app. Mockly's default templates stay compliant: text overlays, colour fields, and device frames around real UI captures, with no invented UI."
+    a: "Guideline 2.3.3 asks for screenshots that show the app in use, not only title art, a login page, or a splash screen. In Mockly the screen of each 3D device shows a screenshot you captured from your app, and your text and background sit around it. Whether a set passes review depends on what your screenshots show, and Mockly can't guarantee App Store approval."
   - q: "How does Mockly compare to MockUPhone, LocaShot, Picasso, or AppMockUp?"
-    a: "All four are web-based, each with a different focus. MockUPhone is a free device-mockup generator with no localisation or upload pipeline, so it suits one-off marketing images more than a production screenshot workflow. LocaShot specialises in AI screenshot localisation across 30+ languages but doesn't render 3D device frames the way Mockly does. Picasso emphasises bulk upload to App Store Connect and Google Play with a strong template library, subscription-priced. AppMockUp is a long-standing mockup generator focused on iPhone and a handful of Android devices. Mockly is the only native Mac option with real 3D Metal rendering, on-device translation against your own API key, direct ASC upload, and a one-time price. For a quick free mockup, use MockUPhone. For a SaaS tool with team features, use Picasso. For a native Mac app you buy once, use Mockly."
+    a: "Compare them on the points that matter for your release: where the tool runs, how it's priced, how many App Store languages it handles, and whether it uploads to App Store Connect. Mockly runs on a Mac, costs {P_APP} once with no subscription, holds all 50 App Store languages in one project, translates with your own AI key or a CSV file, renders 3D devices, and uploads to App Store Connect with your API key. Check each of the others on its own site, since features and prices change."
 
 related_apps:
   - appmeta
@@ -240,6 +237,6 @@ support:
 release:
   first_release: "2026-02-01"
   last_updated: "2026-05-27"
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
-Mockly is a native macOS tool for making App Store screenshots with real 3D device frames rendered by Apple's Metal framework. Rendering is deterministic (the on-screen preview matches the export pixel for pixel). It has percentage-based layout positioning that scales across every Apple device size (iPhone 6.9" through 5.5", iPad 13" through 11", Mac 2880×1800, Apple Watch 410×502, and visionOS 3840×2160), AI translation of text in place across 39 App Store Connect locales, multi-language screenshot management, bulk import from folders organised by language, professional templates, and direct upload to App Store Connect with credentials managed by Apple's Keychain. It is made for indie iOS, iPadOS, and macOS developers, studios, and ASO professionals who ship in several markets. Mockly is a one-time purchase at {P_APP} with Family Sharing, while subscription competitors in this category charge $19 to $49 per month. It has no tracking and no data collection, and it never uploads pre-release screenshots to a third-party server. Mockly was formerly called ScreenFlow Studio and was renamed in 2026.
+Mockly is a Mac app for making App Store screenshots, for indie iOS and macOS developers and small studios who ship in several languages. A project is a list of pages, one per screenshot. You place your real screenshots on six 3D device models (iPhone 17 Pro Max, iPad Pro 11-inch and 12.9-inch, MacBook Pro 16-inch, Apple Watch Ultra, and Apple Watch Series 11), add text blocks, image layers, and backgrounds, and keep up to 50 App Store Connect languages in the same project. Each language can follow the source language or carry its own text, screenshots, and layout. Text is translated with AI Translate through your own OpenAI, Anthropic, or Google key, or through a CSV file you export and import. Mockly exports PNG or HEIC files at the exact artboard size and uploads the rendered pages to App Store Connect with your API key, replacing the screenshots already in that display type. It runs on macOS 14 or later, on Apple Silicon and Intel, needs no account, and costs {P_APP} once with no subscription. Mockly was first released as ScreenFlow Studio and renamed in 2026.
