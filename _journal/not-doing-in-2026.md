@@ -12,7 +12,7 @@ seo:
     - "indie developer 2026"
     - "privacy-first apps"
     - "lagerland apps"
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 date: 2026-01-01
 lede: "It's the first day of the year, and all over the internet people are listing what they will build, ship, optimize, and grow. This is a shorter list: what this studio is choosing not to do."
 quick_answer: "Lagerland Apps is choosing not to add advertising SDKs, not to chase a ten-app year, not to bolt streaks or daily-engagement loops onto its catalogue, not to ship fashionable AI features that earn no place, and not to raise outside funding. The plan was to keep the catalogue at fourteen apps and refine what exists; that part didn't hold, and the catalogue has since grown to {APP_COUNT}."
@@ -24,7 +24,7 @@ faq:
   - q: "Will any Lagerland app add a streak counter or daily engagement loop?"
     a: "That was the plan on 1 January 2026, and three apps have since added one: EarnLock has a step-goal streak with a weekly rest day, Millrace pays out extra undos at daily-streak milestones, and WanderWiki added a reading streak with an optional daily reminder. Taskful Day and AfterShift still have no streak, no daily nag, and no social comparison."
   - q: "How many new apps will Lagerland Apps ship in 2026?"
-    a: "The plan in January was few, if any, because fourteen apps already seemed the limit of what one person can support properly. That didn't hold: the catalogue has since grown to {APP_COUNT} apps. AI features will only appear where they earn a place; Observa and Chessful are the existing examples."
+    a: "The plan in January was few, if any, because fourteen apps already seemed the limit of what one person can support properly. That didn't hold: the catalogue has since grown to {APP_COUNT} apps. AI features will only appear where they earn a place. Observa, Chessful, and AfterShift are the existing examples; AfterShift's plain-language explanations of your sleep debt run on-device with Apple Intelligence, in Premium, on iOS 26 or later on a supported iPhone."
 mentioned_apps:
   - taskful-day
   - aftershift
@@ -70,4 +70,4 @@ If that's the kind of studio you want software from, you're in the right place. 
 
 Welcome to 2026.
 
-*Update, 25 October 2026: two of these didn't hold. The catalogue grew this year instead of staying at fourteen, and three apps now have a streak of some kind: EarnLock (a step-goal streak with a weekly rest day), Millrace (extra undos at daily-streak milestones), and WanderWiki (a reading streak with an optional daily reminder). Taskful Day and AfterShift still have none.*
+*Update, 25 October 2026: two of these didn't hold. The catalogue grew this year instead of staying at fourteen, and three apps now have a streak of some kind: EarnLock (a step-goal streak with a weekly rest day), Millrace (extra undos at daily-streak milestones), and WanderWiki (a reading streak with an optional daily reminder). Taskful Day and AfterShift still have none. On AI, AfterShift belongs on that list with Observa and Chessful: in Premium, its plain-language explanations of your sleep debt are written on-device by Apple Intelligence, on iOS 26 or later on a supported iPhone.*

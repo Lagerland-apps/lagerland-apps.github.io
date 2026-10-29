@@ -31,8 +31,8 @@ faq:
     a: "Treat it like the morning after a night shift. The drive home carries real risk: in a study of 2,737 first-year doctors, each extended shift scheduled in a month raised the monthly risk of a crash on the commute home by about 16%. Get a lift or nap before driving if you can, then sleep as soon as you are home. Expect recovery to take more than one night: after five nights of short sleep, one 10-hour recovery night did not fully restore attention in a 2010 lab study."
 mentioned_apps:
   - aftershift
-read_time: "8 min read"
-last_updated: 2026-10-26
+read_time: "7 min read"
+last_updated: 2026-10-29
 ---
 
 On-call work means being available outside your rostered hours, at home or on site, for a call that may or may not come. Doctors, nurses, firefighters, engineers, IT staff and utility crews all do it. The studies below look at people on call overnight; some measured real call-outs, others only the possibility of one.
@@ -93,11 +93,10 @@ If you are on call often and your sleep doesn't recover between stretches, raise
 
 ## Where AfterShift fits
 
-On-call is a shift type in [AfterShift](/apps/aftershift/), and it changes how the app treats the whole window around it. Calendar import recognises event titles such as on call, standby, backup, Bereitschaft or päivystys, and you can mark any shift as on-call yourself. When the window between your shifts contains an on-call shift:
+On-call is one of the four shift types [AfterShift](/apps/aftershift/) starts with, alongside day, evening, and night, and you add on-call shifts to your roster like any other. Once your roster includes on-call time:
 
-- The Shift Recovery Score is capped at 75 and the Sleep Score at 84, so neither can read Excellent. I did that on purpose. The studies above find on-call sleep is worse even before any call comes, and a perfect-looking number in a week of broken nights would be the app claiming to know more than it does.
-- The plan shows a flexible rest window instead of a set main sleep, and the nap suggestion says short naps are often more reliable on call. The short-window warning is switched off, since a short window is normal on call.
-- In Premium, the playbook switches to a standby routine when an on-call shift starts within the next 12 hours: lay out what you'll need and keep the path to the door clear, keep caffeine for the shift, and wind down lightly so you stay easy to wake.
-- Three or more on-call shifts in seven days count as an on-call week, and the app notes that recovery may come more slowly.
+- The Coach tab adds an on-call recovery card. As on any other day, the "Do this now" playbook on the Today tab picks a routine for the window you are in, with short, timed steps.
+- The sleep-debt trend marks on-call weeks with a badge, so you can see how your debt moved during them.
+- With Premium, the Readiness rating for your next shift carries an on-call note, and the Today tab adds a daily on-call tip.
 
-Naps you log count toward the score like any other sleep, which matters on call, where they may be most of what you get. The [methodology page](/apps/aftershift/methodology/) explains the caps, and the [rotating schedules guide](/journal/rotating-shift-schedules-explained/) covers the rosters that on-call weeks usually sit inside.
+Naps are included. The ones Apple Health records and the ones you log yourself count toward the sleep between your shifts, which matters on call, where they may be most of what you get. The [methodology page](/apps/aftershift/methodology/) explains how the scores are built, and the [rotating schedules guide](/journal/rotating-shift-schedules-explained/) covers the rosters that on-call weeks usually sit inside.

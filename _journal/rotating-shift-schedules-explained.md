@@ -31,8 +31,8 @@ faq:
     a: "No single schedule is worst for everyone, and NIOSH says researchers cannot recommend one best design. The features the research links to poorer sleep are backward steps from late shifts to early ones, quick returns of 11 hours or less, weekly rotation, long runs of consecutive nights, start times of 6 a.m. or earlier, and long night shifts. Southern swing, for example, rotates forward but weekly with seven nights in a row; DuPont's tightest point is three day shifts, one day off, then three nights."
 mentioned_apps:
   - aftershift
-read_time: "9 min read"
-last_updated: 2026-10-26
+read_time: "10 min read"
+last_updated: 2026-10-29
 ---
 
 A rotating schedule is a roster in which your shift times change on a repeating cycle, usually so that a fixed number of crews can cover a workplace around the clock. A handful of named patterns cover most of them. The names are used loosely, and two employers can mean different rosters by the same word, so the sequence matters more than the label.
@@ -113,8 +113,8 @@ NIOSH also says nurses adjust better when they have some control over their sche
 
 ## Where AfterShift fits
 
-I built [AfterShift](/apps/aftershift/) for people on these rosters, and it doesn't need to know what your pattern is called. It reads shifts from your calendar, working out from the title and start time whether each is a day, evening, night or on-call shift, or you add them by hand. Then it measures each window from the end of one shift to the start of the next, not a midnight-to-midnight day.
+I built [AfterShift](/apps/aftershift/) for people on these rosters, and it doesn't need to know what your pattern is called. Its rotation builder has presets for a three-shift rotation, 4 on / 4 off, 4 on / 3 off, 2 days / 2 nights, Panama (2-2-3), fixed nights, and fixed days. DuPont, Continental, and Southern swing fit as a custom cycle of 1 to 28 days built from your own shift types. Set the start day once and the app fills the next 8 weeks of your roster and keeps topping it up. You can also add shifts by hand, or import them from your work calendar (one calendar for the next 14 days in the free version; several calendars with automatic sync in Premium). Then it measures each window from the end of one shift to the start of the next, not a midnight-to-midnight day.
 
-Two parts of it are written for the switches above. When your next shift starts earlier on the clock than the last one, a backward step, the plan calls the gap an available sleep window, notes that fast shift changes often shorten continuous sleep, and suggests a nap. When the whole gap is shorter than your sleep target, the Shift Recovery Score is capped at 79, the top of Good, because a full sleep was never possible in that window; days off are exempt. The [methodology page](/apps/aftershift/methodology/) has the weights and caps, and a sleep-debt trend shows which stretches of a cycle left you furthest behind.
+That window is where the switches above show up. The Today tab plans the sleep window before your next shift, with an optional or suggested nap, and the Recovery Timeline draws the last shift, your sleep, your naps, and the next shift on one line. A sleep-debt trend charts your debt cycle by cycle and labels it Building, Stable, or Recovering, so you can see which stretches of a rotation left you furthest behind. With Premium, a Readiness rating tells you how recovered you are for the next shift, and the [methodology page](/apps/aftershift/methodology/) explains how the scores are built.
 
 The app can't change your roster, but it gives you a record of which changeovers cost you the most sleep, which is useful evidence if you ever ask to swap them. The [design post](/journal/building-a-sleep-app-for-night-shifts/) explains why the app measures shift to shift in the first place.

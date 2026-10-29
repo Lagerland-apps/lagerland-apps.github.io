@@ -3,7 +3,7 @@ layout: journal
 slug: how-to-sleep-after-a-night-shift
 title: "How to sleep after a night shift: the drive home, the dark room, the nap and the days off"
 date: 2026-03-21
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 seo:
   title: "How to Sleep After a Night Shift: A Step-by-Step Plan"
   description: "How to sleep after a night shift, from NIOSH guidance: bed soon after you get home, a dark, quiet room, caffeine early, and a nap before the next night."
@@ -107,14 +107,14 @@ Persistent sleep problems should not be ignored, NIOSH says, and a [sleep disord
 
 ## Where AfterShift fits
 
-[AfterShift](/apps/aftershift/) is an iPhone app for people on night, rotating and on-call schedules. It is an informational tracker: it shows what your sleep is doing around your shifts, but it does not diagnose or treat anything, and none of the advice above depends on it. Where it meets that advice:
+[AfterShift](/apps/aftershift/) is an iPhone app for people on night, rotating, and on-call schedules. It is an informational tracker: it shows what your sleep is doing around your shifts, but it does not diagnose or treat anything, and none of the advice above depends on it. Where it meets that advice:
 
-- **It reads your sleep and labels it.** AfterShift reads sleep from Apple Health (it never writes or shares that data) and tells you where each sleep fell: after a night shift, before one, between shifts or on a recovery day.
-- **It shows whether bedroom changes worked.** For each sleep you see time asleep against time in bed, sleep efficiency, the sleep midpoint and whether you slept inside the planned window. If new blackout shades help, that is where it shows.
-- **It plans the next window.** Add your next shift and the Today tab shows a planned sleep window, flags one shorter than six hours, and suggests a short 20 to 30 minute nap when recovery time is tight. If you tell it you can't nap, it stops suggesting nap windows. The long pre-shift naps in the NIOSH table are yours to plan; Log Nap records them and asks how the nap went, including whether you woke up groggy.
-- **It times caffeine against your sleep, not the clock.** Setup asks for your one-way commute and your caffeine sensitivity, which sets a cutoff of 4, 6 or 8 hours before sleep. Caffeine you log from the Today tab is marked good, borderline or late over the last 14 days.
-- **The Coach tab** has short explainers on light, naps, caffeine timing and the daytime sleep environment.
+- **It reads your sleep and places it.** AfterShift reads sleep from Apple Health, naps included, and never writes or shares that data. The Recovery Timeline on the Today tab draws your last shift, your sleep, your naps, and your next shift on one line, so you can see where each sleep fell.
+- **It shows whether bedroom changes worked.** For each sleep you see time asleep against time in bed, sleep efficiency, the sleep midpoint, and whether you slept inside the planned window. If new blackout shades help, that is where it shows.
+- **It plans the next window.** Add your next shift and the Today tab shows the sleep window before it, with an optional or suggested nap. If you tell it you can't nap, it stops sending nap-window reminders. The long pre-shift naps in the NIOSH table are yours to plan; Log Nap records them, can start a 25-minute nap timer on the Lock Screen, and asks how the nap went.
+- **It times caffeine against your next shift, not the clock.** Setup asks for your one-way commute and your caffeine sensitivity. A caffeine cut-off reminder is timed to your next shift, and the cut-off adapts to what you drank and how sensitive you are. You log caffeine from the Today tab in one tap; the caffeine statistics are part of Premium.
+- **The Coach tab** has short explainers on light, naps, caffeine timing, and the daytime sleep environment.
 
-The Shift Recovery Score is built from sleep length, continuity and the timing of your next shift, and like everything else on the screen it is there to inform you; it doesn't judge your sleep. There is no account, and your data stays on your device; the [privacy page](/apps/aftershift/privacy/) has the details, and [the design post](/journal/building-a-sleep-app-for-night-shifts/) explains why the app treats daytime sleep as normal.
+With Premium, each sleep also gets a Shift Recovery Score built from sleep length, continuity, and sleep stages. Like everything else on the screen it is there to inform you; it doesn't judge your sleep. There is no account, and your data stays on your iPhone; the [privacy page](/apps/aftershift/privacy/) has the details, and [the design post](/journal/building-a-sleep-app-for-night-shifts/) explains why the app treats daytime sleep as normal.
 
 The advice itself is free and older than any app: a dark room, early caffeine, a nap before the next night, and a doctor if the sleep still won't come.
