@@ -2,7 +2,7 @@
 layout: default
 permalink: /alternatives/appfigures/
 title: "Appfigures Alternative"
-quick_answer: "AppMeta Pulse is a native iPhone alternative to Appfigures and similar app-analytics dashboards. It reads directly from Apple's App Store Connect API with your own API key, so your data skips any third-party warehouse or shared analytics service. It costs {P_MONTHLY@appmeta-pulse} a month, {P_YEARLY@appmeta-pulse} a year, or {P_LIFETIME@appmeta-pulse} once, with no per-app or per-seat pricing."
+quick_answer: "AppMeta Pulse is a native iPhone alternative to Appfigures and similar app-analytics dashboards. It reads directly from Apple's App Store Connect API with your own API key, so your data skips any third-party warehouse or shared analytics service. It keeps every day of sales it fetches on your iPhone after Apple's roughly one-year window, lets you answer reviews, and has 12 widgets. It doesn't track rankings or keywords. It costs {P_MONTHLY@appmeta-pulse} a month or {P_YEARLY@appmeta-pulse} a year, each starting with a {TRIAL@appmeta-pulse}, or {P_LIFETIME@appmeta-pulse} once, with no per-app or per-seat pricing."
 seo:
   title: "Appfigures Alternative: AppMeta Pulse, Direct from ASC"
   description: "An Appfigures alternative that keeps sales data away from third parties. AppMeta Pulse reads directly from App Store Connect with your own API key."
@@ -15,7 +15,7 @@ seo:
     - indie developer analytics app
     - app subscriptions dashboard iPhone
     - privacy-first developer tools Apple
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "appmeta-pulse" | first -%}
@@ -48,9 +48,9 @@ last_updated: 2026-10-26
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "What is a good native alternative to Appfigures?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is a native iPhone alternative to Appfigures and similar dashboards. It uses your own App Store Connect API key to read directly from App Store Connect's API, so your sales, downloads, subscriptions, and refunds stay out of any third-party data warehouse." } },
-    { "@type": "Question", "name": "Does AppMeta Pulse store my App Store Connect data on a server?", "acceptedAnswer": { "@type": "Answer", "text": "Not on ours. AppMeta Pulse fetches data on your device, using your App Store Connect API key stored in the iOS Keychain. With iCloud Sync on, the data is also kept in your own private iCloud database on Apple's servers, which we can't access. Lagerland Apps never sees your revenue, downloads, or any business data." } },
-    { "@type": "Question", "name": "How much does AppMeta Pulse cost compared to Appfigures?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is {P_MONTHLY@appmeta-pulse} a month, {P_YEARLY@appmeta-pulse} a year, or {P_LIFETIME@appmeta-pulse} once for lifetime access, with a 7-day free trial, and covers every app in your account. Appfigures and similar SaaS dashboards typically charge per-app or per-seat at higher tiers." } },
-    { "@type": "Question", "name": "Does AppMeta Pulse support multiple developer accounts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can switch between any App Store Connect accounts you have access to, which helps indie developers and small teams who manage more than one team." } }
+    { "@type": "Question", "name": "Does AppMeta Pulse store my App Store Connect data on a server?", "acceptedAnswer": { "@type": "Answer", "text": "Not on ours. AppMeta Pulse fetches data on your device, using your App Store Connect API key stored in this iPhone's Keychain. With iCloud Sync on, the data is also kept in your own private iCloud database on Apple's servers, which we can't access. Lagerland Apps never sees your revenue, downloads, or any business data." } },
+    { "@type": "Question", "name": "How much does AppMeta Pulse cost compared to Appfigures?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta Pulse is {P_MONTHLY@appmeta-pulse} a month, {P_YEARLY@appmeta-pulse} a year, or {P_LIFETIME@appmeta-pulse} once for lifetime access, and covers every app in your account. Both subscriptions start with a {TRIAL@appmeta-pulse}. Appfigures and similar SaaS dashboards typically charge per-app or per-seat at higher tiers." } },
+    { "@type": "Question", "name": "Does AppMeta Pulse support multiple developer accounts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can add several App Store Connect accounts and switch between them, which helps if you publish under more than one developer team." } }
   ]
 }
 </script>
@@ -81,15 +81,15 @@ last_updated: 2026-10-26
     </div>
     <div class="card">
       <div class="card-title">Auth model</div>
-      <div class="card-text"><strong>AppMeta Pulse:</strong> Your own App Store Connect API key, stored in the iOS Keychain, talking to App Store Connect directly.<br><br><strong>Appfigures:</strong> OAuth or API-key handoff to their servers, which then poll on your behalf.</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> Your own App Store Connect API key with the Admin role, stored in this iPhone's Keychain and never synced, talking to App Store Connect directly.<br><br><strong>Appfigures:</strong> OAuth or API-key handoff to their servers, which then poll on your behalf.</div>
     </div>
     <div class="card">
-      <div class="card-title">Featureset</div>
-      <div class="card-text"><strong>AppMeta Pulse:</strong> Monitoring dashboard for proceeds and sales, downloads, subscriptions and MRR, and App Store impressions, with 12 widgets. You can also reply to your reviews. It has no rankings or keyword data.<br><br><strong>Appfigures:</strong> Broader, with keyword tracking, competitor data, review monitoring, and historical archives.</div>
+      <div class="card-title">Features</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> Proceeds or sales, downloads, subscribers, trials, churn, and MRR, the App Store funnel (impressions, page views, downloads), and 12 widgets. Reviews from every app in one list, with replies one at a time or up to 25 at once. It has no rankings or keyword data.<br><br><strong>Appfigures:</strong> Broader, with keyword tracking, competitor data, review monitoring, and historical archives.</div>
     </div>
     <div class="card">
       <div class="card-title">Pricing</div>
-      <div class="card-text"><strong>AppMeta Pulse:</strong> {P_MONTHLY@appmeta-pulse}/month, {P_YEARLY@appmeta-pulse}/year, or {P_LIFETIME@appmeta-pulse} lifetime, for every app in your account.<br><br><strong>Appfigures:</strong> Tiered SaaS, scaling with apps and seats.</div>
+      <div class="card-text"><strong>AppMeta Pulse:</strong> {P_MONTHLY@appmeta-pulse}/month or {P_YEARLY@appmeta-pulse}/year after a {TRIAL@appmeta-pulse}, or {P_LIFETIME@appmeta-pulse} lifetime, for every app in your account.<br><br><strong>Appfigures:</strong> Tiered SaaS, scaling with apps and seats.</div>
     </div>
   </div>
 </section>
@@ -103,6 +103,7 @@ last_updated: 2026-10-26
         <li>You're an indie or small team and the dashboard is for you, not a sales org</li>
         <li>You don't want your revenue data sitting in a third-party warehouse</li>
         <li>You check sales on your phone several times a day and want native widgets</li>
+        <li>You want your daily sales history kept after Apple's one-year window, on your own device</li>
         <li>You don't need competitor or keyword tracking</li>
       </ul>
     </div>
@@ -130,16 +131,16 @@ last_updated: 2026-10-26
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
     <details class="faq-item" open><summary>What is a good native alternative to Appfigures?</summary><div class="faq-a">AppMeta Pulse is a native iPhone alternative to Appfigures and similar dashboards. It uses your own App Store Connect API key to read directly from App Store Connect's API, so your sales, downloads, subscriptions, and refunds stay out of any third-party data warehouse.</div></details>
-    <details class="faq-item"><summary>Does AppMeta Pulse store my App Store Connect data on a server?</summary><div class="faq-a">Not on ours. AppMeta Pulse fetches data on your device, using your App Store Connect API key stored in the iOS Keychain. With iCloud Sync on, the data is also kept in your own private iCloud database on Apple's servers, which we can't access. Lagerland Apps never sees your revenue, downloads, or any business data.</div></details>
-    <details class="faq-item"><summary>How much does AppMeta Pulse cost compared to Appfigures?</summary><div class="faq-a">AppMeta Pulse is {P_MONTHLY@appmeta-pulse} a month, {P_YEARLY@appmeta-pulse} a year, or {P_LIFETIME@appmeta-pulse} once for lifetime access, with a 7-day free trial, and covers every app in your account. Appfigures and similar SaaS dashboards typically charge per-app or per-seat at higher tiers.</div></details>
-    <details class="faq-item"><summary>Does AppMeta Pulse support multiple developer accounts?</summary><div class="faq-a">Yes. You can switch between any App Store Connect accounts you have access to, which helps indie developers and small teams who manage more than one team.</div></details>
+    <details class="faq-item"><summary>Does AppMeta Pulse store my App Store Connect data on a server?</summary><div class="faq-a">Not on ours. AppMeta Pulse fetches data on your device, using your App Store Connect API key stored in this iPhone's Keychain. With iCloud Sync on, the data is also kept in your own private iCloud database on Apple's servers, which we can't access. Lagerland Apps never sees your revenue, downloads, or any business data.</div></details>
+    <details class="faq-item"><summary>How much does AppMeta Pulse cost compared to Appfigures?</summary><div class="faq-a">AppMeta Pulse is {P_MONTHLY@appmeta-pulse} a month, {P_YEARLY@appmeta-pulse} a year, or {P_LIFETIME@appmeta-pulse} once for lifetime access, and covers every app in your account. Both subscriptions start with a {TRIAL@appmeta-pulse}. Appfigures and similar SaaS dashboards typically charge per-app or per-seat at higher tiers.</div></details>
+    <details class="faq-item"><summary>Does AppMeta Pulse support multiple developer accounts?</summary><div class="faq-a">Yes. You can add several App Store Connect accounts and switch between them, which helps if you publish under more than one developer team.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Try it</p>
   <h2 class="h2">Open AppMeta Pulse.</h2>
-  <p class="lead">Your sales figures come straight from Apple to your device. From {P_MONTHLY@appmeta-pulse}/month.</p>
+  <p class="lead">Your sales figures come straight from Apple to your iPhone. The free download opens a demo on sample data.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/apps/appmeta-pulse/">Learn about AppMeta Pulse</a>
   </div>

@@ -5,7 +5,7 @@ title: "App Store proceeds vs sales: what each money column in App Store Connect
 date: 2026-07-20
 seo:
   title: "App Store Proceeds vs Sales: What Each Number Means"
-  description: "Sales, proceeds, units, customer price and developer proceeds in App Store Connect, plus Apple's 15% and 30% rates, taxes, refunds, and why reports differ."
+  description: "Sales, proceeds, units, customer price, and developer proceeds in App Store Connect, Apple's 15% and 30% rates, taxes, refunds, and why reports differ."
   keywords:
     - "app store proceeds vs sales"
     - "app store connect proceeds"
@@ -19,9 +19,9 @@ lede: "Sales and Trends shows two money figures side by side, and only one of th
 quick_answer: "In App Store Connect, sales is the amount customers were billed, including any tax Apple collects and remits, and proceeds is what you earn after Apple removes that tax and its commission. Under Apple's standard terms the commission is 30%, or 15% for members of the App Store Small Business Program and for auto-renewable subscriptions after a subscriber's first year of paid service. In the downloadable Sales report, Customer Price and Developer Proceeds are both per unit, so multiply each by Units to get a row's total; refunds have negative Units. Sales and Trends figures are next-day estimates; Payments and Financial Reports hold the final proceeds."
 faq:
   - q: "What is the difference between sales and proceeds in App Store Connect?"
-    a: "Sales is the total billed to customers for your apps, bundles and In-App Purchases, including any taxes Apple collects and remits. Proceeds is what you earn: Apple defines it as the customer price minus applicable taxes and Apple's commission. Under the standard terms proceeds are 70% of the price without tax, or 85% for Small Business Program members and for subscriptions after a subscriber's first year of paid service."
+    a: "Sales is the total billed to customers for your apps, bundles, and In-App Purchases, including any taxes Apple collects and remits. Proceeds is what you earn: Apple defines it as the customer price minus applicable taxes and Apple's commission. Under the standard terms proceeds are 70% of the price without tax, or 85% for Small Business Program members and for subscriptions after a subscriber's first year of paid service."
   - q: "Is Developer Proceeds in the Sales report per unit or per row?"
-    a: "Per unit. Apple labels the column Developer Proceeds (per unit), and Customer Price is also the price per unit. A row with 100 units, a Customer Price of 0.99 and Developer Proceeds of 0.70 means 99.00 in sales and 70.00 in proceeds. Multiply both columns by Units before you add rows together."
+    a: "Per unit. Apple labels the column Developer Proceeds (per unit), and Customer Price is also the price per unit. A row with 100 units, a Customer Price of 0.99, and Developer Proceeds of 0.70 means 99.00 in sales and 70.00 in proceeds. Multiply both columns by Units before you add rows together."
   - q: "What commission does Apple take on App Store sales?"
     a: "Under the standard App Store terms, 30% of the price without tax. Members of the App Store Small Business Program, open to developers with up to 1 million USD in proceeds in the previous calendar year, pay 15%. Auto-renewable subscriptions also drop to 15% once a subscriber has accumulated one year of paid service. Japan and the European Union have separate Apple business terms with their own rates."
   - q: "Why don't Sales and Trends and Payments and Financial Reports match?"
@@ -29,24 +29,24 @@ faq:
   - q: "How do refunds appear in App Store Connect sales reports?"
     a: "In the downloadable Sales report a refund row has negative Units and a negative Customer Price, while Developer Proceeds stays positive, so multiplying proceeds by units gives a negative amount. Sales and Trends includes processed refunds in its daily unit totals, and you can add a filter to see the refund count on its own."
   - q: "Does AppMeta Pulse show proceeds or sales?"
-    a: "Proceeds by default, labelled as Apple's payout after commission. You can switch the main amount to Sales, the full customer price, in Settings, under Display. Pulse reads the daily Sales and Trends reports through the App Store Connect API, so its amounts are next-day figures, not the final numbers in Payments and Financial Reports."
+    a: "Both. The Show Amount setting switches every amount between Proceeds, Apple's payout after commission and tax, and Sales, the full customer price. Pulse reads the daily Sales and Trends reports through the App Store Connect API, so its amounts are next-day figures, not the final numbers in Payments and Financial Reports."
 mentioned_apps:
   - appmeta-pulse
 read_time: "7 min read"
-excerpt: "A reference to the money columns in App Store Connect: units, sales, proceeds, customer price and developer proceeds, the 30% and 15% commission rates, where tax comes out, how refunds appear, and why Sales and Trends never quite matches Payments and Financial Reports."
-last_updated: 2026-10-26
+excerpt: "A reference to the money columns in App Store Connect: units, sales, proceeds, customer price, and developer proceeds, the 30% and 15% commission rates, where tax comes out, how refunds appear, and why Sales and Trends never quite matches Payments and Financial Reports."
+last_updated: 2026-10-29
 ---
 
 Sales is what customers paid. Proceeds is what you keep. In Apple's own words, proceeds are "the Customer Price minus applicable taxes and Apple's commission" ([Apple](https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders/)). Below: which column holds which figure, which rate applies, and why the totals move from one report to the next.
 
 ## What does each number in App Store Connect mean?
 
-Paraphrasing Apple's definitions for [Sales and Trends](https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders/), the [Summary Sales Report](https://developer.apple.com/help/app-store-connect/reference/summary-sales-report) and the [financial reports](https://developer.apple.com/help/app-store-connect/reference/financial-report-fields/):
+Paraphrasing Apple's definitions for [Sales and Trends](https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders/), the [Summary Sales Report](https://developer.apple.com/help/app-store-connect/reference/summary-sales-report), and the [financial reports](https://developer.apple.com/help/app-store-connect/reference/financial-report-fields/):
 
 | Term | Where it appears | What it counts | Tax included | Commission removed |
 |---|---|---|---|---|
 | Units | Sales and Trends, Sales report | First-time purchases of an app or bundle, plus In-App Purchases. Sales and Trends leaves out updates and redownloads unless you filter them in. Refunds count as negative units | n/a | n/a |
-| Sales | Sales and Trends | The total billed to customers for apps, bundles and In-App Purchases | Yes, taxes Apple collects and remits | No |
+| Sales | Sales and Trends | The total billed to customers for apps, bundles, and In-App Purchases | Yes, taxes Apple collects and remits | No |
 | Proceeds | Sales and Trends | What you earn on those sales, as an estimate until the financial reports close | No | Yes |
 | Customer Price | Sales report | The price per unit billed to the customer; negative on refund rows | Yes | No |
 | Developer Proceeds | Sales report | What you receive per unit; stays positive on refund rows | No | Yes |
@@ -111,12 +111,12 @@ Apple's short answer is that Sales and Trends provides next-day data, while Paym
 - Sales and Trends records a transaction when the customer starts it. Financial reports include only settled transactions where Apple collected the payment, so a purchase late in one month can land in the next fiscal month, and a payment Apple never collects never appears.
 - Financial reports follow Apple's fiscal calendar, whose months run Sunday to Saturday and don't line up with calendar months. Sales and Trends reports use Pacific Time days.
 - Sales and Trends estimates USD amounts from a rolling average of the previous month's exchange rates. Financial reports use the rate that converts each currency to your bank account's currency.
-- Taxes, adjustments and withholding appear only on the financial side.
+- Taxes, adjustments, and withholding appear only on the financial side.
 
 Use Sales and Trends to see direction: which app sold, in which country, this week against last. Use the financial reports when the number has to match a bank statement.
 
 ## Where AppMeta Pulse fits
 
-[AppMeta Pulse](/apps/appmeta-pulse/) is the iPhone dashboard I built for the daily look at these numbers. It downloads the daily Sales report and the subscription reports through the App Store Connect API with a key you create, and keeps Apple's names for things. The main amount is Proceeds by default, described in the app as Apple's payout after commission; in Settings, under Display, you can switch it to Sales, the full customer price. Refunds are counted from rows with negative units. Each row is converted from its own currency into the display currency you pick, using the European Central Bank's monthly average rates.
+[AppMeta Pulse](/apps/appmeta-pulse/) is the iPhone dashboard I built for the daily look at these numbers. It downloads the daily Sales report and the subscription reports through the App Store Connect API with a key you create, keeps every day it fetches on the iPhone, and keeps Apple's names for things. The Show Amount setting switches every amount between Proceeds, Apple's payout after commission and tax, and Sales, the full customer price. Units count first-time downloads net of refunds. Each row is converted from its own currency into the display currency you pick, using the European Central Bank's monthly average rates, so converted amounts are estimates.
 
 Pulse reads Sales and Trends, not Payments and Financial Reports. Its figures are next-day numbers with the same caveats as the Sales and Trends page itself. For subscription revenue on a monthly footing, the earlier post on [calculating MRR from the Subscription report](/journal/how-to-calculate-mrr-for-app-store-subscriptions/) covers the formula, and [this post](/journal/read-only-revenue-on-the-iphone/) explains why a quick revenue check belongs on the phone.

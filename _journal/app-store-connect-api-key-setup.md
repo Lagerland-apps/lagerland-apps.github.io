@@ -14,11 +14,11 @@ seo:
     - "app store connect team key vs individual key"
     - "app store connect api jwt"
     - "appmeta"
-lede: "Every tool that talks to App Store Connect on your behalf, from fastlane to a Mac client like mine, starts with the same three things: an Issuer ID, a Key ID and a .p8 file. Creating them takes two minutes. Choosing the right kind of key and the right role is where people go wrong, and the .p8 download gives you exactly one chance."
-quick_answer: "To create an App Store Connect API key, the Account Holder first requests API access once, in Users and Access > Integrations > App Store Connect API. After that, an Account Holder or Admin opens Team Keys, clicks Generate API Key (or + if a key already exists), names the key, picks its role under Access and clicks Generate. Download the .p8 private key straight away: the link works once and Apple keeps no copy. A tool then needs the Issuer ID (shown at the top of that page, the same for every team key), the Key ID (listed next to the key) and the .p8 file. Individual keys are generated from your own profile, carry only your own access, have no Issuer ID, and can't use provisioning, Sales and Finance or notaryTool. You revoke a key on the same page, and a revoked key can't be reinstated."
+lede: "Every tool that talks to App Store Connect on your behalf, from fastlane to a Mac client like mine, starts with the same three things: an Issuer ID, a Key ID, and a .p8 file. Creating them takes two minutes. Choosing the right kind of key and the right role is where people go wrong, and the .p8 download gives you exactly one chance."
+quick_answer: "To create an App Store Connect API key, the Account Holder first requests API access once, in Users and Access > Integrations > App Store Connect API. After that, an Account Holder or Admin opens Team Keys, clicks Generate API Key (or + if a key already exists), names the key, picks its role under Access, and clicks Generate. Download the .p8 private key straight away: the link works once and Apple keeps no copy. A tool then needs the Issuer ID (shown at the top of that page, the same for every team key), the Key ID (listed next to the key), and the .p8 file. Individual keys are generated from your own profile, carry only your own access, have no Issuer ID, and can't use provisioning, Sales and Finance, or notaryTool. You revoke a key on the same page, and a revoked key can't be reinstated."
 faq:
   - q: "How do I create an App Store Connect API key?"
-    a: "Sign in as the Account Holder or an Admin, go to Users and Access, open Integrations and select App Store Connect API, then Team Keys. Click Generate API Key, or the + button if you already have a key, enter a name, choose a role under Access and click Generate. Then click Download API Key to save the .p8 file, and copy the Issuer ID from the top of the page and the Key ID from the key's row. The very first time, the Account Holder has to click Request Access and accept the terms before any key can be made."
+    a: "Sign in as the Account Holder or an Admin, go to Users and Access, open Integrations and select App Store Connect API, then Team Keys. Click Generate API Key, or the + button if you already have a key, enter a name, choose a role under Access, and click Generate. Then click Download API Key to save the .p8 file, and copy the Issuer ID from the top of the page and the Key ID from the key's row. The very first time, the Account Holder has to click Request Access and accept the terms before any key can be made."
   - q: "What is the difference between a team key and an individual key?"
     a: "A team key covers every app in the account, with the permissions of the role you pick when you create it, and its tokens use the Issuer ID. An individual key carries the access and roles of the user who created it, uses sub: user instead of an Issuer ID in its tokens, and can't use the provisioning endpoints, Sales and Finance, or notaryTool. Each user can have one active individual key at a time."
   - q: "Where do I find my App Store Connect Issuer ID and Key ID?"
@@ -26,14 +26,14 @@ faq:
   - q: "What if I lost my .p8 file?"
     a: "Generate a new key and revoke the old one. Apple lets you download the private key once, the download link disappears afterwards, and Apple doesn't keep a copy, so there is no way to download it again."
   - q: "Which role should an App Store Connect API key have?"
-    a: "The least that covers the tool's job. You can't change a key's role later, so decide before you click Generate. Per Apple's permissions table, App Manager can create versions, edit App Store details, submit apps and manage TestFlight, In-App Purchases and Game Center, but can't reply to customer reviews or view Sales and Trends. Sales and Finance can read reports but not edit metadata. Admin can do all of it, and Apple notes that a key with the Admin role can also create and delete users."
+    a: "The least that covers the tool's job. You can't change a key's role later, so decide before you click Generate. Per Apple's permissions table, App Manager can create versions, edit App Store details, submit apps, and manage TestFlight, In-App Purchases, and Game Center, but can't reply to customer reviews or view Sales and Trends. Sales and Finance can read reports but not edit metadata. Admin can do all of it, and Apple notes that a key with the Admin role can also create and delete users."
   - q: "How long does an App Store Connect API token last?"
     a: "For most requests, at most 20 minutes. Apple rejects tokens whose lifetime, exp minus iat, is longer than that, except for a short list of read-only resources that accept scoped tokens for up to six months. Apple also recommends reusing one signed token for many requests until it expires, instead of signing a new token for each request."
 mentioned_apps:
   - appmeta
 read_time: "7 min read"
 excerpt: "A step-by-step reference for App Store Connect API keys: requesting access, team keys versus individual keys, which role to choose, where the Issuer ID and Key ID live, why the .p8 downloads only once, how to store and revoke a key, and what the JWT signed with it contains."
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 An App Store Connect API key is a key pair. Apple keeps the public half; you download the private half as a `.p8` file and use it to sign the short-lived tokens that every API request carries. A tool will ask you for four things, listed below with where each one lives.
@@ -55,7 +55,7 @@ Apple offers two kinds, and picking the wrong one causes more trouble than any o
 
 | | Team key | Individual key |
 |---|---|---|
-| Who can create it | Account Holder or Admin | Most users, from their own profile (Account Holder, Admin, App Manager, Customer Support, Developer or Marketing), unless an Admin removed that permission |
+| Who can create it | Account Holder or Admin | Most users, from their own profile (Account Holder, Admin, App Manager, Customer Support, Developer, or Marketing), unless an Admin removed that permission |
 | Access | All apps in the account, with the role you pick; app access can't be limited | The apps and roles of the user who made it |
 | Can't use | Only what its role rules out | Provisioning endpoints, Sales and Finance, notaryTool |
 | How many | Several; Apple lets you generate multiple | One active key per user |
@@ -91,11 +91,11 @@ The roles for keys are the same ones you give people on your team. The rows belo
 | Sales | No | No | No | Yes |
 | Finance | No | No | No | Yes |
 
-Pick the smallest role that covers the job. A screenshot or metadata tool fits App Manager. A revenue dashboard fits Sales or Finance. A tool that edits metadata, replies to reviews and reads sales needs Admin, and Apple's docs single that role out: an Admin key can create and delete users. Keep that file somewhere better than your Downloads folder.
+Pick the smallest role that covers the job. A screenshot or metadata tool fits App Manager. A revenue dashboard fits Sales or Finance. A tool that edits metadata, replies to reviews, and reads sales needs Admin, and Apple's docs single that role out: an Admin key can create and delete users. Keep that file somewhere better than your Downloads folder.
 
 ## Where should the .p8 file live?
 
-Apple's guidance is short. Treat the private key like a password; don't share it, store it in a code repository or ship it in client-side code; and revoke it at once if it's lost or exposed. Apple keeps no copy, so the file you downloaded is the only one.
+Apple's guidance is short. Treat the private key like a password; don't share it, store it in a code repository, or ship it in client-side code; and revoke it at once if it's lost or exposed. Apple keeps no copy, so the file you downloaded is the only one.
 
 In practice that means a password manager, the macOS Keychain, or your CI provider's secret store, and then deleting the stray copy in Downloads. One key per tool helps too. Apple lets you generate multiple team keys, and if each tool has its own, revoking one doesn't take the others down with it.
 
@@ -111,7 +111,7 @@ Revoke a key when a laptop holding the file is lost, when someone who had a copy
 
 ## What is a JWT, in one paragraph?
 
-The API never sees your `.p8` file. Each request carries a JSON Web Token ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that the tool builds and signs on your machine: a header saying it's signed with ES256 and naming your Key ID (`kid`), and a payload with your Issuer ID (`iss`), the time it was issued (`iat`), its expiry (`exp`) and the audience `appstoreconnect-v1`, optionally narrowed with a `scope` list of allowed requests. Apple checks the signature against the public half it kept, so a valid signature proves the request came from whoever holds the private key. Tokens with a lifetime over 20 minutes are rejected for most requests, and Apple suggests reusing one token across requests until it expires ([Generating Tokens for API Requests](https://developer.apple.com/documentation/appstoreconnectapi/generating-tokens-for-api-requests)).
+The API never sees your `.p8` file. Each request carries a JSON Web Token ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that the tool builds and signs on your machine: a header saying it's signed with ES256 and naming your Key ID (`kid`), and a payload with your Issuer ID (`iss`), the time it was issued (`iat`), its expiry (`exp`), and the audience `appstoreconnect-v1`, optionally narrowed with a `scope` list of allowed requests. Apple checks the signature against the public half it kept, so a valid signature proves the request came from whoever holds the private key. Tokens with a lifetime over 20 minutes are rejected for most requests, and Apple suggests reusing one token across requests until it expires ([Generating Tokens for API Requests](https://developer.apple.com/documentation/appstoreconnectapi/generating-tokens-for-api-requests)).
 
 ```
 Header:  { "alg": "ES256", "kid": "2X9R4HXF34", "typ": "JWT" }
@@ -128,8 +128,8 @@ A token App Store Connect won't accept usually comes back as 401 with the code `
 
 ## How AppMeta uses your key
 
-[AppMeta](/apps/appmeta/), the Mac client for App Store Connect I [wrote about in February](/journal/native-mac-client-for-app-store-connect/), takes a team key: it asks for the Issuer ID, the Key ID and the `.p8` file, so individual keys, which have no Issuer ID, don't fit it. Before it saves anything it signs a token and asks App Store Connect for your app list, so a mismatched ID or a revoked key shows up as an error on the setup screen, before you've saved anything.
+[AppMeta](/apps/appmeta/), the Mac client for App Store Connect I [wrote about in February](/journal/native-mac-client-for-app-store-connect/), takes a team key: it asks for the Issuer ID, the Key ID, and the `.p8` file, so individual keys, which have no Issuer ID, don't fit it. Validate Connection tests the key before AppMeta saves it, so a mismatched ID or a revoked key shows up as an error on the setup screen.
 
-The three values go into the macOS Keychain as items that stay on that Mac and don't sync through iCloud. AppMeta signs 20-minute ES256 tokens locally and reuses each one until it's about two minutes from expiring, and the only server it sends them to is `api.appstoreconnect.apple.com`. Removing the account in AppMeta deletes the Keychain items.
+The three values go into the macOS Keychain as items that stay on that Mac and don't sync through iCloud. AppMeta signs short-lived ES256 tokens on the Mac and sends them to App Store Connect; the `.p8` itself never leaves the Mac, and there is no AppMeta server in between.
 
 For the role: App Manager covers editing metadata in every localization, the [keyword field](/journal/app-store-keyword-field-100-characters/) included, plus creating and submitting versions. Replying to reviews and the sales views need a role that allows them, and for a single key that means Admin. If you'd rather keep revenue on a separate key, the [AppMeta Pulse API access page](/apps/appmeta-pulse/api-access/) lists the endpoints Pulse calls and the role it asks for.

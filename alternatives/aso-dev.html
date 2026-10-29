@@ -2,10 +2,10 @@
 layout: default
 permalink: /alternatives/aso-dev/
 title: "ASO.dev Alternative"
-quick_answer: "ASO.dev is a subscription App Store Connect client plus keyword-ranking service, with apps for Mac, iPhone, iPad, Windows, Linux and Android. It's priced per seat, from $15/month billed yearly for Console and $29/month billed yearly for Indie with keyword rankings. AppMeta is a Mac-only editor at {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime that adds Game Center editing and on-device AI but doesn't track rankings. If you need rank history, competitor keywords or a team on other platforms, pick ASO.dev."
+quick_answer: "ASO.dev is a subscription App Store Connect client plus keyword-ranking service, with apps for Mac, iPhone, iPad, Windows, Linux, and Android. It's priced per seat, from $15/month billed yearly for Console and $29/month billed yearly for Indie with keyword rankings. AppMeta is a Mac-only editor at {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime. It shows a field-level diff against the live listing before each push, edits Game Center, and can run its AI through Apple Intelligence on your Mac or a local model, but it doesn't track rankings. If you need rank history, competitor keywords, or a team on other platforms, pick ASO.dev."
 seo:
   title: "ASO.dev Alternative: AppMeta, Lifetime Option for ASC on Mac"
-  description: "ASO.dev alternative with no per-seat subscription. AppMeta edits App Store Connect metadata, IAPs and Game Center on Mac: {P_YEARLY@appmeta}/yr or {P_LIFETIME@appmeta} lifetime."
+  description: "ASO.dev alternative without per-seat pricing. AppMeta edits App Store Connect metadata, IAPs, and Game Center on Mac, with a lifetime option."
   keywords:
     - aso.dev alternative
     - aso.dev vs appmeta
@@ -13,7 +13,7 @@ seo:
     - aso tool lifetime purchase
     - app store metadata editor mac
     - keyword difficulty mac app
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "appmeta" | first -%}
@@ -45,12 +45,12 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is a cheaper alternative to ASO.dev?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta costs {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime for one person, against ASO.dev's per-seat subscriptions starting at $180/year for the Console tier. You get App Store Connect editing across 50 locales, In-App Purchases, Game Center, TestFlight and reviews. You don't get ASO.dev's keyword rank tracking, team seats or Google Play support." } },
-    { "@type": "Question", "name": "How much does ASO.dev cost?", "acceptedAnswer": { "@type": "Answer", "text": "On 25 October 2026 ASO.dev's pricing page listed, per seat and excluding VAT: Console $15/month billed yearly ($180/year), Indie $29/month billed yearly ($348/year), Pro $69/month billed yearly ($828/year) and Marketing $149/month billed yearly. Paying month to month costs more. There's a 3-day trial and no free tier, so check current pricing before you buy." } },
-    { "@type": "Question", "name": "Does AppMeta track keyword rankings like ASO.dev?", "acceptedAnswer": { "@type": "Answer", "text": "No. AppMeta checks your own metadata on-device (wasted characters, repeated words, storefront coverage gaps) and estimates difficulty and opportunity from live App Store search results and Apple's search suggestions. It doesn't store ranking history or track competitors' keywords. If you need rank tracking, ASO.dev's Indie tier or a dedicated ASO platform fits better." } },
-    { "@type": "Question", "name": "Is ASO.dev available on Windows or iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. ASO.dev offers a Mac app (App Store or direct download), an iPhone and iPad app, Windows and Linux builds and an Android app. It has no web version by design. AppMeta runs only on macOS 14 or later." } },
-    { "@type": "Question", "name": "Where do ASO.dev and AppMeta keep my App Store Connect key?", "acceptedAnswer": { "@type": "Answer", "text": "Both keep it on your device. ASO.dev says keys are stored locally and requests go straight from your device to Apple, with optional encrypted key sync for teams. AppMeta stores the key in the Mac Keychain as a this-device-only item that never syncs, and there's no Lagerland server in between." } },
-    { "@type": "Question", "name": "Does ASO.dev support Game Center?", "acceptedAnswer": { "@type": "Answer", "text": "Game Center isn't listed on ASO.dev's pricing or feature pages as of October 2026. AppMeta creates and edits Game Center achievements, leaderboards and leaderboard sets with the same per-locale workflow it uses for your listing." } }
+    { "@type": "Question", "name": "What is a cheaper alternative to ASO.dev?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta costs {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime for one person, against ASO.dev's per-seat subscriptions starting at $180/year for the Console tier. You get App Store Connect editing across 50 locales with a diff before each push, In-App Purchases, Game Center, TestFlight, and reviews. You don't get ASO.dev's keyword rank tracking, team seats, or Google Play support." } },
+    { "@type": "Question", "name": "How much does ASO.dev cost?", "acceptedAnswer": { "@type": "Answer", "text": "On 25 October 2026 ASO.dev's pricing page listed, per seat and excluding VAT: Console $15/month billed yearly ($180/year), Indie $29/month billed yearly ($348/year), Pro $69/month billed yearly ($828/year), and Marketing $149/month billed yearly. Paying month to month costs more. There's a 3-day trial and no free tier, so check current pricing before you buy." } },
+    { "@type": "Question", "name": "Does AppMeta track keyword rankings like ASO.dev?", "acceptedAnswer": { "@type": "Answer", "text": "No. AppMeta checks your own metadata on your Mac (wasted characters, repeated words, storefront coverage) and, when you turn live research on, estimates difficulty and opportunity from live App Store search results and Apple's search suggestions, with the apps and numbers behind each score listed. It doesn't store ranking history or track competitors' keywords. If you need rank tracking, ASO.dev's Indie tier or a dedicated ASO platform fits better." } },
+    { "@type": "Question", "name": "Is ASO.dev available on Windows or iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. ASO.dev offers a Mac app (App Store or direct download), an iPhone and iPad app, Windows and Linux builds, and an Android app. It has no web version by design. AppMeta runs only on macOS 14 or later." } },
+    { "@type": "Question", "name": "Where do ASO.dev and AppMeta keep my App Store Connect key?", "acceptedAnswer": { "@type": "Answer", "text": "Both keep it on your device. ASO.dev says keys are stored locally and requests go straight from your device to Apple, with optional encrypted key sync for teams. AppMeta stores the key in the Mac Keychain as a this-device-only item that never syncs, and there's no AppMeta server in between." } },
+    { "@type": "Question", "name": "Does ASO.dev support Game Center?", "acceptedAnswer": { "@type": "Answer", "text": "Game Center isn't listed on ASO.dev's pricing or feature pages as of October 2026. AppMeta creates and edits Game Center achievements, leaderboards, and leaderboard sets with localized text, in the same app you use for your listing." } }
   ]
 }
 </script>
@@ -59,7 +59,7 @@ last_updated: 2026-10-26
   <div class="hero-left reveal">
     <p class="overline">App Store Connect + ASO · Subscription vs lifetime option</p>
     <h1 class="h1">An ASO.dev alternative<br><span class="gradient-text">if you mostly edit and rarely track.</span></h1>
-    <p class="lead">ASO.dev bundles a lot: an App Store Connect client, keyword rank tracking, competitor research, product page tests, Google Play support, and apps for Mac, iPhone, iPad, Windows, Linux and Android, priced per seat by subscription. AppMeta is smaller and Mac-only. It edits listings, in-app purchases, Game Center, TestFlight and reviews, has keyword difficulty checks but no rank tracking, and costs {P_YEARLY@appmeta} a year or {P_LIFETIME@appmeta} once.</p>
+    <p class="lead">ASO.dev bundles a lot: an App Store Connect client, keyword rank tracking, competitor research, product page tests, Google Play support, and apps for Mac, iPhone, iPad, Windows, Linux, and Android, priced per seat by subscription. AppMeta is smaller and Mac-only. It edits listings, in-app purchases, Game Center, TestFlight, and reviews, shows a diff before each listing push, has keyword difficulty checks but no rank tracking, and costs {P_YEARLY@appmeta} a year or {P_LIFETIME@appmeta} once.</p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/appmeta/">See AppMeta</a>
       <a class="btn btn-secondary" href="#compare">Compare</a>
@@ -75,23 +75,23 @@ last_updated: 2026-10-26
   <div class="grid grid-2 stagger">
     <div class="card">
       <div class="card-title">Pricing</div>
-      <div class="card-text"><strong>AppMeta:</strong> {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime, restored on every Mac signed in with the same Apple ID.<br><br><strong>ASO.dev:</strong> Per seat, excluding VAT. Console (no keyword tools) is $15/month billed yearly ($180/year). Indie, which adds keyword rankings, is $29/month billed yearly ($348/year). Monthly billing costs more. 3-day trial, no free tier.</div>
+      <div class="card-text"><strong>AppMeta:</strong> {P_YEARLY@appmeta}/year, starting with a {TRIAL@appmeta}, or {P_LIFETIME@appmeta} lifetime. Restore your purchase from Settings.<br><br><strong>ASO.dev:</strong> Per seat, excluding VAT. Console (no keyword tools) is $15/month billed yearly ($180/year). Indie, which adds keyword rankings, is $29/month billed yearly ($348/year). Monthly billing costs more. 3-day trial, no free tier.</div>
     </div>
     <div class="card">
       <div class="card-title">Keyword data</div>
-      <div class="card-text"><strong>AppMeta:</strong> On-device checks for wasted characters, repeated words and storefront coverage gaps. Live difficulty and opportunity estimates from App Store search results and Apple's search suggestions, plus popularity if you connect your own Apple Ads account. No ranking history.<br><br><strong>ASO.dev:</strong> On Indie and up: rankings checked every 4 hours with 30 or 60 days of history, competitor keywords and a keyword explorer. Apple Ads insights are on the Marketing tier.</div>
+      <div class="card-text"><strong>AppMeta:</strong> Checks on your Mac for wasted characters, repeated words, and coverage across 57 storefronts. Live difficulty (0 to 100, from the top ten apps for a phrase, with the evidence listed) and demand from Apple's search suggestions, plus popularity if you connect your own Apple Ads account. It keeps no ranking history.<br><br><strong>ASO.dev:</strong> On Indie and up: rankings checked every 4 hours with 30 or 60 days of history, competitor keywords, and a keyword explorer. Apple Ads insights are on the Marketing tier.</div>
     </div>
     <div class="card">
       <div class="card-title">Platforms</div>
-      <div class="card-text"><strong>AppMeta:</strong> Mac only, macOS 14 Sonoma or later.<br><br><strong>ASO.dev:</strong> Mac (App Store or DMG), iPhone and iPad, Windows, Linux and Android. There's deliberately no web app.</div>
+      <div class="card-text"><strong>AppMeta:</strong> Mac only, macOS 14 Sonoma or later.<br><br><strong>ASO.dev:</strong> Mac (App Store or DMG), iPhone and iPad, Windows, Linux, and Android. There's deliberately no web app.</div>
     </div>
     <div class="card">
       <div class="card-title">App Store Connect coverage</div>
-      <div class="card-text"><strong>AppMeta:</strong> 50 locales side by side, In-App Purchases and subscriptions, Game Center, TestFlight, reviews and submission.<br><br><strong>ASO.dev:</strong> Metadata and bulk editors for 50 locales, In-App Purchases and subscriptions with purchasing-power pricing, TestFlight, reviews, certificates and profiles, product page tests and Google Play. Game Center isn't listed.</div>
+      <div class="card-text"><strong>AppMeta:</strong> 50 locales side by side with a field-level diff before each push, In-App Purchases and subscriptions, Game Center, TestFlight, reviews, and submission.<br><br><strong>ASO.dev:</strong> Metadata and bulk editors for 50 locales, In-App Purchases and subscriptions with purchasing-power pricing, TestFlight, reviews, certificates and profiles, product page tests, and Google Play. Game Center isn't listed.</div>
     </div>
     <div class="card">
       <div class="card-title">AI and translation</div>
-      <div class="card-text"><strong>AppMeta:</strong> Your own key for Anthropic, OpenAI or Google, a local model through Ollama or LM Studio, or Apple Intelligence on-device on macOS 26.<br><br><strong>ASO.dev:</strong> Bulk translation through Google Translate by default, or DeepL, ChatGPT or Claude with your own keys. AI review replies, and a local MCP server for AI assistants.</div>
+      <div class="card-text"><strong>AppMeta:</strong> Your own key for Anthropic, OpenAI, or Google, a local model through Ollama or LM Studio, or Apple Intelligence on your Mac (macOS 26 on a Mac that supports it). AppMeta sells no AI usage.<br><br><strong>ASO.dev:</strong> Bulk translation through Google Translate by default, or DeepL, ChatGPT, or Claude with your own keys. AI review replies, and a local MCP server for AI assistants.</div>
     </div>
     <div class="card">
       <div class="card-title">Teams</div>
@@ -113,26 +113,26 @@ last_updated: 2026-10-26
         </tr>
       </thead>
       <tbody>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Platforms</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Mac</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Mac, iPhone, iPad, Windows, Linux, Android</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Platforms</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Mac</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Mac, iPhone, iPad, Windows, Linux, and Android</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Price</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">{P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Per seat: $180/yr Console, $348/yr Indie, $828/yr Pro (billed yearly)</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Free option</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Demo mode with sample data</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">3-day trial</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Listing metadata across locales</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">50 locales, side by side</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">50 locales, bulk editor and cross-locale table</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Free option</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Demo Mode on sample data; Yearly starts with a {TRIAL@appmeta}</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">3-day trial</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Listing metadata across locales</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">50 locales side by side, diff before each push</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">50 locales, bulk editor and cross-locale table</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>In-App Purchases and subscriptions</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, with purchasing-power pricing</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Game Center</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Achievements, leaderboards, leaderboard sets</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Not listed</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>TestFlight</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Customer reviews</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Read, reply, filter by rating</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Reply, bulk reply, AI replies</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Customer reviews</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Read, reply, delete a reply, filter by rating</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Reply, bulk reply, AI replies</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Keyword rank tracking</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes (Indie and up)</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Keyword difficulty and insights</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Live difficulty estimates from App Store search</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Keyword insights (Indie and up)</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Keyword difficulty and insights</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Live difficulty and demand estimates, evidence listed</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Keyword insights (Indie and up)</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Product page tests / custom product pages</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes (custom product pages on Pro)</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Google Play</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Team seats and permissions</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>MCP server</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, local</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>AI / translation</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Anthropic, OpenAI, Google, local models, Apple Intelligence</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Google Translate, DeepL, ChatGPT, Claude</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>AI / translation</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Anthropic, OpenAI, Google, local models, and Apple Intelligence</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Google Translate, DeepL, ChatGPT, and Claude</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);"><strong>Credential storage</strong></td><td style="padding:var(--s-3) var(--s-4);">Mac Keychain, this device only</td><td style="padding:var(--s-3) var(--s-4);">On device; optional encrypted sync for teams</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="testimonials-footnote" style="margin-top:var(--s-3);">ASO.dev details were checked on 25 October 2026 against aso.dev, its pricing, download and security pages, and its App Store listing. Prices are per seat and exclude VAT; check current pricing before you buy.</p>
+  <p class="testimonials-footnote" style="margin-top:var(--s-3);">ASO.dev details were checked on 25 October 2026 against aso.dev, its pricing, download, and security pages, and its App Store listing. Prices are per seat and exclude VAT; check current pricing before you buy.</p>
 </section>
 
 <section class="section reveal">
@@ -141,11 +141,11 @@ last_updated: 2026-10-26
     <div class="card">
       <div class="card-title">Pick AppMeta if…</div>
       <ul class="bullets">
-        <li>You're a solo developer who mostly edits listings, in-app purchases and Game Center</li>
+        <li>You're a solo developer who mostly edits listings, in-app purchases, and Game Center</li>
+        <li>You want to see each changed field next to its live value before you push</li>
         <li>You'd rather pay once than per seat every month</li>
         <li>Difficulty estimates are enough and you don't need ranking history</li>
         <li>You want AI that stays on the Mac, through Apple Intelligence or a local model</li>
-        <li>You work on a Mac anyway</li>
       </ul>
     </div>
     <div class="card">
@@ -154,8 +154,8 @@ last_updated: 2026-10-26
         <li>You need keyword rank tracking and competitor keyword data</li>
         <li>You work in a team that needs seats and permissions</li>
         <li>You also publish on Google Play</li>
-        <li>You want product page tests, custom product pages or certificates in the same app</li>
-        <li>You need Windows, Linux or a phone app</li>
+        <li>You want product page tests, custom product pages, or certificates in the same app</li>
+        <li>You need Windows, Linux, or a phone app</li>
       </ul>
     </div>
   </div>
@@ -173,12 +173,12 @@ last_updated: 2026-10-26
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>What is a cheaper alternative to ASO.dev?</summary><div class="faq-a">AppMeta costs {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime for one person, against ASO.dev's per-seat subscriptions starting at $180/year for the Console tier. You get App Store Connect editing across 50 locales, In-App Purchases, Game Center, TestFlight and reviews. You don't get ASO.dev's keyword rank tracking, team seats or Google Play support.</div></details>
-    <details class="faq-item"><summary>How much does ASO.dev cost?</summary><div class="faq-a">On 25 October 2026 ASO.dev's pricing page listed, per seat and excluding VAT: Console $15/month billed yearly ($180/year), Indie $29/month billed yearly ($348/year), Pro $69/month billed yearly ($828/year) and Marketing $149/month billed yearly. Paying month to month costs more. There's a 3-day trial and no free tier, so check current pricing before you buy.</div></details>
-    <details class="faq-item"><summary>Does AppMeta track keyword rankings like ASO.dev?</summary><div class="faq-a">No. AppMeta checks your own metadata on-device (wasted characters, repeated words, storefront coverage gaps) and estimates difficulty and opportunity from live App Store search results and Apple's search suggestions. It doesn't store ranking history or track competitors' keywords. If you need rank tracking, ASO.dev's Indie tier or a dedicated ASO platform fits better.</div></details>
-    <details class="faq-item"><summary>Is ASO.dev available on Windows or iPhone?</summary><div class="faq-a">Yes. ASO.dev offers a Mac app (App Store or direct download), an iPhone and iPad app, Windows and Linux builds and an Android app. It has no web version by design. AppMeta runs only on macOS 14 or later.</div></details>
-    <details class="faq-item"><summary>Where do ASO.dev and AppMeta keep my App Store Connect key?</summary><div class="faq-a">Both keep it on your device. ASO.dev says keys are stored locally and requests go straight from your device to Apple, with optional encrypted key sync for teams. AppMeta stores the key in the Mac Keychain as a this-device-only item that never syncs, and there's no Lagerland server in between.</div></details>
-    <details class="faq-item"><summary>Does ASO.dev support Game Center?</summary><div class="faq-a">Game Center isn't listed on ASO.dev's pricing or feature pages as of October 2026. AppMeta creates and edits Game Center achievements, leaderboards and leaderboard sets with the same per-locale workflow it uses for your listing.</div></details>
+    <details class="faq-item" open><summary>What is a cheaper alternative to ASO.dev?</summary><div class="faq-a">AppMeta costs {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime for one person, against ASO.dev's per-seat subscriptions starting at $180/year for the Console tier. You get App Store Connect editing across 50 locales with a diff before each push, In-App Purchases, Game Center, TestFlight, and reviews. You don't get ASO.dev's keyword rank tracking, team seats, or Google Play support.</div></details>
+    <details class="faq-item"><summary>How much does ASO.dev cost?</summary><div class="faq-a">On 25 October 2026 ASO.dev's pricing page listed, per seat and excluding VAT: Console $15/month billed yearly ($180/year), Indie $29/month billed yearly ($348/year), Pro $69/month billed yearly ($828/year), and Marketing $149/month billed yearly. Paying month to month costs more. There's a 3-day trial and no free tier, so check current pricing before you buy.</div></details>
+    <details class="faq-item"><summary>Does AppMeta track keyword rankings like ASO.dev?</summary><div class="faq-a">No. AppMeta checks your own metadata on your Mac (wasted characters, repeated words, storefront coverage) and, when you turn live research on, estimates difficulty and opportunity from live App Store search results and Apple's search suggestions, with the apps and numbers behind each score listed. It doesn't store ranking history or track competitors' keywords. If you need rank tracking, ASO.dev's Indie tier or a dedicated ASO platform fits better.</div></details>
+    <details class="faq-item"><summary>Is ASO.dev available on Windows or iPhone?</summary><div class="faq-a">Yes. ASO.dev offers a Mac app (App Store or direct download), an iPhone and iPad app, Windows and Linux builds, and an Android app. It has no web version by design. AppMeta runs only on macOS 14 or later.</div></details>
+    <details class="faq-item"><summary>Where do ASO.dev and AppMeta keep my App Store Connect key?</summary><div class="faq-a">Both keep it on your device. ASO.dev says keys are stored locally and requests go straight from your device to Apple, with optional encrypted key sync for teams. AppMeta stores the key in the Mac Keychain as a this-device-only item that never syncs, and there's no AppMeta server in between.</div></details>
+    <details class="faq-item"><summary>Does ASO.dev support Game Center?</summary><div class="faq-a">Game Center isn't listed on ASO.dev's pricing or feature pages as of October 2026. AppMeta creates and edits Game Center achievements, leaderboards, and leaderboard sets with localized text, in the same app you use for your listing.</div></details>
   </div>
 </section>
 

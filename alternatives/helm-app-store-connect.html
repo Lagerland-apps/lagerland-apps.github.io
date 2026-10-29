@@ -2,10 +2,10 @@
 layout: default
 permalink: /alternatives/helm-app-store-connect/
 title: "Helm for App Store Connect Alternative"
-quick_answer: "Helm for App Store Connect is a native Mac and iPhone app with a free tier and a Pro subscription from $9.99/month. It's strong on releases, TestFlight, reviews, IAP offers and automation through a CLI, and it requires macOS 26 or iOS 26. AppMeta is a Mac-only app that runs on macOS 14 and later and costs {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime. It adds Game Center editing, keyword difficulty estimates and AI through Apple Intelligence or a local model."
+quick_answer: "Helm for App Store Connect is a native Mac and iPhone app with a free tier and a Pro subscription from $9.99/month. It's strong on releases, TestFlight, reviews, IAP offers, and automation through a CLI, and it requires macOS 26 or iOS 26. AppMeta is a Mac-only app that runs on macOS 14 and later and costs {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime. It shows a field-level diff against the live listing before each push and adds Game Center editing, keyword difficulty estimates with the evidence listed, and AI through Apple Intelligence or a local model."
 seo:
   title: "Helm for App Store Connect Alternative: AppMeta for Mac"
-  description: "A Helm alternative for macOS 14 and later. AppMeta edits App Store Connect metadata, IAPs and Game Center, with local AI. {P_YEARLY@appmeta}/yr or {P_LIFETIME@appmeta} lifetime."
+  description: "A Helm alternative for macOS 14 and later. AppMeta edits App Store Connect metadata, IAPs, and Game Center, with a diff before each push."
   keywords:
     - helm app store connect alternative
     - helm vs appmeta
@@ -13,7 +13,7 @@ seo:
     - app store connect client macos 14
     - game center editor mac
     - in-app purchase editor mac
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "appmeta" | first -%}
@@ -45,12 +45,12 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is a good alternative to Helm for App Store Connect?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta is the closest Mac alternative if you need Game Center editing, keyword difficulty estimates, or a Mac that isn't on macOS 26. It edits all 50 App Store Connect locales side by side, In-App Purchases and subscriptions, TestFlight, reviews and submission, for {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime. Helm is the better pick if you want an iPhone companion or a free tier." } },
+    { "@type": "Question", "name": "What is a good alternative to Helm for App Store Connect?", "acceptedAnswer": { "@type": "Answer", "text": "AppMeta is the closest Mac alternative if you need Game Center editing, keyword difficulty estimates, or a Mac that isn't on macOS 26. It edits all 50 App Store Connect locales side by side, In-App Purchases and subscriptions, TestFlight, reviews, and submission, for {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime. Helm is the better pick if you want an iPhone companion or a free tier." } },
     { "@type": "Question", "name": "Does Helm for App Store Connect run on macOS 14 or 15?", "acceptedAnswer": { "@type": "Answer", "text": "No. As of October 2026, Helm's App Store listing requires macOS 26 or iOS 26. AppMeta runs on macOS 14 Sonoma and later. Its Apple Intelligence option needs macOS 26, but the other AI options and every editing feature work on 14 and 15." } },
-    { "@type": "Question", "name": "Is Helm for App Store Connect free?", "acceptedAnswer": { "@type": "Answer", "text": "Helm has a free tier that allows 6 App Store submissions a year, 4 TestFlight submissions per app per month and one account, without AI features or the CLI. Helm's pricing page lists Pro at $9.99/month, and the App Store also sells weekly, yearly and lifetime options at regional prices. AppMeta is {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime." } },
-    { "@type": "Question", "name": "Does Helm support Game Center?", "acceptedAnswer": { "@type": "Answer", "text": "Game Center isn't listed on Helm's features or pricing pages as of October 2026. AppMeta creates and edits Game Center achievements, leaderboards and leaderboard sets, with their localizations, in the same app as your listing." } },
-    { "@type": "Question", "name": "Is there an iPhone version of AppMeta?", "acceptedAnswer": { "@type": "Answer", "text": "No. AppMeta is Mac-only. Helm has an iPhone app for reviews, TestFlight and release status. Lagerland's iPhone app for App Store Connect is AppMeta Pulse, a monitoring dashboard for revenue, subscriptions and downloads with no metadata editing." } },
-    { "@type": "Question", "name": "Do Helm and AppMeta keep my App Store Connect key on my Mac?", "acceptedAnswer": { "@type": "Answer", "text": "Both use the Keychain. Helm's FAQ says your keys are never accessible to Helm's servers and that it sends anonymized usage analytics. AppMeta stores the key as a this-device-only Keychain item, has no Lagerland server and includes no third-party analytics SDK." } }
+    { "@type": "Question", "name": "Is Helm for App Store Connect free?", "acceptedAnswer": { "@type": "Answer", "text": "Helm has a free tier that allows 6 App Store submissions a year, 4 TestFlight submissions per app per month, and one account, without AI features or the CLI. Helm's pricing page lists Pro at $9.99/month, and the App Store also sells weekly, yearly, and lifetime options at regional prices. AppMeta's free download runs Demo Mode on sample data; Pro is {P_YEARLY@appmeta}/year, starting with a {TRIAL@appmeta}, or {P_LIFETIME@appmeta} lifetime." } },
+    { "@type": "Question", "name": "Does Helm support Game Center?", "acceptedAnswer": { "@type": "Answer", "text": "Game Center isn't listed on Helm's features or pricing pages as of October 2026. AppMeta creates and edits Game Center achievements, leaderboards, and leaderboard sets, with their localizations, in the same app as your listing." } },
+    { "@type": "Question", "name": "Is there an iPhone version of AppMeta?", "acceptedAnswer": { "@type": "Answer", "text": "No. AppMeta is Mac-only. Helm has an iPhone app for reviews, TestFlight, and release status. The Lagerland Apps iPhone app for App Store Connect is AppMeta Pulse, a dashboard for sales, subscriptions, and reviews that can't change your prices, builds, or metadata." } },
+    { "@type": "Question", "name": "Do Helm and AppMeta keep my App Store Connect key on my Mac?", "acceptedAnswer": { "@type": "Answer", "text": "Both use the Keychain. Helm's FAQ says your keys are never accessible to Helm's servers and that it sends anonymized usage analytics. AppMeta stores the key as a this-device-only Keychain item, has no AppMeta server, and includes no third-party analytics SDK." } }
   ]
 }
 </script>
@@ -59,7 +59,7 @@ last_updated: 2026-10-26
   <div class="hero-left reveal">
     <p class="overline">Native App Store Connect apps · Mac · Comparison</p>
     <h1 class="h1">A Helm alternative<br><span class="gradient-text">with Game Center and no macOS 26 requirement.</span></h1>
-    <p class="lead">Helm, from Hidde van de Ploeg and Pol Piella, is one of the most polished native App Store Connect apps: a Mac workstation with an iPhone companion, launch checklists, TestFlight feedback that turns into GitHub or Linear issues, review templates and a CLI. AppMeta overlaps on most listing work. The differences are which macOS you need, Game Center, keyword tools, AI choice and how you pay.</p>
+    <p class="lead">Helm, from Hidde van de Ploeg and Pol Piella, is one of the most polished native App Store Connect apps: a Mac workstation with an iPhone companion, launch checklists, TestFlight feedback that turns into GitHub or Linear issues, review templates, and a CLI. AppMeta overlaps on most listing work. The differences are which macOS you need, how you check changes before a push, Game Center, keyword tools, AI choice, and how you pay.</p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/appmeta/">See AppMeta</a>
       <a class="btn btn-secondary" href="#compare">Compare</a>
@@ -79,23 +79,23 @@ last_updated: 2026-10-26
     </div>
     <div class="card">
       <div class="card-title">Pricing</div>
-      <div class="card-text"><strong>AppMeta:</strong> {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime. The free download runs in demo mode with sample data.<br><br><strong>Helm:</strong> A free tier with 6 App Store submissions a year, 4 TestFlight submissions per app per month, one account and no AI. Pro is $9.99/month on Helm's site, with weekly, yearly and lifetime options in the App Store at regional prices.</div>
+      <div class="card-text"><strong>AppMeta:</strong> {P_YEARLY@appmeta}/year, starting with a {TRIAL@appmeta}, or {P_LIFETIME@appmeta} lifetime. The free download runs Demo Mode on sample data.<br><br><strong>Helm:</strong> A free tier with 6 App Store submissions a year, 4 TestFlight submissions per app per month, one account, and no AI. Pro is $9.99/month on Helm's site, with weekly, yearly, and lifetime options in the App Store at regional prices.</div>
     </div>
     <div class="card">
       <div class="card-title">In-app purchases and Game Center</div>
-      <div class="card-text"><strong>AppMeta:</strong> Creates and edits In-App Purchases, subscriptions and subscription groups, including introductory offers and review screenshots. Also Game Center achievements, leaderboards and leaderboard sets.<br><br><strong>Helm:</strong> Manages the IAP catalog, pricing, offers and offer codes. Game Center isn't listed on its features page.</div>
+      <div class="card-text"><strong>AppMeta:</strong> Creates and edits In-App Purchases, subscriptions, and subscription groups, including introductory offers and review screenshots. Also Game Center achievements, leaderboards, and leaderboard sets.<br><br><strong>Helm:</strong> Manages the IAP catalog, pricing, offers, and offer codes. Game Center isn't listed on its features page.</div>
     </div>
     <div class="card">
       <div class="card-title">Keywords and AI</div>
-      <div class="card-text"><strong>AppMeta:</strong> On-device keyword checks plus live difficulty and opportunity estimates. AI through your own Anthropic, OpenAI or Google key, a local model, or Apple Intelligence on-device.<br><br><strong>Helm:</strong> ASO guidance in the editor and AI keyword generation on Pro. AI translation and copy improvement with Helm's default model or your own OpenAI key.</div>
+      <div class="card-text"><strong>AppMeta:</strong> Keyword health checks on your Mac plus live difficulty and opportunity estimates, with the apps and numbers behind each score listed. AI through your own Anthropic, OpenAI, or Google key, a local model, or Apple Intelligence on your Mac (macOS 26 on a Mac that supports it).<br><br><strong>Helm:</strong> ASO guidance in the editor and AI keyword generation on Pro. AI translation and copy improvement with Helm's default model or your own OpenAI key.</div>
     </div>
     <div class="card">
       <div class="card-title">Release workflow</div>
-      <div class="card-text"><strong>AppMeta:</strong> Review information, pricing and availability, age rating, phased release, App Store nominations and submission.<br><br><strong>Helm:</strong> Launch checklist, phased release, templates, nominations, Shortcuts actions, and the helm-asc CLI on Pro. Neither app uploads binaries.</div>
+      <div class="card-text"><strong>AppMeta:</strong> App Review Info, pricing, availability, age rating, attaching a build, phased release for the iOS version, and Add for Review.<br><br><strong>Helm:</strong> Launch checklist, phased release, templates, nominations, Shortcuts actions, and the helm-asc CLI on Pro. Neither app uploads binaries.</div>
     </div>
     <div class="card">
       <div class="card-title">Checking changes</div>
-      <div class="card-text"><strong>AppMeta:</strong> Every changed field shows the live App Store Connect value next to your edit; push one field, one locale or all locales.<br><br><strong>Helm:</strong> Helm's features page describes a product page preview for your listing copy. It does not mention a field-by-field diff.</div>
+      <div class="card-text"><strong>AppMeta:</strong> Every changed listing field shows the live App Store Connect value next to your edit; push one field, one locale, or all locales. Fields changed in App Store Connect since your last fetch are flagged.<br><br><strong>Helm:</strong> Helm's features page describes a product page preview for your listing copy. It does not mention a field-by-field diff.</div>
     </div>
   </div>
 </section>
@@ -116,16 +116,16 @@ last_updated: 2026-10-26
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Platforms</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Mac</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Mac and iPhone</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Minimum OS</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">macOS 14 Sonoma</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">macOS 26 / iOS 26</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Price</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">{P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Free tier; Pro from $9.99/month</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Free tier</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Demo mode with sample data</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, with submission limits and no AI</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Free tier</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Demo Mode on sample data; Yearly starts with a {TRIAL@appmeta}</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, with submission limits and no AI</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Listing metadata across locales</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">50 locales, side by side</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Locale editing; AI localization on Pro</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Review before push</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Live value vs your edit, per field</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Product page preview</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>In-App Purchases and subscriptions</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Create, edit, localize, price, intro offers</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Catalog, pricing, offers, offer codes</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Game Center</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Achievements, leaderboards, leaderboard sets</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Not listed</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Screenshots</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">iPhone, iPad, Mac, Apple Watch, Apple TV</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Device groups, magic upload, preview videos</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Screenshots</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Drag-and-drop upload to each locale's screenshot sets</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Device groups, magic upload, preview videos</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>TestFlight</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Builds, groups, What to Test, expiry, export compliance</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Builds, groups, invites, What to Test, feedback to GitHub or Linear</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Customer reviews</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Read, reply, filter by rating</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Inbox, templates, translation, CSV export</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Keyword tools</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">On-device checks, live difficulty estimates</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">ASO guidance, AI keyword generation (Pro)</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>AI providers</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Anthropic, OpenAI, Google, local models, Apple Intelligence</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Helm default model or your own OpenAI key</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Customer reviews</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Read, reply, delete a reply, filter by rating</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Inbox, templates, translation, CSV export</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Keyword tools</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Keyword health checks, live difficulty and demand with evidence</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">ASO guidance, AI keyword generation (Pro)</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>AI providers</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Anthropic, OpenAI, Google, local models, and Apple Intelligence</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Helm default model or your own OpenAI key</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Sales analytics and performance diagnostics</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Not listed</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>CLI and Shortcuts</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">helm-asc CLI (Pro), Shortcuts</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Binary upload</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td></tr>
@@ -133,7 +133,7 @@ last_updated: 2026-10-26
       </tbody>
     </table>
   </div>
-  <p class="testimonials-footnote" style="margin-top:var(--s-3);">Helm details were checked on 25 October 2026 against helm-app.com (features, pricing and FAQ pages) and its App Store listing (version 2.3.3). Prices differ by region, so check current pricing in the App Store.</p>
+  <p class="testimonials-footnote" style="margin-top:var(--s-3);">Helm details were checked on 25 October 2026 against helm-app.com (features, pricing, and FAQ pages) and its App Store listing (version 2.3.3). Prices differ by region, so check current pricing in the App Store.</p>
 </section>
 
 <section class="section reveal">
@@ -145,6 +145,7 @@ last_updated: 2026-10-26
         <li>Your Mac is on macOS 14 or 15, or can't run macOS 26</li>
         <li>You ship Game Center achievements or leaderboards</li>
         <li>You want keyword difficulty estimates alongside the editor</li>
+        <li>You want each changed field shown next to its live value before you push</li>
         <li>You want AI through Apple Intelligence, a local model, or a provider other than OpenAI</li>
         <li>You'd rather pay {P_LIFETIME@appmeta} once</li>
       </ul>
@@ -152,7 +153,7 @@ last_updated: 2026-10-26
     <div class="card">
       <div class="card-title">Pick Helm if…</div>
       <ul class="bullets">
-        <li>You want an iPhone app for reviews, TestFlight and release status</li>
+        <li>You want an iPhone app for reviews, TestFlight, and release status</li>
         <li>You release a few times a year and the free tier covers it</li>
         <li>You want a CLI and Shortcuts actions</li>
         <li>You route TestFlight feedback into GitHub or Linear</li>
@@ -174,12 +175,12 @@ last_updated: 2026-10-26
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>What is a good alternative to Helm for App Store Connect?</summary><div class="faq-a">AppMeta is the closest Mac alternative if you need Game Center editing, keyword difficulty estimates, or a Mac that isn't on macOS 26. It edits all 50 App Store Connect locales side by side, In-App Purchases and subscriptions, TestFlight, reviews and submission, for {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime. Helm is the better pick if you want an iPhone companion or a free tier.</div></details>
+    <details class="faq-item" open><summary>What is a good alternative to Helm for App Store Connect?</summary><div class="faq-a">AppMeta is the closest Mac alternative if you need Game Center editing, keyword difficulty estimates, or a Mac that isn't on macOS 26. It edits all 50 App Store Connect locales side by side, In-App Purchases and subscriptions, TestFlight, reviews, and submission, for {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime. Helm is the better pick if you want an iPhone companion or a free tier.</div></details>
     <details class="faq-item"><summary>Does Helm for App Store Connect run on macOS 14 or 15?</summary><div class="faq-a">No. As of October 2026, Helm's App Store listing requires macOS 26 or iOS 26. AppMeta runs on macOS 14 Sonoma and later. Its Apple Intelligence option needs macOS 26, but the other AI options and every editing feature work on 14 and 15.</div></details>
-    <details class="faq-item"><summary>Is Helm for App Store Connect free?</summary><div class="faq-a">Helm has a free tier that allows 6 App Store submissions a year, 4 TestFlight submissions per app per month and one account, without AI features or the CLI. Helm's pricing page lists Pro at $9.99/month, and the App Store also sells weekly, yearly and lifetime options at regional prices. AppMeta is {P_YEARLY@appmeta}/year or {P_LIFETIME@appmeta} lifetime.</div></details>
-    <details class="faq-item"><summary>Does Helm support Game Center?</summary><div class="faq-a">Game Center isn't listed on Helm's features or pricing pages as of October 2026. AppMeta creates and edits Game Center achievements, leaderboards and leaderboard sets, with their localizations, in the same app as your listing.</div></details>
-    <details class="faq-item"><summary>Is there an iPhone version of AppMeta?</summary><div class="faq-a">No. AppMeta is Mac-only. Helm has an iPhone app for reviews, TestFlight and release status. Lagerland's iPhone app for App Store Connect is <a href="/apps/appmeta-pulse/">AppMeta Pulse</a>, a monitoring dashboard for revenue, subscriptions and downloads with no metadata editing.</div></details>
-    <details class="faq-item"><summary>Do Helm and AppMeta keep my App Store Connect key on my Mac?</summary><div class="faq-a">Both use the Keychain. Helm's FAQ says your keys are never accessible to Helm's servers and that it sends anonymized usage analytics. AppMeta stores the key as a this-device-only Keychain item, has no Lagerland server and includes no third-party analytics SDK.</div></details>
+    <details class="faq-item"><summary>Is Helm for App Store Connect free?</summary><div class="faq-a">Helm has a free tier that allows 6 App Store submissions a year, 4 TestFlight submissions per app per month, and one account, without AI features or the CLI. Helm's pricing page lists Pro at $9.99/month, and the App Store also sells weekly, yearly, and lifetime options at regional prices. AppMeta's free download runs Demo Mode on sample data; Pro is {P_YEARLY@appmeta}/year, starting with a {TRIAL@appmeta}, or {P_LIFETIME@appmeta} lifetime.</div></details>
+    <details class="faq-item"><summary>Does Helm support Game Center?</summary><div class="faq-a">Game Center isn't listed on Helm's features or pricing pages as of October 2026. AppMeta creates and edits Game Center achievements, leaderboards, and leaderboard sets, with their localizations, in the same app as your listing.</div></details>
+    <details class="faq-item"><summary>Is there an iPhone version of AppMeta?</summary><div class="faq-a">No. AppMeta is Mac-only. Helm has an iPhone app for reviews, TestFlight, and release status. The Lagerland Apps iPhone app for App Store Connect is <a href="/apps/appmeta-pulse/">AppMeta Pulse</a>, a dashboard for sales, subscriptions, and reviews that can't change your prices, builds, or metadata.</div></details>
+    <details class="faq-item"><summary>Do Helm and AppMeta keep my App Store Connect key on my Mac?</summary><div class="faq-a">Both use the Keychain. Helm's FAQ says your keys are never accessible to Helm's servers and that it sends anonymized usage analytics. AppMeta stores the key as a this-device-only Keychain item, has no AppMeta server, and includes no third-party analytics SDK.</div></details>
   </div>
 </section>
 

@@ -3,7 +3,7 @@ layout: journal
 slug: when-does-apple-pay-developers
 title: "When does Apple pay developers? The App Store fiscal calendar, payment dates and missing months"
 date: 2026-10-17
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 seo:
   title: "When Does Apple Pay Developers? Fiscal Calendar Explained"
   description: "Apple pays App Store proceeds within 45 days of each fiscal month's end. The fiscal calendar, 2026 payment dates, thresholds, currency, and missing months."
@@ -24,13 +24,13 @@ faq:
   - q: "What is Apple's fiscal calendar for App Store payments?"
     a: "Apple's fiscal months are made of whole weeks that run Sunday to Saturday. Each quarter has a five-week month followed by two four-week months, and the fiscal year ends in late September; fiscal 2026 ended on Saturday, September 26, 2026. Apple's help pages link to the official calendar inside App Store Connect, which shows the exact dates for each fiscal month."
   - q: "Why didn't Apple pay me this month?"
-    a: "The most common reason is the calendar itself. Payments follow fiscal months, so in 2026 January, April, July and October each had two payments while February, May and August had none. Other reasons are a balance below the minimum payment threshold, which Apple carries forward to the next payment, a payment your bank returned, missing banking or tax information, a Paid Apps Agreement that isn't in effect, or no purchases or refunds in that fiscal month."
+    a: "The most common reason is the calendar itself. Payments follow fiscal months, so in 2026 January, April, July, and October each had two payments while February, May, and August had none. Other reasons are a balance below the minimum payment threshold, which Apple carries forward to the next payment, a payment your bank returned, missing banking or tax information, a Paid Apps Agreement that isn't in effect, or no purchases or refunds in that fiscal month."
   - q: "What is the minimum payment threshold for App Store payments?"
     a: "It depends on the country of your bank and the currency of the account. Apple publishes a table of bank countries and currencies with their own thresholds, and many common pairs, such as a USD account in the United States or a EUR account in the euro area, are listed at 0.02 USD. Bank countries and currencies not in the table must exceed 40 USD. Below the threshold, Payments and Financial Reports shows Balance Carried Forward and the proceeds roll into the next payment period."
   - q: "Why is my Apple payment different from my proceeds?"
     a: "Apple's bank converts proceeds into your bank account's currency at roughly the spot rate on the payment date, so the amount moves with exchange rates after the fiscal month closes. Withholding tax, where it applies, is taken when the payment is made. Your own bank or an intermediary bank can also deduct fees, so the deposit can be smaller than the payment amount shown in App Store Connect."
   - q: "Where do I see my App Store payments?"
-    a: "In App Store Connect, under Payments and Financial Reports, which needs the Account Holder, Admin or Finance role. Payment information for the previous fiscal month starts to appear on the first Wednesday of the current fiscal month, and financial reports for all countries and regions are ready by the first Friday. A paid month shows the amount, the date, your bank and a Transaction ID; an unpaid one shows Total Estimated Proceeds."
+    a: "In App Store Connect, under Payments and Financial Reports, which needs the Account Holder, Admin, or Finance role. Payment information for the previous fiscal month starts to appear on the first Wednesday of the current fiscal month, and financial reports for all countries and regions are ready by the first Friday. A paid month shows the amount, the date, your bank, and a Transaction ID; an unpaid one shows Total Estimated Proceeds."
 mentioned_apps:
   - appmeta-pulse
 read_time: "7 min read"
@@ -79,7 +79,7 @@ A fiscal month can also carry a calendar month's name while starting in the prev
 
 ## Why is a month missing?
 
-Most of the time, nothing is wrong. Because every quarter starts with a five-week month, payments drift against the calendar. In 2026, January, April, July and October each had two payments, and February, May and August had none. If your bookkeeping runs by calendar month, those months will look empty even though every fiscal month was paid.
+Most of the time, nothing is wrong. Because every quarter starts with a five-week month, payments drift against the calendar. In 2026, January, April, July, and October each had two payments, and February, May, and August had none. If your bookkeeping runs by calendar month, those months will look empty even though every fiscal month was paid.
 
 When a fiscal month really wasn't paid, Payments and Financial Reports says why ([Apple](https://developer.apple.com/help/app-store-connect/getting-paid/view-payments-and-proceeds)):
 
@@ -91,7 +91,7 @@ There are two quieter cases. A fiscal month with no purchases or refunds produce
 
 ## What is the minimum payment threshold?
 
-Apple publishes a [table of thresholds](https://developer.apple.com/help/app-store-connect/reference/reporting/minimum-payment-threshold) by bank country and account currency. Many common pairs, such as a USD account in the United States, a EUR account in the euro area or a GBP account in the United Kingdom, are listed at 0.02 USD. Any bank country or currency not in the table must exceed 40 USD. A small app paid into an unlisted currency can carry its balance forward for months before a payment goes out.
+Apple publishes a [table of thresholds](https://developer.apple.com/help/app-store-connect/reference/reporting/minimum-payment-threshold) by bank country and account currency. Many common pairs, such as a USD account in the United States, a EUR account in the euro area, or a GBP account in the United Kingdom, are listed at 0.02 USD. Any bank country or currency not in the table must exceed 40 USD. A small app paid into an unlisted currency can carry its balance forward for months before a payment goes out.
 
 ## What currency are you paid in, and who takes the fees?
 
@@ -101,9 +101,9 @@ That is why the estimate and the payment differ. Before a month is paid, App Sto
 
 ## Where do you see payments in App Store Connect?
 
-Payments and Financial Reports, which needs the Account Holder, Admin or Finance role. Payment information for the previous fiscal month starts to appear on the first Wednesday of the current fiscal month, and the financial reports for every country and region are ready by the first Friday ([Apple](https://developer.apple.com/help/app-store-connect/getting-paid/view-payments-and-proceeds)). You can ask for an email when they arrive.
+Payments and Financial Reports, which needs the Account Holder, Admin, or Finance role. Payment information for the previous fiscal month starts to appear on the first Wednesday of the current fiscal month, and the financial reports for every country and region are ready by the first Friday ([Apple](https://developer.apple.com/help/app-store-connect/getting-paid/view-payments-and-proceeds)). You can ask for an email when they arrive.
 
-A paid month shows the amount in your bank currency, the bank name with the last four digits of the account, the issue date and a seven-digit Transaction ID, also called a Consolidated Credit Identifier. Have that ID ready if you need to ask Apple or your bank about a deposit. For any country or region you can open units, amounts in the local currency, taxes and adjustments, and the exchange rate applied.
+A paid month shows the amount in your bank currency, the bank name with the last four digits of the account, the issue date, and a seven-digit Transaction ID, also called a Consolidated Credit Identifier. Have that ID ready if you need to ask Apple or your bank about a deposit. For any country or region you can open units, amounts in the local currency, taxes and adjustments, and the exchange rate applied.
 
 The downloadable financial reports come as a single file for all countries and regions, as separate files for each location, or as a detailed version with transaction and settlement dates, and Apple keeps them for ten years. They can also be fetched through the App Store Connect API.
 
@@ -115,4 +115,4 @@ Sales and Trends counts a purchase when the customer starts it and estimates USD
 
 [AppMeta Pulse](/apps/appmeta-pulse/) reads the daily Sales and Trends reports through the App Store Connect API. It doesn't read Payments and Financial Reports, so it can't tell you when a payment will land or what it will be after conversion and fees. For that, the Payments page above is the source.
 
-Payments and Financial Reports is still the first place Pulse sends you: the Vendor Number it needs to download sales reports is shown there, under your legal entity name. After that, Pulse covers the daily side, with proceeds and downloads by app, net of refunds, and subscription figures such as the [MRR worked out from Apple's Subscription report](/journal/how-to-calculate-mrr-for-app-store-subscriptions/). It also keeps its own copy of the daily reports after Apple's one-year window for them closes.
+Payments and Financial Reports is still the first place Pulse sends you: the Vendor Number it needs to download sales reports is shown there, under your legal entity name. After that, Pulse covers the daily side, with proceeds by app, downloads net of refunds, and subscription figures such as the [MRR worked out from Apple's Subscription report](/journal/how-to-calculate-mrr-for-app-store-subscriptions/). It also keeps every day it fetches on your iPhone, with an original copy of each report, after Apple's one-year window for them closes.
