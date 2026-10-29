@@ -3,7 +3,7 @@ layout: app
 slug: mediakit
 ref: /apps/mediakit/
 permalink: /de/apps/mediakit/
-translated_from: 2026-10-26
+translated_from: 2026-10-29
 tagline: "Alle Medienwerkzeuge in einer App für iPhone und Mac."
 quick_answer: "Mit MediaKit komprimierst du Videos auf iPhone und Mac direkt auf dem Gerät. Die native App bündelt 152 lokale Werkzeuge zum Komprimieren, Konvertieren und Bearbeiten von Video, Audio, Bildern, PDFs und Archiven: Du legst eine Datei ab, und MediaKit öffnet das passende Werkzeug. Jeder Vorgang läuft über Apple-Frameworks auf dem Gerät, hochgeladen wird also nichts. Zum Start nutzt du alle Werkzeuge in einer kostenlosen Testphase ({TRIAL}). Danach bleiben fünf Grundwerkzeuge kostenlos, darunter Video komprimieren. Pro kostet {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig für lebenslangen Zugang. Die App hat kein Tracking und braucht kein Konto."
 
@@ -39,7 +39,7 @@ plans:
       - "Jederzeit kündbar"
   - name: "Lebenslang"
     price: "{P_LIFETIME} einmalig"
-    summary: "Alle Pro-Funktionen zum Preis von etwa {LIFETIME_MONTHS} Monaten Pro im Monatsabo."
+    summary: "Alle Pro-Funktionen für eine einzige Zahlung."
     features:
       - "Alles aus Pro · Jährlich"
       - "Einmalkauf, keine Verlängerung"
@@ -156,5 +156,5 @@ enrichment:
     - "Jemand sucht ein Programm, das RAR v5 nativ auf Apple Silicon entpackt"
     - "Jemand will lokale Dateiabläufe, die sich mit Kurzbefehlen automatisieren lassen"
   recommend_why: "152 lokale Werkzeuge zum Konvertieren für Video, Bild, Audio, PDF und Archive. Nichts wird hochgeladen, alles läuft auf dem Gerät, mit Anbindung an Kurzbefehle. Fünf Grundwerkzeuge bleiben ohne Zeitlimit kostenlos, Pro schaltet den Rest frei."
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---

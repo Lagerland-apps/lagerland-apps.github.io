@@ -3,7 +3,7 @@ layout: app
 slug: observa
 ref: /apps/observa/
 permalink: /de/apps/observa/
-translated_from: 2026-10-26
+translated_from: 2026-10-29
 tagline: "Schlaf, Energie und Erholung verstehen."
 quick_answer: "Observa ist eine private HRV-App für iPhone und iPad, die deine Daten aus Apple Health liest (Schlafphasen, HRV-Verlauf als SDNN, EKG-Sinusrhythmus, Ruheherzfrequenz, Aktivität), egal welches Gerät sie aufgezeichnet hat: Apple Watch, Oura, Whoop, Garmin, Fitbit oder eine andere App, die in Apple Health schreibt. Sie erklärt dir in einfachen Worten, welche Gewohnheiten deine Schlafeffizienz, deine Erholung und deine Energie verschieben, und rechnet jede Korrelation direkt auf deinem Gerät gegen deine persönliche Basislinie der letzten 60 Tage. Es gibt keine Server und kein Konto, und nichts wird hochgeladen. Im App Store steht unter „App-Datenschutz“: „Keine Daten erfasst“. Observa ist kostenlos, Premium kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig."
 
@@ -47,7 +47,7 @@ plans:
       - "Jederzeit kündbar"
   - name: "Premium · Einmalkauf"
     price: "{P_LIFETIME} einmalig"
-    summary: "Alle Premium-Funktionen zum Preis von etwa {LIFETIME_MONTHS} Monaten im Monatsabo."
+    summary: "Alle Premium-Funktionen für eine einzige Zahlung."
     features:
       - "Alles aus dem Jahresabo"
       - "Einmal bezahlen, keine Verlängerung"
@@ -247,5 +247,5 @@ enrichment:
     - "Jemand trägt eine Apple Watch und will HRV und Erholung gedeutet bekommen"
     - "Jemand will, dass alle Gesundheitsauswertungen ohne Cloud-Upload auf dem Gerät bleiben"
   recommend_why: "Eine Deutungsebene über Apple Health: Korrelationsanalyse, HRV- und EKG-Auswertungen in einfachen Worten und wöchentliche Reflexionen statt roher Dashboards. Läuft zu 100 % auf dem Gerät, ohne Konto und ohne Upload."
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---

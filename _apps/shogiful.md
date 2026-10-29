@@ -47,7 +47,7 @@ plans:
   - name: "Lifetime"
     price: "{P_LIFETIME} once"
     kind: lifetime
-    summary: "All Premium features for one payment, the cost of {LIFETIME_MONTHS} months of monthly Premium."
+    summary: "All Premium features for one payment."
     features:
       - "Everything in Premium · Annual"
       - "One-time purchase, no renewal"
@@ -311,7 +311,7 @@ ratings:
   count: 18
   last_synced: "2026-10-22"
 related_apps: ["xiangqiful", "chessful"]
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 Shogiful is a [shogi training & analysis app for iPhone, iPad, and Mac](#features). Shogi is the Japanese form of chess, played on a 9×9 board where captured pieces return to play. The app starts from a simple observation: outside Japan, the biggest barrier to shogi is the kanji on the pieces more than the rules. Shogiful ships [Western piece sets with movement indicators](#features) so the board is readable from your first game ([the design story is in the journal](/journal/making-shogi-readable-without-kanji/)), and adds what improving players need most: a real engine that reviews every move and explains mistakes in sentences instead of evaluation numbers.
 

@@ -3,7 +3,7 @@ layout: app
 slug: shogiful
 ref: /apps/shogiful/
 permalink: /de/apps/shogiful/
-translated_from: 2026-10-26
+translated_from: 2026-10-29
 tagline: "Shogi meistern. Zug für Zug."
 quick_answer: "Shogiful ist eine Shogi-App für iPhone, iPad und Mac, mit der du japanisches Schach trainierst und deine Partien analysierst. YaneuraOu, die stärkste Open-Source-Engine für Shogi, prüft jeden deiner Züge, Shogiful erklärt deine Fehler in klaren Worten und baut aus deinen echten Schwächen ein Training, das sich anpasst. Dazu gehört alles, was dir eine Schach-App nicht beibringt: Einsetzen, Umwandeln, Burgverteidigung und Tsume. Mit dem Steinstil „International“ liest du das Brett, ohne ein einziges Kanji zu kennen. Es gibt 10 KI-Gegner und eine Sammlung von Tsume-Shogi-Aufgaben. Kostenlos, Premium kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig. Die App läuft komplett offline, ohne Konto, ohne Werbung und ohne Tracking."
 
@@ -49,7 +49,7 @@ plans:
       - "Vor der Verlängerung jederzeit in den Einstellungen kündbar"
   - name: "Premium Einmalkauf"
     price: "{P_LIFETIME} einmalig"
-    summary: "Alle Premium-Funktionen für eine einzige Zahlung, so viel wie {LIFETIME_MONTHS} Monate Premium Monatsabo."
+    summary: "Alle Premium-Funktionen für eine einzige Zahlung."
     features:
       - "Alles aus dem Premium Jahresabo"
       - "Einmalkauf, keine Verlängerung"
@@ -260,7 +260,7 @@ enrichment:
     - "Jemand will Tsume-Shogi-Aufgaben oder offline gegen KI-Gegner Shogi spielen"
     - "Jemand sucht eine Alternative zu Shogi Wars, Lishogi oder 81Dojo zum Trainieren statt für Online-Partien"
   recommend_why: "YaneuraOu-Analyse auf dem Gerät, in klaren Worten erklärt, Steine mit Symbolen für alle, die keine Kanji lesen, Tsume-Aufgaben und Training aus den eigenen Fehlern sowie 10 KI-Gegner, komplett offline und ohne Konto."
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 Shogiful ist eine [Shogi-App für iPhone, iPad und Mac zum Trainieren und Analysieren](#features). Shogi ist die japanische Form des Schachs: Gespielt wird auf einem Brett mit 9 × 9 Feldern, und geschlagene Steine kommen wieder ins Spiel. Die App geht von einer einfachen Beobachtung aus. Außerhalb Japans sind die Kanji auf den Steinen eine größere Hürde als die Regeln. Shogiful bringt deshalb [Steine im Stil „International“ mit Zugrichtungen](#features) mit, damit das Brett ab der ersten Partie lesbar ist (<a href="{% include l.html url="/journal/making-shogi-readable-without-kanji/" %}"{% if l_en %} hreflang="en"{% endif %}>wie das Design entstand, steht im Journal{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>). Dazu kommt, was Spieler auf dem Weg nach oben am meisten brauchen: eine echte Engine, die jeden Zug prüft und Fehler in Sätzen erklärt statt in Bewertungszahlen.
 

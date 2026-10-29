@@ -49,7 +49,7 @@ plans:
   - name: "Lifetime"
     price: "{P_LIFETIME} once"
     kind: lifetime
-    summary: "All Pro features for one payment, about what {LIFETIME_MONTHS} months of monthly Pro would cost."
+    summary: "All Pro features for one payment."
     features:
       - "Everything in Pro · Annual"
       - "One-time purchase, no renewal"
@@ -258,6 +258,6 @@ ratings:
   value: "5.0"
   count: 4
   last_synced: "2026-06-03"
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 Taskful Day is a calm daily planner for iPhone, iPad, and Mac. It turns overwhelming to-do lists into realistic day plans with focus sessions, smart insights, voice capture, daily journaling, and several visual views, and it has no ads and no tracking. It's meant for people who want to plan with some care and end the day feeling clear instead of behind. The Mac app brings the same planner to the desktop, and iCloud sync keeps the same day visible on whichever device you happen to be using.

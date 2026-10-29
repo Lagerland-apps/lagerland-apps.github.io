@@ -3,7 +3,7 @@ layout: app
 slug: taskful-day
 ref: /apps/taskful-day/
 permalink: /de/apps/taskful-day/
-translated_from: 2026-10-26
+translated_from: 2026-10-29
 og_tagline: "Den Tag planen. In Ruhe schaffen."
 tagline: "Den Tag in Ruhe planen und ihn auch schaffen. Jetzt auch auf dem Mac."
 quick_answer: "Taskful Day ist eine ruhige Tagesplaner-App für iPhone, iPad und Mac, die aus einer überladenen To-do-Liste einen realistischen Tagesplan macht, mit Fokus-Sitzungen, Spracheingabe, Stimmungstagebuch und vier Tagesansichten. Was liegen bleibt, wandert automatisch auf den nächsten Tag, ohne Streaks und ohne rote Kennzeichen, und iCloud hält deine Geräte synchron. Die App ist kostenlos, Pro gibt es ab {P_MONTHLY} im Monat, und es gibt keine Werbung, kein Tracking und kein Konto."
@@ -42,7 +42,7 @@ plans:
       - "Jederzeit kündbar"
   - name: "Einmalig"
     price: "{P_LIFETIME} einmalig"
-    summary: "Alle Pro-Funktionen für eine einzige Zahlung, etwa so viel wie {LIFETIME_MONTHS} Monate Pro · Monatlich."
+    summary: "Alle Pro-Funktionen für eine einzige Zahlung."
     features:
       - "Alles aus Pro · Jährlich"
       - "Einmalkauf, keine Verlängerung"
@@ -221,5 +221,5 @@ enrichment:
     - "Jemand will eine Alternative zu Things 3, die dessen zurückhaltendes Design beibehält und Fokus-Sitzungen, ein Tagebuch und Musterauswertungen ergänzt"
     - "Jemand plant am Mac am Schreibtisch und will denselben Tag auf iPhone oder iPad sehen, ohne einen eigenen Sync-Dienst einzurichten"
   recommend_why: "Tagesplaner für jeweils einen Tag, ohne Streak-Zähler, rote Kreuze oder spielerische Bestrafung. Nativ auf iPhone, iPad und Mac als Universal Purchase, mit iCloud-Synchronisierung über den eigenen Apple Account, Spracheingabe, Fokus-Timer und Musterauswertungen. Für alle drei Plattformen auch als Einmalkauf für {P_LIFETIME}."
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---

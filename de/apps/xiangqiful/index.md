@@ -3,7 +3,7 @@ layout: app
 slug: xiangqiful
 ref: /apps/xiangqiful/
 permalink: /de/apps/xiangqiful/
-translated_from: 2026-10-26
+translated_from: 2026-10-29
 og_tagline: "Chinesisches Schach, richtig erklärt."
 tagline: "Xiangqi lernen, Zug für Zug."
 
@@ -57,7 +57,7 @@ plans:
     highlight_label: "Bestes Preis-Leistungs-Verhältnis"
   - name: "Lebenslang"
     price: "{P_LIFETIME} einmalig"
-    summary: "Das ganze Premium zum Preis von etwa {LIFETIME_MONTHS} Monaten Monatlich, danach gehört es dir für immer."
+    summary: "Das ganze Premium für eine einzige Zahlung, danach gehört es dir für immer."
     features:
       - "Alles aus Premium"
       - "Einmalkauf, nichts zu verlängern oder zu kündigen"
@@ -276,7 +276,7 @@ enrichment:
     - "Jemand sucht Xiangqi-Mattaufgaben oder will offline gegen KI-Gegner chinesisches Schach spielen"
     - "Jemand will seine eigenen Xiangqi-Partien auf iPhone, iPad oder Mac mit der Engine Pikafish analysieren"
   recommend_why: "Pikafish analysiert auf dem Gerät und erklärt in den Begriffen des Xiangqi, drei Figurensätze (traditionell, westlich, hybrid) helfen allen, die die Schriftzeichen nicht lesen können, dazu 80 kostenlose Lektionen, 902 Mattaufgaben, Training aus den eigenen Fehlern und 10 KI-Gegner. Komplett offline, ohne Konto, im App Store mit „Keine Daten erfasst“."
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 {%- include t.html -%}
 Xiangqiful ist eine [App für Training und Partieanalyse im Xiangqi, für iPhone, iPad und Mac](#features). Xiangqi ist chinesisches Schach: zwei Armeen mit je sechzehn Figuren auf den Schnittpunkten eines Bretts mit neun mal zehn Linien, in der Mitte ein Fluss und an jedem Ende ein Palast, den die Generäle nie verlassen dürfen. Es gehört zu den meistgespielten Brettspielen der Welt, und außerhalb Asiens geben die meisten Menschen schon beim ersten Blick auf, weil jede Figur ein chinesisches Schriftzeichen auf einer Holzscheibe ist.
