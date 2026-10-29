@@ -1,8 +1,8 @@
 ---
 layout: privacy
 seo:
-  title: "Mockly Privacy Policy — No Tracking, No Account"
-  description: "Mockly's privacy policy: no third-party tracking, no ads, no account — your data stays on your device. What it processes and the choices you have."
+  title: "Mockly Privacy Policy: No Tracking, No Account"
+  description: "Mockly's privacy policy: no tracking, no ads, no account. What stays on your Mac, and what goes to your AI provider or to Apple when you choose."
   keywords:
     - "Mockly privacy policy"
     - "Mockly privacy"
@@ -31,23 +31,34 @@ data_collection: >
   usage analytics, or behavioral data for advertising or profiling purposes.
 
 data_storage: >
-  All projects, images, and layouts are stored locally on your Mac.
-  Mockly does not upload your data to external servers.
+  Projects, images, and layouts are stored locally on your Mac, in the files you save.
+  Settings such as your chosen AI provider and model are kept in the app's preferences on your Mac.
+  API keys for AI providers and your App Store Connect API key are stored in the macOS Keychain.
+  Mockly has no account, and Lagerland Apps runs no server that receives your data.
   If you choose to store files in iCloud Drive or other cloud storage,
-  this is handled entirely by Apple or your chosen storage provider.
+  this is handled by Apple or your chosen storage provider.
 
 third_parties: >
-  Mockly does not use third-party analytics,
-  advertising SDKs, or tracking services.
+  Mockly does not use third-party analytics, advertising SDKs, or tracking services,
+  and it never sends your data to a Lagerland server.
+  Mockly sends data only when you use one of these features.
+  AI Translate sends the text you ask it to translate, and the target languages,
+  to the AI provider you choose (Anthropic, OpenAI, or Google),
+  with your own API key and under that provider's terms.
+  Upload to App Store Connect sends the screenshots you upload directly to Apple's
+  App Store Connect API (api.appstoreconnect.apple.com), signed in with a token
+  made from your App Store Connect API key; the private key itself is never sent.
+  Send Feedback opens your own mail app with the app version, macOS version, and language filled in;
+  nothing is sent until you send the email yourself.
   Apple may process limited data as part of system services you choose to use,
-  such as in-app purchases (StoreKit) or App Store downloads.
+  such as in-app purchases (StoreKit), ratings, or App Store downloads.
   Mockly does not receive access to your payment details.
 
 sensitive_data: >
   Mockly does not collect or process sensitive personal data
   such as health information, location data, contacts, or identifiers.
-  All content created in the app remains under your control
-  and is not shared with third parties.
+  Content you create in the app stays on your Mac unless you translate it with AI
+  or upload it to App Store Connect, as described above.
 
 children: >
   Mockly is not directed at children under the age of 13.
@@ -60,5 +71,5 @@ changes: >
 
 contact_email: "lagerland.apps@proton.me"
 back_url: "/apps/mockly/"
-last_updated: 2026-06-21
+last_updated: 2026-10-29
 ---
