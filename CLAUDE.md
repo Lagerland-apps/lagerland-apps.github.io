@@ -7,7 +7,7 @@ This file is **excluded from the build** (`exclude:` in `_config.yml`) so it is 
 **Translations:** the site is being translated into 16 market languages, one at a time (de, fr, it, es, pt, zh, ja,
 ko, id, es-mx, pt-br, pl, tr, nl, ru, ar under `/<code>/`). `TRANSLATION.md` (also excluded from the build) is the
 rulebook: URL and hreflang scheme, the one-time Phase 0 groundwork, the per-language launch, the per-page workflow,
-SEO and AI-file rules per language, and per-language humanizer tells. Read it before touching any translated page,
+SEO and AI-file rules per language, and per-language AI tells. Read it before touching any translated page,
 `_data/i18n/`, `_data/locales.yml`, or a template string. Once any language is live, every new app, page or post
 also follows its section 12.
 
@@ -50,9 +50,13 @@ Meta AI). That is part of "done", not a follow-up. Before every commit:
    nodes, feed authors, meta tags, keywords, llms files, alt text). It was removed sitewide on 2026-10-25.
    Attribute to "Lagerland Apps" (`{{ site.url }}/#organization`). Link the App Store developer page as
    `https://apps.apple.com/developer/id1855943133` (Apple's default URL carries the name in its slug).
-9. **Humanizer on every text**: all copy added to the site, in any language (body, front matter strings, FAQ,
-   llms.txt routing lines, interface strings), gets a `/humanizer` pass before it ships, then a check that the
+9. **Copy-editing on every text**: all copy added to the site, in any language (body, front matter strings, FAQ,
+   llms.txt routing lines, interface strings), gets a `/copy-editing` pass (marketingskills) before it ships, then a check that the
    rewrite added or dropped no fact. Non-English text follows TRANSLATION.md section 8 as well.
+9a. **App facts from the blueprint**: claims about an app come only from its `APP_BLUEPRINT.md` (claims register
+   §10; never §8 non-claims or §9 hidden items). Marketing copy is written with `/copywriting` (marketingskills).
+   Setup and the list of apps with blueprints: `~/Downloads/githubcode/.agents/product-marketing.md` (outside
+   the repo).
 10. **Translations** (once a language is live): new interface strings go into every live `_data/i18n/<code>.yml`
    in the same commit; a new app needs its translated app, support and privacy pages in every live language;
    run `python3 scripts/i18n.py map` and `python3 scripts/i18n.py check` with the audit. Details: TRANSLATION.md.

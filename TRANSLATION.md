@@ -52,7 +52,7 @@ Suggested launch order. The owner picks; the reasons are what matters.
    language switcher does not show it.
 6. Every translated page passes the same SEO / AEO gate as an English page, plus the translation checks in
    section 10.
-7. Every text that goes on the site, in any language, gets a humanizer pass in that language (section 8).
+7. Every text that goes on the site, in any language, gets a copy-editing pass in that language (section 8).
 8. A published URL never changes, in any language. The repo CLAUDE.md rule on ranking safety applies per language.
 
 ---
@@ -505,7 +505,7 @@ on each page:
 ### 5.2 Setup commit for the language
 
 - `_config.yml` default for the folder; the locale block in `_data/locales.yml` with `live: false`;
-  `_data/i18n/<code>.yml` with every key translated and humanized; the per-language stubs from 4.16.
+  `_data/i18n/<code>.yml` with every key translated and copy-edited; the per-language stubs from 4.16.
 - Fonts if the script needs them (4.11).
 - The language is not yet in the switcher and nothing links to it.
 
@@ -554,7 +554,7 @@ inbound link from an existing page in the same language and a routing line in `/
 7. Units: metric in all 16 markets (kg, cm, km, °C). Convert any imperial figure in the English source, and keep
    the converted number honest (round the way the source rounds).
 8. Links: point at the same-language version when it exists, otherwise at English (7.6).
-9. Humanizer pass in the target language (section 8), then the fact diff: compare against the English page and
+9. Copy-editing pass in the target language (section 8), then the fact diff: compare against the English page and
    confirm no fact, number, name, date, claim or caveat was added or dropped.
 10. `python3 scripts/stamp-last-updated.py --changed`, `python3 scripts/i18n.py map`, build, `i18n.py check`,
     `seo-audit.py`.
@@ -637,7 +637,8 @@ A page with no English twin (a local competitor, a market-specific guide). Rules
 - The owner provides the screenshots for each app in each language. Never make them here: no mock-ups, no
   machine-edited text inside an English screenshot, no screenshots captured from a half-translated build.
 - Location: `assets/screenshots/<slug>/<code>/`, with the same file names, count, order, sizes and format as
-  the English set in `assets/screenshots/<slug>/`, processed the same way. The `screenshots:` list in
+  the English set in `assets/screenshots/<slug>/`, processed the same way. Every screenshot is a 900 px wide
+  WebP (quality 85, about 90 KB); full-size PNGs for 16 languages would pass GitHub Pages' size limit. The `screenshots:` list in
   `_apps/<slug>.md` stays the one list of files for every language.
 - Fallback: a page uses the language folder when it holds every file the English list names. If the folder is
   missing or incomplete, the page shows the whole English set. One strip never mixes languages.
@@ -713,16 +714,16 @@ German app page states EUR. Ratings are synced across 37 storefronts and are the
 
 ---
 
-## 8. Writing rules: the humanizer in every language
+## 8. Writing rules: copy editing in every language
 
 ### 8.1 How to run it
 
 - Every text that goes on the site in any language, front matter strings included, goes through the
-  `/humanizer` skill (`~/.claude/skills/humanizer/SKILL.md`) in file or embedded mode, applied to the
-  target-language text. Its structural patterns are not English-specific: staging (not X but Y, one-line closers,
-  staged run-ups), forced triads, inflated significance, -ing riders, sales language, bold labels, decorative
-  headings and chatbot residue all have equivalents in every language. The skill says so itself for the
-  not-X-but-Y formula.
+  `/copy-editing` skill from marketingskills (`~/.claude/skills/copy-editing/SKILL.md`), full Seven Sweeps,
+  applied to the target-language text. Its AI-tell patterns are not English-specific: "it's not X, it's Y"
+  reveals, "no X, no Y, no Z" lists, sentences that trail into extra comma clauses, one-line closers, forced
+  triads, inflated claims, sales language, bold labels and chatbot residue all have equivalents in every language.
+  Keep the house rules in 8.3 over any suggestion the skill makes.
 - Run it on the finished translation, then do the fact diff again (6.1 step 9): rewrites drop facts most often in
   triads, qualifiers and bold-label lists.
 - Run it on interface strings too, once, when the language's `_data/i18n/<code>.yml` is written.
@@ -742,11 +743,11 @@ a stock opener, a stock connector or a stock closer that a careful writer of tha
 | nl | "In de snel veranderende wereld van vandaag", "Laten we erin duiken", "Het is belangrijk om op te merken dat", "naadloos", "cruciaal", "niet alleen … maar ook" | Split compounds ("app ontwikkelaar" instead of "appontwikkelaar"), title case headings, u and je mixed |
 | pl | "W dzisiejszym szybko zmieniającym się świecie", "Zanurzmy się", "Warto zauważyć, że", "kluczowy" everywhere, "Podsumowując", "nie tylko …, ale także" | Title case headings, English quotes instead of „…”, calqued word order, Pan/Pani mixed with ty |
 | tr | "Günümüzün hızla değişen dünyasında", "Hadi derinlemesine inceleyelim", "Şunu belirtmek önemlidir ki", "kritik öneme sahip", "Sonuç olarak", "sadece … değil, aynı zamanda …" | Long passive chains, sen and siz mixed, dotless and dotted i confused in capitals |
-| ru | "В современном быстро меняющемся мире", "Давайте погрузимся", "Давайте разберёмся", "Важно отметить, что", "Стоит отметить", "ключевой" everywhere, "Подводя итог", "не просто …, а …" | Канцелярит ("осуществлять", "является" for every "is", the same habit as humanizer §18), English title case, ты and вы mixed |
+| ru | "В современном быстро меняющемся мире", "Давайте погрузимся", "Давайте разберёмся", "Важно отметить, что", "Стоит отметить", "ключевой" everywhere, "Подводя итог", "не просто …, а …" | Канцелярит ("осуществлять", "является" for every "is", an inflated stand-in for a plain "is"), English title case, ты and вы mixed |
 | ja | 「いかがでしたか」 closers, 「〜と言えるでしょう」 and 「〜ではないでしょうか」 on every paragraph, 「さまざまな」, 「〜することが重要です」, a まとめ section that repeats the page | あなた in every sentence (Japanese drops the pronoun), katakana buzzwords (シームレス, ソリューション) where Japanese has a word, です・ます mixed with だ・である, half-width punctuation |
 | zh | 「在当今快节奏的世界中」, 「让我们深入探讨」, 「值得注意的是」, 「至关重要」, 「总而言之」, 「综上所述」, 「不仅……而且……」, marketing verbs 「赋能」「打造」「助力」 | 你 and 您 mixed, half-width punctuation in Chinese text, English-length sentences with chains of 的 |
 | ko | 「오늘날 빠르게 변화하는 세상에서」, 「자세히 알아보겠습니다」, 「살펴보겠습니다」 openers, 「결론적으로」, 「~라고 할 수 있습니다」, 「뿐만 아니라」, 「핵심적인」 | 당신 as "you" (Korean copy drops it), 합니다체 and 해요체 mixed in one page |
-| id | "Di dunia yang serba cepat saat ini", "Mari kita selami", "Penting untuk dicatat bahwa", "krusial", "tidak hanya … tetapi juga", "Kesimpulannya" | "merupakan" for every "is" (humanizer §18), Anda and kamu mixed, English loanwords where Indonesian ones are normal |
+| id | "Di dunia yang serba cepat saat ini", "Mari kita selami", "Penting untuk dicatat bahwa", "krusial", "tidak hanya … tetapi juga", "Kesimpulannya" | "merupakan" for every "is", Anda and kamu mixed, English loanwords where Indonesian ones are normal |
 | ar | «في عالمنا المتسارع اليوم», «دعونا نتعمق في», «من المهم الإشارة إلى أن», «لا يقتصر الأمر على … بل …», «حجر الزاوية», «بشكل سلس», «في الختام» | English word order, Latin punctuation instead of ، ؛ ؟, mixed digit systems, gendered forms chosen inconsistently |
 
 ### 8.3 House rules that carry over, and the ones that change
@@ -773,7 +774,7 @@ Change per language:
   grammar needs a dash, keep it. Russian uses a dash in place of a missing "is" ("Observa — приложение для …"),
   and Polish uses one in similar sentences; that is grammar, not a connector.
 - Quotes. Use the language's own quotation marks: „…“ (de), « … » (fr, ru, and optional in it, es, pt), „…” (pl),
-  「…」 (ja), “…” (zh). The humanizer's curly-quote note (§21) is about English and does not apply.
+  「…」 (ja), “…” (zh). English curly-quote habits do not apply.
 - Oxford comma: English only. Other languages follow their own list punctuation (no comma before und, et, y, e,
   en, i, и in most cases).
 - Punctuation spacing: narrow no-break space before ; : ! ? in French; full-width 、。！？ in Japanese and
@@ -788,7 +789,7 @@ Change per language:
 
 Minimum for every page:
 
-1. Humanizer pass in the target language.
+1. Copy-editing pass in the target language.
 2. Fact diff against the English page (6.1 step 9).
 3. Glossary check: feature names match the app's localized interface.
 
@@ -873,7 +874,7 @@ noindex, as in English), rebuild the map, and remove the routing lines from ever
 
 ### 12.5 A new interface string
 
-Add the key to `_data/i18n/en.yml` and to every live language's file in the same commit, humanized in each language.
+Add the key to `_data/i18n/en.yml` and to every live language's file in the same commit, copy-edited in each language.
 
 ---
 
@@ -940,9 +941,9 @@ Gregorian dates with the month names used in Saudi Arabia (أكتوبر). Latin 
 
 ```
 [ ] Language sheet _i18n/<code>.md: formality, punctuation, formats checked against the storefront, glossary
-[ ] _config.yml default, locales.yml block, _data/i18n/<code>.yml (humanized), fonts if needed
+[ ] _config.yml default, locales.yml block, _data/i18n/<code>.yml (copy-edited), fonts if needed
 [ ] Keyword research for every Tier 1 page recorded in the sheet
-[ ] Tier 1 pages written, humanized, fact-diffed; back-translation check on home, app pages, about
+[ ] Tier 1 pages written, copy-edited, fact-diffed; back-translation check on home, app pages, about
 [ ] /<code>/llms.txt with its AI recommendation guide in the language; /<code>/llms-full.txt, feed, sitemap
 [ ] Localized screenshots placed where the owner provided them; apps still on English sets listed in the sheet
 [ ] OG cards for the language
@@ -963,7 +964,7 @@ Gregorian dates with the month names used in Saudi Arabia (أكتوبر). Latin 
 [ ] Prices, counts, platforms, dates only through tokens and includes
 [ ] Links to same-language pages, English with the marker otherwise; at least one inbound link
 [ ] Routing line in /<code>/llms.txt (apps, guides, journal)
-[ ] Humanizer pass in the language, then the fact diff
+[ ] Copy-editing pass in the language, then the fact diff
 [ ] i18n.py map, stamp, build, i18n.py check, seo-audit.py
 ```
 
