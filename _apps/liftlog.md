@@ -324,8 +324,8 @@ related_journal:
 
 ratings:
   value: "5.0"
-  count: 1
-  last_synced: "2026-04-29"
+  count: 2
+  last_synced: "2026-10-29"
 last_updated: 2026-10-29
 ---
 LiftLog is a gym workout tracker for iPhone that you pay for once. The first 7 days are free with no card on file. After that you buy the app once at one of four tiers, from {P_IAP:Minimum} (Fair) to {P_IAP:Patron} (Patron). Every tier unlocks the same app, nothing renews, and Family Sharing is on. If you never buy, your history, charts, and exports stay open to you.
