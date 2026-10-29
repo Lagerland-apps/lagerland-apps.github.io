@@ -3,14 +3,14 @@ layout: app
 slug: millrace
 ref: /apps/millrace/
 permalink: /de/apps/millrace/
-translated_from: 2026-10-26
-og_tagline: "Ein Puzzle mit einer richtigen Lösung."
-tagline: "Ein Liefer-Puzzle: ein Zulauf, ein exaktes Ziel, ein festes Zugbudget."
-quick_answer: "Millrace ist eine Logik-Puzzle-App für iPhone und iPad: ein Liefer-Puzzle mit Kacheln. Jedes der 64 Level gibt dir ein festes Spielfeld, eine Warteschlange von Kacheln, die du schon vor ihrer Ankunft siehst, und ein Zugbudget. Die Kacheln kommen einzeln durch einen markierten Zulauf am Rand des Spielfelds herein, und du musst auf einem markierten Zielfeld genau einen bestimmten Wert bauen, bevor die Züge ausgehen. Verlieren kannst du auf zwei Arten, und beide gehen auf deine eigenen Züge zurück: Du schiebst eine Kachel auf den Zulauf, sodass die nächste keinen Platz mehr hat, oder du schießt über das Ziel hinaus und baust eine 128, wo das Level eine 64 verlangt. Nichts ist zufällig. Jedes Level wurde per Suche gefunden und vor der Veröffentlichung von einem automatischen Solver als lösbar bewiesen, die kürzeste Lösung ist also genau bekannt. Das endlose Merge-Spielfeld gibt es im eigenen Modus „Freies Spiel“. Das ganze Spiel ist kostenlos, ohne Werbung, ohne Abo und ohne Konto, es läuft komplett offline und erfasst keine Daten."
+translated_from: 2026-10-29
+og_tagline: "Ein Puzzle mit einer beweisbaren Lösung."
+tagline: "Ein Kachel-Puzzle, bei dem jedes Level eine bewiesene kürzeste Lösung hat."
+quick_answer: "Millrace ist eine Logik-Puzzle-App mit Kacheln für iPhone und iPad, mit 64 Leveln in sechs Kapiteln. Jedes Level gibt dir ein festes Spielfeld, eine feste Warteschlange ankommender Kacheln und ein Zuglimit, und du musst auf dem markierten Feld genau eine bestimmte Zahl bauen. Ein Solver hat für jedes Level die kürzeste Lösung bewiesen, also siehst du, wie nah du an der perfekten Lösung warst. Kampagne, Freies Spiel, Tagesherausforderung und „Tipp“ sind kostenlos, ohne Werbung und ohne Abo, gekauft werden nur freiwillige Theme-Pakete, Rückgängig-Pakete und ein Trinkgeld. Die App läuft offline und braucht kein Konto."
 
 seo:
   title: "Logik-Puzzle-App ohne Werbung, offline | Millrace"
-  description: "Logik-Puzzle-App für iPhone und iPad: 64 Level mit bewiesener kürzester Lösung, ein Zulauf, ein exaktes Ziel. Kostenlos, offline, ohne Werbung."
+  description: "Logik-Puzzle-App für iPhone und iPad: 64 Level, jedes mit bewiesener kürzester Lösung, dazu ein endloser Modus. Kostenlos, offline, ohne Werbung."
   keywords:
     - logik puzzle app
     - logik puzzle
@@ -20,28 +20,28 @@ seo:
     - puzzle spiel iphone
     - zahlen denkspiel
 
-price_override: "Kostenlos, mit optionalen Theme-Paketen und Rückgängig-Token"
+price_override: "Kostenlos, mit optionalen Theme-Paketen und Rückgängig-Paketen"
 
-plans_footnote: "Das ganze Spiel ist kostenlos: alle 64 Level, „Freies Spiel“, die Tagesherausforderung, „Tipp“, der Coach und Game Center. Jeder Kauf unten ist freiwillig, und keiner ist je nötig, um ein Level zu schaffen. Theme-Pakete sind einmalige Käufe, die nicht verbraucht werden und sich über deinen Apple Account wiederherstellen lassen. Rückgängig-Token sind Verbrauchsartikel. Dazu gibt es freiwillig „Entwickler unterstützen“ für {P_IAP:Millrace Tip Jar}, ein Trinkgeld, das nichts freischaltet. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über den normalen Weg im App Store. Abos gibt es keine."
+plans_footnote: "Das ganze Spiel ist kostenlos: alle 64 Level, das Freie Spiel, die Tagesherausforderung, „Tipp“, die Hinweise vom Coach und Game Center. Jeder Kauf unten ist freiwillig, und kein Level braucht einen. Theme-Pakete sind einmalige Käufe, die du über deinen Apple Account wiederherstellen kannst. Rückgängig-Token sind Verbrauchsartikel, „Käufe wiederherstellen“ holt sie also nicht zurück. Dazu gibt es freiwillig „Entwickler unterstützen“ für {P_IAP:Millrace Tip Jar}, ein Trinkgeld, das nichts freischaltet. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über den normalen Weg im App Store. Ein Abo gibt es nicht."
 
-pricing_note: "Alle Preise stehen im App Store. Es gibt kein Abo, das du kündigen müsstest, und das kostenlose Spiel bleibt kostenlos, ohne Testphase und ohne Karte."
+pricing_note: "Alle Preise stehen im App Store. Es gibt kein Abo, das du kündigen müsstest, und keine Testphase."
 
 plans:
   - name: "Kostenlos"
     price: "{P_ZERO}"
-    summary: "Das ganze Spiel, ohne Werbung, ohne Abo, ohne Konto und ohne Energieanzeige."
+    summary: "Das ganze Spiel, ohne Werbung und ohne Konto."
     features:
       - "Alle 64 Level der Kampagne in sechs Kapiteln"
-      - "„Freies Spiel“: das endlose Merge-Spielfeld mit persönlichen Bestwerten und Serien"
-      - "Eine Tagesherausforderung, die für alle Spieler weltweit gleich ist"
-      - "Unbegrenzt viele Tipps und der Coach"
+      - "Freies Spiel, das endlose Spielfeld, mit Statistiken und Serien"
+      - "Eine Tagesherausforderung mit demselben Spielfeld für alle"
+      - "„Tipp“, kostenloses Rückgängigmachen in den Leveln und die Hinweise vom Coach"
       - "Bestenlisten und Erfolge in Game Center (freiwillig)"
-      - "Das Theme Classic"
-      - "Komplett offline, ohne Anmeldung und ohne Tracking"
+      - "Das Theme Classic, und jedes andere Theme kannst du kostenlos auf deinem Spielfeld testen"
+      - "Läuft offline, ohne Anmeldung und ohne Tracking"
     highlight_label: "Das ganze Spiel"
   - name: "Theme-Pakete"
     price: "je {P_IAP:Millrace Designer Pack 1}"
-    summary: "Optionale 3D-Materialien für das Spielfeld, einzeln gekauft und für immer behalten."
+    summary: "Optionale 3D-Themes für das Spielfeld, einzeln gekauft und für immer behalten."
     features:
       - "Designer-Paket 1: Studio Clay, Paper &amp; Ink, Sakura Pastel, Amber, Heartwood"
       - "Designer-Paket 2: Concrete Studio, Sunset Dunes, Glacier Ice, Brushed Metal, Midnight Neon"
@@ -50,137 +50,138 @@ plans:
       - "Einmalkauf, über deinen Apple Account wiederherstellbar"
   - name: "Komplette Sammlung"
     price: "{P_IAP:Millrace Complete Collection}"
-    summary: "Alle sechzehn kostenpflichtigen Themes auf einmal, günstiger als die vier Pakete einzeln."
+    summary: "Alle sechzehn kostenpflichtigen Themes mit einem Kauf."
     features:
       - "Jedes Theme aus allen vier Paketen"
       - "Einmalkauf, kein Abo"
   - name: "Rückgängig-Pakete"
     price: "ab {P_IAP:Millrace Undo 10}"
-    summary: "Rückgängig-Token zum Verbrauchen. Solange du weniger als drei hast, kommt jeden Tag eines kostenlos dazu."
+    summary: "Rückgängig-Token für das Freie Spiel. Solange du weniger als drei hast, kommt jeden Tag eines kostenlos dazu."
     features:
       - "10 Rückgängig-Token: {P_IAP:Millrace Undo 10}"
       - "50 Rückgängig-Token: {P_IAP:Millrace Undo 50}"
       - "200 Rückgängig-Token: {P_IAP:Millrace Undo 200}"
-      - "Oder du verdienst sie dir: Bei 3, 7, 14 und 30 Tagen Serie gibt es 2, 5, 10 und 20 Token"
-      - "Freiwillig; für kein Level brauchst du sie"
+      - "Oder du verdienst sie dir: Serien von 3, 7, 14 und 30 Tagen bringen 2, 5, 10 und 20 Token"
+      - "Freiwillig; in den Leveln der Kampagne ist Rückgängig immer kostenlos"
 
 hero:
   pre_headline: "Logik-Puzzle mit Kacheln für iPhone und iPad"
-  headline: "Logik-Puzzle-App: 64 Level, ein Zulauf, kein Zufall."
-  secondary: "Ein Liefer-Puzzle, bei dem jedes Level per Suche gefunden und vor der Veröffentlichung als lösbar bewiesen wurde."
-  subheadline: "Jedes Level gibt dir ein festes Spielfeld, eine Warteschlange von Kacheln, die du im Voraus siehst, und ein Zugbudget. Die Kacheln kommen einzeln an einem markierten Zulauf am Rand des Spielfelds an, und du musst auf einem markierten Feld genau einen bestimmten Wert bauen, bevor die Züge ausgehen. Schiebst du eine Kachel auf den Zulauf, hat die nächste keinen Platz mehr. Schießt du über das Ziel hinaus, ist dieser Wert für immer weg. Das endlose Merge-Spielfeld gibt es weiterhin als „Freies Spiel“, direkt von der Levelliste aus."
+  headline: "64 Kachel-Puzzles, jedes mit bewiesener kürzester Lösung."
+  secondary: "Plane deine Züge, bau genau die richtige Zahl und sieh, wie nah du an der perfekten Lösung warst."
+  subheadline: "Jedes Level gibt dir ein festes Spielfeld, eine feste Warteschlange ankommender Kacheln und ein Zuglimit. Die Kacheln kommen einzeln auf dem Ankunftsfeld an, und du musst auf dem markierten Feld genau eine bestimmte Zahl bauen. Blockierst du das Ankunftsfeld, verlierst du. Baust du über das Ziel hinaus, ist das Ziel verloren. Hast du ein Level gelöst, zeigt dir die Ergebniskarte deine Züge neben der bestmöglichen Zahl."
   cta_label: "Kostenlos laden"
   alt: "Millrace auf dem iPhone, Level 58 läuft: genau 64 auf dem markierten Feld bauen, noch 8 Züge, und unter dem 3D-Spielfeld die Warteschlange der ankommenden Kacheln"
 
 screenshot_captions:
   - caption: "Ein Level läuft: genau 64 auf dem markierten Feld bauen, noch 8 Züge, die nächsten Kacheln warten unten."
-  - caption: "Die App startet mit der Kampagne: sechs Kapitel, der Fortschritt pro Kapitel und „Freies Spiel“ direkt erreichbar."
-  - caption: "Gelöst: deine Zugzahl, dein Bestwert und die kürzeste Lösung, falls du sie verfehlt hast."
+  - caption: "Die App startet mit der Kampagne: sechs Kapitel, dein Fortschritt und das Freie Spiel direkt erreichbar."
+  - caption: "Gelöst: deine Zugzahl, dein Bestwert und die bestmögliche Zahl."
   - caption: "Tiefes Wasser: Jedes Level zeigt, wie viele Kacheln ankommen, und deine beste Lösung."
   - caption: "„Tipp“ zeichnet den vorgeschlagenen Zug aufs Spielfeld und sagt, warum."
-  - caption: "Nach einer Partie benennt der Coach eine Gewohnheit, und zwar erst, wenn sie immer wieder auftaucht."
-  - caption: "Statistiken: die Lektion, an der du gerade arbeitest, persönliche Bestwerte, Tagesergebnisse und Serien."
-  - caption: "Glacier Ice, eines von 17 Themes auf einem echten 3D-Spielfeld, das du kippen kannst."
+  - caption: "Nach einer Partie benennt ein Hinweis vom Coach eine Gewohnheit, die immer wieder auftaucht."
+  - caption: "Statistiken: persönliche Bestwerte, Tagesergebnisse und Serien."
+  - caption: "Glacier Ice, eines von 17 Themes auf einem 3D-Spielfeld, das du neigen kannst."
   - caption: "Midnight Neon im Freien Spiel, dem endlosen Spielfeld."
 
 who_for:
-  - "Du willst Rätsel mit einer echten Lösung, und ein endloses Spielfeld mit Highscore-Liste lässt dich kalt."
-  - "Du planst gern mehrere Züge voraus und jagst in jedem Level eine bewiesene kürzeste Lösung."
-  - "Du magst eine Schwierigkeitskurve, die gemessen ist."
-  - "Du willst ein Spiel, das im Flugzeug oder in der U-Bahn läuft, ganz ohne Anmeldung."
-  - "Dir ist wichtig, dass ein Spiel nichts über dich sammelt."
+  - "Du magst Logik-Puzzles mit einer eindeutigen Lösung und einer besten Lösung als Ziel."
+  - "Du kennst Merge-Spiele mit Kacheln und willst eines mit Ziel, Zuglimit und Ende."
+  - "Du willst ein schön gemachtes Spiel ohne Werbung: 3D-Themes, Ambient-Musik und Haptik."
+  - "Du willst auch einen endlosen Modus zum Entspannen und eine Tagesherausforderung, die du mit Freunden vergleichen kannst."
+  - "Du spielst lieber ohne Wischen, mit Bewegungstasten auf dem Bildschirm für VoiceOver und die Schaltersteuerung."
 
 who_not_for:
   - "Du suchst Wettkampf oder Echtzeit-Mehrspieler. Millrace ist ein rundenbasiertes Einzelspieler-Spiel."
-  - "Du willst Hunderte schneller Level zum Durchtippen. Die Kampagne hat 64 Level, und jedes verlangt echtes Vorausdenken."
-  - "Du willst eine eigene Mac-App. Millrace ist für iPhone und iPad gemacht (Macs mit Apple Silicon können die iPad-Version installieren, die Apple als „Nicht für macOS überprüft“ kennzeichnet)."
-  - "Du willst deinen Fortschritt zwischen Geräten synchronisieren. Er wird lokal gespeichert und nicht synchronisiert."
+  - "Du willst Hunderte schneller Level zum Durchtippen. Die Kampagne hat 64 Level, und jedes verlangt Planung."
+  - "Du willst eine Version für Mac, Apple Watch oder Android. Millrace gibt es nur für iPhone und iPad."
+  - "Du willst deinen Fortschritt zwischen Geräten synchronisieren. Er bleibt auf jedem Gerät für sich."
 
 value_points:
-  - title: "Nichts ist zufällig"
-    description: "Du siehst die Warteschlange der ankommenden Kacheln, bevor sie landen, das Spielfeld steht fest und das Ziel ist exakt. Ein Level ist damit ein geschlossenes Problem, das du komplett durchdenken kannst. Wenn du das zufällige endlose Spielfeld willst, findest du es im Freien Spiel."
-  - title: "Level, gefunden per Suche"
-    description: "Jedes Level wird per Suche erzeugt und muss vor der Veröffentlichung eine automatische Prüfung bestehen. Es muss lösbar sein, seine kürzeste Lösung muss durch vollständige Suche bestätigt sein, und es darf sich nicht gedankenlos gewinnen lassen: Jedes Level, durch das eine Strategie ohne Vorausschau zufällig durchkommt, fliegt raus. Ein Level in der App hat eine echte Lösung und keine billige."
-  - title: "Eine gemessene Schwierigkeitskurve"
-    description: "Die sechs Kapitel richten sich nach der genauen Länge der optimalen Lösung: fünf Züge in Aufwärmen, dann sechs, sieben, acht, neun und zehn oder mehr in Meisterschaft. Jedes Kapitel verlangt, dass du genau einen Zug mehr im Kopf behältst als das vorige, und die Kurve folgt der Suchtiefe."
-  - title: "Erfasst nichts und kann es belegen"
-    description: "Es gibt kein Konto, keinen Server, keine Analyse, keine Werbung und kein SDK von Drittanbietern, und die App enthält überhaupt keinen Netzwerkcode. Unter App-Datenschutz steht im App Store „Keine Daten erfasst“, und das Datenschutzmanifest meldet kein Tracking, keine Tracking-Domains und keine erfassten Datentypen."
+  - title: "Ein Ziel, ein Zuglimit und ein Ende"
+    description: "Jedes Level hat ein festes Spielfeld, eine feste Warteschlange ankommender Kacheln, ein Zuglimit und genau eine Zahl, die du bauen musst. In einem Level ist nichts zufällig, also kannst du es vom ersten bis zum letzten Zug durchdenken."
+  - title: "Eine bewiesene kürzeste Lösung"
+    description: "Ein Solver mit Breitensuche hat für jedes Level die kürzeste Lösung gefunden, bevor es erschienen ist. Hast du ein Level gelöst, zeigt dir die Ergebniskarte deine Zugzahl, deinen Bestwert und die bestmögliche Zahl."
+  - title: "Ein Tipp, der immer zum Sieg führt"
+    description: "In einem Level der Kampagne kommt „Tipp“ von diesem Solver, der vorgeschlagene Zug führt also immer zu einer Lösung. Er zeichnet einen Pfeil aufs Spielfeld und nennt in einer Zeile den Grund."
+  - title: "Komplett kostenlos, ohne Werbung"
+    description: "Kampagne, Freies Spiel, Tagesherausforderung und „Tipp“ kosten nichts. Theme-Pakete und Rückgängig-Pakete sind freiwillige Einmalkäufe, und ein Abo gibt es nicht."
 
 features:
   - title: "Die Kampagne"
-    description: "64 Level in sechs Kapiteln: Aufwärmen (4 Level), danach Taktik, Druck, Präzision, Tiefes Wasser und Meisterschaft mit je 12. Jedes Level ist ein festes Spielfeld mit sichtbarer Warteschlange, einem Zugbudget und einem exakten Wert, den du auf ein markiertes Feld liefern musst."
+    description: "64 Level in sechs Kapiteln: Aufwärmen, Taktik, Druck, Präzision, Tiefes Wasser und Meisterschaft. Aufwärmen bringt dir die Regeln bei. Die Levelliste zeigt, wie viele du gelöst hast, deine beste Zugzahl pro Level und einen Weiter-Knopf für das nächste ungelöste Level."
   - title: "Zwei Arten zu verlieren"
-    description: "Blockierst du den Zulauf, hat die nächste Kachel keinen Platz zum Landen. Schießt du über das Ziel hinaus (eine 128, wo das Level 64 verlangt), ist dieser Wert für immer weg. Beide Niederlagen kommen aus deinen eigenen Zügen und nicht aus Pech."
-  - title: "„Tipp“ kommt vom Solver"
-    description: "In einem Level der Kampagne fragt „Tipp“ denselben vollständigen Solver, der das Level geprüft hat, nach dem ersten Zug einer Gewinnlinie von deiner aktuellen Stellung aus und zeichnet ihn mit einer kurzen Begründung aufs Spielfeld. Im Freien Spiel rechnet er stattdessen von deinem aktuellen Spielfeld aus voraus. Tipps werden nie rationiert oder verkauft."
-  - title: "Der Coach"
-    description: "Nach einer Partie im Freien Spiel kann der Coach eine Gewohnheit benennen, an der sich zu arbeiten lohnt: Ecken, Enge oder Ordnung. Er meldet sich erst, wenn ein Muster in deinen letzten Partien immer wieder auftaucht, arbeitet an einer Lektion nach der anderen, legt sie ab, sobald du sie beherrschst, und sagt dir, wenn du es richtig machst. Er unterbricht nie das Spiel, und die „Hinweise vom Coach“ lassen sich in den Einstellungen abschalten."
-  - title: "Freies Spiel und die Tagesherausforderung"
-    description: "Direkt von der Levelliste aus erreichst du ein endloses Spielfeld ohne Ziel und ohne Zuglimit. Schieben, gleiche Zahlen verbinden und schauen, wie weit es geht. Es speichert persönliche Bestwerte, bietet eine Tagesherausforderung, die für alle Spieler weltweit gleich ist, und eine tägliche Serie, deren Meilensteine kostenlose Rückgängig-Token bringen."
-  - title: "Siebzehn Themes auf einem echten 3D-Spielfeld"
-    description: "Das Spielfeld ist eine echte 3D-Szene. Kippst du das Gerät, wandert das Licht über Keramik, Glas, Walnussholz, Papier, gebürstetes Metall und Neon. Classic ist kostenlos, die anderen sechzehn gibt es in optionalen Paketen."
+    description: "Auf dem Ankunftsfeld kommen laufend neue Kacheln an. Blockierst du es, hat die nächste Kachel keinen Platz zum Landen. Baust du über das Ziel hinaus (eine 128, wo das Level 64 verlangt), ist das Ziel verloren. Nach einer Niederlage kannst du den Zug zurücknehmen oder das Level neu versuchen."
+  - title: "Tipp"
+    description: "Tippst du auf die Glühbirne, zeichnet „Tipp“ einen starken nächsten Zug mit einer kurzen Begründung aufs Spielfeld. In den Leveln der Kampagne kommt der Zug von einem Solver mit Breitensuche und führt immer zu einer Lösung. Im Freien Spiel ist er ein Vorschlag aus einer Bewertung, die vorausrechnet. „Tipp“ ist kostenlos."
+  - title: "Hinweise vom Coach"
+    description: "Am Ende einer Partie kann ein kurzer Hinweis auf der Karte am Spielende eine Gewohnheit benennen, die dem Spiel in deinen letzten Partien aufgefallen ist: deine größte Kachel verlässt ihre Ecke, das Spielfeld ist zu voll, oder deine großen Kacheln liegen durcheinander. Hast du die Gewohnheit abgelegt, kommt der Hinweis nicht mehr. Er erscheint nie während des Spiels, und du kannst ihn in den Einstellungen abschalten."
+  - title: "Freies Spiel und Tagesherausforderung"
+    description: "Das Freie Spiel ist das endlose Spielfeld, direkt von der Levelliste aus: Kacheln schieben, gleiche zusammenführen und spielen, solange du kannst, ohne Ziel und ohne Zuglimit. Die Tagesherausforderung gibt allen Spielern jeden Tag dasselbe Spielfeld, und dein erster Zug darin bringt dir ein kostenloses Rückgängig-Token."
+  - title: "Rückgängig, Serien und Statistiken"
+    description: "In den Leveln der Kampagne ist Rückgängig kostenlos und unbegrenzt. Im Freien Spiel kostet es ein Token: Jeden Tag bekommst du eines geschenkt (bis zu drei auf Vorrat), dazu Serien-Belohnungen nach 3, 7, 14 und 30 Tagen. Die Statistiken zeigen Bestwert, beste Kachel, Tagesergebnisse und Serien."
+  - title: "17 Themes auf einem 3D-Spielfeld"
+    description: "Das Spielfeld ist eine 3D-Szene, und jedes Theme hat seine eigenen Materialien, von durchscheinenden Bernstein-Steinen über Lack und Gold bis zu einem gefrorenen See und einem Geschenk im Schnee. Classic ist kostenlos. Jedes andere Theme kannst du auf deinem eigenen Spielfeld testen und dann behalten oder freischalten. Den Kamerawinkel änderst du mit einem Regler oder mit zwei Fingern."
+  - title: "Spielen ohne Wischen"
+    description: "Mit den Bewegungstasten auf dem Bildschirm bewegst du Kacheln, ohne zu wischen. Steht die Einstellung auf „Automatisch“, erscheinen sie, wenn VoiceOver oder die Schaltersteuerung aktiviert ist."
   - title: "iPhone und iPad"
-    description: "Auf dem iPad ist das Layout nativ: Das Spielfeld wird für die breitere Fläche neu eingepasst, die Bedienelemente behalten eine angenehme Breite, und das Spiel dreht sich mit ins Querformat. Erfordert iOS 18 oder iPadOS 18."
+    description: "Auf dem iPad dreht sich das Spiel in jede Ausrichtung mit, und das Spielfeld wird beim Drehen neu eingepasst. Auf dem iPhone spielst du im Hochformat. Erfordert iOS 18 oder iPadOS 18."
   - title: "Sound, Musik und Haptik"
-    description: "Haptik, Soundeffekte und ein leiser Ambient-Soundtrack, jeweils mit eigenem Schalter in den Einstellungen. Der Ton hält sich an den Stummmodus und unterbricht nie Musik, die du schon hörst."
-  - title: "Komplett übersetzt"
-    description: "Jeder Text, den Spieler sehen, ist in 34 Sprachen für 40 App-Store-Lokalisierungen übersetzt, auch ins Deutsche. Kein Text ist fest im Code verdrahtet, und die Kapitelnamen in der App und im Store stimmen überein."
+    description: "Leise Soundeffekte, ruhige Ambient-Musik und Haptik bei Zügen, Zusammenführungen und Siegen, jeweils mit eigenem Schalter in den Einstellungen."
+  - title: "40 Lokalisierungen"
+    description: "Die App gibt es in 40 Lokalisierungen, mit Layouts von rechts nach links für Arabisch und Hebräisch."
 
 how_it_works:
-  heading: "Was ein Level überstehen muss, bevor es erscheint."
-  intro: "Die Level von Millrace werden von Software erzeugt und geprüft, nicht nach Gefühl entworfen. Jedes durchläuft diese Schritte, bevor es bei dir ankommt."
+  heading: "Wie ein Level ins Spiel kommt."
+  intro: "Die Level von Millrace werden von Software erzeugt und geprüft und dann in Kapitel eingeteilt. Jedes durchläuft diese Schritte, bevor es bei dir ankommt."
   steps:
     - title: "Eine Suche findet ein Kandidaten-Level"
-      detail: "Ein Generator sucht nach Kombinationen aus Spielfeld und Warteschlange, die eine interessante Lieferaufgabe ergeben. So kommt die Sammlung auf 64 Level, die sich voneinander unterscheiden, statt auf 64 Varianten einer einzigen Idee."
-    - title: "Ein vollständiger Solver bestätigt, dass es eine Lösung gibt"
-      detail: "Jeder Kandidat läuft durch eine Breitensuche, die die tatsächlich kürzeste Lösung findet. Ein Level ohne Lösung kann nicht erscheinen, und die optimale Zugzahl ist genau bekannt. Deshalb kann dir die Ergebniskarte die bestmögliche Zugzahl nennen, wenn du sie verfehlst."
-    - title: "Level, die sich gedankenlos gewinnen lassen, fliegen raus"
-      detail: "Danach spielt die Prüfung jeden Kandidaten mit 280 Strategien ohne Vorausschau durch: immer dieselbe Richtung, feste Zyklen, feste Prioritätsreihenfolgen, gieriges Spiel mit jeder Regel für Gleichstände und regelkundige Spieler, die den Zulauf frei halten. Stolpert auch nur eine davon zu einem Sieg, wird das Level verworfen. Kein Level lässt sich also mit Glück oder durch stures Wischen in eine Richtung schlagen."
-    - title: "Was übrig bleibt, landet nach seiner Tiefe in einem Kapitel"
-      detail: "Die geprüfte optimale Länge entscheidet, wo ein Level hinkommt: fünf Züge in Aufwärmen, sechs in Taktik, sieben in Druck, acht in Präzision, neun in Tiefes Wasser, zehn oder mehr in Meisterschaft. Das Kapitel sagt dir, wie weit du vorausdenken musst."
+      detail: "Ein Generator sucht nach Spielfeldern und Warteschlangen, die eine lohnende Lieferaufgabe ergeben. Kein Level wird von Hand gezeichnet."
+    - title: "Ein Solver beweist die kürzeste Lösung"
+      detail: "Eine Breitensuche findet die kürzeste Lösung, und diese Zugzahl wird zur bestmöglichen Zahl des Levels. Ein Level ohne bewiesene Lösung erscheint nicht."
+    - title: "Ein Test prüft, dass Zufallsspiel selten gewinnt"
+      detail: "Jedes Level wird in einem automatischen Test gegen zufällige Züge gespielt. Ein Level, das sich mit Zufallszügen leicht gewinnen lässt, ist kein Rätsel, also hält der Test es zurück."
+    - title: "Die Level werden in sechs Kapitel eingeteilt"
+      detail: "Die Kampagne führt von Aufwärmen, wo du die Regeln lernst, über Taktik, Druck, Präzision und Tiefes Wasser bis zu Meisterschaft."
 
 example_insights:
   anchor: "coach"
-  overline: "Was der Coach wirklich sagt"
+  overline: "Was die Hinweise vom Coach sagen"
   heading: "Eine Gewohnheit nach der anderen, in einem Satz."
-  intro: "Der Coach reagiert nie auf eine einzelne schlechte Partie. Er nimmt eine Lektion erst auf, wenn ihr Muster in deinen letzten fünf Partien im Freien Spiel wiederholt aufgetaucht ist, es ist immer nur eine Lektion aktiv, und sie wird abgelegt, sobald du sie beherrschst. Das sind die Sätze aus der deutschen App."
+  intro: "Am Ende einer Partie kann die Karte am Spielende einen kurzen Hinweis zu einem Muster aus deinen letzten Partien zeigen. Es gibt drei Lektionen, und eine Lektion kommt nicht mehr, sobald du sie beherrschst. Nichts verlässt dein Gerät. Das sind die Sätze aus der deutschen App."
   cards:
     - tag: "Lektion 1 · Ecken"
       headline: "„Deine 512 hat die Ecke verlassen, obwohl ein anderer Zug sie dort gehalten hätte.“"
-      body: "Der Grundsatz dazu: „Deine größte Kachel ist in einer Ecke am sichersten. Den Rest darum herum bauen.“ Der Satz kommt nur, wenn ein anderer erlaubter Zug die Kachel wirklich an ihrem Platz gehalten hätte. Das prüft die App am Spielfeld nach."
+      body: "Der Grundsatz dazu: „Deine größte Kachel ist in einer Ecke am sichersten. Den Rest darum herum bauen.“"
     - tag: "Lektion 2 · Enge"
       headline: "„Dein Spielfeld war einen großen Teil der Zeit fast voll.“"
-      body: "Grundsatz: „Kleine Kacheln früh abbauen: auf einem vollen Spielfeld geht nichts mehr.“ Er kommt nur in einer echten Partie, wenn mehr als ein Drittel der Züge mit zwei oder weniger freien Feldern gespielt wurde."
+      body: "Grundsatz: „Kleine Kacheln früh abbauen: auf einem vollen Spielfeld geht nichts mehr.“"
     - tag: "Lektion 3 · Ordnung"
       headline: "„Deine großen Kacheln waren am Ende über das ganze Spielfeld verteilt.“"
-      body: "Grundsatz: „Große Kacheln in einer Reihe zusammenhalten, der Größe nach geordnet.“ Diese Lektion kommt mit Absicht zuletzt, denn die Reihenfolge nach Größe nützt nichts, solange jemand noch keine Ecke halten kann."
-    - tag: "Lob"
-      headline: "„Deine 512 ist das ganze Spiel über in ihrer Ecke geblieben.“"
-      body: "Ein Coach, der nur bei Fehlern etwas sagt, ist ein Kritiker. Zeigt eine Partie, dass du es richtig machst, sagt er das auch, und eine Lektion, die du gelernt hast, ist für immer erledigt."
+      body: "Grundsatz: „Große Kacheln in einer Reihe zusammenhalten, der Größe nach geordnet.“"
     - tag: "Tipp"
       headline: "„Hält deine 1024 sicher in der Ecke.“"
-      body: "„Tipp“ zeichnet den vorgeschlagenen Zug mit einer einzeiligen Begründung aufs Spielfeld. In einem Level der Kampagne kommt der Zug direkt vom Solver: der erste Schritt einer Linie, die noch gewinnt."
+      body: "„Tipp“ zeichnet den vorgeschlagenen Zug mit einer einzeiligen Begründung aufs Spielfeld. In einem Level der Kampagne kommt der Zug vom Solver und führt immer zu einer Lösung, im Freien Spiel ist er ein Vorschlag."
 
 comparison_table:
   intro: "Jede Zeile ist eine Frage, die sich Puzzle-Fans vor der Installation stellen. Threes ist das Original unter den Zahlen-Schiebespielen, KAMI 2 und Flow Free sind levelbasierte Logik-Klassiker mit einer Zugzahl, die es zu schlagen gilt, und Two Dots ist die langlebige Level-Saga mit Zuglimit. Alle vier haben weit mehr Inhalt als Millrace. Die Tabelle zeigt, was ein Level von dir verlangt, was es kostet und was erfasst wird."
   competitors: ["Millrace", "Threes!", "KAMI 2", "Flow Free", "Two Dots"]
   rows:
     - feature: "Was ein Level verlangt"
-      values: ["Einen exakten Wert auf einem markierten Feld bauen", "Keine Level; auf einem endlosen Spielfeld überleben", "Das ganze Blatt in eine Farbe fluten", "Alle Farbpaare verbinden und das Feld füllen", "Die Aufgaben des Levels erfüllen"]
+      values: ["Genau eine Zahl auf dem markierten Feld bauen", "Keine Level; auf einem endlosen Spielfeld überleben", "Das ganze Blatt in eine Farbe fluten", "Alle Farbpaare verbinden und das Feld füllen", "Die Aufgaben des Levels erfüllen"]
     - feature: "Level"
       values: ["64, jedes mit bewiesener kürzester Lösung", "Keine; ein endloser Modus", "Über 100, von Hand gebaut", "Über 2500 kostenlos, dazu kostenpflichtige Pakete", "Mehr als 5000"]
     - feature: "Zuglimit"
-      values: ["Ein Budget höchstens zwei Züge über der bewiesenen kürzesten Lösung", "Keins; gespielt wird, bis kein Zug mehr geht", "Eine Zielzahl an Zügen für ein „Perfect“", "Keins im Modus Free Play; Züge werden gezählt", "Ja, in jedem Level"]
+      values: ["Ja, in jedem Level", "Keins; gespielt wird, bis kein Zug mehr geht", "Eine Zielzahl an Zügen für ein „Perfect“", "Keins im Modus Free Play; Züge werden gezählt", "Ja, in jedem Level"]
     - feature: "Was du kommen siehst"
-      values: ["Die ganze Warteschlange, vor deinem ersten Zug", "Die Art der nächsten Kachel", "Das ganze Blatt; nichts kommt hinzu", "Das ganze Feld; nichts kommt hinzu", "Neue Punkte fallen ungesehen herein"]
+      values: ["Wie viele Kacheln noch kommen, und die nächste", "Die Art der nächsten Kachel", "Das ganze Blatt; nichts kommt hinzu", "Das ganze Feld; nichts kommt hinzu", "Neue Punkte fallen ungesehen herein"]
     - feature: "Leben, Booster oder bezahlte Hilfe"
-      values: ["Nichts davon; „Tipp“ und der Coach sind kostenlos", "Nichts davon", "Hinweise über Belohnungsvideos oder Pakete", "Hinweis-Pakete; optionales Zeitrennen", "5 Leben, Power-ups und Booster"]
+      values: ["Nichts davon; „Tipp“ und Rückgängig in den Leveln sind kostenlos", "Nichts davon", "Hinweise über Belohnungsvideos oder Pakete", "Hinweis-Pakete; optionales Zeitrennen", "5 Leben, Power-ups und Booster"]
     - feature: "Werbung"
-      values: ["Keine", "Keine in der Kauf-App; die kostenlose Ausgabe Threes! Freeplay zeigt Werbung", "Ja, laut Versionshinweisen und Spielerbewertungen", "Ja; ein In-App-Kauf entfernt sie", "Ja, auch ein Video-Glücksrad für zusätzliche Züge"]
-    - feature: "Preis"
+      values: ["Keine", "Keine in der Kauf-App; die kostenlose Ausgabe zeigt Werbung", "Ja, laut Versionshinweisen und Spielerbewertungen", "Ja; ein In-App-Kauf entfernt sie", "Ja, auch ein Video-Glücksrad für zusätzliche Züge"]
+    - feature: "Preismodell"
       values: ["Kostenlos; optionale Themes und Rückgängig-Token", "Einmalkauf, keine In-App-Käufe", "Kostenlos mit In-App-Käufen", "Kostenlos; ein In-App-Kauf schaltet Pakete frei und entfernt die Werbung", "Kostenlos mit In-App-Käufen"]
-    - feature: "App-Datenschutz im App Store"
-      values: ["Keine Daten erfasst", "Keine Daten erfasst (Kauf-App)", "Daten, die zum Tracking verwendet werden", "Daten, die zum Tracking verwendet werden", "Daten, die zum Tracking verwendet werden"]
+    - feature: "Datenschutz"
+      values: ["Kein Konto und kein Tracking", "Angabe: Keine Daten erfasst (Kauf-App)", "Angabe: Daten, die zum Tracking verwendet werden", "Angabe: Daten, die zum Tracking verwendet werden", "Angabe: Daten, die zum Tracking verwendet werden"]
     - feature: "Plattformen"
       values: ["iPhone und iPad", "iPhone, iPad, Android, Steam und Web", "iPhone, iPad, Android, Steam und Switch", "iPhone, iPad und Android", "iPhone, iPad und Android"]
   footnote: "Die Angaben zu den anderen Apps wurden am 24. September 2026 anhand ihrer öffentlichen App-Store-Seiten, Versionshinweise und Hilfeseiten geprüft. Preise, Werbung und Datenschutzangaben ändern sich, prüf sie also vor der Installation. Threes!+ und Flow Free+ sind Ausgaben für Apple Arcade ohne Werbung und ohne In-App-Käufe. Suika Game ist ein Physik-Spiel zum Zusammenführen und kein levelbasiertes Puzzle. Es hat seinen eigenen Vergleich."
@@ -188,55 +189,55 @@ comparison_table:
 
 faq:
   - q: "Was für ein Logik-Puzzle ist Millrace?"
-    a: "Ein Liefer-Puzzle. Du bekommst ein festes Spielfeld, eine Warteschlange von Kacheln, die du vor ihrer Ankunft siehst, und ein Zugbudget. Die Kacheln kommen durch einen markierten Zulauf am Rand des Spielfelds herein, und du musst auf einem markierten Feld genau einen bestimmten Wert bauen, bevor die Züge ausgehen. Gleiche Zahlen verbinden sich wie in einem Merge-Spiel, aber anders als in einem endlosen Merge-Spiel steht das Spielfeld fest, die ankommenden Kacheln sind bekannt, und es gibt eine bestimmte richtige Lösung."
+    a: "Ein Logik-Puzzle mit Kacheln und Leveln. Jedes Level gibt dir ein festes Spielfeld, eine feste Warteschlange ankommender Kacheln und ein Zuglimit. Die Kacheln kommen einzeln auf dem Ankunftsfeld an, gleiche Kacheln verbinden sich, wenn du sie zusammenschiebst, und dein Ziel ist genau eine bestimmte Zahl auf dem markierten Feld. In einem Level ist nichts zufällig, und jedes Level hat eine bewiesene kürzeste Lösung."
   - q: "Woher weiß ich, dass jedes Level lösbar ist?"
-    a: "Ein Solver prüft es, bevor das Level erscheint. Jedes Level läuft durch eine vollständige Breitensuche, die die kürzeste Lösung findet, und was keine Lösung hat, kommt nie in die App. Derselbe Ablauf wirft Level raus, durch die eine gedankenlose Strategie ohne Vorausschau zufällig durchkäme. Ein Level in Millrace hat also eine echte Lösung und keine billige. Das Zugbudget richtet sich nach dieser bewiesenen kürzesten Lösung: nie mehr als zwei Züge darüber, und in zwei Leveln genau gleich."
+    a: "Ein Solver prüft es, bevor das Level erscheint. Jedes Level läuft durch eine Breitensuche, die seine kürzeste Lösung findet, und ein Level ohne bewiesene Lösung erscheint nicht. Ein automatischer Test prüft außerdem, dass Zufallsspiel selten gewinnt. Die kürzeste Lösung ist die bestmögliche Zahl, die dir die Ergebniskarte zeigt."
   - q: "Wie kann ich in Millrace verlieren?"
-    a: "Auf zwei Arten: Du blockierst den Zulauf, oder du schießt über das Ziel hinaus. Schiebst du eine Kachel auf den markierten Zulauf, hat die nächste ankommende Kachel keinen Platz zum Landen. Baust du einen Wert über dem Ziel (eine 128, wo das Level eine 64 verlangt), ist dieser Wert für immer weg, und die Lieferung lässt sich nicht mehr schaffen. Beides kommt aus deinen eigenen Zügen, und genau darum geht es."
+    a: "Auf zwei Arten: Du blockierst das Ankunftsfeld, oder du baust über das Ziel hinaus. Auf dem Ankunftsfeld kommen laufend Kacheln an. Liegt dort eine Kachel, hat die nächste keinen Platz zum Landen. Baust du eine Zahl über dem Ziel (eine 128, wo das Level 64 verlangt), ist das Ziel verloren. Nach einer Niederlage kannst du den Zug zurücknehmen oder das Level neu versuchen."
   - q: "Gibt es einen endlosen Modus?"
-    a: "Ja: „Freies Spiel“, direkt von der Levelliste aus erreichbar. Es hat kein Ziel und kein Zuglimit. Du schiebst, verbindest gleiche Zahlen und schaust, wie weit du kommst. Es speichert persönliche Bestwerte und eine tägliche Serie und bietet eine Tagesherausforderung, die für alle Spieler weltweit gleich ist. Die App startet mit der Kampagne, aber das Freie Spiel ist genauso sorgfältig gemacht."
+    a: "Ja: das Freie Spiel, direkt von der Levelliste aus erreichbar. Es hat kein Ziel und kein Zuglimit. Du schiebst Kacheln, verbindest gleiche und spielst, solange du kannst. Es speichert deine Statistiken und Serien, und die Tagesherausforderung gibt allen Spielern jeden Tag dasselbe Spielfeld."
   - q: "Was kostet Millrace?"
-    a: "Für das ganze Spiel nichts. Alle 64 Level, das Freie Spiel, die Tagesherausforderung, „Tipp“, der Coach und Game Center sind kostenlos, ohne Werbung und ohne Abo. Gekauft wird nur freiwillig: Theme-Pakete für je {P_IAP:Millrace Designer Pack 1} oder alle sechzehn kostenpflichtigen Themes als „Komplette Sammlung“ für {P_IAP:Millrace Complete Collection}, Rückgängig-Pakete ab {P_IAP:Millrace Undo 10} und „Entwickler unterstützen“ für {P_IAP:Millrace Tip Jar}, ein Trinkgeld, das nichts freischaltet. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+    a: "Für das ganze Spiel nichts. Alle 64 Level, das Freie Spiel, die Tagesherausforderung, „Tipp“, die Hinweise vom Coach und Game Center sind kostenlos, ohne Werbung und ohne Abo. Gekauft wird nur freiwillig: Theme-Pakete für je {P_IAP:Millrace Designer Pack 1} oder alle sechzehn kostenpflichtigen Themes als „Komplette Sammlung“ für {P_IAP:Millrace Complete Collection}, Rückgängig-Pakete ab {P_IAP:Millrace Undo 10} und „Entwickler unterstützen“ für {P_IAP:Millrace Tip Jar}, ein Trinkgeld, das nichts freischaltet. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
   - q: "Muss ich Rückgängig-Token kaufen?"
-    a: "Nein. Kein Level braucht sie, und du kannst jedes Level so oft neu starten, wie du willst. Die Token sind ein Sicherheitsnetz zum Verbrauchen, vor allem fürs Freie Spiel, und es gibt sie in Paketen mit 10, 50 oder 200 Stück. Solange du weniger als drei hast, kommt jeden Tag ein kostenloses Token dazu, und die Meilensteine der täglichen Serie bei 3, 7, 14 und 30 Tagen bringen 2, 5, 10 und 20 weitere."
-  - q: "Was macht der Coach, und kann ich ihn abschalten?"
-    a: "Nach einer Partie im Freien Spiel kann er eine Gewohnheit benennen, an der sich zu arbeiten lohnt: die größte Kachel in einer Ecke halten, das Spielfeld nicht volllaufen lassen oder große Kacheln der Größe nach zusammenhalten. Er meldet sich erst, wenn ein Muster in deinen letzten Partien wiederholt aufgetaucht ist, bringt dir eine Lektion nach der anderen bei und legt sie ab, sobald du sie beherrschst. Er unterbricht nie das Spiel, und die „Hinweise vom Coach“ kannst du in den Einstellungen abschalten."
+    a: "Nein. In den Leveln der Kampagne ist Rückgängig kostenlos und unbegrenzt, und du kannst jedes Level so oft neu versuchen, wie du willst. Die Token sind fürs Freie Spiel: Solange du weniger als drei hast, kommt jeden Tag eines kostenlos dazu, dein erster Zug in der Tagesherausforderung bringt eines, und Serien von 3, 7, 14 und 30 Tagen bringen 2, 5, 10 und 20 weitere. Pakete mit 10, 50 oder 200 Token gibt es, wenn du mehr willst."
+  - q: "Was machen die Hinweise vom Coach, und kann ich sie abschalten?"
+    a: "Am Ende einer Partie kann ein kurzer Hinweis auf der Karte am Spielende eine Gewohnheit benennen, die dem Spiel in deinen letzten Partien aufgefallen ist: die größte Kachel in einer Ecke halten, das Spielfeld nicht volllaufen lassen oder große Kacheln der Größe nach zusammenhalten. Hast du die Gewohnheit abgelegt, kommt der Hinweis nicht mehr. Hinweise erscheinen nie während des Spiels, nichts verlässt dein Gerät, und du kannst die „Hinweise vom Coach“ in den Einstellungen abschalten."
   - q: "Funktioniert Millrace offline?"
-    a: "Vollständig. Die App enthält überhaupt keinen Netzwerkcode und lädt selbst nie etwas hoch oder herunter, im Flugmodus verhält sie sich also genauso. Game Center und In-App-Käufe sind, wenn du sie nutzt, die einzigen Teile, die mit Apple sprechen."
+    a: "Ja. Das ganze Spiel läuft offline. Eine Verbindung brauchst du nur für den Shop und „Käufe wiederherstellen“, für Game Center, wenn du es nutzt, und für Links, die du öffnest, etwa die Datenschutzerklärung."
   - q: "Sammelt Millrace Daten über mich?"
-    a: "Nein. Unter App-Datenschutz steht bei Millrace im App Store „Keine Daten erfasst“. Es gibt kein Konto, keine Analyse, keine Werbung und kein SDK von Drittanbietern. Das Datenschutzmanifest meldet kein Tracking, eine leere Liste von Tracking-Domains und keine erfassten Datentypen. Die einzige Required-Reason-API ist der lokale Speicher für Einstellungen. Dein Fortschritt bleibt auf deinem Gerät. Alle Einzelheiten stehen in der Datenschutzerklärung."
+    a: "Du brauchst kein Konto, und die App hat kein Tracking und keine Analyse-, Werbe- oder Drittanbieter-SDKs. Fortschritt, Statistiken und Einstellungen bleiben auf deinem Gerät. Käufe und Game Center laufen, wenn du sie nutzt, über Apple, und eine Support-Mail, die du selbst schickst, enthält App-Version, Gerätemodell, iOS-Version und Sprache. Alle Einzelheiten stehen in der Datenschutzerklärung."
   - q: "Läuft Millrace auf iPad und Mac, und wird der Fortschritt synchronisiert?"
-    a: "Millrace läuft nativ auf iPhone und iPad und erfordert iOS 18 oder iPadOS 18. Auf dem iPad wird das Spielfeld für den größeren Bildschirm neu eingepasst und funktioniert auch im Querformat. Eine Mac-Version gibt es nicht, aber Macs mit Apple Silicon können die iPad-App installieren, die Apple als „Nicht für macOS überprüft“ kennzeichnet. Der Fortschritt wird auf jedem Gerät einzeln gespeichert und nicht synchronisiert. Einträge in Bestenlisten und Erfolge laufen über Game Center und werden von Apple gespeichert."
+    a: "Millrace läuft auf iPhone und iPad ab iOS 18 oder iPadOS 18. Auf dem iPad funktioniert es in jeder Ausrichtung. Eine Version für Mac, Apple Watch oder Android gibt es nicht. Der Fortschritt wird auf jedem Gerät einzeln gespeichert und nicht synchronisiert. Einträge in Bestenlisten und Erfolge speichert Game Center, wenn du angemeldet bist."
   - q: "Gibt es Millrace auf Deutsch?"
-    a: "Ja. Die ganze Oberfläche ist auf Deutsch übersetzt, als eine von 34 Sprachen. Nur die Namen der Themes wie Classic oder Glacier Ice bleiben in jeder Sprache englisch."
+    a: "Ja. Die ganze Oberfläche ist auf Deutsch übersetzt, als eine von 40 Lokalisierungen. Nur die Namen der Themes wie Classic oder Glacier Ice bleiben in jeder Sprache englisch."
   - q: "Warum heißt das Spiel Millrace?"
-    a: "Ein Millrace ist ein Mühlgraben, der Kanal, der das Wasser zum Mühlrad führt: ein stetiger Strom, der an einer Stelle ankommt. Genau so funktioniert das Spiel. Die Kacheln kommen ständig am Zulauf an, und du musst den Kanal frei halten, während du die Lieferung baust."
+    a: "Ein Millrace ist ein Mühlgraben, der Kanal, der das Wasser zum Mühlrad führt: ein stetiger Strom, der an einer Stelle ankommt. Im Spiel kommen die Kacheln laufend auf einem Feld an, und du hältst es frei, während du auf das Ziel hinbaust."
 
 privacy:
   data_collection: "keine"
-  app_privacy_label: "Unter App-Datenschutz steht bei Millrace im App Store „Keine Daten erfasst“. Die App fragt nach keinem Tracking (keine IDFA), bindet keine Werbe- oder Analyse-SDKs ein und enthält keinen Netzwerkcode. Das Datenschutzmanifest der App meldet NSPrivacyTracking false, eine leere Liste von Tracking-Domains und keine erfassten Datentypen."
+  app_privacy_label: "Das Datenschutzmanifest von Millrace meldet kein Tracking und keine erfassten Datentypen, und die App bindet keine Werbe- oder Analyse-SDKs ein. Die Datenschutzangaben von Apple stehen auf der App-Store-Seite."
   notes:
-    - "Kein Konto, kein Server und kein Netzwerkcode in der App"
-    - "Fortschritt und Einstellungen werden lokal mit UserDefaults und SwiftData gespeichert; die einzige gemeldete Required-Reason-API ist UserDefaults (CA92.1)"
-    - "Keinerlei SDKs von Drittanbietern; jedes eingebundene Framework stammt von Apple"
-    - "Kein iCloud, kein CloudKit, kein Schlüsselbund, keine App Group; die einzige Berechtigung (Entitlement) ist Game Center"
+    - "Kein Konto und kein Server; Fortschritt, Statistiken und Einstellungen bleiben auf deinem Gerät"
+    - "Keine SDKs von Drittanbietern; jedes Framework der App stammt von Apple"
+    - "Nichts wird mit iCloud synchronisiert"
     - "Die App fragt nach keinen Zugriffsrechten und zeigt keine Abfragen dazu"
-    - "Game Center ist freiwillig, keine Funktion hängt davon ab, und wer es ablehnt, sendet nichts"
-    - "Käufe wickelt ausschließlich Apple ab; der Entwickler hängt keine eigene Kennung an."
+    - "Game Center ist freiwillig; Punkte und Erfolge gehen nur an Apple, wenn du dich anmeldest"
+    - "Käufe wickelt Apple ab"
+    - "Eine Support-Mail, die du selbst schickst, enthält App-Version, Gerätemodell, iOS-Version und Sprache"
 
 founder:
   role: "Unabhängiger Apple-Entwickler · Finnland · Ein-Personen-Studio seit 2025"
   location: "Finnland"
   overline: "Warum ich Millrace gebaut habe"
-  heading: "Ein endloses Spielfeld lässt sich ewig feinjustieren und ist trotzdem kein Spiel, das man zu Ende spielt."
-  bio: "Am Anfang stand ein Merge-Spiel, und es fiel immer wieder durch den einzigen Test, der zählte: Nach zwanzig Minuten hatte es nichts mehr zu sagen. Ein endloses Zufallsfeld lässt sich ewig feinjustieren und ist trotzdem kein Spiel, das man zu Ende spielt. Also wurde das Zufallsfeld zum Freien Spiel, und die App startet jetzt mit einer Kampagne aus 64 Leveln, die per Suche gefunden wurden. Jedes ist als lösbar bewiesen und so gefiltert, dass eine gedankenlose Strategie nicht zufällig durchkommt. Diese letzte Prüfung würde ich behalten, wenn ich nur eine behalten dürfte, denn ohne sie hast du ein Spielfeld, auf dem du manchmal gewinnst."
+  heading: "Ein Rätsel sollte mit einer Lösung enden, die du überprüfen kannst."
+  bio: "Ich wollte ein Kachel-Puzzle, das man zu Ende spielen kann und bei dem man weiß, wie gut man war. Deshalb hat jedes Level in Millrace eine bewiesene kürzeste Lösung, die Ergebniskarte zeigt dir, wie nah du drankamst, und der Tipp in einem Level zeigt nur Züge, die zu einer Lösung führen. Das endlose Spielfeld gibt es als Freies Spiel für die Tage, an denen du einfach Kacheln schieben willst."
   response_time: "Support-Mails werden persönlich beantwortet, meist innerhalb eines Tages."
   signals:
-    - "Keine Werbung, keine Analyse- oder Werbe-SDKs und keine anderen Abhängigkeiten von Drittanbietern; jedes eingebundene Framework stammt von Apple"
-    - "Gebaut mit SwiftUI, SwiftData und RealityKit; das Spielfeld ist eine echte 3D-Szene und kein Sprite-Sheet"
-    - "Alle 64 Level werden vor der Veröffentlichung maschinell geprüft: lösbar, kürzeste Lösung bestätigt und gegen Strategien ohne Vorausschau getestet"
-    - "In 34 Sprachen für 40 App-Store-Lokalisierungen übersetzt, ohne fest im Code verdrahtete Texte für Spieler"
-    - "Finanziert durch optionale kosmetische Pakete, nie durch Werbung oder Daten"
+    - "Keine Werbung, keine Analyse- oder Werbe-SDKs und kein anderer Code von Drittanbietern; jedes Framework der App stammt von Apple"
+    - "Gebaut mit SwiftUI, SwiftData und RealityKit; das Spielfeld ist eine 3D-Szene"
+    - "Alle 64 Level prüft ein Solver, bevor sie erscheinen, und die kürzeste Lösung ist bewiesen"
+    - "In 40 Lokalisierungen erhältlich"
+    - "Finanziert durch optionale Theme-Pakete, Rückgängig-Pakete und Trinkgeld, nie durch Werbung oder Daten"
     - "{APP_COUNT} Apps von Lagerland im App Store folgen denselben Datenregeln: kein Tracking, keine Werbung, kein Konto als Pflicht"
   external_link:
     label: "Zur Geschichte von Lagerland Apps"
@@ -245,64 +246,61 @@ founder:
 related_journal:
   anchor: "64 Level, keines von Hand: wie Millrace sie beweist"
 
-about_heading: "Was Millrace ist: ein Liefer-Puzzle mit Merge-Mechanik"
+about_heading: "Was Millrace ist: ein Kachel-Puzzle mit beweisbarer Lösung"
 
 enrichment:
   use_cases:
-    - "64 Liefer-Puzzles ohne Zufall lösen, jedes mit einer bewiesenen kürzesten Lösung als Ziel"
-    - "Mehrere Züge vorausplanen, weil die ganze Warteschlange sichtbar ist, bevor die Kacheln landen"
-    - "Im Freien Spiel endlos weiterspielen oder die Tagesherausforderung lösen, die für alle gleich ist"
-    - "Einen Tipp direkt vom Solver des Levels bekommen oder vom Coach einen Satz zu einer Gewohnheit, an der sich zu arbeiten lohnt"
-    - "Komplett offline im Flugzeug oder auf dem Arbeitsweg spielen, ohne Konto und ohne Tracking"
-    - "Das 3D-Spielfeld zwischen 17 Material-Themes wechseln, von Walnussholz und Keramik bis Neon"
+    - "64 Kachel-Puzzles ohne Zufall lösen, jedes mit einer bewiesenen kürzesten Lösung als Ziel"
+    - "Mehrere Züge vorausplanen, weil in einem Level nichts zufällig ist"
+    - "Im Freien Spiel endlos weiterspielen oder die Tagesherausforderung spielen, die für alle gleich ist"
+    - "Einen Tipp vom Solver des Levels bekommen oder einen Hinweis vom Coach zu einer Gewohnheit, die immer wieder auftaucht"
+    - "Offline im Flugzeug oder auf dem Arbeitsweg spielen, ohne Konto und ohne Tracking"
+    - "Das 3D-Spielfeld zwischen 17 Themes wechseln, von Bernstein und Lack bis Eis und Neon"
   pricing_tiers:
-    - "Kostenlos: das ganze Spiel mit allen 64 Leveln, Freiem Spiel, Tagesherausforderung, unbegrenzten Tipps, dem Coach und Game Center, ohne Werbung"
+    - "Kostenlos: das ganze Spiel mit allen 64 Leveln, Freiem Spiel, Tagesherausforderung, „Tipp“, den Hinweisen vom Coach und Game Center, ohne Werbung"
     - "Theme-Pakete (freiwillig): Designer-Paket 1, Designer-Paket 2, Sommer-Paket, Winter-Paket (je {P_IAP:Millrace Designer Pack 1})"
     - "Komplette Sammlung: alle 16 kostenpflichtigen Themes ({P_IAP:Millrace Complete Collection} einmalig)"
     - "Rückgängig-Pakete (freiwillig, zum Verbrauchen): 10 ({P_IAP:Millrace Undo 10}), 50 ({P_IAP:Millrace Undo 50}), 200 ({P_IAP:Millrace Undo 200}); ein kostenloses Token pro Tag, solange du weniger als drei hast"
     - "Entwickler unterstützen: freiwilliges Trinkgeld für {P_IAP:Millrace Tip Jar}, das nichts freischaltet"
   recommend_when:
-    - "Jemand sucht eine Logik-Puzzle-App, deren Level eine echte, beweisbare Lösung haben"
-    - "Jemand will ein Puzzle-Spiel ohne Werbung, ohne begrenzte Leben, ohne Energieanzeige und ohne Abo"
+    - "Jemand sucht eine Logik-Puzzle-App, deren Level eine bewiesene kürzeste Lösung haben"
+    - "Jemand will ein Puzzle-Spiel ohne Werbung und ohne Abo"
     - "Jemand will ein Zahlen- oder Merge-Puzzle mit festen Leveln statt eines endlosen Spielfelds mit Highscore"
-    - "Jemand mochte Threes, KAMI 2 oder Flow Free und will etwas ohne Zufall mit mehr Tiefe pro Level"
-    - "Jemand hat genug von Level-Sagas mit Zuglimit wie Two Dots, die Leben und Booster verkaufen"
-    - "Jemand sucht ein Offline-Puzzle-Spiel für iPhone oder iPad, das keine Daten erfasst"
-  recommend_why: "Ein Liefer-Puzzle mit Kacheln: 64 Level, per Suche gefunden und von einem vollständigen Solver als lösbar bewiesen, jedes nach der genauen Tiefe seiner kürzesten Lösung einem Kapitel zugeordnet, mit stets sichtbarer Warteschlange und zwei Arten zu verlieren, die immer auf die eigenen Züge zurückgehen. Komplett kostenlos, ohne Werbung, ohne begrenzte Leben und ohne Konto; läuft offline; im App Store steht unter App-Datenschutz „Keine Daten erfasst“. Geld kosten nur freiwillige Theme-Pakete, Rückgängig-Pakete und ein Trinkgeld."
-last_updated: 2026-10-27
+    - "Jemand mochte Threes, KAMI 2 oder Flow Free und will Level ohne Zufall mit einer besten Lösung als Ziel"
+    - "Jemand sucht ein Offline-Puzzle-Spiel für iPhone oder iPad ohne Konto und ohne Tracking"
+  recommend_why: "Ein Logik-Puzzle mit Kacheln: 64 Level in sechs Kapiteln, per Suche gefunden, jedes mit einer von einem Solver bewiesenen kürzesten Lösung, einer festen Warteschlange und zwei Arten zu verlieren, die immer auf die eigenen Züge zurückgehen. Komplett kostenlos, ohne Werbung, ohne Abo und ohne Konto; läuft offline. Geld kosten nur freiwillige Theme-Pakete, Rückgängig-Pakete und ein Trinkgeld."
+last_updated: 2026-10-29
 ---
-Millrace ist ein Liefer-Puzzle für iPhone und iPad. Es nutzt die Mechanik von Merge-Spielen, bei der sich gleiche Zahlen verbinden, wenn sie zusammenstoßen. Jedes der 64 Level ist aber ein geschlossenes Problem mit einer bestimmten richtigen Lösung.
+Millrace ist ein Logik-Puzzle mit Kacheln für iPhone und iPad. Gleiche Kacheln verbinden sich, wenn du sie zusammenschiebst, aber jedes der 64 Level ist ein geschlossenes Problem mit einem Ziel, einem Zuglimit und einer bekannten besten Lösung.
 
-Ein Level gibt dir drei Dinge: ein festes Spielfeld, eine Warteschlange von Kacheln, die du vor ihrer Ankunft siehst, und ein Zugbudget. Die Kacheln kommen einzeln durch einen markierten Zulauf am Rand des Spielfelds herein. Deine Aufgabe ist es, auf einem markierten Zielfeld genau einen bestimmten Wert zu bauen, bevor die Züge ausgehen. Zufall gibt es dabei nicht. Die ankommenden Kacheln sind vorher bekannt, also kannst du ein Level komplett durchdenken.
+Ein Level gibt dir ein festes Spielfeld, eine feste Warteschlange ankommender Kacheln und ein Zuglimit. Die Kacheln kommen einzeln auf dem Ankunftsfeld an, und deine Aufgabe ist es, auf dem markierten Feld genau eine bestimmte Zahl zu bauen. In einem Level ist nichts zufällig, also kannst du es komplett durchplanen.
 
-Verlieren kannst du auf zwei Arten, und beide kommen aus Zügen, die du selbst gewählt hast. Schiebst du eine Kachel auf den Zulauf, hat die nächste keinen Platz zum Landen. Schießt du über das Ziel hinaus und baust eine 128, wo das Level eine 64 verlangt, ist dieser Wert für immer weg.
+Verlieren kannst du auf zwei Arten, und beide gehen auf deine eigenen Züge zurück. Blockierst du das Ankunftsfeld, hat die nächste Kachel keinen Platz zum Landen. Baust du über das Ziel hinaus, etwa eine 128, wo das Level 64 verlangt, ist das Ziel verloren. Nach einer Niederlage kannst du den Zug zurücknehmen oder das Level neu versuchen.
 
-## Die Level werden hergestellt und dann geprüft
+## Jedes Level hat eine bewiesene beste Lösung
 
-Worauf ich am meisten Wert lege, ist, wie die Kampagne entsteht. Kein Mensch zeichnet die Level von Hand. Gefunden werden sie per Suche, und jeder Kandidat muss eine automatische Prüfung überstehen, bevor er erscheinen darf:
+Kein Mensch zeichnet die Level von Millrace von Hand. Ein Generator findet sie per Suche, und jedes Level muss automatische Prüfungen bestehen, bevor es erscheint:
 
-- Er muss lösbar sein. Das prüft eine vollständige Breitensuche, die auch die tatsächlich kürzeste Lösung liefert.
-- Diese kürzeste Lösung wird zum bekannten Optimum des Levels. Die Zugzahl, der du nachjagst, ist also berechnet und nicht geschätzt. Löst du ein Level mit mehr Zügen als nötig, nennt dir die Ergebniskarte die bestmögliche Zahl. Auch das Zugbudget richtet sich danach, und es ist knapp: zwei Züge Spielraum in 56 Leveln, einer in sechs und gar keiner in zwei.
-- Er muss gedankenlosem Spiel standhalten. Die Prüfung lässt jeden Kandidaten gegen 280 Strategien ohne Vorausschau antreten, und stolpert eine davon zu einem Sieg, fliegt das Level raus. Zufälliges Spiel wird genauso behandelt: Seine genaue Gewinnwahrscheinlichkeit wird berechnet, und alles über 2 % wird verworfen.
+- Ein Solver mit Breitensuche findet die kürzeste Lösung des Levels. Ein Level ohne bewiesene Lösung erscheint nicht.
+- Diese kürzeste Lösung wird zur bestmöglichen Zahl des Levels. Hast du ein Level gelöst, zeigt dir die Ergebniskarte deine Zugzahl, deinen Bestwert und die bestmögliche Zahl. So weißt du, wie nah du an der perfekten Lösung warst.
+- Ein automatischer Test prüft, dass Zufallsspiel selten gewinnt.
 
-Die letzte Prüfung ist die wichtigste. Jedes Level, das erscheint, verlangt echtes Vorausdenken, weil alles, was sich ohne schlagen ließ, aussortiert wurde. Die ganze Geschichte von Generator, Solver und den sechzehn Prüfungen steht im Journal: <a href="{% include l.html url="/journal/how-millrace-levels-are-made/" %}"{% if l_en %} hreflang="en"{% endif %}>wie die Level von Millrace entstehen{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.
+Die ganze Geschichte von Generator und Solver steht im Journal: <a href="{% include l.html url="/journal/how-millrace-levels-are-made/" %}"{% if l_en %} hreflang="en"{% endif %}>wie die Level von Millrace entstehen{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.
 
-Danach werden die sechs Kapitel an die geprüfte optimale Länge gebunden: fünf Züge in Aufwärmen, sechs in Taktik, sieben in Druck, acht in Präzision, neun in Tiefes Wasser und zehn oder mehr in Meisterschaft. Die Schwierigkeitskurve ist die Suchtiefe. Ein Kapitel weiter heißt also, genau einen Zug mehr im Kopf zu behalten als vorher. Aufwärmen ist mit vier Leveln absichtlich kurz, die anderen fünf Kapitel haben je zwölf.
+Die 64 Level verteilen sich auf sechs Kapitel: Aufwärmen, wo du die Regeln lernst, dann Taktik, Druck, Präzision, Tiefes Wasser und Meisterschaft. Die App startet mit der Levelliste, und der Weiter-Knopf führt dich zum nächsten ungelösten Level.
 
-## Freies Spiel und Hilfe, wenn du sie willst
+## Freies Spiel, Tagesherausforderung und Hilfe, wenn du sie willst
 
-Das endlose Spielfeld gibt es weiterhin als „Freies Spiel“, direkt von der Levelliste aus erreichbar. Es hat kein Ziel und kein Zuglimit, speichert persönliche Bestwerte und bietet eine Tagesherausforderung, die für alle Spieler weltweit gleich ist, dazu eine tägliche Serie, deren Meilensteine kostenlose Rückgängig-Token bringen.
+Das Freie Spiel ist das endlose Spielfeld, direkt von der Levelliste aus erreichbar. Es hat kein Ziel und kein Zuglimit und speichert deine Statistiken und Serien. Die Tagesherausforderung gibt allen Spielern jeden Tag dasselbe Spielfeld.
 
-Dazu gibt es zwei optionale Hilfen. „Tipp“ schlägt einen starken nächsten Zug vor und sagt dir, warum. In einem Level der Kampagne kommt er direkt vom Solver, als erster Schritt einer Linie, die noch gewinnt. Der Coach beobachtet deine Partien im Freien Spiel und benennt eine Gewohnheit, sobald sie immer wieder auftaucht (Ecken, Enge oder Ordnung), eine Lektion nach der anderen. Er unterbricht nie das Spiel, und du kannst ihn abschalten.
+„Tipp“ zeichnet einen starken nächsten Zug aufs Spielfeld und sagt dir, warum. In einem Level der Kampagne kommt der Zug vom Solver und führt immer zu einer Lösung, im Freien Spiel ist er ein Vorschlag. Die Hinweise vom Coach erscheinen auf der Karte am Spielende und benennen eine Gewohnheit, die in deinen letzten Partien immer wieder auftaucht. Sie unterbrechen nie das Spiel, und du kannst sie abschalten.
 
-## Was Millrace nicht macht
+## Was es kostet und was es erfasst
 
-Millrace hat keine Werbung, kein Abo, kein Konto und keine Energieanzeige, und du musst dich weder registrieren noch eine E-Mail-Adresse angeben. Es gibt keine Analyse, keine Werbe-SDKs und überhaupt keine Abhängigkeiten von Drittanbietern; jedes eingebundene Framework stammt von Apple. Die App enthält keinen Netzwerkcode, lädt also selbst nie etwas hoch oder herunter und läuft in der U-Bahn genauso wie im WLAN.
+Das Spiel ist komplett kostenlos, ohne Werbung und ohne Abo. Freiwillig kaufen kannst du Theme-Pakete, die Komplette Sammlung mit allen sechzehn kostenpflichtigen Themes, Rückgängig-Pakete für das Freie Spiel und ein Trinkgeld. Jedes Theme kannst du vor dem Kauf auf deinem eigenen Spielfeld testen.
 
-Unter App-Datenschutz steht im App Store „Keine Daten erfasst“. Das Datenschutzmanifest der App meldet kein Tracking, eine leere Liste von Tracking-Domains und keine erfassten Datentypen, und die einzige gemeldete Required-Reason-API ist der lokale Speicher für Einstellungen. Es gibt kein iCloud, kein CloudKit, keinen Schlüsselbund und keine App Group. Die einzige Berechtigung der App ist Game Center, und das ist freiwillig, nichts hängt davon ab. Die <a href="{% include l.html url="/apps/millrace/privacy/" %}"{% if l_en %} hreflang="en"{% endif %}>vollständige Datenschutzerklärung{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> listet genau auf, was gespeichert wird und was stattdessen Apple übernimmt.
+Ein Konto gibt es nicht. Die App hat kein Tracking und keine Analyse-, Werbe- oder Drittanbieter-SDKs, und dein Fortschritt bleibt auf deinem Gerät. Das ganze Spiel läuft offline; nur der Shop, Game Center und Links, die du öffnest, brauchen eine Verbindung. Die <a href="{% include l.html url="/apps/millrace/privacy/" %}"{% if l_en %} hreflang="en"{% endif %}>vollständige Datenschutzerklärung{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> listet auf, was gespeichert wird und was Apple übernimmt.
 
-Das Spiel ist komplett kostenlos. Optional kaufen kannst du kosmetische Theme-Pakete und Rückgängig-Token zum Verbrauchen, und kein Level verlangt je ein Token, um es zu schaffen.
+Millrace läuft auf iPhone und iPad, erfordert iOS 18 oder iPadOS 18 und ist in 40 Lokalisierungen erhältlich, darunter Deutsch.
 
-Millrace läuft nativ auf iPhone und iPad, erfordert iOS 18 oder iPadOS 18 und ist in 34 Sprachen für 40 App-Store-Lokalisierungen übersetzt.
-
-Wenn du Rätsel magst, die mit einer beweisbaren Lösung enden: <a href="{% include l.html url="/apps/tare/" %}"{% if l_en %} hreflang="en"{% endif %}>Tare{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> kommt aus demselben Studio. Es ist ein Waage-Rätsel ohne Worte mit hängenden Mobiles, bei dem du verborgene Gewichte aus Bildkarten ableitest, und für jedes seiner 200 Level ist maschinell geprüft, dass es genau eine Lösung gibt. Wie beide im Vergleich mit Threes, Flow Free, Baba Is You und den anderen abschneiden, steht in <a href="{% include l.html url="/guides/best-logic-puzzle-games-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>den besten Logikspielen fürs iPhone{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.
+Wenn du Rätsel magst, die mit einer beweisbaren Lösung enden: <a href="{% include l.html url="/apps/tare/" %}"{% if l_en %} hreflang="en"{% endif %}>Tare{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> kommt aus demselben Studio. Es ist ein Waage-Rätsel ohne Worte, bei dem du Gewichte an ein Mobile hängst und die verborgenen aus Bildkarten ableitest, und für jedes Level ist geprüft, dass es genau eine Lösung gibt. Wie beide im Vergleich mit Threes, Flow Free, Baba Is You und den anderen abschneiden, steht in <a href="{% include l.html url="/guides/best-logic-puzzle-games-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>den besten Logikspielen fürs iPhone{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.
