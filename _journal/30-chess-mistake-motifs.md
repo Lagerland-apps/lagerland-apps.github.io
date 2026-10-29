@@ -13,33 +13,28 @@ seo:
     - "chess blunders"
     - "chess improvement"
 date: 2026-05-13
-lede: "Most chess apps reduce 'why did I lose' to a centipawn graph. Chessful sorts the mistake into one of about thirty specific categories, each with a name, a structural cause, and a drill that fixes it. This post is the full catalogue. Chessful users can use it as a reference, and anyone else gets a short tour of the mistakes that decide club-level games."
-quick_answer: "Chessful classifies significant chess mistakes into roughly 30 categories grouped under five skill dimensions. Tactical motifs (hung piece, missed fork, missed pin, missed skewer, missed discovered attack, missed double attack, missed deflection, missed overload, back-rank threat, smothered mate possibility). Defensive motifs (defender-removal blindness, king-safety underestimate, prophylactic skip, weakening pawn push). Positional motifs (wrong piece traded, wrong side castled, weak square allowed, wrong pawn break, time-on-wrong-move). Opening motifs (repertoire drift, book-move missed, transposition into bad line). Endgame motifs (opposition direction error, king-too-late, wrong rook activation, drawn-but-played-on, wrong-color bishop endgame, technique error in K+P). Each motif maps to one of five skill buckets and triggers spaced-repetition drilling on the underlying pattern."
+lede: "Most chess apps reduce 'why did I lose' to an evaluation graph. A name for the mistake helps more: something you can remember, drill, and recognize in the next game. This post is a reference of thirty common mistake motifs at club level, grouped under five skill areas, each with its cause and the drill that fixes it, and it shows how they line up with the 10 mistake types Chessful puts on every mistake it finds."
+quick_answer: "Thirty mistake motifs cover most of what decides club-level chess games, grouped under five skill areas. Tactics: hung piece, missed fork, missed pin, missed skewer, missed discovered attack, missed double attack, missed deflection, missed overload, back-rank threat, and smothered mate possibility. Defense: defender-removal blindness, king-safety underestimate, prophylactic skip, weakening pawn push, and wrong piece exchanged for a defender. Positional play: wrong piece traded, wrong side castled, weak square allowed, wrong pawn break, and time spent on the wrong move. Openings: repertoire drift, book move missed, and transposition into a bad line. Endgames: opposition error, king too late, wrong rook activation, drawn but played on, wrong-color bishop endgame, and technique errors in king-and-pawn and rook endgames. Chessful labels each mistake in your games with one of 10 broader types (Hanging Piece, Missed Fork, Missed Pin, Back-Rank Weakness, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, and Opening Inaccuracy), explains it in plain language, and builds daily training from those mistakes."
 faq:
-  - q: "How many chess mistake categories does Chessful detect?"
-    a: "About 30, organised under five skill dimensions: tactics, defense, positional play, openings, and endgames. The exact count shifts a little between app versions as the motif detectors get refined. This post lists the current catalogue and the dimension each motif belongs to."
-  - q: "Why classify mistakes into motifs instead of just showing the engine evaluation?"
-    a: "Most club-level players can't read a centipawn evaluation, and feedback they can't read doesn't change how they play. A motif label is something you can remember, drill, and recognise. You can carry \"defender-removal blindness\" into your next game; you can't do much with \"-3.4 → -8.1 over the line Nxd5 Qxe1+ Kh2 Qe5+\"."
-  - q: "How are the motifs detected?"
-    a: "Hand-curated rule-based detectors run on top of Stockfish output. The rules are ordered by specificity and the strictest matching rule wins, so one position doesn't get classified as five different things and dilute the training signal. The rules are explicit and inspectable, not learned, which keeps the classification stable between app updates."
+  - q: "What are the most common types of chess mistakes?"
+    a: "At club level, the mistakes that decide games fall into five areas: tactics (hung pieces, missed forks, pins, and skewers), defense (removing your own defender, ignoring king safety), positional play (bad trades, weak squares, mistimed pawn breaks), openings (drifting out of your repertoire), and endgames (opposition errors, a passive king or rook, failed technique). This post lists thirty motifs across those five areas, each with its cause and a drill."
+  - q: "How many mistake types does Chessful use?"
+    a: "Ten: Hanging Piece, Missed Fork, Missed Pin, Back-Rank Weakness, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, and Opening Inaccuracy. Each mistake also gets a severity (Inaccuracy, Mistake, or Blunder), what you played, what was best, why the better move works, and the line that punishes your move. The thirty motifs in this post are a finer-grained reference that sits under those ten types."
+  - q: "Why name mistakes instead of just showing the engine evaluation?"
+    a: "Most club-level players can't read an evaluation number, and feedback they can't read doesn't change how they play. A name is something you can remember, drill, and recognize. You can carry \"I removed my own defender\" into your next game; you can't do much with an evaluation that drops from -3.4 to -8.1 over a long engine line."
   - q: "Are these the same mistake categories chess coaches teach?"
-    a: "Mostly. The taxonomy draws on mainstream improvement literature (Aagaard's Excelling at Chess, Yusupov's Build Up Your Chess series, Silman's How to Reassess Your Chess) and on what coaches flag in club-level games. A few categories, such as \"repertoire drift\" and \"book-move missed\", exist because the algorithm can compare your current game with your historical opening choices. Most of the rest are standard."
-  - q: "Will the motif list change?"
-    a: "Yes. We add motifs when we see recurring mistake patterns that the current rules don't catch cleanly. Now and then a motif gets split (when one category is doing too much work) or two get merged (when they rarely produce different training value). Every change goes in the app's changelog. Between releases the taxonomy is stable enough that the spaced-repetition queue doesn't reset."
+    a: "Mostly. The list draws on mainstream improvement literature (Aagaard's Excelling at Chess, Yusupov's Build Up Your Chess series, Silman's How to Reassess Your Chess) and on what coaches flag in club-level games. A few, such as repertoire drift, only show up when you look at many of your games together. Most of the rest are standard."
+  - q: "How does Chessful turn mistakes into training?"
+    a: "Each analyzed game feeds five skill areas (Tactics, Defense, Positioning, Endgame, and Openings). Today's Training picks a focus area and gives you a 5, 10, or 15 minute session of puzzles built from your own mistakes, and Review past mistakes brings old positions back on a spaced-repetition schedule until you stop missing them. From any mistake, Train This Pattern jumps straight to practice."
 mentioned_apps:
   - chessful
-read_time: "11 min read"
-excerpt: "The complete catalogue of the ~30 chess mistake motifs Chessful detects, grouped under five skill dimensions, each with its structural cause and the drill that fixes it. A reference for Chessful users and a short tour of the mistakes that decide club-level games."
-last_updated: 2026-10-26
+read_time: "10 min read"
+excerpt: "A reference of thirty chess mistake motifs that decide club-level games, grouped under five skill areas, each with its cause and the drill that fixes it, and how they line up with the 10 mistake types Chessful puts on every mistake."
+last_updated: 2026-10-29
 ---
+Chessful analyzes your games on the device with Stockfish and labels every mistake with one of 10 types: Hanging Piece, Missed Fork, Missed Pin, Back-Rank Weakness, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, and Opening Inaccuracy. Ten is a useful number for a training queue. For understanding why a game was lost, a finer list helps, so here is a reference of thirty motifs that decide club-level games, grouped under the same five skill areas Chessful tracks (Tactics, Defense, Positioning, Endgame, and Openings), with the cause of each and the drill that fixes it.
 
-After the earlier post, [How Chessful turns a Stockfish evaluation into adaptive training](/journal/how-chessful-builds-adaptive-training/), went up, the most common follow-up question was simple: *what are the motif categories?*
-
-That post described the pipeline and left the catalogue as a black box of "about thirty categories." Here is the full current taxonomy, organised under the five skill dimensions Chessful tracks, with the structural cause of each motif and the drill that fixes it.
-
-The taxonomy isn't proprietary. Most of these categories are standard chess teaching, covered in Aagaard's *Excelling at Chess* series, Yusupov's nine-volume *Build Up Your Chess* curriculum, Silman's *How to Reassess Your Chess*, and de la Maza's *Rapid Chess Improvement*. A few (repertoire drift, book-move missed, time-on-wrong-move) are things an analyser with your full game history can see and a coach reviewing one game can't. The rest is standard improvement material under a name a club player can remember during the next game.
-
-We publish the catalogue because **you can only argue with an algorithm if you know what it is looking for**. Without the list, you can't tell whether Chessful's classifier flagged the right thing in your game. With it, you can check.
+The list isn't proprietary. Most of these categories are standard chess teaching, covered in Aagaard's *Excelling at Chess* series, Yusupov's nine-volume *Build Up Your Chess* curriculum, Silman's *How to Reassess Your Chess*, and de la Maza's *Rapid Chess Improvement*. A few (repertoire drift, book move missed) only show up when you look at many of your own games together, and a coach reviewing one game can't see them. The rest is standard improvement material under a name a club player can remember during the next game.
 
 ## Skill dimension 1: Tactics (10 motifs)
 
@@ -91,7 +86,7 @@ Club players train defense less than anything else. Generic puzzle apps drill at
 
 ### 11. Defender-removal blindness
 
-The piece you just moved was the only defender of a critical square (often on the back rank, often next to the king). Drilling pattern: before any capture or trade, check whether your piece is currently defending something. This is the most common motif at club level; Chessful logs flag it more than any other category.
+The piece you just moved was the only defender of a critical square (often on the back rank, often next to the king). Drilling pattern: before any capture or trade, check whether your piece is currently defending something.
 
 ### 12. King-safety underestimate
 
@@ -129,13 +124,13 @@ You let an enemy piece reach an outpost (often c4 / c5 / d4 / d5 / e4 / e5 / f4 
 
 A pawn break (the move that resolves central tension or opens an attacking path) came too late, at the wrong moment, or in the wrong direction. Drilling pattern: learning the standard pawn break for each pawn structure.
 
-### 20. Time-on-the-clock-on-the-wrong-move
+### 20. Time spent on the wrong move
 
-This one is specific to Chessful. You spent far too much clock time on a move that didn't need it (often a forced recapture or a routine developing move) and were short of time for a critical decision later. Drilling pattern: budgeting time per move. It's only flagged in games played with a clock.
+You spent far too much clock time on a move that didn't need it (often a forced recapture or a routine developing move) and were short of time for a critical decision later. Drilling pattern: budgeting time per move. An engine can't see this one from the moves alone, and Chessful doesn't measure clock time, so it is yours to spot.
 
 ## Skill dimension 4: Openings (3 motifs)
 
-Opening motifs depend most on the individual user, because they depend on the repertoire you actually play. Over time Chessful builds a profile of your most-played lines and flags deviations from them.
+Opening motifs depend most on the individual player, because they depend on the repertoire you actually play. Chessful's Opening Repertoire is built from your analyzed games: the openings you play most, your results in each, and where you leave the book.
 
 ### 21. Repertoire drift
 
@@ -149,7 +144,7 @@ A widely known book continuation was available and was the principled move. You 
 
 Your sequence of moves transposed into a position known to be inferior, often because the move order gave up a critical defensive resource. Drilling pattern: transposition awareness within your own repertoire.
 
-## Skill dimension 5: Endgames (6 motifs)
+## Skill dimension 5: Endgames (7 motifs)
 
 Endgame motifs are the most technical. Pattern recognition has to come with concrete calculation, and small mistakes here are the likeliest to turn a winning position into a draw.
 
@@ -181,37 +176,24 @@ A known winning technique (Lucena, Philidor, square-of-the-pawn, key-square calc
 
 The rook-endgame version of the K+P motif: you picked the right technique (Lucena bridge, Philidor third-rank defence, short-side defence) and executed it incorrectly. Drilling pattern: repetition of that specific rook-endgame technique.
 
-## How the catalogue maps to training
+## How the motifs map to Chessful's training
 
-Each motif belongs to exactly one of the five skill buckets (the dimension it's listed under above). When Chessful flags a motif in one of your games, it flags that skill bucket. The spaced-repetition queue draws from the flagged buckets, most recently flagged first, with Leitner-schedule intervals between repeats.
+Several motifs above have a type of their own in Chessful: hung piece (Hanging Piece), missed fork, missed pin, and back-rank threat (Back-Rank Weakness). The others are closest to the broader types: Tactical Oversight and Missed Tactic for the rest of the tactics, Poor King Safety and Passive Move for most of defense and positional play, Opening Inaccuracy for the opening motifs, and Endgame Error for the endgame ones.
 
-The bucket layer sits between motif detection and the training queue because **patterns generalise better within a skill dimension than across dimensions**. If you keep missing forks, more fork puzzles are the right fix. If you alternate between missing forks and misjudging the opposition in endgames, those are two separate failures and need separate drilling, which a generic "tactics-and-endgame practice" queue wouldn't give you.
+Each mistake card shows what you played, what was best, why the better move works, and the line that punishes yours, in wording set by your coaching level. Your analyzed games feed five skill areas, and Today's Training picks one of them as a focus and builds a 5, 10, or 15 minute session of puzzles from your own mistakes. Review past mistakes brings old positions back on a spaced-repetition schedule until you stop missing them.
 
-So the skill dimensions are where spaced repetition gets scheduled, and grouping the list for display is a side effect.
+The skill areas matter because **patterns carry over better within an area than across areas**. If you keep missing forks, more fork puzzles are the right fix. If you alternate between missing forks and misjudging the opposition in endgames, those are two separate failures and need separate drilling, which a generic mixed queue wouldn't give you.
 
-## What's not in the catalogue (and why)
+## What engine analysis can't see
 
-A few things Chessful deliberately doesn't detect:
+A few kinds of mistake don't show up in an engine's evaluation, and naming them as tactical failures would mislead you:
 
-- **Time-pressure tactics.** A blunder with under thirty seconds on the clock is often a time-management problem and not a pattern problem. Chessful flags it as `time-on-the-clock-on-the-wrong-move` (motif 20) and not as a tactical failure, because drilling tactics doesn't fix time pressure. Drilling time budgeting does.
-- **Move-order subtleties in deeply theoretical lines.** If you play the Najdorf Poisoned Pawn and miss a nuance on move 20, Chessful flags it as `repertoire drift`, not as a positional or tactical motif. What helps there is opening study, and pattern drilling wouldn't.
-- **Psychological mistakes.** Resigning too early, accepting a draw in a winning position, playing too aggressively when ahead: Chessful doesn't try to detect these, because engine output alone can't reliably tell them apart from objective mistakes.
-
-We left these out on purpose. In each case motif drilling is the wrong fix, and Chessful would mislead you by pretending it wasn't.
-
-## How the catalogue evolves
-
-The catalogue changes between app versions in two ways:
-
-- **New motifs get added** when a recurring mistake shows up in user games and the existing rules don't catch it cleanly. The latest addition (v1.4) was `weakening pawn push without compensation`. It used to be part of king-safety underestimate and was split out because the two need different drills.
-- **Existing motifs occasionally get split or merged** when one category is doing too much work, or when two categories rarely produce different training value. We're conservative about it and only do it when the resulting training queue would clearly differ.
-
-Every change goes in the app's changelog with the motif name and the version. The spaced-repetition queue doesn't reset when the taxonomy changes; flagged positions move to the closest matching motif in the new taxonomy.
+- **Time pressure.** A blunder with under thirty seconds on the clock is often a time-management problem, and drilling time budgeting fixes it better than more tactics puzzles.
+- **Move-order subtleties in deeply theoretical lines.** If you play the Najdorf Poisoned Pawn and miss a nuance on move 20, opening study helps more than pattern drilling.
+- **Psychological mistakes.** Resigning too early, accepting a draw in a winning position, playing too aggressively when ahead: engine output alone can't reliably tell these apart from objective mistakes.
 
 ---
 
-This catalogue is what Chessful is checking when it tells you "you played Nxd5; the knight was your only back-rank defender." That sentence is what you see. Underneath, the motif label is `defender-removal blindness`, the bucket it flags is `Defense`, and your next training session draws from that bucket using spaced repetition.
+A Chessful mistake card shows what you played, what was best, and a plain-language explanation, and its type says which kind of mistake it was. The thirty motifs here are finer names behind those types, worth knowing when you review a game yourself.
 
-All of it is open to inspection, which is why we published it.
-
-[Chessful is available on the App Store.](https://apps.apple.com/app/id6761336870) The method behind the catalogue is in [How Chessful turns a Stockfish evaluation into adaptive training](/journal/how-chessful-builds-adaptive-training/). The companion design note on the forty AI opponents is [Forty chess opponents, and none of them are me](/journal/forty-chess-opponents/).
+[Chessful is available on the App Store.](https://apps.apple.com/app/id6761336870) The [app page](/apps/chessful/) covers the analysis, the lessons, and the training. The companion design note on the forty engine opponents is [Forty chess opponents, and none of them are me](/journal/forty-chess-opponents/), and [why engine depth at club level should be tuned down](/journal/engine-depth-at-club-level-tune-down/) explains the depth Chessful analyzes at.

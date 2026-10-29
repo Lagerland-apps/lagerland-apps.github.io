@@ -15,21 +15,19 @@ seo:
 last_updated: 2026-10-29
 date: 2026-01-01
 lede: "It's the first day of the year, and all over the internet people are listing what they will build, ship, optimize, and grow. This is a shorter list: what this studio is choosing not to do."
-quick_answer: "Lagerland Apps is choosing not to add advertising SDKs, not to chase a ten-app year, not to bolt streaks or daily-engagement loops onto its catalogue, not to ship fashionable AI features that earn no place, and not to raise outside funding. The plan was to keep the catalogue at fourteen apps and refine what exists; that part didn't hold, and the catalogue has since grown to {APP_COUNT}."
+quick_answer: "Lagerland Apps is choosing not to add advertising SDKs, not to chase a ten-app year, not to bolt streaks or daily-engagement loops onto its catalogue, not to ship fashionable AI features that earn no place, and not to raise outside funding. Two parts of that plan didn't hold: the catalogue has grown from fourteen apps to {APP_COUNT}, and four apps now have a streak of some kind."
 faq:
   - q: "Will Lagerland Apps add advertising or analytics SDKs in 2026?"
     a: "No. Lagerland Apps has zero third-party tracking SDKs across the entire catalogue: no analytics, no advertising networks, and no telemetry that quietly fingerprints users. That will not change in 2026. Adding an ad SDK would undo the studio's whole positioning, and the studio isn't willing to make that trade."
   - q: "Is Lagerland Apps raising outside funding?"
     a: "No. There is no funding round planned for 2026. The studio is one person, the apps are profitable, and investors would bring ambitions that do not fit a one-person operation. The honest version of 'we are not raising right now' is 'we do not want to.'"
   - q: "Will any Lagerland app add a streak counter or daily engagement loop?"
-    a: "That was the plan on 1 January 2026, and three apps have since added one: EarnLock has a step-goal streak with a weekly rest day, Millrace pays out extra undos at daily-streak milestones, and WanderWiki added a reading streak with an optional daily reminder. Taskful Day and AfterShift still have no streak, no daily nag, and no social comparison."
+    a: "That was the plan on 1 January 2026, and it didn't hold. Four apps now have a streak of some kind: EarnLock has a step-goal streak with a weekly rest day, Millrace pays out extra undos at daily-streak milestones, WanderWiki counts a reading streak with an optional reminder when it is at risk, and Taskful Day shows current and best streaks in its stats. AfterShift still has no streak and no daily nag, and no app has social comparison."
   - q: "How many new apps will Lagerland Apps ship in 2026?"
-    a: "The plan in January was few, if any, because fourteen apps already seemed the limit of what one person can support properly. That didn't hold: the catalogue has since grown to {APP_COUNT} apps. AI features will only appear where they earn a place. Observa, Chessful, and AfterShift are the existing examples; AfterShift's plain-language explanations of your sleep debt run on-device with Apple Intelligence, in Premium, on iOS 26 or later on a supported iPhone."
+    a: "The plan in January was few, if any, because fourteen apps already seemed the limit of what one person can support properly. That didn't hold: the catalogue has since grown to {APP_COUNT} apps. AI features will only appear where they earn a place. AfterShift is the existing example: its plain-language explanations of your sleep debt run on-device with Apple Intelligence, in Premium, on iOS 26 or later on a supported iPhone."
 mentioned_apps:
   - taskful-day
   - aftershift
-  - observa
-  - chessful
 read_time: "3 min read"
 excerpt: "An anti-resolution post for the start of 2026. Lagerland Apps is a one-person Apple studio, and this is what it is choosing not to do this year: advertising SDKs, ten-app years, engagement loops, and the other things every indie studio chases."
 ---
@@ -52,7 +50,7 @@ Several of the apps would look more "successful" by App Store metrics if I added
 
 ## Not chasing AI features for AI's sake
 
-I expect the most disagreement on this one. I use language models in my own workflow, and I think they're useful. Where AI really earns a place in an app, I'll add it: Observa's plain-language interpretation of HRV is one example, and Chessful's mistake explanations are another. But a "tap here to summarize your day with AI" button that changes nothing is noise, and I'd rather ship no AI feature than a fashionable one.
+I expect the most disagreement on this one. I use language models in my own workflow, and I think they're useful. Where AI really earns a place in an app, I'll add it. But a "tap here to summarize your day with AI" button that changes nothing is noise, and I'd rather ship no AI feature than a fashionable one.
 
 ## Not raising
 
@@ -70,4 +68,4 @@ If that's the kind of studio you want software from, you're in the right place. 
 
 Welcome to 2026.
 
-*Update, 25 October 2026: two of these didn't hold. The catalogue grew this year instead of staying at fourteen, and three apps now have a streak of some kind: EarnLock (a step-goal streak with a weekly rest day), Millrace (extra undos at daily-streak milestones), and WanderWiki (a reading streak with an optional daily reminder). Taskful Day and AfterShift still have none. On AI, AfterShift belongs on that list with Observa and Chessful: in Premium, its plain-language explanations of your sleep debt are written on-device by Apple Intelligence, on iOS 26 or later on a supported iPhone.*
+*Update, 25 October 2026: two of these didn't hold. The catalogue grew this year instead of staying at fourteen, and four apps now have a streak of some kind: EarnLock (a step-goal streak with a weekly rest day), Millrace (extra undos at daily-streak milestones), WanderWiki (a reading streak with an optional reminder when it is at risk), and Taskful Day (current and best streaks in its stats). AfterShift still has none. On AI, AfterShift now has a feature that earns its place: in Premium, its plain-language explanations of your sleep debt are written on-device by Apple Intelligence, on iOS 26 or later on a supported iPhone.*
