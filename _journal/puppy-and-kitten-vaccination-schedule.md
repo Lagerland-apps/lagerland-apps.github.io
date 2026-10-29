@@ -32,11 +32,11 @@ faq:
   - q: "Is leptospirosis a core vaccine for dogs?"
     a: "In North America, yes, since 2024. The 2022 AAHA canine guidelines listed it as non-core; a 2024 update moved it to core. WSAVA's 2024 guidelines treat it as core where the disease is endemic, the relevant serogroups are known and suitable vaccines are available. It is two doses 2 to 4 weeks apart from 12 weeks of age, then yearly."
   - q: "Does Pawza know my pet's vaccination schedule?"
-    a: "No, and on purpose. Pawza keeps the dates from your vet's paperwork rather than applying a built-in schedule, so it works with any country's rules and any vet's protocol. When a certificate gives a next-due date, Pawza can set a reminder for that day. Check the reminder's repeat setting: Pawza defaults to yearly, which is wrong for a puppy series or a 3-year booster."
+    a: "No, and on purpose. Pawza keeps the dates from your vet's paperwork rather than applying a built-in schedule, so it works with any country's rules and any vet's protocol. When a certificate gives a next-due date, Pawza can turn it into a reminder for that day. Check each reminder's repeat setting: yearly suits leptospirosis or kennel cough, but not a puppy series or a 3-year booster."
 mentioned_apps:
   - pawza
 read_time: "7 min read"
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 There are three sets of guidelines behind almost every small-animal vaccination schedule: the [AAHA canine guidelines](https://www.aaha.org/globalassets/02-guidelines/2022-aaha-canine-vaccination-guidelines/resources/2022-aaha-canine-vaccinations-guidelines.pdf) (2022, updated in 2024), the [AAHA/AAFP feline guidelines](https://www.aaha.org/globalassets/02-guidelines/feline-vaccination-guidlines/resource-center/2020-aahaa-afp-feline-vaccination-guidelines.pdf) (2020), both written for North America, and the [WSAVA guidelines](https://wsava.org/wp-content/uploads/2024/05/2024-Guidelines-for-the-Vaccination-of-Dogs-and-Cats.pdf) (2024), written for vets worldwide. They are guidance for vets, not a calendar to follow without one. Your vet adjusts for the animal, the products in stock and local disease, and rabies is set by law. The tables below are what the guidelines say.
@@ -106,11 +106,11 @@ Keep the certificates themselves, not just notes of them, especially for rabies.
 [Pawza](/apps/pawza/) is a pet health record app for iPhone and iPad. It does not contain a vaccination schedule and does not decide what your pet needs; the dates come from your vet's paperwork, so it works with any vet's protocol and any country's rabies rules. It keeps those dates and tells you when one comes up.
 
 - **Scanning a certificate.** Pawza reads the page on the device. The review screen lists each vaccine with its name, the date administered, the next due date and an optional lot number, and nothing is saved until you have checked them. With Pawza Pro on an iPhone or iPad with Apple Intelligence (iOS 26 or later) the fields fill in automatically; otherwise you fill them in from the recognised text.
-- **A reminder for the printed due date.** If the certificate gives a next due date, Pawza offers to add a vaccination reminder for that day.
-- **Adding one by hand.** Logging a vaccination record by hand offers the same reminder, set one year from the date given.
+- **A reminder for the printed due date.** If the certificate gives a next due date, Pawza can turn it into a booster reminder for that day.
+- **Adding one by hand.** A vaccine you enter yourself keeps the date given, the next due date, the lot number, and notes, and can remind you at 9:00 on the due day.
 
-Given the schedules above, note that both of those reminders repeat yearly by default. That is right for leptospirosis or kennel cough. It is wrong for a puppy or kitten series 2 to 4 weeks apart and for a 3-year booster. Open the reminder, set the date your vet gave you, and change Repeats to Never; add one reminder per dose for a series. A reminder fires on the date you set, so if a kennel wants boosters given some days before arrival, set it earlier. You can mark a reminder time-sensitive so it breaks through Focus, and the list sorts everything into overdue, today, this week and later.
+Given the schedules above, check the repeat setting on every vaccine reminder you keep. Yearly is right for leptospirosis or kennel cough. It is wrong for a puppy or kitten series 2 to 4 weeks apart and for a 3-year booster. Set the date your vet gave you and Repeats to Never, and add one reminder per dose for a series. A reminder fires on the date you set, so if a kennel wants boosters given some days before arrival, set it earlier. You can mark a reminder Time-sensitive so it breaks through Focus, and the list sorts everything into Overdue, Today, This week, and Later.
 
-With Pro, the vet-visit PDF lists every vaccination with its last date and next due date, on pages you can hand to a new clinic or a boarding kennel. The free version covers one pet. There is no Pawza account and no Pawza server: records stay on your device, with optional sync through your own iCloud. The reasons are in [why vet paperwork should stay on your phone](/journal/vet-paperwork-stays-on-your-phone/).
+With Pawza Pro, the Vet Visit PDF shows vaccination status next to current medications, weight, and recent care, ready to hand to a new clinic. The free version covers one pet, and Pro is {P_MONTHLY@pawza}/month, {P_YEARLY@pawza}/year, or {P_LIFETIME@pawza} once. There is no Pawza account and no Pawza server: records stay on your device, with optional sync through your own iCloud. The reasons are in [why vet paperwork should stay on your phone](/journal/vet-paperwork-stays-on-your-phone/).
 
 Your vet sets the schedule. If you keep the dates from the certificates, you can answer "when was the last one?" without a phone call.

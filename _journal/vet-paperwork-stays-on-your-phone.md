@@ -15,7 +15,7 @@ seo:
     - "pet app no account"
     - "on-device ocr vs cloud ocr"
 date: 2026-07-12
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 lede: "Nobody would upload a photo of their driving licence to a free web tool. Plenty of people photograph the dog's rabies certificate into a cloud pet app without a second thought, and those two documents carry roughly the same household. Here is what is actually printed on vet paperwork, what changes when the image leaves the device, and a four-test checklist you can run on any health app before you trust it with the drawer."
 quick_answer: "Vet paperwork is a household document that happens to name a pet. A typical invoice or vaccination certificate prints the owner's full name, home address, phone, email, the animal's microchip number, and the clinic and vet who treated it. Scanning it on-device means the image is only ever a file in the app's own container: it works in airplane mode, a company breach cannot expose it, and no later policy change can reach back and re-use it. Cloud extraction is often more accurate on creased or faded scans and improves without an app update, but it makes the upload permanent while the convenience lasts a few seconds."
 faq:
@@ -133,11 +133,11 @@ The architectural answer is to arrange things so that trust is not required. A s
 
 Our own app has trade-offs too, and a post like this is worthless if it only lists the other side's compromises.
 
-[Pawza](/apps/pawza/) is built to pass its own airplane-mode test. Capture and extraction both run on the device, there is no Pawza account and no Pawza server to upload to, and you confirm every extracted field before it is written. Records stay on iPhone and iPad with optional sync through your own iCloud.
+[Pawza](/apps/pawza/) is built to pass its own airplane-mode test. Capture and extraction both run on the device, there is no Pawza account and no Pawza server to upload to, and you confirm every extracted field before it is written. Records stay on your iPhone and iPad. If you turn on sync, they travel only through your own private iCloud, which we cannot read.
 
-The constraints are real. The best extraction needs Pawza Pro and Apple Intelligence, which means iOS 26 or later on a supported device; on older hardware Pawza falls back to OCR-assisted entry, and you confirm more by hand. There is no Android app and no web app, because the entire privacy argument rests on Apple's on-device frameworks. The free tier also limits how many documents you can scan, which is a business constraint and not a technical one.
+The constraints are real. Automatic field filling needs Pawza Pro and Apple Intelligence, which means iOS 26 or later on an eligible device (the app names iPhone 15 Pro or newer). On the free plan, and on any other device, Pawza still reads the text on the device, and you fill in the fields yourself. There is no Android app and no web app, because the entire privacy argument rests on Apple's on-device frameworks. The free plan also stops at 10 document scans, which is a business constraint and not a technical one.
 
-The features we give up are, almost without exception, the ones that need a server. [VetKeep](/alternatives/vetkeep/) answers questions about your records in a conversational AI chat, which is far easier to build when the records already sit on a server; if that is the feature you want, the cloud is the honest way to get it today. [PetDesk](/alternatives/petdesk/)'s clinic booking and [11pets](/alternatives/11pets/)'s Android and web apps are the same story.
+The features we give up are, almost without exception, the ones that need a server. [VetKeep](/alternatives/vetkeep/) answers questions about your records in a conversational AI chat, which is far easier to build when the records already sit on a server; if that is the feature you want, the cloud is the honest way to get it. [PetDesk](/alternatives/petdesk/)'s clinic booking and [11pets](/alternatives/11pets/)'s Android and web apps are the same story.
 
 We won't route the page through a server without telling you and call it scanning. For which documents are worth keeping, what each of them costs, and the full category rundown, the companion post on [what to keep in a pet medical record](/journal/pet-medical-records-what-to-keep/) covers the paperwork side.
 
