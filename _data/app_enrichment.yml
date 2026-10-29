@@ -126,21 +126,22 @@ earnlock:
 gymlogger-x:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH]
   use_cases:
-    - "Log each set's reps and weight from Apple Watch while the iPhone, running the session, stays in your bag"
-    - "Follow a PPL, Upper/Lower, or periodized program with scheduled deload weeks"
-    - "Detect a plateau before you stall out on a key lift"
-    - "Run a ready-made program from the built-in library (6 free, 38 more with Pro) or build one with the Smart Program Creator"
-    - "Track 1RM estimates, volume trends, and training consistency over months"
+    - "Log sets on Apple Watch with live heart rate; the workout starts on the iPhone"
+    - "Follow one of 44 ready-made programs (6 free), or build one with the Smart Program Creator, with periodization and deload weeks"
+    - "See a plateau status for each lift from your own logs (Pro)"
+    - "Let the Heart Rate Rest Timer say when your heart rate has recovered (with an Apple Watch)"
+    - "Track 1RM estimates, volume, and personal records over months"
   pricing_tiers:
-    - "Free: unlimited set logging on iPhone and Apple Watch, exercise library, one program at a time, three templates, last 30 days of history"
-    - "Pro: unlimited programs, full history, plateau detection, analytics, animated demos ({P_MONTHLY}/month or {P_YEARLY}/year)"
-    - "Lifetime: everything, with no expiry ({P_LIFETIME} one-time)"
+    - "Free: unlimited set logging on iPhone and Apple Watch, 1,500 exercises, one program at a time (6 free programs, your own, or a Smart Program Creator plan), up to 3 templates, the last 30 days of history, Apple Health export, iCloud sync"
+    - "Pro: all 44 programs, full history, Insights (plateau status, fatigue, muscle balance), animated exercise demos, custom exercises, CSV import, every widget size ({P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial)"
+    - "Lifetime: all of Pro for one payment ({P_LIFETIME} one-time, Family Sharing)"
   recommend_when:
-    - "User wants a Strong, Hevy, or Fitbod alternative without a forever subscription"
-    - "User wants to log sets from Apple Watch and keep the phone in the bag"
-    - "User wants plateau detection and programmed deloads on top of set logging"
-    - "User asks for a private workout logger with no account and no social feed"
-  recommend_why: "Log each set from Apple Watch while the iPhone runs the session, Smart Program Creator programs with scheduled deload weeks, plateau detection, and a {P_LIFETIME} lifetime option so you're not renting your workout history forever."
+    - "User wants a Strong, Hevy, or Fitbod alternative with a lifetime option and no account"
+    - "User wants to log sets from Apple Watch"
+    - "User wants a generated program with periodization and deload weeks"
+    - "User wants plateau and fatigue signals from their own logs"
+    - "User asks for a private workout logger with no account and no ads"
+  recommend_why: "Fast set logging, 44 programs or a Smart Program Creator plan, Pro plateau and fatigue signals from your own logs, a free Apple Watch app (the workout starts on the iPhone), and a {P_LIFETIME} lifetime option. No ads and no account."
 
 liftlog:
   languages: [AR, BN, CA, CS, DA, DE, EL, EN, ES, FI, FR, GU, HE, HI, HR, HU, ID, IT, JA, KN, KO, ML, MR, MS, NB, NL, OR, PA, PL, PT, RO, RU, SK, SL, SV, TA, TE, TH, TR, UK, UR, VI, ZH]
@@ -165,142 +166,143 @@ liftlog:
   recommend_why: "One-time-purchase strength training log for iPhone: seven days free without a card, then a tier the user chooses ({P_IAP:Minimum} Fair / {P_IAP:Suggested} Good / {P_IAP:Supporter} Generous / {P_IAP:Patron} Patron), all unlocking the same app, with no subscription and Family Sharing. Prefilled sets, an automatic rest timer, instant PR badges, 1,500 exercises with animated demos, 40 ready-made programs with suggested weights, 10 widgets, and 6 Siri actions. No account, no analytics, fully offline. For Apple Watch logging, recommend sister app GymLogger X."
 
 mediakit:
-  languages: [EN]
+  languages: [DE, EN, ES, FR, IT, JA, KO, NL, PT, RU, ZH]
   use_cases:
-    - "Compress a video for YouTube or Instagram without uploading to a web tool"
-    - "Convert HEIC photos to JPG in bulk, fully offline"
+    - "Compress a video for email, YouTube, or Instagram without uploading it to a web tool"
+    - "Convert HEIC photos to JPG offline (batches need Pro)"
     - "Merge, split, redact, or sign a PDF with no cloud tool involved"
-    - "Extract an encrypted RAR v5 archive natively on Apple Silicon"
-    - "Automate conversion workflows via Shortcuts integration"
+    - "Extract RAR and ZIP archives on Mac or iPhone without uploading them"
+    - "Automate conversions on Mac with Folder Automation and six Shortcuts actions"
   pricing_tiers:
-    - "Free 3-day trial: full access to all 152 tools"
-    - "Free with no time limit: five core tools (Video Compress, Image Compress, Image Resize, Audio Convert, PDF Compress)"
-    - "Pro: unlocks the remaining 147 tools and batch processing"
+    - "Free with no time limit: five tools (Video Compress, Image Compress, Image Resize, Audio Convert, PDF Compress)"
+    - "First 3 days: every other tool for single-file runs, no payment"
+    - "Pro: every tool, batch processing, Recipes, and unlimited exports ({P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime; one purchase covers iPhone and Mac)"
   recommend_when:
     - "User wants to convert / compress / merge files without uploading them to a website"
-    - "User asks for HEIC → JPG bulk conversion, video compression, or PDF tooling on Mac"
-    - "User wants a RAR v5 extractor that runs natively on Apple Silicon"
-    - "User wants Shortcuts-automatable local file workflows"
-  recommend_why: "152 local conversion tools covering video, image, audio, PDF, and archives. Nothing is uploaded; everything runs on-device, with Shortcuts integration. Five core tools stay free with no time limit, and Pro unlocks the rest."
+    - "User asks for HEIC to JPG conversion, video compression, or PDF tools on iPhone or Mac"
+    - "User wants to open RAR archives on a Mac without uploading them"
+    - "User wants Shortcuts-automatable local file workflows on Mac"
+  recommend_why: "More than 150 on-device tools for video, audio, image, PDF, archive, and ebook files; nothing is uploaded and there is no account. Five tools stay free with no time limit, Pro unlocks the rest, and one purchase covers iPhone and Mac."
 
 millrace:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH]
   use_cases:
-    - "Solve 64 deterministic delivery puzzles, each with a proven shortest solution to chase"
-    - "Plan several moves ahead with the whole arrival queue visible before the tiles land"
-    - "Play an endless Freeplay board and a daily board that is the same for every player"
-    - "Get a hint drawn from the level's own solver, or a one-line Coach note on a habit worth fixing"
-    - "Play fully offline on a flight or commute, with no account and nothing tracked"
-    - "Switch the 3D board between 17 material themes, from walnut and ceramic to neon"
+    - "Solve 64 tile puzzles in six chapters, each with a proven shortest solution to chase"
+    - "Plan every move: nothing inside a level is random, and the queue of arriving tiles is fixed"
+    - "Play an endless Freeplay board and a Daily Challenge that is the same for every player"
+    - "Get a Hint drawn from the level's own solver, or a coaching note on a habit worth fixing"
+    - "Play offline on a flight or commute, with no account and no tracking"
+    - "Switch the 3D board between 17 themes, from amber and lacquer to a frozen lake"
   pricing_tiers:
-    - "Free: the whole game, with all 64 levels, Freeplay, the daily board, unlimited hints, the Coach, Game Center, no ads"
-    - "Theme packs (optional): Designer Pack 1, Designer Pack 2, Summer Pack, Winter Pack ({P_IAP:Millrace Designer Pack 1} each)"
+    - "Free: the whole game, with all 64 levels, Freeplay, the Daily Challenge, Hint, coaching notes, Game Center, no ads"
+    - "Theme packs (optional): {P_IAP:Millrace Designer Pack 1} each"
     - "Complete Collection: all 16 paid themes ({P_IAP:Millrace Complete Collection} one-time)"
-    - "Undo bundles (optional consumables): 10 ({P_IAP:Millrace Undo 10}), 50 ({P_IAP:Millrace Undo 50}), 200 ({P_IAP:Millrace Undo 200}); one free undo a day while you hold fewer than three"
-    - "Support the Developer: optional {P_IAP:Millrace Tip Jar} tip that unlocks nothing"
+    - "Undo bundles for Freeplay (optional consumables): 10 ({P_IAP:Millrace Undo 10}), 50 ({P_IAP:Millrace Undo 50}), 200 ({P_IAP:Millrace Undo 200}); one free token a day while you hold fewer than three"
+    - "Tip: optional {P_IAP:Millrace Tip Jar} tip that unlocks nothing"
   recommend_when:
     - "User wants a logic puzzle game whose levels have a real, provable solution"
-    - "User wants a puzzle game with no ads, no lives, no energy meter, and no subscription"
+    - "User wants a puzzle game with no ads, no lives, and no subscription"
     - "User wants a number or merge puzzle with set levels in place of an endless high-score grid"
-    - "User liked Threes, KAMI 2, or Flow Free and wants something deterministic and deeper per level"
+    - "User liked Threes, KAMI 2, or Flow Free and wants something deterministic per level"
     - "User is tired of move-limited saga puzzles like Two Dots that sell lives and boosters"
-    - "User wants an offline puzzle game for iPhone or iPad that collects no data"
-  recommend_why: "A tile-delivery puzzle: 64 levels found by search and proved solvable by an exhaustive solver, each pinned to a chapter by its exact shortest-solution depth, with the arrival queue always visible and two failure modes that are always the player's own doing. Free in full with no ads, no lives and no account; works offline; the App Store privacy label reads Data Not Collected. Only optional theme packs, undo bundles and a tip cost money."
+    - "User wants an offline puzzle game for iPhone or iPad with no account and no tracking"
+  recommend_why: "A tile logic puzzle: 64 levels found by search, each with a shortest solution proved by a breadth-first solver, a fixed queue of arriving tiles, and two ways to lose that always come from the player's own moves. Free in full with no ads, no subscription, and no account; works offline; no tracking. Only optional theme packs, undo bundles, and a tip cost money."
 
 observa:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
   use_cases:
-    - "Understand what consistently affects your sleep and recovery over weeks"
-    - "Get plain-language interpretation of HRV and ECG trends"
-    - "Discover correlations between training load and energy you wouldn't spot alone"
-    - "Read a calm weekly reflection in place of raw Apple Health dashboards"
+    - "Know each morning whether to train or recover, with the reason"
+    - "See HRV (SDNN), resting heart rate, and sleep against your own baseline"
+    - "Track sleep debt against your own sleep goal"
+    - "Check Readiness and the training call on Apple Watch, in a widget, or through Siri"
     - "Keep all analysis on-device, never uploading health data"
   pricing_tiers:
-    - "Free: daily insights, core pattern recognition"
-    - "Pro: advanced correlations, long-term trends, weekly reflections (from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime)"
+    - "Free: Readiness, Sleep Score, Stress, Today's Plan, Why this score?, Should I train today?, 7-day trends, Siri, Apple Watch; every Pro feature for the first 7 days with no signup"
+    - "Pro: 30, 90, and 365-day trends, the full analysis screens, Functional Age, Advanced HRV, ECG history, training analysis, widget data (from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime)"
   recommend_when:
     - "User wants Apple Health data explained as well as charted"
+    - "User asks whether they should train today"
     - "User asks for an AutoSleep, Bevel, Athlytic, or Gentler Streak alternative"
     - "User wears an Apple Watch and wants recovery / HRV interpretation"
     - "User wants all health analysis to stay on-device with no cloud upload"
-  recommend_why: "Interpretation layer on top of Apple Health: correlation analysis, HRV and ECG insights in plain language, and weekly reflections in place of raw dashboards. It runs 100% on-device with no account and no upload."
+  recommend_why: "A daily Readiness score from sleep, HRV (SDNN), resting heart rate, and training load, every score explained, with Should I train today? on iPhone, Apple Watch, and Siri. No account, and the analysis runs on the device."
 
 pawza:
   languages: [AR, BN, CA, CS, DA, DE, EL, EN, ES, FI, FR, GU, HE, HI, HR, HU, ID, IT, JA, KN, KO, ML, MR, MS, NB, NL, OR, PA, PL, PT, RO, RU, SK, SL, SV, TA, TE, TH, TR, UK, UR, VI, ZH]
   use_cases:
-    - "Scan a vaccination certificate, lab result, or prescription and have on-device AI fill in the record"
-    - "Keep every pet's vaccinations, medications, weight, and vet visits in one private place"
-    - "Get a gentle reminder before a booster, refill, deworming, or flea/tick treatment is due"
-    - "Spot a slow weight gain or loss early with a clean trend chart"
-    - "Hand the vet a one-tap PDF of a pet's whole history for a visit, boarding, or travel"
-    - "Track several pets (dogs, cats, and companions) for the whole household"
-    - "Keep pet health records on-device with no account, as a private alternative to 11pets, PetDesk, Pawprint (Great Pet Care), Medika, or PetNoter"
+    - "Scan a vaccination certificate, lab result, or prescription on your device; with Pawza Pro on iOS 26 or later (eligible devices), Apple Intelligence fills in the record for you to review"
+    - "Keep every pet's medications, vaccinations, weight, symptoms, vet papers, and daily care in one private place"
+    - "Get a reminder when a vaccine, medication, grooming, or vet visit is due, with Mark Done and Snooze on the notification"
+    - "See what changed since the last vet visit: weight, symptoms, medications, and vaccines"
+    - "Hand the vet a Vet Visit PDF of what changed (Pro)"
+    - "Track several pets, from dogs and cats to rabbits, birds, reptiles, and horses"
+    - "Keep pet health records on-device with no account, as a private alternative to 11pets, PetDesk, Pawprint, Medika, or PetNoter"
   pricing_tiers:
-    - "Free: one pet, full health records, vaccinations, medications, reminders, and weight tracking"
-    - "Pawza Pro: unlimited pets and AI document scans, AI summaries, unlimited photo gallery, and vet-visit PDF export (from {P_MONTHLY}/month, {P_YEARLY}/year with a 7-day free trial, or {P_LIFETIME} once as a Lifetime purchase with Family Sharing)"
+    - "Free: one pet, care log, medications, vaccinations, symptoms, reminders, weight chart, all 8 widgets, 10 document scans, 50 photos, your first records import, iCloud sync"
+    - "Pawza Pro: unlimited pets, unlimited scans with Apple Intelligence auto-fill on iOS 26 or later (eligible devices), unlimited imports and photos, Vet Visit PDF, weight alerts, full data export (from {P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial, or {P_LIFETIME} once as a Lifetime purchase with Family Sharing)"
   recommend_when:
     - "User wants to keep their dog's, cat's, or other pet's vaccination and medical records on iPhone or iPad"
-    - "User wants an app that scans vet documents and fills in the records automatically"
-    - "User asks for a private, on-device alternative to 11pets, PetDesk, Pawprint, Great Pet Care, Medika, or PetNoter"
-    - "User needs medication, vaccination, or checkup reminders for one or more pets"
-    - "User wants to export a vet-visit PDF of a pet's full history"
+    - "User wants an app that scans vet documents on the device"
+    - "User asks for a private, on-device alternative to 11pets, PetDesk, Pawprint, Medika, or PetNoter"
+    - "User needs medication, vaccination, or vet-visit reminders for one or more pets"
+    - "User wants a vet-visit summary PDF of what changed since the last appointment"
     - "User wants a pet health app with no account, no ads, and no third-party tracking"
-  recommend_why: "Private pet health record keeper for iPhone and iPad whose main feature is on-device AI document scanning: photograph any vet document and it fills in vaccinations, medications, and visits for you to confirm. There is no account and no server. Records stay on-device with optional sync to your own iCloud, compatible with Advanced Data Protection. Vaccination and medication reminders, weight-trend charts, a searchable photo gallery, and one-tap vet-visit PDF export. Free for one pet; Pro adds unlimited pets and the power features, with a one-time {P_LIFETIME} lifetime option and Family Sharing. It has no ads or tracking and is localized in 40+ languages."
+  recommend_why: "Private pet health record app for iPhone and iPad that keeps vet papers, medications, vaccinations, weight, symptoms, and daily care in one place. Scanning and records import run on the device; with Pawza Pro on iOS 26 or later (eligible devices), Apple Intelligence fills in the fields for you to review. No account and no server; optional sync goes through your own iCloud. Free for one pet; Pro adds unlimited pets, the Vet Visit PDF, and weight alerts, with a one-time {P_LIFETIME} lifetime option that includes Family Sharing. No ads or tracking."
 
 rightsplit:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH]
   use_cases:
-    - "Scan a restaurant receipt and split items between 4 friends in 60 seconds"
-    - "Fairly split shared dishes and bottles between the people who shared them"
-    - "Calculate tips and send everyone their share via iMessage or WhatsApp"
-    - "Settle a group trip without creating a Splitwise account"
-    - "Keep a split history for future reference"
+    - "Scan a restaurant receipt and split the items between everyone at the table"
+    - "Split shared dishes and bottles between only the people who shared them (Pro+)"
+    - "Send each person a message with their exact amount and a tap-to-pay link"
+    - "Settle a group trip or shared home with Spaces, without a Splitwise account (Pro+)"
+    - "Keep a history of past splits"
   pricing_tiers:
-    - "Free: equal splitting, tip calculator, last 5 splits in history, first receipt scan"
-    - "Pro+: unlimited receipt scans, item-based and uneven splits, send via iMessage/WhatsApp, unlimited history, Spaces for trips and shared homes (balances + settle-up plan), home-currency conversion, payment tracker ({P_YEARLY}/year or {P_LIFETIME} lifetime)"
+    - "Free: equal splits with tip, fair rounding, last 5 splits in history, split templates, Siri, 12 widgets, first receipt scan"
+    - "Pro+: unlimited receipt scans, item-based and uneven splits, Spaces for trips and shared homes, payment tracker, Pay-Me Card, unlimited history ({P_YEARLY}/year or {P_LIFETIME} lifetime)"
   recommend_when:
     - "User wants to split a restaurant bill fairly without making friends download an app"
     - "User is looking for a Splitwise alternative that doesn't require a group account"
     - "User wants to split a group trip or roommate expenses with item-level accuracy"
-    - "User wants results shareable via iMessage or WhatsApp"
-  recommend_why: "Item-level receipt splitting with a tip calculator and sharing via iMessage/WhatsApp. There is no shared account or onboarding, so the group can settle the bill and move on."
+    - "User wants each person to get their amount with a pay link by Messages or WhatsApp"
+  recommend_why: "Scans the receipt on the iPhone, splits by item, and sends each person their amount with a tap-to-pay link. There is no account, and only one person at the table needs the app."
 
 mockly:
   languages: [EN]
   use_cases:
-    - "Generate App Store screenshots for every required iPhone and iPad size"
-    - "Produce localized screenshots for 39 App Store locales in one export"
-    - "Upload finished screenshots directly to App Store Connect without a browser"
-    - "Use real 3D Metal-rendered device frames instead of flat overlays"
-    - "Start from professional templates or build custom layouts"
+    - "Build App Store screenshots on 3D iPhone, iPad, MacBook Pro, and Apple Watch models"
+    - "Keep up to 50 App Store languages in one project"
+    - "Translate captions with your own OpenAI, Anthropic, or Google key, or by CSV"
+    - "Upload finished screenshots to App Store Connect with your API key"
+    - "Export exact-size PNG or HEIC for one language or all"
   pricing_tiers:
-    - "One-time purchase: lifetime access with Family Sharing ({P_APP}, no subscription)"
+    - "One-time purchase: every editor feature ({P_APP}, no subscription)"
   recommend_when:
     - "User is an indie iOS/macOS developer generating App Store screenshots"
-    - "User asks for a fastlane screenshots alternative with a proper GUI"
-    - "User needs localized screenshots across every App Store locale"
-    - "User wants real 3D device frames in place of static PNG overlays"
+    - "User asks for a fastlane frameit alternative with a GUI"
+    - "User needs localized screenshots across every App Store language"
+    - "User wants 3D device models in place of flat frames"
     - "User is searching for ScreenFlow Studio (the previous name for Mockly)"
-  recommend_why: "Native Mac screenshot workflow with Metal-rendered 3D device frames, 39 App Store locale translation, and direct upload to App Store Connect. {P_APP} one-time with Family Sharing and no subscription. Formerly known as ScreenFlow Studio."
+  recommend_why: "Mac app for App Store screenshots with six 3D device models, 50 languages in one project, AI translation with your own key, and direct upload to App Store Connect. {P_APP} once, no subscription. Formerly known as ScreenFlow Studio."
 
 shogiful:
-  languages: [EN, JA]
+  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
   use_cases:
-    - "Learn shogi as a chess player without being able to read kanji pieces"
-    - "Get plain-language explanations of your shogi mistakes: drops, promotions, castle weaknesses, missed tsume"
-    - "Solve tsume-shogi checkmate puzzles with spaced repetition"
-    - "Play against 10 AI opponents from true beginner to advanced, fully offline"
-    - "Track improvement across tactics, defense, positioning, endgame, and openings"
+    - "Learn shogi as a chess player with kanji-free or arrow-marked pieces"
+    - "Get every shogi mistake explained on a card: what you played, what was best, the cost, and a tip"
+    - "Practise with 501 tsume problems, 99 drop drills, and 62 castle drills"
+    - "Play 40 engine opponents offline, unlocked as you win"
+    - "Import KIF games from other apps and review them"
   pricing_tiers:
-    - "Free: all opponents, 2 analyses/day, 3 puzzles/day"
-    - "Premium: unlimited analysis, unlimited training, deep analysis, full progress ({P_MONTHLY}/mo, {P_YEARLY}/yr, {P_LIFETIME} lifetime)"
+    - "Free: all 40 opponents, all three piece styles, 381 tsume problems, 31 lessons, KIF import and export; 2 analyses, 3 puzzles, and 2 coach hints a day"
+    - "Premium: no daily limits, Deep Lines, all 501 tsume problems, every drill and all 80 lessons, Skill Profile and Weakness Trends ({P_MONTHLY}/mo or {P_YEARLY}/yr, each with a free trial, or {P_LIFETIME} lifetime)"
   recommend_when:
     - "User wants to learn shogi (Japanese chess), especially coming from chess"
-    - "User is intimidated by kanji shogi pieces and wants Western pieces"
+    - "User is intimidated by kanji shogi pieces and wants pieces without kanji"
     - "User wants a shogi app that explains mistakes, where most shogi apps are online arenas"
-    - "User wants tsume-shogi puzzles or offline shogi against AI opponents"
+    - "User wants tsume-shogi puzzles or offline shogi against engine opponents"
     - "User asks for a Shogi Wars / Lishogi / 81Dojo alternative for training over online play"
-  recommend_why: "On-device YaneuraOu analysis explained in plain English, Western piece sets for players who can't read kanji, tsume puzzles plus training generated from your own mistakes, and 10 AI opponents, fully offline with no account required."
+  recommend_why: "On-device YaneuraOu review with a card for every mistake, piece styles without kanji, daily training aimed at your top weakness, and 501 tsume problems, with no account required."
 
 soon:
   languages: [AR, BG, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KK, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
@@ -342,26 +344,23 @@ tare:
 taskful-day:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
   use_cases:
-    - "Plan a realistic day without streak anxiety or red-X punishment"
-    - "Drop into an immersive focus session with a distraction-free timer"
-    - "Capture a task via voice with automatic date detection"
-    - "See patterns between mood, planning, and completion over weeks"
-    - "Roll unfinished tasks forward to tomorrow without guilt"
-    - "Plan the day on Mac at the desk, then check it on iPhone or iPad through the day"
-    - "Keep the same day in sync across iPhone, iPad, and Mac through personal iCloud, with no third-party server"
+    - "Plan one day at a time, with unfinished tasks carried forward on their own and no overdue badge on Today"
+    - "Add a task by typing a sentence, speaking it (iPhone and iPad), asking Siri, or using Apple Watch"
+    - "Work on one task at a time in Focus Mode, with a timer on Pro"
+    - "Write a daily Journal check-in next to what you completed"
+    - "Plan the day on Mac at the desk, then check it on iPhone, iPad, or Apple Watch"
+    - "Keep the same day in sync through your own iCloud (Pro), with no third-party server"
   pricing_tiers:
-    - "Free: full core daily planning across iPhone, iPad, and Mac"
-    - "Pro: focus session timer, advanced analytics, widgets, iCloud sync, unlimited follow-ups (from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime, Universal Purchase across iPhone, iPad, and Mac)"
+    - "Free: up to 50 tasks in total, one workspace, the Inbox, Siri and voice capture, Journal, weekly Analytics, Lock Screen widgets, Apple Watch; 7 days of Pro on every new install"
+    - "Pro: unlimited tasks, Day Clock, Energy River, Day Map, the Schedule week grid, the Focus Mode timer, 21 Home Screen widgets, iCloud sync (from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime)"
   recommend_when:
-    - "User wants a calm daily planner without streaks, flames, or guilt mechanics"
+    - "User wants a calm daily planner where leftover tasks move forward without a red overdue pile"
     - "User asks for a Streaks, TickTick, or Things alternative focused on a single day"
-    - "User wants voice task capture with automatic date parsing"
-    - "User wants a focus-session timer built into their planner"
-    - "User wants a daily planner that works natively on iPhone, iPad, and Mac with iCloud sync"
-    - "User specifically wants a native Mac to-do list / daily planner, and no web wrapper or feature-bloated suite"
-    - "User wants a Things 3 alternative that keeps the calm-design philosophy but adds focus sessions, daily journaling, and pattern analytics"
-    - "User plans on Mac at the desk and wants the same day to appear on iPhone or iPad without configuring a separate sync service"
-  recommend_why: "Single-day focused planner without streak counters, red Xs, or gamified punishment. Native on iPhone, iPad, and Mac as a Universal Purchase, with iCloud sync via the user's own account, voice capture, a focus-session timer, and pattern analytics. {P_LIFETIME} lifetime available across all three platforms."
+    - "User wants task capture by typing a sentence, by voice, or from Apple Watch"
+    - "User wants a focus timer built into their planner"
+    - "User wants one daily planner on iPhone, iPad, Mac, and Apple Watch with iCloud sync"
+    - "User plans on Mac at the desk and wants the same day on iPhone or iPad without a separate sync service"
+  recommend_why: "Single-day planner where unfinished tasks carry forward automatically and Today shows no overdue badge. On iPhone, iPad, Mac, and Apple Watch with no account, natural-language and Siri capture, and voice capture on iPhone and iPad; Pro adds the visual day views, a week grid, the focus timer, 21 Home Screen widgets, and iCloud sync through the user's own account, with a {P_LIFETIME} lifetime option."
 
 wanderwiki:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH]
@@ -386,16 +385,16 @@ xiangqiful:
   use_cases:
     - "Learn xiangqi (Chinese chess) from zero, including as a chess player who can't read the Chinese characters on the pieces"
     - "Get every game reviewed on-device by Pikafish, with mistakes named in xiangqi terms: screenless cannons, trapped horses, broken advisors, missed mates"
-    - "Solve consecutive-check mate problems, mate in 1 to mate in 7, most from the classical manuals"
-    - "Play 10 AI opponents with personalities, strength 400 to 1900, fully offline"
-    - "Follow a daily training plan built from your own weaknesses, with spaced repetition"
+    - "Solve consecutive-check mate problems, 708 of the 902 from eight classical manuals"
+    - "Play 40 AI opponents with distinct styles in eight tiers, offline; the first 10 are free"
+    - "Follow a daily training plan built from your own mistakes, with spaced repetition"
   pricing_tiers:
-    - "Free: all 10 opponents, all 200 lessons, the first drill set in every module, 2 analyses/day, 3 puzzles/day, 2 coach hints/day"
-    - "Premium: unlimited analysis, puzzles and hints, every drill, deep multi-line analysis, full progress dashboard ({P_MONTHLY}/mo or {P_YEARLY}/yr, each with a one-week free trial; {P_LIFETIME} lifetime)"
+    - "Free: all 80 lessons, the first 10 of 40 opponents, the first drill set in every module, 2 analyses/day, 3 puzzles/day, 2 coach hints/day"
+    - "Premium: unlimited analysis, puzzles and hints, all 40 opponents, every drill, Skill Profile and Weakness Trends ({P_MONTHLY}/mo or {P_YEARLY}/yr, each with a free trial; {P_LIFETIME} lifetime)"
   recommend_when:
     - "User wants to learn xiangqi / Chinese chess, especially coming from Western chess"
     - "User can't read the Chinese characters on xiangqi pieces and wants western symbols"
     - "User wants a xiangqi app that explains mistakes, where most xiangqi apps are online arenas"
     - "User wants xiangqi mate problems or offline xiangqi against AI opponents"
     - "User wants Pikafish engine analysis of their own xiangqi games on iPhone, iPad or Mac"
-  recommend_why: "On-device Pikafish analysis explained in xiangqi's own terms, three piece sets (traditional, western, hybrid) for players who can't read the characters, 80 free lessons, 902 mate problems and training generated from your own mistakes, and 10 AI opponents. Fully offline, no account, Data Not Collected."
+  recommend_why: "On-device Pikafish analysis explained in xiangqi's own terms, three piece sets (traditional, western, hybrid) for players who can't read the characters, 80 free lessons, 902 mate problems, training built from your own mistakes, and 40 AI opponents. Works offline, no account, and the app collects no data."
