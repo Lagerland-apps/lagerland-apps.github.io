@@ -14,21 +14,21 @@ seo:
     - "observa"
 date: 2026-01-17
 lede: "Three years of HRV charts, ten thousand data points, and a feeling that none of it added up to anything. The story behind Observa, and why interpreting health data matters more than tracking it."
-quick_answer: "Observa is an interpretation layer for Apple Health data. It finds the variables most correlated with the user's sleep quality, normalises HRV against the user's personal baseline instead of population norms, flags days that deviated from that baseline, and writes a calm weekly read in plain language. All correlation analysis runs on-device. Observa has no cloud upload and no account, and it gives no medical advice."
+quick_answer: "Observa is an interpretation layer for Apple Health data. Each morning it turns your sleep, HRV (SDNN), resting heart rate, and training load into a Readiness score measured against your own baseline instead of population norms, and \"Why this score?\" says in plain language which signals moved it. Its Patterns tab shows which habits tend to line up with your recovery, sleep, and HRV. The analysis runs on your device, there is no account, and Observa does not give medical advice."
 faq:
   - q: "How do I actually interpret my Apple Health data?"
-    a: "Apple Health is excellent at collecting data but doesn't editorialise, so users get charts without an explanation. Observa sits on top of Apple Health. It shows the variables most correlated with your sleep quality this month, normalises HRV against your personal baseline, and flags days that departed noticeably from your own pattern."
+    a: "Apple Health is excellent at collecting data but doesn't editorialise, so you get charts without an explanation. Observa sits on top of Apple Health. It compares your sleep, HRV, and resting heart rate with your own typical range, gives you a daily Readiness score with the reasons behind it, and shows which habits tend to line up with your recovery, sleep, and HRV."
   - q: "Is HRV of 38 ms good or bad?"
-    a: "There is no universal answer. A 38 ms HRV reading means nothing until you know whether your personal baseline is 32 or 56. Observa normalises HRV against your own data instead of population norms, so the trend you see reflects your physiology and not a stranger's."
+    a: "There is no universal answer. A 38 ms HRV reading means nothing until you know whether your personal baseline is 32 or 56. Observa compares your HRV (SDNN, as Apple Health records it) with your own typical range instead of population norms, so the trend you see reflects your physiology and not a stranger's."
   - q: "Does Observa upload my health data to a server?"
-    a: "No. Observa's correlation analysis runs entirely on-device, using local models small enough to fit in the app bundle. The analyses are simpler than a cloud service could deliver. In exchange, no employee, breach, or future model-training disclosure can touch your data."
+    a: "No. Observa processes and stores your health data on your device. It has no account and no analytics SDKs, and the app makes no network calls of its own; only purchases and the links you open use the internet. The analysis is simpler than a cloud service could run, and in exchange your data never reaches a server."
   - q: "Is Observa a medical diagnostic tool?"
     a: "No. Observa is an interpretation layer, not a diagnostic tool. It will not detect sleep apnoea, cardiac issues, or autoimmune conditions, and it doesn't pretend to. It produces the three or four plain-language sentences a thoughtful coach might say after reading a year of your Apple Health data carefully."
 mentioned_apps:
   - observa
 read_time: "6 min read"
 excerpt: "Apple Health shows hundreds of metrics with no story attached. This post explains the interpretation gap that led to Observa, why correlation analysis beats raw charts, and what ‘plain-language insights’ look like in a privacy-first app."
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 I have worn an Apple Watch since 2018. By the time I started building [Observa](/apps/observa/), Apple Health had eight years of my data: sleep, heart rate, HRV, ECG readings, mindfulness minutes, workout sessions, blood oxygen, walking steadiness, the lot.
@@ -57,10 +57,10 @@ More willpower won't fix this, because the problem is the *display*. A chart wit
 
 Observa sits on top of Apple Health and answers a small set of questions directly:
 
-- **What variable is most correlated with your sleep quality this month?** Maybe it's training volume. Maybe it's screen time before bed. Maybe it's the day of the week (don't underestimate Sunday-night anxiety as a predictor).
-- **What does your HRV trend look like, normalised against your own baseline?** Your baseline, not the population's. A 38 ms HRV reading means nothing until you know whether your personal baseline is 32 or 56.
-- **Which days in the last 90 deviated most from baseline, and what else changed on those days?** This is where the interesting stories are, the ones where you say "oh, of course, that was the week I flew through three time zones."
-- **Is your training load keeping pace with your recovery, or are the two diverging?** If they diverge, you are building up fatigue, however the individual workouts felt.
+- **How recovered am I today, and why?** Readiness weighs sleep, HRV, resting heart rate, and training load against your own typical range, and "Why this score?" shows which of them moved it.
+- **What does my HRV look like against my own baseline?** Your baseline, not the population's. A 38 ms HRV reading means nothing until you know whether your personal baseline is 32 or 56.
+- **Which habits tend to line up with better sleep and recovery for me?** Patterns ranks up to four over 14, 28, or 90 days, each with a confidence label. This is where the interesting stories are, the ones where you say "oh, of course."
+- **Is my training load keeping pace with my recovery?** Training load compares your last 7 days with your last 28, and "Should I train today?" turns it all into Push, Maintain, Recover, or Rest. If load and recovery diverge, you are building up fatigue, however the individual workouts felt.
 
 None of this is a medical diagnosis. Observa can't tell you whether you have a clinical sleep disorder, a cardiac issue, or an autoimmune condition, and it won't pretend to. What it can do is take a year of your own data and turn it into the three or four sentences a thoughtful coach might give you if they had time to read it carefully, which most coaches don't.
 
@@ -70,14 +70,14 @@ The other constraint behind Observa is the obvious one: health data should never
 
 That's a statement of values, and it's also a technical decision with real consequences for the product. A cloud version of Observa could use better correlation models, larger datasets, and more compute. It would also be a target for breaches, a regulatory minefield in several jurisdictions, and, worst of all, something the user couldn't verify.
 
-Observa's correlation analysis runs on the device, using local models small enough to fit in the app bundle. The analyses are simpler than what a cloud service could do. In return, nobody but you ever sees a single data point. There is no cloud account to compromise, no employee with database access, and no future press release about having "accidentally trained a model on your sleep data."
+Observa's analysis runs on the device, with rules and statistics simple enough to compute there. It is simpler than what a cloud service could do. In return, nobody but you ever sees a single data point. There is no cloud account to compromise and no database for anyone at Lagerland Apps to look into.
 
 I think that's the right tradeoff for health data. I know not everyone agrees, and for some uses, such as clinical research and longitudinal population studies, on-device can't compete. Observa isn't built for those. It's the *interpretation layer* for one person's own life, and that person owns it.
 
 ## What this means in practice
 
-If you keep opening the Health app, scrolling, and coming away with nothing, [Observa](/apps/observa/) was made for you. It reads what's already in your Health database (with your permission, limited to the categories you allow) and gives you a weekly read in place of a panel of charts.
+If you keep opening the Health app, scrolling, and coming away with nothing, [Observa](/apps/observa/) was made for you. It reads what's already in your Health database (with your permission, limited to the categories you allow) and gives you a morning read in place of a panel of charts.
 
-It won't tell you what to eat or when to sleep. Now and then it will tell you something specific and useful, like "your resting heart rate has been elevated for three weeks and the most likely correlate is training volume," and leave the decision to you.
+It won't tell you what to eat or when to sleep. It will tell you something specific, like "Readiness is Moderate because your resting heart rate is above your usual range," and leave the decision to you.
 
-That's the whole product: Apple's data layer plus a thin layer of honest interpretation. It has no tracking, no upload, and no account, and it gives no medical advice. It does the modest, useful job the Health app leaves undone.
+That's the whole product: Apple's data layer plus a thin layer of honest interpretation, kept on your device and offered without medical claims. It does the modest, useful job the Health app leaves undone.

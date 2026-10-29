@@ -2,20 +2,20 @@
 layout: default
 permalink: /alternatives/oura/
 title: "Oura Ring Alternative"
-quick_answer: "Observa is a software-only, on-device alternative to the Oura Ring app, and because it reads Apple Health, it also works with an Oura ring. Oura writes your sleep, HRV, resting heart rate, and temperature into Apple Health. Observa interprets that data (or your Apple Watch's, or any other Health source) against a personal 60-day baseline and tells you which habits move each metric. You can keep the ring and drop the monthly membership, or skip the ring entirely. Observa needs no account, the core needs no subscription, and everything runs on-device, on iPhone and iPad. Free, Pro from {P_MONTHLY@observa}/mo or {P_LIFETIME@observa} lifetime."
+quick_answer: "Observa is a software-only alternative to the Oura Ring for Apple Watch owners. Oura sells a ring with a monthly membership and builds its readiness score in its own app and cloud. Observa reads the sleep, HRV (SDNN), resting heart rate, and workouts your Apple Watch saves to Apple Health and turns them into a daily 0 to 100 Readiness score against your own baseline, with \"Why this score?\" behind it and a Push, Maintain, Recover, or Rest call. It runs on iPhone, iPad, and Apple Watch, needs no account, and keeps the analysis on your device. The daily scores are free; Pro costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once."
 seo:
   title: "Oura Ring Alternative: Observa, On-Device Insights"
-  description: "An Oura Ring alternative, or keep your ring without the membership. Observa reads Apple Health to interpret sleep, HRV, and recovery on-device."
+  description: "An Oura Ring alternative for Apple Watch owners. Observa turns Apple Health sleep, HRV, and heart data into a daily Readiness score, on-device."
   keywords:
     - Oura alternative
     - Oura Ring alternative
-    - Oura alternative no subscription
-    - alternative to Oura without ring
+    - Oura alternative no ring
+    - Oura alternative Apple Watch
     - Observa vs Oura
+    - readiness score Apple Watch
     - Apple Watch sleep recovery app
     - on-device readiness app
-    - Oura alternative Apple Watch
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "observa" | first -%}
@@ -47,23 +47,23 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best Oura Ring alternative without a subscription?", "acceptedAnswer": { "@type": "Answer", "text": "Observa is the closest software-only alternative. Oura is a smart-ring platform with a monthly membership. Observa reads your Apple Health data (sleep, HRV, RHR) and works out which habits move each metric against your personal baseline, fully on-device, with no required subscription for the core. Because Oura writes its data into Apple Health, you can keep the ring, drop the membership, and let Observa interpret the ring's data. Observa runs on iPhone and iPad." } },
-    { "@type": "Question", "name": "Do I need an Apple Watch to use Observa, or can it read my Oura ring's data?", "acceptedAnswer": { "@type": "Answer", "text": "You don't need an Apple Watch. Observa reads Apple Health, and Oura writes your sleep, HRV, resting heart rate, and temperature into Apple Health from its own app. Turn that on and Observa interprets your ring's data directly, so you keep the Oura ring, drop the monthly membership, and still get plain-English insight on your iPhone or iPad. If you don't own an Apple Watch or an Oura, any other Health-connected device (Whoop, Garmin, Fitbit via a sync app) works too." } },
-    { "@type": "Question", "name": "Can Observa replace my Oura Ring?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on what you value. The Oura Ring's finger-based sensors are good at overnight temperature and sleep staging. Observa adds no sensors. It interprets the data already in your Apple Health (including what your Oura ring writes there, or what an Apple Watch records), with plain-English correlations and a personal baseline. If you want interpretation without the membership, use Observa and keep wearing the ring. If you want Oura's own readiness score and coaching, keep the Oura app too." } },
-    { "@type": "Question", "name": "Is Observa cheaper than Oura?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Oura requires both buying the ring and an ongoing membership (commonly around $5.99/month) to unlock full insights. Observa is free at its core tier, with Pro from {P_MONTHLY@observa}/month or {P_LIFETIME@observa} once for lifetime, using the Apple Watch you already own." } },
-    { "@type": "Question", "name": "Is Observa more private than Oura?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Observa runs entirely on-device with no servers, no account, and no third-party analytics, and Apple's App Privacy nutrition label lists it as collecting zero data. Oura is an account- and cloud-based platform that stores your data on its servers." } },
-    { "@type": "Question", "name": "Does Observa give a readiness score like Oura?", "acceptedAnswer": { "@type": "Answer", "text": "Not a single proprietary readiness number in Oura's style. Observa scores each metric (HRV, RHR, sleep efficiency) against your own 60-day baseline and tells you which habits move it, with sample size and confidence. If you want one daily readiness score, Oura gives you that. If you want the reasoning behind the numbers, Observa shows it." } },
-    { "@type": "Question", "name": "Does Observa need any extra hardware?", "acceptedAnswer": { "@type": "Answer", "text": "No. Observa reads whatever is already in your Apple Health, from an Oura ring, an Apple Watch, or another Health-connected device, so there's nothing extra to buy. It runs on iPhone and iPad." } }
+    { "@type": "Question", "name": "What is the best Oura Ring alternative without a subscription?", "acceptedAnswer": { "@type": "Answer", "text": "If you already wear an Apple Watch, Observa gives you a daily readiness read without buying a ring. Its Readiness score, Sleep Score, stress read, and \"Should I train today?\" call are free. Pro is optional and adds long-term trends and deeper analysis, at {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once, and the lifetime option never renews. Observa runs on iPhone, iPad, and Apple Watch and needs no account." } },
+    { "@type": "Question", "name": "Do I need an Apple Watch to use Observa, or can it read my Oura ring's data?", "acceptedAnswer": { "@type": "Answer", "text": "Observa reads Apple Health, whichever device or app saved the data there, and an Apple Watch is the recommended source. Oura can write some of its data to Apple Health from its own app, but Observa has not been checked against Oura data, so it may not fill every score. If the ring is your only device, look in Apple Health to see which sleep and heart metrics arrive there before you rely on Observa." } },
+    { "@type": "Question", "name": "Can Observa replace my Oura Ring?", "acceptedAnswer": { "@type": "Answer", "text": "It can if you wear an Apple Watch and want the readiness answer more than the ring itself. Observa adds no sensors. It builds Readiness from the sleep, HRV, resting heart rate, and training load your watch saves to Apple Health, explains the score, and gives you a training call on your wrist. The Oura Ring is the better pick if you prefer wearing a ring to bed, or if you want its overnight temperature sensing, which Observa does not use." } },
+    { "@type": "Question", "name": "Is Observa cheaper than Oura?", "acceptedAnswer": { "@type": "Answer", "text": "For Apple Watch owners, usually. Oura requires buying the ring and an ongoing membership (commonly around $5.99/month) to unlock full insights. Observa's daily scores are free, and Pro costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once, using the Apple Watch you already own." } },
+    { "@type": "Question", "name": "Is Observa more private than Oura?", "acceptedAnswer": { "@type": "Answer", "text": "Observa has no account and no analytics SDKs, and the app makes no network calls of its own, so your health data is processed and stored on your device. Oura is an account- and cloud-based platform that stores your data on its servers." } },
+    { "@type": "Question", "name": "Does Observa give a readiness score like Oura?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Observa's Readiness runs from 0 to 100 and weighs sleep at 35%, HRV at 25%, resting heart rate at 25%, and training load at 15%, against your own typical range. It is banded Ready, Moderate, or Low, and \"Why this score?\" shows which signals moved it. For about the first 7 nights it shows \"Building your baseline\". The method differs from Oura's, so the numbers won't match." } },
+    { "@type": "Question", "name": "Does Observa need any extra hardware?", "acceptedAnswer": { "@type": "Answer", "text": "No. Observa reads what is already in Apple Health. An Apple Watch is recommended, because sleep stages, HRV, blood oxygen, ECG, and VO2 max only appear when a device records them. Observa runs on iPhone, iPad, and Apple Watch." } }
   ]
 }
 </script>
 
 <section class="hero hero--home">
   <div class="hero-left reveal">
-    <p class="overline">Apple Health insights · Private · On-device · iPhone &amp; iPad</p>
-    <h1 class="h1">An Oura Ring alternative<br><span class="gradient-text">or a way to keep your ring without the membership.</span></h1>
+    <p class="overline">Apple Health insights · Private · On-device · iPhone, iPad &amp; Apple Watch</p>
+    <h1 class="h1">An Oura Ring alternative<br><span class="gradient-text">for the Apple Watch you already wear.</span></h1>
     <p class="lead">
-      The Oura Ring is lovely hardware, but its insights sit behind a monthly membership. Oura also writes your sleep, HRV, resting heart rate, and temperature into Apple Health, which is where Observa reads from. You can keep the ring and let Observa interpret its data with no membership, or skip the ring and use your Apple Watch or iPhone data. Either way you get plain-English correlations against your personal baseline on iPhone and iPad, fully on-device and with no account.
+      The Oura Ring is lovely hardware, and its readiness score sits behind a monthly membership. If you already wear an Apple Watch, Observa gives you a morning Readiness score from the sleep, HRV, resting heart rate, and training load your watch saves to Apple Health. "Why this score?" shows what moved it, and "Should I train today?" gives you Push, Maintain, Recover, or Rest, on your wrist. There is no account, and the analysis runs on your device.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/observa/">See Observa</a>
@@ -76,18 +76,18 @@ last_updated: 2026-10-26
 
 <section id="compare" class="section reveal">
   <h2 class="h2">How does Observa compare to Oura?</h2>
-  <p class="lead">A smart ring with a membership, compared with software that reads data you already collect.</p>
+  <p class="lead">A smart ring with a membership, compared with software that reads what your Apple Watch already records.</p>
   <div class="grid grid-2 stagger">
-    <div class="card"><div class="card-title">Hardware</div><div class="card-text"><strong>Observa:</strong> None of its own. It reads Apple Health, including the data your Oura ring already writes there. Runs on iPhone and iPad.<br><br><strong>Oura:</strong> A smart ring with finger-based sensors.</div></div>
-    <div class="card"><div class="card-title">What it gives you</div><div class="card-text"><strong>Observa:</strong> Plain-English correlations against a 60-day personal baseline.<br><br><strong>Oura:</strong> Daily readiness, sleep, and activity scores.</div></div>
-    <div class="card"><div class="card-title">Privacy</div><div class="card-text"><strong>Observa:</strong> On-device, no account; App Privacy label lists zero data collected.<br><br><strong>Oura:</strong> Account- and cloud-based; data stored on its servers.</div></div>
-    <div class="card"><div class="card-title">Pricing</div><div class="card-text"><strong>Observa:</strong> Free; Pro from {P_MONTHLY@observa}/mo or {P_LIFETIME@observa} lifetime.<br><br><strong>Oura:</strong> Ring purchase plus membership (~$5.99/mo).</div></div>
+    <div class="card"><div class="card-title">Hardware</div><div class="card-text"><strong>Observa:</strong> None of its own. It reads Apple Health, with an Apple Watch as the recommended source, and has its own Apple Watch app with complications.<br><br><strong>Oura:</strong> A smart ring with finger-based sensors.</div></div>
+    <div class="card"><div class="card-title">What it gives you</div><div class="card-text"><strong>Observa:</strong> Readiness, Sleep Score, and Stress against your own baseline, each with "Why this score?", plus a Push, Maintain, Recover, or Rest call and sleep debt against your own goal.<br><br><strong>Oura:</strong> Daily readiness, sleep, and activity scores.</div></div>
+    <div class="card"><div class="card-title">Privacy</div><div class="card-text"><strong>Observa:</strong> No account and no analytics SDKs; the analysis runs on your device. <a href="/transparency/#observa">Privacy Manifest.</a><br><br><strong>Oura:</strong> Account- and cloud-based; data stored on its servers.</div></div>
+    <div class="card"><div class="card-title">Pricing</div><div class="card-text"><strong>Observa:</strong> The daily scores are free; Pro costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once.<br><br><strong>Oura:</strong> Ring purchase plus membership (~$5.99/mo).</div></div>
   </div>
 </section>
 
 <section class="section reveal">
   <h2 class="h2">Observa vs Oura, feature by feature</h2>
-  <p class="lead">A software interpreter and a smart-ring platform side by side.</p>
+  <p class="lead">A software readiness app and a smart-ring platform side by side.</p>
   <div class="card" style="overflow-x:auto;padding:0;">
     <table class="compare-matrix" style="width:100%;border-collapse:collapse;font-size:var(--text-sm);">
       <thead>
@@ -98,12 +98,13 @@ last_updated: 2026-10-26
         </tr>
       </thead>
       <tbody>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Extra hardware</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">None (Apple Watch)</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Smart ring</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Overnight temperature</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">From Apple Watch data</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Dedicated ring sensor</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Interpretation / why</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Named correlations</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Scores + guidance</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Single readiness score</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No (per-metric)</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>On-device / private</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes (zero data)</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Cloud account</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);"><strong>Pricing</strong></td><td style="padding:var(--s-3) var(--s-4);">Free; to {P_LIFETIME@observa} lifetime</td><td style="padding:var(--s-3) var(--s-4);">Ring + ~$5.99/mo</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Extra hardware</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">None (Apple Watch recommended)</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Smart ring</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Overnight temperature</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Not used</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Dedicated ring sensor</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Daily readiness score</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, 0 to 100 with "Why this score?"</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Training call</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Push, Maintain, Recover, or Rest</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Readiness guidance</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Apple Watch app</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes, with complications</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No (ring)</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Account</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">None needed</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Required</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);"><strong>Pricing</strong></td><td style="padding:var(--s-3) var(--s-4);">Free; Pro from {P_MONTHLY@observa}/month or {P_LIFETIME@observa} once</td><td style="padding:var(--s-3) var(--s-4);">Ring + ~$5.99/mo</td></tr>
       </tbody>
     </table>
   </div>
@@ -112,11 +113,10 @@ last_updated: 2026-10-26
 <section class="section reveal">
   <h2 class="h2">When to pick Observa over Oura</h2>
   <ul class="bullets">
-    <li>You want to drop the monthly membership but keep your Oura ring's data, via Apple Health</li>
-    <li>You don't own a ring and want insight from your Apple Watch or iPhone data instead</li>
-    <li>You want to understand which habits move your sleep and recovery</li>
-    <li>You'd rather not pay for hardware plus a membership</li>
-    <li>You want every byte to stay on-device, with App Privacy label proof</li>
+    <li>You already wear an Apple Watch and don't want a second device and a membership</li>
+    <li>You want to see which signal moved your readiness, not just the number</li>
+    <li>You want the morning answer on your wrist, in a widget, or from Siri</li>
+    <li>You want your health data analysed on your device, with no account</li>
   </ul>
 </section>
 
@@ -125,27 +125,36 @@ last_updated: 2026-10-26
   <ul class="bullets">
     <li>You want the ring's finger-based overnight temperature and sleep sensing</li>
     <li>You prefer a ring to a watch for sleep tracking</li>
-    <li>You want a single daily readiness score with guided coaching</li>
+    <li>You don't own an Apple Watch and want one device that handles everything</li>
   </ul>
 </section>
 
+{% if app %}
 <section class="section reveal">
-  <h2 class="h2">FAQ</h2>
+  <h2 class="h2">About Observa</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item"><summary>What is the best Oura Ring alternative without a subscription?</summary><div class="faq-a">Observa. It reads your Apple Health data (sleep, HRV, RHR) and works out which habits move each metric against your personal baseline, on-device, with no required subscription for the core. Because Oura writes to Apple Health, you can keep the ring and drop the membership. It runs on iPhone and iPad.</div></details>
-    <details class="faq-item"><summary>Do I need an Apple Watch to use Observa, or can it read my Oura ring's data?</summary><div class="faq-a">No Apple Watch needed. Observa reads Apple Health, and Oura writes sleep, HRV, RHR, and temperature there from its own app. Turn that on and Observa interprets your ring's data directly. Other Health-connected devices (Whoop, Garmin, Fitbit via a sync app) work too.</div></details>
-    <details class="faq-item"><summary>Can Observa replace my Oura Ring?</summary><div class="faq-a">It depends. Oura's finger sensors are good at overnight temperature and sleep. Observa adds no sensors; it interprets the data already in Apple Health, including what your Oura ring writes there. For interpretation without the membership, use Observa and keep the ring. For Oura's own readiness score and coaching, keep the Oura app too.</div></details>
-    <details class="faq-item"><summary>Is Observa cheaper than Oura?</summary><div class="faq-a">Yes. Oura needs the ring plus a ~$5.99/month membership. Observa is free at its core, with Pro from {P_MONTHLY@observa}/month or {P_LIFETIME@observa} lifetime, using the Apple Watch you already own.</div></details>
-    <details class="faq-item"><summary>Is Observa more private than Oura?</summary><div class="faq-a">Yes. It runs entirely on-device with no account and no analytics, and its App Privacy label lists zero data collected. Oura is account- and cloud-based.</div></details>
-    <details class="faq-item"><summary>Does Observa give a readiness score like Oura?</summary><div class="faq-a">Not a single proprietary number. Observa scores each metric against your 60-day baseline and tells you what's moving it, with a confidence level. For one readiness score, use Oura; for the reasoning, use Observa.</div></details>
-    <details class="faq-item"><summary>Does Observa need any extra hardware?</summary><div class="faq-a">No. It reads whatever is already in your Apple Health, from an Oura ring, an Apple Watch, or another Health-connected device. It runs on iPhone and iPad.</div></details>
+    <details class="faq-item" open><summary>What is the best Oura Ring alternative without a subscription?</summary><div class="faq-a">If you already wear an Apple Watch, Observa gives you a daily readiness read without a ring. Readiness, the Sleep Score, Stress, and the training call are free. Pro is optional, at {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once, and the lifetime option never renews.</div></details>
+    <details class="faq-item"><summary>Do I need an Apple Watch to use Observa, or can it read my Oura ring's data?</summary><div class="faq-a">Observa reads Apple Health, whichever device saved the data, and an Apple Watch is the recommended source. Oura can write some data to Apple Health, but Observa has not been checked against Oura data, so it may not fill every score. Look in Apple Health first to see what the ring saves there.</div></details>
+    <details class="faq-item"><summary>Can Observa replace my Oura Ring?</summary><div class="faq-a">It can if you wear an Apple Watch and want the readiness answer more than the ring. Observa adds no sensors; it works from what your watch saves to Apple Health. Keep the ring if you prefer it to a watch at night or want its overnight temperature sensing, which Observa does not use.</div></details>
+    <details class="faq-item"><summary>Is Observa cheaper than Oura?</summary><div class="faq-a">For Apple Watch owners, usually. Oura needs the ring plus a ~$5.99/month membership. Observa's daily scores are free, and Pro costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once.</div></details>
+    <details class="faq-item"><summary>Is Observa more private than Oura?</summary><div class="faq-a">Observa has no account and no analytics SDKs, and the app makes no network calls of its own, so your health data stays on your device. Oura is account- and cloud-based.</div></details>
+    <details class="faq-item"><summary>Does Observa give a readiness score like Oura?</summary><div class="faq-a">Yes. Readiness runs from 0 to 100 from sleep, HRV, resting heart rate, and training load against your own typical range, banded Ready, Moderate, or Low, and "Why this score?" shows what moved it. The method differs from Oura's, so the numbers won't match.</div></details>
+    <details class="faq-item"><summary>Does Observa need any extra hardware?</summary><div class="faq-a">No. It reads what is already in Apple Health, and an Apple Watch is recommended because sleep stages and HRV only appear when a device records them. It runs on iPhone, iPad, and Apple Watch.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Ready?</p>
   <h2 class="h2">Try Observa today.</h2>
-  <p class="lead">Sleep and recovery insight from your Oura ring or Apple Watch, read straight from Apple Health on iPhone and iPad. It runs on-device with no membership. Free; Pro from {P_MONTHLY@observa}/mo.</p>
+  <p class="lead">A morning Readiness score from your Apple Watch data, explained and kept on your device. Free, with Pro from {P_MONTHLY@observa}/month.</p>
   <div class="actions">
     <a class="btn btn-primary" href="{{ app.app_store_url }}" rel="noopener">Download Observa</a>
     <a class="btn btn-secondary" href="/apps/observa/">See full page</a>

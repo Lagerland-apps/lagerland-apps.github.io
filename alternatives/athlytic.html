@@ -2,22 +2,20 @@
 layout: default
 permalink: /alternatives/athlytic/
 title: "Athlytic Alternative"
-quick_answer: "Observa is a private, on-device alternative to Athlytic for people who want their Apple Health data explained in plain language instead of reduced to one recovery score. Athlytic combines HRV, RHR, and sleep into a daily 0 to 100 percentage. Observa names the correlations behind that number: which habits keep moving your HRV (SDNN) baseline, your sleep efficiency, and your acute:chronic training-load ratio. It stores nothing off-device. Free with Pro from {P_MONTHLY@observa}/mo or {P_LIFETIME@observa} lifetime."
+quick_answer: "Observa is an Athlytic alternative for iPhone, iPad, and Apple Watch that gives you a daily Readiness score from Apple Health and tells you why it landed where it did. Readiness runs from 0 to 100 and weighs sleep, HRV (SDNN), resting heart rate, and training load against your own baseline. \"Why this score?\" names the signals that moved it, and \"Should I train today?\" answers Push, Maintain, Recover, or Rest, in the app, through Siri, in a widget, or on your watch. Observa needs no account, and the analysis runs on your device. The daily scores are free; Pro costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once."
 seo:
   title: "Athlytic Alternative: Observa for Apple Health Insights"
-  description: "An Athlytic alternative that explains the patterns behind your recovery score as well as the number. Observa reads Apple Health, fully on-device."
+  description: "An Athlytic alternative with a daily Readiness score that shows its reasons. Observa reads Apple Health on iPhone and Apple Watch, analysed on-device."
   keywords:
     - Athlytic alternative
     - alternative to Athlytic
     - Observa vs Athlytic
-    - Apple Health insights app
-    - HRV interpretation app
-    - recovery readiness app
-    - private health app iPhone
+    - readiness score app Apple Watch
+    - should I train today app
+    - HRV recovery app iPhone
     - SDNN HRV tracking iPhone
-    - on-device health analytics
-    - Apple Watch recovery insights
-last_updated: 2026-10-26
+    - private health app no account
+last_updated: 2026-10-29
 ---
 
 {%- assign app = site.apps | where: "slug", "observa" | first -%}
@@ -49,10 +47,11 @@ last_updated: 2026-10-26
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best Athlytic alternative?", "acceptedAnswer": { "@type": "Answer", "text": "If you want a different kind of answer than Athlytic gives you, Observa is the closest match. Athlytic combines HRV, RHR, and sleep into a single daily score. Observa reads the same Apple Health data and shows the specific correlations behind that score: which late workouts cost you deep sleep, which weekly patterns predict next-morning HRV, and which habits move your acute:chronic training-load ratio. It is free, runs fully on-device, and needs no account." } },
-    { "@type": "Question", "name": "Does Observa replace the Athlytic recovery score?", "acceptedAnswer": { "@type": "Answer", "text": "Not exactly. Observa doesn't produce a single score; it interprets your data. It scores each metric (HRV (SDNN), RHR, sleep efficiency) against your personal 60-day baseline and tells you which habits are moving it, with confidence levels. If you want a single 0 to 100 dashboard number, Athlytic still does that job better. If you want to know why the number changed, use Observa." } },
-    { "@type": "Question", "name": "Is Observa more private than Athlytic?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Observa runs entirely on-device with no servers, no account, and no third-party analytics, and Apple's App Privacy nutrition label lists it as collecting zero data. Athlytic has historically been a privacy-friendly app, but check its current policies for any cloud sync or analytics SDKs." } },
-    { "@type": "Question", "name": "Can I use Observa and Athlytic together?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Both read from the same Apple Health pool, so running them side by side gives you Athlytic's daily score and Observa's account of which habits are moving it." } }
+    { "@type": "Question", "name": "What is the best Athlytic alternative?", "acceptedAnswer": { "@type": "Answer", "text": "If you like a daily recovery number but want to see what drives it, Observa is a close match. It reads the same Apple Health data and builds a 0 to 100 Readiness score from sleep (35%), HRV (25%), resting heart rate (25%), and training load (15%), measured against your own baseline. \"Why this score?\" shows which signals sit in your usual range and which moved the score most, and \"Should I train today?\" turns it into Push, Maintain, Recover, or Rest. Observa runs on iPhone, iPad, and Apple Watch, needs no account, and keeps the analysis on your device." } },
+    { "@type": "Question", "name": "Does Observa replace the Athlytic recovery score?", "acceptedAnswer": { "@type": "Answer", "text": "It gives you its own daily score. Observa's Readiness runs from 0 to 100 and is banded Ready, Moderate, or Low. For about the first 7 nights it shows \"Building your baseline\" while it learns your normal. The two scores are calculated differently, so don't expect the same number. If Athlytic's recovery percentage and strain view are what you plan your days around, keep Athlytic; if you want the reason behind the number and a straight training call, try Observa." } },
+    { "@type": "Question", "name": "Is Observa more private than Athlytic?", "acceptedAnswer": { "@type": "Answer", "text": "Observa is private by construction. It has no account and no analytics SDKs, the app makes no network calls of its own, and your health data is processed and stored on your device. Only purchases and the links you open use the internet. Athlytic also reads Apple Health; compare the privacy details on both App Store pages to see how each handles your data." } },
+    { "@type": "Question", "name": "Can I use Observa and Athlytic together?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Both read from Apple Health, so neither needs the other. You can keep Athlytic's recovery and strain view and use Observa for the explained Readiness score, sleep debt against your own goal, and the patterns that tend to line up with your recovery." } },
+    { "@type": "Question", "name": "Is Observa free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Readiness, the Sleep Score, Stress, \"Why this score?\", the training call, and 7-day trends are free, and every Pro feature is unlocked for your first 7 days with no signup or card. Pro adds 30, 90, and 365-day trends, the full analysis screens, Functional Age, ECG history, training analysis, and widget data. It costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once, and Family Sharing works on every paid plan." } }
   ]
 }
 </script>
@@ -61,7 +60,7 @@ last_updated: 2026-10-26
   <div class="hero-left reveal">
     <p class="overline">Apple Health insights · Private · On-device</p>
     <h1 class="h1">Looking for an<br><span class="gradient-text">Athlytic alternative?</span></h1>
-    <p class="lead">Athlytic gives you a daily recovery score. Observa tells you what's <em>moving</em> that score: the workouts, late nights, and weekly patterns that keep shifting your HRV (SDNN) baseline, sleep efficiency, and energy. Both read the same Apple Health data, but only Observa explains the "why".</p>
+    <p class="lead">Athlytic turns your Apple Watch data into a daily recovery score. Observa gives you a daily Readiness score too, and puts the reason next to it: tap "Why this score?" to see which of sleep, HRV, resting heart rate, and training load moved it. Then ask "Should I train today?" and get Push, Maintain, Recover, or Rest, on your phone, your wrist, or through Siri.</p>
     <div class="actions">
       <a class="btn btn-primary" href="/apps/observa/">See Observa</a>
       <a class="btn btn-secondary" href="#compare">Compare</a>
@@ -73,49 +72,60 @@ last_updated: 2026-10-26
 
 <section id="compare" class="section reveal">
   <h2 class="h2">How does Observa compare to Athlytic?</h2>
-  <p class="lead">They do different jobs. Athlytic scores your recovery and Observa interprets it. You can run both, or pick the one that answers the question you actually have.</p>
+  <p class="lead">Both apps read Apple Health and give you a morning number. They differ in how much of the reasoning they show and in what they track around it.</p>
   <div class="grid grid-2 stagger">
-    <div class="card"><div class="card-title">What it does</div><div class="card-text"><strong>Observa:</strong> Reads Apple Health data, builds a 60-day personal baseline for each metric, and writes up single-variable (free) and multi-variable (Pro) correlations as plain-English sentences with sample size and confidence.<br><br><strong>Athlytic:</strong> Combines HRV, RHR, sleep, and strain into a daily recovery percentage and effort score in the WHOOP visual style.</div></div>
-    <div class="card"><div class="card-title">What you ask it</div><div class="card-text"><strong>Observa:</strong> "Which of my habits is consistently moving my recovery?" "Why was this week different?" "Is my training load sustainable?"<br><br><strong>Athlytic:</strong> "How recovered am I today?" "What's my strain score?" "Should I train hard or take it easy?"</div></div>
-    <div class="card"><div class="card-title">Data handling</div><div class="card-text"><strong>Observa:</strong> Fully on-device, with no server, account, or analytics SDKs. Apple's App Privacy nutrition label lists zero data collected.<br><br><strong>Athlytic:</strong> Reads Apple Health; check the current App Store privacy disclosures for any cloud or analytics.</div></div>
-    <div class="card"><div class="card-title">Pricing</div><div class="card-text"><strong>Observa:</strong> Free, with Pro from {P_MONTHLY@observa}/mo or {P_LIFETIME@observa} lifetime.<br><br><strong>Athlytic:</strong> Typically a one-time purchase or annual subscription via the App Store.</div></div>
+    <div class="card"><div class="card-title">The daily score</div><div class="card-text"><strong>Observa:</strong> Readiness from 0 to 100, weighing sleep at 35%, HRV (SDNN) at 25%, resting heart rate at 25%, and training load at 15%, against your own typical range. Banded Ready, Moderate, or Low, with a confidence label.<br><br><strong>Athlytic:</strong> Combines HRV, RHR, sleep, and strain into a daily recovery percentage and effort score in the WHOOP visual style.</div></div>
+    <div class="card"><div class="card-title">The reasons behind it</div><div class="card-text"><strong>Observa:</strong> "Why this score?" lists which signals sit in your usual range and which moved the score most, for Readiness, Sleep, and Stress. Patterns shows which habits tend to line up with your recovery, sleep, and HRV over 14, 28, or 90 days.<br><br><strong>Athlytic:</strong> Built around the recovery percentage and effort score above.</div></div>
+    <div class="card"><div class="card-title">The training call</div><div class="card-text"><strong>Observa:</strong> "Should I train today?" answers Push, Maintain, Recover, or Rest with a reason, in the app, through Siri, in a widget, or from a complication on your watch face.<br><br><strong>Athlytic:</strong> Offers its own recovery and effort guidance. Compare how much of the reasoning each app shows you.</div></div>
+    <div class="card"><div class="card-title">Data handling</div><div class="card-text"><strong>Observa:</strong> No account and no analytics SDKs. The app makes no network calls of its own, so the analysis runs on your device. <a href="/transparency/#observa">Privacy Manifest.</a><br><br><strong>Athlytic:</strong> Reads Apple Health; check its App Store privacy details for any cloud features.</div></div>
+    <div class="card"><div class="card-title">Pricing</div><div class="card-text"><strong>Observa:</strong> The daily scores are free. Pro costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once, and the first 7 days include every Pro feature with no signup.<br><br><strong>Athlytic:</strong> Typically a one-time purchase or annual subscription via the App Store.</div></div>
   </div>
 </section>
 
 <section class="section reveal">
   <h2 class="h2">When to pick Observa over Athlytic</h2>
   <ul class="bullets">
-    <li>You already understand what a recovery score is and want to know what keeps moving yours</li>
-    <li>You care more about your personal HRV (SDNN) and sleep-efficiency baseline than about a 0 to 100 dashboard</li>
-    <li>You want named multi-variable correlations (training load × caffeine timing × sleep) with sample size and confidence</li>
-    <li>You want all computation to happen on your device, with the App Privacy nutrition label to prove it</li>
-    <li>You'd rather pay {P_LIFETIME@observa} once than subscribe every year for a score you already understand</li>
+    <li>You want to see why today's score is low, signal by signal, before you change your plans</li>
+    <li>You want a plain Push, Maintain, Recover, or Rest call you can ask Siri for or glance at on your watch</li>
+    <li>You track your sleep and want sleep debt measured against your own sleep goal</li>
+    <li>You want your health data analysed on your device, with no account to create</li>
+    <li>You'd rather pay {P_LIFETIME@observa} once than renew a subscription</li>
   </ul>
 </section>
 
 <section class="section reveal">
   <h2 class="h2">When to keep Athlytic instead</h2>
   <ul class="bullets">
-    <li>You want a single daily score and don't need the reasoning behind it</li>
     <li>You like the WHOOP-style visualisation and use the recovery percentage as your main signal</li>
     <li>You train at high volume and plan each day around a strain score</li>
+    <li>You already have months of history and habits built around Athlytic's numbers</li>
   </ul>
 </section>
 
+{% if app %}
 <section class="section reveal">
-  <h2 class="h2">FAQ</h2>
+  <h2 class="h2">About Observa</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item"><summary>What is the best Athlytic alternative?</summary><div class="faq-a">If you want interpretation more than a single score, Observa is the closest match. It reads the same Apple Health data (HRV (SDNN), RHR, sleep stages, ECG, workouts) and explains in plain English which habits keep moving each metric against your personal 60-day baseline. It is free, runs fully on-device, and needs no account.</div></details>
-    <details class="faq-item"><summary>Does Observa replace the Athlytic recovery score?</summary><div class="faq-a">Not as a number. Observa doesn't compute a single 0 to 100 percentage. It scores each metric on its own against your baseline and tells you what's moving it. If you only want a daily dashboard score, Athlytic is the better fit; if you want to know why that score changed, use Observa.</div></details>
-    <details class="faq-item"><summary>Is Observa more private than Athlytic?</summary><div class="faq-a">Yes. Observa runs entirely on-device with no servers, no account, and no third-party analytics, and Apple's App Privacy nutrition label lists it as collecting zero data. Athlytic has historically been a privacy-friendly app, but check its current App Store disclosure for any cloud sync or analytics.</div></details>
-    <details class="faq-item"><summary>Can I use Observa and Athlytic together?</summary><div class="faq-a">Yes. Both read from the same Apple Health pool, so running them side by side gives you Athlytic's daily score and the named correlations behind it from Observa.</div></details>
+    <details class="faq-item" open><summary>What is the best Athlytic alternative?</summary><div class="faq-a">If you like a daily recovery number but want to see what drives it, Observa is a close match. It builds a 0 to 100 Readiness score from sleep, HRV, resting heart rate, and training load, measured against your own baseline. "Why this score?" shows what moved it, and "Should I train today?" turns it into Push, Maintain, Recover, or Rest. It runs on iPhone, iPad, and Apple Watch, needs no account, and keeps the analysis on your device.</div></details>
+    <details class="faq-item"><summary>Does Observa replace the Athlytic recovery score?</summary><div class="faq-a">It gives you its own daily score: Readiness from 0 to 100, banded Ready, Moderate, or Low, with "Building your baseline" for about the first 7 nights. The two apps calculate differently, so the numbers won't match. Keep Athlytic if its recovery and strain view is what you plan around; try Observa for the reasons and a straight training call.</div></details>
+    <details class="faq-item"><summary>Is Observa more private than Athlytic?</summary><div class="faq-a">Observa has no account and no analytics SDKs, and the app makes no network calls of its own, so your health data is processed and stored on your device. Athlytic also reads Apple Health; compare the privacy details on both App Store pages.</div></details>
+    <details class="faq-item"><summary>Can I use Observa and Athlytic together?</summary><div class="faq-a">Yes. Both read from Apple Health. Keep Athlytic's recovery and strain view and use Observa for the explained Readiness score, sleep debt against your own goal, and your patterns.</div></details>
+    <details class="faq-item"><summary>Is Observa free?</summary><div class="faq-a">Yes. Readiness, the Sleep Score, Stress, "Why this score?", the training call, and 7-day trends are free, and every Pro feature is unlocked for your first 7 days with no signup or card. Pro costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once, with Family Sharing on every paid plan.</div></details>
   </div>
 </section>
 
 <section class="cta-section reveal">
   <p class="overline">Ready?</p>
   <h2 class="h2">Try Observa today.</h2>
-  <p class="lead">Plain-English Apple Health insights, on-device. Free, with Pro from {P_MONTHLY@observa}/mo.</p>
+  <p class="lead">A daily Readiness score with its reasons, and a training call on your wrist. Free, with Pro from {P_MONTHLY@observa}/month.</p>
   <div class="actions">
     <a class="btn btn-primary" href="{{ app.app_store_url }}" rel="noopener">Download Observa</a>
     <a class="btn btn-secondary" href="/apps/observa/">See full page</a>

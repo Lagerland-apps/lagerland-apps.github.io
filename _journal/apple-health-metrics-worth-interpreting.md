@@ -13,7 +13,7 @@ seo:
     - "apple health data"
     - "health metrics worth tracking"
 date: 2026-05-13
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 lede: "Apple Health collects more than 80 distinct health metrics. Most of them are noise, vanity numbers, or sensor data you have no useful frame for. This is the short list: the six that move with your habits and reward interpretation, the twelve that look meaningful but mostly aren't, and how to tell the two apart."
 quick_answer: "Of the 80+ metrics Apple Health collects, only about six reward sustained interpretation: HRV (SDNN), resting heart rate, sleep efficiency, deep-sleep share, heart-rate dip during sleep, and weekly active energy. The rest, such as step count, standing hours, the daily move ring, and cardio recovery, are redundant, biased, or so weak in signal-to-noise that they waste your attention. Using Apple Health well comes down to knowing which numbers deserve a 60-day baseline and which you can stop opening the app to check."
 faq:
@@ -24,7 +24,7 @@ faq:
   - q: "Is the Move Ring useless?"
     a: "No, it's a perfectly fine adherence prompt. Adherence just isn't interpretation. Closing your move ring tells you whether you moved enough relative to a personal goal that you (or the app) set. It tells you nothing about whether the movement was beneficial or sustainable, or whether it correlated with anything else in your life."
   - q: "Which Apple Health metric is most under-used?"
-    a: "Heart-rate dip during sleep: the percentage your heart rate drops from daytime resting to the overnight average. AutoSleep popularised it. For most people it correlates more strongly with deep-sleep quality and recovery readiness than the headline 'time asleep' number. Apple Health has the data, and almost no app surfaces it."
+    a: "Heart-rate dip during sleep: the percentage your heart rate drops from daytime resting to the overnight average. AutoSleep popularised it. For many people it says more about how restorative a night was than the headline 'time asleep' number. Apple Health has the data, and few apps surface it; Observa shows it in its Sleep view against your own baseline."
   - q: "Should I care about wrist temperature?"
     a: "On Apple Watch Series 8 and later, yes, but only its deviation from your own baseline, never the absolute reading. A +0.5°C shift in the nightly average over a few days frequently comes before illness, ovulation, or a change in alcohol consumption. The absolute number means nothing on its own; the shift against your personal baseline is real signal."
 mentioned_apps:
@@ -76,7 +76,7 @@ What moves it, roughly in order of impact: alcohol within 3 hours of bed (20 to 
 
 This is the percentage your heart rate drops from the daytime resting average to the overnight average. A dip of 15 to 25% is typical. Dips that stay below 10% can indicate poor sleep quality even when the headline "hours slept" looks fine.
 
-AutoSleep popularised this metric and almost nobody else surfaces it, yet for many people it correlates more strongly with subjective recovery than total sleep duration does. Apple Health has the data; you have to compute it yourself or use an app that does.
+AutoSleep popularised this metric and few other apps surface it, yet for many people it correlates more strongly with subjective recovery than total sleep duration does. Apple Health has the data; you have to compute it yourself or use an app that does.
 
 ### 6. Active energy (weekly)
 
@@ -154,9 +154,9 @@ Six metrics pass all five tests. About a dozen pass one or two. The rest are van
 
 ## What an interpretation app actually does
 
-Most consumer health apps put 30+ metrics on a dashboard for product reasons, not scientific ones: more numbers look like more value. A useful interpretation app shows six because every extra number pulls attention toward noise.
+Many consumer health apps put 30+ metrics on a dashboard because more numbers look like more value. A useful interpretation app leads with the few that matter, because every extra number pulls attention toward noise.
 
-[Observa](/apps/observa/) is built around the short list. It computes rolling 60-day baselines for the six metrics that reward attention, surfaces correlations between your habits and those metrics, and ignores the rest. Apple Health still collects step count, move-ring closure, and stand hours, but Observa gives them no dashboard tile and doesn't make you stare at them.
+[Observa](/apps/observa/) leads with the short list. Its daily Readiness score is built from sleep, HRV (SDNN), resting heart rate, and training load, each measured against your own typical range, and "Why this score?" names the ones that moved it. The Sleep view shows efficiency, your stages, and your heart's overnight dip, and Patterns looks for the habits that tend to line up with your recovery, sleep, and HRV. Steps and the other activity numbers are still there if you want them, one level down.
 
 For most people, getting self-knowledge out of Apple Health is less about tracking more and more about *subtracting*. The data has been collecting itself for years. The hard part is deciding which numbers deserve your weekly attention and politely ignoring the rest.
 

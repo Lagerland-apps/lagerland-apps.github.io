@@ -13,99 +13,104 @@ seo:
     - "chess improvement app"
     - "chessful"
 date: 2026-05-13
-lede: "Most chess apps that claim 'adaptive training' adapt to a generic difficulty curve over a fixed puzzle pool, not to your games. Chessful adapts to the specific mistake patterns in your real losses. This post is the design note for that engine: how raw centipawn output becomes a motif classification, how motifs become skill-bucket flags, and how those flags become a spaced-repetition training queue. Every step is described, with nothing held back as a secret."
-quick_answer: "Chessful's adaptive training works in five stages. Stockfish runs on-device over your finished game and produces a centipawn evaluation per move. A layered classifier (engine output combined with hand-curated motif detectors) assigns each significant mistake to one of roughly thirty motif categories (hung piece, missed fork, weak back rank, prophylactic skip, repertoire lapse, endgame technique error, and so on). Each motif maps to one of five skill dimensions: tactics, defense, positional play, openings, and endgames. After each game, the relevant skill buckets get a flag. A spaced-repetition queue pulls from the flagged buckets: patterns seen most recently come back sooner, and patterns solved correctly twice in a row drop out. Free tier: 3 sessions/week. Premium: unlimited."
+lede: "Most chess apps that claim 'adaptive training' adapt to a generic difficulty curve over a fixed puzzle pool, not to your games. Chessful adapts to the mistakes in your real games. This post is the design note for how that works: how an on-device Stockfish review becomes a set of explained mistakes, how those mistakes feed your skill profile, and how they come back as daily training and spaced review."
+quick_answer: "Chessful's adaptive training works in five steps. Stockfish runs on your device over a finished game and rates every move, from Brilliant to Blunder. Each mistake gets one of 10 types (such as Hanging Piece, Missed Fork, or Endgame Error) and a plain-language explanation at your level: what you played, what was best, why it works, and the line that punishes your move. Those mistakes feed five skill bars: Tactics, Defense, Positioning, Endgame, and Openings. Today's Training then picks a focus area and turns your mistakes into a 5, 10, or 15-minute puzzle session, and Review past mistakes brings old misses back on a spaced-repetition (SM-2) schedule. Free: 2 analyses, 3 puzzles, and 2 coach hints a day. Premium: no daily limits."
 faq:
   - q: "What does 'adaptive training' actually mean in Chessful?"
-    a: "The training session you get tomorrow is generated from the mistakes in the games you played yesterday, not from a fixed puzzle library. After each game, Chessful sorts your significant mistakes into about thirty motif categories (hung piece, missed fork, weak back rank, prophylactic skip, repertoire lapse, endgame technique error, etc.). Each motif flags one of five skill buckets, and the next training session pulls from the flagged buckets on a spaced-repetition schedule. If you keep hanging pieces, you'll keep seeing hanging-piece positions until you stop."
+    a: "The training you get is built from the mistakes in the games you have played, not from a fixed puzzle library. After a game, Stockfish reviews every move on your device and each mistake gets one of 10 types, such as Hanging Piece, Missed Fork, Missed Pin, Back-Rank Weakness, or Endgame Error. Those mistakes feed your skill profile, and Today's Training turns them into puzzles in the area that needs work. Review past mistakes then brings your misses back on a spaced-repetition schedule until you stop making them."
   - q: "How is this different from chess puzzles?"
-    a: "A puzzle is a position with a forcing tactical solution that you have to find. Generic chess puzzles come from a shared pool, ordered by rating or theme. Chessful's training positions come from your own games: the move where you went wrong, plus a few engineered variants on the same motif. The upside is that you drill the exact pattern that beat you, in a form you have already seen once. The downside is that the queue stays thin until you've played a handful of games inside Chessful."
-  - q: "Does Chessful use machine learning to classify mistakes?"
-    a: "A small on-device language model helps write the plain-language explanations, but the motif classification itself is mostly hand-curated rule-based detection on top of Stockfish output. We chose that on purpose: rules are auditable and stable, while a learned classifier for chess motifs would be opaque and would drift between app updates. The thirty or so motif categories are explicit and listed in the app's documentation."
+    a: "A puzzle is a position with a forcing solution you have to find. Generic puzzles come from a shared pool, ordered by rating or theme. Chessful has that too: a tactics library of 15,000 puzzles in 53 themes. Its daily training starts from your own games instead, so you drill the pattern that actually cost you points, in a position you have already seen once. The trade-off is that daily training needs at least one played and analysed game before it unlocks."
+  - q: "How does Chessful decide what type of mistake I made?"
+    a: "Stockfish measures how much each move costs you, and Chessful labels every significant mistake with one of 10 types: Hanging Piece, Missed Fork, Missed Pin, Back-Rank Weakness, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, or Opening Inaccuracy. Severity is Inaccuracy, Mistake, or Blunder. The explanation is worded for the coaching level you choose, from 'Just learning the rules' to 'Rated player (1400+)'."
   - q: "Why does Chessful use spaced repetition?"
-    a: "Chess pattern recognition is more a memory task than a calculation task. A 1600 player beats a 1400 player on the same tactical position mostly because the 1600 has seen the pattern often enough to recognise it within two seconds. Spaced repetition is the standard tool for memorising this kind of pattern (Anki popularised it for languages; SuperMemo formalised the underlying schedule decades ago). Chessful uses a Leitner-style schedule: positions seen most recently come back sooner, and positions you've solved correctly twice in a row drop out of rotation."
+    a: "Chess pattern recognition is more a memory task than a calculation task. A stronger player often wins the same tactical position because they have seen the pattern often enough to recognise it in seconds. Spaced repetition is the standard tool for memorising this kind of pattern (Anki popularised it for languages; SuperMemo formalised the underlying schedule decades ago). Chessful's Review past mistakes uses the SM-2 schedule: a miss comes back soon, and a position you solve comes back at growing intervals. Review sessions don't count toward the free daily puzzles."
   - q: "How long does Chessful take to start producing useful training?"
-    a: "About three games. The first game gives the engine enough material to flag a couple of motifs. The second either confirms a pattern (you hung another piece, so the back-rank-defender motif gets stronger) or shows a new one. By the third game the spaced-repetition queue has enough flagged positions for a session that doesn't repeat itself. Most users say the training feels 'aimed at me' from game four or five onward."
+    a: "Training unlocks after you play and analyse your first game. One game is enough to produce mistakes to drill, and each game you add gives Today's Training and your skill bars more to work with. You can also import your Chess.com or Lichess games as a PGN file to give it a head start."
 mentioned_apps:
   - chessful
-read_time: "9 min read"
-excerpt: "The design note for Chessful's adaptive training engine: how raw Stockfish output becomes a motif classification, how motifs become skill-bucket flags, and how flags become a spaced-repetition queue built from your own losses instead of a generic puzzle pool."
-last_updated: 2026-10-26
+read_time: "7 min read"
+excerpt: "The design note for Chessful's adaptive training: how an on-device Stockfish review becomes 10 types of explained mistakes, how those mistakes feed five skill bars, and how they come back as daily training and spaced review built from your own games instead of a generic puzzle pool."
+last_updated: 2026-10-29
 ---
 
 When a chess app says "adaptive training," it usually means one of two things: "we have a difficulty slider," or "we have a recommendation algorithm over a fixed puzzle library." Chessful does neither.
 
-Chessful's adaptive training adapts to **your specific games**. The session you get tomorrow is generated from the mistakes in the games you played yesterday. If you spent last weekend hanging back-rank defenders, this week's queue drills back-rank defenders. If you finally stop doing that and start misjudging king-and-pawn endgames, the queue moves on to opposition technique.
+Chessful's adaptive training adapts to **your games**. The training you get is built from the mistakes in the games you have played. If you spent last weekend leaving pieces hanging, your training drills hanging pieces. If you stop doing that and start misplaying king-and-pawn endgames, the focus moves to endgames.
 
-This is the design note for how that works, organised around the five stages between "you played a game" and "tomorrow's training session is ready," in order. None of it is new computer science. It combines well-understood techniques (engine analysis, rule-based classification, spaced repetition), and most of the work went into the judgement calls that decide whether the feature works.
+This is the design note for how that works, organised around the five steps between "you played a game" and "your next training session is ready." None of it is new computer science. It combines well-understood techniques (engine analysis, a fixed set of mistake types, spaced repetition), and most of the work went into the judgement calls that decide whether the feature helps.
 
-## Stage 1: Stockfish on-device
+## Step 1: Stockfish on your device
 
-At the end of every Chessful game, the position goes to a local Stockfish process on the same device. There is no cloud call. The engine's depth is tuned to the device (deeper on Macs and recent iPads, shallower on older iPhones), and it produces a centipawn evaluation per move.
+When a game ends, Game Review runs Stockfish on the same device. There is no cloud call; the app has no networking code of its own. Stockfish checks every move and rates it: Brilliant, Great move, Best move, Good, Book, Inaccuracy, Mistake, or Blunder. You get an accuracy figure, the key moments, an evaluation view, and the best line, which you can step through.
 
-This part of the pipeline looks most like Chess.com, Lichess, and every other chess analyser. It's a commodity. In Chessful, though, the centipawn output is the **input** to the next stage and not the thing the user gets. Other apps show a centipawn graph and call it "analysis," and Chessful is structured specifically to avoid that.
+This part looks like every other chess analyser, and it's a commodity. In Chessful the engine output is the **input** to the next step and not the thing you're left with. A centipawn graph on its own tells you where a game turned, and it doesn't tell you what to practise.
 
-On engine depth: it's tempting to run the engine deeper to find more mistakes, and we decided against it. A 13-ply analysis finds the mistakes that matter for a club player rated 800 to 1800; a 25-ply analysis turns up lines that even good players can't read. We want patterns the user can act on, and a show of engine strength doesn't help with that.
+Free players get 2 analyses a day; Premium removes the limit. Games you play against Chessful's opponents count, and so do games you import as a PGN file from Chess.com or Lichess.
 
-## Stage 2: Motif classification
+## Step 2: Every mistake explained, with a type
 
-This is where Chessful departs from other chess analysers. The centipawn evaluation goes through a **layered motif classifier**: hand-curated rule-based detectors plus a small on-device language model. The classifier takes a position where the user lost a significant amount of centipawn value and labels it with one of about thirty motif categories.
+This is where Chessful departs from a plain analyser. Each significant mistake opens a **Mistake Detail**: what you played, what was best, how big the evaluation drop was, a plain-language explanation, why the suggested move works, and the line that punishes your move.
 
-Some of the categories (the list isn't complete):
+Each mistake also carries one of **10 types**:
 
-- **Tactical motifs:** hung piece, missed fork, missed pin, missed skewer, missed discovered attack, missed double attack, missed deflection, missed overload, back-rank threat, smothered mate possibility.
-- **Defensive motifs:** defender-removal blindness (the piece you captured with was the only defender of another of your pieces), king-safety underestimate, prophylactic skip, weakening pawn push without compensation.
-- **Positional motifs:** wrong piece traded (good bishop for a bad knight), wrong side castled, weak square allowed, wrong pawn break, time-on-the-clock-on-the-wrong-move.
-- **Opening motifs:** repertoire drift (you deviated from your usual opening setup), book-move missed, transposition into a known-bad line.
-- **Endgame motifs:** opposition direction error, king-too-late, wrong rook activation, drawn-but-played-on, wrong-color bishop endgame mistake.
+- **Hanging Piece**
+- **Missed Fork**
+- **Missed Pin**
+- **Back-Rank Weakness**
+- **Poor King Safety**
+- **Passive Move**
+- **Tactical Oversight**
+- **Missed Tactic**
+- **Endgame Error**
+- **Opening Inaccuracy**
 
-Each significant mistake gets exactly one label, chosen by the strictest matching detector. The rules are ordered and the first match wins, so one position can't be classified as five different things and dilute the training signal.
+Severity is graded separately: Inaccuracy, Mistake, or Blunder.
 
-We use hand-curated rules instead of a learned classifier for two reasons. First, **rules are auditable**: if the trainer drills the wrong pattern, we can read the rule and fix it. A learned classifier for chess motifs would be opaque, and it would drift between app updates as the model gets retrained, so the user's "improvement" might just be the algorithm changing what it counts as a mistake. Second, the **chess motif catalogue is small enough to handle by hand**. Roughly thirty mistake categories matter for club players. Encoding them as rules over the engine's output is real engineering work, but the amount is bounded, and a trained classifier wouldn't beat rules on a problem this constrained.
+We kept the list short on purpose. A long catalogue of fine-grained motifs sounds impressive, but it spreads your mistakes thin, and a type you see once a month gives you nothing to train. Ten types are few enough that the same ones keep showing up in your games, and that repetition is what makes them trainable.
 
-The small on-device language model works on the explanation layer. It turns the motif label and the engine evaluation into the one or two sentences the user reads, and it doesn't do any classification.
+The explanation is worded for your level. In onboarding or Settings you choose a coaching level, from "Just learning the rules" to "Rated player (1400+)", and the same mistake is explained differently for each. From any mistake, **Train This Pattern** takes you straight to practice.
 
-## Stage 3: Skill-bucket flagging
+## Step 3: Your skill profile
 
-Each of the thirty or so motif categories maps to one of five **skill dimensions**: tactics, defense, positional play, openings, and endgames. When a mistake is classified, its skill bucket gets a flag. The flag holds the motif label, the position, the move you played, the move you should have played, and a plain-language explanation.
+Analysed mistakes feed a **skill profile** with five skill bars: Tactics, Defense, Positioning, Endgame, and Openings. A bar says "Not measured yet" until there is data behind it. Progress also shows an estimated rating, your game stats, a rating graph, and highlight cards for your strongest area and your focus area. All of that is free.
 
-You can see the buckets in the app: how many tactical motifs were flagged this week, which ones they were (mostly missed forks? mostly back-rank threats?), and how the count compares with two weeks ago. Premium adds long-term trend graphs (90 / 180 / 365 days), so you can see whether, say, your defense flag count is really going down over a quarter or has levelled off.
+Premium adds **Weekly Comparison** and **Weakness Trends**, so you can see whether the weaknesses you've been drilling are shrinking or holding steady.
 
-Showing this matters because **adaptive training only works if the user trusts the algorithm**. If the next session drills "back-rank threats" and the user has no idea why, they lose interest. If they can see that the algorithm is drilling back-rank threats because they made the same mistake in three of their last five losses, they do the session, and the session works.
+Showing this matters because **adaptive training only works if you trust it**. If the next session drills back-rank weaknesses and you have no idea why, you lose interest. If you can see that your Defense bar is the lowest and your last games keep showing the same mistake type, you do the session, and the session works.
 
-## Stage 4: Spaced-repetition queue generation
+## Step 4: Today's Training and spaced review
 
-Each training session pulls a set of positions from the flagged buckets, scheduled with **spaced repetition**.
+**Today's Training** is a daily session built from your own mistakes. It picks a focus area (Tactics, Defense, Positioning, Endgame, or Openings), and you choose 5, 10, or 15 minutes, which is 3, 5, or 8 puzzles. A session opens with a concept card, then asks you to find the best move. If you miss a puzzle, you play the correct move yourself before moving on, and the 10 and 15-minute sessions end with a short Reflect step. Score under 70% and Chessful offers to re-drill the misses.
 
-Spaced repetition is the standard memory technique for pattern recognition. Anki popularised it for languages; SuperMemo formalised the underlying schedule decades ago. The mechanics are simple: positions you've seen recently come back sooner, positions you've solved correctly several times in a row drop out of rotation, and positions you got wrong recently come back fast.
+Alongside it, **Review past mistakes** brings positions from your old mistakes back on a spaced-repetition schedule, with "N due today" until you're caught up.
 
-It suits chess because chess pattern recognition is more a **memory task than a calculation task**. A 1600 player beats a 1400 player on the same tactical position mostly because the 1600 has seen the pattern often enough to recognise it within two seconds. Making the 1400 player see the pattern again and again at growing intervals is the right way to teach it. It's dull, and it works.
+Spaced repetition is the standard memory technique for pattern recognition. Anki popularised it for languages; SuperMemo formalised the underlying schedule decades ago. Chessful uses SM-2, the SuperMemo algorithm: a position you miss comes back soon, and a position you solve comes back at growing intervals.
 
-Chessful uses a Leitner-style schedule (boxes 1 through 5, with intervals of roughly 1 day, 3 days, 7 days, 14 days, and 30 days). A newly flagged motif starts in box 1. A correct solve moves it up a box; a wrong one sends it back to box 1. After two correct solves in box 5 the motif leaves rotation, though it can come back if a new game flags the same motif again.
+It suits chess because chess pattern recognition is more a **memory task than a calculation task**. A stronger player often wins the same tactical position because they've seen the pattern often enough to recognise it in seconds. Seeing the pattern again and again at growing intervals is a good way to learn it. It's dull, and it works.
 
-**Free tier: three sessions per week.** Three sessions cover the highest-priority bucket flags, but you have to choose. Premium gives unlimited sessions. Premium makes sense for players who are serious about improving; the free tier is real training for casual players.
+**Free: 3 puzzles a day.** Today's Training, lesson practice, and the 15,000-puzzle tactics library share that one counter. Review past mistakes and retrying your misses don't use it up. Premium removes the daily limit.
 
-## Stage 5: Skill graphs and the feedback loop
+## Step 5: The feedback loop
 
-After each session the graphs for each skill dimension update. The Free tier shows the current week and the previous week. Premium adds 90 / 180 / 365-day views.
+After you train and play, your skill bars and rating graph update, and with Premium, Weekly Comparison and Weakness Trends show how each weakness is moving.
 
-The graphs exist for the **feedback loop**. If you're three weeks into drilling defense motifs and the defense bucket count is still going up, the drills aren't working and you need to try something else. Maybe the motif you keep missing isn't a defense problem at all but a calculation problem that's been misclassified. Maybe you're tired and rushing the drills. Maybe you're playing in time trouble, the motif is fine, and time management is what's holding you back. The graphs let you answer those questions.
+That view exists for the **feedback loop**. If you've spent weeks on Defense and the same mistake types keep appearing, the drills aren't working and you need to try something else. Maybe what you keep missing is a calculation problem more than a defensive one. Maybe you're tired and rushing. Progress gives you a way to ask those questions about your own games.
 
-This part of the engine takes longest to pay off. Most users ignore the trend graphs until they've used the app for a month or two. After that, the graphs are what keep them training, because they can see the curve move, or see that it doesn't, and react.
+This part takes longest to pay off. It only says something once you've played and analysed enough games for a trend to form.
 
 ## What adaptive training in Chessful doesn't do
 
-- **It doesn't replace studying.** Drilling motifs from your own games closes specific gaps, but you still need to work through an endgame book or a structured course on the Sicilian Dragon. Many improving players use Chessful alongside Magnus Trainer, Chessable, or printed books. Structured study and adaptive drilling on your real losses add up.
-- **It doesn't replace playing.** The engine needs your games to work with. Chessful has 40 AI opponents to play against, but the training queue depends on having games to draw from. Three games is the minimum for useful training; at ten games the queue gets really specific.
-- **It doesn't replace live human play.** Chessful has no live matchmaking and we aren't planning to add it. Our view is that the improvement that happens between games has too few tools, while Chess.com and Lichess cover live play well. The two complement each other.
-- **It isn't personalised by an opaque AI.** The motif categories and skill buckets are explicit, and the spaced-repetition schedule is well known. You can read what the trainer is doing and argue with it.
+- **It doesn't replace studying.** Drilling your own mistakes closes specific gaps, but structured study still matters. Chessful's 156 lessons cover the basics through to strategy, and a good endgame book or opening course adds to that. Structured study and drilling your real losses add up.
+- **It doesn't replace playing.** The training needs your games to work with. Chessful has 40 opponents from 400 to 2400 Elo (the first 10 are free), and you can import your own games as PGN, but the training only knows what you've played.
+- **It doesn't replace live human play.** Chessful has no online play, matchmaking, or clocks; every game is against its built-in opponents. Chess.com and Lichess cover live play well, and the two complement each other.
+- **It isn't a black box.** The 10 mistake types and five skill bars are visible in the app, and spaced repetition on SM-2 is a well-known schedule. You can see what the trainer is doing and why, and argue with it.
 
 ## Why publish this
 
-Most chess apps with adaptive training don't say what the algorithm does. Usually it isn't a trade secret. "Adaptive training" often just means "we picked a difficulty curve," and saying so would deflate the marketing. By publishing ours we're saying there is a real mechanism here, built on established techniques (Stockfish + rules + Leitner-style spaced repetition), and you can check over a month of your own games whether it works.
+Most chess apps with adaptive training don't say what the algorithm does. Usually it isn't a trade secret. "Adaptive training" often just means "we picked a difficulty curve," and saying so would deflate the marketing. By describing ours we're saying there is a real mechanism here, built on established techniques (Stockfish, a fixed set of mistake types, SM-2 spaced repetition), and you can check over a month of your own games whether it works.
 
-It's also because **we publish our algorithms by default at Lagerland**. Plateau detection in [GymLogger X](/apps/gymlogger-x/) is documented the same way. The pattern recognition rules in [Observa](/apps/observa/) are published. The Plan Mode template engine in [Soon.](/apps/soon/) is [documented in a separate post](/journal/how-plan-mode-builds-a-checklist/). Across the catalogue, if the algorithm is the product, people should be able to read it.
+We try to explain how our apps reach their answers. [Observa](/apps/observa/) lists the weights behind its Readiness score on its app page, and [Soon.](/apps/soon/) has [a separate post on Plan mode](/journal/how-plan-mode-builds-a-checklist/). If the method is the product, people should be able to read it.
 
 ---
 
-[Chessful is available on the App Store.](https://apps.apple.com/app/id6761336870) The free tier includes 40 AI opponents, Stockfish analysis on every game, plain-language mistake summaries, and three training sessions per week. Premium unlocks unlimited deep analysis, unlimited adaptive training, full progress tracking with 90/180/365-day skill-trend graphs, and alternative-move exploration: {P_MONTHLY@chessful}/month, {P_YEARLY@chessful}/year, or {P_LIFETIME@chessful} once for lifetime access with a 7-day free trial. The companion design note on the forty AI opponents is [Forty chess opponents, and none of them are me](/journal/forty-chess-opponents/).
+[Chessful is available on the App Store.](https://apps.apple.com/app/id6761336870) The free version includes all 156 lessons, the first 10 of the 40 opponents, the first endgame in each category, every mistake explanation, PGN import, and progress tracking, with 2 game analyses, 3 puzzles, and 2 coach hints a day. Premium removes the daily limits and unlocks all 40 opponents, all 96 endgames, the full opening repertoire with line drills, and Weekly Comparison and Weakness Trends. It costs {P_MONTHLY@chessful}/month or {P_YEARLY@chessful}/year, each with a {TRIAL@chessful}, or {P_LIFETIME@chessful} once for lifetime access. The companion design note on the forty opponents is [Forty chess opponents, and none of them are me](/journal/forty-chess-opponents/).

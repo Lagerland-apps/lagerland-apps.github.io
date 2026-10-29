@@ -13,9 +13,9 @@ seo:
     - "how to read hrv"
     - "hrv normal range"
 date: 2026-05-13
-last_updated: 2026-10-26
+last_updated: 2026-10-29
 lede: "A 42ms HRV reading on Apple Watch can be excellent, average, or alarming, and you can't tell which without context. On its own, the number is one of the most misread metrics in consumer health. This post covers what HRV tells you, what it doesn't, and why a personal baseline is the only frame that makes the reading usable."
-quick_answer: "Raw HRV (heart-rate variability, reported as SDNN on Apple Watch) is meaningful only against your own rolling baseline. Absolute HRV varies 3 to 10× between individuals depending on age, sex, fitness, posture, measurement timing, and which wrist the watch is on. Read your Apple Watch HRV as a percent deviation from your personal 60-day mean. Comparing your number to a friend's, a population average, or a 'normal range' chart on the internet will almost always mislead you."
+quick_answer: "Raw HRV (heart-rate variability, reported as SDNN on Apple Watch) is meaningful only against your own rolling baseline. Absolute HRV varies 3 to 10× between individuals depending on age, sex, fitness, posture, measurement timing, and which wrist the watch is on. Read your Apple Watch HRV as a percent deviation from your own mean over the last several weeks; 60 days is a good window. Comparing your number to a friend's, a population average, or a 'normal range' chart on the internet will almost always mislead you."
 faq:
   - q: "Is 42ms HRV good or bad?"
     a: "It depends entirely on whose 42ms it is. For someone whose 60-day baseline is 38ms, 42ms is above average and a good recovery signal. For someone whose baseline is 80ms, 42ms is half their normal and likely signals significant stress, illness, or accumulated training load. The same absolute number is good news in one body and bad news in another, which is why every HRV app worth using compares you to yourself."
@@ -26,7 +26,7 @@ faq:
   - q: "Why does HRV drop in winter?"
     a: "Seasonal cardiovascular adaptation. Cold exposure, less daylight, lower aerobic activity, and altered sleep patterns all shift autonomic balance toward sympathetic dominance. A 10 to 20% winter dip is common and not pathological. One of the most common interpretation mistakes is reading it as 'I'm broken' when it means 'winter HRV runs lower for me'."
   - q: "Does Apple Watch report RMSSD, SDNN, or lnRMSSD?"
-    a: "SDNN. Apple Health stores Apple Watch HRV as SDNN, the standard deviation of the intervals between successive heartbeats, in milliseconds, and it is the only HRV metric HealthKit exposes. Sports science favours RMSSD (the root-mean-square of successive RR-interval differences) and its natural log, lnRMSSD, for parasympathetic tone. Those are different measurements from SDNN, so an Apple Watch reading can't simply be 'converted' into RMSSD. Observa does compute RMSSD and pNN50, but only from the occasional ECG recordings you take on your Apple Watch. The passive daily HRV stream is SDNN."
+    a: "SDNN. Apple Health stores Apple Watch HRV as SDNN, the standard deviation of the intervals between successive heartbeats, in milliseconds, and it is the only HRV metric HealthKit exposes. Sports science often uses RMSSD and its natural log, lnRMSSD, which are different calculations from SDNN, so an Apple Watch reading can't simply be converted into either. Observa shows the SDNN that Apple Health records and compares it with your own baseline."
 mentioned_apps:
   - observa
 read_time: "7 min read"
@@ -67,15 +67,13 @@ Both compare you with yourself, which cancels out nearly every confounder above.
 
 Sixty days works as a baseline window for three reasons. It's roughly two menstrual cycles, so cyclical variation averages out. It covers two typical training mesocycles, so short-term adaptation doesn't dominate. And it gives enough non-overlapping weekly samples for a standard deviation to mean something; with fewer, the SD itself is noisy.
 
-[Observa](/apps/observa/) uses this baseline window, and so do most peer-reviewed sports-science HRV studies, for the same reasons.
-
 ## What a single low reading does and doesn't mean
 
 A morning where your HRV is 30% below your 7-day average means *something happened*: late food, alcohol, poor sleep, a stressful evening, the start of an illness, hard training the day before, or ordinary day-to-day biological noise. By itself it doesn't tell you to rest, train hard, panic, or rejoice.
 
 A *pattern* is diagnostic. Three consecutive days more than one standard deviation below baseline is signal. A single 25% drop after a known stressor tells you about that stressor, not your health. A 25% drop with no identifiable cause that hasn't resolved within 72 hours warrants attention, from a clinician and not a consumer app.
 
-For self-experimentation, I think this threshold is roughly right: **at least 10 same-condition observations across a 60-day window, and at least one standard deviation of separation between conditions**, before you treat a finding as anything but noise. Most consumer apps surface "insights" with far thinner statistical backing, which is mostly why those insights are mostly wrong.
+For self-experimentation, I think this threshold is roughly right: **at least 10 same-condition observations across a 60-day window, and at least one standard deviation of separation between conditions**, before you treat a finding as anything but noise. An "insight" with thinner backing than that is usually a guess.
 
 ## Why HRV drops in winter (and other seasonal noise)
 
@@ -97,12 +95,12 @@ A few practical rules follow from all this:
 
 5. **Expect seasonal drift.** Lower in winter and higher in summer is normal. A pandemic, an illness, life stress, or a new baby will all move the baseline too. Treat it as a moving frame of reference.
 
-[Observa](/apps/observa/) does this automatically. It computes your 60-day rolling HRV (SDNN) baseline, scores each day's reading against your own deviation, and tells you in plain English when something is genuinely outside your normal range and when it isn't. Everything runs on-device, so the only comparison Observa ever makes is *you, today, against you, on average*, which is the only HRV comparison worth making.
+[Observa](/apps/observa/) does much of this for you. It shows your HRV (SDNN) against your own typical range, with 7 days of trend free and 30, 90, or 365 days with Pro. HRV also makes up 25% of its daily Readiness score, and "Why this score?" tells you in plain language when HRV is outside your usual range and moved the score. The analysis runs on your device, and the comparison it makes is *you, today, against your own normal*, which is the only HRV comparison worth making.
 
 ## TL;DR
 
 - **Absolute HRV varies 3 to 10× between healthy adults.** Comparing your number to anyone else's is meaningless.
-- **Your 60-day rolling baseline is the only frame that makes HRV usable.** Day-to-day swings of 10 to 25% are normal.
+- **Your own baseline, built over weeks, is the only frame that makes HRV usable.** Day-to-day swings of 10 to 25% are normal.
 - **Trends matter; single points don't.** Three consecutive days more than one SD below baseline is signal. One day is noise.
 - **Winter HRV runs lower than summer.** Seasonal drift is normal, and treating it as illness is the common error.
 - **Read SDNN as a deviation from your own baseline.** HRV is roughly log-normally distributed, so compare each day to your personal mean as a percentage, not to raw millisecond thresholds.
