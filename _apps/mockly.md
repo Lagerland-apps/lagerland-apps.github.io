@@ -144,17 +144,17 @@ features:
     description: "A native macOS app, not an Electron wrapper, and it is sandboxed, signed, and notarised. Your pre-release screenshots never leave your Mac for a third-party server. Apple's App Privacy nutrition label lists zero data collected."
 
 screenshots:
-  - src: "/assets/screenshots/mockly/1.png"
+  - src: "/assets/screenshots/mockly/1.webp"
     alt: "Mockly for Mac: App Store screenshots without the busywork, with a project of three artboards"
-  - src: "/assets/screenshots/mockly/2.png"
+  - src: "/assets/screenshots/mockly/2.webp"
     alt: "Mockly localization view for designing once and shipping every language"
-  - src: "/assets/screenshots/mockly/3.png"
+  - src: "/assets/screenshots/mockly/3.webp"
     alt: "Mockly real-time 3D device frame preview"
-  - src: "/assets/screenshots/mockly/4.png"
+  - src: "/assets/screenshots/mockly/4.webp"
     alt: "Mockly AI translation of screenshot captions"
-  - src: "/assets/screenshots/mockly/5.png"
+  - src: "/assets/screenshots/mockly/5.webp"
     alt: "Mockly one-click upload of screenshots to App Store Connect"
-  - src: "/assets/screenshots/mockly/6.png"
+  - src: "/assets/screenshots/mockly/6.webp"
     alt: "Mockly made for indie developers who ship, with a five-star rating badge"
 
 privacy:

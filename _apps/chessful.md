@@ -238,19 +238,19 @@ comparison_table:
   footnote: "Competitor positioning summarised from each app's public landing page and App Store listing on 2026-05-13. Pricing and features change often, so check before switching."
 
 screenshots:
-  - src: "/assets/screenshots/chessful/1.png"
+  - src: "/assets/screenshots/chessful/1.webp"
     alt: "Chessful game review on iPhone with an accuracy score and key moments"
-  - src: "/assets/screenshots/chessful/2.png"
+  - src: "/assets/screenshots/chessful/2.webp"
     alt: "Chessful mistake detail showing the better move on the board with an explanation"
-  - src: "/assets/screenshots/chessful/3.png"
+  - src: "/assets/screenshots/chessful/3.webp"
     alt: "Chessful 3D chess board mid-game against an opponent"
-  - src: "/assets/screenshots/chessful/4.png"
+  - src: "/assets/screenshots/chessful/4.webp"
     alt: "Chessful daily training built from your own games"
-  - src: "/assets/screenshots/chessful/5.png"
+  - src: "/assets/screenshots/chessful/5.webp"
     alt: "Chessful progress screen with a rating chart and achievements"
-  - src: "/assets/screenshots/chessful/6.png"
+  - src: "/assets/screenshots/chessful/6.webp"
     alt: "Chessful play screen listing computer opponents by level"
-  - src: "/assets/screenshots/chessful/7.png"
+  - src: "/assets/screenshots/chessful/7.webp"
     alt: "Chessful dashboard with rating, skills and today training"
 
 privacy:

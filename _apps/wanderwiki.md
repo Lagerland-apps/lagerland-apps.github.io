@@ -189,19 +189,19 @@ features:
     description: "Articles, summaries, categories, search, and On This Day feeds all come from <a href=\"https://en.wikipedia.org/api/rest_v1/\" rel=\"noopener\" target=\"_blank\">Wikipedia's official REST API</a> and its Action API, and images from Wikimedia's image server. Nothing is scraped or crawled, and no Lagerland server caches your reading. Likes, saved articles, folders, reading progress, your streak, and weekly stats all live in SwiftData on your device."
 
 screenshots:
-  - src: "/assets/screenshots/wanderwiki/1.png"
+  - src: "/assets/screenshots/wanderwiki/1.webp"
     alt: "WanderWiki feed that scrolls Wikipedia like a social feed"
-  - src: "/assets/screenshots/wanderwiki/2.png"
+  - src: "/assets/screenshots/wanderwiki/2.webp"
     alt: "WanderWiki browse screen with topic tiles"
-  - src: "/assets/screenshots/wanderwiki/3.png"
+  - src: "/assets/screenshots/wanderwiki/3.webp"
     alt: "WanderWiki trail suggesting three related pages from the one you are reading"
-  - src: "/assets/screenshots/wanderwiki/4.png"
+  - src: "/assets/screenshots/wanderwiki/4.webp"
     alt: "WanderWiki For You feed tuned to your interests"
-  - src: "/assets/screenshots/wanderwiki/5.png"
+  - src: "/assets/screenshots/wanderwiki/5.webp"
     alt: "WanderWiki On This Day in history"
-  - src: "/assets/screenshots/wanderwiki/6.png"
+  - src: "/assets/screenshots/wanderwiki/6.webp"
     alt: "WanderWiki saved articles available offline"
-  - src: "/assets/screenshots/wanderwiki/7.png"
+  - src: "/assets/screenshots/wanderwiki/7.webp"
     alt: "WanderWiki extra-large widget showing a whole page of history"
 
 comparison_table:

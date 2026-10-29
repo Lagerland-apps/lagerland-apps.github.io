@@ -244,19 +244,19 @@ comparison_table:
   footnote: "Verified 2026-05-22 against each app's public App Store page, developer landing page, and pricing / help documentation. Competitor offerings change often, so check again before switching. Mechanism descriptions are based on each app's own published documentation."
 
 screenshots:
-  - src: "/assets/screenshots/earnlock/1.png"
+  - src: "/assets/screenshots/earnlock/1.webp"
     alt: "EarnLock home screen on iPhone showing a step ring and locked apps that unlock as you walk"
-  - src: "/assets/screenshots/earnlock/2.png"
+  - src: "/assets/screenshots/earnlock/2.webp"
     alt: "EarnLock year grid showing days earned over twelve months"
-  - src: "/assets/screenshots/earnlock/3.png"
+  - src: "/assets/screenshots/earnlock/3.webp"
     alt: "EarnLock monthly insights with total steps and best week"
-  - src: "/assets/screenshots/earnlock/4.png"
+  - src: "/assets/screenshots/earnlock/4.webp"
     alt: "EarnLock Home Screen widgets showing steps and progress to unlock"
-  - src: "/assets/screenshots/earnlock/5.png"
+  - src: "/assets/screenshots/earnlock/5.webp"
     alt: "EarnLock shadow week summary before real app blocking is turned on"
-  - src: "/assets/screenshots/earnlock/6.png"
+  - src: "/assets/screenshots/earnlock/6.webp"
     alt: "EarnLock Live Activity and Apple Watch showing how close you are to unlocking"
-  - src: "/assets/screenshots/earnlock/7.png"
+  - src: "/assets/screenshots/earnlock/7.webp"
     alt: "EarnLock full-page widget with a progress calendar"
 
 privacy:

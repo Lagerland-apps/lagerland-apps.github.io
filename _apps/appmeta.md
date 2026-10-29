@@ -171,19 +171,19 @@ features:
     description: "Drag-and-drop screenshot upload for iPhone, iPad, Mac, Apple Watch and Apple TV display sizes. It also handles a case competitors usually miss: the review screenshot Apple requires for each In-App Purchase and subscription, which the ASC web UI keeps three menus deep. Apple Vision Pro screenshots and App Preview videos aren't supported yet."
 
 screenshots:
-  - src: "/assets/screenshots/appmeta/1.png"
+  - src: "/assets/screenshots/appmeta/1.webp"
     alt: "AppMeta for Mac showing a diff preview of App Store metadata changes before pushing"
-  - src: "/assets/screenshots/appmeta/2.png"
+  - src: "/assets/screenshots/appmeta/2.webp"
     alt: "AppMeta for Mac pushing metadata for every locale at once"
-  - src: "/assets/screenshots/appmeta/3.png"
+  - src: "/assets/screenshots/appmeta/3.webp"
     alt: "AppMeta for Mac ASO coverage view of keywords across locales"
-  - src: "/assets/screenshots/appmeta/4.png"
+  - src: "/assets/screenshots/appmeta/4.webp"
     alt: "AppMeta for Mac reviews view for reading and replying to App Store reviews"
-  - src: "/assets/screenshots/appmeta/5.png"
+  - src: "/assets/screenshots/appmeta/5.webp"
     alt: "AppMeta for Mac sales dashboard with proceeds, units and charts"
-  - src: "/assets/screenshots/appmeta/6.png"
+  - src: "/assets/screenshots/appmeta/6.webp"
     alt: "AppMeta for Mac submission screen checking an app version before review"
-  - src: "/assets/screenshots/appmeta/7.png"
+  - src: "/assets/screenshots/appmeta/7.webp"
     alt: "AppMeta for Mac AI translation of app metadata into other languages"
 
 comparison_table:

@@ -142,14 +142,14 @@ features:
     description: "Six built-in Shortcuts actions: compress video, convert images, merge PDFs, create ZIPs, extract text, and run OCR. Access every tool from the menu bar without opening the main window."
 
 screenshots:
-  - "/assets/screenshots/mediakit/1.png"
-  - "/assets/screenshots/mediakit/2.png"
-  - "/assets/screenshots/mediakit/3.png"
-  - "/assets/screenshots/mediakit/4.png"
-  - "/assets/screenshots/mediakit/5.png"
-  - "/assets/screenshots/mediakit/6.png"
-  - "/assets/screenshots/mediakit/7.png"
-  - "/assets/screenshots/mediakit/8.png"
+  - "/assets/screenshots/mediakit/1.webp"
+  - "/assets/screenshots/mediakit/2.webp"
+  - "/assets/screenshots/mediakit/3.webp"
+  - "/assets/screenshots/mediakit/4.webp"
+  - "/assets/screenshots/mediakit/5.webp"
+  - "/assets/screenshots/mediakit/6.webp"
+  - "/assets/screenshots/mediakit/7.webp"
+  - "/assets/screenshots/mediakit/8.webp"
 
 privacy:
   data_collection: "none"

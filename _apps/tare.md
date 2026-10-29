@@ -77,17 +77,17 @@ hero:
   alt: "Tare on iPhone: a three-tier hanging mobile on a sky-blue board, with weights numbered 5, 2, 6, 3 and 3 on its hooks"
 
 screenshots:
-  - src: "/assets/screenshots/tare/1.png"
+  - src: "/assets/screenshots/tare/1.webp"
     caption: "A three-tier mobile in the Morning Sky. Every weight shows its number twice, as a numeral and as domino pips."
-  - src: "/assets/screenshots/tare/2.png"
+  - src: "/assets/screenshots/tare/2.webp"
     caption: "Deep Sea: the top beam leans until the pieces on the shelf below find the right hooks, then the whole mobile settles."
-  - src: "/assets/screenshots/tare/3.png"
+  - src: "/assets/screenshots/tare/3.webp"
     caption: "Twilight Meadow: two picture cards above the board show how the hidden “?” piece compares. Read them to work out what it weighs."
-  - src: "/assets/screenshots/tare/4.png"
+  - src: "/assets/screenshots/tare/4.webp"
     caption: "Evening Stars: a cascading mobile with three hidden weights, and two cards to deduce them from."
-  - src: "/assets/screenshots/tare/5.png"
+  - src: "/assets/screenshots/tare/5.webp"
     caption: "The chapter wall: every chapter in its own world, with the stars you earned under every level."
-  - src: "/assets/screenshots/tare/6.png"
+  - src: "/assets/screenshots/tare/6.webp"
     caption: "No ads, timers, or words on screen, only the mobile."
 
 who_for:

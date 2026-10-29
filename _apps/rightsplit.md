@@ -231,19 +231,19 @@ comparison_table:
   footnote: "Competitor details reflect publicly documented features as of 2026. Splitwise is the right tool when the whole group needs to see and add to a shared balance; RightSplit handles the single bill, with Pro+ Spaces for trips and shared homes kept on one phone."
 
 screenshots:
-  - src: "/assets/screenshots/rightsplit/1.png"
+  - src: "/assets/screenshots/rightsplit/1.webp"
     alt: "RightSplit split screen with total, tip and adjustable amounts per person"
-  - src: "/assets/screenshots/rightsplit/2.png"
+  - src: "/assets/screenshots/rightsplit/2.webp"
     alt: "RightSplit receipt items assigned to people with tap-to-assign chips"
-  - src: "/assets/screenshots/rightsplit/3.png"
+  - src: "/assets/screenshots/rightsplit/3.webp"
     alt: "RightSplit completed split with payment request buttons for each person"
-  - src: "/assets/screenshots/rightsplit/4.png"
+  - src: "/assets/screenshots/rightsplit/4.webp"
     alt: "RightSplit receipt detail with a per-person breakdown"
-  - src: "/assets/screenshots/rightsplit/5.png"
+  - src: "/assets/screenshots/rightsplit/5.webp"
     alt: "RightSplit spaces list with trips and shared groups"
-  - src: "/assets/screenshots/rightsplit/6.png"
+  - src: "/assets/screenshots/rightsplit/6.webp"
     alt: "RightSplit trip detail with expenses, receipts and where the money went"
-  - src: "/assets/screenshots/rightsplit/7.png"
+  - src: "/assets/screenshots/rightsplit/7.webp"
     alt: "RightSplit split by items with a running total per person"
 
 privacy:

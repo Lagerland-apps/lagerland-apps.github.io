@@ -165,7 +165,7 @@ def hex_rgba(h, a):
 
 
 def is_landscape(slug):
-    first = sorted((SHOTS_DIR / slug).glob("*.png")) + sorted((SHOTS_DIR / slug).glob("*.jpg"))
+    first = sorted((SHOTS_DIR / slug).glob("*.webp")) + sorted((SHOTS_DIR / slug).glob("*.png")) + sorted((SHOTS_DIR / slug).glob("*.jpg"))
     if not first:
         return False
     w, h = Image.open(first[0]).size
@@ -177,7 +177,7 @@ def first_shot(slug):
         chosen = SHOTS_DIR / slug / SHOT[slug]
         if chosen.exists():
             return chosen
-    shots = sorted((SHOTS_DIR / slug).glob("*.png")) + sorted((SHOTS_DIR / slug).glob("*.jpg"))
+    shots = sorted((SHOTS_DIR / slug).glob("*.webp")) + sorted((SHOTS_DIR / slug).glob("*.png")) + sorted((SHOTS_DIR / slug).glob("*.jpg"))
     return shots[0] if shots else None
 
 

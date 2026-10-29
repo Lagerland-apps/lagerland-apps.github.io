@@ -233,19 +233,19 @@ comparison_table:
   footnote: "Competitor positioning summarised from each platform's public landing page and store listing on 2026-06-11. Pricing and features change often, so check before switching. If you want ranked play against humans, those platforms are the right tools; Shogiful is for training between those games."
 
 screenshots:
-  - src: "/assets/screenshots/shogiful/1.png"
+  - src: "/assets/screenshots/shogiful/1.webp"
     caption: "Play a full game on a 3D wooden board against the AI opponent roster."
-  - src: "/assets/screenshots/shogiful/2.png"
+  - src: "/assets/screenshots/shogiful/2.webp"
     caption: "Dashboard: rating, streak, today's training, and your last game at a glance."
-  - src: "/assets/screenshots/shogiful/3.png"
+  - src: "/assets/screenshots/shogiful/3.webp"
     caption: "Mistake detail: the engine shows the stronger move and explains it in plain English."
-  - src: "/assets/screenshots/shogiful/4.png"
+  - src: "/assets/screenshots/shogiful/4.webp"
     caption: "Game review with accuracy, blunders, mistakes and best moves after every game."
-  - src: "/assets/screenshots/shogiful/5.png"
+  - src: "/assets/screenshots/shogiful/5.webp"
     caption: "Daily training built around your real weaknesses, with adjustable session length."
-  - src: "/assets/screenshots/shogiful/6.png"
+  - src: "/assets/screenshots/shogiful/6.webp"
     caption: "Progress tracking: estimated rating, accuracy trend, and a per-skill profile."
-  - src: "/assets/screenshots/shogiful/7.png"
+  - src: "/assets/screenshots/shogiful/7.webp"
     caption: "Play ladder: climb a roster of named AI opponents from novice to expert."
 
 privacy:
