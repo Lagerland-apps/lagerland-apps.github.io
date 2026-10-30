@@ -29,7 +29,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlparse, unquote
 import xml.etree.ElementTree as ET
 
-SITE = "https://lagerland-apps.github.io"
+SITE = "https://lagerland.app"
 GENERIC_DESC = "Calm, privacy-first apps for iPhone"
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 LANGS = ("de", "fr", "it", "es", "pt", "zh", "ja", "ko", "id", "es-mx", "pt-br", "pl", "tr", "nl", "ru", "ar")

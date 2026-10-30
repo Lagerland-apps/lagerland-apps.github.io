@@ -51,7 +51,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---", re.DOTALL)
 
 W, H = 1200, 630
-DOMAIN = "lagerland-apps.github.io"
+DOMAIN = "lagerland.app"
 
 # ---------------------------------------------------------------------------
 # Curated, hand-authored brand data (auto icon-colour extraction is too muddy).

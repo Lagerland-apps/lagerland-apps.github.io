@@ -5,7 +5,7 @@ layout: none
 /* TEAM */
 
 Developer, designer, founder: an independent Apple developer
-  Site: https://lagerland-apps.github.io/lagerland-apps/
+  Site: https://lagerland.app/lagerland-apps/
   Contact: lagerland.apps@proton.me
 
 /* THANKS */
@@ -29,4 +29,4 @@ and macOS apps. Every app ships without advertising, without user
 accounts, and without third-party tracking. Data stays on-device;
 cloud sync uses the user's own iCloud account.
 
-See: https://lagerland-apps.github.io/lagerland-apps/
+See: https://lagerland.app/lagerland-apps/

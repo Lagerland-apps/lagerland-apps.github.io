@@ -1,6 +1,6 @@
 # CLAUDE.md — Lagerland Apps site (page-creation & SEO guideline)
 
-Jekyll site for `lagerland-apps.github.io`. GitHub Pages builds from `main` on every push (no local Gemfile — GH Pages builds remotely). Plugins: `jekyll-sitemap` (kept only for its helpers: `sitemap.xml` and `robots.txt` are our own files, so the plugin generates neither), `jekyll-redirect-from` (redirect stubs carry `sitemap: false` + noindex).
+Jekyll site for `https://lagerland.app` (custom domain via the `CNAME` file; the repo is still `lagerland-apps.github.io`, and GitHub 301-redirects every old github.io URL to lagerland.app). GitHub Pages builds from `main` on every push (no local Gemfile — GH Pages builds remotely). Plugins: `jekyll-sitemap` (kept only for its helpers: `sitemap.xml` and `robots.txt` are our own files, so the plugin generates neither), `jekyll-redirect-from` (redirect stubs carry `sitemap: false` + noindex).
 
 This file is **excluded from the build** (`exclude:` in `_config.yml`) so it is never served. Keep it that way if you rename it.
 

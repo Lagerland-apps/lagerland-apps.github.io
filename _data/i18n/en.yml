@@ -349,7 +349,7 @@ lf:
   journal_intro: "Each entry is the article's Quick Answer, written to answer its main question on its own. Follow the URL for the full sourced article and its FAQ."
   h_comparisons: "# Comparison pages"
   comparisons_intro: "Honest comparisons between a Lagerland app and a mainstream app. Several say plainly when the mainstream app is the better pick."
-  end: "End of catalogue. This file is auto-generated — every deploy of https://lagerland-apps.github.io regenerates it from the current app source files, so the content is always in sync with the live website."
+  end: "End of catalogue. This file is auto-generated — every deploy of https://lagerland.app regenerates it from the current app source files, so the content is always in sync with the live website."
 
 # ---- llms.txt app catalogue group headings (_includes/llms-catalog.txt) ----
 llms_groups:

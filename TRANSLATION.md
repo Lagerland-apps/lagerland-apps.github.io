@@ -1,6 +1,6 @@
 # TRANSLATION.md: rulebook for the translated site
 
-How to translate lagerland-apps.github.io into 16 market languages, one language at a time, and how to keep
+How to translate lagerland.app into 16 market languages, one language at a time, and how to keep
 every language search- and AI-optimized when apps, guides, comparisons and journal posts are added later.
 
 This file is excluded from the build (`exclude:` in `_config.yml`), like CLAUDE.md, DESIGN.md and PRODUCT.md.
@@ -829,7 +829,7 @@ Before every commit that touches a translated page, a language data file or a te
    time. Yandex Webmaster for ru and tr, Naver Search Advisor for ko, Baidu for zh (section 12).
 4. For a language launch: the App Store Connect localized URLs from 6.2 for every app.
 5. Monitor per language with the Search Console page filter (URL contains `/<code>/`) or a URL-prefix property for
-   `https://lagerland-apps.github.io/<code>/`. Look for: pages not indexed, hreflang errors, and queries in that
+   `https://lagerland.app/<code>/`. Look for: pages not indexed, hreflang errors, and queries in that
    language that land on English pages (those are the next pages to translate or retitle).
 6. Feed the findings back into the GSC to AEO loop the site already runs, per language.
 

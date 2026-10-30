@@ -30,7 +30,7 @@ try:
 except ImportError:  # pragma: no cover
     sys.exit("scripts/i18n.py needs PyYAML (python3 -m pip install pyyaml).")
 
-SITE = "https://lagerland-apps.github.io"
+SITE = "https://lagerland.app"
 LANGS = ("de", "fr", "it", "es", "pt", "zh", "ja", "ko", "id", "es-mx", "pt-br", "pl", "tr", "nl", "ru", "ar")
 LANG_RE = re.compile(r"^(%s)/" % "|".join(re.escape(c) for c in sorted(LANGS, key=len, reverse=True)))
 

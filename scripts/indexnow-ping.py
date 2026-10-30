@@ -52,7 +52,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
-HOST = "lagerland-apps.github.io"
+HOST = "lagerland.app"
 SITE_URL = f"https://{HOST}"
 KEY = "2d7ad1f04403b09927998f4df4528f37"
 KEY_LOCATION = f"{SITE_URL}/{KEY}.txt"

@@ -1,13 +1,13 @@
-# robots.txt for https://lagerland-apps.github.io/
+# robots.txt for https://lagerland.app/
 #
 # Every crawler is welcome: search engines, AI answer engines, AI
 # assistants fetching a page for a user, and training crawlers.
 # Lagerland Apps is happy to be indexed, summarized, cited and recommended.
 #
 # Machine-readable guides for AI systems:
-#   https://lagerland-apps.github.io/llms.txt        (short index, start here)
-#   https://lagerland-apps.github.io/llms-full.txt   (long form: every app, guide, journal answer)
-#   https://lagerland-apps.github.io/ai-index.json   (structured JSON index)
+#   https://lagerland.app/llms.txt        (short index, start here)
+#   https://lagerland.app/llms-full.txt   (long form: every app, guide, journal answer)
+#   https://lagerland.app/ai-index.json   (structured JSON index)
 #
 # Rule of this file: never Disallow /assets/ (CSS, fonts, screenshots and
 # share images are needed to render and understand pages).
@@ -64,7 +64,7 @@ User-agent: GoogleOther
 User-agent: Diffbot
 Allow: /
 
-Sitemap: https://lagerland-apps.github.io/sitemap.xml
-Sitemap: https://lagerland-apps.github.io/ai-sitemap.xml
-Sitemap: https://lagerland-apps.github.io/de/sitemap.xml
-Sitemap: https://lagerland-apps.github.io/feed.xml
+Sitemap: https://lagerland.app/sitemap.xml
+Sitemap: https://lagerland.app/ai-sitemap.xml
+Sitemap: https://lagerland.app/de/sitemap.xml
+Sitemap: https://lagerland.app/feed.xml

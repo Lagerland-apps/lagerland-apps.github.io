@@ -343,7 +343,7 @@ lf:
   journal_intro: "Jeder Eintrag ist die Kurzantwort des Artikels und beantwortet seine Hauptfrage für sich allein. Der ganze Artikel mit Quellen und Fragen steht unter der URL."
   h_comparisons: "# Vergleichsseiten"
   comparisons_intro: "Ehrliche Vergleiche zwischen einer Lagerland-App und einer bekannten App. Mehrere sagen offen, wann die bekannte App die bessere Wahl ist."
-  end: "Ende des Katalogs. Diese Datei wird bei jeder Veröffentlichung von https://lagerland-apps.github.io neu aus den Quelldateien der Apps erzeugt und entspricht damit immer der aktuellen Website."
+  end: "Ende des Katalogs. Diese Datei wird bei jeder Veröffentlichung von https://lagerland.app neu aus den Quelldateien der Apps erzeugt und entspricht damit immer der aktuellen Website."
 
 # ---- llms.txt app catalogue group headings ----
 llms_groups:

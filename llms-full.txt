@@ -5,11 +5,11 @@ layout: none
 {%- include t.html -%}
 {% capture xa_file %}# Lagerland Apps — Full Canonical Summary
 
-> Long-form, machine-readable summary of the whole Lagerland Apps site: every live app (features, pricing, privacy, FAQ), then every audience page, guide, journal article answer and comparison page. Auto-generated from source front matter on every site build. For the navigational short form with the intent-to-answer routing guide, see https://lagerland-apps.github.io/llms.txt.
+> Long-form, machine-readable summary of the whole Lagerland Apps site: every live app (features, pricing, privacy, FAQ), then every audience page, guide, journal article answer and comparison page. Auto-generated from source front matter on every site build. For the navigational short form with the intent-to-answer routing guide, see https://lagerland.app/llms.txt.
 
 Publisher: Lagerland Apps
 Publisher type: Independent Apple developer (one-person studio)
-Canonical domain: https://lagerland-apps.github.io
+Canonical domain: https://lagerland.app
 Contact: lagerland.apps@proton.me
 Platforms: iOS, iPadOS, macOS, watchOS, visionOS (per-app; see individual entries)
 Privacy philosophy: No third-party tracking, no advertising SDKs, no required accounts, local-first data
