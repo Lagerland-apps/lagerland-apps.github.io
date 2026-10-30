@@ -108,7 +108,7 @@ founder:
   location: "Finland"
   photo: "/assets/icons/lagerland-mark.png"
   bio: "We wanted a log that keeps up at the rack, a program we could follow without building one, and a clear signal when a lift stops moving. GymLogger X does those three things from your own training history, with the analysis worked out on your iPhone. It shows no ads, asks for no account, and keeps your workouts on your devices and in your own iCloud. Lagerland Apps is a small independent Apple studio in Finland, with no investors or advertisers behind it."
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
     - "Workouts are stored on your device and synced through your own iCloud, and the app has no analytics SDKs"
@@ -263,7 +263,7 @@ faq:
     a: "Create it with Pro. A custom exercise takes a name, equipment, and muscle groups, and you log it like any built-in one. Pro also lets you edit the name, equipment, and muscles of built-in exercises, and reset them to the default."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/gymlogger-x/support/"
 
 release:
@@ -278,6 +278,6 @@ ratings:
   value: "4.8"
   count: 17
   last_synced: "2026-06-22"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 GymLogger X is a strength training log for iPhone, with an Apple Watch app. Every set row shows what you lifted last time, supersets and giant sets log like straight sets, and the plate calculator loads the bar from the plates your gym has. You can follow one of 44 ready-made programs (6 free, 38 with Pro) or let the Smart Program Creator build one around your equipment, schedule, goals, and injuries. With Pro, Insights reads your own history and shows readiness, fatigue, weekly load ratio, muscle balance, and a plateau status for each lift, worked out by fixed rules on your iPhone. On Apple Watch you log sets, see live heart rate, and can let the rest timer tell you when your heart rate has recovered; the workout starts on the iPhone. The app has 1,500 exercises, 12 widgets, and two Live Activities, and runs in 40 languages. There are no ads and no account, and workouts sync through your own iCloud. The core is free; Pro costs {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once.

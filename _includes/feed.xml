@@ -21,7 +21,7 @@
   <id>{{ site.url }}/</id>
   <author>
     <name>Lagerland Apps</name>
-    <email>lagerland.apps@proton.me</email>
+    <email>support@lagerland.app</email>
     <uri>{{ site.url }}{{ fd_pre }}/lagerland-apps/</uri>
   </author>
   <rights>&#169; {{ "now" | date: "%Y" }} Lagerland Apps</rights>

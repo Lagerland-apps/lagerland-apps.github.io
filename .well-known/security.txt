@@ -5,7 +5,7 @@ layout: none
 # Security contact for Lagerland Apps
 # https://lagerland.app/
 
-Contact: mailto:lagerland.apps@proton.me
+Contact: mailto:support@lagerland.app
 Expires: {{ "now" | date: "%Y" | plus: 1 }}-12-31T23:59:59.000Z
 Preferred-Languages: en, fi
 Canonical: https://lagerland.app/.well-known/security.txt

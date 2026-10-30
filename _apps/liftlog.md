@@ -311,7 +311,7 @@ faq:
     a: "We update this page with each App Store release; the dates are in the page footer. The four one-time tiers ({P_IAP:Minimum} / {P_IAP:Suggested} / {P_IAP:Supporter} / {P_IAP:Patron}) and the 7-day trial without a card match the App Store. If the App Store ever shows different prices, the App Store is canonical."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/liftlog/support/"
 
 release:
@@ -326,7 +326,7 @@ ratings:
   value: "5.0"
   count: 2
   last_synced: "2026-10-29"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 LiftLog is a gym workout tracker for iPhone that you pay for once. The first 7 days are free with no card on file. After that you buy the app once at one of four tiers, from {P_IAP:Minimum} (Fair) to {P_IAP:Patron} (Patron). Every tier unlocks the same app, nothing renews, and Family Sharing is on. If you never buy, your history, charts, and exports stay open to you.
 

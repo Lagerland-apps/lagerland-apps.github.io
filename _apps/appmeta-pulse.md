@@ -229,7 +229,7 @@ faq:
     a: "No. AppMeta Pulse has no server of its own, no analytics or crash-reporting SDKs, and no advertising identifier. App Store Connect requests go from your iPhone to Apple, app icons come from Apple's lookup service, and exchange rates come from the European Central Bank. Reply drafts, sentiment, and translation run on the device. With iCloud Sync on, your data is also stored in your own private iCloud database, which we can't access."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/appmeta-pulse/support/"
 
 release:
@@ -252,7 +252,7 @@ founder:
   role: "Independent Apple studio · Finland"
   photo: "/assets/icons/lagerland-mark.png"
   bio: "We sell {APP_COUNT} apps through App Store Connect. Checking how they were doing meant a browser and a login, and App Store Connect only keeps about a year of daily sales, so last year's numbers kept slipping away. We wanted the figures on the phone, the history kept, the API key left on the device, and no server of ours in between. AppMeta Pulse is that app."
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
     - "Lagerland Apps sells {APP_COUNT} apps through App Store Connect and built AppMeta Pulse for its own portfolio"
@@ -266,7 +266,7 @@ founder:
 related_apps:
   - appmeta
   - mockly
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 
 App Store Connect keeps about a year of daily sales. After that the days fall off, and with them any honest answer to "am I doing better than this time last year?" AppMeta Pulse fetches your sales and subscription reports through Apple's API and keeps every day on your iPhone until you delete it. It also keeps an original copy of each report Apple sends. Once a full year is stored, Trends puts this year next to last year, and the 12 widgets show how the current week or month is pacing.

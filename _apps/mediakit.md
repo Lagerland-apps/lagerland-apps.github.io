@@ -195,12 +195,12 @@ faq:
     a: "Online converters upload your file to a server, process it there, and send it back. MediaKit does the same jobs on your iPhone or Mac, so a contract, a scan, or a family video never leaves the device, and there is no upload to wait for. It also covers six kinds of file in one app, shows the estimated size before you run a tool, and lets you compare the result with the original."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/mediakit/support/"
 
 release:
   first_release: "2026-04-01"
   last_updated: "2026-04-13"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 MediaKit is an iPhone and Mac app with more than 150 tools for video, audio, image, PDF, archive, and ebook files, and every one of them runs on the device. Drop in a file and MediaKit suggests the tools that fit it. The tool screen estimates the output size before you press Run, and each result shows the space you saved next to a side-by-side compare. Five tools stay free for good: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Your first 3 days unlock every other tool for single-file runs with no payment, and Pro adds every tool, batch processing, Recipes, and Make It Fit, with one purchase covering iPhone and Mac. On Mac, Folder Automation, the menu bar, and six Shortcuts actions put the same tools into your routine. There is no account, and your files are never uploaded. Published by Lagerland Apps.

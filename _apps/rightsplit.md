@@ -300,7 +300,7 @@ faq:
     a: "<a href=\"/alternatives/splitwise/\">Splitwise</a> is made for shared group ledgers: roommates, ongoing trip costs, and debts that build up over months, with everyone logging and checking balances from their own account. RightSplit is a calculator on your phone: you scan one receipt, split it, and send the amounts, without creating accounts or adding friends. For a trip or a shared home, Pro+ Spaces collect receipts and expenses, keep each person's balance, and work out the fewest transfers to settle up. Spaces live only on your phone with no sync, so the rest of the group sees what you send them, not a live shared balance. See the <a href=\"/alternatives/splitwise/\">full Splitwise comparison</a>, or compare against <a href=\"/alternatives/tab/\">Tab</a>, <a href=\"/alternatives/tricount/\">Tricount</a>, <a href=\"/alternatives/settle-up/\">Settle Up</a>, and <a href=\"/alternatives/venmo-split/\">Venmo Split</a>."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/rightsplit/support/"
 
 release:
@@ -315,7 +315,7 @@ ratings:
   value: "5.0"
   count: 1
   last_synced: "2026-04-15"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 RightSplit is a bill-splitting calculator for iPhone. Scan a receipt with the camera, pick a photo, or share one in from another app, and every line becomes an item you can edit. On an iPhone with Apple Intelligence turned on (iOS 26 or later), Apple Intelligence reads the receipt on the device; every other iPhone uses Apple's on-device text recognition. Tap who had each item, split shared dishes between the people who shared them, and RightSplit divides tax and tip per person, with fair rounding so the shares add up to the total. Send Payment Requests then writes each person a message with the place, their exact amount, and a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay.
 

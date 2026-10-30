@@ -116,7 +116,7 @@ founder:
   external_link:
     label: "See all Lagerland apps →"
     href: "/apps/"
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails go to one inbox and are answered personally, usually within a day."
 
 value_points:
@@ -333,7 +333,7 @@ faq:
     a: "AppMeta's interface is in 17 localizations covering 11 languages: English (US, UK, Australia, Canada), Arabic, German, Spanish (Spain, Mexico), French (France, Canada), Italian, Japanese, Korean, Portuguese (Brazil, Portugal), Russian, and Turkish. The listing editor manages all 50 App Store Connect locales whatever language the app runs in."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/appmeta/support/"
 
 release:
@@ -345,6 +345,6 @@ release:
 related_apps:
   - appmeta-pulse
   - mockly
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 AppMeta is a native Mac app for App Store Connect, made for indie Apple developers who manage their own listings in several locales. It edits the name, subtitle, description, keywords, promotional text, What's New, and URLs for every locale in one window, or one field across every locale, with character counts that match App Store Connect. Before a push, a field-level diff shows each change next to its live value, and only the fields you changed are pushed: one field, one locale, or all of them after a confirmation. Keyword tools flag wasted characters, duplicates, and overlaps, map coverage across 57 storefronts, and, when you turn live research on, measure difficulty from the top ten apps for a phrase and demand from Apple's search suggestions, with the evidence listed. AI translation and keyword suggestions are optional and run through Apple Intelligence on your Mac (macOS 26 on a supported Mac), your own Anthropic, OpenAI, or Google key, or a local model. The same app handles In-App Purchases, subscriptions, Game Center, TestFlight, submission, phased release, reviews, Sales & Analytics, and Diagnostics. AppMeta uses the App Store Connect API with a team .p8 key stored in the Mac Keychain, has no AppMeta server, and needs macOS 14 or later. Demo Mode is free; connecting your account needs Pro at {P_YEARLY}/year or {P_LIFETIME} lifetime. AppMeta is a third-party developer tool and is not affiliated with Apple.

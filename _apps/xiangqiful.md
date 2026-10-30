@@ -147,7 +147,7 @@ founder:
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails go to one inbox and are answered personally, usually within a day."
 
 value_points:
@@ -306,7 +306,7 @@ faq:
     a: "Xiangqiful supports VoiceOver, with labels on the board's points, the opponent cards, the skill chart, and the controls. Arabic and Hebrew get a right-to-left setting for the board. The app is available in 40 localizations. It does not support Dynamic Type, and it uses a dark theme only."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/xiangqiful/support/"
 
 release:
@@ -327,7 +327,7 @@ ratings:
   value: "5.0"
   count: 2
   last_synced: "2026-10-24"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 Xiangqiful is a [xiangqi app for iPhone, iPad, and Mac](#features) that teaches the game from your first move and then helps you get better at it. Xiangqi is Chinese chess: two armies of sixteen pieces on the intersections of a nine-by-ten board, a river across the middle, and a palace at each end that the generals may never leave. Outside Asia, many people stop at the first look, because every piece is a Chinese character painted on a wooden disc.
 

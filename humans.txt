@@ -6,7 +6,7 @@ layout: none
 
 Developer, designer, founder: an independent Apple developer
   Site: https://lagerland.app/lagerland-apps/
-  Contact: lagerland.apps@proton.me
+  Contact: support@lagerland.app
 
 /* THANKS */
 

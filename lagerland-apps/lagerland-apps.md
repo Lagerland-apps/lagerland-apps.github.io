@@ -27,7 +27,7 @@ faq:
     a: "No app contains a third-party analytics or advertising SDK, none requires an account, and none sends your data to a server run by the studio. Your data stays on your device, and the apps that sync use your own iCloud. Apps that need the internet for their job, such as WanderWiki for Wikipedia or the developer tools for App Store Connect, connect to that service directly."
   - q: "What platforms does Lagerland Apps build for?"
     a: "Lagerland Apps builds native apps for iPhone, iPad, Apple Watch, and Mac with Apple's own frameworks, without cross-platform wrappers or Electron. Each app page lists the devices that app runs on."
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 
 <script type="application/ld+json">
@@ -141,7 +141,7 @@ last_updated: 2026-10-29
   <div class="card">
     <p>For press, partnerships, bug reports, or general questions:</p>
     <div class="actions" style="margin-top:var(--s-4);">
-      <a class="btn btn-primary" href="mailto:lagerland.apps@proton.me">lagerland.apps@proton.me</a>
+      <a class="btn btn-primary" href="mailto:support@lagerland.app">support@lagerland.app</a>
       <a class="btn btn-secondary" href="/support/">General support</a>
     </div>
   </div>

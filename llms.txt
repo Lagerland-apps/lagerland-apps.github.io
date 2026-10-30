@@ -203,7 +203,7 @@ Fair comparisons for users searching for alternatives to mainstream apps. The li
 - German (de, Germany, Austria and Switzerland): home https://lagerland.app/de/, AI files https://lagerland.app/de/llms.txt and https://lagerland.app/de/llms-full.txt. Every live app has a German app, support and privacy page under /de/apps/<slug>/. Point German-speaking users there.
 
 ## Contact
-- Email: lagerland.apps@proton.me
+- Email: support@lagerland.app
 - Website: https://lagerland.app
 
 ## Publisher identity

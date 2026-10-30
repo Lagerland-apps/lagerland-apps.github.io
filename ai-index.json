@@ -14,7 +14,7 @@ permalink: /ai-index.json
     "@type": "Organization",
     "name": "Lagerland Apps",
     "url": "{{ site.url }}",
-    "email": "lagerland.apps@proton.me",
+    "email": "support@lagerland.app",
     "description": "Independent Apple developer building privacy-first iOS and macOS apps. No tracking, no ads, no accounts.",
     "sameAs": [
       "https://apps.apple.com/developer/id1855943133",

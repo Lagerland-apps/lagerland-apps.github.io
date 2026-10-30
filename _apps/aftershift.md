@@ -236,7 +236,7 @@ faq:
     a: "Social jet lag is the term sleep researchers use for the gap between your biologically preferred sleep timing and the schedule your work or social life imposes. Most people feel some of it on Monday mornings after a freer weekend. For shift workers the mechanism is the same but much larger: a permanent night-shift nurse who spends days off with a family that sleeps at night is in effect flying across time zones every weekend. AfterShift does not measure social jet lag. Its sleep-debt trend shows, cycle by cycle, whether your debt is building, stable, or recovering. Researchers use the MCTQ (Munich ChronoType Questionnaire) to quantify social jet lag if you want a formal read."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/aftershift/support/"
 
 release:
@@ -260,7 +260,7 @@ founder:
   role: "Independent Apple studio · Finland"
   photo: "/assets/icons/lagerland-mark.png"
   bio: "AfterShift exists because every consumer sleep app we tried assumed an 11 p.m. bedtime and a 7 a.m. alarm, then quietly marked down the nurses, paramedics, and factory workers among our family and friends for not living that way. Naps counted as failures. Daytime sleep was scored as a poor night. Caffeine cutoffs sat at 2 p.m. whenever the next shift actually started. Those apps were built around a person who wasn't the one using them. Lagerland has no team, investors, or advertisers behind it. It is a small Apple studio in Finland making the apps we wanted to use."
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
     - "GDPR-first architecture: on-device storage, no cloud sync, zero analytics SDKs"
@@ -270,7 +270,7 @@ founder:
   external_link:
     href: "/apps/aftershift/methodology/"
     label: "Read the AfterShift methodology →"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 
 Most sleep apps were designed for someone who goes to bed at 11 p.m. and wakes at 7 a.m. Go through the onboarding of any major one and the questions assume a fixed bedtime, a steady wake time, and free weekends. The people who keep hospitals, fire stations, factories, and warehouses running through the night have to use those same apps. A nurse logs five hours of daytime sleep after a string of night shifts, and the app politely tells her she had a *poor night* and should go to bed earlier. The app was built around someone who isn't her.

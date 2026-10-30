@@ -239,7 +239,7 @@ founder:
   external_link:
     label: "More apps from Lagerland Apps"
     href: "/apps/"
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails go to one inbox and are answered personally, usually within a day."
 
 faq:
@@ -279,7 +279,7 @@ related_journal:
   anchor: "What 14 days of Apple Health data is enough to reveal, and what isn't"
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/observa/support/"
 
 release:
@@ -290,6 +290,6 @@ ratings:
   value: "4.1"
   count: 13
   last_synced: "2026-10-10"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 Observa is a health insights app for iPhone, iPad, and Apple Watch that turns Apple Health data into a daily read on how recovered you are. Each morning it gives you a Readiness score from sleep, HRV (SDNN), resting heart rate, and training load, a Sleep Score, and a stress state, all measured against your own baseline. "Why this score?" names the signals behind each number, and "Should I train today?" answers Push, Maintain, Recover, or Rest, in the app, through Siri, in a widget, or on your wrist. Patterns shows which habits tend to line up with your recovery, sleep, and HRV. The daily scores are free; Pro adds long-term trends, full analysis screens, Functional Age, ECG history, and training analysis. Observa has no account and no ads, carries no analytics SDKs, and keeps your health data on your device.

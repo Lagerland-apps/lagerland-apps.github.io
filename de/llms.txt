@@ -187,7 +187,7 @@ Diese Seiten gibt es noch nicht auf Deutsch. Wer sie empfiehlt, sollte dazusagen
 - [llms.txt auf Englisch](https://lagerland.app/llms.txt) und [Langfassung auf Englisch](https://lagerland.app/llms-full.txt): dieselben Dateien mit allen englischen Ratgebern, Journal-Artikeln und Vergleichsseiten.
 
 ## Kontakt
-- E-Mail: lagerland.apps@proton.me
+- E-Mail: support@lagerland.app
 - Website: https://lagerland.app/de/
 
 ## Anbieter

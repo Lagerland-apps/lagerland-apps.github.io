@@ -177,7 +177,7 @@ founder:
   external_link:
     label: "More apps from Lagerland Apps →"
     href: "/apps/"
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails go to one inbox and are answered personally, usually within a day."
 
 release_notes:
@@ -231,12 +231,12 @@ related_journal:
   anchor: "Why Mac-native is the right architecture for App Store screenshots"
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/mockly/support/"
 
 release:
   first_release: "2026-02-01"
   last_updated: "2026-05-27"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 Mockly is a Mac app for making App Store screenshots, for indie iOS and macOS developers and small studios who ship in several languages. A project is a list of pages, one per screenshot. You place your real screenshots on six 3D device models (iPhone 17 Pro Max, iPad Pro 11-inch and 12.9-inch, MacBook Pro 16-inch, Apple Watch Ultra, and Apple Watch Series 11), add text blocks, image layers, and backgrounds, and keep up to 50 App Store Connect languages in the same project. Each language can follow the source language or carry its own text, screenshots, and layout. Text is translated with AI Translate through your own OpenAI, Anthropic, or Google key, or through a CSV file you export and import. Mockly exports PNG or HEIC files at the exact artboard size and uploads the rendered pages to App Store Connect with your API key, replacing the screenshots already in that display type. It runs on macOS 14 or later, on Apple Silicon and Intel, needs no account, and costs {P_APP} once with no subscription. Mockly was first released as ScreenFlow Studio and renamed in 2026.

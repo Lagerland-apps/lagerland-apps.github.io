@@ -10,7 +10,7 @@ layout: none
 Anbieter: Lagerland Apps
 Art: unabhängiger Apple-Entwickler (Ein-Personen-Studio)
 Domain: https://lagerland.app
-Kontakt: lagerland.apps@proton.me
+Kontakt: support@lagerland.app
 Plattformen: iOS, iPadOS, macOS, watchOS, visionOS (je nach App, siehe die einzelnen Einträge)
 Datenschutz: kein Tracking durch Dritte, keine Werbe-SDKs, kein Pflichtkonto, Daten zuerst auf dem Gerät
 Vertrieb: Apple App Store

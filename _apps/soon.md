@@ -109,7 +109,7 @@ founder:
   location: "Finland"
   photo: "/assets/icons/lagerland-mark.png"
   bio: "A date in a calendar is easy to lose. Soon. puts it on the screens you check every day and keeps a plan beside it, so the wait turns into something to look forward to. Lagerland Apps is a small Apple studio in Finland with no investors or advertisers behind it. Soon. is paid for by the people who choose Premium, which is why the free version shows no ads and the app carries no trackers."
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
     - "The app carries no ads, tracking, or third-party SDKs"
@@ -290,7 +290,7 @@ faq:
     a: "You can share any countdown as an image in Story, Post, Message, or widget style, through Messages, Instagram, or any app in the share sheet. Free share cards carry a small Soon. watermark, and Premium removes it. Soon. doesn't have shared or live countdowns between people, so if two people want the same countdown, each adds it in their own copy."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/soon/support/"
 
 release:

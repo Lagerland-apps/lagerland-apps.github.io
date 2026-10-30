@@ -131,7 +131,7 @@ founder:
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails go to one inbox and are answered personally, usually within a day."
 
 alternatives_to:
@@ -309,7 +309,7 @@ faq:
     a: "Yes. Shogiful has 39 localizations, Japanese among them, and follows your device language. Japanese users get their own first-launch flow that asks for a kyū or dan level, and moves can be shown in Japanese notation (▲７六歩) or Western notation (P-7f)."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/shogiful/support/"
 
 release:
@@ -328,7 +328,7 @@ ratings:
   count: 18
   last_synced: "2026-10-22"
 related_apps: ["xiangqiful", "chessful"]
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 Shogiful is a [shogi training and analysis app for iPhone, iPad, and Mac](#features). Shogi is the Japanese form of chess, played on a 9×9 board where captured pieces come back into play as drops. Shogiful puts play, review, and training in one app, and it starts with the board itself. You can play with traditional kanji pieces, with kanji plus arrows that show how each piece moves, or with chess-style pieces that have no kanji at all ([the design story is in the journal](/journal/making-shogi-readable-without-kanji/)).
 

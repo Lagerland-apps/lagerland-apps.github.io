@@ -261,7 +261,7 @@ founder:
   overline: "Why I built this"
   heading: "A puzzle should end with an answer you can check."
   bio: "I wanted a tile puzzle you can finish and know how well you played. So every level in Millrace has a proven shortest solution, the result card shows how close you came, and the hint in a puzzle level only ever points along a winning line. The endless board is there as Freeplay for the days you just want to slide tiles."
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
     - "No ads, analytics SDKs, advertising SDKs, or other third-party code; every framework the app uses is Apple's"
@@ -275,7 +275,7 @@ founder:
     href: "/lagerland-apps/"
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/millrace/support/"
 
 related_apps: ["tare", "chessful", "shogiful"]
@@ -291,7 +291,7 @@ release:
 
 show_body: true
 about_heading: "What Millrace is: a tile puzzle with a proven answer"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 
 Millrace is a tile logic puzzle for iPhone and iPad. Equal tiles merge when you slide them together, but each of its 64 levels is a closed problem with a goal, a move limit, and a known best solution.

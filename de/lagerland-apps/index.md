@@ -28,7 +28,7 @@ faq:
     a: "Keine App enthält ein Analyse- oder Werbe-SDK von Drittanbietern, keine verlangt ein Konto, und keine schickt deine Daten an einen Server des Studios. Deine Daten bleiben auf deinem Gerät, und Apps mit Synchronisierung nutzen deine eigene iCloud. Apps, die für ihre Aufgabe das Internet brauchen, etwa WanderWiki für Wikipedia oder die Entwicklerwerkzeuge für App Store Connect, verbinden sich direkt mit diesem Dienst."
   - q: "Für welche Geräte entwickelt Lagerland Apps?"
     a: "Lagerland Apps entwickelt native Apps für iPhone, iPad, Apple Watch und Mac mit Apples eigenen Frameworks, ohne plattformübergreifende Wrapper und ohne Electron. Auf jeder App-Seite steht, auf welchen Geräten die App läuft."
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 {%- include t.html -%}
 
@@ -152,7 +152,7 @@ last_updated: 2026-10-29
   <div class="card">
     <p>Für Presseanfragen, Kooperationen, Fehlermeldungen oder allgemeine Fragen:</p>
     <div class="actions" style="margin-top:var(--s-4);">
-      <a class="btn btn-primary" href="mailto:lagerland.apps@proton.me">lagerland.apps@proton.me</a>
+      <a class="btn btn-primary" href="mailto:support@lagerland.app">support@lagerland.app</a>
       <a class="btn btn-secondary" href="{% include l.html url="/support/" %}"{% if l_en %} hreflang="en"{% endif %}>Allgemeiner Support{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
     </div>
   </div>

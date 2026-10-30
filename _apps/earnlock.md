@@ -122,7 +122,7 @@ founder:
   location: "Finland"
   photo: "/assets/icons/lagerland-mark.png"
   bio: "Every screen-time tool we tried could be talked out of its lock: a passcode we had set ourselves, a timer we could sit out, a button offering one more minute. EarnLock makes the key a walk. You move, Apple Health counts it, and the apps open. Half a goal still earns an hour, because a lock that gives nothing for a bad day is the one people switch off. Lagerland Apps is a one-person studio in Finland with no investors or advertisers, and the studio's other {APP_COUNT_OTHER} apps follow the same data rules."
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
     - "No EarnLock server: the app makes no network connections of its own"
@@ -288,7 +288,7 @@ faq:
     a: "It's an estimate, and the card says so. iOS doesn't let apps read your real per-app Screen Time, so EarnLock counts what it can see: each time a locked app stops you. It multiplies those attempts by 9 minutes."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/earnlock/support/"
 
 release:
@@ -304,7 +304,7 @@ ratings:
   count: 0
   last_synced: "2026-05-22"
   display_label: "New release"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 EarnLock is an iPhone app that keeps the apps you lose time to locked until you reach a daily activity goal. Apple Health keeps score: steps on the free tier, or active minutes or active calories with Premium. Reach half your goal and your locked apps open for an hour. Reach all of it and they stay open until midnight, when everything locks again and the day starts over.
 

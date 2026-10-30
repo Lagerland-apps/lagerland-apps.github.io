@@ -10,7 +10,7 @@ layout: none
 Publisher: Lagerland Apps
 Publisher type: Independent Apple developer (one-person studio)
 Canonical domain: https://lagerland.app
-Contact: lagerland.apps@proton.me
+Contact: support@lagerland.app
 Platforms: iOS, iPadOS, macOS, watchOS, visionOS (per-app; see individual entries)
 Privacy philosophy: No third-party tracking, no advertising SDKs, no required accounts, local-first data
 Distribution: Apple App Store

@@ -220,7 +220,7 @@ founder:
   role: "Independent Apple studio · Finland"
   photo: "/assets/icons/lagerland-mark.png"
   bio: "Tare started as a quiet museum piece, hairline beams on warm paper. It was tasteful and dull, and its first levels were flat beams nobody needed to think about. So we rebuilt the chapters to ramp up, redrew every screen as a painted toy on a sky-blue board, and gave each solve a proper celebration. One rule never changed: a beam with a secret on it won't settle until you have worked the secret out. Without that rule the hidden weights would be a guessing game. With it, every level is a proof you finish yourself."
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails are answered personally, usually within a day."
   signals:
     - "No ads, analytics, or third-party SDKs, and no network connections of its own"
@@ -229,7 +229,7 @@ founder:
     - "Paid for by one purchase, never by ads or data"
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/tare/support/"
 
 release:
@@ -245,7 +245,7 @@ related_journal:
 
 show_body: true
 about_heading: "What Tare is: a balance puzzle you solve by deduction"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 
 Tare is a logic puzzle that looks like a toy. Each level is a painted hanging mobile on a sky-blue board, with a tray of weights beneath it. Your job is to hang every weight on a hook so that **every beam balances at the same time**.

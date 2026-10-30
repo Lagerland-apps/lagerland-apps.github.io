@@ -74,7 +74,7 @@
         {%- assign ft_parts = ft_item | split: "|" -%}{%- assign ft_url = ft_parts[0] -%}{%- assign ft_key = ft_parts[1] %}
         <a href="{% include l.html url=ft_url %}"{% if l_en %} hreflang="en"{% endif %}>{{ t[ft_key] }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
         {%- endfor %}
-        <a href="mailto:lagerland.apps@proton.me">{{ t.footer_email_us }}</a>
+        <a href="mailto:support@lagerland.app">{{ t.footer_email_us }}</a>
         <a href="{% include l.html url="/apps/gymlogger-x/coaches/" %}"{% if l_en %} hreflang="en"{% endif %}>{{ t.footer_for_coaches }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
       </div>
     </div>

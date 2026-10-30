@@ -282,7 +282,7 @@ faq:
     a: "Open Settings, tap your name, then Subscriptions, and cancel before the renewal date; you keep Pro until the period ends. Monthly and Yearly start with a {TRIAL} for eligible accounts and renew automatically unless cancelled. Lifetime is a one-time purchase with nothing to cancel. Apple handles refunds through the standard App Store refund flow."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/pawza/support/"
 
 release:
@@ -297,7 +297,7 @@ ratings:
   value: "5.0"
   count: 1
   last_synced: "2026-08-13"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 Most of a pet's health history arrives on paper: a vaccination certificate from the shelter, a printout after a late-night visit, an invoice with a dose written on it. Then the vet asks when the limping started, or you stand in the kitchen unsure whether this morning's pill went in. Pawza keeps those answers in one record per pet, on the iPhone or iPad you already carry.
 

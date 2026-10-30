@@ -27,7 +27,7 @@ mentioned_apps:
   - appmeta
 read_time: "2 min read"
 excerpt: "The Lagerland Apps journal is a place for rebrand stories, shipping notes, and honest essays about building apps without tracking as a one-person Apple studio."
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 
 Lagerland Apps is a one-person studio shipping iOS and macOS apps (14 when this post went up, {APP_COUNT} today). Until now, the website has been app-page-first: you land on an app, learn about it, and install it. That's still the goal, but some stories are too broad for a single app page, and this journal is for those.
@@ -50,6 +50,6 @@ Lagerland Apps is a one-person studio shipping iOS and macOS apps (14 when this 
 
 ## How to read along
 
-The [journal index](/journal/) lists every post in reverse chronological order. There are no social widgets, comments, or newsletter sign-up wall. If you want to get in touch, [email me](mailto:lagerland.apps@proton.me). If you want to support the work, [download an app you'd actually use](/apps/).
+The [journal index](/journal/) lists every post in reverse chronological order. There are no social widgets, comments, or newsletter sign-up wall. If you want to get in touch, [email me](mailto:support@lagerland.app). If you want to support the work, [download an app you'd actually use](/apps/).
 
 Welcome.

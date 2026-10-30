@@ -126,7 +126,7 @@ founder:
   external_link:
     label: "Read the Lagerland studio backstory →"
     href: "/lagerland-apps/"
-  support_email: "lagerland.apps@proton.me"
+  support_email: "support@lagerland.app"
   response_time: "Support emails go to one inbox and are answered personally, usually within a day."
 
 alternatives_to:
@@ -306,7 +306,7 @@ faq:
     a: "Chessful ships in 32 languages (38 locales counting regional variants such as UK English, Mexican Spanish, and Brazilian Portuguese), lessons included. Pick the language for Chessful in iOS Settings, or in System Settings on a Mac."
 
 support:
-  email: "lagerland.apps@proton.me"
+  email: "support@lagerland.app"
   url: "/apps/chessful/support/"
 
 release:
@@ -328,7 +328,7 @@ related_journal:
 show_body: true
 about_heading: "What Chessful does: chess analysis, training, and lessons"
 related_apps: ["shogiful", "xiangqiful"]
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 Chessful is a [chess training and analysis app for iPhone, iPad, and Mac](#features) for players who keep losing the same way and can't see why. When a game ends, Stockfish checks every move on your device. Each mistake gets a card with what you played, what was best, a short explanation worded for your level, and the line that punishes your move. Those mistakes then become the puzzles in [your daily training](#how-it-works), and spaced review brings back the ones you miss until you solve them.
 
