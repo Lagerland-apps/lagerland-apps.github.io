@@ -116,7 +116,7 @@ value_points:
 
 features:
   - title: "Dein Foto hinter dem Countdown"
-    description: "Nimm ein eigenes Foto, ein ausgewähltes Foto passend zur Art des Ereignisses oder einen Farbverlauf und schneide es zu. Du hast 11 Themen zur Wahl, 3 davon kostenlos. Premium ergänzt eine Galerie mit bis zu 10 Fotos pro Moment."
+    description: "Nimm ein eigenes Foto und schneide es zu, oder wähl einen Farbverlauf. Du hast 11 Themen zur Wahl, 3 davon kostenlos. Premium ergänzt eine Galerie mit bis zu 10 Fotos pro Moment."
   - title: "Planmodus"
     description: "Jeder Moment kann eine Checkliste und eine Zeitleiste mit Meilensteinen haben. Soon. schlägt einen Plan für Reise, Hochzeit, Geburtstag, Prüfung, Arbeit, Feiertag, Gesundheit, Baby, Konzert und Sport vor, und „Auf Vorschläge zurücksetzen“ holt ihn zurück. Premium ergänzt Erinnerungen im Planmodus."
   - title: "Hoch- und runterzählen"
@@ -125,10 +125,10 @@ features:
     description: "Mit Premium erinnert dich Soon. 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst. In den letzten 24 Stunden läuft der Finale Countdown auf dem Sperrbildschirm und in der Dynamic Island, und mit „Auf dem Sperrbildschirm behalten“ zeigt er den Countdown bis zu 90 Tage vorher."
   - title: "Die Vorhersage für deinen großen Tag"
     description: "Füg einem Moment einen Ort hinzu, und sobald das Datum höchstens 7 Tage entfernt ist, zeigt Soon. die Vorhersage von Apple Wetter dafür. Mit Premium."
-  - title: "Suchen, wie du sprichst"
-    description: "Tipp etwa „reise im juli“ oder „letzten sommer“, um Momente und Erinnerungen zu finden. Die Suche läuft auf deinem iPhone."
+  - title: "Momente schnell finden"
+    description: "Tipp etwa „hochzeit 2027“ oder ein Wort aus dem Titel, um Momente und Erinnerungen zu finden. Die Suche läuft auf deinem iPhone."
   - title: "Kalenderimport, Siri und Spotlight"
-    description: "Mach mit einem Tippen aus einem Termin in deinem Kalender einen Countdown. Frag Siri, wie viele Tage es noch bis zu deinem Moment in Soon. sind, und finde deine Momente in Spotlight. Mit Premium trägst du einen Countdown auch in deinen Kalender ein."
+    description: "Mach mit einem Tippen aus einem Termin in deinem Kalender einen Countdown. Frag Siri, wie viele Tage es noch bis zu deinem Moment in Soon. sind, und finde deine Momente in Spotlight."
   - title: "Tägliche Notizen"
     description: "Mit Premium bekommst du jeden Tag eine kurze Notiz, die sich ändert, je näher das Datum rückt, im Ton „Ruhig“ oder „Verspielt“. Die Notizen entstehen aus Vorlagen auf deinem iPhone, nicht durch KI."
 
@@ -137,7 +137,7 @@ how_it_works:
   intro: "Was zwischen dem Anlegen eines Moments und dem Tag passiert, auf den er runterzählt."
   steps:
     - title: "Moment anlegen"
-      detail: "Tipp auf + und beantworte „Worauf wartest du?“ mit einem Titel und einem Datum, dazu eine Uhrzeit, wenn der Countdown auf die Minute laufen soll. Wähl ein Symbol, ein Thema und ein Foto. Oder importier einen Termin aus deinem Kalender."
+      detail: "Tipp auf + und beantworte „Welcher Moment?“ mit einem Titel und einem Datum, dazu eine Uhrzeit, wenn der Countdown auf die Minute laufen soll. Wähl ein Symbol, ein Thema und ein Foto. Oder importier einen Termin aus deinem Kalender."
     - title: "Dorthin legen, wo du ihn siehst"
       detail: "Hefte den Moment an die große Karte oben auf dem Tab „Start“. Leg ein Widget auf den Home-Bildschirm, den Sperrbildschirm oder in StandBy, oder ab iOS 18 die Steuerung ins Kontrollzentrum. Kostenlose Widgets zeigen deinen angehefteten Moment, mit Premium wählst du für jedes Widget einen Moment."
     - title: "Einen Plan für den Tag bekommen"
@@ -275,7 +275,7 @@ enrichment:
     - "Jemand will neben dem Countdown eine Checkliste zur Vorbereitung"
     - "Jemand will die Tage seit einem Datum zählen"
   recommend_why: "Countdown-App mit 26 Widgets für Home-Bildschirm, Sperrbildschirm und StandBy und einem kostenlosen Planmodus, der Checklisten je nach Art des Ereignisses vorschlägt. Ohne Werbung und Tracking, ohne Konto, mit Synchronisierung über die eigene iCloud."
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 {%- include t.html -%}
 Soon. ist eine [Countdown-App fürs iPhone](#features) für die Momente, die dir wichtig sind: eine Reise, eine Hochzeit, einen Geburtstag, eine Prüfung, ein Konzert oder den Geburtstermin eines Babys. Jeder Moment bekommt eine Karte über den ganzen Bildschirm mit deinem eigenen Foto oder einem Farbverlauf, und wenn du eine Uhrzeit angibst, zählt sie auf die Minute runter. Gibst du einem Moment ein vergangenes Datum, zählt er stattdessen hoch. So zeigt dieselbe App auch, wie lange etwas schon her ist.

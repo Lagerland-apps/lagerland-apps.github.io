@@ -137,7 +137,7 @@ value_points:
 
 features:
   - title: "Your photo behind the countdown"
-    description: "Use a photo of your own, a curated photo for the kind of event, or a gradient, then crop it to fit. Pick from 11 themes, 3 of them free. Premium adds a gallery of up to 10 photos per moment."
+    description: "Use a photo of your own and crop it to fit, or pick a gradient. Pick from 11 themes, 3 of them free. Premium adds a gallery of up to 10 photos per moment."
   - title: "Plan mode"
     description: "Every moment can have a checklist and a timeline of milestones. Soon. suggests a starter plan for trips, weddings, birthdays, exams, work, holidays, health, a baby, concerts, and sport, and \"Reset to suggestions\" brings it back. Premium adds reminders for plan items."
   - title: "Count up as well as down"
@@ -147,9 +147,9 @@ features:
   - title: "The forecast for your big day"
     description: "Add a place to a moment, and once the date is within 7 days, Soon. shows the Apple Weather forecast for it. Premium."
   - title: "Search the way you'd say it"
-    description: "Type \"trip in july\", \"birthdays this year\", or \"last summer\" to find moments and memories. Search runs on your iPhone."
+    description: "Type \"trip in july\" or \"wedding 2027\" to find moments and memories. Search runs on your iPhone."
   - title: "Calendar import, Siri, and Spotlight"
-    description: "Turn an event from your calendar into a countdown with a tap. Ask Siri \"How many days until my trip in Soon.\", and find your moments in Spotlight. Premium can also add a countdown to your calendar."
+    description: "Turn an event from your calendar into a countdown with a tap. Ask Siri \"How many days until my trip in Soon.\", and find your moments in Spotlight."
   - title: "Daily notes"
     description: "With Premium, a short note each day that changes as the date gets closer, in a Calm or Playful tone. The notes come from templates on your iPhone, not from AI."
 
@@ -158,7 +158,7 @@ how_it_works:
   intro: "What happens between adding a moment and the day it counts down to."
   steps:
     - title: "Add a moment"
-      detail: "Tap + and answer \"What are you counting down to?\" with a title and a date, plus a time if you want the countdown to run to the minute. Pick an icon, a theme, and a photo. Or import an event from your calendar."
+      detail: "Tap + and answer \"What's the moment?\" with a title and a date, plus a time if you want the countdown to run to the minute. Pick an icon, a theme, and a photo. Or import an event from your calendar."
     - title: "Put it where you'll see it"
       detail: "Pin the moment to the hero card at the top of Home. Add a widget to your Home Screen, Lock Screen, or StandBy, or the Control Center control on iOS 18. Free widgets show your pinned moment; with Premium you choose a moment for each widget."
     - title: "Get a plan for the day"
@@ -310,7 +310,7 @@ related_journal:
 # links into the page sections, the privacy policy, and the comparisons.
 show_body: true
 about_heading: "What Soon. does: countdowns, plans, widgets, and memories"
-last_updated: 2026-10-29
+last_updated: 2026-10-30
 ---
 Soon. is a [countdown app for iPhone](#features) for the moments you care about: a trip, a wedding, a birthday, an exam, a concert, or a baby's due date. Each moment gets a full-screen card with your own photo or a gradient theme, and a time if you want it to count down to the minute. Give a moment a past date and it counts up instead, so the same app keeps track of the days since something began.
 
