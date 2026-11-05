@@ -207,6 +207,22 @@
     "de": "/de/apps/chessful/support/",
     "en": "/apps/chessful/support/"
   },
+  "/apps/clippet/": {
+    "de": "/de/apps/clippet/",
+    "en": "/apps/clippet/"
+  },
+  "/apps/clippet/privacy/": {
+    "de": "/de/apps/clippet/privacy/",
+    "en": "/apps/clippet/privacy/"
+  },
+  "/apps/clippet/support/": {
+    "de": "/de/apps/clippet/support/",
+    "en": "/apps/clippet/support/"
+  },
+  "/apps/clippet/terms/": {
+    "de": "/de/apps/clippet/terms/",
+    "en": "/apps/clippet/terms/"
+  },
   "/apps/earnlock/": {
     "de": "/de/apps/earnlock/",
     "en": "/apps/earnlock/"

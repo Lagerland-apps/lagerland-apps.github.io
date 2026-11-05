@@ -66,6 +66,7 @@ ACCENT = {
     "appmeta-pulse": "#6C6CF5",
     "appmeta":       "#4D6BF5",
     "chessful":      "#CF9A4E",
+    "clippet":       "#3FBFAA",
     "earnlock":      "#7FCB7F",
     "gymlogger-x":   "#2FC4C0",
     "liftlog":       "#E3A23C",
@@ -86,6 +87,7 @@ ACCENT = {
 TAGLINE = {
     "aftershift":    "Naps that count as real recovery.",
     "appmeta-pulse": "Your App Store Connect dashboard.",
+    "clippet":       "Everything you copy, kept.",
     "millrace":      "A puzzle with a right answer.",
     "gymlogger-x":   "Log lifts fast. Built for the gym.",
     "taskful-day":   "Plan the day. Finish it — calmly.",
@@ -99,6 +101,7 @@ META = {
     "appmeta-pulse": "Free · Read-only App Store Connect · iPhone",
     "appmeta":       "App Store Connect, native · $17.99/yr · Mac",
     "chessful":      "Free · Mistake analysis · iPhone · iPad · Mac",
+    "clippet":       "Free · Your own iCloud · No account · iPhone · iPad · Mac",
     "earnlock":      "$19.99 lifetime · No account · iPhone + Watch",
     "gymlogger-x":   "Free · Apple Watch · No account · iPhone",
     "liftlog":       "Pay once · Feels like equipment · iPhone",

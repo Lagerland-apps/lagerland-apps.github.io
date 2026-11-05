@@ -64,9 +64,13 @@
 {%- assign i18n_versions = site.data.i18n_map[page.ref] | default: site.data.i18n_map[page.url] -%}
 {%- comment %} Canonical is always the page's own URL; a page of a language that is not live yet keeps it (it is noindex,
   not a duplicate) but gets no hreflang. {% endcomment -%}
-{%- unless page.noindex %}
+{%- comment %} An English page set to noindex (404, an unreleased app) has no canonical; a translated page always keeps
+  its own, noindex or not, as scripts/seo-audit.py requires. {% endcomment -%}
+{%- assign head_canon = true -%}
+{%- if page.noindex -%}{%- assign head_canon_lang = page.lang | default: "en" -%}{%- if head_canon_lang == "en" -%}{%- assign head_canon = false -%}{%- endif -%}{%- endif -%}
+{%- if head_canon %}
 <link rel="canonical" href="{{ page_url }}">
-{%- endunless %}
+{%- endif %}
 {%- unless head_noindex %}
 {%- if i18n_versions %}
   {%- for _lp in site.data.locales -%}{%- assign _lc = _lp[0] -%}

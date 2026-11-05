@@ -14,6 +14,9 @@
     price_tier      name of the paid tier (default "Premium")
     price_override  replaces the standard line; may use tokens (see tokens.html)
     free_tier       false when there is no free tier (changes the schema lowPrice rule)
+    prelaunch_platforms  only for an app that is not live yet (status other than "live"): the platforms the master
+                    file (MASTER.md) marks as pending, e.g. ["iOS", "iPadOS", "macOS"]. The catalog lists live
+                    platforms only, so without this an unreleased page has none. Ignored once the catalog has any.
 {%- endcomment -%}
 {%- assign f_lang = page.lang | default: site.lang | default: "en" -%}
 {%- assign f_str = site.data.locales[f_lang].strings | default: site.data.locales.en.strings -%}
@@ -23,6 +26,7 @@
 
 {%- comment %} ---- platforms ---- {%- endcomment -%}
 {%- assign f_platforms = f_cat.platforms | default: empty -%}
+{%- if f_platforms.size == 0 and include.app.status != "live" and include.app.prelaunch_platforms -%}{%- assign f_platforms = include.app.prelaunch_platforms -%}{%- endif -%}
 {%- comment %} "A", "A and B", "A, B, and C": for running sentences (strings.serial_comma is "," in English, "" in German). {%- endcomment -%}
 {%- assign f_platforms_and = "" -%}
 {%- for f_pl in f_platforms -%}

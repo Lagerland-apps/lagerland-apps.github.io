@@ -1,0 +1,169 @@
+---
+layout: privacy
+
+# The app links this URL from its purchase screen (Privacy Policy), and App Store
+# Connect's privacy policy URL points here, so App Review opens it before release.
+#
+# Every statement below is checked against the app's APP_BLUEPRINT.md §5 and §6
+# (verified against the code on 2026-11-05): no account, no developer server, no
+# analytics, no ads, no third-party code (ClipboardKit declares no dependencies);
+# SwiftData store in the App Group; sync only to the user's own CloudKit private
+# database; link previews via LPMetadataProvider with the Fetch Link Previews
+# switch and the local/credential skip rules; Google and carrier pages only on a
+# tap; Google Translate only as the Mac fallback after a warning; the keyboard
+# and widgets make no network requests; backups are unencrypted and leave out
+# card-number clips; privacy manifests declare no tracking and no collected data.
+#
+# UNLISTED pre-launch: see the note in _apps/clippet.md. Remove `sitemap: false`
+# and `noindex: true` on launch. The URL itself must stay live.
+sitemap: false
+noindex: true
+
+seo:
+  title: "Clippet Privacy Policy: No Account, No Tracking"
+  description: "Clippet's privacy policy: no account, no ads, no analytics. Your clips stay on your devices and in your own iCloud. What leaves the device and when."
+  keywords:
+    - "Clippet privacy policy"
+    - "Clippet privacy"
+    - "Clippet data collection"
+    - "clipboard manager privacy"
+    - "private clipboard app"
+
+title: "Privacy Policy"
+app_name: "Clippet"
+slug: clippet
+last_updated: 2026-11-05
+
+overview: >
+  Clippet is a clipboard manager for iPhone, iPad and Mac, made by Lagerland Apps.
+  What you copy can be anything: an address, a message, a code, a photo. So Clippet
+  is built to keep it with you. It has no account system, no server of its own, no
+  analytics and no advertising, and it contains no third-party code. This policy
+  explains what Clippet stores, where it stores it, the few moments something
+  leaves your device, and the choices you have.
+
+data_collection: none
+
+data_storage: >
+  Clippet stores your clips on your device: their content (text, links, images,
+  videos, PDFs, audio, files and code), thumbnails, link previews, the names, tags
+  and boards you give them, custom actions, auto-delete times, whether a clip holds
+  a card number, how it arrived (a copy, a drop, the share sheet), and on the Mac
+  the app you copied it from. They live in a database inside the app's own
+  container on the device, which Clippet's share extension, action extension,
+  keyboard and widgets also read. Your settings, your last five searches and
+  Clippet Pro's status are kept on the device too. Temporary files for previews,
+  drags and shares are deleted once they are no longer needed. Clippet does not
+  use the Keychain. Deleting the app removes this data from that device. If you
+  back up your device to iCloud or a computer, Clippet's data may be included in
+  that backup under your Apple settings.
+
+icloud_sync:
+  - >
+    iCloud Sync is on by default and can be turned off in Settings › iCloud Sync &amp;
+    Backup. While it is on, your clips, boards, tags, names, custom actions,
+    auto-delete times and two settings (Keep History and Auto-Delete Sensitive
+    Clips) are stored in your own private iCloud database through Apple's CloudKit,
+    so they reach your other devices signed in to the same Apple Account. Apple
+    stores this data under its own privacy policy. Lagerland Apps has no access to
+    your private iCloud database and cannot read, copy or delete what is in it.
+  - >
+    Clips saved through the share sheet, the Save to Clippet action or the
+    keyboard's Save button are uploaded the next time Clippet runs. A deletion,
+    including an auto-delete, syncs to every device.
+
+third_parties: >
+  Clippet contains no third-party analytics, advertising, attribution,
+  crash-reporting or tracking code, and its privacy manifests declare no
+  tracking, no tracking domains and no collected data. Apart from your own iCloud,
+  data leaves your device in these cases only.
+  <strong>Link previews:</strong> when you save a web link, Clippet asks that page
+  for its title, icon and image, the way a browser would. The website sees the
+  request and your IP address; the request carries only the link. Clippet never
+  does this for local or private addresses, links with a user name, or links that
+  carry a password, token, key or similar code, and it stops if a redirect leads to
+  one. Turn off Settings › Capture › Fetch Link Previews and Clippet never contacts a
+  copied link's website.
+  <strong>Actions you tap:</strong> a Smart Action can open the clip's own link,
+  Apple Maps for an address, a Google search for a flight or a web search, or a
+  carrier's tracking page (UPS, FedEx, USPS or DHL) for a parcel. These open only
+  when you tap them, and that website's own privacy practices then apply. On the
+  Mac, if the built-in translation cannot translate a clip, Clippet offers to open
+  Google Translate and tells you first that up to 2,000 characters of the text
+  will be sent to Google. On iPhone and iPad, translation uses Apple's translation
+  sheet.
+  <strong>Purchases:</strong> Clippet Pro is sold through the App Store. Apple
+  handles the payment, the receipt and Restore Purchases under its own privacy
+  policy; Clippet only asks the App Store which plan your Apple Account holds and
+  never sees your payment details.
+  <strong>What you share:</strong> a clip you copy, drag, share or back up goes
+  only where you send it.
+
+your_choices:
+  - >
+    You decide what Clippet keeps. Settings › Capture turns automatic saving on or
+    off, and Types to Save turns each kind of clip on or off. On iPhone and iPad,
+    iOS asks before Clippet reads a copy from another app, and the Paste from Other
+    Apps setting (Ask, Deny or Allow) on Clippet's page in the Settings app is
+    yours to change.
+  - >
+    You decide how long it keeps it. Delete any clip, set a clip to delete itself
+    after a time or on a date, or let Keep History remove clips you have not used in
+    24 hours, 7 days or 30 days. Pinned clips and clips on a board are kept until you
+    remove them. Deletions sync to all your devices while iCloud Sync is on.
+  - >
+    Create Backup saves your clips, boards and tags to a file in a place you choose.
+    The file is not encrypted, so Clippet leaves out clips that hold a card number
+    and clips past their auto-delete time. Store the file somewhere you trust.
+  - >
+    App Lock puts Clippet behind Face ID, Touch ID, Optic ID or your device
+    passcode. The system handles the check; Clippet learns only whether it passed.
+    While App Lock is on, the widgets show no clips and the keyboard follows the
+    lock.
+
+your_rights:
+  - >
+    Lagerland Apps does not hold any of your personal data: your clips stay on your
+    devices and in your own iCloud, which only you control. You can see, back up,
+    rename and delete all of it in the app at any time. A clip you delete while
+    iCloud Sync is on is removed from your iCloud too, and your device's iCloud
+    storage settings let you remove what Clippet keeps there.
+    If you write to us, we use your email only to answer you. You can ask us to
+    delete that correspondence, and you have the right to complain to your data
+    protection authority.
+
+sensitive_data: >
+  Clippet does not try to keep passwords. A copy that its source app marks as
+  concealed, transient or auto-generated, as password managers mark the passwords
+  they copy, is skipped before anything in it is read. This works only for apps
+  that mark their copies. When Clippet recognizes a payment card number in text,
+  a link, code or an image, it flags the clip and offers to delete it after 30
+  minutes (or another time you set); nothing is deleted until you tap Enable. The
+  widgets, the keyboard and the Mac's menu bar and Quick Paste show "Card number
+  hidden" instead of the number. When you copy a card number or a one-time code
+  back out of Clippet, it is marked as concealed, kept off Universal Clipboard and
+  cleared from the clipboard after 2 minutes (on the Mac, while Clippet is
+  running). Clippet asks for these permissions only when you use the feature that
+  needs them: Face ID, Touch ID or Optic ID for App Lock; adding to your photo
+  library for Save to Photos; Contacts for Add to Contacts; Reminders for a
+  Reminder action; and on the Mac, Accessibility for pasting into other apps. The
+  Clippet keyboard needs Allow Full Access to show your clips. It reads them from
+  Clippet's database on the device, never reads what you type in the field, makes
+  no network requests and does not store what you search in it. Clippet collects
+  no health, location or biometric data.
+
+children: >
+  Clippet is a general-purpose utility and is not directed at children under the
+  age of 13. It has no accounts, chat or advertising, and because it collects no
+  personal information from anyone, it collects none from children. Purchases go
+  through Apple, so parents can manage them with Ask to Buy, Family Sharing and
+  Screen Time.
+
+changes: >
+  We may update this privacy policy from time to time. Any change will be
+  published on this page before the version of Clippet it describes is released,
+  and the date above will change with it.
+
+contact_email: "support@lagerland.app"
+back_url: "/apps/clippet/"
+---

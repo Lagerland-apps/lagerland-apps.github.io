@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-29T20:02:13.812Z",
+    "generated_at": "2026-11-05T18:24:46.981Z",
     "source": "App Store Connect API",
     "live_app_count": 20,
     "territories": [
@@ -1877,6 +1877,85 @@
           }
         }
       ]
+    },
+    "clippet": {
+      "live": false,
+      "platforms": [],
+      "app_price": {
+        "free": true,
+        "prices": {
+          "USA": {
+            "amount": "0.0",
+            "currency": "USD"
+          },
+          "DEU": {
+            "amount": "0.0",
+            "currency": "EUR"
+          },
+          "FRA": {
+            "amount": "0.0",
+            "currency": "EUR"
+          },
+          "ITA": {
+            "amount": "0.0",
+            "currency": "EUR"
+          },
+          "ESP": {
+            "amount": "0.0",
+            "currency": "EUR"
+          },
+          "PRT": {
+            "amount": "0.0",
+            "currency": "EUR"
+          },
+          "CHN": {
+            "amount": "0.0",
+            "currency": "CNY"
+          },
+          "JPN": {
+            "amount": "0",
+            "currency": "JPY"
+          },
+          "KOR": {
+            "amount": "0",
+            "currency": "KRW"
+          },
+          "IDN": {
+            "amount": "0",
+            "currency": "IDR"
+          },
+          "MEX": {
+            "amount": "0.0",
+            "currency": "MXN"
+          },
+          "BRA": {
+            "amount": "0.0",
+            "currency": "BRL"
+          },
+          "POL": {
+            "amount": "0.0",
+            "currency": "PLN"
+          },
+          "TUR": {
+            "amount": "0.0",
+            "currency": "TRY"
+          },
+          "NLD": {
+            "amount": "0.0",
+            "currency": "EUR"
+          },
+          "RUS": {
+            "amount": "0.0",
+            "currency": "RUB"
+          },
+          "SAU": {
+            "amount": "0.0",
+            "currency": "SAR"
+          }
+        }
+      },
+      "plans": {},
+      "other_iaps": []
     },
     "earnlock": {
       "live": true,
