@@ -10,7 +10,7 @@ reviewing any French page. Every decision a translator would otherwise make diff
 | Setup (config default, locales.yml block, `_data/i18n/fr.yml`, sitemap and feed stubs, `day_one` date string) | done 2026-11-07 |
 | Keyword research (Tier 1) | done 2026-11-07 (Search Console has almost no French queries yet; see Keywords) |
 | Tier 1 pages | done 2026-11-08: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/fr.yml`), /fr/llms.txt, /fr/llms-full.txt, 21 OG cards |
-| Live | no (`live: false`) |
+| Live | yes, `live: true` since 2026-11-08 (Tier 1; go-live commit not yet pushed) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 56 s before French (2026-11-07), 80 s with French Tier 1 (2026-11-08, clean run, `--profile`). Hot spot: `_includes/tx-app.html` 44 s over 968 calls, then footer 30 s: each new language makes it worse; worth a map lookup before the next language |
 

@@ -78,7 +78,7 @@ fr:
   og_locale: fr_FR
   dir: ltr
   native_name: "Français"
-  live: false
+  live: true
   # Checked 2026-11-07 in the French App Store (apps.apple.com/fr): "9,99 €" with a no-break space (U+00A0),
   # the same character Apple uses before € in every French price row. Thousands also take U+00A0 there ("100 000").
   currencies:
