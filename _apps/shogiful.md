@@ -325,8 +325,8 @@ about_heading: "What Shogiful does: shogi play, game analysis, and training"
 
 ratings:
   value: "3.4"
-  count: 17
-  last_synced: "2026-11-06"
+  count: 18
+  last_synced: "2026-11-07"
 related_apps: ["xiangqiful", "chessful"]
 last_updated: 2026-10-30
 ---
