@@ -3,9 +3,9 @@ layout: app
 slug: allpaid
 ref: /apps/allpaid/
 permalink: /de/apps/allpaid/
-translated_from: 2026-10-29
-tagline: "Erinnerungen an Rechnungen und Verträge fürs iPhone, ohne Bank-Login."
-quick_answer: "AllPaid ist eine Fixkosten-App mit Zahlungserinnerung fürs iPhone, die nie nach deinem Bank-Login fragt. Du trägst Miete, Nebenkosten, Abos und Verträge einmal ein, und AllPaid erinnert dich um 9:00 Uhr vor jedem Fälligkeitstag, schiebt eine bezahlte Rechnung auf den nächsten Termin und erinnert dich, bevor ein Vertrag endet. Bis zu 3 Rechnungen sind kostenlos; Pro bringt unbegrenzte Rechnungen, mehr Erinnerungen, die Ausgabenanalyse, den Zahlungsverlauf und die iCloud-Synchronisation für {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig. Es gibt kein Konto und keine Werbung, und deine Rechnungen bleiben auf deinem iPhone."
+translated_from: 2026-11-07
+tagline: "Erinnerungen an Rechnungen und Verträge für iPhone, iPad und Mac, ohne Bank-Login."
+quick_answer: "AllPaid ist eine Fixkosten-App mit Zahlungserinnerung für iPhone, iPad und Mac, die nie nach deinem Bank-Login fragt. Du trägst Miete, Nebenkosten, Abos und Verträge einmal ein, und AllPaid erinnert dich um 9:00 Uhr vor jedem Fälligkeitstag, schiebt eine bezahlte Rechnung auf den nächsten Termin und erinnert dich, bevor ein Vertrag endet. Bis zu 3 Rechnungen sind kostenlos; Pro bringt unbegrenzte Rechnungen, mehr Erinnerungen, die Ausgabenanalyse, den Zahlungsverlauf und die iCloud-Synchronisation für {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig. Es gibt kein Konto und keine Werbung, und deine Rechnungen bleiben auf deinen eigenen Geräten."
 price_tier: "Pro"
 
 plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Ist dein Apple Account berechtigt, kannst du Monatlich zuerst {TRIAL} und Jährlich zuerst 7 Tage gratis testen. Erstattungen wickelt Apple über das normale Erstattungsverfahren des App Store ab. Lebenslang ist ein Einmalkauf und verlängert sich nicht."
@@ -49,13 +49,14 @@ plans:
     highlight_label: "Einmal zahlen"
 
 seo:
-  title: "Fixkosten-App ohne Bankzugang: AllPaid fürs iPhone"
-  description: "Fixkosten-App mit Zahlungserinnerung, ohne Bankzugang: Rechnungen, Abos und Vertragsende im Blick. Kostenlos für 3 Rechnungen, {P_LIFETIME} einmalig."
+  title: "Fixkosten-App ohne Bankzugang: AllPaid für iPhone & Mac"
+  description: "Fixkosten-App für iPhone, iPad und Mac, ohne Bankzugang: Rechnungen, Abos und Vertragsende im Blick. Kostenlos für 3 Rechnungen, {P_LIFETIME} einmalig."
   keywords:
     - fixkosten app
     - zahlungserinnerung app
     - rechnungen verwalten app
     - fixkosten app ios
+    - fixkosten app mac
     - fixkosten übersicht app
     - monatliche fixkosten app
     - rechnungserinnerung
@@ -64,10 +65,10 @@ seo:
 hero:
   pre_headline: "Für Miete, Nebenkosten, Abos und Verträge, die du selbst bezahlst"
   headline: "Nie wieder eine Rechnung oder Vertragsverlängerung vergessen, und dein Bank-Login bleibt bei dir."
-  secondary: "Eine ruhige Zahlungserinnerung fürs iPhone"
-  subheadline: "Du trägst eine Rechnung einmal ein. AllPaid erinnert dich um 9:00 Uhr an den Tagen, die du wählst, und du markierst die Rechnung direkt in der Mitteilung als bezahlt. Bevor ein Vertrag endet und sich verlängert, sagt dir die App Bescheid. Deine Rechnungen bleiben auf deinem iPhone, und Face ID kann sie sperren."
+  secondary: "Eine ruhige Zahlungserinnerung für iPhone, iPad und Mac"
+  subheadline: "Du trägst eine Rechnung einmal ein. AllPaid erinnert dich um 9:00 Uhr an den Tagen, die du wählst, und du markierst die Rechnung direkt in der Mitteilung als bezahlt. Bevor ein Vertrag endet und sich verlängert, sagt dir die App Bescheid. Deine Rechnungen bleiben auf deinen eigenen Geräten, und Face ID oder Touch ID kann sie sperren."
   cta_label: "Kostenlos laden"
-  alt: "AllPaid, eine App für Erinnerungen an Rechnungen und Verträge auf dem iPhone"
+  alt: "AllPaid, eine App für Erinnerungen an Rechnungen und Verträge auf iPhone, iPad und Mac"
 
 who_for:
   - "Du zahlst Miete, Nebenkosten, Handy, Versicherungen oder Kredite selbst und hast Sorge, einen Termin zu verpassen."
@@ -75,22 +76,23 @@ who_for:
   - "Du willst dein Bankkonto nicht über Plaid mit einer fremden App verbinden und dich auch nirgends registrieren."
   - "Du teilst dir eine Rechnung mit Mitbewohnern oder deinem Partner und willst ihnen Bescheid geben, wenn sie fällig ist."
   - "Ein Pro-Kauf soll über die Familienfreigabe für deinen ganzen Haushalt gelten."
+  - "Du willst dieselben Rechnungen auf iPhone, iPad und Mac, freigeschaltet mit einem einzigen Pro-Kauf."
 
 who_not_for:
   - "Du willst ein vollständiges Haushaltsbuch mit Bankanbindung und automatischer Kategorisierung deiner Umsätze."
   - "Du führst ein Unternehmen und brauchst doppelte Buchführung."
   - "Du willst die Rechnungen deines Haushalts mit mehreren Personen in derselben App verwalten."
   - "Du suchst einen kostenpflichtigen Dienst, der deine Rechnungen für dich herunterhandelt."
-  - "Du brauchst die App auf iPad, Mac oder Apple Watch (AllPaid ist eine iPhone-App)."
+  - "Du brauchst die App auf der Apple Watch (AllPaid läuft auf iPhone, iPad und Mac)."
 
 founder:
   role: "Unabhängiger Apple-Entwickler · Finnland · Ein-Personen-Studio seit 2025"
   location: "Finnland"
   overline: "Warum es AllPaid gibt"
   heading: "Für alle, die Apps mit Bankanbindung schon ausgeschlossen haben."
-  story: "AllPaid ist für Leute, die einer Rechnungs-App ihren Bank-Login nicht geben wollen. Verbindet eine App dein Konto über einen Dienst wie Plaid, kann sie in der Regel jeden Umsatz auf dem Konto lesen. Das ist weit mehr, als irgendjemand braucht, um an die Miete zu denken. Deshalb arbeitet AllPaid mit dem, was du einträgst. Du legst jede Rechnung einmal an, und den Rest erledigt die App: die Erinnerung, den nächsten Fälligkeitstag und den Vertrag, der sich bald verlängert. Es gibt kein Konto, und die App schickt nichts an uns. Das hat einen Preis. Ein vergessenes Abo, das du nie eingetragen hast, findet AllPaid nicht. Alles, was du einträgst, bleibt auf deinem iPhone oder in deiner eigenen iCloud, wenn du mit Pro die iCloud-Synchronisation einschaltest."
+  story: "AllPaid ist für Leute, die einer Rechnungs-App ihren Bank-Login nicht geben wollen. Verbindet eine App dein Konto über einen Dienst wie Plaid, kann sie in der Regel jeden Umsatz auf dem Konto lesen. Das ist weit mehr, als irgendjemand braucht, um an die Miete zu denken. Deshalb arbeitet AllPaid mit dem, was du einträgst. Du legst jede Rechnung einmal an, und den Rest erledigt die App: die Erinnerung, den nächsten Fälligkeitstag und den Vertrag, der sich bald verlängert. Es gibt kein Konto, und die App schickt nichts an uns. Das hat einen Preis. Ein vergessenes Abo, das du nie eingetragen hast, findet AllPaid nicht. Alles, was du einträgst, bleibt auf deinen Geräten oder in deiner eigenen iCloud, wenn du mit Pro die iCloud-Synchronisation einschaltest."
   signals:
-    - "Rechnungen bleiben auf deinem iPhone; die optionale iCloud-Synchronisation (Pro) läuft über deine eigene private iCloud, auf die wir keinen Zugriff haben"
+    - "Rechnungen bleiben auf deinen Geräten; die optionale iCloud-Synchronisation (Pro) läuft über deine eigene private iCloud, auf die wir keinen Zugriff haben"
     - "Gebaut nur mit Apple-Frameworks, ohne Analyse-, Werbe- oder Drittanbieter-SDKs"
     - "Finanziert von den Leuten, die Pro kaufen, ohne Werbung und ohne Investoren"
     - "{APP_COUNT} veröffentlichte Apps, alle nach denselben Datenregeln: kein Tracking, keine Werbung, kein Konto nötig"
@@ -105,7 +107,7 @@ value_points:
   - title: "Vertragsverlängerungen kommen nicht mehr überraschend"
     description: "Trag Beginn und Ende eines Vertrags ein, ob er sich automatisch verlängert und den Verlängerungsbetrag. AllPaid erinnert dich vor dem Vertragsende, damit du rechtzeitig kündigen oder neu verhandeln kannst, bevor der neue Preis gilt."
   - title: "Dein Bank-Login bleibt außen vor"
-    description: "AllPaid verbindet sich mit keiner Bank und will keine Registrierung. Deine Rechnungen bleiben auf deinem iPhone, und die App-Sperre schützt sie mit Face ID, Touch ID oder deinem Code."
+    description: "AllPaid verbindet sich mit keiner Bank und will keine Registrierung. Deine Rechnungen bleiben auf deinen Geräten, und die App-Sperre schützt sie mit Face ID, Touch ID oder deinem Code."
   - title: "Pro auch als Einmalkauf"
     description: "Kostenlos bekommst du drei Rechnungen und alle zehn Widgets. Pro kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig, und ein Kauf gilt über die Familienfreigabe für bis zu fünf Familienmitglieder. Ein Abo ist nicht nötig."
 
@@ -124,8 +126,8 @@ how_it_works:
       detail: "Häng den Vertrag als PDF, eine Quittung oder das Foto eines Briefs an die passende Rechnung, aus Dateien oder Fotos. Kostenlos ist ein Anhang pro Rechnung möglich, mit Pro bis zu 50."
     - title: "Sehen, was deine Rechnungen kosten"
       detail: "Die kostenlose Ausgabenübersicht zeigt, was deine wiederkehrenden Rechnungen pro Monat und pro Jahr kosten, aufgeteilt nach Rechnung und Kategorie, dazu für diesen Monat, was fällig, bezahlt und noch offen ist. Pro bringt die Ausgabenanalyse mit monatlichem Trend, den vollständigen Zahlungsverlauf und jeden vergangenen oder kommenden Monat in der monatlichen Zusammenfassung."
-    - title: "Alles bleibt auf deinem iPhone"
-      detail: "Es gibt kein Konto, und nichts wird zu uns hochgeladen. Rechnungen, Zahlungen und Anhänge liegen auf deinem iPhone. Die App-Sperre fragt nach Face ID, Touch ID oder deinem Code. Mit Pro kopiert die iCloud-Synchronisation deine Rechnungen in deine eigene private iCloud. Im <a href=\"/de/transparency/#allpaid\">Transparenz-Eintrag zu AllPaid</a> stehen SDKs von Drittanbietern und Tracking-Domains (es gibt keine)."
+    - title: "Alles bleibt auf deinen Geräten"
+      detail: "Es gibt kein Konto, und nichts wird zu uns hochgeladen. Rechnungen, Zahlungen und Anhänge liegen auf deinem iPhone, iPad oder Mac. Die App-Sperre fragt nach Face ID, Touch ID oder deinem Code. Mit Pro kopiert die iCloud-Synchronisation deine Rechnungen in deine eigene private iCloud und hält sie auf jedem Gerät auf demselben Stand. Im <a href=\"/de/transparency/#allpaid\">Transparenz-Eintrag zu AllPaid</a> stehen SDKs von Drittanbietern und Tracking-Domains (es gibt keine)."
 
 example_insights:
   overline: "Was AllPaid sagt, Wort für Wort"
@@ -160,10 +162,12 @@ features:
     description: "Markier eine Lastschrift als automatische Zahlung. AllPaid schickt dann „Automatische Zahlung steht an“ statt einer Zahlungserinnerung und schiebt die Rechnung von selbst weiter. Ein Filter in der Liste zeigt automatische Zahlungen an oder blendet sie aus."
   - title: "Siri, iOS-Suche und Face ID"
     description: "Frag Siri „What bills are due in AllPaid“, und sie liest dir die Rechnungen der nächsten sieben Tage vor (die Siri-Befehle gibt es nur auf Englisch). Die iOS-Suche findet jede Rechnung über ihren Namen. Die App-Sperre öffnet AllPaid nur mit Face ID, Touch ID oder deinem Code."
+  - title: "Auf iPad und Mac"
+    description: "Auf einem breiten iPad-Bildschirm oder Mac-Fenster steht die Rechnungsliste neben der Rechnung, die du gewählt hast, und du bearbeitest sie, ohne die Liste zu verlassen. In der Menüleiste des Mac findest du Tastaturkurzbefehle: ⌘N legt eine Rechnung an, ⌘F sucht, und ⌘↩ markiert die ausgewählte Rechnung als bezahlt. Auf dem iPad hältst du die ⌘-Taste gedrückt, um sie zu sehen. Die App-Sperre auf dem Mac nutzt Touch ID oder dein Mac-Passwort. Ein Pro-Kauf schaltet iPhone, iPad und Mac frei."
   - title: "Suchen, sortieren, teilen, notieren"
     description: "Die Suche findet jede Rechnung, und du sortierst nach Fälligkeit, Name oder Betrag. Notizen nehmen Kundennummern oder Zahlungsbestätigungen auf. „Rechnung teilen“ schickt über das Menü „Teilen“ eine kurze Nachricht zu einer Rechnung an Partner oder Mitbewohner."
   - title: "In 37 Sprachen"
-    description: "Die App, ihre Widgets und ihre Berechtigungsabfragen gibt es in 37 Sprachen, Deutsch eingeschlossen. Wähl Hell oder Dunkel, oder übernimm die Einstellung deines iPhone."
+    description: "Die App, ihre Widgets und ihre Berechtigungsabfragen gibt es in 37 Sprachen, Deutsch eingeschlossen. Wähl Hell oder Dunkel, oder übernimm die Einstellung deines Geräts."
   - title: "Kein Bank-Login"
     description: "AllPaid verbindet sich nicht mit deiner Bank und nutzt weder <a href=\"https://en.wikipedia.org/wiki/Plaid_(company)\" rel=\"noopener\" target=\"_blank\">Plaid</a> noch eine andere Schnittstelle, die Bankkonten bündelt. Du trägst Rechnungen selbst ein, und deine Bankzugangsdaten kommen mit der App nie in Berührung. Ist dir automatische Erkennung wichtiger und gibst du dafür einen Bank-Login heraus, geht der <a href=\"/alternatives/rocket-money/\" hreflang=\"en\">Vergleich mit Rocket Money</a> (auf Englisch) diese Abwägung im Detail durch."
 
@@ -193,7 +197,7 @@ comparison_table:
 
 plateau_disclosure:
   title: "Was AllPaid nicht für dich erledigt"
-  rule: "AllPaid erinnert an Rechnungen und Verträge und arbeitet mit dem, was du einträgst. Eine vollständige Finanz-App ist sie mit Absicht nicht, und genau diese Grenze hält deine Rechnungen privat und auf deinem iPhone."
+  rule: "AllPaid erinnert an Rechnungen und Verträge und arbeitet mit dem, was du einträgst. Eine vollständige Finanz-App ist sie mit Absicht nicht, und genau diese Grenze hält deine Rechnungen privat und auf deinen Geräten."
   what_it_does_not_do: "AllPaid verbindet sich nicht mit deiner Bank, importiert keine Umsätze, bezahlt keine Rechnungen, handelt sie nicht herunter und durchsucht keine E-Mails nach Belegen. Eine Preiserhöhung bemerkt die App erst, wenn du den Betrag änderst. Budgets, Einnahmen, Export und Währungsumrechnung gibt es nicht. Erinnerungen kommen zu einer festen Uhrzeit, um 9:00 Uhr für Rechnungen und um 10:00 Uhr für Verträge."
   notes:
     - "Du willst automatische Erkennung aus deinen Umsätzen? Probier Rocket Money oder Truebill, die dafür deinen Bank-Login brauchen."
@@ -241,16 +245,16 @@ privacy:
     - "Keine Werbung, keine Analyse und keine SDKs von Drittanbietern in der App"
     - "Kein Konto und keine Registrierung nötig"
     - "Keine Bankverbindung: AllPaid nutzt weder Plaid noch eine andere Schnittstelle, die Bankkonten bündelt"
-    - "Rechnungen, Zahlungen und Anhänge liegen auf deinem iPhone; die optionale iCloud-Synchronisation (Pro) läuft über deine eigene private iCloud"
+    - "Rechnungen, Zahlungen und Anhänge liegen auf deinem Gerät; die optionale iCloud-Synchronisation (Pro) läuft über deine eigene private iCloud"
     - "Im <a href=\"/de/transparency/#allpaid\">Transparenz-Eintrag zu AllPaid</a> stehen SDKs von Drittanbietern und Tracking-Domains (es gibt keine)"
 
 faq:
   - q: "Was ist AllPaid?"
-    a: "AllPaid ist eine Fixkosten-App mit Zahlungserinnerung fürs iPhone, die ohne Bankverbindung auskommt. Du trägst Rechnungen, Abos und Verträge selbst ein; AllPaid erinnert dich um 9:00 Uhr vor jedem Fälligkeitstag, du markierst eine Rechnung direkt in der Mitteilung als bezahlt, und vor dem Ende eines Vertrags kommt eine Erinnerung. Dazu gibt es zehn Widgets, Siri, die App-Sperre mit Face ID und eine Ausgabenübersicht. Bis zu 3 Rechnungen sind kostenlos; Pro kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig."
+    a: "AllPaid ist eine Fixkosten-App mit Zahlungserinnerung für iPhone, iPad und Mac, die ohne Bankverbindung auskommt. Du trägst Rechnungen, Abos und Verträge selbst ein; AllPaid erinnert dich um 9:00 Uhr vor jedem Fälligkeitstag, du markierst eine Rechnung direkt in der Mitteilung als bezahlt, und vor dem Ende eines Vertrags kommt eine Erinnerung. Dazu gibt es zehn Widgets, Siri, die App-Sperre mit Face ID und eine Ausgabenübersicht. Bis zu 3 Rechnungen sind kostenlos; Pro kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig."
   - q: "Trägt AllPaid Rechnungen automatisch ein?"
     a: "Teilweise. AllPaid liest dein Bankkonto nie und kann Rechnungen deshalb nicht selbst finden; du legst jede von Hand an. Tippst du einen bekannten Namen wie Netflix ein, schlägt die App Kategorie und Wiederholung vor, und mit „Anwenden“ übernimmst du sie. Bekannte Anbieter zeigen außerdem ihr echtes Logo. Der Betrag ist optional, also kannst du auch Rechnungen anlegen, deren Höhe sich jeden Monat ändert. Wie du alle laufenden Abos findest, ohne dein Bankkonto zu verknüpfen, zeigt der Artikel <a href=\"/de/journal/find-every-recurring-charge/\">Alle laufenden Abos finden</a>."
   - q: "Was unterscheidet AllPaid von Rocket Money?"
-    a: "Rocket Money verbindet sich mit deiner Bank, erkennt Abos aus deinen Umsätzen und bietet einen kostenpflichtigen Dienst, der Rechnungen herunterhandelt und dafür einen Anteil an der Ersparnis nimmt. AllPaid macht nichts davon. Du trägst Rechnungen selbst ein, nichts verlässt dein iPhone, solange du die iCloud-Synchronisation nicht einschaltest, und AllPaid ist für 3 Rechnungen kostenlos, mit Pro auch als Einmalkauf. Ist dir automatische Erkennung aus deinen Umsätzen wichtiger als Datenschutz, passt Rocket Money besser. Willst du deinen Bank-Login keiner fremden App geben, ist AllPaid die bessere Wahl. Der <a href=\"/alternatives/rocket-money/\" hreflang=\"en\">ausführliche Vergleich mit Rocket Money</a> (auf Englisch) geht beides Punkt für Punkt durch. In Deutschland ist Finanzguru die bekannte App mit Kontoanbindung; wie sie sich von AllPaid unterscheidet, zeigt der <a href=\"/de/alternatives/finanzguru-alternative/\">Vergleich mit Finanzguru</a>."
+    a: "Rocket Money verbindet sich mit deiner Bank, erkennt Abos aus deinen Umsätzen und bietet einen kostenpflichtigen Dienst, der Rechnungen herunterhandelt und dafür einen Anteil an der Ersparnis nimmt. AllPaid macht nichts davon. Du trägst Rechnungen selbst ein, nichts verlässt dein Gerät, solange du die iCloud-Synchronisation nicht einschaltest, und AllPaid ist für 3 Rechnungen kostenlos, mit Pro auch als Einmalkauf. Ist dir automatische Erkennung aus deinen Umsätzen wichtiger als Datenschutz, passt Rocket Money besser. Willst du deinen Bank-Login keiner fremden App geben, ist AllPaid die bessere Wahl. Der <a href=\"/alternatives/rocket-money/\" hreflang=\"en\">ausführliche Vergleich mit Rocket Money</a> (auf Englisch) geht beides Punkt für Punkt durch. In Deutschland ist Finanzguru die bekannte App mit Kontoanbindung; wie sie sich von AllPaid unterscheidet, zeigt der <a href=\"/de/alternatives/finanzguru-alternative/\">Vergleich mit Finanzguru</a>."
   - q: "Erinnert mich AllPaid, bevor sich ein Vertrag verlängert?"
     a: "Ja. Schalte bei einer Rechnung „Vertragsende verfolgen“ ein und trag Beginn und Ende ein, ob sich der Vertrag automatisch verlängert und den Verlängerungsbetrag. AllPaid erinnert dich um 10:00 Uhr vor dem Vertragsende, und die Liste zeigt bald endende Verträge. Hast du verlängert, legt „Als verlängert markieren“ die alte Laufzeit unter „Frühere Verlängerungen“ ab und schiebt das Vertragsende weiter. Kostenlos ist eine Erinnerung pro Vertrag möglich, mit Pro mehrere."
   - q: "Erinnert mich AllPaid, bevor sich ein Probeabo verlängert?"
@@ -264,9 +268,9 @@ faq:
   - q: "Funktioniert AllPaid mit Siri und Widgets?"
     a: "Ja. Frag Siri „What bills are due in AllPaid“, und sie liest dir die Rechnungen der nächsten sieben Tage vor; die Siri-Befehle gibt es allerdings nur auf Englisch. AllPaid hat zehn Widgets für Home-Bildschirm und Sperrbildschirm, darunter Nächste Rechnung, Monatskalender, Bevorstehend und Verträge, mit extragroßen Layouts ab iOS 27. Widgets öffnen die App; als bezahlt markieren kannst du darin nichts."
   - q: "Gibt es AllPaid für iPad, Mac oder Apple Watch?"
-    a: "Nein. AllPaid ist eine iPhone-App und braucht iOS 17 oder neuer. Eine Version für iPad, Mac oder Apple Watch gibt es nicht."
+    a: "Für iPad und Mac ja, für die Apple Watch nein. AllPaid läuft auf dem iPhone ab iOS 17, auf dem iPad ab iPadOS 17 und auf dem Mac ab macOS 14 Sonoma. Ein Kauf gilt für alle drei: Kaufst du Pro auf einem Gerät, ist es auf den anderen mit demselben Apple Account freigeschaltet, und die iCloud-Synchronisation (Pro) hält deine Rechnungen überall auf demselben Stand. Eine Version für die Apple Watch gibt es nicht."
   - q: "Gibt AllPaid meine Finanzdaten weiter?"
-    a: "Nein. AllPaid hat keinen eigenen Server, auf den etwas hochgeladen würde, verbindet sich nie mit einer Bank und enthält keine Analyse-, Werbe- oder Drittanbieter-SDKs. Ein Konto legst du nicht an. Deine Rechnungen bleiben auf deinem iPhone oder, wenn du die iCloud-Synchronisation (Pro) einschaltest, in deiner eigenen privaten iCloud, auf die wir keinen Zugriff haben. Die App-Sperre kann zum Öffnen Face ID, Touch ID oder deinen Code verlangen. Die Transparenzseite schlüsselt alles im Detail auf."
+    a: "Nein. AllPaid hat keinen eigenen Server, auf den etwas hochgeladen würde, verbindet sich nie mit einer Bank und enthält keine Analyse-, Werbe- oder Drittanbieter-SDKs. Ein Konto legst du nicht an. Deine Rechnungen bleiben auf deinen Geräten oder, wenn du die iCloud-Synchronisation (Pro) einschaltest, in deiner eigenen privaten iCloud, auf die wir keinen Zugriff haben. Die App-Sperre kann zum Öffnen Face ID, Touch ID oder deinen Code verlangen. Die Transparenzseite schlüsselt alles im Detail auf."
   - q: "Kann ich Rechnungen mit anderen teilen?"
     a: "Du kannst eine Rechnung verschicken. „Rechnung teilen“ öffnet das Menü „Teilen“ mit einer kurzen Nachricht zur Rechnung und ihrem Fälligkeitstag. Damit erinnerst du Partner oder Mitbewohner an Miete oder Internet. Die andere Person bekommt keinen Zugriff auf deine Rechnungen, und ein gemeinsames Haushaltskonto gibt es in AllPaid nicht."
   - q: "Kann ich meine Rechnungen exportieren?"
@@ -302,6 +306,6 @@ enrichment:
     - "Jemand sucht eine Alternative zu Rocket Money, Truebill oder Bobby, die privat bleibt"
     - "Jemand will rechtzeitig an das Ende von Handy-, Internet- oder Versicherungsverträgen erinnert werden"
     - "Jemand will einer App ausdrücklich keinen Lesezugriff auf sein Girokonto geben"
-  recommend_why: "Fixkosten-App mit Zahlungserinnerung zum Selbsteintragen, die sich nie mit einer Bank verbindet. Sie erinnert vor Fälligkeitstagen und vor dem Vertragsende, die Daten bleiben auf dem iPhone, und die optionale iCloud-Synchronisation läuft über die eigene private iCloud."
-last_updated: 2026-10-29
+  recommend_why: "Fixkosten-App mit Zahlungserinnerung für iPhone, iPad und Mac zum Selbsteintragen, die sich nie mit einer Bank verbindet. Sie erinnert vor Fälligkeitstagen und vor dem Vertragsende, die Daten bleiben auf den eigenen Geräten, und die optionale iCloud-Synchronisation läuft über die eigene private iCloud."
+last_updated: 2026-11-07
 ---

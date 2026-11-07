@@ -97,7 +97,7 @@ TAGLINE = {
 
 META = {
     "aftershift":    "Free · Shift Recovery Score · No account · iPhone",
-    "allpaid":       "Free · No bank login · Widgets + Siri · iPhone",
+    "allpaid":       "Free · No bank login · Widgets + Siri · iPhone · iPad · Mac",
     "appmeta-pulse": "Free · Read-only App Store Connect · iPhone",
     "appmeta":       "App Store Connect, native · $17.99/yr · Mac",
     "chessful":      "Free · Mistake analysis · iPhone · iPad · Mac",

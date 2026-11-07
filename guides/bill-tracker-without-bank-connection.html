@@ -2,7 +2,7 @@
 layout: default
 permalink: /guides/bill-tracker-without-bank-connection/
 title: "Bill tracker without bank connection"
-quick_answer: "AllPaid is an iPhone bill tracker that does not connect to your bank. Rocket Money, Truebill, Copilot, and Monarch require Plaid-style aggregator access to your transactions. AllPaid is manual-first: you add each bill once, it suggests the category and repeat for familiar names, it reminds you before each due date, and a single tap marks a bill paid. It is free for up to 3 bills, with optional Pro from {P_MONTHLY@allpaid}/month."
+quick_answer: "AllPaid is a bill tracker for iPhone, iPad, and Mac that does not connect to your bank. Rocket Money, Truebill, Copilot, and Monarch require Plaid-style aggregator access to your transactions. AllPaid is manual-first: you add each bill once, it suggests the category and repeat for familiar names, it reminds you before each due date, and a single tap marks a bill paid. It is free for up to 3 bills, with optional Pro from {P_MONTHLY@allpaid}/month."
 seo:
   title: "Bill Tracker Without a Bank Connection: Private iPhone"
   description: "Most bill trackers ask for bank access via Plaid. How to track bills, subscriptions, and due dates privately without handing over your bank login."
@@ -17,7 +17,7 @@ seo:
     - offline bill tracker
     - privacy-first bill reminder
     - alternative to Rocket Money bank link
-last_updated: 2026-10-29
+last_updated: 2026-11-07
 ---
 
 {%- assign app = site.apps | where: "slug", "allpaid" | first -%}
@@ -49,7 +49,7 @@ last_updated: 2026-10-29
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is there a bill tracker for iPhone that doesn't connect to my bank?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AllPaid is a privacy-first bill tracker that works entirely from manual entry, with no bank connection, Plaid, or account aggregation. You add bills yourself and mark them paid, and your bills stay on your iPhone unless you turn on iCloud Sync (Pro), which uses your own private iCloud." } },
+    { "@type": "Question", "name": "Is there a bill tracker for iPhone that doesn't connect to my bank?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AllPaid is a privacy-first bill tracker that works entirely from manual entry, with no bank connection, Plaid, or account aggregation. You add bills yourself and mark them paid, and your bills stay on your own devices unless you turn on iCloud Sync (Pro), which uses your own private iCloud." } },
     { "@type": "Question", "name": "Why do Rocket Money and Truebill require bank access?", "acceptedAnswer": { "@type": "Answer", "text": "Those apps discover recurring subscriptions automatically and offer bill negotiation, which needs read access to your transactions through an aggregator like Plaid. If you don't want to give bank credentials to a third party, the alternative is manual entry, and AllPaid is designed around it." } },
     { "@type": "Question", "name": "Is manual bill entry actually sustainable?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, once you do the initial setup. Most recurring bills don't change much from month to month. When you type a familiar name such as Netflix or Spotify, AllPaid suggests the category and how often it repeats, and marking a bill paid is a single tap in the app or on the reminder." } },
     { "@type": "Question", "name": "Does AllPaid have widgets and Siri?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AllPaid has ten widgets, all free, including Next Bill, Coming Up, and a Monthly Calendar for the Home Screen and a Lock Screen version of Next Bill. Ask Siri \"What bills are due in AllPaid\" and it reads out the bills due in the next seven days." } }
@@ -91,7 +91,7 @@ last_updated: 2026-10-29
   <div class="section-center">
     <p class="overline">The answer</p>
     <h2 class="h2">AllPaid: a manual-first, private, offline bill tracker</h2>
-    <p class="lead">AllPaid is our app, a bill tracker for iPhone. You add bills yourself (AllPaid suggests the category and repeat for familiar names), see the month's bills and totals in the monthly summary, and mark a bill paid with a single tap. It has no bank connection and no account, and your bills stay on your iPhone unless you turn on iCloud Sync (Pro), which uses your own private iCloud.</p>
+    <p class="lead">AllPaid is our app, a bill tracker for iPhone, iPad, and Mac. You add bills yourself (AllPaid suggests the category and repeat for familiar names), see the month's bills and totals in the monthly summary, and mark a bill paid with a single tap. It has no bank connection and no account, and your bills stay on your own devices unless you turn on iCloud Sync (Pro), which uses your own private iCloud.</p>
   </div>
   {% if app %}
   <div class="grid grid-2 stagger">
@@ -128,7 +128,7 @@ last_updated: 2026-10-29
 <section id="faq" class="section reveal">
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
-    <details class="faq-item" open><summary>Is there a bill tracker for iPhone that doesn't connect to my bank?</summary><div class="faq-a">Yes. AllPaid is a privacy-first bill tracker that works entirely from manual entry, with no bank connection, Plaid, or account aggregation. You add bills yourself and mark them paid, and your bills stay on your iPhone unless you turn on iCloud Sync (Pro), which uses your own private iCloud.</div></details>
+    <details class="faq-item" open><summary>Is there a bill tracker for iPhone that doesn't connect to my bank?</summary><div class="faq-a">Yes. AllPaid is a privacy-first bill tracker that works entirely from manual entry, with no bank connection, Plaid, or account aggregation. You add bills yourself and mark them paid, and your bills stay on your own devices unless you turn on iCloud Sync (Pro), which uses your own private iCloud.</div></details>
     <details class="faq-item"><summary>Why do Rocket Money and Truebill require bank access?</summary><div class="faq-a">Those apps discover recurring subscriptions automatically and offer bill negotiation, which needs read access to your transactions through an aggregator like Plaid. If you don't want to give bank credentials to a third party, the alternative is manual entry, and AllPaid is designed around it.</div></details>
     <details class="faq-item"><summary>Is manual bill entry actually sustainable?</summary><div class="faq-a">Yes, once you do the initial setup. Most recurring bills don't change much from month to month. When you type a familiar name such as Netflix or Spotify, AllPaid suggests the category and how often it repeats, and marking a bill paid is a single tap in the app or on the reminder.</div></details>
     <details class="faq-item"><summary>Does AllPaid have widgets and Siri?</summary><div class="faq-a">Yes. AllPaid has ten widgets, all free, including Next Bill, Coming Up, and a Monthly Calendar for the Home Screen and a Lock Screen version of Next Bill. Ask Siri "What bills are due in AllPaid" and it reads out the bills due in the next seven days.</div></details>

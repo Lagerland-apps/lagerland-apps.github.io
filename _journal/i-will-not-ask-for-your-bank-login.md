@@ -13,12 +13,12 @@ seo:
     - "no bank link finance app"
     - "allpaid"
 date: 2026-01-31
-last_updated: 2026-10-29
+last_updated: 2026-11-07
 lede: "It's the last day of January and the bank-aggregator apps are advertising themselves into every podcast in America. The pitch is convenience. The price is your read access to your own checking account. AllPaid deliberately skips the bank connection."
 quick_answer: "Bill tracker apps that ask for bank logins route credentials through aggregators like Plaid, which can usually read every transaction in the account until you revoke access, far more than the recurring charges the user wants to see. AllPaid never connects to a bank. You add bills by hand, they stay on your iPhone, and there is no account to create."
 faq:
   - q: "Is there a bill tracker that does not require connecting to my bank?"
-    a: "AllPaid is a manual-first iOS bill and subscription tracker that never connects to a bank or to an aggregator like Plaid. You type each bill in once and the app keeps it on your iPhone. There is no account, so AllPaid never asks for your email. Nothing leaves the phone unless you share a bill or turn on iCloud Sync (Pro), which uses your own private iCloud."
+    a: "AllPaid is a manual-first bill and subscription tracker for iPhone, iPad, and Mac that never connects to a bank or to an aggregator like Plaid. You type each bill in once and the app keeps it on your device. There is no account, so AllPaid never asks for your email. Nothing leaves the device unless you share a bill or turn on iCloud Sync (Pro), which uses your own private iCloud."
   - q: "What does Plaid actually see when a bill app asks me to log in to my bank?"
     a: "Plaid stores credentials or an OAuth token derived from them and gains persistent read access to every transaction in the account, not only recurring charges. That access continues until you revoke it. Aggregators are regulated businesses, and the data also feeds their wider products, which onboarding screens rarely mention."
   - q: "Will AllPaid catch forgotten subscriptions I do not remember paying for?"

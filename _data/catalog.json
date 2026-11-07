@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-05T18:24:46.981Z",
+    "generated_at": "2026-11-07T09:05:08.665Z",
     "source": "App Store Connect API",
     "live_app_count": 20,
     "territories": [
@@ -483,7 +483,9 @@
     "allpaid": {
       "live": true,
       "platforms": [
-        "iOS"
+        "iOS",
+        "iPadOS",
+        "macOS"
       ],
       "app_price": {
         "free": true,

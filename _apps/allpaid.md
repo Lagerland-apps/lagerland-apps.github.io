@@ -2,8 +2,8 @@
 layout: app
 slug: allpaid
 name: "AllPaid"
-tagline: "Bill and contract reminders for iPhone, with no bank login."
-quick_answer: "AllPaid is a bill and contract reminder for iPhone that never asks for your bank login. You add rent, utilities, subscriptions, and contracts once, and AllPaid reminds you at 9:00 before each due date, moves a bill to its next date when you mark it paid, and reminds you before a contract ends. It is free for up to 3 bills; Pro adds unlimited bills, more reminders, Spending Analytics, payment history, and iCloud Sync for {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once. There is no account and there are no ads, and your bills stay on your iPhone."
+tagline: "Bill and contract reminders for iPhone, iPad, and Mac, with no bank login."
+quick_answer: "AllPaid is a bill and contract reminder for iPhone, iPad, and Mac that never asks for your bank login. You add rent, utilities, subscriptions, and contracts once, and AllPaid reminds you at 9:00 before each due date, moves a bill to its next date when you mark it paid, and reminds you before a contract ends. It is free for up to 3 bills; Pro adds unlimited bills, more reminders, Spending Analytics, payment history, and iCloud Sync for {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once. There is no account and there are no ads, and your bills stay on your own devices."
 category: finance
 status: live
 
@@ -61,11 +61,13 @@ icon: "/assets/icons/allpaid.png"
 og_image: "/assets/og/allpaid.png"
 
 seo:
-  title: "AllPaid: Bill Tracker for iPhone, No Bank Login"
-  description: "Bill reminder app for iPhone with no bank login. Track due dates, subscriptions, and contract renewals. Free for 3 bills; {P_LIFETIME} lifetime option."
+  title: "AllPaid: Bill Tracker for iPhone & Mac, No Bank Login"
+  description: "Bill reminder for iPhone, iPad, and Mac with no bank login. Track due dates, subscriptions, and contract renewals. Free for 3 bills; {P_LIFETIME} lifetime."
   keywords:
     - bill tracker app
     - bill tracker iPhone no bank login
+    - bill tracker Mac
+    - bill reminder app iPad
     - bill reminder app
     - subscription tracker iPhone
     - bill due date reminder
@@ -86,10 +88,10 @@ seo:
 hero:
   pre_headline: "For rent, utilities, subscriptions, and contracts you pay by hand"
   headline: "Never forget a bill or a contract renewal, and keep your bank login to yourself."
-  secondary: "A calm bill reminder for iPhone"
-  subheadline: "Add a bill once. AllPaid reminds you at 9:00 on the days you choose, lets you mark it paid straight from the notification, and tells you before a contract ends and renews. Your bills stay on your iPhone, and Face ID can lock them."
+  secondary: "A calm bill reminder for iPhone, iPad, and Mac"
+  subheadline: "Add a bill once. AllPaid reminds you at 9:00 on the days you choose, lets you mark it paid straight from the notification, and tells you before a contract ends and renews. Your bills stay on your own devices, and Face ID or Touch ID can lock them."
   cta_label: "Download Free"
-  alt: "AllPaid, a bill and contract reminder app for iPhone"
+  alt: "AllPaid, a bill and contract reminder app for iPhone, iPad, and Mac"
 
 who_for:
   - "You pay rent, utilities, phone, insurance, or loans by hand and worry about missing one"
@@ -97,13 +99,14 @@ who_for:
   - "You won't connect your bank account to a third-party app through Plaid, and you don't want another sign-up"
   - "You split a bill with a flatmate or partner and want to send them a note when it's due"
   - "You want one Pro purchase to cover your household through Family Sharing"
+  - "You want the same bills on your iPhone, iPad, and Mac, unlocked by one Pro purchase"
 
 who_not_for:
   - "You want full budgeting with bank connections and automatic transaction categorization"
   - "You run a business and need double-entry accounting"
   - "You want several people managing the same household bills together"
   - "You want a paid service to negotiate your bills down for you"
-  - "You need the app on iPad, Mac, or Apple Watch (AllPaid is an iPhone app)"
+  - "You need the app on Apple Watch (AllPaid runs on iPhone, iPad, and Mac)"
 
 alternatives_to:
   - "Rocket Money"
@@ -120,9 +123,9 @@ founder:
   location: "Finland"
   overline: "Why we built this"
   heading: "For people who have already ruled out bank-linked apps."
-  story: "AllPaid is for people who won't give a bill tracker their bank login. When an app links your bank through an aggregator such as Plaid, it can usually read every transaction in the account, which is far more than anyone needs to remember that rent is due. So AllPaid works from what you type in. You add each bill once, and the app handles the rest: the reminder, the next due date, and the contract that is about to renew. There is no account, and the app sends nothing to us. The trade-off is real. AllPaid can't find a forgotten subscription you never entered. Everything you do enter stays on your iPhone, or in your own iCloud if you turn on iCloud Sync with Pro."
+  story: "AllPaid is for people who won't give a bill tracker their bank login. When an app links your bank through an aggregator such as Plaid, it can usually read every transaction in the account, which is far more than anyone needs to remember that rent is due. So AllPaid works from what you type in. You add each bill once, and the app handles the rest: the reminder, the next due date, and the contract that is about to renew. There is no account, and the app sends nothing to us. The trade-off is real. AllPaid can't find a forgotten subscription you never entered. Everything you do enter stays on your own devices, or in your own iCloud if you turn on iCloud Sync with Pro."
   signals:
-    - "Bills stay on your iPhone; optional iCloud Sync (Pro) uses your own private iCloud, which we have no access to"
+    - "Bills stay on your own devices; optional iCloud Sync (Pro) uses your own private iCloud, which we have no access to"
     - "Built on Apple frameworks only, with no analytics, ad, or third-party SDKs"
     - "Paid for by the people who buy Pro, with no ads and no investors"
     - "{APP_COUNT} live apps in the catalogue, all following the same data rules: no tracking, no ads, no required accounts"
@@ -138,7 +141,7 @@ value_points:
   - title: "Contract renewals you see coming"
     description: "Add a contract's start and end dates, whether it auto-renews, and the renewal amount. AllPaid reminds you before it ends, so you can cancel or renegotiate before the new price starts."
   - title: "Your bank login stays out of it"
-    description: "AllPaid doesn't connect to a bank and doesn't ask you to sign up. Your bills stay on your iPhone, and App Lock can put them behind Face ID, Touch ID, or your passcode."
+    description: "AllPaid doesn't connect to a bank and doesn't ask you to sign up. Your bills stay on your own devices, and App Lock can put them behind Face ID, Touch ID, or your passcode."
   - title: "A lifetime option for Pro"
     description: "Free covers three bills and all ten widgets. Pro is {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once, and one purchase covers up to five family members through Family Sharing. No subscription required."
 
@@ -157,8 +160,8 @@ how_it_works:
       detail: "Attach the PDF contract, a receipt, or a photo of a letter to the bill it belongs to, from Files or Photos. Free keeps one attachment per bill; Pro keeps up to 50."
     - title: "See what your bills cost"
       detail: "The free Spending overview shows the monthly and yearly cost of your recurring bills, split by bill and category, with this month's total due, paid, and remaining. Pro adds Spending Analytics with a monthly trend, full payment history, and any past or future month in the monthly summary."
-    - title: "Keep it on your iPhone"
-      detail: "There is no account and nothing is uploaded to us. Bills, payments, and attachments live on your iPhone. App Lock asks for Face ID, Touch ID, or your passcode. With Pro, iCloud Sync copies your bills to your own private iCloud. See the per-app <a href=\"/transparency/#allpaid\">transparency entry</a> for third-party SDKs and tracking domains (there are none)."
+    - title: "Keep it on your own devices"
+      detail: "There is no account and nothing is uploaded to us. Bills, payments, and attachments live on your iPhone, iPad, or Mac. App Lock asks for Face ID, Touch ID, or your passcode. With Pro, iCloud Sync copies your bills to your own private iCloud and keeps them the same on each device. See the per-app <a href=\"/transparency/#allpaid\">transparency entry</a> for third-party SDKs and tracking domains (there are none)."
 
 example_insights:
   overline: "What AllPaid says, word for word"
@@ -193,10 +196,12 @@ features:
     description: "Flag a direct debit as Auto-pay. AllPaid sends \"Auto-pay coming up\" instead of a reminder to pay and moves the bill forward on its own. A list filter shows or hides auto-pay bills."
   - title: "Siri, iOS Search, and Face ID"
     description: "Ask Siri \"What bills are due in AllPaid\" and it reads out the bills due in the next seven days. iOS Search finds any bill by name. App Lock opens AllPaid only with Face ID, Touch ID, or your passcode."
+  - title: "On iPad and Mac"
+    description: "On a wide iPad screen or Mac window, the bill list sits beside the bill you picked, so you can edit it without leaving the list. The Mac menu bar has keyboard shortcuts: ⌘N adds a bill, ⌘F searches, and ⌘↩ marks the selected bill paid. On iPad, hold ⌘ to see them. App Lock on the Mac uses Touch ID or your Mac password. One Pro purchase unlocks iPhone, iPad, and Mac."
   - title: "Search, sort, share, and notes"
     description: "Search finds any bill, and you can sort by due date, name, or amount. Notes hold account numbers or confirmation IDs. Share bill sends a short message about a bill to a partner or flatmate through the share sheet."
   - title: "In 37 languages"
-    description: "The app, its widgets, and its permission prompts are translated into 37 languages. Choose light or dark, or follow your iPhone's setting."
+    description: "The app, its widgets, and its permission prompts are translated into 37 languages. Choose light or dark, or follow your device's setting."
   - title: "No bank login"
     description: "AllPaid does not connect to your bank and does not use <a href=\"https://en.wikipedia.org/wiki/Plaid_(company)\" rel=\"noopener\" target=\"_blank\">Plaid</a> or any other bank-aggregation API. You add bills yourself, and your bank credentials never touch the app. If you'd rather have automatic detection and don't mind handing over a bank login, the <a href=\"/alternatives/rocket-money/\">Rocket Money comparison</a> walks through the trade-off in detail."
 
@@ -244,7 +249,7 @@ comparison_table:
 
 plateau_disclosure:
   title: "What AllPaid won't do for you"
-  rule: "AllPaid is a bill and contract reminder that works from what you enter. It is deliberately not a full personal-finance app, and that limit is what keeps your bills private and on your iPhone."
+  rule: "AllPaid is a bill and contract reminder that works from what you enter. It is deliberately not a full personal-finance app, and that limit is what keeps your bills private and on your own devices."
   what_it_does_not_do: "AllPaid will not connect to your bank, import transactions, pay bills, negotiate them down, or scan your email for receipts. It will not notice a price rise until you update the amount. It has no budgets, income tracking, export, or currency conversion. Reminders come at a set time, 9:00 for bills and 10:00 for contracts."
   notes:
     - "Want automatic detection from your transactions? Try Rocket Money or Truebill, which need your bank login to do it."
@@ -294,16 +299,16 @@ privacy:
     - "No ads, analytics, or third-party SDKs in the app"
     - "No account or sign-up required"
     - "No bank connection: AllPaid does not use Plaid or any bank-aggregation API"
-    - "Bills, payments, and attachments are stored on your iPhone; optional iCloud Sync (Pro) uses your own private iCloud"
+    - "Bills, payments, and attachments are stored on your device; optional iCloud Sync (Pro) uses your own private iCloud"
     - "See the per-app <a href=\"/transparency/#allpaid\">transparency entry</a> for third-party SDKs and tracking domains (there are none)"
 
 faq:
   - q: "What is AllPaid?"
-    a: "AllPaid is a bill and contract reminder for iPhone that works without a bank connection. You add bills, subscriptions, and contracts by hand; AllPaid reminds you at 9:00 before each due date, lets you mark a bill paid from the notification, and reminds you before a contract ends. It also has ten widgets, Siri, App Lock with Face ID, and a spending overview. It is free for up to 3 bills; Pro costs {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once."
+    a: "AllPaid is a bill and contract reminder for iPhone, iPad, and Mac that works without a bank connection. You add bills, subscriptions, and contracts by hand; AllPaid reminds you at 9:00 before each due date, lets you mark a bill paid from the notification, and reminds you before a contract ends. It also has ten widgets, Siri, App Lock with Face ID, and a spending overview. It is free for up to 3 bills; Pro costs {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once."
   - q: "Does AllPaid fill in bills automatically?"
     a: "Partly. AllPaid never reads your bank, so it can't find bills on its own; you add each one by hand. When you type a familiar name such as Netflix, it suggests the category and how often the bill repeats, and you tap Apply to use them. Popular providers also show their real logo. The amount is optional, so you can add a bill even when it changes from month to month."
   - q: "How is AllPaid different from Rocket Money?"
-    a: "Rocket Money connects to your bank, detects subscriptions from your transaction history, and offers a paid negotiation service that takes a percentage of any savings it finds. AllPaid does none of that. You add bills yourself, nothing leaves your iPhone unless you turn on iCloud Sync, and AllPaid is free for 3 bills with a one-time lifetime option for Pro. If automatic detection from transactions matters more to you than privacy, Rocket Money fits better. If you would rather not give your bank login to a third-party app, AllPaid is the better choice. The full Rocket Money alternative comparison goes through it line by line."
+    a: "Rocket Money connects to your bank, detects subscriptions from your transaction history, and offers a paid negotiation service that takes a percentage of any savings it finds. AllPaid does none of that. You add bills yourself, nothing leaves your device unless you turn on iCloud Sync, and AllPaid is free for 3 bills with a one-time lifetime option for Pro. If automatic detection from transactions matters more to you than privacy, Rocket Money fits better. If you would rather not give your bank login to a third-party app, AllPaid is the better choice. The full Rocket Money alternative comparison goes through it line by line."
   - q: "Can AllPaid remind me before a contract renews?"
     a: "Yes. Turn on Track contract end date for a bill and add the start and end dates, whether it auto-renews, and the renewal amount. AllPaid reminds you at 10:00 before the end date, and the list shows contracts ending soon. If you renew, Mark as renewed keeps the old period under Past Renewals and moves the end date forward. Free allows one reminder per contract; Pro allows several."
   - q: "Does AllPaid catch free trials before they auto-renew?"
@@ -317,9 +322,9 @@ faq:
   - q: "Does AllPaid work with Siri and widgets?"
     a: "Yes. Ask Siri \"What bills are due in AllPaid\" and it reads out the bills due in the next seven days. AllPaid has ten Home Screen and Lock Screen widgets, including Next Bill, Monthly Calendar, Coming Up, and Contracts, with extra-large layouts on iOS 27. Widgets open the app; they can't mark a bill paid."
   - q: "Does AllPaid work on iPad, Mac, or Apple Watch?"
-    a: "No. AllPaid is an iPhone app and needs iOS 17 or later. There is no iPad, Mac, or Apple Watch version."
+    a: "iPad and Mac, yes; Apple Watch, no. AllPaid runs on iPhone with iOS 17 or later, on iPad with iPadOS 17 or later, and on Mac with macOS 14 Sonoma or later. One purchase covers all three: Pro bought on one device unlocks the others signed in to the same Apple Account, and iCloud Sync (Pro) keeps your bills the same on each. There is no Apple Watch version."
   - q: "Does AllPaid share my financial data?"
-    a: "No. AllPaid has no server of its own to upload to, never connects to a bank, and carries no analytics, ad, or third-party SDKs. You don't create an account to use it. Your bills stay on your iPhone or, if you turn on iCloud Sync (Pro), in your own private iCloud, which we can't access. App Lock can require Face ID, Touch ID, or your passcode to open the app. The transparency page has the full breakdown."
+    a: "No. AllPaid has no server of its own to upload to, never connects to a bank, and carries no analytics, ad, or third-party SDKs. You don't create an account to use it. Your bills stay on your own devices or, if you turn on iCloud Sync (Pro), in your own private iCloud, which we can't access. App Lock can require Face ID, Touch ID, or your passcode to open the app. The transparency page has the full breakdown."
   - q: "Can I share bills with someone?"
     a: "You can send one. Share bill opens the iOS share sheet with a short message about the bill and when it's due, which works for reminding a partner or flatmate about rent or internet. The other person doesn't get access to your bills, and AllPaid has no shared household account."
   - q: "Can I export my bills?"
@@ -335,13 +340,13 @@ support:
 
 release:
   first_release: "2026-01-01"
-  last_updated: "2026-05-13"
+  last_updated: "2026-11-07"
   last_audited: "2026-05-13"
 
 ratings:
   value: "4.9"
   count: 7
   last_synced: "2026-10-19"
-last_updated: 2026-10-30
+last_updated: 2026-11-07
 ---
-AllPaid is a bill and contract reminder for iPhone, made for people who won't hand a bank login to a third-party app. You add each bill by hand with its due date and how often it repeats, from one-time to yearly or every N days, weeks, or months. Type a familiar name and AllPaid suggests the category and repeat. Reminders arrive at 9:00 before the due date, and you can mark a bill paid or snooze it straight from the notification. Contracts get their own fields: start and end dates, auto-renewal, and the renewal amount, with a reminder before the contract ends. PDFs and photos attach to the bill they belong to. The free Spending overview shows what your bills cost per month and per year; Pro adds Spending Analytics, full payment history, unlimited bills, and iCloud Sync through your own private iCloud. AllPaid has ten widgets, works with Siri, locks with Face ID, and is translated into 37 languages. It has no ads and no account, and it never connects to a bank. It is free for up to 3 bills, with Pro from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once.
+AllPaid is a bill and contract reminder for iPhone, iPad, and Mac, made for people who won't hand a bank login to a third-party app. You add each bill by hand with its due date and how often it repeats, from one-time to yearly or every N days, weeks, or months. Type a familiar name and AllPaid suggests the category and repeat. Reminders arrive at 9:00 before the due date, and you can mark a bill paid or snooze it straight from the notification. Contracts get their own fields: start and end dates, auto-renewal, and the renewal amount, with a reminder before the contract ends. PDFs and photos attach to the bill they belong to. The free Spending overview shows what your bills cost per month and per year; Pro adds Spending Analytics, full payment history, unlimited bills, and iCloud Sync through your own private iCloud. AllPaid has ten widgets, works with Siri, locks with Face ID, and is translated into 37 languages. It has no ads and no account, and it never connects to a bank. It is free for up to 3 bills, with Pro from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once.
