@@ -92,6 +92,20 @@ layout: default
     {% endif %}
   </section>
 
+  <!-- REFUND REQUESTS (optional: intro, items list, closing) -->
+  {% if page.refund_requests %}
+  <section class="privacy-block">
+    <h2 class="h3">{{ t.privacy_h_refunds }}</h2>
+    {% if page.refund_requests.intro %}<p>{{ page.refund_requests.intro }}</p>{% endif %}
+    {% if page.refund_requests.items %}
+    <ul>
+      {% for item in page.refund_requests.items %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if page.refund_requests.closing %}<p>{{ page.refund_requests.closing }}</p>{% endif %}
+  </section>
+  {% endif %}
+
   <!-- YOUR CHOICES (optional: one string or a list of paragraphs) -->
   {% if page.your_choices %}
   <section class="privacy-block">
