@@ -263,3 +263,10 @@ Not checked: Magazines & Newspapers, Kids, other Games subcategories (Action, Ca
 | Delete data from iCloud (storage path) | Réglages > votre nom > iCloud > Stockage (ou « Gérer le stockage du compte ») > « Supprimer les données d'iCloud » | https://support.apple.com/fr-fr/108922 (checked 2026-11-07) | |
 | Manage / cancel subscriptions (path) | Réglages > votre nom > Abonnements > l'abonnement concerné > « Annuler l'abonnement » | https://support.apple.com/fr-fr/118428 ; https://support.apple.com/fr-fr/guide/iphone/iph4e3e7324f/ios | Trial note: "annulez-le au moins 24 heures avant la fin de la période d'essai" |
 | Request a refund | reportaproblem.apple.com > « J'aimerais » > « Demander un remboursement » | https://support.apple.com/fr-fr/118223 | |
+
+## Added during Tier 1 review (2026-11-08)
+
+| English | French as Apple writes it | Source | Note |
+|---|---|---|---|
+| Sleep stages Awake / REM / Core / Deep | éveil / sommeil paradoxal / sommeil lent / sommeil profond | https://support.apple.com/fr-fr/guide/watch/apd830528336/watchos (checked 2026-11-08) | Observa's French UI says « Noyau » for Core (app string); site prose uses Apple's « sommeil lent » |
+| Ask to Buy | « Demander l’autorisation d’achat » | https://support.apple.com/fr-fr/105055 (checked 2026-11-08 by the privacy reviewer) | Not « Autorisation d’achat » |

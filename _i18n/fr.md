@@ -9,10 +9,10 @@ reviewing any French page. Every decision a translator would otherwise make diff
 |---|---|
 | Setup (config default, locales.yml block, `_data/i18n/fr.yml`, sitemap and feed stubs, `day_one` date string) | done 2026-11-07 |
 | Keyword research (Tier 1) | done 2026-11-07 (Search Console has almost no French queries yet; see Keywords) |
-| Tier 1 pages | not started |
+| Tier 1 pages | done 2026-11-08: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/fr.yml`), /fr/llms.txt, /fr/llms-full.txt, 21 OG cards |
 | Live | no (`live: false`) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
-| Build time | 56 s before the French setup (the site has grown with German Tiers 2 to 4; 14 s was the German setup figure), about 60 to 70 s after it (local, 2026-11-07, other jobs running) |
+| Build time | 56 s before French (2026-11-07), 80 s with French Tier 1 (2026-11-08, clean run, `--profile`). Hot spot: `_includes/tx-app.html` 44 s over 968 calls, then footer 30 s: each new language makes it worse; worth a map lookup before the next language |
 
 ## Market and register
 
@@ -196,6 +196,17 @@ Details in fr-glossary.md. Most carry over from the German sheet's list; new fro
 - Shogiful: 8 opponent tiers in code vs the site's opponent count (as in the German sheet).
 - Tare: the French store IAP is « Chapitres II–X », which matches the site (the German note « Kapitel II–IV » looks stale).
 - WanderWiki: a weekly plan exists in the French store that the site does not list.
+- From the Tier 1 reviews (English wording kept on the French pages until the owner decides; details in the
+  session review logs, summarized in ~/Downloads/githubcode/fr-tier1-open-questions-2026-11-08.md):
+  EarnLock partial unlock and shield rule vs blueprint; GymLogger X « Coach IA » string; AfterShift's two scores
+  share one French UI string and its French Siri phrases may not ship; AllPaid « Services publics » vs « Charges »;
+  AllPaid on iPad and Mac (master) but missing from the English home FAQ's Mac list; Millrace undo packs called
+  « one-time purchases » in English value_points but consumable in the footnote; Millrace French store lists Mac
+  and Vision; Tare policy says Chapters II to IV, store says II to X; Tare language count (English 50, store 44);
+  AppMeta Pulse « Pro » vs no tier in the app, « 17 languages » = 17 localizations in 13 languages; AppMeta Apple
+  ASC menu names in French vs English on Pulse; Soon. baby timeline weeks (France counts in SA); Soon. free pin
+  limit implied but never stated; RightSplit tax/tip condition; Observa French screenshots 1, 2 and 10 address the
+  reader with tu; Chessful French notation letters; « Autoriser l’accès complet » unconfirmed.
 
 ## Tells to cut in French (TRANSLATION.md 8.2, plus what reviews find)
 
@@ -215,6 +226,19 @@ English says privacy-first); « vis-à-vis » for "side-by-side"; « créations 
 in a one-person studio's footer; « émis par » for a place of issue (« émis à »); « pub » in running copy (write
 « publicité »; « sans pub » only where it is the search phrase, e.g. a title).
 
+Found in the Tier 1 reviews (2026-11-08): « tournent sur » for "run on" (« fonctionnent sur »); « balayage » for a swipe; « vrai(e) » as a sales adjective (« une vraie gestion », « une vraie app Mac »: write « complète », « native »); noun calques such as « décaleur de phase » (use a verb); « soignants » for "nurses" (don't widen the audience); « un tap », « d’une pression » (write « d’un seul toucher », « d’une touche »); « cédez » for "reach for" (adds guilt); « jeu » for a set of screenshots (reads as "game": « jeu de screenshots »); « dès que » for "once" in a condition; « compter à l’envers » / « décompter » for counting up or ticking people off (opposite meaning); « application compte à rebours » in prose (write « application de compte à rebours »; the noun-noun form only in keywords); « celles et ceux » doublets for a singular English subject; a missing « ne » (« déclare aucun »); « séchez » for being stuck; store IAP names where the English means the Settings label; « que Apple » without elision; « un jour sur sept » for "every seventh day". In policies: « bien » that strengthens a statement (« a bien été livré »), « n’y avons pas accès » for "we don't have it", « prélèvements » for charges (« débits »), « si » + conditional (« si nous préférerions »), « moyens de paiement » for payment details (« données de paiement »), agreement after a mixed-gender list.
+
+## Decisions from the Tier 1 reviews (2026-11-08)
+
+- Apple's sleep stages in prose: éveil, sommeil paradoxal, sommeil lent, sommeil profond (Apple FR). Observa's UI label « Noyau » is not used in prose; AfterShift quotes its own UI labels (Éveillé, Léger, Profond, Paradoxal).
+- « Demander l’autorisation d’achat » for Ask to Buy (Apple FR, support.apple.com/fr-fr/105055).
+- Each app page may carry the FAQ « <app> existe-t-il/elle en français ? » (rulebook 6.2 local question; answered from the glossary verdict, naming the English-only gaps).
+- Support pages: « annuler abonnement <app> » only for the 17 apps that sell a subscription; `support_words` tightened so the support pages pick pricing, offline, sync and platform questions (3 to 6 per app).
+- The support hub states only what the English support page, layout and privacy pages state (no refund menu path of its own).
+- Tier names follow the French UI except AppMeta Pulse, which keeps the English site's « Pro » (the app has no tier name; owner question below).
+- Prices on comparison footnotes stay as the English page dates them (US App Store checks); no French competitor price was added.
+- The transparency page keeps Apple's two ATT button labels in one parenthesis (accurate per fr-apple-terms.md; owner may drop for strict parity).
+
 ## House rules carried over
 
 - No dashes; no roadmaps or dated promises; prices, counts, platforms and dates only through tokens and includes.
@@ -230,6 +254,14 @@ in a one-person studio's footer; « émis par » for a place of issue (« émis 
 | Page | Writer | Copy-editing + fact diff + glossary | Back-translation | Native review |
 |---|---|---|---|---|
 | `_data/i18n/fr.yml` | writer agent (Sonnet) with self copy-edit | reviewer agent 2026-11-07, 17 must-fix + 15 should-fix applied; site_title rewritten by the main session for the home query | n/a | no native review yet |
+| `fr/` home | writer agent | reviewer R1 2026-11-08: 2 must-fix, 5 should-fix | 2026-11-08, 55 claims, 3 mismatches fixed | no native review yet |
+| `fr/apps/` hub | writer agent | reviewer R1: 1 must-fix (extra guides button removed), 1 should-fix | n/a | no native review yet |
+| 21 app pages | one writer agent each | reviewers R2 to R8 2026-11-08 (copy-editing, fact diff, glossary, app catalogs checked for UI names) | blind back-translation per page 2026-11-08, mismatches fixed by the reviewers | no native review yet |
+| 21 support pages | 3 writer agents | reviewer R9 2026-11-08: all seo blocks rewritten; support_words string fixed by the main session | n/a | no native review yet |
+| 21 privacy policies + Clippet terms | 7 writer agents | reviewers RP-A to RP-E 2026-11-08, sentence-by-sentence legal diff; « si nous préférerions » fixed on 13 pages | n/a | no native review yet |
+| about | writer agent | reviewer R10 2026-11-08: 1 must-fix (gendered pronoun), 3 should-fix | 2026-11-08, 41 claims, 0 mismatches | no native review yet |
+| support hub, transparency, `_data/i18n_transparency/fr.yml` | writer agents | reviewer R10 2026-11-08: support hub refund path removed (English doesn't state it), 8 data-file term fixes | n/a | no native review yet |
+| /fr/llms.txt, /fr/llms-full.txt, OG cards | writer agent (45 routing lines) | main session checks (gate, i18n check) | n/a | no native review yet |
 
 ## Apps still on English screenshots
 
