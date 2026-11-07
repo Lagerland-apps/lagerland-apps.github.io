@@ -257,7 +257,7 @@ support_tip_subscriptions: "Si vous avez souscrit une formule payante, vous pouv
 support_tip_refunds: "Les remboursements des achats sur l’App Store sont gérés par Apple sur <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\">reportaproblem.apple.com</a>."
 support_tip_no_account: "{name} n’a ni inscription ni compte Lagerland : aucun mot de passe à réinitialiser, aucun compte à récupérer."
 # Mots-clés (minuscules, séparés par des virgules, dans la langue) qui désignent une question de FAQ comme question d’assistance
-support_words: "synchro,icloud,export,importer,sauvegard,supprim,effac,donnée,résili,annul,rembours,restaur,prix,coût,combien,payer,paiement,abonnement,à vie,achat,compte,hors ligne,hors-ligne,confidentialité,privé,suivi,watch,ipad,mac,langue,français,nécessite,faut-il,puis-je,peut-on,fonctionne avec"
+support_words: "synchro,icloud,export,importer,sauvegard,supprim,effac,donnée,résili,annul,rembours,restaur,prix,coût,combien,payer,paiement,gratuit,premium,abonnement,à vie,achat,partage familial,un compte,sans compte,créer un compte,hors ligne,hors-ligne,hors connexion,confidentialité,privé,suivi,watch,ipad,mac,appareil,langue,français,nécessite,fonctionne avec"
 support_common: "Questions fréquentes sur {name}"
 support_more_label: "Plus de réponses :"
 support_more: "toutes les questions sur {name}"

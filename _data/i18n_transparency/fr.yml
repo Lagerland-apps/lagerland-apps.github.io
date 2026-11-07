@@ -1,0 +1,217 @@
+# Mots français pour _data/transparency.yml (les faits restent là-bas : nombres, booléens, noms de SDK, dates).
+# Clé = slug de l’app, mêmes noms de champs que le fichier anglais. Les pages de /fr/ y lisent les mots
+# (accueil /fr/ : analytics ; /fr/transparency/ : chaque champ texte ci-dessous).
+# account_required seulement quand la valeur anglaise est une phrase (false affiche t.word_no).
+# third_party_sdks_list seulement quand la liste anglaise contient des phrases (pawza) ; les objets name/url restent dans le fichier maître.
+# Les listes (collected_data, required_reason_apis, permissions) suivent l’ordre et la longueur du fichier maître.
+# Mots de l’étiquette de confidentialité de l’App Store français (apps.apple.com/fr, relevés dans le JSON des pages
+# app, 2026-11-07, ids 389801252, 904237743, 1274495053, 888422857) : « Données non collectées »,
+# catégories « Santé et activité physique », « Santé », « Photos ou vidéos », « Autre contenu utilisateur »,
+# « Historique d’achats » ; finalité « Fonctionnalité de l’app » ; « Données n’établissant aucun lien avec vous » ;
+# « Données utilisées pour vous suivre ». Pas de libellé Apple pour « non utilisées pour le suivi » :
+# formulé « non utilisées pour vous suivre » d’après ce dernier titre.
+# Les noms de SDK et d’API et les codes de raison (CA92.1 …) restent tels quels.
+apps:
+  aftershift:
+    network_calls: "Aucun. Seulement HealthKit et EventKit (frameworks locaux), sans synchronisation cloud."
+    data_leaves_device: "Rien, sauf si vous exportez vous-même un rapport."
+    analytics: "Aucun."
+    collected_data:
+      - "Santé et activité physique (finalité : Fonctionnalité de l’app ; données n’établissant aucun lien avec vous, non utilisées pour vous suivre)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1 : lire et écrire les préférences propres à l’app)"
+    permissions:
+      - "Calendrier (lecture seule) : repérer les horaires de travail"
+      - "HealthKit (lecture du sommeil) : calculer la récupération entre les postes"
+    notes: "Les données de calendrier et de santé ne quittent jamais l’appareil."
+  allpaid:
+    network_calls: "Aucun pour le suivi des factures. La synchronisation iCloud facultative passe par votre propre iCloud."
+    data_leaves_device: "Uniquement vers votre iCloud, si vous l’activez."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions:
+      - "Notifications locales : rappels des dates d’échéance"
+      - "Face ID / Touch ID : verrouillage facultatif de l’app"
+    notes: "Les factures, les abonnements et les échéances restent par défaut sur l’appareil. La synchronisation iCloud est une fonction Pro que vous activez vous-même ; elle utilise votre propre iCloud privé. L’app n’inclut pas encore de fichier PrivacyInfo.xcprivacy. Pas de compte, pas de publicité, pas de suivi."
+  appmeta:
+    account_required: "Une clé d’API d’équipe App Store Connect (Issuer ID, Key ID, .p8) issue de votre propre compte développeur, pas de compte AppMeta. Elle est conservée uniquement dans le trousseau macOS de ce Mac et n’est jamais transmise à Lagerland."
+    network_calls: "L’API App Store Connect (api.appstoreconnect.apple.com) et les liens de téléchargement de rapports qu’elle renvoie ; les points d’accès publics de l’App Store d’Apple (apps.apple.com, itunes.apple.com, search.itunes.apple.com, amp-api-edge.apps.apple.com) pour les icônes d’apps, les prix de la concurrence et la recherche de mots-clés facultative ; Apple Ads (api.ads.apple.com, appleid.apple.com) seulement si vous le connectez ; les taux de change de la BCE (data-api.ecb.europa.eu) pour les graphiques de ventes ; le fournisseur d’IA que vous avez choisi, le cas échéant. Aucun serveur de Lagerland."
+    data_leaves_device: "Les données de vos fiches vont uniquement à l’API App Store Connect d’Apple, avec votre propre clé. Les mots-clés et les ID d’apps que vous recherchez vont aux points d’accès publics de l’App Store d’Apple, et le texte que vous confiez à un fournisseur d’IA dans le cloud pour le traduire ou l’analyser va à ce fournisseur. Rien ne va à Lagerland."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions:
+      - "Notifications : alertes facultatives pour les nouveaux avis et les diagnostics"
+    notes: "Client Mac natif pour App Store Connect. Vous modifiez tout en local, puis vous soumettez via l’API d’Apple."
+  appmeta-pulse:
+    account_required: "Pas de compte Lagerland. Votre propre clé d’API App Store Connect."
+    network_calls: "L’API App Store Connect d’Apple (avec les liens de téléchargement des rapports d’analyse qu’elle renvoie), l’iTunes Lookup d’Apple et les icônes d’apps vers lesquelles il pointe, l’App Store pour les achats, le framework Translation d’Apple quand vous traduisez un avis, l’API publique de taux de change de la Banque centrale européenne et, avec la synchronisation iCloud activée, l’iCloud d’Apple (CloudKit) et son service de notifications push."
+    data_leaves_device: "Vers App Store Connect avec votre propre clé (y compris les réponses aux avis que vous envoyez), et les ID de vos apps vers l’iTunes Lookup d’Apple. Avec la synchronisation iCloud activée, votre historique, vos avis et vos réglages (jamais la clé .p8) vont aussi dans votre propre base iCloud privée. Rien n’arrive chez Lagerland, sauf si vous nous écrivez par e-mail."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1, 1C8F.1)"
+      - "Horodatage de fichier (C617.1)"
+      - "Espace disque (E174.1)"
+    notes: "Des manifestes de confidentialité sont inclus dans l’app et dans son widget. Aucune commande sur les builds, les prix ou les métadonnées : les seules écritures dans App Store Connect sont les réponses aux avis que vous envoyez et les demandes de rapports d’analyse."
+  chessful:
+    network_calls: "Aucun. Le moteur Stockfish 18 tourne en local sur l’appareil."
+    data_leaves_device: "Non."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    notes: "L’analyse des parties est faite par le moteur intégré à l’app, pas par un service cloud."
+  earnlock:
+    network_calls: "Aucun. EarnLock n’a pas de serveur ; HealthKit et Family Controls sont des frameworks locaux."
+    data_leaves_device: "Non."
+    analytics: "Aucun."
+    permissions:
+      - "HealthKit (lecture des pas, de l’énergie active et des minutes d’exercice) : mesurer la progression vers l’objectif de déverrouillage"
+      - "Family Controls / « Temps d’écran » (mode .individual) : bloquer les apps qui distraient jusqu’à l’objectif atteint"
+      - "Notifications locales : alertes de progression et de déverrouillage"
+    notes: "Pas de compte, pas d’analyse, aucune connexion réseau propre. HealthKit est en lecture seule et ne quitte jamais l’appareil ; Family Controls ne donne à EarnLock que des jetons opaques, il ne peut donc pas voir quelles apps vous avez bloquées. L’app sert à vous limiter vous-même, jamais de contrôle parental, et elle n’a ni compte ni serveur."
+  gymlogger-x:
+    network_calls: "Les données d’entraînement se synchronisent via votre propre iCloud (base privée CloudKit) quand vous êtes connecté à iCloud. L’app n’a pas de serveur propre et ne contacte aucun serveur du studio."
+    data_leaves_device: "Entraînements : votre propre iCloud, et Apple Santé si vous l’autorisez. Rien ne va à Lagerland."
+    analytics: "Aucun. Pas de SDK d’analyse, et rien n’est envoyé."
+    collected_data:
+      - "Santé et activité physique (finalité : Fonctionnalité de l’app ; données n’établissant aucun lien avec vous, non utilisées pour vous suivre)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1, 1C8F.1)"
+      - "Horodatage de fichier (C617.1)"
+      - "Heure de démarrage du système (35F9.1)"
+    permissions:
+      - "Connectivité Apple Watch : saisir les séries depuis le poignet pendant que l’iPhone gère la séance"
+      - "HealthKit : enregistrer les entraînements ; lire la fréquence cardiaque et l’énergie active"
+    notes: "1500 exercices et 44 programmes sont inclus dans l’app. L’ID d’installation, les justificatifs d’achat, la connexion coach et le système de parrainage ont été supprimés : l’app n’envoie donc plus rien à un serveur du studio. Le manifeste de confidentialité ne déclare aucun suivi et le seul type de données ci-dessus."
+  liftlog:
+    network_calls: "Aucun pour la saisie. StoreKit contacte Apple pour l’achat unique ; il n’y a pas de synchronisation cloud."
+    data_leaves_device: "Seulement ce que vous envoyez : entraînements et énergie active vers Apple Santé si vous activez l’export, et les fichiers de sauvegarde ou CSV que vous partagez."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "Horodatage de fichier (DDA9.1)"
+      - "Espace disque (E174.1)"
+      - "Heure de démarrage du système (35F9.1)"
+    permissions:
+      - "Retour haptique : confirmer l’enregistrement d’une série"
+      - "HealthKit (écriture seule des entraînements et de l’énergie active) : export facultatif vers Apple Santé"
+      - "Notifications locales : fin du repos et rappels d’entraînement (facultatifs)"
+    notes: "Les API Required Reason relèvent toutes de catégories courantes de fonctionnement de l’app, sans aucun usage de fingerprinting."
+  mediakit:
+    network_calls: "Aucun. Conversion de fichiers à 100 % sur l’appareil."
+    data_leaves_device: "Non. Les fichiers ne quittent jamais votre Mac."
+    analytics: "Aucun."
+    permissions:
+      - "Fichiers sélectionnés par l’utilisateur : seulement quand vous glissez un fichier dans l’app"
+    notes: "152 outils natifs pour la vidéo, l’audio, l’image, le PDF et les archives, tous traités en local."
+  millrace:
+    network_calls: "Aucun. L’app ne contient aucun code réseau : les niveaux, le solveur, le plateau 3D et tous les thèmes tournent sur l’appareil. Game Center (facultatif) et les achats intégrés sont gérés par Apple."
+    data_leaves_device: "Non."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    notes: "PrivacyInfo.xcprivacy déclare NSPrivacyTracking à false, sans domaine de suivi et sans type de données collectées, et l’app ne lie aucun SDK de publicité ni d’analyse. Le seul entitlement est Game Center ; ni iCloud, ni CloudKit, ni trousseau, ni App Group. La progression reste sur l’appareil."
+  observa:
+    network_calls: "Aucun qui lui soit propre. Toute l’analyse tourne sur l’appareil ; seuls les achats, gérés par Apple, et les liens que vous ouvrez passent par le réseau."
+    data_leaves_device: "Non."
+    analytics: "Aucun."
+    collected_data:
+      - "Santé (finalité : Fonctionnalité de l’app ; données n’établissant aucun lien avec vous, non utilisées pour vous suivre)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions:
+      - "HealthKit (lecture du sommeil, de la VFC, de l’ECG et de l’activité) : générer des analyses"
+      - "HealthKit (écriture d’entrées) : enregistrer l’eau que vous saisissez et les entraînements faits sur l’Apple Watch"
+    notes: "Détection de tendances sur l’appareil. Les données d’Apple Santé ne quittent jamais votre appareil."
+  pawza:
+    third_party_sdks_list:
+      - "ZIPFoundation (gestion locale d’archives pour l’export ; pas de réseau)"
+    network_calls: "Aucun qui lui soit propre. Le scan de documents et l’extraction par IA tournent sur l’appareil. La synchronisation iCloud facultative utilise votre propre base privée CloudKit."
+    data_leaves_device: "Uniquement vers votre iCloud, si vous l’activez."
+    analytics: "Aucun."
+    collected_data:
+      - "Santé et activité physique (vaccins, médicaments ; finalité : Fonctionnalité de l’app ; données n’établissant aucun lien avec vous, non utilisées pour vous suivre)"
+      - "Photos ou vidéos (finalité : Fonctionnalité de l’app ; données n’établissant aucun lien avec vous, non utilisées pour vous suivre)"
+      - "Autre contenu utilisateur (notes, documents scannés ; finalité : Fonctionnalité de l’app ; données n’établissant aucun lien avec vous, non utilisées pour vous suivre)"
+      - "Historique d’achats (finalité : Fonctionnalité de l’app ; données n’établissant aucun lien avec vous, non utilisées pour vous suivre)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1 : lire et écrire les préférences propres à l’app)"
+      - "Horodatage de fichier (C617.1 : accéder aux horodatages de fichiers dans le conteneur de l’app)"
+    permissions:
+      - "Appareil photo : scanner les documents du vétérinaire"
+      - "Photothèque : joindre des photos et des documents existants"
+      - "Notifications locales : rappels de vaccins, de médicaments et de contrôles"
+    notes: "Les fiches, les photos, les documents scannés et les notes restent par défaut sur l’appareil. Le scan de documents (OCR Vision) tourne sur l’appareil pour tout le monde. L’extraction par IA avec Apple Intelligence demande Pawza Pro et iOS 26 ou version ultérieure sur un appareil compatible, et tourne aussi sur l’appareil. Les documents ne sont pas envoyés pour être traités. La synchronisation iCloud facultative utilise votre propre base privée CloudKit."
+  rightsplit:
+    network_calls: "Une seule : le fichier public quotidien des taux de change de la Banque centrale européenne (eurofxref-daily.xml), récupéré au plus une fois par jour pour la conversion de devises. Aucune donnée utilisateur n’est envoyée. Le scan des reçus et la répartition des dépenses ne font aucun appel réseau ; le partage passe par Messages ou WhatsApp."
+    data_leaves_device: "Uniquement via la feuille de partage d’iOS, quand vous le choisissez."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1, 1C8F.1)"
+      - "Horodatage de fichier (C617.1)"
+    permissions:
+      - "Appareil photo (pour scanner un reçu)"
+      - "Notifications (rappels de paiement et de factures récurrentes)"
+      - "Sélecteur de contacts (quand vous ajoutez des personnes depuis Contacts)"
+    notes: "L’OCR des reçus utilise le framework Vision sur l’appareil. Aucune image ne quitte l’appareil."
+  mockly:
+    account_required: "Pas de compte Lagerland. Votre propre clé d’API App Store Connect, seulement si vous envoyez des captures d’écran."
+    network_calls: "L’API App Store Connect d’Apple (seulement quand vous envoyez des captures). Le fournisseur d’IA que vous choisissez (OpenAI, Anthropic ou Google), seulement quand vous demandez une traduction. Les achats passent par Apple. Aucun serveur de Lagerland."
+    data_leaves_device: "Seulement ce que vous envoyez : les captures d’écran générées vers Apple quand vous les envoyez, et le texte à traduire, les langues cibles et votre clé d’IA vers le fournisseur choisi quand vous traduisez. Les clés sont stockées dans le trousseau macOS."
+    analytics: "Aucun."
+    permissions:
+      - "Fichiers sélectionnés par l’utilisateur : ouvrir et enregistrer des captures d’écran"
+    notes: "Le rendu se fait sur votre Mac. La traduction et l’envoi sont des actions explicites de l’utilisateur. Anciennement ScreenFlow Studio."
+  shogiful:
+    network_calls: "Aucun vers des tiers. Le moteur YaneuraOu tourne en local ; son fichier de réseau de neurones est téléchargé une seule fois depuis les serveurs App Store d’Apple (On-Demand Resources)."
+    data_leaves_device: "Non. La synchronisation iCloud facultative utilise votre propre iCloud."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    notes: "L’analyse des parties est faite par le moteur YaneuraOu intégré à l’app, pas par un service cloud."
+  xiangqiful:
+    network_calls: "Aucun qui lui soit propre. L’app ne contient aucun code réseau ; le moteur Pikafish et son réseau de neurones de 53 Mo sont intégrés et tournent sur l’appareil. Game Center (facultatif) et les achats intégrés sont gérés par Apple."
+    data_leaves_device: "Non."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "Horodatage de fichier (C617.1)"
+      - "Heure de démarrage du système (35F9.1)"
+      - "Espace disque (E174.1)"
+    notes: "PrivacyInfo.xcprivacy déclare NSPrivacyTracking à false et aucun type de données collectées, et l’étiquette de l’App Store indique « Données non collectées ». Les parties, les analyses et la progression d’entraînement sont stockées sur l’appareil avec SwiftData, sans conteneur CloudKit. Pikafish (GPL-3), compilé dans l’app, est le seul code externe."
+  soon:
+    network_calls: "Apple WeatherKit (seulement si un compte à rebours a la météo activée). Apple MapKit pour les sélecteurs de lieu."
+    data_leaves_device: "Seulement la position approximative de la destination d’un compte à rebours choisi, vers WeatherKit d’Apple."
+    analytics: "Aucun."
+    permissions:
+      - "Calendrier (lecture seule) : transformer les événements en comptes à rebours"
+      - "Localisation (pendant l’utilisation) : météo du compte à rebours sélectionné"
+    notes: "La météo et les cartes sont des services fournis par Apple ; rien ne passe par les serveurs de Lagerland."
+  tare:
+    network_calls: "Aucun. L’app ne contient aucun code réseau ; les 200 niveaux, les indices et toutes les images sont sur l’appareil. L’unique achat intégré est géré par Apple."
+    data_leaves_device: "Non."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    notes: "PrivacyInfo.xcprivacy déclare NSPrivacyTracking à false, sans domaine de suivi et sans type de données collectées, et l’étiquette de l’App Store indique « Données non collectées ». L’app n’a aucun entitlement : ni Game Center, ni iCloud, ni CloudKit, ni partage de trousseau, ni App Group. La progression reste sur l’appareil."
+  taskful-day:
+    network_calls: "Aucun. La synchronisation iCloud facultative utilise votre propre iCloud."
+    data_leaves_device: "Uniquement vers votre iCloud, si vous l’activez."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "Horodatage de fichier (C617.1)"
+    permissions:
+      - "Microphone (seulement pour la saisie vocale) : la transcription tourne sur l’appareil via le framework Speech d’Apple"
+    notes: "Achat universel sur iPhone, iPad et Mac. La saisie vocale est traitée sur l’appareil."
+  wanderwiki:
+    network_calls: "Uniquement les API publiques de Wikipédia (en.wikipedia.org et les autres éditions linguistiques, selon votre choix), plus le serveur d’images de Wikimedia (upload.wikimedia.org) pour les images des articles. Pas de compte, pas de clé d’API, aucun en-tête qui identifie l’utilisateur."
+    data_leaves_device: "Les requêtes d’articles vers Wikipédia, comme lorsqu’un navigateur visite le site."
+    analytics: "Aucun."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "Horodatage de fichier (C617.1)"
+    permissions:
+      - "Notifications (demandées la première fois que vous enregistrez un article) : un rappel local quotidien, à l’heure modifiable ou désactivable dans Réglages"
+    notes: "Client Wikipédia. Les articles sont récupérés via l’API publique de Wikipédia, comme lors d’une visite sur le web."
