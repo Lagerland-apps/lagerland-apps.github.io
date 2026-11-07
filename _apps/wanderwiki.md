@@ -138,19 +138,19 @@ value_points:
   - title: "Wander instead of search"
     description: "Random pulls from the whole encyclopedia. Browse drops you into one of 16 topics, from Space to Food. Under each article, Where next offers three related ones, so one idea leads to the next, and Back to discovery returns you to the feed."
   - title: "Your reading stays on your device"
-    description: "Nobody sees ads in WanderWiki, on any plan. You never sign in, and the app has no analytics and no developer server. Your interests, saved articles, likes, and reading history live on your device, and Delete My Data in Settings erases them in one tap. Like any Wikipedia reader, the app fetches articles from Wikipedia, so Wikimedia sees those requests."
+    description: "Nobody sees ads in WanderWiki, on any plan. You never sign in, and the app has no analytics and no developer server. Your interests, saved articles, likes, and reading history live on your device, and Delete My Data in Settings erases them whenever you want. Like any Wikipedia reader, the app fetches articles from Wikipedia, so Wikimedia sees those requests."
   - title: "A reader that remembers"
     description: "Reopen an article and you are back where you stopped. The reader shows how many minutes an article takes, and your saved and liked lists show how far you got. Listen reads any article aloud, with controls on the Lock Screen, and the reader comes in Sepia, Solarized, or True Black."
   - title: "Five widgets and two controls"
     description: "On This Day puts the day's history, with a photograph, on your Home Screen or Lock Screen. Reading Year, Continue Reading, Got a Minute, and Two Doors fill the rest. Surprise Me and Continue Reading also sit in Control Center, on the Lock Screen, or on the Action button."
   - title: "32 Wikipedia editions"
-    description: "Read English, German, Japanese, Arabic, Finnish, and 27 more Wikipedia editions. Today in History uses the edition's own feed in 19 of them and English in the rest. The app's own interface, widgets included, is translated into 33 languages."
+    description: "Read English, German, Japanese, Arabic, Finnish, and 27 more Wikipedia editions. In 17 of them, For You and Browse draw on the edition's own topic categories. Today in History uses the edition's own feed in 19 and English in the rest. The app's own interface, widgets included, is translated into 34 languages."
 
 how_it_works:
   intro: "WanderWiki is a Wikipedia card deck for iPhone and iPad (iOS 18.2 or later). Articles come from Wikipedia's official APIs, and everything you do with them stays on your device. A session goes like this."
   steps:
     - title: "Pick your Wikipedia language (one of 32)"
-      detail: "Choose the Wikipedia edition in Settings, under Language. Random, Browse, and search all read from it. Today in History uses the edition's own On This Day feed in 19 editions and the English one elsewhere. Where For You isn't available for an edition yet, the app shows Random and says so."
+      detail: "Choose the Wikipedia edition in Settings, under Language. Random, Browse, and search all read from it. Today in History uses the edition's own On This Day feed in 19 editions and the English one elsewhere. For You and Browse topics use the edition's own categories in 17 editions. In the other 15 you get random articles, the app tells you so, and it offers the 17 editions you can switch to."
     - title: "Pick a few interests from 16 topics"
       detail: "Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography, Literature, Movies, Food, Architecture, Mathematics, and Politics. You pick them at the start and can change them on your Profile. For You builds its feed from them; Browse dives into one."
     - title: "Swipe the deck"
@@ -172,7 +172,7 @@ features:
   - title: "Browse 16 topics"
     description: "Pick Science, History, Space, Food, or any of the other 12 topics, and swipe an endless deck of just that subject. Browse is free and counts toward the daily 20."
   - title: "For You (Premium)"
-    description: "A feed built from the topics you picked. Press and hold a card to see less of a topic or hide an article, and For You takes that into account. All of it is worked out on your device. In Wikipedia editions where For You isn't available yet, the app shows Random and tells you."
+    description: "A feed built from the topics you picked, in 17 Wikipedia editions, each with its own categories: pick Science in German and the articles come from categories such as Wissenschaft, Physik, and Chemie. Press and hold a card to see less of a topic or hide an article, and For You takes that into account. All of it is worked out on your device. In the other 15 editions the app shows Random, tells you, and lets you switch edition on the spot."
   - title: "Today in History (Premium)"
     description: "Wikipedia's On This Day for today's date, from <a href=\"https://en.wikipedia.org/api/rest_v1/#/Feed/onThisDay\" rel=\"noopener\" target=\"_blank\">Wikipedia's official feed</a>. Switch between Highlights, Events, Births, Deaths, and Holidays. It uses your edition's own feed in 19 of the 32 editions and English elsewhere."
   - title: "A reader that picks up where you stopped"
@@ -186,7 +186,7 @@ features:
   - title: "Search, Where next, Siri, and sharing"
     description: "Search your Wikipedia edition from the feed. Where next offers three related articles under each one. Siri and Shortcuts can open a random article, today's history, or one of your topics. Share an article as a link or as a card image in Story or Square format."
   - title: "A streak and a daily article, if you want them"
-    description: "WanderWiki counts the days in a row you read something, on your Profile and in the Reading Year widget, and a weekly recap shows your week of discovery. Turn on notifications and a daily one, at 9:00 unless you change it, names the day's featured article; an optional reminder warns you when a streak is about to break. Set quiet hours or turn both off in Settings."
+    description: "WanderWiki counts the days in a row you read something, on your Profile and in the Reading Year widget. A weekly recap shows your week of discovery, and Share recap sends it as an image. Turn on notifications and a daily one, at 9:00 unless you change it, picks one moment from today's history (in the 19 editions with their own On This Day feed). Once a streak reaches three days, an optional reminder arrives in the evening if you haven't read anything yet that day. Set quiet hours or turn both off in Settings."
 
 screenshots:
   - src: "/assets/screenshots/wanderwiki/1.webp"
@@ -233,7 +233,7 @@ comparison_table:
 plateau_disclosure:
   title: "What WanderWiki won't do for you"
   rule: "WanderWiki is a Wikipedia reading deck for iPhone and iPad. It leaves out research and editing tools on purpose, which keeps it focused on reading."
-  what_it_does_not_do: "WanderWiki gives you no Wikipedia edit access, talk pages, or watchlists; Wikipedia's official app does that. It runs on iPhone and iPad only, with no Mac, Apple Watch, Android, or web version. It reads 32 of Wikipedia's editions and gets Today in History in the edition's own language in 19 of them, in English elsewhere. It does not translate articles. It has no highlights, notes, or citation tools, and no export. It does not sync between devices: your saved articles, likes, and progress stay on the device you use, and deleting the app deletes them. Articles are live Wikipedia content, so they can change, and they can be wrong. It shows no ads on any plan."
+  what_it_does_not_do: "WanderWiki gives you no Wikipedia edit access, talk pages, or watchlists; Wikipedia's official app does that. It runs on iPhone and iPad only, with no Mac, Apple Watch, Android, or web version. It reads 32 of Wikipedia's editions. For You and Browse topics use the edition's own categories in 17 of them, and Today in History comes in the edition's own language in 19, in English elsewhere. It does not translate articles. It has no highlights, notes, or citation tools, and no export. It does not sync between devices: your saved articles, likes, and progress stay on the device you use, and deleting the app deletes them. Articles are live Wikipedia content, so they can change, and they can be wrong. It shows no ads on any plan."
   notes:
     - "Want a free Wikipedia feed on a laptop, or in any browser? WikiTok runs at wikitok.io, free and open source, in 41 editions."
     - "Want article-level explanations of why each article was chosen? Wiki Rabbit ships that today, on a free-with-ads tier."
@@ -252,6 +252,7 @@ training_vocabulary:
         - "European (non-Latin script): ru, uk, el, he"
         - "Asian: ja, zh, ko, hi, vi, id, th, ms"
         - "Middle Eastern: ar"
+        - "For You and Browse topics in the edition's own categories (17): en, de, fr, es, ja, zh, ko, it, pt, ru, fi, sv, nl, pl, tr, ar, hi"
     - heading: "16 interest topics"
       items:
         - "Science · Technology · History · Arts"
@@ -316,9 +317,9 @@ faq:
   - q: "Is WanderWiki an official Wikipedia app?"
     a: "No. WanderWiki is an independent app from Lagerland Apps. It reads Wikipedia content through Wikipedia's official APIs under the Creative Commons Attribution-ShareAlike 4.0 license, which is shown in Settings, and every article opens in Wikipedia from the reader. WanderWiki is not affiliated with or endorsed by the Wikimedia Foundation. For editing, talk pages, and watchlists, use Wikipedia's official app."
   - q: "Which Wikipedia language editions does WanderWiki support?"
-    a: "Thirty-two: English, German, French, Spanish, Italian, Portuguese, Dutch, Polish, Finnish, Swedish, Danish, Norwegian Bokmål, Czech, Slovak, Hungarian, Romanian, Croatian, Catalan, Turkish, Russian, Ukrainian, Greek, Hebrew, Japanese, Chinese, Korean, Hindi, Vietnamese, Indonesian, Thai, Malay, and Arabic. Random, Browse, and search read from the edition you pick. Today in History uses the edition's own feed in 19 of them and English elsewhere. Where For You isn't available for an edition yet, the app shows Random and tells you."
+    a: "Thirty-two: English, German, French, Spanish, Italian, Portuguese, Dutch, Polish, Finnish, Swedish, Danish, Norwegian Bokmål, Czech, Slovak, Hungarian, Romanian, Croatian, Catalan, Turkish, Russian, Ukrainian, Greek, Hebrew, Japanese, Chinese, Korean, Hindi, Vietnamese, Indonesian, Thai, Malay, and Arabic. Random, Browse, and search read from the edition you pick. Today in History uses the edition's own feed in 19 of them and English elsewhere. For You and Browse topics use the edition's own categories in 17: English, German, French, Spanish, Japanese, Chinese, Korean, Italian, Portuguese, Russian, Finnish, Swedish, Dutch, Polish, Turkish, Arabic, and Hindi. In the other 15 they show random articles, and the app tells you."
   - q: "How does the For You mode work?"
-    a: "You pick interests from 16 topics: Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography, Literature, Movies, Food, Architecture, Mathematics, and Politics. For You then builds a feed from the Wikipedia categories behind those topics. Press and hold a card to see less like it, mark a topic as not interesting, or hide an article, and For You adjusts. Those choices stay on your device. For You is part of Premium; Browse, which dives into one topic, is free."
+    a: "You pick interests from 16 topics: Science, Technology, History, Arts, Music, Sports, Nature, Space, Philosophy, Geography, Literature, Movies, Food, Architecture, Mathematics, and Politics. For You then builds a feed from the Wikipedia categories behind those topics, and in 17 editions they are that edition's own categories. Press and hold a card to see less like it, mark a topic as not interesting, or hide an article, and For You adjusts. Those choices stay on your device. For You is part of Premium; Browse, which dives into one topic, is free."
   - q: "How does Today in History work?"
     a: "Today in History shows Wikipedia's On This Day feed for today's date. Switch between five categories: Highlights (Wikipedia's picks for the date), Events, Births, Deaths, and Holidays. It reads your edition's own feed in 19 of the 32 editions and the English feed elsewhere. In the app it is part of Premium. The On This Day widget, with a photograph of the day's history, is free."
   - q: "Does WanderWiki have widgets?"
@@ -328,7 +329,7 @@ faq:
   - q: "Does WanderWiki use a recommendation algorithm?"
     a: "Only in a small, visible way. Random is random, and Browse sticks to the topic you chose. For You starts from the topics you pick and adjusts when you press and hold a card to see less of something or hide it. That all happens on your device. WanderWiki has no analytics and no server of its own, so nothing about what you read is collected."
   - q: "Does WanderWiki have streaks or notifications?"
-    a: "Yes, and both are optional. WanderWiki counts the days in a row you read something, on your Profile and in the Reading Year widget. If you allow notifications (the app asks the first time you save an article), a daily one, at 9:00 unless you change it, names the day's featured article, and a reminder can warn you when a streak is about to break. Change the time, set quiet hours, or turn them off in Settings."
+    a: "Yes, and both are optional. WanderWiki counts the days in a row you read something, on your Profile and in the Reading Year widget. If you allow notifications (the app asks the first time you save an article), a daily one, at 9:00 unless you change it, picks one moment from today's history (in the 19 editions with their own On This Day feed). Once a streak reaches three days, a reminder arrives in the evening if you haven't read anything yet that day. Your Profile also shows a weekly recap that you can share as an image. Change the time, set quiet hours, or turn the notifications off in Settings."
   - q: "Is WanderWiki free?"
     a: "Yes, for 20 articles a day, with no card and no account. The free plan covers Random and Browse, with save, like, search, and folders, plus Listen and all five widgets, in all 32 editions. When you reach 20, the app asks you to upgrade or come back after local midnight, when the count resets. Premium unlocks For You, Today in History, and unlimited swiping for {P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL} for new subscribers, or {P_LIFETIME} once, with Family Sharing. No plan shows ads. The only other purchase is an optional {P_IAP:Support the developer} tip. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does WanderWiki work on iPad, Mac, or Vision Pro?"
@@ -346,7 +347,7 @@ support:
 
 release:
   first_release: "2026-02-07"
-  last_updated: "2026-10-23"
+  last_updated: "2026-11-07"
   last_audited: "2026-10-25"
   audit_round: "5 (every claim checked against the app source and the live App Store listing)"
 
@@ -354,7 +355,7 @@ ratings:
   value: "5.0"
   count: 2
   last_synced: "2026-04-15"
-last_updated: 2026-10-30
+last_updated: 2026-11-07
 ---
 WanderWiki is a Wikipedia app for iPhone and iPad (iOS 18.2 or later) built for reading without a plan. Instead of a search box, it opens on a deck of cards. Random draws from the whole encyclopedia, Browse narrows the deck to one of 16 topics, and Where next offers three related articles under each one, so a single swipe can turn into an evening's thread.
 

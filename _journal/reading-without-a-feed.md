@@ -13,7 +13,7 @@ seo:
     - "anti-doomscroll app"
     - "wanderwiki"
 date: 2026-02-07
-last_updated: 2026-10-29
+last_updated: 2026-11-07
 lede: "I deleted my last social-feed app in late 2024. The hardest part was rebuilding a habit of reading something, anything, in the small windows I used to fill by scrolling. I built WanderWiki mostly to give that habit somewhere to live."
 quick_answer: "WanderWiki is a Wikipedia app for iPhone and iPad built as a replacement for the social feed. Its For You mode starts from interest topics you choose and adjusts when you hide an article or ask to see less of a topic, all worked out on the device, with no tracking. A Today in History view gives each day a small editorial anchor. Articles you save download to the device, so they open without a connection. There is no account and there are no ads."
 faq:
@@ -85,4 +85,4 @@ Daily active users would be a noisy number for an app like this anyway, and Wand
 
 It's a Saturday in early February, and the internet is doing whatever the internet does. If you've been looking for something to fill the small windows that used to be filled by something worse, you could do worse than three Wikipedia articles and a quiet kitchen.
 
-*Update, 29 October 2026:* WanderWiki has grown since this was written. It now counts the days in a row you read something, on the Profile tab and in a widget. If you allow notifications, a daily one names the day's featured article, and an optional reminder warns you when a streak is about to break; you can retime or turn off both in Settings. The free plan stops at 20 articles a day, and Premium adds unlimited swiping, For You, and Today in History. For You still starts from the topics you pick, and the choices that adjust it stay on the phone.
+*Update, 29 October 2026:* WanderWiki has grown since this was written. It now counts the days in a row you read something, on the Profile tab and in a widget. If you allow notifications, a daily one picks one moment from today's history, and an optional evening reminder arrives when a streak is about to break; you can retime or turn off both in Settings. The free plan stops at 20 articles a day, and Premium adds unlimited swiping, For You, and Today in History. For You still starts from the topics you pick, and the choices that adjust it stay on the phone.
