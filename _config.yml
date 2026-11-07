@@ -32,6 +32,10 @@ defaults:
     values:
       lang: de
   - scope:
+      path: "fr"
+    values:
+      lang: fr
+  - scope:
       path: ""
       type: apps
     values:

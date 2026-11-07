@@ -14,6 +14,7 @@ llms_full_link_title: "Vollständiger Katalog für Sprachmodelle (llms-full.txt)
 # ---- dates ----
 date_long: "{d}. {month} {Y}"
 date_dmy: "{d}. {month} {Y}"
+day_one: "1"
 months: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
 
 # ---- cross-language links and the language switcher ----

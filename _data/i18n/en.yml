@@ -15,6 +15,7 @@ llms_full_link_title: "LLM full catalogue (llms-full.txt)"
 # ---- dates (_includes/date.html) ----
 date_long: "{month} {d}, {Y}"
 date_dmy: "{d} {month} {Y}"
+day_one: "1"
 months: [January, February, March, April, May, June, July, August, September, October, November, December]
 
 # ---- cross-language links (TRANSLATION.md 7.6) and the language switcher ----

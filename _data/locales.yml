@@ -71,3 +71,36 @@ de:
     trial_days: "{n} Tage gratis testen"
     trial_months: "{n} Monate gratis testen"
     trial_years: "{n} Jahre gratis testen"
+fr:
+  territory: FRA
+  html_lang: fr
+  hreflang: [fr]
+  og_locale: fr_FR
+  dir: ltr
+  native_name: "Français"
+  live: false
+  # Checked 2026-11-07 in the French App Store (apps.apple.com/fr): "9,99 €" with a no-break space (U+00A0),
+  # the same character Apple uses before € in every French price row. Thousands also take U+00A0 there ("100 000").
+  currencies:
+    EUR: { symbol: "€", position: after, space: " ", decimals: 2, decimal: ",", group: " " }
+  strings:
+    free: "Gratuit"
+    from: "à partir de"
+    per_month: "/mois"
+    per_year: "/an"
+    per_week: "/semaine"
+    lifetime: "à vie"
+    once: "une fois"
+    or: "ou"
+    and: "et"
+    one_time_purchase: "achat unique"
+    default_tier: "Premium"
+    family_sharing: "Partage familial"
+    decimal: ","
+    serial_comma: ""
+    trial_one_day: "1 jour d’essai gratuit"
+    trial_one_month: "1 mois d’essai gratuit"
+    trial_one_year: "1 an d’essai gratuit"
+    trial_days: "{n} jours d’essai gratuit"
+    trial_months: "{n} mois d’essai gratuit"
+    trial_years: "{n} ans d’essai gratuit"
