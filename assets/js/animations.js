@@ -94,6 +94,19 @@
     });
   }
 
+  /* ---- Language switcher: close on outside click or Escape -------- */
+  function initLangSwitch() {
+    var box = document.querySelector('.lang-switch');
+    if (!box) return;
+    var summary = box.querySelector('summary');
+    document.addEventListener('click', function (e) {
+      if (box.open && !box.contains(e.target)) box.open = false;
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && box.open) { box.open = false; if (summary) summary.focus(); }
+    });
+  }
+
   /* ---- Screenshot carousel: drag + dots -------------------------- */
   function initCarousel() {
     document.querySelectorAll('.shots').forEach(function (track) {
@@ -342,6 +355,7 @@
     initScrollReveal();
     initNavbar();
     initMobileMenu();
+    initLangSwitch();
     initCarousel();
     initFaqAccordion();
     initSheet();

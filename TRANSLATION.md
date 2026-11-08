@@ -17,7 +17,7 @@ Read order for any translation session: repo `CLAUDE.md`, then this file, then t
 | Item | Status |
 |---|---|
 | Phase 0 groundwork (section 4) | done 2026-10-26 (what it built: 4.16) |
-| Languages live | de (German), 2026-10-27: Tier 1; fr (French), 2026-11-08: Tier 1, Tier 2 (guides and audience pages; for/indie-ios-developers English-only by choice) and Tier 3 batches 1 to 3 (30 comparisons incl. two local-only) |
+| Languages live | de (German), 2026-10-27: Tier 1; fr (French), 2026-11-08: Tier 1, Tier 2 (guides and audience pages; for/indie-ios-developers English-only by choice) and Tier 3 batches 1 to 3 (30 comparisons incl. two local-only) and Tier 4 batch 1 (journal hub, 10 posts incl. one local-only) |
 
 Update this table in the same commit that finishes Phase 0 or launches a language. Per-language status
 (tiers done, open stale pages) lives in each language sheet.
@@ -457,7 +457,8 @@ Done 2026-10-26. Build time: 9.9 s before, about 12.5 s after, for the same 277 
   `trial.html`, `{P_ZERO}`. Screenshots: `_includes/screenshot-set.html` (6.8). Share image: `_includes/og-image.html`.
 - Head: `<html lang dir>`, hreflang and `og:locale:alternate` from the map for live languages, one WebSite node per
   language (`site_title`, `site_description` in the strings), per-language feed and llms alternates.
-- Switcher: `_includes/lang-switch.html` in the header nav; a language row in the footer (every live language, to
+- Switcher: `_includes/lang-switch.html`, a dropdown at the right end of the header (current language on the button,
+  the other versions in a `<details>` menu, so the links are in the HTML and it opens without JS); a language row in the footer (every live language, to
   this page's version or that language's home). Both render nothing while English is the only live language.
 - 404: one template per live language inside `404.html`, swapped in by a few lines of JS for `/<code>/` paths.
 - Machine files, as shared includes: `_includes/sitemap-urls.xml lang=`, `_includes/feed.xml lang=`,

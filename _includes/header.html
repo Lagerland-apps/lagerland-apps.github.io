@@ -20,9 +20,9 @@
       {%- assign hd_url = hd_parts[0] -%}{%- assign hd_key = hd_parts[1] %}
       <a href="{% include l.html url=hd_url %}"{% if l_en %} hreflang="en"{% endif %}{% if hd_url == "/support/" %}{% if page.url == l_href %} aria-current="page"{% endif %}{% elsif page.url contains hd_url %} aria-current="page"{% endif %}>{{ t[hd_key] }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
       {%- endfor %}
-      {%- include lang-switch.html where="header" %}
     </nav>
     {%- assign hd_year = site.time | date: "%Y" -%}{%- assign hd_imprint = t.header_imprint | replace: "{year}", hd_year %}
     <span class="topbar-imprint" aria-hidden="true">{{ hd_imprint }}<svg class="reg-mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="5.5"/><path d="M8 0v16M0 8h16"/></svg></span>
+    {%- include lang-switch.html %}
   </div>
 </header>
