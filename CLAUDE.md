@@ -60,6 +60,10 @@ Meta AI). That is part of "done", not a follow-up. Before every commit:
 10. **Translations** (once a language is live): new interface strings go into every live `_data/i18n/<code>.yml`
    in the same commit; a new app needs its translated app, support and privacy pages in every live language;
    run `python3 scripts/i18n.py map` and `python3 scripts/i18n.py check` with the audit. Details: TRANSLATION.md.
+11. **Open issues**: anything you find that can't be fixed in this change (an owner decision, an app bug, an App
+   Store Connect task, an English-side error found while translating) goes into `~/Downloads/githubcode/ISSUES.md`,
+   the one master list (rules in the workspace CLAUDE.md). Never start a new notes or open-questions file for it,
+   and close the item there when you fix it.
 
 Machine-readable files and what keeps them current:
 

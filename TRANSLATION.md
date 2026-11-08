@@ -501,6 +501,9 @@ on each page:
 - Review log: which pages had a native review, a back-translation check, and when. Reviewers are noted by role,
   never by name on the site.
 - Per-language status: tiers done, stale pages open, apps still showing English screenshots.
+- Not open issues: an English-side error, an app bug or an owner question found while translating goes into
+  `~/Downloads/githubcode/ISSUES.md` (the master list), not into the sheet or a separate open-questions file. The
+  sheet keeps decisions and rules; ISSUES.md keeps what still needs doing.
 
 ### 5.2 Setup commit for the language
 

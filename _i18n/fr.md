@@ -236,29 +236,10 @@ are the French bank-linked budget apps (local-only page done). Splid (991473495,
 is a French-market Tricount-style splitter with no English page: local-only page /fr/alternatives/splid/ done in batch 2. Tricount
 (★98 114) dwarfs Splitwise (★495) in France.
 
-## Open questions (English site vs app, found while building the glossary)
+## Open questions
 
-Details in fr-glossary.md. Most carry over from the German sheet's list; new from the French pass:
-
-- GymLogger X ships a « Coach IA » string while the English site says there is no AI coach (code check needed).
-- LiftLog's in-app tier labels (Juste / Bien / Généreux / Mécène) differ from its French App Store IAP names
-  (Équitable / Correct / Généreux / Mécène). The site follows the app.
-- Observa: « Débloquez Lifetime Access » half in English in the app; « Disponibilité » vs « préparation » for Readiness.
-- Mockly: the French store sells no translation packs on its page; site says 39 locales, French subtitle says 50 langues.
-- Shogiful: 8 opponent tiers in code vs the site's opponent count (as in the German sheet).
-- Tare: the French store IAP is « Chapitres II–X », which matches the site (the German note « Kapitel II–IV » looks stale).
-- WanderWiki: a weekly plan exists in the French store that the site does not list.
-- From the Tier 1 reviews (English wording kept on the French pages until the owner decides; details in the
-  session review logs, summarized in ~/Downloads/githubcode/fr-tier1-open-questions-2026-11-08.md):
-  EarnLock partial unlock and shield rule vs blueprint; GymLogger X « Coach IA » string; AfterShift's two scores
-  share one French UI string and its French Siri phrases may not ship; AllPaid « Services publics » vs « Charges »;
-  AllPaid on iPad and Mac (master) but missing from the English home FAQ's Mac list; Millrace undo packs called
-  « one-time purchases » in English value_points but consumable in the footnote; Millrace French store lists Mac
-  and Vision; Tare policy says Chapters II to IV, store says II to X; Tare language count (English 50, store 44);
-  AppMeta Pulse « Pro » vs no tier in the app, « 17 languages » = 17 localizations in 13 languages; AppMeta Apple
-  ASC menu names in French vs English on Pulse; Soon. baby timeline weeks (France counts in SA); Soon. free pin
-  limit implied but never stated; RightSplit tax/tip condition; Observa French screenshots 1, 2 and 10 address the
-  reader with tu; Chessful French notation letters; « Autoriser l’accès complet » unconfirmed.
+Moved on 2026-11-08 to the master list `~/Downloads/githubcode/ISSUES.md` (the old text is in git history). New
+English-side errors, app bugs and owner questions found while translating go there, never here.
 
 ## Tells to cut in French (TRANSLATION.md 8.2, plus what reviews find)
 

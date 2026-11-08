@@ -104,7 +104,7 @@ The terms that matter most across the site:
 Per-app tier names follow each app's German UI (de-glossary.md): Premium for Observa, Soon., Shogiful,
 Xiangqiful, WanderWiki (the app never says "Plus"); Pro+ for RightSplit; Pro for Pawza and Taskful Day. Where the
 English site's tier name differs from the app (Observa "Pro" vs app "Premium", WanderWiki "Plus" vs "Premium",
-Chessful "Pro" vs "Premium"), the German page follows the app and the mismatch is listed under "Open questions".
+Chessful "Pro" vs "Premium"), the German page follows the app and the mismatch is listed in ~/Downloads/githubcode/ISSUES.md.
 
 ## Keyword research
 
@@ -239,28 +239,10 @@ App Store Connect, Privacy Manifest and Mockup stay English in German searches.
 Seen in German App Store results and suggestions (details per app in de-keywords.md): to be checked for German
 storefront availability and prices before any comparison page is written (TRANSLATION.md 6.4).
 
-## Open questions (English site vs app, found while building the glossary)
+## Open questions
 
-Not translated as-is; each needs the owner's call or an English fix first. Details in de-glossary.md.
-
-- Soon.: site's free themes (Classic, Soft, Midnight) vs code (sunrise, ocean, forest; Midnight is Premium);
-  "Pregnancy" type is "Baby" in the app and there is no Graduation or Move type; no "Reflection" string (it is
-  "Notes"); the app has iCloud sync strings while the site says on-device only; language count 39 vs store
-  "Deutsch und 35 weitere".
-- Tare: German store IAP name says „Kapitel II–IV“, site says the purchase unlocks Chapters II to X.
-- Taskful Day: no "Focus Orbit" string (app: Fokusmodus); paywall lists Day Clock, Day Map, Energy River and
-  Focus Mode as Pro while the site's free tier includes them; a watch target exists while the site says no Watch app.
-- WanderWiki: paid tier is "Premium" in the app, "Plus" on the site; weekly subscription not on the site; a string
-  says the personalized feed is English-only.
-- Observa: tier "Premium" (app, store) vs "Pro" (site, watch, widgets); the German store subtitle mentions cycle
-  tracking („Zyklus“), which the site page doesn't cover.
-- Mockly: display name in InfoPlist is still "ScreenFlow Studio"; translation packs exist in code but not on the
-  site; German subtitle says 50 languages vs 39 locales on the site.
-- Shogiful: site says 10 AI opponents across 4 tiers, code has 8 opponent tiers.
-- Chessful: app strings include a 3-day trial, the site says 7-day; tier "Premium" in app vs "Chessful Pro" IAPs.
-- EarnLock: site says "Tap Reflect on the Home screen"; the app's tab is "Today" („Heute“).
-- AppMeta Pulse: German store prices came back as 0,99 € / 1,99 € / 2,99 €; prices on the site come from the
-  catalog anyway, but worth confirming in App Store Connect.
+Moved on 2026-11-08 to the master list `~/Downloads/githubcode/ISSUES.md` (the old text is in git history). New
+English-side errors, app bugs and owner questions found while translating go there, never here.
 
 ## Tells to cut in German (TRANSLATION.md 8.2, plus what reviews find)
 
@@ -345,7 +327,7 @@ mixed. Added for this site: „Erlebnis“ for "experience", „Lösung“ for a
   app's own word for lifetime), not the App Store purchase names („Monatsabo“, „Jahresabo“).
 - Where the English page contradicts itself or the app code on a checkable fact (a free-tier limit, the language of
   explanations), the German page states the one value that is consistent and backed by the code, and the case is
-  listed in ~/Downloads/githubcode/english-issues-from-de-review-2026-10-27.md for the English fix. Open questions
+  listed in ~/Downloads/githubcode/ISSUES.md for the English fix. Open questions
   that need the owner's decision stay as on the English page.
 
 - The site's "Best value" badge (highlight_label) is „Bestes Preis-Leistungs-Verhältnis“ on every page, and
