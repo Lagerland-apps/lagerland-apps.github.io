@@ -11,7 +11,8 @@
   },
   "/alternatives/alpha-progression/": {
     "de": "/de/alternatives/alpha-progression/",
-    "en": "/alternatives/alpha-progression/"
+    "en": "/alternatives/alpha-progression/",
+    "fr": "/fr/alternatives/alpha-progression/"
   },
   "/alternatives/athlytic/": {
     "de": "/de/alternatives/athlytic/",
@@ -20,7 +21,8 @@
   },
   "/alternatives/autosleep/": {
     "de": "/de/alternatives/autosleep/",
-    "en": "/alternatives/autosleep/"
+    "en": "/alternatives/autosleep/",
+    "fr": "/fr/alternatives/autosleep/"
   },
   "/alternatives/bevel/": {
     "de": "/de/alternatives/bevel/",
@@ -39,9 +41,14 @@
     "en": "/alternatives/chess-com/",
     "fr": "/fr/alternatives/chess-com/"
   },
+  "/alternatives/chessable/": {
+    "en": "/alternatives/chessable/",
+    "fr": "/fr/alternatives/chessable/"
+  },
   "/alternatives/cloudconvert/": {
     "de": "/de/alternatives/cloudconvert/",
-    "en": "/alternatives/cloudconvert/"
+    "en": "/alternatives/cloudconvert/",
+    "fr": "/fr/alternatives/cloudconvert/"
   },
   "/alternatives/compress-videos-resize-video/": {
     "de": "/de/alternatives/compress-videos-resize-video/",
@@ -65,9 +72,14 @@
     "en": "/alternatives/forest/",
     "fr": "/fr/alternatives/forest/"
   },
+  "/alternatives/gentler-streak/": {
+    "en": "/alternatives/gentler-streak/",
+    "fr": "/fr/alternatives/gentler-streak/"
+  },
   "/alternatives/habitica/": {
     "de": "/de/alternatives/habitica/",
-    "en": "/alternatives/habitica/"
+    "en": "/alternatives/habitica/",
+    "fr": "/fr/alternatives/habitica/"
   },
   "/alternatives/habitnow/": {
     "de": "/de/alternatives/habitnow/",
@@ -84,7 +96,8 @@
   },
   "/alternatives/jomo/": {
     "de": "/de/alternatives/jomo/",
-    "en": "/alternatives/jomo/"
+    "en": "/alternatives/jomo/",
+    "fr": "/fr/alternatives/jomo/"
   },
   "/alternatives/ladder/": {
     "de": "/de/alternatives/ladder/",
@@ -118,6 +131,10 @@
     "de": "/de/alternatives/productive/",
     "en": "/alternatives/productive/"
   },
+  "/alternatives/rise-sleep-tracker/": {
+    "en": "/alternatives/rise-sleep-tracker/",
+    "fr": "/fr/alternatives/rise-sleep-tracker/"
+  },
   "/alternatives/screenzen/": {
     "de": "/de/alternatives/screenzen/",
     "en": "/alternatives/screenzen/",
@@ -134,12 +151,17 @@
   },
   "/alternatives/streaks-app/": {
     "de": "/de/alternatives/streaks-app/",
-    "en": "/alternatives/streaks-app/"
+    "en": "/alternatives/streaks-app/",
+    "fr": "/fr/alternatives/streaks-app/"
   },
   "/alternatives/strong-workout-app/": {
     "de": "/de/alternatives/strong-workout-app/",
     "en": "/alternatives/strong-workout-app/",
     "fr": "/fr/alternatives/strong-workout-app/"
+  },
+  "/alternatives/stronglifts-5x5/": {
+    "en": "/alternatives/stronglifts-5x5/",
+    "fr": "/fr/alternatives/stronglifts-5x5/"
   },
   "/alternatives/tricount/": {
     "de": "/de/alternatives/tricount/",
