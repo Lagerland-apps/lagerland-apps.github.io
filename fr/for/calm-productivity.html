@@ -1,0 +1,122 @@
+---
+layout: default
+ref: /for/calm-productivity/
+permalink: /fr/for/calm-productivity/
+translated_from: 2026-10-29
+title: "Application pour organiser sa journée sans pression"
+quick_answer: "Pour une application d’organisation de la journée sans la pression des séries, commencez par Taskful Day, un planificateur pour iPhone, iPad, Mac et Apple Watch : ce que vous n’avez pas terminé passe tout seul à aujourd’hui, si bien que la liste Aujourd’hui ne devient jamais une pile rouge de tâches en retard. Ajoutez Soon. sur iPhone pour compter les jours avant un voyage, un anniversaire ou une autre grande date, avec une checklist de départ issue du mode planification, et Observa si vous portez une Apple Watch et voulez chaque jour un point sur votre sommeil et votre récupération. Aucune des trois apps n’affiche de publicité ni n’exige de compte."
+seo:
+  title: "Application organisation journée : iPhone, iPad et Mac"
+  description: "Organisez votre journée sans pression ni publicité : Taskful Day sur iPhone, iPad et Mac, Soon. pour les comptes à rebours, Observa pour Apple Santé."
+  keywords:
+    - application organisation journée
+    - application planning journée
+    - application to do list iphone
+    - application minimaliste iphone
+    - planificateur de journée mac
+    - application sans publicité iphone
+    - alternative aux applications à séries
+last_updated: 2026-11-08
+---
+{%- include t.html -%}
+{%- assign slugs = "taskful-day,soon,observa" | split: "," -%}
+{%- assign apps_for = '' | split: '' -%}
+{%- for slug in slugs -%}{%- assign m = site.apps | where: "slug", slug | first -%}{%- if m and m.status == "live" -%}{%- assign apps_for = apps_for | push: m -%}{%- endif -%}{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/fr/for/calm-productivity/#webpage",
+  "url": "{{ site.url }}/fr/for/calm-productivity/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/fr/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "fr",
+  "datePublished": "2026-11-08",
+  "audience": { "@type": "PeopleAudience", "audienceType": "Personnes lassées des applications de productivité en mode jeu" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Organiser sa journée sans pression", "item": "{{ site.url }}/fr/for/calm-productivity/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "fr",
+  "mainEntity": [
+    { "@type": "Question", "name": "Qu’est-ce qu’une application de productivité sans pression ?", "acceptedAnswer": { "@type": "Answer", "text": "Une application qui organise la journée que vous avez vraiment et vous laisse tranquille le reste du temps. C’est le principe de Taskful Day. Les tâches non terminées passent d’elles-mêmes à aujourd’hui, la liste Aujourd’hui n’affiche ni pastille de retard ni liste rouge, et l’app n’a ni publicité ni fil d’actualité qui réclame votre attention." } },
+    { "@type": "Question", "name": "Quelle est la meilleure alternative aux planificateurs à séries ?", "acceptedAnswer": { "@type": "Answer", "text": "Taskful Day, si vous voulez un planificateur où un jour manqué ne coûte rien. Les tâches que vous n’avez pas terminées passent à aujourd’hui quand vous ouvrez l’app, et rien dans la liste Aujourd’hui ne les signale en retard. Analyses affiche bien une série en cours et une meilleure série, mais comme un chiffre parmi d’autres." } },
+    { "@type": "Question", "name": "Ces apps conviennent-elles aux personnes qui ont un TDAH ?", "acceptedAnswer": { "@type": "Answer", "text": "Aucune n’est conçue comme un outil médical ou un outil pour le TDAH, et nous n’avançons donc rien à ce sujet. Taskful Day garde un seul jour sous les yeux et reporte les tâches non terminées au lieu de les empiler, et vous ajoutez une tâche en tapant une phrase, à la voix ou avec Siri. Soon. garde les dates qui comptent pour vous sur votre écran d’accueil et votre écran verrouillé. Les deux ont une version gratuite : vous pouvez voir si cette façon de travailler vous convient." } },
+    { "@type": "Question", "name": "Ces apps revendent-elles mes données ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. Aucune des trois n’affiche de publicité, n’exige de compte ni ne contient de SDK tiers d’analyse ou de publicité. Taskful Day garde vos tâches sur votre appareil, ou dans votre propre iCloud si vous activez la synchronisation avec Pro. Soon. garde vos événements sur votre appareil et les synchronise via votre propre iCloud. Observa garde vos données de santé sur votre appareil. Ce sont les mises à niveau facultatives Pro et Premium qui financent les apps." } },
+    { "@type": "Question", "name": "Existe-t-il un planificateur de journée sans culpabilité sur Mac, iPhone et iPad ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Taskful Day fonctionne sur iPhone, iPad et Mac, avec une app Apple Watch qui fonctionne avec l’app iPhone. Avec Pro, la synchronisation iCloud, via votre propre iCloud privé, affiche la même journée sur chaque appareil. Sur Mac, vous avez des widgets petits, moyens et grands ; la saisie vocale existe sur iPhone et iPad." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Pour les personnes lassées de la productivité en mode jeu</p>
+    <h1 class="h1">Une application pour organiser votre journée<br><span class="gradient-text">sans la pression des séries.</span></h1>
+    <p class="lead">Beaucoup de planificateurs reposent sur des séries, des badges et une flamme qui s’éteint quand vous manquez un jour. Si vous en avez déjà supprimé un parce qu’il vous donnait l’impression d’être en retard, ces trois apps gardent votre journée sous les yeux et vous laissent tranquille le reste du temps.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">Découvrir les apps</a>
+      <a class="btn btn-secondary" href="#faq">Questions fréquentes</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Pourquoi tant d’applications de productivité vous déçoivent-elles ?</h2>
+  <p class="lead">Beaucoup sont conçues pour vous faire revenir chaque jour, et terminer votre travail passe après. Une flamme qui s’éteint quand vous manquez un jour nourrit la culpabilité, et une liste de tâches en retard, en rouge, s’allonge chaque fois que la vie s’en mêle.</p>
+  <p class="lead">Un meilleur planificateur part de la journée que vous aurez vraiment. Il reporte sans commentaire ce qui restait d’hier, annonce clairement son prix et reste discret pendant vos journées chargées.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Les apps</p>
+    <h2 class="h2">Les trois apps</h2>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in apps_for -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Comment ces trois apps se complètent-elles ?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Taskful Day → un jour à la fois, sur chaque appareil</div><div class="card-text">Les tâches non terminées passent d’elles-mêmes à aujourd’hui, et la liste Aujourd’hui n’affiche jamais de liste rouge de retards. Taskful Day fonctionne sur iPhone, iPad, Mac et Apple Watch : vous planifiez au bureau et vous notez une tâche sur votre téléphone ou à votre poignet. Avec Pro, la synchronisation iCloud affiche la même journée sur chaque appareil.</div></div>
+    <div class="card"><div class="card-title">Soon. → des comptes à rebours vers les dates qui comptent</div><div class="card-text">Comptez les jours avant un voyage, un mariage, un anniversaire ou un examen, chaque événement avec votre propre photo. Le mode planification propose une première checklist et une chronologie adaptées au type d’événement, et 26 widgets pour l’écran d’accueil, l’écran verrouillé et StandBy gardent l’échéance sous vos yeux. Soon. est une app iPhone, gratuite jusqu’à 5 événements.</div></div>
+    <div class="card"><div class="card-title">Observa → l’effet de votre routine sur vous (facultatif)</div><div class="card-text">Si vous portez une Apple Watch, Observa transforme le sommeil, la VFC et la fréquence cardiaque au repos d’Apple Santé en un score de disponibilité quotidien et un score de sommeil, et suit la dette de sommeil par rapport à votre propre objectif. « Pourquoi ce score ? » explique chaque chiffre en langage clair.</div></div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">Questions fréquentes</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Qu’est-ce qu’une application de productivité sans pression ?</summary><div class="faq-a">Une application qui organise la journée que vous avez vraiment et vous laisse tranquille le reste du temps. C’est le principe de Taskful Day. Les tâches non terminées passent d’elles-mêmes à aujourd’hui, la liste Aujourd’hui n’affiche ni pastille de retard ni liste rouge, et l’app n’a ni publicité ni fil d’actualité qui réclame votre attention.</div></details>
+    <details class="faq-item"><summary>Quelle est la meilleure alternative aux planificateurs à séries ?</summary><div class="faq-a">Taskful Day, si vous voulez un planificateur où un jour manqué ne coûte rien. Les tâches que vous n’avez pas terminées passent à aujourd’hui quand vous ouvrez l’app, et rien dans la liste Aujourd’hui ne les signale en retard. Analyses affiche bien une série en cours et une meilleure série, mais comme un chiffre parmi d’autres.</div></details>
+    <details class="faq-item"><summary>Ces apps conviennent-elles aux personnes qui ont un TDAH ?</summary><div class="faq-a">Aucune n’est conçue comme un outil médical ou un outil pour le TDAH, et nous n’avançons donc rien à ce sujet. Taskful Day garde un seul jour sous les yeux et reporte les tâches non terminées au lieu de les empiler, et vous ajoutez une tâche en tapant une phrase, à la voix ou avec Siri. Soon. garde les dates qui comptent pour vous sur votre écran d’accueil et votre écran verrouillé. Les deux ont une version gratuite : vous pouvez voir si cette façon de travailler vous convient.</div></details>
+    <details class="faq-item"><summary>Ces apps revendent-elles mes données ?</summary><div class="faq-a">Non. Aucune des trois n’affiche de publicité, n’exige de compte ni ne contient de SDK tiers d’analyse ou de publicité. Taskful Day garde vos tâches sur votre appareil, ou dans votre propre iCloud si vous activez la synchronisation avec Pro. Soon. garde vos événements sur votre appareil et les synchronise via votre propre iCloud. Observa garde vos données de santé sur votre appareil. Ce sont les mises à niveau facultatives Pro et Premium qui financent les apps.</div></details>
+    <details class="faq-item"><summary>Existe-t-il un planificateur de journée sans culpabilité sur Mac, iPhone et iPad ?</summary><div class="faq-a">Oui. Taskful Day fonctionne sur iPhone, iPad et Mac, avec une app Apple Watch qui fonctionne avec l’app iPhone. Avec Pro, la synchronisation iCloud, via votre propre iCloud privé, affiche la même journée sur chaque appareil. Sur Mac, vous avez des widgets petits, moyens et grands ; la saisie vocale existe sur iPhone et iPad.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Par où commencer</p>
+  <h2 class="h2">Commencez par Taskful Day</h2>
+  <p class="lead">C’est le centre des trois apps. La version gratuite couvre vos 50 premières tâches, et chaque nouvelle installation profite de 7 jours de Pro offerts, sans carte bancaire.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/taskful-day/" %}"{% if l_en %} hreflang="en"{% endif %}>Découvrir Taskful Day{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Voir toutes les apps{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

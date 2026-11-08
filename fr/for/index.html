@@ -1,0 +1,75 @@
+---
+layout: default
+ref: /for/
+permalink: /fr/for/
+translated_from: 2026-10-29
+title: "Pour qui"
+quick_answer: "Lagerland Apps associe ses apps Apple à des profils précis. En français, trois pages existent : le travail de nuit et les horaires décalés, quand on dort à des heures inhabituelles ; les utilisateurs assidus d’Apple Santé, qui collectent déjà leurs données ; et l’organisation de la journée sans la pression des séries. Chaque page recommande trois ou quatre apps, dit ce que chacune apporte à ce profil et nomme celle par laquelle commencer."
+seo:
+  title: "Pour qui : nos apps Apple selon votre profil"
+  description: "Nos apps Apple associées à trois profils : travail de nuit et sommeil, utilisateurs d’Apple Santé, organisation de la journée sans pression."
+  keywords:
+    - travail de nuit sommeil
+    - application apple santé
+    - application organisation journée
+    - application horaires décalés
+    - applications iphone selon votre profil
+last_updated: 2026-11-08
+---
+{%- include t.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/fr/for/#webpage",
+  "url": "{{ site.url }}/fr/for/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "fr",
+  "datePublished": "2026-11-08",
+  "isPartOf": { "@id": "{{ site.url }}/fr/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Pour qui", "item": "{{ site.url }}/fr/for/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 3,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Travail de nuit et sommeil : les meilleures apps iPhone", "url": "{{ site.url }}{% include l.html url="/for/shift-workers/" %}" },
+      { "@type": "ListItem", "position": 2, "name": "Application Apple Santé : analysez vos données", "url": "{{ site.url }}{% include l.html url="/for/apple-health-power-users/" %}" },
+      { "@type": "ListItem", "position": 3, "name": "Application organisation journée : iPhone, iPad et Mac", "url": "{{ site.url }}{% include l.html url="/for/calm-productivity/" %}" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Profil → apps</p>
+    <h1 class="h1">Des apps adaptées à<br><span class="gradient-text">votre façon de vivre et de travailler.</span></h1>
+    <p class="lead">Trois pages courtes : chacune associe quelques-unes de nos apps à un type d’horaires ou de métier, et nomme celle par laquelle commencer.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="grid grid-2 stagger">
+    <a class="card card-app" href="{% include l.html url="/for/shift-workers/" %}">
+      <div class="card-title">Pour les horaires décalés</div>
+      <div class="card-text">Infirmiers, ambulanciers et tous ceux qui travaillent de nuit ou en rotation : un sommeil mesuré d’un poste au suivant, un score de disponibilité quotidien, et des tâches et des factures qui ne vous échappent pas quand vos horaires changent.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/for/apple-health-power-users/" %}">
+      <div class="card-title">Pour les utilisateurs d’Apple Santé</div>
+      <div class="card-text">Votre Apple Watch enregistre déjà votre sommeil, votre VFC et votre fréquence cardiaque. Observa en tire un score de disponibilité quotidien, avec la raison, et l’analyse se fait sur votre appareil.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/for/calm-productivity/" %}">
+      <div class="card-title">Organiser sa journée sans pression</div>
+      <div class="card-text">Un planificateur de journée qui reporte ce que vous n’avez pas terminé sans afficher de liste rouge de retards, et des comptes à rebours vers les dates qui comptent pour vous.</div>
+    </a>
+  </div>
+</section>

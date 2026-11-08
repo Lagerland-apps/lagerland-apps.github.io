@@ -1,0 +1,148 @@
+---
+layout: default
+ref: /for/shift-workers/
+permalink: /fr/for/shift-workers/
+translated_from: 2026-10-29
+title: "Travail de nuit et sommeil : les applications iPhone"
+quick_answer: "Pour le travail de nuit et le sommeil sur iPhone, commencez par AfterShift : l’app mesure votre sommeil de la fin d’un poste au début du suivant, siestes comprises, remplit votre planning 8 semaines à l’avance à partir d’une rotation qui se répète, et cale la limite de caféine et les rappels de sieste sur votre prochain poste. Ajoutez Observa pour un score de disponibilité quotidien tiré du sommeil, de la VFC et de la fréquence cardiaque au repos d’Apple Santé, Taskful Day pour un planificateur de journée qui reporte ce que vous n’avez pas terminé, et AllPaid pour des rappels de factures sans connexion bancaire. Aucune des quatre ne demande de compte et aucune n’envoie vos données à Lagerland Apps."
+seo:
+  title: "Travail de nuit et sommeil : les meilleures apps iPhone"
+  description: "Apps iPhone pour le travail de nuit ou posté : un sommeil mesuré d’un poste au suivant, un score de disponibilité quotidien et aucun compte à créer."
+  keywords:
+    - travail de nuit sommeil
+    - dormir après travail de nuit
+    - travail posté sommeil
+    - travail de nuit conseil sommeil
+    - travail de nuit rythme sommeil
+    - application travail de nuit
+    - application sommeil horaires décalés
+    - application infirmier iphone
+last_updated: 2026-11-08
+---
+{%- include t.html -%}
+{%- assign shift_apps_slugs = "aftershift,observa,taskful-day,allpaid" | split: "," -%}
+{%- assign shift_apps = '' | split: '' -%}
+{%- for slug in shift_apps_slugs -%}
+  {%- assign match = site.apps | where: "slug", slug | first -%}
+  {%- if match and match.status == "live" -%}{%- assign shift_apps = shift_apps | push: match -%}{%- endif -%}
+{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/fr/for/shift-workers/#webpage",
+  "url": "{{ site.url }}/fr/for/shift-workers/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/fr/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "fr",
+  "datePublished": "2026-11-08",
+  "audience": {
+    "@type": "PeopleAudience",
+    "audienceType": "Travailleurs postés, infirmiers, ambulanciers, pompiers et toutes les personnes qui travaillent en horaires décalés"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Pour les horaires décalés", "item": "{{ site.url }}/fr/for/shift-workers/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "fr",
+  "mainEntity": [
+    { "@type": "Question", "name": "Quelle est la meilleure application de sommeil sur iPhone pour le travail posté ou de nuit ?", "acceptedAnswer": { "@type": "Answer", "text": "AfterShift est celle que nous avons conçue pour cela. La plupart des applications de sommeil comptent votre journée de minuit à minuit, ce qui coupe en deux le sommeil d’une personne qui travaille de nuit. AfterShift mesure le sommeil de la fin d’un poste au début du suivant, compte les siestes dans cette fenêtre et cale la limite de caféine et les rappels de sieste sur votre prochain poste. Le planning, l’import du sommeil et les rappels sont gratuits ; l’état de récupération, les scores de sommeil et de récupération et les tendances font partie d’AfterShift Premium." } },
+    { "@type": "Question", "name": "Comment suivre ma récupération quand je suis infirmier ou infirmière de nuit ?", "acceptedAnswer": { "@type": "Answer", "text": "Tenez votre planning dans AfterShift et laissez votre sommeil, siestes comprises, s’importer depuis Apple Santé. Notez-y aussi la caféine et les siestes supplémentaires. Ajoutez ensuite Observa si vous voulez une lecture quotidienne de votre corps : l’app calcule un score de disponibilité à partir du sommeil, de la VFC (SDNN), de la fréquence cardiaque au repos et de la charge d’entraînement, par rapport à votre propre référence, et « Pourquoi ce score ? » indique ce qui l’a fait bouger. Il vous faut une Apple Watch ou une app de sommeil qui enregistre le sommeil dans Apple Santé." } },
+    { "@type": "Question", "name": "Ces applications sont-elles gratuites ?", "acceptedAnswer": { "@type": "Answer", "text": "Les quatre se téléchargent gratuitement, et chacune a une version gratuite que vous pouvez garder. Dans AfterShift, le planning, l’import du sommeil et les rappels calés sur vos postes sont gratuits, et Premium ajoute les scores de récupération et les tendances. Dans Observa, la disponibilité quotidienne, le score de sommeil et la lecture du stress sont gratuits, et Premium ajoute les tendances à long terme, l’âge fonctionnel, l’historique ECG et l’analyse de l’entraînement. Taskful Day est gratuite pour vos 50 premières tâches, et AllPaid l’est jusqu’à 3 factures. Aucune des quatre ne demande de compte." } },
+    { "@type": "Question", "name": "Ces applications fonctionnent-elles si mes horaires changent ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Dans AfterShift, vous choisissez l’une des sept rotations prédéfinies, comme 4 postes / 4 repos ou Panama (2-2-3), ou vous créez votre propre cycle de 28 jours maximum, et l’app remplit votre planning 8 semaines à l’avance. Vous nommez vous-même vos types de poste et vos jours de repos, si bien que journées longues, nuits et astreintes y trouvent leur place. Quand le planning change, un appui prolongé sur un poste permet de l’allonger, de le déplacer ou de l’échanger. Taskful Day planifie un jour à la fois, et les tâches non terminées passent à aujourd’hui quand vous rouvrez l’app." } },
+    { "@type": "Question", "name": "Ces applications se synchronisent-elles avec l’Apple Watch ?", "acceptedAnswer": { "@type": "Answer", "text": "Observa et AfterShift lisent toutes deux Apple Santé : ce que votre Apple Watch y enregistre leur parvient donc sans appairage supplémentaire. AfterShift lit votre sommeil. Observa lit le sommeil, la fréquence cardiaque, la VFC et les entraînements, et elle a aussi sa propre app Apple Watch avec la disponibilité et le conseil d’entraînement. Taskful Day a elle aussi une app Apple Watch, qui fonctionne avec l’app iPhone. AfterShift et AllPaid sont des apps iPhone." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Infirmiers · ambulanciers · pompiers · horaires décalés</p>
+    <h1 class="h1">Travail de nuit et sommeil :<br><span class="gradient-text">les applications iPhone pour vos horaires.</span></h1>
+    <p class="lead">
+      La plupart des applications de sommeil vous jugent sur des horaires de bureau. Si vous faites du travail posté (en 3×8, par exemple), si vous travaillez de nuit ou si vous dormez en plusieurs fois, elles comptent votre sommeil dans la mauvaise fenêtre et vous fixent des objectifs qui ne collent pas à votre semaine. AfterShift part plutôt de votre planning, et trois autres apps la complètent.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">Voir les apps</a>
+      <a class="btn btn-secondary" href="#faq">Questions fréquentes</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Pourquoi la plupart des applications de sommeil ne conviennent-elles pas au travail posté ?</h2>
+  <p class="lead">Elles supposent que le sommeil a lieu une fois par jour, la nuit, d’une traite, et elles le comptent de minuit à minuit. Or vous faites une sieste avant une nuit de travail, vous dormez en deux fois après, et votre « journée » commence quand votre dernier poste s’est terminé. Un suivi pensé pour des horaires de bureau coupe ce sommeil sur deux dates, si bien qu’une seule bonne période de sommeil peut passer pour deux nuits courtes.</p>
+  <p class="lead">AfterShift mesure à la place la fenêtre entre vos postes, et les trois autres apps s’occupent de ce qui vous échappe quand vos horaires bougent : lire votre récupération, planifier vos heures d’éveil et ne pas oublier les factures.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Les apps</p>
+    <h2 class="h2">Quatre apps qui se complètent et gardent vos données privées</h2>
+    <p class="lead">Utilisez-les ensemble ou séparément. Les quatre viennent de Lagerland Apps, un studio finlandais d’une seule personne, respectueux de la vie privée. Aucune ne vous demande de créer un compte et aucune ne nous envoie vos données.</p>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in shift_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Comment ces apps se complètent-elles pour le travail posté ?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">1. AfterShift : le planning</div>
+      <div class="card-text">Réglez votre rotation une fois et AfterShift remplit votre planning 8 semaines à l’avance. Nommez autant de types de poste et de jours de repos que votre lieu de travail en utilise, journées longues et nuits comprises. Le sommeil s’importe depuis Apple Santé, avec les siestes repérées comme telles, et les rappels de détente, de limite de caféine et de sieste sont calés sur votre prochain poste. Premium ajoute l’état de récupération pour votre prochain poste, le score de sommeil et le score de récupération par postes.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">2. Observa : l’interprétation</div>
+      <div class="card-text">Observa lit le sommeil, la VFC (SDNN), la fréquence cardiaque au repos et les entraînements que votre Apple Watch enregistre dans Apple Santé, et en tire un score de disponibilité quotidien, un score de sommeil et une lecture du stress, chacun par rapport à votre propre référence. Touchez « Pourquoi ce score ? » pour voir ce qui l’a fait bouger. Les scores quotidiens sont gratuits.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">3. Taskful Day : la planification</div>
+      <div class="card-text">Taskful Day planifie un jour à la fois et ne présume pas du moment où cette journée commence. Les tâches que vous n’avez pas faites avant une série de nuits passent à aujourd’hui quand vous ouvrez l’app, si bien que la liste ne devient jamais une pile rouge de tâches en retard. Ajoutez une tâche en tapant une phrase, à la voix ou avec Siri.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">4. AllPaid : les factures</div>
+      <div class="card-text">Quand votre sommeil bouge chaque semaine, les échéances se perdent facilement. Saisissez une fois le loyer, les charges et les abonnements : AllPaid vous prévient avant chaque échéance et reporte la facture à sa prochaine échéance quand vous la marquez comme payée. L’app ne demande jamais vos identifiants bancaires, et elle est gratuite jusqu’à 3 factures.</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center">
+    <p class="overline">Questions</p>
+    <h2 class="h2">Questions fréquentes</h2>
+  </div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Quelle est la meilleure application de sommeil sur iPhone pour le travail posté ou de nuit ?</summary><div class="faq-a">AfterShift est celle que nous avons conçue pour cela. La plupart des applications de sommeil comptent votre journée de minuit à minuit, ce qui coupe en deux le sommeil d’une personne qui travaille de nuit. AfterShift mesure le sommeil de la fin d’un poste au début du suivant, compte les siestes dans cette fenêtre et cale la limite de caféine et les rappels de sieste sur votre prochain poste. Le planning, l’import du sommeil et les rappels sont gratuits ; l’état de récupération, les scores de sommeil et de récupération et les tendances font partie d’AfterShift Premium.</div></details>
+    <details class="faq-item"><summary>Comment suivre ma récupération quand je suis infirmier ou infirmière de nuit ?</summary><div class="faq-a">Tenez votre planning dans AfterShift et laissez votre sommeil, siestes comprises, s’importer depuis Apple Santé. Notez-y aussi la caféine et les siestes supplémentaires. Ajoutez ensuite Observa si vous voulez une lecture quotidienne de votre corps : l’app calcule un score de disponibilité à partir du sommeil, de la VFC (SDNN), de la fréquence cardiaque au repos et de la charge d’entraînement, par rapport à votre propre référence, et « Pourquoi ce score ? » indique ce qui l’a fait bouger. Il vous faut une Apple Watch ou une app de sommeil qui enregistre le sommeil dans Apple Santé.</div></details>
+    <details class="faq-item"><summary>Ces applications sont-elles gratuites ?</summary><div class="faq-a">Les quatre se téléchargent gratuitement, et chacune a une version gratuite que vous pouvez garder. Dans AfterShift, le planning, l’import du sommeil et les rappels calés sur vos postes sont gratuits, et Premium ajoute les scores de récupération et les tendances. Dans Observa, la disponibilité quotidienne, le score de sommeil et la lecture du stress sont gratuits, et Premium ajoute les tendances à long terme, l’âge fonctionnel, l’historique ECG et l’analyse de l’entraînement. Taskful Day est gratuite pour vos 50 premières tâches, et AllPaid l’est jusqu’à 3 factures. Aucune des quatre ne demande de compte.</div></details>
+    <details class="faq-item"><summary>Ces applications fonctionnent-elles si mes horaires changent ?</summary><div class="faq-a">Oui. Dans AfterShift, vous choisissez l’une des sept rotations prédéfinies, comme 4 postes / 4 repos ou Panama (2-2-3), ou vous créez votre propre cycle de 28 jours maximum, et l’app remplit votre planning 8 semaines à l’avance. Vous nommez vous-même vos types de poste et vos jours de repos, si bien que journées longues, nuits et astreintes y trouvent leur place. Quand le planning change, un appui prolongé sur un poste permet de l’allonger, de le déplacer ou de l’échanger. Taskful Day planifie un jour à la fois, et les tâches non terminées passent à aujourd’hui quand vous rouvrez l’app.</div></details>
+    <details class="faq-item"><summary>Ces applications se synchronisent-elles avec l’Apple Watch ?</summary><div class="faq-a">Observa et AfterShift lisent toutes deux Apple Santé : ce que votre Apple Watch y enregistre leur parvient donc sans appairage supplémentaire. AfterShift lit votre sommeil. Observa lit le sommeil, la fréquence cardiaque, la VFC et les entraînements, et elle a aussi sa propre app Apple Watch avec la disponibilité et le conseil d’entraînement. Taskful Day a elle aussi une app Apple Watch, qui fonctionne avec l’app iPhone. AfterShift et AllPaid sont des apps iPhone.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">On commence ?</p>
+  <h2 class="h2">Commencez par AfterShift</h2>
+  <p class="lead">Saisissez votre rotation une fois et AfterShift remplit les 8 prochaines semaines. Ajoutez les autres apps quand vous en avez envie.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/aftershift/" %}"{% if l_en %} hreflang="en"{% endif %}>Découvrir AfterShift{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Voir toutes les apps{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

@@ -1,0 +1,87 @@
+---
+layout: default
+ref: /guides/
+permalink: /fr/guides/
+translated_from: 2026-10-29
+title: "Guides"
+quick_answer: "Les guides de Lagerland Apps sont des articles courts pour iPhone et Mac qui partent d’un problème précis, comparent les apps qui y répondent et disent ce que chacune fait et ne fait pas. En français, ils couvrent la meilleure application d’échecs pour iPhone, les jeux de logique sans publicité, l’application de musculation sans abonnement, ainsi que le shogi et les échecs chinois (xiangqi) sans savoir lire le japonais ni le chinois. Chaque guide nomme des apps précises, dit laquelle choisir selon le cas et signale nos propres apps comme les nôtres."
+seo:
+  title: "Guides iPhone : échecs, shogi, logique, musculation"
+  description: "Des guides qui partent d’un problème : meilleure application échecs, jeux de logique iPhone, musculation sans abonnement, shogi et échecs chinois."
+  keywords:
+    - meilleure application échecs
+    - jeux de logique iphone
+    - application musculation sans abonnement
+    - application shogi
+    - échecs chinois
+    - guides applications iphone
+    - comparatif applications iphone
+last_updated: 2026-11-08
+---
+{%- include t.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/fr/guides/#webpage",
+  "url": "{{ site.url }}/fr/guides/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "fr",
+  "datePublished": "2026-11-08",
+  "isPartOf": { "@id": "{{ site.url }}/fr/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "{{ site.url }}/fr/guides/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 5,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Application de musculation sans abonnement", "url": "{{ site.url }}{% include l.html url="/guides/workout-app-without-subscription/" %}" },
+      { "@type": "ListItem", "position": 2, "name": "Les meilleures applications de shogi pour iPhone", "url": "{{ site.url }}{% include l.html url="/guides/best-shogi-apps-iphone/" %}" },
+      { "@type": "ListItem", "position": 3, "name": "Les meilleures applications d’échecs chinois (xiangqi) pour iPhone", "url": "{{ site.url }}{% include l.html url="/guides/best-xiangqi-apps-iphone/" %}" },
+      { "@type": "ListItem", "position": 4, "name": "Les meilleurs jeux de logique pour iPhone", "url": "{{ site.url }}{% include l.html url="/guides/best-logic-puzzle-games-iphone/" %}" },
+      { "@type": "ListItem", "position": 5, "name": "La meilleure application d’échecs pour iPhone, selon l’usage", "url": "{{ site.url }}{% include l.html url="/guides/best-chess-apps-iphone/" %}" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Problème → réponse</p>
+    <h1 class="h1">Des guides qui partent<br><span class="gradient-text">d’un problème concret.</span></h1>
+    <p class="lead">Des guides courts qui partent d’une frustration précise (<em>« Je veux une application de musculation sans abonnement »</em>), proposent une réponse native sur Apple et respectueuse de la vie privée, et disent ce que chaque app fait et ne fait pas.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="grid grid-2 stagger">
+    <a class="card card-app" href="{% include l.html url="/guides/workout-app-without-subscription/" %}">
+      <div class="card-title">« Je veux une application de musculation sans abonnement. »</div>
+      <div class="card-text">Fitbod ne vend ses offres payantes qu’en abonnement ; Strong et Hevy proposent Pro en abonnement ou en achat à vie. LiftLog s’achète une seule fois, sans abonnement, et GymLogger X a une version gratuite, avec Pro en abonnement ou à vie pour {P_LIFETIME@gymlogger-x}.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/guides/best-shogi-apps-iphone/" %}">
+      <div class="card-title">« Je veux apprendre le shogi, mais toutes les apps partent du principe que je lis le japonais. »</div>
+      <div class="card-text">PiyoShogi, Shogiful, Lishogi, Kanazawa Shogi 2 et d’autres comparées, les gratuites d’abord, avec la question des kanji pour chacune.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/guides/best-xiangqi-apps-iphone/" %}">
+      <div class="card-title">« Je veux apprendre les échecs chinois, mais toutes les apps partent du principe que je lis le chinois. »</div>
+      <div class="card-text">Xiangqi.com, PyChess, Xiangqiful, Best XiangQi, Club Xiangqi et PlayOK comparées, les gratuites d’abord, avec la question des caractères pour chacune.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/guides/best-logic-puzzle-games-iphone/" %}">
+      <div class="card-title">« Je veux un jeu de logique qui ait une réponse nette, sans publicité ni vies. »</div>
+      <div class="card-text">Baba Is You, Simon Tatham’s Puzzles, Good Sudoku, Nonograms Katana, Threes!, Flow Free, Tare, Millrace et d’autres comparés, les jeux sans publicité d’abord.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/guides/best-chess-apps-iphone/" %}">
+      <div class="card-title">« Quelle est la meilleure application d’échecs, et laquelle m’aide vraiment à progresser ? »</div>
+      <div class="card-text">Lichess, Chess.com, Chessful, Chessable et d’autres comparées selon l’usage : jouer, apprendre des ouvertures ou comprendre pourquoi vous perdez. Les gratuites d’abord.</div>
+    </a>
+  </div>
+</section>

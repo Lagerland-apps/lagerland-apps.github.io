@@ -11,6 +11,7 @@ reviewing any French page. Every decision a translator would otherwise make diff
 | Keyword research (Tier 1) | done 2026-11-07 (Search Console has almost no French queries yet; see Keywords) |
 | Tier 1 pages | done 2026-11-08: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/fr.yml`), /fr/llms.txt, /fr/llms-full.txt, 21 OG cards |
 | Live | yes, `live: true` since 2026-11-08 (Tier 1; go-live commit not yet pushed) |
+| Tier 2, batch 1 | written and integrated 2026-11-08, no native review yet: hubs /fr/guides/ and /fr/for/; guides best-chess-apps-iphone, best-logic-puzzle-games-iphone, workout-app-without-subscription, best-shogi-apps-iphone, best-xiangqi-apps-iphone; for/shift-workers, for/apple-health-power-users, for/calm-productivity. Not yet: guides/bill-tracker-without-bank-connection (low demand; its US apps Rocket Money, Monarch and Copilot are not sold in France, needs a Bankin'/Linxo rewrite) and for/indie-ios-developers (French developers search in English). Research and French-store check of every named competitor: ~/Downloads/githubcode/fr-tier2-research-2026-11-08.md. Stale check before the batch: 0 French pages stale |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 56 s before French (2026-11-07), 80 s with French Tier 1 (2026-11-08, clean run, `--profile`). Hot spot: `_includes/tx-app.html` 44 s over 968 calls, then footer 30 s: each new language makes it worse; worth a map lookup before the next language |
 
@@ -170,6 +171,14 @@ and the App Store. Revisit 4 to 6 weeks after go-live with the page filter `/fr/
 | WanderWiki (swipe Wikipedia) | `wikipedia aléatoire` | `wikipedia au hasard`, `wikipedia article aléatoire` |
 | Xiangqiful (xiangqi) | `échecs chinois` | `xiangqi`, `comment jouer aux échecs chinois` |
 | Clippet (clipboard manager; unlisted until launch) | `historique presse-papier iphone` | `gestionnaire presse-papier mac`, `application presse-papier iphone` |
+| /fr/guides/best-chess-apps-iphone/ | `meilleure application échecs` | `quelle application pour apprendre les échecs`, `application échecs sans pub`, `chess.com ou lichess` |
+| /fr/guides/best-logic-puzzle-games-iphone/ | `jeux de logique iphone` | `jeu de logique sans pub`, `jeu de réflexion sans pub`, `meilleur jeu de logique iphone` |
+| /fr/guides/workout-app-without-subscription/ | `application musculation sans abonnement` (shared with LiftLog) | `application fitness sans abonnement`, `application sport sans abonnement` |
+| /fr/guides/best-shogi-apps-iphone/ | `application shogi` | `apprendre le shogi`, `échecs japonais`, `shogi en ligne` |
+| /fr/guides/best-xiangqi-apps-iphone/ | `échecs chinois` (shared with Xiangqiful) | `xiangqi`, `apprendre les échecs chinois`, `échecs chinois en ligne` |
+| /fr/for/shift-workers/ | `travail de nuit sommeil` (shared with AfterShift; owner question) | `dormir après travail de nuit`, `travail posté sommeil`, `application travail de nuit` |
+| /fr/for/apple-health-power-users/ | `application apple santé` | `meilleure application santé apple watch`, `hrv apple watch` |
+| /fr/for/calm-productivity/ | `application organisation journée` (concept « sans pression des séries » has no French query) | `application planning journée`, `application to do list iphone` |
 
 Wording rules from the research: « application » beats « appli » and « app » in searches, so titles and H1 use
 « application »; body copy may say « app ». Privacy is searched as « sans pub », « sans publicité », rarely
@@ -228,6 +237,8 @@ in a one-person studio's footer; « émis par » for a place of issue (« émis 
 
 Found in the Tier 1 reviews (2026-11-08): « tournent sur » for "run on" (« fonctionnent sur »); « balayage » for a swipe; « vrai(e) » as a sales adjective (« une vraie gestion », « une vraie app Mac »: write « complète », « native »); noun calques such as « décaleur de phase » (use a verb); « soignants » for "nurses" (don't widen the audience); « un tap », « d’une pression » (write « d’un seul toucher », « d’une touche »); « cédez » for "reach for" (adds guilt); « jeu » for a set of screenshots (reads as "game": « jeu de screenshots »); « dès que » for "once" in a condition; « compter à l’envers » / « décompter » for counting up or ticking people off (opposite meaning); « application compte à rebours » in prose (write « application de compte à rebours »; the noun-noun form only in keywords); « celles et ceux » doublets for a singular English subject; a missing « ne » (« déclare aucun »); « séchez » for being stuck; store IAP names where the English means the Settings label; « que Apple » without elision; « un jour sur sept » for "every seventh day". In policies: « bien » that strengthens a statement (« a bien été livré »), « n’y avons pas accès » for "we don't have it", « prélèvements » for charges (« débits »), « si » + conditional (« si nous préférerions »), « moyens de paiement » for payment details (« données de paiement »), agreement after a mixed-gender list.
 
+Found in the Tier 2 reviews (2026-11-08): « sans paywall » (write « sans fonction payante »); « derrière le mur payant » (« réservé à la version payante »); « en un minimum de touches » for taps (« touchers »); « Ça fonctionne, et ça … » (spoken register); « sont de nous » (« sont les nôtres »); « est éditée par l’éditeur »; « pèse 15 % de » (« représente »); « travaille de pair avec » (« fonctionne avec »); « Curieux de savoir… ? » as a heading (gendered); gendered participles in a vous sentence (« où vous êtes éveillé »: rephrase with a noun); an app switching gender inside one page (always feminine, « l’app »); « Pourquoi » + noun subject without complex inversion; « (vérifiée le …) » after a plural or mixed subject; store IAP names quoted in prose (« Débloquez les packs et retirez les pubs ») instead of saying what the purchase does; store-language facts or competitor prices added where English is silent; narrowing calques (« pour le travail de nuit » for "shift workers": « travail posté ou de nuit »).
+
 ## Decisions from the Tier 1 reviews (2026-11-08)
 
 - Apple's sleep stages in prose: éveil, sommeil paradoxal, sommeil lent, sommeil profond (Apple FR). Observa's UI label « Noyau » is not used in prose; AfterShift quotes its own UI labels (Éveillé, Léger, Profond, Paradoxal).
@@ -238,6 +249,20 @@ Found in the Tier 1 reviews (2026-11-08): « tournent sur » for "run on" (« fo
 - Tier names follow the French UI except AppMeta Pulse, which keeps the English site's « Pro » (the app has no tier name; owner question below).
 - Prices on comparison footnotes stay as the English page dates them (US App Store checks); no French competitor price was added.
 - The transparency page keeps Apple's two ATT button labels in one parenthesis (accurate per fr-apple-terms.md; owner may drop for strict parity).
+
+## Decisions from the Tier 2 reviews (2026-11-08)
+
+- Competitor prices on French pages: the EUR row from the French App Store, typed with U+00A0 before €, plus a dated line
+  « vérifiés dans l’App Store français le 8 novembre 2026 ». Only where the English page states an amount; where English gives
+  only the plan structure, no French price is added (owner question below). Several rows for one product: « à partir de » the
+  lowest, or the listed range. Arithmetic on competitor prices (the ten-year box) uses the lowest current monthly row.
+- A competitor not sold in the French App Store is marked « absente de l’App Store français (vérifiée le 8 novembre 2026) »
+  and kept out of every pick and ItemList. Shogi Wars, Shogi Quest Online and Kakinoki Shogi are absent (Shogi Wars and
+  Shogi Quest are sold in BE and CH); the Tier 1 Shogiful page and /fr/llms.txt now say so where they sent readers to it.
+- Hubs list only the French children; untranslated pages are listed under « Uniquement en anglais » in /fr/llms.txt.
+- No hand-typed « Mis à jour en <mois> » overline on guides and /for/ pages: the layout prints the date.
+- « Fédération japonaise de shogi » for the Japan Shogi Association (as on the Shogiful page).
+- Primary queries keep the noun-noun search form only in seo.title and keywords; H1 and prose write « application d’échecs ».
 
 ## House rules carried over
 
@@ -262,6 +287,9 @@ Found in the Tier 1 reviews (2026-11-08): « tournent sur » for "run on" (« fo
 | about | writer agent | reviewer R10 2026-11-08: 1 must-fix (gendered pronoun), 3 should-fix | 2026-11-08, 41 claims, 0 mismatches | no native review yet |
 | support hub, transparency, `_data/i18n_transparency/fr.yml` | writer agents | reviewer R10 2026-11-08: support hub refund path removed (English doesn't state it), 8 data-file term fixes | n/a | no native review yet |
 | /fr/llms.txt, /fr/llms-full.txt, OG cards | writer agent (45 routing lines) | main session checks (gate, i18n check) | n/a | no native review yet |
+| Tier 2 batch 1: 5 guides, 3 audience pages | one writer agent (Sonnet) each | reviewers R-games and R-people 2026-11-08 (copy-editing, fact diff against English and the French-store check, glossary, SEO/schema); EUR prices not in English removed | n/a (Tier 2) | no native review yet |
+| /fr/guides/, /fr/for/ hubs | writer agent (Sonnet) | reviewer R-people 2026-11-08 | n/a | no native review yet |
+| /fr/llms.txt Tier 2 lines, Shogiful Shogi Wars note, LiftLog and Xiangqiful guide links | main session | reviewer R-wiring 2026-11-08 | n/a | no native review yet |
 
 ## Apps still on English screenshots
 

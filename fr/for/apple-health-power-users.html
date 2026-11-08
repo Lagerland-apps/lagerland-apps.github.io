@@ -1,0 +1,135 @@
+---
+layout: default
+ref: /for/apple-health-power-users/
+permalink: /fr/for/apple-health-power-users/
+translated_from: 2026-10-29
+title: "Applications Apple Santé pour utilisateurs assidus"
+quick_answer: "Pour les utilisateurs assidus d’Apple Santé et d’Apple Watch, commencez par Observa, une application pour Apple Santé qui transforme chaque matin votre sommeil, votre VFC (SDNN), votre fréquence cardiaque au repos et votre charge d’entraînement en un score de disponibilité de 0 à 100, mesuré par rapport à votre propre référence. Elle répond à « Devrais-je m’entraîner aujourd’hui ? » en donnant la raison, fonctionne sur iPhone, iPad et Apple Watch, et l’analyse se fait sur votre appareil. Ajoutez GymLogger X, un carnet de musculation avec app Apple Watch qui enregistre vos séances terminées dans Apple Santé, et AfterShift si vous travaillez en horaires décalés et voulez un sommeil mesuré entre deux postes ; aucune des trois apps n’exige de compte ni n’affiche de publicité."
+seo:
+  title: "Application Apple Santé : analysez vos données"
+  description: "Votre Apple Watch mesure déjà sommeil, VFC et fréquence cardiaque. Observa en tire chaque jour un score de disponibilité expliqué, calculé sur l’appareil."
+  keywords:
+    - application apple santé
+    - meilleure application santé apple watch
+    - hrv apple watch
+    - application santé iphone
+    - variabilité de la fréquence cardiaque
+    - analyser données apple santé
+    - score de disponibilité apple watch
+    - application santé sans compte
+last_updated: 2026-11-08
+---
+{%- include t.html -%}
+{%- assign slugs = "observa,gymlogger-x,aftershift" | split: "," -%}
+{%- assign apps_for = '' | split: '' -%}
+{%- for slug in slugs -%}{%- assign m = site.apps | where: "slug", slug | first -%}{%- if m and m.status == "live" -%}{%- assign apps_for = apps_for | push: m -%}{%- endif -%}{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/fr/for/apple-health-power-users/#webpage",
+  "url": "{{ site.url }}/fr/for/apple-health-power-users/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/fr/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "fr",
+  "datePublished": "2026-11-08",
+  "audience": { "@type": "PeopleAudience", "audienceType": "Utilisateurs assidus d’Apple Watch et d’Apple Santé" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Pour les utilisateurs d’Apple Santé", "item": "{{ site.url }}/fr/for/apple-health-power-users/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "fr",
+  "mainEntity": [
+    { "@type": "Question", "name": "Quelle est la meilleure application pour analyser ses données Apple Santé ?", "acceptedAnswer": { "@type": "Answer", "text": "Si vous voulez que vos données Apple Santé deviennent une décision pour aujourd’hui, Observa est l’app que nous avons conçue pour cela. Chaque matin, elle calcule un score de disponibilité de 0 à 100 à partir du sommeil, de la VFC (SDNN), de la fréquence cardiaque au repos et de la charge d’entraînement, mesurés par rapport à votre propre référence, et « Devrais-je m’entraîner aujourd’hui ? » répond Pousser, Maintenir, Récupérer ou Repos, avec la raison. « Pourquoi ce score ? » montre quels signaux ont fait bouger chaque chiffre. Les scores quotidiens sont gratuits, et l’analyse se fait sur votre appareil." } },
+    { "@type": "Question", "name": "Observa envoie-t-elle mes données de santé sur Internet ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. L’analyse se fait sur votre iPhone, votre iPad ou votre Apple Watch, et l’app n’émet elle-même aucun appel réseau. Il n’y a ni compte ni synchronisation iCloud, et Observa ne contient aucun SDK d’analyse. Seuls les achats et les liens que vous ouvrez passent par Internet." } },
+    { "@type": "Question", "name": "En quoi Observa se distingue-t-elle d’AutoSleep ou de Gentler Streak ?", "acceptedAnswer": { "@type": "Answer", "text": "AutoSleep enregistre votre sommeil à partir des données de l’Apple Watch et lui attribue un score. Gentler Streak vous guide chaque jour sur l’intensité de votre activité. Observa lit chaque matin un tableau plus large dans Apple Santé et réunit sommeil, VFC (SDNN), fréquence cardiaque au repos et charge d’entraînement en un seul score de disponibilité, avec un conseil d’entraînement et les raisons qui le motivent. Elle lit le sommeil dans Apple Santé, quelle que soit l’app qui l’a enregistré, et peut donc fonctionner à côté de l’une comme de l’autre." } },
+    { "@type": "Question", "name": "Puis-je utiliser Observa avec mon app d’entraînement ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Observa lit les entraînements dans Apple Santé, quelle que soit l’app qui les a enregistrés. GymLogger X, notre carnet de musculation, enregistre chaque séance terminée dans Apple Santé si vous l’y autorisez. Ces séances comptent dans la charge d’entraînement d’Observa, qui représente 15 % du score de disponibilité et alimente le conseil d’entraînement." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Pour les utilisateurs assidus d’Apple Watch et d’Apple Santé</p>
+    <h1 class="h1">Vous collectez déjà les données.<br><span class="gradient-text">Ces applications Apple Santé les expliquent.</span></h1>
+    <p class="lead">Si vous portez une Apple Watch depuis des années, Apple Santé conserve des années de votre sommeil, de votre VFC, de votre fréquence cardiaque et de vos entraînements. L’app Santé les affiche sous forme de graphiques. Ces apps en font un conseil pour aujourd’hui, avec la raison qui le motive.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">Découvrir les apps</a>
+      <a class="btn btn-secondary" href="#faq">Questions fréquentes</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Qu’est-ce qui manque quand on n’utilise qu’Apple Santé ?</h2>
+  <p class="lead">Apple Santé conserve bien vos données et les affiche sous forme de graphiques et de moyennes. Reste à vous de les transformer en décision : savoir si la VFC de ce matin est basse <em>pour vous</em>, ce qui l’a fait baisser, et si la séance du jour doit être intense ou légère.</p>
+  <p class="lead">Les apps ci-dessous s’adressent aux personnes qui ont déjà les données et veulent savoir ce qu’elles signifient.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Les apps</p>
+    <h2 class="h2">Trois apps qui s’appuient sur Apple Santé</h2>
+    <p class="lead">Les trois viennent de Lagerland Apps, un studio indépendant installé en Finlande. Aucune n’exige de compte ni n’affiche de publicité, et aucune ne nous envoie vos données de santé.</p>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in apps_for -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Pourquoi associer ces trois apps ?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Observa : la lecture du jour</div>
+      <div class="card-text">Chaque matin, un score de disponibilité calculé à partir du sommeil, de la VFC (SDNN, telle qu’Apple Santé l’enregistre), de la fréquence cardiaque au repos et de la charge d’entraînement. S’y ajoutent un score de sommeil avec la dette de sommeil mesurée par rapport à votre propre objectif, et une lecture du stress qui nomme ses facteurs. Les Schémas classent les habitudes qui tendent à coïncider avec votre récupération sur 14, 28 ou 90 jours. Premium ajoute les tendances sur 30, 90 et 365 jours, l’âge fonctionnel, l’historique ECG et l’analyse de l’entraînement.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">GymLogger X : l’entraînement</div>
+      <div class="card-text">Un carnet de musculation pour iPhone, avec une app Apple Watch qui affiche votre fréquence cardiaque en direct pendant vos séries. Une fois l’accès à Apple Santé autorisé, chaque séance terminée y est enregistrée comme entraînement de musculation, et Observa la compte dans votre charge d’entraînement.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">AfterShift : le contexte du planning (facultatif)</div>
+      <div class="card-text">Si vous travaillez en horaires décalés, AfterShift lit votre sommeil dans Apple Santé et le mesure de la fin d’un poste au début du suivant, siestes comprises : le sommeil d’une personne qui travaille de nuit n’est ainsi pas coupé sur deux dates.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Confidentialité</div>
+      <div class="card-text">Aucune de ces apps n’envoie vos données de santé ou d’entraînement à Lagerland Apps, ni ne contient de SDK d’analyse tiers. Observa et AfterShift gardent leurs données sur l’appareil. GymLogger X conserve vos séances sur vos appareils, dans votre propre iCloud et dans Apple Santé.</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">Questions fréquentes</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Quelle est la meilleure application pour analyser ses données Apple Santé ?</summary><div class="faq-a">Si vous voulez que vos données Apple Santé deviennent une décision pour aujourd’hui, Observa est l’app que nous avons conçue pour cela. Chaque matin, elle calcule un score de disponibilité de 0 à 100 à partir du sommeil, de la VFC (SDNN), de la fréquence cardiaque au repos et de la charge d’entraînement, mesurés par rapport à votre propre référence, et « Devrais-je m’entraîner aujourd’hui ? » répond Pousser, Maintenir, Récupérer ou Repos, avec la raison. « Pourquoi ce score ? » montre quels signaux ont fait bouger chaque chiffre. Les scores quotidiens sont gratuits, et l’analyse se fait sur votre appareil.</div></details>
+    <details class="faq-item"><summary>Observa envoie-t-elle mes données de santé sur Internet ?</summary><div class="faq-a">Non. L’analyse se fait sur votre iPhone, votre iPad ou votre Apple Watch, et l’app n’émet elle-même aucun appel réseau. Il n’y a ni compte ni synchronisation iCloud, et Observa ne contient aucun SDK d’analyse. Seuls les achats et les liens que vous ouvrez passent par Internet.</div></details>
+    <details class="faq-item"><summary>En quoi Observa se distingue-t-elle d’AutoSleep ou de Gentler Streak ?</summary><div class="faq-a">AutoSleep enregistre votre sommeil à partir des données de l’Apple Watch et lui attribue un score. Gentler Streak vous guide chaque jour sur l’intensité de votre activité. Observa lit chaque matin un tableau plus large dans Apple Santé et réunit sommeil, VFC (SDNN), fréquence cardiaque au repos et charge d’entraînement en un seul score de disponibilité, avec un conseil d’entraînement et les raisons qui le motivent. Elle lit le sommeil dans Apple Santé, quelle que soit l’app qui l’a enregistré, et peut donc fonctionner à côté de l’une comme de l’autre.</div></details>
+    <details class="faq-item"><summary>Puis-je utiliser Observa avec mon app d’entraînement ?</summary><div class="faq-a">Oui. Observa lit les entraînements dans Apple Santé, quelle que soit l’app qui les a enregistrés. GymLogger X, notre carnet de musculation, enregistre chaque séance terminée dans Apple Santé si vous l’y autorisez. Ces séances comptent dans la charge d’entraînement d’Observa, qui représente 15 % du score de disponibilité et alimente le conseil d’entraînement.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Pour commencer</p>
+  <h2 class="h2">Commencez par Observa</h2>
+  <p class="lead">Observa lit ce que votre montre et vos autres apps enregistrent déjà dans Apple Santé. Les scores quotidiens sont gratuits, et toutes les fonctionnalités Premium sont débloquées pendant vos 7 premiers jours, sans inscription.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/observa/" %}"{% if l_en %} hreflang="en"{% endif %}>Découvrir Observa{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Voir toutes les apps{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>
