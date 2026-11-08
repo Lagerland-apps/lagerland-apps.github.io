@@ -15,7 +15,8 @@
   },
   "/alternatives/athlytic/": {
     "de": "/de/alternatives/athlytic/",
-    "en": "/alternatives/athlytic/"
+    "en": "/alternatives/athlytic/",
+    "fr": "/fr/alternatives/athlytic/"
   },
   "/alternatives/autosleep/": {
     "de": "/de/alternatives/autosleep/",
@@ -23,7 +24,8 @@
   },
   "/alternatives/bevel/": {
     "de": "/de/alternatives/bevel/",
-    "en": "/alternatives/bevel/"
+    "en": "/alternatives/bevel/",
+    "fr": "/fr/alternatives/bevel/"
   },
   "/alternatives/brick/": {
     "de": "/de/alternatives/brick/",
@@ -55,7 +57,8 @@
   },
   "/alternatives/fitbod/": {
     "de": "/de/alternatives/fitbod/",
-    "en": "/alternatives/fitbod/"
+    "en": "/alternatives/fitbod/",
+    "fr": "/fr/alternatives/fitbod/"
   },
   "/alternatives/forest/": {
     "de": "/de/alternatives/forest/",
@@ -104,7 +107,12 @@
   },
   "/alternatives/oura/": {
     "de": "/de/alternatives/oura/",
-    "en": "/alternatives/oura/"
+    "en": "/alternatives/oura/",
+    "fr": "/fr/alternatives/oura/"
+  },
+  "/alternatives/pdf-expert/": {
+    "en": "/alternatives/pdf-expert/",
+    "fr": "/fr/alternatives/pdf-expert/"
   },
   "/alternatives/productive/": {
     "de": "/de/alternatives/productive/",
@@ -112,7 +120,8 @@
   },
   "/alternatives/screenzen/": {
     "de": "/de/alternatives/screenzen/",
-    "en": "/alternatives/screenzen/"
+    "en": "/alternatives/screenzen/",
+    "fr": "/fr/alternatives/screenzen/"
   },
   "/alternatives/settle-up/": {
     "de": "/de/alternatives/settle-up/",
@@ -129,7 +138,8 @@
   },
   "/alternatives/strong-workout-app/": {
     "de": "/de/alternatives/strong-workout-app/",
-    "en": "/alternatives/strong-workout-app/"
+    "en": "/alternatives/strong-workout-app/",
+    "fr": "/fr/alternatives/strong-workout-app/"
   },
   "/alternatives/tricount/": {
     "de": "/de/alternatives/tricount/",
@@ -146,7 +156,8 @@
   },
   "/alternatives/welltory/": {
     "de": "/de/alternatives/welltory/",
-    "en": "/alternatives/welltory/"
+    "en": "/alternatives/welltory/",
+    "fr": "/fr/alternatives/welltory/"
   },
   "/alternatives/whoop/": {
     "de": "/de/alternatives/whoop/",
@@ -155,7 +166,8 @@
   },
   "/alternatives/wikipedia-app/": {
     "de": "/de/alternatives/wikipedia-app/",
-    "en": "/alternatives/wikipedia-app/"
+    "en": "/alternatives/wikipedia-app/",
+    "fr": "/fr/alternatives/wikipedia-app/"
   },
   "/apps/": {
     "de": "/de/apps/",
