@@ -1,0 +1,173 @@
+---
+layout: default
+ref: /guides/bill-tracker-without-bank-connection/
+permalink: /fr/guides/bill-tracker-without-bank-connection/
+translated_from: 2026-11-07
+title: "Application de gestion des abonnements sans connexion bancaire"
+quick_answer: "Pour une application de gestion des abonnements sans connexion bancaire, regardez AllPaid ({PLATFORMS@allpaid}), une app de Lagerland Apps (l’éditeur de ce guide) qui ne vous demande jamais l’accès à votre banque. Vous saisissez vous-même factures, abonnements et contrats ; AllPaid propose la catégorie et la fréquence pour les noms connus, vous rappelle chaque échéance, et un seul toucher marque une facture comme payée. Bankin’ et Linxo, elles, se connectent à vos comptes pour synchroniser et classer vos transactions. AllPaid est gratuite jusqu’à 3 factures, avec Pro à partir de {P_MONTHLY@allpaid}/mois."
+seo:
+  title: "Application de gestion des abonnements sans banque"
+  description: "Application de gestion des abonnements et factures sans accès à votre banque : Bankin’ et Linxo se connectent à vos comptes, AllPaid se remplit à la main."
+  keywords:
+    - application gestion abonnements
+    - application de gestion des abonnements
+    - gérer mes abonnements iphone
+    - gérer ses abonnements apple
+    - application gestion budget sans banque
+    - app suivi abonnements
+    - suivi factures sans connexion bancaire
+    - alternative à bankin
+last_updated: 2026-11-08
+---
+{%- include t.html -%}
+{%- assign app = site.apps | where: "slug", "allpaid" | first -%}
+{%- include app-facts.html app=app -%}
+{%- assign ap_devices = f_platforms_and | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Apple Watch" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/fr/guides/bill-tracker-without-bank-connection/#webpage",
+  "url": "{{ site.url }}/fr/guides/bill-tracker-without-bank-connection/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/fr/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "fr",
+  "datePublished": "2026-11-08",
+  "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "{{ site.url }}/fr/guides/" },
+      { "@type": "ListItem", "position": 3, "name": "Application de gestion des abonnements sans connexion bancaire", "item": "{{ site.url }}/fr/guides/bill-tracker-without-bank-connection/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "fr",
+  "mainEntity": [
+    { "@type": "Question", "name": "Existe-t-il une application de gestion des abonnements et des factures sans connexion bancaire ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. AllPaid (notre app) se remplit entièrement à la main, sans connexion bancaire ni agrégation de comptes, et sans compte à créer. Vous ajoutez vous-même factures, abonnements et contrats, puis vous les marquez comme payés. Vos factures restent sur vos appareils, sauf si vous activez la synchronisation iCloud (Pro), qui passe par votre propre iCloud privé." } },
+    { "@type": "Question", "name": "Pourquoi Bankin’ et Linxo demandent-elles l’accès à mes comptes bancaires ?", "acceptedAnswer": { "@type": "Answer", "text": "Parce que leur principe est de synchroniser vos transactions et de les classer automatiquement par catégories, ce qui suppose de se connecter à vos comptes. Bankin’ passe par Bridge (Perspecteev), agréée par l’ACPR. Linxo se synchronise chaque jour avec près de 320 banques et types de comptes et présente sa technologie comme agréée par la Banque de France. Si vous ne voulez pas donner cet accès, l’autre voie est la saisie à la main, et c’est ainsi que fonctionne AllPaid." } },
+    { "@type": "Question", "name": "Comment gérer mes abonnements sur iPhone ?", "acceptedAnswer": { "@type": "Answer", "text": "Ouvrez Réglages, touchez votre nom, puis Abonnements. Vous y voyez les abonnements souscrits avec votre compte Apple ; touchez-en un, puis « Annuler l’abonnement » pour y mettre fin. Cette liste ne montre que ce qu’Apple vous facture. AllPaid ne la lit pas : vous ajoutez vous-même dans AllPaid ce que vous voulez suivre, y compris ce qui ne passe pas par Apple, comme le loyer, les charges, le téléphone, l’assurance ou internet, et l’app vous rappelle chaque échéance." } },
+    { "@type": "Question", "name": "La saisie manuelle est-elle tenable au quotidien ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, une fois la mise en place faite. La plupart des factures récurrentes changent peu d’un mois à l’autre. Quand vous tapez un nom connu comme Netflix ou Spotify, AllPaid propose la catégorie et la fréquence, et marquer une facture comme payée prend un seul toucher, dans l’app ou sur le rappel." } },
+    { "@type": "Question", "name": "AllPaid a-t-elle des widgets et fonctionne-t-elle avec Siri ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. AllPaid a dix widgets, tous gratuits, dont Prochaine facture, À venir et Calendrier mensuel pour l’écran d’accueil, et une version de Prochaine facture pour l’écran verrouillé. Demandez à Siri « What bills are due in AllPaid » et il lit les factures à échéance dans les sept jours qui viennent ; les phrases pour Siri n’existent toutefois qu’en anglais." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Guide · Du problème à la réponse</p>
+    <h1 class="h1">
+      « Je cherche une application de gestion des abonnements<br><span class="gradient-text">sans connexion bancaire. »</span>
+    </h1>
+    <p class="lead">
+      Bankin’ et Linxo synchronisent vos transactions en se connectant à vos comptes bancaires. Si vous ne voulez pas donner cet accès à une app tierce, il existe une autre méthode : saisir vous-même vos factures et vos abonnements.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#answer">Aller à la réponse</a>
+      <a class="btn btn-secondary" href="#faq">Questions fréquentes</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Que font Bankin’ et Linxo, et que demandent-elles ?</h2>
+  <p class="lead">Bankin’ et Linxo sont deux applications de budget gratuites au téléchargement, avec des offres payantes en option. Toutes deux se connectent à vos comptes bancaires pour synchroniser vos transactions et les classer par catégories.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Bankin’</div><div class="card-text">Synchronise et catégorise automatiquement vos dépenses sur tous vos comptes, même ceux de banques différentes. La connexion aux banques passe par Bridge (Perspecteev), agréée par l’ACPR. L’app compte 92 652 notes dans l’App Store français.</div></div>
+    <div class="card"><div class="card-title">Linxo</div><div class="card-text">Se synchronise chaque jour avec près de 320 banques et types de comptes, et classe vos opérations par catégories. Linxo présente sa technologie comme agréée par la Banque de France. L’app compte 11 508 notes dans l’App Store français.</div></div>
+  </div>
+  <p class="lead" style="margin-top:var(--s-4);">Ce qui les sépare d’AllPaid tient à un point : pour fonctionner, elles ont besoin d’un accès à vos comptes, et AllPaid s’en passe.</p>
+  <p class="small" style="margin-top:var(--s-3);">Nombres de notes et descriptions des apps vérifiés dans l’App Store français le 8 novembre 2026.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Pourquoi donner accès à ses comptes pose-t-il problème ?</h2>
+  <p class="lead">Une application reliée à la banque doit voir vos transactions pour fonctionner, et elle y accède par un service d’agrégation de comptes. En échange, vous obtenez la synchronisation et le classement automatiques de vos opérations. Pour qui tient à sa vie privée, cet échange a un coût :</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Vous donnez accès à votre compte</div><div class="card-text">L’app et le service d’agrégation peuvent lire les transactions du compte relié. Cela concerne toutes vos opérations, pas seulement les factures.</div></div>
+    <div class="card"><div class="card-title">Vos données sont chez un tiers</div><div class="card-text">Un historique de vos transactions est copié sur des serveurs qui ne sont pas les vôtres. Si l’un des acteurs de la chaîne est piraté, cet historique est exposé.</div></div>
+    <div class="card"><div class="card-title">Bien plus qu’il n’en faut pour un rappel</div><div class="card-text">Pour se rappeler que le loyer arrive à échéance, il suffit de connaître la facture et sa date. Lire chaque transaction du compte dépasse largement ce besoin.</div></div>
+    <div class="card"><div class="card-title">Votre banque n’est pas forcément prise en charge</div><div class="card-text">Linxo annonce près de 320 banques et types de comptes, Bankin’ plus de 350 banques dans quatre pays. Si la vôtre n’en fait pas partie, la synchronisation automatique ne fonctionne pas pour vous.</div></div>
+  </div>
+</section>
+
+<section id="answer" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">La réponse</p>
+    <h2 class="h2">AllPaid : factures et abonnements saisis à la main, sans banque</h2>
+    <p class="lead">AllPaid est notre app : Lagerland Apps la publie et édite ce guide. C’est une application de rappel de factures pour {{ ap_devices }}. Vous ajoutez vous-même factures, abonnements et contrats, et AllPaid propose la catégorie et la fréquence pour les noms connus. Le résumé mensuel affiche les factures du mois et leurs totaux, et un seul toucher marque une facture comme payée. L’app n’a ni connexion bancaire ni compte, et vos factures restent sur vos appareils, sauf si vous activez la synchronisation iCloud (Pro), qui passe par votre propre iCloud privé. Tout le détail se trouve sur <a href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>la page d’AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+  </div>
+  {% if app %}
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+  {% endif %}
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">La saisie à la main, est-ce fastidieux ?</h2>
+  <p class="lead">Seulement au début : la plupart des foyers saisissent toutes leurs factures récurrentes en une seule séance. Ensuite :</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Les suggestions remplissent les détails</div><div class="card-text">Tapez « Netflix » et AllPaid propose la catégorie et la fréquence (« Ressemble à Netflix ») ; touchez « Appliquer » pour les reprendre. Le montant est facultatif : une facture peut se résumer à un nom et à une échéance.</div></div>
+    <div class="card"><div class="card-title">Marquer comme payée, d’un seul toucher</div><div class="card-text">Depuis l’app ou directement depuis le rappel. « Annuler » revient en arrière si vous avez touché trop vite.</div></div>
+    <div class="card"><div class="card-title">La plupart des factures ne changent pas</div><div class="card-text">Loyer, charges, abonnements : le montant est souvent le même chaque mois. Quand vous marquez une facture récurrente comme payée, elle passe seule à sa prochaine échéance ; vous n’ajoutez que les nouvelles.</div></div>
+    <div class="card"><div class="card-title">Le mois et les widgets restent sous vos yeux</div><div class="card-text">Le résumé mensuel affiche les factures du mois avec les totaux dû, payé et restant. Les widgets Calendrier mensuel et À venir posent les échéances sur votre écran d’accueil : vous avez rarement besoin d’ouvrir l’app.</div></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Gérer ses abonnements Apple sur iPhone</h2>
+  <div class="card">
+    <p>Les abonnements souscrits avec votre compte Apple se trouvent dans Réglages > [votre nom] > Abonnements. Touchez-en un pour le consulter, ou pour y mettre fin avec « Annuler l’abonnement ».</p>
+    <p style="margin-top:var(--s-3);">Cette liste ne montre que ce qu’Apple vous facture : le loyer, les charges, le téléphone, l’assurance ou internet n’y figurent pas. AllPaid ne lit pas cette liste. Vous ajoutez vous-même dans AllPaid ce que vous voulez suivre, abonnements Apple compris, et vous recevez un rappel avant chaque échéance, au même endroit que vos autres factures.</p>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Que perd-on en saisissant à la main ?</h2>
+  <div class="card">
+    <p>La saisie manuelle vous prive de :</p>
+    <ul class="bullets">
+      <li>La synchronisation et le classement automatiques de vos transactions, que font Bankin’ et Linxo</li>
+      <li>La détection automatique des opérations récurrentes, que Linxo annonce : AllPaid ne connaît que ce que vous lui avez ajouté et ne retrouve pas un abonnement oublié</li>
+      <li>La prévision du solde de vos comptes, que proposent Bankin’ (solde de fin de mois) et Linxo Premium (sur 30 jours)</li>
+      <li>Une gestion de budget complète : AllPaid suit les factures, pas vos revenus ni chaque dépense</li>
+      <li>L’impression que « l’app sait tout de mon argent »</li>
+    </ul>
+    <p style="margin-top:var(--s-3);">Si ces fonctions comptent pour vous, choisissez plutôt une application reliée à la banque, comme Bankin’ ou Linxo, en acceptant l’accès à vos comptes qu’elle suppose. AllPaid s’adresse aux personnes qui préfèrent consacrer une séance à la saisie et garder leurs accès bancaires pour elles.</p>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">Questions fréquentes</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Existe-t-il une application de gestion des abonnements et des factures sans connexion bancaire ?</summary><div class="faq-a">Oui. AllPaid (notre app) se remplit entièrement à la main, sans connexion bancaire ni agrégation de comptes, et sans compte à créer. Vous ajoutez vous-même factures, abonnements et contrats, puis vous les marquez comme payés. Vos factures restent sur vos appareils, sauf si vous activez la synchronisation iCloud (Pro), qui passe par votre propre iCloud privé.</div></details>
+    <details class="faq-item"><summary>Pourquoi Bankin’ et Linxo demandent-elles l’accès à mes comptes bancaires ?</summary><div class="faq-a">Parce que leur principe est de synchroniser vos transactions et de les classer automatiquement par catégories, ce qui suppose de se connecter à vos comptes. Bankin’ passe par Bridge (Perspecteev), agréée par l’ACPR. Linxo se synchronise chaque jour avec près de 320 banques et types de comptes et présente sa technologie comme agréée par la Banque de France. Si vous ne voulez pas donner cet accès, l’autre voie est la saisie à la main, et c’est ainsi que fonctionne AllPaid.</div></details>
+    <details class="faq-item"><summary>Comment gérer mes abonnements sur iPhone ?</summary><div class="faq-a">Ouvrez Réglages, touchez votre nom, puis Abonnements. Vous y voyez les abonnements souscrits avec votre compte Apple ; touchez-en un, puis « Annuler l’abonnement » pour y mettre fin. Cette liste ne montre que ce qu’Apple vous facture. AllPaid ne la lit pas : vous ajoutez vous-même dans AllPaid ce que vous voulez suivre, y compris ce qui ne passe pas par Apple, comme le loyer, les charges, le téléphone, l’assurance ou internet, et l’app vous rappelle chaque échéance.</div></details>
+    <details class="faq-item"><summary>La saisie manuelle est-elle tenable au quotidien ?</summary><div class="faq-a">Oui, une fois la mise en place faite. La plupart des factures récurrentes changent peu d’un mois à l’autre. Quand vous tapez un nom connu comme Netflix ou Spotify, AllPaid propose la catégorie et la fréquence, et marquer une facture comme payée prend un seul toucher, dans l’app ou sur le rappel.</div></details>
+    <details class="faq-item"><summary>AllPaid a-t-elle des widgets et fonctionne-t-elle avec Siri ?</summary><div class="faq-a">Oui. AllPaid a dix widgets, tous gratuits, dont Prochaine facture, À venir et Calendrier mensuel pour l’écran d’accueil, et une version de Prochaine facture pour l’écran verrouillé. Demandez à Siri « What bills are due in AllPaid » et il lit les factures à échéance dans les sept jours qui viennent ; les phrases pour Siri n’existent toutefois qu’en anglais.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">À essayer</p>
+  <h2 class="h2">Essayez AllPaid.</h2>
+  <p class="lead">Une application de gestion des factures et des abonnements, sans connexion bancaire et sans compte. Elle est gratuite jusqu’à 3 factures ; Pro, en option, ajoute les factures illimitées, l’analyse des dépenses et la synchronisation iCloud.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>En savoir plus sur AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/guides/" %}"{% if l_en %} hreflang="en"{% endif %}>Tous les guides{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/for/shift-workers/" %}"{% if l_en %} hreflang="en"{% endif %}>Apps pour le travail posté ou de nuit{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

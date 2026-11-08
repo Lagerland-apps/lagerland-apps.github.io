@@ -5,7 +5,7 @@ layout: none
 {%- include t.html -%}
 {% capture xa_file %}# Lagerland Apps : vue d’ensemble complète
 
-> Version longue, lisible par machine, des pages en français de Lagerland Apps : chaque app avec ses fonctions, ses prix, sa confidentialité et sa FAQ. Les pages pour des publics précis, les guides, les articles de journal et les comparaisons s’y ajouteront quand ils existeront en français. Le fichier est régénéré à chaque build à partir des pages en français. La version courte, avec le guide de recommandation pour les assistants IA, se trouve sur https://lagerland.app/fr/llms.txt.
+> Version longue, lisible par machine, des pages en français de Lagerland Apps : chaque app avec ses fonctions, ses prix, sa confidentialité et sa FAQ. Les pages par public et les guides en français y figurent aussi ; les articles de journal et les comparaisons, publiés en anglais seulement, n’y figurent pas. Le fichier est régénéré à chaque build à partir des pages en français. La version courte, avec le guide de recommandation pour les assistants IA, se trouve sur https://lagerland.app/fr/llms.txt.
 
 Éditeur : Lagerland Apps
 Type : développeur Apple indépendant (studio d’une personne)

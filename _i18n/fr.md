@@ -12,6 +12,7 @@ reviewing any French page. Every decision a translator would otherwise make diff
 | Tier 1 pages | done 2026-11-08: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/fr.yml`), /fr/llms.txt, /fr/llms-full.txt, 21 OG cards |
 | Live | yes, `live: true` since 2026-11-08 (Tier 1; go-live commit not yet pushed) |
 | Tier 2, batch 1 | written and integrated 2026-11-08, no native review yet: hubs /fr/guides/ and /fr/for/; guides best-chess-apps-iphone, best-logic-puzzle-games-iphone, workout-app-without-subscription, best-shogi-apps-iphone, best-xiangqi-apps-iphone; for/shift-workers, for/apple-health-power-users, for/calm-productivity. Not yet: guides/bill-tracker-without-bank-connection (low demand; its US apps Rocket Money, Monarch and Copilot are not sold in France, needs a Bankin'/Linxo rewrite) and for/indie-ios-developers (French developers search in English). Research and French-store check of every named competitor: ~/Downloads/githubcode/fr-tier2-research-2026-11-08.md. Stale check before the batch: 0 French pages stale |
+| Tier 2, batch 2 | written and integrated 2026-11-08, no native review yet: guides/bill-tracker-without-bank-connection (local rewrite: Bankin’ and Linxo replace Rocket Money, Truebill, Copilot and Monarch, which are not sold in France) and the first two local-only pages (6.7), /fr/guides/application-compte-a-rebours-iphone/ (Soon.) and /fr/guides/limiter-temps-ecran-iphone/ (EarnLock). for/indie-ios-developers stays English-only (no French demand). Tier 2 is complete for French. Research: ~/Downloads/githubcode/fr-tier2-batch2-research-2026-11-08.md. Stale check before the batch: 0 French pages stale |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 56 s before French (2026-11-07), 80 s with French Tier 1 (2026-11-08, clean run, `--profile`). Hot spot: `_includes/tx-app.html` 44 s over 968 calls, then footer 30 s: each new language makes it worse; worth a map lookup before the next language |
 
@@ -179,6 +180,9 @@ and the App Store. Revisit 4 to 6 weeks after go-live with the page filter `/fr/
 | /fr/for/shift-workers/ | `travail de nuit sommeil` (shared with AfterShift; owner question) | `dormir après travail de nuit`, `travail posté sommeil`, `application travail de nuit` |
 | /fr/for/apple-health-power-users/ | `application apple santé` | `meilleure application santé apple watch`, `hrv apple watch` |
 | /fr/for/calm-productivity/ | `application organisation journée` (concept « sans pression des séries » has no French query) | `application planning journée`, `application to do list iphone` |
+| /fr/guides/bill-tracker-without-bank-connection/ | `application de gestion des abonnements` | `gérer mes abonnements iphone`, `application gestion budget sans banque`, `app suivi abonnements` |
+| /fr/guides/application-compte-a-rebours-iphone/ (local-only) | `application compte à rebours` | `widget compte à rebours iphone`, `meilleure application compte à rebours`, `application compte à rebours vacances` / `retraite` / `voyage` |
+| /fr/guides/limiter-temps-ecran-iphone/ (local-only) | `application pour limiter le temps d’écran iphone` | `réduire temps d’écran iphone`, `bloquer application iphone`, `application pour bloquer les réseaux sociaux` (child and parental-control intent is out of scope, said on the page) |
 
 Wording rules from the research: « application » beats « appli » and « app » in searches, so titles and H1 use
 « application »; body copy may say « app ». Privacy is searched as « sans pub », « sans publicité », rarely
@@ -239,6 +243,8 @@ Found in the Tier 1 reviews (2026-11-08): « tournent sur » for "run on" (« fo
 
 Found in the Tier 2 reviews (2026-11-08): « sans paywall » (write « sans fonction payante »); « derrière le mur payant » (« réservé à la version payante »); « en un minimum de touches » for taps (« touchers »); « Ça fonctionne, et ça … » (spoken register); « sont de nous » (« sont les nôtres »); « est éditée par l’éditeur »; « pèse 15 % de » (« représente »); « travaille de pair avec » (« fonctionne avec »); « Curieux de savoir… ? » as a heading (gendered); gendered participles in a vous sentence (« où vous êtes éveillé »: rephrase with a noun); an app switching gender inside one page (always feminine, « l’app »); « Pourquoi » + noun subject without complex inversion; « (vérifiée le …) » after a plural or mixed subject; store IAP names quoted in prose (« Débloquez les packs et retirez les pubs ») instead of saying what the purchase does; store-language facts or competitor prices added where English is silent; narrowing calques (« pour le travail de nuit » for "shift workers": « travail posté ou de nuit »).
 
+Found in the Tier 2 batch 2 review (2026-11-08): « le point de … est ailleurs » for "the point is"; « X n’est pas le bon choix : Y l’est » (English verb ellipsis); literal spatial metaphors (« l’effort tombe hors de l’écran »); « (en anglais) » after a product name to mean an English-only interface (readers take it for the link marker: write « dont l’interface est en anglais »); punctuation added inside a quoted competitor string; bold verdict labels (« À choisir si ») on every card (write « Convient surtout si », no bold); « y » after a sentence that names two places; feature counts that contradict each other across quick_answer, hero and section (« trois points » / « Cinq critères »).
+
 ## Decisions from the Tier 1 reviews (2026-11-08)
 
 - Apple's sleep stages in prose: éveil, sommeil paradoxal, sommeil lent, sommeil profond (Apple FR). Observa's UI label « Noyau » is not used in prose; AfterShift quotes its own UI labels (Éveillé, Léger, Profond, Paradoxal).
@@ -263,6 +269,20 @@ Found in the Tier 2 reviews (2026-11-08): « sans paywall » (write « sans fonc
 - No hand-typed « Mis à jour en <mois> » overline on guides and /for/ pages: the layout prints the date.
 - « Fédération japonaise de shogi » for the Japan Shogi Association (as on the Shogiful page).
 - Primary queries keep the noun-noun search form only in seo.title and keywords; H1 and prose write « application d’échecs ».
+
+## Decisions from Tier 2 batch 2 (2026-11-08)
+
+- Local-only pages (TRANSLATION.md 6.7): `local_only: true`, no `ref`, French ASCII slug, canonical to itself, no hreflang or switcher (the templates
+  already handle it). Hub cards link them with a plain `/fr/...` href (`l.html` only maps English URLs). An English twin can come later: add `ref`
+  to both and drop `local_only`; the French slug stays.
+- Our own rating counts are never stated on a French page (not even « pas encore de notes »); competitors’ French rating counts may be cited as a
+  popularity signal with the dated check line.
+- `{PLATFORMS}` prints OS names (« iOS, iPadOS, macOS »). In prose, use the Liquid device list `fr/index.html` uses (« iPhone, iPad et Mac »);
+  the token is acceptable only as a label in front matter strings (owner question: a device-name token).
+- Tier 1 pages that send readers to an app not sold in France get the same note as Shogi Wars: the French AllPaid FAQ now says Rocket Money is not
+  sold in France and points to the guide; its budget FAQ names Bankin’, Linxo and YNAB instead of Monarch Money and Copilot (not sold in France).
+- Apple Screen Time in iOS 27: « Temps accordés » (how long per day, the old App Limits) and « Programme de temps d’écran » (when, the old
+  Downtime), checked against support.apple.com/en-us/guide/iphone/iphb0c7313c9/ios on 2026-11-08. Old names only « sur iOS 18 et versions antérieures ».
 
 ## House rules carried over
 
@@ -290,6 +310,8 @@ Found in the Tier 2 reviews (2026-11-08): « sans paywall » (write « sans fonc
 | Tier 2 batch 1: 5 guides, 3 audience pages | one writer agent (Sonnet) each | reviewers R-games and R-people 2026-11-08 (copy-editing, fact diff against English and the French-store check, glossary, SEO/schema); EUR prices not in English removed | n/a (Tier 2) | no native review yet |
 | /fr/guides/, /fr/for/ hubs | writer agent (Sonnet) | reviewer R-people 2026-11-08 | n/a | no native review yet |
 | /fr/llms.txt Tier 2 lines, Shogiful Shogi Wars note, LiftLog and Xiangqiful guide links | main session | reviewer R-wiring 2026-11-08 | n/a | no native review yet |
+| Tier 2 batch 2: bill-tracker guide, two local-only guides | one writer agent (Sonnet) each | reviewer R-b2 2026-11-08: 18 must-fix, 41 should-fix (Soon. ratings statements removed, iOS 27 Screen Time names, Forest claim corrected, platform token replaced in prose); competitor facts against the full French store descriptions | n/a (Tier 2) | no native review yet |
+| /fr/guides/ hub (3 cards), /fr/llms.txt (3 routing lines), llms-full intro, AllPaid/Soon./EarnLock FAQ links, AllPaid FAQ fixes | main session | reviewer R-b2 2026-11-08: 1 must-fix (numberOfItems), 5 should-fix | n/a | no native review yet |
 
 ## Apps still on English screenshots
 
