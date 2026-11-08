@@ -14,7 +14,7 @@ seo:
     - "chessful"
 date: 2026-05-13
 lede: "Most chess apps that claim 'adaptive training' adapt to a generic difficulty curve over a fixed puzzle pool, not to your games. Chessful adapts to the mistakes in your real games. This post is the design note for how that works: how an on-device Stockfish review becomes a set of explained mistakes, how those mistakes feed your skill profile, and how they come back as daily training and spaced review."
-quick_answer: "Chessful's adaptive training works in five steps. Stockfish runs on your device over a finished game and rates every move, from Brilliant to Blunder. Each mistake gets one of 10 types (such as Hanging Piece, Missed Fork, or Endgame Error) and a plain-language explanation at your level: what you played, what was best, why it works, and the line that punishes your move. Those mistakes feed five skill bars: Tactics, Defense, Positioning, Endgame, and Openings. Today's Training then picks a focus area and turns your mistakes into a 5, 10, or 15-minute puzzle session, and Review past mistakes brings old misses back on a spaced-repetition (SM-2) schedule. Free: 2 analyses, 3 puzzles, and 2 coach hints a day. Premium: no daily limits."
+quick_answer: "Chessful's adaptive training works in five steps. Stockfish runs on your device over a finished game and rates every move, from Best move to Blunder. Each mistake gets one of 10 types (such as Hanging Piece, Missed Fork, or Endgame Error) and a plain-language explanation at your level: what you played, what was best, why it works, and the line that punishes your move. Those mistakes feed five skill bars: Tactics, Defense, Positioning, Endgame, and Openings. Today's Training then picks a focus area and turns your mistakes into a 5, 10, or 15-minute puzzle session, and Review past mistakes brings old misses back on a spaced-repetition (SM-2) schedule. Free: 2 analyses, 3 puzzles, and 2 coach hints a day. Pro: no daily limits."
 faq:
   - q: "What does 'adaptive training' actually mean in Chessful?"
     a: "The training you get is built from the mistakes in the games you have played, not from a fixed puzzle library. After a game, Stockfish reviews every move on your device and each mistake gets one of 10 types, such as Hanging Piece, Missed Fork, Missed Pin, Missed Back-Rank Mate, or Endgame Error. Those mistakes feed your skill profile, and Today's Training turns them into puzzles in the area that needs work. Review past mistakes then brings your misses back on a spaced-repetition schedule until you stop making them."
@@ -41,11 +41,11 @@ This is the design note for how that works, organised around the five steps betw
 
 ## Step 1: Stockfish on your device
 
-When a game ends, Game Review runs Stockfish on the same device. There is no cloud call; the app has no networking code of its own. Stockfish checks every move and rates it: Brilliant, Great move, Best move, Good, Book, Inaccuracy, Mistake, or Blunder. You get an accuracy figure, the key moments, an evaluation view, and the best line, which you can step through.
+When a game ends, Game Review runs Stockfish on the same device. There is no cloud call; the app has no networking code of its own. Stockfish checks every move and rates it: Best move, Great move, Good, Book, Inaccuracy, Mistake, or Blunder. You get an accuracy figure, the key moments, an evaluation view, and the best line, which you can step through.
 
 This part looks like every other chess analyser, and it's a commodity. In Chessful the engine output is the **input** to the next step and not the thing you're left with. A centipawn graph on its own tells you where a game turned, and it doesn't tell you what to practise.
 
-Free players get 2 analyses a day; Premium removes the limit. Games you play against Chessful's opponents count, and so do games you import as a PGN file from Chess.com or Lichess.
+Free players get 2 analyses a day; Pro removes the limit. Games you play against Chessful's opponents count, and so do games you import as a PGN file from Chess.com or Lichess.
 
 ## Step 2: Every mistake explained, with a type
 
@@ -74,7 +74,7 @@ The explanation is worded for your level. In onboarding or Settings you choose a
 
 Analysed mistakes feed a **skill profile** with five skill bars: Tactics, Defense, Positioning, Endgame, and Openings. A bar says "Not measured yet" until there is data behind it. Progress also shows an estimated rating, your game stats, a rating graph, and highlight cards for your strongest area and your focus area. All of that is free.
 
-Premium adds **Weekly Comparison** and **Weakness Trends**, so you can see whether the weaknesses you've been drilling are shrinking or holding steady.
+Pro adds **Weekly Comparison** and **Weakness Trends**, so you can see whether the weaknesses you've been drilling are shrinking or holding steady.
 
 Showing this matters because **adaptive training only works if you trust it**. If the next session drills back-rank weaknesses and you have no idea why, you lose interest. If you can see that your Defense bar is the lowest and your last games keep showing the same mistake type, you do the session, and the session works.
 
@@ -88,11 +88,11 @@ Spaced repetition is the standard memory technique for pattern recognition. Anki
 
 It suits chess because chess pattern recognition is more a **memory task than a calculation task**. A stronger player often wins the same tactical position because they've seen the pattern often enough to recognise it in seconds. Seeing the pattern again and again at growing intervals is a good way to learn it. It's dull, and it works.
 
-**Free: 3 puzzles a day.** Today's Training, lesson practice, and the 15,000-puzzle tactics library share that one counter. Review past mistakes and retrying your misses don't use it up. Premium removes the daily limit.
+**Free: 3 puzzles a day.** Today's Training, lesson practice, and the 15,000-puzzle tactics library share that one counter. Review past mistakes and retrying your misses don't use it up. Pro removes the daily limit.
 
 ## Step 5: The feedback loop
 
-After you train and play, your skill bars and rating graph update, and with Premium, Weekly Comparison and Weakness Trends show how each weakness is moving.
+After you train and play, your skill bars and rating graph update, and with Pro, Weekly Comparison and Weakness Trends show how each weakness is moving.
 
 That view exists for the **feedback loop**. If you've spent weeks on Defense and the same mistake types keep appearing, the drills aren't working and you need to try something else. Maybe what you keep missing is a calculation problem more than a defensive one. Maybe you're tired and rushing. Progress gives you a way to ask those questions about your own games.
 
@@ -113,4 +113,4 @@ We try to explain how our apps reach their answers. [Observa](/apps/observa/) li
 
 ---
 
-[Chessful is available on the App Store.](https://apps.apple.com/app/id6761336870) The free version includes all 156 lessons, the first 10 of the 40 opponents, the first endgame in each category, every mistake explanation, PGN import, and progress tracking, with 2 game analyses, 3 puzzles, and 2 coach hints a day. Premium removes the daily limits and unlocks all 40 opponents, all 96 endgames, the full opening repertoire with line drills, and Weekly Comparison and Weakness Trends. It costs {P_MONTHLY@chessful}/month or {P_YEARLY@chessful}/year, each with a {TRIAL@chessful}, or {P_LIFETIME@chessful} once for lifetime access. The companion design note on the forty opponents is [Forty chess opponents, and none of them are me](/journal/forty-chess-opponents/).
+[Chessful is available on the App Store.](https://apps.apple.com/app/id6761336870) The free version includes all 156 lessons, the first 10 of the 40 opponents, the first endgame in each category, every mistake explanation, PGN import, and progress tracking, with 2 game analyses, 3 puzzles, and 2 coach hints a day. Pro removes the daily limits and unlocks all 40 opponents, all 96 endgames, the full opening repertoire with line drills, and Weekly Comparison and Weakness Trends. It costs {P_MONTHLY@chessful}/month or {P_YEARLY@chessful}/year, each with a {TRIAL@chessful}, or {P_LIFETIME@chessful} once for lifetime access. The companion design note on the forty opponents is [Forty chess opponents, and none of them are me](/journal/forty-chess-opponents/).

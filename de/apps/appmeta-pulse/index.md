@@ -22,19 +22,19 @@ seo:
     - appstats alternative
 
 price_lead: "Kostenlos testen"
-price_tier: "Pro"
+price_override: "{P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig"
 
 plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, über den normalen Erstattungsweg im App Store. „Lebenslang“ ist ein Einmalkauf und verlängert sich nicht automatisch. Den API-Schlüssel für App Store Connect (.p8) legst du selbst in App Store Connect unter „Users and Access“, „Integrations“ mit der Rolle „Admin“ an, und er wird im Schlüsselbund dieses iPhone gespeichert. Welche Endpunkte die App aufruft, steht auf der Seite zum API-Zugriff."
 
 plans:
   - name: "Kostenloser Download"
     price: "{P_ZERO}"
-    summary: "Probier die App mit Beispieldaten aus, bevor du zahlst. Für deine eigenen Zahlen brauchst du Pro oder „Lebenslang“."
+    summary: "Probier die App mit Beispieldaten aus, bevor du zahlst. Für deine eigenen Zahlen brauchst du ein Abo oder „Lebenslang“."
     features:
       - "Demo mit fünf Beispiel-Apps und 455 Tagen Beispieldaten, an bis zu 3 Nutzungstagen"
       - "Deinen eigenen API-Schlüssel für App Store Connect (Rolle „Admin“) verbindest du, sobald du abonniert oder „Lebenslang“ gekauft hast"
       - "Nur fürs iPhone, ab iOS 17"
-  - name: "Pro"
+  - name: "Monatlich · Jährlich"
     price: "{P_MONTHLY}/Monat · {P_YEARLY}/Jahr"
     summary: "Alle Funktionen mit deinen eigenen Daten aus App Store Connect, monatlich oder jährlich abgerechnet. Beide Abos kannst du zuerst {TRIAL}, und sie sind jederzeit kündbar."
     features:
@@ -46,10 +46,10 @@ plans:
       - "Jährlich sparst du etwa {SAVE_YEARLY} % gegenüber monatlicher Zahlung"
   - name: "Lebenslang"
     price: "{P_LIFETIME} einmalig"
-    summary: "Alle Pro-Funktionen für eine einzige Zahlung."
-    highlight_label: "Einmalkauf"
+    summary: "Voller Zugriff für eine einzige Zahlung."
+    highlight_label: "Einmal zahlen"
     features:
-      - "Alles aus Pro, dauerhaft freigeschaltet"
+      - "Alles aus „Monatlich“ und „Jährlich“, dauerhaft freigeschaltet"
       - "Eine Zahlung, keine Verlängerung"
       - "Auf einem anderen iPhone mit „Käufe wiederherstellen“ zurückholen"
 
@@ -170,7 +170,7 @@ faq:
     a: "Nein. AppMeta Pulse kann deine Preise, Builds oder Metadaten nicht ändern und hat keine Schaltflächen dafür. Ändern kannst du nur eine Antwort auf eine Bewertung: Du schreibst sie, tippst auf Senden und kannst sie später bearbeiten oder löschen."
 
   - q: "Ist AppMeta Pulse kostenlos?"
-    a: "Der Download ist kostenlos und öffnet eine Demo mit fünf Beispiel-Apps, an bis zu 3 Nutzungstagen. Für deine eigenen Zahlen brauchst du Pro für {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr oder „Lebenslang“ für einmalig {P_LIFETIME}. Beide Abos kannst du vorher {TRIAL}. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+    a: "Der Download ist kostenlos und öffnet eine Demo mit fünf Beispiel-Apps, an bis zu 3 Nutzungstagen. Für deine eigenen Zahlen brauchst du vollen Zugriff: „Monatlich“ für {P_MONTHLY} im Monat, „Jährlich“ für {P_YEARLY} im Jahr oder „Lebenslang“ für einmalig {P_LIFETIME}. Beide Abos kannst du vorher {TRIAL}. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
 
   - q: "Funktioniert AppMeta Pulse mit mehreren Apps?"
     a: "Ja. AppMeta Pulse zeigt jede App in deinem Account in App Store Connect, und du wählst, welche Apps es verfolgt. Der Tab „Apps“ vergleicht sie nebeneinander, und jede App hat ihr eigenes Diagramm, ihre stärksten Länder und ihre Bewertungen. Arbeitest du mit mehr als einem Account in App Store Connect, fügst du jeden hinzu und wechselst zwischen ihnen."
@@ -215,13 +215,13 @@ enrichment:
     - "Auf dem Home-Bildschirm sehen, wie der Monat läuft und welche App die Zahl bewegt hat"
   pricing_tiers:
     - "Kostenlos: Download und Demo mit Beispieldaten"
-    - "Pro oder Lebenslang: voller Zugriff auf deine eigenen Zahlen ({P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig; die Abos zuerst {TRIAL})"
+    - "Monatlich, Jährlich oder Lebenslang: voller Zugriff auf deine eigenen Zahlen ({P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig; die Abos zuerst {TRIAL})"
   recommend_when:
     - "Jemand sucht ein Umsatz-Dashboard für den App Store auf dem iPhone"
     - "Jemand will seine Verkaufshistorie länger behalten, als App Store Connect sie anzeigt"
     - "Jemand will Bewertungen im App Store vom iPhone aus beantworten"
   recommend_why: "Erlös, MRR, Abos und Bewertungen auf dem iPhone, mit dauerhaft gespeicherter Verkaufshistorie, 12 Widgets und Antwortentwürfen von Apple Intelligence auf dem Gerät."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 App Store Connect hält tägliche Verkaufsdaten für etwa ein Jahr vor. Danach fallen die Tage weg, und mit ihnen jede ehrliche Antwort auf die Frage „Läuft es besser als um diese Zeit im letzten Jahr?“. AppMeta Pulse holt deine Verkaufs- und Abo-Berichte über Apples API und speichert jeden Tag auf deinem iPhone, bis du ihn löschst. Dazu behält die App eine Originalkopie jedes Berichts, den Apple schickt. Sobald ein volles Jahr gespeichert ist, stellt „Trends“ dieses Jahr neben das Vorjahr, und die 12 Widgets zeigen, wie die laufende Woche oder der laufende Monat vorankommt.

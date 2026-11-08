@@ -24,7 +24,7 @@ seo:
     - streaks app alternative
     - lichess alternative
     - cloudconvert alternative
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 {%- include t.html -%}
 {%- assign de_alt_count = site.pages | where: "lang", "de" | where_exp: "p", "p.url contains '/de/alternatives/'" | size | minus: 1 -%}
@@ -214,7 +214,7 @@ last_updated: 2026-10-29
       <a class="card card-compared" href="/de/alternatives/forest/">
         <span class="pill">Bildschirmzeit</span>
         <h3 class="card-compared-title">EarnLock <span class="card-compared-vs">{{ t.alt_vs }}</span> Forest</h3>
-        <p class="card-text">Forest lässt einen Baum wachsen, solange du das Handy liegen lässt, und sperrt Apps für eine Sitzung oder nach Zeitplan. Bei EarnLock gehen die Apps erst nach Bewegung wieder auf, die Hälfte des Ziels öffnet sie für eine Stunde.</p>
+        <p class="card-text">Forest lässt einen Baum wachsen, solange du das Handy liegen lässt, und sperrt Apps für eine Sitzung oder nach Zeitplan. Bei EarnLock gehen die Apps erst nach Bewegung wieder auf, bei der Hälfte des Ziels einige davon für etwa eine Stunde.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
       <a class="card card-compared" href="/de/alternatives/brick/">
@@ -232,7 +232,7 @@ last_updated: 2026-10-29
       <a class="card card-compared" href="/de/alternatives/jomo/">
         <span class="pill">Bildschirmzeit</span>
         <h3 class="card-compared-title">EarnLock <span class="card-compared-vs">{{ t.alt_vs }}</span> Jomo</h3>
-        <p class="card-text">Jomo hebt Sperren mit Aufgaben wie einer kurzen Meditation auf, bei EarnLock gehen die Apps erst nach Bewegung auf. Die Hälfte des Ziels öffnet sie für eine Stunde.</p>
+        <p class="card-text">Jomo hebt Sperren mit Aufgaben wie ein paar Sekunden Warten oder einem eingetippten Grund auf, bei EarnLock gehen die Apps erst nach Bewegung auf. Bei der Hälfte des Ziels gehen einige davon für etwa eine Stunde auf.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
     </div>
@@ -242,13 +242,13 @@ last_updated: 2026-10-29
     <h3 class="h2" style="margin-bottom:var(--s-2);">Rechnungen und Fixkosten</h3>
     <div class="grid grid-2 stagger">
       <a class="card card-compared" href="/de/alternatives/splitwise/">
-        <span class="pill">Finanzen</span>
+        <span class="pill">Werkzeuge</span>
         <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Splitwise</h3>
-        <p class="card-text">Kassenbon scannen, antippen, wer was hatte, und jeder Person ihren Betrag mit Bezahllink schicken. Ohne Konto; die Aufteilung nach Artikeln gehört zu Pro+.</p>
+        <p class="card-text">Kassenbon scannen, antippen, wer was hatte, und jeder Person ihren Betrag mit einem Link zum Bezahlen schicken. Ohne Konto; die Aufteilung nach Artikeln gehört zu Pro+.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
       <a class="card card-compared" href="/de/alternatives/tricount/">
-        <span class="pill">Finanzen</span>
+        <span class="pill">Werkzeuge</span>
         <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Tricount</h3>
         <p class="card-text">Tricount führt die Kasse einer ganzen Reise, RightSplit rechnet die eine Rechnung ab, die vor dir liegt. Scannen, aufteilen und verschicken, ohne eine Gruppe anzulegen.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
@@ -260,9 +260,9 @@ last_updated: 2026-10-29
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
       <a class="card card-compared" href="/de/alternatives/settle-up/">
-        <span class="pill">Finanzen</span>
+        <span class="pill">Werkzeuge</span>
         <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Settle Up</h3>
-        <p class="card-text">Settle Up führt eine gemeinsame Gruppenkasse, RightSplit rechnet die eine Rechnung vor dir ab: Kassenbon scannen, nach Artikeln teilen, Beträge mit Bezahllink verschicken.</p>
+        <p class="card-text">Settle Up führt eine gemeinsame Gruppenkasse, RightSplit rechnet die eine Rechnung vor dir ab: Kassenbon scannen, nach Artikeln teilen, Beträge mit einem Link zum Bezahlen verschicken.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
     </div>

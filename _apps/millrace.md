@@ -124,13 +124,13 @@ alternatives_to:
 
 value_points:
   - title: "A goal, a move limit, and a finish line"
-    description: "Each level has a set board, a fixed queue of arriving tiles, a move limit, and one exact number to build. Nothing inside a level is random, so you can think it through from the first move to the last."
+    description: "Each level has a set board, a fixed queue of arriving tiles, a move limit, and one exact number to build. The arrival cell and the goal cell are two separate cells, both marked on the board, and the whole queue stays on screen. Nothing inside a level is random, so you can think it through from the first move to the last."
   - title: "A proven shortest solution"
     description: "A breadth-first solver found the shortest solution to every level before it shipped. When you solve a level, the result card shows your move count, your best, and the best possible."
   - title: "A hint that is always on a winning line"
     description: "In a puzzle level, Hint comes from that solver, so the move it suggests always leads to a solution. It draws an arrow on the board and gives a one-line reason."
   - title: "Free in full, with no ads"
-    description: "The campaign, Freeplay, the Daily Challenge, and Hint cost nothing. Theme packs and undo bundles are optional one-time purchases, and there is no subscription."
+    description: "The campaign, Freeplay, the Daily Challenge, and Hint cost nothing. Theme packs are optional one-time purchases, undo bundles for Freeplay are optional consumables, and there is no subscription."
 
 features:
   - title: "The campaign"
@@ -286,17 +286,17 @@ related_journal:
 
 release:
   first_release: "2026-09-24"
-  last_updated: "2026-09-24"
-  version: "1.0"
+  last_updated: "2026-11-01"
+  version: "1.2.2"
 
 show_body: true
 about_heading: "What Millrace is: a tile puzzle with a proven answer"
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 
 Millrace is a tile logic puzzle for iPhone and iPad. Equal tiles merge when you slide them together, but each of its 64 levels is a closed problem with a goal, a move limit, and a known best solution.
 
-A level gives you a **set board**, a **fixed queue of arriving tiles**, and a **move limit**. Tiles arrive one at a time at the **arrival cell**, and your job is to build one exact number on the **marked cell**. Nothing inside a level is random, so you can plan it all the way through.
+A level gives you a **set board**, a **fixed queue of arriving tiles**, and a **move limit**. Tiles arrive one at a time at the **arrival cell**, and your job is to build one exact number on the **marked cell**, a separate cell. The whole queue of arriving tiles is always on screen, so nothing inside a level is random or hidden, and you can plan it all the way through.
 
 You can lose in two ways, and both come from your own moves. Block the arrival cell and the next tile has nowhere to land. Build past the target, a 128 when the level asks for 64, and the goal is lost. After a loss you can undo that move or retry.
 

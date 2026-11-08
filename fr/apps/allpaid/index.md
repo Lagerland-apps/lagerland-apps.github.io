@@ -3,7 +3,7 @@ layout: app
 slug: allpaid
 ref: /apps/allpaid/
 permalink: /fr/apps/allpaid/
-translated_from: 2026-11-07
+translated_from: 2026-11-08
 tagline: "Rappels de factures et de contrats pour iPhone, iPad et Mac, sans connexion bancaire."
 og_tagline: "Rappels de factures, sans connexion bancaire."
 quick_answer: "AllPaid est une application de rappel de factures pour iPhone, iPad et Mac, sans connexion bancaire : elle ne vous demande jamais vos identifiants bancaires. Vous saisissez une fois le loyer, les charges, les abonnements et les contrats ; AllPaid vous rappelle chaque échéance à 9 h, reporte une facture à sa date suivante quand vous la marquez comme payée, et vous prévient avant la fin d’un contrat. Elle est gratuite jusqu’à 3 factures ; Pro ajoute les factures illimitées, plusieurs rappels, l’analyse des dépenses, l’historique des paiements et la synchronisation iCloud, pour {P_MONTHLY}/mois, {P_YEARLY}/an ou {P_LIFETIME} une fois. Pas de compte, pas de publicité, et vos factures restent sur vos appareils."

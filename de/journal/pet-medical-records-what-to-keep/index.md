@@ -3,8 +3,8 @@ layout: journal
 slug: pet-medical-records-what-to-keep
 ref: /journal/pet-medical-records-what-to-keep/
 permalink: /de/journal/pet-medical-records-what-to-keep/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Impfpass, Heimtierausweis und Tierarztunterlagen: was in die Gesundheitsakte deines Tieres gehört"
 seo:
@@ -29,7 +29,7 @@ faq:
   - q: "Welche Impfnachweise verlangen Hundepensionen?"
     a: "Das ist je nach Pension und Land verschieden, frag also vorher nach. Typischerweise braucht ein Hund einen Nachweis über Tollwut (wo gesetzlich vorgeschrieben) und eine Kombinationsimpfung gegen Staupe, Hepatitis und Parvovirose, und die meisten Pensionen verlangen außerdem eine Impfung gegen Zwingerhusten. Für Katzen werden meist Tollwut und die Impfung gegen Katzenschnupfen und Katzenseuche (RCP) verlangt. Viele Pensionen wollen, dass die Impfung eine bestimmte Zahl von Tagen vor der Ankunft gegeben wurde, eine Auffrischung am Morgen der Abgabe reicht also oft nicht. Frag früh."
   - q: "Was ist der Unterschied zwischen Kernimpfungen und Non-Core-Impfungen?"
-    a: "Kernimpfungen werden praktisch jedem Hund und jeder Katze empfohlen, unabhängig vom Lebensstil, weil die Krankheiten schwer, verbreitet oder gesetzlich geregelt sind. Non-Core-Impfungen werden nach dem Risiko im Einzelfall empfohlen: Region, Hundetagesstätte, Kontakt zu Wildtieren oder Zecken. Die Kategorien legen Fachgremien fest, in Deutschland die StIKo Vet, international WSAVA, AAHA und AAFP, und sie ändern sich: Die AAHA empfiehlt seit ihrem Update von 2024 die Leptospirose-Impfung für die meisten Hunde in den USA als Kernimpfung, vorher galt sie dort als Non-Core. Prüf die aktuelle Leitlinie, ältere Zusammenfassungen sind womöglich veraltet."
+    a: "Kernimpfungen werden praktisch jedem Hund und jeder Katze empfohlen, unabhängig vom Lebensstil, weil die Krankheiten schwer, verbreitet oder gesetzlich geregelt sind. Non-Core-Impfungen werden nach dem Risiko im Einzelfall empfohlen: Region, Hundetagesstätte, Kontakt zu Wildtieren oder Zecken. Die Kategorien legen Fachgremien fest, in Deutschland die StIKo Vet, international WSAVA, AAHA und AAFP, und sie ändern sich: Die AAHA führt die Leptospirose-Impfung in ihren Leitlinien für Nordamerika seit dem Update von 2024 als Kernimpfung, vorher galt sie dort als Non-Core. Prüf die aktuelle Leitlinie, ältere Zusammenfassungen sind womöglich veraltet."
   - q: "Brauche ich die Unterlagen meines Tieres für Reisen ins Ausland?"
     a: "Ja, aber deine eigenen Unterlagen reichen nicht. Welche Regeln gelten, bestimmt das Zielland. Innerhalb der EU brauchen Hund und Katze einen EU-Heimtierausweis, einen Mikrochip und eine gültige Tollwutimpfung; der Chip muss vor der ersten Tollwutimpfung gesetzt sein, die Erstimpfung ist ab 12 Wochen möglich, und danach gilt eine Wartezeit von 21 Tagen (so das Veterinäramt Treptow-Köpenick in Berlin auf berlin.de). Außerhalb der EU verlangen viele Länder zusätzlich eine amtstierärztliche Gesundheitsbescheinigung, manchmal einen Tollwut-Antikörpertest. Erkundige dich Monate vor dem Flug bei der Botschaft des Ziellandes und beim Veterinäramt."
   - q: "Wie bekomme ich die Unterlagen meines Tieres von der alten Praxis?"
@@ -90,11 +90,11 @@ So sieht die internationale Einteilung aus:
 
 | | Hunde | Katzen |
 |---|---|---|
-| **Kern** | Staupe (CDV), Adenovirus (CAV-2), Parvovirose (CPV), meist kombiniert als DAPP oder DHPP, dazu Tollwut, wo gesetzlich vorgeschrieben, und für die meisten Hunde in den USA Leptospirose nach den AAHA-Leitlinien seit dem Update von 2024 | Panleukopenie (FPV), Herpesvirus (FHV-1), Calicivirus (FCV), kombiniert als RCP (englisch FVRCP), dazu Tollwut, wo gesetzlich vorgeschrieben, und FeLV für Katzenwelpen |
+| **Kern** | Staupe (CDV), Adenovirus (CAV-2), Parvovirose (CPV), meist kombiniert als DAPP oder DHPP, dazu Tollwut, wo gesetzlich vorgeschrieben, und in Nordamerika Leptospirose nach den AAHA-Leitlinien seit dem Update von 2024 | Panleukopenie (FPV), Herpesvirus (FHV-1), Calicivirus (FCV), kombiniert als RCP (englisch FVRCP), dazu Tollwut, wo gesetzlich vorgeschrieben, und FeLV für Katzenwelpen |
 | **Non-Core, nach Risiko** | Zwingerhusten (Bordetella), Hundeinfluenza, Borreliose und regionale Impfungen wie die gegen Klapperschlangengift | FeLV für erwachsene Katzen je nach Kontakt, Chlamydia felis, Bordetella |
 | **Gesetzlich bestimmt** | Tollwut, in den meisten Rechtsordnungen, mit einem Abstand, den das Gesetz festlegt und nicht deine Praxis | Tollwut, ebenso |
 
-Die Liste der Kernimpfungen ändert sich. In einem Update ihrer Hunde-Leitlinien von 2022 hat die AAHA 2024 die Leptospirose-Impfung für die meisten Hunde in den USA zur Kernimpfung gemacht, vorher galt sie als Non-Core. Die Primärquelle ist [die Mitteilung der AAHA](https://www.aaha.org/newstat/publications/leptospirosis-vaccination-recommended-to-be-core-for-most-dogs/){: hreflang="en"} (auf Englisch), und die Einstufung gilt für die USA, nicht weltweit; in Deutschland führt die StIKo Vet Leptospirose ohnehin als Kernimpfung. Wegen solcher Änderungen solltest du die aktuelle Leitlinie prüfen, statt etwas zu vertrauen, das an einem festen Tag geschrieben wurde, auch dieser Tabelle.
+Die Liste der Kernimpfungen ändert sich. In einem Update ihrer Hunde-Leitlinien von 2022 hat die AAHA 2024 die Leptospirose-Impfung in Nordamerika zur Kernimpfung gemacht, vorher galt sie als Non-Core. Die Primärquelle ist [die Mitteilung der AAHA](https://www.aaha.org/newstat/publications/leptospirosis-vaccination-recommended-to-be-core-for-most-dogs/){: hreflang="en"} (auf Englisch), und die Einstufung gilt für Nordamerika, nicht weltweit; in Deutschland führt die StIKo Vet Leptospirose ohnehin als Kernimpfung. Wegen solcher Änderungen solltest du die aktuelle Leitlinie prüfen, statt etwas zu vertrauen, das an einem festen Tag geschrieben wurde, auch dieser Tabelle.
 
 ## Warum die Papiermappe versagt
 

@@ -3,7 +3,7 @@ layout: app
 slug: tare
 ref: /apps/tare/
 permalink: /fr/apps/tare/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 tagline: "Un casse-tête de balance sans un mot. Accrochez les poids, équilibrez chaque fléau et déduisez ceux qui sont cachés."
 og_tagline: "Un casse-tête de balance sans un mot."
 
@@ -138,7 +138,7 @@ comparison_table:
       values: ["Données non collectées", "Données non collectées", "Données non liées à votre identité, y compris pour la publicité tierce", "Données liées à votre identité, y compris pour les analyses", "Données non liées à votre identité", "Données non collectées"]
     - feature: "Plateformes"
       values: ["iPhone, iPad", "iPhone, iPad, Mac, Apple Vision ; Steam, Android", "iPhone, iPad, Mac", "iPhone, iPad", "iPhone, iPad, Mac", "iPhone, iPad, Mac ; ordinateur, web, Android"]
-  footnote: "Les informations sur les autres jeux ont été vérifiées le 9 octobre 2026 d’après la fiche publique de chacun sur l’App Store et ses notes de version. Les prix, les publicités et les étiquettes de confidentialité changent : vérifiez avant d’installer. Good Sudoku+ est l’édition Apple Arcade. La fiche de DragonBox décrit à la fois un abonnement Kahoot! Kids obligatoire et un début gratuit ; la page de comparaison donne le détail."
+  footnote: "Les informations sur les autres jeux ont été vérifiées le 8 novembre 2026 d’après la fiche publique de chacun sur l’App Store et ses notes de version. Les prix, les publicités et les étiquettes de confidentialité changent : vérifiez avant d’installer. Good Sudoku+ est l’édition Apple Arcade. La fiche de DragonBox décrit à la fois un abonnement Kahoot! Kids obligatoire et un début gratuit ; la page de comparaison donne le détail."
   cta_label: "Jouer gratuitement au chapitre I"
 
 faq:
@@ -163,7 +163,7 @@ faq:
   - q: "Tare fonctionne-t-il hors ligne, et collecte-t-il des données ?"
     a: "Tare fonctionne entièrement hors ligne : les 200 niveaux sont dans l’app. Seuls l’achat et la restauration du déblocage demandent une connexion, via Apple. Le jeu n’ouvre aucune connexion réseau de lui-même, n’a ni compte, ni publicité, ni outil d’analyse, ni SDK tiers, et ne collecte aucune donnée. Votre progression et vos réglages restent sur votre appareil."
   - q: "Les enfants, ou les personnes qui ne lisent pas l’anglais, peuvent-ils y jouer ?"
-    a: "Oui. Le casse-tête ne comporte aucun mot : chacun peut y jouer dans sa langue et à tout âge. Les quelques écrans autour, comme les Réglages et l’écran de déblocage, sont traduits en 50 langues, dont le français."
+    a: "Oui. Le casse-tête ne comporte aucun mot : chacun peut y jouer dans sa langue et à tout âge. Les quelques écrans autour, comme les Réglages et l’écran de déblocage, sont traduits en 44 langues, dont le français."
   - q: "Tare existe-t-il sur iPad ou Mac, et la progression est-elle synchronisée ?"
     a: "Tare fonctionne sur iPhone et iPad avec iOS ou iPadOS 18 ou version ultérieure. Sur iPhone, il se joue en mode portrait. Sur iPad, il tourne avec l’appareil et affiche le jeu en grand, dans une colonne centrée. Il n’existe pas de version pour Mac, Apple Watch ou Vision Pro. La progression reste sur l’appareil sur lequel vous jouez et n’est pas synchronisée entre appareils."
   - q: "Tare est-il accessible ?"
@@ -243,4 +243,4 @@ Tare n’a ni publicité, ni minuteur, ni vies, ni compteur de coups, ni score, 
 
 L’étiquette de confidentialité de l’App Store d’Apple indique **Données non collectées**, et le manifeste de confidentialité de l’app ne déclare ni suivi ni donnée collectée. La <a href="{% include l.html url="/apps/tare/privacy/" %}"{% if l_en %} hreflang="en"{% endif %}>politique de confidentialité{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> détaille ce qui reste sur votre appareil et ce qu’Apple gère à la place.
 
-Tare fonctionne sur iPhone et iPad avec iOS ou iPadOS 18 ou version ultérieure, et ses quelques mots sont traduits en 50 langues. Si vous aimez les casse-tête qui se terminent par une réponse démontrable, <a href="{% include l.html url="/apps/millrace/" %}"{% if l_en %} hreflang="en"{% endif %}>Millrace{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> est un casse-tête de livraison de tuiles du même studio. Pour savoir comment les deux se comparent à Baba Is You, Good Sudoku, Flow Free et les autres, lisez <a href="{% include l.html url="/guides/best-logic-puzzle-games-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>les meilleurs jeux de logique pour iPhone{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.
+Tare fonctionne sur iPhone et iPad avec iOS ou iPadOS 18 ou version ultérieure, et ses quelques mots sont traduits en 44 langues. Si vous aimez les casse-tête qui se terminent par une réponse démontrable, <a href="{% include l.html url="/apps/millrace/" %}"{% if l_en %} hreflang="en"{% endif %}>Millrace{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> est un casse-tête de livraison de tuiles du même studio. Pour savoir comment les deux se comparent à Baba Is You, Good Sudoku, Flow Free et les autres, lisez <a href="{% include l.html url="/guides/best-logic-puzzle-games-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>les meilleurs jeux de logique pour iPhone{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.

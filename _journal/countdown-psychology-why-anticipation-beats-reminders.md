@@ -30,7 +30,7 @@ mentioned_apps:
   - soon
 read_time: "8 min read"
 excerpt: "Why countdown apps work, why anticipation motivates better than reminders, and what a countdown should do with the space it takes up on your Home Screen."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 Tourism researchers established something about fifteen years ago that the holiday-planning industry knows but rarely mentions: statistically, the happiest part of a vacation is the lead-up.
@@ -54,7 +54,7 @@ The finding has been replicated and extended in many domains:
 - **Van Boven and Gilovich (2003)** found that subjects who reflected on past experiential purchases (trips, concerts, dinners) felt more positive than those reflecting on material purchases (electronics, clothes). They proposed that experiences give utility in three phases, anticipation, consumption, and memory, and that anticipation is often the strongest of them.
 - **Nawijn (2010, 2011)** showed empirically that holidaymakers report higher subjective well-being in the lead-up to a trip than during or after it.
 - **Sevdalis and Harvey (2007)** found that anticipation effects hold even when participants are unsure whether the event will happen at all, a kind of pre-emptive enjoyment.
-- More recent positive psychology calls this **prospection**, the brain's capacity to simulate future positive states, and counts it among the four pillars of well-being, alongside connection, meaning, and engagement.
+- **Seligman, Railton, Baumeister and Sripada (2013)** named this **prospection**, the mind's capacity to simulate possible futures, and argued that looking ahead, more than the past, drives much of what people do.
 
 So anticipation is a form of consumption in its own right, and the wait is part of the experience.
 
@@ -121,7 +121,7 @@ None of this is radical. It is what Loewenstein, Nawijn, Van Boven, and Gilovich
 
 [Soon.](/apps/soon/) exists because most countdown apps we tried treat the date as a number to display rather than as something to look forward to. Soon. is built around the three components above: the photo, the plan, and the notification rule. That follows from what the research says makes a countdown worth having.
 
-[Plan mode](/journal/how-plan-mode-builds-a-checklist/), which suggests a free starter checklist and milestone timeline for each kind of event, provides the agency. Your own photo behind the countdown is the sensory anchor. Reminders (Premium) arrive 7 days, 3 days, and 1 day before, and on the day, plus reminders for the plan items you choose.
+[Plan mode](/journal/how-plan-mode-builds-a-checklist/), which suggests a free starter checklist and milestone timeline for each kind of event, provides the agency. Your own photo behind the countdown is the sensory anchor. Reminders (Premium) arrive 7 days, 3 days, and 1 day before, and on the day. If the plan has timeline milestones, the 7-, 3-, and 1-day reminders follow the milestones instead.
 
 This post is mainly for anyone building products in this space: countdowns deserve to be taken seriously as support for looking forward to good events, more than as a novelty UI element. The research is decades old, and most products in the space still just display a number.
 
@@ -129,4 +129,4 @@ Few tools treat anticipation as the main experience, and there is room for many 
 
 ---
 
-[Soon. is available on the App Store](https://apps.apple.com/app/id6757280643) for iPhone. It is free for up to 5 moments, with no time limit. Premium adds reminders, the Apple Weather forecast once the date is within 7 days, daily notes, and repeating moments. How the starter plans work is in [How Plan Mode builds a checklist](/journal/how-plan-mode-builds-a-checklist/).
+[Soon. is available on the App Store](https://apps.apple.com/app/id6757280643) for iPhone. It is free for up to 5 moments, with no time limit. Premium adds reminders, the Apple Weather forecast once the date is within 7 days, daily notes, and repeating moments. How the starter plans work is in [How Plan mode builds a checklist](/journal/how-plan-mode-builds-a-checklist/).

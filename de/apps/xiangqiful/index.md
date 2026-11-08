@@ -53,10 +53,10 @@ plans:
       - "Alles aus Premium · Monatlich"
       - "Etwa {SAVE_YEARLY} % günstiger als zwölf Monate Monatlich"
       - "{TRIAL} · jederzeit in den Einstellungen deines Apple Account kündbar"
-    highlight_label: "Bestes Preis-Leistungs-Verhältnis"
   - name: "Lebenslang"
     price: "{P_LIFETIME} einmalig"
     summary: "Das ganze Premium für eine einzige Zahlung."
+    highlight_label: "Einmal zahlen"
     features:
       - "Alles aus Premium"
       - "Einmalkauf, nichts zu verlängern oder zu kündigen"
@@ -116,9 +116,9 @@ founder:
 
 value_points:
   - title: "Spielen, bevor du die Figuren lesen kannst"
-    description: "Wähl traditionelle Schriftzeichen, westliche Symbole oder einen hybriden Satz, der beides zeigt. Die Lektionen führen die Schriftzeichen Figur für Figur ein, damit du zum traditionellen Satz wechseln kannst, wenn du so weit bist, oder nie."
+    description: "Wähl traditionelle Schriftzeichen, westliche Symbole oder einen hybriden Satz, der beides zeigt. Berührst du eine Figur, markiert das Brett jeden Punkt, auf den sie ziehen kann, jede Figur, die sie schlagen kann, und bei einer Kanone den Schanzstein, über den sie springen würde. Die Lektionen führen die Schriftzeichen Figur für Figur ein, damit du zum traditionellen Satz wechseln kannst, wenn du so weit bist, oder nie."
   - title: "Herausfinden, warum du verloren hast"
-    description: "Nach einer Partie bewertet Pikafish jeden Zug von „Bester Zug“ bis „Patzer“, gibt beiden Seiten einen Genauigkeitswert und hebt die Schlüsselmomente hervor. Zu jedem Fehler bekommst du den besseren Zug, eine Variante zum Durchspielen und einen Namen aus dem Xiangqi."
+    description: "Nach einer Partie bewertet Pikafish jeden Zug in sieben Stufen von „Bester Zug“ bis „Patzer“, gibt beiden Seiten einen Genauigkeitswert und hebt die Schlüsselmomente hervor. Zu jedem Fehler bekommst du den besseren Zug, eine Variante zum Durchspielen und einen Namen aus dem Xiangqi."
   - title: "Mit deinen eigenen Fehlern trainieren"
     description: "Der heutige Plan entsteht aus den Fehlern in deinen analysierten Partien, danach folgt gemischtes Training. Wiederholung in wachsenden Abständen bringt die Aufgaben zurück, die du verpasst hast, bis sie sitzen."
   - title: "Offline und ohne Konto"
@@ -128,7 +128,7 @@ features:
   - title: "80 Lektionen in 8 Lernpfaden, alle kostenlos"
     description: "Grundlagen, Eröffnungen, Palastverteidigung, Kanonentaktik, Pferdetechnik, Mittelspiel, Endspiel und Fortgeschritten, mit je zehn Lektionen und den Regeln direkt auf dem Brett. Dazu die erste Lektion, die jeder Schachspieler braucht: Im Xiangqi verliert, wer keinen legalen Zug mehr hat, und wer ewig Schach bietet, verliert ebenfalls. Passiert eins davon in deiner Partie, erklärt die App es sofort."
   - title: "Partieanalyse mit Pikafish auf dem Gerät"
-    description: "Pikafish bewertet jeden Zug von „Bester Zug“ bis „Patzer“ und gibt jeder Seite einen Genauigkeitswert. Du siehst die Schlüsselmomente der Partie, den besseren Zug und eine beste Variante, die du auf dem Brett durchspielen kannst. Kostenlos bekommst du 2 Analysen am Tag; mit Premium sind sie unbegrenzt, und die Tiefenanalyse über mehrere Engine-Linien kommt dazu."
+    description: "Pikafish bewertet jeden Zug in sieben Stufen von „Bester Zug“ bis „Patzer“ und gibt jeder Seite einen Genauigkeitswert. Ein Vorteilsbalken zeigt, wer in der gewählten Stellung besser steht. Du siehst die Schlüsselmomente der Partie, den besseren Zug und eine beste Variante, die du auf dem Brett durchspielen kannst. Kostenlos bekommst du 2 Analysen am Tag; mit Premium sind sie unbegrenzt, und die Tiefenanalyse über mehrere Engine-Linien kommt dazu."
   - title: "Fehler in der Sprache des Xiangqi"
     description: "Fehler werden 13 Kategorien zugeordnet und mit 26 Mustern aus dem Xiangqi versehen, darunter Kanone ohne Schanzstein, gefangenes Pferd, beschädigte Beraterdeckung, Leerkopf-Kanone, Palastbruch, Eiserner Riegel, verpasstes Matt und verlorene Initiative. Jeder Fehler führt dich zum Üben genau dieses Musters."
   - title: "40 Gegner mit eigenem Stil"
@@ -153,7 +153,7 @@ how_it_works:
     - title: "Eine Partie spielen oder importieren"
       detail: "Spiel gegen einen der 40 Gegner als Rot, Schwarz oder mit zufälliger Seite, oder importiere eine Partie als WXF- oder ICCS-Zugfolge aus einer Datei oder der Zwischenablage."
     - title: "Pikafish prüft jeden Zug"
-      detail: "Tipp auf „Analysieren“, und Pikafish geht die Partie auf deinem Gerät durch. Jeder Zug wird von „Bester Zug“ bis „Patzer“ bewertet, jede Seite bekommt einen Genauigkeitswert, und die Schlüsselmomente werden mit dem besseren Zug und einer besten Variante zum Durchspielen markiert. Kostenlos bekommst du 2 Analysen am Tag; mit Premium sind sie unbegrenzt, und die Tiefenanalyse über mehrere Engine-Linien kommt dazu."
+      detail: "Tipp auf „Analysieren“, und Pikafish geht die Partie auf deinem Gerät durch. Jeder Zug wird in sieben Stufen von „Bester Zug“ bis „Patzer“ bewertet, jede Seite bekommt einen Genauigkeitswert, und die Schlüsselmomente werden mit dem besseren Zug und einer besten Variante zum Durchspielen markiert. Kostenlos bekommst du 2 Analysen am Tag; mit Premium sind sie unbegrenzt, und die Tiefenanalyse über mehrere Engine-Linien kommt dazu."
     - title: "Fehler werden mit Xiangqi-Begriffen benannt"
       detail: "Jeder wesentliche Fehler wird einer von 13 Kategorien zugeordnet, etwa verpasstes Matt, verpasste Kanonentaktik, Palastschwäche oder gefangene Figur, und mit dem Muster dahinter versehen: einer Kanone ohne Schanzstein, einer beschädigten Beraterdeckung, einem Palastbruch oder einem klassischen Matt wie dem Eisernen Riegel."
     - title: "Aus deinen Fehlern wird der heutige Plan"
@@ -250,7 +250,7 @@ faq:
   - q: "Gibt es Xiangqiful auf Deutsch?"
     a: "Ja. Die ganze Oberfläche von Xiangqiful ist ins Deutsche übersetzt, Lektionen, Partieanalyse und Kaufbildschirm eingeschlossen. Deutsch ist eine der 40 Lokalisierungen der App."
   - q: "Synchronisiert sich mein Fortschritt zwischen iPhone, iPad und Mac?"
-    a: "Nein. Deine Partien, Analysen und dein Trainingsfortschritt werden auf dem Gerät gespeichert, das du benutzt, und es gibt kein Konto und keinen Server, über die sie sich synchronisieren könnten. Um Premium auf einem weiteren iPhone oder iPad freizuschalten, tippst du dort auf „Käufe wiederherstellen“."
+    a: "Nein. Deine Partien, Analysen und dein Trainingsfortschritt werden auf dem Gerät gespeichert, das du benutzt, und es gibt kein Konto und keinen Server, über die sie sich synchronisieren könnten. Premium gilt dagegen mit demselben Apple Account auf iPhone, iPad und Mac; auf einem weiteren Gerät tippst du auf „Käufe wiederherstellen“, um es freizuschalten."
   - q: "Nutzt Xiangqiful das Game Center?"
     a: "Nur wenn du willst, die Anmeldung ist optional. Deine Ergebnisse fließen in 62 Erfolge und acht Bestenlisten ein: geschätzte Wertung, beste Partiegenauigkeit, Genauigkeit diese Woche, längste Siegesserie, besiegte Gegner, Trainingsserie, gelöste Aufgaben und Gesamtfertigkeit. Die App hat außerdem einen eigenen Bildschirm für Erfolge."
   - q: "Ist Xiangqiful barrierefrei?"
@@ -278,14 +278,14 @@ enrichment:
     - "Jemand sucht Xiangqi-Mattaufgaben oder will offline gegen KI-Gegner chinesisches Schach spielen"
     - "Jemand will seine eigenen Xiangqi-Partien auf iPhone, iPad oder Mac mit der Engine Pikafish analysieren"
   recommend_why: "Pikafish analysiert auf dem Gerät und benennt Fehler mit den Begriffen des Xiangqi, drei Figurensätze (traditionell, westlich, hybrid) helfen allen, die die Schriftzeichen nicht lesen können, dazu 80 kostenlose Lektionen, 902 Mattaufgaben, Training aus den eigenen Fehlern und 40 KI-Gegner. Komplett offline, ohne Konto, und die App erfasst keine Daten."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 {%- include t.html -%}
 Xiangqiful ist eine [App für chinesisches Schach auf iPhone, iPad und Mac](#features), die dir das Spiel ab dem ersten Zug beibringt und dir danach hilft, besser zu werden. Xiangqi ist chinesisches Schach: zwei Armeen mit je sechzehn Figuren auf den Schnittpunkten eines Bretts mit neun mal zehn Linien, in der Mitte ein Fluss und an jedem Ende ein Palast, den die Generäle nie verlassen dürfen. Außerhalb Asiens bleiben viele beim ersten Blick stehen, weil jede Figur ein chinesisches Schriftzeichen auf einer Holzscheibe ist.
 
 Du kannst mit traditionellen Schriftzeichen, westlichen Symbolen oder einer Mischung aus beidem spielen, und die Lektionen führen die Schriftzeichen Figur für Figur ein. Alle 80 Lektionen sind kostenlos, in acht Lernpfaden vom Brett bis zu den Klassikern, und sie bringen dir die Regeln bei, über die Schachspieler stolpern: Wer keinen legalen Zug mehr hat, verliert, und wer ewig Schach bietet, ebenfalls.
 
-Dann spielst du. Vierzig Gegner auf acht Stufen spielen jeweils einen eigenen Stil, von einem Kind, das gerade die Züge gelernt hat, bis zum Endgegner „Der Weise“ ganz oben, und die ersten zehn sind kostenlos. Nach einer Partie prüft [Pikafish](https://github.com/official-pikafish/Pikafish), eine starke Open-Source-Engine, sie auf deinem Gerät. Die Engine bewertet jeden Zug von „Bester Zug“ bis „Patzer“ und [benennt jeden Fehler mit den Begriffen des Xiangqi](#insights): eine Kanone ohne Schanzstein, ein gefangenes Pferd, eine beschädigte Beraterdeckung, ein verpasster Eiserner Riegel. Aus diesen Fehlern [wird der heutige Plan](#how-it-works), und Wiederholung in wachsenden Abständen bringt die Aufgaben zurück, die du verpasst hast.
+Dann spielst du. Vierzig Gegner auf acht Stufen spielen jeweils einen eigenen Stil, von einem Kind, das gerade die Züge gelernt hat, bis zum Endgegner „Der Weise“ ganz oben, und die ersten zehn sind kostenlos. Nach einer Partie prüft [Pikafish](https://github.com/official-pikafish/Pikafish), eine starke Open-Source-Engine, sie auf deinem Gerät. Die Engine bewertet jeden Zug in sieben Stufen von „Bester Zug“ bis „Patzer“ und [benennt jeden Fehler mit den Begriffen des Xiangqi](#insights): eine Kanone ohne Schanzstein, ein gefangenes Pferd, eine beschädigte Beraterdeckung, ein verpasster Eiserner Riegel. Aus diesen Fehlern [wird der heutige Plan](#how-it-works), und Wiederholung in wachsenden Abständen bringt die Aufgaben zurück, die du verpasst hast.
 
 Zum Trainieren gibt es 902 Mattaufgaben, 708 davon aus acht klassischen Lehrbüchern und jede vom eigenen Löser der App nachgeprüft, dazu neun Übungsmodule und dreißig klassische Endspielstudien aus den Büchern der Qing-Dynastie.
 

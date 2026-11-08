@@ -3,7 +3,7 @@ layout: app
 slug: aftershift
 name: "AfterShift"
 tagline: "Sleep and recovery tracking built around your shift roster."
-quick_answer: "AfterShift is an iPhone sleep and recovery app for shift workers: nurses, paramedics, firefighters, factory and logistics crews, and anyone on nights, rotating shifts, or on-call. It measures sleep shift to shift instead of midnight to midnight, imports sleep from Apple Health with naps included, fills your roster 8 weeks ahead from a repeating rotation, and times wind-down, caffeine cut-off, and nap reminders to your next shift. All of that is free. Premium ({P_MONTHLY}/mo or {P_YEARLY}/yr, each starting with a {TRIAL}, or {P_LIFETIME} once) adds Readiness, the Sleep Score, the Shift Recovery Score, and trends. There is no account and no ads, and your data is never sent to a server."
+quick_answer: "AfterShift is an iPhone sleep and recovery app for shift workers: nurses, paramedics, firefighters, factory and logistics crews, and anyone on nights, rotating shifts, or on-call. It measures sleep shift to shift instead of midnight to midnight, imports sleep from Apple Health with naps included, fills your roster 8 weeks ahead from a repeating rotation, and times wind-down, caffeine cut-off, and nap reminders to your next shift. All of that is free, and Premium ({P_MONTHLY}/mo or {P_YEARLY}/yr, each starting with a {TRIAL}, or {P_LIFETIME} once) adds Readiness, the Sleep Score, the Shift Recovery Score, and trends. There is no account and no ads, and your data is never sent to a server."
 category: health
 status: live
 
@@ -23,7 +23,7 @@ plans:
       - "Sleep imported from Apple Health, naps included"
       - "Sleep Timing, Sleep Stages, and the sleep-debt trend"
       - "\"Do this now\" steps and 21 techniques with timers"
-      - "Shift-timed reminders, a Lock Screen countdown, and 4 widgets"
+      - "Shift-timed reminders, a Lock Screen countdown, and 3 widgets"
       - "Calendar import from 1 calendar, 14 days ahead"
   - name: "Premium · Monthly"
     price: "{P_MONTHLY}/mo"
@@ -133,7 +133,7 @@ features:
   - title: "Repeating rotations"
     description: "Seven presets: Three-shift rotation, 4 on / 4 off, 4 on / 3 off, 2 days / 2 nights, Panama (2-2-3), Fixed nights, and Fixed days. Or build your own cycle of up to 28 days, long enough for a DuPont. Name as many shift types and rest days as your workplace uses."
   - title: "Sleep from Apple Health, naps included"
-    description: "Last night's sleep imports itself, even in the background, and naps are tagged as naps. Log a nap yourself, or start a 25-minute nap timer on the Lock Screen that logs the nap when you end it. Needs an Apple Watch or a sleep app that saves sleep to Apple Health."
+    description: "Last night's sleep imports itself, even in the background, and naps are tagged as naps. Log a nap yourself, or start a 25-minute nap timer on the Lock Screen that logs the nap when you end it. Long-press any sleep you logged yourself to edit or delete it. Needs an Apple Watch or a sleep app that saves sleep to Apple Health."
   - title: "Sleep Timing, stages, and debt trend"
     description: "Every sleep shows time asleep and efficiency, plus Awake, Core, Deep, and REM when your sleep source records stages. A sleep-debt chart shows your average nightly debt over your last 12 cycles, labelled Building, Stable, or Recovering. Premium adds the Sleep Score, the Shift Recovery Score, Sleep Continuity, and Trends."
   - title: "Do this now"
@@ -143,7 +143,7 @@ features:
   - title: "Calendar import"
     description: "Connect your work calendar and AfterShift detects the shifts in it, with a review list before anything is added. Free reads 1 calendar, 14 days ahead, when you import. Premium syncs several calendars each time you open the app and tracks overtime."
   - title: "Widgets, Lock Screen, and Siri"
-    description: "Seven widgets, four of them free: Next Shift, Readiness, Shift Plan, and Roster. A Lock Screen and Dynamic Island countdown to your next shift shows the top \"Do this now\" step. Ask Siri when your next shift is or when to sleep."
+    description: "Seven widgets, three of them free: Next Shift, Shift Plan, and Roster. Readiness, Sleep Graph, Rhythm, and Sleep Debt come with Premium. A Lock Screen and Dynamic Island countdown to your next shift shows the top \"Do this now\" step. Ask Siri when your next shift is or when to sleep."
 
 screenshots:
   - src: "/assets/screenshots/aftershift/1.webp"
@@ -175,7 +175,7 @@ privacy:
     - "Sleep is read from Apple Health, read-only, and never written back"
     - "Shifts, sleep, and calendar data stay on your iPhone and are never sent to a server"
     - "Premium explanations come from Apple Intelligence on the device"
-    - "Data leaves your iPhone only when you export or share a report yourself"
+    - "Data leaves your iPhone only when you export a report or send us a feedback email yourself"
 
 faq:
   - q: "What is AfterShift?"
@@ -188,7 +188,7 @@ faq:
     a: "Generic sleep apps measure you against a night that starts at 11 p.m. AfterShift measures recovery shift to shift, fills your roster from a repeating rotation, and times its reminders and its \"Do this now\" steps to your next shift. There is no account, and your data stays on your iPhone. The comparison pages go app by app: <a href=\"/alternatives/offshift/\">OffShift</a>, <a href=\"/alternatives/shiftsleep/\">ShiftSleep</a>, and <a href=\"/alternatives/timeshifter/\">Timeshifter</a>."
 
   - q: "What is the Shift Recovery Score, and how is it calculated?"
-    a: "The Shift Recovery Score is a 0 to 100 score for one sleep, shown in Recovery details with Premium. It weighs sleep duration (50%), continuity, meaning how unbroken the sleep was (30%), and the balance of sleep stages (20%). Readiness is the separate rating for your next shift: Low, OK, or Good, from the sleep you got between shifts against your sleep target. Both are custom heuristics, not medical assessments and not a diagnosis of Shift Work Disorder. <a href=\"/apps/aftershift/methodology/\">The methodology page</a> lists every input and weight."
+    a: "The Shift Recovery Score is a 0 to 100 score for one sleep, shown in Recovery details with Premium. It weighs sleep duration (50%), continuity, meaning how unbroken the sleep was (30%), and the balance of sleep stages (20%). It is capped at 79 when the gap between two shifts is shorter than your sleep target (days off excepted) and at 75 when the window includes an on-call shift, so those sleeps top out at Good. Readiness is the separate rating for your next shift: Low, OK, or Good, from the sleep you got between shifts against your sleep target. Both are custom heuristics, not medical assessments and not a diagnosis of Shift Work Disorder. <a href=\"/apps/aftershift/methodology/\">The methodology page</a> lists every input and weight."
 
   - q: "Why do naps count toward recovery in AfterShift?"
     a: "For shift workers, naps are part of the plan. A short nap before a night shift is one of the most common strategies in shift-work sleep guidance, because the main sleep window is often too short on its own. AfterShift imports naps from Apple Health and tags them as naps, and naps you log yourself, or time with the 25-minute nap timer, land in the same list. Readiness counts the sleep you got inside the window between shifts, naps included. Premium adds a Naps card to Recovery details."
@@ -199,6 +199,9 @@ faq:
   - q: "Which shift patterns does AfterShift support?"
     a: "Any pattern you can set up as a repeating rotation or add by hand. The presets are Three-shift rotation, 4 on / 4 off, 4 on / 3 off, 2 days / 2 nights, Panama (2-2-3), Fixed nights, and Fixed days. You can also build your own cycle of 1 to 28 days, which is long enough for a full DuPont (4 nights / 3 off / 3 days / 1 off / 3 nights / 3 off / 4 days / 7 off). AfterShift fills the next 8 weeks and keeps topping them up. Shift types take your own names and times, so 12-hour days and nights and swing shifts fit too. Calendar import can also detect shifts from your work calendar: free reads 1 calendar, 14 days ahead; Premium syncs several calendars automatically when you open the app."
 
+  - q: "How does AfterShift handle on-call shifts?"
+    a: "On-call is one of the shift types AfterShift starts with, and calendar import recognizes on-call events by their titles. Before or during an on-call shift, the sleep plan becomes a flexible rest window, \"Do this now\" usually picks its on-call routine, and Readiness (Premium) adds an on-call note. Three or more on-call shifts in 7 days count as an on-call week: the sleep-debt trend gets a badge, the Coach tab shows an on-call recovery card, and Premium adds a daily on-call tip. When on-call time falls in the window, the Shift Recovery Score is capped at 75 and the Sleep Score at 84. The <a href=\"/journal/how-to-sleep-on-call/\">on-call sleep guide</a> covers what the research says about sleeping on call."
+
   - q: "Does AfterShift give caffeine timing recommendations?"
     a: "It gives you a caffeine cut-off reminder timed to your next shift, so the cut-off moves when your shifts move. Log a coffee in one tap, or long-press for an espresso, an energy drink, tea, or something else, and the reminder adapts to how much caffeine you had and the caffeine sensitivity you set. Premium adds caffeine detail to each sleep in Recovery details."
 
@@ -206,10 +209,10 @@ faq:
     a: "No. AfterShift is a tool for tracking and planning recovery. It gives plain insights, not medical diagnoses or treatment recommendations, and its suggestions are labelled as suggestions, not prescriptions. If you suspect Shift Work Disorder, chronic insomnia, sleep apnea, or any other clinical sleep condition, see a sleep specialist."
 
   - q: "Is AfterShift free?"
-    a: "Yes. Free covers repeating rotations and the roster, sleep import from Apple Health with naps included, Sleep Timing and Sleep Stages, the sleep-debt trend, the recovery plan, \"Do this now\" steps and 21 techniques, shift-timed reminders, the Lock Screen countdown and nap timer, Siri, four of the seven widgets, and calendar import from 1 calendar, 14 days ahead. Premium adds Readiness, the Sleep Score and Shift Recovery Score, Sleep Continuity, Trends, automatic sync from several calendars with overtime tracking, a preview of what a shift change does to your readiness, a PDF report, and explanations written on-device by Apple Intelligence (iOS 26 or later on a supported iPhone). It costs {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once, and the subscriptions start with a {TRIAL}. All three plans support Family Sharing. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes. Free covers repeating rotations and the roster, sleep import from Apple Health with naps included, Sleep Timing and Sleep Stages, the sleep-debt trend, the recovery plan, \"Do this now\" steps and 21 techniques, shift-timed reminders, the Lock Screen countdown and nap timer, the Siri shortcuts Next Shift, Next Sleep Window, and Log Sleep, three of the seven widgets, and calendar import from 1 calendar, 14 days ahead. Premium adds Readiness (on Today, in its widget, and through Siri), the Sleep Score and Shift Recovery Score, Sleep Continuity, Trends, automatic sync from several calendars with overtime tracking, a preview of what a shift change does to your readiness, a PDF report, and explanations written on-device by Apple Intelligence (iOS 26 or later on a supported iPhone). It costs {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once, and the subscriptions start with a {TRIAL}. All three plans support Family Sharing. Prices in USD; the App Store shows your local currency at checkout."
 
   - q: "Does AfterShift sell my health data?"
-    a: "No. AfterShift has no ads, no third-party trackers, no analytics SDKs, and no servers to send data to. Your sleep, nap, and shift data stay on your iPhone, because there is no account and no cloud sync. Data leaves the device only if you export or share a report yourself."
+    a: "No. AfterShift has no ads, no third-party trackers, no analytics SDKs, and no servers to send data to. Your sleep, nap, and shift data stay on your iPhone, because there is no account and no cloud sync. Data leaves the device only if you export a report or send us a feedback email yourself."
 
   - q: "Does AfterShift sync between devices or work on iPad?"
     a: "No. AfterShift runs on iPhone only, and there is no account and no iCloud sync, so your data lives on one iPhone. Deleting the app deletes that data. A Premium purchase restores on any iPhone signed in with the same Apple ID."
@@ -218,7 +221,7 @@ faq:
     a: "No. AfterShift has no Apple Watch app and does not need one, but it does need sleep in Apple Health, and an iPhone on its own records none. An Apple Watch or any sleep app that saves to Apple Health will do. You can also log naps in the app and log sleep by asking Siri. A source that records sleep stages adds the stage detail; without it, the stage part of the scores uses neutral defaults."
 
   - q: "Should I get morning light after a night shift, or block it?"
-    a: "Both, at different times and for different goals. If you are staying on a night-shift schedule, block bright morning light on the commute home (sunglasses help) and sleep in a dark room, because bright light tells your circadian clock it is daytime and makes it harder to fall asleep. If you are switching back to day life, do the opposite and get bright light in the morning to phase-advance your clock. AfterShift's Coach tab has a short \"Light exposure basics\" reading. For the circadian science in full, sleep specialists and the U.S. <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\">NIOSH shift work resources</a> cover light exposure timing in detail."
+    a: "Both, at different times and for different goals. If you are staying on a night-shift schedule, block bright morning light on the commute home (dark sunglasses help, but only if someone else is driving) and sleep in a dark room, because bright light tells your circadian clock it is daytime and makes it harder to fall asleep. If you are switching back to day life, do the opposite and get bright light in the morning to phase-advance your clock. AfterShift's Coach tab has a short \"Light exposure basics\" reading. For the circadian science in full, sleep specialists and the U.S. <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\">NIOSH shift work resources</a> cover light exposure timing in detail."
 
   - q: "What does sleep inertia have to do with shift work?"
     a: "Sleep inertia is the groggy, slowed-reaction state in the first 15 to 30 minutes after waking. For shift workers it matters in two places. (1) Waking from a long, deep nap mid-shift can leave inertia bad enough that the nap costs more than it gives; AfterShift's Lock Screen nap timer runs for 25 minutes. (2) The start of a night shift after daytime sleep often comes with leftover inertia that feels like fatigue. Telling the two apart helps when you are deciding whether you need caffeine or just fifteen minutes."
@@ -240,8 +243,8 @@ support:
   url: "/apps/aftershift/support/"
 
 release:
-  first_release: "2026-01-01"
-  last_updated: "2026-10-24"
+  first_release: "2026-01-05"
+  last_updated: "2026-10-23"
 
 ratings:
   value: "3.6"

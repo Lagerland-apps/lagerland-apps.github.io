@@ -270,8 +270,8 @@ last_updated: 2026-11-08
   <h2 class="h2 reveal" id="apps-title">Die passende App für deine Aufgabe</h2>
   <p class="lead reveal">Fünf Serien von einer Person. Jede App erledigt eine Aufgabe, behält deine Daten von Haus aus bei dir und soll sich ruhig anfühlen.</p>
 
-  {%- assign series_heads = "Gesundheit, Schlaf und Training|Den Tag planen und lesen|Geld und Rechnungen|Brettspiele und Logikrätsel|Werkzeuge für App-Store-Entwickler und den Mac" | split: "|" -%}
-  {%- assign series_leads = "Schlaf und Erholung bei Schichtarbeit, ein täglicher Bereitschaftswert aus Apple Health, Trainingstagebücher fürs Krafttraining und die Gesundheitsakte deines Haustiers.|Ein Tagesplaner, in dem Unerledigtes von selbst weiterwandert, Countdowns zu den Tagen, auf die du wartest, ein App-Blocker, den du mit Bewegung entsperrst, und Wikipedia, ein Wisch nach dem anderen.|Erinnerungen an Rechnungen und Vertragsverlängerungen ganz ohne Verbindung zur Bank und eine App, die den Kassenbon liest und allen sagt, was sie zahlen.|Schach, Shogi und Xiangqi mit Engines auf dem Gerät, die deine Partien auswerten, dazu zwei Logikrätsel. Keins davon zeigt Werbung.|Mac- und iPhone-Werkzeuge für Einträge, Verkäufe und Bewertungen in App Store Connect, für App-Store-Screenshots und zum Umwandeln von Dateien direkt auf deinem Gerät." | split: "|" -%}
+  {%- assign series_heads = "Gesundheit, Schlaf und Training|Den Tag planen und lesen|Geld und Rechnungen|Brettspiele und Logikrätsel|Werkzeuge für App-Store-Entwickler, Dateien und Rechnungen" | split: "|" -%}
+  {%- assign series_leads = "Schlaf und Erholung bei Schichtarbeit, ein täglicher Bereitschaftswert aus Apple Health, Trainingstagebücher fürs Krafttraining und die Gesundheitsakte deines Haustiers.|Ein Tagesplaner, in dem Unerledigtes von selbst weiterwandert, Countdowns zu den Tagen, auf die du wartest, ein App-Blocker, den du mit Bewegung entsperrst, und Wikipedia, ein Wisch nach dem anderen.|Erinnerungen an Rechnungen und Vertragsverlängerungen ganz ohne Verbindung zur Bank.|Schach, Shogi und Xiangqi mit Engines auf dem Gerät, die deine Partien auswerten, dazu zwei Logikrätsel. Keins davon zeigt Werbung.|Mac- und iPhone-Werkzeuge für Einträge, Verkäufe und Bewertungen in App Store Connect, für App-Store-Screenshots und zum Umwandeln von Dateien direkt auf deinem Gerät, dazu eine App, die den Kassenbon liest und allen sagt, was sie zahlen." | split: "|" -%}
   {%- for key in series_keys -%}
   {%- capture needle -%}|{{ key }}|{%- endcapture -%}
   {%- assign n = series_trail | split: needle | size | minus: 1 -%}
@@ -355,7 +355,7 @@ last_updated: 2026-11-08
         <span class="blank-stamp"><span>Splitwise</span></span>
       </span>
       <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> Splitwise</span>
-      <span class="card-text">Kassenbon scannen, antippen, wer was hatte, und jeder Person ihren Betrag mit Bezahllink schicken. Außer dir braucht niemand die App oder ein Konto.</span>
+      <span class="card-text">Kassenbon scannen, antippen, wer was hatte, und jeder Person ihren Betrag mit einem Link zum Bezahlen schicken. Außer dir braucht niemand die App oder ein Konto.</span>
       <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
     </a>
   </div>

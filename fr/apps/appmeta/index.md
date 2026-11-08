@@ -3,7 +3,7 @@ layout: app
 slug: appmeta
 ref: /apps/appmeta/
 permalink: /fr/apps/appmeta/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 tagline: "Modifiez, comparez et envoyez votre fiche App Store depuis votre Mac."
 og_tagline: "Votre fiche App Store, depuis votre Mac."
 quick_answer: "AppMeta est une application Mac pour App Store Connect, conçue pour les développeurs indépendants qui gèrent eux-mêmes leurs fiches. Toutes les langues tiennent dans une seule fenêtre, vous voyez champ par champ ce qui change par rapport à la fiche en ligne avant chaque envoi, et AppMeta mesure la difficulté et la demande de vos mots-clés sur le vrai App Store, preuves à l’appui. Achats intégrés, abonnements, TestFlight, Game Center, avis et soumission se gèrent dans la même app, qui dialogue directement avec Apple et garde votre clé d’API dans le trousseau du Mac. Le téléchargement est gratuit et fonctionne en mode démo sur des données d’exemple ; pour connecter votre propre compte, il faut Pro, à {P_YEARLY}/an ou {P_LIFETIME} une fois, sous macOS 14 ou ultérieur."
@@ -31,7 +31,7 @@ plans:
       - "Tout ce qui est inclus dans Annuel"
       - "Achat unique, sans renouvellement"
       - "Restauration de l’achat depuis les réglages"
-    highlight_label: "Meilleure offre"
+    highlight_label: "Payez une fois"
 
 alternatives_labels:
   - "Itsyconnect"

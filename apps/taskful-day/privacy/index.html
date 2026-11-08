@@ -25,6 +25,9 @@ data_collection: >
   This information is used only to provide core features
   such as Today view, task rollover, widgets, reminders,
   and progress summaries.
+  If you allow calendar access, Taskful Day reads your calendar events
+  to show them next to your tasks; it does not store or sync them.
+  If you import from Apple Reminders, the reminders you import become tasks.
 
 data_storage: >
   By default, all task data is stored locally on your device.
@@ -32,6 +35,13 @@ data_storage: >
   stored in your personal iCloud account and synced across
   your devices using Apple’s infrastructure.
   Taskful Day does not operate its own servers for storing your data.
+  If you use the Apple Watch app, your iPhone sends it a copy of the tasks
+  and Inbox items it shows, your workspace names, and your Pro status,
+  using Apple’s connection between your iPhone and your watch.
+  The watch keeps the latest copy so the app and its complications can
+  show it. Tasks you add, complete, or snooze on the watch, and the mood
+  you log there, go back to your iPhone, which saves them.
+  The Watch app has no account and no server of its own.
 
 third_parties: >
   Taskful Day does not use third-party analytics, advertising,
@@ -39,6 +49,10 @@ third_parties: >
   Apple may process limited data as part of services you choose
   to use, such as iCloud Sync, local notifications,
   and in-app purchases.
+  Voice capture uses Apple’s speech recognition. It runs on your device
+  when your language supports it; otherwise your recording goes to
+  Apple’s speech service only if you allow it. Dictation on Apple Watch
+  uses Apple’s own dictation.
 
 refund_requests:
   intro: >
@@ -64,5 +78,5 @@ changes: >
 
 contact_email: "support@lagerland.app"
 back_url: "/apps/taskful-day/"
-last_updated: 2026-11-07
+last_updated: 2026-11-08
 ---

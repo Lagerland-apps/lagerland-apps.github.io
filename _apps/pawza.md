@@ -263,7 +263,9 @@ faq:
   - q: "Can my family share my pet's records?"
     a: "No. iCloud sync covers your own devices, so a partner or sitter on their own Apple Account sees a separate record. For a sitter, the Sitter Pack (Pro) prints everything they need. Every Pro plan includes Family Sharing, which shares the Pro purchase with your family group; each person keeps their own records."
   - q: "Does Pawza work on iPad?"
-    a: "Yes. Pawza is one universal app for iPhone and iPad, and on iPad the Pets tab becomes a two-column view with the list beside the dashboard. Your records sync between the two through your own iCloud. Pawza requires iOS 17.6 or later and has no Mac, Apple Watch, or Android version."
+    a: "Yes. Pawza is one universal app for iPhone and iPad, and on iPad the Pets tab becomes a two-column view with the list beside the dashboard. In a wide window, the pet dashboard and Settings each split into two columns as well. Your records sync between the two through your own iCloud. Pawza requires iOS 17.6 or later and has no Mac, Apple Watch, or Android version."
+  - q: "Does Pawza work on iPhone Duo?"
+    a: "Yes. Open the Duo and your pet's dashboard spreads across both pages. The left page holds the day's care: what's due next, the care log, and the weight trend. The right page holds health history: medications, vaccinations, diet, the Emergency Card, and photos. Settings uses both pages too, and the pet list slides over the left page when you need it. Record, Reminder, and Scan sit in the Duo's side bar, one tap away, and Record stays there when the Duo is folded. Setup fits the folded screen as well."
   - q: "Which vaccinations and treatments can I track in Pawza?"
     a: "Whatever your vet gives. Each vaccine keeps the date given, the next due date, the lot number, and notes, and can remind you on the due day. Medication courses keep the dose, a repeating dose reminder, and the dose history. Because you enter the names your vet uses, or scan them from the certificate, Pawza works with any country's schedule: rabies, DHPP, Bordetella, and leptospirosis for dogs, FVRCP and FeLV for cats, or a rabbit's or horse's own vaccines."
   - q: "Will I get reminders for vaccinations and medications?"
@@ -286,8 +288,8 @@ support:
   url: "/apps/pawza/support/"
 
 release:
-  first_release: "2026-06-06"
-  last_updated: "2026-06-06"
+  first_release: "2026-06-12"
+  last_updated: "2026-10-27"
 
 related_journal:
   slug: "pet-medical-records-what-to-keep"
@@ -297,7 +299,7 @@ ratings:
   value: "5.0"
   count: 1
   last_synced: "2026-08-13"
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 Most of a pet's health history arrives on paper: a vaccination certificate from the shelter, a printout after a late-night visit, an invoice with a dose written on it. Then the vet asks when the limping started, or you stand in the kitchen unsure whether this morning's pill went in. Pawza keeps those answers in one record per pet, on the iPhone or iPad you already carry.
 

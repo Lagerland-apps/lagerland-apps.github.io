@@ -13,7 +13,7 @@ seo:
     - "app revenue tracker"
     - "appmeta pulse"
 date: 2026-04-18
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 lede: "Your accountant doesn't need write access to App Store Connect, and neither does your designer, your spouse, or your co-founder. Nobody in your weekly bookkeeping needs to be able to change your app's metadata to know how it's selling. AppMeta Pulse started as my answer to that. It turned out narrower: a quick revenue check for the account owner, on their own devices."
 quick_answer: "AppMeta Pulse is a glanceable iPhone dashboard for App Store revenue, subscription health, and top countries, built on the App Store Connect API. It can't change your prices, builds, or metadata; the only things it sends to App Store Connect are the review replies you write and analytics report requests. It keeps your sales history on the iPhone after Apple's roughly one-year window and puts the numbers on 12 widgets. The free download opens a demo on sample data; your own numbers need a subscription or the lifetime unlock."
 faq:
@@ -90,7 +90,7 @@ Pulse doesn't solve this. It has no shared access tokens and no way to give anot
 
 ## The pricing structure
 
-Pulse is free to download, and the free download runs a demo on sample data so you can see what it does. Your own numbers, the portfolio view, and the widgets need Pro: {P_MONTHLY@appmeta-pulse}/month or {P_YEARLY@appmeta-pulse}/year, each starting with a {TRIAL@appmeta-pulse}, or {P_LIFETIME@appmeta-pulse} lifetime. The prices have changed since this post was first written.
+Pulse is free to download, and the free download runs a demo on sample data so you can see what it does. Your own numbers, the portfolio view, and the widgets need full access: {P_MONTHLY@appmeta-pulse}/month or {P_YEARLY@appmeta-pulse}/year, each starting with a {TRIAL@appmeta-pulse}, or {P_LIFETIME@appmeta-pulse} lifetime. The prices have changed since this post was first written.
 
 The price is low on purpose. A studio doesn't use this tool for hours a day; it checks it briefly and relies on it. Pricing it like flagship productivity software would misjudge its place in an indie's toolkit. A one-time lifetime price puts it in the buy-it-and-forget-it tier, which suits what it does.
 

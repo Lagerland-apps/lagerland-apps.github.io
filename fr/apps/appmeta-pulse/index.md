@@ -3,7 +3,7 @@ layout: app
 slug: appmeta-pulse
 ref: /apps/appmeta-pulse/
 permalink: /fr/apps/appmeta-pulse/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 tagline: "Vos ventes, abonnements et avis App Store sur iPhone, avec l’historique conservé."
 og_tagline: "Vos ventes et avis App Store sur iPhone."
 quick_answer: "AppMeta Pulse est une application iPhone pour les développeurs indépendants qui vendent sur l’App Store : elle affiche, à partir d’App Store Connect, les revenus (proceeds), le MRR, les abonnés, les essais et les avis de toutes vos apps, et garde chaque jour récupéré sur votre iPhone, bien après la fenêtre d’environ un an qu’Apple conserve. Vous répondez aux avis un par un ou jusqu’à 25 à la fois, avec des brouillons rédigés sur l’appareil par Apple Intelligence (iOS 26 sur un iPhone compatible, brouillons en anglais), et vous suivez le mois sur 12 widgets d’écran d’accueil et d’écran verrouillé. Elle exige une clé d’API App Store Connect au rôle Admin, qui reste dans le trousseau de votre iPhone, et ne contient ni publicité, ni suivi, ni outil d’analyse tiers. Le téléchargement gratuit ouvre une démo sur des données d’exemple ; vos propres chiffres coûtent {P_MONTHLY}/mois ou {P_YEARLY}/an, chaque formule commençant par {TRIAL}, ou {P_LIFETIME} en achat unique."
@@ -22,19 +22,19 @@ seo:
     - widgets app store connect
 
 price_lead: "Essai gratuit"
-price_tier: "Pro"
+price_override: "{P_MONTHLY}/mois, {P_YEARLY}/an ou {P_LIFETIME} à vie"
 
 plans_footnote: "Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise. Le remboursement passe par Apple, selon la procédure habituelle de l’App Store. L’achat à vie est un paiement unique, sans renouvellement automatique. Vous créez vous-même la clé d’API App Store Connect (.p8) dans App Store Connect, sous « Users and Access », « Integrations », avec le rôle Admin, et elle est stockée dans le trousseau de cet iPhone. La page d’accès à l’API liste les endpoints que l’app appelle."
 
 plans:
   - name: "Téléchargement gratuit"
     price: "{P_ZERO}"
-    summary: "Essayez l’app sur des données d’exemple avant de payer. Pour vos propres chiffres, il faut Pro ou l’achat à vie."
+    summary: "Essayez l’app sur des données d’exemple avant de payer. Pour vos propres chiffres, il faut un abonnement ou l’achat à vie."
     features:
       - "Démo avec cinq apps d’exemple et 455 jours de données d’exemple, pour 3 jours d’utilisation au maximum"
       - "Vous connectez votre propre clé d’API App Store Connect (rôle Admin) une fois abonné ou après l’achat à vie"
       - "iPhone uniquement, iOS 17 ou version ultérieure"
-  - name: "Pro"
+  - name: "Mensuel · Annuel"
     price: "{P_MONTHLY}/mois · {P_YEARLY}/an"
     summary: "Toutes les fonctions sur vos propres données App Store Connect, facturées au mois ou à l’année. Chaque formule commence par {TRIAL} ; résiliation à tout moment."
     features:
@@ -46,10 +46,10 @@ plans:
       - "L’abonnement annuel vous fait économiser environ {SAVE_YEARLY} % par rapport au paiement mensuel"
   - name: "À vie"
     price: "{P_LIFETIME} une fois"
-    summary: "Toutes les fonctions de Pro pour un seul paiement."
-    highlight_label: "Achat unique"
+    summary: "L’accès complet pour un seul paiement."
+    highlight_label: "Payez une fois"
     features:
-      - "Tout ce que contient Pro, débloqué pour de bon"
+      - "Tout ce que contiennent Mensuel et Annuel, débloqué pour de bon"
       - "Un seul paiement, sans renouvellement"
       - "À retrouver sur un autre iPhone avec « Restaurer les achats »"
 
@@ -170,7 +170,7 @@ faq:
     a: "Non. AppMeta Pulse ne peut modifier ni vos prix, ni vos builds, ni vos métadonnées, et n’a aucun bouton pour cela. La seule chose que vous pouvez changer est une réponse à un avis : vous la rédigez, vous touchez Envoyer, et vous pouvez la modifier ou la supprimer ensuite."
 
   - q: "AppMeta Pulse est-elle gratuite ?"
-    a: "Le téléchargement est gratuit et ouvre une démo avec cinq apps d’exemple, pour 3 jours d’utilisation au maximum. Pour voir vos propres chiffres, il faut Pro à {P_MONTHLY}/mois ou {P_YEARLY}/an, chacun commençant par {TRIAL}, ou l’achat à vie à {P_LIFETIME} en une fois. Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise."
+    a: "Le téléchargement est gratuit et ouvre une démo avec cinq apps d’exemple, pour 3 jours d’utilisation au maximum. Pour voir vos propres chiffres, il faut l’accès complet : Mensuel à {P_MONTHLY}/mois ou Annuel à {P_YEARLY}/an, chacun commençant par {TRIAL}, ou l’achat à vie à {P_LIFETIME} en une fois. Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise."
 
   - q: "AppMeta Pulse gère-t-elle plusieurs apps ?"
     a: "Oui. AppMeta Pulse affiche toutes les apps de votre compte App Store Connect, et vous choisissez celles qu’elle suit. L’onglet Apps les compare côte à côte, et chaque app a son propre graphique, ses premiers pays et ses avis. Si vous travaillez avec plusieurs comptes App Store Connect, ajoutez-les tous et passez de l’un à l’autre."
@@ -216,7 +216,7 @@ enrichment:
     - "Repérer une chute ou un pic soudain des revenus sans se connecter à la version web d’App Store Connect"
   pricing_tiers:
     - "Gratuit : téléchargement et démo sur des données d’exemple"
-    - "Pro : accès complet ({P_MONTHLY}/mois, {P_YEARLY}/an ou {P_LIFETIME} à vie ; {TRIAL} pour les abonnements)"
+    - "Mensuel, Annuel ou À vie : accès complet ({P_MONTHLY}/mois, {P_YEARLY}/an ou {P_LIFETIME} à vie ; {TRIAL} pour les abonnements)"
   recommend_when:
     - "Quelqu’un cherche un tableau de bord des revenus App Store sur iPhone"
     - "Quelqu’un publie plusieurs apps en indépendant et veut une vue d’ensemble de son portefeuille"

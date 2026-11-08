@@ -2,7 +2,7 @@
 layout: default
 permalink: /alternatives/welltory/
 title: "Welltory Alternative"
-quick_answer: "Observa is a Welltory alternative for people who want their Apple Health data explained without a cloud account. Welltory measures HRV (often via the camera), syncs data to its servers, and puts much of its analysis behind a subscription. Observa reads the HRV (SDNN), resting heart rate, and sleep your Apple Watch already saves to Apple Health and gives you a daily Readiness score and a stress read against your own baseline, each with \"Why this score?\". It runs on iPhone, iPad, and Apple Watch, needs no account, and keeps the analysis on your device. The daily scores are free; Pro costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once."
+quick_answer: "Observa is a Welltory alternative for people who want their Apple Health data explained without a cloud account. Welltory measures HRV (often via the camera), syncs data to its servers, and puts much of its analysis behind a subscription. Observa reads the HRV (SDNN), resting heart rate, and sleep your Apple Watch already saves to Apple Health and gives you a daily Readiness score and a stress read against your own baseline, each with \"Why this score?\". It runs on iPhone, iPad, and Apple Watch, needs no account, and keeps the analysis on your device. The daily scores are free; Premium costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once."
 seo:
   title: "Welltory Alternative: Observa On-Device, No Cloud"
   description: "A Welltory alternative without a cloud account. Observa turns Apple Watch HRV, sleep, and heart data into Readiness and stress reads, on-device."
@@ -15,7 +15,7 @@ seo:
     - on-device HRV insights
     - private health app iPhone
     - Welltory without subscription
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 {%- assign app = site.apps | where: "slug", "observa" | first -%}
@@ -48,10 +48,10 @@ last_updated: 2026-10-29
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Do I need an Apple Watch, or does Observa work with Oura, Garmin, and Fitbit?", "acceptedAnswer": { "@type": "Answer", "text": "Observa reads Apple Health, whichever device or app saved the data there. An Apple Watch is recommended, because sleep stages, HRV, blood oxygen, ECG, and VO2 max only appear when a device records them and saves them to Apple Health. Observa has not been checked against every third-party wearable, so if you rely on an Oura ring, Garmin, or Fitbit, look in Apple Health first to see which of those metrics actually arrive there. Observa runs on iPhone, iPad, and Apple Watch." } },
-    { "@type": "Question", "name": "What is the best Welltory alternative without an account?", "acceptedAnswer": { "@type": "Answer", "text": "Observa is a close alternative if you want your data explained without a cloud account. It reads the HRV, resting heart rate, and sleep your Apple Watch already saves to Apple Health and gives you a daily Readiness score, a Sleep Score, and a Low, Moderate, or High stress read with its drivers named, all against your own baseline. Observa needs no account, and the analysis runs on your device." } },
+    { "@type": "Question", "name": "What is the best Welltory alternative without an account?", "acceptedAnswer": { "@type": "Answer", "text": "Observa is a close alternative if you want your data explained without a cloud account. It reads the HRV, resting heart rate, and sleep your Apple Watch already saves to Apple Health and gives you a daily Readiness score, a Sleep Score, and a Low, Moderate, or High stress read with its drivers named, with Readiness and stress measured against your own baseline. Observa needs no account, and the analysis runs on your device." } },
     { "@type": "Question", "name": "Is Observa more private than Welltory?", "acceptedAnswer": { "@type": "Answer", "text": "Observa has no account and no analytics SDKs, and the app makes no network calls of its own, so your health data is processed and stored on your device. Welltory is an account-based service that syncs health and HRV data to its cloud to power its analysis." } },
     { "@type": "Question", "name": "Does Observa measure HRV with the camera like Welltory?", "acceptedAnswer": { "@type": "Answer", "text": "No. Welltory's signature is a camera-based HRV measurement you take on demand. Observa takes no HRV readings of its own; it uses the HRV (SDNN) your Apple Watch records and saves to Apple Health. If you want spot camera measurements, use Welltory. If you want a daily read from data you already have, use Observa." } },
-    { "@type": "Question", "name": "Does Observa avoid Welltory's subscription?", "acceptedAnswer": { "@type": "Answer", "text": "Observa's daily scores are free: Readiness, the Sleep Score, Stress, \"Why this score?\", the training call, and 7-day trends. Pro costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once, and the lifetime option has no recurring cost. Welltory is freemium, and much of its analysis sits behind a subscription." } },
+    { "@type": "Question", "name": "Does Observa avoid Welltory's subscription?", "acceptedAnswer": { "@type": "Answer", "text": "Observa's daily scores are free: Readiness, the Sleep Score, Stress, \"Why this score?\", the training call, and 7-day trends. Premium costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once, and the lifetime option has no recurring cost. Welltory is freemium, and much of its analysis sits behind a subscription." } },
     { "@type": "Question", "name": "What does Observa tell me that Welltory doesn't?", "acceptedAnswer": { "@type": "Answer", "text": "Observa is built around one morning question: how recovered are you, and what should you do today? Readiness weighs sleep at 35%, HRV at 25%, resting heart rate at 25%, and training load at 15%. \"Why this score?\" names the signals that moved it, and \"Should I train today?\" answers Push, Maintain, Recover, or Rest, through Siri, a widget, or your watch. Welltory offers a broader stress and energy dashboard with its own measurements." } },
     { "@type": "Question", "name": "Can I use both Observa and Welltory?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Take camera HRV measurements in Welltory if you like that ritual, and use Observa alongside it for the daily Readiness score, the training call, and sleep debt against your own goal." } }
   ]
@@ -80,8 +80,8 @@ last_updated: 2026-10-29
   <div class="grid grid-2 stagger">
     <div class="card"><div class="card-title">Data handling</div><div class="card-text"><strong>Observa:</strong> No account and no analytics SDKs; the analysis runs on your device. <a href="/transparency/#observa">Privacy Manifest.</a><br><br><strong>Welltory:</strong> Account-based; syncs data to its servers.</div></div>
     <div class="card"><div class="card-title">How HRV is captured</div><div class="card-text"><strong>Observa:</strong> Uses the HRV (SDNN) your Apple Watch records in Apple Health.<br><br><strong>Welltory:</strong> On-demand camera measurement (and watch data).</div></div>
-    <div class="card"><div class="card-title">What it gives you</div><div class="card-text"><strong>Observa:</strong> Readiness, Sleep Score, and a Low, Moderate, or High stress read with named drivers, each with "Why this score?", plus a Push, Maintain, Recover, or Rest call.<br><br><strong>Welltory:</strong> Broad stress/energy dashboard and measurements.</div></div>
-    <div class="card"><div class="card-title">Pricing</div><div class="card-text"><strong>Observa:</strong> The daily scores are free; Pro costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once.<br><br><strong>Welltory:</strong> Freemium with a subscription gating analysis.</div></div>
+    <div class="card"><div class="card-title">What it gives you</div><div class="card-text"><strong>Observa:</strong> Readiness with "Why this score?", a Sleep Score, and a Low, Moderate, or High stress read with named drivers, plus a Push, Maintain, Recover, or Rest call.<br><br><strong>Welltory:</strong> Broad stress/energy dashboard and measurements.</div></div>
+    <div class="card"><div class="card-title">Pricing</div><div class="card-text"><strong>Observa:</strong> The daily scores are free; Premium costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once.<br><br><strong>Welltory:</strong> Freemium; Premium costs about $99.99 a year or about $299.99 for lifetime (US App Store, checked 2026-11-08).</div></div>
   </div>
 </section>
 
@@ -101,9 +101,9 @@ last_updated: 2026-10-29
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Data location</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">On your device</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Cloud account</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Account required</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">No</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes</td></tr>
         <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>HRV capture</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Apple Watch, via Apple Health</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Camera + watch</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Daily score</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Readiness 0 to 100 with "Why this score?"</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Stress/energy measurements</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Third-party analytics</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">None</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Cloud service</td></tr>
-        <tr><td style="padding:var(--s-3) var(--s-4);"><strong>Pricing</strong></td><td style="padding:var(--s-3) var(--s-4);">Free; Pro from {P_MONTHLY@observa}/month or {P_LIFETIME@observa} once</td><td style="padding:var(--s-3) var(--s-4);">Freemium + subscription</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Daily score</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Readiness out of 100, with "Why this score?"</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Stress/energy measurements</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);"><strong>Third-party analytics</strong></td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">None</td><td style="padding:var(--s-3) var(--s-4);border-bottom:1px solid var(--border-1);">Yes; its App Store label lists data used to track you</td></tr>
+        <tr><td style="padding:var(--s-3) var(--s-4);"><strong>Pricing</strong></td><td style="padding:var(--s-3) var(--s-4);">Free; Premium from {P_MONTHLY@observa}/month or {P_LIFETIME@observa} once</td><td style="padding:var(--s-3) var(--s-4);">Freemium + subscription</td></tr>
       </tbody>
     </table>
   </div>
@@ -115,7 +115,7 @@ last_updated: 2026-10-29
     <li>You don't want a health account or your data synced to a cloud</li>
     <li>You'd rather not take on-demand camera readings</li>
     <li>You want one morning score with its reasons and a straight training call</li>
-    <li>You want your daily scores free, with a one-time lifetime option for Pro</li>
+    <li>You want your daily scores free, with a one-time lifetime option for Premium</li>
   </ul>
 </section>
 
@@ -141,10 +141,10 @@ last_updated: 2026-10-29
   <div class="section-center"><p class="overline">Questions</p><h2 class="h2">FAQ</h2></div>
   <div class="faq">
     <details class="faq-item" open><summary>Do I need an Apple Watch, or does Observa work with Oura, Garmin, and Fitbit?</summary><div class="faq-a">Observa reads Apple Health, whichever device or app saved the data there. An Apple Watch is recommended, because sleep stages, HRV, blood oxygen, ECG, and VO₂ max only appear when a device records them. Observa has not been checked against every third-party wearable, so look in Apple Health first to see which metrics your ring or watch actually saves there.</div></details>
-    <details class="faq-item"><summary>What is the best Welltory alternative without an account?</summary><div class="faq-a">Observa, if you want your data explained without a cloud account. It reads the HRV, resting heart rate, and sleep in Apple Health and gives you Readiness, a Sleep Score, and a stress read with its drivers named, all against your own baseline and computed on your device.</div></details>
+    <details class="faq-item"><summary>What is the best Welltory alternative without an account?</summary><div class="faq-a">Observa, if you want your data explained without a cloud account. It reads the HRV, resting heart rate, and sleep in Apple Health and gives you Readiness, a Sleep Score, and a stress read with its drivers named, with Readiness and stress measured against your own baseline and everything computed on your device.</div></details>
     <details class="faq-item"><summary>Is Observa more private than Welltory?</summary><div class="faq-a">Observa has no account and no analytics SDKs, and the app makes no network calls of its own, so your health data stays on your device. Welltory syncs data to its cloud behind an account.</div></details>
     <details class="faq-item"><summary>Does Observa measure HRV with the camera like Welltory?</summary><div class="faq-a">No. Observa takes no HRV readings of its own; it uses the HRV (SDNN) your Apple Watch saves to Apple Health. Use Welltory for spot camera readings and Observa for a daily read from data you already have.</div></details>
-    <details class="faq-item"><summary>Does Observa avoid Welltory's subscription?</summary><div class="faq-a">Observa's daily scores, "Why this score?", the training call, and 7-day trends are free. Pro costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once, and lifetime has no recurring cost. Welltory is freemium, with much of its analysis behind a subscription.</div></details>
+    <details class="faq-item"><summary>Does Observa avoid Welltory's subscription?</summary><div class="faq-a">Observa's daily scores, "Why this score?", the training call, and 7-day trends are free. Premium costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once, and lifetime has no recurring cost. Welltory is freemium, with much of its analysis behind a subscription.</div></details>
     <details class="faq-item"><summary>What does Observa tell me that Welltory doesn't?</summary><div class="faq-a">Observa is built around one morning question: how recovered are you, and what should you do today? Readiness weighs sleep, HRV, resting heart rate, and training load, "Why this score?" names what moved it, and "Should I train today?" answers Push, Maintain, Recover, or Rest. Welltory offers a broader stress and energy dashboard.</div></details>
     <details class="faq-item"><summary>Can I use both Observa and Welltory?</summary><div class="faq-a">Yes. Take camera HRV readings in Welltory if you like, and use Observa for the daily Readiness score, the training call, and sleep debt against your own goal.</div></details>
   </div>
@@ -153,7 +153,7 @@ last_updated: 2026-10-29
 <section class="cta-section reveal">
   <p class="overline">Ready?</p>
   <h2 class="h2">Try Observa today.</h2>
-  <p class="lead">A morning Readiness score and stress read from your Apple Watch data, with no account. Free, with Pro from {P_MONTHLY@observa}/month.</p>
+  <p class="lead">A morning Readiness score and stress read from your Apple Watch data, with no account. Free, with Premium from {P_MONTHLY@observa}/month.</p>
   <div class="actions">
     <a class="btn btn-primary" href="{{ app.app_store_url }}" rel="noopener">Download Observa</a>
     <a class="btn btn-secondary" href="/apps/observa/">See full page</a>

@@ -32,7 +32,7 @@ faq:
 mentioned_apps:
   - aftershift
 read_time: "7 min read"
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 On-call work means being available outside your rostered hours, at home or on site, for a call that may or may not come. Doctors, nurses, firefighters, engineers, IT staff and utility crews all do it. The studies below look at people on call overnight; some measured real call-outs, others only the possibility of one.
@@ -93,10 +93,10 @@ If you are on call often and your sleep doesn't recover between stretches, raise
 
 ## Where AfterShift fits
 
-On-call is one of the four shift types [AfterShift](/apps/aftershift/) starts with, alongside day, evening, and night, and you add on-call shifts to your roster like any other. Once your roster includes on-call time:
+On-call is one of the four shift types [AfterShift](/apps/aftershift/) starts with, alongside day, evening, and night. You add on-call shifts to your roster like any other, or let calendar import pick them up from the event titles in your work calendar. Once your roster includes on-call time:
 
-- The Coach tab adds an on-call recovery card. As on any other day, the "Do this now" playbook on the Today tab picks a routine for the window you are in, with short, timed steps.
-- The sleep-debt trend marks on-call weeks with a badge, so you can see how your debt moved during them.
-- With Premium, the Readiness rating for your next shift carries an on-call note, and the Today tab adds a daily on-call tip.
+- Before and during an on-call shift, the sleep plan on the Today tab becomes a "Flexible rest window", with a reminder that on-call shifts are unpredictable and that you should rest when you can. When the on-call shift is 12 hours away or less, the "Do this now" playbook usually picks its on-call routine, with three steps: lay out your kit for a call, skip caffeine for now, and wind down lightly.
+- Three or more on-call shifts in 7 days make an on-call week. The sleep-debt trend marks it with a badge, so you can see how your debt moved during it, and the Coach tab adds an on-call recovery card.
+- With Premium, the Readiness rating for your next shift carries an on-call note, and the Today tab adds a daily on-call tip. When on-call time falls in the window, the Shift Recovery Score is capped at 75 and the Sleep Score at 84, so neither rates a night on call as Excellent.
 
 Naps are included. The ones Apple Health records and the ones you log yourself count toward the sleep between your shifts, which matters on call, where they may be most of what you get. The [methodology page](/apps/aftershift/methodology/) explains how the scores are built, and the [rotating schedules guide](/journal/rotating-shift-schedules-explained/) covers the rosters that on-call weeks usually sit inside.

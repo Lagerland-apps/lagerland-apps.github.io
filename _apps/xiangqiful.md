@@ -7,8 +7,10 @@ tagline: "Learn Chinese chess from your first move, then play, review, and train
 # Live since 2026-09-30. Copy rebuilt on 2026-10-29 from APP_BLUEPRINT.md in the
 # app's source folder (verified against code 2026-10-29, v1.1.6); §10 is the only
 # claims source. Rules from it: 40 opponents in 8 tiers, the first 10 free; moves
-# graded "from best to blunder" (no step count); "a strong open-source engine",
-# never "tops the rating lists"; no engine file size; no "movement guide" wording;
+# graded on seven steps, Best to Blunder, with an advantage bar for the selected
+# position (no evaluation graph); "a strong open-source engine", never "tops the
+# rating lists"; no engine file size; the move guide on touched pieces is confirmed
+# (blueprint 2026-11-08); no iPhone Duo claim until its real-device check;
 # "VoiceOver support", never "throughout"; no Dynamic Type, light mode, sound,
 # sync claims; the rating is Xiangqiful's own estimate. Family Sharing on Monthly,
 # Yearly, and Lifetime comes from MASTER.md (2026-10-29), which beats the blueprint.
@@ -28,7 +30,8 @@ plans_footnote: "Prices in USD; the App Store shows your local price at checkout
 # Free / Monthly / Yearly / Lifetime. The Free column lists only the limits in
 # blueprint §3 (2 analyses, 3 puzzles, 2 coach hints a day; first 10 opponents;
 # first drill bank of each module). Lessons and the assessment are uncapped.
-# "Best value" is the badge the in-app paywall puts on Yearly.
+# The in-app paywall badges Yearly "Best value"; the site badges Lifetime
+# "Pay once" instead (owner decision 2026-11-08: no comparative badges).
 plans:
   - name: "Free"
     price: "$0"
@@ -60,11 +63,11 @@ plans:
       - "Everything in Premium · Monthly"
       - "About {SAVE_YEARLY}% less than twelve months of Monthly"
       - "{TRIAL} · cancel anytime in your Apple Account settings"
-    highlight_label: "Best value"
   - name: "Lifetime"
     price: "{P_LIFETIME} once"
     kind: lifetime
     summary: "All of Premium for one payment."
+    highlight_label: "Pay once"
     features:
       - "Everything in Premium"
       - "One-time purchase with nothing to renew or cancel"
@@ -152,9 +155,9 @@ founder:
 
 value_points:
   - title: "Play before you can read the pieces"
-    description: "Choose traditional characters, western symbols, or a hybrid that shows both. The lessons introduce the characters one piece at a time, so you can switch to the traditional set when you're ready, or never."
+    description: "Choose traditional characters, western symbols, or a hybrid that shows both. Touch a piece and the board marks every point it can move to and every piece it can capture, and for a cannon, the screen it would jump over. The lessons introduce the characters one piece at a time, so you can switch to the traditional set when you're ready, or never."
   - title: "Find out why you lost"
-    description: "After a game, Pikafish grades every move from best to blunder, gives both sides an accuracy score, and picks out the key moments. Each mistake comes with the better move, a line you can play through, and a name from xiangqi itself."
+    description: "After a game, Pikafish grades every move on seven steps from best to blunder, gives both sides an accuracy score, and picks out the key moments. Each mistake comes with the better move, a line you can play through, and a name from xiangqi itself."
   - title: "Train on your own mistakes"
     description: "Today's plan is built from the mistakes in your analyzed games, followed by mixed practice. Spaced repetition brings the problems you missed back until they stick."
   - title: "Offline, with no account"
@@ -164,7 +167,7 @@ features:
   - title: "80 lessons in 8 tracks, all free"
     description: "Fundamentals, Openings, Palace Defense, Cannon Tactics, Horse Technique, Middlegame, Endgame, and Advanced, ten lessons each, with the rules shown on the board. The first lesson every chess player needs: in xiangqi, having no legal move is a loss, and so is checking forever. When either happens in one of your games, the app explains it on the spot."
   - title: "Game Review with on-device Pikafish"
-    description: "Pikafish grades every move from best to blunder and gives each side an accuracy score. You see the key moments of the game, the better move, and a best line you can play through on the board. Free players get 2 analyses a day; Premium makes it unlimited and adds deep multi-line analysis."
+    description: "Pikafish grades every move on seven steps, from Best to Blunder, and gives each side an accuracy score. An advantage bar shows who stands better in the position you select. You see the key moments of the game, the better move, and a best line you can play through on the board. Free players get 2 analyses a day; Premium makes it unlimited and adds deep multi-line analysis."
   - title: "Mistakes named in xiangqi's own language"
     description: "Mistakes are sorted into 13 categories and tagged with 26 xiangqi patterns, among them the screenless cannon, the trapped horse, broken advisors, the Empty-Head Cannon, the palace breach, the Iron Bolt, the missed mate, and the lost initiative. Each one sends you to practice on the same pattern."
   - title: "40 opponents with their own styles"
@@ -191,7 +194,7 @@ how_it_works:
     - title: "Play a game or import one"
       detail: "Play one of the 40 opponents as Red, Black, or a random side, or import a game record as WXF or ICCS movetext from a file or the clipboard."
     - title: "Pikafish reviews every move"
-      detail: "Tap Analyze and Pikafish goes through the game on your device. Each move is graded from best to blunder, each side gets an accuracy score, and the key moments are marked with the better move and a best line you can play through. Free players get 2 analyses a day; Premium is unlimited and adds deep multi-line analysis."
+      detail: "Tap Analyze and Pikafish goes through the game on your device. Each move is graded on seven steps from best to blunder, each side gets an accuracy score, and the key moments are marked with the better move and a best line you can play through. Free players get 2 analyses a day; Premium is unlimited and adds deep multi-line analysis."
     - title: "Mistakes are named in xiangqi terms"
       detail: "Each significant mistake goes into one of 13 categories, such as missed mate, missed cannon tactic, palace weakness, or trapped piece, and is tagged with the pattern behind it: a screenless cannon, broken advisors, a palace breach, or a classical mate such as the Iron Bolt."
     - title: "Your mistakes become today's plan"
@@ -299,7 +302,7 @@ faq:
   - q: "Does it support Chinese notation and simplified characters?"
     a: "Yes. Moves can be shown in WXF notation (C2=5) or in Chinese notation, and the pieces can carry traditional or simplified characters. The app comes in 40 localizations, including Simplified and Traditional Chinese, Vietnamese, Japanese, Korean, and Thai."
   - q: "Does my progress sync between iPhone, iPad and Mac?"
-    a: "No. Your games, analysis, and training progress are stored on the device you use, and there is no account or server to sync through. To unlock Premium on another iPhone or iPad, use Restore purchases there."
+    a: "No. Your games, analysis, and training progress are stored on the device you use, and there is no account or server to sync through. One Premium purchase does cover iPhone, iPad, and Mac with the same Apple Account; on another device, use Restore purchases to unlock it."
   - q: "Does Xiangqiful use Game Center?"
     a: "Only if you want it to; signing in is optional. Your results feed 62 achievements and eight leaderboards: estimated rating, best game accuracy, accuracy this week, longest win streak, opponents defeated, training streak, puzzles solved, and overall skill. The app also has its own Achievements screen."
   - q: "Is Xiangqiful accessible?"
@@ -311,8 +314,8 @@ support:
 
 release:
   first_release: "2026-09-30"
-  last_updated: "2026-10-01"
-  version: "1.0"
+  last_updated: "2026-10-23"
+  version: "1.1.6"
 
 related_apps: ["shogiful", "chessful"]
 
@@ -327,13 +330,13 @@ ratings:
   value: "5.0"
   count: 3
   last_synced: "2026-11-02"
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 Xiangqiful is a [xiangqi app for iPhone, iPad, and Mac](#features) that teaches the game from your first move and then helps you get better at it. Xiangqi is Chinese chess: two armies of sixteen pieces on the intersections of a nine-by-ten board, a river across the middle, and a palace at each end that the generals may never leave. Outside Asia, many people stop at the first look, because every piece is a Chinese character painted on a wooden disc.
 
 You can play with traditional characters, western symbols, or a hybrid of both, and the lessons introduce the characters one piece at a time. All 80 lessons are free, in eight tracks from the board to the classics, and they teach the rules that catch chess players out: having no legal move loses, and so does perpetual check.
 
-Then you play. Forty opponents in eight tiers each play a style of their own, from a kid who has just learned the moves to the Sage at the top, and the first ten are free. After a game, [Pikafish](https://github.com/official-pikafish/Pikafish), a strong open-source engine, reviews it on your device. It grades every move from best to blunder and [names each mistake in xiangqi's own terms](#insights): a screenless cannon, a trapped horse, broken advisors, a missed Iron Bolt. Those mistakes [become today's plan](#how-it-works), and spaced repetition brings back the problems you missed.
+Then you play. Forty opponents in eight tiers each play a style of their own, from a kid who has just learned the moves to the Sage at the top, and the first ten are free. After a game, [Pikafish](https://github.com/official-pikafish/Pikafish), a strong open-source engine, reviews it on your device. It grades every move on seven steps from best to blunder and [names each mistake in xiangqi's own terms](#insights): a screenless cannon, a trapped horse, broken advisors, a missed Iron Bolt. Those mistakes [become today's plan](#how-it-works), and spaced repetition brings back the problems you missed.
 
 For training there are 902 mate puzzles, 708 of them from eight classical manuals and each re-checked by the app's own solver, plus nine drill modules and thirty classical endgame studies from the Qing-dynasty books.
 

@@ -13,7 +13,7 @@ seo:
     - "soon countdown"
     - "app rebrand"
 date: 2026-04-13
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 lede: "After a year of slow growth, the countdown app was fully rebuilt and relaunched as Soon. This post covers why the old name had to go, what the rebuild added, and what stayed the same."
 quick_answer: "TheWait was rebuilt and renamed Soon. in April 2026 because the old name framed countdowns as passive waiting, when the app is about looking forward to something. Soon. is a countdown app for iPhone with a free Plan mode checklist for each kind of event, 26 Home Screen, Lock Screen, and StandBy widgets, natural-language search, calendar import, and Memories for days that have passed. It has no ads or tracking, needs no account, and syncs through your own iCloud."
 faq:
@@ -61,7 +61,7 @@ The whole app was rebuilt from scratch. New additions include:
 
 - **A one-time purchase option.** Premium is {P_LIFETIME@soon} once for Lifetime, or {P_MONTHLY@soon} a month or {P_YEARLY@soon} a year, each starting with a {TRIAL@soon}.
 
-- **Built by one person.** Same developer, same catalogue, same principles. Soon. is part of the [Lagerland Apps](/lagerland-apps/) family of apps.
+- **The same small studio.** Soon. still comes from [Lagerland Apps](/lagerland-apps/), a small independent studio, with the same catalogue and the same principles.
 
 ## Why indie studios should rename when it matters
 

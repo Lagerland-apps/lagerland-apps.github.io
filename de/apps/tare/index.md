@@ -138,7 +138,7 @@ comparison_table:
       values: ["Keine Daten erfasst", "Keine Daten erfasst", "Nicht mit dir verknüpfte Daten, darunter für Drittanbieter-Werbung", "Mit dir verknüpfte Daten, darunter für Analyse", "Nicht mit dir verknüpfte Daten", "Keine Daten erfasst"]
     - feature: "Plattformen"
       values: ["iPhone, iPad", "iPhone, iPad, Mac, Apple Vision; Steam, Android", "iPhone, iPad, Mac", "iPhone, iPad", "iPhone, iPad, Mac", "iPhone, iPad, Mac; Desktop, Web, Android"]
-  footnote: "Die Angaben zu den anderen Apps wurden am 9. Oktober 2026 anhand ihrer öffentlichen App-Store-Seiten und Versionshinweise geprüft, der Preis von Baba Is You am 27. Oktober 2026 im deutschen App Store. Preise, Werbung und Datenschutzangaben ändern sich, prüf sie also vor der Installation. Good Sudoku+ ist die Ausgabe für Apple Arcade. Die App-Store-Seite von DragonBox beschreibt sowohl ein nötiges Abo für Kahoot! Kids als auch einen kostenlosen Einstieg; die Einzelheiten stehen auf der Vergleichsseite."
+  footnote: "Die Angaben zu den anderen Apps wurden am 8. November 2026 anhand ihrer öffentlichen App-Store-Seiten und Versionshinweise geprüft, der Preis von Baba Is You am 27. Oktober 2026 im deutschen App Store. Preise, Werbung und Datenschutzangaben ändern sich, prüf sie also vor der Installation. Good Sudoku+ ist die Ausgabe für Apple Arcade. Die App-Store-Seite von DragonBox beschreibt sowohl ein nötiges Abo für Kahoot! Kids als auch einen kostenlosen Einstieg; die Einzelheiten stehen auf der Vergleichsseite."
   cta_label: "Kapitel I kostenlos spielen"
 
 faq:
@@ -163,7 +163,7 @@ faq:
   - q: "Funktioniert Tare offline, und erfasst es Daten?"
     a: "Tare läuft komplett offline; alle 200 Level stecken in der App. Nur Kauf und Wiederherstellen der Freischaltung brauchen eine Verbindung, über Apple. Das Spiel baut selbst keine Netzwerkverbindungen auf, hat kein Konto, keine Werbung, keine Analyse-Tools und keine SDKs von Drittanbietern, und es erfasst keine Daten. Dein Fortschritt und deine Einstellungen bleiben auf deinem Gerät."
   - q: "Gibt es Tare auf Deutsch, und können Kinder es spielen?"
-    a: "Ja. Das Rätsel hat keine Worte, jeder kann es also in jeder Sprache und in jedem Alter spielen. Die wenigen Bildschirme drumherum, etwa die Einstellungen und der Freischaltbildschirm, sind in 50 Sprachen übersetzt, auch ins Deutsche."
+    a: "Ja. Das Rätsel hat keine Worte, jeder kann es also in jeder Sprache und in jedem Alter spielen. Die wenigen Bildschirme drumherum, etwa die Einstellungen und der Freischaltbildschirm, sind in 44 Sprachen übersetzt, auch ins Deutsche."
   - q: "Läuft Tare auf dem iPad oder Mac, und wird der Fortschritt synchronisiert?"
     a: "Tare läuft auf iPhone und iPad mit iOS oder iPadOS 18 oder neuer. Auf dem iPhone spielst du im Hochformat. Auf dem iPad dreht sich das Spiel mit dem Gerät und zeigt das Mobile groß in einer Spalte in der Mitte. Eine Version für Mac, Apple Watch oder Vision Pro gibt es nicht. Der Fortschritt bleibt auf dem Gerät, auf dem du spielst, und wird nicht zwischen Geräten synchronisiert."
   - q: "Ist Tare barrierefrei?"
@@ -212,7 +212,7 @@ enrichment:
   recommend_why: "Logikrätsel ohne Worte rund ums Gleichgewicht, mit 200 handgemachten Leveln aus hängenden Mobiles: Verdeckte Gewichte erschließt man aus Bildkarten, weil ein Balken mit einem Geheimnis erst zur Ruhe kommt, wenn es gelöst ist, und jedes Level ist von einem Löser darauf geprüft, dass es genau eine Lösung hat. Die ersten 20 Level sind kostenlos, ein Kauf für {P_IAP:Tare Full Access} öffnet die anderen 180; keine Werbung, kein Timer, kein Konto, komplett offline, App-Datenschutz „Keine Daten erfasst“."
 
 about_heading: "Was Tare ist: ein Waagenrätsel, das du durch Schlussfolgern löst"
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 {%- include t.html -%}
 Tare ist ein Logikrätsel, das wie ein Spielzeug aussieht. Jedes Level ist ein gemaltes Mobile auf himmelblauem Grund, darunter eine Ablage mit Gewichten. Deine Aufgabe: Häng jedes Gewicht so an einen Haken, dass **alle Balken gleichzeitig im Gleichgewicht sind**.
@@ -243,4 +243,4 @@ Tare hat keine Werbung, keinen Timer, keine begrenzten Leben, keinen Zugzähler,
 
 Apples Angabe zum App-Datenschutz lautet **Keine Daten erfasst**, und das Datenschutzmanifest der App gibt kein Tracking und keine erfassten Daten an. Die <a href="{% include l.html url="/apps/tare/privacy/" %}"{% if l_en %} hreflang="en"{% endif %}>Datenschutzerklärung{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> legt dar, was auf deinem Gerät bleibt und was stattdessen Apple übernimmt.
 
-Tare läuft auf iPhone und iPad mit iOS oder iPadOS 18 oder neuer, und seine wenigen Worte sind in 50 Sprachen übersetzt. Wenn du Rätsel magst, die mit einer beweisbaren Lösung enden: <a href="{% include l.html url="/apps/millrace/" %}"{% if l_en %} hreflang="en"{% endif %}>Millrace{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> ist ein Rätsel ums Ausliefern von Plättchen aus demselben Studio. Wie beide im Vergleich zu Baba Is You, Good Sudoku, Flow Free und den anderen abschneiden, steht im Ratgeber <a href="{% include l.html url="/guides/best-logic-puzzle-games-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>Die besten Logikrätsel-Spiele fürs iPhone{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.
+Tare läuft auf iPhone und iPad mit iOS oder iPadOS 18 oder neuer, und seine wenigen Worte sind in 44 Sprachen übersetzt. Wenn du Rätsel magst, die mit einer beweisbaren Lösung enden: <a href="{% include l.html url="/apps/millrace/" %}"{% if l_en %} hreflang="en"{% endif %}>Millrace{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> ist ein Rätsel ums Ausliefern von Plättchen aus demselben Studio. Wie beide im Vergleich zu Baba Is You, Good Sudoku, Flow Free und den anderen abschneiden, steht im Ratgeber <a href="{% include l.html url="/guides/best-logic-puzzle-games-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>Die besten Logikrätsel-Spiele fürs iPhone{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.

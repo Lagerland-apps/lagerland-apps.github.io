@@ -3,8 +3,8 @@ layout: journal
 slug: your-apple-health-data-doesnt-mean-what-you-think
 ref: /journal/your-apple-health-data-doesnt-mean-what-you-think/
 permalink: /de/journal/your-apple-health-data-doesnt-mean-what-you-think/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Apple-Health-Daten verstehen: Deine Daten sagen nicht, was du denkst"
 seo:
@@ -62,7 +62,7 @@ Observa setzt auf Apple Health auf und beantwortet eine kleine Zahl von Fragen d
 
 - **Wie erholt bin ich heute, und warum?** Die Bereitschaft gewichtet Schlaf, HRV, Ruheherzfrequenz und Trainingsbelastung im Vergleich zu deinem eigenen üblichen Bereich, und „Warum dieser Wert?“ zeigt, welche davon sie bewegt haben.
 - **Wie sieht meine HRV im Vergleich zu meiner eigenen Basislinie aus?** Deiner Basislinie, nicht der der Bevölkerung. Ein HRV-Wert von 38 ms bedeutet nichts, solange du nicht weißt, ob deine persönliche Basislinie bei 32 oder bei 56 liegt.
-- **Welche Gewohnheiten fallen bei mir oft mit besserem Schlaf und besserer Erholung zusammen?** „Muster“ zeigt bis zu vier davon über 14, 28 oder 90 Tage in einer Rangfolge, jedes mit einer Angabe zur Konfidenz. Hier stecken die interessanten Geschichten, bei denen du sagst: „Ach, natürlich.“
+- **Welche Gewohnheiten fallen bei mir oft mit besserem Schlaf und besserer Erholung zusammen?** „Muster“, ein Teil von Premium, zeigt bis zu vier davon aus deinem gesamten Verlauf in einer Rangfolge, jedes mit einer Angabe zur Konfidenz. Hier stecken die interessanten Geschichten, bei denen du sagst: „Ach, natürlich.“
 - **Hält meine Trainingsbelastung mit meiner Erholung Schritt?** Die Trainingsbelastung vergleicht deine letzten 7 Tage mit deinen letzten 28, und „Soll ich heute trainieren?“ macht daraus Steigern, Halten, Erholen oder Ruhen. Laufen Belastung und Erholung auseinander, baust du Ermüdung auf, egal wie sich die einzelnen Trainings angefühlt haben.
 
 Nichts davon ist eine medizinische Diagnose. Observa kann dir nicht sagen, ob du eine Schlafstörung, ein Herzproblem oder eine Autoimmunerkrankung hast, und gibt auch nicht vor, es zu können. Was die App kann: ein Jahr deiner eigenen Daten nehmen und daraus die drei oder vier Sätze machen, die dir eine umsichtige Trainerin oder ein umsichtiger Trainer sagen würde, wenn sie Zeit hätten, alles sorgfältig zu lesen. Die meisten haben diese Zeit nicht.

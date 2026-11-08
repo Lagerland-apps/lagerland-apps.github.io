@@ -21,7 +21,7 @@ plans:
     features:
       - "Up to 5 moments, counting down or counting up"
       - "Plan mode: a checklist and timeline for every kind of event"
-      - "Home Screen, Lock Screen, and StandBy widgets showing your pinned moment"
+      - "1 pinned moment, shown on Home Screen, Lock Screen, and StandBy widgets"
       - "3 themes (Sunrise, Ocean, and Forest) and 1 photo per moment"
       - "Calendar import, Search, Siri, and Spotlight"
       - "Memories, and iCloud sync across your devices"
@@ -31,13 +31,13 @@ plans:
     kind: monthly
     summary: "All of Premium, billed monthly. Cancel anytime."
     features:
-      - "Unlimited moments and pinned moments"
+      - "Unlimited moments, and several pinned moments set from the edit sheet"
       - "All 11 themes and up to 10 photos per moment"
       - "Every widget, with any moment you choose on each one"
       - "Reminders 7 days, 3 days, and 1 day before, and on the day"
       - "The Final Countdown on the Lock Screen and Dynamic Island"
       - "Weather forecast, daily notes, and repeating moments"
-      - "Baby mode, plan reminders, and On This Day"
+      - "Baby mode, milestone reminders, and On This Day"
       - "{TRIAL} · cancel anytime"
   - name: "Premium · Annual"
     price: "{P_YEARLY}/yr"
@@ -139,7 +139,7 @@ features:
   - title: "Your photo behind the countdown"
     description: "Use a photo of your own and crop it to fit, or pick a gradient. Pick from 11 themes, 3 of them free. Premium adds a gallery of up to 10 photos per moment."
   - title: "Plan mode"
-    description: "Every moment can have a checklist and a timeline of milestones. Soon. suggests a starter plan for trips, weddings, birthdays, exams, work, holidays, health, a baby, concerts, and sport, and \"Reset to suggestions\" brings it back. Premium adds reminders for plan items."
+    description: "Every moment can have a checklist and a timeline of milestones. Soon. suggests a starter plan for trips, weddings, birthdays, exams, work, holidays, health, a baby, concerts, and sport, and \"Reset to suggestions\" brings it back. Premium adds reminders for timeline milestones."
   - title: "Count up as well as down"
     description: "Give a moment a past date and it counts the days since. Count-ups show on widgets, on the Lock Screen, and in the Control Center control."
   - title: "Reminders and the Final Countdown"
@@ -158,11 +158,11 @@ how_it_works:
   intro: "What happens between adding a moment and the day it counts down to."
   steps:
     - title: "Add a moment"
-      detail: "Tap + and answer \"What's the moment?\" with a title and a date, plus a time if you want the countdown to run to the minute. Pick an icon, a theme, and a photo. Or import an event from your calendar."
+      detail: "Tap + and answer \"What's the moment?\" with a title and a date, plus a time if it has one, so widgets can tick down its last 24 hours live. Pick an icon, a theme, and a photo. Or import an event from your calendar."
     - title: "Put it where you'll see it"
       detail: "Pin the moment to the hero card at the top of Home. Add a widget to your Home Screen, Lock Screen, or StandBy, or the Control Center control on iOS 18. Free widgets show your pinned moment; with Premium you choose a moment for each widget."
     - title: "Get a plan for the day"
-      detail: "Open Plan and Soon. suggests a checklist and a timeline for that kind of event. Tick tasks off and add milestones of your own. With Premium, a Baby moment gets a guided week-by-week plan, and plan items can send reminders."
+      detail: "Open Plan and Soon. suggests a checklist and a timeline for that kind of event. Tick tasks off and add milestones of your own. With Premium, a Baby moment gets a guided week-by-week plan, and timeline milestones can send reminders."
     - title: "Watch it get closer"
       detail: "With Premium, reminders arrive 7 days, 3 days, and 1 day before, and on the day. The forecast appears once the date is within 7 days, and in the last 24 hours the Final Countdown runs on your Lock Screen and in the Dynamic Island."
     - title: "Celebrate the day"
@@ -248,7 +248,7 @@ screenshots:
     alt: "Soon. extra-large countdown widget"
 
 privacy:
-  data_collection: "minimal"
+  data_collection: "none"
   tracking: false
   account_required: false
   notes:
@@ -263,9 +263,9 @@ faq:
   - q: "What is Soon.?"
     a: "Soon. is a countdown app for iPhone. You add the moments you're waiting for, such as a trip, a wedding, a birthday, an exam, or a baby's due date, and each one gets your own photo, a starter checklist and timeline for its kind of event, and a place on 26 Home Screen, Lock Screen, and StandBy widgets. It also counts up from past dates and keeps finished moments as Memories."
   - q: "What can I count down to?"
-    a: "Anything with a date. Soon. has event types for trips, weddings, birthdays, anniversaries, exams, work, holidays, health, a baby, concerts, sport, and a general moment, and Plan mode suggests a checklist for most of them. Give a moment a time as well as a date and the card counts down to the minute. Give it a past date and it counts the days since."
+    a: "Anything with a date. Soon. has event types for trips, weddings, birthdays, anniversaries, exams, work, holidays, health, a baby, concerts, sport, and a general moment, and Plan mode suggests a checklist for most of them. Give a moment a time as well as a date, and in its last 24 hours widgets show a live countdown in hours and minutes. Give it a past date and it counts the days since."
   - q: "Is Soon. free?"
-    a: "Yes. Free covers up to 5 moments, Plan mode checklists and timelines, widgets showing your pinned moment, 3 themes, 1 photo per moment, calendar import, Search, Siri, Memories, and iCloud sync. Premium adds unlimited moments, all 11 themes, up to 10 photos per moment, any moment on any widget, reminders, the Final Countdown Live Activity, the weather forecast, daily notes, repeating moments, Baby mode, and On This Day."
+    a: "Yes. Free covers up to 5 moments, 1 pinned moment, Plan mode checklists and timelines, widgets showing your pinned moment, 3 themes, 1 photo per moment, calendar import, Search, Siri, Memories, and iCloud sync. Premium adds unlimited moments, several pinned moments, all 11 themes, up to 10 photos per moment, any moment on any widget, reminders, the Final Countdown Live Activity, the weather forecast, daily notes, repeating moments, Baby mode, and On This Day."
   - q: "What does Premium cost?"
     a: "{P_MONTHLY} per month or {P_YEARLY} per year, each starting with a {TRIAL}, or {P_LIFETIME} once for Lifetime. You can cancel a subscription anytime, and all three plans support Family Sharing. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Which widgets does Soon. have?"
@@ -275,7 +275,7 @@ faq:
   - q: "Can I count up from a past date?"
     a: "Yes. A moment with a past date counts the days since, on its card, on widgets, on the Lock Screen, and in the Control Center control. Reminders and the Live Activity are for countdowns only. Separately, a countdown that has reached its day can be saved as a Memory, which shows the days since it happened."
   - q: "How do reminders work?"
-    a: "With Premium, turn on reminders for a moment and Soon. sends a notification 7 days, 3 days, and 1 day before, and on the day at the moment's time. Plan items can have reminders too, and On This Day sends a yearly reminder on a memory's anniversary. The free version sends no reminders."
+    a: "With Premium, turn on reminders for a moment and Soon. sends a notification 7 days, 3 days, and 1 day before, and on the day at the moment's time. If a moment's plan has timeline milestones, you get a reminder for each milestone in place of the 7-, 3-, and 1-day ones, and On This Day sends a yearly reminder on a memory's anniversary. The free version sends no reminders."
   - q: "Where does the weather forecast come from?"
     a: "From Apple Weather. Add a place to a moment by searching for a city or place, and Soon. shows the forecast once the date is within 7 days. The weather forecast is part of Premium."
   - q: "Are the daily notes written by AI?"
@@ -283,7 +283,7 @@ faq:
   - q: "Does Soon. track me or collect data?"
     a: "No. Soon. has no ads, trackers, or third-party SDKs, and you never create an account. Your moments are stored on your iPhone and, with iCloud sync on, in your own private iCloud, which Lagerland Apps cannot read. Settings has Export My Data and Delete All My Data."
   - q: "What happens to my moments if I switch iPhones?"
-    a: "Turn on iCloud sync in Settings and your moments sync through your private iCloud to other iPhones signed in to the same Apple Account. You can also export everything as a JSON file from Settings. A Premium purchase restores on any iPhone signed in with the same Apple Account."
+    a: "Sign in to iCloud with the same Apple Account on both iPhones, and your moments sync through your private iCloud. Settings shows the status under iCloud Sync. You can also export everything as a JSON file from Settings. A Premium purchase restores on any iPhone signed in with the same Apple Account."
   - q: "Does Soon. work on Apple Watch, iPad, or Mac?"
     a: "No. Soon. runs on iPhone only and needs iOS 17.6 or later. The Control Center control needs iOS 18."
   - q: "Can I share a countdown with someone?"
@@ -294,17 +294,17 @@ support:
   url: "/apps/soon/support/"
 
 release:
-  first_release: "2026-01-01"
-  last_updated: "2026-04-13"
+  first_release: "2026-01-16"
+  last_updated: "2026-10-30"
 
 ratings:
   value: "5.0"
   count: 3
   last_synced: "2026-08-01"
-# Surface the Plan Mode journal post on the app page.
+# Surface the Plan mode journal post on the app page.
 related_journal:
   slug: how-plan-mode-builds-a-checklist
-  anchor: "How Plan Mode builds a wedding (or trip, or pregnancy) checklist"
+  anchor: "How Plan mode builds a wedding (or trip, or pregnancy) checklist"
 
 # Render the markdown body as a visible "About Soon." section with in-body
 # links into the page sections, the privacy policy, and the comparisons.
@@ -312,12 +312,12 @@ show_body: true
 about_heading: "What Soon. does: countdowns, plans, widgets, and memories"
 last_updated: 2026-11-08
 ---
-Soon. is a [countdown app for iPhone](#features) for the moments you care about: a trip, a wedding, a birthday, an exam, a concert, or a baby's due date. Each moment gets a full-screen card with your own photo or a gradient theme, and a time if you want it to count down to the minute. Give a moment a past date and it counts up instead, so the same app keeps track of the days since something began.
+Soon. is a [countdown app for iPhone](#features) for the moments you care about: a trip, a wedding, a birthday, an exam, a concert, or a baby's due date. Each moment gets a full-screen card with your own photo or a gradient theme, and a time of day if it has one, so widgets can tick down its last 24 hours live. Give a moment a past date and it counts up instead, so the same app keeps track of the days since something began.
 
-Every moment can have a plan. Soon. suggests [a starter checklist and timeline](#how-it-works) for its kind of event, and Plan mode is free. With Premium, a Baby moment gets a week-by-week plan, and plan items can send reminders. [The examples on this page](#templates) show what a trip, an exam, a birthday, and a memory look like in the app.
+Every moment can have a plan. Soon. suggests [a starter checklist and timeline](#how-it-works) for its kind of event, and Plan mode is free. With Premium, a Baby moment gets a week-by-week plan, and timeline milestones can send reminders. [The examples on this page](#templates) show six moments in the app: a trip, a baby on the way, a birthday, an exam, a count-up, and a memory.
 
 Soon. has 26 [widgets](#features) for the Home Screen, Lock Screen, and StandBy, and a days-until control for Control Center on iOS 18. Free widgets show your pinned moment. Premium lets you choose any moment for each widget, adds reminders 7 days, 3 days, and 1 day before and on the day, and runs the Final Countdown on your Lock Screen and in the Dynamic Island for the last 24 hours. When the day arrives, Soon. celebrates it with confetti and offers to save it as a Memory. With Premium, On This Day brings it back on each anniversary.
 
 Soon. has [no ads or tracking and needs no account](/apps/soon/privacy/). Your moments stay on your iPhone and, with iCloud sync on, in your own private iCloud, and the app contains no third-party SDKs. If you're comparing it with [Days Matter](/alternatives/days-matter/), [Countdowns (Apalon)](/alternatives/countdowns-apalon/), [Dreamdays](/alternatives/dreamdays/), [Countdown Star](/alternatives/countdown-star/), or [Wedding Happy](/alternatives/wedding-happy/), [the side-by-side table](#compare-heading-soon) lists the differences.
 
-The free version covers up to 5 moments, Plan mode, widgets for your pinned moment, 3 themes, calendar import, Memories, and iCloud sync. Premium costs {P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} once, and Family Sharing covers all three. Soon. is made by Lagerland Apps, an independent Apple studio in Finland.
+The free version covers up to 5 moments, Plan mode, widgets for your pinned moment, 3 themes, calendar import, Memories, and iCloud sync. Premium costs {P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} once, and Family Sharing covers all three. The app is available in 36 languages, and you can change its language in Settings. Soon. is made by Lagerland Apps, an independent Apple studio in Finland.

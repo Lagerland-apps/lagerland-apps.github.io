@@ -3,8 +3,8 @@ layout: journal
 slug: how-many-steps-a-day-to-aim-for
 ref: /journal/how-many-steps-a-day-to-aim-for/
 permalink: /de/journal/how-many-steps-a-day-to-aim-for/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Wie viele Schritte am Tag sind gesund? Was große Studien zeigen und wie du ein Ziel findest, das du hältst"
 seo:
@@ -32,7 +32,7 @@ faq:
   - q: "Wie lange braucht man für 8000 Schritte?"
     a: "Bei etwa 110 Schritten pro Minute, also zügigem Gehen, sind 8000 Schritte rund 75 Minuten Gehen am Stück. In der Praxis brauchst du weniger gezieltes Gehen, weil deine Tagessumme auch jeden Schritt zu Hause, bei der Arbeit und bei Besorgungen enthält."
   - q: "Welches Schrittziel soll ich in EarnLock einstellen?"
-    a: "EarnLock bietet drei Vorgaben, Leicht (4000 Schritte), Standard (8000) und Herausforderung (12.000), dazu eine eigene Zahl oder „Adaptiv“: Das Ziel steigt nach einem geschafften Tag um 3 % und sinkt nach einem verpassten um 5 %. Eine gute Wahl ist ein Ziel, das du an einem gewöhnlichen Tag nur mit einem zusätzlichen gezielten Spaziergang erreichst. Erhöhen kannst du das Ziel jederzeit; eine Senkung gilt erst nach 24 Stunden, damit ein schwerer Tag es nicht sofort schrumpfen lässt. Schon die Hälfte des Ziels öffnet deine Apps für eine Stunde."
+    a: "EarnLock bietet drei Vorgaben, Leicht (4000 Schritte), Standard (8000) und Herausforderung (12.000), dazu eine eigene Zahl oder „Adaptiv“: Das Ziel steigt nach einem geschafften Tag um 3 % und sinkt nach einem verpassten um 5 %. Eine gute Wahl ist ein Ziel, das du an einem gewöhnlichen Tag nur mit einem zusätzlichen gezielten Spaziergang erreichst. Erhöhen kannst du das Ziel jederzeit. Eine Senkung gilt sofort, danach lässt es sich 24 Stunden lang nicht weiter senken, damit ein schwerer Tag es nicht immer weiter schrumpfen lässt. Schon bei der Hälfte des Ziels gehen einige deiner Apps für etwa eine Stunde auf."
 mentioned_apps:
   - earnlock
 read_time: "9 Min. Lesezeit"
@@ -105,8 +105,8 @@ Als tägliche Gesundheitskennzahl taugt die Schrittzahl wenig; sie schwankt dami
 - **Schritte oder Apples eigene Aktivitätswerte.** Schritte sind das kostenlose Ziel. Premium ergänzt Bewegungsminuten, also Apples Trainingszeit, der grüne Ring „Trainieren“, den [Apple beschreibt](https://support.apple.com/de-de/guide/watch/apd3bf6d85a6/watchos) als Minuten zügiger Aktivität (Vorgaben 20, 30 und 45), und aktive Kalorien (150, 300 und 500 kcal).
 - **Eine Summe pro Tag, aus Apple Health.** EarnLock liest die heutige Summe aus Apple Health auf deinem iPhone. Health [ordnet überlappende Quellen nach Priorität](https://support.apple.com/de-de/108779), wenn es einen Tag zusammenzählt, sodass Schritte, die iPhone und Apple Watch beide gezählt haben, nicht doppelt zählen. Mit Premium liest die Apple-Watch-App von EarnLock ihre eigenen Health-Daten und zeigt, wie weit du noch von der Entsperrung entfernt bist.
 - **Die Sperre zeigt die Lücke.** Eine gesperrte App zeigt, wie viele Schritte noch fehlen, etwa „noch 2.026 Schritte bis zur Entsperrung“.
-- **Die Hälfte zählt, und um Mitternacht beginnt der Tag neu.** Bei der Hälfte deines Ziels gehen die Apps für eine Stunde auf. Erreichst du das ganze Ziel, bleiben sie bis Mitternacht Ortszeit offen; dann fängt die Zählung wieder bei null an.
-- **Erhöhen geht sofort, Senken wartet.** Erhöhen kannst du das Ziel jederzeit. Eine Senkung gilt erst nach 24 Stunden, damit ein schwacher Moment das Ziel nicht schrumpfen lässt. Mit Premium kannst du diese Wartezeit einmal pro Woche überspringen.
+- **Die Hälfte zählt, und um Mitternacht beginnt der Tag neu.** Bei der Hälfte deines Ziels gehen einige deiner gesperrten Apps für etwa eine Stunde auf, einmal am Tag. Erreichst du das ganze Ziel, bleiben sie bis Mitternacht Ortszeit offen; dann fängt die Zählung wieder bei null an.
+- **Erhöhen geht immer, Senken ist begrenzt.** Erhöhen kannst du das Ziel jederzeit. Eine Senkung gilt sofort, die nächste wartet 24 Stunden, damit du das Ziel in einem schwachen Moment nicht immer weiter herunterhandelst. Mit Premium kannst du diese Wartezeit einmal pro Woche überspringen.
 - **Verschiedene Ziele für verschiedene Tage.** Die Intelligenten Zeitpläne in Premium (Arbeitszeit, Abends, Wochenenden und Schlaf) können jeweils Leicht, Standard oder Herausforderung nutzen. Das ist der Punkt mit Wochenende und Bürotag von oben.
 - **Eine Woche zum Einstellen.** Die ersten sieben Tage sind eine Beobachtungswoche: Nichts wird gesperrt, und EarnLock zählt, wie oft du gesperrt worden wärst, damit du nachjustieren kannst, bevor es etwas kostet.
 

@@ -3,8 +3,8 @@ layout: journal
 slug: how-much-to-tip-in-the-us
 ref: /journal/how-much-to-tip-in-the-us/
 permalink: /de/journal/how-much-to-tip-in-the-us/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Trinkgeld in den USA: Wie viel in jeder typischen Situation, mit Rechenbeispielen"
 seo:
@@ -123,9 +123,9 @@ Das Trinkgeld folgt dem Essen. Hat jeder ungefähr gleich viel bestellt, teil di
 
 ## Wo RightSplit dazu passt
 
-[RightSplit](/de/apps/rightsplit/) bringt das Trinkgeld auf denselben Bildschirm wie die Aufteilung: Gib die Summe ein, stell die Zahl der Personen und das Trinkgeld ein, und alle Anteile erscheinen sofort. Die kostenlose gleiche Aufteilung rechnet den Prozentsatz auf die Summe, die du eintippst. Gibst du die Summe nach Steuer vom Abendessen oben mit 18 % Trinkgeld ein, kommt die Rechnung auf 188,61 $, und „Fair runden“ teilt sie in 47,16 $ für eine Person und 47,15 $ für die anderen drei, damit die Anteile auf den Cent aufgehen. Das ist das Trinkgeld nach Steuer, 2,13 $ mehr als die Variante vor Steuer. Enthält die Rechnung schon eine Servicegebühr, stell das Trinkgeld auf 0.
+[RightSplit](/de/apps/rightsplit/) bringt das Trinkgeld auf denselben Bildschirm wie die Aufteilung: Gib die Summe ein, stell die Zahl der Personen und das Trinkgeld ein, und alle Anteile erscheinen sofort. Die Trinkgeldstufen 0, 15, 18 und 20 % und ein Regler von 0 bis 30 % sind kostenlos, und das erste Trinkgeld richtet sich nach deiner Region, in den USA also 18 %. Die kostenlose gleiche Aufteilung rechnet den Prozentsatz auf die Summe, die du eintippst. Gibst du die Summe nach Steuer vom Abendessen oben mit 18 % Trinkgeld ein, kommt die Rechnung auf 188,61 $, und „Fair runden“ teilt sie in 47,16 $ für eine Person und 47,15 $ für die anderen drei, damit die Anteile auf den Cent aufgehen. Das ist das Trinkgeld nach Steuer, 2,13 $ mehr als die Variante vor Steuer. Enthält die Rechnung schon eine Servicegebühr, stell das Trinkgeld auf 0. Bei einem gescannten Beleg liest der Scanner auf dem Gerät eine gedruckte Zeile für Servicegebühr oder Bedienung als Trinkgeld.
 
-Mit Pro+ teilst du einen gescannten Beleg nach Artikeln, sodass jede Person zahlt, was sie bestellt hat, und Steuer und Trinkgeld auf dem Beleg werden pro Person verteilt. Es gibt keine Konten; nur die Person mit dem Handy braucht die App. Wie RightSplit sich für Rechnungen in der Gruppe schlägt, zeigt auch der Vergleich [Splitwise-Alternative](/de/alternatives/splitwise/).
+Deinen ersten gescannten Beleg und mit Pro+ jeden weiteren teilst du nach Artikeln, sodass jede Person zahlt, was sie bestellt hat, und Steuer und Trinkgeld auf dem Beleg werden im Verhältnis zu dem verteilt, was jede Person bestellt hat. Es gibt keine Konten; nur die Person mit dem Handy braucht die App. Wie RightSplit sich für Rechnungen in der Gruppe schlägt, zeigt auch der Vergleich [Splitwise-Alternative](/de/alternatives/splitwise/).
 
 Den Prozentsatz wählt RightSplit nicht für dich. Die App weiß nicht, ob du beim Buffet sitzt oder im Steakhaus, dieser Teil kommt aus der Tabelle oben.
 

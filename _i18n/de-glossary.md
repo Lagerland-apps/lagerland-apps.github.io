@@ -260,10 +260,10 @@ AfterShift 4 / 195 (du), AllPaid 1 / 36 (du), AppMeta **174 / 45 (mixed, mostly 
 | Rating | Rating | Wertung | |
 | Achievements | Achievements | Erfolge | |
 | 3D board | 3D Board | 3D-Brett | |
-| Premium | Chessful Premium / Upgrade to Premium | Chessful Premium / Auf Premium upgraden | App Store IAPs are named "Chessful Pro …" (flag: store says Pro, app says Premium) |
+| Pro (site) | Chessful Premium / Upgrade to Premium | Website: **Pro** („Chessful Pro“, „Pro · Monatlich“, „Pro-Funktionen“) | owner decision 2026-11-08: the site says **Pro**, like the App Store IAPs „Chessful Pro …“; the app UI still says Premium until the app fix (Kanban) |
 | Free | Free Plan | Kostenloser Plan | |
 | Monthly / Yearly / Lifetime | same | Monatlich / Jährlich / Lebenslang | |
-| Free trial | Start Free Trial | Kostenlos testen | **Flag:** catalog also has "3-day free trial" = "3 Tage kostenlos" and "$3.33/month · 3-day free trial" (English source also says 3-day); site says 7-day. Check the live trial length |
+| Free trial | Start Free Trial | Kostenlos testen | catalog also has "3-day free trial" = "3 Tage kostenlos" and "$3.33/month · 3-day free trial": stale, unused strings (blueprint). The trial is 1 week on Monthly and Yearly (master); the site uses the {TRIAL} token |
 | Restore Purchases | Restore Purchases | Käufe wiederherstellen | |
 
 Other German flags in Chessful (don't fix the app): "Back-Rank Weakness" = "Grundreihenmatt verpasst" (means "missed back-rank mate", wrong
@@ -997,7 +997,7 @@ There is no InfoPlist.xcstrings. The display name "Tare" is set in the build set
 ### German App Store listing
 - Name: **Tare: Logikrätsel & Denkspiel** (English: "Tare", so it differs)
 - Subtitle: **Balance-Puzzle & Gehirnjogging**
-- In-app purchase: `Kapitel II–IV 2,99 €` (U+00A0 before €). FLAG: the IAP is named "Chapters II–IV" in the German storefront, but the site says the one purchase unlocks Chapters II to X. Check the IAP display name in App Store Connect.
+- In-app purchase: `Kapitel II–X 2,99 €` (U+00A0 before €). The App Store Connect display name is „Kapitel II–X“ in German and II–X in every other locale (owner, confirmed 2026-11-08). Older storefront caches may still show II–IV; that is not an open issue.
 - Sprachen: **Deutsch und 43 weitere**
 
 ---

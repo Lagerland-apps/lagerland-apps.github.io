@@ -13,6 +13,7 @@ price:
   model: freemium
 price_lead: "Free"
 price_tier: "Pro"
+pricing_note: "You can cancel a subscription anytime. Five tools stay free with no time limit."
 
 plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Monthly and Annual each start with a {TRIAL}, which Apple offers only to eligible Apple Accounts. The 3 days of full access after you install the app are separate and need no payment. Monthly, Annual, and Lifetime all support Family Sharing. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew."
 
@@ -131,7 +132,7 @@ value_points:
 
 features:
   - title: "Video"
-    description: "Compress to a quality preset, a target size, or a bitrate. Compress never overshoots a target size; it stops with an error instead. Convert, trim, merge with a crossfade, crop, stabilize, color grade with sliders or a .cube LUT, burn in captions, and generate subtitles on the device with Auto Subtitle. MKV files open directly, ProRes is written to .mov, and portrait phone clips keep their orientation. WebM isn't supported."
+    description: "Compress to a quality preset or a target size. Compress never overshoots a target size; it stops with an error instead. Convert to MP4, MOV, or M4V, trim, merge with a crossfade, crop, stabilize, color grade with sliders or a .cube LUT, burn in captions, and generate subtitles on the device with Auto Subtitle. MKV files open directly, ProRes is written to .mov, and portrait phone clips keep their orientation. WebM isn't supported."
   - title: "Audio"
     description: "Extract the audio from a video. Convert to M4A (AAC), WAV, AIFF, ALAC, or CAF from formats including MP3 and FLAC. Trim and merge on a waveform, normalize loudness to EBU R128 or a platform preset, reduce noise from a sample you pick, transcribe speech on the device, and make an iPhone ringtone."
   - title: "Photos and images"
@@ -141,7 +142,7 @@ features:
   - title: "Archives and ebooks"
     description: "Create ZIP, TAR, TAR.GZ, GZIP, XZ, or BZIP2 archives, and extract those plus RAR4 and RAR5. You see what's inside before extracting, with limits against path traversal and zip bombs. The ebook Convert tool turns EPUB, FB2, and DRM-free MOBI or AZW3 into EPUB, PDF, plain text, and more, and EPUB Metadata edits the title, author, and cover."
   - title: "Recipes, Make It Fit, and automation"
-    description: "With Pro, save any chain of tools as a Recipe and run it on new files, or let Make It Fit choose the steps to hit a target size or platform. On Mac, Folder Automation runs a Recipe on every file that lands in a watched folder, the menu bar reaches any tool, and six Shortcuts actions compress video, convert and compress images, merge PDFs, create a ZIP, and pull text from an image."
+    description: "With Pro, save any chain of tools as a Recipe and run it on new files, or let Make It Fit choose the steps to hit a target size or platform. On Mac, Folder Automation runs a Recipe on every file that lands in a watched folder, and the menu bar reaches any tool. On iPhone and Mac, six Shortcuts actions compress video, convert and compress images, merge PDFs, create a ZIP, and pull text from an image."
   - title: "Strip Metadata before you share"
     description: "Strip Metadata removes location, device, and author tags from videos, audio, photos, and PDFs. On iPhone, send files in from the share sheet and save results to Photos or keep them in the Library tab."
 
@@ -182,11 +183,11 @@ faq:
   - q: "How do I compress a video to fit a size limit?"
     a: "Drop the video into MediaKit and choose Compress. Set a target size and MediaKit works out the bitrate; it never goes over the target, and if the target can't be reached it stops with an error instead. The tool screen shows the estimated size before you run it, and the result shows the space you saved. Video Compress is one of the five free tools. With Pro, Make It Fit can also enhance a clip, turn it into 9:16, and bring it under 25 MB for social posts in one step."
   - q: "Which file formats does MediaKit support?"
-    a: "Video: MKV opens directly, because MediaKit unpacks it itself (DTS, E-AC-3, and MP3 audio inside an MKV is dropped, with a notice); ProRes is written to .mov. Audio: reads formats including MP3 and FLAC and writes M4A (AAC), WAV, AIFF, ALAC, and CAF. Images: HEIC, JPG, PNG, TIFF, GIF, WebP (where your system can write it), BMP, and JPEG 2000, plus camera RAW, AVIF, PSD, and EXR as input. Ebooks: EPUB, FB2, MOBI and AZW3 (read-only), PDF, TXT, HTML, CBZ, and RTF. Archives: ZIP, TAR, TAR.GZ, GZIP, XZ, and BZIP2, plus RAR4 and RAR5 for extracting. WebM, RAR creation, encrypted RAR, and DRM-protected Kindle books are not supported."
+    a: "Video: converts to MP4, MOV, or M4V with H.264, HEVC, or ProRes (ProRes is written to .mov). MKV opens directly, because MediaKit unpacks it itself (DTS, E-AC-3, and MP3 audio inside an MKV is dropped, with a notice). Audio: reads formats including MP3 and FLAC and writes M4A (AAC), WAV, AIFF, ALAC, and CAF. Images: HEIC, JPG, PNG, TIFF, GIF, WebP (where your system can write it), BMP, and JPEG 2000, plus camera RAW, AVIF, PSD, and EXR as input. Ebooks: EPUB, FB2, MOBI and AZW3 (read-only), PDF, TXT, HTML, CBZ, and RTF. Archives: ZIP, TAR, TAR.GZ, GZIP, XZ, and BZIP2, plus RAR4 and RAR5 for extracting. WebM, RAR creation, encrypted RAR, and DRM-protected Kindle books are not supported."
   - q: "Is MediaKit free?"
     a: "Yes, to start. For your first 3 days every tool works, one export per run, with no payment. After that, five tools stay free for good, one file at a time: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Pro unlocks every other tool, batch processing, and unlimited exports for {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once, and all three support Family Sharing. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does MediaKit work offline?"
-    a: "Yes. Every tool runs on your device, so MediaKit works without an internet connection. The one exception is subtitle translation, which uses Apple's Translation language packs; macOS downloads them the first time (macOS 15 or later)."
+    a: "Yes. Every tool runs on your device, so MediaKit works without an internet connection. The one exception is subtitle translation, which uses Apple's Translation language packs; your iPhone or Mac downloads them the first time (iOS 18 or macOS 15 or later)."
   - q: "Which devices does MediaKit support?"
     a: "iPhone with iOS 17 or later, and Mac with macOS 14.6 (Sonoma) or later. One purchase covers both. There is no iPad version. Some extras are Mac-only: Folder Automation, the menu bar item, Open With from Finder, and Try-It samples with ⌘T. The share sheet extension, the Library tab, and saving to Photos are on iPhone."
   - q: "Can MediaKit be automated?"
@@ -199,8 +200,8 @@ support:
   url: "/apps/mediakit/support/"
 
 release:
-  first_release: "2026-04-01"
-  last_updated: "2026-04-13"
+  first_release: "2026-04-16"
+  last_updated: "2026-11-01"
 last_updated: 2026-11-08
 ---
-MediaKit is an iPhone and Mac app with more than 150 tools for video, audio, image, PDF, archive, and ebook files, and every one of them runs on the device. Drop in a file and MediaKit suggests the tools that fit it. The tool screen estimates the output size before you press Run, and each result shows the space you saved next to a side-by-side compare. Five tools stay free for good: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Your first 3 days unlock every other tool for single-file runs with no payment, and Pro adds every tool, batch processing, Recipes, and Make It Fit, with one purchase covering iPhone and Mac. On Mac, Folder Automation, the menu bar, and six Shortcuts actions put the same tools into your routine. There is no account, and your files are never uploaded. Published by Lagerland Apps.
+MediaKit is an iPhone and Mac app with more than 150 tools for video, audio, image, PDF, archive, and ebook files, and every one of them runs on the device. Drop in a file and MediaKit suggests the tools that fit it. The tool screen estimates the output size before you press Run, and each result shows the space you saved next to a side-by-side compare. Five tools stay free for good: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Your first 3 days unlock every other tool for single-file runs with no payment, and Pro adds every tool, batch processing, Recipes, and Make It Fit, with one purchase covering iPhone and Mac. On Mac, Folder Automation and the menu bar put the same tools into your routine, and six Shortcuts actions work on both iPhone and Mac. There is no account, and your files are never uploaded. Published by Lagerland Apps.

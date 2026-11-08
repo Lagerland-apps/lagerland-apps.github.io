@@ -3,8 +3,8 @@ layout: privacy
 slug: earnlock
 ref: /apps/earnlock/privacy/
 permalink: /fr/apps/earnlock/privacy/
-translated_from: 2026-11-07
-last_updated: 2026-11-07
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 title: "Politique de confidentialité"
 seo:
   title: "Politique de confidentialité EarnLock, sans suivi"
@@ -25,8 +25,7 @@ overview: >
   d’activité Apple Santé et votre sélection d’apps bloquées uniquement sur
   l’appareil, les conserve uniquement sur l’appareil et ne les utilise
   que sur l’appareil, pour savoir si votre objectif quotidien est atteint. Nous
-  ne voyons rien de tout cela. La section « Confidentialité de l’app » de
-  l’App Store indique « Données non collectées » pour chaque version de l’app.
+  ne voyons rien de tout cela. La section « Confidentialité de l’app » de l’App Store indique « Données non collectées » pour EarnLock.
 
 data_collection: >
   EarnLock ne collecte aucune donnée personnelle. Elle lit trois catégories
@@ -40,26 +39,25 @@ data_collection: >
   EarnLock. Le framework HealthKit d’Apple ne partage pas lui-même ces données
   avec nous ni avec des tiers. Vous pouvez révoquer à tout moment l’accès
   d’EarnLock à Santé dans Réglages > Confidentialité et sécurité > Santé >
-  EarnLock. (2) Les jetons Family Controls des apps que vous choisissez de
-  bloquer : lorsque vous choisissez des apps dans le sélecteur Family Controls
-  d’iOS, iOS remet à EarnLock un jeton opaque pour chaque app sélectionnée, et
-  non le nom, l’identifiant ou l’icône de l’app. Ces jetons sont conservés
-  uniquement sur votre appareil, dans un conteneur App Group partagé entre
-  l’app EarnLock et ses extensions iOS (Shield, Shield Action,
+  EarnLock. (2) Les jetons Temps d’écran de ce que vous choisissez de
+  bloquer : lorsque vous choisissez des apps, des catégories ou des sites web
+  dans le sélecteur Temps d’écran d’Apple, iOS remet à EarnLock un jeton opaque
+  pour chacun, et non son nom, son identifiant ou son icône. Ces jetons sont
+  conservés uniquement sur votre appareil, dans un conteneur App Group partagé
+  entre l’app EarnLock et ses extensions iOS (Shield, Shield Action,
   DeviceActivityMonitor, extension d’activité en direct et de widget). Les
-  jetons sont opaques par conception chez Apple : même EarnLock ne peut pas lire
-  quelle app l’utilisateur a sélectionnée. La sélection n’est jamais transmise
-  hors de l’appareil, et vous pouvez l’effacer à tout moment depuis l’écran
-  d’accueil d’EarnLock (Réglages > Apps bloquées > Modifier). (3) Les
-  transactions StoreKit : lorsque vous vous abonnez ou achetez l’offre à vie,
-  Apple envoie à EarnLock un objet de transaction vérifié qui contient
-  uniquement l’identifiant du produit et l’état du droit d’accès. L’app ne voit
-  aucune information de paiement, aucun nom, aucune adresse e-mail ni aucune
-  autre donnée personnelle. Tout le traitement des paiements, des
-  remboursements et la gestion des abonnements sont assurés par StoreKit et
-  l’App Store d’Apple, pas par EarnLock. EarnLock n’écrit qu’une seule valeur
-  booléenne (isPremium) dans le conteneur App Group, pour que les widgets et
-  l’app Apple Watch affichent le bon état.
+  jetons sont opaques par conception chez Apple : même EarnLock ne peut pas
+  lire quelle app vous avez sélectionnée. La sélection n’est jamais transmise
+  hors de l’appareil, et vous pouvez la modifier ou l’effacer à tout moment dans
+  EarnLock, sous Réglages > Blocage > Applis bloquées. (3) Les transactions
+  StoreKit : lorsque vous vous abonnez ou achetez l’offre à vie, Apple remet à
+  EarnLock une transaction signée qui indique quel produit vous avez acheté et
+  s’il est actif. Elle ne contient aucune information de paiement, aucun nom,
+  aucune adresse e-mail ni aucune autre donnée personnelle. Tout le traitement
+  des paiements, des remboursements et la gestion des abonnements sont assurés
+  par StoreKit et l’App Store d’Apple, pas par EarnLock. EarnLock conserve son
+  statut Premium sur l’appareil pour que ses widgets affichent le bon état, et
+  le transmet à l’app Apple Watch d’EarnLock via WatchConnectivity d’Apple.
 
 data_storage: >
   Toutes les données d’EarnLock sont stockées localement sur votre appareil,
@@ -69,8 +67,13 @@ data_storage: >
   de vos séries, les entrées de votre journal de réflexion, les estimations de
   temps d’écran économisé et votre sélection d’apps bloquées se trouvent dans
   des conteneurs Apple standard que la sauvegarde iOS inclut si vous activez la
-  sauvegarde iCloud. Supprimer l’app EarnLock de votre appareil supprime son
-  conteneur, le conteneur App Group et tout ce qu’ils contiennent.
+  sauvegarde iCloud. Si vous utilisez l’app Apple Watch, elle lit les données
+  Santé sur la montre elle-même, et votre iPhone ne lui envoie que vos réglages
+  et votre statut Premium, directement via WatchConnectivity d’Apple. Dans
+  Réglages > Données et confidentialité, vous pouvez exporter tout ce
+  qu’EarnLock conserve dans un seul fichier, ou tout effacer. Supprimer l’app
+  EarnLock de votre appareil supprime son conteneur, le conteneur App Group et
+  tout ce qu’ils contiennent.
 
 third_parties: >
   EarnLock n’utilise aucun service tiers d’analyse, de publicité ou de suivi.
@@ -110,12 +113,12 @@ refund_requests:
     Apple prend la décision finale pour chaque remboursement.
 
 children: >
-  EarnLock s’adresse aux adultes qui l’utilisent sur leur propre iPhone, et
-  autorise le framework Family Controls d’Apple uniquement en mode .individual,
-  jamais en mode .child utilisé pour le contrôle parental sur un mineur du
-  partage familial. EarnLock est un logiciel d’autorestriction, jamais un
-  contrôle parental. Nous ne collectons sciemment aucune donnée auprès de qui
-  que ce soit, quel que soit son âge.
+  EarnLock s’adresse aux adultes qui l’utilisent sur leur propre iPhone. Elle
+  autorise le framework Family Controls d’Apple uniquement pour votre propre
+  appareil, jamais dans le mode qu’un parent utilise pour gérer l’appareil d’un
+  enfant via le partage familial. EarnLock est un logiciel d’autorestriction,
+  jamais un contrôle parental. Nous ne collectons sciemment aucune donnée auprès
+  de qui que ce soit, quel que soit son âge.
 
 changes: >
   Si cette politique change, la date de « dernière mise à jour » en haut de

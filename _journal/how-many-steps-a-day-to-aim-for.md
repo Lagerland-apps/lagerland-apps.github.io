@@ -28,12 +28,12 @@ faq:
   - q: "How long does it take to walk 8,000 steps?"
     a: "At about 110 steps a minute, a brisk walk, 8,000 steps is roughly 75 minutes of continuous walking. In practice it takes less deliberate walking than that, because your daily total also includes every step you take at home, at work and on errands."
   - q: "What step goal should I set in EarnLock?"
-    a: "EarnLock offers three presets, Light (4,000 steps), Standard (8,000) and Challenge (12,000), plus your own number or Adaptive, which rises 3% after a day you hit it and eases 5% after a day you miss. A good choice is a goal you reach on an ordinary day only if you add one deliberate walk. You can raise the goal at any time; lowering it takes effect after 24 hours, so one hard day can't shrink it on the spot. Halfway to the goal still opens your apps for an hour."
+    a: "EarnLock offers three presets, Light (4,000 steps), Standard (8,000) and Challenge (12,000), plus your own number or Adaptive, which rises 3% after a day you hit it and eases 5% after a day you miss. A good choice is a goal you reach on an ordinary day only if you add one deliberate walk. You can raise the goal at any time. Lowering it applies at once, and then it can't be lowered again for 24 hours, so one hard day can't keep shrinking it. Halfway to the goal still opens some of your apps for about an hour."
 mentioned_apps:
   - earnlock
 read_time: "8 min read"
 excerpt: "What four large studies found about daily step counts and health, where the 10,000 figure came from, whether pace matters, how long each goal takes to walk, and how to pick a step goal you can keep when it locks your apps. Then how EarnLock's Light, Standard and Challenge goals map onto the research."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 Most adults get the bulk of the benefit the research can see somewhere between about 6,000 and 10,000 steps a day. Where exactly depends on age, and benefits start far lower than that. The 10,000 figure came from a slogan. Most of the numbers you read about steps come from the four studies below.
@@ -102,8 +102,8 @@ Step count is a weak number to read for health day to day; it moves with where y
 - **Steps, or Apple's own activity measures.** Steps is the free goal. Premium adds active minutes, which is Apple's Exercise time, the green ring that [Apple describes](https://support.apple.com/guide/watch/track-daily-activity-apd3bf6d85a6/watchos) as minutes of brisk activity (presets 20, 30 and 45), and active calories (150, 300 and 500 kcal).
 - **One total per day, from Apple Health.** EarnLock reads today's total from Apple Health on your iPhone. Health [ranks overlapping sources](https://support.apple.com/en-us/108779) when it adds up a day, so steps your iPhone and Apple Watch both counted aren't counted twice. With Premium, EarnLock's Apple Watch app reads its own Health data and shows how far you are from unlocking.
 - **The lock shows the gap.** A locked app shows how many steps are still needed, such as "2,026 steps until unlock".
-- **Halfway counts, and the day resets at midnight.** At half your goal the apps open for an hour. Reach the full goal and they stay open until local midnight; then the count starts again from zero.
-- **Raising is instant; lowering waits.** You can raise the goal at any time. Lowering it takes effect after 24 hours, so a weak moment can't shrink it. Premium can skip that wait once a week.
+- **Halfway counts, and the day resets at midnight.** At half your goal, some of your locked apps open for about an hour, once a day. Reach the full goal and they stay open until local midnight; then the count starts again from zero.
+- **Raising is never limited; lowering is rationed.** You can raise the goal at any time. Lowering it applies at once, and the next lowering waits 24 hours, so a weak moment can't keep talking it down. Premium can skip that wait once a week.
 - **Different goals for different days.** Premium's Smart Schedules (Work hours, Evenings, Weekends, and Sleep) can each use Light, Standard or Challenge, which is the weekend-versus-desk-day point above.
 - **A week to calibrate.** The first seven days are a Shadow Week: nothing is blocked, and EarnLock counts how often you would have been blocked, so you can adjust before it starts to cost anything.
 

@@ -4,7 +4,7 @@ slug: earnlock
 ref: /apps/earnlock/privacy/
 permalink: /de/apps/earnlock/privacy/
 translated_from: 2026-11-08
-last_updated: 2026-11-07
+last_updated: 2026-11-08
 title: "Datenschutzerklärung"
 seo:
   title: "EarnLock: Datenschutzerklärung, kein Tracking"
@@ -24,7 +24,7 @@ overview: >
   zu bitten. In einem Satz: EarnLock liest deine Aktivitätsdaten aus Apple Health
   und deine Auswahl gesperrter Apps nur auf dem Gerät, speichert sie nur auf dem
   Gerät und nutzt sie nur auf dem Gerät, um festzustellen, ob du dein Tagesziel
-  erreicht hast. Wir sehen nichts davon. Apples Angabe unter „App-Datenschutz“ im App Store lautet für jede Version der App „Keine Daten erfasst“.
+  erreicht hast. Wir sehen nichts davon. Apples Angabe unter „App-Datenschutz“ im App Store lautet für EarnLock „Keine Daten erfasst“.
 
 data_collection: >
   EarnLock erfasst keine personenbezogenen Daten. Die App liest drei Arten von
@@ -37,31 +37,40 @@ data_collection: >
   HealthKit-Framework selbst gibt diese Daten weder an uns noch an Dritte weiter.
   Du kannst EarnLock den Zugriff auf Health jederzeit entziehen: in der App
   „Einstellungen“ unter „Datenschutz &amp; Sicherheit“ → „Health“ → „EarnLock“.
-  (2) Family-Controls-Tokens für die Apps, die du sperren willst. Wenn du in der
-  Family-Controls-Auswahl von iOS Apps auswählst, gibt iOS EarnLock für jede
-  ausgewählte App ein anonymes Token, nicht den Namen, die Kennung oder
-  das Symbol der App. Diese Tokens liegen nur auf deinem Gerät, in einem
+  (2) Bildschirmzeit-Tokens für das, was du sperren willst. Wenn du in Apples
+  Bildschirmzeit-Auswahl Apps, Kategorien oder Websites auswählst, gibt iOS
+  EarnLock für jede Auswahl ein anonymes Token, nicht den Namen, die Kennung
+  oder das Symbol. Diese Tokens liegen nur auf deinem Gerät, in einem
   App-Group-Container, den die EarnLock-App mit ihren iOS-Erweiterungen teilt
   (Shield, Shield Action, DeviceActivityMonitor sowie die Erweiterung für
-  Live-Aktivitäten und Widgets). Die Tokens sind nach Apples Konzept nicht lesbar: Selbst EarnLock kann nicht erkennen, welche App du ausgewählt
-  hast. Die Auswahl verlässt nie das Gerät, und du kannst sie jederzeit in EarnLock löschen („Einstellungen“ → „Gesperrte Apps“ →
-  „Bearbeiten“). (3) StoreKit-Transaktionen. Wenn du ein Abo abschließt oder „Lebenslang“ als Einmalkauf erwirbst, schickt Apple EarnLock ein verifiziertes
-  Transaktionsobjekt, das nur die Produkt-ID und den Berechtigungsstatus enthält.
-  Zahlungsdaten, Name, E-Mail-Adresse oder andere personenbezogene Daten sieht
-  die App nicht. Zahlungsabwicklung, Erstattungen und Aboverwaltung übernehmen
-  vollständig Apples StoreKit und der App Store, nicht EarnLock. EarnLock schreibt
-  nur einen einzigen Ja/Nein-Wert (isPremium) in den App-Group-Container, damit
-  Widgets und die Apple-Watch-App den richtigen Zustand anzeigen.
+  Live-Aktivitäten und Widgets). Die Tokens sind nach Apples Konzept nicht
+  lesbar: Selbst EarnLock kann nicht erkennen, welche App du ausgewählt hast.
+  Die Auswahl verlässt nie das Gerät, und du kannst sie jederzeit in EarnLock
+  ändern oder löschen, unter „Einstellungen“ → „Sperrung“ → „Gesperrte Apps“.
+  (3) StoreKit-Transaktionen. Wenn du ein Abo abschließt oder „Lebenslang“ als
+  Einmalkauf erwirbst, gibt Apple EarnLock eine signierte Transaktion, die
+  angibt, welches Produkt du gekauft hast und ob es aktiv ist. Zahlungsdaten,
+  Name, E-Mail-Adresse oder andere personenbezogene Daten enthält sie nicht.
+  Zahlungsabwicklung, Erstattungen und Aboverwaltung übernehmen vollständig
+  Apples StoreKit und der App Store, nicht EarnLock. EarnLock speichert seinen
+  Premium-Status auf dem Gerät, damit die Widgets den richtigen Zustand zeigen,
+  und gibt ihn über Apples WatchConnectivity an die Apple-Watch-App von EarnLock
+  weiter.
 
 data_storage: >
   Alle EarnLock-Daten werden lokal auf deinem Gerät gespeichert, in der Sandbox
   der App und in einem App-Group-Container, den sie mit ihren iOS-Erweiterungen
   teilt. Es gibt überhaupt kein EarnLock-Backend: keine Server, keine Datenbanken,
-  keine Analyse-Pipeline. Der Verlauf deiner Serien, die Einträge im Reflexionsprotokoll, die Schätzungen eingesparter Bildschirmzeit und deine Auswahl
-  gesperrter Apps liegen in Apples Standard-Containern, die das iOS-Backup
-  einschließt, wenn du das iCloud-Backup aktiviert hast. Löschst du EarnLock von
-  deinem Gerät, werden der Container der App, der App-Group-Container und alles
-  darin entfernt.
+  keine Analyse-Pipeline. Der Verlauf deiner Serien, die Einträge im
+  Reflexionsprotokoll, die Schätzungen eingesparter Bildschirmzeit und deine
+  Auswahl gesperrter Apps liegen in Apples Standard-Containern, die das
+  iOS-Backup einschließt, wenn du das iCloud-Backup aktiviert hast. Nutzt du die
+  Apple-Watch-App, liest sie die Health-Daten auf der Watch selbst, und dein
+  iPhone schickt ihr über Apples WatchConnectivity nur deine Einstellungen und
+  deinen Premium-Status. Unter „Einstellungen“ → „Daten &amp; Datenschutz“ kannst
+  du alles, was EarnLock speichert, als eine Datei exportieren oder komplett
+  löschen. Löschst du EarnLock von deinem Gerät, werden der Container der App,
+  der App-Group-Container und alles darin entfernt.
 
 third_parties: >
   EarnLock nutzt keine Analyse-, Werbe- oder Tracking-Dienste von Drittanbietern.
@@ -99,11 +108,11 @@ refund_requests:
 
 children: >
   EarnLock ist für Erwachsene gedacht, die die App auf ihrem eigenen iPhone
-  nutzen. Die App autorisiert Apples Family-Controls-Framework nur im Modus
-  .individual, nie im Modus .child, der für die Kindersicherung bei
-  minderjährigen Mitgliedern einer Familienfreigabe gedacht ist. EarnLock ist
-  Software zur Selbstbeschränkung, niemals eine Kindersicherung. Wir erfassen
-  wissentlich keine Daten von irgendjemandem, gleich welchen Alters.
+  nutzen. Die App autorisiert Apples Family-Controls-Framework nur für dein
+  eigenes Gerät, nie in dem Modus, mit dem Eltern über die Familienfreigabe das
+  Gerät eines Kindes verwalten. EarnLock ist Software zur Selbstbeschränkung,
+  niemals eine Kindersicherung. Wir erfassen wissentlich keine Daten von
+  irgendjemandem, gleich welchen Alters.
 
 changes: >
   Ändert sich diese Datenschutzerklärung, ändert sich auch das Datum bei „Stand“

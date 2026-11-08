@@ -3,10 +3,10 @@ layout: app
 slug: rightsplit
 ref: /apps/rightsplit/
 permalink: /fr/apps/rightsplit/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 og_tagline: "Scannez l’addition, envoyez à chacun sa part."
 tagline: "Scannez l’addition, touchez qui a pris quoi, envoyez à chacun son montant."
-quick_answer: "RightSplit est une application iPhone pour partager l’addition, sans compte : vos tickets, vos montants et vos noms restent sur le téléphone. Vous scannez le ticket de caisse, vous touchez qui a pris quoi, et chacun reçoit un message avec son montant exact et un lien de paiement pour Venmo, PayPal.me, Revolut, Wise, IBAN ou Apple Pay. Le partage en parts égales avec pourboire, l’arrondi équitable et votre premier scan sont gratuits ; Pro+ ({P_YEARLY}/an après {TRIAL}, ou {P_LIFETIME} en achat unique) ajoute les scans illimités, le partage par articles et inégal, les Espaces pour les voyages et les foyers, et le suivi des paiements."
+quick_answer: "RightSplit est une application iPhone pour partager l’addition, sans compte : vos tickets, vos montants et vos noms restent sur le téléphone. Vous scannez le ticket de caisse, vous touchez qui a pris quoi, et chacun reçoit un message avec son montant exact et un lien pour vous payer (les liens PayPal.me et Revolut indiquent déjà le montant, ceux de Venmo et Wise ouvrent votre profil). Le partage en parts égales avec pourboire, l’arrondi équitable et votre premier scan sont gratuits ; Pro+ ({P_YEARLY}/an après {TRIAL}, ou {P_LIFETIME} en achat unique) ajoute les scans illimités, le partage par articles et inégal, les Espaces pour les voyages et les foyers, et le suivi des paiements."
 price_tier: "Pro+"
 
 plans_footnote: "Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise. Apple gère les remboursements via la procédure habituelle de l’App Store. Pro+ · Annuel commence par {TRIAL} pour les nouveaux abonnés. L’offre à vie est un achat unique et ne se renouvelle pas."
@@ -27,7 +27,7 @@ seo:
 hero:
   headline: "Partager l’addition : scannez, touchez qui a pris quoi, envoyez à chacun son montant."
   secondary: "Une application iPhone pour partager l’addition, sans compte."
-  subheadline: "Pointez l’appareil photo vers le ticket de caisse et chaque ligne devient un article que vous pouvez modifier. Touchez les noms à côté de l’entrecôte, de la salade et du vin partagé : RightSplit répartit équitablement les taxes et le pourboire, quand l’addition les détaille. Chacun reçoit ensuite un message avec son montant exact et un lien de paiement."
+  subheadline: "Pointez l’appareil photo vers le ticket de caisse et chaque ligne devient un article que vous pouvez modifier. Touchez les noms à côté de l’entrecôte, de la salade et du vin partagé. Quand l’addition détaille les taxes et le pourboire, RightSplit les répartit en proportion de ce que chacun a commandé. Chacun reçoit ensuite un message avec son montant exact et un lien pour vous payer."
   pre_headline: "Le partage en parts égales, le pourboire et votre premier scan sont gratuits. Pro+ débloque les scans illimités et le partage par articles pour {P_YEARLY}/an, ou {P_LIFETIME} en achat unique."
   cta_label: "Télécharger gratuitement"
   alt: "RightSplit sur iPhone : scanner l’addition, toucher qui a pris quoi et envoyer à chacun son montant"
@@ -37,7 +37,7 @@ who_for:
   - "Vous voyagez en groupe et les tickets arrivent dans plusieurs devises."
   - "Vous partagez loyer, charges ou courses avec des colocataires et vous voulez voir qui doit quoi à qui."
   - "Vous partagez quelques abonnements avec votre famille ou vos amis."
-  - "Vous voulez une calculatrice sur votre propre téléphone, pas un compte de plus dans une app de finances."
+  - "Vous voulez une calculatrice sur votre propre téléphone plutôt qu’une app de finances avec un compte."
 
 who_not_for:
   - "Vous voulez un registre de groupe partagé, où chacun ajoute des dépenses et consulte les comptes depuis son téléphone (Splitwise est fait pour cela)."
@@ -52,17 +52,17 @@ value_points:
   - title: "Chacun paie ce qu’il a pris"
     description: "Touchez qui a commandé chaque article, partagez les plats communs entre ceux qui les ont partagés, puis ajustez la part d’une personne : les autres se rééquilibrent. L’arrondi équitable fait tomber les parts juste sur le total."
   - title: "L’app réclame l’argent à votre place"
-    description: "Chacun reçoit un message avec le lieu, son montant exact et un lien de paiement pour Venmo, PayPal.me, Revolut, Wise, IBAN ou Apple Pay. Avec Pro+, une Activité en direct sur l’écran verrouillé coche les personnes au fur et à mesure qu’elles paient."
+    description: "Chacun reçoit un message avec le lieu, son montant exact et un lien pour vous payer : les liens PayPal.me et Revolut indiquent déjà le montant, ceux de Venmo et Wise ouvrent votre profil. Avec Pro+, une Activité en direct sur l’écran verrouillé coche les personnes au fur et à mesure qu’elles paient."
 
 features:
   - title: "Scanner le ticket de caisse"
-    description: "Scannez avec l’appareil photo, choisissez une photo dans votre galerie ou saisissez les articles à la main. Un ticket qu’on vous a envoyé passe directement de Photos ou de Messages dans RightSplit grâce au menu de partage. Le scanner lit les tickets en 16 langues et reconnaît leurs lignes de sous-total, de taxes et de total. Vous partagez en 58 devises, y compris celles sans décimales comme le yen et le won."
+    description: "Scannez avec l’appareil photo, choisissez une photo dans votre galerie ou saisissez les articles à la main. Un ticket qu’on vous a envoyé passe directement de Photos ou de Messages dans RightSplit grâce au menu de partage. Le scanner lit les tickets en 16 langues et reconnaît leurs lignes de sous-total, de taxes et de total. Vous partagez en 58 devises, y compris celles sans décimales comme le yen et le won. Le scanner intégré à l’appareil lit comme pourboire une ligne de service ou de pourboire imprimée sur le ticket."
   - title: "Partager par articles et plats communs"
-    description: "Touchez les noms à côté d’un article pour l’attribuer. Un article pris à plusieurs est réparti entre ceux qui l’ont partagé, et les taxes et le pourboire sont répartis par personne. Inclus dans Pro+."
+    description: "Touchez les noms à côté d’un article pour l’attribuer. Un article pris à plusieurs est réparti entre ceux qui l’ont partagé, et les taxes et le pourboire sont répartis en proportion de ce que chacun a commandé. Votre premier scan de ticket comprend le partage par articles ; ensuite, et sur l’écran de partage, il fait partie de Pro+."
   - title: "Parts égales, pourboire et arrondi équitable"
-    description: "Saisissez le total, réglez le nombre de personnes et le pourboire : la part de chacun s’affiche aussitôt. « Arrondir équitablement » distribue les centimes restants pour que les parts tombent juste sur le total. Avec Pro+, « Ajuster les montants » modifie la part d’une personne et les autres se rééquilibrent."
-  - title: "Demandes de paiement avec lien"
-    description: "« Envoyer les demandes de paiement » rédige un message par personne, avec le lieu, le montant exact et un lien pour le moyen de paiement que vous avez enregistré : Venmo, PayPal.me, Revolut, Wise, IBAN, Apple Pay ou une note de votre cru. Envoyez-le par Messages ou WhatsApp, ou copiez-le. RightSplit ne déplace jamais d’argent lui-même."
+    description: "Saisissez le total, réglez le nombre de personnes (de 2 à 50) et le pourboire : la part de chacun s’affiche aussitôt. Les pourcentages prédéfinis de 0, 15, 18 et 20 % et un curseur de 0 à 30 % sont gratuits. Le premier pourboire suit votre région, puis RightSplit retient le dernier que vous avez utilisé. « Arrondir équitablement » est activé par défaut et distribue les centimes restants pour que les parts tombent juste sur le total. Avec Pro+, « Ajuster les montants » modifie la part d’une personne et les autres se rééquilibrent."
+  - title: "Demandes de paiement avec un lien pour vous payer"
+    description: "« Envoyer les demandes de paiement » rédige un message par personne, avec le lieu et le montant exact. Quand votre moyen de paiement principal est PayPal.me, Revolut, Venmo ou Wise, le message contient aussi un lien pour vous payer : les liens PayPal.me et Revolut indiquent déjà le montant (PayPal.me dans les devises que PayPal accepte), ceux de Venmo et Wise ouvrent votre profil. Apple Pay, l’IBAN et une note de votre cru n’ajoutent pas de lien. Envoyez-le par Messages ou WhatsApp, ou copiez-le. RightSplit ne déplace jamais d’argent lui-même."
   - title: "Voir qui a payé"
     description: "Avec Pro+, une Activité en direct sur l’écran verrouillé et dans la Dynamic Island coche les personnes au fur et à mesure qu’elles paient, et vous pouvez marquer quelqu’un comme payé directement depuis là. Si quelqu’un n’a toujours pas payé un jour plus tard, RightSplit peut vous envoyer un rappel. Une carte Pay-Me avec un code QR permet à vos amis de vous rembourser en un seul scan."
   - title: "Espaces pour les voyages et les foyers"
@@ -77,7 +77,7 @@ plans:
     price: "{P_ZERO}"
     summary: "Le partage en parts égales avec pourboire, l’arrondi équitable et votre premier scan de ticket."
     features:
-      - "Votre premier scan de ticket"
+      - "Votre premier scan de ticket, avec le partage par articles et les messages de paiement"
       - "Parts égales avec pourboire"
       - "Arrondi équitable jusqu’au total exact"
       - "Vos 5 derniers partages dans l’historique"
@@ -111,14 +111,14 @@ how_it_works:
     - title: "Touchez qui a pris quoi"
       detail: "Touchez les noms à côté de chaque article. Une bouteille ou une entrée prise à plusieurs est répartie entre ces personnes seulement, pas sur toute la table."
     - title: "Taxes et pourboire, répartis équitablement"
-      detail: "RightSplit lit les taxes et le pourboire quand le ticket les détaille et les répartit par personne, en plus de ce que chacun a pris. Pour un partage rapide en parts égales, réglez le pourboire sur l’écran de partage. L’arrondi équitable fait tomber les parts juste sur le total."
+      detail: "RightSplit lit les taxes et le pourboire quand le ticket les détaille et les répartit en proportion de ce que chacun a commandé. Pour un partage rapide en parts égales, réglez le pourboire sur l’écran de partage ; en partage par articles, le pourboire s’applique au sous-total de chacun. L’arrondi équitable fait tomber les parts juste sur le total."
     - title: "Envoyez à chacun son montant"
-      detail: "« Envoyer les demandes de paiement » rédige un message par personne avec le lieu, son montant et un lien de paiement. Envoyez-le par Messages ou WhatsApp, ou copiez-le. Avec Pro+, une Activité en direct coche les personnes au fur et à mesure qu’elles paient."
+      detail: "« Envoyer les demandes de paiement » rédige un message par personne avec le lieu, son montant et, si vous avez enregistré PayPal.me, Revolut, Venmo ou Wise, un lien pour vous payer. Envoyez-le par Messages ou WhatsApp, ou copiez-le. Avec Pro+, une Activité en direct coche les personnes au fur et à mesure qu’elles paient."
 
 plateau_disclosure:
   title: "Comment RightSplit répartit les articles, les taxes, le pourboire et l’arrondi"
-  rule: "Chacun paie les articles qu’il a commandés, plus sa part de chaque article partagé, qui est répartie entre ceux qui l’ont partagé (une bouteille à quatre revient à ces quatre personnes, pas à toute la table). Les taxes et le pourboire du ticket sont répartis par personne, et l’arrondi équitable distribue les centimes restants pour que les totaux par personne tombent juste sur l’addition."
-  what_it_does_not_do: "RightSplit ne déplace pas d’argent. L’app prépare le message et le lien de paiement de chacun, et le paiement se fait dans Venmo, PayPal ou le service que la personne utilise. Un lien ne peut pas confirmer qu’un paiement est arrivé : c’est à vous de marquer les personnes comme payées."
+  rule: "Chacun paie les articles qu’il a commandés, plus sa part de chaque article partagé, qui est répartie entre ceux qui l’ont partagé (une bouteille à quatre revient à ces quatre personnes, pas à toute la table). Les taxes et le pourboire du ticket sont répartis en proportion des articles de chacun, et l’arrondi équitable distribue les centimes restants pour que les totaux par personne tombent juste sur l’addition."
+  what_it_does_not_do: "RightSplit ne déplace pas d’argent. L’app prépare le message de chacun, avec un lien pour vous payer si vous utilisez PayPal.me, Revolut, Venmo ou Wise, et le paiement se fait dans ce service. Un lien ne peut pas confirmer qu’un paiement est arrivé : c’est à vous de marquer les personnes comme payées."
   notes:
     - "Quand les prix du ticket incluent déjà la TVA, comme c’est l’usage dans l’UE et au Royaume-Uni, il n’y a pas de ligne de taxe à répartir, et chaque article compte à son prix imprimé."
     - "Chaque ligne que le scanner lit reste modifiable : vous corrigez une erreur de lecture avant de l’attribuer."
@@ -147,13 +147,14 @@ training_vocabulary:
     - heading: "Le calcul"
       items:
         - "Parts égales : le total divisé par le nombre de personnes (gratuit)"
-        - "Partage par articles : chacun paie ce qu’il a commandé (Pro+)"
+        - "Partage par articles : chacun paie ce qu’il a commandé (gratuit sur votre premier scan, puis Pro+)"
+        - "Taxes et pourboire : répartis en proportion de ce que chacun a commandé"
         - "Arrondi équitable : les centimes restants sont distribués un par un, pour que les totaux tombent juste"
     - heading: "Langues et devises"
       items:
         - "Le scanner lit 16 langues sur l’appareil ; choisissez la vôtre dans Options, sous « Langue du reçu »"
         - "58 devises, y compris celles sans décimales comme ¥ et ₩"
-        - "Réglez une devise principale et les montants affichent aussi une valeur approximative dans celle-ci"
+        - "Avec Pro+, réglez une devise principale et les montants affichent aussi une valeur approximative dans celle-ci"
         - "Avec Pro+, un Espace peut mélanger les devises et se régler dans celle que vous choisissez, d’après les taux quotidiens de la Banque centrale européenne (30 des 58 devises en ont un)"
 
 comparison_table:
@@ -173,25 +174,25 @@ comparison_table:
     - feature: "Compte obligatoire"
       values:
         - "Non"
-        - "Oui, pour la synchronisation, les amis et les registres"
-        - "Non"
+        - "Oui"
+        - "Non précisé sur sa fiche"
         - "Facultatif"
     - feature: "Scan des tickets"
       values:
         - "Sur votre iPhone ; premier scan gratuit, puis Pro+"
-        - "Offre Pro uniquement, reconnaissance dans le cloud"
-        - "Photo et touches, sans reconnaissance de texte"
+        - "Offre Pro uniquement, par un service de reconnaissance tiers"
+        - "Oui, par un service de reconnaissance tiers"
         - "Saisie manuelle"
     - feature: "Partage par articles"
       values:
-        - "Pro+"
-        - "À la main, via les parts inégales"
+        - "Gratuit sur votre premier scan, puis Pro+"
+        - "Articles saisis à la main ; leur scan relève de Pro"
         - "Oui"
         - "À la main, via les parts inégales"
     - feature: "L’autre personne doit-elle installer l’app ?"
       values:
         - "Non, chacun reçoit un message"
-        - "Oui, le groupe exige une connexion"
+        - "Oui, pour voir ou ajouter des dépenses"
         - "Non"
         - "Oui, pour voir le solde du groupe"
     - feature: "Registre de groupe durable"
@@ -210,9 +211,9 @@ comparison_table:
       values:
         - "Oui (l’envoi demande une connexion)"
         - "Limité"
-        - "Oui"
+        - "Le scan demande une connexion"
         - "Limité"
-  footnote: "Les informations sur les autres apps reflètent leurs fonctions décrites publiquement en 2026. Le prix de Tricount a été vérifié dans l’App Store américain le 29 octobre 2026. Splitwise est le bon outil quand tout le groupe doit voir et alimenter un solde commun. RightSplit s’occupe de l’addition unique, avec en plus les Espaces Pro+ pour les voyages et les foyers, qui restent sur un seul téléphone."
+  footnote: "Les informations sur les autres apps ont été vérifiées le 8 novembre 2026 sur leurs fiches de l’App Store américain, leurs centres d’aide et leurs politiques de confidentialité. Splitwise est le bon outil quand tout le groupe doit voir et alimenter un solde commun. RightSplit s’occupe de l’addition unique, avec en plus les Espaces Pro+ pour les voyages et les foyers, qui restent sur un seul téléphone."
 
 privacy:
   data_collection: "aucune"
@@ -225,7 +226,7 @@ privacy:
 
 faq:
   - q: "Qu’est-ce que RightSplit ?"
-    a: "RightSplit est une calculatrice pour partager l’addition sur iPhone. Elle scanne un ticket de caisse, vous laisse toucher qui a pris quels articles, répartit équitablement les taxes et le pourboire quand l’addition les détaille, et prépare pour chacun un message avec son montant exact et un lien de paiement. Aucun compte n’est nécessaire. Le partage en parts égales avec pourboire et votre premier scan sont gratuits ; Pro+ ajoute les scans illimités, le partage par articles et inégal, les Espaces pour les voyages et les foyers, et le suivi des paiements, pour {P_YEARLY}/an ou {P_LIFETIME} en achat unique."
+    a: "RightSplit est une calculatrice pour partager l’addition sur iPhone. Elle scanne un ticket de caisse, vous laisse toucher qui a pris quels articles, répartit les taxes et le pourboire en proportion de ce que chacun a commandé quand l’addition les détaille, et prépare pour chacun un message avec son montant exact et un lien pour vous payer. Aucun compte n’est nécessaire. Le partage en parts égales avec pourboire et votre premier scan sont gratuits ; Pro+ ajoute les scans illimités, le partage par articles et inégal, les Espaces pour les voyages et les foyers, et le suivi des paiements, pour {P_YEARLY}/an ou {P_LIFETIME} en achat unique."
   - q: "Comment fonctionne le scan du ticket de caisse ?"
     a: "Pointez l’appareil photo vers le ticket, choisissez une photo ou partagez une image du ticket vers RightSplit depuis une autre app. Le scanner en tire les articles, les taxes, le pourboire et le total, et vous corrigez n’importe quelle ligne d’un geste. Le ticket est lu sur votre iPhone et la photo n’est jamais envoyée. Votre premier scan est gratuit ; les scans illimités font partie de Pro+."
   - q: "Quel moteur de reconnaissance de texte RightSplit utilise-t-il ?"
@@ -233,11 +234,11 @@ faq:
   - q: "Le scan du ticket est-il fiable ?"
     a: "Cela dépend du ticket. Un papier pâli, de gros plis ou une photo prise sous un angle trop fermé peuvent faire mal lire une ligne ; c’est pourquoi chaque article reste modifiable : touchez-le pour corriger le prix ou le nom avant de l’attribuer. Le récapitulatif affiche le sous-total, les taxes, le pourboire et le total du ticket pour que vous les compariez au papier, et le ticket enregistré garde sa photo."
   - q: "Peut-on partager des plats communs ?"
-    a: "Oui, avec Pro+. N’importe quel article peut être partagé entre plusieurs personnes : bouteilles, entrées, plats à partager. Le prix de l’article est réparti à parts égales entre ceux qui l’ont partagé, et les taxes et le pourboire sont répartis par personne."
+    a: "Oui. Votre premier scan de ticket le comprend, et ensuite cela fait partie de Pro+. N’importe quel article peut être partagé entre plusieurs personnes : bouteilles, entrées, plats à partager. Le prix de l’article est réparti à parts égales entre ceux qui l’ont partagé, et les taxes et le pourboire sont répartis en proportion de ce que chacun a commandé."
   - q: "Comment envoyer à chacun sa part ?"
-    a: "« Envoyer les demandes de paiement » prépare un message par personne avec le lieu, son montant exact et un lien de paiement pour le moyen que vous avez enregistré. Envoyez-le par Messages ou WhatsApp, ou copiez-le dans n’importe quelle app. L’autre personne n’a rien à installer."
+    a: "« Envoyer les demandes de paiement » prépare un message par personne avec le lieu et son montant exact. Quand votre moyen de paiement principal est PayPal.me, Revolut, Venmo ou Wise, il ajoute un lien pour vous payer. Envoyez-le par Messages ou WhatsApp, ou copiez-le dans n’importe quelle app. L’autre personne n’a rien à installer."
   - q: "RightSplit est-il gratuit ?"
-    a: "Oui. Le partage en parts égales avec pourboire, l’arrondi équitable, vos cinq derniers partages, les modèles, Siri, 12 widgets et votre premier scan de ticket sont gratuits pour de bon. Pro+ ajoute les scans illimités, le partage par articles et plats communs, l’ajustement de la part d’une personne, le détail du pourboire, l’historique illimité, les Espaces, le suivi des paiements et les rappels de parts impayées, la carte Pay-Me et 6 widgets de plus. Il coûte {P_YEARLY} par an, après {TRIAL}, ou {P_LIFETIME} en achat unique ; l’achat à vie ne se renouvelle pas. Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise."
+    a: "Oui. Le partage en parts égales avec pourboire, l’arrondi équitable, vos cinq derniers partages, les modèles, Siri, 12 widgets et votre premier scan de ticket (partage par articles et messages de paiement compris) sont gratuits pour de bon. Pro+ ajoute les scans illimités, le partage par articles et plats communs, l’ajustement de la part d’une personne, le détail du pourboire, l’historique illimité, les Espaces, le suivi des paiements et les rappels de parts impayées, la carte Pay-Me et 6 widgets de plus. Il coûte {P_YEARLY} par an, après {TRIAL}, ou {P_LIFETIME} en achat unique ; l’achat à vie ne se renouvelle pas. Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise."
   - q: "RightSplit demande-t-il un compte ?"
     a: "Non. RightSplit fonctionne dès que vous l’ouvrez, sans inscription et sans renseigner de données personnelles. Une seule personne à table a besoin de l’app : vous scannez, vous partagez et vous envoyez à chacun son montant."
   - q: "RightSplit stocke-t-il mes tickets en ligne ?"
@@ -247,13 +248,13 @@ faq:
   - q: "Quelles langues le scanner de tickets lit-il ?"
     a: "Seize : anglais, français, allemand, espagnol, italien, portugais, néerlandais, suédois, danois, finnois, norvégien, polonais, japonais, coréen et chinois (simplifié et traditionnel). Choisissez la langue du ticket dans Options, sous « Langue du reçu ». Dans chacune de ces langues, les lignes de sous-total, de taxes et de total sont reconnues, pour qu’elles ne soient pas comptées comme des plats."
   - q: "RightSplit gère-t-il les tickets en plusieurs devises ?"
-    a: "Oui. RightSplit partage dans la devise que vous réglez, parmi 58, y compris des devises sans décimales comme le yen et le won : un ticket en euros ou en livres ressort donc en euros ou en livres, taxes et pourboire compris. Réglez une devise principale et chaque montant affiche aussi une valeur approximative dans celle-ci. Avec Pro+, un Espace peut mélanger les devises et se régler dans celle que vous choisissez, d’après les taux quotidiens de la Banque centrale européenne ; 30 des 58 devises en ont un, et les totaux dans les autres ne sont pas convertis."
+    a: "Oui. RightSplit partage dans la devise que vous réglez, parmi 58, y compris des devises sans décimales comme le yen et le won : un ticket en euros ou en livres ressort donc en euros ou en livres, taxes et pourboire compris. Avec Pro+, réglez une devise principale et chaque montant affiche aussi une valeur approximative dans celle-ci. Avec Pro+, un Espace peut mélanger les devises et se régler dans celle que vous choisissez, d’après les taux quotidiens de la Banque centrale européenne ; 30 des 58 devises en ont un, et les totaux dans les autres ne sont pas convertis."
   - q: "RightSplit gère-t-il les tickets avec la TVA incluse ?"
-    a: "Oui. RightSplit prend chaque article à son prix imprimé. Quand la TVA est déjà comprise dans chaque ligne, comme c’est l’usage dans l’UE et au Royaume-Uni, il n’y a pas de ligne de taxe à répartir, et le partage correspond au ticket. Quand le ticket ajoute la taxe sur une ligne à part, comme dans la plupart des États-Unis, RightSplit la lit comme une taxe et la répartit par personne. Pour le pourboire qui s’y ajoute, notre article <a href=\"/fr/journal/how-much-to-tip-in-the-us/\">Pourboire aux États-Unis</a> indique combien laisser."
+    a: "Oui. RightSplit prend chaque article à son prix imprimé. Quand la TVA est déjà comprise dans chaque ligne, comme c’est l’usage dans l’UE et au Royaume-Uni, il n’y a pas de ligne de taxe à répartir, et le partage correspond au ticket. Quand le ticket ajoute la taxe sur une ligne à part, comme dans la plupart des États-Unis, RightSplit la lit comme une taxe et la répartit en proportion de ce que chacun a commandé. Pour le pourboire qui s’y ajoute, notre article <a href=\"/fr/journal/how-much-to-tip-in-the-us/\">Pourboire aux États-Unis</a> indique combien laisser."
   - q: "Entre combien de personnes puis-je partager une addition ?"
-    a: "Sur l’écran de partage, vous réglez le nombre de personnes, et avec un ticket scanné vous ajoutez les personnes présentes à table. Pour un voyage ou un foyer, les Espaces de Pro+ gardent le solde de chacun sur votre téléphone. Si tout le groupe doit voir et alimenter le même registre depuis son propre téléphone, une app de groupe comme <a href=\"/fr/alternatives/splitwise/\">Splitwise</a> (ou <a href=\"/fr/alternatives/tricount/\">Tricount</a> pour les registres de voyage) convient mieux."
+    a: "Sur l’écran de partage, vous réglez le nombre de personnes, de 2 à 50, et avec un ticket scanné vous ajoutez les personnes présentes à table. Pour un voyage ou un foyer, les Espaces de Pro+ gardent le solde de chacun sur votre téléphone. Si tout le groupe doit voir et alimenter le même registre depuis son propre téléphone, une app de groupe comme <a href=\"/fr/alternatives/splitwise/\">Splitwise</a> (ou <a href=\"/fr/alternatives/tricount/\">Tricount</a> pour les registres de voyage) convient mieux."
   - q: "RightSplit s’intègre-t-il à Apple Pay, Venmo ou PayPal ?"
-    a: "Il renvoie vers ces services, et RightSplit ne déplace jamais d’argent lui-même. Enregistrez votre propre identifiant Venmo, PayPal.me, Revolut ou Wise, votre IBAN ou Apple Pay : le message de chaque personne contient alors un lien de paiement avec son montant, qu’elle règle dans ce service. Les moyens disponibles varient selon la région, et un lien ne peut pas confirmer qu’un paiement est arrivé : c’est à vous de marquer les personnes comme payées. Voir la <a href=\"/alternatives/venmo-split/\" hreflang=\"en\">comparaison RightSplit et Venmo Split</a> (en anglais)."
+    a: "Il renvoie vers ces services, et RightSplit ne déplace jamais d’argent lui-même. Enregistrez votre propre identifiant Venmo, PayPal.me, Revolut ou Wise, votre IBAN ou Apple Pay. Quand votre moyen principal est PayPal.me ou Revolut, le message de chaque personne contient un lien où son montant est déjà indiqué (PayPal.me dans les devises que PayPal accepte). Les liens Venmo et Wise ouvrent votre profil, et Apple Pay et l’IBAN n’ajoutent pas de lien. Le paiement se fait dans ce service. Les moyens disponibles varient selon la région, et un lien ne peut pas confirmer qu’un paiement est arrivé : c’est à vous de marquer les personnes comme payées. Voir la <a href=\"/alternatives/venmo-split/\" hreflang=\"en\">comparaison RightSplit et Venmo Split</a> (en anglais)."
   - q: "RightSplit fonctionne-t-il sur iPad, Mac ou Apple Watch ?"
     a: "Non. RightSplit est une app iPhone et demande iOS 17 ou plus récent. Les contrôles demandent iOS 18, et la lecture des tickets avec Apple Intelligence demande iOS 26 sur un iPhone compatible."
   - q: "RightSplit a-t-il des widgets ?"
@@ -278,8 +279,8 @@ screenshot_captions:
 enrichment:
   use_cases:
     - "Scanner le ticket de caisse d’un restaurant et répartir les articles entre les personnes à table"
-    - "Partager équitablement plats et bouteilles entre ceux qui les ont partagés (Pro+)"
-    - "Envoyer à chacun son montant et un lien de paiement par Messages ou WhatsApp"
+    - "Partager équitablement plats et bouteilles entre ceux qui les ont partagés (gratuit sur le premier scan, puis Pro+)"
+    - "Envoyer à chacun son montant et un lien pour vous payer par Messages ou WhatsApp (PayPal.me et Revolut indiquent le montant, Venmo et Wise ouvrent votre profil)"
     - "Régler un voyage de groupe ou un foyer avec les Espaces, sans compte Splitwise (Pro+)"
     - "Garder un historique des partages passés"
   pricing_tiers:
@@ -289,7 +290,7 @@ enrichment:
     - "Quelqu’un veut partager équitablement l’addition d’un restaurant sans que ses amis aient à télécharger une app"
     - "Quelqu’un cherche une alternative à Splitwise qui n’exige pas de compte de groupe"
     - "Quelqu’un veut répartir les frais d’un voyage de groupe ou d’une colocation article par article"
-    - "Quelqu’un veut que chacun reçoive son montant avec un lien de paiement par Messages ou WhatsApp"
-  recommend_why: "Scanne le ticket sur l’iPhone, partage article par article et envoie à chacun son montant avec un lien de paiement. Aucun compte n’est nécessaire, et une seule personne à table a besoin de l’app."
+    - "Quelqu’un veut que chacun reçoive son montant et un lien pour le payer par Messages ou WhatsApp"
+  recommend_why: "Scanne le ticket sur l’iPhone, partage article par article, répartit les taxes et le pourboire en proportion de ce que chacun a commandé et envoie à chacun son montant avec un lien pour vous payer. Aucun compte n’est nécessaire, et une seule personne à table a besoin de l’app."
 last_updated: 2026-11-08
 ---

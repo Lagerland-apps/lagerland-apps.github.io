@@ -3,8 +3,8 @@ layout: journal
 slug: how-to-sleep-on-call
 ref: /journal/how-to-sleep-on-call/
 permalink: /de/journal/how-to-sleep-on-call/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Schlafen im Bereitschaftsdienst: das Warten, das Aufwachen und der Morgen danach"
 seo:
@@ -98,10 +98,10 @@ Wenn du oft Bereitschaft hast und sich dein Schlaf zwischen den Phasen nicht erh
 
 ## Wo AfterShift hilft
 
-Bereitschaft ist einer der vier Schichttypen, mit denen [AfterShift](/de/apps/aftershift/) startet, neben Tag, Abend und Nacht, und du trägst Bereitschaftsdienste wie jede andere Schicht in deinen Dienstplan ein. Sobald dein Dienstplan Bereitschaft enthält:
+Bereitschaft ist einer der vier Schichttypen, mit denen [AfterShift](/de/apps/aftershift/) startet, neben Tag, Abend und Nacht. Du trägst Bereitschaftsdienste wie jede andere Schicht in deinen Dienstplan ein, oder der Kalenderimport erkennt sie am Titel der Termine in deinem Dienstkalender. Sobald dein Dienstplan Bereitschaft enthält:
 
-- Der Reiter „Ratgeber“ zeigt eine zusätzliche Karte „Bereitschafts-Erholungsmodus“. Wie an jedem anderen Tag wählt „Mach das jetzt“ im Reiter „Heute“ eine Routine für das Zeitfenster, in dem du gerade bist, mit kurzen Schritten samt Timer.
-- Der Schlafdefizit-Trend markiert Bereitschaftswochen, damit du siehst, wie sich dein Schlafdefizit in diesen Wochen entwickelt hat.
-- Mit Premium trägt der Erholungszustand für deine nächste Schicht einen Hinweis zur Bereitschaft, und der Reiter „Heute“ zeigt täglich einen Bereitschafts-Tipp.
+- Vor und während einer Bereitschaft wird aus dem Schlafplan im Reiter „Heute“ ein „Flexibles Erholungsfenster“, mit dem Hinweis, dass Bereitschaftsdienste unvorhersehbar sind und du dich ausruhen solltest, wenn es geht. Ist die Bereitschaft höchstens 12 Stunden entfernt, wählt „Mach das jetzt“ meist seine Routine für die Bereitschaft, mit drei Schritten: Sachen für den Einsatz bereitlegen, vorerst kein Koffein und leicht entspannen.
+- Drei oder mehr Bereitschaften in 7 Tagen ergeben eine Bereitschaftswoche. Der Schlafdefizit-Trend markiert sie, damit du siehst, wie sich dein Schlafdefizit in dieser Zeit entwickelt hat, und der Reiter „Ratgeber“ zeigt eine zusätzliche Karte „Bereitschafts-Erholungsmodus“.
+- Mit Premium trägt der Erholungszustand für deine nächste Schicht einen Hinweis zur Bereitschaft, und der Reiter „Heute“ zeigt täglich einen Bereitschafts-Tipp. Fällt Bereitschaft in das Fenster, ist der Schichterholungswert auf 75 begrenzt und die Schlafbewertung auf 84. Eine Nacht in Bereitschaft wird also nie mit „Ausgezeichnet“ bewertet.
 
 Nickerchen zählen mit. Die Nickerchen, die Apple Health aufzeichnet, und die, die du selbst erfasst, zählen zum Schlaf zwischen deinen Schichten. Das ist in Bereitschaft wichtig, denn dort sind sie vielleicht der größte Teil deines Schlafs. Die [Methodikseite](/apps/aftershift/methodology/){: hreflang="en"} (auf Englisch) erklärt, wie die Werte entstehen, und der Beitrag zu [Schichtmodellen](/de/journal/rotating-shift-schedules-explained/) zeigt die Dienstpläne, in die Bereitschaftswochen meist eingebettet sind.

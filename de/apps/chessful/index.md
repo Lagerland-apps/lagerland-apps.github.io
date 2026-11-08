@@ -5,7 +5,7 @@ ref: /apps/chessful/
 permalink: /de/apps/chessful/
 translated_from: 2026-11-08
 tagline: "Schach, das dir deine Fehler erklärt und dich dann daran trainieren lässt."
-quick_answer: "Chessful ist eine Schach-App zum Lernen und Analysieren für iPhone, iPad und Mac: Stockfish prüft jeden Zug deiner Partien direkt auf dem Gerät, jeder Fehler wird in klaren Worten passend zu deinem Niveau erklärt, und aus deinen Fehlern entstehen die Aufgaben für dein tägliches Training. Die App passt für Einsteiger wie für Fortgeschrittene, mit 156 kostenlosen Lektionen, 15.000 Aufgaben in 53 Themen, 96 Endspielen, 40 Gegnern von 400 bis 2400 Elo und PGN-Import für deine Partien von Chess.com oder Lichess. Kostenlos gibt es tägliche Limits (2 Analysen, 3 Aufgaben und 2 Coach-Hinweise pro Tag); Premium kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig, und beide Abos kannst du zuerst {TRIAL}. Ein Konto brauchst du nicht, und die App hat weder Werbung noch Analyse-Tools oder Tracking."
+quick_answer: "Chessful ist eine Schach-App zum Lernen und Analysieren für iPhone, iPad und Mac: Stockfish prüft jeden Zug deiner Partien direkt auf dem Gerät, jeder Fehler wird in klaren Worten passend zu deinem Niveau erklärt, und aus deinen Fehlern entstehen die Aufgaben für dein tägliches Training. Die App passt für Einsteiger wie für Fortgeschrittene, mit 156 kostenlosen Lektionen, 15.000 Aufgaben in 53 Themen, 96 Endspielen, 40 Gegnern von 400 bis 2400 Elo und PGN-Import für deine Partien von Chess.com oder Lichess. Kostenlos gibt es tägliche Limits (2 Analysen, 3 Aufgaben und 2 Coach-Hinweise pro Tag); Pro kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig, und beide Abos kannst du zuerst {TRIAL}. Ein Konto brauchst du nicht, und die App hat weder Werbung noch Analyse-Tools oder Tracking."
 
 seo:
   title: "Schach lernen: App mit Partieanalyse | Chessful"
@@ -20,6 +20,7 @@ seo:
     - schach app offline
     - stockfish iphone
 
+price_tier: "Pro"
 plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, auf dem normalen Erstattungsweg im App Store. „Lebenslang“ ist ein Einmalkauf ohne automatische Verlängerung. Alle drei bezahlten Varianten unterstützen die Familienfreigabe. Universal Purchase: Ein Kauf gilt auf iPhone, iPad und Mac."
 
 plans:
@@ -34,9 +35,9 @@ plans:
       - "PGN-Import deiner Partien von Chess.com oder Lichess"
       - "Das erste Endspiel jeder der 7 Kategorien"
       - "Geschätzte Wertung, Fähigkeitsbalken, Wertungsverlauf und 59 Erfolge"
-  - name: "Premium · Monatlich"
+  - name: "Pro · Monatlich"
     price: "{P_MONTHLY}/Monat"
-    summary: "Das volle Premium mit monatlicher Abrechnung. Jederzeit kündbar."
+    summary: "Alle Pro-Funktionen mit monatlicher Abrechnung. Jederzeit kündbar."
     features:
       - "Unbegrenzt Partieanalysen, Aufgaben und Coach-Hinweise"
       - "Alle 40 Gegner, bis 2400 Elo"
@@ -44,18 +45,18 @@ plans:
       - "Dein komplettes Eröffnungsrepertoire mit Engine-Korrektur und Variantentraining"
       - "Wochenvergleich und Schwächentrends"
       - "{TRIAL} · jederzeit kündbar"
-  - name: "Premium · Jährlich"
+  - name: "Pro · Jährlich"
     price: "{P_YEARLY}/Jahr"
-    summary: "Dieselben Premium-Funktionen, einmal im Jahr abgerechnet. Etwa {SAVE_YEARLY} % günstiger als monatlich."
+    summary: "Dieselben Pro-Funktionen, einmal im Jahr abgerechnet. Etwa {SAVE_YEARLY} % günstiger als monatlich."
     features:
-      - "Alles aus Premium · Monatlich"
+      - "Alles aus Pro · Monatlich"
       - "Übers Jahr etwa {SAVE_YEARLY} % günstiger als monatlich"
       - "{TRIAL} · jederzeit kündbar"
   - name: "Lebenslang"
     price: "{P_LIFETIME} einmalig"
-    summary: "Alle Premium-Funktionen für eine einzige Zahlung."
+    summary: "Alle Pro-Funktionen für eine einzige Zahlung."
     features:
-      - "Alles aus Premium · Jährlich"
+      - "Alles aus Pro · Jährlich"
       - "Einmalkauf, keine Verlängerung"
       - "Universal Purchase für iPhone, iPad und Mac"
       - "Wird auf jedem Gerät wiederhergestellt, das mit demselben Apple Account angemeldet ist"
@@ -102,7 +103,7 @@ founder:
 
 value_points:
   - title: "Versteh, warum du verloren hast"
-    description: "Nach einer Partie prüft Stockfish jeden Zug auf deinem Gerät und bewertet ihn von Brillant bis Patzer. Zu jedem Fehler siehst du deinen Zug, den besseren Zug, warum der bessere Zug funktioniert und die Variante, die deinen Zug bestraft."
+    description: "Nach einer Partie prüft Stockfish jeden Zug auf deinem Gerät und bewertet ihn vom besten Zug bis zum Patzer. Zu jedem Fehler siehst du deinen Zug, den besseren Zug, warum der bessere Zug funktioniert und die Variante, die deinen Zug bestraft."
   - title: "Trainier deine eigenen Fehler"
     description: "„Heutiges Training“ macht aus den Fehlern deiner analysierten Partien eine Einheit von 5, 10 oder 15 Minuten. „Frühere Fehler wiederholen“ holt verpasste Aufgaben mit verteilter Wiederholung zurück, bis sie sitzen."
   - title: "Fang beim ersten Zug an"
@@ -112,23 +113,23 @@ value_points:
 
 features:
   - title: "Spielbericht mit Stockfish auf dem Gerät"
-    description: "Stockfish prüft jeden Zug einer Partie und zeigt dir die Genauigkeit, die Schlüsselmomente und eine Bewertung jedes Zugs von Brillant bis Patzer. Die beste Variante der Engine gehst du Zug für Zug durch. Kostenlos sind 2 Analysen pro Tag möglich, mit Premium unbegrenzt viele."
+    description: "Stockfish prüft jeden Zug einer Partie und zeigt dir die Genauigkeit, die Schlüsselmomente und eine Bewertung jedes Zugs vom besten Zug bis zum Patzer. Die beste Variante der Engine gehst du Zug für Zug durch. Kostenlos sind 2 Analysen pro Tag möglich, mit Pro unbegrenzt viele."
   - title: "Jeder Fehler erklärt"
     description: "Jede Fehlerkarte zeigt „Dein Zug“ und „Besser wäre“, wie stark die Bewertung gefallen ist und in klaren Worten, warum. Dazu spielt sie die Variante vor, die deinen Zug bestraft. Fehler werden in 10 Typen eingeordnet, etwa „Hängende Figur“, „Gabel verpasst“, „Fesselung verpasst“ und „Endspiel-Fehler“, und „Dieses Muster trainieren“ bringt dich direkt zur passenden Übung."
   - title: "Partien von Chess.com und Lichess importieren"
-    description: "Exportiere eine PGN-Datei von einer der beiden Seiten und öffne sie in Chessful, oder füge den PGN-Text ein. Ein Import nimmt bis zu 500 Partien auf, markiert Duplikate und lässt dich wählen, mit welcher Farbe du gespielt hast. Ein Konto musst du nicht verknüpfen; die Datei genügt."
+    description: "Exportiere eine PGN-Datei von einer der beiden Seiten und öffne sie in Chessful, oder füge den PGN-Text ein. Ein Import nimmt bis zu 2.000 Partien auf, markiert Duplikate und lässt dich wählen, mit welcher Farbe du gespielt hast. „Alle analysieren“ prüft danach jede Partie, die du noch nicht analysiert hast, eine nach der anderen; kostenlos endet das bei 2 pro Tag. „Alle analysieren“ prüft danach jede Partie, die du noch nicht analysiert hast, eine nach der anderen; kostenlos endet das bei 2 pro Tag. Ein Konto musst du nicht verknüpfen; die Datei genügt."
   - title: "Tägliches Training aus deinen Fehlern"
     description: "„Heutiges Training“ wählt einen Schwerpunkt (Taktik, Verteidigung, Positionierung, Endspiel oder Eröffnungen) und baut aus deinen eigenen Partien eine Einheit mit 3, 5 oder 8 Aufgaben. Verpasst du eine, spielst du den richtigen Zug selbst; liegst du unter 70 %, bietet die App an, die verpassten Aufgaben noch einmal zu üben."
   - title: "15.000 Aufgaben in 53 Themen"
     description: "Eine Taktiksammlung aus der offenen Aufgabendatenbank von Lichess, von Gabeln und Fesselungen bis zu benannten Mattbildern. Jede Aufgabe wurde mit einer Engine geprüft, die Schwierigkeit richtet sich nach deiner Aufgabenwertung, und alles funktioniert offline."
   - title: "96 Endspiele gegen Stockfish in voller Stärke"
-    description: "Spiel Lucena, Philidor, Vančura und mehr in 7 Kategorien, von grundlegenden Mattführungen bis zu klassischen Studien. Die erste Stellung jeder Kategorie ist kostenlos; Premium öffnet alle 96."
+    description: "Spiel Lucena, Philidor, Vančura und mehr in 7 Kategorien, von grundlegenden Mattführungen bis zu klassischen Studien. Die erste Stellung jeder Kategorie ist kostenlos; Pro öffnet alle 96."
   - title: "40 Gegner von 400 bis 2400 Elo"
     description: "Arbeite dich durch eine Rangliste benannter Gegner in 8 Stufen hoch, von Pebble bis zum Großmeister, jeder mit eigenem Spielstil, eigenen Stärken und Schwächen. Spiel auf einem 2D-Brett oder einem 3D-Brett aus Holz. Du steckst auf dem 2D-Brett mitten in der Partie fest? Dann frag den Coach nach dem besten Zug oder nach der Bewertung jedes legalen Zugs."
   - title: "Dein Eröffnungsrepertoire"
-    description: "Chessful liest deine analysierten Partien und zeigt dir die Eröffnungen, die du am häufigsten spielst, wie du in jeder abschneidest und wo du die Theorie verlässt. Premium ergänzt den kompletten Zugbaum, Korrekturen der Engine und Übungen für die Varianten, die du immer wieder falsch spielst."
+    description: "Chessful liest deine analysierten Partien und zeigt dir die Eröffnungen, die du am häufigsten spielst, wie du in jeder abschneidest und wo du die Theorie verlässt. Pro ergänzt den kompletten Zugbaum, Korrekturen der Engine und Übungen für die Varianten, die du immer wieder falsch spielst."
   - title: "Fortschritt, den du lesen kannst"
-    description: "Verfolge eine geschätzte Wertung, fünf Fähigkeitsbalken, deinen Wertungsverlauf und 59 Erfolge, auf Wunsch mit Bestenlisten in Game Center. Premium ergänzt Wochenvergleich und Schwächentrends. Die Wertung ist eine eigene Schätzung von Chessful und keine Wertung von FIDE, Chess.com oder Lichess."
+    description: "Verfolge eine geschätzte Wertung, fünf Fähigkeitsbalken, deinen Wertungsverlauf und 59 Erfolge, auf Wunsch mit Bestenlisten in Game Center. Pro ergänzt Wochenvergleich und Schwächentrends. Die Wertung ist eine eigene Schätzung von Chessful und keine Wertung von FIDE, Chess.com oder Lichess."
   - title: "iPhone, iPad und Mac"
     description: "Ein Universal-Purchase-Kauf gilt für alle drei. Auf einem Mac mit Apple Chip bekommst du Menübefehle und Tastaturkurzbefehle für neue Partien, Züge und das Kopieren von FEN oder PGN. Deine Partien bleiben auf dem Gerät, auf dem du sie gespielt hast."
 
@@ -138,15 +139,15 @@ how_it_works:
     - title: "Spiel eine Partie oder importier eine"
       detail: "Spiel gegen einen der 40 Gegner in der App oder importier deine Partien von Chess.com oder Lichess aus einer PGN-Datei. Importierte Partien kannst du später bearbeiten oder löschen."
     - title: "Stockfish prüft jeden Zug"
-      detail: "Stockfish läuft auf deinem iPhone, iPad oder Mac und bewertet jeden Zug der Partie. Du siehst deine Genauigkeit, die Schlüsselmomente und eine Bewertung jedes Zugs von Brillant bis Patzer."
+      detail: "Stockfish läuft auf deinem iPhone, iPad oder Mac und bewertet jeden Zug der Partie. Du siehst deine Genauigkeit, die Schlüsselmomente und eine Bewertung jedes Zugs vom besten Zug bis zum Patzer."
     - title: "Jeder Fehler wird erklärt"
       detail: "Zu jedem Fehler bekommst du deinen Zug, den besseren Zug, wie stark die Bewertung gefallen ist, eine Erklärung in klaren Worten für dein Coaching-Level und die Variante, die deinen Zug bestraft. Jeder Fehler bekommt einen von 10 Fehlertypen."
     - title: "Aus deinen Fehlern wird das heutige Training"
-      detail: "„Heutiges Training“ baut aus den Fehlern deiner analysierten Partien eine Einheit mit einem Schwerpunkt. Du wählst 5, 10 oder 15 Minuten. Kostenlos sind 3 Aufgaben pro Tag möglich, mit Premium unbegrenzt viele."
+      detail: "„Heutiges Training“ baut aus den Fehlern deiner analysierten Partien eine Einheit mit einem Schwerpunkt. Du wählst 5, 10 oder 15 Minuten. Kostenlos sind 3 Aufgaben pro Tag möglich, mit Pro unbegrenzt viele."
     - title: "Die Wiederholung holt Verpasstes zurück"
       detail: "„Frühere Fehler wiederholen“ plant die Aufgaben, die du falsch gelöst hast, mit verteilter Wiederholung ein, damit sie wiederkommen, bis du sie löst. Diese Wiederholungen zählen nicht zu den kostenlosen Aufgaben des Tages."
     - title: "Der Fortschritt zeigt, was sich ändert"
-      detail: "Deine geschätzte Wertung und die fünf Fähigkeitsbalken (Taktik, Verteidigung, Positionierung, Endspiel und Eröffnungen) aktualisieren sich, während du spielst, analysierst und trainierst. Premium ergänzt Wochenvergleich und Schwächentrends."
+      detail: "Deine geschätzte Wertung und die fünf Fähigkeitsbalken (Taktik, Verteidigung, Positionierung, Endspiel und Eröffnungen) aktualisieren sich, während du spielst, analysierst und trainierst. Pro ergänzt Wochenvergleich und Schwächentrends."
 
 example_insights:
   anchor: "templates"
@@ -180,9 +181,9 @@ comparison_table:
     - feature: "Analyse funktioniert offline"
       values: ["Ja, Stockfish läuft auf dem Gerät", "Nein, Analyse in der Cloud", "Überwiegend Cloud", "Nein, Cloud", "Ja, Stockfish auf dem Gerät"]
     - feature: "Konto nötig"
-      values: ["Kein Konto", "Ja", "Optional, aber erwartet", "Ja (Chess.com)", "Kein Konto"]
+      values: ["Kein Konto", "Ja", "Optional, aber erwartet", "Eigene Anmeldung", "Kein Konto"]
     - feature: "Tägliches Analyse-Limit"
-      values: ["Kostenlos 2 Partien pro Tag; Premium unbegrenzt", "Kostenlos 1 Game Review pro Tag; im Abo unbegrenzt", "Unbegrenzt (kostenlos)", "Lektionen statt Analyse", "Unbegrenzt (Pro)"]
+      values: ["Kostenlos 2 Partien pro Tag; Pro unbegrenzt", "Kostenlos 1 Game Review pro Tag; im Abo unbegrenzt", "Unbegrenzt (kostenlos)", "Lektionen statt Analyse", "Unbegrenzt (Pro)"]
     - feature: "Fehler in klaren Worten erklärt"
       values: ["Ja, jeder Fehler, passend zu deinem Niveau", "Centipawn-Varianten + Game Review (kostenpflichtig)", "Centipawn-Varianten + Kommentare der Community", "Lektionen statt Auswertung jeder Partie", "Ja, Sätze im Partiebericht"]
     - feature: "Training aus deinen Partien"
@@ -194,10 +195,10 @@ comparison_table:
     - feature: "Lebenslang / Einmalkauf"
       values: ["{P_LIFETIME} einmalig", "Nur Abo", "Kostenlos / Spenden", "Lebenslang als Einmalkauf, sonst Abo", "Pro als Einmalkauf"]
     - feature: "Datenschutz: kein Tracking, keine Drittanbieter-SDKs"
-      values: ["Keine Werbung, keine Analyse-Tools, kein Tracking, keine Drittanbieter-SDKs", "Übliche Analyse- und Werbe-SDKs", "Keine Werbung, wenig Analyse", "Übliche Analyse von Chess.com", "Wenig, keine Werbung in Pro"]
+      values: ["Keine Werbung, keine Analyse-Tools, kein Tracking, keine Drittanbieter-SDKs", "Übliche Analyse- und Werbe-SDKs", "Keine Werbung, wenig Analyse", "Tracking von Standort, Kontaktdaten, Kennungen und Nutzung (App-Store-Angaben)", "Wenig, keine Werbung in Pro"]
     - feature: "Plattformen"
-      values: ["iPhone + iPad + Mac (Universal Purchase)", "Web + iPhone + iPad + Mac + Android", "Web + iPhone + iPad + Android", "iPhone + iPad + Mac + Vision", "Vor allem Android; iOS eingeschränkt"]
-  footnote: "Die Angaben zu den anderen Apps stammen von ihrer öffentlichen Website und ihrem App-Store-Eintrag, Stand 13. Mai 2026. Preise und Funktionen ändern sich oft, prüf sie also vor einem Wechsel."
+      values: ["iPhone + iPad + Mac (Universal Purchase)", "Web + iPhone + iPad + Mac + Android", "Web + iPhone + iPad + Android", "iPhone (auch Mac mit Apple Silicon + Vision Pro)", "Android; nicht mehr im US-App-Store"]
+  footnote: "Die Angaben zu den anderen Apps stammen von ihrer öffentlichen Website und ihrem App-Store-Eintrag, Stand 13. Mai 2026; die Zellen zu Konto, Datenschutz und Plattformen von Magnus Trainer und zu den Plattformen von Chessis wurden am 8. November 2026 erneut geprüft. Preise und Funktionen ändern sich oft, prüf sie also vor einem Wechsel."
 
 screenshot_captions:
   - alt: "Spielbericht in Chessful auf dem iPhone mit Genauigkeit und Schlüsselmomenten"
@@ -221,11 +222,11 @@ faq:
   - q: "Was ist Chessful?"
     a: "Chessful ist eine Schach-App zum Lernen und Analysieren für iPhone, iPad und Mac. Stockfish prüft jeden Zug deiner Partien direkt auf dem Gerät, jeder Fehler wird in klaren Worten passend zu deinem Niveau erklärt, und aus deinen Fehlern entstehen die Aufgaben für dein tägliches Training. Dazu kommen 156 Lektionen, 15.000 Aufgaben in 53 Themen, 96 Endspiele zum Ausspielen, ein Eröffnungsrepertoire aus deinen Partien und 40 Gegner von 400 bis 2400 Elo."
   - q: "Kann ich meine Partien von Chess.com oder Lichess importieren?"
-    a: "Ja, als PGN-Datei. Exportiere deine Partien von Chess.com oder Lichess und öffne die Datei in Chessful über Dateien, iCloud Drive oder AirDrop, oder füge den PGN-Text ein. Ein Import nimmt bis zu 500 Partien auf, markiert Duplikate und lässt dich wählen, mit welcher Farbe du gespielt hast. Chessful verbindet sich mit keiner der beiden Seiten und lädt keine Partien über deinen Benutzernamen. Importieren ist unbegrenzt; die Analyse importierter Partien zählt zu den 2 kostenlosen Analysen pro Tag."
+    a: "Ja, als PGN-Datei. Exportiere deine Partien von Chess.com oder Lichess und öffne die Datei in Chessful über Dateien, iCloud Drive oder AirDrop, oder füge den PGN-Text ein. Ein Import nimmt bis zu 2.000 Partien auf, markiert Duplikate und lässt dich wählen, mit welcher Farbe du gespielt hast. Chessful verbindet sich mit keiner der beiden Seiten und lädt keine Partien über deinen Benutzernamen. Importieren ist unbegrenzt; die Analyse importierter Partien zählt zu den 2 kostenlosen Analysen pro Tag."
   - q: "Ist Chessful eine Schach-App für Anfänger?"
     a: "Ja. Im Tab „Lernen“ gibt es 156 kostenlose Lektionen in sieben Abschnitten. Sie beginnen mit dem Brett selbst und den Zügen der Figuren und gehen weiter mit Mattbildern, Taktik, Eröffnungen, Endspielen, Denken und Strategie. Stellst du dein Coaching-Level auf „Ich lerne gerade die Regeln“, sind auch die Fehlererklärungen für dieses Niveau formuliert. Wer die Regeln schon kennt, kann direkt Partien spielen und analysieren."
   - q: "Hat Chessful Schachaufgaben?"
-    a: "Ja, zwei Arten. Die Taktiksammlung hat 15.000 Aufgaben in 53 Themen, von Gabeln und Fesselungen bis zu benannten Mattbildern, aus der offenen Aufgabendatenbank von Lichess und mit einer Engine geprüft. „Heutiges Training“ ergänzt Aufgaben aus den Fehlern deiner eigenen Partien. Kostenlos sind 3 Aufgaben pro Tag für beides zusammen möglich; das Wiederholen früherer Fehler zählt nicht dazu. Mit Premium ist alles unbegrenzt."
+    a: "Ja, zwei Arten. Die Taktiksammlung hat 15.000 Aufgaben in 53 Themen, von Gabeln und Fesselungen bis zu benannten Mattbildern, aus der offenen Aufgabendatenbank von Lichess und mit einer Engine geprüft. „Heutiges Training“ ergänzt Aufgaben aus den Fehlern deiner eigenen Partien. Kostenlos sind 3 Aufgaben pro Tag für beides zusammen möglich; das Wiederholen früherer Fehler zählt nicht dazu. Mit Pro ist alles unbegrenzt."
   - q: "Was unterscheidet Chessful von Chess.com oder Lichess?"
     a: "Chess.com und Lichess sind Online-Plattformen, auf denen du gegen andere Menschen spielst. Chessful ist eine Trainings-App: Du spielst gegen die 40 eingebauten Gegner oder importierst deine Partien von beiden Seiten als PGN, Stockfish analysiert sie auf deinem Gerät, jeder Fehler wird in Worten erklärt, und dein Training entsteht aus genau diesen Fehlern. Ein Konto gibt es nicht. Online-Partien hat Chessful nicht, du kannst also dein Konto bei Chess.com oder Lichess für Partien gegen Menschen behalten und diese Partien mit Chessful auswerten."
   - q: "Was unterscheidet Chessful von Magnus Trainer?"
@@ -233,17 +234,17 @@ faq:
   - q: "Was unterscheidet Chessful von Chessis?"
     a: "Beide analysieren Partien mit Stockfish auf dem Gerät und erklären Fehler in Sätzen. Chessful ergänzt das Training rund um die Analyse: tägliche Einheiten aus deinen Fehlern, Wiederholung verpasster Aufgaben, 156 Lektionen, 15.000 Aufgaben, 96 Endspiele und 40 Gegner zum Spielen, mit einem Universal-Purchase-Kauf für iPhone, iPad und Mac."
   - q: "Funktioniert Chessful offline?"
-    a: "Ja, für alles, was mit Schach zu tun hat. Spielen, Stockfish-Analyse, Lektionen, die Aufgabensammlung, Endspiele und Eröffnungen laufen mit Inhalten und einer Engine, die in der App enthalten sind. Premium kaufen oder wiederherstellen, Preise laden und Game Center brauchen eine Verbindung."
+    a: "Ja, für alles, was mit Schach zu tun hat. Spielen, Stockfish-Analyse, Lektionen, die Aufgabensammlung, Endspiele und Eröffnungen laufen mit Inhalten und einer Engine, die in der App enthalten sind. Pro kaufen oder wiederherstellen, Preise laden und Game Center brauchen eine Verbindung."
   - q: "Welche Schach-Engine nutzt Chessful?"
     a: "Stockfish mit NNUE, fest in die App eingebaut. Die Engine läuft auf deinem iPhone, iPad oder Mac. Der Spielbericht bewertet jeden Zug deiner Partie, und im Endspieltrainer spielt Stockfish in voller Stärke gegen dich. Chessful erklärt dann jeden Fehler in klaren Worten."
-  - q: "Ist Chessful kostenlos, und was kostet Premium?"
-    a: "Chessful lädst du kostenlos, mit täglichen Limits: 2 Partieanalysen, 3 Aufgaben und 2 Coach-Hinweise pro Tag, die ersten 10 Gegner und das erste Endspiel jeder Kategorie. Alle 156 Lektionen, jede Fehlererklärung, der PGN-Import und die Fortschrittsanzeige sind kostenlos. Premium hebt die täglichen Limits auf und schaltet alle 40 Gegner, alle 96 Endspiele, das komplette Eröffnungsrepertoire mit Variantentraining sowie Wochenvergleich und Schwächentrends frei. Premium kostet {P_MONTHLY}/Monat oder {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig für lebenslangen Zugang. Beide Abos kannst du zuerst {TRIAL}. Die Familienfreigabe ist enthalten. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+  - q: "Ist Chessful kostenlos, und was kostet Chessful Pro?"
+    a: "Chessful lädst du kostenlos, mit täglichen Limits: 2 Partieanalysen, 3 Aufgaben und 2 Coach-Hinweise pro Tag, die ersten 10 Gegner und das erste Endspiel jeder Kategorie. Alle 156 Lektionen, jede Fehlererklärung, der PGN-Import und die Fortschrittsanzeige sind kostenlos. Pro hebt die täglichen Limits auf und schaltet alle 40 Gegner, alle 96 Endspiele, das komplette Eröffnungsrepertoire mit Variantentraining sowie Wochenvergleich und Schwächentrends frei. Pro kostet {P_MONTHLY}/Monat oder {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig für lebenslangen Zugang. Beide Abos kannst du zuerst {TRIAL}. Die Familienfreigabe ist enthalten. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
   - q: "Zeigt Chessful, ob ich besser werde?"
-    a: "Ja. Der Fortschritt zeigt eine geschätzte Wertung, den Wertungsverlauf, Partiestatistiken, fünf Fähigkeitsbalken (Taktik, Verteidigung, Positionierung, Endspiel und Eröffnungen), eine Aktivitätsansicht und 59 Erfolge, alles kostenlos. Premium ergänzt Wochenvergleich und Schwächentrends. Die Wertung ist eine eigene Schätzung von Chessful und keine Wertung von FIDE, Chess.com oder Lichess."
+    a: "Ja. Der Fortschritt zeigt eine geschätzte Wertung, den Wertungsverlauf, Partiestatistiken, fünf Fähigkeitsbalken (Taktik, Verteidigung, Positionierung, Endspiel und Eröffnungen), eine Aktivitätsansicht und 59 Erfolge, alles kostenlos. Pro ergänzt Wochenvergleich und Schwächentrends. Die Wertung ist eine eigene Schätzung von Chessful und keine Wertung von FIDE, Chess.com oder Lichess."
   - q: "Brauche ich für Chessful ein Konto?"
     a: "Nein. Es gibt keine Registrierung und kein Chessful-Konto. Deine Partien, Analysen und dein Trainingsverlauf werden auf deinem Gerät gespeichert. Game Center ist optional, und Käufe laufen über deinen Apple Account."
   - q: "Werden meine Partien zwischen iPhone, iPad und Mac synchronisiert?"
-    a: "Nein. Jedes Gerät speichert seine eigenen Partien und seinen eigenen Fortschritt, eine iCloud-Synchronisierung hat Chessful nicht. Dein Premium-Kauf gilt aber überall: Universal Purchase deckt iPhone, iPad und Mac ab, und „Käufe wiederherstellen“ holt ihn auf jedes Gerät zurück, das mit demselben Apple Account angemeldet ist."
+    a: "Nein. Jedes Gerät speichert seine eigenen Partien und seinen eigenen Fortschritt, eine iCloud-Synchronisierung hat Chessful nicht. Dein Pro-Kauf gilt aber überall: Universal Purchase deckt iPhone, iPad und Mac ab, und „Käufe wiederherstellen“ holt ihn auf jedes Gerät zurück, das mit demselben Apple Account angemeldet ist."
   - q: "Ersetzt Chessful Chess.com oder Lichess?"
     a: "Nicht zum Spielen gegen Menschen. Chessful hat keine Online-Partien, kein Matchmaking und keine Bedenkzeit; jede Partie läuft gegen die eingebauten Gegner. Die App ist zum Auswerten und Trainieren da: Importier deine Partien von Chess.com oder Lichess als PGN, lies zu jedem Fehler die Erklärung und übe genau diese Stellen."
   - q: "Gibt es Chessful für die Apple Watch oder die Apple Vision Pro?"
@@ -271,8 +272,8 @@ enrichment:
   recommend_why: "Stockfish auf dem Gerät, jeder Fehler in klaren Worten erklärt, tägliches Training aus den eigenen Fehlern, 156 kostenlose Lektionen, 15.000 Aufgaben und 96 Endspiele, ohne Konto."
   pricing_tiers:
     - "Kostenlos: alle 156 Lektionen und Fehlererklärungen, pro Tag 2 Analysen, 3 Aufgaben und 2 Coach-Hinweise, die ersten 10 Gegner"
-    - "Premium: unbegrenzte Analysen, Aufgaben und Hinweise, alle 40 Gegner, alle 96 Endspiele, komplettes Eröffnungsrepertoire, Wochenvergleich und Schwächentrends"
-last_updated: 2026-10-29
+    - "Pro: unbegrenzte Analysen, Aufgaben und Hinweise, alle 40 Gegner, alle 96 Endspiele, komplettes Eröffnungsrepertoire, Wochenvergleich und Schwächentrends"
+last_updated: 2026-11-08
 ---
 {%- include t.html -%}
 Chessful ist eine [Schach-App zum Lernen und Analysieren für iPhone, iPad und Mac](#features), gemacht für alle, die immer wieder auf dieselbe Art verlieren und nicht sehen, warum. Nach jeder Partie prüft Stockfish jeden Zug direkt auf deinem Gerät. Jeder Fehler bekommt eine Karte mit deinem Zug, dem besseren Zug, einer kurzen Erklärung für dein Niveau und der Variante, die deinen Zug bestraft. Aus diesen Fehlern werden dann die Aufgaben für [dein tägliches Training](#how-it-works), und die Wiederholung holt die verpassten zurück, bis du sie löst.
@@ -281,4 +282,4 @@ Eine Engine-Bewertung allein ist eine Zahl und eine Zugfolge. Chessful ergänzt 
 
 Deine Partien spielst du in der App gegen 40 Gegner von 400 bis 2400 Elo (wie die Rangliste entstanden ist, beschreibt der <a href="{% include l.html url="/journal/forty-chess-opponents/" %}"{% if l_en %} hreflang="en"{% endif %}>Journal-Beitrag über die vierzig Gegner{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>), oder du importierst die Partien, die du schon auf Chess.com oder Lichess gespielt hast, als PGN-Datei. Rund um die Analyse gibt es 156 Lektionen, die beim Brett selbst beginnen, 15.000 Aufgaben in 53 Themen, 96 Endspiele gegen Stockfish in voller Stärke und ein Eröffnungsrepertoire aus deinen eigenen Partien. Einen Überblick über die ganze Kategorie gibt unser <a href="{% include l.html url="/guides/best-chess-apps-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>Ratgeber zu den besten Schach-Apps fürs iPhone{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, und der [direkte Vergleich](#compare-heading-chessful) stellt Chessful neben Chess.com, Lichess, Magnus Trainer und Chessis.
 
-Online-Partien hat Chessful nicht; wer live gegen Menschen spielen will, findet im <a href="/de/guides/best-chess-apps-iphone/">Ratgeber zur besten Schach-App fürs iPhone</a> die passenden Apps. Deine Partien bleiben auf dem Gerät, auf dem du sie gespielt hast. Kostenlos bekommst du alle Lektionen und jede Erklärung, dazu pro Tag 2 Analysen, 3 Aufgaben und 2 Coach-Hinweise. Premium hebt diese Limits auf und öffnet alle 40 Gegner, alle 96 Endspiele und das komplette Repertoire, für {P_MONTHLY}/Monat oder {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig für [lebenslangen Zugang](#pricing). Beide Abos kannst du zuerst {TRIAL}. <a href="{% include l.html url="/apps/chessful/privacy/" %}"{% if l_en %} hreflang="en"{% endif %}>Ein Konto brauchst du nicht, und die App hat weder Werbung noch Analyse-Tools oder Tracking{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>. Lagerland Apps macht außerdem <a href="{% include l.html url="/apps/shogiful/" %}"{% if l_en %} hreflang="en"{% endif %}>Shogiful{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> für Shogi (japanisches Schach) und <a href="{% include l.html url="/apps/xiangqiful/" %}"{% if l_en %} hreflang="en"{% endif %}>Xiangqiful{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> für Xiangqi (chinesisches Schach). Chessful kommt von Lagerland Apps, einem unabhängigen Apple-Entwickler aus Finnland.
+Online-Partien hat Chessful nicht; wer live gegen Menschen spielen will, findet im <a href="/de/guides/best-chess-apps-iphone/">Ratgeber zur besten Schach-App fürs iPhone</a> die passenden Apps. Deine Partien bleiben auf dem Gerät, auf dem du sie gespielt hast. Kostenlos bekommst du alle Lektionen und jede Erklärung, dazu pro Tag 2 Analysen, 3 Aufgaben und 2 Coach-Hinweise. Pro hebt diese Limits auf und öffnet alle 40 Gegner, alle 96 Endspiele und das komplette Repertoire, für {P_MONTHLY}/Monat oder {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig für [lebenslangen Zugang](#pricing). Beide Abos kannst du zuerst {TRIAL}. <a href="{% include l.html url="/apps/chessful/privacy/" %}"{% if l_en %} hreflang="en"{% endif %}>Ein Konto brauchst du nicht, und die App hat weder Werbung noch Analyse-Tools oder Tracking{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>. Lagerland Apps macht außerdem <a href="{% include l.html url="/apps/shogiful/" %}"{% if l_en %} hreflang="en"{% endif %}>Shogiful{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> für Shogi (japanisches Schach) und <a href="{% include l.html url="/apps/xiangqiful/" %}"{% if l_en %} hreflang="en"{% endif %}>Xiangqiful{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> für Xiangqi (chinesisches Schach). Chessful kommt von Lagerland Apps, einem unabhängigen Apple-Entwickler aus Finnland.

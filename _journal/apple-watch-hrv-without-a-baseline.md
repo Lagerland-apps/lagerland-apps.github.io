@@ -13,7 +13,7 @@ seo:
     - "how to read hrv"
     - "hrv normal range"
 date: 2026-05-13
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 lede: "A 42ms HRV reading on Apple Watch can be excellent, average, or alarming, and you can't tell which without context. On its own, the number is one of the most misread metrics in consumer health. This post covers what HRV tells you, what it doesn't, and why a personal baseline is the only frame that makes the reading usable."
 quick_answer: "Raw HRV (heart-rate variability, reported as SDNN on Apple Watch) is meaningful only against your own rolling baseline. Absolute HRV varies 3 to 10× between individuals depending on age, sex, fitness, posture, measurement timing, and which wrist the watch is on. Read your Apple Watch HRV as a percent deviation from your own mean over the last several weeks; 60 days is a good window. Comparing your number to a friend's, a population average, or a 'normal range' chart on the internet will almost always mislead you."
 faq:
@@ -95,7 +95,7 @@ A few practical rules follow from all this:
 
 5. **Expect seasonal drift.** Lower in winter and higher in summer is normal. A pandemic, an illness, life stress, or a new baby will all move the baseline too. Treat it as a moving frame of reference.
 
-[Observa](/apps/observa/) does much of this for you. It shows your HRV (SDNN) against your own typical range, with 7 days of trend free and 30, 90, or 365 days with Pro. HRV also makes up 25% of its daily Readiness score, and "Why this score?" tells you in plain language when HRV is outside your usual range and moved the score. The analysis runs on your device, and the comparison it makes is *you, today, against your own normal*, which is the only HRV comparison worth making.
+[Observa](/apps/observa/) does much of this for you. It shows your HRV (SDNN) against your own typical range, with 7 days of trend free and 30, 90, or 365 days with Premium. HRV also makes up 25% of its daily Readiness score, and "Why this score?" tells you in plain language when HRV is outside your usual range and moved the score. The analysis runs on your device, and the comparison it makes is *you, today, against your own normal*, which is the only HRV comparison worth making.
 
 ## TL;DR
 

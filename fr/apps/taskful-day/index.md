@@ -3,14 +3,14 @@ layout: app
 slug: taskful-day
 ref: /apps/taskful-day/
 permalink: /fr/apps/taskful-day/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 og_tagline: "Ce qui reste passe à demain."
 tagline: "Un planificateur de journée où les tâches non terminées passent au lendemain sans culpabilité."
 quick_answer: "Taskful Day est une application to do list et un planificateur de journée pour iPhone, iPad, Mac et Apple Watch. Ce que vous n’avez pas terminé passe tout seul à aujourd’hui, si bien que la liste Aujourd’hui ne devient jamais une pile rouge de tâches en retard. Vous ajoutez une tâche en tapant une phrase, à la voix, avec Siri ou depuis votre montre. La version gratuite permet de créer jusqu’à 50 tâches au total. Pro ({P_MONTHLY}/mois, {P_YEARLY}/an ou {P_LIFETIME} à vie) ajoute les tâches illimitées, la synchronisation iCloud, les vues Horloge du jour, Rivière d’énergie et Carte du jour, ainsi que 21 widgets pour l’écran d’accueil. Chaque nouvelle installation profite de 7 jours de Pro offerts, sans carte bancaire. Aucun compte à créer, aucune publicité, aucun suivi."
 
 price_tier: "Pro"
 
-plans_footnote: "Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise. Les remboursements passent par Apple, selon la procédure habituelle de l’App Store. L’achat à vie est un paiement unique, sans renouvellement automatique."
+plans_footnote: "Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise. Les remboursements passent par Apple, selon la procédure habituelle de l’App Store. L’achat à vie est un paiement unique, sans renouvellement automatique. Un seul achat Pro débloque Pro sur iPhone, iPad et Mac avec le même compte Apple. Les formules mensuelle, annuelle et à vie sont toutes compatibles avec le partage familial."
 
 plans:
   - name: "Gratuit"
@@ -119,7 +119,7 @@ how_it_works:
   intro: "Taskful Day planifie un jour à la fois et fait passer ce qui reste au suivant. Voici comment une journée s’y déroule."
   steps:
     - title: "Saisissez-le en une ligne"
-      detail: "Tapez une phrase dans la barre « Ajouter une tâche » et Taskful Day repère la date, l’heure, la priorité et la catégorie. Écrivez « Courses : lait, œufs, pain » et vous obtenez une checklist. Pour une idée que vous ne savez pas encore classer, utilisez la boîte : elle n’a besoin d’aucun champ, et vous choisissez Aujourd’hui, Demain ou Plus tard le moment venu."
+      detail: "Tapez une phrase dans la barre « Ajouter une tâche » et Taskful Day repère la date, l’heure, la priorité et la catégorie. Écrivez « Courses : lait, œufs, pain » et vous obtenez une checklist. Pour une idée que vous ne savez pas encore classer, utilisez la boîte : elle n’a besoin d’aucun champ, et vous choisissez Aujourd’hui, Demain ou Plus tard le moment venu. Sur iPhone, balayez un élément de la boîte pour l’envoyer à Aujourd’hui ou à Demain."
     - title: "Façonnez aujourd’hui"
       detail: "Ajoutez une durée, une catégorie, des notes, une répétition ou un rappel quand vous le souhaitez. Regroupez la liste Aujourd’hui par moment de la journée ou par catégorie, et faites glisser les tâches en attente dans l’ordre où vous les ferez."
     - title: "Voyez comment la journée s’agence (Pro)"
@@ -131,7 +131,7 @@ how_it_works:
     - title: "Laissez le reste passer au jour suivant"
       detail: "Tout ce qui n’est pas terminé passe à aujourd’hui à la prochaine ouverture de l’app. Les tâches récurrentes gardent leur rythme lors du report. Vous pouvez aussi reporter des tâches à la main depuis un jour passé, ou en sélectionner plusieurs et les déplacer d’un coup."
     - title: "Regardez en arrière sans verdict"
-      detail: "Analyses affiche votre taux de réalisation, vos tendances et vos catégories pour la semaine, avec des périodes plus longues dans Pro. Son pied de page le dit simplement : « Ce n’est qu’une tendance, pas un jugement. »"
+      detail: "Analyses affiche votre taux de réalisation, vos tendances et vos catégories pour la semaine, avec des périodes plus longues dans Pro. Touchez « Comment ce score est-il calculé ? » sur votre score, et la fiche le dit simplement : « Ce score reflète des tendances, pas des performances. »"
 
 features:
   - title: "Saisie en langage naturel"
@@ -149,7 +149,7 @@ features:
   - title: "Apple Watch"
     description: "Consultez Maintenant, Aujourd’hui et Demain, balayez pour terminer ou différer, et dictez une nouvelle tâche avec le même analyseur que sur l’iPhone. L’app de la montre a besoin de l’app iPhone installée. Pro ajoute le tri de la boîte, le sélecteur d’espace de travail et deux complications de plus."
   - title: "iPad et Mac"
-    description: "Sur iPad, une disposition en trois zones avec une barre latérale, un calendrier mensuel et plusieurs fenêtres. Sur Mac, une barre d’outils, des menus, des raccourcis clavier comme ⌘N pour une nouvelle tâche, des menus contextuels au clic droit et des widgets sur le bureau. La saisie vocale n’existe que sur iPhone et iPad."
+    description: "Sur iPad, une disposition en trois zones avec une barre latérale, un calendrier mensuel et plusieurs fenêtres. Sur Mac, une barre d’outils, des menus, des raccourcis clavier comme ⌘N pour une nouvelle tâche, des menus contextuels au clic droit et des widgets sur le bureau. Sur les deux, la recherche de la barre latérale retrouve n’importe quelle tâche ou note, quels que soient son jour et son espace de travail. La saisie vocale n’existe que sur iPhone et iPad."
 
 screenshot_captions:
   - alt: "Vue du jour de Taskful Day avec une bande de la semaine et des tâches en attente"
@@ -160,7 +160,7 @@ screenshot_captions:
   - alt: "Carte par moments de la journée de Taskful Day avec les tâches du matin, de l’après-midi et du soir"
   - alt: "Planning de la semaine de Taskful Day avec des blocs de tâches"
   - alt: "Widget Heatmap de Taskful Day avec les jours actifs et une liste du jour"
-  - alt: "Widget d’habitudes de Taskful Day avec des séries et une tendance"
+  - alt: "Deux widgets de Taskful Day sur l’écran d’accueil : le score de la semaine avec les jours actifs, puis la prochaine tâche sur une frise de la journée"
   - alt: "Widget pleine page de Taskful Day avec les prochaines tâches"
 
 privacy:
@@ -178,7 +178,7 @@ faq:
   - q: "Taskful Day existe-t-il sur Mac ?"
     a: "Oui. Taskful Day fonctionne sur Mac sous macOS 14 ou ultérieur, avec sa propre barre d’outils, ses menus, ses raccourcis clavier, ses menus contextuels au clic droit, ses fenêtres multiples et ses widgets sur le bureau. La saisie vocale et les widgets pour l’écran verrouillé restent sur iPhone et iPad, et l’Activité en direct de concentration sur iPhone. Avec Pro, la synchronisation iCloud garde votre Mac et vos autres appareils sur le même planning."
   - q: "La version Mac est-elle un achat séparé ?"
-    a: "Non. Taskful Day est une seule app de l’App Store qui fonctionne sur iPhone, iPad et Mac, et son téléchargement est gratuit sur chacun."
+    a: "Non. Taskful Day est une seule app de l’App Store qui fonctionne sur iPhone, iPad et Mac, et son téléchargement est gratuit sur chacun. Si vous achetez Pro sur un appareil, il est aussi débloqué sur vos autres appareils connectés au même compte Apple."
   - q: "Taskful Day se synchronise-t-il entre iPhone, iPad et Mac ?"
     a: "Oui, avec Pro. La synchronisation iCloud est facultative et passe par votre propre iCloud privé : les tâches, les checklists, les rappels, les espaces de travail, la boîte et votre Journal restent alignés sur tous vos appareils. Taskful Day n’a pas de serveur à lui. Activer ou désactiver la synchronisation demande de redémarrer l’app."
   - q: "Taskful Day convient-il en cas de TDAH ?"
@@ -198,7 +198,7 @@ faq:
   - q: "Puis-je importer des tâches depuis Rappels ?"
     a: "Oui. Taskful Day importe vos rappels non terminés une seule fois, dans un seul sens, ignore les doublons et transforme les notes à puces en étapes de checklist. Dans la version gratuite, le premier import compte dans le total de 50 tâches et indique combien de rappels attendent Pro. Pro importe tout et permet de réimporter plus tard."
   - q: "Fonctionne-t-il sur iPad ?"
-    a: "Oui. Sur iPad, Taskful Day propose une disposition en trois zones avec une barre latérale, un calendrier mensuel et de la place pour plusieurs fenêtres, et huit de ses widgets existent en très grand format. Il fonctionne sous iPadOS 17.6 ou ultérieur."
+    a: "Oui. Sur iPad, Taskful Day propose une disposition en trois zones avec une barre latérale qui comprend la recherche, un calendrier mensuel et de la place pour plusieurs fenêtres, et huit de ses widgets existent en très grand format. Il fonctionne sous iPadOS 17.6 ou ultérieur."
   - q: "Puis-je exporter mes données ?"
     a: "Oui. Les Réglages proposent Exporter mes données, qui enregistre vos tâches avec leurs notes et leurs étapes de checklist dans un fichier JSON, et Supprimer toutes mes données, qui efface tout."
   - q: "Quelle version de macOS Taskful Day prend-il en charge ?"

@@ -339,14 +339,14 @@ support:
   url: "/apps/allpaid/support/"
 
 release:
-  first_release: "2026-01-01"
-  last_updated: "2026-11-07"
+  first_release: "2026-01-08"
+  last_updated: "2026-10-23"
   last_audited: "2026-05-13"
 
 ratings:
   value: "4.9"
   count: 7
   last_synced: "2026-10-19"
-last_updated: 2026-11-07
+last_updated: 2026-11-08
 ---
 AllPaid is a bill and contract reminder for iPhone, iPad, and Mac, made for people who won't hand a bank login to a third-party app. You add each bill by hand with its due date and how often it repeats, from one-time to yearly or every N days, weeks, or months. Type a familiar name and AllPaid suggests the category and repeat. Reminders arrive at 9:00 before the due date, and you can mark a bill paid or snooze it straight from the notification. Contracts get their own fields: start and end dates, auto-renewal, and the renewal amount, with a reminder before the contract ends. PDFs and photos attach to the bill they belong to. The free Spending overview shows what your bills cost per month and per year; Pro adds Spending Analytics, full payment history, unlimited bills, and iCloud Sync through your own private iCloud. AllPaid has ten widgets, works with Siri, locks with Face ID, and is translated into 37 languages. It has no ads and no account, and it never connects to a bank. It is free for up to 3 bills, with Pro from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} once.

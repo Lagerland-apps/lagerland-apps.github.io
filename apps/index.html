@@ -13,7 +13,7 @@ seo:
     - mac apps without ads
     - apple watch apps
     - useful iphone apps
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 {%- assign live_apps = site.apps | where: "status", "live" -%}
@@ -104,7 +104,7 @@ last_updated: 2026-10-29
   {%- if cluster_apps.size > 0 -%}
     <div id="money" class="section reveal">
       <h2 class="h2">Money, bills &amp; subscriptions</h2>
-      <p class="lead">Reminders for bills and contract renewals that never connect to your bank, and a bill splitter that scans the receipt and sends everyone their share. Neither app needs an account.</p>
+      <p class="lead">Reminders for bills and contract renewals that never connect to your bank and need no account.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -155,8 +155,8 @@ last_updated: 2026-10-29
   {%- assign cluster_apps = live_apps | where: "category", "utilities" -%}
   {%- if cluster_apps.size > 0 -%}
     <div id="utilities" class="section reveal">
-      <h2 class="h2">File compression &amp; conversion</h2>
-      <p class="lead">Compress and convert video, audio, images, PDFs, and archives on iPhone and Mac. The tools run on your device, so your files are never uploaded to a web converter.</p>
+      <h2 class="h2">File conversion &amp; bill splitting</h2>
+      <p class="lead">Compress and convert video, audio, images, PDFs, and archives on iPhone and Mac, and split a restaurant bill from the receipt on iPhone. Both run on your device, so your files are never uploaded to a web converter and your receipts never leave the phone.</p>
       <div class="grid grid-2 stagger">
         {%- for app in cluster_apps -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>

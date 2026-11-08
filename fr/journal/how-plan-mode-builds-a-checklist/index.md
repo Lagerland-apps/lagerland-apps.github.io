@@ -3,7 +3,7 @@ layout: journal
 slug: how-plan-mode-builds-a-checklist
 ref: /journal/how-plan-mode-builds-a-checklist/
 permalink: /fr/journal/how-plan-mode-builds-a-checklist/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 last_updated: 2026-11-08
 date: 2026-11-08
 title: "Application pour organiser un mariage ou un voyage : la checklist à rebours du mode planification de Soon."
@@ -19,7 +19,7 @@ seo:
     - "compte à rebours avec checklist"
     - "application préparation mariage"
 lede: "La plupart des applications de compte à rebours s’arrêtent au nombre de jours. Le mode planification de Soon. propose aussi une checklist et une chronologie de jalons pour le type d’événement choisi. Voici comment fonctionnent ces suggestions, pourquoi elles sont rédigées à l’avance plutôt que générées et ce que nous avons écarté volontairement."
-quick_answer: "Pour organiser un mariage, un voyage ou un autre événement dans une application de compte à rebours, Soon. propose le mode planification, gratuit, qui donne à chaque compte à rebours une checklist et une chronologie de jalons. Quand vous ouvrez l’onglet Planifier d’un événement, Soon. suggère un plan de départ pour son type : voyage, mariage, anniversaire, examen, travail, fête, santé, bébé, concert ou sport. Vous cochez les tâches, ajoutez vos propres tâches et jalons, et « Revenir aux suggestions » rétablit le plan de départ. Avec Premium, un événement de type Bébé reçoit un plan guidé semaine par semaine et les éléments du plan peuvent envoyer des rappels. Les suggestions sont rédigées à l’avance et livrées avec l’app ; rien n’est généré par IA."
+quick_answer: "Pour organiser un mariage, un voyage ou un autre événement dans une application de compte à rebours, Soon. propose le mode planification, gratuit, qui donne à chaque compte à rebours une checklist et une chronologie de jalons. Quand vous ouvrez l’onglet Planifier d’un événement, Soon. suggère un plan de départ pour son type : voyage, mariage, anniversaire, examen, travail, fête, santé, bébé, concert ou sport. Vous cochez les tâches, ajoutez vos propres tâches et jalons, et « Revenir aux suggestions » rétablit le plan de départ. Avec Premium, un événement de type Bébé reçoit un plan guidé semaine par semaine et les jalons de la chronologie peuvent envoyer des rappels. Les suggestions sont rédigées à l’avance et livrées avec l’app ; rien n’est généré par IA."
 excerpt: "La plupart des applications de compte à rebours vous montrent des jours. Le mode planification de Soon. suggère ce qu’il faut en faire : une checklist et une chronologie de jalons pour le type d’événement, rédigées à l’avance et livrées avec l’app, sans IA. Une note sur la conception."
 faq:
   - q: "Qu’est-ce que le mode planification dans Soon. ?"
@@ -31,7 +31,7 @@ faq:
   - q: "Puis-je modifier la checklist du mode planification ?"
     a: "Oui. Le plan suggéré est un point de départ. Cochez les tâches au fur et à mesure et ajoutez vos propres tâches et jalons. Si vous voulez retrouver le plan de départ, « Revenir aux suggestions » le rétablit."
   - q: "Le mode planification envoie-t-il des rappels ?"
-    a: "Seulement avec Premium. Premium ajoute des rappels pour les éléments du plan, et des rappels pour l’événement lui-même 7 jours, 3 jours et 1 jour avant, ainsi que le jour même. La version gratuite affiche le plan et n’envoie aucune notification."
+    a: "Seulement avec Premium. Premium ajoute des rappels pour l’événement lui-même 7 jours, 3 jours et 1 jour avant, ainsi que le jour même. Si le plan comporte des jalons dans sa chronologie, chaque jalon reçoit un rappel à la place de ceux de 7, 3 et 1 jour. La version gratuite affiche le plan et n’envoie aucune notification."
 mentioned_apps:
   - soon
 read_time: "6 min de lecture"
@@ -75,7 +75,7 @@ L’exemple le plus parlant est celui d’un bébé. Avec Premium, un événemen
 
 La version gratuite de Soon. n’envoie aucune notification. Le plan reste attaché à l’événement, et le compte à rebours reste sur vos widgets.
 
-Premium ajoute des rappels pour les éléments du plan, et des rappels pour l’événement lui-même 7 jours, 3 jours et 1 jour avant, ainsi que le jour même. Rien n’arrive chaque matin pour vous dire que le nombre a baissé d’une unité.
+Premium ajoute des rappels pour l’événement lui-même 7 jours, 3 jours et 1 jour avant, ainsi que le jour même. Si le plan comporte des jalons dans sa chronologie, chaque jalon reçoit un rappel à la place de ceux de 7, 3 et 1 jour. Rien n’arrive chaque matin pour vous dire que le nombre a baissé d’une unité.
 
 ## Ce que le mode planification laisse de côté
 
@@ -105,4 +105,4 @@ Si vous intégrez des fonctions de planification dans une app spécialisée (spo
 
 ---
 
-[Soon. est disponible sur l’App Store](https://apps.apple.com/app/id6757280643) pour iPhone. L’app est gratuite jusqu’à 5 événements, mode planification compris, sans limite de durée. Premium ajoute les événements illimités, les rappels pour les événements et les éléments du plan, les prévisions météo, les notes quotidiennes, les événements récurrents et le mode Bébé. Plus de détails sur la [page de l’app Soon.](/fr/apps/soon/).
+[Soon. est disponible sur l’App Store](https://apps.apple.com/app/id6757280643) pour iPhone. L’app est gratuite jusqu’à 5 événements, mode planification compris, sans limite de durée. Premium ajoute les événements illimités, les rappels pour les événements et les jalons, les prévisions météo, les notes quotidiennes, les événements récurrents et le mode Bébé. Plus de détails sur la [page de l’app Soon.](/fr/apps/soon/).

@@ -13,14 +13,14 @@ seo:
     - "who pays for dinner"
     - "rightsplit"
 date: 2026-02-14
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 lede: "It's the 14th. Somewhere right now, a group of four friends is staring at a $312 dinner bill, three of them ordered the steak, one ordered the salad, and someone is doing math on a napkin. RightSplit is the app we made for that moment."
-quick_answer: "Split it by what each person ordered, and do the math privately on one phone. With RightSplit, one person scans the receipt and taps each item onto the people who had it, and the app sends each person their amount by Messages or WhatsApp, with a tap-to-pay link if you have saved Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay. Nobody else has to install anything or join a shared account. Splitting by item is part of RightSplit Pro+."
+quick_answer: "Split it by what each person ordered, and do the math privately on one phone. With RightSplit, one person scans the receipt and taps each item onto the people who had it, and the app sends each person their amount by Messages or WhatsApp, with a link to pay you if you have saved Venmo, PayPal.me, Revolut, or Wise. Nobody else has to install anything or join a shared account. Your first receipt scan includes splitting by item; after that it is part of RightSplit Pro+."
 faq:
   - q: "How do I split a dinner bill fairly without making it weird?"
-    a: "Split it by what each person ordered, and do it privately on one phone. In RightSplit, one person scans the receipt and taps each item onto the people who ordered it, and the app sends each person their amount by Messages or WhatsApp, with a tap-to-pay link if you have saved Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay. Only the person holding the phone needs RightSplit installed."
+    a: "Split it by what each person ordered, and do it privately on one phone. In RightSplit, one person scans the receipt and taps each item onto the people who ordered it, and the app sends each person their amount by Messages or WhatsApp, with a link to pay you if you have saved Venmo, PayPal.me, Revolut, or Wise. Only the person holding the phone needs RightSplit installed."
   - q: "Does everyone in the group need to install RightSplit?"
-    a: "No. Unlike Splitwise, RightSplit only has to be on the phone of the person doing the math. The rest of the group receives a message with their exact amount and, if you have saved a payment method, a tap-to-pay link. Nobody signs up for anything."
+    a: "No. Unlike Splitwise, RightSplit only has to be on the phone of the person doing the math. The rest of the group receives a message with their exact amount and, if you have saved Venmo, PayPal.me, Revolut, or Wise, a link to pay you. Nobody signs up for anything."
   - q: "Is RightSplit better than splitting the bill equally?"
     a: "It is fairer whenever the orders differ. For two people with similar orders, both methods land close together. At the table of four in this post, an equal split charges the salad-and-wine person $78 for an order closer to $32. The gap grows with the size of the table and with how different the orders are."
   - q: "How much does RightSplit cost?"
@@ -58,8 +58,8 @@ This is how I picture RightSplit doing its job:
 1. The receipt arrives. One person picks up the phone.
 2. They take a picture of the receipt. The app reads the items, prices, and tax on the phone.
 3. They tap each item, then tap the names of the people who had it. A bottle of wine shared by two gets split 50/50, a round of beers shared by three works the same way, and a steak goes to the person who ordered it.
-4. The tax and tip are divided per person ([the arithmetic, worked all the way out](/journal/bill-splitting-math-tax-tip-shared-plates/)).
-5. The app writes four short messages, one per person, each with the exact amount and a tap-to-pay link for whichever method the owner saved: Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay. The owner sends them by Messages or WhatsApp.
+4. The tax and tip are divided in proportion to what each person ordered ([the arithmetic, worked all the way out](/journal/bill-splitting-math-tax-tip-shared-plates/)).
+5. The app writes four short messages, one per person, each with the exact amount and, if the owner saved PayPal.me, Revolut, Venmo, or Wise, a link to pay the owner. PayPal.me and Revolut links fill in the amount, and Venmo and Wise links open the owner's profile. The owner sends them by Messages or WhatsApp.
 6. That's it. The app keeps the split in case the owner wants to look at it later.
 
 That is the core of it. The group never has to install RightSplit or join anything, and all the effort sits with the person who is already holding the phone.

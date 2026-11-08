@@ -26,14 +26,14 @@ faq:
   - q: "Is Tare colour-blind friendly?"
     a: "Colour never carries meaning on its own. The ten weight shapes can be told apart as bare silhouettes, so colour is never the only cue, and every known weight shows its value as a numeral. Beam tilt is shown as an angle, not a colour, and a wrong board shudders instead of flashing red."
   - q: "Can children or people who don't read English play Tare?"
-    a: "Yes. The puzzle itself has no words, so it plays the same in any language and at any reading level. The few screens around it are translated into 50 languages. In Arabic, Hebrew and Urdu the menus mirror, but the mobile is always drawn left to right, so what you touch is where the piece is."
+    a: "Yes. The puzzle itself has no words, so it plays the same in any language and at any reading level. The few screens around it are translated into 44 languages. In Arabic, Hebrew and Urdu the menus mirror, but the mobile is always drawn left to right, so what you touch is where the piece is."
   - q: "Does Tare support Reduce Motion, Dynamic Type and high contrast?"
     a: "Yes. Reduce Motion stops the idle drift and the tilt parallax and turns the restless motion of a beam with a hidden weight into a slow pulse. Numerals grow with Dynamic Type and give way to dots at the accessibility sizes. The in-app High contrast switch, or the system's Increase Contrast, switches to flat fills held to 4.5:1 or better, and Reduce Transparency replaces the glassy “?” bubble with a matte one with a dashed rim."
 mentioned_apps:
   - tare
 read_time: "7 min read"
 excerpt: "Tare's launch-day essay on designing without words: what each early level teaches and how, how the game keeps a hidden weight from showing through any channel, and the VoiceOver tree, contrast, Dynamic Type and motion settings that make the same puzzle playable without sight or with low vision."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 > **Note:** Tare has 200 levels in ten chapters of twenty. Chapter I, onboarding included, is free, and one purchase unlocks the other 180. This post is the launch-day essay, written when Tare had 80 levels.

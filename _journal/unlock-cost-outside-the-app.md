@@ -3,8 +3,8 @@ layout: journal
 slug: unlock-cost-outside-the-app
 title: "The unlock cost has to live outside the app"
 seo:
-  title: "Why Every Screen-Time Blocker Folds, and What Doesn't"
-  description: "Every screen-time blocker has the same secret: tap hard enough and it folds. Why the unlock cost must live outside the app, and how EarnLock does it."
+  title: "Why Most Screen-Time Blockers Fold, and What Doesn't"
+  description: "Most screen-time blockers share a secret: tap hard enough and they fold. Why the unlock cost must live outside the app, and how EarnLock does it."
   keywords:
     - "screen time blocker"
     - "screen time app that works"
@@ -14,13 +14,13 @@ seo:
     - "earnlock"
 date: 2026-05-23
 last_updated: 2026-11-08
-lede: "Every screen-time blocker on the App Store has the same secret. If you tap hard enough, it folds. A short essay on why every app in this category eventually adds a tap-through escape, and what to build in its place."
+lede: "Most screen-time blockers on the App Store share a secret. If you tap hard enough, they fold. A short essay on why nearly every app in this category ends up with a tap-through escape, and what to build in its place."
 quick_answer: "Most screen-time blockers (Opal, one sec, ScreenZen, Forest) let you get past the lock with a button, a wait-out timer, or a rule you set yourself. The unlock cost lives inside the app, so you can lower it in the middle of a craving. A blocker that holds has to charge the unlock cost in something the craving can't reach. Waiting doesn't work, because waiting is itself a tap. Movement does (steps, active minutes, active calories), because you pay it in the rest of your life, outside the app. EarnLock is a blocker built around that constraint: at half your daily activity goal, some of your locked apps open for about an hour, once a day, and at the full goal everything opens until midnight."
 faq:
   - q: "Why don't most screen-time blockers actually block?"
-    a: "Because every app in this category eventually adds a tap-through escape: Opal's 'I really need this' button, one sec's wait-out timer, ScreenZen's dismissible pause, Forest's give-up-a-tree mechanic. You set the rules on a quiet Sunday and meet them on a Thursday night when you're tired and bored. The Sunday version wants a wall and the Thursday version wants a door, and whichever one drives the App Store rating ships in the next release. Because the unlock cost lives inside the app, you can lower it in the middle of a craving."
+    a: "Because nearly every app in this category ends up with a tap-through escape by default: the Use button on Opal's block screen, one sec's breathing pause, ScreenZen's wait-out pause, Forest's give-up-a-tree mechanic. Some also offer strict modes, which you have to switch on. You set the rules on a quiet Sunday and meet them on a Thursday night when you're tired and bored. The Sunday version wants a wall and the Thursday version wants a door, and whichever one drives the App Store rating ships in the next release. Because the unlock cost lives inside the app, you can lower it in the middle of a craving."
   - q: "How is EarnLock different from Opal, one sec, ScreenZen, or Forest?"
-    a: "EarnLock's unlock cost lives outside the app. Locked apps stay locked until you reach a daily activity goal measured by Apple Health: steps on the free tier, active minutes or active calories with Premium. Halfway to the goal, some of your locked apps open for about an hour, once a day, and the full goal opens everything until midnight. There is no tap-through button or wait-out timer, and lowering your goal only takes effect after 24 hours, so a craving can't renegotiate it on the spot. Each locked app shows EarnLock's screen with exactly what's left, such as \"2,026 steps until unlock\", so the unlock reads as a place you can walk to."
+    a: "EarnLock's unlock cost lives outside the app. Locked apps stay locked until you reach a daily activity goal measured by Apple Health: steps on the free tier, active minutes or active calories with Premium. Halfway to the goal, some of your locked apps open for about an hour, once a day, and the full goal opens everything until midnight. There is no tap-through button or wait-out timer, and once you lower your goal, it can't be lowered again for 24 hours, so a craving can't keep renegotiating it. Each locked app shows EarnLock's screen with exactly what's left, such as \"2,026 steps until unlock\", so the unlock reads as a place you can walk to."
   - q: "What happens on a day I genuinely can't hit the goal?"
     a: "Halfway still counts: at 50% of your goal, some of your locked apps open for about an hour, once a day. For real emergencies, EarnLock has one math-gated emergency unlock per day. You solve a two-digit math problem, pick 15, 30, or 60 minutes, and your apps open. The problem is enough friction to stop a reflex and quick enough for an actual emergency. After that, the next one isn't available until the following day."
   - q: "Why does EarnLock have no account, no server, and no analytics SDK?"
@@ -29,18 +29,20 @@ mentioned_apps:
   - earnlock
   - taskful-day
 read_time: "6 min read"
-excerpt: "Every screen-time blocker on the App Store has a tap-through escape, because anything stricter gets one-star reviews. The fix is to put the unlock cost somewhere the craving can't reach: measured by a sensor and paid for in the rest of your life. The structural argument behind EarnLock."
+excerpt: "Nearly every screen-time blocker on the App Store has a tap-through escape, because anything stricter gets one-star reviews. The fix is to put the unlock cost somewhere the craving can't reach: measured by a sensor and paid for in the rest of your life. The structural argument behind EarnLock."
 ---
 
-Every screen-time blocker on the App Store has the same secret. If you tap hard enough, it folds.
+Most screen-time blockers on the App Store share a secret. If you tap hard enough, they fold.
 
-Open Opal mid-session and tap "I really need to use this." Open one sec and wait the ten seconds. Open ScreenZen and dismiss the pause. Forest lets you give up a tree. Even Brick, which goes as far as shipping you a physical NFC tag, unlocks as soon as you walk over to the tag.
+Hit a limit in Opal and tap Use on its block screen. Open one sec and sit through the breathing exercise. Open ScreenZen and wait out the pause. Forest lets you give up a tree. Even Brick, which goes as far as shipping you a physical NFC tag, unlocks as soon as you walk over to the tag.
+
+The strict modes are the exception. Opal's Deep Focus can't be ended early, and one sec and ScreenZen offer strict blocks too. Each is a mode you have to switch on, and Opal still keeps an Emergency Pass that opens everything for an hour once a week.
 
 What these apps add is friction, which is different from blocking.
 
 A blocker has a cost you can't pay in the middle of a craving. Friction has a cost you can pay in two taps, and the design relies on the *hope* that you won't.
 
-App Store ratings are why every app in this category eventually adds a tap-through escape. You set up the blocker on a calm Sunday afternoon and run into it on a Thursday night when you're tired and bored. The Sunday version of you wants a wall. The Thursday version wants a door. Whichever one drives the rating distribution ships in the next release.
+App Store ratings are why nearly every app in this category ends up with a tap-through escape. You set up the blocker on a calm Sunday afternoon and run into it on a Thursday night when you're tired and bored. The Sunday version of you wants a wall. The Thursday version wants a door. Whichever one drives the rating distribution ships in the next release.
 
 So the apps end up with a door, and it gets easier to open with every version.
 
@@ -50,11 +52,11 @@ If the cost of unlocking lives inside the app, you can lower it. You wrote the P
 
 The cost has to live somewhere the craving can't reach. There are two reasonable candidates: time and the body.
 
-Time is already taken by the wait-out model that one sec and ScreenZen use. It doesn't work, because waiting is itself a tap. You put the phone down, pick it back up, ten seconds have passed, and the lock is gone. You paid in attention, the thing you were trying to protect in the first place, and the wait gives you nothing you benefit from later.
+Time is already taken by the wait-out model that one sec and ScreenZen use. It doesn't work, because waiting is itself a tap. You put the phone down, pick it back up, the pause has passed, and the lock is gone. You paid in attention, the thing you were trying to protect in the first place, and the wait gives you nothing you benefit from later.
 
 The body is the other candidate. If the unlock costs steps, active minutes, or active calories, you can't pay it from the couch. You have to go outside, get on the floor, or move around the room. What makes the design defensible, and more than merely strict, is that your life *also benefits from* the payment. I can't think of another unlock cost that is both real and useful.
 
-That's what [EarnLock](/apps/earnlock/) does. Locked apps stay locked until you reach a daily activity goal measured by Apple Health: steps on the free tier, active minutes or active calories with Premium. Halfway to the goal, some of your locked apps open for about an hour, once a day; the full goal opens everything until midnight. You pick the goal on a good day, and lowering it only takes effect after 24 hours, so the Thursday version of you can't renegotiate it on the spot.
+That's what [EarnLock](/apps/earnlock/) does. Locked apps stay locked until you reach a daily activity goal measured by Apple Health: steps on the free tier, active minutes or active calories with Premium. Halfway to the goal, some of your locked apps open for about an hour, once a day; the full goal opens everything until midnight. You pick the goal on a good day, and once you lower it, it can't be lowered again for 24 hours, so the Thursday version of you can't keep renegotiating it.
 
 ## Why the lock screen matters
 

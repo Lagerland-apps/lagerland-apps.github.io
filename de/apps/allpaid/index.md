@@ -3,7 +3,7 @@ layout: app
 slug: allpaid
 ref: /apps/allpaid/
 permalink: /de/apps/allpaid/
-translated_from: 2026-11-07
+translated_from: 2026-11-08
 tagline: "Erinnerungen an Rechnungen und Verträge für iPhone, iPad und Mac, ohne Bank-Login."
 quick_answer: "AllPaid ist eine Fixkosten-App mit Zahlungserinnerung für iPhone, iPad und Mac, die nie nach deinem Bank-Login fragt. Du trägst Miete, Nebenkosten, Abos und Verträge einmal ein, und AllPaid erinnert dich um 9:00 Uhr vor jedem Fälligkeitstag, schiebt eine bezahlte Rechnung auf den nächsten Termin und erinnert dich, bevor ein Vertrag endet. Bis zu 3 Rechnungen sind kostenlos; Pro bringt unbegrenzte Rechnungen, mehr Erinnerungen, die Ausgabenanalyse, den Zahlungsverlauf und die iCloud-Synchronisation für {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig. Es gibt kein Konto und keine Werbung, und deine Rechnungen bleiben auf deinen eigenen Geräten."
 price_tier: "Pro"

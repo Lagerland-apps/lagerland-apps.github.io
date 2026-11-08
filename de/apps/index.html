@@ -2,7 +2,7 @@
 layout: default
 ref: /apps/
 permalink: /de/apps/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 title: "Apps ohne Werbung für iPhone, iPad und Mac"
 quick_answer: "Lagerland Apps hat {APP_COUNT} Apps ohne Werbung für iPhone, iPad, Apple Watch und Mac, hier nach ihrer Aufgabe sortiert: Gesundheit, Schlaf und Training; Tagesplanung und Countdowns; Rechnungen und geteilte Kosten; Wikipedia lesen; Brettspiele und Logikrätsel; Werkzeuge für App-Store-Entwickler; Dateien umwandeln. Keine App zeigt Werbung, trackt dich oder verlangt ein Konto. Alle stammen von einem einzigen unabhängigen Entwickler in Finnland."
 seo:
@@ -17,7 +17,7 @@ seo:
     - apple watch apps ohne werbung
     - datenschutzfreundliche apps
     - indie entwickler apps
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 {%- include t.html -%}
@@ -132,7 +132,7 @@ last_updated: 2026-10-29
   {%- if c_money.size > 0 -%}
     <div id="money" class="section reveal">
       <h2 class="h2">Geld, Rechnungen und Abos</h2>
-      <p class="lead">Erinnerungen an Rechnungen und Vertragsverlängerungen, die sich nie mit deiner Bank verbinden, und eine App zum Rechnungteilen, die den Kassenbon scannt und allen ihren Anteil schickt. Keine der beiden braucht ein Konto.</p>
+      <p class="lead">Erinnerungen an Rechnungen und Vertragsverlängerungen, die sich nie mit deiner Bank verbinden und kein Konto brauchen.</p>
       <div class="grid grid-2 stagger">
         {%- for app in c_money -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -171,8 +171,8 @@ last_updated: 2026-10-29
 
   {%- if c_util.size > 0 -%}
     <div id="utilities" class="section reveal">
-      <h2 class="h2">Dateien komprimieren und umwandeln</h2>
-      <p class="lead">Videos, Audio, Bilder, PDFs und Archive auf iPhone und Mac komprimieren und umwandeln. Die Werkzeuge laufen auf deinem Gerät, deine Dateien landen also nie bei einem Online-Konverter.</p>
+      <h2 class="h2">Dateien umwandeln und Rechnungen teilen</h2>
+      <p class="lead">Videos, Audio, Bilder, PDFs und Archive auf iPhone und Mac komprimieren und umwandeln, und auf dem iPhone eine Restaurantrechnung direkt vom Kassenbon teilen. Beides läuft auf deinem Gerät: Deine Dateien landen nie bei einem Online-Konverter, und deine Belege verlassen das Handy nicht.</p>
       <div class="grid grid-2 stagger">
         {%- for app in c_util -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>

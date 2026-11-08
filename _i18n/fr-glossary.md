@@ -289,14 +289,14 @@ No tier name: the whole app is gated. Strings: "Débloquer AppMeta Pulse", "Déb
 | Achievements | Achievements | Succès | |
 | 3D board | 3D Board | Plateau 3D | not "échiquier" |
 | Free | Free Plan | Plan gratuit | |
-| Premium | Chessful Premium / Upgrade to Premium | Chessful Premium / Passer à Premium | store IAPs are named "Chessful Pro …" (store says Pro, app says Premium) |
+| Pro (site) | Chessful Premium / Upgrade to Premium | site: **Pro** (« Chessful Pro », « Pro · Mensuel ») | owner decision 2026-11-08: the site says **Pro**, like the store IAPs « Chessful Pro … »; the app UI still says Premium until the app fix (Kanban) |
 | Monthly / Yearly / Lifetime | same | Mensuel / Annuel / À vie | `Purchase Lifetime` = "Acheter à vie" |
-| Free trial | Start Free Trial | Essai gratuit | `%@ free trial` = "%@ d'essai gratuit"; paywall line "Essai gratuit de 3 jours, puis renouvellement automatique" is the stale 3-day string |
+| Free trial | Start Free Trial | Essai gratuit | `%@ free trial` = "%@ d'essai gratuit"; paywall line "Essai gratuit de 3 jours, puis renouvellement automatique" is the stale 3-day string (unused); the trial is 1 week (master): site uses the {TRIAL} token |
 | Restore Purchases | Restore Purchases | Restaurer les achats | `Already subscribed? Restore Purchases` = "Déjà abonné ? Restaurer les achats" |
 | Hint / Resign / New game | Hint / Resign / New Game | Indice / Abandonner / Nouvelle partie | |
 
 ### Paid tier names in the French UI (Chessful)
-App: **Premium** ("Chessful Premium", "Passer à Premium", "Premium restauré…"); periods Mensuel / Annuel / À vie; "Essai gratuit" (trial length via StoreKit at runtime, blueprint: 1 week on Monthly and Yearly). Store IAP names: **Chessful Pro mensuel / annuel / achat unique** plus tips "Offrir un café" / "Soutien" / "Grand soutien". So app says Premium, store says Pro, site should say Premium and use Pro only when quoting store names.
+App: **Premium** ("Chessful Premium", "Passer à Premium", "Premium restauré…"); periods Mensuel / Annuel / À vie; "Essai gratuit" (trial length via StoreKit at runtime, blueprint: 1 week on Monthly and Yearly). Store IAP names: **Chessful Pro mensuel / annuel / achat unique** plus tips "Offrir un café" / "Soutien" / "Grand soutien". Owner decision 2026-11-08: the paid tier is **Pro**. The site says Pro everywhere (« Pro · Mensuel », « Pro · Annuel », « Combien coûte Chessful Pro ? »); the app UI still says Premium until its fix ships (Kanban).
 
 ### French App Store listing (checked 2026-11-07)
 - Name: **Chessful: Entraîne & Analyse** (differs from English "Chessful: Train & Analyze"). **Flag:** "Entraîne" is a tu imperative (and breaks the vous convention), no space before `:` (Pulse's store name uses NBSP before the colon); flag for the owner.

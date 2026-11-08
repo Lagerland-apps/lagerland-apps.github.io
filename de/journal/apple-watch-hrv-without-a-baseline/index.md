@@ -3,8 +3,8 @@ layout: journal
 slug: apple-watch-hrv-without-a-baseline
 ref: /journal/apple-watch-hrv-without-a-baseline/
 permalink: /de/journal/apple-watch-hrv-without-a-baseline/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "HRV der Apple Watch: Warum der Wert ohne Basislinie fast nichts sagt"
 seo:
@@ -99,7 +99,7 @@ Daraus folgen ein paar praktische Regeln:
 
 5. **Rechne mit saisonaler Drift.** Im Winter niedriger, im Sommer höher: Das ist normal. Eine Pandemie, eine Krankheit, Stress im Leben oder ein Baby verschieben die Basislinie ebenfalls. Behandle sie als beweglichen Bezugsrahmen.
 
-[Observa](/de/apps/observa/) nimmt dir einen großen Teil davon ab. Die App zeigt deine HRV (SDNN) im Vergleich mit deinem eigenen üblichen Bereich, mit 7 Tagen Verlauf kostenlos und 30, 90 oder 365 Tagen mit Pro. Die HRV macht außerdem 25 % des täglichen Bereitschaftswerts aus, und „Warum dieser Wert?“ sagt dir in einfachen Worten, wenn deine HRV außerhalb deines üblichen Bereichs lag und den Wert bewegt hat. Die Auswertung läuft auf deinem Gerät, und Observa vergleicht *dich, heute, mit deinem eigenen Normalwert*. Bei der HRV ist das der einzige Vergleich, der sich lohnt.
+[Observa](/de/apps/observa/) nimmt dir einen großen Teil davon ab. Die App zeigt deine HRV (SDNN) im Vergleich mit deinem eigenen üblichen Bereich, mit 7 Tagen Verlauf kostenlos und 30, 90 oder 365 Tagen mit Premium. Die HRV macht außerdem 25 % des täglichen Bereitschaftswerts aus, und „Warum dieser Wert?“ sagt dir in einfachen Worten, wenn deine HRV außerhalb deines üblichen Bereichs lag und den Wert bewegt hat. Die Auswertung läuft auf deinem Gerät, und Observa vergleicht *dich, heute, mit deinem eigenen Normalwert*. Bei der HRV ist das der einzige Vergleich, der sich lohnt.
 
 ## Kurz gesagt
 

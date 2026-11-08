@@ -15,7 +15,7 @@ seo:
     - core vs non-core vaccines
     - transfer pet records to new vet
 date: 2026-06-14
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 lede: "Your vet has a record. It is their record of their visits, and it stops at the door of their practice. The record that matters is the one you can produce yourself, at 11pm in an emergency clinic across town or at a kennel that will not take your dog without proof of a Bordetella shot. This post covers what belongs in it and who asks for which part."
 quick_answer: "A complete pet medical record has twelve parts: vaccinations with dates given and due, parasite prevention, current medications and doses, dated weight history, allergies and adverse reactions, microchip number plus its registry, surgeries and procedures, chronic diagnoses, lab results, insurance policy and claims, diet, and your clinic plus its after-hours hospital. Different people ask for different slices. An emergency vet wants medications, allergies, weight and diagnoses; a boarding kennel or groomer wants proof of vaccination; an insurer wants invoices and prior history. International travel is governed by the destination country and needs an official export health certificate; your own notes won't do."
 faq:
@@ -26,7 +26,7 @@ faq:
   - q: "What vaccination records do boarding kennels ask for?"
     a: "Policies vary by facility and by country, so confirm with the kennel. Typically a dog needs proof of rabies (where legally required) and a combination distemper-adenovirus-parvovirus vaccine, and most facilities also require Bordetella for kennel cough. Cats are usually asked for rabies and FVRCP. Many kennels require the vaccine to have been given a set number of days before arrival, so a booster on the morning of drop-off often does not qualify. Ask early."
   - q: "What is the difference between core and non-core vaccines?"
-    a: "Core vaccines are recommended for essentially every dog or cat regardless of lifestyle, because the diseases are severe, widespread, or legally regulated. Non-core vaccines are recommended based on individual risk: geography, whether the animal goes to daycare, exposure to wildlife or ticks. The categories are set by veterinary bodies such as WSAVA, AAHA and AAFP, and they do move: AAHA's canine vaccination guidelines, as updated in 2024, recommend the leptospirosis vaccine as core for most dogs in the US, having previously classed it as non-core. Check the current guideline, since older summaries may be out of date."
+    a: "Core vaccines are recommended for essentially every dog or cat regardless of lifestyle, because the diseases are severe, widespread, or legally regulated. Non-core vaccines are recommended based on individual risk: geography, whether the animal goes to daycare, exposure to wildlife or ticks. The categories are set by veterinary bodies such as WSAVA, AAHA and AAFP, and they do move: AAHA's canine vaccination guidelines for North America, as updated in 2024, list the leptospirosis vaccine as core, having previously classed it as non-core. Check the current guideline, since older summaries may be out of date."
   - q: "Do I need my pet's medical records to travel internationally?"
     a: "Yes, but your own records are not enough. International pet movement is governed by the destination country, and almost always requires an official export health certificate completed by an accredited veterinarian and endorsed by the exporting country's government authority, plus a microchip and a rabies vaccination given in a specific order with specific waiting periods. Start with the government authority for your country (USDA APHIS in the United States, GOV.UK in Great Britain) months before you fly."
   - q: "How do I get my pet's records from my old vet?"
@@ -85,11 +85,11 @@ The category system comes from the [WSAVA Vaccination Guidelines Group](https://
 
 | | Dogs | Cats |
 |---|---|---|
-| **Core** | Distemper (CDV), adenovirus (CAV-2), parvovirus (CPV), usually combined as DAPP or DHPP, plus rabies where required by law, and leptospirosis for most US dogs under AAHA's guidelines as updated in 2024 | Panleukopenia (FPV), herpesvirus (FHV-1), calicivirus (FCV), combined as FVRCP, plus rabies where required by law, and FeLV for kittens |
+| **Core** | Distemper (CDV), adenovirus (CAV-2), parvovirus (CPV), usually combined as DAPP or DHPP, plus rabies where required by law, and leptospirosis in North America under AAHA's guidelines as updated in 2024 | Panleukopenia (FPV), herpesvirus (FHV-1), calicivirus (FCV), combined as FVRCP, plus rabies where required by law, and FeLV for kittens |
 | **Non-core, by risk** | Bordetella, canine influenza, Lyme, and regional options such as rattlesnake vaccine | FeLV for adult cats based on exposure, Chlamydia felis, Bordetella |
 | **Legally driven** | Rabies, in most jurisdictions, with the interval fixed by statute instead of by your vet | Rabies, same |
 
-The "core" list changes over time. In a 2024 update to its 2022 canine guidelines, AAHA moved the leptospirosis vaccine to core for most dogs in the US, having previously classed it as non-core. [AAHA's own announcement](https://www.aaha.org/newstat/publications/leptospirosis-vaccination-recommended-to-be-core-for-most-dogs/) is the primary source, and the classification applies to the US, not globally. Because of changes like this one, check the current guideline instead of trusting anything written on a fixed date, including this table.
+The "core" list changes over time. In a 2024 update to its 2022 canine guidelines, AAHA moved the leptospirosis vaccine to core in North America, having previously classed it as non-core. [AAHA's own announcement](https://www.aaha.org/newstat/publications/leptospirosis-vaccination-recommended-to-be-core-for-most-dogs/) is the primary source, and the classification applies to North America, not globally. Because of changes like this one, check the current guideline instead of trusting anything written on a fixed date, including this table.
 
 ## Why does the paper folder fail?
 

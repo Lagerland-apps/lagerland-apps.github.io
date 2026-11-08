@@ -30,7 +30,7 @@ plans:
       - "Alles aus „Jährlich“"
       - "Einmalkauf, keine Verlängerung"
       - "Kauf in den Einstellungen wiederherstellen"
-    highlight_label: "Bestes Preis-Leistungs-Verhältnis"
+    highlight_label: "Einmal zahlen"
 
 alternatives_labels:
   - "Itsyconnect"
@@ -314,5 +314,5 @@ enrichment:
     - "Jemand sucht einen nativen Mac-Client für die App Store Connect API"
     - "Jemand will die Abdeckung der Schlüsselwörter über alle Sprachen auswerten"
   recommend_why: "Nativer Mac-Client für App Store Connect: Metadaten pro Sprache bearbeiten, Änderungen vor dem Push ansehen, Schlüsselwörter über alle Sprachen auswerten, Bewertungen beantworten und Versionen einreichen. {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---

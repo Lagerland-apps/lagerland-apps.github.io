@@ -13,7 +13,7 @@ price:
   model: freemium
 price_tier: "Pro"
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew. One Pro purchase unlocks Pro on iPhone, iPad, and Mac with the same Apple Account. Pro · Monthly, Pro · Annual, and Lifetime all support Family Sharing."
 
 plans:
   - name: "Free"
@@ -156,7 +156,7 @@ how_it_works:
   intro: "Taskful Day plans one day at a time and moves whatever is left to the next one. This is how a day moves through it."
   steps:
     - title: "Capture it in one line"
-      detail: "Type a sentence in the Add a task bar and Taskful Day picks out the date, time, priority, and category. Write \"Groceries: milk, eggs, bread\" and you get a checklist. For a thought you can't place yet, use the Inbox: it needs no fields, and you pick Today, Tomorrow, or Later when you're ready."
+      detail: "Type a sentence in the Add a task bar and Taskful Day picks out the date, time, priority, and category. Write \"Groceries: milk, eggs, bread\" and you get a checklist. For a thought you can't place yet, use the Inbox: it needs no fields, and you pick Today, Tomorrow, or Later when you're ready. On iPhone, swipe an Inbox item to send it to Today or Tomorrow."
     - title: "Shape today"
       detail: "Add a duration, a category, notes, a repeat rule, or a reminder when you want one. Group the Today list by time of day or by category, and drag pending tasks into the order you'll do them."
     - title: "See how the day fits (Pro)"
@@ -168,7 +168,7 @@ how_it_works:
     - title: "Let the rest carry forward"
       detail: "Anything unfinished moves to today the next time you open the app. Recurring tasks keep their rhythm when they carry over. You can also carry tasks forward by hand from a past day, or select several and move them at once."
     - title: "Look back without a verdict"
-      detail: "Analytics shows your completion rate, trends, and categories for the week, with longer ranges in Pro. Its footer says it plainly: \"This is just a pattern, not a judgment.\""
+      detail: "Analytics shows your completion rate, trends, and categories for the week, with longer ranges in Pro. Tap \"How is this calculated?\" on your score and the sheet puts it plainly: \"This score reflects patterns, not performance.\""
 
 features:
   - title: "Natural-language capture"
@@ -186,7 +186,7 @@ features:
   - title: "Apple Watch"
     description: "See Now, Today, and Tomorrow, swipe to complete or snooze, and dictate a new task with the same parser as the phone. The watch app needs the iPhone app installed. Pro adds Inbox triage, the workspace switcher, and two more complications."
   - title: "iPad and Mac"
-    description: "On iPad, a three-zone layout with a sidebar, a month calendar, and multiple windows. On the Mac, a toolbar, menus, keyboard shortcuts like ⌘N for a new task, right-click menus, and widgets on the desktop. Voice capture is iPhone and iPad only."
+    description: "On iPad, a three-zone layout with a sidebar, a month calendar, and multiple windows. On the Mac, a toolbar, menus, keyboard shortcuts like ⌘N for a new task, right-click menus, and widgets on the desktop. On both, the sidebar search finds any task or note, whatever its day or workspace. Voice capture is iPhone and iPad only."
 
 screenshots:
   - src: "/assets/screenshots/taskful-day/1.webp"
@@ -206,7 +206,7 @@ screenshots:
   - src: "/assets/screenshots/taskful-day/8.webp"
     alt: "Taskful Day heatmap widget with active days and a today list"
   - src: "/assets/screenshots/taskful-day/9.webp"
-    alt: "Taskful Day habits widget with streaks and a pattern"
+    alt: "Two Taskful Day widgets on the Home Screen: a weekly score with active days, and the next task on a timeline of the day"
   - src: "/assets/screenshots/taskful-day/10.webp"
     alt: "Taskful Day full-page widget with the next tasks"
 
@@ -227,7 +227,7 @@ faq:
   - q: "Is Taskful Day available on Mac?"
     a: "Yes. Taskful Day runs on Mac with macOS 14 or later, with its own toolbar, menus, keyboard shortcuts, right-click menus, multiple windows, and desktop widgets. Voice capture and Lock Screen widgets stay on iPhone and iPad, and the focus Live Activity on iPhone. With Pro, iCloud Sync keeps your Mac and your other devices on the same plan."
   - q: "Is the Mac version a separate purchase?"
-    a: "No. Taskful Day is a single App Store app that runs on iPhone, iPad, and Mac, and it's free to download on each."
+    a: "No. Taskful Day is a single App Store app that runs on iPhone, iPad, and Mac, and it's free to download on each. Buy Pro on one device and it unlocks on your other devices signed in with the same Apple Account."
   - q: "Does Taskful Day sync between iPhone, iPad, and Mac?"
     a: "Yes, with Pro. iCloud Sync is optional and runs through your own private iCloud, so tasks, checklists, reminders, workspaces, the Inbox, and your Journal stay in step across your devices. Taskful Day has no server of its own. Turning sync on or off takes an app restart."
   - q: "Is Taskful Day good for ADHD?"
@@ -247,7 +247,7 @@ faq:
   - q: "Can I import tasks from Apple Reminders?"
     a: "Yes. Taskful Day imports your incomplete reminders once, one way, skips duplicates, and turns bullet notes into checklist steps. On the free version the first import counts toward the 50-task total and shows how many reminders wait for Pro. Pro imports everything and can import again later."
   - q: "Does it work on iPad?"
-    a: "Yes. On iPad, Taskful Day has a three-zone layout with a sidebar, a month calendar, and room for multiple windows, and eight of its widgets come in extra-large. It runs on iPadOS 17.6 or later."
+    a: "Yes. On iPad, Taskful Day has a three-zone layout with a sidebar that includes search, a month calendar, and room for multiple windows, and eight of its widgets come in extra-large. It runs on iPadOS 17.6 or later."
   - q: "Can I export my data?"
     a: "Yes. Settings has Export My Data, which saves your tasks with their notes and checklist steps as a JSON file, and Delete All My Data, which erases everything."
   - q: "What macOS version does Taskful Day support?"
@@ -262,14 +262,14 @@ support:
   url: "/apps/taskful-day/support/"
 
 release:
-  first_release: "2026-01-01"
-  last_updated: "2026-04-29"
+  first_release: "2026-01-09"
+  last_updated: "2026-10-30"
   mac_first_release: "2026-04-29"
 
 ratings:
   value: "5.0"
   count: 4
   last_synced: "2026-06-03"
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 Taskful Day is a day planner for iPhone, iPad, Mac, and Apple Watch. You plan one day at a time, and whatever you don't finish moves to the next day on its own. Add tasks by typing a sentence, speaking, asking Siri, or using your watch. With Pro, see the day as a clock, a timeline, or a map, block out the week on a grid, and keep it on your Home Screen with 21 widgets. There's no account to create, and your tasks stay on your device or in your own iCloud.

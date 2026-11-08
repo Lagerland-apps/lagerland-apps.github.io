@@ -28,7 +28,7 @@ mentioned_apps:
   - observa
 read_time: "6 min read"
 excerpt: "Apple Health shows hundreds of metrics with no story attached. This post explains the interpretation gap that led to Observa, why correlation analysis beats raw charts, and what ‘plain-language insights’ look like in a privacy-first app."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 I have worn an Apple Watch since 2018. By the time I started building [Observa](/apps/observa/), Apple Health had eight years of my data: sleep, heart rate, HRV, ECG readings, mindfulness minutes, workout sessions, blood oxygen, walking steadiness, the lot.
@@ -59,7 +59,7 @@ Observa sits on top of Apple Health and answers a small set of questions directl
 
 - **How recovered am I today, and why?** Readiness weighs sleep, HRV, resting heart rate, and training load against your own typical range, and "Why this score?" shows which of them moved it.
 - **What does my HRV look like against my own baseline?** Your baseline, not the population's. A 38 ms HRV reading means nothing until you know whether your personal baseline is 32 or 56.
-- **Which habits tend to line up with better sleep and recovery for me?** Patterns ranks up to four over 14, 28, or 90 days, each with a confidence label. This is where the interesting stories are, the ones where you say "oh, of course."
+- **Which habits tend to line up with better sleep and recovery for me?** Patterns, part of Premium, ranks up to four from your whole history, each with a confidence label. This is where the interesting stories are, the ones where you say "oh, of course."
 - **Is my training load keeping pace with my recovery?** Training load compares your last 7 days with your last 28, and "Should I train today?" turns it all into Push, Maintain, Recover, or Rest. If load and recovery diverge, you are building up fatigue, however the individual workouts felt.
 
 None of this is a medical diagnosis. Observa can't tell you whether you have a clinical sleep disorder, a cardiac issue, or an autoimmune condition, and it won't pretend to. What it can do is take a year of your own data and turn it into the three or four sentences a thoughtful coach might give you if they had time to read it carefully, which most coaches don't.

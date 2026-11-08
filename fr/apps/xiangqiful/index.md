@@ -3,7 +3,7 @@ layout: app
 slug: xiangqiful
 ref: /apps/xiangqiful/
 permalink: /fr/apps/xiangqiful/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 tagline: "Apprenez les échecs chinois dès le premier coup, puis jouez, analysez et entraînez-vous."
 og_tagline: "Apprenez les échecs chinois dès le premier coup."
 
@@ -53,10 +53,10 @@ plans:
       - "Tout ce que comprend Premium · Mensuel"
       - "Environ {SAVE_YEARLY} % de moins que douze mois de Mensuel"
       - "{TRIAL} · résiliable à tout moment dans les réglages de votre compte Apple"
-    highlight_label: "Meilleure offre"
   - name: "À vie"
     price: "{P_LIFETIME} une fois"
     summary: "Tout Premium pour un seul paiement."
+    highlight_label: "Payez une fois"
     features:
       - "Tout ce que comprend Premium"
       - "Achat unique, rien à renouveler ni à résilier"
@@ -116,9 +116,9 @@ founder:
 
 value_points:
   - title: "Jouer avant de savoir lire les pièces"
-    description: "Choisissez les caractères traditionnels, les symboles occidentaux ou un jeu hybride qui montre les deux. Les leçons introduisent les caractères une pièce à la fois : vous passez au jeu traditionnel quand vous êtes prêt, ou jamais."
+    description: "Choisissez les caractères traditionnels, les symboles occidentaux ou un jeu hybride qui montre les deux. Touchez une pièce et le plateau marque chaque point où elle peut aller, chaque pièce qu’elle peut prendre et, pour un canon, l’écran par-dessus lequel il sauterait. Les leçons introduisent les caractères une pièce à la fois : vous passez au jeu traditionnel quand vous êtes prêt, ou jamais."
   - title: "Comprendre pourquoi vous avez perdu"
-    description: "Après une partie, Pikafish note chaque coup du meilleur à la gaffe, donne aux deux camps un score de précision et relève les moments clés. Chaque erreur vient avec le meilleur coup, une variante à jouer sur le plateau et un nom tiré du xiangqi lui-même."
+    description: "Après une partie, Pikafish note chaque coup sur sept niveaux, du meilleur à la gaffe, donne aux deux camps un score de précision et relève les moments clés. Chaque erreur vient avec le meilleur coup, une variante à jouer sur le plateau et un nom tiré du xiangqi lui-même."
   - title: "S’entraîner sur ses propres erreurs"
     description: "Le plan du jour est construit à partir des erreurs de vos parties analysées, suivies d’un entraînement mixte. La répétition espacée ramène les problèmes que vous avez ratés jusqu’à ce qu’ils soient acquis."
   - title: "Hors ligne, sans compte"
@@ -128,7 +128,7 @@ features:
   - title: "80 leçons en 8 parcours, toutes gratuites"
     description: "Fondamentaux, Ouvertures, Défense du palais, Tactiques de canon, Technique du cheval, Milieu de partie, Finale et Avancé, dix leçons chacun, avec les règles montrées sur le plateau. La première leçon dont tout joueur d’échecs a besoin : au xiangqi, n’avoir aucun coup légal fait perdre, et donner échec sans fin aussi. Quand l’un des deux arrive dans l’une de vos parties, l’app l’explique sur-le-champ."
   - title: "Revue de partie avec Pikafish sur l’appareil"
-    description: "Pikafish note chaque coup du meilleur à la gaffe et donne à chaque camp un score de précision. Vous voyez les moments clés de la partie, le meilleur coup et une meilleure variante à jouer sur le plateau. L’offre gratuite donne 2 analyses par jour ; Premium les rend illimitées et ajoute l’analyse multi-lignes approfondie."
+    description: "Pikafish note chaque coup sur sept niveaux, du meilleur à la gaffe, et donne à chaque camp un score de précision. Une barre d’avantage montre qui est mieux dans la position choisie. Vous voyez les moments clés de la partie, le meilleur coup et une meilleure variante à jouer sur le plateau. L’offre gratuite donne 2 analyses par jour ; Premium les rend illimitées et ajoute l’analyse multi-lignes approfondie."
   - title: "Des erreurs nommées dans la langue du xiangqi"
     description: "Les erreurs sont classées en 13 catégories et étiquetées avec 26 motifs du xiangqi, dont le canon sans écran, le cheval piégé, les conseillers brisés, le canon à tête vide, la brèche dans le palais, le verrou de fer, le mat manqué et l’initiative perdue. Chacune vous envoie travailler le même motif."
   - title: "40 adversaires avec leur propre style"
@@ -153,7 +153,7 @@ how_it_works:
     - title: "Jouer une partie ou en importer une"
       detail: "Jouez contre l’un des 40 adversaires avec les Rouges, les Noirs ou un camp tiré au hasard, ou importez une partie au format WXF ou ICCS depuis un fichier ou le presse-papiers."
     - title: "Pikafish passe chaque coup en revue"
-      detail: "Touchez Analyser, et Pikafish parcourt la partie sur votre appareil. Chaque coup est noté du meilleur à la gaffe, chaque camp reçoit un score de précision, et les moments clés sont marqués avec le meilleur coup et une meilleure variante à jouer sur le plateau. L’offre gratuite donne 2 analyses par jour ; Premium les rend illimitées et ajoute l’analyse multi-lignes approfondie."
+      detail: "Touchez Analyser, et Pikafish parcourt la partie sur votre appareil. Chaque coup est noté sur sept niveaux, du meilleur à la gaffe, chaque camp reçoit un score de précision, et les moments clés sont marqués avec le meilleur coup et une meilleure variante à jouer sur le plateau. L’offre gratuite donne 2 analyses par jour ; Premium les rend illimitées et ajoute l’analyse multi-lignes approfondie."
     - title: "Les erreurs sont nommées dans le vocabulaire du xiangqi"
       detail: "Chaque erreur importante est rangée dans l’une des 13 catégories, comme mat manqué, tactique de canon manquée, faiblesse du palais ou pièce piégée, et étiquetée avec le motif qui la sous-tend : un canon sans écran, des conseillers brisés, une brèche dans le palais ou un mat classique comme le verrou de fer."
     - title: "Vos erreurs deviennent le plan du jour"
@@ -176,7 +176,7 @@ example_insights:
       body: "Une séquence forcée termine la partie quoi que fasse votre adversaire, et dès qu’il en existe une, rien d’autre ne compte sur le plateau. Les schémas de mat se répètent : une poignée de formes finit la plupart des parties. Quand le général adverse manque de conseillers, épuisez les coups forçants avant de jouer un coup tranquille."
     - tag: "Position · Pièce piégée"
       headline: "Votre cheval n’a plus aucune case qu’il puisse atteindre sans risque."
-      body: "Un cheval bloqué à la patte, ou un canon sans rien à sauter, est du matériel que vous possédez mais ne pouvez pas utiliser. Les pièces du xiangqi sont plus lentes qu’elles n’en ont l’air, et une pièce mal placée se rétablit rarement. À la prochaine partie, avant d’avancer un cheval, comptez les intersections qu’il pourra quitter."
+      body: "Un cheval bloqué à la jambe, ou un canon sans rien à sauter, est du matériel que vous possédez mais ne pouvez pas utiliser. Les pièces du xiangqi sont plus lentes qu’elles n’en ont l’air, et une pièce mal placée se rétablit rarement. À la prochaine partie, avant d’avancer un cheval, comptez les intersections qu’il pourra quitter."
     - tag: "Défense · Faiblesse du palais"
       headline: "Écarter le conseiller de son poste a laissé au palais un mur de moins."
       body: "Deux conseillers et deux éléphants sont les murs de la forteresse, et la valeur d’un conseiller n’est pas sa valeur matérielle : un général derrière deux d’entre eux échappe à la moitié des mats standard. Ne déplacez un conseiller ou un éléphant qu’après avoir compté ce qu’il cesse de défendre."
@@ -220,7 +220,7 @@ faq:
   - q: "Qu’est-ce que Xiangqiful ?"
     a: "Xiangqiful est une application d’échecs chinois (xiangqi) pour iPhone, iPad et Mac, construite autour d’une boucle : apprendre, jouer, comprendre pourquoi, s’entraîner. Elle enseigne le jeu dès le premier coup avec 80 leçons gratuites, vous fait jouer contre 40 adversaires aux styles distincts, et le moteur Pikafish passe chaque coup en revue sur votre appareil. Les erreurs trouvées sont nommées dans le vocabulaire du xiangqi et deviennent votre prochaine séance d’entraînement, avec 902 problèmes de mat et plus de 150 exercices en complément. Elle fonctionne hors ligne, sans compte ni publicité."
   - q: "Comment jouer aux échecs chinois, et en quoi le xiangqi diffère-t-il des échecs ?"
-    a: "Le xiangqi est la forme chinoise traditionnelle des échecs, jouée dans toute la Chine, au Viêt Nam sous le nom de cờ tướng et dans toute la diaspora chinoise. Les pièces se placent sur les intersections d’une grille de 9 × 10 au lieu de cases, une rivière coupe le plateau, et chaque général est confiné à un palais de 3 × 3 avec ses deux conseillers. Plusieurs pièces surprennent les joueurs d’échecs : le canon se déplace comme une tour mais ne capture qu’en sautant exactement une pièce, le cheval peut être bloqué à la patte, les éléphants ne peuvent pas franchir la rivière, et les deux généraux ne doivent jamais se faire face sur une colonne ouverte. Le plus étonnant : un joueur sans coup légal perd (le pat est une défaite, pas une nulle), et l’échec perpétuel fait perdre le camp qui le donne."
+    a: "Le xiangqi est la forme chinoise traditionnelle des échecs, jouée dans toute la Chine, au Viêt Nam sous le nom de cờ tướng et dans toute la diaspora chinoise. Les pièces se placent sur les intersections d’une grille de 9 × 10 au lieu de cases, une rivière coupe le plateau, et chaque général est confiné à un palais de 3 × 3 avec ses deux conseillers. Plusieurs pièces surprennent les joueurs d’échecs : le canon se déplace comme une tour mais ne capture qu’en sautant exactement une pièce, le cheval peut être bloqué à la jambe, les éléphants ne peuvent pas franchir la rivière, et les deux généraux ne doivent jamais se faire face sur une colonne ouverte. Le plus étonnant : un joueur sans coup légal perd (le pat est une défaite, pas une nulle), et l’échec perpétuel fait perdre le camp qui le donne."
   - q: "Puis-je jouer sans savoir lire les caractères chinois ?"
     a: "Oui, et c’est l’une des principales raisons d’être de Xiangqiful. Choisissez le jeu occidental, qui utilise des symboles, ou le jeu hybride, qui montre chaque symbole avec son caractère pour que vous les appreniez en jouant. Les leçons introduisent les caractères une pièce à la fois, et vous pouvez passer au jeu traditionnel quand vous êtes prêt."
   - q: "Xiangqiful convient-il aux débutants complets ?"
@@ -248,7 +248,7 @@ faq:
   - q: "Xiangqiful existe-t-il en français ?"
     a: "Oui. Toute l’interface de Xiangqiful est traduite en français, leçons, revue de partie et écran d’achat compris. Le français fait partie des 40 localisations de l’app."
   - q: "Ma progression se synchronise-t-elle entre iPhone, iPad et Mac ?"
-    a: "Non. Vos parties, analyses et progression d’entraînement sont stockées sur l’appareil que vous utilisez, et aucun compte ni serveur ne permet de les synchroniser. Pour débloquer Premium sur un autre iPhone ou iPad, utilisez Restaurer les achats sur cet appareil."
+    a: "Non. Vos parties, analyses et progression d’entraînement sont stockées sur l’appareil que vous utilisez, et aucun compte ni serveur ne permet de les synchroniser. Premium, en revanche, couvre iPhone, iPad et Mac avec le même compte Apple ; sur un autre appareil, utilisez Restaurer les achats pour le débloquer."
   - q: "Xiangqiful utilise-t-il Game Center ?"
     a: "Seulement si vous le souhaitez : la connexion est facultative. Vos résultats alimentent 62 succès et huit classements : classement estimé, meilleure précision de partie, précision cette semaine, plus longue série de victoires, adversaires vaincus, série d’entraînement, problèmes résolus et niveau global. L’app a aussi son propre écran de succès."
   - q: "Xiangqiful est-il accessible ?"
@@ -283,7 +283,7 @@ Xiangqiful est une [application d’échecs chinois pour iPhone, iPad et Mac](#f
 
 Vous pouvez jouer avec les caractères traditionnels, des symboles occidentaux ou un mélange des deux, et les leçons introduisent les caractères une pièce à la fois. Les 80 leçons sont gratuites, en huit parcours du plateau aux classiques, et elles enseignent les règles qui piègent les joueurs d’échecs : ne plus avoir de coup légal fait perdre, et l’échec perpétuel aussi.
 
-Ensuite, vous jouez. Quarante adversaires répartis en huit niveaux jouent chacun un style bien à eux, de l’enfant qui vient d’apprendre les coups au Sage tout en haut, et les dix premiers sont gratuits. Après une partie, [Pikafish](https://github.com/official-pikafish/Pikafish), un moteur open source puissant, la passe en revue sur votre appareil. Il note chaque coup du meilleur à la gaffe et [nomme chaque erreur dans le vocabulaire du xiangqi](#insights) : un canon sans écran, un cheval piégé, des conseillers brisés, un verrou de fer manqué. Ces erreurs [deviennent le plan du jour](#how-it-works), et la répétition espacée ramène les problèmes que vous avez ratés.
+Ensuite, vous jouez. Quarante adversaires répartis en huit niveaux jouent chacun un style bien à eux, de l’enfant qui vient d’apprendre les coups au Sage tout en haut, et les dix premiers sont gratuits. Après une partie, [Pikafish](https://github.com/official-pikafish/Pikafish), un moteur open source puissant, la passe en revue sur votre appareil. Il note chaque coup sur sept niveaux, du meilleur à la gaffe, et [nomme chaque erreur dans le vocabulaire du xiangqi](#insights) : un canon sans écran, un cheval piégé, des conseillers brisés, un verrou de fer manqué. Ces erreurs [deviennent le plan du jour](#how-it-works), et la répétition espacée ramène les problèmes que vous avez ratés.
 
 Pour l’entraînement, il y a 902 problèmes de mat, dont 708 tirés de huit manuels classiques et tous revérifiés par le solveur de l’app, ainsi que neuf modules d’exercices et trente études de finale classiques tirées des livres de la dynastie Qing.
 

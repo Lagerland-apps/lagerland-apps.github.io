@@ -4,11 +4,11 @@ slug: soon
 ref: /apps/soon/privacy/
 permalink: /de/apps/soon/privacy/
 translated_from: 2026-11-08
-last_updated: 2026-11-07
+last_updated: 2026-11-08
 title: "Datenschutzerklärung"
 seo:
   title: "Soon. Datenschutzerklärung: kein Tracking, keine Werbung"
-  description: "Datenschutzerklärung von Soon.: kein Tracking, keine Werbung. Deine Countdowns bleiben auf dem Gerät. Was die App verarbeitet und welche Wahl du hast."
+  description: "Datenschutz bei Soon.: kein Tracking, keine Werbung. Deine Countdowns bleiben auf dem Gerät und in deiner iCloud. Was die App verarbeitet."
   keywords:
     - "soon. datenschutz"
     - "soon. datenschutzerklärung"
@@ -29,32 +29,51 @@ data_collection: >
   Wenn du einem Ereignis ein Foto hinzufügen möchtest, greift Soon. nur auf das Foto
   oder die Fotos zu, die du ausdrücklich in Apples systemeigener Fotoauswahl
   auswählst.
-  Wenn du für ein Ereignis das Wetter aktivierst, kannst du optional einen Ort
-  angeben (zum Beispiel eine Stadt), um eine Wetterübersicht für die Tage rund
-  um das Ereignis abzurufen.
-  Soon. verfolgt deinen Standort nicht in Echtzeit und erfasst keine
-  Werbe-IDs.
+  Wenn du für ein Ereignis die Wettervorhersage einschaltest, suchst du nach
+  einem Ort (zum Beispiel einer Stadt), und Soon. speichert den Namen und die
+  Koordinaten dieses Orts beim Ereignis.
+  Soon. fragt den Standort deines Geräts nie ab und liest ihn nie aus, erfasst
+  keine Werbe-IDs und sendet keine dieser Informationen an uns.
 
 data_storage: >
-  Die Daten deiner Ereignisse werden standardmäßig lokal auf deinem Gerät
-  gespeichert. Auch die Fotos, die du auswählst, und zwischengespeicherte
-  Wetterdaten bleiben auf dem Gerät.
+  Deine Ereignisse, Fotos, Pläne, Notizen und Erinnerungen werden auf deinem
+  Gerät gespeichert. Wenn du bei iCloud angemeldet bist, synchronisiert Soon.
+  sie außerdem über die private Datenbank deines eigenen iCloud-Accounts
+  (Apples CloudKit), wie unten unter „iCloud-Synchronisierung“ beschrieben.
+  Die Kopien für die Widgets und zwischengespeicherte Wetterdaten bleiben auf
+  dem Gerät.
   Wenn iCloud-Backups für dein Gerät aktiviert sind, kann Apple die App-Daten
-  je nach deinen Geräteeinstellungen in dein persönliches iCloud-Backup
+  je nach deinen Geräteeinstellungen auch in dein persönliches iCloud-Backup
   aufnehmen.
-  Soon. betreibt keine eigenen Server, auf denen deine Ereignisdaten
-  gespeichert werden.
+  Soon. betreibt keine eigenen Server, und wir können deine Daten nicht lesen.
+  „Alle meine Daten löschen“ in den Einstellungen entfernt deine Ereignisse
+  von deinem Gerät und aus iCloud.
+
+icloud_sync:
+  - >
+    Die iCloud-Synchronisierung nutzt deinen eigenen iCloud-Account und
+    funktioniert nur, solange du bei iCloud angemeldet bist. Deine Ereignisse
+    liegen samt Fotos, Plänen, Notizen und Erinnerungen in der privaten
+    CloudKit-Datenbank dieses Accounts und werden mit deinen anderen iPhones
+    synchronisiert, die mit demselben Apple Account angemeldet sind. Apple
+    speichert diese Daten nach seiner eigenen Datenschutzrichtlinie, und
+    Lagerland Apps hat keinen Zugriff darauf. In den Einstellungen zeigt
+    „iCloud-Synchronisierung“ den Status und wann deine Ereignisse zuletzt
+    synchronisiert wurden.
 
 third_parties: >
-  Soon. nutzt keine Werbe- oder Tracking-Dienste von Drittanbietern.
+  Soon. nutzt keine Werbe-, Analyse- oder Tracking-Dienste von Drittanbietern
+  und enthält keine SDKs von Drittanbietern.
   Apple verarbeitet in begrenztem Umfang Daten im Rahmen der Dienste, die du
-  nutzen möchtest, etwa bei In-App-Käufen, lokalen Mitteilungen, dem Zugriff auf Fotos
-  und Kalender und bei iCloud-Backups.
-  Wenn Wetterinformationen aktiviert sind, können Anfragen an einen Anbieter
-  von Wetterdaten gesendet werden, der daraufhin die Vorhersage liefert.
-  Diese Anfragen enthalten in der Regel ungefähre Standortinformationen oder
-  eine Ortskennung sowie die technischen Standarddaten, die für die
-  Kommunikation über das Internet nötig sind.
+  nutzen möchtest, etwa bei In-App-Käufen, lokalen Mitteilungen, der
+  Fotoauswahl, dem Zugriff auf den Kalender, der iCloud-Synchronisierung und
+  iCloud-Backups.
+  Wenn du nach einem Ort suchst, geht dein Suchtext an die Suche von Apple Karten.
+  Ist die Wettervorhersage für ein Ereignis eingeschaltet, sendet Soon. die
+  Koordinaten des gewählten Orts an Apple Wetter (WeatherKit), um die
+  Vorhersage abzurufen, zusammen mit den technischen Standarddaten, die für
+  die Kommunikation über das Internet nötig sind. Der Standort deines Geräts
+  ist nie Teil dieser Anfragen.
 
 refund_requests:
   intro: >
@@ -67,7 +86,7 @@ refund_requests:
     - "ob wir Apple eher raten, die Erstattung zu genehmigen oder abzulehnen"
   closing: >
     Deine Ereignisse, Fotos und andere personenbezogene Daten senden wir nicht,
-    denn Soon. speichert diese Daten auf deinem Gerät und wir haben sie nicht.
+    denn Soon. speichert diese Daten auf deinem Gerät und in deiner eigenen iCloud, und wir haben sie nicht.
     Die endgültige Entscheidung über jede Erstattung trifft Apple.
 
 children: >

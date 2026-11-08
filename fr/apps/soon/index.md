@@ -30,7 +30,7 @@ plans:
     features:
       - "Jusqu’à 5 événements, en compte à rebours ou en jours écoulés"
       - "Mode planification : une checklist et une chronologie pour chaque type d’événement"
-      - "Widgets d’écran d’accueil, d’écran verrouillé et StandBy qui affichent votre événement épinglé"
+      - "1 événement épinglé, affiché dans les widgets d’écran d’accueil, d’écran verrouillé et StandBy"
       - "3 thèmes (Sunrise, Ocean et Forest) et 1 photo par événement"
       - "Import depuis le calendrier, recherche, Siri et Spotlight"
       - "Souvenirs et synchronisation iCloud entre vos appareils"
@@ -39,13 +39,13 @@ plans:
     price: "{P_MONTHLY}/mois"
     summary: "Tout Premium, facturé chaque mois. Résiliable à tout moment."
     features:
-      - "Événements et événements épinglés en nombre illimité"
+      - "Événements illimités et plusieurs événements épinglés, à choisir en modifiant un événement"
       - "Les 11 thèmes et jusqu’à 10 photos par événement"
       - "Tous les widgets, avec l’événement de votre choix sur chacun"
       - "Rappels 7 jours, 3 jours et 1 jour avant, et le jour même"
       - "Le Compte à rebours final sur l’écran verrouillé et dans la Dynamic Island"
       - "Prévisions météo, notes quotidiennes et événements récurrents"
-      - "Mode Bébé, rappels du mode planification et Ce jour-là"
+      - "Mode Bébé, rappels des jalons et Ce jour-là"
       - "{TRIAL} · résiliable à tout moment"
   - name: "Premium · Annuel"
     price: "{P_YEARLY}/an"
@@ -119,7 +119,7 @@ features:
   - title: "Votre photo derrière le compte à rebours"
     description: "Utilisez une photo à vous, recadrée à votre goût, ou choisissez un dégradé. 11 thèmes au choix, dont 3 gratuits. Premium ajoute une galerie de 10 photos au plus par événement."
   - title: "Mode planification"
-    description: "Chaque événement peut avoir une checklist et une chronologie de jalons. Soon. propose un plan de départ pour les voyages, les mariages, les anniversaires, les examens, le travail, les fêtes, la santé, un bébé, les concerts et le sport, et « Revenir aux suggestions » le remet en place. Premium ajoute des rappels pour les éléments du plan."
+    description: "Chaque événement peut avoir une checklist et une chronologie de jalons. Soon. propose un plan de départ pour les voyages, les mariages, les anniversaires, les examens, le travail, les fêtes, la santé, un bébé, les concerts et le sport, et « Revenir aux suggestions » le remet en place. Premium ajoute des rappels pour les jalons de la chronologie."
   - title: "Compte à rebours, mais aussi jours écoulés"
     description: "Donnez une date passée à un événement et il compte les jours écoulés. Ces compteurs ascendants s’affichent sur les widgets, sur l’écran verrouillé et dans la commande du Centre de contrôle."
   - title: "Rappels et Compte à rebours final"
@@ -138,11 +138,11 @@ how_it_works:
   intro: "Ce qui se passe entre l’ajout d’un événement et le jour vers lequel il compte."
   steps:
     - title: "Ajoutez un événement"
-      detail: "Touchez + et répondez à « Quel est le moment ? » avec un titre et une date, plus une heure si vous voulez que le compte à rebours aille à la minute près. Choisissez une icône, un thème et une photo. Ou importez un événement depuis votre calendrier."
+      detail: "Touchez + et répondez à « Quel est le moment ? » avec un titre et une date, plus une heure s’il y en a une, pour que les widgets décomptent en direct ses dernières 24 heures. Choisissez une icône, un thème et une photo. Ou importez un événement depuis votre calendrier."
     - title: "Placez-le là où vous le verrez"
       detail: "Épinglez l’événement sur la grande carte en haut de l’onglet Accueil. Ajoutez un widget à votre écran d’accueil, à votre écran verrouillé ou à StandBy, ou la commande du Centre de contrôle sous iOS 18. Les widgets gratuits affichent votre événement épinglé ; avec Premium, vous choisissez un événement pour chaque widget."
     - title: "Obtenez un plan pour le jour J"
-      detail: "Ouvrez l’onglet Planifier et Soon. propose une checklist et une chronologie pour ce type d’événement. Cochez les tâches et ajoutez vos propres jalons. Avec Premium, un événement de type Bébé reçoit un plan guidé semaine par semaine, et les éléments du plan peuvent envoyer des rappels."
+      detail: "Ouvrez l’onglet Planifier et Soon. propose une checklist et une chronologie pour ce type d’événement. Cochez les tâches et ajoutez vos propres jalons. Avec Premium, un événement de type Bébé reçoit un plan guidé semaine par semaine, et les jalons de la chronologie peuvent envoyer des rappels."
     - title: "Regardez-le se rapprocher"
       detail: "Avec Premium, les rappels arrivent 7 jours, 3 jours et 1 jour avant, et le jour même. Les prévisions météo apparaissent dès que la date est dans moins de 7 jours, et pendant les dernières 24 heures, le Compte à rebours final s’affiche sur votre écran verrouillé et dans la Dynamic Island."
     - title: "Fêtez le jour J"
@@ -214,7 +214,7 @@ screenshot_captions:
   - alt: "Widget de compte à rebours très grand format de Soon."
 
 privacy:
-  data_collection: "minimal"
+  data_collection: "aucune"
   notes:
     - "L’app ne contient ni publicité, ni suivi, ni SDK tiers"
     - "Aucun compte : vos événements restent sur votre iPhone et, si la synchronisation iCloud est activée, dans votre iCloud privé"
@@ -227,9 +227,9 @@ faq:
   - q: "Qu’est-ce que Soon. ?"
     a: "Soon. est une application de compte à rebours pour iPhone. Vous ajoutez les événements que vous attendez, comme un voyage, un mariage, un anniversaire, un examen ou la date prévue de la naissance d’un bébé, et chacun reçoit votre photo, une checklist et une chronologie de départ pour son type d’événement, et une place parmi 26 widgets d’écran d’accueil, d’écran verrouillé et StandBy. Elle compte aussi les jours écoulés depuis une date passée et garde les événements terminés comme Souvenirs."
   - q: "À quoi puis-je faire un compte à rebours ?"
-    a: "À tout ce qui a une date. Soon. propose des types d’événements pour les voyages, les mariages, les anniversaires, les anniversaires de couple, les examens, le travail, les fêtes, la santé, un bébé, les concerts, le sport et un événement générique, et le mode planification suggère une checklist pour la plupart. Donnez à un événement une heure en plus de la date et la carte compte à rebours à la minute près. Donnez-lui une date passée et elle compte les jours écoulés."
+    a: "À tout ce qui a une date. Soon. propose des types d’événements pour les voyages, les mariages, les anniversaires, les anniversaires de couple, les examens, le travail, les fêtes, la santé, un bébé, les concerts, le sport et un événement générique, et le mode planification suggère une checklist pour la plupart. Donnez à un événement une heure en plus de la date, et les widgets affichent en direct les heures et les minutes pendant ses dernières 24 heures. Donnez-lui une date passée et elle compte les jours écoulés."
   - q: "Soon. est-elle gratuite ?"
-    a: "Oui. La version gratuite comprend jusqu’à 5 événements, les checklists et chronologies du mode planification, les widgets de votre événement épinglé, 3 thèmes, 1 photo par événement, l’import depuis le calendrier, la recherche, Siri, les Souvenirs et la synchronisation iCloud. Premium ajoute des événements illimités, les 11 thèmes, jusqu’à 10 photos par événement, n’importe quel événement sur n’importe quel widget, les rappels, l’Activité en direct Compte à rebours final, les prévisions météo, les notes quotidiennes, les événements récurrents, le mode Bébé et Ce jour-là."
+    a: "Oui. La version gratuite comprend jusqu’à 5 événements, 1 événement épinglé, les checklists et chronologies du mode planification, les widgets de votre événement épinglé, 3 thèmes, 1 photo par événement, l’import depuis le calendrier, la recherche, Siri, les Souvenirs et la synchronisation iCloud. Premium ajoute des événements illimités, plusieurs événements épinglés, les 11 thèmes, jusqu’à 10 photos par événement, n’importe quel événement sur n’importe quel widget, les rappels, l’Activité en direct Compte à rebours final, les prévisions météo, les notes quotidiennes, les événements récurrents, le mode Bébé et Ce jour-là."
   - q: "Combien coûte Premium ?"
     a: "{P_MONTHLY} par mois ou {P_YEARLY} par an, chacun avec {TRIAL}, ou {P_LIFETIME} en achat unique pour À vie. Vous pouvez résilier un abonnement à tout moment, et les trois formules prennent en charge le partage familial. Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise."
   - q: "Comment mettre un compte à rebours en widget sur iPhone ?"
@@ -239,7 +239,7 @@ faq:
   - q: "Peut-on compter les jours depuis une date passée ?"
     a: "Oui. Un événement daté du passé compte les jours écoulés, sur sa carte, sur les widgets, sur l’écran verrouillé et dans la commande du Centre de contrôle. Les rappels et l’Activité en direct ne concernent que les comptes à rebours. Par ailleurs, un compte à rebours arrivé à son jour peut être enregistré comme Souvenir, qui affiche les jours écoulés depuis."
   - q: "Comment fonctionnent les rappels ?"
-    a: "Avec Premium, activez les rappels d’un événement et Soon. envoie une notification 7 jours, 3 jours et 1 jour avant, et le jour même à l’heure de l’événement. Les éléments du plan peuvent aussi avoir des rappels, et Ce jour-là envoie un rappel chaque année à l’anniversaire d’un souvenir. La version gratuite n’envoie aucun rappel."
+    a: "Avec Premium, activez les rappels d’un événement et Soon. envoie une notification 7 jours, 3 jours et 1 jour avant, et le jour même à l’heure de l’événement. Si le plan d’un événement comporte des jalons, vous recevez un rappel pour chacun à la place de ceux de 7, 3 et 1 jour, et Ce jour-là envoie un rappel chaque année à l’anniversaire d’un souvenir. La version gratuite n’envoie aucun rappel."
   - q: "D’où viennent les prévisions météo ?"
     a: "D’Apple Météo. Ajoutez un lieu à un événement en cherchant une ville ou un endroit, et Soon. affiche les prévisions dès que la date est dans moins de 7 jours. Les prévisions météo font partie de Premium."
   - q: "Les notes quotidiennes sont-elles écrites par une IA ?"
@@ -247,7 +247,7 @@ faq:
   - q: "Soon. me suit-elle ou collecte-t-elle des données ?"
     a: "Non. L’app ne contient ni publicité, ni traceurs, ni SDK tiers, et vous ne créez jamais de compte. Vos événements sont stockés sur votre iPhone et, si la synchronisation iCloud est activée, dans votre iCloud privé, que Lagerland Apps ne peut pas lire. Réglages propose Exporter mes données et Supprimer toutes mes données."
   - q: "Que deviennent mes événements si je change d’iPhone ?"
-    a: "Activez la synchronisation iCloud dans Réglages et vos événements se synchronisent, via votre iCloud privé, vers les autres iPhone connectés au même compte Apple. Vous pouvez aussi tout exporter dans un fichier JSON depuis Réglages. Un achat Premium est restauré sur tout iPhone connecté avec le même compte Apple."
+    a: "Connectez-vous à iCloud avec le même compte Apple sur les deux iPhone, et vos événements se synchronisent via votre iCloud privé. Réglages affiche l’état de la synchronisation sous « Synchronisation iCloud ». Vous pouvez aussi tout exporter dans un fichier JSON depuis Réglages. Un achat Premium est restauré sur tout iPhone connecté avec le même compte Apple."
   - q: "Soon. fonctionne-t-elle sur Apple Watch, iPad ou Mac ?"
     a: "Non. Soon. ne tourne que sur iPhone et demande iOS 17.6 ou une version plus récente. La commande du Centre de contrôle demande iOS 18."
   - q: "Puis-je partager un compte à rebours avec quelqu’un ?"
@@ -277,12 +277,12 @@ enrichment:
 last_updated: 2026-11-08
 ---
 {%- include t.html -%}
-Soon. est une [application de compte à rebours pour iPhone](#features) pour les événements qui comptent : un voyage, un mariage, un anniversaire, un examen, un concert ou la date prévue de la naissance d’un bébé. Dans l’app, chaque événement s’appelle un Moment et reçoit une carte plein écran avec votre photo ou un thème en dégradé, et une heure si vous voulez un compte à rebours à la minute près. Donnez une date passée à un événement et il compte les jours écoulés, si bien que la même app suit aussi le temps depuis lequel quelque chose a commencé.
+Soon. est une [application de compte à rebours pour iPhone](#features) pour les événements qui comptent : un voyage, un mariage, un anniversaire, un examen, un concert ou la date prévue de la naissance d’un bébé. Dans l’app, chaque événement s’appelle un Moment et reçoit une carte plein écran avec votre photo ou un thème en dégradé, et une heure si l’événement en a une : les widgets décomptent alors en direct ses dernières 24 heures. Donnez une date passée à un événement et il compte les jours écoulés, si bien que la même app suit aussi le temps depuis lequel quelque chose a commencé.
 
-Chaque événement peut avoir un plan. Soon. propose [une checklist et une chronologie de départ](#how-it-works) pour son type d’événement, et le mode planification est gratuit. Avec Premium, un événement de type Bébé reçoit un plan semaine par semaine, et les éléments du plan peuvent envoyer des rappels. [Les exemples de cette page](#templates) montrent à quoi ressemblent dans l’app un voyage, un examen, un anniversaire et un souvenir.
+Chaque événement peut avoir un plan. Soon. propose [une checklist et une chronologie de départ](#how-it-works) pour son type d’événement, et le mode planification est gratuit. Avec Premium, un événement de type Bébé reçoit un plan semaine par semaine, et les jalons de la chronologie peuvent envoyer des rappels. [Les exemples de cette page](#templates) montrent six événements dans l’app : un voyage, un bébé à venir, un anniversaire, un examen, des jours écoulés et un souvenir.
 
 Soon. propose 26 [widgets](#features) pour l’écran d’accueil, l’écran verrouillé et StandBy, et, sous iOS 18, une commande des jours restants pour le Centre de contrôle. Les widgets gratuits affichent votre événement épinglé. Premium vous laisse choisir n’importe quel événement pour chaque widget, ajoute des rappels 7 jours, 3 jours et 1 jour avant puis le jour même, et lance le Compte à rebours final sur votre écran verrouillé et dans la Dynamic Island pendant les dernières 24 heures. Le jour venu, Soon. fête l’événement avec des confettis et propose de l’enregistrer comme Souvenir. Avec Premium, Ce jour-là le fait revenir à chaque anniversaire.
 
 L’app <a href="{% include l.html url="/apps/soon/privacy/" %}"{% if l_en %} hreflang="en"{% endif %}>n’a ni publicité ni suivi et ne demande aucun compte{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>. Vos événements restent sur votre iPhone et, si la synchronisation iCloud est activée, dans votre iCloud privé, et l’app ne contient aucun SDK tiers. Si vous comparez Soon. à <a href="{% include l.html url="/alternatives/days-matter/" %}"{% if l_en %} hreflang="en"{% endif %}>Days Matter{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, <a href="{% include l.html url="/alternatives/countdowns-apalon/" %}"{% if l_en %} hreflang="en"{% endif %}>Countdowns (Apalon){% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, <a href="{% include l.html url="/alternatives/dreamdays/" %}"{% if l_en %} hreflang="en"{% endif %}>Dreamdays{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, <a href="{% include l.html url="/alternatives/countdown-star/" %}"{% if l_en %} hreflang="en"{% endif %}>Countdown Star{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> ou <a href="{% include l.html url="/alternatives/wedding-happy/" %}"{% if l_en %} hreflang="en"{% endif %}>Wedding Happy{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, [le tableau comparatif](#compare-heading-soon) en détaille les différences.
 
-La version gratuite comprend jusqu’à 5 événements, le mode planification, les widgets de votre événement épinglé, 3 thèmes, l’import depuis le calendrier, les Souvenirs et la synchronisation iCloud. Premium coûte {P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec {TRIAL}, ou {P_LIFETIME} en achat unique, et le partage familial s’applique aux trois formules. Soon. est développée par Lagerland Apps, un studio Apple indépendant installé en Finlande.
+La version gratuite comprend jusqu’à 5 événements, le mode planification, les widgets de votre événement épinglé, 3 thèmes, l’import depuis le calendrier, les Souvenirs et la synchronisation iCloud. Premium coûte {P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec {TRIAL}, ou {P_LIFETIME} en achat unique, et le partage familial s’applique aux trois formules. L’app est disponible en 36 langues, et Réglages permet d’en changer la langue. Soon. est développée par Lagerland Apps, un studio Apple indépendant installé en Finlande.

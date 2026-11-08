@@ -3,7 +3,7 @@ layout: app
 slug: gymlogger-x
 ref: /apps/gymlogger-x/
 permalink: /fr/apps/gymlogger-x/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 tagline: "Saisissez vos séries vite, suivez un programme éprouvé et repérez tôt un exercice qui stagne."
 og_tagline: "Saisissez vos séries vite. Repérez tôt les plateaux."
 quick_answer: "GymLogger X est une application de musculation pour iPhone, avec une app Apple Watch, pour qui veut saisir ses séries vite et suivre un programme. La saisie, l’app Apple Watch, le Smart Program Creator et 6 des 44 programmes prêts à l’emploi sont gratuits, un programme à la fois. Pro ajoute les 44 programmes, tout votre historique et des analyses qui repèrent plateaux, fatigue et déséquilibres musculaires à partir de vos propres séances, pour {P_MONTHLY}/mois ou {P_YEARLY}/an (chacun commence par {TRIAL}) ou {P_LIFETIME} en achat unique. Pas de publicité, et vous ne créez jamais de compte."
@@ -50,7 +50,7 @@ plans:
       - "Tout Pro, débloqué définitivement"
       - "Achat unique, sans renouvellement"
       - "Partage familial"
-    highlight_label: "Paiement unique"
+    highlight_label: "Payez une fois"
 
 seo:
   title: "Application musculation Apple Watch et iPhone | GymLogger X"

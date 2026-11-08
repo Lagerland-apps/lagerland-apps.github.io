@@ -3,7 +3,7 @@ layout: app
 slug: wanderwiki
 ref: /apps/wanderwiki/
 permalink: /de/apps/wanderwiki/
-translated_from: 2026-11-07
+translated_from: 2026-11-08
 tagline: "Durch Wikipedia wischen, ein Gedanke nach dem anderen."
 quick_answer: "WanderWiki ist eine App für iPhone und iPad (ab iOS 18.2), mit der du durch zufällige Wikipedia-Artikel wischst statt zu suchen: Zufallsartikel aus der ganzen Enzyklopädie, 16 Themen zum Stöbern und eine aufgeräumte Leseansicht für den ganzen Artikel, in 32 Wikipedia-Sprachausgaben, auch der deutschen. 20 Artikel am Tag sind kostenlos, ganz ohne Konto. Premium schaltet „Für dich“, „Heute in der Geschichte“ und unbegrenztes Wischen frei, für {P_MONTHLY}/Monat oder {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig. Wenn du zum ersten Mal abonnierst, kannst du beide Abos zuerst {TRIAL}. Die App zeigt keine Werbung und trackt nichts, und gespeicherte Artikel, Favoriten und Lesefortschritt bleiben auf deinem Gerät."
 

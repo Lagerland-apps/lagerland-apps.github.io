@@ -3,8 +3,8 @@ layout: journal
 slug: resolutions-and-the-fitness-app-trap
 ref: /journal/resolutions-and-the-fitness-app-trap/
 permalink: /de/journal/resolutions-and-the-fitness-app-trap/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Gute Vorsätze und Fitness-Apps: Wenn du dich in Woche eins schuldig fühlst, liegt es am Design"
 seo:
@@ -65,7 +65,7 @@ Eine Handvoll Gestaltungsentscheidungen zeigt zuverlässig, dass eine App dich a
 
 ## Was dieses Studio anbietet
 
-[Taskful Day](/de/apps/taskful-day/) ist ein Tagesplaner, in dem unerledigte Aufgaben von selbst auf heute übergehen, und die Liste für heute zeigt nie einen Hinweis „überfällig“. Ein Streak ist dort eine Kennzahl unter „Einblicke“, keine Flamme auf dem Startbildschirm. Es gibt einen Timer im Fokusmodus (mit Pro) und ein Tagebuch, wenn du sie willst, und der Bildschirm „Einblicke“ beschreibt seine eigenen Diagramme mit dem Satz „Das ist nur ein Muster, keine Bewertung.“
+[Taskful Day](/de/apps/taskful-day/) ist ein Tagesplaner, in dem unerledigte Aufgaben von selbst auf heute übergehen, und die Liste für heute zeigt nie einen Hinweis „überfällig“. Ein Streak ist dort eine Kennzahl unter „Einblicke“, keine Flamme auf dem Startbildschirm. Es gibt einen Timer im Fokusmodus (mit Pro) und ein Tagebuch, wenn du sie willst, und die Erklärung zum Score unter „Einblicke“ sagt: „Das ist nur ein Muster, keine Bewertung.“
 
 [GymLogger X](/de/apps/gymlogger-x/) ist ein Trainingstagebuch für Krafttraining ohne sozialen Feed und ohne Rangliste, und es schickt überhaupt keine Mitteilungen, meldet sich also auch nie wegen einer verpassten Einheit. Es erfasst Sätze, Wiederholungen, Rekorde und den Verlauf deines 1RM, und wenn du nach einer Woche Pause zurückkommst, ist deine Historie da, wo du sie gelassen hast.
 

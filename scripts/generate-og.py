@@ -85,7 +85,7 @@ ACCENT = {
 }
 
 TAGLINE = {
-    "aftershift":    "Naps that count as real recovery.",
+    "aftershift":    "Recovery measured shift to shift.",
     "appmeta-pulse": "Your App Store Connect dashboard.",
     "clippet":       "Everything you copy, kept.",
     "millrace":      "A puzzle with a right answer.",
@@ -96,7 +96,7 @@ TAGLINE = {
 }
 
 META = {
-    "aftershift":    "Free · Shift Recovery Score · No account · iPhone",
+    "aftershift":    "Free · Shift-to-shift sleep · No account · iPhone",
     "allpaid":       "Free · No bank login · Widgets + Siri · iPhone · iPad · Mac",
     "appmeta-pulse": "Free · Read-only App Store Connect · iPhone",
     "appmeta":       "App Store Connect, native · $17.99/yr · Mac",

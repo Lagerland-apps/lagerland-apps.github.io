@@ -106,6 +106,7 @@ Per-app tier names follow each app's German UI (de-glossary.md): Premium for Obs
 Xiangqiful, WanderWiki (the app never says "Plus"); Pro+ for RightSplit; Pro for Pawza and Taskful Day. Where the
 English site's tier name differs from the app (Observa "Pro" vs app "Premium", WanderWiki "Plus" vs "Premium",
 Chessful "Pro" vs "Premium"), the German page follows the app and the mismatch is listed in ~/Downloads/githubcode/ISSUES.md.
+Exception, owner decision 2026-11-08: Chessful's tier is **Pro** on every language page (as in the store IAP names), although the app UI still says Premium until its fix ships.
 
 ## Keyword research
 

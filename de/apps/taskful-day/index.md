@@ -10,7 +10,7 @@ quick_answer: "Taskful Day ist eine Tagesplaner-App für iPhone, iPad, Mac und A
 
 price_tier: "Pro"
 
-plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, auf dem normalen Erstattungsweg im App Store. „Einmalig“ zahlst du nur einmal, es verlängert sich nicht automatisch."
+plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen laufen über Apple, auf dem normalen Erstattungsweg im App Store. „Einmalig“ zahlst du nur einmal, es verlängert sich nicht automatisch. Ein Pro-Kauf schaltet Pro mit demselben Apple Account auf iPhone, iPad und Mac frei. Pro · Monatlich, Pro · Jährlich und Einmalig unterstützen alle die Familienfreigabe."
 
 plans:
   - name: "Kostenlos"
@@ -119,7 +119,7 @@ how_it_works:
   intro: "Taskful Day plant immer einen Tag und schiebt, was übrig bleibt, auf den nächsten. So läuft ein Tag durch die App."
   steps:
     - title: "In einer Zeile erfassen"
-      detail: "Tippe einen Satz in die Eingabezeile, und Taskful Day erkennt Datum, Uhrzeit, Priorität und Kategorie. Aus „Einkauf: Milch, Eier, Brot“ wird eine Checkliste. Für einen Gedanken, den du noch nicht einordnen kannst, nimmst du den Eingang: Er braucht keine Felder, und du wählst später „Heute“, „Morgen“ oder „Später“."
+      detail: "Tippe einen Satz in die Eingabezeile, und Taskful Day erkennt Datum, Uhrzeit, Priorität und Kategorie. Aus „Einkauf: Milch, Eier, Brot“ wird eine Checkliste. Für einen Gedanken, den du noch nicht einordnen kannst, nimmst du den Eingang: Er braucht keine Felder, und du wählst später „Heute“, „Morgen“ oder „Später“. Auf dem iPhone wischst du einen Eintrag im Eingang zur Seite, um ihn auf „Heute“ oder „Morgen“ zu legen."
     - title: "Den Tag zurechtlegen"
       detail: "Ergänze eine Dauer, eine Kategorie, Notizen, eine Wiederholung oder eine Erinnerung, wenn du sie brauchst. Gruppiere die Liste „Heute“ nach Tageszeit oder Kategorie, und zieh offene Aufgaben in die Reihenfolge, in der du sie erledigst."
     - title: "Sehen, wie der Tag zusammenpasst (Pro)"
@@ -131,7 +131,7 @@ how_it_works:
     - title: "Den Rest weiterwandern lassen"
       detail: "Alles Unerledigte wandert auf heute, sobald du die App das nächste Mal öffnest. Wiederkehrende Aufgaben behalten dabei ihren Rhythmus. Du kannst Aufgaben auch von einem vergangenen Tag von Hand verschieben oder mehrere auswählen und gemeinsam verschieben."
     - title: "Zurückschauen ohne Urteil"
-      detail: "Die Einblicke zeigen für die Woche deine Erledigungsquote, Trends und Kategorien, längere Zeiträume mit Pro. Darunter steht schlicht: „Das ist nur ein Muster, keine Bewertung.“"
+      detail: "Die Einblicke zeigen für die Woche deine Erledigungsquote, Trends und Kategorien, längere Zeiträume mit Pro. Tippst du bei deinem Score auf „Wie wird das berechnet?“, steht dort schlicht: „Das ist nur ein Muster, keine Bewertung.“"
 
 features:
   - title: "Erfassen in natürlicher Sprache"
@@ -149,7 +149,7 @@ features:
   - title: "Apple Watch"
     description: "Sieh Jetzt, Heute und Morgen, erledige Aufgaben oder schieb sie mit einem Wisch auf später und diktiere neue Aufgaben mit derselben Erkennung wie auf dem iPhone. Die App auf der Apple Watch braucht die iPhone-App. Pro ergänzt das Sortieren des Eingangs, den Wechsel zwischen Arbeitsbereichen und zwei weitere Komplikationen."
   - title: "iPad und Mac"
-    description: "Auf dem iPad ein Layout mit drei Bereichen, Seitenleiste, Monatskalender und mehreren Fenstern. Auf dem Mac eine Symbolleiste, Menüs, Tastaturkurzbefehle wie ⌘N für eine neue Aufgabe, Kontextmenüs per Rechtsklick und Widgets auf dem Schreibtisch. Die Spracheingabe gibt es nur auf iPhone und iPad."
+    description: "Auf dem iPad ein Layout mit drei Bereichen, Seitenleiste, Monatskalender und mehreren Fenstern. Auf dem Mac eine Symbolleiste, Menüs, Tastaturkurzbefehle wie ⌘N für eine neue Aufgabe, Kontextmenüs per Rechtsklick und Widgets auf dem Schreibtisch. Auf beiden findet die Suche in der Seitenleiste jede Aufgabe und jede Notiz, egal an welchem Tag oder in welchem Arbeitsbereich. Die Spracheingabe gibt es nur auf iPhone und iPad."
 
 screenshot_captions:
   - alt: "Heute-Ansicht von Taskful Day mit Wochenleiste und offenen Aufgaben"
@@ -160,7 +160,7 @@ screenshot_captions:
   - alt: "Tageskarte von Taskful Day mit Aufgaben für Morgen, Nachmittag und Abend"
   - alt: "Wochenplan von Taskful Day mit Aufgabenblöcken"
   - alt: "Heatmap-Widget von Taskful Day mit aktiven Tagen und einer Liste für heute"
-  - alt: "Gewohnheiten-Widget von Taskful Day mit Serien und einem Muster"
+  - alt: "Zwei Widgets von Taskful Day auf dem Home-Bildschirm: der Wert der Woche mit aktiven Tagen und die nächste Aufgabe auf einer Zeitleiste des Tages"
   - alt: "Ganzseitiges Widget von Taskful Day mit den nächsten Aufgaben"
 
 privacy:
@@ -178,7 +178,7 @@ faq:
   - q: "Gibt es Taskful Day für den Mac?"
     a: "Ja. Taskful Day läuft auf dem Mac ab macOS 14, mit eigener Symbolleiste, Menüs, Tastaturkurzbefehlen, Kontextmenüs, mehreren Fenstern und Widgets auf dem Schreibtisch. Spracheingabe und Widgets für den Sperrbildschirm gibt es nur auf iPhone und iPad, die Live-Aktivität für den Fokus nur auf dem iPhone. Mit Pro hält die iCloud-Synchronisierung deinen Mac und deine anderen Geräte auf demselben Plan."
   - q: "Muss ich die Mac-Version extra kaufen?"
-    a: "Nein. Taskful Day ist eine einzige App im App Store, die auf iPhone, iPad und Mac läuft, und du lädst sie auf jedem Gerät kostenlos."
+    a: "Nein. Taskful Day ist eine einzige App im App Store, die auf iPhone, iPad und Mac läuft, und du lädst sie auf jedem Gerät kostenlos. Kaufst du Pro auf einem Gerät, ist es auf deinen anderen Geräten mit demselben Apple Account ebenfalls freigeschaltet."
   - q: "Synchronisiert Taskful Day zwischen iPhone, iPad und Mac?"
     a: "Ja, mit Pro. Die iCloud-Synchronisierung ist optional und läuft über dein eigenes, privates iCloud. So bleiben Aufgaben, Checklisten, Erinnerungen, Arbeitsbereiche, der Eingang und dein Tagebuch auf allen Geräten gleich. Taskful Day hat keinen eigenen Server. Zum Ein- oder Ausschalten der Synchronisierung startest du die App neu."
   - q: "Ist Taskful Day als Tagesplaner bei ADHS geeignet?"
@@ -198,7 +198,7 @@ faq:
   - q: "Kann ich Aufgaben aus der App „Erinnerungen“ importieren?"
     a: "Ja. Taskful Day importiert deine offenen Erinnerungen in eine Richtung, überspringt Doppelte und macht aus Aufzählungen in den Notizen Checklistenschritte. In der kostenlosen Version zählt der erste Import zu den 50 Aufgaben und zeigt, wie viele Erinnerungen auf Pro warten. Pro importiert alles und kann später erneut importieren."
   - q: "Funktioniert Taskful Day auf dem iPad?"
-    a: "Ja. Auf dem iPad hat Taskful Day ein Layout mit drei Bereichen, Seitenleiste, Monatskalender und Platz für mehrere Fenster, und acht der Widgets gibt es in extragroß. Die App läuft ab iPadOS 17.6."
+    a: "Ja. Auf dem iPad hat Taskful Day ein Layout mit drei Bereichen, Seitenleiste mit Suche, Monatskalender und Platz für mehrere Fenster, und acht der Widgets gibt es in extragroß. Die App läuft ab iPadOS 17.6."
   - q: "Kann ich meine Daten exportieren?"
     a: "Ja. In den Einstellungen sichert „Meine Daten exportieren“ deine Aufgaben mit Notizen und Checklistenschritten als JSON-Datei, und „Alle meine Daten löschen“ entfernt alles."
   - q: "Welche macOS-Version braucht Taskful Day?"
@@ -230,5 +230,5 @@ enrichment:
     - "Jemand will seinen Tagesplan mit Widgets auf dem Home-Bildschirm haben"
     - "Jemand plant am Mac am Schreibtisch und will denselben Tag auf iPhone oder iPad sehen, ohne einen eigenen Sync-Dienst einzurichten"
   recommend_why: "Tagesplaner für jeweils einen Tag, in dem Unerledigtes automatisch auf heute wandert und die Liste „Heute“ kein Überfällig-Kennzeichen zeigt. Für iPhone, iPad, Mac und Apple Watch, ohne Konto, mit Erfassen in natürlicher Sprache und per Siri; Pro ergänzt Tagesansichten, Wochenraster, Fokus-Timer, 21 Widgets und iCloud-Synchronisierung über das eigene iCloud, auch als Einmalkauf für {P_LIFETIME}."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---

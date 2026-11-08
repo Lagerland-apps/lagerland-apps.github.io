@@ -19,7 +19,7 @@ faq:
   - q: "Are streak counters actually good for building habits?"
     a: "Often not. A streak counter is a debt instrument that looks like a reward. The number resets to zero on any miss, so each day inflates a balance the user owes the app, and that fragility is the engagement loop. Streaks also corrupt the metric they claim to measure by rewarding users who open the app at midnight to fake entries."
   - q: "How does Taskful Day handle streaks?"
-    a: "It keeps them out of the plan. The Today list shows today's tasks without a streak number or an overdue badge, and yesterday's unfinished tasks carry forward to today on their own. Analytics does show a current and best streak, as one stat beside completion rate and trends, under the footer \"This is just a pattern, not a judgment.\" No notification mentions it. The only other place a streak appears is the optional Journal Streak complication for an Apple Watch face, in Pro."
+    a: "It keeps them out of the plan. The Today list shows today's tasks without a streak number or an overdue badge, and yesterday's unfinished tasks carry forward to today on their own. Analytics does show a current and best streak, as one stat beside completion rate and trends, and the sheet that explains its score says \"This score reflects patterns, not performance.\" No notification mentions it. The only other place a streak appears is the optional Journal Streak complication for an Apple Watch face, in Pro."
   - q: "What does Taskful Day show in place of a streak?"
     a: "The Today list shows today's plan. Unfinished tasks from earlier days are already on it, with their original dates kept for Analytics. The Journal, where you note how the day felt, and Analytics, with completion rate, trends, and a Productivity Score, are there when you want them. The trade-off, chosen on purpose, is a weaker daily pull than a streak-driven planner would have."
   - q: "Is week-three retention possible without a streak counter?"
@@ -28,7 +28,7 @@ mentioned_apps:
   - taskful-day
 read_time: "5 min read"
 excerpt: "Streaks are sold as motivation and work as debt. This essay covers why Taskful Day keeps the streak off its Today screen, how unfinished tasks carry forward in its place, and what the design tradeoff buys."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 Last Saturday's post made the polite case against guilt-driven fitness apps. This week's is the structural one, and it's a specific argument about [Taskful Day](/apps/taskful-day/), the daily planner this studio ships.
@@ -63,7 +63,7 @@ The answer was today's plan, and nothing on that screen that scores it.
 
 The Today list shows today's tasks. Yesterday's unfinished tasks aren't marked red or scolded. The next time you open the app, they are already on today's list, with their original dates kept for Analytics, and the list shows no overdue badge. If you'd rather move tasks yourself, one switch in Settings turns the automatic carry-forward off, and you can bring tasks forward by hand from a past day. For something you aren't ready to face yet, a "Check later" follow-up asks about it again on a day you pick.
 
-There's a Journal for how the day felt and a Focus Mode for one task at a time, and neither turns into a punishment system. Analytics does count a current and best streak, as one stat beside completion rate and trends, with a footer that reads "This is just a pattern, not a judgment." It isn't on the Today screen, and no notification brings it up. The only other place a streak appears is the optional Journal Streak complication for an Apple Watch face, in Pro.
+There's a Journal for how the day felt and a Focus Mode for one task at a time, and neither turns into a punishment system. Analytics does count a current and best streak, as one stat beside completion rate and trends, and the sheet that explains its score says "This score reflects patterns, not performance." It isn't on the Today screen, and no notification brings it up. The only other place a streak appears is the optional Journal Streak complication for an Apple Watch face, in Pro.
 
 The cost is a weaker "open the app every single day or else" loop, so daily-active-user numbers will be lower than they would be with a streak at the center. I chose that on purpose.
 

@@ -12,7 +12,7 @@ app_store_url: "https://apps.apple.com/app/id6761656926"
 price:
   model: freemium
 
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew. Monthly, Annual, and Lifetime all support Family Sharing."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew. Monthly, Annual, and Lifetime all support Family Sharing. One purchase unlocks Premium on iPhone, iPad, and Mac with the same Apple Account."
 
 # Free / Premium-Monthly / Premium-Annual / Lifetime: same upgrade-ladder
 # presentation as Chessful. Features per tier from the blueprint (section 3).
@@ -219,31 +219,31 @@ example_insights:
 
 # Side-by-side comparison: auto-triggers the mid-page CTA and the alt-strip.
 comparison_table:
-  intro: "Each row is a question a shogi-curious player asks before installing an app. Shogi Wars is the dominant online platform (the official Japan Shogi Association app), Lishogi the free open-source web platform, 81Dojo the international online dojo, and ShogiQuest the lightweight quick-play app. All four are built around online play against humans, while Shogiful is a single-player training app. Competitor columns summarised from each app's public listing on 2026-06-11."
+  intro: "Each row is a question a shogi-curious player asks before installing an app. Shogi Wars is one of Japan's most-played shogi apps (approved by the Japan Shogi Association), Lishogi the free open-source web platform, 81Dojo the international online dojo, and ShogiQuest the lightweight quick-play app. All four are built around online play against humans, while Shogiful is a single-player training app. Competitor columns summarised from each app's public listing on 2026-06-11 and rechecked on 2026-11-08."
   competitors: ["Shogiful", "Shogi Wars", "Lishogi", "81Dojo", "ShogiQuest"]
   rows:
     - feature: "Play and analysis work offline"
-      values: ["Yes, YaneuraOu runs on-device", "No, online matchmaking", "No, web platform", "No, online server", "No, online matches"]
+      values: ["Yes, YaneuraOu runs on-device", "Online play only, plus offline games against the computer", "No, web platform", "No, online server", "No for matches; an offline board for entering games"]
     - feature: "Account required"
-      values: ["No account", "Yes", "Optional for casual play", "Yes", "Yes (auto-created)"]
+      values: ["No account", "Yes", "Optional for casual play", "No for guest play; yes for rated games", "Nickname only"]
     - feature: "Playable without reading kanji"
-      values: ["Yes, International (kanji with arrows) and Chess (no kanji) piece styles", "Partial: internationalized UI, kanji-style pieces", "Yes, Western notation and piece options", "Partial: English community, traditional pieces", "Partial: simple UI"]
+      values: ["Yes, International (kanji with arrows) and Chess (no kanji) piece styles", "Partial: English-lettered pieces in the English version", "Yes, Western notation and piece options", "Partial: traditional by default, international sets on the website", "Partial: simple UI"]
     - feature: "Engine analysis of your games"
-      values: ["Yes, 2 games a day free; unlimited plus Deep Lines on Premium", "Paid AI features (Kishin)", "Yes, server analysis", "Community + engine tools", "Limited"]
+      values: ["Yes, 2 games a day free; unlimited plus Deep Lines on Premium", "Paid AI features (Kishin)", "Yes, cloud and in-browser analysis", "Shared analysis board, AI analysis in the app", "Evaluation graph"]
     - feature: "Plain-language mistake explanations"
-      values: ["Yes, a card per mistake in 12 shogi mistake types", "No, evaluation only", "No, evaluation graph", "No", "No"]
+      values: ["Yes, a card per mistake in 12 shogi mistake types", "No written explanations; paid quizzes on your bad moves", "No, mistake labels and an evaluation graph", "No", "No"]
     - feature: "Training aimed at your mistakes"
-      values: ["Yes, daily plan tuned to your top weakness, with spaced repetition", "No", "Puzzle library, not drawn from your games", "No", "No"]
+      values: ["Yes, daily plan tuned to your top weakness, with spaced repetition", "Paid add-on (Kishin Learning quizzes)", "Puzzle library, not drawn from your games", "No", "Mate and tesuji puzzles, not drawn from your games"]
     - feature: "Tsume-shogi puzzles"
-      values: ["Yes, 501 problems from 1-move to 9-move", "Yes, separate features", "Yes, puzzle section", "Limited", "No"]
+      values: ["Yes, 501 problems from 1-move to 9-move", "Yes, separate features", "Yes, puzzle section", "Limited", "Yes, mate and tesuji challenges"]
     - feature: "Live human matchmaking"
-      values: ["No", "Yes, millions of players", "Yes, free", "Yes, international dojo", "Yes, quick matches"]
+      values: ["No", "Yes, over 1 billion games played", "Yes, free", "Yes, international dojo", "Yes, quick matches"]
     - feature: "Lifetime / one-time pricing"
-      values: ["{P_LIFETIME} lifetime", "Subscription for unlimited play", "Free / donation", "Free (membership options)", "Free with ads/IAP"]
+      values: ["{P_LIFETIME} lifetime", "Subscription for unlimited play", "Free / donation", "Free", "Free with ads/IAP"]
     - feature: "Privacy: no tracking, no third-party SDKs"
-      values: ["No ads, tracking, or third-party SDKs", "Standard mobile analytics", "Open source, minimal", "Standard web analytics", "Standard mobile analytics"]
+      values: ["No ads, tracking, or third-party SDKs", "Ads; account data used for analytics", "Open source, minimal", "App label: user ID only", "Ads; tracking for third-party advertising"]
     - feature: "Platforms"
-      values: ["iPhone + iPad + Mac", "iPhone + Android", "Web", "Web + mobile apps", "iPhone + Android + web"]
+      values: ["iPhone + iPad + Mac", "iPhone + iPad + Android", "Web", "Web + mobile apps", "iPhone + Android + web"]
   footnote: "Competitor positioning summarised from each platform's public landing page and store listing on 2026-06-11. Pricing and features change often, so check before switching. If you want ranked play against humans, those platforms are the right tools; Shogiful is for training between those games."
 
 screenshots:
@@ -282,7 +282,7 @@ faq:
   - q: "Is Shogiful good for beginners?"
     a: "Yes. The first launch includes an interactive tutorial on drops, and the full Fundamentals lesson track is free. The opponent ladder starts at Koishi, a gentle beginner, and full shogi rules, including drops, promotion, and repetition, are enforced for you. An optional 12-puzzle Skill Assessment sets the level of your lessons and daily training."
   - q: "How is Shogiful different from Shogi Wars?"
-    a: "Shogi Wars is the dominant online shogi platform: the official Japan Shogi Association app, with live matchmaking and ranked kyu/dan promotion. Shogiful is a single-player training app with no account and no clock. You play engine opponents at your own pace, review every game with YaneuraOu, and train on the mistakes you make. You can use both: Shogiful to practise, and Shogi Wars to compete."
+    a: "Shogi Wars is one of Japan's most-played online shogi apps, approved by the Japan Shogi Association, with live matchmaking and ranked kyu/dan promotion. Shogiful is a single-player training app with no account and no clock. You play engine opponents at your own pace, review every game with YaneuraOu, and train on the mistakes you make. You can use both: Shogiful to practise, and Shogi Wars to compete."
   - q: "How is Shogiful different from Lishogi or 81Dojo?"
     a: "Lishogi and 81Dojo are online platforms built around playing people. Lishogi is the free open-source web platform and 81Dojo the long-running international dojo. Shogiful works offline and focuses on training: on-device analysis with a card for each mistake, a daily plan aimed at your top weakness, and drills for tsume, drops, castles, joseki, and endgames. Use it to practise between your online games."
   - q: "What engine does Shogiful use?"
@@ -313,8 +313,8 @@ support:
   url: "/apps/shogiful/support/"
 
 release:
-  first_release: "2026-06-11"
-  last_updated: "2026-06-11"
+  first_release: "2026-06-13"
+  last_updated: "2026-11-06"
 
 related_journal:
   slug: making-shogi-readable-without-kanji
@@ -328,7 +328,7 @@ ratings:
   count: 18
   last_synced: "2026-11-07"
 related_apps: ["xiangqiful", "chessful"]
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 Shogiful is a [shogi training and analysis app for iPhone, iPad, and Mac](#features). Shogi is the Japanese form of chess, played on a 9×9 board where captured pieces come back into play as drops. Shogiful puts play, review, and training in one app, and it starts with the board itself. You can play with traditional kanji pieces, with kanji plus arrows that show how each piece moves, or with chess-style pieces that have no kanji at all ([the design story is in the journal](/journal/making-shogi-readable-without-kanji/)).
 

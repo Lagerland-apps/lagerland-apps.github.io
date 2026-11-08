@@ -18,18 +18,18 @@ lede: "Apple Health collects more than 80 distinct health metrics. Most of them 
 quick_answer: "Of the 80+ metrics Apple Health collects, only about six reward sustained interpretation: HRV (SDNN), resting heart rate, sleep efficiency, deep-sleep share, heart-rate dip during sleep, and weekly active energy. The rest, such as step count, standing hours, the daily move ring, and cardio recovery, are redundant, biased, or so weak in signal-to-noise that they waste your attention. Using Apple Health well comes down to knowing which numbers deserve a 60-day baseline and which you can stop opening the app to check."
 faq:
   - q: "Why don't step count and active calories make the short list?"
-    a: "Step count is a near-perfect proxy for 'did you wear your watch'. It can't tell a deliberate walk from running errands, so two days with the same count can hold very different amounts of effort. Active calories on Apple Watch are an algorithmic estimate from heart rate plus motion, with error bands of ±20 to 30%. That is fine for spotting trends and useless for the precision that a three-significant-figure display implies."
+    a: "Step count is a near-perfect proxy for 'did you wear your watch'. It can't tell a deliberate walk from running errands, so two days with the same count can hold very different amounts of effort. Active calories on Apple Watch are an algorithmic estimate from heart rate plus motion. In a 2017 Stanford lab study of seven wrist devices, none, the Apple Watch included, estimated energy expenditure to within 20% (Shcherbina et al., Journal of Personalized Medicine). That is fine for spotting trends and useless for the precision that a three-significant-figure display implies."
   - q: "What about VO2 Max?"
     a: "VO2 Max on Apple Watch is informative, but only on a quarterly timescale. It moves so slowly that day-to-day variation is mostly estimation noise. Check it once a month and don't try to interpret it weekly."
   - q: "Is the Move Ring useless?"
     a: "No, it's a perfectly fine adherence prompt. Adherence just isn't interpretation. Closing your move ring tells you whether you moved enough relative to a personal goal that you (or the app) set. It tells you nothing about whether the movement was beneficial or sustainable, or whether it correlated with anything else in your life."
   - q: "Which Apple Health metric is most under-used?"
-    a: "Heart-rate dip during sleep: the percentage your heart rate drops from daytime resting to the overnight average. AutoSleep popularised it. For many people it says more about how restorative a night was than the headline 'time asleep' number. Apple Health has the data, and few apps surface it; Observa shows it in its Sleep view against your own baseline."
+    a: "Heart-rate dip during sleep: the percentage your heart rate drops from daytime resting to the overnight average. AutoSleep popularised it. For many people it says more about how restorative a night was than the headline 'time asleep' number. Apple Health has the data, but few apps surface it, so you may have to work it out yourself."
   - q: "Should I care about wrist temperature?"
     a: "On Apple Watch Series 8 and later, yes, but only its deviation from your own baseline, never the absolute reading. A +0.5°C shift in the nightly average over a few days frequently comes before illness, ovulation, or a change in alcohol consumption. The absolute number means nothing on its own; the shift against your personal baseline is real signal."
 mentioned_apps:
   - observa
-read_time: "9 min read"
+read_time: "8 min read"
 excerpt: "Apple Health collects 80+ metrics, and most are noise. This post goes through the six that move with your habits and reward interpretation, then the twelve that look meaningful but mostly aren't, with the reasoning behind each cut."
 ---
 
@@ -64,7 +64,7 @@ Read it as a 7-day rolling average against your 60-day baseline, not as a daily 
 
 This is the percentage of time in bed you're actually asleep. Apple Watch sleep tracking is mediocre at staging but very good at total time. Sleep efficiency above 90% is excellent; if it's consistently below 80%, that often points to wind-down issues, caffeine timing, or anxiety.
 
-It holds up even after a short night, and it's one of the easiest sleep numbers to act on: small wind-down changes typically move it 3 to 5 percentage points within two weeks.
+It holds up even after a short night, and it's one of the easiest sleep numbers to act on, since wind-down habits and caffeine timing are yours to change.
 
 ### 4. Deep-sleep share
 
@@ -146,7 +146,7 @@ To decide whether an Apple Health metric is worth interpreting, ask:
 
 1. **Does it have a 60-day baseline?** Quarterly-moving metrics (VO2 Max, body weight) don't.
 2. **Does it move measurably with habits you control?** Step count doesn't, really. HRV does.
-3. **Is the measurement error smaller than the signal you're looking for?** Sleep efficiency error is ~3 percentage points and its signal is 5 to 15 percentage points. Active calories error is ±20 to 30%, and the daily signal is often smaller than that.
+3. **Is the measurement error smaller than the signal you're looking for?** In a 2025 lab study against polysomnography, an Apple Watch Series 8 read sleep efficiency about 4 percentage points too high on average ([Schyvens et al., *SLEEP Advances*](https://doi.org/10.1093/sleepadvances/zpaf021)). An offset that steady mostly cancels out when you compare a week with your own earlier weeks. Active calories are another story: wrist devices missed energy expenditure by 20% or more in lab tests ([Shcherbina et al., *Journal of Personalized Medicine*, 2017](https://doi.org/10.3390/jpm7020003)), and the day-to-day change you'd want to read is often smaller than that.
 4. **Is the baseline stable across seasons and life events?** If not, you're tracking environmental noise.
 5. **Can you act on a deviation?** If a 20% drop in the metric wouldn't change anything you do, don't track it.
 
@@ -156,7 +156,7 @@ Six metrics pass all five tests. About a dozen pass one or two. The rest are van
 
 Many consumer health apps put 30+ metrics on a dashboard because more numbers look like more value. A useful interpretation app leads with the few that matter, because every extra number pulls attention toward noise.
 
-[Observa](/apps/observa/) leads with the short list. Its daily Readiness score is built from sleep, HRV (SDNN), resting heart rate, and training load, each measured against your own typical range, and "Why this score?" names the ones that moved it. The Sleep view shows efficiency, your stages, and your heart's overnight dip, and Patterns looks for the habits that tend to line up with your recovery, sleep, and HRV. Steps and the other activity numbers are still there if you want them, one level down.
+[Observa](/apps/observa/) leads with the short list. Its daily Readiness score is built from sleep, HRV (SDNN), resting heart rate, and training load, and "Why this score?" names the signals that moved it. Every health dashboard has a Trends & Analysis screen, with 7 days free and up to a year with Premium. Patterns, also part of Premium, looks for the habits that tend to line up with your recovery, sleep, and HRV. Steps and the other activity numbers are still there if you want them, one level down.
 
 For most people, getting self-knowledge out of Apple Health is less about tracking more and more about *subtracting*. The data has been collecting itself for years. The hard part is deciding which numbers deserve your weekly attention and politely ignoring the rest.
 

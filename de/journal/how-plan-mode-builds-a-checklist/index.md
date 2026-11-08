@@ -3,8 +3,8 @@ layout: journal
 slug: how-plan-mode-builds-a-checklist
 ref: /journal/how-plan-mode-builds-a-checklist/
 permalink: /de/journal/how-plan-mode-builds-a-checklist/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Wie der Planmodus eine Checkliste für Hochzeit, Reise oder Baby baut"
 seo:
@@ -19,7 +19,7 @@ seo:
     - "baby countdown app"
     - "soon app"
 lede: "Die meisten Countdown-Apps hören bei der Zahl der Tage auf. Der Planmodus von Soon. schlägt außerdem eine Checkliste und eine Zeitleiste mit Meilensteinen für die Art von Ereignis vor, die du gewählt hast. Hier steht, wie diese Vorschläge funktionieren, warum sie im Voraus geschrieben und nicht erzeugt werden und was wir mit Absicht weggelassen haben."
-quick_answer: "Der Planmodus ist der kostenlose Teil von Soon., der jedem Countdown eine Checkliste und eine Zeitleiste mit Meilensteinen gibt. Öffnest du bei einem Moment „Planen“, schlägt Soon. einen Startplan für die Art des Ereignisses vor: Reise, Hochzeit, Geburtstag, Prüfung, Arbeit, Feiertag, Gesundheit, Baby, Konzert oder Sport. Du hakst Aufgaben ab, ergänzt eigene Aufgaben und Meilensteine, und „Auf Vorschläge zurücksetzen“ holt den Startplan zurück. Mit Premium bekommt ein Moment der Art „Baby“ einen geführten Plan Woche für Woche, und Aufgaben im Plan können dich erinnern. Die Vorschläge sind im Voraus geschrieben und stecken in der App; keine KI erzeugt etwas davon."
+quick_answer: "Der Planmodus ist der kostenlose Teil von Soon., der jedem Countdown eine Checkliste und eine Zeitleiste mit Meilensteinen gibt. Öffnest du bei einem Moment „Planen“, schlägt Soon. einen Startplan für die Art des Ereignisses vor: Reise, Hochzeit, Geburtstag, Prüfung, Arbeit, Feiertag, Gesundheit, Baby, Konzert oder Sport. Du hakst Aufgaben ab, ergänzt eigene Aufgaben und Meilensteine, und „Auf Vorschläge zurücksetzen“ holt den Startplan zurück. Mit Premium bekommt ein Moment der Art „Baby“ einen geführten Plan Woche für Woche, und Meilensteine der Zeitleiste können dich erinnern. Die Vorschläge sind im Voraus geschrieben und stecken in der App; keine KI erzeugt etwas davon."
 faq:
   - q: "Was ist der Planmodus in Soon.?"
     a: "Der Planmodus gibt jedem Moment in Soon. eine Checkliste und eine Zeitleiste mit Meilensteinen. Öffnest du bei einem Moment „Planen“, schlägt Soon. einen Startplan für die Art des Ereignisses vor: Reise, Hochzeit, Geburtstag, Prüfung, Arbeit, Feiertag, Gesundheit, Baby, Konzert oder Sport. Du hakst Aufgaben ab, ergänzt eigene Aufgaben und Meilensteine, und „Auf Vorschläge zurücksetzen“ holt den Startplan zurück. Der Planmodus ist kostenlos."
@@ -30,7 +30,7 @@ faq:
   - q: "Kann ich eine Checkliste im Planmodus ändern?"
     a: "Ja. Der vorgeschlagene Plan ist ein Ausgangspunkt. Hak Aufgaben ab, wenn du sie erledigt hast, und ergänze eigene Aufgaben und Meilensteine. Willst du den Startplan zurück, stellt „Auf Vorschläge zurücksetzen“ ihn wieder her."
   - q: "Schickt der Planmodus Erinnerungen?"
-    a: "Nur mit Premium. Premium bringt Erinnerungen für Aufgaben im Plan und Mitteilungen für den Moment selbst, 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst. Die kostenlose Version zeigt den Plan und schickt keine Mitteilungen."
+    a: "Nur mit Premium. Premium bringt Mitteilungen für den Moment selbst, 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst. Hat der Plan Meilensteine in der Zeitleiste, bekommt jeder Meilenstein eine Mitteilung, und die Mitteilungen 7, 3 und 1 Tag vorher entfallen. Die kostenlose Version zeigt den Plan und schickt keine Mitteilungen."
 mentioned_apps:
   - soon
 read_time: "6 Min. Lesezeit"
@@ -75,7 +75,7 @@ Am deutlichsten zeigt es das Baby. Mit Premium bekommt ein Moment der Art „Bab
 
 Die kostenlose Version von Soon. schickt keine Mitteilungen. Der Plan liegt beim Moment, und der Countdown steht in deinen Widgets.
 
-Premium bringt Erinnerungen für Aufgaben im Plan und Mitteilungen für den Moment selbst, 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst. Es kommt nichts jeden Morgen, nur um zu sagen, dass die Zahl um eins gesunken ist.
+Premium bringt Mitteilungen für den Moment selbst, 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst. Hat der Plan Meilensteine in der Zeitleiste, bekommt jeder Meilenstein eine Mitteilung, und die Mitteilungen 7, 3 und 1 Tag vorher entfallen. Es kommt nichts jeden Morgen, nur um zu sagen, dass die Zahl um eins gesunken ist.
 
 ## Was der Planmodus weglässt
 
@@ -107,4 +107,4 @@ Warum ein Countdown mit Plan sich besser anfühlt als eine bloße Erinnerung, st
 
 ---
 
-[Soon. gibt es im App Store](https://apps.apple.com/de/app/id6757280643) fürs iPhone. Bis zu 5 Momente sind kostenlos, Planmodus inklusive, ohne Zeitlimit. Premium bringt unbegrenzte Momente, Erinnerungen für Momente und Aufgaben im Plan, die Wettervorhersage, tägliche Notizen, wiederkehrende Momente und den Baby-Plan. Mehr auf der [App-Seite von Soon.](/de/apps/soon/).
+[Soon. gibt es im App Store](https://apps.apple.com/de/app/id6757280643) fürs iPhone. Bis zu 5 Momente sind kostenlos, Planmodus inklusive, ohne Zeitlimit. Premium bringt unbegrenzte Momente, Erinnerungen für Momente und Meilensteine, die Wettervorhersage, tägliche Notizen, wiederkehrende Momente und den Baby-Plan. Mehr auf der [App-Seite von Soon.](/de/apps/soon/).

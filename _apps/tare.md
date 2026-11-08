@@ -152,7 +152,7 @@ alternatives_to:
   - "Simon Tatham's Puzzles"
 
 # Side-by-side comparison: auto-triggers the mid-page CTA and the alt-strip.
-# Competitor cells come from the five alternatives pages, checked 2026-10-09.
+# Competitor cells come from the five alternatives pages, rechecked 2026-11-08.
 comparison_table:
   intro: "Every row is a question a puzzle player asks before installing. Baba Is You is the celebrated rule-rewriting puzzle; Good Sudoku and Nonograms Katana are the big one-answer grid puzzles; DragonBox Algebra teaches equations as a balancing game; Simon Tatham's Puzzles is a free collection of 38 puzzle types. Most have far more content than Tare. The table covers what a level asks of you, what it costs, and what it collects."
   competitors: ["Tare", "Baba Is You", "Good Sudoku", "DragonBox Algebra", "Nonograms Katana", "Simon Tatham's Puzzles"]
@@ -169,7 +169,7 @@ comparison_table:
       values: ["Data Not Collected", "Data Not Collected", "Data Not Linked to You, incl. third-party advertising", "Data Linked to You, incl. analytics", "Data Not Linked to You", "Data Not Collected"]
     - feature: "Platforms"
       values: ["iPhone, iPad", "iPhone, iPad, Mac, Apple Vision; Steam, Android", "iPhone, iPad, Mac", "iPhone, iPad", "iPhone, iPad, Mac", "iPhone, iPad, Mac; desktop, web, Android"]
-  footnote: "Competitor details were checked on 9 October 2026 against each app's public App Store listing and release notes; prices, ads, and privacy labels change, so verify before installing. Good Sudoku+ is the Apple Arcade edition. DragonBox's listing describes both a required Kahoot! Kids subscription and a free start; its comparison page has the detail."
+  footnote: "Competitor details were checked on 8 November 2026 against each app's public App Store listing and release notes; prices, ads, and privacy labels change, so verify before installing. Good Sudoku+ is the Apple Arcade edition. DragonBox's listing describes both a required Kahoot! Kids subscription and a free start; its comparison page has the detail."
   cta_label: "Play Chapter I Free"
 
 faq:
@@ -194,7 +194,7 @@ faq:
   - q: "Does Tare work offline, and does it collect data?"
     a: "Tare works completely offline; all 200 levels are in the app. Only buying and restoring the unlock need a connection, through Apple. The game opens no network connections of its own, has no account, ads, analytics, or third-party SDKs, and collects no data. Your progress and settings stay on your device."
   - q: "Can children or people who don't read English play it?"
-    a: "Yes. The puzzle has no words, so anyone can play it in any language and at any age. The few screens around it, such as Settings and the unlock screen, are translated into 50 languages."
+    a: "Yes. The puzzle has no words, so anyone can play it in any language and at any age. The few screens around it, such as Settings and the unlock screen, are translated into 44 languages."
   - q: "Does it run on iPad or Mac, and does progress sync?"
     a: "Tare runs on iPhone and iPad with iOS or iPadOS 18 or later. On iPhone it plays in portrait. On iPad it turns with the device and draws the game large in a centred column. There is no Mac, Apple Watch, or Vision Pro version. Progress stays on the device you play on and does not sync between devices."
   - q: "Is Tare accessible?"
@@ -234,8 +234,8 @@ support:
 
 release:
   first_release: "2026-10-09"
-  last_updated: "2026-10-09"
-  version: "1.0"
+  last_updated: "2026-10-27"
+  version: "1.1"
 
 related_apps: ["millrace", "chessful", "xiangqiful"]
 
@@ -245,7 +245,7 @@ related_journal:
 
 show_body: true
 about_heading: "What Tare is: a balance puzzle you solve by deduction"
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 
 Tare is a logic puzzle that looks like a toy. Each level is a painted hanging mobile on a sky-blue board, with a tray of weights beneath it. Your job is to hang every weight on a hook so that **every beam balances at the same time**.
@@ -276,4 +276,4 @@ Tare has no ads, timer, lives, move counter, or score, and no account or sign-in
 
 Apple's App Store privacy label reads **Data Not Collected**, and the app's Privacy Manifest declares no tracking and no collected data. The [privacy policy](/apps/tare/privacy/) sets out what stays on your device and what Apple handles instead.
 
-Tare runs on iPhone and iPad with iOS or iPadOS 18 or later, and its few words are translated into 50 languages. If you like puzzles that end in a provable answer, [Millrace](/apps/millrace/) is a tile-delivery puzzle from the same studio. For how both compare with Baba Is You, Good Sudoku, Flow Free, and the rest, see [the best logic puzzle games for iPhone](/guides/best-logic-puzzle-games-iphone/).
+Tare runs on iPhone and iPad with iOS or iPadOS 18 or later, and its few words are translated into 44 languages. If you like puzzles that end in a provable answer, [Millrace](/apps/millrace/) is a tile-delivery puzzle from the same studio. For how both compare with Baba Is You, Good Sudoku, Flow Free, and the rest, see [the best logic puzzle games for iPhone](/guides/best-logic-puzzle-games-iphone/).

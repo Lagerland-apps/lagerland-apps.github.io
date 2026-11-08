@@ -3,7 +3,7 @@ layout: journal
 slug: how-much-to-tip-in-the-us
 ref: /journal/how-much-to-tip-in-the-us/
 permalink: /fr/journal/how-much-to-tip-in-the-us/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 last_updated: 2026-11-08
 date: 2026-11-08
 title: "Pourboire aux États-Unis : combien laisser au restaurant, au bar, en taxi et à l’hôtel"
@@ -120,9 +120,9 @@ Le pourboire suit les plats. Si tout le monde a pris à peu près la même chose
 
 ## Où RightSplit intervient
 
-[RightSplit](/fr/apps/rightsplit/) met le pourboire sur le même écran que le partage : vous saisissez le total, réglez le nombre de personnes et le pourboire, et la part de chacun s’affiche aussitôt. Ce partage en parts égales, gratuit, applique le pourcentage au total que vous tapez. Saisissez le total taxe comprise du dîner ci-dessus avec un pourboire de 18 % : l’addition s’élève à 188,61 $, que l’option « Arrondir équitablement » répartit en 47,16 $ pour une personne et 47,15 $ pour chacune des trois autres, de sorte que les parts tombent juste au centime. C’est le pourboire calculé après taxe, soit 2,13 $ de plus que la version avant taxe. Si l’addition comprend déjà des frais de service, mettez le pourboire à 0.
+[RightSplit](/fr/apps/rightsplit/) met le pourboire sur le même écran que le partage : vous saisissez le total, réglez le nombre de personnes et le pourboire, et la part de chacun s’affiche aussitôt. Les pourcentages prédéfinis de 0, 15, 18 et 20 % et un curseur de 0 à 30 % sont gratuits, et le premier pourboire suit votre région, soit 18 % aux États-Unis. Ce partage en parts égales, gratuit, applique le pourcentage au total que vous tapez. Saisissez le total taxe comprise du dîner ci-dessus avec un pourboire de 18 % : l’addition s’élève à 188,61 $, que l’option « Arrondir équitablement » répartit en 47,16 $ pour une personne et 47,15 $ pour chacune des trois autres, de sorte que les parts tombent juste au centime. C’est le pourboire calculé après taxe, soit 2,13 $ de plus que la version avant taxe. Si l’addition comprend déjà des frais de service, mettez le pourboire à 0. Sur un ticket scanné, le scanner intégré à l’appareil lit comme pourboire une ligne imprimée de frais de service ou de pourboire.
 
-Avec Pro+, vous pouvez partager un ticket scanné par articles : chacun paie ce qu’il a commandé, et la taxe et le pourboire du ticket sont répartis par personne. L’app ne demande aucun compte ; elle n’est nécessaire que sur le téléphone de la personne qui fait le partage.
+Votre premier ticket scanné, puis tous les suivants avec Pro+, se partagent par articles : chacun paie ce qu’il a commandé, et la taxe et le pourboire du ticket sont répartis en proportion de la commande de chacun. L’app ne demande aucun compte ; elle n’est nécessaire que sur le téléphone de la personne qui fait le partage.
 
 RightSplit ne choisira pas le pourcentage à votre place. L’app ne sait pas si vous êtes dans un buffet ou dans un steakhouse : cette partie vient du tableau ci-dessus.
 

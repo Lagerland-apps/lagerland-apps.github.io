@@ -3,7 +3,7 @@ layout: journal
 slug: countdown-psychology-why-anticipation-beats-reminders
 ref: /journal/countdown-psychology-why-anticipation-beats-reminders/
 permalink: /de/journal/countdown-psychology-why-anticipation-beats-reminders/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 last_updated: 2026-11-08
 date: 2026-10-29
 title: "Psychologie der Vorfreude: warum ein Countdown mehr bringt als eine Erinnerung"
@@ -57,7 +57,7 @@ Der Befund wurde in vielen Bereichen bestätigt und erweitert:
 - **Van Boven und Gilovich (2003)** fanden, dass Teilnehmende, die an vergangene Erlebniskäufe dachten (Reisen, Konzerte, Essen), positiver gestimmt waren als jene, die an materielle Käufe dachten (Elektronik, Kleidung). Die beiden schlugen vor, dass Erlebnisse in drei Phasen Nutzen stiften, Vorfreude, Erleben und Erinnerung, und dass die Vorfreude oft die stärkste davon ist.
 - **Nawijn (2010, 2011)** zeigte empirisch, dass Urlauber vor einer Reise ein höheres subjektives Wohlbefinden angeben als währenddessen oder danach.
 - **Sevdalis und Harvey (2007)** fanden, dass der Effekt der Vorfreude sogar dann auftritt, wenn die Teilnehmenden nicht wissen, ob das Ereignis überhaupt stattfindet, eine Art vorweggenommener Genuss.
-- Die neuere Positive Psychologie nennt das **Prospektion**, die Fähigkeit des Gehirns, gute Zustände in der Zukunft zu simulieren, und zählt sie neben Verbundenheit, Sinn und Engagement zu den vier Säulen des Wohlbefindens.
+- **Seligman, Railton, Baumeister und Sripada (2013)** nannten das **Prospektion**, die Fähigkeit des Geistes, mögliche Zukünfte zu simulieren, und vertraten die These, dass der Blick nach vorn mehr als die Vergangenheit bestimmt, was Menschen tun.
 
 Vorfreude ist also eine eigene Form des Genießens, und das Warten gehört zum Erlebnis.
 
@@ -126,7 +126,7 @@ Nichts davon ist radikal. So sehen die Befunde von Loewenstein, Nawijn, Van Bove
 
 Wie das für ein festes Datum aussieht, zeigt der Artikel zum [Countdown bis Weihnachten](/de/journal/countdown-bis-weihnachten/) mit Widgets für Home-Bildschirm und Sperrbildschirm.
 
-Für das Gefühl, etwas tun zu können, sorgt der [Planmodus](/de/journal/how-plan-mode-builds-a-checklist/): Soon. schlägt für die Art von Ereignis eine Checkliste mit einer Zeitleiste aus Meilensteinen vor, und der Planmodus ist kostenlos. Dein eigenes Foto hinter dem Countdown ist der sinnliche Anker. Mitteilungen (Premium) kommen 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst, dazu Erinnerungen für die Aufgaben im Plan, die du auswählst. Den Rest der Zeit steht der Countdown in den 26 Widgets von Soon. auf Home-Bildschirm, Sperrbildschirm und in StandBy.
+Für das Gefühl, etwas tun zu können, sorgt der [Planmodus](/de/journal/how-plan-mode-builds-a-checklist/): Soon. schlägt für die Art von Ereignis eine Checkliste mit einer Zeitleiste aus Meilensteinen vor, und der Planmodus ist kostenlos. Dein eigenes Foto hinter dem Countdown ist der sinnliche Anker. Mitteilungen (Premium) kommen 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst. Hat der Plan Meilensteine in der Zeitleiste, richten sich die Mitteilungen 7, 3 und 1 Tag vorher stattdessen nach den Meilensteinen. Den Rest der Zeit steht der Countdown in den 26 Widgets von Soon. auf Home-Bildschirm, Sperrbildschirm und in StandBy.
 
 Dieser Text richtet sich vor allem an alle, die Produkte in diesem Bereich bauen: Countdowns verdienen es, als Hilfe bei der Vorfreude auf schöne Ereignisse ernst genommen zu werden, und nicht nur als verspieltes Oberflächenelement. Die Forschung ist Jahrzehnte alt, und die meisten Produkte in diesem Bereich zeigen trotzdem nur eine Zahl.
 

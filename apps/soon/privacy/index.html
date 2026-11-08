@@ -1,8 +1,8 @@
 ---
 layout: privacy
 seo:
-  title: "Soon. Privacy Policy — No Tracking, No Account"
-  description: "Soon.'s privacy policy: no third-party tracking, no ads, no account — your data stays on your device. What it processes and the choices you have."
+  title: "Soon. Privacy Policy: No Tracking, No Account"
+  description: "Soon. privacy policy: no tracking, no ads, and no account. Your moments stay on your iPhone and in your own iCloud. What the app processes and why."
   keywords:
     - "Soon. privacy policy"
     - "Soon. privacy"
@@ -23,30 +23,47 @@ data_collection: >
   Soon. processes the information you choose to enter into the app,
   such as event titles, dates, icons, themes, checklists, and optional notes.
   If you choose to add a photo to an event, Soon. accesses only the
-  photo or photos you explicitly select using Apple's system photo picker.
-  If you enable weather for an event, you may optionally add a location
-  (for example, a city) to retrieve a weather summary near the event date.
-  Soon. does not track your real-time location and does not collect
-  advertising identifiers.
+  photo or photos you explicitly select using Apple’s system photo picker.
+  If you turn on the weather forecast for an event, you search for a place
+  (for example, a city), and Soon. stores that place’s name and coordinates
+  with the event.
+  Soon. never asks for or reads your device’s location, does not collect
+  advertising identifiers, and sends none of this information to us.
 
 data_storage: >
-  Event data is stored locally on your device by default.
-  Photos you select and any cached weather information are also stored
-  on-device.
-  If iCloud device backups are enabled, Apple may include app data
+  Your events, photos, plans, notes, and memories are stored on your device.
+  If you are signed in to iCloud, Soon. also syncs them through the private
+  database of your own iCloud account (Apple’s CloudKit), as described under
+  iCloud Sync below.
+  The copies that widgets use and any cached weather information stay on
+  your device.
+  If iCloud device backups are enabled, Apple may also include app data
   in your personal iCloud backup according to your device settings.
-  Soon. does not operate its own servers to store your event data.
+  Soon. does not operate its own servers, and we cannot read your data.
+  “Delete All My Data” in Settings removes your events from your device
+  and from iCloud.
+
+icloud_sync:
+  - >
+    iCloud Sync uses your own iCloud account and works only while you are
+    signed in to iCloud. Your events, with their photos, plans, notes, and
+    memories, are kept in the private CloudKit database of that account and
+    sync to your other iPhones signed in to the same Apple Account. Apple
+    stores this data under its own privacy policy, and Lagerland Apps has no
+    access to it. In Settings, iCloud Sync shows the sync status and when
+    your events last synced.
 
 third_parties: >
-  Soon. does not use third-party advertising or tracking services.
+  Soon. does not use third-party advertising, analytics, or tracking services,
+  and it contains no third-party SDKs.
   Apple processes limited data as part of services you choose to use,
-  such as in-app purchases, local notifications, photo access,
-  calendar access, and iCloud backups.
-  If weather information is enabled, requests may be sent to a
-  weather data provider to return forecast information.
-  These requests typically include approximate location information
-  or a place identifier and standard technical data required for
-  internet communication.
+  such as in-app purchases, local notifications, the photo picker,
+  calendar access, iCloud Sync, and iCloud backups.
+  When you search for a place, the text you type goes to Apple Maps search.
+  If the weather forecast is on for an event, Soon. sends the coordinates of
+  the place you picked to Apple Weather (WeatherKit) to get the forecast,
+  along with the standard technical data required for internet communication.
+  Your device’s location is never part of these requests.
 
 refund_requests:
   intro: >
@@ -58,7 +75,7 @@ refund_requests:
     - "whether a free version of the app was available before you bought it"
     - "whether we would prefer that Apple approve or decline the refund"
   closing: >
-    We don’t send your events, photos, or any other personal data, because Soon. keeps that data on your device and we don’t have it.
+    We don’t send your events, photos, or any other personal data, because Soon. keeps that data on your device and in your own iCloud, and we don’t have it.
     Apple makes the final decision on every refund.
 
 children: >
@@ -72,5 +89,5 @@ changes: >
 
 contact_email: "support@lagerland.app"
 back_url: "/apps/soon/"
-last_updated: 2026-11-07
+last_updated: 2026-11-08
 ---

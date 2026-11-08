@@ -3,8 +3,8 @@ layout: app
 slug: rightsplit
 name: "RightSplit"
 tagline: "Scan the bill, tap who had what, send everyone their number."
-quick_answer: "RightSplit is a bill-splitting calculator for iPhone that needs no account and keeps your receipts, amounts, and names on the phone. You scan the receipt, tap who had which items, and send each person a message with their exact amount and a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay. Equal splits with tip, fair rounding, and your first receipt scan are free; Pro+ ({P_YEARLY}/year after a {TRIAL}, or {P_LIFETIME} once) adds unlimited scans, item-by-item and uneven splits, Spaces for trips and shared homes, and a payment tracker."
-category: finance
+quick_answer: "RightSplit is a bill-splitting calculator for iPhone that needs no account and keeps your receipts, amounts, and names on the phone. You scan the receipt, tap who had which items, and send each person a message with their exact amount and a link to pay you (PayPal.me and Revolut links fill in the amount, and Venmo and Wise links open your profile). Equal splits with tip, fair rounding, and your first receipt scan are free; Pro+ ({P_YEARLY}/year after a {TRIAL}, or {P_LIFETIME} once) adds unlimited scans, item-by-item and uneven splits, Spaces for trips and shared homes, and a payment tracker."
+category: utilities
 status: live
 
 app_store_url: "https://apps.apple.com/app/id6757268612"
@@ -20,7 +20,7 @@ og_image: "/assets/og/rightsplit.png"
 
 seo:
   title: "Bill Splitter App for iPhone: Scan the Receipt | RightSplit"
-  description: "Bill splitter for iPhone: scan the receipt, tap who had what, and send everyone their amount with a tap-to-pay link. No account needed. Free to start."
+  description: "Bill splitter for iPhone: scan the receipt, tap who had what, and send everyone their amount with a link to pay you. No account needed. Free to start."
   keywords:
     - bill splitter app
     - receipt scanner splitter
@@ -38,7 +38,7 @@ seo:
 hero:
   headline: "Scan the bill, tap who had what, send everyone their number."
   secondary: "A bill splitter for iPhone that needs no account."
-  subheadline: "Point the camera at the receipt and every line becomes an item you can edit. Tap the names next to the steak, the salad, and the shared wine, and RightSplit divides tax and tip fairly. Then everyone gets a message with their exact amount and a tap-to-pay link."
+  subheadline: "Point the camera at the receipt and every line becomes an item you can edit. Tap the names next to the steak, the salad, and the shared wine. When the receipt lists tax and tip, RightSplit divides them in proportion to what each person ordered. Then everyone gets a message with their exact amount and a link to pay you."
   pre_headline: "Equal splits, tip, and your first receipt scan are free. Pro+ unlocks unlimited scans and item-by-item splits for {P_YEARLY}/year, or {P_LIFETIME} once."
   cta_label: "Download Free"
   alt: "RightSplit on iPhone: scan the bill, tap who had what, and send everyone their number"
@@ -48,7 +48,7 @@ who_for:
   - "You travel in a group and the receipts come in more than one currency"
   - "You share rent, utilities, or groceries with roommates and want to see who owes whom"
   - "You split a few subscriptions with family or friends"
-  - "You want a calculator on your own phone, not another account in a finance app"
+  - "You want a calculator on your own phone rather than an account-based finance app"
 
 who_not_for:
   - "You want a shared group ledger that everyone adds to and checks from their own phone (use Splitwise)"
@@ -62,6 +62,9 @@ alternatives_to:
   - "Tab"
   - "Venmo split"
 
+related_apps:
+  - allpaid
+
 value_points:
   - title: "Open it and split"
     description: "RightSplit is a calculator, so there is nothing to sign up for and no friends list to build. Only you need the app, because everyone else gets their amount as a message."
@@ -70,17 +73,17 @@ value_points:
   - title: "Everyone pays for what they had"
     description: "Tap who ordered each item, split the shared dishes between the people who shared them, and nudge one person's share while the others rebalance. Fair rounding makes the shares add up to the exact total."
   - title: "It asks for the money for you"
-    description: "Each person gets a message with the place, their exact amount, and a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay. With Pro+, a Live Activity on your Lock Screen counts people off as they pay."
+    description: "Each person gets a message with the place, their exact amount, and a link to pay you: PayPal.me and Revolut links fill in the amount, and Venmo and Wise links open your profile. With Pro+, a Live Activity on your Lock Screen counts people off as they pay."
 
 features:
   - title: "Scan receipt"
-    description: "Scan with the camera, choose a photo from your gallery, or enter the items by hand. A receipt someone sent you can go straight from Photos or Messages into RightSplit through the share sheet. The scanner reads receipts in 16 languages and knows their subtotal, tax, and total lines, and it splits in 58 currencies, including ones without decimals like yen and won."
+    description: "Scan with the camera, choose a photo from your gallery, or enter the items by hand. A receipt someone sent you can go straight from Photos or Messages into RightSplit through the share sheet. The scanner reads receipts in 16 languages and knows their subtotal, tax, and total lines, and it splits in 58 currencies, including ones without decimals like yen and won. The on-device scanner reads a printed service charge or gratuity line as the tip."
   - title: "Split by items and shared dishes"
-    description: "Tap the names next to each item to assign it. An item several people shared is divided among them, and tax and tip are divided per person. Included in Pro+."
+    description: "Tap the names next to each item to assign it. An item several people shared is divided among them, and tax and tip are divided in proportion to what each person ordered. Your first receipt scan includes item splitting; after that, and on the split screen, it is part of Pro+."
   - title: "Equal splits, tip, and fair rounding"
-    description: "Enter the total, set the number of people and the tip, and everyone's share appears at once. Round fairly hands out the leftover cents so the shares add up to the total. With Pro+, Adjust amounts lets you change one person's share and the rest rebalance."
-  - title: "Payment requests with a pay link"
-    description: "Send Payment Requests builds one message per person, with the place, the exact amount, and a pay link for the method you saved: Venmo, PayPal.me, Revolut, Wise, IBAN, Apple Pay, or a note of your own. Send it by Messages or WhatsApp, or copy it. RightSplit never moves money itself."
+    description: "Enter the total, set the number of people (2 to 50) and the tip, and everyone's share appears at once. Tip presets of 0, 15, 18, and 20% and a slider from 0 to 30% are free. The first tip follows your region, and after that RightSplit remembers the last one you used. Round fairly is on by default and hands out the leftover cents so the shares add up to the total. With Pro+, Adjust amounts lets you change one person's share and the rest rebalance."
+  - title: "Payment requests with a link to pay you"
+    description: "Send Payment Requests builds one message per person with the place and their exact amount. When your primary payment method is PayPal.me, Revolut, Venmo, or Wise, the message also carries a link to pay you: PayPal.me and Revolut links fill in the amount (PayPal.me in the currencies PayPal accepts), and Venmo and Wise links open your profile. Apple Pay, IBAN, and a note of your own add no link. Send it by Messages or WhatsApp, or copy it. RightSplit never moves money itself."
   - title: "Track who's paid"
     description: "With Pro+, a Live Activity on the Lock Screen and in the Dynamic Island counts people off as they pay, and you can mark someone paid right there. If anyone still hasn't paid a day later, RightSplit can send you a reminder. A Pay-Me Card with a QR code lets friends pay you back in one scan."
   - title: "Spaces for trips and shared homes"
@@ -95,7 +98,7 @@ plans:
     price: "$0 forever"
     summary: "Equal splits with tip, fair rounding, and your first receipt scan."
     features:
-      - "Your first receipt scan"
+      - "Your first receipt scan, with item splitting and the payment messages"
       - "Equal splits with tip"
       - "Fair rounding to the exact total"
       - "Your last 5 splits in history"
@@ -131,14 +134,14 @@ how_it_works:
     - title: "Tap who had what"
       detail: "Tap the names next to each item. A bottle or a starter that several people shared is divided among those people only, not across the whole table."
     - title: "Tax and tip, divided fairly"
-      detail: "RightSplit reads the tax and tip on the receipt and divides them per person, on top of what each person had. For a quick equal split, set the tip on the split screen. Fair rounding makes the shares add up to the exact total."
+      detail: "When the receipt lists tax and tip, RightSplit reads them and divides them in proportion to what each person ordered. For a quick equal split, set the tip on the split screen; in Split by items, the tip is applied to each person's own subtotal. Fair rounding makes the shares add up to the exact total."
     - title: "Send everyone their number"
-      detail: "Send Payment Requests writes one message per person with the place, their amount, and a tap-to-pay link. Send it by Messages or WhatsApp, or copy it. With Pro+, a Live Activity counts people off as they pay."
+      detail: "Send Payment Requests writes one message per person with the place, their amount, and a link to pay you if you saved PayPal.me, Revolut, Venmo, or Wise. Send it by Messages or WhatsApp, or copy it. With Pro+, a Live Activity counts people off as they pay."
 
 plateau_disclosure:
   title: "How RightSplit divides items, tax, tip, and rounding"
-  rule: "Each person pays for the items they ordered plus their part of every item they shared, which is divided among the people who shared it (a bottle split four ways goes to those four, not to the whole table). Tax and tip on the receipt are divided per person, and fair rounding hands out the leftover cents so the per-person totals add up to the bill."
-  what_it_does_not_do: "It does not move money. It builds each person's message and pay link, and the payment happens in Venmo, PayPal, or whichever service they use. A link can't confirm that a payment arrived, so you mark people paid yourself."
+  rule: "Each person pays for the items they ordered plus their part of every item they shared, which is divided among the people who shared it (a bottle split four ways goes to those four, not to the whole table). Tax and tip on the receipt are divided in proportion to each person's items, and fair rounding hands out the leftover cents so the per-person totals add up to the bill."
+  what_it_does_not_do: "It does not move money. It builds each person's message, with a link to pay you for PayPal.me, Revolut, Venmo, or Wise, and the payment happens in that service. A link can't confirm that a payment arrived, so you mark people paid yourself."
   notes:
     - "When prices on the receipt already include VAT, as is usual in the EU and UK, there is no separate tax line to divide, so each item counts at its printed price."
     - "Every line the scanner reads stays editable, so you can fix a misread before you assign it."
@@ -167,13 +170,14 @@ training_vocabulary:
     - heading: "Bill math"
       items:
         - "Equal split: the total divided by the number of people (free)"
-        - "Split by items: each person pays for what they ordered (Pro+)"
+        - "Split by items: each person pays for what they ordered (free on your first scan, then Pro+)"
+        - "Tax and tip: divided in proportion to what each person ordered"
         - "Fair rounding: leftover cents handed out one at a time, so the totals add up exactly"
     - heading: "Languages &amp; currency"
       items:
         - "The receipt scanner reads 16 languages on the device; pick yours under Receipt Language in Options"
         - "58 currencies, including ones without decimals like ¥ and ₩"
-        - "Set a home currency and amounts also show an approximate figure in it"
+        - "With Pro+, set a home currency and amounts also show an approximate figure in it"
         - "With Pro+, a Space can mix currencies and settle in the one you choose, using European Central Bank daily rates (30 of the 58 currencies have one)"
 
 comparison_table:
@@ -193,25 +197,25 @@ comparison_table:
     - feature: "Account required"
       values:
         - "No"
-        - "Yes, for sync, social, and ledgers"
-        - "No"
+        - "Yes"
+        - "Not stated in its listing"
         - "Optional"
     - feature: "Receipt scanning"
       values:
         - "On your iPhone; first scan free, then Pro+"
-        - "Pro tier only, cloud OCR"
-        - "Photo-tap, no OCR"
+        - "Pro tier only, by a third-party OCR service"
+        - "Yes, by a third-party OCR service"
         - "Manual entry"
     - feature: "Item-level splitting"
       values:
-        - "Pro+"
-        - "Manual via uneven splits"
+        - "Free on your first scan, then Pro+"
+        - "Items typed by hand; scanning them is Pro"
         - "Yes"
         - "Manual via uneven splits"
     - feature: "Does the other person need to install the app?"
       values:
         - "No, each person gets a message"
-        - "Yes, the group requires sign-in"
+        - "Yes, to see or add expenses"
         - "No"
         - "Yes, for the group balance view"
     - feature: "Long-running group ledger"
@@ -230,9 +234,9 @@ comparison_table:
       values:
         - "Yes (sending needs a network)"
         - "Limited"
-        - "Yes"
+        - "Scanning needs a network"
         - "Limited"
-  footnote: "Competitor details reflect publicly documented features as of 2026. Tricount pricing checked in the US App Store on 29 October 2026. Splitwise is the right tool when the whole group needs to see and add to a shared balance. RightSplit handles the single bill, with Pro+ Spaces for trips and shared homes kept on one phone."
+  footnote: "Competitor details checked against their US App Store listings, help centers, and privacy policies on 8 November 2026. Splitwise is the right tool when the whole group needs to see and add to a shared balance. RightSplit handles the single bill, with Pro+ Spaces for trips and shared homes kept on one phone."
 
 screenshots:
   - src: "/assets/screenshots/rightsplit/1.webp"
@@ -263,7 +267,7 @@ privacy:
 
 faq:
   - q: "What is RightSplit?"
-    a: "RightSplit is a bill-splitting calculator for iPhone. It scans a receipt, lets you tap who had which items, divides tax and tip fairly, and builds a message for each person with their exact amount and a tap-to-pay link. There is no account. Equal splits with tip and your first receipt scan are free; Pro+ adds unlimited scans, item-by-item and uneven splits, Spaces for trips and shared homes, and a payment tracker, for {P_YEARLY}/year or {P_LIFETIME} once."
+    a: "RightSplit is a bill-splitting calculator for iPhone. It scans a receipt, lets you tap who had which items, divides tax and tip in proportion to what each person ordered when the receipt lists them, and builds a message for each person with their exact amount and a link to pay you. There is no account. Equal splits with tip and your first receipt scan are free; Pro+ adds unlimited scans, item-by-item and uneven splits, Spaces for trips and shared homes, and a payment tracker, for {P_YEARLY}/year or {P_LIFETIME} once."
   - q: "How does the receipt scanner work?"
     a: "Point the camera at the receipt, pick a photo, or share a receipt image into RightSplit from another app. The scanner turns it into line items, tax, tip, and total, and you can tap any line to correct it. The receipt is read on your iPhone and the photo is never uploaded. Your first scan is free; unlimited scanning is part of Pro+."
   - q: "Which OCR engine does RightSplit use?"
@@ -271,11 +275,11 @@ faq:
   - q: "How accurate is the receipt scan?"
     a: "It depends on the receipt. Faded paper, heavy creases, or a photo taken at a sharp angle can misread a line, so every item stays editable: tap it to fix the price or the name before you assign it. The summary shows the receipt's subtotal, tax, tip, and total so you can check them against the paper, and the saved receipt keeps its photo."
   - q: "Can I split shared dishes?"
-    a: "Yes, with Pro+. Any item can be split between several people: bottles, starters, shared plates. The item's cost is divided evenly among the people who shared it, and tax and tip are divided per person."
+    a: "Yes. Your first receipt scan includes it, and after that it is part of Pro+. Any item can be split between several people: bottles, starters, shared plates. The item's cost is divided evenly among the people who shared it, and tax and tip are divided in proportion to what each person ordered."
   - q: "How do I send people their share?"
-    a: "Send Payment Requests builds one message per person with the place, their exact amount, and a tap-to-pay link for the payment method you saved. Send it by Messages or WhatsApp, or copy it into any app. The other person doesn't need to install anything."
+    a: "Send Payment Requests builds one message per person with the place and their exact amount. When your primary payment method is PayPal.me, Revolut, Venmo, or Wise, it adds a link to pay you. Send it by Messages or WhatsApp, or copy it into any app. The other person doesn't need to install anything."
   - q: "Is RightSplit free?"
-    a: "Yes. Equal splits with tip, fair rounding, your last five splits, split templates, Siri, 12 widgets, and your first receipt scan are free for good. Pro+ adds unlimited scans, split by items and shared dishes, adjusting one person's share, the tip breakdown, unlimited history, Spaces, the payment tracker and unpaid reminders, the Pay-Me Card, and 6 more widgets. It costs {P_YEARLY} per year, starting with a {TRIAL}, or {P_LIFETIME} once; the lifetime purchase does not renew. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Yes. Equal splits with tip, fair rounding, your last five splits, split templates, Siri, 12 widgets, and your first receipt scan (item splitting and the payment messages included) are free for good. Pro+ adds unlimited scans, split by items and shared dishes, adjusting one person's share, the tip breakdown, unlimited history, Spaces, the payment tracker and unpaid reminders, the Pay-Me Card, and 6 more widgets. It costs {P_YEARLY} per year, starting with a {TRIAL}, or {P_LIFETIME} once; the lifetime purchase does not renew. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does RightSplit need an account?"
     a: "No. RightSplit works the moment you open it, with no sign-up and no personal details. Only one person at the table needs the app: you scan, split, and send everyone their amount."
   - q: "Does RightSplit store my receipts online?"
@@ -285,13 +289,13 @@ faq:
   - q: "What languages does the receipt scanner read?"
     a: "Sixteen: English, French, German, Spanish, Italian, Portuguese, Dutch, Swedish, Danish, Finnish, Norwegian, Polish, Japanese, Korean, and Chinese (Simplified and Traditional). Pick the receipt's language under Receipt Language in Options. In each of those languages the subtotal, tax, and total lines are recognized, so they aren't billed as dishes."
   - q: "Can RightSplit handle multi-currency receipts?"
-    a: "Yes. RightSplit splits in the currency you set, from 58, including currencies without decimals like yen and won, so a receipt in euros or pounds comes out in euros or pounds, tax and tip included. Set a home currency and each amount also shows an approximate figure in it. With Pro+, a Space can mix currencies and settle in the one you choose, using the European Central Bank's daily rates; 30 of the 58 currencies have one, and totals in the others aren't converted."
+    a: "Yes. RightSplit splits in the currency you set, from 58, including currencies without decimals like yen and won, so a receipt in euros or pounds comes out in euros or pounds, tax and tip included. With Pro+, set a home currency and each amount also shows an approximate figure in it. With Pro+, a Space can mix currencies and settle in the one you choose, using the European Central Bank's daily rates; 30 of the 58 currencies have one, and totals in the others aren't converted."
   - q: "Does it handle tax-inclusive (VAT) receipts?"
-    a: "Yes. RightSplit takes each item at its printed price. When VAT is already included in each line, as is usual in the EU and UK, there is no separate tax line to divide, so the split matches the receipt. When the receipt adds tax as its own line, as in most of the US, RightSplit reads it as tax and divides it per person."
+    a: "Yes. RightSplit takes each item at its printed price. When VAT is already included in each line, as is usual in the EU and UK, there is no separate tax line to divide, so the split matches the receipt. When the receipt adds tax as its own line, as in most of the US, RightSplit reads it as tax and divides it in proportion to what each person ordered."
   - q: "How many people can I split a bill between?"
-    a: "On the split screen you set the number of people, and with a scanned receipt you add the people at the table. For a trip or a shared home, Pro+ Spaces keep everyone's balance on your phone. When everyone in the group needs to see and add to the same ledger from their own phone, a group-based tool like <a href=\"/alternatives/splitwise/\">Splitwise</a> (or <a href=\"/alternatives/tricount/\">Tricount</a> for trip ledgers) fits better."
+    a: "On the split screen you set the number of people, from 2 to 50, and with a scanned receipt you add the people at the table. For a trip or a shared home, Pro+ Spaces keep everyone's balance on your phone. When everyone in the group needs to see and add to the same ledger from their own phone, a group-based tool like <a href=\"/alternatives/splitwise/\">Splitwise</a> (or <a href=\"/alternatives/tricount/\">Tricount</a> for trip ledgers) fits better."
   - q: "Does RightSplit integrate with Apple Pay, Venmo, or PayPal?"
-    a: "It links to them, and RightSplit never moves money itself. Save your own Venmo, PayPal.me, Revolut, or Wise handle, your IBAN, or Apple Pay, and each person's message carries a tap-to-pay link with their amount, which they complete in that service. Available methods vary by region, and a link can't confirm that a payment arrived, so you mark people paid yourself. See the <a href=\"/alternatives/venmo-split/\">RightSplit vs Venmo Split comparison</a>."
+    a: "It links to them, and RightSplit never moves money itself. Save your own Venmo, PayPal.me, Revolut, or Wise handle, your IBAN, or Apple Pay. When your primary method is PayPal.me or Revolut, each person's message carries a link with their amount filled in (PayPal.me in the currencies PayPal accepts). Venmo and Wise links open your profile, and Apple Pay and IBAN add no link. The payment happens in that service. Available methods vary by region, and a link can't confirm that a payment arrived, so you mark people paid yourself. See the <a href=\"/alternatives/venmo-split/\">RightSplit vs Venmo Split comparison</a>."
   - q: "Does RightSplit work on iPad, Mac, or Apple Watch?"
     a: "No. RightSplit is an iPhone app and needs iOS 17 or later. Controls need iOS 18, and reading receipts with Apple Intelligence needs iOS 26 on an eligible iPhone."
   - q: "Does RightSplit have widgets?"
@@ -304,8 +308,8 @@ support:
   url: "/apps/rightsplit/support/"
 
 release:
-  first_release: "2026-03-01"
-  last_updated: "2026-03-15"
+  first_release: "2026-01-09"
+  last_updated: "2026-10-30"
 
 related_journal:
   slug: "bill-splitting-math-tax-tip-shared-plates"
@@ -315,8 +319,8 @@ ratings:
   value: "5.0"
   count: 1
   last_synced: "2026-04-15"
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
-RightSplit is a bill-splitting calculator for iPhone. Scan a receipt with the camera, pick a photo, or share one in from another app, and every line becomes an item you can edit. On an iPhone with Apple Intelligence turned on (iOS 26 or later), Apple Intelligence reads the receipt on the device; every other iPhone uses Apple's on-device text recognition. Tap who had each item, split shared dishes between the people who shared them, and RightSplit divides tax and tip per person, with fair rounding so the shares add up to the total. Send Payment Requests then writes each person a message with the place, their exact amount, and a tap-to-pay link for Venmo, PayPal.me, Revolut, Wise, IBAN, or Apple Pay.
+RightSplit is a bill-splitting calculator for iPhone. Scan a receipt with the camera, pick a photo, or share one in from another app, and every line becomes an item you can edit. On an iPhone with Apple Intelligence turned on (iOS 26 or later), Apple Intelligence reads the receipt on the device; every other iPhone uses Apple's on-device text recognition. Tap who had each item, split shared dishes between the people who shared them, and RightSplit divides tax and tip in proportion to what each person ordered, with fair rounding so the shares add up to the total. Send Payment Requests then writes each person a message with the place, their exact amount, and a link to pay you: PayPal.me and Revolut links fill in the amount, and Venmo and Wise links open your profile.
 
 The free version covers equal splits with tip, fair rounding, your last five splits, templates, Siri, 12 widgets, and your first receipt scan. Pro+ adds unlimited scans, split by items, uneven splits, unlimited history, a Lock Screen payment tracker, and Spaces that keep a trip's or a shared home's balances and the fewest transfers to settle them, for {P_YEARLY}/year (starting with a {TRIAL}) or {P_LIFETIME} once. RightSplit reads receipts in 16 languages, and splits in 58 currencies. There is no account and no ads, and your receipts, amounts, and names stay on your iPhone.

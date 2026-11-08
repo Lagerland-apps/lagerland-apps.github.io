@@ -14,14 +14,14 @@ seo:
     - "chessful"
 date: 2026-02-28
 lede: "Of all the decisions in Chessful's design, including the engine, the analysis, and the spaced-repetition trainer, the hardest was making the app feel like forty different people. The usual approach is one engine and a strength slider."
-quick_answer: "Chessful has 40 named AI chess opponents in eight tiers, from Pebble at 400 Elo to The Grandmaster at 2400. Each one has a play style (Balanced, Aggressive, Defensive, Tactical, Positional, or Endgame Specialist), strengths, and weaknesses, so the ladder reads as a series of different opponents rather than one strength slider. Beat an opponent twice to mark it defeated. The first 10 are free; Premium opens all 40. After each game, Stockfish analysis on your device explains every mistake in plain language."
+quick_answer: "Chessful has 40 named AI chess opponents in eight tiers, from Pebble at 400 Elo to The Grandmaster at 2400. Each one has a play style (Balanced, Aggressive, Defensive, Tactical, Positional, or Endgame Specialist), strengths, and weaknesses, so the ladder reads as a series of different opponents rather than one strength slider. Beat an opponent twice to mark it defeated. The first 10 are free; Pro opens all 40. After each game, Stockfish analysis on your device explains every mistake in plain language."
 faq:
   - q: "How is Chessful different from playing the engine on chess.com?"
     a: "Chessful is a training app with no online play. Many chess apps offer one engine with a strength slider; Chessful has 40 named opponents in eight tiers, from 400 to 2400 Elo, each with a play style, strengths, and weaknesses. After the game, on-device Stockfish analysis explains every mistake in plain language, and those mistakes become your daily training."
   - q: "Does Chessful explain my mistakes in plain language?"
     a: "Yes. After a game, Stockfish checks every move on your device. Each mistake shows what you played, what was best, why the better move works, and the line that punishes your move, worded for the coaching level you choose. Each one is tagged with one of 10 mistake types, such as Hanging Piece, Missed Fork, or Endgame Error."
   - q: "Does Chessful require an internet connection or account?"
-    a: "No account, and no connection for the chess itself. All 40 opponents, the Stockfish analysis, lessons, and puzzles run on your device, so you can play on a flight. Buying or restoring Premium and the optional Game Center need a connection."
+    a: "No account, and no connection for the chess itself. All 40 opponents, the Stockfish analysis, lessons, and puzzles run on your device, so you can play on a flight. Buying or restoring Pro and the optional Game Center need a connection."
   - q: "Is Chessful a replacement for chess.com or lichess?"
     a: "No. Chessful has no online play, matchmaking, or clocks; every game is against its built-in opponents. Game Center leaderboards are optional. For rated games against people, chess.com and lichess remain the right tools, and you can import those games into Chessful as PGN to review them."
 mentioned_apps:
@@ -51,7 +51,7 @@ Chessful has forty AI opponents on a ladder of eight tiers, five to a tier, from
 
 The styles are Balanced, Aggressive, Defensive, Tactical, Positional, and Endgame Specialist. An Aggressive opponent and a Positional one at a similar rating are meant to ask different questions of you. Knowing an opponent's strengths and weaknesses gives you something to play against instead of an abstract strength number.
 
-You climb by beating each opponent twice, and Next Challenge points you at the first one you haven't beaten yet. The first ten opponents are free; Premium opens all forty, in any order. The Elo next to each name is a label for that opponent's strength on Chessful's own scale, not a FIDE or online rating.
+You climb by beating each opponent twice, and Next Challenge points you at the first one you haven't beaten yet. The first ten opponents are free; Pro opens all forty, in any order. The Elo next to each name is a label for that opponent's strength on Chessful's own scale, not a FIDE or online rating.
 
 ## The post-game analysis
 
@@ -59,7 +59,7 @@ The other part that took real effort is the post-game analysis.
 
 The standard chess-app flow is: play a game, hit "analyse," and watch the engine annotate every move with an evaluation. The output is technically correct and hard to read unless you're already strong. *"You played 18.Re1, computer prefers 18.Bxh6 with eval +1.4."* Yes, but *why?*
 
-Chessful tries to answer the *why*. Stockfish runs on your device and rates every move from Brilliant to Blunder. For each mistake you get a card: what you played, what was best, how far the evaluation dropped, a plain-language explanation of why the better move works, and the line that punishes your move. The explanation is worded for the coaching level you pick, from "Just learning the rules" to rated 1400+. Each mistake is tagged with one of ten types, such as Hanging Piece, Missed Fork, Missed Back-Rank Mate, or Endgame Error, and Train This Pattern takes you straight to practice on it.
+Chessful tries to answer the *why*. Stockfish runs on your device and rates every move from Best move to Blunder. For each mistake you get a card: what you played, what was best, how far the evaluation dropped, a plain-language explanation of why the better move works, and the line that punishes your move. The explanation is worded for the coaching level you pick, from "Just learning the rules" to rated 1400+. Each mistake is tagged with one of ten types, such as Hanging Piece, Missed Fork, Missed Back-Rank Mate, or Endgame Error, and Train This Pattern takes you straight to practice on it.
 
 Those mistakes then become the puzzles in your daily training, and spaced repetition brings back the ones you miss.
 
@@ -75,4 +75,4 @@ I've never told anyone this in print before, but the reason I made the post-game
 
 If you find the explanations patient, that's why.
 
-[Chessful](/apps/chessful/) is on the App Store. It is free to try with daily limits, and Premium unlocks unlimited analysis and all forty opponents. If you've been looking for a chess app that explains what you did wrong without making you feel like an idiot, this one might be it.
+[Chessful](/apps/chessful/) is on the App Store. It is free to try with daily limits, and Pro unlocks unlimited analysis and all forty opponents. If you've been looking for a chess app that explains what you did wrong without making you feel like an idiot, this one might be it.

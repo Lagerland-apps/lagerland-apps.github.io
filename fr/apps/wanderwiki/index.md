@@ -3,7 +3,7 @@ layout: app
 slug: wanderwiki
 ref: /apps/wanderwiki/
 permalink: /fr/apps/wanderwiki/
-translated_from: 2026-11-07
+translated_from: 2026-11-08
 tagline: "Glissez à travers Wikipédia, une idée après l’autre."
 quick_answer: "WanderWiki est une application iPhone et iPad (iOS 18.2 ou plus récent) qui transforme Wikipédia en pile de cartes à faire glisser : des articles aléatoires tirés de toute l’encyclopédie, 16 thèmes à parcourir et une vue de lecture épurée pour l’article complet, dans 32 éditions linguistiques de Wikipédia, dont la française. Elle est gratuite pour 20 articles par jour, sans compte. Premium ajoute « Pour vous », « Ce jour dans l’histoire » et le défilement illimité, pour {P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec {TRIAL} pour les nouveaux abonnés, ou {P_LIFETIME} en achat unique. L’app n’affiche aucune publicité et ne pratique aucun suivi, et vos articles enregistrés, vos articles aimés et votre progression de lecture restent sur votre appareil."
 price_lead: "Gratuit (20 articles par jour)"

@@ -3,7 +3,7 @@ layout: app
 slug: pawza
 ref: /apps/pawza/
 permalink: /fr/apps/pawza/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 tagline: "La santé de votre animal, ses doses et ses soins du quotidien dans un seul endroit calme."
 og_tagline: "La santé de votre animal, en un seul endroit."
 quick_answer: "Pawza est une application de carnet de santé pour animaux, sur iPhone et iPad. Elle réunit dans un seul carnet les papiers du vétérinaire, les médicaments, les vaccinations, le poids, les symptômes et les soins du quotidien de votre chien, chat, lapin, oiseau, reptile, cheval ou autre animal. Le scan des documents et l’import des anciennes fiches se font sur votre appareil, sans compte, et la synchronisation facultative passe par votre propre iCloud. Elle est gratuite pour un animal, avec 10 scans de documents, 50 photos et votre premier import de fiches. Pawza Pro ajoute les animaux en nombre illimité, le remplissage automatique par Apple Intelligence (iOS 26 ou ultérieur, sur un appareil compatible), le PDF de visite vétérinaire et les alertes de poids, pour {P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec {TRIAL}, ou {P_LIFETIME} en achat unique."
@@ -61,7 +61,7 @@ plans:
       - "Tout ce que contient Pro · Annuel"
       - "Achat unique, sans renouvellement"
       - "Partage familial inclus"
-    highlight_label: "Un seul paiement"
+    highlight_label: "Payez une fois"
 
 hero:
   pre_headline: "Pour les chiens, les chats, les lapins, les oiseaux, les reptiles, les chevaux et tous les autres animaux"
@@ -232,7 +232,9 @@ faq:
   - q: "Ma famille peut-elle partager les fiches de mon animal ?"
     a: "Non. La synchronisation iCloud couvre vos propres appareils : un conjoint ou une personne qui garde l’animal, avec son propre compte Apple, voit une fiche distincte. Pour une personne qui garde l’animal, la fiche de garde (Pro) imprime tout ce qu’il lui faut. Chaque formule Pro inclut le partage familial, qui partage l’achat de Pro avec votre groupe familial ; chacun garde ses propres fiches."
   - q: "Pawza fonctionne-t-elle sur iPad ?"
-    a: "Oui. Pawza est une app universelle pour iPhone et iPad, et sur iPad l’onglet des animaux passe en deux colonnes, avec la liste à côté du tableau de bord. Vos fiches se synchronisent entre les deux via votre propre iCloud. Pawza exige iOS 17.6 ou ultérieur et n’existe pas sur Mac, Apple Watch ni Android."
+    a: "Oui. Pawza est une app universelle pour iPhone et iPad, et sur iPad l’onglet des animaux passe en deux colonnes, avec la liste à côté du tableau de bord. Dans une fenêtre large, le tableau de bord de l’animal et les Réglages passent eux aussi en deux colonnes. Vos fiches se synchronisent entre les deux via votre propre iCloud. Pawza exige iOS 17.6 ou ultérieur et n’existe pas sur Mac, Apple Watch ni Android."
+  - q: "Pawza fonctionne-t-elle sur iPhone Duo ?"
+    a: "Oui. Ouvrez le Duo : le tableau de bord de votre animal s’étend sur les deux pages. La page de gauche réunit les soins du jour : les prochaines échéances, le journal de soins et la courbe de poids. La page de droite réunit l’historique de santé : médicaments, vaccinations, alimentation, carte d’urgence et photos. Les Réglages profitent aussi des deux pages, et la liste des animaux glisse par-dessus la page de gauche quand vous en avez besoin. « Fiche », « Rappel » et « Numériser » se trouvent dans la barre latérale du Duo, à une touche, et « Fiche » y reste quand le Duo est fermé. La configuration tient aussi sur l’écran du Duo fermé."
   - q: "Quelles vaccinations et quels traitements puis-je suivre dans Pawza ?"
     a: "Tout ce que prescrit votre vétérinaire. Chaque vaccin garde la date d’administration, la date du prochain rappel, le numéro de lot et des remarques, et peut vous le rappeler le jour de l’échéance. Les traitements gardent la dose, un rappel de dose récurrent et l’historique des prises. Comme vous saisissez les noms employés par votre vétérinaire, ou que vous les scannez depuis le certificat, Pawza s’adapte au calendrier de n’importe quel pays : rage, DHPP, Bordetella et leptospirose pour les chiens, FVRCP et FeLV pour les chats, ou les vaccins propres à un lapin ou à un cheval. Notre article <a href=\"/fr/journal/puppy-and-kitten-vaccination-schedule/\">Vaccin chiot et chaton</a> détaille le calendrier des premiers vaccins, et l’article <a href=\"/fr/journal/passeport-europeen-chien-chat/\">Passeport européen chien et chat</a> explique les règles pour voyager dans l’UE."
   - q: "Aurai-je des rappels pour les vaccinations et les médicaments ?"

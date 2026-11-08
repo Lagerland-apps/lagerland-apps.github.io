@@ -15,7 +15,7 @@ seo:
     - sleep debt trend shift work
     - recovery load score
     - sleep recovery calculation shift work
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 {%- assign app = site.apps | where: "slug", "aftershift" | first -%}
@@ -120,7 +120,7 @@ last_updated: 2026-10-29
       <div class="feature-number">01</div>
       <div>
         <div class="card-title">Shift Recovery Score (Premium)</div>
-        <div class="card-text">A 0 to 100 score for one sleep, shown on that sleep's Recovery details (tap a sleep in the Sleep tab, or "View Recovery Details" on Today). Three inputs, weighted: sleep duration 50%, sleep continuity 30%, and sleep stages 20%.</div>
+        <div class="card-text">A 0 to 100 score for one sleep, shown on that sleep's Recovery details (tap a sleep in the Sleep tab, or "View Recovery Details" on Today). Three inputs, weighted: sleep duration 50%, sleep continuity 30%, and sleep stages 20%. Duration is the time asleep in the window between shifts, naps included, divided by your sleep target (at most 1). Stages use your combined deep and REM share: 25% or more counts as 1.0, 18 to 25% as 0.85, 12 to 18% as 0.7, and under 12% as 0.55. With no stage data the input is 0.8. The score is capped at 79 when the gap between two shifts is shorter than your sleep target (not on days off, meaning no work shift within 36 hours), and at 75 when the window includes an on-call shift. Labels: Poor 0 to 39, Fair 40 to 59, Good 60 to 79, and Excellent 80 to 100.</div>
       </div>
     </div>
 
@@ -128,7 +128,7 @@ last_updated: 2026-10-29
       <div class="feature-number">02</div>
       <div>
         <div class="card-title">Sleep Score (Premium)</div>
-        <div class="card-text">A 0 to 100 score for your latest main sleep, with a history chart, on the Today tab and in Recovery details. Four inputs, weighted: duration 40%, sleep efficiency 20%, continuity 20%, and stages 20%.</div>
+        <div class="card-text">A 0 to 100 score for your latest main sleep, with a history chart, on the Today tab and in Recovery details. Four inputs, weighted: duration 40%, sleep efficiency 20%, continuity 20%, and stages 20%. It rates main sleeps only, so naps don't count toward it. When the window includes an on-call shift it is capped at 84, below Excellent. Labels: Poor 0 to 49, Fair 50 to 64, Good 65 to 84, and Excellent 85 to 100.</div>
       </div>
     </div>
 
@@ -144,7 +144,7 @@ last_updated: 2026-10-29
       <div class="feature-number">04</div>
       <div>
         <div class="card-title">Sleep debt trend (free)</div>
-        <div class="card-text">A smoothed line of your sleep debt per cycle between shifts, shown once there are at least three points. It reads Building, Stable, or Recovering, depending on whether debt moved by half an hour over the last three cycles. Weeks with on-call time get a badge.</div>
+        <div class="card-text">Your average nightly sleep debt over your last 12 cycles between shifts, shown once there are at least three points. It reads Building, Stable, or Recovering, depending on whether debt moved by more than half an hour over the last three cycles. Three or more on-call shifts in 7 days count as an on-call week, and the chart marks it with a badge.</div>
       </div>
     </div>
 
@@ -153,6 +153,22 @@ last_updated: 2026-10-29
       <div>
         <div class="card-title">Recovery load (free)</div>
         <div class="card-text">A 0 to 100 load score in the Recovery plan: Low is 0 to 30, Moderate is 31 to 60, and High is 61 to 100. It draws on your sleep debt, consecutive shifts, recent night shifts, how much you rely on naps, and late caffeine, using the last 14 days of sleep and caffeine and the last 30 days of shifts. A "What's driving this" breakdown shows the factors behind the number, and two or three suggested techniques follow. The app labels them "Suggestions, not prescriptions."</div>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-number">06</div>
+      <div>
+        <div class="card-title">Sleep continuity (input to both scores)</div>
+        <div class="card-text">Continuity starts from your longest unbroken stretch of sleep: 4 hours or more counts as 1.0, 3 to 4 hours as 0.9, 2 to 3 hours as 0.8, 1 to 2 hours as 0.65, and under an hour as 0.5. Awakenings of 2 minutes or more then take some off: 0.05 for 3 to 5 of them, 0.10 for 6 to 9, and 0.15 for 10 or more. The result stays between 0.4 and 1.0.</div>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-number">07</div>
+      <div>
+        <div class="card-title">On-call shifts</div>
+        <div class="card-text">Before and during an on-call shift, the sleep plan on Today becomes a "Flexible rest window", Readiness adds an on-call note, and the score caps above apply. An on-call week, three or more on-call shifts in 7 days, adds the badge on the sleep debt trend, an on-call recovery card in the Coach tab, and, with Premium, a daily on-call tip. Calendar import recognizes on-call shifts from event titles, never from start times alone.</div>
       </div>
     </div>
   </div>

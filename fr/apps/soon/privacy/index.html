@@ -3,12 +3,12 @@ layout: privacy
 slug: soon
 ref: /apps/soon/privacy/
 permalink: /fr/apps/soon/privacy/
-translated_from: 2026-11-07
-last_updated: 2026-11-07
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 title: "Politique de confidentialité"
 seo:
   title: "Soon. : confidentialité, sans suivi ni compte"
-  description: "Politique de confidentialité de Soon. : ni suivi tiers, ni publicité, ni compte. Vos données restent sur votre appareil. Ce que l’app traite et vos choix."
+  description: "Confidentialité de Soon. : ni suivi tiers, ni publicité, ni compte. Vos données restent sur votre appareil et dans votre iCloud. Ce que l’app traite."
   keywords:
     - "soon confidentialité"
     - "soon politique de confidentialité"
@@ -29,33 +29,50 @@ data_collection: >
   Si vous choisissez d’ajouter une photo à un événement, Soon. accède uniquement
   à la ou aux photos que vous sélectionnez explicitement avec le sélecteur de
   photos du système Apple.
-  Si vous activez la météo pour un événement, vous pouvez ajouter, de façon
-  facultative, un lieu (par exemple une ville) afin d’obtenir un résumé météo
-  autour de la date de l’événement.
-  Soon. ne suit pas votre position en temps réel et ne collecte pas
-  d’identifiants publicitaires.
+  Si vous activez les prévisions météo pour un événement, vous recherchez un
+  lieu (par exemple une ville), et Soon. enregistre le nom et les coordonnées de
+  ce lieu avec l’événement.
+  Soon. ne demande ni ne lit jamais la position de votre appareil, ne collecte
+  pas d’identifiants publicitaires et ne nous envoie aucune de ces informations.
 
 data_storage: >
-  Par défaut, les données des événements sont stockées localement sur votre
-  appareil.
-  Les photos que vous sélectionnez et les informations météo mises en cache sont
-  elles aussi stockées sur l’appareil.
-  Si les sauvegardes iCloud de l’appareil sont activées, Apple peut inclure les
-  données de l’app dans votre sauvegarde iCloud personnelle, selon les réglages
-  de votre appareil.
-  Soon. n’exploite pas de serveurs propres pour stocker les données de vos
-  événements.
+  Vos événements, photos, plans, notes et souvenirs sont stockés sur votre
+  appareil. Si vous êtes connecté à iCloud, Soon. les synchronise aussi via la
+  base de données privée de votre propre compte iCloud (CloudKit d’Apple), comme
+  décrit plus bas dans « Synchronisation iCloud ».
+  Les copies utilisées par les widgets et les informations météo mises en cache
+  restent sur l’appareil.
+  Si les sauvegardes iCloud de l’appareil sont activées, Apple peut aussi
+  inclure les données de l’app dans votre sauvegarde iCloud personnelle, selon
+  les réglages de votre appareil.
+  Soon. n’exploite pas de serveurs propres, et nous ne pouvons pas lire vos
+  données. « Supprimer toutes mes données », dans Réglages, efface vos
+  événements de votre appareil et d’iCloud.
+
+icloud_sync:
+  - >
+    La synchronisation iCloud utilise votre propre compte iCloud et ne
+    fonctionne que si vous êtes connecté à iCloud. Vos événements, avec leurs
+    photos, plans, notes et souvenirs, sont conservés dans la base de données
+    CloudKit privée de ce compte et se synchronisent avec vos autres iPhone
+    connectés au même compte Apple. Apple stocke ces données selon sa propre
+    politique de confidentialité, et Lagerland Apps n’y a pas accès. Dans
+    Réglages, « Synchronisation iCloud » indique l’état de la synchronisation
+    et la date de la dernière synchronisation.
 
 third_parties: >
-  Soon. n’utilise aucun service tiers de publicité ou de suivi.
-  Apple traite des données limitées dans le cadre des services que vous choisissez
-  d’utiliser, comme les achats intégrés, les notifications locales, l’accès aux
-  photos, l’accès au calendrier et les sauvegardes iCloud.
-  Si les informations météo sont activées, des requêtes peuvent être envoyées à
-  un fournisseur de données météo pour obtenir les prévisions.
-  Ces requêtes comprennent généralement une position approximative ou un
-  identifiant de lieu, ainsi que les données techniques courantes nécessaires à
-  la communication sur internet.
+  Soon. n’utilise aucun service tiers de publicité, d’analyse ou de suivi, et
+  ne contient aucun SDK tiers.
+  Apple traite des données limitées dans le cadre des services que vous
+  choisissez d’utiliser, comme les achats intégrés, les notifications locales,
+  le sélecteur de photos, l’accès au calendrier, la synchronisation iCloud et
+  les sauvegardes iCloud.
+  Quand vous recherchez un lieu, le texte saisi est envoyé à la recherche
+  d’Apple Plans. Si les prévisions météo sont activées pour un événement,
+  Soon. envoie les coordonnées du lieu choisi à Apple Météo (WeatherKit) pour
+  obtenir les prévisions, avec les données techniques courantes nécessaires à
+  la communication sur internet. La position de votre appareil ne fait jamais
+  partie de ces requêtes.
 
 refund_requests:
   intro: >
@@ -68,8 +85,8 @@ refund_requests:
     - "si nous préférons qu’Apple accepte ou refuse le remboursement"
   closing: >
     Nous n’envoyons ni vos événements, ni vos photos, ni aucune autre donnée
-    personnelle, car Soon. conserve ces données sur votre appareil et nous ne les
-    avons pas.
+    personnelle, car Soon. conserve ces données sur votre appareil et dans votre propre
+    iCloud, et nous ne les avons pas.
     Apple prend la décision finale pour chaque remboursement.
 
 children: >

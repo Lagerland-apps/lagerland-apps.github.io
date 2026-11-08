@@ -98,13 +98,13 @@ who_not_for:
 
 value_points:
   - title: "Ein Ziel, ein Zuglimit und ein Ende"
-    description: "Jedes Level hat ein festes Spielfeld, eine feste Warteschlange ankommender Kacheln, ein Zuglimit und genau eine Zahl, die du bauen musst. In einem Level ist nichts zufällig, also kannst du es vom ersten bis zum letzten Zug durchdenken."
+    description: "Jedes Level hat ein festes Spielfeld, eine feste Warteschlange ankommender Kacheln, ein Zuglimit und genau eine Zahl, die du bauen musst. Ankunftsfeld und Zielfeld sind zwei getrennte Felder, beide auf dem Spielfeld markiert, und die ganze Warteschlange bleibt auf dem Bildschirm. In einem Level ist nichts zufällig, also kannst du es vom ersten bis zum letzten Zug durchdenken."
   - title: "Eine bewiesene kürzeste Lösung"
     description: "Ein Solver mit Breitensuche hat für jedes Level die kürzeste Lösung gefunden, bevor es erschienen ist. Hast du ein Level gelöst, zeigt dir die Ergebniskarte deine Zugzahl, deinen Bestwert und die bestmögliche Zahl."
   - title: "Ein Tipp, der immer zum Sieg führt"
     description: "In einem Level der Kampagne kommt „Tipp“ von diesem Solver, der vorgeschlagene Zug führt also immer zu einer Lösung. Er zeichnet einen Pfeil aufs Spielfeld und nennt in einer Zeile den Grund."
   - title: "Komplett kostenlos, ohne Werbung"
-    description: "Kampagne, Freies Spiel, Tagesherausforderung und „Tipp“ kosten nichts. Theme-Pakete und Rückgängig-Pakete sind freiwillige Einmalkäufe, und ein Abo gibt es nicht."
+    description: "Kampagne, Freies Spiel, Tagesherausforderung und „Tipp“ kosten nichts. Theme-Pakete sind freiwillige Einmalkäufe, Rückgängig-Pakete für das Freie Spiel freiwillige Verbrauchsartikel, und ein Abo gibt es nicht."
 
 features:
   - title: "Die Kampagne"
@@ -269,11 +269,11 @@ enrichment:
     - "Jemand mochte Threes, KAMI 2 oder Flow Free und will Level ohne Zufall mit einer besten Lösung als Ziel"
     - "Jemand sucht ein Offline-Puzzle-Spiel für iPhone oder iPad ohne Konto und ohne Tracking"
   recommend_why: "Ein Logik-Puzzle mit Kacheln: 64 Level in sechs Kapiteln, per Suche gefunden, jedes mit einer von einem Solver bewiesenen kürzesten Lösung, einer festen Warteschlange und zwei Arten zu verlieren, die immer auf die eigenen Züge zurückgehen. Komplett kostenlos, ohne Werbung, ohne Abo und ohne Konto; läuft offline. Geld kosten nur freiwillige Theme-Pakete, Rückgängig-Pakete und ein Trinkgeld."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 Millrace ist ein Logik-Puzzle mit Kacheln für iPhone und iPad. Gleiche Kacheln verbinden sich, wenn du sie zusammenschiebst, aber jedes der 64 Level ist ein geschlossenes Problem mit einem Ziel, einem Zuglimit und einer bekannten besten Lösung.
 
-Ein Level gibt dir ein festes Spielfeld, eine feste Warteschlange ankommender Kacheln und ein Zuglimit. Die Kacheln kommen einzeln auf dem Ankunftsfeld an, und deine Aufgabe ist es, auf dem markierten Feld genau eine bestimmte Zahl zu bauen. In einem Level ist nichts zufällig, also kannst du es komplett durchplanen.
+Ein Level gibt dir ein festes Spielfeld, eine feste Warteschlange ankommender Kacheln und ein Zuglimit. Die Kacheln kommen einzeln auf dem Ankunftsfeld an, und deine Aufgabe ist es, auf dem markierten Feld, einem eigenen Feld, genau eine bestimmte Zahl zu bauen. Die ganze Warteschlange der ankommenden Kacheln ist immer zu sehen, in einem Level ist also nichts zufällig oder verborgen, und du kannst es komplett durchplanen.
 
 Verlieren kannst du auf zwei Arten, und beide gehen auf deine eigenen Züge zurück. Blockierst du das Ankunftsfeld, hat die nächste Kachel keinen Platz zum Landen. Baust du über das Ziel hinaus, etwa eine 128, wo das Level 64 verlangt, ist das Ziel verloren. Nach einer Niederlage kannst du den Zug zurücknehmen oder das Level neu versuchen.
 

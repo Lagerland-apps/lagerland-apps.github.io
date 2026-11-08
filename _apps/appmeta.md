@@ -38,7 +38,7 @@ plans:
       - "One-time purchase, no renewal"
       - "Restore your purchase from Settings"
     highlight: true
-    highlight_label: "Best value"
+    highlight_label: "Pay once"
 
 icon: "/assets/icons/appmeta.png"
 og_image: "/assets/og/appmeta.png"
@@ -337,14 +337,14 @@ support:
   url: "/apps/appmeta/support/"
 
 release:
-  first_release: "2026-02-01"
-  last_updated: "2026-10-21"
+  first_release: "2026-02-05"
+  last_updated: "2026-10-25"
   last_audited: "2026-10-25"
   audit_round: "4 (copy checked against the 2.7.0 source)"
 
 related_apps:
   - appmeta-pulse
   - mockly
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 AppMeta is a native Mac app for App Store Connect, made for indie Apple developers who manage their own listings in several locales. It edits the name, subtitle, description, keywords, promotional text, What's New, and URLs for every locale in one window, or one field across every locale, with character counts that match App Store Connect. Before a push, a field-level diff shows each change next to its live value, and only the fields you changed are pushed: one field, one locale, or all of them after a confirmation. Keyword tools flag wasted characters, duplicates, and overlaps, map coverage across 57 storefronts, and, when you turn live research on, measure difficulty from the top ten apps for a phrase and demand from Apple's search suggestions, with the evidence listed. AI translation and keyword suggestions are optional and run through Apple Intelligence on your Mac (macOS 26 on a supported Mac), your own Anthropic, OpenAI, or Google key, or a local model. The same app handles In-App Purchases, subscriptions, Game Center, TestFlight, submission, phased release, reviews, Sales & Analytics, and Diagnostics. AppMeta uses the App Store Connect API with a team .p8 key stored in the Mac Keychain, has no AppMeta server, and needs macOS 14 or later. Demo Mode is free; connecting your account needs Pro at {P_YEARLY}/year or {P_LIFETIME} lifetime. AppMeta is a third-party developer tool and is not affiliated with Apple.

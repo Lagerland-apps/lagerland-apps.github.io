@@ -3,7 +3,7 @@ layout: app
 slug: mockly
 ref: /apps/mockly/
 permalink: /fr/apps/mockly/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 tagline: "Créez, traduisez et envoyez vos screenshots App Store depuis votre Mac."
 og_tagline: "Vos screenshots App Store, depuis votre Mac."
 quick_answer: "Mockly est une application Mac pour créer des screenshots App Store. Vous placez vos vraies captures d’écran sur des modèles 3D d’iPhone, d’iPad, de MacBook Pro et d’Apple Watch, vous ajoutez textes et arrière-plans, et vous gardez les 50 langues de l’App Store dans un seul projet, traduites par IA avec votre propre clé OpenAI, Anthropic ou Google, ou via un fichier CSV. Mockly exporte des fichiers PNG ou HEIC à la taille exacte, ou envoie les pages vers App Store Connect avec votre clé API. Il coûte {P_APP} en une fois, sans abonnement, et fonctionne à partir de macOS 14."

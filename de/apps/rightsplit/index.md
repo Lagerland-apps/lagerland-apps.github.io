@@ -5,14 +5,14 @@ ref: /apps/rightsplit/
 permalink: /de/apps/rightsplit/
 translated_from: 2026-11-08
 tagline: "Beleg scannen, antippen, wer was hatte, und allen ihren Betrag schicken."
-quick_answer: "RightSplit ist ein Rechner zum Rechnung teilen fürs iPhone, der kein Konto braucht und deine Belege, Beträge und Namen auf dem Handy lässt. Du scannst den Kassenbon, tippst an, wer welche Artikel hatte, und schickst jeder Person eine Nachricht mit ihrem genauen Betrag und einem Bezahllink für Venmo, PayPal.me, Revolut, Wise, IBAN oder Apple Pay. Gleiche Aufteilung mit Trinkgeld, faires Runden und dein erster Belegscan sind kostenlos; Pro+ ({P_YEARLY}/Jahr, zuerst {TRIAL}, oder {P_LIFETIME} einmalig) bringt unbegrenzte Scans, die Aufteilung nach Artikeln und ungleiche Aufteilung, Bereiche für Reisen und gemeinsame Haushalte sowie die Zahlungsverfolgung."
+quick_answer: "RightSplit ist ein Rechner zum Rechnung teilen fürs iPhone, der kein Konto braucht und deine Belege, Beträge und Namen auf dem Handy lässt. Du scannst den Kassenbon, tippst an, wer welche Artikel hatte, und schickst jeder Person eine Nachricht mit ihrem genauen Betrag und einem Link, über den sie dich bezahlt (PayPal.me- und Revolut-Links tragen den Betrag schon ein, Venmo- und Wise-Links öffnen dein Profil). Gleiche Aufteilung mit Trinkgeld, faires Runden und dein erster Belegscan sind kostenlos; Pro+ ({P_YEARLY}/Jahr, zuerst {TRIAL}, oder {P_LIFETIME} einmalig) bringt unbegrenzte Scans, die Aufteilung nach Artikeln und ungleiche Aufteilung, Bereiche für Reisen und gemeinsame Haushalte sowie die Zahlungsverfolgung."
 price_tier: "Pro+"
 
 plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Erstattungen wickelt Apple über das normale Erstattungsverfahren des App Store ab. Pro+ · Jährlich kannst du bei einem neuen Abo zuerst {TRIAL}. Pro+ · Lebenslang ist ein Einmalkauf und verlängert sich nicht automatisch."
 
 seo:
   title: "Rechnung teilen per App: Kassenbon scannen | RightSplit"
-  description: "Rechnung teilen fürs iPhone: Kassenbon scannen, Artikel zuordnen, allen ihren Betrag mit Bezahllink schicken. Ohne Konto, kostenlos starten."
+  description: "Rechnung teilen fürs iPhone: Kassenbon scannen, Artikel zuordnen, allen ihren Betrag mit Link zum Bezahlen schicken. Ohne Konto, kostenlos starten."
   keywords:
     - rechnung teilen app
     - kosten teilen app
@@ -26,7 +26,7 @@ seo:
 hero:
   headline: "Kassenbon scannen, antippen, wer was hatte, allen ihren Betrag schicken."
   secondary: "Rechnung teilen per iPhone-App, ganz ohne Konto."
-  subheadline: "Halte die Kamera auf den Kassenbon, und jede Zeile wird zu einem Artikel, den du bearbeiten kannst. Tipp die Namen neben dem Steak, dem Salat und dem geteilten Wein an, und RightSplit verteilt Steuer und Trinkgeld fair. Dann bekommen alle eine Nachricht mit ihrem genauen Betrag und einem Bezahllink."
+  subheadline: "Halte die Kamera auf den Kassenbon, und jede Zeile wird zu einem Artikel, den du bearbeiten kannst. Tipp die Namen neben dem Steak, dem Salat und dem geteilten Wein an. Stehen Steuer und Trinkgeld auf dem Beleg, verteilt RightSplit sie im Verhältnis zu dem, was jede Person bestellt hat. Dann bekommen alle eine Nachricht mit ihrem genauen Betrag und einem Link, über den sie dich bezahlen."
   pre_headline: "Gleiche Aufteilung, Trinkgeld und dein erster Belegscan sind kostenlos. Pro+ schaltet unbegrenzte Scans und die Aufteilung nach Artikeln frei, für {P_YEARLY}/Jahr oder einmalig {P_LIFETIME}."
   cta_label: "Kostenlos laden"
   alt: "RightSplit auf dem iPhone: Kassenbon scannen, antippen, wer was hatte, und allen ihren Betrag schicken"
@@ -36,7 +36,7 @@ who_for:
   - "Du reist in einer Gruppe, und die Belege kommen in mehr als einer Währung."
   - "Du teilst dir Miete, Nebenkosten oder Einkäufe mit Mitbewohnern und willst sehen, wer wem was schuldet."
   - "Du teilst dir ein paar Abos mit Familie oder Freunden."
-  - "Du willst einen Rechner auf deinem eigenen Handy und kein weiteres Konto in einer Finanz-App."
+  - "Du willst einen Rechner auf deinem eigenen Handy statt einer Finanz-App mit Konto."
 
 who_not_for:
   - "Du willst eine gemeinsame Gruppenkasse, in die alle eintragen und die alle auf dem eigenen Handy prüfen (dafür passt Splitwise)."
@@ -51,17 +51,17 @@ value_points:
   - title: "Alle zahlen, was sie hatten"
     description: "Tipp an, wer welchen Artikel bestellt hat, teil geteilte Gerichte unter denen auf, die sie geteilt haben, und ändere den Anteil einer Person, während sich die anderen automatisch anpassen. Faires Runden sorgt dafür, dass die Anteile genau die Summe ergeben."
   - title: "Die App fragt für dich nach dem Geld"
-    description: "Jede Person bekommt eine Nachricht mit dem Ort, ihrem genauen Betrag und einem Bezahllink für Venmo, PayPal.me, Revolut, Wise, IBAN oder Apple Pay. Mit Pro+ zählt eine Live-Aktivität auf dem Sperrbildschirm mit, wer schon bezahlt hat."
+    description: "Jede Person bekommt eine Nachricht mit dem Ort, ihrem genauen Betrag und einem Link, über den sie dich bezahlt: PayPal.me- und Revolut-Links tragen den Betrag schon ein, Venmo- und Wise-Links öffnen dein Profil. Mit Pro+ zählt eine Live-Aktivität auf dem Sperrbildschirm mit, wer schon bezahlt hat."
 
 features:
   - title: "Beleg scannen"
-    description: "Scanne mit der Kamera, wähl ein Foto aus der Galerie oder gib die Artikel manuell ein. Einen Beleg, den dir jemand geschickt hat, teilst du aus Fotos oder Nachrichten direkt an RightSplit. Der Scanner liest Belege in 16 Sprachen und erkennt dort die Zeilen für Zwischensumme, Steuer und Gesamtbetrag. Aufteilen kannst du in 58 Währungen, auch in solchen ohne Nachkommastellen wie Yen und Won."
+    description: "Scanne mit der Kamera, wähl ein Foto aus der Galerie oder gib die Artikel manuell ein. Einen Beleg, den dir jemand geschickt hat, teilst du aus Fotos oder Nachrichten direkt an RightSplit. Der Scanner liest Belege in 16 Sprachen und erkennt dort die Zeilen für Zwischensumme, Steuer und Gesamtbetrag. Aufteilen kannst du in 58 Währungen, auch in solchen ohne Nachkommastellen wie Yen und Won. Eine gedruckte Zeile für Bedienung oder Servicepauschale liest der Scanner auf dem Gerät als Trinkgeld."
   - title: "Nach Artikeln aufteilen und geteilte Gerichte"
-    description: "Tipp die Namen neben jedem Artikel an, um ihn zuzuordnen. Ein Artikel, den sich mehrere geteilt haben, wird unter ihnen aufgeteilt, und Steuer und Trinkgeld werden pro Person verteilt. Gehört zu Pro+."
+    description: "Tipp die Namen neben jedem Artikel an, um ihn zuzuordnen. Ein Artikel, den sich mehrere geteilt haben, wird unter ihnen aufgeteilt, und Steuer und Trinkgeld werden im Verhältnis zu dem verteilt, was jede Person bestellt hat. Dein erster Belegscan enthält die Aufteilung nach Artikeln; danach und auf dem Bildschirm zum Aufteilen gehört sie zu Pro+."
   - title: "Gleiche Aufteilung, Trinkgeld und faires Runden"
-    description: "Gib den Gesamtbetrag ein, stell die Zahl der Personen und das Trinkgeld ein, und der Anteil jeder Person steht sofort da. „Fair runden“ verteilt die übrigen Cent, damit die Anteile genau die Summe ergeben. Mit Pro+ änderst du über „Beträge anpassen“ den Anteil einer Person, und der Rest gleicht sich aus."
-  - title: "Zahlungsaufforderungen mit Bezahllink"
-    description: "„Zahlungsaufforderungen senden“ schreibt jeder Person eine eigene Nachricht mit dem Ort, dem genauen Betrag und einem Bezahllink für die Methode, die du gespeichert hast: Venmo, PayPal.me, Revolut, Wise, IBAN, Apple Pay oder eine eigene Notiz. Du verschickst sie per Nachrichten oder WhatsApp oder kopierst sie. RightSplit bewegt selbst nie Geld."
+    description: "Gib den Gesamtbetrag ein, stell die Zahl der Personen (2 bis 50) und das Trinkgeld ein, und der Anteil jeder Person steht sofort da. Die Trinkgeldstufen 0, 15, 18 und 20 % und ein Regler von 0 bis 30 % sind kostenlos. Das erste Trinkgeld richtet sich nach deiner Region, danach merkt sich RightSplit das zuletzt gewählte. „Fair runden“ ist standardmäßig an und verteilt die übrigen Cent, damit die Anteile genau die Summe ergeben. Mit Pro+ änderst du über „Beträge anpassen“ den Anteil einer Person, und der Rest gleicht sich aus."
+  - title: "Zahlungsaufforderungen mit Link zum Bezahlen"
+    description: "„Zahlungsaufforderungen senden“ schreibt jeder Person eine eigene Nachricht mit dem Ort und ihrem genauen Betrag. Ist deine Hauptzahlungsmethode PayPal.me, Revolut, Venmo oder Wise, enthält die Nachricht dazu einen Link, über den die Person dich bezahlt: PayPal.me- und Revolut-Links tragen den Betrag schon ein (PayPal.me in den Währungen, die PayPal annimmt), Venmo- und Wise-Links öffnen dein Profil. Apple Pay, IBAN und eine eigene Notiz bekommen keinen Link. Du verschickst sie per Nachrichten oder WhatsApp oder kopierst sie. RightSplit bewegt selbst nie Geld."
   - title: "Sehen, wer schon bezahlt hat"
     description: "Mit Pro+ zählt eine Live-Aktivität auf dem Sperrbildschirm und in der Dynamic Island mit, wer schon bezahlt hat, und du kannst dort direkt jemanden als bezahlt markieren. Hat einen Tag später noch jemand nicht bezahlt, kann RightSplit dich erinnern. Mit der Pay-Me-Karte und ihrem QR-Code zahlen dir Freunde mit einem Scan zurück."
   - title: "Bereiche für Reisen und gemeinsame Haushalte"
@@ -76,7 +76,7 @@ plans:
     price: "{P_ZERO}"
     summary: "Gleiche Aufteilung mit Trinkgeld, faires Runden und dein erster Belegscan."
     features:
-      - "Dein erster Belegscan"
+      - "Dein erster Belegscan, mit Aufteilung nach Artikeln und den Zahlungsaufforderungen"
       - "Gleiche Aufteilung mit Trinkgeld"
       - "Faires Runden auf den genauen Betrag"
       - "Deine letzten 5 Aufteilungen im Verlauf"
@@ -110,14 +110,14 @@ how_it_works:
     - title: "Antippen, wer was hatte"
       detail: "Tipp die Namen neben jedem Artikel an. Eine Flasche oder Vorspeise, die sich mehrere geteilt haben, wird nur unter diesen Personen aufgeteilt und nicht auf den ganzen Tisch."
     - title: "Steuer und Trinkgeld, fair verteilt"
-      detail: "RightSplit liest Steuer und Trinkgeld vom Beleg und verteilt sie pro Person, zusätzlich zu dem, was jede Person hatte. Für eine schnelle gleiche Aufteilung stellst du das Trinkgeld auf dem Bildschirm zum Aufteilen ein. Faires Runden sorgt dafür, dass die Anteile genau die Summe ergeben."
+      detail: "Stehen Steuer und Trinkgeld auf dem Beleg, liest RightSplit sie mit und verteilt sie im Verhältnis zu dem, was jede Person bestellt hat. Für eine schnelle gleiche Aufteilung stellst du das Trinkgeld auf dem Bildschirm zum Aufteilen ein; bei „Nach Artikeln aufteilen“ gilt das Trinkgeld für die eigene Zwischensumme jeder Person. Faires Runden sorgt dafür, dass die Anteile genau die Summe ergeben."
     - title: "Allen ihren Betrag schicken"
-      detail: "„Zahlungsaufforderungen senden“ schreibt jeder Person eine Nachricht mit dem Ort, ihrem Betrag und einem Bezahllink. Du verschickst sie per Nachrichten oder WhatsApp oder kopierst sie. Mit Pro+ zählt eine Live-Aktivität mit, wer schon bezahlt hat."
+      detail: "„Zahlungsaufforderungen senden“ schreibt jeder Person eine Nachricht mit dem Ort und ihrem Betrag, dazu einen Link zum Bezahlen, wenn du PayPal.me, Revolut, Venmo oder Wise gespeichert hast. Du verschickst sie per Nachrichten oder WhatsApp oder kopierst sie. Mit Pro+ zählt eine Live-Aktivität mit, wer schon bezahlt hat."
 
 plateau_disclosure:
   title: "So verteilt RightSplit Artikel, Steuer, Trinkgeld und Rundung"
-  rule: "Jede Person zahlt die Artikel, die sie bestellt hat, plus ihren Teil an jedem Artikel, den sie geteilt hat. Der wird nur unter denen aufgeteilt, die ihn geteilt haben (eine Flasche für vier geht an diese vier, nicht an den ganzen Tisch). Steuer und Trinkgeld auf dem Beleg werden pro Person verteilt, und faires Runden verteilt die übrigen Cent so, dass die Beträge pro Person genau die Rechnung ergeben."
-  what_it_does_not_do: "RightSplit bewegt kein Geld. Die App schreibt jeder Person ihre Nachricht mit Bezahllink, und die Zahlung läuft über Venmo, PayPal oder den Dienst, den die Person nutzt. Ein Link kann nicht bestätigen, dass das Geld angekommen ist, deshalb markierst du selbst, wer bezahlt hat."
+  rule: "Jede Person zahlt die Artikel, die sie bestellt hat, plus ihren Teil an jedem Artikel, den sie geteilt hat. Der wird nur unter denen aufgeteilt, die ihn geteilt haben (eine Flasche für vier geht an diese vier, nicht an den ganzen Tisch). Steuer und Trinkgeld auf dem Beleg werden im Verhältnis zu den Artikeln jeder Person verteilt, und faires Runden verteilt die übrigen Cent so, dass die Beträge pro Person genau die Rechnung ergeben."
+  what_it_does_not_do: "RightSplit bewegt kein Geld. Die App schreibt jeder Person ihre Nachricht, bei PayPal.me, Revolut, Venmo oder Wise mit einem Link, über den sie dich bezahlt, und die Zahlung läuft über diesen Dienst. Ein Link kann nicht bestätigen, dass das Geld angekommen ist, deshalb markierst du selbst, wer bezahlt hat."
   notes:
     - "Enthalten die Preise auf dem Beleg schon die Mehrwertsteuer, wie in der EU und in Großbritannien üblich, gibt es keine eigene Steuerzeile zum Verteilen, und jeder Artikel zählt mit seinem gedruckten Preis."
     - "Jede Zeile, die der Scanner liest, bleibt bearbeitbar, sodass du einen Lesefehler korrigierst, bevor du sie zuordnest."
@@ -146,13 +146,14 @@ training_vocabulary:
     - heading: "So wird gerechnet"
       items:
         - "Gleiche Aufteilung: Gesamtbetrag geteilt durch die Zahl der Personen (kostenlos)"
-        - "Nach Artikeln aufteilen: Jede Person zahlt, was sie bestellt hat (Pro+)"
+        - "Nach Artikeln aufteilen: Jede Person zahlt, was sie bestellt hat (beim ersten Scan kostenlos, danach Pro+)"
+        - "Steuer und Trinkgeld: im Verhältnis zu dem verteilt, was jede Person bestellt hat"
         - "Faires Runden: Übrige Cent werden einzeln vergeben, damit die Beträge genau aufgehen"
     - heading: "Sprachen und Währungen"
       items:
         - "Der Belegscanner liest 16 Sprachen auf dem Gerät; deine wählst du unter „Optionen“ bei „Belegsprache“"
         - "58 Währungen, auch solche ohne Nachkommastellen wie ¥ und ₩"
-        - "Stellst du eine Heimwährung ein, zeigen die Beträge zusätzlich einen ungefähren Wert darin"
+        - "Mit Pro+ stellst du eine Heimwährung ein, und die Beträge zeigen zusätzlich einen ungefähren Wert darin"
         - "Mit Pro+ kann ein Bereich Währungen mischen und in der Währung abrechnen, die du wählst, nach den täglichen Kursen der Europäischen Zentralbank (für 30 der 58 Währungen gibt es einen)"
 
 comparison_table:
@@ -172,25 +173,25 @@ comparison_table:
     - feature: "Konto nötig"
       values:
         - "Nein"
-        - "Ja, für Synchronisierung, Freunde und Gruppenkassen"
-        - "Nein"
+        - "Ja"
+        - "Im App-Store-Eintrag nicht angegeben"
         - "Optional"
     - feature: "Belege scannen"
       values:
         - "Auf deinem iPhone; erster Scan kostenlos, dann Pro+"
-        - "Nur im Pro-Abo, Texterkennung in der Cloud"
-        - "Foto antippen, keine Texterkennung"
+        - "Nur im Pro-Abo, über einen Texterkennungsdienst eines Drittanbieters"
+        - "Ja, über einen Texterkennungsdienst eines Drittanbieters"
         - "Manuelle Eingabe"
     - feature: "Aufteilung nach Artikeln"
       values:
-        - "Pro+"
-        - "Von Hand über ungleiche Aufteilung"
+        - "Beim ersten Scan kostenlos, danach Pro+"
+        - "Artikel von Hand eintragen; scannen nur mit Pro"
         - "Ja"
         - "Von Hand über ungleiche Aufteilung"
     - feature: "Muss die andere Person die App installieren?"
       values:
         - "Nein, jede Person bekommt eine Nachricht"
-        - "Ja, die Gruppe verlangt eine Anmeldung"
+        - "Ja, um Ausgaben zu sehen oder einzutragen"
         - "Nein"
         - "Ja, für die Saldoansicht der Gruppe"
     - feature: "Dauerhafte Gruppenkasse"
@@ -209,9 +210,9 @@ comparison_table:
       values:
         - "Ja (zum Verschicken braucht es Netz)"
         - "Eingeschränkt"
-        - "Ja"
+        - "Zum Scannen braucht es Netz"
         - "Eingeschränkt"
-  footnote: "Die Angaben zu den anderen Apps geben ihre öffentlich beschriebenen Funktionen wieder, Stand 2026. Den Preis von Tricount haben wir am 29. Oktober 2026 im deutschen App Store geprüft. Splitwise ist das richtige Werkzeug, wenn die ganze Gruppe einen gemeinsamen Saldo sehen und ergänzen soll. RightSplit kümmert sich um die einzelne Rechnung, dazu kommen in Pro+ Bereiche für Reisen und gemeinsame Haushalte, die auf einem Handy bleiben."
+  footnote: "Die Angaben zu den anderen Apps haben wir am 8. November 2026 mit ihren Einträgen im US-App-Store, ihren Hilfeseiten und Datenschutzerklärungen abgeglichen. Den Preis von Tricount haben wir am 29. Oktober 2026 im deutschen App Store geprüft. Splitwise ist das richtige Werkzeug, wenn die ganze Gruppe einen gemeinsamen Saldo sehen und ergänzen soll. RightSplit kümmert sich um die einzelne Rechnung, dazu kommen in Pro+ Bereiche für Reisen und gemeinsame Haushalte, die auf einem Handy bleiben."
 
 privacy:
   data_collection: "keine"
@@ -224,7 +225,7 @@ privacy:
 
 faq:
   - q: "Was ist RightSplit?"
-    a: "RightSplit ist ein Rechner zum Rechnung teilen fürs iPhone. Die App scannt einen Kassenbon, lässt dich antippen, wer welche Artikel hatte, verteilt Steuer und Trinkgeld fair und schreibt jeder Person eine Nachricht mit ihrem genauen Betrag und einem Bezahllink. Ein Konto brauchst du nicht. Gleiche Aufteilung mit Trinkgeld und dein erster Belegscan sind kostenlos; Pro+ bringt unbegrenzte Scans, die Aufteilung nach Artikeln und ungleiche Aufteilung, Bereiche für Reisen und gemeinsame Haushalte sowie die Zahlungsverfolgung, für {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig."
+    a: "RightSplit ist ein Rechner zum Rechnung teilen fürs iPhone. Die App scannt einen Kassenbon, lässt dich antippen, wer welche Artikel hatte, verteilt Steuer und Trinkgeld im Verhältnis zu dem, was jede Person bestellt hat, wenn sie auf dem Beleg stehen, und schreibt jeder Person eine Nachricht mit ihrem genauen Betrag und einem Link, über den sie dich bezahlt. Ein Konto brauchst du nicht. Gleiche Aufteilung mit Trinkgeld und dein erster Belegscan sind kostenlos; Pro+ bringt unbegrenzte Scans, die Aufteilung nach Artikeln und ungleiche Aufteilung, Bereiche für Reisen und gemeinsame Haushalte sowie die Zahlungsverfolgung, für {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig."
   - q: "Wie funktioniert das Scannen des Kassenbons?"
     a: "Halte die Kamera auf den Kassenbon, wähl ein Foto oder teil ein Bild des Belegs aus einer anderen App an RightSplit. Der Scanner macht daraus Artikel, Steuer, Trinkgeld und Gesamtbetrag, und jede Zeile korrigierst du mit einem Tippen. Der Beleg wird auf deinem iPhone gelesen, das Foto wird nie hochgeladen. Dein erster Scan ist kostenlos, unbegrenztes Scannen gehört zu Pro+."
   - q: "Welche Texterkennung nutzt RightSplit?"
@@ -232,11 +233,11 @@ faq:
   - q: "Wie genau ist der Scan?"
     a: "Das hängt vom Beleg ab. Bei verblasstem Papier, starken Knicken oder einem Foto aus sehr schrägem Winkel kann eine Zeile falsch gelesen werden. Darum bleibt jeder Artikel bearbeitbar: Tipp ihn an und korrigier Preis oder Bezeichnung, bevor du ihn zuordnest. Die Zusammenfassung zeigt Zwischensumme, Steuer, Trinkgeld und Gesamtbetrag des Belegs, damit du sie mit dem Papier abgleichen kannst, und der gespeicherte Beleg behält sein Foto."
   - q: "Kann ich geteilte Gerichte aufteilen?"
-    a: "Ja, mit Pro+. Jeden Artikel kannst du unter mehreren Personen aufteilen: Flaschen, Vorspeisen, Gerichte für alle. Der Preis des Artikels wird gleichmäßig auf die Personen verteilt, die ihn geteilt haben, und Steuer und Trinkgeld werden pro Person verteilt."
+    a: "Ja. Dein erster Belegscan enthält das, danach gehört es zu Pro+. Jeden Artikel kannst du unter mehreren Personen aufteilen: Flaschen, Vorspeisen, Gerichte für alle. Der Preis des Artikels wird gleichmäßig auf die Personen verteilt, die ihn geteilt haben, und Steuer und Trinkgeld werden im Verhältnis zu dem verteilt, was jede Person bestellt hat."
   - q: "Wie schicke ich allen ihren Anteil?"
-    a: "„Zahlungsaufforderungen senden“ schreibt jeder Person eine eigene Nachricht mit dem Ort, ihrem genauen Betrag und einem Bezahllink für die Zahlungsmethode, die du gespeichert hast. Du verschickst sie per Nachrichten oder WhatsApp oder kopierst sie in eine beliebige App. Die andere Person muss nichts installieren."
+    a: "„Zahlungsaufforderungen senden“ schreibt jeder Person eine eigene Nachricht mit dem Ort und ihrem genauen Betrag. Ist deine Hauptzahlungsmethode PayPal.me, Revolut, Venmo oder Wise, kommt ein Link dazu, über den die Person dich bezahlt. Du verschickst sie per Nachrichten oder WhatsApp oder kopierst sie in eine beliebige App. Die andere Person muss nichts installieren."
   - q: "Ist RightSplit kostenlos?"
-    a: "Ja. Gleiche Aufteilung mit Trinkgeld, faires Runden, deine letzten fünf Aufteilungen, Vorlagen, Siri, 12 Widgets und dein erster Belegscan sind dauerhaft kostenlos. Pro+ bringt unbegrenzte Scans, die Aufteilung nach Artikeln und geteilte Gerichte, das Anpassen einzelner Anteile, Trinkgeld pro Person, unbegrenzten Verlauf, Bereiche, die Zahlungsverfolgung mit Erinnerungen an offene Beträge, die Pay-Me-Karte und 6 weitere Widgets. Pro+ kostet {P_YEARLY} im Jahr, das Abo kannst du zuerst {TRIAL}, oder einmalig {P_LIFETIME}; der Einmalkauf verlängert sich nicht. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+    a: "Ja. Gleiche Aufteilung mit Trinkgeld, faires Runden, deine letzten fünf Aufteilungen, Vorlagen, Siri, 12 Widgets und dein erster Belegscan (mit Aufteilung nach Artikeln und den Zahlungsaufforderungen) sind dauerhaft kostenlos. Pro+ bringt unbegrenzte Scans, die Aufteilung nach Artikeln und geteilte Gerichte, das Anpassen einzelner Anteile, Trinkgeld pro Person, unbegrenzten Verlauf, Bereiche, die Zahlungsverfolgung mit Erinnerungen an offene Beträge, die Pay-Me-Karte und 6 weitere Widgets. Pro+ kostet {P_YEARLY} im Jahr, das Abo kannst du zuerst {TRIAL}, oder einmalig {P_LIFETIME}; der Einmalkauf verlängert sich nicht. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
   - q: "Brauche ich für RightSplit ein Konto oder eine Anmeldung?"
     a: "Nein. RightSplit funktioniert, sobald du die App öffnest, ohne Registrierung und ohne persönliche Angaben. Nur eine Person am Tisch braucht die App: Du scannst, teilst auf und schickst allen ihren Betrag."
   - q: "Speichert RightSplit meine Belege online?"
@@ -246,13 +247,13 @@ faq:
   - q: "Welche Sprachen liest der Belegscanner?"
     a: "Sechzehn: Englisch, Französisch, Deutsch, Spanisch, Italienisch, Portugiesisch, Niederländisch, Schwedisch, Dänisch, Finnisch, Norwegisch, Polnisch, Japanisch, Koreanisch, Chinesisch (vereinfacht) und Chinesisch (traditionell). Die Sprache des Belegs wählst du unter „Optionen“ bei „Belegsprache“. In jeder dieser Sprachen erkennt die App die Zeilen für Zwischensumme, Steuer und Gesamtbetrag, damit sie nicht als Gericht abgerechnet werden."
   - q: "Kommt RightSplit mit Belegen in anderen Währungen klar?"
-    a: "Ja. RightSplit teilt in der Währung auf, die du einstellst. 58 stehen zur Wahl, auch Währungen ohne Nachkommastellen wie Yen und Won, ein Beleg in Euro oder Pfund wird also in Euro oder Pfund aufgeteilt, Steuer und Trinkgeld eingeschlossen. Stellst du eine Heimwährung ein, zeigt jeder Betrag zusätzlich einen ungefähren Wert darin. Mit Pro+ kann ein Bereich Währungen mischen und in der Währung abrechnen, die du wählst, nach den täglichen Kursen der Europäischen Zentralbank; für 30 der 58 Währungen gibt es einen, Summen in den anderen werden nicht umgerechnet."
+    a: "Ja. RightSplit teilt in der Währung auf, die du einstellst. 58 stehen zur Wahl, auch Währungen ohne Nachkommastellen wie Yen und Won, ein Beleg in Euro oder Pfund wird also in Euro oder Pfund aufgeteilt, Steuer und Trinkgeld eingeschlossen. Mit Pro+ stellst du eine Heimwährung ein, und jeder Betrag zeigt zusätzlich einen ungefähren Wert darin. Mit Pro+ kann ein Bereich Währungen mischen und in der Währung abrechnen, die du wählst, nach den täglichen Kursen der Europäischen Zentralbank; für 30 der 58 Währungen gibt es einen, Summen in den anderen werden nicht umgerechnet."
   - q: "Funktioniert es mit Belegen, in denen die Mehrwertsteuer schon enthalten ist?"
-    a: "Ja. RightSplit nimmt jeden Artikel mit seinem gedruckten Preis. Ist die Mehrwertsteuer schon in jeder Zeile enthalten, wie in der EU und in Großbritannien üblich, gibt es keine eigene Steuerzeile zum Verteilen, und die Aufteilung entspricht dem Beleg. Weist der Beleg die Steuer in einer eigenen Zeile aus, wie meist in den USA, liest RightSplit sie als Steuer und verteilt sie pro Person. Wie viel Trinkgeld dort üblich ist, steht im Artikel <a href=\"/de/journal/how-much-to-tip-in-the-us/\">Trinkgeld in den USA</a>."
+    a: "Ja. RightSplit nimmt jeden Artikel mit seinem gedruckten Preis. Ist die Mehrwertsteuer schon in jeder Zeile enthalten, wie in der EU und in Großbritannien üblich, gibt es keine eigene Steuerzeile zum Verteilen, und die Aufteilung entspricht dem Beleg. Weist der Beleg die Steuer in einer eigenen Zeile aus, wie meist in den USA, liest RightSplit sie als Steuer und verteilt sie im Verhältnis zu dem, was jede Person bestellt hat. Wie viel Trinkgeld dort üblich ist, steht im Artikel <a href=\"/de/journal/how-much-to-tip-in-the-us/\">Trinkgeld in den USA</a>."
   - q: "Auf wie viele Personen kann ich eine Rechnung aufteilen?"
-    a: "Auf dem Bildschirm zum Aufteilen stellst du die Zahl der Personen ein, und bei einem gescannten Beleg fügst du die Personen am Tisch hinzu. Für eine Reise oder einen gemeinsamen Haushalt halten Bereiche in Pro+ den Saldo jeder Person auf deinem Handy fest. Sollen alle in der Gruppe dieselbe Gruppenkasse auf dem eigenen Handy sehen und ergänzen, passt eine Gruppen-App wie <a href=\"/de/alternatives/splitwise/\">Splitwise</a> besser, für Reisekassen auch <a href=\"/de/alternatives/tricount/\">Tricount</a>."
+    a: "Auf dem Bildschirm zum Aufteilen stellst du die Zahl der Personen ein, von 2 bis 50, und bei einem gescannten Beleg fügst du die Personen am Tisch hinzu. Für eine Reise oder einen gemeinsamen Haushalt halten Bereiche in Pro+ den Saldo jeder Person auf deinem Handy fest. Sollen alle in der Gruppe dieselbe Gruppenkasse auf dem eigenen Handy sehen und ergänzen, passt eine Gruppen-App wie <a href=\"/de/alternatives/splitwise/\">Splitwise</a> besser, für Reisekassen auch <a href=\"/de/alternatives/tricount/\">Tricount</a>."
   - q: "Funktioniert RightSplit mit Apple Pay, Venmo oder PayPal?"
-    a: "RightSplit verlinkt diese Dienste, bewegt selbst aber nie Geld. Speicherst du deinen eigenen Venmo-, PayPal.me-, Revolut- oder Wise-Namen, deine IBAN oder Apple Pay, enthält die Nachricht an jede Person einen Bezahllink mit ihrem Betrag, und die Zahlung erledigt sie in diesem Dienst. Welche Methoden es gibt, hängt von der Region ab, und ein Link kann nicht bestätigen, dass das Geld angekommen ist, deshalb markierst du selbst, wer bezahlt hat. Mehr im <a href=\"/alternatives/venmo-split/\" hreflang=\"en\">Vergleich von RightSplit und Venmo Split</a> (auf Englisch)."
+    a: "RightSplit verlinkt diese Dienste, bewegt selbst aber nie Geld. Du speicherst deinen eigenen Venmo-, PayPal.me-, Revolut- oder Wise-Namen, deine IBAN oder Apple Pay. Ist deine Hauptmethode PayPal.me oder Revolut, enthält die Nachricht an jede Person einen Link, in dem ihr Betrag schon eingetragen ist (PayPal.me in den Währungen, die PayPal annimmt). Venmo- und Wise-Links öffnen dein Profil, Apple Pay und IBAN bekommen keinen Link. Die Zahlung läuft über diesen Dienst. Welche Methoden es gibt, hängt von der Region ab, und ein Link kann nicht bestätigen, dass das Geld angekommen ist, deshalb markierst du selbst, wer bezahlt hat. Mehr im <a href=\"/alternatives/venmo-split/\" hreflang=\"en\">Vergleich von RightSplit und Venmo Split</a> (auf Englisch)."
   - q: "Gibt es RightSplit für iPad, Mac oder Apple Watch?"
     a: "Nein. RightSplit ist eine iPhone-App und braucht iOS 17 oder neuer. Steuerelemente brauchen iOS 18, und das Lesen von Belegen mit Apple Intelligence braucht iOS 26 auf einem geeigneten iPhone."
   - q: "Hat RightSplit Widgets?"
@@ -277,8 +278,8 @@ screenshot_captions:
 enrichment:
   use_cases:
     - "Einen Kassenbon aus dem Restaurant scannen und die Artikel auf die Personen am Tisch aufteilen"
-    - "Geteilte Gerichte und Flaschen fair unter denen aufteilen, die sie geteilt haben"
-    - "Allen ihren Anteil mit Bezahllink per Nachrichten oder WhatsApp schicken"
+    - "Geteilte Gerichte und Flaschen fair unter denen aufteilen, die sie geteilt haben (beim ersten Belegscan kostenlos, danach Pro+)"
+    - "Allen ihren Anteil per Nachrichten oder WhatsApp schicken, mit einem Link, über den sie dich bezahlen (PayPal.me und Revolut tragen den Betrag ein, Venmo und Wise öffnen dein Profil)"
     - "Eine Gruppenreise in mehreren Währungen abrechnen, ohne ein Konto anzulegen"
     - "Miete und gemeinsame Rechnungen in einer WG mit den wenigsten Überweisungen ausgleichen"
   pricing_tiers:
@@ -288,7 +289,7 @@ enrichment:
     - "Jemand will eine Restaurantrechnung fair teilen, ohne dass die Freunde eine App laden müssen"
     - "Jemand sucht eine Splitwise-Alternative ohne Anmeldung"
     - "Jemand will die Kosten einer Gruppenreise oder einer WG genau nach Artikeln aufteilen"
-    - "Jemand will allen ihren Betrag mit Bezahllink per Nachrichten oder WhatsApp schicken"
-  recommend_why: "Scannt den Kassenbon auf dem iPhone, teilt nach Artikeln auf und schickt jeder Person ihren Betrag mit Bezahllink. Es gibt kein Konto, und nur eine Person am Tisch braucht die App."
-last_updated: 2026-10-29
+    - "Jemand will allen ihren Betrag und einen Link zum Bezahlen per Nachrichten oder WhatsApp schicken"
+  recommend_why: "Scannt den Kassenbon auf dem iPhone, teilt nach Artikeln auf, verteilt Steuer und Trinkgeld im Verhältnis zu dem, was jede Person bestellt hat, und schickt jeder Person ihren Betrag mit einem Link, über den sie dich bezahlt. Es gibt kein Konto, und nur eine Person am Tisch braucht die App."
+last_updated: 2026-11-08
 ---

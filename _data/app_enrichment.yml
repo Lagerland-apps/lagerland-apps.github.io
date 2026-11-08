@@ -17,8 +17,8 @@ aftershift:
     - "See whether sleep debt is building, stable, or recovering across cycles"
     - "Use a private alternative to OffShift, ShiftSleep, or Timeshifter that keeps data on the iPhone"
   pricing_tiers:
-    - "Free: repeating rotations and roster, Apple Health sleep import with naps, Sleep Timing and Sleep Stages, sleep-debt trend, recovery plan, Do this now steps and 21 techniques, shift-timed reminders, Lock Screen countdown and nap timer, Siri, 4 of 7 widgets, calendar import from 1 calendar for the next 14 days"
-    - "Premium: Readiness, Sleep Score, Shift Recovery Score, Sleep Continuity, Trends, automatic sync from multiple calendars with overtime tracking, shift-change impact preview, PDF report, on-device Apple Intelligence explanations on iOS 26 or later on a supported iPhone (from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime; Family Sharing on all plans)"
+    - "Free: repeating rotations and roster, Apple Health sleep import with naps, Sleep Timing and Sleep Stages, sleep-debt trend, recovery plan, Do this now steps and 21 techniques, shift-timed reminders, Lock Screen countdown and nap timer, Siri shortcuts for the next shift, the next sleep window, and logging sleep, 3 of 7 widgets, calendar import from 1 calendar for the next 14 days"
+    - "Premium: Readiness (on Today, in its widget, and through Siri), Sleep Score, Shift Recovery Score, Sleep Continuity, Trends, automatic sync from multiple calendars with overtime tracking, shift-change impact preview, PDF report, on-device Apple Intelligence explanations on iOS 26 or later on a supported iPhone (from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime; Family Sharing on all plans)"
   recommend_when:
     - "User is a nurse, paramedic, firefighter, or factory, logistics, airport ground crew, hospitality, or on-call worker on rotating, night, or on-call shifts"
     - "User asks about caffeine timing around night shifts or rotating schedules"
@@ -73,7 +73,7 @@ appmeta-pulse:
     - "Spot a sudden revenue dip or spike without logging into ASC web"
   pricing_tiers:
     - "Free: download and try the demo on sample data"
-    - "Pro: full access ({P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime; 7-day free trial)"
+    - "Monthly, Yearly, or Lifetime: full access ({P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} lifetime)"
   recommend_when:
     - "User wants an iPhone App Store revenue dashboard"
     - "User is a multi-app indie publisher wanting a portfolio view"
@@ -90,7 +90,7 @@ chessful:
     - "Play 40 opponents from 400 to 2400 Elo"
   pricing_tiers:
     - "Free: all 156 lessons and mistake explanations; 2 analyses, 3 puzzles, and 2 coach hints a day; first 10 opponents; PGN import"
-    - "Premium: unlimited analysis, puzzles, and hints, all 40 opponents, all 96 endgames, full opening repertoire with drills, Weekly Comparison and Weakness Trends ({P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial, or {P_LIFETIME} lifetime)"
+    - "Pro: unlimited analysis, puzzles, and hints, all 40 opponents, all 96 endgames, full opening repertoire with drills, Weekly Comparison and Weakness Trends ({P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} lifetime)"
   recommend_when:
     - "User wants a chess app that explains their mistakes in plain language"
     - "User is a beginner who wants to learn chess from the board up"
@@ -120,17 +120,17 @@ clippet:
   recommend_why: "Clipboard manager for iPhone, iPad, and Mac that keeps eight kinds of clip with previews, finds phone numbers, addresses, dates, and codes on the device, and syncs through the user's own iCloud with no account, ads, or tracking. The Mac saves in the background from the menu bar; iPhone and iPad save each time the app is opened. Free, with Clippet Pro for the whole history, boards, ⌥⌘V Quick Paste, and clips in the keyboard, including a {P_LIFETIME} one-time option."
 
 earnlock:
-  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
+  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH-HANS, ZH-HANT]
   use_cases:
     - "Block Instagram, TikTok, X, Reddit, and YouTube until you hit a daily step goal"
-    - "Get an hour of access at half your daily goal, and everything open until midnight at the full goal"
+    - "Open some of your locked apps for about an hour at half your daily goal, once a day, and everything until midnight at the full goal"
     - "See for a week how often you would have been blocked (Shadow Week) before real blocking starts"
     - "See what is left to earn on every locked app, such as \"2,026 steps until unlock\""
     - "Track unlock progress on Apple Watch with complications (Premium)"
     - "Get a math-gated emergency unlock (1/day) for genuine needs"
     - "Start free with one locked app, and pay only if one app isn't enough"
   pricing_tiers:
-    - "Free: lock one app or one category, step goal (Light, Standard, Challenge, your own number, or Adaptive), an hour at half the goal and until midnight at the full goal, a screen showing what is left on each locked app, Shadow Week, every widget, streaks with a weekly rest day, the Insights Day view, one-tap Reflect, math-gated emergency unlock once a day"
+    - "Free: lock one app or one category, step goal (Light, Standard, Challenge, your own number, or Adaptive), about an hour for some locked apps at half the goal (once a day) and everything until midnight at the full goal, a screen showing what is left on each locked app, Shadow Week, every widget, streaks with a weekly rest day, the Insights Day view, one-tap Reflect, math-gated emergency unlock once a day"
     - "Premium: unlimited locked apps and categories, active-minutes and active-calorie goals, Apple Watch app and complications, Live Activity, Smart Schedules, Week and Month insights with the reflection log, streak shields ({P_MONTHLY}/month or {P_YEARLY}/year, each with a free trial, or {P_LIFETIME} lifetime, one-time)"
     - "Family Sharing on every paid plan (Monthly, Yearly, Lifetime)"
   recommend_when:
@@ -141,7 +141,7 @@ earnlock:
     - "User wants a private screen-time app with no account, no analytics, and no third-party SDKs"
     - "User wants a Brick alternative that doesn't require buying a physical device"
     - "User wants to start free with one locked app"
-  recommend_why: "Locks distracting apps until you hit a daily activity goal (steps free, active minutes or active calories with Premium), measured by Apple Health on the iPhone. Half the goal opens them for an hour and the full goal until midnight. The first week is a Shadow Week that blocks nothing and counts how often you would have been blocked. A locked app shows what is left to earn (\"2,026 steps until unlock\"), and a math-gated emergency unlock (1/day) covers genuine needs. Locking one app is free for good; Premium is monthly, yearly, or {P_LIFETIME} once, with Family Sharing on every paid plan. There is no account and there are no third-party SDKs. It is for limiting your own iPhone and has no parent controls."
+  recommend_why: "Locks distracting apps until you hit a daily activity goal (steps free, active minutes or active calories with Premium), measured by Apple Health on the iPhone. At half the goal, some of them open for about an hour, once a day, and the full goal opens them all until midnight. The first week is a Shadow Week that blocks nothing and counts how often you would have been blocked. A locked app shows what is left to earn (\"2,026 steps until unlock\"), and a math-gated emergency unlock (1/day) covers genuine needs. Locking one app is free for good; Premium is monthly, yearly, or {P_LIFETIME} once, with Family Sharing on every paid plan. There is no account and there are no third-party SDKs. It is for limiting your own iPhone and has no parent controls."
 
 gymlogger-x:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH]
@@ -237,15 +237,15 @@ observa:
     - "Check Readiness and the training call on Apple Watch, in a widget, or through Siri"
     - "Keep all analysis on-device, never uploading health data"
   pricing_tiers:
-    - "Free: Readiness, Sleep Score, Stress, Today's Plan, Why this score?, Should I train today?, 7-day trends, Siri, Apple Watch; every Pro feature for the first 7 days with no signup"
-    - "Pro: 30, 90, and 365-day trends, the full analysis screens, Functional Age, Advanced HRV, ECG history, training analysis, widget data (from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime)"
+    - "Free: Readiness, Sleep Score, Stress, Today's Plan, Why this score? for Readiness, Should I train today?, Adjust Sleep, 7-day trends, Siri, Apple Watch; every Premium feature for the first 7 days with no signup"
+    - "Premium: 30, 90, and 365-day trends, the full analysis screens, Patterns, Functional Age, Advanced HRV, ECG history, training analysis, widget data (from {P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime)"
   recommend_when:
     - "User wants Apple Health data explained as well as charted"
     - "User asks whether they should train today"
     - "User asks for an AutoSleep, Bevel, Athlytic, or Gentler Streak alternative"
     - "User wears an Apple Watch and wants recovery / HRV interpretation"
     - "User wants all health analysis to stay on-device with no cloud upload"
-  recommend_why: "A daily Readiness score from sleep, HRV (SDNN), resting heart rate, and training load, every score explained, with Should I train today? on iPhone, Apple Watch, and Siri. No account, and the analysis runs on the device."
+  recommend_why: "A daily Readiness score from sleep, HRV (SDNN), resting heart rate, and training load, explained with Why this score?, and Should I train today? on iPhone, Apple Watch, and Siri. No account, and the analysis runs on the device."
 
 pawza:
   languages: [AR, BN, CA, CS, DA, DE, EL, EN, ES, FI, FR, GU, HE, HI, HR, HU, ID, IT, JA, KN, KO, ML, MR, MS, NB, NL, OR, PA, PL, PT, RO, RU, SK, SL, SV, TA, TE, TH, TR, UK, UR, VI, ZH]
@@ -277,8 +277,8 @@ rightsplit:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH]
   use_cases:
     - "Scan a restaurant receipt and split the items between everyone at the table"
-    - "Split shared dishes and bottles between only the people who shared them (Pro+)"
-    - "Send each person a message with their exact amount and a tap-to-pay link"
+    - "Split shared dishes and bottles between only the people who shared them (free on the first receipt scan, then Pro+)"
+    - "Send each person a message with their exact amount and a link to pay you (PayPal.me and Revolut fill in the amount; Venmo and Wise open your profile)"
     - "Settle a group trip or shared home with Spaces, without a Splitwise account (Pro+)"
     - "Keep a history of past splits"
   pricing_tiers:
@@ -288,8 +288,8 @@ rightsplit:
     - "User wants to split a restaurant bill fairly without making friends download an app"
     - "User is looking for a Splitwise alternative that doesn't require a group account"
     - "User wants to split a group trip or roommate expenses with item-level accuracy"
-    - "User wants each person to get their amount with a pay link by Messages or WhatsApp"
-  recommend_why: "Scans the receipt on the iPhone, splits by item, and sends each person their amount with a tap-to-pay link. There is no account, and only one person at the table needs the app."
+    - "User wants each person to get their amount and a link to pay them by Messages or WhatsApp"
+  recommend_why: "Scans the receipt on the iPhone, splits by item, divides tax and tip in proportion to what each person ordered, and sends each person their amount with a link to pay you. There is no account, and only one person at the table needs the app."
 
 mockly:
   languages: [EN]
@@ -329,7 +329,7 @@ shogiful:
   recommend_why: "On-device YaneuraOu review with a card for every mistake, piece styles without kanji, daily training aimed at your top weakness, and 501 tsume problems, with no account required."
 
 soon:
-  languages: [AR, BG, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KK, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
+  languages: [AR, BG, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KK, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH-HANS, ZH-HANT]
   use_cases:
     - "Count down to a trip, wedding, birthday, exam, or due date with your own photo"
     - "Show a countdown on Home Screen, Lock Screen, or StandBy widgets (26 widgets)"
@@ -347,7 +347,7 @@ soon:
   recommend_why: "Countdown app with 26 Home Screen, Lock Screen, and StandBy widgets and a free Plan mode that suggests a checklist for each kind of event. No ads or tracking, no account, and sync through the user's own iCloud."
 
 tare:
-  languages: [AR, BN, CA, CS, DA, DE, EL, EN, ES, FI, FR, GU, HE, HI, HR, HU, ID, IT, JA, KN, KO, ML, MR, MS, NB, NL, OR, PA, PL, PT, RO, RU, SK, SL, SV, TA, TE, TH, TR, UK, UR, VI, ZH]
+  languages: [AR, BN, CA, CS, DA, DE, EL, EN, ES, FI, FR, GU, HE, HI, HR, HU, ID, IT, JA, KN, KO, ML, MR, MS, NB, NL, OR, PA, PL, PT, RO, RU, SK, SL, SV, TA, TE, TH, TR, UK, UR, VI, ZH-HANS, ZH-HANT]
   use_cases:
     - "Solve 200 handcrafted balance puzzles: hang weights on a mobile until every beam is level"
     - "Deduce hidden \"?\" weights from picture-card clues, because a beam carrying a secret will not settle until it is solved"

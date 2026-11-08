@@ -3,7 +3,7 @@ layout: app
 slug: millrace
 ref: /apps/millrace/
 permalink: /fr/apps/millrace/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 og_tagline: "Un jeu de logique à solution prouvée."
 tagline: "Un jeu de tuiles où chaque niveau a une solution la plus courte prouvée."
 quick_answer: "Millrace est un jeu de logique pour iPhone et iPad : 64 niveaux en six chapitres, chacun avec un plateau de départ défini, une file fixe de tuiles à venir, une limite de coups et un nombre précis à former sur la case cible. Un solveur a prouvé la solution la plus courte de chaque niveau, donc vous voyez à quel point vous étiez près de la perfection. Les niveaux, le Jeu libre, le Défi quotidien et l’Indice sont gratuits, sans publicité et sans abonnement ; seuls des packs de thèmes, des packs d’annulations et un pourboire sont proposés en option, et le jeu fonctionne hors ligne, sans compte."
@@ -98,13 +98,13 @@ who_not_for:
 
 value_points:
   - title: "Un objectif, une limite de coups, une ligne d’arrivée"
-    description: "Chaque niveau a un plateau de départ défini, une file fixe de tuiles à venir, une limite de coups et un nombre exact à former. Rien n’est aléatoire dans un niveau : vous pouvez le réfléchir du premier au dernier coup."
+    description: "Chaque niveau a un plateau de départ défini, une file fixe de tuiles à venir, une limite de coups et un nombre exact à former. La case d’arrivée et la case cible sont deux cases distinctes, toutes deux marquées sur le plateau, et toute la file reste à l’écran. Rien n’est aléatoire dans un niveau : vous pouvez le réfléchir du premier au dernier coup."
   - title: "Une solution la plus courte prouvée"
     description: "Un solveur à recherche en largeur a trouvé la solution la plus courte de chaque niveau avant sa sortie. Quand vous réussissez un niveau, la carte de résultat affiche votre nombre de coups, votre record et le minimum possible."
   - title: "Un indice toujours sur une ligne gagnante"
     description: "Dans un niveau, l’Indice vient de ce solveur : le coup conseillé mène donc toujours à une solution. Il trace une flèche sur le plateau et donne la raison en une ligne."
   - title: "Gratuit en entier, sans publicité"
-    description: "Les niveaux, le Jeu libre, le Défi quotidien et l’Indice ne coûtent rien. Les packs de thèmes et d’annulations sont des achats uniques facultatifs, et il n’y a aucun abonnement."
+    description: "Les niveaux, le Jeu libre, le Défi quotidien et l’Indice ne coûtent rien. Les packs de thèmes sont des achats uniques facultatifs, les packs d’annulations pour le Jeu libre des consommables facultatifs, et il n’y a aucun abonnement."
 
 features:
   - title: "Les 64 niveaux"
@@ -274,7 +274,7 @@ last_updated: 2026-11-08
 ---
 Millrace est un jeu de logique à tuiles pour iPhone et iPad. Les tuiles identiques fusionnent quand vous les faites glisser l’une contre l’autre, mais chacun de ses 64 niveaux est un problème fermé, avec un objectif, une limite de coups et une meilleure solution connue.
 
-Un niveau vous donne un **plateau de départ défini**, une **file fixe de tuiles à venir** et une **limite de coups**. Les tuiles arrivent une à une sur la **case d’arrivée**, la case où chaque nouvelle tuile se pose, et votre but est de former un nombre précis sur la **case cible**. Rien n’est aléatoire dans un niveau : vous pouvez le planifier jusqu’au bout.
+Un niveau vous donne un **plateau de départ défini**, une **file fixe de tuiles à venir** et une **limite de coups**. Les tuiles arrivent une à une sur la **case d’arrivée**, la case où chaque nouvelle tuile se pose, et votre but est de former un nombre précis sur la **case cible**, une case distincte. Toute la file des tuiles à venir reste toujours à l’écran : rien n’est aléatoire ni caché dans un niveau, et vous pouvez le planifier jusqu’au bout.
 
 Vous pouvez perdre de deux façons, et toutes deux viennent de vos propres coups. Bloquez la case d’arrivée et la tuile suivante n’a nulle part où se poser. Dépassez le nombre visé, un 128 quand le niveau demande 64, et l’objectif est perdu. Après une défaite, vous pouvez annuler ce coup ou recommencer.
 

@@ -3,8 +3,8 @@ layout: journal
 slug: what-14-days-of-apple-health-can-reveal
 ref: /journal/what-14-days-of-apple-health-can-reveal/
 permalink: /de/journal/what-14-days-of-apple-health-can-reveal/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Was 14 Tage Apple-Health-Daten zeigen können und was nicht"
 seo:
@@ -28,7 +28,7 @@ faq:
   - q: "Was können Apple-Health-Daten nicht zeigen?"
     a: "Ursache und Wirkung. Eine Korrelationsanalyse kann dir sagen, dass dein Tiefschlaf an Tagen, an denen du nach 18:00 Uhr trainierst, eher niedriger ausfällt. Sie kann nicht beweisen, dass das Training der Grund war. Etwas anderes an diesen Tagen (Stress, Koffein, ein spätes Abendessen) kann die eigentliche Ursache sein. Behandle Erkenntnisse als Hypothesen, die du zwei Wochen lang testest, nicht als Urteile."
   - q: "Wie erstellt Observa deine Basislinie?"
-    a: "Observa vergleicht jeden Messwert mit deinem eigenen üblichen Bereich statt mit einem Bevölkerungsdurchschnitt und zeigt, wie sicher die Einschätzung ist. In etwa den ersten 7 Nächten zeigt die Bereitschaft an, dass deine Basislinie noch entsteht, während Observa lernt, was für dich normal ist, und die Angabe zur Konfidenz sagt dir, wie viele Daten hinter einem Wert stehen. „Muster“ blickt 14, 28 oder 90 Tage zurück und zeigt ein Muster erst, wenn es eine Signifikanzprüfung besteht."
+    a: "Observa vergleicht jeden Messwert mit deinem eigenen üblichen Bereich statt mit einem Bevölkerungsdurchschnitt und zeigt, wie sicher die Einschätzung ist. In etwa den ersten 7 Nächten zeigt die Bereitschaft an, dass deine Basislinie noch entsteht, während Observa lernt, was für dich normal ist, und die Angabe zur Konfidenz sagt dir, wie viele Daten hinter einem Wert stehen. „Muster“, ein Teil von Premium, greift auf deinen gesamten Verlauf zurück, und jede Karte trägt eine Angabe zur Konfidenz, weil auch schwächere Zusammenhänge erscheinen können."
 mentioned_apps:
   - observa
 read_time: "8 Min. Lesezeit"
@@ -92,9 +92,9 @@ Aus demselben Grund ist es fast immer Zeitverschwendung, deine Zahlen mit denen 
 
 Die Apple Watch zeichnet die HRV als SDNN auf (die Standardabweichung der Abstände zwischen Herzschlägen), zu wechselnden Zeiten über den Tag und in der Nacht, meist wenn du still bist. Viele Werkzeuge aus der Sportwissenschaft nutzen ein anderes HRV-Maß, deshalb lassen sich die absoluten Zahlen nicht direkt mit Messungen eines Brustgurts oder mit Werten einer Uhr einer anderen Marke vergleichen. Vergleichen kannst du *die Messung deiner Uhr an dir über die Zeit*. Verfolge also diesen SDNN-Wert im Vergleich zu deiner eigenen Basislinie und halte deine Rohzahl nicht neben die eines Freundes.
 
-Die Apple Watch kann auch EKGs aufzeichnen. Observa Pro zeigt diese Aufzeichnungen und den Verlauf ihrer Einstufungen so, wie Apple Health sie gespeichert hat, nur zur Information; die App diagnostiziert nichts. Die Daten zu den Schlafphasen (Tief, REM, Kern, Wach) stammen von den Bewegungs- und Herzfrequenzsensoren der Uhr. Für Trends sind sie genau genug, für eine klinische Bestimmung der Schlafphasen nicht.
+Die Apple Watch kann auch EKGs aufzeichnen. Observa Premium zeigt diese Aufzeichnungen und den Verlauf ihrer Einstufungen so, wie Apple Health sie gespeichert hat, nur zur Information; die App diagnostiziert nichts. Die Daten zu den Schlafphasen (Tief, REM, Kern, Wach) stammen von den Bewegungs- und Herzfrequenzsensoren der Uhr. Für Trends sind sie genau genug, für eine klinische Bestimmung der Schlafphasen nicht.
 
-[Observa](/de/apps/observa/) liest diese Daten aus Apple Health und vergleicht sie mit deinem eigenen üblichen Bereich. Jeden Morgen bekommst du die Bereitschaft, einen Schlafwert und eine Einschätzung deines Stresses, jeweils mit „Warum dieser Wert?“, und der Reiter „Muster“ blickt 14, 28 oder 90 Tage zurück und sucht nach den Gewohnheiten, die oft mit deiner Erholung, deinem Schlaf und deiner HRV zusammenfallen. Die App braucht kein Konto, und die Auswertung läuft auf deinem Gerät. Das Ziel ist, zu nutzen, was Apple Health seit Jahren sammelt.
+[Observa](/de/apps/observa/) liest diese Daten aus Apple Health und vergleicht sie mit deinem eigenen üblichen Bereich. Jeden Morgen bekommst du die Bereitschaft mit „Warum dieser Wert?“, einen Schlafwert und eine Einschätzung deines Stresses, und mit Premium durchsucht der Reiter „Muster“ deinen gesamten Verlauf nach den Gewohnheiten, die oft mit deiner Erholung, deinem Schlaf und deiner HRV zusammenfallen. Die App braucht kein Konto, und die Auswertung läuft auf deinem Gerät. Das Ziel ist, zu nutzen, was Apple Health seit Jahren sammelt.
 
 Welche Werte überhaupt eine Basislinie verdienen, steht in [6 Apple-Health-Werte, die sich lohnen](/de/journal/apple-health-metrics-worth-interpreting/).
 

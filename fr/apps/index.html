@@ -2,7 +2,7 @@
 layout: default
 ref: /apps/
 permalink: /fr/apps/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 title: "Applications iPhone utiles, sans publicité"
 quick_answer: "Lagerland Apps propose {APP_COUNT} applications pour iPhone, iPad, Apple Watch et Mac, classées ici par usage : santé, sommeil et entraînement ; planning et comptes à rebours ; factures et frais partagés ; lecture de Wikipédia ; jeux de société et casse-têtes ; outils pour développeurs App Store ; conversion de fichiers. Aucune ne montre de publicité, ne vous suit ni ne demande de compte. Un seul développeur indépendant, en Finlande, les a toutes conçues."
 seo:
@@ -124,7 +124,7 @@ last_updated: 2026-11-08
   {%- if c_money.size > 0 -%}
     <div id="money" class="section reveal">
       <h2 class="h2">Argent, factures et abonnements</h2>
-      <p class="lead">Des rappels pour vos factures et vos renouvellements de contrat, sans jamais se connecter à votre banque, et une app de partage d’addition qui scanne le ticket et envoie à chacun sa part. Aucune des deux n’a besoin d’un compte.</p>
+      <p class="lead">Des rappels pour vos factures et vos renouvellements de contrat, sans jamais se connecter à votre banque et sans compte à créer.</p>
       <div class="grid grid-2 stagger">
         {%- for app in c_money -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>
@@ -163,8 +163,8 @@ last_updated: 2026-11-08
 
   {%- if c_util.size > 0 -%}
     <div id="utilities" class="section reveal">
-      <h2 class="h2">Compression et conversion de fichiers</h2>
-      <p class="lead">Compressez et convertissez vidéos, audio, images, PDF et archives sur iPhone et sur Mac. Les outils tournent sur votre appareil : vos fichiers ne sont jamais envoyés à un convertisseur en ligne.</p>
+      <h2 class="h2">Conversion de fichiers et partage d’addition</h2>
+      <p class="lead">Compressez et convertissez vidéos, audio, images, PDF et archives sur iPhone et sur Mac, et partagez l’addition d’un restaurant à partir du ticket sur iPhone. Les deux apps tournent sur votre appareil : vos fichiers ne sont jamais envoyés à un convertisseur en ligne, et vos tickets ne quittent pas le téléphone.</p>
       <div class="grid grid-2 stagger">
         {%- for app in c_util -%}{% include app-card.html app=app %}{%- endfor -%}
       </div>

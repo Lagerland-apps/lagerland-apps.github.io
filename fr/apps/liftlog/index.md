@@ -3,7 +3,7 @@ layout: app
 slug: liftlog
 ref: /apps/liftlog/
 permalink: /fr/apps/liftlog/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 tagline: "Le carnet de musculation que vous payez une fois et que vous gardez."
 og_tagline: "Un carnet de musculation payé une fois."
 quick_answer: "LiftLog est une application de musculation pour iPhone, sans abonnement : 7 jours d’essai gratuit sans carte bancaire, puis un achat unique de {P_IAP:Minimum} à {P_IAP:Patron}, avec le partage familial activé. Elle préremplit chaque série d’après votre dernière séance, lance toute seule le minuteur de repos et signale un record personnel à l’instant où vous le battez. Elle réunit 1500 exercices avec démos animées, 40 programmes prêts à l’emploi qui peuvent suggérer votre prochaine charge et 10 widgets pour l’écran d’accueil et l’écran verrouillé. Vos séances restent sur votre iPhone, sans compte ni outil d’analyse."

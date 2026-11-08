@@ -12,7 +12,7 @@ app_store_url: "https://apps.apple.com/app/id6758788164"
 price:
   model: subscription
 price_lead: "Free trial"
-price_tier: "Pro"
+price_override: "{P_MONTHLY}/month, {P_YEARLY}/year, or {P_LIFETIME} lifetime"
 free_tier: false
 
 # Enable in-page "Jump to" anchor nav (renders only when sections exist).
@@ -27,12 +27,12 @@ plans_footnote: "Prices in USD; the App Store shows your local currency at check
 plans:
   - name: "Free download"
     price: "$0"
-    summary: "Try the app on sample data before you pay. Your own numbers need Pro or Lifetime."
+    summary: "Try the app on sample data before you pay. Your own numbers need a subscription or Lifetime."
     features:
       - "Demo with five sample apps and 455 days of sample data, for up to 3 days of use"
       - "Connect your own App Store Connect API key (Admin role) once you subscribe or buy Lifetime"
       - "iPhone only, iOS 17 or later"
-  - name: "Pro"
+  - name: "Monthly · Yearly"
     price: "{P_MONTHLY} / mo · {P_YEARLY} / yr"
     kind: monthly
     summary: "Every feature on your own App Store Connect data, billed monthly or yearly. Each plan starts with a {TRIAL}; cancel anytime."
@@ -46,10 +46,10 @@ plans:
   - name: "Lifetime"
     price: "{P_LIFETIME} one-time"
     kind: lifetime
-    summary: "Every Pro feature for one payment."
-    highlight_label: "One-time purchase"
+    summary: "Full access for one payment."
+    highlight_label: "Pay once"
     features:
-      - "Everything in Pro, unlocked for good"
+      - "Everything in Monthly and Yearly, unlocked for good"
       - "One payment, with no renewal"
       - "Restore it on another iPhone with Restore Purchases"
 
@@ -208,7 +208,7 @@ faq:
     a: "No. AppMeta Pulse can't change your prices, builds, or metadata, and it has no buttons for them. The one thing you can change is a review reply: you write it, tap send, and can edit or delete it later."
 
   - q: "Is AppMeta Pulse free?"
-    a: "The download is free and opens a demo with five sample apps, for up to 3 days of use. To see your own numbers you need Pro at {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or Lifetime at {P_LIFETIME} once. Prices in USD; the App Store shows your local currency at checkout."
+    a: "The download is free and opens a demo with five sample apps, for up to 3 days of use. To see your own numbers you need full access: Monthly at {P_MONTHLY}/month or Yearly at {P_YEARLY}/year, each starting with a {TRIAL}, or Lifetime at {P_LIFETIME} once. Prices in USD; the App Store shows your local currency at checkout."
 
   - q: "Does it support multiple apps?"
     a: "Yes. AppMeta Pulse shows every app in your App Store Connect account, and you choose which ones it tracks. The Apps tab compares them side by side, and each app has its own chart, top territories, and reviews. If you work with more than one App Store Connect account, add each one and switch between them."
@@ -234,7 +234,7 @@ support:
 
 release:
   first_release: "2026-02-17"
-  last_updated: "2026-10-13"
+  last_updated: "2026-10-25"
 
 ratings:
   value: "4.0"
@@ -266,7 +266,7 @@ founder:
 related_apps:
   - appmeta
   - mockly
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 
 App Store Connect keeps about a year of daily sales. After that the days fall off, and with them any honest answer to "am I doing better than this time last year?" AppMeta Pulse fetches your sales and subscription reports through Apple's API and keeps every day on your iPhone until you delete it. It also keeps an original copy of each report Apple sends. Once a full year is stored, Trends puts this year next to last year, and the 12 widgets show how the current week or month is pacing.

@@ -13,14 +13,14 @@ seo:
     - "planner with icloud sync"
     - "taskful day"
 date: 2026-05-02
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 lede: "Taskful Day shipped on the Mac this week. This short essay explains why a daily planner has to run on the Mac where the work happens, what it took to make an iPad-born app behave like a Mac app you keep open all day, and why it is one app across iPhone, iPad, and Mac."
-quick_answer: "Taskful Day runs on Mac (macOS 14 or later) as well as iPhone, iPad, and Apple Watch. On the Mac it is a Mac Catalyst app with its own toolbar, menus, keyboard shortcuts, right-click menus, multiple windows, and desktop widgets; voice capture stays on iPhone and iPad. It is one App Store app, free to download on each device. With Pro, sync runs through your own private iCloud; Taskful Day has no server of its own, so the studio stores no tasks."
+quick_answer: "Taskful Day runs on Mac (macOS 14 or later) as well as iPhone, iPad, and Apple Watch. On the Mac it is a Mac Catalyst app with its own toolbar, menus, keyboard shortcuts, right-click menus, multiple windows, and desktop widgets; voice capture stays on iPhone and iPad. It is one App Store app, free to download on each device, and one Pro purchase covers iPhone, iPad, and Mac. With Pro, sync runs through your own private iCloud; Taskful Day has no server of its own, so the studio stores no tasks."
 faq:
   - q: "Is Taskful Day available on Mac?"
     a: "Yes. Taskful Day runs on Mac with macOS 14 or later, as well as on iPhone, iPad, and Apple Watch. On the Mac it is a Mac Catalyst app with a toolbar, menus, keyboard shortcuts such as ⌘N for a new task, right-click menus, multiple windows, and desktop widgets. Voice capture and Lock Screen widgets stay on iPhone and iPad, and the focus Live Activity on iPhone."
   - q: "Do I have to pay separately for Taskful Day on Mac?"
-    a: "There is no separate Mac app to buy. Taskful Day is a single App Store app that runs on iPhone, iPad, and Mac, and it's free to download on each. Pro is {P_MONTHLY@taskful-day} a month, {P_YEARLY@taskful-day} a year, or {P_LIFETIME@taskful-day} once, and every new install gets 7 days of Pro free with no card."
+    a: "There is no separate Mac app to buy. Taskful Day is a single App Store app that runs on iPhone, iPad, and Mac, and it's free to download on each. One Pro purchase unlocks Pro on all three with the same Apple Account. Pro is {P_MONTHLY@taskful-day} a month, {P_YEARLY@taskful-day} a year, or {P_LIFETIME@taskful-day} once, and every new install gets 7 days of Pro free with no card."
   - q: "How does Taskful Day sync between iPhone, iPad, and Mac?"
     a: "With Pro, Taskful Day syncs through your own private iCloud. Tasks, checklists, reminders, workspaces, the Inbox, and your Journal stay in step across your devices. Taskful Day has no server of its own, so the studio stores no tasks. The trade-off is that there is no shared cloud space for team task lists."
   - q: "Is Taskful Day a replacement for Things 3, TickTick, or Sorted3?"
@@ -43,13 +43,13 @@ For several years Apple has made it easy to bring an iPad app to the Mac with Ma
 
 That is fine for an app you open once and dismiss, like a calculator. It isn't fine for an app you keep open in a corner of the screen for eight hours, next to Slack, your calendar, and the document you're trying to finish. If the keyboard shortcuts feel pasted on and the window doesn't act like a Mac window, you notice it all day.
 
-Taskful Day on Mac is a Catalyst app built with Apple's "Optimize for Mac" option, and the work went into the parts you touch all day. It has a real toolbar and menus, Mac keyboard shortcuts such as ⌘N for a new task and ⌘⇧I for a new Inbox item, right-click menus, more than one window, and widgets on the desktop. Voice capture and Lock Screen widgets stay on the iPhone and the iPad, and the focus Live Activity stays on the iPhone.
+Taskful Day on Mac is a Catalyst app that keeps its iPad layout, scaled to the Mac screen, so the work went into the parts you touch all day. It has a Mac toolbar and menus, Mac keyboard shortcuts such as ⌘N for a new task and ⌘⇧I for a new Inbox item, right-click menus, more than one window, and widgets on the desktop. Voice capture and Lock Screen widgets stay on the iPhone and the iPad, and the focus Live Activity stays on the iPhone.
 
 It took longer than ticking the checkbox, and I think it was the right call.
 
 ## One app on every device
 
-The other decision: Taskful Day is a single App Store app that runs on iPhone, iPad, and Mac, and it's free to download on each. There is no separate Mac edition to find.
+The other decision: Taskful Day is a single App Store app that runs on iPhone, iPad, and Mac, and it's free to download on each. There is no separate Mac edition to find, and one Pro purchase unlocks Pro on all three devices with the same Apple Account.
 
 Many indie apps sell the Mac version separately, and they have good reasons: the Mac app is often a lot of extra work for a smaller audience, and a separate price pays for it.
 
