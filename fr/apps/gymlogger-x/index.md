@@ -189,9 +189,9 @@ faq:
   - q: "Qu’est-ce que le Smart Program Creator ?"
     a: "C’est un assistant qui construit un programme à partir de votre matériel, de vos objectifs, de vos blessures, de votre emploi du temps et de vos préférences. Vous choisissez une répartition (full body, haut/bas du corps, push/pull/legs, push/pull, split Arnold ou bro split), le nombre de jours par semaine, la durée d’une séance, une durée de 4, 8 ou 12 semaines ou en continu, et une périodisation linéaire, ondulatoire, par blocs ou par vagues. Les blessures se saisissent par partie du corps, avec les mouvements à éviter. L’aperçu montre les semaines de décharge, un échauffement préventif et les adaptations liées aux blessures, et vous pouvez remplacer un exercice ou régénérer avant de commencer. Il est gratuit ; sans Pro, vous gardez un programme à la fois."
   - q: "GymLogger X gère-t-il le RPE et le RIR ?"
-    a: "Pas à la saisie. Une série enregistre la charge et les répétitions, et indique si c’était un échauffement ; il n’y a pas de saisie de RPE ou de RIR par série, et les analyses, statut de plateau compris, partent de la charge et des répétitions. L’article <a href=\"/journal/rpe-and-rir-explained/\" hreflang=\"en\">RPE and RIR, explained</a> (en anglais) explique ce que cela change si vous notez chaque série."
+    a: "Pas à la saisie. Une série enregistre la charge et les répétitions, et indique si c’était un échauffement ; il n’y a pas de saisie de RPE ou de RIR par série, et les analyses, statut de plateau compris, partent de la charge et des répétitions. Notre article <a href=\"/fr/journal/rpe-and-rir-explained/\">RPE et RIR en musculation</a> explique ce que cela change si vous notez chaque série."
   - q: "GymLogger X calcule-t-il le Wilks, le DOTS ou le Sinclair ?"
-    a: "Non. GymLogger X ne calcule ni points Wilks, ni DOTS, ni Sinclair. Il estime le 1RM de chaque exercice avec la formule d’Epley, tient un tableau des maxima et vos records, et propose un calculateur de disques pour charger la barre."
+    a: "Non. GymLogger X ne calcule ni points Wilks, ni DOTS, ni Sinclair. Il estime le 1RM de chaque exercice avec la formule d’Epley, tient un tableau des maxima et vos records, et propose un calculateur de disques pour charger la barre. Notre article <a href=\"/fr/journal/how-to-estimate-your-one-rep-max/\">Calcul du 1RM</a> compare la formule d’Epley aux autres."
   - q: "GymLogger X fonctionne-t-il sur Apple Watch sans l’iPhone ?"
     a: "Non. L’app Apple Watch est une app compagnon : vous démarrez la séance sur l’iPhone, et les séries saisies sur la montre passent par le téléphone. Au poignet, vous saisissez la charge et les répétitions, vous voyez la fréquence cardiaque, la durée et les calories, et vous réglez le minuteur de repos. La fréquence cardiaque et les calories demandent l’autorisation Santé sur la montre."
   - q: "Comment fonctionne la détection des plateaux ?"
@@ -210,7 +210,7 @@ faq:
     a: "Oui. L’app, ses widgets et l’app Apple Watch existent en français."
 
 related_journal:
-  anchor: "PPL, haut/bas du corps ou 5/3/1 : choisir un programme que vous irez vraiment au bout (article en anglais)"
+  anchor: "PPL, full body, upper/lower ou 5/3/1 : choisir un programme que vous suivrez encore dans douze semaines"
 
 enrichment:
   use_cases:

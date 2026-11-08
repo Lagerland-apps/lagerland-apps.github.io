@@ -573,7 +573,8 @@
   },
   "/journal/": {
     "de": "/de/journal/",
-    "en": "/journal/"
+    "en": "/journal/",
+    "fr": "/fr/journal/"
   },
   "/journal/apple-health-metrics-worth-interpreting/": {
     "de": "/de/journal/apple-health-metrics-worth-interpreting/",
@@ -581,7 +582,8 @@
   },
   "/journal/apple-watch-hrv-without-a-baseline/": {
     "de": "/de/journal/apple-watch-hrv-without-a-baseline/",
-    "en": "/journal/apple-watch-hrv-without-a-baseline/"
+    "en": "/journal/apple-watch-hrv-without-a-baseline/",
+    "fr": "/fr/journal/apple-watch-hrv-without-a-baseline/"
   },
   "/journal/bill-splitting-math-tax-tip-shared-plates/": {
     "de": "/de/journal/bill-splitting-math-tax-tip-shared-plates/",
@@ -589,11 +591,13 @@
   },
   "/journal/choosing-a-strength-program-you-will-finish/": {
     "de": "/de/journal/choosing-a-strength-program-you-will-finish/",
-    "en": "/journal/choosing-a-strength-program-you-will-finish/"
+    "en": "/journal/choosing-a-strength-program-you-will-finish/",
+    "fr": "/fr/journal/choosing-a-strength-program-you-will-finish/"
   },
   "/journal/compress-a-video-for-email/": {
     "de": "/de/journal/compress-a-video-for-email/",
-    "en": "/journal/compress-a-video-for-email/"
+    "en": "/journal/compress-a-video-for-email/",
+    "fr": "/fr/journal/compress-a-video-for-email/"
   },
   "/journal/countdown-psychology-why-anticipation-beats-reminders/": {
     "de": "/de/journal/countdown-psychology-why-anticipation-beats-reminders/",
@@ -609,15 +613,18 @@
   },
   "/journal/how-long-to-rest-between-sets/": {
     "de": "/de/journal/how-long-to-rest-between-sets/",
-    "en": "/journal/how-long-to-rest-between-sets/"
+    "en": "/journal/how-long-to-rest-between-sets/",
+    "fr": "/fr/journal/how-long-to-rest-between-sets/"
   },
   "/journal/how-many-steps-a-day-to-aim-for/": {
     "de": "/de/journal/how-many-steps-a-day-to-aim-for/",
-    "en": "/journal/how-many-steps-a-day-to-aim-for/"
+    "en": "/journal/how-many-steps-a-day-to-aim-for/",
+    "fr": "/fr/journal/how-many-steps-a-day-to-aim-for/"
   },
   "/journal/how-much-to-tip-in-the-us/": {
     "de": "/de/journal/how-much-to-tip-in-the-us/",
-    "en": "/journal/how-much-to-tip-in-the-us/"
+    "en": "/journal/how-much-to-tip-in-the-us/",
+    "fr": "/fr/journal/how-much-to-tip-in-the-us/"
   },
   "/journal/how-plan-mode-builds-a-checklist/": {
     "de": "/de/journal/how-plan-mode-builds-a-checklist/",
@@ -625,7 +632,8 @@
   },
   "/journal/how-to-estimate-your-one-rep-max/": {
     "de": "/de/journal/how-to-estimate-your-one-rep-max/",
-    "en": "/journal/how-to-estimate-your-one-rep-max/"
+    "en": "/journal/how-to-estimate-your-one-rep-max/",
+    "fr": "/fr/journal/how-to-estimate-your-one-rep-max/"
   },
   "/journal/how-to-find-interesting-wikipedia-articles/": {
     "de": "/de/journal/how-to-find-interesting-wikipedia-articles/",
@@ -637,7 +645,8 @@
   },
   "/journal/how-to-sleep-after-a-night-shift/": {
     "de": "/de/journal/how-to-sleep-after-a-night-shift/",
-    "en": "/journal/how-to-sleep-after-a-night-shift/"
+    "en": "/journal/how-to-sleep-after-a-night-shift/",
+    "fr": "/fr/journal/how-to-sleep-after-a-night-shift/"
   },
   "/journal/how-to-sleep-on-call/": {
     "de": "/de/journal/how-to-sleep-on-call/",
@@ -677,7 +686,8 @@
   },
   "/journal/rpe-and-rir-explained/": {
     "de": "/de/journal/rpe-and-rir-explained/",
-    "en": "/journal/rpe-and-rir-explained/"
+    "en": "/journal/rpe-and-rir-explained/",
+    "fr": "/fr/journal/rpe-and-rir-explained/"
   },
   "/journal/shogi-openings-for-beginners/": {
     "de": "/de/journal/shogi-openings-for-beginners/",

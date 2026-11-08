@@ -84,7 +84,7 @@ who_not_for:
   - "Il vous faut l’app sur iPad, Mac ou Android, ou synchronisée entre plusieurs appareils"
 
 related_journal:
-  anchor: "Dormir après une nuit de travail : le trajet du retour, la chambre sombre, la sieste et les jours de repos"
+  anchor: "Bien dormir après une nuit de travail : trajet du retour, chambre sombre, sieste et jours de repos"
 
 value_points:
   - title: "Mesuré d’un poste au suivant"
@@ -104,7 +104,7 @@ features:
   - title: "Le sommeil d’Apple Santé, siestes comprises"
     description: "Le sommeil de la nuit passée s’importe tout seul, même en arrière-plan, et les siestes sont repérées comme telles. Enregistrez une sieste vous-même, ou lancez depuis l’écran verrouillé un minuteur de sieste de 25 minutes qui l’enregistre quand vous l’arrêtez. Il faut une Apple Watch ou une app de sommeil qui enregistre le sommeil dans Apple Santé."
   - title: "Horaires de sommeil, phases et tendance de la dette"
-    description: "Chaque sommeil affiche le temps endormi et l’efficacité, plus les phases Éveillé, Léger, Profond et Paradoxal quand votre source de sommeil les enregistre. Un graphique de la dette de sommeil classe chaque cycle en Dette en hausse, Stable ou En récupération. Premium ajoute le score de sommeil, le score de récupération par postes, la continuité du sommeil et les tendances."
+    description: "Chaque sommeil affiche le temps de sommeil et l’efficacité, plus les phases Éveillé, Léger, Profond et Paradoxal quand votre source de sommeil les enregistre. Un graphique de la dette de sommeil classe chaque cycle en Dette en hausse, Stable ou En récupération. Premium ajoute le score de sommeil, le score de récupération par postes, la continuité du sommeil et les tendances."
   - title: "Faites ça maintenant"
     description: "Un scénario parmi 12 pour votre fenêtre actuelle, comme une fenêtre courte entre deux postes ou une nuit de travail qui approche, avec trois étapes et leur durée. Remplacez une étape qui ne vous convient pas. Les 21 techniques s’accompagnent d’explications pas à pas et d’un minuteur."
   - title: "Une limite de caféine qui s’adapte"
