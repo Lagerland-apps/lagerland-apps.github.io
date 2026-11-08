@@ -1,7 +1,7 @@
 ---
 layout: journal
 slug: 30-chess-mistake-motifs
-title: "The 30 chess mistake motifs Chessful detects (and why each one matters)"
+title: "The 30 chess mistake motifs that decide club games (and how Chessful's 10 types cover them)"
 seo:
   title: "Chess Mistakes Explained: 30 Types That Lose Games"
   description: "The 30 chess mistakes that lose club-level games, from hung pieces and missed forks to wrong pawn breaks and endgame slips, each with its cause and fix."
@@ -30,7 +30,7 @@ mentioned_apps:
   - chessful
 read_time: "10 min read"
 excerpt: "A reference of thirty chess mistake motifs that decide club-level games, grouped under five skill areas, each with its cause and the drill that fixes it, and how they line up with the 10 mistake types Chessful puts on every mistake."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 Chessful analyzes your games on the device with Stockfish and labels every mistake with one of 10 types: Hanging Piece, Missed Fork, Missed Pin, Back-Rank Weakness, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, and Opening Inaccuracy. Ten is a useful number for a training queue. For understanding why a game was lost, a finer list helps, so here is a reference of thirty motifs that decide club-level games, grouped under the same five skill areas Chessful tracks (Tactics, Defense, Positioning, Endgame, and Openings), with the cause of each and the drill that fixes it.
 

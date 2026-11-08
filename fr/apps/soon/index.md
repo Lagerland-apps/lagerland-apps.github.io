@@ -3,7 +3,7 @@ layout: app
 slug: soon
 ref: /apps/soon/
 permalink: /fr/apps/soon/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 og_tagline: "Des comptes à rebours toujours sous vos yeux."
 tagline: "Des comptes à rebours pour les moments qui vous tiennent à cœur, toujours sous vos yeux."
 quick_answer: "Soon. est une application de compte à rebours pour iPhone, pour un voyage, un mariage, un anniversaire, un examen ou la date prévue de la naissance d’un bébé, et elle compte aussi les jours écoulés depuis une date passée. Chaque événement a votre photo, une checklist et une chronologie de départ gratuites selon son type, et une place parmi 26 widgets pour l’écran d’accueil, l’écran verrouillé et StandBy. Jusqu’à 5 événements sont gratuits ; Premium ({P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec {TRIAL}, ou {P_LIFETIME} en achat unique) ajoute les événements illimités, les rappels, les prévisions météo et une Activité en direct sur l’écran verrouillé. L’app n’a ni publicité ni suivi, ne demande aucun compte et se synchronise via votre propre iCloud."
@@ -111,7 +111,7 @@ value_points:
   - title: "Un plan accompagne chaque compte à rebours"
     description: "Soon. propose une checklist et une chronologie de départ pour le type d’événement choisi, d’un voyage ou d’un mariage à un examen ou un concert. Le mode planification est gratuit."
   - title: "Après le jour J, un souvenir"
-    description: "Quand un événement est passé, gardez-le comme Souvenir qui affiche les jours écoulés. Avec Premium, ajoutez des photos et une note, et recevez un rappel à chaque anniversaire."
+    description: "Quand un événement est passé, gardez-le comme Souvenir qui affiche les jours écoulés. Avec Premium, ajoutez une note et recevez un rappel à chaque anniversaire."
   - title: "Privée dès la conception"
     description: "Aucun compte à créer. Vos événements restent sur votre iPhone et, si vous l’activez, dans votre iCloud privé. L’app ne contient ni publicité, ni suivi, ni SDK tiers."
 
@@ -148,7 +148,7 @@ how_it_works:
     - title: "Fêtez le jour J"
       detail: "Quand le compte à rebours atteint zéro, Soon. ouvre une célébration plein écran avec des confettis. Partagez-la, enregistrez-la comme Souvenir ou fermez-la."
     - title: "Gardez-en un souvenir"
-      detail: "Un Souvenir affiche le nombre de jours écoulés depuis le jour J. Avec Premium, ajoutez des photos et une note sur ce qu’il représente, et activez Ce jour-là pour recevoir un rappel à chaque anniversaire."
+      detail: "Un Souvenir affiche le nombre de jours écoulés depuis le jour J. Avec Premium, ajoutez une note sur ce qu’il représente, et activez Ce jour-là pour recevoir un rappel à chaque anniversaire."
 
 example_insights:
   overline: "Dans Soon."
@@ -172,7 +172,7 @@ example_insights:
       body: "Donnez une date passée à un événement et il compte les jours écoulés. Le widget Soon · Streak affiche ce décompte sous forme de grille, et la commande du Centre de contrôle peut l’afficher aussi."
     - tag: "Souvenir · après le jour J"
       headline: "Un mariage, un an plus tard"
-      body: "Le mariage est maintenant un Souvenir qui compte les jours écoulés. Avec Premium, il garde vos photos et une note, et Ce jour-là envoie un rappel à l’anniversaire."
+      body: "Le mariage est maintenant un Souvenir qui compte les jours écoulés. Avec Premium, il garde une note sur ce jour, et Ce jour-là envoie un rappel à l’anniversaire."
 
 comparison_table:
   intro: "Chaque ligne est un point que les gens vérifient avant de choisir une application de compte à rebours. Days Matter et Countdowns (Apalon) sont des apps de compte à rebours installées de longue date, et Wedding Happy est l’app d’organisation de mariage la plus susceptible d’apparaître dans les mêmes recherches. Les détails des concurrents viennent de la fiche App Store publique et du site de chaque app, consultés le 13 mai 2026."

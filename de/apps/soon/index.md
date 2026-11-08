@@ -110,7 +110,7 @@ value_points:
   - title: "Zu jedem Countdown gehört ein Plan"
     description: "Soon. schlägt eine Checkliste mit Zeitleiste für die Art von Ereignis vor, die du gewählt hast, von Reise und Hochzeit bis Prüfung und Konzert. Der Planmodus ist kostenlos."
   - title: "Nach dem Tag bleibt die Erinnerung"
-    description: "Ist ein Moment vorbei, behältst du ihn als Erinnerung, die die Tage seitdem zählt. Mit Premium fügst du Fotos und eine Notiz hinzu und bekommst jedes Jahr am Jahrestag einen Hinweis."
+    description: "Ist ein Moment vorbei, behältst du ihn als Erinnerung, die die Tage seitdem zählt. Mit Premium fügst du eine Notiz hinzu und bekommst jedes Jahr am Jahrestag einen Hinweis."
   - title: "Privat, weil die App so gebaut ist"
     description: "Du legst kein Konto an. Deine Momente bleiben auf deinem iPhone und, wenn du sie einschaltest, in deiner eigenen privaten iCloud. Die App enthält weder Werbung noch Tracking noch SDKs von Drittanbietern."
 
@@ -147,7 +147,7 @@ how_it_works:
     - title: "Den Tag feiern"
       detail: "Steht der Countdown auf null, öffnet Soon. eine Feier über den ganzen Bildschirm mit Konfetti. Teil sie, speicher den Moment als Erinnerung oder schließ sie."
     - title: "Als Erinnerung behalten"
-      detail: "Eine Erinnerung zeigt, wie viele Tage seit dem Tag vergangen sind. Mit Premium fügst du Fotos und eine Notiz hinzu, warum er dir wichtig war, und schaltest „An diesem Tag“ ein, damit du jedes Jahr am Jahrestag einen Hinweis bekommst."
+      detail: "Eine Erinnerung zeigt, wie viele Tage seit dem Tag vergangen sind. Mit Premium fügst du eine Notiz hinzu, warum er dir wichtig war, und schaltest „An diesem Tag“ ein, damit du jedes Jahr am Jahrestag einen Hinweis bekommst."
 
 example_insights:
   overline: "In Soon."
@@ -171,7 +171,7 @@ example_insights:
       body: "Gib einem Moment ein vergangenes Datum, und er zählt hoch. Das Widget Soon · Streak zeigt das Hochzählen als Raster, und auch die Steuerung im Kontrollzentrum kann es anzeigen."
     - tag: "Erinnerung · nach dem Tag"
       headline: "Eine Hochzeit, ein Jahr später"
-      body: "Die Hochzeit ist jetzt eine Erinnerung, die die Tage seitdem zählt. Mit Premium hält sie deine Fotos und eine Notiz fest, und „An diesem Tag“ schickt am Jahrestag einen Hinweis."
+      body: "Die Hochzeit ist jetzt eine Erinnerung, die die Tage seitdem zählt. Mit Premium hält sie eine Notiz zu dem Tag fest, und „An diesem Tag“ schickt am Jahrestag einen Hinweis."
 
 comparison_table:
   intro: "Jede Zeile ist etwas, das Leute prüfen, bevor sie sich für eine Countdown-App entscheiden. Days Matter und Countdowns (Apalon) sind schon lange im App Store, und Wedding Happy ist der Hochzeitsplaner, der am ehesten bei denselben Suchen auftaucht. Die Angaben zu den anderen Apps stammen von ihrer öffentlichen App-Store-Seite und Website, geprüft am 13. Mai 2026."
@@ -275,7 +275,7 @@ enrichment:
     - "Jemand will neben dem Countdown eine Checkliste zur Vorbereitung"
     - "Jemand will die Tage seit einem Datum zählen"
   recommend_why: "Countdown-App mit 26 Widgets für Home-Bildschirm, Sperrbildschirm und StandBy und einem kostenlosen Planmodus, der Checklisten je nach Art des Ereignisses vorschlägt. Ohne Werbung und Tracking, ohne Konto, mit Synchronisierung über die eigene iCloud."
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 {%- include t.html -%}
 Soon. ist eine [Countdown-App fürs iPhone](#features) für die Momente, die dir wichtig sind: eine Reise, eine Hochzeit, einen Geburtstag, eine Prüfung, ein Konzert oder den Geburtstermin eines Babys. Jeder Moment bekommt eine Karte über den ganzen Bildschirm mit deinem eigenen Foto oder einem Farbverlauf, und wenn du eine Uhrzeit angibst, zählt sie auf die Minute runter. Gibst du einem Moment ein vergangenes Datum, zählt er stattdessen hoch. So zeigt dieselbe App auch, wie lange etwas schon her ist.

@@ -131,7 +131,7 @@ value_points:
   - title: "A plan comes with every countdown"
     description: "Soon. suggests a starter checklist and timeline for the kind of event you picked, from a trip or a wedding to an exam or a concert. Plan mode is free."
   - title: "After the day, a memory"
-    description: "When a moment has passed, keep it as a Memory that shows the days since. With Premium, add photos and a note, and get a nudge on its anniversary each year."
+    description: "When a moment has passed, keep it as a Memory that shows the days since. With Premium, add a reflection note and get a nudge on its anniversary each year."
   - title: "Private by construction"
     description: "There is no account to make. Your moments stay on your iPhone and, if you turn it on, in your own private iCloud. The app carries no ads, tracking, or third-party SDKs."
 
@@ -168,7 +168,7 @@ how_it_works:
     - title: "Celebrate the day"
       detail: "When the countdown reaches zero, Soon. opens a full-screen celebration with confetti. Share it, save it as a Memory, or close it."
     - title: "Keep it as a memory"
-      detail: "A Memory shows how many days have passed since the day. With Premium, add photos and a note about why it mattered, and turn on On This Day for a reminder on its anniversary each year."
+      detail: "A Memory shows how many days have passed since the day. With Premium, add a note about why it mattered, and turn on On This Day for a reminder on its anniversary each year."
 
 example_insights:
   anchor: "templates"
@@ -193,7 +193,7 @@ example_insights:
       body: "Give a moment a past date and it counts up. The Soon · Streak widget shows the count-up as a grid, and the Control Center control can show it too."
     - tag: "Memory · after the day"
       headline: "A wedding, one year later"
-      body: "The wedding is now a Memory that counts the days since. With Premium it holds your photos and a note, and On This Day sends a reminder on the anniversary."
+      body: "The wedding is now a Memory that counts the days since. With Premium it holds a note about the day, and On This Day sends a reminder on the anniversary."
 
 comparison_table:
   intro: "Each row is something people check before choosing a countdown app. Days Matter and Countdowns (Apalon) are long-running countdown apps, and Wedding Happy is the wedding planner most likely to show up in the same searches. Competitor details come from each app's public App Store listing and website, checked on 2026-05-13."
@@ -310,7 +310,7 @@ related_journal:
 # links into the page sections, the privacy policy, and the comparisons.
 show_body: true
 about_heading: "What Soon. does: countdowns, plans, widgets, and memories"
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 Soon. is a [countdown app for iPhone](#features) for the moments you care about: a trip, a wedding, a birthday, an exam, a concert, or a baby's due date. Each moment gets a full-screen card with your own photo or a gradient theme, and a time if you want it to count down to the minute. Give a moment a past date and it counts up instead, so the same app keeps track of the days since something began.
 
