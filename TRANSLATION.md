@@ -17,7 +17,7 @@ Read order for any translation session: repo `CLAUDE.md`, then this file, then t
 | Item | Status |
 |---|---|
 | Phase 0 groundwork (section 4) | done 2026-10-26 (what it built: 4.16) |
-| Languages live | de (German), 2026-10-27: Tier 1; fr (French), 2026-11-08: Tier 1, Tier 2 (guides and audience pages; for/indie-ios-developers English-only by choice) and Tier 3 batches 1 to 3 (30 comparisons incl. two local-only) and Tier 4 batch 1 (journal hub, 10 posts incl. one local-only) |
+| Languages live | de (German), 2026-10-27: Tier 1; fr (French), 2026-11-08: Tier 1, Tier 2 (guides and audience pages; for/indie-ios-developers English-only by choice) and Tier 3 batches 1 to 3 (30 comparisons incl. two local-only) and Tier 4 batches 1 and 2 (journal hub, 20 posts incl. two local-only) |
 
 Update this table in the same commit that finishes Phase 0 or launches a language. Per-language status
 (tiers done, open stale pages) lives in each language sheet.

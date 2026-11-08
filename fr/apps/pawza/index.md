@@ -234,7 +234,7 @@ faq:
   - q: "Pawza fonctionne-t-elle sur iPad ?"
     a: "Oui. Pawza est une app universelle pour iPhone et iPad, et sur iPad l’onglet des animaux passe en deux colonnes, avec la liste à côté du tableau de bord. Vos fiches se synchronisent entre les deux via votre propre iCloud. Pawza exige iOS 17.6 ou ultérieur et n’existe pas sur Mac, Apple Watch ni Android."
   - q: "Quelles vaccinations et quels traitements puis-je suivre dans Pawza ?"
-    a: "Tout ce que prescrit votre vétérinaire. Chaque vaccin garde la date d’administration, la date du prochain rappel, le numéro de lot et des remarques, et peut vous le rappeler le jour de l’échéance. Les traitements gardent la dose, un rappel de dose récurrent et l’historique des prises. Comme vous saisissez les noms employés par votre vétérinaire, ou que vous les scannez depuis le certificat, Pawza s’adapte au calendrier de n’importe quel pays : rage, DHPP, Bordetella et leptospirose pour les chiens, FVRCP et FeLV pour les chats, ou les vaccins propres à un lapin ou à un cheval."
+    a: "Tout ce que prescrit votre vétérinaire. Chaque vaccin garde la date d’administration, la date du prochain rappel, le numéro de lot et des remarques, et peut vous le rappeler le jour de l’échéance. Les traitements gardent la dose, un rappel de dose récurrent et l’historique des prises. Comme vous saisissez les noms employés par votre vétérinaire, ou que vous les scannez depuis le certificat, Pawza s’adapte au calendrier de n’importe quel pays : rage, DHPP, Bordetella et leptospirose pour les chiens, FVRCP et FeLV pour les chats, ou les vaccins propres à un lapin ou à un cheval. Notre article <a href=\"/fr/journal/puppy-and-kitten-vaccination-schedule/\">Vaccin chiot et chaton</a> détaille le calendrier des premiers vaccins, et l’article <a href=\"/fr/journal/passeport-europeen-chien-chat/\">Passeport européen chien et chat</a> explique les règles pour voyager dans l’UE."
   - q: "Aurai-je des rappels pour les vaccinations et les médicaments ?"
     a: "Oui. Les rappels sont des notifications locales réparties en six catégories : vaccin, médicament, repas, toilettage, visite chez le vétérinaire et personnalisé. Ils peuvent être uniques ou se répéter chaque jour, semaine, mois ou année. La notification d’une dose a un bouton « Donné » qui enregistre la prise, celle d’un repas a « Nourri », et les autres ont « Marquer comme fait » et « Répéter dans 1 heure ». Marquez un rappel « Sensible à l’heure » pour qu’il passe à travers le mode de concentration ; un rappel unique sensible à l’heure se répète après 5, 15 et 30 minutes jusqu’à ce que vous agissiez. Les rappels demandent l’autorisation d’envoyer des notifications."
   - q: "Puis-je partager l’historique de mon animal avec un vétérinaire ?"
@@ -251,7 +251,7 @@ faq:
     a: "Ouvrez Réglages, touchez votre nom, puis Abonnements, et résiliez avant la date de renouvellement ; vous gardez Pro jusqu’à la fin de la période. Mensuel et Annuel commencent par {TRIAL} pour les comptes éligibles et se renouvellent automatiquement tant que vous ne résiliez pas. À vie est un achat unique, il n’y a rien à résilier. Apple gère les remboursements selon la procédure habituelle de l’App Store."
 
 related_journal:
-  anchor: "Ce qui doit vraiment figurer dans le dossier médical de votre animal, et qui vous le demande"
+  anchor: "Carnet de santé du chien et du chat : que garder dans le dossier médical, et qui demande quoi"
 
 enrichment:
   use_cases:

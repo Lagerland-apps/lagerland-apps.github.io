@@ -254,7 +254,7 @@ faq:
     a: "Vous pouvez partager n’importe quel compte à rebours sous forme d’image au format Story, Post, Message ou widget, par Messages, Instagram ou toute app de la feuille de partage. Les cartes de partage gratuites portent un petit filigrane Soon., que Premium supprime. Soon. n’a pas de comptes à rebours partagés ou en direct entre personnes ; si deux personnes veulent le même compte à rebours, chacune l’ajoute dans sa propre copie."
 
 related_journal:
-  anchor: "Comment le mode planification construit une checklist pour un mariage, un voyage ou l’arrivée d’un bébé"
+  anchor: "Application pour organiser un mariage ou un voyage : la checklist à rebours du mode planification de Soon."
 
 about_heading: "Ce que fait Soon. : comptes à rebours, plans, widgets et souvenirs"
 

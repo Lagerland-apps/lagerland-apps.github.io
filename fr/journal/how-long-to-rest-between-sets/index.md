@@ -90,7 +90,7 @@ En pratique, reposez-vous assez longtemps pour que la série suivante ne soit pa
 
 ## Faut-il chronométrer son repos ?
 
-Je pense que oui, mais la raison tient peu à la physiologie. Toute règle de progression fondée sur les répétitions suppose que les répétitions sont comparables d’une séance à l’autre. Si, mardi, vos séries étaient séparées de deux minutes et que, vendredi, elles l’étaient de quatre parce que vous étiez sur votre téléphone, les répétitions de votre carnet mesurent autant le repos que l’effort. Cela compte surtout avec la [double progression](/journal/double-progression-explained/){: hreflang="en"} (en anglais), où la charge n’augmente qu’une fois que chaque série atteint le haut de la fourchette de répétitions.
+Je pense que oui, mais la raison tient peu à la physiologie. Toute règle de progression fondée sur les répétitions suppose que les répétitions sont comparables d’une séance à l’autre. Si, mardi, vos séries étaient séparées de deux minutes et que, vendredi, elles l’étaient de quatre parce que vous étiez sur votre téléphone, les répétitions de votre carnet mesurent autant le repos que l’effort. Cela compte surtout avec la [double progression](/fr/journal/double-progression-explained/), où la charge n’augmente qu’une fois que chaque série atteint le haut de la fourchette de répétitions.
 
 Un minuteur fixe cette variable et, à l’inverse, il empêche le repos de raccourcir les jours où le temps manque.
 
