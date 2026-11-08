@@ -13,16 +13,16 @@ seo:
     - "exercise to unlock apps"
     - "earnlock"
 date: 2026-05-23
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 lede: "Every screen-time blocker on the App Store has the same secret. If you tap hard enough, it folds. A short essay on why every app in this category eventually adds a tap-through escape, and what to build in its place."
-quick_answer: "Most screen-time blockers (Opal, one sec, ScreenZen, Forest) let you get past the lock with a button, a wait-out timer, or a rule you set yourself. The unlock cost lives inside the app, so you can lower it in the middle of a craving. A blocker that holds has to charge the unlock cost in something the craving can't reach. Waiting doesn't work, because waiting is itself a tap. Movement does (steps, active minutes, active calories), because you pay it in the rest of your life, outside the app. EarnLock is a blocker built around that constraint: your apps open at half your daily activity goal for an hour, and at the full goal until midnight."
+quick_answer: "Most screen-time blockers (Opal, one sec, ScreenZen, Forest) let you get past the lock with a button, a wait-out timer, or a rule you set yourself. The unlock cost lives inside the app, so you can lower it in the middle of a craving. A blocker that holds has to charge the unlock cost in something the craving can't reach. Waiting doesn't work, because waiting is itself a tap. Movement does (steps, active minutes, active calories), because you pay it in the rest of your life, outside the app. EarnLock is a blocker built around that constraint: at half your daily activity goal, some of your locked apps open for about an hour, once a day, and at the full goal everything opens until midnight."
 faq:
   - q: "Why don't most screen-time blockers actually block?"
     a: "Because every app in this category eventually adds a tap-through escape: Opal's 'I really need this' button, one sec's wait-out timer, ScreenZen's dismissible pause, Forest's give-up-a-tree mechanic. You set the rules on a quiet Sunday and meet them on a Thursday night when you're tired and bored. The Sunday version wants a wall and the Thursday version wants a door, and whichever one drives the App Store rating ships in the next release. Because the unlock cost lives inside the app, you can lower it in the middle of a craving."
   - q: "How is EarnLock different from Opal, one sec, ScreenZen, or Forest?"
-    a: "EarnLock's unlock cost lives outside the app. Locked apps stay locked until you reach a daily activity goal measured by Apple Health: steps on the free tier, active minutes or active calories with Premium. Halfway to the goal opens them for an hour, and the full goal opens them until midnight. There is no tap-through button or wait-out timer, and lowering your goal only takes effect after 24 hours, so a craving can't renegotiate it on the spot. Each locked app shows EarnLock's screen with exactly what's left, such as \"2,026 steps until unlock\", so the unlock reads as a place you can walk to."
+    a: "EarnLock's unlock cost lives outside the app. Locked apps stay locked until you reach a daily activity goal measured by Apple Health: steps on the free tier, active minutes or active calories with Premium. Halfway to the goal, some of your locked apps open for about an hour, once a day, and the full goal opens everything until midnight. There is no tap-through button or wait-out timer, and lowering your goal only takes effect after 24 hours, so a craving can't renegotiate it on the spot. Each locked app shows EarnLock's screen with exactly what's left, such as \"2,026 steps until unlock\", so the unlock reads as a place you can walk to."
   - q: "What happens on a day I genuinely can't hit the goal?"
-    a: "Halfway still counts: at 50% of your goal your apps open for an hour. For real emergencies, EarnLock has one math-gated emergency unlock per day. You solve a two-digit math problem, pick 15, 30, or 60 minutes, and your apps open. The problem is enough friction to stop a reflex and quick enough for an actual emergency. After that, the next one isn't available until the following day."
+    a: "Halfway still counts: at 50% of your goal, some of your locked apps open for about an hour, once a day. For real emergencies, EarnLock has one math-gated emergency unlock per day. You solve a two-digit math problem, pick 15, 30, or 60 minutes, and your apps open. The problem is enough friction to stop a reflex and quick enough for an actual emergency. After that, the next one isn't available until the following day."
   - q: "Why does EarnLock have no account, no server, and no analytics SDK?"
     a: "A screen-time app sees more about your habits than almost any other software you install: which apps you want to avoid, how often you try to break the rules, what time of day you give in. The only safe thing to do with that data is to keep it on the device. EarnLock has no account, makes no network connections of its own, and includes no analytics, advertising, or other third-party SDKs. Apple Health is read on your iPhone and never sent anywhere, and Apple's Screen Time picker gives EarnLock opaque tokens, so even EarnLock can't see which apps you chose."
 mentioned_apps:
@@ -54,7 +54,7 @@ Time is already taken by the wait-out model that one sec and ScreenZen use. It d
 
 The body is the other candidate. If the unlock costs steps, active minutes, or active calories, you can't pay it from the couch. You have to go outside, get on the floor, or move around the room. What makes the design defensible, and more than merely strict, is that your life *also benefits from* the payment. I can't think of another unlock cost that is both real and useful.
 
-That's what [EarnLock](/apps/earnlock/) does. Locked apps stay locked until you reach a daily activity goal measured by Apple Health: steps on the free tier, active minutes or active calories with Premium. Halfway to the goal opens them for an hour; the full goal opens them until midnight. You pick the goal on a good day, and lowering it only takes effect after 24 hours, so the Thursday version of you can't renegotiate it on the spot.
+That's what [EarnLock](/apps/earnlock/) does. Locked apps stay locked until you reach a daily activity goal measured by Apple Health: steps on the free tier, active minutes or active calories with Premium. Halfway to the goal, some of your locked apps open for about an hour, once a day; the full goal opens everything until midnight. You pick the goal on a good day, and lowering it only takes effect after 24 hours, so the Thursday version of you can't renegotiate it on the spot.
 
 ## Why the lock screen matters
 
@@ -62,7 +62,7 @@ A second design choice follows from the first.
 
 By default, [Apple's Screen Time controls](/journal/what-an-iphone-app-can-actually-block/) show a generic restriction screen over any app you block. It looks like a system prompt. It tells you nothing about what's left, how it relates to your goal, or whether the cost is reachable.
 
-EarnLock replaces it with its own screen showing exactly what's left, *2,026 steps until unlock*, and an Earn it button that takes you to EarnLock. When you try to open Instagram, the screen doesn't just say you're restricted. It says you're 2,026 steps from Instagram, which is a place you can walk to.
+EarnLock replaces it with its own screen showing exactly what's left, *2,026 steps until unlock*, and one Earn it button, which closes the locked app. When you try to open Instagram, the screen doesn't just say you're restricted. It says you're 2,026 steps from Instagram, which is a place you can walk to.
 
 It's a small detail with a big effect. A wall breeds resentment, and a destination gets people moving. That screen turns the body-cost mechanic from a punishment into a price tag.
 
@@ -70,7 +70,7 @@ It's a small detail with a big effect. A wall breeds resentment, and a destinati
 
 Designing it this way has two real costs.
 
-The first is that on some days you won't hit the goal. The product has to make that survivable without making it easy to undermine. Halfway already opens your apps for an hour. Beyond that, EarnLock has one math-gated emergency unlock per day: solve a two-digit math problem, pick 15, 30, or 60 minutes, and that's it until tomorrow. The problem is enough friction to stop a reflex and quick enough for a real emergency. That door is for genuine needs.
+The first is that on some days you won't hit the goal. The product has to make that survivable without making it easy to undermine. Halfway already opens some of your locked apps for about an hour, once a day. Beyond that, EarnLock has one math-gated emergency unlock per day: solve a two-digit math problem, pick 15, 30, or 60 minutes, and that's it until tomorrow. The problem is enough friction to stop a reflex and quick enough for a real emergency. That door is for genuine needs.
 
 The second is that streaks are dangerous in this category. If the app tells you "you've hit your goal 47 days in a row," you start protecting the number for its own sake, and then a sick day or a snowed-in day breaks the streak and you quit the whole thing. EarnLock has a streak because people ask for one, but you can pick a weekly rest day that doesn't break it, and the streak-at-risk reminder is one you can switch off. The streak can exist, but it shouldn't become the thing you're actually optimizing.
 

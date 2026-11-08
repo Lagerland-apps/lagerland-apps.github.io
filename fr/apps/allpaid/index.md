@@ -279,7 +279,7 @@ faq:
     a: "Oui. L’app est entièrement en français, widgets compris. Seules les phrases pour Siri n’existent qu’en anglais."
 
 related_journal:
-  anchor: "Pourquoi AllPaid ne vous demandera jamais l’accès à votre banque"
+  anchor: "Suivre ses factures sans connexion bancaire : je ne vous demanderai pas vos identifiants de banque"
 
 screenshot_captions:
   - alt: "Liste des factures d’AllPaid sur iPhone, avec les factures à venir, leurs montants et les boutons pour les marquer comme payées"

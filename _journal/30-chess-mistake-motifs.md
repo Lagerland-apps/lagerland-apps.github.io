@@ -14,12 +14,12 @@ seo:
     - "chess improvement"
 date: 2026-05-13
 lede: "Most chess apps reduce 'why did I lose' to an evaluation graph. A name for the mistake helps more: something you can remember, drill, and recognize in the next game. This post is a reference of thirty common mistake motifs at club level, grouped under five skill areas, each with its cause and the drill that fixes it, and it shows how they line up with the 10 mistake types Chessful puts on every mistake it finds."
-quick_answer: "Thirty mistake motifs cover most of what decides club-level chess games, grouped under five skill areas. Tactics: hung piece, missed fork, missed pin, missed skewer, missed discovered attack, missed double attack, missed deflection, missed overload, back-rank threat, and smothered mate possibility. Defense: defender-removal blindness, king-safety underestimate, prophylactic skip, weakening pawn push, and wrong piece exchanged for a defender. Positional play: wrong piece traded, wrong side castled, weak square allowed, wrong pawn break, and time spent on the wrong move. Openings: repertoire drift, book move missed, and transposition into a bad line. Endgames: opposition error, king too late, wrong rook activation, drawn but played on, wrong-color bishop endgame, and technique errors in king-and-pawn and rook endgames. Chessful labels each mistake in your games with one of 10 broader types (Hanging Piece, Missed Fork, Missed Pin, Back-Rank Weakness, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, and Opening Inaccuracy), explains it in plain language, and builds daily training from those mistakes."
+quick_answer: "Thirty mistake motifs cover most of what decides club-level chess games, grouped under five skill areas. Tactics: hung piece, missed fork, missed pin, missed skewer, missed discovered attack, missed double attack, missed deflection, missed overload, back-rank threat, and smothered mate possibility. Defense: defender-removal blindness, king-safety underestimate, prophylactic skip, weakening pawn push, and wrong piece exchanged for a defender. Positional play: wrong piece traded, wrong side castled, weak square allowed, wrong pawn break, and time spent on the wrong move. Openings: repertoire drift, book move missed, and transposition into a bad line. Endgames: opposition error, king too late, wrong rook activation, a winning endgame simplified into a draw, wrong-color bishop endgame, and technique errors in king-and-pawn and rook endgames. Chessful labels each mistake in your games with one of 10 broader types (Hanging Piece, Missed Fork, Missed Pin, Missed Back-Rank Mate, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, and Opening Inaccuracy), explains it in plain language, and builds daily training from those mistakes."
 faq:
   - q: "What are the most common types of chess mistakes?"
     a: "At club level, the mistakes that decide games fall into five areas: tactics (hung pieces, missed forks, pins, and skewers), defense (removing your own defender, ignoring king safety), positional play (bad trades, weak squares, mistimed pawn breaks), openings (drifting out of your repertoire), and endgames (opposition errors, a passive king or rook, failed technique). This post lists thirty motifs across those five areas, each with its cause and a drill."
   - q: "How many mistake types does Chessful use?"
-    a: "Ten: Hanging Piece, Missed Fork, Missed Pin, Back-Rank Weakness, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, and Opening Inaccuracy. Each mistake also gets a severity (Inaccuracy, Mistake, or Blunder), what you played, what was best, why the better move works, and the line that punishes your move. The thirty motifs in this post are a finer-grained reference that sits under those ten types."
+    a: "Ten: Hanging Piece, Missed Fork, Missed Pin, Missed Back-Rank Mate, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, and Opening Inaccuracy. Each mistake also gets a severity (Inaccuracy, Mistake, or Blunder), what you played, what was best, why the better move works, and the line that punishes your move. The thirty motifs in this post are a finer-grained reference that sits under those ten types."
   - q: "Why name mistakes instead of just showing the engine evaluation?"
     a: "Most club-level players can't read an evaluation number, and feedback they can't read doesn't change how they play. A name is something you can remember, drill, and recognize. You can carry \"I removed my own defender\" into your next game; you can't do much with an evaluation that drops from -3.4 to -8.1 over a long engine line."
   - q: "Are these the same mistake categories chess coaches teach?"
@@ -32,7 +32,7 @@ read_time: "10 min read"
 excerpt: "A reference of thirty chess mistake motifs that decide club-level games, grouped under five skill areas, each with its cause and the drill that fixes it, and how they line up with the 10 mistake types Chessful puts on every mistake."
 last_updated: 2026-11-08
 ---
-Chessful analyzes your games on the device with Stockfish and labels every mistake with one of 10 types: Hanging Piece, Missed Fork, Missed Pin, Back-Rank Weakness, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, and Opening Inaccuracy. Ten is a useful number for a training queue. For understanding why a game was lost, a finer list helps, so here is a reference of thirty motifs that decide club-level games, grouped under the same five skill areas Chessful tracks (Tactics, Defense, Positioning, Endgame, and Openings), with the cause of each and the drill that fixes it.
+Chessful analyzes your games on the device with Stockfish and labels every mistake with one of 10 types: Hanging Piece, Missed Fork, Missed Pin, Missed Back-Rank Mate, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, and Opening Inaccuracy. Ten is a useful number for a training queue. For understanding why a game was lost, a finer list helps, so here is a reference of thirty motifs that decide club-level games, grouped under the same five skill areas Chessful tracks (Tactics, Defense, Positioning, Endgame, and Openings), with the cause of each and the drill that fixes it.
 
 The list isn't proprietary. Most of these categories are standard chess teaching, covered in Aagaard's *Excelling at Chess* series, Yusupov's nine-volume *Build Up Your Chess* curriculum, Silman's *How to Reassess Your Chess*, and de la Maza's *Rapid Chess Improvement*. A few (repertoire drift, book move missed) only show up when you look at many of your own games together, and a coach reviewing one game can't see them. The rest is standard improvement material under a name a club player can remember during the next game.
 
@@ -66,7 +66,7 @@ One move that attacks two separate enemy pieces or squares, not necessarily a fo
 
 ### 7. Missed deflection
 
-A piece needed to be lured off a critical defensive square, and the deflecting move was there but wasn't played. Drilling pattern: finding which enemy piece is over-loaded (defending several squares) and the move that exploits it.
+A piece needed to be lured off a critical defensive square, and the deflecting move was there but wasn't played. Drilling pattern: spotting the defender that guards the critical square, then the check, capture or threat that drags it away.
 
 ### 8. Missed overload
 
@@ -160,17 +160,17 @@ Your king didn't become active in time. It stayed on the back rank while the opp
 
 In a rook endgame you put your rook in a passive spot (behind your own pawn, or in front of an opposing passed pawn from the wrong side). Drilling pattern: Tarrasch's rule, rooks behind passed pawns, both yours and the opponent's.
 
-### 27. Drawn-but-played-on
+### 27. Winning endgame simplified into a draw
 
 You turned a winning endgame into a draw with a move that simplified into a known drawn structure (often a wrong-color bishop ending, or a fortress). Drilling pattern: recognising drawn endgame structures before you simplify into them.
 
 ### 28. Wrong-color bishop endgame
 
-You traded into an endgame where your remaining bishop is the wrong colour to control your passed pawn's promotion square. It often comes together with drawn-but-played-on. Drilling pattern: projecting the endgame before the trade.
+You traded into an endgame where your remaining bishop is the wrong colour to control your passed pawn's promotion square. It often comes together with #27, a winning endgame simplified into a draw. Drilling pattern: projecting the endgame before the trade.
 
 ### 29. Technique error in K+P endgame
 
-A known winning technique (Lucena, Philidor, square-of-the-pawn, key-square calculation) was available, and you didn't execute it correctly. Drilling pattern: repeating the specific technique that failed.
+A known winning technique (the square of the pawn, key squares, the opposition, triangulation) was available, and you didn't execute it correctly. Drilling pattern: repeating the specific technique that failed.
 
 ### 30. Technique error in R+P endgame
 
@@ -178,7 +178,7 @@ The rook-endgame version of the K+P motif: you picked the right technique (Lucen
 
 ## How the motifs map to Chessful's training
 
-Several motifs above have a type of their own in Chessful: hung piece (Hanging Piece), missed fork, missed pin, and back-rank threat (Back-Rank Weakness). The others are closest to the broader types: Tactical Oversight and Missed Tactic for the rest of the tactics, Poor King Safety and Passive Move for most of defense and positional play, Opening Inaccuracy for the opening motifs, and Endgame Error for the endgame ones.
+Several motifs above have a type of their own in Chessful: hung piece (Hanging Piece), missed fork, missed pin, and back-rank threat (Missed Back-Rank Mate). The others are closest to the broader types: Tactical Oversight and Missed Tactic for the rest of the tactics, Poor King Safety and Passive Move for most of defense and positional play, Opening Inaccuracy for the opening motifs, and Endgame Error for the endgame ones.
 
 Each mistake card shows what you played, what was best, why the better move works, and the line that punishes yours, in wording set by your coaching level. Your analyzed games feed five skill areas, and Today's Training picks one of them as a focus and builds a 5, 10, or 15 minute session of puzzles from your own mistakes. Review past mistakes brings old positions back on a spaced-repetition schedule until you stop missing them.
 

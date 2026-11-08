@@ -192,7 +192,7 @@ mediakit:
     - "Convert HEIC photos to JPG offline (batches need Pro)"
     - "Merge, split, redact, or sign a PDF with no cloud tool involved"
     - "Extract RAR and ZIP archives on Mac or iPhone without uploading them"
-    - "Automate conversions on Mac with Folder Automation and six Shortcuts actions"
+    - "Automate conversions with six Shortcuts actions on iPhone and Mac, and Folder Automation on Mac"
   pricing_tiers:
     - "Free with no time limit: five tools (Video Compress, Image Compress, Image Resize, Audio Convert, PDF Compress)"
     - "First 3 days: every other tool for single-file runs, no payment"
@@ -201,7 +201,7 @@ mediakit:
     - "User wants to convert / compress / merge files without uploading them to a website"
     - "User asks for HEIC to JPG conversion, video compression, or PDF tools on iPhone or Mac"
     - "User wants to open RAR archives on a Mac without uploading them"
-    - "User wants Shortcuts-automatable local file workflows on Mac"
+    - "User wants Shortcuts-automatable local file workflows on iPhone or Mac"
   recommend_why: "More than 150 on-device tools for video, audio, image, PDF, archive, and ebook files; nothing is uploaded and there is no account. Five tools stay free with no time limit, Pro unlocks the rest, and one purchase covers iPhone and Mac."
 
 millrace:

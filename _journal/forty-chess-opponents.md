@@ -28,7 +28,7 @@ mentioned_apps:
   - chessful
 read_time: "4 min read"
 excerpt: "Why playing 'the engine at level 7' is unsatisfying, how Chessful gives each of its 40 opponents a name, a style, strengths, and weaknesses, and why the post-game explanations matter as much as the opponents."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 I learned chess from my grandfather and never got past competent. The reason I built [Chessful](/apps/chessful/) is that gap: I wanted an app that explained what I'd done wrong the way my grandfather would have, in plain language, instead of pointing at an evaluation graph and expecting me to read it.
@@ -59,7 +59,7 @@ The other part that took real effort is the post-game analysis.
 
 The standard chess-app flow is: play a game, hit "analyse," and watch the engine annotate every move with an evaluation. The output is technically correct and hard to read unless you're already strong. *"You played 18.Re1, computer prefers 18.Bxh6 with eval +1.4."* Yes, but *why?*
 
-Chessful tries to answer the *why*. Stockfish runs on your device and rates every move from Brilliant to Blunder. For each mistake you get a card: what you played, what was best, how far the evaluation dropped, a plain-language explanation of why the better move works, and the line that punishes your move. The explanation is worded for the coaching level you pick, from "Just learning the rules" to rated 1400+. Each mistake is tagged with one of ten types, such as Hanging Piece, Missed Fork, Back-Rank Weakness, or Endgame Error, and Train This Pattern takes you straight to practice on it.
+Chessful tries to answer the *why*. Stockfish runs on your device and rates every move from Brilliant to Blunder. For each mistake you get a card: what you played, what was best, how far the evaluation dropped, a plain-language explanation of why the better move works, and the line that punishes your move. The explanation is worded for the coaching level you pick, from "Just learning the rules" to rated 1400+. Each mistake is tagged with one of ten types, such as Hanging Piece, Missed Fork, Missed Back-Rank Mate, or Endgame Error, and Train This Pattern takes you straight to practice on it.
 
 Those mistakes then become the puzzles in your daily training, and spaced repetition brings back the ones you miss.
 

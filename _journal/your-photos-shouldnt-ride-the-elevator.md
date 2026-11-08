@@ -13,22 +13,22 @@ seo:
     - "local image converter mac"
     - "mediakit"
 date: 2026-03-28
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 lede: "Almost every online image converter you've used in the last decade uploaded your file to a server you don't control, processed it there, and gave you back a download. That is convenient, and it has real privacy costs. MediaKit is the studio's argument that more than 150 of those tools should run on your Mac or iPhone instead."
-quick_answer: "Online image, video, audio, and PDF converters upload private files to operator infrastructure that can hold them well after the conversion is done. MediaKit is a Mac and iPhone app that runs more than 150 equivalent tools locally, including HEIC conversion, video compression, PDF redaction, and RAR5 extraction, and nothing is uploaded. Five tools stay free for good."
+quick_answer: "Online image, video, audio, and PDF converters upload private files to operator infrastructure that can hold them well after the conversion is done. MediaKit is a Mac and iPhone app that runs more than 150 equivalent tools locally, including HEIC conversion, video compression, PDF redaction, and RAR5 extraction, and nothing is uploaded. Five tools (video, image and PDF compression, image resizing, and audio conversion) stay free for good; HEIC conversion and the rest need Pro after a 3-day trial."
 faq:
   - q: "Is it safe to upload files to free online converters like CloudConvert or iLovePDF?"
     a: "The file leaves your device, lands on operator storage that may or may not be encrypted at rest, sits in retention for hours or days, and you cannot verify deletion. Most operators are not malicious, but for private files like medical records, photos of children, or screenshots of email, sending the file away at all is the problem."
   - q: "Can my Mac convert HEIC, MP4, PDF, and RAR files locally?"
-    a: "Yes. MediaKit runs more than 150 local tools on Mac and iPhone, including HEIC to JPG, video compression, PDF redaction, OCR, and RAR4 and RAR5 extraction. Converting a batch of files at once needs Pro. The hardware video encoders in Apple Silicon Macs make local conversion competitive with a cloud round trip."
+    a: "Yes. MediaKit runs more than 150 local tools on Mac and iPhone, including HEIC to JPG, video compression, PDF redaction, OCR, and RAR4 and RAR5 extraction. For the first 3 days every tool works, one export at a time; after that, HEIC to JPG and every other tool outside the five free ones need Pro, and so does converting a batch of files at once. The hardware video encoders in Apple Silicon Macs make local conversion competitive with a cloud round trip."
   - q: "How many MediaKit tools are free without paying?"
     a: "Five tools stay free for good, one file at a time: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. For your first 3 days every other tool works too, one export per run. After that, the other tools and batch processing require Pro: a monthly or yearly plan, or a one-time lifetime purchase."
   - q: "Does MediaKit support Shortcuts automation?"
-    a: "Yes, on Mac. MediaKit has six Shortcuts actions: Compress Video, Convert Image, Compress Image, Merge PDFs, Create ZIP, and Extract Text from Image. With Pro, Folder Automation also runs a saved Recipe on every file that lands in a folder you choose. Both run on the device and never touch the internet."
+    a: "Yes, on iPhone and Mac. MediaKit has six Shortcuts actions: Compress Video, Convert Image, Compress Image, Merge PDFs, Create ZIP, and Extract Text from Image. With Pro, Folder Automation also runs a saved Recipe on every file that lands in a folder you choose. Both run on the device and never touch the internet."
 mentioned_apps:
   - mediakit
 read_time: "5 min read"
-excerpt: "MediaKit is a Mac and iPhone app with more than 150 local tools, among them video compression, HEIC to JPG, PDF tooling, and RAR5 extraction. This post argues for processing media locally, covers the Shortcuts and Folder Automation options on Mac, and explains the freemium structure (five tools free for good, the rest with Pro)."
+excerpt: "MediaKit is a Mac and iPhone app with more than 150 local tools, among them video compression, HEIC to JPG, PDF tooling, and RAR5 extraction. This post argues for processing media locally, covers the Shortcuts actions on iPhone and Mac and Folder Automation on Mac, and explains the freemium structure (five tools free for good, the rest with Pro)."
 ---
 
 Think of the last time this week you needed to convert a media file: a HEIC photo to JPG, a video compressed for Slack, two PDFs merged, a screen recording's audio pulled out into its own file.
@@ -72,13 +72,13 @@ MediaKit is a Mac and iPhone app with more than 150 local tools, organised by ki
 
 Every tool runs entirely on your Mac or iPhone, so nothing is uploaded and there is no operator retention policy to read. For the most common video job, getting a clip under an email attachment limit, the limits and the bitrate arithmetic are in [a separate guide](/journal/compress-a-video-for-email/).
 
-On Mac, six MediaKit actions appear in **Shortcuts** (Compress Video, Convert Image, Compress Image, Merge PDFs, Create ZIP, and Extract Text from Image), so you can chain them into your own workflows. With Pro, **Folder Automation** goes one step further: *"compress every video that lands in this folder"* becomes a saved Recipe that runs on its own, and it never touches the internet.
+On iPhone and Mac, six MediaKit actions appear in **Shortcuts** (Compress Video, Convert Image, Compress Image, Merge PDFs, Create ZIP, and Extract Text from Image), so you can chain them into your own workflows. On Mac, with Pro, **Folder Automation** goes one step further: *"compress every video that lands in this folder"* becomes a saved Recipe that runs on its own, and it never touches the internet.
 
 ## The freemium decision
 
 Pricing was the decision we argued about most before launch.
 
-MediaKit shipped with **five tools that stay free for good** (Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress), which between them cover most casual use, and a single Pro tier that unlocks every other tool and batch processing across all of them. For the first 3 days *every* tool works, one export per run, so you can try everything before deciding.
+MediaKit launches with **five tools that stay free for good** (Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress), which between them cover most casual use, and a single Pro tier that unlocks every other tool and batch processing across all of them. For the first 3 days *every* tool works, one export per run, so you can try everything before deciding.
 
 We wanted a free path that people would actually use. Five tools is enough that a casual user could go years without paying, and that's fine; the app should be useful first.
 

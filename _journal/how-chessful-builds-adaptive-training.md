@@ -17,11 +17,11 @@ lede: "Most chess apps that claim 'adaptive training' adapt to a generic difficu
 quick_answer: "Chessful's adaptive training works in five steps. Stockfish runs on your device over a finished game and rates every move, from Brilliant to Blunder. Each mistake gets one of 10 types (such as Hanging Piece, Missed Fork, or Endgame Error) and a plain-language explanation at your level: what you played, what was best, why it works, and the line that punishes your move. Those mistakes feed five skill bars: Tactics, Defense, Positioning, Endgame, and Openings. Today's Training then picks a focus area and turns your mistakes into a 5, 10, or 15-minute puzzle session, and Review past mistakes brings old misses back on a spaced-repetition (SM-2) schedule. Free: 2 analyses, 3 puzzles, and 2 coach hints a day. Premium: no daily limits."
 faq:
   - q: "What does 'adaptive training' actually mean in Chessful?"
-    a: "The training you get is built from the mistakes in the games you have played, not from a fixed puzzle library. After a game, Stockfish reviews every move on your device and each mistake gets one of 10 types, such as Hanging Piece, Missed Fork, Missed Pin, Back-Rank Weakness, or Endgame Error. Those mistakes feed your skill profile, and Today's Training turns them into puzzles in the area that needs work. Review past mistakes then brings your misses back on a spaced-repetition schedule until you stop making them."
+    a: "The training you get is built from the mistakes in the games you have played, not from a fixed puzzle library. After a game, Stockfish reviews every move on your device and each mistake gets one of 10 types, such as Hanging Piece, Missed Fork, Missed Pin, Missed Back-Rank Mate, or Endgame Error. Those mistakes feed your skill profile, and Today's Training turns them into puzzles in the area that needs work. Review past mistakes then brings your misses back on a spaced-repetition schedule until you stop making them."
   - q: "How is this different from chess puzzles?"
     a: "A puzzle is a position with a forcing solution you have to find. Generic puzzles come from a shared pool, ordered by rating or theme. Chessful has that too: a tactics library of 15,000 puzzles in 53 themes. Its daily training starts from your own games instead, so you drill the pattern that actually cost you points, in a position you have already seen once. The trade-off is that daily training needs at least one played and analysed game before it unlocks."
   - q: "How does Chessful decide what type of mistake I made?"
-    a: "Stockfish measures how much each move costs you, and Chessful labels every significant mistake with one of 10 types: Hanging Piece, Missed Fork, Missed Pin, Back-Rank Weakness, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, or Opening Inaccuracy. Severity is Inaccuracy, Mistake, or Blunder. The explanation is worded for the coaching level you choose, from 'Just learning the rules' to 'Rated player (1400+)'."
+    a: "Stockfish measures how much each move costs you, and Chessful labels every significant mistake with one of 10 types: Hanging Piece, Missed Fork, Missed Pin, Missed Back-Rank Mate, Poor King Safety, Passive Move, Tactical Oversight, Missed Tactic, Endgame Error, or Opening Inaccuracy. Severity is Inaccuracy, Mistake, or Blunder. The explanation is worded for the coaching level you choose, from 'Just learning the rules' to 'Rated player (1400+)'."
   - q: "Why does Chessful use spaced repetition?"
     a: "Chess pattern recognition is more a memory task than a calculation task. A stronger player often wins the same tactical position because they have seen the pattern often enough to recognise it in seconds. Spaced repetition is the standard tool for memorising this kind of pattern (Anki popularised it for languages; SuperMemo formalised the underlying schedule decades ago). Chessful's Review past mistakes uses the SM-2 schedule: a miss comes back soon, and a position you solve comes back at growing intervals. Review sessions don't count toward the free daily puzzles."
   - q: "How long does Chessful take to start producing useful training?"
@@ -30,7 +30,7 @@ mentioned_apps:
   - chessful
 read_time: "7 min read"
 excerpt: "The design note for Chessful's adaptive training: how an on-device Stockfish review becomes 10 types of explained mistakes, how those mistakes feed five skill bars, and how they come back as daily training and spaced review built from your own games instead of a generic puzzle pool."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 When a chess app says "adaptive training," it usually means one of two things: "we have a difficulty slider," or "we have a recommendation algorithm over a fixed puzzle library." Chessful does neither.
@@ -56,7 +56,7 @@ Each mistake also carries one of **10 types**:
 - **Hanging Piece**
 - **Missed Fork**
 - **Missed Pin**
-- **Back-Rank Weakness**
+- **Missed Back-Rank Mate**
 - **Poor King Safety**
 - **Passive Move**
 - **Tactical Oversight**

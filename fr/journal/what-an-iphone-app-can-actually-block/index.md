@@ -128,7 +128,7 @@ Parcourez cette échelle et « impossible à contourner » ne veut plus rien
 
 ## Ce que la réalité de l’API change pour la conception
 
-J’ai écrit il y a quelque temps que [le coût du déverrouillage doit se payer en dehors de l’app](/journal/unlock-cost-outside-the-app/){: hreflang="en"} (en anglais) : un coût que vous fixez vous-même, dans le logiciel, est un coût que votre envie peut renégocier en plein milieu de l’envie. Les faits techniques ci-dessus mènent au même argument à l’échelle de la plateforme. La révocation est toujours à une quinzaine de secondes, donc le mur n’est pas le produit. Le prix, si.
+J’ai écrit il y a quelque temps que [le coût du déverrouillage doit se payer en dehors de l’app](/fr/journal/unlock-cost-outside-the-app/) : un coût que vous fixez vous-même, dans le logiciel, est un coût que votre envie peut renégocier en plein milieu de l’envie. Les faits techniques ci-dessus mènent au même argument à l’échelle de la plateforme. La révocation est toujours à une quinzaine de secondes, donc le mur n’est pas le produit. Le prix, si.
 
 Et ce prix doit se payer là où vous en tirerez profit plus tard. Attendre échoue à ce test : vous payez en attention, justement ce que vous cherchiez à protéger, et vous n’obtenez rien en retour. Bouger le réussit, parce que le coût se retrouve dans le reste de votre vie.
 

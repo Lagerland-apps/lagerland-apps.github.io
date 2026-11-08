@@ -30,7 +30,7 @@ mentioned_apps:
   - chessful
 read_time: "8 min read"
 excerpt: "Every chess app advertises its engine depth. Chessful deliberately keeps it lower, at depth 16. The argument: above depth 15, you get lines that even strong club players cannot read or apply. They are correct and impossible to learn from. The mistakes that decide club games are visible at depth 13."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 Every chess app advertises its engine depth. Chess.com's *Game Review* runs Stockfish to depth 22. Lichess's cloud analysis offers depth 28. Stockfish on a modern desktop will happily run depth 35 if you give it the time.
@@ -45,7 +45,7 @@ The choice has a side effect: analysis runs quickly on the device, which is what
 
 In chess engine terminology, *depth* is the number of half-moves (plies) the engine looks ahead. Depth 13 means the engine evaluates positions assuming both players will play their best moves for the next 13 ply (roughly 6 full moves for each side, give or take). Depth 25 means roughly 12 full moves of look-ahead.
 
-Each additional ply expands the search tree by a factor of roughly 4-5 (the *branching factor* of chess after pruning). Going from depth 13 to depth 25 costs something like 10,000-50,000× more work, far more than double. Modern engines soften this with alpha-beta pruning, transposition tables and aggressive heuristics, but that cost growth is why cloud analysis exists at all: most depth-25 analyses are too expensive to run on a phone.
+Each additional ply multiplies the size of the search tree (by the *effective branching factor* that remains after pruning), so the cost compounds: going from depth 13 to depth 25 costs many times more work, far more than double. Modern engines soften this with alpha-beta pruning, transposition tables and aggressive heuristics, but that cost growth is why cloud analysis exists at all: most depth-25 analyses are too expensive to run on a phone.
 
 Chess.com and Lichess can offer depth 22-28 because they run the analysis in the cloud, on rented compute, and send back the result. The cost is the cloud round-trip, plus, in Chess.com's case, a daily quota on the deep analyses.
 

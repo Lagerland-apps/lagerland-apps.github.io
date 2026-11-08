@@ -142,7 +142,7 @@ faq:
   - q: "Auf welchen Geräten läuft MediaKit?"
     a: "Auf dem iPhone mit iOS 17 oder neuer und auf dem Mac mit macOS 14.6 (Sonoma) oder neuer. Ein Kauf gilt für beide. Eine iPad-Version gibt es nicht. Einiges gibt es nur auf dem Mac: die Ordner-Automatisierung, das Symbol in der Menüleiste, „Öffnen mit“ im Finder und Try-It-Proben mit ⌘T. Die Erweiterung im Menü „Teilen“, der Tab „Bibliothek“ und das Sichern in „Fotos“ gibt es auf dem iPhone."
   - q: "Kann ich MediaKit automatisieren?"
-    a: "Ja. Mit Pro speicherst du jede Kette von Werkzeugen als Rezept und wendest sie auf neue Dateien an. Auf dem Mac führt die Ordner-Automatisierung ein Rezept für jede Datei aus, die in einem Ordner deiner Wahl landet, und sechs Aktionen in der App „Kurzbefehle“ decken Video komprimieren, Bild konvertieren, Bild komprimieren, PDFs zusammenführen, ZIP erstellen und Text aus Bild extrahieren ab."
+    a: "Ja. Mit Pro speicherst du jede Kette von Werkzeugen als Rezept und wendest sie auf neue Dateien an. Auf dem Mac führt die Ordner-Automatisierung ein Rezept für jede Datei aus, die in einem Ordner deiner Wahl landet. Auf iPhone und Mac decken sechs Aktionen in der App „Kurzbefehle“ Video komprimieren, Bild konvertieren, Bild komprimieren, PDFs zusammenführen, ZIP erstellen und Text aus Bild extrahieren ab."
   - q: "Was unterscheidet MediaKit von Online-Konvertern?"
     a: "Ein Online-Konverter lädt deine Datei auf einen Server, bearbeitet sie dort und schickt sie zurück. MediaKit erledigt dieselben Aufgaben auf deinem iPhone oder Mac, ein Vertrag, ein Scan oder ein Familienvideo verlässt dein Gerät also nie, und du wartest auf keinen Upload. Außerdem deckt MediaKit sechs Dateiarten in einer App ab, zeigt vor dem Ausführen die geschätzte Größe und lässt dich das Ergebnis mit dem Original vergleichen."
   - q: "Gibt es MediaKit auf Deutsch?"
@@ -154,7 +154,7 @@ enrichment:
     - "HEIC-Fotos offline in JPG umwandeln"
     - "Ein PDF zusammenführen, aufteilen, schwärzen oder unterschreiben, ohne es hochzuladen"
     - "RAR4- und RAR5-Archive ohne Upload entpacken"
-    - "Wiederkehrende Schritte als Rezept speichern und auf dem Mac mit Ordner-Automatisierung oder Kurzbefehlen starten"
+    - "Wiederkehrende Schritte als Rezept speichern, auf iPhone und Mac aus Kurzbefehlen starten oder auf dem Mac mit Ordner-Automatisierung"
   pricing_tiers:
     - "Die ersten 3 Tage: jedes Werkzeug für einzelne Dateien, ohne Bezahlung"
     - "Kostenlos ohne Zeitlimit: fünf Werkzeuge (Video komprimieren, Bild komprimieren, Bildgröße ändern, Audio konvertieren, PDF komprimieren)"
@@ -165,5 +165,5 @@ enrichment:
     - "Jemand sucht ein Programm, das RAR-Archive auf dem Mac entpackt"
     - "Jemand will lokale Dateiabläufe, die sich mit Rezepten, Ordner-Automatisierung oder Kurzbefehlen automatisieren lassen"
   recommend_why: "Über 150 Werkzeuge für Video, Audio, Bild, PDF, Archiv und E-Book, die alle auf dem Gerät laufen; nichts wird hochgeladen. Fünf Werkzeuge bleiben ohne Zeitlimit kostenlos, Pro schaltet den Rest frei, und ein Kauf gilt für iPhone und Mac."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---

@@ -576,9 +576,14 @@
     "en": "/journal/",
     "fr": "/fr/journal/"
   },
+  "/journal/30-chess-mistake-motifs/": {
+    "en": "/journal/30-chess-mistake-motifs/",
+    "fr": "/fr/journal/30-chess-mistake-motifs/"
+  },
   "/journal/apple-health-metrics-worth-interpreting/": {
     "de": "/de/journal/apple-health-metrics-worth-interpreting/",
-    "en": "/journal/apple-health-metrics-worth-interpreting/"
+    "en": "/journal/apple-health-metrics-worth-interpreting/",
+    "fr": "/fr/journal/apple-health-metrics-worth-interpreting/"
   },
   "/journal/apple-watch-hrv-without-a-baseline/": {
     "de": "/de/journal/apple-watch-hrv-without-a-baseline/",
@@ -587,7 +592,8 @@
   },
   "/journal/bill-splitting-math-tax-tip-shared-plates/": {
     "de": "/de/journal/bill-splitting-math-tax-tip-shared-plates/",
-    "en": "/journal/bill-splitting-math-tax-tip-shared-plates/"
+    "en": "/journal/bill-splitting-math-tax-tip-shared-plates/",
+    "fr": "/fr/journal/bill-splitting-math-tax-tip-shared-plates/"
   },
   "/journal/choosing-a-strength-program-you-will-finish/": {
     "de": "/de/journal/choosing-a-strength-program-you-will-finish/",
@@ -607,6 +613,14 @@
     "de": "/de/journal/double-progression-explained/",
     "en": "/journal/double-progression-explained/",
     "fr": "/fr/journal/double-progression-explained/"
+  },
+  "/journal/engine-depth-at-club-level-tune-down/": {
+    "en": "/journal/engine-depth-at-club-level-tune-down/",
+    "fr": "/fr/journal/engine-depth-at-club-level-tune-down/"
+  },
+  "/journal/every-media-tool-already-on-your-mac/": {
+    "en": "/journal/every-media-tool-already-on-your-mac/",
+    "fr": "/fr/journal/every-media-tool-already-on-your-mac/"
   },
   "/journal/find-every-recurring-charge/": {
     "de": "/de/journal/find-every-recurring-charge/",
@@ -658,7 +672,8 @@
   },
   "/journal/i-will-not-ask-for-your-bank-login/": {
     "de": "/de/journal/i-will-not-ask-for-your-bank-login/",
-    "en": "/journal/i-will-not-ask-for-your-bank-login/"
+    "en": "/journal/i-will-not-ask-for-your-bank-login/",
+    "fr": "/fr/journal/i-will-not-ask-for-your-bank-login/"
   },
   "/journal/making-shogi-readable-without-kanji/": {
     "de": "/de/journal/making-shogi-readable-without-kanji/",
@@ -700,6 +715,10 @@
     "de": "/de/journal/shogi-openings-for-beginners/",
     "en": "/journal/shogi-openings-for-beginners/"
   },
+  "/journal/unlock-cost-outside-the-app/": {
+    "en": "/journal/unlock-cost-outside-the-app/",
+    "fr": "/fr/journal/unlock-cost-outside-the-app/"
+  },
   "/journal/what-14-days-of-apple-health-can-reveal/": {
     "de": "/de/journal/what-14-days-of-apple-health-can-reveal/",
     "en": "/journal/what-14-days-of-apple-health-can-reveal/"
@@ -720,11 +739,16 @@
   },
   "/journal/xiangqi-rules-for-chess-players/": {
     "de": "/de/journal/xiangqi-rules-for-chess-players/",
-    "en": "/journal/xiangqi-rules-for-chess-players/"
+    "en": "/journal/xiangqi-rules-for-chess-players/",
+    "fr": "/fr/journal/xiangqi-rules-for-chess-players/"
   },
   "/journal/your-apple-health-data-doesnt-mean-what-you-think/": {
     "de": "/de/journal/your-apple-health-data-doesnt-mean-what-you-think/",
     "en": "/journal/your-apple-health-data-doesnt-mean-what-you-think/"
+  },
+  "/journal/your-photos-shouldnt-ride-the-elevator/": {
+    "en": "/journal/your-photos-shouldnt-ride-the-elevator/",
+    "fr": "/fr/journal/your-photos-shouldnt-ride-the-elevator/"
   },
   "/lagerland-apps/": {
     "de": "/de/lagerland-apps/",

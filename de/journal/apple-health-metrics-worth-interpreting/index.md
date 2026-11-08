@@ -3,8 +3,8 @@ layout: journal
 slug: apple-health-metrics-worth-interpreting
 ref: /journal/apple-health-metrics-worth-interpreting/
 permalink: /de/journal/apple-health-metrics-worth-interpreting/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Apple-Health-Daten auswerten: 6 Werte, die sich lohnen, und 12, die du ignorieren kannst"
 seo:
@@ -22,7 +22,7 @@ quick_answer: "Von den mehr als 80 Werten, die Apple Health erfasst, lohnen nur 
 excerpt: "Apple Health erfasst über 80 Werte, und die meisten sind Rauschen. Dieser Beitrag geht die sechs durch, die sich mit deinen Gewohnheiten bewegen und das Auswerten lohnen, dann die zwölf, die bedeutsam aussehen und es meist nicht sind, jeweils mit der Begründung."
 faq:
   - q: "Warum stehen Schritte und aktive Kalorien nicht auf der kurzen Liste?"
-    a: "Die Schrittzahl zeigt fast perfekt an, ob du deine Uhr getragen hast. Sie unterscheidet keinen bewussten Spaziergang von Besorgungen, und ein Tag mit 6000 Schritten gezielter Bewegung entspricht stoffwechselmäßig oft einem Tag mit 12.000 Schritten, die sich in der Stadt nebenbei ergeben. Aktive Kalorien sind auf der Apple Watch eine algorithmische Schätzung aus Herzfrequenz und Bewegung, mit einer Fehlerspanne von ±20 bis 30 %. Für Trends reicht das, für die Genauigkeit, die eine dreistellige Anzeige nahelegt, ist es nutzlos."
+    a: "Die Schrittzahl zeigt fast perfekt an, ob du deine Uhr getragen hast. Sie unterscheidet keinen bewussten Spaziergang von Besorgungen, deshalb können zwei Tage mit derselben Zahl sehr unterschiedlich viel Bewegung enthalten. Aktive Kalorien sind auf der Apple Watch eine algorithmische Schätzung aus Herzfrequenz und Bewegung, mit einer Fehlerspanne von ±20 bis 30 %. Für Trends reicht das, für die Genauigkeit, die eine dreistellige Anzeige nahelegt, ist es nutzlos."
   - q: "Was ist mit dem VO2max-Wert?"
     a: "Der VO2max-Wert der Apple Watch ist aussagekräftig, aber nur über Quartale. Er bewegt sich so langsam, dass die Schwankung von Tag zu Tag größtenteils Rauschen der Schätzung ist. Schau einmal im Monat darauf und versuch nicht, ihn Woche für Woche zu deuten."
   - q: "Ist der Ring „Bewegen“ nutzlos?"
@@ -97,7 +97,7 @@ Diese Werte *sehen* bedeutsam aus, sind es aber meist nicht. Manche taugen als A
 
 ### 7. Tägliche Schritte
 
-Die Schrittzahl zeigt fast perfekt an, ob du deine Uhr heute getragen hast. Sie hängt davon ab, ob das iPhone in der Tasche steckt oder die Uhr am Handgelenk sitzt, davon, wo du wohnst (zu Fuß in der Stadt oder mit dem Auto im Vorort), und davon, was als Schritt zählt (Laufband-Schreibtische erzeugen Phantomschritte). 8000 überwiegend bewusste Schritte sind mehr wert als 14.000, die sich in der Stadt nebenbei ergeben, und die Zahl kann die beiden nicht unterscheiden.
+Die Schrittzahl zeigt fast perfekt an, ob du deine Uhr heute getragen hast. Sie hängt davon ab, ob das iPhone in der Tasche steckt oder die Uhr am Handgelenk sitzt, davon, wo du wohnst (zu Fuß in der Stadt oder mit dem Auto im Vorort), und davon, was als Schritt zählt (Laufband-Schreibtische erzeugen Phantomschritte). Ein Tag mit bewusstem Gehen und ein Tag, an dem sich die Schritte zwischen Besorgungen nebenbei ergeben, können bei derselben Zahl enden, und die Zahl kann die beiden nicht unterscheiden.
 
 ### 8. Den Ring „Bewegen“ schließen
 

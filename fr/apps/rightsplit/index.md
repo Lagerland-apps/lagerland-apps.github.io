@@ -264,7 +264,7 @@ faq:
     a: "Oui. L’app est en français, widgets compris. Dans l’App Store français, elle s’appelle « RightSplit: Addition Pourboire »."
 
 related_journal:
-  anchor: "Le calcul du partage d’addition qui divise tout le monde : taxes, pourboire et plat partagé"
+  anchor: "Partager l’addition entre amis : pourboire, plats à partager et dernier centime"
 
 screenshot_captions:
   - alt: "Écran de partage de RightSplit avec le total, le pourboire et des montants ajustables par personne"

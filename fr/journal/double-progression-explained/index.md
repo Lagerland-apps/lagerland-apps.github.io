@@ -15,7 +15,6 @@ seo:
     - "double progression"
     - "progression musculation"
     - "cycle de progression musculation"
-    - "surcharge progressive"
     - "microcharges musculation"
     - "quand augmenter la charge musculation"
 lede: "La progression linéaire demande à la barre de s’alourdir à chaque séance, et sur la plupart des exercices cela cesse de fonctionner en quelques mois. Ce qui vient ensuite, le plus souvent, c’est la double progression : la charge reste la même pendant que les répétitions montent dans une fourchette, et c’est seulement ensuite que la charge augmente. Elle est simple à décrire et facile à mal appliquer. Cet article donne les règles, huit séances déroulées pas à pas, ce qu’un petit disque ajoute en pourcentage et les signes qu’elle a fait son temps."
@@ -43,7 +42,7 @@ La plupart des programmes de force commencent par la progression linéaire : u
 
 ## Qu’est-ce que la double progression ?
 
-Vous progressez sur deux paramètres, dans un ordre fixe : d’abord les répétitions, avec une charge que vous gardez, puis la charge, une fois que les répétitions n’ont plus de marge.
+Vous progressez sur deux paramètres, dans un ordre fixe : d’abord les répétitions, avec une charge que vous gardez, puis la charge, une fois que les répétitions n’ont plus de marge. C’est une façon d’appliquer la [surcharge progressive](/fr/journal/surcharge-progressive-musculation/), le principe qui consiste à augmenter peu à peu ce que l’on demande au muscle.
 
 | Élément de la règle | Ce que cela signifie |
 |---|---|

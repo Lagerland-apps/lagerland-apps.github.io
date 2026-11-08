@@ -96,11 +96,11 @@ Ces minutes surestiment l’effort, parce qu’un total quotidien compte chaque 
 3. **Relevez-le quand il devient facile.** Monter d’un cran après quelques semaines de réussite coûte peu ; partir trop haut finit souvent par un abandon.
 4. **Prévoyez les jours qui diffèrent.** Un jour de bureau et un samedi donnent rarement le même total, il peut donc être judicieux de leur donner des objectifs différents.
 
-Au quotidien, le nombre de pas est un chiffre peu fiable pour juger de sa santé : il varie selon l’endroit où se trouvait votre téléphone et le genre de journée ([en savoir plus](/journal/apple-health-metrics-worth-interpreting/){: hreflang="en"} (en anglais)). Comme objectif, il fonctionne mieux, parce qu’un total quotidien est exactement ce que ces études ont mesuré.
+Au quotidien, le nombre de pas est un chiffre peu fiable pour juger de sa santé : il varie selon l’endroit où se trouvait votre téléphone et le genre de journée ([en savoir plus](/fr/journal/apple-health-metrics-worth-interpreting/)). Comme objectif, il fonctionne mieux, parce qu’un total quotidien est exactement ce que ces études ont mesuré.
 
 ## Comment EarnLock utilise ce nombre
 
-[EarnLock](/fr/apps/earnlock/) garde bloquées les apps que vous choisissez jusqu’à ce que vous atteigniez un objectif d’activité quotidien : c’est donc l’objectif choisi qui fait de ce blocage un prix juste ou un mur. [L’argument pour payer en mouvement](/journal/unlock-cost-outside-the-app/){: hreflang="en"} (en anglais) fait l’objet d’un autre article ; voici comment fonctionne l’objectif lui-même.
+[EarnLock](/fr/apps/earnlock/) garde bloquées les apps que vous choisissez jusqu’à ce que vous atteigniez un objectif d’activité quotidien : c’est donc l’objectif choisi qui fait de ce blocage un prix juste ou un mur. [L’argument pour payer en mouvement](/fr/journal/unlock-cost-outside-the-app/) fait l’objet d’un autre article ; voici comment fonctionne l’objectif lui-même.
 
 - **Trois niveaux prédéfinis, un nombre libre ou Adaptatif.** Les niveaux sont Léger (4000 pas), Standard (8000) et Défi (12 000). Vous pouvez aussi saisir votre propre nombre ou choisir Adaptatif, qui monte de 3 % après un jour où l’objectif est atteint et baisse de 5 % après un jour manqué, dans des limites fixes.
 - **Des pas, ou les mesures d’activité d’Apple.** Les pas sont l’objectif gratuit. Premium ajoute les minutes d’exercice, celles de l’anneau vert « M’entraîner » d’Apple, qui [selon Apple](https://support.apple.com/fr-fr/guide/watch/apd3bf6d85a6/watchos) affiche la durée, en minutes, d’effort intense (niveaux prédéfinis de 20, 30 et 45), et les calories actives (150, 300 et 500 kcal).

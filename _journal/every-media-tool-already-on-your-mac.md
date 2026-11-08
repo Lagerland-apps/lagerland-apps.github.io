@@ -14,21 +14,21 @@ seo:
     - "mediakit"
 date: 2026-05-09
 lede: "MediaKit is more than 150 local tools for video, audio, image, PDF, archive, and ebook work, behind a single drag-and-drop interface on Mac and iPhone. Every operation runs on your machine. This post makes the case for that, and for why \"upload your file to a random website to convert it\" remains one of the worst defaults on the open web in 2026."
-quick_answer: "MediaKit is a Mac and iPhone app that puts more than 150 on-device tools for video, audio, image, PDF, archive, and ebook files behind a single drag-and-drop surface. Its video, image, PDF, and speech work runs locally on Apple frameworks such as AVFoundation, CoreImage, PDFKit, Vision, and Speech. Files never leave the device, unlike CloudConvert, Zamzar, or Smallpdf. Five of the tools stay free for good."
+quick_answer: "MediaKit is a Mac and iPhone app that puts more than 150 on-device tools for video, audio, image, PDF, archive, and ebook files behind a single drag-and-drop surface. Its video, image, PDF, and speech work runs locally on Apple frameworks such as AVFoundation, Core Image, PDFKit, Vision, and Speech. Files never leave the device, unlike CloudConvert, Zamzar, or Smallpdf. Five of the tools stay free for good."
 faq:
   - q: "Is there a Mac alternative to CloudConvert or Smallpdf?"
-    a: "MediaKit is a Mac and iPhone app with more than 150 tools that runs every operation locally, mostly on Apple frameworks such as AVFoundation, CoreImage, PDFKit, Vision, and AppleArchive. Files never leave the machine, unlike CloudConvert, Zamzar, Smallpdf, or iLovePDF, which upload to operator infrastructure for processing."
+    a: "MediaKit is a Mac and iPhone app with more than 150 tools that runs every operation locally, mostly on Apple frameworks such as AVFoundation, Core Image, PDFKit, Vision, and AppleArchive. Files never leave the machine, unlike CloudConvert, Zamzar, Smallpdf, or iLovePDF, which upload to operator infrastructure for processing."
   - q: "Which MediaKit tools are free for good?"
     a: "Five tools are free with no time limit, one file at a time: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. For your first three days every other tool works too, one export per run. After that they require Pro, sold monthly, yearly, or as a one-time lifetime purchase, so a subscription is optional."
   - q: "Can MediaKit replace Final Cut Pro or DaVinci Resolve?"
     a: "No. MediaKit performs everyday linear operations like compress, convert, trim, crop, merge, and normalize. It has no timeline and is not a non-linear editor, so if you are cutting a film, use Final Cut Pro or DaVinci Resolve."
   - q: "Does MediaKit work with Shortcuts?"
-    a: "Yes, on Mac. MediaKit has six Shortcuts actions (Compress Video, Convert Image, Compress Image, Merge PDFs, Create ZIP, and Extract Text from Image) plus a menu bar item, so its tools fit into your own automations. The actions run locally, like the rest of the app."
+    a: "Yes, on iPhone and Mac. MediaKit has six Shortcuts actions (Compress Video, Convert Image, Compress Image, Merge PDFs, Create ZIP, and Extract Text from Image) plus a menu bar item, so its tools fit into your own automations. The actions run locally, like the rest of the app."
 mentioned_apps:
   - mediakit
 read_time: "6 min read"
 excerpt: "MediaKit is a Mac and iPhone app with more than 150 on-device tools for compressing, converting, and editing video, audio, image, PDF, archive, and ebook files, built mostly on Apple's own frameworks. This post argues that the Mac has shipped the primitives for local media work for years, that cloud converters like CloudConvert, Zamzar, and Smallpdf persist mostly because nobody consolidated the local tools behind a single UI, and explains why five of the tools are free with no time limit."
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 It's a Saturday in May. Somewhere on the open web, someone is uploading a four-gigabyte video of a child's piano recital to a free conversion site, because the format their camera produces is the format their parent cannot open. The site will take the video, run it through a server they cannot see, log the request, possibly cache the file, certainly read the metadata, and hand back something that plays on a Windows laptop. The user will close the tab and assume it's fine.
@@ -46,7 +46,7 @@ I want to be precise about this, because MediaKit's contribution is real but lim
 Most of the actual algorithms (H.264 and HEVC encoding, AAC encoding, PNG quantization, PDF compression, OCR, on-device speech transcription, background removal) come from first-party Apple frameworks that ship with macOS:
 
 - **AVFoundation** handles the video and audio work: compression, conversion, trimming, and merging.
-- **CoreImage** handles image transforms, color adjustments, and pixel-level filters.
+- **Core Image** handles image transforms, color adjustments, and pixel-level filters.
 - **PDFKit** handles merge, split, redact, sign, watermark, header and footer, and edits that keep vectors sharp and text searchable.
 - **Vision** handles OCR and background removal.
 - **Speech** handles on-device transcription of audio and video.
@@ -64,7 +64,7 @@ If the local primitives have been there for years, why does the median user stil
 
 I see four reasons, and they also explain the shape MediaKit had to take:
 
-1. **Discovery.** Search "convert HEIC to JPG" and the top results are conversion websites. Search "convert HEIC to JPG on Mac" and the top results are *also* conversion websites. Apple does not market the existence of CoreImage to end users. They shouldn't have to.
+1. **Discovery.** Search "convert HEIC to JPG" and the top results are conversion websites. Search "convert HEIC to JPG on Mac" and the top results are *also* conversion websites. Apple does not market the existence of Core Image to end users. They shouldn't have to.
 2. **Format coverage.** Mac built-ins handle the common formats; the cloud converters handle the long tail: encrypted RAR, WebM, ALAC inside an unusual MKV. The user reaches for the website because the website *will* handle whatever they throw at it. MediaKit covers part of that tail locally (RAR4 and RAR5, MKV files, camera RAW and AVIF as input) and leaves some of it alone: it refuses encrypted RAR and doesn't read WebM.
 3. **One-shot UX.** The website is one click: paste, drop, download. Native tools historically required you to know which app to open. MediaKit's answer is the single drop surface: drop any file and it suggests the tools that fit it.
 4. **Trust by exhaustion.** Users are tired, the website is fast and looks professional, and the privacy cost is invisible. It only becomes visible if you imagine that file being indexed somewhere, or showing up in a data-breach disclosure later.

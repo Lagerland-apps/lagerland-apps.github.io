@@ -190,7 +190,7 @@ faq:
   - q: "Which devices does MediaKit support?"
     a: "iPhone with iOS 17 or later, and Mac with macOS 14.6 (Sonoma) or later. One purchase covers both. There is no iPad version. Some extras are Mac-only: Folder Automation, the menu bar item, Open With from Finder, and Try-It samples with ⌘T. The share sheet extension, the Library tab, and saving to Photos are on iPhone."
   - q: "Can MediaKit be automated?"
-    a: "Yes. With Pro, save any chain of tools as a Recipe and run it on new files. On Mac, Folder Automation runs a Recipe on every file that lands in a folder you choose, and six actions in the Shortcuts app cover Compress Video, Convert Image, Compress Image, Merge PDFs, Create ZIP, and Extract Text from Image."
+    a: "Yes. With Pro, save any chain of tools as a Recipe and run it on new files. On Mac, Folder Automation runs a Recipe on every file that lands in a folder you choose. On iPhone and Mac, six actions in the Shortcuts app cover Compress Video, Convert Image, Compress Image, Merge PDFs, Create ZIP, and Extract Text from Image."
   - q: "How is MediaKit different from online converters?"
     a: "Online converters upload your file to a server, process it there, and send it back. MediaKit does the same jobs on your iPhone or Mac, so a contract, a scan, or a family video never leaves the device, and there is no upload to wait for. It also covers six kinds of file in one app, shows the estimated size before you run a tool, and lets you compare the result with the original."
 
@@ -201,6 +201,6 @@ support:
 release:
   first_release: "2026-04-01"
   last_updated: "2026-04-13"
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 MediaKit is an iPhone and Mac app with more than 150 tools for video, audio, image, PDF, archive, and ebook files, and every one of them runs on the device. Drop in a file and MediaKit suggests the tools that fit it. The tool screen estimates the output size before you press Run, and each result shows the space you saved next to a side-by-side compare. Five tools stay free for good: Video Compress, Image Compress, Image Resize, Audio Convert, and PDF Compress. Your first 3 days unlock every other tool for single-file runs with no payment, and Pro adds every tool, batch processing, Recipes, and Make It Fit, with one purchase covering iPhone and Mac. On Mac, Folder Automation, the menu bar, and six Shortcuts actions put the same tools into your routine. There is no account, and your files are never uploaded. Published by Lagerland Apps.

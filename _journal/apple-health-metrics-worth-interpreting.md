@@ -13,12 +13,12 @@ seo:
     - "apple health data"
     - "health metrics worth tracking"
 date: 2026-05-13
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 lede: "Apple Health collects more than 80 distinct health metrics. Most of them are noise, vanity numbers, or sensor data you have no useful frame for. This is the short list: the six that move with your habits and reward interpretation, the twelve that look meaningful but mostly aren't, and how to tell the two apart."
 quick_answer: "Of the 80+ metrics Apple Health collects, only about six reward sustained interpretation: HRV (SDNN), resting heart rate, sleep efficiency, deep-sleep share, heart-rate dip during sleep, and weekly active energy. The rest, such as step count, standing hours, the daily move ring, and cardio recovery, are redundant, biased, or so weak in signal-to-noise that they waste your attention. Using Apple Health well comes down to knowing which numbers deserve a 60-day baseline and which you can stop opening the app to check."
 faq:
   - q: "Why don't step count and active calories make the short list?"
-    a: "Step count is a near-perfect proxy for 'did you wear your watch'. It can't tell a deliberate walk from running errands, and a 6,000-step day with intentional movement is often metabolically equivalent to a 12,000-step day of urban drift. Active calories on Apple Watch are an algorithmic estimate from heart rate plus motion, with error bands of ±20 to 30%. That is fine for spotting trends and useless for the precision that a three-significant-figure display implies."
+    a: "Step count is a near-perfect proxy for 'did you wear your watch'. It can't tell a deliberate walk from running errands, so two days with the same count can hold very different amounts of effort. Active calories on Apple Watch are an algorithmic estimate from heart rate plus motion, with error bands of ±20 to 30%. That is fine for spotting trends and useless for the precision that a three-significant-figure display implies."
   - q: "What about VO2 Max?"
     a: "VO2 Max on Apple Watch is informative, but only on a quarterly timescale. It moves so slowly that day-to-day variation is mostly estimation noise. Check it once a month and don't try to interpret it weekly."
   - q: "Is the Move Ring useless?"
@@ -94,7 +94,7 @@ These metrics *look* meaningful but mostly aren't. Some are fine as adherence pr
 
 ### 7. Daily step count
 
-Step count is a near-perfect proxy for "did you wear your watch today." It depends on phone-in-pocket vs watch-on-wrist, on where you live (urban walkers vs suburban drivers), and on what counts as a step (treadmill desks generate phantom counts). 8,000 mostly deliberate steps beat 14,000 of urban drift, and the number can't tell them apart.
+Step count is a near-perfect proxy for "did you wear your watch today." It depends on phone-in-pocket vs watch-on-wrist, on where you live (urban walkers vs suburban drivers), and on what counts as a step (treadmill desks generate phantom counts). A day of deliberate walking and a day of drifting between errands can end on the same number, and the count can't tell them apart.
 
 ### 8. Move ring closure
 

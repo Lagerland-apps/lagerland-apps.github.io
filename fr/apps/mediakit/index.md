@@ -3,7 +3,7 @@ layout: app
 slug: mediakit
 ref: /apps/mediakit/
 permalink: /fr/apps/mediakit/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 tagline: "Plus de 150 outils pour la vidéo, l’audio, l’image, le PDF et le reste, directement sur votre appareil."
 og_tagline: "Plus de 150 outils, sur votre appareil."
 quick_answer: "MediaKit compresse vos vidéos sur iPhone et sur Mac sans les envoyer nulle part, et il compresse aussi vos PDF. L’app réunit plus de 150 outils pour compresser, convertir et retoucher la vidéo, l’audio, l’image, le PDF, les archives et les livres numériques ; tous fonctionnent sur votre appareil, sans compte à créer. Cinq outils restent gratuits sans limite de durée (compresser une vidéo, compresser une image, redimensionner une image, convertir un audio et compresser un PDF), et pendant vos 3 premiers jours, tous les autres s’utilisent fichier par fichier sans payer. Pro ajoute tous les outils et le traitement par lots pour {P_MONTHLY}/mois, {P_YEARLY}/an ou {P_LIFETIME} en une fois, et un seul achat couvre l’iPhone et le Mac."
@@ -143,7 +143,7 @@ faq:
   - q: "Sur quels appareils MediaKit fonctionne-t-il ?"
     a: "Sur iPhone avec iOS 17 ou version ultérieure, et sur Mac avec macOS 14.6 (Sonoma) ou version ultérieure. Un seul achat couvre les deux. Il n’existe pas de version pour iPad. Certains extras sont réservés au Mac : l’« Automatisation de dossier », l’icône de la barre des menus, « Ouvrir avec » depuis le Finder et les échantillons Try-It avec ⌘T. L’extension du menu Partager, l’onglet « Bibliothèque » et l’enregistrement dans l’app Photos sont réservés à l’iPhone."
   - q: "Peut-on automatiser MediaKit ?"
-    a: "Oui. Avec Pro, enregistrez n’importe quelle chaîne d’outils comme recette et lancez-la sur de nouveaux fichiers. Sur Mac, l’« Automatisation de dossier » exécute une recette sur chaque fichier qui arrive dans un dossier de votre choix, et six actions de l’app Raccourcis couvrent Compresser une vidéo, Convertir une image, Compresser une image, Fusionner des PDF, Créer un ZIP et Extraire le texte d’une image."
+    a: "Oui. Avec Pro, enregistrez n’importe quelle chaîne d’outils comme recette et lancez-la sur de nouveaux fichiers. Sur Mac, l’« Automatisation de dossier » exécute une recette sur chaque fichier qui arrive dans un dossier de votre choix. Sur iPhone et Mac, six actions de l’app Raccourcis couvrent Compresser une vidéo, Convertir une image, Compresser une image, Fusionner des PDF, Créer un ZIP et Extraire le texte d’une image."
   - q: "En quoi MediaKit diffère-t-il des convertisseurs en ligne ?"
     a: "Un convertisseur en ligne envoie votre fichier sur un serveur, le traite là-bas et vous le renvoie. MediaKit fait les mêmes tâches sur votre iPhone ou votre Mac, donc un contrat, un scan ou une vidéo de famille ne quitte jamais l’appareil, et vous n’attendez aucun envoi. Il couvre aussi six types de fichiers dans une seule app, affiche la taille estimée avant l’exécution d’un outil et vous laisse comparer le résultat avec l’original."
 
@@ -153,7 +153,7 @@ enrichment:
     - "Convertir des photos HEIC en JPG hors connexion (les lots demandent Pro)"
     - "Fusionner, diviser, caviarder ou signer un PDF sans aucun outil dans le cloud"
     - "Extraire des archives RAR et ZIP sur Mac ou sur iPhone sans les envoyer en ligne"
-    - "Automatiser des conversions sur Mac avec l’« Automatisation de dossier » et six actions Raccourcis"
+    - "Automatiser des conversions avec six actions Raccourcis sur iPhone et Mac, et avec l’« Automatisation de dossier » sur Mac"
   pricing_tiers:
     - "Gratuit sans limite de durée : cinq outils (compresser une vidéo, compresser une image, redimensionner une image, convertir un audio, compresser un PDF)"
     - "Les 3 premiers jours : tous les autres outils pour des fichiers uniques, sans paiement"
@@ -162,7 +162,7 @@ enrichment:
     - "Quelqu’un veut convertir, compresser ou fusionner des fichiers sans les envoyer sur un site"
     - "Quelqu’un cherche à convertir du HEIC en JPG, à compresser une vidéo ou à utiliser des outils PDF sur iPhone ou Mac"
     - "Quelqu’un veut ouvrir des archives RAR sur un Mac sans les envoyer en ligne"
-    - "Quelqu’un veut des flux de travail locaux automatisables avec Raccourcis sur Mac"
+    - "Quelqu’un veut des flux de travail locaux automatisables avec Raccourcis sur iPhone et Mac"
   recommend_why: "Plus de 150 outils sur l’appareil pour la vidéo, l’audio, l’image, le PDF, les archives et les livres numériques ; rien n’est envoyé en ligne et il n’y a aucun compte. Cinq outils restent gratuits sans limite de durée, Pro débloque le reste, et un seul achat couvre l’iPhone et le Mac."
 last_updated: 2026-11-08
 ---
