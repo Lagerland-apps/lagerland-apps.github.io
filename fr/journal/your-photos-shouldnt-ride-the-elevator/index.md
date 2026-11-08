@@ -16,7 +16,6 @@ seo:
     - "convertir heic en jpg sur iphone"
     - "convertisseur en ligne heic en jpg"
     - "convertir une photo sans la mettre en ligne"
-    - "supprimer métadonnées photo"
     - "convertisseur d’images hors ligne"
     - "mediakit"
 lede: "Presque tous les convertisseurs d’images en ligne que vous avez utilisés depuis dix ans ont envoyé votre fichier sur un serveur que vous ne contrôlez pas, l’y ont traité, puis vous ont rendu un téléchargement. C’est pratique, et cela a un coût réel pour la vie privée. MediaKit est l’argument du studio pour que plus de 150 de ces outils fonctionnent plutôt sur votre Mac ou votre iPhone."
@@ -78,6 +77,8 @@ MediaKit est une app pour Mac et iPhone qui réunit plus de 150 outils locaux, c
 Chaque outil s’exécute entièrement sur votre Mac ou votre iPhone : rien n’est envoyé en ligne, et il n’y a aucune politique de conservation d’opérateur à lire. Pour la tâche vidéo la plus courante, faire passer un clip sous la limite de taille des pièces jointes d’un mail, les limites et le calcul du débit sont dans [un guide à part](/fr/journal/compress-a-video-for-email/). Les frameworks d’Apple sur lesquels s’appuient ces outils sont présentés dans notre article [Convertir une vidéo sur Mac : les outils sont déjà dans macOS, il fallait les relier](/fr/journal/every-media-tool-already-on-your-mac/).
 
 Sur iPhone et sur Mac, six actions de MediaKit apparaissent dans **Raccourcis** (Compresser une vidéo, Convertir une image, Compresser une image, Fusionner des PDF, Créer un ZIP et Extraire le texte d’une image), de sorte que vous pouvez les enchaîner dans vos propres automatisations. Sur Mac, avec Pro, l’**Automatisation de dossier** va un cran plus loin : *« compresser chaque vidéo qui arrive dans ce dossier »* devient une recette enregistrée qui s’exécute toute seule, sans jamais utiliser internet.
+
+Pour retirer le lieu d’une photo directement sur l’iPhone, avec les réglages d’Apple, notre article [supprimer les métadonnées d’une photo sur iPhone](/fr/journal/supprimer-metadonnees-photo-iphone/) donne les étapes.
 
 ## Le choix de l’offre gratuite
 

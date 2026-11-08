@@ -135,7 +135,7 @@ features:
   - title: "Sleep from Apple Health, naps included"
     description: "Last night's sleep imports itself, even in the background, and naps are tagged as naps. Log a nap yourself, or start a 25-minute nap timer on the Lock Screen that logs the nap when you end it. Needs an Apple Watch or a sleep app that saves sleep to Apple Health."
   - title: "Sleep Timing, stages, and debt trend"
-    description: "Every sleep shows time asleep and efficiency, plus Awake, Core, Deep, and REM when your sleep source records stages. A sleep-debt chart labels each cycle Building, Stable, or Recovering. Premium adds the Sleep Score, the Shift Recovery Score, Sleep Continuity, and Trends."
+    description: "Every sleep shows time asleep and efficiency, plus Awake, Core, Deep, and REM when your sleep source records stages. A sleep-debt chart shows your average nightly debt over your last 12 cycles, labelled Building, Stable, or Recovering. Premium adds the Sleep Score, the Shift Recovery Score, Sleep Continuity, and Trends."
   - title: "Do this now"
     description: "One of 12 scenarios for your current window, such as a short window between shifts or a night shift coming up, with three steps and their durations. Swap a step you don't like. The 21 techniques come with how-to steps and a timer."
   - title: "Caffeine cut-off that adapts"
@@ -270,7 +270,7 @@ founder:
   external_link:
     href: "/apps/aftershift/methodology/"
     label: "Read the AfterShift methodology →"
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 
 Most sleep apps were designed for someone who goes to bed at 11 p.m. and wakes at 7 a.m. Go through the onboarding of any major one and the questions assume a fixed bedtime, a steady wake time, and free weekends. The people who keep hospitals, fire stations, factories, and warehouses running through the night have to use those same apps. A nurse logs five hours of daytime sleep after a string of night shifts, and the app politely tells her she had a *poor night* and should go to bed earlier. The app was built around someone who isn't her.

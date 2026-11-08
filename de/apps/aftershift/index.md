@@ -104,7 +104,7 @@ features:
   - title: "Schlaf aus Apple Health, Nickerchen eingeschlossen"
     description: "Dein letzter Schlaf kommt von selbst in die App, auch im Hintergrund, und Nickerchen werden als Nickerchen markiert. Nickerchen trägst du auch selbst ein, oder du startest auf dem Sperrbildschirm einen 25-Minuten-Timer, der das Nickerchen erfasst, sobald du ihn beendest. Dafür brauchst du eine Apple Watch oder eine Schlaf-App, die Schlaf in Apple Health speichert."
   - title: "Schlafzeiten, Schlafphasen und Schlafdefizit"
-    description: "Zu jedem Schlaf siehst du die Schlafdauer und die Schlafeffizienz, dazu die Phasen „Wach“, „Leicht“ (in Apple Health „Kern“), „Tief“ und „REM“, wenn deine Schlafquelle Phasen aufzeichnet. Ein Diagramm zum Schlafdefizit zeigt für jeden Zyklus „Defizit steigt“, „Stabil“ oder „Erholung“. Premium ergänzt Schlafbewertung, Schichterholungswert, Schlafkontinuität und Trends."
+    description: "Zu jedem Schlaf siehst du die Schlafdauer und die Schlafeffizienz, dazu die Phasen „Wach“, „Leicht“ (in Apple Health „Kern“), „Tief“ und „REM“, wenn deine Schlafquelle Phasen aufzeichnet. Ein Diagramm zeigt dein durchschnittliches Schlafdefizit pro Nacht über die letzten 12 Zyklen, mit dem Hinweis „Defizit steigt“, „Stabil“ oder „Erholung“. Premium ergänzt Schlafbewertung, Schichterholungswert, Schlafkontinuität und Trends."
   - title: "Mach das jetzt"
     description: "Eine von 12 Situationen passend zu deinem aktuellen Zeitfenster, etwa ein kurzes Fenster zwischen zwei Schichten oder eine Nachtschicht, die bald beginnt, mit drei Schritten und ihrer Dauer. Einen Schritt, der dir nicht liegt, tauschst du aus. Zu den 21 Techniken gibt es eine Anleitung und einen Timer."
   - title: "Ein Koffein-Stopp, der sich anpasst"
@@ -232,7 +232,7 @@ enrichment:
   pricing_tiers:
     - "Kostenlos: wiederkehrende Schichtrhythmen und Dienstplan, Schlafimport aus Apple Health mit Nickerchen, Schlafzeiten und Schlafphasen, Schlafdefizit-Trend, Erholungsplan, Schritte unter „Mach das jetzt“ und 21 Techniken, Erinnerungen passend zur Schicht, Countdown und Nickerchen-Timer auf dem Sperrbildschirm, Siri, 4 von 7 Widgets, Kalenderimport aus 1 Kalender für die nächsten 14 Tage"
     - "Premium: Erholungszustand, Schlafbewertung, Schichterholungswert, Schlafkontinuität, Trends, automatische Synchronisierung mehrerer Kalender mit Erfassung von Überstunden, Vorschau auf die Auswirkung eines Schichtwechsels, PDF-Bericht, Erklärungen von Apple Intelligence direkt auf dem Gerät ab iOS 26 auf einem unterstützten iPhone ({P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} als Einmalkauf; Familienfreigabe bei allen Optionen)"
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 ---
 
 Die meisten Schlaf-Apps sind für Menschen gemacht, die um 23 Uhr ins Bett gehen und um 7 Uhr aufstehen. Geh das Onboarding einer der großen durch, und die Fragen setzen eine feste Schlafenszeit, eine gleichbleibende Weckzeit und freie Wochenenden voraus. Wer nachts Krankenhäuser, Feuerwachen, Fabriken und Lager am Laufen hält, muss dieselben Apps benutzen. Eine Pflegerin trägt nach einer Reihe von Nachtschichten fünf Stunden Schlaf am Tag ein, und die App teilt ihr höflich mit, sie habe eine *schlechte Nacht* gehabt und solle früher ins Bett gehen. Gebaut wurde die App für jemand anderen.

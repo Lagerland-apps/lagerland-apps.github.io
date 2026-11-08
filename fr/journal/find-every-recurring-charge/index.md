@@ -135,6 +135,8 @@ Cette limite est la raison d’être de cet article. AllPaid ne peut pas retrouv
 
 Si vous cherchez une app limitée aux abonnements, plus légère, [Bobby](/alternatives/bobby/){: hreflang="en"} (en anglais) et [Subby](/alternatives/subby/){: hreflang="en"} (en anglais) sont toutes deux bonnes et gardent vos données sur l’appareil. Bobby débloque les abonnements illimités pour un petit achat unique et Subby est gratuite avec son propre déblocage premium, mais ni l’une ni l’autre ne gère le loyer, les charges et les factures ponctuelles à côté des abonnements. Si vous voulez la même liste lisible depuis un ordinateur portable, un téléphone et un poste de travail, [TrackMySubs](/alternatives/trackmysubs/){: hreflang="en"} (en anglais) fonctionne dans le navigateur et se synchronise partout, mais c’est un compte web, pas un fichier local. Notre [guide pour gérer factures et abonnements sans connexion bancaire](/fr/guides/bill-tracker-without-bank-connection/) compare plus largement les apps de cette catégorie.
 
+Une fois un abonnement repéré, les règles de la résiliation en ligne sont expliquées dans notre article sur la [résiliation en 3 clics](/fr/journal/resilier-abonnement-trois-clics/).
+
 ## Quand refaire l’audit
 
 Chaque trimestre pour les quatre écrans des plateformes, soit 5 minutes une fois que les chemins sont devenus un réflexe. Chaque année pour l’examen de 13 mois de relevés et la lecture du gestionnaire de mots de passe, le même mois civil chaque année, pour que deux examens consécutifs se chevauchent et ne laissent aucun trou.

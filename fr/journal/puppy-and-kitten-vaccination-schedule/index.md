@@ -107,6 +107,8 @@ Un certificat de vaccination règle des questions que la mémoire ne règle pas.
 
 Gardez les certificats eux-mêmes, pas seulement des notes à leur sujet, surtout pour la rage. Les pensions et les toiletteurs demandent en général une preuve de vaccination, et certains exigent que le vaccin ait été fait un certain nombre de jours avant l’arrivée ; l’article sur [ce que contient le dossier médical d’un animal](/fr/journal/pet-medical-records-what-to-keep/) explique qui demande quoi.
 
+Le vermifuge a son propre calendrier, d’après les recommandations d’ESCCAP France, détaillé dans notre article [vermifuger son chien](/fr/journal/vermifuger-son-chien/).
+
 ## La place de Pawza
 
 [Pawza](/fr/apps/pawza/) est une application de carnet de santé pour animaux, sur iPhone et iPad. Elle ne contient aucun calendrier de vaccination et ne décide pas de ce dont votre animal a besoin : les dates viennent des papiers de votre vétérinaire, si bien qu’elle fonctionne avec le protocole de n’importe quel vétérinaire et les règles antirabiques de n’importe quel pays. Elle garde ces dates et vous prévient quand l’une approche.

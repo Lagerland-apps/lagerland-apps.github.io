@@ -76,6 +76,8 @@ Je vois quatre raisons, et elles expliquent aussi la forme que MediaKit devait p
 
 Je ne crois pas que la plupart des utilisateurs *veuillent* envoyer des fichiers sensibles à des inconnus. Je crois qu’on ne leur a pas proposé d’option par défaut tout aussi simple et qui n’envoie rien.
 
+Le cas des fichiers MKV, et la différence entre changer de conteneur et réencoder, est traité dans notre article [convertir MKV en MP4](/fr/journal/convertir-mkv-en-mp4/).
+
 ## Ce qui est gratuit, ce qui est payant
 
 L’offre gratuite compte cinq outils : compresser une vidéo, compresser une image, redimensionner une image, convertir un audio et compresser un PDF. Ce sont les opérations qu’un utilisateur ordinaire de Mac effectue réellement : compresser une pièce jointe pour un mail, alléger une photo, convertir un fichier audio. Elles restent gratuites sans limite de durée, un fichier à la fois, sans compte à rebours.

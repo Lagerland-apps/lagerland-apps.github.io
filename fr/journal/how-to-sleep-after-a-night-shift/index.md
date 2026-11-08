@@ -104,6 +104,8 @@ Revenir complètement à un sommeil de nuit à chaque jour de repos maintient vo
 
 La même page met en garde contre le raccourci inverse : rester éveillé toute la journée avant la première nuit d’une série, ou après la dernière. Vous cumulez alors trop d’heures d’éveil, ce qui augmente le risque d’accident et, à la longue, celui d’un manque de sommeil chronique. Le cours ne traite pas en détail des plannings en rotation ; les personnes en rotation qui peinent à s’adapter sont orientées vers un spécialiste du sommeil.
 
+Ce que disent Santé publique France et l’Inserm sur la façon de rattraper le sommeil perdu est résumé dans notre article sur la [dette de sommeil](/fr/journal/rattraper-dette-de-sommeil/).
+
 ## Quand c’est plus qu’une mauvaise semaine
 
 Les problèmes de sommeil persistants ne doivent pas être ignorés, dit le NIOSH, et un [trouble du sommeil](https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod6/15.html){: hreflang="en"} comme l’apnée du sommeil ou l’insomnie peut empêcher de dormir assez tant qu’il n’est pas traité. La page de l’American Academy of Sleep Medicine sur le [trouble du travail posté](https://sleepeducation.org/sleep-disorders/shift-work/){: hreflang="en"} (en anglais) trace une limite semblable : un nouveau poste est difficile pour beaucoup de personnes au début, mais si, après plusieurs semaines, vous avez toujours du mal à trouver ou à garder le sommeil, ou si la fatigue persiste même après 7 à 8 heures de sommeil, il peut s’agir d’un trouble du travail posté. C’est une conversation à avoir avec votre médecin ou un spécialiste du sommeil, tout comme le choix d’un somnifère ou d’un complément alimentaire.

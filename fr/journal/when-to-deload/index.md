@@ -111,6 +111,8 @@ Les essais contrôlés sont pour l’instant de petite taille :
 
 En résumé : une décharge bien menée ne semble pas coûter de muscle, une semaine d’arrêt complète peut coûter un peu de force maximale, et, à ma connaissance, aucun essai n’a montré que les décharges rendent plus fort à long terme. Elles restent une façon sensée de gérer la fatigue et de rendre un entraînement dur tenable dans la durée. Considérez tout calendrier de décharge comme un point de départ à ajuster.
 
+Le volume hebdomadaire par muscle et ce qu’en disent l’ACSM et les méta-analyses sont traités dans notre article [combien de séries par muscle par semaine](/fr/journal/series-par-muscle-par-semaine/).
+
 ## Comment GymLogger X gère les décharges
 
 [GymLogger X](/fr/apps/gymlogger-x/) gère les décharges à trois endroits.

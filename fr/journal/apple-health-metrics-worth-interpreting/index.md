@@ -12,11 +12,8 @@ seo:
   description: "Données Apple Santé : plus de 80 mesures, dont 6 qui bougent avec vos habitudes (VFC, fréquence cardiaque au repos, sommeil profond) et 12 à ignorer."
   keywords:
     - "données apple santé"
-    - "pourcentage de sommeil profond"
-    - "fréquence cardiaque au repos"
     - "fréquence cardiaque la nuit"
     - "efficacité du sommeil"
-    - "vo2 max apple watch"
     - "vfc apple watch"
     - "quelles mesures apple santé suivre"
 lede: "Apple Santé recueille plus de 80 mesures de santé distinctes. La plupart sont du bruit, des chiffres flatteurs ou des données de capteur pour lesquelles vous n’avez aucun repère. Voici la liste courte : les six qui bougent avec vos habitudes et méritent d’être interprétées, les douze qui ont l’air parlantes mais, pour la plupart, ne le sont pas, et comment distinguer les unes des autres."
@@ -65,6 +62,8 @@ La fréquence cardiaque au repos évolue plus lentement que la VFC, mais elle es
 
 Lisez-la comme une moyenne glissante sur 7 jours, comparée à votre référence sur 60 jours, et non comme un chiffre quotidien.
 
+Les valeurs habituelles au repos, chez l’adulte comme chez le sportif, sont reprises de Vidal et de l’Assurance maladie dans notre article sur la [fréquence cardiaque au repos](/fr/journal/frequence-cardiaque-au-repos/).
+
 ### 3. Efficacité du sommeil
 
 C’est le pourcentage du temps passé au lit pendant lequel vous dormez réellement. Le suivi du sommeil de l’Apple Watch est moyen pour les phases, mais très bon pour la durée totale. Une efficacité du sommeil supérieure à 90 % est excellente ; si elle reste en dessous de 80 %, cela renvoie souvent à la routine du coucher, à l’heure à laquelle vous prenez de la caféine ou à l’anxiété.
@@ -76,6 +75,8 @@ Elle tient bon même après une courte nuit, et c’est l’un des chiffres de s
 C’est la part de la nuit passée en sommeil profond (sommeil à ondes lentes). La répartition des phases par l’Apple Watch est approximative, mais la tendance est fiable. L’essentiel de la récupération physique et de la consolidation de la mémoire a lieu pendant le sommeil profond, et l’alcool, les séances tardives, les repas tardifs et la température de la chambre le perturbent plus que toute autre phase.
 
 Ce qui le fait varier, à peu près par ordre d’importance : de l’alcool dans les 3 heures avant le coucher (de 20 à 40 % de moins), une séance après 18 h (de 10 à 20 % de moins), un gros repas tardif (de 10 à 15 % de moins), une chambre chaude (de 5 à 15 % de moins) et une forte exposition aux écrans dans les 30 minutes avant l’endormissement (de 5 à 25 % de moins).
+
+Pour la part de sommeil profond dans une nuit et la façon dont les cycles évoluent avec l’âge, notre article [Sommeil profond : combien d’heures par nuit ?](/fr/journal/sommeil-profond-combien-d-heures/) reprend les repères de l’Inserm et de Santé publique France.
 
 ### 5. Baisse de la fréquence cardiaque pendant le sommeil
 
@@ -116,6 +117,8 @@ La « minute d’exercice » d’Apple compte toute minute passée à une fr
 ### 11. VO₂ max (estimée)
 
 Utile, mais elle évolue à l’échelle du trimestre, et la variation d’un jour à l’autre de l’estimation est presque entièrement du bruit. Consultez-la chaque mois et laissez-la tranquille le reste du temps.
+
+Ce qu’est la VO₂ max et comment l’Apple Watch l’estime sont expliqués dans notre article [VO₂ max : c’est quoi ?](/fr/journal/vo2-max/).
 
 ### 12. Récupération de la fréquence cardiaque
 

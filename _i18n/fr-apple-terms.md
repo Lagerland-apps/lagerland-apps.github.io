@@ -48,7 +48,7 @@ Abbreviations: ap = apps.apple.com/fr, ah = https://www.apple.com/fr/health/, ig
 | Vitals app | l'app Signes vitaux; Signes vitaux nocturnes / diurnes | https://support.apple.com/fr-fr/guide/watch/apd15aa7ed96/watchos ; ah | One page also has "Signaux vitaux" once (typo on Apple's side); the app name is Signes vitaux |
 | Readiness app (watchOS 27) | l'app Préparation; score de préparation | https://support.apple.com/fr-fr/guide/watch/flx4gnzby346/watchos (EN: https://support.apple.com/en-us/guide/watch/flx4gnzby346/watchos) ; ah ("Préparation") | |
 | Training Load | charge d'entraînement | wg ("Suivre sa charge d'entraînement"); ah | |
-| Cardio Fitness | forme cardiaque (marketing); no distinct feature label found in the guides | ah ("estime la forme cardiaque") | See Unverified |
+| Cardio Fitness | « santé cardiovasculaire » (the VO₂ max feature in Santé) | https://support.apple.com/fr-fr/108790 (checked 2026-11-08) | Corrected 2026-11-08; « forme cardiaque » was only marketing wording |
 | VO2 max | VO₂ max (marketing writes VO with a subscript 2, then "max") | ah | |
 | Cycle Tracking | Suivi de cycle (« Suivi de cycle »); l'app Suivi de cycle (Watch) | ah; ig TOC ("Suivre son cycle menstruel"); https://support.apple.com/fr-fr/guide/iphone/iphcae7451f3/ios | |
 | Mindfulness app | l'app Pleine conscience | ah | |
@@ -238,7 +238,7 @@ Not checked: Magazines & Newspapers, Kids, other Games subcategories (Action, Ca
 | Report a Problem (feature name) | « Signaler un problème » | Apple's FR guides use "Signaler un problème avec une app" (Mac App Store guide, https://support.apple.com/fr-fr/guide/app-store/fir52b1849e1/mac) and "Signaler un problème avec un jeu" (iPhone guide TOC), but the reportaproblem.apple.com page itself is JavaScript only and Apple's refund article names only the URL |
 | Restore Purchases (in-app button) | « Restaurer les achats » | Apple writes "restaurer les achats" in running text (iPhone guide iphfe205f2e5), but the StoreKit button label is not documented on a French Apple page |
 | Universal Purchase | "Universal Purchase" (English kept) or "achat universel" | developer.apple.com/fr/... help pages 404; no French Apple page |
-| Cardio Fitness (feature label) | « Forme cardio » or "forme cardiaque" | Only the marketing page's "forme cardiaque" was found; no guide label |
+| Cardio Fitness (feature label) | « santé cardiovasculaire » | Resolved 2026-11-08 on support.apple.com/fr-fr/108790 |
 | Dynamic Type (developer term) | Dynamic Type (English kept) | HIG and developer docs are not localized; the user-facing settings are « Grande police » and « Tailles de police plus grandes » (verified) |
 | Feedback Assistant | Feedback Assistant | developer.apple.com/fr nav is English; no French name |
 | Family Controls (framework) | Family Controls (English kept); user-facing: contrôle parental | Developer docs are English only |
@@ -268,7 +268,7 @@ Not checked: Magazines & Newspapers, Kids, other Games subcategories (Action, Ca
 
 | English | French as Apple writes it | Source | Note |
 |---|---|---|---|
-| Sleep stages Awake / REM / Core / Deep | éveil / sommeil paradoxal / sommeil lent / sommeil profond | https://support.apple.com/fr-fr/guide/watch/apd830528336/watchos (checked 2026-11-08) | Observa's French UI says « Noyau » for Core (app string); site prose uses Apple's « sommeil lent » |
+| Sleep stages Awake / REM / Core / Deep | éveil / sommeil paradoxal / sommeil lent / sommeil profond | https://support.apple.com/fr-fr/108906 and https://support.apple.com/fr-fr/guide/watch/crpxel1lvun9/watchos (checked 2026-11-08; apd830528336 is the sleep-schedule page and has no stage names) | Observa's French UI says « Noyau » for Core (app string); site prose uses Apple's « sommeil lent » |
 | Ask to Buy | « Demander l’autorisation d’achat » | https://support.apple.com/fr-fr/105055 (checked 2026-11-08 by the privacy reviewer) | Not « Autorisation d’achat » |
 | App Privacy labels (product page) | « Données utilisées pour vous suivre », « Données établissant un lien avec vous », « Données n’établissant aucun lien avec vous »; purposes « Publicités tierces », « Publicités ou marketing du développeur », « Analyses », « Personnalisation du produit », « Fonctionnalité de l’app » | https://apps.apple.com/fr/app/id1550574178 and id526641427 (checked 2026-11-08 by the Tier 2 reviewer) | Never « liées / non liées à votre identité ». Editors' Choice: no French badge label verified; pages say « mis en avant par la rédaction de l’App Store » |
 | Stand hours | « heures debout » | https://support.apple.com/fr-fr/guide/watch/apd3bf6d85a6/watchos (checked 2026-11-08) | Health metrics post |
@@ -278,3 +278,6 @@ Not checked: Magazines & Newspapers, Kids, other Games subcategories (Action, Ca
 | Environmental sound levels | « Niveaux sonores ambiants » | https://support.apple.com/fr-fr/guide/watch/apd00a43a9cb/watchos (checked 2026-11-08) | Not « niveaux de bruit environnants » |
 | Wrist temperature | « Température au poignet » | https://support.apple.com/fr-fr/102674 (checked 2026-11-08) | |
 | Move ring measure (active energy) | « calories actives » | https://support.apple.com/fr-fr/guide/iphone/iph4c34a8a95/ios (checked 2026-11-08) | Apple's prose for the Move ring; the Health data-type label itself is not verified |
+
+| Camera app | « Appareil photo » (personal-safety guide ips0d7a5df82, Sept 2026) vs « Caméra » (iOS 27 iPhone guide iphcf0b71b0e) | both checked 2026-11-08 | Apple's own pages disagree; the metadata post follows its source page; ISSUES.md |
+| Resting / walking heart rate (Watch app) | « Au repos », « Moy. en marchant », « Plage » | https://support.apple.com/fr-fr/guide/watch/apda88aefe4c/watchos (checked 2026-11-08) | Use the current watchOS guide, not the versioned watchOS 8 URL |

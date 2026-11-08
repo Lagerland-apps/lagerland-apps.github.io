@@ -3,7 +3,7 @@ layout: app
 slug: aftershift
 ref: /apps/aftershift/
 permalink: /fr/apps/aftershift/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 og_tagline: "Sommeil et récupération d’un poste au suivant."
 tagline: "Le suivi du sommeil et de la récupération, calé sur votre planning de postes."
 quick_answer: "AfterShift est une application iPhone de sommeil et de récupération pour le travail posté et le travail de nuit : infirmiers, ambulanciers, pompiers, équipes d’usine et de logistique, et toute personne qui travaille de nuit, en rotation ou d’astreinte. Elle mesure votre sommeil d’un poste au suivant plutôt que de minuit à minuit, importe le sommeil depuis Apple Santé siestes comprises, remplit votre planning 8 semaines à l’avance à partir d’une rotation, et cale les rappels de détente, de limite de caféine et de sieste sur votre prochain poste. Tout cela est gratuit. Premium ({P_MONTHLY}/mois ou {P_YEARLY}/an, avec {TRIAL} pour chacun, ou {P_LIFETIME} en une fois) ajoute l’état de récupération, le score de sommeil, le score de récupération par postes et les tendances. Aucun compte, aucune publicité, et vos données ne partent jamais vers un serveur."
@@ -104,7 +104,7 @@ features:
   - title: "Le sommeil d’Apple Santé, siestes comprises"
     description: "Le sommeil de la nuit passée s’importe tout seul, même en arrière-plan, et les siestes sont repérées comme telles. Enregistrez une sieste vous-même, ou lancez depuis l’écran verrouillé un minuteur de sieste de 25 minutes qui l’enregistre quand vous l’arrêtez. Il faut une Apple Watch ou une app de sommeil qui enregistre le sommeil dans Apple Santé."
   - title: "Horaires de sommeil, phases et tendance de la dette"
-    description: "Chaque sommeil affiche le temps de sommeil et l’efficacité, plus les phases Éveillé, Léger, Profond et Paradoxal quand votre source de sommeil les enregistre. Un graphique de la dette de sommeil classe chaque cycle en Dette en hausse, Stable ou En récupération. Premium ajoute le score de sommeil, le score de récupération par postes, la continuité du sommeil et les tendances."
+    description: "Chaque sommeil affiche le temps de sommeil et l’efficacité, plus les phases Éveillé, Léger, Profond et Paradoxal quand votre source de sommeil les enregistre. Un graphique montre votre dette de sommeil moyenne par nuit sur vos 12 derniers cycles, avec la mention Dette en hausse, Stable ou En récupération. Premium ajoute le score de sommeil, le score de récupération par postes, la continuité du sommeil et les tendances."
   - title: "Faites ça maintenant"
     description: "Un scénario parmi 12 pour votre fenêtre actuelle, comme une fenêtre courte entre deux postes ou une nuit de travail qui approche, avec trois étapes et leur durée. Remplacez une étape qui ne vous convient pas. Les 21 techniques s’accompagnent d’explications pas à pas et d’un minuteur."
   - title: "Une limite de caféine qui s’adapte"
