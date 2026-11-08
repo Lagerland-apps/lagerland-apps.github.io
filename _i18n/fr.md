@@ -312,6 +312,12 @@ Found in the Tier 3 batch 1 reviews (2026-11-08): « vit dans votre profil » fo
 - The search form « Alternative X » (no « à ») is allowed in seo.title and seo.description, not in H1 or prose.
 - Local-only comparison: `/fr/alternatives/alternative-bankin/` (AllPaid vs Bankin’, Linxo as second example); competitor prices from the French store rows with the dated line; no security claims beyond the connection route (Bridge, ACPR) and the app lock; linked from the bill-tracker guide and the AllPaid FAQ.
 - The chess guide's « Comparaisons détaillées » line carries one English marker per link (it used a single probe on the Chess.com link).
+- Owner decisions, 2026-11-08 (on the batch's open questions):
+  - Opal: the US-listing-only claims (block screens with quotes, Sign in with Apple, the Family Sharing note) stay as
+    the English page states them, with the footnote naming which listing each comes from.
+  - Forest on Apple Vision stays off the French page while the French listing doesn't show it.
+  - Bankin’: keep the connection route (Bridge by Perspecteev, ACPR) and the app lock; nothing else about security.
+  - Gender confirmed: a brand name alone may be masculine (« EarnLock fonctionne-t-il »), « l’app X » is feminine.
 
 ## House rules carried over
 
