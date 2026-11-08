@@ -1,0 +1,167 @@
+---
+layout: default
+ref: /alternatives/
+permalink: /fr/alternatives/
+translated_from: 2026-11-07
+title: "Comparatifs"
+quick_answer: "Les comparatifs de Lagerland Apps mettent une de nos apps face à une app connue, expliquent ce qui les distingue vraiment et disent à qui chacune convient, y compris quand l’app connue est le meilleur choix. En français, ils couvrent RightSplit face à Tricount et à Splitwise, Chessful face à Chess.com et à Lichess, EarnLock face à Opal, à Forest et à one sec, Observa face à Whoop, LiftLog face à Hevy et AllPaid face à Bankin’ et à Linxo. Nous ne citons le prix d’une autre app que si nous l’avons vérifié dans l’App Store français, et la page donne la date de cette vérification."
+seo:
+  title: "Alternatives à Tricount, Splitwise, Opal, Hevy et Whoop"
+  description: "Comparatifs en français : quelle alternative à Tricount, Splitwise, Opal, Forest, Hevy, Whoop, Lichess ou Bankin’ choisir, et quand garder l’app connue."
+  keywords:
+    - alternative tricount
+    - alternative splitwise
+    - application comme opal
+    - alternative hevy
+    - alternative whoop
+    - alternative bankin
+    - alternative one sec
+    - alternative lichess
+last_updated: 2026-11-08
+---
+{%- include t.html -%}
+{%- assign fr_alt_count = site.pages | where: "lang", "fr" | where_exp: "p", "p.url contains '/fr/alternatives/'" | size | minus: 1 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/fr/alternatives/#webpage",
+  "url": "{{ site.url }}/fr/alternatives/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "fr",
+  "isPartOf": { "@id": "{{ site.url }}/fr/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Comparatifs", "item": "{{ site.url }}/fr/alternatives/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Comparatifs en français",
+    "numberOfItems": {{ fr_alt_count }},
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "url": "{{ site.url }}/fr/alternatives/whoop/", "name": "Alternative à Whoop : Observa" },
+      { "@type": "ListItem", "position": 2, "url": "{{ site.url }}/fr/alternatives/hevy/", "name": "Alternative à Hevy : LiftLog" },
+      { "@type": "ListItem", "position": 3, "url": "{{ site.url }}/fr/alternatives/opal/", "name": "Alternative à Opal : EarnLock" },
+      { "@type": "ListItem", "position": 4, "url": "{{ site.url }}/fr/alternatives/forest/", "name": "Alternative à Forest : EarnLock" },
+      { "@type": "ListItem", "position": 5, "url": "{{ site.url }}/fr/alternatives/one-sec/", "name": "Alternative à one sec : EarnLock" },
+      { "@type": "ListItem", "position": 6, "url": "{{ site.url }}/fr/alternatives/tricount/", "name": "Alternative à Tricount : RightSplit" },
+      { "@type": "ListItem", "position": 7, "url": "{{ site.url }}/fr/alternatives/splitwise/", "name": "Alternative à Splitwise : RightSplit" },
+      { "@type": "ListItem", "position": 8, "url": "{{ site.url }}/fr/alternatives/alternative-bankin/", "name": "Alternative à Bankin’ : AllPaid" },
+      { "@type": "ListItem", "position": 9, "url": "{{ site.url }}/fr/alternatives/chess-com/", "name": "Alternative à l’analyse de Chess.com : Chessful" },
+      { "@type": "ListItem", "position": 10, "url": "{{ site.url }}/fr/alternatives/lichess/", "name": "Alternative à Lichess : Chessful" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Comparatifs honnêtes · {{ fr_alt_count }} pages en français</p>
+    <h1 class="h1">Alternatives aux<br><span class="gradient-text">apps connues.</span></h1>
+    <p class="lead">Chaque page met une app de Lagerland Apps face à une app connue, explique ce qui diffère vraiment et vous dit quand l’app connue est le meilleur choix.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Par thème</p>
+    <h2 class="h2">Tous les comparatifs en français</h2>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Sommeil et récupération</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/fr/alternatives/whoop/">
+        <span class="pill">Forme et santé</span>
+        <h3 class="card-compared-title">Observa <span class="card-compared-vs">{{ t.alt_vs }}</span> Whoop</h3>
+        <p class="card-text">Observa vous donne chaque matin un score de disponibilité tiré du sommeil, de la VFC et de la fréquence cardiaque au repos que votre Apple Watch enregistre déjà dans Apple Santé, sans second bracelet et sans abonnement obligatoire. Whoop convient mieux si vous voulez un capteur dédié et un coaching dans le cloud.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Musculation</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/fr/alternatives/hevy/">
+        <span class="pill">Forme et santé</span>
+        <h3 class="card-compared-title">LiftLog <span class="card-compared-vs">{{ t.alt_vs }}</span> Hevy</h3>
+        <p class="card-text">Un carnet de musculation pour s’entraîner en solo, sans compte ni fil social, avec 40 programmes prêts à l’emploi qui peuvent suggérer votre prochaine charge. Essai gratuit de 7 jours, puis un achat unique, sans abonnement. Hevy convient mieux pour enregistrer vos séries sur l’Apple Watch ou vous entraîner avec des amis.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Temps d’écran</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/fr/alternatives/opal/">
+        <span class="pill">Temps d’écran</span>
+        <h3 class="card-compared-title">EarnLock <span class="card-compared-vs">{{ t.alt_vs }}</span> Opal</h3>
+        <p class="card-text">EarnLock garde bloquées les apps que vous choisissez jusqu’à ce qu’Apple Santé montre que vous avez atteint votre objectif d’activité du jour, et la moitié de l’objectif les ouvre déjà pour une heure. Bloquer une app est gratuit pour toujours. Opal convient mieux si les sessions de concentration et le blocage des sites web passent avant tout.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/forest/">
+        <span class="pill">Temps d’écran</span>
+        <h3 class="card-compared-title">EarnLock <span class="card-compared-vs">{{ t.alt_vs }}</span> Forest</h3>
+        <p class="card-text">Forest fait pousser un arbre virtuel pendant vos sessions de concentration et peut bloquer des apps le temps d’une session ou selon un horaire. Avec EarnLock, les apps que vous choisissez restent bloquées tant qu’Apple Santé ne montre pas que vous avez bougé. Pour un minuteur de concentration ou la plantation de vrais arbres, Forest convient mieux.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/one-sec/">
+        <span class="pill">Temps d’écran</span>
+        <h3 class="card-compared-title">EarnLock <span class="card-compared-vs">{{ t.alt_vs }}</span> one sec</h3>
+        <p class="card-text">one sec place une respiration avant l’ouverture d’une app, puis vous laisse continuer. EarnLock garde l’app bloquée jusqu’à ce que vous atteigniez votre objectif d’activité du jour, avec un déverrouillage d’urgence protégé par un calcul, une fois par jour. Si une pause vous suffit, one sec est l’outil le plus léger.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Partager l’addition et suivre ses factures</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/fr/alternatives/tricount/">
+        <span class="pill">Finance</span>
+        <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Tricount</h3>
+        <p class="card-text">Tricount tient les comptes d’un voyage que tout le groupe alimente. RightSplit règle une seule addition : vous scannez le ticket, et chacun reçoit son montant avec un lien de paiement, sans groupe ni compte à créer.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/splitwise/">
+        <span class="pill">Finance</span>
+        <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Splitwise</h3>
+        <p class="card-text">Vous scannez le ticket, vous touchez qui a pris quoi, et chacun reçoit son montant avec un lien de paiement. Personne n’a de compte à créer, et le partage par articles fait partie de Pro+. Pour un registre que tout le groupe alimente dans la durée, Splitwise reste le bon outil.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/alternative-bankin/">
+        <span class="pill">Finance</span>
+        <h3 class="card-compared-title">AllPaid <span class="card-compared-vs">{{ t.alt_vs }}</span> Bankin’</h3>
+        <p class="card-text">AllPaid vous rappelle chaque échéance et chaque fin de contrat, sans accès à vos comptes bancaires ni compte à créer. Si vous voulez des comptes synchronisés, des dépenses classées automatiquement et des budgets par catégorie, Bankin’ est le meilleur choix. La page compare aussi Linxo, qui se connecte elle aussi à vos comptes.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Échecs</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/fr/alternatives/chess-com/">
+        <span class="pill">Jeux de société</span>
+        <h3 class="card-compared-title">Chessful <span class="card-compared-vs">{{ t.alt_vs }}</span> Chess.com</h3>
+        <p class="card-text">Importez vos parties Chess.com en PGN : Stockfish vérifie chaque coup sur votre appareil, hors ligne et sans compte, et chaque erreur est expliquée en langage clair. Chessful n’a pas de jeu en ligne : gardez Chess.com pour jouer contre d’autres joueurs.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/lichess/">
+        <span class="pill">Jeux de société</span>
+        <h3 class="card-compared-title">Chessful <span class="card-compared-vs">{{ t.alt_vs }}</span> Lichess</h3>
+        <p class="card-text">Chessful analyse vos parties Lichess hors ligne, explique chaque erreur en langage clair et fait de vos erreurs votre entraînement du jour, sans compte. Pour jouer contre d’autres joueurs, gardez Lichess.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+</section>

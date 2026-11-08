@@ -13,6 +13,7 @@ reviewing any French page. Every decision a translator would otherwise make diff
 | Live | yes, `live: true` since 2026-11-08 (Tier 1; go-live commit not yet pushed) |
 | Tier 2, batch 1 | written and integrated 2026-11-08, no native review yet: hubs /fr/guides/ and /fr/for/; guides best-chess-apps-iphone, best-logic-puzzle-games-iphone, workout-app-without-subscription, best-shogi-apps-iphone, best-xiangqi-apps-iphone; for/shift-workers, for/apple-health-power-users, for/calm-productivity. Not yet: guides/bill-tracker-without-bank-connection (low demand; its US apps Rocket Money, Monarch and Copilot are not sold in France, needs a Bankin'/Linxo rewrite) and for/indie-ios-developers (French developers search in English). Research and French-store check of every named competitor: ~/Downloads/githubcode/fr-tier2-research-2026-11-08.md. Stale check before the batch: 0 French pages stale |
 | Tier 2, batch 2 | written and integrated 2026-11-08, no native review yet: guides/bill-tracker-without-bank-connection (local rewrite: Bankin’ and Linxo replace Rocket Money, Truebill, Copilot and Monarch, which are not sold in France) and the first two local-only pages (6.7), /fr/guides/application-compte-a-rebours-iphone/ (Soon.) and /fr/guides/limiter-temps-ecran-iphone/ (EarnLock). for/indie-ios-developers stays English-only (no French demand). Tier 2 is complete for French. Research: ~/Downloads/githubcode/fr-tier2-batch2-research-2026-11-08.md. Stale check before the batch: 0 French pages stale |
+| Tier 3, batch 1 | written and integrated 2026-11-08, no native review yet: hub /fr/alternatives/ and nine comparisons tricount, splitwise (RightSplit); chess-com, lichess (Chessful); opal, forest, one-sec (EarnLock); whoop (Observa); hevy (LiftLog); plus the local-only /fr/alternatives/alternative-bankin/ (AllPaid vs Bankin’ and Linxo). Demand research over all 123 English comparisons: ~/Downloads/githubcode/fr-tier3-research-2026-11-08.md (next batch listed there); French store check of each competitor (IAP rows, full French descriptions): ~/Downloads/githubcode/fr-tier3-store-2026-11-08.md. Stale check before the batch: 0 French pages stale |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 56 s before French (2026-11-07), 80 s with French Tier 1 (2026-11-08, clean run, `--profile`). Hot spot: `_includes/tx-app.html` 44 s over 968 calls, then footer 30 s: each new language makes it worse; worth a map lookup before the next language |
 
@@ -183,6 +184,17 @@ and the App Store. Revisit 4 to 6 weeks after go-live with the page filter `/fr/
 | /fr/guides/bill-tracker-without-bank-connection/ | `application de gestion des abonnements` | `gérer mes abonnements iphone`, `application gestion budget sans banque`, `app suivi abonnements` |
 | /fr/guides/application-compte-a-rebours-iphone/ (local-only) | `application compte à rebours` | `widget compte à rebours iphone`, `meilleure application compte à rebours`, `application compte à rebours vacances` / `retraite` / `voyage` |
 | /fr/guides/limiter-temps-ecran-iphone/ (local-only) | `application pour limiter le temps d’écran iphone` | `réduire temps d’écran iphone`, `bloquer application iphone`, `application pour bloquer les réseaux sociaux` (child and parental-control intent is out of scope, said on the page) |
+| /fr/alternatives/ (hub) | none of its own (brand names list) | the primaries of its pages |
+| /fr/alternatives/tricount/ | `alternative tricount` | `alternative à tricount`, `application comme tricount`, `partager l’addition` |
+| /fr/alternatives/splitwise/ | `alternative splitwise` | `splitwise gratuit`, `splitwise ou tricount` |
+| /fr/alternatives/chess-com/ | `analyse partie chess.com gratuit` | `chess com analyse gratuite`, `chess.com gratuit ou payant`, `alternative chess.com` |
+| /fr/alternatives/lichess/ | `lichess ou chess.com` | `alternative lichess`, `lichess analyse` (overlaps the chess guide's secondary `chess.com ou lichess`) |
+| /fr/alternatives/opal/ | `application comme opal` | `alternative opal`, `opal app blocker`, `bloquer applications iphone` |
+| /fr/alternatives/forest/ | `alternative forest` | `forest application gratuite`, `application comme forest` |
+| /fr/alternatives/one-sec/ | `alternative one sec` | `application comme one sec`, `one sec app` |
+| /fr/alternatives/whoop/ | `alternative whoop sans abonnement` (Observa is never « sans abonnement »: titles say « sans abonnement obligatoire ») | `alternative à whoop`, `alternative whoop apple watch` |
+| /fr/alternatives/hevy/ | `alternative hevy` | `hevy app prix`, `application musculation sans abonnement` |
+| /fr/alternatives/alternative-bankin/ (local-only) | `alternative bankin` | `alternative à bankin`, `application budget sans connexion bancaire`, `application gestion budget sans banque` |
 
 Wording rules from the research: « application » beats « appli » and « app » in searches, so titles and H1 use
 « application »; body copy may say « app ». Privacy is searched as « sans pub », « sans publicité », rarely
@@ -196,6 +208,11 @@ manifest. Google often returns unaccented forms; pages write the accented French
 
 Seen in French App Store results and suggestions (per app in fr-keywords.md): to be checked for availability and
 prices in the French storefront before any comparison page is written (TRANSLATION.md 6.4).
+
+Checked 2026-11-08 (fr-tier3-store-2026-11-08.md): Bankin’ (447040033, ★92 652 FR) and Linxo (440509306, ★11 508)
+are the French bank-linked budget apps (local-only page done). Splid (991473495, ★2 325 FR, « Partager vos dépenses »)
+is a French-market Tricount-style splitter with no English page: a possible local-only candidate later. Tricount
+(★98 114) dwarfs Splitwise (★495) in France.
 
 ## Open questions (English site vs app, found while building the glossary)
 
@@ -245,6 +262,8 @@ Found in the Tier 2 reviews (2026-11-08): « sans paywall » (write « sans fonc
 
 Found in the Tier 2 batch 2 review (2026-11-08): « le point de … est ailleurs » for "the point is"; « X n’est pas le bon choix : Y l’est » (English verb ellipsis); literal spatial metaphors (« l’effort tombe hors de l’écran »); « (en anglais) » after a product name to mean an English-only interface (readers take it for the link marker: write « dont l’interface est en anglais »); punctuation added inside a quoted competitor string; bold verdict labels (« À choisir si ») on every card (write « Convient surtout si », no bold); « y » after a sentence that names two places; feature counts that contradict each other across quick_answer, hero and section (« trois points » / « Cinq critères »).
 
+Found in the Tier 3 batch 1 reviews (2026-11-08): « vit dans votre profil » for "lives in" (« est conservé dans »); « ses … » and « votre … » in one sentence; card titles that make the product the object of « vouloir » (« Convient surtout si vous voulez Chessful »: write « Chessful convient surtout si… »); « vrai échiquier » (« échiquier physique »); « contre des personnes » (« contre d’autres joueurs »); « Où tourne le moteur » in a heading (« Où s’exécute »); a widened claim (« réserve l’accès complet ») where English scopes it to one feature; gendered words in vous sentences: « vous vous entraînez seul » (« en solo »), « vous seul avez besoin de l’app » (« l’app n’est nécessaire que sur votre téléphone »), « être prévenu », « vous auriez été bloqué » (« les blocages que vous auriez rencontrés »), « Prêt à essayer ? » (« À essayer »), « lequel vous convient ? » about apps (« quelle app choisir ? »); a competitor treated as masculine next to a feminine « l’app » (« Hevy est gratuit »: « L’app Hevy est gratuite »); « faire bouger un score » (« faire varier »); « Comment X se compare-t-il à Y ? » (« X et Y : le comparatif »); « quoi que ce soit soit »; « à partir de » before a single price; « compte courant » or « solde courant » for a running tab (reads as a bank account: « solde commun »); « En partie » as the answer to "is X free?" for a free app with paid options; « chez vous » for "in your own country" (« près de chez vous »); « l’addition que vous avez sous les yeux » (« posée sur la table »); « d’une seule traite »; size adjectives on competitors without a source (« l’autre grande app »); « Les offres changent : vérifiez-les avant de changer » (« évoluent »); « ça marche » in FAQ answers; verb-less negation lists. Process tells: a competitor's exception repeated in every row (state it once, close to the store's wording); a footnote that credits the French store check with claims only the US listing supports (name both checks); quoting a competitor's button label the research doesn't show; store-description facts used to explain a missing price; two "effort" metrics on one page (add « (Strain) » to Whoop's every time). Hub and llms tells (R-wiring): « D’autres X existent en anglais : … (en anglais) » (language stated twice); a quick_answer opening on « Ces comparatifs » (nothing to point back to); « et plus » after a list of names in a title; the same verdict phrase on every hub card (vary « convient mieux », « reste le bon outil »); a verbless noun list for a workflow.
+
 ## Decisions from the Tier 1 reviews (2026-11-08)
 
 - Apple's sleep stages in prose: éveil, sommeil paradoxal, sommeil lent, sommeil profond (Apple FR). Observa's UI label « Noyau » is not used in prose; AfterShift quotes its own UI labels (Éveillé, Léger, Profond, Paradoxal).
@@ -284,6 +303,16 @@ Found in the Tier 2 batch 2 review (2026-11-08): « le point de … est ailleurs
 - Apple Screen Time in iOS 27: « Temps accordés » (how long per day, the old App Limits) and « Programme de temps d’écran » (when, the old
   Downtime), checked against support.apple.com/en-us/guide/iphone/iphb0c7313c9/ios on 2026-11-08. Old names only « sur iOS 18 et versions antérieures ».
 
+## Decisions from Tier 3 batch 1 (2026-11-08)
+
+- Comparison pages: `isPartOf` `{{ site.url }}/fr/#website`; breadcrumb « Lagerland Apps » → « Comparatifs » (/fr/alternatives/) → the page `title`; `inLanguage: "fr"` on every JSON-LD block. The hub lists only the French pages and links the English hub with a plain href, hreflang="en" and the marker.
+- Competitor facts: French store rows and descriptions replace US-store facts; a US-only claim the French store doesn't show is kept as English states it, and the footnote names both checks (US listing with its English date, French listing on 8 November 2026). One competitor French rating count per page, dated. One « X existe-t-il en français ? » FAQ allowed, answered from the store language list.
+- No EUR amount where English gives none (Tricount, Splitwise, Chess.com, Lichess, one sec, Whoop). Whoop's membership: no amount and no claim about where it is sold; the footnote states only what the store shows (free app, no in-app purchase listed).
+- Gender: a brand name used alone may be masculine (« EarnLock fonctionne-t-il », as the French app pages write it); « l’app X » is always feminine; never both for one app in one sentence.
+- The search form « Alternative X » (no « à ») is allowed in seo.title and seo.description, not in H1 or prose.
+- Local-only comparison: `/fr/alternatives/alternative-bankin/` (AllPaid vs Bankin’, Linxo as second example); competitor prices from the French store rows with the dated line; no security claims beyond the connection route (Bridge, ACPR) and the app lock; linked from the bill-tracker guide and the AllPaid FAQ.
+- The chess guide's « Comparaisons détaillées » line carries one English marker per link (it used a single probe on the Chess.com link).
+
 ## House rules carried over
 
 - No dashes; no roadmaps or dated promises; prices, counts, platforms and dates only through tokens and includes.
@@ -312,6 +341,8 @@ Found in the Tier 2 batch 2 review (2026-11-08): « le point de … est ailleurs
 | /fr/llms.txt Tier 2 lines, Shogiful Shogi Wars note, LiftLog and Xiangqiful guide links | main session | reviewer R-wiring 2026-11-08 | n/a | no native review yet |
 | Tier 2 batch 2: bill-tracker guide, two local-only guides | one writer agent (Sonnet) each | reviewer R-b2 2026-11-08: 18 must-fix, 41 should-fix (Soon. ratings statements removed, iOS 27 Screen Time names, Forest claim corrected, platform token replaced in prose); competitor facts against the full French store descriptions | n/a (Tier 2) | no native review yet |
 | /fr/guides/ hub (3 cards), /fr/llms.txt (3 routing lines), llms-full intro, AllPaid/Soon./EarnLock FAQ links, AllPaid FAQ fixes | main session | reviewer R-b2 2026-11-08: 1 must-fix (numberOfItems), 5 should-fix | n/a | no native review yet |
+| Tier 3 batch 1: 9 comparisons + local-only Bankin’ page | one writer agent (Sonnet) each | reviewers R-money, R-chess, R-screen, R-fit 2026-11-08 (copy-editing, fact diff against English and the French store check, glossary, SEO/schema): 64 must-fix in all, e.g. Venmo and « ni abonnement » restored on Tricount, Whoop « sold outside the App Store » and sensor claims removed, Forest partner name and Vision removed, Opal Concentration profonde stated once, Chess.com cloud claim scoped to Game Review, isPartOf unified | n/a (Tier 3) | no native review yet |
+| /fr/alternatives/ hub, /fr/llms.txt (10 routing lines, query moves), RightSplit/AllPaid FAQ links, bill-tracker and chess guide links | hub and llms lines: writer agent (Sonnet); links: main session | reviewer R-wiring 2026-11-08 | n/a | no native review yet |
 
 ## Apps still on English screenshots
 

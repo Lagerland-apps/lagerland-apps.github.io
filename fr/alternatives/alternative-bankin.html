@@ -1,0 +1,181 @@
+---
+layout: default
+local_only: true
+permalink: /fr/alternatives/alternative-bankin/
+title: "Alternative à Bankin’ sans connexion bancaire"
+quick_answer: "AllPaid est une alternative à Bankin’ pour qui ne veut pas relier ses comptes bancaires à une app juste pour penser à ses factures et à ses contrats. Bankin’ se connecte à vos comptes via Bridge (Perspecteev) pour synchroniser vos dépenses et les classer par catégories. AllPaid part des factures que vous saisissez vous-même : elle vous rappelle chaque échéance à 9 h et vous prévient avant la fin d’un contrat reconduit automatiquement, sans compte à créer. Elle est gratuite jusqu’à 3 factures, et Pro existe aussi en achat unique. Si vous voulez que tous vos comptes soient synchronisés et vos dépenses classées automatiquement, avec des budgets par catégorie, Bankin’ est le meilleur choix."
+seo:
+  title: "Alternative Bankin’ sans connexion bancaire : AllPaid"
+  description: "Alternative Bankin’ pour vos factures : AllPaid vous rappelle chaque échéance et chaque fin de contrat, sans accès à vos comptes ni compte à créer."
+  keywords:
+    - alternative bankin
+    - alternative à bankin
+    - bankin alternative
+    - application budget sans connexion bancaire
+    - application gestion budget sans banque
+    - application rappel factures sans banque
+    - bankin ou allpaid
+    - bankin avis
+last_updated: 2026-11-08
+---
+{%- include t.html -%}
+{%- assign app = site.apps | where: "slug", "allpaid" | first -%}
+{%- include app-facts.html app=app -%}
+{%- assign ap_devices = f_platforms_and | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Apple Watch" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/fr/alternatives/alternative-bankin/#webpage",
+  "url": "{{ site.url }}/fr/alternatives/alternative-bankin/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/fr/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "fr",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Comparatifs", "item": "{{ site.url }}/fr/alternatives/" },
+      { "@type": "ListItem", "position": 3, "name": "Alternative à Bankin’ sans connexion bancaire", "item": "{{ site.url }}/fr/alternatives/alternative-bankin/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "fr",
+  "mainEntity": [
+    { "@type": "Question", "name": "Quelle alternative à Bankin’ choisir sans connexion bancaire ?", "acceptedAnswer": { "@type": "Answer", "text": "Si c’est la connexion à vos comptes qui vous retient, AllPaid convient. Vous saisissez une fois vos factures, abonnements et contrats, et AllPaid vous rappelle chaque échéance à 9 h, ainsi que chaque fin de contrat. Tout reste sur vos appareils, sauf si vous activez la synchronisation iCloud (Pro), qui passe par votre propre iCloud privé. Il n’y a pas de compte à créer." } },
+    { "@type": "Question", "name": "Pourquoi Bankin’ demande-t-elle l’accès à mes comptes bancaires ?", "acceptedAnswer": { "@type": "Answer", "text": "Parce que son principe est de synchroniser vos dépenses et de les classer automatiquement par catégories, ce qui suppose de se connecter à vos comptes. D’après sa fiche dans l’App Store, Bankin’ y accède en tant qu’agent de Perspecteev (Bridge), agréée par l’ACPR, et se connecte à plus de 350 banques dans quatre pays. Si vous ne voulez pas donner cet accès, l’autre voie est la saisie à la main, et c’est ainsi que fonctionne AllPaid." } },
+    { "@type": "Question", "name": "AllPaid demande-t-elle mes identifiants bancaires ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. AllPaid ne se connecte à aucune banque, n’utilise aucun service d’agrégation de comptes et ne vous demande jamais d’identifiants bancaires. Vous ajoutez chaque facture vous-même. Quand vous tapez un nom connu comme Netflix, AllPaid propose la catégorie et la fréquence, et le montant est facultatif." } },
+    { "@type": "Question", "name": "AllPaid retrouve-t-elle les abonnements que j’ai oubliés ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. AllPaid ne connaît que les factures que vous saisissez, car elle ne lit ni votre banque ni vos e-mails. Repérer les prélèvements oubliés dans vos opérations, c’est le travail des apps reliées à la banque. Pour commencer sans connexion bancaire, parcourez une fois un ou deux relevés, ajoutez chaque prélèvement récurrent dans AllPaid, puis laissez les rappels prendre le relais." } },
+    { "@type": "Question", "name": "Combien coûtent Bankin’ et AllPaid ?", "acceptedAnswer": { "@type": "Answer", "text": "Bankin’ est gratuite au téléchargement, avec des achats intégrés : Bankin’ Plus à 4,99 € par mois ou 39,99 € par an, et Bankin’ Pro à 19,99 € par mois ou 99,99 € par an (prix vérifiés dans l’App Store français le 8 novembre 2026). AllPaid est gratuite jusqu’à 3 factures, avec les rappels, les dates de fin de contrat, l’aperçu des dépenses, les dix widgets et le verrouillage de l’app. Pro ajoute les factures illimitées, plusieurs rappels par facture, l’analyse des dépenses, l’historique des paiements et la synchronisation iCloud, pour {P_MONTHLY@allpaid}/mois ou {P_YEARLY@allpaid}/an, ou en achat unique à {P_LIFETIME@allpaid}. Chaque offre Pro se partage avec cinq membres de la famille au maximum grâce au partage familial." } },
+    { "@type": "Question", "name": "AllPaid peut-elle remplacer Bankin’ pour gérer mon budget ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. AllPaid suit les factures, les abonnements et les contrats, pas votre budget : elle n’a ni budgets par catégorie, ni suivi des revenus, ni soldes de comptes, et elle ne classe pas vos opérations. Pour une gestion de budget complète, Bankin’ ou Linxo, qui se connectent à vos comptes, conviennent mieux." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Factures et contrats · Sans connexion bancaire · Sans compte</p>
+    <h1 class="h1">Une alternative à Bankin’<br><span class="gradient-text">sans accès à vos comptes bancaires.</span></h1>
+    <p class="lead">
+      Bankin’ se connecte à vos comptes pour synchroniser vos dépenses et les classer automatiquement. AllPaid, une application de rappel de factures pour {{ ap_devices }}, part des factures que vous saisissez vous-même. Elle vous rappelle chaque échéance à 9 h, vous prévient avant qu’un contrat de téléphone ou d’assurance ne se renouvelle, et garde vos factures sur vos appareils, où Face ID peut les verrouiller.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/fr/apps/allpaid/">Découvrir AllPaid</a>
+      <a class="btn btn-secondary" href="#compare">Comparer</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section id="compare" class="section reveal">
+  <h2 class="h2">AllPaid et Bankin’ : quelles différences ?</h2>
+  <p class="lead">Les deux apps ne reçoivent pas vos factures de la même façon, et chaque méthode a un prix.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Comment les factures arrivent dans l’app</div>
+      <div class="card-text"><strong>AllPaid :</strong> vous ajoutez chaque facture une fois, avec son échéance et sa fréquence ; le montant est facultatif. Tapez un nom connu et AllPaid propose la catégorie et la fréquence.<br><br><strong>Bankin’ :</strong> vous reliez vos comptes, parmi plus de 350 banques dans quatre pays (France, Royaume-Uni, Espagne et Allemagne) selon sa fiche. Elle synchronise et classe automatiquement vos dépenses (loyer, courses, transports, impôts, restaurants…), y compris celles de comptes ouverts dans des banques différentes.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Rappels et fin de contrat</div>
+      <div class="card-text"><strong>AllPaid :</strong> un rappel à 9 h avant chaque échéance, avec « Marquer comme payée » et « Rappeler demain » directement dans la notification. Un contrat a une date de fin, une option de reconduction automatique, le montant du renouvellement et un rappel avant sa fin.<br><br><strong>Bankin’ :</strong> les notifications que décrit sa fiche portent sur les dépenses inhabituelles et sur un découvert à venir, avec une prévision de votre solde de fin de mois.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Budget et économies</div>
+      <div class="card-text"><strong>AllPaid :</strong> l’aperçu des dépenses montre ce que coûtent vos factures par mois et par an, par facture et par catégorie. Elle ne gère pas de budget.<br><br><strong>Bankin’ :</strong> un budget par catégories de dépenses, des graphiques interactifs et des pistes d’économies proposées par ses coachs (internet et téléphone, énergie, frais bancaires, crédits, épargne, assurances).</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Confidentialité</div>
+      <div class="card-text"><strong>AllPaid :</strong> aucun compte à créer, et l’app n’embarque ni publicité, ni outil d’analyse, ni SDK tiers. Les factures restent sur vos appareils ; la synchronisation iCloud (Pro), facultative, passe par votre propre iCloud privé. Le verrouillage de l’app demande Face ID, Touch ID ou votre code. <a href="/fr/transparency/#allpaid">Voir la fiche AllPaid sur la page Transparence</a><br><br><strong>Bankin’ :</strong> pour fonctionner, elle a besoin d’un accès à vos comptes, qui passe par Bridge (Perspecteev), agréée par l’ACPR. Sa fiche décrit aussi un verrouillage de l’app par code PIN, empreinte digitale ou reconnaissance faciale.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Prix</div>
+      <div class="card-text"><strong>AllPaid :</strong> gratuite jusqu’à 3 factures ; Pro à {P_MONTHLY@allpaid}/mois, {P_YEARLY@allpaid}/an ou {P_LIFETIME@allpaid} une fois, à partager avec cinq membres de la famille au maximum grâce au partage familial.<br><br><strong>Bankin’ :</strong> gratuite au téléchargement, avec des achats intégrés : Bankin’ Plus à 4,99 € par mois ou 39,99 € par an, et Bankin’ Pro à 19,99 € par mois ou 99,99 € par an.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Ce qui manque à AllPaid</div>
+      <div class="card-text">AllPaid n’a ni budgets, ni suivi des revenus, ni export, ni conversion de devises, et elle n’affiche pas le solde de vos comptes. Si vous voulez tout cela à côté de vos factures, Bankin’ ou une autre app de budget reliée à la banque en fait davantage.</div>
+    </div>
+  </div>
+  <p class="small">Informations sur Bankin’ (« Bankin’ - Gérer son budget », de BANKIN SAS, <a href="https://apps.apple.com/fr/app/id447040033" rel="noopener" target="_blank">apps.apple.com/fr/app/id447040033</a>) : fiche, prix et nombre de notes (92 652 notes en France) vérifiés dans l’App Store français le 8 novembre 2026. L’App Store liste plusieurs lignes « Plus » et « Plus+ » aux mêmes montants. Les prix évoluent : vérifiez-les avant d’acheter.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Et Linxo, l’autre app de budget reliée à la banque ?</h2>
+  <p class="lead">Linxo fonctionne comme Bankin’ : elle a besoin d’un accès à vos comptes. Les mêmes différences avec AllPaid s’appliquent.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Ce que fait Linxo</div>
+      <div class="card-text">Elle se synchronise chaque jour avec près de 320 banques et types de comptes, classe automatiquement vos opérations par catégories et repère vos opérations récurrentes. Linxo présente sa technologie comme agréée par la Banque de France.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Ce qu’elle coûte</div>
+      <div class="card-text">Elle est gratuite au téléchargement. Linxo Premium, à 5,99 € par mois ou 47,99 € par an, ajoute la prévision du solde sur 30 jours glissants, des recherches illimitées dans le temps et des catégories personnalisées.</div>
+    </div>
+  </div>
+  <p class="small">Informations sur Linxo (« Linxo - L’app n°1 de budget », de Linxo Group SAS, <a href="https://apps.apple.com/fr/app/id440509306" rel="noopener" target="_blank">apps.apple.com/fr/app/id440509306</a>) : fiche, prix et nombre de notes (11 508 notes en France) vérifiés dans l’App Store français le 8 novembre 2026. Notre <a href="{% include l.html url="/guides/bill-tracker-without-bank-connection/" %}"{% if l_en %} hreflang="en"{% endif %}>guide pour gérer factures et abonnements sans connexion bancaire{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> compare AllPaid à Bankin’ et à Linxo.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">AllPaid ou Bankin’ : quelle app choisir ?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">AllPaid convient surtout si…</div>
+      <ul class="bullets">
+        <li>vous ne voulez donner vos identifiants bancaires à aucune app de finances</li>
+        <li>vous connaissez déjà vos factures (loyer, charges, assurances, abonnements) et voulez des rappels sur lesquels compter</li>
+        <li>vous voulez un rappel avant qu’un contrat de téléphone, d’internet ou d’assurance ne se renouvelle à un nouveau prix</li>
+        <li>vous préférez payer Pro une seule fois plutôt que de souscrire un abonnement de plus</li>
+        <li>vos factures doivent rester sur vos appareils, sans compte à créer</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Bankin’ convient mieux si…</div>
+      <ul class="bullets">
+        <li>vous voulez que toutes vos dépenses soient synchronisées et classées automatiquement, comptes de plusieurs banques compris</li>
+        <li>vous voulez fixer des budgets par catégorie de dépenses</li>
+        <li>vous voulez une prévision de votre solde de fin de mois et une alerte avant un découvert</li>
+        <li>vous avez déjà relié vos comptes et ce fonctionnement vous convient</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% if app %}
+<section class="section reveal">
+  <h2 class="h2">À propos d’AllPaid</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Questions</p><h2 class="h2">Questions fréquentes</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Quelle alternative à Bankin’ choisir sans connexion bancaire ?</summary><div class="faq-a">Si c’est la connexion à vos comptes qui vous retient, AllPaid convient. Vous saisissez une fois vos factures, abonnements et contrats, et AllPaid vous rappelle chaque échéance à 9 h, ainsi que chaque fin de contrat. Tout reste sur vos appareils, sauf si vous activez la synchronisation iCloud (Pro), qui passe par votre propre iCloud privé. Il n’y a pas de compte à créer.</div></details>
+    <details class="faq-item"><summary>Pourquoi Bankin’ demande-t-elle l’accès à mes comptes bancaires ?</summary><div class="faq-a">Parce que son principe est de synchroniser vos dépenses et de les classer automatiquement par catégories, ce qui suppose de se connecter à vos comptes. D’après sa fiche dans l’App Store, Bankin’ y accède en tant qu’agent de Perspecteev (Bridge), agréée par l’ACPR, et se connecte à plus de 350 banques dans quatre pays. Si vous ne voulez pas donner cet accès, l’autre voie est la saisie à la main, et c’est ainsi que fonctionne AllPaid.</div></details>
+    <details class="faq-item"><summary>AllPaid demande-t-elle mes identifiants bancaires ?</summary><div class="faq-a">Non. AllPaid ne se connecte à aucune banque, n’utilise aucun service d’agrégation de comptes et ne vous demande jamais d’identifiants bancaires. Vous ajoutez chaque facture vous-même. Quand vous tapez un nom connu comme Netflix, AllPaid propose la catégorie et la fréquence, et le montant est facultatif.</div></details>
+    <details class="faq-item"><summary>AllPaid retrouve-t-elle les abonnements que j’ai oubliés ?</summary><div class="faq-a">Non. AllPaid ne connaît que les factures que vous saisissez, car elle ne lit ni votre banque ni vos e-mails. Repérer les prélèvements oubliés dans vos opérations, c’est le travail des apps reliées à la banque. Pour commencer sans connexion bancaire, parcourez une fois un ou deux relevés, ajoutez chaque prélèvement récurrent dans AllPaid, puis laissez les rappels prendre le relais. Notre article <a href="{% include l.html url="/journal/find-every-recurring-charge/" %}"{% if l_en %} hreflang="en"{% endif %}>pour retrouver chaque prélèvement récurrent sans relier de compte bancaire{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> donne la liste des vérifications à faire.</div></details>
+    <details class="faq-item"><summary>Combien coûtent Bankin’ et AllPaid ?</summary><div class="faq-a">Bankin’ est gratuite au téléchargement, avec des achats intégrés : Bankin’ Plus à 4,99 € par mois ou 39,99 € par an, et Bankin’ Pro à 19,99 € par mois ou 99,99 € par an (prix vérifiés dans l’App Store français le 8 novembre 2026). AllPaid est gratuite jusqu’à 3 factures, avec les rappels, les dates de fin de contrat, l’aperçu des dépenses, les dix widgets et le verrouillage de l’app. Pro ajoute les factures illimitées, plusieurs rappels par facture, l’analyse des dépenses, l’historique des paiements et la synchronisation iCloud, pour {P_MONTHLY@allpaid}/mois ou {P_YEARLY@allpaid}/an, ou en achat unique à {P_LIFETIME@allpaid}. Chaque offre Pro se partage avec cinq membres de la famille au maximum grâce au partage familial.</div></details>
+    <details class="faq-item"><summary>AllPaid peut-elle remplacer Bankin’ pour gérer mon budget ?</summary><div class="faq-a">Non. AllPaid suit les factures, les abonnements et les contrats, pas votre budget : elle n’a ni budgets par catégorie, ni suivi des revenus, ni soldes de comptes, et elle ne classe pas vos opérations. Pour une gestion de budget complète, Bankin’ ou Linxo, qui se connectent à vos comptes, conviennent mieux.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">À essayer</p>
+  <h2 class="h2">Ouvrez AllPaid.</h2>
+  <p class="lead">Des rappels de factures et de contrats sur vos appareils, gratuits jusqu’à 3 factures, sans jamais donner vos identifiants bancaires.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/fr/apps/allpaid/">En savoir plus sur AllPaid</a>
+  </div>
+</section>
