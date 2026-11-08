@@ -112,6 +112,10 @@ series:
   tools: "Outils et Mac"
   plan: "Organisation et lecture"
 
+# ---- bandeau sous la feuille de timbres, page d’accueil (animations.js remplace {name} et {date} au survol) ----
+sheet_bar_cta: "Télécharger {name} dans l’App Store"
+sheet_bar_released: "sortie le {date}"
+
 # ---- badge App Store : le texte d’Apple pour la langue, jamais une traduction maison (TRANSLATION.md 4.8) ----
 badge_line1: "Télécharger dans"
 badge_line2: "l’App Store"

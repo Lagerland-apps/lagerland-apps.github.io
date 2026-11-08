@@ -78,6 +78,17 @@ def stamp(path, date, only_if_missing=False, dry=False):
     return f"-> {date}"
 
 
+BOOKKEEPING = re.compile(r"^[+-](last_updated|translated_from):")
+
+
+def only_bookkeeping(path):
+    """True when the file's uncommitted diff only moves last_updated / translated_from (e.g. after
+    `i18n.py synced`): that is not a content edit, so the page's date must not move."""
+    diff = git("diff", "-U0", "HEAD", "--", path)
+    lines = [l for l in diff.splitlines() if l[:1] in "+-" and not l.startswith(("+++", "---"))]
+    return bool(lines) and all(BOOKKEEPING.match(l) for l in lines)
+
+
 def changed_files():
     files = []
     for line in git("status", "--porcelain", "--untracked-files=all").splitlines():
@@ -86,7 +97,10 @@ def changed_files():
             continue
         if " -> " in path:
             path = path.split(" -> ", 1)[1]
-        files.append(path.strip('"'))
+        path = path.strip('"')
+        if status.strip() != "??" and only_bookkeeping(path):
+            continue
+        files.append(path)
     return files
 
 

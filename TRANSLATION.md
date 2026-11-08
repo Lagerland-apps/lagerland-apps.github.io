@@ -399,11 +399,15 @@ Write each per-language file as a short stub that includes a shared template, so
   - `map` writes `_data/i18n_map.json` from every page's `ref` and `lang`.
   - `stale` lists translations whose English source has a newer `last_updated` than their `translated_from`,
     grouped by language, with the English git diff since that date.
+  - `synced PATH...` sets `translated_from` to today on translations you just brought in line with English.
+    Rule: an English edit that is mirrored into a translation in the same change ends with `synced` on that
+    translation, so `stale` stays at 0 and only lists real backlog.
   - `check` fails on: a fact field in a translation file, a missing text field the English page has, a missing
     key in `_data/i18n/<code>.yml`, a `ref` that points nowhere, a missing `permalink`, a translated page linking
     to an English page that now has a version in its language, and leftover English interface strings
     (any `en.yml` value found verbatim on a non-English page). It also warns, per language, about apps still
-    showing English screenshots and about incomplete localized screenshot sets.
+    showing English screenshots and about incomplete localized screenshot sets. It errors when an English page
+    with uncommitted edits has a stale translation (sync it, then run `synced`), and warns about older drift.
 - `scripts/stamp-last-updated.py`: add the language folders to `CONTENT_DIRS` (a pattern such as
   `^[a-z]{2}(-[a-z]{2})?/`). Translated privacy pages keep the privacy exception.
 - `scripts/indexnow-ping.py`: works through explicit permalinks; confirm a translated page maps to its URL and

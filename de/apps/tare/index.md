@@ -3,7 +3,7 @@ layout: app
 slug: tare
 ref: /apps/tare/
 permalink: /de/apps/tare/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 og_tagline: "Jedes verdeckte Gewicht erschließen. Das Mobile zur Ruhe bringen."
 tagline: "Ein Waagenrätsel ohne Worte. Gewichte aufhängen, jeden Balken ausgleichen und die verdeckten erschließen."
 

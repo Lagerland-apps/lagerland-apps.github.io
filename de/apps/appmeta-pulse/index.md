@@ -3,7 +3,7 @@ layout: app
 slug: appmeta-pulse
 ref: /apps/appmeta-pulse/
 permalink: /de/apps/appmeta-pulse/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 og_tagline: "Dein App-Store-Geschäft auf dem iPhone."
 tagline: "Deine App-Store-Verkäufe, Abos und Bewertungen auf dem iPhone, mit dauerhaft gespeicherter Historie."
 quick_answer: "AppMeta Pulse ist eine iPhone-App für Indie-Entwickler, die im App Store verkaufen: Sie zeigt Erlös, MRR, Abonnenten, Probeabos und Bewertungen all deiner Apps aus App Store Connect und speichert jeden abgerufenen Tag auf deinem iPhone, auch über Apples Zeitfenster von etwa einem Jahr hinaus. Auf Bewertungen antwortest du einzeln oder auf bis zu 25 auf einmal, mit Antwortentwürfen, die Apple Intelligence auf dem Gerät schreibt (iOS 26 auf einem unterstützten iPhone, Entwürfe auf Englisch), und den Monat verfolgst du mit 12 Widgets für Home-Bildschirm und Sperrbildschirm. Du brauchst einen API-Schlüssel für App Store Connect mit der Rolle „Admin“, der im Schlüsselbund deines iPhone bleibt, und die App enthält weder Werbung noch Tracking oder Analysetools von Drittanbietern. Der kostenlose Download öffnet eine Demo mit Beispieldaten; für deine eigenen Zahlen zahlst du {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}, und beide Abos kannst du vorher {TRIAL}."

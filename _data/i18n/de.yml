@@ -109,6 +109,10 @@ series:
   tools: "Werkzeuge & Mac"
   plan: "Planen & Lesen"
 
+# ---- Leiste unter dem Markenbogen auf der Startseite (animations.js setzt {name} und {date} beim Überfahren ein) ----
+sheet_bar_cta: "{name} im App Store laden"
+sheet_bar_released: "erstmals erschienen am {date}"
+
 # ---- App Store badge: Apple's German badge wording ----
 badge_line1: "Laden im"
 badge_line2: "App Store"

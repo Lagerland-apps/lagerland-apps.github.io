@@ -3,7 +3,7 @@ layout: app
 slug: appmeta
 ref: /apps/appmeta/
 permalink: /de/apps/appmeta/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "Deinen App-Store-Eintrag am Mac bearbeiten, vergleichen und pushen."
 quick_answer: "AppMeta ist eine Mac-App für Indie-Entwickler, die ihre Einträge in App Store Connect selbst pflegen. Alle Sprachen stehen in einem Fenster, vor jedem Push siehst du Feld für Feld den Unterschied zum Live-Eintrag, und Schwierigkeit und Nachfrage deiner Schlüsselwörter misst AppMeta am echten App Store, mit den Belegen dazu. In-App-Käufe, Abos, TestFlight, Game Center, Bewertungen und die Einreichung erledigst du in derselben App, die direkt mit Apple spricht und deinen API-Schlüssel im Mac-Schlüsselbund aufbewahrt. Der kostenlose Download läuft im Demomodus mit Beispieldaten; für dein eigenes Konto brauchst du Pro für {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig, ab macOS 14."
 

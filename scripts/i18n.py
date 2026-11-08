@@ -3,6 +3,8 @@
 
   python3 scripts/i18n.py map               # write _data/i18n_map.json from every translated page's ref
   python3 scripts/i18n.py stale             # translations whose English page changed after translated_from
+  python3 scripts/i18n.py synced PATH...     # after mirroring the English change into these translations,
+                                            #   set their translated_from to today (stale then drops them)
   python3 scripts/i18n.py check             # source + built-site checks; exit 1 on any error
   python3 scripts/i18n.py check --site DIR  # built-site checks against another build dir (default: _site)
   add --root DIR to run against a copy of the repo (default: the current directory)
@@ -16,8 +18,10 @@ What `check` fails on (data contract: the "Phase 0 data contract", mirrored in T
   - _data/i18n_map.json not what `map` would write now
   - in the BUILT site: a translated page linking to an English URL that has a version in its language, and
     leftover English interface strings (en.yml values of 12+ characters found verbatim in visible text)
+  - a translation whose English page has uncommitted edits and a newer last_updated than its translated_from
+    (sync the translation in the same change, then run `synced`)
 It warns, per language, about apps whose translated page still shows the English screenshots and about
-incomplete localized screenshot sets (assets/screenshots/<slug>/<code>/).
+incomplete localized screenshot sets (assets/screenshots/<slug>/<code>/), and about every other stale translation.
 
 Needs PyYAML for front matter and the i18n files (generate-og.py and generate-qr.py use it too).
 """
@@ -219,10 +223,11 @@ def english_date(pg):
     return dstr(fm.get("last_updated") or fm.get("date"))
 
 
-def cmd_stale(repo, args):
+def stale_pairs(repo):
+    """(stale, missing): stale = [(translation, english, translated_from, english_date)], where the English page's
+    last_updated is newer than the translation's translated_from; missing = [(translation, reason)]."""
     en = repo.english()
-    by_lang = collections.defaultdict(list)
-    missing = []
+    stale, missing = [], []
     for pg in repo.translations():
         ref = pg["fm"].get("ref")
         if not ref or pg["fm"].get("local_only"):
@@ -234,7 +239,15 @@ def cmd_stale(repo, args):
             continue
         ed = english_date(src)
         if ed and ed > tf:
-            by_lang[pg["lang"]].append((pg, src, tf, ed))
+            stale.append((pg, src, tf, ed))
+    return stale, missing
+
+
+def cmd_stale(repo, args):
+    stale, missing = stale_pairs(repo)
+    by_lang = collections.defaultdict(list)
+    for item in stale:
+        by_lang[item[0]["lang"]].append(item)
     has_git = git(repo, "rev-parse", "--git-dir") is not None
     n = 0
     for code in sorted(by_lang):
@@ -733,6 +746,50 @@ def keep_english(repo):
     return sorted((l for l in lines if l and not l.startswith("#")), key=len, reverse=True)
 
 
+TF_RE = re.compile(r"^translated_from:[^\n]*$", re.M)
+
+
+def cmd_synced(repo, args):
+    """Mark translations as in sync with their English page: translated_from = today (or --date)."""
+    if not args.paths:
+        sys.exit("synced: name the translated files you brought in line with English, e.g. de/apps/soon/index.md")
+    day = args.date or datetime.date.today().isoformat()
+    by_path = {pg["path"]: pg for pg in repo.translations()}
+    bad = 0
+    for raw in args.paths:
+        rel = os.path.relpath(os.path.abspath(raw), repo.root)
+        pg = by_path.get(rel)
+        if pg is None:
+            print("  ? %s: not a translated page" % rel); bad += 1; continue
+        fp = repo.p(rel)
+        text = open(fp, encoding="utf-8").read()
+        new, n = TF_RE.subn("translated_from: %s" % day, text, count=1)
+        if not n:
+            print("  ? %s: has no translated_from line" % rel); bad += 1; continue
+        if new != text:
+            open(fp, "w", encoding="utf-8").write(new)
+        print("  %s: translated_from %s" % (rel, day))
+    return 1 if bad else 0
+
+
+def check_stale(repo, F):
+    """ERROR when this change edits an English page (uncommitted) and leaves its translation behind; WARN for
+    older drift, so `stale` never quietly grows again."""
+    stale, _ = stale_pairs(repo)
+    if not stale:
+        return
+    status = git(repo, "status", "--porcelain") or ""
+    dirty = {line[3:].strip().strip('"').split(" -> ")[-1] for line in status.splitlines() if len(line) > 3}
+    for pg, src, tf, ed in stale:
+        msg = "%s (English %s updated %s, translated_from %s)" % (pg["path"], src["path"], ed, tf)
+        if src["path"] in dirty:
+            F.err("translation behind an English page you edited: mirror the change, then "
+                  "`python3 scripts/i18n.py synced <path>`", pg["lang"], msg)
+        else:
+            F.warn("stale translation (see `python3 scripts/i18n.py stale`; sync it, then run `synced`)",
+                   pg["lang"], msg)
+
+
 def cmd_check(repo, args):
     F = Findings()
     i18n_data, en_strings = check_i18n_files(repo, F)
@@ -749,6 +806,7 @@ def cmd_check(repo, args):
         if i18n_data and code not in i18n_data:
             F.err("language has pages but no _data/i18n/<code>.yml", code)
     check_screenshots(repo, F, trans)
+    check_stale(repo, F)
     site = args.site if os.path.isabs(args.site) else os.path.join(repo.root, args.site)
     n_built = check_built(repo, F, site, repo.build_map(), i18n_data, en_strings)
     per = collections.Counter(p["lang"] for p in trans)
@@ -762,7 +820,9 @@ def cmd_check(repo, args):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("command", choices=("map", "stale", "check"))
+    ap.add_argument("command", choices=("map", "stale", "check", "synced"))
+    ap.add_argument("paths", nargs="*", help="synced: translated files to mark as in sync with English")
+    ap.add_argument("--date", help="synced: date to write (default: today)")
     ap.add_argument("--root", default=".", help="repo root (default: current directory)")
     ap.add_argument("--site", default="_site", help="built site for check (default: _site under --root)")
     ap.add_argument("--max-diff-lines", type=int, default=60, help="stale: print diffs up to this many lines")
@@ -771,7 +831,7 @@ def main():
     if not os.path.isfile(os.path.join(args.root, "_config.yml")):
         sys.exit("No _config.yml in %s: run from the repo root or pass --root." % os.path.abspath(args.root))
     repo = Repo(args.root)
-    return {"map": cmd_map, "stale": cmd_stale, "check": cmd_check}[args.command](repo, args)
+    return {"map": cmd_map, "stale": cmd_stale, "check": cmd_check, "synced": cmd_synced}[args.command](repo, args)
 
 
 if __name__ == "__main__":

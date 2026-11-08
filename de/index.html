@@ -2,7 +2,7 @@
 layout: default
 ref: /
 permalink: /de/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 title: "Lagerland Apps: Apps ohne Tracking"
 quick_answer: "Lagerland Apps ist ein Ein-Personen-Studio aus Finnland mit {APP_COUNT} Apps ohne Tracking im App Store, für iPhone, iPad, Apple Watch und Mac. Es gibt Apps für Gesundheit und Training, Tagesplanung, Fixkosten und Rechnungen, Brettspiele und Logikrätsel sowie Werkzeuge für App-Store-Entwickler. Keine App zeigt Werbung, fragt nach der Werbe-ID (IDFA) oder verlangt ein Konto, und keine schickt deine Daten an einen Server des Studios. Bezahlt werden die Apps von den Menschen, die sie nutzen: über optionale Upgrades oder Einmalkäufe."
 seo:
@@ -15,7 +15,7 @@ seo:
     - apps ohne anmeldung
     - apps ohne werbung
     - indie apple entwickler
-last_updated: 2026-10-30
+last_updated: 2026-11-08
 ---
 {%- include t.html -%}
 
@@ -180,7 +180,8 @@ last_updated: 2026-10-30
     {%- if newest -%}
     {%- include tx-app.html app=newest -%}
     {%- assign newest_shot = newest.screenshots[0].src | default: newest.screenshots[0] -%}
-    <div class="sheet-bar" aria-live="polite">
+    {%- assign sheet_cta = t.sheet_bar_cta | replace: "{name}", newest.name %}
+    <div class="sheet-bar" aria-live="polite" data-cta="{{ t.sheet_bar_cta | escape }}" data-released="{{ t.sheet_bar_released | escape }}">
       {%- if newest_shot %}<img class="sheet-bar__shot" src="{{ newest_shot }}" alt="" width="60" height="120" loading="lazy" decoding="async">{% endif %}
       <img class="sheet-bar__icon" src="/assets/icons/sm/{{ newest.slug }}.webp" alt="" width="46" height="46" decoding="async">
       <div class="sheet-bar__text">
@@ -188,7 +189,7 @@ last_updated: 2026-10-30
         <span class="sheet-bar__tag">{{ tx_app.tagline }}</span>
         <span class="sheet-bar__note">Die neueste Marke auf dem Bogen · erstmals erschienen am {% include date.html date=newest.release.first_release %}</span>
       </div>
-      <a class="btn btn-primary" href="{{ newest.app_store_url }}" rel="noopener">{{ newest.name }} im App Store laden</a>
+      <a class="btn btn-primary" href="{{ newest.app_store_url }}" rel="noopener">{{ sheet_cta }}</a>
     </div>
     {%- endif -%}
   </div>

@@ -3,7 +3,7 @@ layout: app
 slug: earnlock
 ref: /apps/earnlock/
 permalink: /de/apps/earnlock/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "Sperr ablenkende Apps, bis du sie dir mit Schritten verdient hast."
 quick_answer: "EarnLock ist eine iPhone-App, mit der du deine Bildschirmzeit reduzierst: Die Apps, in denen deine Zeit verschwindet, bleiben gesperrt, bis du dich an dem Tag genug bewegt hast, und Apple Health zählt mit. Bei der Hälfte deines Ziels gehen sie für eine Stunde auf, beim ganzen Ziel bleiben sie bis Mitternacht offen. Eine App oder Kategorie mit einem Schrittziel zu sperren ist dauerhaft kostenlos, alle Widgets inklusive; Premium kostet {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}, beide Abos kannst du zuerst {TRIAL}, und es bringt unbegrenzt viele Apps, Bewegungsminuten und aktive Kalorien, die Apple-Watch-App und Intelligente Zeitpläne. Du brauchst kein Konto, und deine Daten bleiben auf deinem iPhone."
 

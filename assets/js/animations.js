@@ -317,6 +317,9 @@
     var tag = bar.querySelector('.sheet-bar__tag');
     var note = bar.querySelector('.sheet-bar__note');
     var btn = bar.querySelector('.btn');
+    // The page's language: _data/i18n/<lang>.yml sheet_bar_cta / sheet_bar_released, printed on the bar.
+    var ctaText = bar.getAttribute('data-cta') || 'Get {name} on the App Store';
+    var releasedText = bar.getAttribute('data-released') || 'first released {date}';
     var labels = {};
     tabs.forEach(function (t) { labels[t.getAttribute('data-series')] = t.textContent.replace(/\d+\s*$/, '').trim(); });
     var current = null;
@@ -335,9 +338,10 @@
       }
       name.textContent = n;
       tag.textContent = st.getAttribute('data-tag');
-      note.textContent = (labels[st.getAttribute('data-series')] || '') + (date ? ' · first released ' + date.textContent : '');
+      var released = date ? releasedText.replace('{date}', function () { return date.textContent; }) : '';
+      note.textContent = (labels[st.getAttribute('data-series')] || '') + (released ? ' · ' + released : '');
       btn.href = st.getAttribute('data-store');
-      btn.textContent = 'Get ' + n + ' on the App Store';
+      btn.textContent = ctaText.replace('{name}', function () { return n; });
     }
     stamps.forEach(function (st) {
       st.addEventListener('mouseenter', function () { show(st); });

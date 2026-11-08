@@ -3,7 +3,7 @@ layout: app
 slug: aftershift
 ref: /apps/aftershift/
 permalink: /de/apps/aftershift/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 og_tagline: "Schlaf und Erholung von Schicht zu Schicht."
 tagline: "Schlaf und Erholung im Blick, abgestimmt auf deinen Dienstplan."
 quick_answer: "AfterShift ist eine iPhone-App für Schlaf und Erholung bei Schichtarbeit, gemacht für Pflege, Rettungsdienst, Feuerwehr, Produktion und Logistik und für alle mit Nacht-, Wechsel- oder Bereitschaftsdienst. Sie misst deinen Schlaf von Schicht zu Schicht statt von Mitternacht bis Mitternacht, übernimmt ihn samt Nickerchen aus Apple Health, füllt deinen Dienstplan aus einem wiederkehrenden Schichtrhythmus 8 Wochen im Voraus und stimmt die Erinnerungen für Entspannung, Koffein-Stopp und Nickerchen auf deine nächste Schicht ab. Das alles ist kostenlos. Premium kostet {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME} und ergänzt den Erholungszustand, die Schlafbewertung, den Schichterholungswert und Trends; beide Abos kannst du zuerst {TRIAL}. Du brauchst kein Konto, es gibt keine Werbung, und deine Daten gehen nie an einen Server."

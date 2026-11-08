@@ -2,7 +2,7 @@
 layout: default
 ref: /lagerland-apps/
 permalink: /de/lagerland-apps/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 title: "Über Lagerland Apps"
 quick_answer: "Lagerland Apps ist ein Ein-Personen-Studio für Apple-Apps in Finnland. Ein einziger unabhängiger Entwickler entwirft, programmiert, testet und betreut alle {APP_COUNT} Apps für iPhone, iPad, Apple Watch und Mac. Keine App enthält Werbe- oder Analyse-SDKs, fragt nach der IDFA oder verlangt ein Konto, und keine schickt deine Daten an einen Server des Studios. Finanziert wird das Studio von den Menschen, die für die Apps bezahlen."
 seo:

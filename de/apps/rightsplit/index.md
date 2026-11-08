@@ -3,7 +3,7 @@ layout: app
 slug: rightsplit
 ref: /apps/rightsplit/
 permalink: /de/apps/rightsplit/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "Beleg scannen, antippen, wer was hatte, und allen ihren Betrag schicken."
 quick_answer: "RightSplit ist ein Rechner zum Rechnung teilen fürs iPhone, der kein Konto braucht und deine Belege, Beträge und Namen auf dem Handy lässt. Du scannst den Kassenbon, tippst an, wer welche Artikel hatte, und schickst jeder Person eine Nachricht mit ihrem genauen Betrag und einem Bezahllink für Venmo, PayPal.me, Revolut, Wise, IBAN oder Apple Pay. Gleiche Aufteilung mit Trinkgeld, faires Runden und dein erster Belegscan sind kostenlos; Pro+ ({P_YEARLY}/Jahr, zuerst {TRIAL}, oder {P_LIFETIME} einmalig) bringt unbegrenzte Scans, die Aufteilung nach Artikeln und ungleiche Aufteilung, Bereiche für Reisen und gemeinsame Haushalte sowie die Zahlungsverfolgung."
 price_tier: "Pro+"

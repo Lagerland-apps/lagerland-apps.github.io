@@ -3,7 +3,7 @@ layout: app
 slug: millrace
 ref: /apps/millrace/
 permalink: /de/apps/millrace/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 og_tagline: "Ein Puzzle mit einer beweisbaren Lösung."
 tagline: "Ein Kachel-Puzzle, bei dem jedes Level eine bewiesene kürzeste Lösung hat."
 quick_answer: "Millrace ist eine Logik-Puzzle-App mit Kacheln für iPhone und iPad, mit 64 Leveln in sechs Kapiteln. Jedes Level gibt dir ein festes Spielfeld, eine feste Warteschlange ankommender Kacheln und ein Zuglimit, und du musst auf dem markierten Feld genau eine bestimmte Zahl bauen. Ein Solver hat für jedes Level die kürzeste Lösung bewiesen, also siehst du, wie nah du an der perfekten Lösung warst. Kampagne, Freies Spiel, Tagesherausforderung und „Tipp“ sind kostenlos, ohne Werbung und ohne Abo, gekauft werden nur freiwillige Theme-Pakete, Rückgängig-Pakete und ein Trinkgeld. Die App läuft offline und braucht kein Konto."

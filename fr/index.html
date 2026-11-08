@@ -2,7 +2,7 @@
 layout: default
 ref: /
 permalink: /fr/
-translated_from: 2026-10-30
+translated_from: 2026-11-08
 title: "Lagerland Apps : applications sans pub pour iPhone et Mac"
 quick_answer: "Lagerland Apps est un studio Apple d’une seule personne, en Finlande, avec {APP_COUNT} applications sans pub dans l’App Store, pour iPhone, iPad, Apple Watch et Mac. Elles couvrent la santé et l’entraînement, la planification de la journée, les factures, les jeux de société et de logique, et des outils pour les développeurs qui publient sur l’App Store. Aucune n’affiche de publicité, ne demande l’identifiant publicitaire (IDFA) ni la création d’un compte, et aucune n’envoie vos données à un serveur du studio. Ce sont les personnes qui utilisent les apps qui les financent, par des mises à niveau facultatives ou des achats uniques."
 seo:
@@ -182,7 +182,8 @@ last_updated: 2026-11-08
     {%- if newest -%}
     {%- include tx-app.html app=newest -%}
     {%- assign newest_shot = newest.screenshots[0].src | default: newest.screenshots[0] -%}
-    <div class="sheet-bar" aria-live="polite">
+    {%- assign sheet_cta = t.sheet_bar_cta | replace: "{name}", newest.name %}
+    <div class="sheet-bar" aria-live="polite" data-cta="{{ t.sheet_bar_cta | escape }}" data-released="{{ t.sheet_bar_released | escape }}">
       {%- if newest_shot %}<img class="sheet-bar__shot" src="{{ newest_shot }}" alt="" width="60" height="120" loading="lazy" decoding="async">{% endif %}
       <img class="sheet-bar__icon" src="/assets/icons/sm/{{ newest.slug }}.webp" alt="" width="46" height="46" decoding="async">
       <div class="sheet-bar__text">
@@ -190,7 +191,7 @@ last_updated: 2026-11-08
         <span class="sheet-bar__tag">{{ tx_app.tagline }}</span>
         <span class="sheet-bar__note">La plus récente de la feuille · sortie le {% include date.html date=newest.release.first_release %}</span>
       </div>
-      <a class="btn btn-primary" href="{{ newest.app_store_url }}" rel="noopener">Télécharger {{ newest.name }} dans l’App Store</a>
+      <a class="btn btn-primary" href="{{ newest.app_store_url }}" rel="noopener">{{ sheet_cta }}</a>
     </div>
     {%- endif -%}
   </div>

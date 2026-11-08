@@ -3,7 +3,7 @@ layout: app
 slug: chessful
 ref: /apps/chessful/
 permalink: /de/apps/chessful/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "Schach, das dir deine Fehler erklärt und dich dann daran trainieren lässt."
 quick_answer: "Chessful ist eine Schach-App zum Lernen und Analysieren für iPhone, iPad und Mac: Stockfish prüft jeden Zug deiner Partien direkt auf dem Gerät, jeder Fehler wird in klaren Worten passend zu deinem Niveau erklärt, und aus deinen Fehlern entstehen die Aufgaben für dein tägliches Training. Die App passt für Einsteiger wie für Fortgeschrittene, mit 156 kostenlosen Lektionen, 15.000 Aufgaben in 53 Themen, 96 Endspielen, 40 Gegnern von 400 bis 2400 Elo und PGN-Import für deine Partien von Chess.com oder Lichess. Kostenlos gibt es tägliche Limits (2 Analysen, 3 Aufgaben und 2 Coach-Hinweise pro Tag); Premium kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig, und beide Abos kannst du zuerst {TRIAL}. Ein Konto brauchst du nicht, und die App hat weder Werbung noch Analyse-Tools oder Tracking."
 

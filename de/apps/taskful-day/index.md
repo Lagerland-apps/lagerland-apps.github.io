@@ -3,7 +3,7 @@ layout: app
 slug: taskful-day
 ref: /apps/taskful-day/
 permalink: /de/apps/taskful-day/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 og_tagline: "Was liegen bleibt, wandert weiter."
 tagline: "Ein Tagesplaner, in dem Unerledigtes ohne schlechtes Gewissen weiterwandert."
 quick_answer: "Taskful Day ist eine Tagesplaner-App für iPhone, iPad, Mac und Apple Watch. Was du nicht erledigst, wandert von selbst auf den heutigen Tag, sodass die Liste „Heute“ nie zu einem roten Berg überfälliger Aufgaben wird. Aufgaben erfasst du, indem du einen Satz tippst, sie einsprichst, Siri fragst oder deine Watch nutzt. In der kostenlosen Version kannst du insgesamt bis zu 50 Aufgaben anlegen. Pro ({P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig) bringt unbegrenzte Aufgaben, iCloud-Synchronisierung, die Ansichten Tagesuhr, Energiefluss und Tageskarte sowie 21 Widgets für den Home-Bildschirm, und jede neue Installation bekommt 7 Tage Pro gratis, ohne Kreditkarte. Ein Konto brauchst du nicht, und die App enthält weder Werbung noch Tracking."

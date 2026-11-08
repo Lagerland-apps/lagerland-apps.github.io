@@ -3,7 +3,7 @@ layout: app
 slug: shogiful
 ref: /apps/shogiful/
 permalink: /de/apps/shogiful/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "Shogi spielen, sehen, warum du verloren hast, und genau das trainieren."
 quick_answer: "Shogiful ist eine Shogi-App (japanisches Schach) für iPhone, iPad und Mac, in der du spielst, deine Partien auswertest und trainierst. Du spielst gegen 40 Engine-Gegner, wahlweise mit Kanji-Steinen, mit Kanji und Zugpfeilen oder mit Steinen im Schachstil ganz ohne Kanji; danach prüft YaneuraOu jeden Zug auf deinem Gerät und erklärt jeden Fehler, und dein Training zielt auf die Schwächen, die dabei sichtbar werden, mit 501 Tsume-Aufgaben, 99 Einsatzübungen und 80 Lektionen. Kostenlos gibt es tägliche Limits (2 Analysen, 3 Aufgaben und 2 Coach-Hinweise pro Tag); Premium kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig, und beide Abos kannst du zuerst {TRIAL}. Ein Konto brauchst du nicht, und die App hat weder Werbung noch Tracking."
 

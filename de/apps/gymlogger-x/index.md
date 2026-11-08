@@ -3,7 +3,7 @@ layout: app
 slug: gymlogger-x
 ref: /apps/gymlogger-x/
 permalink: /de/apps/gymlogger-x/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "Sätze schnell eintragen, einem bewährten Programm folgen und ein Plateau früh erkennen."
 og_tagline: "Sätze schnell eintragen. Plateaus früh erkennen."
 quick_answer: "GymLogger X ist ein Trainingstagebuch für Krafttraining auf dem iPhone, mit einer App für die Apple Watch, für alle, die Sätze schnell eintragen und einem Programm folgen wollen. Kostenlos sind das Eintragen, die App auf der Apple Watch, der Smart Program Creator und 6 der 44 fertigen Programme, jeweils ein Programm gleichzeitig. Pro bringt alle 44 Programme, deinen kompletten Verlauf und Einblicke, die Plateaus, Ermüdung und muskuläre Ungleichgewichte aus deinen eigenen Einträgen erkennen, für {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr (beide Abos kannst du zuerst {TRIAL}) oder {P_LIFETIME} einmalig. Es gibt keine Werbung, und ein Konto legst du nie an."

@@ -3,7 +3,7 @@ layout: app
 slug: soon
 ref: /apps/soon/
 permalink: /de/apps/soon/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "Countdowns für die Momente, die dir wichtig sind, immer im Blick."
 quick_answer: "Soon. ist eine Countdown-App fürs iPhone für Reisen, Hochzeiten, Geburtstage, Prüfungen und den Geburtstermin eines Babys, und sie zählt auch die Tage seit einem vergangenen Datum. Jeder Moment bekommt dein eigenes Foto, eine kostenlose Checkliste mit Zeitleiste passend zur Art des Ereignisses und einen Platz in 26 Widgets für Home-Bildschirm, Sperrbildschirm und StandBy. Bis zu 5 Momente sind kostenlos, und Premium ({P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder {P_LIFETIME} als Einmalkauf; beide Abos kannst du zuerst {TRIAL}) bringt unbegrenzte Momente, Erinnerungen vor dem Tag, die Wettervorhersage und eine Live-Aktivität auf dem Sperrbildschirm. Soon. hat weder Werbung noch Tracking, braucht kein Konto und synchronisiert über deine eigene iCloud."
 

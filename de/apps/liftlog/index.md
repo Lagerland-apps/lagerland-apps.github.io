@@ -3,7 +3,7 @@ layout: app
 slug: liftlog
 ref: /apps/liftlog/
 permalink: /de/apps/liftlog/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "Das Trainingstagebuch, das du einmal kaufst und behältst."
 quick_answer: "LiftLog ist eine Krafttraining-App fürs iPhone, die du einmal bezahlst: 7 Tage kostenlos ohne Karte, danach ein Einmalkauf von {P_IAP:Minimum} bis {P_IAP:Patron}, ohne Abo und mit Familienfreigabe. Jeden Satz füllt die App mit den Werten der letzten Einheit vor, den Pausen-Timer startet sie von selbst, und einen neuen Rekord zeigt sie in dem Moment, in dem du ihn aufstellst. Dazu kommen 1500 Übungen mit animierten Demos, 40 fertige Programme, die dir das nächste Gewicht vorschlagen können, und 10 Widgets für Home-Bildschirm und Sperrbildschirm. Deine Workouts bleiben auf deinem iPhone, und es gibt weder ein Konto noch Analyse-Tools."
 

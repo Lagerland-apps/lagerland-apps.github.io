@@ -3,7 +3,7 @@ layout: app
 slug: xiangqiful
 ref: /apps/xiangqiful/
 permalink: /de/apps/xiangqiful/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 og_tagline: "Chinesisches Schach, richtig erklärt."
 tagline: "Chinesisches Schach ab dem ersten Zug lernen, dann spielen, analysieren und trainieren."
 

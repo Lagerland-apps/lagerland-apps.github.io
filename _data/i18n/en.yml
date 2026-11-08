@@ -113,6 +113,10 @@ series:
   tools: "Tools & Mac"
   plan: "Planning & reading"
 
+# ---- homepage sheet bar: the strip under the stamps (index.html; animations.js fills {name} and {date} on hover) ----
+sheet_bar_cta: "Get {name} on the App Store"
+sheet_bar_released: "first released {date}"
+
 # ---- App Store badge: Apple's own wording for the language, never a home-made translation (TRANSLATION.md 4.8) ----
 badge_line1: "Download on the"
 badge_line2: "App Store"

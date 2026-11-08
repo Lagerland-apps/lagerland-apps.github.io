@@ -3,7 +3,7 @@ layout: app
 slug: mockly
 ref: /apps/mockly/
 permalink: /de/apps/mockly/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "App-Store-Screenshots am Mac gestalten, übersetzen und hochladen."
 quick_answer: "Mockly ist eine Mac-App, mit der du App-Store-Screenshots erstellst. Du setzt deine echten Screenshots auf 3D-Modelle von iPhone, iPad, MacBook Pro und Apple Watch, ergänzt Text und Hintergründe und hast alle 50 Sprachen des App Store in einem Projekt, übersetzt per KI mit deinem eigenen Schlüssel von OpenAI, Anthropic oder Google oder über eine CSV-Datei. Mockly exportiert PNG- oder HEIC-Dateien in exakter Größe oder lädt die Seiten mit deinem API-Schlüssel in App Store Connect hoch. Die App kostet einmalig {P_APP}, ohne Abo, und läuft ab macOS 14."
 

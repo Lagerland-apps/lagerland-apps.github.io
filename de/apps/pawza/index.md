@@ -3,7 +3,7 @@ layout: app
 slug: pawza
 ref: /apps/pawza/
 permalink: /de/apps/pawza/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "Gesundheit, Medikamente und tägliche Pflege deines Tieres an einem Ort."
 quick_answer: "Pawza ist eine Haustier-App für iPhone und iPad, die Tierarztunterlagen, Medikamente, Impfungen, Gewicht, Symptome und die tägliche Pflege von Hund, Katze, Kaninchen, Vogel, Reptil, Pferd und anderen Tieren an einem Ort führt. Dokument-Scan und Import laufen auf deinem Gerät, du brauchst kein Konto, und die optionale Synchronisierung läuft über deine eigene iCloud. Für ein Tier ist Pawza kostenlos, mit 10 Dokument-Scans, 50 Fotos und deinem ersten Import früherer Einträge. Pawza Pro bringt unbegrenzte Tiere, das automatische Ausfüllen mit Apple Intelligence (ab iOS 26 auf einem geeigneten Gerät), das Tierarztbesuch-PDF und Gewichtswarnungen, für {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr, die du beide zuerst {TRIAL} kannst, oder einmalig für {P_LIFETIME}."
 

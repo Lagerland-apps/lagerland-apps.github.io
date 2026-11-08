@@ -3,7 +3,7 @@ layout: app
 slug: mediakit
 ref: /apps/mediakit/
 permalink: /de/apps/mediakit/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "Über 150 Werkzeuge für Video, Audio, Bilder, PDFs und mehr, direkt auf dem Gerät."
 quick_answer: "Mit MediaKit komprimierst du Videos auf dem iPhone und dem Mac, ohne sie irgendwo hochzuladen. Die App bringt über 150 Werkzeuge mit, mit denen du Video, Audio, Bilder, PDFs, Archive und E-Books komprimierst, konvertierst und bearbeitest; alle laufen auf deinem Gerät, und ein Konto brauchst du nicht. Fünf Werkzeuge bleiben dauerhaft kostenlos (Video komprimieren, Bild komprimieren, Bildgröße ändern, Audio konvertieren und PDF komprimieren), und in den ersten 3 Tagen nutzt du alle anderen für einzelne Dateien, ohne zu bezahlen. Pro schaltet alle Werkzeuge und die Stapelverarbeitung frei, für {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}, und ein Kauf gilt für iPhone und Mac."
 

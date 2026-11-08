@@ -3,7 +3,7 @@ layout: app
 slug: observa
 ref: /apps/observa/
 permalink: /de/apps/observa/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 tagline: "Bereitschaft, Schlaf und HRV aus Apple Health, verständlich erklärt."
 quick_answer: "Observa ist eine HRV-App für iPhone, iPad und Apple Watch. Sie macht aus deinen Daten in Apple Health jeden Morgen einen Bereitschaftswert, einen Schlafwert und eine Einschätzung deines Stresses, gemessen an deiner eigenen Basislinie und in einfachen Worten erklärt. Auf „Soll ich heute trainieren?“ antwortet sie mit Steigern, Halten, Erholen oder Ruhen, samt Begründung. Es gibt kein Konto und keine Werbung, und deine Gesundheitsdaten bleiben auf deinem Gerät. Die täglichen Werte sind kostenlos, in den ersten 7 Tagen sind alle Pro-Funktionen ohne Anmeldung freigeschaltet, und Pro kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig."
 

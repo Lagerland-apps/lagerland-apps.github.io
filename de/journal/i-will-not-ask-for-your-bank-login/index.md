@@ -3,8 +3,8 @@ layout: journal
 slug: i-will-not-ask-for-your-bank-login
 ref: /journal/i-will-not-ask-for-your-bank-login/
 permalink: /de/journal/i-will-not-ask-for-your-bank-login/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-08
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Ich frage nicht nach deinem Bank-Login"
 seo:
@@ -22,7 +22,7 @@ lede: "Finanz-Apps mit Kontoanbindung werben gern und viel. Das Versprechen hei�
 quick_answer: "Apps zum Verwalten von Rechnungen, die nach deinem Bank-Login fragen, leiten den Zugang über einen Dienstleister: in den USA meist Plaid, in Deutschland einen Kontoinformationsdienst nach der EU-Zahlungsdiensterichtlinie PSD2. Der kann in der Regel jeden Umsatz auf dem freigegebenen Konto lesen, also weit mehr als die wiederkehrenden Zahlungen, die du sehen willst. AllPaid verbindet sich nie mit einer Bank. Du trägst deine Rechnungen von Hand ein, sie bleiben auf deinem iPhone, und ein Konto musst du nicht anlegen."
 faq:
   - q: "Gibt es eine Fixkosten-App, die keine Verbindung zu meiner Bank braucht?"
-    a: "AllPaid ist eine iPhone-App für Rechnungen und Abos, die auf Eingabe von Hand setzt und sich nie mit einer Bank oder einem Dienstleister wie Plaid oder einem Kontoinformationsdienst verbindet. Du tippst jede Rechnung einmal ein, und die App behält sie auf deinem iPhone. Es gibt kein Konto, also fragt AllPaid auch nie nach deiner E-Mail-Adresse. Nichts verlässt das Handy, außer du teilst eine Rechnung oder schaltest die iCloud-Synchronisation ein (Pro), die dein eigenes iCloud-Konto nutzt."
+    a: "AllPaid ist eine App für Rechnungen und Abos auf iPhone, iPad und Mac, die auf Eingabe von Hand setzt und sich nie mit einer Bank oder einem Dienstleister wie Plaid oder einem Kontoinformationsdienst verbindet. Du tippst jede Rechnung einmal ein, und die App behält sie auf deinem Gerät. Es gibt kein Konto, also fragt AllPaid auch nie nach deiner E-Mail-Adresse. Nichts verlässt das Gerät, außer du teilst eine Rechnung oder schaltest die iCloud-Synchronisation ein (Pro), die dein eigenes iCloud-Konto nutzt."
   - q: "Was sieht ein Dienstleister wie Plaid, wenn eine App nach meinem Bank-Login fragt?"
     a: "Plaid speichert deine Zugangsdaten oder ein daraus abgeleitetes Token und bekommt dauerhaften Lesezugriff auf jeden Umsatz im Konto, nicht nur auf die wiederkehrenden Zahlungen. Dieser Zugriff bleibt, bis du ihn widerrufst. Solche Dienstleister sind regulierte Unternehmen, und die Daten fließen auch in ihre weiteren Produkte, was im Einrichtungsbildschirm selten steht. In Deutschland übernimmt diese Rolle ein Kontoinformationsdienst. Er braucht eine Registrierung bei der BaFin (§ 34 ZAG), darf nur mit deiner ausdrücklichen Zustimmung arbeiten und die Daten nur für den Dienst nutzen, den du angefordert hast (§ 51 ZAG). Auch er sieht aber jeden Umsatz auf den Konten, die du freigibst."
   - q: "Findet AllPaid vergessene Abos, an deren Zahlung ich mich nicht erinnere?"
