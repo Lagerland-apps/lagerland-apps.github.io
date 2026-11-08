@@ -34,7 +34,11 @@ Abbreviations: ap = apps.apple.com/de, ah = https://www.apple.com/de/health/, ig
 | Vitals app | die App „Vitalzeichen“; Vitalzeichen App | https://support.apple.com/de-de/guide/watch/apd15aa7ed96/watchos ; ah | |
 | Readiness app (watchOS 27) | die App „Tagesform“; Tagesformwert (readiness score) | https://support.apple.com/de-de/guide/watch/flx4gnzby346/watchos (EN equivalent: https://support.apple.com/en-us/guide/watch/flx4gnzby346/watchos) | Not a literal translation |
 | Training Load | Trainingsbelastung | wg; ah | |
-| Cardio Fitness / VO2 max | Cardiofitness; VO2max-Wert | ah | |
+| Cardio Fitness / VO2 max | Cardiofitness; VO2max-Wert; support page 108790 writes „VO2 Max“ | ah; support.apple.com/de-de/108790 (checked 2026-11-08) | Workouts that count: „Gehen outdoor“, „Laufen outdoor“, „Wandern“; „Alle Cardiofitness-Niveaus anzeigen“; the low-level alert is a „Mitteilung“ |
+| Info button | „Info-Taste“ | support.apple.com/de-de/108790 (checked 2026-11-08) | Not „Info-Schaltfläche“ |
+| Resting / Walking heart rate (Heart Rate app) | „Ruheherzfrequenz“, „Gehen Ø“; range view „Bereich“; Health path „Entdecken“ > „Herz“ | wg apda88aefe4c; support.apple.com/de-de/120277 (checked 2026-11-08) | |
+| High / Low Heart Rate notifications | „Hohe Herzfrequenz“ / „Niedrige Herzfrequenz“ (Watch app > „Meine Watch“ > „Herz“) | support.apple.com/de-de/120276 (checked 2026-11-08) | |
+| Sleep stages | Wachzustand, REM-Schlaf, Kernschlaf, Tiefschlaf (short labels Wach, REM, Kern, Tief); setting „Schlaferfassung“ | support.apple.com/de-de/108906; wg crpxel1lvun9 (checked 2026-11-08) | |
 | Cycle Tracking | Zyklusprotokoll | ah; ig TOC | |
 | Mindfulness app | Achtsamkeit App; Achtsamkeit-App | ah | |
 | State of Mind | Gemütszustand | ah; ig TOC ("Gemütszustand protokollieren") | |
@@ -79,6 +83,7 @@ Abbreviations: ap = apps.apple.com/de, ah = https://www.apple.com/de/health/, ig
 | Control Center | Kontrollzentrum | https://support.apple.com/de-de/guide/iphone/iph59095ec58/ios | |
 | Notification Center | Mitteilungszentrale | https://support.apple.com/de-de/guide/iphone/iph6534c01bc/ios | |
 | Notifications | Mitteilungen | same | Apple says "Mitteilungen", not "Benachrichtigungen" (verb "benachrichtigen" does appear) |
+| StandBy (iOS feature) | „Standby“ | iPhone guide page on Standby and the Settings label (checked 2026-11-08) | App-made names keep their own spelling (Soon.'s widget „Soon · StandBy“) |
 | Share Sheet | Menü „Teilen“ | https://support.apple.com/de-de/guide/iphone/iphc572ca489/ios | |
 | AirDrop | AirDrop | https://support.apple.com/de-de/guide/iphone/iphcd8b9f0af/ios | English kept |
 | Spotlight | Spotlight; Spotlight-Suche | https://support.apple.com/de-de/guide/iphone/iph3c511548/ios | English kept |

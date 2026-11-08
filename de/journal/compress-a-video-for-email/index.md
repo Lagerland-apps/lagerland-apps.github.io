@@ -4,7 +4,7 @@ slug: compress-a-video-for-email
 ref: /journal/compress-a-video-for-email/
 permalink: /de/journal/compress-a-video-for-email/
 translated_from: 2026-10-29
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Video für E-Mail komprimieren: die Größenlimits und die Rechnung mit der Bitrate"
 seo:
@@ -116,7 +116,7 @@ Mit einem Link bekommt der Empfänger das Original in voller Qualität, und eine
 
 ## So geht es in MediaKit
 
-[MediaKit](/de/apps/mediakit/) erledigt die Rechnung oben auf dem Gerät, auf dem iPhone und auf dem Mac, und lädt den Clip nie hoch. „Video komprimieren“ ist eines der fünf Werkzeuge, die nach den ersten drei Tagen dauerhaft kostenlos bleiben, jeweils für eine Datei.
+[MediaKit](/de/apps/mediakit/) erledigt die Rechnung oben auf dem Gerät, auf dem iPhone und auf dem Mac, und lädt den Clip nie hoch. „Video komprimieren“ ist eines der fünf Werkzeuge, die nach den ersten drei Tagen dauerhaft kostenlos bleiben, jeweils für eine Datei. Liegt dein Clip als MKV-Datei vor, steht in [MKV in MP4 umwandeln](/de/journal/mkv-in-mp4-umwandeln/), wie du daraus eine MP4-Datei machst.
 
 1. **Öffne den Clip.** Auf dem Mac ziehst du ihn ins Fenster. Auf dem iPhone fügst du ihn aus der App „Fotos“ oder der App „Dateien“ hinzu oder schickst ihn über das Menü „Teilen“ einer anderen App.
 2. **Wähl das Werkzeug „Komprimieren“ für Video** und stell **Modus** auf **Zielgröße**.

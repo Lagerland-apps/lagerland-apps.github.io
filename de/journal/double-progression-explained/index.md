@@ -4,7 +4,7 @@ slug: double-progression-explained
 ref: /journal/double-progression-explained/
 permalink: /de/journal/double-progression-explained/
 translated_from: 2026-10-29
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Doppelte Progression erklärt: erst Wiederholungen, dann Gewicht"
 seo:
@@ -43,7 +43,7 @@ Die meisten Kraftprogramme beginnen mit linearer Progression: in jeder Einheit e
 
 ## Was ist doppelte Progression?
 
-Du steigerst zwei Dinge in fester Reihenfolge: erst die Wiederholungen bei einem Gewicht, das du beibehältst, dann die Last, sobald die Wiederholungen keinen Platz mehr haben.
+Du steigerst zwei Dinge in fester Reihenfolge: erst die Wiederholungen bei einem Gewicht, das du beibehältst, dann die Last, sobald die Wiederholungen keinen Platz mehr haben. Das Prinzip dahinter und die anderen Wege, die Belastung zu steigern, erklärt [Progressive Overload](/de/journal/progressive-overload/).
 
 | Teil der Regel | Was er bedeutet |
 |---|---|

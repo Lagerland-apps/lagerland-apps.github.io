@@ -4,7 +4,7 @@ slug: puppy-and-kitten-vaccination-schedule
 ref: /journal/puppy-and-kitten-vaccination-schedule/
 permalink: /de/journal/puppy-and-kitten-vaccination-schedule/
 translated_from: 2026-10-29
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Impfplan für Welpen und Kitten: Was wann fällig ist und welche Daten du aufheben solltest"
 seo:
@@ -46,7 +46,7 @@ In Deutschland ist die [Leitlinie zur Impfung von Kleintieren](https://www.opena
 
 ## Impfplan für Welpen
 
-Das allgemeine Impfschema der StIKo Vet für Deutschland. Als Grundimmunisierung gelten alle Impfungen in den ersten beiden Lebensjahren.
+Das allgemeine Impfschema der StIKo Vet für Deutschland. Als Grundimmunisierung gelten alle Impfungen in den ersten beiden Lebensjahren. Wie oft Welpen und erwachsene Hunde entwurmt werden, steht in [Wurmkur beim Hund: wie oft?](/de/journal/wurmkur-hund-wie-oft/).
 
 | Alter | Parvovirose, Staupe | Leptospirose | Tollwut (keine Kernimpfung in Deutschland) |
 |---|---|---|---|

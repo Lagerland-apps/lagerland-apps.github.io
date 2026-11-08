@@ -15,6 +15,7 @@ reviewing any German page. Every decision a translator would otherwise make diff
 | Tiers 2 to 4, batch 2 | written and integrated 2026-10-29, no native review yet: guide best-logic-puzzle-games-iphone; comparisons alpha-progression, athlytic, autosleep, bevel, brick, countdown-star, fitbod, forest, screenzen, welltory, plus the local-only /de/alternatives/finanzguru-alternative/ (AllPaid; `local_only: true`, no ref, no hreflang); journal apple-watch-hrv-without-a-baseline, choosing-a-strength-program-you-will-finish, compress-a-video-for-email, how-much-to-tip-in-the-us, how-to-estimate-your-one-rep-max, puppy-and-kitten-vaccination-schedule, rotating-shift-schedules-explained, rpe-and-rir-explained, when-to-deload, xiangqi-rules-for-chess-players. Not translated (research: skip): dragonbox-algebra, pawprint (German pages link the English ones with the marker). Writer notes de-batch2-DG5 to DG9-2026-10-29.md |
 | Tiers 2 to 4, batch 3 | written and integrated 2026-10-29, no native review yet: guides best-shogi-apps-iphone, best-xiangqi-apps-iphone, bill-tracker-without-bank-connection; for/apple-health-power-users, for/calm-productivity; comparisons caliber, compress-videos-resize-video, convertio, cloudconvert, habitica, habitnow, image-size, jomo, ladder, lichess, productive, settle-up, streaks-app, unpluq, way-of-life, wikipedia-app. Writer notes de-batch3-DG10 to DG14-2026-10-29.md |
 | Tiers 2 to 4, batch 4 | written and integrated 2026-10-29, no native review yet: 19 journal posts (apple-health-metrics-worth-interpreting, what-14-days-of-apple-health-can-reveal, your-apple-health-data-doesnt-mean-what-you-think, how-to-sleep-on-call, double-progression-explained, resolutions-and-the-fitness-app-trap, bill-splitting-math-tax-tip-shared-plates, how-to-organize-bills-each-month, i-will-not-ask-for-your-bank-login, pet-medical-records-what-to-keep, what-an-iphone-app-can-actually-block, making-shogi-readable-without-kanji, shogi-openings-for-beginners, xiangqi-openings-explained, puzzle-games-without-ads-or-lives, puzzle-game-no-ads-one-purchase, countdown-psychology-why-anticipation-beats-reminders, how-plan-mode-builds-a-checklist, how-to-find-interesting-wikipedia-articles). The related_journal cards of AllPaid, EarnLock, Observa, Pawza, RightSplit, Shogiful and Soon. now open the German posts. Writer notes de-batch4-DG15 to DG18-2026-10-29.md |
+| Tiers 2 to 4, batch 5 (Tier 4) | written and integrated 2026-11-08, no native review yet: the translation 30-chess-mistake-motifs and nine German-only posts (`local_only: true`): ruhepuls-normalwerte, tiefschlaf-wie-viel, vo2max-apple-watch (Observa), schlafschuld-abbauen (AfterShift), kuendigungsbutton (AllPaid), wurmkur-hund-wie-oft (Pawza), mkv-in-mp4-umwandeln (MediaKit), countdown-bis-weihnachten (Soon.), progressive-overload (LiftLog, GymLogger X). Sonnet writers, two separate reviewer agents (copy-editing, every source re-fetched, blueprint check). Research: ~/Downloads/githubcode/de-tier4-research-2026-11-08.md (next candidates listed there) |
 | Native review | none yet (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 14 s with the setup in place (9.9 s before Phase 0) |
 
@@ -227,6 +228,16 @@ their children's queries.
 | /de/journal/countdown-psychology-why-anticipation-beats-reminders/ | `vorfreude psychologie` (thin) | `psychologie der vorfreude` |
 | /de/journal/how-plan-mode-builds-a-checklist/ | `hochzeit checkliste app` | `hochzeit checkliste planung` |
 | /de/journal/how-to-find-interesting-wikipedia-articles/ | `wikipedia zufälliger artikel` (shared with WanderWiki) | `interessante wikipedia artikel` |
+| /de/journal/30-chess-mistake-motifs/ | `schach taktik` | `schach fehler vermeiden`, `schach anfänger fehler`, `schach gabel`, `schach taktikaufgaben` |
+| /de/journal/ruhepuls-normalwerte/ (local-only) | `ruhepuls normal` | `ruhepuls normalwerte`, `ruhepuls frau`, `ruhepuls mann`, `ruhepuls im schlaf`, `ruhepuls apple watch` |
+| /de/journal/tiefschlaf-wie-viel/ (local-only) | `tiefschlaf wie viel ist normal` | `tiefschlaf pro nacht`, `tiefschlaf apple watch`, `wenig tiefschlaf apple watch` |
+| /de/journal/vo2max-apple-watch/ (local-only) | `vo2max apple watch` | `cardiofitness apple watch`, `vo2max werte`, `vo2max apple watch genauigkeit` |
+| /de/journal/schlafschuld-abbauen/ (local-only) | `schlafschuld abbauen` | `schlaf nachholen`, `schlaf nachholen am wochenende`, `schlafschuld berechnen` (the AutoSleep page keeps `schlafschuld app iphone`) |
+| /de/journal/kuendigungsbutton/ (local-only) | `kündigungsbutton pflicht` | `kündigungsbutton bgb`, `automatische vertragsverlängerung`, `vertrag kündigen frist` |
+| /de/journal/wurmkur-hund-wie-oft/ (local-only) | `wurmkur hund wie oft` | `welpe entwurmen wie oft`, `entwurmung hund`, `kotuntersuchung hund` |
+| /de/journal/mkv-in-mp4-umwandeln/ (local-only) | `mkv in mp4 umwandeln` | `… kostenlos`, `… mac`, `… vlc`, `… handbrake` |
+| /de/journal/countdown-bis-weihnachten/ (local-only) | `wie viele tage bis weihnachten` | `countdown weihnachten`, `countdown heiligabend`, `weihnachts countdown iphone widget` |
+| /de/journal/progressive-overload/ (local-only) | `progressive overload` | `progressive overload deutsch`, `progressive belastungssteigerung` (the double-progression post keeps `progression krafttraining`) |
 
 Wording rules from the research: privacy is said as „ohne Tracking“, „ohne Werbung“, „ohne Anmeldung“ (the
 English "privacy" is not searched); „Trainingstagebuch“ beats "Workout Tracker"; for AllPaid lead with
@@ -274,6 +285,15 @@ Found in the AI-file review (2026-10-27): „Antwortmaschinen“ for "answer eng
 „wagnisfinanziert“ for "VC-backed" (write „mit Risikokapital“); „kostenpflichtige Apps … oder kostenlos“ in one list
 (calque of "paid apps sold as … or freemium"); „englisch sein“ for pages (write „auf Englisch“); feature lists that
 end in „kostenlos“ while one item is paid (name the tier, Premium or Pro, next to the paid item).
+
+Found in reviews (Tier 4 batch 5, 2026-11-08): „sofort“ for the legal „unverzüglich“; a quoted definition bent to fit the
+sentence (quotes stay verbatim); „falsch getimt“; „Lucena-Brücke“ (write „Brückenbau in der Lucena-Stellung“); „Erstickungsmatt“
+(write „ersticktes Matt“, even though Chessful's UI says „Erstickungsmatt“); „Entwurfsnotiz“ for "design note";
+„Kniebeugen-Test“ for a specific 1RM test; headings or sentences stuffed with search phrases („Schlafschuld Bedeutung und …“,
+„Für ‚Ruhepuls Frau‘ …“); a sentence-initial „Sie“/„Ihre“ meaning a study or an app (rephrase, not only after a colon); a first
+body paragraph that repeats the lede rendered right above it; the same disclaimer stacked in lede, quick answer, body and
+closer (once near the top is enough, plus the FAQ where it answers a question); „minus den heutigen Tag“ (write „minus das
+heutige Datum“); Konjunktiv slips („Deshalb stehe hier“); „kein Grund zur Sorge“ (medical reassurance no source gives).
 
 Stock phrasing: „In der heutigen schnelllebigen Welt“, „Tauchen wir ein“, „Es ist wichtig zu beachten, dass“,
 „spielt eine entscheidende Rolle“, „nahtlos“, „maßgeschneidert“, „ganzheitlich“, „Zusammenfassend lässt sich
@@ -357,6 +377,15 @@ Tiers 2 to 4, batch 4 (2026-10-29): 19 journal posts, writer agents with self co
 No separate reviewer, back-translation agent or native review yet. The Millrace post title was shortened to stay under
 the 110-character Article headline limit. Open points are in de-batch4-DG15 to DG18 (Observa Pro vs Premium; Xiangqiful
 „Zentralkanone“ vs „Mittelkanone“; the Soon. weather line was cut from the countdown post).
+
+Tiers 2 to 4, batch 5 (2026-11-08): 10 journal posts, one translation and nine German-only posts (TRANSLATION.md 6.7), because
+every English post with German demand was already translated. Written by Sonnet agents from German or peer-reviewed sources they
+fetched, with the French local-only page on the same topic as a structural model only. Two separate reviewer agents re-fetched
+every source and fixed 52 must-fix points (wrong ESCCAP risk groups, a misquoted DAK tip, Casjens' two sleep values, Apple's newer
+sleep-stage kappa, the legal „unverzüglich“, Apple's „Standby“ spelling among them). No back-translation (not Tier 1) and no
+native review yet. Sources are linked in each post; open points are in ISSUES.md. Phones: German H1s with long compounds
+(„Kündigungsbutton“, „Vertragsverlängerung“) overflowed at 320 px; since this batch, h1 and h2 hyphenate below 480 px in de, nl,
+pl and ru (assets/css/style.css, next to the body-text rule), desktop headings unchanged.
 
 ## Apps still on English screenshots
 

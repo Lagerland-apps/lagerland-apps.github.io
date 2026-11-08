@@ -4,7 +4,7 @@ slug: countdown-psychology-why-anticipation-beats-reminders
 ref: /journal/countdown-psychology-why-anticipation-beats-reminders/
 permalink: /de/journal/countdown-psychology-why-anticipation-beats-reminders/
 translated_from: 2026-10-29
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Psychologie der Vorfreude: warum ein Countdown mehr bringt als eine Erinnerung"
 seo:
@@ -123,6 +123,8 @@ Nichts davon ist radikal. So sehen die Befunde von Loewenstein, Nawijn, Van Bove
 ## Wie Soon. das umsetzt
 
 [Soon.](/de/apps/soon/) gibt es, weil die meisten Countdown-Apps, die wir ausprobiert haben, das Datum als Zahl zum Anzeigen behandeln und nicht als etwas, worauf man sich freut. Soon. ist um die drei Bausteine oben gebaut: das Foto, den Plan und die Regel für Mitteilungen. Das folgt aus dem, was die Forschung über einen Countdown sagt, der sich lohnt.
+
+Wie das für ein festes Datum aussieht, zeigt der Artikel zum [Countdown bis Weihnachten](/de/journal/countdown-bis-weihnachten/) mit Widgets für Home-Bildschirm und Sperrbildschirm.
 
 Für das Gefühl, etwas tun zu können, sorgt der [Planmodus](/de/journal/how-plan-mode-builds-a-checklist/): Soon. schlägt für die Art von Ereignis eine Checkliste mit einer Zeitleiste aus Meilensteinen vor, und der Planmodus ist kostenlos. Dein eigenes Foto hinter dem Countdown ist der sinnliche Anker. Mitteilungen (Premium) kommen 7 Tage, 3 Tage und 1 Tag vorher und am Tag selbst, dazu Erinnerungen für die Aufgaben im Plan, die du auswählst. Den Rest der Zeit steht der Countdown in den 26 Widgets von Soon. auf Home-Bildschirm, Sperrbildschirm und in StandBy.
 

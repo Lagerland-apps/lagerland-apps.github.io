@@ -4,7 +4,7 @@ slug: find-every-recurring-charge
 ref: /journal/find-every-recurring-charge/
 permalink: /de/journal/find-every-recurring-charge/
 translated_from: 2026-10-29
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Alle laufenden Abos finden, ohne dein Bankkonto zu verknüpfen"
 seo:
@@ -125,7 +125,7 @@ Die Checkliste oben beantwortet die Frage *Wie bekomme ich die Erkennung ohne de
 
 ## Was machst du mit der Liste, wenn du sie hast?
 
-An diesem Schritt scheitern die meisten Prüfungen. Man findet elf vergessene Abos, kündigt vier, fühlt sich gut und baut über achtzehn Monate dasselbe Durcheinander wieder auf, weil nichts die sieben festgehalten hat, die man behalten hat, und auch nicht ihre Verlängerungstermine. Weißt du, was du behältst, zeigt dir [ein Rechnungskalender rund um deine Zahltage](/de/journal/how-to-organize-bills-each-month/), welches Gehalt welche Abbuchung decken muss.
+An diesem Schritt scheitern die meisten Prüfungen. Man findet elf vergessene Abos, kündigt vier, fühlt sich gut und baut über achtzehn Monate dasselbe Durcheinander wieder auf, weil nichts die sieben festgehalten hat, die man behalten hat, und auch nicht ihre Verlängerungstermine. Weißt du, was du behältst, zeigt dir [ein Rechnungskalender rund um deine Zahltage](/de/journal/how-to-organize-bills-each-month/), welches Gehalt welche Abbuchung decken muss. Wie du Verträge kündigst, die du online abgeschlossen hast, und welche Fristen dabei gelten, steht in [Kündigungsbutton: was Pflicht ist](/de/journal/kuendigungsbutton/).
 
 Die Liste muss an einem Ort liegen, der nach vorn rechnet. Eine Notiz tut das nicht, eine Tabelle bis etwa zur dritten Woche. [AllPaid](/de/apps/allpaid/) ist die App des Studios für genau diese Aufgabe: Du tippst einen Dienst wie Netflix ein, die App schlägt Kategorie und Abrechnungszeitraum vor, und ab dann bekommt jede Rechnung eine Erinnerung um 9:00 Uhr vor ihrem Fälligkeitstag und erscheint in der Monatsübersicht und im Widget „Monatskalender“. Ein Jahresabo, das du heute einträgst, bekommt seine Erinnerung trotzdem am Tag vor der Verlängerung, Monate von jetzt an, und genau diese Abbuchung übersieht ein Blick auf den Kontoauszug am häufigsten. Bei einem Vertrag, der sich automatisch verlängert, kann AllPaid auch das Vertragsende im Blick behalten und dich vorher erinnern. Bis zu 3 Rechnungen sind kostenlos, Pro kostet {P_MONTHLY@allpaid} im Monat, {P_YEARLY@allpaid} im Jahr oder einmalig {P_LIFETIME@allpaid}, und die App fragt nie nach einem Bank-Login, weil sie gar keinen Weg hat, einen zu nutzen. Die Rechnungen bleiben auf dem iPhone; die [Transparenzseite](/de/transparency/) listet die SDKs von Drittanbietern (keine) und die leere Liste der Tracking-Domains.
 

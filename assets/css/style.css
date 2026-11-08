@@ -2214,6 +2214,8 @@ span.lang-switch__item { font-weight: 700; border-left-color: var(--ink); }
 .privacy-reference { font-style: italic; }
 /* Long compound words: let the browser hyphenate body text (needs the right <html lang>) */
 :is(:lang(de), :lang(nl), :lang(pl), :lang(ru)) :is(p, li, dd, .card-text, .lead, .faq-a) { hyphens: auto; -webkit-hyphens: auto; }
+/* Long compounds in big headings overflow on phones (e.g. „Kündigungsbutton“ at 320 px): hyphenate headings there only. */
+@media (max-width: 480px) { :is(:lang(de), :lang(nl), :lang(pl), :lang(ru)) :is(h1, h2) { hyphens: auto; -webkit-hyphens: auto; } }
 /* CJK: no letter-spacing, no forced capitals, no italics; Korean keeps words whole; system fonts per language */
 :is(:lang(ja), :lang(ko), :lang(zh)) * { letter-spacing: 0 !important; text-transform: none !important; font-style: normal !important; }
 :lang(ko) body { word-break: keep-all; }

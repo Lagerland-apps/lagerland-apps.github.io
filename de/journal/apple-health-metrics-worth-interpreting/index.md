@@ -61,7 +61,7 @@ Die Ruheherzfrequenz bewegt sich langsamer als die HRV, ist aber leichter zu deu
 - Alkohol (die Ruheherzfrequenz steigt am Morgen nach dem Trinken regelmäßig um 5 bis 15 Schläge pro Minute)
 - Übertraining (ein anhaltend erhöhter Wert ohne erkennbaren Grund)
 
-Lies sie als gleitenden Durchschnitt über 7 Tage im Vergleich zu deiner Basislinie über 60 Tage, nicht als Tageswert.
+Lies sie als gleitenden Durchschnitt über 7 Tage im Vergleich zu deiner Basislinie über 60 Tage, nicht als Tageswert. Welche Werte Fachquellen als normal angeben, steht im Artikel [Ruhepuls normal](/de/journal/ruhepuls-normalwerte/).
 
 ### 3. Schlafeffizienz
 
@@ -71,7 +71,7 @@ Sie bleibt auch nach einer kurzen Nacht aussagekräftig und gehört zu den Schla
 
 ### 4. Tiefschlafanteil
 
-Das ist der Anteil deiner Nacht im Tiefschlaf (Slow-Wave-Schlaf). Die Schlafphasen der Apple Watch sind nur ungefähr, der Trend aber ist verlässlich. Ein Großteil der körperlichen Erholung und der Gedächtnisfestigung geschieht im Tiefschlaf, und Alkohol, späte Trainings, spätes Essen und die Temperatur im Schlafzimmer stören ihn stärker als jede andere Phase.
+Das ist der Anteil deiner Nacht im Tiefschlaf (Slow-Wave-Schlaf). Die Schlafphasen der Apple Watch sind nur ungefähr, der Trend aber ist verlässlich. Ein Großteil der körperlichen Erholung und der Gedächtnisfestigung geschieht im Tiefschlaf, und Alkohol, späte Trainings, spätes Essen und die Temperatur im Schlafzimmer stören ihn stärker als jede andere Phase. Wie viel Tiefschlaf Fachquellen pro Nacht angeben und warum die Apple Watch oft wenig davon zeigt, steht in [Tiefschlaf: wie viel ist normal?](/de/journal/tiefschlaf-wie-viel/).
 
 Was ihn verändert, grob nach Stärke der Wirkung geordnet: Alkohol in den 3 Stunden vor dem Schlafengehen (20 bis 40 % weniger), ein Training nach 18:00 Uhr (10 bis 20 % weniger), eine große späte Mahlzeit (10 bis 15 % weniger), ein warmes Schlafzimmer (5 bis 15 % weniger) und viel Bildschirmzeit in den 30 Minuten vor dem Einschlafen (5 bis 25 % weniger).
 
@@ -113,7 +113,7 @@ Als Trainingsminute zählt bei Apple jede Minute, in der deine Herzfrequenz mind
 
 ### 11. VO2max (geschätzt)
 
-Nützlich, aber er bewegt sich über Quartale, und die Schwankung der Schätzung von Tag zu Tag ist fast nur Rauschen. Schau einmal im Monat darauf und lass ihn den Rest der Zeit in Ruhe.
+Nützlich, aber er bewegt sich über Quartale, und die Schwankung der Schätzung von Tag zu Tag ist fast nur Rauschen. Schau einmal im Monat darauf und lass ihn den Rest der Zeit in Ruhe. Wie die Apple Watch den Wert schätzt und wie genau das ist, erklärt [VO2max mit der Apple Watch](/de/journal/vo2max-apple-watch/).
 
 ### 12. Cardio-Erholung
 

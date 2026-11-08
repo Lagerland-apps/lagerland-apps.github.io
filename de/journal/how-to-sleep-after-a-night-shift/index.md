@@ -4,7 +4,7 @@ slug: how-to-sleep-after-a-night-shift
 ref: /journal/how-to-sleep-after-a-night-shift/
 permalink: /de/journal/how-to-sleep-after-a-night-shift/
 translated_from: 2026-10-29
-last_updated: 2026-10-29
+last_updated: 2026-11-08
 date: 2026-10-29
 title: "Schlafen nach der Nachtschicht: Heimweg, dunkles Zimmer, Nickerchen und freie Tage"
 seo:
@@ -102,7 +102,7 @@ Lange Nickerchen haben ihren Preis: Benommenheit beim Aufwachen, die Schlaftrunk
 
 Wer an jedem freien Tag ganz auf Nachtschlaf umstellt, hält seine innere Uhr in einer Art Dauer-Jetlag. Der [Kompromiss, den das NIOSH beschreibt](https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod9/06.html){: hreflang="en"} (auf Englisch): An freien Tagen bleibst du bis 3 oder 4 Uhr wach und schläfst bis 12 oder 13 Uhr. So bleibt ein Block wie 8 bis 12 Uhr an Arbeitstagen und freien Tagen gleichermaßen Schlafzeit.
 
-Dieselbe Seite warnt vor der umgekehrten Abkürzung: vor der ersten Nacht einer Reihe oder nach der letzten den ganzen Tag wach zu bleiben. Dann bist du zu viele Stunden am Stück wach, was das Unfallrisiko erhöht und auf Dauer das Risiko für chronischen Schlafmangel. Wechselschichten behandelt der Kurs nicht im Detail; wer im Wechselschichtdienst schlecht hineinfindet, soll sich an eine Schlafmedizinerin oder einen Schlafmediziner wenden.
+Dieselbe Seite warnt vor der umgekehrten Abkürzung: vor der ersten Nacht einer Reihe oder nach der letzten den ganzen Tag wach zu bleiben. Dann bist du zu viele Stunden am Stück wach, was das Unfallrisiko erhöht und auf Dauer das Risiko für chronischen Schlafmangel. Wechselschichten behandelt der Kurs nicht im Detail; wer im Wechselschichtdienst schlecht hineinfindet, soll sich an eine Schlafmedizinerin oder einen Schlafmediziner wenden. Was die Studien dazu sagen, ob sich verlorener Schlaf später nachholen lässt, steht in [Schlafschuld abbauen](/de/journal/schlafschuld-abbauen/).
 
 ## Wenn es mehr ist als eine schlechte Woche
 
