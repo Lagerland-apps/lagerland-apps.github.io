@@ -3,7 +3,7 @@ layout: journal
 slug: compress-a-video-for-email
 ref: /journal/compress-a-video-for-email/
 permalink: /fr/journal/compress-a-video-for-email/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 last_updated: 2026-11-08
 date: 2026-11-08
 title: "Comment compresser une vidéo pour l’envoyer par mail : limites de taille et calcul du débit"
@@ -111,6 +111,8 @@ La ligne des 5 minutes du tableau marque le point où la compression cesse d’
 - **Outlook** vous invite à compresser le fichier ou à le partager depuis un espace de stockage en ligne.
 
 Avec un lien, le destinataire reçoit l’original en pleine qualité, et une copie reste sur un serveur aussi longtemps que le lien existe.
+
+Pour une photo trop lourde plutôt qu’une vidéo, notre article [réduire la taille d’une photo sur iPhone](/fr/journal/reduire-taille-photo-iphone/) reprend les réglages d’Apple et les deux outils d’image gratuits de MediaKit.
 
 ## Compresser la vidéo pour un mail avec MediaKit
 

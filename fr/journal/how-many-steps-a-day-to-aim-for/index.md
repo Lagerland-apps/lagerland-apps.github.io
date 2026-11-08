@@ -3,7 +3,7 @@ layout: journal
 slug: how-many-steps-a-day-to-aim-for
 ref: /journal/how-many-steps-a-day-to-aim-for/
 permalink: /fr/journal/how-many-steps-a-day-to-aim-for/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 last_updated: 2026-11-08
 date: 2026-11-08
 title: "Combien de pas par jour viser ? Ce que disent les grandes études et comment fixer un objectif tenable"
@@ -34,7 +34,7 @@ faq:
   - q: "Combien de temps faut-il pour marcher 8000 pas ?"
     a: "À environ 110 pas par minute, soit une marche rapide, 8000 pas représentent à peu près 75 minutes de marche continue. En pratique, il faut moins de marche volontaire que cela, car votre total quotidien compte aussi chaque pas à la maison, au travail et pendant les courses."
   - q: "Quel objectif de pas choisir dans EarnLock ?"
-    a: "EarnLock propose trois niveaux prédéfinis, Léger (4000 pas), Standard (8000) et Défi (12 000), ainsi que votre propre nombre ou Adaptatif, qui monte de 3 % après un jour réussi et baisse de 5 % après un jour manqué. Un bon choix est un objectif que vous atteignez un jour ordinaire seulement en ajoutant une marche volontaire. Vous pouvez relever l’objectif à tout moment ; le baisser ne prend effet qu’au bout de 24 heures, donc une mauvaise journée ne peut pas le réduire sur le coup. À la moitié de l’objectif, vos apps s’ouvrent quand même pour une heure."
+    a: "EarnLock propose trois niveaux prédéfinis, Léger (4000 pas), Standard (8000) et Défi (12 000), ainsi que votre propre nombre ou Adaptatif, qui monte de 3 % après un jour réussi et baisse de 5 % après un jour manqué. Un bon choix est un objectif que vous atteignez un jour ordinaire seulement en ajoutant une marche volontaire. Vous pouvez relever l’objectif à tout moment. Le baisser prend effet tout de suite, puis il ne peut plus être baissé pendant 24 heures, donc une mauvaise journée ne peut pas le réduire encore et encore. À la moitié de l’objectif, une partie de vos apps s’ouvre quand même pour environ une heure."
 mentioned_apps:
   - earnlock
 read_time: "9 min de lecture"
@@ -106,8 +106,8 @@ Au quotidien, le nombre de pas est un chiffre peu fiable pour juger de sa santé
 - **Des pas, ou les mesures d’activité d’Apple.** Les pas sont l’objectif gratuit. Premium ajoute les minutes d’exercice, celles de l’anneau vert « M’entraîner » d’Apple, qui [selon Apple](https://support.apple.com/fr-fr/guide/watch/apd3bf6d85a6/watchos) affiche la durée, en minutes, d’effort intense (niveaux prédéfinis de 20, 30 et 45), et les calories actives (150, 300 et 500 kcal).
 - **Un seul total par jour, issu d’Apple Santé.** EarnLock lit le total du jour dans Apple Santé sur votre iPhone. Quand l’app Santé additionne une journée, elle [classe les sources qui se recoupent](https://support.apple.com/fr-fr/108779) : les pas que votre iPhone et votre Apple Watch ont tous deux comptés ne sont donc pas additionnés deux fois. Avec Premium, l’app Apple Watch d’EarnLock lit ses propres données de santé et indique ce qu’il vous reste à faire pour déverrouiller.
 - **Le blocage montre l’écart.** Une app bloquée indique combien de pas manquent encore, par exemple « 2026 pas avant déverrouillage ».
-- **La moitié compte, et la journée repart à zéro à minuit.** À la moitié de l’objectif, les apps s’ouvrent pour une heure. Une fois l’objectif complet atteint, elles restent ouvertes jusqu’à minuit, heure locale ; le compte repart ensuite de zéro.
-- **Relever est immédiat ; baisser demande d’attendre.** Vous pouvez relever l’objectif à tout moment. Le baisser ne prend effet qu’au bout de 24 heures, pour qu’un moment de faiblesse ne puisse pas le réduire. Premium permet de passer ce délai une fois par semaine.
+- **La moitié compte, et la journée repart à zéro à minuit.** À la moitié de l’objectif, une partie des apps bloquées s’ouvre pour environ une heure, une fois par jour. Une fois l’objectif complet atteint, toutes restent ouvertes jusqu’à minuit, heure locale ; le compte repart ensuite de zéro.
+- **Relever est toujours possible ; baisser est rationné.** Vous pouvez relever l’objectif à tout moment. Le baisser prend effet tout de suite, et la baisse suivante attend 24 heures, pour qu’un moment de faiblesse ne puisse pas le réduire encore et encore. Premium permet de passer ce délai une fois par semaine.
 - **Des objectifs différents selon les jours.** Les plannings intelligents de Premium (Heures de travail, Soirs, Week-ends et Sommeil) peuvent chacun utiliser Léger, Standard ou Défi, ce qui reprend l’idée évoquée plus haut d’un samedi différent d’un jour de bureau.
 - **Une semaine pour s’étalonner.** Les sept premiers jours forment une semaine d’observation : rien n’est bloqué, et EarnLock compte les blocages que vous auriez rencontrés, pour ajuster avant que cela ne coûte quoi que ce soit.
 

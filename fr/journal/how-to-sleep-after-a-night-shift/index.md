@@ -39,7 +39,7 @@ faq:
     a: "L’American Academy of Sleep Medicine explique que beaucoup de personnes trouvent un nouveau poste difficile au début, mais que si, après plusieurs semaines, vous avez toujours du mal à trouver ou à garder le sommeil, ou si la fatigue persiste même après 7 à 8 heures de sommeil, il peut s’agir d’un trouble du travail posté. Seul un médecin peut le diagnostiquer. Parlez-en à votre médecin ou à un spécialiste du sommeil, y compris avant d’essayer un somnifère ou un complément alimentaire."
 mentioned_apps:
   - aftershift
-read_time: "9 min de lecture"
+read_time: "9 min de lecture"
 ---
 
 Les personnes qui travaillent de nuit dorment en général moins, et moins bien, que celles qui dorment la nuit. C’est le point de départ de la formation [NIOSH Training for Nurses on Shift Work and Long Work Hours](https://www.cdc.gov/niosh/work-hour-training-for-nurses/){: hreflang="en"} (en anglais), un cours gratuit de l’institut américain de santé et de sécurité au travail, le NIOSH (National Institute for Occupational Safety and Health). Il a été écrit pour des infirmiers, mais ses conseils sur le sommeil ne dépendent pas du métier. Sauf mention d’une autre source, tout ce qui suit en est tiré.

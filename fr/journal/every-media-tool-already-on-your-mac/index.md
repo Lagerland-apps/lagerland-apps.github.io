@@ -88,6 +88,8 @@ Fixer l’offre gratuite ainsi est, parmi les apps Mac indépendantes, un peu in
 
 Pro existe pour ceux qui utilisent la longue traîne.
 
+Les archives RAR et les PDF trop lourds ont chacun leur article : [ouvrir un fichier RAR sur Mac ou iPhone](/fr/journal/ouvrir-fichier-rar-mac-iphone/) et [compresser un PDF sur Mac](/fr/journal/compresser-pdf-mac/).
+
 ## Ce que MediaKit ne fait pas
 
 Quelques précisions que j’ai appris à mettre par écrit :

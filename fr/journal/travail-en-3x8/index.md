@@ -35,7 +35,7 @@ faq:
     a: "L’article L3131-1 du Code du travail fixe un repos quotidien d’au moins 11 heures consécutives, avec des exceptions prévues par la loi. En recherche, un retour rapide désigne un intervalle de 11 heures ou moins entre deux postes, et une revue de 2016 portant sur 22 études y voit des signes d’effets négatifs sur le sommeil, la somnolence et la fatigue. Une fois retirés le trajet, un repas et le temps de s’endormir, même 11 heures laissent bien moins qu’une nuit complète."
 mentioned_apps:
   - aftershift
-read_time: "14 min de lecture"
+read_time: "14 min de lecture"
 ---
 
 Le travail en 3x8 consiste à faire tourner trois équipes sur un même poste pour couvrir 24 heures. Derrière ce terme courant se cachent des plannings très différents : les horaires, le sens de la rotation et le nombre de jours de repos changent d’une entreprise à l’autre, et ce sont eux, bien plus que l’étiquette, qui pèsent sur le sommeil. Cette page ne remplace pas un avis médical et ne traite ni de la rémunération ni de la retraite.

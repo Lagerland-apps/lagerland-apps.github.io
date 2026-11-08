@@ -91,6 +91,8 @@ L’outil « Compresser une vidéo » accepte lui aussi un MKV : les sourc
 
 « Compresser une vidéo » fait partie des cinq outils qui restent gratuits sans limite de durée, un fichier à la fois. « Convertir » fonctionne gratuitement pendant les 3 premiers jours après l’installation, avec un export par exécution, puis demande Pro : {P_MONTHLY@mediakit}/mois, {P_YEARLY@mediakit}/an ou {P_LIFETIME@mediakit} en une fois, d’après les prix de l’App Store français. Un convertisseur gratuit comme VLC suffit si vous convertissez un fichier par an.
 
+S’il ne vous faut que le son d’une vidéo, notre article [extraire le son d’une vidéo sur iPhone](/fr/journal/extraire-son-video-iphone/) détaille les options.
+
 ## Quelle méthode choisir ?
 
 Choisissez d’abord entre remux et réencodage. Si vous voulez garder l’image telle quelle, cherchez une option qui recopie les flux et vérifiez qu’elle ne supprime aucune piste de son. Si vous voulez un fichier plus léger, un réencodage est normal, et il faut alors accepter une perte.

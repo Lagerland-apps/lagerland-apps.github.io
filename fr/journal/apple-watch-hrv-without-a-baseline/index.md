@@ -3,7 +3,7 @@ layout: journal
 slug: apple-watch-hrv-without-a-baseline
 ref: /journal/apple-watch-hrv-without-a-baseline/
 permalink: /fr/journal/apple-watch-hrv-without-a-baseline/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 last_updated: 2026-11-08
 date: 2026-11-08
 title: "VFC normale sur Apple Watch : pourquoi votre valeur ne dit presque rien sans référence"
@@ -35,7 +35,7 @@ faq:
     a: "En SDNN. Apple Santé enregistre la VFC de l’Apple Watch sous forme de SDNN, l’écart type des intervalles entre battements cardiaques successifs, en millisecondes, et c’est la seule mesure de VFC qu’expose HealthKit. La science du sport utilise souvent le RMSSD et son logarithme naturel, le lnRMSSD, qui ne se calculent pas comme le SDNN : une valeur de l’Apple Watch ne se convertit donc pas simplement en l’une ou l’autre de ces mesures. Observa affiche le SDNN enregistré par Apple Santé et le compare à votre propre référence."
 mentioned_apps:
   - observa
-read_time: "7 min de lecture"
+read_time: "7 min de lecture"
 ---
 
 L’Apple Watch mesure l’un des chiffres les plus instructifs de la physiologie grand public, et presque personne ne s’en sert correctement.

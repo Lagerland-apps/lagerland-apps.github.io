@@ -20,6 +20,7 @@ reviewing any French page. Every decision a translator would otherwise make diff
 | Tier 4, batch 2 | written and integrated 2026-11-08, no native review yet: puppy-and-kitten-vaccination-schedule, pet-medical-records-what-to-keep (Pawza), when-to-deload (GymLogger X), double-progression-explained (LiftLog), puzzle-games-without-ads-or-lives (Millrace), find-every-recurring-charge (AllPaid; Bankin’ and Linxo replace Rocket Money), what-an-iphone-app-can-actually-block (EarnLock), how-to-find-interesting-wikipedia-articles (WanderWiki), how-plan-mode-builds-a-checklist (Soon.), plus the local-only /fr/journal/passeport-europeen-chien-chat/ (Pawza; service-public, agriculture.gouv.fr, I-CAD, Your Europe, Regulation 576/2013). Hub now 20 posts. Stale check before the batch: 0 French pages stale |
 | Tier 4, batch 3 | written and integrated 2026-11-08, no native review yet: your-photos-shouldnt-ride-the-elevator, every-media-tool-already-on-your-mac (MediaKit), apple-health-metrics-worth-interpreting (Observa), bill-splitting-math-tax-tip-shared-plates (RightSplit; France: prices « taxes et services compris », service-public.fr F22387), xiangqi-rules-for-chess-players (Xiangqiful), i-will-not-ask-for-your-bank-login (AllPaid; ACPR and Banque de France on aggregators), engine-depth-at-club-level-tune-down, 30-chess-mistake-motifs (Chessful), unlock-cost-outside-the-app (EarnLock), plus local-only /fr/journal/surcharge-progressive-musculation/ (ACSM 2009 abstract, ACSM 2026 position stand PMC12965823). Hub 30 posts. Research: ~/Downloads/githubcode/fr-tier4-research-2026-11-08.md § Batch 3. Stale check before the batch: 0 French pages stale |
 | Tier 4, batch 4 | written and integrated 2026-11-08, no native review yet: ten local-only posts (no English twin left with French demand): compte-a-rebours-noel (Soon.), resilier-abonnement-trois-clics (AllPaid; Service-Public F33991, A16599, A16455, F19083, economie.gouv press release, SignalConso), frequence-cardiaque-au-repos, sommeil-profond-combien-d-heures, vo2-max (Observa; Vidal, ameli, Inserm, Santé publique France, Apple fr-fr, Apple VO₂ max paper, Mandsager 2018), rattraper-dette-de-sommeil (AfterShift; SPF, Leger et al. 2020, Inserm), vermifuger-son-chien (Pawza; ESCCAP France pages and 2023 guide), series-par-muscle-par-semaine (GymLogger X, LiftLog; ACSM 2026, Schoenfeld 2017, ACSM 2009), supprimer-metadonnees-photo-iphone, convertir-mkv-en-mp4 (MediaKit; Apple fr-fr, CNIL, matroska.org, VideoLAN). Hub 40 posts. Sources saved in the session scratch `sources/<slug>/`. Research: fr-tier4-research-2026-11-08.md § Batch 4 |
+| Tier 4, batch 5 | written and integrated 2026-11-08, no native review yet: ten local-only posts: reduire-taille-photo-iphone, extraire-son-video-iphone, ouvrir-fichier-rar-mac-iphone, compresser-pdf-mac (MediaKit; Apple fr-fr, RARLAB, The Unarchiver, Keka), sommeil-paradoxal (Observa; Inserm, SPF, Apple), puces-tiques-chien (Pawza; ESCCAP France), annuler-abonnement-apple (AllPaid; Apple fr-fr 118428, 118223, 118224, 120164, 118212), jours-feries-2027 (Soon.; Service-Public F2405), temps-d-ecran-iphone (EarnLock; Apple iOS 27 guide), echauffement-musculation (GymLogger X, LiftLog; Fradkin 2010, McCrary 2015, Ribeiro 2014). Hub 50 posts. Research: fr-tier4-research-2026-11-08.md § Batch 5 |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 56 s before French (2026-11-07), 80 s with French Tier 1 (2026-11-08, clean run, `--profile`). Hot spot: `_includes/tx-app.html` 44 s over 968 calls, then footer 30 s: each new language makes it worse; worth a map lookup before the next language |
 
@@ -133,9 +134,10 @@ entreprise, Outils de développement, Casse-tête, Jeux de société, Utilitaire
 Graphisme et design, Photo et vidéo, Références.
 
 Per-app tier names follow each app's French UI (fr-glossary.md): Premium for Observa (the English site says Pro),
-Soon., Shogiful, Xiangqiful, WanderWiki, EarnLock, Chessful; Pro+ for RightSplit; Pro for Pawza, Taskful Day,
-GymLogger X; Clippet Pro. Where the English site's tier name differs from the app, the French page follows the
-app, as German did.
+Soon., Shogiful, Xiangqiful, WanderWiki, EarnLock; Pro+ for RightSplit; Pro for Pawza, Taskful Day,
+GymLogger X, Chessful; Clippet Pro. Where the English site's tier name differs from the app, the French page follows the
+app, as German did. Exception, owner decision 2026-11-08: Chessful's tier is **Pro** on every language page (as in
+the store IAP names), although the app UI still says Premium until its fix ships.
 
 ## Keyword research
 
@@ -302,6 +304,8 @@ Found in the Tier 4 batch 3 reviews (2026-11-08): an H2 reshaped around the sear
 
 Found in the Tier 4 batch 4 reviews (2026-11-08, local-only pages): a versioned watchOS 8 guide page used instead of the current fr-fr page; a source's « nécessaire » softened to « conseille » and a « durée idéale » turned into « recommande »; a source's internal inconsistency settled silently (state both values); « ce sont les X qui présentent le danger » (reverses the meaning: « c’est pour les X que »); « et collègues » (« et coll. »); « le conseil général » for general advice; « vous classer seul » (gendered); a quote credited to a PDF when it comes from the page presenting it; a 2023 Service-Public « actualité » cited as current without its date and « ancien » flag; « personne physique » in a fines sentence (readers take it for the consumer); an app-page paraphrase adding a picker the app doesn't have; « le bouton d’ajout » where Apple says « le bouton Modifier »; « C’est là qu’intervient X »; « La question est moins X que Y »; « La conséquence pratique est simple. »; near-verbatim sentences from Vidal, ameli or CNIL (paraphrase; one short attributed phrase at most).
 
+Found in the Tier 4 batch 5 reviews (2026-11-08): U+00A0 after « min » instead of before it in read_time; an app-UI example figure carried into a context where it is absurd; « l’un de deux gestes »; « la fiche ne précise pas si… » used to speculate; « sont démontrés » for “can be demonstrated”; « aucune différence » for “no significant difference”; a heading that calls every option free when one source doesn't say so; « il faut donc » turning an official page's silence into a claim; « Ensuite, X et Y demandent Pro » when Y was already locked; « varient » for « peuvent varier »; English quotes left where a paraphrase works; phone verbs (« Appuyez ») in Mac steps; « écraser » for pressing a tick; « consultez-le » after a sentence about the dog; AfterShift's stage labels attributed to Observa; « Elle » for Apple (Apple's French pages use the masculine); iOS 26 how-to sections in an iOS 27 page.
+
 ## Decisions from the Tier 1 reviews (2026-11-08)
 
 - Apple's sleep stages in prose: éveil, sommeil paradoxal, sommeil lent, sommeil profond (Apple FR). Observa's UI label « Noyau » is not used in prose; AfterShift quotes its own UI labels (Éveillé, Léger, Profond, Paradoxal).
@@ -339,7 +343,7 @@ Found in the Tier 4 batch 4 reviews (2026-11-08, local-only pages): a versioned 
 - Tier 1 pages that send readers to an app not sold in France get the same note as Shogi Wars: the French AllPaid FAQ now says Rocket Money is not
   sold in France and points to the guide; its budget FAQ names Bankin’, Linxo and YNAB instead of Monarch Money and Copilot (not sold in France).
 - Apple Screen Time in iOS 27: « Temps accordés » (how long per day, the old App Limits) and « Programme de temps d’écran » (when, the old
-  Downtime), checked against support.apple.com/en-us/guide/iphone/iphb0c7313c9/ios on 2026-11-08. Old names only « sur iOS 18 et versions antérieures ».
+  Downtime), checked against support.apple.com/en-us/guide/iphone/iphb0c7313c9/ios on 2026-11-08. Old names only « sur iOS 26 et versions antérieures » (corrected 2026-11-08: the iOS 26 guide still uses them).
 
 ## Decisions from Tier 3 batch 1 (2026-11-08)
 
@@ -412,6 +416,15 @@ Found in the Tier 4 batch 4 reviews (2026-11-08, local-only pages): a versioned 
 - App facts corrected in passing: AfterShift's debt chart shows one label (« Dette en hausse », « Stable », « En récupération ») for the trend over the last 12 cycles, not one per cycle (EN, DE, FR app pages and the 3x8 post). Observa page claims that contradict the blueprint are logged, not changed (ISSUES.md).
 - Inbound links: Apple Health metrics post (resting heart rate, deep sleep, VO₂ max), night-shift sleep post (sleep debt), vaccination post (deworming), deload post (sets per muscle), elevator post (metadata), Mac media post (MKV), subscriptions post (3-click cancellation), countdown guide « À lire aussi » (Noël).
 
+## Decisions from Tier 4 batch 5 (2026-11-08)
+
+- Screen Time: iOS 27 names first (« Gérer le temps d’écran », temps accordés, programme de temps d’écran); « Temps d’arrêt » and « Limites d’app » are the iOS 26-and-earlier names (Apple's iOS 26 guide still uses them; « iOS 18 et versions antérieures » corrected sitewide in French). No « Ignorer la limite » button names: none appear on Apple's fr-fr guides.
+- Apple subscriptions: iPhone « Annuler l’abonnement », Mac and Windows « Résilier l’abonnement », as Apple writes each; the expired-subscription message « s’affiche en rouge ».
+- Observa's own French stage labels are « Éveillé », « Noyau » (Core), « Profond », « REM »; « Léger » is AfterShift's. Pages use Apple's stage names for Santé and quote Observa's only as its UI.
+- Free MediaKit paths are named first where they exist: « Compresser » and « Redimensionner » for images, « Convertir » for audio (it accepts a video), PDF compression; « Extraire » (audio and archives) is Pro after the 3-day trial, batches locked even during the trial.
+- EarnLock halfway wording corrected in French (I-0085): the Screen Time guide, the blocking post and the steps post now say « une partie de vos apps bloquées s’ouvre pour environ une heure, une fois par jour ».
+- Inbound links: compress-a-video post (photo size), MKV post (audio), Mac media post (RAR, PDF), sleep-debt post (paradoxical sleep), deworming post (ticks), 3-click post (Apple subscriptions), Noël post and countdown guide (public holidays), blocking post (Screen Time), rest-between-sets post (warm-up).
+
 ## House rules carried over
 
 - No dashes; no roadmaps or dated promises; prices, counts, platforms and dates only through tokens and includes.
@@ -454,6 +467,8 @@ Found in the Tier 4 batch 4 reviews (2026-11-08, local-only pages): a versioned 
 | /fr/journal/ hub front matter, /fr/llms.txt (10 lines, 4 query moves, Journal lines), inbound links on 9 French pages | main session | checked in the gate (i18n check, seo-audit, preview at 320 px and desktop) | n/a | no native review yet |
 | Tier 4 batch 4: 10 local-only journal pages | one writer agent (Sonnet) each | reviewers R-media-4c, R-health-4c, R-sleep-pet, R-mixed-4c 2026-11-08 (Opus; every source re-fetched live, source diff claim by claim, app claims against blueprint §10 and the catalogs, copy-editing, typography, SEO): about 74 must-fix, e.g. a reversed meaning on toxocariasis and children, invented Apple labels and menu paths, a dropped condition on deworming frequency, an outdated watchOS guide, overstated scope of the 3-click law, long verbatim quotes | n/a | no native review yet |
 | /fr/journal/ hub front matter, /fr/llms.txt (10 lines, Journal line, query moves), inbound links on 9 French pages | main session | checked in the gate (i18n check, seo-audit, preview at 320 px and desktop) | n/a | no native review yet |
+| Tier 4 batch 5: 10 local-only journal pages | one writer agent (Sonnet) each | reviewers R-media-5a, R-media-5b, R-health-pet-5, R-apple-5, R-misc-5 2026-11-08 (Opus; every source re-fetched live, source diff, app claims against blueprint §10 and the catalogs, copy-editing, typography, SEO): about 70 must-fix, e.g. iOS 26 how-to content on an iOS 27 page, Keka called free, AfterShift stage labels given to Observa, hardened study hedges, an absurd example figure, batches implied free during the trial | n/a | no native review yet |
+| /fr/journal/ hub front matter, /fr/llms.txt (10 lines, Journal line), inbound links on 10 French pages, three French EarnLock halfway fixes, iOS 26 naming fix, four read_time spacing fixes | main session | checked in the gate (i18n check, seo-audit, preview) | n/a | no native review yet |
 
 ## Apps still on English screenshots
 

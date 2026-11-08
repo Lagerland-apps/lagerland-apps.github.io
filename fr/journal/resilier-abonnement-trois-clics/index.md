@@ -30,7 +30,7 @@ faq:
   - q: "Que faire si l’entreprise n’affiche pas de bouton de résiliation ou refuse ?"
     a: "D’après deux articles de Service-Public.fr de juin 2023 (mis à jour le 14 septembre 2023), un manquement du professionnel est sanctionné d’une amende administrative de 15 000 € au maximum si le professionnel est une personne physique et de 75 000 € au maximum s’il est une personne morale. Face à un refus alors que vous respectez les conditions, la fiche conseille une réclamation écrite, puis un médiateur de la consommation, puis le tribunal compétent. Vous pouvez aussi faire un signalement sur SignalConso, visible par les agents de la DGCCRF."
   - q: "Comment résilier un abonnement acheté dans une app sur iPhone ?"
-    a: "Dans Réglages, touchez votre nom, puis Abonnements, touchez l’abonnement concerné et « Annuler l’abonnement ». Faites défiler l’écran si le bouton n’apparaît pas. Si le bouton Annuler ne s’affiche pas ou si un message d’expiration apparaît en rouge, Apple indique que l’abonnement est déjà résilié."
+    a: "Dans Réglages, touchez votre nom, puis Abonnements, touchez l’abonnement concerné et « Annuler l’abonnement ». Faites défiler l’écran si le bouton n’apparaît pas. Si le bouton Annuler ne s’affiche pas ou si un message d’expiration s’affiche en rouge, Apple indique que l’abonnement est déjà résilié."
   - q: "AllPaid résilie-t-elle mes abonnements à ma place ?"
     a: "Non. AllPaid ne résilie rien et ne se connecte pas à votre banque. Vous saisissez la date de fin d’un contrat, son éventuel renouvellement automatique et le montant du renouvellement, et l’app vous rappelle la date avant que le contrat se renouvelle. La résiliation reste à faire auprès du professionnel."
 mentioned_apps:
@@ -101,7 +101,9 @@ Pour l’assurance habitation, la [fiche de Service-Public.fr](https://www.servi
 
 ## Résilier un abonnement Apple
 
-Un abonnement acheté dans une app ou auprès d’Apple se résilie par le chemin d’Apple. [Sur iPhone](https://support.apple.com/fr-fr/118428), dans Réglages, touchez votre nom, puis Abonnements, touchez l’abonnement concerné, puis « Annuler l’abonnement » (faites défiler l’écran si le bouton n’apparaît pas). Apple précise que, si le bouton Annuler ne s’affiche pas ou si un message d’expiration apparaît en rouge, l’abonnement est déjà résilié. Les sources citées ici ne disent rien de l’application de la loi à ces abonnements. Pour retrouver tous les abonnements, Apple et les autres, suivez [l’audit pas à pas](/fr/journal/find-every-recurring-charge/).
+Un abonnement acheté dans une app ou auprès d’Apple se résilie par le chemin d’Apple. [Sur iPhone](https://support.apple.com/fr-fr/118428), dans Réglages, touchez votre nom, puis Abonnements, touchez l’abonnement concerné, puis « Annuler l’abonnement » (faites défiler l’écran si le bouton n’apparaît pas). Apple précise que, si le bouton Annuler ne s’affiche pas ou si un message d’expiration s’affiche en rouge, l’abonnement est déjà résilié. Les sources citées ici ne disent rien de l’application de la loi à ces abonnements. Pour retrouver tous les abonnements, Apple et les autres, suivez [l’audit pas à pas](/fr/journal/find-every-recurring-charge/).
+
+Les étapes d’Apple pour annuler un abonnement sur chaque appareil et pour demander un remboursement sont détaillées dans notre article [annuler un abonnement Apple](/fr/journal/annuler-abonnement-apple/).
 
 ## Ne pas laisser passer la date limite avec AllPaid
 

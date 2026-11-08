@@ -119,7 +119,7 @@ Aucune des sources officielles consultées ne donne le prix d’un passeport eur
 
 Une copie sur le téléphone ne remplace pas le passeport : c’est le document original, rempli par le vétérinaire, que demandent les textes cités. Elle aide en revanche à retrouver une date ou un numéro quand le passeport n’est pas sous la main.
 
-[Pawza](/fr/apps/pawza/) est une application de carnet de santé pour animaux sur iPhone et iPad. Elle permet de scanner un document du vétérinaire, lu sur l’appareil par Apple Vision, de conserver des fiches avec leurs pièces jointes et d’y noter chaque vaccin avec sa date d’administration, la date du prochain rappel et le numéro de lot. Les rappels de vaccin se programment, et la carte d’urgence réunit les informations de la puce de l’animal. La version gratuite comprend 10 scans de documents.
+[Pawza](/fr/apps/pawza/) est une application de carnet de santé pour animaux. Elle permet de scanner un document du vétérinaire, lu sur l’appareil par Apple Vision, de conserver des fiches avec leurs pièces jointes et d’y noter chaque vaccin avec sa date d’administration, la date du prochain rappel et le numéro de lot. Les rappels de vaccin se programment, et la carte d’urgence réunit les informations de la puce de l’animal. La version gratuite comprend 10 scans de documents.
 
 ## À retenir
 

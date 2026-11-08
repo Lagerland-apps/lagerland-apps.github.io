@@ -94,6 +94,8 @@ Soon. est disponible en 36 langues, dont le français.
 - Elle ne partage pas un compte à rebours en direct avec d’autres personnes. On partage une carte en image, avec un petit filigrane Soon. dans la version gratuite.
 - Elle n’est pas gratuite sans limite : au-delà de 5 événements, il faut Premium.
 
+Pour les autres dates de l’année, notre article [jours fériés 2027](/fr/journal/jours-feries-2027/) liste chaque jour férié avec son jour de la semaine, d’après Service-Public.
+
 ## Compter les jours sans app
 
 Sans app, le calcul reste simple : on compte les jours entre aujourd’hui et le 25 décembre sur un calendrier, papier ou numérique, et on recommence chaque jour. Cela suffit pour une fois. Une app évite de refaire le calcul et affiche le résultat là où vous regardez.

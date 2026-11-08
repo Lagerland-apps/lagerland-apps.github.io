@@ -31,7 +31,7 @@ faq:
   - q: "Le sommeil profond diminue-t-il avec l’âge ?"
     a: "Oui, d’après l’Inserm : le sommeil lent est plus profond pendant la croissance, jusque vers 20 ans, puis il devient minoritaire avec l’âge et laisse la place à un sommeil lent plus léger. Santé publique France ajoute qu’avec l’avancée en âge les cycles raccourcissent et que le sommeil, souvent entrecoupé de réveils, est moins riche en sommeil lent profond."
   - q: "Mon Apple Watch affiche peu de sommeil profond : faut-il s’inquiéter ?"
-    a: "Apple précise que la montre estime la durée de chaque phase, et aucune source consultée ne fixe de seuil en dessous duquel le sommeil profond serait trop court. Mieux vaut regarder plusieurs nuits qu’une seule. Si des troubles du sommeil durent plus de trois mois et affectent la vie quotidienne ou la santé, Santé publique France indique qu’il est nécessaire de consulter son médecin traitant. Ce texte ne constitue pas un avis médical."
+    a: "Apple précise que la montre estime la durée de chaque phase, et aucune source consultée ne fixe de seuil en dessous duquel le sommeil profond serait trop court. Si des troubles du sommeil durent plus de trois mois et affectent la vie quotidienne ou la santé, Santé publique France indique qu’il est nécessaire de consulter son médecin traitant. Ce texte ne constitue pas un avis médical."
 mentioned_apps:
   - observa
 read_time: "6 min de lecture"

@@ -3,7 +3,7 @@ layout: journal
 slug: compress-a-video-for-email
 ref: /journal/compress-a-video-for-email/
 permalink: /de/journal/compress-a-video-for-email/
-translated_from: 2026-10-29
+translated_from: 2026-11-08
 last_updated: 2026-11-08
 date: 2026-10-29
 title: "Video für E-Mail komprimieren: die Größenlimits und die Rechnung mit der Bitrate"

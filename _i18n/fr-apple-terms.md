@@ -69,8 +69,8 @@ Abbreviations: ap = apps.apple.com/fr, ah = https://www.apple.com/fr/health/, ig
 |---|---|---|---|
 | Settings | l'app Réglages; Réglages Système (Mac) | https://support.apple.com/fr-fr/guide/iphone/iphbfa595995/ios ; https://support.apple.com/fr-fr/108922 | |
 | Screen Time | « Temps d'écran » | https://support.apple.com/fr-fr/guide/iphone/iphbfa595995/ios | Quoted in the iOS 27 guide; bare in the iOS 18 article |
-| Downtime (iOS 18 and earlier) | « Temps d'arrêt » | https://support.apple.com/fr-fr/guide/iphone/iphb0c7313c9/18.0/ios/18.0 | iOS 27 replaced Downtime/App Limits with programmes and temps accordés |
-| App Limits (iOS 18 and earlier) | « Limites d'app » | same | |
+| Downtime (iOS 26 and earlier; corrected 2026-11-08) | « Temps d'arrêt » | https://support.apple.com/fr-fr/guide/iphone/iphb0c7313c9/18.0/ios/18.0 | iOS 27 replaced Downtime/App Limits with programmes and temps accordés |
+| App Limits (iOS 26 and earlier) | « Limites d'app » | same | |
 | Screen Time Schedules (iOS 27) | « Programme de temps d'écran »; programmes | https://support.apple.com/fr-fr/guide/iphone/iphb0c7313c9/ios ; EN: https://support.apple.com/en-us/guide/iphone/iphb0c7313c9/ios | |
 | Time Allowances (iOS 27) | « Temps accordés »; « Temps autorisés » (menu label on the same page) | same | Apple uses both spellings on one page (accordés in the body, autorisés as the tap target) |
 | Always Allowed | « Toujours autorisées » | same | |
@@ -281,3 +281,9 @@ Not checked: Magazines & Newspapers, Kids, other Games subcategories (Action, Ca
 
 | Camera app | « Appareil photo » (personal-safety guide ips0d7a5df82, Sept 2026) vs « Caméra » (iOS 27 iPhone guide iphcf0b71b0e) | both checked 2026-11-08 | Apple's own pages disagree; the metadata post follows its source page; ISSUES.md |
 | Resting / walking heart rate (Watch app) | « Au repos », « Moy. en marchant », « Plage » | https://support.apple.com/fr-fr/guide/watch/apda88aefe4c/watchos (checked 2026-11-08) | Use the current watchOS guide, not the versioned watchOS 8 URL |
+| Screen Time (iOS 27) | « Gérer le temps d’écran », « Activer Activité dans les apps et sur les sites web », temps accordés, programme de temps d’écran | https://support.apple.com/fr-fr/guide/iphone/iphbfa595995/ios (checked 2026-11-08) | Older names « Limites d’app », « Temps d’arrêt » on iOS 26 and earlier |
+| Cancel a subscription | iPhone « Annuler l’abonnement »; Mac and Windows « Résilier l’abonnement » | https://support.apple.com/fr-fr/118428 (checked 2026-11-08) | Expired: the message « s’affiche en rouge » |
+| Request a refund | reportaproblem.apple.com, « J’aimerais », « Demander un remboursement » | https://support.apple.com/fr-fr/118223 (checked 2026-11-08) | No refund promise |
+| Reduce PDF size (Aperçu) | Fichier > Exporter, « Filtre Quartz », « Réduire la taille du fichier » | https://support.apple.com/fr-fr/guide/preview/prvw1509/mac (checked 2026-11-08) | |
+| Camera formats | « Haute efficacité », « Le plus compatible » (Réglages > Appareil photo > Formats) | https://support.apple.com/fr-fr/116944 (checked 2026-11-08) | |
+| Family Sharing citation | iphc90580097 is now « Obtenir des apps dans l’App Store » | checked 2026-11-08 | Replace the citation where it is used for parental controls |

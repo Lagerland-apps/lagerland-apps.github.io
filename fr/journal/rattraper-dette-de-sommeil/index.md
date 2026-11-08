@@ -83,6 +83,8 @@ Aucune des pages consultées ne promet un délai. Voici ce qu’elles conseillen
 - Avoir une chambre silencieuse et suffisamment obscure, à 18 °C idéalement.
 - Éviter un bain ou une douche trop chaude dans les deux heures précédant le coucher.
 
+La place du sommeil paradoxal dans la nuit, d’après l’Inserm, fait l’objet de notre article sur le [sommeil paradoxal](/fr/journal/sommeil-paradoxal/).
+
 ## En travail de nuit ou posté
 
 Le travail de nuit est un cas à part. Santé publique France rappelle que l’ANSES a répertorié en 2016 les effets avérés, probables et possibles du travail de nuit sur la santé, parmi lesquels l’insomnie, la dette de sommeil et le risque d’accidents liés à la somnolence.

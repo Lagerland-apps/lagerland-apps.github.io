@@ -96,6 +96,8 @@ Un minuteur fixe cette variable et, à l’inverse, il empêche le repos de racc
 
 Ces informations portent sur l’entraînement et ne remplacent pas un avis médical. Si vous avez une maladie cardiaque ou de l’hypertension, ou si vous avez des vertiges pendant des séries lourdes, demandez à un professionnel de santé comment aborder le travail lourd et le repos.
 
+Ce que disent les études sur l’échauffement avant les séries de travail est résumé dans notre article sur l’[échauffement en musculation](/fr/journal/echauffement-musculation/).
+
 ## Comment LiftLog chronomètre le repos
 
 [LiftLog](/fr/apps/liftlog/) lance le minuteur de repos quand vous enregistrez une série de travail. Les séries d’échauffement ne le déclenchent pas. Le minuteur s’affiche sous forme d’anneau, avec la série suivante en dessous, et propose des boutons pour ajouter ou retirer 15 secondes ou pour passer le repos.

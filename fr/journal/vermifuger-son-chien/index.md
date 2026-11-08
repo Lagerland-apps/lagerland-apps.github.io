@@ -100,6 +100,8 @@ ESCCAP France publie le même type de guide pour le chat (même PDF, seconde pag
 
 Pour le chaton, les pages d’ESCCAP donnent aussi 3, 5, 7 et 9 semaines (page sur les ascarides) ou s’arrêtent à 7 semaines avant le rythme mensuel, et la page sur les ascarides conseille au moins 4 fois par an pour tout chat adulte. Là encore, le vétérinaire tranche.
 
+Les puces et les tiques ont leur propre rythme de traitement, d’après ESCCAP France, détaillé dans notre article [tique chez le chien : que faire](/fr/journal/puces-tiques-chien/).
+
 ## Quel vermifuge, et la coproscopie
 
 Aucun produit n’est recommandé ici. ESCCAP France écrit que seul le vétérinaire peut prescrire le vermifuge adapté, selon l’âge, le mode de vie et l’état de santé de l’animal, et que les vermifuges ne se valent pas : ils n’agissent pas tous sur les mêmes vers, et certains ne conviennent pas aux chiots ni aux femelles gestantes. Demandez à votre vétérinaire d’établir un plan de vermifugation avec vous.
@@ -110,6 +112,6 @@ Les vermifuges sont pour la plupart éliminés dans les selles et se retrouvent 
 
 Ces rythmes ne servent que si l’on sait quand le dernier vermifuge a été donné. Le [dossier médical d’un animal](/fr/journal/pet-medical-records-what-to-keep/) range ces informations dans sa partie « prévention antiparasitaire » : nom du produit, dose, dates.
 
-[Pawza](/fr/apps/pawza/) est une app de carnet de santé pour animaux sur iPhone et iPad. Vous pouvez y ajouter un traitement avec sa dose et un rappel récurrent, puis toucher « Donné » sur la notification pour enregistrer la prise. Les rappels, les catégories de rappel personnalisées, les médicaments et le journal de soins font partie de la version gratuite, qui couvre un animal. Pawza ne propose pas de calendrier de vermifugation et ne choisit pas le produit : vous y entrez le rythme décidé avec votre vétérinaire. Les répétitions proposées sont quotidienne, hebdomadaire, mensuelle ou annuelle, sans répétition « tous les 3 mois » ; un rappel peut aussi être unique.
+[Pawza](/fr/apps/pawza/) est une app de carnet de santé pour animaux. Vous pouvez y ajouter un traitement avec sa dose et un rappel récurrent, puis toucher « Donné » sur la notification pour enregistrer la prise. Les rappels, les catégories de rappel personnalisées, les médicaments et le journal de soins font partie de la version gratuite, qui couvre un animal. Pawza ne propose pas de calendrier de vermifugation et ne choisit pas le produit : vous y entrez le rythme décidé avec votre vétérinaire. Les répétitions proposées sont quotidienne, hebdomadaire, mensuelle ou annuelle, sans répétition « tous les 3 mois » ; un rappel peut aussi être unique.
 
 Cette page donne une information générale et ne remplace pas l’avis d’un vétérinaire.

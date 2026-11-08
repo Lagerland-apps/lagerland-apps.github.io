@@ -9,7 +9,7 @@ date: 2026-11-08
 title: "Application anti scroll : le coût du déverrouillage doit se trouver hors de l’app"
 seo:
   title: "Application anti scroll : pourquoi les bloqueurs cèdent"
-  description: "Application anti scroll : appuyez assez fort et tout bloqueur de temps d’écran cède. Pourquoi le coût du déverrouillage doit se trouver hors de l’app."
+  description: "Application anti scroll : appuyez assez fort et la plupart des bloqueurs cèdent. Pourquoi le coût du déverrouillage doit se trouver hors de l’app."
   keywords:
     - "application anti scroll"
     - "app pour arrêter de scroller"
@@ -19,14 +19,14 @@ seo:
     - "limiter le temps d’écran"
     - "bouger pour débloquer ses applications"
     - "earnlock"
-lede: "Tous les bloqueurs de temps d’écran de l’App Store ont le même secret : si vous appuyez assez fort, ils cèdent. Un court essai sur la raison pour laquelle chaque app de cette catégorie finit par ajouter une échappatoire, et sur ce qu’il faut construire à la place."
+lede: "La plupart des bloqueurs de temps d’écran de l’App Store partagent un secret : si vous appuyez assez fort, ils cèdent. Un court essai sur la raison pour laquelle presque chaque app de cette catégorie finit par avoir une échappatoire, et sur ce qu’il faut construire à la place."
 quick_answer: "La plupart des bloqueurs de temps d’écran (Opal, one sec, ScreenZen, Forest) vous laissent franchir le verrou avec un bouton, un minuteur à attendre ou une règle que vous avez fixée vous-même. Le coût du déverrouillage se trouve dans l’app : vous pouvez donc le baisser au plus fort de l’envie. Un bloqueur qui tient doit faire payer le déverrouillage dans quelque chose que l’envie ne peut pas atteindre. Attendre ne fonctionne pas, parce qu’attendre revient à un simple toucher. Le mouvement fonctionne (pas, minutes d’exercice, calories actives), parce que vous le payez dans le reste de votre vie, hors de l’app. EarnLock est un bloqueur construit autour de cette contrainte : à la moitié de votre objectif d’activité quotidien, une partie de vos apps bloquées s’ouvre pour environ une heure, une fois par jour, et tout s’ouvre jusqu’à minuit à l’objectif complet."
-excerpt: "Tous les bloqueurs de temps d’écran de l’App Store ont une échappatoire, parce qu’une règle plus stricte vaut des avis à une étoile. La solution : mettre le coût du déverrouillage là où l’envie ne peut pas l’atteindre, mesuré par un capteur et payé dans le reste de votre vie. L’argument de fond derrière EarnLock."
+excerpt: "Presque tous les bloqueurs de temps d’écran de l’App Store ont une échappatoire, parce qu’une règle plus stricte vaut des avis à une étoile. La solution : mettre le coût du déverrouillage là où l’envie ne peut pas l’atteindre, mesuré par un capteur et payé dans le reste de votre vie. L’argument de fond derrière EarnLock."
 faq:
   - q: "Pourquoi la plupart des bloqueurs de temps d’écran ne bloquent-ils pas vraiment ?"
-    a: "Parce que chaque app de cette catégorie finit par ajouter une échappatoire : le bouton « I really need to use this » d’Opal, le minuteur à attendre de one sec, la pause de ScreenZen que l’on peut fermer, l’abandon d’un arbre dans Forest. Vous fixez les règles un dimanche tranquille et vous les rencontrez un jeudi soir, quand la fatigue et l’ennui sont là. Le vous du dimanche veut un mur, celui du jeudi veut une porte, et celui des deux qui pèse sur la note de l’App Store est livré dans la version suivante. Comme le coût du déverrouillage se trouve dans l’app, vous pouvez le baisser au plus fort de l’envie."
+    a: "Parce que presque chaque app de cette catégorie finit par avoir une échappatoire par défaut : le bouton Use de l’écran de blocage d’Opal, la pause pour respirer de one sec, la pause à attendre de ScreenZen, l’abandon d’un arbre dans Forest. Certaines proposent aussi des modes stricts, qu’il faut activer. Vous fixez les règles un dimanche tranquille et vous les rencontrez un jeudi soir, quand la fatigue et l’ennui sont là. Le vous du dimanche veut un mur, celui du jeudi veut une porte, et celui des deux qui pèse sur la note de l’App Store est livré dans la version suivante. Comme le coût du déverrouillage se trouve dans l’app, vous pouvez le baisser au plus fort de l’envie."
   - q: "En quoi EarnLock se distingue-t-il d’Opal, one sec, ScreenZen ou Forest ?"
-    a: "Le coût du déverrouillage d’EarnLock se trouve hors de l’app. Les apps bloquées le restent jusqu’à ce que vous atteigniez un objectif d’activité quotidien mesuré par Apple Santé : des pas dans la version gratuite, des minutes d’exercice ou des calories actives avec Premium. À la moitié de l’objectif, une partie de vos apps bloquées s’ouvre pour environ une heure, une fois par jour, et l’objectif complet ouvre tout jusqu’à minuit. Il n’y a ni bouton pour passer ni minuteur à attendre, et baisser l’objectif ne prend effet qu’au bout de 24 heures : une envie ne peut pas le renégocier sur-le-champ. Chaque app bloquée affiche l’écran d’EarnLock avec exactement ce qu’il reste, par exemple « 2026 pas avant déverrouillage », si bien que le déverrouillage devient un endroit où l’on peut aller à pied."
+    a: "Le coût du déverrouillage d’EarnLock se trouve hors de l’app. Les apps bloquées le restent jusqu’à ce que vous atteigniez un objectif d’activité quotidien mesuré par Apple Santé : des pas dans la version gratuite, des minutes d’exercice ou des calories actives avec Premium. À la moitié de l’objectif, une partie de vos apps bloquées s’ouvre pour environ une heure, une fois par jour, et l’objectif complet ouvre tout jusqu’à minuit. Il n’y a ni bouton pour passer ni minuteur à attendre, et une fois l’objectif baissé, il ne peut plus l’être pendant 24 heures : une envie ne peut pas le renégocier encore et encore. Chaque app bloquée affiche l’écran d’EarnLock avec exactement ce qu’il reste, par exemple « 2026 pas avant déverrouillage », si bien que le déverrouillage devient un endroit où l’on peut aller à pied."
   - q: "Que faire un jour où je ne peux vraiment pas atteindre l’objectif ?"
     a: "La moitié compte quand même : à 50 % de l’objectif, une partie de vos apps bloquées s’ouvre pour environ une heure, une fois par jour. Pour les vraies urgences, EarnLock propose un déverrouillage d’urgence par jour, protégé par un calcul. Vous résolvez un calcul à deux chiffres, choisissez 15, 30 ou 60 minutes, et les apps s’ouvrent. Le calcul suffit à freiner un réflexe et reste assez rapide pour une urgence réelle. Ensuite, le suivant n’est pas disponible avant le lendemain."
   - q: "Pourquoi EarnLock n’a-t-il ni compte, ni serveur, ni SDK d’analyse ?"
@@ -37,15 +37,17 @@ mentioned_apps:
 read_time: "8 min de lecture"
 ---
 
-Tous les bloqueurs de temps d’écran de l’App Store ont le même secret : si vous appuyez assez fort, ils cèdent. Il s’agit ici des bloqueurs que l’on installe pour soi-même, pas d’un contrôle parental.
+La plupart des bloqueurs de temps d’écran de l’App Store partagent un secret : si vous appuyez assez fort, ils cèdent. Il s’agit ici des bloqueurs que l’on installe pour soi-même, pas d’un contrôle parental.
 
-Ouvrez [Opal](/fr/alternatives/opal/) en pleine session et touchez « I really need to use this ». Ouvrez [one sec](/fr/alternatives/one-sec/) et attendez les dix secondes. Ouvrez [ScreenZen](/fr/alternatives/screenzen/) et fermez la pause. [Forest](/fr/alternatives/forest/) vous laisse abandonner un arbre. Même Brick, qui va jusqu’à vous envoyer un tag NFC physique, se déverrouille dès que vous allez jusqu’au tag.
+Atteignez une limite dans [Opal](/fr/alternatives/opal/) et touchez Use sur son écran de blocage. Ouvrez [one sec](/fr/alternatives/one-sec/) et faites l’exercice de respiration. Ouvrez [ScreenZen](/fr/alternatives/screenzen/) et attendez la fin de la pause. [Forest](/fr/alternatives/forest/) vous laisse abandonner un arbre. Même Brick, qui va jusqu’à vous envoyer un tag NFC physique, se déverrouille dès que vous allez jusqu’au tag.
+
+Les modes stricts font exception. Une session Deep Focus d’Opal ne peut pas être arrêtée avant la fin, et one sec et ScreenZen proposent aussi des blocages stricts. Chacun est un mode qu’il faut activer, et Opal garde un Emergency Pass qui ouvre tout pendant une heure, une fois par semaine.
 
 Ce que ces apps ajoutent, c’est de la friction, ce qui n’est pas la même chose que bloquer.
 
 Un blocage a un coût que l’on ne peut pas payer au plus fort de l’envie. Une friction a un coût que l’on paie en deux touchers, et la conception repose sur l’*espoir* que vous ne le ferez pas.
 
-Les notes de l’App Store expliquent pourquoi chaque app de cette catégorie finit par ajouter une échappatoire. Vous installez le bloqueur un dimanche après-midi tranquille et vous le rencontrez un jeudi soir de fatigue et d’ennui. Le dimanche, vous voulez un mur. Le jeudi, vous voulez une porte. Celui des deux qui pèse sur la répartition des notes est livré dans la version suivante.
+Les notes de l’App Store expliquent pourquoi presque chaque app de cette catégorie finit par avoir une échappatoire. Vous installez le bloqueur un dimanche après-midi tranquille et vous le rencontrez un jeudi soir de fatigue et d’ennui. Le dimanche, vous voulez un mur. Le jeudi, vous voulez une porte. Celui des deux qui pèse sur la répartition des notes est livré dans la version suivante.
 
 Les apps finissent donc avec une porte, et elle s’ouvre plus facilement à chaque version.
 
@@ -55,11 +57,11 @@ Si le coût du déverrouillage se trouve dans l’app, vous pouvez le baisser. V
 
 Le coût doit se trouver là où l’envie ne peut pas l’atteindre. Deux candidats raisonnables : le temps et le corps.
 
-Le temps est déjà pris par le modèle d’attente de one sec et de ScreenZen. Il ne fonctionne pas, parce qu’attendre revient à un simple toucher. Vous posez le téléphone, vous le reprenez, dix secondes ont passé et le verrou a disparu. Vous avez payé en attention, justement ce que vous cherchiez à protéger, et l’attente ne vous apporte rien dont vous profiterez plus tard.
+Le temps est déjà pris par le modèle d’attente de one sec et de ScreenZen. Il ne fonctionne pas, parce qu’attendre revient à un simple toucher. Vous posez le téléphone, vous le reprenez, la pause est passée et le verrou a disparu. Vous avez payé en attention, justement ce que vous cherchiez à protéger, et l’attente ne vous apporte rien dont vous profiterez plus tard.
 
 Reste le corps. Si le déverrouillage coûte des pas, des minutes d’exercice ou des calories actives, vous ne pouvez pas le payer depuis le canapé. Il faut sortir, se mettre au sol ou bouger dans la pièce. Ce qui rend la conception défendable, et pas seulement stricte, c’est que votre vie *profite aussi* du paiement. Je ne vois pas d’autre coût de déverrouillage à la fois réel et utile.
 
-C’est ce que fait [EarnLock](/fr/apps/earnlock/). Les apps bloquées le restent jusqu’à ce que vous atteigniez un objectif d’activité quotidien mesuré par Apple Santé : des pas dans la version gratuite, des minutes d’exercice ou des calories actives avec Premium. À la moitié de l’objectif, une partie de vos apps bloquées s’ouvre pour environ une heure, une fois par jour ; l’objectif complet ouvre tout jusqu’à minuit. Vous choisissez l’objectif un jour où tout va bien, et le baisser ne prend effet qu’au bout de 24 heures : le vous du jeudi ne peut donc pas le renégocier sur-le-champ.
+C’est ce que fait [EarnLock](/fr/apps/earnlock/). Les apps bloquées le restent jusqu’à ce que vous atteigniez un objectif d’activité quotidien mesuré par Apple Santé : des pas dans la version gratuite, des minutes d’exercice ou des calories actives avec Premium. À la moitié de l’objectif, une partie de vos apps bloquées s’ouvre pour environ une heure, une fois par jour ; l’objectif complet ouvre tout jusqu’à minuit. Vous choisissez l’objectif un jour où tout va bien, et une fois baissé, il ne peut plus l’être pendant 24 heures : le vous du jeudi ne peut donc pas le renégocier encore et encore.
 
 ## Pourquoi l’écran de blocage compte
 
