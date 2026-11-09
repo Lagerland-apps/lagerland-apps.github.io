@@ -275,9 +275,9 @@ related_journal:
   anchor: "PPL, Upper/Lower, or 5/3/1: choosing a program you will actually finish"
 
 ratings:
-  value: "4.8"
-  count: 17
-  last_synced: "2026-06-22"
+  value: "4.6"
+  count: 18
+  last_synced: "2026-11-09"
 last_updated: 2026-11-08
 ---
 GymLogger X is a strength training log for iPhone, with an Apple Watch app. Every set row shows what you lifted last time, supersets and giant sets log like straight sets, and the plate calculator loads the bar from the plates your gym has. You can follow one of 44 ready-made programs (6 free, 38 with Pro) or let the Smart Program Creator build one around your equipment, schedule, goals, and injuries. With Pro, Insights reads your own history and shows readiness, fatigue, weekly load ratio, muscle balance, and a plateau status for each lift, worked out by fixed rules on your iPhone. On Apple Watch you log sets, see live heart rate, and can let the rest timer tell you when your heart rate has recovered; the workout starts on the iPhone. The app has 1,500 exercises, 12 widgets, and two Live Activities, and runs in 40 languages. There are no ads and no account, and workouts sync through your own iCloud. The core is free; Pro costs {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once.
