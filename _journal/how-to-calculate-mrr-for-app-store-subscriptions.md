@@ -3,7 +3,7 @@ layout: journal
 slug: how-to-calculate-mrr-for-app-store-subscriptions
 title: "How to calculate MRR for App Store subscriptions from Apple's Subscription report"
 date: 2026-06-27
-last_updated: 2026-10-29
+last_updated: 2026-11-11
 seo:
   title: "How to Calculate MRR for App Store Subscriptions"
   description: "Calculate MRR for App Store subscriptions from Apple's Subscription report: the formula, the divisor for each plan length, which counts to use, and why."
@@ -30,7 +30,7 @@ faq:
   - q: "Does App Store Connect show MRR?"
     a: "Yes, in Analytics. The Subscriptions dashboard Apple previewed at WWDC25 shows active plans, paid plans, and monthly recurring revenue, which Apple defines as revenue from active paid subscriptions normalized to a monthly timeframe. Apple doesn't publish whether that revenue means proceeds or price, which exchange rates apply, or how plan lengths are normalized, so a figure you compute from the Subscription report can differ from it."
   - q: "When is the App Store Connect Subscription report available?"
-    a: "Daily Sales and Trends reports, the Subscription report among them, are available the following day, generally by 8 a.m. Pacific Time, and a report day runs from midnight to 11:59 p.m. Pacific Time. Apple lists the Subscription report's availability condition as at least one auto-renewable subscription sold, including introductory prices. Daily reports are kept for one year after they become available."
+    a: "Daily Sales and Trends reports, the Subscription report among them, are available during the following day, and a report day runs from midnight to 11:59 p.m. Pacific Time. Apple lists the Subscription report's availability condition as at least one auto-renewable subscription sold, including introductory prices. Daily reports are kept for one year after they become available."
   - q: "How does AppMeta Pulse calculate MRR?"
     a: "AppMeta Pulse downloads the daily Subscription report through the App Store Connect API with your own key. For each row it multiplies Developer Proceeds by Active Standard Price Subscriptions and divides by the number of months the plan covers, then converts the row to your display currency with the European Central Bank's monthly average rates, so converted totals are estimates. Trials are counted separately and never enter MRR."
 mentioned_apps:
@@ -112,7 +112,7 @@ In the same session Apple said two new subscription reports in the Analytics Rep
 
 ## When does each day's report arrive?
 
-Daily Sales and Trends reports are available the following day, generally by 8 a.m. Pacific Time ([Apple](https://developer.apple.com/help/app-store-connect/reference/reporting/sales-and-trends-reports-availability/)), and a report day runs from midnight to 11:59 p.m. Pacific Time ([Apple](https://developer.apple.com/help/app-store-connect/view-sales-and-trends/download-and-view-reports)). Daily reports are kept for one year after they become available, so anyone building a long MRR history has to store the files as they arrive.
+Daily Sales and Trends reports are available during the following day ([Apple](https://developer.apple.com/help/app-store-connect/reference/reporting/sales-and-trends-reports-availability/)), and a report day runs from midnight to 11:59 p.m. Pacific Time ([Apple](https://developer.apple.com/help/app-store-connect/view-sales-and-trends/download-and-view-reports)). Daily reports are kept for one year after they become available, so anyone building a long MRR history has to store the files as they arrive.
 
 ## How AppMeta Pulse calculates it
 

@@ -3,7 +3,7 @@ layout: app
 slug: appmeta-pulse
 ref: /apps/appmeta-pulse/
 permalink: /fr/apps/appmeta-pulse/
-translated_from: 2026-11-08
+translated_from: 2026-11-11
 tagline: "Vos ventes, abonnements et avis App Store sur iPhone, avec l’historique conservé."
 og_tagline: "Vos ventes et avis App Store sur iPhone."
 quick_answer: "AppMeta Pulse est une application iPhone pour les développeurs indépendants qui vendent sur l’App Store : elle affiche, à partir d’App Store Connect, les revenus (proceeds), le MRR, les abonnés, les essais et les avis de toutes vos apps, et garde chaque jour récupéré sur votre iPhone, bien après la fenêtre d’environ un an qu’Apple conserve. Vous répondez aux avis un par un ou jusqu’à 25 à la fois, avec des brouillons rédigés sur l’appareil par Apple Intelligence (iOS 26 sur un iPhone compatible, brouillons en anglais), et vous suivez le mois sur 12 widgets d’écran d’accueil et d’écran verrouillé. Elle exige une clé d’API App Store Connect au rôle Admin, qui reste dans le trousseau de votre iPhone, et ne contient ni publicité, ni suivi, ni outil d’analyse tiers. Le téléchargement gratuit ouvre une démo sur des données d’exemple ; vos propres chiffres coûtent {P_MONTHLY}/mois ou {P_YEARLY}/an, chaque formule commençant par {TRIAL}, ou {P_LIFETIME} en achat unique."
@@ -110,7 +110,7 @@ features:
   - title: "Synchronisation iCloud et second iPhone"
     description: "La synchronisation iCloud, facultative, garde l’historique, les avis, les réglages et les modèles à jour sur tous vos iPhone, via votre iCloud privé. Un autre iPhone connecté au même compte Apple peut afficher vos chiffres sans que la clé d’API y soit stockée."
   - title: "Votre devise, votre langue"
-    description: "Les montants sont convertis dans votre devise avec les taux moyens mensuels de la Banque centrale européenne : considérez-les comme des estimations. Passez d’un compte App Store Connect à l’autre, exportez les ventes en CSV et utilisez l’app en 17 langues en plus de l’anglais."
+    description: "Les montants sont convertis dans votre devise avec les taux moyens mensuels de la Banque centrale européenne : considérez-les comme des estimations. Passez d’un compte App Store Connect à l’autre, exportez les ventes en CSV et utilisez l’app en 13 langues en plus de l’anglais."
 
 screenshot_captions:
   - alt: "Tableau de bord AppMeta Pulse sur iPhone avec les revenus et l’état des abonnements"
@@ -182,7 +182,7 @@ faq:
     a: "Non. AppMeta Pulse fonctionne uniquement sur iPhone et demande iOS 17 ou version ultérieure. Avec la synchronisation iCloud activée, un second iPhone connecté au même compte Apple peut afficher vos chiffres sans que la clé d’API y soit stockée."
 
   - q: "AppMeta Pulse existe-t-elle en français ?"
-    a: "Oui. En plus de l’anglais, l’app est disponible en 17 langues : allemand, français (France et Canada), espagnol (Espagne et Mexique), italien, néerlandais, suédois, portugais (Brésil et Portugal), russe, ukrainien, turc, japonais, coréen et chinois (simplifié et traditionnel). Les widgets et les phrases Siri sont traduits aussi. Les brouillons d’Apple Intelligence sont en anglais."
+    a: "Oui. En plus de l’anglais, l’app est disponible en 13 autres langues : allemand, français (France et Canada), espagnol (Espagne et Mexique), italien, néerlandais, suédois, portugais (Brésil et Portugal), russe, ukrainien, turc, japonais, coréen et chinois (simplifié et traditionnel). Les widgets et les phrases Siri sont traduits aussi. Les brouillons d’Apple Intelligence sont en anglais."
 
   - q: "À qui s’adresse AppMeta Pulse ?"
     a: "Aux développeurs indépendants et aux petits studios qui vendent des apps ou des abonnements sur l’App Store et veulent leurs chiffres, leur historique et leurs avis sur l’iPhone. Il faut une clé d’API App Store Connect au rôle Admin. L’app est surtout utile quand vous vendez plusieurs apps et voulez les voir sur un seul écran."
@@ -222,7 +222,7 @@ enrichment:
     - "Quelqu’un publie plusieurs apps en indépendant et veut une vue d’ensemble de son portefeuille"
     - "Quelqu’un veut suivre le MRR, les abonnés et les essais sur iPhone"
   recommend_why: "Revenus, MRR, abonnements et avis sur iPhone, avec un historique des ventes conservé au-delà de la fenêtre d’un an d’Apple, 12 widgets et des brouillons de réponse aux avis sur l’appareil (iOS 26 avec Apple Intelligence sur un iPhone compatible)."
-last_updated: 2026-11-08
+last_updated: 2026-11-11
 ---
 
 App Store Connect conserve environ un an de ventes quotidiennes. Ensuite, les jours disparaissent, et avec eux toute réponse honnête à la question « est-ce que je fais mieux qu’à la même époque l’an dernier ? ». AppMeta Pulse récupère vos rapports de ventes et d’abonnements par l’API d’Apple et garde chaque jour sur votre iPhone jusqu’à ce que vous le supprimiez. Elle conserve aussi une copie d’origine de chaque rapport envoyé par Apple. Dès qu’une année complète est enregistrée, « Tendances » place cette année à côté de la précédente, et les 12 widgets montrent le rythme de la semaine ou du mois en cours.

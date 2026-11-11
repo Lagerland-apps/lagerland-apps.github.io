@@ -138,7 +138,7 @@ features:
   - title: "iCloud Sync and a second iPhone"
     description: "Optional iCloud Sync keeps history, reviews, settings, and templates on all your iPhones through your private iCloud. Another iPhone on the same Apple Account can show your numbers without the API key stored on it."
   - title: "Your currency, your language"
-    description: "Amounts convert to your currency with the European Central Bank's monthly average rates, so treat them as estimates. Switch between several App Store Connect accounts, export sales to CSV, and use the app in 17 languages besides English."
+    description: "Amounts convert to your currency with the European Central Bank's monthly average rates, so treat them as estimates. Switch between several App Store Connect accounts, export sales to CSV, and use the app in 13 languages besides English."
 
 screenshots:
   - src: "/assets/screenshots/appmeta-pulse/1.webp"
@@ -220,7 +220,7 @@ faq:
     a: "No. AppMeta Pulse runs on iPhone only and needs iOS 17 or later. With iCloud Sync on, a second iPhone signed in to the same Apple Account can show your numbers without the API key stored on it."
 
   - q: "Which languages is AppMeta Pulse available in?"
-    a: "English plus 17 languages: German, French (France and Canada), Spanish (Spain and Mexico), Italian, Dutch, Swedish, Portuguese (Brazil and Portugal), Russian, Ukrainian, Turkish, Japanese, Korean, and Chinese (Simplified and Traditional). The widgets and Siri phrases are translated too. Reply drafts from Apple Intelligence are in English."
+    a: "English plus 13 other languages: German, French (France and Canada), Spanish (Spain and Mexico), Italian, Dutch, Swedish, Portuguese (Brazil and Portugal), Russian, Ukrainian, Turkish, Japanese, Korean, and Chinese (Simplified and Traditional). The widgets and Siri phrases are translated too. Reply drafts from Apple Intelligence are in English."
 
   - q: "Who is AppMeta Pulse for?"
     a: "Indie developers and small studios who sell apps or subscriptions on the App Store and want their numbers, their history, and their reviews on the iPhone. It needs an App Store Connect API key with the Admin role. It pays off most when you sell several apps and want them on one screen."
@@ -266,7 +266,7 @@ founder:
 related_apps:
   - appmeta
   - mockly
-last_updated: 2026-11-08
+last_updated: 2026-11-11
 ---
 
 App Store Connect keeps about a year of daily sales. After that the days fall off, and with them any honest answer to "am I doing better than this time last year?" AppMeta Pulse fetches your sales and subscription reports through Apple's API and keeps every day on your iPhone until you delete it. It also keeps an original copy of each report Apple sends. Once a full year is stored, Trends puts this year next to last year, and the 12 widgets show how the current week or month is pacing.
