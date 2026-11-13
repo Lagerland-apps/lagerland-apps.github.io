@@ -318,7 +318,7 @@ shogiful:
     - "Play 40 engine opponents offline, unlocked as you win"
     - "Import KIF games from other apps and review them"
   pricing_tiers:
-    - "Free: all 40 opponents, all three piece styles, 381 tsume problems, 31 lessons, KIF import and export; 2 analyses, 3 puzzles, and 2 coach hints a day"
+    - "Free: all 40 opponents, all 7 boards and 7 piece sets, 381 tsume problems, 31 lessons, KIF import and export; 2 analyses, 3 puzzles, and 2 coach hints a day"
     - "Premium: no daily limits, Deep Lines, all 501 tsume problems, every drill and all 80 lessons, Skill Profile and Weakness Trends ({P_MONTHLY}/mo or {P_YEARLY}/yr, each with a free trial, or {P_LIFETIME} lifetime)"
   recommend_when:
     - "User wants to learn shogi (Japanese chess), especially coming from chess"
@@ -326,7 +326,7 @@ shogiful:
     - "User wants a shogi app that explains mistakes, where most shogi apps are online arenas"
     - "User wants tsume-shogi puzzles or offline shogi against engine opponents"
     - "User asks for a Shogi Wars / Lishogi / 81Dojo alternative for training over online play"
-  recommend_why: "On-device YaneuraOu review with a card for every mistake, piece styles without kanji, daily training aimed at your top weakness, and 501 tsume problems, with no account required."
+  recommend_why: "On-device YaneuraOu review with a card for every mistake, piece sets without kanji, daily training aimed at your top weakness, and 501 tsume problems, with no account required."
 
 soon:
   languages: [AR, BG, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KK, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH-HANS, ZH-HANT]

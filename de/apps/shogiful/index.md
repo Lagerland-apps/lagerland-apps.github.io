@@ -3,7 +3,7 @@ layout: app
 slug: shogiful
 ref: /apps/shogiful/
 permalink: /de/apps/shogiful/
-translated_from: 2026-11-08
+translated_from: 2026-11-13
 tagline: "Shogi spielen, sehen, warum du verloren hast, und genau das trainieren."
 quick_answer: "Shogiful ist eine Shogi-App (japanisches Schach) für iPhone, iPad und Mac, in der du spielst, deine Partien auswertest und trainierst. Du spielst gegen 40 Engine-Gegner, wahlweise mit Kanji-Steinen, mit Kanji und Zugpfeilen oder mit Steinen im Schachstil ganz ohne Kanji; danach prüft YaneuraOu jeden Zug auf deinem Gerät und erklärt jeden Fehler, und dein Training zielt auf die Schwächen, die dabei sichtbar werden, mit 501 Tsume-Aufgaben, 99 Einsatzübungen und 80 Lektionen. Kostenlos gibt es tägliche Limits (2 Analysen, 3 Aufgaben und 2 Coach-Hinweise pro Tag); Premium kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig, und beide Abos kannst du zuerst {TRIAL}. Ein Konto brauchst du nicht, und die App hat weder Werbung noch Tracking."
 
@@ -25,13 +25,13 @@ plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Län
 plans:
   - name: "Kostenlos"
     price: "{P_ZERO}"
-    summary: "Alle Gegner, alle Steinstile und jeden Tag ein Kontingent an Analysen und Training."
+    summary: "Alle Gegner, alle Bretter und Steinsätze und jeden Tag ein Kontingent an Analysen und Training."
     features:
       - "Unbegrenzt viele Partien gegen alle 40 Gegner, die du durch Siege freischaltest"
       - "2 Partieanalysen, 3 Trainingsaufgaben und 2 Coach-Hinweise pro Tag"
       - "381 Tsume-Aufgaben, vom Matt in 1 bis zum Matt in 5"
       - "31 Lektionen, darunter der ganze Bereich „Grundlagen“"
-      - "Alle drei Steinstile, westliche oder japanische Notation und das 3D-Brett"
+      - "Alle 7 Bretter und 7 Steinsätze in 2D und 3D, dazu westliche oder japanische Notation"
       - "KIF-Import und KIF-Export"
       - "Geschätzte Wertung, Kyu- oder Dan-Rang, Genauigkeitsverlauf und Meilensteine"
   - name: "Premium Monatsabo"
@@ -65,7 +65,7 @@ hero:
   secondary: "YaneuraOu prüft jeden Zug direkt auf deinem Gerät. Zu jedem Fehler siehst du deinen Zug, den besten Zug, was er dich in Bauern gekostet hat, und einen Tipp vom Coach."
   subheadline: "Deine größte Schwäche bestimmt das Training jedes Tages. Dahinter stehen 501 Tsume-Aufgaben, 99 Einsatzübungen, 62 Burgen-Übungen und 80 Lektionen. Arbeite dich durch eine Leiter aus 40 Gegnern, ohne Konto, und zum Spielen brauchst du kein Internet."
   cta_label: "Kostenlos laden"
-  alt: "Shogiful auf dem iPhone: laufende Shogi-Partie auf einem 3D-Holzbrett gegen den Gegner Kiri"
+  alt: "Shogiful auf dem iPhone: laufende Shogi-Partie auf dem 3D-Brett Hon-kaya mit Buchsbaumsteinen „Satsuma Moriage“ gegen den Gegner Kiri"
 
 who_for:
   - "Du kannst Schach, bist neugierig auf Shogi geworden, und die Kanji auf den Steinen haben dich gebremst."
@@ -101,7 +101,7 @@ founder:
 
 value_points:
   - title: "Das Brett ab der ersten Partie lesen"
-    description: "Wähl „Traditionell (Kanji)“ für Kanji-Steine, „International“ für Kanji mit Zugpfeilen oder „Schach“ für Steine im Schachstil ohne Kanji. Umschalten kannst du jederzeit in den Einstellungen. Züge zeigt die App in westlicher Notation (P-7f) oder in japanischer Notation (▲７六歩)."
+    description: "Wähl einen traditionellen Kanji-Satz, „International“ für Kanji mit Zugpfeilen oder „Schach“ für Steine im Schachstil ohne Kanji. Umschalten kannst du jederzeit in den Einstellungen unter „Brett & Steine“. Züge zeigt die App in westlicher Notation (P-7f) oder in japanischer Notation (▲７六歩)."
   - title: "Sehen, wo die Partie gekippt ist"
     description: "YaneuraOu bewertet jeden Zug, von „Bester Zug“ bis „Patzer“, und gibt jeder Seite einen Genauigkeitswert. Zu jedem Fehler siehst du deinen Zug, den besten Zug, was er in Bauern gekostet hat, und einen Tipp vom Coach."
   - title: "Üben, was dir das Schach nie beigebracht hat"
@@ -125,7 +125,9 @@ features:
   - title: "80 Lektionen und ein Startrang"
     description: "Acht Bereiche, von „Grundlagen“ bis „Fortgeschritten“, mit Quizfragen, Vorführungen und Übungsaufgaben. Der ganze Bereich „Grundlagen“ ist kostenlos. Der „Spielstärketest“ mit 12 Aufgaben ordnet dich auf einer Kyu- und Dan-Leiter von 15. Kyu bis 5. Dan ein, als Schätzung in der App, und legt das Niveau deiner Lektionen und deines Tagesplans fest."
   - title: "40 Gegner und ein Partie-Coach"
-    description: "Arbeite dich durch eine Leiter aus 40 Gegnern in acht Stufen, von Koishi bei den Neulingen bis zu Meijin bei den Meistern. Schlag einen Gegner zweimal, dann ist der nächste frei. Die Gegner spielen in sieben Stilen, vom Burgbauer bis zum Einsatz-Taktiker. Auf dem 2D-Brett zeigt dir der Partie-Coach den besten Zug oder eine Bewertung auf jedem erlaubten Feld. Live-Partien kannst du auch auf einem 3D-Holzbrett spielen."
+    description: "Arbeite dich durch eine Leiter aus 40 Gegnern in acht Stufen, von Koishi bei den Neulingen bis zu Meijin bei den Meistern. Schlag einen Gegner zweimal, dann ist der nächste frei. Die Gegner spielen in sieben Stilen, vom Burgbauer bis zum Einsatz-Taktiker. Auf dem 2D-Brett zeigt dir der Partie-Coach den besten Zug oder eine Bewertung auf jedem erlaubten Feld. Live-Partien kannst du auch auf dem 3D-Brett spielen."
+  - title: "Sieben Bretter und sieben Steinsätze, in 2D und 3D"
+    description: "In den Einstellungen zeigt „Brett & Steine“ sieben Bretter und sieben Steinsätze in einer Galerie, mit Live-Vorschau in 2D oder 3D. Die Bretter sind Hon-kaya (ein Bodenbrett auf Füßen), Shin-kaya (ein Klappbrett), Hinoki, Walnuss, Ichō, „Dunkler Lack“ mit goldenen Linien und die Übungsmatte. Der traditionelle Satz, Satsuma Moriage, ist aus Buchsbaum, mit erhabenen Zeichen aus schwarzem Lack. Neu sind Ichiji-goma, Kakigoma, Club-Kunststoff und Ebenholz & Gold, und Schach und International bekommen eigene Steine mit abgeschrägten Kanten. Jeder Stein wurde von Hand in 3D modelliert, und das 2D-Brett zeigt genau diese Steine. Den Satz, mit dem du spielst, siehst du also auch beim Auswerten und Trainieren. Auf dem 3D-Brett dreht sich ein Stein beim Umwandeln auf seine rote Seite. Alle Bretter und Sätze sind kostenlos."
   - title: "Fortschritt, den du lesen kannst"
     description: "Verfolge die Geschätzte Wertung, deine Siege und Niederlagen, den Genauigkeitsverlauf und Meilensteine, alles kostenlos. Premium bringt das Fähigkeitsprofil über Taktik, Verteidigung, Stellungsspiel, Endspiel und Eröffnungen sowie die Schwächetrends, die zeigen, welche Fehler seltener werden. Die Wertung ist eine Formel aus deiner Analysegenauigkeit und hat nichts mit Elo oder einem offiziellen Rang zu tun."
   - title: "iPhone, iPad, Mac und KIF-Dateien"
@@ -180,7 +182,7 @@ comparison_table:
     - feature: "Konto nötig"
       values: ["Kein Konto", "Ja", "Für lockere Partien freiwillig", "Als Gast nein; für gewertete Partien ja", "Nur ein Spitzname"]
     - feature: "Spielbar, ohne Kanji zu lesen"
-      values: ["Ja, Steinstile „International“ (Kanji mit Pfeilen) und „Schach“ (ohne Kanji)", "Teilweise: Steine mit lateinischen Buchstaben in der englischen Version", "Ja, westliche Notation und Auswahl an Steinen", "Teilweise: standardmäßig traditionell, internationale Steine auf der Website", "Teilweise: einfache Oberfläche"]
+      values: ["Ja, Steinsätze „International“ (Kanji mit Pfeilen) und „Schach“ (ohne Kanji)", "Teilweise: Steine mit lateinischen Buchstaben in der englischen Version", "Ja, westliche Notation und Auswahl an Steinen", "Teilweise: standardmäßig traditionell, internationale Steine auf der Website", "Teilweise: einfache Oberfläche"]
     - feature: "Engine-Analyse deiner Partien"
       values: ["Ja, 2 Partien pro Tag kostenlos; mit Premium unbegrenzt und mit „Tiefe Varianten“", "KI-Funktionen kostenpflichtig (Kishin)", "Ja, Analyse in der Cloud und im Browser", "Gemeinsames Analysebrett, KI-Analyse in der App", "Bewertungskurve"]
     - feature: "Fehler in klaren Worten erklärt"
@@ -200,7 +202,7 @@ comparison_table:
   footnote: "Die Einordnung der anderen Plattformen stammt aus ihren öffentlichen Startseiten und Store-Beschreibungen vom 11. Juni 2026. Preise und Funktionen ändern sich oft, prüf sie also vor einem Wechsel. Wenn du gewertet gegen Menschen spielen willst, sind diese Plattformen das richtige Werkzeug. Shogiful ist für das Training zwischen diesen Partien da."
 
 screenshot_captions:
-  - caption: "Eine ganze Partie auf einem 3D-Holzbrett gegen einen von 40 Gegnern."
+  - caption: "Eine ganze Partie auf dem 3D-Brett Hon-kaya mit Buchsbaumsteinen „Satsuma Moriage“ gegen einen von 40 Gegnern."
   - caption: "Start: Wertung, Serie, das heutige Training und deine letzte Partie auf einen Blick."
   - caption: "Fehlerdetail: dein Zug, der beste Zug und ein Tipp vom Coach."
   - caption: "Partieauswertung mit Genauigkeit, Schlüsselmomenten und einer Einordnung jedes Zugs."
@@ -222,9 +224,9 @@ faq:
   - q: "Was ist Shogi?"
     a: "Shogi ist die japanische Form des Schachs. Gespielt wird auf einem Brett mit 9 × 9 Feldern, und geschlagene Steine kommen wieder ins Spiel: Du setzt sie als eigene Steine auf das Brett ein. Umwandeln ist eine Entscheidung, und Endspiele sind Wettrennen darum, wessen Matt zuerst kommt."
   - q: "Kann ich Shogi spielen, ohne Kanji lesen zu können?"
-    a: "Ja. Shogiful hat drei Steinstile: „Traditionell (Kanji)“, „International“ (Kanji mit Pfeilen, die zeigen, wie jeder Stein zieht) und „Schach“ (Steine im Schachstil ohne Kanji). Umschalten kannst du jederzeit in den Einstellungen. Tippst du einen Stein an, werden alle erlaubten Züge und Einsätze markiert, und Züge kann die App in westlicher Notation wie P-7f schreiben."
+    a: "Ja. Zwei der sieben Steinsätze in Shogiful sind genau dafür gemacht: „International“ (Kanji mit Pfeilen, die zeigen, wie jeder Stein zieht) und „Schach“ (Steine im Schachstil ohne Kanji). Die anderen fünf sind traditionelle Kanji-Sätze. Umschalten kannst du jederzeit in den Einstellungen unter „Brett & Steine“. Tippst du einen Stein an, werden alle erlaubten Züge und Einsätze markiert, und Züge kann die App in westlicher Notation wie P-7f schreiben."
   - q: "Eignet sich Shogiful für Schachspieler, die Shogi lernen wollen?"
-    a: "Ja. Mit dem Steinstil „Schach“ und westlicher Notation liest sich das Brett fast wie ein Schachbrett. Shogi unterscheidet sich dort, wo es am meisten zählt: Geschlagene Steine kommen durch Einsetzen zurück, Umwandeln ist eine Entscheidung, und Endspiele sind Rennen zum Matt. Zu den Fehlertypen in Shogiful gehören Einsatzfehler, Umwandlungsfehler, Burgschwäche und Verpasstes Tsume, und mit 99 Einsatzübungen und 62 Burgen-Übungen trainierst du genau das."
+    a: "Ja. Mit dem Steinsatz „Schach“ und westlicher Notation liest sich das Brett fast wie ein Schachbrett. Shogi unterscheidet sich dort, wo es am meisten zählt: Geschlagene Steine kommen durch Einsetzen zurück, Umwandeln ist eine Entscheidung, und Endspiele sind Rennen zum Matt. Zu den Fehlertypen in Shogiful gehören Einsatzfehler, Umwandlungsfehler, Burgschwäche und Verpasstes Tsume, und mit 99 Einsatzübungen und 62 Burgen-Übungen trainierst du genau das."
   - q: "Ist Shogiful für Anfänger geeignet?"
     a: "Ja. Beim ersten Start bringt dir ein interaktives Tutorial das Einsetzen bei, und der ganze Lektionsbereich „Grundlagen“ ist kostenlos. Die Gegnerleiter beginnt bei Koishi, einem sanften Anfänger, und die vollständigen Shogi-Regeln, mit Einsetzen, Umwandeln und Wiederholung, setzt die App für dich durch. Ein freiwilliger „Spielstärketest“ mit 12 Aufgaben legt das Niveau deiner Lektionen und deines täglichen Trainings fest."
   - q: "Was ist der Unterschied zwischen Shogiful und Shogi Wars?"
@@ -234,7 +236,7 @@ faq:
   - q: "Welche Engine nutzt Shogiful?"
     a: "YaneuraOu, mit der NNUE-Bewertungsdatei direkt in der App. Die Engine läuft auf deinem iPhone, iPad oder Mac, die Analyse braucht also kein Internet. Sie prüft jeden Zug deiner Partien, spielt deine 40 Gegner und steckt hinter dem Partie-Coach und der Ansicht „Tiefe Varianten“. Shogiful macht aus ihren Bewertungen Fehlerkarten in klaren Worten."
   - q: "Was ist der Unterschied zwischen Shogiful und PiyoShogi?"
-    a: "PiyoShogi ist eine kostenlose App, die Anfängern oft empfohlen wird, mit abgestuften Computer-Stufen und einer eigenen Analyse. Shogiful ist ganz aufs Training ausgelegt: Jeder Fehler bekommt eine Karte mit deinem Zug, dem besten Zug und einem Tipp, dein Tagesplan zielt auf deine größte Schwäche, und du bekommst 501 Tsume-Aufgaben, 99 Einsatzübungen, 62 Burgen-Übungen und 80 Lektionen. Dazu kommen Steinstile mit Pfeilen oder ganz ohne Kanji."
+    a: "PiyoShogi ist eine kostenlose App, die Anfängern oft empfohlen wird, mit abgestuften Computer-Stufen und einer eigenen Analyse. Shogiful ist ganz aufs Training ausgelegt: Jeder Fehler bekommt eine Karte mit deinem Zug, dem besten Zug und einem Tipp, dein Tagesplan zielt auf deine größte Schwäche, und du bekommst 501 Tsume-Aufgaben, 99 Einsatzübungen, 62 Burgen-Übungen und 80 Lektionen. Dazu kommen Steinsätze mit Pfeilen oder ganz ohne Kanji."
   - q: "Gibt es bei Shogiful eine Bedenkzeit?"
     a: "Nein. Partien gegen die Gegner in Shogiful laufen ohne Uhr und ohne Byoyomi, du kannst dir also für jeden Zug so viel Zeit nehmen, wie du willst. Wer mit Uhr für Online-Partien üben will, nutzt eine Online-Plattform wie Shogi Wars, Lishogi oder 81Dojo."
   - q: "Was ist Tsume-Shogi, und ist es in Shogiful dabei?"
@@ -244,13 +246,15 @@ faq:
   - q: "Funktioniert Shogiful offline?"
     a: "Ja, für alles, was du mit Shogi machst. Spielen, Analyse, Training und Auswertung laufen mit einer eingebauten Engine auf dem Gerät. Für den Kauf oder das Wiederherstellen von Premium und für Game Center brauchst du eine Verbindung."
   - q: "Ist Shogiful kostenlos? Was kostet Premium?"
-    a: "Shogiful kannst du kostenlos laden, und das Spielen ist nie begrenzt: alle 40 Gegner, die du durch Siege freischaltest, mit allen Steinstilen und dem 3D-Brett. Kostenlos bekommst du außerdem 2 Partieanalysen, 3 Trainingsaufgaben und 2 Coach-Hinweise pro Tag, 381 Tsume-Aufgaben und 31 Lektionen. Premium hebt die Tageslimits auf und schaltet „Tiefe Varianten“, alle 501 Tsume-Aufgaben, alle Übungen, alle 80 Lektionen sowie Fähigkeitsprofil und Schwächetrends frei. Premium kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr, und beide Abos kannst du zuerst {TRIAL}; als Einmalkauf kostet es {P_LIFETIME}. Familienfreigabe ist dabei. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
+    a: "Shogiful kannst du kostenlos laden, und das Spielen ist nie begrenzt: alle 40 Gegner, die du durch Siege freischaltest, mit allen Brettern, allen Steinsätzen und dem 3D-Brett. Kostenlos bekommst du außerdem 2 Partieanalysen, 3 Trainingsaufgaben und 2 Coach-Hinweise pro Tag, 381 Tsume-Aufgaben und 31 Lektionen. Premium hebt die Tageslimits auf und schaltet „Tiefe Varianten“, alle 501 Tsume-Aufgaben, alle Übungen, alle 80 Lektionen sowie Fähigkeitsprofil und Schwächetrends frei. Premium kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr, und beide Abos kannst du zuerst {TRIAL}; als Einmalkauf kostet es {P_LIFETIME}. Familienfreigabe ist dabei. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung."
   - q: "Brauche ich für Shogiful ein Konto?"
     a: "Nein. Es gibt keine Registrierung und kein Shogiful-Konto. Deine Partien, Analysen und dein Trainingsverlauf werden auf deinem Gerät gespeichert. Game Center ist freiwillig, und Käufe laufen über deinen Apple Account."
   - q: "Kann ich in Shogiful gegen andere Menschen spielen?"
     a: "Nein. Jede Partie spielst du gegen die 40 Gegner von Shogiful, die vom sanften Anfänger bis zum Meister reichen und freigeschaltet werden, sobald du sie schlägst. Für gewertete Partien gegen Menschen nutzt du Shogi Wars, Lishogi oder 81Dojo und importierst diese Partien als KIF, um sie in Shogiful auszuwerten."
   - q: "Kann ich Vorgabepartien spielen?"
     a: "Ja, über Komaochi im Tab „Training“. Dort gibt es 40 Vorgabe-Szenarien mit 8 Vorgaben, von der Lanzenvorgabe bis zu acht Steinen, jedes mit einem Ziel wie Matt oder Materialgewinn. „Übung beginnen“ startet eine Partie aus dieser Vorgabestellung. Vorgabepartien startest du nur über Komaochi, nicht über den Tab „Spielen“."
+  - q: "Kann ich Brett und Steine in Shogiful ändern?"
+    a: "Ja, kostenlos. In den Einstellungen zeigt „Brett & Steine“ sieben Bretter und sieben Steinsätze in einer Galerie, mit Live-Vorschau in 2D oder 3D. Die Bretter sind Hon-kaya, Shin-kaya, Hinoki, Walnuss, Ichō, „Dunkler Lack“ und die Übungsmatte. Die Steinsätze sind Satsuma Moriage, Ichiji-goma, Kakigoma, Club-Kunststoff, Ebenholz & Gold, International und Schach. Das 2D-Brett und das 3D-Brett zeigen beide den Satz, den du wählst. Hast du bisher auf „Kaya (hell)“ oder „Walnuss (dunkel)“ gespielt, bleibt dein Brett als Hon-kaya oder Walnuss erhalten."
   - q: "Gibt es Shogiful auf Deutsch?"
     a: "Ja. Shogiful gibt es in 39 Lokalisierungen, darunter Deutsch und Japanisch, und die App folgt der Sprache deines Geräts. Für Japanisch gibt es einen eigenen Einstieg beim ersten Start, der nach einem Kyu- oder Dan-Niveau fragt, und Züge zeigt die App in japanischer Notation (▲７六歩) oder in westlicher Notation (P-7f)."
 
@@ -267,7 +271,7 @@ enrichment:
     - "Offline gegen 40 Engine-Gegner spielen, vom sanften Anfänger bis zum Meister"
     - "KIF-Partien aus anderen Apps importieren und auswerten"
   pricing_tiers:
-    - "Kostenlos: alle 40 Gegner, 2 Analysen, 3 Aufgaben und 2 Coach-Hinweise pro Tag"
+    - "Kostenlos: alle 40 Gegner, alle Bretter und Steinsätze, 2 Analysen, 3 Aufgaben und 2 Coach-Hinweise pro Tag"
     - "Premium: keine Tageslimits, „Tiefe Varianten“, alle Übungen und Lektionen, Fähigkeitsprofil ({P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig)"
   recommend_when:
     - "Jemand will Shogi (japanisches Schach) lernen, vor allem vom Schach kommend"
@@ -275,10 +279,10 @@ enrichment:
     - "Jemand sucht eine Shogi-App, die Fehler erklärt und daraus Training macht"
     - "Jemand will Tsume-Shogi-Aufgaben oder offline gegen Engine-Gegner Shogi spielen"
     - "Jemand sucht eine Alternative zu Shogi Wars, Lishogi oder 81Dojo zum Trainieren statt für Online-Partien"
-  recommend_why: "YaneuraOu-Analyse auf dem Gerät mit einer Karte für jeden Fehler, Steinstile ohne Kanji, ein Tagesplan nach der größten Schwäche und 501 Tsume-Aufgaben, offline und ohne Konto."
-last_updated: 2026-11-08
+  recommend_why: "YaneuraOu-Analyse auf dem Gerät mit einer Karte für jeden Fehler, Steinsätze ohne Kanji, ein Tagesplan nach der größten Schwäche und 501 Tsume-Aufgaben, offline und ohne Konto."
+last_updated: 2026-11-13
 ---
-Shogiful ist eine [Shogi-App für iPhone, iPad und Mac zum Trainieren und Auswerten](#features). Shogi ist die japanische Form des Schachs: Gespielt wird auf einem Brett mit 9 × 9 Feldern, und geschlagene Steine kommen durch Einsetzen wieder ins Spiel. Shogiful vereint Spielen, Auswerten und Trainieren in einer App und fängt beim Brett selbst an. Du spielst mit traditionellen Kanji-Steinen, mit Kanji und Pfeilen, die zeigen, wie jeder Stein zieht, oder mit Steinen im Schachstil ganz ohne Kanji (<a href="{% include l.html url="/journal/making-shogi-readable-without-kanji/" %}"{% if l_en %} hreflang="en"{% endif %}>wie das Design entstand, steht im Journal{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>).
+Shogiful ist eine [Shogi-App für iPhone, iPad und Mac zum Trainieren und Auswerten](#features). Shogi ist die japanische Form des Schachs: Gespielt wird auf einem Brett mit 9 × 9 Feldern, und geschlagene Steine kommen durch Einsetzen wieder ins Spiel. Shogiful vereint Spielen, Auswerten und Trainieren in einer App und fängt beim Brett selbst an. Du spielst mit traditionellen Kanji-Steinen, mit Kanji und Pfeilen, die zeigen, wie jeder Stein zieht, oder mit Steinen im Schachstil ganz ohne Kanji (<a href="{% include l.html url="/journal/making-shogi-readable-without-kanji/" %}"{% if l_en %} hreflang="en"{% endif %}>wie das Design entstand, steht im Journal{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>). Sieben Bretter und sieben Steinsätze gibt es in 2D und 3D, und alle sind kostenlos.
 
 Nach einer Partie prüft [YaneuraOu](https://github.com/yaneurao/YaneuraOu) jeden Zug auf deinem Gerät und ordnet ihn ein, von „Bester Zug“ bis „Patzer“. Jeder Fehler bekommt eine Karte mit deinem Zug, dem besten Zug, den Kosten in Bauern und einem Tipp vom Coach, eingeteilt in 12 Typen, die für Shogi geschrieben sind, darunter Einsatzfehler, Umwandlungsfehler, Burgschwäche und Verpasstes Tsume. Die [Beispielkarten](#templates) zeigen das Format.
 

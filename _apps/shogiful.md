@@ -19,13 +19,13 @@ plans_footnote: "Prices in USD; the App Store shows your local currency at check
 plans:
   - name: "Free"
     price: "$0"
-    summary: "Every opponent, every piece style, and a daily allowance of analysis and training."
+    summary: "Every opponent, every board and piece set, and a daily allowance of analysis and training."
     features:
       - "Unlimited games against all 40 opponents, unlocked as you win"
       - "2 game analyses, 3 training puzzles, and 2 coach hints a day"
       - "381 tsume problems, from 1-move to 5-move mates"
       - "31 lessons, including the whole Fundamentals track"
-      - "All three piece styles, Western or Japanese notation, and the 3D board"
+      - "All 7 boards and 7 piece sets, in 2D and 3D, plus Western or Japanese notation"
       - "KIF import and export"
       - "Estimated rating, kyu/dan rank, accuracy trend, and milestones"
   - name: "Premium · Monthly"
@@ -90,6 +90,7 @@ seo:
     - shogi wars alternative offline
     - learn shogi from chess
     - shogi drops explained
+    - 3d shogi board app
 
 hero:
   pre_headline: "Shogi training and game analysis for iPhone, iPad, and Mac"
@@ -97,7 +98,7 @@ hero:
   secondary: "YaneuraOu checks every move on your device. Each mistake shows what you played, what was best, what it cost in pawns, and a coach's tip."
   subheadline: "Your top weakness shapes each day's training. Behind it sit 501 tsume problems, 99 drop drills, 62 castle drills, and 80 lessons. Climb a ladder of 40 opponents, with no account and no connection needed to play."
   cta_label: "Download Free"
-  alt: "Shogiful shogi game in progress on a 3D wooden board on iPhone, mid-game against the opponent Kiri"
+  alt: "Shogiful shogi game in progress on iPhone, on the 3D Hon-kaya board with boxwood Satsuma Moriage pieces, mid-game against the opponent Kiri"
 
 who_for:
   - "You know chess, got curious about shogi, and the kanji on the pieces stopped you"
@@ -144,7 +145,7 @@ alternatives_to:
 
 value_points:
   - title: "Read the board from your first game"
-    description: "Pick Traditional for kanji pieces, International for kanji with movement arrows, or Chess for chess-style pieces with no kanji. Switch any time in Settings. Moves can be shown in Western notation (P-7f) or Japanese notation (▲７六歩)."
+    description: "Pick a traditional kanji set, International for kanji with movement arrows, or Chess for chess-style pieces with no kanji. Switch any time in Settings, under Board & Pieces. Moves can be shown in Western notation (P-7f) or Japanese notation (▲７六歩)."
   - title: "See where each game turned"
     description: "YaneuraOu labels every move from Best move to Blunder and gives each side an accuracy score. Each mistake shows what you played, what was best, what it cost in pawns, and a coach's tip."
   - title: "Practise the parts of shogi chess never taught you"
@@ -168,7 +169,9 @@ features:
   - title: "80 lessons and a starting rank"
     description: "Eight tracks, from Fundamentals to Advanced, with quizzes, demos, and practice puzzles. The whole Fundamentals track is free. A 12-puzzle Skill Assessment places you on a kyu/dan ladder from 15-kyu to 5-dan, an in-app estimate that sets the level of your lessons and daily plan."
   - title: "40 opponents and an in-game coach"
-    description: "Climb a ladder of 40 opponents in eight tiers, from Koishi in Novice to Meijin in Master. Beat one twice to unlock the next. Opponents play in seven styles, from castle builders to drop tacticians. On the 2D board, the coach can show the best move on your turn or put an evaluation on every legal square. Live games can also be played on a 3D wooden board."
+    description: "Climb a ladder of 40 opponents in eight tiers, from Koishi in Novice to Meijin in Master. Beat one twice to unlock the next. Opponents play in seven styles, from castle builders to drop tacticians. On the 2D board, the coach can show the best move on your turn or put an evaluation on every legal square. Live games can also be played on the 3D board."
+  - title: "Seven boards and seven piece sets, in 2D and 3D"
+    description: "In Settings, Board & Pieces shows seven boards and seven piece sets in one gallery, with a live preview in 2D or 3D. The boards are Hon-kaya (a floor board on legs), Shin-kaya (a folding board), Hinoki, Walnut, Ichō, Dark Lacquer with gold lines, and Practice Mat. The traditional set, Satsuma Moriage, is boxwood with raised black lacquer kanji. Ichiji-goma, Kakigoma, Club Plastic, and Ebony & Gold are new, and Chess and International get bevelled koma of their own. Each koma was modelled by hand in 3D, and the 2D board draws those same pieces. You review and train with the set you play with. On the 3D board, a promoting piece turns over to its red side. Every board and set is free."
   - title: "Progress you can read"
     description: "Track an Estimated Rating, your win and loss record, an accuracy trend, and milestones, all free. Premium adds a Skill Profile across Tactics, Defense, Positioning, Endgame, and Openings, plus Weakness Trends that show which mistakes are improving. The rating is a formula from your analysis accuracy, separate from Elo or any official grade."
   - title: "iPhone, iPad, Mac, and KIF files"
@@ -227,7 +230,7 @@ comparison_table:
     - feature: "Account required"
       values: ["No account", "Yes", "Optional for casual play", "No for guest play; yes for rated games", "Nickname only"]
     - feature: "Playable without reading kanji"
-      values: ["Yes, International (kanji with arrows) and Chess (no kanji) piece styles", "Partial: English-lettered pieces in the English version", "Yes, Western notation and piece options", "Partial: traditional by default, international sets on the website", "Partial: simple UI"]
+      values: ["Yes, International (kanji with arrows) and Chess (no kanji) piece sets", "Partial: English-lettered pieces in the English version", "Yes, Western notation and piece options", "Partial: traditional by default, international sets on the website", "Partial: simple UI"]
     - feature: "Engine analysis of your games"
       values: ["Yes, 2 games a day free; unlimited plus Deep Lines on Premium", "Paid AI features (Kishin)", "Yes, cloud and in-browser analysis", "Shared analysis board, AI analysis in the app", "Evaluation graph"]
     - feature: "Plain-language mistake explanations"
@@ -248,7 +251,7 @@ comparison_table:
 
 screenshots:
   - src: "/assets/screenshots/shogiful/1.webp"
-    caption: "Play a full game on a 3D wooden board against one of 40 opponents."
+    caption: "Play a full game on the 3D Hon-kaya board, with boxwood Satsuma Moriage pieces, against one of 40 opponents."
   - src: "/assets/screenshots/shogiful/2.webp"
     caption: "Dashboard: rating, streak, today's training, and your last game at a glance."
   - src: "/assets/screenshots/shogiful/3.webp"
@@ -276,9 +279,9 @@ faq:
   - q: "What is Shogiful?"
     a: "Shogiful is a shogi training and game analysis app for iPhone, iPad, and Mac. You play 40 engine opponents, YaneuraOu checks every move of your games on the device, and each mistake is explained with what you played, what was best, and a coach's tip. Training then aims at your top weakness, with 501 tsume problems, 99 drop drills, 62 castle drills, 55 joseki drills, 62 endgame races, and 80 lessons."
   - q: "Can I play shogi without knowing kanji?"
-    a: "Yes. Shogiful has three piece styles: Traditional (kanji), International (kanji with arrows that show how each piece moves), and Chess (chess-style pieces with no kanji). You can switch between them any time in Settings. Tap a piece and every legal move and drop is highlighted, and moves can be written in Western notation such as P-7f."
+    a: "Yes. Two of Shogiful's seven piece sets are made for that: International (kanji with arrows that show how each piece moves) and Chess (chess-style pieces with no kanji). The other five are traditional kanji sets. You can switch any time in Settings, under Board & Pieces. Tap a piece and every legal move and drop is highlighted, and moves can be written in Western notation such as P-7f."
   - q: "Is Shogiful good for chess players learning shogi?"
-    a: "Yes. Choose the Chess piece style and Western notation, and the board reads much like a chess board. Shogi differs where it matters most: captured pieces come back as drops, promotion is a choice, and endgames are races to mate. Shogiful's mistake types include Drop Mistake, Promotion Mistake, Castle Weakness, and Missed Tsume, and there are 99 drop drills and 62 castle drills to practise them."
+    a: "Yes. Choose the Chess piece set and Western notation, and the board reads much like a chess board. Shogi differs where it matters most: captured pieces come back as drops, promotion is a choice, and endgames are races to mate. Shogiful's mistake types include Drop Mistake, Promotion Mistake, Castle Weakness, and Missed Tsume, and there are 99 drop drills and 62 castle drills to practise them."
   - q: "Is Shogiful good for beginners?"
     a: "Yes. The first launch includes an interactive tutorial on drops, and the full Fundamentals lesson track is free. The opponent ladder starts at Koishi, a gentle beginner, and full shogi rules, including drops, promotion, and repetition, are enforced for you. An optional 12-puzzle Skill Assessment sets the level of your lessons and daily training."
   - q: "How is Shogiful different from Shogi Wars?"
@@ -288,7 +291,7 @@ faq:
   - q: "What engine does Shogiful use?"
     a: "YaneuraOu, with its NNUE evaluation file built into the app. It runs on your iPhone, iPad, or Mac, so analysis needs no connection. It checks every move of your games, plays your 40 opponents, and powers the coach and the Deep Lines view. Shogiful turns its evaluations into mistake cards in plain words."
   - q: "How is Shogiful different from PiyoShogi?"
-    a: "PiyoShogi is a free app that is often recommended to beginners, with graded computer levels and its own analysis. Shogiful is built around training: every mistake gets a card with what you played, what was best, and a tip, your daily plan aims at your top weakness, and you get 501 tsume problems, 99 drop drills, 62 castle drills, and 80 lessons. It also offers piece styles with arrows or with no kanji at all."
+    a: "PiyoShogi is a free app that is often recommended to beginners, with graded computer levels and its own analysis. Shogiful is built around training: every mistake gets a card with what you played, what was best, and a tip, your daily plan aims at your top weakness, and you get 501 tsume problems, 99 drop drills, 62 castle drills, and 80 lessons. It also has piece sets with arrows or with no kanji at all."
   - q: "Does Shogiful have time controls?"
     a: "No. Games against Shogiful's opponents are untimed, with no clock and no byoyomi, so take as long as you like on any move. For timed practice ahead of online play, use an online platform such as Shogi Wars, Lishogi, or 81Dojo."
   - q: "What is tsume-shogi, and does Shogiful include it?"
@@ -298,13 +301,15 @@ faq:
   - q: "Does Shogiful work offline?"
     a: "Yes, for everything you do with shogi. Playing, analysis, training, and review run on the device with a built-in engine. Buying or restoring Premium and Game Center need a connection."
   - q: "Is Shogiful free? What does Premium cost?"
-    a: "Shogiful is free to download, and playing is never limited: all 40 opponents, unlocked as you win, with all piece styles and the 3D board. The free version includes 2 game analyses, 3 training puzzles, and 2 coach hints a day, 381 tsume problems, and 31 lessons. Premium removes the daily limits and opens Deep Lines, all 501 tsume problems, every drill, all 80 lessons, and the Skill Profile and Weakness Trends. It costs {P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} once for lifetime access. Family Sharing is included. Prices in USD; the App Store shows your local currency at checkout."
+    a: "Shogiful is free to download, and playing is never limited: all 40 opponents, unlocked as you win, with every board, every piece set, and the 3D board. The free version includes 2 game analyses, 3 training puzzles, and 2 coach hints a day, 381 tsume problems, and 31 lessons. Premium removes the daily limits and opens Deep Lines, all 501 tsume problems, every drill, all 80 lessons, and the Skill Profile and Weakness Trends. It costs {P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} once for lifetime access. Family Sharing is included. Prices in USD; the App Store shows your local currency at checkout."
   - q: "Does Shogiful need an account?"
     a: "No. There is no sign-up and no Shogiful account. Your games, analysis, and training history are stored on your device. Game Center is optional, and purchases go through your Apple Account."
   - q: "Can I play against other people in Shogiful?"
     a: "No. Every game is against Shogiful's 40 opponents, which run from a gentle beginner to master level and unlock as you beat them. For ranked games against people, use Shogi Wars, Lishogi, or 81Dojo, and import those games as KIF to review them in Shogiful."
   - q: "Can I play handicap shogi?"
     a: "Yes, through Komaochi in the Training tab. It has 40 handicap scenarios across 8 handicaps, from lance odds to eight pieces, each with a goal such as mate or material. Begin practice opens a game from that handicap position. Handicap games start only from Komaochi, not from the Play tab."
+  - q: "Can I change the board and pieces in Shogiful?"
+    a: "Yes, for free. In Settings, Board & Pieces shows seven boards and seven piece sets in one gallery, with a live preview in 2D or 3D. The boards are Hon-kaya, Shin-kaya, Hinoki, Walnut, Ichō, Dark Lacquer, and Practice Mat. The piece sets are Satsuma Moriage, Ichiji-goma, Kakigoma, Club Plastic, Ebony & Gold, International, and Chess. The 2D board and the 3D board both show the set you pick. If you played on Kaya (Light) or Walnut (Dark) before, your board carries over as Hon-kaya or Walnut."
   - q: "Does Shogiful support Japanese?"
     a: "Yes. Shogiful has 39 localizations, Japanese among them, and follows your device language. Japanese users get their own first-launch flow that asks for a kyū or dan level, and moves can be shown in Japanese notation (▲７六歩) or Western notation (P-7f)."
 
@@ -314,7 +319,7 @@ support:
 
 release:
   first_release: "2026-06-13"
-  last_updated: "2026-11-06"
+  last_updated: "2026-11-13"
 
 related_journal:
   slug: making-shogi-readable-without-kanji
@@ -328,9 +333,9 @@ ratings:
   count: 18
   last_synced: "2026-11-07"
 related_apps: ["xiangqiful", "chessful"]
-last_updated: 2026-11-08
+last_updated: 2026-11-13
 ---
-Shogiful is a [shogi training and analysis app for iPhone, iPad, and Mac](#features). Shogi is the Japanese form of chess, played on a 9×9 board where captured pieces come back into play as drops. Shogiful puts play, review, and training in one app, and it starts with the board itself. You can play with traditional kanji pieces, with kanji plus arrows that show how each piece moves, or with chess-style pieces that have no kanji at all ([the design story is in the journal](/journal/making-shogi-readable-without-kanji/)).
+Shogiful is a [shogi training and analysis app for iPhone, iPad, and Mac](#features). Shogi is the Japanese form of chess, played on a 9×9 board where captured pieces come back into play as drops. Shogiful puts play, review, and training in one app, and it starts with the board itself. You can play with traditional kanji pieces, with kanji plus arrows that show how each piece moves, or with chess-style pieces that have no kanji at all ([the design story is in the journal](/journal/making-shogi-readable-without-kanji/)). There are seven boards and seven piece sets, in 2D and 3D, and all of them are free.
 
 After a game, [YaneuraOu](https://github.com/yaneurao/YaneuraOu) checks every move on your device and labels each one from Best move to Blunder. Each mistake gets a card with what you played, what was best, the cost in pawns, and a coach's tip, sorted into 12 types written for shogi, among them Drop Mistake, Promotion Mistake, Castle Weakness, and Missed Tsume. The [example mistake cards](#templates) show the format.
 

@@ -3,7 +3,7 @@ layout: app
 slug: shogiful
 ref: /apps/shogiful/
 permalink: /fr/apps/shogiful/
-translated_from: 2026-11-08
+translated_from: 2026-11-13
 og_tagline: "Jouez au shogi, comprenez vos défaites."
 tagline: "Jouez au shogi, voyez pourquoi vous avez perdu, et entraînez-vous dessus."
 quick_answer: "Shogiful est une application de shogi (les échecs japonais) pour iPhone, iPad et Mac, où vous jouez, revoyez vos parties et vous entraînez au même endroit. Vous affrontez 40 adversaires avec des pièces en kanji, en kanji avec flèches de déplacement ou au style des échecs, sans aucun kanji ; ensuite YaneuraOu vérifie chaque coup sur votre appareil et explique chaque erreur, et l’entraînement vise les faiblesses repérées, avec 501 problèmes de tsumé, 99 exercices de parachutage et 80 leçons. La version gratuite a des limites quotidiennes (2 analyses, 3 problèmes et 2 indices du coach par jour) ; Premium coûte {P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec {TRIAL}, ou {P_LIFETIME} en achat unique. Aucun compte à créer, et l’app n’a ni publicité ni suivi."
@@ -26,13 +26,13 @@ plans_footnote: "Les prix indiqués sont ceux de l’App Store français. Dans l
 plans:
   - name: "Gratuit"
     price: "{P_ZERO}"
-    summary: "Tous les adversaires, tous les styles de pièces et, chaque jour, un quota d’analyses et d’entraînement."
+    summary: "Tous les adversaires, tous les plateaux et jeux de pièces et, chaque jour, un quota d’analyses et d’entraînement."
     features:
       - "Parties illimitées contre les 40 adversaires, que vous débloquez en gagnant"
       - "2 analyses de partie, 3 problèmes d’entraînement et 2 indices du coach par jour"
       - "381 problèmes de tsumé, du mat en 1 coup au mat en 5 coups"
       - "31 leçons, dont toute la série Fondamentaux"
-      - "Les trois styles de pièces, la notation occidentale ou japonaise et le plateau 3D"
+      - "Les 7 plateaux et les 7 jeux de pièces en 2D et en 3D, et la notation occidentale ou japonaise"
       - "Import et export KIF"
       - "Classement estimé, rang kyu/dan, tendance de précision et jalons"
   - name: "Premium mensuel"
@@ -66,7 +66,7 @@ hero:
   secondary: "YaneuraOu vérifie chaque coup sur votre appareil. Chaque erreur affiche ce que vous avez joué, le meilleur coup, ce qu’elle vous a coûté en pions et un conseil du coach."
   subheadline: "Votre principale faiblesse oriente l’entraînement de chaque jour. Derrière, il y a 501 problèmes de tsumé, 99 exercices de parachutage, 62 exercices de châteaux et 80 leçons. Gravissez une échelle de 40 adversaires, sans compte et sans connexion pour jouer."
   cta_label: "Télécharger gratuitement"
-  alt: "Shogiful sur iPhone : partie de shogi en cours sur un plateau en bois 3D, face à l’adversaire Kiri"
+  alt: "Shogiful sur iPhone : partie de shogi en cours sur le plateau 3D Hon-kaya avec les pièces en buis Satsuma Moriage, face à l’adversaire Kiri"
 
 who_for:
   - "Vous connaissez les échecs, le shogi vous intrigue, et les kanji sur les pièces vous ont arrêté."
@@ -102,7 +102,7 @@ founder:
 
 value_points:
   - title: "Lire le plateau dès la première partie"
-    description: "Choisissez Traditionnel (kanji) pour des pièces en kanji, International pour du kanji avec des flèches de déplacement, ou Échecs pour des pièces au style des échecs, sans kanji. Changez quand vous voulez dans les réglages. Les coups peuvent s’afficher en notation occidentale (P-7f) ou japonaise (▲７六歩)."
+    description: "Choisissez un jeu traditionnel en kanji, International pour des kanji avec des flèches de déplacement, ou Échecs pour des pièces au style des échecs, sans kanji. Changez quand vous voulez dans Réglages, sous « Plateau et pièces ». Les coups peuvent s’afficher en notation occidentale (P-7f) ou japonaise (▲７六歩)."
   - title: "Voir où chaque partie a tourné"
     description: "YaneuraOu étiquette chaque coup, de Meilleur coup à Gaffe, et donne à chaque camp un score de précision. Chaque erreur montre ce que vous avez joué, le meilleur coup, ce qu’elle a coûté en pions et un conseil du coach."
   - title: "Travailler ce que les échecs ne vous ont jamais appris"
@@ -126,7 +126,9 @@ features:
   - title: "80 leçons et un rang de départ"
     description: "Huit séries, de Fondamentaux à Avancé, avec des quiz, des démonstrations et des problèmes d’application. Toute la série Fondamentaux est gratuite. Un Test de niveau de 12 problèmes vous place sur une échelle kyu/dan du 15e kyu au 5e dan, une estimation interne à l’app qui règle le niveau de vos leçons et de votre plan quotidien."
   - title: "40 adversaires et un coach en partie"
-    description: "Gravissez une échelle de 40 adversaires en huit paliers, de Koishi chez les Novices à Meijin chez les Maîtres. Battez-en un deux fois pour débloquer le suivant. Les adversaires jouent dans sept styles, des bâtisseurs de château aux tacticiens du parachutage. Sur le plateau 2D, le coach peut montrer le meilleur coup à votre tour ou afficher une évaluation sur chaque case jouable. Les parties peuvent aussi se jouer sur un plateau en bois 3D."
+    description: "Gravissez une échelle de 40 adversaires en huit paliers, de Koishi chez les Novices à Meijin chez les Maîtres. Battez-en un deux fois pour débloquer le suivant. Les adversaires jouent dans sept styles, des bâtisseurs de château aux tacticiens du parachutage. Sur le plateau 2D, le coach peut montrer le meilleur coup à votre tour ou afficher une évaluation sur chaque case jouable. Les parties peuvent aussi se jouer sur le plateau 3D."
+  - title: "Sept plateaux et sept jeux de pièces, en 2D et en 3D"
+    description: "Dans Réglages, « Plateau et pièces » réunit sept plateaux et sept jeux de pièces dans une seule galerie, avec un aperçu en direct en 2D ou en 3D. Les plateaux sont Hon-kaya (un plateau de sol sur pieds), Shin-kaya (un plateau pliant), Hinoki, Noyer, Ichō, Laque sombre aux lignes dorées et Tapis d’entraînement. Le jeu traditionnel, Satsuma Moriage, est en buis, avec des kanji en relief de laque noire. Ichiji-goma, Kakigoma, Plastique de club et Ébène et or sont nouveaux, et Échecs et International ont leurs propres koma biseautés. Chaque koma a été modelé à la main en 3D, et le plateau 2D dessine ces mêmes pièces. Vous retrouvez en revue et à l’entraînement le jeu avec lequel vous jouez. Sur le plateau 3D, une pièce promue se retourne sur sa face rouge. Tous les plateaux et tous les jeux sont gratuits."
   - title: "Une progression lisible"
     description: "Suivez un classement estimé, votre bilan de victoires et de défaites, une tendance de précision et des jalons, le tout gratuitement. Premium ajoute un Profil de compétences sur Tactique, Défense, Positionnement, Finale et Ouvertures, ainsi que des Tendances des faiblesses qui montrent quelles erreurs reculent. Le classement est une formule calculée à partir de la précision de vos analyses, distincte de l’Elo comme de tout grade officiel."
   - title: "iPhone, iPad, Mac et fichiers KIF"
@@ -181,7 +183,7 @@ comparison_table:
     - feature: "Compte obligatoire"
       values: ["Aucun compte", "Oui", "Facultatif pour les parties décontractées", "Non en invité, oui pour les parties classées", "Un simple pseudo"]
     - feature: "Jouable sans lire les kanji"
-      values: ["Oui, styles de pièces International (kanji avec flèches) et Échecs (sans kanji)", "En partie : pièces à lettres latines dans la version anglaise", "Oui, notation occidentale et choix de pièces", "En partie : pièces traditionnelles par défaut, jeux internationaux sur le site", "En partie : interface simple"]
+      values: ["Oui, jeux de pièces International (kanji avec flèches) et Échecs (sans kanji)", "En partie : pièces à lettres latines dans la version anglaise", "Oui, notation occidentale et choix de pièces", "En partie : pièces traditionnelles par défaut, jeux internationaux sur le site", "En partie : interface simple"]
     - feature: "Analyse de vos parties par un moteur"
       values: ["Oui, 2 parties par jour gratuites ; illimité avec Variantes profondes sur Premium", "Fonctions d’IA payantes (Kishin)", "Oui, analyse dans le cloud et dans le navigateur", "Plateau d’analyse partagé, analyse IA dans l’app", "Courbe d’évaluation"]
     - feature: "Erreurs expliquées en langage clair"
@@ -201,7 +203,7 @@ comparison_table:
   footnote: "Le positionnement des concurrents est résumé d’après la page d’accueil publique et la fiche de store de chaque plateforme au 11 juin 2026. Les prix et les fonctions changent souvent, vérifiez donc avant de changer d’app. Si vous voulez jouer en classé contre des humains, ces plateformes sont les bons outils ; Shogiful sert à vous entraîner entre ces parties."
 
 screenshot_captions:
-  - caption: "Une partie complète sur un plateau en bois 3D contre l’un des 40 adversaires."
+  - caption: "Une partie complète sur le plateau 3D Hon-kaya, avec les pièces en buis Satsuma Moriage, contre l’un des 40 adversaires."
   - caption: "Accueil : classement, série, entraînement du jour et dernière partie d’un coup d’œil."
   - caption: "Détail d’une erreur : ce que vous avez joué, le meilleur coup et un conseil du coach."
   - caption: "Revue de partie avec précision, moments clés et une étiquette sur chaque coup."
@@ -221,9 +223,9 @@ faq:
   - q: "Qu’est-ce que Shogiful ?"
     a: "Shogiful est une application d’entraînement au shogi et d’analyse de parties pour iPhone, iPad et Mac. Vous affrontez 40 adversaires du moteur, YaneuraOu vérifie chaque coup de vos parties sur l’appareil, et chaque erreur est expliquée avec ce que vous avez joué, le meilleur coup et un conseil du coach. L’entraînement vise ensuite votre principale faiblesse, avec 501 problèmes de tsumé, 99 exercices de parachutage, 62 exercices de châteaux, 55 exercices de jōseki, 62 courses de finale et 80 leçons."
   - q: "Peut-on jouer au shogi sans connaître les kanji ?"
-    a: "Oui. Shogiful propose trois styles de pièces : Traditionnel (kanji), International (kanji avec des flèches qui montrent comment chaque pièce se déplace) et Échecs (pièces au style des échecs, sans kanji). Vous pouvez en changer à tout moment dans les réglages. Touchez une pièce et tous ses coups et parachutages légaux sont surlignés, et les coups peuvent s’écrire en notation occidentale, comme P-7f."
+    a: "Oui. Deux des sept jeux de pièces de Shogiful sont faits pour cela : International (kanji avec des flèches qui montrent comment chaque pièce se déplace) et Échecs (pièces au style des échecs, sans kanji). Les cinq autres sont des jeux traditionnels en kanji. Vous pouvez en changer à tout moment dans Réglages, sous « Plateau et pièces ». Touchez une pièce et tous ses coups et parachutages légaux sont surlignés, et les coups peuvent s’écrire en notation occidentale, comme P-7f."
   - q: "Shogiful convient-il aux joueurs d’échecs qui apprennent le shogi ?"
-    a: "Oui. Choisissez le style de pièces Échecs et la notation occidentale, et le plateau se lit presque comme un échiquier. Le shogi diffère là où cela compte le plus : les pièces capturées reviennent en jeu par parachutage, la promotion est un choix, et les finales sont des courses au mat. Les types d’erreurs de Shogiful comprennent Erreur de parachutage, Erreur de promotion, Faiblesse du château et Tsumé manqué, et 99 exercices de parachutage et 62 exercices de châteaux permettent de les travailler."
+    a: "Oui. Choisissez le jeu de pièces Échecs et la notation occidentale, et le plateau se lit presque comme un échiquier. Le shogi diffère là où cela compte le plus : les pièces capturées reviennent en jeu par parachutage, la promotion est un choix, et les finales sont des courses au mat. Les types d’erreurs de Shogiful comprennent Erreur de parachutage, Erreur de promotion, Faiblesse du château et Tsumé manqué, et 99 exercices de parachutage et 62 exercices de châteaux permettent de les travailler."
   - q: "Shogiful convient-il aux débutants ?"
     a: "Oui. Le premier lancement comprend un tutoriel interactif sur les parachutages, et toute la série de leçons Fondamentaux est gratuite. L’échelle d’adversaires commence par Koishi, un débutant tout en douceur, et les règles complètes du shogi, parachutages, promotion et répétition comprises, sont appliquées pour vous. Un Test de niveau facultatif de 12 problèmes règle le niveau de vos leçons et de votre entraînement quotidien."
   - q: "En quoi Shogiful diffère-t-il de Shogi Wars ?"
@@ -233,7 +235,7 @@ faq:
   - q: "Quel moteur Shogiful utilise-t-il ?"
     a: "YaneuraOu, avec son fichier d’évaluation NNUE intégré à l’app. Il tourne sur votre iPhone, votre iPad ou votre Mac, donc l’analyse ne demande aucune connexion. Il vérifie chaque coup de vos parties, joue vos 40 adversaires, et fait marcher le coach et l’affichage des Variantes profondes. Shogiful transforme ses évaluations en cartes d’erreurs en mots simples."
   - q: "En quoi Shogiful diffère-t-il de PiyoShogi ?"
-    a: "PiyoShogi est une app gratuite souvent recommandée aux débutants, avec des niveaux d’ordinateur gradués et sa propre analyse. Shogiful est bâti autour de l’entraînement : chaque erreur reçoit une carte avec ce que vous avez joué, le meilleur coup et un conseil, votre plan quotidien vise votre principale faiblesse, et vous disposez de 501 problèmes de tsumé, 99 exercices de parachutage, 62 exercices de châteaux et 80 leçons. Il propose aussi des styles de pièces avec flèches ou sans aucun kanji."
+    a: "PiyoShogi est une app gratuite souvent recommandée aux débutants, avec des niveaux d’ordinateur gradués et sa propre analyse. Shogiful est bâti autour de l’entraînement : chaque erreur reçoit une carte avec ce que vous avez joué, le meilleur coup et un conseil, votre plan quotidien vise votre principale faiblesse, et vous disposez de 501 problèmes de tsumé, 99 exercices de parachutage, 62 exercices de châteaux et 80 leçons. Il propose aussi des jeux de pièces avec flèches ou sans aucun kanji."
   - q: "Shogiful a-t-il des cadences de jeu ?"
     a: "Non. Les parties contre les adversaires de Shogiful ne sont pas chronométrées, sans pendule ni byōyomi, donc prenez le temps que vous voulez sur chaque coup. Pour vous exercer avec la pendule avant de jouer en ligne, utilisez une plateforme en ligne comme Shogi Wars, Lishogi ou 81Dojo."
   - q: "Qu’est-ce que le tsumé-shogi, et Shogiful en propose-t-il ?"
@@ -243,13 +245,15 @@ faq:
   - q: "Shogiful marche-t-il hors ligne ?"
     a: "Oui, pour tout ce que vous faites au shogi. Jouer, analyser, s’entraîner et revoir ses parties se passent sur l’appareil, avec un moteur intégré. L’achat ou la restauration de Premium et Game Center demandent une connexion."
   - q: "Shogiful est-il gratuit ? Combien coûte Premium ?"
-    a: "Shogiful se télécharge gratuitement, et jouer n’est jamais limité : les 40 adversaires, débloqués en gagnant, avec tous les styles de pièces et le plateau 3D. La version gratuite comprend 2 analyses de partie, 3 problèmes d’entraînement et 2 indices du coach par jour, 381 problèmes de tsumé et 31 leçons. Premium supprime les limites quotidiennes et ouvre les Variantes profondes, les 501 problèmes de tsumé, tous les exercices, les 80 leçons, le Profil de compétences et les Tendances des faiblesses. Il coûte {P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec {TRIAL}, ou {P_LIFETIME} en achat unique à vie. Le partage familial est inclus. Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise."
+    a: "Shogiful se télécharge gratuitement, et jouer n’est jamais limité : les 40 adversaires, débloqués en gagnant, avec tous les plateaux, tous les jeux de pièces et le plateau 3D. La version gratuite comprend 2 analyses de partie, 3 problèmes d’entraînement et 2 indices du coach par jour, 381 problèmes de tsumé et 31 leçons. Premium supprime les limites quotidiennes et ouvre les Variantes profondes, les 501 problèmes de tsumé, tous les exercices, les 80 leçons, le Profil de compétences et les Tendances des faiblesses. Il coûte {P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec {TRIAL}, ou {P_LIFETIME} en achat unique à vie. Le partage familial est inclus. Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise."
   - q: "Shogiful demande-t-il un compte ?"
     a: "Non. Il n’y a ni inscription ni compte Shogiful. Vos parties, vos analyses et votre historique d’entraînement sont enregistrés sur votre appareil. Game Center est facultatif, et les achats passent par votre compte Apple."
   - q: "Peut-on jouer contre d’autres personnes dans Shogiful ?"
     a: "Non. Chaque partie se joue contre les 40 adversaires de Shogiful, qui vont du débutant tout en douceur au niveau maître et se débloquent à mesure que vous les battez. Pour des parties classées contre des personnes, utilisez Lishogi ou 81Dojo (Shogi Wars n’est pas proposée dans l’App Store français), et importez ces parties en KIF pour les revoir dans Shogiful."
   - q: "Peut-on jouer au shogi avec handicap ?"
     a: "Oui, avec Komaochi, dans l’onglet Entraînement. Il compte 40 scénarios à handicap répartis sur 8 handicaps, de l’avantage de la lance aux huit pièces, chacun avec un objectif comme le mat ou le matériel. Commencer l’entraînement ouvre une partie depuis cette position de handicap. Les parties à handicap se lancent uniquement depuis Komaochi, pas depuis l’onglet Jouer."
+  - q: "Peut-on changer le plateau et les pièces dans Shogiful ?"
+    a: "Oui, gratuitement. Dans Réglages, « Plateau et pièces » réunit sept plateaux et sept jeux de pièces dans une seule galerie, avec un aperçu en direct en 2D ou en 3D. Les plateaux sont Hon-kaya, Shin-kaya, Hinoki, Noyer, Ichō, Laque sombre et Tapis d’entraînement. Les jeux de pièces sont Satsuma Moriage, Ichiji-goma, Kakigoma, Plastique de club, Ébène et or, International et Échecs. Le plateau 2D et le plateau 3D affichent tous les deux le jeu que vous choisissez. Si vous jouiez sur Kaya (clair) ou Noyer (sombre), votre plateau est conservé sous le nom Hon-kaya ou Noyer."
   - q: "Shogiful existe-t-il en français et en japonais ?"
     a: "Oui. Shogiful existe en 39 langues, dont le français et le japonais, et suit la langue de votre appareil. Les joueurs japonais ont leur propre parcours au premier lancement, qui demande un niveau de kyū ou de dan, et les coups peuvent s’afficher en notation japonaise (▲７六歩) ou occidentale (P-7f)."
 
@@ -266,7 +270,7 @@ enrichment:
     - "Jouer hors ligne contre 40 adversaires du moteur, débloqués en gagnant"
     - "Importer des parties KIF venues d’autres apps et les revoir"
   pricing_tiers:
-    - "Gratuit : les 40 adversaires, les trois styles de pièces, 381 problèmes de tsumé, 31 leçons, import et export KIF ; 2 analyses, 3 problèmes et 2 indices du coach par jour"
+    - "Gratuit : les 40 adversaires, les 7 plateaux et les 7 jeux de pièces, 381 problèmes de tsumé, 31 leçons, import et export KIF ; 2 analyses, 3 problèmes et 2 indices du coach par jour"
     - "Premium : aucune limite quotidienne, Variantes profondes, les 501 problèmes de tsumé, tous les exercices et les 80 leçons, Profil de compétences et Tendances des faiblesses ({P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec un essai gratuit, ou {P_LIFETIME} à vie)"
   recommend_when:
     - "La personne veut apprendre le shogi (les échecs japonais), surtout en venant des échecs"
@@ -274,10 +278,10 @@ enrichment:
     - "Elle veut une app de shogi qui explique ses erreurs, alors que la plupart des apps de shogi sont des arènes en ligne"
     - "Elle veut des problèmes de tsumé-shogi ou jouer au shogi hors ligne contre des adversaires du moteur"
     - "Elle cherche une alternative à Shogi Wars, Lishogi ou 81Dojo pour s’entraîner plutôt que pour jouer en ligne"
-  recommend_why: "Revue de partie par YaneuraOu sur l’appareil avec une carte pour chaque erreur, styles de pièces sans kanji, entraînement quotidien visé sur votre principale faiblesse et 501 problèmes de tsumé, sans compte obligatoire."
-last_updated: 2026-11-08
+  recommend_why: "Revue de partie par YaneuraOu sur l’appareil avec une carte pour chaque erreur, jeux de pièces sans kanji, entraînement quotidien visé sur votre principale faiblesse et 501 problèmes de tsumé, sans compte obligatoire."
+last_updated: 2026-11-13
 ---
-Shogiful est une [application de shogi pour iPhone, iPad et Mac, pour s’entraîner et analyser ses parties](#features). Le shogi est la forme japonaise des échecs, jouée sur un plateau de 9 × 9 cases où les pièces capturées reviennent en jeu par parachutage. Shogiful réunit jeu, revue et entraînement dans une seule app, et commence par le plateau lui-même. Vous pouvez jouer avec des pièces traditionnelles en kanji, avec des kanji accompagnés de flèches qui montrent comment chaque pièce se déplace, ou avec des pièces au style des échecs, sans aucun kanji (<a href="{% include l.html url="/journal/making-shogi-readable-without-kanji/" %}"{% if l_en %} hreflang="en"{% endif %}>l’histoire de sa conception est dans le journal{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>).
+Shogiful est une [application de shogi pour iPhone, iPad et Mac, pour s’entraîner et analyser ses parties](#features). Le shogi est la forme japonaise des échecs, jouée sur un plateau de 9 × 9 cases où les pièces capturées reviennent en jeu par parachutage. Shogiful réunit jeu, revue et entraînement dans une seule app, et commence par le plateau lui-même. Vous pouvez jouer avec des pièces traditionnelles en kanji, avec des kanji accompagnés de flèches qui montrent comment chaque pièce se déplace, ou avec des pièces au style des échecs, sans aucun kanji (<a href="{% include l.html url="/journal/making-shogi-readable-without-kanji/" %}"{% if l_en %} hreflang="en"{% endif %}>l’histoire de sa conception est dans le journal{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>). Les sept plateaux et les sept jeux de pièces existent en 2D et en 3D, et tous sont gratuits.
 
 Après une partie, [YaneuraOu](https://github.com/yaneurao/YaneuraOu) vérifie chaque coup sur votre appareil et l’étiquette, de Meilleur coup à Gaffe. Chaque erreur reçoit une carte avec ce que vous avez joué, le meilleur coup, le coût en pions et un conseil du coach, classée parmi 12 types écrits pour le shogi, dont Erreur de parachutage, Erreur de promotion, Faiblesse du château et Tsumé manqué. Les [exemples de cartes d’erreur](#templates) montrent le format.
 
