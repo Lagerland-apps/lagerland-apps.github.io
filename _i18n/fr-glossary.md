@@ -1214,7 +1214,7 @@ No InfoPlist.xcstrings and no permission prompts; the display name is set in bui
 | Three gold stars | `Marks` | Étoiles | setting is "Marks" in English, "Étoiles" in French |
 | Sound / Haptics | `Sound` / `Haptics` | Son / Vibrations | |
 | High contrast | `High contrast` | Contraste élevé | |
-| Beam | `Beam %lld` | Branche %lld | FLAG: the French calls a beam a "branche" (branch); the arm is "bras" (`%@ arm, notch %lld` → "Bras %1$@, cran %2$lld"). A native check is needed against the site's "beam" |
+| Beam | `Beam %lld` | Fléau %lld | Owner decision 2026-11-11: « fléau » (masculine: « un fléau peint », « suspendu au fléau »), replacing « branche » in the app and the fr-FR listing. The arm stays « bras » (`%@ arm, notch %lld` → "Bras %1$@, cran %2$lld"). |
 | Hook / notch | `empty hook` / `notch` | crochet vide / cran | |
 | Hidden "?" weight | `hidden %@` / `cannot settle, hidden weight` | %@, poids caché / ne peut pas se stabiliser, poids caché | |
 | Picture cards | `Reference scale` | Balance de référence | VoiceOver wording; no UI string says "picture card" |
