@@ -3,7 +3,7 @@ layout: journal
 slug: how-to-calculate-mrr-for-app-store-subscriptions
 title: "How to calculate MRR for App Store subscriptions from Apple's Subscription report"
 date: 2026-06-27
-last_updated: 2026-11-11
+last_updated: 2026-11-13
 seo:
   title: "How to Calculate MRR for App Store Subscriptions"
   description: "Calculate MRR for App Store subscriptions from Apple's Subscription report: the formula, the divisor for each plan length, which counts to use, and why."
@@ -128,6 +128,6 @@ Where the number appears:
 - **Trends and the per-app view.** MRR is one of the Trends metrics, compared with the previous period or, once a year of history is stored, with last year. Each app's detail view charts it against the previous period.
 - **Widgets.** The Subscriptions widget shows trials, subscribers, and MRR, and the AppMeta Pulse widget can show MRR as its metric.
 
-Pulse doesn't forecast MRR or make Apple's data arrive sooner. The newest day in the app is the newest day Apple has published, usually yesterday in Pacific Time. For why a quick revenue check belongs on the phone at all, see [the earlier post on AppMeta Pulse](/journal/read-only-revenue-on-the-iphone/); for how it differs from [AppStats](/alternatives/appstats/), [App Sales](/alternatives/app-sales-store-reports/), and [Appfigures](/alternatives/appfigures/), the comparison pages cover each one.
+Pulse doesn't forecast MRR or make Apple's data arrive sooner. The newest day in the app is the newest day Apple has published, usually yesterday in Pacific Time. For why a quick revenue check belongs on the phone at all, see [the earlier post on AppMeta Pulse](/journal/read-only-revenue-on-the-iphone/); for how it differs from [AppStats](/alternatives/appstats/), [App Sales](/alternatives/app-sales-store-reports/), and [Appfigures](/alternatives/appfigures/), the comparison pages cover each one. On the Mac, Pulse can also hand the raw Subscription report rows to Claude or another AI app, which can check this arithmetic for you: [how the App Store Connect MCP server works](/journal/app-store-connect-mcp-server/).
 
 Whichever tool you use, write down its four decisions before comparing its MRR with anyone else's. Two MRR figures rarely part ways over the formula.

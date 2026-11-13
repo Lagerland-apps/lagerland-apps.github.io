@@ -6,7 +6,7 @@ permalink: /de/apps/appmeta-pulse/
 translated_from: 2026-11-13
 og_tagline: "Dein App-Store-Geschäft auf dem iPhone."
 tagline: "Deine App-Store-Verkäufe, Abos und Bewertungen auf dem iPhone, mit dauerhaft gespeicherter Historie."
-quick_answer: "AppMeta Pulse ist eine App für iPhone und Mac für Indie-Entwickler, die im App Store verkaufen: Sie zeigt Erlös, MRR, Abonnenten, Probeabos und Bewertungen all deiner Apps aus App Store Connect und speichert jeden abgerufenen Tag auf deinem Gerät, auch über Apples Zeitfenster von etwa einem Jahr hinaus. Auf Bewertungen antwortest du einzeln oder auf bis zu 25 auf einmal, mit Antwortentwürfen, die Apple Intelligence auf dem Gerät schreibt (iOS 26 auf einem unterstützten iPhone, Entwürfe auf Englisch), und den Monat verfolgst du auf dem iPhone mit 12 Widgets für Home-Bildschirm und Sperrbildschirm. Die native Mac-App (ab macOS 14) bringt ein Panel in der Menüleiste mit, und ein Kauf schaltet beide frei. Du brauchst einen API-Schlüssel für App Store Connect mit der Rolle „Admin“, der im Schlüsselbund deines Geräts bleibt, und die App enthält weder Werbung noch Tracking oder Analysetools von Drittanbietern. Der kostenlose Download öffnet eine Demo mit Beispieldaten; für deine eigenen Zahlen zahlst du {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}, und beide Abos kannst du vorher {TRIAL}."
+quick_answer: "AppMeta Pulse ist eine App für iPhone und Mac für Indie-Entwickler, die im App Store verkaufen: Sie zeigt Erlös, MRR, Abonnenten, Probeabos und Bewertungen all deiner Apps aus App Store Connect und speichert jeden abgerufenen Tag auf deinem Gerät, auch über Apples Zeitfenster von etwa einem Jahr hinaus. Auf Bewertungen antwortest du einzeln oder auf bis zu 25 auf einmal, mit Antwortentwürfen, die Apple Intelligence auf dem Gerät schreibt (iOS 26 auf einem unterstützten iPhone, Entwürfe auf Englisch), und den Monat verfolgst du auf dem iPhone mit 12 Widgets für Home-Bildschirm und Sperrbildschirm. Die native Mac-App (ab macOS 14) bringt ein Panel in der Menüleiste und einen MCP-Server für Claude, Cursor und andere KI-Apps mit, und ein Kauf gilt für beide. Du brauchst einen API-Schlüssel für App Store Connect mit der Rolle „Admin“, der im Schlüsselbund deines Geräts bleibt, und die App enthält weder Werbung noch Tracking oder Analysetools von Drittanbietern. Der kostenlose Download öffnet eine Demo mit Beispieldaten; für deine eigenen Zahlen zahlst du {P_MONTHLY} im Monat, {P_YEARLY} im Jahr oder einmalig {P_LIFETIME}, und beide Abos kannst du vorher {TRIAL}."
 
 seo:
   title: "App-Store-Connect-Dashboard für iPhone & Mac | AppMeta Pulse"
@@ -68,6 +68,7 @@ who_for:
   - "Du beantwortest Bewertungen im App Store und machst das lieber vom Handy aus, gesammelt, wenn sich welche angestaut haben."
   - "Du willst sehen, wie der Monat läuft, direkt auf dem Home-Bildschirm und ohne eine App zu öffnen."
   - "Dein API-Schlüssel und deine Zahlen sollen nicht über den Server eines anderen laufen."
+  - "Du nutzt Claude, Cursor oder eine andere KI-App und willst, dass sie Fragen zu deinen eigenen App-Store-Berichten beantwortet."
 
 who_not_for:
   - "Du willst bei jedem Verkauf sofort benachrichtigt werden; AppMeta Pulse verschickt keine Mitteilungen."
@@ -110,6 +111,8 @@ features:
     description: "Filtere Bewertungen nach App, Sternen, Stimmung oder Antwortstatus. Stimmung und wiederkehrende Begriffe ermittelt die App auf dem Gerät. Schreibe, bearbeite oder lösche deine öffentlichen Antworten, speichere Antwortvorlagen und beantworte bis zu 25 offene Bewertungen in einem Durchgang."
   - title: "Auch auf dem Mac"
     description: "Die native Mac-App braucht macOS 14 oder neuer und ist im selben Kauf enthalten. Ein Fenster zeigt Dashboard, Apps, Abos, Trends, Länder und Regionen sowie Bewertungen. Ein Panel in der Menüleiste zeigt Erlös oder Verkäufe, Downloads, neue Abos und MRR auf einen Blick."
+  - title: "Frag deinen KI-Assistenten, auf dem Mac"
+    description: "AppMeta Pulse für Mac enthält einen MCP-Server für Claude, Cursor und andere KI-Apps. Schalte in den Einstellungen unter „KI-Assistenten“ den Schalter „KI-Assistenten dürfen deine Berichte lesen“ ein, dann kann dein Assistent eine schreibgeschützte Kopie von Apples Berichten abfragen: Verkäufe, Abos und Bewertungen, dazu Finanz- und Analytics-Berichte, wenn du sie sammelst. Ändern kann er nichts, und deinen API-Schlüssel bekommt er nie. Der Schalter ist aus, bis du ihn einschaltest."
   - title: "iCloud-Synchronisierung und ein zweites Gerät"
     description: "Die optionale iCloud-Synchronisierung hält Historie, Bewertungen, Einstellungen und Vorlagen über deine private iCloud auf iPhone und Mac aktuell. Ein weiteres iPhone oder ein Mac mit demselben Apple Account zeigt deine Zahlen, ohne dass der API-Schlüssel darauf gespeichert ist."
   - title: "Deine Währung, deine Sprache"
@@ -183,6 +186,8 @@ faq:
 
   - q: "Läuft AppMeta Pulse auf dem iPad oder Mac?"
     a: "Auf dem Mac ja, auf dem iPad nein. Die native Mac-App braucht macOS 14 oder neuer, ist im selben Kauf enthalten und bringt ein Panel in der Menüleiste mit, das Erlös oder Verkäufe, Downloads, neue Abos und MRR zeigt. Die iPhone-App braucht iOS 17 oder neuer. Mit eingeschalteter iCloud-Synchronisierung zeigt ein weiteres iPhone oder dein Mac mit demselben Apple Account deine Zahlen, ohne dass der API-Schlüssel darauf gespeichert ist."
+  - q: "Kann ich Claude oder eine andere KI-App nach meinen App-Store-Verkäufen fragen?"
+    a: "Ja, auf dem Mac. AppMeta Pulse für Mac enthält einen MCP-Server: Schalte in den Einstellungen unter „KI-Assistenten“ den Zugriff ein und füge den Server in Claude Desktop, Claude Code, Cursor, VS Code oder einer anderen KI-App hinzu, die MCP unterstützt. Der Assistent liest eine Kopie von Apples Berichten auf deinem Mac, kann nichts ändern und bekommt deinen API-Schlüssel nie. Was er liest, geht an diese KI-App und ihren Anbieter, zu deren Bedingungen. <a href=\"/de/journal/app-store-connect-mcp-server/\">So funktioniert der MCP-Server von AppMeta Pulse</a>."
 
   - q: "Gibt es AppMeta Pulse auf Deutsch?"
     a: "Ja. AppMeta Pulse ist neben Englisch in 13 weitere Sprachen übersetzt, darunter Deutsch, einschließlich der Widgets und der Siri-Befehle. Einige Fachbegriffe wie Dashboard, MRR, Churn und Analytics stehen auch in der deutschen App auf Englisch. Die Antwortentwürfe von Apple Intelligence sind auf Englisch."

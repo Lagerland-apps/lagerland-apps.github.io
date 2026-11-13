@@ -3,7 +3,7 @@ layout: app
 slug: appmeta-pulse
 name: "AppMeta Pulse"
 tagline: "Your App Store sales, subscriptions, and reviews on your iPhone, with the history kept."
-quick_answer: "AppMeta Pulse is an iPhone and Mac app for indie developers who sell on the App Store: it shows proceeds, MRR, subscribers, trials, and reviews for all your apps from App Store Connect, and keeps every day it fetches on your device after Apple's roughly one-year window has passed. You can answer reviews one at a time or up to 25 at once, with reply drafts written on-device by Apple Intelligence (iOS 26 on a supported iPhone, English drafts), and follow the month on 12 Home Screen and Lock Screen widgets on the iPhone. The native Mac app (macOS 14 or later) adds a menu bar panel, and one purchase unlocks both. It needs an App Store Connect API key with the Admin role, which stays in your device's Keychain, and it carries no ads, tracking, or third-party analytics. The free download opens a demo on sample data; your own numbers cost {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once."
+quick_answer: "AppMeta Pulse is an iPhone and Mac app for indie developers who sell on the App Store: it shows proceeds, MRR, subscribers, trials, and reviews for all your apps from App Store Connect, and keeps every day it fetches on your device after Apple's roughly one-year window has passed. You can answer reviews one at a time or up to 25 at once, with reply drafts written on-device by Apple Intelligence (iOS 26 on a supported iPhone, English drafts), and follow the month on 12 Home Screen and Lock Screen widgets on the iPhone. The native Mac app (macOS 14 or later) adds a menu bar panel and an MCP server for Claude, Cursor, and other AI apps, and one purchase covers both. It needs an App Store Connect API key with the Admin role, which stays in your device's Keychain, and it carries no ads, tracking, or third-party analytics. The free download opens a demo on sample data; your own numbers cost {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once."
 category: business
 status: live
 
@@ -97,6 +97,7 @@ who_for:
   - "You answer App Store reviews and would rather do it from your phone, in bulk when they pile up"
   - "You want this month's pace on your Home Screen without opening an app"
   - "You'd rather your API key and your numbers didn't pass through someone else's server"
+  - "You use Claude, Cursor, or another AI app and want it to answer questions from your own App Store reports"
 
 who_not_for:
   - "You want an alert the moment a sale comes in; AppMeta Pulse sends no notifications"
@@ -139,6 +140,8 @@ features:
     description: "Filter reviews by app, stars, sentiment, or reply status. Sentiment and recurring phrases are worked out on the device. Write, edit, or delete your public responses, save reusable templates, and reply to up to 25 unanswered reviews in one go."
   - title: "On your Mac too"
     description: "The native Mac app needs macOS 14 or later and comes with the same purchase. One window holds the dashboard, your apps, subscriptions, trends, territories, and reviews. A menu bar panel shows proceeds or sales, downloads, new subscriptions, and MRR at a glance."
+  - title: "Ask your AI assistant, on the Mac"
+    description: "AppMeta Pulse for Mac includes an MCP server for Claude, Cursor, and other AI apps. Turn on Settings › AI Assistants, and your assistant can query a read-only copy of Apple's reports: sales, subscriptions, and reviews, plus finance and analytics reports if you collect them. It can't change anything and never gets your API key. The switch is off until you turn it on."
   - title: "iCloud Sync and a second device"
     description: "Optional iCloud Sync keeps history, reviews, settings, and templates on your iPhone and Mac through your private iCloud. Another iPhone or a Mac on the same Apple Account can show your numbers without the API key stored on it."
   - title: "Your currency, your language"
@@ -222,6 +225,8 @@ faq:
 
   - q: "Does AppMeta Pulse work on iPad or Mac?"
     a: "On the Mac, yes; on iPad, no. The native Mac app needs macOS 14 or later, comes with the same purchase, and adds a menu bar panel with proceeds or sales, downloads, new subscriptions, and MRR. The iPhone app needs iOS 17 or later. With iCloud Sync on, another iPhone or your Mac, signed in to the same Apple Account, can show your numbers without the API key stored on it."
+  - q: "Can I ask Claude or another AI app about my App Store sales?"
+    a: "Yes, on the Mac. AppMeta Pulse for Mac includes an MCP server: turn on Settings › AI Assistants and add the helper to Claude Desktop, Claude Code, Cursor, VS Code, or another AI app that supports MCP. The assistant reads a copy of Apple's reports on your Mac, can't change anything, and never gets your API key. What it reads goes to that AI app and its provider under their terms. <a href=\"/journal/app-store-connect-mcp-server/\">How the AppMeta Pulse MCP server works</a>."
 
   - q: "Which languages is AppMeta Pulse available in?"
     a: "English plus 13 other languages: German, French (France and Canada), Spanish (Spain and Mexico), Italian, Dutch, Swedish, Portuguese (Brazil and Portugal), Russian, Ukrainian, Turkish, Japanese, Korean, and Chinese (Simplified and Traditional). The widgets and Siri phrases are translated too. Reply drafts from Apple Intelligence are in English."
