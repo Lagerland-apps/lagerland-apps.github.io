@@ -3,7 +3,7 @@ layout: app
 slug: chessful
 ref: /apps/chessful/
 permalink: /fr/apps/chessful/
-translated_from: 2026-11-08
+translated_from: 2026-11-13
 tagline: "Des échecs qui expliquent vos erreurs, puis vous font travailler dessus."
 og_tagline: "Des échecs qui expliquent vos erreurs."
 quick_answer: "Chessful est une application d’échecs pour apprendre et analyser vos parties sur iPhone, iPad et Mac : Stockfish vérifie chaque coup sur l’appareil, chaque erreur est expliquée en langage clair à votre niveau, et vos erreurs deviennent les puzzles de votre entraînement quotidien. Elle convient aux débutants comme aux joueurs qui progressent, avec 156 leçons gratuites, 15 000 puzzles répartis en 53 thèmes, 96 finales, 40 adversaires de 400 à 2400 Elo et l’import PGN de vos parties Chess.com ou Lichess. Elle est gratuite avec des limites quotidiennes (2 analyses, 3 puzzles et 2 indices du coach par jour) ; Pro coûte {P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec {TRIAL}, ou {P_LIFETIME} en achat unique. Aucun compte n’est nécessaire, et l’app n’a ni publicité, ni mesure d’audience, ni suivi."
@@ -36,6 +36,7 @@ plans:
       - "Import PGN de vos parties Chess.com ou Lichess"
       - "La première finale de chacune des 7 catégories"
       - "Classement estimé, barres de compétences, graphique de classement et 59 succès"
+      - "Les 7 styles de plateau et tous les jeux de pièces 2D et 3D"
   - name: "Pro · Mensuel"
     price: "{P_MONTHLY}/mois"
     summary: "Toutes les fonctions Pro, facturées chaque mois. Résiliable à tout moment."
@@ -126,7 +127,9 @@ features:
   - title: "96 finales contre Stockfish à pleine puissance"
     description: "Jouez Lucena, Philidor, Vančura et bien d’autres dans 7 catégories, des mats de base aux études classiques. La première position de chaque catégorie est gratuite ; Pro ouvre les 96."
   - title: "40 adversaires de 400 à 2400 Elo"
-    description: "Grimpez une échelle d’adversaires nommés répartis en 8 niveaux, de Pebble au Grand Maître, chacun avec un style de jeu, des forces et des faiblesses. Jouez sur un plateau 2D ou sur un plateau 3D en bois. Bloqué en pleine partie sur le plateau 2D ? Demandez au coach le meilleur coup ou l’évaluation de chaque coup légal."
+    description: "Grimpez une échelle d’adversaires nommés répartis en 8 niveaux, de Pebble au Grand Maître, chacun avec un style de jeu, des forces et des faiblesses. Jouez sur le plateau 2D ou sur le plateau 3D. Bloqué en pleine partie sur le plateau 2D ? Demandez au coach le meilleur coup ou l’évaluation de chaque coup légal."
+  - title: "Sept plateaux, en 2D et en 3D"
+    description: "Réglages → Style du plateau propose sept plateaux : Noyer et érable, Ébène et érable moucheté, Vinyle de club, Marbre, Minuit et or, Pierre de parc et Cuir de bibliothèque. Chacun a le même aspect sur le plateau 2D et sur le plateau 3D, où il repose sur sa propre table. Le plateau 2D a quatre jeux de pièces (Staunton, Plat, Bois moderne et Bois tourné) et le plateau 3D en a sept, du Staunton en buis et ébène à Marbre et onyx, Verre, Laiton et étain et Jouet. Les pièces 2D restent nettes sur iPad et Mac, et les pièces noires ressortent sur tous les plateaux. Tous les plateaux et jeux de pièces sont gratuits."
   - title: "Votre répertoire d’ouvertures"
     description: "Chessful lit vos parties analysées et montre les ouvertures que vous jouez le plus, vos résultats dans chacune et l’endroit où vous quittez la théorie. Pro ajoute l’arbre de coups complet, les corrections du moteur et des exercices sur les lignes que vous ratez sans cesse."
   - title: "Des progrès lisibles"
@@ -204,7 +207,7 @@ comparison_table:
 screenshot_captions:
   - alt: "Revue de partie Chessful sur iPhone avec un score de précision et les moments clés"
   - alt: "Détail d’une erreur dans Chessful, avec le meilleur coup sur l’échiquier et une explication"
-  - alt: "Plateau 3D de Chessful en pleine partie contre un adversaire"
+  - alt: "Plateau 3D de Chessful en noyer et érable avec des pièces Staunton, en pleine partie contre un adversaire"
   - alt: "Entraînement quotidien de Chessful construit à partir de vos propres parties"
   - alt: "Écran de progrès de Chessful avec un graphique de classement et des succès"
   - alt: "Écran Jouer de Chessful avec la liste des adversaires par niveau"
@@ -250,6 +253,8 @@ faq:
     a: "Pas pour jouer contre des personnes. Chessful n’a ni jeu en ligne, ni appariement, ni pendule ; chaque partie se joue contre ses adversaires intégrés. Elle sert à revoir et à s’entraîner : importez vos parties Chess.com ou Lichess en PGN, lisez l’explication de chaque erreur et travaillez ces positions."
   - q: "Chessful fonctionne-t-elle sur l’Apple Watch ou l’Apple Vision Pro ?"
     a: "Non. Chessful tourne sur iPhone, iPad et Mac (uniquement les Mac avec puce Apple, pas les Mac Intel), avec un seul achat universel pour les trois."
+  - q: "Peut-on changer le plateau et les pièces dans Chessful ?"
+    a: "Oui, gratuitement. Réglages → Style du plateau propose sept plateaux, de Noyer et érable et Marbre à Vinyle de club et Pierre de parc, et ce choix vaut pour le plateau 2D comme pour le plateau 3D. Réglages → Style des pièces propose quatre jeux pour le plateau 2D : Staunton, Plat, Bois moderne et Bois tourné. Quand le plateau 3D est activé, Réglages → Style des pièces 3D en propose sept : Staunton, Marbre et onyx, Tournoi de club, Géométrique moderne, Verre, Laiton et étain et Jouet. Vous passez du plateau 2D au plateau 3D dans les Réglages aussi."
   - q: "Chessful est-elle disponible en français ?"
     a: "Oui. Chessful est traduite en français, leçons comprises. L’app existe en 32 langues au total (38 avec les variantes régionales comme l’anglais britannique, l’espagnol mexicain ou le portugais brésilien). Choisissez la langue de Chessful dans les Réglages d’iOS, ou dans Réglages Système sur un Mac."
 
@@ -274,13 +279,13 @@ enrichment:
   pricing_tiers:
     - "Gratuit : les 156 leçons et les explications d’erreurs, 2 analyses, 3 puzzles et 2 indices du coach par jour, les 10 premiers adversaires, l’import PGN"
     - "Pro : analyses, puzzles et indices illimités, les 40 adversaires, les 96 finales, répertoire d’ouvertures complet avec exercices, comparaison hebdomadaire et tendances des faiblesses ({P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec un essai gratuit, ou {P_LIFETIME} à vie)"
-last_updated: 2026-11-08
+last_updated: 2026-11-13
 ---
 {%- include t.html -%}
 Chessful est une [application d’échecs pour apprendre et analyser vos parties sur iPhone, iPad et Mac](#features), pensée pour les joueurs qui perdent toujours de la même façon sans voir pourquoi. Quand une partie se termine, Stockfish vérifie chaque coup sur votre appareil. Chaque erreur reçoit une carte : ce que vous avez joué, le meilleur coup, une courte explication adaptée à votre niveau et la ligne qui punit votre coup. Ces erreurs deviennent ensuite les puzzles de [votre entraînement quotidien](#how-it-works), et la révision espacée ramène ceux que vous ratez jusqu’à ce que vous les résolviez.
 
 Une évaluation du moteur seule, c’est un chiffre et une suite de coups. Chessful y ajoute la phrase qui l’explique et classe chaque erreur dans l’un de dix types, de « Pièce en prise » et « Fourchette manquée » à « Erreur de finale » et « Imprécision d’ouverture », pour que votre entraînement vise les types que vous répétez. Les [exemples de cartes d’erreur](#templates) montrent le format.
 
-Vous pouvez jouer vos parties dans l’app contre 40 adversaires de 400 à 2400 Elo (l’<a href="{% include l.html url="/journal/forty-chess-opponents/" %}"{% if l_en %} hreflang="en"{% endif %}>article du journal sur les quarante adversaires{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> explique comment l’échelle a été conçue), ou importer les parties que vous avez déjà jouées sur Chess.com ou Lichess sous forme de fichiers PGN. Autour de l’analyse, il y a 156 leçons qui partent de l’échiquier lui-même, 15 000 puzzles répartis en 53 thèmes, 96 finales à jouer contre Stockfish à pleine puissance et un répertoire d’ouvertures construit à partir de vos propres parties. Pour voir toute la catégorie en un seul endroit, consultez notre <a href="{% include l.html url="/guides/best-chess-apps-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>guide des meilleures applications d’échecs pour iPhone{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, ainsi que la [comparaison directe](#compare-heading-chessful) avec Chess.com, Lichess, Magnus Trainer et Chessis.
+Vous pouvez jouer vos parties dans l’app contre 40 adversaires de 400 à 2400 Elo (l’<a href="{% include l.html url="/journal/forty-chess-opponents/" %}"{% if l_en %} hreflang="en"{% endif %}>article du journal sur les quarante adversaires{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> explique comment l’échelle a été conçue), ou importer les parties que vous avez déjà jouées sur Chess.com ou Lichess sous forme de fichiers PGN. Vous jouez sur le plateau 2D ou 3D, dans l’un des sept styles de plateau. Autour de l’analyse, il y a 156 leçons qui partent de l’échiquier lui-même, 15 000 puzzles répartis en 53 thèmes, 96 finales à jouer contre Stockfish à pleine puissance et un répertoire d’ouvertures construit à partir de vos propres parties. Pour voir toute la catégorie en un seul endroit, consultez notre <a href="{% include l.html url="/guides/best-chess-apps-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>guide des meilleures applications d’échecs pour iPhone{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, ainsi que la [comparaison directe](#compare-heading-chessful) avec Chess.com, Lichess, Magnus Trainer et Chessis.
 
 Chessful n’a pas de jeu en ligne, et vos parties restent sur l’appareil où vous les avez jouées. La version gratuite comprend toutes les leçons et toutes les explications, avec 2 analyses, 3 puzzles et 2 indices du coach par jour. Pro supprime ces limites et ouvre les 40 adversaires, les 96 finales et le répertoire complet, pour {P_MONTHLY}/mois ou {P_YEARLY}/an avec {TRIAL}, ou {P_LIFETIME} en achat unique pour un [accès à vie](#pricing). <a href="{% include l.html url="/apps/chessful/privacy/" %}"{% if l_en %} hreflang="en"{% endif %}>Aucun compte n’est nécessaire, et l’app n’a ni publicité, ni mesure d’audience, ni suivi{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>. Lagerland Apps édite aussi <a href="{% include l.html url="/apps/shogiful/" %}"{% if l_en %} hreflang="en"{% endif %}>Shogiful{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> pour le shogi (échecs japonais) et <a href="{% include l.html url="/apps/xiangqiful/" %}"{% if l_en %} hreflang="en"{% endif %}>Xiangqiful{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> pour le xiangqi (échecs chinois). Chessful est publiée par Lagerland Apps, un développeur Apple indépendant en Finlande.

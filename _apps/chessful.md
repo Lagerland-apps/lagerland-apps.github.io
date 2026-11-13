@@ -27,6 +27,7 @@ plans:
       - "PGN import of your Chess.com or Lichess games"
       - "The first endgame in each of the 7 categories"
       - "Estimated rating, skill bars, rating graph, and 59 achievements"
+      - "All 7 board styles and every 2D and 3D piece set"
   - name: "Pro · Monthly"
     price: "{P_MONTHLY}/mo"
     kind: monthly
@@ -85,6 +86,7 @@ seo:
     - offline chess app
     - Stockfish iPhone
     - chess app no ads
+    - 3d chess board app
 
 hero:
   pre_headline: "Chess training and game analysis for iPhone, iPad, and Mac"
@@ -155,7 +157,7 @@ features:
   - title: "Every mistake explained"
     description: "Each mistake card shows what you played, what was best, how much the evaluation dropped, and a plain-language explanation of why. It also plays out the line that punishes your move. Mistakes are sorted into 10 types, such as Hanging Piece, Missed Fork, Missed Pin, and Endgame Error, and Train This Pattern takes you straight to practice."
   - title: "Import your Chess.com and Lichess games"
-    description: "Export a PGN file from either site and open it in Chessful, or paste the PGN text. One import takes up to 2,000 games, flags duplicates, and lets you choose which side you played. Analyze All then reviews every game you haven't analysed yet, one after another; on the free plan it stops at 2 a day. Analyze All then reviews every game you haven't analysed yet, one after another; on the free plan it stops at 2 a day. There is no account to connect; the file is all Chessful needs."
+    description: "Export a PGN file from either site and open it in Chessful, or paste the PGN text. One import takes up to 2,000 games, flags duplicates, and lets you choose which side you played. Analyze All then reviews every game you haven't analysed yet, one after another; on the free plan it stops at 2 a day. There is no account to connect; the file is all Chessful needs."
   - title: "Daily training from your mistakes"
     description: "Today's Training picks a focus area (Tactics, Defense, Positioning, Endgame, or Openings) and builds a session of 3, 5, or 8 puzzles from your own games. Miss one and you play the right move yourself; score under 70% and it offers to re-drill the misses."
   - title: "15,000 puzzles in 53 themes"
@@ -163,7 +165,9 @@ features:
   - title: "96 endgames against full-strength Stockfish"
     description: "Play out Lucena, Philidor, Vančura, and more across 7 categories, from basic mates to classic studies. The first position in each category is free; Pro opens all 96."
   - title: "40 opponents from 400 to 2400 Elo"
-    description: "Climb a ladder of named opponents in 8 tiers, from Pebble to The Grandmaster, each with a play style, strengths, and weaknesses. Play on a 2D board or a 3D wood board. Stuck mid-game on the 2D board? Ask the Coach for the best move or the evaluation of every legal move."
+    description: "Climb a ladder of named opponents in 8 tiers, from Pebble to The Grandmaster, each with a play style, strengths, and weaknesses. Play on the 2D or the 3D board. Stuck mid-game on the 2D board? Ask the Coach for the best move or the evaluation of every legal move."
+  - title: "Seven boards, in 2D and 3D"
+    description: "Settings → Board Style has seven boards: Walnut & Maple, Ebony & Bird's-eye Maple, Club Vinyl, Marble, Midnight & Gold, Park Stone, and Library Leather. Each looks the same on the 2D board as on the 3D board, where it stands on its own table. The 2D board has four piece sets (Staunton, Flat, Modern Wood, and Turned Wood), and the 3D board has seven, from a boxwood and ebony Staunton set to Marble & Onyx, Glass, Brass & Pewter, and Toy. The 2D pieces stay sharp on iPad and Mac, and the black pieces stand out on every board. Every board and piece set is free."
   - title: "Your opening repertoire"
     description: "Chessful reads your analysed games and shows the openings you play most, how you score in each, and where you leave the book. Pro adds the full move tree, engine corrections, and drills for the lines you keep getting wrong."
   - title: "Progress you can read"
@@ -251,7 +255,7 @@ screenshots:
   - src: "/assets/screenshots/chessful/2.webp"
     alt: "Chessful mistake detail showing the better move on the board with an explanation"
   - src: "/assets/screenshots/chessful/3.webp"
-    alt: "Chessful 3D chess board mid-game against an opponent"
+    alt: "Chessful 3D board in Walnut & Maple with Staunton pieces, mid-game against an opponent"
   - src: "/assets/screenshots/chessful/4.webp"
     alt: "Chessful daily training built from your own games"
   - src: "/assets/screenshots/chessful/5.webp"
@@ -303,6 +307,8 @@ faq:
     a: "Not for playing people. Chessful has no online play, matchmaking, or clocks; every game is against its built-in opponents. It is for reviewing and training: import your Chess.com or Lichess games as PGN, see each mistake explained, and practise on them."
   - q: "Does Chessful work on Apple Watch or Apple Vision Pro?"
     a: "No. Chessful runs on iPhone, iPad, and Mac (Apple silicon only, not Intel Macs), with one Universal Purchase covering all three."
+  - q: "Can I change the board and pieces in Chessful?"
+    a: "Yes, for free. Settings → Board Style offers seven boards, from Walnut & Maple and Marble to Club Vinyl and Park Stone, and the choice applies to the 2D and the 3D board alike. Settings → Piece Style offers four sets for the 2D board: Staunton, Flat, Modern Wood, and Turned Wood. With the 3D board on, Settings → 3D Piece Style offers seven: Staunton, Marble & Onyx, Club Tournament, Geometric Modern, Glass, Brass & Pewter, and Toy. You switch between the 2D and the 3D board in Settings too."
   - q: "What languages is Chessful available in?"
     a: "Chessful ships in 32 languages (38 locales counting regional variants such as UK English, Mexican Spanish, and Brazilian Portuguese), lessons included. Pick the language for Chessful in iOS Settings, or in System Settings on a Mac."
 
@@ -312,7 +318,7 @@ support:
 
 release:
   first_release: "2026-04-08"
-  last_updated: "2026-11-06"
+  last_updated: "2026-11-13"
 
 ratings:
   value: "4.3"
@@ -329,12 +335,12 @@ related_journal:
 show_body: true
 about_heading: "What Chessful does: chess analysis, training, and lessons"
 related_apps: ["shogiful", "xiangqiful"]
-last_updated: 2026-11-08
+last_updated: 2026-11-13
 ---
 Chessful is a [chess training and analysis app for iPhone, iPad, and Mac](#features) for players who keep losing the same way and can't see why. When a game ends, Stockfish checks every move on your device. Each mistake gets a card with what you played, what was best, a short explanation worded for your level, and the line that punishes your move. Those mistakes then become the puzzles in [your daily training](#how-it-works), and spaced review brings back the ones you miss until you solve them.
 
 An engine evaluation on its own is a number and a line of moves. Chessful adds the sentence that explains it and sorts each mistake into one of ten types, from Hanging Piece and Missed Fork to Endgame Error and Opening Inaccuracy, so your training aims at the types you repeat. The [example mistake cards](#templates) show the format.
 
-You can play your games in the app against 40 opponents from 400 to 2400 Elo (the [forty-opponents journal post](/journal/forty-chess-opponents/) covers how the ladder was designed), or import the games you already played on Chess.com or Lichess as PGN files. Around the analysis sit 156 lessons that start with the board itself, 15,000 puzzles in 53 themes, 96 endgames to play out against full-strength Stockfish, and an opening repertoire built from your own games. For the whole category in one place, see our [guide to the best chess apps for iPhone](/guides/best-chess-apps-iphone/), and the [side-by-side comparison](#compare-heading-chessful) with Chess.com, Lichess, Magnus Trainer, and Chessis.
+You can play your games in the app against 40 opponents from 400 to 2400 Elo (the [forty-opponents journal post](/journal/forty-chess-opponents/) covers how the ladder was designed), or import the games you already played on Chess.com or Lichess as PGN files. You play on a 2D or a 3D board, in any of seven board styles. Around the analysis sit 156 lessons that start with the board itself, 15,000 puzzles in 53 themes, 96 endgames to play out against full-strength Stockfish, and an opening repertoire built from your own games. For the whole category in one place, see our [guide to the best chess apps for iPhone](/guides/best-chess-apps-iphone/), and the [side-by-side comparison](#compare-heading-chessful) with Chess.com, Lichess, Magnus Trainer, and Chessis.
 
 Chessful has no online play, and your games stay on the device you played them on. The free version includes every lesson and every explanation, with 2 analyses, 3 puzzles, and 2 coach hints a day. Pro removes those limits and opens all 40 opponents, all 96 endgames, and the full repertoire, for {P_MONTHLY}/month or {P_YEARLY}/year with a {TRIAL}, or {P_LIFETIME} once for [lifetime](/apps/chessful/#pricing). There is [no account, and the app has no ads, analytics, or tracking](/apps/chessful/privacy/). Lagerland Apps also makes [Shogiful](/apps/shogiful/) for shogi (Japanese chess) and [Xiangqiful](/apps/xiangqiful/) for xiangqi (Chinese chess). Chessful is published by Lagerland Apps, an independent Apple developer in Finland.
