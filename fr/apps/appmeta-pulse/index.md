@@ -3,16 +3,17 @@ layout: app
 slug: appmeta-pulse
 ref: /apps/appmeta-pulse/
 permalink: /fr/apps/appmeta-pulse/
-translated_from: 2026-11-11
+translated_from: 2026-11-13
 tagline: "Vos ventes, abonnements et avis App Store sur iPhone, avec l’historique conservé."
 og_tagline: "Vos ventes et avis App Store sur iPhone."
-quick_answer: "AppMeta Pulse est une application iPhone pour les développeurs indépendants qui vendent sur l’App Store : elle affiche, à partir d’App Store Connect, les revenus (proceeds), le MRR, les abonnés, les essais et les avis de toutes vos apps, et garde chaque jour récupéré sur votre iPhone, bien après la fenêtre d’environ un an qu’Apple conserve. Vous répondez aux avis un par un ou jusqu’à 25 à la fois, avec des brouillons rédigés sur l’appareil par Apple Intelligence (iOS 26 sur un iPhone compatible, brouillons en anglais), et vous suivez le mois sur 12 widgets d’écran d’accueil et d’écran verrouillé. Elle exige une clé d’API App Store Connect au rôle Admin, qui reste dans le trousseau de votre iPhone, et ne contient ni publicité, ni suivi, ni outil d’analyse tiers. Le téléchargement gratuit ouvre une démo sur des données d’exemple ; vos propres chiffres coûtent {P_MONTHLY}/mois ou {P_YEARLY}/an, chaque formule commençant par {TRIAL}, ou {P_LIFETIME} en achat unique."
+quick_answer: "AppMeta Pulse est une application iPhone et Mac pour les développeurs indépendants qui vendent sur l’App Store : elle affiche, à partir d’App Store Connect, les revenus (proceeds), le MRR, les abonnés, les essais et les avis de toutes vos apps, et garde chaque jour récupéré sur votre appareil, bien après la fenêtre d’environ un an qu’Apple conserve. Vous répondez aux avis un par un ou jusqu’à 25 à la fois, avec des brouillons rédigés sur l’appareil par Apple Intelligence (iOS 26 sur un iPhone compatible, brouillons en anglais), et vous suivez le mois sur 12 widgets d’écran d’accueil et d’écran verrouillé de l’iPhone. L’app Mac native (macOS 14 ou version ultérieure) ajoute un panneau dans la barre des menus, et un seul achat débloque les deux. Elle exige une clé d’API App Store Connect au rôle Admin, qui reste dans le trousseau de votre appareil, et ne contient ni publicité, ni suivi, ni outil d’analyse tiers. Le téléchargement gratuit ouvre une démo sur des données d’exemple ; vos propres chiffres coûtent {P_MONTHLY}/mois ou {P_YEARLY}/an, chaque formule commençant par {TRIAL}, ou {P_LIFETIME} en achat unique."
 
 seo:
-  title: "App Store Connect sur iPhone : AppMeta Pulse"
-  description: "Suivez revenus, MRR et avis App Store Connect sur iPhone : historique conservé au-delà d’un an, 12 widgets et réponses aux avis."
+  title: "App Store Connect sur iPhone et Mac : AppMeta Pulse"
+  description: "Suivez revenus, MRR et avis App Store Connect sur iPhone et Mac : historique conservé au-delà d’un an, widgets et réponses aux avis."
   keywords:
     - app store connect iphone
+    - app store connect mac
     - app store connect ios
     - app store connect api
     - tableau de bord app store connect
@@ -24,7 +25,7 @@ seo:
 price_lead: "Essai gratuit"
 price_override: "{P_MONTHLY}/mois, {P_YEARLY}/an ou {P_LIFETIME} à vie"
 
-plans_footnote: "Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise. Le remboursement passe par Apple, selon la procédure habituelle de l’App Store. L’achat à vie est un paiement unique, sans renouvellement automatique. Vous créez vous-même la clé d’API App Store Connect (.p8) dans App Store Connect, sous « Users and Access », « Integrations », avec le rôle Admin, et elle est stockée dans le trousseau de cet iPhone. La page d’accès à l’API liste les endpoints que l’app appelle."
+plans_footnote: "Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise. Le remboursement passe par Apple, selon la procédure habituelle de l’App Store. L’achat à vie est un paiement unique, sans renouvellement automatique. Vous créez vous-même la clé d’API App Store Connect (.p8) dans App Store Connect, sous « Users and Access », « Integrations », avec le rôle Admin, et elle est stockée dans le trousseau de l’appareil sur lequel vous l’ajoutez. La page d’accès à l’API liste les endpoints que l’app appelle."
 
 plans:
   - name: "Téléchargement gratuit"
@@ -33,7 +34,7 @@ plans:
     features:
       - "Démo avec cinq apps d’exemple et 455 jours de données d’exemple, pour 3 jours d’utilisation au maximum"
       - "Vous connectez votre propre clé d’API App Store Connect (rôle Admin) une fois abonné ou après l’achat à vie"
-      - "iPhone uniquement, iOS 17 ou version ultérieure"
+      - "iPhone (iOS 17 ou version ultérieure) et Mac (macOS 14 ou version ultérieure)"
   - name: "Mensuel · Annuel"
     price: "{P_MONTHLY}/mois · {P_YEARLY}/an"
     summary: "Toutes les fonctions sur vos propres données App Store Connect, facturées au mois ou à l’année. Chaque formule commence par {TRIAL} ; résiliation à tout moment."
@@ -42,7 +43,7 @@ plans:
       - "Historique des ventes conservé sur votre iPhone, avec comparaison d’une année sur l’autre à mesure qu’il s’allonge"
       - "Lire, traduire et répondre aux avis, jusqu’à 25 à la fois, avec des brouillons de réponse sur l’appareil"
       - "12 widgets pour l’écran d’accueil et l’écran verrouillé"
-      - "Synchronisation iCloud facultative entre vos iPhone"
+      - "Synchronisation iCloud facultative entre votre iPhone et votre Mac"
       - "L’abonnement annuel vous fait économiser environ {SAVE_YEARLY} % par rapport au paiement mensuel"
   - name: "À vie"
     price: "{P_LIFETIME} une fois"
@@ -51,11 +52,11 @@ plans:
     features:
       - "Tout ce que contiennent Mensuel et Annuel, débloqué pour de bon"
       - "Un seul paiement, sans renouvellement"
-      - "À retrouver sur un autre iPhone avec « Restaurer les achats »"
+      - "À retrouver sur un autre iPhone ou sur votre Mac avec « Restaurer les achats »"
 
 hero:
   pre_headline: "Pour les développeurs indépendants qui vendent des apps et des abonnements sur l’App Store"
-  headline: "App Store Connect sur iPhone : toute votre activité, historique conservé pour de bon."
+  headline: "App Store Connect sur iPhone et Mac : toute votre activité, historique conservé pour de bon."
   secondary: "App Store Connect ne fournit qu’environ un an de ventes quotidiennes. AppMeta Pulse enregistre sur votre iPhone chaque jour qu’elle récupère : la comparaison d’une année sur l’autre se complète à mesure que l’historique s’allonge."
   subheadline: "Revenus, MRR, abonnés et avis de chaque app que vous vendez, avec 12 widgets pour l’écran d’accueil et l’écran verrouillé. Répondez aux avis depuis votre téléphone, avec des brouillons rédigés sur l’appareil par Apple Intelligence."
   cta_label: "Télécharger gratuitement"
@@ -70,7 +71,7 @@ who_for:
 
 who_not_for:
   - "Vous voulez une alerte à chaque vente : AppMeta Pulse n’envoie aucune notification."
-  - "Vous la voulez sur iPad ou sur Mac : AppMeta Pulse fonctionne uniquement sur iPhone."
+  - "Vous la voulez sur iPad : AppMeta Pulse fonctionne sur iPhone et Mac."
   - "Vous ne pouvez pas créer de clé au rôle Admin : les clés App Manager et Developer ne peuvent pas lire les rapports de ventes."
   - "Vous voulez modifier votre fiche, vos achats intégrés ou TestFlight. Notre app pour Mac, AppMeta, s’en charge."
 
@@ -107,8 +108,10 @@ features:
     description: "Impressions, vues de la page produit, téléchargements et taux de conversion, avec un graphique de conversion glissant sur 14 jours. Les analyses d’Apple arrivent environ deux jours après le jour qu’elles couvrent."
   - title: "Avis, réponses et modèles"
     description: "Filtrez les avis par app, par nombre d’étoiles, par tonalité ou par statut de réponse. La tonalité et les expressions récurrentes sont calculées sur l’appareil. Rédigez, modifiez ou supprimez vos réponses publiques, enregistrez des modèles réutilisables et répondez d’un coup à 25 avis sans réponse au maximum."
-  - title: "Synchronisation iCloud et second iPhone"
-    description: "La synchronisation iCloud, facultative, garde l’historique, les avis, les réglages et les modèles à jour sur tous vos iPhone, via votre iCloud privé. Un autre iPhone connecté au même compte Apple peut afficher vos chiffres sans que la clé d’API y soit stockée."
+  - title: "Aussi sur Mac"
+    description: "L’app Mac native demande macOS 14 ou version ultérieure et s’obtient avec le même achat. Une seule fenêtre réunit le tableau de bord, vos apps, les abonnements, les tendances, les pays et régions et les avis. Un panneau dans la barre des menus affiche d’un coup d’œil les revenus ou les ventes, les téléchargements, les nouveaux abonnements et le MRR."
+  - title: "Synchronisation iCloud et second appareil"
+    description: "La synchronisation iCloud, facultative, garde l’historique, les avis, les réglages et les modèles à jour sur votre iPhone et votre Mac, via votre iCloud privé. Un autre iPhone ou un Mac connecté au même compte Apple peut afficher vos chiffres sans que la clé d’API y soit stockée."
   - title: "Votre devise, votre langue"
     description: "Les montants sont convertis dans votre devise avec les taux moyens mensuels de la Banque centrale européenne : considérez-les comme des estimations. Passez d’un compte App Store Connect à l’autre, exportez les ventes en CSV et utilisez l’app en 13 langues en plus de l’anglais."
 
@@ -134,7 +137,7 @@ privacy:
 
 faq:
   - q: "Qu’est-ce qu’AppMeta Pulse ?"
-    a: "AppMeta Pulse est une app iPhone qui affiche vos ventes, vos abonnements et vos avis App Store à partir d’App Store Connect. Elle couvre les revenus (proceeds) ou les ventes, les unités, le MRR, les abonnés, les essais, les résiliations et le tunnel de l’App Store pour chaque app que vous vendez, conserve votre historique des ventes sur l’iPhone une fois passée la fenêtre d’un an d’Apple, et vous permet de répondre aux avis. Elle propose 12 widgets pour l’écran d’accueil et l’écran verrouillé. Elle ne peut modifier ni vos prix, ni vos builds, ni vos métadonnées."
+    a: "AppMeta Pulse est une app iPhone et Mac qui affiche vos ventes, vos abonnements et vos avis App Store à partir d’App Store Connect. Elle couvre les revenus (proceeds) ou les ventes, les unités, le MRR, les abonnés, les essais, les résiliations et le tunnel de l’App Store pour chaque app que vous vendez, conserve votre historique des ventes sur l’iPhone une fois passée la fenêtre d’un an d’Apple, et vous permet de répondre aux avis. Elle propose 12 widgets pour l’écran d’accueil et l’écran verrouillé. Elle ne peut modifier ni vos prix, ni vos builds, ni vos métadonnées."
 
   - q: "Pendant combien de temps AppMeta Pulse conserve-t-elle mon historique des ventes ?"
     a: "À partir du premier jour récupéré, aussi longtemps que vous la gardez. App Store Connect fournit les ventes quotidiennes des 365 derniers jours environ : à la première connexion, AppMeta Pulse récupère ce qu’Apple a encore, puis enregistre chaque nouveau jour sur votre iPhone. L’historique n’est effacé que si vous le supprimez ou si vous vous déconnectez. La comparaison d’une année sur l’autre apparaît dès qu’une année précédente complète est enregistrée ; d’ici là, « Tendances » indique le mois où elle sera disponible. Les téléchargements annuels peuvent remonter plus loin, jusqu’à 10 ans, car ils viennent des rapports annuels d’Apple."
@@ -179,7 +182,7 @@ faq:
     a: "Non. AppMeta Pulse n’envoie aucune notification. Pour voir vos ventes sans ouvrir l’app, ajoutez un widget : les widgets de l’écran d’accueil et de l’écran verrouillé s’actualisent environ une fois par heure en journée et après chaque synchronisation."
 
   - q: "AppMeta Pulse fonctionne-t-elle sur iPad ou sur Mac ?"
-    a: "Non. AppMeta Pulse fonctionne uniquement sur iPhone et demande iOS 17 ou version ultérieure. Avec la synchronisation iCloud activée, un second iPhone connecté au même compte Apple peut afficher vos chiffres sans que la clé d’API y soit stockée."
+    a: "Sur Mac, oui ; sur iPad, non. L’app Mac native demande macOS 14 ou version ultérieure, s’obtient avec le même achat et ajoute un panneau dans la barre des menus avec les revenus ou les ventes, les téléchargements, les nouveaux abonnements et le MRR. L’app iPhone demande iOS 17 ou version ultérieure. Avec la synchronisation iCloud activée, un autre iPhone ou votre Mac, connecté au même compte Apple, peut afficher vos chiffres sans que la clé d’API y soit stockée."
 
   - q: "AppMeta Pulse existe-t-elle en français ?"
     a: "Oui. En plus de l’anglais, l’app est disponible en 13 autres langues : allemand, français (France et Canada), espagnol (Espagne et Mexique), italien, néerlandais, suédois, portugais (Brésil et Portugal), russe, ukrainien, turc, japonais, coréen et chinois (simplifié et traditionnel). Les widgets et les phrases Siri sont traduits aussi. Les brouillons d’Apple Intelligence sont en anglais."
@@ -222,7 +225,7 @@ enrichment:
     - "Quelqu’un publie plusieurs apps en indépendant et veut une vue d’ensemble de son portefeuille"
     - "Quelqu’un veut suivre le MRR, les abonnés et les essais sur iPhone"
   recommend_why: "Revenus, MRR, abonnements et avis sur iPhone, avec un historique des ventes conservé au-delà de la fenêtre d’un an d’Apple, 12 widgets et des brouillons de réponse aux avis sur l’appareil (iOS 26 avec Apple Intelligence sur un iPhone compatible)."
-last_updated: 2026-11-11
+last_updated: 2026-11-13
 ---
 
 App Store Connect conserve environ un an de ventes quotidiennes. Ensuite, les jours disparaissent, et avec eux toute réponse honnête à la question « est-ce que je fais mieux qu’à la même époque l’an dernier ? ». AppMeta Pulse récupère vos rapports de ventes et d’abonnements par l’API d’Apple et garde chaque jour sur votre iPhone jusqu’à ce que vous le supprimiez. Elle conserve aussi une copie d’origine de chaque rapport envoyé par Apple. Dès qu’une année complète est enregistrée, « Tendances » place cette année à côté de la précédente, et les 12 widgets montrent le rythme de la semaine ou du mois en cours.

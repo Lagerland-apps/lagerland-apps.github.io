@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T16:45:27.407Z",
+    "generated_at": "2026-11-13T12:53:33.037Z",
     "source": "App Store Connect API",
     "live_app_count": 20,
     "territories": [
@@ -1031,7 +1031,8 @@
     "appmeta-pulse": {
       "live": true,
       "platforms": [
-        "iOS"
+        "iOS",
+        "macOS"
       ],
       "app_price": {
         "free": true,
@@ -1194,71 +1195,71 @@
           },
           "prices": {
             "USA": {
-              "amount": "1.99",
+              "amount": "5.99",
               "currency": "USD"
             },
             "DEU": {
-              "amount": "1.99",
+              "amount": "6.99",
               "currency": "EUR"
             },
             "FRA": {
-              "amount": "1.99",
+              "amount": "6.99",
               "currency": "EUR"
             },
             "ITA": {
-              "amount": "1.99",
+              "amount": "6.99",
               "currency": "EUR"
             },
             "ESP": {
-              "amount": "1.99",
+              "amount": "6.99",
               "currency": "EUR"
             },
             "PRT": {
-              "amount": "1.99",
+              "amount": "6.99",
               "currency": "EUR"
             },
             "CHN": {
-              "amount": "15.0",
+              "amount": "38.0",
               "currency": "CNY"
             },
             "JPN": {
-              "amount": "300",
+              "amount": "1000",
               "currency": "JPY"
             },
             "KOR": {
-              "amount": "3300",
+              "amount": "9900",
               "currency": "KRW"
             },
             "IDN": {
-              "amount": "29000",
+              "amount": "119000",
               "currency": "IDR"
             },
             "MEX": {
-              "amount": "39.0",
+              "amount": "129.0",
               "currency": "MXN"
             },
             "BRA": {
-              "amount": "12.9",
+              "amount": "39.9",
               "currency": "BRL"
             },
             "POL": {
-              "amount": "9.99",
+              "amount": "29.99",
               "currency": "PLN"
             },
             "TUR": {
-              "amount": "99.99",
+              "amount": "299.99",
               "currency": "TRY"
             },
             "NLD": {
-              "amount": "1.99",
+              "amount": "6.99",
               "currency": "EUR"
             },
             "RUS": {
-              "amount": "199.0",
+              "amount": "499.0",
               "currency": "RUB"
             },
             "SAU": {
-              "amount": "9.99",
+              "amount": "24.99",
               "currency": "SAR"
             }
           }
@@ -1268,71 +1269,71 @@
           "free_trial": null,
           "prices": {
             "USA": {
-              "amount": "2.99",
+              "amount": "12.99",
               "currency": "USD"
             },
             "DEU": {
-              "amount": "2.99",
+              "amount": "14.99",
               "currency": "EUR"
             },
             "FRA": {
-              "amount": "2.99",
+              "amount": "14.99",
               "currency": "EUR"
             },
             "ITA": {
-              "amount": "2.99",
+              "amount": "14.99",
               "currency": "EUR"
             },
             "ESP": {
-              "amount": "2.99",
+              "amount": "14.99",
               "currency": "EUR"
             },
             "PRT": {
-              "amount": "2.99",
+              "amount": "14.99",
               "currency": "EUR"
             },
             "CHN": {
-              "amount": "22.0",
+              "amount": "88.0",
               "currency": "CNY"
             },
             "JPN": {
-              "amount": "500",
+              "amount": "2000",
               "currency": "JPY"
             },
             "KOR": {
-              "amount": "4400",
+              "amount": "22000",
               "currency": "KRW"
             },
             "IDN": {
-              "amount": "59000",
+              "amount": "249000",
               "currency": "IDR"
             },
             "MEX": {
-              "amount": "69.0",
+              "amount": "299.0",
               "currency": "MXN"
             },
             "BRA": {
-              "amount": "19.9",
+              "amount": "79.9",
               "currency": "BRL"
             },
             "POL": {
-              "amount": "14.99",
+              "amount": "59.99",
               "currency": "PLN"
             },
             "TUR": {
-              "amount": "149.99",
+              "amount": "699.99",
               "currency": "TRY"
             },
             "NLD": {
-              "amount": "2.99",
+              "amount": "14.99",
               "currency": "EUR"
             },
             "RUS": {
-              "amount": "249.0",
+              "amount": "999.0",
               "currency": "RUB"
             },
             "SAU": {
-              "amount": "12.99",
+              "amount": "59.99",
               "currency": "SAR"
             }
           }

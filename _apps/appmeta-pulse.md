@@ -3,7 +3,7 @@ layout: app
 slug: appmeta-pulse
 name: "AppMeta Pulse"
 tagline: "Your App Store sales, subscriptions, and reviews on your iPhone, with the history kept."
-quick_answer: "AppMeta Pulse is an iPhone app for indie developers who sell on the App Store: it shows proceeds, MRR, subscribers, trials, and reviews for all your apps from App Store Connect, and keeps every day it fetches on your iPhone after Apple's roughly one-year window has passed. You can answer reviews one at a time or up to 25 at once, with reply drafts written on-device by Apple Intelligence (iOS 26 on a supported iPhone, English drafts), and follow the month on 12 Home Screen and Lock Screen widgets. It needs an App Store Connect API key with the Admin role, which stays in your iPhone's Keychain, and it carries no ads, tracking, or third-party analytics. The free download opens a demo on sample data; your own numbers cost {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once."
+quick_answer: "AppMeta Pulse is an iPhone and Mac app for indie developers who sell on the App Store: it shows proceeds, MRR, subscribers, trials, and reviews for all your apps from App Store Connect, and keeps every day it fetches on your device after Apple's roughly one-year window has passed. You can answer reviews one at a time or up to 25 at once, with reply drafts written on-device by Apple Intelligence (iOS 26 on a supported iPhone, English drafts), and follow the month on 12 Home Screen and Lock Screen widgets on the iPhone. The native Mac app (macOS 14 or later) adds a menu bar panel, and one purchase unlocks both. It needs an App Store Connect API key with the Admin role, which stays in your device's Keychain, and it carries no ads, tracking, or third-party analytics. The free download opens a demo on sample data; your own numbers cost {P_MONTHLY}/month or {P_YEARLY}/year, each starting with a {TRIAL}, or {P_LIFETIME} once."
 category: business
 status: live
 
@@ -22,7 +22,7 @@ jump_nav: true
 # (US, UK, Canada, Australia, euro and other storefronts checked 2026-10-25):
 # monthly, yearly and lifetime (prices from _data/catalog.json). The free download only opens a demo
 # on sample data; your own numbers need a subscription or Lifetime.
-plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew. You create the App Store Connect API key (.p8) yourself in App Store Connect under Users and Access, Integrations, with the Admin role, and it is stored in this iPhone's Keychain. The API access page lists the endpoints the app calls."
+plans_footnote: "Prices in USD; the App Store shows your local currency at checkout. Apple handles refunds through the standard App Store refund flow. Lifetime is a one-time purchase and does not auto-renew. You create the App Store Connect API key (.p8) yourself in App Store Connect under Users and Access, Integrations, with the Admin role, and it is stored in the Keychain of the device you add it on. The API access page lists the endpoints the app calls."
 
 plans:
   - name: "Free download"
@@ -31,7 +31,7 @@ plans:
     features:
       - "Demo with five sample apps and 455 days of sample data, for up to 3 days of use"
       - "Connect your own App Store Connect API key (Admin role) once you subscribe or buy Lifetime"
-      - "iPhone only, iOS 17 or later"
+      - "iPhone (iOS 17 or later) and Mac (macOS 14 or later)"
   - name: "Monthly · Yearly"
     price: "{P_MONTHLY} / mo · {P_YEARLY} / yr"
     kind: monthly
@@ -41,7 +41,7 @@ plans:
       - "Sales history kept on your iPhone, with year-over-year comparison as it grows"
       - "Read, translate, and answer reviews, up to 25 at once, with on-device reply drafts"
       - "12 Home Screen and Lock Screen widgets"
-      - "Optional iCloud Sync across your iPhones"
+      - "Optional iCloud Sync across your iPhone and Mac"
       - "Yearly saves about {SAVE_YEARLY}% against paying monthly"
   - name: "Lifetime"
     price: "{P_LIFETIME} one-time"
@@ -51,17 +51,19 @@ plans:
     features:
       - "Everything in Monthly and Yearly, unlocked for good"
       - "One payment, with no renewal"
-      - "Restore it on another iPhone with Restore Purchases"
+      - "Restore it on another iPhone or on your Mac with Restore Purchases"
 
 icon: "/assets/icons/appmeta-pulse.png"
 og_image: "/assets/og/appmeta-pulse.png"
 
 seo:
-  title: "AppMeta Pulse: App Store Connect Dashboard for iPhone"
-  description: "App Store Connect dashboard for iPhone: proceeds, MRR, and reviews for every app, sales history kept past Apple's one year, and 12 widgets."
+  title: "AppMeta Pulse: App Store Connect Dashboard for iPhone & Mac"
+  description: "App Store Connect dashboard for iPhone and Mac: proceeds, MRR, and reviews for every app, with sales history kept past Apple's one-year window."
   keywords:
     - App Store Connect iPhone app
     - App Store Connect dashboard iPhone
+    - App Store Connect Mac app
+    - app store sales menu bar Mac
     - app store revenue tracker iPhone
     - indie iOS developer dashboard
     - app store analytics iPhone
@@ -83,7 +85,7 @@ seo:
 
 hero:
   pre_headline: "For indie developers who sell apps and subscriptions on the App Store"
-  headline: "Your whole App Store business on your iPhone, kept for good."
+  headline: "Your whole App Store business on your iPhone and Mac, kept for good."
   secondary: "App Store Connect serves about a year of daily sales. AppMeta Pulse stores every day it fetches on your iPhone, so year-over-year comparison fills in as your history grows."
   subheadline: "Proceeds, MRR, subscribers, and reviews for every app you sell, on 12 Home Screen and Lock Screen widgets. Answer reviews from your phone, with reply drafts written on-device by Apple Intelligence."
   cta_label: "Download Free"
@@ -98,7 +100,7 @@ who_for:
 
 who_not_for:
   - "You want an alert the moment a sale comes in; AppMeta Pulse sends no notifications"
-  - "You want it on iPad or Mac; AppMeta Pulse runs on iPhone only"
+  - "You want it on iPad; AppMeta Pulse runs on iPhone and Mac"
   - "You can't create an Admin API key; App Manager and Developer keys can't read sales reports"
   - "You want to edit your listing, in-app purchases, or TestFlight. Our Mac app AppMeta does that"
 
@@ -135,8 +137,10 @@ features:
     description: "Impressions, product page views, downloads, and conversion rate, with a rolling 14-day conversion chart. Apple's analytics arrive about two days after the day they cover."
   - title: "Reviews, replies, and templates"
     description: "Filter reviews by app, stars, sentiment, or reply status. Sentiment and recurring phrases are worked out on the device. Write, edit, or delete your public responses, save reusable templates, and reply to up to 25 unanswered reviews in one go."
-  - title: "iCloud Sync and a second iPhone"
-    description: "Optional iCloud Sync keeps history, reviews, settings, and templates on all your iPhones through your private iCloud. Another iPhone on the same Apple Account can show your numbers without the API key stored on it."
+  - title: "On your Mac too"
+    description: "The native Mac app needs macOS 14 or later and comes with the same purchase. One window holds the dashboard, your apps, subscriptions, trends, territories, and reviews. A menu bar panel shows proceeds or sales, downloads, new subscriptions, and MRR at a glance."
+  - title: "iCloud Sync and a second device"
+    description: "Optional iCloud Sync keeps history, reviews, settings, and templates on your iPhone and Mac through your private iCloud. Another iPhone or a Mac on the same Apple Account can show your numbers without the API key stored on it."
   - title: "Your currency, your language"
     description: "Amounts convert to your currency with the European Central Bank's monthly average rates, so treat them as estimates. Switch between several App Store Connect accounts, export sales to CSV, and use the app in 13 languages besides English."
 
@@ -172,7 +176,7 @@ privacy:
 
 faq:
   - q: "What is AppMeta Pulse?"
-    a: "AppMeta Pulse is an iPhone app that shows your App Store sales, subscriptions, and reviews from App Store Connect. It covers proceeds or sales, units, MRR, subscribers, trials, churn, and the App Store funnel for every app you sell, keeps your sales history on your iPhone after Apple's one-year window has passed, and lets you reply to reviews. It has 12 Home Screen and Lock Screen widgets. It can't change your prices, builds, or metadata."
+    a: "AppMeta Pulse is an iPhone and Mac app that shows your App Store sales, subscriptions, and reviews from App Store Connect. It covers proceeds or sales, units, MRR, subscribers, trials, churn, and the App Store funnel for every app you sell, keeps your sales history on your iPhone after Apple's one-year window has passed, and lets you reply to reviews. It has 12 Home Screen and Lock Screen widgets. It can't change your prices, builds, or metadata."
 
   - q: "How far back does AppMeta Pulse keep my sales history?"
     a: "From the first day it fetches, for as long as you keep it. App Store Connect serves about the last 365 days of daily sales, so on first connect AppMeta Pulse fetches what Apple still has and then stores every new day on your iPhone. History is cleared only when you delete it or sign out. Year-over-year comparison appears once a full prior-year window is stored; until then Trends tells you the month it becomes available. Downloads per year can reach back further, up to 10 years, because they come from Apple's yearly reports."
@@ -217,7 +221,7 @@ faq:
     a: "No. AppMeta Pulse sends no notifications. To see sales without opening the app, add a widget: the Home Screen and Lock Screen widgets refresh about once an hour during the day and after each sync."
 
   - q: "Does AppMeta Pulse work on iPad or Mac?"
-    a: "No. AppMeta Pulse runs on iPhone only and needs iOS 17 or later. With iCloud Sync on, a second iPhone signed in to the same Apple Account can show your numbers without the API key stored on it."
+    a: "On the Mac, yes; on iPad, no. The native Mac app needs macOS 14 or later, comes with the same purchase, and adds a menu bar panel with proceeds or sales, downloads, new subscriptions, and MRR. The iPhone app needs iOS 17 or later. With iCloud Sync on, another iPhone or your Mac, signed in to the same Apple Account, can show your numbers without the API key stored on it."
 
   - q: "Which languages is AppMeta Pulse available in?"
     a: "English plus 13 other languages: German, French (France and Canada), Spanish (Spain and Mexico), Italian, Dutch, Swedish, Portuguese (Brazil and Portugal), Russian, Ukrainian, Turkish, Japanese, Korean, and Chinese (Simplified and Traditional). The widgets and Siri phrases are translated too. Reply drafts from Apple Intelligence are in English."
@@ -266,7 +270,7 @@ founder:
 related_apps:
   - appmeta
   - mockly
-last_updated: 2026-11-11
+last_updated: 2026-11-13
 ---
 
 App Store Connect keeps about a year of daily sales. After that the days fall off, and with them any honest answer to "am I doing better than this time last year?" AppMeta Pulse fetches your sales and subscription reports through Apple's API and keeps every day on your iPhone until you delete it. It also keeps an original copy of each report Apple sends. Once a full year is stored, Trends puts this year next to last year, and the 12 widgets show how the current week or month is pacing.
