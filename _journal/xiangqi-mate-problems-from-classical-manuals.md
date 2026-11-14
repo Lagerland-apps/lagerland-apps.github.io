@@ -3,7 +3,7 @@ layout: journal
 slug: xiangqi-mate-problems-from-classical-manuals
 title: "902 xiangqi mate problems, eight old books, and the problems I left out"
 date: 2026-10-01
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 seo:
   title: "Xiangqi Mate Problems from Classical Manuals: Xiangqiful"
   description: "Where Xiangqiful's 902 xiangqi mate problems come from: 708 from eight classical manuals such as the Shiqing Yaqu, 194 original, every line solver-checked."
@@ -30,7 +30,7 @@ faq:
   - q: "How many mate problems are in Xiangqiful, and are they free?"
     a: "There are 902: 245 mate-in-1, 239 mate-in-3, 125 mate-in-5, and 293 mate-in-7. They are in the Mate Trail module, grouped by depth. The free tier includes 3 training puzzles a day, and mate problems count toward that. Premium removes the limit for {P_MONTHLY@xiangqiful} a month or {P_YEARLY@xiangqiful} a year, each with a {TRIAL@xiangqiful}, or {P_LIFETIME@xiangqiful} once. The puzzles work offline on iPhone, iPad, and Mac, with no account."
   - q: "Do I need to read Chinese to solve classical xiangqi problems?"
-    a: "No. The positions come from Chinese manuals, but you don't need the language to solve them. Xiangqiful has three piece sets: traditional characters, Western symbols, and a hybrid of the two. Moves can be shown in WXF notation or Chinese notation."
+    a: "No. The positions come from Chinese manuals, but you don't need the language to solve them. Xiangqiful has three piece styles: traditional characters, Western symbols, and a hybrid of the two. Moves can be shown in WXF notation or Chinese notation."
 mentioned_apps:
   - xiangqiful
 read_time: "9 min read"

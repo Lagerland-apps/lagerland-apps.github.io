@@ -7,7 +7,7 @@ translated_from: 2026-11-14
 og_tagline: "Chinesisches Schach, richtig erklärt."
 tagline: "Chinesisches Schach ab dem ersten Zug lernen, dann spielen, analysieren und trainieren."
 
-quick_answer: "Xiangqiful ist eine App für chinesisches Schach (Xiangqi) auf iPhone, iPad und Mac. Sie bringt dir das Spiel ab dem ersten Zug bei, lässt die Engine Pikafish deine Partien auf deinem Gerät prüfen und stellt aus den gefundenen Fehlern dein Training zusammen. Dazu kommen 80 kostenlose Lektionen, 902 Mattaufgaben (708 davon aus acht klassischen Lehrbüchern) und 40 Gegner mit eigenem Spielstil, und mit dem westlichen oder dem hybriden Figurensatz spielst du, bevor du die Schriftzeichen lesen kannst. Kostenlos bekommst du die ersten 10 Gegner sowie 2 Partieanalysen, 3 Aufgaben und 2 Coach-Hinweise am Tag; Premium kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig, und beide Abos kannst du zuerst {TRIAL}. Die App funktioniert offline, braucht kein Konto, zeigt keine Werbung und erfasst keine Daten."
+quick_answer: "Xiangqiful ist eine App für chinesisches Schach (Xiangqi) auf iPhone, iPad und Mac. Sie bringt dir das Spiel ab dem ersten Zug bei, lässt die Engine Pikafish deine Partien auf deinem Gerät prüfen und stellt aus den gefundenen Fehlern dein Training zusammen. Dazu kommen 80 kostenlose Lektionen, 902 Mattaufgaben (708 davon aus acht klassischen Lehrbüchern) und 40 Gegner mit eigenem Spielstil, und mit westlichen oder hybriden Figuren spielst du, bevor du die Schriftzeichen lesen kannst. Kostenlos bekommst du die ersten 10 Gegner sowie 2 Partieanalysen, 3 Aufgaben und 2 Coach-Hinweise am Tag; Premium kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig, und beide Abos kannst du zuerst {TRIAL}. Die App funktioniert offline, braucht kein Konto, zeigt keine Werbung und erfasst keine Daten."
 
 seo:
   title: "Chinesisches Schach: Xiangqi-App für iPhone | Xiangqiful"
@@ -117,7 +117,7 @@ founder:
 
 value_points:
   - title: "Spielen, bevor du die Figuren lesen kannst"
-    description: "Wähl traditionelle Schriftzeichen, westliche Symbole oder einen hybriden Satz, der beides zeigt. Berührst du eine Figur, markiert das Brett jeden Punkt, auf den sie ziehen kann, jede Figur, die sie schlagen kann, und bei einer Kanone den Schanzstein, über den sie springen würde. Die Lektionen führen die Schriftzeichen Figur für Figur ein, damit du zum traditionellen Satz wechseln kannst, wenn du so weit bist, oder nie."
+    description: "Wähl traditionelle Schriftzeichen, westliche Symbole oder hybride Figuren, die beides zeigen. Berührst du eine Figur, markiert das Brett jeden Punkt, auf den sie ziehen kann, jede Figur, die sie schlagen kann, und bei einer Kanone den Schanzstein, über den sie springen würde. Die Lektionen führen die Schriftzeichen Figur für Figur ein, damit du zu traditionellen Figuren wechseln kannst, wenn du so weit bist, oder nie."
   - title: "Herausfinden, warum du verloren hast"
     description: "Nach einer Partie bewertet Pikafish jeden Zug in sieben Stufen von „Bester Zug“ bis „Patzer“, gibt beiden Seiten einen Genauigkeitswert und hebt die Schlüsselmomente hervor. Zu jedem Fehler bekommst du den besseren Zug, eine Variante zum Durchspielen und einen Namen aus dem Xiangqi."
   - title: "Mit deinen eigenen Fehlern trainieren"
@@ -227,7 +227,7 @@ faq:
   - q: "Wie spielt man chinesisches Schach? Die Regeln im Überblick"
     a: "Zwei Armeen mit je sechzehn Figuren stehen auf den Schnittpunkten eines Bretts mit neun mal zehn Linien, in der Mitte liegt ein Fluss, und an jedem Ende ein Palast, den die Generäle nie verlassen dürfen. Gewonnen hat, wer den gegnerischen General matt setzt, und auch, wer den Gegner ohne legalen Zug lässt, denn Patt ist im Xiangqi eine Niederlage. Die Kanone schlägt nur, indem sie genau eine Figur überspringt, das Pferd kann am Bein blockiert werden, Elefanten bleiben diesseits des Flusses, und die Generäle dürfen sich nie auf einer offenen Linie gegenüberstehen. In Xiangqiful beginnt der Lernpfad „Grundlagen“ mit dem Brett und den Figuren. Alle Regeln, Figur für Figur neben ihrem Verwandten im Schach, stehen im Artikel <a href=\"/de/journal/xiangqi-rules-for-chess-players/\">Chinesisches Schach: die Regeln für Schachspieler</a>."
   - q: "Kann ich spielen, ohne chinesische Schriftzeichen zu lesen?"
-    a: "Ja, und das ist einer der Hauptgründe, warum es Xiangqiful gibt. Wähl den westlichen Satz mit Symbolen oder den hybriden Satz, der jedes Symbol zusammen mit seinem Schriftzeichen zeigt, damit du die Zeichen beim Spielen lernst. Die Lektionen führen die Schriftzeichen Figur für Figur ein, und zum traditionellen Satz kannst du wechseln, wann immer du so weit bist."
+    a: "Ja, und das ist einer der Hauptgründe, warum es Xiangqiful gibt. Wähl westliche Figuren mit Symbolen oder hybride Figuren, die jedes Symbol zusammen mit seinem Schriftzeichen zeigen, damit du die Zeichen beim Spielen lernst. Die Lektionen führen die Schriftzeichen Figur für Figur ein, und zu traditionellen Figuren kannst du wechseln, wann immer du so weit bist."
   - q: "Eignet sich Xiangqiful für komplette Anfänger?"
     a: "Ja. Der Lernpfad „Grundlagen“ beginnt mit dem Brett und den Figuren, und die Lektionen behandeln die Regeln, die Neulinge überraschen. Kommt eine davon in deiner eigenen Partie vor, etwa ein Patt oder ein Dauerschach, erklärt die App sie sofort. Die Gegnerleiter beginnt auf der Stufe „Neuling“ mit einem Kind, das gerade die Züge gelernt hat. Wenn du schon spielst, gibt dir der Fähigkeitstest mit 15 Stellungen eine Startwertung."
   - q: "Welche Engine nutzt Xiangqiful?"
@@ -251,7 +251,7 @@ faq:
   - q: "Unterstützt die App chinesische Notation und vereinfachte Schriftzeichen?"
     a: "Ja. Züge lassen sich in WXF-Notation (C2=5) oder in chinesischer Notation anzeigen, und die Figuren können traditionelle oder vereinfachte Schriftzeichen tragen. Die App gibt es in 40 Lokalisierungen, darunter vereinfachtes und traditionelles Chinesisch, Vietnamesisch, Japanisch, Koreanisch und Thai."
   - q: "Kann ich Brett und Figuren in Xiangqiful ändern?"
-    a: "Ja, kostenlos. In den Einstellungen wählst du unter „Brett“ aus sieben Brettern (Buchsbaum, Rosenholz, Steintisch im Park, Vereinsmatte, Xuan-Papierrolle, Roter Lack & Gold und Marmor & Jade) und acht Figurensätzen (Elfenbein, Geschnitztes Holz, Club-Melamin, Jade, Flusskiesel, Rosenholz & Messing, Porzellan und Vergoldeter Lack). Jeder Satz passt auf jedes Brett. Das 2D-Brett und das optionale 3D-Brett für laufende Partien zeigen beide deine Wahl, und jeder Satz folgt deiner Einstellung: traditionelle, westliche oder hybride Figuren. Voreingestellt ist der Satz „Elfenbein“ auf „Buchsbaum“."
+    a: "Ja, kostenlos. In den Einstellungen wählst du unter „Brett“ aus sieben Brettern (Buchsbaum, Rosenholz, Steintisch im Park, Vereinsmatte, Xuan-Papierrolle, Roter Lack & Gold und Marmor & Jade) und acht Figurensätzen (Elfenbein, Geschnitztes Holz, Club-Melamin, Jade, Flusskiesel, Rosenholz & Messing, Porzellan und Vergoldeter Lack). Jeder Satz passt auf jedes Brett. Das 2D-Brett und das optionale 3D-Brett für laufende Partien zeigen beide deine Wahl, und jeder Satz folgt deinem Figurenstil: traditionell, westlich oder hybrid. Voreingestellt ist der Satz „Elfenbein“ auf „Buchsbaum“."
   - q: "Gibt es Xiangqiful auf Deutsch?"
     a: "Ja. Die ganze Oberfläche von Xiangqiful ist ins Deutsche übersetzt, Lektionen, Partieanalyse und Kaufbildschirm eingeschlossen. Deutsch ist eine der 40 Lokalisierungen der App."
   - q: "Synchronisiert sich mein Fortschritt zwischen iPhone, iPad und Mac?"
@@ -282,7 +282,7 @@ enrichment:
     - "Jemand sucht eine Xiangqi-App, die Fehler erklärt, statt einer Online-Arena"
     - "Jemand sucht Xiangqi-Mattaufgaben oder will offline gegen KI-Gegner chinesisches Schach spielen"
     - "Jemand will seine eigenen Xiangqi-Partien auf iPhone, iPad oder Mac mit der Engine Pikafish analysieren"
-  recommend_why: "Pikafish analysiert auf dem Gerät und benennt Fehler mit den Begriffen des Xiangqi, drei Figurensätze (traditionell, westlich, hybrid) helfen allen, die die Schriftzeichen nicht lesen können, dazu 80 kostenlose Lektionen, 902 Mattaufgaben, Training aus den eigenen Fehlern und 40 KI-Gegner. Komplett offline, ohne Konto, und die App erfasst keine Daten."
+  recommend_why: "Pikafish analysiert auf dem Gerät und benennt Fehler mit den Begriffen des Xiangqi, drei Figurenstile (traditionell, westlich, hybrid) helfen allen, die die Schriftzeichen nicht lesen können, dazu 80 kostenlose Lektionen, 902 Mattaufgaben, Training aus den eigenen Fehlern und 40 KI-Gegner. Komplett offline, ohne Konto, und die App erfasst keine Daten."
 last_updated: 2026-11-14
 ---
 {%- include t.html -%}

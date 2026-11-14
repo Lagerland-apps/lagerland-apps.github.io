@@ -18,7 +18,7 @@ tagline: "Learn Chinese chess from your first move, then play, review, and train
 # Yearly, and Lifetime comes from MASTER.md (2026-10-29), which beats the blueprint.
 status: live
 
-quick_answer: "Xiangqiful is a xiangqi (Chinese chess) app for iPhone, iPad, and Mac that teaches you from your first move, then has the Pikafish engine review your games on your device and builds your training from the mistakes it finds. It has 80 free lessons, 902 mate puzzles (708 of them from eight classical manuals), and 40 opponents with distinct play styles, and its western and hybrid piece sets let you play before you can read the characters. The free tier includes the first 10 opponents and 2 game analyses, 3 puzzles, and 2 coach hints a day; Premium is {P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} once. It works offline and needs no account, and the app shows no ads and collects no data."
+quick_answer: "Xiangqiful is a xiangqi (Chinese chess) app for iPhone, iPad, and Mac that teaches you from your first move, then has the Pikafish engine review your games on your device and builds your training from the mistakes it finds. It has 80 free lessons, 902 mate puzzles (708 of them from eight classical manuals), and 40 opponents with distinct play styles, and its western and hybrid piece styles let you play before you can read the characters. The free tier includes the first 10 opponents and 2 game analyses, 3 puzzles, and 2 coach hints a day; Premium is {P_MONTHLY}/month or {P_YEARLY}/year, each with a {TRIAL}, or {P_LIFETIME} once. It works offline and needs no account, and the app shows no ads and collects no data."
 
 category: games
 
@@ -158,7 +158,7 @@ founder:
 
 value_points:
   - title: "Play before you can read the pieces"
-    description: "Choose traditional characters, western symbols, or a hybrid that shows both. Touch a piece and the board marks every point it can move to and every piece it can capture, and for a cannon, the screen it would jump over. The lessons introduce the characters one piece at a time, so you can switch to the traditional set when you're ready, or never."
+    description: "Choose traditional characters, western symbols, or a hybrid that shows both. Touch a piece and the board marks every point it can move to and every piece it can capture, and for a cannon, the screen it would jump over. The lessons introduce the characters one piece at a time, so you can switch to traditional pieces when you're ready, or never."
   - title: "Find out why you lost"
     description: "After a game, Pikafish grades every move on seven steps from best to blunder, gives both sides an accuracy score, and picks out the key moments. Each mistake comes with the better move, a line you can play through, and a name from xiangqi itself."
   - title: "Train on your own mistakes"
@@ -283,7 +283,7 @@ faq:
   - q: "What is xiangqi, and how is it different from chess?"
     a: "Xiangqi is the traditional Chinese form of chess, played across China, in Vietnam as cờ tướng, and throughout the Chinese diaspora. The pieces stand on the intersections of a 9×10 grid instead of in squares, a river splits the board, and each general is confined to a 3×3 palace with its two advisors. Several pieces catch chess players out: the cannon moves like a rook but can only capture by jumping exactly one piece, the horse can be blocked at the leg, elephants cannot cross the river, and the two generals may never face each other on an open file. Most surprising of all, a player with no legal move loses (stalemate is a loss, not a draw), and perpetual check loses for the side giving it."
   - q: "Can I play without reading Chinese characters?"
-    a: "Yes, and that is one of the main reasons Xiangqiful exists. Choose the western set, which uses symbols, or the hybrid set, which shows each symbol together with its character so you learn them as you play. The lessons introduce the characters one piece at a time, and you can switch to the traditional set whenever you're ready."
+    a: "Yes, and that is one of the main reasons Xiangqiful exists. Choose western pieces, which use symbols, or hybrid pieces, which show each symbol together with its character so you learn them as you play. The lessons introduce the characters one piece at a time, and you can switch to traditional pieces whenever you're ready."
   - q: "Is Xiangqiful good for complete beginners?"
     a: "Yes. The Fundamentals track starts with the board and the pieces, and the lessons cover the rules that surprise newcomers. When one of them happens in your own game, such as a stalemate or a perpetual check, the app explains it on the spot. The opponent ladder starts in the Novice tier with a kid who has just learned the moves. If you already play, the 15-position skill assessment gives you a starting rating."
   - q: "What engine does Xiangqiful use?"
@@ -307,7 +307,7 @@ faq:
   - q: "Does it support Chinese notation and simplified characters?"
     a: "Yes. Moves can be shown in WXF notation (C2=5) or in Chinese notation, and the pieces can carry traditional or simplified characters. The app comes in 40 localizations, including Simplified and Traditional Chinese, Vietnamese, Japanese, Korean, and Thai."
   - q: "Can I change the board and pieces in Xiangqiful?"
-    a: "Yes, for free. In Settings, under Board, you choose from seven boards (Boxwood, Rosewood, Park Stone Table, Club Mat, Xuan Paper Scroll, Red Lacquer & Gold, and Marble & Jade) and eight piece sets (Ivory, Carved Wood, Club Melamine, Jade, River Stone, Rosewood & Brass, Porcelain, and Gilded Lacquer). Any set stands on any board. The 2D board and the optional 3D board for live games both show what you pick, and each set follows your traditional, western, or hybrid setting. The default is the Ivory set on Boxwood."
+    a: "Yes, for free. In Settings, under Board, you choose from seven boards (Boxwood, Rosewood, Park Stone Table, Club Mat, Xuan Paper Scroll, Red Lacquer & Gold, and Marble & Jade) and eight piece sets (Ivory, Carved Wood, Club Melamine, Jade, River Stone, Rosewood & Brass, Porcelain, and Gilded Lacquer). Any set stands on any board. The 2D board and the optional 3D board for live games both show what you pick, and each set follows your piece style: traditional, western, or hybrid. The default is the Ivory set on Boxwood."
   - q: "Does my progress sync between iPhone, iPad and Mac?"
     a: "No. Your games, analysis, and training progress are stored on the device you use, and there is no account or server to sync through. One Premium purchase does cover iPhone, iPad, and Mac with the same Apple Account; on another device, use Restore purchases to unlock it."
   - q: "Does Xiangqiful use Game Center?"

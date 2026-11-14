@@ -34,7 +34,7 @@ mentioned_apps:
   - xiangqiful
 read_time: "7 min read"
 excerpt: "A chess player's guide to xiangqi rules: the board and palace, every piece beside its chess cousin with its catch, and the rules that reverse a chess habit: stalemate loses, the generals may not face each other, perpetual check loses, and the cannon needs a screen."
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 ---
 
 A chess player who sits down at a xiangqi board recognises most of it within a minute. There are two armies, a king-like piece to trap, a rook and a knight. Only a few rules differ, but most of them reverse a chess habit, and those are the ones that cost games. Below is the full list, with the board first and the reasoning after.
@@ -103,6 +103,6 @@ The first time stalemate or a perpetual check decides one of your games, the gam
 
 The Fundamentals track teaches most of this list in ten lessons, among them "The Cannon and Its Screen", "The Horse and Its Leg", and "Stalemate - the Chess Player's Trap". The Advanced track covers repetition in "Perpetual Check and Perpetual Chase". All 80 lessons in the app are free.
 
-The pieces come in three sets (traditional characters, western symbols, or a hybrid with the symbol on the character), so you can learn the rules before you learn to read 傌 and 炮. After a game, Pikafish reviews every move on your device, and Game Review names mistakes in these terms, such as a screenless cannon or a trapped horse. When you are ready for xiangqi's own puzzle form, every move must give check, and stalemate does not count as mate; [the post on Xiangqiful's 902 mate problems](/journal/xiangqi-mate-problems-from-classical-manuals/) explains where they come from.
+The pieces come in three styles (traditional characters, western symbols, or a hybrid with the symbol on the character), so you can learn the rules before you learn to read 傌 and 炮. After a game, Pikafish reviews every move on your device, and Game Review names mistakes in these terms, such as a screenless cannon or a trapped horse. When you are ready for xiangqi's own puzzle form, every move must give check, and stalemate does not count as mate; [the post on Xiangqiful's 902 mate problems](/journal/xiangqi-mate-problems-from-classical-manuals/) explains where they come from.
 
 Xiangqiful is free, with Premium at {P_MONTHLY@xiangqiful} a month or {P_YEARLY@xiangqiful} a year (each with a {TRIAL@xiangqiful}), or {P_LIFETIME@xiangqiful} once. It has no online play. To play people, [PyChess](/alternatives/pychess/) and [Xiangqi.com](/alternatives/xiangqi-com/) are the usual places, and [the guide to xiangqi apps for iPhone](/guides/best-xiangqi-apps-iphone/) compares the rest.

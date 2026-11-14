@@ -1389,7 +1389,7 @@ No widget or extension catalogs. **Verdict: app is in French: yes.**
 | Mate problems / puzzles | `Mate problem` / `Puzzles` | Problème de mat / Problèmes | |
 | Coach hints | `Unlimited in-game coach hints` / `Hint` | Indices de coach illimités en partie / Indice | consistent: coach and lesson buttons both use "Indice" |
 | Named mistakes | `Screenless cannon`, `Trapped horse`, `Broken advisors`, `Iron Bolt`, `Missed mate` | Canon sans écran, Cheval piégé, Conseillers brisés, Verrou de Fer, Mat manqué | "Verrou de Fer" capitalised in the title, "Le verrou de fer" in a lesson |
-| Piece sets | `Traditional` / `Western` / `Hybrid` (`board.pieceSet.*`) | Traditionnel / Occidental / Hybride | setting `Piece set` → "Jeu de pièces" |
+| Piece styles | `Traditional` / `Western` / `Hybrid` (`board.pieceSet.*`) | Traditionnel / Occidental / Hybride | setting `Pieces` → « Pièces » ; site term « style de pièces » (2026-11-14, I-0324). « Jeu de pièces » now means only the eight finishes (`Piece Finish` → « Finition des pièces » in the app; Ivoire, Bois sculpté …) |
 | Characters | `Traditional` / `Simplified` (`board.charset.*`) | Traditionnel / Simplifié | |
 | Notation | `WXF` / `Chinese` | WXF / (Chinese notation text: "notation chinoise") | |
 | Boards | `Boxwood` / `Rosewood` / `3D Board` | Buis / Palissandre / Plateau 3D | |

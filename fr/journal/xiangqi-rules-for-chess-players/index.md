@@ -3,8 +3,8 @@ layout: journal
 slug: xiangqi-rules-for-chess-players
 ref: /journal/xiangqi-rules-for-chess-players/
 permalink: /fr/journal/xiangqi-rules-for-chess-players/
-translated_from: 2026-10-29
-last_updated: 2026-11-08
+translated_from: 2026-11-14
+last_updated: 2026-11-14
 date: 2026-11-08
 title: "Règles des échecs chinois (xiangqi) pour joueurs d’échecs : ce qui se retrouve, ce qui piège"
 seo:
@@ -106,6 +106,6 @@ La première fois que le pat ou un échec perpétuel décide l’une de vos part
 
 Le parcours Fondamentaux enseigne l’essentiel de cette liste en dix leçons, dont « Le canon et son écran », « Le cheval et sa jambe » et la leçon sur le pat, le piège du joueur d’échecs. Le parcours Avancé traite la répétition dans « Échec perpétuel et poursuite perpétuelle ». Les 80 leçons de l’app sont gratuites.
 
-Les pièces existent en trois jeux (caractères traditionnels, symboles occidentaux ou jeu hybride avec le symbole sur le caractère), pour que vous puissiez apprendre les règles avant d’apprendre à lire 傌 et 炮. Après une partie, Pikafish passe en revue chaque coup sur votre appareil, et la revue de partie nomme les erreurs avec ces termes, comme « Canon sans écran » ou « Cheval piégé ». Pour la forme de problème propre au xiangqi, où chaque coup doit donner échec et où le pat ne compte pas comme un mat, [l’article sur les 902 problèmes de mat de Xiangqiful](/journal/xiangqi-mate-problems-from-classical-manuals/){: hreflang="en"} (en anglais) explique d’où ils viennent.
+Les pièces existent en trois styles (caractères traditionnels, symboles occidentaux ou style hybride avec le symbole sur le caractère), pour que vous puissiez apprendre les règles avant d’apprendre à lire 傌 et 炮. Après une partie, Pikafish passe en revue chaque coup sur votre appareil, et la revue de partie nomme les erreurs avec ces termes, comme « Canon sans écran » ou « Cheval piégé ». Pour la forme de problème propre au xiangqi, où chaque coup doit donner échec et où le pat ne compte pas comme un mat, [l’article sur les 902 problèmes de mat de Xiangqiful](/journal/xiangqi-mate-problems-from-classical-manuals/){: hreflang="en"} (en anglais) explique d’où ils viennent.
 
 L’app Xiangqiful est gratuite, avec Premium à {P_MONTHLY@xiangqiful}/mois ou {P_YEARLY@xiangqiful}/an (chacun avec {TRIAL@xiangqiful}), ou {P_LIFETIME@xiangqiful} en achat unique. Elle ne propose pas de jeu en ligne. Pour affronter d’autres joueurs, [PyChess](/alternatives/pychess/){: hreflang="en"} (en anglais) et [Xiangqi.com](/alternatives/xiangqi-com/){: hreflang="en"} (en anglais) sont les adresses habituelles, et le [guide des applications de xiangqi pour iPhone](/fr/guides/best-xiangqi-apps-iphone/) compare les autres.

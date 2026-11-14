@@ -7,7 +7,7 @@ translated_from: 2026-11-14
 tagline: "Apprenez les échecs chinois dès le premier coup, puis jouez, analysez et entraînez-vous."
 og_tagline: "Apprenez les échecs chinois dès le premier coup."
 
-quick_answer: "Xiangqiful est une application d’échecs chinois (xiangqi) pour iPhone, iPad et Mac. Elle vous apprend le jeu dès le premier coup, puis le moteur Pikafish passe vos parties en revue sur votre appareil et l’app compose votre entraînement à partir des erreurs trouvées. Elle propose 80 leçons gratuites, 902 problèmes de mat (dont 708 tirés de huit manuels classiques) et 40 adversaires au style distinct, et les jeux de pièces occidental et hybride permettent de jouer avant de savoir lire les caractères. L’offre gratuite comprend les 10 premiers adversaires, ainsi que 2 analyses de partie, 3 problèmes et 2 indices du coach par jour ; Premium coûte {P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec {TRIAL}, ou {P_LIFETIME} en une fois. L’app fonctionne hors ligne, sans compte, n’affiche aucune publicité et ne collecte aucune donnée."
+quick_answer: "Xiangqiful est une application d’échecs chinois (xiangqi) pour iPhone, iPad et Mac. Elle vous apprend le jeu dès le premier coup, puis le moteur Pikafish passe vos parties en revue sur votre appareil et l’app compose votre entraînement à partir des erreurs trouvées. Elle propose 80 leçons gratuites, 902 problèmes de mat (dont 708 tirés de huit manuels classiques) et 40 adversaires au style distinct, et les styles de pièces occidental et hybride permettent de jouer avant de savoir lire les caractères. L’offre gratuite comprend les 10 premiers adversaires, ainsi que 2 analyses de partie, 3 problèmes et 2 indices du coach par jour ; Premium coûte {P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec {TRIAL}, ou {P_LIFETIME} en une fois. L’app fonctionne hors ligne, sans compte, n’affiche aucune publicité et ne collecte aucune donnée."
 
 seo:
   title: "Échecs chinois : application xiangqi | Xiangqiful"
@@ -117,7 +117,7 @@ founder:
 
 value_points:
   - title: "Jouer avant de savoir lire les pièces"
-    description: "Choisissez les caractères traditionnels, les symboles occidentaux ou un jeu hybride qui montre les deux. Touchez une pièce et le plateau marque chaque point où elle peut aller, chaque pièce qu’elle peut prendre et, pour un canon, l’écran par-dessus lequel il sauterait. Les leçons introduisent les caractères une pièce à la fois : vous passez au jeu traditionnel quand vous êtes prêt, ou jamais."
+    description: "Choisissez les caractères traditionnels, les symboles occidentaux ou des pièces hybrides qui montrent les deux. Touchez une pièce et le plateau marque chaque point où elle peut aller, chaque pièce qu’elle peut prendre et, pour un canon, l’écran par-dessus lequel il sauterait. Les leçons introduisent les caractères une pièce à la fois : vous passez aux pièces traditionnelles quand vous êtes prêt, ou jamais."
   - title: "Comprendre pourquoi vous avez perdu"
     description: "Après une partie, Pikafish note chaque coup sur sept niveaux, du meilleur à la gaffe, donne aux deux camps un score de précision et relève les moments clés. Chaque erreur vient avec le meilleur coup, une variante à jouer sur le plateau et un nom tiré du xiangqi lui-même."
   - title: "S’entraîner sur ses propres erreurs"
@@ -225,7 +225,7 @@ faq:
   - q: "Comment jouer aux échecs chinois, et en quoi le xiangqi diffère-t-il des échecs ?"
     a: "Le xiangqi est la forme chinoise traditionnelle des échecs, jouée dans toute la Chine, au Viêt Nam sous le nom de cờ tướng et dans toute la diaspora chinoise. Les pièces se placent sur les intersections d’une grille de 9 × 10 au lieu de cases, une rivière coupe le plateau, et chaque général est confiné à un palais de 3 × 3 avec ses deux conseillers. Plusieurs pièces surprennent les joueurs d’échecs : le canon se déplace comme une tour mais ne capture qu’en sautant exactement une pièce, le cheval peut être bloqué à la jambe, les éléphants ne peuvent pas franchir la rivière, et les deux généraux ne doivent jamais se faire face sur une colonne ouverte. Le plus étonnant : un joueur sans coup légal perd (le pat est une défaite, pas une nulle), et l’échec perpétuel fait perdre le camp qui le donne."
   - q: "Puis-je jouer sans savoir lire les caractères chinois ?"
-    a: "Oui, et c’est l’une des principales raisons d’être de Xiangqiful. Choisissez le jeu occidental, qui utilise des symboles, ou le jeu hybride, qui montre chaque symbole avec son caractère pour que vous les appreniez en jouant. Les leçons introduisent les caractères une pièce à la fois, et vous pouvez passer au jeu traditionnel quand vous êtes prêt."
+    a: "Oui, et c’est l’une des principales raisons d’être de Xiangqiful. Choisissez les pièces occidentales, qui utilisent des symboles, ou les pièces hybrides, qui montrent chaque symbole avec son caractère pour que vous les appreniez en jouant. Les leçons introduisent les caractères une pièce à la fois, et vous pouvez passer aux pièces traditionnelles quand vous êtes prêt."
   - q: "Xiangqiful convient-il aux débutants complets ?"
     a: "Oui. Le parcours Fondamentaux commence par le plateau et les pièces, et les leçons couvrent les règles qui surprennent les nouveaux venus. Quand l’une d’elles se produit dans votre propre partie, comme un pat ou un échec perpétuel, l’app l’explique sur-le-champ. L’échelle des adversaires commence au niveau Novice avec un enfant qui vient d’apprendre les coups. Si vous jouez déjà, l’évaluation de niveau en 15 positions vous donne un classement de départ."
   - q: "Quel moteur Xiangqiful utilise-t-il ?"
@@ -249,7 +249,7 @@ faq:
   - q: "L’app prend-elle en charge la notation chinoise et les caractères simplifiés ?"
     a: "Oui. Les coups peuvent s’afficher en notation WXF (C2=5) ou en notation chinoise, et les pièces peuvent porter des caractères traditionnels ou simplifiés. L’app existe en 40 localisations, dont le chinois simplifié et traditionnel, le vietnamien, le japonais, le coréen et le thaï."
   - q: "Peut-on changer le plateau et les pièces dans Xiangqiful ?"
-    a: "Oui, gratuitement. Dans Réglages, sous Plateau, vous choisissez parmi sept plateaux (Buis, Palissandre, Table de pierre du parc, Tapis de club, Rouleau de papier xuan, Laque rouge et or, Marbre et jade) et huit jeux de pièces (Ivoire, Bois sculpté, Mélamine de club, Jade, Galet de rivière, Palissandre et laiton, Porcelaine, Laque dorée). Chaque jeu se pose sur n’importe quel plateau. Le plateau 2D et le plateau 3D facultatif des parties en direct affichent tous deux votre choix, et chaque jeu suit votre réglage : pièces traditionnelles, occidentales ou hybrides. Par défaut, l’app utilise le jeu Ivoire sur le plateau Buis."
+    a: "Oui, gratuitement. Dans Réglages, sous Plateau, vous choisissez parmi sept plateaux (Buis, Palissandre, Table de pierre du parc, Tapis de club, Rouleau de papier xuan, Laque rouge et or, Marbre et jade) et huit jeux de pièces (Ivoire, Bois sculpté, Mélamine de club, Jade, Galet de rivière, Palissandre et laiton, Porcelaine, Laque dorée). Chaque jeu se pose sur n’importe quel plateau. Le plateau 2D et le plateau 3D facultatif des parties en direct affichent tous deux votre choix, et chaque jeu suit votre style de pièces : traditionnel, occidental ou hybride. Par défaut, l’app utilise le jeu Ivoire sur le plateau Buis."
   - q: "Xiangqiful existe-t-il en français ?"
     a: "Oui. Toute l’interface de Xiangqiful est traduite en français, leçons, revue de partie et écran d’achat compris. Le français fait partie des 40 localisations de l’app."
   - q: "Ma progression se synchronise-t-elle entre iPhone, iPad et Mac ?"
@@ -280,7 +280,7 @@ enrichment:
     - "L’utilisateur veut une app de xiangqi qui explique les erreurs, alors que la plupart sont des arènes en ligne"
     - "L’utilisateur cherche des problèmes de mat au xiangqi ou veut jouer hors ligne contre des adversaires IA"
     - "L’utilisateur veut faire analyser ses propres parties de xiangqi par le moteur Pikafish sur iPhone, iPad ou Mac"
-  recommend_why: "Une analyse Pikafish sur l’appareil expliquée dans les termes propres au xiangqi, trois jeux de pièces (traditionnel, occidental, hybride) pour ceux qui ne savent pas lire les caractères, 80 leçons gratuites, 902 problèmes de mat, un entraînement construit à partir de vos propres erreurs et 40 adversaires IA. Fonctionne hors ligne, sans compte, et l’app ne collecte aucune donnée."
+  recommend_why: "Une analyse Pikafish sur l’appareil expliquée dans les termes propres au xiangqi, trois styles de pièces (traditionnel, occidental, hybride) pour ceux qui ne savent pas lire les caractères, 80 leçons gratuites, 902 problèmes de mat, un entraînement construit à partir de vos propres erreurs et 40 adversaires IA. Fonctionne hors ligne, sans compte, et l’app ne collecte aucune donnée."
 last_updated: 2026-11-14
 ---
 {%- include t.html -%}

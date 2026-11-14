@@ -1131,7 +1131,7 @@ There are no widget or extension catalogs. **Verdict: app is in German: yes.**
 | Mate problems / puzzles | `Mate problem` / `Puzzles` | Mattaufgabe / Aufgaben | |
 | Coach hints | `Unlimited in-game coach hints` | Unbegrenzte Coach-Hinweise im Spiel | FLAG: the lesson and drill hint button is `Hint` → "Tipp", while the coach uses "Hinweise" |
 | Named mistakes | `Screenless cannon`, `Trapped horse`, `Broken advisors`, `Iron Bolt`, `Missed mate` | Kanone ohne Schanzstein, Gefangenes Pferd, Beschädigte Beraterdeckung, Eiserner Riegel, Verpasstes Matt | FLAG: "screen" is "Schanzstein" in 131 strings and "Schirm" in 33. "Beschädigte Beraterdeckung" reads awkwardly. Ask a native reviewer |
-| Piece sets | `Traditional` / `Western` / `Hybrid` | Traditionell / Westlich / Hybrid | setting: `Piece set` → "Figurensatz" |
+| Piece styles | `Traditional` / `Western` / `Hybrid` | Traditionell / Westlich / Hybrid | setting `Pieces` → „Figuren“; site term „Figurenstil“ (2026-11-14, I-0324). „Figurensatz“ now means only the eight finishes (`Piece Finish` → „Figurenoberfläche“ in the app; Elfenbein, Geschnitztes Holz …) |
 | Characters | `Traditional` / `Simplified` | Traditionell / Vereinfacht | |
 | Notation | `WXF` / `Chinese` | WXF / Chinesisch | |
 | Boards | `Boxwood` / `Rosewood` / `3D Board` | Buchsbaum / Rosenholz / 3D-Brett | |

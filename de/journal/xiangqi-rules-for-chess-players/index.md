@@ -3,8 +3,8 @@ layout: journal
 slug: xiangqi-rules-for-chess-players
 ref: /journal/xiangqi-rules-for-chess-players/
 permalink: /de/journal/xiangqi-rules-for-chess-players/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-14
+last_updated: 2026-11-14
 date: 2026-10-29
 title: "Chinesisches Schach: die Regeln für Schachspieler, was du schon kennst und was dich überrascht"
 seo:
@@ -108,6 +108,6 @@ Der Lernpfad „Grundlagen“ bringt dir den größten Teil dieser Liste in zehn
 
 Wie die ersten Züge einer Partie aussehen, von der Mittelkanone bis zur Elefanteneröffnung, zeigt der Beitrag [Xiangqi-Eröffnungen erklärt](/de/journal/xiangqi-openings-explained/).
 
-Die Figuren gibt es in drei Figurensätzen (traditionelle Schriftzeichen, westliche Symbole oder hybrid mit dem Symbol auf dem Schriftzeichen), sodass du die Regeln lernen kannst, bevor du 傌 und 炮 lesen kannst. Nach einer Partie bewertet Pikafish jeden Zug auf deinem Gerät, und die Partieanalyse benennt Fehler in diesen Begriffen, etwa „Kanone ohne Schanzstein“ oder „Gefangenes Pferd“. Wenn du bereit bist für die eigene Rätselform des Xiangqi: Dort muss jeder Zug Schach bieten, und Patt zählt nicht als Matt. Woher die 902 Mattaufgaben in Xiangqiful stammen, erklärt [der Beitrag über die Mattaufgaben aus klassischen Handbüchern](/journal/xiangqi-mate-problems-from-classical-manuals/){: hreflang="en"} (auf Englisch).
+Die Figuren gibt es in drei Figurenstilen (traditionelle Schriftzeichen, westliche Symbole oder hybrid mit dem Symbol auf dem Schriftzeichen), sodass du die Regeln lernen kannst, bevor du 傌 und 炮 lesen kannst. Nach einer Partie bewertet Pikafish jeden Zug auf deinem Gerät, und die Partieanalyse benennt Fehler in diesen Begriffen, etwa „Kanone ohne Schanzstein“ oder „Gefangenes Pferd“. Wenn du bereit bist für die eigene Rätselform des Xiangqi: Dort muss jeder Zug Schach bieten, und Patt zählt nicht als Matt. Woher die 902 Mattaufgaben in Xiangqiful stammen, erklärt [der Beitrag über die Mattaufgaben aus klassischen Handbüchern](/journal/xiangqi-mate-problems-from-classical-manuals/){: hreflang="en"} (auf Englisch).
 
 Xiangqiful ist kostenlos, Premium kostet {P_MONTHLY@xiangqiful} im Monat, {P_YEARLY@xiangqiful} im Jahr oder einmalig {P_LIFETIME@xiangqiful}, und beide Abos kannst du zuerst {TRIAL@xiangqiful}. Online gegen andere spielen kannst du in der App nicht. Dafür sind [PyChess](/alternatives/pychess/){: hreflang="en"} (auf Englisch) und [Xiangqi.com](/alternatives/xiangqi-com/){: hreflang="en"} (auf Englisch) die üblichen Adressen, und [der Ratgeber zu Xiangqi-Apps fürs iPhone](/de/guides/best-xiangqi-apps-iphone/) vergleicht den Rest.
