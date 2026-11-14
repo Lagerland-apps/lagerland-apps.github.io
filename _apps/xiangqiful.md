@@ -12,7 +12,9 @@ tagline: "Learn Chinese chess from your first move, then play, review, and train
 # rating lists"; no engine file size; the move guide on touched pieces is confirmed
 # (blueprint 2026-11-08); no iPhone Duo claim until its real-device check;
 # "VoiceOver support", never "throughout"; no Dynamic Type, light mode, sound,
-# sync claims; the rating is Xiangqiful's own estimate. Family Sharing on Monthly,
+# sync claims; the rating is Xiangqiful's own estimate. Boards and pieces (1.3.3,
+# 2026-11-14, §10 rows of that date): 7 boards, 8 piece sets, any set on any board,
+# 2D and 3D, all free, default Ivory on Boxwood. Family Sharing on Monthly,
 # Yearly, and Lifetime comes from MASTER.md (2026-10-29), which beats the blueprint.
 status: live
 
@@ -35,7 +37,7 @@ plans_footnote: "Prices in USD; the App Store shows your local price at checkout
 plans:
   - name: "Free"
     price: "$0"
-    summary: "Every lesson, the first ten opponents, and a daily allowance of engine review."
+    summary: "Every lesson, the first ten opponents, every board and piece set, and a daily allowance of engine review."
     features:
       - "All 80 lessons and the 15-position skill assessment"
       - "Unlimited games against the first 10 of the 40 opponents"
@@ -43,7 +45,8 @@ plans:
       - "3 training puzzles a day, mate puzzles included"
       - "2 in-game coach hints a day"
       - "The first drill set in each of the nine drill modules"
-      - "Estimated rating, game import, the 3D board, and Game Center"
+      - "All 7 boards and 8 piece sets, in 2D and on the 3D board"
+      - "Estimated rating, game import, and Game Center"
   - name: "Premium · Monthly"
     price: "{P_MONTHLY}/mo"
     kind: monthly
@@ -96,15 +99,15 @@ hero:
   subheadline: "Each mistake comes back named in xiangqi's own terms, such as a screenless cannon or a trapped horse, and goes into tomorrow's training. Around that loop sit 80 free lessons, 902 mate puzzles from mate in 1 to mate in 7, and 40 opponents with their own styles, the first 10 of them free."
   cta_label: "Download Free"
   cta_subline: "Free download · 80 lessons and 10 opponents free · no ads · no account · works offline"
-  alt: "Xiangqiful on iPhone: a game against Shīfu on the 3D board with classic wooden discs, Red to move"
+  alt: "Xiangqiful on iPhone: a game against Shīfu on the 3D board, with the Ivory piece set on the Boxwood board, Red to move"
 
 screenshots:
   - src: "/assets/screenshots/xiangqiful/1.webp"
-    caption: "A game against Shīfu on the optional 3D board with classic wooden discs."
+    caption: "A game against Shīfu on the optional 3D board, with the Ivory set on the Boxwood board."
   - src: "/assets/screenshots/xiangqiful/2.webp"
     caption: "80 lessons in 8 tracks, from the board to the classics, all free."
   - src: "/assets/screenshots/xiangqiful/3.webp"
-    caption: "The hybrid piece set: each western symbol sits on its Chinese character, so you can play now and learn the characters as you go."
+    caption: "Hybrid pieces: each western symbol sits on its Chinese character, so you can play now and learn the characters as you go."
   - src: "/assets/screenshots/xiangqiful/4.webp"
     caption: "Game Review: every move graded, accuracy for both sides, and the key moments of the game."
   - src: "/assets/screenshots/xiangqiful/5.webp"
@@ -112,7 +115,7 @@ screenshots:
   - src: "/assets/screenshots/xiangqiful/6.webp"
     caption: "Today's plan, built from your own mistakes, then mixed practice."
   - src: "/assets/screenshots/xiangqiful/7.webp"
-    caption: "The opponent ladder by tier, starting with Xiǎobǎo, the kid who just learned the moves."
+    caption: "The ladder of 40 opponents by tier, starting with Xiǎobǎo, the kid who just learned the moves."
   - src: "/assets/screenshots/xiangqiful/8.webp"
     caption: "Progress: Xiangqiful's own estimated rating, accuracy over time, and the five-axis skill profile."
   - src: "/assets/screenshots/xiangqiful/9.webp"
@@ -179,7 +182,9 @@ features:
   - title: "Thirty classical endgame studies"
     description: "Classical Studies in Endgame Studio holds thirty studies from the Qing-dynasty manuals, such as Seven Stars Gather and A Thousand Miles Alone. Play each one out against the engine; any sound move counts. Tap Book and it first points to the piece, then shows the move, and afterwards you can step through the book's own line. Part of Premium."
   - title: "A board you can read"
-    description: "Traditional, western, or hybrid pieces; traditional or simplified characters; WXF or Chinese notation; a boxwood or rosewood board; coordinates on or off. Live games can use an optional 3D board with the Classic Discs or the Carved Set, while review, analysis, and training use the 2D board."
+    description: "Traditional, western, or hybrid pieces; traditional or simplified characters; WXF or Chinese notation; coordinates on or off. Live games can use the optional 3D board, while review, analysis, and training use the 2D board."
+  - title: "Seven boards and eight piece sets, in 2D and 3D"
+    description: "In Settings, under Board, choose one of seven boards: Boxwood, Rosewood, Park Stone Table, Club Mat, Xuan Paper Scroll, Red Lacquer & Gold, or Marble & Jade. Then choose one of eight piece sets: Ivory, Carved Wood, Club Melamine, Jade, River Stone, Rosewood & Brass, Porcelain, or Gilded Lacquer. Any set stands on any board, and each one shows the pieces the way you set them: traditional, western, or hybrid, with the characters you chose. The 2D board and the optional 3D board both show your choice. Every board and set is free."
   - title: "Progress and a skill profile"
     description: "An estimated rating from your analyzed games, with rating and accuracy over time, your streak, and what to work on next on Home. A 15-position assessment gives you a starting rating. Premium adds a five-axis skill profile (tactics, defense, positioning, endgame, openings), weakness trends, and this week against last."
   - title: "iPhone, iPad, and Mac"
@@ -290,7 +295,7 @@ faq:
   - q: "Does Xiangqiful work offline?"
     a: "Yes. Lessons, games, the engine, analysis, training, and progress all run on your device. A connection is needed only for things Apple handles: loading prices, buying or restoring Premium, and Game Center if you use it."
   - q: "Is Xiangqiful free? What does Premium cost?"
-    a: "Xiangqiful is free to download, and the free tier has no time limit: all 80 lessons, the skill assessment, unlimited games against the first 10 opponents, the first drill set in every module, 2 game analyses a day, 3 training puzzles a day (mate puzzles included), and 2 in-game coach hints a day. Premium opens all 40 opponents and every drill, removes the daily limits, and adds deep multi-line analysis, the skill profile, and weakness trends. It costs {P_MONTHLY} a month or {P_YEARLY} a year, each with a {TRIAL} for new subscribers, or {P_LIFETIME} once, and all three support Family Sharing. Prices are in USD; the App Store shows your local price. There are no ads in either tier."
+    a: "Xiangqiful is free to download, and the free tier has no time limit: all 80 lessons, the skill assessment, every board and piece set, unlimited games against the first 10 opponents, the first drill set in every module, 2 game analyses a day, 3 training puzzles a day (mate puzzles included), and 2 in-game coach hints a day. Premium opens all 40 opponents and every drill, removes the daily limits, and adds deep multi-line analysis, the skill profile, and weakness trends. It costs {P_MONTHLY} a month or {P_YEARLY} a year, each with a {TRIAL} for new subscribers, or {P_LIFETIME} once, and all three support Family Sharing. Prices are in USD; the App Store shows your local price. There are no ads in either tier."
   - q: "Where do the mate puzzles come from?"
     a: "There are 902 of them, from mate in 1 to mate in 7, and every one is a consecutive-check problem: each attacking move must give check. 708 come from eight classical manuals, with the Shiqing Yaqu supplying the most, and 194 are original compositions. Every line was re-checked by the app's own solver, and a book problem that does not really work was left out."
   - q: "What are the tips in Settings?"
@@ -301,6 +306,8 @@ faq:
     a: "Checkmate wins, and so does stalemate: having no legal move is a loss in xiangqi. Perpetual check loses for the side giving it. Threefold repetition and sixty moves without a capture are draws. The rule against perpetual chasing is not adjudicated."
   - q: "Does it support Chinese notation and simplified characters?"
     a: "Yes. Moves can be shown in WXF notation (C2=5) or in Chinese notation, and the pieces can carry traditional or simplified characters. The app comes in 40 localizations, including Simplified and Traditional Chinese, Vietnamese, Japanese, Korean, and Thai."
+  - q: "Can I change the board and pieces in Xiangqiful?"
+    a: "Yes, for free. In Settings, under Board, you choose from seven boards (Boxwood, Rosewood, Park Stone Table, Club Mat, Xuan Paper Scroll, Red Lacquer & Gold, and Marble & Jade) and eight piece sets (Ivory, Carved Wood, Club Melamine, Jade, River Stone, Rosewood & Brass, Porcelain, and Gilded Lacquer). Any set stands on any board. The 2D board and the optional 3D board for live games both show what you pick, and each set follows your traditional, western, or hybrid setting. The default is the Ivory set on Boxwood."
   - q: "Does my progress sync between iPhone, iPad and Mac?"
     a: "No. Your games, analysis, and training progress are stored on the device you use, and there is no account or server to sync through. One Premium purchase does cover iPhone, iPad, and Mac with the same Apple Account; on another device, use Restore purchases to unlock it."
   - q: "Does Xiangqiful use Game Center?"
@@ -314,8 +321,8 @@ support:
 
 release:
   first_release: "2026-09-30"
-  last_updated: "2026-10-23"
-  version: "1.1.6"
+  last_updated: "2026-11-14"
+  version: "1.3.3"
 
 related_apps: ["shogiful", "chessful"]
 
@@ -330,11 +337,11 @@ ratings:
   value: "5.0"
   count: 3
   last_synced: "2026-11-02"
-last_updated: 2026-11-08
+last_updated: 2026-11-14
 ---
 Xiangqiful is a [xiangqi app for iPhone, iPad, and Mac](#features) that teaches the game from your first move and then helps you get better at it. Xiangqi is Chinese chess: two armies of sixteen pieces on the intersections of a nine-by-ten board, a river across the middle, and a palace at each end that the generals may never leave. Outside Asia, many people stop at the first look, because every piece is a Chinese character painted on a wooden disc.
 
-You can play with traditional characters, western symbols, or a hybrid of both, and the lessons introduce the characters one piece at a time. All 80 lessons are free, in eight tracks from the board to the classics, and they teach the rules that catch chess players out: having no legal move loses, and so does perpetual check.
+You can play with traditional characters, western symbols, or a hybrid of both, and the lessons introduce the characters one piece at a time. All 80 lessons are free, in eight tracks from the board to the classics, and they teach the rules that catch chess players out: having no legal move loses, and so does perpetual check. You can mix seven boards and eight piece sets as you like, in 2D or on the optional 3D board. All of them are free.
 
 Then you play. Forty opponents in eight tiers each play a style of their own, from a kid who has just learned the moves to the Sage at the top, and the first ten are free. After a game, [Pikafish](https://github.com/official-pikafish/Pikafish), a strong open-source engine, reviews it on your device. It grades every move on seven steps from best to blunder and [names each mistake in xiangqi's own terms](#insights): a screenless cannon, a trapped horse, broken advisors, a missed Iron Bolt. Those mistakes [become today's plan](#how-it-works), and spaced repetition brings back the problems you missed.
 

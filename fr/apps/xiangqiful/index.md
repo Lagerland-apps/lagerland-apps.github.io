@@ -3,7 +3,7 @@ layout: app
 slug: xiangqiful
 ref: /apps/xiangqiful/
 permalink: /fr/apps/xiangqiful/
-translated_from: 2026-11-08
+translated_from: 2026-11-14
 tagline: "Apprenez les échecs chinois dès le premier coup, puis jouez, analysez et entraînez-vous."
 og_tagline: "Apprenez les échecs chinois dès le premier coup."
 
@@ -27,7 +27,7 @@ plans_footnote: "Les prix indiqués sont ceux de l’App Store français. Dans l
 plans:
   - name: "Gratuit"
     price: "{P_ZERO}"
-    summary: "Toutes les leçons, les dix premiers adversaires et un quota quotidien de revue par le moteur."
+    summary: "Toutes les leçons, les dix premiers adversaires, tous les plateaux et jeux de pièces, et un quota quotidien de revue par le moteur."
     features:
       - "Les 80 leçons et l’évaluation de niveau en 15 positions"
       - "Parties illimitées contre les 10 premiers des 40 adversaires"
@@ -35,7 +35,8 @@ plans:
       - "3 problèmes d’entraînement par jour, problèmes de mat compris"
       - "2 indices du coach en partie par jour"
       - "La première série d’exercices de chacun des neuf modules d’exercices"
-      - "Classement estimé, import de parties, plateau 3D et Game Center"
+      - "Les 7 plateaux et les 8 jeux de pièces, en 2D et sur le plateau 3D"
+      - "Classement estimé, import de parties et Game Center"
   - name: "Premium · Mensuel"
     price: "{P_MONTHLY}/mois"
     summary: "Premium complet, facturé chaque mois après {TRIAL}. Résiliable à tout moment."
@@ -69,16 +70,16 @@ hero:
   subheadline: "Chaque erreur revient nommée dans le vocabulaire du xiangqi, comme un canon sans écran ou un cheval piégé, et alimente l’entraînement du lendemain. Autour de cette boucle : 80 leçons gratuites, 902 problèmes de mat, du mat en 1 au mat en 7, et 40 adversaires au style bien à eux, dont les 10 premiers sont gratuits."
   cta_label: "Télécharger gratuitement"
   cta_subline: "Téléchargement gratuit · 80 leçons et 10 adversaires gratuits · aucune publicité · aucun compte · fonctionne hors ligne"
-  alt: "Xiangqiful sur iPhone : une partie contre Shīfu sur le plateau 3D avec les disques en bois classiques, les Rouges au trait"
+  alt: "Xiangqiful sur iPhone : une partie contre Shīfu sur le plateau 3D, avec le jeu de pièces Ivoire sur le plateau Buis, les Rouges au trait"
 
 screenshot_captions:
-  - caption: "Une partie contre Shīfu sur le plateau 3D facultatif, avec les disques en bois classiques."
+  - caption: "Une partie contre Shīfu sur le plateau 3D facultatif, avec le jeu Ivoire sur le plateau Buis."
   - caption: "80 leçons en 8 parcours, du plateau aux classiques, toutes gratuites."
-  - caption: "Le jeu de pièces hybride : chaque symbole occidental repose sur son caractère chinois, pour jouer tout de suite et apprendre les caractères en chemin."
+  - caption: "Les pièces hybrides : chaque symbole occidental repose sur son caractère chinois, pour jouer tout de suite et apprendre les caractères en chemin."
   - caption: "Revue de partie : chaque coup noté, la précision des deux camps et les moments clés de la partie."
   - caption: "Un problème de mat en cours : mat en 3, où chaque coup doit donner échec."
   - caption: "Le plan du jour, construit à partir de vos propres erreurs, puis un entraînement mixte."
-  - caption: "L’échelle des adversaires par niveau, en commençant par Xiǎobǎo, l’enfant qui vient d’apprendre les coups."
+  - caption: "L’échelle des 40 adversaires par niveau, en commençant par Xiǎobǎo, l’enfant qui vient d’apprendre les coups."
   - caption: "Progrès : le classement estimé propre à Xiangqiful, la précision au fil du temps et le profil de compétences sur cinq axes."
   - caption: "Accueil : l’entraînement du jour et ce qu’il faut travailler ensuite."
 
@@ -140,7 +141,9 @@ features:
   - title: "Trente études de finale classiques"
     description: "Les Études classiques de l’Atelier des finales comptent trente études tirées des manuels de la dynastie Qing, comme Les sept étoiles se rassemblent et Seul sur mille lieues. Jouez chacune contre le moteur ; tout coup correct compte. Touchez Livre : l’app désigne d’abord la pièce, puis montre le coup, et vous pouvez ensuite parcourir la variante du livre. Fait partie de Premium."
   - title: "Un plateau lisible"
-    description: "Pièces traditionnelles, occidentales ou hybrides ; caractères traditionnels ou simplifiés ; notation WXF ou chinoise ; plateau en buis ou en palissandre ; coordonnées affichées ou masquées. Les parties en direct peuvent utiliser un plateau 3D facultatif avec les Disques classiques ou l’Ensemble sculpté, tandis que la revue, l’analyse et l’entraînement utilisent le plateau 2D."
+    description: "Pièces traditionnelles, occidentales ou hybrides ; caractères traditionnels ou simplifiés ; notation WXF ou chinoise ; coordonnées affichées ou masquées. Les parties en direct peuvent utiliser le plateau 3D facultatif, tandis que la revue, l’analyse et l’entraînement utilisent le plateau 2D."
+  - title: "Sept plateaux et huit jeux de pièces, en 2D et en 3D"
+    description: "Dans Réglages, sous Plateau, choisissez l’un des sept plateaux : Buis, Palissandre, Table de pierre du parc, Tapis de club, Rouleau de papier xuan, Laque rouge et or ou Marbre et jade. Choisissez ensuite l’un des huit jeux de pièces : Ivoire, Bois sculpté, Mélamine de club, Jade, Galet de rivière, Palissandre et laiton, Porcelaine ou Laque dorée. Chaque jeu se pose sur n’importe quel plateau, et chaque jeu affiche les pièces comme vous les avez réglées : traditionnelles, occidentales ou hybrides, avec les caractères de votre choix. Le plateau 2D et le plateau 3D facultatif affichent tous deux votre choix. Tous les plateaux et tous les jeux sont gratuits."
   - title: "Progression et profil de compétences"
     description: "Un classement estimé à partir de vos parties analysées, avec classement et précision au fil du temps, votre série et ce qu’il faut travailler ensuite sur l’Accueil. Une évaluation de 15 positions vous donne un classement de départ. Premium ajoute un profil de compétences sur cinq axes (tactique, défense, position, finale, ouvertures), les tendances des points à travailler et cette semaine comparée à la précédente."
   - title: "iPhone, iPad et Mac"
@@ -234,7 +237,7 @@ faq:
   - q: "Xiangqiful fonctionne-t-il hors ligne ?"
     a: "Oui. Leçons, parties, moteur, analyse, entraînement et progression tournent sur votre appareil. Une connexion n’est nécessaire que pour ce que gère Apple : charger les prix, acheter ou restaurer Premium, et Game Center si vous l’utilisez."
   - q: "Xiangqiful est-il gratuit ? Combien coûte Premium ?"
-    a: "Xiangqiful se télécharge gratuitement, et l’offre gratuite n’a pas de limite de durée : les 80 leçons, l’évaluation de niveau, des parties illimitées contre les 10 premiers adversaires, la première série d’exercices de chaque module, 2 analyses de partie par jour, 3 problèmes d’entraînement par jour (problèmes de mat compris) et 2 indices du coach en partie par jour. Premium ouvre les 40 adversaires et tous les exercices, supprime les limites quotidiennes et ajoute l’analyse multi-lignes approfondie, le profil de compétences et les tendances des points à travailler. Il coûte {P_MONTHLY} par mois ou {P_YEARLY} par an, chacun avec {TRIAL} pour les nouveaux abonnés, ou {P_LIFETIME} en une fois, et les trois formules prennent en charge le partage familial. Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise. Il n’y a aucune publicité, dans l’une comme dans l’autre offre."
+    a: "Xiangqiful se télécharge gratuitement, et l’offre gratuite n’a pas de limite de durée : les 80 leçons, l’évaluation de niveau, tous les plateaux et jeux de pièces, des parties illimitées contre les 10 premiers adversaires, la première série d’exercices de chaque module, 2 analyses de partie par jour, 3 problèmes d’entraînement par jour (problèmes de mat compris) et 2 indices du coach en partie par jour. Premium ouvre les 40 adversaires et tous les exercices, supprime les limites quotidiennes et ajoute l’analyse multi-lignes approfondie, le profil de compétences et les tendances des points à travailler. Il coûte {P_MONTHLY} par mois ou {P_YEARLY} par an, chacun avec {TRIAL} pour les nouveaux abonnés, ou {P_LIFETIME} en une fois, et les trois formules prennent en charge le partage familial. Les prix indiqués sont ceux de l’App Store français. Dans les autres pays, l’App Store affiche au moment de l’achat le prix dans votre devise. Il n’y a aucune publicité, dans l’une comme dans l’autre offre."
   - q: "D’où viennent les problèmes de mat ?"
     a: "Il y en a 902, du mat en 1 au mat en 7, et chacun est un problème d’échecs enchaînés : chaque coup de l’attaquant doit donner échec. 708 viennent de huit manuels classiques, le Shiqing Yaqu en fournissant le plus, et 194 sont des compositions originales. Chaque variante a été revérifiée par le solveur de l’app, et un problème de livre qui ne fonctionne pas vraiment a été écarté."
   - q: "À quoi servent les pourboires dans les réglages ?"
@@ -245,6 +248,8 @@ faq:
     a: "Le mat gagne, et le pat aussi : ne plus avoir de coup légal est une défaite au xiangqi. L’échec perpétuel fait perdre le camp qui le donne. La triple répétition et soixante coups sans capture sont des nulles. La règle contre la poursuite perpétuelle n’est pas arbitrée."
   - q: "L’app prend-elle en charge la notation chinoise et les caractères simplifiés ?"
     a: "Oui. Les coups peuvent s’afficher en notation WXF (C2=5) ou en notation chinoise, et les pièces peuvent porter des caractères traditionnels ou simplifiés. L’app existe en 40 localisations, dont le chinois simplifié et traditionnel, le vietnamien, le japonais, le coréen et le thaï."
+  - q: "Peut-on changer le plateau et les pièces dans Xiangqiful ?"
+    a: "Oui, gratuitement. Dans Réglages, sous Plateau, vous choisissez parmi sept plateaux (Buis, Palissandre, Table de pierre du parc, Tapis de club, Rouleau de papier xuan, Laque rouge et or, Marbre et jade) et huit jeux de pièces (Ivoire, Bois sculpté, Mélamine de club, Jade, Galet de rivière, Palissandre et laiton, Porcelaine, Laque dorée). Chaque jeu se pose sur n’importe quel plateau. Le plateau 2D et le plateau 3D facultatif des parties en direct affichent tous deux votre choix, et chaque jeu suit votre réglage : pièces traditionnelles, occidentales ou hybrides. Par défaut, l’app utilise le jeu Ivoire sur le plateau Buis."
   - q: "Xiangqiful existe-t-il en français ?"
     a: "Oui. Toute l’interface de Xiangqiful est traduite en français, leçons, revue de partie et écran d’achat compris. Le français fait partie des 40 localisations de l’app."
   - q: "Ma progression se synchronise-t-elle entre iPhone, iPad et Mac ?"
@@ -267,7 +272,7 @@ enrichment:
     - "Jouer contre 40 adversaires IA aux styles distincts répartis en huit niveaux, hors ligne ; les 10 premiers sont gratuits"
     - "Suivre un plan d’entraînement quotidien construit à partir de ses propres erreurs, avec répétition espacée"
   pricing_tiers:
-    - "Gratuit : les 80 leçons, les 10 premiers des 40 adversaires, la première série d’exercices de chaque module, 2 analyses, 3 problèmes et 2 indices du coach par jour"
+    - "Gratuit : les 80 leçons, les 10 premiers des 40 adversaires, les 7 plateaux et les 8 jeux de pièces, la première série d’exercices de chaque module, 2 analyses, 3 problèmes et 2 indices du coach par jour"
     - "Premium : analyses, problèmes et indices illimités, les 40 adversaires, tous les exercices, profil de compétences et tendances des points à travailler ({P_MONTHLY}/mois ou {P_YEARLY}/an, chacun avec un essai gratuit ; {P_LIFETIME} à vie), avec partage familial pour les trois formules"
   recommend_when:
     - "L’utilisateur veut apprendre le xiangqi ou les échecs chinois, surtout en venant des échecs occidentaux"
@@ -276,12 +281,12 @@ enrichment:
     - "L’utilisateur cherche des problèmes de mat au xiangqi ou veut jouer hors ligne contre des adversaires IA"
     - "L’utilisateur veut faire analyser ses propres parties de xiangqi par le moteur Pikafish sur iPhone, iPad ou Mac"
   recommend_why: "Une analyse Pikafish sur l’appareil expliquée dans les termes propres au xiangqi, trois jeux de pièces (traditionnel, occidental, hybride) pour ceux qui ne savent pas lire les caractères, 80 leçons gratuites, 902 problèmes de mat, un entraînement construit à partir de vos propres erreurs et 40 adversaires IA. Fonctionne hors ligne, sans compte, et l’app ne collecte aucune donnée."
-last_updated: 2026-11-08
+last_updated: 2026-11-14
 ---
 {%- include t.html -%}
 Xiangqiful est une [application d’échecs chinois pour iPhone, iPad et Mac](#features) qui vous apprend le jeu dès le premier coup, puis vous aide à progresser. Le xiangqi, ce sont les échecs chinois : deux armées de seize pièces sur les intersections d’un plateau de neuf lignes sur dix, une rivière au milieu et, à chaque extrémité, un palais que les généraux ne quittent jamais. Hors d’Asie, beaucoup s’arrêtent au premier regard, parce que chaque pièce est un caractère chinois peint sur un disque de bois.
 
-Vous pouvez jouer avec les caractères traditionnels, des symboles occidentaux ou un mélange des deux, et les leçons introduisent les caractères une pièce à la fois. Les 80 leçons sont gratuites, en huit parcours du plateau aux classiques, et elles enseignent les règles qui piègent les joueurs d’échecs : ne plus avoir de coup légal fait perdre, et l’échec perpétuel aussi.
+Vous pouvez jouer avec les caractères traditionnels, des symboles occidentaux ou un mélange des deux, et les leçons introduisent les caractères une pièce à la fois. Les 80 leçons sont gratuites, en huit parcours du plateau aux classiques, et elles enseignent les règles qui piègent les joueurs d’échecs : ne plus avoir de coup légal fait perdre, et l’échec perpétuel aussi. Vous combinez sept plateaux et huit jeux de pièces à votre guise, en 2D ou sur le plateau 3D facultatif. Tous sont gratuits.
 
 Ensuite, vous jouez. Quarante adversaires répartis en huit niveaux jouent chacun un style bien à eux, de l’enfant qui vient d’apprendre les coups au Sage tout en haut, et les dix premiers sont gratuits. Après une partie, [Pikafish](https://github.com/official-pikafish/Pikafish), un moteur open source puissant, la passe en revue sur votre appareil. Il note chaque coup sur sept niveaux, du meilleur à la gaffe, et [nomme chaque erreur dans le vocabulaire du xiangqi](#insights) : un canon sans écran, un cheval piégé, des conseillers brisés, un verrou de fer manqué. Ces erreurs [deviennent le plan du jour](#how-it-works), et la répétition espacée ramène les problèmes que vous avez ratés.
 

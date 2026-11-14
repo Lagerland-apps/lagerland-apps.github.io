@@ -413,7 +413,7 @@ xiangqiful:
     - "Play 40 AI opponents with distinct styles in eight tiers, offline; the first 10 are free"
     - "Follow a daily training plan built from your own mistakes, with spaced repetition"
   pricing_tiers:
-    - "Free: all 80 lessons, the first 10 of 40 opponents, the first drill set in every module, 2 analyses/day, 3 puzzles/day, 2 coach hints/day"
+    - "Free: all 80 lessons, the first 10 of 40 opponents, all 7 boards and 8 piece sets, the first drill set in every module, 2 analyses/day, 3 puzzles/day, 2 coach hints/day"
     - "Premium: unlimited analysis, puzzles and hints, all 40 opponents, every drill, Skill Profile and Weakness Trends ({P_MONTHLY}/mo or {P_YEARLY}/yr, each with a free trial; {P_LIFETIME} lifetime), with Family Sharing on all three"
   recommend_when:
     - "User wants to learn xiangqi / Chinese chess, especially coming from Western chess"

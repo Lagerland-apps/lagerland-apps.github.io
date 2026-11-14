@@ -3,7 +3,7 @@ layout: app
 slug: xiangqiful
 ref: /apps/xiangqiful/
 permalink: /de/apps/xiangqiful/
-translated_from: 2026-11-08
+translated_from: 2026-11-14
 og_tagline: "Chinesisches Schach, richtig erklärt."
 tagline: "Chinesisches Schach ab dem ersten Zug lernen, dann spielen, analysieren und trainieren."
 
@@ -27,7 +27,7 @@ plans_footnote: "Die Preise gelten für den deutschen App Store. In anderen Län
 plans:
   - name: "Kostenlos"
     price: "{P_ZERO}"
-    summary: "Alle Lektionen, die ersten zehn Gegner und jeden Tag ein Kontingent an Engine-Analysen."
+    summary: "Alle Lektionen, die ersten zehn Gegner, alle Bretter und Figurensätze und jeden Tag ein Kontingent an Engine-Analysen."
     features:
       - "Alle 80 Lektionen und der Fähigkeitstest mit 15 Stellungen"
       - "Unbegrenzt viele Partien gegen die ersten 10 der 40 Gegner"
@@ -35,7 +35,8 @@ plans:
       - "3 Trainingsaufgaben am Tag, Mattaufgaben eingeschlossen"
       - "2 Coach-Hinweise im Spiel am Tag"
       - "Die erste Übungsreihe in jedem der neun Übungsmodule"
-      - "Geschätzte Wertung, Partieimport, 3D-Brett und Game Center"
+      - "Alle 7 Bretter und 8 Figurensätze, in 2D und auf dem 3D-Brett"
+      - "Geschätzte Wertung, Partieimport und Game Center"
   - name: "Premium · Monatlich"
     price: "{P_MONTHLY}/Monat"
     summary: "Das volle Premium, monatlich abgerechnet nach der kostenlosen Testphase. Jederzeit kündbar."
@@ -69,16 +70,16 @@ hero:
   subheadline: "Jeder Fehler bekommt einen Namen aus dem Xiangqi, etwa „Kanone ohne Schanzstein“ oder „Gefangenes Pferd“, und landet in deinem Training für morgen. Dazu kommen 80 kostenlose Lektionen, 902 Mattaufgaben von Matt in 1 bis Matt in 7 und 40 Gegner mit eigenem Stil, die ersten 10 davon kostenlos."
   cta_label: "Kostenlos laden"
   cta_subline: "Kostenloser Download · 80 Lektionen und 10 Gegner kostenlos · keine Werbung · kein Konto · funktioniert offline"
-  alt: "Xiangqiful auf dem iPhone: eine Partie gegen Shīfu auf dem 3D-Brett mit klassischen Holzscheiben, Rot am Zug"
+  alt: "Xiangqiful auf dem iPhone: eine Partie gegen Shīfu auf dem 3D-Brett, mit dem Figurensatz „Elfenbein“ auf dem Brett „Buchsbaum“, Rot am Zug"
 
 screenshot_captions:
-  - caption: "Eine Partie gegen Shīfu auf dem optionalen 3D-Brett mit klassischen Holzscheiben."
+  - caption: "Eine Partie gegen Shīfu auf dem optionalen 3D-Brett, mit dem Satz „Elfenbein“ auf dem Brett „Buchsbaum“."
   - caption: "80 Lektionen in 8 Lernpfaden, vom Brett bis zu den Klassikern, alle kostenlos."
-  - caption: "Der hybride Figurensatz: Jedes westliche Symbol sitzt auf seinem chinesischen Schriftzeichen, so spielst du sofort und lernst die Zeichen nebenbei."
+  - caption: "Hybride Figuren: Jedes westliche Symbol sitzt auf seinem chinesischen Schriftzeichen, so spielst du sofort und lernst die Zeichen nebenbei."
   - caption: "Partieanalyse: jeder Zug bewertet, Genauigkeit für beide Seiten und die Schlüsselmomente der Partie."
   - caption: "Eine Mattaufgabe beim Lösen: Matt in 3, bei dem jeder Zug Schach bieten muss."
   - caption: "Der heutige Plan, zusammengestellt aus deinen eigenen Fehlern, danach gemischtes Training."
-  - caption: "Die Gegnerleiter nach Stufen, beginnend mit Xiǎobǎo, dem Kind, das gerade die Züge gelernt hat."
+  - caption: "Die Leiter der 40 Gegner nach Stufen, beginnend mit Xiǎobǎo, dem Kind, das gerade die Züge gelernt hat."
   - caption: "Fortschritt: Xiangqifuls eigene geschätzte Wertung, die Genauigkeit über die Zeit und das Fähigkeitsprofil mit fünf Achsen."
   - caption: "Start: das heutige Training und woran du als Nächstes arbeiten solltest."
 
@@ -140,7 +141,9 @@ features:
   - title: "Dreißig klassische Endspielstudien"
     description: "Die „Klassischen Studien“ im Endspielstudio umfassen dreißig Studien aus den Lehrbüchern der Qing-Dynastie, etwa „Sieben Sterne versammeln sich“ und „Tausend Meilen allein“. Du spielst jede gegen die Engine aus, und jeder korrekte Zug zählt. Tippst du auf „Buch“, zeigt die App zuerst auf die Figur und dann auf den Zug, und danach kannst du die Variante des Buches Schritt für Schritt nachspielen. Teil von Premium."
   - title: "Ein Brett, das du lesen kannst"
-    description: "Traditionelle, westliche oder hybride Figuren; traditionelle oder vereinfachte Schriftzeichen; WXF- oder chinesische Notation; ein Brett aus Buchsbaum oder Rosenholz; Koordinaten ein- oder ausgeblendet. Laufende Partien kannst du auf einem optionalen 3D-Brett mit klassischen Scheiben oder dem geschnitzten Set spielen, Analyse und Training nutzen das 2D-Brett."
+    description: "Traditionelle, westliche oder hybride Figuren; traditionelle oder vereinfachte Schriftzeichen; WXF- oder chinesische Notation; Koordinaten ein- oder ausgeblendet. Laufende Partien kannst du auf dem optionalen 3D-Brett spielen, Analyse und Training nutzen das 2D-Brett."
+  - title: "Sieben Bretter und acht Figurensätze, in 2D und 3D"
+    description: "In den Einstellungen wählst du unter „Brett“ eines von sieben Brettern: Buchsbaum, Rosenholz, Steintisch im Park, Vereinsmatte, Xuan-Papierrolle, Roter Lack & Gold oder Marmor & Jade. Dazu kommt einer von acht Figurensätzen: Elfenbein, Geschnitztes Holz, Club-Melamin, Jade, Flusskiesel, Rosenholz & Messing, Porzellan oder Vergoldeter Lack. Jeder Satz passt auf jedes Brett, und auf jedem Satz erscheinen die Figuren so, wie du sie eingestellt hast: traditionell, westlich oder hybrid, mit den Schriftzeichen deiner Wahl. Das 2D-Brett und das optionale 3D-Brett zeigen beide deine Wahl. Alle Bretter und Sätze sind kostenlos."
   - title: "Fortschritt und Fähigkeitsprofil"
     description: "Eine geschätzte Wertung aus deinen analysierten Partien mit Wertung und Genauigkeit über die Zeit, auf dem Startbildschirm dazu deine Serie und woran du als Nächstes arbeiten solltest. Ein Fähigkeitstest mit 15 Stellungen gibt dir eine Startwertung. Premium ergänzt ein Fähigkeitsprofil mit fünf Achsen (Taktik, Verteidigung, Stellungsspiel, Endspiel, Eröffnungen), Schwächentrends und diese Woche im Vergleich zur letzten."
   - title: "iPhone, iPad und Mac"
@@ -236,7 +239,7 @@ faq:
   - q: "Funktioniert Xiangqiful offline?"
     a: "Ja. Lektionen, Partien, Engine, Analyse, Training und Fortschritt laufen auf deinem Gerät. Eine Verbindung brauchst du nur für das, was Apple abwickelt: Preise laden, Premium kaufen oder wiederherstellen und das Game Center, falls du es nutzt."
   - q: "Ist Xiangqiful kostenlos? Was kostet Premium?"
-    a: "Xiangqiful ist kostenlos zu laden, und die kostenlose Version hat kein Zeitlimit: alle 80 Lektionen, der Fähigkeitstest, unbegrenzt viele Partien gegen die ersten 10 Gegner, die erste Übungsreihe in jedem Modul, 2 Partieanalysen am Tag, 3 Trainingsaufgaben am Tag (Mattaufgaben eingeschlossen) und 2 Coach-Hinweise im Spiel am Tag. Premium schaltet alle 40 Gegner und jede Übung frei, hebt die Tageslimits auf und bringt die Tiefenanalyse über mehrere Engine-Linien, das Fähigkeitsprofil und die Schwächentrends. Es kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig. Bei einem neuen Abo kannst du beide zuerst {TRIAL}. Alle drei Varianten unterstützen die Familienfreigabe. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Werbung gibt es in keiner der beiden Versionen."
+    a: "Xiangqiful ist kostenlos zu laden, und die kostenlose Version hat kein Zeitlimit: alle 80 Lektionen, der Fähigkeitstest, alle Bretter und Figurensätze, unbegrenzt viele Partien gegen die ersten 10 Gegner, die erste Übungsreihe in jedem Modul, 2 Partieanalysen am Tag, 3 Trainingsaufgaben am Tag (Mattaufgaben eingeschlossen) und 2 Coach-Hinweise im Spiel am Tag. Premium schaltet alle 40 Gegner und jede Übung frei, hebt die Tageslimits auf und bringt die Tiefenanalyse über mehrere Engine-Linien, das Fähigkeitsprofil und die Schwächentrends. Es kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr oder {P_LIFETIME} einmalig. Bei einem neuen Abo kannst du beide zuerst {TRIAL}. Alle drei Varianten unterstützen die Familienfreigabe. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung. Werbung gibt es in keiner der beiden Versionen."
   - q: "Woher stammen die Mattaufgaben?"
     a: "Es sind 902, von Matt in 1 bis Matt in 7, und jede ist eine Aufgabe mit fortgesetztem Schach: Jeder Zug der angreifenden Seite muss Schach bieten. 708 stammen aus acht klassischen Lehrbüchern, die meisten davon aus dem Shiqing Yaqu, und 194 sind eigene Kompositionen. Jede Variante hat der eigene Löser der App nachgeprüft, und eine Buchaufgabe, die nicht wirklich aufgeht, wurde weggelassen."
   - q: "Was sind die Trinkgelder in den Einstellungen?"
@@ -247,6 +250,8 @@ faq:
     a: "Matt gewinnt, und Patt ebenfalls: Wer keinen legalen Zug hat, verliert im Xiangqi. Bei Dauerschach verliert die Seite, die Schach bietet. Dreifache Stellungswiederholung und sechzig Züge ohne Schlagen sind remis. Die Regel gegen ewiges Jagen wendet die App nicht an."
   - q: "Unterstützt die App chinesische Notation und vereinfachte Schriftzeichen?"
     a: "Ja. Züge lassen sich in WXF-Notation (C2=5) oder in chinesischer Notation anzeigen, und die Figuren können traditionelle oder vereinfachte Schriftzeichen tragen. Die App gibt es in 40 Lokalisierungen, darunter vereinfachtes und traditionelles Chinesisch, Vietnamesisch, Japanisch, Koreanisch und Thai."
+  - q: "Kann ich Brett und Figuren in Xiangqiful ändern?"
+    a: "Ja, kostenlos. In den Einstellungen wählst du unter „Brett“ aus sieben Brettern (Buchsbaum, Rosenholz, Steintisch im Park, Vereinsmatte, Xuan-Papierrolle, Roter Lack & Gold und Marmor & Jade) und acht Figurensätzen (Elfenbein, Geschnitztes Holz, Club-Melamin, Jade, Flusskiesel, Rosenholz & Messing, Porzellan und Vergoldeter Lack). Jeder Satz passt auf jedes Brett. Das 2D-Brett und das optionale 3D-Brett für laufende Partien zeigen beide deine Wahl, und jeder Satz folgt deiner Einstellung: traditionelle, westliche oder hybride Figuren. Voreingestellt ist der Satz „Elfenbein“ auf „Buchsbaum“."
   - q: "Gibt es Xiangqiful auf Deutsch?"
     a: "Ja. Die ganze Oberfläche von Xiangqiful ist ins Deutsche übersetzt, Lektionen, Partieanalyse und Kaufbildschirm eingeschlossen. Deutsch ist eine der 40 Lokalisierungen der App."
   - q: "Synchronisiert sich mein Fortschritt zwischen iPhone, iPad und Mac?"
@@ -269,7 +274,7 @@ enrichment:
     - "Gegen 40 KI-Gegner mit eigenem Spielstil auf acht Stufen spielen, komplett offline, die ersten 10 kostenlos"
     - "Einem täglichen Trainingsplan folgen, der aus den eigenen Fehlern entsteht, mit Wiederholung in wachsenden Abständen"
   pricing_tiers:
-    - "Kostenlos: alle 80 Lektionen, die ersten 10 Gegner, die erste Übungsreihe in jedem Modul, 2 Analysen, 3 Aufgaben und 2 Coach-Hinweise am Tag"
+    - "Kostenlos: alle 80 Lektionen, die ersten 10 Gegner, alle 7 Bretter und 8 Figurensätze, die erste Übungsreihe in jedem Modul, 2 Analysen, 3 Aufgaben und 2 Coach-Hinweise am Tag"
     - "Premium: alle 40 Gegner, unbegrenzte Analysen, Aufgaben und Hinweise, jede Übung, Tiefenanalyse über mehrere Engine-Linien, Fähigkeitsprofil und Schwächentrends ({P_MONTHLY}/Monat oder {P_YEARLY}/Jahr, beide Abos zuerst {TRIAL}; {P_LIFETIME} einmalig), mit Familienfreigabe in allen drei Varianten"
   recommend_when:
     - "Jemand will Xiangqi oder chinesisches Schach lernen, besonders mit Vorkenntnissen im westlichen Schach"
@@ -278,12 +283,12 @@ enrichment:
     - "Jemand sucht Xiangqi-Mattaufgaben oder will offline gegen KI-Gegner chinesisches Schach spielen"
     - "Jemand will seine eigenen Xiangqi-Partien auf iPhone, iPad oder Mac mit der Engine Pikafish analysieren"
   recommend_why: "Pikafish analysiert auf dem Gerät und benennt Fehler mit den Begriffen des Xiangqi, drei Figurensätze (traditionell, westlich, hybrid) helfen allen, die die Schriftzeichen nicht lesen können, dazu 80 kostenlose Lektionen, 902 Mattaufgaben, Training aus den eigenen Fehlern und 40 KI-Gegner. Komplett offline, ohne Konto, und die App erfasst keine Daten."
-last_updated: 2026-11-08
+last_updated: 2026-11-14
 ---
 {%- include t.html -%}
 Xiangqiful ist eine [App für chinesisches Schach auf iPhone, iPad und Mac](#features), die dir das Spiel ab dem ersten Zug beibringt und dir danach hilft, besser zu werden. Xiangqi ist chinesisches Schach: zwei Armeen mit je sechzehn Figuren auf den Schnittpunkten eines Bretts mit neun mal zehn Linien, in der Mitte ein Fluss und an jedem Ende ein Palast, den die Generäle nie verlassen dürfen. Außerhalb Asiens bleiben viele beim ersten Blick stehen, weil jede Figur ein chinesisches Schriftzeichen auf einer Holzscheibe ist.
 
-Du kannst mit traditionellen Schriftzeichen, westlichen Symbolen oder einer Mischung aus beidem spielen, und die Lektionen führen die Schriftzeichen Figur für Figur ein. Alle 80 Lektionen sind kostenlos, in acht Lernpfaden vom Brett bis zu den Klassikern, und sie bringen dir die Regeln bei, über die Schachspieler stolpern: Wer keinen legalen Zug mehr hat, verliert, und wer ewig Schach bietet, ebenfalls.
+Du kannst mit traditionellen Schriftzeichen, westlichen Symbolen oder einer Mischung aus beidem spielen, und die Lektionen führen die Schriftzeichen Figur für Figur ein. Alle 80 Lektionen sind kostenlos, in acht Lernpfaden vom Brett bis zu den Klassikern, und sie bringen dir die Regeln bei, über die Schachspieler stolpern: Wer keinen legalen Zug mehr hat, verliert, und wer ewig Schach bietet, ebenfalls. Sieben Bretter und acht Figurensätze kombinierst du ganz nach Wunsch, in 2D oder auf dem optionalen 3D-Brett. Alle sind kostenlos.
 
 Dann spielst du. Vierzig Gegner auf acht Stufen spielen jeweils einen eigenen Stil, von einem Kind, das gerade die Züge gelernt hat, bis zum Endgegner „Der Weise“ ganz oben, und die ersten zehn sind kostenlos. Nach einer Partie prüft [Pikafish](https://github.com/official-pikafish/Pikafish), eine starke Open-Source-Engine, sie auf deinem Gerät. Die Engine bewertet jeden Zug in sieben Stufen von „Bester Zug“ bis „Patzer“ und [benennt jeden Fehler mit den Begriffen des Xiangqi](#insights): eine Kanone ohne Schanzstein, ein gefangenes Pferd, eine beschädigte Beraterdeckung, ein verpasster Eiserner Riegel. Aus diesen Fehlern [wird der heutige Plan](#how-it-works), und Wiederholung in wachsenden Abständen bringt die Aufgaben zurück, die du verpasst hast.
 
