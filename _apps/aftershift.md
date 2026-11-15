@@ -247,9 +247,9 @@ release:
   last_updated: "2026-10-23"
 
 ratings:
-  value: "3.6"
-  count: 5
-  last_synced: "2026-07-31"
+  value: "3.5"
+  count: 6
+  last_synced: "2026-11-15"
 
 show_body: true
 about_heading: "Why AfterShift exists."
