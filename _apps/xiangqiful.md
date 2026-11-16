@@ -335,8 +335,8 @@ about_heading: "What Xiangqiful is: xiangqi lessons, training, and game review"
 
 ratings:
   value: "5.0"
-  count: 3
-  last_synced: "2026-11-02"
+  count: 4
+  last_synced: "2026-11-16"
 last_updated: 2026-11-14
 ---
 Xiangqiful is a [xiangqi app for iPhone, iPad, and Mac](#features) that teaches the game from your first move and then helps you get better at it. Xiangqi is Chinese chess: two armies of sixteen pieces on the intersections of a nine-by-ten board, a river across the middle, and a palace at each end that the generals may never leave. Outside Asia, many people stop at the first look, because every piece is a Chinese character painted on a wooden disc.
