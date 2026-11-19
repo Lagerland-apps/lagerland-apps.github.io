@@ -31,7 +31,8 @@
     "de": "/de/alternatives/autosleep/",
     "en": "/alternatives/autosleep/",
     "es": "/es/alternatives/autosleep/",
-    "fr": "/fr/alternatives/autosleep/"
+    "fr": "/fr/alternatives/autosleep/",
+    "pt": "/pt/alternatives/autosleep/"
   },
   "/alternatives/baba-is-you/": {
     "en": "/alternatives/baba-is-you/",
@@ -41,7 +42,8 @@
     "de": "/de/alternatives/bevel/",
     "en": "/alternatives/bevel/",
     "es": "/es/alternatives/bevel/",
-    "fr": "/fr/alternatives/bevel/"
+    "fr": "/fr/alternatives/bevel/",
+    "pt": "/pt/alternatives/bevel/"
   },
   "/alternatives/brick/": {
     "de": "/de/alternatives/brick/",
@@ -86,13 +88,15 @@
     "de": "/de/alternatives/documents-by-readdle/",
     "en": "/alternatives/documents-by-readdle/",
     "es": "/es/alternatives/documents-by-readdle/",
-    "fr": "/fr/alternatives/documents-by-readdle/"
+    "fr": "/fr/alternatives/documents-by-readdle/",
+    "pt": "/pt/alternatives/documents-by-readdle/"
   },
   "/alternatives/fitbod/": {
     "de": "/de/alternatives/fitbod/",
     "en": "/alternatives/fitbod/",
     "es": "/es/alternatives/fitbod/",
-    "fr": "/fr/alternatives/fitbod/"
+    "fr": "/fr/alternatives/fitbod/",
+    "pt": "/pt/alternatives/fitbod/"
   },
   "/alternatives/flow-free/": {
     "en": "/alternatives/flow-free/",
@@ -109,13 +113,15 @@
     "de": "/de/alternatives/gentler-streak/",
     "en": "/alternatives/gentler-streak/",
     "es": "/es/alternatives/gentler-streak/",
-    "fr": "/fr/alternatives/gentler-streak/"
+    "fr": "/fr/alternatives/gentler-streak/",
+    "pt": "/pt/alternatives/gentler-streak/"
   },
   "/alternatives/habitica/": {
     "de": "/de/alternatives/habitica/",
     "en": "/alternatives/habitica/",
     "es": "/es/alternatives/habitica/",
-    "fr": "/fr/alternatives/habitica/"
+    "fr": "/fr/alternatives/habitica/",
+    "pt": "/pt/alternatives/habitica/"
   },
   "/alternatives/habitnow/": {
     "de": "/de/alternatives/habitnow/",
@@ -183,7 +189,8 @@
     "de": "/de/alternatives/one-sec/",
     "en": "/alternatives/one-sec/",
     "es": "/es/alternatives/one-sec/",
-    "fr": "/fr/alternatives/one-sec/"
+    "fr": "/fr/alternatives/one-sec/",
+    "pt": "/pt/alternatives/one-sec/"
   },
   "/alternatives/opal/": {
     "de": "/de/alternatives/opal/",
@@ -213,13 +220,15 @@
   "/alternatives/rise-sleep-tracker/": {
     "de": "/de/alternatives/rise-sleep-tracker/",
     "en": "/alternatives/rise-sleep-tracker/",
-    "fr": "/fr/alternatives/rise-sleep-tracker/"
+    "fr": "/fr/alternatives/rise-sleep-tracker/",
+    "pt": "/pt/alternatives/rise-sleep-tracker/"
   },
   "/alternatives/screenzen/": {
     "de": "/de/alternatives/screenzen/",
     "en": "/alternatives/screenzen/",
     "es": "/es/alternatives/screenzen/",
-    "fr": "/fr/alternatives/screenzen/"
+    "fr": "/fr/alternatives/screenzen/",
+    "pt": "/pt/alternatives/screenzen/"
   },
   "/alternatives/settle-up/": {
     "de": "/de/alternatives/settle-up/",
@@ -242,7 +251,8 @@
     "de": "/de/alternatives/strong-workout-app/",
     "en": "/alternatives/strong-workout-app/",
     "es": "/es/alternatives/strong-workout-app/",
-    "fr": "/fr/alternatives/strong-workout-app/"
+    "fr": "/fr/alternatives/strong-workout-app/",
+    "pt": "/pt/alternatives/strong-workout-app/"
   },
   "/alternatives/stronglifts-5x5/": {
     "de": "/de/alternatives/stronglifts-5x5/",

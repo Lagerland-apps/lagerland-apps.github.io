@@ -12,7 +12,7 @@ reviewing any Portuguese page. Every decision a translator would otherwise make 
 | Tier 1 pages | written and reviewed 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/pt.yml`). AI files and OG cards in batch 6 (/pt/llms.txt, /pt/llms-full.txt, 21 OG cards) |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
 | Tier 2 | batch 1 written and reviewed 2026-11-19, no native review yet: both hubs, chess, logic, workout and xiangqi guides, 3 /for/ pages, local-only /pt/guides/limitar-tempo-de-ecra-iphone/. Batch 2 (same day): shogi guide, bill tracker rewritten around Wallet (BudgetBakers) and Spendee (the two apps sold in Portugal whose own listing says they connect to the bank; Portugal has no single default like Fintonic), local-only /pt/guides/como-fazer-contagem-decrescente-iphone/. Tier 2 complete; for/indie-ios-developers stays English-only. Research: ~/Downloads/githubcode/pt-tier2-research-2026-11-19.md; briefs `_i18n/pt-tier2-brief.md`, `_i18n/pt-tier2-review-brief.md` |
-| Tier 3 | batch 1 written and reviewed 2026-11-19, no native review yet: hub /pt/alternatives/ and 10 comparisons (WHOOP, Oura, Splitwise, Tricount, Hevy, Chess.com, Lichess, PDF Expert, Forest, Opal). No local-only comparison: no Portugal-born competitor has demand (the gap found is a guide, `app para dividir despesas`). Research: ~/Downloads/githubcode/pt-tier3-research-2026-11-19.md; store data ~/Downloads/githubcode/pt-tier3-store-2026-11-19.md; briefs `_i18n/pt-tier3-brief.md`, `_i18n/pt-tier3-review-brief.md`. Next batch candidates in the research file |
+| Tier 3 | batch 1 written and reviewed 2026-11-19, no native review yet: hub /pt/alternatives/ and 10 comparisons (WHOOP, Oura, Splitwise, Tricount, Hevy, Chess.com, Lichess, PDF Expert, Forest, Opal). No local-only comparison: no Portugal-born competitor has demand (the gap found is a guide, `app para dividir despesas`). Research: ~/Downloads/githubcode/pt-tier3-research-2026-11-19.md; store data ~/Downloads/githubcode/pt-tier3-store-2026-11-19.md; briefs `_i18n/pt-tier3-brief.md`, `_i18n/pt-tier3-review-brief.md`. Batch 2 (same day): Documents by Readdle, Bevel, AutoSleep, Gentler Streak, Strong, Fitbod, one sec, ScreenZen, RISE, Habitica; hub now 20; store data ~/Downloads/githubcode/pt-tier3-store-batch2-2026-11-19.md; brief `_i18n/pt-tier3-batch2-brief.md`. Next candidates in the research file |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 72 s before Portuguese (main at the setup, 2026-11-19, other sessions' agents running); 85 s with Portuguese Tier 1 (762 audited pages) |
 
@@ -219,6 +219,16 @@ Search Console for Portugal: not read in this session. Revisit 4 to 6 weeks afte
 | /pt/alternatives/pdf-expert/ | `pdf expert grátis mac` | `comprimir pdf iphone` stays with MediaKit |
 | /pt/alternatives/forest/ | `forest app como funciona` | + `forest app preço`, `forest app apple watch` |
 | /pt/alternatives/opal/ | `opal app como funciona` | `bloquear apps iphone` stays with EarnLock |
+| /pt/alternatives/documents-by-readdle/ | `documents by readdle` | 4 keywords only (no fifth real query) |
+| /pt/alternatives/bevel/ | `bevel app` | + `bevel apple watch`, `bevel vs gentler streak` |
+| /pt/alternatives/autosleep/ | `autosleep apple watch` | `qualidade do sono apple watch` stays with Observa |
+| /pt/alternatives/gentler-streak/ | `gentler streak` | + `gentler streak premium` |
+| /pt/alternatives/strong-workout-app/ | `strong workout tracker` | `hevy ou strong` shared with hevy; 4 keywords |
+| /pt/alternatives/fitbod/ | `fitbod é pago` | + `fitbod é bom`, `fitbod em português` |
+| /pt/alternatives/one-sec/ | `one sec app` | 3 keywords (no more real queries) |
+| /pt/alternatives/screenzen/ | `screenzen` | + `screenzen em português`, `screenzen vs opal` |
+| /pt/alternatives/rise-sleep-tracker/ | `rise sleep tracker` | + `rise sleep funciona` |
+| /pt/alternatives/habitica/ | `habitica em português` | + `habitica como funciona` |
 
 Store facts per competitor: ~/Downloads/githubcode/pt-tier3-store-2026-11-19.md. «IAP rows: none shown» there means the
 listing flags in-app purchases but renders no rows: never write «sem compras integradas» from it.
@@ -335,6 +345,20 @@ From the Tier 3 hub and llms review: «ninguém mais» (Brazilian order: «mais 
 («o X comparado com o Y»); «tira do Apple Watch» for scores computed from Health data; «por agora em inglês» (an implied
 roadmap: «estão em inglês»); «quando fica melhor a app conhecida»; competitor names without their article in titles and
 descriptions («ao Splitwise, à Whoop»; keywords stay as typed).
+From the Tier 3 batch 2 reviews: «numa só compra», «só se paga por subscrição», «uma só vez» for lifetime («opção
+vitalícia»); «face ao/à» piled up for "against your baseline" («em relação a»); «ecrã principal» for an app's own home
+screen («ecrã inicial da app»); «Ambas» for two masculine app names («As duas apps»); verdicts added to quick_answer;
+«revista a» for "checked" («verificada a»); unclear «o seu / a sua» («a política de privacidade do Bevel»); «não há uso
+para»; a writer's wording quoted as a UI string; footnote meta sentences («os preços são os dessa ficha»); «a AutoSleep»
+(masculine app name); store titles with an en dash; «pede registo» where «registo» also means logging; «não há nada
+para criar» ("nothing to sign up for": «sem registo»); «gere» (gerar or gerir: «crie»); «antes de mudar» («antes de trocar
+de app»); «a do X corre» for "X's can"; a bare multi-word UI label as a subject (put it in «»); «encontra no X a app mais
+completa»; guessed competitor UI labels; «nível grátis» where the app page says «versão grátis»; invented causal links
+in competitor summaries; «Confirme os preços … do seu país» on a Portugal page; «entre os» hedging a full privacy list;
+«funciona muito bem» for "works well"; a trial tied to one IAP row; a clause whose object reads as the subject («atrasa
+a abertura de uma app que distrai com uma respiração»); «ao lado do» for "compared with"; «quem se contenta com»;
+«Não consta» as a table value («Nenhuma indicada»); «quem o desenvolve» («o programador»); a second H1 line copied from a
+sibling page; trailing participle after a price list; «um muito bom X» («um X muito bom»); «sincronizar nuvens».
 
 Translationese: title case headings; gerund chains copied from English -ing («oferecendo», «permitindo»); passive
 «é … por» where Portuguese uses «se»; possessives on body parts and devices copied from English; «utilizador»
@@ -367,6 +391,7 @@ register); «você» or tu forms slipping in; clitic placement copied from Brazi
 | Tier 2 batch 1: chess, logic, workout, xiangqi guides; 3 /for/ pages; local-only screen-time guide (2026-11-19) | 8 Sonnet writers | 4 reviewers (for pages; chess + xiangqi; workout + local, Apple pages re-fetched live; logic): about 150 fixes, incl. double-brace tokens, a wrong Apple label, a translated quote, «Nonogramas Katana» renamed, hedges restored | n/a | no native review yet |
 | Tier 2 batch 2: shogi, bill tracker (Portugal rewrite), local-only countdown guide (2026-11-19) | 3 Sonnet writers | 3 reviewers (Apple pages re-fetched live; every competitor sentence against its Portuguese listing): about 50 fixes, incl. Big Days' in-app purchases, Soon.'s free task list, Shogi Wars offline play per its listing | n/a | no native review yet |
 | Tier 3 batch 1: 10 comparisons (2026-11-19) | 10 Sonnet writers | 6 reviewers (Splitwise + Tricount; WHOOP + Oura; Hevy; Chess.com + Lichess; PDF Expert; Forest + Opal; raw Portuguese store pages re-read for Opal and Forest): about 150 fixes, incl. US-store references and US privacy and Family Sharing data replaced by Portuguese store data, Forest's Apple Vision restored, Opal's lifetime row, hardened «só para Mac», added Hevy Pro list and lichess community claims cut, colliding keywords replaced | n/a | no native review yet |
+| Tier 3 batch 2: 10 comparisons (2026-11-19) | 10 Sonnet writers | 6 reviewers (Bevel + AutoSleep + Gentler Streak; Strong + Fitbod; one sec + ScreenZen; RISE + Habitica; Documents; raw Portuguese store pages and the iTunes lookup re-read): about 160 fixes, incl. colliding and invented keywords removed, added verdicts and store claims cut, RISE privacy list completed and its language FAQ cut, Documents' Mac, MP3 and ZIP/RAR rows corrected from the store, Gentler Streak rating 4,7 | n/a | no native review yet |
 | Tier 3 hub /pt/alternatives/, /pt/llms.txt lines, Observa and RightSplit FAQ links | 1 Sonnet writer | 1 reviewer (ItemList names and llms titles synced to final page titles; colliding queries removed) | n/a | no native review yet |
 | Tier 2 hubs, /pt/llms.txt lines, 6 inbound links | 1 Sonnet writer | 1 reviewer (ItemList names and llms titles synced to final page titles, two unrouted queries routed) | n/a | no native review yet |
 
