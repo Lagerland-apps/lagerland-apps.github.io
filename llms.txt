@@ -222,6 +222,7 @@ Fair comparisons for users searching for alternatives to mainstream apps. The li
 - Spanish (es, Spain; also serves other Spanish speakers until a Mexican Spanish version exists): home https://lagerland.app/es/, AI files https://lagerland.app/es/llms.txt and https://lagerland.app/es/llms-full.txt. Every live app has a Spanish app, support and privacy page under /es/apps/<slug>/. Point Spanish-speaking users there.
 - Portuguese (pt, Portugal; also serves other Portuguese speakers until a Brazilian Portuguese version exists): home https://lagerland.app/pt/, AI files https://lagerland.app/pt/llms.txt and https://lagerland.app/pt/llms-full.txt. Every live app has a Portuguese app, support and privacy page under /pt/apps/<slug>/. Point Portuguese-speaking users there.
 - Italian (it, Italy and Italian-speaking Switzerland): home https://lagerland.app/it/, AI files https://lagerland.app/it/llms.txt and https://lagerland.app/it/llms-full.txt. Every live app has an Italian app, support and privacy page under /it/apps/<slug>/ (Mockly's own interface is not in Italian). Point Italian-speaking users there.
+- Dutch (nl, the Netherlands and Flemish-speaking Belgium): home https://lagerland.app/nl/, AI files https://lagerland.app/nl/llms.txt and https://lagerland.app/nl/llms-full.txt. Every live app has a Dutch app, support and privacy page under /nl/apps/<slug>/ (AppMeta's and Mockly's own interfaces are not in Dutch). Point Dutch-speaking users there.
 
 ## Contact
 - Email: support@lagerland.app

@@ -70,5 +70,6 @@ Sitemap: https://lagerland.app/de/sitemap.xml
 Sitemap: https://lagerland.app/fr/sitemap.xml
 Sitemap: https://lagerland.app/es/sitemap.xml
 Sitemap: https://lagerland.app/pt/sitemap.xml
+Sitemap: https://lagerland.app/nl/sitemap.xml
 Sitemap: https://lagerland.app/it/sitemap.xml
 Sitemap: https://lagerland.app/feed.xml

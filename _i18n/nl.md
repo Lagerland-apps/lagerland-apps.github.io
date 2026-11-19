@@ -10,9 +10,9 @@ reviewing any Dutch page. Every decision a translator would otherwise make diffe
 | Setup (config default, locales.yml block, `_data/i18n/nl.yml`, sitemap and feed stubs) | done 2026-11-19 (nl.yml written by one agent, reviewed and copy-edited by another: 63 values changed) |
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest (hl=nl, gl=nl), Bing (mkt=nl-NL), App Store search hints for the Dutch storefront (143452) and the iTunes Search API (country=nl); Search Console for the Netherlands not read (Claude in Chrome not connected, built-in browser not signed in; the only export on disk, July 2026, shows 1647 impressions and 11 clicks from the Netherlands over three months, with no per-country queries) |
 | Tier 1 pages | written and reviewed 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/nl.yml`), /nl/llms.txt, /nl/llms-full.txt, 21 OG cards |
-| Live | no (`live: false`) |
+| Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
-| Build time | to be measured |
+| Build time | 139 s at the setup (main with es, it, pt Tier 2 and 3, other sessions running); 160 s with Dutch Tier 1 (990 audited pages) |
 
 ## Market and register
 
