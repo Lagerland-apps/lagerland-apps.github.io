@@ -27,7 +27,8 @@
     "de": "/de/alternatives/athlytic/",
     "en": "/alternatives/athlytic/",
     "es": "/es/alternatives/athlytic/",
-    "fr": "/fr/alternatives/athlytic/"
+    "fr": "/fr/alternatives/athlytic/",
+    "pt": "/pt/alternatives/athlytic/"
   },
   "/alternatives/autosleep/": {
     "de": "/de/alternatives/autosleep/",
@@ -39,7 +40,8 @@
   "/alternatives/baba-is-you/": {
     "en": "/alternatives/baba-is-you/",
     "es": "/es/alternatives/baba-is-you/",
-    "fr": "/fr/alternatives/baba-is-you/"
+    "fr": "/fr/alternatives/baba-is-you/",
+    "pt": "/pt/alternatives/baba-is-you/"
   },
   "/alternatives/bevel/": {
     "de": "/de/alternatives/bevel/",
@@ -69,7 +71,8 @@
     "de": "/de/alternatives/chessable/",
     "en": "/alternatives/chessable/",
     "es": "/es/alternatives/chessable/",
-    "fr": "/fr/alternatives/chessable/"
+    "fr": "/fr/alternatives/chessable/",
+    "pt": "/pt/alternatives/chessable/"
   },
   "/alternatives/cloudconvert/": {
     "de": "/de/alternatives/cloudconvert/",
@@ -87,11 +90,13 @@
     "de": "/de/alternatives/convertio/",
     "en": "/alternatives/convertio/",
     "es": "/es/alternatives/convertio/",
-    "it": "/it/alternatives/convertio/"
+    "it": "/it/alternatives/convertio/",
+    "pt": "/pt/alternatives/convertio/"
   },
   "/alternatives/countdown-star/": {
     "de": "/de/alternatives/countdown-star/",
-    "en": "/alternatives/countdown-star/"
+    "en": "/alternatives/countdown-star/",
+    "pt": "/pt/alternatives/countdown-star/"
   },
   "/alternatives/documents-by-readdle/": {
     "de": "/de/alternatives/documents-by-readdle/",
@@ -160,15 +165,18 @@
   "/alternatives/hrv4training/": {
     "de": "/de/alternatives/hrv4training/",
     "en": "/alternatives/hrv4training/",
-    "es": "/es/alternatives/hrv4training/"
+    "es": "/es/alternatives/hrv4training/",
+    "pt": "/pt/alternatives/hrv4training/"
   },
   "/alternatives/image-size/": {
     "de": "/de/alternatives/image-size/",
-    "en": "/alternatives/image-size/"
+    "en": "/alternatives/image-size/",
+    "pt": "/pt/alternatives/image-size/"
   },
   "/alternatives/izip/": {
     "en": "/alternatives/izip/",
-    "es": "/es/alternatives/izip/"
+    "es": "/es/alternatives/izip/",
+    "pt": "/pt/alternatives/izip/"
   },
   "/alternatives/jefit/": {
     "de": "/de/alternatives/jefit/",
@@ -180,7 +188,8 @@
   "/alternatives/jomo/": {
     "de": "/de/alternatives/jomo/",
     "en": "/alternatives/jomo/",
-    "fr": "/fr/alternatives/jomo/"
+    "fr": "/fr/alternatives/jomo/",
+    "pt": "/pt/alternatives/jomo/"
   },
   "/alternatives/kami-2/": {
     "en": "/alternatives/kami-2/",
@@ -189,12 +198,14 @@
   },
   "/alternatives/kiwix/": {
     "en": "/alternatives/kiwix/",
-    "es": "/es/alternatives/kiwix/"
+    "es": "/es/alternatives/kiwix/",
+    "pt": "/pt/alternatives/kiwix/"
   },
   "/alternatives/ladder/": {
     "de": "/de/alternatives/ladder/",
     "en": "/alternatives/ladder/",
-    "fr": "/fr/alternatives/ladder/"
+    "fr": "/fr/alternatives/ladder/",
+    "pt": "/pt/alternatives/ladder/"
   },
   "/alternatives/lichess/": {
     "de": "/de/alternatives/lichess/",
@@ -207,7 +218,8 @@
   "/alternatives/magnus-trainer/": {
     "en": "/alternatives/magnus-trainer/",
     "es": "/es/alternatives/magnus-trainer/",
-    "fr": "/fr/alternatives/magnus-trainer/"
+    "fr": "/fr/alternatives/magnus-trainer/",
+    "pt": "/pt/alternatives/magnus-trainer/"
   },
   "/alternatives/medika/": {
     "en": "/alternatives/medika/",
@@ -215,7 +227,8 @@
   },
   "/alternatives/nonograms-katana/": {
     "en": "/alternatives/nonograms-katana/",
-    "fr": "/fr/alternatives/nonograms-katana/"
+    "fr": "/fr/alternatives/nonograms-katana/",
+    "pt": "/pt/alternatives/nonograms-katana/"
   },
   "/alternatives/one-sec/": {
     "de": "/de/alternatives/one-sec/",
@@ -299,7 +312,8 @@
     "de": "/de/alternatives/stronglifts-5x5/",
     "en": "/alternatives/stronglifts-5x5/",
     "es": "/es/alternatives/stronglifts-5x5/",
-    "fr": "/fr/alternatives/stronglifts-5x5/"
+    "fr": "/fr/alternatives/stronglifts-5x5/",
+    "pt": "/pt/alternatives/stronglifts-5x5/"
   },
   "/alternatives/tricount/": {
     "de": "/de/alternatives/tricount/",
@@ -343,12 +357,14 @@
     "de": "/de/alternatives/wikipedia-app/",
     "en": "/alternatives/wikipedia-app/",
     "es": "/es/alternatives/wikipedia-app/",
-    "fr": "/fr/alternatives/wikipedia-app/"
+    "fr": "/fr/alternatives/wikipedia-app/",
+    "pt": "/pt/alternatives/wikipedia-app/"
   },
   "/alternatives/wondershare-uniconverter/": {
     "en": "/alternatives/wondershare-uniconverter/",
     "es": "/es/alternatives/wondershare-uniconverter/",
-    "it": "/it/alternatives/wondershare-uniconverter/"
+    "it": "/it/alternatives/wondershare-uniconverter/",
+    "pt": "/pt/alternatives/wondershare-uniconverter/"
   },
   "/apps/": {
     "de": "/de/apps/",

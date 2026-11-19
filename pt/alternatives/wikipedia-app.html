@@ -1,0 +1,148 @@
+---
+layout: default
+ref: /alternatives/wikipedia-app/
+permalink: /pt/alternatives/wikipedia-app/
+translated_from: 2026-10-29
+title: "Alternativa à app da Wikipédia"
+quick_answer: "O WanderWiki é uma alternativa à app oficial da Wikipédia para descobrir em vez de pesquisar, em iPhone e iPad. Onde a app oficial parte da pesquisa, o WanderWiki mostra a Wikipédia como um baralho de cartas para deslizar: artigos aleatórios de toda a enciclopédia, 16 temas para explorar e artigos guardados que abrem offline, em 32 edições da Wikipédia, incluindo a portuguesa. Não tem anúncios, não pede conta e é grátis para 20 artigos por dia. O Premium ({P_MONTHLY@wanderwiki}/mês, {P_YEARLY@wanderwiki}/ano ou {P_LIFETIME@wanderwiki} na opção vitalícia) acrescenta «Para Si», «Hoje na história» e o deslize ilimitado. A app oficial é grátis, sem limite diário, e é a melhor opção para pesquisar, editar e ler as edições que ficam fora das 32."
+seo:
+  title: "App da Wikipédia vs WanderWiki: descobrir ou pesquisar"
+  description: "Alternativa à app da Wikipédia para descobrir em vez de pesquisar: o WanderWiki mostra artigos ao acaso num baralho, sem anúncios nem conta."
+  keywords:
+    - app da wikipédia
+    - wikipédia app
+last_updated: 2026-11-19
+---
+
+{%- include t.html -%}
+{%- assign app = site.apps | where: "slug", "wanderwiki" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/pt/alternatives/wikipedia-app/#webpage",
+  "url": "{{ site.url }}/pt/alternatives/wikipedia-app/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/pt/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "pt-PT",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/pt/" },
+      { "@type": "ListItem", "position": 2, "name": "Comparações", "item": "{{ site.url }}/pt/alternatives/" },
+      { "@type": "ListItem", "position": 3, "name": "Alternativa à app da Wikipédia", "item": "{{ site.url }}/pt/alternatives/wikipedia-app/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "pt-PT",
+  "mainEntity": [
+    { "@type": "Question", "name": "Qual é uma boa alternativa à app da Wikipédia para explorar em vez de pesquisar?", "acceptedAnswer": { "@type": "Answer", "text": "O WanderWiki é uma alternativa à app oficial da Wikipédia para descobrir, em iPhone e iPad. Onde a app oficial é uma referência que parte da pesquisa, o WanderWiki mostra a Wikipédia como um baralho de artigos para deslizar, com descoberta aleatória, 16 temas para explorar, «Hoje na história» e artigos guardados que abrem offline. Não tem anúncios e não pede conta. É grátis para 20 artigos por dia; o Premium acrescenta «Para Si», «Hoje na história» e o deslize ilimitado." } },
+    { "@type": "Question", "name": "O WanderWiki usa artigos reais da Wikipédia?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. O WanderWiki usa a API pública da Wikipédia para obter artigos reais, o mesmo conteúdo que a app oficial mostra. Só muda a apresentação: cartas para deslizar, baralhos por tema, sugestões de «E a seguir?» e «Hoje na história», enquanto a app oficial começa pela pesquisa." } },
+    { "@type": "Question", "name": "É possível guardar artigos do WanderWiki para ler offline?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Ao guardar um artigo, o WanderWiki descarrega o texto completo, por isso o artigo abre depois sem ligação. Os artigos guardados podem ser organizados em pastas. Ficam no dispositivo e não há sincronização com o iCloud. O feed para deslizar precisa de ligação." } },
+    { "@type": "Question", "name": "O WanderWiki segue a atividade de quem o usa?", "acceptedAnswer": { "@type": "Answer", "text": "Não. O WanderWiki não inclui análises nem SDK de terceiros de seguimento ou publicidade, não tem servidor próprio e não pede conta. Os pedidos de artigos vão para a API pública da Wikipédia, tal como numa visita pelo navegador, por isso a Wikimedia vê-os como veria os de qualquer leitor da Wikipédia." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Wikipédia · Para descobrir · iPhone e iPad</p>
+    <h1 class="h1">Uma alternativa à app da Wikipédia<br><span class="gradient-text">para os momentos de tédio.</span></h1>
+    <p class="lead">
+      A app oficial da Wikipédia é excelente para quem sabe o que vai procurar. O WanderWiki é para o resto do tempo, quando se quer a Wikipédia como um feed de coisas que nem se sabia que interessavam. Tem um baralho de cartas para deslizar, temas para seguir, «E a seguir?» para passar a um artigo relacionado e artigos guardados para ler offline. É o mesmo conteúdo, numa forma mais calma.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="{% include l.html url="/apps/wanderwiki/" %}"{% if l_en %} hreflang="en"{% endif %}>Conhecer o WanderWiki{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+      <a class="btn btn-secondary" href="#compare">Comparar</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section id="compare" class="section reveal">
+  <h2 class="h2">Em que difere o WanderWiki da app da Wikipédia?</h2>
+  <p class="lead">As duas mostram os mesmos artigos; muda a forma de os ler.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Ponto de entrada</div>
+      <div class="card-text"><strong>WanderWiki:</strong> a descoberta vem primeiro. Artigos aleatórios, 16 baralhos de temas, «Hoje na história» (Premium) e cinco widgets, entre eles «Hoje na história» com uma fotografia.<br><br><strong>App da Wikipédia:</strong> uma referência que parte da pesquisa, com um espaço de conteúdo em destaque.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Leitura</div>
+      <div class="card-text"><strong>WanderWiki:</strong> desliza-se pelas cartas como num baralho. Toque numa para ler o artigo completo, num leitor que retoma onde a leitura parou, ou toque em Ouvir para o escutar em voz alta.<br><br><strong>App da Wikipédia:</strong> abre-se um artigo e depois volta-se atrás. Navegação por listas e grelhas.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Offline e guardados</div>
+      <div class="card-text"><strong>WanderWiki:</strong> os artigos guardados são descarregados por inteiro e abrem offline, organizados em pastas. Ficam no dispositivo, sem sincronização.<br><br><strong>App da Wikipédia:</strong> os artigos guardados vão para listas de leitura, que se sincronizam com uma conta da Wikipédia.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Privacidade</div>
+      <div class="card-text"><strong>WanderWiki:</strong> sem conta e sem SDK de terceiros. Os pedidos vão apenas para a Wikipédia e para o respetivo servidor de imagens. <a href="{% include l.html url="/transparency/#wanderwiki" %}"{% if l_en %} hreflang="en"{% endif %}>Consulte o manifesto de privacidade{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.<br><br><strong>App da Wikipédia:</strong> conta opcional para sincronizar entre dispositivos.</div>
+    </div>
+  </div>
+  <p class="testimonials-footnote" style="margin-top:var(--s-3);">Na App Store de Portugal, a app oficial chama-se «Wikipédia», é publicada pela Wikimedia Foundation, é grátis e tem 4,6 em 5, com 48 classificações (consultado a <time datetime="2026-11-19">{% include date.html date="2026-11-19" %}</time>).</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">WanderWiki ou app da Wikipédia: qual escolher?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">O WanderWiki serve para quem…</div>
+      <ul class="bullets">
+        <li>abre a Wikipédia mais para se surpreender do que para procurar algo</li>
+        <li>prefere deslizar um baralho de cartas a escrever numa caixa de pesquisa</li>
+        <li>gosta de «Hoje na história» e quer vê-lo todos os dias</li>
+        <li>lê em deslocações ou no avião e quer artigos prontos a abrir offline</li>
+        <li>prefere ler sem iniciar sessão em nada</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">A app da Wikipédia serve para quem…</div>
+      <ul class="bullets">
+        <li>usa a Wikipédia como obra de consulta e prefere começar pela pesquisa</li>
+        <li>contribui ou edita e precisa das ferramentas de edição</li>
+        <li>conta com a sincronização das listas de leitura entre dispositivos, através de uma conta da Wikipédia</li>
+        <li>quer os destaques e a atualidade da app oficial, ou a Imagem do dia</li>
+        <li>lê uma edição fora das 32 do WanderWiki, ou quer ler sem limite e grátis</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% if app %}
+<section class="section reveal">
+  <h2 class="h2">Sobre o WanderWiki</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Perguntas</p><h2 class="h2">Perguntas frequentes</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Qual é uma boa alternativa à app da Wikipédia para explorar em vez de pesquisar?</summary><div class="faq-a">O WanderWiki é uma alternativa à app oficial da Wikipédia para descobrir, em iPhone e iPad. Onde a app oficial é uma referência que parte da pesquisa, o WanderWiki mostra a Wikipédia como um baralho de artigos para deslizar, com descoberta aleatória, 16 temas para explorar, «Hoje na história» e artigos guardados que abrem offline. Não tem anúncios e não pede conta. É grátis para 20 artigos por dia; o Premium acrescenta «Para Si», «Hoje na história» e o deslize ilimitado.</div></details>
+    <details class="faq-item"><summary>O WanderWiki usa artigos reais da Wikipédia?</summary><div class="faq-a">Sim. O WanderWiki usa a API pública da Wikipédia para obter artigos reais, o mesmo conteúdo que a app oficial mostra. Só muda a apresentação: cartas para deslizar, baralhos por tema, sugestões de «E a seguir?» e «Hoje na história», enquanto a app oficial começa pela pesquisa.</div></details>
+    <details class="faq-item"><summary>É possível guardar artigos do WanderWiki para ler offline?</summary><div class="faq-a">Sim. Ao guardar um artigo, o WanderWiki descarrega o texto completo, por isso o artigo abre depois sem ligação. Os artigos guardados podem ser organizados em pastas. Ficam no dispositivo e não há sincronização com o iCloud. O feed para deslizar precisa de ligação.</div></details>
+    <details class="faq-item"><summary>O WanderWiki segue a atividade de quem o usa?</summary><div class="faq-a">Não. O WanderWiki não inclui análises nem SDK de terceiros de seguimento ou publicidade, não tem servidor próprio e não pede conta. Os pedidos de artigos vão para a API pública da Wikipédia, tal como numa visita pelo navegador, por isso a Wikimedia vê-os como veria os de qualquer leitor da Wikipédia.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Experimente</p>
+  <h2 class="h2">Abra o WanderWiki.</h2>
+  <p class="lead">A Wikipédia para deslizar, sem anúncios nem conta e grátis para 20 artigos por dia.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/wanderwiki/" %}"{% if l_en %} hreflang="en"{% endif %}>Conhecer o WanderWiki{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>
