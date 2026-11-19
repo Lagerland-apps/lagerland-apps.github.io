@@ -73,3 +73,14 @@ Same method and batch 2 checks. Store/web data: `/Users/anttiaittamaa/Downloads/
 (includes the Italian App Privacy labels). Writer notes: `writer-notes.md` (batch 3). Research rows: «Batch 3» in the
 research file. Batch 3 rules: the «Batch 3» section of it-tier3-brief.md (Sleep Cycle: Observa has no alarm and records no
 sound; Monefy: AllPaid is not an expense tracker). Most writers again did a hand pass only: run the full skill.
+
+## Batch 4 (2026-11-19)
+
+Same method and batch 2 checks. Store/web data: `/Users/anttiaittamaa/Downloads/githubcode/it-tier3-store-batch4-2026-11-19.md`
+(Italian App Privacy labels and an «English page claims to check» list per competitor). Writer notes:
+`/private/tmp/claude-501/-Users-anttiaittamaa--claude-spares-spare-8uOgRv/283749dc-223e-4f60-b1dc-dcaf5366b46b/scratchpad/it-t3/notes/<slug>.md`. Research rows: «Batch 4 shortlist» in the research file. Writer rules: the «Batch 4» section of
+it-tier3-brief.md. Extra checks: Millrace pages never contain the digits of the number game it replaced (grep for 2048);
+AfterShift and Observa pages keep every health caveat and make no medical claim; WanderWiki pages never claim offline reading
+or Italian-language Wikipedia unless the English page or it/apps/wanderwiki/index.md says so; the three WanderWiki pages and
+the two GymLogger X pages have distinct primaries and seo.title patterns from each other and from the 25 existing Italian
+comparisons. Run the full skill on every page.

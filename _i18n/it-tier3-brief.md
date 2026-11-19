@@ -210,3 +210,57 @@ includes each app's Italian App Privacy label; quote a label only from there).
 - Alpha Progression: GymLogger X wording as on the reviewed `it/alternatives/fitbod.html` («Pro anche a vita», never «senza
   abbonamento» or «nessun abbonamento obbligatorio» on an overline).
 - Run the copy-editing SKILL itself (Skill tool or read SKILL.md and apply every sweep), not a hand pass.
+
+---
+
+## Batch 4 (2026-11-19): the must-have comparisons left
+
+Same rules as batches 1 to 3 (read all three sections above; batch 2's «Lessons» list applies, plus every batch 2 and 3
+review tell now in the sheet). Research rows: «Batch 4 shortlist» in the research file. Store and web data:
+`/Users/anttiaittamaa/Downloads/githubcode/it-tier3-store-batch4-2026-11-19.md` (includes each app's Italian App Privacy
+label and an «English page claims to check» list per competitor: follow it; where the Italian data contradicts the English
+page, follow the Italian data and report it). Writer notes go into
+`/private/tmp/claude-501/-Users-anttiaittamaa--claude-spares-spare-8uOgRv/283749dc-223e-4f60-b1dc-dcaf5366b46b/scratchpad/it-t3/notes/<slug>.md` (append one section per page:
+risks, added FAQs, dropped facts, contradictions, whether you ran the copy-editing skill).
+
+| English source | Write to | Our app | Primary query | Structural models |
+|---|---|---|---|---|
+| alternatives/jefit.html | it/alternatives/jefit.html | GymLogger X | jefit italiano (twin: jefit opinioni) | es, fr jefit; it/alternatives/fitbod.html |
+| alternatives/strong-workout-app.html | it/alternatives/strong-workout-app.html | GymLogger X | strong app palestra | es, fr strong-workout-app; it/alternatives/alpha-progression.html |
+| alternatives/xnconvert.html | it/alternatives/xnconvert.html | MediaKit | xnconvert come funziona | it/alternatives/handbrake.html (no other translation exists) |
+| alternatives/documents-by-readdle.html | it/alternatives/documents-by-readdle.html | MediaKit | documents readdle gratis | es, fr documents-by-readdle; it/alternatives/pdf-expert.html |
+| alternatives/hrv4training.html | it/alternatives/hrv4training.html | Observa | hrv4training costo | es hrv4training; it/alternatives/welltory.html |
+| alternatives/one-sec.html | it/alternatives/one-sec.html | EarnLock | one sec app gratis | es, fr one-sec; it/alternatives/opal.html |
+| alternatives/flow-free.html | it/alternatives/flow-free.html | Millrace | flow free gioco (twin: flow free gratis) | es, fr flow-free |
+| alternatives/two-dots.html | it/alternatives/two-dots.html | Millrace | two dots gioco | es, fr two-dots |
+| alternatives/rise-sleep-tracker.html | it/alternatives/rise-sleep-tracker.html | AfterShift | rise sonno e sveglia | es, fr rise-sleep-tracker |
+| alternatives/wikipedia-app.html | it/alternatives/wikipedia-app.html | WanderWiki | app wikipedia italiano | es, fr wikipedia-app |
+| alternatives/kiwix.html | it/alternatives/kiwix.html | WanderWiki | wikipedia offline iphone (twin: kiwix cos'è) | es kiwix |
+| alternatives/wikiwand.html | it/alternatives/wikiwand.html | WanderWiki | wikiwand cos è | none translated: model on it/alternatives/handbrake.html for a web tool |
+
+- **Millrace** (first Italian comparisons): never write the digits of the number game it replaced, in any field. It is free
+  with one-time packs; «senza abbonamento» is allowed for Millrace. Facts from `it/apps/millrace/index.md`, glossary,
+  blueprint §10 (`~/Downloads/thegame/APP_BLUEPRINT.md`). Keyword collision: `giochi di logica iphone` belongs to the app
+  page and the logic-puzzle guide (body or secondary only).
+- **AfterShift** (first Italian comparison): tier Premium, 7-day trial wording from the sheet («7 giorni di prova gratuita»);
+  facts from `it/apps/aftershift/index.md`, glossary, blueprint §10 (`~/Downloads/shiftworkersleep/APP_BLUEPRINT.md`). Health
+  topic: no medical claims, keep every caveat. `dormire dopo il turno di notte` belongs to the app page.
+- **WanderWiki** (first Italian comparisons): tier Premium; facts from `it/apps/wanderwiki/index.md`, glossary, blueprint §10
+  (`~/Downloads/WanderWiki/APP_BLUEPRINT.md`). Never claim WanderWiki reads Italian Wikipedia or works offline unless the
+  English page or the Italian app page says so. `wikipedia casuale` belongs to the app page. The three WanderWiki pages need
+  distinct primaries and seo.title patterns (wikipedia-app: `app wikipedia italiano`; kiwix: `wikipedia offline iphone`;
+  wikiwand: `wikiwand cos è`).
+- **GymLogger X**: wording as on the reviewed it/alternatives/fitbod.html and alpha-progression.html («Pro anche a vita»;
+  never «senza abbonamento» or «nessun abbonamento obbligatorio» on an overline). jefit and strong must not share a title
+  pattern with fitbod or alpha-progression. `app scheda palestra apple watch` belongs to the app page.
+- **MediaKit**: XnConvert is a desktop tool (facts from the English page plus XnSoft's own pages as the store file quotes
+  them; prices in the currency the site shows, or left out; no App Store claim unless the store file shows one).
+  Documents by Readdle: Italian store data only. `comprimere video iphone`, `comprimere pdf iphone`, `convertire video in
+  mp4 iphone` belong to the app page.
+- **Observa** on hrv4training: «HRV (SDNN)», never RMSSD as Observa's HRV; HRV4Training's own camera/PPG method may be
+  described only as the English page and the Italian listing describe it. `hrv apple watch` belongs to the app page.
+- **EarnLock** on one-sec: `bloccare app iphone` belongs to the app page; Opal, Forest and AppBlock pages exist in Italian
+  (l.html resolves the links).
+- Batch 1 to 3 pages now exist in Italian; l.html resolves links to them. Keep every seo.title pattern distinct from the
+  25 existing Italian comparison titles (`grep -h '^  title:' it/alternatives/*.html`).
+- Run the copy-editing SKILL itself (Skill tool or read SKILL.md and apply every sweep), not a hand pass, and say so in your notes.

@@ -103,6 +103,7 @@
     "en": "/alternatives/documents-by-readdle/",
     "es": "/es/alternatives/documents-by-readdle/",
     "fr": "/fr/alternatives/documents-by-readdle/",
+    "it": "/it/alternatives/documents-by-readdle/",
     "pt": "/pt/alternatives/documents-by-readdle/"
   },
   "/alternatives/fitbod/": {
@@ -117,6 +118,7 @@
     "en": "/alternatives/flow-free/",
     "es": "/es/alternatives/flow-free/",
     "fr": "/fr/alternatives/flow-free/",
+    "it": "/it/alternatives/flow-free/",
     "pt": "/pt/alternatives/flow-free/"
   },
   "/alternatives/forest/": {
@@ -166,6 +168,7 @@
     "de": "/de/alternatives/hrv4training/",
     "en": "/alternatives/hrv4training/",
     "es": "/es/alternatives/hrv4training/",
+    "it": "/it/alternatives/hrv4training/",
     "pt": "/pt/alternatives/hrv4training/"
   },
   "/alternatives/image-size/": {
@@ -183,6 +186,7 @@
     "en": "/alternatives/jefit/",
     "es": "/es/alternatives/jefit/",
     "fr": "/fr/alternatives/jefit/",
+    "it": "/it/alternatives/jefit/",
     "pt": "/pt/alternatives/jefit/"
   },
   "/alternatives/jomo/": {
@@ -199,6 +203,7 @@
   "/alternatives/kiwix/": {
     "en": "/alternatives/kiwix/",
     "es": "/es/alternatives/kiwix/",
+    "it": "/it/alternatives/kiwix/",
     "pt": "/pt/alternatives/kiwix/"
   },
   "/alternatives/ladder/": {
@@ -235,6 +240,7 @@
     "en": "/alternatives/one-sec/",
     "es": "/es/alternatives/one-sec/",
     "fr": "/fr/alternatives/one-sec/",
+    "it": "/it/alternatives/one-sec/",
     "pt": "/pt/alternatives/one-sec/"
   },
   "/alternatives/opal/": {
@@ -271,6 +277,7 @@
     "en": "/alternatives/rise-sleep-tracker/",
     "es": "/es/alternatives/rise-sleep-tracker/",
     "fr": "/fr/alternatives/rise-sleep-tracker/",
+    "it": "/it/alternatives/rise-sleep-tracker/",
     "pt": "/pt/alternatives/rise-sleep-tracker/"
   },
   "/alternatives/screenzen/": {
@@ -306,6 +313,7 @@
     "en": "/alternatives/strong-workout-app/",
     "es": "/es/alternatives/strong-workout-app/",
     "fr": "/fr/alternatives/strong-workout-app/",
+    "it": "/it/alternatives/strong-workout-app/",
     "pt": "/pt/alternatives/strong-workout-app/"
   },
   "/alternatives/stronglifts-5x5/": {
@@ -327,6 +335,7 @@
     "en": "/alternatives/two-dots/",
     "es": "/es/alternatives/two-dots/",
     "fr": "/fr/alternatives/two-dots/",
+    "it": "/it/alternatives/two-dots/",
     "pt": "/pt/alternatives/two-dots/"
   },
   "/alternatives/unpluq/": {
@@ -358,13 +367,22 @@
     "en": "/alternatives/wikipedia-app/",
     "es": "/es/alternatives/wikipedia-app/",
     "fr": "/fr/alternatives/wikipedia-app/",
+    "it": "/it/alternatives/wikipedia-app/",
     "pt": "/pt/alternatives/wikipedia-app/"
+  },
+  "/alternatives/wikiwand/": {
+    "en": "/alternatives/wikiwand/",
+    "it": "/it/alternatives/wikiwand/"
   },
   "/alternatives/wondershare-uniconverter/": {
     "en": "/alternatives/wondershare-uniconverter/",
     "es": "/es/alternatives/wondershare-uniconverter/",
     "it": "/it/alternatives/wondershare-uniconverter/",
     "pt": "/pt/alternatives/wondershare-uniconverter/"
+  },
+  "/alternatives/xnconvert/": {
+    "en": "/alternatives/xnconvert/",
+    "it": "/it/alternatives/xnconvert/"
   },
   "/apps/": {
     "de": "/de/apps/",
