@@ -1,0 +1,121 @@
+---
+layout: privacy
+slug: earnlock
+ref: /apps/earnlock/privacy/
+permalink: /it/apps/earnlock/privacy/
+translated_from: 2026-11-08
+last_updated: 2026-11-08
+title: "Informativa sulla privacy"
+seo:
+  title: "Informativa sulla privacy di EarnLock"
+  description: "Privacy di EarnLock: nessun tracciamento di terze parti, nessuna pubblicità, nessun account. I tuoi dati restano sul tuo dispositivo. Cosa tratta l’app."
+  keywords:
+    - "earnlock privacy"
+    - "earnlock informativa sulla privacy"
+    - "earnlock dati personali"
+    - "app senza tracciamento"
+    - "app blocco app senza tracciamento"
+overview: >
+  EarnLock si basa su un solo principio di privacy: i tuoi dati restano
+  sul tuo dispositivo. Non esiste alcun server di EarnLock. Niente di ciò che fai
+  nell’app viene trasmesso a noi o a terze parti. Questa pagina descrive quali dati usa
+  l’app e perché, così non devi fidarti di promesse vaghe.
+  In una frase: EarnLock legge i tuoi dati di attività dall’app Salute e la tua
+  selezione di app bloccate solo sul dispositivo, li conserva solo sul dispositivo
+  e li usa solo sul dispositivo per stabilire se il tuo obiettivo giornaliero è
+  raggiunto. Non vediamo nulla di tutto questo. La sezione “Privacy dell’app” di
+  EarnLock su App Store indica “Dati non raccolti”.
+
+data_collection: >
+  EarnLock non raccoglie dati personali. Legge tre categorie di informazioni
+  presenti sul dispositivo, al solo scopo di far funzionare il blocco legato
+  all’obiettivo giornaliero.
+  (1) Dati di attività di HealthKit: il numero di passi giornalieri, l’energia
+  attiva bruciata e i minuti di esercizio, per valutare i progressi rispetto
+  all’obiettivo di attività giornaliero che sblocca le app selezionate.
+  HealthKit è in sola lettura (non scriviamo mai in Salute), letto solo sul tuo
+  dispositivo e mai trasmesso fuori dal dispositivo da EarnLock. Lo stesso
+  framework HealthKit di Apple non condivide questi dati con noi né con terze parti.
+  Puoi revocare in qualsiasi momento l’accesso di EarnLock a Salute in
+  Impostazioni > Privacy e sicurezza > Salute > EarnLock.
+  (2) Token di Tempo di utilizzo per ciò che scegli di bloccare. Quando scegli
+  app, categorie o siti web nel selettore di Tempo di utilizzo di Apple, iOS
+  consegna a EarnLock un token opaco per ciascuno, non il suo nome,
+  identificativo o icona. Questi token sono archiviati solo sul tuo dispositivo,
+  in un contenitore App Group condiviso tra l’app EarnLock e le sue estensioni
+  iOS (Shield, Shield Action, DeviceActivityMonitor, estensione per attività in
+  tempo reale e widget). I token sono opachi per scelta progettuale di Apple,
+  quindi nemmeno EarnLock può leggere quale app hai selezionato. La selezione non
+  viene mai trasmessa fuori dal dispositivo e puoi modificarla o cancellarla in
+  qualsiasi momento in EarnLock, in Impostazioni > Blocco > App bloccate.
+  (3) Transazioni StoreKit. Quando ti abboni o acquisti l’opzione “A vita”, Apple
+  consegna a EarnLock una transazione firmata che indica quale prodotto hai acquistato e se
+  è attivo. Non contiene dati di pagamento, nome, email o altri dati personali.
+  Tutta l’elaborazione dei pagamenti, la gestione dei rimborsi e la gestione
+  degli abbonamenti sono svolte da StoreKit di Apple e da App Store, non da
+  EarnLock. EarnLock conserva sul dispositivo il tuo stato Premium, così i suoi
+  widget possono mostrare lo stato corretto, e lo passa all’app EarnLock per
+  Apple Watch tramite WatchConnectivity di Apple.
+
+data_storage: >
+  Tutti i dati di EarnLock sono archiviati in locale sul tuo dispositivo,
+  all’interno della sandbox dell’app e di un contenitore App Group condiviso con
+  le estensioni iOS di EarnLock. Non esiste alcun backend di EarnLock: nessun
+  server, nessun database, nessuna pipeline di analisi. La cronologia delle serie,
+  le voci del registro delle riflessioni, le stime del tempo allo schermo
+  risparmiato e la tua selezione di app bloccate si trovano in contenitori Apple
+  standard che il backup di iOS include se attivi il backup su iCloud. Se usi
+  l’app per Apple Watch, legge i dati di Salute sull’orologio stesso e il tuo
+  iPhone gli invia solo le tue impostazioni e lo stato Premium, direttamente
+  tramite WatchConnectivity di Apple. In Impostazioni > Dati e privacy puoi
+  esportare in un unico file ciò che EarnLock conserva, oppure cancellare tutto.
+  Eliminando l’app EarnLock dal dispositivo vengono rimossi il suo contenitore,
+  il contenitore App Group e tutto ciò che contengono.
+
+third_parties: >
+  EarnLock non usa servizi di terze parti per analisi, pubblicità o tracciamento.
+  Non usa SDK di terze parti di alcun tipo: né Firebase, Mixpanel, Amplitude,
+  Segment, Sentry o Bugsnag, né reti pubblicitarie o di attribuzione. EarnLock usa
+  soltanto i framework di Apple: SwiftUI, SwiftData, HealthKit, FamilyControls,
+  ManagedSettings, DeviceActivity, ActivityKit, WidgetKit, WatchConnectivity e
+  StoreKit 2. Apple tratta dati limitati nell’ambito dei servizi che scegli di
+  usare, come gli acquisti su App Store, l’accesso a HealthKit e la connessione
+  con Apple Watch. Nessuno di questi dati arriva a EarnLock in quanto sviluppatore.
+
+sensitive_data: >
+  EarnLock legge i dati di attività di HealthKit (passi, energia attiva bruciata,
+  minuti di esercizio) per valutare il tuo obiettivo giornaliero. Non legge i tuoi
+  dati di utilizzo di Tempo di utilizzo di iOS: la stima del tempo allo schermo
+  risparmiato è calcolata a partire da un conteggio, sul dispositivo, di quante
+  volte la schermata di protezione (shield) ti ha impedito di aprire un’app bloccata. Tutto questo resta
+  solo sul dispositivo e non viene mai trasmesso fuori dal dispositivo. EarnLock
+  non vende, non condivide e non usa questi dati per scopi pubblicitari. Non sono
+  usati al di fuori delle funzioni di monitoraggio dell’obiettivo e di analisi
+  dell’app.
+
+refund_requests:
+  intro: >
+    Se chiedi ad Apple il rimborso di un acquisto in EarnLock, Apple può chiederci
+    informazioni per aiutarla a decidere. Effettuando un acquisto, accetti che possiamo
+    rispondere con le seguenti informazioni su quell’acquisto:
+  items:
+    - "se l’acquisto è stato consegnato e sbloccato nell’app"
+    - "se era disponibile una versione gratuita dell’app prima del tuo acquisto"
+    - "se preferiremmo che Apple approvasse o rifiutasse il rimborso"
+  closing: >
+    Non inviamo i tuoi dati di attività, le app bloccate, le serie o qualsiasi altro dato personale, perché EarnLock conserva questi dati sul tuo dispositivo e noi non li abbiamo.
+    Apple prende la decisione finale su ogni rimborso.
+
+children: >
+  EarnLock è pensata per adulti che la usano sul proprio iPhone. Autorizza il
+  framework Family Controls di Apple solo per il tuo dispositivo, mai nella
+  modalità che un genitore usa per gestire il dispositivo di un figlio tramite In
+  famiglia. EarnLock è un software di autolimitazione, mai di controllo
+  parentale. Non raccogliamo consapevolmente alcun dato da nessuno, di qualsiasi
+  età.
+
+changes: >
+  Se questa informativa cambia, cambia la data “Ultimo aggiornamento” in cima a
+  questa pagina. Le modifiche sostanziali saranno indicate nella sezione Novità
+  dell’app su App Store.
+---

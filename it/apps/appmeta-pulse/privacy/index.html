@@ -1,0 +1,299 @@
+---
+layout: privacy
+slug: appmeta-pulse
+ref: /apps/appmeta-pulse/privacy/
+permalink: /it/apps/appmeta-pulse/privacy/
+translated_from: 2026-11-13
+last_updated: 2026-11-13
+title: "Informativa sulla privacy"
+seo:
+  title: "Informativa sulla privacy di AppMeta Pulse"
+  description: "Privacy di AppMeta Pulse: nessun tracciamento, nessuna pubblicità, nessun account. I tuoi dati restano sul tuo dispositivo o nel tuo iCloud privato."
+  keywords:
+    - "appmeta pulse informativa sulla privacy"
+    - "appmeta pulse privacy"
+    - "appmeta pulse dati personali"
+    - "appmeta pulse sincronizzazione icloud"
+    - "app senza tracciamento"
+
+overview: >
+  AppMeta Pulse aiuta chi sviluppa app a seguire l’andamento delle proprie app su
+  App Store, usando i dati di App Store Connect di Apple.
+  La privacy è una parte centrale della progettazione dell’app: noi (Lagerland Apps)
+  non gestiamo alcun server per l’app, non c’è alcun account da creare e l’app non
+  contiene codice di analisi, pubblicità o tracciamento.
+  Questa informativa spiega cosa tratta l’app, dove vengono conservati questi dati,
+  chi può vederli e quali scelte hai.
+
+data_collection: >
+  Non raccogliamo dati da AppMeta Pulse: niente di ciò che l’app gestisce ci viene inviato.
+  Per funzionare, l’app tratta quanto segue sul tuo dispositivo e, per tuo conto,
+  con i servizi di Apple. Le tue credenziali API di App Store Connect (Issuer ID,
+  Key ID e chiave privata .p8), il nome dell’account e il numero fornitore che inserisci.
+  I dati che App Store Connect restituisce per le tue app: report di vendite, ricavi,
+  download, rimborsi, abbonamenti ed eventi di abbonamento, analisi di App Store come
+  impressioni e visualizzazioni della pagina prodotto, e il catalogo delle tue app e
+  degli acquisti in-app.
+  Le recensioni dei clienti sulle tue app, compresi nickname, valutazione, territorio,
+  titolo e testo di chi le scrive, e le tue risposte come sviluppatore.
+  E le risposte alle recensioni che scrivi, che vengono inviate ad App Store Connect
+  solo quando tocchi per inviarle, modificarle o eliminarle, e che Apple mostra poi
+  pubblicamente insieme alla recensione sulla pagina della tua app su App Store.
+  L’app crea inoltre richieste di report di analisi nel tuo account App Store Connect,
+  in modo che Apple prepari i tuoi dati di analisi; a parte le risposte alle recensioni,
+  è l’unica modifica che vi apporta.
+  Non accede alla tua posizione, ai contatti, alle foto né ai dati di salute e non usa
+  l’identificativo per gli inserzionisti (IDFA).
+  Le uniche informazioni che ci arrivano direttamente sono quelle che scegli di inviarci
+  per email: il tuo messaggio e il tuo indirizzo email, più la versione e la build dell’app,
+  la versione di iOS e il tipo di dispositivo che l’email di assistenza precompila e che
+  puoi vedere e modificare prima dell’invio.
+  Oltre a questo, vediamo solo ciò che Apple fornisce a ogni sviluppatore: i report aggregati
+  di vendite e download di App Store e App Analytics per AppMeta Pulse stessa; i report sugli
+  arresti anomali e le statistiche di utilizzo di chi attiva “Condividi con gli sviluppatori di app”;
+  e, quando la sincronizzazione con iCloud è attiva, i log di utilizzo di CloudKit di Apple, che
+  mostrano l’ora, la piattaforma, la versione del sistema operativo, un ID utente CloudKit
+  anonimo e il tipo di ogni richiesta, mai i dati sincronizzati.
+  Non usiamo nulla di tutto questo per identificarti.
+
+data_storage: >
+  Le tue credenziali sono conservate nel Portachiavi di iOS solo su questo dispositivo:
+  non si sincronizzano con Portachiavi iCloud né tramite la sincronizzazione con iCloud, e l’app
+  firma sul dispositivo le sue richieste ad App Store Connect, quindi la tua chiave privata
+  non viene mai inviata da nessuna parte.
+  Tutto il resto è archiviato nello spazio dell’app sul tuo dispositivo, protetto dalla
+  protezione dati di iOS, e conservato come archivio a lungo termine per permetterti di
+  confrontare più anni, perché App Store Connect fornisce solo gli ultimi 365 giorni circa.
+  L’app conserva anche copie esatte e compresse dei report, delle recensioni e delle schede
+  che scarica da App Store Connect, così le tue cifre possono essere ricalcolate in seguito.
+  I widget della schermata Home leggono una copia dei tuoi numeri sullo stesso dispositivo e
+  non fanno richieste di rete.
+  La traduzione delle recensioni, le bozze di risposta con IA e il riepilogo settimanale delle
+  recensioni usano il framework Translation di Apple e il modello sul dispositivo di
+  Apple Intelligence; l’app non invia il testo delle recensioni a nessun nostro server.
+  Se esegui il backup del dispositivo con il backup su iCloud o con un computer, i dati
+  dell’app presenti sul dispositivo sono inclusi come gli altri dati delle app, tranne i dati di
+  gestione della sincronizzazione e le copie dei report già salvate dalla sincronizzazione con iCloud.
+  Non gestiamo server che archiviano i tuoi dati.
+
+icloud_sync:
+  - >
+    La sincronizzazione con iCloud è facoltativa e si imposta separatamente su ogni dispositivo.
+    Si attiva quando la scegli: nelle Impostazioni dell’app (dopo una conferma), da una
+    proposta una tantum nella schermata Panoramica, con “Usa i dati di iCloud” su un
+    dispositivo senza chiave API, oppure salvando un nuovo account con l’interruttore
+    “Esegui il backup e sincronizza con iCloud” attivo. Quell’interruttore parte attivo se
+    non hai ancora fatto una scelta su questo dispositivo, quindi disattivalo prima di
+    salvare se vuoi che i tuoi dati restino su questo dispositivo.
+    Quando la sincronizzazione è attiva, AppMeta Pulse conserva i suoi dati nel database
+    CloudKit privato del tuo account iCloud, e i tuoi dispositivi con lo stesso Apple Account
+    se li scambiano da lì. La prima volta che la attivi, viene caricato anche lo storico già
+    presente sul dispositivo, non solo i dati nuovi.
+  - >
+    Cosa si sincronizza: il tuo storico di vendite, ricavi, download, abbonamenti e analisi
+    per ogni app e giorno, compreso il dettaglio per Paese; il catalogo delle tue app e degli
+    acquisti in-app (nomi, bundle ID, SKU e link alle icone); le recensioni dei clienti con
+    nickname, valutazione, territorio, titolo e testo di chi le scrive, le tue risposte come
+    sviluppatore e quali recensioni hai segnato come viste; i tuoi obiettivi, le app che
+    segui, i traguardi, le preferenze di visualizzazione e gli eventuali modelli di risposta
+    che hai modificato; una voce del team con il nome dell’account e il numero fornitore che
+    hai inserito, quale dispositivo ha recuperato i dati per ultimo e quanti dati ci sono; e
+    l’archivio dei report, cioè le copie esatte delle risposte di App Store Connect descritte
+    sopra. Quelle copie includono i report completi di vendite e abbonamenti (con dettagli
+    come il nome dello sviluppatore, i nomi dei prodotti e gli Apple ID), i file dei report di
+    analisi, i dati delle recensioni e le schede del catalogo.
+    Le copie dei report vengono caricate solo mentre il dispositivo è su Wi-Fi e in carica o ha
+    l’app aperta, a meno che tu non tocchi “Carica ora”; i file molto grandi, e i file dei report
+    di analisi oltre 2 GB per team, restano sul dispositivo. Un dispositivo scarica le copie
+    create dai tuoi altri dispositivi solo se lì attivi “Conserva una copia su questo dispositivo”.
+  - >
+    Perché i tuoi dispositivi possano dividersi il lavoro di recupero, ogni dispositivo salva
+    anche un record di stato: un ID casuale che l’app crea per il dispositivo, un’etichetta
+    generica come “iPhone” (non il nome del tuo dispositivo), la piattaforma e la versione
+    dell’app, la sua impostazione di recupero, se ha una chiave API più una breve impronta
+    derivata dal Key ID, quando è stato attivo l’ultima volta, quando ha recuperato per
+    l’ultima volta ogni tipo di dato e se è andata a buon fine, e i contatori dei limiti di
+    frequenza di App Store Connect. La sincronizzazione memorizza anche record che coordinano le
+    attività lunghe tra i dispositivi e i dati di gestione che impediscono a due dispositivi di
+    recuperare due volte lo stesso report. Gli altri tuoi dispositivi li mostrano nell’elenco
+    Dispositivi.
+  - >
+    Cosa non si sincronizza mai: la tua chiave privata .p8, l’Issuer ID e il Key ID, e i token
+    creati a partire da essi. In iCloud l’Issuer ID compare solo come hash unidirezionale, che
+    raggruppa i record del tuo team, il Key ID solo come breve hash che permette ai dispositivi
+    di distinguere le chiavi, e i record dei report riportano un breve hash del numero fornitore.
+    Il nome dell’account e il numero fornitore che hai inserito si sincronizzano, nella voce del
+    team descritta sopra. Un dispositivo senza chiave può mostrare i tuoi dati da iCloud, ma non
+    può contattare App Store Connect finché non aggiungi una chiave su quel dispositivo.
+  - >
+    Chi può vederli: tu, sui tuoi dispositivi con lo stesso Apple Account su cui sono attive
+    AppMeta Pulse e la sincronizzazione con iCloud. Noi (Lagerland Apps) non possiamo vederne il
+    contenuto: Apple non mostra agli sviluppatori di app il contenuto del tuo database iCloud
+    privato. Apple archivia i dati e, a meno che tu non usi la protezione avanzata dei dati,
+    detiene le chiavi di crittografia (vedi Crittografia più sotto). In base ai suoi termini per
+    gli sviluppatori, Apple li archivia per nostro conto e non vi accede né li divulga, salvo
+    che tu lo chieda ad Apple o che Apple ritenga che la legge lo richieda. L’app non usa i
+    database pubblici o condivisi di CloudKit e non può dare a nessun altro accesso ai tuoi
+    dati iCloud; i file che esporti tu stesso vanno dove li invii. iCloud è fornito da Apple
+    secondo i propri termini e la propria informativa sulla privacy, e i dati vengono conteggiati nel
+    tuo spazio di archiviazione iCloud.
+  - >
+    Crittografia: i dati sono crittografati in transito e a riposo in iCloud, dove Apple può
+    usare data center propri o di terze parti. L’app archivia il contenuto di ogni record in campi
+    crittografati di CloudKit; i record più grandi e le copie dei report sono archiviati come
+    asset di CloudKit, che CloudKit crittografa a sua volta. Con la protezione dei dati standard
+    di iCloud, Apple conserva le chiavi di crittografia nei suoi data center, quindi può
+    decrittografare i tuoi dati per tuo conto, per esempio per aiutarti a recuperarli. Se
+    attivi la protezione avanzata dei dati per iCloud, i campi crittografati e gli asset di
+    CloudKit sono crittografati end-to-end e solo i tuoi dispositivi attendibili possono
+    decrittografarli.
+    Partiamo dal presupposto che alcune informazioni necessarie al funzionamento di CloudKit
+    non siano coperte da quella crittografia, nemmeno con la protezione avanzata dei dati: i
+    nomi dei record e delle zone, che in AppMeta Pulse contengono gli ID delle app di App Store,
+    le date e i mesi dei report, i tipi di richiesta di analisi, gli ID dei modelli, i nomi
+    delle attività, l’ID casuale del dispositivo, le impronte delle copie dei report e l’hash
+    del tuo Issuer ID; l’indicatore del tipo di record in chiaro e la versione del formato; e i
+    metadati che Apple conserva con la protezione standard, come le date di modifica.
+    Se reimposti i dati crittografati di iCloud o il tuo Portachiavi iCloud, Apple non può più
+    decrittografare questi dati e vanno persi da iCloud; la copia sul tuo dispositivo viene
+    mantenuta e, riattivando la sincronizzazione con iCloud, viene caricata di nuovo.
+
+third_parties: >
+  AppMeta Pulse non contiene codice di terze parti: nessun SDK di analisi, pubblicità,
+  segnalazione degli arresti anomali o tracciamento, e non ti traccia.
+  Si connette solo a: l’API di App Store Connect di Apple, con la tua chiave, per leggere i
+  tuoi report, il catalogo, le analisi e le recensioni e per inviare le risposte alle
+  recensioni che scegli, più i link a tempo che App Store Connect fornisce per scaricare i file
+  dei report di analisi, che non contengono credenziali; il servizio iTunes Lookup di Apple,
+  che riceve gli ID App Store delle tue app per trovarne le icone, e gli indirizzi delle
+  immagini che restituisce; il servizio pubblico di tassi di cambio della Banca centrale
+  europea, che riceve solo un mese e un elenco fisso di valute; App Store (StoreKit) di Apple
+  per abbonamenti, acquisti, ripristini e richieste di valutazione; il framework Translation di
+  Apple quando traduci una recensione, che scarica le lingue da Apple e per alcune coppie di
+  lingue può usare la rete; e, quando la sincronizzazione con iCloud è attiva, iCloud (CloudKit) di
+  Apple, comprese le notifiche silenziose tramite il servizio push di Apple che avvisano l’app
+  che ci sono nuovi dati.
+  Come ogni richiesta su internet, queste raggiungono i servizi con l’indirizzo IP del tuo
+  dispositivo.
+  Non condividiamo i tuoi dati con nessuno: ogni servizio riceve solo ciò che serve alla sua
+  richiesta, come il tuo indirizzo IP, gli ID delle tue app o un elenco di valute. Apple, che
+  fornisce App Store Connect, iCloud e gli altri servizi Apple sopra citati, protegge quei dati
+  almeno quanto descritto da questa informativa.
+  Apple fornisce anche l’aggiornamento delle app in background e il backup su iCloud, e tratta i dati
+  secondo la propria informativa sulla privacy (apple.com/legal/privacy).
+  I link che tocchi, come le pagine per sviluppatori di Apple, si aprono nel tuo browser o su
+  App Store.
+  Le email di assistenza partono dalla tua app di posta verso support@lagerland.app.
+  Sul Mac, “Assistenti IA” (Impostazioni > Assistenti IA) è disattivato finché non lo attivi.
+  Finché è attivo, l’app conserva una copia in sola lettura dei report di App Store Connect che
+  ha scaricato, in una cartella sul Mac che solo l’app e il suo helper possono aprire, e le app
+  di IA che colleghi a quell’helper tramite MCP, come Claude o Cursor, possono leggerla.
+  L’helper non ha accesso alla rete e non vede mai la tua chiave API né le tue impostazioni, e
+  l’app stessa non invia nulla a quelle app di IA né ai loro fornitori. Ciò che un’app di IA
+  legge esce dal tuo Mac secondo i termini e l’informativa sulla privacy di quell’app.
+  Disattivare “Assistenti IA”, o la fine del tuo accesso completo, elimina la copia, che non viene
+  sincronizzata con iCloud né inclusa nei backup.
+  L’app per Mac aggiunge inoltre i nomi delle app che segui all’indice Spotlight del Mac, e
+  Handoff offre il nome della schermata che hai aperto (per la pagina di un’app, il suo ID App
+  Store) agli altri tuoi dispositivi con lo stesso Apple Account. Nessuno dei due include le tue
+  cifre né arriva a noi.
+
+your_choices:
+  - >
+    Disattivare la sincronizzazione con iCloud interrompe la sincronizzazione su quel dispositivo e
+    non elimina nulla, né sul dispositivo né in iCloud. Il tuo consenso è legato all’account
+    iCloud con cui avevi effettuato l’accesso quando hai attivato la sincronizzazione (l’app
+    ricorda l’identificativo interno di quell’account solo sul dispositivo); se il dispositivo
+    passa in seguito a un Apple Account diverso, la sincronizzazione si disattiva da sola finché
+    non la riattivi. Un dispositivo ripristinato o configurato da un backup di un altro
+    dispositivo chiede di nuovo prima di sincronizzare.
+    Uscire dall’account in AppMeta Pulse rimuove dal dispositivo le tue credenziali e i dati di quell’account,
+    ma non elimina mai nulla da iCloud; con la sincronizzazione attiva, le copie dei report non
+    ancora caricate restano sul dispositivo e vengono caricate la prossima volta che usi quell’account
+    lì. Uscire dall’account non disattiva la sincronizzazione con iCloud, quindi le preferenze di visualizzazione e i
+    modelli di risposta continuano a sincronizzarsi finché non la disattivi.
+  - >
+    “Elimina tutto lo storico” (Impostazioni > Gestione dei dati): se la sincronizzazione con iCloud
+    è disattivata, elimina il tuo storico e l’archivio dei report solo su questo dispositivo; ciò che
+    è già in iCloud viene scaricato di nuovo se riattivi la sincronizzazione. Con la
+    sincronizzazione attiva, scegli “Elimina solo su questo dispositivo”, che rimuove da questo
+    dispositivo lo storico già salvato in iCloud (viene scaricato di nuovo e le copie dei report
+    sul dispositivo vengono mantenute), oppure “Elimina ovunque” che, dopo che hai digitato
+    ELIMINA, rimuove da iCloud e da ogni dispositivo che lo sincronizza lo storico di vendite,
+    abbonamenti e analisi del team a cui hai effettuato l’accesso e il suo archivio dei report.
+    Gli altri team nello stesso account iCloud non sono interessati. “Elimina ovunque” mantiene
+    recensioni, traguardi, impostazioni, modelli di risposta, il catalogo delle app, i record di
+    stato dei dispositivi e la voce del team. I dispositivi su cui la sincronizzazione con iCloud era
+    attiva eliminano la propria copia la prossima volta che si connettono, anche se in quel
+    momento erano offline. Un dispositivo su cui la sincronizzazione con iCloud era disattivata in
+    quel momento, o che si unisce al team per la prima volta dopo, chiede se eliminare la propria
+    copia o rimetterla in iCloud.
+  - >
+    Per rimuovere tutto ciò che AppMeta Pulse conserva nel tuo iCloud, elimina i dati dell’app
+    dallo spazio di archiviazione iCloud in Impostazioni di iOS: tocca il tuo nome, poi iCloud,
+    poi la voce dello spazio di archiviazione (o quella per gestire lo spazio dell’account),
+    scegli questa app e tocca l’opzione che elimina i suoi dati da iCloud. I dati sul tuo dispositivo restano e l’app disattiva la sincronizzazione con iCloud.
+    Puoi revocare la tua chiave API in App Store Connect in qualsiasi momento.
+  - >
+    Vedere ed esportare i tuoi dati: tutto ciò che l’app conserva è mostrato nell’app e puoi
+    esportare un CSV delle vendite di un periodo dalla schermata Panoramica. Tutto ciò che esporti
+    o copi tu stesso, come quel CSV, un’immagine di un traguardo o la diagnostica della connessione,
+    va dove lo invii. Se hai bisogno di aiuto per ottenere una copia dei tuoi dati, scrivici.
+  - >
+    Conservazione: i dati sul tuo dispositivo e nel tuo iCloud vengono conservati finché non li
+    elimini con le opzioni sopra, perché conservare lo storico più a lungo di App Store Connect è
+    lo scopo dell’archivio. L’unica eccezione automatica è il dettaglio per Paese conservato sul
+    dispositivo, che viene ridotto dopo circa 15 mesi a meno che tu non attivi “Conserva lo storico
+    completo per Paese o regione” (Impostazioni > Gestione dei dati). iCloud conserva il dettaglio
+    per Paese, e le copie dei report nell’archivio, che includono righe per Paese, sono conservate
+    sul dispositivo e in iCloud finché non le elimini.
+    Non possiamo accedere ai dati che l’app archivia sul tuo dispositivo o nel tuo iCloud. Le email
+    di assistenza sono conservate solo per il tempo necessario ad aiutarti.
+
+your_rights: >
+  Lagerland Apps, uno sviluppatore individuale con sede in Finlandia, è responsabile dei dati
+  personali descritti qui che ci arrivano, che sono soprattutto le email di assistenza, e, dove i
+  termini per gli sviluppatori di Apple ci rendono responsabili, dei dati che l’app archivia nel
+  tuo iCloud. Usiamo le email di assistenza solo per risponderti.
+  Puoi chiederci l’accesso ai tuoi dati, la loro correzione o cancellazione, o una loro copia;
+  chiederci di limitarne o interromperne l’uso; oppure revocare il tuo consenso in qualsiasi
+  momento, scrivendo a support@lagerland.app. Rispondiamo entro un mese.
+  Puoi visualizzare, esportare ed eliminare tu stesso i dati nel tuo iCloud come descritto sopra,
+  e se ce lo chiedi ti aiutiamo.
+  Puoi anche presentare un reclamo all’autorità per la protezione dei dati del luogo in cui vivi o
+  all’Ufficio del Garante per la protezione dei dati della Finlandia (Tietosuojavaltuutetun
+  toimisto, tietosuoja.fi).
+  Apple può archiviare i dati di iCloud in data center fuori dallo Spazio economico europeo.
+
+sensitive_data: >
+  AppMeta Pulse non tratta dati di salute, dati di posizione né altre categorie particolari di
+  dati personali.
+  Le recensioni dei clienti possono contenere il nickname di chi le scrive e qualunque cosa abbia
+  scelto di scrivere; l’app te le mostra e le copia nel tuo iCloud solo quando la sincronizzazione
+  iCloud è attiva.
+  I dati di App Store sono usati solo per mostrarti informazioni utili nell’app e nei suoi widget.
+  Non vendiamo né condividiamo dati e nulla viene usato per pubblicità o profilazione.
+
+refund_requests:
+  intro: >
+    Se chiedi ad Apple il rimborso di un acquisto in AppMeta Pulse, Apple può chiederci
+    informazioni per aiutarla a decidere. Effettuando un acquisto, accetti che possiamo
+    rispondere con le seguenti informazioni su quell’acquisto:
+  items:
+    - "se l’acquisto è stato consegnato e sbloccato nell’app"
+    - "se era disponibile una versione gratuita dell’app prima del tuo acquisto"
+    - "se preferiremmo che Apple approvasse o rifiutasse il rimborso"
+  closing: >
+    Non inviamo la tua chiave API, i report, le recensioni o qualsiasi altro dato del tuo account, perché AppMeta Pulse conserva questi dati sul tuo dispositivo (e nel tuo iCloud, se usi la sincronizzazione con iCloud) e noi non li abbiamo.
+    Apple prende la decisione finale su ogni rimborso.
+
+children: >
+  AppMeta Pulse non si rivolge ai minori di 13 anni
+  e non raccogliamo consapevolmente dati personali da minori.
+
+changes: >
+  Possiamo aggiornare questa informativa sulla privacy di tanto in tanto, per esempio quando una
+  nuova versione dell’app gestisce i dati in modo diverso.
+  Ogni modifica sarà riportata in questa pagina e la data “Ultimo aggiornamento” in cima sarà
+  aggiornata.
+---
