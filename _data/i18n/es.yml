@@ -257,7 +257,7 @@ support_include_os: "La versión de {platforms}"
 support_include_expected: "Qué esperabas que pasara y qué ha pasado en realidad"
 support_before_heading: "Antes de escribir"
 support_tip_update: "Actualiza a la última versión desde el <a href=\"{app_store_url}\" rel=\"noopener\">App Store</a>; muchas correcciones llegan primero allí."
-support_tip_subscriptions: "Si te has suscrito a un plan de pago, puedes gestionarlo o cancelarlo en <strong>Ajustes&nbsp;&gt; tu nombre&nbsp;&gt; Suscripciones</strong> en el iPhone o el iPad, o en el App Store del Mac."
+support_tip_subscriptions: "Si te has suscrito a un plan de pago, puedes gestionarlo o cancelarlo en <strong>Ajustes&nbsp;&gt; tu nombre&nbsp;&gt; Suscripciones</strong> en el iPhone o el iPad, o en la app App Store del Mac."
 support_tip_refunds: "Apple gestiona los reembolsos de las compras del App Store en <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\">reportaproblem.apple.com</a>."
 support_tip_no_account: "{name} no tiene registro ni cuenta de Lagerland, así que no hay contraseña que restablecer ni cuenta que recuperar."
 # Palabras clave (en minúsculas, separadas por comas, en el idioma) que marcan una pregunta frecuente como pregunta de soporte
