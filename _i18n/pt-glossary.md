@@ -2,7 +2,7 @@
 
 Part of the language sheet `_i18n/pt.md`. Extracted 2026-11-19 from each app's string catalogs (read-only, locale `pt-PT`; every catalog also carries `pt-BR`, ignored) and its Portuguese App Store listing (apps.apple.com/pt and the iTunes lookup API, country=pt). UI strings are verbatim: use them on the site exactly, except where a note flags them as defective (Brazilian vocabulary, missing accents, English left in). Store prices are reference only: the site prints prices from the catalog.
 
-Two apps have NO European Portuguese interface: **GymLogger X** (Portugal devices get its `pt.json`, 94% identical to pt-BR) and **Mockly** (pt-BR only). Their pages never say the app is in Portuguese (Portugal) and never quote their UI as pt-PT.
+**Mockly** has no European Portuguese interface (pt-BR only): its page never says it is in Portuguese (Portugal). **GymLogger X** supports European Portuguese (owner, 2026-11-19: Portugal devices get its base `pt.json`), but that text is still largely Brazilian (2737 of 2923 strings equal pt-BR; recounted «você» 24, «salvar» 23, lower than the batch-2 counts below): quote nouns and labels only.
 
 
 

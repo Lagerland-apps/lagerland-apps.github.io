@@ -1,0 +1,184 @@
+---
+layout: default
+ref: /apps/
+permalink: /pt/apps/
+translated_from: 2026-11-08
+title: "Melhores aplicações para iPhone sem anúncios"
+quick_answer: "A Lagerland Apps tem {APP_COUNT} apps para iPhone, iPad, Apple Watch e Mac, agrupadas aqui pelo que fazem: saúde, sono e treino; planeamento e contagens decrescentes; contas e despesas partilhadas; leitura da Wikipédia; jogos de tabuleiro e puzzles de lógica; ferramentas para programadores da App Store e conversão de ficheiros. Nenhuma mostra anúncios, segue a atividade de quem a usa ou pede para criar uma conta. Todas são feitas por um único programador independente na Finlândia."
+seo:
+  title: "Melhores apps iPhone sem anúncios: todas as {APP_COUNT} da Lagerland"
+  description: "Melhores apps iPhone sem anúncios nem seguimento, por função: saúde, planeamento, contas, jogos e ferramentas para programadores. Também iPad, Watch e Mac."
+  keywords:
+    - melhores apps iphone
+    - melhores aplicações para iphone
+    - melhores aplicações apple watch
+    - aplicações para mac
+    - melhores aplicações para ipad
+    - apps iphone sem anúncios
+    - melhores apps iphone grátis
+last_updated: 2026-11-19
+---
+
+
+{%- include t.html -%}
+{%- assign live_apps = site.apps | where: "status", "live" -%}
+
+{%- comment %} Only apps that have a Portuguese page (TRANSLATION.md 6.3, writer brief). {% endcomment -%}
+{%- assign pt_apps = '' | split: '' -%}
+{%- for app in live_apps -%}
+  {%- include tx-app.html app=app -%}
+  {%- unless tx_en -%}{%- assign pt_apps = pt_apps | push: app -%}{%- endunless -%}
+{%- endfor -%}
+
+{%- comment %} Clusters, computed up front. {% endcomment -%}
+{%- assign c_health = '' | split: '' -%}
+{%- assign cats = 'health,fitness' | split: ',' -%}
+{%- for cat in cats -%}{%- assign m = pt_apps | where: "category", cat -%}{%- assign c_health = c_health | concat: m -%}{%- endfor -%}
+{%- assign c_plan = '' | split: '' -%}
+{%- assign cats = 'productivity,lifestyle' | split: ',' -%}
+{%- for cat in cats -%}{%- assign m = pt_apps | where: "category", cat -%}{%- assign c_plan = c_plan | concat: m -%}{%- endfor -%}
+{%- assign c_money = pt_apps | where: "category", "finance" -%}
+{%- assign c_dev = '' | split: '' -%}
+{%- assign cats = 'developer-tools,business,graphics' | split: ',' -%}
+{%- for cat in cats -%}{%- assign m = pt_apps | where: "category", cat -%}{%- assign c_dev = c_dev | concat: m -%}{%- endfor -%}
+{%- assign c_read = '' | split: '' -%}
+{%- assign cats = 'education,books' | split: ',' -%}
+{%- for cat in cats -%}{%- assign m = pt_apps | where: "category", cat -%}{%- assign c_read = c_read | concat: m -%}{%- endfor -%}
+{%- assign c_games = pt_apps | where: "category", "games" -%}
+{%- assign c_util = pt_apps | where: "category", "utilities" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/pt/apps/#webpage",
+  "url": "{{ site.url }}/pt/apps/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/pt/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "pt-PT",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/pt/" },
+      { "@type": "ListItem", "position": 2, "name": "Apps", "item": "{{ site.url }}/pt/apps/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Lagerland Apps: todas as aplicações",
+    "numberOfItems": {{ pt_apps.size }},
+    "itemListElement": [
+      {%- for app in pt_apps -%}
+      {%- include tx-app.html app=app -%}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "url": "{{ site.url }}{{ tx_app.url }}",
+        "name": {{ app.name | jsonify }},
+        "description": {% capture list_desc %}{% include app-text.html app=app text=tx_app.seo.description %}{% endcapture %}{{ list_desc | default: tx_app.tagline | jsonify }}
+      }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">{% if pt_apps.size > 0 %}{{ pt_apps.size }} {% if pt_apps.size == 1 %}app{% else %}apps{% endif %} · um só programador · {% endif %}sem anúncios</p>
+    <h1 class="h1">Aplicações sem anúncios para <span class="gradient-text">iPhone, iPad, Watch e Mac.</span></h1>
+    <p class="lead">Todas as apps da Lagerland, agrupadas pelo que fazem. Nenhuma mostra anúncios, segue a atividade de quem a usa ou pede para criar uma conta. Na Finlândia, um único programador independente de apps para a Apple cria-as, define-lhes o preço e dá apoio a todas. Cada cartão indica se a app é grátis, grátis com Pro ou de compra única.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#health">Ver as apps</a>
+      <a class="btn btn-secondary" href="{% include l.html url="/#faq" %}"{% if l_en %} hreflang="en"{% endif %}>Como funciona{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg">
+
+  {%- if c_health.size > 0 -%}
+    <div id="health" class="section reveal">
+      <h2 class="h2">Apps de saúde, sono e recuperação</h2>
+      <p class="lead">Recuperação medida turno a turno para quem trabalha de noite, uma pontuação diária de prontidão a partir dos dados da app Saúde, dois registos de treino de força e o boletim de saúde do animal de estimação. Os dados de saúde ficam no dispositivo ou no iCloud de cada pessoa.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_health -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_plan.size > 0 -%}
+    <div id="plan" class="section reveal">
+      <h2 class="h2">Planeadores, contagens decrescentes e tempo de ecrã</h2>
+      <p class="lead">Um planeador diário em que as tarefas por concluir avançam sozinhas, contagens decrescentes até às datas que importam e um bloqueador de apps que mantém bloqueadas as que distraem até haver movimento suficiente nesse dia.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_plan -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_money.size > 0 -%}
+    <div id="money" class="section reveal">
+      <h2 class="h2">Dinheiro, contas e subscrições</h2>
+      <p class="lead">Lembretes de contas a pagar e de renovações de contratos que nunca se ligam ao banco e dispensam conta.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_money -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_dev.size > 0 -%}
+    <div id="developer" class="section reveal">
+      <h2 class="h2">Ferramentas para programadores de plataformas Apple</h2>
+      <p class="lead">Editar e comparar a ficha da App Store num Mac, acompanhar receitas, MRR e críticas no iPhone e criar capturas de ecrã da App Store em 3D. São feitas por um programador que também publica na App Store.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_dev -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_read.size > 0 -%}
+    <div id="reading" class="section reveal">
+      <h2 class="h2">Apps de leitura e descoberta</h2>
+      <p class="lead">Artigos aleatórios da Wikipédia, um cartão de cada vez, em 32 idiomas. Os artigos guardados podem ser lidos sem ligação.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_read -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_games.size > 0 -%}
+    <div id="games" class="section reveal">
+      <h2 class="h2">Jogos de tabuleiro e puzzles de lógica sem anúncios</h2>
+      <p class="lead">Xadrez, shogi e xiangqi com motores no dispositivo que reveem as partidas e mostram em que jogada o rumo mudou, mais dois puzzles de lógica que funcionam sem ligação. Nenhum mostra anúncios.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_games -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if c_util.size > 0 -%}
+    <div id="utilities" class="section reveal">
+      <h2 class="h2">Converter ficheiros e dividir a conta</h2>
+      <p class="lead">Comprimir e converter vídeo, áudio, imagens, PDF e ficheiros comprimidos no iPhone e no Mac, e dividir a conta do restaurante a partir do talão no iPhone. As duas funcionam no dispositivo, por isso os ficheiros nunca são enviados para um conversor na web e os talões não saem do telemóvel.</p>
+      <div class="grid grid-2 stagger">
+        {%- for app in c_util -%}{% include app-card.html app=app %}{%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Sem saber por onde começar?</p>
+  <h2 class="h2">Comparar com a app que já se usa</h2>
+  <p class="lead">Cada comparação coloca uma app da Lagerland ao lado de outra conhecida, função a função, e diz sem rodeios quando a outra app é a melhor escolha.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/alternatives/" %}"{% if l_en %} hreflang="en"{% endif %}>Ver as comparações{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/lagerland-apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Sobre o programador{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

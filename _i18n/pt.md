@@ -64,6 +64,9 @@ House rules (TRANSLATION.md 8.3), with the characters to type:
   app, its user guides «aplicação»). «aplicação» in titles and H1s where the search phrase uses it.
 - Gender: «a App Store» (feminine, Apple Portugal 38 to 0), «a Mac App Store», «o Apple Watch», «o iPhone», «o iPad»,
   «o Mac», «a Apple», «o iCloud».
+- App names take the masculine article, as Apple Portugal writes its own apps («o Safari», «o Pages»): «o Observa»,
+  «o AllPaid», «o Pawza», «o Soon.», «do Chessful», «no MediaKit». The common noun stays feminine: «a app», «esta app».
+  Decision 2026-11-19, the same on every Portuguese page.
 - Anglicisms: Portuguese word where Apple Portugal or common use has one (subscrição, Definições, cópia de segurança,
   captura de ecrã, descarregar). English where Portuguese searchers and Apple keep it: App Store, App Store Connect,
   widget, Dynamic Island, Apple Watch, iCloud, Siri, ASO, privacy manifest, puzzle.
@@ -97,9 +100,11 @@ own names, each with its Apple source URL). Rule: a feature name is written exac
 it, unless the glossary flags it as Brazilian or defective; an Apple product or feature name exactly as Apple Portugal
 writes it.
 
-**Language claims.** Never say an app is in Portuguese (Portugal) for **GymLogger X** (Portugal devices get its `pt`
-strings, 94 % identical to Brazilian Portuguese) or **Mockly** (pt-BR only, its Portuguese store listing is Brazilian
-too). The other 19 (18 live plus Clippet) have a pt-PT catalog (99 to 100 % of keys); AllPaid, AppMeta, Pulse,
+**Language claims.** Never say **Mockly** is in Portuguese (Portugal): it is pt-BR only, and its Portuguese store listing
+is Brazilian too. **GymLogger X** supports European Portuguese (owner decision 2026-11-19: pt-PT devices get its base
+`pt` strings), so its page may say it is in Portuguese; its text is still largely Brazilian (2737 of 2923 strings equal
+pt-BR, I-0341), so never quote its UI sentences. The other 19 (18 live plus Clippet) have a pt-PT catalog (99 to 100 % of
+keys); AllPaid, AppMeta, Pulse,
 Chessful, Observa, Shogiful and Xiangqiful carry a large share of Brazilian text inside pt-PT (46 to 90 % of values
 identical to pt-BR), so never quote their UI sentences, and check every UI noun from them against the flags. Gaps to
 keep off the pages: AllPaid's Siri phrases and AfterShift's calendar prompt are English only; Pawza's camera and photo
@@ -200,6 +205,11 @@ same" idiom); «alternativa face a» (write «alternativa a»); one object share
 («lê e responde a todas»); «constam da» (stiff: «estão indicados na»); «site em linha» («site publicado»); «Isto é
 uma tradução» («Esta é»); «datadas» for "dated" (reads "outdated"); double «para» («para aqui para»); «Também pode
 gostar» without «de» and an object.
+From the batch 1 review (home, hub): «de que mais gente se muda» (calque of "switching from": «que mais gente está a
+trocar»); pre-AO90 «revêem», «lêem», «vêem» (AO90: reveem, leem, veem); «Acesso às Chaves» (Brazilian macOS: pt-PT
+«porta-chaves»); «obriga a» for "asks you to" (strengthens the claim); «dar o suporte» («dar apoio»); «segue a
+atividade» with no owner (Apple Portugal: «seguir a sua atividade»); «ficha» for a card («cartão»; «ficha» is the App
+Store listing).
 
 Translationese: title case headings; gerund chains copied from English -ing («oferecendo», «permitindo»); passive
 «é … por» where Portuguese uses «se»; possessives on body parts and devices copied from English; «utilizador»
