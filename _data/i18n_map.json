@@ -217,7 +217,8 @@
     "de": "/de/apps/aftershift/support/",
     "en": "/apps/aftershift/support/",
     "es": "/es/apps/aftershift/support/",
-    "fr": "/fr/apps/aftershift/support/"
+    "fr": "/fr/apps/aftershift/support/",
+    "it": "/it/apps/aftershift/support/"
   },
   "/apps/allpaid/": {
     "de": "/de/apps/allpaid/",
@@ -236,7 +237,8 @@
     "de": "/de/apps/allpaid/support/",
     "en": "/apps/allpaid/support/",
     "es": "/es/apps/allpaid/support/",
-    "fr": "/fr/apps/allpaid/support/"
+    "fr": "/fr/apps/allpaid/support/",
+    "it": "/it/apps/allpaid/support/"
   },
   "/apps/appmeta-pulse/": {
     "de": "/de/apps/appmeta-pulse/",
@@ -255,7 +257,8 @@
     "de": "/de/apps/appmeta-pulse/support/",
     "en": "/apps/appmeta-pulse/support/",
     "es": "/es/apps/appmeta-pulse/support/",
-    "fr": "/fr/apps/appmeta-pulse/support/"
+    "fr": "/fr/apps/appmeta-pulse/support/",
+    "it": "/it/apps/appmeta-pulse/support/"
   },
   "/apps/appmeta/": {
     "de": "/de/apps/appmeta/",
@@ -274,7 +277,8 @@
     "de": "/de/apps/appmeta/support/",
     "en": "/apps/appmeta/support/",
     "es": "/es/apps/appmeta/support/",
-    "fr": "/fr/apps/appmeta/support/"
+    "fr": "/fr/apps/appmeta/support/",
+    "it": "/it/apps/appmeta/support/"
   },
   "/apps/chessful/": {
     "de": "/de/apps/chessful/",
@@ -293,7 +297,8 @@
     "de": "/de/apps/chessful/support/",
     "en": "/apps/chessful/support/",
     "es": "/es/apps/chessful/support/",
-    "fr": "/fr/apps/chessful/support/"
+    "fr": "/fr/apps/chessful/support/",
+    "it": "/it/apps/chessful/support/"
   },
   "/apps/clippet/": {
     "de": "/de/apps/clippet/",
@@ -312,7 +317,8 @@
     "de": "/de/apps/clippet/support/",
     "en": "/apps/clippet/support/",
     "es": "/es/apps/clippet/support/",
-    "fr": "/fr/apps/clippet/support/"
+    "fr": "/fr/apps/clippet/support/",
+    "it": "/it/apps/clippet/support/"
   },
   "/apps/clippet/terms/": {
     "de": "/de/apps/clippet/terms/",
@@ -337,7 +343,8 @@
     "de": "/de/apps/earnlock/support/",
     "en": "/apps/earnlock/support/",
     "es": "/es/apps/earnlock/support/",
-    "fr": "/fr/apps/earnlock/support/"
+    "fr": "/fr/apps/earnlock/support/",
+    "it": "/it/apps/earnlock/support/"
   },
   "/apps/gymlogger-x/": {
     "de": "/de/apps/gymlogger-x/",
@@ -356,7 +363,8 @@
     "de": "/de/apps/gymlogger-x/support/",
     "en": "/apps/gymlogger-x/support/",
     "es": "/es/apps/gymlogger-x/support/",
-    "fr": "/fr/apps/gymlogger-x/support/"
+    "fr": "/fr/apps/gymlogger-x/support/",
+    "it": "/it/apps/gymlogger-x/support/"
   },
   "/apps/liftlog/": {
     "de": "/de/apps/liftlog/",
@@ -375,7 +383,8 @@
     "de": "/de/apps/liftlog/support/",
     "en": "/apps/liftlog/support/",
     "es": "/es/apps/liftlog/support/",
-    "fr": "/fr/apps/liftlog/support/"
+    "fr": "/fr/apps/liftlog/support/",
+    "it": "/it/apps/liftlog/support/"
   },
   "/apps/mediakit/": {
     "de": "/de/apps/mediakit/",
@@ -394,7 +403,8 @@
     "de": "/de/apps/mediakit/support/",
     "en": "/apps/mediakit/support/",
     "es": "/es/apps/mediakit/support/",
-    "fr": "/fr/apps/mediakit/support/"
+    "fr": "/fr/apps/mediakit/support/",
+    "it": "/it/apps/mediakit/support/"
   },
   "/apps/millrace/": {
     "de": "/de/apps/millrace/",
@@ -413,7 +423,8 @@
     "de": "/de/apps/millrace/support/",
     "en": "/apps/millrace/support/",
     "es": "/es/apps/millrace/support/",
-    "fr": "/fr/apps/millrace/support/"
+    "fr": "/fr/apps/millrace/support/",
+    "it": "/it/apps/millrace/support/"
   },
   "/apps/mockly/": {
     "de": "/de/apps/mockly/",
@@ -432,7 +443,8 @@
     "de": "/de/apps/mockly/support/",
     "en": "/apps/mockly/support/",
     "es": "/es/apps/mockly/support/",
-    "fr": "/fr/apps/mockly/support/"
+    "fr": "/fr/apps/mockly/support/",
+    "it": "/it/apps/mockly/support/"
   },
   "/apps/observa/": {
     "de": "/de/apps/observa/",
@@ -451,7 +463,8 @@
     "de": "/de/apps/observa/support/",
     "en": "/apps/observa/support/",
     "es": "/es/apps/observa/support/",
-    "fr": "/fr/apps/observa/support/"
+    "fr": "/fr/apps/observa/support/",
+    "it": "/it/apps/observa/support/"
   },
   "/apps/pawza/": {
     "de": "/de/apps/pawza/",
@@ -470,7 +483,8 @@
     "de": "/de/apps/pawza/support/",
     "en": "/apps/pawza/support/",
     "es": "/es/apps/pawza/support/",
-    "fr": "/fr/apps/pawza/support/"
+    "fr": "/fr/apps/pawza/support/",
+    "it": "/it/apps/pawza/support/"
   },
   "/apps/rightsplit/": {
     "de": "/de/apps/rightsplit/",
@@ -489,7 +503,8 @@
     "de": "/de/apps/rightsplit/support/",
     "en": "/apps/rightsplit/support/",
     "es": "/es/apps/rightsplit/support/",
-    "fr": "/fr/apps/rightsplit/support/"
+    "fr": "/fr/apps/rightsplit/support/",
+    "it": "/it/apps/rightsplit/support/"
   },
   "/apps/shogiful/": {
     "de": "/de/apps/shogiful/",
@@ -508,7 +523,8 @@
     "de": "/de/apps/shogiful/support/",
     "en": "/apps/shogiful/support/",
     "es": "/es/apps/shogiful/support/",
-    "fr": "/fr/apps/shogiful/support/"
+    "fr": "/fr/apps/shogiful/support/",
+    "it": "/it/apps/shogiful/support/"
   },
   "/apps/soon/": {
     "de": "/de/apps/soon/",
@@ -527,7 +543,8 @@
     "de": "/de/apps/soon/support/",
     "en": "/apps/soon/support/",
     "es": "/es/apps/soon/support/",
-    "fr": "/fr/apps/soon/support/"
+    "fr": "/fr/apps/soon/support/",
+    "it": "/it/apps/soon/support/"
   },
   "/apps/tare/": {
     "de": "/de/apps/tare/",
@@ -546,7 +563,8 @@
     "de": "/de/apps/tare/support/",
     "en": "/apps/tare/support/",
     "es": "/es/apps/tare/support/",
-    "fr": "/fr/apps/tare/support/"
+    "fr": "/fr/apps/tare/support/",
+    "it": "/it/apps/tare/support/"
   },
   "/apps/taskful-day/": {
     "de": "/de/apps/taskful-day/",
@@ -565,7 +583,8 @@
     "de": "/de/apps/taskful-day/support/",
     "en": "/apps/taskful-day/support/",
     "es": "/es/apps/taskful-day/support/",
-    "fr": "/fr/apps/taskful-day/support/"
+    "fr": "/fr/apps/taskful-day/support/",
+    "it": "/it/apps/taskful-day/support/"
   },
   "/apps/wanderwiki/": {
     "de": "/de/apps/wanderwiki/",
@@ -584,7 +603,8 @@
     "de": "/de/apps/wanderwiki/support/",
     "en": "/apps/wanderwiki/support/",
     "es": "/es/apps/wanderwiki/support/",
-    "fr": "/fr/apps/wanderwiki/support/"
+    "fr": "/fr/apps/wanderwiki/support/",
+    "it": "/it/apps/wanderwiki/support/"
   },
   "/apps/xiangqiful/": {
     "de": "/de/apps/xiangqiful/",
@@ -603,7 +623,8 @@
     "de": "/de/apps/xiangqiful/support/",
     "en": "/apps/xiangqiful/support/",
     "es": "/es/apps/xiangqiful/support/",
-    "fr": "/fr/apps/xiangqiful/support/"
+    "fr": "/fr/apps/xiangqiful/support/",
+    "it": "/it/apps/xiangqiful/support/"
   },
   "/for/": {
     "de": "/de/for/",
