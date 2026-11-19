@@ -1,0 +1,160 @@
+---
+layout: default
+ref: /guides/bill-tracker-without-bank-connection/
+permalink: /pt/guides/bill-tracker-without-bank-connection/
+translated_from: 2026-11-07
+title: "App para gerir subscrições sem ligação ao banco"
+quick_answer: "Para gerir subscrições e contas a pagar sem ligar o banco, o AllPaid ({PLATFORMS@allpaid}), uma app da Lagerland Apps (que publica este guia), trabalha só com o que se introduz nela. Cada conta é adicionada uma vez; o AllPaid sugere a categoria e a frequência para nomes conhecidos, avisa antes de cada vencimento, e marcar uma conta como paga é um toque. Na App Store de Portugal, o Wallet (da BudgetBakers) e o Spendee dizem nas suas fichas que se ligam ao banco. O AllPaid é grátis até 3 contas, com Pro opcional desde {P_MONTHLY@allpaid}/mês."
+seo:
+  title: "App para gerir subscrições sem ligação ao banco"
+  description: "App para gerir subscrições e contas a pagar sem dar acesso ao banco. O Wallet e o Spendee ligam-se ao banco; o AllPaid preenche-se à mão."
+  keywords:
+    - app para gerir subscrições
+    - lembrete de contas
+    - app para lembrar de pagar contas
+    - lembrete de contas a pagar
+    - lembrete pagamento de contas
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign app = site.apps | where: "slug", "allpaid" | first -%}
+{%- include app-facts.html app=app -%}
+{%- assign ap_devices = f_platforms_and | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Apple Watch" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/pt/guides/bill-tracker-without-bank-connection/#webpage",
+  "url": "{{ site.url }}/pt/guides/bill-tracker-without-bank-connection/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/pt/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "pt-PT",
+  "datePublished": "2026-11-19",
+  "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/pt/" },
+      { "@type": "ListItem", "position": 2, "name": "Guias", "item": "{{ site.url }}/pt/guides/" },
+      { "@type": "ListItem", "position": 3, "name": "App para gerir subscrições sem ligação ao banco", "item": "{{ site.url }}/pt/guides/bill-tracker-without-bank-connection/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "pt-PT",
+  "mainEntity": [
+    { "@type": "Question", "name": "Há alguma app para gerir subscrições e contas a pagar sem ligar o banco?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. O AllPaid (nosso) dá prioridade à privacidade e funciona só com introdução manual, sem ligação ao banco nem agregação de contas bancárias. Cada pessoa adiciona as suas contas a pagar e marca-as como pagas. Ficam nos próprios dispositivos, a não ser que se ative a sincronização com o iCloud (Pro), que usa o iCloud privado de cada pessoa." } },
+    { "@type": "Question", "name": "Porque é que o Wallet e o Spendee se ligam ao banco?", "acceptedAnswer": { "@type": "Answer", "text": "Pelo que dizem as fichas na App Store de Portugal, é para trazerem as transações automaticamente. A ficha do Wallet diz que a ligação poupa tempo, porque as transações do banco são carregadas sozinhas e divididas em categorias. A do Spendee convida a ligar o banco online, uma carteira eletrónica ou uma criptocarteira para ver o património num só lugar. Quem prefere não dar esse acesso pode introduzir os dados à mão, e o AllPaid foi pensado para isso." } },
+    { "@type": "Question", "name": "Controlar as contas à mão funciona a longo prazo?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, depois da configuração inicial. A maioria das contas recorrentes muda pouco de um mês para o outro. Ao escrever um nome conhecido, como Netflix ou Spotify, o AllPaid sugere a categoria e a frequência, e marcar uma conta como paga é um toque na app ou no lembrete." } },
+    { "@type": "Question", "name": "O AllPaid tem widgets e funciona com a Siri?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. O AllPaid tem dez widgets, todos grátis, entre eles Próxima conta, Próximas contas e Calendário mensal para o ecrã principal, e uma versão de Próxima conta para o ecrã bloqueado. Ao perguntar à Siri «What bills are due in AllPaid», ela lê as contas que vencem nos próximos sete dias." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Guia · Do problema à solução</p>
+    <h1 class="h1">
+      «Quero gerir as subscrições e as contas a pagar<br><span class="gradient-text">sem ligar a conta do banco»</span>
+    </h1>
+    <p class="lead">
+      O Wallet (da BudgetBakers) e o Spendee, duas apps de finanças pessoais vendidas na App Store de Portugal, dizem nas suas fichas que se ligam ao banco. Quem não quer dar esse acesso a uma app de terceiros pode controlar à mão as contas a pagar e as subscrições.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#answer">Ir para a resposta</a>
+      <a class="btn btn-secondary" href="#faq">Perguntas frequentes</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">O que dizem o Wallet e o Spendee sobre a ligação ao banco?</h2>
+  <p class="lead">São apps de finanças pessoais com mais funções do que um lembrete de contas a pagar. Tudo o que se segue sai das fichas das duas na App Store de Portugal; não testámos as apps.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Wallet (BudgetBakers): liga-se ao banco</div><div class="card-text">A ficha do Wallet diz que as transações do banco são sincronizadas automaticamente, divididas em categorias e refletidas nos relatórios e nos orçamentos. Fala de uma ligação a mais de 4000 bancos em todo o mundo.</div></div>
+    <div class="card"><div class="card-title">Wallet: orçamentos, relatórios e partilha</div><div class="card-text">A ficha apresenta ainda orçamentos flexíveis, gráficos e relatórios, a partilha de contas da app com família, amigos ou colegas e o acompanhamento de uma carteira de ações.</div></div>
+    <div class="card"><div class="card-title">Spendee: liga-se ao banco e a carteiras</div><div class="card-text">A ficha do Spendee convida a ligar a app ao banco online, a uma carteira eletrónica como o PayPal ou a uma criptocarteira como a Coinbase, para ver o património num só lugar. Descreve os dados como categorizados automaticamente.</div></div>
+    <div class="card"><div class="card-title">Spendee: orçamentos e finanças partilhadas</div><div class="card-text">Entre as outras funções da ficha estão orçamentos, carteiras para organizar o dinheiro, um leitor de recibos com IA, finanças partilhadas com companheiros ou colegas de casa e várias moedas.</div></div>
+  </div>
+  <p class="lead" style="margin-top:var(--s-4);">A diferença para o AllPaid está na ligação ao banco: o Wallet e o Spendee dizem nas fichas que se ligam a ele, e o AllPaid não se liga a banco nenhum. As duas fichas falam sobretudo de orçamentos, categorias e relatórios das finanças como um todo.</p>
+  <p class="lead">O Moneyboard, que na App Store de Portugal aparece como «Finanças Pessoais - Moneyboard», segue outro caminho. A sua ficha descreve a introdução de despesas e receitas, lançamentos recorrentes, lembretes para pagar as faturas em aberto e a importação de extratos bancários em CSV, e não menciona uma ligação ao banco.</p>
+  <p class="small" style="margin-top:var(--s-3);">Na App Store de Portugal, o Wallet tem 4,5 em 5, com 944 classificações; o Spendee, 4,7 em 5, com 1314; e o Moneyboard, 4,7 em 5, com 4026 (consultado a 19 de novembro de 2026). O que este guia conta destas apps sai das fichas do <a href="https://apps.apple.com/pt/app/id1032467659" rel="noopener" target="_blank">Wallet</a>, do <a href="https://apps.apple.com/pt/app/id635861140" rel="noopener" target="_blank">Spendee</a> e do <a href="https://apps.apple.com/pt/app/id625887028" rel="noopener" target="_blank">Moneyboard</a> na App Store de Portugal, consultadas no mesmo dia.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Porque é que dar acesso ao banco pode ser um problema?</h2>
+  <p class="lead">As apps que se ligam ao banco precisam de ver as transações da conta para funcionar, e pedem para isso um acesso só de leitura através de um serviço de agregação de contas bancárias. Para quem dá valor à privacidade, essa troca tem custos reais:</p>
+  <div class="grid grid-3 stagger">
+    <div class="card"><div class="card-title">O acesso abrange todas as transações</div><div class="card-text">Mesmo com uma autorização do tipo OAuth, o serviço de agregação fica com um token de acesso a todas as transações da conta bancária, e não só às contas a pagar.</div></div>
+    <div class="card"><div class="card-title">Os dados ficam no servidor de um terceiro</div><div class="card-text">O serviço de agregação guarda uma cópia do histórico das transações. Qualquer falha de segurança nesse serviço ou na própria app deixa-o exposto.</div></div>
+    <div class="card"><div class="card-title">O banco pode não ser compatível</div><div class="card-text">Alguns bancos não funcionam com nenhum serviço de agregação. A ficha do Wallet fala de mais de 4000 bancos em todo o mundo, sem dizer quais. Se o banco de cada pessoa não for compatível, as apps automáticas não servem.</div></div>
+  </div>
+</section>
+
+<section id="answer" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">A resposta</p>
+    <h2 class="h2">AllPaid: contas e subscrições à mão, em privado</h2>
+    <p class="lead">O AllPaid é uma app nossa: a Lagerland Apps publica-a e também este guia. Serve para controlar as contas a pagar em {{ ap_devices }}. As contas e as subscrições são adicionadas à mão, e o AllPaid sugere a categoria e a frequência para nomes conhecidos. O resumo mensal mostra as contas do mês com os totais, e um toque marca uma conta como paga. Não se liga ao banco nem pede que se crie uma conta, e as contas a pagar ficam nos próprios dispositivos, a não ser que se ative a sincronização com o iCloud (Pro), que usa o iCloud privado de cada pessoa. Todos os detalhes estão na <a href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>página do AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+  </div>
+  {% if app %}
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+  {% endif %}
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Dá muito trabalho introduzir tudo à mão?</h2>
+  <p class="lead">Só ao início: a maioria das casas consegue introduzir todas as contas recorrentes de uma só vez. Depois:</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">As sugestões preenchem os detalhes</div><div class="card-text">Ao escrever «Netflix», o AllPaid sugere a categoria e a frequência. O valor é opcional, por isso uma conta pode ser só um nome e uma data de vencimento.</div></div>
+    <div class="card"><div class="card-title">Marcar como paga é um toque</div><div class="card-text">Faz-se na app ou diretamente a partir do lembrete, e é possível desfazer se o toque foi cedo demais.</div></div>
+    <div class="card"><div class="card-title">A maioria das contas não muda</div><div class="card-text">A renda, os serviços e as subscrições são iguais todos os meses. Depois de introduzidas, repetem-se sozinhas, por isso só é preciso acrescentar as novas.</div></div>
+    <div class="card"><div class="card-title">O mês e os widgets mantêm tudo à vista</div><div class="card-text">O resumo mensal mostra as contas do mês com os totais a vencer, pago e em falta, e os widgets Calendário mensal e Próximas contas põem os vencimentos no ecrã principal, por isso raramente é preciso abrir a app.</div></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">O que se perde ao controlar as contas à mão?</h2>
+  <div class="card">
+    <p>Com a introdução manual, perde-se:</p>
+    <ul class="bullets">
+      <li>A deteção automática de subscrições (nada procura as subscrições esquecidas)</li>
+      <li>A previsão do fluxo de caixa entre contas bancárias</li>
+      <li>A sensação de que «a app sabe tudo sobre o meu dinheiro»</li>
+    </ul>
+    <p style="margin-top:var(--s-3);">Se estas funções fazem falta, o AllPaid não é a escolha certa; uma app ligada ao banco é, com o que isso implica para a privacidade. O AllPaid é para quem prefere gastar uma sessão na configuração e guardar para si os dados de acesso ao banco.</p>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Perguntas</p><h2 class="h2">Perguntas frequentes</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Há alguma app para gerir subscrições e contas a pagar sem ligar o banco?</summary><div class="faq-a">Sim. O AllPaid (nosso) dá prioridade à privacidade e funciona só com introdução manual, sem ligação ao banco nem agregação de contas bancárias. Cada pessoa adiciona as suas contas a pagar e marca-as como pagas. Ficam nos próprios dispositivos, a não ser que se ative a sincronização com o iCloud (Pro), que usa o iCloud privado de cada pessoa.</div></details>
+    <details class="faq-item"><summary>Porque é que o Wallet e o Spendee se ligam ao banco?</summary><div class="faq-a">Pelo que dizem as fichas na App Store de Portugal, é para trazerem as transações automaticamente. A ficha do Wallet diz que a ligação poupa tempo, porque as transações do banco são carregadas sozinhas e divididas em categorias. A do Spendee convida a ligar o banco online, uma carteira eletrónica ou uma criptocarteira para ver o património num só lugar. Quem prefere não dar esse acesso pode introduzir os dados à mão, e o AllPaid foi pensado para isso.</div></details>
+    <details class="faq-item"><summary>Controlar as contas à mão funciona a longo prazo?</summary><div class="faq-a">Sim, depois da configuração inicial. A maioria das contas recorrentes muda pouco de um mês para o outro. Ao escrever um nome conhecido, como Netflix ou Spotify, o AllPaid sugere a categoria e a frequência, e marcar uma conta como paga é um toque na app ou no lembrete.</div></details>
+    <details class="faq-item"><summary>O AllPaid tem widgets e funciona com a Siri?</summary><div class="faq-a">Sim. O AllPaid tem dez widgets, todos grátis, entre eles Próxima conta, Próximas contas e Calendário mensal para o ecrã principal, e uma versão de Próxima conta para o ecrã bloqueado. Ao perguntar à Siri «What bills are due in AllPaid», ela lê as contas que vencem nos próximos sete dias.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Experimente</p>
+  <h2 class="h2">Experimente o AllPaid</h2>
+  <p class="lead">Uma app privada para controlar à mão as contas a pagar e as subscrições, sem criar conta. É grátis até 3 contas, com Pro opcional para contas ilimitadas, análise de gastos e sincronização com o iCloud.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>Conhecer o AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/guides/" %}"{% if l_en %} hreflang="en"{% endif %}>Todos os guias{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Ver todas as apps{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

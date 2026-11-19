@@ -6224,7 +6224,7 @@
      "q": "O que é o AllPaid?"
     },
     {
-     "a": "Em parte. O AllPaid nunca lê o banco, por isso não encontra contas por si própria: cada uma é adicionada à mão. Ao escrever um nome conhecido, como a Netflix, sugere a categoria e a frequência da conta, e basta tocar em «Aplicar» para as usar. Os fornecedores mais conhecidos mostram também o logótipo verdadeiro. O valor é opcional, por isso é possível adicionar uma conta mesmo quando muda de mês para mês.",
+     "a": "Em parte. O AllPaid nunca lê o banco, por isso não encontra contas por si própria: cada uma é adicionada à mão. Ao escrever um nome conhecido, como a Netflix, sugere a categoria e a frequência da conta, e basta tocar em «Aplicar» para as usar. Os fornecedores mais conhecidos mostram também o logótipo verdadeiro. O valor é opcional, por isso é possível adicionar uma conta mesmo quando muda de mês para mês. O <a href=\"/pt/guides/bill-tracker-without-bank-connection/\">guia para gerir subscrições sem ligação ao banco</a> compara a introdução à mão com as apps que se ligam ao banco.",
      "q": "O AllPaid preenche as contas automaticamente?"
     },
     {

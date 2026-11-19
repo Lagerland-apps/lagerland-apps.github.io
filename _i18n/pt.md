@@ -11,7 +11,7 @@ reviewing any Portuguese page. Every decision a translator would otherwise make 
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console for Portugal not read (Claude in Chrome not connected, built-in browser not signed in, no export on disk) |
 | Tier 1 pages | written and reviewed 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/pt.yml`). AI files and OG cards in batch 6 (/pt/llms.txt, /pt/llms-full.txt, 21 OG cards) |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
-| Tier 2 | batch 1 written and reviewed 2026-11-19, no native review yet: both hubs, chess, logic, workout and xiangqi guides, 3 /for/ pages, local-only /pt/guides/limitar-tempo-de-ecra-iphone/. Queue: shogi, bill tracker (needs a local angle: no Portuguese bank-linked default), local countdown guide. for/indie-ios-developers stays English-only. Research: ~/Downloads/githubcode/pt-tier2-research-2026-11-19.md; briefs `_i18n/pt-tier2-brief.md`, `_i18n/pt-tier2-review-brief.md` |
+| Tier 2 | batch 1 written and reviewed 2026-11-19, no native review yet: both hubs, chess, logic, workout and xiangqi guides, 3 /for/ pages, local-only /pt/guides/limitar-tempo-de-ecra-iphone/. Batch 2 (same day): shogi guide, bill tracker rewritten around Wallet (BudgetBakers) and Spendee (the two apps sold in Portugal whose own listing says they connect to the bank; Portugal has no single default like Fintonic), local-only /pt/guides/como-fazer-contagem-decrescente-iphone/. Tier 2 complete; for/indie-ios-developers stays English-only. Research: ~/Downloads/githubcode/pt-tier2-research-2026-11-19.md; briefs `_i18n/pt-tier2-brief.md`, `_i18n/pt-tier2-review-brief.md` |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 72 s before Portuguese (main at the setup, 2026-11-19, other sessions' agents running); 85 s with Portuguese Tier 1 (762 audited pages) |
 
@@ -200,6 +200,9 @@ Search Console for Portugal: not read in this session. Revisit 4 to 6 weeks afte
 | /pt/for/shift-workers/ | `trabalho por turnos saúde` | AfterShift keeps its sleep queries |
 | /pt/for/apple-health-power-users/ | `apps para apple watch` + `melhor app saúde iphone` | Observa keeps `hrv apple watch`, `app sono apple watch` |
 | /pt/for/calm-productivity/ | `apps de produtividade iphone` | Taskful Day keeps its to-do queries |
+| /pt/guides/best-shogi-apps-iphone/ | `shogi online` | Shogiful keeps `shogi`, `xadrez japonês`, `como jogar shogi` |
+| /pt/guides/bill-tracker-without-bank-connection/ | `app para gerir subscrições` | AllPaid keeps `app lembrete de pagamento`, `app lembrete de contas a pagar` |
+| /pt/guides/como-fazer-contagem-decrescente-iphone/ (local-only) | `como fazer contagem decrescente no iphone` | Soon. keeps `contagem decrescente iphone`, `contagem decrescente widget`, `app contador de dias` |
 
 Google Portugal suggest returns Brazilian forms (iniciantes, academia, «os apps», celular, tela): never use them as keywords.
 
@@ -277,6 +280,16 @@ state; quoting one's own translation of an English-only listing as if it were th
 Choice («escolhido pelos editores»); «o editor deste guia» next to «a Lagerland Apps» («que publica este guia»); «cópias na
 nuvem» for cloud saves; «inundar» for colour-flood; «ambos jogam-se» («ambos se jogam»); added «com frequência»; dropped
 "instead" and "we built"; competitor names replaced by their Portuguese store titles (store title once at most).
+From the Tier 2 batch 2 reviews: «convém» as the default piece of advice (five on one page: «vale a pena», «o melhor é»,
+or say it plainly); «ao alcance de ganhar»; «travado» (gendered); «metem logo» with no object; «espera que se aprenda a jogar»
+for "learn by playing"; «feitos em torno de» for "built around"; «uma só vez» for lifetime («vitalício»); «artigo do diário»
+(«blog»); «repete partidas» for replays («revê»); «contas» meaning bills, bank accounts and in-app accounts on one page
+(«contas a pagar», «contas bancárias», «sem criar conta»); bare «o Wallet» next to Apple's Wallet («o Wallet (da
+BudgetBakers)»); puns («à mão»); a listing's «adicionar» turned into «registo manual»; a meta clause tacked onto a
+disclosure; «widgets circular» (agreement); «Central de Notificações» capitalised (Apple Portugal: lowercase in prose);
+one-word UI labels in «»; «junto com» («a par de»); our own app's facts credited to «a ficha».
+apps.apple.com sometimes returns an empty 1 KB app shell: check the saved file's size (an `Accept-Language: pt-PT` header
+returned the full page).
 Apple Portugal's own Screen Time guide switches the schedule on with «Programação» and off with «Horário», and writes
 «Limites de tempo» on one page, «Limites de tempo permitido» on another: quote each step as written.
 
@@ -309,6 +322,7 @@ register); «você» or tu forms slipping in; clitic placement copied from Brazi
 | about, support hub, transparency | 3 writers | 1 reviewer | about: 3 meaning shifts fixed | no native review yet |
 | /pt/llms.txt, /pt/llms-full.txt | 1 writer | 1 reviewer (every reason checked against the app's Portuguese page; one invented query replaced) | n/a | no native review yet |
 | Tier 2 batch 1: chess, logic, workout, xiangqi guides; 3 /for/ pages; local-only screen-time guide (2026-11-19) | 8 Sonnet writers | 4 reviewers (for pages; chess + xiangqi; workout + local, Apple pages re-fetched live; logic): about 150 fixes, incl. double-brace tokens, a wrong Apple label, a translated quote, «Nonogramas Katana» renamed, hedges restored | n/a | no native review yet |
+| Tier 2 batch 2: shogi, bill tracker (Portugal rewrite), local-only countdown guide (2026-11-19) | 3 Sonnet writers | 3 reviewers (Apple pages re-fetched live; every competitor sentence against its Portuguese listing): about 50 fixes, incl. Big Days' in-app purchases, Soon.'s free task list, Shogi Wars offline play per its listing | n/a | no native review yet |
 | Tier 2 hubs, /pt/llms.txt lines, 6 inbound links | 1 Sonnet writer | 1 reviewer (ItemList names and llms titles synced to final page titles, two unrouted queries routed) | n/a | no native review yet |
 
 Points for a native reader: the trial phrase «teste grátis» (Apple's support pages say «período experimental»);

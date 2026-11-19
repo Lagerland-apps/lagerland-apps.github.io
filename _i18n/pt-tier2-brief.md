@@ -147,3 +147,66 @@ Other sessions (Spanish, Italian) work in this same checkout: never run `git` co
 
 The items in pt-writer-brief.md «Reply with», plus: the final H1 and seo.title, every competitor fact you dropped because
 Portugal data was missing, competitor prices you verified (with source file), and (local-only page) the list of sources saved.
+
+---
+
+## Batch 2 (2026-11-19)
+
+Same rules as batch 1. Research rows: the «Batch 2» section at the bottom of the research file. The batch 1 Portuguese
+pages (pt/guides/*.html, pt/for/*.html) are reviewed and committed: read one or two of them for tone, structure and the
+Portugal-data patterns (rating and price sentences, check-date line), and reuse their wording where it fits.
+
+| Page | Write to | Primary query |
+|---|---|---|
+| guides/best-shogi-apps-iphone.html | pt/guides/best-shogi-apps-iphone.html | shogi online |
+| guides/bill-tracker-without-bank-connection.html | pt/guides/bill-tracker-without-bank-connection.html | app para gerir subscrições |
+| (local-only) | pt/guides/como-fazer-contagem-decrescente-iphone.html | como fazer contagem decrescente no iphone |
+
+- **Shogi**: Kakinoki Shogi is not sold in Portugal: drop it and every sentence that depends on it. None of the listed apps has
+  a Portuguese listing or a Portuguese rating: no rating sentences; say which languages they offer only where the English page
+  does. Shogiful is ours (pt/apps/shogiful/index.md and its glossary section give the feature names; prices via tokens).
+  Spanish twin es/guides/best-shogi-apps-iphone.html is the structural template. Check ISSUES I-0354 (shogi guide: two
+  wordings for Shogi Wars and the JSA, stale dates, Kanazawa without a URL) and I-0053 in
+  /Users/anttiaittamaa/Downloads/githubcode/ISSUES.md and handle them the way the Spanish page did.
+- **Bill tracker**: Rocket Money, Truebill, Monarch and Copilot are not sold in Portugal, and Portugal has no single bank-linked
+  default. Rewrite the comparison around the two apps sold in Portugal whose OWN listing says they connect to the bank:
+  **Wallet - Finanças pessoais** (BudgetBakers, id 1032467659) and **Spendee** (id 635861140). Moneyboard (id 625887028) may
+  appear as the manual-entry option only if the English page's structure has a place for one (the English page's point is
+  bank login vs no bank login). Use ONLY what each app's own Portuguese App Store description says: the saved lookups are in
+  `/private/tmp/claude-501/-Users-anttiaittamaa--claude-spares-spare-n8q8Hr/80c59503-7bb0-423d-955c-db00baf42c73/scratchpad/pt-t2/sources/bill-tracker-without-bank-connection/lookup-<id>.json` (field `description`); both Wallet and Spendee listings
+  are Brazilian Portuguese: paraphrase into European Portuguese, never quote a Brazilian sentence. Keep the English page's general
+  points about bank aggregation only where they do not name a US company or a US rule; drop Plaid, US banks and US law. Never claim
+  anything about their security, fees, data sharing or bank coverage in Portugal that the listing does not say (Wallet's listing
+  gives a worldwide bank count; do not turn it into a Portuguese-bank claim). The French and Spanish twins
+  (fr/ and es/guides/bill-tracker-without-bank-connection.html) did the same rewrite around Bankin'/Linxo and Fintonic: use the
+  Spanish one as the structural model. AllPaid facts from `_apps/allpaid.md`, `pt/apps/allpaid/index.md`, its glossary section
+  and its APP_BLUEPRINT.md §10; prices via `{P_…@allpaid}` tokens; disclose that AllPaid is ours. Portuguese ratings from the
+  research file (Wallet 4,5 with 944, Spendee 4,7 with 1314, Moneyboard 4,7 with 4026). Check ISSUES I-0355 (bill-tracker guide:
+  title-case seo.title, typed platforms, unsourced aggregator claims) and avoid each problem. «contas a pagar» where «conta»
+  could mean a bank account (sheet).
+- **Countdown (local-only)**: `local_only: true`, no `ref`, no `translated_from`, permalink
+  `/pt/guides/como-fazer-contagem-decrescente-iphone/`, `datePublished` 2026-11-19. Model:
+  `es/guides/como-poner-cuenta-atras-iphone.html` (and fr/guides/application-compte-a-rebours-iphone.html). Facts from:
+  Apple Portugal's iOS 27 iPhone guide pages on widgets (home screen and lock screen; start at
+  https://support.apple.com/pt-pt/guide/iphone/iphb8f1bf206/ios and pt-apple-terms.md, fetch and save every page you use),
+  each app's Portuguese description via the lookup API (`curl -s "https://itunes.apple.com/lookup?country=pt&lang=pt_pt&id=<ID>"`;
+  IDs 1403367428 Countdown, 576177593 Countdown Star, 1534850579 Countdown Buddy, 917514700 Contagens, 940109775 Big Days),
+  Soon.'s `_apps/soon.md`, `pt/apps/soon/index.md` and its APP_BLUEPRINT.md §10 (prices via `{P_…@soon}` tokens; disclose it is
+  ours). Portuguese ratings from the research file. «contagem decrescente», never «contagem regressiva» (Brazilian) except when
+  naming Big Days' store title. If iOS itself has no countdown widget, say only what the Apple page you fetched shows. Sources go
+  in `/private/tmp/claude-501/-Users-anttiaittamaa--claude-spares-spare-n8q8Hr/80c59503-7bb0-423d-955c-db00baf42c73/scratchpad/pt-t2/sources/como-fazer-contagem-decrescente-iphone/`.
+- Blueprints: only §10 (claims register); §8 lists non-claims and §9 hidden items, never sources.
+
+### Lessons from the batch 1 reviews (the most common fixes; avoid them)
+
+- U+00A0 before every € (a writer typed 25 plain spaces). Single-brace tokens only (a writer wrote `{{P_MONTHLY@earnlock}}`).
+- Quote Apple labels exactly as the fetched page writes them, for each step (Apple Portugal uses one label to switch a thing on
+  and another to switch it off). Never invent a condition («À primeira vez»). Never put your own translation of an English or
+  Brazilian listing in «» as if it were the app's text.
+- Keep a competitor's privacy claim as strong as its listing («inteiramente», «nunca»); keep English hedges as strong as English.
+- Competitor names as in English; the Portuguese store title at most once.
+- Keywords: European forms only (never «iniciantes», «os apps», «academia», «celular», «tela», «controle»).
+- Tells found: «dá para» (write «é possível»), «utilização» for "job", «deixa em paz», subjectless «quando falha»,
+  «no próprio iCloud», «melhorias» for paid upgrades, «seguimento» for progress tracking («acompanhamento»), «Comparativas» and
+  «frente ao» (Spanish leaks; write «vs»), «caráter» (pt-PT «carácter»), gendered words («farto», «atrasado», «Ser guiado»),
+  «o editor deste guia» (write «que publica este guia»), trailing gerunds, one-line closers.
