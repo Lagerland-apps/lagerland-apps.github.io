@@ -102,6 +102,8 @@ La página de Apple indica que la mayoría de las personas pueden mejorar su VO2
 
 En [Las 6 métricas de Salud de Apple que merece la pena interpretar](/journal/apple-health-metrics-worth-interpreting/){: hreflang="en"} (en inglés) aconsejamos mirarlo una vez al mes: cambia de un trimestre a otro, y la variación de un día a otro es casi toda ruido de la estimación. Otras dos métricas del Apple Watch tienen su propio artículo: la [VFC baja en el Apple Watch](/es/journal/apple-watch-hrv-without-a-baseline/) y la [frecuencia cardiaca en reposo](/es/journal/frecuencia-cardiaca-en-reposo/).
 
+Durante un entreno, el Apple Watch presenta el esfuerzo en cinco [zonas de frecuencia cardiaca](/es/journal/zonas-de-frecuencia-cardiaca/), que Apple define como un porcentaje de tu frecuencia cardiaca máxima.
+
 ## La tarjeta de Observa
 
 [Observa](/es/apps/observa/) lee el VO2 máximo guardado en Salud de Apple y no lo calcula ella misma. Su tarjeta «Condición cardiovascular» muestra el último valor, una categoría (Superior, Excelente, Bueno, Aceptable o Necesita mejorar) y una tendencia (En mejora, En descenso o Estable). La tarjeta es gratuita; las tendencias a 30 y 90 días son de Premium.

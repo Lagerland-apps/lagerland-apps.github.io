@@ -92,6 +92,8 @@ Dos puntos más importan al comparar con las fuentes de salud:
 - El vocabulario no es el mismo. Las fuentes de salud hablan de tres etapas del sueño no REM, y las páginas de Apple consultadas no explican cómo se corresponden con Esencial y Sueño profundo.
 - El uso cuenta. Para recibir datos de sueño tienes que tener activada la opción «Controlar el sueño con el Apple Watch» y llevar el reloj puesto al menos 1 h cada noche; si no, la gráfica puede no mostrar nada. Apple pide además cargarlo al menos al 30 % antes de acostarte y llevarlo bien ajustado, porque si va muy suelto el acelerómetro puede registrar demasiado movimiento durante el sueño.
 
+Con el reloj puesto para dormir, la app Constantes Vitales estima también la frecuencia respiratoria y el oxígeno en sangre de la noche. Lo que dicen las fuentes de cada cifra está en [frecuencia respiratoria normal](/es/journal/frecuencia-respiratoria-normal/) y en [saturación de oxígeno normal](/es/journal/saturacion-de-oxigeno-normal/).
+
 ## Ver tus fases del sueño en Observa
 
 [Observa](/es/apps/observa/) es una app de Lagerland Apps, el estudio que publica esta web. Lee Salud de Apple y, en su pestaña Sueño, muestra tu tiempo en Sueño profundo, REM, Esencial y Despierto, cómo se ha comportado tu corazón por la noche y cuatro factores de calidad del sueño. Las fases solo aparecen si un dispositivo las ha registrado en Salud de Apple, y por eso se recomienda un Apple Watch.

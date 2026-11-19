@@ -115,4 +115,6 @@ Vista Previa basta si el filtro de Apple te da un resultado que te sirve. MediaK
 
 Si el PDF sigue por encima del límite del servicio de correo, queda enviarlo como enlace en lugar de adjunto. Para los límites de adjuntos de Gmail, Outlook e iCloud Mail, el margen que conviene dejar y Mail Drop, consulta cómo [comprimir un vídeo para enviarlo por correo](/es/journal/compress-a-video-for-email/): trata de vídeo, pero esos límites son de adjuntos y valen también para un PDF.
 
+Si antes de enviarlos quieres juntar varios PDF en uno, [unir PDF en Mac](/es/journal/unir-pdf-mac/) explica cómo hacerlo con Vista Previa o con la herramienta «Combinar» de MediaKit.
+
 MediaKit reúne más de 150 herramientas para vídeo, audio, imagen, PDF, archivos comprimidos y libros electrónicos. El artículo [por qué el Mac ya traía todas las herramientas multimedia](/journal/every-media-tool-already-on-your-mac/){: hreflang="en"} (en inglés) repasa los frameworks de Apple en los que se apoya.

@@ -105,6 +105,8 @@ El MAPA pide lo mismo para salir de España a un país de la UE que para entrar 
 
 Si no cumples los requisitos, el MAPA avisa de que el animal puede quedar inmovilizado en cuarentena, ser devuelto al país de origen o, como última opción, ser sometido a eutanasia, con los gastos a cargo del propietario.
 
+Para el viaje también cuentan los parásitos. Según ESCCAP España, un perro que va a una zona donde las garrapatas y sus enfermedades son endémicas debe recibir un tratamiento regular con acaricidas, como recoge el artículo sobre [pulgas y garrapatas](/es/journal/pulgas-y-garrapatas-perro/). Para las zonas donde la leishmaniosis es endémica, LeishVet da pautas de repelente antes del viaje y de análisis después, resumidas en el artículo sobre la [leishmaniosis en el perro](/es/journal/leishmaniosis-perro/).
+
 ## Viajar fuera de la UE
 
 Con un destino fuera de la UE rige lo que pida ese país. El MAPA recomienda informarte en su embajada o consulado, en la web de su ministerio y en el apartado de exportación de animales de compañía de CEXGAN, y precisa que el certificado de exportación lo solicita tu veterinario a través de esa aplicación.

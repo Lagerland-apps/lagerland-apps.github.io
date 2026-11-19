@@ -62,6 +62,8 @@ Estas son las palancas que citan las posiciones del ACSM, con sus cifras de refe
 | Ejercicios | Cambiar de variante | 2026: figura entre las formas de subir el estímulo |
 | Frecuencia | Añadir una sesión a la semana | 2009: de 2 a 3 días por semana para principiantes, de 3 a 4 para el nivel intermedio y de 4 a 5 para el avanzado. 2026: al menos 2 sesiones por semana para la fuerza |
 
+El artículo sobre [las series por músculo a la semana](/es/journal/cuantas-series-por-musculo/) parte de esas 10 series y añade lo que el ACSM de 2026 recoge más arriba: rendimientos decrecientes para la hipertrofia a partir de unas 18 a 20 series semanales. También muestra cómo sumar las series de cada músculo en una semana.
+
 Una carga de repetición máxima (RM) es la más pesada con la que completas un número dado de repeticiones: con una carga de 8 RM haces ocho, no nueve. El resumen de 2009 llama principiantes a quienes no tienen experiencia en entrenamiento de fuerza o llevan años sin entrenar, nivel intermedio a unos 6 meses de entrenamiento constante y avanzado a años de experiencia. Cuánto descansar entre series tiene su propio artículo: [cuánto descansar entre series](/es/journal/how-long-to-rest-between-sets/).
 
 ## Ejemplo con números: ocho sesiones de press militar

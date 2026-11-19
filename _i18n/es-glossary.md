@@ -1808,3 +1808,14 @@ Not live: https://apps.apple.com/es/app/id6829498729 returned HTTP 404 on 2026-1
 - GymLogger X: «Marcar como calentamiento», «Serie de calentamiento». LiftLog: «Añadir calentamiento», «Añadir calentamiento cronometrado» (hint
   «Mantén pulsado para variantes de calentamiento»).
 - Pawza: reminder repeats Nunca, Diario, Semanal, Mensual, Anual; «Administrada» (`reminder.action.given`), «Controlar existencias».
+
+## Additions from Tier 4 batch 4 (2026-11-19)
+
+- MediaKit: «Extraer» (RAR4/RAR5 read-only; encrypted RAR refused with «Este archivo RAR está protegido con contraseña…»); «Combinar», «Orden de combinación»,
+  «Añade 2 o más archivos para combinar», «Intervalos de páginas (iguales para cada archivo)» (under Avanzado), «Añadir un marcador por archivo de origen»,
+  «Conservar los marcadores existentes», «Desbloquear», «Reordenar páginas», «Imágenes a PDF».
+- Observa: section «Respiratorio» (`Respiratory`); «Intensidad del entrenamiento» (Z1–Z5), «Zonas de entrenamiento» (card customizer), «Replay del entrenamiento».
+- GymLogger X: «Volumen de series» (`analytics_set_volume`, Pro, Progreso > Análisis) with MEV/MAV/MRV from `set_volume_explainer_body`; a direct set counts once,
+  an assisting muscle half; warm-ups and deload weeks excluded. LiftLog: «Cobertura muscular» (8 muscles, 30 days).
+- Pawza: «Próximo vencimiento», «Número de lote».
+- Taskful Day: «Modo concentración» (Pro timer 10/25/45 or 5–120, «+5 min», «Finalizar»); catalog «Enfoque» (`focus.enter`), «Tiempo de enfoque» (`journal.focus_time`).

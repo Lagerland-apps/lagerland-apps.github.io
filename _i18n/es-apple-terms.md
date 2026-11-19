@@ -321,3 +321,11 @@ Not checked: Magazines & Newspapers, Kids, other Games subcategories (Action, Ca
   Cardiaca». The site uses sentence case; don't «correct» it. Watch labels «Frec. en reposo», «Media andando», Intervalo (guide apda88aefe4c).
 - Screen Time iOS 27: «Límites de tiempo», «Horario de tiempo de uso», «Compartir entre dispositivos»; iOS 26: «Límites de uso de apps»,
   «Tiempo de inactividad» (iphbfa595995, both versions). «Filtros de color» (iph3e2e1fb0).
+
+## Note from Tier 4 batch 4 (2026-11-19)
+
+- Vista Previa prvw43696 (es-es) says to Control-click to select non-adjacent thumbnails; the English page says Command-click. Don't quote the
+  Spanish step. «Abrir con» in the Finder: support mh35597.
+- Blood Oxygen: 120358 says Salud > «Buscar» and the Watch guide «Explorar»; to pause background readings 120358 names «modos sueño, concentración
+  y cine», the guide «modo de descanso» and «modo Teatro». The site follows the Watch guide. Watch setting «Mediciones de oxígeno en sangre».
+- «la app Constantes Vitales» (app) and the Salud category «Constantes vitales» (120142); wrist temperature needs Series 8 or later or Ultra.
