@@ -13,6 +13,7 @@ reviewing any Spanish page. Every decision a translator would otherwise make dif
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
 | Tier 2 | done 2026-11-19 (not pushed). Batch 1 (0cf087a): both hubs, chess, logic puzzles, xiangqi, workout without subscription, 3 audience pages, local-only /es/guides/limitar-tiempo-de-pantalla-iphone/. Batch 2: shogi, bill tracker rewritten around Fintonic, local-only /es/guides/como-poner-cuenta-atras-iphone/. Research: ~/Downloads/githubcode/es-tier2-research-2026-11-19.md. for/indie-ios-developers stays English-only (developers search in English) |
 | Tier 3, batch 1 | written and integrated 2026-11-19, no native review yet (not pushed): hub /es/alternatives/ and nine comparisons tricount, splitwise (RightSplit); chess-com, lichess (Chessful); whoop (Observa); hevy (LiftLog); opal, forest (EarnLock); pdf-expert (MediaKit); plus the local-only /es/alternatives/alternativa-a-fintonic/ (AllPaid vs Fintonic). Demand research over all 123 English comparisons: ~/Downloads/githubcode/es-tier3-research-2026-11-19.md (next batch listed there); Spanish store check: ~/Downloads/githubcode/es-tier3-store-2026-11-19.md. Stale check before the batch: 0 pages stale in any language |
+| Tier 3, batch 2 | written and integrated 2026-11-19, no native review yet (not pushed): oura, bevel, autosleep (Observa); fitbod, jefit (GymLogger X); settle-up (RightSplit); one-sec, screenzen (EarnLock); habitica (Taskful Day, its first Spanish comparison); plus the local-only /es/alternatives/alternativa-a-appblock/ (EarnLock vs AppBlock). Hub now 20 cards. Research: es-tier3-research-2026-11-19.md § Batch 2 shortlist (next: Welltory, Athlytic, Gentler Streak, Alpha Progression, StrongLifts, Strong, Streaks, Documents, CloudConvert, Wikipedia app); store check: ~/Downloads/githubcode/es-tier3-store-batch2-2026-11-19.md. Stale check before the batch: 0 |
 | Stale pages | 0 (2026-11-19, `i18n.py stale`) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 270 s wall, 137 s CPU before Spanish (2026-11-19, seven research agents running in parallel, so the wall time is inflated); French sheet had 80 s after French Tier 1. Idle machine 2026-11-19: 157 s before the tx-app fix, 52 s after (617 pages, `--profile`; tx-app 99.6 s to 4.9 s, I-0258) |
@@ -242,6 +243,21 @@ the generic ones (`app dividir gastos` stays on RightSplit, `app para controlar 
 | /es/alternatives/forest/ | `forest app` / `alternativa a forest` | `forest app estudio`, `forest app gratis`, `forest app cómo funciona` |
 | /es/alternatives/pdf-expert/ | `alternativa a pdf expert` | `pdf expert gratis`, `pdf expert gratis mac` |
 
+Tier 3 batch 2 (2026-11-19).
+
+| Page | Primary query | Secondary queries |
+|---|---|---|
+| /es/alternatives/oura/ | `oura ring o apple watch` | `alternativa a oura`, `oura ring alternativas`, `oura ring sin suscripción` |
+| /es/alternatives/bevel/ | `alternativa a bevel` / `bevel app opiniones` | `bevel app es gratis`, `bevel app precio`, `bevel o whoop` |
+| /es/alternatives/autosleep/ | `alternativa a autosleep` / `autosleep apple watch` | `autosleep app`, `autosleep opiniones` |
+| /es/alternatives/fitbod/ | `alternativa a fitbod` / `fitbod opiniones` | `fitbod es gratis`, `fitbod precio` |
+| /es/alternatives/jefit/ | `jefit en español` / `alternativa a jefit` | `jefit opiniones`, `jefit es gratis` |
+| /es/alternatives/settle-up/ | `settle up o tricount` | `settle up cómo funciona`, `settle up app vs splitwise`, `settle up español` |
+| /es/alternatives/one-sec/ | `alternativa a one sec` / `one sec app` | `one sec es gratis`, `one sec español` |
+| /es/alternatives/screenzen/ | `alternativa a screenzen` (no reviews on the page, so not `screenzen opiniones` in the title) | `screenzen es gratis`, `screenzen es seguro` |
+| /es/alternatives/habitica/ | `habitica en español` | `alternativa a habitica`, `habitica es gratis`, `habitica qué es` |
+| /es/alternatives/alternativa-a-appblock/ (local-only) | `appblock iphone` | `alternativa a appblock`, `appblock es gratis`, `appblock es seguro` |
+
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
 - Founder lines mirror the two English forms: «Desarrollador Apple independiente · Finlandia · estudio de una sola
@@ -301,6 +317,18 @@ es-keywords.md per page.
 - Fintonic page: AllPaid «no ofrece perfil crediticio ni préstamos» (AllPaid has a «Préstamos» bill category, so never «no tiene préstamos»);
   «tus cuentas conectadas», never «todas tus cuentas»; the safety FAQ reports the listing only, with «no damos una opinión».
 
+## Decisions from Tier 3 batch 2 (2026-11-19)
+
+- Observa's «Estableciendo tu referencia» shows for about the first five nights (blueprint: until about 5 baseline nights; high
+  confidence needs 7). The English oura, hrv4training and what-14-days pages said 7; fixed in EN, DE and ES in the same change.
+- A competitor price only where the English page states one, even when the Spanish store shows it (AutoSleep 9,99 € left out:
+  «es de pago, sin compras dentro de la app»).
+- Before writing «No se indica» for a competitor, check the store page's «En familia» and «Requiere … watchOS» fields (AppBlock
+  shows both); the footnote says «No se indica» means the listing doesn't mention it.
+- seo.title patterns: one pattern per app at most (Opal «… apps bloqueadas hasta que camines», one sec «… un bloqueo en lugar de
+  una pausa», ScreenZen «… bloqueo que se gana con actividad»; Whoop «Alternativa a X sin Y: Observa» is taken).
+- EarnLock: «objetivo diario de actividad» for what unlocks apps; «objetivo de pasos» only for the free tier's step goal.
+
 ## Tells to cut in Spanish (TRANSLATION.md 8.2, plus what reviews find)
 
 Stock phrasing: «En el mundo actual», «En la era digital», «Sumerjámonos», «Adentrémonos», «Es importante destacar
@@ -350,6 +378,8 @@ description doesn't mention the Watch). Competitor prices: Spanish App Store eur
 
 Found in the Tier 3 batch 1 reviews (2026-11-19): «compra integrada» («compra dentro de la app»); «Tú y tu grupo dependéis» (mixed register); «hace mucho más» about a competitor; «ver todas tus cuentas» when the listing gives no count; «no tiene préstamos» when the app has a Loans category; «es la mejor opción» for "the better pick" («encaja mejor»); «no indica ninguna app» about a listing («no muestra», «no consta»); «etiqueta de privacidad»; a FAQ question that raises the English claim («protege mejor tus datos» for "more private"); «la mayor comunidad» (unsourced superlative); «de X a Y €» built from mixed IAP rows; «compra única» for "a one-time option" («opción de compra única»); «sin suscripción obligatoria» placed so it attaches to the competitor («Whoop sin suscripción obligatoria: Observa»); «sin X, sin Y y sin Z» lists; the dated store line repeated in card, FAQ and note; «{P_LIFETIME} una vez» («de por vida»); `{{P_…}}` double-brace tokens (Liquid error: single braces only). Hub and llms tells (R-wiring): «encaja mejor» on every line; «solo en inglés» next to the «(en inglés)» marker; a card that opens on a noun phrase with no subject; a card naming the page's metric differently («recuperación» vs «preparación»); «las comparamos» after a singular; «jugar en directo» when the page doesn't say live; a hub keyword that a comparison page owns.
 
+Found in the Tier 3 batch 2 reviews (2026-11-19): «Datos no recopilados» (Apple: «No se recopilan datos»); a literal «el sensor … que lleva el anillo» for "finger-based sensing"; «sin X, sin Y y sin Z» in a seo.description or CTA; «Si no quieres A, B ni C» opening a quick_answer; «encaja mejor» for both sides of one verdict; sibling pages (Splitwise, Settle Up) with the same seo.title or description skeleton; «Taskful Day: Habitica convierte…» (a colon that fuses two product names); «le va a quien» («es para quien»); «lo que lo motiva» (gendered «lo»: «lo que motiva»); «cubre más terreno»; a table row header that doesn't fit the competitor's cell; «1.131» (four digits take no separator); a title promising «opiniones» on a page with no reviews.
+
 Translationese: title case headings; missing ¿ and ¡; chains of gerunds copied from English -ing («ofreciendo»,
 «permitiendo», «haciendo» trailing a sentence); passive «es … por» where Spanish uses «se»; possessives on body
 parts and devices copied from English («tu teléfono» is fine, «levanta tu mano» is not: «levanta la mano»);
@@ -393,6 +423,8 @@ home, all 21 app pages, about. Native review: none yet, for every page (NATIVE R
 | Tier 2 batch 2: hub cards, llms.txt lines, AllPaid and Soon. link sentences | main session | 1 wiring reviewer | n/a | no native review yet |
 | Tier 3 batch 1: 9 comparisons + local-only Fintonic page | one writer agent (Sonnet) each | reviewers R-money (14 must-fix), R-chess-pdf (6), R-health-screen (23), 2026-11-19 (copy-editing, fact diff against English and the Spanish store check, glossary, SEO/schema): e.g. Fintonic «no tiene préstamos» and «todas tus cuentas» fixed, Lichess unsupported «mayor comunidad» cut, PDF Expert price range removed, Whoop title moved off «Whoop sin suscripción obligatoria», Hevy Ladder card restored, Opal Watch claim softened to «No consta» | n/a (Tier 3) | no native review yet |
 | Tier 3 batch 1: hub, 10 llms.txt lines, bill-tracker guide link | one writer (Sonnet) + main session | R-wiring (about 12 must-fix: hub verdicts added, Whoop card metric, llms verdict variety, Lichess line answers the «o» query) | n/a | no native review yet |
+| Tier 3 batch 2: 9 comparisons + local-only AppBlock page | one writer agent (Sonnet) each | reviewers R-health-2 (9 must-fix), R-gym-split-2 (11), R-screen-habit-2 (16), 2026-11-19: e.g. Bevel FAQ «¿Observa es más barata que Bevel?» restored, AutoSleep price removed, Oura «Estableciendo tu referencia» quoted and the five-night fact corrected, AppBlock En familia and Watch rows fixed from the store page, Jefit «sin X, sin Y» lists rewritten, Settle Up title moved off the Splitwise pattern | n/a (Tier 3) | no native review yet |
+| Tier 3 batch 2: hub (20 cards), 10 llms.txt lines, screen-time guide links | one hub writer (Sonnet) + main session | R-wiring-2 | n/a | no native review yet |
 
 ## Apps still on English screenshots
 

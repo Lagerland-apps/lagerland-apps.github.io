@@ -13,7 +13,7 @@ seo:
     - "interpreting apple health"
     - "health data analysis"
 date: 2026-05-13
-last_updated: 2026-11-08
+last_updated: 2026-11-19
 lede: "Apple Health is the largest passive health dataset most people will ever own, and almost nobody uses it for what it does well. This is a practical guide to which questions two weeks of data can answer, which ones need 60 days, and which ones it can't answer at all."
 quick_answer: "Two weeks of Apple Health data is enough to show simple one-habit patterns, such as late workouts against deep sleep or short nights against next-morning resting heart rate, provided you have about 10 days of each condition and compare against your own baseline, not a population average. Patterns that combine several habits, and long-term trends, need 60 days or more. Anything below about 14 days is mostly noise, and a 'recovery score' built from 3 days of data is fitting to noise."
 faq:
@@ -24,7 +24,7 @@ faq:
   - q: "What can Apple Health data not reveal?"
     a: "Causation. Correlation analysis can tell you that on days you train after 18:00 your deep sleep tends to run lower, but it can't prove the workout caused it. Something else that happens on those days (stress, caffeine, a late dinner) may be the real cause. Treat insights as hypotheses to test for two weeks, not verdicts."
   - q: "How does Observa build your baseline?"
-    a: "Observa compares each reading with your own typical range, not a population average, and shows how confident it is. For about the first 7 nights, Readiness says \"Building your baseline\" while it learns your normal, and the confidence label tells you how much data sits behind a score. Patterns, part of Premium, draw on your whole history, and each card carries a confidence label because weaker links can appear too."
+    a: "Observa compares each reading with your own typical range, not a population average, and shows how confident it is. For about the first 5 nights, Readiness says \"Building your baseline\" while it learns your normal, and the confidence label tells you how much data sits behind a score. Patterns, part of Premium, draw on your whole history, and each card carries a confidence label because weaker links can appear too."
 mentioned_apps:
   - observa
 read_time: "8 min read"

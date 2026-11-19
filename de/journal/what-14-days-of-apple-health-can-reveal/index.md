@@ -3,8 +3,8 @@ layout: journal
 slug: what-14-days-of-apple-health-can-reveal
 ref: /journal/what-14-days-of-apple-health-can-reveal/
 permalink: /de/journal/what-14-days-of-apple-health-can-reveal/
-translated_from: 2026-11-08
-last_updated: 2026-11-08
+translated_from: 2026-11-19
+last_updated: 2026-11-19
 date: 2026-10-29
 title: "Was 14 Tage Apple-Health-Daten zeigen können und was nicht"
 seo:
@@ -28,7 +28,7 @@ faq:
   - q: "Was können Apple-Health-Daten nicht zeigen?"
     a: "Ursache und Wirkung. Eine Korrelationsanalyse kann dir sagen, dass dein Tiefschlaf an Tagen, an denen du nach 18:00 Uhr trainierst, eher niedriger ausfällt. Sie kann nicht beweisen, dass das Training der Grund war. Etwas anderes an diesen Tagen (Stress, Koffein, ein spätes Abendessen) kann die eigentliche Ursache sein. Behandle Erkenntnisse als Hypothesen, die du zwei Wochen lang testest, nicht als Urteile."
   - q: "Wie erstellt Observa deine Basislinie?"
-    a: "Observa vergleicht jeden Messwert mit deinem eigenen üblichen Bereich statt mit einem Bevölkerungsdurchschnitt und zeigt, wie sicher die Einschätzung ist. In etwa den ersten 7 Nächten zeigt die Bereitschaft an, dass deine Basislinie noch entsteht, während Observa lernt, was für dich normal ist, und die Angabe zur Konfidenz sagt dir, wie viele Daten hinter einem Wert stehen. „Muster“, ein Teil von Premium, greift auf deinen gesamten Verlauf zurück, und jede Karte trägt eine Angabe zur Konfidenz, weil auch schwächere Zusammenhänge erscheinen können."
+    a: "Observa vergleicht jeden Messwert mit deinem eigenen üblichen Bereich statt mit einem Bevölkerungsdurchschnitt und zeigt, wie sicher die Einschätzung ist. In etwa den ersten 5 Nächten zeigt die Bereitschaft an, dass deine Basislinie noch entsteht, während Observa lernt, was für dich normal ist, und die Angabe zur Konfidenz sagt dir, wie viele Daten hinter einem Wert stehen. „Muster“, ein Teil von Premium, greift auf deinen gesamten Verlauf zurück, und jede Karte trägt eine Angabe zur Konfidenz, weil auch schwächere Zusammenhänge erscheinen können."
 mentioned_apps:
   - observa
 read_time: "8 Min. Lesezeit"

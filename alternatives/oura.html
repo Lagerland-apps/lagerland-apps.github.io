@@ -15,7 +15,7 @@ seo:
     - readiness score Apple Watch
     - Apple Watch sleep recovery app
     - on-device readiness app
-last_updated: 2026-11-08
+last_updated: 2026-11-19
 ---
 
 {%- assign app = site.apps | where: "slug", "observa" | first -%}
@@ -52,7 +52,7 @@ last_updated: 2026-11-08
     { "@type": "Question", "name": "Can Observa replace my Oura Ring?", "acceptedAnswer": { "@type": "Answer", "text": "It can if you wear an Apple Watch and want the readiness answer more than the ring itself. Observa adds no sensors. It builds Readiness from the sleep, HRV, resting heart rate, and training load your watch saves to Apple Health, explains the score, and gives you a training call on your wrist. The Oura Ring is the better pick if you prefer wearing a ring to bed, or if you want its overnight temperature sensing, which Observa does not use." } },
     { "@type": "Question", "name": "Is Observa cheaper than Oura?", "acceptedAnswer": { "@type": "Answer", "text": "For Apple Watch owners, usually. Oura requires buying the ring, from about $399, and a membership of about $5.99 a month or $69.99 a year to unlock full insights (US, checked 2026-11-08). Observa's daily scores are free, and Premium costs {P_MONTHLY@observa}/month, {P_YEARLY@observa}/year, or {P_LIFETIME@observa} once, using the Apple Watch you already own." } },
     { "@type": "Question", "name": "Is Observa more private than Oura?", "acceptedAnswer": { "@type": "Answer", "text": "Observa has no account and no analytics SDKs, and the app makes no network calls of its own, so your health data is processed and stored on your device. Oura is an account- and cloud-based platform that stores your data on its servers." } },
-    { "@type": "Question", "name": "Does Observa give a readiness score like Oura?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Observa's Readiness is scored out of 100 and weighs sleep at 35%, HRV at 25%, resting heart rate at 25%, and training load at 15%, against your own typical range. It is banded Ready, Moderate, or Low, and \"Why this score?\" shows which signals moved it. For about the first 7 nights it shows \"Building your baseline\". The method differs from Oura's, so the numbers won't match." } },
+    { "@type": "Question", "name": "Does Observa give a readiness score like Oura?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Observa's Readiness is scored out of 100 and weighs sleep at 35%, HRV at 25%, resting heart rate at 25%, and training load at 15%, against your own typical range. It is banded Ready, Moderate, or Low, and \"Why this score?\" shows which signals moved it. For about the first 5 nights it shows \"Building your baseline\". The method differs from Oura's, so the numbers won't match." } },
     { "@type": "Question", "name": "Does Observa need any extra hardware?", "acceptedAnswer": { "@type": "Answer", "text": "No. Observa reads what is already in Apple Health. An Apple Watch is recommended, because sleep stages, HRV, blood oxygen, ECG, and VO2 max only appear when a device records them. Observa runs on iPhone, iPad, and Apple Watch." } }
   ]
 }

@@ -26,11 +26,13 @@
   "/alternatives/autosleep/": {
     "de": "/de/alternatives/autosleep/",
     "en": "/alternatives/autosleep/",
+    "es": "/es/alternatives/autosleep/",
     "fr": "/fr/alternatives/autosleep/"
   },
   "/alternatives/bevel/": {
     "de": "/de/alternatives/bevel/",
     "en": "/alternatives/bevel/",
+    "es": "/es/alternatives/bevel/",
     "fr": "/fr/alternatives/bevel/"
   },
   "/alternatives/brick/": {
@@ -70,6 +72,7 @@
   "/alternatives/fitbod/": {
     "de": "/de/alternatives/fitbod/",
     "en": "/alternatives/fitbod/",
+    "es": "/es/alternatives/fitbod/",
     "fr": "/fr/alternatives/fitbod/"
   },
   "/alternatives/forest/": {
@@ -85,6 +88,7 @@
   "/alternatives/habitica/": {
     "de": "/de/alternatives/habitica/",
     "en": "/alternatives/habitica/",
+    "es": "/es/alternatives/habitica/",
     "fr": "/fr/alternatives/habitica/"
   },
   "/alternatives/habitnow/": {
@@ -100,6 +104,10 @@
   "/alternatives/image-size/": {
     "de": "/de/alternatives/image-size/",
     "en": "/alternatives/image-size/"
+  },
+  "/alternatives/jefit/": {
+    "en": "/alternatives/jefit/",
+    "es": "/es/alternatives/jefit/"
   },
   "/alternatives/jomo/": {
     "de": "/de/alternatives/jomo/",
@@ -119,6 +127,7 @@
   "/alternatives/one-sec/": {
     "de": "/de/alternatives/one-sec/",
     "en": "/alternatives/one-sec/",
+    "es": "/es/alternatives/one-sec/",
     "fr": "/fr/alternatives/one-sec/"
   },
   "/alternatives/opal/": {
@@ -130,6 +139,7 @@
   "/alternatives/oura/": {
     "de": "/de/alternatives/oura/",
     "en": "/alternatives/oura/",
+    "es": "/es/alternatives/oura/",
     "fr": "/fr/alternatives/oura/"
   },
   "/alternatives/pdf-expert/": {
@@ -148,11 +158,13 @@
   "/alternatives/screenzen/": {
     "de": "/de/alternatives/screenzen/",
     "en": "/alternatives/screenzen/",
+    "es": "/es/alternatives/screenzen/",
     "fr": "/fr/alternatives/screenzen/"
   },
   "/alternatives/settle-up/": {
     "de": "/de/alternatives/settle-up/",
-    "en": "/alternatives/settle-up/"
+    "en": "/alternatives/settle-up/",
+    "es": "/es/alternatives/settle-up/"
   },
   "/alternatives/splitwise/": {
     "de": "/de/alternatives/splitwise/",
