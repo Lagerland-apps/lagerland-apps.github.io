@@ -1,0 +1,154 @@
+---
+layout: default
+ref: /alternatives/chess-com/
+permalink: /nl/alternatives/chess-com/
+translated_from: 2026-11-19
+title: "Alternatief voor de partijanalyse van Chess.com"
+quick_answer: "Chessful is een alternatief voor de partijanalyse van Chess.com op iPhone, iPad en Mac. Je exporteert je Chess.com-partijen als PGN-bestand en importeert ze, en Stockfish controleert elke zet op je apparaat. Elke fout krijgt uitleg in gewone taal, op jouw niveau, en je fouten worden de puzzels van je dagelijkse training. Je hebt geen account nodig. In de gratis versie krijg je 2 analyses per dag; met Pro is analyseren onbeperkt. Chessful heeft geen online partijen, dus voor spelen tegen andere mensen blijf je bij Chess.com."
+seo:
+  title: "Chess.com-abonnement of Chessful voor partijanalyse"
+  description: "Chessful is een alternatief voor de analyse uit het Chess.com-abonnement. Importeer je partijen als PGN en Stockfish controleert elke zet op je apparaat."
+  keywords:
+    - chess.com abonnement
+    - chess com gratis premium
+    - chess com gratis analyse
+    - chess com of lichess
+    - schaakpartij analyseren
+    - stockfish iphone
+last_updated: 2026-11-19
+---
+
+{%- include t.html -%}
+{%- assign app = site.apps | where: "slug", "chessful" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/nl/alternatives/chess-com/#webpage",
+  "url": "{{ site.url }}/nl/alternatives/chess-com/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/nl/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "nl",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/nl/" },
+      { "@type": "ListItem", "position": 2, "name": "Vergelijkingen", "item": "{{ site.url }}/nl/alternatives/" },
+      { "@type": "ListItem", "position": 3, "name": "Alternatief voor de partijanalyse van Chess.com", "item": "{{ site.url }}/nl/alternatives/chess-com/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "nl",
+  "mainEntity": [
+    { "@type": "Question", "name": "Wat is het beste alternatief voor de analyse van Chess.com dat je privacy respecteert?", "acceptedAnswer": { "@type": "Answer", "text": "Chessful analyseert je partijen op je eigen apparaat. Importeer je Chess.com-partijen als PGN-bestand en Stockfish controleert elke zet op je iPhone, iPad of Mac. Bij elke fout zie je wat je speelde, wat de beste zet was en waarom, in woorden die bij jouw niveau passen, en je fouten worden de puzzels van je dagelijkse training. Je hebt geen account nodig en de app heeft geen reclame, analytics of tracking." } },
+    { "@type": "Question", "name": "Draait Stockfish in Chessful op je apparaat?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Stockfish zit ingebouwd in de app en draait op je iPhone, iPad of Mac. De analyse werkt dus offline en je partijen worden nergens geüpload om te worden beoordeeld. Alleen aankopen en het optionele inloggen bij Game Center gaan via de servers van Apple." } },
+    { "@type": "Question", "name": "Kan ik partijen van Chess.com of Lichess importeren in Chessful?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, als PGN-bestanden. Exporteer je partijen uit Chess.com of Lichess en open het bestand in Chessful via de Bestanden-app, iCloud Drive of AirDrop, of plak de PGN-tekst. Eén import neemt maximaal 2000 partijen aan, markeert dubbele partijen en laat je kiezen met welke kleur je speelde. Chessful maakt geen verbinding met een van beide sites en haalt geen partijen op via een gebruikersnaam." } },
+    { "@type": "Question", "name": "Is de analyse in Chessful onbeperkt?", "acceptedAnswer": { "@type": "Answer", "text": "Met Pro wel. De gratis versie bevat 2 partijanalyses, 3 puzzels en 2 coachhints per dag, plus alle 156 lessen en elke uitleg bij een fout. Pro haalt de dagelijkse limieten weg voor {P_MONTHLY@chessful} per maand of {P_YEARLY@chessful} per jaar, allebei met een {TRIAL@chessful}, of eenmalig {P_LIFETIME@chessful}." } },
+    { "@type": "Question", "name": "Heeft Chessful een account nodig?", "acceptedAnswer": { "@type": "Answer", "text": "Nee. Je registreert je nergens en er bestaat geen Chessful-account. Je partijen en je trainingsgeschiedenis blijven op het apparaat dat je gebruikt en worden niet gesynchroniseerd tussen apparaten. Aankopen lopen via je Apple Account en Game Center is optioneel." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Schaakanalyse · Stockfish op je apparaat · Geen account</p>
+    <h1 class="h1">Een alternatief voor de analyse van Chess.com<br><span class="gradient-text">met de engine op je telefoon.</span></h1>
+    <p class="lead">
+      Chess.com is de plek waar je tegen andere mensen speelt, en de Game Review is sterk. Chessful doet het deel na de partij. Je importeert je Chess.com-partijen als PGN en Stockfish controleert elke zet op je apparaat. Bij elke fout zie je wat je speelde, wat de beste zet was en in één zin waarom. Die fouten vormen daarna je dagelijkse training. Je hoeft geen account aan te maken.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="{% include l.html url="/apps/chessful/" %}"{% if l_en %} hreflang="en"{% endif %}>Bekijk Chessful{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+      <a class="btn btn-secondary" href="#compare">Vergelijk</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section id="compare" class="section reveal">
+  <h2 class="h2">Hoe verhoudt Chessful zich tot Chess.com?</h2>
+  <p class="lead">Chess.com is een platform om tegen andere mensen te spelen. Chessful is een trainingsapp. Ze overlappen alleen bij partijanalyse.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Waar de engine draait</div>
+      <div class="card-text"><strong>Chessful:</strong> Stockfish draait op je iPhone, iPad of Mac, dus de analyse werkt offline.<br><br><strong>Chess.com:</strong> analyse in de cloud, op de servers van Chess.com; het resultaat komt terug in de app. Volgens de productpagina in de Nederlandse App Store kun je in de app ook offline tegen de computer spelen en je partijen offline analyseren.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Analyses per dag</div>
+      <div class="card-text"><strong>Chessful:</strong> 2 analyses per dag in de gratis versie, onbeperkt met Pro ({P_MONTHLY@chessful} per maand, {P_YEARLY@chessful} per jaar of eenmalig {P_LIFETIME@chessful}).<br><br><strong>Chess.com:</strong> de gratis versie beperkt het gebruik van Game Review; volledige toegang krijg je met een betaald abonnement.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Wat je van een fout krijgt</div>
+      <div class="card-text"><strong>Chessful:</strong> wat je speelde, wat de beste zet was, waarom, en de variant die je zet afstraft, in woorden die bij je coachingniveau passen en ingedeeld in een van de 10 foutsoorten. De fout komt daarna terug als puzzel in je training.<br><br><strong>Chess.com:</strong> een sterke indeling van de zetkwaliteit, met uitleg in coachstijl in de betaalde abonnementen.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Privacy en account</div>
+      <div class="card-text"><strong>Chessful:</strong> geen account, en de app bevat geen reclame, analytics of tracking. Je partijen blijven op je apparaat. <a href="{% include l.html url="/transparency/#chessful" %}"{% if l_en %} hreflang="en"{% endif %}>Bekijk het privacymanifest.{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a><br><br><strong>Chess.com:</strong> een account is verplicht; je partijgeschiedenis staat in je profiel.</div>
+    </div>
+  </div>
+  <p class="testimonials-footnote" style="margin-top:var(--s-3);">In de Nederlandse App Store heet Chess.com <a href="https://apps.apple.com/nl/app/id329218549" rel="noopener" target="_blank">“Schaken - Speel &amp; Leer Online”</a>. De app is gratis met aankopen in de app, is beschikbaar in het Nederlands en heeft er een 4,7 van de 5, op basis van 41.703 beoordelingen. Bij de aankopen in de app staan Gold, Platinum en Diamond Membership: Gold kost tussen € 4,99 en € 49,99, Platinum tussen € 6,99 en € 84,99 en Diamond tussen € 12,99 en € 124,99. Voor welke periode elk bedrag geldt, staat er niet bij (Nederlandse App Store, bekeken op 19 november 2026). Controleer deze gegevens op de actuele pagina voordat je van app wisselt.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Chessful of Chess.com?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Kies Chessful als…</div>
+      <ul class="bullets">
+        <li>je op Chess.com, op Lichess of aan een echt bord speelt en die partijen op één plek wilt bekijken (importeer ze als PGN)</li>
+        <li>je bij elke fout een uitleg in één zin wilt die je kunt volgen, en niet alleen een evaluatie</li>
+        <li>je training wilt die is opgebouwd uit je eigen fouten, met gespreide herhaling van de fouten die je mist</li>
+        <li>je een analyse wilt die in het vliegtuig werkt, zonder account</li>
+        <li>je schaken leert: de 156 lessen beginnen bij het bord zelf en zijn allemaal gratis</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Blijf bij Chess.com als…</div>
+      <ul class="bullets">
+        <li>je live partijen tegen andere mensen wilt: Chessful heeft geen online partijen, geen matchmaking en geen klokken</li>
+        <li>je op de clubs, de sociale functies en de dagelijkse puzzels van Chess.com rekent</li>
+        <li>je videolessen van bekende meesters wilt</li>
+        <li>je een rating wilt die andere spelers zien: de rating in Chessful is een schatting van de app zelf</li>
+      </ul>
+    </div>
+  </div>
+  <p>Lees verder: <a href="{% include l.html url="/guides/best-chess-apps-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>De beste schaakapp voor iPhone{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> · <a href="{% include l.html url="/alternatives/lichess/" %}"{% if l_en %} hreflang="en"{% endif %}>Chessful vergeleken met Lichess{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a></p>
+</section>
+
+{% if app %}
+<section class="section reveal">
+  <h2 class="h2">Over Chessful</h2>
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+</section>
+{% endif %}
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Vragen</p><h2 class="h2">Veelgestelde vragen</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Wat is het beste alternatief voor de analyse van Chess.com dat je privacy respecteert?</summary><div class="faq-a">Chessful analyseert je partijen op je eigen apparaat. Importeer je Chess.com-partijen als PGN-bestand en Stockfish controleert elke zet op je iPhone, iPad of Mac. Bij elke fout zie je wat je speelde, wat de beste zet was en waarom, in woorden die bij jouw niveau passen, en je fouten worden de puzzels van je dagelijkse training. Je hebt geen account nodig en de app heeft geen reclame, analytics of tracking.</div></details>
+    <details class="faq-item"><summary>Draait Stockfish in Chessful op je apparaat?</summary><div class="faq-a">Ja. Stockfish zit ingebouwd in de app en draait op je iPhone, iPad of Mac. De analyse werkt dus offline en je partijen worden nergens geüpload om te worden beoordeeld. Alleen aankopen en het optionele inloggen bij Game Center gaan via de servers van Apple.</div></details>
+    <details class="faq-item"><summary>Kan ik partijen van Chess.com of Lichess importeren in Chessful?</summary><div class="faq-a">Ja, als PGN-bestanden. Exporteer je partijen uit Chess.com of Lichess en open het bestand in Chessful via de Bestanden-app, iCloud Drive of AirDrop, of plak de PGN-tekst. Eén import neemt maximaal 2000 partijen aan, markeert dubbele partijen en laat je kiezen met welke kleur je speelde. Chessful maakt geen verbinding met een van beide sites en haalt geen partijen op via een gebruikersnaam.</div></details>
+    <details class="faq-item"><summary>Is de analyse in Chessful onbeperkt?</summary><div class="faq-a">Met Pro wel. De gratis versie bevat 2 partijanalyses, 3 puzzels en 2 coachhints per dag, plus alle 156 lessen en elke uitleg bij een fout. Pro haalt de dagelijkse limieten weg voor {P_MONTHLY@chessful} per maand of {P_YEARLY@chessful} per jaar, allebei met een {TRIAL@chessful}, of eenmalig {P_LIFETIME@chessful}.</div></details>
+    <details class="faq-item"><summary>Heeft Chessful een account nodig?</summary><div class="faq-a">Nee. Je registreert je nergens en er bestaat geen Chessful-account. Je partijen en je trainingsgeschiedenis blijven op het apparaat dat je gebruikt en worden niet gesynchroniseerd tussen apparaten. Aankopen lopen via je Apple Account en Game Center is optioneel.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Probeer het</p>
+  <h2 class="h2">Open Chessful.</h2>
+  <p class="lead">Neem je Chess.com-partijen mee, lees bij elke fout de uitleg en train op de fouten die je herhaalt.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/chessful/" %}"{% if l_en %} hreflang="en"{% endif %}>Bekijk Chessful{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

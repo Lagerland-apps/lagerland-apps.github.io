@@ -310,7 +310,7 @@ last_updated: 2026-11-19
      (Dutch comparisons do not exist yet: the count is the English one and the links fall back to English)
      ============================ -->
 <section class="section reveal" aria-labelledby="compare-title">
-  {%- assign comparison_count = site.pages | where: "lang", "en" | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 -%}
+  {%- assign comparison_count = site.pages | where: "lang", "nl" | where_exp: "p", "p.url contains '/nl/alternatives/'" | size | minus: 1 -%}
   <h2 class="h2" id="compare-title">Vergelijkingen met de apps die je kent</h2>
   <p class="lead">{{ comparison_count }} vergelijkingen, punt voor punt, met de apps waarvan de meeste mensen overstappen, ook waar de andere app de betere keuze is. Hier zie je er vier; de rest staat op de vergelijkingspagina.</p>
   <div class="pairs stagger">

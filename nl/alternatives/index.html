@@ -1,0 +1,169 @@
+---
+layout: default
+ref: /alternatives/
+permalink: /nl/alternatives/
+translated_from: 2026-11-08
+title: "Vergelijkingen"
+quick_answer: "Elke vergelijking van Lagerland Apps legt uit waarin een app van de studio verschilt van een bekende app en zegt voor wie elk van de twee het best past, ook als dat de bekende app is. In het Nederlands zijn er tien, per onderwerp gegroepeerd. Om kosten te delen wordt RightSplit vergeleken met WieBetaaltWat, Tricount en Splitwise, en voor vaste lasten AllPaid met Dyme. Bij schaken is dat Chessful met Chess.com. Bij gezondheid en training zijn het Observa met Whoop of Oura, en LiftLog met Hevy. Bij schermtijd gaat het om EarnLock en Forest, bij pdf’s om MediaKit en PDF Expert."
+seo:
+  title: "Alternatief voor WieBetaaltWat, Tricount, Whoop of Hevy"
+  description: "Tien vergelijkingen: een alternatief voor WieBetaaltWat, Tricount, Splitwise, Dyme, Whoop, Oura, Hevy of Forest, en wanneer de bekende app beter past."
+  keywords:
+    - wie betaalt wat alternatief
+    - alternatief voor tricount
+    - gratis alternatief voor splitwise
+    - dyme app alternatief
+    - whoop alternatief zonder abonnement
+    - oura ring alternatief zonder abonnement
+    - hevy app gratis
+    - forest app gratis
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign nl_alt_count = site.pages | where: "lang", "nl" | where_exp: "p", "p.url contains '/nl/alternatives/'" | size | minus: 1 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/nl/alternatives/#webpage",
+  "url": "{{ site.url }}/nl/alternatives/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "nl",
+  "isPartOf": { "@id": "{{ site.url }}/nl/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/nl/" },
+      { "@type": "ListItem", "position": 2, "name": "Vergelijkingen", "item": "{{ site.url }}/nl/alternatives/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Vergelijkingen in het Nederlands",
+    "numberOfItems": {{ nl_alt_count }},
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "url": "{{ site.url }}/nl/alternatives/wiebetaaltwat-alternatief/", "name": "Alternatief voor WieBetaaltWat" },
+      { "@type": "ListItem", "position": 2, "url": "{{ site.url }}/nl/alternatives/tricount/", "name": "Alternatief voor Tricount" },
+      { "@type": "ListItem", "position": 3, "url": "{{ site.url }}/nl/alternatives/splitwise/", "name": "Gratis alternatief voor Splitwise" },
+      { "@type": "ListItem", "position": 4, "url": "{{ site.url }}/nl/alternatives/dyme-alternatief/", "name": "Alternatief voor Dyme zonder bankkoppeling" },
+      { "@type": "ListItem", "position": 5, "url": "{{ site.url }}/nl/alternatives/chess-com/", "name": "Alternatief voor de partijanalyse van Chess.com" },
+      { "@type": "ListItem", "position": 6, "url": "{{ site.url }}/nl/alternatives/whoop/", "name": "Whoop-alternatief" },
+      { "@type": "ListItem", "position": 7, "url": "{{ site.url }}/nl/alternatives/oura/", "name": "Oura Ring-alternatief" },
+      { "@type": "ListItem", "position": 8, "url": "{{ site.url }}/nl/alternatives/hevy/", "name": "Alternatief voor Hevy" },
+      { "@type": "ListItem", "position": 9, "url": "{{ site.url }}/nl/alternatives/forest/", "name": "Alternatief voor Forest" },
+      { "@type": "ListItem", "position": 10, "url": "{{ site.url }}/nl/alternatives/pdf-expert/", "name": "Alternatief voor PDF Expert" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Eerlijke vergelijkingen · {{ nl_alt_count }} pagina’s in het Nederlands</p>
+    <h1 class="h1">Alternatieven voor<br><span class="gradient-text">bekende apps.</span></h1>
+    <p class="lead">Elke pagina vergelijkt een app van Lagerland Apps met een veelgebruikte app, legt uit waarin ze verschillen en zegt wanneer je beter de bekende app neemt.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Per onderwerp</p>
+    <h2 class="h2">Alle vergelijkingen in het Nederlands</h2>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Kosten delen en vaste lasten</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/nl/alternatives/wiebetaaltwat-alternatief/">
+        <span class="pill">Diensten</span>
+        <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> WieBetaaltWat</h3>
+        <p class="card-text">RightSplit leest de bon van één rekening op je iPhone en stuurt iedereen zijn bedrag met een link om jou te betalen, zonder lijst en zonder account. Voegt de hele groep wekenlang uitgaven toe, dan is WieBetaaltWat de betere keuze.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/nl/alternatives/tricount/">
+        <span class="pill">Diensten</span>
+        <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Tricount</h3>
+        <p class="card-text">RightSplit leest de bon op je iPhone en verdeelt één rekening per artikel, zonder groep of account. Tricount past beter bij een reis waarop iedereen onderweg uitgaven toevoegt.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/nl/alternatives/splitwise/">
+        <span class="pill">Diensten</span>
+        <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Splitwise</h3>
+        <p class="card-text">Met RightSplit splits je een bon zonder account, en de anderen hoeven de app niet te installeren. Splitwise is het betere gereedschap als de hele groep vanaf de eigen telefoon één gedeeld overzicht bijhoudt.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/nl/alternatives/dyme-alternatief/">
+        <span class="pill">Financiën</span>
+        <h3 class="card-compared-title">AllPaid <span class="card-compared-vs">{{ t.alt_vs }}</span> Dyme</h3>
+        <p class="card-text">AllPaid herinnert je aan de rekeningen die je zelf invoert, vóór elke vervaldatum, zonder koppeling met je bank. Wil je dat je banktransacties automatisch worden ingedeeld, dan past Dyme beter.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Schaken</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/nl/alternatives/chess-com/">
+        <span class="pill">Games</span>
+        <h3 class="card-compared-title">Chessful <span class="card-compared-vs">{{ t.alt_vs }}</span> Chess.com</h3>
+        <p class="card-text">Je importeert je partijen van Chess.com als PGN en Chessful analyseert ze op je eigen apparaat, zonder account, met uitleg bij elke fout. Om online tegen anderen te spelen blijft Chess.com de plek.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Gezondheid en training</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/nl/alternatives/whoop/">
+        <span class="pill">Gezondheid en fitness</span>
+        <h3 class="card-compared-title">Observa <span class="card-compared-vs">{{ t.alt_vs }}</span> Whoop</h3>
+        <p class="card-text">Observa berekent elke ochtend een gereedheidsscore uit de gegevens van de Apple Watch die je al draagt, zonder tweede band en zonder verplicht abonnement. Whoop past beter als je liever een eigen band met sensoren en coaching in de cloud hebt.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/nl/alternatives/oura/">
+        <span class="pill">Gezondheid en fitness</span>
+        <h3 class="card-compared-title">Observa <span class="card-compared-vs">{{ t.alt_vs }}</span> Oura Ring</h3>
+        <p class="card-text">Observa maakt van wat de Apple Watch in de Gezondheid-app bewaart een gereedheidsscore, zonder ring en zonder account. Oura past beter als je liever met een ring slaapt of de temperatuurmeting van de ring ’s nachts wilt.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/nl/alternatives/hevy/">
+        <span class="pill">Gezondheid en fitness</span>
+        <h3 class="card-compared-title">LiftLog <span class="card-compared-vs">{{ t.alt_vs }}</span> Hevy</h3>
+        <p class="card-text">LiftLog is een logboek voor krachttraining, gemaakt om alleen mee te trainen: zonder account of feed, en na 7 gratis dagen betaal je één keer. Hevy past beter als je sets met de Apple Watch wilt vastleggen of met vrienden traint.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Schermtijd</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/nl/alternatives/forest/">
+        <span class="pill">Lifestyle</span>
+        <h3 class="card-compared-title">EarnLock <span class="card-compared-vs">{{ t.alt_vs }}</span> Forest</h3>
+        <p class="card-text">Bij Forest groeit er een boom zolang je van je telefoon afblijft, en tijdens een focussessie blokkeert Forest apps. EarnLock houdt de apps die je kiest op slot tot je je dagelijkse activiteitsdoel haalt. Forest past beter als je een focustimer zoekt, wilt bijdragen aan het planten van echte bomen of Android gebruikt.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Pdf’s en bestanden</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/nl/alternatives/pdf-expert/">
+        <span class="pill">Diensten</span>
+        <h3 class="card-compared-title">MediaKit <span class="card-compared-vs">{{ t.alt_vs }}</span> PDF Expert</h3>
+        <p class="card-text">MediaKit comprimeert, voegt samen, ondertekent en maakt pdf’s zwart op je eigen apparaat, en heeft ook een levenslange optie. Voor zwaar pdf-werk met uitgebreid bewerken is PDF Expert het betere gereedschap.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+  <div class="section reveal">
+    <p class="card-text">Andere vergelijkingen bestaan alleen in het Engels, bijvoorbeeld met <a href="/alternatives/lichess/" hreflang="en">Lichess</a>, <a href="/alternatives/opal/" hreflang="en">Opal</a>, <a href="/alternatives/bevel/" hreflang="en">Bevel</a>, <a href="/alternatives/welltory/" hreflang="en">Welltory</a>, <a href="/alternatives/one-sec/" hreflang="en">one sec</a> en <a href="/alternatives/handbrake/" hreflang="en">HandBrake</a>.</p>
+  </div>
+</section>
