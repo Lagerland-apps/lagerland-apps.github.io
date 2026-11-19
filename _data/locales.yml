@@ -171,3 +171,37 @@ es:
     trial_days: "{n} días de prueba gratis"
     trial_months: "{n} meses de prueba gratis"
     trial_years: "{n} años de prueba gratis"
+pt:
+  territory: PRT
+  html_lang: pt-PT
+  hreflang: [pt-PT, pt]           # carries the bare pt tag until /pt-br/ exists (TRANSLATION.md 2)
+  og_locale: pt_PT
+  dir: ltr
+  native_name: "Português (Portugal)"
+  live: false
+  # Checked 2026-11-19 against the Portuguese App Store (iTunes lookup API, country=pt, lang=pt_pt, and the
+  # apps.apple.com/pt pages): "9,99 €" (Things 3) and "14,99 €" (Mockly) with a no-break space (U+00A0) before €,
+  # decimal comma; free apps "Grátis". Thousands with a no-break space, as Apple Portugal writes "2 000 000".
+  currencies:
+    EUR: { symbol: "€", position: after, space: " ", decimals: 2, decimal: ",", group: " " }
+  strings:
+    free: "Grátis"
+    from: "desde"
+    per_month: "/mês"
+    per_year: "/ano"
+    per_week: "/semana"
+    lifetime: "vitalício"
+    once: "uma vez"
+    or: "ou"
+    and: "e"
+    one_time_purchase: "compra única"
+    default_tier: "Premium"
+    family_sharing: "Partilha com a família"
+    decimal: ","
+    serial_comma: ""
+    trial_one_day: "1 dia de teste grátis"
+    trial_one_month: "1 mês de teste grátis"
+    trial_one_year: "1 ano de teste grátis"
+    trial_days: "{n} dias de teste grátis"
+    trial_months: "{n} meses de teste grátis"
+    trial_years: "{n} anos de teste grátis"

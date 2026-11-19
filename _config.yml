@@ -44,6 +44,10 @@ defaults:
     values:
       lang: es
   - scope:
+      path: "pt"
+    values:
+      lang: pt
+  - scope:
       path: ""
       type: apps
     values:
