@@ -104,6 +104,40 @@ fr:
     trial_days: "{n} jours d’essai gratuit"
     trial_months: "{n} mois d’essai gratuit"
     trial_years: "{n} ans d’essai gratuit"
+it:
+  territory: ITA
+  html_lang: it
+  hreflang: [it]
+  og_locale: it_IT
+  dir: ltr
+  native_name: "Italiano"
+  live: false
+  # Checked 2026-11-19 against the Italian App Store (iTunes lookup API, country=it, lang=it_it): "9,99 €" (Things 3)
+  # and "14,99 €" (Mockly) with a no-break space (U+00A0) before €, decimal comma; free apps "Gratis".
+  # Thousands "." (Italian convention, confirmed in _i18n/it-apple-terms.md).
+  currencies:
+    EUR: { symbol: "€", position: after, space: " ", decimals: 2, decimal: ",", group: "." }
+  strings:
+    free: "Gratis"
+    from: "da"
+    per_month: "/mese"
+    per_year: "/anno"
+    per_week: "/settimana"
+    lifetime: "a vita"
+    once: "una tantum"
+    or: "o"
+    and: "e"
+    one_time_purchase: "acquisto unico"
+    default_tier: "Premium"
+    family_sharing: "In famiglia"
+    decimal: ","
+    serial_comma: ""
+    trial_one_day: "1 giorno di prova gratuita"
+    trial_one_month: "1 mese di prova gratuita"
+    trial_one_year: "1 anno di prova gratuita"
+    trial_days: "{n} giorni di prova gratuita"
+    trial_months: "{n} mesi di prova gratuita"
+    trial_years: "{n} anni di prova gratuita"
 es:
   territory: ESP
   html_lang: es-ES

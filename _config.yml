@@ -36,6 +36,10 @@ defaults:
     values:
       lang: fr
   - scope:
+      path: "it"
+    values:
+      lang: it
+  - scope:
       path: "es"
     values:
       lang: es
