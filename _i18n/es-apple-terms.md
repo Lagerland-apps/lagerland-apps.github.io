@@ -314,3 +314,10 @@ Not checked: Magazines & Newspapers, Kids, other Games subcategories (Action, Ca
 | System Settings | Ajustes del Sistema (capital S on "Sistema" in the Mac guide: "Cambiar los Ajustes del Sistema") | https://support.apple.com/es-es/guide/mac-help/mchlc9d0e1f2/mac ; mg TOC | |
 | Calendar event / Reminders list | evento; recordatorio; "listas inteligentes" | ig TOC | |
 | Smart folders | "carpetas inteligentes" | ig TOC | |
+
+## Note from Tier 4 batch 2 (2026-11-19)
+
+- Heart rate app: support.apple.com/es-es/120277 writes «app Frecuencia cardiaca» (sentence case); 120276 and the Watch guide write «Frecuencia
+  Cardiaca». The site uses sentence case; don't «correct» it. Watch labels «Frec. en reposo», «Media andando», Intervalo (guide apda88aefe4c).
+- Screen Time iOS 27: «Límites de tiempo», «Horario de tiempo de uso», «Compartir entre dispositivos»; iOS 26: «Límites de uso de apps»,
+  «Tiempo de inactividad» (iphbfa595995, both versions). «Filtros de color» (iph3e2e1fb0).

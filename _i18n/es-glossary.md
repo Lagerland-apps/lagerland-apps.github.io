@@ -1781,3 +1781,15 @@ Not live: https://apps.apple.com/es/app/id6829498729 returned HTTP 404 on 2026-1
   «cardíaca» with an accent; the site follows Apple Spain («cardiaca»).
 - Pawza (`PetCare/Localizable.xcstrings`): reminders Repetición, Nunca, Urgente (Time-sensitive), Atrasado, Hoy, «Esta semana», «Más tarde»,
   «Supera los modos de concentración»; «PDF de visita al veterinario».
+
+## Additions from Tier 4 batch 2 (2026-11-19)
+
+- GymLogger X (`es.json`): «Insertar semana de descarga» (`insert_deload_week`), «Marcar como descarga» (`mark_as_deload`), «Volumen de series»,
+  «Pico de volumen», «Descanso insuficiente», «Recuperación». Avoid the English «deload» strings flagged in I-0190.
+- MediaKit: «Mantener el original (remux)» (picker), «Convertir», «Formato de salida», «Ejecutar». The Matroska error's «Conservar original (remux)»
+  is an app mismatch (I-0422).
+- Soon. (countdown catalog): tab «Plan», «modo plan», «Restaurar sugerencias», «Preparar la bolsa del hospital», «Instalar la silla del coche»,
+  «Recordatorios del modo plan»; the wedding list's «Cena de ensayo» is a US custom (I-0427).
+- Millrace: «Deshacer ese movimiento» (card), Pack de diseño 1/2, Pack de verano, Pack de invierno, Colección completa, «Apoya al desarrollador»;
+  «usos para deshacer» in prose (the catalog's «Fichas de deshacer» collides with the game's tiles).
+- EarnLock: «Desbloqueo de emergencia», «plan gratis», «%@ para desbloquear».

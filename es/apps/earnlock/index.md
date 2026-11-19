@@ -242,7 +242,7 @@ faq:
     a: "Es una estimación, y la tarjeta lo dice. iOS no deja que las apps lean tu tiempo de pantalla real por app, así que EarnLock cuenta lo que puede ver: cada vez que una app bloqueada te frena. Multiplica esos intentos por 9 minutos."
 
 related_journal:
-  anchor: "Qué puede bloquear de verdad una app en el iPhone y qué nunca podrá"
+  anchor: "Cómo bloquear una app en iPhone: lo que una app de bloqueo puede hacer de verdad y lo que iOS no le deja"
 
 enrichment:
   use_cases:

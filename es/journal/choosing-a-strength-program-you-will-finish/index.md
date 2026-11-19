@@ -85,6 +85,8 @@ El 5/3/1 viene de [Jim Wendler](https://www.jimwendler.com/blogs/jimwendler-com/
 | 3 | 75 % × 5 | 85 % × 3 | 95 % × 1+ |
 | 4 (descarga) | 40 % × 5 | 50 % × 5 | 60 % × 5 |
 
+Si tu programa no trae una semana así, el artículo sobre [la semana de descarga](/es/journal/when-to-deload/) explica cuándo hacerla y qué recortar.
+
 El «+» es donde se ve el progreso. Llevas esa última serie hasta las repeticiones de calidad que tengas, y su número de repeticiones es tu señal de progreso, mientras las series fijas se quedan para siempre en los mismos porcentajes. Al terminar el ciclo, suma 2,5 kg a los máximos de entrenamiento de tren superior y 5 kg a los de tren inferior, y vuelve a empezar. Es más o menos un año de programación decidido de una sentada, y ahí está su atractivo.
 
 El fallo es autoinfligido. El primer mes parece fácil, así que se fija el máximo de entrenamiento en el máximo real o se suman 5 kg por ciclo a todo. Seis ciclos después, la serie final es una repetición a duras penas. Merece la pena hacer caso del consejo del propio Wendler: empieza con menos peso del que crees.

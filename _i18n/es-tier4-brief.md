@@ -163,3 +163,43 @@ or app pages (the main session wires them). Other sessions (nl, fr, de, it, pt) 
   the parts a source supports: the médico del trabajo / servicio de prevención mention needs the INSST or Ley 31/1995
   page you fetched).
 - Slug, headings and all text in Spanish; no hreflang alternates (the layout handles it).
+
+---
+
+## Batch 2 (2026-11-19)
+
+Same rules as batch 1, plus the lessons in the sheet's «Found in the Tier 4 batch 1 reviews» and «Decisions from Tier 4 batch 1» (read
+both: they are the most common fixes). Research rows: «Batch 2 shortlist» in the research file. Sources folder:
+`/private/tmp/claude-501/-Users-anttiaittamaa--claude-spares-spare-QSBGdz/ae3f3811-617e-4206-99a4-9a9124fc8c81/scratchpad/es-t4/sources/<slug>/`.
+
+Spanish pages that exist now (link them, never the English, where the sentence fits): the ten batch-1 posts
+(`ls es/journal`), the guides (`ls es/guides`), the comparisons (`ls es/alternatives`), the audience pages (`ls es/for`), the app pages,
+and these batch-2 posts: `/es/journal/when-to-deload/`, `/es/journal/puzzle-games-without-ads-or-lives/`,
+`/es/journal/what-an-iphone-app-can-actually-block/`, `/es/journal/how-plan-mode-builds-a-checklist/`,
+`/es/journal/find-every-recurring-charge/`, `/es/journal/frecuencia-cardiaca-en-reposo/`, `/es/journal/cuantas-horas-de-sueno-profundo/`,
+`/es/journal/sobrecarga-progresiva/`, `/es/journal/pasaporte-para-perros/`, `/es/journal/convertir-mkv-a-mp4/`.
+
+Check every seo.keywords entry against Google suggest before you ship it (batch 1 reviewers replaced several writer keywords that suggest
+does not return): `curl -s "https://suggestqueries.google.com/complete/search?client=firefox&hl=es&gl=es&q=<url-encoded query>"`.
+
+| Post | Write to | Primary query | Notes |
+|---|---|---|---|
+| when-to-deload | es/journal/when-to-deload/index.md | semana de descarga gym | «semana de descarga» with «deload» once; GymLogger X deload labels from its Spanish catalog (es.json `load_deload`, `session_score_deload` …) or plain words |
+| puzzle-games-without-ads-or-lives | es/journal/puzzle-games-without-ads-or-lives/index.md | juegos sin anuncios iphone | Millrace: NEVER the digits of the number title it replaced, and no hint at it. Millrace's page keeps «juegos de lógica sin anuncios». Competitor games named only as English names them; no Spanish store facts unless you fetch the listing (`itunes.apple.com/lookup?country=es&lang=es_es&id=`) and save it |
+| what-an-iphone-app-can-actually-block | es/journal/what-an-iphone-app-can-actually-block/index.md | cómo bloquear una app en iphone | Apple's Screen Time names as Apple Spain writes them for iOS 27 (es-apple-terms.md; fetch support.apple.com/es-es pages you need and save them). Keep the English «by itself» / structural limits exact. The screen-time guide `/es/guides/limitar-tiempo-de-pantalla-iphone/` is the Spanish how-to: link it |
+| how-plan-mode-builds-a-checklist | es/journal/how-plan-mode-builds-a-checklist/index.md | lista para organizar una boda | Soon.'s plan-mode strings and event types exactly as its Spanish catalog / es/apps/soon/index.md give them; «evento» on the site (sheet). Suggestions are pre-written, not AI: keep that exact |
+| find-every-recurring-charge | es/journal/find-every-recurring-charge/index.md | cómo ver mis suscripciones en iphone | Rocket Money, Truebill, Monarch, Copilot are not sold in Spain: rewrite those sections around Fintonic using ONLY its Spanish App Store description (`curl -s "https://itunes.apple.com/lookup?country=es&lang=es_es&id=672220319"`, save it) and the sheet's Fintonic decisions; model `es/guides/bill-tracker-without-bank-connection.html` and `es/alternatives/alternativa-a-fintonic.html` (read both). Drop Plaid, US banks and US law. Apple's «ver o cancelar suscripciones» path from support.apple.com/es-es/118428 (fetch, save). AllPaid facts via its Spanish page, glossary and blueprint §10; prices via `{P_…@allpaid}`; disclose it is ours |
+
+### Local-only posts (front matter as the batch-1 local-only post: `local_only: true`, no `ref`, no `translated_from`, `slug` = the folder name, `date` and `last_updated` 2026-11-19)
+
+Every fact from a page you fetched today and saved (URL on line 1), from an English post you name, or from the app's facts. Nothing from
+memory. YMYL caveats in every health and pet post. Short quotes only. Model the French local-only post named in each row for structure;
+never copy French facts or French sources.
+
+| Write to | Primary query | Model (structure only) | Sources to fetch and save | App section |
+|---|---|---|---|---|
+| es/journal/frecuencia-cardiaca-en-reposo/index.md | frecuencia cardiaca en reposo normal | fr/journal/frequence-cardiaque-au-repos/index.md | Spanish-language medical sources: Fundación Española del Corazón (fundaciondelcorazon.com), MedlinePlus en español (medlineplus.gov/spanish), a Spanish public-health page if one states a range; Apple es-es on resting heart rate («Frecuencia cardiaca en reposo»); any study only as a source you fetched or an English Lagerland post cites it | Observa's resting-heart-rate use (score weight, «rango habitual») from es/apps/observa/index.md and blueprint §10; Observa is not a medical device |
+| es/journal/cuantas-horas-de-sueno-profundo/index.md | cuántas horas de sueño profundo | fr/journal/sommeil-profond-combien-d-heures/index.md | Spanish sleep or public-health sources (Sociedad Española de Sueño ses.org.es, MedlinePlus en español, Ministerio de Sanidad if it states adult sleep hours); Apple es-es sleep stages (Despierto, REM, Esencial, Sueño profundo) and that they are estimates. State no minimum or percentage unless a fetched source gives it; a calculation from a source percentage is labelled «cálculo orientativo» | Observa's sleep score and deep-sleep use from its Spanish page and §10. AfterShift's stage names are its own (Ligero, Profundo): don't mix them with Observa |
+| es/journal/sobrecarga-progresiva/index.md | sobrecarga progresiva | fr/journal/surcharge-progressive-musculation/index.md | ACSM 2009 position stand abstract (PubMed) and the ACSM 2026 resistance-training position stand (as the French page cites it: fetch and save), plus the English posts `_journal/double-progression-explained.md` and `_journal/when-to-deload.md` for their facts | LiftLog prefills the program's target weight (progression schemes per its Spanish page); GymLogger X spots plateaus («Estancamiento», «En observación», «Estancamiento previsto»; Pro) |
+| es/journal/pasaporte-para-perros/index.md | pasaporte para perros | fr/journal/passeport-europeen-chien-chat/index.md | MAPA «Viajar con la mascota. Perros, gatos, hurones» (mapa.gob.es), the BOE or EU regulation text it cites, Your Europe in Spanish, the official page that says who issues the passport in Spain (veterinario autorizado/habilitado) only as fetched. No price unless an official source gives one; dogs, cats and ferrets as the source says. Which documents cover non-EU travel only as the sources say | Pawza stores the passport and vaccine certificates as documents and reminders, per its Spanish page and §10 |
+| es/journal/convertir-mkv-a-mp4/index.md | convertir mkv a mp4 | fr/journal/convertir-mkv-en-mp4/index.md | matroska.org (what MKV is), Apple es-es on video formats the iPhone/Mac play (fetch, save), VideoLAN docs for VLC's convert function (the French page shows which); remuxing vs re-encoding only as the sources explain it | MediaKit's convert tool by its Spanish catalog labels («Convertir», formats) and §10; never claim MKV features the blueprint doesn't list |

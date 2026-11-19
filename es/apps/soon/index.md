@@ -252,7 +252,7 @@ faq:
     a: "Puedes compartir cualquier cuenta atrás como imagen en formato Historia, Publicación, Mensaje o Widget, por Mensajes, Instagram o cualquier app del menú Compartir. Las tarjetas gratuitas llevan una pequeña marca de agua de Soon., que Premium quita. Soon. no tiene cuentas atrás compartidas ni en directo entre personas; si dos personas quieren la misma cuenta atrás, cada una la añade en su propia copia."
 
 related_journal:
-  anchor: "Cómo el modo plan de Soon. crea la lista de tareas de una boda, un viaje o un embarazo"
+  anchor: "Lista para organizar una boda, un viaje o la llegada de un bebé: así la crea el modo plan de Soon."
 
 about_heading: "Qué hace Soon.: cuentas atrás, planes, widgets y recuerdos"
 

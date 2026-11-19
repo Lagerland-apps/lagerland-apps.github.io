@@ -43,9 +43,9 @@ seo:
   keywords:
     - "juegos de ingenio iphone"
     - "mejores juegos de ingenio iphone"
-    - "juegos de lógica sin anuncios"
+    - "juegos de ingenio sin anuncios"
     - "juegos de pensar iphone"
-    - "juegos sin anuncios iphone"
+    - "juegos de ingenio gratis"
 
 hero:
   pre_headline: "Juego de lógica sin palabras para iPhone y iPad"

@@ -2109,7 +2109,7 @@
      "q": "¿GymLogger X funciona en el Apple Watch sin el iPhone?"
     },
     {
-     "a": "GymLogger X estima tu 1RM de cada ejercicio con la fórmula de Epley, a partir de series de 3 repeticiones o más, y sigue la tendencia a lo largo de tus sesiones. Con Pro, Progreso de fuerza da a cada ejercicio un estado (Estancamiento, En observación o Estancamiento previsto) y una puntuación de sobrecarga, y la tarjeta Próximo paso lo convierte en una sugerencia, como un día de descanso o un cambio de enfoque. Todo se ejecuta en tu iPhone con reglas fijas. No cambia tu programa ni envía notificaciones; decides tú.",
+     "a": "GymLogger X estima tu 1RM de cada ejercicio con la fórmula de Epley, a partir de series de 3 repeticiones o más, y sigue la tendencia a lo largo de tus sesiones. Con Pro, Progreso de fuerza da a cada ejercicio un estado (Estancamiento, En observación o Estancamiento previsto) y una puntuación de sobrecarga, y la tarjeta Próximo paso lo convierte en una sugerencia, como un día de descanso o un cambio de enfoque. Todo se ejecuta en tu iPhone con reglas fijas. No cambia tu programa ni envía notificaciones; decides tú. Si crees que te toca una semana ligera, <a href=\"/es/journal/when-to-deload/\">nuestro artículo sobre la semana de descarga</a> explica cuándo hacerla y qué recortar.",
      "q": "¿Cómo funciona la detección de estancamientos?"
     },
     {
@@ -2174,7 +2174,7 @@
      "q": "¿Qué programas incluye LiftLog?"
     },
     {
-     "a": "Sí. Dale a un ejercicio de programa un esquema de progresión (doble progresión, lineal, % del máximo de entrenamiento o RPE / RIR) y LiftLog rellena cada serie pendiente con el peso que indica el programa. Al terminar, una revisión de progresión marca cada ejercicio como Progresaste, Mantén, Fallado o Descarga. Las sugerencias de peso inteligentes vienen activadas por defecto y se desactivan en Ajustes.",
+     "a": "Sí. Dale a un ejercicio de programa un esquema de progresión (doble progresión, lineal, % del máximo de entrenamiento o RPE / RIR) y LiftLog rellena cada serie pendiente con el peso que indica el programa. Al terminar, una revisión de progresión marca cada ejercicio como Progresaste, Mantén, Fallado o Descarga. Las sugerencias de peso inteligentes vienen activadas por defecto y se desactivan en Ajustes. La idea de fondo, la <a href=\"/es/journal/sobrecarga-progresiva/\">sobrecarga progresiva</a>, tiene su propio artículo, con un ejemplo en kilos.",
      "q": "¿Puede LiftLog sugerirme el peso de mi próxima sesión?"
     },
     {
@@ -2235,7 +2235,7 @@
      "q": "¿Cómo comprimo un vídeo en iPhone o Mac para que no pase de un límite de tamaño?"
     },
     {
-     "a": "Vídeo: convierte a MP4, MOV o M4V con H.264, HEVC o ProRes (ProRes se escribe en .mov). Los archivos MKV se abren directamente, porque MediaKit los desempaqueta él mismo (el audio DTS, E-AC-3 y MP3 dentro de un MKV se descarta, con un aviso). Audio: lee formatos como MP3 y FLAC y escribe M4A (AAC), WAV, AIFF, ALAC y CAF. Imágenes: HEIC, JPG, PNG, TIFF, GIF, WebP (cuando tu sistema puede escribirlo), BMP y JPEG 2000, además de RAW de cámara, AVIF, PSD y EXR como entrada. Libros electrónicos: EPUB, FB2, MOBI y AZW3 (solo lectura), PDF, TXT, HTML, CBZ y RTF. Archivos comprimidos: ZIP, TAR, TAR.GZ, GZIP, XZ y BZIP2, además de RAR4 y RAR5 para extraer. No son compatibles WebM, la creación de RAR, los RAR cifrados ni los libros de Kindle con DRM.",
+     "a": "Vídeo: convierte a MP4, MOV o M4V con H.264, HEVC o ProRes (ProRes se escribe en .mov). Los archivos MKV se abren directamente, porque MediaKit los desempaqueta él mismo (el audio DTS, E-AC-3 y MP3 dentro de un MKV se descarta, con un aviso). Audio: lee formatos como MP3 y FLAC y escribe M4A (AAC), WAV, AIFF, ALAC y CAF. Imágenes: HEIC, JPG, PNG, TIFF, GIF, WebP (cuando tu sistema puede escribirlo), BMP y JPEG 2000, además de RAW de cámara, AVIF, PSD y EXR como entrada. Libros electrónicos: EPUB, FB2, MOBI y AZW3 (solo lectura), PDF, TXT, HTML, CBZ y RTF. Archivos comprimidos: ZIP, TAR, TAR.GZ, GZIP, XZ y BZIP2, además de RAR4 y RAR5 para extraer. No son compatibles WebM, la creación de RAR, los RAR cifrados ni los libros de Kindle con DRM. Si solo necesitas pasar un MKV a MP4 sin perder calidad, el blog explica <a href=\"/es/journal/convertir-mkv-a-mp4/\">qué es un remux</a> y compara VLC, los convertidores online y MediaKit.",
      "q": "¿Qué formatos de archivo admite MediaKit?"
     },
     {
@@ -2284,7 +2284,7 @@
      "q": "¿Hay un modo sin fin?"
     },
     {
-     "a": "Nada por el juego completo. Los 64 niveles, el Juego libre, el Reto diario, las pistas, las notas del entrenador y Game Center son gratis, sin anuncios y sin suscripción. Las únicas compras son opcionales: packs de temas a {P_IAP:Millrace Designer Pack 1} cada uno o los dieciséis temas de pago en la Colección completa por {P_IAP:Millrace Complete Collection}, paquetes para deshacer movimientos desde {P_IAP:Millrace Undo 10}, y una propina de {P_IAP:Millrace Tip Jar} que no desbloquea nada. Nuestro artículo <a href=\"/journal/puzzle-games-without-ads-or-lives/\" hreflang=\"en\">Juegos de puzle sin anuncios ni vidas (en inglés)</a> explica cómo ganan dinero los juegos gratuitos.",
+     "a": "Nada por el juego completo. Los 64 niveles, el Juego libre, el Reto diario, las pistas, las notas del entrenador y Game Center son gratis, sin anuncios y sin suscripción. Las únicas compras son opcionales: packs de temas a {P_IAP:Millrace Designer Pack 1} cada uno o los dieciséis temas de pago en la Colección completa por {P_IAP:Millrace Complete Collection}, paquetes para deshacer movimientos desde {P_IAP:Millrace Undo 10}, y una propina de {P_IAP:Millrace Tip Jar} que no desbloquea nada. En el blog repasamos <a href=\"/es/journal/puzzle-games-without-ads-or-lives/\">cómo ganan dinero los demás juegos de lógica gratuitos</a> y cómo detectarlo en la ficha antes de instalar.",
      "q": "¿Cuánto cuesta Millrace?"
     },
     {
@@ -2450,7 +2450,7 @@
      "q": "¿Observa sincroniza entre dispositivos o exporta mis datos?"
     },
     {
-     "a": "Todo viene de Salud de Apple. Sueño: duración, eficiencia, despertares, regularidad, fases, frecuencia cardiaca nocturna y su descenso, y deuda de sueño frente a tu objetivo. Recuperación: preparación, VFC (SDNN), frecuencia cardiaca en reposo y estrés. Corazón: frecuencia cardiaca al caminar, VO2 máximo, zonas de frecuencia cardiaca y recuperación, y registros de ECG. Actividad y entrenos: pasos, minutos activos, distancia, pisos subidos, carga de entrenamiento y puntuación de esfuerzo. Respiración: frecuencia respiratoria y oxígeno en sangre. Cuerpo y energía: peso, grasa corporal, masa magra y energía activa y en reposo. El contexto del ciclo, opcional, muestra la fase de tu ciclo junto a la recuperación y el sueño, sin cambiar tus puntuaciones. Las señales de recuperación y del corazón se leen frente a tu propio rango habitual.",
+     "a": "Todo viene de Salud de Apple. Sueño: duración, eficiencia, despertares, regularidad, fases, frecuencia cardiaca nocturna y su descenso, y deuda de sueño frente a tu objetivo. Recuperación: preparación, VFC (SDNN), frecuencia cardiaca en reposo y estrés. Corazón: frecuencia cardiaca al caminar, VO2 máximo, zonas de frecuencia cardiaca y recuperación, y registros de ECG. Actividad y entrenos: pasos, minutos activos, distancia, pisos subidos, carga de entrenamiento y puntuación de esfuerzo. Respiración: frecuencia respiratoria y oxígeno en sangre. Cuerpo y energía: peso, grasa corporal, masa magra y energía activa y en reposo. El contexto del ciclo, opcional, muestra la fase de tu ciclo junto a la recuperación y el sueño, sin cambiar tus puntuaciones. Las señales de recuperación y del corazón se leen frente a tu propio rango habitual. Dos de esas cifras tienen artículo propio en el blog: <a href=\"/es/journal/frecuencia-cardiaca-en-reposo/\">la frecuencia cardiaca en reposo</a> y <a href=\"/es/journal/cuantas-horas-de-sueno-profundo/\">el sueño profundo</a>.",
      "q": "¿Qué mide exactamente Observa?"
     },
     {
@@ -2515,7 +2515,7 @@
      "q": "¿Pawza funciona en el iPhone Duo?"
     },
     {
-     "a": "Los que te ponga tu veterinario. Cada vacuna guarda la fecha en que se puso, la fecha del próximo vencimiento, el número de lote y notas, y puede avisarte el día del vencimiento. Los tratamientos guardan la dosis, un recordatorio de dosis recurrente y el historial de tomas. Como tú introduces los nombres que usa tu veterinario, o los escaneas del certificado, Pawza se adapta al calendario de vacunación de cualquier país: rabia, DHPP, Bordetella y leptospirosis en perros, FVRCP y FeLV en gatos, o las vacunas propias de un conejo o un caballo. Nuestro artículo <a href=\"/es/journal/puppy-and-kitten-vaccination-schedule/\">sobre el calendario de vacunas del cachorro y del gatito</a> resume qué vacunas tocan y cuándo.",
+     "a": "Los que te ponga tu veterinario. Cada vacuna guarda la fecha en que se puso, la fecha del próximo vencimiento, el número de lote y notas, y puede avisarte el día del vencimiento. Los tratamientos guardan la dosis, un recordatorio de dosis recurrente y el historial de tomas. Como tú introduces los nombres que usa tu veterinario, o los escaneas del certificado, Pawza se adapta al calendario de vacunación de cualquier país: rabia, DHPP, Bordetella y leptospirosis en perros, FVRCP y FeLV en gatos, o las vacunas propias de un conejo o un caballo. Nuestro artículo <a href=\"/es/journal/puppy-and-kitten-vaccination-schedule/\">sobre el calendario de vacunas del cachorro y del gatito</a> resume qué vacunas tocan y cuándo, y otro, cómo conseguir el <a href=\"/es/journal/pasaporte-para-perros/\">pasaporte para perros</a> si vas a viajar.",
      "q": "¿Qué vacunas y tratamientos puedo anotar en Pawza?"
     },
     {
