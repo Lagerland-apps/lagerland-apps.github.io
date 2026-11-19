@@ -1574,7 +1574,7 @@
      "q": "¿Qué es la puntuación de recuperación por turnos y cómo se calcula?"
     },
     {
-     "a": "Para quien trabaja a turnos, las siestas forman parte del plan. Una siesta corta antes de un turno de noche es una de las estrategias más habituales en los consejos de sueño para el trabajo a turnos, porque la ventana de sueño principal suele ser demasiado corta por sí sola. AfterShift importa las siestas de Salud y las reconoce como siestas, y las que registras tú, o cronometras con el temporizador de siesta de 25 minutos, entran en la misma lista. El estado de preparación cuenta el sueño que has tenido dentro de la ventana entre turnos, siestas incluidas. Premium añade una tarjeta Siestas a los detalles de recuperación.",
+     "a": "Para quien trabaja a turnos, las siestas forman parte del plan. Una siesta corta antes de un turno de noche es una de las estrategias más habituales en los consejos de sueño para el trabajo a turnos, porque la ventana de sueño principal suele ser demasiado corta por sí sola. AfterShift importa las siestas de Salud y las reconoce como siestas, y las que registras tú, o cronometras con el temporizador de siesta de 25 minutos, entran en la misma lista. El estado de preparación cuenta el sueño que has tenido dentro de la ventana entre turnos, siestas incluidas. Premium añade una tarjeta Siestas a los detalles de recuperación. Nuestro artículo sobre la <a href=\"/es/journal/deuda-de-sueno/\">deuda de sueño</a> recoge lo que dicen la Sociedad Española de Sueño y otras fuentes de salud sobre la siesta y sobre cómo recuperar el sueño perdido.",
      "q": "¿Por qué cuentan las siestas en la recuperación con AfterShift?"
     },
     {
@@ -2178,7 +2178,7 @@
      "q": "¿Puede LiftLog sugerirme el peso de mi próxima sesión?"
     },
     {
-     "a": "Sí. Una insignia de récord con la mejora aparece en el momento en que una serie supera el historial de tu 1RM estimado. La página de cada ejercicio guarda tus récords personales (1RM estimado, mejor serie y mejor volumen) y tus récords de repeticiones, con gráficos de 1RM estimado, volumen y RPE medio. Tú eliges la fórmula del 1RM en Ajustes: Adaptable (recomendada), Brzycki o Epley. Las series de calentamiento nunca cuentan. Nuestro artículo <a href=\"/es/journal/how-to-estimate-your-one-rep-max/\">sobre cómo calcular el 1RM</a> compara Epley, Brzycki y otras cinco fórmulas con ejemplos.",
+     "a": "Sí. Una insignia de récord con la mejora aparece en el momento en que una serie supera el historial de tu 1RM estimado. La página de cada ejercicio guarda tus récords personales (1RM estimado, mejor serie y mejor volumen) y tus récords de repeticiones, con gráficos de 1RM estimado, volumen y RPE medio. Tú eliges la fórmula del 1RM en Ajustes: Adaptable (recomendada), Brzycki o Epley. Las series de calentamiento nunca cuentan; cómo plantearlas está en el artículo sobre las <a href=\"/es/journal/series-de-aproximacion/\">series de aproximación</a>. Nuestro artículo <a href=\"/es/journal/how-to-estimate-your-one-rep-max/\">sobre cómo calcular el 1RM</a> compara Epley, Brzycki y otras cinco fórmulas con ejemplos.",
      "q": "¿LiftLog registra récords personales y el 1RM?"
     },
     {
@@ -2223,7 +2223,7 @@
   "mediakit": {
    "faq": [
     {
-     "a": "MediaKit es una app para iPhone y Mac con más de 150 herramientas para comprimir, convertir y editar vídeo, audio, imágenes, PDF, archivos comprimidos y libros electrónicos. Sueltas un archivo, MediaKit te propone las herramientas adecuadas y cada una funciona en tu dispositivo. Cinco herramientas son gratis para siempre, Pro desbloquea el resto y una sola compra cubre iPhone y Mac.",
+     "a": "MediaKit es una app para iPhone y Mac con más de 150 herramientas para comprimir, convertir y editar vídeo, audio, imágenes, PDF, archivos comprimidos y libros electrónicos. Sueltas un archivo, MediaKit te propone las herramientas adecuadas y cada una funciona en tu dispositivo. Cinco herramientas son gratis para siempre, Pro desbloquea el resto y una sola compra cubre iPhone y Mac. En el blog hay guías para <a href=\"/es/journal/your-photos-shouldnt-ride-the-elevator/\">convertir HEIC a JPG</a>, <a href=\"/es/journal/comprimir-pdf-mac/\">comprimir un PDF en el Mac</a> y <a href=\"/es/journal/extraer-audio-de-video-iphone/\">extraer el audio de un vídeo en el iPhone</a>.",
      "q": "¿Qué es MediaKit?"
     },
     {
@@ -2450,7 +2450,7 @@
      "q": "¿Observa sincroniza entre dispositivos o exporta mis datos?"
     },
     {
-     "a": "Todo viene de Salud de Apple. Sueño: duración, eficiencia, despertares, regularidad, fases, frecuencia cardiaca nocturna y su descenso, y deuda de sueño frente a tu objetivo. Recuperación: preparación, VFC (SDNN), frecuencia cardiaca en reposo y estrés. Corazón: frecuencia cardiaca al caminar, VO2 máximo, zonas de frecuencia cardiaca y recuperación, y registros de ECG. Actividad y entrenos: pasos, minutos activos, distancia, pisos subidos, carga de entrenamiento y puntuación de esfuerzo. Respiración: frecuencia respiratoria y oxígeno en sangre. Cuerpo y energía: peso, grasa corporal, masa magra y energía activa y en reposo. El contexto del ciclo, opcional, muestra la fase de tu ciclo junto a la recuperación y el sueño, sin cambiar tus puntuaciones. Las señales de recuperación y del corazón se leen frente a tu propio rango habitual. Dos de esas cifras tienen artículo propio en el blog: <a href=\"/es/journal/frecuencia-cardiaca-en-reposo/\">la frecuencia cardiaca en reposo</a> y <a href=\"/es/journal/cuantas-horas-de-sueno-profundo/\">el sueño profundo</a>.",
+     "a": "Todo viene de Salud de Apple. Sueño: duración, eficiencia, despertares, regularidad, fases, frecuencia cardiaca nocturna y su descenso, y deuda de sueño frente a tu objetivo. Recuperación: preparación, VFC (SDNN), frecuencia cardiaca en reposo y estrés. Corazón: frecuencia cardiaca al caminar, VO2 máximo, zonas de frecuencia cardiaca y recuperación, y registros de ECG. Actividad y entrenos: pasos, minutos activos, distancia, pisos subidos, carga de entrenamiento y puntuación de esfuerzo. Respiración: frecuencia respiratoria y oxígeno en sangre. Cuerpo y energía: peso, grasa corporal, masa magra y energía activa y en reposo. El contexto del ciclo, opcional, muestra la fase de tu ciclo junto a la recuperación y el sueño, sin cambiar tus puntuaciones. Las señales de recuperación y del corazón se leen frente a tu propio rango habitual. Cuatro de esas cifras tienen artículo propio en el blog: <a href=\"/es/journal/frecuencia-cardiaca-en-reposo/\">la frecuencia cardiaca en reposo</a>, <a href=\"/es/journal/cuantas-horas-de-sueno-profundo/\">el sueño profundo</a>, <a href=\"/es/journal/sueno-rem/\">el sueño REM</a> y <a href=\"/es/journal/vo2-max/\">el VO2 máximo</a>.",
      "q": "¿Qué mide exactamente Observa?"
     },
     {
@@ -2519,7 +2519,7 @@
      "q": "¿Qué vacunas y tratamientos puedo anotar en Pawza?"
     },
     {
-     "a": "Sí. Los recordatorios son notificaciones locales en seis categorías: vacuna, medicamento, comida, peluquería, visita al veterinario y personalizado. Pueden ser únicos o repetirse cada día, semana, mes o año. La notificación de una dosis tiene el botón «Administrada», que registra la toma; la de una comida tiene «Ya ha comido», y las demás ofrecen «Marcar como hecho» y «Posponer 1 hora». Marca un recordatorio como «Urgente» para que se salte el modo de concentración; uno único y urgente vuelve a avisar a los 5, 15 y 30 minutos hasta que actúes. Los recordatorios necesitan permiso para enviar notificaciones.",
+     "a": "Sí. Los recordatorios son notificaciones locales en seis categorías: vacuna, medicamento, comida, peluquería, visita al veterinario y personalizado. Pueden ser únicos o repetirse cada día, semana, mes o año. La notificación de una dosis tiene el botón «Administrada», que registra la toma; la de una comida tiene «Ya ha comido», y las demás ofrecen «Marcar como hecho» y «Posponer 1 hora». Marca un recordatorio como «Urgente» para que se salte el modo de concentración; uno único y urgente vuelve a avisar a los 5, 15 y 30 minutos hasta que actúes. Los recordatorios necesitan permiso para enviar notificaciones. El artículo sobre <a href=\"/es/journal/desparasitar-perro/\">cada cuánto desparasitar a un perro</a> resume las pautas de ESCCAP España y explica cómo apuntarlas en Pawza.",
      "q": "¿Recibiré recordatorios de vacunas y de medicación?"
     },
     {
@@ -2726,7 +2726,7 @@
      "q": "¿Qué es Soon.?"
     },
     {
-     "a": "Para cualquier cosa que tenga fecha. Soon. tiene tipos de evento para viajes, bodas, cumpleaños, aniversarios, exámenes, trabajo, festivos, salud, un bebé, conciertos, deporte y un evento genérico, y el modo plan sugiere una lista de tareas para la mayoría. Dale a un evento una hora además de la fecha y, durante sus últimas 24 horas, los widgets muestran en directo las horas y los minutos. Dale una fecha pasada y contará los días transcurridos.",
+     "a": "Para cualquier cosa que tenga fecha. Soon. tiene tipos de evento para viajes, bodas, cumpleaños, aniversarios, exámenes, trabajo, festivos, salud, un bebé, conciertos, deporte y un evento genérico, y el modo plan sugiere una lista de tareas para la mayoría. Dale a un evento una hora además de la fecha y, durante sus últimas 24 horas, los widgets muestran en directo las horas y los minutos. Dale una fecha pasada y contará los días transcurridos. Para fechas concretas, el blog tiene un artículo sobre <a href=\"/es/journal/festivos-2027/\">los festivos de 2027 en España</a> y otro sobre <a href=\"/es/journal/cuantos-dias-faltan-para-navidad/\">cuántos días faltan para Navidad</a>.",
      "q": "¿Para qué puedo hacer una cuenta atrás?"
     },
     {

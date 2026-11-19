@@ -112,6 +112,8 @@ Apple también describe avisos de frecuencia cardiaca alta o baja en su página 
 
 La guía del iPhone [Ver tus datos en la app Salud](https://support.apple.com/es-es/guide/iphone/iphe3d379c32/ios) dice que la app Salud puede avisarte de cambios significativos en ciertos datos, como la frecuencia cardiaca en reposo, con líneas de tendencia que indican cuánto han cambiado y durante cuánto tiempo.
 
+El Apple Watch estima además el VO2 máximo, que la app Salud muestra como Capacidad Aeróbica. En otro artículo explicamos [qué es y qué fiabilidad tiene esa estimación](/es/journal/vo2-max/).
+
 ## Leer tu frecuencia cardiaca en reposo frente a tu propia referencia
 
 Los rangos de arriba describen grupos de personas: adultos, niños de cada edad, atletas. Nuestro artículo [Las 6 métricas de Salud de Apple que merece la pena interpretar](/journal/apple-health-metrics-worth-interpreting/){: hreflang="en"} (en inglés) propone leer la frecuencia cardiaca en reposo como una media móvil de 7 días frente a tu referencia de 60 días, y no como una cifra del día. En [VFC baja en el Apple Watch](/es/journal/apple-watch-hrv-without-a-baseline/) aplicamos la misma idea a la VFC (SDNN).

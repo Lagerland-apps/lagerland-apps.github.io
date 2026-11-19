@@ -65,7 +65,7 @@ MedlinePlus añade que la calidad del sueño también importa y que quien tiene 
 
 ## Los ciclos y el momento de la noche
 
-El NHLBI describe un ciclo que se reinicia cada 80 a 100 minutos. Por lo general se pasan de 4 a 6 ciclos por noche, y es posible despertarse brevemente entre uno y otro. Según la misma página, por lo general se pasa más tiempo en sueño profundo al inicio de la noche.
+El NHLBI describe un ciclo que se reinicia cada 80 a 100 minutos. Por lo general se pasan de 4 a 6 ciclos por noche, y es posible despertarse brevemente entre uno y otro. Según la misma página, por lo general se pasa más tiempo en sueño profundo al inicio de la noche. El [sueño REM](/es/journal/sueno-rem/), en cambio, suele llegar más avanzada la noche.
 
 ## El sueño profundo y la edad
 

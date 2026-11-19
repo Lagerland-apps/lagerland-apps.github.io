@@ -1793,3 +1793,18 @@ Not live: https://apps.apple.com/es/app/id6829498729 returned HTTP 404 on 2026-1
 - Millrace: «Deshacer ese movimiento» (card), Pack de diseño 1/2, Pack de verano, Pack de invierno, Colección completa, «Apoya al desarrollador»;
   «usos para deshacer» in prose (the catalog's «Fichas de deshacer» collides with the game's tiles).
 - EarnLock: «Desbloqueo de emergencia», «plan gratis», «%@ para desbloquear».
+
+## Additions from Tier 4 batch 3 (2026-11-19)
+
+- Soon.: no event-type picker; the type is inferred from English title words (blueprint §4.3, I-0445). Add-event prompt «¿Cuál es el momento?»;
+  «Mostrar meses y semanas» is a Settings toggle, not a widget option.
+- MediaKit (catalog `es`): PDF presets Pantalla (72 DPI), eBook (150 DPI), Impresora (300 DPI), Preimpresión (600 DPI), «Ajustes con nombre … o
+  calidad personalizada», «Ahorro de %@», «%@ más pequeño»; audio «Extraer» (Audio), «Silenciar» (Vídeo), «Ajuste preestablecido» with «Podcast (mono
+  128)», «Música (estéreo 256)», «Nota de voz (mono 96)», «Hi-Fi (estéreo 320)» (Personalizado is the default, not a preset); «Biblioteca»,
+  «Elegir de Fotos», «Elegir de Archivos». Atajos actions: Comprimir vídeo, Convertir imagen, Comprimir imagen, Combinar PDF, Crear ZIP, Extraer
+  texto de una imagen.
+- Observa: Cardio Fitness card «Condición cardiovascular»; categories Superior, Excelente, Bueno, Aceptable, Necesita mejorar; trend En mejora, En
+  descenso, Estable. Apple Spain: «Capacidad Aeróbica» (Salud > Explorar > Corazón), Workout app «Entreno».
+- GymLogger X: «Marcar como calentamiento», «Serie de calentamiento». LiftLog: «Añadir calentamiento», «Añadir calentamiento cronometrado» (hint
+  «Mantén pulsado para variantes de calentamiento»).
+- Pawza: reminder repeats Nunca, Diario, Semanal, Mensual, Anual; «Administrada» (`reminder.action.given`), «Controlar existencias».

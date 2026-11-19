@@ -74,7 +74,7 @@ Si VLC ya forma parte de tus herramientas, hace el trabajo sin gastar nada y en 
 
 ## Convertidores online y archivos grandes
 
-Un convertidor online recibe tu archivo en sus servidores, lo convierte y te lo devuelve. Con un MKV grande, eso significa subirlo entero antes de empezar, y el contenido sale de tu dispositivo. Antes de subir nada, mira los límites de tamaño y las condiciones que publica el servicio que elijas. Dos páginas de este sitio detallan ese compromiso: el artículo sobre [qué pasa con tus archivos en un convertidor online](/journal/your-photos-shouldnt-ride-the-elevator/){: hreflang="en"} (en inglés) y la [comparativa con CloudConvert](/es/alternatives/cloudconvert/).
+Un convertidor online recibe tu archivo en sus servidores, lo convierte y te lo devuelve. Con un MKV grande, eso significa subirlo entero antes de empezar, y el contenido sale de tu dispositivo. Antes de subir nada, mira los límites de tamaño y las condiciones que publica el servicio que elijas. Dos páginas de este sitio detallan ese compromiso: el artículo sobre [qué pasa con tus archivos en un convertidor online](/es/journal/your-photos-shouldnt-ride-the-elevator/) y la [comparativa con CloudConvert](/es/alternatives/cloudconvert/).
 
 Para un archivo grande, el remux juega a favor: según la documentación de VLC, es mucho más rápido que transcodificar y no cambia casi el tamaño.
 

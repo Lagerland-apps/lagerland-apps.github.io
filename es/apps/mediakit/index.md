@@ -57,10 +57,8 @@ seo:
     - comprimir video en iphone
     - comprimir pdf iphone
     - convertir video a mp4 iphone
-    - convertir heic a jpg iphone
     - reducir tamaño video para enviar por whatsapp
     - compresor de videos
-    - convertir heic a jpg
 
 hero:
   pre_headline: "Para creadores, podcasters y quien prefiere no subir sus archivos personales a una web de conversión"
@@ -130,7 +128,7 @@ privacy:
 
 faq:
   - q: "¿Qué es MediaKit?"
-    a: "MediaKit es una app para iPhone y Mac con más de 150 herramientas para comprimir, convertir y editar vídeo, audio, imágenes, PDF, archivos comprimidos y libros electrónicos. Sueltas un archivo, MediaKit te propone las herramientas adecuadas y cada una funciona en tu dispositivo. Cinco herramientas son gratis para siempre, Pro desbloquea el resto y una sola compra cubre iPhone y Mac."
+    a: "MediaKit es una app para iPhone y Mac con más de 150 herramientas para comprimir, convertir y editar vídeo, audio, imágenes, PDF, archivos comprimidos y libros electrónicos. Sueltas un archivo, MediaKit te propone las herramientas adecuadas y cada una funciona en tu dispositivo. Cinco herramientas son gratis para siempre, Pro desbloquea el resto y una sola compra cubre iPhone y Mac. En el blog hay guías para <a href=\"/es/journal/your-photos-shouldnt-ride-the-elevator/\">convertir HEIC a JPG</a>, <a href=\"/es/journal/comprimir-pdf-mac/\">comprimir un PDF en el Mac</a> y <a href=\"/es/journal/extraer-audio-de-video-iphone/\">extraer el audio de un vídeo en el iPhone</a>."
   - q: "¿MediaKit sube mis archivos a internet?"
     a: "No. Cada herramienta funciona en tu iPhone o en tu Mac, y la app no hace ninguna petición de red por su cuenta; solo el App Store de Apple gestiona las compras. No hay cuenta y la app no incluye ningún SDK de analítica. La transcripción y los subtítulos automáticos usan el reconocimiento de voz del dispositivo."
   - q: "¿Cómo comprimo un vídeo en iPhone o Mac para que no pase de un límite de tamaño?"
