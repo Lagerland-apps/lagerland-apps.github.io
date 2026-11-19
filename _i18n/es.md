@@ -14,6 +14,7 @@ reviewing any Spanish page. Every decision a translator would otherwise make dif
 | Tier 2 | done 2026-11-19 (not pushed). Batch 1 (0cf087a): both hubs, chess, logic puzzles, xiangqi, workout without subscription, 3 audience pages, local-only /es/guides/limitar-tiempo-de-pantalla-iphone/. Batch 2: shogi, bill tracker rewritten around Fintonic, local-only /es/guides/como-poner-cuenta-atras-iphone/. Research: ~/Downloads/githubcode/es-tier2-research-2026-11-19.md. for/indie-ios-developers stays English-only (developers search in English) |
 | Tier 3, batch 1 | written and integrated 2026-11-19, no native review yet (not pushed): hub /es/alternatives/ and nine comparisons tricount, splitwise (RightSplit); chess-com, lichess (Chessful); whoop (Observa); hevy (LiftLog); opal, forest (EarnLock); pdf-expert (MediaKit); plus the local-only /es/alternatives/alternativa-a-fintonic/ (AllPaid vs Fintonic). Demand research over all 123 English comparisons: ~/Downloads/githubcode/es-tier3-research-2026-11-19.md (next batch listed there); Spanish store check: ~/Downloads/githubcode/es-tier3-store-2026-11-19.md. Stale check before the batch: 0 pages stale in any language |
 | Tier 3, batch 2 | written and integrated 2026-11-19, no native review yet (not pushed): oura, bevel, autosleep (Observa); fitbod, jefit (GymLogger X); settle-up (RightSplit); one-sec, screenzen (EarnLock); habitica (Taskful Day, its first Spanish comparison); plus the local-only /es/alternatives/alternativa-a-appblock/ (EarnLock vs AppBlock). Hub now 20 cards. Research: es-tier3-research-2026-11-19.md § Batch 2 shortlist (next: Welltory, Athlytic, Gentler Streak, Alpha Progression, StrongLifts, Strong, Streaks, Documents, CloudConvert, Wikipedia app); store check: ~/Downloads/githubcode/es-tier3-store-batch2-2026-11-19.md. Stale check before the batch: 0 |
+| Tier 3, batch 3 | written and integrated 2026-11-19, no native review yet (not pushed): welltory, athlytic, gentler-streak (Observa); chessable (Chessful); strong-workout-app, alpha-progression, stronglifts-5x5 (GymLogger X); wikipedia-app (WanderWiki, its first Spanish comparison); documents-by-readdle, cloudconvert (MediaKit); plus I-0372 fixed on the chess guide. Hub now 30 cards. Store check: ~/Downloads/githubcode/es-tier3-store-batch3-2026-11-19.md. Next: es-tier3-research-2026-11-19.md § Batch 3 shortlist «Next after batch 3». Stale check before the batch: 0 |
 | Stale pages | 0 (2026-11-19, `i18n.py stale`) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 270 s wall, 137 s CPU before Spanish (2026-11-19, seven research agents running in parallel, so the wall time is inflated); French sheet had 80 s after French Tier 1. Idle machine 2026-11-19: 157 s before the tx-app fix, 52 s after (617 pages, `--profile`; tx-app 99.6 s to 4.9 s, I-0258) |
@@ -258,6 +259,21 @@ Tier 3 batch 2 (2026-11-19).
 | /es/alternatives/habitica/ | `habitica en español` | `alternativa a habitica`, `habitica es gratis`, `habitica qué es` |
 | /es/alternatives/alternativa-a-appblock/ (local-only) | `appblock iphone` | `alternativa a appblock`, `appblock es gratis`, `appblock es seguro` |
 
+Tier 3 batch 3 (2026-11-19).
+
+| Page | Primary query | Secondary queries |
+|---|---|---|
+| /es/alternatives/welltory/ | `welltory en español` | `welltory opiniones`, `welltory es gratis`, `alternativa a welltory` |
+| /es/alternatives/athlytic/ | `athlytic en español` | `athlytic opiniones`, `athlytic es gratis`, `alternativa a athlytic` |
+| /es/alternatives/gentler-streak/ | `alternativa a gentler streak` | `gentler streak opiniones`, `gentler streak vs bevel` |
+| /es/alternatives/chessable/ | `chessable en español` | `chessable cursos en español`, `chessable es gratis`, `alternativa a chessable` |
+| /es/alternatives/strong-workout-app/ | `alternativa a strong` / `strong o hevy` | `strong hevy app` |
+| /es/alternatives/alpha-progression/ | `alternativa a alpha progression` | `alpha progression opiniones`, `alpha progression gratis` |
+| /es/alternatives/stronglifts-5x5/ | `stronglifts 5x5 español` | `alternativa a stronglifts`, `stronglifts 5x5 app` |
+| /es/alternatives/wikipedia-app/ | `app wikipedia español` | `app wikipedia sin internet`, `wikipedia app gratis` |
+| /es/alternatives/documents-by-readdle/ | `alternativa a documents de readdle` | `documents by readdle gratis` |
+| /es/alternatives/cloudconvert/ | `cloudconvert gratis` / `cloudconvert en español` | `cloudconvert es gratis`, `alternativa a cloudconvert` |
+
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
 - Founder lines mirror the two English forms: «Desarrollador Apple independiente · Finlandia · estudio de una sola
@@ -329,6 +345,17 @@ es-keywords.md per page.
   una pausa», ScreenZen «… bloqueo que se gana con actividad»; Whoop «Alternativa a X sin Y: Observa» is taken).
 - EarnLock: «objetivo diario de actividad» for what unlocks apps; «objetivo de pasos» only for the free tier's step goal.
 
+## Decisions from Tier 3 batch 3 (2026-11-19)
+
+- A store line «Requiere macOS … y un Mac con el chip M1» on a listing «Diseñada para iPad» is the iPad app running on Apple-silicon
+  Macs, not a Mac app: never add Mac to a competitor's platforms from it (Documents, CloudConvert, StrongLifts, Chessable).
+- Apple's App Privacy headings stay exactly as es-apple-terms.md sources them: «Datos usados para rastrearte» (not «utilizados»),
+  «Datos vinculados contigo», «Datos no vinculados contigo», «No se recopilan datos».
+- A competitor fact on the English page that the Spanish store doesn't show (Chessable Pro's 7-day trial) stays, attributed to the
+  English page's check; it is never dropped for lack of a Spanish source.
+- «… en español» pages: keyword-first «X en español: …» titles are fine for two apps (Welltory, Athlytic) as long as the tails differ.
+- GymLogger X program names and plateau statuses: es-glossary.md, GymLogger X section.
+
 ## Tells to cut in Spanish (TRANSLATION.md 8.2, plus what reviews find)
 
 Stock phrasing: «En el mundo actual», «En la era digital», «Sumerjámonos», «Adentrémonos», «Es importante destacar
@@ -380,6 +407,8 @@ Found in the Tier 3 batch 1 reviews (2026-11-19): «compra integrada» («compra
 
 Found in the Tier 3 batch 2 reviews (2026-11-19): «Datos no recopilados» (Apple: «No se recopilan datos»); a literal «el sensor … que lleva el anillo» for "finger-based sensing"; «sin X, sin Y y sin Z» in a seo.description or CTA; «Si no quieres A, B ni C» opening a quick_answer; «encaja mejor» for both sides of one verdict; sibling pages (Splitwise, Settle Up) with the same seo.title or description skeleton; «Taskful Day: Habitica convierte…» (a colon that fuses two product names); «le va a quien» («es para quien»); «lo que lo motiva» (gendered «lo»: «lo que motiva»); «cubre más terreno»; a table row header that doesn't fit the competitor's cell; «1.131» (four digits take no separator); a title promising «opiniones» on a page with no reviews.
 
+Found in the Tier 3 batch 3 reviews (2026-11-19): two colons in one sentence («… al lado: toca X para ver cuál …: lista»); a seo.description repeating a language fact already in the title and quick_answer; a bare «No:» opening a quick_answer; «X y una alternativa con…» as a description opener; «Apple Watch gratis» in a title (reads as a free watch); «sí está en español, y …» fusing two ideas; «equipamiento» where the app says «material»; «en su lugar» calquing "instead"; «merece una mirada» repeated; «arma» («monta»); «membresía» (Latin-American: «suscripción»); a reviewer «correcting» a sourced Apple label (check es-apple-terms first).
+
 Translationese: title case headings; missing ¿ and ¡; chains of gerunds copied from English -ing («ofreciendo»,
 «permitiendo», «haciendo» trailing a sentence); passive «es … por» where Spanish uses «se»; possessives on body
 parts and devices copied from English («tu teléfono» is fine, «levanta tu mano» is not: «levanta la mano»);
@@ -425,6 +454,8 @@ home, all 21 app pages, about. Native review: none yet, for every page (NATIVE R
 | Tier 3 batch 1: hub, 10 llms.txt lines, bill-tracker guide link | one writer (Sonnet) + main session | R-wiring (about 12 must-fix: hub verdicts added, Whoop card metric, llms verdict variety, Lichess line answers the «o» query) | n/a | no native review yet |
 | Tier 3 batch 2: 9 comparisons + local-only AppBlock page | one writer agent (Sonnet) each | reviewers R-health-2 (9 must-fix), R-gym-split-2 (11), R-screen-habit-2 (16), 2026-11-19: e.g. Bevel FAQ «¿Observa es más barata que Bevel?» restored, AutoSleep price removed, Oura «Estableciendo tu referencia» quoted and the five-night fact corrected, AppBlock En familia and Watch rows fixed from the store page, Jefit «sin X, sin Y» lists rewritten, Settle Up title moved off the Splitwise pattern | n/a (Tier 3) | no native review yet |
 | Tier 3 batch 2: hub (20 cards), 10 llms.txt lines, screen-time guide links | one hub writer (Sonnet) + main session | R-wiring-2 | n/a | no native review yet |
+| Tier 3 batch 3: 10 comparisons + I-0372 chess-guide fix | one writer agent (Sonnet) each | reviewers R-health-3 (8 must-fix), R-gym-3 (21), R-misc-3 (15), 2026-11-19: e.g. Documents Mac platform removed (iPad app on M1), Chessable Pro trial restored, Strong «Strong o Hevy» section trimmed to sourced facts, StrongLifts program names from the app catalog, Wikipedia app UI names described plainly, Athlytic double «en español» removed | n/a (Tier 3) | no native review yet |
+| Tier 3 batch 3: hub (30 cards), 10 llms.txt lines | one hub writer (Sonnet) + main session | R-wiring-3 | n/a | no native review yet |
 
 ## Apps still on English screenshots
 

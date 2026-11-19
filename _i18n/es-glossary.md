@@ -615,7 +615,7 @@ Wording flags:
 | Siri & Shortcuts | `Siri & Shortcuts` | `Siri y Atajos` | Apple's Spain term: Atajos. |
 | Support | `Support`; `Funds 3 months of dev` | `Apoyar`; `Financia 3 meses de desarrollo` | |
 
-Program names (StrongLifts 5×5, 5/3/1, GZCLP, Greyskull LP, ...) stay in English; descriptions are Spanish.
+Program names (StrongLifts 5×5, 5/3/1, GZCLP, Greyskull LP, ...) stay in English; descriptions are Spanish. Exceptions where the app's Spanish program catalog (`~/Downloads/GymLogger/scripts/catalog_translations/es.json`) gives a Spanish name, used on the site: «Fundamento 5×5 lineal», «Método Texas», «Método conjugado», «Rampa 5×5 intermedia» (Intermediate 5×5 Ramp), «Pesado / Ligero / Medio 5×5» (Heavy / Light / Medium 5×5). Plateau statuses on the site follow the Spanish app page: «Estancamiento», «En observación», «Estancamiento previsto» (the UI also has «Meseta detectada»; checked 2026-11-19, Tier 3 batch 3).
 
 #### Paid tier names in the Spanish UI
 
