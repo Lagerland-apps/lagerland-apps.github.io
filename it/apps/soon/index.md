@@ -236,7 +236,7 @@ faq:
     a: "Soon. ha 26 widget per la schermata Home, la schermata di blocco e StandBy, da un semplice numero di giorni a un anello, una cronologia, una vista del mese e una vista sull’intero anno, con una variante notturna per StandBy. I widget gratuiti mostrano il tuo momento fissato; Premium ti lascia scegliere qualsiasi momento per ogni widget e sblocca tutti gli stili di widget. Con iOS 18 c’è anche un comando dei giorni mancanti per il Centro di Controllo."
   - q: "Posso vedere il conto alla rovescia nella schermata di blocco e nella Dynamic Island?"
     a: "Sì. I widget della schermata di blocco funzionano nella versione gratuita e mostrano il tuo momento fissato. Con Premium, l’attività in tempo reale del conto alla rovescia finale mette il timer nella schermata di blocco e nella Dynamic Island per le ultime 24 ore, e “Mantieni nella schermata di blocco” può mostrare il conto alla rovescia fino a 90 giorni prima. iOS può terminare un’attività in tempo reale dopo qualche ora, e Soon. la aggiorna in background quando iOS lo consente."
-  - q: "Posso contare i giorni passati da una data trascorsa?"
+  - q: "Posso contare i giorni trascorsi da una data passata?"
     a: "Sì. Un momento con una data passata conta i giorni trascorsi, sulla sua scheda, nei widget, nella schermata di blocco e nel comando del Centro di Controllo. I promemoria e l’attività in tempo reale valgono solo per i conti alla rovescia. Inoltre, un conto alla rovescia arrivato al suo giorno può essere salvato come Ricordo, che mostra i giorni passati da quando è accaduto."
   - q: "Come funzionano i promemoria?"
     a: "Con Premium, attiva i promemoria per un momento e Soon. invia una notifica 7 giorni, 3 giorni e 1 giorno prima, e nel giorno stesso all’orario del momento. Se il piano di un momento ha tappe nella cronologia, ricevi un promemoria per ciascuna tappa al posto di quelli a 7, 3 e 1 giorno, e In questo giorno invia un promemoria annuale nell’anniversario di un ricordo. La versione gratuita non invia promemoria."
@@ -263,7 +263,7 @@ enrichment:
     - "Contare i giorni che mancano a un viaggio, un matrimonio, un compleanno, un esame o alla data prevista del parto, con la tua foto"
     - "Mostrare un conto alla rovescia nei widget della schermata Home, della schermata di blocco o di StandBy (26 widget)"
     - "Seguire una checklist e una cronologia suggerite per il tipo di evento (modalità piano, gratuita)"
-    - "Contare i giorni passati da una data trascorsa"
+    - "Contare i giorni trascorsi da una data passata"
     - "Conservare un momento passato come Ricordo, con un promemoria annuale In questo giorno (Premium)"
   pricing_tiers:
     - "Gratis: fino a 5 momenti, modalità piano, widget con il momento fissato, 3 temi, importazione dal calendario, Ricordi, sincronizzazione iCloud"
