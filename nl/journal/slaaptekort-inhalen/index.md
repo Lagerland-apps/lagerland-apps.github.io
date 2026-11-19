@@ -95,7 +95,7 @@ De Hersenstichting raadt geen dutjes of powernaps aan. Kom je de dag niet door z
 
 Bij ploegendienst slaap je op wisselende tijden, dus vaste tijden zijn niet altijd haalbaar. Voor adviezen bij werken in wisselende diensten verwijst Thuisarts naar een aparte pagina over ’s nachts werken. Slaap je slecht door je werk, dan kun je volgens Thuisarts met de bedrijfsarts praten. Je leidinggevende hoeft niet te weten dat je daar bent geweest.
 
-Hoe je slaapt na een nachtdienst, lees je in [Slapen na een nachtdienst](/journal/how-to-sleep-after-a-night-shift/){: hreflang="en"} (in het Engels). Op de pagina [Ploegendienst en gezondheid: iPhone-apps voor slaap en herstel](/nl/for/shift-workers/) staan apps voor werk in diensten. Hoeveel diepe slaap je nodig hebt, lees je in [Hoeveel diepe slaap heb je nodig?](/nl/journal/hoeveel-diepe-slaap/).
+Hoe je slaapt na een nachtdienst, lees je in [Slapen rond een nachtdienst](/nl/journal/how-to-sleep-after-a-night-shift/). Op de pagina [Ploegendienst en gezondheid: iPhone-apps voor slaap en herstel](/nl/for/shift-workers/) staan apps voor werk in diensten. Hoeveel diepe slaap je nodig hebt, lees je in [Hoeveel diepe slaap heb je nodig?](/nl/journal/hoeveel-diepe-slaap/).
 
 ## Je slaap bijhouden met AfterShift en Observa
 

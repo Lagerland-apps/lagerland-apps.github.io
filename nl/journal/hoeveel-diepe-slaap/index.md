@@ -103,7 +103,7 @@ Die adviezen gaan over slapen in het algemeen. Thuisarts raadt aan ze een paar w
 
 Thuisarts schrijft: maak een afspraak bij je huisarts als je over je slaapproblemen wilt praten. Helpen de slaapadviezen na een paar weken niet genoeg, maak dan ook een afspraak. Dit artikel is geen medisch advies.
 
-Hoe je slaapt na een nachtdienst, lees je in [Slapen na een nachtdienst](/journal/how-to-sleep-after-a-night-shift/){: hreflang="en"} (in het Engels). Waarom een losse HRV-waarde weinig zegt zonder je eigen basislijn, staat in [HRV-waarde: waarom het cijfer op je Apple Watch zonder basislijn bijna niets zegt](/nl/journal/apple-watch-hrv-without-a-baseline/).
+Hoe je slaapt na een nachtdienst, lees je in [Slapen rond een nachtdienst](/nl/journal/how-to-sleep-after-a-night-shift/). Waarom een losse HRV-waarde weinig zegt zonder je eigen basislijn, staat in [HRV-waarde: waarom het cijfer op je Apple Watch zonder basislijn bijna niets zegt](/nl/journal/apple-watch-hrv-without-a-baseline/).
 
 ## Je slaapfases bekijken in Observa
 

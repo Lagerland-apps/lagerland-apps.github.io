@@ -127,7 +127,7 @@ Over diensten van 12 uur vonden Sallinen en Kecklund dat de overstap van dienste
 
 ## Wat kun je doen met een rooster dat je niet zelf hebt gekozen?
 
-De meeste mensen kunnen hun rooster niet opnieuw ontwerpen, maar ze kunnen wel de zwakke plekken vinden. Schrijf een hele cyclus uit en markeer elke tussenpoos van minder dan 11 uur en elke wissel naar nachtdiensten. Op die dagen moet je zuinig zijn op je slaap: een dutje vóór de eerste nacht (de [gids over slapen na een nachtdienst](/journal/how-to-sleep-after-a-night-shift/){: hreflang="en"} (in het Engels) legt uit hoe lang en wanneer), niets extra’s plannen op de wisseldag en eerlijk nagaan of je na de laatste nacht nog fit genoeg bent om te rijden.
+De meeste mensen kunnen hun rooster niet opnieuw ontwerpen, maar ze kunnen wel de zwakke plekken vinden. Schrijf een hele cyclus uit en markeer elke tussenpoos van minder dan 11 uur en elke wissel naar nachtdiensten. Op die dagen moet je zuinig zijn op je slaap: een dutje vóór de eerste nacht (de [gids over slapen rond een nachtdienst](/nl/journal/how-to-sleep-after-a-night-shift/) legt uit hoe lang en wanneer), niets extra’s plannen op de wisseldag en eerlijk nagaan of je na de laatste nacht nog fit genoeg bent om te rijden.
 
 NIOSH schrijft ook dat verpleegkundigen zich beter aanpassen als ze enige invloed op hun rooster hebben. Mag je op je werk diensten ruilen, ruil dan eerst de achterwaartse stappen en de quick returns weg. Slaap je na een aantal weken in een rotatie nog steeds niet goed, dan beschrijft de pagina van de American Academy of Sleep Medicine over een [slaapstoornis door ploegendienst](https://sleepeducation.org/sleep-disorders/shift-work/){: hreflang="en"} (in het Engels) wanneer dat een reden is om met een arts te praten.
 
