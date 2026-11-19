@@ -17,7 +17,7 @@ seo:
     - kassenbon scannen app
     - rightsplit vs splitwise
     - rechnung teilen ohne konto
-last_updated: 2026-11-08
+last_updated: 2026-11-19
 ---
 {%- include t.html -%}
 {%- assign app = site.apps | where: "slug", "rightsplit" | first -%}
@@ -150,7 +150,7 @@ last_updated: 2026-11-08
 <section class="section reveal">
   <h2 class="h2">Weitere Vergleiche mit RightSplit</h2>
   <p class="lead">Andere Apps zum Teilen von Rechnungen, die Leute mit Splitwise vergleichen.</p>
-  <div class="grid grid-2 stagger">
+  <div class="grid grid-3 stagger">
     <a class="card" href="/de/alternatives/tricount/">
       <div class="card-title">vs. Tricount</div>
       <div class="card-text">Die Tricount-Alternative für die einzelne Rechnung, ohne Gruppe anzulegen.</div>
@@ -158,6 +158,10 @@ last_updated: 2026-11-08
     <a class="card" href="{% include l.html url="/alternatives/settle-up/" %}"{% if l_en %} hreflang="en"{% endif %}>
       <div class="card-title">vs. Settle Up{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</div>
       <div class="card-text">RightSplit teilt eine Rechnung, Settle Up führt laufende Gruppenschulden.</div>
+    </a>
+    <a class="card" href="/de/alternatives/splid-alternative/">
+      <div class="card-title">vs. Splid</div>
+      <div class="card-text">Splid rechnet die Ausgaben ab, die eure Gruppe einträgt. RightSplit liest den Kassenbon und teilt ihn nach Artikeln.</div>
     </a>
   </div>
 </section>

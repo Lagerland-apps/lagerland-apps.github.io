@@ -16,6 +16,7 @@ reviewing any German page. Every decision a translator would otherwise make diff
 | Tiers 2 to 4, batch 3 | written and integrated 2026-10-29, no native review yet: guides best-shogi-apps-iphone, best-xiangqi-apps-iphone, bill-tracker-without-bank-connection; for/apple-health-power-users, for/calm-productivity; comparisons caliber, compress-videos-resize-video, convertio, cloudconvert, habitica, habitnow, image-size, jomo, ladder, lichess, productive, settle-up, streaks-app, unpluq, way-of-life, wikipedia-app. Writer notes de-batch3-DG10 to DG14-2026-10-29.md |
 | Tiers 2 to 4, batch 4 | written and integrated 2026-10-29, no native review yet: 19 journal posts (apple-health-metrics-worth-interpreting, what-14-days-of-apple-health-can-reveal, your-apple-health-data-doesnt-mean-what-you-think, how-to-sleep-on-call, double-progression-explained, resolutions-and-the-fitness-app-trap, bill-splitting-math-tax-tip-shared-plates, how-to-organize-bills-each-month, i-will-not-ask-for-your-bank-login, pet-medical-records-what-to-keep, what-an-iphone-app-can-actually-block, making-shogi-readable-without-kanji, shogi-openings-for-beginners, xiangqi-openings-explained, puzzle-games-without-ads-or-lives, puzzle-game-no-ads-one-purchase, countdown-psychology-why-anticipation-beats-reminders, how-plan-mode-builds-a-checklist, how-to-find-interesting-wikipedia-articles). The related_journal cards of AllPaid, EarnLock, Observa, Pawza, RightSplit, Shogiful and Soon. now open the German posts. Writer notes de-batch4-DG15 to DG18-2026-10-29.md |
 | Tiers 2 to 4, batch 5 (Tier 4) | written and integrated 2026-11-08, no native review yet: the translation 30-chess-mistake-motifs and nine German-only posts (`local_only: true`): ruhepuls-normalwerte, tiefschlaf-wie-viel, vo2max-apple-watch (Observa), schlafschuld-abbauen (AfterShift), kuendigungsbutton (AllPaid), wurmkur-hund-wie-oft (Pawza), mkv-in-mp4-umwandeln (MediaKit), countdown-bis-weihnachten (Soon.), progressive-overload (LiftLog, GymLogger X). Sonnet writers, two separate reviewer agents (copy-editing, every source re-fetched, blueprint check). Research: ~/Downloads/githubcode/de-tier4-research-2026-11-08.md (next candidates listed there) |
+| Tier 3 batch 4 (comparisons) | written and integrated 2026-11-19, no native review yet: chess-com, chessable, pdf-expert, documents-by-readdle, handbrake, jefit, stronglifts-5x5, gentler-streak, rise-sleep-tracker (first German AfterShift comparison), hrv4training, plus the local-only /de/alternatives/splid-alternative/ (RightSplit; Splid has 40.566 German ratings, more than Tricount). Hub 46 cards. Sonnet writers (owner asked), two separate reviewer agents (97 fixes) and a wiring reviewer. Briefs: _i18n/de-tier3-brief.md, _i18n/de-tier3-review-brief.md; German store check ~/Downloads/githubcode/de-tier3-store-2026-11-19.md. Remaining English comparisons have weak or English-only German demand (Timeshifter, Magnus Trainer, Kiwix, Permute) |
 | Native review | none yet (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 14 s with the setup in place (9.9 s before Phase 0) |
 
@@ -210,6 +211,17 @@ their children's queries.
 | /de/alternatives/image-size/ | `bilder verkleinern iphone` | |
 | /de/alternatives/cloudconvert/ | `cloudconvert alternative` | |
 | /de/alternatives/convertio/ | `convertio alternative` | |
+| /de/alternatives/chess-com/ | `chess.com alternative` | `chess.com kosten`, `chess.com premium kosten`, `chess.com kostenlose analyse`, `chess.com oder lichess` |
+| /de/alternatives/chessable/ | `chessable alternative` | `chessable kosten`, `chessable deutsch`, `chessable erfahrungen`, `chessable kurse deutsch` |
+| /de/alternatives/pdf-expert/ | `pdf expert alternative` | `pdf expert kostenlose alternative`, `pdf expert kostenlos`, `pdf expert abo kosten` |
+| /de/alternatives/documents-by-readdle/ | `documents readdle alternative` | `documents readdle kosten`, `readdle documents preise`, `dokumente app readdle` |
+| /de/alternatives/handbrake/ | `handbrake alternative mac` | `handbrake alternative`, `handbrake iphone`, `handbrake video komprimieren` |
+| /de/alternatives/jefit/ | `jefit alternative` | `jefit kosten`, `jefit erfahrungen`, `jefit deutsch`, `jefit apple watch` |
+| /de/alternatives/stronglifts-5x5/ | `stronglifts 5x5 alternative` | `stronglifts alternative`, `stronglifts 5x5 app`, `stronglifts 5x5 deutsch` |
+| /de/alternatives/gentler-streak/ | `gentler streak alternative` | `gentler streak kosten`, `gentler streak deutsch`, `gentler streak erfahrungen` |
+| /de/alternatives/rise-sleep-tracker/ | `rise app alternative` | `rise schlaf app`, `rise schlaf app erfahrungen`, `rise app kosten` |
+| /de/alternatives/hrv4training/ | `hrv4training alternative` | `hrv4training deutsch`, `hrv4training erfahrungen`, `hrv4training apple watch` |
+| /de/alternatives/splid-alternative/ (local-only) | `splid alternative` | `splid app kostenlos`, `splid oder splitwise`, `splid oder tricount`, `splid app erfahrungen` |
 | /de/journal/apple-health-metrics-worth-interpreting/ | `apple health daten auswerten` (shared with /de/for/apple-health-power-users/) | `apple health werte erklärt`, `welche apple health werte sind wichtig` |
 | /de/journal/what-14-days-of-apple-health-can-reveal/ | `apple health daten` (not researched) | `wie viele tage daten hrv` |
 | /de/journal/your-apple-health-data-doesnt-mean-what-you-think/ | `apple health daten verstehen` (not researched) | `hrv deuten` |
@@ -286,6 +298,19 @@ Found in the AI-file review (2026-10-27): „Antwortmaschinen“ for "answer eng
 „wagnisfinanziert“ for "VC-backed" (write „mit Risikokapital“); „kostenpflichtige Apps … oder kostenlos“ in one list
 (calque of "paid apps sold as … or freemium"); „englisch sein“ for pages (write „auf Englisch“); feature lists that
 end in „kostenlos“ while one item is paid (name the tier, Premium or Pro, next to the paid item).
+
+Found in reviews (Tier 3 batch 4, 2026-11-19): „X Alternative“ unhyphenated in titles (write „Gentler-Streak-Alternative“,
+„PDF-Expert-Alternative“); „Home-Bildschirm“ for an app's own start screen (write „Startseite der App“); „setzt dich zurück“ for
+"resets you" (write „nimmt das Gewicht zurück“); „tief“ for a "deep" app or editor (write „umfangreich“); „ernsthaftes
+Kommentieren“, „schwere PDF-Arbeit“ (write „intensives“, „viel PDF-Arbeit“); „nahe Alternative“; „kommt schwer an etwas
+Besserem vorbei“ (write „findet kaum etwas Besseres als“); „Wie schlägt sich X gegen Y?“ (write „Wie unterscheiden sich X
+und Y?“); „X öffnen.“ as a CTA heading (write „Probier X aus.“); a digit for "one" in prose („aus 1 Kalender“); the app as
+subject of the user's action („GymLogger X trägt Sätze ein“); generic-masculine audience nouns („Einsteiger“, „Schläfer“,
+„Nutzer von …“); „Wer …, kommt …“ on du pages; „{TRIAL}, oder {P_LIFETIME} einmalig“ (write „(beide Abos kannst du zuerst
+{TRIAL}) oder {P_LIFETIME} einmalig“); „{P_LIFETIME} Lebenslang“ in running text (write „einmalig“); a capital after a
+semicolon; FAQ answers that point „weiter unten“ (meaningless in JSON-LD); four-digit numbers with a dot („2.000“). Wiring review: impersonal „ohne sich in X einzuarbeiten“ in du copy; „von Hand eintragen“ when the
+competitor's text only says „eintragen“; „gekaufte Kurse“ when the page says most, not all; overlapping heading triads („Dateien,
+Videos und PDFs“); „neben über 150 Werkzeugen“ when the 150 include the item just named.
 
 Found in reviews (Tier 4 batch 5, 2026-11-08): „sofort“ for the legal „unverzüglich“; a quoted definition bent to fit the
 sentence (quotes stay verbatim); „falsch getimt“; „Lucena-Brücke“ (write „Brückenbau in der Lucena-Stellung“); „Erstickungsmatt“

@@ -197,7 +197,7 @@
      "q": "Ist AppMeta sicher? Wo landen meine Zugangsdaten für App Store Connect?"
     },
     {
-     "a": "AppMeta ist kostenlos zu laden und läuft im Demomodus: jeder Bildschirm mit Beispiel-Apps, Sprachen, Schlüsselwörtern, In-App-Käufen, Bewertungen und Verkäufen, ohne Konto. Im Demomodus ist Schreiben gesperrt. Um dein eigenes App-Store-Connect-Konto zu verbinden, brauchst du Pro: {P_YEARLY}/Jahr, das Abo kannst du zuerst {TRIAL}, oder {P_LIFETIME} einmalig als Einmalkauf. Im Demomodus kannst du jeden Bildschirm ausprobieren, bevor du kaufst. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung.",
+     "a": "AppMeta ist kostenlos zu laden und läuft im Demomodus: jeder Bildschirm mit Beispiel-Apps, Sprachen, Schlüsselwörtern, In-App-Käufen, Bewertungen und Verkäufen, ohne Konto. Im Demomodus ist Schreiben gesperrt. Um dein eigenes App-Store-Connect-Konto zu verbinden, brauchst du Pro: {P_YEARLY}/Jahr (das Abo kannst du zuerst {TRIAL}) oder {P_LIFETIME} als Einmalkauf. Im Demomodus kannst du jeden Bildschirm ausprobieren, bevor du kaufst. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung.",
      "q": "Ist AppMeta kostenlos?"
     },
     {
@@ -538,7 +538,7 @@
   "gymlogger-x": {
    "faq": [
     {
-     "a": "GymLogger X ist ein Trainingstagebuch für Krafttraining auf dem iPhone, mit einer App für die Apple Watch. Du trägst Sätze ein, bei denen die Werte vom letzten Mal schon in der Zeile stehen, folgst einem von 44 fertigen Programmen oder einem, das der Smart Program Creator für dich baut, und bekommst mit Pro Signale zu Plateau, Ermüdung und Muskelbalance aus deinen eigenen Einträgen. Die App hat 1500 Übungen (animierte Demos mit Pro) und läuft in 40 Sprachen. Die Grundfunktionen sind kostenlos. Pro kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr, beide Abos kannst du zuerst {TRIAL}, oder {P_LIFETIME} einmalig.",
+     "a": "GymLogger X ist ein Trainingstagebuch für Krafttraining auf dem iPhone, mit einer App für die Apple Watch. Du trägst Sätze ein, bei denen die Werte vom letzten Mal schon in der Zeile stehen, folgst einem von 44 fertigen Programmen oder einem, das der Smart Program Creator für dich baut, und bekommst mit Pro Signale zu Plateau, Ermüdung und Muskelbalance aus deinen eigenen Einträgen. Die App hat 1500 Übungen (animierte Demos mit Pro) und läuft in 40 Sprachen. Die Grundfunktionen sind kostenlos. Pro kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr (beide Abos kannst du zuerst {TRIAL}) oder {P_LIFETIME} einmalig.",
      "q": "Was ist GymLogger X?"
     },
     {
@@ -566,7 +566,7 @@
      "q": "Wie funktioniert die Plateau-Erkennung?"
     },
     {
-     "a": "Das Eintragen bleibt dauerhaft kostenlos: unbegrenzt Trainings auf iPhone und Apple Watch, der Herzfrequenz-Pausentimer, 1500 Übungen, ein Programm gleichzeitig (6 kostenlose Programme, ein eigenes oder eines vom Smart Program Creator), 3 Vorlagen, die letzten 30 Tage Verlauf, der Export nach Apple Health und die iCloud-Synchronisierung. Pro schaltet alle 44 Programme frei, unbegrenzt Programme und Vorlagen, deinen kompletten Verlauf, die Einblicke, Signale zu Erholung und Plateau, die Muskel-Heatmap, animierte Demos, eigene Übungen, den CSV-Import, alle Widgets und 8 Farbthemen. Pro kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr, beide Abos kannst du zuerst {TRIAL}, oder {P_LIFETIME} einmalig, und unterstützt die Familienfreigabe. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung.",
+     "a": "Das Eintragen bleibt dauerhaft kostenlos: unbegrenzt Trainings auf iPhone und Apple Watch, der Herzfrequenz-Pausentimer, 1500 Übungen, ein Programm gleichzeitig (6 kostenlose Programme, ein eigenes oder eines vom Smart Program Creator), 3 Vorlagen, die letzten 30 Tage Verlauf, der Export nach Apple Health und die iCloud-Synchronisierung. Pro schaltet alle 44 Programme frei, unbegrenzt Programme und Vorlagen, deinen kompletten Verlauf, die Einblicke, Signale zu Erholung und Plateau, die Muskel-Heatmap, animierte Demos, eigene Übungen, den CSV-Import, alle Widgets und 8 Farbthemen. Pro kostet {P_MONTHLY} im Monat oder {P_YEARLY} im Jahr (beide Abos kannst du zuerst {TRIAL}) oder {P_LIFETIME} einmalig und unterstützt die Familienfreigabe. Die Preise gelten für den deutschen App Store. In anderen Ländern zeigt der App Store beim Kauf die Preise in deiner Landeswährung.",
      "q": "Ist GymLogger X kostenlos? Was schaltet Pro frei?"
     },
     {

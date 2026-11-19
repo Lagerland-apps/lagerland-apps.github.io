@@ -47,12 +47,14 @@
     "en": "/alternatives/caliber/"
   },
   "/alternatives/chess-com/": {
+    "de": "/de/alternatives/chess-com/",
     "en": "/alternatives/chess-com/",
     "es": "/es/alternatives/chess-com/",
     "fr": "/fr/alternatives/chess-com/",
     "pt": "/pt/alternatives/chess-com/"
   },
   "/alternatives/chessable/": {
+    "de": "/de/alternatives/chessable/",
     "en": "/alternatives/chessable/",
     "es": "/es/alternatives/chessable/",
     "fr": "/fr/alternatives/chessable/"
@@ -76,6 +78,7 @@
     "en": "/alternatives/countdown-star/"
   },
   "/alternatives/documents-by-readdle/": {
+    "de": "/de/alternatives/documents-by-readdle/",
     "en": "/alternatives/documents-by-readdle/",
     "es": "/es/alternatives/documents-by-readdle/"
   },
@@ -93,6 +96,7 @@
     "pt": "/pt/alternatives/forest/"
   },
   "/alternatives/gentler-streak/": {
+    "de": "/de/alternatives/gentler-streak/",
     "en": "/alternatives/gentler-streak/",
     "es": "/es/alternatives/gentler-streak/",
     "fr": "/fr/alternatives/gentler-streak/"
@@ -107,6 +111,10 @@
     "de": "/de/alternatives/habitnow/",
     "en": "/alternatives/habitnow/"
   },
+  "/alternatives/handbrake/": {
+    "de": "/de/alternatives/handbrake/",
+    "en": "/alternatives/handbrake/"
+  },
   "/alternatives/hevy/": {
     "de": "/de/alternatives/hevy/",
     "en": "/alternatives/hevy/",
@@ -114,11 +122,16 @@
     "fr": "/fr/alternatives/hevy/",
     "pt": "/pt/alternatives/hevy/"
   },
+  "/alternatives/hrv4training/": {
+    "de": "/de/alternatives/hrv4training/",
+    "en": "/alternatives/hrv4training/"
+  },
   "/alternatives/image-size/": {
     "de": "/de/alternatives/image-size/",
     "en": "/alternatives/image-size/"
   },
   "/alternatives/jefit/": {
+    "de": "/de/alternatives/jefit/",
     "en": "/alternatives/jefit/",
     "es": "/es/alternatives/jefit/"
   },
@@ -159,6 +172,7 @@
     "pt": "/pt/alternatives/oura/"
   },
   "/alternatives/pdf-expert/": {
+    "de": "/de/alternatives/pdf-expert/",
     "en": "/alternatives/pdf-expert/",
     "es": "/es/alternatives/pdf-expert/",
     "fr": "/fr/alternatives/pdf-expert/",
@@ -169,6 +183,7 @@
     "en": "/alternatives/productive/"
   },
   "/alternatives/rise-sleep-tracker/": {
+    "de": "/de/alternatives/rise-sleep-tracker/",
     "en": "/alternatives/rise-sleep-tracker/",
     "fr": "/fr/alternatives/rise-sleep-tracker/"
   },
@@ -202,6 +217,7 @@
     "fr": "/fr/alternatives/strong-workout-app/"
   },
   "/alternatives/stronglifts-5x5/": {
+    "de": "/de/alternatives/stronglifts-5x5/",
     "en": "/alternatives/stronglifts-5x5/",
     "es": "/es/alternatives/stronglifts-5x5/",
     "fr": "/fr/alternatives/stronglifts-5x5/"

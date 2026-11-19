@@ -4,7 +4,7 @@ ref: /alternatives/
 permalink: /de/alternatives/
 translated_from: 2026-11-08
 title: "Alternativen"
-quick_answer: "Die Vergleichsseiten stellen eine App von Lagerland Apps neben eine bekannte App, von der viele umsteigen, erklären, was sich wirklich unterscheidet, und sagen, wem welche App passt, auch wenn die bekannte App die bessere Wahl ist. Auf Deutsch gibt es bisher Vergleiche für Observa (Oura, Whoop, Athlytic, AutoSleep, Bevel, Welltory), GymLogger X und LiftLog (Strong, Hevy, Fitbod, Alpha Progression, Caliber, Ladder), EarnLock (Opal, one sec, ScreenZen, Forest, Brick, Unpluq, Jomo), RightSplit (Splitwise, Tricount, Settle Up), AllPaid (Finanzguru), Taskful Day (Streaks, Habitica, Productive, Way of Life, HabitNow), Soon. (Countdown Star), Chessful (Lichess), WanderWiki (Wikipedia-App) und MediaKit (Compress Videos, Bildgröße, CloudConvert, Convertio). Preise der anderen Apps nennen wir nur, wenn wir sie für Deutschland geprüft haben, und dann mit Datum."
+quick_answer: "Die Vergleichsseiten stellen eine App von Lagerland Apps neben eine bekannte App, von der viele umsteigen, erklären, was sich wirklich unterscheidet, und sagen, wem welche App passt, auch wenn die bekannte App die bessere Wahl ist. Auf Deutsch gibt es bisher Vergleiche für Observa (Oura, Whoop, Athlytic, AutoSleep, Bevel, Welltory, Gentler Streak, HRV4Training), GymLogger X und LiftLog (Strong, Hevy, Fitbod, Alpha Progression, Caliber, Ladder, Jefit, StrongLifts 5x5), EarnLock (Opal, one sec, ScreenZen, Forest, Brick, Unpluq, Jomo), RightSplit (Splitwise, Tricount, Settle Up, Splid), AllPaid (Finanzguru), Taskful Day (Streaks, Habitica, Productive, Way of Life, HabitNow), Soon. (Countdown Star), Chessful (Lichess, Chess.com, Chessable), WanderWiki (Wikipedia-App), MediaKit (Compress Videos, Bildgröße, CloudConvert, Convertio, PDF Expert, Documents by Readdle, HandBrake) und AfterShift (RISE). Preise der anderen Apps nennen wir nur, wenn wir sie für Deutschland geprüft haben, und dann mit Datum."
 seo:
   title: "Alternativen zu Splitwise, Opal, Strong, Oura und mehr"
   description: "Ehrliche Vergleiche mit Splitwise, Finanzguru, Strong, Fitbod, Opal, Forest, Oura, Whoop, AutoSleep und mehr, und wem welche App passt."
@@ -24,7 +24,10 @@ seo:
     - streaks app alternative
     - lichess alternative
     - cloudconvert alternative
-last_updated: 2026-11-08
+    - chess.com alternative
+    - splid alternative
+    - pdf expert alternative
+last_updated: 2026-11-19
 ---
 {%- include t.html -%}
 {%- assign de_alt_count = site.pages | where: "lang", "de" | where_exp: "p", "p.url contains '/de/alternatives/'" | size | minus: 1 -%}
@@ -84,7 +87,18 @@ last_updated: 2026-11-08
       { "@type": "ListItem", "position": 32, "url": "{{ site.url }}/de/alternatives/compress-videos-resize-video/", "name": "Alternative zu Compress Videos & Resize Video: MediaKit" },
       { "@type": "ListItem", "position": 33, "url": "{{ site.url }}/de/alternatives/image-size/", "name": "Alternative zu Bildgröße (Image Size): MediaKit" },
       { "@type": "ListItem", "position": 34, "url": "{{ site.url }}/de/alternatives/cloudconvert/", "name": "CloudConvert-Alternative: MediaKit" },
-      { "@type": "ListItem", "position": 35, "url": "{{ site.url }}/de/alternatives/convertio/", "name": "Convertio-Alternative: MediaKit" }
+      { "@type": "ListItem", "position": 35, "url": "{{ site.url }}/de/alternatives/convertio/", "name": "Convertio-Alternative: MediaKit" },
+      { "@type": "ListItem", "position": 36, "url": "{{ site.url }}/de/alternatives/gentler-streak/", "name": "Gentler-Streak-Alternative: Observa" },
+      { "@type": "ListItem", "position": 37, "url": "{{ site.url }}/de/alternatives/hrv4training/", "name": "HRV4Training-Alternative: Observa" },
+      { "@type": "ListItem", "position": 38, "url": "{{ site.url }}/de/alternatives/rise-sleep-tracker/", "name": "RISE-Alternative: AfterShift" },
+      { "@type": "ListItem", "position": 39, "url": "{{ site.url }}/de/alternatives/jefit/", "name": "Jefit-Alternative: GymLogger X" },
+      { "@type": "ListItem", "position": 40, "url": "{{ site.url }}/de/alternatives/stronglifts-5x5/", "name": "StrongLifts-5x5-Alternative: GymLogger X" },
+      { "@type": "ListItem", "position": 41, "url": "{{ site.url }}/de/alternatives/splid-alternative/", "name": "Splid-Alternative: RightSplit" },
+      { "@type": "ListItem", "position": 42, "url": "{{ site.url }}/de/alternatives/chess-com/", "name": "Chess.com-Alternative: Chessful" },
+      { "@type": "ListItem", "position": 43, "url": "{{ site.url }}/de/alternatives/chessable/", "name": "Chessable-Alternative: Chessful" },
+      { "@type": "ListItem", "position": 44, "url": "{{ site.url }}/de/alternatives/pdf-expert/", "name": "PDF-Expert-Alternative: MediaKit" },
+      { "@type": "ListItem", "position": 45, "url": "{{ site.url }}/de/alternatives/documents-by-readdle/", "name": "Documents-by-Readdle-Alternative: MediaKit" },
+      { "@type": "ListItem", "position": 46, "url": "{{ site.url }}/de/alternatives/handbrake/", "name": "HandBrake-Alternative: MediaKit" }
     ]
   }
 }
@@ -145,6 +159,24 @@ last_updated: 2026-11-08
         <p class="card-text">Bereitschaft und Stress aus HRV (SDNN), Ruheherzfrequenz und Schlaf, die deine Apple Watch schon aufzeichnet, ohne Kameramessung und ohne Cloud-Konto.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
+      <a class="card card-compared" href="/de/alternatives/gentler-streak/">
+        <span class="pill">Gesundheit</span>
+        <h3 class="card-compared-title">Observa <span class="card-compared-vs">{{ t.alt_vs }}</span> Gentler Streak</h3>
+        <p class="card-text">Gentler Streak schlägt vor, ob heute Spaziergang, Workout oder Pause passt. Observa erklärt deine Erholung aus Schlaf, HRV (SDNN) und Ruheherzfrequenz. Du kannst auch beide Apps nebeneinander nutzen.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/hrv4training/">
+        <span class="pill">Gesundheit</span>
+        <h3 class="card-compared-title">Observa <span class="card-compared-vs">{{ t.alt_vs }}</span> HRV4Training</h3>
+        <p class="card-text">Ohne Messung am Morgen: Observa liest HRV (SDNN), Schlaf und Ruheherzfrequenz, die deine Apple Watch schon in Apple Health speichert, und empfiehlt dein Training.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/rise-sleep-tracker/">
+        <span class="pill">Gesundheit</span>
+        <h3 class="card-compared-title">AfterShift <span class="card-compared-vs">{{ t.alt_vs }}</span> RISE</h3>
+        <p class="card-text">Für Nacht- und Wechselschicht: AfterShift misst die Erholung zwischen deinen Schichten und zählt Tagschlaf und Nickerchen mit.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
     </div>
   </div>
 
@@ -185,6 +217,18 @@ last_updated: 2026-11-08
         <span class="pill">Fitness</span>
         <h3 class="card-compared-title">LiftLog <span class="card-compared-vs">{{ t.alt_vs }}</span> Ladder</h3>
         <p class="card-text">Ladder verkauft gecoachte Team-Programme mit Videoworkouts im Abo. LiftLog ist ein Trainingstagebuch für dich allein, mit 40 fertigen Programmen und einem Einmalkauf.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/jefit/">
+        <span class="pill">Fitness</span>
+        <h3 class="card-compared-title">GymLogger X <span class="card-compared-vs">{{ t.alt_vs }}</span> Jefit</h3>
+        <p class="card-text">Ein Trainingstagebuch ohne Konto, Werbung und Community-Feed, mit kostenloser App für die Apple Watch und 44 Programmen, 6 davon kostenlos.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/stronglifts-5x5/">
+        <span class="pill">Fitness</span>
+        <h3 class="card-compared-title">GymLogger X <span class="card-compared-vs">{{ t.alt_vs }}</span> StrongLifts 5x5</h3>
+        <p class="card-text">Eintragen und Linear 5×5 Foundation sind kostenlos. Wenn du über das 5×5 hinauswächst, warten periodisierte Programme mit Deload-Wochen.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
     </div>
@@ -265,6 +309,12 @@ last_updated: 2026-11-08
         <p class="card-text">Settle Up führt eine gemeinsame Gruppenkasse, RightSplit rechnet die eine Rechnung vor dir ab: Kassenbon scannen, nach Artikeln teilen, Beträge mit einem Link zum Bezahlen verschicken.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
+      <a class="card card-compared" href="/de/alternatives/splid-alternative/">
+        <span class="pill">Werkzeuge</span>
+        <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Splid</h3>
+        <p class="card-text">Splid rechnet die Ausgaben ab, die eure Gruppe einträgt. RightSplit liest den Kassenbon einer einzelnen Rechnung; nach dem ersten kostenlosen Scan gehört die Aufteilung nach Artikeln zu Pro+.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
     </div>
   </div>
 
@@ -319,6 +369,18 @@ last_updated: 2026-11-08
         <p class="card-text">Behalte Lichess für Online-Partien: Chessful analysiert deine Lichess-Partien offline und erklärt jeden Fehler in Worten. Lichess bleibt die bessere Wahl für Partien gegen Menschen.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
+      <a class="card card-compared" href="/de/alternatives/chess-com/">
+        <span class="pill">Spiele</span>
+        <h3 class="card-compared-title">Chessful <span class="card-compared-vs">{{ t.alt_vs }}</span> Chess.com</h3>
+        <p class="card-text">Spiel weiter auf Chess.com und lass Chessful deine Partien prüfen: Stockfish rechnet auf deinem Gerät, und jeder Fehler wird in Worten erklärt. Ein Konto brauchst du nicht.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/chessable/">
+        <span class="pill">Spiele</span>
+        <h3 class="card-compared-title">Chessful <span class="card-compared-vs">{{ t.alt_vs }}</span> Chessable</h3>
+        <p class="card-text">Training aus deinen eigenen Partien statt aus fertigen Kursen, mit verteilter Wiederholung, 156 kostenlosen Lektionen und deutscher Oberfläche.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
       <a class="card card-compared" href="/de/alternatives/wikipedia-app/">
         <span class="pill">Lesen</span>
         <h3 class="card-compared-title">WanderWiki <span class="card-compared-vs">{{ t.alt_vs }}</span> Wikipedia-App</h3>
@@ -329,7 +391,7 @@ last_updated: 2026-11-08
   </div>
 
   <div class="section reveal">
-    <h3 class="h2" style="margin-bottom:var(--s-2);">Dateien umwandeln</h3>
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Dateien umwandeln und komprimieren</h3>
     <div class="grid grid-2 stagger">
       <a class="card card-compared" href="/de/alternatives/compress-videos-resize-video/">
         <span class="pill">Werkzeuge</span>
@@ -353,6 +415,24 @@ last_updated: 2026-11-08
         <span class="pill">Werkzeuge</span>
         <h3 class="card-compared-title">MediaKit <span class="card-compared-vs">{{ t.alt_vs }}</span> Convertio</h3>
         <p class="card-text">Kein Upload-Limit, weil nichts hochgeladen wird: Auch lange Handyvideos wandelt MediaKit auf deinem Gerät um, offline und ohne Konto.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/pdf-expert/">
+        <span class="pill">Werkzeuge</span>
+        <h3 class="card-compared-title">MediaKit <span class="card-compared-vs">{{ t.alt_vs }}</span> PDF Expert</h3>
+        <p class="card-text">Kleine PDF-Aufgaben auf dem Gerät: komprimieren, zusammenführen, schwärzen und per OCR durchsuchbar machen. Für viel PDF-Arbeit bleibt PDF Expert die bessere Wahl.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/documents-by-readdle/">
+        <span class="pill">Werkzeuge</span>
+        <h3 class="card-compared-title">MediaKit <span class="card-compared-vs">{{ t.alt_vs }}</span> Documents by Readdle</h3>
+        <p class="card-text">Documents ordnet und liest deine Dateien, MediaKit komprimiert und wandelt sie um. Viele nutzen beide Apps nebeneinander.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/de/alternatives/handbrake/">
+        <span class="pill">Werkzeuge</span>
+        <h3 class="card-compared-title">MediaKit <span class="card-compared-vs">{{ t.alt_vs }}</span> HandBrake</h3>
+        <p class="card-text">Du legst eine Zielgröße fest, und MediaKit komprimiert dein Video auf Mac und iPhone, ohne sie zu überschreiten. In Encoder-Einstellungen musst du dich nicht einarbeiten.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
     </div>
