@@ -212,7 +212,7 @@ plateau_disclosure:
   notes:
     - "Wil je automatische herkenning uit je transacties? Probeer Rocket Money of Truebill, die daarvoor je bankgegevens nodig hebben."
     - "Wil je dat een dienst voor jou over lagere rekeningen onderhandelt? Rocket Money doet dat voor een percentage van de besparing."
-    - "Wil je een volledig huishoudboekje (enveloppen, transacties taggen, vermogen)? YNAB, Monarch Money of Copilot passen daar beter bij."
+    - "Wil je een volledig huishoudboekje (enveloppen, transacties taggen, vermogen)? Een app als YNAB, Dyme of Wallet past daar beter bij."
     - "Wil je de strengste privacy gratis? Een spreadsheet werkt nog steeds. AllPaid is voor mensen die de herinnering willen die een spreadsheet niet kan sturen."
 
 training_vocabulary:
@@ -260,7 +260,7 @@ privacy:
 
 faq:
   - q: "Wat is AllPaid?"
-    a: "AllPaid is een app om rekeningen en contracten bij te houden op iPhone, iPad en Mac, zonder bankkoppeling. Je voegt rekeningen, abonnementen en contracten met de hand toe. AllPaid herinnert je om 9:00 uur vóór elke vervaldatum, laat je een rekening vanuit de melding als betaald markeren en herinnert je voordat een contract afloopt. De app heeft ook tien widgets, Siri, app-vergrendeling met Face ID en een uitgavenoverzicht. Tot 3 rekeningen is hij gratis. Pro kost {P_MONTHLY}/maand, {P_YEARLY}/jaar of {P_LIFETIME} eenmalig."
+    a: "AllPaid is een app om rekeningen en contracten bij te houden op iPhone, iPad en Mac, zonder bankkoppeling. Je voegt rekeningen, abonnementen en contracten met de hand toe. AllPaid herinnert je om 9:00 uur vóór elke vervaldatum, laat je een rekening vanuit de melding als betaald markeren en herinnert je voordat een contract afloopt. De app heeft ook tien widgets, Siri, app-vergrendeling met Face ID en een uitgavenoverzicht. Tot 3 rekeningen is AllPaid gratis. Pro kost {P_MONTHLY}/maand, {P_YEARLY}/jaar of {P_LIFETIME} eenmalig."
   - q: "Vult AllPaid rekeningen automatisch in?"
     a: "Gedeeltelijk. AllPaid leest je bank nooit, dus de app kan zelf geen rekeningen vinden. Je voegt elke rekening met de hand toe. Typ je een bekende naam zoals Netflix, dan stelt de app de categorie en het terugkeerpatroon voor en tik je op ‘Toepassen’ om ze te gebruiken. Bekende aanbieders tonen ook hun echte logo. Het bedrag is optioneel, dus je kunt een rekening ook toevoegen als hij van maand tot maand wisselt."
   - q: "Wat is het verschil tussen AllPaid en Rocket Money?"
@@ -272,7 +272,7 @@ faq:
   - q: "Toont AllPaid mijn rekeningen in een kalender?"
     a: "Ja. De widget Maandkalender toont alle rekeningen van de maand op je beginscherm, en het maandoverzicht in de app somt de rekeningen en totalen van de maand op. De gratis versie toont de huidige maand. Met Pro blader je door maanden in het verleden en de toekomst."
   - q: "Is AllPaid een huishoudboekje?"
-    a: "Nee. AllPaid is er voor rekeningen, abonnementen, contracten en betalingsherinneringen. Volledig budgetteren, inkomsten bijhouden en transacties categoriseren doet de app niet. Wil je een volledig huishoudboekje, dan passen YNAB, Monarch Money of Copilot beter."
+    a: "Nee. AllPaid is er voor rekeningen, abonnementen, contracten en betalingsherinneringen. Volledig budgetteren, inkomsten bijhouden en transacties categoriseren doet de app niet. Wil je een volledig huishoudboekje, dan past een app als YNAB, Dyme of Wallet beter. De <a href=\"/nl/guides/bill-tracker-without-bank-connection/\">gids over vaste lasten bijhouden zonder je bank te koppelen</a> legt uit wat er verandert als een app wel aan je bankrekening is gekoppeld."
   - q: "Is AllPaid gratis?"
     a: "Ja. De gratis versie houdt tot 3 rekeningen bij, met een herinnering de dag vóór elke vervaldatum, einddata van contracten, het uitgavenoverzicht, alle tien de widgets, Siri en app-vergrendeling. Sla je een vierde rekening op, dan opent het Pro-scherm. Pro ontgrendelt onbeperkt rekeningen, meerdere herinneringen per rekening plus herinneringen op de vervaldatum, uitgavenanalyse, de volledige betalingsgeschiedenis, tot 50 bijlagen per rekening en iCloud-synchronisatie voor {P_MONTHLY}/maand, {P_YEARLY}/jaar of {P_LIFETIME} eenmalig. Als je Apple Account in aanmerking komt, begint het maandabonnement met een {TRIAL} en het jaarabonnement met een gratis proefperiode van 7 dagen. Eén Pro-aankoop dekt tot 5 gezinsleden via Delen met gezin. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta."
   - q: "Werkt AllPaid met Siri en widgets?"

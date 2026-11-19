@@ -11,7 +11,7 @@ reviewing any Dutch page. Every decision a translator would otherwise make diffe
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest (hl=nl, gl=nl), Bing (mkt=nl-NL), App Store search hints for the Dutch storefront (143452) and the iTunes Search API (country=nl); Search Console for the Netherlands not read (Claude in Chrome not connected, built-in browser not signed in; the only export on disk, July 2026, shows 1647 impressions and 11 clicks from the Netherlands over three months, with no per-country queries) |
 | Tier 1 pages | written and reviewed 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/nl.yml`), /nl/llms.txt, /nl/llms-full.txt, 21 OG cards |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
-| Tier 2 | batch 1 written and reviewed 2026-11-19 (not pushed): both hubs, chess, logic puzzles, workout without subscription, xiangqi guides, 3 audience pages, local-only /nl/guides/schermtijd-beperken-iphone/. Queue for batch 2: shogi, bill tracker (Dutch angle: huishoudboekje, bank apps; check bank-linked apps in the Dutch store first), local-only countdown guide (`aftellen app iphone`). for/indie-ios-developers stays English-only. `i18n.py stale` was 0 on 2026-11-19, nothing to sync. Research: ~/Downloads/githubcode/nl-tier2-research-2026-11-19.md; briefs `_i18n/nl-tier2-brief.md`, `_i18n/nl-tier2-review-brief.md` |
+| Tier 2 | done 2026-11-19 (not pushed). Batch 1 (b2a28be): both hubs, chess, logic puzzles, workout without subscription, xiangqi guides, 3 audience pages, local-only /nl/guides/schermtijd-beperken-iphone/. Batch 2: shogi, bill tracker rewritten around Dyme, Wallet and Spendee (Rocket Money, Monarch, Copilot not sold in NL), local-only /nl/guides/aftellen-op-iphone/. for/indie-ios-developers stays English-only. `i18n.py stale` was 0 on 2026-11-19. Research: ~/Downloads/githubcode/nl-tier2-research-2026-11-19.md; briefs `_i18n/nl-tier2-brief.md`, `_i18n/nl-tier2-review-brief.md`. Next: Tier 3 (local-only «Dyme alternatief» is a candidate; `dyme app alternatief` is reserved for it) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 139 s at the setup (main with es, it, pt Tier 2 and 3, other sessions running); 160 s with Dutch Tier 1 (990 audited pages) |
 
@@ -92,8 +92,9 @@ it, unless the glossary flags it as defective; an Apple product or feature name 
 **Language claims.** Never say **AppMeta** or **Mockly** is in Dutch: neither has an `nl` localization (AppMeta 0 of
 2300 keys, Mockly 0 of 333) and neither has a Dutch App Store listing; their Dutch pages say plainly that the app's
 interface is in English. The other 19 (18 live plus Clippet) have a complete Dutch catalog (LiftLog 99 %, with 8
-English statistics labels). Gaps to keep off the pages: AfterShift's calendar permission prompt, AllPaid's and
-RightSplit's Siri phrases and Pawza's camera and photo-library prompts are English only.
+English statistics labels). Gaps to keep off the pages: AfterShift's calendar permission prompt and Pawza's camera and photo-library prompts are
+English only. AllPaid's and RightSplit's Siri phrases are English only: where a page quotes a Siri phrase (as the English
+pages do), say so in brackets («de Siri-zinnen zijn er alleen in het Engels»), as the Tier 1 app pages do.
 
 The terms that matter most across the site:
 
@@ -210,7 +211,7 @@ een rekening te splitsen»). The split search forms go only into `seo.keywords`.
 
 Tier 2 (2026-11-19): the chess guide owns `beste schaak app` (moved off Chessful, which took `schaak app iphone`); the local-only
 screen-time guide owns `schermtijd beperken iphone` (EarnLock gave up `schermtijd beperken` for `apps blokkeren voor bepaalde tijd`).
-Guide primaries: logic `puzzelspellen voor volwassenen`, workout `gratis gym app`, xiangqi `chinees schaken online`, shift workers
+Guide primaries: shogi `shogi online`, bill tracker `huishoudboekje app zonder bankrekening`, local countdown guide `aftellen op iphone`, logic `puzzelspellen voor volwassenen`, workout `gratis gym app`, xiangqi `chinees schaken online`, shift workers
 `ploegendienst gezondheid`, Apple Health `beste apple watch apps`, calm productivity `productiviteit app iphone` (low demand).
 
 Splits: Chessful owns `schaak`/`schaken`; Shogiful and Xiangqiful never target `schaak app`. AfterShift owns `slaap` and
@@ -301,7 +302,7 @@ een naam uit het xiangqi» («benoemt in xiangqi-termen»); «wat de score heeft
 «veel anderen» for "many also"; «laat X oefenen» without an object; «pakken het op» for "reach for it"; «een verstandig pad»; «mobiel»
 for a hanging mobile («hangmobiel»); «5.000» (four digits take no dot); «Let op:» as a disclosure («Transparantie:»); Dutch store
 titles replacing competitor names (English name, store title once); keywords not from the research file; «geen enkel antwoord» for "no
-single answer"; a maker's name dropped as if the no-name rule covered everyone (it covers only the site owner). Hubs and llms lines: «reeksendruk» and other «-druk» coinages; «zet X naast Y» for “compares” («vergelijkt X met Y»); «zet … bij elkaar» («combineert»); «registreert al je …» («al» reads as “all”); «aftellers» («aftelling»); «voorlopig» or «nog alleen in het Engels» on hubs (a roadmap hint); «In het Nederlands staan …» with no location («zijn er»); one verb three times in a sentence; hub cards ending in «, met bij elke app …».
+single answer"; a maker's name dropped as if the no-name rule covered everyone (it covers only the site owner). Hubs and llms lines: «reeksendruk» and other «-druk» coinages; «zet X naast Y» for “compares” («vergelijkt X met Y»); «zet … bij elkaar» («combineert»); «registreert al je …» («al» reads as “all”); «aftellers» («aftelling»); «voorlopig» or «nog alleen in het Engels» on hubs (a roadmap hint); «In het Nederlands staan …» with no location («zijn er»); one verb three times in a sentence; hub cards ending in «, met bij elke app …». Batch 2: «het diepe einde» («in het diepe springen»); «en die verdient de app» («en terecht»); «matchmaking in real time» («live matchmaking»); «snelle bedenktijden» («korte bedenktijden»); «wedlopen om aan te vallen»; bare «rekening(en)» for bank accounts on a bills page («bankrekening»); heading fragments; «in privé»; an added definition in brackets in a hero lead; «de app van wie deze gids publiceert»; «startscherm» copied from a listing («beginscherm»); «volledig gericht op» overstating a listing; the check date repeated in every section lead. Compound with -je + app: «huishoudboekje-app» (hyphen for readability, as «takenlijst-app»).
 
 Translationese: split compounds, title case headings, u and je mixed, English word order with the verb not at the end
 of a subordinate clause, «maken» calques («een verschil maken», «zin maken»: write «zinvol zijn»), «dat gezegd
@@ -346,6 +347,8 @@ Pulse's rights list («inzage, correctie of verwijdering», GDPR Dutch: rectific
 | Tier 2 batch 1: chess, logic, workout, xiangqi guides, 3 audience pages | 7 Sonnet writers | 2 reviewers (all Dutch competitor prices checked against the saved Dutch store pages; Taskful Day «in totaal maximaal 50 taken»; maker name and US-listing caveat restored) | n/a | no native review yet |
 | Tier 2 batch 1: local-only screen-time guide | 1 Sonnet writer, sources saved | 1 reviewer, both Apple NL iOS 27 pages re-fetched, claim by claim (invented «alleen» condition and a dropped iOS 27 sharing condition fixed) | n/a | no native review yet |
 | Tier 2 batch 1: both hubs, llms lines, EarnLock FAQ link | 1 Sonnet writer + main session | 1 wiring reviewer | n/a | no native review yet |
+| Tier 2 batch 2: shogi, bill-tracker guides | 2 Sonnet writers | 1 reviewer (every Dyme, Wallet and Spendee sentence checked against its Dutch listing; Wallet price without period removed; shogi language column and Shogi Wars offline from the listings) | n/a | no native review yet |
+| Tier 2 batch 2: local-only countdown guide | 1 Sonnet writer, sources saved | 1 reviewer, three Apple NL iOS 27 pages re-fetched (two dropped Stand-by conditions restored) | n/a | no native review yet |
 
 ## Apps still on English screenshots
 

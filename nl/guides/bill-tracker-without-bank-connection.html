@@ -1,0 +1,160 @@
+---
+layout: default
+ref: /guides/bill-tracker-without-bank-connection/
+permalink: /nl/guides/bill-tracker-without-bank-connection/
+translated_from: 2026-11-07
+title: "Huishoudboekje-app zonder je bankrekening te koppelen"
+quick_answer: "AllPaid ({PLATFORMS@allpaid}) houdt je vaste lasten bij zonder koppeling met je bank. Je voert rekeningen, abonnementen en contracten één keer zelf in, en bij bekende namen stelt AllPaid de categorie en de herhaling voor. De app herinnert je vóór elke vervaldatum, en met één tik markeer je een rekening als betaald. AllPaid is geen volledig huishoudboekje. Dyme en Spendee bieden volgens hun productpagina’s in de Nederlandse App Store een koppeling met je bank aan, en Wallet noemt verbindingsdiensten voor banken. Transparantie: AllPaid is van Lagerland Apps, die ook deze gids publiceert. Voor maximaal 3 rekeningen is AllPaid gratis, met Pro als optie vanaf {P_MONTHLY@allpaid}/maand."
+seo:
+  title: "Huishoudboekje-app zonder je bankrekening te koppelen"
+  description: "Huishoudboekje-app zonder je bankrekening te koppelen: Dyme en Spendee bieden een bankkoppeling aan, in AllPaid voer je je vaste lasten zelf in."
+  keywords:
+    - huishoudboekje app zonder bankrekening
+    - huishoudboekje app
+    - beste huishoudboekje app
+    - huishoudboekje app gratis
+    - vaste lasten bijhouden app
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign app = site.apps | where: "slug", "allpaid" | first -%}
+{%- include app-facts.html app=app -%}
+{%- assign ap_devices = f_platforms_and | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Apple Watch" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/nl/guides/bill-tracker-without-bank-connection/#webpage",
+  "url": "{{ site.url }}/nl/guides/bill-tracker-without-bank-connection/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/nl/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "nl",
+  "datePublished": "2026-11-19",
+  "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/nl/" },
+      { "@type": "ListItem", "position": 2, "name": "Gidsen", "item": "{{ site.url }}/nl/guides/" },
+      { "@type": "ListItem", "position": 3, "name": "Huishoudboekje-app zonder je bankrekening te koppelen", "item": "{{ site.url }}/nl/guides/bill-tracker-without-bank-connection/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "nl",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is er een iPhone-app voor je vaste lasten zonder koppeling met je bank?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. AllPaid, onze eigen app, zet privacy voorop en werkt alleen met wat je zelf invoert, zonder koppeling met je bank of een dienst die gegevens van je bankrekeningen verzamelt. Je voegt je vaste lasten zelf toe en markeert ze als betaald. Ze blijven op je eigen apparaten, tenzij je iCloud-synchronisatie (Pro) aanzet, die je eigen privé-iCloud gebruikt." } },
+    { "@type": "Question", "name": "Waarom bieden Dyme en Spendee een koppeling met je bank aan?", "acceptedAnswer": { "@type": "Answer", "text": "Om transacties in de app te krijgen zonder dat je ze zelf intikt, moet een app ze van je bankrekening kunnen lezen, meestal via een dienst die bankrekeningen koppelt. Dyme koppelt volgens de productpagina in de Nederlandse App Store je bankrekeningen, sorteert je banktransacties en spoort je abonnementen op in je bankafschriften. Wallet noemt de EU-regelgeving PSD2 en verbindingsdiensten voor banken, en met Spendee koppel je de app aan je online bankieren. Wil je die toegang niet aan een derde partij geven, dan kun je je vaste lasten zelf invoeren, en daar is AllPaid voor gemaakt." } },
+    { "@type": "Question", "name": "Is het zelf invoeren van rekeningen op de lange duur vol te houden?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, als je de eerste keer alles hebt ingevoerd. De meeste terugkerende rekeningen veranderen van maand tot maand weinig. Typ je een bekende naam als Netflix of Spotify, dan stelt AllPaid de categorie en de herhaling voor, en een rekening als betaald markeren kost één tik, in de app of op de herinnering." } },
+    { "@type": "Question", "name": "Heeft AllPaid widgets en werkt de app met Siri?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. AllPaid heeft tien widgets, allemaal gratis, waaronder Volgende rekening, Binnenkort en Maandkalender voor het beginscherm en een versie van Volgende rekening voor het toegangsscherm. Vraag Siri “What bills are due in AllPaid” en Siri leest de rekeningen voor die de komende zeven dagen vervallen. De Siri-zinnen zijn er alleen in het Engels." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Gids · Van probleem naar oplossing</p>
+    <h1 class="h1">
+      “Ik wil mijn vaste lasten bijhouden<br><span class="gradient-text">zonder mijn bankrekening te koppelen.”</span>
+    </h1>
+    <p class="lead">
+      Dyme en Spendee bieden volgens hun productpagina’s een koppeling met je bank aan, zodat je transacties vanzelf in de app komen. Wallet noemt verbindingsdiensten voor banken. Wil je een app van een derde partij geen toegang tot je bank geven, dan kun je je vaste lasten ook zelf invoeren.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#answer">Naar het antwoord</a>
+      <a class="btn btn-secondary" href="#faq">Veelgestelde vragen</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Wat zeggen de productpagina’s van Dyme, Wallet en Spendee?</h2>
+  <p class="lead">Dyme, Wallet en Spendee zijn drie apps voor je geldzaken in de Nederlandse App Store die een bankkoppeling noemen. Alles hieronder komt van hun productpagina’s; we hebben de apps zelf niet getest.</p>
+  <div class="grid grid-3 stagger">
+    <div class="card"><div class="card-title">Dyme</div><div class="card-text">In de Nederlandse App Store heet de app “Dyme: Budget, Geld &amp; Kasboek”. De productpagina noemt Dyme “jouw moderne huishoudboekje”. Volgens de pagina sorteert de app je banktransacties automatisch in categorieën en geeft Dyme een overzicht van je vaste lasten en inkomsten per maand. Je kunt je bankrekeningen koppelen; als voorbeelden noemt de pagina ING, ABN Amro, Rabobank, bunq, SNS, ASN, Regiobank en Triodos. Dyme spoort ook je abonnementen op in je bankafschriften. Met Dyme Silver kun je ongewenste abonnementen opzeggen, en Dyme Gold voegt functies als budgetteren en aangepaste categorieën toe. De basisversie is gratis.</div></div>
+    <div class="card"><div class="card-title">Wallet by BudgetBakers</div><div class="card-text">In de Nederlandse App Store heet de app “Wallet - Budget Tracker”. De productpagina beschrijft een app om inkomsten en uitgaven bij te houden, met onder meer synchronisatie via een server, gegevens delen met andere gebruikers, categorieën, valuta’s, grafieken, rapporten en pincodebeveiliging. Over banken staat er één zin: BudgetBakers zegt te voldoen aan de EU-regelgeving PSD2, waardoor “verbindingsdiensten voor banken” mogelijk zijn.</div></div>
+    <div class="card"><div class="card-title">Spendee</div><div class="card-text">In de Nederlandse App Store heet de app “Money Tracker by Spendee”, en de productpagina is in het Engels. Spendee nodigt je daar uit om de app te koppelen met je online bankieren of met een e-wallet zoals PayPal, en volgens de pagina worden je gegevens automatisch gecategoriseerd. Verder noemt de pagina budgetten met meldingen over je voortgang, gedeelde financiën met een partner of huisgenoten, meerdere valuta, een webversie en een AI-bonnenscanner.</div></div>
+  </div>
+  <p class="lead" style="margin-top:var(--s-4);">Het verschil met AllPaid zit in de toegang tot je bank: deze drie apps noemen op hun productpagina’s een bankkoppeling, en AllPaid koppelt niet met een bank. Herinneringen voor vervaldatums noemen de drie productpagina’s niet.</p>
+  <p class="small" style="margin-top:var(--s-3);">In de Nederlandse App Store heeft Dyme een 4,7 van de 5 op basis van 11.283 beoordelingen, Wallet een 4,3 op basis van 241 en Spendee een 4,3 op basis van 520. Prijzen: Dyme Silver € 8,99 per maand, € 17,99 per kwartaal of € 59,99 per jaar; Dyme Gold € 12,99 per maand, € 24,99 per kwartaal of € 69,99 per jaar; Wallet Lifetime Premium € 49,99; Spendee Premium € 6,99 per maand (Nederlandse App Store, bekeken op 19 november 2026). De beschrijvingen komen van de productpagina’s van <a href="https://apps.apple.com/nl/app/id1438647102" rel="noopener" target="_blank">Dyme</a>, <a href="https://apps.apple.com/nl/app/id1032467659" rel="noopener" target="_blank">Wallet</a> en <a href="https://apps.apple.com/nl/app/id635861140" rel="noopener" target="_blank">Spendee</a>.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Waarom is een bankkoppeling een probleem?</h2>
+  <p class="lead">Een app met een bankkoppeling moet je transacties kunnen lezen om te werken. In ruil krijg je transacties die vanzelf in categorieën staan en een overzicht van je abonnementen. Als je op je privacy let, heeft die ruil een echte prijs:</p>
+  <div class="grid grid-3 stagger">
+    <div class="card"><div class="card-title">Je geeft toegang tot je bankrekening</div><div class="card-text">Om transacties te sorteren moet een app ze kunnen lezen. Dat zijn alle betalingen op je bankrekening, niet alleen je vaste lasten.</div></div>
+    <div class="card"><div class="card-title">Veel meer dan nodig is voor een herinnering</div><div class="card-text">Voor een herinnering dat de huur betaald moet worden, zijn de rekening en de vervaldatum genoeg. Al je transacties lezen gaat daar ver overheen.</div></div>
+    <div class="card"><div class="card-title">Jouw bank kan ontbreken</div><div class="card-text">Een bankkoppeling werkt alleen als de app jouw bank ondersteunt. Dyme noemt op de productpagina acht banken als voorbeeld. Staat de jouwe er niet bij, ga dan eerst na of koppelen lukt.</div></div>
+  </div>
+</section>
+
+<section id="answer" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Het antwoord</p>
+    <h2 class="h2">AllPaid: je rekeningen zelf invoeren, privé en zonder bank</h2>
+    <p class="lead">AllPaid is onze eigen app: Lagerland Apps publiceert de app en schrijft ook deze gids. AllPaid houdt de rekeningen bij die je moet betalen, op {{ ap_devices }}. Je voegt je vaste lasten, abonnementen en contracten zelf toe, en bij bekende namen stelt AllPaid de categorie en de herhaling voor. Het maandoverzicht toont de rekeningen van de maand met de totalen, en met één tik markeer je een rekening als betaald. AllPaid koppelt niet met een bank en heeft geen account nodig. Je rekeningen blijven op je eigen apparaten, tenzij je iCloud-synchronisatie (Pro) aanzet, die je eigen privé-iCloud gebruikt. AllPaid is geen volledig huishoudboekje met bankkoppeling en automatische categorieën voor al je transacties. Alle details staan op de <a href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>pagina van AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+  </div>
+  {% if app %}
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+  {% endif %}
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Is zelf invoeren niet vervelend?</h2>
+  <p class="lead">Alleen in het begin: de meeste huishoudens kunnen al hun terugkerende rekeningen in één keer invoeren. Daarna:</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Suggesties vullen de details in</div><div class="card-text">Typ “Netflix” en AllPaid stelt de categorie en de herhaling voor. Het bedrag is optioneel, dus een rekening kan uit niet meer bestaan dan een naam en een vervaldatum.</div></div>
+    <div class="card"><div class="card-title">Als betaald markeren is één tik</div><div class="card-text">Dat doe je in de app of rechtstreeks vanuit de herinnering, en met ‘Ongedaan maken’ draai je het terug als je te snel tikte.</div></div>
+    <div class="card"><div class="card-title">De meeste rekeningen veranderen niet</div><div class="card-text">Huur, energie en abonnementen zijn elke maand hetzelfde. Eenmaal ingevoerd komen ze vanzelf terug, dus je voegt alleen nieuwe toe.</div></div>
+    <div class="card"><div class="card-title">De maand en de widgets houden alles in beeld</div><div class="card-text">Het maandoverzicht toont de rekeningen van de maand met de totalen voor verschuldigd, betaald en resterend. De widgets Maandkalender en Binnenkort zetten wat vervalt op je beginscherm, dus je hoeft de app zelden te openen.</div></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Wat mis je als je rekeningen zelf invoert?</h2>
+  <div class="card">
+    <p>Bij zelf invoeren mis je:</p>
+    <ul class="bullets">
+      <li>Het automatisch sorteren van je banktransacties, dat de productpagina’s van Dyme en Spendee beschrijven</li>
+      <li>Het opsporen van vergeten abonnementen in je bankafschriften, zoals bij Dyme: AllPaid kent alleen wat je zelf invoert</li>
+      <li>Een app die voor je lopende contracten een betere deal zoekt, zoals Dyme aanbiedt</li>
+      <li>Een prognose van je geldstromen over al je bankrekeningen</li>
+      <li>Het gevoel dat “de app alles van mijn geld weet”</li>
+    </ul>
+    <p style="margin-top:var(--s-3);">Heb je die functies nodig, dan past AllPaid niet bij je. Kies dan een app met een bankkoppeling, met de afweging over je privacy die erbij hoort. AllPaid is voor wie liever één keer tijd besteedt aan het invoeren en zijn bankgegevens voor zich houdt.</p>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Vragen</p><h2 class="h2">Veelgestelde vragen</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Is er een iPhone-app voor je vaste lasten zonder koppeling met je bank?</summary><div class="faq-a">Ja. AllPaid, onze eigen app, zet privacy voorop en werkt alleen met wat je zelf invoert, zonder koppeling met je bank of een dienst die gegevens van je bankrekeningen verzamelt. Je voegt je vaste lasten zelf toe en markeert ze als betaald. Ze blijven op je eigen apparaten, tenzij je iCloud-synchronisatie (Pro) aanzet, die je eigen privé-iCloud gebruikt.</div></details>
+    <details class="faq-item"><summary>Waarom bieden Dyme en Spendee een koppeling met je bank aan?</summary><div class="faq-a">Om transacties in de app te krijgen zonder dat je ze zelf intikt, moet een app ze van je bankrekening kunnen lezen, meestal via een dienst die bankrekeningen koppelt. Dyme koppelt volgens de productpagina in de Nederlandse App Store je bankrekeningen, sorteert je banktransacties en spoort je abonnementen op in je bankafschriften. Wallet noemt de EU-regelgeving PSD2 en verbindingsdiensten voor banken, en met Spendee koppel je de app aan je online bankieren. Wil je die toegang niet aan een derde partij geven, dan kun je je vaste lasten zelf invoeren, en daar is AllPaid voor gemaakt.</div></details>
+    <details class="faq-item"><summary>Is het zelf invoeren van rekeningen op de lange duur vol te houden?</summary><div class="faq-a">Ja, als je de eerste keer alles hebt ingevoerd. De meeste terugkerende rekeningen veranderen van maand tot maand weinig. Typ je een bekende naam als Netflix of Spotify, dan stelt AllPaid de categorie en de herhaling voor, en een rekening als betaald markeren kost één tik, in de app of op de herinnering.</div></details>
+    <details class="faq-item"><summary>Heeft AllPaid widgets en werkt de app met Siri?</summary><div class="faq-a">Ja. AllPaid heeft tien widgets, allemaal gratis, waaronder Volgende rekening, Binnenkort en Maandkalender voor het beginscherm en een versie van Volgende rekening voor het toegangsscherm. Vraag Siri “What bills are due in AllPaid” en Siri leest de rekeningen voor die de komende zeven dagen vervallen. De Siri-zinnen zijn er alleen in het Engels.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Probeer het</p>
+  <h2 class="h2">Probeer AllPaid</h2>
+  <p class="lead">Een app voor je rekeningen en vervaldatums, zonder bankkoppeling en zonder account. Voor maximaal 3 rekeningen is AllPaid gratis. Pro is optioneel en voegt onbeperkt rekeningen, uitgavenanalyse en iCloud-synchronisatie toe.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>Meer over AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/guides/" %}"{% if l_en %} hreflang="en"{% endif %}>Alle gidsen{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Alle apps{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

@@ -171,3 +171,67 @@ iTunes lookup API is fine.
 The items in nl-writer-brief.md «Reply with», plus: the final H1 and seo.title, every competitor fact you dropped
 because Dutch data was missing, the competitor prices you used (with the row from iap-nl.txt), and (local-only page)
 the list of sources saved.
+
+---
+
+## Batch 2 (2026-11-19)
+
+Same rules as batch 1. Research rows: «Batch 2» at the bottom of the research file. The batch 1 Dutch pages
+(nl/guides/*.html, nl/for/*.html) are reviewed and committed: read one or two for tone, structure and the Netherlands-data
+patterns (rating and price sentences, check-date line), and reuse their wording where it fits. In-app rows for batch 2 apps
+are appended to `$S/iap-nl.txt`.
+
+| Page | Write to | Primary query |
+|---|---|---|
+| guides/best-shogi-apps-iphone.html | nl/guides/best-shogi-apps-iphone.html | `shogi online` |
+| guides/bill-tracker-without-bank-connection.html | nl/guides/bill-tracker-without-bank-connection.html | `huishoudboekje app zonder bankrekening` |
+| (local-only) | nl/guides/aftellen-op-iphone.html | `aftellen op iphone` |
+
+### Lessons from the batch 1 reviews (avoid them)
+
+- Never invent a condition on an Apple step («alleen», «de eerste keer»); every Apple label exactly as the fetched page.
+- Competitor names in English throughout; the Dutch store title at most once. Keywords only from the research file.
+- No «zet X naast Y» for "compares" («vergelijkt X met Y»), no «hij/het/zijn» for a named app, no coinages («reeksendruk»),
+  no staged questions in leads, no «Let op:» disclosures («Transparantie:»), no «uitgelicht» for Editors' Choice.
+- Only the site owner's name is banned; keep a competitor's maker if the English page names one.
+- Read `~/.claude/skills/copy-editing/SKILL.md` itself (two batch 1 writers skipped it).
+
+### Shogi
+
+Kakinoki Shogi is not sold in the Netherlands: drop it and every sentence that depends on it. The other apps have no Dutch
+listing and 0 to 3 Dutch ratings: no rating sentences. Shogiful is ours (nl/apps/shogiful/index.md and its glossary section;
+sheet decisions: castle «burcht», handicap «voorgift»; prices via tokens). Kanazawa Shogi 2 costs € 6,99 (research file).
+Structural model it/guides/best-shogi-apps-iphone.html. Check ISSUES I-0354 (two wordings for Shogi Wars and the JSA,
+stale dates, Kanazawa without a URL) in /Users/anttiaittamaa/Downloads/githubcode/ISSUES.md and handle them the way the
+Italian page did (Kanazawa's Dutch store URL: https://apps.apple.com/nl/app/id911654012).
+
+### Bill tracker
+
+Rocket Money, Truebill, Monarch and Copilot are not sold in the Netherlands. Rewrite the comparison around **Dyme**
+(id 1438647102), the Dutch app whose own listing says it links your bank accounts and sorts bank transactions, and keep
+Wallet by BudgetBakers (1032467659) and Spendee (635861140) as the two other bank-linked options, as the Italian page did with
+Wallet, Spendee and Toshl. Use ONLY what each app's own Dutch App Store description says: saved lookups in
+`$S/sources/bill-tracker-without-bank-connection/lookup-<id>.json` (field `description`); Dyme's and Wallet's are in Dutch,
+Spendee's in English (paraphrase, no quotes as if Dutch). Never claim anything about their security, data sharing, fees or
+bank coverage beyond the listing (Dyme names ING, ABN Amro, Rabobank, bunq, SNS, ASN, Regiobank and Triodos: you may say
+that its listing names these banks; its «€800 per jaar» savings claim is the app's marketing: leave it out). Prices only
+from `$S/iap-nl.txt`. Keep the English page's general points about bank aggregation only where they do not name a US
+company or US rule; drop Plaid, Yodlee, US banks and US law (I-0355: title case, typed platforms, unsourced aggregator
+claims). Never name bank apps (ING, Rabobank …) or Nibud as having features: no source was fetched. AllPaid facts from
+`_apps/allpaid.md`, `nl/apps/allpaid/index.md`, its glossary section and APP_BLUEPRINT.md §10; prices via `{P_…@allpaid}`
+tokens; disclose that AllPaid is ours. Dutch ratings from the research file (Dyme 4,7 with 11.283, Wallet 4,3 with 241,
+Spendee 4,3 with 520). Structural model: it/guides/bill-tracker-without-bank-connection.html. «rekening» can mean a bank
+account: write «rekeningen die je moet betalen» or «vaste lasten» where it could be read that way.
+
+### Countdown (local-only)
+
+`local_only: true`, no `ref`, no `translated_from`, permalink `/nl/guides/aftellen-op-iphone/`, `datePublished` 2026-11-19.
+Model: it/guides/come-mettere-conto-alla-rovescia-iphone.html (and es/guides/como-poner-cuenta-atras-iphone.html). Facts
+from: Apple Netherlands' iOS 27 iPhone guide pages on widgets (home screen, lock screen, StandBy; start at
+https://support.apple.com/nl-nl/guide/iphone/iphb8f1bf206/ios and the rows in nl-apple-terms.md; fetch and save every page you
+use), each app's Dutch description (saved in `$S/sources/countdown/lookup-<id>.json`; IDs 576177593 Countdown Star,
+1403367428 Countdown App, 1534850579 Countdown Buddy, 917514700 Aftellingen - Aftelagenda, 940109775 Big Days), Soon.'s
+`_apps/soon.md`, `nl/apps/soon/index.md` and its APP_BLUEPRINT.md §10 (prices via `{P_…@soon}` and `{TRIAL@soon}` tokens;
+disclose it is ours; Soon.'s glossary: Memories «Herinneringen» vs reminders «meldingen», ‘Op vergrendelscherm houden’ is the
+app's own string). Dutch ratings from the research file. If iOS itself has no countdown widget, say only what the Apple page
+you fetched shows. Sources go in `$S/sources/aftellen-op-iphone/`.

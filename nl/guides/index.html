@@ -4,10 +4,10 @@ ref: /guides/
 permalink: /nl/guides/
 translated_from: 2026-10-29
 title: "Gidsen"
-quick_answer: "De gidsen van Lagerland Apps zijn korte artikelen voor iPhone en Mac die bij één concreet probleem beginnen, de apps vergelijken die het oplossen en zeggen wat elke app wel en niet doet. In het Nederlands zijn er vijf: over de beste schaakapp, logische puzzelspellen voor volwassenen, een gym-app zonder abonnement, Chinees schaken (xiangqi) en schermtijd beperken op je iPhone. De gidsen over shogi en over rekeningen bijhouden zonder je bank te koppelen zijn alleen in het Engels. Elke gids noemt concrete apps, zegt welke app bij welk geval past en vermeldt het als een app van ons is."
+quick_answer: "De gidsen van Lagerland Apps zijn korte artikelen voor iPhone en Mac die bij één concreet probleem beginnen, de apps vergelijken die het oplossen en zeggen wat elke app wel en niet doet. Er zijn acht gidsen: over de beste schaakapp, logische puzzelspellen voor volwassenen, een gym-app zonder abonnement, Chinees schaken (xiangqi), shogi, een huishoudboekje-app zonder bankkoppeling, schermtijd beperken en aftellen op je iPhone. Elke gids noemt concrete apps, zegt welke app bij welk geval past en vermeldt het als een app van ons is."
 seo:
   title: "Gidsen van Lagerland Apps: iPhone-apps per probleem"
-  description: "Gidsen die bij een probleem beginnen: schaken, puzzels, shogi, xiangqi, een gym-app zonder abonnement, rekeningen bijhouden en schermtijd beperken."
+  description: "Gidsen die bij een probleem beginnen: schaken, puzzels, shogi, xiangqi, een gym-app zonder abonnement, vaste lasten, schermtijd en aftellen op iPhone."
   keywords:
     - beste schaak app iphone
     - puzzelspellen voor volwassenen
@@ -37,7 +37,7 @@ last_updated: 2026-11-19
   },
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": 7,
+    "numberOfItems": 8,
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Gym-app zonder abonnement", "url": "{{ site.url }}{% include l.html url="/guides/workout-app-without-subscription/" %}" },
       { "@type": "ListItem", "position": 2, "name": "De beste schaakapp voor iPhone, afhankelijk van wat je ermee doet", "url": "{{ site.url }}{% include l.html url="/guides/best-chess-apps-iphone/" %}" },
@@ -45,7 +45,8 @@ last_updated: 2026-11-19
       { "@type": "ListItem", "position": 4, "name": "Schermtijd beperken op je iPhone", "url": "{{ site.url }}/nl/guides/schermtijd-beperken-iphone/" },
       { "@type": "ListItem", "position": 5, "name": "De beste apps voor Chinees schaken (xiangqi) op iPhone", "url": "{{ site.url }}{% include l.html url="/guides/best-xiangqi-apps-iphone/" %}" },
       { "@type": "ListItem", "position": 6, "name": "De beste shogi-apps voor iPhone", "url": "{{ site.url }}{% include l.html url="/guides/best-shogi-apps-iphone/" %}" },
-      { "@type": "ListItem", "position": 7, "name": "Rekeningen bijhouden zonder je bank te koppelen", "url": "{{ site.url }}{% include l.html url="/guides/bill-tracker-without-bank-connection/" %}" }
+      { "@type": "ListItem", "position": 7, "name": "Huishoudboekje-app zonder je bankrekening te koppelen", "url": "{{ site.url }}{% include l.html url="/guides/bill-tracker-without-bank-connection/" %}" },
+      { "@type": "ListItem", "position": 8, "name": "Aftellen op je iPhone met een widget", "url": "{{ site.url }}/nl/guides/aftellen-op-iphone/" }
     ]
   }
 }
@@ -83,13 +84,17 @@ last_updated: 2026-11-19
       <div class="card-title">De beste apps voor Chinees schaken (xiangqi) op iPhone</div>
       <div class="card-text">Xiangqi.com, PyChess, Chinese Chess - Best XiangQi, Club Xiangqi, PlayOK, Xiangqiful en Xiangqi One vergeleken, de gratis opties eerst. Bij elke app lees je hoe groot de drempel van de Chinese karakters is.</div>
     </a>
-    <a class="card card-app" href="{% include l.html url="/guides/best-shogi-apps-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>
-      <div class="card-title">“Ik wil shogi leren, maar elke app gaat ervan uit dat ik Japans lees”{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</div>
+    <a class="card card-app" href="{% include l.html url="/guides/best-shogi-apps-iphone/" %}">
+      <div class="card-title">De beste shogi-apps voor iPhone</div>
       <div class="card-text">PiyoShogi, Shogi Wars, Lishogi, Kanazawa en Shogiful vergeleken, de gratis opties eerst. Bij elke app lees je hoe groot de drempel van de kanji is.</div>
     </a>
-    <a class="card card-app" href="{% include l.html url="/guides/bill-tracker-without-bank-connection/" %}"{% if l_en %} hreflang="en"{% endif %}>
-      <div class="card-title">“Ik wil mijn rekeningen bijhouden zonder mijn bankrekening te koppelen”{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</div>
-      <div class="card-text">Veel apps voor rekeningen halen je transacties via een tussenpartij op bij je bank. AllPaid werkt vooral handmatig en privé, zonder verbinding met je bank.</div>
+    <a class="card card-app" href="{% include l.html url="/guides/bill-tracker-without-bank-connection/" %}">
+      <div class="card-title">Huishoudboekje-app zonder je bankrekening te koppelen</div>
+      <div class="card-text">Dyme en Spendee bieden een koppeling met je bank aan. In AllPaid voer je je vaste lasten zelf in en krijg je een herinnering vóór elke vervaldatum, zonder koppeling met je bank. AllPaid is onze eigen app.</div>
+    </a>
+    <a class="card card-app" href="/nl/guides/aftellen-op-iphone/">
+      <div class="card-title">Aftellen op je iPhone met een widget</div>
+      <div class="card-text">Zo zet je een aftelwidget op je beginscherm, je toegangsscherm of in ‘Stand-by’, met Soon., Countdown Star, Countdown App, Big Days, Aftellingen - Aftelagenda en Countdown Buddy vergeleken. Soon. is onze eigen app.</div>
     </a>
   </div>
 </section>
