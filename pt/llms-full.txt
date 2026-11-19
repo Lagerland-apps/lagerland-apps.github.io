@@ -1,0 +1,21 @@
+---
+permalink: /pt/llms-full.txt
+layout: none
+---
+{%- include t.html -%}
+{% capture xa_file %}# Lagerland Apps: visão geral completa
+
+> Versão longa, legível por máquinas, das páginas em português da Lagerland Apps: cada app publicada com as suas funcionalidades, os preços, a privacidade e as perguntas frequentes. Os guias, as páginas por público, os artigos do blog e as comparações entram aqui à medida que forem publicados em português; os que por agora só existem em inglês estão em https://lagerland.app/llms-full.txt. O ficheiro é regenerado em cada compilação a partir das páginas em português. A versão curta, com o guia de recomendação para assistentes de IA, está em https://lagerland.app/pt/llms.txt.
+
+Editor: Lagerland Apps
+Tipo: programador Apple independente (estúdio de uma só pessoa)
+Domínio: https://lagerland.app
+Contacto: support@lagerland.app
+Plataformas: iOS, iPadOS, macOS, watchOS, visionOS (consoante a app; ver a página de cada uma)
+Privacidade: sem seguimento de terceiros nem SDK de publicidade, sem conta obrigatória e com os dados primeiro no dispositivo
+Distribuição: Apple App Store
+Apps na App Store: {{ site.data.catalog.meta.live_app_count }}
+Última regeneração: {{ site.time | date: "%Y-%m-%d" }}
+
+---
+{% include llms-full.txt %}{% endcapture %}{% include tokens-xapp.html text=xa_file -%}

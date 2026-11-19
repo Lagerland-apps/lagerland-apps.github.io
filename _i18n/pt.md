@@ -9,7 +9,7 @@ reviewing any Portuguese page. Every decision a translator would otherwise make 
 |---|---|
 | Setup (config default, locales.yml block, `_data/i18n/pt.yml`, sitemap and feed stubs) | done 2026-11-19 (pt.yml written by one agent, reviewed and copy-edited by another: 38 values changed) |
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console for Portugal not read (Claude in Chrome not connected, built-in browser not signed in, no export on disk) |
-| Tier 1 pages | written and reviewed 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/pt.yml`). AI files and OG cards in batch 6 |
+| Tier 1 pages | written and reviewed 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/pt.yml`). AI files and OG cards in batch 6 (/pt/llms.txt, /pt/llms-full.txt, 21 OG cards) |
 | Live | no (`live: false`) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 72 s before Portuguese (main at the setup, 689 HTML files, 2026-11-19, other sessions' agents running) |
@@ -275,6 +275,7 @@ register); «você» or tu forms slipping in; clitic placement copied from Brazi
 | 21 support pages | 7 writers | 1 reviewer: every description rewritten to promise only topics the page shows | n/a | no native review yet |
 | 21 privacy policies + Clippet terms | 6 writers | 4 reviewers, sentence by sentence: about 12 meaning fixes (contact vs contacts, HealthKit "transmitted", Apple IDs, plain marker, warranties, "would prefer", "was available") | n/a | no native review yet |
 | about, support hub, transparency | 3 writers | 1 reviewer | about: 3 meaning shifts fixed | no native review yet |
+| /pt/llms.txt, /pt/llms-full.txt | 1 writer | 1 reviewer (every reason checked against the app's Portuguese page; one invented query replaced) | n/a | no native review yet |
 
 Points for a native reader: the trial phrase «teste grátis» (Apple's support pages say «período experimental»);
 «segue a sua atividade» for "tracks you"; «Direitos do utilizador» as the privacy heading; «é para si?»; category
@@ -282,6 +283,6 @@ Points for a native reader: the trial phrase «teste grátis» (Apple's support 
 
 ## Apps still on English screenshots
 
-To check at the gate (`scripts/i18n.py check`). Before this session, 19 apps already had a `pt` set in
-`assets/screenshots/<slug>/pt/` from commit 763463c («localized sets for 16 languages»), so their pages will show
-those sets; MediaKit and Mockly have none.
+MediaKit and Mockly (2026-11-19, `scripts/i18n.py check`). The other 19 apps already had complete `pt` sets in
+`assets/screenshots/<slug>/pt/` from commit 763463c («localized sets for 16 languages»), so their pages and OG cards
+show Portuguese screenshots. Their headlines speak tu («Sabes ao certo…»), while the site copy is impersonal.
