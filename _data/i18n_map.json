@@ -585,36 +585,43 @@
   "/for/": {
     "de": "/de/for/",
     "en": "/for/",
+    "es": "/es/for/",
     "fr": "/fr/for/"
   },
   "/for/apple-health-power-users/": {
     "de": "/de/for/apple-health-power-users/",
     "en": "/for/apple-health-power-users/",
+    "es": "/es/for/apple-health-power-users/",
     "fr": "/fr/for/apple-health-power-users/"
   },
   "/for/calm-productivity/": {
     "de": "/de/for/calm-productivity/",
     "en": "/for/calm-productivity/",
+    "es": "/es/for/calm-productivity/",
     "fr": "/fr/for/calm-productivity/"
   },
   "/for/shift-workers/": {
     "de": "/de/for/shift-workers/",
     "en": "/for/shift-workers/",
+    "es": "/es/for/shift-workers/",
     "fr": "/fr/for/shift-workers/"
   },
   "/guides/": {
     "de": "/de/guides/",
     "en": "/guides/",
+    "es": "/es/guides/",
     "fr": "/fr/guides/"
   },
   "/guides/best-chess-apps-iphone/": {
     "de": "/de/guides/best-chess-apps-iphone/",
     "en": "/guides/best-chess-apps-iphone/",
+    "es": "/es/guides/best-chess-apps-iphone/",
     "fr": "/fr/guides/best-chess-apps-iphone/"
   },
   "/guides/best-logic-puzzle-games-iphone/": {
     "de": "/de/guides/best-logic-puzzle-games-iphone/",
     "en": "/guides/best-logic-puzzle-games-iphone/",
+    "es": "/es/guides/best-logic-puzzle-games-iphone/",
     "fr": "/fr/guides/best-logic-puzzle-games-iphone/"
   },
   "/guides/best-shogi-apps-iphone/": {
@@ -625,6 +632,7 @@
   "/guides/best-xiangqi-apps-iphone/": {
     "de": "/de/guides/best-xiangqi-apps-iphone/",
     "en": "/guides/best-xiangqi-apps-iphone/",
+    "es": "/es/guides/best-xiangqi-apps-iphone/",
     "fr": "/fr/guides/best-xiangqi-apps-iphone/"
   },
   "/guides/bill-tracker-without-bank-connection/": {
@@ -635,6 +643,7 @@
   "/guides/workout-app-without-subscription/": {
     "de": "/de/guides/workout-app-without-subscription/",
     "en": "/guides/workout-app-without-subscription/",
+    "es": "/es/guides/workout-app-without-subscription/",
     "fr": "/fr/guides/workout-app-without-subscription/"
   },
   "/journal/": {

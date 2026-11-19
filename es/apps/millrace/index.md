@@ -14,8 +14,6 @@ seo:
   keywords:
     - juegos de lógica iphone
     - juegos de lógica sin anuncios
-    - mejores juegos de puzzle iphone
-    - mejores juegos de lógica iphone
     - juegos de lógica ipad
     - juegos sin internet iphone
     - mejores juegos sin anuncios iphone

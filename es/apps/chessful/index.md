@@ -19,7 +19,6 @@ seo:
     - app ajedrez offline
     - app ajedrez sin anuncios
     - analizador de partidas de ajedrez
-    - mejor app de ajedrez
 
 price_tier: "Pro"
 plans_footnote: "Los precios son los del App Store de España. En otros países, el App Store muestra en la compra el precio en tu moneda. Apple gestiona los reembolsos por el procedimiento habitual del App Store. La opción de por vida es un pago único y no se renueva. Las modalidades mensual, anual y de por vida admiten En familia. Una sola compra sirve para iPhone, iPad y Mac."

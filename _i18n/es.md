@@ -11,6 +11,8 @@ reviewing any Spanish page. Every decision a translator would otherwise make dif
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console for Spain not read yet (no access this session) |
 | Tier 1 pages | done 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/es.yml`), /es/llms.txt, /es/llms-full.txt, 21 OG cards. Commits 6a83675 (batch 1), ac4a1a3, e6e2231, 3857ea6, cfaed65 (batches 2 to 5), then AI files and go-live |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
+| Tier 2 | batch 1 done 2026-11-19 (not pushed): both hubs, 4 guides (chess, logic puzzles, xiangqi, workout without subscription), 3 audience pages, and the first local-only page /es/guides/limitar-tiempo-de-pantalla-iphone/. Research: ~/Downloads/githubcode/es-tier2-research-2026-11-19.md. Left for batch 2: best-shogi-apps-iphone, bill-tracker-without-bank-connection (rewrite around Fintonic), local-only countdown-widget guide (`widget cuenta atrás iphone`). for/indie-ios-developers stays English-only (developers search in English) |
+| Stale pages | 0 (2026-11-19, `i18n.py stale`) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 270 s wall, 137 s CPU before Spanish (2026-11-19, seven research agents running in parallel, so the wall time is inflated); French sheet had 80 s after French Tier 1. Idle machine 2026-11-19: 157 s before the tx-app fix, 52 s after (617 pages, `--profile`; tx-app 99.6 s to 4.9 s, I-0258) |
 
@@ -187,22 +189,36 @@ in, no export on disk). The French property showed almost no French queries; exp
 | AppMeta | `app store connect mac app` (developers search in English) | `app store connect for mac`, `aso app store` |
 | AppMeta Pulse | `app store connect iphone` | `app store connect ios`, `app store connect api` |
 | Chessful | `aplicación ajedrez` | `aprender ajedrez app`, `análisis de partidas de ajedrez` |
-| EarnLock | `bloquear apps iphone` | `bloqueador de aplicaciones`, `limitar tiempo de pantalla` |
+| EarnLock | `bloquear apps iphone` | `bloqueador de aplicaciones`, `app bloquear apps iphone` (`limitar tiempo de pantalla` and `como reducir el tiempo de pantalla en iphone` moved to the screen-time guide, Tier 2) |
 | GymLogger X | `app gimnasio apple watch` | `app para registrar entrenamientos gimnasio`, `app de entrenamiento apple watch` |
 | LiftLog | `app registro gimnasio` («sin suscripción» has no demand; kept in the title as the differentiator) | `app seguimiento gimnasio`, `app de pesas` |
 | MediaKit | `comprimir video iphone` | `comprimir pdf iphone`, `convertir video a mp4 iphone` |
-| Millrace (never write the number title) | `juegos de lógica iphone` | `juegos de lógica sin anuncios`, `mejores juegos de puzzle iphone` (`juegos de ingenio iphone` goes to Tare) |
+| Millrace (never write the number title) | `juegos de lógica iphone` | `juegos de lógica sin anuncios`, `juegos de lógica ipad` (`juegos de ingenio iphone` goes to Tare; `mejores juegos de lógica / puzzle iphone` to the logic guide, Tier 2) |
 | Mockly | `screenshots app store` (developers type the English; «capturas app store» has no demand) | `app store screenshot generator`, `mockup app store`, `app store screenshot maker` |
 | Observa | `hrv apple watch` («hrv» alone is Honda HR-V noise) | `variabilidad frecuencia cardiaca`, `app sueño apple watch`, `app hrv apple watch` |
 | Pawza | `cartilla veterinaria digital` («cartilla» is the Spain word; «carnet de vacunación» is Latin-American) | `app cartilla de vacunación perros`, `app salud mascotas`, `calendario vacunación perros` |
 | RightSplit | `app para dividir cuenta restaurante` (bare «dividir cuenta» is arithmetic noise; «pagar a escote» is the Spain idiom) | `app dividir gastos`, `dividir cuentas entre amigos`, `calculadora dividir cuentas` |
 | Shogiful | `shogi` | `ajedrez japonés`, `como se juega al shogi`, `aprender shogi` |
 | Soon. | `cuenta atrás iphone` | `widget cuenta atrás`, `app cuenta atrás`, `contador de días app` |
-| Tare | `juegos de ingenio iphone` (moved from Millrace to avoid two pages on one query; «juego de balanza» is a kids' maths audience) | `mejores juegos logica iphone`, `juegos de logica sin anuncios`, `mejores juegos de puzzle iphone` |
+| Tare | `juegos de ingenio iphone` (moved from Millrace to avoid two pages on one query; «juego de balanza» is a kids' maths audience) | `mejores juegos de ingenio iphone`, `juegos de logica sin anuncios` (`mejores juegos de lógica / puzzle iphone` moved to the logic guide, Tier 2) |
 | Taskful Day | `app lista de tareas` | `app planificador diario`, `app to do list`, `app para organizar el dia` |
 | WanderWiki | `wikipedia aleatoria` (tiny demand; intent is Wikipedia's own random page) | `wikipedia aleatorio`, `wikipedia al azar`, `app wikipedia` |
 | Xiangqiful | `ajedrez chino` (title carries both «ajedrez chino» and «xiangqi») | `xiangqi`, `ajedrez chino como se juega`, `ajedrez chino reglas` |
 | Clippet (unreleased, unlisted) | `historial portapapeles iphone` | `historial portapapeles mac`, `gestor de portapapeles mac`, `app portapapeles iphone` |
+
+Tier 2 (2026-11-19, from es-tier2-research-2026-11-19.md). Guides own the «mejor/mejores» list queries; app pages keep the
+app queries (Chessful lost `mejor app de ajedrez`, GymLogger X `mejor app para gimnasio gratis`).
+
+| Page | Primary query | Secondary queries |
+|---|---|---|
+| /es/guides/best-chess-apps-iphone/ | `mejor app de ajedrez` | `mejor app de ajedrez para iphone`, `mejor app para aprender ajedrez`, `mejor app de ajedrez sin anuncios` |
+| /es/guides/best-logic-puzzle-games-iphone/ | `mejores juegos de lógica iphone` | `mejores juegos de puzzle iphone`, `juegos de puzzle para iphone` |
+| /es/guides/best-xiangqi-apps-iphone/ | `ajedrez chino online` (`ajedrez chino` and `xiangqi` are Xiangqiful's) | `jugar ajedrez chino online`, `xiangqi online` |
+| /es/guides/workout-app-without-subscription/ | `mejor app gimnasio gratis` | `app gimnasio sin suscripción`, `app rutina gimnasio gratis iphone` |
+| /es/guides/limitar-tiempo-de-pantalla-iphone/ (local-only) | `como limitar el tiempo de pantalla en iphone` | `limitar tiempo de pantalla`, `bloquear apps iphone por tiempo`, `app para dejar de usar el movil` |
+| /es/for/shift-workers/ | `trabajo a turnos y salud` | `trabajo a turnos salud`, `trabajo de noche afecta la salud` |
+| /es/for/apple-health-power-users/ | `mejores apps salud apple watch` | `mejor app salud apple watch`, `app salud apple watch gratis` |
+| /es/for/calm-productivity/ | `mejores apps de productividad iphone` | `app minimalista para iphone`, `apps procrastinación` |
 
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
@@ -241,7 +257,9 @@ in, no export on disk). The French property showed almost no French queries; exp
 
 ## Local competitors (for Tier 3)
 
-Not researched yet. Candidates seen in the iTunes Search API results during keyword research are listed in
+Candidates from the Tier 2 research (2026-11-19): a local-only «alternativa a Fintonic» for AllPaid (G `fintonic
+alternativas`, Fintonic ★25 898 in Spain); Spain-specific shift calendars Shifter (★33 072) and Supershift (★8621) for
+AfterShift; AppBlock (★974) for EarnLock. Not researched further yet. Candidates seen in the iTunes Search API results during keyword research are listed in
 es-keywords.md per page.
 
 ## Tells to cut in Spanish (TRANSLATION.md 8.2, plus what reviews find)
@@ -268,6 +286,19 @@ gendered «Eres desarrollador», «¿Atascado?»; a keyword noun in apposition i
 pagos»); «a nivel de palabra»; absolute gerunds («con iOS decidiendo»); periods at the end of who_for bullets;
 multi-word UI labels left unquoted; merged FAQ questions that add a framing sentence; «te lee» (French calque);
 «Sobre nosotros» for a one-person studio; raw keyword-style H1s («Cancelar suscripción iPhone: …»).
+
+Found in the Tier 2 reviews (2026-11-19): «queda de tu mano» for "is left to you" («corre de tu cuenta»); «adelantar» for
+carry-forward (reads as "move earlier": «pasa a hoy»); «una buena dormida» («un buen descanso»); «ibas tarde» for "feel behind"
+(«ibas con retraso»); «la vida se interpone»; indicative where Spanish needs the subjunctive («donde no te cuesta», «la próxima
+vez que la abres»); gendered audience words («harto», «despierto», «atrapado»); raw keyword seo.titles without «de/para»
+(«Mejores apps salud Apple Watch»); «sin rachas» for Taskful Day (fact trap: Análisis shows streaks); «dejan con ganas de más»
+for "unsatisfying" (means the opposite); «la parte honda de la piscina»; «escrito por autores» ("authored"); «estancamiento» for
+stalemate («ahogado»); «la jugada mejor»; a keyword prefixed onto an H2; a capitalised tab name used as a common noun
+(«y Análisis que…»); an unconditional `{{ t.english_marker }}` inside JSON-LD text; «hacer ganar la apertura» ("earn the open");
+a heading promising something about every app when only some were checked («Lo que ninguna app … puede hacer»); «pase lo que
+pase» on a system setting; «guía honesta» / «(2026)» sales padding in seo.titles; «seguimiento» for tracking (Spain: «rastreo»);
+missing U+00A0 before % and € (none of the Tier 2 writers typed it). Competitor prices: Spanish App Store euro rows only,
+«(App Store de España, consultado el …)» once per page; never US figures converted.
 
 Translationese: title case headings; missing ¿ and ¡; chains of gerunds copied from English -ing («ofreciendo»,
 «permitiendo», «haciendo» trailing a sentence); passive «es … por» where Spanish uses «se»; possessives on body
@@ -303,6 +334,10 @@ home, all 21 app pages, about. Native review: none yet, for every page (NATIVE R
 | 21 privacy policies + Clippet terms | 7 writers | 4 reviewers, sentence by sentence | n/a | no native review yet |
 | about, support hub, transparency | 3 writers | 1 reviewer | about: 1 fix | no native review yet |
 | /es/llms.txt, /es/llms-full.txt | 1 writer | 1 reviewer | n/a | no native review yet |
+| Tier 2 batch 1: 4 guides | 4 writers (Sonnet) | 1 reviewer | n/a | no native review yet |
+| Tier 2 batch 1: 3 audience pages | 3 writers (Sonnet) | 1 reviewer | n/a | no native review yet |
+| Tier 2 batch 1: local-only screen-time guide | 1 writer (Sonnet), sources saved | 1 reviewer, every source re-fetched, claim by claim | n/a | no native review yet |
+| Tier 2 batch 1: both hubs, llms.txt lines, inbound-link sentences | 1 writer (Sonnet) + main session | 1 wiring reviewer | n/a | no native review yet |
 
 ## Apps still on English screenshots
 

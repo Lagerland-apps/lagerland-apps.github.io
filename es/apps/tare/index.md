@@ -42,9 +42,8 @@ seo:
   description: "Juego de ingenio sin palabras para iPhone y iPad: deduce los pesos ocultos con tarjetas ilustradas. 200 niveles, 20 gratis, sin conexión y sin anuncios."
   keywords:
     - "juegos de ingenio iphone"
-    - "mejores juegos de lógica iphone"
+    - "mejores juegos de ingenio iphone"
     - "juegos de lógica sin anuncios"
-    - "mejores juegos de puzzle iphone"
     - "juegos de pensar iphone"
     - "juegos sin anuncios iphone"
 

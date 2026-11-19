@@ -1,0 +1,86 @@
+---
+layout: default
+ref: /guides/
+permalink: /es/guides/
+translated_from: 2026-10-29
+title: "Guías"
+quick_answer: "Las guías de Lagerland Apps son artículos cortos para iPhone y Mac que parten de un problema concreto, comparan las apps que lo resuelven y dicen qué hace y qué no hace cada una. En español cubren la mejor app de ajedrez para iPhone, los juegos de lógica sin anuncios, el ajedrez chino (xiangqi) sin saber chino, la app de gimnasio sin suscripción y cómo limitar el tiempo de pantalla. Cada guía nombra apps concretas, dice cuál elegir según el caso y avisa cuando una app es nuestra."
+seo:
+  title: "Guías de apps para iPhone: ajedrez, lógica y gimnasio"
+  description: "Guías que parten de un problema: mejor app de ajedrez, juegos de lógica para iPhone, app de gimnasio sin suscripción, ajedrez chino y tiempo de pantalla."
+  keywords:
+    - mejor app de ajedrez
+    - mejores juegos de lógica iphone
+    - app gimnasio sin suscripción
+    - ajedrez chino online
+    - como limitar el tiempo de pantalla en iphone
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/es/guides/#webpage",
+  "url": "{{ site.url }}/es/guides/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "es-ES",
+  "datePublished": "2026-11-19",
+  "isPartOf": { "@id": "{{ site.url }}/es/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/es/" },
+      { "@type": "ListItem", "position": 2, "name": "Guías", "item": "{{ site.url }}/es/guides/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 5,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "App de gimnasio sin suscripción", "url": "{{ site.url }}{% include l.html url="/guides/workout-app-without-subscription/" %}" },
+      { "@type": "ListItem", "position": 2, "name": "Las mejores apps de ajedrez chino (xiangqi) para iPhone", "url": "{{ site.url }}{% include l.html url="/guides/best-xiangqi-apps-iphone/" %}" },
+      { "@type": "ListItem", "position": 3, "name": "Los mejores juegos de lógica para iPhone", "url": "{{ site.url }}{% include l.html url="/guides/best-logic-puzzle-games-iphone/" %}" },
+      { "@type": "ListItem", "position": 4, "name": "La mejor app de ajedrez para iPhone, según para qué la quieras", "url": "{{ site.url }}{% include l.html url="/guides/best-chess-apps-iphone/" %}" },
+      { "@type": "ListItem", "position": 5, "name": "Cómo limitar el tiempo de pantalla en el iPhone", "url": "{{ site.url }}/es/guides/limitar-tiempo-de-pantalla-iphone/" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Problema → respuesta</p>
+    <h1 class="h1">Guías que parten<br><span class="gradient-text">de un problema real.</span></h1>
+    <p class="lead">Guías cortas que parten de una frustración concreta (<em>«Quiero una app de gimnasio sin suscripción»</em>), comparan las apps que la resuelven y dicen qué hace y qué no hace cada una.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="grid grid-2 stagger">
+    <a class="card card-app" href="{% include l.html url="/guides/workout-app-without-subscription/" %}">
+      <div class="card-title">«Quiero una app de gimnasio sin suscripción»</div>
+      <div class="card-text">Fitbod y Caliber venden sus niveles de pago solo por suscripción; Strong y Hevy venden Pro por suscripción o como compra de por vida. LiftLog se paga una sola vez, sin suscripción, y GymLogger X es gratis, con Pro por suscripción o de por vida por {P_LIFETIME@gymlogger-x}.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/guides/best-xiangqi-apps-iphone/" %}">
+      <div class="card-title">«Quiero aprender ajedrez chino, pero todas las apps dan por hecho que leo chino»</div>
+      <div class="card-text">Xiangqi.com, PyChess, Xiangqiful, Chinese Chess - Best XiangQi, Club Xiangqi y PlayOK comparadas, las gratuitas primero, con la cuestión de los caracteres para cada una.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/guides/best-logic-puzzle-games-iphone/" %}">
+      <div class="card-title">«Quiero un juego de lógica con una respuesta clara, sin anuncios ni vidas»</div>
+      <div class="card-text">Baba Is You, Simon Tatham's Puzzles, Good Sudoku, Nonograms Katana, Threes!, Flow Free, Tare, Millrace y otros comparados, primero los que no tienen anuncios.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/guides/best-chess-apps-iphone/" %}">
+      <div class="card-title">«¿Cuál es la mejor app de ajedrez y cuál me ayuda de verdad a mejorar?»</div>
+      <div class="card-text">Lichess, Chess.com, Chessful, Chessable y otras comparadas según para qué las quieras: jugar, aprender aperturas o entender por qué pierdes. Las gratuitas primero.</div>
+    </a>
+    <a class="card card-app" href="/es/guides/limitar-tiempo-de-pantalla-iphone/">
+      <div class="card-title">«Quiero pasar menos tiempo con el iPhone y Tiempo de uso ya no me frena»</div>
+      <div class="card-text">Tiempo de uso, EarnLock, Opal, one sec, Cape, ScreenZen, Jomo, Forest y AppBlock comparados según cómo frenan: bloquean una app, retrasan su apertura o te la hacen ganar caminando.</div>
+    </a>
+  </div>
+  <p class="card-text">También tenemos dos guías que todavía no están en español: <a href="{% include l.html url="/guides/best-shogi-apps-iphone/" %}"{% if l_en %} hreflang="en"{% endif %}>las mejores apps de shogi para iPhone{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> y <a href="{% include l.html url="/guides/bill-tracker-without-bank-connection/" %}"{% if l_en %} hreflang="en"{% endif %}>cómo seguir tus facturas sin conectar el banco{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+</section>

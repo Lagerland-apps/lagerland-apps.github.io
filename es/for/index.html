@@ -1,0 +1,76 @@
+---
+layout: default
+ref: /for/
+permalink: /es/for/
+translated_from: 2026-10-29
+title: "Para quién"
+quick_answer: "Lagerland Apps agrupa sus apps para iPhone y Apple Watch por perfiles concretos. En español hay tres páginas: una para el trabajo a turnos y de noche, cuando duermes a horas poco habituales; otra para quien usa a fondo Salud de Apple y ya recopila sus datos; y otra para organizar el día sin la presión de las rachas. Cada página recomienda tres o cuatro apps, dice qué aporta cada una a ese perfil y nombra por cuál empezar."
+seo:
+  title: "Para quién: apps de iPhone y Apple Watch según tu perfil"
+  description: "Nuestras apps de iPhone para tres perfiles: el trabajo a turnos y la salud, quien usa a fondo Salud de Apple y quien quiere organizar el día sin presión."
+  keywords:
+    - trabajo a turnos y salud
+    - mejores apps salud apple watch
+    - mejores apps de productividad iphone
+    - app turnos trabajo iphone
+    - app minimalista para iphone
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/es/for/#webpage",
+  "url": "{{ site.url }}/es/for/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "es-ES",
+  "datePublished": "2026-11-19",
+  "isPartOf": { "@id": "{{ site.url }}/es/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/es/" },
+      { "@type": "ListItem", "position": 2, "name": "Para quién", "item": "{{ site.url }}/es/for/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 3,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Trabajo a turnos y salud: las apps de iPhone para tus horarios", "url": "{{ site.url }}{% include l.html url="/for/shift-workers/" %}" },
+      { "@type": "ListItem", "position": 2, "name": "Mejores apps de salud para Apple Watch y Salud de Apple", "url": "{{ site.url }}{% include l.html url="/for/apple-health-power-users/" %}" },
+      { "@type": "ListItem", "position": 3, "name": "Apps de productividad para iPhone sin la presión de las rachas", "url": "{{ site.url }}{% include l.html url="/for/calm-productivity/" %}" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Perfil → apps</p>
+    <h1 class="h1">Apps pensadas para<br><span class="gradient-text">tu forma de vivir y de trabajar.</span></h1>
+    <p class="lead">Tres páginas cortas: cada una asocia unas pocas de nuestras apps a un tipo de horario o de trabajo y nombra por cuál empezar.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="grid grid-2 stagger">
+    <a class="card card-app" href="{% include l.html url="/for/shift-workers/" %}">
+      <div class="card-title">Para quien trabaja a turnos</div>
+      <div class="card-text">Enfermería, ambulancias y cualquier trabajo de noche o con turnos rotativos: el sueño medido de un turno al siguiente, una puntuación de preparación diaria, y tareas y facturas que no se te escapan cuando cambia tu horario.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/for/apple-health-power-users/" %}">
+      <div class="card-title">Para quien usa a fondo Salud de Apple</div>
+      <div class="card-text">Tu Apple Watch ya registra tu sueño, tu VFC y tu frecuencia cardiaca. Observa los convierte en una puntuación de preparación diaria y te dice el motivo, y el análisis se hace en tu dispositivo.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/for/calm-productivity/" %}">
+      <div class="card-title">Organizar el día sin presión</div>
+      <div class="card-text">Un planificador diario que pasa a hoy lo que no has terminado, sin lista roja de tareas atrasadas, y cuentas atrás hasta las fechas que te importan.</div>
+    </a>
+  </div>
+  <p class="card-text">Hay una página más que todavía no está en español: <a href="{% include l.html url="/for/indie-ios-developers/" %}"{% if l_en %} hreflang="en"{% endif %}>para desarrolladores iOS independientes{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+</section>

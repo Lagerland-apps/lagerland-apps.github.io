@@ -2020,7 +2020,7 @@
      "q": "¿Qué es EarnLock?"
     },
     {
-     "a": "Esas apps ponen una pausa, un temporizador o un simple toque entre tú y la app. EarnLock pone ahí un objetivo diario de actividad, medido por Salud de Apple: con la mitad, algunas de tus apps se abren durante una hora más o menos, una vez al día, y el objetivo completo las abre todas hasta medianoche. EarnLock también empieza con una semana sombra que no bloquea nada y cuenta cuántas veces te habrían bloqueado, para que tu primer bloqueo de verdad se ajuste a tu hábito. No exige cuenta, bloquear una app es gratis para siempre, y Premium existe en mensual, en anual o como compra única de {P_LIFETIME}.",
+     "a": "Esas apps ponen una pausa, un temporizador o un simple toque entre tú y la app. EarnLock pone ahí un objetivo diario de actividad, medido por Salud de Apple: con la mitad, algunas de tus apps se abren durante una hora más o menos, una vez al día, y el objetivo completo las abre todas hasta medianoche. EarnLock también empieza con una semana sombra que no bloquea nada y cuenta cuántas veces te habrían bloqueado, para que tu primer bloqueo de verdad se ajuste a tu hábito. No exige cuenta, bloquear una app es gratis para siempre, y Premium existe en mensual, en anual o como compra única de {P_LIFETIME}. La <a href=\"/es/guides/limitar-tiempo-de-pantalla-iphone/\">guía para limitar el tiempo de pantalla en el iPhone</a> compara también EarnLock con Tiempo de uso, Cape y Jomo.",
      "q": "¿En qué se diferencia EarnLock de Opal, one sec, ScreenZen o Forest?"
     },
     {
@@ -2150,7 +2150,7 @@
      "q": "¿Qué es LiftLog?"
     },
     {
-     "a": "No hay suscripción. LiftLog es gratis durante 7 días, sin tarjeta. Después lo compras una sola vez en el nivel que elijas: {P_IAP:Minimum} (Justo), {P_IAP:Suggested} (Bueno), {P_IAP:Supporter} (Generoso) o {P_IAP:Patron} (Mecenas). Todos los niveles desbloquean la misma app, nada se renueva, las actualizaciones futuras están incluidas y En familia está activado, así que una compra cubre a tu grupo familiar.",
+     "a": "No hay suscripción. LiftLog es gratis durante 7 días, sin tarjeta. Después lo compras una sola vez en el nivel que elijas: {P_IAP:Minimum} (Justo), {P_IAP:Suggested} (Bueno), {P_IAP:Supporter} (Generoso) o {P_IAP:Patron} (Mecenas). Todos los niveles desbloquean la misma app, nada se renueva, las actualizaciones futuras están incluidas y En familia está activado, así que una compra cubre a tu grupo familiar. La <a href=\"/es/guides/workout-app-without-subscription/\">guía de apps de gimnasio sin suscripción</a> compara LiftLog con Strong, Hevy y Fitbod.",
      "q": "¿Cuánto cuesta LiftLog y tiene suscripción?"
     },
     {

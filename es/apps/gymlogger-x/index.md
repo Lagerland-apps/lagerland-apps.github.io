@@ -62,7 +62,6 @@ seo:
     - mejor app entrenamiento fuerza
     - mejor app gimnasio iphone
     - app para rutinas de gimnasio
-    - mejor app para gimnasio gratis
     - hevy app gimnasio
 
 hero:
