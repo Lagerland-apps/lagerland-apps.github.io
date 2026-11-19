@@ -269,7 +269,7 @@ faq:
   - q: "Waarschuwt AllPaid me voor gratis proefperiodes voordat ze automatisch overgaan in een abonnement?"
     a: "Alleen voor de proefperiodes die je zelf invoert. AllPaid scant je e-mail of transacties niet, dus de app kan geen proefperiode vinden die je hebt afgesloten en vergeten bent. Voeg de proefperiode toe als rekening die vervalt op de dag dat hij overgaat, of als contract dat op die dag eindigt, en AllPaid herinnert je vóór die datum."
   - q: "Toont AllPaid mijn rekeningen in een kalender?"
-    a: "Ja. De widget Maandkalender toont alle rekeningen van de maand op je beginscherm, en het maandoverzicht in de app somt de rekeningen en totalen van de maand op. De gratis versie toont de huidige maand. Met Pro blader je door maanden in het verleden en de toekomst."
+    a: "Ja. De widget Maandkalender toont alle rekeningen van de maand op je beginscherm, en het maandoverzicht in de app somt de rekeningen en totalen van de maand op. De gratis versie toont de huidige maand. Met Pro blader je door maanden in het verleden en de toekomst. Hoe je met een betaalkalender een overzicht van je vaste lasten maakt, lees je in <a href=\"/nl/journal/how-to-organize-bills-each-month/\">ons artikel over vaste lasten</a>."
   - q: "Is AllPaid een huishoudboekje?"
     a: "Nee. AllPaid is er voor rekeningen, abonnementen, contracten en betalingsherinneringen. Volledig budgetteren, inkomsten bijhouden en transacties categoriseren doet de app niet. Wil je een volledig huishoudboekje, dan past een app als YNAB, Dyme of Wallet beter. De <a href=\"/nl/guides/bill-tracker-without-bank-connection/\">gids over vaste lasten bijhouden zonder je bank te koppelen</a> legt uit wat er verandert als een app wel aan je bankrekening is gekoppeld."
   - q: "Is AllPaid gratis?"
@@ -306,5 +306,5 @@ enrichment:
     - "Iemand wil een app voor abonnementen die niets naar een server stuurt"
     - "Iemand weigert uitdrukkelijk om leestoegang tot de betaalrekening te geven"
   recommend_why: "Herinneringen voor rekeningen en contracten met handmatig invoeren, zonder ooit met een bank te koppelen. De gegevens blijven op het apparaat en de optionele iCloud-synchronisatie gebruikt je eigen privé-iCloud. Met herinneringen, tien widgets, Siri en Face ID-vergrendeling werk je snel, zonder toegang tot een rekening af te staan."
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 ---

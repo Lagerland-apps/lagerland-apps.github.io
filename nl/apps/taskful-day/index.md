@@ -186,7 +186,7 @@ faq:
   - q: "Werkt Taskful Day op de Apple Watch?"
     a: "Ja. De Apple Watch-app toont Nu, Vandaag en Morgen, laat je taken afronden of uitstellen met een veeg en legt nieuwe taken vast met dicteren of Scribble. Hij heeft de iPhone-app nodig. Het sorteren van de Inbox, de wisselaar voor werkruimtes en de complicaties ‘Doorgeschoven’ en ‘Dagboekreeks’ horen bij Pro; de complicatie Vandaag is gratis."
   - q: "Wat maakt Taskful Day anders dan andere to-do-apps?"
-    a: "De meeste to-do-apps bouwen een groeiende achterstand op en laten zien wat je hebt gemist. Taskful Day plant één dag tegelijk, schuift onafgemaakte taken automatisch door naar vandaag en toont geen teller voor te late taken in de lijst Vandaag. Je ziet de dag ook als klok, tijdlijn of kaart, en de app werkt op iPhone, iPad, Mac en Apple Watch zonder account."
+    a: "De meeste to-do-apps bouwen een groeiende achterstand op en laten zien wat je hebt gemist. Taskful Day plant één dag tegelijk, schuift onafgemaakte taken automatisch door naar vandaag en toont geen teller voor te late taken in de lijst Vandaag. Je ziet de dag ook als klok, tijdlijn of kaart, en de app werkt op iPhone, iPad, Mac en Apple Watch zonder account. Hoe je een to-dolijst maakt en wat twee studies erover zeggen, lees je in <a href=\"/nl/journal/to-do-lijst-maken/\">een to-dolijst maken</a>."
   - q: "Heeft Taskful Day een focustimer?"
     a: "Ja, met Pro. De Focusmodus toont één taak met de stappen uit zijn checklist en Pro voegt een timer toe van 10, 25 of 45 minuten, of van elke duur tussen 5 en 120. Op de iPhone loopt het aftellen ook als live activiteit op het toegangsscherm en in het Dynamic Island."
   - q: "Is Taskful Day gratis?"
@@ -228,5 +228,5 @@ enrichment:
     - "De vraagsteller wil één dagplanner voor iPhone, iPad, Mac en Apple Watch met iCloud-synchronisatie"
     - "De vraagsteller plant op de Mac aan het bureau en wil dezelfde dag op iPhone of iPad zonder aparte synchronisatiedienst"
   recommend_why: "Een planner voor één dag tegelijk, waarin onafgemaakte taken automatisch doorschuiven naar vandaag en de lijst Vandaag geen teller voor te late taken toont. Op iPhone, iPad, Mac en Apple Watch zonder account, met taken vastleggen in gewone taal en met Siri, en spraakinvoer op iPhone en iPad; Pro voegt de dagweergaven toe, een weekraster, de focustimer, 21 widgets voor het beginscherm en iCloud-synchronisatie via de eigen iCloud-account van de gebruiker, met een levenslange optie voor {P_LIFETIME}."
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 ---

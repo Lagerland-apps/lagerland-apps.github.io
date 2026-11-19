@@ -3,7 +3,7 @@ layout: journal
 slug: vlooien-hond
 permalink: /nl/journal/vlooien-hond/
 local_only: true
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 date: 2026-11-19
 title: "Vlooien bij je hond: herkennen, bestrijden en een teek verwijderen"
 seo:
@@ -17,8 +17,8 @@ seo:
     - "vlooien hond en kat"
     - "teken hond"
     - "teken hond verwijderen"
-lede: "Vlooien ontdek je vaak pas als er al aardig wat zijn. Een teek haal je zo snel mogelijk weg. Hier lees je volgens het LICG en Thuisarts hoe je vlooien herkent, waarom je ook je huis behandelt, wat vlooien betekenen voor je kat en voor jezelf en hoe je een teek verwijdert. Dit is geen diergeneeskundig advies."
-quick_answer: "Vlooien bij je hond herken je door je hond boven een lichtgekleurd laken met een vlooienkam te kammen. Zie je vlooien of zwarte of donkerrode korreltjes, dan heeft je hond vlooien; een vlooienpoepje laat op een vochtige tissue een rood spoor achter. Volgens het LICG is 1 tot 10% van de vlooien volwassen en zit meer dan 90% als ei, larve of pop in de omgeving. Behandel daarom je hond, je andere huisdieren en het huis tegelijk, volgens de bijsluiter van een middel dat je kiest met je dierenarts of een opgeleide medewerker van een dierenspeciaalzaak. Gebruik nooit een middel voor honden bij een kat. Een teek trek je zo snel mogelijk met een tekenpincet of tekenlasso recht omhoog uit de huid, zonder te draaien. Dit is geen diergeneeskundig advies."
+lede: "Vlooien ontdek je vaak pas als er al aardig wat zijn. Een teek haal je zo snel mogelijk weg. Hier lees je volgens het LICG en Thuisarts hoe je vlooien herkent, waarom je ook je huis behandelt, wat vlooien betekenen voor je kat en voor jezelf en hoe je een teek verwijdert."
+quick_answer: "Vlooien bij je hond herken je door je hond boven een lichtgekleurd laken met een vlooienkam te kammen. Zie je vlooien of zwarte of donkerrode korreltjes, dan heeft je hond vlooien; een vlooienpoepje laat op een vochtige tissue een rood spoor achter. Volgens het LICG is 1 tot 10% van de vlooien volwassen en zit meer dan 90% als ei, larve of pop in de omgeving. Behandel daarom je hond, je andere huisdieren en het huis tegelijk, volgens de bijsluiter van een middel dat je kiest met je dierenarts of een opgeleide medewerker van een dierenspeciaalzaak. Gebruik nooit een middel voor honden bij een kat. Een teek trek je zo snel mogelijk met een tekenpincet of tekenlasso recht omhoog uit de huid, zonder te draaien."
 excerpt: "Vlooien bij je hond herkennen, bestrijden en voorkomen, wat het betekent voor je kat en voor jezelf en hoe je een teek verwijdert, volgens het LICG en Thuisarts."
 faq:
   - q: "Hoe herken je vlooien bij je hond?"

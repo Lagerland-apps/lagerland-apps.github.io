@@ -14,7 +14,7 @@ seo:
     - app om minder op je telefoon te zitten
     - apps blokkeren na bepaalde tijd
     - schermtijd beperken app
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 ---
 {%- include t.html -%}
 {%- assign app = site.apps | where: "slug", "earnlock" | first -%}
@@ -291,5 +291,6 @@ last_updated: 2026-11-19
   <div class="actions">
     <a class="btn btn-primary" href="{% include l.html url="/apps/earnlock/" %}"{% if l_en %} hreflang="en"{% endif %}>Bekijk EarnLock{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
     <a class="btn btn-secondary" href="{% include l.html url="/guides/" %}"{% if l_en %} hreflang="en"{% endif %}>Alle gidsen{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="/nl/journal/telefoonverslaving/">Wat zegt onderzoek over telefoonverslaving?</a>
   </div>
 </section>

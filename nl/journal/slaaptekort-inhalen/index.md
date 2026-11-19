@@ -3,7 +3,7 @@ layout: journal
 slug: slaaptekort-inhalen
 permalink: /nl/journal/slaaptekort-inhalen/
 local_only: true
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 date: 2026-11-19
 title: "Slaaptekort inhalen: kan het, hoe snel gaat het en wat laten studies zien?"
 seo:
@@ -18,7 +18,7 @@ seo:
     - "hoe slaaptekort inhalen"
     - "moet je slaaptekort inhalen"
 lede: "Slaaptekort is het verschil tussen de slaap die je nodig hebt en de slaap die je krijgt. Drie studies onderzochten of je dat verschil kunt inhalen en hoe lang dat duurt. Je leest wat ze vonden, wat Thuisarts en de Hersenstichting adviseren en wat er bij ploegendienst anders is."
-quick_answer: "Slaaptekort inhalen lukt maar gedeeltelijk. In een laboratoriumstudie was één herstelnacht na vijf korte nachten niet genoeg, en in een andere had één uur tekort vier dagen nodig om te herstellen. Uitslapen in het weekend voorkwam in een derde studie niet dat de stofwisseling ontregeld raakte zodra de korte nachten terugkwamen. De Hersenstichting raadt aan niet veel langer uit te slapen en ook in het weekend op dezelfde tijd op te staan. Dit is geen medisch advies: blijf je slecht slapen, maak dan een afspraak met je huisarts."
+quick_answer: "Slaaptekort inhalen lukt maar gedeeltelijk. In een laboratoriumstudie was één herstelnacht na vijf korte nachten niet genoeg, en in een andere had één uur tekort vier dagen nodig om te herstellen. Uitslapen in het weekend voorkwam in een derde studie niet dat de stofwisseling ontregeld raakte zodra de korte nachten terugkwamen. De Hersenstichting raadt aan niet veel langer uit te slapen en ook in het weekend op dezelfde tijd op te staan. Blijf je slecht slapen, maak dan een afspraak met je huisarts."
 excerpt: "Wat drie studies laten zien over slaaptekort inhalen, uitslapen in het weekend en hoe lang herstel duurt, wat Thuisarts en de Hersenstichting adviseren, wat er bij ploegendienst speelt en hoe AfterShift en Observa je slaap bijhouden."
 faq:
   - q: "Kan je slaaptekort inhalen?"
@@ -119,5 +119,3 @@ Helpen de slaapadviezen niet genoeg, dan raadt Thuisarts aan een afspraak te mak
 - [Banks en collega’s, Sleep 2010](https://doi.org/10.1093/sleep/33.8.1013){: hreflang="en"} (in het Engels)
 - [Kitamura en collega’s, Scientific Reports 2016](https://doi.org/10.1038/srep35812){: hreflang="en"} (in het Engels)
 - [Depner en collega’s, Current Biology 2019](https://doi.org/10.1016/j.cub.2019.01.069){: hreflang="en"} (in het Engels)
-
-Dit artikel is geen medisch advies. Blijf je slecht slapen, praat er dan over met je huisarts.

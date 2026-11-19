@@ -3,7 +3,7 @@ layout: journal
 slug: hartslag-in-rust
 permalink: /nl/journal/hartslag-in-rust/
 local_only: true
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 date: 2026-11-19
 title: "Hartslag in rust: normale waarden, sporters, de nacht en je Apple Watch"
 seo:
@@ -17,7 +17,7 @@ seo:
     - "rusthartslag"
     - "rusthartslag vrouw"
     - "rusthartslag te hoog"
-lede: "Bij de meeste volwassenen ligt de hartslag in rust tussen de 60 en 100 slagen per minuut, schrijft de Hartstichting. Hier lees je wat de Hartstichting en Thuisarts zeggen over normale waarden, sporters, de nacht, man en vrouw en leeftijd, wat je Apple Watch laat zien en wanneer je naar de huisarts gaat. Dit is geen medisch advies."
+lede: "Bij de meeste volwassenen ligt de hartslag in rust tussen de 60 en 100 slagen per minuut, schrijft de Hartstichting. Hier lees je wat de Hartstichting en Thuisarts zeggen over normale waarden, sporters, de nacht, man en vrouw en leeftijd, wat je Apple Watch laat zien en wanneer je naar de huisarts gaat."
 quick_answer: "Bij de meeste volwassenen ligt de hartslag in rust tussen de 60 en 100 slagen per minuut, volgens de Hartstichting. Thuisarts noemt 60 tot 90 keer per minuut als je rustig zit. Voor sporters noemt de Hartstichting 40 tot 100 in rust, en tijdens de slaap ligt de hartslag vaak onder de 60. Aparte cijfers voor vrouwen en mannen of per leeftijd geeft de Hartstichting voor volwassenen niet, dus ook niet voor 50 jaar; vrouwen hebben gemiddeld wel een iets hogere hartslag in rust. Heb je in rust zonder duidelijke oorzaak een hartslag boven de 100, of regelmatig klachten zoals duizeligheid of flauwvallen bij een lage hartslag, bespreek dat dan met je huisarts."
 excerpt: "Normale waarden voor de hartslag in rust volgens de Hartstichting en Thuisarts, met sporters, man en vrouw, leeftijd, de nacht, de Apple Watch en het moment om naar de huisarts te gaan."
 faq:

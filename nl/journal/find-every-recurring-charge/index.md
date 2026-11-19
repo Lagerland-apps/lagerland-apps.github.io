@@ -4,7 +4,7 @@ slug: find-every-recurring-charge
 ref: /journal/find-every-recurring-charge/
 permalink: /nl/journal/find-every-recurring-charge/
 translated_from: 2026-10-29
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 date: 2026-11-19
 title: "Abonnementen bekijken op je iPhone en alle andere terugkerende betalingen vinden, zonder je bank te koppelen"
 seo:
@@ -125,7 +125,7 @@ De checklist hierboven beantwoordt de vraag *hoe vind ik ze zonder die toegang*.
 
 ## Wat doe je met de lijst als je hem hebt?
 
-Bij deze stap mislukken de meeste controles. Mensen vinden elf vergeten betalingen, zeggen er vier op, voelen zich goed en bouwen in achttien maanden dezelfde rommel weer op, omdat nergens is vastgelegd welke zeven ze hielden en wanneer die verlengen. Weet je wat je houdt, dan laat [een rekeningkalender rond je betaaldagen](/journal/how-to-organize-bills-each-month/){: hreflang="en"} (in het Engels) zien welk salaris welke afschrijving moet dekken.
+Bij deze stap mislukken de meeste controles. Mensen vinden elf vergeten betalingen, zeggen er vier op, voelen zich goed en bouwen in achttien maanden dezelfde rommel weer op, omdat nergens is vastgelegd welke zeven ze hielden en wanneer die verlengen. Weet je wat je houdt, dan laat [een betaalkalender rond je salarisdagen](/nl/journal/how-to-organize-bills-each-month/) zien welk salaris welke afschrijving moet dekken.
 
 De lijst moet ergens staan waar hij vooruit rekent. Een notitie doet dat niet, en een spreadsheet doet het tot ongeveer de derde week. [AllPaid](/nl/apps/allpaid/) is de app van onze studio voor deze taak: je typt een naam als Netflix, de app stelt de categorie en de herhaling voor, en vanaf dan krijgt elke rekening een herinnering om 9:00 uur vóór de vervaldatum en verschijnt hij in het maandoverzicht en in de widget ‘Maandkalender’. Een jaarlijkse verlenging die je vandaag invoert, krijgt over maanden toch zijn herinnering, de dag voordat hij verlengt, en juist die betaling mist een afschriftcontrole het vaakst. Voor een contract dat automatisch verlengt, kan AllPaid ook de einddatum bijhouden en je er vooraf aan herinneren. De app is gratis voor maximaal 3 rekeningen, met Pro voor {P_MONTHLY@allpaid}/maand, {P_YEARLY@allpaid}/jaar of {P_LIFETIME@allpaid} eenmalig, en vraagt nooit om je bankgegevens, omdat de app er niets mee kan. Je rekeningen blijven op je iPhone; de [transparantiepagina](/nl/transparency/) toont de SDK’s van derden (geen) en de lege lijst met trackingdomeinen.
 

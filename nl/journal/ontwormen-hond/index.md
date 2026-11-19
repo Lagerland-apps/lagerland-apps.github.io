@@ -3,7 +3,7 @@ layout: journal
 slug: ontwormen-hond
 permalink: /nl/journal/ontwormen-hond/
 local_only: true
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 date: 2026-11-19
 title: "Ontwormen hond: hoe vaak bij een puppy en bij een volwassen hond"
 seo:
@@ -16,9 +16,8 @@ seo:
     - "ontwormen hond puppy"
     - "ontwormen hond dierenarts"
     - "ontwormen puppy"
-    - "wormen kat"
-lede: "Een puppy ontworm je volgens het LICG en ESCCAP Benelux vanaf een leeftijd van 2 weken, een volwassen hond gemiddeld 4 keer per jaar. Hier lees je beide puppyschema’s, wanneer vaker ontwormen verstandig is en wat ontlastingsonderzoek kan. Ook de zogende teef, de kat en je kinderen komen aan bod. Dit is geen diergeneeskundig advies."
-quick_answer: "Een puppy ontwormen begint bij een leeftijd van 2 weken. Het LICG en de ESCCAP-richtlijn herhalen de behandeling daarna elke 2 weken tot 2 weken na het spenen en gaan dan elke maand door tot 6 maanden. De ESCCAP-folder noemt 2, 4, 6 en 8 weken en daarna elke maand tot een half jaar. Een volwassen hond ontworm je volgens ESCCAP Benelux gemiddeld 4 keer per jaar; het LICG noemt ten minste 4 keer per jaar als algemene richtlijn. Regelmatig ontlastingsonderzoek is een alternatief. Loopt je hond meer risico, bijvoorbeeld in een huishouden met jonge kinderen, dan is vaker ontwormen aan te raden, volgens ESCCAP tot zelfs maandelijks. Welk middel en welk schema bij je hond passen, bepaal je met je dierenarts. Dit is geen diergeneeskundig advies."
+lede: "Een puppy ontworm je volgens het LICG en ESCCAP Benelux vanaf een leeftijd van 2 weken, een volwassen hond gemiddeld 4 keer per jaar. Hier lees je beide puppyschema’s, wanneer vaker ontwormen verstandig is en wat ontlastingsonderzoek kan. Ook de zogende teef, de kat en je kinderen komen aan bod."
+quick_answer: "Een puppy ontwormen begint bij een leeftijd van 2 weken. Het LICG en de ESCCAP-richtlijn herhalen de behandeling daarna elke 2 weken tot 2 weken na het spenen en gaan dan elke maand door tot 6 maanden. De ESCCAP-folder noemt 2, 4, 6 en 8 weken en daarna elke maand tot een half jaar. Een volwassen hond ontworm je volgens ESCCAP Benelux gemiddeld 4 keer per jaar; het LICG noemt ten minste 4 keer per jaar als algemene richtlijn. Regelmatig ontlastingsonderzoek is een alternatief. Loopt je hond meer risico, bijvoorbeeld in een huishouden met jonge kinderen, dan is vaker ontwormen aan te raden, volgens ESCCAP tot zelfs maandelijks. Welk middel en welk schema bij je hond passen, bepaal je met je dierenarts."
 excerpt: "Het ontwormschema voor een puppy en een volwassen hond volgens het LICG en ESCCAP Benelux, met ontlastingsonderzoek, de zogende teef, de kat, kinderen en wat je met je dierenarts bespreekt."
 faq:
   - q: "Hoe vaak moet je een hond ontwormen?"

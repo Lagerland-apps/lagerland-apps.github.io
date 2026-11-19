@@ -3,7 +3,7 @@ layout: journal
 slug: hoeveel-diepe-slaap
 permalink: /nl/journal/hoeveel-diepe-slaap/
 local_only: true
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 date: 2026-11-19
 title: "Hoeveel diepe slaap heb je nodig? Richtwaarden per nacht, per leeftijd en op je Apple Watch"
 seo:
@@ -17,8 +17,8 @@ seo:
     - "diepe slaap verbeteren"
     - "hoelang diepe slaap per nacht"
     - "percentage diepe slaap per nacht"
-lede: "Een vaste norm voor diepe slaap is er niet; de bronnen geven een richtwaarde als aandeel van je nacht. Hier lees je wat ze noemen, wat dat in minuten is, hoe het met de leeftijd verandert en hoe nauwkeurig je Apple Watch diepe slaap schat. Dit is geen medisch advies."
-quick_answer: "Voor de meeste volwassenen is diepe slaap volgens de Sleep Foundation ongeveer 10 tot 20% van de slaaptijd. Bij 7 uur slaap rekent de Sleep Foundation dat om naar 42 tot 84 minuten. Over één concreet getal is volgens dezelfde bron geen overeenstemming, en wat je nodig hebt, verschilt per persoon. Met de leeftijd neemt diepe slaap af: Thuisarts schrijft dat oudere mensen minder diep slapen en dat dat bij de leeftijd hoort. Je Apple Watch schat de fases volgens Apple met de versnellingsmeter, uit je bewegingen, en de vaakste fout in Apples validatie was echte diepe slaap die als kernslaap werd gelabeld. Helpen slaapadviezen na een paar weken niet genoeg, maak dan een afspraak bij je huisarts. Dit is geen medisch advies."
+lede: "Een vaste norm voor diepe slaap is er niet; de bronnen geven een richtwaarde als aandeel van je nacht. Hier lees je wat ze noemen, wat dat in minuten is, hoe het met de leeftijd verandert en hoe nauwkeurig je Apple Watch diepe slaap schat."
+quick_answer: "Voor de meeste volwassenen is diepe slaap volgens de Sleep Foundation ongeveer 10 tot 20% van de slaaptijd. Bij 7 uur slaap rekent de Sleep Foundation dat om naar 42 tot 84 minuten. Over één concreet getal is volgens dezelfde bron geen overeenstemming, en wat je nodig hebt, verschilt per persoon. Met de leeftijd neemt diepe slaap af: Thuisarts schrijft dat oudere mensen minder diep slapen en dat dat bij de leeftijd hoort. Je Apple Watch schat de fases volgens Apple met de versnellingsmeter, uit je bewegingen, en de vaakste fout in Apples validatie was echte diepe slaap die als kernslaap werd gelabeld. Helpen slaapadviezen na een paar weken niet genoeg, maak dan een afspraak bij je huisarts."
 excerpt: "Diepe slaap in cijfers: het aandeel van de nacht en wat dat in minuten is, de afname met de leeftijd, hoe je Apple Watch Kernslaap en Diepe slaap schat en hoe Observa je slaapfases laat zien."
 faq:
   - q: "Hoeveel diepe slaap heb je nodig per nacht?"
@@ -34,7 +34,7 @@ faq:
   - q: "Kun je diepe slaap verbeteren?"
     a: "Thuisarts geeft algemene slaapadviezen: elke dag rond dezelfde tijd opstaan en naar bed gaan, elke dag een uur naar buiten, geen cafeïne in de 6 uur voor het slapen, geen alcohol of cannabis om in slaap te vallen en je telefoon 1 of 2 uur voor het slapen wegleggen. Die adviezen gaan over slapen in het algemeen. Een effect op je aandeel diepe slaap noemt Thuisarts niet."
   - q: "Wanneer ga je met slaapproblemen naar de huisarts?"
-    a: "Thuisarts schrijft: maak een afspraak bij je huisarts als je over je slaapproblemen wilt praten. Probeer de slaapadviezen een paar weken; helpen ze niet genoeg, maak dan ook een afspraak. Thuisarts raadt bij slecht slapen een smartwatch af, omdat die je slaap niet betrouwbaar meet en je er onrustig van kunt worden. Dit is geen medisch advies."
+    a: "Thuisarts schrijft: maak een afspraak bij je huisarts als je over je slaapproblemen wilt praten. Probeer de slaapadviezen een paar weken; helpen ze niet genoeg, maak dan ook een afspraak. Thuisarts raadt bij slecht slapen een smartwatch af, omdat die je slaap niet betrouwbaar meet en je er onrustig van kunt worden."
 mentioned_apps:
   - observa
 read_time: "6 min lezen"
@@ -101,7 +101,7 @@ Die adviezen gaan over slapen in het algemeen. Thuisarts raadt aan ze een paar w
 
 ## Wanneer ga je naar de huisarts?
 
-Thuisarts schrijft: maak een afspraak bij je huisarts als je over je slaapproblemen wilt praten. Helpen de slaapadviezen na een paar weken niet genoeg, maak dan ook een afspraak. Dit artikel is geen medisch advies.
+Thuisarts schrijft: maak een afspraak bij je huisarts als je over je slaapproblemen wilt praten. Helpen de slaapadviezen na een paar weken niet genoeg, maak dan ook een afspraak.
 
 Hoe je slaapt na een nachtdienst, lees je in [Slapen rond een nachtdienst](/nl/journal/how-to-sleep-after-a-night-shift/). Waarom een losse HRV-waarde weinig zegt zonder je eigen basislijn, staat in [HRV-waarde: waarom het cijfer op je Apple Watch zonder basislijn bijna niets zegt](/nl/journal/apple-watch-hrv-without-a-baseline/).
 

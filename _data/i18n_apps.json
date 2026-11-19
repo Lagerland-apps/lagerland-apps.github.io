@@ -6244,7 +6244,7 @@
      "q": "Waarschuwt AllPaid me voor gratis proefperiodes voordat ze automatisch overgaan in een abonnement?"
     },
     {
-     "a": "Ja. De widget Maandkalender toont alle rekeningen van de maand op je beginscherm, en het maandoverzicht in de app somt de rekeningen en totalen van de maand op. De gratis versie toont de huidige maand. Met Pro blader je door maanden in het verleden en de toekomst.",
+     "a": "Ja. De widget Maandkalender toont alle rekeningen van de maand op je beginscherm, en het maandoverzicht in de app somt de rekeningen en totalen van de maand op. De gratis versie toont de huidige maand. Met Pro blader je door maanden in het verleden en de toekomst. Hoe je met een betaalkalender een overzicht van je vaste lasten maakt, lees je in <a href=\"/nl/journal/how-to-organize-bills-each-month/\">ons artikel over vaste lasten</a>.",
      "q": "Toont AllPaid mijn rekeningen in een kalender?"
     },
     {
@@ -6824,7 +6824,7 @@
      "q": "Hoe zet ik HEIC om naar JPG op mijn iPhone of Mac?"
     },
     {
-     "a": "Video: converteert naar MP4, MOV of M4V met H.264, HEVC of ProRes (ProRes wordt als .mov geschreven). MKV gaat direct open, omdat MediaKit het zelf uitpakt (DTS-, E-AC-3- en MP3-audio in een MKV wordt weggelaten, met een melding). Hoe je een MKV zonder hercodering naar MP4 omzet, lees je in <a href=\"/nl/journal/mkv-naar-mp4/\">MKV naar MP4 converteren</a>. Audio: leest onder meer MP3 en FLAC en schrijft M4A (AAC), WAV, AIFF, ALAC en CAF. Afbeeldingen: HEIC, JPG, PNG, TIFF, GIF, WebP (waar je systeem WebP kan schrijven), BMP en JPEG 2000, plus camera-RAW, AVIF, PSD en EXR als invoer. E-books: EPUB, FB2, MOBI en AZW3 (alleen lezen), pdf, TXT, HTML, CBZ en RTF. Archieven: ZIP, TAR, TAR.GZ, GZIP, XZ en BZIP2, plus RAR4 en RAR5 om uit te pakken. WebM, RAR maken, versleutelde RAR en door DRM beveiligde Kindle-boeken worden niet ondersteund. Hoe je alleen het geluid uit een video haalt, lees je in <a href=\"/nl/journal/geluid-uit-video-halen-iphone/\">geluid uit een video halen op je iPhone</a>.",
+     "a": "Video: converteert naar MP4, MOV of M4V met H.264, HEVC of ProRes (ProRes wordt als .mov geschreven). MKV gaat direct open, omdat MediaKit het zelf uitpakt (DTS-, E-AC-3- en MP3-audio in een MKV wordt weggelaten, met een melding). Hoe je een MKV zonder hercodering naar MP4 omzet, lees je in <a href=\"/nl/journal/mkv-naar-mp4/\">MKV naar MP4 converteren</a>. Audio: leest onder meer MP3 en FLAC en schrijft M4A (AAC), WAV, AIFF, ALAC en CAF. Afbeeldingen: HEIC, JPG, PNG, TIFF, GIF, WebP (waar je systeem WebP kan schrijven), BMP en JPEG 2000, plus camera-RAW, AVIF, PSD en EXR als invoer. E-books: EPUB, FB2, MOBI en AZW3 (alleen lezen), pdf, TXT, HTML, CBZ en RTF. Archieven: ZIP, TAR, TAR.GZ, GZIP, XZ en BZIP2, plus RAR4 en RAR5 om uit te pakken. WebM, RAR maken, versleutelde RAR en door DRM beveiligde Kindle-boeken worden niet ondersteund. Hoe je alleen het geluid uit een video haalt, lees je in <a href=\"/nl/journal/geluid-uit-video-halen-iphone/\">geluid uit een video halen op je iPhone</a>. Welke apps een RAR-bestand openen op je Mac of iPhone, lees je in <a href=\"/nl/journal/rar-bestand-openen-mac/\">RAR openen op Mac en iPhone</a>.",
      "q": "Welke bestandsformaten ondersteunt MediaKit?"
     },
     {
@@ -7104,7 +7104,7 @@
      "q": "Welke vaccinaties en behandelingen kan ik in Pawza bijhouden?"
     },
     {
-     "a": "Ja. Herinneringen zijn lokale meldingen in zes categorieën: vaccinatie, medicijn, voeding, vachtverzorging, dierenartsbezoek en eigen. Ze kunnen eenmalig zijn of dagelijks, wekelijks, maandelijks of jaarlijks terugkeren. Een dosismelding heeft een knop ‘Gegeven’ die de dosis vastlegt, een voedermelding heeft ‘Gevoerd’, en de andere hebben ‘Markeer als gereed’ en ‘1 uur sluimeren’. Markeer een herinnering als ‘Tijdgevoelig’ om door een focus heen te komen; een eenmalige tijdgevoelige herinnering waarschuwt na 5, 15 en 30 minuten opnieuw tot je reageert. Voor herinneringen moet je meldingen toestaan. Hoe vaak je een hond ontwormt en hoe je vlooien en teken aanpakt, lees je in <a href=\"/nl/journal/ontwormen-hond/\">ontwormen bij de hond</a> en <a href=\"/nl/journal/vlooien-hond/\">vlooien bij de hond</a>.",
+     "a": "Ja. Herinneringen zijn lokale meldingen in zes categorieën: vaccinatie, medicijn, voeding, vachtverzorging, dierenartsbezoek en eigen. Ze kunnen eenmalig zijn of dagelijks, wekelijks, maandelijks of jaarlijks terugkeren. Een dosismelding heeft een knop ‘Gegeven’ die de dosis vastlegt, een voedermelding heeft ‘Gevoerd’, en de andere hebben ‘Markeer als gereed’ en ‘1 uur sluimeren’. Markeer een herinnering als ‘Tijdgevoelig’ om door een focus heen te komen; een eenmalige tijdgevoelige herinnering waarschuwt na 5, 15 en 30 minuten opnieuw tot je reageert. Voor herinneringen moet je meldingen toestaan. Hoe vaak je een hond ontwormt en hoe je vlooien en teken aanpakt, lees je in <a href=\"/nl/journal/ontwormen-hond/\">ontwormen bij de hond</a> en <a href=\"/nl/journal/vlooien-hond/\">vlooien bij de hond</a>. Hoe vaak je een kat ontwormt, staat in <a href=\"/nl/journal/ontwormen-kat/\">ontwormen bij de kat</a>.",
      "q": "Krijg ik herinneringen voor vaccinaties en medicijnen?"
     },
     {
@@ -7189,7 +7189,7 @@
      "q": "Kan RightSplit bonnen in meerdere valuta aan?"
     },
     {
-     "a": "Ja. RightSplit neemt elk artikel voor zijn afgedrukte prijs. Zit de btw al in elke regel, zoals gebruikelijk in de EU en het Verenigd Koninkrijk, dan is er geen aparte belastingregel om te verdelen en komt de splitsing overeen met de bon. Telt de bon belasting op als aparte regel, zoals in het grootste deel van de VS, dan leest RightSplit die regel als belasting en verdeelt de app het bedrag naar verhouding van wat iedereen heeft besteld. Hoeveel fooi je in de VS geeft en of je die over het bedrag voor of na belasting berekent, lees je in <a href=\"/nl/journal/how-much-to-tip-in-the-us/\">ons artikel over fooi in Amerika</a>.",
+     "a": "Ja. RightSplit neemt elk artikel voor zijn afgedrukte prijs. Zit de btw al in elke regel, zoals gebruikelijk in de EU en het Verenigd Koninkrijk, dan is er geen aparte belastingregel om te verdelen en komt de splitsing overeen met de bon. Telt de bon belasting op als aparte regel, zoals in het grootste deel van de VS, dan leest RightSplit die regel als belasting en verdeelt de app het bedrag naar verhouding van wat iedereen heeft besteld. Hoeveel fooi je in de VS geeft en of je die over het bedrag voor of na belasting berekent, lees je in <a href=\"/nl/journal/how-much-to-tip-in-the-us/\">ons artikel over fooi in Amerika</a>. Hoeveel fooi gasten in Nederland geven en hoe fooi hier belast wordt, lees je in <a href=\"/nl/journal/fooi-nederland/\">fooi in Nederland</a>.",
      "q": "Kan RightSplit omgaan met bonnen inclusief btw?"
     },
     {
@@ -7453,7 +7453,7 @@
      "q": "Werkt Taskful Day op de Apple Watch?"
     },
     {
-     "a": "De meeste to-do-apps bouwen een groeiende achterstand op en laten zien wat je hebt gemist. Taskful Day plant één dag tegelijk, schuift onafgemaakte taken automatisch door naar vandaag en toont geen teller voor te late taken in de lijst Vandaag. Je ziet de dag ook als klok, tijdlijn of kaart, en de app werkt op iPhone, iPad, Mac en Apple Watch zonder account.",
+     "a": "De meeste to-do-apps bouwen een groeiende achterstand op en laten zien wat je hebt gemist. Taskful Day plant één dag tegelijk, schuift onafgemaakte taken automatisch door naar vandaag en toont geen teller voor te late taken in de lijst Vandaag. Je ziet de dag ook als klok, tijdlijn of kaart, en de app werkt op iPhone, iPad, Mac en Apple Watch zonder account. Hoe je een to-dolijst maakt en wat twee studies erover zeggen, lees je in <a href=\"/nl/journal/to-do-lijst-maken/\">een to-dolijst maken</a>.",
      "q": "Wat maakt Taskful Day anders dan andere to-do-apps?"
     },
     {
