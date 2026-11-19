@@ -1582,7 +1582,7 @@
      "q": "¿Ayuda AfterShift con el trastorno del sueño por turnos de trabajo?"
     },
     {
-     "a": "Cualquier ciclo que puedas configurar como una rotación que se repite o añadir a mano. Los modelos son Tres turnos, 4 y 4, 4 y 3, 2 días / 2 noches, Panamá (2-2-3), Noches fijas y Días fijos. También puedes crear tu propio ciclo de 1 a 28 días, lo bastante largo para un DuPont completo (4 noches / 3 libres / 3 días / 1 libre / 3 noches / 3 libres / 4 días / 7 libres). AfterShift rellena las próximas 8 semanas y las va completando. Los tipos de turno admiten los nombres y los horarios que quieras, así que también valen los días y las noches de 12 horas y los turnos intermedios. La importación del calendario también puede detectar turnos en tu calendario de trabajo: la versión gratuita lee 1 calendario, para los próximos 14 días; Premium sincroniza varios calendarios automáticamente al abrir la app.",
+     "a": "Cualquier ciclo que puedas configurar como una rotación que se repite o añadir a mano. Los modelos son Tres turnos, 4 y 4, 4 y 3, 2 días / 2 noches, Panamá (2-2-3), Noches fijas y Días fijos. También puedes crear tu propio ciclo de 1 a 28 días, lo bastante largo para un DuPont completo (4 noches / 3 libres / 3 días / 1 libre / 3 noches / 3 libres / 4 días / 7 libres). AfterShift rellena las próximas 8 semanas y las va completando. Los tipos de turno admiten los nombres y los horarios que quieras, así que también valen los días y las noches de 12 horas y los turnos intermedios. La importación del calendario también puede detectar turnos en tu calendario de trabajo: la versión gratuita lee 1 calendario, para los próximos 14 días; Premium sincroniza varios calendarios automáticamente al abrir la app. Nuestro artículo <a href=\"/es/journal/turnos-rotativos/\">sobre los turnos rotativos</a> explica qué son, con ejemplos de cuadrante, y cómo dormir en cada turno.",
      "q": "¿Qué ciclos de turnos admite AfterShift?"
     },
     {
@@ -2028,7 +2028,7 @@
      "q": "¿Qué apps puede bloquear EarnLock en el iPhone?"
     },
     {
-     "a": "Eliges una unidad y un objetivo diario: pasos en la versión gratis, o minutos de actividad o calorías activas con Premium. Los niveles predefinidos son Suave, Estándar y Reto (4000, 8000 o 12.000 pasos), o puedes escribir tu propio número o elegir Adaptativo. EarnLock lee tu progreso en Salud de Apple, en tu iPhone. Al 50 %, se abre una parte de las apps que elegiste una a una durante una ventana proporcional a tu progreso, una hora más o menos a la mitad, una vez al día; las categorías enteras esperan al 100 %. Al 100 %, todo sigue abierto hasta medianoche. Por debajo del 50 % todo sigue bloqueado, y el día se reinicia a medianoche. Para elegir tu objetivo, el artículo <a href=\"/journal/how-many-steps-a-day-to-aim-for/\" hreflang=\"en\">cuántos pasos al día conviene buscar (en inglés)</a> resume lo que dicen los grandes estudios.",
+     "a": "Eliges una unidad y un objetivo diario: pasos en la versión gratis, o minutos de actividad o calorías activas con Premium. Los niveles predefinidos son Suave, Estándar y Reto (4000, 8000 o 12.000 pasos), o puedes escribir tu propio número o elegir Adaptativo. EarnLock lee tu progreso en Salud de Apple, en tu iPhone. Al 50 %, se abre una parte de las apps que elegiste una a una durante una ventana proporcional a tu progreso, una hora más o menos a la mitad, una vez al día; las categorías enteras esperan al 100 %. Al 100 %, todo sigue abierto hasta medianoche. Por debajo del 50 % todo sigue bloqueado, y el día se reinicia a medianoche. Para elegir tu objetivo, nuestro artículo <a href=\"/es/journal/how-many-steps-a-day-to-aim-for/\">sobre cuántos pasos dar al día</a> resume lo que dicen los grandes estudios.",
      "q": "¿Cómo funciona el objetivo diario y cómo me ayuda a limitar el tiempo de pantalla?"
     },
     {
@@ -2097,7 +2097,7 @@
      "q": "¿Qué es el Smart Program Creator?"
     },
     {
-     "a": "No al registrar. Una serie guarda el peso y las repeticiones, y si era de calentamiento; no hay entrada de RPE ni de RIR por serie, y los análisis, el estado de estancamiento incluido, parten del peso y las repeticiones. <a href=\"/journal/rpe-and-rir-explained/\" hreflang=\"en\">RPE and RIR, explained (en inglés)</a> cuenta qué supone eso si puntúas cada serie.",
+     "a": "No al registrar. Una serie guarda el peso y las repeticiones, y si era de calentamiento; no hay entrada de RPE ni de RIR por serie, y los análisis, el estado de estancamiento incluido, parten del peso y las repeticiones. Nuestro artículo <a href=\"/es/journal/rpe-and-rir-explained/\">sobre el RPE y el RIR</a> explica qué supone eso si quieres puntuar cada serie.",
      "q": "¿GymLogger X admite RPE y RIR?"
     },
     {
@@ -2146,7 +2146,7 @@
   "liftlog": {
    "faq": [
     {
-     "a": "LiftLog es una app de registro de gimnasio para iPhone. Anotas el peso y las repeticiones en un teclado anclado, cada serie viene rellena con los datos de tu última sesión y el cronómetro de descanso arranca cuando marcas una serie. Incluye 1500 ejercicios con demostraciones animadas, 40 programas listos para usar que pueden sugerirte el peso de la próxima vez, avisos de récord personal, gráficos de progreso, 10 widgets y acciones de Siri. Es gratis durante 7 días sin tarjeta y después se paga una sola vez, de {P_IAP:Minimum} a {P_IAP:Patron}.",
+     "a": "LiftLog es una app de registro de gimnasio para iPhone. Anotas el peso y las repeticiones en un teclado anclado, cada serie viene rellena con los datos de tu última sesión y el cronómetro de descanso arranca cuando marcas una serie (cuánto conviene descansar lo explica nuestro artículo <a href=\"/es/journal/how-long-to-rest-between-sets/\">sobre el descanso entre series</a>). Incluye 1500 ejercicios con demostraciones animadas, 40 programas listos para usar que pueden sugerirte el peso de la próxima vez, avisos de récord personal, gráficos de progreso, 10 widgets y acciones de Siri. Es gratis durante 7 días sin tarjeta y después se paga una sola vez, de {P_IAP:Minimum} a {P_IAP:Patron}.",
      "q": "¿Qué es LiftLog?"
     },
     {
@@ -2170,7 +2170,7 @@
      "q": "¿Funciona LiftLog con el Apple Watch?"
     },
     {
-     "a": "«Explorar plantillas» reúne 40 programas basados en rutinas conocidas como StrongLifts 5×5, Starting Strength, Greyskull LP, Wendler 5/3/1, Texas Method, GZCLP, nSuns 531 LP, PHUL, PHAT y German Volume Training. Veinte se centran en la fuerza, 17 en la hipertrofia y 3 son generales; 10 son para principiantes, 22 intermedios y 8 avanzados. Cada uno se carga con series, repeticiones y descanso ya definidos, y puedes crear los tuyos. Los nombres de los programas pertenecen a sus propietarios, que no respaldan LiftLog.",
+     "a": "«Explorar plantillas» reúne 40 programas basados en rutinas conocidas como StrongLifts 5×5, Starting Strength, Greyskull LP, Wendler 5/3/1, Texas Method, GZCLP, nSuns 531 LP, PHUL, PHAT y German Volume Training. Veinte se centran en la fuerza, 17 en la hipertrofia y 3 son generales; 10 son para principiantes, 22 intermedios y 8 avanzados. Cada uno se carga con series, repeticiones y descanso ya definidos, y puedes crear los tuyos. Los nombres de los programas pertenecen a sus propietarios, que no respaldan LiftLog. Para elegir entre una rutina PPL, torso/pierna o full body, lee nuestro artículo <a href=\"/es/journal/choosing-a-strength-program-you-will-finish/\">sobre cómo elegir una rutina de fuerza</a>.",
      "q": "¿Qué programas incluye LiftLog?"
     },
     {
@@ -2178,11 +2178,11 @@
      "q": "¿Puede LiftLog sugerirme el peso de mi próxima sesión?"
     },
     {
-     "a": "Sí. Una insignia de récord con la mejora aparece en el momento en que una serie supera el historial de tu 1RM estimado. La página de cada ejercicio guarda tus récords personales (1RM estimado, mejor serie y mejor volumen) y tus récords de repeticiones, con gráficos de 1RM estimado, volumen y RPE medio. Tú eliges la fórmula del 1RM en Ajustes: Adaptable (recomendada), Brzycki o Epley. Las series de calentamiento nunca cuentan.",
+     "a": "Sí. Una insignia de récord con la mejora aparece en el momento en que una serie supera el historial de tu 1RM estimado. La página de cada ejercicio guarda tus récords personales (1RM estimado, mejor serie y mejor volumen) y tus récords de repeticiones, con gráficos de 1RM estimado, volumen y RPE medio. Tú eliges la fórmula del 1RM en Ajustes: Adaptable (recomendada), Brzycki o Epley. Las series de calentamiento nunca cuentan. Nuestro artículo <a href=\"/es/journal/how-to-estimate-your-one-rep-max/\">sobre cómo calcular el 1RM</a> compara Epley, Brzycki y otras cinco fórmulas con ejemplos.",
      "q": "¿LiftLog registra récords personales y el 1RM?"
     },
     {
-     "a": "Sí, como opción. Añades un RPE de 1 a 10 editando una serie después del entrenamiento; la fila de la serie en curso no tiene campo de RPE. Cada ejercicio recibe entonces un gráfico de RPE medio, y los ejercicios con el esquema de progresión RPE / RIR usan lo que introduces.",
+     "a": "Sí, como opción. Añades un RPE de 1 a 10 editando una serie después del entrenamiento; la fila de la serie en curso no tiene campo de RPE. Cada ejercicio recibe entonces un gráfico de RPE medio, y los ejercicios con el esquema de progresión RPE / RIR usan lo que introduces. La escala de 1 a 10 y su equivalencia con las repeticiones en reserva están en nuestro artículo <a href=\"/es/journal/rpe-and-rir-explained/\">sobre el RPE y el RIR</a>.",
      "q": "¿LiftLog admite el RPE?"
     },
     {
@@ -2231,7 +2231,7 @@
      "q": "¿MediaKit sube mis archivos a internet?"
     },
     {
-     "a": "Suelta el vídeo en MediaKit y elige «Comprimir». Indica un tamaño objetivo y MediaKit calcula la tasa de bits; nunca supera el objetivo y, si no puede alcanzarlo, se detiene con un error. La pantalla de la herramienta muestra el tamaño estimado antes de ejecutar y el resultado indica el espacio ahorrado. Comprimir vídeo es una de las cinco herramientas gratuitas. Con Pro, «Hacer que encaje» también puede mejorar un clip, pasarlo a 9:16 y dejarlo por debajo de 25 MB para redes sociales en un solo paso. Nuestro artículo <a href=\"/journal/compress-a-video-for-email/\" hreflang=\"en\">Comprimir un vídeo para enviarlo por correo (en inglés)</a> recoge los límites de tamaño del correo y el cálculo de la tasa de bits.",
+     "a": "Suelta el vídeo en MediaKit y elige «Comprimir». Indica un tamaño objetivo y MediaKit calcula la tasa de bits; nunca supera el objetivo y, si no puede alcanzarlo, se detiene con un error. La pantalla de la herramienta muestra el tamaño estimado antes de ejecutar y el resultado indica el espacio ahorrado. Comprimir vídeo es una de las cinco herramientas gratuitas. Con Pro, «Hacer que encaje» también puede mejorar un clip, pasarlo a 9:16 y dejarlo por debajo de 25 MB para redes sociales en un solo paso. Nuestro artículo <a href=\"/es/journal/compress-a-video-for-email/\">sobre cómo comprimir un vídeo para enviarlo por correo</a> recoge los límites de tamaño del correo y el cálculo de la tasa de bits.",
      "q": "¿Cómo comprimo un vídeo en iPhone o Mac para que no pase de un límite de tamaño?"
     },
     {
@@ -2418,7 +2418,7 @@
      "q": "¿Necesito un Apple Watch?"
     },
     {
-     "a": "Salud de Apple registra la variabilidad de la frecuencia cardiaca como SDNN, y esa es la VFC que muestra Observa: tu valor del día frente a tu propia línea base, con 7 días de tendencia gratis y 30, 90 o 365 días con Premium. La VFC también aporta el 25 % de tu puntuación de preparación. Con Premium, la tarjeta de ECG muestra tu último registro de ECG con su trazado y el historial de clasificaciones de Salud de Apple. Observa muestra lo que Salud de Apple ha registrado; no detecta ni diagnostica ninguna enfermedad. Nuestro artículo <a href=\"/journal/apple-watch-hrv-without-a-baseline/\" hreflang=\"en\">Por qué la VFC del Apple Watch no dice casi nada sin una línea base (en inglés)</a> explica por qué un valor aislado dice poco sin esa referencia personal.",
+     "a": "Salud de Apple registra la variabilidad de la frecuencia cardiaca como SDNN, y esa es la VFC que muestra Observa: tu valor del día frente a tu propia línea base, con 7 días de tendencia gratis y 30, 90 o 365 días con Premium. La VFC también aporta el 25 % de tu puntuación de preparación. Con Premium, la tarjeta de ECG muestra tu último registro de ECG con su trazado y el historial de clasificaciones de Salud de Apple. Observa muestra lo que Salud de Apple ha registrado; no detecta ni diagnostica ninguna enfermedad. Nuestro artículo <a href=\"/es/journal/apple-watch-hrv-without-a-baseline/\">sobre la VFC baja del Apple Watch</a> explica por qué un valor aislado dice poco sin esa referencia personal.",
      "q": "¿Cómo trata Observa la VFC y los datos de ECG?"
     },
     {
@@ -2515,7 +2515,7 @@
      "q": "¿Pawza funciona en el iPhone Duo?"
     },
     {
-     "a": "Los que te ponga tu veterinario. Cada vacuna guarda la fecha en que se puso, la fecha del próximo vencimiento, el número de lote y notas, y puede avisarte el día del vencimiento. Los tratamientos guardan la dosis, un recordatorio de dosis recurrente y el historial de tomas. Como tú introduces los nombres que usa tu veterinario, o los escaneas del certificado, Pawza se adapta al calendario de vacunación de cualquier país: rabia, DHPP, Bordetella y leptospirosis en perros, FVRCP y FeLV en gatos, o las vacunas propias de un conejo o un caballo.",
+     "a": "Los que te ponga tu veterinario. Cada vacuna guarda la fecha en que se puso, la fecha del próximo vencimiento, el número de lote y notas, y puede avisarte el día del vencimiento. Los tratamientos guardan la dosis, un recordatorio de dosis recurrente y el historial de tomas. Como tú introduces los nombres que usa tu veterinario, o los escaneas del certificado, Pawza se adapta al calendario de vacunación de cualquier país: rabia, DHPP, Bordetella y leptospirosis en perros, FVRCP y FeLV en gatos, o las vacunas propias de un conejo o un caballo. Nuestro artículo <a href=\"/es/journal/puppy-and-kitten-vaccination-schedule/\">sobre el calendario de vacunas del cachorro y del gatito</a> resume qué vacunas tocan y cuándo.",
      "q": "¿Qué vacunas y tratamientos puedo anotar en Pawza?"
     },
     {
@@ -2600,7 +2600,7 @@
      "q": "¿Qué idiomas lee el escáner de tickets?"
     },
     {
-     "a": "Sí. RightSplit divide en la moneda que fijes, entre 58, incluidas monedas sin decimales como el yen y el won, así que un ticket en euros o en libras sale en euros o en libras, con impuestos y propina incluidos. Con Pro+, fija una moneda principal y cada importe muestra también un valor aproximado en ella. Con Pro+, un Espacio puede mezclar monedas y saldarse en la que elijas, con los tipos de cambio diarios del Banco Central Europeo; 30 de las 58 monedas tienen uno, y los totales en las demás no se convierten.",
+     "a": "Sí. RightSplit divide en la moneda que fijes, entre 58, incluidas monedas sin decimales como el yen y el won, así que un ticket en euros o en libras sale en euros o en libras, con impuestos y propina incluidos. Con Pro+, fija una moneda principal y cada importe muestra también un valor aproximado en ella. Con Pro+, un Espacio puede mezclar monedas y saldarse en la que elijas, con los tipos de cambio diarios del Banco Central Europeo; 30 de las 58 monedas tienen uno, y los totales en las demás no se convierten. Nuestro artículo <a href=\"/es/journal/how-much-to-tip-in-the-us/\">sobre la propina en Estados Unidos</a> recoge cuánto se deja allí en restaurantes, bares, taxis y hoteles.",
      "q": "¿RightSplit gestiona tickets en varias monedas?"
     },
     {

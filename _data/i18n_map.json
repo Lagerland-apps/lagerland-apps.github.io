@@ -1026,6 +1026,7 @@
   "/journal/": {
     "de": "/de/journal/",
     "en": "/journal/",
+    "es": "/es/journal/",
     "fr": "/fr/journal/"
   },
   "/journal/30-chess-mistake-motifs/": {
@@ -1046,6 +1047,7 @@
   "/journal/apple-watch-hrv-without-a-baseline/": {
     "de": "/de/journal/apple-watch-hrv-without-a-baseline/",
     "en": "/journal/apple-watch-hrv-without-a-baseline/",
+    "es": "/es/journal/apple-watch-hrv-without-a-baseline/",
     "fr": "/fr/journal/apple-watch-hrv-without-a-baseline/"
   },
   "/journal/bill-splitting-math-tax-tip-shared-plates/": {
@@ -1056,11 +1058,13 @@
   "/journal/choosing-a-strength-program-you-will-finish/": {
     "de": "/de/journal/choosing-a-strength-program-you-will-finish/",
     "en": "/journal/choosing-a-strength-program-you-will-finish/",
+    "es": "/es/journal/choosing-a-strength-program-you-will-finish/",
     "fr": "/fr/journal/choosing-a-strength-program-you-will-finish/"
   },
   "/journal/compress-a-video-for-email/": {
     "de": "/de/journal/compress-a-video-for-email/",
     "en": "/journal/compress-a-video-for-email/",
+    "es": "/es/journal/compress-a-video-for-email/",
     "fr": "/fr/journal/compress-a-video-for-email/"
   },
   "/journal/countdown-psychology-why-anticipation-beats-reminders/": {
@@ -1088,16 +1092,19 @@
   "/journal/how-long-to-rest-between-sets/": {
     "de": "/de/journal/how-long-to-rest-between-sets/",
     "en": "/journal/how-long-to-rest-between-sets/",
+    "es": "/es/journal/how-long-to-rest-between-sets/",
     "fr": "/fr/journal/how-long-to-rest-between-sets/"
   },
   "/journal/how-many-steps-a-day-to-aim-for/": {
     "de": "/de/journal/how-many-steps-a-day-to-aim-for/",
     "en": "/journal/how-many-steps-a-day-to-aim-for/",
+    "es": "/es/journal/how-many-steps-a-day-to-aim-for/",
     "fr": "/fr/journal/how-many-steps-a-day-to-aim-for/"
   },
   "/journal/how-much-to-tip-in-the-us/": {
     "de": "/de/journal/how-much-to-tip-in-the-us/",
     "en": "/journal/how-much-to-tip-in-the-us/",
+    "es": "/es/journal/how-much-to-tip-in-the-us/",
     "fr": "/fr/journal/how-much-to-tip-in-the-us/"
   },
   "/journal/how-plan-mode-builds-a-checklist/": {
@@ -1108,6 +1115,7 @@
   "/journal/how-to-estimate-your-one-rep-max/": {
     "de": "/de/journal/how-to-estimate-your-one-rep-max/",
     "en": "/journal/how-to-estimate-your-one-rep-max/",
+    "es": "/es/journal/how-to-estimate-your-one-rep-max/",
     "fr": "/fr/journal/how-to-estimate-your-one-rep-max/"
   },
   "/journal/how-to-find-interesting-wikipedia-articles/": {
@@ -1145,6 +1153,7 @@
   "/journal/puppy-and-kitten-vaccination-schedule/": {
     "de": "/de/journal/puppy-and-kitten-vaccination-schedule/",
     "en": "/journal/puppy-and-kitten-vaccination-schedule/",
+    "es": "/es/journal/puppy-and-kitten-vaccination-schedule/",
     "fr": "/fr/journal/puppy-and-kitten-vaccination-schedule/"
   },
   "/journal/puzzle-game-no-ads-one-purchase/": {
@@ -1167,6 +1176,7 @@
   "/journal/rpe-and-rir-explained/": {
     "de": "/de/journal/rpe-and-rir-explained/",
     "en": "/journal/rpe-and-rir-explained/",
+    "es": "/es/journal/rpe-and-rir-explained/",
     "fr": "/fr/journal/rpe-and-rir-explained/"
   },
   "/journal/shogi-openings-for-beginners/": {

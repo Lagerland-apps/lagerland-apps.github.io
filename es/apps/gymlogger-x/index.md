@@ -188,7 +188,7 @@ faq:
   - q: "¿Qué es el Smart Program Creator?"
     a: "Es un asistente que monta un programa a partir de tu material, tus objetivos, tus lesiones, tu horario y tus preferencias. Eliges una distribución (cuerpo completo, tren superior/inferior, empuje/tirón/pierna, empuje/tirón, split Arnold o bro split), los días por semana, la duración de la sesión, una duración de 4, 8 o 12 semanas o continua, y una periodización lineal, ondulante, por bloques o por ondas. Las lesiones se introducen por zona del cuerpo, con los movimientos que debes evitar. La vista previa muestra las semanas de descarga, un calentamiento preventivo y las adaptaciones por lesiones, y puedes cambiar un ejercicio o volver a generarlo antes de empezar. Es gratis; sin Pro conservas un programa a la vez."
   - q: "¿GymLogger X admite RPE y RIR?"
-    a: "No al registrar. Una serie guarda el peso y las repeticiones, y si era de calentamiento; no hay entrada de RPE ni de RIR por serie, y los análisis, el estado de estancamiento incluido, parten del peso y las repeticiones. <a href=\"/journal/rpe-and-rir-explained/\" hreflang=\"en\">RPE and RIR, explained (en inglés)</a> cuenta qué supone eso si puntúas cada serie."
+    a: "No al registrar. Una serie guarda el peso y las repeticiones, y si era de calentamiento; no hay entrada de RPE ni de RIR por serie, y los análisis, el estado de estancamiento incluido, parten del peso y las repeticiones. Nuestro artículo <a href=\"/es/journal/rpe-and-rir-explained/\">sobre el RPE y el RIR</a> explica qué supone eso si quieres puntuar cada serie."
   - q: "¿GymLogger X calcula Wilks, DOTS o Sinclair?"
     a: "No. GymLogger X no calcula puntuaciones Wilks, DOTS ni Sinclair. Estima el 1RM de cada ejercicio con la fórmula de Epley, mantiene una tabla de máximos y tus récords personales, y tiene una calculadora de discos para cargar la barra."
   - q: "¿GymLogger X funciona en el Apple Watch sin el iPhone?"
@@ -209,7 +209,7 @@ faq:
     a: "Sí. La app, sus widgets y la app para Apple Watch están en español."
 
 related_journal:
-  anchor: "PPL, tren superior/inferior o 5/3/1: cómo elegir un programa que vayas a terminar"
+  anchor: "Rutina PPL, torso/pierna, full body o 5/3/1: cómo elegir una rutina de fuerza que sigas dentro de doce semanas"
 
 enrichment:
   use_cases:

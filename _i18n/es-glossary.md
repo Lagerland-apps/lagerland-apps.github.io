@@ -1765,3 +1765,19 @@ Not live: https://apps.apple.com/es/app/id6829498729 returned HTTP 404 on 2026-1
 
 ---
 
+
+## Additions from Tier 4 batch 1 (2026-11-19, checked in the catalogs by the reviewers)
+
+- AfterShift (`es.lproj/Localizable.strings`): Recovery Timeline «Línea de recuperación» (`timeline.title`); debt trend «Deuda en aumento», Estable,
+  Recuperando (`debtTrend.*`); Excelente (`score.excellent`).
+- GymLogger X (`Localizations/es.json`): Strength Progress states «Estancamiento: %@» (`analytics_plateau_title`), «En observación: %@»
+  (`analytics_plateau_watch_title`), «Estancamiento previsto» (`analytics_plateau_predicted`); the site uses these. Other forms in the app
+  («Meseta detectada», «Estancamiento detectado», «Puntaje de sobrecarga») are flagged in ISSUES.md I-0190; never copy them.
+- LiftLog (`CoreLift/Resources/Localizable.xcstrings`): progression review Progresaste, Mantén, Fallado, Descarga; «Descanso completado»,
+  «serie efectiva», «Añadir/Quitar 15 segundos», «Ajuste fino», «Cronómetro de descanso».
+- MediaKit (`MediaKit/Localizable.xcstrings`): «Comprimir vídeo», Modo, «Tamaño objetivo», Avanzado, «Resolución máx.», Códec,
+  «Tasa de bits de audio», «64 kbps (voz)».
+- Observa (`HealthLogger/Localizable.xcstrings`): «¿Por qué esta puntuación?», «Tu rango habitual», puntuación de preparación. The catalog writes
+  «cardíaca» with an accent; the site follows Apple Spain («cardiaca»).
+- Pawza (`PetCare/Localizable.xcstrings`): reminders Repetición, Nunca, Urgente (Time-sensitive), Atrasado, Hoy, «Esta semana», «Más tarde»,
+  «Supera los modos de concentración»; «PDF de visita al veterinario».
