@@ -37,6 +37,7 @@
   },
   "/alternatives/baba-is-you/": {
     "en": "/alternatives/baba-is-you/",
+    "es": "/es/alternatives/baba-is-you/",
     "fr": "/fr/alternatives/baba-is-you/"
   },
   "/alternatives/bevel/": {
@@ -83,6 +84,7 @@
   "/alternatives/convertio/": {
     "de": "/de/alternatives/convertio/",
     "en": "/alternatives/convertio/",
+    "es": "/es/alternatives/convertio/",
     "it": "/it/alternatives/convertio/"
   },
   "/alternatives/countdown-star/": {
@@ -106,6 +108,7 @@
   },
   "/alternatives/flow-free/": {
     "en": "/alternatives/flow-free/",
+    "es": "/es/alternatives/flow-free/",
     "fr": "/fr/alternatives/flow-free/"
   },
   "/alternatives/forest/": {
@@ -132,11 +135,13 @@
   },
   "/alternatives/habitnow/": {
     "de": "/de/alternatives/habitnow/",
-    "en": "/alternatives/habitnow/"
+    "en": "/alternatives/habitnow/",
+    "es": "/es/alternatives/habitnow/"
   },
   "/alternatives/handbrake/": {
     "de": "/de/alternatives/handbrake/",
     "en": "/alternatives/handbrake/",
+    "es": "/es/alternatives/handbrake/",
     "it": "/it/alternatives/handbrake/"
   },
   "/alternatives/hevy/": {
@@ -149,11 +154,16 @@
   },
   "/alternatives/hrv4training/": {
     "de": "/de/alternatives/hrv4training/",
-    "en": "/alternatives/hrv4training/"
+    "en": "/alternatives/hrv4training/",
+    "es": "/es/alternatives/hrv4training/"
   },
   "/alternatives/image-size/": {
     "de": "/de/alternatives/image-size/",
     "en": "/alternatives/image-size/"
+  },
+  "/alternatives/izip/": {
+    "en": "/alternatives/izip/",
+    "es": "/es/alternatives/izip/"
   },
   "/alternatives/jefit/": {
     "de": "/de/alternatives/jefit/",
@@ -170,6 +180,10 @@
     "en": "/alternatives/kami-2/",
     "fr": "/fr/alternatives/kami-2/"
   },
+  "/alternatives/kiwix/": {
+    "en": "/alternatives/kiwix/",
+    "es": "/es/alternatives/kiwix/"
+  },
   "/alternatives/ladder/": {
     "de": "/de/alternatives/ladder/",
     "en": "/alternatives/ladder/",
@@ -185,6 +199,7 @@
   },
   "/alternatives/magnus-trainer/": {
     "en": "/alternatives/magnus-trainer/",
+    "es": "/es/alternatives/magnus-trainer/",
     "fr": "/fr/alternatives/magnus-trainer/"
   },
   "/alternatives/medika/": {
@@ -233,6 +248,7 @@
   "/alternatives/rise-sleep-tracker/": {
     "de": "/de/alternatives/rise-sleep-tracker/",
     "en": "/alternatives/rise-sleep-tracker/",
+    "es": "/es/alternatives/rise-sleep-tracker/",
     "fr": "/fr/alternatives/rise-sleep-tracker/",
     "pt": "/pt/alternatives/rise-sleep-tracker/"
   },
@@ -285,6 +301,7 @@
   },
   "/alternatives/two-dots/": {
     "en": "/alternatives/two-dots/",
+    "es": "/es/alternatives/two-dots/",
     "fr": "/fr/alternatives/two-dots/"
   },
   "/alternatives/unpluq/": {
@@ -315,6 +332,10 @@
     "en": "/alternatives/wikipedia-app/",
     "es": "/es/alternatives/wikipedia-app/",
     "fr": "/fr/alternatives/wikipedia-app/"
+  },
+  "/alternatives/wondershare-uniconverter/": {
+    "en": "/alternatives/wondershare-uniconverter/",
+    "es": "/es/alternatives/wondershare-uniconverter/"
   },
   "/apps/": {
     "de": "/de/apps/",

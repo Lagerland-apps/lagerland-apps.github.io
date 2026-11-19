@@ -15,6 +15,7 @@ reviewing any Spanish page. Every decision a translator would otherwise make dif
 | Tier 3, batch 1 | written and integrated 2026-11-19, no native review yet (not pushed): hub /es/alternatives/ and nine comparisons tricount, splitwise (RightSplit); chess-com, lichess (Chessful); whoop (Observa); hevy (LiftLog); opal, forest (EarnLock); pdf-expert (MediaKit); plus the local-only /es/alternatives/alternativa-a-fintonic/ (AllPaid vs Fintonic). Demand research over all 123 English comparisons: ~/Downloads/githubcode/es-tier3-research-2026-11-19.md (next batch listed there); Spanish store check: ~/Downloads/githubcode/es-tier3-store-2026-11-19.md. Stale check before the batch: 0 pages stale in any language |
 | Tier 3, batch 2 | written and integrated 2026-11-19, no native review yet (not pushed): oura, bevel, autosleep (Observa); fitbod, jefit (GymLogger X); settle-up (RightSplit); one-sec, screenzen (EarnLock); habitica (Taskful Day, its first Spanish comparison); plus the local-only /es/alternatives/alternativa-a-appblock/ (EarnLock vs AppBlock). Hub now 20 cards. Research: es-tier3-research-2026-11-19.md § Batch 2 shortlist (next: Welltory, Athlytic, Gentler Streak, Alpha Progression, StrongLifts, Strong, Streaks, Documents, CloudConvert, Wikipedia app); store check: ~/Downloads/githubcode/es-tier3-store-batch2-2026-11-19.md. Stale check before the batch: 0 |
 | Tier 3, batch 3 | written and integrated 2026-11-19, no native review yet (not pushed): welltory, athlytic, gentler-streak (Observa); chessable (Chessful); strong-workout-app, alpha-progression, stronglifts-5x5 (GymLogger X); wikipedia-app (WanderWiki, its first Spanish comparison); documents-by-readdle, cloudconvert (MediaKit); plus I-0372 fixed on the chess guide. Hub now 30 cards. Store check: ~/Downloads/githubcode/es-tier3-store-batch3-2026-11-19.md. Next: es-tier3-research-2026-11-19.md § Batch 3 shortlist «Next after batch 3». Stale check before the batch: 0 |
+| Tier 3, batch 4 | written and integrated 2026-11-19, no native review yet (not pushed): the must-have comparisons left after batch 3, by Spanish demand: handbrake, convertio, wondershare-uniconverter, izip (MediaKit); kiwix (WanderWiki); flow-free, two-dots (Millrace, its first Spanish comparisons); baba-is-you (Tare, its first); habitnow (Taskful Day); hrv4training (Observa); rise-sleep-tracker (AfterShift, its first); magnus-trainer (Chessful). Hub now 42 cards with a new «Juegos de lógica» section. Research: es-tier3-research-2026-11-19.md § Batch 4 shortlist; store check: ~/Downloads/githubcode/es-tier3-store-batch4-2026-11-19.md. Stale check before the batch: 0. Remaining English comparisons have weak or no Spanish demand (optional: Countdown Star, KAMI 2, DragonBox) |
 | Stale pages | 0 (2026-11-19, `i18n.py stale`) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 270 s wall, 137 s CPU before Spanish (2026-11-19, seven research agents running in parallel, so the wall time is inflated); French sheet had 80 s after French Tier 1. Idle machine 2026-11-19: 157 s before the tx-app fix, 52 s after (617 pages, `--profile`; tx-app 99.6 s to 4.9 s, I-0258) |
@@ -274,6 +275,24 @@ Tier 3 batch 3 (2026-11-19).
 | /es/alternatives/documents-by-readdle/ | `alternativa a documents de readdle` | `documents by readdle gratis` |
 | /es/alternatives/cloudconvert/ | `cloudconvert gratis` / `cloudconvert en español` | `cloudconvert es gratis`, `alternativa a cloudconvert` |
 
+Tier 3 batch 4 (2026-11-19). The Millrace app page keeps `juegos de lógica sin anuncios` and `juegos sin internet iphone`; Tare keeps
+`juegos de ingenio iphone`; Observa keeps `hrv apple watch`: the comparisons dropped those keywords.
+
+| Page | Primary query | Secondary queries |
+|---|---|---|
+| /es/alternatives/handbrake/ | `alternativa a handbrake` | `handbrake gratis`, `handbrake para qué sirve`, `handbrake mac` (`handbrake en español` dropped: no source says whether HandBrake has a Spanish UI) |
+| /es/alternatives/convertio/ | `convertio gratis` | `alternativa a convertio`, `convertio precio` |
+| /es/alternatives/wondershare-uniconverter/ | `uniconverter es gratis` | `uniconverter precio`, `alternativa a wondershare uniconverter` |
+| /es/alternatives/izip/ | `izip gratis` | `alternativa a izip`, `descomprimir rar iphone` |
+| /es/alternatives/kiwix/ | `kiwix wikipedia offline español` | `kiwix para qué sirve`, `wikipedia sin conexión iphone` |
+| /es/alternatives/flow-free/ | `flow free juego` | `juegos como flow free`, `alternativa a flow free` |
+| /es/alternatives/two-dots/ | `two dots juego` | `alternativa a two dots`, `juegos como two dots` |
+| /es/alternatives/baba-is-you/ | `juegos parecidos a baba is you` | `baba is you español`, `baba is you precio`, `tare o baba is you` |
+| /es/alternatives/habitnow/ | `habitnow iphone` / `habitnow es gratis` | `alternativa a habitnow` |
+| /es/alternatives/hrv4training/ | `hrv4training que es` | `hrv4training como funciona`, `alternativa a hrv4training` |
+| /es/alternatives/rise-sleep-tracker/ | `rise sleep gratis` | `alternativa a rise sleep tracker`, `rise sleep funciona`, `app sueño trabajo a turnos` |
+| /es/alternatives/magnus-trainer/ | `magnus trainer` | `alternativa a magnus trainer`, `magnus trainer descargar` |
+
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
 - Founder lines mirror the two English forms: «Desarrollador Apple independiente · Finlandia · estudio de una sola
@@ -356,6 +375,23 @@ es-keywords.md per page.
 - «… en español» pages: keyword-first «X en español: …» titles are fine for two apps (Welltory, Athlytic) as long as the tails differ.
 - GymLogger X program names and plateau statuses: es-glossary.md, GymLogger X section.
 
+## Decisions from Tier 3 batch 4 (2026-11-19)
+
+- Competitors not in the App Store de España (HandBrake; Convertio, whose only store hit is another seller's app; UniConverter, sold
+  there only as four Mac App Store listings): their facts stay as the English page states them, attributed to «la versión en inglés de
+  esta página, actualizada el …» when the English page has no dated check, or to its own check date when it has one. USD amounts are
+  dropped, never converted; the billing model stays.
+- A third-party app that uses a competitor's name lends it no fact (Convertio, HabitNow); the note only says another seller publishes it.
+- A rating is given only where the English page states one; then the Spanish store figure replaces the US one, written «4,5 sobre 5 en
+  5167 valoraciones».
+- Two counts from two sources (Two Dots: «más de 5000 niveles» in the Spanish listing, 7600 in its help centre per the English check):
+  both stay, each attributed.
+- Apple's «Editors' Choice» has no sourced Apple Spain label in es-apple-terms.md: describe it («elegido por los editores del App Store»).
+- AfterShift has no Apple Watch app: a verdict may name the competitor's Watch app as a reason to pick it.
+- Comparison pages never take an app page's own keyword (Millrace `juegos de lógica sin anuncios`, `juegos sin internet iphone`; Tare
+  `juegos de ingenio iphone`; Observa `hrv apple watch`).
+- Taskful Day's Spanish parser knows «mañana» and «a las» (TaskfulDayKit/Parsing/KeywordPacks.swift): «Estirar mañana a las 7:00».
+
 ## Tells to cut in Spanish (TRANSLATION.md 8.2, plus what reviews find)
 
 Stock phrasing: «En el mundo actual», «En la era digital», «Sumerjámonos», «Adentrémonos», «Es importante destacar
@@ -409,6 +445,8 @@ Found in the Tier 3 batch 2 reviews (2026-11-19): «Datos no recopilados» (Appl
 
 Found in the Tier 3 batch 3 reviews (2026-11-19): two colons in one sentence («… al lado: toca X para ver cuál …: lista»); a seo.description repeating a language fact already in the title and quick_answer; a bare «No:» opening a quick_answer; «X y una alternativa con…» as a description opener; «Apple Watch gratis» in a title (reads as a free watch); «sí está en español, y …» fusing two ideas; «equipamiento» where the app says «material»; «en su lugar» calquing "instead"; «merece una mirada» repeated; «arma» («monta»); «membresía» (Latin-American: «suscripción»); a reviewer «correcting» a sourced Apple label (check es-apple-terms first).
 
+Found in the Tier 3 batch 4 reviews (2026-11-19): «X en español» in a seo.title when the page never says whether X has a Spanish UI; a seo.title that reads as if the competitor were free or lifetime («UniConverter gratis: alternativa de por vida»); title and description shapes reused across pages of one app («X gratis: alternativa…», «¿X gratis? …»); an unsourced «no es gratis del todo» reshaping the English billing fact; explaining the method in copy («figuraba en dólares… aquí no lo convertimos»); «se comprobaron… según la comprobación»; «comprobada el …» for an English page with no dated check («actualizada el …»); «un par de formatos» for "a format pair" («una combinación de formatos»); «una exportación por ejecución» for "single-file runs"; «enlaces a nubes» («conexión con servicios en la nube»); «tu dispositivo» inside a FAQ question the reader asks; «sin cuenta y sin conexión» as a feature line (reads as a lack: «no pide cuenta y funciona sin conexión»); «no registra solo» (reads "doesn't only": «automáticamente», «por sí solo»); «por su cuenta» next to «sin cuenta» («propias»); «construida en torno a» («gira en torno a»); «herramienta estrecha» («específica»); «lecciones con juegos de X» for "lessons by X"; «(compra universal)»; «te mantenga motivado», «tú mismo» (gendered); «4,5 sobre 5167 valoraciones» («4,5 sobre 5 en 5167 valoraciones»); «recibes uno gratis» where «uno» refers to the wrong noun; «No tiene X ni Y, tampoco Z» dodging a triad («No tiene X, Y ni Z»); «Wikipedia de verdad sin conexión» («totalmente sin conexión»); «en vivo» for a live API («en línea»); «doblan las reglas» («retuercen»); «con En familia» («admite En familia»); «y subiendo» for "and counting"; the page's query turned into a claim («Tare es un juego parecido a…»); writer-made groupings of store rows («packs de colores y de tableros»); capitalised writer-made names for competitor features that read as UI labels («Pase de temporada»); a footnote that contradicts the page's framing («antes de cambiar de app» on a companion page). Hub and llms tells (R-wiring-4): one card skeleton («X …; MediaKit …, y X conviene más …») reused across sibling cards; «es la opción» on neighbouring cards and lines; an llms verb whose subject slides to the engine («Stockfish … explica cada error»); an adjective on the wrong noun («un archivo ZIM gratuito» when only the app is free); «para jugar después de X» softening the verdict «empieza por X»; «limita el nivel gratuito a 1 GB» for a per-file limit; «, todas en español» on a Spanish page; a verdict justified by a fact that is no reason.
+
 Translationese: title case headings; missing ¿ and ¡; chains of gerunds copied from English -ing («ofreciendo»,
 «permitiendo», «haciendo» trailing a sentence); passive «es … por» where Spanish uses «se»; possessives on body
 parts and devices copied from English («tu teléfono» is fine, «levanta tu mano» is not: «levanta la mano»);
@@ -456,6 +494,8 @@ home, all 21 app pages, about. Native review: none yet, for every page (NATIVE R
 | Tier 3 batch 2: hub (20 cards), 10 llms.txt lines, screen-time guide links | one hub writer (Sonnet) + main session | R-wiring-2 | n/a | no native review yet |
 | Tier 3 batch 3: 10 comparisons + I-0372 chess-guide fix | one writer agent (Sonnet) each | reviewers R-health-3 (8 must-fix), R-gym-3 (21), R-misc-3 (15), 2026-11-19: e.g. Documents Mac platform removed (iPad app on M1), Chessable Pro trial restored, Strong «Strong o Hevy» section trimmed to sourced facts, StrongLifts program names from the app catalog, Wikipedia app UI names described plainly, Athlytic double «en español» removed | n/a (Tier 3) | no native review yet |
 | Tier 3 batch 3: hub (30 cards), 10 llms.txt lines | one hub writer (Sonnet) + main session | R-wiring-3 | n/a | no native review yet |
+| Tier 3 batch 4: 12 comparisons | one writer agent (Sonnet) each | reviewers R-files-4 (21 must-fix), R-health-plan-chess-4 (44), R-games-read-4 (37), 2026-11-19: e.g. a `{{P_LIFETIME@mediakit}}` double-brace token, HandBrake and UniConverter titles that promised false or unanswered facts, iZip card claiming MediaKit extracts more formats, RISE «no registra solo» ambiguity and US-store attribution restored, HRV4Training dropped check date restored, Two Dots 5000 vs 7600 levels attributed, Kiwix rating removed (not on the English page), app-page keywords removed from comparisons | n/a (Tier 3) | no native review yet |
+| Tier 3 batch 4: hub (42 cards, new «Juegos de lógica» section), 12 llms.txt lines, logic-guide markers, Observa FAQ link | main session | R-wiring-4 (19 must-fix: all 12 cards rewritten for verdict variety and page metrics, 4 llms lines, hub quick_answer, Observa FAQ) | n/a | no native review yet |
 
 ## Apps still on English screenshots
 
