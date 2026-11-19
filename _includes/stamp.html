@@ -13,6 +13,9 @@
   {%- assign st_denom = f_app_price -%}
 {%- elsif f_has_plans -%}
   {%- assign st_denom = st_t.denom_free_pro -%}
+{%- elsif include.app.price.model contains "one-time" -%}
+  {%- comment %} Sold up front, but the catalog has no price yet (pre-launch): never call it free. {% endcomment -%}
+  {%- assign st_denom = st_t.price_one_time -%}
 {%- else -%}
   {%- assign st_denom = st_t.price_free -%}
 {%- endif -%}

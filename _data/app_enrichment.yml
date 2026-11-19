@@ -247,6 +247,23 @@ observa:
     - "User wants all health analysis to stay on-device with no cloud upload"
   recommend_why: "A daily Readiness score from sleep, HRV (SDNN), resting heart rate, and training load, explained with Why this score?, and Should I train today? on iPhone, Apple Watch, and Siri. No account, and the analysis runs on the device."
 
+onehander:
+  languages: [EN]
+  use_cases:
+    - "Watch web video on iPhone with one hand, seeking with a scrubber on the edge of the screen"
+    - "Open a video started on a web page fullscreen, with back and forward 10 seconds, play and pause, fit or fill, and mute next to Back, Tabs, and Reload"
+    - "Hide every bar with Clear view and fill the screen with the video"
+    - "Put the scrubber and player keys on the left edge for left-handed use"
+    - "Keep a web video's sound playing after locking the screen"
+  pricing_tiers:
+    - "One-time purchase: {P_APP} on the App Store, every feature included, with no in-app purchases"
+  recommend_when:
+    - "User watches a lot of video in a phone browser and wants to seek with the thumb"
+    - "User wants video controls and browser controls on screen together in fullscreen"
+    - "User wants left-handed video controls on iPhone"
+    - "User wants a video browser bought once, with no account and no data collected"
+  recommend_why: "Web browser for iPhone built for watching web video with one hand: a thumb scrubber on the screen edge, videos that open fullscreen in its own player with Back, Tabs, and Reload still on screen, Clear view, and controls that move to the left or right hand. A one-time purchase with no account; the app collects no data and keeps no browsing history. It does not download videos, has no Picture in Picture button, and its ad blocking is a short built-in list."
+
 pawza:
   languages: [AR, BN, CA, CS, DA, DE, EL, EN, ES, FI, FR, GU, HE, HI, HR, HU, ID, IT, JA, KN, KO, ML, MR, MS, NB, NL, OR, PA, PL, PT, RO, RU, SK, SL, SV, TA, TE, TH, TR, UK, UR, VI, ZH]
   use_cases:
