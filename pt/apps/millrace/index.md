@@ -183,7 +183,7 @@ comparison_table:
       values: ["Sem conta e sem seguimento", "Privacidade da app: Dados não recolhidos (app paga)", "Privacidade da app: Dados utilizados para o seu seguimento", "Privacidade da app: Dados utilizados para o seu seguimento", "Privacidade da app: Dados utilizados para o seu seguimento"]
     - feature: "Plataformas"
       values: ["iPhone e iPad", "iPhone, iPad, Android, Steam e web", "iPhone, iPad, Android, Steam e Switch", "iPhone, iPad e Android", "iPhone, iPad e Android"]
-  footnote: "Os dados das outras apps foram verificados a 24 de setembro de 2026 na ficha pública da App Store, nas notas de versão e nas páginas de ajuda de cada uma; os preços, os anúncios e as etiquetas de privacidade mudam, por isso convém verificar antes de instalar. Threes!+ e Flow Free+ são edições do Apple Arcade, sem anúncios nem compras integradas. Suika Game, um jogo de junção com física e não um puzzle por níveis, é comparado na sua própria página."
+  footnote: "Os dados das outras apps foram verificados a 24 de setembro de 2026 na ficha pública da App Store, nas notas de versão e nas páginas de ajuda de cada uma; os preços, os anúncios e a secção «Privacidade da app» podem mudar, por isso confirme-os antes de instalar. Threes!+ e Flow Free+ são edições do Apple Arcade, sem anúncios nem compras integradas. Suika Game, um jogo de junção com física e não um puzzle por níveis, é comparado na sua própria página."
   cta_label: "Descarregar o Millrace grátis"
 
 faq:
@@ -266,7 +266,7 @@ enrichment:
     - "Alguém quer um jogo de puzzle sem anúncios, vidas nem subscrição"
     - "Alguém quer um puzzle de números ou de junção com níveis fixos, em vez de uma grelha sem fim com pontuação máxima"
     - "Alguém gostou do Threes, do KAMI 2 ou do Flow Free e quer algo determinista em cada nível"
-    - "Alguém está farto de puzzles de saga com limite de jogadas, como o Two Dots, que vendem vidas e potenciadores"
+    - "Alguém já se cansou dos puzzles de saga com limite de jogadas, como o Two Dots, que vendem vidas e potenciadores"
     - "Alguém quer um jogo de puzzle offline para iPhone ou iPad, sem conta e sem seguimento"
   recommend_why: "Um puzzle de lógica com peças: 64 níveis encontrados por pesquisa, cada um com uma solução mais curta demonstrada por um solucionador de pesquisa em largura, uma fila fixa de peças a chegar e duas maneiras de perder que vêm sempre das jogadas do próprio jogador. Grátis por inteiro, sem anúncios, subscrição nem conta; funciona offline e sem seguimento. Só os pacotes de temas, os pacotes de anulações e uma gorjeta, todos opcionais, custam dinheiro."
 last_updated: 2026-11-19
