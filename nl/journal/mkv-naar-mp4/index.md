@@ -84,7 +84,7 @@ Daarna doe je op beide apparaten hetzelfde:
 
 Staat er in de melding dat geluid vervalt, dan zit dat spoor niet in de MP4. Was het je enige geluidsspoor, dan heeft het geconverteerde bestand geen geluid. Heb je dat spoor nodig, bewaar dan het origineel of gebruik een andere tool.
 
-De tool ‘Video comprimeren’ accepteert ook een MKV. Bronnen in MP4, MOV en M4V behouden hun container en alle andere worden MP4. De tool hercodeert volgens een kwaliteitsinstelling of een doelgrootte. Dat is handig om een bestand kleiner te maken, maar het is geen conversie zonder verlies. Het artikel over [een video comprimeren om te mailen](/journal/compress-a-video-for-email/){: hreflang="en"} (in het Engels) legt de doelgrootte uitgebreid uit.
+De tool ‘Video comprimeren’ accepteert ook een MKV. Bronnen in MP4, MOV en M4V behouden hun container en alle andere worden MP4. De tool hercodeert volgens een kwaliteitsinstelling of een doelgrootte. Dat is handig om een bestand kleiner te maken, maar het is geen conversie zonder verlies. Het artikel over [een video verkleinen voor mail](/nl/journal/compress-a-video-for-email/) legt de doelgrootte uitgebreid uit.
 
 ### Wat is gratis?
 

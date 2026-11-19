@@ -71,7 +71,7 @@ De beste gegevens over aanleidingen in de praktijk komen uit de [enquête van Ro
 Omgezet in iets wat je op zondagavond kunt nalopen, zijn dit de signalen om op te letten:
 
 - Meerdere oefeningen gaan tegelijk niet meer vooruit. Eén oefening die stilstaat, vraagt meestal om een aanpassing van het programma. Drie oefeningen die tegelijk stilstaan, wijzen op vermoeidheid.
-- Je gebruikelijke gewichten voelen zwaarder. Voelt een gewicht dat een maand geleden RPE 7 was nu als RPE 8,5, bij meerdere oefeningen en langer dan één sessie, dan is dat een herstelsignaal. Hoe je dat eerlijk inschat, staat in [hoe RPE en herhalingen in reserve werken](/journal/rpe-and-rir-explained/){: hreflang="en"} (in het Engels).
+- Je gebruikelijke gewichten voelen zwaarder. Voelt een gewicht dat een maand geleden RPE 7 was nu als RPE 8,5, bij meerdere oefeningen en langer dan één sessie, dan is dat een herstelsignaal. Hoe je dat eerlijk inschat, staat in [hoe RPE en herhalingen in reserve werken](/nl/journal/rpe-and-rir-explained/).
 - Gewrichten en pezen doen al pijn voordat de training begint, niet pas erna.
 - Het leven buiten de sportschool vraagt meer dan normaal: een drukke periode op je werk, een pasgeboren baby, slecht slapen.
 

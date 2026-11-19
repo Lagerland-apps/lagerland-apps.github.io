@@ -6228,7 +6228,7 @@
      "q": "Wat is AllPaid?"
     },
     {
-     "a": "Gedeeltelijk. AllPaid leest je bank nooit, dus de app kan zelf geen rekeningen vinden. Je voegt elke rekening met de hand toe. Typ je een bekende naam zoals Netflix, dan stelt de app de categorie en het terugkeerpatroon voor en tik je op ‘Toepassen’ om ze te gebruiken. Bekende aanbieders tonen ook hun echte logo. Het bedrag is optioneel, dus je kunt een rekening ook toevoegen als hij van maand tot maand wisselt.",
+     "a": "Gedeeltelijk. AllPaid leest je bank nooit, dus de app kan zelf geen rekeningen vinden. Je voegt elke rekening met de hand toe. Typ je een bekende naam zoals Netflix, dan stelt de app de categorie en het terugkeerpatroon voor en tik je op ‘Toepassen’ om ze te gebruiken. Bekende aanbieders tonen ook hun echte logo. Het bedrag is optioneel, dus je kunt een rekening ook toevoegen als hij van maand tot maand wisselt. Hoe je zonder bankkoppeling je lopende abonnementen en andere terugkerende betalingen vindt, lees je in <a href=\"/nl/journal/find-every-recurring-charge/\">abonnementen bekijken op iPhone, Google en PayPal</a>.",
      "q": "Vult AllPaid rekeningen automatisch in?"
     },
     {
@@ -6674,7 +6674,7 @@
      "q": "Wat is de Smart Program Creator?"
     },
     {
-     "a": "Niet tijdens het loggen. Een gelogde set bevat gewicht en herhalingen, plus of het een warming-up was; er is geen RPE- of RIR-veld per set, en de analyses, plateaustatus inbegrepen, werken met gewicht en herhalingen. <a href=\"/journal/rpe-and-rir-explained/\" hreflang=\"en\">RPE and RIR, explained (in het Engels)</a> legt uit wat dat betekent als je elke set beoordeelt.",
+     "a": "Niet tijdens het loggen. Een gelogde set bevat gewicht en herhalingen, plus of het een warming-up was; er is geen RPE- of RIR-veld per set, en de analyses, plateaustatus inbegrepen, werken met gewicht en herhalingen. Het <a href=\"/nl/journal/rpe-and-rir-explained/\">artikel over RPE en RIR</a> legt uit wat dat betekent als je elke set beoordeelt.",
      "q": "Kan ik in GymLogger X RPE en RIR loggen?"
     },
     {
@@ -6812,7 +6812,7 @@
      "q": "Uploadt MediaKit mijn bestanden?"
     },
     {
-     "a": "Sleep de video in MediaKit en kies ‘Comprimeer’. Stel een doelgrootte in en MediaKit rekent de bitrate uit; de doelgrootte wordt nooit overschreden en als die niet haalbaar is, stopt de app met een foutmelding. Het toolscherm toont de geschatte grootte voordat je de tool uitvoert en het resultaat toont de bespaarde ruimte. Video comprimeren is een van de vijf gratis tools. Met Pro kan ‘Passend maken’ een clip ook verbeteren, omzetten naar 9:16 en in één stap onder 25 MB brengen voor berichten op sociale media.",
+     "a": "Sleep de video in MediaKit en kies ‘Comprimeer’. Stel een doelgrootte in en MediaKit rekent de bitrate uit; de doelgrootte wordt nooit overschreden en als die niet haalbaar is, stopt de app met een foutmelding. Het toolscherm toont de geschatte grootte voordat je de tool uitvoert en het resultaat toont de bespaarde ruimte. Video comprimeren is een van de vijf gratis tools. Met Pro kan ‘Passend maken’ een clip ook verbeteren, omzetten naar 9:16 en in één stap onder 25 MB brengen voor berichten op sociale media. De bijlagelimieten van Gmail, Outlook en iCloud Mail en de som voor de bitrate staan in <a href=\"/nl/journal/compress-a-video-for-email/\">video verkleinen voor mail</a>.",
      "q": "Hoe kan ik een video comprimeren op mijn iPhone zodat hij onder een groottelimiet blijft?"
     },
     {
@@ -7307,7 +7307,7 @@
      "q": "Wat is Soon.?"
     },
     {
-     "a": "Naar alles met een datum. Soon. heeft gebeurtenistypen voor reizen, bruiloften, verjaardagen, jubilea, tentamens, werk, feestdagen, gezondheid, een baby, concerten, sport en een algemeen moment, en de planmodus stelt voor de meeste een checklist voor. Geef een moment naast een datum ook een tijd en widgets tonen in de laatste 24 uur een live aftelling in uren en minuten. Geef het een datum in het verleden en het telt de dagen sindsdien.",
+     "a": "Naar alles met een datum. Soon. heeft gebeurtenistypen voor reizen, bruiloften, verjaardagen, jubilea, tentamens, werk, feestdagen, gezondheid, een baby, concerten, sport en een algemeen moment, en de planmodus stelt voor de meeste een checklist voor. Geef een moment naast een datum ook een tijd en widgets tonen in de laatste 24 uur een live aftelling in uren en minuten. Geef het een datum in het verleden en het telt de dagen sindsdien. De officiële feestdagen van 2027, met weekdag en weeknummer, staan in <a href=\"/nl/journal/feestdagen-2027/\">feestdagen 2027 in Nederland</a>.",
      "q": "Waar kan ik naartoe aftellen?"
     },
     {
