@@ -10,7 +10,7 @@ reviewing any Italian page. Every decision a translator would otherwise make dif
 | Setup (config default, locales.yml block, `_data/i18n/it.yml`, sitemap and feed stubs) | done 2026-11-19, commit 16a4f41 (it.yml written by one agent, reviewed and copy-edited by another: 59 values changed) |
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console has no Italy query data (see Keyword research) |
 | Tier 1 pages | done 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/it.yml`), /it/llms.txt, /it/llms-full.txt, 21 OG cards. Six batch commits, then go-live |
-| Live | no (`live: false`) |
+| Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not pushed) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 69.5 s wall before Italian pages; 78 to 81 s with all 69 Italian Tier 1 pages (2026-11-19, clean worktree, other sessions' agents running) |
 

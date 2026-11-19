@@ -111,7 +111,7 @@ it:
   og_locale: it_IT
   dir: ltr
   native_name: "Italiano"
-  live: false
+  live: true
   # Checked 2026-11-19 against the Italian App Store (iTunes lookup API, country=it, lang=it_it): "9,99 €" (Things 3)
   # and "14,99 €" (Mockly) with a no-break space (U+00A0) before €, decimal comma; free apps "Gratis".
   # Thousands "." (Italian convention, confirmed in _i18n/it-apple-terms.md).
