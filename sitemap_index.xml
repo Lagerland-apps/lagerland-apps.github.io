@@ -22,6 +22,10 @@ sitemap: false
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
   </sitemap>
   <sitemap>
+    <loc>{{ site.url }}/pt/sitemap.xml</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>{{ site.url }}/it/sitemap.xml</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
   </sitemap>

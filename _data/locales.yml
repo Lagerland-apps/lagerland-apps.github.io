@@ -178,7 +178,7 @@ pt:
   og_locale: pt_PT
   dir: ltr
   native_name: "Português (Portugal)"
-  live: false
+  live: true
   # Checked 2026-11-19 against the Portuguese App Store (iTunes lookup API, country=pt, lang=pt_pt, and the
   # apps.apple.com/pt pages): "9,99 €" (Things 3) and "14,99 €" (Mockly) with a no-break space (U+00A0) before €,
   # decimal comma; free apps "Grátis". Thousands with a no-break space, as Apple Portugal writes "2 000 000".

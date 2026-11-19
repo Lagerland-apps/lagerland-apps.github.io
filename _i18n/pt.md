@@ -10,9 +10,9 @@ reviewing any Portuguese page. Every decision a translator would otherwise make 
 | Setup (config default, locales.yml block, `_data/i18n/pt.yml`, sitemap and feed stubs) | done 2026-11-19 (pt.yml written by one agent, reviewed and copy-edited by another: 38 values changed) |
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console for Portugal not read (Claude in Chrome not connected, built-in browser not signed in, no export on disk) |
 | Tier 1 pages | written and reviewed 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/pt.yml`). AI files and OG cards in batch 6 (/pt/llms.txt, /pt/llms-full.txt, 21 OG cards) |
-| Live | no (`live: false`) |
+| Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
-| Build time | 72 s before Portuguese (main at the setup, 689 HTML files, 2026-11-19, other sessions' agents running) |
+| Build time | 72 s before Portuguese (main at the setup, 2026-11-19, other sessions' agents running); 85 s with Portuguese Tier 1 (762 audited pages) |
 
 ## Market and register
 
