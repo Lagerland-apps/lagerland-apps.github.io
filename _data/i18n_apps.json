@@ -5082,7 +5082,7 @@
      "q": "Quali app può bloccare EarnLock su iPhone?"
     },
     {
-     "a": "Scegli un’unità e un obiettivo giornaliero: passi nel piano gratuito, oppure minuti di attività o calorie attive con Premium. I livelli predefiniti sono Leggero, Standard e Sfida (4.000, 8.000 o 12.000 passi), oppure puoi impostare un numero tuo o scegliere Adattivo. EarnLock legge i tuoi progressi da Salute sul tuo iPhone. Al 50% si apre una parte delle app che hai scelto una per una, per una finestra proporzionata ai tuoi progressi, circa un’ora a metà obiettivo, una volta al giorno; le intere categorie aspettano il 100%. Al 100% tutto resta aperto fino a mezzanotte. Sotto il 50% tutto resta bloccato, e a mezzanotte la giornata riparte.",
+     "a": "Scegli un’unità e un obiettivo giornaliero: passi nel piano gratuito, oppure minuti di attività o calorie attive con Premium. I livelli predefiniti sono Leggero, Standard e Sfida (4.000, 8.000 o 12.000 passi), oppure puoi impostare un numero tuo o scegliere Adattivo. EarnLock legge i tuoi progressi da Salute sul tuo iPhone. Al 50% si apre una parte delle app che hai scelto una per una, per una finestra proporzionata ai tuoi progressi, circa un’ora a metà obiettivo, una volta al giorno; le intere categorie aspettano il 100%. Al 100% tutto resta aperto fino a mezzanotte. Sotto il 50% tutto resta bloccato, e a mezzanotte la giornata riparte. Per scegliere l’obiettivo, l’articolo del blog <a href=\"/it/journal/how-many-steps-a-day-to-aim-for/\">su quanti passi fare al giorno</a> riassume cosa dicono i grandi studi.",
      "q": "Come funziona l’obiettivo giornaliero?"
     },
     {
@@ -5147,15 +5147,15 @@
      "q": "In che cosa GymLogger X è diverso da Strong, Hevy e Fitbod?"
     },
     {
-     "a": "È una procedura guidata che costruisce un programma partendo da attrezzatura, obiettivi, infortuni, giorni disponibili e preferenze. Scegli una divisione (full body, upper/lower, push/pull/legs, push/pull, Arnold o bro split), i giorni a settimana, la durata della sessione, una durata di 4, 8 o 12 settimane o senza scadenza, e una periodizzazione lineare, ondulatoria, a blocchi o a onde. Gli infortuni si inseriscono per parte del corpo, con i movimenti da evitare. L’anteprima mostra le settimane di scarico, un riscaldamento preventivo e gli adattamenti per gli infortuni, e prima di iniziare puoi sostituire un esercizio o rigenerare. È gratuito; senza Pro tieni un programma alla volta.",
+     "a": "È una procedura guidata che costruisce un programma partendo da attrezzatura, obiettivi, infortuni, giorni disponibili e preferenze. Scegli una divisione (full body, upper/lower, push/pull/legs, push/pull, Arnold o bro split), i giorni a settimana, la durata della sessione, una durata di 4, 8 o 12 settimane o senza scadenza, e una periodizzazione lineare, ondulatoria, a blocchi o a onde. Gli infortuni si inseriscono per parte del corpo, con i movimenti da evitare. L’anteprima mostra le settimane di scarico, un riscaldamento preventivo e gli adattamenti per gli infortuni, e prima di iniziare puoi sostituire un esercizio o rigenerare. È gratuito; senza Pro tieni un programma alla volta. Quando e come fare lo scarico lo spiega l’articolo del blog <a href=\"/it/journal/when-to-deload/\">sulla settimana di scarico</a>.",
      "q": "Cos’è lo Smart Program Creator?"
     },
     {
-     "a": "Non durante la registrazione. Una serie registrata contiene peso e ripetizioni, più l’indicazione se era di riscaldamento; non c’è un campo RPE o RIR per serie, e le analisi, stato di plateau compreso, partono da peso e ripetizioni. <a href=\"/journal/rpe-and-rir-explained/\" hreflang=\"en\">RPE and RIR, explained (in inglese)</a> spiega cosa significa se valuti ogni serie.",
+     "a": "Non durante la registrazione. Una serie registrata contiene peso e ripetizioni, più l’indicazione se era di riscaldamento; non c’è un campo RPE o RIR per serie, e le analisi, stato di plateau compreso, partono da peso e ripetizioni. Se vuoi valutare ogni serie, la scala da 1 a 10 è spiegata nell’articolo del blog <a href=\"/it/journal/rpe-and-rir-explained/\">su RPE e RIR</a>.",
      "q": "GymLogger X gestisce RPE e RIR?"
     },
     {
-     "a": "No. GymLogger X non calcola i punteggi Wilks, DOTS o Sinclair. Stima il 1RM di ogni esercizio con la formula di Epley, tiene una tabella dei massimali e i tuoi record personali e ha un calcolo dischi per caricare il bilanciere.",
+     "a": "No. GymLogger X non calcola i punteggi Wilks, DOTS o Sinclair. Stima il 1RM di ogni esercizio con la formula di Epley, tiene una tabella dei massimali e i tuoi record personali e ha un calcolo dischi per caricare il bilanciere. Le formule per stimare il massimale, con esempi, sono nell’articolo del blog <a href=\"/it/journal/how-to-estimate-your-one-rep-max/\">sul calcolo del massimale</a>.",
      "q": "GymLogger X calcola Wilks, DOTS o Sinclair?"
     },
     {
@@ -5200,7 +5200,7 @@
   "liftlog": {
    "faq": [
     {
-     "a": "LiftLog è un’app per l’allenamento in palestra su iPhone. Inserisci peso e ripetizioni su un tastierino fisso, ogni serie è compilata partendo dall’ultima sessione e il timer di riposo parte quando spunti una serie. Include 1500 esercizi con demo animate, 40 programmi pronti che possono suggerirti il peso successivo, avvisi sui record personali, grafici dei progressi, 10 widget e azioni per Siri. È gratis per 7 giorni senza carta, poi un acquisto unico da {P_IAP:Minimum} a {P_IAP:Patron}.",
+     "a": "LiftLog è un’app per l’allenamento in palestra su iPhone. Inserisci peso e ripetizioni su un tastierino fisso, ogni serie è compilata partendo dall’ultima sessione e il timer di riposo parte quando spunti una serie (quanto recuperare lo spiega l’articolo del blog <a href=\"/it/journal/how-long-to-rest-between-sets/\">sul recupero tra le serie</a>). Include 1500 esercizi con demo animate, 40 programmi pronti che possono suggerirti il peso successivo, avvisi sui record personali, grafici dei progressi, 10 widget e azioni per Siri. È gratis per 7 giorni senza carta, poi un acquisto unico da {P_IAP:Minimum} a {P_IAP:Patron}.",
      "q": "Cos’è LiftLog?"
     },
     {
@@ -5224,7 +5224,7 @@
      "q": "LiftLog funziona con Apple Watch?"
     },
     {
-     "a": "In “Sfoglia modelli” trovi 40 programmi basati su routine note come StrongLifts 5×5, Starting Strength, Greyskull LP, Wendler 5/3/1, Texas Method, GZCLP, nSuns 531 LP, PHUL, PHAT e German Volume Training. Venti puntano sulla forza, 17 sull’ipertrofia e 3 sono generali; 10 sono per principianti, 22 per livello intermedio e 8 per esperti. Ognuno si carica con serie, ripetizioni e riposo già impostati e puoi crearne di tuoi. I nomi dei programmi appartengono ai rispettivi proprietari, che non approvano LiftLog.",
+     "a": "In “Sfoglia modelli” trovi 40 programmi basati su routine note come StrongLifts 5×5, Starting Strength, Greyskull LP, Wendler 5/3/1, Texas Method, GZCLP, nSuns 531 LP, PHUL, PHAT e German Volume Training. Venti puntano sulla forza, 17 sull’ipertrofia e 3 sono generali; 10 sono per principianti, 22 per livello intermedio e 8 per esperti. Ognuno si carica con serie, ripetizioni e riposo già impostati e puoi crearne di tuoi. I nomi dei programmi appartengono ai rispettivi proprietari, che non approvano LiftLog. Per scegliere tra push pull legs, upper/lower o full body, leggi l’articolo del blog <a href=\"/it/journal/choosing-a-strength-program-you-will-finish/\">su come scegliere una scheda</a>.",
      "q": "Quali programmi include LiftLog?"
     },
     {
@@ -5232,11 +5232,11 @@
      "q": "LiftLog può suggerirmi il peso del prossimo allenamento?"
     },
     {
-     "a": "Sì. Un badge con il miglioramento compare nel momento in cui una serie batte lo storico del tuo 1RM stimato. La pagina di ogni esercizio tiene i tuoi record personali (1RM stimato, serie migliore e miglior volume) e i record di ripetizioni, con grafici di 1RM stimato, volume e RPE medio. La formula del 1RM la scegli in Impostazioni: Adattiva (consigliata), Brzycki o Epley. Le serie di riscaldamento non contano mai.",
+     "a": "Sì. Un badge con il miglioramento compare nel momento in cui una serie batte lo storico del tuo 1RM stimato. La pagina di ogni esercizio tiene i tuoi record personali (1RM stimato, serie migliore e miglior volume) e i record di ripetizioni, con grafici di 1RM stimato, volume e RPE medio. La formula del 1RM la scegli in Impostazioni: Adattiva (consigliata), Brzycki o Epley. Le serie di riscaldamento non contano mai. L’articolo del blog <a href=\"/it/journal/how-to-estimate-your-one-rep-max/\">sul calcolo del massimale</a> confronta Epley, Brzycki e altre cinque formule con esempi.",
      "q": "LiftLog tiene traccia dei record personali e del 1RM?"
     },
     {
-     "a": "Sì, come opzione. Aggiungi un RPE da 1 a 10 modificando una serie dopo l’allenamento; sulla riga della serie in corso non c’è un campo RPE. Ogni esercizio ottiene poi un grafico dell’RPE medio e gli esercizi con lo schema di progressione RPE / RIR usano quello che inserisci.",
+     "a": "Sì, come opzione. Aggiungi un RPE da 1 a 10 modificando una serie dopo l’allenamento; sulla riga della serie in corso non c’è un campo RPE. Ogni esercizio ottiene poi un grafico dell’RPE medio e gli esercizi con lo schema di progressione RPE / RIR usano quello che inserisci. La scala da 1 a 10 e la corrispondenza con le ripetizioni in riserva sono nell’articolo del blog <a href=\"/it/journal/rpe-and-rir-explained/\">su RPE e RIR</a>.",
      "q": "Si può registrare l’RPE in LiftLog?"
     },
     {
@@ -5468,7 +5468,7 @@
      "q": "Mi serve un Apple Watch?"
     },
     {
-     "a": "Salute registra la variabilità della frequenza cardiaca come SDNN, ed è questo l’HRV che mostra Observa: il tuo valore giornaliero rispetto al tuo riferimento personale, con 7 giorni di tendenza gratis e 30, 90 o 365 giorni con Premium. L’HRV pesa anche per il 25% sulla tua Prontezza. Con Premium, la scheda ECG mostra la tua ultima registrazione ECG con la sua forma d’onda e la cronologia delle classificazioni di Salute. Observa mostra ciò che Salute ha registrato; non rileva né diagnostica alcuna condizione medica.",
+     "a": "Salute registra la variabilità della frequenza cardiaca come SDNN, ed è questo l’HRV che mostra Observa: il tuo valore giornaliero rispetto al tuo riferimento personale, con 7 giorni di tendenza gratis e 30, 90 o 365 giorni con Premium. L’HRV pesa anche per il 25% sulla tua Prontezza. Con Premium, la scheda ECG mostra la tua ultima registrazione ECG con la sua forma d’onda e la cronologia delle classificazioni di Salute. Observa mostra ciò che Salute ha registrato; non rileva né diagnostica alcuna condizione medica. Perché un valore basso dice poco senza il tuo riferimento lo spiega l’articolo del blog <a href=\"/it/journal/apple-watch-hrv-without-a-baseline/\">sull’HRV bassa</a>.",
      "q": "Come gestisce Observa i dati di HRV ed ECG?"
     },
     {
@@ -5565,7 +5565,7 @@
      "q": "Pawza funziona su iPhone Duo?"
     },
     {
-     "a": "Quelli che fa il tuo veterinario. Ogni vaccino conserva la data di somministrazione, la data del prossimo richiamo, il numero di lotto e le note, e può ricordartelo il giorno del richiamo. Le terapie conservano la dose, un promemoria ripetuto e lo storico delle dosi. Visto che inserisci i nomi usati dal tuo veterinario, o li scansioni dal certificato, Pawza si adatta al calendario vaccinale di qualsiasi paese: rabbia, DHPP, Bordetella e leptospirosi per i cani, FVRCP e FeLV per i gatti, oppure i vaccini propri di un coniglio o di un cavallo.",
+     "a": "Quelli che fa il tuo veterinario. Ogni vaccino conserva la data di somministrazione, la data del prossimo richiamo, il numero di lotto e le note, e può ricordartelo il giorno del richiamo. Le terapie conservano la dose, un promemoria ripetuto e lo storico delle dosi. Visto che inserisci i nomi usati dal tuo veterinario, o li scansioni dal certificato, Pawza si adatta al calendario vaccinale di qualsiasi paese: rabbia, DHPP, Bordetella e leptospirosi per i cani, FVRCP e FeLV per i gatti, oppure i vaccini propri di un coniglio o di un cavallo. Cosa dicono le linee guida veterinarie sui vaccini dei primi mesi lo riassume l’articolo del blog <a href=\"/it/journal/puppy-and-kitten-vaccination-schedule/\">sulle vaccinazioni di cuccioli e gattini</a>.",
      "q": "Quali vaccinazioni e trattamenti posso seguire in Pawza?"
     },
     {
@@ -5606,7 +5606,7 @@
   "rightsplit": {
    "faq": [
     {
-     "a": "RightSplit è una calcolatrice per dividere il conto su iPhone. Scansiona uno scontrino, ti lascia toccare chi ha preso quali articoli, divide imposte e mancia in proporzione a quello che ha ordinato ciascuno quando lo scontrino le riporta, e prepara per ognuno un messaggio con il suo importo esatto e un link per pagarti. Non serve nessun account. Dividere alla romana con la mancia e la tua prima scansione sono gratis; Pro+ aggiunge scansioni illimitate, divisioni per articoli e non uguali, Spazi per viaggi e case condivise e il monitoraggio dei pagamenti, a {P_YEARLY}/anno oppure a {P_LIFETIME} una sola volta.",
+     "a": "RightSplit è una calcolatrice per dividere il conto su iPhone. Scansiona uno scontrino, ti lascia toccare chi ha preso quali articoli, divide imposte e mancia in proporzione a quello che ha ordinato ciascuno quando lo scontrino le riporta, e prepara per ognuno un messaggio con il suo importo esatto e un link per pagarti. Non serve nessun account. Dividere alla romana con la mancia e la tua prima scansione sono gratis; Pro+ aggiunge scansioni illimitate, divisioni per articoli e non uguali, Spazi per viaggi e case condivise e il monitoraggio dei pagamenti, a {P_YEARLY}/anno oppure a {P_LIFETIME} una sola volta. Quanta mancia lasciare negli Stati Uniti lo spiega l’articolo del blog <a href=\"/it/journal/how-much-to-tip-in-the-us/\">sulla mancia in America</a>.",
      "q": "Che cos’è RightSplit?"
     },
     {
@@ -5776,7 +5776,7 @@
      "q": "Che cos’è Soon.?"
     },
     {
-     "a": "Per qualsiasi cosa abbia una data. Soon. ha tipi di evento per viaggi, matrimoni, compleanni, anniversari, esami, lavoro, festività, salute, un bebè, concerti, sport e un momento generico, e la modalità piano suggerisce una checklist per la maggior parte. Se oltre alla data dai al momento anche un orario, nelle sue ultime 24 ore i widget mostrano un conto alla rovescia dal vivo in ore e minuti. Se gli dai una data passata, conta i giorni trascorsi.",
+     "a": "Per qualsiasi cosa abbia una data. Soon. ha tipi di evento per viaggi, matrimoni, compleanni, anniversari, esami, lavoro, festività, salute, un bebè, concerti, sport e un momento generico, e la modalità piano suggerisce una checklist per la maggior parte. Se oltre alla data dai al momento anche un orario, nelle sue ultime 24 ore i widget mostrano un conto alla rovescia dal vivo in ore e minuti. Se gli dai una data passata, conta i giorni trascorsi. Per le festività del 2027, con i giorni della settimana e i ponti, c’è l’articolo del blog <a href=\"/it/journal/festivita-2027/\">sulle festività 2027 in Italia</a>.",
      "q": "Per che cosa posso fare un conto alla rovescia?"
     },
     {

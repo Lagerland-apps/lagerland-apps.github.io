@@ -13,6 +13,7 @@ reviewing any Italian page. Every decision a translator would otherwise make dif
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not pushed) |
 | Tier 2 | done 2026-11-19 (not pushed). Batch 1 (8cf9a81): both hubs, chess, logic puzzles, workout without subscription, 3 audience pages, local-only /it/guides/limitare-tempo-di-utilizzo-iphone/ and /it/guides/come-mettere-conto-alla-rovescia-iphone/. Batch 2: shogi, xiangqi, bill tracker rewritten around Wallet by BudgetBakers, Spendee and Toshl Finanze (Rocket Money, Monarch, Copilot not sold in Italy). for/indie-ios-developers stays English-only (developers search in English). Research: ~/Downloads/githubcode/it-tier2-research-2026-11-19.md; brief: `_i18n/it-tier2-brief.md` |
 | Tier 3 | batch 3 done 2026-11-19 (short batch of five, not pushed): local-only alternativa-a-monefy and alternativa-a-sleep-cycle, wondershare-uniconverter, habitica, alpha-progression; hub 25; store data it-tier3-store-batch3-2026-11-19.md (with Italian App Privacy labels). Batch 2 done 2026-11-19, pushed as 4b80642: handbrake, convertio, cloudconvert (web/desktop tools, owner approved despite 6.4), opal, bevel, welltory, fitbod, settle-up and local-only /it/alternatives/alternativa-a-splid/ and /it/alternatives/alternativa-a-appblock/; hub 20 cards; store data it-tier3-store-batch2-2026-11-19.md. Batch 1 done 2026-11-19, pushed as 94ecf4d: /it/alternatives/ hub + tricount, splitwise, chess-com, lichess, whoop, oura, hevy, forest, pdf-expert and local-only /it/alternatives/alternativa-a-wallet-budgetbakers/ (also closes the Rocket Money part of I-0376 on the AllPaid page). Research: ~/Downloads/githubcode/it-tier3-research-2026-11-19.md (batch 2 queue inside: HandBrake, Convertio, CloudConvert, UniConverter, Splid local-only, Fitbod, Bevel, Opal, Jefit, Welltory, Settle Up, AppBlock local-only); store data: it-tier3-store-2026-11-19.md; briefs `_i18n/it-tier3-brief.md`, `_i18n/it-tier3-review-brief.md` |
+| Tier 4 | batch 1 done 2026-11-19 (not pushed): /it/journal/ hub («Blog») + how-many-steps-a-day-to-aim-for, how-long-to-rest-between-sets, how-to-estimate-your-one-rep-max, rpe-and-rir-explained, choosing-a-strength-program-you-will-finish, when-to-deload, how-much-to-tip-in-the-us, apple-watch-hrv-without-a-baseline, puppy-and-kitten-vaccination-schedule (Italy rabies rules from salute.gov.it) and local-only /it/journal/festivita-2027/ (L. 260/1949 as amended, L. 151/2025). Research: ~/Downloads/githubcode/it-tier4-research-2026-11-19.md (next-batch queue inside); briefs `_i18n/it-tier4-brief.md`, `_i18n/it-tier4-review-brief.md` |
 | Stale pages | 0 (2026-11-19, `i18n.py stale`); no wording-only changes waiting |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 69.5 s wall before Italian pages; 78 to 81 s with all 69 Italian Tier 1 pages (2026-11-19, clean worktree, other sessions' agents running) |
@@ -274,6 +275,39 @@ Tier 3 batch 1 (2026-11-19). Comparison pages own the competitor-name queries; a
 | habitica (batch 3) | `habitica come funziona` | `habitica italiano` |
 | alpha-progression (batch 3) | `alpha progression recensioni` | `alpha progression gratis`; English-form suggests typed in Italy: `alpha progression app`, `alpha progression vs fitbod` |
 
+Tier 4 batch 1 (2026-11-19). Journal posts own the informational queries; app pages, guides and comparisons keep theirs.
+
+| Page | Primary query | Secondary queries |
+|---|---|---|
+| /it/journal/ | brand-led hub («Blog di Lagerland Apps») | the posts' primaries |
+| how-many-steps-a-day-to-aim-for | `quanti passi al giorno` | `quanti passi al giorno bisogna fare`, `quanti passi al giorno per stare bene`, `10000 passi al giorno`, `quanti passi al giorno in base all’età` |
+| how-long-to-rest-between-sets | `recupero tra le serie` | `tempo di recupero tra le serie`, `recupero tra le serie ipertrofia`, `quanto riposare tra una serie e l’altra` |
+| how-to-estimate-your-one-rep-max | `calcolo massimale` | `calcolare massimale`, `formula brzycki`, `formula epley`, `calcolo massimale panca`, `tabella massimale` |
+| rpe-and-rir-explained | `rpe e rir` | `rir palestra`, `rpe palestra`, `scala rpe palestra`, `buffer palestra` |
+| choosing-a-strength-program-you-will-finish | `push pull legs` | `scheda push pull legs`, `scheda upper lower`, `meglio full body o split` |
+| when-to-deload | `settimana di scarico` | `settimana di scarico ogni quanto`, `scarico palestra`, `deload palestra` |
+| how-much-to-tip-in-the-us | `mancia in america` | `mancia in america obbligatoria`, `mancia in america quanto`, `mancia negli stati uniti` |
+| apple-watch-hrv-without-a-baseline | `hrv bassa` | `hrv bassa cosa significa`, `hrv bassa cause`, `hrv valori normali` |
+| puppy-and-kitten-vaccination-schedule | `vaccinazioni cane` | `vaccini cucciolo cane`, `vaccinazioni cane obbligatorie`, `vaccini gattino` (Pawza keeps `calendario vaccinazioni cane`) |
+| local-only festivita-2027 | `festività 2027` | `festività 2027 italia`, `ponti 2027`, `festività 2027 san francesco`, `festività 2027 4 ottobre` |
+
+## Decisions from the Tier 4 reviews (2026-11-19)
+
+- Gym words: «massimale (1RM)» once, then either; «recupero» between sets (LiftLog's own label stays “Timer di riposo”); «scheda» for a
+  programme card; «settimana di scarico» («deload» once); RPE and RIR kept, «ripetizioni in riserva» once and «buffer» once, only in
+  the RPE post; push pull legs, upper/lower, full body, 5/3/1 in English; «atleti di forza e di bodybuilding» for strength and physique
+  athletes; «età allenante» for training age; pounds dropped where the English pairs kg and lb.
+- Ranges in prose and tables «da 4 a 6», «tra 6 e 8», never «4-6» or «4 o 8» for a range. U+00A0 between a number and passi, kg, kcal,
+  min, ripetizioni, settimane, giorni, $.
+- Dollars in the US tipping post: «20 $», decimal comma; «imposta» for sales tax (Italians search «tasse»: kept in seo only).
+- Vaccines: disease names from the official Italian WSAVA 2015 translation (cimurro, adenovirus canino, parvovirosi, panleucopenia felina,
+  herpesvirus felino tipo 1, calicivirus felino, leucemia felina, “tosse dei canili”); never «adenovirosi», «calicivirosi». Rabies: only
+  what salute.gov.it says (compulsory for international movement; Reg. (UE) 576/2013).
+- Holidays: 12 national holidays besides Sundays (L. 260/1949 as amended, L. 54/1977, DPR 792/1985, L. 336/2000, L. 27/2024, L. 151/2025);
+  ponti only as «guarda il tuo contratto o chiedi al datore di lavoro»; patron days only as the Camera page says; no pay rules.
+- Soon.: never say an Italian holiday gets the “Festività” event type (the type is inferred from English title words, I-0295).
+- Link sentences from app pages to posts: «l’articolo del blog <link>su …</link>», not «il nostro articolo».
+
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
 - Price footnote, one sentence on every page: «I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App
@@ -411,6 +445,18 @@ acquisto»); «Sostituisce, in parte,»; «una alternativa» without elision; tw
 one batch.
 after an app name («AllPaid, la nostra app,»); «ti legge» for Siri reading items («Siri ti dice …»).
 
+
+Found in the Tier 4 reviews (2026-11-19): hyphen ranges («6000-8000», «2-4 settimane») and «ogni 4 o 8 settimane» for a range; «di da» before a
+range; «confusione residua» («confondimento residuo»); «analisi riunite» for pooled («aggregate»); «di decine di chili» for "double-digit
+kilos"; «camminata voluta» («fatta apposta»); «tenere onesto il numero»; «strappare un massimale»; «eri sul telefono»; «atleti di fisico»;
+«valuta la fatica» for "how hard it was"; «nel mezzo» for "between them" («tra l’uno e l’altro»); «schede scritte da sé» («fai da te»);
+«servizi tipo Uber» (a brand the English doesn't name); «una HRV» (elide: «un’HRV»); «È come…» for "about as useful as"; «servono tutti un
+diario» (agreement); gendered «saresti stato bloccato», «parti più leggero», «sei capitato», «stai fermo», «sono un principiante?»; «Quanti
+passi al giorno fare?» («Quanti passi fare al giorno?»); «full immersione» («full immersion»); reviewer-facing meta left in copy («non
+presa da una fonte consultata», «non le abbiamo verificate»); claims stronger than the source on patron days; bold-label bullet lists; a
+keyword-then-colon H1 or a raw keyword-question seo.title; writer-added definitions («Il massimale è…» as its own line); keywords with no
+suggest evidence; dropped hedges («circa», «tutto», «all’incirca», «probabilmente»).
+
 ## House rules carried over
 
 - No public roadmaps or dated promises. Describe what an app does today.
@@ -451,6 +497,8 @@ reviewers: home, all 21 app pages, about. Native review: none yet, for every pag
 | Tier 3 batch 2: 8 comparisons + local-only Splid and AppBlock | 10 writers (Sonnet), one store/web-check agent | 2 reviewers (Opus), full copy-editing skill, fact diff vs English + Italian store/web file; App Privacy claims re-checked on the raw Italian product pages | n/a | no native review yet |
 | Tier 3 batch 2: hub (20 cards), llms.txt lines, RightSplit / Observa / GymLogger X / screen-time guide links; batch 1 «una tantum» and Forest description fixes | main session | reviewer of group A (batch 2) | n/a | no native review yet |
 | Tier 3 batch 3: local-only Monefy and Sleep Cycle, UniConverter, Habitica, Alpha Progression; hub 25, llms.txt lines, Observa and AllPaid links | 5 writers (Sonnet), one store/web-check agent | 1 reviewer (Opus), full copy-editing pass, fact diff vs English + Italian store/web file | n/a | no native review yet |
+| Tier 4 batch 1: 9 journal posts + local-only festivita-2027 | 10 writers (Sonnet), Italian sources saved per post (salute.gov.it, Your Europe, Normattiva, Camera, EpiCentro, Apple Italy) | 3 reviewers (Opus): full copy-editing skill, sentence-by-sentence fact diff, every worked example recomputed, every source re-fetched live, UI labels against the .xcstrings | n/a | no native review yet |
+| Tier 4 batch 1: /it/journal/ hub, 10 llms.txt routing lines + Blog lines, link sentences on 7 app pages, GymLogger X anchor | main session | 1 wiring reviewer (Opus) | n/a | no native review yet |
 
 ## Screenshots
 

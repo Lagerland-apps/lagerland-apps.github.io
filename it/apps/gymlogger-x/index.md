@@ -186,11 +186,11 @@ faq:
   - q: "In che cosa GymLogger X è diverso da Strong, Hevy e Fitbod?"
     a: "GymLogger X non richiede un account; quando abbiamo controllato il 13 maggio 2026, Strong, Hevy e Fitbod chiedevano tutti di registrarsi. La sua app Apple Watch è gratuita e ha un timer di riposo che può dirti quando la frequenza cardiaca ha recuperato. Pro si compra in abbonamento o con un acquisto unico a vita. E il suo coaching si basa su regole e viene calcolato sul tuo iPhone dai tuoi allenamenti, senza chatbot. I confronti entrano nei dettagli: <a href=\"/alternatives/strong-workout-app/\" hreflang=\"en\">Strong (in inglese)</a> e <a href=\"/it/alternatives/fitbod/\">Fitbod</a>."
   - q: "Cos’è lo Smart Program Creator?"
-    a: "È una procedura guidata che costruisce un programma partendo da attrezzatura, obiettivi, infortuni, giorni disponibili e preferenze. Scegli una divisione (full body, upper/lower, push/pull/legs, push/pull, Arnold o bro split), i giorni a settimana, la durata della sessione, una durata di 4, 8 o 12 settimane o senza scadenza, e una periodizzazione lineare, ondulatoria, a blocchi o a onde. Gli infortuni si inseriscono per parte del corpo, con i movimenti da evitare. L’anteprima mostra le settimane di scarico, un riscaldamento preventivo e gli adattamenti per gli infortuni, e prima di iniziare puoi sostituire un esercizio o rigenerare. È gratuito; senza Pro tieni un programma alla volta."
+    a: "È una procedura guidata che costruisce un programma partendo da attrezzatura, obiettivi, infortuni, giorni disponibili e preferenze. Scegli una divisione (full body, upper/lower, push/pull/legs, push/pull, Arnold o bro split), i giorni a settimana, la durata della sessione, una durata di 4, 8 o 12 settimane o senza scadenza, e una periodizzazione lineare, ondulatoria, a blocchi o a onde. Gli infortuni si inseriscono per parte del corpo, con i movimenti da evitare. L’anteprima mostra le settimane di scarico, un riscaldamento preventivo e gli adattamenti per gli infortuni, e prima di iniziare puoi sostituire un esercizio o rigenerare. È gratuito; senza Pro tieni un programma alla volta. Quando e come fare lo scarico lo spiega l’articolo del blog <a href=\"/it/journal/when-to-deload/\">sulla settimana di scarico</a>."
   - q: "GymLogger X gestisce RPE e RIR?"
-    a: "Non durante la registrazione. Una serie registrata contiene peso e ripetizioni, più l’indicazione se era di riscaldamento; non c’è un campo RPE o RIR per serie, e le analisi, stato di plateau compreso, partono da peso e ripetizioni. <a href=\"/journal/rpe-and-rir-explained/\" hreflang=\"en\">RPE and RIR, explained (in inglese)</a> spiega cosa significa se valuti ogni serie."
+    a: "Non durante la registrazione. Una serie registrata contiene peso e ripetizioni, più l’indicazione se era di riscaldamento; non c’è un campo RPE o RIR per serie, e le analisi, stato di plateau compreso, partono da peso e ripetizioni. Se vuoi valutare ogni serie, la scala da 1 a 10 è spiegata nell’articolo del blog <a href=\"/it/journal/rpe-and-rir-explained/\">su RPE e RIR</a>."
   - q: "GymLogger X calcola Wilks, DOTS o Sinclair?"
-    a: "No. GymLogger X non calcola i punteggi Wilks, DOTS o Sinclair. Stima il 1RM di ogni esercizio con la formula di Epley, tiene una tabella dei massimali e i tuoi record personali e ha un calcolo dischi per caricare il bilanciere."
+    a: "No. GymLogger X non calcola i punteggi Wilks, DOTS o Sinclair. Stima il 1RM di ogni esercizio con la formula di Epley, tiene una tabella dei massimali e i tuoi record personali e ha un calcolo dischi per caricare il bilanciere. Le formule per stimare il massimale, con esempi, sono nell’articolo del blog <a href=\"/it/journal/how-to-estimate-your-one-rep-max/\">sul calcolo del massimale</a>."
   - q: "GymLogger X funziona su Apple Watch senza iPhone?"
     a: "No. L’app Apple Watch è un’app complementare: avvii l’allenamento sull’iPhone, e le serie registrate sull’orologio passano dal telefono. Al polso registri peso e ripetizioni, vedi frequenza cardiaca, tempo e calorie e usi il timer di riposo. Frequenza cardiaca e calorie richiedono l’autorizzazione a Salute sull’orologio."
   - q: "Come funziona il rilevamento dei plateau?"
@@ -209,7 +209,7 @@ faq:
     a: "Sì. L’app, i widget e l’app Apple Watch sono in italiano."
 
 related_journal:
-  anchor: "PPL, upper/lower o 5/3/1: come scegliere un programma che finirai davvero"
+  anchor: "Push pull legs, upper/lower o 5/3/1: come scegliere una scheda che seguirai ancora tra dodici settimane"
 
 enrichment:
   use_cases:

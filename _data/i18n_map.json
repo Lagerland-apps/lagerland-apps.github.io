@@ -1055,6 +1055,7 @@
     "en": "/journal/",
     "es": "/es/journal/",
     "fr": "/fr/journal/",
+    "it": "/it/journal/",
     "pt": "/pt/journal/"
   },
   "/journal/30-chess-mistake-motifs/": {
@@ -1077,6 +1078,7 @@
     "en": "/journal/apple-watch-hrv-without-a-baseline/",
     "es": "/es/journal/apple-watch-hrv-without-a-baseline/",
     "fr": "/fr/journal/apple-watch-hrv-without-a-baseline/",
+    "it": "/it/journal/apple-watch-hrv-without-a-baseline/",
     "pt": "/pt/journal/apple-watch-hrv-without-a-baseline/"
   },
   "/journal/bill-splitting-math-tax-tip-shared-plates/": {
@@ -1089,6 +1091,7 @@
     "en": "/journal/choosing-a-strength-program-you-will-finish/",
     "es": "/es/journal/choosing-a-strength-program-you-will-finish/",
     "fr": "/fr/journal/choosing-a-strength-program-you-will-finish/",
+    "it": "/it/journal/choosing-a-strength-program-you-will-finish/",
     "pt": "/pt/journal/choosing-a-strength-program-you-will-finish/"
   },
   "/journal/compress-a-video-for-email/": {
@@ -1126,6 +1129,7 @@
     "en": "/journal/how-long-to-rest-between-sets/",
     "es": "/es/journal/how-long-to-rest-between-sets/",
     "fr": "/fr/journal/how-long-to-rest-between-sets/",
+    "it": "/it/journal/how-long-to-rest-between-sets/",
     "pt": "/pt/journal/how-long-to-rest-between-sets/"
   },
   "/journal/how-many-steps-a-day-to-aim-for/": {
@@ -1133,6 +1137,7 @@
     "en": "/journal/how-many-steps-a-day-to-aim-for/",
     "es": "/es/journal/how-many-steps-a-day-to-aim-for/",
     "fr": "/fr/journal/how-many-steps-a-day-to-aim-for/",
+    "it": "/it/journal/how-many-steps-a-day-to-aim-for/",
     "pt": "/pt/journal/how-many-steps-a-day-to-aim-for/"
   },
   "/journal/how-much-to-tip-in-the-us/": {
@@ -1140,6 +1145,7 @@
     "en": "/journal/how-much-to-tip-in-the-us/",
     "es": "/es/journal/how-much-to-tip-in-the-us/",
     "fr": "/fr/journal/how-much-to-tip-in-the-us/",
+    "it": "/it/journal/how-much-to-tip-in-the-us/",
     "pt": "/pt/journal/how-much-to-tip-in-the-us/"
   },
   "/journal/how-plan-mode-builds-a-checklist/": {
@@ -1152,7 +1158,8 @@
     "de": "/de/journal/how-to-estimate-your-one-rep-max/",
     "en": "/journal/how-to-estimate-your-one-rep-max/",
     "es": "/es/journal/how-to-estimate-your-one-rep-max/",
-    "fr": "/fr/journal/how-to-estimate-your-one-rep-max/"
+    "fr": "/fr/journal/how-to-estimate-your-one-rep-max/",
+    "it": "/it/journal/how-to-estimate-your-one-rep-max/"
   },
   "/journal/how-to-find-interesting-wikipedia-articles/": {
     "de": "/de/journal/how-to-find-interesting-wikipedia-articles/",
@@ -1191,6 +1198,7 @@
     "en": "/journal/puppy-and-kitten-vaccination-schedule/",
     "es": "/es/journal/puppy-and-kitten-vaccination-schedule/",
     "fr": "/fr/journal/puppy-and-kitten-vaccination-schedule/",
+    "it": "/it/journal/puppy-and-kitten-vaccination-schedule/",
     "pt": "/pt/journal/puppy-and-kitten-vaccination-schedule/"
   },
   "/journal/puzzle-game-no-ads-one-purchase/": {
@@ -1216,7 +1224,8 @@
     "de": "/de/journal/rpe-and-rir-explained/",
     "en": "/journal/rpe-and-rir-explained/",
     "es": "/es/journal/rpe-and-rir-explained/",
-    "fr": "/fr/journal/rpe-and-rir-explained/"
+    "fr": "/fr/journal/rpe-and-rir-explained/",
+    "it": "/it/journal/rpe-and-rir-explained/"
   },
   "/journal/shogi-openings-for-beginners/": {
     "de": "/de/journal/shogi-openings-for-beginners/",
@@ -1241,6 +1250,7 @@
     "en": "/journal/when-to-deload/",
     "es": "/es/journal/when-to-deload/",
     "fr": "/fr/journal/when-to-deload/",
+    "it": "/it/journal/when-to-deload/",
     "pt": "/pt/journal/when-to-deload/"
   },
   "/journal/xiangqi-openings-explained/": {
