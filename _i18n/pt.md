@@ -13,6 +13,7 @@ reviewing any Portuguese page. Every decision a translator would otherwise make 
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
 | Tier 2 | batch 1 written and reviewed 2026-11-19, no native review yet: both hubs, chess, logic, workout and xiangqi guides, 3 /for/ pages, local-only /pt/guides/limitar-tempo-de-ecra-iphone/. Batch 2 (same day): shogi guide, bill tracker rewritten around Wallet (BudgetBakers) and Spendee (the two apps sold in Portugal whose own listing says they connect to the bank; Portugal has no single default like Fintonic), local-only /pt/guides/como-fazer-contagem-decrescente-iphone/. Tier 2 complete; for/indie-ios-developers stays English-only. Research: ~/Downloads/githubcode/pt-tier2-research-2026-11-19.md; briefs `_i18n/pt-tier2-brief.md`, `_i18n/pt-tier2-review-brief.md` |
 | Tier 3 | batch 1 written and reviewed 2026-11-19, no native review yet: hub /pt/alternatives/ and 10 comparisons (WHOOP, Oura, Splitwise, Tricount, Hevy, Chess.com, Lichess, PDF Expert, Forest, Opal). No local-only comparison: no Portugal-born competitor has demand (the gap found is a guide, `app para dividir despesas`). Research: ~/Downloads/githubcode/pt-tier3-research-2026-11-19.md; store data ~/Downloads/githubcode/pt-tier3-store-2026-11-19.md; briefs `_i18n/pt-tier3-brief.md`, `_i18n/pt-tier3-review-brief.md`. Batch 2 (same day): Documents by Readdle, Bevel, AutoSleep, Gentler Streak, Strong, Fitbod, one sec, ScreenZen, RISE, Habitica; hub now 20; store data ~/Downloads/githubcode/pt-tier3-store-batch2-2026-11-19.md; brief `_i18n/pt-tier3-batch2-brief.md`. Batch 3 (same day): Flow Free, Two Dots, KAMI 2 (first Millrace comparisons), Productive, Streaks, HandBrake, CloudConvert, Welltory, Jefit, Settle Up; hub now 30; store data ~/Downloads/githubcode/pt-tier3-store-batch3-2026-11-19.md; brief `_i18n/pt-tier3-batch3-brief.md`. Next candidates in the research file |
+| Tier 4 | batch 1 written and reviewed 2026-11-19, no native review yet: hub /pt/journal/ («Blog») and 10 posts: how-many-steps-a-day-to-aim-for, how-long-to-rest-between-sets, choosing-a-strength-program-you-will-finish, when-to-deload, apple-watch-hrv-without-a-baseline, puppy-and-kitten-vaccination-schedule (Portugal rabies rule from DGAV, EU travel rule from Your Europe), how-much-to-tip-in-the-us, find-every-recurring-charge (Rocket Money replaced with Wallet and Spendee from their Portuguese listings), puzzle-games-without-ads-or-lives and the local-only /pt/journal/converter-mkv-para-mp4/. Inbound links from the workout, bill-tracker, logic-puzzle and screen-time guides, /pt/for/apple-health-power-users/ and /pt/alternatives/handbrake/. Research: ~/Downloads/githubcode/pt-tier4-research-2026-11-19.md (next candidates there); briefs `_i18n/pt-tier4-brief.md`, `_i18n/pt-tier4-review-brief.md` |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 72 s before Portuguese (main at the setup, 2026-11-19, other sessions' agents running); 85 s with Portuguese Tier 1 (762 audited pages) |
 
@@ -245,6 +246,22 @@ listing flags in-app purchases but renders no rows: never write «sem compras in
 
 Google Portugal suggest returns Brazilian forms (iniciantes, academia, «os apps», celular, tela): never use them as keywords.
 
+## Tier 4 keywords (2026-11-19)
+
+| Page | Primary | Notes |
+|---|---|---|
+| /pt/journal/ (hub) | none of its own | keywords borrow the posts' primaries, as on fr |
+| /pt/journal/how-many-steps-a-day-to-aim-for/ | `quantos passos por dia` | + `quantos passos devemos dar por dia`, `… segundo a oms` (the WHO fact sheet gives 150 minutes a week, not steps), `10000 passos por dia` |
+| /pt/journal/how-long-to-rest-between-sets/ | `quanto tempo descansar entre séries` | + `descanso entre séries hipertrofia`, `intervalo entre séries`; «descanso entre séries força» returns nothing |
+| /pt/journal/choosing-a-strength-program-you-will-finish/ | `treino ppl` | + `treino upper lower`, `treino upper lower 4 dias`, `treino 5/3/1`, `quantos dias por semana devo treinar` |
+| /pt/journal/when-to-deload/ | `semana de deload` | + `quando fazer deload`; «semana de descarga» returns Spanish suggestions |
+| /pt/journal/apple-watch-hrv-without-a-baseline/ | `vfc baixa` | + `vfc baixa o que significa`, `vfc valores normais`; Observa keeps `hrv apple watch`, `variabilidade da frequência cardíaca` |
+| /pt/journal/puppy-and-kitten-vaccination-schedule/ | `vacinas gatos` + `vacinas cachorro` | «cachorro» = puppy in Portugal; Pawza keeps the «boletim» queries |
+| /pt/journal/how-much-to-tip-in-the-us/ | `gorjeta nos estados unidos` | + `gorjeta eua`, `gorjeta é obrigatória nos eua` |
+| /pt/journal/find-every-recurring-charge/ | `como ver subscrições no iphone` | + `como ver subscrições`, `… no paypal`, `… google`; support hub keeps `cancelar subscrição iphone` |
+| /pt/journal/puzzle-games-without-ads-or-lives/ | `jogos sem anúncios` | Millrace keeps `jogos sem anúncios iphone` |
+| /pt/journal/converter-mkv-para-mp4/ (local-only) | `converter mkv para mp4` | + `… sem perder qualidade`, `… vlc`, `… grátis` |
+
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
 - App names take the masculine article on every page and in the interface strings («o Observa», «do Pawza», «ao
@@ -384,6 +401,26 @@ English one; «se quiser» breaking the impersonal register; «para computador»
 uma só conta» next to «livro de contas»; a list of three whose last item changes the subject; «ainda não existem em
 português» (implied roadmap: «sem versão em português»); card wording drifting from the page.
 
+From the Tier 4 batch 1 reviews (2026-11-19): «ajuste» for an app setting («definição»); a drifting object pronoun
+(«querem-no dado» after «comprovativo»); «precisar» without «de» in questions; a noun dropped after a number («cerca de um»);
+indicative after «garantir que»; typos in copied source URLs (diff every external URL against English); «a curva dobra» for
+"bends" (reads "doubles": «inflete»); «inferior à de 2000» after step counts (reads as the year); «com mais de 30 anos» for
+"from 30 years earlier"; «quadro» for "frame" («referência»); «saúde de consumo»; «estou avariado» as the reader's thought;
+«Moderadamente ativo» for "somewhat active" («Algo ativo»); «um objetivo que se mantém» for "a goal you'll keep" («que se
+consiga manter»); an H1 that inverts "means nothing without X"; «se está encalhado» (gendered: «quando não se vê saída»);
+«descomprime» for unpacking a container («desempacota»); «segundo a ficha da app» for our own page; a quick_answer opener that
+hardens a hedge («basta ler» for "most can be spotted"); «Execute a ferramenta» (name the button: Executar); «manobrista»
+(Brazilian: «valet (quem estaciona o carro)»; «arrumador» is a different job); «a IRS» for the US agency (in Portugal «o IRS» is
+the Portuguese income tax: «o fisco dos Estados Unidos (IRS)»); «quem serve ao balcão» («barman»); «recolha à porta» for
+curbside; «está na maioria» («faz parte da maioria»); «varrimento» («revisão»); «por conceção» for "by design" («de
+propósito»); «contas» for arithmetic on a bills page («cálculos»); «predefinição» for a training default («ponto de partida»);
+«ganhar volume» for muscle size where «volume» means training volume; «competidores» in a survey («atletas de competição»); an
+invented gloss for an English term («taper (período de afinação)»); «escritos à mão» for "self-written"; «tomam partidos
+diferentes»; «fizeram N adultos seguir» («puseram N adultos a seguir»); «entre 1 e 12» for a range; turning the English first
+person into «tanto quanto se sabe» (the posts keep the first person, never gendered). Process: writers who skip the copy-editing
+skill or the fact diff leave twice the fixes; writers extend the English with extra facts from localized Apple/PayPal pages (a
+Portugal source may replace US context, never add to it); a local-only post written line by line from the French model.
+
 Translationese: title case headings; gerund chains copied from English -ing («oferecendo», «permitindo»); passive
 «é … por» where Portuguese uses «se»; possessives on body parts and devices copied from English; «utilizador»
 everywhere where Portuguese says «quem»; Brazilian vocabulary and grammar on this Portugal site (see Market and
@@ -419,6 +456,7 @@ register); «você» or tu forms slipping in; clitic placement copied from Brazi
 | Tier 3 batch 3: 10 comparisons (2026-11-19) | 10 Sonnet writers | 6 reviewers (Flow Free + Two Dots + KAMI 2; Productive + Streaks; HandBrake + CloudConvert; Welltory; Jefit; Settle Up): invented keywords dropped, Jefit's «Elite removes ads» restored, «a Productive» → «o Productive», meta footnotes and an unrequested language line cut | n/a | no native review yet |
 | Tier 3 hub /pt/alternatives/, /pt/llms.txt lines, Observa and RightSplit FAQ links | 1 Sonnet writer | 1 reviewer (ItemList names and llms titles synced to final page titles; colliding queries removed) | n/a | no native review yet |
 | Tier 2 hubs, /pt/llms.txt lines, 6 inbound links | 1 Sonnet writer | 1 reviewer (ItemList names and llms titles synced to final page titles, two unrouted queries routed) | n/a | no native review yet |
+| Tier 4 batch 1: hub and 10 journal posts incl. local-only converter-mkv-para-mp4 (2026-11-19) | 10 Sonnet writers (hub by the main session) | 5 reviewers (gym ×3; steps + HRV; vaccines; tipping + subscriptions; games + MKV; DGAV, Your Europe, WHO, Apple pt-pt, PayPal, Matroska, VideoLAN and the iTunes lookup re-fetched live; app catalogs read): about 250 fixes, incl. an inverted HRV H1, invented keywords replaced with suggest-confirmed ones, a broken AAHA/AAFP link, writer-added facts from localized pages removed, «manobrista» and «a IRS», hedges restored («a maioria», "mostly agree", "instead") | n/a | no native review yet |
 
 Points for a native reader: the trial phrase «teste grátis» (Apple's support pages say «período experimental»);
 «segue a sua atividade» for "tracks you"; «Direitos do utilizador» as the privacy heading; «é para si?»; category

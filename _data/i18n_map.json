@@ -1027,7 +1027,8 @@
     "de": "/de/journal/",
     "en": "/journal/",
     "es": "/es/journal/",
-    "fr": "/fr/journal/"
+    "fr": "/fr/journal/",
+    "pt": "/pt/journal/"
   },
   "/journal/30-chess-mistake-motifs/": {
     "de": "/de/journal/30-chess-mistake-motifs/",
@@ -1048,7 +1049,8 @@
     "de": "/de/journal/apple-watch-hrv-without-a-baseline/",
     "en": "/journal/apple-watch-hrv-without-a-baseline/",
     "es": "/es/journal/apple-watch-hrv-without-a-baseline/",
-    "fr": "/fr/journal/apple-watch-hrv-without-a-baseline/"
+    "fr": "/fr/journal/apple-watch-hrv-without-a-baseline/",
+    "pt": "/pt/journal/apple-watch-hrv-without-a-baseline/"
   },
   "/journal/bill-splitting-math-tax-tip-shared-plates/": {
     "de": "/de/journal/bill-splitting-math-tax-tip-shared-plates/",
@@ -1059,7 +1061,8 @@
     "de": "/de/journal/choosing-a-strength-program-you-will-finish/",
     "en": "/journal/choosing-a-strength-program-you-will-finish/",
     "es": "/es/journal/choosing-a-strength-program-you-will-finish/",
-    "fr": "/fr/journal/choosing-a-strength-program-you-will-finish/"
+    "fr": "/fr/journal/choosing-a-strength-program-you-will-finish/",
+    "pt": "/pt/journal/choosing-a-strength-program-you-will-finish/"
   },
   "/journal/compress-a-video-for-email/": {
     "de": "/de/journal/compress-a-video-for-email/",
@@ -1087,25 +1090,29 @@
   "/journal/find-every-recurring-charge/": {
     "de": "/de/journal/find-every-recurring-charge/",
     "en": "/journal/find-every-recurring-charge/",
-    "fr": "/fr/journal/find-every-recurring-charge/"
+    "fr": "/fr/journal/find-every-recurring-charge/",
+    "pt": "/pt/journal/find-every-recurring-charge/"
   },
   "/journal/how-long-to-rest-between-sets/": {
     "de": "/de/journal/how-long-to-rest-between-sets/",
     "en": "/journal/how-long-to-rest-between-sets/",
     "es": "/es/journal/how-long-to-rest-between-sets/",
-    "fr": "/fr/journal/how-long-to-rest-between-sets/"
+    "fr": "/fr/journal/how-long-to-rest-between-sets/",
+    "pt": "/pt/journal/how-long-to-rest-between-sets/"
   },
   "/journal/how-many-steps-a-day-to-aim-for/": {
     "de": "/de/journal/how-many-steps-a-day-to-aim-for/",
     "en": "/journal/how-many-steps-a-day-to-aim-for/",
     "es": "/es/journal/how-many-steps-a-day-to-aim-for/",
-    "fr": "/fr/journal/how-many-steps-a-day-to-aim-for/"
+    "fr": "/fr/journal/how-many-steps-a-day-to-aim-for/",
+    "pt": "/pt/journal/how-many-steps-a-day-to-aim-for/"
   },
   "/journal/how-much-to-tip-in-the-us/": {
     "de": "/de/journal/how-much-to-tip-in-the-us/",
     "en": "/journal/how-much-to-tip-in-the-us/",
     "es": "/es/journal/how-much-to-tip-in-the-us/",
-    "fr": "/fr/journal/how-much-to-tip-in-the-us/"
+    "fr": "/fr/journal/how-much-to-tip-in-the-us/",
+    "pt": "/pt/journal/how-much-to-tip-in-the-us/"
   },
   "/journal/how-plan-mode-builds-a-checklist/": {
     "de": "/de/journal/how-plan-mode-builds-a-checklist/",
@@ -1154,7 +1161,8 @@
     "de": "/de/journal/puppy-and-kitten-vaccination-schedule/",
     "en": "/journal/puppy-and-kitten-vaccination-schedule/",
     "es": "/es/journal/puppy-and-kitten-vaccination-schedule/",
-    "fr": "/fr/journal/puppy-and-kitten-vaccination-schedule/"
+    "fr": "/fr/journal/puppy-and-kitten-vaccination-schedule/",
+    "pt": "/pt/journal/puppy-and-kitten-vaccination-schedule/"
   },
   "/journal/puzzle-game-no-ads-one-purchase/": {
     "de": "/de/journal/puzzle-game-no-ads-one-purchase/",
@@ -1163,7 +1171,8 @@
   "/journal/puzzle-games-without-ads-or-lives/": {
     "de": "/de/journal/puzzle-games-without-ads-or-lives/",
     "en": "/journal/puzzle-games-without-ads-or-lives/",
-    "fr": "/fr/journal/puzzle-games-without-ads-or-lives/"
+    "fr": "/fr/journal/puzzle-games-without-ads-or-lives/",
+    "pt": "/pt/journal/puzzle-games-without-ads-or-lives/"
   },
   "/journal/resolutions-and-the-fitness-app-trap/": {
     "de": "/de/journal/resolutions-and-the-fitness-app-trap/",
@@ -1199,7 +1208,8 @@
   "/journal/when-to-deload/": {
     "de": "/de/journal/when-to-deload/",
     "en": "/journal/when-to-deload/",
-    "fr": "/fr/journal/when-to-deload/"
+    "fr": "/fr/journal/when-to-deload/",
+    "pt": "/pt/journal/when-to-deload/"
   },
   "/journal/xiangqi-openings-explained/": {
     "de": "/de/journal/xiangqi-openings-explained/",
