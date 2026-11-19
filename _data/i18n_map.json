@@ -50,6 +50,7 @@
     "es": "/es/alternatives/bevel/",
     "fr": "/fr/alternatives/bevel/",
     "it": "/it/alternatives/bevel/",
+    "nl": "/nl/alternatives/bevel/",
     "pt": "/pt/alternatives/bevel/"
   },
   "/alternatives/brick/": {
@@ -82,6 +83,7 @@
     "es": "/es/alternatives/cloudconvert/",
     "fr": "/fr/alternatives/cloudconvert/",
     "it": "/it/alternatives/cloudconvert/",
+    "nl": "/nl/alternatives/cloudconvert/",
     "pt": "/pt/alternatives/cloudconvert/"
   },
   "/alternatives/compress-videos-resize-video/": {
@@ -114,6 +116,7 @@
     "es": "/es/alternatives/fitbod/",
     "fr": "/fr/alternatives/fitbod/",
     "it": "/it/alternatives/fitbod/",
+    "nl": "/nl/alternatives/fitbod/",
     "pt": "/pt/alternatives/fitbod/"
   },
   "/alternatives/flow-free/": {
@@ -157,6 +160,7 @@
     "en": "/alternatives/handbrake/",
     "es": "/es/alternatives/handbrake/",
     "it": "/it/alternatives/handbrake/",
+    "nl": "/nl/alternatives/handbrake/",
     "pt": "/pt/alternatives/handbrake/"
   },
   "/alternatives/hevy/": {
@@ -222,6 +226,7 @@
     "es": "/es/alternatives/lichess/",
     "fr": "/fr/alternatives/lichess/",
     "it": "/it/alternatives/lichess/",
+    "nl": "/nl/alternatives/lichess/",
     "pt": "/pt/alternatives/lichess/"
   },
   "/alternatives/magnus-trainer/": {
@@ -253,6 +258,7 @@
     "es": "/es/alternatives/opal/",
     "fr": "/fr/alternatives/opal/",
     "it": "/it/alternatives/opal/",
+    "nl": "/nl/alternatives/opal/",
     "pt": "/pt/alternatives/opal/"
   },
   "/alternatives/oura/": {
@@ -328,6 +334,7 @@
     "en": "/alternatives/stronglifts-5x5/",
     "es": "/es/alternatives/stronglifts-5x5/",
     "fr": "/fr/alternatives/stronglifts-5x5/",
+    "nl": "/nl/alternatives/stronglifts-5x5/",
     "pt": "/pt/alternatives/stronglifts-5x5/"
   },
   "/alternatives/tricount/": {
@@ -360,6 +367,7 @@
     "es": "/es/alternatives/welltory/",
     "fr": "/fr/alternatives/welltory/",
     "it": "/it/alternatives/welltory/",
+    "nl": "/nl/alternatives/welltory/",
     "pt": "/pt/alternatives/welltory/"
   },
   "/alternatives/whoop/": {

@@ -215,3 +215,84 @@ The items in nl-writer-brief.md «Reply with», plus: the final H1 and seo.title
 you dropped because Dutch data was missing, the competitor prices and ratings you used (with the store-file row), every
 place where the Dutch store contradicted the English page, and whether you ran the copy-editing skill in full. Also write
 these notes to `$S/notes/<slug>.md` for the reviewer.
+
+---
+
+## Batch 2 (2026-11-19)
+
+Same rules as batch 1, with these differences. Research rows: «Batch 2» at the bottom of the research file. Store and web
+data: `/Users/anttiaittamaa/Downloads/githubcode/nl-tier3-store-batch2-2026-11-19.md`. Scratch folder for notes:
+`/private/tmp/claude-501/-Users-anttiaittamaa-Downloads-githubcode/f5e34407-a458-4d5c-863d-92d8a8cb7431/scratchpad/nl-t3b2/`
+(write your notes to `notes/<slug>.md` there). The batch 1 Dutch pages in `nl/alternatives/` are reviewed and live: read one
+or two for tone and the Netherlands-data patterns (rating sentence, check-date line, «Transparantie:» disclosure), and reuse
+their wording where it fits. Read the «From the Tier 3 reviews» tells in `_i18n/nl.md`: they come from batch 1.
+
+| English source | Write to | Our app | Primary query | Structural model |
+|---|---|---|---|---|
+| alternatives/opal.html | nl/alternatives/opal.html | EarnLock | `opal app gratis` | it/alternatives/opal.html |
+| alternatives/bevel.html | nl/alternatives/bevel.html | Observa | `bevel app ervaringen` | it/alternatives/bevel.html |
+| alternatives/welltory.html | nl/alternatives/welltory.html | Observa | `welltory app kosten` | it/alternatives/welltory.html |
+| (local-only) | nl/alternatives/sleep-cycle-alternatief.html | Observa | `sleep cycle gratis` | it/alternatives/alternativa-a-sleep-cycle.html |
+| alternatives/lichess.html | nl/alternatives/lichess.html | Chessful | `chess com of lichess` | it/alternatives/lichess.html |
+| (local-only) | nl/alternatives/tikkie-alternatief.html | RightSplit | `tikkie alternatief` | nl/alternatives/wiebetaaltwat-alternatief.html |
+| alternatives/fitbod.html | nl/alternatives/fitbod.html | GymLogger X | `fitbod abonnement` | it/alternatives/fitbod.html |
+| alternatives/stronglifts-5x5.html | nl/alternatives/stronglifts-5x5.html | GymLogger X | `stronglifts 5x5 schema` | es/alternatives/stronglifts-5x5.html |
+| alternatives/handbrake.html | nl/alternatives/handbrake.html | MediaKit | `alternatief voor handbrake` | it/alternatives/handbrake.html |
+| alternatives/cloudconvert.html | nl/alternatives/cloudconvert.html | MediaKit | `cloudconvert betrouwbaar` | it/alternatives/cloudconvert.html |
+
+**Primaries and titles must stay distinct** from each other and from batch 1: Observa now has five pages (whoop, oura,
+bevel, welltory, sleep-cycle-alternatief); Chessful two (chess-com, lichess: chess-com owns `chess.com abonnement`, Lichess
+owns `chess com of lichess`); EarnLock two (forest, opal); MediaKit three (pdf-expert, handbrake, cloudconvert); RightSplit
+four; GymLogger X two. Extra collisions: `beste schaak app` (chess guide), `gratis gym app` (workout guide), `gym app apple
+watch`, `apple watch krachttraining`, `workout app apple watch` (GymLogger X app page), `slaap app apple watch`, `slaapscore
+apple watch` (Observa), `video comprimeren iphone`, `heic naar jpg`, `pdf comprimeren` (MediaKit), `schermtijd beperken
+iphone` (screen-time guide).
+
+### Per page
+
+- **opal**: rows are labelled (Weekly € 4,99 and € 9,99, Monthly € 19,99 to € 22,99, Yearly € 99,99, «Opal Pro Yearly» € 79,99;
+  «Opal Pro Subscription» € 49,99 has no period). Stay consistent with how `nl/guides/schermtijd-beperken-iphone.html` and
+  `nl/alternatives/forest.html` describe Opal and EarnLock. ISSUES I-0369 also names opal.html's Apple Watch row: follow the
+  Italian page.
+- **bevel**: Bevel Pro Monthly € 17,99, Annual € 99,99, plus «Bevel Intelligence-credits» packs (€ 5,99 to € 59,99). The Dutch
+  listing is in Dutch (NL UI). Observa rules as batch 1 (HRV (SDNN), «Gereedheid», «zonder verplicht abonnement»).
+- **welltory**: rows name their product («1-Year Premium» € 89,99, «Welltory Premium (1 year)» € 101,99, «Lifetime Premium»
+  € 349,99, monthly rows € 13,49). Welltory measures with the camera per its listing: describe only what the listing says.
+  Keep every health caveat exactly as strong as English; no medical claims.
+- **sleep-cycle-alternatief** (local-only): front matter as for the batch 1 local-only pages (permalink
+  `/nl/alternatives/sleep-cycle-alternatief/`). Sleep Cycle facts only from its Dutch description and rows (Premium rows have no
+  period: give the range «van € 2,99 tot € 45,99»). Observa facts from `nl/apps/observa/index.md` and
+  `~/Downloads/HealthLogger/APP_BLUEPRINT.md` §10. **Observa has no alarm and records no sound**: never imply it replaces Sleep
+  Cycle's alarm or snore recording; say plainly when Sleep Cycle is the better choice. No medical claims. Keywords from the
+  research row (`sleep cycle gratis`, `kan je sleep cycle gratis gebruiken`, `sleep cycle abonnement`, `abonnement sleep cycle
+  opzeggen`, `sleep cycle nederlands`, `sleep cycle apple watch`).
+- **lichess**: free, no in-app rows, NL UI, ★54 4,2. Must stay consistent with `nl/alternatives/chess-com.html` and
+  `nl/guides/best-chess-apps-iphone.html` (both reviewed). Chessful tier «Pro» as the Dutch app page writes it; sign-in is
+  «inloggen», never «aanmelden».
+- **tikkie-alternatief** (local-only, permalink `/nl/alternatives/tikkie-alternatief/`): Tikkie facts only from its Dutch
+  description (payment requests via a link, paid back with iDEAL | Wero, no transaction costs per the listing, a Dutch bank
+  account and a Dutch, Belgian or German phone number needed, «Groepie» for shared group expenses where friends need the app,
+  Tikkie Terug cashback, a business version for ABN AMRO business customers). Its security sentence («Je gegevens zijn dus
+  veilig») is its own marketing: never repeat it as a fact. The honest angle: **RightSplit is not a payment app and never moves
+  money**. It works out who owes what from a receipt (per item, tax and tip) and sends each person their amount, with a payment
+  link only for PayPal.me or Revolut as primary method (Venmo and Wise open your profile; IBAN and Apple Pay add no link; no
+  iDEAL link): see `nl/apps/rightsplit/index.md` and `~/Downloads/splitit/APP_BLUEPRINT.md` §10. Say plainly that if you want
+  someone to pay you with iDEAL, Tikkie (or your bank's own payment request) is the tool, and that RightSplit is for splitting
+  the bill first; many people use both. For «tikkie alternatief buitenland/belgie» searchers: say only what the listing says
+  (a Dutch bank account is needed; Belgian and German phone numbers are accepted); never name other payment services as
+  alternatives (no source). Link the Dutch WieBetaaltWat page once (plain href) because Tikkie's Groepie is a shared group list.
+  Keywords: `tikkie alternatief`, `alternatief voor tikkie`, `tikkie alternatief buitenland`, `tikkie of betaalverzoek`.
+- **fitbod**: rows Monthly Plan € 13,49 to € 17,99, «A Year of Fitbod Elite» € 81,99 and € 99,99, «(Legacy Pricing)» rows: leave
+  the legacy rows out or say they exist. GymLogger X facts from `nl/apps/gymlogger-x/index.md` (reviewed Dutch UI names:
+  ‘Krachtvoortgang’, ‘Wordt bewaakt’, ‘Plateau voorspeld’) and `_apps/gymlogger-x.md`; prices via `{P_…@gymlogger-x}` tokens.
+  Stay consistent with `nl/guides/workout-app-without-subscription.html` (its Fitbod price sentence).
+- **stronglifts-5x5**: rows labelled (Pro Weekly € 4,99, Monthly € 11,99, Quarterly € 29,99, Yearly € 59,99, «5 Years» € 199,99
+  and € 249,99). NL UI. Dutch query `stronglifts 5x5 schema`: describe the 5x5 program only as the English page does (no new
+  training advice).
+- **handbrake**: not on the App Store. Facts from the store file's handbrake section (handbrake.fr, fetched today): free,
+  open source, no account, Windows/Mac/Linux, no iPhone app. No «App Store» claim and no rating for HandBrake. The Dutch
+  query `handbrake gratis downloaden nederlands`: never claim a Dutch interface (unknown).
+- **cloudconvert**: a web service (plus an English-only iPhone app with ★6: no rating sentence). Free plan facts verbatim from
+  the store file (€ 0, 10 conversion credits per day, 1 GB, 5 minutes); paid amounts are not in the fetched page: keep them
+  qualitative. Files are uploaded to CloudConvert's servers; MediaKit converts on the device: that is the comparison. The
+  query `cloudconvert betrouwbaar`: answer only with facts from the English page and the pricing page (no security verdict).

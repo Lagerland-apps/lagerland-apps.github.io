@@ -55,3 +55,21 @@ data for each competitor, checked today), `/Users/anttiaittamaa/Downloads/github
 
 Per page: a short change table (field | before | after | why), fact-diff result, and new Dutch tells for the sheet.
 Then English-side issues for ISSUES.md (one line each, with file).
+
+## Batch 2 (2026-11-19)
+
+Same method. Store and web data: `/Users/anttiaittamaa/Downloads/githubcode/nl-tier3-store-batch2-2026-11-19.md`. Writer rules:
+the «Batch 2» section of nl-tier3-brief.md. Writers' notes:
+`/private/tmp/claude-501/-Users-anttiaittamaa-Downloads-githubcode/f5e34407-a458-4d5c-863d-92d8a8cb7431/scratchpad/nl-t3b2/notes/<slug>.md`.
+Extra checks:
+- HandBrake and CloudConvert are a desktop app and a web service: facts only from the store file's web sections; no App Store
+  claim or rating for HandBrake; no CloudConvert rating (★6); no paid CloudConvert amounts (not in the fetched page); no
+  security verdict for «cloudconvert betrouwbaar».
+- Tikkie page: RightSplit never moves money; payment links exactly as the blueprint (PayPal.me and Revolut prefill; Venmo and
+  Wise open the profile; IBAN and Apple Pay no link; no iDEAL); Tikkie's «veilig» sentence never repeated as fact; no other
+  payment services named; honest «Tikkie is the tool for getting paid» framing kept.
+- Sleep Cycle page: Observa has no alarm and records no sound; no medical claims; Premium rows have no period.
+- Welltory, Bevel, Sleep Cycle: health caveats exactly as strong as English; Observa HRV (SDNN), «Gereedheid»,
+  «zonder verplicht abonnement».
+- Distinct primaries and seo.title patterns across all 20 Dutch comparisons (batch 1 is in nl/alternatives/ too).
+- Every batch 1 tell («From the Tier 3 reviews» in nl.md) applies: check for each.

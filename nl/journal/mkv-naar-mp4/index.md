@@ -65,7 +65,7 @@ Gebruik je VLC al op je computer, dan converteer je zonder iets uit te geven. De
 
 ## Online converters en grote bestanden
 
-Een online converter ontvangt je bestand op zijn servers, zet het om en stuurt het terug. Bij een groot MKV-bestand moet je het dus eerst helemaal uploaden, en de inhoud verlaat je apparaat. Twee pagina’s op deze site gaan dieper in op die afweging: het artikel over [HEIC-foto’s converteren zonder ze naar een server te sturen](/journal/your-photos-shouldnt-ride-the-elevator/){: hreflang="en"} (in het Engels) en de [vergelijking met CloudConvert](/alternatives/cloudconvert/){: hreflang="en"} (in het Engels).
+Een online converter ontvangt je bestand op zijn servers, zet het om en stuurt het terug. Bij een groot MKV-bestand moet je het dus eerst helemaal uploaden, en de inhoud verlaat je apparaat. Twee pagina’s op deze site gaan dieper in op die afweging: het artikel over [HEIC-foto’s converteren zonder ze naar een server te sturen](/journal/your-photos-shouldnt-ride-the-elevator/){: hreflang="en"} (in het Engels) en de [vergelijking met CloudConvert](/nl/alternatives/cloudconvert/).
 
 ## MKV naar MP4 met MediaKit
 

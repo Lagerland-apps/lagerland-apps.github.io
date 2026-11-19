@@ -126,7 +126,7 @@ Lineaire progressie is het enige model uit de tweede tabel dat je uit je hoofd k
 
 Geen van beide past bij iedereen, en een aantal concurrenten lost problemen op die mijn apps laten liggen.
 
-Sneuvelen je schema’s omdat het *kiezen* ervan het probleem is, dan is [Fitbod](/alternatives/fitbod/){: hreflang="en"} (in het Engels) de betere tool. Fitbod stelt elke training voor je samen: je opent de app en ziet wat je vandaag moet doen, afgestemd op gisteren. Betere sjablonen in een handmatig logboek vervangen dat niet. De keerzijde is dat je alleen met een abonnement kunt betalen en de redenering achter de keuzes niet kunt inzien.
+Sneuvelen je schema’s omdat het *kiezen* ervan het probleem is, dan is [Fitbod](/nl/alternatives/fitbod/) de betere tool. Fitbod stelt elke training voor je samen: je opent de app en ziet wat je vandaag moet doen, afgestemd op gisteren. Betere sjablonen in een handmatig logboek vervangen dat niet. De keerzijde is dat je alleen met een abonnement kunt betalen en de redenering achter de keuzes niet kunt inzien.
 
 Gaat het mis bij de stok achter de deur, dan heeft [Hevy](/nl/alternatives/hevy/) een royale gratis versie en een sociale feed die sommige mensen op donderdag toch naar de sportschool krijgt. Ik bouw geen sociale functies, dus voor die mensen ben ik de verkeerde studio. [Strong](/alternatives/strong-workout-app/){: hreflang="en"} (in het Engels) is de meest gevestigde logboekapp in dit rijtje, met een Apple Watch-app die volledig zelfstandig werkt, en [Caliber](/alternatives/caliber/){: hreflang="en"} (in het Engels) koppelt je aan een menselijke coach: de enige optie in dit rijtje die je schema kan aanpassen als je week verandert.
 
