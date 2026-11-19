@@ -46,7 +46,6 @@ seo:
     - "giochi senza pubblicità iphone"
     - "giochi offline iphone"
     - "giochi rilassanti iphone"
-    - "migliori giochi rompicapo iphone"
     - "gioco di logica bilancia"
 
 hero:

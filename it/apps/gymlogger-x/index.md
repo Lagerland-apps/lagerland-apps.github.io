@@ -60,7 +60,6 @@ seo:
     - app allenamento palestra apple watch
     - app creare scheda palestra
     - app scheda palestra iphone
-    - app scheda palestra gratis
     - programmi allenamento palestra
     - app allenamento apple watch
     - app per segnare la scheda palestra

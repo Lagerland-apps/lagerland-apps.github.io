@@ -11,6 +11,8 @@ reviewing any Italian page. Every decision a translator would otherwise make dif
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console has no Italy query data (see Keyword research) |
 | Tier 1 pages | done 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/it.yml`), /it/llms.txt, /it/llms-full.txt, 21 OG cards. Six batch commits, then go-live |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not pushed) |
+| Tier 2 | batch 1 done 2026-11-19 (not pushed): both hubs, chess, logic puzzles, workout without subscription, 3 audience pages, local-only /it/guides/limitare-tempo-di-utilizzo-iphone/ and /it/guides/come-mettere-conto-alla-rovescia-iphone/. Left for batch 2: shogi, xiangqi, bill tracker (needs a local rewrite: Rocket Money, Monarch, Copilot not sold in Italy). for/indie-ios-developers stays English-only (developers search in English). Research: ~/Downloads/githubcode/it-tier2-research-2026-11-19.md; brief: `_i18n/it-tier2-brief.md` |
+| Stale pages | 0 (2026-11-19, `i18n.py stale`); no wording-only changes waiting |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 69.5 s wall before Italian pages; 78 to 81 s with all 69 Italian Tier 1 pages (2026-11-19, clean worktree, other sessions' agents running) |
 
@@ -220,6 +222,23 @@ July 2026 (country totals only: Italy 9 clicks, 1,432 impressions in three month
 | Xiangqiful | `scacchi cinesi` | `xiangqi`, `scacchi cinesi regole`, `come si gioca a scacchi cinesi` |
 | Clippet (unreleased, unlisted) | `cronologia appunti iphone` | `cronologia appunti mac`, `clipboard manager mac`, `gestore appunti` |
 
+Tier 2 (2026-11-19, from it-tier2-research-2026-11-19.md). Guides own the «migliore/migliori» list and how-to queries;
+app pages keep the app queries (Tare gave up `migliori giochi rompicapo iphone`, GymLogger X `app scheda palestra gratis`,
+EarnLock `tempo di utilizzo iphone`).
+
+| Page | Primary query | Secondary queries |
+|---|---|---|
+| /it/guides/ | `guide app iphone` (brand-led hub) | the five guides' primaries |
+| /it/for/ | none (hub) | `lavoro a turni e salute`, `migliore app salute apple watch`, `migliori app produttività iphone` |
+| best-chess-apps-iphone | `migliore app scacchi iphone` | `migliori app scacchi gratis`, `migliore app per imparare scacchi`, `migliore app scacchi offline` |
+| best-logic-puzzle-games-iphone | `migliori giochi di logica iphone` | `giochi di logica iphone gratis`, `migliori giochi rompicapo iphone gratis`, `giochi di logica adulti app` |
+| workout-app-without-subscription | `app palestra gratis senza abbonamento` | `app scheda palestra gratis`, `migliore app scheda palestra gratis`, `app allenamento palestra gratis` |
+| for/shift-workers | `lavoro a turni e salute` | `lavoro su turni e sonno` (the page does not answer night-work health risks, so `lavoro notturno fa male alla salute` is not targeted) |
+| for/apple-health-power-users | `migliore app salute apple watch` | `app monitoraggio salute apple watch`, `app sonno apple watch gratis` |
+| for/calm-productivity | `migliori app produttività iphone` | `app per organizzarsi la vita`, `app per combattere la procrastinazione` |
+| local-only limitare-tempo-di-utilizzo-iphone | `come limitare il tempo di utilizzo di un app su iphone` | `tempo di utilizzo iphone`, `come ridurre il tempo di utilizzo del telefono iphone`, `app per smettere di guardare il telefono` |
+| local-only come-mettere-conto-alla-rovescia-iphone | `come mettere un conto alla rovescia su iphone` | `come aggiungere un conto alla rovescia su iphone`, `conto alla rovescia widget iphone` |
+
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
 - Price footnote, one sentence on every page: «I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App
@@ -270,6 +289,9 @@ July 2026 (country totals only: Italy 9 clicks, 1,432 impressions in three month
 
 Not researched yet. Candidates seen in the iTunes Search API results during keyword research are listed in
 it-keywords.md per page (for example Blocus for EarnLock, Billo for AllPaid).
+Tier 2 research (2026-11-19) adds: Italian roster apps Supershift (★10 768), Calendario di Lavoro per turni (★9482) and
+Tabella Turni Facile (★7008) for AfterShift; Italian budget apps for the bill-tracker rewrite: Gestione delle spese by Orange
+Dog (★18 135), Monefy (★7028), Spendee (★4167), Wallet by BudgetBakers (★2883) (bank sync not checked).
 
 ## Tells to cut in Italian (TRANSLATION.md 8.2, plus what reviews find)
 
@@ -302,6 +324,21 @@ H1s; gendered address («Sei uno sviluppatore?», «Bloccato?», «ti sei svegli
 ore» («da 7 a 9 ore»); over-quoting one-word labels; a meta description opening with «Cerchi…?»; slogan add-ons after a
 colon in privacy titles («: senza tracciamento»); dropping the defining noun (Tare is a balance game).
 
+Found in the Tier 2 reviews (2026-11-19): «lavorare insieme» for apps that work together («funzionare insieme»); «dormire a
+pezzi» («a più riprese»); «un solo buon sonno» («una buona dormita»); «come ti sta trattando»; «fare chiamate di rete»
+(«effettuare connessioni di rete»); «l’analisi si fa» («avviene»); «la scadenza» for a countdown; «non facciamo promesse»
+for "make no claims"; quoting one-word tab names (“Oggi”); «paramedici» («soccorritori»); bare «serie» for a streak
+before «serie di giorni consecutivi» has been said once; raw-keyword seo.titles («Migliore app salute Apple Watch:»);
+«per uso» in titles; «port» for an app version; «bolletta del server»; «non ti sono rimasti addosso» ("didn't stick");
+«e basta» for "only"; a meta description opening with a keyword question; «quasi tutto» / «chi migliora … di solito» for
+"most"; an Italian store title used as the product name (write the English name, the store title once); «cambia quello
+che costa aprire» («rende più faticoso aprire»); «saltare i limiti»; «usare “Usa …”» (Apple's verb «attiva»); «non lo
+supponiamo»; «Apple propone» for Apple's «ad esempio, puoi…»; added softeners on competitor claims («con facilità»);
+«una app»; «del gruppo» for a set that includes our own app; one-line closers after a card; «portare avanti» for
+carry-forward («sposta a oggi»); «a vita a {price}» («a vita per»); «per ora» / «non ancora in italiano» (an implied
+translation promise); masculine plural job nouns as an audience («Infermieri, soccorritori»: «chi lavora in corsia o in
+ambulanza»). Writers also missed U+00A0 before € and saved empty 301 stubs from apps.apple.com (use `curl -sL`).
+
 ## House rules carried over
 
 - No public roadmaps or dated promises. Describe what an app does today.
@@ -330,6 +367,10 @@ reviewers: home, all 21 app pages, about. Native review: none yet, for every pag
 | 21 privacy policies + Clippet terms | 7 writers | 4 reviewers, sentence by sentence, then one term set applied to all | n/a | no native review yet |
 | about, support hub, transparency | 3 writers | 1 reviewer | about: 1 shift fixed | no native review yet |
 | /it/llms.txt, /it/llms-full.txt | 1 writer | 1 reviewer | n/a | no native review yet |
+| Tier 2 batch 1: 3 guides (chess, logic, workout) | 3 writers (Sonnet) | 1 reviewer; Strong, Hevy, Fitbod euro prices re-fetched and restored | n/a | no native review yet |
+| Tier 2 batch 1: 3 audience pages | 3 writers (Sonnet) | 1 reviewer | n/a | no native review yet |
+| Tier 2 batch 1: 2 local-only guides (screen time, countdown) | 2 writers (Sonnet), sources saved | 1 reviewer, every Apple page and listing re-fetched, claim by claim | n/a | no native review yet |
+| Tier 2 batch 1: both hubs, llms.txt lines, inbound-link sentences | 1 writer (Sonnet) + main session | 1 wiring reviewer | n/a | no native review yet |
 
 ## Screenshots
 

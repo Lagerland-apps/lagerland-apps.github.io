@@ -1,0 +1,145 @@
+---
+layout: default
+ref: /for/shift-workers/
+permalink: /it/for/shift-workers/
+translated_from: 2026-11-19
+title: "Le app iPhone per sonno e recupero di chi lavora a turni"
+quick_answer: "Per chi lavora a turni, con l’iPhone si parte da AfterShift: misura il sonno dalla fine di un turno all’inizio del successivo, pisolini compresi, riempie la turnazione per 8 settimane a partire da un ciclo ricorrente e regola lo stop alla caffeina e i promemoria di pisolino sul tuo prossimo turno. Aggiungi Observa per un punteggio di Prontezza quotidiano ricavato da sonno, HRV (SDNN) e frequenza cardiaca a riposo dell’app Salute, Taskful Day per un pianificatore della giornata in cui le attività non finite passano a oggi, e AllPaid per i promemoria delle bollette senza accesso alla banca. Nessuna delle quattro richiede un account e nessuna invia i tuoi dati a Lagerland Apps."
+seo:
+  title: "Lavoro a turni e salute: app iPhone per sonno e recupero"
+  description: "App iPhone per lavoro a turni e salute: sonno misurato da un turno all’altro, un punteggio di Prontezza quotidiano e nessun account da creare."
+  keywords:
+    - lavoro a turni e salute
+    - lavoro su turni e sonno
+    - come dormire dopo un turno di notte
+    - non riesco a dormire dopo il turno di notte
+    - ritmo circadiano e turni notturni
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign shift_apps_slugs = "aftershift,observa,taskful-day,allpaid" | split: "," -%}
+{%- assign shift_apps = '' | split: '' -%}
+{%- for slug in shift_apps_slugs -%}
+  {%- assign match = site.apps | where: "slug", slug | first -%}
+  {%- if match and match.status == "live" -%}{%- assign shift_apps = shift_apps | push: match -%}{%- endif -%}
+{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/it/for/shift-workers/#webpage",
+  "url": "{{ site.url }}/it/for/shift-workers/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/it/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "it",
+  "datePublished": "2026-11-19",
+  "audience": {
+    "@type": "PeopleAudience",
+    "audienceType": "Chi lavora a turni, personale infermieristico, soccorritori, vigili del fuoco e chiunque abbia orari a rotazione"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/it/" },
+      { "@type": "ListItem", "position": 2, "name": "Per chi lavora a turni", "item": "{{ site.url }}/it/for/shift-workers/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "it",
+  "mainEntity": [
+    { "@type": "Question", "name": "Qual è la migliore app per il sonno su iPhone per chi lavora a turni?", "acceptedAnswer": { "@type": "Answer", "text": "AfterShift è quella che abbiamo creato per questo. La maggior parte dei tracker del sonno conta la giornata da mezzanotte a mezzanotte, e così spezza in due il sonno di chi lavora di notte. AfterShift misura il sonno dalla fine di un turno all’inizio del successivo, conta i pisolini in quella finestra e regola lo stop alla caffeina e i promemoria di pisolino sul tuo prossimo turno. La turnazione, l’importazione del sonno e i promemoria sono gratuiti; stato di recupero, punteggio del sonno, punteggio recupero turno e tendenze fanno parte di AfterShift Premium." } },
+    { "@type": "Question", "name": "Come tengo traccia del mio recupero se faccio i turni di notte come infermiere o infermiera?", "acceptedAnswer": { "@type": "Answer", "text": "Tieni la turnazione in AfterShift e lascia che il sonno, pisolini compresi, si importi dall’app Salute. Registra lì anche la caffeina e i pisolini extra. Poi aggiungi Observa se vuoi una lettura quotidiana del tuo corpo: calcola un punteggio di Prontezza da sonno, HRV (SDNN), frequenza cardiaca a riposo e carico di allenamento rispetto al tuo riferimento personale, e “Perché questo punteggio?” indica cosa l’ha fatto cambiare. Ti serve un Apple Watch o un’app per il sonno che salvi il sonno nell’app Salute." } },
+    { "@type": "Question", "name": "Queste app sono gratuite?", "acceptedAnswer": { "@type": "Answer", "text": "Tutte e quattro si scaricano gratis e ognuna ha un livello gratuito che puoi continuare a usare. In AfterShift la turnazione, l’importazione del sonno e i promemoria regolati sui turni sono gratuiti, e Premium aggiunge i punteggi di recupero e le tendenze. In Observa il punteggio di Prontezza quotidiano, il Punteggio sonno e la lettura dello stress sono gratuiti, e Premium aggiunge le tendenze a lungo termine, l’età funzionale, la cronologia ECG e l’analisi dell’allenamento. Taskful Day è gratuita per le tue prime 50 attività, e AllPaid per un massimo di 3 bollette. Nessuna delle quattro richiede un account." } },
+    { "@type": "Question", "name": "Queste app vanno bene se cambio ciclo di turni?", "acceptedAnswer": { "@type": "Answer", "text": "Sì. In AfterShift scegli uno dei sette cicli predefiniti, come 4 in turno / 4 di riposo o Panama (2-2-3), oppure crei un tuo ciclo fino a 28 giorni, e l’app riempie la turnazione per 8 settimane. Dai tu un nome ai tipi di turno e ai giorni di riposo, quindi turni lunghi, notti e reperibilità trovano tutti posto. Quando la turnazione cambia, tieni premuto su un turno per allungarlo, spostarlo o scambiarlo. Taskful Day pianifica un giorno alla volta, e le attività che non hai finito passano a oggi alla prossima apertura." } },
+    { "@type": "Question", "name": "Queste app si sincronizzano con l’Apple Watch?", "acceptedAnswer": { "@type": "Answer", "text": "Observa e AfterShift leggono entrambe l’app Salute, quindi quello che il tuo Apple Watch registra lì arriva a loro senza altri abbinamenti. AfterShift legge il tuo sonno. Observa legge sonno, frequenza cardiaca, HRV e allenamenti, e ha anche una sua app per Apple Watch con la Prontezza e il consiglio sull’allenamento. Anche Taskful Day ha un’app per Apple Watch, che funziona insieme all’app per iPhone. AfterShift e AllPaid non hanno un’app per Apple Watch." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Personale infermieristico · soccorritori · vigili del fuoco · turni a rotazione</p>
+    <h1 class="h1">Le app iPhone per sonno e recupero<br><span class="gradient-text">di chi lavora a turni.</span></h1>
+    <p class="lead">
+      La maggior parte delle app per il sonno ti misura su un orario d’ufficio, dalle 9 alle 17. Se fai turni a rotazione, lavori di notte o dormi a più riprese, contano il tuo sonno nella finestra sbagliata e ti fissano obiettivi che non si adattano alla tua settimana. AfterShift parte invece dalla tua turnazione, e altre tre app la completano.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">Vedi le app</a>
+      <a class="btn btn-secondary" href="#faq">Domande frequenti</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Perché la maggior parte delle app per il sonno non va bene per chi lavora a turni?</h2>
+  <p class="lead">Partono dal presupposto che il sonno avvenga una volta al giorno, di notte, in un unico blocco, e lo contano da mezzanotte a mezzanotte. Tu fai un pisolino prima di un turno di notte, dormi in due tempi dopo, e la tua “giornata” comincia quando è finito l’ultimo turno. Un tracker costruito sugli orari d’ufficio spezza quel sonno su due date, così una sola buona dormita può sembrare due notti brevi.</p>
+  <p class="lead">AfterShift misura invece la finestra tra un turno e l’altro, e le altre tre app si occupano di ciò che sfugge quando gli orari cambiano: leggere il tuo recupero, pianificare le tue ore di veglia e ricordarti le bollette.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Le app</p>
+    <h2 class="h2">Quattro app private che funzionano insieme</h2>
+    <p class="lead">Usale insieme o separatamente. Tutte e quattro vengono da Lagerland Apps, uno studio finlandese di una sola persona, attento alla privacy. Nessuna ti chiede di creare un account e nessuna ci invia i tuoi dati.</p>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in shift_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Come funzionano insieme queste app per chi fa i turni?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">1. AfterShift: la turnazione</div>
+      <div class="card-text">Imposta il tuo ciclo una volta sola e AfterShift riempie la turnazione per 8 settimane. Dai un nome a tutti i tipi di turno e ai giorni di riposo che usa il tuo posto di lavoro, turni lunghi e notti compresi. Il sonno si importa dall’app Salute, con i pisolini segnati come tali, e i promemoria di rilassamento, di stop alla caffeina e di pisolino sono regolati sul tuo prossimo turno. Premium aggiunge lo stato di recupero per il prossimo turno, il punteggio del sonno e il punteggio recupero turno.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">2. Observa: l’interpretazione</div>
+      <div class="card-text">Observa legge sonno, HRV (SDNN), frequenza cardiaca a riposo e allenamenti che il tuo Apple Watch salva nell’app Salute, e ne ricava un punteggio di Prontezza quotidiano, un Punteggio sonno e una lettura dello stress, con Prontezza e stress misurati rispetto al tuo riferimento personale. Tocca “Perché questo punteggio?” per vedere cosa ha fatto cambiare la tua Prontezza. I punteggi quotidiani sono gratuiti.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">3. Taskful Day: la pianificazione</div>
+      <div class="card-text">Taskful Day pianifica un giorno alla volta e non dà per scontato quando comincia quel giorno. Le attività che non hai fatto prima di una serie di notti passano a oggi quando apri l’app, così l’elenco non diventa mai un cumulo rosso di attività in ritardo. Aggiungi un’attività scrivendo una frase, a voce o con Siri.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">4. AllPaid: le bollette</div>
+      <div class="card-text">Quando il tuo sonno si sposta ogni settimana, è facile perdere di vista le scadenze. Inserisci una volta sola affitto, utenze e abbonamenti: AllPaid ti avvisa prima di ogni scadenza e, quando segni una bolletta come pagata, la sposta alla scadenza successiva. Non ti chiede mai le credenziali della banca ed è gratuita per un massimo di 3 bollette.</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center">
+    <p class="overline">Domande</p>
+    <h2 class="h2">Domande frequenti</h2>
+  </div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Qual è la migliore app per il sonno su iPhone per chi lavora a turni?</summary><div class="faq-a">AfterShift è quella che abbiamo creato per questo. La maggior parte dei tracker del sonno conta la giornata da mezzanotte a mezzanotte, e così spezza in due il sonno di chi lavora di notte. AfterShift misura il sonno dalla fine di un turno all’inizio del successivo, conta i pisolini in quella finestra e regola lo stop alla caffeina e i promemoria di pisolino sul tuo prossimo turno. La turnazione, l’importazione del sonno e i promemoria sono gratuiti; stato di recupero, punteggio del sonno, punteggio recupero turno e tendenze fanno parte di AfterShift Premium.</div></details>
+    <details class="faq-item"><summary>Come tengo traccia del mio recupero se faccio i turni di notte come infermiere o infermiera?</summary><div class="faq-a">Tieni la turnazione in AfterShift e lascia che il sonno, pisolini compresi, si importi dall’app Salute. Registra lì anche la caffeina e i pisolini extra. Poi aggiungi Observa se vuoi una lettura quotidiana del tuo corpo: calcola un punteggio di Prontezza da sonno, HRV (SDNN), frequenza cardiaca a riposo e carico di allenamento rispetto al tuo riferimento personale, e “Perché questo punteggio?” indica cosa l’ha fatto cambiare. Ti serve un Apple Watch o un’app per il sonno che salvi il sonno nell’app Salute.</div></details>
+    <details class="faq-item"><summary>Queste app sono gratuite?</summary><div class="faq-a">Tutte e quattro si scaricano gratis e ognuna ha un livello gratuito che puoi continuare a usare. In AfterShift la turnazione, l’importazione del sonno e i promemoria regolati sui turni sono gratuiti, e Premium aggiunge i punteggi di recupero e le tendenze. In Observa il punteggio di Prontezza quotidiano, il Punteggio sonno e la lettura dello stress sono gratuiti, e Premium aggiunge le tendenze a lungo termine, l’età funzionale, la cronologia ECG e l’analisi dell’allenamento. Taskful Day è gratuita per le tue prime 50 attività, e AllPaid per un massimo di 3 bollette. Nessuna delle quattro richiede un account.</div></details>
+    <details class="faq-item"><summary>Queste app vanno bene se cambio ciclo di turni?</summary><div class="faq-a">Sì. In AfterShift scegli uno dei sette cicli predefiniti, come 4 in turno / 4 di riposo o Panama (2-2-3), oppure crei un tuo ciclo fino a 28 giorni, e l’app riempie la turnazione per 8 settimane. Dai tu un nome ai tipi di turno e ai giorni di riposo, quindi turni lunghi, notti e reperibilità trovano tutti posto. Quando la turnazione cambia, tieni premuto su un turno per allungarlo, spostarlo o scambiarlo. Taskful Day pianifica un giorno alla volta, e le attività che non hai finito passano a oggi alla prossima apertura.</div></details>
+    <details class="faq-item"><summary>Queste app si sincronizzano con l’Apple Watch?</summary><div class="faq-a">Observa e AfterShift leggono entrambe l’app Salute, quindi quello che il tuo Apple Watch registra lì arriva a loro senza altri abbinamenti. AfterShift legge il tuo sonno. Observa legge sonno, frequenza cardiaca, HRV e allenamenti, e ha anche una sua app per Apple Watch con la Prontezza e il consiglio sull’allenamento. Anche Taskful Day ha un’app per Apple Watch, che funziona insieme all’app per iPhone. AfterShift e AllPaid non hanno un’app per Apple Watch.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Si parte?</p>
+  <h2 class="h2">Comincia da AfterShift</h2>
+  <p class="lead">Inserisci il tuo ciclo una volta sola e AfterShift riempie le prossime 8 settimane. Aggiungi le altre app quando ti servono.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/aftershift/" %}"{% if l_en %} hreflang="en"{% endif %}>Scopri AfterShift{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Vedi tutte le app{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

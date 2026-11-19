@@ -14,7 +14,6 @@ seo:
   keywords:
     - bloccare app iphone
     - come bloccare app iphone
-    - tempo di utilizzo iphone
     - limite di tempo iphone
     - app per limitare l’uso del telefono
     - come limitare uso smartphone
@@ -216,7 +215,7 @@ faq:
   - q: "Cos’è EarnLock?"
     a: "EarnLock è un’app per iPhone che tiene bloccate le app che ti distraggono finché non raggiungi un obiettivo di attività giornaliero, misurato da Salute. A metà obiettivo se ne apre una parte per circa un’ora, una volta al giorno, e l’obiettivo pieno le apre tutte fino a mezzanotte. Bloccare un’app o una categoria con un obiettivo di passi è gratis per sempre. Premium aggiunge app illimitate, minuti di attività e calorie attive, l’app per Apple Watch, un’attività in tempo reale, pianificazioni intelligenti e analisi Settimana e Mese, a {P_MONTHLY}/mese o {P_YEARLY}/anno (entrambi con {TRIAL}) oppure {P_LIFETIME} una sola volta. Non c’è nessun account e i tuoi dati restano sul tuo iPhone."
   - q: "In cosa EarnLock è diversa da Opal, one sec, ScreenZen o Forest?"
-    a: "Quelle app mettono una pausa, un timer o un tocco tra te e l’app. EarnLock ci mette un obiettivo di attività giornaliero, misurato da Salute: a metà strada se ne apre una parte per circa un’ora, una volta al giorno, e l’obiettivo pieno le apre tutte fino a mezzanotte. Parte inoltre con una settimana di osservazione che non blocca niente e conta quante volte il blocco ti avrebbe fermato, così il primo blocco vero si adatta alla tua abitudine. Non richiede un account, bloccare un’app è gratis per sempre e Premium è disponibile mensile, annuale o come acquisto unico a {P_LIFETIME}."
+    a: "Quelle app mettono una pausa, un timer o un tocco tra te e l’app. EarnLock ci mette un obiettivo di attività giornaliero, misurato da Salute: a metà strada se ne apre una parte per circa un’ora, una volta al giorno, e l’obiettivo pieno le apre tutte fino a mezzanotte. Parte inoltre con una settimana di osservazione che non blocca niente e conta quante volte il blocco ti avrebbe fermato, così il primo blocco vero si adatta alla tua abitudine. Non richiede un account, bloccare un’app è gratis per sempre e Premium è disponibile mensile, annuale o come acquisto unico a {P_LIFETIME}. La <a href=\"/it/guides/limitare-tempo-di-utilizzo-iphone/\">guida per limitare il tempo di utilizzo su iPhone</a> mette EarnLock a confronto anche con “Tempo di utilizzo”, Cape e Jomo."
   - q: "Quali app può bloccare EarnLock su iPhone?"
     a: "Qualsiasi app o intera categoria che puoi scegliere nel selettore di Tempo di utilizzo di Apple. Il piano gratuito blocca un’app o una categoria, e Premium non ha limiti. Il selettore dà a EarnLock token opachi, quindi l’app non vede mai i nomi di ciò che hai scelto."
   - q: "Come funziona l’obiettivo giornaliero?"
