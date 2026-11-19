@@ -4603,5 +4603,1528 @@
    "tagline": "Apprenez les échecs chinois dès le premier coup, puis jouez, analysez et entraînez-vous.",
    "url": "/fr/apps/xiangqiful/"
   }
+ },
+ "it": {
+  "aftershift": {
+   "faq": [
+    {
+     "a": "AfterShift è un’app per iPhone dedicata al sonno e al recupero di chi lavora a turni. Misura il sonno sulla finestra tra un turno e l’altro invece che da mezzanotte a mezzanotte, costruisce la turnazione a partire da un ciclo ricorrente, importa il sonno da Salute con i pisolini inclusi e regola i promemoria di rilassamento, di stop alla caffeina e di pisolino sul tuo prossimo turno. Premium aggiunge lo stato di recupero per il prossimo turno, il punteggio del sonno, il punteggio recupero turno e le tendenze.",
+     "q": "Che cos’è AfterShift?"
+    },
+    {
+     "a": "A infermieri e personale ospedaliero, paramedici, vigili del fuoco, squadre di fabbrica, di logistica e di assistenza a terra in aeroporto, personale alberghiero e notturno, chi è in reperibilità e chiunque abbia una finestra di sonno che cambia da una settimana all’altra. Se la tua turnazione si ripete, da 4 in turno / 4 di riposo fino a un ciclo DuPont di 28 giorni, AfterShift può contenerla. In fase di configurazione ti chiede se lavori a turni a rotazione, con un orario fisso o con orari irregolari e in reperibilità.",
+     "q": "A chi serve AfterShift?"
+    },
+    {
+     "a": "Le app per il sonno generiche ti misurano su una notte che inizia alle 23. AfterShift misura il recupero da un turno al successivo, riempie la turnazione a partire da un ciclo ricorrente e regola i promemoria e i passaggi “Fai così ora” sul tuo prossimo turno. Non c’è nessun account, e i tuoi dati restano sul tuo iPhone. Le pagine di confronto vanno app per app: <a href=\"/alternatives/offshift/\" hreflang=\"en\">OffShift</a>, <a href=\"/alternatives/shiftsleep/\" hreflang=\"en\">ShiftSleep</a> e <a href=\"/alternatives/timeshifter/\" hreflang=\"en\">Timeshifter</a> (in inglese).",
+     "q": "Che differenza c’è tra AfterShift e OffShift, ShiftSleep, Timeshifter o le app per il sonno generiche?"
+    },
+    {
+     "a": "Il punteggio recupero turno è un voto da 0 a 100 per un singolo sonno, visibile con Premium nel dettaglio del recupero. Pesa la durata del sonno (50%), la continuità, cioè quanto il sonno è stato senza interruzioni (30%), e l’equilibrio delle fasi del sonno (20%). Si ferma a 79 quando tra due turni c’è meno tempo del tuo obiettivo di sonno (ma non nei giorni di riposo) e a 75 quando la finestra comprende un turno di reperibilità, quindi quei sonni arrivano al massimo a Buono. Lo stato di recupero è invece la valutazione separata per il prossimo turno: Basso, OK o Buono, in base al sonno che hai fatto tra i turni rispetto al tuo obiettivo di sonno. Entrambi sono calcoli ideati da noi, non valutazioni mediche e non una diagnosi del disturbo da lavoro a turni. <a href=\"/apps/aftershift/methodology/\" hreflang=\"en\">La pagina sulla metodologia</a> (in inglese) elenca ogni dato di partenza e ogni peso.",
+     "q": "Che cos’è il punteggio recupero turno e come si calcola?"
+    },
+    {
+     "a": "Per chi lavora a turni, i pisolini fanno parte del piano. Un breve pisolino prima di un turno di notte è una delle strategie più citate nei consigli sul sonno per il lavoro a turni, perché la finestra di sonno principale è spesso troppo corta da sola. AfterShift importa i pisolini da Salute e li segna come pisolini, e quelli che registri tu, o misuri con il timer da 25 minuti, finiscono nello stesso elenco. Lo stato di recupero conta il sonno che hai fatto nella finestra tra i turni, pisolini compresi. Premium aggiunge una scheda Pisolini al dettaglio del recupero.",
+     "q": "Perché in AfterShift i pisolini contano per il recupero?"
+    },
+    {
+     "a": "AfterShift è uno strumento informativo sul recupero, non una cura per il disturbo da lavoro a turni (Shift Work Disorder, SWSD). È un disturbo del ritmo circadiano sonno-veglia classificato nell’<a href=\"https://aasm.org/clinical-resources/international-classification-sleep-disorders/\" rel=\"noopener\" hreflang=\"en\">ICSD-3</a>, e a diagnosticarlo e curarlo deve essere uno specialista del sonno. AfterShift può aiutarti a vedere i tuoi schemi, come un debito di sonno che cresce da un ciclo all’altro o la caffeina a fine giornata, ma se i tuoi orari stanno compromettendo seriamente il sonno, parlane con un medico. Le <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\" hreflang=\"en\">risorse del NIOSH statunitense sul lavoro a turni</a> (in inglese) sono un buon punto di partenza.",
+     "q": "AfterShift aiuta con il disturbo da lavoro a turni?"
+    },
+    {
+     "a": "Qualsiasi turnazione che puoi impostare come ciclo ricorrente o aggiungere a mano. I modelli sono Tre turni, 4 in turno / 4 di riposo, 4 in turno / 3 di riposo, 2 giorni / 2 notti, Panama (2-2-3), Notti fisse e Giorni fissi. Puoi anche costruire il tuo ciclo da 1 a 28 giorni, abbastanza lungo per un DuPont completo (4 notti / 3 di riposo / 3 giorni / 1 di riposo / 3 notti / 3 di riposo / 4 giorni / 7 di riposo). AfterShift riempie le prossime 8 settimane e continua a completarle. I tipi di turno prendono i nomi e gli orari che scegli tu, quindi si adattano anche giorni e notti da 12 ore e turni intermedi. L’importazione dal calendario può anche individuare i turni nel tuo calendario di lavoro: la versione gratis legge 1 calendario, 14 giorni in avanti; Premium sincronizza più calendari in automatico quando apri l’app.",
+     "q": "Quali turnazioni supporta AfterShift?"
+    },
+    {
+     "a": "La reperibilità è uno dei tipi di turno con cui AfterShift parte, e l’importazione dal calendario riconosce gli eventi di reperibilità dal titolo. Prima o durante un turno di reperibilità, il piano del sonno diventa una finestra di riposo flessibile, “Fai così ora” di solito sceglie la sua routine per la reperibilità e lo stato di recupero (Premium) aggiunge una nota sulla reperibilità. Tre o più turni di reperibilità in 7 giorni contano come una settimana di reperibilità: la tendenza del debito di sonno riceve un badge, la scheda Consigli mostra una scheda di recupero per la reperibilità e Premium aggiunge un consiglio quotidiano per la reperibilità. Quando il tempo di reperibilità cade nella finestra, il punteggio recupero turno si ferma a 75 e il punteggio del sonno a 84. <a href=\"/journal/how-to-sleep-on-call/\" hreflang=\"en\">La guida al sonno in reperibilità</a> (in inglese) spiega cosa dice la ricerca sul dormire in reperibilità.",
+     "q": "Come gestisce AfterShift i turni di reperibilità?"
+    },
+    {
+     "a": "Ti manda un promemoria di stop alla caffeina regolato sul tuo prossimo turno, così lo stop si sposta quando si spostano i tuoi turni. Registra un caffè con un tocco, oppure con una pressione prolungata un espresso, una bevanda energetica, un tè o altro, e il promemoria si adatta alla quantità di caffeina che hai assunto e alla sensibilità che hai impostato. Premium aggiunge il dettaglio sulla caffeina a ogni sonno nel dettaglio del recupero.",
+     "q": "AfterShift dà indicazioni sugli orari della caffeina?"
+    },
+    {
+     "a": "No. AfterShift è uno strumento per monitorare e pianificare il recupero. Dà indicazioni semplici, non diagnosi mediche né raccomandazioni terapeutiche, e i suoi suggerimenti sono presentati come suggerimenti, non come prescrizioni. Se sospetti un disturbo da lavoro a turni, un’insonnia cronica, un’apnea notturna o qualsiasi altra condizione clinica del sonno, rivolgiti a uno specialista del sonno.",
+     "q": "AfterShift dà consigli medici?"
+    },
+    {
+     "a": "Sì. La versione gratis comprende i cicli ricorrenti e la turnazione, l’importazione del sonno da Salute con i pisolini inclusi, l’orario del sonno e le fasi del sonno, la tendenza del debito di sonno, il piano di recupero, i passaggi “Fai così ora” e 21 tecniche, i promemoria legati ai turni, il conto alla rovescia sulla schermata di blocco e il timer del pisolino, i comandi di Siri per il prossimo turno, la prossima finestra di sonno e la registrazione del sonno, tre dei sette widget e l’importazione dal calendario da 1 calendario, 14 giorni in avanti. Premium aggiunge lo stato di recupero (in Oggi, nel suo widget e con Siri), il punteggio del sonno e il punteggio recupero turno, la continuità del sonno, le tendenze, la sincronizzazione automatica di più calendari con il conteggio degli straordinari, un’anteprima di come un cambio turno influisce sul tuo stato di recupero, un report PDF e spiegazioni scritte sul dispositivo da Apple Intelligence (iOS 26 o successivo, su un iPhone compatibile). Costa {P_MONTHLY}/mese, {P_YEARLY}/anno o {P_LIFETIME} a vita, e gli abbonamenti partono con {TRIAL}. Tutti e tre i piani funzionano con “In famiglia”. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "AfterShift è gratis?"
+    },
+    {
+     "a": "Sì. L’interfaccia è in italiano, dalla schermata Oggi a Turni, Consigli e Impostazioni, widget compresi, e Siri capisce frasi in italiano come “Quand’è il mio prossimo turno su AfterShift”.",
+     "q": "AfterShift è in italiano?"
+    },
+    {
+     "a": "No. AfterShift non ha pubblicità, tracker di terze parti, SDK di analisi né server a cui inviare i dati. I tuoi dati su sonno, pisolini e turni restano sul tuo iPhone, perché non c’è né un account né una sincronizzazione cloud. I dati lasciano il dispositivo solo se esporti tu un report o ci invii tu un’email di feedback.",
+     "q": "AfterShift vende i miei dati di salute?"
+    },
+    {
+     "a": "No. AfterShift funziona solo su iPhone, e dato che non ci sono né un account né la sincronizzazione con iCloud, i tuoi dati vivono su un solo iPhone. Se elimini l’app, elimini quei dati. Un acquisto Premium si ripristina su qualsiasi iPhone con lo stesso Apple Account.",
+     "q": "AfterShift si sincronizza tra dispositivi o funziona su iPad?"
+    },
+    {
+     "a": "No. AfterShift non ha un’app per Apple Watch e non ne ha bisogno, ma gli serve il sonno in Salute, e un iPhone da solo non ne registra. Va bene un Apple Watch o qualsiasi app per il sonno che salvi i dati in Salute. Puoi anche registrare i pisolini nell’app e registrare il sonno chiedendolo a Siri. Una fonte che registra le fasi del sonno aggiunge il dettaglio delle fasi; senza, la parte delle fasi nei punteggi usa valori predefiniti neutri.",
+     "q": "Mi serve un Apple Watch?"
+    },
+    {
+     "a": "Tutte e due, in momenti diversi e per obiettivi diversi. Se resti su un ritmo da turno di notte, evita la luce intensa del mattino durante il rientro a casa (gli occhiali da sole scuri aiutano, ma solo se guida qualcun altro) e dormi in una stanza buia, perché la luce intensa dice al tuo orologio circadiano che è giorno e rende più difficile addormentarsi. Se stai tornando a una vita da giorno, fai l’opposto e prendi luce intensa al mattino per anticipare l’orologio. La scheda Consigli di AfterShift ha una breve lettura, “Esposizione alla luce: le basi”. Per approfondire la scienza circadiana, gli specialisti del sonno e le <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\" hreflang=\"en\">risorse del NIOSH statunitense sul lavoro a turni</a> (in inglese) trattano nel dettaglio i tempi dell’esposizione alla luce.",
+     "q": "Dopo un turno di notte conviene cercare la luce del mattino o evitarla?"
+    },
+    {
+     "a": "L’inerzia del sonno è lo stato di intontimento e di riflessi rallentati che segue il risveglio e dura da 15 a 30 minuti. Per chi lavora a turni conta in due momenti. (1) Svegliarsi da un pisolino lungo e profondo a metà turno può lasciare un’inerzia tale che il pisolino costa più di quanto dà; il timer del pisolino sulla schermata di blocco di AfterShift dura 25 minuti. (2) L’inizio di un turno di notte dopo un sonno diurno si porta spesso dietro un’inerzia residua che sembra stanchezza. Saperle distinguere aiuta a decidere se ti serve la caffeina o solo un quarto d’ora.",
+     "q": "Cosa c’entra l’inerzia del sonno con il lavoro a turni?"
+    },
+    {
+     "a": "Sì. Il tuo cronotipo è uno dei fattori che meglio prevedono quanto ti peseranno i turni a rotazione e di notte. Chi è molto mattiniero (allodola) fatica di più con i turni di notte fissi, perché il suo sistema circadiano resiste allo spostamento di fase; chi è decisamente serale (gufo) di solito si adatta meglio alle notti, ma lo paga nelle rotazioni con inizio all’alba. Quasi tutti stanno in mezzo. AfterShift non ti chiede di darti un’etichetta: lavora sul sonno che fai davvero intorno ai tuoi turni. Se vuoi una misura formale del tuo, i ricercatori del sonno usano due strumenti validati: il MEQ (Horne-Östberg Morningness-Eveningness Questionnaire) e il MCTQ (Munich ChronoType Questionnaire).",
+     "q": "Per il lavoro a turni conta essere allodole o gufi?"
+    },
+    {
+     "a": "AfterShift non dà consigli sugli integratori: ne devi parlare con un medico o un farmacista. Quello che possiamo dire con onestà in base alla letteratura è questo: la melatonina a basso dosaggio (da 0,3 a 3 mg) assunta all’inizio della finestra di sonno prevista è l’uso di cui i ricercatori del sonno discutono più spesso per chi lavora a turni. Funziona come regolatore della fase circadiana almeno quanto come sedativo, quindi il momento in cui la prendi conta più della quantità. Dosi più alte non sono migliori e in alcune persone aumentano l’intontimento del giorno dopo. La melatonina venduta negli Stati Uniti non è regolamentata e i dosaggi sono indicati in modo incoerente. Il <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\" hreflang=\"en\">modulo del NIOSH statunitense sul lavoro a turni</a> (in inglese) e le indicazioni cliniche dell’AASM trattano più a fondo i tempi della melatonina per chi lavora a turni. Parlane con il tuo medico prima di iniziare qualsiasi integratore.",
+     "q": "Devo prendere la melatonina per il lavoro a turni? AfterShift consiglia integratori?"
+    },
+    {
+     "a": "La latenza del sonno è il tempo che serve per addormentarsi dopo aver spento la luce; l’efficienza del sonno è la percentuale del tempo a letto passata davvero a dormire. Sono due misure standard della scienza del sonno. Per chi lavora a turni, di solito peggiorano entrambe con il sonno di giorno: la luce intensa, il rumore e un sistema circadiano che continua a dire “questo è il momento sbagliato” allungano la latenza e abbassano l’efficienza. AfterShift non misura la latenza del sonno. Quando Salute ha dati separati su tempo a letto e sonno, AfterShift mostra l’efficienza del sonno nell’orario del sonno, e con Premium alimenta il punteggio del sonno. Un’efficienza cronicamente bassa sul sonno diurno rimanda di solito all’ambiente in cui dormi (luce, rumore, gli orari di un partner) più che a un numero da inseguire.",
+     "q": "Che cosa sono la latenza del sonno e l’efficienza del sonno, e AfterShift le monitora?"
+    },
+    {
+     "a": "Il social jet lag è il termine con cui i ricercatori del sonno indicano la distanza tra il momento di sonno che la tua biologia preferirebbe e gli orari imposti dal lavoro o dalla vita sociale. Quasi tutti ne sentono un po’ il lunedì mattina, dopo un fine settimana più libero. Per chi lavora a turni il meccanismo è lo stesso ma molto più marcato: un’infermiera che fa solo turni di notte e passa i giorni di riposo con una famiglia che dorme di notte, di fatto attraversa dei fusi orari ogni fine settimana. AfterShift non misura il social jet lag. La sua tendenza del debito di sonno mostra, ciclo dopo ciclo, se il tuo debito sta crescendo, è stabile o si sta riducendo. I ricercatori usano il MCTQ (Munich ChronoType Questionnaire) per quantificare il social jet lag, se vuoi una misura formale.",
+     "q": "Che cos’è il social jet lag e conta per chi lavora a turni?"
+    }
+   ],
+   "seo": {
+    "description": "Dormire dopo il turno di notte: AfterShift misura sonno e recupero da un turno al successivo e riempie la turnazione per 8 settimane. Gratis, con Premium."
+   },
+   "tagline": "Il monitoraggio di sonno e recupero, costruito sulla tua turnazione.",
+   "url": "/it/apps/aftershift/"
+  },
+  "allpaid": {
+   "faq": [
+    {
+     "a": "AllPaid è un’app per ricordare bollette e contratti su iPhone, iPad e Mac che funziona senza collegamento alla banca. Aggiungi a mano bollette, abbonamenti e contratti; AllPaid ti avvisa alle 9 prima di ogni scadenza, ti lascia segnare una bolletta come pagata dalla notifica e ti ricorda la fine di un contratto prima che arrivi. Ha anche dieci widget, Siri, il blocco app con Face ID e una panoramica delle spese. È gratis fino a 3 bollette; Pro costa {P_MONTHLY}/mese, {P_YEARLY}/anno o {P_LIFETIME} una sola volta.",
+     "q": "Cos’è AllPaid?"
+    },
+    {
+     "a": "In parte. AllPaid non legge mai la tua banca, quindi non può trovare le bollette da sola: aggiungi ogni bolletta a mano. Quando scrivi un nome noto come Netflix, propone la categoria e ogni quanto si ripete la bolletta, e tu tocchi Applica per usarle. I fornitori più diffusi mostrano anche il loro logo. L’importo è facoltativo, quindi puoi aggiungere una bolletta anche quando cambia di mese in mese.",
+     "q": "AllPaid compila le bollette in automatico?"
+    },
+    {
+     "a": "Rocket Money si collega alla tua banca, individua gli abbonamenti dalla cronologia delle transazioni e offre un servizio di negoziazione a pagamento che trattiene una percentuale del risparmio ottenuto. AllPaid non fa niente di tutto questo. Aggiungi tu le bollette, nulla lascia il tuo dispositivo a meno che tu non attivi la sincronizzazione iCloud, e AllPaid è gratis per 3 bollette con un’opzione Pro a vita con acquisto unico. Se il rilevamento automatico dalle transazioni conta per te più della privacy, Rocket Money è più adatta. Se preferisci non dare l’accesso alla banca a un’app di terzi, AllPaid è la scelta migliore. Il <a href=\"/alternatives/rocket-money/\" hreflang=\"en\">confronto completo con Rocket Money</a> (in inglese) lo passa in rassegna riga per riga.",
+     "q": "In cosa AllPaid è diversa da Rocket Money?"
+    },
+    {
+     "a": "Sì. Attiva “Traccia la data di fine contratto” per una bolletta e aggiungi la data di inizio e di fine, se si rinnova automaticamente e l’importo del rinnovo. AllPaid ti avvisa alle 10 prima della data di fine e l’elenco mostra i contratti in scadenza. Se rinnovi, “Segna come rinnovato” conserva il periodo precedente in “Rinnovi precedenti” e sposta in avanti la data di fine. La versione gratuita permette un promemoria per contratto; Pro ne permette più di uno.",
+     "q": "AllPaid può ricordarmi il rinnovo di un contratto?"
+    },
+    {
+     "a": "Solo quelle che inserisci. AllPaid non scansiona la tua email né le tue transazioni, quindi non può trovare una prova che hai attivato e dimenticato. Aggiungi la prova come bolletta in scadenza il giorno in cui diventa a pagamento, o come contratto che finisce quel giorno, e AllPaid ti avvisa prima della data.",
+     "q": "AllPaid segnala le prove gratuite prima che diventino un abbonamento?"
+    },
+    {
+     "a": "Sì. Il widget Calendario mensile mostra tutte le bollette del mese nella schermata Home e il riepilogo mensile nell’app elenca le bollette e i totali del mese. La versione gratuita mostra il mese in corso; con Pro puoi scorrere i mesi passati e futuri.",
+     "q": "AllPaid mostra le mie bollette in un calendario?"
+    },
+    {
+     "a": "No. AllPaid si occupa di controllo delle bollette, abbonamenti, contratti e promemoria di pagamento. Non fa budget completi, monitoraggio delle entrate o categorizzazione delle transazioni. Se vuoi un budget completo, YNAB, Monarch Money o Copilot sono più adatte.",
+     "q": "AllPaid è un’app per il budget?"
+    },
+    {
+     "a": "Sì. La versione gratuita tiene fino a 3 bollette con un promemoria il giorno prima di ciascuna, le date di fine contratto, la panoramica spese, tutti e dieci i widget, Siri e il blocco app. Salvare una quarta bolletta apre la schermata Pro. Pro sblocca bollette illimitate, più promemoria per bolletta, oltre a quello del giorno della scadenza, l’analisi delle spese, la cronologia completa dei pagamenti, fino a 50 allegati per bolletta e la sincronizzazione iCloud a {P_MONTHLY}/mese, {P_YEARLY}/anno o {P_LIFETIME} una sola volta. Se il tuo Apple Account è idoneo, il piano mensile inizia con {TRIAL} e quello annuale con 7 giorni di prova gratuita. Un solo acquisto Pro copre fino a 5 familiari con In famiglia. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "AllPaid è gratis?"
+    },
+    {
+     "a": "Sì. Chiedi a Siri “What bills are due in AllPaid” e ti legge le bollette in scadenza nei prossimi sette giorni. AllPaid ha dieci widget per la schermata Home e la schermata di blocco, tra cui Prossima bolletta, Calendario mensile, In arrivo e Contratti, con formati extra large su iOS 27. I widget aprono l’app; non possono segnare una bolletta come pagata.",
+     "q": "AllPaid funziona con Siri e i widget?"
+    },
+    {
+     "a": "Su iPad e Mac sì; su Apple Watch no. AllPaid funziona su iPhone con iOS 17 o successivo, su iPad con iPadOS 17 o successivo e su Mac con macOS 14 Sonoma o successivo. Un solo acquisto copre tutti e tre: Pro acquistato su un dispositivo sblocca gli altri con lo stesso Apple Account, e la sincronizzazione iCloud (Pro) mantiene uguali le tue bollette su ciascuno. Non esiste una versione per Apple Watch.",
+     "q": "AllPaid esiste su iPad, Mac o Apple Watch?"
+    },
+    {
+     "a": "No. AllPaid non ha un server proprio a cui inviare qualcosa, non si collega mai a una banca e non contiene SDK di analisi, di pubblicità o di terze parti. Per usarla non crei un account. Le tue bollette restano sui tuoi dispositivi o, se attivi la sincronizzazione iCloud (Pro), nel tuo iCloud privato, a cui non possiamo accedere. Il blocco app può richiedere Face ID, Touch ID o il codice per aprire l’app. La pagina di trasparenza ha il dettaglio completo.",
+     "q": "AllPaid condivide i miei dati finanziari?"
+    },
+    {
+     "a": "Puoi inviarne una. “Condividi bolletta” apre il menu di condivisione di iOS con un breve messaggio sulla bolletta e sulla sua scadenza, utile per ricordare l’affitto o internet al partner o a un coinquilino. L’altra persona non ottiene l’accesso alle tue bollette e AllPaid non ha un account condiviso per la casa.",
+     "q": "Posso condividere le bollette con qualcuno?"
+    },
+    {
+     "a": "No. AllPaid non ha esportazione in CSV, PDF o calendario. Con Pro, la sincronizzazione iCloud tiene una copia delle tue bollette nel tuo iCloud privato.",
+     "q": "Posso esportare le mie bollette?"
+    },
+    {
+     "a": "Sì. L’app è in italiano, widget compresi.",
+     "q": "AllPaid è in italiano?"
+    }
+   ],
+   "seo": {
+    "description": "App promemoria pagamenti per iPhone, iPad e Mac, senza accesso alla banca. Scadenze, abbonamenti e contratti. Gratis fino a 3 bollette."
+   },
+   "tagline": "Promemoria per bollette e contratti su iPhone, iPad e Mac, senza accesso alla banca.",
+   "url": "/it/apps/allpaid/"
+  },
+  "appmeta": {
+   "faq": [
+    {
+     "a": "AppMeta è un’app Mac nativa per App Store Connect, pensata per chi sviluppa in autonomia e gestisce da sé le proprie schede. Modifica tutte le lingue in un’unica finestra, mostra campo per campo la differenza con la scheda online prima della pubblicazione, e misura difficoltà e domanda delle parole chiave sul vero App Store, con le prove in vista. Acquisti in-app, abbonamenti, TestFlight, Game Center, recensioni, invio per la revisione, vendite e diagnostica sono nella stessa app. Funziona con macOS 14 o successivo e dialoga direttamente con Apple, con la tua chiave API che resta nel Portachiavi del Mac. La Modalità demo è gratuita; per collegare il tuo account serve Pro, a {P_YEARLY}/anno o {P_LIFETIME} a vita.",
+     "q": "Cos’è AppMeta?"
+    },
+    {
+     "a": "AppMeta lavora insieme ad App Store Connect, tramite l’API di App Store Connect di Apple. È un posto più veloce per fare le modifiche: tutte le lingue in una finestra, un solo campo in tutte le lingue e un confronto con la scheda online prima della pubblicazione. Non viene estratto nulla dal sito web e non c’è nessun server AppMeta tra te e Apple. Alcune cose richiedono ancora App Store Connect stesso, come i dettagli sulla privacy dell’app, le immagini di Game Center e l’aggiunta dei tester a TestFlight. AppMeta è uno strumento di sviluppo di terze parti e non è affiliata ad Apple.",
+     "q": "AppMeta è un’alternativa ad App Store Connect?"
+    },
+    {
+     "a": "Fastlane deliver è uno strumento da riga di comando per le pipeline di integrazione e rilascio continui. Va bene quando vuoi i metadati nel controllo di versione e un caricamento automatico a ogni rilascio. AppMeta è uno strumento desktop per la modifica interattiva: tutte le lingue di un campo visibili insieme, un confronto con il valore online prima della pubblicazione, la ricerca delle parole chiave, le risposte alle recensioni e la modifica di acquisti in-app e Game Center. I due si completano: tieni Fastlane deliver nella tua pipeline di rilascio e usa AppMeta per i ritocchi a mano.",
+     "q": "Che differenza c’è tra AppMeta e Fastlane deliver?"
+    },
+    {
+     "a": "Itsyconnect è un buon client Mac per App Store Connect: gratuito, con licenza MIT, creato con Electron e con un’opzione Docker in self-hosting. AppMeta è un’app Mac nativa a {P_YEARLY}/anno o {P_LIFETIME} a vita. La differenza principale è l’ambito. AppMeta crea e modifica acquisti in-app, abbonamenti e gruppi di abbonamenti, e Game Center (obiettivi, classifiche, gruppi di classifiche), con testi localizzati; Itsyconnect non copre nulla di tutto questo. AppMeta può far girare la sua IA con Apple Intelligence sul tuo Mac (macOS 26 su un Mac compatibile) o con un modello locale, mentre Itsyconnect offre sei provider nel cloud (Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek). Itsyconnect ha un server MCP per Claude Code, Cursor, Codex e OpenCode e una vista di analisi più ampia; AppMeta non ha un server MCP. Se non vendi acquisti in-app, non usi Game Center, oppure vuoi uno strumento gratuito, open source o con MCP, scegli Itsyconnect. Se guadagni con gli acquisti in-app, pubblichi contenuti per Game Center o vuoi l’IA sul dispositivo, scegli AppMeta. Il confronto completo è nella pagina <a href=\"/alternatives/itsyconnect/\" hreflang=\"en\">AppMeta come alternativa a Itsyconnect</a> (in inglese).",
+     "q": "Che differenza c’è tra AppMeta e Itsyconnect?"
+    },
+    {
+     "a": "NativeConnect era un client Mac nativo per App Store Connect, dello stesso tipo di AppMeta. È stato ritirato dal Mac App Store nel 2020 e da allora non è più disponibile, quindi non è un’opzione attuale. AppMeta è un client Mac nativo di quella categoria, creato sull’API di App Store Connect per macOS 14 o successivo, e viene aggiornato con regolarità.",
+     "q": "Che differenza c’è tra AppMeta e NativeConnect?"
+    },
+    {
+     "a": "AppMetaHub e ASO.dev sono strumenti in abbonamento. AppMetaHub è un’app web con un piano Indie mensile. ASO.dev ha app per Mac, iPhone, iPad, Windows, Linux e Android, con prezzo per postazione fatturato annualmente. AppMeta è un’app Mac nativa a {P_YEARLY}/anno o {P_LIFETIME} a vita. Gli altri due ti danno un browser o più piattaforme, postazioni per un team e, per ASO.dev, il monitoraggio delle posizioni. AppMeta ti dà un’app Mac nativa, modifiche che restano sul tuo Mac fino alla pubblicazione, la modifica di Game Center e un’opzione a vita. AppMeta gestisce anche più lingue di quante ne gestisse AppMetaHub a maggio 2026 (50 contro 37).",
+     "q": "Che differenza c’è tra AppMeta, AppMetaHub e ASO.dev?"
+    },
+    {
+     "a": "Cinque: Apple Intelligence sul tuo Mac (macOS 26 su un Mac compatibile, senza chiave), Anthropic Claude, OpenAI e Google Gemini con la tua chiave API, e qualsiasi server compatibile con OpenAI, come Ollama o LM Studio, che non richiede una chiave. Scegli il provider nelle impostazioni e lo paghi direttamente; AppMeta non vende alcun utilizzo di IA. Con un provider nel cloud, il testo che traduci o analizzi parte dal tuo Mac verso quel provider. Con Apple Intelligence resta sul tuo Mac.",
+     "q": "Con quali provider di IA funziona AppMeta?"
+    },
+    {
+     "a": "No. L’editor della scheda, il confronto, la pubblicazione e i controlli sullo stato delle parole chiave (caratteri sprecati, doppioni, sovrapposizioni, copertura degli store) funzionano senza IA. Difficoltà e domanda in tempo reale arrivano da App Store e non richiedono nemmeno loro una chiave di IA. La traduzione con IA e i suggerimenti di parole chiave sono facoltativi e richiedono Apple Intelligence, la tua chiave Anthropic, OpenAI o Google, oppure un modello locale.",
+     "q": "AppMeta ha bisogno di una chiave API di IA per funzionare?"
+    },
+    {
+     "a": "AppMeta usa l’API di App Store Connect di Apple, senza password specifica per l’app e senza sessione del browser. Crei una chiave API di team in App Store Connect (Utenti e accesso > Integrazioni > App Store Connect API) e inserisci una sola volta Issuer ID, Key ID e file .p8 in AppMeta. Tutti e tre sono conservati nel Portachiavi del Mac, come elementi di quel solo Mac, senza sincronizzazione con iCloud. AppMeta firma sul tuo Mac token di breve durata, e il file .p8 non lo lascia mai. Non c’è nessun server AppMeta. Altre richieste vanno agli endpoint pubblici di App Store di Apple per la ricerca delle parole chiave (se la attivi), ad Apple Ads (se lo colleghi), alla Banca centrale europea per i tassi di cambio e al tuo provider di IA (se ne aggiungi uno). Il privacy manifest dell’app, nella pagina sulla trasparenza, riporta l’uso delle API dichiarato.",
+     "q": "AppMeta è sicura? Dove vanno le mie credenziali di App Store Connect?"
+    },
+    {
+     "a": "AppMeta si scarica gratis e funziona in Modalità demo: ogni schermata con app, lingue, parole chiave, acquisti in-app, recensioni e vendite di esempio, senza account. In Modalità demo la scrittura è disattivata. Per collegare il tuo account App Store Connect serve Pro: {P_YEARLY}/anno, con {TRIAL} all’inizio, oppure {P_LIFETIME} a vita come acquisto unico. La Modalità demo ti lascia provare ogni schermata prima di comprare. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "AppMeta è gratuita?"
+    },
+    {
+     "a": "Sì. Associ una build, aggiungi la versione per la revisione e gestisci il rilascio graduale della versione iOS. Il tab di invio controlla le informazioni per la revisione dell’app, i diritti sui contenuti, le categorie, i prezzi, la disponibilità, la fascia d’età, il contratto di licenza, la privacy e il copyright. I dettagli sulla privacy dell’app sono di sola lettura in AppMeta, con un link a App Store Connect. L’aggiunta per la revisione invia subito, senza un passaggio di conferma. Le build vere e proprie si caricano con Xcode, Transporter o fastlane.",
+     "q": "Posso inviare le app per la revisione con AppMeta?"
+    },
+    {
+     "a": "AppMeta gestisce tutti i 50 codici di lingua di App Store Connect, da ar-SA a zh-Hant. Puoi ordinarli alfabeticamente come fa App Store Connect, per codice di lingua o come preferisci, e aggiungere una lingua a una versione dall’app.",
+     "q": "Quante lingue di App Store Connect gestisce AppMeta?"
+    },
+    {
+     "a": "Sì. Crei e modifichi acquisti in-app, gruppi di abbonamenti e abbonamenti a rinnovo automatico, con nomi e descrizioni localizzati, prezzi, disponibilità per territorio, offerte introduttive e screenshot per la revisione. Prezzi, offerte, disponibilità e screenshot per la revisione vengono salvati su App Store Connect appena li imposti; i metadati passano dalla pubblicazione. Game Center copre obiettivi, classifiche e gruppi di classifiche con testi localizzati. Le immagini di Game Center e i rilasci delle classifiche restano su App Store Connect.",
+     "q": "AppMeta gestisce acquisti in-app, abbonamenti e Game Center?"
+    },
+    {
+     "a": "No, hanno compiti diversi. AppMeta è un editor di metadati e un client di rilascio per l’API di App Store Connect. Stima difficoltà e domanda delle parole chiave che controlli, ma non monitora le posizioni nel tempo e non ricerca le parole chiave dei concorrenti. Appfigures, AppTweak, Sensor Tower e RespectASO sono piattaforme di analisi della concorrenza per il monitoraggio delle posizioni, la ricerca sui concorrenti e l’analisi di mercato. Puoi usarle insieme: AppMeta per modificare e una piattaforma di analisi per la ricerca.",
+     "q": "AppMeta sostituisce Appfigures, AppTweak o Sensor Tower?"
+    },
+    {
+     "a": "macOS 14 (Sonoma) o successivo. La traduzione con Apple Intelligence richiede macOS 26 su un Mac dove Apple Intelligence è disponibile. Le altre opzioni di IA (Anthropic, OpenAI, Google, compatibile con OpenAI) funzionano con tutte le versioni di macOS supportate. AppMeta esiste solo per Mac, senza versione per iPhone o iPad.",
+     "q": "Quale versione di macOS serve per AppMeta?"
+    },
+    {
+     "a": "Sì. L’interfaccia di AppMeta esiste in 17 localizzazioni che coprono 11 lingue: inglese (Stati Uniti, Regno Unito, Australia, Canada), arabo, tedesco, spagnolo (Spagna, Messico), francese (Francia, Canada), italiano, giapponese, coreano, portoghese (Brasile, Portogallo), russo e turco. L’editor della scheda gestisce tutte le 50 lingue di App Store Connect, qualunque sia la lingua dell’app.",
+     "q": "AppMeta è disponibile in italiano?"
+    }
+   ],
+   "seo": {
+    "description": "App Store Connect Mac app: modifica tutte le lingue, vedi ogni differenza prima di pubblicare e misura la difficoltà delle parole chiave."
+   },
+   "tagline": "Modifica, confronta e pubblica la tua scheda App Store dal Mac.",
+   "url": "/it/apps/appmeta/"
+  },
+  "appmeta-pulse": {
+   "faq": [
+    {
+     "a": "AppMeta Pulse è un’app per iPhone e Mac che mostra vendite, abbonamenti e recensioni di App Store a partire da App Store Connect. Copre ricavi o vendite, unità, MRR, abbonati, prove, churn e funnel di App Store per ogni app che vendi, conserva sul tuo iPhone lo storico delle vendite dopo la finestra di un anno di Apple e ti permette di rispondere alle recensioni. Ha 12 widget per la schermata Home e la schermata di blocco. Non può cambiare prezzi, build o metadati.",
+     "q": "Cos’è AppMeta Pulse?"
+    },
+    {
+     "a": "Dal primo giorno che scarica, per tutto il tempo in cui la tieni. App Store Connect fornisce circa gli ultimi 365 giorni di vendite giornaliere: al primo collegamento AppMeta Pulse scarica ciò che Apple ha ancora, poi salva sul tuo iPhone ogni nuovo giorno. Lo storico si cancella solo quando lo elimini o esci dall’account. Il confronto da un anno all’altro compare quando è memorizzata una finestra intera dell’anno precedente; fino ad allora “Tendenze” ti indica il mese in cui sarà disponibile. I download per anno possono risalire più indietro, fino a 10 anni, perché arrivano dai resoconti annuali di Apple.",
+     "q": "Per quanto tempo AppMeta Pulse conserva lo storico delle mie vendite?"
+    },
+    {
+     "a": "Le pagine di confronto passano in rassegna le app una per una: <a href=\"/alternatives/appstats/\" hreflang=\"en\">AppStats</a>, <a href=\"/alternatives/app-sales-store-reports/\" hreflang=\"en\">App Sales - Store Reports</a> e <a href=\"/alternatives/appfigures/\" hreflang=\"en\">Appfigures</a> (tutte in inglese). Ecco cosa porta AppMeta Pulse in quel confronto: lo storico delle vendite conservato sul tuo iPhone oltre la finestra di un anno di Apple, le risposte alle recensioni con bozze di Apple Intelligence sul dispositivo e la risposta in blocco fino a 25 recensioni, 12 widget tra cui quattro per l’andamento della settimana o del mese, e nessun nostro server tra il tuo iPhone e Apple.",
+     "q": "In cosa AppMeta Pulse è diversa da AppStats, App Sales o Appfigures?"
+    },
+    {
+     "a": "L’<a href=\"https://apps.apple.com/it/app/app-store-connect/id1234793120\" rel=\"noopener\">app App Store Connect</a> di Apple serve a gestire il tuo account. AppMeta Pulse serve a seguire l’attività: conserva lo storico delle vendite dopo la finestra di un anno di Apple, confronta quest’anno con l’anno scorso, porta ricavi, abbonamenti e andamento su 12 widget e scrive sul dispositivo le bozze di risposta alle recensioni. Non può cambiare prezzi, build o metadati. Verso App Store Connect invia solo le risposte alle recensioni che scrivi e le richieste dei resoconti di analisi che Apple richiede. <a href=\"/alternatives/app-store-connect-app/\" hreflang=\"en\">Il confronto completo</a> (in inglese) va funzione per funzione.",
+     "q": "In cosa AppMeta Pulse è diversa dall’app ufficiale App Store Connect?"
+    },
+    {
+     "a": "Le <em>vendite</em> (sales) sono l’importo lordo pagato dai clienti, prima della commissione di Apple. I <em>ricavi</em> (proceeds) sono ciò che Apple ti deve dopo la sua quota del 15% (Small Business Program) o del 30% (tariffa standard) e dopo l’IVA o le imposte sulle vendite che trattiene. Il pagamento che arriva in banca può comunque differire dai ricavi, per la conversione di valuta, le ritenute fiscali e le commissioni bancarie. In AppMeta Pulse l’impostazione “Mostra importo” fa passare ogni cifra dai ricavi alle vendite e viceversa. Per le definizioni ufficiali vedi la guida di Apple su <a href=\"https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders/\" rel=\"noopener\">unità, ricavi e vendite</a>.",
+     "q": "Che differenza c’è tra vendite e ricavi in App Store Connect?"
+    },
+    {
+     "a": "L’<a href=\"https://developer.apple.com/documentation/appstoreconnectapi\" rel=\"noopener\">API di App Store Connect</a> ufficiale. In App Store Connect, in “Utenti e accessi” > Integrazioni, crei una chiave API con il ruolo Amministratore, scarichi la chiave privata .p8 e aggiungi in AppMeta Pulse il file della chiave, l’ID chiave e l’ID emittente, insieme al numero fornitore per i resoconti di vendita. La chiave viene conservata nel Portachiavi di questo iPhone. AppMeta Pulse non legge mai la dashboard web. Nella <a href=\"/apps/appmeta-pulse/api-access/\" hreflang=\"en\">pagina sull’accesso all’API</a> (in inglese) trovi gli endpoint esatti, il ruolo che serve alla chiave e come vengono firmati i token.",
+     "q": "AppMeta Pulse usa l’API di App Store Connect o la dashboard web?"
+    },
+    {
+     "a": "Una chiave API con il ruolo Amministratore, il ruolo che può leggere i resoconti di vendita; le chiavi con ruolo Gestore dell’app o Sviluppatore ricevono da Apple un errore 403. AppMeta Pulse usa la chiave per leggere i resoconti di vendita e di abbonamento, l’elenco delle app, le analisi di App Store e le recensioni dei clienti. Scrive solo le risposte alle recensioni che scegli di inviare, modificare o eliminare e le richieste dei resoconti di analisi che Apple richiede prima di preparare i dati sulle impressioni. Non può cambiare prezzi, build o metadati. Puoi revocare la chiave in App Store Connect in qualsiasi momento. <a href=\"/apps/appmeta-pulse/api-access/\" hreflang=\"en\">La pagina sull’accesso all’API</a> (in inglese) associa ogni ruolo ai suoi endpoint.",
+     "q": "Quali autorizzazioni chiede AppMeta Pulse sul mio account App Store Connect?"
+    },
+    {
+     "a": "Sono aggiornati quanto li pubblica Apple. Apple pubblica il resoconto di vendita di un giorno il giorno dopo, e le analisi di App Store, come le impressioni, circa due giorni più tardi. AppMeta Pulse si aggiorna in background circa una volta all’ora, con iOS che decide i tempi esatti, e di nuovo quando apri l’app. I widget si aggiornano dopo ogni sincronizzazione. Non può ottenere i dati di Apple più in fretta di quanto Apple li pubblichi, e il piè di pagina della Dashboard mostra se ogni fonte è aggiornata.",
+     "q": "Quanto sono aggiornati i dati? Sono in tempo reale?"
+    },
+    {
+     "a": "Sì, con iOS 26 o versioni successive e Apple Intelligence su un iPhone compatibile. L’editor delle risposte propone due bozze scritte sul dispositivo, una di scuse e tecnica, una empatica e rassicurante, che modifichi e invii. Le bozze sono in inglese. Su qualsiasi iPhone puoi scrivere le risposte da te, inserire un modello salvato, tradurre sul dispositivo una recensione in un’altra lingua (iOS 18 o versioni successive) e rispondere a un massimo di 25 recensioni senza risposta in una volta, con un modello, una bozza per ogni recensione o lo stesso testo. Non viene pubblicato nulla finché non lo invii.",
+     "q": "AppMeta Pulse può scrivere bozze di risposta alle recensioni di App Store?"
+    },
+    {
+     "a": "Sì. La vista di dettaglio di ogni app elenca i suoi cinque principali Paesi e regioni, e “Tendenze” mostra gli otto principali Paesi di un’app, in vendite o ricavi. Il dettaglio per Paese viene conservato 456 giorni; i totali giornalieri vengono conservati per intero. Le cifre arrivano dai resoconti di vendita giornalieri di Apple, quindi riconcilia i pagamenti con i <a href=\"https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/\" rel=\"noopener\">resoconti finanziari mensili</a> di App Store Connect.",
+     "q": "Posso vedere il fatturato per Paese?"
+    },
+    {
+     "a": "La chiave .p8 e l’ID chiave sono salvati nel Portachiavi di questo iPhone, disponibili solo su questo dispositivo, e non si sincronizzano mai, nemmeno con la sincronizzazione iCloud attiva. Le richieste passano via HTTPS direttamente all’API di Apple; niente transita da un server di Lagerland Apps. Puoi revocare la chiave in App Store Connect in qualsiasi momento.",
+     "q": "Le mie credenziali sono al sicuro con AppMeta Pulse?"
+    },
+    {
+     "a": "No. AppMeta Pulse non può cambiare prezzi, build o metadati e non ha pulsanti per farlo. L’unica cosa che puoi cambiare è la risposta a una recensione: la scrivi, tocchi Invia e puoi modificarla o eliminarla in seguito.",
+     "q": "Posso cambiare per errore le impostazioni delle mie app?"
+    },
+    {
+     "a": "Il download è gratuito e apre una demo con cinque app di esempio, per un massimo di 3 giorni di utilizzo. Per vedere i tuoi numeri serve l’accesso completo: Mensile a {P_MONTHLY}/mese o Annuale a {P_YEARLY}/anno, ognuno con {TRIAL}, oppure A vita a {P_LIFETIME} una tantum. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "AppMeta Pulse è gratis?"
+    },
+    {
+     "a": "Sì. AppMeta Pulse mostra tutte le app del tuo account App Store Connect e scegli tu quali seguire. La scheda App le confronta una accanto all’altra, e ogni app ha il suo grafico, i suoi principali Paesi e le sue recensioni. Se lavori con più di un account App Store Connect, aggiungili tutti e passa dall’uno all’altro.",
+     "q": "Gestisce più app?"
+    },
+    {
+     "a": "No. AppMeta Pulse non invia notifiche. Per vedere le vendite senza aprire l’app, aggiungi un widget: i widget della schermata Home e della schermata di blocco si aggiornano circa una volta all’ora durante il giorno e dopo ogni sincronizzazione.",
+     "q": "AppMeta Pulse invia notifiche quando arriva una vendita?"
+    },
+    {
+     "a": "Sul Mac sì; su iPad no. L’app nativa per Mac richiede macOS 14 o versioni successive, è inclusa nello stesso acquisto e aggiunge un pannello nella barra dei menu con ricavi o vendite, download, nuovi abbonamenti e MRR. L’app per iPhone richiede iOS 17 o versioni successive. Con la sincronizzazione iCloud attiva, un altro iPhone o il tuo Mac, con lo stesso Apple Account, può mostrare i tuoi numeri senza che la chiave API sia salvata lì.",
+     "q": "AppMeta Pulse funziona su iPad o su Mac?"
+    },
+    {
+     "a": "Sì, sul Mac. AppMeta Pulse per Mac include un server MCP: attiva Impostazioni > “Assistenti IA” e aggiungi l’helper a Claude Desktop, Claude Code, Cursor, VS Code o a un’altra app IA che supporta MCP. L’assistente legge una copia dei resoconti di Apple sul tuo Mac, non può cambiare nulla e non riceve mai la tua chiave API. Ciò che legge va a quell’app IA e al suo fornitore, secondo i loro termini. <a href=\"/journal/app-store-connect-mcp-server/\" hreflang=\"en\">Come funziona il server MCP di AppMeta Pulse</a> (in inglese).",
+     "q": "Posso chiedere a Claude o a un’altra app IA delle mie vendite su App Store?"
+    },
+    {
+     "a": "Sì. Oltre all’inglese, l’app è disponibile in altre 13 lingue: tedesco, francese (Francia e Canada), spagnolo (Spagna e Messico), italiano, olandese, svedese, portoghese (Brasile e Portogallo), russo, ucraino, turco, giapponese, coreano e cinese (semplificato e tradizionale). Anche i widget e le frasi per Siri sono tradotti. Le bozze di risposta di Apple Intelligence sono in inglese.",
+     "q": "AppMeta Pulse è disponibile in italiano?"
+    },
+    {
+     "a": "A chi sviluppa in modo indipendente e ai piccoli studi che vendono app o abbonamenti su App Store e vogliono numeri, storico e recensioni sull’iPhone. Serve una chiave API di App Store Connect con ruolo Amministratore. Rende di più quando vendi più app e vuoi vederle su un’unica schermata.",
+     "q": "A chi è rivolta AppMeta Pulse?"
+    },
+    {
+     "a": "No. AppMeta Pulse non ha un server proprio, né SDK di analisi o di segnalazione degli arresti anomali, né identificativo per gli inserzionisti. Le richieste ad App Store Connect vanno dal tuo iPhone ad Apple, le icone delle app arrivano dal servizio di ricerca di Apple e i tassi di cambio dalla Banca centrale europea. Bozze di risposta, tono e traduzione vengono elaborati sul dispositivo. Con la sincronizzazione iCloud attiva, i tuoi dati vengono salvati anche nel tuo database iCloud privato, a cui non possiamo accedere.",
+     "q": "AppMeta Pulse raccoglie dati?"
+    }
+   ],
+   "seo": {
+    "description": "App Store Connect su iPhone e Mac: ricavi, MRR e recensioni di ogni app, con lo storico delle vendite oltre il limite di un anno di Apple."
+   },
+   "tagline": "Vendite, abbonamenti e recensioni di App Store sul tuo iPhone, con lo storico conservato.",
+   "url": "/it/apps/appmeta-pulse/"
+  },
+  "chessful": {
+   "faq": [
+    {
+     "a": "Chessful è un’app di scacchi per allenarti e analizzare le tue partite su iPhone, iPad e Mac. Stockfish controlla ogni mossa delle tue partite sul dispositivo, ogni errore è spiegato in parole semplici, adatte al tuo livello, e i tuoi errori diventano i puzzle del tuo allenamento quotidiano. Include anche 156 lezioni, 15.000 puzzle in 53 temi, 96 finali da giocare, un repertorio di aperture costruito sulle tue partite e 40 avversari da 400 a 2400 Elo.",
+     "q": "Cos’è Chessful?"
+    },
+    {
+     "a": "Sì, come file PGN. Esporta le tue partite da Chess.com o Lichess, poi apri il file in Chessful da File, iCloud Drive o AirDrop, oppure incolla il testo PGN. Ogni importazione accetta fino a 2.000 partite, segnala i duplicati e ti lascia scegliere da che parte hai giocato. Chessful non si collega a nessuno dei due siti e non recupera partite a partire da un nome utente. L’importazione è senza limiti; l’analisi delle partite importate rientra nelle 2 analisi gratuite al giorno.",
+     "q": "Posso importare le mie partite di Chess.com o Lichess in Chessful?"
+    },
+    {
+     "a": "Sì. La scheda Impara ha 156 lezioni gratuite in sette sezioni, che partono dalla scacchiera e dal movimento dei pezzi e passano poi ai matti, alla tattica, alle aperture, ai finali, al ragionamento e alla strategia. Imposta il livello di coaching su “Sto giusto imparando le regole” e le spiegazioni degli errori vengono scritte per quel livello. Chi conosce già le regole può andare direttamente a giocare e ad analizzare partite.",
+     "q": "Chessful va bene per imparare a giocare a scacchi da zero?"
+    },
+    {
+     "a": "Sì, di due tipi. La libreria di tattiche ha 15.000 puzzle in 53 temi, dalle forchette e inchiodature agli schemi di matto con nome, tratti dal database aperto di puzzle di Lichess e controllati con un motore. “Allenamento di oggi” aggiunge puzzle costruiti sugli errori delle tue partite. Chi usa la versione gratuita ha 3 puzzle al giorno tra i due tipi; ripassare gli errori passati non conta in questo totale. Pro è senza limiti.",
+     "q": "Chessful ha puzzle di scacchi?"
+    },
+    {
+     "a": "Chess.com e Lichess sono piattaforme online costruite attorno al giocare contro altre persone. Chessful è un’app di allenamento: giochi contro i suoi 40 avversari integrati oppure importi le tue partite di uno dei due siti in PGN, Stockfish le analizza sul tuo dispositivo, ogni errore viene spiegato a parole e il tuo allenamento è costruito su quegli errori. Non c’è nessun account. Chessful non ha il gioco online: puoi quindi tenere il tuo account Chess.com o Lichess per giocare contro le persone e usare Chessful per rivedere quelle partite.",
+     "q": "In che cosa Chessful è diversa da Chess.com o Lichess?"
+    },
+    {
+     "a": "Magnus Trainer insegna con corsi e partite costruiti attorno a Magnus Carlsen. Chessful non ha contenuti legati a campioni famosi. Analizza le tue partite, spiega ogni errore e costruisce il tuo allenamento su di esse, con in più 156 lezioni, 15.000 puzzle e 96 finali.",
+     "q": "In che cosa Chessful è diversa da Magnus Trainer?"
+    },
+    {
+     "a": "Entrambe analizzano le partite con Stockfish sul dispositivo e spiegano gli errori con delle frasi. Chessful aggiunge l’allenamento intorno all’analisi: sessioni quotidiane costruite sui tuoi errori, ripasso a intervalli degli sbagli, 156 lezioni, 15.000 puzzle, 96 finali e 40 avversari da affrontare, con un solo acquisto universale per iPhone, iPad e Mac.",
+     "q": "In che cosa Chessful è diversa da Chessis?"
+    },
+    {
+     "a": "Sì, per tutto ciò che riguarda gli scacchi. Giocare, l’analisi di Stockfish, le lezioni, la libreria di puzzle, i finali e le aperture si basano su contenuti e un motore integrati nell’app. Acquistare o ripristinare Pro, caricare i prezzi e Game Center richiedono una connessione.",
+     "q": "Chessful funziona offline?"
+    },
+    {
+     "a": "Stockfish, con NNUE, integrato nell’app. Gira sul tuo iPhone, iPad o Mac. La revisione valuta ogni mossa della tua partita, e l’allenatore di finali usa Stockfish a piena forza come avversario. Chessful poi spiega ogni errore in parole semplici.",
+     "q": "Che motore scacchistico usa Chessful?"
+    },
+    {
+     "a": "Chessful si scarica gratis, con limiti giornalieri: 2 analisi di partite, 3 puzzle e 2 suggerimenti del coach al giorno, i primi 10 avversari e il primo finale di ogni categoria. Le 156 lezioni, tutte le spiegazioni degli errori, l’importazione PGN e il monitoraggio dei progressi sono gratuiti. Pro toglie i limiti giornalieri e sblocca tutti i 40 avversari, tutti i 96 finali, il repertorio di aperture completo con esercizi sulle linee, “Confronto settimanale” e “Trend delle debolezze”. Costa {P_MONTHLY}/mese o {P_YEARLY}/anno, entrambi con {TRIAL}, oppure {P_LIFETIME} con un acquisto unico per l’accesso a vita. In famiglia è incluso. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "Chessful è gratis? Quanto costa Chessful Pro?"
+    },
+    {
+     "a": "Sì. Progresso mostra una valutazione stimata, un grafico della valutazione, le statistiche delle partite, cinque barre delle abilità (tattica, difesa, posizionamento, finale e aperture), una vista dell’attività e 59 traguardi, tutto gratuito. Pro aggiunge “Confronto settimanale” e “Trend delle debolezze”. La valutazione è una stima di Chessful, separata dalle valutazioni FIDE, Chess.com o Lichess.",
+     "q": "Chessful tiene traccia dei miei miglioramenti?"
+    },
+    {
+     "a": "No. Non c’è registrazione né un account Chessful. Le tue partite, le analisi e la cronologia di allenamento sono salvate sul tuo dispositivo. Game Center è facoltativo e gli acquisti passano dal tuo Apple Account.",
+     "q": "Serve un account per usare Chessful?"
+    },
+    {
+     "a": "No. Ogni dispositivo conserva le proprie partite e i propri progressi, e Chessful non ha la sincronizzazione con iCloud. L’acquisto di Pro però ti segue: l’acquisto universale copre iPhone, iPad e Mac, e “Ripristina acquisti” lo riporta su qualsiasi dispositivo con lo stesso Apple Account.",
+     "q": "Le mie partite si sincronizzano tra iPhone, iPad e Mac?"
+    },
+    {
+     "a": "Non per giocare contro le persone. Chessful non ha gioco online, abbinamento degli avversari né orologio; ogni partita è contro i suoi avversari integrati. Serve a rivedere e ad allenarsi: importa le tue partite di Chess.com o Lichess in PGN, leggi la spiegazione di ogni errore e allenati su quelle posizioni.",
+     "q": "Chessful sostituisce Chess.com o Lichess?"
+    },
+    {
+     "a": "No. Chessful gira su iPhone, iPad e Mac (solo Mac con chip Apple, non Mac Intel), con un solo acquisto universale per tutti e tre.",
+     "q": "Chessful funziona su Apple Watch o Apple Vision Pro?"
+    },
+    {
+     "a": "Sì, gratis. Impostazioni > “Stile scacchiera” offre sette scacchiere, da Noce e acero e Marmo a Vinile da club e Pietra da parco, e la scelta vale sia per la scacchiera 2D sia per quella 3D. Impostazioni > “Stile pezzi” offre quattro set per la scacchiera 2D: Staunton, Piatto, Legno moderno e Legno tornito. Con la scacchiera 3D attiva, Impostazioni > “Stile pezzi 3D” ne offre sette: Staunton, Marmo e onice, Torneo di club, Geometrico moderno, Vetro, Ottone e peltro e Giocattolo. Anche il passaggio dalla scacchiera 2D a quella 3D si fa nelle Impostazioni.",
+     "q": "Posso cambiare la scacchiera e i pezzi in Chessful?"
+    },
+    {
+     "a": "Sì. Chessful è tradotta in italiano, lezioni comprese. L’app esiste in 32 lingue in tutto (38 con le varianti regionali, come l’inglese britannico, lo spagnolo messicano o il portoghese brasiliano). Scegli la lingua di Chessful nelle Impostazioni di iOS, oppure in Impostazioni di Sistema su un Mac.",
+     "q": "Chessful è disponibile in italiano?"
+    }
+   ],
+   "seo": {
+    "description": "App scacchi che spiega ogni errore delle tue partite e poi ti allena su quelli. Stockfish sul dispositivo, 156 lezioni, 15.000 puzzle. iPhone, iPad, Mac."
+   },
+   "tagline": "Scacchi che spiegano i tuoi errori e poi ti allenano proprio su quelli.",
+   "url": "/it/apps/chessful/"
+  },
+  "clippet": {
+   "faq": [
+    {
+     "a": "Clippet è un gestore di appunti per iPhone, iPad e Mac. Conserva una cronologia di ciò che copi (testi, link, immagini, video, PDF, audio, file e codice) con un’anteprima di ciascun elemento, ti lascia cercare, fissare, taggare e dare un nome agli elementi e trova al loro interno numeri di telefono, indirizzi, date e codici. Gli elementi si sincronizzano con il tuo iCloud e non serve un account.",
+     "q": "Cos’è Clippet?"
+    },
+    {
+     "a": "No. iOS non permette a nessuna app di leggere gli appunti in background, quindi su iPhone e iPad Clippet salva la copia più recente a ogni apertura. Imposta “Incolla da altre app” su Consenti per Clippet e salva senza chiedere. Puoi anche salvare una copia senza aprire la libreria: tocca “Incolla ultima copia” nel widget “Ultimo elemento”, tocca Salva nella Tastiera Clippet oppure invia qualsiasi cosa a Clippet dal menu di condivisione. Su Mac, Clippet salva ogni copia in background finché è in esecuzione.",
+     "q": "Clippet salva gli appunti in background su iPhone?"
+    },
+    {
+     "a": "Sì, e gratis. La sincronizzazione iCloud tiene allineati elementi, bacheche, tag e nomi su iPhone, iPad e Mac attraverso il tuo database iCloud privato. Lagerland Apps non ha alcun server e non può leggere i tuoi elementi. Attivare o disattivare la sincronizzazione ha effetto al successivo avvio dell’app.",
+     "q": "Clippet si sincronizza tra iPhone e Mac?"
+    },
+    {
+     "a": "Scegli uno dei tuoi dieci elementi più recenti nella barra dei menu di Clippet per copiarlo, poi premi ⌘V. Con Clippet Pro, premi ⌥⌘V in qualsiasi app per aprire Incolla rapido: cerca o scegli uno dei tuoi 30 elementi più recenti e premi ⏎ per incollarlo, oppure ⌘⏎ per incollarlo come testo semplice. Incollare direttamente nell’app richiede il permesso di Accessibilità di macOS; senza, Clippet copia l’elemento e premi tu ⌘V. Puoi cambiare la scorciatoia in Impostazioni.",
+     "q": "Come incollo dalla cronologia degli appunti su Mac?"
+    },
+    {
+     "a": "Apri l’elemento in Clippet e tocca Copia, poi incolla come al solito. Con Clippet Pro puoi saltare il passaggio: passa alla Tastiera Clippet in qualsiasi app e tocca un elemento di testo, link o codice per inserirlo dove stai scrivendo. Un elemento immagine o file, fino a 8 MB, viene copiato e lo incolli tu. La tastiera ha bisogno di “Consenti accesso completo” per mostrare i tuoi elementi.",
+     "q": "Come incollo un elemento salvato su iPhone?"
+    },
+    {
+     "a": "Sì. Clippet si scarica gratis, e la versione gratuita salva tutti e otto i tipi di elemento, si sincronizza con iCloud e include ricerca, elementi fissati, tag, Azioni intelligenti, Blocco app, widget e la barra dei menu del Mac. La libreria gratuita mostra gli elementi fissati e gli ultimi 30 giorni. Clippet Pro aggiunge tutta la cronologia, le bacheche, Incolla rapido su Mac, i tuoi elementi nella Tastiera Clippet e le azioni personalizzate, a {P_MONTHLY}/mese, {P_YEARLY}/anno o {P_LIFETIME} a vita. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "Clippet è gratis?"
+    },
+    {
+     "a": "Restano salvati, sul tuo dispositivo, in iCloud e nei tuoi backup, e tornano in vista con Clippet Pro. Senza Pro sono nascosti dalla libreria, dalla ricerca e dai widget. Gli elementi fissati si vedono sempre, per quanto vecchi, e fissarli è gratis e senza limiti. Nulla viene eliminato perché Pro è finito; “Conserva cronologia” elimina solo ciò che imposti tu.",
+     "q": "Che fine fanno gli elementi più vecchi di 30 giorni senza Clippet Pro?"
+    },
+    {
+     "a": "Non quando il gestore di password contrassegna la copia come privata, ed è così che i gestori di password segnalano le password che copiano. Clippet salta quelle copie prima di leggerle; una copia non contrassegnata viene salvata come le altre. Riconosce anche un numero di carta di pagamento copiato e propone di eliminare quell’elemento dopo 30 minuti, o in un altro momento che imposti tu. Clippet non è un gestore di password né una cassaforte cifrata, quindi tieni le password dove devono stare.",
+     "q": "Clippet salva le password che copio?"
+    },
+    {
+     "a": "Clippet non richiede un account e non contiene pubblicità, analisi o codice di terze parti, e Lagerland Apps non gestisce alcun server per l’app. I tuoi elementi restano sui tuoi dispositivi e nel tuo iCloud privato. Una sola cosa esce: quando salvi un link, Clippet chiede a quel sito il titolo e l’immagine, come farebbe un browser. Disattiva “Scarica anteprime dei link” in Impostazioni e non lo fa mai.",
+     "q": "Clippet è privato?"
+    },
+    {
+     "a": "Sì, e gratis. Blocco app mette Clippet dietro Face ID, Touch ID, Optic ID o il codice del dispositivo (la password di login su un Mac), e blocca subito, dopo 1 minuto o dopo 5 minuti. Su Mac si blocca anche quando il Mac va in stop o blocca lo schermo. Le copie vengono comunque salvate mentre è bloccato, e i widget non mostrano elementi.",
+     "q": "Posso bloccare Clippet?"
+    },
+    {
+     "a": "No. Clippet è gratis su iPhone, iPad e Mac, e un solo acquisto di Clippet Pro sblocca Pro su tutti con lo stesso Apple Account. I piani Mensile, Annuale e A vita funzionano tutti con In famiglia.",
+     "q": "La versione per Mac è un acquisto a parte?"
+    },
+    {
+     "a": "Sì. “Crea backup” salva elementi, bacheche e tag in un file dove scegli tu, anche su iCloud Drive, e “Ripristina da backup” lo unisce alla tua libreria oppure la sostituisce. Il file non è cifrato, quindi gli elementi che contengono un numero di carta non vengono inclusi.",
+     "q": "Posso fare il backup dei miei elementi?"
+    },
+    {
+     "a": "iOS 26 o versioni successive su iPhone, iPadOS 26 o versioni successive su iPad e macOS 26 o versioni successive sul Mac. Clippet funziona offline; la sincronizzazione iCloud si aggiorna quando torni online.",
+     "q": "Cosa mi serve per usare Clippet?"
+    },
+    {
+     "a": "Sì. L’interfaccia di Clippet è tradotta in 40 lingue, tra cui italiano, tedesco, francese, spagnolo, giapponese, cinese, arabo ed ebraico.",
+     "q": "Clippet è disponibile in italiano?"
+    }
+   ],
+   "seo": {
+    "description": "Cronologia appunti per iPhone, iPad e Mac: tutto ciò che copi, sincronizzato con il tuo iCloud. Senza account e senza pubblicità."
+   },
+   "tagline": "Una cronologia degli appunti per iPhone, iPad e Mac che conserva ogni copia e ti aiuta a ritrovarla.",
+   "url": "/it/apps/clippet/"
+  },
+  "earnlock": {
+   "faq": [
+    {
+     "a": "EarnLock è un’app per iPhone che tiene bloccate le app che ti distraggono finché non raggiungi un obiettivo di attività giornaliero, misurato da Salute. A metà obiettivo se ne apre una parte per circa un’ora, una volta al giorno, e l’obiettivo pieno le apre tutte fino a mezzanotte. Bloccare un’app o una categoria con un obiettivo di passi è gratis per sempre. Premium aggiunge app illimitate, minuti di attività e calorie attive, l’app per Apple Watch, un’attività in tempo reale, pianificazioni intelligenti e analisi Settimana e Mese, a {P_MONTHLY}/mese o {P_YEARLY}/anno (entrambi con {TRIAL}) oppure {P_LIFETIME} una sola volta. Non c’è nessun account e i tuoi dati restano sul tuo iPhone.",
+     "q": "Cos’è EarnLock?"
+    },
+    {
+     "a": "Quelle app mettono una pausa, un timer o un tocco tra te e l’app. EarnLock ci mette un obiettivo di attività giornaliero, misurato da Salute: a metà strada se ne apre una parte per circa un’ora, una volta al giorno, e l’obiettivo pieno le apre tutte fino a mezzanotte. Parte inoltre con una settimana di osservazione che non blocca niente e conta quante volte il blocco ti avrebbe fermato, così il primo blocco vero si adatta alla tua abitudine. Non richiede un account, bloccare un’app è gratis per sempre e Premium è disponibile mensile, annuale o come acquisto unico a {P_LIFETIME}.",
+     "q": "In cosa EarnLock è diversa da Opal, one sec, ScreenZen o Forest?"
+    },
+    {
+     "a": "Qualsiasi app o intera categoria che puoi scegliere nel selettore di Tempo di utilizzo di Apple. Il piano gratuito blocca un’app o una categoria, e Premium non ha limiti. Il selettore dà a EarnLock token opachi, quindi l’app non vede mai i nomi di ciò che hai scelto.",
+     "q": "Quali app può bloccare EarnLock su iPhone?"
+    },
+    {
+     "a": "Scegli un’unità e un obiettivo giornaliero: passi nel piano gratuito, oppure minuti di attività o calorie attive con Premium. I livelli predefiniti sono Leggero, Standard e Sfida (4.000, 8.000 o 12.000 passi), oppure puoi impostare un numero tuo o scegliere Adattivo. EarnLock legge i tuoi progressi da Salute sul tuo iPhone. Al 50% si apre una parte delle app che hai scelto una per una, per una finestra proporzionata ai tuoi progressi, circa un’ora a metà obiettivo, una volta al giorno; le intere categorie aspettano il 100%. Al 100% tutto resta aperto fino a mezzanotte. Sotto il 50% tutto resta bloccato, e a mezzanotte la giornata riparte.",
+     "q": "Come funziona l’obiettivo giornaliero?"
+    },
+    {
+     "a": "Sì, con Premium. L’app per Watch legge i suoi dati di Salute e mostra il tuo anello, il tuo conteggio e quanto manca allo sblocco, più un pulsante Rifletti. Le complicazioni sono in stile circolare, angolare, in linea e rettangolare. Senza Premium l’app per Watch mostra uno stato bloccato. L’iPhone resta il dispositivo che blocca e sblocca le tue app, e passa all’orologio il tuo stato Premium.",
+     "q": "EarnLock funziona su Apple Watch?"
+    },
+    {
+     "a": "Usa lo sblocco di emergenza nelle Impostazioni. Risolvi un calcolo con numeri a due cifre, scegli 15, 30 o 60 minuti e le tue app si aprono. Ne hai uno al giorno. Il calcolo basta come attrito per fermare un riflesso ed è abbastanza rapido per una necessità vera.",
+     "q": "E se ho davvero bisogno di un’app bloccata per qualcosa di urgente?"
+    },
+    {
+     "a": "Ogni giorno in cui raggiungi l’obiettivo pieno allunga la tua serie. Puoi scegliere un giorno di riposo settimanale, e se in quel giorno manchi l’obiettivo la serie non si spezza. Con Premium, ogni settimo giorno in cui raggiungi il 150% dell’obiettivo, contato in totale e non di fila, mette da parte uno scudo serie. Puoi tenerne tre, e uno scudo copre in automatico un giorno mancato. Il promemoria di serie a rischio è uno dei tipi di notifica che puoi disattivare, e le ore di silenzio tengono i promemoria fuori dalla notte.",
+     "q": "Come funzionano le serie e i giorni di riposo?"
+    },
+    {
+     "a": "Bloccare un’app o una categoria con un obiettivo di passi è gratis per sempre. Il piano gratuito include sblocchi parziali e completi, la schermata che mostra cosa manca su ogni app bloccata, la settimana di osservazione, tutti i widget, le serie con un giorno di riposo settimanale, la vista Giorno di Analisi, Rifletti con un tocco e lo sblocco di emergenza. Premium aggiunge app illimitate, minuti di attività e calorie attive, l’app per Apple Watch e le complicazioni, l’attività in tempo reale, le pianificazioni intelligenti, le analisi Settimana e Mese con il registro delle riflessioni, gli scudi serie, un salto una volta alla settimana dell’attesa di 24 ore per abbassare l’obiettivo e tre icone alternative. Premium costa {P_MONTHLY}/mese o {P_YEARLY}/anno, entrambi con {TRIAL}, oppure {P_LIFETIME} una sola volta, e tutti e tre i piani sono compatibili con In famiglia.",
+     "q": "EarnLock è gratis? Cosa sblocca Premium?"
+    },
+    {
+     "a": "No. EarnLock non ha un account, non effettua connessioni di rete per conto suo e non contiene SDK di analytics, pubblicità o altri SDK di terze parti. EarnLock legge Salute sul tuo iPhone, non ci scrive mai e non invia i dati da nessuna parte. I tuoi obiettivi, le serie, le riflessioni e le pianificazioni sono memorizzati sul dispositivo. Il selettore di Tempo di utilizzo dà a EarnLock token opachi, quindi l’app non può vedere quali app hai scelto. L’informativa sulla privacy ha i dettagli.",
+     "q": "EarnLock raccoglie dati?"
+    },
+    {
+     "a": "Sì. In Impostazioni, Dati e privacy, “Esporta i miei dati” crea un unico file con il tuo obiettivo, la serie e i registri giornalieri, il registro delle riflessioni, le pianificazioni e le impostazioni delle notifiche; i campioni di Salute restano in Salute. “Elimina tutti i dati” ti chiede di digitare DELETE, poi cancella ciò che EarnLock memorizza e rimuove i suoi blocchi.",
+     "q": "Posso esportare o eliminare i miei dati di EarnLock?"
+    },
+    {
+     "a": "No. EarnLock è fatta per limitare il tuo iPhone. Non ha un lato genitore: niente da gestire a distanza e nessun codice che un’altra persona possa tenere. Per il dispositivo di un bambino, usa Tempo di utilizzo con In famiglia nelle Impostazioni di iOS.",
+     "q": "EarnLock si può usare come controllo parentale?"
+    },
+    {
+     "a": "iPhone con iOS 17 o successivo, in verticale. L’app per Apple Watch di Premium richiede watchOS 10 o successivo. Il comando per il Centro di Controllo richiede iOS 18, e i widget a pagina intera richiedono iOS 27. EarnLock ha bisogno dell’accesso a Salute e a Tempo di utilizzo per funzionare. Non esiste una versione per iPad, Mac o Android.",
+     "q": "Su quali dispositivi funziona EarnLock?"
+    },
+    {
+     "a": "Sì. Mensile, Annuale e A vita sono tutti compatibili con In famiglia, quindi anche i membri del tuo gruppo Famiglia Apple possono usare Premium. Gli obiettivi, le app bloccate e le serie di ognuno restano sul suo iPhone.",
+     "q": "EarnLock è compatibile con In famiglia?"
+    },
+    {
+     "a": "Sì. A vita è un unico pagamento di {P_LIFETIME} senza rinnovo, e si ripristina con il tuo Apple Account se passi a un nuovo iPhone. App Store mostra il prezzo prima che tu confermi.",
+     "q": "A vita è davvero un pagamento unico?"
+    },
+    {
+     "a": "È una stima, e la scheda lo dice. iOS non permette alle app di leggere il tuo vero tempo di utilizzo per app, quindi EarnLock conta ciò che riesce a vedere: ogni volta che un’app bloccata ti ferma. Moltiplica quei tentativi per 9 minuti.",
+     "q": "Quanto è accurata la stima del tempo di utilizzo risparmiato?"
+    }
+   ],
+   "seo": {
+    "description": "Blocca Instagram, TikTok o qualsiasi app su iPhone finché non raggiungi l’obiettivo di passi. Gratis per un’app, senza account, dati sul dispositivo."
+   },
+   "tagline": "Blocca le app che ti distraggono finché non te le guadagni con i passi.",
+   "url": "/it/apps/earnlock/"
+  },
+  "gymlogger-x": {
+   "faq": [
+    {
+     "a": "GymLogger X è un’app per registrare gli allenamenti di forza su iPhone, con app per Apple Watch. Segni le serie con i numeri dell’ultima volta già nella riga, segui uno dei 44 programmi pronti o uno creato dallo Smart Program Creator e, con Pro, ricevi segnali di plateau, fatica ed equilibrio muscolare dai tuoi allenamenti. Ha 1.500 esercizi (dimostrazioni animate con Pro) ed è disponibile in 40 lingue. L’essenziale è gratis; Pro costa {P_MONTHLY}/mese o {P_YEARLY}/anno, ciascuno con {TRIAL} all’inizio, oppure {P_LIFETIME} con un acquisto unico.",
+     "q": "Cos’è GymLogger X?"
+    },
+    {
+     "a": "GymLogger X non richiede un account; quando abbiamo controllato il 13 maggio 2026, Strong, Hevy e Fitbod chiedevano tutti di registrarsi. La sua app Apple Watch è gratuita e ha un timer di riposo che può dirti quando la frequenza cardiaca ha recuperato. Pro si compra in abbonamento o con un acquisto unico a vita. E il suo coaching si basa su regole e viene calcolato sul tuo iPhone dai tuoi allenamenti, senza chatbot. I confronti entrano nei dettagli: <a href=\"/alternatives/strong-workout-app/\" hreflang=\"en\">Strong (in inglese)</a> e <a href=\"/alternatives/fitbod/\" hreflang=\"en\">Fitbod (in inglese)</a>.",
+     "q": "In che cosa GymLogger X è diverso da Strong, Hevy e Fitbod?"
+    },
+    {
+     "a": "È una procedura guidata che costruisce un programma partendo da attrezzatura, obiettivi, infortuni, giorni disponibili e preferenze. Scegli una divisione (full body, upper/lower, push/pull/legs, push/pull, Arnold o bro split), i giorni a settimana, la durata della sessione, una durata di 4, 8 o 12 settimane o senza scadenza, e una periodizzazione lineare, ondulatoria, a blocchi o a onde. Gli infortuni si inseriscono per parte del corpo, con i movimenti da evitare. L’anteprima mostra le settimane di scarico, un riscaldamento preventivo e gli adattamenti per gli infortuni, e prima di iniziare puoi sostituire un esercizio o rigenerare. È gratuito; senza Pro tieni un programma alla volta.",
+     "q": "Cos’è lo Smart Program Creator?"
+    },
+    {
+     "a": "Non durante la registrazione. Una serie registrata contiene peso e ripetizioni, più l’indicazione se era di riscaldamento; non c’è un campo RPE o RIR per serie, e le analisi, stato di plateau compreso, partono da peso e ripetizioni. <a href=\"/journal/rpe-and-rir-explained/\" hreflang=\"en\">RPE and RIR, explained (in inglese)</a> spiega cosa significa se valuti ogni serie.",
+     "q": "GymLogger X gestisce RPE e RIR?"
+    },
+    {
+     "a": "No. GymLogger X non calcola i punteggi Wilks, DOTS o Sinclair. Stima il 1RM di ogni esercizio con la formula di Epley, tiene una tabella dei massimali e i tuoi record personali e ha un calcolo dischi per caricare il bilanciere.",
+     "q": "GymLogger X calcola Wilks, DOTS o Sinclair?"
+    },
+    {
+     "a": "No. L’app Apple Watch è un’app complementare: avvii l’allenamento sull’iPhone, e le serie registrate sull’orologio passano dal telefono. Al polso registri peso e ripetizioni, vedi frequenza cardiaca, tempo e calorie e usi il timer di riposo. Frequenza cardiaca e calorie richiedono l’autorizzazione a Salute sull’orologio.",
+     "q": "GymLogger X funziona su Apple Watch senza iPhone?"
+    },
+    {
+     "a": "GymLogger X stima il tuo 1RM per ogni esercizio con la formula di Epley, dalle serie da 3 ripetizioni in su, e segue la tendenza nelle sessioni. Con Pro, “Progresso di forza” dà a ogni esercizio uno stato (plateau, da osservare o plateau previsto) e un punteggio di sovraccarico, e la scheda “Prossima mossa” lo trasforma in un suggerimento, come un giorno di riposo o un cambio di approccio. Tutto gira sul tuo iPhone con regole fisse. Non modifica il tuo programma e non invia notifiche; decidi tu cosa fare.",
+     "q": "Come funziona il rilevamento dei plateau?"
+    },
+    {
+     "a": "Registrare gli allenamenti è gratis per sempre: allenamenti illimitati su iPhone e Apple Watch, il timer di riposo con frequenza cardiaca, 1.500 esercizi, un programma alla volta (6 programmi gratuiti, uno tuo o uno dello Smart Program Creator), 3 modelli, gli ultimi 30 giorni di cronologia, esportazione in Salute e sincronizzazione iCloud. Pro sblocca tutti i 44 programmi, programmi e modelli illimitati, l’intera cronologia, le analisi, i segnali di recupero e di plateau, la mappa termica muscolare, le dimostrazioni animate, gli esercizi personalizzati, l’importazione CSV, tutti i widget e 8 temi colore. Pro costa {P_MONTHLY}/mese o {P_YEARLY}/anno, entrambi con {TRIAL}, oppure {P_LIFETIME} con un acquisto unico, ed è compatibile con In famiglia. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "GymLogger X è gratis? Cosa sblocca Pro?"
+    },
+    {
+     "a": "Se hai avviato un programma Pro mentre eri abbonato, puoi finirlo anche dopo la fine dell’abbonamento. Per tutto il resto valgono i limiti della versione gratuita: un programma attivo, 3 modelli e gli ultimi 30 giorni di cronologia, con le sessioni più vecchie conservate e di nuovo sbloccate quando passi a Pro.",
+     "q": "Cosa succede al mio programma se l’abbonamento Pro termina?"
+    },
+    {
+     "a": "No. Non c’è nessun account da creare, e puoi registrare gli allenamenti del tutto offline, dimostrazioni degli esercizi comprese. Gli allenamenti restano sul tuo iPhone e si sincronizzano con il tuo iCloud privato quando hai effettuato l’accesso a iCloud, e gli allenamenti terminati vengono salvati in Salute. L’app non ha un server proprio, quindi i tuoi allenamenti non vengono mai inviati a noi.",
+     "q": "GymLogger X richiede un account o una connessione a internet?"
+    },
+    {
+     "a": "Non c’è un’esportazione in file. Ogni allenamento terminato viene salvato in Salute come sessione di allenamento di forza, qualsiasi allenamento può essere condiviso come testo, e il riepilogo dell’allenamento e il “Riepilogo settimanale” si possono condividere come immagini. Arrivi da un’altra app o da un foglio di calcolo? Pro importa gli allenamenti da file CSV, TSV o TXT, con un passaggio per abbinare le colonne.",
+     "q": "Posso esportare i miei dati se smetto di usare l’app?"
+    },
+    {
+     "a": "Crealo con Pro. Un esercizio personalizzato ha un nome, un’attrezzatura e dei gruppi muscolari, e lo registri come qualsiasi esercizio incluso. Pro ti permette anche di modificare nome, attrezzatura e muscoli degli esercizi inclusi e di ripristinarli ai valori predefiniti.",
+     "q": "E se il mio esercizio non c’è tra i 1.500 della libreria?"
+    },
+    {
+     "a": "Sì. L’app, i widget e l’app Apple Watch sono in italiano.",
+     "q": "GymLogger X è in italiano?"
+    }
+   ],
+   "seo": {
+    "description": "App scheda palestra per Apple Watch e iPhone: 1.500 esercizi, 44 programmi e segnali di plateau e fatica dai tuoi allenamenti. Gratis, senza account."
+   },
+   "tagline": "Registra le serie al volo, segui una scheda collaudata e scopri presto quando un esercizio si ferma.",
+   "url": "/it/apps/gymlogger-x/"
+  },
+  "liftlog": {
+   "faq": [
+    {
+     "a": "LiftLog è un’app per l’allenamento in palestra su iPhone. Inserisci peso e ripetizioni su un tastierino fisso, ogni serie è compilata partendo dall’ultima sessione e il timer di riposo parte quando spunti una serie. Include 1500 esercizi con demo animate, 40 programmi pronti che possono suggerirti il peso successivo, avvisi sui record personali, grafici dei progressi, 10 widget e azioni per Siri. È gratis per 7 giorni senza carta, poi un acquisto unico da {P_IAP:Minimum} a {P_IAP:Patron}.",
+     "q": "Cos’è LiftLog?"
+    },
+    {
+     "a": "Non c’è nessun abbonamento. LiftLog è gratis per 7 giorni, senza bisogno di una carta. Poi lo acquisti una volta sola al livello che scegli: {P_IAP:Minimum} (Equo), {P_IAP:Suggested} (Buono), {P_IAP:Supporter} (Generoso) oppure {P_IAP:Patron} (Mecenate). Ogni livello sblocca la stessa app, niente si rinnova, gli aggiornamenti futuri sono inclusi e In famiglia è attivo: un solo acquisto copre il tuo gruppo famiglia.",
+     "q": "Quanto costa LiftLog e c’è un abbonamento?"
+    },
+    {
+     "a": "Se non acquisti, mantieni l’accesso in lettura. Cronologia, dettagli degli allenamenti, grafici di Progresso, libreria degli esercizi, calcolatore dischi, widget, risposte di Siri, esportazione e importazione dei dati ed “Eliminati di recente” restano gratuiti, e un allenamento già iniziato si può concludere. Per avviare nuovi allenamenti, modificare i programmi, creare esercizi personalizzati, modificare le serie registrate e registrare il peso corporeo serve l’acquisto unico.",
+     "q": "Cosa succede quando finisce la prova di 7 giorni?"
+    },
+    {
+     "a": "LiftLog ti lascia pagare quello che ti sembra giusto. Tutti e quattro i livelli sbloccano esattamente la stessa app; gli importi più alti aiutano a finanziarne lo sviluppo. <a href=\"/journal/liftlog-pay-what-you-can/\" hreflang=\"en\">L’articolo di lancio del blog (in inglese)</a> spiega il ragionamento.",
+     "q": "Perché ci sono quattro prezzi per la stessa app?"
+    },
+    {
+     "a": "Sono entrambe app per l’allenamento con i pesi di Lagerland Apps. LiftLog funziona solo su iPhone e si acquista una volta sola dopo 7 giorni di prova, con 40 programmi pronti, suggerimenti intelligenti sui pesi e 10 widget. <a href=\"/it/apps/gymlogger-x/\">GymLogger X</a> è un’app separata, con una sua app per Apple Watch. Scegli GymLogger X se vuoi registrare le serie dal polso; la sua pagina elenca funzioni e prezzi.",
+     "q": "In cosa LiftLog è diversa da GymLogger X?"
+    },
+    {
+     "a": "No. LiftLog funziona solo su iPhone e non ha un’app per Apple Watch. Se lo attivi, può salvare gli allenamenti completati in Salute, così contano per i tuoi anelli Attività.",
+     "q": "LiftLog funziona con Apple Watch?"
+    },
+    {
+     "a": "In “Sfoglia modelli” trovi 40 programmi basati su routine note come StrongLifts 5×5, Starting Strength, Greyskull LP, Wendler 5/3/1, Texas Method, GZCLP, nSuns 531 LP, PHUL, PHAT e German Volume Training. Venti puntano sulla forza, 17 sull’ipertrofia e 3 sono generali; 10 sono per principianti, 22 per livello intermedio e 8 per esperti. Ognuno si carica con serie, ripetizioni e riposo già impostati e puoi crearne di tuoi. I nomi dei programmi appartengono ai rispettivi proprietari, che non approvano LiftLog.",
+     "q": "Quali programmi include LiftLog?"
+    },
+    {
+     "a": "Sì. Dai a un esercizio del programma uno schema di progressione (doppia progressione, lineare, % del massimale d’allenamento oppure RPE / RIR) e LiftLog compila ogni serie in sospeso con il peso che il programma prescrive. A fine allenamento, un riepilogo della progressione segna ogni esercizio come “Progredito”, “Mantieni”, “Mancato” o “Scarico”. I suggerimenti intelligenti sui pesi sono attivi di default e si possono disattivare in Impostazioni.",
+     "q": "LiftLog può suggerirmi il peso del prossimo allenamento?"
+    },
+    {
+     "a": "Sì. Un badge con il miglioramento compare nel momento in cui una serie batte lo storico del tuo 1RM stimato. La pagina di ogni esercizio tiene i tuoi record personali (1RM stimato, serie migliore e miglior volume) e i record di ripetizioni, con grafici di 1RM stimato, volume e RPE medio. La formula del 1RM la scegli in Impostazioni: Adattiva (consigliata), Brzycki o Epley. Le serie di riscaldamento non contano mai.",
+     "q": "LiftLog tiene traccia dei record personali e del 1RM?"
+    },
+    {
+     "a": "Sì, come opzione. Aggiungi un RPE da 1 a 10 modificando una serie dopo l’allenamento; sulla riga della serie in corso non c’è un campo RPE. Ogni esercizio ottiene poi un grafico dell’RPE medio e gli esercizi con lo schema di progressione RPE / RIR usano quello che inserisci.",
+     "q": "Si può registrare l’RPE in LiftLog?"
+    },
+    {
+     "a": "No. LiftLog non richiede nessun account e ogni funzione è disponibile offline, comprese tutte le 1500 animazioni degli esercizi. Internet serve solo per acquistare, ripristinare un acquisto o aprire un link. I tuoi allenamenti restano sul tuo iPhone e Lagerland Apps non li riceve mai.",
+     "q": "LiftLog richiede un account o una connessione a internet?"
+    },
+    {
+     "a": "Non c’è nessuna sincronizzazione con iCloud né tra dispositivi. Per spostare la cronologia, esporta un backup JSON da Impostazioni e importalo sul nuovo iPhone. Puoi anche esportare un file CSV in qualsiasi momento.",
+     "q": "LiftLog si sincronizza con iCloud? Come passo a un nuovo iPhone?"
+    },
+    {
+     "a": "No. LiftLog importa solo il proprio backup JSON. Puoi esportare tutta la cronologia da LiftLog in JSON o CSV quando vuoi.",
+     "q": "Posso importare gli allenamenti da Strong, Hevy o un’altra app?"
+    },
+    {
+     "a": "Sì. Apri il calcolatore dischi dalla barra degli strumenti dell’allenamento o da Impostazioni, inserisci un peso obiettivo e ti mostra quali dischi mettere su ogni lato del bilanciere e il totale. Indica quando basta il solo bilanciere o quando il peso non si può caricare in modo esatto. Resta disponibile anche dopo la prova.",
+     "q": "C’è un calcolatore dischi?"
+    },
+    {
+     "a": "Sì. Di’ “Inizia il mio prossimo allenamento con LiftLog”, oppure avvia un allenamento salvato dal nome. Durante un allenamento, Siri può registrare la serie in corso e far partire il timer di riposo. Puoi anche chiedere la tua costanza di allenamento o il volume di questa settimana senza aprire l’app. Tutte e sei le azioni sono anche nell’app Comandi Rapidi.",
+     "q": "Posso usare Siri con LiftLog?"
+    },
+    {
+     "a": "Sì. L’interfaccia dell’app è tradotta in molte lingue, tra cui italiano, tedesco, francese, spagnolo, giapponese e arabo. Nomi e istruzioni degli esercizi sono disponibili in 23 lingue e puoi scegliere la lingua degli esercizi separatamente da quella dell’app.",
+     "q": "LiftLog è in italiano?"
+    },
+    {
+     "a": "Aggiorniamo questa pagina a ogni versione su App Store; le date sono nel piè di pagina. I quattro livelli a pagamento unico ({P_IAP:Minimum} / {P_IAP:Suggested} / {P_IAP:Supporter} / {P_IAP:Patron}) e la prova di 7 giorni senza carta corrispondono a quanto indicato su App Store. Se App Store mostra prezzi diversi, vale App Store.",
+     "q": "Le informazioni di questa pagina sono aggiornate?"
+    }
+   ],
+   "seo": {
+    "description": "App diario allenamento palestra per iPhone: 1500 esercizi animati, 40 programmi, timer di riposo e avvisi di record. 7 giorni gratis, poi paghi una volta."
+   },
+   "tagline": "Il diario di palestra che paghi una volta e tieni.",
+   "url": "/it/apps/liftlog/"
+  },
+  "mediakit": {
+   "faq": [
+    {
+     "a": "MediaKit è un’app per iPhone e Mac con più di 150 strumenti per comprimere, convertire e modificare video, audio, immagini, PDF, archivi ed ebook. Trascini un file, MediaKit ti propone gli strumenti adatti e ognuno funziona sul tuo dispositivo. Cinque strumenti sono gratuiti per sempre e Pro sblocca tutto il resto, con un solo acquisto che vale per iPhone e Mac.",
+     "q": "Cos’è MediaKit?"
+    },
+    {
+     "a": "No. Ogni strumento funziona sul tuo iPhone o sul tuo Mac e l’app non fa richieste di rete per conto suo; solo gli acquisti passano da App Store di Apple. Non c’è alcun account e l’app non ha SDK di analisi. La trascrizione e i sottotitoli automatici usano il riconoscimento vocale sul dispositivo.",
+     "q": "MediaKit carica i miei file online?"
+    },
+    {
+     "a": "Trascina il video in MediaKit e scegli Comprimi. Imposta una dimensione di destinazione e MediaKit calcola il bitrate; non la supera mai e, se non riesce a raggiungerla, si ferma con un errore. La schermata dello strumento mostra la dimensione stimata prima dell’esecuzione e il risultato mostra lo spazio risparmiato. Comprimi video è uno dei cinque strumenti gratuiti. Con Pro, “Fai entrare” può anche migliorare una clip, trasformarla in 9:16 e portarla sotto i 25 MB per i post social in un solo passaggio.",
+     "q": "Come comprimere un video su iPhone per rispettare un limite di dimensioni?"
+    },
+    {
+     "a": "Video: converte in MP4, MOV o M4V con H.264, HEVC o ProRes (ProRes viene scritto in .mov). Gli MKV si aprono direttamente, perché MediaKit li scompatta da sé (l’audio DTS, E-AC-3 e MP3 dentro un MKV viene scartato, con un avviso). Audio: legge formati come MP3 e FLAC e scrive M4A (AAC), WAV, AIFF, ALAC e CAF. Immagini: HEIC, JPG, PNG, TIFF, GIF, WebP (dove il tuo sistema sa scriverlo), BMP e JPEG 2000, più RAW delle fotocamere, AVIF, PSD ed EXR in ingresso. Ebook: EPUB, FB2, MOBI e AZW3 (solo lettura), PDF, TXT, HTML, CBZ e RTF. Archivi: ZIP, TAR, TAR.GZ, GZIP, XZ e BZIP2, più RAR4 e RAR5 per l’estrazione. WebM, la creazione di RAR, i RAR cifrati e i libri Kindle protetti da DRM non sono supportati.",
+     "q": "Quali formati di file supporta MediaKit?"
+    },
+    {
+     "a": "Sì, per iniziare. Per i tuoi primi 3 giorni tutti gli strumenti funzionano, con un’esportazione per esecuzione e senza pagamento. Dopo, cinque strumenti restano gratuiti per sempre, un file alla volta: Comprimi video, Comprimi immagine, Ridimensiona, Converti audio e Comprimi PDF. Pro sblocca tutti gli altri strumenti, l’elaborazione in batch e le esportazioni illimitate a {P_MONTHLY}/mese o {P_YEARLY}/anno, ciascuno con {TRIAL} per iniziare, oppure {P_LIFETIME} a vita, e tutti e tre sono compatibili con In famiglia. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "MediaKit è gratis?"
+    },
+    {
+     "a": "Sì. Ogni strumento funziona sul tuo dispositivo, quindi MediaKit funziona senza connessione a internet. L’unica eccezione è la traduzione dei sottotitoli (con iOS 18 o macOS 15 e versioni successive), che usa i pacchetti lingua di Traduzione di Apple: il tuo iPhone o Mac li scarica la prima volta.",
+     "q": "MediaKit funziona offline?"
+    },
+    {
+     "a": "Su iPhone con iOS 17 o versioni successive e su Mac con macOS 14.6 (Sonoma) o versioni successive. Un solo acquisto vale per entrambi. Non esiste una versione per iPad. Alcuni extra sono solo per Mac: “Automazione cartelle”, la voce nella barra dei menu, “Apri con” dal Finder e le anteprime Try-It con ⌘T. L’estensione del foglio di condivisione, la scheda “Libreria” e il salvataggio in Foto sono su iPhone.",
+     "q": "Su quali dispositivi funziona MediaKit?"
+    },
+    {
+     "a": "Sì. Con Pro salvi qualsiasi catena di strumenti come ricetta e la esegui su nuovi file. Su Mac, “Automazione cartelle” esegue una ricetta su ogni file che arriva in una cartella a tua scelta. Su iPhone e Mac, sei azioni nell’app Comandi Rapidi coprono Comprimi video, Converti immagine, Comprimi immagine, Unisci PDF, Crea ZIP ed Estrai testo dall’immagine.",
+     "q": "Si può automatizzare MediaKit?"
+    },
+    {
+     "a": "I convertitori online caricano il tuo file su un server, lo elaborano lì e te lo rimandano. MediaKit fa gli stessi lavori sul tuo iPhone o sul tuo Mac, quindi un contratto, una scansione o un video di famiglia non lascia mai il dispositivo e non c’è nessun caricamento da aspettare. Inoltre copre sei tipi di file in un’unica app, mostra la dimensione stimata prima di eseguire uno strumento e ti lascia confrontare il risultato con l’originale.",
+     "q": "In cosa MediaKit è diverso dai convertitori online?"
+    }
+   ],
+   "seo": {
+    "description": "Comprimi video su iPhone e Mac senza caricarli online. MediaKit ha più di 150 strumenti per video, audio, immagini e PDF, e cinque sono gratuiti."
+   },
+   "tagline": "Più di 150 strumenti per video, audio, immagini, PDF e molto altro, direttamente sul tuo dispositivo.",
+   "url": "/it/apps/mediakit/"
+  },
+  "millrace": {
+   "faq": [
+    {
+     "a": "Un gioco di logica a tessere, con livelli. Ogni livello ti dà un tabellone di partenza definito, una coda fissa di tessere in arrivo e un limite di mosse. Le tessere arrivano una alla volta sulla cella di arrivo, le tessere uguali si uniscono quando le fai scorrere l’una contro l’altra e il tuo obiettivo è formare un numero preciso sulla cella segnata. Dentro un livello non c’è nulla di casuale e ogni livello ha una soluzione più breve dimostrata.",
+     "q": "Che tipo di gioco di logica è Millrace?"
+    },
+    {
+     "a": "Lo controlla un solver prima che il livello esca. Ogni livello passa da una ricerca in ampiezza che trova la sua soluzione più breve e un livello senza soluzione dimostrata non esce. Un test automatico verifica anche che il gioco casuale vinca di rado. La soluzione più breve è il minimo possibile che ti mostra la scheda del risultato.",
+     "q": "Come si fa a essere sicuri che ogni livello sia risolvibile?"
+    },
+    {
+     "a": "Bloccare la cella di arrivo e superare l’obiettivo. Nuove tessere continuano ad arrivare sulla cella di arrivo, quindi se una tessera la occupa, il prossimo arrivo non ha dove posarsi. Se formi un numero oltre l’obiettivo (un 128 quando il livello chiede 64), l’obiettivo è perso. Dopo una sconfitta puoi annullare quella mossa o riprovare il livello.",
+     "q": "Quali sono i due modi di perdere?"
+    },
+    {
+     "a": "Sì: il Gioco libero, a un tocco dall’elenco dei livelli. Non ha obiettivo né limite di mosse: fai scorrere le tessere, unisci quelle uguali e gioca finché puoi. Conserva le tue statistiche e le tue serie, mentre la Sfida giornaliera dà a tutti i giocatori lo stesso tabellone ogni giorno.",
+     "q": "C’è una modalità infinita?"
+    },
+    {
+     "a": "Niente per tutto il gioco. I 64 livelli, il Gioco libero, la Sfida giornaliera, il Suggerimento, le note dell’allenatore e Game Center sono gratis, senza pubblicità e senza abbonamento. Gli unici acquisti sono facoltativi: pacchetti di temi a {P_IAP:Millrace Designer Pack 1} ciascuno oppure tutti e sedici i temi a pagamento nella Collezione completa a {P_IAP:Millrace Complete Collection}, pacchetti di annullamenti da {P_IAP:Millrace Undo 10} e una mancia da {P_IAP:Millrace Tip Jar} che non sblocca nulla.",
+     "q": "Quanto costa Millrace?"
+    },
+    {
+     "a": "No. L’annullamento dentro un livello è gratis e illimitato e puoi riprovare ogni livello quante volte vuoi. I gettoni servono per il Gioco libero: ne arriva uno gratis ogni giorno finché ne hai meno di tre, la tua prima mossa nella Sfida giornaliera ne dà uno e le serie di 3, 7, 14 e 30 giorni ne danno altri 2, 5, 10 e 20. I pacchetti da 10, 50 o 200 ci sono se ne vuoi di più.",
+     "q": "Devo comprare dei gettoni di annullamento?"
+    },
+    {
+     "a": "Quando una partita finisce, una breve nota nella scheda di fine partita può indicare un’abitudine notata nelle tue ultime partite: tenere la tessera più grande in un angolo, non lasciare che il tabellone si riempia o tenere insieme le tessere grandi in ordine di grandezza. Un’abitudine smette di comparire quando l’hai corretta. Le note non compaiono mai durante il gioco, niente lascia il tuo dispositivo e puoi disattivare “Note dell’allenatore” in Impostazioni.",
+     "q": "A cosa servono le note dell’allenatore e si possono disattivare?"
+    },
+    {
+     "a": "Sì. Tutto il gioco funziona offline. Hai bisogno di una connessione solo per il negozio e per “Ripristina acquisti”, per Game Center se lo usi e per i link che apri, come l’informativa sulla privacy.",
+     "q": "Millrace funziona offline?"
+    },
+    {
+     "a": "Non serve nessun account e l’app non ha tracciamento né SDK di analisi, di pubblicità o di terze parti. I tuoi progressi, le statistiche e le impostazioni restano sul tuo dispositivo. Gli acquisti e Game Center, se li usi, passano da Apple, e un’email di assistenza che scegli di inviare include la versione dell’app, il modello del dispositivo, la versione di iOS, la lingua e la regione. L’informativa sulla privacy ha tutti i dettagli.",
+     "q": "Millrace raccoglie dati su di me?"
+    },
+    {
+     "a": "Millrace funziona su iPhone e iPad con iOS o iPadOS 18 o successivo. Su iPad funziona in ogni orientamento. Non esiste una versione per Mac, Apple Watch o Android. I progressi sono salvati su ogni dispositivo e non si sincronizzano; Game Center conserva le tue posizioni in classifica e i tuoi obiettivi se accedi.",
+     "q": "Funziona su iPad e Mac e i progressi si sincronizzano?"
+    },
+    {
+     "a": "Sì. L’interfaccia è in italiano, una delle 40 localizzazioni dell’app.",
+     "q": "Millrace è in italiano?"
+    },
+    {
+     "a": "Il millrace è il canale che porta l’acqua alla ruota di un mulino, un flusso costante che arriva in un punto. Nel gioco le tessere continuano ad arrivare su una cella e tu la tieni libera mentre costruisci verso l’obiettivo.",
+     "q": "Perché si chiama Millrace?"
+    }
+   ],
+   "seo": {
+    "description": "Gioco di logica per iPhone e iPad: 64 livelli, ognuno con la soluzione più breve dimostrata, più Gioco libero e Sfida giornaliera. Gratis e offline."
+   },
+   "tagline": "Un gioco di tessere in cui ogni livello ha una soluzione più breve dimostrata.",
+   "url": "/it/apps/millrace/"
+  },
+  "mockly": {
+   "faq": [
+    {
+     "a": "Mockly è un’app per Mac per creare screenshot per App Store. Metti i tuoi screenshot reali su modelli 3D di iPhone, iPad, MacBook Pro e Apple Watch, aggiungi testi, immagini e sfondi e tieni fino a 50 lingue di App Store in un solo progetto. Esporta file PNG o HEIC nelle dimensioni esatte oppure carica le pagine su App Store Connect. Costa {P_APP} una sola volta, senza abbonamento.",
+     "q": "Che cos’è Mockly?"
+    },
+    {
+     "a": "Mockly è un’app per Mac che compri una volta sola. Un solo progetto contiene tutte le 50 lingue di App Store, ciascuna con il suo testo, i suoi screenshot e il suo layout dove ti servono, e la traduzione passa dalla tua chiave dell’IA o da un file CSV. I dispositivi sono modelli 3D che puoi ruotare sui tre assi. Quando il set è finito, Mockly lo carica su App Store Connect con la tua chiave API, così non devi trascinare i file nel browser.",
+     "q": "Che differenza c’è tra Mockly e gli altri strumenti per screenshot?"
+    },
+    {
+     "a": "Mockly ha formati di artboard predefiniti per iPhone da 6,9 e da 6,5 pollici, iPad, Mac e Apple Watch, varianti orizzontali e un formato Google Play da 1080×1920. “Save Images” esporta ogni pagina in PNG o HEIC alla dimensione esatta in pixel dell’artboard che hai scelto, per la lingua corrente o per tutte.",
+     "q": "Quali dimensioni esporta Mockly?"
+    },
+    {
+     "a": "Sì. Mockly elenca le 50 lingue di App Store Connect. Aggiungile una alla volta, tutte insieme o cercandole per nome. Ogni lingua può avere il suo testo, i suoi screenshot, le sue immagini e il suo sfondo, oppure seguire la tua lingua di origine.",
+     "q": "Mockly gestisce tutte le lingue di App Store?"
+    },
+    {
+     "a": "Sì. Scrivi il testo una volta nella tua lingua di origine, poi traducilo con “AI Translate” usando la tua chiave OpenAI, Anthropic o Google, oppure esporta un CSV per un traduttore e reimportalo. I blocchi di testo segnati “Do not translate” vengono saltati. Se una lingua ha bisogno di un layout diverso, scollegala dalla lingua di origine e cambia solo quella.",
+     "q": "Posso localizzare gli screenshot in più lingue?"
+    },
+    {
+     "a": "No. Mockly è un acquisto unico a {P_APP} e tutte le funzioni dell’editor sono incluse. “AI Translate” usa la tua chiave OpenAI, Anthropic o Google e il costo di quell’uso te lo fattura il tuo fornitore. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "Mockly è in abbonamento?"
+    },
+    {
+     "a": "Sì. Aggiungi la tua chiave API di App Store Connect (Key ID, Issuer ID e file .p8) nelle impostazioni. Mockly elenca le tue app e le versioni, legge il tipo di display dall’artboard, genera le pagine e le carica per le lingue che scegli. Sostituisce gli screenshot già presenti in quel tipo di display e mostra l’avanzamento di ogni file e un elenco dei risultati.",
+     "q": "Posso caricare gli screenshot direttamente su App Store Connect?"
+    },
+    {
+     "a": "Nel Portachiavi di macOS sul tuo Mac. La chiave dell’IA viene inviata solo al fornitore che hai scelto, perché gli serve per rispondere alla richiesta. La chiave di App Store Connect serve solo a firmare le richieste inviate ad Apple. Lagerland Apps non gestisce alcun server e non vede nessuna delle due chiavi.",
+     "q": "Dove conserva Mockly le mie chiavi API?"
+    },
+    {
+     "a": "No. Mockly crea screenshot statici e li esporta in PNG o HEIC. Non ha l’esportazione in video né in PDF.",
+     "q": "Mockly gestisce i video di anteprima di App Store?"
+    },
+    {
+     "a": "Mockly è un’app per Mac in cui lavori a mano, mentre fastlane snapshot e frameit si eseguono da script. Se i tuoi screenshot sono catturati e incorniciati in CI, forse Mockly non ti serve. Se catturi con fastlane e progetti in Mockly, collega la cartella di output in Mockly quando i file seguono il suo schema di nomi composto da lingua, pagina e dispositivo.",
+     "q": "Mockly funziona con Fastlane?"
+    },
+    {
+     "a": "No. Mockly è un’app per Mac con macOS 14 o versioni successive, sui Mac con chip Apple e su quelli Intel. Crea screenshot per le pagine App Store di app per iPhone, iPad, Mac e Apple Watch, più un formato Google Play.",
+     "q": "Mockly funziona su Windows, iPhone o iPad?"
+    },
+    {
+     "a": "No. L’interfaccia di Mockly non è in italiano: è in 10 lingue, tra cui inglese, tedesco, francese, giapponese e coreano. Gli screenshot che crei invece possono essere in italiano, perché l’italiano è una delle 50 lingue di App Store che puoi aggiungere al progetto.",
+     "q": "Mockly è in italiano?"
+    },
+    {
+     "a": "No. Mockly non richiede alcun account, non ha SDK di analisi o di tracciamento e Lagerland Apps non gestisce alcun server per l’app. I progetti e le impostazioni restano sul tuo Mac e le tue chiavi sono conservate nel suo Portachiavi. Il testo lascia il Mac solo quando avvii “AI Translate”, e va, con la tua chiave, al fornitore che hai scelto. Gli screenshot lo lasciano solo quando li carichi su App Store Connect.",
+     "q": "Mockly raccoglie dati?"
+    },
+    {
+     "a": "La linea guida 2.3.3 chiede screenshot che mostrino l’app in uso, non solo un’immagine con il titolo, una pagina di accesso o una schermata iniziale. In Mockly lo schermo di ogni dispositivo 3D mostra uno screenshot che hai catturato dalla tua app, e il tuo testo e il tuo sfondo gli stanno intorno. Se un set supera la revisione dipende da ciò che mostrano i tuoi screenshot, e Mockly non può garantire l’approvazione su App Store.",
+     "q": "Gli screenshot di Mockly rispettano le App Store Review Guidelines § 2.3.3?"
+    },
+    {
+     "a": "Confrontali sui punti che contano per la tua release: dove funziona lo strumento, come si paga, quante lingue di App Store gestisce e se carica su App Store Connect. Mockly funziona su Mac, costa {P_APP} una sola volta senza abbonamento, tiene tutte le 50 lingue di App Store in un solo progetto, traduce con la tua chiave dell’IA o con un file CSV, crea dispositivi 3D e carica su App Store Connect con la tua chiave API. Controlla gli altri sul loro sito, perché funzioni e prezzi cambiano.",
+     "q": "Come si confronta Mockly con MockUPhone, LocaShot, Picasso o AppMockUp?"
+    }
+   ],
+   "seo": {
+    "description": "Crea screenshot App Store sul Mac con modelli 3D di iPhone, iPad, MacBook e Apple Watch, in 50 lingue, e caricali su App Store Connect."
+   },
+   "tagline": "Crea, traduci e carica gli screenshot per App Store dal tuo Mac.",
+   "url": "/it/apps/mockly/"
+  },
+  "observa": {
+   "faq": [
+    {
+     "a": "Observa è un’app di analisi della salute per iPhone, iPad e Apple Watch. Legge i tuoi dati di Salute e li trasforma in un punteggio di Prontezza giornaliero, un Punteggio sonno e una lettura dello stress, spiegati in parole semplici, con Prontezza e stress misurati rispetto al tuo riferimento personale. Risponde anche a “Dovrei allenarmi oggi?”, e con Premium mostra quali abitudini tendono a coincidere con il tuo recupero, il sonno e l’HRV. Non c’è nessun account, e l’analisi gira sul tuo dispositivo.",
+     "q": "Che cos’è Observa?"
+    },
+    {
+     "a": "Prontezza e stress sono confrontati con il tuo intervallo abituale, non con un obiettivo generico, e la Prontezza indica quanto è affidabile. La Prontezza arriva con “Perché questo punteggio?”, che indica i segnali che l’hanno fatta cambiare. Observa è anche privata fin dalla progettazione. Non crei mai un account, e l’app non effettua chiamate di rete proprie, quindi i tuoi dati di salute restano sul tuo dispositivo.",
+     "q": "In cosa Observa è diversa dalle altre app per la salute?"
+    },
+    {
+     "a": "La Prontezza è un punteggio su 100 costruito ogni giorno da sonno (35%), HRV (25%), frequenza cardiaca a riposo (25%) e carico di allenamento (15%). Una frequenza respiratoria o un valore di ossigeno nel sangue insoliti possono solo abbassarla, mai alzarla. Ha tre fasce, Pronto, Moderato o Basso, e finché non ha circa cinque notti di dati mostra “Creazione del tuo riferimento” mentre Observa impara qual è la tua normalità. “Perché questo punteggio?” mostra quali segnali l’hanno fatta cambiare di più.",
+     "q": "Come funziona il punteggio di Prontezza?"
+    },
+    {
+     "a": "Sì, in due modi. Observa legge ciò che il tuo Apple Watch salva in Salute, come fasi del sonno, frequenza cardiaca, HRV, frequenza cardiaca a riposo, ossigeno nel sangue e allenamenti. Ha anche una sua app per Apple Watch, per watchOS 10 o versioni successive, con Prontezza, consiglio di allenamento, “Perché questo punteggio?”, un check-in mattutino, la registrazione dell’acqua e la registrazione degli allenamenti, più le complicazioni per il quadrante. L’app per Apple Watch funziona in autonomia.",
+     "q": "Observa funziona con Apple Watch?"
+    },
+    {
+     "a": "Observa legge Salute, qualunque sia il dispositivo o l’app che ha salvato i dati. Un Apple Watch è consigliato, perché fasi del sonno, HRV, ossigeno nel sangue, ECG e VO₂ max compaiono solo quando un dispositivo li registra.",
+     "q": "Mi serve un Apple Watch?"
+    },
+    {
+     "a": "Salute registra la variabilità della frequenza cardiaca come SDNN, ed è questo l’HRV che mostra Observa: il tuo valore giornaliero rispetto al tuo riferimento personale, con 7 giorni di tendenza gratis e 30, 90 o 365 giorni con Premium. L’HRV pesa anche per il 25% sulla tua Prontezza. Con Premium, la scheda ECG mostra la tua ultima registrazione ECG con la sua forma d’onda e la cronologia delle classificazioni di Salute. Observa mostra ciò che Salute ha registrato; non rileva né diagnostica alcuna condizione medica.",
+     "q": "Come gestisce Observa i dati di HRV ed ECG?"
+    },
+    {
+     "a": "Sì. Prontezza, Punteggio sonno, stress, Piano di oggi, “Perché questo punteggio?” per la Prontezza, il consiglio di allenamento, la nota di coaching giornaliera, “Modifica il sonno”, le tendenze a 7 giorni e Siri sono gratis per sempre. Tutte le funzioni Premium sono sbloccate per i tuoi primi 7 giorni, senza registrazione né carta. Premium aggiunge tendenze a 30, 90 e 365 giorni, le schermate di analisi complete, gli Schemi, l’età funzionale, l’HRV avanzata, la cronologia ECG, l’analisi degli allenamenti, i dati nei widget e tutti i 14 temi. Costa {P_MONTHLY}/mese, {P_YEARLY}/anno o {P_LIFETIME} una tantum, con In famiglia su ogni piano a pagamento. Indipendentemente da quei primi 7 giorni nell’app, gli abbonamenti mensile e annuale partono ciascuno con {TRIAL} su App Store. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "Observa è gratis?"
+    },
+    {
+     "a": "No. Observa non è un dispositivo medico. Mostra schemi e punteggi ricavati da dati che già raccogli, per la tua comprensione personale. Non diagnostica, non cura e non rileva alcuna condizione medica, e le sue viste su ECG, ritmo e ossigeno nel sangue mostrano ciò che Salute ha registrato. Se qualcosa non ti sembra a posto, parlane con un medico.",
+     "q": "Observa dà consigli medici?"
+    },
+    {
+     "a": "No. I tuoi dati di salute vengono elaborati e archiviati sul tuo dispositivo. Observa funziona senza account né server e non contiene SDK di analisi o di terze parti. L’app non effettua chiamate di rete proprie; solo gli acquisti e i link che apri usano internet. I tuoi dati non vengono condivisi con nessuno, Lagerland Apps compresa.",
+     "q": "Observa carica i miei dati di salute da qualche parte?"
+    },
+    {
+     "a": "No. Observa legge Salute in automatico, quindi i punteggi si calcolano con i dati che il tuo iPhone e il tuo Apple Watch salvano già. Le registrazioni manuali sono facoltative: un check-in mattutino di tre domande, l’acqua con un tocco o con la voce, i sintomi e le misure corporee.",
+     "q": "Devo registrare qualcosa a mano?"
+    },
+    {
+     "a": "Gli Schemi, parte di Premium, guardano tutto il tuo storico e confrontano le abitudini con risultati come recupero, sonno e HRV, compresi gli effetti ritardati. Observa ne mostra fino a quattro, classificati, e possono comparire anche legami più deboli, quindi ogni scheda ha un’etichetta di affidabilità e una nota “Perché vedo questo?”. Puoi segnare una scheda come “Sembra accurato” o “Non applicabile”. La formulazione dice “tende a coincidere con”, perché sono associazioni, non cause.",
+     "q": "Come sceglie Observa quali schemi mostrare?"
+    },
+    {
+     "a": "Observa fa per te se vuoi un punteggio di Prontezza giornaliero e un consiglio di allenamento con i motivi spiegati, misurati rispetto al tuo riferimento personale, e preferisci che i tuoi dati di salute non lascino mai il dispositivo. Non ha account né pubblicità, e funziona su iPhone, iPad e Apple Watch. Le pagine di confronto passano in rassegna un’app alla volta: <a href=\"/alternatives/autosleep/\" hreflang=\"en\">AutoSleep (in inglese)</a>, <a href=\"/alternatives/athlytic/\" hreflang=\"en\">Athlytic (in inglese)</a>, <a href=\"/alternatives/bevel/\" hreflang=\"en\">Bevel (in inglese)</a>, <a href=\"/alternatives/gentler-streak/\" hreflang=\"en\">Gentler Streak (in inglese)</a>, <a href=\"/alternatives/whoop/\" hreflang=\"en\">Whoop (in inglese)</a>, <a href=\"/alternatives/oura/\" hreflang=\"en\">Oura (in inglese)</a>, <a href=\"/alternatives/hrv4training/\" hreflang=\"en\">HRV4Training (in inglese)</a> e <a href=\"/alternatives/welltory/\" hreflang=\"en\">Welltory (in inglese)</a>.",
+     "q": "In che modo Observa è un’alternativa ad AutoSleep, Athlytic o Bevel?"
+    },
+    {
+     "a": "No. Non c’è nessun account né sincronizzazione con iCloud, quindi i dati di Observa restano sul dispositivo. L’app per Apple Watch resta allineata direttamente con il tuo iPhone. L’unica esportazione è un report degli allenamenti: chi usa la versione gratuita può condividerne uno al mese come PNG con filigrana, mentre Premium condivide report illimitati come PNG o PDF senza filigrana. Un acquisto Premium si ripristina con “Ripristina acquisti” in Impostazioni. Se l’archivio dati di Observa sul dispositivo si danneggia, “Ripristina da backup” in Impostazioni lo recupera da un backup conservato sul dispositivo.",
+     "q": "Observa si sincronizza tra dispositivi o esporta i miei dati?"
+    },
+    {
+     "a": "Tutto arriva da Salute. Sonno: durata, efficienza, risvegli, regolarità, fasi, frequenza cardiaca notturna e il suo calo, e debito di sonno rispetto al tuo obiettivo. Recupero: Prontezza, HRV (SDNN), frequenza cardiaca a riposo e stress. Cuore: frequenza cardiaca in camminata, VO₂ max, zone e recupero della frequenza cardiaca e registrazioni ECG. Attività e allenamenti: passi, minuti attivi, distanza, piani saliti, carico di allenamento e punteggio di sforzo. Respirazione: frequenza respiratoria e ossigeno nel sangue. Corpo ed energia: peso, grasso corporeo, massa magra ed energia attiva e a riposo. Il contesto del ciclo, facoltativo, mostra la fase del ciclo accanto a recupero e sonno, senza cambiare i tuoi punteggi. I segnali di recupero e del cuore sono letti rispetto al tuo intervallo abituale.",
+     "q": "Cosa misura esattamente Observa?"
+    },
+    {
+     "a": "Observa richiede iOS 17.6 o versioni successive su iPhone o iPad, e l’app per Apple Watch richiede watchOS 10 o versioni successive. I widget a pagina intera richiedono iOS 27. Non esiste una versione per Mac o Android, e su iPhone l’app funziona in verticale.",
+     "q": "Quale iPhone, iPad e Apple Watch servono per Observa?"
+    },
+    {
+     "a": "Sì. L’interfaccia di Observa è in italiano, compresi i widget e l’app per Apple Watch.",
+     "q": "Observa è in italiano?"
+    }
+   ],
+   "seo": {
+    "description": "Observa legge da Salute HRV, sonno e cuore dell’Apple Watch e ogni mattina ti dà la Prontezza con il motivo. Analisi sul dispositivo. Gratis, con Premium."
+   },
+   "tagline": "Prontezza, sonno e HRV da Salute, spiegati.",
+   "url": "/it/apps/observa/"
+  },
+  "pawza": {
+   "faq": [
+    {
+     "a": "Pawza è un’app per iPhone e iPad per la scheda sanitaria dei tuoi animali. Ogni animale ha una dashboard con farmaci, vaccinazioni, alimentazione, peso, sintomi, schede, foto, promemoria e un diario di cura quotidiano. Puoi scansionare documenti del veterinario o importare un PDF di schede precedenti, e tutto avviene sul tuo dispositivo. È gratis per un animale. Pawza Pro aggiunge animali illimitati, scansioni illimitate con compilazione automatica di Apple Intelligence, il PDF della visita veterinaria, il Kit pet sitter, gli avvisi sul peso e l’esportazione dei dati.",
+     "q": "Che cos’è Pawza?"
+    },
+    {
+     "a": "Scansiona con la fotocamera un certificato di vaccinazione, un esito di analisi, una prescrizione, una fattura o una lettera di dimissione, oppure scegli fino a cinque foto. Apple Vision legge il testo sul tuo dispositivo. Con Pawza Pro su iOS 26 o versioni successive e un dispositivo compatibile con Apple Intelligence, il modello di IA sul dispositivo compila tipo di documento, data della visita, veterinario e ambulatorio, vaccinazioni, farmaci, diagnosi, peso e data del prossimo richiamo. Senza Apple Intelligence, il modulo di revisione si apre con il testo riconosciuto e completi i campi tu. In entrambi i casi controlli ogni campo prima che venga salvato qualcosa, perché l’estrazione può sbagliare.",
+     "q": "Come funziona la scansione dei documenti con l’IA?"
+    },
+    {
+     "a": "Sì. “Importa schede precedenti” accetta un PDF fino a 100 MB, legge ogni pagina e lo divide in visite per data. Con Apple Intelligence ricava anche veterinario, vaccini, farmaci e pesi di ogni visita; senza, compili i dettagli tu. Unisci, dividi o scarta le visite e salvi una volta sola. La prima importazione è gratis e non consuma una scansione; le successive richiedono Pro. Su iOS 26 i file lunghi proseguono in background.",
+     "q": "Posso importare in una volta anni di vecchie schede del veterinario?"
+    },
+    {
+     "a": "Sì, per un animale e senza limiti di tempo. Il piano gratuito include il diario di cura, i farmaci, le vaccinazioni, i sintomi, le schede, il grafico del peso, i promemoria, la Scheda di emergenza, il Kit animale smarrito, tutti gli 8 widget, il pulsante nel Centro di Controllo, Siri, la sincronizzazione con iCloud, la prima importazione di schede, 10 scansioni di documenti e 50 foto in totale. Pawza Pro costa {P_MONTHLY}/mese o {P_YEARLY}/anno, entrambi con {TRIAL}, oppure {P_LIFETIME} una volta sola, e ogni piano Pro include In famiglia. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "Pawza è gratis?"
+    },
+    {
+     "a": "Animali illimitati, scansioni di documenti illimitate con compilazione automatica di Apple Intelligence (iOS 26 o versioni successive su un dispositivo compatibile), importazioni di schede e foto illimitate, ordinamento automatico delle foto e Confronto foto, il PDF della visita veterinaria, il Kit pet sitter, gli avvisi sul peso e l’esportazione completa dei dati in JSON, CSV o PDF.",
+     "q": "Cosa sblocca Pawza Pro?"
+    },
+    {
+     "a": "Sì. Pawza non richiede un account, non ha un server proprio e non contiene pubblicità né strumenti di analisi. Le schede sono salvate sul tuo dispositivo. Se hai effettuato l’accesso a iCloud, si sincronizzano tra iPhone e iPad tramite il tuo iCloud privato, e Lagerland Apps non può leggerle. La scansione e l’importazione delle schede avvengono sul dispositivo, e dalle foto importate vengono rimossi posizione e dati EXIF.",
+     "q": "I dati del mio animale sono privati?"
+    },
+    {
+     "a": "Sì. Diario di cura, schede, scansione, promemoria, widget e PDF funzionano offline. Pawza ha bisogno della connessione solo per la sincronizzazione con iCloud e per gli acquisti.",
+     "q": "Pawza funziona senza connessione a internet?"
+    },
+    {
+     "a": "Il piano gratuito copre un animale; Pawza Pro toglie il limite. Ogni animale ha la sua dashboard, e i widget Prossimamente e “Il branco” mostrano i promemoria e l’ultimo pasto e l’ultima passeggiata di tutti. Gli animali archiviati conservano la loro storia.",
+     "q": "Posso seguire più di un animale?"
+    },
+    {
+     "a": "No. La sincronizzazione con iCloud riguarda i tuoi dispositivi, quindi un partner o un pet sitter con un proprio Apple Account vede una scheda separata. Per il pet sitter, il Kit pet sitter (Pro) stampa tutto ciò che gli serve. Ogni piano Pro include In famiglia, che condivide l’acquisto di Pro con il tuo gruppo familiare; ognuno tiene le proprie schede.",
+     "q": "La mia famiglia può condividere le schede del mio animale?"
+    },
+    {
+     "a": "Sì. Pawza è un’unica app universale per iPhone e iPad e su iPad la sezione Animali diventa una vista a due colonne, con l’elenco accanto alla dashboard. In una finestra larga, anche la dashboard dell’animale e le Impostazioni si dividono in due colonne. Le tue schede si sincronizzano tra i due dispositivi tramite il tuo iCloud. Pawza richiede iOS 17.6 o versioni successive e non esiste per Mac, Apple Watch o Android.",
+     "q": "Pawza funziona su iPad?"
+    },
+    {
+     "a": "Sì. Apri il Duo e la dashboard del tuo animale si estende su entrambe le pagine. La pagina di sinistra contiene le cure del giorno: le prossime scadenze, il diario di cura e l’andamento del peso. La pagina di destra contiene la storia sanitaria: farmaci, vaccinazioni, alimentazione, Scheda di emergenza e foto. Anche le Impostazioni usano entrambe le pagine, e l’elenco degli animali scorre sopra la pagina di sinistra quando serve. I pulsanti Scheda, Promemoria e Scansiona stanno nella barra laterale del Duo, a un tocco, e Scheda resta lì anche quando il Duo è chiuso. Anche la configurazione iniziale si adatta allo schermo del Duo chiuso.",
+     "q": "Pawza funziona su iPhone Duo?"
+    },
+    {
+     "a": "Quelli che fa il tuo veterinario. Ogni vaccino conserva la data di somministrazione, la data del prossimo richiamo, il numero di lotto e le note, e può ricordartelo il giorno del richiamo. Le terapie conservano la dose, un promemoria ripetuto e lo storico delle dosi. Visto che inserisci i nomi usati dal tuo veterinario, o li scansioni dal certificato, Pawza si adatta al calendario vaccinale di qualsiasi paese: rabbia, DHPP, Bordetella e leptospirosi per i cani, FVRCP e FeLV per i gatti, oppure i vaccini propri di un coniglio o di un cavallo.",
+     "q": "Quali vaccinazioni e trattamenti posso seguire in Pawza?"
+    },
+    {
+     "a": "Sì. I promemoria sono notifiche locali in sei categorie: vaccino, farmaco, pasto, toelettatura, visita dal veterinario e personalizzato. Possono essere singoli o ripetersi ogni giorno, settimana, mese o anno. La notifica di una dose ha un pulsante Somministrato che registra la dose, quella di un pasto ha “Ha mangiato”, e le altre hanno “Segna come fatto” e “Posticipa di 1 ora”. Segna un promemoria come Urgente perché arrivi anche quando è attiva una full immersion; un promemoria singolo Urgente ti avvisa di nuovo dopo 5, 15 e 30 minuti finché non agisci. Per ricevere i promemoria devi consentire le notifiche.",
+     "q": "Riceverò promemoria per vaccinazioni e farmaci?"
+    },
+    {
+     "a": "Sì, con Pawza Pro. Il PDF della visita veterinaria copre il periodo che scegli e può includere cosa è cambiato dall’ultima visita, farmaci e alimentazione attuali, stato delle vaccinazioni, peso e visite recenti, sintomi, gli ultimi 7 giorni di cure, contatti, assicurazione e le tue note “Da discutere”. Condividilo come PDF o immagine, in formato Letter o A4.",
+     "q": "Posso condividere la storia del mio animale con il veterinario?"
+    },
+    {
+     "a": "No. La compilazione automatica con Apple Intelligence è una funzione di Pawza Pro che richiede iOS 26 o versioni successive su un dispositivo compatibile (l’app indica iPhone 15 Pro o più recente). Su tutti gli altri dispositivi, Pawza legge i documenti con il riconoscimento del testo sul dispositivo e i campi li compili tu. Tutto il resto dell’app funziona allo stesso modo.",
+     "q": "Serve Apple Intelligence per usare Pawza?"
+    },
+    {
+     "a": "No. Pawza tiene le schede; non è un dispositivo medico e non dà consigli veterinari. Gli avvisi sul peso segnalano una variazione rapida nel tempo, e i registri dei sintomi e i riepiloghi ti aiutano a descrivere cosa è successo. La diagnosi resta al tuo veterinario.",
+     "q": "Pawza fa diagnosi?"
+    },
+    {
+     "a": "Sì, ed è tutto gratis. Otto widget coprono la schermata Home e quella di blocco, compreso un pulsante di registro rapido a un tocco e un elenco Prossimamente con il pulsante “Segna come fatto”. Su iOS 18 puoi aggiungere al Centro di Controllo un pulsante “Registra cura”. Siri capisce frasi come “Registra passeggiata in Pawza” e “Registra cura per Bella in Pawza”. I widget si aggiornano dall’app, quindi apri Pawza una volta dopo aver aggiunto un animale o un promemoria.",
+     "q": "Posso registrare le cure dalla schermata Home o con Siri?"
+    },
+    {
+     "a": "Tramite un file. Pawza importa i backup di Pawza (JSON) e i file CSV, mostra un’anteprima, e l’importazione è sempre gratis. Non ha nessun collegamento diretto con altre app. Se la tua vecchia app può esportare un PDF delle tue schede, anche “Importa schede precedenti” può leggerlo.",
+     "q": "Posso portare le mie schede da un’altra app per animali?"
+    },
+    {
+     "a": "Apri Impostazioni, tocca il tuo nome, poi Abbonamenti, e annulla prima della data di rinnovo; mantieni Pro fino alla fine del periodo. Mensile e Annuale iniziano con {TRIAL} per gli account idonei e si rinnovano automaticamente se non li annulli. A vita è un acquisto unico, quindi non c’è nulla da annullare. Apple gestisce i rimborsi con la procedura standard di App Store.",
+     "q": "Come si annulla un abbonamento a Pawza Pro?"
+    }
+   ],
+   "seo": {
+    "description": "I dati del libretto sanitario del cane su iPhone e iPad: scansiona i documenti del veterinario, registra le cure. Gratis per un animale, senza account."
+   },
+   "tagline": "La salute del tuo animale, le dosi e le cure di ogni giorno in un unico posto tranquillo.",
+   "url": "/it/apps/pawza/"
+  },
+  "rightsplit": {
+   "faq": [
+    {
+     "a": "RightSplit è una calcolatrice per dividere il conto su iPhone. Scansiona uno scontrino, ti lascia toccare chi ha preso quali articoli, divide imposte e mancia in proporzione a quello che ha ordinato ciascuno quando lo scontrino le riporta, e prepara per ognuno un messaggio con il suo importo esatto e un link per pagarti. Non serve nessun account. Dividere alla romana con la mancia e la tua prima scansione sono gratis; Pro+ aggiunge scansioni illimitate, divisioni per articoli e non uguali, Spazi per viaggi e case condivise e il monitoraggio dei pagamenti, a {P_YEARLY}/anno oppure a {P_LIFETIME} una sola volta.",
+     "q": "Che cos’è RightSplit?"
+    },
+    {
+     "a": "Inquadra lo scontrino con la fotocamera, scegli una foto o condividi con RightSplit l’immagine di uno scontrino da un’altra app. Lo scanner ne ricava articoli, imposte, mancia e totale, e puoi correggere qualsiasi riga con un tocco. Lo scontrino viene letto sul tuo iPhone e la foto non viene mai caricata. La prima scansione è gratis; le scansioni illimitate fanno parte di Pro+.",
+     "q": "Come funziona la scansione dello scontrino?"
+    },
+    {
+     "a": "Due, entrambi sul dispositivo. Su un iPhone con Apple Intelligence attiva (iOS 26 o successivo, su un iPhone compatibile), è Apple Intelligence a leggere il testo dello scontrino. Gli altri iPhone usano il <a href=\"https://developer.apple.com/documentation/vision\" rel=\"noopener\" target=\"_blank\">framework Vision</a> di Apple, con le regole di lettura degli scontrini di RightSplit. Nessuno dei due carica lo scontrino, quindi la scansione funziona anche offline.",
+     "q": "Quale motore OCR usa RightSplit?"
+    },
+    {
+     "a": "Dipende dallo scontrino. Carta sbiadita, pieghe profonde o una foto scattata di sbieco possono far leggere male una riga, quindi ogni articolo resta modificabile: toccalo per correggere il prezzo o il nome prima di assegnarlo. Il riepilogo mostra subtotale, imposte, mancia e totale dello scontrino, così puoi confrontarli con la carta, e lo scontrino salvato conserva la sua foto.",
+     "q": "Quanto è precisa la scansione dello scontrino?"
+    },
+    {
+     "a": "Sì. La tua prima scansione di scontrino lo include, poi fa parte di Pro+. Qualsiasi articolo si può dividere tra più persone: bottiglie, antipasti, piatti condivisi. Il costo dell’articolo si divide in parti uguali tra chi lo ha condiviso, e imposte e mancia si dividono in proporzione a quello che ha ordinato ciascuno.",
+     "q": "Posso dividere i piatti condivisi?"
+    },
+    {
+     "a": "“Invia richieste di pagamento” prepara un messaggio per persona con il locale e il suo importo esatto. Quando il tuo metodo di pagamento principale è PayPal.me, Revolut, Venmo o Wise, aggiunge un link per pagarti. Invialo con Messaggi o WhatsApp, oppure copialo in qualsiasi app. L’altra persona non deve installare nulla.",
+     "q": "Come mando a ognuno la sua quota?"
+    },
+    {
+     "a": "Sì. Dividere alla romana con la mancia, l’arrotondamento equo, le ultime cinque divisioni, i modelli, Siri, 12 widget e la tua prima scansione di scontrino (divisione per articoli e messaggi di pagamento compresi) sono gratis per sempre. Pro+ aggiunge scansioni illimitate, divisione per articoli e piatti condivisi, la regolazione della quota di una persona, il dettaglio della mancia, la cronologia illimitata, gli Spazi, il monitoraggio dei pagamenti e i promemoria per le quote non pagate, la Carta Pay-Me e 6 widget in più. Costa {P_YEARLY} all’anno, a partire da {TRIAL}, oppure {P_LIFETIME} una sola volta; l’acquisto a vita non si rinnova. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "RightSplit è gratis?"
+    },
+    {
+     "a": "No. RightSplit funziona appena lo apri, senza registrazione e senza dati personali. Solo una persona a tavola ha bisogno dell’app: tu scansioni, dividi e mandi a ognuno il suo importo.",
+     "q": "RightSplit richiede un account?"
+    },
+    {
+     "a": "No. Scontrini, importi, nomi e dati di pagamento restano sul tuo iPhone e non c’è sincronizzazione cloud. RightSplit non ha server propri, né SDK pubblicitari né strumenti di analisi di terze parti. L’unica richiesta di rete scarica i tassi di cambio della Banca centrale europea, e insieme non viene inviato nulla di tuo.",
+     "q": "RightSplit salva i miei scontrini online?"
+    },
+    {
+     "a": "Sì, anche in modalità aereo. Scansione e divisione avvengono sul dispositivo. Due cose richiedono una connessione: l’invio dei messaggi con Messaggi o WhatsApp (puoi copiarli e inviarli più tardi) e l’aggiornamento dei tassi di cambio della Banca centrale europea usati per la conversione delle valute.",
+     "q": "RightSplit funziona offline?"
+    },
+    {
+     "a": "Sedici: inglese, francese, tedesco, spagnolo, italiano, portoghese, olandese, svedese, danese, finlandese, norvegese, polacco, giapponese, coreano e cinese (semplificato e tradizionale). Scegli la lingua dello scontrino in “Lingua scontrino”, in Opzioni. In ognuna di queste lingue le righe di subtotale, imposte e totale vengono riconosciute, così non vengono contate come piatti.",
+     "q": "Quali lingue legge lo scanner degli scontrini?"
+    },
+    {
+     "a": "Sì. RightSplit divide nella valuta che imposti, tra 58, comprese quelle senza decimali come yen e won: uno scontrino in euro o in sterline esce quindi in euro o in sterline, imposte e mancia incluse. Con Pro+, imposti una valuta di riferimento e ogni importo mostra anche una cifra approssimativa in quella valuta. Con Pro+, uno Spazio può mescolare più valute e saldarsi in quella che scegli, con i tassi giornalieri della Banca centrale europea; 30 delle 58 valute ne hanno uno, e i totali nelle altre non vengono convertiti.",
+     "q": "RightSplit gestisce gli scontrini in più valute?"
+    },
+    {
+     "a": "Sì. RightSplit prende ogni articolo al prezzo stampato. Quando l’IVA è già compresa in ogni riga, come di norma nell’UE e nel Regno Unito, non c’è una riga di imposte separata da dividere, e la divisione coincide con lo scontrino. Quando lo scontrino aggiunge le imposte su una riga a parte, come nella maggior parte degli Stati Uniti, RightSplit le legge come imposte e le divide in proporzione a quello che ha ordinato ciascuno.",
+     "q": "RightSplit gestisce gli scontrini con l’IVA inclusa?"
+    },
+    {
+     "a": "Nella schermata di divisione imposti il numero di persone, da 2 a 50, e con uno scontrino scansionato aggiungi le persone a tavola. Per un viaggio o una casa condivisa, gli Spazi di Pro+ tengono i saldi di tutti sul tuo telefono. Quando tutto il gruppo deve vedere e aggiornare lo stesso registro dal proprio telefono, va meglio un’app di gruppo come <a href=\"/alternatives/splitwise/\" hreflang=\"en\">Splitwise (in inglese)</a> (o <a href=\"/alternatives/tricount/\" hreflang=\"en\">Tricount (in inglese)</a> per i registri di viaggio).",
+     "q": "Tra quante persone posso dividere un conto?"
+    },
+    {
+     "a": "Si collega a questi servizi con dei link, ma RightSplit non sposta mai denaro da solo. Salva il tuo nome utente Venmo, PayPal.me, Revolut o Wise, il tuo IBAN oppure Apple Pay. Quando il tuo metodo principale è PayPal.me o Revolut, il messaggio di ogni persona contiene un link con il suo importo già compilato (PayPal.me nelle valute che PayPal accetta). I link di Venmo e Wise aprono il tuo profilo, e Apple Pay e IBAN non aggiungono nessun link. Il pagamento avviene in quel servizio. I metodi disponibili variano da paese a paese, e un link non può confermare che un pagamento sia arrivato: sei tu a segnare chi ha pagato. Vedi il <a href=\"/alternatives/venmo-split/\" hreflang=\"en\">confronto tra RightSplit e Venmo Split (in inglese)</a>.",
+     "q": "RightSplit si integra con Apple Pay, Venmo o PayPal?"
+    },
+    {
+     "a": "No. RightSplit è un’app per iPhone e richiede iOS 17 o successivo. I controlli richiedono iOS 18, e la lettura degli scontrini con Apple Intelligence richiede iOS 26 su un iPhone compatibile.",
+     "q": "RightSplit funziona su iPad, Mac o Apple Watch?"
+    },
+    {
+     "a": "Sì, 18, di cui 12 gratis. Divisione lampo è un tastierino nella schermata Home che fa la divisione senza aprire l’app; altri mostrano la tua ultima divisione, le divisioni recenti e le tue statistiche. Con Pro+, “Salda i conti” e “In attesa di” mostrano chi ti deve ancora dei soldi, e puoi segnare qualcuno come pagato dal widget. Il widget Pagami è di Pro+ e resta disattivato finché non attivi “Mostra nei widget”.",
+     "q": "RightSplit ha dei widget?"
+    },
+    {
+     "a": "<a href=\"/alternatives/splitwise/\" hreflang=\"en\">Splitwise (in inglese)</a> è pensato per i registri di gruppo condivisi: coinquilini, spese di viaggio che si allungano e debiti che si accumulano per mesi, con ognuno che registra e controlla i saldi dal proprio account. RightSplit è una calcolatrice sul tuo telefono: scansioni uno scontrino, lo dividi e mandi gli importi, senza creare account né aggiungere amici. Per un viaggio o una casa condivisa, gli Spazi di Pro+ raccolgono scontrini e spese, tengono il saldo di ognuno e calcolano il minor numero di bonifici per mettersi in pari. Gli Spazi restano solo sul tuo telefono, senza sincronizzazione: il resto del gruppo vede quello che gli mandi, non un saldo condiviso in tempo reale. Vedi il <a href=\"/alternatives/splitwise/\" hreflang=\"en\">confronto completo con Splitwise (in inglese)</a>, oppure i confronti con <a href=\"/alternatives/tab/\" hreflang=\"en\">Tab (in inglese)</a>, <a href=\"/alternatives/tricount/\" hreflang=\"en\">Tricount (in inglese)</a>, <a href=\"/alternatives/settle-up/\" hreflang=\"en\">Settle Up (in inglese)</a> e <a href=\"/alternatives/venmo-split/\" hreflang=\"en\">Venmo Split (in inglese)</a>.",
+     "q": "Che differenza c’è tra RightSplit e Splitwise?"
+    },
+    {
+     "a": "Sì. L’app è in italiano, widget compresi.",
+     "q": "RightSplit è disponibile in italiano?"
+    }
+   ],
+   "seo": {
+    "description": "App per dividere il conto su iPhone: scansiona lo scontrino, tocca chi ha preso cosa e manda a ognuno il suo importo. Senza account, gratis per iniziare."
+   },
+   "tagline": "Scansiona il conto, tocca chi ha preso cosa, manda a ognuno il suo importo.",
+   "url": "/it/apps/rightsplit/"
+  },
+  "shogiful": {
+   "faq": [
+    {
+     "a": "Shogiful è un’app di allenamento allo shogi e di analisi delle partite per iPhone, iPad e Mac. Giochi contro 40 avversari del motore, YaneuraOu controlla sul dispositivo ogni mossa delle tue partite e ogni errore viene spiegato con cosa hai giocato, qual era la mossa migliore e un consiglio del coach. L’allenamento punta poi alla tua debolezza principale, con 501 problemi di tsume, 99 esercizi di paracadute, 62 esercizi sui castelli, 55 esercizi di jōseki, 62 sfide di finale e 80 lezioni.",
+     "q": "Che cos’è Shogiful?"
+    },
+    {
+     "a": "Sì. Due dei sette set di pezzi di Shogiful sono fatti apposta: Internazionale (kanji con frecce che mostrano come si muove ogni pezzo) e Scacchi (pezzi in stile scacchi senza alcun kanji). Gli altri cinque sono set tradizionali in kanji. Puoi cambiare quando vuoi in Impostazioni, sotto “Scacchiera e pezzi”. Tocca un pezzo e ogni mossa e ogni paracadute legale viene evidenziato, e le mosse si possono scrivere in notazione occidentale, come P-7f.",
+     "q": "Si può giocare a shogi senza conoscere i kanji?"
+    },
+    {
+     "a": "Sì. Scegli il set di pezzi Scacchi e la notazione occidentale, e la scacchiera si legge quasi come una scacchiera da scacchi. Lo shogi cambia dove conta di più: i pezzi catturati tornano in gioco con il paracadute, la promozione è una scelta e i finali sono una corsa a chi dà matto per primo. Tra i tipi di errore di Shogiful ci sono “Errore di paracadute”, “Errore di promozione”, “Debolezza del castello” e “Tsume mancato”, e per allenarti hai 99 esercizi di paracadute e 62 esercizi sui castelli.",
+     "q": "Shogiful va bene per chi gioca a scacchi e vuole imparare lo shogi?"
+    },
+    {
+     "a": "Sì. Al primo avvio trovi un tutorial interattivo sui pezzi in mano, e tutto il percorso di lezioni Fondamenti è gratuito. La scala degli avversari parte da Koishi, un principiante tranquillo, e le regole complete dello shogi, compresi il paracadute, la promozione e la ripetizione, sono applicate al posto tuo. Un “Test del livello” facoltativo di 12 problemi regola il livello delle lezioni e dell’allenamento quotidiano.",
+     "q": "Shogiful va bene per chi inizia?"
+    },
+    {
+     "a": "Shogi Wars è una delle app di shogi online più giocate in Giappone, approvata dalla Japan Shogi Association, con abbinamento dal vivo e promozione kyu/dan classificata. Shogiful è un’app di allenamento per giocatore singolo, senza account e senza orologio. Giochi contro avversari del motore con i tuoi tempi, rivedi ogni partita con YaneuraOu e ti alleni sugli errori che fai. Puoi usarle entrambe: Shogiful per esercitarti e Shogi Wars per gareggiare.",
+     "q": "In che cosa Shogiful è diverso da Shogi Wars?"
+    },
+    {
+     "a": "Lishogi e 81Dojo sono piattaforme online costruite intorno al gioco contro persone. Lishogi è la piattaforma web libera e gratuita, 81Dojo lo storico dojo internazionale. Shogiful funziona offline e si concentra sull’allenamento: analisi sul dispositivo con una scheda per ogni errore, un piano giornaliero puntato sulla tua debolezza principale ed esercizi su tsume, paracadute, castelli, jōseki e finali. Usalo per esercitarti tra una partita online e l’altra.",
+     "q": "In che cosa Shogiful è diverso da Lishogi o 81Dojo?"
+    },
+    {
+     "a": "YaneuraOu, con il suo file di valutazione NNUE integrato nell’app. Gira sul tuo iPhone, iPad o Mac, quindi l’analisi non richiede connessione. Controlla ogni mossa delle tue partite, muove i tuoi 40 avversari e alimenta il coach e la vista Varianti profonde. Shogiful trasforma le sue valutazioni in schede di errore scritte in parole semplici.",
+     "q": "Che motore usa Shogiful?"
+    },
+    {
+     "a": "PiyoShogi è un’app gratuita spesso consigliata a chi inizia, con livelli graduati del computer e una propria analisi. Shogiful è costruito intorno all’allenamento: ogni errore ha una scheda con cosa hai giocato, qual era la mossa migliore e un consiglio, il piano giornaliero punta alla tua debolezza principale e hai 501 problemi di tsume, 99 esercizi di paracadute, 62 esercizi sui castelli e 80 lezioni. Ha anche set di pezzi con frecce o senza alcun kanji.",
+     "q": "In che cosa Shogiful è diverso da PiyoShogi?"
+    },
+    {
+     "a": "No. Le partite contro gli avversari di Shogiful non sono a tempo, senza orologio e senza byoyomi, quindi prenditi tutto il tempo che vuoi per ogni mossa. Per esercitarti a tempo prima di giocare online, usa una piattaforma online come Shogi Wars, Lishogi o 81Dojo.",
+     "q": "Shogiful ha il controllo del tempo?"
+    },
+    {
+     "a": "Gli tsume-shogi sono i classici problemi di matto dello shogi: ogni mossa d’attacco deve dare scacco, e dai matto al re con i pezzi sulla scacchiera e quelli in mano. Il Percorso tsume di Shogiful ha 501 problemi in cinque livelli, dal matto in 1 mossa al matto in 9 mosse. I 381 problemi dei livelli da 1, 3 e 5 mosse sono gratuiti; Premium aggiunge i livelli da 7 e 9 mosse. Vale qualsiasi mossa che dia davvero matto, anche se diversa dalla risposta del libro.",
+     "q": "Che cos’è lo tsume-shogi e Shogiful lo include?"
+    },
+    {
+     "a": "Sì, come file KIF. Vai in Impostazioni > “Dati e privacy” > “Importa KIF” e importa da un file, dagli appunti o da testo incollato, in UTF-8 o Shift-JIS. Vedi un’anteprima con i giocatori, l’handicap e il numero di mosse prima di importare. Le partite importate vengono riviste come tutte le altre, dal lato Sente, e la revisione conta tra le 2 analisi gratuite al giorno.",
+     "q": "Posso importare le mie partite da Shogi Wars o 81Dojo?"
+    },
+    {
+     "a": "Sì, per tutto ciò che fai con lo shogi. Giocare, analizzare, allenarsi e rivedere le partite avvengono sul dispositivo, con un motore integrato. Acquistare o ripristinare Premium e usare Game Center richiedono una connessione.",
+     "q": "Shogiful funziona offline?"
+    },
+    {
+     "a": "Shogiful si scarica gratis, e il gioco non è mai limitato: tutti i 40 avversari, che sblocchi vincendo, con ogni scacchiera, ogni set di pezzi e la scacchiera 3D. La versione gratuita include 2 analisi di partita, 3 problemi di allenamento e 2 suggerimenti del coach al giorno, 381 problemi di tsume e 31 lezioni. Premium toglie i limiti giornalieri e apre Varianti profonde, tutti i 501 problemi di tsume, ogni esercizio, tutte le 80 lezioni, il Profilo di abilità e le Tendenze delle debolezze. Costa {P_MONTHLY}/mese o {P_YEARLY}/anno, entrambi con {TRIAL}, oppure {P_LIFETIME} una sola volta per l’accesso a vita. In famiglia è incluso. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "Shogiful è gratis? Quanto costa Premium?"
+    },
+    {
+     "a": "No. Non c’è nessuna registrazione e nessun account Shogiful. Le tue partite, le analisi e la cronologia degli allenamenti restano sul tuo dispositivo. Game Center è facoltativo, e gli acquisti passano dal tuo Apple Account.",
+     "q": "Shogiful richiede un account?"
+    },
+    {
+     "a": "No. Ogni partita è contro i 40 avversari di Shogiful, che vanno dal principiante tranquillo al livello maestro e si sbloccano man mano che li batti. Per partite classificate contro persone, usa Shogi Wars, Lishogi o 81Dojo, e importa quelle partite come KIF per rivederle in Shogiful.",
+     "q": "Posso giocare contro altre persone in Shogiful?"
+    },
+    {
+     "a": "Sì, con Komaochi nella scheda Allenamento. Ha 40 scenari distribuiti su 8 handicap, dalla lancia di vantaggio fino a otto pezzi, ciascuno con un obiettivo come il matto o il materiale. “Inizia la pratica” apre una partita da quella posizione di handicap. Le partite con handicap partono solo da Komaochi, non dalla scheda Gioca.",
+     "q": "Posso giocare a shogi con handicap?"
+    },
+    {
+     "a": "Sì, gratis. In Impostazioni, “Scacchiera e pezzi” mostra sette scacchiere e sette set di pezzi in un’unica galleria, con anteprima dal vivo in 2D o in 3D. Le scacchiere sono Hon-kaya, Shin-kaya, Hinoki, Noce, Ichō, Lacca scura e Tappetino da allenamento. I set di pezzi sono Satsuma Moriage, Ichiji-goma, Kakigoma, Plastica da club, Ebano e oro, Internazionale e Scacchi. La scacchiera 2D e quella 3D mostrano entrambe il set che scegli. Se prima giocavi su Kaya (chiara) o su Noce (scura), la tua scacchiera passa a Hon-kaya o a Noce.",
+     "q": "Posso cambiare scacchiera e pezzi in Shogiful?"
+    },
+    {
+     "a": "Sì. Shogiful ha 39 localizzazioni, tra cui l’italiano e il giapponese, e segue la lingua del tuo dispositivo. Chi usa l’app in giapponese ha un primo avvio dedicato, che chiede un livello kyū o dan, e le mosse si possono mostrare in notazione giapponese (▲７六歩) o occidentale (P-7f).",
+     "q": "Shogiful è in italiano e in giapponese?"
+    }
+   ],
+   "seo": {
+    "description": "App di shogi (scacchi giapponesi) per iPhone, iPad e Mac: gioca senza kanji, capisci ogni errore e allenati con 501 problemi di tsume."
+   },
+   "tagline": "Gioca a shogi, scopri perché hai perso e allenati su quello.",
+   "url": "/it/apps/shogiful/"
+  },
+  "soon": {
+   "faq": [
+    {
+     "a": "Soon. è un’app per iPhone con conto alla rovescia. Aggiungi i momenti che stai aspettando, come un viaggio, un matrimonio, un compleanno, un esame o la data prevista del parto, e ognuno riceve la tua foto, una checklist e una cronologia di partenza per il suo tipo di evento e un posto tra 26 widget per la schermata Home, la schermata di blocco e StandBy. Conta anche in avanti dalle date passate e conserva i momenti conclusi come Ricordi.",
+     "q": "Che cos’è Soon.?"
+    },
+    {
+     "a": "Per qualsiasi cosa abbia una data. Soon. ha tipi di evento per viaggi, matrimoni, compleanni, anniversari, esami, lavoro, festività, salute, un bebè, concerti, sport e un momento generico, e la modalità piano suggerisce una checklist per la maggior parte. Se oltre alla data dai al momento anche un orario, nelle sue ultime 24 ore i widget mostrano un conto alla rovescia dal vivo in ore e minuti. Se gli dai una data passata, conta i giorni trascorsi.",
+     "q": "Per che cosa posso fare un conto alla rovescia?"
+    },
+    {
+     "a": "Sì. La versione gratuita comprende fino a 5 momenti, 1 momento fissato, le checklist e le cronologie della modalità piano, i widget con il tuo momento fissato, 3 temi, 1 foto per momento, importazione dal calendario, ricerca, Siri, Ricordi e sincronizzazione iCloud. Premium aggiunge momenti illimitati, più momenti fissati, tutti gli 11 temi, fino a 10 foto per momento, qualsiasi momento su qualsiasi widget, promemoria, l’attività in tempo reale del conto alla rovescia finale, le previsioni meteo, le note giornaliere, i momenti ricorrenti, la modalità Bebè e In questo giorno.",
+     "q": "Soon. è gratis?"
+    },
+    {
+     "a": "{P_MONTHLY} al mese o {P_YEARLY} all’anno, entrambi con {TRIAL}, oppure {P_LIFETIME} una tantum per A vita. Puoi annullare un abbonamento quando vuoi e tutti e tre i piani sono compatibili con In famiglia. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "Quanto costa Premium?"
+    },
+    {
+     "a": "Soon. ha 26 widget per la schermata Home, la schermata di blocco e StandBy, da un semplice numero di giorni a un anello, una cronologia, una vista del mese e una vista sull’intero anno, con una variante notturna per StandBy. I widget gratuiti mostrano il tuo momento fissato; Premium ti lascia scegliere qualsiasi momento per ogni widget e sblocca tutti gli stili di widget. Con iOS 18 c’è anche un comando dei giorni mancanti per il Centro di Controllo.",
+     "q": "Quali widget per il conto alla rovescia offre Soon.?"
+    },
+    {
+     "a": "Sì. I widget della schermata di blocco funzionano nella versione gratuita e mostrano il tuo momento fissato. Con Premium, l’attività in tempo reale del conto alla rovescia finale mette il timer nella schermata di blocco e nella Dynamic Island per le ultime 24 ore, e “Mantieni nella schermata di blocco” può mostrare il conto alla rovescia fino a 90 giorni prima. iOS può terminare un’attività in tempo reale dopo qualche ora, e Soon. la aggiorna in background quando iOS lo consente.",
+     "q": "Posso vedere il conto alla rovescia nella schermata di blocco e nella Dynamic Island?"
+    },
+    {
+     "a": "Sì. Un momento con una data passata conta i giorni trascorsi, sulla sua scheda, nei widget, nella schermata di blocco e nel comando del Centro di Controllo. I promemoria e l’attività in tempo reale valgono solo per i conti alla rovescia. Inoltre, un conto alla rovescia arrivato al suo giorno può essere salvato come Ricordo, che mostra i giorni passati da quando è accaduto.",
+     "q": "Posso contare i giorni passati da una data trascorsa?"
+    },
+    {
+     "a": "Con Premium, attiva i promemoria per un momento e Soon. invia una notifica 7 giorni, 3 giorni e 1 giorno prima, e nel giorno stesso all’orario del momento. Se il piano di un momento ha tappe nella cronologia, ricevi un promemoria per ciascuna tappa al posto di quelli a 7, 3 e 1 giorno, e In questo giorno invia un promemoria annuale nell’anniversario di un ricordo. La versione gratuita non invia promemoria.",
+     "q": "Come funzionano i promemoria?"
+    },
+    {
+     "a": "Da Apple Weather. Aggiungi un luogo a un momento cercando una città o un posto e Soon. mostra le previsioni quando la data è entro 7 giorni. Le previsioni meteo fanno parte di Premium.",
+     "q": "Da dove arrivano le previsioni meteo?"
+    },
+    {
+     "a": "No. Le note giornaliere nascono da modelli inclusi nell’app e assemblati sul tuo iPhone, una al giorno per ogni momento, con un tono Calmo o Giocoso. Fanno parte di Premium.",
+     "q": "Le note giornaliere sono scritte da un’IA?"
+    },
+    {
+     "a": "No. Soon. non ha pubblicità, tracker né SDK di terze parti e non crei mai un account. I tuoi momenti sono salvati sul tuo iPhone e, con la sincronizzazione iCloud attiva, nel tuo iCloud privato, che Lagerland Apps non può leggere. In Impostazioni trovi “Esporta i miei dati” ed “Elimina tutti i miei dati”.",
+     "q": "Soon. mi traccia o raccoglie dati?"
+    },
+    {
+     "a": "Accedi a iCloud con lo stesso Apple Account su entrambi gli iPhone e i tuoi momenti si sincronizzano tramite il tuo iCloud privato. In Impostazioni vedi lo stato sotto Sincronizzazione iCloud. Puoi anche esportare tutto in un file JSON da Impostazioni. Un acquisto Premium si ripristina su qualsiasi iPhone con lo stesso Apple Account.",
+     "q": "Che fine fanno i miei momenti se cambio iPhone?"
+    },
+    {
+     "a": "No. Soon. funziona solo su iPhone e richiede iOS 17.6 o successivo. Il comando del Centro di Controllo richiede iOS 18.",
+     "q": "Soon. funziona su Apple Watch, iPad o Mac?"
+    },
+    {
+     "a": "Puoi condividere qualsiasi conto alla rovescia come immagine in formato storia, post, messaggio o widget, tramite Messaggi, Instagram o qualsiasi app del menu di condivisione. Le schede da condividere gratuite hanno una piccola filigrana Soon., che Premium rimuove. Soon. non ha conti alla rovescia condivisi o in tempo reale tra persone: se due persone vogliono lo stesso conto alla rovescia, ciascuna lo aggiunge nella propria copia.",
+     "q": "Posso condividere un conto alla rovescia con qualcuno?"
+    }
+   ],
+   "seo": {
+    "description": "Conto alla rovescia su iPhone per viaggi, matrimoni e compleanni: 26 widget, una checklist per ogni evento e sincronizzazione iCloud. Gratis, con Premium."
+   },
+   "tagline": "Conti alla rovescia per i momenti a cui tieni, sempre sotto gli occhi.",
+   "url": "/it/apps/soon/"
+  },
+  "tare": {
+   "faq": [
+    {
+     "a": "Tare è un rompicapo di logica senza parole, basato sull’equilibrio, per iPhone e iPad. Ognuno dei suoi 200 livelli è una scultura sospesa: appendi i pesi ai ganci finché ogni asta è in equilibrio nello stesso momento. Alcuni pesi sono nascosti e ne ricavi il valore dalle carte illustrate. Sembra un giocattolo, ma ogni livello ha una sola disposizione corretta che puoi trovare ragionando.",
+     "q": "Che tipo di gioco è Tare?"
+    },
+    {
+     "a": "Un’asta è in piano quando il peso per la distanza dal perno è uguale sui due lati. Un 2 sulla seconda tacca bilancia un 4 sulla prima. Quando un’asta è appesa a un’altra, tira sul suo gancio con tutto ciò che pende sotto. Il gioco lo insegna nei primi cinque livelli, senza una parola.",
+     "q": "Come funziona l’equilibrio in Tare?"
+    },
+    {
+     "a": "Sono pesi nascosti dentro una bolla smerigliata. Un’asta che ne porta uno non si assesta finché non ne hai dedotto il valore, quindi non puoi leggere la risposta sulla bilancia. Le carte illustrate appuntate sopra il piano mostrano come i pezzi si confrontano, e da quelle ricavi ogni peso nascosto.",
+     "q": "Cosa sono i pesi “?” di Tare?"
+    },
+    {
+     "a": "Sì. Ogni livello è fatto a mano e poi verificato da un solver. Deve avere una sola disposizione in equilibrio, ogni peso nascosto deve discendere dalle sue carte e nessun pezzo in più deve trovare posto.",
+     "q": "Ogni livello si può davvero risolvere?"
+    },
+    {
+     "a": "Il download è gratuito, e il capitolo I, con i suoi 20 livelli, resta gratis; non è una prova a tempo. Un solo acquisto di {P_IAP:Tare Full Access} apre per sempre i capitoli da II a X, cioè gli altri 180 livelli. È un acquisto unico, senza abbonamento, e funziona con “In famiglia”. Non c’è pubblicità e non c’è nient’altro da comprare.",
+     "q": "Tare è gratis?"
+    },
+    {
+     "a": "I capitoli si aprono in ordine, con o senza acquisto. Continua a risolvere il capitolo I e si apre il capitolo II, poi ogni capitolo successivo allo stesso modo. All’interno di un capitolo puoi giocare fino a tre livelli oltre l’ultimo risolto.",
+     "q": "Ho comprato lo sblocco. Perché il capitolo II è ancora chiuso?"
+    },
+    {
+     "a": "Apri Impostazioni nel gioco e tocca “Ripristina acquisti”. La schermata di sblocco ha lo stesso pulsante.",
+     "q": "Come ripristino l’acquisto su un nuovo iPhone o iPad?"
+    },
+    {
+     "a": "Sì, se li vuoi. I suggerimenti sono spenti per impostazione predefinita. Attiva Suggerimenti in Impostazioni e su ogni livello compare un pulsante per il suggerimento. Un suggerimento traccia una linea che mostra dove va il pezzo successivo. Non mostra mai l’ultimo pezzo e non svela mai un peso nascosto. Chiederne uno costa la terza stella del livello. Nei primi cinque livelli compare anche da sola una linea guida se ti fermi per un po’.",
+     "q": "Ci sono i suggerimenti?"
+    },
+    {
+     "a": "Tre stelle sono una soluzione pulita. Staccare un pezzo già appeso o chiedere un suggerimento le porta a due, e riempire il piano nel modo sbagliato prima di risolvere le porta a una. Il tuo voto migliore viene conservato, e nel gioco niente è bloccato dietro le stelle.",
+     "q": "Cosa significano le tre stelle?"
+    },
+    {
+     "a": "Tare funziona completamente offline; tutti i 200 livelli sono nell’app. Solo l’acquisto e il ripristino dello sblocco richiedono una connessione, tramite Apple. Il gioco non apre connessioni di rete per conto suo, non ha account, pubblicità, analisi né SDK di terze parti, e non raccoglie dati. I tuoi progressi e le tue impostazioni restano sul tuo dispositivo.",
+     "q": "Tare funziona offline e raccoglie dati?"
+    },
+    {
+     "a": "Sì. Il rompicapo non ha parole, quindi chiunque può giocarci in qualsiasi lingua e a qualsiasi età. Le poche schermate intorno, come Impostazioni e la schermata di sblocco, sono tradotte in 44 lingue, italiano compreso.",
+     "q": "Possono giocarci i bambini o chi non legge l’inglese?"
+    },
+    {
+     "a": "Tare funziona su iPhone e iPad con iOS o iPadOS 18 o successivo. Su iPhone si gioca in verticale. Su iPad ruota con il dispositivo e disegna il gioco in grande, in una colonna centrata. Non esiste una versione per Mac, Apple Watch o Vision Pro. I progressi restano sul dispositivo su cui giochi e non si sincronizzano tra dispositivi.",
+     "q": "Tare esiste per iPad o Mac, e i progressi si sincronizzano?"
+    },
+    {
+     "a": "Sì. VoiceOver legge la scultura come aste, ganci e pesi con un nome, con azioni per posizionare un pezzo o rimetterlo sul vassoio. Menu ed etichette si ingrandiscono con le dimensioni del testo del sistema. L’impostazione “Contrasto elevato” mantiene i colori piatti a 4,5:1 o più, “Riduci movimento” e “Riduci trasparenza” sono rispettati, e i pezzi hanno forme distinte, quindi il colore non è mai l’unico indizio.",
+     "q": "Tare è accessibile?"
+    }
+   ],
+   "seo": {
+    "description": "Gioco rompicapo senza parole per iPhone e iPad: deduci pesi nascosti dalle carte. 200 livelli, 20 gratis, offline, senza pubblicità."
+   },
+   "tagline": "Un rompicapo di equilibrio senza parole. Appendi i pesi, porta ogni asta in equilibrio e deduci quelli nascosti.",
+   "url": "/it/apps/tare/"
+  },
+  "taskful-day": {
+   "faq": [
+    {
+     "a": "Taskful Day è un planner giornaliero e un’app to do list per iPhone, iPad, Mac e Apple Watch. Pianifichi un giorno alla volta, le attività non finite passano da sole al giorno dopo e aggiungi attività scrivendo una frase, a voce, con Siri o dall’orologio. Pro aggiunge viste visive della giornata, una griglia settimanale a blocchi di tempo, un timer di concentrazione, 21 widget per la schermata Home e la sincronizzazione iCloud.",
+     "q": "Che cos’è Taskful Day?"
+    },
+    {
+     "a": "Sì. Taskful Day funziona su Mac con macOS 14 o successivo, con barra degli strumenti, menu, scorciatoie da tastiera, menu contestuali con il clic destro, più finestre e widget sulla scrivania propri. La cattura vocale e i widget per la schermata di blocco restano su iPhone e iPad, e l’attività in tempo reale del timer di concentrazione resta su iPhone. Con Pro, la sincronizzazione iCloud tiene il Mac e gli altri dispositivi sullo stesso piano.",
+     "q": "Taskful Day è disponibile per Mac?"
+    },
+    {
+     "a": "No. Taskful Day è una sola app di App Store che funziona su iPhone, iPad e Mac e si scarica gratis su ciascuno. Se compri Pro su un dispositivo, si sblocca anche sugli altri dispositivi con lo stesso Apple Account.",
+     "q": "La versione per Mac si compra a parte?"
+    },
+    {
+     "a": "Sì, con Pro. La sincronizzazione iCloud è facoltativa e passa dal tuo iCloud privato: attività, checklist, promemoria, spazi di lavoro, la lista per le attività senza giorno e il Diario restano allineati su tutti i dispositivi. Taskful Day non ha un server proprio. Attivare o disattivare la sincronizzazione richiede di riavviare l’app.",
+     "q": "Taskful Day si sincronizza tra iPhone, iPad e Mac?"
+    },
+    {
+     "a": "Taskful Day non è uno strumento per l’ADHD né un prodotto medico, ma alcune scelte di progetto potrebbero aiutare se le liste lunghe ti sopraffanno. Le attività non finite passano da sole al giorno dopo e la lista Oggi non mostra nessun contatore di ritardi. Puoi lasciare un pensiero nella lista per le attività senza giorno e decidere dopo quando farlo. La Modalità concentrazione mostra una sola attività alla volta e Pro aggiunge un timer. I 7 giorni di Pro a ogni nuova installazione ti lasciano provare tutto prima, senza carta.",
+     "q": "Taskful Day va bene per chi ha l’ADHD?"
+    },
+    {
+     "a": "Sì. L’app per Apple Watch mostra Ora, Oggi e Domani, ti lascia completare o posticipare le attività con uno scorrimento e cattura le nuove attività con la dettatura o con Scribble. Richiede che l’app per iPhone sia installata. Lo smistamento della lista per le attività senza giorno, il selettore degli spazi di lavoro e le complicazioni Riportato e “Serie del diario” sono Pro; la complicazione Oggi è gratuita.",
+     "q": "Taskful Day funziona su Apple Watch?"
+    },
+    {
+     "a": "La maggior parte delle app to do list accumula un arretrato sempre più lungo e segna quello che hai mancato. Taskful Day pianifica un giorno alla volta, fa passare in automatico le attività non finite a oggi e non mostra nessun contatore di ritardi nella lista Oggi. Ti fa anche vedere la giornata come un orologio, una linea del tempo o una mappa e funziona su iPhone, iPad, Mac e Apple Watch senza account.",
+     "q": "In cosa Taskful Day è diversa dalle altre app to do list?"
+    },
+    {
+     "a": "Sì, con Pro. La Modalità concentrazione mostra un’attività con i suoi passaggi di checklist e Pro aggiunge un timer da 10, 25 o 45 minuti, o di qualsiasi durata da 5 a 120. Su iPhone il conto alla rovescia gira anche come Attività in tempo reale nella schermata di blocco e nella Dynamic Island.",
+     "q": "Taskful Day ha un timer di concentrazione?"
+    },
+    {
+     "a": "Taskful Day si scarica gratis e ogni nuova installazione ha 7 giorni di Pro, senza carta. Dopo, la versione gratuita permette di creare fino a 50 attività in totale, con un solo spazio di lavoro. Pro aggiunge attività illimitate, la sincronizzazione iCloud, le viste visive della giornata, la griglia settimanale, il timer di concentrazione e 21 widget per la schermata Home, a {P_MONTHLY}/mese, {P_YEARLY}/anno o {P_LIFETIME} una tantum. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "Taskful Day è gratis?"
+    },
+    {
+     "a": "Le tue attività restano. I temi Pro tornano su Sistema e valgono i limiti della versione gratuita: 50 attività in totale, uno spazio di lavoro, un passaggio di checklist per attività e una verifica attiva. La settimana gratuita parte da sola alla fine della prima configurazione. Non è una prova di abbonamento di App Store e non chiede mai dati di pagamento.",
+     "q": "Che cosa succede quando finiscono i 7 giorni di Pro gratis?"
+    },
+    {
+     "a": "No. Non ci sono account, pubblicità, strumenti di analisi né SDK di terze parti, e Taskful Day non ha un server proprio. I tuoi dati restano sul dispositivo, o nel tuo iCloud privato se attivi la sincronizzazione iCloud.",
+     "q": "Taskful Day traccia o vende i miei dati?"
+    },
+    {
+     "a": "Sì. Taskful Day importa i tuoi promemoria non completati una sola volta, in una sola direzione, salta i doppioni e trasforma le note a elenco puntato in passaggi di checklist. Nella versione gratuita la prima importazione conta nel totale di 50 attività e mostra quanti promemoria aspettano Pro. Pro importa tutto e permette di reimportare più avanti.",
+     "q": "Posso importare le attività da Promemoria?"
+    },
+    {
+     "a": "Sì. Su iPad, Taskful Day ha una disposizione a tre zone con una barra laterale che include la ricerca, un calendario mensile e spazio per più finestre, e otto dei suoi widget esistono in formato extra large. Funziona con iPadOS 17.6 o successivo.",
+     "q": "Funziona su iPad?"
+    },
+    {
+     "a": "Sì. Nelle Impostazioni trovi “Esporta i miei dati”, che salva le tue attività con note e passaggi di checklist in un file JSON, e “Elimina tutti i miei dati”, che cancella tutto.",
+     "q": "Posso esportare i miei dati?"
+    },
+    {
+     "a": "Taskful Day richiede macOS 14 o successivo sul Mac, iOS 17.6 o successivo su iPhone e iPadOS 17.6 o successivo su iPad. L’app per Apple Watch richiede watchOS 10.6 o successivo.",
+     "q": "Quale versione di macOS richiede Taskful Day?"
+    },
+    {
+     "a": "Sì. L’interfaccia di Taskful Day è tradotta in italiano, widget compresi, e le regole per le parole chiave includono l’italiano per data, ora e priorità.",
+     "q": "Taskful Day è disponibile in italiano?"
+    }
+   ],
+   "seo": {
+    "description": "App to do list e planner giornaliero per iPhone, iPad, Mac e Apple Watch: quello che resta passa a domani. Senza account, 7 giorni di Pro gratis."
+   },
+   "tagline": "Un planner giornaliero in cui le attività non finite passano al giorno dopo, senza sensi di colpa.",
+   "url": "/it/apps/taskful-day/"
+  },
+  "wanderwiki": {
+   "faq": [
+    {
+     "a": "WanderWiki è un’app per iPhone e iPad (iOS 18.2 o versioni successive) per leggere Wikipedia scorrendo invece di cercare. Casuale porta articoli da tutta l’enciclopedia, Esplora restringe il mazzo a uno dei 16 argomenti, e toccando una carta si apre l’articolo completo in una vista di lettura pulita che ricorda dove ti sei fermato. Copre 32 edizioni linguistiche di Wikipedia, compresa quella italiana. Gli articoli salvati si scaricano per la lettura offline, qualsiasi articolo può essere letto a voce alta, e cinque widget portano WanderWiki nella schermata Home e nella schermata di blocco. È gratis per 20 articoli al giorno; Premium aggiunge “Per te”, “Accadde oggi” e lo scorrimento illimitato a {P_MONTHLY}/mese, {P_YEARLY}/anno o {P_LIFETIME} a vita. Non ci sono pubblicità né account.",
+     "q": "Cos’è WanderWiki?"
+    },
+    {
+     "a": "In WanderWiki scegli Casuale in cima al feed. A ogni scorrimento arriva un articolo a caso dall’edizione di Wikipedia scelta nelle Impostazioni, per esempio quella italiana. Ogni carta mostra un’immagine e le prime righe; toccando la carta si apre l’articolo completo. Puoi anche mettere il controllo Sorprendimi nel Centro di Controllo o sul tasto Azione. Casuale è incluso nel piano gratuito, entro i 20 articoli al giorno. Il nostro articolo <a href=\"/journal/how-to-find-interesting-wikipedia-articles/\" hreflang=\"en\">How to find a random Wikipedia article that is worth reading (in inglese)</a> dà altri modi per imbattersi in un articolo che vale la pena leggere.",
+     "q": "Come si apre una pagina casuale di Wikipedia su iPhone?"
+    },
+    {
+     "a": "Sì. L’interfaccia di WanderWiki è in italiano, widget compresi. Wikipedia in italiano è una delle 32 edizioni: la scegli nelle Impostazioni, alla voce “Lingua di Wikipedia”. “Accadde oggi” usa allora il feed On This Day dell’edizione italiana, e “Per te” ed Esplora si basano sulle sue categorie.",
+     "q": "WanderWiki è in italiano?"
+    },
+    {
+     "a": "Entrambe permettono di scorrere articoli casuali di Wikipedia, ed entrambe hanno una modalità “questo giorno nella storia”, la scelta degli argomenti, i salvataggi e i widget. WikiScroll è gratis con pubblicità, vende premium nell’app, e la sua etichetta privacy di App Store indica che i dati possono essere usati per tracciarti; funziona sugli iPhone fino a iOS 15. WanderWiki non mostra pubblicità e non traccia. È gratis per 20 articoli al giorno, con Premium da {P_MONTHLY}/mese o {P_LIFETIME} a vita, e aggiunge articoli salvati che si aprono offline, cartelle, lettura a voce alta e 32 edizioni di Wikipedia, su iPhone e iPad da iOS 18.2. Il confronto completo è nella <a href=\"/alternatives/wikiscroll/\" hreflang=\"en\">pagina sull’alternativa a WikiScroll</a> (in inglese).",
+     "q": "Che differenza c’è tra WanderWiki e WikiScroll?"
+    },
+    {
+     "a": "Wiki Rabbit è gratis con pubblicità e pesca solo dai Good Articles di Wikipedia. WanderWiki non mostra pubblicità con nessun piano e pesca dall’edizione completa di Wikipedia che scegli, in 32 lingue. Wiki Rabbit si adatta durante una sessione a ciò che apri, salti e leggi a lungo, e spiega perché ha scelto ogni articolo. “Per te” di WanderWiki parte dai 16 argomenti che scegli e dagli argomenti o articoli che chiedi di nascondere, il tutto elaborato sul tuo dispositivo. Scegli Wiki Rabbit per le spiegazioni; scegli WanderWiki per l’assenza di pubblicità, tutta Wikipedia, più lingue, i salvataggi offline e i widget.",
+     "q": "Che differenza c’è tra WanderWiki e Wiki Rabbit?"
+    },
+    {
+     "a": "No. WanderWiki è un’app indipendente di Lagerland Apps. Legge i contenuti di Wikipedia tramite le API ufficiali di Wikipedia, con licenza Creative Commons Attribution-ShareAlike 4.0, mostrata nelle Impostazioni, e ogni articolo si apre in Wikipedia dalla vista di lettura. WanderWiki non è affiliata alla Wikimedia Foundation né approvata da essa. Per modificare, per le pagine di discussione e gli osservati speciali, usa l’app ufficiale di Wikipedia.",
+     "q": "WanderWiki è un’app ufficiale di Wikipedia?"
+    },
+    {
+     "a": "Trentadue: inglese, tedesco, francese, spagnolo, italiano, portoghese, olandese, polacco, finlandese, svedese, danese, norvegese bokmål, ceco, slovacco, ungherese, rumeno, croato, catalano, turco, russo, ucraino, greco, ebraico, giapponese, cinese, coreano, hindi, vietnamita, indonesiano, thailandese, malese e arabo. Casuale, Esplora e la ricerca leggono dall’edizione che scegli. “Accadde oggi” usa il feed proprio dell’edizione in 19 di queste e l’inglese nelle altre. “Per te” e gli argomenti di Esplora usano le categorie proprie dell’edizione in 17: inglese, tedesco, francese, spagnolo, giapponese, cinese, coreano, italiano, portoghese, russo, finlandese, svedese, olandese, polacco, turco, arabo e hindi. Nelle altre 15 mostrano articoli casuali, e l’app te lo dice.",
+     "q": "Quali edizioni di Wikipedia supporta WanderWiki?"
+    },
+    {
+     "a": "Scegli i tuoi interessi tra 16 argomenti: Scienza, Tecnologia, Storia, Arti, Musica, Sport, Natura, Spazio, Filosofia, Geografia, Letteratura, Cinema, Gastronomia, Architettura, Matematica e Politica. “Per te” costruisce poi un feed dalle categorie di Wikipedia che stanno dietro quegli argomenti, e in 17 edizioni sono le categorie proprie dell’edizione. Tieni premuta una carta per vederne meno di simili, segnare un argomento come non interessante o nascondere un articolo, e “Per te” si adatta. Queste scelte restano sul tuo dispositivo. “Per te” fa parte di Premium; Esplora, che si tuffa in un solo argomento, è gratis.",
+     "q": "Come funziona la modalità “Per te”?"
+    },
+    {
+     "a": "“Accadde oggi” mostra On This Day di Wikipedia per la data di oggi. Passa tra cinque categorie: In evidenza (la selezione di Wikipedia per la data), Eventi, Nascite, Morti e Festività. Legge il feed proprio della tua edizione in 19 delle 32 edizioni e il feed inglese nelle altre. Nell’app fa parte di Premium. Il widget “Accadde oggi”, con una fotografia della storia del giorno, è gratis.",
+     "q": "Come funziona “Accadde oggi”?"
+    },
+    {
+     "a": "Sì, cinque, tutti gratis: “Accadde oggi” (la storia del giorno con una fotografia), “Anno di lettura” (la tua serie e ogni giorno in cui hai finito un articolo), “Riprendi la lettura” (gli articoli che hai iniziato), “Hai un minuto?” (scegli 2, 5, 10 o 20 minuti e il widget trova un articolo della lunghezza giusta) e “Due porte” (un articolo vicino ai tuoi interessi, uno lontano). La maggior parte esiste anche nei formati per la schermata di blocco, e con iOS 27 “Accadde oggi” e “Anno di lettura” possono riempire un’intera pagina. Sorprendimi e “Riprendi la lettura” ci sono anche come controlli per il Centro di Controllo, la schermata di blocco e il tasto Azione.",
+     "q": "WanderWiki ha dei widget?"
+    },
+    {
+     "a": "Sì, quelli che salvi. Salvare un articolo ne scarica il testo completo, così si apre senza connessione, e puoi ordinare gli articoli salvati in cartelle e ritrovarli da Spotlight. Un’impostazione disattiva i download, e le Impostazioni mostrano quanto spazio occupano. Il feed da scorrere si carica in tempo reale da Wikipedia e richiede una connessione. Gli articoli salvati restano sul dispositivo che li ha salvati; non c’è sincronizzazione con iCloud.",
+     "q": "Posso leggere gli articoli offline?"
+    },
+    {
+     "a": "Solo in modo limitato e visibile. Casuale è davvero casuale, ed Esplora resta sull’argomento che hai scelto. “Per te” parte dagli argomenti che scegli e si adatta quando tieni premuta una carta per vederne meno o nasconderla. Tutto questo avviene sul tuo dispositivo. WanderWiki non ha strumenti di analisi né un server proprio, quindi nulla di ciò che leggi viene raccolto.",
+     "q": "WanderWiki usa un algoritmo di raccomandazione?"
+    },
+    {
+     "a": "Sì, ed entrambe sono facoltative. WanderWiki conta i giorni di fila in cui leggi qualcosa, nel tuo Profilo e nel widget “Anno di lettura”. Se consenti le notifiche (l’app lo chiede la prima volta che salvi un articolo), una notifica giornaliera, alle 9:00 salvo modifiche, sceglie un momento dalla storia di oggi (nelle 19 edizioni con un feed On This Day proprio). Quando una serie raggiunge i tre giorni, la sera ricevi un promemoria se quel giorno non hai ancora letto nulla. Il tuo Profilo mostra anche un riepilogo settimanale che puoi condividere come immagine. Cambia l’orario, imposta le ore di silenzio o disattiva le notifiche nelle Impostazioni.",
+     "q": "WanderWiki ha serie o notifiche?"
+    },
+    {
+     "a": "Sì, per 20 articoli al giorno, senza carta e senza account. Il piano gratuito copre Casuale ed Esplora, con salvataggio, Mi piace, ricerca e cartelle, più Ascolta e i cinque widget, in tutte le 32 edizioni. Quando arrivi a 20, l’app ti propone di passare a Premium o di tornare dopo la mezzanotte locale, quando il conteggio riparte da zero. Premium sblocca “Per te”, “Accadde oggi” e lo scorrimento illimitato a {P_MONTHLY}/mese o {P_YEARLY}/anno, ciascuno con {TRIAL} per i nuovi abbonati, oppure {P_LIFETIME} a vita, con In famiglia. Nessun piano mostra pubblicità. L’unico altro acquisto è una mancia facoltativa da {P_IAP:Support the developer}. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "WanderWiki è gratis?"
+    },
+    {
+     "a": "Funziona su iPhone e iPad con iOS o iPadOS 18.2 o versioni successive, e su iPad usa un layout con barra laterale. Non esiste una versione per Mac, Apple Vision Pro, Apple Watch o web. Per un feed di Wikipedia in qualsiasi browser, WikiTok è un’opzione gratuita.",
+     "q": "WanderWiki funziona su iPad, Mac o Vision Pro?"
+    },
+    {
+     "a": "No. WanderWiki non contiene strumenti di analisi né SDK di terze parti, non richiede un account e non ha un server proprio. Gli articoli salvati, quelli che ti piacciono, le cartelle, i progressi di lettura e la serie restano sul tuo dispositivo, e “Elimina i miei dati”, nelle Impostazioni, li cancella. Le richieste di rete dell’app vanno a Wikipedia, per articoli, ricerca e feed On This Day, e al server di immagini di Wikimedia per le immagini, quindi Wikimedia le vede come con qualsiasi lettore di Wikipedia. Gli acquisti passano da Apple.",
+     "q": "WanderWiki traccia quello che leggo?"
+    }
+   ],
+   "seo": {
+    "description": "Wikipedia casuale su iPhone e iPad: scorri da un articolo a caso all’altro, in 32 lingue. Senza pubblicità né account, 20 articoli al giorno gratis."
+   },
+   "tagline": "Scorri Wikipedia, un’idea alla volta.",
+   "url": "/it/apps/wanderwiki/"
+  },
+  "xiangqiful": {
+   "faq": [
+    {
+     "a": "Xiangqiful è un’app per imparare gli scacchi cinesi (xiangqi) su iPhone, iPad e Mac, costruita su un unico ciclo: imparare, giocare, capire perché, allenarsi. Insegna il gioco dalla prima mossa con 80 lezioni gratuite, ti fa giocare contro 40 avversari con stili distinti e usa il motore Pikafish per rivedere ogni mossa sul tuo dispositivo. Gli errori trovati hanno il loro nome in termini di xiangqi e diventano la tua prossima sessione di allenamento, insieme a 902 problemi di matto e più di 150 esercizi. Funziona offline, senza account né pubblicità.",
+     "q": "Che cos’è Xiangqiful?"
+    },
+    {
+     "a": "Lo xiangqi è la forma cinese tradizionale degli scacchi, giocata in tutta la Cina, in Vietnam con il nome di cờ tướng e in tutta la diaspora cinese. I pezzi stanno sugli incroci di una griglia 9×10 invece che nelle caselle, un fiume divide la scacchiera e ogni generale è confinato in un palazzo 3×3 insieme ai suoi due consiglieri. Diversi pezzi mettono in difficoltà chi gioca a scacchi: il cannone si muove come una torre ma cattura solo saltando esattamente un pezzo, il cavallo può essere bloccato alla zampa, gli elefanti non possono attraversare il fiume e i due generali non devono mai trovarsi di fronte su una colonna aperta. La cosa più sorprendente: chi non ha mosse legali perde (lo stallo è una sconfitta, non una patta), e lo scacco perpetuo fa perdere a chi lo dà.",
+     "q": "Cos’è lo xiangqi e in cosa è diverso dagli scacchi?"
+    },
+    {
+     "a": "Sì, ed è uno dei motivi principali per cui esiste Xiangqiful. Scegli i pezzi occidentali, che usano simboli, oppure i pezzi ibridi, che mostrano ogni simbolo insieme al suo carattere, così li impari giocando. Le lezioni introducono i caratteri un pezzo alla volta e puoi passare ai pezzi tradizionali quando sei pronto.",
+     "q": "Posso giocare senza saper leggere i caratteri cinesi?"
+    },
+    {
+     "a": "Sì. Il percorso Fondamenti parte dalla scacchiera e dai pezzi, e le lezioni coprono le regole che sorprendono chi comincia. Quando una di queste succede in una tua partita, come uno stallo o uno scacco perpetuo, l’app te la spiega al momento. La scala degli avversari parte dal livello Novizio con un bambino che ha appena imparato le mosse. Se giochi già, la valutazione delle abilità in 15 posizioni ti dà un punteggio di partenza.",
+     "q": "Xiangqiful va bene per chi parte da zero?"
+    },
+    {
+     "a": "Pikafish, un motore di xiangqi open source potente derivato da Stockfish. È integrato nell’app con la sua rete neurale e gira interamente sul tuo dispositivo, quindi l’analisi non richiede né cloud né account. Xiangqiful trasforma il suo output in mosse valutate ed errori con un nome. Pikafish è distribuito con licenza GPL-3; la schermata Licenze nelle Impostazioni lo cita e include il testo della licenza.",
+     "q": "Che motore usa Xiangqiful?"
+    },
+    {
+     "a": "Ci sono 40 avversari in otto livelli, da Novizio a Maestro. La forza indicata per ciascuno segue la scala di Xiangqiful, non un punteggio Elo di una federazione. Ogni avversario gioca uno stile, non una copia indebolita del motore: aggressivo, difensivo, cannoniere, specialista del cavallo, controllore del fiume, posizionale, stratega del finale o equilibrato. Shīfu sta al 33º gradino e il Saggio aspetta in cima. I primi 10 avversari sono gratuiti, con partite illimitate, e Premium apre tutti i 40 subito. Batti un avversario due volte per segnarlo come sconfitto. Puoi giocare come Rosso, come Nero o con uno schieramento a caso.",
+     "q": "Quanto sono forti gli avversari?"
+    },
+    {
+     "a": "No. Xiangqiful è un’app di allenamento per giocare da solo, senza account, server né partite online. Serve a migliorare tra le partite che giochi con altre persone, in un club, online o al parco.",
+     "q": "Posso giocare contro altre persone?"
+    },
+    {
+     "a": "Sì. Lezioni, partite, motore, analisi, allenamento e progressi girano sul tuo dispositivo. Serve una connessione solo per ciò che gestisce Apple: caricare i prezzi, acquistare o ripristinare Premium e Game Center, se lo usi.",
+     "q": "Xiangqiful funziona offline?"
+    },
+    {
+     "a": "Xiangqiful si scarica gratis e il piano gratuito non ha limiti di tempo: tutte le 80 lezioni, la valutazione delle abilità, tutte le scacchiere e i set di pezzi, partite illimitate contro i primi 10 avversari, la prima serie di esercizi di ogni modulo, 2 analisi di partita al giorno, 3 problemi di allenamento al giorno (compresi i problemi di matto) e 2 suggerimenti dell’allenatore in partita al giorno. Premium apre tutti i 40 avversari e tutti gli esercizi, toglie i limiti giornalieri e aggiunge l’analisi approfondita su più linee, il profilo di abilità e le tendenze delle debolezze. Costa {P_MONTHLY} al mese o {P_YEARLY} all’anno, ciascuno con {TRIAL} per chi si abbona per la prima volta, oppure {P_LIFETIME} a vita, e tutte e tre le formule funzionano con In famiglia. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto. Non c’è pubblicità in nessuno dei due piani.",
+     "q": "Xiangqiful è gratis? Quanto costa Premium?"
+    },
+    {
+     "a": "Sono 902, dal matto in 1 al matto in 7, e ognuno è un problema a scacco continuo: ogni mossa dell’attaccante deve dare scacco. 708 vengono da otto manuali classici, il più ricco dei quali è lo Shiqing Yaqu, e 194 sono composizioni originali. Ogni linea è stata ricontrollata dal solutore dell’app e un problema di libro che non funziona davvero è stato lasciato fuori.",
+     "q": "Da dove vengono i problemi di matto?"
+    },
+    {
+     "a": "Sono modi facoltativi per sostenere l’app: “Offri un caffè”, Sostenitore e “Sostegno enorme”. Non sbloccano nulla, perché Premium include già tutte le funzioni. Sono acquisti unici gestiti da Apple.",
+     "q": "A cosa servono le mance nelle Impostazioni?"
+    },
+    {
+     "a": "Sì, con dei limiti. Incolla una partita dagli appunti o scegli un file di testo, come testo di mosse ICCS (H2-E2) o WXF (C2=5), guardane l’anteprima e analizzala come qualsiasi altra partita. Altri formati, come XQF, non sono supportati, e le registrazioni di alcuni siti possono richiedere qualche ritocco prima. Sul Mac puoi anche copiare la posizione attuale come FEN o copiare la registrazione della partita.",
+     "q": "Posso analizzare partite giocate altrove?"
+    },
+    {
+     "a": "Vince chi dà scacco matto, e vince anche chi lascia l’avversario in stallo: nello xiangqi restare senza mosse legali fa perdere. Lo scacco perpetuo fa perdere chi lo dà. La triplice ripetizione e sessanta mosse senza catture sono patta. L’app non applica la regola contro l’inseguimento perpetuo.",
+     "q": "Quali regole usa Xiangqiful per patta e ripetizione?"
+    },
+    {
+     "a": "Sì. Le mosse possono essere mostrate in notazione WXF (C2=5) o in notazione cinese, e i pezzi possono avere caratteri tradizionali o semplificati. L’app esiste in 40 localizzazioni, tra cui cinese semplificato e tradizionale, vietnamita, giapponese, coreano e thailandese.",
+     "q": "L’app ha la notazione cinese e i caratteri semplificati?"
+    },
+    {
+     "a": "Sì, gratis. In Impostazioni, sotto Scacchiera, scegli tra sette scacchiere (Bosso, Palissandro, Tavolo di pietra del parco, Tappetino da club, Rotolo di carta di riso, Lacca rossa e oro e Marmo e giada) e otto set di pezzi (Avorio, Legno intagliato, Melammina da club, Giada, Ciottolo di fiume, Palissandro e ottone, Porcellana e Lacca dorata). Ogni set sta su qualsiasi scacchiera. La scacchiera 2D e la scacchiera 3D facoltativa per giocare mostrano entrambe ciò che scegli, e ogni set segue il tuo stile di pezzi: tradizionale, occidentale o ibrido. Per impostazione predefinita l’app usa il set Avorio sulla scacchiera Bosso.",
+     "q": "Posso cambiare scacchiera e pezzi in Xiangqiful?"
+    },
+    {
+     "a": "Sì. L’intera interfaccia di Xiangqiful è tradotta in italiano, lezioni, revisione della partita e schermata di acquisto compresi. L’italiano è tra le 40 localizzazioni dell’app.",
+     "q": "Xiangqiful è disponibile in italiano?"
+    },
+    {
+     "a": "No. Le tue partite, le analisi e i progressi di allenamento sono salvati sul dispositivo che usi, e non c’è nessun account né server con cui sincronizzarli. Un solo acquisto di Premium vale invece per iPhone, iPad e Mac con lo stesso Apple Account; su un altro dispositivo usa “Ripristina acquisti” per sbloccarlo.",
+     "q": "I miei progressi si sincronizzano tra iPhone, iPad e Mac?"
+    },
+    {
+     "a": "Solo se vuoi: l’accesso è facoltativo. I tuoi risultati alimentano 62 obiettivi e otto classifiche: punteggio stimato, miglior precisione in una partita, precisione di questa settimana, serie di vittorie più lunga, avversari sconfitti, serie di allenamento, problemi risolti e abilità complessiva. L’app ha anche una sua schermata Obiettivi.",
+     "q": "Xiangqiful usa Game Center?"
+    },
+    {
+     "a": "Xiangqiful supporta VoiceOver, con etichette sui punti della scacchiera, sulle schede degli avversari, sul grafico delle abilità e sui comandi. Per arabo ed ebraico c’è un’impostazione di lettura da destra a sinistra per la scacchiera. L’app è disponibile in 40 localizzazioni. Non supporta Dynamic Type e ha solo un tema scuro.",
+     "q": "Xiangqiful è accessibile?"
+    }
+   ],
+   "seo": {
+    "description": "Impara gli scacchi cinesi (xiangqi) su iPhone, iPad e Mac: 80 lezioni gratuite, 902 problemi di matto, 40 avversari e revisione Pikafish sul dispositivo."
+   },
+   "tagline": "Impara gli scacchi cinesi dalla prima mossa, poi gioca, rivedi e allenati.",
+   "url": "/it/apps/xiangqiful/"
+  }
  }
 }
