@@ -208,8 +208,8 @@ founder:
     - "A chave de API fica no porta-chaves do iPhone e os pedidos seguem por HTTPS diretamente para a Apple"
     - "Financiado pelas vendas das próprias apps, sem anúncios e sem investidores"
   external_link:
-    href: "/alternatives/"
-    label: "Ver como o AppMeta Pulse se compara ao AppStats, ao App Sales e ao Appfigures (em inglês)"
+    href: "/alternatives/appstats/"
+    label: "Ver como o AppMeta Pulse se compara ao AppStats (em inglês)"
 
 enrichment:
   use_cases:

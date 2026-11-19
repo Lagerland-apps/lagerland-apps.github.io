@@ -12,6 +12,7 @@ reviewing any Portuguese page. Every decision a translator would otherwise make 
 | Tier 1 pages | written and reviewed 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/pt.yml`). AI files and OG cards in batch 6 (/pt/llms.txt, /pt/llms-full.txt, 21 OG cards) |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
 | Tier 2 | batch 1 written and reviewed 2026-11-19, no native review yet: both hubs, chess, logic, workout and xiangqi guides, 3 /for/ pages, local-only /pt/guides/limitar-tempo-de-ecra-iphone/. Batch 2 (same day): shogi guide, bill tracker rewritten around Wallet (BudgetBakers) and Spendee (the two apps sold in Portugal whose own listing says they connect to the bank; Portugal has no single default like Fintonic), local-only /pt/guides/como-fazer-contagem-decrescente-iphone/. Tier 2 complete; for/indie-ios-developers stays English-only. Research: ~/Downloads/githubcode/pt-tier2-research-2026-11-19.md; briefs `_i18n/pt-tier2-brief.md`, `_i18n/pt-tier2-review-brief.md` |
+| Tier 3 | batch 1 written and reviewed 2026-11-19, no native review yet: hub /pt/alternatives/ and 10 comparisons (WHOOP, Oura, Splitwise, Tricount, Hevy, Chess.com, Lichess, PDF Expert, Forest, Opal). No local-only comparison: no Portugal-born competitor has demand (the gap found is a guide, `app para dividir despesas`). Research: ~/Downloads/githubcode/pt-tier3-research-2026-11-19.md; store data ~/Downloads/githubcode/pt-tier3-store-2026-11-19.md; briefs `_i18n/pt-tier3-brief.md`, `_i18n/pt-tier3-review-brief.md`. Next batch candidates in the research file |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 72 s before Portuguese (main at the setup, 2026-11-19, other sessions' agents running); 85 s with Portuguese Tier 1 (762 audited pages) |
 
@@ -204,6 +205,24 @@ Search Console for Portugal: not read in this session. Revisit 4 to 6 weeks afte
 | /pt/guides/bill-tracker-without-bank-connection/ | `app para gerir subscrições` | AllPaid keeps `app lembrete de pagamento`, `app lembrete de contas a pagar` |
 | /pt/guides/como-fazer-contagem-decrescente-iphone/ (local-only) | `como fazer contagem decrescente no iphone` | Soon. keeps `contagem decrescente iphone`, `contagem decrescente widget`, `app contador de dias` |
 
+## Tier 3 keywords (2026-11-19)
+
+| Page | Primary | Notes |
+|---|---|---|
+| /pt/alternatives/whoop/ | `alternativa a whoop` (prose «alternativa à Whoop», Whoop feminine) | + `whoop sem subscrição` (answered with facts, I-0369), `oura ou whoop` shared with oura |
+| /pt/alternatives/oura/ | `oura ring ou apple watch` | + `oura ring tem subscrição` |
+| /pt/alternatives/splitwise/ | `alternativa ao splitwise` | `tricount ou splitwise` shared with tricount |
+| /pt/alternatives/tricount/ | `alternativa a tricount` (prose «alternativa ao Tricount») | + `tricount como funciona` |
+| /pt/alternatives/hevy/ | `hevy como funciona` | + `hevy pro preço`, `hevy ou strong` |
+| /pt/alternatives/chess-com/ | `chess.com premium preço` | + `chess com alternativas`, `chess com grátis análise` |
+| /pt/alternatives/lichess/ | `chess.com ou lichess` | + `lichess grátis`, `lichess xadrez` |
+| /pt/alternatives/pdf-expert/ | `pdf expert grátis mac` | `comprimir pdf iphone` stays with MediaKit |
+| /pt/alternatives/forest/ | `forest app como funciona` | + `forest app preço`, `forest app apple watch` |
+| /pt/alternatives/opal/ | `opal app como funciona` | `bloquear apps iphone` stays with EarnLock |
+
+Store facts per competitor: ~/Downloads/githubcode/pt-tier3-store-2026-11-19.md. «IAP rows: none shown» there means the
+listing flags in-app purchases but renders no rows: never write «sem compras integradas» from it.
+
 Google Portugal suggest returns Brazilian forms (iniciantes, academia, «os apps», celular, tela): never use them as keywords.
 
 ## Decisions from the Tier 1 reviews (2026-11-19)
@@ -235,8 +254,9 @@ Google Portugal suggest returns Brazilian forms (iniciantes, academia, «os apps
 
 ## Local competitors (for Tier 3)
 
-Not researched yet. Candidates seen in the iTunes Search API results during keyword research are listed in
-pt-keywords.md per page.
+Researched 2026-11-19 (pt-tier3-research-2026-11-19.md): no Portugal-born competitor with search demand for any of our
+apps. Bill splitting is Splitwise and Tricount; budgeting is Wallet (BudgetBakers), Spendee and Money Lover (covered by
+the bill-tracker guide); app blocking is Opal, Forest, one sec and AppBlock.
 
 ## Tells to cut in Portuguese (TRANSLATION.md 8.2, plus what reviews find)
 
@@ -293,6 +313,29 @@ returned the full page).
 Apple Portugal's own Screen Time guide switches the schedule on with «Programação» and off with «Horário», and writes
 «Limites de tempo» on one page, «Limites de tempo permitido» on another: quote each step as written.
 
+From the Tier 3 batch 1 reviews (2026-11-19): infinitive bullets or a second «se» under a card title ending «… se»
+(«Não ser preciso que…», «se quer…»): write «serve para quem…» + a verb, or an indicative clause; «se se» doubles;
+impersonal-se bullets («Quer-se ver…», «Escolha-se o X»): third person without pronoun as on the app pages; «a
+alternativa» for "an alternative"; «alternativa a X» in prose where the page writes «o X» (keywords stay as typed);
+«compras na app» / «compras dentro da app» (Apple Portugal: «compras integradas»); «listagem» («ficha»); «opção de
+compra única vitalícia» («opção vitalícia»); «contrata-se» for a lifetime purchase («vende-se»); «entram» with no
+complement («entram no grupo»); «quem o lê» for a service; gerund progressives «vão-se registando», «vai preenchendo»;
+«copia-se» with no object; «confirmem-se», «confira» («confirme»); «por X por ano»; «Fazem trabalhos diferentes»
+(«Servem para coisas diferentes»); «fica melhor servido» (gendered); «frente a» (Spanish: «comparado com», «vs»);
+«uma pulseira que se usa no pulso»; «verificado com dados» («testado com»); one Portuguese name for two competing
+scores (qualify the competitor's: «pontuação diária de esforço (Strain) da Whoop»); «uma categoria em seis» («uma das
+seis categorias»); ratings with two decimals (one, as the store shows); hardening a competitor fact with «só»;
+invented popularity closers («muita gente usa ambos»); editorial summaries no source makes («a diferença está
+sobretudo em…»); «treino de hoje» for "daily training" outside the UI label; «revê» for "checks» («verifica»); one
+gender per competitor feature across sibling pages («a Game Review»); «tokens opacos» («identificadores opacos»);
+«bloco» for a focus session («sessão»); «versão grátis» where the app page says «plano grátis»; «Não indicado» against
+a feminine label; a sentence that opens with its verb and holds the subject back; meta clauses about where a fact came
+from («vem da verificação feita para a página em inglês»).
+From the Tier 3 hub and llms review: «ninguém mais» (Brazilian order: «mais ninguém»); «X face ao Y» as "vs" in lists
+(«o X comparado com o Y»); «tira do Apple Watch» for scores computed from Health data; «por agora em inglês» (an implied
+roadmap: «estão em inglês»); «quando fica melhor a app conhecida»; competitor names without their article in titles and
+descriptions («ao Splitwise, à Whoop»; keywords stay as typed).
+
 Translationese: title case headings; gerund chains copied from English -ing («oferecendo», «permitindo»); passive
 «é … por» where Portuguese uses «se»; possessives on body parts and devices copied from English; «utilizador»
 everywhere where Portuguese says «quem»; Brazilian vocabulary and grammar on this Portugal site (see Market and
@@ -323,6 +366,8 @@ register); «você» or tu forms slipping in; clitic placement copied from Brazi
 | /pt/llms.txt, /pt/llms-full.txt | 1 writer | 1 reviewer (every reason checked against the app's Portuguese page; one invented query replaced) | n/a | no native review yet |
 | Tier 2 batch 1: chess, logic, workout, xiangqi guides; 3 /for/ pages; local-only screen-time guide (2026-11-19) | 8 Sonnet writers | 4 reviewers (for pages; chess + xiangqi; workout + local, Apple pages re-fetched live; logic): about 150 fixes, incl. double-brace tokens, a wrong Apple label, a translated quote, «Nonogramas Katana» renamed, hedges restored | n/a | no native review yet |
 | Tier 2 batch 2: shogi, bill tracker (Portugal rewrite), local-only countdown guide (2026-11-19) | 3 Sonnet writers | 3 reviewers (Apple pages re-fetched live; every competitor sentence against its Portuguese listing): about 50 fixes, incl. Big Days' in-app purchases, Soon.'s free task list, Shogi Wars offline play per its listing | n/a | no native review yet |
+| Tier 3 batch 1: 10 comparisons (2026-11-19) | 10 Sonnet writers | 6 reviewers (Splitwise + Tricount; WHOOP + Oura; Hevy; Chess.com + Lichess; PDF Expert; Forest + Opal; raw Portuguese store pages re-read for Opal and Forest): about 150 fixes, incl. US-store references and US privacy and Family Sharing data replaced by Portuguese store data, Forest's Apple Vision restored, Opal's lifetime row, hardened «só para Mac», added Hevy Pro list and lichess community claims cut, colliding keywords replaced | n/a | no native review yet |
+| Tier 3 hub /pt/alternatives/, /pt/llms.txt lines, Observa and RightSplit FAQ links | 1 Sonnet writer | 1 reviewer (ItemList names and llms titles synced to final page titles; colliding queries removed) | n/a | no native review yet |
 | Tier 2 hubs, /pt/llms.txt lines, 6 inbound links | 1 Sonnet writer | 1 reviewer (ItemList names and llms titles synced to final page titles, two unrouted queries routed) | n/a | no native review yet |
 
 Points for a native reader: the trial phrase «teste grátis» (Apple's support pages say «período experimental»);
