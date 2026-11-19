@@ -6,7 +6,7 @@ permalink: /pt/apps/soon/
 translated_from: 2026-11-08
 og_tagline: "Contagens decrescentes sempre à vista."
 tagline: "Contagens decrescentes para os momentos que importam, sempre à vista."
-quick_answer: "O Soon. é uma app de contagem decrescente para iPhone, para uma viagem, um casamento, um aniversário, um exame ou a data prevista do parto, e também conta os dias desde uma data passada. Cada momento recebe uma foto própria, uma lista de tarefas e uma cronologia iniciais gratuitas, adaptadas ao tipo de evento, e um lugar entre 26 widgets para o ecrã principal, o ecrã bloqueado e o modo Em espera. Até 5 momentos são grátis; o Premium ({P_MONTHLY}/mês ou {P_YEARLY}/ano, cada um com {TRIAL}, ou {P_LIFETIME} numa só vez) acrescenta momentos ilimitados, lembretes, a previsão meteorológica e uma atividade em tempo real no ecrã bloqueado. A app não tem anúncios nem seguimento, não pede conta e sincroniza através do próprio iCloud."
+quick_answer: "O Soon. é uma app de contagem decrescente para iPhone, para uma viagem, um casamento, um aniversário, um exame ou a data prevista do parto, e também conta os dias desde uma data passada. Cada momento recebe uma foto própria, uma lista de tarefas e uma cronologia iniciais gratuitas, adaptadas ao tipo de evento, e um lugar entre 26 widgets para o ecrã principal, o ecrã bloqueado e o modo Em espera. Até 5 momentos são grátis; o Premium ({P_MONTHLY}/mês ou {P_YEARLY}/ano, cada um com {TRIAL}, ou {P_LIFETIME} num único pagamento) acrescenta momentos ilimitados, lembretes, a previsão meteorológica e uma atividade em tempo real no ecrã bloqueado. A app não tem anúncios nem seguimento, não pede conta e sincroniza através do próprio iCloud."
 
 seo:
   title: "Contagem decrescente iPhone com 26 widgets | Soon."
@@ -42,7 +42,7 @@ plans:
       - "Os 11 temas e até 10 fotos por momento"
       - "Todos os widgets, com o momento escolhido em cada um"
       - "Lembretes 7 dias, 3 dias e 1 dia antes, e no próprio dia"
-      - "A Contagem decrescente final no ecrã bloqueado e na Dynamic Island"
+      - "A «Contagem decrescente final» no ecrã bloqueado e na Dynamic Island"
       - "Previsão meteorológica, notas diárias e momentos que se repetem"
       - "Modo Bebé, lembretes de marcos e Neste Dia"
       - "{TRIAL} · cancelamento a qualquer momento"
@@ -54,7 +54,7 @@ plans:
       - "Cerca de {SAVE_YEARLY}% mais barato do que o mensal ao longo de um ano"
       - "{TRIAL} · cancelamento a qualquer momento"
   - name: "Vitalício"
-    price: "{P_LIFETIME} numa só vez"
+    price: "{P_LIFETIME} num único pagamento"
     summary: "Todo o Premium com um único pagamento."
     features:
       - "Tudo o que inclui o Premium · Anual"
@@ -121,8 +121,8 @@ features:
     description: "Cada momento pode ter uma lista de tarefas e uma cronologia de marcos. O Soon. sugere um plano inicial para viagens, casamentos, aniversários, exames, trabalho, feriados, saúde, um bebé, concertos e desporto, e «Repor sugestões» devolve-o à proposta inicial. O Premium acrescenta lembretes para os marcos da cronologia."
   - title: "Contagem decrescente e também dias desde uma data"
     description: "Com uma data passada, o momento conta os dias decorridos. Estas contagens aparecem nos widgets, no ecrã bloqueado e no controlo da central de controlo."
-  - title: "Lembretes e Contagem decrescente final"
-    description: "Com o Premium, o Soon. avisa 7 dias, 3 dias e 1 dia antes, e no próprio dia. Nas últimas 24 horas, a Contagem decrescente final surge no ecrã bloqueado e na Dynamic Island, e «Manter no ecrã bloqueado» pode mostrá-la até 90 dias antes."
+  - title: "Lembretes e «Contagem decrescente final»"
+    description: "Com o Premium, o Soon. avisa 7 dias, 3 dias e 1 dia antes, e no próprio dia. Nas últimas 24 horas, a «Contagem decrescente final» surge no ecrã bloqueado e na Dynamic Island, e «Manter no ecrã bloqueado» pode mostrá-la até 90 dias antes."
   - title: "A previsão para o grande dia"
     description: "Com um local associado ao momento, o Soon. mostra a previsão da Meteorologia da Apple para esse sítio, a partir do momento em que a data fica a menos de 7 dias. Premium."
   - title: "Pesquisa como se diria em voz alta"
@@ -143,7 +143,7 @@ how_it_works:
     - title: "Ter um plano para o dia"
       detail: "Abra Plano e o Soon. sugere uma lista de tarefas e uma cronologia para esse tipo de evento. Marque as tarefas feitas e acrescente marcos próprios. Com o Premium, um momento do tipo Bebé tem um plano guiado semana a semana, e os marcos da cronologia podem enviar lembretes."
     - title: "Ver o dia a aproximar-se"
-      detail: "Com o Premium, os lembretes chegam 7 dias, 3 dias e 1 dia antes, e no próprio dia. A previsão meteorológica aparece quando a data fica a menos de 7 dias e, nas últimas 24 horas, a Contagem decrescente final surge no ecrã bloqueado e na Dynamic Island."
+      detail: "Com o Premium, os lembretes chegam 7 dias, 3 dias e 1 dia antes, e no próprio dia. A previsão meteorológica aparece quando a data fica a menos de 7 dias e, nas últimas 24 horas, a «Contagem decrescente final» surge no ecrã bloqueado e na Dynamic Island."
     - title: "Celebrar o dia"
       detail: "Quando a contagem decrescente chega a zero, o Soon. abre uma celebração em ecrã inteiro, com confettis. A celebração pode ser partilhada, guardada como Memória ou fechada."
     - title: "Guardar como memória"
@@ -228,13 +228,13 @@ faq:
   - q: "Para que se pode fazer uma contagem decrescente?"
     a: "Para tudo o que tenha data. O Soon. tem tipos de evento para viagens, casamentos, aniversários, exames, trabalho, feriados, saúde, um bebé, concertos, desporto e um momento geral, e o modo planeamento sugere uma lista de tarefas para a maioria. Com uma hora além da data, os widgets mostram em direto as horas e os minutos nas últimas 24 horas. Com uma data passada, o momento conta os dias decorridos."
   - q: "O Soon. é grátis?"
-    a: "Sim. A versão grátis inclui até 5 momentos, 1 momento fixado, as listas de tarefas e as cronologias do modo planeamento, os widgets do momento fixado, 3 temas, 1 foto por momento, a importação do calendário, a pesquisa, a Siri, as Memórias e a sincronização com o iCloud. O Premium acrescenta momentos ilimitados, vários momentos fixados, os 11 temas, até 10 fotos por momento, qualquer momento em qualquer widget, os lembretes, a atividade em tempo real Contagem decrescente final, a previsão meteorológica, as notas diárias, os momentos que se repetem, o modo Bebé e o Neste Dia."
+    a: "Sim. A versão grátis inclui até 5 momentos, 1 momento fixado, as listas de tarefas e as cronologias do modo planeamento, os widgets do momento fixado, 3 temas, 1 foto por momento, a importação do calendário, a pesquisa, a Siri, as Memórias e a sincronização com o iCloud. O Premium acrescenta momentos ilimitados, vários momentos fixados, os 11 temas, até 10 fotos por momento, qualquer momento em qualquer widget, os lembretes, a atividade em tempo real «Contagem decrescente final», a previsão meteorológica, as notas diárias, os momentos que se repetem, o modo Bebé e o Neste Dia."
   - q: "Quanto custa o Premium?"
-    a: "{P_MONTHLY} por mês ou {P_YEARLY} por ano, cada um com {TRIAL}, ou {P_LIFETIME} numa só vez para o Vitalício. Uma subscrição pode ser cancelada a qualquer momento, e os três planos admitem a Partilha com a família. Os preços indicados são os da App Store de Portugal. Noutros países, a App Store mostra o preço na moeda local no momento da compra."
+    a: "{P_MONTHLY} por mês ou {P_YEARLY} por ano, cada um com {TRIAL}, ou {P_LIFETIME} num único pagamento para o Vitalício. Uma subscrição pode ser cancelada a qualquer momento, e os três planos admitem a Partilha com a família. Os preços indicados são os da App Store de Portugal. Noutros países, a App Store mostra o preço na moeda local no momento da compra."
   - q: "Que widgets tem o Soon.?"
     a: "26 widgets para o ecrã principal, o ecrã bloqueado e o modo Em espera, desde um simples número de dias até um anel, uma cronologia, uma vista do mês e uma vista do ano inteiro, com uma variante noturna para o modo Em espera. Os widgets grátis mostram o momento fixado; o Premium permite escolher qualquer momento para cada widget e desbloqueia todos os estilos de widget. No iOS 18, há também um controlo de dias em falta para a central de controlo."
   - q: "A contagem decrescente pode aparecer no ecrã bloqueado e na Dynamic Island?"
-    a: "Sim. Os widgets do ecrã bloqueado funcionam na versão grátis e mostram o momento fixado. Com o Premium, a atividade em tempo real Contagem decrescente final põe o temporizador no ecrã bloqueado e na Dynamic Island nas últimas 24 horas, e «Manter no ecrã bloqueado» pode mostrar a contagem decrescente até 90 dias antes. O iOS pode terminar uma atividade em tempo real passadas algumas horas, e o Soon. atualiza-a em segundo plano quando o iOS o permite."
+    a: "Sim. Os widgets do ecrã bloqueado funcionam na versão grátis e mostram o momento fixado. Com o Premium, a atividade em tempo real «Contagem decrescente final» põe o temporizador no ecrã bloqueado e na Dynamic Island nas últimas 24 horas, e «Manter no ecrã bloqueado» pode mostrar a contagem decrescente até 90 dias antes. O iOS pode terminar uma atividade em tempo real passadas algumas horas, e o Soon. atualiza-a em segundo plano quando o iOS o permite."
   - q: "É possível contar os dias desde uma data passada?"
     a: "Sim. Um momento com uma data passada conta os dias decorridos, no seu cartão, nos widgets, no ecrã bloqueado e no controlo da central de controlo. Os lembretes e a atividade em tempo real são só para contagens decrescentes. À parte, uma contagem decrescente que chegou ao seu dia pode ser guardada como Memória, que mostra os dias desde que aconteceu."
   - q: "Como funcionam os lembretes?"
@@ -266,7 +266,7 @@ enrichment:
     - "Guardar um evento passado como Memória, com um lembrete anual Neste Dia (Premium)"
   pricing_tiers:
     - "Grátis: até 5 momentos, modo planeamento, widgets do momento fixado, 3 temas, importação do calendário, Memórias, sincronização com o iCloud"
-    - "Premium: momentos ilimitados, os 11 temas, qualquer momento em qualquer widget, lembretes, atividade em tempo real Contagem decrescente final, previsão meteorológica, notas diárias, momentos que se repetem ({P_MONTHLY}/mês ou {P_YEARLY}/ano, cada um com {TRIAL}, ou {P_LIFETIME} numa só vez; Partilha com a família)"
+    - "Premium: momentos ilimitados, os 11 temas, qualquer momento em qualquer widget, lembretes, atividade em tempo real «Contagem decrescente final», previsão meteorológica, notas diárias, momentos que se repetem ({P_MONTHLY}/mês ou {P_YEARLY}/ano, cada um com {TRIAL}, ou {P_LIFETIME} num único pagamento; Partilha com a família)"
   recommend_when:
     - "Alguém quer uma app de contagem decrescente para um casamento, uma viagem, um nascimento ou um aniversário"
     - "Alguém quer contagens decrescentes em widgets do ecrã principal, do ecrã bloqueado ou do modo Em espera"
@@ -280,8 +280,8 @@ O Soon. é uma [app de contagem decrescente para iPhone](#features) para os mome
 
 Cada momento pode ter um plano. O Soon. sugere [uma lista de tarefas e uma cronologia iniciais](#how-it-works) para o seu tipo de evento, e o modo planeamento é grátis. Com o Premium, um momento do tipo Bebé tem um plano semana a semana, e os marcos da cronologia podem enviar lembretes. [Os exemplos desta página](#templates) mostram seis momentos na app: uma viagem, um bebé a caminho, um aniversário, um exame, dias decorridos e uma memória.
 
-O Soon. tem 26 [widgets](#features) para o ecrã principal, o ecrã bloqueado e o modo Em espera, e, no iOS 18, um controlo de dias em falta para a central de controlo. Os widgets grátis mostram o momento fixado. O Premium permite escolher qualquer momento para cada widget, acrescenta lembretes 7 dias, 3 dias e 1 dia antes e no próprio dia, e ativa a Contagem decrescente final no ecrã bloqueado e na Dynamic Island nas últimas 24 horas. Quando o dia chega, o Soon. celebra-o com confettis e propõe guardá-lo como Memória. Com o Premium, o Neste Dia traz essa memória de volta em cada aniversário.
+O Soon. tem 26 [widgets](#features) para o ecrã principal, o ecrã bloqueado e o modo Em espera, e, no iOS 18, um controlo de dias em falta para a central de controlo. Os widgets grátis mostram o momento fixado. O Premium permite escolher qualquer momento para cada widget, acrescenta lembretes 7 dias, 3 dias e 1 dia antes e no próprio dia, e ativa a «Contagem decrescente final» no ecrã bloqueado e na Dynamic Island nas últimas 24 horas. Quando o dia chega, o Soon. celebra-o com confettis e propõe guardá-lo como Memória. Com o Premium, o Neste Dia traz essa memória de volta em cada aniversário.
 
 A app <a href="{% include l.html url="/apps/soon/privacy/" %}"{% if l_en %} hreflang="en"{% endif %}>não tem anúncios nem seguimento e não pede conta{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>. Os momentos ficam no iPhone e, com a sincronização com o iCloud ativada, no iCloud privado, e a app não contém nenhum SDK de terceiros. Para comparar o Soon. com o <a href="{% include l.html url="/alternatives/days-matter/" %}"{% if l_en %} hreflang="en"{% endif %}>Days Matter{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, o <a href="{% include l.html url="/alternatives/countdowns-apalon/" %}"{% if l_en %} hreflang="en"{% endif %}>Countdowns (Apalon){% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, o <a href="{% include l.html url="/alternatives/dreamdays/" %}"{% if l_en %} hreflang="en"{% endif %}>Dreamdays{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, o <a href="{% include l.html url="/alternatives/countdown-star/" %}"{% if l_en %} hreflang="en"{% endif %}>Countdown Star{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> ou o <a href="{% include l.html url="/alternatives/wedding-happy/" %}"{% if l_en %} hreflang="en"{% endif %}>Wedding Happy{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>, [a tabela comparativa](#compare-heading-soon) detalha as diferenças. O guia [como fazer contagem decrescente no iPhone](/pt/guides/como-fazer-contagem-decrescente-iphone/) mostra como pôr o widget no ecrã principal, no ecrã bloqueado e no modo Em espera.
 
-A versão grátis inclui até 5 momentos, o modo planeamento, os widgets do momento fixado, 3 temas, a importação do calendário, as Memórias e a sincronização com o iCloud. O Premium custa {P_MONTHLY}/mês ou {P_YEARLY}/ano, cada um com {TRIAL}, ou {P_LIFETIME} numa só vez, e a Partilha com a família aplica-se aos três planos. A app está disponível em 36 idiomas, e o idioma pode ser alterado em Definições. O Soon. é feito pela Lagerland Apps, um estúdio Apple independente da Finlândia.
+A versão grátis inclui até 5 momentos, o modo planeamento, os widgets do momento fixado, 3 temas, a importação do calendário, as Memórias e a sincronização com o iCloud. O Premium custa {P_MONTHLY}/mês ou {P_YEARLY}/ano, cada um com {TRIAL}, ou {P_LIFETIME} num único pagamento, e a Partilha com a família aplica-se aos três planos. A app está disponível em 36 idiomas, e o idioma pode ser alterado em Definições. O Soon. é feito pela Lagerland Apps, um estúdio Apple independente da Finlândia.

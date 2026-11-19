@@ -107,7 +107,7 @@ features:
   - title: "Faz isto agora"
     description: "Um de 12 cenários para a janela atual, como uma janela curta entre turnos ou um turno da noite a aproximar-se, com três passos e a respetiva duração. Troca-se um passo de que não se goste. As 21 técnicas trazem instruções passo a passo e um temporizador."
   - title: "Limite de cafeína que se adapta"
-    description: "Regista-se um café com um toque, ou um espresso, uma bebida energética ou um chá com um toque longo. O lembrete do limite de cafeína adapta-se ao que se bebeu e à sensibilidade à cafeína definida, e ajusta-se ao próximo turno."
+    description: "Regista-se um café com um toque, ou um expresso, uma bebida energética ou um chá com um toque longo. O lembrete do limite de cafeína adapta-se ao que se bebeu e à sensibilidade à cafeína definida, e ajusta-se ao próximo turno."
   - title: "Importação do calendário"
     description: "Ligue o calendário de trabalho e o AfterShift deteta nele os turnos, com uma lista para rever antes de acrescentar o que quer que seja. A versão grátis lê 1 calendário, para os próximos 14 dias, no momento da importação. O Premium sincroniza vários calendários de cada vez que a app é aberta e controla as horas extra."
   - title: "Widgets, ecrã bloqueado e Siri"
@@ -159,7 +159,7 @@ faq:
     a: "A prevenção é um dos tipos de turno com que o AfterShift começa, e a importação do calendário reconhece eventos de prevenção pelo título. Antes ou durante um turno de prevenção, o plano de sono passa a ser uma janela de descanso flexível, o «Faz isto agora» costuma escolher a rotina de prevenção e o estado de prontidão (Premium) acrescenta uma nota de prevenção. Três ou mais turnos de prevenção em 7 dias contam como uma semana de prevenção: a tendência da dívida de sono ganha um distintivo, o separador Guia mostra um cartão de recuperação de prevenção e o Premium acrescenta uma dica diária de prevenção. Quando há tempo de prevenção na janela, a pontuação de recuperação por turnos fica limitada a 75 e a pontuação de sono a 84. <a href=\"/journal/how-to-sleep-on-call/\" hreflang=\"en\">O guia sobre o sono em prevenção (em inglês)</a> explica o que a investigação diz sobre dormir de prevenção."
 
   - q: "O AfterShift dá indicações sobre o horário da cafeína?"
-    a: "Dá um lembrete do limite de cafeína ajustado ao próximo turno, por isso o limite muda quando os turnos mudam. Regista-se um café com um toque ou, com um toque longo, um espresso, uma bebida energética, um chá ou outra coisa, e o lembrete adapta-se à quantidade de cafeína ingerida e à sensibilidade à cafeína definida. O Premium acrescenta o detalhe da cafeína a cada sono nos detalhes de recuperação."
+    a: "Dá um lembrete do limite de cafeína ajustado ao próximo turno, por isso o limite muda quando os turnos mudam. Regista-se um café com um toque ou, com um toque longo, um expresso, uma bebida energética, um chá ou outra coisa, e o lembrete adapta-se à quantidade de cafeína ingerida e à sensibilidade à cafeína definida. O Premium acrescenta o detalhe da cafeína a cada sono nos detalhes de recuperação."
 
   - q: "O AfterShift dá conselhos médicos?"
     a: "Não. O AfterShift é uma ferramenta para acompanhar e planear a recuperação. Dá informação clara, não diagnósticos médicos nem recomendações de tratamento, e as suas sugestões surgem como sugestões, não como prescrições. Em caso de suspeita de perturbação do sono por trabalho por turnos, insónia crónica, apneia do sono ou qualquer outra doença do sono, deve consultar-se um especialista do sono."

@@ -7698,7 +7698,7 @@
      "q": "Como trata o AfterShift os turnos de prevenção?"
     },
     {
-     "a": "Dá um lembrete do limite de cafeína ajustado ao próximo turno, por isso o limite muda quando os turnos mudam. Regista-se um café com um toque ou, com um toque longo, um espresso, uma bebida energética, um chá ou outra coisa, e o lembrete adapta-se à quantidade de cafeína ingerida e à sensibilidade à cafeína definida. O Premium acrescenta o detalhe da cafeína a cada sono nos detalhes de recuperação.",
+     "a": "Dá um lembrete do limite de cafeína ajustado ao próximo turno, por isso o limite muda quando os turnos mudam. Regista-se um café com um toque ou, com um toque longo, um expresso, uma bebida energética, um chá ou outra coisa, e o lembrete adapta-se à quantidade de cafeína ingerida e à sensibilidade à cafeína definida. O Premium acrescenta o detalhe da cafeína a cada sono nos detalhes de recuperação.",
      "q": "O AfterShift dá indicações sobre o horário da cafeína?"
     },
     {
@@ -8838,11 +8838,11 @@
      "q": "Para que se pode fazer uma contagem decrescente?"
     },
     {
-     "a": "Sim. A versão grátis inclui até 5 momentos, 1 momento fixado, as listas de tarefas e as cronologias do modo planeamento, os widgets do momento fixado, 3 temas, 1 foto por momento, a importação do calendário, a pesquisa, a Siri, as Memórias e a sincronização com o iCloud. O Premium acrescenta momentos ilimitados, vários momentos fixados, os 11 temas, até 10 fotos por momento, qualquer momento em qualquer widget, os lembretes, a atividade em tempo real Contagem decrescente final, a previsão meteorológica, as notas diárias, os momentos que se repetem, o modo Bebé e o Neste Dia.",
+     "a": "Sim. A versão grátis inclui até 5 momentos, 1 momento fixado, as listas de tarefas e as cronologias do modo planeamento, os widgets do momento fixado, 3 temas, 1 foto por momento, a importação do calendário, a pesquisa, a Siri, as Memórias e a sincronização com o iCloud. O Premium acrescenta momentos ilimitados, vários momentos fixados, os 11 temas, até 10 fotos por momento, qualquer momento em qualquer widget, os lembretes, a atividade em tempo real «Contagem decrescente final», a previsão meteorológica, as notas diárias, os momentos que se repetem, o modo Bebé e o Neste Dia.",
      "q": "O Soon. é grátis?"
     },
     {
-     "a": "{P_MONTHLY} por mês ou {P_YEARLY} por ano, cada um com {TRIAL}, ou {P_LIFETIME} numa só vez para o Vitalício. Uma subscrição pode ser cancelada a qualquer momento, e os três planos admitem a Partilha com a família. Os preços indicados são os da App Store de Portugal. Noutros países, a App Store mostra o preço na moeda local no momento da compra.",
+     "a": "{P_MONTHLY} por mês ou {P_YEARLY} por ano, cada um com {TRIAL}, ou {P_LIFETIME} num único pagamento para o Vitalício. Uma subscrição pode ser cancelada a qualquer momento, e os três planos admitem a Partilha com a família. Os preços indicados são os da App Store de Portugal. Noutros países, a App Store mostra o preço na moeda local no momento da compra.",
      "q": "Quanto custa o Premium?"
     },
     {
@@ -8850,7 +8850,7 @@
      "q": "Que widgets tem o Soon.?"
     },
     {
-     "a": "Sim. Os widgets do ecrã bloqueado funcionam na versão grátis e mostram o momento fixado. Com o Premium, a atividade em tempo real Contagem decrescente final põe o temporizador no ecrã bloqueado e na Dynamic Island nas últimas 24 horas, e «Manter no ecrã bloqueado» pode mostrar a contagem decrescente até 90 dias antes. O iOS pode terminar uma atividade em tempo real passadas algumas horas, e o Soon. atualiza-a em segundo plano quando o iOS o permite.",
+     "a": "Sim. Os widgets do ecrã bloqueado funcionam na versão grátis e mostram o momento fixado. Com o Premium, a atividade em tempo real «Contagem decrescente final» põe o temporizador no ecrã bloqueado e na Dynamic Island nas últimas 24 horas, e «Manter no ecrã bloqueado» pode mostrar a contagem decrescente até 90 dias antes. O iOS pode terminar uma atividade em tempo real passadas algumas horas, e o Soon. atualiza-a em segundo plano quando o iOS o permite.",
      "q": "A contagem decrescente pode aparecer no ecrã bloqueado e na Dynamic Island?"
     },
     {

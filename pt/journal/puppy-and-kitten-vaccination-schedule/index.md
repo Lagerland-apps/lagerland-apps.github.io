@@ -78,7 +78,7 @@ Para viajar com o animal para outro país da UE, o [Your Europe](https://europa.
 | Primeira consulta anual | | Reforço |
 | Depois | De 3 em 3 anos (injetável), todos os anos (intranasal) | Não essencial depois de 1 ano: anual se o contacto com gatos FeLV positivos for provável, de 2 em 2 ou de 3 em 3 anos se for menos provável |
 
-Este é o [calendário AAHA/AAFP para a prática geral](https://aaha.org/wp-content/uploads/globalassets/02-guidelines/feline-vaccination-guidlines/feline-vaccine-table.pdf){: hreflang="en"} (em inglês). A raiva fica fora da grelha: dá-se como a lei exige, com um reforço na primeira consulta anual, e as recomendações AAHA/AAFP contam-na como essencial para gatos mesmo onde a lei não a exige. Em Portugal, segundo a DGAV, a vacinação antirrábica dos gatos é voluntária. O calendário da WSAVA para gatinhos é parecido: doses de 2 em 2 a 4 em 4 semanas (a última às 16 semanas ou mais) e revacinação às 26 semanas ou depois.
+Este é o [calendário AAHA/AAFP para a prática geral](https://aaha.org/wp-content/uploads/globalassets/02-guidelines/feline-vaccination-guidlines/feline-vaccine-table.pdf){: hreflang="en"} (em inglês). A raiva fica fora da grelha: dá-se como a lei exige e, segundo uma nota do calendário, depois da revacinação dos 6 meses só os reforços do FeLV e da raiva ficam para a primeira consulta anual. As recomendações AAHA/AAFP contam-na como essencial para gatos mesmo onde a lei não a exige. Em Portugal, segundo a DGAV, a vacinação antirrábica dos gatos é voluntária. O calendário da WSAVA para gatinhos é parecido: doses de 2 em 2 a 4 em 4 semanas (a última às 16 semanas ou mais) e revacinação às 26 semanas ou depois.
 
 ## Porque é que a última dose tem de esperar pelas 16 semanas
 

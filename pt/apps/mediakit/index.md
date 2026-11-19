@@ -114,7 +114,7 @@ screenshot_captions:
   - alt: "MediaKit depois de comprimir um vídeo: 55,3 MB antes, 42,7 MB depois, 22% mais pequeno"
   - alt: "Aparar um vídeo MOV no MediaKit, com a linha cronológica e os pontos de início e fim"
   - alt: "Converter áudio no MediaKit com as predefinições Podcast, Música, Memorando e Hi-fi e as opções de formato, débito, taxa de amostragem e canais"
-  - alt: "As ferramentas de PDF do MediaKit, entre elas Comprimir, Unir, Dividir, Encriptar e Marca de água"
+  - alt: "As ferramentas de PDF do MediaKit, entre elas Comprimir, Juntar, Dividir, Encriptar e Marca de água"
   - alt: "Seis imagens comprimidas num ZIP no MediaKit, com a opção de executar o lote em segundo plano na fila"
   - alt: "Criar um GIF a partir de um vídeo no MediaKit com a taxa de fotogramas, a largura máxima e as definições de ciclo"
   - alt: "Um GIF criado a partir de um vídeo MP4 no MediaKit, com 640 px de largura e o tamanho de ficheiro estimado antes de exportar"
