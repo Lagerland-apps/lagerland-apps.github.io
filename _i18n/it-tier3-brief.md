@@ -138,3 +138,43 @@ API is fine if you need one more field.
 
 The items in it-writer-brief.md «Reply with», plus every competitor fact you dropped because Italian data was missing,
 and every place where the Italian store contradicted the English page.
+
+---
+
+## Batch 2 (2026-11-19)
+
+Same rules as batch 1, with these differences. Research rows: «Batch 2» at the bottom of the research file. Store and web
+data: `/Users/anttiaittamaa/Downloads/githubcode/it-tier3-store-batch2-2026-11-19.md`.
+
+| English source | Write to | Our app | Primary query | Structural models |
+|---|---|---|---|---|
+| alternatives/handbrake.html | it/alternatives/handbrake.html | MediaKit | handbrake come funziona | de/alternatives/handbrake.html |
+| alternatives/convertio.html | it/alternatives/convertio.html | MediaKit | convertio opinioni (twin: alternativa a convertio) | de/alternatives/convertio.html |
+| alternatives/cloudconvert.html | it/alternatives/cloudconvert.html | MediaKit | cloudconvert è gratis | es, fr, de cloudconvert |
+| (local-only) | it/alternatives/alternativa-a-splid.html | RightSplit | splid come funziona | fr/alternatives/splid.html, de/alternatives/splid-alternative.html |
+| alternatives/opal.html | it/alternatives/opal.html | EarnLock | come funziona opal app | es, fr, pt opal |
+| alternatives/bevel.html | it/alternatives/bevel.html | Observa | bevel app costo | es, fr bevel |
+| alternatives/welltory.html | it/alternatives/welltory.html | Observa | welltory recensioni | es, fr welltory |
+| alternatives/fitbod.html | it/alternatives/fitbod.html | GymLogger X | fitbod costo (twin: fitbod italiano) | es, fr fitbod |
+| alternatives/settle-up.html | it/alternatives/settle-up.html | RightSplit | settle up come funziona | es, de settle-up |
+| (local-only) | it/alternatives/alternativa-a-appblock.html | EarnLock | appblock recensioni | es/alternatives/alternativa-a-appblock.html |
+
+- The German pages are structural models only (Liquid, JSON-LD, markup): never translate from German.
+- HandBrake, Convertio and CloudConvert are web or desktop tools. Their facts come from the English page plus what the
+  store file quotes from their own sites today (euro prices only if the site shows euro; a price in another currency is
+  given in that currency with the site and date, or left out). Never «sold on App Store» for HandBrake or Convertio.
+- Batch 1 pages now exist in Italian: Tricount, Splitwise, Chess.com, Lichess, Whoop, Oura, Hevy, Forest, PDF Expert,
+  Wallet by BudgetBakers. l.html resolves links to them automatically.
+- Keyword collisions with batch 1: `alternativa a whoop`, `oura ring senza abbonamento` (Observa batch 1 pages),
+  `forest app come funziona` (Forest), `pdf expert gratis` (PDF Expert), `alternativa a splitwise` / `alternativa a
+  tricount`. Each new page has its own primary from the table; keep seo.title patterns distinct from the batch 1 titles
+  («Alternativa a X: …», «Come funziona X? …», «X gratis e Premium …»).
+- Local-only pages: `local_only: true`, no `ref`, no `translated_from`, permalinks `/it/alternatives/alternativa-a-splid/`
+  and `/it/alternatives/alternativa-a-appblock/`. Competitor facts only from the store file's description and IAP rows.
+- Lessons from the batch 1 review (apply before you hand back): no «noi» («non li riportiamo», «non abbiamo provato»:
+  impersonal or «Lagerland Apps»); no body lines citing «il confronto in inglese» as a source; no US dates or «US App
+  Store»; «per chi risiede nell’UE»; «privacy manifest» (lowercase, English); «Informazioni su <App>» headings; CTA
+  «Si parte?» / «Provala»; «Sì, se…» not «Può farlo se…»; «di {P_LIFETIME}» for a single price, never «da»; «a vita per
+  {P_LIFETIME}», never «una tantum» in prose; no keyword-then-colon seo.description; no question-opener quick_answer;
+  every seo.keyword from the research file or it-keywords.md; run the copy-editing SKILL itself (two batch 1 writers
+  skipped it and the reviewers found far more on their pages).

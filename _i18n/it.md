@@ -12,7 +12,7 @@ reviewing any Italian page. Every decision a translator would otherwise make dif
 | Tier 1 pages | done 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/it.yml`), /it/llms.txt, /it/llms-full.txt, 21 OG cards. Six batch commits, then go-live |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not pushed) |
 | Tier 2 | done 2026-11-19 (not pushed). Batch 1 (8cf9a81): both hubs, chess, logic puzzles, workout without subscription, 3 audience pages, local-only /it/guides/limitare-tempo-di-utilizzo-iphone/ and /it/guides/come-mettere-conto-alla-rovescia-iphone/. Batch 2: shogi, xiangqi, bill tracker rewritten around Wallet by BudgetBakers, Spendee and Toshl Finanze (Rocket Money, Monarch, Copilot not sold in Italy). for/indie-ios-developers stays English-only (developers search in English). Research: ~/Downloads/githubcode/it-tier2-research-2026-11-19.md; brief: `_i18n/it-tier2-brief.md` |
-| Tier 3 | batch 1 done 2026-11-19 (not pushed): /it/alternatives/ hub + tricount, splitwise, chess-com, lichess, whoop, oura, hevy, forest, pdf-expert and local-only /it/alternatives/alternativa-a-wallet-budgetbakers/ (also closes the Rocket Money part of I-0376 on the AllPaid page). Research: ~/Downloads/githubcode/it-tier3-research-2026-11-19.md (batch 2 queue inside: HandBrake, Convertio, CloudConvert, UniConverter, Splid local-only, Fitbod, Bevel, Opal, Jefit, Welltory, Settle Up, AppBlock local-only); store data: it-tier3-store-2026-11-19.md; briefs `_i18n/it-tier3-brief.md`, `_i18n/it-tier3-review-brief.md` |
+| Tier 3 | batch 2 done 2026-11-19 (not pushed): handbrake, convertio, cloudconvert (web/desktop tools, owner approved despite 6.4), opal, bevel, welltory, fitbod, settle-up and local-only /it/alternatives/alternativa-a-splid/ and /it/alternatives/alternativa-a-appblock/; hub 20 cards; store data it-tier3-store-batch2-2026-11-19.md. Batch 1 done 2026-11-19 (commit 4876acf, not pushed): /it/alternatives/ hub + tricount, splitwise, chess-com, lichess, whoop, oura, hevy, forest, pdf-expert and local-only /it/alternatives/alternativa-a-wallet-budgetbakers/ (also closes the Rocket Money part of I-0376 on the AllPaid page). Research: ~/Downloads/githubcode/it-tier3-research-2026-11-19.md (batch 2 queue inside: HandBrake, Convertio, CloudConvert, UniConverter, Splid local-only, Fitbod, Bevel, Opal, Jefit, Welltory, Settle Up, AppBlock local-only); store data: it-tier3-store-2026-11-19.md; briefs `_i18n/it-tier3-brief.md`, `_i18n/it-tier3-review-brief.md` |
 | Stale pages | 0 (2026-11-19, `i18n.py stale`); no wording-only changes waiting |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 69.5 s wall before Italian pages; 78 to 81 s with all 69 Italian Tier 1 pages (2026-11-19, clean worktree, other sessions' agents running) |
@@ -258,6 +258,16 @@ Tier 3 batch 1 (2026-11-19). Comparison pages own the competitor-name queries; a
 | forest | `forest app come funziona` | `forest app per studiare`, `forest app è gratis` |
 | pdf-expert | `pdf expert gratis` | `pdf expert è gratis`, `pdf expert per mac` |
 | local-only alternativa-a-wallet-budgetbakers | `wallet budgetbakers recensioni` | `wallet budgetbakers è sicuro`, `wallet budgetbakers costo`, `spendee o wallet` |
+| handbrake (batch 2) | `handbrake come funziona` | `handbrake cos'è`, `alternativa a handbrake`, `handbrake gratis` |
+| convertio (batch 2) | `convertio opinioni` | `alternativa a convertio`, `convertio gratis`, `convertio online gratis` |
+| cloudconvert (batch 2) | `cloudconvert è gratis` | `cloudconvert italiano gratis`, `cloudconvert gratis online` |
+| local-only alternativa-a-splid (batch 2) | `splid come funziona` | `splid app`, `splid online` |
+| opal (batch 2) | `come funziona opal app` | `opal app è gratis`, `opal app gratis` |
+| bevel (batch 2) | `bevel app costo` | `bevel app recensioni`, `bevel app è gratis`, `bevel app come funziona` |
+| welltory (batch 2) | `welltory recensioni` | `welltory italiano`, `welltory gratis` |
+| fitbod (batch 2) | `fitbod costo` | `fitbod italiano`, `fitbod opinioni`, `fitbod app gratis` |
+| settle-up (batch 2) | `settle up come funziona` | `settle up in italiano`, `settle up gratis` |
+| local-only alternativa-a-appblock (batch 2) | `appblock recensioni` | `appblock è sicuro`, `appblock gratis`, `appblock è a pagamento` |
 
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
@@ -378,6 +388,16 @@ added «sempre»; «per conto suo» («proprie»); «analytics» left in English
 risiede nell’UE»); body lines citing «il confronto in inglese» as a source; pointer sentences in FAQ answers; «noi» on
 comparison pages («non li riportiamo», «non abbiamo provato»: impersonal or «Lagerland Apps»); «alternativa a X» keywords
 with no suggest evidence.
+Batch 2 reviews (2026-11-19): «schermata di blocco» for an app's own block screen (again: «schermata che invita alla
+consapevolezza», «schermate per le app bloccate»); «Opal app» / «la Bevel app» («l’app X»); «orari legati all’ora»; gendered
+«ti sei mosso», «quanto sei recuperato»; «copre più/meno terreno» («fa più/meno cose»); «gira intorno a»; a price tacked on
+after a comma; «Registrazione gratis»; «Oltre 1000» («1.000»); «settimana di prova» for EarnLock's no-block week; «Nessun
+abbonamento obbligatorio» on a subscription app's overline; raw «X recensioni, costo e…», «X come funziona?», «X opinioni:»
+titles, H2s and FAQ questions; «approfondisce un solo lavoro»; «più privato di X» («protegge la privacy più di»); «batch»
+(MediaKit says «in blocco»); a capital after a colon in card labels; scraping artifacts written as facts («non sono visibili
+nella pagina»); a trailing «dice la sua scheda»; «Niente X e niente Y»; a comma before «e» in titles; inferred «resta sul
+dispositivo» on a competitor; «Cosa fa X che Y non fa» listing features Y also has; app-page queries copied into a
+comparison's seo.keywords.
 after an app name («AllPaid, la nostra app,»); «ti legge» for Siri reading items («Siri ti dice …»).
 
 ## House rules carried over
@@ -417,6 +437,8 @@ reviewers: home, all 21 app pages, about. Native review: none yet, for every pag
 | Tier 2 batch 2: hub cards, llms.txt lines, AllPaid and Xiangqiful link sentences | main session | same reviewer as the bill tracker | n/a | no native review yet |
 | Tier 3 batch 1: 9 comparisons + local-only Wallet page | 10 writers (Sonnet), Italian store data from one store-check agent | 2 reviewers (Opus), full copy-editing skill, fact diff against English + Italian store file; every US price and US date removed | n/a | no native review yet |
 | Tier 3 batch 1: hub, llms.txt lines, AllPaid / RightSplit / Observa / AppMeta Pulse / bill-tracker link edits | main session | reviewer of group A | n/a | no native review yet |
+| Tier 3 batch 2: 8 comparisons + local-only Splid and AppBlock | 10 writers (Sonnet), one store/web-check agent | 2 reviewers (Opus), full copy-editing skill, fact diff vs English + Italian store/web file; App Privacy claims re-checked on the raw Italian product pages | n/a | no native review yet |
+| Tier 3 batch 2: hub (20 cards), llms.txt lines, RightSplit / Observa / GymLogger X / screen-time guide links; batch 1 «una tantum» and Forest description fixes | main session | reviewer of group A (batch 2) | n/a | no native review yet |
 
 ## Screenshots
 

@@ -49,3 +49,20 @@ data for each competitor, checked today) and the writers' own notes in
 
 Per page: a short change table (field | before | after | why), fact-diff result, and new Italian tells for the sheet.
 Then English-side issues for ISSUES.md (one line each, with file).
+
+## Batch 2 (2026-11-19)
+
+Same method. Store and web data: `/Users/anttiaittamaa/Downloads/githubcode/it-tier3-store-batch2-2026-11-19.md`.
+Writer notes: the same `writer-notes.md` (batch 2 section; batch 1 notes are in `writer-notes-batch1.md`). Batch 2 rules
+for writers are the «Batch 2» section of it-tier3-brief.md. Extra checks:
+- HandBrake, Convertio, CloudConvert are web or desktop tools: facts from the English page plus their own sites as the
+  store file quotes them; Convertio prices stay in dollars as its site shows them; no «App Store» claim for HandBrake or
+  Convertio.
+- seo.keywords must not take an app page's own queries (MediaKit: `comprimere video iphone`, `comprimere pdf iphone`,
+  `convertire video in mp4 iphone`; RightSplit: `app per dividere le spese`, `app per dividere il conto`): remove them.
+- Writers added FAQs to cover the primary query («X è gratis?», «X è in italiano?», «Come funziona X?»): keep only those
+  whose every fact comes from the English page or the store file; no pointer-only answers («vedi la sezione…»).
+- Competitor claims kept from English with an English-side check date («8 novembre 2026», App Privacy labels): a
+  privacy-label claim is per-market; keep it only if the Italian store file supports it, else cut it.
+- seo.title patterns must differ from batch 1 titles and from each other; no raw keyword-then-colon titles
+  («AppBlock: recensioni…», «Splid: come funziona…», «Fitbod costo in Italia…» read as raw keywords: rephrase if so).

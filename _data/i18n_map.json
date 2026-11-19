@@ -44,6 +44,7 @@
     "en": "/alternatives/bevel/",
     "es": "/es/alternatives/bevel/",
     "fr": "/fr/alternatives/bevel/",
+    "it": "/it/alternatives/bevel/",
     "pt": "/pt/alternatives/bevel/"
   },
   "/alternatives/brick/": {
@@ -72,7 +73,8 @@
     "de": "/de/alternatives/cloudconvert/",
     "en": "/alternatives/cloudconvert/",
     "es": "/es/alternatives/cloudconvert/",
-    "fr": "/fr/alternatives/cloudconvert/"
+    "fr": "/fr/alternatives/cloudconvert/",
+    "it": "/it/alternatives/cloudconvert/"
   },
   "/alternatives/compress-videos-resize-video/": {
     "de": "/de/alternatives/compress-videos-resize-video/",
@@ -80,7 +82,8 @@
   },
   "/alternatives/convertio/": {
     "de": "/de/alternatives/convertio/",
-    "en": "/alternatives/convertio/"
+    "en": "/alternatives/convertio/",
+    "it": "/it/alternatives/convertio/"
   },
   "/alternatives/countdown-star/": {
     "de": "/de/alternatives/countdown-star/",
@@ -98,6 +101,7 @@
     "en": "/alternatives/fitbod/",
     "es": "/es/alternatives/fitbod/",
     "fr": "/fr/alternatives/fitbod/",
+    "it": "/it/alternatives/fitbod/",
     "pt": "/pt/alternatives/fitbod/"
   },
   "/alternatives/flow-free/": {
@@ -132,7 +136,8 @@
   },
   "/alternatives/handbrake/": {
     "de": "/de/alternatives/handbrake/",
-    "en": "/alternatives/handbrake/"
+    "en": "/alternatives/handbrake/",
+    "it": "/it/alternatives/handbrake/"
   },
   "/alternatives/hevy/": {
     "de": "/de/alternatives/hevy/",
@@ -202,6 +207,7 @@
     "en": "/alternatives/opal/",
     "es": "/es/alternatives/opal/",
     "fr": "/fr/alternatives/opal/",
+    "it": "/it/alternatives/opal/",
     "pt": "/pt/alternatives/opal/"
   },
   "/alternatives/oura/": {
@@ -240,7 +246,8 @@
   "/alternatives/settle-up/": {
     "de": "/de/alternatives/settle-up/",
     "en": "/alternatives/settle-up/",
-    "es": "/es/alternatives/settle-up/"
+    "es": "/es/alternatives/settle-up/",
+    "it": "/it/alternatives/settle-up/"
   },
   "/alternatives/splitwise/": {
     "de": "/de/alternatives/splitwise/",
@@ -292,7 +299,8 @@
     "de": "/de/alternatives/welltory/",
     "en": "/alternatives/welltory/",
     "es": "/es/alternatives/welltory/",
-    "fr": "/fr/alternatives/welltory/"
+    "fr": "/fr/alternatives/welltory/",
+    "it": "/it/alternatives/welltory/"
   },
   "/alternatives/whoop/": {
     "de": "/de/alternatives/whoop/",
