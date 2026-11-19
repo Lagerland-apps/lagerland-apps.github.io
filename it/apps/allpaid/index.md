@@ -169,7 +169,7 @@ features:
   - title: "In 37 lingue"
     description: "L’app, i suoi widget e le richieste di autorizzazione sono tradotti in 37 lingue. Scegli l’aspetto chiaro o scuro, oppure segui l’impostazione del dispositivo."
   - title: "Nessun accesso alla banca"
-    description: "AllPaid non si collega alla tua banca e non usa <a href=\"https://en.wikipedia.org/wiki/Plaid_(company)\" rel=\"noopener\" target=\"_blank\">Plaid</a> né altre API di aggregazione bancaria. Aggiungi tu le bollette e le tue credenziali bancarie non toccano mai l’app. Se preferisci il rilevamento automatico e non ti dispiace consegnare l’accesso alla banca, il <a href=\"/alternatives/rocket-money/\" hreflang=\"en\">confronto con Rocket Money</a> (in inglese) spiega il compromesso nel dettaglio."
+    description: "AllPaid non si collega alla tua banca e non usa <a href=\"https://en.wikipedia.org/wiki/Plaid_(company)\" rel=\"noopener\" target=\"_blank\">Plaid</a> né altre API di aggregazione bancaria. Aggiungi tu le bollette e le tue credenziali bancarie non toccano mai l’app. Se preferisci che le spese arrivino in automatico dalla banca e non ti dispiace dare accesso al conto, il <a href=\"/it/alternatives/alternativa-a-wallet-budgetbakers/\">confronto con Wallet by BudgetBakers</a> spiega il compromesso nel dettaglio."
 
 screenshot_captions:
   - alt: "Elenco bollette di AllPaid su iPhone, con le bollette in arrivo, gli importi e i pulsanti per segnarle come pagate"
@@ -210,9 +210,8 @@ plateau_disclosure:
   rule: "AllPaid è un promemoria per bollette e contratti che parte da quello che inserisci. Di proposito non è un’app completa di finanza personale, e questo limite è ciò che tiene le tue bollette private e sui tuoi dispositivi."
   what_it_does_not_do: "AllPaid non si collega alla tua banca, non importa transazioni, non paga le bollette, non le negozia al ribasso e non scansiona la tua email in cerca di ricevute. Non si accorge di un aumento di prezzo finché non aggiorni l’importo. Non ha budget, monitoraggio delle entrate, esportazione né conversione di valuta. I promemoria arrivano a un orario fisso: alle 9 per le bollette e alle 10 per i contratti."
   notes:
-    - "Vuoi il rilevamento automatico dalle tue transazioni? Prova Rocket Money o Truebill, che per farlo hanno bisogno dell’accesso alla tua banca."
-    - "Vuoi la negoziazione delle bollette come servizio? Rocket Money la offre in cambio di una percentuale del risparmio."
-    - "Vuoi un budget completo (buste, etichette per le transazioni, patrimonio netto)? YNAB, Monarch Money o Copilot sono più adatte."
+    - "Vuoi che le spese arrivino in automatico dalla banca? Prova Wallet by BudgetBakers o Toshl Finanze, che per farlo si collegano al tuo conto."
+    - "Vuoi un budget completo? App come YNAB, Wallet by BudgetBakers, Spendee o Toshl Finanze sono più adatte."
     - "Vuoi la massima privacy gratis? Un foglio di calcolo funziona ancora. AllPaid è per chi vuole il promemoria che un foglio di calcolo non sa mandare."
 
 training_vocabulary:
@@ -263,8 +262,8 @@ faq:
     a: "AllPaid è un’app per ricordare bollette e contratti su iPhone, iPad e Mac che funziona senza collegamento alla banca. Aggiungi a mano bollette, abbonamenti e contratti; AllPaid ti avvisa alle 9 prima di ogni scadenza, ti lascia segnare una bolletta come pagata dalla notifica e ti ricorda la fine di un contratto prima che arrivi. Ha anche dieci widget, Siri, il blocco app con Face ID e una panoramica delle spese. È gratis fino a 3 bollette; Pro costa {P_MONTHLY}/mese, {P_YEARLY}/anno o {P_LIFETIME} una sola volta."
   - q: "AllPaid compila le bollette in automatico?"
     a: "In parte. AllPaid non legge mai la tua banca, quindi non può trovare le bollette da sola: aggiungi ogni bolletta a mano. Quando scrivi un nome noto come Netflix, propone la categoria e ogni quanto si ripete la bolletta, e tu tocchi Applica per usarle. I fornitori più diffusi mostrano anche il loro logo. L’importo è facoltativo, quindi puoi aggiungere una bolletta anche quando cambia di mese in mese."
-  - q: "In cosa AllPaid è diversa da Rocket Money?"
-    a: "Rocket Money si collega alla tua banca, individua gli abbonamenti dalla cronologia delle transazioni e offre un servizio di negoziazione a pagamento che trattiene una percentuale del risparmio ottenuto. AllPaid non fa niente di tutto questo. Aggiungi tu le bollette, nulla lascia il tuo dispositivo a meno che tu non attivi la sincronizzazione iCloud, e AllPaid è gratis per 3 bollette con un’opzione Pro a vita con acquisto unico. Se il rilevamento automatico dalle transazioni conta per te più della privacy, Rocket Money è più adatta. Se preferisci non dare l’accesso alla banca a un’app di terzi, AllPaid è la scelta migliore. Il <a href=\"/alternatives/rocket-money/\" hreflang=\"en\">confronto completo con Rocket Money</a> (in inglese) lo passa in rassegna riga per riga."
+  - q: "In cosa AllPaid è diversa da Wallet by BudgetBakers?"
+    a: "Wallet by BudgetBakers è un’app per budget e spese che, secondo la sua scheda su App Store in Italia, con Premium riceve aggiornamenti automatici dalla banca. AllPaid non si collega alla banca. Aggiungi tu le bollette, nulla lascia il tuo dispositivo a meno che tu non attivi la sincronizzazione iCloud, e AllPaid è gratis fino a 3 bollette, con un’opzione Pro a vita. Se vuoi che le spese arrivino in automatico dalla banca, Wallet fa più al caso tuo. Se preferisci non dare l’accesso alla banca a un’app di terzi, AllPaid è la scelta migliore. Il <a href=\"/it/alternatives/alternativa-a-wallet-budgetbakers/\">confronto con Wallet by BudgetBakers</a> lo passa in rassegna punto per punto."
   - q: "AllPaid può ricordarmi il rinnovo di un contratto?"
     a: "Sì. Attiva “Traccia la data di fine contratto” per una bolletta e aggiungi la data di inizio e di fine, se si rinnova automaticamente e l’importo del rinnovo. AllPaid ti avvisa alle 10 prima della data di fine e l’elenco mostra i contratti in scadenza. Se rinnovi, “Segna come rinnovato” conserva il periodo precedente in “Rinnovi precedenti” e sposta in avanti la data di fine. La versione gratuita permette un promemoria per contratto; Pro ne permette più di uno."
   - q: "AllPaid segnala le prove gratuite prima che diventino un abbonamento?"

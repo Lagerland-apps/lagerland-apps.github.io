@@ -12,6 +12,7 @@ reviewing any Italian page. Every decision a translator would otherwise make dif
 | Tier 1 pages | done 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/it.yml`), /it/llms.txt, /it/llms-full.txt, 21 OG cards. Six batch commits, then go-live |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not pushed) |
 | Tier 2 | done 2026-11-19 (not pushed). Batch 1 (8cf9a81): both hubs, chess, logic puzzles, workout without subscription, 3 audience pages, local-only /it/guides/limitare-tempo-di-utilizzo-iphone/ and /it/guides/come-mettere-conto-alla-rovescia-iphone/. Batch 2: shogi, xiangqi, bill tracker rewritten around Wallet by BudgetBakers, Spendee and Toshl Finanze (Rocket Money, Monarch, Copilot not sold in Italy). for/indie-ios-developers stays English-only (developers search in English). Research: ~/Downloads/githubcode/it-tier2-research-2026-11-19.md; brief: `_i18n/it-tier2-brief.md` |
+| Tier 3 | batch 1 done 2026-11-19 (not pushed): /it/alternatives/ hub + tricount, splitwise, chess-com, lichess, whoop, oura, hevy, forest, pdf-expert and local-only /it/alternatives/alternativa-a-wallet-budgetbakers/ (also closes the Rocket Money part of I-0376 on the AllPaid page). Research: ~/Downloads/githubcode/it-tier3-research-2026-11-19.md (batch 2 queue inside: HandBrake, Convertio, CloudConvert, UniConverter, Splid local-only, Fitbod, Bevel, Opal, Jefit, Welltory, Settle Up, AppBlock local-only); store data: it-tier3-store-2026-11-19.md; briefs `_i18n/it-tier3-brief.md`, `_i18n/it-tier3-review-brief.md` |
 | Stale pages | 0 (2026-11-19, `i18n.py stale`); no wording-only changes waiting |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 69.5 s wall before Italian pages; 78 to 81 s with all 69 Italian Tier 1 pages (2026-11-19, clean worktree, other sessions' agents running) |
@@ -242,6 +243,22 @@ EarnLock `tempo di utilizzo iphone`).
 | best-xiangqi-apps-iphone (batch 2) | `xiangqi online` (`scacchi cinesi`, `xiangqi` stay Xiangqiful's) | `xiangqi app`, `xiangqi gioco`, `xiangqi regole`, `xiangqi play ok` |
 | bill-tracker-without-bank-connection (batch 2) | `migliore app per scadenze pagamenti` (AllPaid keeps `app promemoria pagamenti`, `app scadenze bollette`) | `app scadenze pagamenti`, `app promemoria scadenze pagamenti`, `gestione abbonamenti app iphone`, `app per spese fisse` |
 
+Tier 3 batch 1 (2026-11-19). Comparison pages own the competitor-name queries; app pages keep the app queries.
+
+| Page | Primary query | Secondary queries |
+|---|---|---|
+| /it/alternatives/ | brand-led hub | the pages' primaries |
+| tricount | `alternativa a tricount` | `tricount come funziona`, `tricount gratis`, `meglio splitwise o tricount` |
+| splitwise | `alternativa a splitwise` | `alternativa a splitwise gratis`, `app alternativa a splitwise` |
+| chess-com | `alternativa a chess com` | `chess com come funziona`, `chess com app gratis` |
+| lichess | `meglio lichess o chess com` | `lichess come funziona`, `lichess o chess com` |
+| whoop | `alternativa a whoop senza abbonamento` | `alternativa a whoop`, `whoop senza abbonamento`, `whoop o apple watch` |
+| oura | `oura ring senza abbonamento` | `oura ring abbonamento costo`, `oura ring alternativa`, `meglio oura o whoop` |
+| hevy | `hevy app come funziona` | `hevy app gratis`, `hevy app recensioni` |
+| forest | `forest app come funziona` | `forest app per studiare`, `forest app è gratis` |
+| pdf-expert | `pdf expert gratis` | `pdf expert è gratis`, `pdf expert per mac` |
+| local-only alternativa-a-wallet-budgetbakers | `wallet budgetbakers recensioni` | `wallet budgetbakers è sicuro`, `wallet budgetbakers costo`, `spendee o wallet` |
+
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
 - Price footnote, one sentence on every page: «I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App
@@ -294,7 +311,7 @@ Not researched yet. Candidates seen in the iTunes Search API results during keyw
 it-keywords.md per page (for example Blocus for EarnLock, Billo for AllPaid).
 Tier 2 research (2026-11-19) adds: Italian roster apps Supershift (★10 768), Calendario di Lavoro per turni (★9482) and
 Tabella Turni Facile (★7008) for AfterShift; Italian budget apps for the bill-tracker rewrite: Gestione delle spese by Orange
-Dog (★18 135), Monefy (★7028), Spendee (★4167), Wallet by BudgetBakers (★2883) (bank sync not checked).
+Dog (★18 135), Monefy (★7028), Spendee (★4167), Wallet by BudgetBakers (★2883; its Italian listing names «Aggiornamenti automatici dalla banca» as a Premium feature, checked 2026-11-19).
 
 ## Tells to cut in Italian (TRANSLATION.md 8.2, plus what reviews find)
 
@@ -346,6 +363,21 @@ graduati» («graduati con precisione»); «quasi gli stessi pezzi» for "most o
 profonde»; «mettiti in conto» («metti in conto»); indicative after «qualunque» («qualunque app tu scelga»); an acronym used
 before it is defined; «Per un’app che …, c’è X» as an opener; a subject switch inside one sentence; «bollette» for both
 bills and utilities («utenze» for utilities); «13 000» copied from a listing («13.000»); «a un terzo» («a terzi»); «(nostra)»
+
+Found in the Tier 3 reviews (2026-11-19): «un solo conto non vale la pena di…» (wrong subject); «lingue di scontrino»; «si fa
+valere» («dà il meglio»); «di default» («per impostazione predefinita»); «fanno lavori diversi» («servono a cose diverse»);
+«vive solo sul telefono» («resta»); «alternativa privata» (reads as privately owned); «manifesto della privacy» or
+«Privacy Manifest» («privacy manifest»); Spanish spelling leaks («calcula»); «una tantum» in prose («a vita per»); «da
+{P_LIFETIME}» for a single price (reads as "from": «di»); adjective agreement after a plural subject; «Contro X» on related
+cards («Confronto con X»); ambiguous pronouns («darle accesso»); «valutazione Elo» for a platform's own rating; a
+quick_answer opening with a self-answered keyword question; «Pronto?» / «Provalo» as CTAs («Si parte?», «Provala»: l’app is
+feminine); «Su <App>» as a heading («Informazioni su <App>»); «alternativa vicina» («simile»); «con i motivi in vista»; «Può
+farlo se…» («Sì, se…»); «sta dietro un abbonamento»; «operazioni di tutti i giorni» for "utility jobs" («operazioni
+pratiche»); «ti basta» for "suits you"; «ti conviene di più» for "the better fit" (implies price); «costruito intorno»;
+added «sempre»; «per conto suo» («proprie»); «analytics» left in English; «per i membri residenti nell’UE» («per chi
+risiede nell’UE»); body lines citing «il confronto in inglese» as a source; pointer sentences in FAQ answers; «noi» on
+comparison pages («non li riportiamo», «non abbiamo provato»: impersonal or «Lagerland Apps»); «alternativa a X» keywords
+with no suggest evidence.
 after an app name («AllPaid, la nostra app,»); «ti legge» for Siri reading items («Siri ti dice …»).
 
 ## House rules carried over
@@ -383,6 +415,8 @@ reviewers: home, all 21 app pages, about. Native review: none yet, for every pag
 | Tier 2 batch 2: shogi, xiangqi guides | 2 writers (Sonnet) | 1 reviewer; Best XiangQi listing re-fetched | n/a | no native review yet |
 | Tier 2 batch 2: bill tracker (Wallet, Spendee, Toshl Finanze) | 1 writer (Sonnet), listings saved | 1 reviewer, every listing re-fetched, claim by claim | n/a | no native review yet |
 | Tier 2 batch 2: hub cards, llms.txt lines, AllPaid and Xiangqiful link sentences | main session | same reviewer as the bill tracker | n/a | no native review yet |
+| Tier 3 batch 1: 9 comparisons + local-only Wallet page | 10 writers (Sonnet), Italian store data from one store-check agent | 2 reviewers (Opus), full copy-editing skill, fact diff against English + Italian store file; every US price and US date removed | n/a | no native review yet |
+| Tier 3 batch 1: hub, llms.txt lines, AllPaid / RightSplit / Observa / AppMeta Pulse / bill-tracker link edits | main session | reviewer of group A | n/a | no native review yet |
 
 ## Screenshots
 

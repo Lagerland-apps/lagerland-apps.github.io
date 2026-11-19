@@ -13,6 +13,7 @@
     "en": "/alternatives/",
     "es": "/es/alternatives/",
     "fr": "/fr/alternatives/",
+    "it": "/it/alternatives/",
     "pt": "/pt/alternatives/"
   },
   "/alternatives/alpha-progression/": {
@@ -58,6 +59,7 @@
     "en": "/alternatives/chess-com/",
     "es": "/es/alternatives/chess-com/",
     "fr": "/fr/alternatives/chess-com/",
+    "it": "/it/alternatives/chess-com/",
     "pt": "/pt/alternatives/chess-com/"
   },
   "/alternatives/chessable/": {
@@ -107,6 +109,7 @@
     "en": "/alternatives/forest/",
     "es": "/es/alternatives/forest/",
     "fr": "/fr/alternatives/forest/",
+    "it": "/it/alternatives/forest/",
     "pt": "/pt/alternatives/forest/"
   },
   "/alternatives/gentler-streak/": {
@@ -136,6 +139,7 @@
     "en": "/alternatives/hevy/",
     "es": "/es/alternatives/hevy/",
     "fr": "/fr/alternatives/hevy/",
+    "it": "/it/alternatives/hevy/",
     "pt": "/pt/alternatives/hevy/"
   },
   "/alternatives/hrv4training/": {
@@ -171,6 +175,7 @@
     "en": "/alternatives/lichess/",
     "es": "/es/alternatives/lichess/",
     "fr": "/fr/alternatives/lichess/",
+    "it": "/it/alternatives/lichess/",
     "pt": "/pt/alternatives/lichess/"
   },
   "/alternatives/magnus-trainer/": {
@@ -204,6 +209,7 @@
     "en": "/alternatives/oura/",
     "es": "/es/alternatives/oura/",
     "fr": "/fr/alternatives/oura/",
+    "it": "/it/alternatives/oura/",
     "pt": "/pt/alternatives/oura/"
   },
   "/alternatives/pdf-expert/": {
@@ -211,6 +217,7 @@
     "en": "/alternatives/pdf-expert/",
     "es": "/es/alternatives/pdf-expert/",
     "fr": "/fr/alternatives/pdf-expert/",
+    "it": "/it/alternatives/pdf-expert/",
     "pt": "/pt/alternatives/pdf-expert/"
   },
   "/alternatives/productive/": {
@@ -240,6 +247,7 @@
     "en": "/alternatives/splitwise/",
     "es": "/es/alternatives/splitwise/",
     "fr": "/fr/alternatives/splitwise/",
+    "it": "/it/alternatives/splitwise/",
     "pt": "/pt/alternatives/splitwise/"
   },
   "/alternatives/streaks-app/": {
@@ -265,6 +273,7 @@
     "en": "/alternatives/tricount/",
     "es": "/es/alternatives/tricount/",
     "fr": "/fr/alternatives/tricount/",
+    "it": "/it/alternatives/tricount/",
     "pt": "/pt/alternatives/tricount/"
   },
   "/alternatives/two-dots/": {
@@ -290,6 +299,7 @@
     "en": "/alternatives/whoop/",
     "es": "/es/alternatives/whoop/",
     "fr": "/fr/alternatives/whoop/",
+    "it": "/it/alternatives/whoop/",
     "pt": "/pt/alternatives/whoop/"
   },
   "/alternatives/wikipedia-app/": {

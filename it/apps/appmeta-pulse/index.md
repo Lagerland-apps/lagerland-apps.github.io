@@ -209,8 +209,8 @@ founder:
     - "La chiave API resta nel Portachiavi dell’iPhone e le richieste vanno via HTTPS direttamente ad Apple"
     - "Finanziata dalle vendite delle app stesse, senza pubblicità e senza investitori"
   external_link:
-    href: "/alternatives/"
-    label: "Scopri come si confronta AppMeta Pulse con AppStats, App Sales e Appfigures (in inglese)"
+    href: "/alternatives/appstats/"
+    label: "Leggi il confronto tra AppMeta Pulse e AppStats (in inglese)"
 
 enrichment:
   use_cases:
