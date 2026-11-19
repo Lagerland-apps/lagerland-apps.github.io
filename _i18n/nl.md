@@ -12,6 +12,7 @@ reviewing any Dutch page. Every decision a translator would otherwise make diffe
 | Tier 1 pages | written and reviewed 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/nl.yml`), /nl/llms.txt, /nl/llms-full.txt, 21 OG cards |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
 | Tier 2 | done 2026-11-19 (not pushed). Batch 1 (b2a28be): both hubs, chess, logic puzzles, workout without subscription, xiangqi guides, 3 audience pages, local-only /nl/guides/schermtijd-beperken-iphone/. Batch 2: shogi, bill tracker rewritten around Dyme, Wallet and Spendee (Rocket Money, Monarch, Copilot not sold in NL), local-only /nl/guides/aftellen-op-iphone/. for/indie-ios-developers stays English-only. `i18n.py stale` was 0 on 2026-11-19. Research: ~/Downloads/githubcode/nl-tier2-research-2026-11-19.md; briefs `_i18n/nl-tier2-brief.md`, `_i18n/nl-tier2-review-brief.md`. Next: Tier 3 (local-only «Dyme alternatief» is a candidate; `dyme app alternatief` is reserved for it) |
+| Tier 4 | batch 1 done 2026-11-19 (not pushed): hub /nl/journal/ («Blog») + 9 translated posts (steps per day, rest between sets, push pull legs / upper/lower / 5/3/1, deloadweek, 1RM, HRV-waarde, puppy and kitten vaccinations with the NVWA / Rijksoverheid / Your Europe travel rules for rabies, US tipping, puzzle games without ads or lives) and the local-only /nl/journal/mkv-naar-mp4/. Research and queue: ~/Downloads/githubcode/nl-tier4-research-2026-11-19.md; briefs `_i18n/nl-tier4-brief.md`, `_i18n/nl-tier4-review-brief.md`. Inbound links: workout guide (4 posts), Apple Health audience page (2), logic guide, FAQ answers on Pawza, RightSplit and MediaKit; GymLogger X's related post now resolves to the Dutch strength-program post |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 139 s at the setup (main with es, it, pt Tier 2 and 3, other sessions running); 160 s with Dutch Tier 1 (990 audited pages) |
 
@@ -214,6 +215,12 @@ screen-time guide owns `schermtijd beperken iphone` (EarnLock gave up `schermtij
 Guide primaries: shogi `shogi online`, bill tracker `huishoudboekje app zonder bankrekening`, local countdown guide `aftellen op iphone`, logic `puzzelspellen voor volwassenen`, workout `gratis gym app`, xiangqi `chinees schaken online`, shift workers
 `ploegendienst gezondheid`, Apple Health `beste apple watch apps`, calm productivity `productiviteit app iphone` (low demand).
 
+Tier 4 batch 1 (2026-11-19) journal primaries: steps `hoeveel stappen per dag`, rest `rust tussen sets`, strength program
+`push pull legs schema` (visible text «push pull legs» + «schema», «upper/lower»), deload `deload week` (visible «deloadweek»), 1RM
+`1rm berekenen`, HRV post `hrv waarde` + `lage hrv` (Observa keeps `hrv apple watch`), vaccinations `vaccinaties puppy` + `kitten
+vaccinaties` (Pawza keeps `vaccinaties kat`, `dierenpaspoort`), tipping `fooi amerika`, puzzle post `spelletjes zonder reclame` (home
+keeps `apps zonder reclame` and `spelletjes apps zonder reclame`), local-only MKV post `mkv naar mp4`.
+
 Splits: Chessful owns `schaak`/`schaken`; Shogiful and Xiangqiful never target `schaak app`. AfterShift owns `slaap` and
 `nachtdienst`; EarnLock owns `schermtijd` and `apps blokkeren`. GymLogger X and LiftLog are split by «apple watch».
 AppMeta takes ASO and metadata, Pulse analytics and sales. Home keeps `apps zonder reclame`; puzzle pages use it only
@@ -304,6 +311,23 @@ for a hanging mobile («hangmobiel»); «5.000» (four digits take no dot); «Le
 titles replacing competitor names (English name, store title once); keywords not from the research file; «geen enkel antwoord» for "no
 single answer"; a maker's name dropped as if the no-name rule covered everyone (it covers only the site owner). Hubs and llms lines: «reeksendruk» and other «-druk» coinages; «zet X naast Y» for “compares” («vergelijkt X met Y»); «zet … bij elkaar» («combineert»); «registreert al je …» («al» reads as “all”); «aftellers» («aftelling»); «voorlopig» or «nog alleen in het Engels» on hubs (a roadmap hint); «In het Nederlands staan …» with no location («zijn er»); one verb three times in a sentence; hub cards ending in «, met bij elke app …». Batch 2: «het diepe einde» («in het diepe springen»); «en die verdient de app» («en terecht»); «matchmaking in real time» («live matchmaking»); «snelle bedenktijden» («korte bedenktijden»); «wedlopen om aan te vallen»; bare «rekening(en)» for bank accounts on a bills page («bankrekening»); heading fragments; «in privé»; an added definition in brackets in a hero lead; «de app van wie deze gids publiceert»; «startscherm» copied from a listing («beginscherm»); «volledig gericht op» overstating a listing; the check date repeated in every section lead. Compound with -je + app: «huishoudboekje-app» (hyphen for readability, as «takenlijst-app»).
 
+From the Tier 4 reviews (2026-11-19): «databrokers» (Apple NL «datahandelaars»); «advertentiemeting» («het effect van reclame meten»);
+intransitive «levens vullen aan»; «inruilen» for watching an ad; «blijft plakken»; «beveiliging» for a guard («waarborg»); «meetellen»
+for "fit"; «Of je nu koopt of niet»; meta sentences about what a source does not say, or phrased so they read like a rule; «Themaankopen»
+(«thema-aankopen»); mixed «hrv»/«HRV» (always «HRV», «HRV-…»); «ziekelijk» for pathological («geen teken van ziekte»); «resterende
+verstoring» («residuele confounding»); «banden» for categories («indeling»); «nog steeds» for "still" where Dutch says «al»; «Geen van
+allen» for things («Geen ervan»); «de enige die» for "the one that"; near-verbatim copies of Apple or government sentences; «maximaal
+maakt»; «schrappen» for cutting sets («minder», «verminderen»); «klopte» for "beat"; «fysiek» / «fysiekatleten» for physique sports
+(«bodybuilding»); «triggers» («aanleidingen»); «spreiding» for a range («bereik», «uiteenlopend van»); «één-herhalingsmaximum» and
+«X-herhalingenmaximum» (1RM, 5RM after one gloss); a decimal comma inside a comma list («1, 1,5, 2»: «anderhalve minuut»); «Deload week»
+split in visible text («deloadweek»); «lifters» («krachtsporters»); straight apostrophes; «data» for datums (again); bare «afhaal»
+(«afhalen»); «uit reflex» («uit gewoonte»); «is waar X»; «niet-kern» as a noun («niet-kernvaccin»); «verzwakt levend» («levend
+verzwakt»); a currency note repeated; «vast bedrag» for a load step («vaste stap»); «terugschakelen» for a weight reset («teruggaan in
+gewicht»); «afdrijven» for drifting estimates («uit elkaar lopen»); «Welke je ook …» for "whichever"; «vastpinnen» («klem komen te
+zitten»); «rond een blessure trainen» («om een blessure heen»); «uitlopen» for "finish" («afmaken»); «verantwoording» for gym
+accountability («stok achter de deur»); visible «push pull legs schema» and «upper lower» («push pull legs», «upper/lower»); «haar» for
+a formula. Wiring (hub, llms lines, links): hanging-hyphen compounds for English names («een push pull legs- of upper/lower-schema»: «een schema als push pull legs of upper/lower»); hub fragments («Verder over X»); «vragen» for a legal requirement («nodig hebben», «vereisen»); «tot 3 à 5»; an imperative opening an llms reason («het artikel adviseert …»); «grote studies» for one named meta-analysis; a link sentence tacked on with a semicolon. Quoted UI text keeps iOS's grouping («nog 2.026 stappen tot ontgrendeling»); the «8000» rule is for our own prose.
+
 Translationese: split compounds, title case headings, u and je mixed, English word order with the verb not at the end
 of a subordinate clause, «maken» calques («een verschil maken», «zin maken»: write «zinvol zijn»), «dat gezegd
 hebbende», «aan het einde van de dag», gerund chains («biedend», «makend»), «gebruiker» everywhere where Dutch says
@@ -349,6 +373,9 @@ Pulse's rights list («inzage, correctie of verwijdering», GDPR Dutch: rectific
 | Tier 2 batch 1: both hubs, llms lines, EarnLock FAQ link | 1 Sonnet writer + main session | 1 wiring reviewer | n/a | no native review yet |
 | Tier 2 batch 2: shogi, bill-tracker guides | 2 Sonnet writers | 1 reviewer (every Dyme, Wallet and Spendee sentence checked against its Dutch listing; Wallet price without period removed; shogi language column and Shogi Wars offline from the listings) | n/a | no native review yet |
 | Tier 2 batch 2: local-only countdown guide | 1 Sonnet writer, sources saved | 1 reviewer, three Apple NL iOS 27 pages re-fetched (two dropped Stand-by conditions restored) | n/a | no native review yet |
+| Tier 4 batch 1: 9 journal posts | 9 Sonnet writers (Dutch sources saved for steps, strength program and vaccinations) | 5 reviewers, two posts each (copy-editing, fact diff, every converted or recomputed number, live re-fetch of every Dutch source, UI strings from the catalogs) | n/a | no native review yet |
+| Tier 4 batch 1: local-only mkv-naar-mp4 | 1 Sonnet writer, sources saved | 1 reviewer (four sources re-fetched; an unsupported subtitles sentence removed; MediaKit strings from the catalog) | n/a | no native review yet |
+| Tier 4 batch 1: hub, llms lines, inbound links | main session | 1 wiring reviewer | n/a | no native review yet |
 
 ## Apps still on English screenshots
 
