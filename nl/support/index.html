@@ -1,0 +1,73 @@
+---
+layout: default
+ref: /support/
+permalink: /nl/support/
+translated_from: 2026-10-30
+title: "Abonnement opzeggen, geld terug en hulp bij je app"
+quick_answer: "Een abonnement opzeggen of beheren op de iPhone of iPad doe je in Instellingen: tik op je naam en dan op ‘Abonnementen’. Op de Mac gebruik je de App Store-app. Geld terug voor een aankoop in de App Store vraag je aan bij Apple via reportaproblem.apple.com. Een bug, vraag of feedback over een Lagerland-app stuur je naar support@lagerland.app. De ontwikkelaar die de app bouwt, leest je mail en antwoordt."
+seo:
+  title: "Abonnement opzeggen iPhone: hulp, contact en geld terug"
+  description: "Abonnement opzeggen of beheren op je iPhone, geld terugvragen bij Apple en de maker mailen. Met supportpagina en privacybeleid per Lagerland-app."
+  keywords:
+    - abonnement opzeggen iphone
+    - abonnement opzeggen app store
+    - app abonnement opzeggen
+    - geld terug app store
+    - terugbetaling app store
+    - apple terugbetaling aanvragen
+    - lagerland apps support
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+<section class="section">
+  <h1 class="h1">Abonnement opzeggen, geld terug en hulp bij je app</h1>
+  <p class="lead">
+    Hulp nodig bij een van de apps? Schrijf ons. Degene die de app bouwt, leest je mail en beantwoordt die.
+  </p>
+
+  {% include quick-answer.html %}
+
+  <div class="grid grid-2">
+    <div class="card">
+      <div class="card-title">Neem contact op</div>
+      <div class="card-text">
+        Stuur bugs, vragen of feedback naar:
+      </div>
+      <p>
+        <a href="mailto:support@lagerland.app">
+          support@lagerland.app
+        </a>
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Voordat je mailt</div>
+      <div class="card-text">
+        Met deze gegevens krijg je sneller antwoord:
+        <ul class="bullets">
+          <li>De naam van de app</li>
+          <li>Het model van je apparaat</li>
+          <li>De versie van iOS, iPadOS of macOS</li>
+          <li>Wat je verwachtte en wat er in plaats daarvan gebeurde</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="h2">Hulp per app</h2>
+  <p class="lead">Elke app heeft een eigen supportpagina met veelgestelde vragen en een privacybeleid.</p>
+  <ul class="bullets">
+  {%- assign support_apps = site.apps | where: "status", "live" | sort: "name" -%}
+  {%- for a in support_apps -%}
+    {%- include tx-app.html app=a -%}
+    {%- unless tx_en -%}
+    {%- capture a_support %}{{ a.url }}support/{% endcapture -%}
+    {%- capture a_privacy %}{{ a.url }}privacy/{% endcapture %}
+    <li><a href="{% include l.html url=a_support %}"{% if l_en %} hreflang="en"{% endif %}>Hulp bij {{ a.name }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> · <a href="{% include l.html url=a_privacy %}"{% if l_en %} hreflang="en"{% endif %}>privacybeleid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>{% if tx_app.tagline %}: {{ tx_app.tagline }}{% endif %}</li>
+    {%- endunless -%}
+  {%- endfor %}
+  </ul>
+  <p class="small" style="margin-top:16px;">{{ t.support_tip_subscriptions }} {{ t.support_tip_refunds }} Hoe elke app met je gegevens omgaat, lees je in het <a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}>transparantierapport{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+</section>
