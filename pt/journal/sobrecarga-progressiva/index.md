@@ -88,7 +88,7 @@ A sessão 6 tem uma série abaixo de 6. É uma série falhada, e a resposta não
 
 Na sessão 8 são 27 repetições com 42,5 kg. O volume de carga passou de 1000 kg na sessão 1 para 1147,5 kg, cerca de 15% mais trabalho, com a barra a subir uma vez. Os 2,5 kg representam 6,25% de 40 kg, dentro do intervalo de 2 a 10% do ACSM.
 
-Este método chama-se [dupla progressão](/journal/double-progression-explained/){: hreflang="en"} (em inglês): primeiro as repetições, depois a carga.
+Este método chama-se [dupla progressão](/pt/journal/double-progression-explained/): primeiro as repetições, depois a carga.
 
 ## De quanto aumentar a carga?
 
@@ -157,7 +157,7 @@ Alguns sinais a observar antes de mudar de modelo:
 2. **Todos os aumentos fazem cair abaixo do intervalo**, mesmo com microcarga. O exercício pode precisar durante um tempo de um intervalo mais pesado e mais estreito, ou de outra variante.
 3. **O objetivo é atingir o pico num exercício principal.** A dupla progressão é boa a construir e não tem plano para uma série pesada de uma repetição numa data marcada. Um ciclo por percentagens a partir de um máximo de treino, como o 5/3/1, tem esse plano, com início num 1RM [testado ou estimado](/pt/journal/how-to-estimate-your-one-rep-max/).
 
-Antes de abandonar o modelo, altera-se uma coisa dentro dele: troca-se a variante do exercício, muda-se o intervalo (de 6 a 10 para 10 a 15 durante um bloco) ou acrescenta-se uma série. Se um exercício passar para um ciclo por percentagens, os outros podem continuar com dupla progressão. Misturar modelos entre exercícios é normal. O RPE e o RIR, as duas formas de dar nota ao esforço de uma série, estão explicados em [RPE e RIR](/journal/rpe-and-rir-explained/){: hreflang="en"} (em inglês).
+Antes de abandonar o modelo, altera-se uma coisa dentro dele: troca-se a variante do exercício, muda-se o intervalo (de 6 a 10 para 10 a 15 durante um bloco) ou acrescenta-se uma série. Se um exercício passar para um ciclo por percentagens, os outros podem continuar com dupla progressão. Misturar modelos entre exercícios é normal. O RPE e o RIR, as duas formas de dar nota ao esforço de uma série, estão explicados em [RPE e RIR](/pt/journal/rpe-and-rir-explained/).
 
 Se um aumento de carga custa dor em vez de parecer apenas pesado, a situação deve ser vista por um profissional de saúde ou por um treinador que possa ver a pessoa a levantar.
 

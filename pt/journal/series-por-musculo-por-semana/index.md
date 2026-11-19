@@ -74,7 +74,7 @@ O único número por treino que a posição oficial recomenda diz respeito à fo
 
 ## Que série conta na contagem?
 
-As fontes lidas não definem uma «série dura» com um critério numérico. O ACSM de 2026 escreve que se consegue um esforço suficiente com séries perto da falha ou com um alvo de 2 a 3 repetições em reserva (RIR). O mesmo texto nota que treinar até à falha não é obrigatório para otimizar os resultados e que faltam provas para quantificar um alvo exato de RIR ou de esforço percebido. O artigo sobre [RPE e RIR](/journal/rpe-and-rir-explained/){: hreflang="en"} (em inglês) explica como classificar o esforço de uma série.
+As fontes lidas não definem uma «série dura» com um critério numérico. O ACSM de 2026 escreve que se consegue um esforço suficiente com séries perto da falha ou com um alvo de 2 a 3 repetições em reserva (RIR). O mesmo texto nota que treinar até à falha não é obrigatório para otimizar os resultados e que faltam provas para quantificar um alvo exato de RIR ou de esforço percebido. O artigo sobre [RPE e RIR](/pt/journal/rpe-and-rir-explained/) explica como classificar o esforço de uma série.
 
 O texto do ACSM não fala de séries de aquecimento. Por convenção, o exemplo abaixo conta apenas as séries de trabalho.
 
@@ -92,4 +92,4 @@ Acrescentar séries é uma das formas de aplicar a [sobrecarga progressiva](/pt/
 
 ## Acompanhar as séries por músculo
 
-O [GymLogger X](/pt/apps/gymlogger-x/) tem o «Volume de séries», reservado ao Pro. Mostra as séries duras de cada músculo por semana e compara-as com os marcos de volume MEV, MAV e MRV. Não indico aqui esses marcos, porque as fontes lidas para este artigo não os definem. As séries de aquecimento e as semanas de descarga ficam fora da contagem.
+O [GymLogger X](/pt/apps/gymlogger-x/) tem o «Volume de séries», reservado ao Pro. Mostra as séries duras de cada músculo por semana e compara-as com os marcos de volume MEV, MAV e MRV. Os valores desses marcos ficam fora deste artigo, porque as fontes lidas não os definem. As séries de aquecimento e as semanas de descarga ficam fora da contagem.

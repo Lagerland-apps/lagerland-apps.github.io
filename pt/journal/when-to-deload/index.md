@@ -71,7 +71,7 @@ Os melhores dados sobre os gatilhos reais vêm do [inquérito de 2024 de Rogerso
 Numa versão que se pode verificar num domingo à noite, os sinais a vigiar são:
 
 - Vários exercícios deixaram de progredir ao mesmo tempo. Um exercício estagnado costuma pedir uma alteração ao programa. Três exercícios estagnados em simultâneo apontam para fadiga.
-- Os pesos habituais parecem mais pesados. Se uma carga que há um mês era RPE 7 passa a parecer um 8,5, em vários exercícios e em mais do que uma sessão, é um sinal de recuperação. Como classificar isso com honestidade explica-se em [como funcionam o RPE e as repetições em reserva](/journal/rpe-and-rir-explained/){: hreflang="en"} (em inglês).
+- Os pesos habituais parecem mais pesados. Se uma carga que há um mês era RPE 7 passa a parecer um 8,5, em vários exercícios e em mais do que uma sessão, é um sinal de recuperação. Como classificar isso com honestidade explica-se em [como funcionam o RPE e as repetições em reserva](/pt/journal/rpe-and-rir-explained/).
 - As articulações e os tendões doem antes de a sessão começar, e não só depois.
 - A vida fora do ginásio está a exigir mais do que o habitual: uma fase de muito trabalho, um bebé recém-nascido, noites mal dormidas.
 

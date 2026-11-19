@@ -86,7 +86,7 @@ Nos dois casos:
 
 Se o aviso indicar som excluído, essa faixa não está no MP4. Se era a única faixa de som, o ficheiro convertido fica sem som. Quando essa faixa faz falta, o melhor é guardar o original ou usar outra ferramenta.
 
-A ferramenta «Comprimir vídeo» também aceita um MKV: as fontes MP4, MOV e M4V mantêm o contentor e as outras passam a MP4. Recodifica segundo uma predefinição de qualidade ou um tamanho alvo, o que serve para reduzir um ficheiro, mas não é uma conversão sem perdas. O artigo sobre [comprimir um vídeo para enviar por email](/journal/compress-a-video-for-email/){: hreflang="en"} (em inglês) explica o tamanho alvo em pormenor.
+A ferramenta «Comprimir vídeo» também aceita um MKV: as fontes MP4, MOV e M4V mantêm o contentor e as outras passam a MP4. Recodifica segundo uma predefinição de qualidade ou um tamanho alvo, o que serve para reduzir um ficheiro, mas não é uma conversão sem perdas. O artigo sobre [enviar um vídeo grande por e-mail](/pt/journal/compress-a-video-for-email/) explica o tamanho alvo em pormenor.
 
 ### O que é grátis
 

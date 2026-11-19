@@ -89,7 +89,7 @@ Na prática, o descanso deve chegar para que a série seguinte não fique encurt
 
 ## Vale a pena cronometrar o descanso?
 
-Acho que sim, embora a razão tenha pouco a ver com a fisiologia. Qualquer regra de progressão que avance com base nas repetições pressupõe que as repetições são comparáveis de um treino para o outro. Se as séries de terça-feira tiveram dois minutos de intervalo e as de sexta-feira quatro, porque o telemóvel distraiu, as repetições do registo medem tanto o descanso como o levantamento. Isto pesa sobretudo na [dupla progressão](/journal/double-progression-explained/){: hreflang="en"} (em inglês), em que o peso só sobe quando todas as séries chegam ao topo do intervalo de repetições.
+Acho que sim, embora a razão tenha pouco a ver com a fisiologia. Qualquer regra de progressão que avance com base nas repetições pressupõe que as repetições são comparáveis de um treino para o outro. Se as séries de terça-feira tiveram dois minutos de intervalo e as de sexta-feira quatro, porque o telemóvel distraiu, as repetições do registo medem tanto o descanso como o levantamento. Isto pesa sobretudo na [dupla progressão](/pt/journal/double-progression-explained/), em que o peso só sobe quando todas as séries chegam ao topo do intervalo de repetições.
 
 Um cronómetro mantém essa variável fixa e impede que o descanso encurte nos dias de pressa.
 
