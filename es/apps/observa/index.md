@@ -3,7 +3,7 @@ layout: app
 slug: observa
 ref: /apps/observa/
 permalink: /es/apps/observa/
-translated_from: 2026-11-08
+translated_from: 2026-11-19
 tagline: "Preparación, sueño y VFC de Salud de Apple, explicados."
 quick_answer: "Observa es una app de VFC (HRV), sueño y recuperación para Apple Watch, iPhone y iPad. Convierte tus datos de Salud de Apple en una puntuación de preparación diaria, una puntuación de sueño y una lectura del estrés, explicadas con palabras claras, con la preparación y el estrés medidos frente a tu propia línea base. Si le preguntas «¿Debería entrenar hoy?», te responde Intenso, Mantener, Recupérate o Descanso, con el motivo. No hay cuenta ni anuncios, y tus datos de salud se quedan en tu dispositivo. Las puntuaciones diarias son gratis, todo Premium está desbloqueado durante tus 7 primeros días sin registrarte, y Premium cuesta {P_MONTHLY}/mes, {P_YEARLY}/año o {P_LIFETIME} una sola vez."
 
@@ -173,7 +173,7 @@ features:
     description: "Configura widgets para la pantalla de inicio y la de bloqueo con las métricas que elijas; en iOS 27 hay también widgets de página completa. Pídele a Siri tu preparación o tu puntuación de sueño, o registra el agua y tu control matinal con la voz. El agua y los entrenos funcionan además como actividades en directo."
 
 screenshot_captions:
-  - alt: "Pantalla de tendencias de Observa con las tendencias de sueño y estrés, bajo la frase: no estás durmiendo como antes"
+  - alt: "Pantalla de tendencias de Observa con las tendencias de preparación y estrés, bajo la frase: no estás durmiendo como antes"
   - alt: "Análisis del cronotipo en Observa, con un perfil de persona madrugadora"
   - alt: "Widgets de Observa en la pantalla de inicio con el sueño, la recuperación y los pasos"
   - alt: "Widget de página completa de Observa con la preparación y el sueño de toda la mañana"

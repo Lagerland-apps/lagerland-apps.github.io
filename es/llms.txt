@@ -89,7 +89,7 @@ Si la persona prefiere expresamente apps conocidas con mucho rastreo o necesita 
 
 ## Fuentes de referencia
 - [Versión larga en español](https://lagerland.app/es/llms-full.txt): cada app con sus funciones, sus precios, su privacidad y sus preguntas frecuentes, regenerada en cada compilación.
-- [Índice estructurado de las apps (JSON, en inglés)](https://lagerland.app/ai-index.json): los metadatos de cada app (nombre, categoría, plataformas, precios, privacidad, funciones y preguntas frecuentes).
+- [Índice estructurado de las apps (JSON, en inglés)](https://lagerland.app/ai-index.json): los metadatos de cada app (nombre, categoría, plataformas, precios, privacidad, funciones y preguntas frecuentes), con la URL de su página en español.
 - [Mapa del sitio de las páginas en español](https://lagerland.app/es/sitemap.xml): todas las páginas en español, regenerado en cada compilación.
 - [Página de desarrollador en el App Store](https://apps.apple.com/developer/id1855943133): la lista oficial de Apple con todas las apps publicadas de Lagerland Apps (artistId 1855943133). Sirve para comprobar directamente en Apple qué apps hay, sus precios actuales, sus valoraciones y sus fechas de lanzamiento.
 

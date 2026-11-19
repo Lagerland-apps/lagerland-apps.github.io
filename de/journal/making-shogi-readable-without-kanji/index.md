@@ -3,8 +3,8 @@ layout: journal
 slug: making-shogi-readable-without-kanji
 ref: /journal/making-shogi-readable-without-kanji/
 permalink: /de/journal/making-shogi-readable-without-kanji/
-translated_from: 2026-10-29
-last_updated: 2026-10-29
+translated_from: 2026-11-19
+last_updated: 2026-11-19
 date: 2026-10-29
 title: "Shogi-Figuren auf Deutsch: Namen, Züge und Notation, ganz ohne Kanji"
 seo:
@@ -107,17 +107,17 @@ Ein Brett, das du wirklich lesen kannst, braucht drei Dinge:
 
 **Identität**: ein eigenes Symbol pro Figur, das du auf einen Blick erkennst. Das ist der leichte Teil, und hier hören die meisten Sätze auf.
 
-**Zugweise**, und die zählt am meisten. Wer neu ist, weiß nicht, dass die Lanze nur nach vorn zieht, dass der Springer genau zwei Zielfelder hat oder dass ein Silber nicht zur Seite ziehen kann. Der Stil „International“ in Shogiful behält die Kanji und ergänzt Pfeile, die zeigen, wohin jede Figur ziehen kann. So erklärt die Figur ihre legalen Züge selbst. Am meisten bringt das bei der Gold-Familie, denn umgewandelter Silbergeneral, Springer, Lanze und Bauer ziehen alle gleich. Die Pfeile machen die Ähnlichkeit sichtbar, und du musst dir keine vier getrennten Fakten merken.
+**Zugweise**, und die zählt am meisten. Wer neu ist, weiß nicht, dass die Lanze nur nach vorn zieht, dass der Springer genau zwei Zielfelder hat oder dass ein Silber nicht zur Seite ziehen kann. Der Steinsatz „International“ in Shogiful behält die Kanji und ergänzt Pfeile, die zeigen, wohin jede Figur ziehen kann. So erklärt die Figur ihre legalen Züge selbst. Am meisten bringt das bei der Gold-Familie, denn umgewandelter Silbergeneral, Springer, Lanze und Bauer ziehen alle gleich. Die Pfeile machen die Ähnlichkeit sichtbar, und du musst dir keine vier getrennten Fakten merken.
 
 **Umwandlungszustand**. Traditionelle Sätze wechseln zu roten Zeichen. Ein Satz ohne Kanji braucht eine Änderung, die genauso schwer zu übersehen ist, mehr als eine Tönung, denn „Ist das Silber umgewandelt?“ ist genau die Frage, bei der du dich nicht irren darfst, wenn du ausrechnest, ob es sich zurückziehen kann.
 
-Dann bleibt die Wahl selbst. Shogiful hat drei Steinstile: „Traditionell (Kanji)“ mit Kanji auf Holzsteinen, „International“ mit Kanji und Zugpfeilen und „Schach“ mit Symbolen im Schachstil ganz ohne Kanji. Beim ersten Start fragt die App neue Spieler außerhalb Japans nach ihrem Stil, bevor sie wissen, welchen sie brauchen. Deshalb bleibt die Wahl offen: Unter „Einstellungen“ → „Darstellung“ wechselst du den Stil jederzeit, und Züge zeigt die App in westlicher (P-7f) oder japanischer Notation.
+Dann bleibt die Wahl selbst. Shogiful hat sieben Steinsätze, alle kostenlos. Zwei davon sind dafür gemacht, das Brett ohne Kanji zu lesen: „International“ mit Kanji und Zugpfeilen und „Schach“ mit Steinen im Schachstil ganz ohne Kanji. Die anderen fünf sind traditionelle Kanji-Sätze. Beim ersten Start fragt die App neue Spieler außerhalb Japans, wie die Steine aussehen sollen, bevor sie wissen, was sie brauchen. Deshalb bleibt die Wahl offen: Unter „Einstellungen“ → „Brett & Steine“ wechselst du den Satz jederzeit, und Züge zeigt die App in westlicher (P-7f) oder japanischer Notation.
 
 ## Erst die Figuren, dann die Kanji
 
 Einen echten Zielkonflikt gibt es: Die Shogi-Welt läuft auf Kanji. Bücher, Aufgabensammlungen, japanische Apps, echte Bretter und jedes Diagramm auf jeder Shogi-Website verwenden Kanji. Wer für immer bei Steinen ohne Kanji bleibt, stößt irgendwann an eine Grenze dessen, was er lesen kann.
 
-Der Stil ohne Kanji ist deshalb als Einstieg gedacht. „International“ ist die Brücke: Das Zeichen steht auf jedem Stein, während die Pfeile dir sagen, wie er zieht. Du liest 銀 in jedem Zug, ohne es schon kennen zu müssen, und wechselst zu „Traditionell“, wenn du die Pfeile nicht mehr brauchst. 銀 begegnet dir *erst, wenn* du schon weißt, wie sich ein Silber verhält, und das ist viel leichter, als Zeichen und Verhalten gleichzeitig zu lernen. Niemand lernt Schach, indem er vor der ersten Partie die Buchstaben K, D, T, L und S auswendig lernt. Shogi hat außerhalb Japans aber jahrzehntelang praktisch genau das verlangt und sich dann gewundert, warum sich das Spiel nicht verbreitet.
+Der Satz ohne Kanji ist deshalb als Einstieg gedacht. „International“ ist die Brücke: Das Zeichen steht auf jedem Stein, während die Pfeile dir sagen, wie er zieht. Du liest 銀 in jedem Zug, ohne es schon kennen zu müssen, und wechselst zu einem traditionellen Satz, wenn du die Pfeile nicht mehr brauchst. 銀 begegnet dir *erst, wenn* du schon weißt, wie sich ein Silber verhält, und das ist viel leichter, als Zeichen und Verhalten gleichzeitig zu lernen. Niemand lernt Schach, indem er vor der ersten Partie die Buchstaben K, D, T, L und S auswendig lernt. Shogi hat außerhalb Japans aber jahrzehntelang praktisch genau das verlangt und sich dann gewundert, warum sich das Spiel nicht verbreitet.
 
 ## Ein Brett, das du ab dem ersten Zug lesen kannst
 

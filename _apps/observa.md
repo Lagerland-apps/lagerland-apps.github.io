@@ -201,7 +201,7 @@ features:
 
 screenshots:
   - src: "/assets/screenshots/observa/1.webp"
-    alt: "Observa trends screen with sleep and stress trends, under the line: you have not been sleeping like you used to"
+    alt: "Observa trends screen with readiness and stress trends, under the line: you have not been sleeping like you used to"
   - src: "/assets/screenshots/observa/2.webp"
     alt: "Observa chronotype analysis showing a morning lark profile"
   - src: "/assets/screenshots/observa/3.webp"
@@ -300,6 +300,6 @@ ratings:
   value: "4.1"
   count: 16
   last_synced: "2026-11-09"
-last_updated: 2026-11-08
+last_updated: 2026-11-19
 ---
 Observa is a health insights app for iPhone, iPad, and Apple Watch that turns Apple Health data into a daily read on how recovered you are. Each morning it gives you a Readiness score from sleep, HRV (SDNN), resting heart rate, and training load, a Sleep Score, and a stress state, with Readiness and stress measured against your own baseline. "Why this score?" names the signals behind your Readiness, and "Should I train today?" answers Push, Maintain, Recover, or Rest, in the app, through Siri, in a widget, or on your wrist. The daily scores are free. Premium adds long-term trends, full analysis screens, Functional Age, ECG history, training analysis, and Patterns, which shows the habits that tend to line up with your recovery, sleep, and HRV. Observa has no account and no ads, carries no analytics SDKs, and keeps your health data on your device.

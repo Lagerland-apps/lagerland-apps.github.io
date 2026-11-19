@@ -1028,6 +1028,8 @@ Paid tier names as the French UI shows them: **Pro+** (no plain "Pro"), **Pro+ A
 
 ### 5. Shogiful (`shogiful`, source `shogi/`, ID 6761656926)
 
+> 2026-11-19 : Shogiful 1.9.0 (13 novembre 2026) a sept plateaux et sept jeux de pièces en 2D et 3D, dans Réglages > « Plateau et pièces ». Les pages disent « jeu de pièces » (plus « style de pièces ») : deux des sept, International et Échecs, se lisent sans kanji, les cinq autres sont des jeux traditionnels en kanji. Les lignes ci-dessus sur « Style de pièces » et « Traditionnel (kanji) » décrivent l’état d’avant 1.9.0.
+
 ### French coverage
 
 - `Localization/Localizable.xcstrings`: 3721 keys, 3719 with `fr`, all translated (99.9%). Missing: `''` and `dashboard.accuracy %lld`. 39 languages. Most keys are semantic (`tab.play`, `paywall.plan.monthly`), so look up by key, not English text.

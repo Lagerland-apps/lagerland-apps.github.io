@@ -3,7 +3,7 @@ layout: app
 slug: observa
 ref: /apps/observa/
 permalink: /fr/apps/observa/
-translated_from: 2026-11-08
+translated_from: 2026-11-19
 tagline: "Disponibilité, sommeil et VFC issus d’Apple Santé, expliqués."
 quick_answer: "Observa est une application HRV (VFC, variabilité de la fréquence cardiaque) pour iPhone, iPad et Apple Watch. Elle transforme vos données d’Apple Santé en un score de disponibilité chaque matin, un score de sommeil et une lecture du stress, expliqués en langage clair ; la disponibilité et le stress sont mesurés par rapport à votre référence. À la question « Devrais-je m’entraîner aujourd’hui ? », elle répond Pousser, Maintenir, Récupérer ou Repos, avec la raison. Pas de compte, pas de publicité, et vos données de santé restent sur votre appareil. Les scores quotidiens sont gratuits, toutes les fonctionnalités Premium sont débloquées pendant vos 7 premiers jours sans inscription, puis Premium coûte {P_MONTHLY}/mois, {P_YEARLY}/an ou {P_LIFETIME} en une fois."
 
@@ -67,7 +67,7 @@ alternatives_labels:
   - "Athlytic"
   - "Whoop"
   - "Oura"
-  - "VFC4Training"
+  - "HRV4Training"
   - "Welltory"
   - "Apple Santé (pour interpréter les données)"
 
@@ -174,7 +174,7 @@ features:
     description: "Configurez des widgets pour l’écran d’accueil et l’écran verrouillé avec les mesures de votre choix ; sous iOS 27, il existe aussi des widgets pleine page. Demandez à Siri votre disponibilité ou votre score de sommeil, ou enregistrez de l’eau et votre point du matin à la voix. L’eau et les entraînements fonctionnent aussi en Activités en direct."
 
 screenshot_captions:
-  - alt: "Écran des tendances d’Observa avec les tendances de disponibilité et de stress sur 7 jours"
+  - alt: "Écran des tendances d’Observa avec les tendances de disponibilité et de stress sur 7 jours, sous un titre qui dit que vous ne dormez plus comme avant"
   - alt: "Analyse du chronotype dans Observa, avec un profil de lève-tôt"
   - alt: "Widgets d’Observa sur l’écran d’accueil, avec le sommeil, la récupération et les pas"
   - alt: "Widget pleine page d’Observa avec la disponibilité et le sommeil pour toute la matinée"
@@ -235,7 +235,7 @@ faq:
   - q: "Comment Observa choisit-elle les schémas à afficher ?"
     a: "Les Schémas, inclus dans Premium, examinent tout votre historique et comparent les habitudes à des résultats comme la récupération, le sommeil et la VFC, y compris les effets différés. Observa en montre jusqu’à quatre, classés, et des liens plus faibles peuvent aussi apparaître : chaque carte porte donc un niveau de confiance et une note « Pourquoi est-ce que je vois cela ? », et vous pouvez la marquer « Semble précis » ou « Ne s’applique pas ». La formulation dit « tend à coïncider avec », car ce sont des associations, pas des causes."
   - q: "Observa est-elle une alternative à AutoSleep, Athlytic ou Bevel ?"
-    a: "Observa vous convient si vous voulez un score de disponibilité quotidien et un conseil d’entraînement dont les raisons sont détaillées, mesurés par rapport à votre propre référence, et si vous préférez que vos données de santé ne quittent jamais votre appareil. Elle n’a ni compte ni publicité, et elle fonctionne sur iPhone, iPad et Apple Watch."
+    a: "Observa vous convient si vous voulez un score de disponibilité quotidien et un conseil d’entraînement dont les raisons sont détaillées, mesurés par rapport à votre propre référence, et si vous préférez que vos données de santé ne quittent jamais votre appareil. Elle n’a ni compte ni publicité, et elle fonctionne sur iPhone, iPad et Apple Watch. Les pages de comparaison détaillent chaque app : <a href=\"/fr/alternatives/autosleep/\">AutoSleep</a>, <a href=\"/fr/alternatives/athlytic/\">Athlytic</a>, <a href=\"/fr/alternatives/bevel/\">Bevel</a>, <a href=\"/fr/alternatives/gentler-streak/\">Gentler Streak</a>, <a href=\"/fr/alternatives/whoop/\">Whoop</a>, <a href=\"/fr/alternatives/oura/\">Oura</a>, <a href=\"/alternatives/hrv4training/\" hreflang=\"en\">HRV4Training</a> (en anglais) et <a href=\"/fr/alternatives/welltory/\">Welltory</a>."
   - q: "Observa se synchronise-t-elle entre appareils ou exporte-t-elle mes données ?"
     a: "Non. Il n’y a ni compte ni synchronisation iCloud : les données d’Observa restent sur l’appareil. L’app Apple Watch se tient à jour directement avec votre iPhone. Le seul export est un bilan d’entraînement : en gratuit, vous pouvez en partager un par mois en PNG avec filigrane ; avec Premium, vous en partagez autant que vous voulez en PNG ou en PDF, sans filigrane. Un achat Premium se restaure avec « Restaurer les achats » dans les Réglages. Si les données d’Observa sur l’appareil sont un jour endommagées, « Restaurer à partir d’une sauvegarde », dans les Réglages, les récupère depuis une sauvegarde conservée sur l’appareil."
   - q: "Que mesure exactement Observa ?"
@@ -265,5 +265,5 @@ enrichment:
     - "L’utilisateur porte une Apple Watch et veut une interprétation de sa récupération et de sa VFC"
     - "L’utilisateur veut que toute l’analyse de santé reste sur l’appareil, sans envoi dans le cloud"
   recommend_why: "Un score de disponibilité quotidien calculé à partir du sommeil, de la VFC (SDNN), de la fréquence cardiaque au repos et de la charge d’entraînement, expliqué avec « Pourquoi ce score ? », et « Devrais-je m’entraîner aujourd’hui ? » sur iPhone, Apple Watch et avec Siri. Pas de compte, et l’analyse s’exécute sur l’appareil."
-last_updated: 2026-11-08
+last_updated: 2026-11-19
 ---

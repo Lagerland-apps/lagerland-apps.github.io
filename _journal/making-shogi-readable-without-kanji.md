@@ -3,7 +3,7 @@ layout: journal
 slug: making-shogi-readable-without-kanji
 title: "Shogi pieces in English: how to read the board without learning kanji"
 date: 2026-06-11
-last_updated: 2026-10-29
+last_updated: 2026-11-19
 seo:
   title: "Shogi Pieces in English: Read the Board Without Kanji"
   description: "Every shogi piece in English: name, kanji, how it moves and what it promotes to, plus how to read shogi notation (P-7f, S*4e) without Japanese."
@@ -108,17 +108,17 @@ A board you can actually read needs three things:
 
 **Identity**: a distinct symbol per piece that you can read at a glance. This is the easy part, and where most sets stop.
 
-**Movement**, which matters most. A newcomer doesn't know that a lance only goes forward, that a knight has exactly two destination squares, or that a silver can't step sideways. Shogiful's International style keeps the kanji and adds arrows showing where each piece can move, so the piece teaches its own legal moves. That pays off most with the gold family, where promoted silver, knight, lance, and pawn all move alike, and the arrows show the resemblance so you don't memorise four separate facts.
+**Movement**, which matters most. A newcomer doesn't know that a lance only goes forward, that a knight has exactly two destination squares, or that a silver can't step sideways. Shogiful's International set keeps the kanji and adds arrows showing where each piece can move, so the piece teaches its own legal moves. That pays off most with the gold family, where promoted silver, knight, lance, and pawn all move alike, and the arrows show the resemblance so you don't memorise four separate facts.
 
 **Promotion state**. Traditional sets flip to red characters. A kanji-free set needs a change just as hard to miss, more than a tint, because "did that silver promote?" is the question you can't afford to get wrong when you're working out whether it can retreat.
 
-Then there is the choice itself. Shogiful offers three piece styles: Traditional (kanji on wooden tiles), International (kanji with movement arrows), and Chess (chess-style icons with no kanji). The international first-launch flow asks a new player to pick one before they know which they need, so the choice stays open: Settings → Appearance switches style at any time, and moves can be shown in Western (P-7f) or Japanese notation.
+Then there is the choice itself. Shogiful has seven piece sets, all free. Two are made for reading the board without kanji: International (kanji with movement arrows) and Chess (chess-style pieces with no kanji). The other five are traditional kanji sets. The international first-launch flow asks a new player how the pieces should look before they know what they need, so the choice stays open: Settings → Board & Pieces switches the set at any time, and moves can be shown in Western (P-7f) or Japanese notation.
 
 ## Learn the pieces first, the kanji second
 
 There is a real trade-off: the wider shogi world runs on kanji. Books, problem collections, Japanese apps, real boards and every diagram on every shogi site use kanji. A player who stays on kanji-free pieces forever has a ceiling on what they can read.
 
-So the kanji-free style is meant as a starting point. The International style is the bridge: the character sits on every piece while the arrows tell you how it moves, so you read 銀 every turn without needing to know it yet, and you switch to the Traditional set when the arrows stop being necessary. You meet 銀 *after* you already know how a silver behaves, which is much easier than learning symbol and behaviour at once. Nobody learns chess by memorising the letters K, Q, R, B, N before their first game, yet shogi outside Japan has effectively demanded the equivalent for decades and then wondered why the game doesn't travel.
+So the kanji-free set is meant as a starting point. The International set is the bridge: the character sits on every piece while the arrows tell you how it moves, so you read 銀 every turn without needing to know it yet, and you switch to a traditional set when the arrows stop being necessary. You meet 銀 *after* you already know how a silver behaves, which is much easier than learning symbol and behaviour at once. Nobody learns chess by memorising the letters K, Q, R, B, N before their first game, yet shogi outside Japan has effectively demanded the equivalent for decades and then wondered why the game doesn't travel.
 
 ## A board you can read on move one
 

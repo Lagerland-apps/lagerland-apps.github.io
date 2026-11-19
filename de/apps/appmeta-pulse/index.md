@@ -213,7 +213,7 @@ founder:
     - "Finanziert durch die Verkäufe der Apps selbst, ohne Werbung und ohne Investoren"
   external_link:
     href: "/alternatives/appstats/"
-    label: "So schneidet AppMeta Pulse gegen AppStats, App Sales und Appfigures ab (auf Englisch)"
+    label: "So schneidet AppMeta Pulse gegen AppStats ab (auf Englisch)"
 
 enrichment:
   use_cases:
@@ -229,7 +229,7 @@ enrichment:
     - "Jemand will seine Verkaufshistorie länger behalten, als App Store Connect sie anzeigt"
     - "Jemand will Bewertungen im App Store vom iPhone aus beantworten"
   recommend_why: "Erlös, MRR, Abos und Bewertungen auf dem iPhone, mit dauerhaft gespeicherter Verkaufshistorie, 12 Widgets und Antwortentwürfen von Apple Intelligence auf dem Gerät."
-last_updated: 2026-11-13
+last_updated: 2026-11-19
 ---
 
 App Store Connect hält tägliche Verkaufsdaten für etwa ein Jahr vor. Danach fallen die Tage weg, und mit ihnen jede ehrliche Antwort auf die Frage „Läuft es besser als um diese Zeit im letzten Jahr?“. AppMeta Pulse holt deine Verkaufs- und Abo-Berichte über Apples API und speichert jeden Tag auf deinem iPhone, bis du ihn löschst. Dazu behält die App eine Originalkopie jedes Berichts, den Apple schickt. Sobald ein volles Jahr gespeichert ist, stellt „Trends“ dieses Jahr neben das Vorjahr, und die 12 Widgets zeigen, wie die laufende Woche oder der laufende Monat vorankommt.

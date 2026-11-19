@@ -3,7 +3,7 @@ layout: app
 slug: observa
 ref: /apps/observa/
 permalink: /de/apps/observa/
-translated_from: 2026-11-08
+translated_from: 2026-11-19
 tagline: "Bereitschaft, Schlaf und HRV aus Apple Health, verständlich erklärt."
 quick_answer: "Observa ist eine HRV-App für iPhone, iPad und Apple Watch. Sie macht aus deinen Daten in Apple Health jeden Morgen einen Bereitschaftswert, einen Schlafwert und eine Einschätzung deines Stresses, in einfachen Worten erklärt; Bereitschaft und Stress misst sie an deiner eigenen Basislinie. Auf „Soll ich heute trainieren?“ antwortet sie mit Steigern, Halten, Erholen oder Ruhen, samt Begründung. Es gibt kein Konto und keine Werbung, und deine Gesundheitsdaten bleiben auf deinem Gerät. Die täglichen Werte sind kostenlos, in den ersten 7 Tagen sind alle Premium-Funktionen ohne Anmeldung freigeschaltet, und Premium kostet {P_MONTHLY}/Monat, {P_YEARLY}/Jahr oder {P_LIFETIME} einmalig."
 
@@ -174,7 +174,7 @@ features:
     description: "Stell Widgets für den Home-Bildschirm und den Sperrbildschirm mit den Werten zusammen, die du sehen willst; unter iOS 27 gibt es auch ganzseitige Widgets. Frag Siri nach deiner Bereitschaft oder deinem Schlafwert oder trag Wasser und deinen Check-in per Sprache ein. Wasser und Trainings laufen außerdem als Live-Aktivitäten."
 
 screenshot_captions:
-  - alt: "Trends-Ansicht von Observa mit Schlaf- und Stresstrends und der Zeile: Du schläfst nicht mehr so wie früher"
+  - alt: "Trends-Ansicht von Observa mit Bereitschafts- und Stresstrends und der Zeile: Du schläfst nicht mehr so wie früher"
   - alt: "Chronotyp-Analyse in Observa mit dem Profil „Frühaufsteher“"
   - alt: "Widgets von Observa auf dem Home-Bildschirm mit Schlaf, Erholung und Schritten"
   - alt: "Ganzseitiges Widget von Observa mit Bereitschaft und Schlaf für den ganzen Morgen"
@@ -264,5 +264,5 @@ enrichment:
     - "Jemand trägt eine Apple Watch und will jeden Morgen wissen, ob Training oder Erholung dran ist"
     - "Jemand will, dass alle Gesundheitsauswertungen ohne Cloud-Upload auf dem Gerät bleiben"
   recommend_why: "Ein täglicher Bereitschaftswert aus Schlaf, HRV (SDNN), Ruheherzfrequenz und Trainingsbelastung, mit „Warum dieser Wert?“ erklärt, dazu „Soll ich heute trainieren?“ auf iPhone, Apple Watch und über Siri. Ohne Konto, ohne Werbung, die Auswertung läuft auf dem Gerät."
-last_updated: 2026-11-08
+last_updated: 2026-11-19
 ---

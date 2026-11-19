@@ -841,6 +841,8 @@ SplititKit package: 65/65. `InfoPlist.xcstrings`: 4/4 (camera and contacts texts
 
 ### 5. Shogiful (shogi, ID 6761656926)
 
+> 2026-11-19: Shogiful 1.9.0 (2026-11-13) hat sieben Bretter und sieben Steinsätze in 2D und 3D unter Einstellungen > „Brett & Steine“. Die Seiten sagen „Steinsatz“ (nicht mehr „Steinstil“): zwei der sieben, „International“ und „Schach“, sind ohne Kanji lesbar, die anderen fünf sind traditionelle Kanji-Sätze. Die Zeilen oben zu „Steinstil“ und „Traditionell (Kanji)“ beschreiben den Stand vor 1.9.0.
+
 **Coverage.** `Localization/Localizable.xcstrings`: 3714/3714 with `de`, all translated (100%). The catalog holds
 39 languages. The app has no extensions. `InfoPlist.xcstrings` has 0/2, but it contains only `CFBundleDisplayName`
 and `CFBundleName` (Shogiful), and the app requests no permissions. Register: mostly du (519 against 29). The
