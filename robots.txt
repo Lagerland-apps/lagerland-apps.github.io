@@ -68,4 +68,5 @@ Sitemap: https://lagerland.app/sitemap.xml
 Sitemap: https://lagerland.app/ai-sitemap.xml
 Sitemap: https://lagerland.app/de/sitemap.xml
 Sitemap: https://lagerland.app/fr/sitemap.xml
+Sitemap: https://lagerland.app/es/sitemap.xml
 Sitemap: https://lagerland.app/feed.xml

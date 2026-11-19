@@ -10,7 +10,7 @@ reviewing any Spanish page. Every decision a translator would otherwise make dif
 | Setup (config default, locales.yml block, `_data/i18n/es.yml`, sitemap and feed stubs) | done 2026-11-19 (es.yml written by one agent, reviewed and copy-edited by another: 42 values changed) |
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console for Spain not read yet (no access this session) |
 | Tier 1 pages | done 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/es.yml`), /es/llms.txt, /es/llms-full.txt, 21 OG cards. Commits 6a83675 (batch 1), ac4a1a3, e6e2231, 3857ea6, cfaed65 (batches 2 to 5), then AI files and go-live |
-| Live | no, `live: false` |
+| Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 270 s wall, 137 s CPU before Spanish (2026-11-19, seven research agents running in parallel, so the wall time is inflated); French sheet had 80 s after French Tier 1. Idle machine 2026-11-19: 157 s before the tx-app fix, 52 s after (617 pages, `--profile`; tx-app 99.6 s to 4.9 s, I-0258) |
 

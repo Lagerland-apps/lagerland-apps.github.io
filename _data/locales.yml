@@ -111,7 +111,7 @@ es:
   og_locale: es_ES
   dir: ltr
   native_name: "Español (España)"
-  live: false
+  live: true
   # Checked 2026-11-19 against the Spanish App Store (iTunes lookup API, country=es, lang=es_es): "9,99 €" and
   # "14,99 €" with a no-break space (U+00A0) before €, decimal comma. Thousands "." as Apple Spain writes "100.000".
   currencies:
