@@ -271,3 +271,19 @@ All measured on the raw HTML of the pages listed above.
 - Brand names Apple keeps in English: App Store, Mac App Store, iCloud, iCloud Drive, Apple Account, Apple Intelligence, Apple Pay, Apple Watch, Apple Fitness+, Face ID, Touch ID, AirDrop, Handoff, Spotlight, Siri, Dynamic Island, Digital Crown, Wallet, Xcode, TestFlight, App Store Connect.
 - Hyphen vs open compound: "de Gezondheid-app" (hyphen), "de app Vitale functies" (open, Watch guide only). "Apple apparaat" is open, "iPhone-scherm", "iPhone-gebruikershandleiding", "iPad-app" are hyphenated.
 - Developers' own Dutch store text (Observa: "hartslagvariabiliteit", "Rusthartslag", "Apple Health", "VO₂ max", "Gereedheid", "work-out"/"workout", "complicaties") differs from Apple's ("hartritmevariabiliteit (HRV)", "hartslag in rust", "Gezondheid", "VO 2 max", "Gereedheid-app", "work-out", "widgets"/"wijzerplaat"). Where a term names an Apple feature, use Apple's form from this file.
+
+## Added from the Tier 1 reviews (2026-11-19, each fetched from the Apple NL page named)
+
+| English | Apple NL | Source |
+|---|---|---|
+| Advertising identifier (IDFA) | **de reclame-ID (IDFA)** | https://support.apple.com/nl-nl/102420 |
+| Privacy label data types | «Foto’s of video’s», **«Overige gebruikerscontent»**, «Aankoopgeschiedenis», **«Ruwe locatie»**, «Gezondheid»; purpose **«App-functionaliteit»** | https://apps.apple.com/nl/app/id284882215 (privacy section) |
+| iCloud Backup | toggle **'Back-up in iCloud'**; prose **«iCloud-back-up»**, «back-up» | https://support.apple.com/nl-nl/108922 ; https://support.apple.com/nl-nl/108770 |
+| Manage Storage | ‘Opslag’ / **‘Beheer accountopslag’** / ‘Verwijder gegevens uit iCloud’ (Mac: 'Verwijder uit iCloud') | https://support.apple.com/nl-nl/108922 |
+| Advanced Data Protection | **«geavanceerde gegevensbescherming»** (heading «Geavanceerde gegevensbescherming voor iCloud»); «Standaard gegevensbescherming»; «encryptiesleutels»; «tijdens de overdracht» | https://support.apple.com/nl-nl/102651 |
+| Share With App Developers | **‘Deel met appontwikkelaars’**; 'Analyse en verbeteringen' | https://support.apple.com/nl-nl/guide/mac-help/mh27990/mac |
+| iCloud Keychain / Keychain | **«iCloud-sleutelhanger»**; Mac app «Sleutelhangertoegang»; current label ‘Wachtwoorden’ | https://support.apple.com/nl-nl/109016 |
+| Apple Account (grammar) | «dezelfde Apple Account», «dezelfde iCloud-account» | https://support.apple.com/nl-nl/102430 |
+| Apple's standard EULA | «Licentieovereenkomst voor eindgebruikers van de Gelicentieerde app (‘Standaard licentieovereenkomst voor eindgebruikers’)» | https://www.apple.com/nl/legal/internet-services/itunes/nl/terms.html |
+| receipt (App Store) | «ontvangstbewijs» | https://support.apple.com/nl-nl/118223 |
+| Version History (store) | «Versiegeschiedenis» | apps.apple.com/nl |

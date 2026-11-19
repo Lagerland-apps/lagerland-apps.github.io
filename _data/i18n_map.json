@@ -5,6 +5,7 @@
     "es": "/es/",
     "fr": "/fr/",
     "it": "/it/",
+    "nl": "/nl/",
     "pt": "/pt/"
   },
   "/alternatives/": {
@@ -262,6 +263,7 @@
     "es": "/es/apps/",
     "fr": "/fr/apps/",
     "it": "/it/apps/",
+    "nl": "/nl/apps/",
     "pt": "/pt/apps/"
   },
   "/apps/aftershift/": {
@@ -270,6 +272,7 @@
     "es": "/es/apps/aftershift/",
     "fr": "/fr/apps/aftershift/",
     "it": "/it/apps/aftershift/",
+    "nl": "/nl/apps/aftershift/",
     "pt": "/pt/apps/aftershift/"
   },
   "/apps/aftershift/privacy/": {
@@ -278,6 +281,7 @@
     "es": "/es/apps/aftershift/privacy/",
     "fr": "/fr/apps/aftershift/privacy/",
     "it": "/it/apps/aftershift/privacy/",
+    "nl": "/nl/apps/aftershift/privacy/",
     "pt": "/pt/apps/aftershift/privacy/"
   },
   "/apps/aftershift/support/": {
@@ -286,6 +290,7 @@
     "es": "/es/apps/aftershift/support/",
     "fr": "/fr/apps/aftershift/support/",
     "it": "/it/apps/aftershift/support/",
+    "nl": "/nl/apps/aftershift/support/",
     "pt": "/pt/apps/aftershift/support/"
   },
   "/apps/allpaid/": {
@@ -294,6 +299,7 @@
     "es": "/es/apps/allpaid/",
     "fr": "/fr/apps/allpaid/",
     "it": "/it/apps/allpaid/",
+    "nl": "/nl/apps/allpaid/",
     "pt": "/pt/apps/allpaid/"
   },
   "/apps/allpaid/privacy/": {
@@ -302,6 +308,7 @@
     "es": "/es/apps/allpaid/privacy/",
     "fr": "/fr/apps/allpaid/privacy/",
     "it": "/it/apps/allpaid/privacy/",
+    "nl": "/nl/apps/allpaid/privacy/",
     "pt": "/pt/apps/allpaid/privacy/"
   },
   "/apps/allpaid/support/": {
@@ -310,6 +317,7 @@
     "es": "/es/apps/allpaid/support/",
     "fr": "/fr/apps/allpaid/support/",
     "it": "/it/apps/allpaid/support/",
+    "nl": "/nl/apps/allpaid/support/",
     "pt": "/pt/apps/allpaid/support/"
   },
   "/apps/appmeta-pulse/": {
@@ -318,6 +326,7 @@
     "es": "/es/apps/appmeta-pulse/",
     "fr": "/fr/apps/appmeta-pulse/",
     "it": "/it/apps/appmeta-pulse/",
+    "nl": "/nl/apps/appmeta-pulse/",
     "pt": "/pt/apps/appmeta-pulse/"
   },
   "/apps/appmeta-pulse/privacy/": {
@@ -326,6 +335,7 @@
     "es": "/es/apps/appmeta-pulse/privacy/",
     "fr": "/fr/apps/appmeta-pulse/privacy/",
     "it": "/it/apps/appmeta-pulse/privacy/",
+    "nl": "/nl/apps/appmeta-pulse/privacy/",
     "pt": "/pt/apps/appmeta-pulse/privacy/"
   },
   "/apps/appmeta-pulse/support/": {
@@ -334,6 +344,7 @@
     "es": "/es/apps/appmeta-pulse/support/",
     "fr": "/fr/apps/appmeta-pulse/support/",
     "it": "/it/apps/appmeta-pulse/support/",
+    "nl": "/nl/apps/appmeta-pulse/support/",
     "pt": "/pt/apps/appmeta-pulse/support/"
   },
   "/apps/appmeta/": {
@@ -342,6 +353,7 @@
     "es": "/es/apps/appmeta/",
     "fr": "/fr/apps/appmeta/",
     "it": "/it/apps/appmeta/",
+    "nl": "/nl/apps/appmeta/",
     "pt": "/pt/apps/appmeta/"
   },
   "/apps/appmeta/privacy/": {
@@ -350,6 +362,7 @@
     "es": "/es/apps/appmeta/privacy/",
     "fr": "/fr/apps/appmeta/privacy/",
     "it": "/it/apps/appmeta/privacy/",
+    "nl": "/nl/apps/appmeta/privacy/",
     "pt": "/pt/apps/appmeta/privacy/"
   },
   "/apps/appmeta/support/": {
@@ -358,6 +371,7 @@
     "es": "/es/apps/appmeta/support/",
     "fr": "/fr/apps/appmeta/support/",
     "it": "/it/apps/appmeta/support/",
+    "nl": "/nl/apps/appmeta/support/",
     "pt": "/pt/apps/appmeta/support/"
   },
   "/apps/chessful/": {
@@ -366,6 +380,7 @@
     "es": "/es/apps/chessful/",
     "fr": "/fr/apps/chessful/",
     "it": "/it/apps/chessful/",
+    "nl": "/nl/apps/chessful/",
     "pt": "/pt/apps/chessful/"
   },
   "/apps/chessful/privacy/": {
@@ -374,6 +389,7 @@
     "es": "/es/apps/chessful/privacy/",
     "fr": "/fr/apps/chessful/privacy/",
     "it": "/it/apps/chessful/privacy/",
+    "nl": "/nl/apps/chessful/privacy/",
     "pt": "/pt/apps/chessful/privacy/"
   },
   "/apps/chessful/support/": {
@@ -382,6 +398,7 @@
     "es": "/es/apps/chessful/support/",
     "fr": "/fr/apps/chessful/support/",
     "it": "/it/apps/chessful/support/",
+    "nl": "/nl/apps/chessful/support/",
     "pt": "/pt/apps/chessful/support/"
   },
   "/apps/clippet/": {
@@ -390,6 +407,7 @@
     "es": "/es/apps/clippet/",
     "fr": "/fr/apps/clippet/",
     "it": "/it/apps/clippet/",
+    "nl": "/nl/apps/clippet/",
     "pt": "/pt/apps/clippet/"
   },
   "/apps/clippet/privacy/": {
@@ -398,6 +416,7 @@
     "es": "/es/apps/clippet/privacy/",
     "fr": "/fr/apps/clippet/privacy/",
     "it": "/it/apps/clippet/privacy/",
+    "nl": "/nl/apps/clippet/privacy/",
     "pt": "/pt/apps/clippet/privacy/"
   },
   "/apps/clippet/support/": {
@@ -406,6 +425,7 @@
     "es": "/es/apps/clippet/support/",
     "fr": "/fr/apps/clippet/support/",
     "it": "/it/apps/clippet/support/",
+    "nl": "/nl/apps/clippet/support/",
     "pt": "/pt/apps/clippet/support/"
   },
   "/apps/clippet/terms/": {
@@ -414,6 +434,7 @@
     "es": "/es/apps/clippet/terms/",
     "fr": "/fr/apps/clippet/terms/",
     "it": "/it/apps/clippet/terms/",
+    "nl": "/nl/apps/clippet/terms/",
     "pt": "/pt/apps/clippet/terms/"
   },
   "/apps/earnlock/": {
@@ -422,6 +443,7 @@
     "es": "/es/apps/earnlock/",
     "fr": "/fr/apps/earnlock/",
     "it": "/it/apps/earnlock/",
+    "nl": "/nl/apps/earnlock/",
     "pt": "/pt/apps/earnlock/"
   },
   "/apps/earnlock/privacy/": {
@@ -430,6 +452,7 @@
     "es": "/es/apps/earnlock/privacy/",
     "fr": "/fr/apps/earnlock/privacy/",
     "it": "/it/apps/earnlock/privacy/",
+    "nl": "/nl/apps/earnlock/privacy/",
     "pt": "/pt/apps/earnlock/privacy/"
   },
   "/apps/earnlock/support/": {
@@ -438,6 +461,7 @@
     "es": "/es/apps/earnlock/support/",
     "fr": "/fr/apps/earnlock/support/",
     "it": "/it/apps/earnlock/support/",
+    "nl": "/nl/apps/earnlock/support/",
     "pt": "/pt/apps/earnlock/support/"
   },
   "/apps/gymlogger-x/": {
@@ -446,6 +470,7 @@
     "es": "/es/apps/gymlogger-x/",
     "fr": "/fr/apps/gymlogger-x/",
     "it": "/it/apps/gymlogger-x/",
+    "nl": "/nl/apps/gymlogger-x/",
     "pt": "/pt/apps/gymlogger-x/"
   },
   "/apps/gymlogger-x/privacy/": {
@@ -454,6 +479,7 @@
     "es": "/es/apps/gymlogger-x/privacy/",
     "fr": "/fr/apps/gymlogger-x/privacy/",
     "it": "/it/apps/gymlogger-x/privacy/",
+    "nl": "/nl/apps/gymlogger-x/privacy/",
     "pt": "/pt/apps/gymlogger-x/privacy/"
   },
   "/apps/gymlogger-x/support/": {
@@ -462,6 +488,7 @@
     "es": "/es/apps/gymlogger-x/support/",
     "fr": "/fr/apps/gymlogger-x/support/",
     "it": "/it/apps/gymlogger-x/support/",
+    "nl": "/nl/apps/gymlogger-x/support/",
     "pt": "/pt/apps/gymlogger-x/support/"
   },
   "/apps/liftlog/": {
@@ -470,6 +497,7 @@
     "es": "/es/apps/liftlog/",
     "fr": "/fr/apps/liftlog/",
     "it": "/it/apps/liftlog/",
+    "nl": "/nl/apps/liftlog/",
     "pt": "/pt/apps/liftlog/"
   },
   "/apps/liftlog/privacy/": {
@@ -478,6 +506,7 @@
     "es": "/es/apps/liftlog/privacy/",
     "fr": "/fr/apps/liftlog/privacy/",
     "it": "/it/apps/liftlog/privacy/",
+    "nl": "/nl/apps/liftlog/privacy/",
     "pt": "/pt/apps/liftlog/privacy/"
   },
   "/apps/liftlog/support/": {
@@ -486,6 +515,7 @@
     "es": "/es/apps/liftlog/support/",
     "fr": "/fr/apps/liftlog/support/",
     "it": "/it/apps/liftlog/support/",
+    "nl": "/nl/apps/liftlog/support/",
     "pt": "/pt/apps/liftlog/support/"
   },
   "/apps/mediakit/": {
@@ -494,6 +524,7 @@
     "es": "/es/apps/mediakit/",
     "fr": "/fr/apps/mediakit/",
     "it": "/it/apps/mediakit/",
+    "nl": "/nl/apps/mediakit/",
     "pt": "/pt/apps/mediakit/"
   },
   "/apps/mediakit/privacy/": {
@@ -502,6 +533,7 @@
     "es": "/es/apps/mediakit/privacy/",
     "fr": "/fr/apps/mediakit/privacy/",
     "it": "/it/apps/mediakit/privacy/",
+    "nl": "/nl/apps/mediakit/privacy/",
     "pt": "/pt/apps/mediakit/privacy/"
   },
   "/apps/mediakit/support/": {
@@ -510,6 +542,7 @@
     "es": "/es/apps/mediakit/support/",
     "fr": "/fr/apps/mediakit/support/",
     "it": "/it/apps/mediakit/support/",
+    "nl": "/nl/apps/mediakit/support/",
     "pt": "/pt/apps/mediakit/support/"
   },
   "/apps/millrace/": {
@@ -518,6 +551,7 @@
     "es": "/es/apps/millrace/",
     "fr": "/fr/apps/millrace/",
     "it": "/it/apps/millrace/",
+    "nl": "/nl/apps/millrace/",
     "pt": "/pt/apps/millrace/"
   },
   "/apps/millrace/privacy/": {
@@ -526,6 +560,7 @@
     "es": "/es/apps/millrace/privacy/",
     "fr": "/fr/apps/millrace/privacy/",
     "it": "/it/apps/millrace/privacy/",
+    "nl": "/nl/apps/millrace/privacy/",
     "pt": "/pt/apps/millrace/privacy/"
   },
   "/apps/millrace/support/": {
@@ -534,6 +569,7 @@
     "es": "/es/apps/millrace/support/",
     "fr": "/fr/apps/millrace/support/",
     "it": "/it/apps/millrace/support/",
+    "nl": "/nl/apps/millrace/support/",
     "pt": "/pt/apps/millrace/support/"
   },
   "/apps/mockly/": {
@@ -542,6 +578,7 @@
     "es": "/es/apps/mockly/",
     "fr": "/fr/apps/mockly/",
     "it": "/it/apps/mockly/",
+    "nl": "/nl/apps/mockly/",
     "pt": "/pt/apps/mockly/"
   },
   "/apps/mockly/privacy/": {
@@ -550,6 +587,7 @@
     "es": "/es/apps/mockly/privacy/",
     "fr": "/fr/apps/mockly/privacy/",
     "it": "/it/apps/mockly/privacy/",
+    "nl": "/nl/apps/mockly/privacy/",
     "pt": "/pt/apps/mockly/privacy/"
   },
   "/apps/mockly/support/": {
@@ -558,6 +596,7 @@
     "es": "/es/apps/mockly/support/",
     "fr": "/fr/apps/mockly/support/",
     "it": "/it/apps/mockly/support/",
+    "nl": "/nl/apps/mockly/support/",
     "pt": "/pt/apps/mockly/support/"
   },
   "/apps/observa/": {
@@ -566,6 +605,7 @@
     "es": "/es/apps/observa/",
     "fr": "/fr/apps/observa/",
     "it": "/it/apps/observa/",
+    "nl": "/nl/apps/observa/",
     "pt": "/pt/apps/observa/"
   },
   "/apps/observa/privacy/": {
@@ -574,6 +614,7 @@
     "es": "/es/apps/observa/privacy/",
     "fr": "/fr/apps/observa/privacy/",
     "it": "/it/apps/observa/privacy/",
+    "nl": "/nl/apps/observa/privacy/",
     "pt": "/pt/apps/observa/privacy/"
   },
   "/apps/observa/support/": {
@@ -582,6 +623,7 @@
     "es": "/es/apps/observa/support/",
     "fr": "/fr/apps/observa/support/",
     "it": "/it/apps/observa/support/",
+    "nl": "/nl/apps/observa/support/",
     "pt": "/pt/apps/observa/support/"
   },
   "/apps/pawza/": {
@@ -590,6 +632,7 @@
     "es": "/es/apps/pawza/",
     "fr": "/fr/apps/pawza/",
     "it": "/it/apps/pawza/",
+    "nl": "/nl/apps/pawza/",
     "pt": "/pt/apps/pawza/"
   },
   "/apps/pawza/privacy/": {
@@ -598,6 +641,7 @@
     "es": "/es/apps/pawza/privacy/",
     "fr": "/fr/apps/pawza/privacy/",
     "it": "/it/apps/pawza/privacy/",
+    "nl": "/nl/apps/pawza/privacy/",
     "pt": "/pt/apps/pawza/privacy/"
   },
   "/apps/pawza/support/": {
@@ -606,6 +650,7 @@
     "es": "/es/apps/pawza/support/",
     "fr": "/fr/apps/pawza/support/",
     "it": "/it/apps/pawza/support/",
+    "nl": "/nl/apps/pawza/support/",
     "pt": "/pt/apps/pawza/support/"
   },
   "/apps/rightsplit/": {
@@ -614,6 +659,7 @@
     "es": "/es/apps/rightsplit/",
     "fr": "/fr/apps/rightsplit/",
     "it": "/it/apps/rightsplit/",
+    "nl": "/nl/apps/rightsplit/",
     "pt": "/pt/apps/rightsplit/"
   },
   "/apps/rightsplit/privacy/": {
@@ -622,6 +668,7 @@
     "es": "/es/apps/rightsplit/privacy/",
     "fr": "/fr/apps/rightsplit/privacy/",
     "it": "/it/apps/rightsplit/privacy/",
+    "nl": "/nl/apps/rightsplit/privacy/",
     "pt": "/pt/apps/rightsplit/privacy/"
   },
   "/apps/rightsplit/support/": {
@@ -630,6 +677,7 @@
     "es": "/es/apps/rightsplit/support/",
     "fr": "/fr/apps/rightsplit/support/",
     "it": "/it/apps/rightsplit/support/",
+    "nl": "/nl/apps/rightsplit/support/",
     "pt": "/pt/apps/rightsplit/support/"
   },
   "/apps/shogiful/": {
@@ -638,6 +686,7 @@
     "es": "/es/apps/shogiful/",
     "fr": "/fr/apps/shogiful/",
     "it": "/it/apps/shogiful/",
+    "nl": "/nl/apps/shogiful/",
     "pt": "/pt/apps/shogiful/"
   },
   "/apps/shogiful/privacy/": {
@@ -646,6 +695,7 @@
     "es": "/es/apps/shogiful/privacy/",
     "fr": "/fr/apps/shogiful/privacy/",
     "it": "/it/apps/shogiful/privacy/",
+    "nl": "/nl/apps/shogiful/privacy/",
     "pt": "/pt/apps/shogiful/privacy/"
   },
   "/apps/shogiful/support/": {
@@ -654,6 +704,7 @@
     "es": "/es/apps/shogiful/support/",
     "fr": "/fr/apps/shogiful/support/",
     "it": "/it/apps/shogiful/support/",
+    "nl": "/nl/apps/shogiful/support/",
     "pt": "/pt/apps/shogiful/support/"
   },
   "/apps/soon/": {
@@ -662,6 +713,7 @@
     "es": "/es/apps/soon/",
     "fr": "/fr/apps/soon/",
     "it": "/it/apps/soon/",
+    "nl": "/nl/apps/soon/",
     "pt": "/pt/apps/soon/"
   },
   "/apps/soon/privacy/": {
@@ -670,6 +722,7 @@
     "es": "/es/apps/soon/privacy/",
     "fr": "/fr/apps/soon/privacy/",
     "it": "/it/apps/soon/privacy/",
+    "nl": "/nl/apps/soon/privacy/",
     "pt": "/pt/apps/soon/privacy/"
   },
   "/apps/soon/support/": {
@@ -678,6 +731,7 @@
     "es": "/es/apps/soon/support/",
     "fr": "/fr/apps/soon/support/",
     "it": "/it/apps/soon/support/",
+    "nl": "/nl/apps/soon/support/",
     "pt": "/pt/apps/soon/support/"
   },
   "/apps/tare/": {
@@ -686,6 +740,7 @@
     "es": "/es/apps/tare/",
     "fr": "/fr/apps/tare/",
     "it": "/it/apps/tare/",
+    "nl": "/nl/apps/tare/",
     "pt": "/pt/apps/tare/"
   },
   "/apps/tare/privacy/": {
@@ -694,6 +749,7 @@
     "es": "/es/apps/tare/privacy/",
     "fr": "/fr/apps/tare/privacy/",
     "it": "/it/apps/tare/privacy/",
+    "nl": "/nl/apps/tare/privacy/",
     "pt": "/pt/apps/tare/privacy/"
   },
   "/apps/tare/support/": {
@@ -702,6 +758,7 @@
     "es": "/es/apps/tare/support/",
     "fr": "/fr/apps/tare/support/",
     "it": "/it/apps/tare/support/",
+    "nl": "/nl/apps/tare/support/",
     "pt": "/pt/apps/tare/support/"
   },
   "/apps/taskful-day/": {
@@ -710,6 +767,7 @@
     "es": "/es/apps/taskful-day/",
     "fr": "/fr/apps/taskful-day/",
     "it": "/it/apps/taskful-day/",
+    "nl": "/nl/apps/taskful-day/",
     "pt": "/pt/apps/taskful-day/"
   },
   "/apps/taskful-day/privacy/": {
@@ -718,6 +776,7 @@
     "es": "/es/apps/taskful-day/privacy/",
     "fr": "/fr/apps/taskful-day/privacy/",
     "it": "/it/apps/taskful-day/privacy/",
+    "nl": "/nl/apps/taskful-day/privacy/",
     "pt": "/pt/apps/taskful-day/privacy/"
   },
   "/apps/taskful-day/support/": {
@@ -726,6 +785,7 @@
     "es": "/es/apps/taskful-day/support/",
     "fr": "/fr/apps/taskful-day/support/",
     "it": "/it/apps/taskful-day/support/",
+    "nl": "/nl/apps/taskful-day/support/",
     "pt": "/pt/apps/taskful-day/support/"
   },
   "/apps/wanderwiki/": {
@@ -734,6 +794,7 @@
     "es": "/es/apps/wanderwiki/",
     "fr": "/fr/apps/wanderwiki/",
     "it": "/it/apps/wanderwiki/",
+    "nl": "/nl/apps/wanderwiki/",
     "pt": "/pt/apps/wanderwiki/"
   },
   "/apps/wanderwiki/privacy/": {
@@ -742,6 +803,7 @@
     "es": "/es/apps/wanderwiki/privacy/",
     "fr": "/fr/apps/wanderwiki/privacy/",
     "it": "/it/apps/wanderwiki/privacy/",
+    "nl": "/nl/apps/wanderwiki/privacy/",
     "pt": "/pt/apps/wanderwiki/privacy/"
   },
   "/apps/wanderwiki/support/": {
@@ -750,6 +812,7 @@
     "es": "/es/apps/wanderwiki/support/",
     "fr": "/fr/apps/wanderwiki/support/",
     "it": "/it/apps/wanderwiki/support/",
+    "nl": "/nl/apps/wanderwiki/support/",
     "pt": "/pt/apps/wanderwiki/support/"
   },
   "/apps/xiangqiful/": {
@@ -758,6 +821,7 @@
     "es": "/es/apps/xiangqiful/",
     "fr": "/fr/apps/xiangqiful/",
     "it": "/it/apps/xiangqiful/",
+    "nl": "/nl/apps/xiangqiful/",
     "pt": "/pt/apps/xiangqiful/"
   },
   "/apps/xiangqiful/privacy/": {
@@ -766,6 +830,7 @@
     "es": "/es/apps/xiangqiful/privacy/",
     "fr": "/fr/apps/xiangqiful/privacy/",
     "it": "/it/apps/xiangqiful/privacy/",
+    "nl": "/nl/apps/xiangqiful/privacy/",
     "pt": "/pt/apps/xiangqiful/privacy/"
   },
   "/apps/xiangqiful/support/": {
@@ -774,6 +839,7 @@
     "es": "/es/apps/xiangqiful/support/",
     "fr": "/fr/apps/xiangqiful/support/",
     "it": "/it/apps/xiangqiful/support/",
+    "nl": "/nl/apps/xiangqiful/support/",
     "pt": "/pt/apps/xiangqiful/support/"
   },
   "/for/": {
@@ -1055,6 +1121,7 @@
     "es": "/es/lagerland-apps/",
     "fr": "/fr/lagerland-apps/",
     "it": "/it/lagerland-apps/",
+    "nl": "/nl/lagerland-apps/",
     "pt": "/pt/lagerland-apps/"
   },
   "/support/": {
@@ -1063,6 +1130,7 @@
     "es": "/es/support/",
     "fr": "/fr/support/",
     "it": "/it/support/",
+    "nl": "/nl/support/",
     "pt": "/pt/support/"
   },
   "/transparency/": {
@@ -1071,6 +1139,7 @@
     "es": "/es/transparency/",
     "fr": "/fr/transparency/",
     "it": "/it/transparency/",
+    "nl": "/nl/transparency/",
     "pt": "/pt/transparency/"
   }
 }

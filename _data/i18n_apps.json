@@ -6127,6 +6127,1541 @@
    "url": "/it/apps/xiangqiful/"
   }
  },
+ "nl": {
+  "aftershift": {
+   "faq": [
+    {
+     "a": "AfterShift is een iPhone-app voor slaap en herstel bij ploegendienst. De app meet je slaap over het venster tussen diensten in plaats van van middernacht tot middernacht, bouwt je rooster op vanuit een terugkerende cyclus, importeert slaap uit de Gezondheid-app met dutjes inbegrepen en stemt herinneringen voor ontspannen, de cafeïnestop en dutjes af op je volgende dienst. Premium voegt Paraatheid voor je volgende dienst, de slaapscore, de herstelscore na dienst en trends toe.",
+     "q": "Wat is AfterShift?"
+    },
+    {
+     "a": "Voor verpleegkundigen en ziekenhuispersoneel, ambulancemedewerkers, brandweerlieden, ploegen in fabrieken, logistiek en de grondafhandeling op luchthavens, personeel in de horeca en nachtdiensten, mensen met oproepdiensten en iedereen van wie het slaapvenster van week tot week verschuift. Als je rooster zich herhaalt, van 4 op / 4 af tot een cyclus van 28 dagen zoals het DuPont-rooster, kan AfterShift het bewaren. Bij het instellen vraagt de app of je in wisselende diensten werkt, een vast schema hebt of onregelmatige uren en oproepdiensten.",
+     "q": "Voor wie is AfterShift?"
+    },
+    {
+     "a": "Gewone slaapapps meten je aan een nacht die om 23:00 uur begint. AfterShift meet herstel van dienst tot dienst, vult je rooster vanuit een terugkerende cyclus en stemt herinneringen en de stappen van ‘Doe dit nu’ af op je volgende dienst. Er is geen account en je gegevens blijven op je iPhone. De vergelijkingspagina’s behandelen het app voor app: <a href=\"/alternatives/offshift/\" hreflang=\"en\">OffShift</a>, <a href=\"/alternatives/shiftsleep/\" hreflang=\"en\">ShiftSleep</a> en <a href=\"/alternatives/timeshifter/\" hreflang=\"en\">Timeshifter</a> (in het Engels).",
+     "q": "Wat is het verschil tussen AfterShift en OffShift, ShiftSleep, Timeshifter of gewone slaapapps?"
+    },
+    {
+     "a": "De herstelscore na dienst is een score van 0 tot 100 voor één slaap, met Premium te zien bij Hersteldetails. De score weegt de slaapduur (50%), de continuïteit, dus hoe ononderbroken de slaap was (30%), en de verdeling van de slaapfasen (20%). Hij wordt begrensd op 79 als de tijd tussen twee diensten korter is dan je slaapdoel (vrije dagen uitgezonderd) en op 75 als het venster een oproepdienst bevat, zodat die slaap uitkomt op maximaal Goed. Paraatheid is de aparte beoordeling voor je volgende dienst: Laag, OK of Goed, uit de slaap die je tussen diensten hebt gehad ten opzichte van je slaapdoel. Beide zijn eigen vuistregels, geen medische beoordeling en geen diagnose van een slaapstoornis door ploegendienst. <a href=\"/apps/aftershift/methodology/\" hreflang=\"en\">De methodepagina</a> (in het Engels) toont elke invoer en elk gewicht.",
+     "q": "Wat is de herstelscore na dienst en hoe wordt die berekend?"
+    },
+    {
+     "a": "Voor mensen in ploegendienst horen dutjes bij het plan. Een kort dutje voor een nachtdienst is een van de meest genoemde strategieën in slaapadvies voor ploegendienst, omdat het venster voor de hoofdslaap op zich vaak te kort is. AfterShift importeert dutjes uit de Gezondheid-app en markeert ze als dutje, en dutjes die je zelf logt of met de dutjestimer van 25 minuten bijhoudt, komen in dezelfde lijst. Paraatheid telt de slaap die je binnen het venster tussen diensten hebt gehad, dutjes inbegrepen. Premium voegt een kaart Dutjes toe aan Hersteldetails.",
+     "q": "Waarom tellen dutjes mee voor het herstel in AfterShift?"
+    },
+    {
+     "a": "AfterShift is een informatieve herstelmeter en geen behandeling van een slaapstoornis door ploegendienst (Shift Work Disorder, SWSD). Dat is een stoornis van het circadiane slaap-waakritme die is opgenomen in de <a href=\"https://aasm.org/clinical-resources/international-classification-sleep-disorders/\" rel=\"noopener\" hreflang=\"en\">ICSD-3</a>, en een slaapspecialist hoort die te diagnosticeren en te behandelen. AfterShift kan je helpen je eigen patronen te zien, zoals een slaapschuld die over cycli oploopt of cafeïne laat op de dag, maar als je rooster je slaap ernstig verstoort, praat dan met een arts. De <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\" hreflang=\"en\">bronnen van het Amerikaanse NIOSH over ploegendienst</a> (in het Engels) zijn een redelijk beginpunt.",
+     "q": "Helpt AfterShift bij een slaapstoornis door ploegendienst (SWSD)?"
+    },
+    {
+     "a": "Elk patroon dat je als terugkerend dienstrooster kunt instellen of met de hand kunt toevoegen. De voorinstellingen zijn Drieploegendienst, 4 op / 4 af, 4 op / 3 af, 2 dag / 2 nacht, Panama (2-2-3), Vaste nachtdienst en Vaste dagdienst. Je kunt ook je eigen cyclus bouwen van 1 tot 28 dagen, lang genoeg voor een volledig DuPont-rooster (4 nachten / 3 vrij / 3 dagen / 1 vrij / 3 nachten / 3 vrij / 4 dagen / 7 vrij). AfterShift vult de komende 8 weken en blijft ze aanvullen. Diensttypes krijgen je eigen namen en tijden, dus ook dag- en nachtdiensten van 12 uur en late diensten passen erin. Agenda importeren kan ook diensten uit je werkagenda herkennen: gratis leest 1 agenda, 14 dagen vooruit; Premium synchroniseert meerdere agenda’s automatisch zodra je de app opent.",
+     "q": "Welke dienstroosters ondersteunt AfterShift?"
+    },
+    {
+     "a": "Oproepbaar is een van de diensttypes waarmee AfterShift start, en agenda importeren herkent oproepdiensten aan hun titel. Voor of tijdens een oproepdienst wordt het slaapplan een flexibel rustvenster, kiest ‘Doe dit nu’ meestal zijn routine voor oproepdiensten en voegt Paraatheid (Premium) een opmerking over de oproepdienst toe. Drie of meer oproepdiensten in 7 dagen tellen als een oproepweek: de slaapschuldtrend krijgt een badge, het tabblad Coach toont een herstelkaart voor oproepdiensten en Premium voegt een dagelijkse tip voor oproepdiensten toe. Valt oproeptijd binnen het venster, dan wordt de herstelscore na dienst begrensd op 75 en de slaapscore op 84. <a href=\"/journal/how-to-sleep-on-call/\" hreflang=\"en\">De gids over slapen tijdens oproepdienst</a> (in het Engels) legt uit wat onderzoek zegt over slapen met een oproepdienst.",
+     "q": "Hoe gaat AfterShift om met oproepdiensten?"
+    },
+    {
+     "a": "De app geeft je een herinnering voor de cafeïnestop die is afgestemd op je volgende dienst, dus de stop verschuift als je diensten verschuiven. Log een koffie met één tik, of houd lang ingedrukt voor een espresso, een energiedrank, thee of iets anders. De herinnering houdt rekening met hoeveel cafeïne je had en met de gevoeligheid die je hebt ingesteld. Premium voegt cafeïnedetails toe aan elke slaap bij Hersteldetails.",
+     "q": "Geeft AfterShift advies over het tijdstip van cafeïne?"
+    },
+    {
+     "a": "Nee. AfterShift is een hulpmiddel om herstel bij te houden en te plannen. De app geeft eenvoudige inzichten, geen medische diagnoses of behandeladviezen, en de suggesties staan als suggestie aangeduid, niet als voorschrift. Vermoed je een slaapstoornis door ploegendienst, chronische slapeloosheid, slaapapneu of een andere klinische slaapaandoening, ga dan naar een slaapspecialist.",
+     "q": "Geeft AfterShift medisch advies?"
+    },
+    {
+     "a": "Ja. Gratis omvat terugkerende dienstroosters en het rooster, slaapimport uit de Gezondheid-app met dutjes inbegrepen, slaaptiming en slaapfasen, de slaapschuldtrend, het herstelplan, de stappen van ‘Doe dit nu’ en 21 technieken, herinneringen op basis van je diensten, de aftelling op het toegangsscherm en de dutjestimer, de Siri-opdrachten Volgende dienst, Volgend slaapvenster en Slaap registreren, drie van de zeven widgets en agenda importeren uit 1 agenda, 14 dagen vooruit. Premium voegt Paraatheid toe (op Vandaag, in de widget en via Siri), de slaapscore en de herstelscore na dienst, slaapcontinuïteit, Trends, automatische synchronisatie met meerdere agenda’s met overwerkregistratie, een voorbeeld van wat een dienstwijziging doet met je paraatheid, een pdf-rapport en uitleg die Apple Intelligence op je apparaat schrijft (iOS 26 of nieuwer op een ondersteunde iPhone). Het kost {P_MONTHLY}/maand, {P_YEARLY}/jaar of {P_LIFETIME} eenmalig, en de abonnementen beginnen met een {TRIAL}. Alle drie de opties werken met Delen met gezin. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Is AfterShift gratis?"
+    },
+    {
+     "a": "Ja. De interface is in het Nederlands, van het scherm Vandaag tot Rooster, Coach en Instellingen, widgets inbegrepen, en Siri begrijpt Nederlandse zinnen zoals “Wanneer is mijn volgende dienst in AfterShift”.",
+     "q": "Is AfterShift in het Nederlands?"
+    },
+    {
+     "a": "Nee. AfterShift heeft geen advertenties, geen trackers van derden, geen analyse-SDK’s en geen servers om gegevens naartoe te sturen. Je slaap-, dutje- en dienstgegevens blijven op je iPhone, want er is geen account en geen cloudsynchronisatie. Gegevens verlaten het apparaat alleen als je een rapport exporteert of ons zelf een feedbackmail stuurt.",
+     "q": "Verkoopt AfterShift mijn gezondheidsgegevens?"
+    },
+    {
+     "a": "Nee. AfterShift werkt alleen op de iPhone, en omdat er geen account en geen iCloud-synchronisatie is, staan je gegevens op één iPhone. Als je de app verwijdert, verdwijnen die gegevens. Een Premium-aankoop kun je herstellen op elke iPhone die met dezelfde Apple Account is ingelogd.",
+     "q": "Synchroniseert AfterShift tussen apparaten of werkt het op de iPad?"
+    },
+    {
+     "a": "Nee. AfterShift heeft geen Apple Watch-app en heeft er geen nodig, maar de app heeft wel slaap in de Gezondheid-app nodig, en een iPhone alleen legt die niet vast. Een Apple Watch of elke slaapapp die in de Gezondheid-app opslaat, is genoeg. Je kunt dutjes ook in de app loggen en slaap loggen door het aan Siri te vragen. Een bron die slaapfasen vastlegt, voegt de fasedetails toe; zonder zo’n bron gebruikt het fasedeel van de scores neutrale standaardwaarden.",
+     "q": "Heb ik een Apple Watch nodig?"
+    },
+    {
+     "a": "Allebei, op verschillende momenten en met verschillende doelen. Blijf je op een nachtdienstritme, vermijd dan fel ochtendlicht op de weg naar huis (een donkere zonnebril helpt, maar alleen als iemand anders rijdt) en slaap in een donkere kamer, want fel licht vertelt je biologische klok dat het dag is en maakt inslapen moeilijker. Schakel je terug naar een dagritme, doe dan het omgekeerde en zoek ’s ochtends fel licht om je biologische klok naar voren te schuiven. Het tabblad Coach van AfterShift heeft een korte tekst ‘Basiskennis lichtblootstelling’. Voor de volledige circadiane wetenschap kun je terecht bij slaapspecialisten en de <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\" hreflang=\"en\">bronnen van het Amerikaanse NIOSH over ploegendienst</a> (in het Engels), die de timing van lichtblootstelling uitgebreid behandelen.",
+     "q": "Moet ik na een nachtdienst ochtendlicht opzoeken of juist vermijden?"
+    },
+    {
+     "a": "Slaapinertie is de suffe toestand met trage reacties in de eerste 15 tot 30 minuten na het wakker worden. Voor mensen in ploegendienst speelt ze op twee momenten. (1) Wakker worden uit een lang, diep dutje midden in een dienst kan zoveel inertie geven dat het dutje meer kost dan het oplevert; de dutjestimer op het toegangsscherm van AfterShift loopt 25 minuten. (2) De start van een nachtdienst na slaap overdag gaat vaak gepaard met resterende inertie die voelt als vermoeidheid. Als je die twee uit elkaar kunt houden, weet je beter of je cafeïne nodig hebt of gewoon een kwartier.",
+     "q": "Wat heeft slaapinertie met ploegendienst te maken?"
+    },
+    {
+     "a": "Ja. Je chronotype is een van de beste voorspellers van hoe hard wisselende diensten en nachtdiensten bij je aankomen. Sterke ochtendtypes (leeuweriken) hebben meer moeite met vaste nachtdiensten, omdat hun circadiane systeem zich tegen de verschuiving verzet; sterke avondtypes (uilen) passen zich meestal beter aan nachten aan, maar betalen daarvoor bij vroege ochtenddiensten. De meeste mensen zitten ergens in het midden. AfterShift vraagt je niet om jezelf een label te geven; de app werkt met de slaap die je rond je diensten echt krijgt. Wil je je eigen chronotype formeel laten bepalen, dan gebruiken slaaponderzoekers twee gevalideerde instrumenten: de MEQ (Horne-Östberg Morningness-Eveningness Questionnaire) en de MCTQ (Munich ChronoType Questionnaire).",
+     "q": "Maakt het uit of ik een ochtendmens of een avondmens ben bij ploegendienst?"
+    },
+    {
+     "a": "AfterShift geeft geen advies over supplementen; dat gesprek voer je met een arts of apotheker. Wat we op basis van de literatuur wel eerlijk kunnen zeggen: melatonine in een lage dosis (0,3 tot 3 mg), genomen aan het begin van je geplande slaapvenster, is het gebruik dat slaaponderzoekers het vaakst bespreken voor mensen in ploegendienst. Melatonine is evenzeer een middel dat je biologische klok verschuift als een slaapmiddel, dus wanneer je het neemt telt zwaarder dan hoeveel. Hogere doses zijn niet beter en geven bij sommige mensen meer sufheid de volgende dag. Melatonine die in de Verenigde Staten wordt verkocht, is niet gereguleerd en de doses worden niet eenduidig op het etiket vermeld. De <a href=\"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/06.html\" rel=\"noopener\" hreflang=\"en\">module van het Amerikaanse NIOSH over ploegendienst</a> (in het Engels) en de klinische richtlijnen van de AASM behandelen beide het tijdstip van melatonine voor mensen in ploegendienst uitgebreider. Praat met je arts voordat je met welk supplement dan ook begint.",
+     "q": "Moet ik melatonine nemen bij ploegendienst? Raadt AfterShift supplementen aan?"
+    },
+    {
+     "a": "Inslaaptijd is hoelang het duurt om in slaap te vallen nadat het licht uit is; slaapefficiëntie is het percentage van de tijd in bed dat je echt slaapt. Het zijn allebei standaardmaten in de slaapwetenschap. Bij mensen in ploegendienst worden beide meestal slechter als ze overdag slapen: fel daglicht, lawaai en een biologische klok die nog zegt ‘dit is het verkeerde moment’ duwen de inslaaptijd omhoog en de efficiëntie omlaag. AfterShift meet de inslaaptijd niet. Heeft de Gezondheid-app aparte gegevens voor in bed en in slaap, dan toont AfterShift de slaapefficiëntie bij Slaaptiming, en met Premium telt die mee in de slaapscore. Een chronisch lage efficiëntie bij slaap overdag zegt meestal meer over je slaapomgeving (licht, lawaai, het schema van een partner) dan dat het een getal is om na te jagen.",
+     "q": "Wat zijn inslaaptijd en slaapefficiëntie, en houdt AfterShift ze bij?"
+    },
+    {
+     "a": "Social jetlag is de term die slaaponderzoekers gebruiken voor het verschil tussen het slaapmoment dat je biologie liever heeft en het schema dat je werk of sociale leven oplegt. De meeste mensen voelen er op maandagochtend na een vrijer weekend iets van. Bij ploegendienst is het mechanisme hetzelfde maar veel groter: een verpleegkundige met vaste nachtdiensten die haar vrije dagen doorbrengt met een gezin dat ’s nachts slaapt, vliegt in feite elk weekend door tijdzones. AfterShift meet social jetlag niet. De slaapschuldtrend laat per cyclus zien of je schuld oploopt, stabiel is of herstelt. Wil je een formele meting, dan gebruiken slaaponderzoekers de MCTQ (Munich ChronoType Questionnaire) om social jetlag te meten.",
+     "q": "Wat is social jetlag en telt dat mee bij ploegendienst?"
+    }
+   ],
+   "seo": {
+    "description": "Slapen na nachtdienst telt mee in AfterShift: slaap en herstel gemeten van dienst tot dienst, je rooster 8 weken vooruit gevuld. Gratis, met Premium."
+   },
+   "tagline": "Slaap en herstel bijhouden, afgestemd op je dienstrooster.",
+   "url": "/nl/apps/aftershift/"
+  },
+  "allpaid": {
+   "faq": [
+    {
+     "a": "AllPaid is een app om rekeningen en contracten bij te houden op iPhone, iPad en Mac, zonder bankkoppeling. Je voegt rekeningen, abonnementen en contracten met de hand toe. AllPaid herinnert je om 9:00 uur vóór elke vervaldatum, laat je een rekening vanuit de melding als betaald markeren en herinnert je voordat een contract afloopt. De app heeft ook tien widgets, Siri, app-vergrendeling met Face ID en een uitgavenoverzicht. Tot 3 rekeningen is hij gratis. Pro kost {P_MONTHLY}/maand, {P_YEARLY}/jaar of {P_LIFETIME} eenmalig.",
+     "q": "Wat is AllPaid?"
+    },
+    {
+     "a": "Gedeeltelijk. AllPaid leest je bank nooit, dus de app kan zelf geen rekeningen vinden. Je voegt elke rekening met de hand toe. Typ je een bekende naam zoals Netflix, dan stelt de app de categorie en het terugkeerpatroon voor en tik je op ‘Toepassen’ om ze te gebruiken. Bekende aanbieders tonen ook hun echte logo. Het bedrag is optioneel, dus je kunt een rekening ook toevoegen als hij van maand tot maand wisselt.",
+     "q": "Vult AllPaid rekeningen automatisch in?"
+    },
+    {
+     "a": "Rocket Money koppelt met je bank, herkent abonnementen uit je transactiegeschiedenis en biedt een betaalde onderhandelingsdienst die een percentage van de besparing rekent. AllPaid doet niets van dat alles. Je voegt rekeningen zelf toe, er verlaat niets je apparaat tenzij je iCloud-synchronisatie aanzet, en AllPaid is gratis voor 3 rekeningen met een eenmalige levenslange optie voor Pro. Telt automatische herkenning uit transacties voor jou zwaarder dan privacy, dan past Rocket Money beter. Wil je je bankgegevens liever niet aan een app van een derde geven, dan is AllPaid de betere keuze. In de vergelijking met Rocket Money lopen we het regel voor regel door.",
+     "q": "Wat is het verschil tussen AllPaid en Rocket Money?"
+    },
+    {
+     "a": "Ja. Zet bij een rekening ‘Einddatum van contract bijhouden’ aan en voeg de begin- en einddatum toe, of het automatisch verlengt en het verlengingsbedrag. AllPaid herinnert je om 10:00 uur vóór de einddatum en de lijst toont contracten die bijna eindigen. Verleng je, dan bewaart ‘Markeer als verlengd’ de oude periode onder ‘Eerdere verlengingen’ en schuift de einddatum op. In de gratis versie krijg je één herinnering per contract, met Pro meerdere.",
+     "q": "Kan AllPaid me herinneren voordat een contract wordt verlengd?"
+    },
+    {
+     "a": "Alleen voor de proefperiodes die je zelf invoert. AllPaid scant je e-mail of transacties niet, dus de app kan geen proefperiode vinden die je hebt afgesloten en vergeten bent. Voeg de proefperiode toe als rekening die vervalt op de dag dat hij overgaat, of als contract dat op die dag eindigt, en AllPaid herinnert je vóór die datum.",
+     "q": "Waarschuwt AllPaid me voor gratis proefperiodes voordat ze automatisch overgaan in een abonnement?"
+    },
+    {
+     "a": "Ja. De widget Maandkalender toont alle rekeningen van de maand op je beginscherm, en het maandoverzicht in de app somt de rekeningen en totalen van de maand op. De gratis versie toont de huidige maand. Met Pro blader je door maanden in het verleden en de toekomst.",
+     "q": "Toont AllPaid mijn rekeningen in een kalender?"
+    },
+    {
+     "a": "Nee. AllPaid is er voor rekeningen, abonnementen, contracten en betalingsherinneringen. Volledig budgetteren, inkomsten bijhouden en transacties categoriseren doet de app niet. Wil je een volledig huishoudboekje, dan passen YNAB, Monarch Money of Copilot beter.",
+     "q": "Is AllPaid een huishoudboekje?"
+    },
+    {
+     "a": "Ja. De gratis versie houdt tot 3 rekeningen bij, met een herinnering de dag vóór elke vervaldatum, einddata van contracten, het uitgavenoverzicht, alle tien de widgets, Siri en app-vergrendeling. Sla je een vierde rekening op, dan opent het Pro-scherm. Pro ontgrendelt onbeperkt rekeningen, meerdere herinneringen per rekening plus herinneringen op de vervaldatum, uitgavenanalyse, de volledige betalingsgeschiedenis, tot 50 bijlagen per rekening en iCloud-synchronisatie voor {P_MONTHLY}/maand, {P_YEARLY}/jaar of {P_LIFETIME} eenmalig. Als je Apple Account in aanmerking komt, begint het maandabonnement met een {TRIAL} en het jaarabonnement met een gratis proefperiode van 7 dagen. Eén Pro-aankoop dekt tot 5 gezinsleden via Delen met gezin. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Is AllPaid gratis?"
+    },
+    {
+     "a": "Ja. Vraag Siri “What bills are due in AllPaid” en Siri leest de rekeningen voor die de komende zeven dagen vervallen; die Siri-zinnen zijn er alleen in het Engels. AllPaid heeft tien widgets voor het beginscherm en het toegangsscherm, waaronder Volgende rekening, Maandkalender, Binnenkort en Contracten, met extra grote formaten op iOS 27. Widgets openen de app. Je kunt er geen rekening mee als betaald markeren.",
+     "q": "Werkt AllPaid met Siri en widgets?"
+    },
+    {
+     "a": "Op iPad en Mac wel, op de Apple Watch niet. AllPaid werkt op iPhone met iOS 17 of nieuwer, op iPad met iPadOS 17 of nieuwer en op de Mac met macOS 14 Sonoma of nieuwer. Eén aankoop dekt alle drie: Pro dat je op het ene apparaat koopt, ontgrendelt de andere apparaten die met hetzelfde Apple Account zijn ingelogd, en iCloud-synchronisatie (Pro) houdt je rekeningen op elk apparaat gelijk. Een versie voor de Apple Watch is er niet.",
+     "q": "Werkt AllPaid op iPad, Mac of Apple Watch?"
+    },
+    {
+     "a": "Nee. AllPaid heeft geen eigen server om naar te uploaden, koppelt nooit met een bank en bevat geen analyse-, advertentie- of externe SDK’s. Je maakt geen account aan om de app te gebruiken. Je rekeningen blijven op je eigen apparaten of, als je iCloud-synchronisatie (Pro) aanzet, in je eigen privé-iCloud, waar wij geen toegang toe hebben. App-vergrendeling kan Face ID, Touch ID of je toegangscode vereisen om de app te openen. De transparantiepagina geeft het volledige overzicht.",
+     "q": "Deelt AllPaid mijn financiële gegevens?"
+    },
+    {
+     "a": "Je kunt er een versturen. ‘Rekening delen’ opent het deelmenu van iOS met een kort bericht over de rekening en de vervaldatum. Dat werkt om een partner of huisgenoot aan de huur of het internet te herinneren. De ander krijgt geen toegang tot je rekeningen en AllPaid heeft geen gedeeld huishoudaccount.",
+     "q": "Kan ik rekeningen met iemand delen?"
+    },
+    {
+     "a": "Nee. AllPaid kan niet exporteren naar CSV, pdf of een agenda. Met Pro bewaart iCloud-synchronisatie een kopie van je rekeningen in je eigen privé-iCloud.",
+     "q": "Kan ik mijn rekeningen exporteren?"
+    },
+    {
+     "a": "Ja. De app is in het Nederlands, widgets en meldingen inbegrepen. AllPaid is in totaal vertaald in 37 talen.",
+     "q": "Is AllPaid in het Nederlands?"
+    }
+   ],
+   "seo": {
+    "description": "Rekeningen bijhouden met een app voor iPhone, iPad en Mac, zonder bankkoppeling. Herinneringen voor vaste lasten en contracten. Gratis tot 3 rekeningen."
+   },
+   "tagline": "Herinneringen voor rekeningen en contracten op iPhone, iPad en Mac, zonder bankkoppeling.",
+   "url": "/nl/apps/allpaid/"
+  },
+  "appmeta": {
+   "faq": [
+    {
+     "a": "AppMeta is een native Mac-app en ASO-tool voor App Store Connect, bedoeld voor indie-ontwikkelaars die hun eigen productpagina’s beheren. De app bewerkt alle talen in één venster, toont voor je publiceert per veld de diff met de live productpagina en meet de moeilijkheid en vraag van zoekwoorden op de live App Store, met het bewijs erbij. In-app aankopen, abonnementen, TestFlight, Game Center, recensies, indienen voor review, verkoop en diagnostics zitten in dezelfde app. AppMeta draait op macOS 14 of nieuwer en praat rechtstreeks met Apple, met je API-sleutel in de sleutelhanger van je Mac. De demomodus is gratis; voor je eigen account heb je Pro nodig voor {P_YEARLY}/jaar of {P_LIFETIME} levenslang.",
+     "q": "Wat is AppMeta?"
+    },
+    {
+     "a": "AppMeta werkt naast App Store Connect, via de App Store Connect API van Apple. Het is een snellere plek om te bewerken: alle talen in één venster, één veld in alle talen en een diff met de live productpagina voordat je publiceert. Er wordt niets van de website gehaald en er zit geen AppMeta-server tussen. Een paar dingen heb je nog steeds in App Store Connect zelf nodig, zoals de gegevens voor App Privacy, afbeeldingen voor Game Center en het toevoegen van TestFlight-testers. AppMeta is een ontwikkelaarstool van een derde partij en niet verbonden aan Apple.",
+     "q": "Is AppMeta een alternatief voor App Store Connect?"
+    },
+    {
+     "a": "Fastlane deliver is een opdrachtregeltool voor CI/CD-pipelines. Het werkt goed als je metadata in versiebeheer wilt en bij elke release automatisch wilt uploaden. AppMeta is een desktoptool om interactief te bewerken: alle talen van een veld tegelijk zichtbaar, een diff met de live waarde voor je publiceert, zoekwoordonderzoek, antwoorden op recensies en het bewerken van in-app aankopen en Game Center. De twee werken samen: houd Fastlane deliver in je releaseproces en gebruik AppMeta voor handwerk.",
+     "q": "Wat is het verschil tussen AppMeta en Fastlane deliver?"
+    },
+    {
+     "a": "Itsyconnect is een goede App Store Connect-client voor de Mac, gratis en met MIT-licentie, gebouwd op Electron met een optie om zelf te hosten met Docker. AppMeta is een native Mac-app voor {P_YEARLY}/jaar of {P_LIFETIME} levenslang. Het grootste verschil is de reikwijdte. AppMeta maakt en bewerkt in-app aankopen, abonnementen en abonnementsgroepen, en Game Center (Achievements, Leaderboards, Leaderboard Sets), met gelokaliseerde tekst; Itsyconnect dekt geen van die dingen. AppMeta kan zijn AI draaien met Apple Intelligence op je Mac (macOS 26 op een ondersteunde Mac) of met een lokaal model, terwijl Itsyconnect zes cloudaanbieders biedt (Anthropic, OpenAI, Google, xAI, Mistral, DeepSeek). Itsyconnect heeft een MCP-server voor Claude Code, Cursor, Codex en OpenCode en een bredere analyseweergave; AppMeta heeft geen MCP-server. Verkoop je geen in-app aankopen en gebruik je Game Center niet, of wil je gratis, open source of MCP, kies dan Itsyconnect. Verdien je met in-app aankopen, lever je content voor Game Center of wil je AI op je eigen apparaat, kies dan AppMeta. De volledige vergelijking staat op de pagina <a href=\"/alternatives/itsyconnect/\" hreflang=\"en\">AppMeta als alternatief voor Itsyconnect (in het Engels)</a>.",
+     "q": "Wat is het verschil tussen AppMeta en Itsyconnect?"
+    },
+    {
+     "a": "NativeConnect was een native Mac-client voor App Store Connect in dezelfde vorm als AppMeta. Het werd in 2020 uit de Mac App Store gehaald en is sindsdien niet meer beschikbaar, dus het is geen actuele optie. AppMeta is een native Mac-client in die categorie, gebouwd op de App Store Connect API voor macOS 14 of nieuwer, en wordt regelmatig bijgewerkt.",
+     "q": "Wat is het verschil tussen AppMeta en NativeConnect?"
+    },
+    {
+     "a": "AppMetaHub en ASO.dev zijn tools op abonnement. AppMetaHub is een webapp met een Indie-abonnement per maand. ASO.dev heeft apps voor Mac, iPhone, iPad, Windows, Linux en Android en rekent per gebruiker, jaarlijks gefactureerd. AppMeta is een native Mac-app voor {P_YEARLY}/jaar of {P_LIFETIME} levenslang. AppMetaHub en ASO.dev geven je een browser of meer platforms, teamlicenties en (bij ASO.dev) het volgen van posities. AppMeta geeft je een native Mac-app, wijzigingen die op je Mac blijven staan totdat je publiceert, het bewerken van Game Center en een levenslange optie. AppMeta beheert ook meer locales dan AppMetaHub in mei 2026 (50 tegen 37).",
+     "q": "Wat is het verschil tussen AppMeta, AppMetaHub en ASO.dev?"
+    },
+    {
+     "a": "Vijf: Apple Intelligence op je Mac (macOS 26 op een Mac die dat ondersteunt, geen sleutel nodig), Anthropic Claude, OpenAI en Google Gemini met je eigen API-sleutel, en elke OpenAI-compatibele server zoals Ollama of LM Studio (geen sleutel nodig). Je kiest de aanbieder in ‘Settings’ en betaalt die rechtstreeks; AppMeta verkoopt geen AI-gebruik. Bij een cloudaanbieder gaat de tekst die je vertaalt of analyseert van je Mac naar die aanbieder. Bij Apple Intelligence blijft ze op je Mac.",
+     "q": "Welke AI-aanbieders ondersteunt AppMeta?"
+    },
+    {
+     "a": "Nee. De editor voor productpagina’s, de diff, het publiceren en de zoekwoordcontrole (verspilde tekens, dubbele woorden, overlap, storefront-dekking) werken zonder AI. Live moeilijkheid en vraag komen van de App Store en hebben ook geen AI-sleutel nodig. AI-vertaling en zoekwoordsuggesties zijn optioneel en vragen om Apple Intelligence, je eigen sleutel van Anthropic, OpenAI of Google, of een lokaal model.",
+     "q": "Heeft AppMeta een AI API-sleutel nodig om te werken?"
+    },
+    {
+     "a": "AppMeta gebruikt de App Store Connect API van Apple, zonder appspecifiek wachtwoord en zonder browsersessie. Je maakt in App Store Connect een API-sleutel voor je team aan (‘Users and Access’ > ‘Integrations’ > ‘App Store Connect API’) en vult de Issuer ID, de Key ID en het .p8-bestand eenmalig in bij AppMeta. Alle drie worden bewaard in de sleutelhanger van je Mac als onderdelen die alleen voor die Mac gelden, niet gesynchroniseerd via iCloud. AppMeta ondertekent kortlevende tokens op je Mac en het .p8-bestand verlaat die nooit. Er is geen AppMeta-server. Andere verzoeken gaan naar de openbare App Store-eindpunten van Apple voor zoekwoordonderzoek (als je dat aanzet), naar Apple Ads (als je het koppelt), naar de Europese Centrale Bank voor wisselkoersen en naar je AI-aanbieder (als je er een toevoegt). Zie het privacymanifest van de app op de transparantiepagina voor het opgegeven API-gebruik.",
+     "q": "Is AppMeta veilig? Waar gaan mijn App Store Connect-gegevens naartoe?"
+    },
+    {
+     "a": "AppMeta is gratis te downloaden en draait in demomodus: elk scherm met voorbeeldapps, talen, zoekwoorden, in-app aankopen, recensies en verkoop, zonder account. In de demomodus kun je geen wijzigingen naar App Store Connect sturen. Voor je eigen App Store Connect-account heb je Pro nodig: {P_YEARLY}/jaar, beginnend met een {TRIAL}, of {P_LIFETIME} levenslang als eenmalige aankoop. In de demomodus probeer je elk scherm voordat je koopt. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Is AppMeta gratis?"
+    },
+    {
+     "a": "Ja. Koppel een build, voeg de versie toe voor review en beheer gefaseerde release voor de iOS-versie. Het tabblad ‘Submission’ controleert ‘App Review Info’, ‘Content Rights’, ‘Categories’, ‘Pricing’, ‘Availability’, ‘Age Rating’, ‘License Agreement’, ‘Privacy’ en ‘Copyright’. De gegevens voor App Privacy zijn in AppMeta alleen te lezen, met een link naar App Store Connect. ‘Add for Review’ dient direct in, zonder bevestigingsstap. De builds zelf upload je met Xcode, Transporter of fastlane.",
+     "q": "Kan ik apps via AppMeta indienen voor review?"
+    },
+    {
+     "a": "AppMeta beheert alle 50 locale-codes van App Store Connect, van ar-SA tot zh-Hant, ook nl-NL voor je Nederlandse productpagina. Je kunt ze alfabetisch sorteren zoals App Store Connect dat doet, op locale-code of in je eigen volgorde, en vanuit de app een locale aan een versie toevoegen.",
+     "q": "Hoeveel locales van App Store Connect ondersteunt AppMeta?"
+    },
+    {
+     "a": "Ja. Maak en bewerk in-app aankopen, abonnementsgroepen en automatisch verlengbare abonnementen, met gelokaliseerde namen en beschrijvingen, prijzen, beschikbaarheid per land of regio, introductieaanbiedingen en reviewschermafbeeldingen. Prijzen, aanbiedingen, beschikbaarheid en reviewschermafbeeldingen worden in App Store Connect opgeslagen zodra je ze instelt; metadata gaat mee bij het publiceren. Game Center omvat Achievements, Leaderboards en Leaderboard Sets met gelokaliseerde tekst. Afbeeldingen voor Game Center en het vrijgeven van ranglijsten blijven in App Store Connect.",
+     "q": "Beheert AppMeta in-app aankopen, abonnementen en Game Center?"
+    },
+    {
+     "a": "Nee, ze doen verschillende dingen. AppMeta is een metadata-editor en releaseclient voor de App Store Connect API. De app schat moeilijkheid en vraag voor de zoekwoorden die je controleert, maar volgt geen posities in de tijd en onderzoekt geen zoekwoorden van concurrenten. Appfigures, AppTweak, Sensor Tower en RespectASO zijn platforms voor concurrentie-inzichten, voor het volgen van posities, onderzoek naar concurrenten en marktanalyse. Je kunt beide gebruiken: AppMeta om te bewerken en een inzichtenplatform voor onderzoek.",
+     "q": "Vervangt AppMeta Appfigures, AppTweak of Sensor Tower?"
+    },
+    {
+     "a": "macOS 14 (Sonoma) of nieuwer. Vertaling met Apple Intelligence vraagt om macOS 26 op een Mac waar Apple Intelligence beschikbaar is. De andere AI-opties (Anthropic, OpenAI, Google, OpenAI-compatibel) werken op elke ondersteunde macOS-versie. AppMeta bestaat alleen voor de Mac, zonder versie voor iPhone of iPad.",
+     "q": "Welke macOS-versie heeft AppMeta nodig?"
+    },
+    {
+     "a": "Nee. De interface van AppMeta bestaat in 17 lokalisaties voor 11 talen: Engels (Verenigde Staten, Verenigd Koninkrijk, Australië, Canada), Arabisch, Duits, Spaans (Spanje, Mexico), Frans (Frankrijk, Canada), Italiaans, Japans, Koreaans, Portugees (Brazilië, Portugal), Russisch en Turks. Nederlands zit daar niet bij, dus op een Nederlandse Mac staat de interface in het Engels. De editor voor productpagina’s beheert wel alle 50 locales van App Store Connect, ook nl-NL, welke taal de app zelf ook gebruikt.",
+     "q": "Is AppMeta beschikbaar in het Nederlands?"
+    }
+   ],
+   "seo": {
+    "description": "Een ASO-tool voor je Mac: bewerk alle talen van je productpagina in App Store Connect, zie de diff voor je publiceert en meet zoekwoordmoeilijkheid."
+   },
+   "tagline": "Bewerk, vergelijk en publiceer je App Store-productpagina vanaf je Mac.",
+   "url": "/nl/apps/appmeta/"
+  },
+  "appmeta-pulse": {
+   "faq": [
+    {
+     "a": "AppMeta Pulse is een app voor iPhone en Mac die je App Store-verkopen, abonnementen en recensies uit App Store Connect toont. De app laat voor elke app die je verkoopt opbrengst of verkoop, aantallen, MRR, abonnees, proefperiodes, churn en de App Store-funnel zien, bewaart je verkoopgeschiedenis op je iPhone nadat Apples venster van een jaar is verstreken, en laat je recensies beantwoorden. Er zijn 12 widgets voor het beginscherm en het toegangsscherm. De app kan je prijzen, builds of metadata niet wijzigen.",
+     "q": "Wat is AppMeta Pulse?"
+    },
+    {
+     "a": "Vanaf de eerste dag die de app ophaalt, en zolang je die geschiedenis bewaart. App Store Connect levert ongeveer de laatste 365 dagen aan dagelijkse verkopen. Bij de eerste verbinding haalt AppMeta Pulse dus op wat Apple nog heeft en slaat daarna elke nieuwe dag op je iPhone op. De geschiedenis wordt alleen gewist als je haar verwijdert of uitlogt. De vergelijking met vorig jaar verschijnt zodra een volledig vorig jaar is opgeslagen; tot die tijd vertelt Trends in welke maand dat zover is. Downloads per jaar kunnen verder teruggaan, tot 10 jaar, omdat ze uit Apples jaarrapporten komen.",
+     "q": "Hoe ver terug bewaart AppMeta Pulse mijn verkoopgeschiedenis?"
+    },
+    {
+     "a": "De vergelijkingspagina’s behandelen de apps één voor één: <a href=\"/alternatives/appstats/\" hreflang=\"en\">AppStats</a>, <a href=\"/alternatives/app-sales-store-reports/\" hreflang=\"en\">App Sales - Store Reports</a> en <a href=\"/alternatives/appfigures/\" hreflang=\"en\">Appfigures</a> (allemaal in het Engels). Dit brengt AppMeta Pulse in die vergelijking mee: verkoopgeschiedenis die op je iPhone bewaard blijft na Apples venster van een jaar, reacties op recensies met conceptreacties van Apple Intelligence op het apparaat en bulkreacties op maximaal 25 recensies, 12 widgets waaronder vier voor het tempo van de week of maand, en geen server van ons tussen je iPhone en Apple.",
+     "q": "Wat is het verschil tussen AppMeta Pulse en AppStats, App Sales of Appfigures?"
+    },
+    {
+     "a": "De <a href=\"https://apps.apple.com/nl/app/app-store-connect/id1234793120\" rel=\"noopener\">App Store Connect-app</a> van Apple is bedoeld om je account te beheren. AppMeta Pulse is bedoeld om je bedrijf te volgen: de app bewaart je verkoopgeschiedenis nadat Apples venster van een jaar is verstreken, vergelijkt dit jaar met vorig jaar, zet opbrengst, abonnementen en tempo op 12 widgets en schrijft conceptreacties op recensies op het apparaat. Hij kan je prijzen, builds of metadata niet wijzigen. Naar App Store Connect stuurt hij alleen de recensiereacties die je schrijft en de verzoeken om analyticsrapporten die Apple nodig heeft. <a href=\"/alternatives/app-store-connect-app/\" hreflang=\"en\">De volledige vergelijking</a> (in het Engels) gaat functie voor functie.",
+     "q": "Wat is het verschil tussen AppMeta Pulse en de officiële App Store Connect-app?"
+    },
+    {
+     "a": "De <em>verkoop</em> (sales) is het brutobedrag dat klanten hebben betaald, vóór Apples commissie. De <em>opbrengst</em> (proceeds) is wat Apple je verschuldigd is na zijn commissie van 15% (Small Business Program) of 30% (standaardtarief) en na de btw of omzetbelasting die Apple inhoudt. De betaling die op je bankrekening binnenkomt, kan nog steeds afwijken van je opbrengst, door valutaomrekening, bronbelasting en bankkosten. In AppMeta Pulse schakelt de instelling ‘Toon bedrag’ elk cijfer tussen opbrengst en verkoop. Voor de officiële definities zie je Apples uitleg over <a href=\"https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders/\" rel=\"noopener\" hreflang=\"en\">aantallen, opbrengst en verkoop</a> (in het Engels).",
+     "q": "Wat is het verschil tussen verkoop en opbrengst in App Store Connect?"
+    },
+    {
+     "a": "De officiële <a href=\"https://developer.apple.com/documentation/appstoreconnectapi\" rel=\"noopener\" hreflang=\"en\">App Store Connect API</a>. In App Store Connect maak je onder ‘Users and Access’ > ‘Integrations’ een API-sleutel aan met de rol Beheerder (Admin), download je de privésleutel (.p8) en voeg je in AppMeta Pulse het sleutelbestand, de Key ID en de Issuer ID toe, samen met je Vendor Number voor de verkooprapporten. De sleutel wordt bewaard in de Sleutelhanger van deze iPhone. AppMeta Pulse leest nooit het webdashboard. Op <a href=\"/apps/appmeta-pulse/api-access/\" hreflang=\"en\">de pagina over API-toegang</a> (in het Engels) staan de exacte endpoints, de rol die de sleutel nodig heeft en hoe de tokens worden ondertekend.",
+     "q": "Gebruikt AppMeta Pulse de App Store Connect API of het webdashboard?"
+    },
+    {
+     "a": "Een API-sleutel met de rol Beheerder (Admin), de rol die verkooprapporten kan lezen; sleutels met de rol App Manager of Developer krijgen van Apple een 403-fout. AppMeta Pulse gebruikt de sleutel om je verkoop- en abonnementsrapporten, je applijst, de App Store-analytics en klantrecensies te lezen. De enige dingen die de app schrijft, zijn de recensiereacties die jij verstuurt, bewerkt of verwijdert en de verzoeken om analyticsrapporten die Apple nodig heeft voordat het gegevens over vertoningen klaarzet. Hij kan je prijzen, builds of metadata niet wijzigen. Je kunt de sleutel op elk moment intrekken in App Store Connect. <a href=\"/apps/appmeta-pulse/api-access/\" hreflang=\"en\">De pagina over API-toegang koppelt elke rol aan zijn endpoints</a> (in het Engels).",
+     "q": "Welke rechten vraagt AppMeta Pulse op mijn App Store Connect-account?"
+    },
+    {
+     "a": "Zo actueel als Apple ze maakt. Apple publiceert het verkooprapport van een dag de dag erna, en App Store-analytics zoals vertoningen komen ongeveer twee dagen later. AppMeta Pulse ververst op de achtergrond ongeveer elk uur, waarbij iOS het exacte moment bepaalt, en opnieuw wanneer je de app opent. De widgets worden na elke synchronisatie bijgewerkt. De app kan Apples gegevens niet sneller krijgen dan Apple ze publiceert, en de voetregel van het Dashboard laat zien of elke bron up-to-date is.",
+     "q": "Hoe actueel zijn de gegevens? Is het realtime?"
+    },
+    {
+     "a": "Ja, met iOS 26 of nieuwer en Apple Intelligence op een ondersteunde iPhone. De reactie-editor biedt twee concepten die op het apparaat zijn geschreven, één verontschuldigend en technisch, één empathisch en ondersteunend, en jij past aan en verstuurt. De concepten zijn in het Engels. Op elke iPhone kun je zelf reacties schrijven, een bewaard sjabloon invoegen, een recensie in een andere taal op het apparaat vertalen (iOS 18 of nieuwer) en tot 25 onbeantwoorde recensies tegelijk beantwoorden met een sjabloon, een concept per recensie of dezelfde tekst. Er wordt niets geplaatst voordat je op verzenden tikt.",
+     "q": "Kan AppMeta Pulse conceptreacties op App Store-recensies schrijven?"
+    },
+    {
+     "a": "Ja. In de detailweergave van elke app staan de top vijf landen en regio’s, en Trends toont de top acht landen voor één app, op verkoop of opbrengst. Het detail per land wordt 456 dagen bewaard; de dagtotalen blijven volledig bewaard. De cijfers komen uit Apples dagelijkse verkooprapporten, dus leg uitbetalingen naast de <a href=\"https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports/\" rel=\"noopener\" hreflang=\"en\">maandelijkse financiële rapporten</a> in App Store Connect.",
+     "q": "Kan ik mijn omzet per land zien?"
+    },
+    {
+     "a": "De .p8-sleutel en de Key ID staan in de Sleutelhanger van deze iPhone, zijn alleen op dit apparaat beschikbaar en worden nooit gesynchroniseerd, ook niet met iCloud-synchronisatie aan. Verzoeken gaan via HTTPS rechtstreeks naar Apples API; er loopt niets via een server van Lagerland Apps. Je kunt de sleutel op elk moment intrekken in App Store Connect.",
+     "q": "Zijn mijn inloggegevens veilig bij AppMeta Pulse?"
+    },
+    {
+     "a": "Nee. AppMeta Pulse kan je prijzen, builds of metadata niet wijzigen en heeft er ook geen knoppen voor. Het enige wat je kunt wijzigen is een recensiereactie: je schrijft hem, tikt op verzenden en kunt hem later bewerken of verwijderen.",
+     "q": "Kan ik per ongeluk app-instellingen wijzigen?"
+    },
+    {
+     "a": "De download is gratis en opent een demo met vijf voorbeeldapps, voor maximaal 3 dagen gebruik. Voor je eigen cijfers heb je volledige toegang nodig: Maandelijks voor {P_MONTHLY} per maand of Jaarlijks voor {P_YEARLY} per jaar, allebei met een {TRIAL}, of Levenslang voor eenmalig {P_LIFETIME}. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store je prijs in je eigen valuta bij het afrekenen.",
+     "q": "Is AppMeta Pulse gratis?"
+    },
+    {
+     "a": "Ja. AppMeta Pulse toont elke app in je App Store Connect-account en jij kiest welke de app volgt. In het tabblad Apps zie je ze naast elkaar, en elke app heeft een eigen grafiek, top landen en recensies. Werk je met meer dan één App Store Connect-account, voeg dan elk account toe en schakel ertussen.",
+     "q": "Werkt AppMeta Pulse met meerdere apps?"
+    },
+    {
+     "a": "Nee. AppMeta Pulse stuurt geen meldingen. Wil je verkopen zien zonder de app te openen, voeg dan een widget toe: de widgets voor het beginscherm en het toegangsscherm verversen overdag ongeveer elk uur en na elke synchronisatie.",
+     "q": "Stuurt AppMeta Pulse meldingen als er een verkoop binnenkomt?"
+    },
+    {
+     "a": "Op de Mac wel, op de iPad niet. De native Mac-app vereist macOS 14 of nieuwer, zit bij dezelfde aankoop en voegt een paneel in de menubalk toe met opbrengst of verkoop, downloads, nieuwe abonnementen en MRR. De iPhone-app vereist iOS 17 of nieuwer. Met iCloud-synchronisatie aan kan een andere iPhone of je Mac, met dezelfde Apple Account, je cijfers tonen zonder dat de API-sleutel erop staat.",
+     "q": "Werkt AppMeta Pulse op de iPad of Mac?"
+    },
+    {
+     "a": "Ja, op de Mac. AppMeta Pulse voor Mac bevat een MCP-server: zet Instellingen > ‘AI-assistenten’ aan en voeg de helper toe aan Claude Desktop, Claude Code, Cursor, VS Code of een andere AI-app die MCP ondersteunt. De assistent leest een kopie van Apples rapporten op je Mac, kan niets wijzigen en krijgt nooit je API-sleutel. Wat hij leest, gaat naar die AI-app en de aanbieder ervan, onder hun voorwaarden. <a href=\"/journal/app-store-connect-mcp-server/\" hreflang=\"en\">Zo werkt de MCP-server van AppMeta Pulse</a> (in het Engels).",
+     "q": "Kan ik Claude of een andere AI-app vragen stellen over mijn App Store-verkopen?"
+    },
+    {
+     "a": "Engels plus 13 andere talen: Duits, Frans (Frankrijk en Canada), Spaans (Spanje en Mexico), Italiaans, Nederlands, Zweeds, Portugees (Brazilië en Portugal), Russisch, Oekraïens, Turks, Japans, Koreaans en Chinees (vereenvoudigd en traditioneel). De widgets en Siri-zinnen zijn ook vertaald. Conceptreacties van Apple Intelligence zijn in het Engels.",
+     "q": "In welke talen is AppMeta Pulse beschikbaar?"
+    },
+    {
+     "a": "Voor onafhankelijke ontwikkelaars en kleine studio’s die apps of abonnementen in de App Store verkopen en hun cijfers, hun geschiedenis en hun recensies op de iPhone willen. Je hebt een App Store Connect API-sleutel met de rol Beheerder nodig. De app loont het meest als je meerdere apps verkoopt en ze op één scherm wilt zien.",
+     "q": "Voor wie is AppMeta Pulse bedoeld?"
+    },
+    {
+     "a": "Nee. AppMeta Pulse heeft geen eigen server, geen analytics- of crashrapportage-SDK’s en geen advertentie-ID. Verzoeken aan App Store Connect gaan van je iPhone naar Apple, app-iconen komen uit Apples zoekservice en wisselkoersen van de Europese Centrale Bank. Conceptreacties, sentiment en vertaling worden op het apparaat verwerkt. Met iCloud-synchronisatie aan worden je gegevens ook bewaard in je eigen privé-iCloud-database, waar wij geen toegang toe hebben.",
+     "q": "Verzamelt AppMeta Pulse gegevens?"
+    }
+   ],
+   "seo": {
+    "description": "App Store Connect analytics op iPhone en Mac: opbrengst, MRR en recensies van al je apps, met verkoopgeschiedenis die langer blijft dan Apples ene jaar."
+   },
+   "tagline": "Je App Store-verkopen, abonnementen en recensies op je iPhone, en je geschiedenis blijft bewaard.",
+   "url": "/nl/apps/appmeta-pulse/"
+  },
+  "chessful": {
+   "faq": [
+    {
+     "a": "Chessful is een schaakapp om te trainen en je partijen te analyseren, voor iPhone, iPad en Mac. Stockfish controleert elke zet van je partijen op het apparaat, elke fout krijgt uitleg in gewone taal op jouw niveau, en je fouten worden de puzzels van je dagelijkse training. De app bevat ook 156 lessen, 15.000 puzzels in 53 thema’s, 96 eindspelen om uit te spelen, een openingsrepertoire dat is opgebouwd uit je partijen en 40 tegenstanders van 400 tot 2400 Elo.",
+     "q": "Wat is Chessful?"
+    },
+    {
+     "a": "Ja, als PGN-bestand. Exporteer je partijen van Chess.com of Lichess en open het bestand in Chessful via Bestanden, iCloud Drive of AirDrop, of plak de PGN-tekst. Eén import verwerkt tot 2.000 partijen, markeert dubbele partijen en laat je kiezen welke kleur je speelde. Chessful maakt geen verbinding met een van beide sites en haalt geen partijen op via een gebruikersnaam. Importeren is onbeperkt; het analyseren van geïmporteerde partijen telt mee voor de 2 gratis analyses per dag.",
+     "q": "Kan ik mijn partijen van Chess.com of Lichess importeren?"
+    },
+    {
+     "a": "Ja. Het tabblad Leren bevat 156 gratis lessen in zeven onderdelen, die beginnen bij het bord zelf en de zetten van de stukken en daarna overgaan op matpatronen, tactiek, openingen, eindspelen, denken en strategie. Stel je coachingniveau in op ‘Ik ben net de regels aan het leren’ en de uitleg bij fouten wordt voor dat niveau geschreven. Spelers die de regels al kennen, kunnen direct gaan spelen en partijen analyseren.",
+     "q": "Is Chessful een goede schaakapp voor beginners?"
+    },
+    {
+     "a": "Ja, van twee soorten. De tactiekbibliotheek heeft 15.000 puzzels in 53 thema’s, van vorken en penningen tot matpatronen met een naam, afkomstig uit de open puzzeldatabase van Lichess en met een engine gecontroleerd. ‘Training van vandaag’ voegt puzzels toe die zijn opgebouwd uit de fouten in je eigen partijen. Met de gratis versie krijg je 3 puzzels per dag, over beide soorten samen; het herhalen van eerdere fouten telt daar niet in mee. Met Pro is het onbeperkt.",
+     "q": "Heeft Chessful schaakpuzzels?"
+    },
+    {
+     "a": "Chess.com en Lichess zijn online platforms die draaien om spelen tegen andere mensen. Chessful is een trainingsapp: je speelt tegen de 40 tegenstanders in de app of importeert je partijen van een van beide sites als PGN, Stockfish analyseert ze op je apparaat, elke fout wordt in woorden uitgelegd en je training is opgebouwd uit die fouten. Er is geen account. Chessful heeft geen online spel, dus je kunt je account op Chess.com of Lichess houden om tegen mensen te spelen en Chessful gebruiken om die partijen terug te kijken.",
+     "q": "Wat is het verschil tussen Chessful en Chess.com of Lichess?"
+    },
+    {
+     "a": "Magnus Trainer leert je schaken met cursussen en partijen rond Magnus Carlsen. Chessful heeft geen content rond beroemde schakers. De app analyseert je eigen partijen, legt elke fout uit en bouwt je training daaruit op, naast 156 lessen, 15.000 puzzels en 96 eindspelen.",
+     "q": "Wat is het verschil tussen Chessful en Magnus Trainer?"
+    },
+    {
+     "a": "Beide analyseren partijen met Stockfish op het apparaat en leggen fouten uit in zinnen. Chessful voegt de training rond de analyse toe: dagelijkse sessies uit je fouten, gespreide herhaling van gemiste fouten, 156 lessen, 15.000 puzzels, 96 eindspelen en 40 tegenstanders om tegen te spelen, met één universele aankoop voor iPhone, iPad en Mac.",
+     "q": "Wat is het verschil tussen Chessful en Chessis?"
+    },
+    {
+     "a": "Ja, voor alles wat met schaken te maken heeft. Spelen, de analyse van Stockfish, de lessen, de puzzelbibliotheek, de eindspelen en de openingen draaien op ingebouwde content en een ingebouwde engine. Voor het kopen of herstellen van Pro, het laden van prijzen en Game Center heb je een verbinding nodig.",
+     "q": "Werkt Chessful offline?"
+    },
+    {
+     "a": "Stockfish, met NNUE, ingebouwd in de app. Hij draait op je iPhone, iPad of Mac. De partijanalyse evalueert elke zet van je partij, en de eindspeltrainer gebruikt Stockfish op volle sterkte als tegenstander. Chessful legt daarna elke fout in gewone taal uit.",
+     "q": "Welke schaakengine gebruikt Chessful?"
+    },
+    {
+     "a": "Chessful is gratis te downloaden, met dagelijkse limieten: 2 partijanalyses, 3 puzzels en 2 coachhints per dag, de eerste 10 tegenstanders en het eerste eindspel in elke categorie. Alle 156 lessen, alle uitleg bij fouten, PGN-import en voortgangsregistratie zijn gratis. Pro haalt de dagelijkse limieten weg en ontgrendelt alle 40 tegenstanders, alle 96 eindspelen, het volledige openingsrepertoire met oefeningen op varianten en ‘Wekelijkse vergelijking’ en ‘Zwaktetrends’. Het kost {P_MONTHLY}/maand of {P_YEARLY}/jaar, allebei met een {TRIAL}, of {P_LIFETIME} eenmalig voor levenslange toegang. Delen met gezin is inbegrepen. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Is Chessful gratis? Wat kost Chessful Pro?"
+    },
+    {
+     "a": "Ja. Voortgang toont een geschatte rating, een ratinggrafiek, partijstatistieken, vijf vaardigheidsbalken (tactiek, verdediging, positionering, eindspel en openingen), een activiteitenoverzicht en 59 prestaties, allemaal gratis. Pro voegt ‘Wekelijkse vergelijking’ en ‘Zwaktetrends’ toe. De rating is een schatting van Chessful en staat los van FIDE-, Chess.com- of Lichess-ratings.",
+     "q": "Houdt Chessful bij hoe ik verbeter?"
+    },
+    {
+     "a": "Nee. Er is geen aanmelding en geen Chessful-account. Je partijen, analyses en trainingsgeschiedenis worden op je apparaat bewaard. Game Center is optioneel en aankopen lopen via je Apple Account.",
+     "q": "Heb ik een account nodig voor Chessful?"
+    },
+    {
+     "a": "Nee. Elk apparaat bewaart zijn eigen partijen en voortgang, en Chessful heeft geen iCloud-synchronisatie. Je Pro-aankoop gaat wel met je mee: de universele aankoop dekt iPhone, iPad en Mac, en met ‘Aankopen herstellen’ krijg je Pro terug op elk apparaat met hetzelfde Apple Account.",
+     "q": "Synchroniseren mijn partijen tussen iPhone, iPad en Mac?"
+    },
+    {
+     "a": "Niet om tegen mensen te spelen. Chessful heeft geen online spel, geen matchmaking en geen klokken; elke partij is tegen de tegenstanders in de app. De app is bedoeld om terug te kijken en te trainen: importeer je partijen van Chess.com of Lichess als PGN, lees bij elke fout de uitleg en oefen op die stellingen.",
+     "q": "Is Chessful een vervanger voor Chess.com of Lichess?"
+    },
+    {
+     "a": "Nee. Chessful draait op iPhone, iPad en Mac (alleen Macs met Apple-chip, geen Intel-Macs), met één universele aankoop voor alle drie.",
+     "q": "Werkt Chessful op de Apple Watch of Apple Vision Pro?"
+    },
+    {
+     "a": "Ja, gratis. Instellingen > ‘Bordstijl’ biedt zeven borden, van Walnoot & esdoorn en Marmer tot Clubvinyl en Parksteen, en je keuze geldt voor het 2D- en het 3D-bord. Instellingen > ‘Stukstijl’ biedt vier sets voor het 2D-bord: Staunton, Plat, Modern hout en Gedraaid hout. Met het 3D-bord aan biedt Instellingen > ‘3D-stukstijl’ er zeven: Staunton, Marmer & onyx, Clubtoernooi, Geometrisch modern, Glas, Messing & tin en Speelgoed. Het wisselen tussen het 2D- en het 3D-bord doe je ook in Instellingen.",
+     "q": "Kan ik het bord en de stukken in Chessful aanpassen?"
+    },
+    {
+     "a": "Ja. Chessful is vertaald in het Nederlands, lessen inbegrepen. De app bestaat in totaal in 32 talen (38 met regionale varianten, zoals Brits Engels, Mexicaans Spaans en Braziliaans Portugees). Kies de taal van Chessful in Instellingen van iOS, of in Systeeminstellingen op een Mac.",
+     "q": "Is Chessful beschikbaar in het Nederlands?"
+    }
+   ],
+   "seo": {
+    "description": "Schaakapp die elke fout in je partijen uitlegt en je daarna op die fouten traint. Stockfish op je apparaat, 156 lessen, 15.000 puzzels. iPhone, iPad, Mac."
+   },
+   "tagline": "Schaken met uitleg bij je fouten, en training op precies die fouten.",
+   "url": "/nl/apps/chessful/"
+  },
+  "clippet": {
+   "faq": [
+    {
+     "a": "Clippet is een klembordmanager voor iPhone, iPad en Mac. De app houdt een geschiedenis bij van wat je kopieert (tekst, links, afbeeldingen, video’s, pdf’s, audio, bestanden en code) met een voorvertoning van elk knipsel, laat je knipsels zoeken, vastzetten, taggen en een naam geven, en vindt telefoonnummers, adressen, datums en codes erin. Knipsels synchroniseren via je eigen iCloud en je hebt geen account nodig.",
+     "q": "Wat is Clippet?"
+    },
+    {
+     "a": "Nee. iOS laat geen enkele app het klembord op de achtergrond lezen, dus op iPhone en iPad bewaart Clippet je nieuwste kopie telkens als je de app opent. Zet ‘Plakken vanuit andere apps’ voor Clippet op ‘Sta toe’, dan bewaart Clippet zonder het eerst te vragen. Je kunt ook een kopie bewaren zonder de bibliotheek te openen: tik op ‘Plak laatste kopie’ in de widget Laatste knipsel, tik op ‘Bewaar’ in het Clippet-toetsenbord of stuur alles via het deelmenu naar Clippet. Op de Mac bewaart Clippet elke kopie op de achtergrond zolang de app draait.",
+     "q": "Bewaart Clippet mijn klembord op de achtergrond op iPhone?"
+    },
+    {
+     "a": "Ja, en gratis. iCloud-synchronisatie houdt je knipsels, borden, tags en namen gelijk op iPhone, iPad en Mac via je eigen privé-iCloud-database. Lagerland Apps heeft geen server en kan je knipsels niet lezen. Synchronisatie aan- of uitzetten gaat in zodra de app opnieuw start.",
+     "q": "Synchroniseert Clippet tussen iPhone en Mac?"
+    },
+    {
+     "a": "Kies een van je tien nieuwste knipsels in de menubalk van Clippet om het te kopiëren en druk dan op ⌘V. Met Clippet Pro druk je in elke app op ⌥⌘V om Snel plakken te openen: zoek of kies een van je 30 nieuwste knipsels en druk op ⏎ om te plakken, of op ⌘⏎ om als platte tekst te plakken. Rechtstreeks in de app plakken vraagt om toestemming voor Toegankelijkheid in macOS; zonder die toestemming kopieert Clippet het knipsel en druk jij op ⌘V. De sneltoets kun je wijzigen in Instellingen.",
+     "q": "Hoe plak ik uit mijn klembordgeschiedenis op de Mac?"
+    },
+    {
+     "a": "Open het knipsel in Clippet, tik op ‘Kopieer’ en plak het zoals gewoonlijk. Met Clippet Pro kun je die omweg overslaan: schakel in elke app over naar het Clippet-toetsenbord en tik op een tekst-, link- of codeknipsel om het te typen waar je bezig bent. Een afbeelding of bestand wordt gekopieerd, tot 8 MB, zodat jij het kunt plakken. Het toetsenbord heeft ‘Sta volledige toegang toe’ nodig om je knipsels te tonen.",
+     "q": "Hoe plak ik een bewaard knipsel op iPhone?"
+    },
+    {
+     "a": "Ja. Clippet is gratis te downloaden, en de gratis versie bewaart alle acht soorten knipsels, synchroniseert via iCloud en bevat zoeken, vastzetten, tags, Slimme acties, Appvergrendeling, widgets en de menubalk van de Mac. De gratis bibliotheek toont je vastgezette knipsels en de laatste 30 dagen. Clippet Pro voegt je hele geschiedenis, borden, Snel plakken op de Mac, je knipsels in het Clippet-toetsenbord en eigen acties toe voor {P_MONTHLY}/maand, {P_YEARLY}/jaar of {P_LIFETIME} eenmalig. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Is Clippet gratis?"
+    },
+    {
+     "a": "Ze blijven bewaard, op je apparaat, in iCloud en in je back-ups, en komen terug in beeld met Clippet Pro. Zonder Pro zijn ze verborgen in de bibliotheek, het zoeken en de widgets. Vastgezette knipsels zie je altijd, hoe oud ook, en vastzetten is gratis en onbeperkt. Er wordt niets verwijderd doordat Pro stopt; ‘Geschiedenis bewaren’ verwijdert alleen wat jij opgeeft.",
+     "q": "Wat gebeurt er met knipsels ouder dan 30 dagen zonder Clippet Pro?"
+    },
+    {
+     "a": "Niet als de wachtwoordmanager de kopie als privé markeert, en zo geven wachtwoordmanagers de wachtwoorden aan die ze kopiëren. Clippet slaat die kopieën over voordat de app ze leest; een kopie zonder markering wordt bewaard zoals elke andere. Clippet herkent ook een gekopieerd kaartnummer en biedt aan dat knipsel na 30 minuten te verwijderen, of op een ander moment dat je instelt. Clippet is geen wachtwoordmanager of versleutelde kluis, dus bewaar wachtwoorden waar ze thuishoren.",
+     "q": "Bewaart Clippet wachtwoorden die ik kopieer?"
+    },
+    {
+     "a": "Clippet vraagt geen account en bevat geen advertenties, analyse of code van derden, en Lagerland Apps beheert geen server voor de app. Je knipsels blijven op je apparaten en in je eigen privé-iCloud. Eén ding gaat wel naar buiten: als je een link bewaart, vraagt Clippet die website om de titel en afbeelding, zoals een browser dat doet. Zet ‘Haal linkvoorbeelden op’ uit in Instellingen en dat gebeurt nooit.",
+     "q": "Is Clippet privé?"
+    },
+    {
+     "a": "Ja, en gratis. Appvergrendeling zet Clippet achter Face ID, Touch ID, Optic ID of de toegangscode van je apparaat (je inlogwachtwoord op een Mac), en vergrendelt direct, na 1 minuut of na 5 minuten. Op de Mac vergrendelt Clippet ook als de Mac in de sluimerstand gaat of het scherm vergrendelt. Kopieën worden ook bewaard terwijl de app vergrendeld is, en de widgets tonen geen knipsels.",
+     "q": "Kan ik Clippet vergrendelen?"
+    },
+    {
+     "a": "Nee. Clippet is gratis op iPhone, iPad en Mac, en één aankoop van Clippet Pro ontgrendelt Pro op alle drie met dezelfde Apple Account. Maandelijks, Jaarlijks en Levenslang werken allemaal met Delen met gezin.",
+     "q": "Is de Mac-versie een aparte aankoop?"
+    },
+    {
+     "a": "Ja. ‘Maak back-up’ bewaart je knipsels, borden en tags in een bestand op een plek naar keuze, iCloud Drive inbegrepen, en ‘Herstel vanuit back-up’ voegt het samen met je bibliotheek of vervangt je bibliotheek ermee. Het bestand is niet versleuteld, dus knipsels met een kaartnummer blijven erbuiten.",
+     "q": "Kan ik een back-up van mijn knipsels maken?"
+    },
+    {
+     "a": "iOS 26 of nieuwer op iPhone, iPadOS 26 of nieuwer op iPad en macOS 26 of nieuwer op de Mac. Clippet werkt offline; iCloud-synchronisatie loopt bij als je weer online bent.",
+     "q": "Wat heb ik nodig om Clippet te gebruiken?"
+    },
+    {
+     "a": "Ja. De interface van Clippet is vertaald in 40 talen, waaronder Nederlands, Duits, Frans, Spaans, Japans, Chinees, Arabisch en Hebreeuws.",
+     "q": "Is Clippet beschikbaar in het Nederlands?"
+    }
+   ],
+   "seo": {
+    "description": "Klembordgeschiedenis voor iPhone, iPad en Mac: bewaar tekst, links, afbeeldingen en code, synchroniseer via je iCloud en plak met ⌥⌘V. Geen account."
+   },
+   "tagline": "Een klembordgeschiedenis voor iPhone, iPad en Mac die elke kopie bewaart en je helpt hem terug te vinden.",
+   "url": "/nl/apps/clippet/"
+  },
+  "earnlock": {
+   "faq": [
+    {
+     "a": "EarnLock is een app voor de iPhone die afleidende apps vergrendeld houdt tot je een dagelijks activiteitsdoel haalt, gemeten door de Gezondheid-app. Op de helft van het doel gaat een deel ervan ongeveer een uur open, één keer per dag, en met het hele doel gaan ze allemaal open tot middernacht. Eén app of categorie vergrendelen met een stappendoel is voor altijd gratis. Premium voegt onbeperkt apps, actieve minuten en actieve calorieën, de Apple Watch-app, een live activiteit, slimme schema’s en inzichten voor week en maand toe, voor {P_MONTHLY}/maand of {P_YEARLY}/jaar (elk met een {TRIAL} om te beginnen) of {P_LIFETIME} eenmalig. Je hebt geen account nodig en je gegevens blijven op je iPhone.",
+     "q": "Wat is EarnLock?"
+    },
+    {
+     "a": "Die apps zetten een pauze, een timer of een tik tussen jou en de app. EarnLock zet er een dagelijks activiteitsdoel neer, gemeten door de Gezondheid-app: op de helft gaat een deel van je apps ongeveer een uur open, één keer per dag, en met het hele doel gaan ze allemaal open tot middernacht. EarnLock begint ook met een schaduwweek die niets blokkeert en telt hoe vaak je geblokkeerd zou zijn, zodat je eerste echte slot bij je gewoonte past. Je hebt geen account nodig, één app vergrendelen is voor altijd gratis en Premium is er maandelijks, jaarlijks of als eenmalige aankoop van {P_LIFETIME}.",
+     "q": "Wat is het verschil tussen EarnLock en Opal, one sec, ScreenZen of Forest?"
+    },
+    {
+     "a": "Elke app of hele categorie die je kunt kiezen in de Schermtijd-kiezer van Apple. De gratis versie vergrendelt één app of één categorie en Premium heeft geen limiet. De kiezer geeft EarnLock ondoorzichtige tokens, dus de app ziet nooit de namen van wat je koos.",
+     "q": "Welke apps kan EarnLock blokkeren op de iPhone?"
+    },
+    {
+     "a": "Je kiest een eenheid en een dagelijks doel: stappen in de gratis versie, of actieve minuten of actieve calorieën met Premium. De standaardniveaus zijn Licht, Standaard en Uitdaging (4000, 8000 of 12.000 stappen), of je stelt een eigen getal in of kiest Adaptief. EarnLock leest je voortgang uit de Gezondheid-app op je iPhone. Op 50% gaat een deel van de apps die je één voor één hebt gekozen open voor een venster dat bij je voortgang past, ongeveer een uur op de helft, één keer per dag; hele categorieën wachten tot 100%. Bij 100% blijft alles open tot middernacht. Onder 50% blijft alles vergrendeld, en om middernacht begint de dag opnieuw.",
+     "q": "Hoe werkt het dagelijkse doel?"
+    },
+    {
+     "a": "Ja, met Premium. De Watch-app leest zijn eigen gegevens uit Gezondheid en toont je ring, je telling en hoe ver je nog van ontgrendelen bent, plus een knop Reflecteer. Complicaties zijn er in de stijlen rond, hoek, inline en rechthoekig. Zonder Premium toont de Watch-app een vergrendelde staat. De iPhone blijft het apparaat dat je apps vergrendelt en ontgrendelt, en geeft je Premium-status door aan het horloge.",
+     "q": "Werkt EarnLock op de Apple Watch?"
+    },
+    {
+     "a": "Gebruik de noodontgrendeling in Instellingen. Los een rekensom met getallen van twee cijfers op, kies 15, 30 of 60 minuten en je apps gaan open. Je krijgt er één per dag. De som is genoeg weerstand om een reflex te stoppen en snel genoeg voor een echte behoefte.",
+     "q": "Wat als ik een geblokkeerde app echt nodig heb voor iets dringends?"
+    },
+    {
+     "a": "Elke dag waarop je je hele doel haalt, telt mee voor je reeks. Je kunt een wekelijkse rustdag kiezen: haal je je doel op die dag niet, dan blijft je reeks staan. Met Premium levert elke zevende dag waarop je 150% van je doel haalt, in totaal geteld en niet op rij, een reeks-schild op. Je kunt er drie bewaren, en een schild dekt een gemiste dag automatisch. Een herinnering dat je reeks gevaar loopt is een van de meldingen die je kunt uitzetten, en stille uren houden herinneringen uit de nacht.",
+     "q": "Hoe werken reeksen en rustdagen?"
+    },
+    {
+     "a": "Eén app of één categorie vergrendelen met een stappendoel is voor altijd gratis. De gratis versie bevat gedeeltelijke en volledige ontgrendeling, het scherm dat op elke vergrendelde app laat zien wat er nog nodig is, de schaduwweek, alle widgets, reeksen met een wekelijkse rustdag, de dagweergave van Inzichten, Reflecteer met één tik en de noodontgrendeling. Premium voegt onbeperkt apps toe, actieve minuten en actieve calorieën, de Apple Watch-app en complicaties, de live activiteit, slimme schema’s, inzichten voor week en maand met het reflectielogboek, reeks-schilden, één keer per week de wachttijd van 24 uur overslaan als je je doel verlaagt, en drie alternatieve app-iconen. Premium kost {P_MONTHLY}/maand of {P_YEARLY}/jaar, elk met een {TRIAL} om te beginnen, of {P_LIFETIME} eenmalig, en alle drie werken met Delen met gezin.",
+     "q": "Is EarnLock gratis? Wat ontgrendelt Premium?"
+    },
+    {
+     "a": "Nee. EarnLock heeft geen account, maakt zelf geen netwerkverbindingen en bevat geen SDK’s voor analyse of advertenties of andere SDK’s van derden. EarnLock leest de Gezondheid-app op je iPhone, schrijft er nooit iets in en stuurt de gegevens nergens heen. Je doelen, reeksen, reflecties en schema’s worden op het apparaat opgeslagen. De Schermtijd-kiezer geeft EarnLock ondoorzichtige tokens, dus de app kan niet zien welke apps je koos. In het privacybeleid lees je de details.",
+     "q": "Verzamelt EarnLock gegevens?"
+    },
+    {
+     "a": "Ja. In Instellingen > ‘Gegevens en privacy’ maakt ‘Mijn gegevens exporteren’ één bestand met je doel, je reeks en dagelijkse registraties, je reflectielogboek, schema’s en meldingsinstellingen; de gegevens uit de Gezondheid-app blijven in Gezondheid. ‘Alle gegevens verwijderen’ vraagt je DELETE te typen, wist daarna wat EarnLock opslaat en haalt de vergrendelingen weg.",
+     "q": "Kan ik mijn EarnLock-gegevens exporteren of verwijderen?"
+    },
+    {
+     "a": "Nee. EarnLock is gemaakt om je eigen iPhone te beperken. Er is geen kant voor ouders: niets om op afstand te beheren en geen code die iemand anders kan bewaren. Gebruik voor het apparaat van een kind Schermtijd met Delen met gezin in de Instellingen van iOS.",
+     "q": "Kan ik EarnLock als ouderlijk toezicht gebruiken?"
+    },
+    {
+     "a": "Op de iPhone met iOS 17 of nieuwer, in staande stand. De Apple Watch-app van Premium vereist watchOS 10 of nieuwer. Het bedieningselement voor het bedieningspaneel vereist iOS 18 en paginavullende widgets vereisen iOS 27. EarnLock heeft toegang tot de Gezondheid-app en Schermtijd nodig om te werken. Er is geen versie voor de iPad, de Mac of Android.",
+     "q": "Op welke apparaten werkt EarnLock?"
+    },
+    {
+     "a": "Ja. Maandelijks, Jaarlijks en Levenslang werken alle drie met Delen met gezin, dus de leden van je Apple-gezinsgroep kunnen Premium ook gebruiken. Ieders doelen, vergrendelde apps en reeksen blijven op de eigen iPhone.",
+     "q": "Werkt EarnLock met Delen met gezin?"
+    },
+    {
+     "a": "Ja. Levenslang is één betaling van {P_LIFETIME} zonder verlenging, en je herstelt het met je Apple Account als je naar een nieuwe iPhone overstapt. De App Store toont de prijs voordat je bevestigt.",
+     "q": "Is Levenslang echt een eenmalige betaling?"
+    },
+    {
+     "a": "Het is een schatting, en dat staat ook op de kaart. iOS laat apps je echte schermtijd per app niet lezen, dus EarnLock telt wat de app wel kan zien: elke keer dat een vergrendelde app je tegenhoudt. EarnLock vermenigvuldigt die pogingen met 9 minuten.",
+     "q": "Hoe nauwkeurig is de schatting van bespaarde schermtijd?"
+    }
+   ],
+   "seo": {
+    "description": "Apps blokkeren op je iPhone tot je stappendoel is gehaald, van Instagram tot TikTok. Gratis voor één app, zonder account. Je gegevens blijven op je iPhone."
+   },
+   "tagline": "Vergrendel afleidende apps tot je ze verdient met stappen.",
+   "url": "/nl/apps/earnlock/"
+  },
+  "gymlogger-x": {
+   "faq": [
+    {
+     "a": "GymLogger X is een gym-app voor krachttraining op de iPhone, met een Apple Watch-app. Je logt sets met de cijfers van vorige keer al in de regel, volgt een van de 44 kant-en-klare programma’s of een programma uit de Smart Program Creator en krijgt met Pro signalen voor plateaus, vermoeidheid en spierbalans uit je eigen logs. De app heeft 1500 oefeningen (geanimeerde demo’s met Pro) en is beschikbaar in 40 talen. De kern is gratis; Pro kost {P_MONTHLY}/maand of {P_YEARLY}/jaar, elk met een {TRIAL}, of {P_LIFETIME} eenmalig.",
+     "q": "Wat is GymLogger X?"
+    },
+    {
+     "a": "GymLogger X heeft geen account nodig; toen we op 13 mei 2026 controleerden, moest je bij Strong, Hevy en Fitbod allemaal een account aanmaken. De Apple Watch-app is gratis en heeft een rusttimer die kan melden wanneer je hartslag is hersteld. Pro is er als abonnement of als eenmalige levenslange aankoop. En de coaching werkt met vaste regels en wordt op je iPhone berekend uit je eigen logs, zonder chatbot. De vergelijkingen gaan dieper in op de details: <a href=\"/alternatives/strong-workout-app/\" hreflang=\"en\">Strong (in het Engels)</a> en <a href=\"/alternatives/fitbod/\" hreflang=\"en\">Fitbod (in het Engels)</a>.",
+     "q": "Wat is het verschil tussen GymLogger X en Strong, Hevy en Fitbod?"
+    },
+    {
+     "a": "Het is een wizard die een programma bouwt op basis van je materiaal, doelen, blessures, planning en voorkeuren. Je kiest een split (fullbody, upper/lower, push/pull/legs, push/pull, Arnold-split of bro-split), het aantal dagen per week, de duur van een sessie, een looptijd van 4, 8 of 12 weken of doorlopend, en lineaire, ondulerende, blok- of golfperiodisering. Blessures voer je in per lichaamsdeel, met bewegingen die je moet vermijden. In het voorbeeld zie je deloadweken, een preventieve warming-up en aanpassingen voor blessures, en voor je begint kun je een oefening omwisselen of opnieuw genereren. Gebruiken is gratis; zonder Pro volg je één programma tegelijk.",
+     "q": "Wat is de Smart Program Creator?"
+    },
+    {
+     "a": "Niet tijdens het loggen. Een gelogde set bevat gewicht en herhalingen, plus of het een warming-up was; er is geen RPE- of RIR-veld per set, en de analyses, plateaustatus inbegrepen, werken met gewicht en herhalingen. <a href=\"/journal/rpe-and-rir-explained/\" hreflang=\"en\">RPE and RIR, explained (in het Engels)</a> legt uit wat dat betekent als je elke set beoordeelt.",
+     "q": "Kan ik in GymLogger X RPE en RIR loggen?"
+    },
+    {
+     "a": "Nee. GymLogger X berekent geen Wilks-, DOTS- of Sinclair-scores. De app schat het 1RM van elke oefening met de formule van Epley, houdt een tabel met herhalingsmaxima en je persoonlijke records bij en heeft een schijvencalculator om de stang te beladen.",
+     "q": "Berekent GymLogger X Wilks, DOTS of Sinclair?"
+    },
+    {
+     "a": "Nee. De Apple Watch-app is een aanvulling: je start de training op je iPhone en sets die je op de Apple Watch logt, lopen via de telefoon. Op je pols log je gewicht en herhalingen, zie je hartslag, tijd en calorieën en gebruik je de rusttimer. Voor hartslag en calorieën moet je op de Apple Watch toegang tot Gezondheid geven.",
+     "q": "Werkt GymLogger X op de Apple Watch zonder iPhone?"
+    },
+    {
+     "a": "Ja. De Apple Watch-app van GymLogger X is gratis, en trainingen loggen is gratis voor altijd. Op je pols log je sets met gewicht en herhalingen, zie je live hartslag en calorieën en gebruik je de hartslag-rusttimer. De training zelf start op je iPhone.",
+     "q": "Is er een gratis gym-app voor Apple Watch?"
+    },
+    {
+     "a": "GymLogger X schat je 1RM voor elke oefening met de formule van Epley, uit sets van 3 herhalingen of meer, en volgt de trend over je sessies. Met Pro geeft ‘Krachtvoortgang’ elke oefening een status (‘Plateau’, ‘Wordt bewaakt’ of ‘Plateau voorspeld’) en een overbelastingsscore, en de kaart ‘Volgende stap’ maakt daar een suggestie van, zoals een rustdag of een andere aanpak. Alles draait op je iPhone met vaste regels. De app past je programma niet aan en stuurt geen meldingen; jij beslist wat je doet.",
+     "q": "Hoe werkt de plateaudetectie?"
+    },
+    {
+     "a": "Loggen is gratis voor altijd: onbeperkt trainingen op iPhone en Apple Watch, de hartslag-rusttimer, 1500 oefeningen, één programma tegelijk (6 gratis programma’s, een eigen programma of een programma uit de Smart Program Creator), 3 sjablonen, de laatste 30 dagen aan geschiedenis, export naar de Gezondheid-app en iCloud-synchronisatie. Pro ontgrendelt alle 44 programma’s, onbeperkt programma’s en sjablonen, je volledige geschiedenis, inzichten, signalen voor herstel en plateaus, de spier-heatmap, geanimeerde demo’s, eigen oefeningen, CSV-import, alle widgets en 8 kleurthema’s. Pro kost {P_MONTHLY}/maand of {P_YEARLY}/jaar, elk met een {TRIAL}, of {P_LIFETIME} eenmalig, en werkt met Delen met gezin. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Is GymLogger X gratis? Wat ontgrendelt Pro?"
+    },
+    {
+     "a": "Als je een Pro-programma hebt gestart terwijl je abonnement liep, kun je het afmaken nadat het abonnement is gestopt. Voor al het andere gelden de beperkingen van de gratis versie: één actief programma, 3 sjablonen en de laatste 30 dagen aan geschiedenis. Oudere sessies blijven bewaard en worden weer ontgrendeld zodra je upgradet.",
+     "q": "Wat gebeurt er met mijn programma als mijn Pro-abonnement stopt?"
+    },
+    {
+     "a": "Nee. Er is geen account en geen registratie, en loggen werkt volledig offline, oefendemo’s inbegrepen. Trainingen worden op je iPhone bewaard en gesynchroniseerd via je eigen privé-iCloud als je bij iCloud bent ingelogd, en voltooide trainingen worden opgeslagen in de Gezondheid-app. De app heeft geen eigen server, dus je trainingen worden nooit naar ons gestuurd.",
+     "q": "Heeft GymLogger X een account of internetverbinding nodig?"
+    },
+    {
+     "a": "Er is geen bestandsexport. Elke voltooide training wordt als krachttraining opgeslagen in de Gezondheid-app, elke training kun je als tekst delen, en de samenvatting en het ‘Weekoverzicht’ deel je als afbeelding. Kom je van een andere app of een spreadsheet? Pro importeert trainingen uit CSV-, TSV- of TXT-bestanden, met een stap om kolommen te koppelen.",
+     "q": "Kan ik mijn gegevens exporteren als ik ermee stop?"
+    },
+    {
+     "a": "Maak hem aan met Pro. Een eigen oefening heeft een naam, materiaal en spiergroepen, en je logt hem net als elke ingebouwde oefening. Met Pro kun je ook de naam, het materiaal en de spieren van ingebouwde oefeningen aanpassen en ze terugzetten naar de standaard.",
+     "q": "Wat als mijn oefening niet in de bibliotheek van 1500 oefeningen staat?"
+    },
+    {
+     "a": "Ja. De app, de widgets en de Apple Watch-app zijn in het Nederlands.",
+     "q": "Is GymLogger X in het Nederlands?"
+    }
+   ],
+   "seo": {
+    "description": "Gym-app voor Apple Watch en iPhone: 1500 oefeningen, 44 programma’s en signalen voor plateaus en vermoeidheid uit je eigen logs. Gratis, zonder account."
+   },
+   "tagline": "Log sets snel, volg een bewezen programma en zie al vroeg wanneer een oefening stilstaat.",
+   "url": "/nl/apps/gymlogger-x/"
+  },
+  "liftlog": {
+   "faq": [
+    {
+     "a": "LiftLog is een iPhone-app om je krachttraining in de sportschool bij te houden. Je voert gewicht en herhalingen in op een vast toetsenblok, elke set is vooraf ingevuld met je vorige training en de rusttimer start zodra je een set afvinkt. De app bevat 1500 oefeningen met geanimeerde demo’s, 40 kant-en-klare programma’s die je volgende gewicht kunnen voorstellen, meldingen bij persoonlijke records, voortgangsgrafieken, 10 widgets en Siri-acties. De app is 7 dagen gratis zonder kaart, daarna betaal je eenmalig {P_IAP:Minimum} tot {P_IAP:Patron}.",
+     "q": "Wat is LiftLog?"
+    },
+    {
+     "a": "Er is geen abonnement. LiftLog is 7 dagen gratis, zonder dat je een kaart nodig hebt. Daarna koop je de app één keer op het niveau dat je kiest: {P_IAP:Minimum} (Eerlijk), {P_IAP:Suggested} (Goed), {P_IAP:Supporter} (Genereus) of {P_IAP:Patron} (Mecenas). Elk niveau ontgrendelt dezelfde app, niets wordt verlengd, toekomstige updates zijn inbegrepen en Delen met gezin staat aan, dus met één aankoop dek je je gezinsgroep.",
+     "q": "Wat kost LiftLog en is er een abonnement?"
+    },
+    {
+     "a": "Koop je niet, dan houd je leestoegang. Je geschiedenis, trainingsdetails, de grafieken onder Voortgang, de oefenbibliotheek, de schijvencalculator, widgets, Siri-antwoorden, het exporteren en importeren van gegevens en ‘Recent verwijderd’ blijven gratis, en een training die al bezig is kun je afmaken. Voor nieuwe trainingen starten, programma’s bewerken, eigen oefeningen maken, vastgelegde sets bewerken en je lichaamsgewicht vastleggen heb je de eenmalige aankoop nodig.",
+     "q": "Wat gebeurt er als de proefperiode van 7 dagen afloopt?"
+    },
+    {
+     "a": "Bij LiftLog betaal je wat je eerlijk vindt. Alle vier de niveaus ontgrendelen precies dezelfde app; de hogere bedragen helpen de ontwikkeling te financieren. <a href=\"/journal/liftlog-pay-what-you-can/\" hreflang=\"en\">Het blogartikel bij de lancering (in het Engels)</a> legt de gedachte erachter uit.",
+     "q": "Waarom zijn er vier prijzen voor dezelfde app?"
+    },
+    {
+     "a": "Het zijn allebei apps voor krachttraining van Lagerland Apps. LiftLog werkt alleen op de iPhone en koop je eenmalig na een proefperiode van 7 dagen, met 40 kant-en-klare programma’s, slimme gewichtsvoorstellen en 10 widgets. <a href=\"/nl/apps/gymlogger-x/\">GymLogger X</a> is een aparte app met een eigen Apple Watch-app. Kies GymLogger X als je sets vanaf je pols wilt loggen; op de pagina van die app staan de functies en prijzen.",
+     "q": "Wat is het verschil tussen LiftLog en GymLogger X?"
+    },
+    {
+     "a": "Nee. LiftLog werkt alleen op de iPhone en heeft geen Apple Watch-app. Als je het aanzet, kan de app voltooide trainingen opslaan in de Gezondheid-app, zodat ze meetellen voor je activiteitsringen.",
+     "q": "Werkt LiftLog met de Apple Watch?"
+    },
+    {
+     "a": "Onder ‘Sjablonen bekijken’ staan 40 programma’s, gebaseerd op bekende schema’s als StrongLifts 5×5, Starting Strength, Greyskull LP, Wendler 5/3/1, Texas Method, GZCLP, nSuns 531 LP, PHUL, PHAT en German Volume Training. Twintig richten zich op kracht, 17 op spiergroei en 3 zijn algemeen; 10 zijn voor beginners, 22 voor gemiddeld gevorderden en 8 voor gevorderden. Elk programma wordt geladen met sets, herhalingen en rust al ingesteld en je kunt ook je eigen programma maken. De namen van de programma’s zijn van hun eigenaren, die LiftLog niet onderschrijven.",
+     "q": "Welke programma’s zitten er in LiftLog?"
+    },
+    {
+     "a": "Ja. Geef een oefening in een programma een progressieschema (dubbele progressie, lineair, % van je trainingsmax of RPE / RIR) en LiftLog vult elke openstaande set in met het gewicht dat het programma voorschrijft. Na de training markeert een progressieoverzicht elke oefening als ‘Vooruitgang’, ‘Vasthouden’, ‘Gemist’ of ‘Deload’. Slimme gewichtsvoorstellen staan standaard aan en kun je in Instellingen uitzetten.",
+     "q": "Kan LiftLog het gewicht voor mijn volgende training voorstellen?"
+    },
+    {
+     "a": "Ja. Een PR-badge met de verbetering verschijnt op het moment dat een set je geschatte 1RM-geschiedenis verslaat. Op de pagina van elke oefening staan je persoonlijke records (geschat 1RM, beste set en beste volume) en herhalingsrecords, met grafieken voor geschat 1RM, volume en gemiddelde RPE. De 1RM-formule kies je in Instellingen: Adaptief (aanbevolen), Brzycki of Epley. Warming-upsets tellen nooit mee.",
+     "q": "Houdt LiftLog persoonlijke records en 1RM bij?"
+    },
+    {
+     "a": "Ja, als optie. Je voegt een RPE van 1 tot 10 toe door een set na de training te bewerken; op de rij van de set die je aan het doen bent staat geen RPE-veld. Elke oefening krijgt daarna een grafiek met de gemiddelde RPE en oefeningen met het progressieschema RPE / RIR gebruiken wat je invoert.",
+     "q": "Kan ik RPE bijhouden in LiftLog?"
+    },
+    {
+     "a": "Nee. LiftLog heeft geen account nodig en elke functie werkt offline, ook alle 1500 oefenanimaties. Internet heb je alleen nodig om te kopen, een aankoop te herstellen of een link te openen. Je trainingen blijven op je iPhone en Lagerland Apps ontvangt ze nooit.",
+     "q": "Heeft LiftLog een account of internetverbinding nodig?"
+    },
+    {
+     "a": "Er is geen synchronisatie met iCloud of tussen apparaten. Om je geschiedenis te verhuizen, exporteer je in Instellingen een JSON-back-up en importeer je die op de nieuwe iPhone. Een CSV-bestand kun je altijd exporteren.",
+     "q": "Synchroniseert LiftLog met iCloud? Hoe verhuis ik naar een nieuwe iPhone?"
+    },
+    {
+     "a": "Nee. LiftLog importeert alleen zijn eigen JSON-back-up. Je kunt je volledige geschiedenis wanneer je wilt uit LiftLog exporteren als JSON of CSV.",
+     "q": "Kan ik trainingen importeren uit Strong, Hevy of een andere app?"
+    },
+    {
+     "a": "Ja. Open de schijvencalculator via de werkbalk van de training of via Instellingen, voer een streefgewicht in en de app toont welke schijven aan elke kant van de stang horen en wat het totaal is. Hij meldt ook wanneer de stang alleen genoeg is of wanneer het gewicht niet precies te laden is. Na de proefperiode blijft hij beschikbaar.",
+     "q": "Is er een schijvencalculator?"
+    },
+    {
+     "a": "Ja. Zeg “Start mijn volgende workout met LiftLog”, of start een bewaarde training op naam. Tijdens een training kan Siri de set vastleggen waar je mee bezig bent en je rusttimer starten. Je kunt ook je trainingsreeks of het volume van deze week opvragen zonder de app te openen. Alle zes de acties staan ook in de app Opdrachten.",
+     "q": "Kan ik Siri gebruiken met LiftLog?"
+    },
+    {
+     "a": "Ja. De interface van de app is vertaald in veel talen, waaronder Nederlands, Duits, Frans, Spaans, Japans en Arabisch. Namen en uitleg van oefeningen zijn er in 23 talen en je kunt de taal van de oefeningen los kiezen van de taal van de app.",
+     "q": "Is LiftLog in het Nederlands?"
+    },
+    {
+     "a": "We werken deze pagina bij na elke release in de App Store; de datums staan onderaan de pagina. De vier eenmalige niveaus ({P_IAP:Minimum} / {P_IAP:Suggested} / {P_IAP:Supporter} / {P_IAP:Patron}) en de proefperiode van 7 dagen zonder kaart komen overeen met de App Store. Toont de App Store ooit andere prijzen, dan gelden die van de App Store.",
+     "q": "Hoe actueel is de informatie op deze pagina?"
+    }
+   ],
+   "seo": {
+    "description": "App voor krachttraining op de iPhone: 1500 geanimeerde oefeningen, 40 programma’s, rusttimer en recordmeldingen. 7 dagen gratis, daarna eenmalig betalen."
+   },
+   "tagline": "De trainingslog die je één keer koopt en houdt.",
+   "url": "/nl/apps/liftlog/"
+  },
+  "mediakit": {
+   "faq": [
+    {
+     "a": "MediaKit is een app voor iPhone en Mac met meer dan 150 tools om video, audio, afbeeldingen, pdf’s, archieven en e-books te comprimeren, te converteren en te bewerken. Je sleept een bestand erin, MediaKit stelt de tools voor die erbij passen en elke tool draait op je apparaat. Vijf tools zijn voor altijd gratis en Pro ontgrendelt de rest, met één aankoop voor iPhone en Mac.",
+     "q": "Wat is MediaKit?"
+    },
+    {
+     "a": "Nee. Elke tool draait op je iPhone of Mac en de app doet zelf geen netwerkverzoeken; alleen de App Store van Apple verwerkt aankopen. Er is geen account en de app heeft geen analyse-SDK. Transcriptie en automatische ondertitels gebruiken spraakherkenning op het apparaat.",
+     "q": "Uploadt MediaKit mijn bestanden?"
+    },
+    {
+     "a": "Sleep de video in MediaKit en kies ‘Comprimeer’. Stel een doelgrootte in en MediaKit rekent de bitrate uit; de doelgrootte wordt nooit overschreden en als die niet haalbaar is, stopt de app met een foutmelding. Het toolscherm toont de geschatte grootte voordat je de tool uitvoert en het resultaat toont de bespaarde ruimte. Video comprimeren is een van de vijf gratis tools. Met Pro kan ‘Passend maken’ een clip ook verbeteren, omzetten naar 9:16 en in één stap onder 25 MB brengen voor berichten op sociale media.",
+     "q": "Hoe kan ik een video comprimeren op mijn iPhone zodat hij onder een groottelimiet blijft?"
+    },
+    {
+     "a": "Sleep de pdf in MediaKit en kies in de categorie PDF de tool ‘Comprimeer’. Je kiest uit de voorinstellingen Scherm, E-book, Printer of Prepress, en alles gebeurt op je iPhone of Mac, dus de pdf wordt niet geüpload. PDF comprimeren is een van de vijf gratis tools, één bestand tegelijk.",
+     "q": "Hoe comprimeer of verklein ik een pdf met MediaKit?"
+    },
+    {
+     "a": "Sleep een foto in MediaKit en converteer hem naar JPG. Dat gebeurt helemaal op je iPhone of Mac, dus je foto’s worden niet geüpload en je hebt geen internet nodig. In je eerste 3 dagen kan dat zonder betaling, één bestand per keer; daarna, en voor meerdere bestanden tegelijk, heb je Pro nodig. Wil je foto’s alleen kleiner maken, dan zijn Afbeelding comprimeren en Afbeeldingsgrootte wijzigen twee van de vijf gratis tools.",
+     "q": "Hoe zet ik HEIC om naar JPG op mijn iPhone of Mac?"
+    },
+    {
+     "a": "Video: converteert naar MP4, MOV of M4V met H.264, HEVC of ProRes (ProRes wordt als .mov geschreven). MKV gaat direct open, omdat MediaKit het zelf uitpakt (DTS-, E-AC-3- en MP3-audio in een MKV wordt weggelaten, met een melding). Audio: leest onder meer MP3 en FLAC en schrijft M4A (AAC), WAV, AIFF, ALAC en CAF. Afbeeldingen: HEIC, JPG, PNG, TIFF, GIF, WebP (waar je systeem WebP kan schrijven), BMP en JPEG 2000, plus camera-RAW, AVIF, PSD en EXR als invoer. E-books: EPUB, FB2, MOBI en AZW3 (alleen lezen), pdf, TXT, HTML, CBZ en RTF. Archieven: ZIP, TAR, TAR.GZ, GZIP, XZ en BZIP2, plus RAR4 en RAR5 om uit te pakken. WebM, RAR maken, versleutelde RAR en door DRM beveiligde Kindle-boeken worden niet ondersteund.",
+     "q": "Welke bestandsformaten ondersteunt MediaKit?"
+    },
+    {
+     "a": "Ja, om mee te beginnen. In je eerste 3 dagen werkt elke tool, met één export per keer en zonder betaling. Daarna blijven vijf tools voor altijd gratis, één bestand tegelijk: Video comprimeren, Afbeelding comprimeren, Afbeeldingsgrootte wijzigen, Audio converteren en PDF comprimeren. Pro ontgrendelt alle andere tools, batchverwerking en onbeperkt exporteren voor {P_MONTHLY} per maand of {P_YEARLY} per jaar, elk met een {TRIAL}, of {P_LIFETIME} eenmalig, en alle drie werken met Delen met gezin. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Is MediaKit gratis?"
+    },
+    {
+     "a": "Ja. Elke tool draait op je apparaat, dus MediaKit werkt zonder internetverbinding. De enige uitzondering is het vertalen van ondertitels. Daarvoor gebruikt MediaKit de taalpakketten van Apple voor vertalen, en je iPhone of Mac downloadt die de eerste keer (iOS 18 of macOS 15 of later).",
+     "q": "Werkt MediaKit offline?"
+    },
+    {
+     "a": "Op iPhone met iOS 17 of later en op Mac met macOS 14.6 (Sonoma) of later. Eén aankoop geldt voor beide. Er is geen iPad-versie. Een paar extra’s zijn alleen voor de Mac: ‘Mapautomatisering’, het onderdeel in de menubalk, ‘Open met’ vanuit de Finder en ‘Try-It’-voorbeelden met ⌘T. De extensie voor het deelmenu, het tabblad ‘Bibliotheek’ en bewaren in Foto’s zijn er op de iPhone.",
+     "q": "Op welke apparaten werkt MediaKit?"
+    },
+    {
+     "a": "Ja. Met Pro bewaar je elke reeks tools als recept en voer je die uit op nieuwe bestanden. Op de Mac voert ‘Mapautomatisering’ een recept uit op elk bestand dat in een door jou gekozen map terechtkomt. Op iPhone en Mac dekken zes acties in de app Opdrachten Video comprimeren, Afbeelding converteren, Afbeelding comprimeren, Pdf’s samenvoegen, ZIP maken en Tekst uit afbeelding halen.",
+     "q": "Kan ik MediaKit automatiseren?"
+    },
+    {
+     "a": "Online converters uploaden je bestand naar een server, verwerken het daar en sturen het terug. MediaKit doet dezelfde klussen op je iPhone of Mac, dus een contract, een scan of een familievideo verlaat het apparaat nooit en je hoeft niet op een upload te wachten. MediaKit kan bovendien met zes soorten bestanden overweg, toont de geschatte grootte voordat je een tool uitvoert en laat je het resultaat vergelijken met het origineel.",
+     "q": "Wat is het verschil tussen MediaKit en online converters?"
+    }
+   ],
+   "seo": {
+    "description": "Video comprimeren of verkleinen op iPhone en Mac, zonder upload. MediaKit heeft meer dan 150 tools voor video, foto’s en pdf’s; vijf blijven gratis."
+   },
+   "tagline": "Meer dan 150 tools voor video, audio, afbeeldingen, pdf’s en meer, allemaal op je eigen apparaat.",
+   "url": "/nl/apps/mediakit/"
+  },
+  "millrace": {
+   "faq": [
+    {
+     "a": "Een logische tegelpuzzel met levels. Elk level geeft je een vast bord, een vaste rij aankomende tegels en een zettenlimiet. De tegels komen een voor een aan op het aankomstvakje, gelijke tegels voegen samen als je ze tegen elkaar schuift en je doel is om op het gemarkeerde vakje één exact getal te bouwen. Binnen een level is niets willekeurig en elk level heeft een bewezen kortste oplossing.",
+     "q": "Wat voor logische puzzel is Millrace?"
+    },
+    {
+     "a": "Een solver controleert het voordat het level in het spel komt. Elk level doorloopt een breedte-eerst zoekactie die de kortste oplossing vindt, en een level zonder bewezen oplossing komt er niet in. Een geautomatiseerde test controleert ook dat willekeurige zetten zelden winnen. De kortste oplossing is de best mogelijke oplossing die de resultaatkaart je laat zien.",
+     "q": "Hoe weet je zeker dat elk level op te lossen is?"
+    },
+    {
+     "a": "Door het aankomstvakje te blokkeren en door voorbij het doel te bouwen. Er blijven nieuwe tegels aankomen op het aankomstvakje, dus als er een tegel op ligt, kan de volgende nergens landen. Bouw je een getal voorbij het doel (een 128 terwijl het level 64 vraagt), dan is het doel verloren. Na een verlies kun je die zet terugdraaien of het level opnieuw proberen.",
+     "q": "Op welke twee manieren kun je verliezen?"
+    },
+    {
+     "a": "Ja: Vrij spel, één tik vanaf de levellijst. Het heeft geen doel en geen zettenlimiet; je schuift tegels, voegt gelijke samen en speelt zo lang je kunt. Je statistieken en reeksen worden bijgehouden, en de dagelijkse uitdaging geeft elke speler elke dag hetzelfde bord.",
+     "q": "Is er een eindeloze modus?"
+    },
+    {
+     "a": "Voor het hele spel niets. Alle 64 levels, Vrij spel, de dagelijkse uitdaging, Hint, coachnotities en Game Center zijn gratis, zonder reclame en zonder abonnement. Alleen optionele aankopen kosten geld: themapakketten voor {P_IAP:Millrace Designer Pack 1} per stuk, of alle zestien betaalde thema's in de Complete collectie voor {P_IAP:Millrace Complete Collection}, terugdraaipakketten vanaf {P_IAP:Millrace Undo 10} en een fooi van {P_IAP:Millrace Tip Jar} die niets ontgrendelt.",
+     "q": "Wat kost Millrace?"
+    },
+    {
+     "a": "Nee. Terugdraaien binnen een puzzellevel is gratis en onbeperkt, en je kunt elk level zo vaak opnieuw proberen als je wilt. De tegoeden zijn voor Vrij spel: elke dag krijg je er één gratis zolang je er minder dan drie hebt, je eerste zet in de dagelijkse uitdaging levert er een op en reeksen van 3, 7, 14 en 30 dagen geven er 2, 5, 10 en 20 extra. Pakketten van 10, 50 of 200 zijn er voor wie meer wil.",
+     "q": "Moet ik terugdraaitegoeden kopen?"
+    },
+    {
+     "a": "Als een spel afloopt, kan een korte notitie op de eindkaart één gewoonte noemen die de app in je recente spellen zag: je grootste tegel in een hoek houden, het bord niet vol laten lopen of grote tegels bij elkaar houden op volgorde van grootte. Heb je een gewoonte afgeleerd, dan komt die niet meer terug. De notities verschijnen nooit tijdens het spelen, er verlaat niets je apparaat en je zet ‘Coachnotities’ uit in Instellingen.",
+     "q": "Wat doen de coachnotities en kan ik ze uitzetten?"
+    },
+    {
+     "a": "Ja. Het hele spel werkt offline. Alleen voor de winkel en ‘Aankopen herstellen’, voor Game Center als je dat gebruikt en voor links die je opent, zoals het privacybeleid, heb je een verbinding nodig.",
+     "q": "Werkt Millrace offline?"
+    },
+    {
+     "a": "Je hebt geen account nodig en de app heeft geen tracking en geen analyse-, advertentie- of externe SDK’s. Je voortgang, statistieken en instellingen blijven op je apparaat. Aankopen en Game Center, als je ze gebruikt, lopen via Apple. Een e-mail aan de support die je zelf verstuurt, bevat je appversie, apparaatmodel, iOS-versie en taal en regio. Het privacybeleid heeft alle details.",
+     "q": "Verzamelt Millrace gegevens over mij?"
+    },
+    {
+     "a": "Millrace werkt op iPhone en iPad met iOS of iPadOS 18 of nieuwer. Op de iPad werkt het in elke stand. Er is geen versie voor Mac, Apple Watch of Android. Je voortgang staat op elk apparaat apart en wordt niet gesynchroniseerd; Game Center bewaart je plekken op de ranglijst en je prestaties als je inlogt.",
+     "q": "Werkt het op iPad en Mac, en synchroniseert mijn voortgang?"
+    },
+    {
+     "a": "Ja. De interface is in het Nederlands, een van de 40 lokalisaties van de app.",
+     "q": "Is Millrace in het Nederlands?"
+    },
+    {
+     "a": "Een millrace is het kanaal dat water naar het rad van een molen voert, een gestage stroom die op één punt aankomt. In het spel blijven tegels op één vakje aankomen en houd jij dat vrij terwijl je naar het doel toe bouwt.",
+     "q": "Waarom heet het Millrace?"
+    }
+   ],
+   "seo": {
+    "description": "Logische puzzelapp voor iPhone en iPad: 64 levels met elk een bewezen kortste oplossing, plus Vrij spel en een dagelijkse uitdaging. Gratis en offline."
+   },
+   "tagline": "Een tegelpuzzel waarin elk level een bewezen kortste oplossing heeft.",
+   "url": "/nl/apps/millrace/"
+  },
+  "mockly": {
+   "faq": [
+    {
+     "a": "Mockly is een Mac-app voor het maken van App Store-screenshots. Je zet je echte screenshots op 3D-modellen van iPhone, iPad, MacBook Pro en Apple Watch, voegt tekst, afbeeldingen en achtergronden toe en houdt tot 50 App Store-talen in één project. De app exporteert PNG- of HEIC-bestanden op exacte maten of uploadt de pagina’s naar App Store Connect. Mockly kost eenmalig {P_APP}, zonder abonnement.",
+     "q": "Wat is Mockly?"
+    },
+    {
+     "a": "Mockly is een Mac-app die je eenmalig koopt. Eén project bevat alle 50 App Store-talen, elk met een eigen tekst, eigen screenshots en eigen opmaak waar je dat nodig hebt, en vertalen gaat via je eigen AI-sleutel of een CSV-bestand. De apparaten zijn 3D-modellen die je over drie assen draait. Is de set klaar, dan uploadt Mockly hem met je API-sleutel naar App Store Connect, zodat je geen bestanden in de browser hoeft te slepen.",
+     "q": "Wat is het verschil tussen Mockly en andere tools voor App Store-screenshots?"
+    },
+    {
+     "a": "Mockly heeft artboardformaten voor iPhone van 6,9 en 6,5 inch, iPad, Mac en Apple Watch, liggende varianten en een Google Play-formaat van 1080×1920. ‘Save Images’ exporteert elke pagina als PNG of HEIC op de exacte pixelmaat van het artboard dat je koos, voor de huidige taal of voor alle talen.",
+     "q": "Welke screenshotformaten voor de App Store exporteert Mockly?"
+    },
+    {
+     "a": "Ja. Mockly toont de 50 talen van App Store Connect. Voeg ze één voor één toe, allemaal tegelijk of zoek ze op naam. Elke taal kan een eigen tekst, eigen screenshots, eigen afbeeldingen en een eigen achtergrond hebben, of je brontaal volgen.",
+     "q": "Ondersteunt Mockly alle App Store-talen?"
+    },
+    {
+     "a": "Ja. Schrijf de tekst één keer in je brontaal en vertaal hem daarna met ‘AI Translate’ met je eigen OpenAI-, Anthropic- of Google-sleutel, of exporteer een CSV-bestand voor een vertaler en importeer het weer. Tekstblokken met de markering ‘Do not translate’ worden overgeslagen. Heeft een taal een andere opmaak nodig, verbreek dan de koppeling met de brontaal en pas alleen die taal aan.",
+     "q": "Kan ik App Store-screenshots in meerdere talen lokaliseren?"
+    },
+    {
+     "a": "Nee. Mockly is een eenmalige aankoop van {P_APP} en alle functies van de editor zitten erin. ‘AI Translate’ gebruikt je eigen OpenAI-, Anthropic- of Google-sleutel en je aanbieder brengt dat gebruik bij je in rekening. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Heeft Mockly een abonnement?"
+    },
+    {
+     "a": "Ja. Voeg in de instellingen je API-sleutel van App Store Connect toe (Key ID, Issuer ID en .p8-bestand). Mockly toont je apps en versies, leest het weergavetype uit het artboard, rendert de pagina’s en uploadt ze voor de talen die je kiest. De app vervangt de screenshots die al in dat weergavetype staan en toont de voortgang per bestand en een lijst met resultaten.",
+     "q": "Kan ik rechtstreeks uploaden naar App Store Connect?"
+    },
+    {
+     "a": "In de sleutelhanger van macOS op je Mac. Je AI-sleutel gaat alleen naar de aanbieder die je koos, omdat die hem nodig heeft om het verzoek te beantwoorden. Je sleutel voor App Store Connect dient alleen om verzoeken aan Apple te ondertekenen. Lagerland Apps beheert geen server en ziet geen van beide sleutels.",
+     "q": "Waar bewaart Mockly mijn API-sleutels?"
+    },
+    {
+     "a": "Nee. Mockly maakt stilstaande screenshots en exporteert ze als PNG of HEIC. Exporteren naar video of pdf kan niet.",
+     "q": "Kan Mockly App Store-voorbeeldvideo’s maken?"
+    },
+    {
+     "a": "Mockly is een Mac-app waarin je met de hand werkt, terwijl fastlane snapshot en frameit vanuit scripts draaien. Maak en omlijst je screenshots in CI, dan heb je Mockly misschien niet nodig. Leg je schermen vast met fastlane en ontwerp je in Mockly, koppel dan de uitvoermap in Mockly zodra de bestanden het naamschema van taal, pagina en apparaat volgen.",
+     "q": "Werkt Mockly met fastlane?"
+    },
+    {
+     "a": "Nee. Mockly is een Mac-app voor macOS 14 of nieuwer, op Macs met Apple-chip en op Intel-Macs. De app maakt screenshots voor App Store-pagina’s van iPhone-, iPad-, Mac- en Apple Watch-apps, plus een Google Play-formaat.",
+     "q": "Werkt Mockly op Windows, iPhone of iPad?"
+    },
+    {
+     "a": "Nee. De interface van Mockly is niet in het Nederlands; op een Nederlandstalige Mac zie je de app in het Engels. Je screenshots kunnen wel Nederlands zijn, want Nederlands is een van de 50 App Store-talen die je aan een project kunt toevoegen.",
+     "q": "Is Mockly in het Nederlands?"
+    },
+    {
+     "a": "Nee. Mockly heeft geen account nodig, bevat geen analyse- of tracking-SDK’s en Lagerland Apps beheert er geen server voor. Projecten en instellingen blijven op je Mac en je sleutels staan in de sleutelhanger van je Mac. Tekst verlaat de Mac alleen als je ‘AI Translate’ gebruikt, en gaat dan met je sleutel naar de aanbieder die je koos. Screenshots verlaten de Mac alleen als je ze uploadt naar App Store Connect.",
+     "q": "Verzamelt Mockly gegevens?"
+    },
+    {
+     "a": "Richtlijn 2.3.3 vraagt om screenshots die de app in gebruik tonen, niet alleen titelafbeeldingen, een inlogpagina of een opstartscherm. In Mockly toont het scherm van elk 3D-apparaat een screenshot die je uit je eigen app hebt gemaakt, met je tekst en achtergrond eromheen. Of een set door de beoordeling komt, hangt af van wat je screenshots laten zien, en Mockly kan goedkeuring in de App Store niet garanderen.",
+     "q": "Voldoen screenshots van Mockly aan de App Store Review Guidelines § 2.3.3?"
+    },
+    {
+     "a": "Vergelijk ze op de punten die voor je release tellen: waar de tool draait, hoe je betaalt, hoeveel App Store-talen hij aankan en of hij uploadt naar App Store Connect. Mockly draait op een Mac, kost eenmalig {P_APP} zonder abonnement, houdt alle 50 App Store-talen in één project, vertaalt met je eigen AI-sleutel of een CSV-bestand, rendert 3D-apparaten en uploadt met je API-sleutel naar App Store Connect. Bekijk de andere tools op hun eigen site, want functies en prijzen veranderen.",
+     "q": "Hoe verhoudt Mockly zich tot MockUPhone, LocaShot, Picasso of AppMockUp?"
+    }
+   ],
+   "seo": {
+    "description": "App Store-screenshots maken op je Mac met 3D-modellen van iPhone, iPad, MacBook en Apple Watch, in 50 talen, en uploaden naar App Store Connect."
+   },
+   "tagline": "Maak, vertaal en upload App Store-screenshots op je Mac.",
+   "url": "/nl/apps/mockly/"
+  },
+  "observa": {
+   "faq": [
+    {
+     "a": "Observa is een app voor inzicht in je gezondheid, voor iPhone, iPad en Apple Watch. De app leest je gegevens uit de Gezondheid-app en maakt er een dagelijkse gereedheidsscore, een slaapscore en een stressmeting van, in gewone taal uitgelegd. Gereedheid en stress worden afgezet tegen je eigen basislijn. Observa beantwoordt ook ‘Moet ik vandaag trainen?’, en met Premium zie je welke gewoonten vaak samenvallen met je herstel, slaap en HRV. Er is geen account en de analyse draait op je apparaat.",
+     "q": "Wat is Observa?"
+    },
+    {
+     "a": "Gereedheid en stress worden vergeleken met je eigen gebruikelijke bereik, niet met een algemeen streefcijfer, en bij gereedheid zie je hoe betrouwbaar de score is. Bij gereedheid hoort ‘Waarom deze score?’, dat de signalen noemt die de score veranderden. Daarnaast is Observa vanaf de basis privé opgezet. Je maakt nooit een account aan en de app maakt zelf geen netwerkverbindingen, dus je gezondheidsgegevens blijven op je apparaat.",
+     "q": "Wat maakt Observa anders dan andere gezondheidsapps?"
+    },
+    {
+     "a": "Gereedheid is een score van 0 tot 100 die elke dag wordt opgebouwd uit slaap (35%), HRV (25%), hartslag in rust (25%) en trainingsbelasting (15%). Een ongebruikelijke ademfrequentie of een ongebruikelijke bloedzuurstofwaarde kan de score alleen verlagen. De score is ingedeeld als Gereed, Matig of Laag, en tot er ongeveer vijf nachten aan gegevens zijn staat er ‘Je basislijn wordt opgebouwd’ terwijl Observa leert wat voor jou normaal is. ‘Waarom deze score?’ laat zien welke signalen de score het meest veranderden.",
+     "q": "Hoe werkt de gereedheidsscore?"
+    },
+    {
+     "a": "Ja, op twee manieren. Observa leest wat je Apple Watch opslaat in de Gezondheid-app, zoals slaapfasen, hartslag, HRV, hartslag in rust, bloedzuurstof en trainingen. Er is ook een eigen Apple Watch-app voor watchOS 10 of nieuwer, met gereedheid, trainingsadvies, ‘Waarom deze score?’, een ochtendcheck-in, water loggen en trainingen opnemen, plus complicaties voor je wijzerplaat. De Apple Watch-app werkt zelfstandig.",
+     "q": "Werkt Observa met de Apple Watch?"
+    },
+    {
+     "a": "Observa leest de Gezondheid-app, ongeacht welk apparaat of welke app de gegevens daar heeft opgeslagen. Een Apple Watch wordt aangeraden, want slaapfasen, HRV, bloedzuurstof, ECG en VO₂ max verschijnen alleen als een apparaat ze meet.",
+     "q": "Heb ik een Apple Watch nodig?"
+    },
+    {
+     "a": "De Gezondheid-app legt hartritmevariabiliteit (HRV) vast als SDNN, en dat is de HRV die Observa toont: je dagwaarde afgezet tegen je eigen basislijn, met 7 dagen trend gratis en 30, 90 of 365 dagen met Premium. HRV telt ook voor 25% mee in je gereedheidsscore. Met Premium toont de ECG-kaart je laatste ECG-opname met de golfvorm en de geschiedenis van de classificaties uit de Gezondheid-app. Observa toont wat de Gezondheid-app heeft vastgelegd; de app spoort geen aandoeningen op en stelt geen diagnose.",
+     "q": "Hoe gaat Observa met HRV- en ECG-gegevens om?"
+    },
+    {
+     "a": "Ja. Gereedheid, de slaapscore, stress, Plan voor vandaag, ‘Waarom deze score?’ voor gereedheid, het trainingsadvies, de dagelijkse coachingnotitie, ‘Slaap aanpassen’, 7-daagse trends en Siri zijn voor altijd gratis. Alle Premium-functies zijn je eerste 7 dagen ontgrendeld, zonder registratie of creditcard. Premium voegt trends over 30, 90 en 365 dagen toe, de volledige analyseschermen, Patronen, functionele leeftijd, geavanceerde HRV, ECG-geschiedenis, trainingsanalyse, gegevens in widgets en alle 14 thema’s. Het kost {P_MONTHLY}/maand, {P_YEARLY}/jaar of {P_LIFETIME} eenmalig, met Delen met gezin bij elke betaalde optie. Los van die eerste 7 dagen in de app starten het maandabonnement en het jaarabonnement allebei met een {TRIAL} via de App Store. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Is Observa gratis?"
+    },
+    {
+     "a": "Nee. Observa is geen medisch hulpmiddel. De app toont patronen en scores uit gegevens die je al verzamelt, voor je eigen begrip. Observa stelt geen diagnose, behandelt niets en spoort geen aandoeningen op, en de weergaven van ECG, ritme en bloedzuurstof tonen wat de Gezondheid-app heeft vastgelegd. Lijkt er iets niet te kloppen, bespreek het dan met een arts.",
+     "q": "Geeft Observa medisch advies?"
+    },
+    {
+     "a": "Nee. Je gezondheidsgegevens worden op je apparaat verwerkt en opgeslagen. Observa werkt zonder account of servers en bevat geen analyse-SDK’s of SDK’s van derden. De app maakt zelf geen netwerkverbindingen; alleen aankopen en de links die je opent gebruiken internet. Je gegevens worden met niemand gedeeld, ook niet met Lagerland Apps.",
+     "q": "Uploadt Observa mijn gezondheidsgegevens?"
+    },
+    {
+     "a": "Nee. Observa leest de Gezondheid-app automatisch, dus de scores worden gevuld met gegevens die je iPhone en Apple Watch al opslaan. Zelf loggen is optioneel: een ochtendcheck-in van drie vragen, water met één tik of met je stem, symptomen en lichaamsmetingen.",
+     "q": "Moet ik iets handmatig bijhouden?"
+    },
+    {
+     "a": "Patronen, een onderdeel van Premium, kijkt naar je hele geschiedenis en vergelijkt gewoonten met uitkomsten zoals herstel, slaap en HRV, ook met vertraagde effecten. Observa toont er maximaal vier, gerangschikt, en ook zwakkere verbanden kunnen verschijnen, dus elke kaart heeft een betrouwbaarheidslabel en een notitie ‘Waarom zie ik dit?’. Je kunt een kaart markeren als ‘Voelt accuraat’ of ‘Niet van toepassing’. De formulering zegt “valt vaak samen met”, omdat het verbanden zijn en geen oorzaken.",
+     "q": "Hoe kiest Observa welke patronen worden getoond?"
+    },
+    {
+     "a": "Observa past bij je als je een dagelijkse gereedheidsscore en een trainingsadvies wilt met de redenen erbij, afgezet tegen je eigen basislijn, en je liever hebt dat je gezondheidsgegevens je apparaat nooit verlaten. De app heeft geen account en geen reclame, en draait op iPhone, iPad en Apple Watch. De vergelijkingspagina’s behandelen de apps een voor een: <a href=\"/alternatives/autosleep/\" hreflang=\"en\">AutoSleep (in het Engels)</a>, <a href=\"/alternatives/athlytic/\" hreflang=\"en\">Athlytic (in het Engels)</a>, <a href=\"/alternatives/bevel/\" hreflang=\"en\">Bevel (in het Engels)</a>, <a href=\"/alternatives/gentler-streak/\" hreflang=\"en\">Gentler Streak (in het Engels)</a>, <a href=\"/alternatives/whoop/\" hreflang=\"en\">Whoop (in het Engels)</a>, <a href=\"/alternatives/oura/\" hreflang=\"en\">Oura (in het Engels)</a>, <a href=\"/alternatives/hrv4training/\" hreflang=\"en\">HRV4Training (in het Engels)</a> en <a href=\"/alternatives/welltory/\" hreflang=\"en\">Welltory (in het Engels)</a>.",
+     "q": "Is Observa een alternatief voor AutoSleep, Athlytic of Bevel?"
+    },
+    {
+     "a": "Nee. Er is geen account en geen iCloud-synchronisatie, dus de gegevens van Observa blijven op het apparaat. De Apple Watch-app loopt rechtstreeks gelijk met je iPhone. De enige export is een trainingsrapport: met de gratis versie deel je er één per maand als PNG met watermerk, en met Premium deel je onbeperkt rapporten als PNG of pdf, zonder watermerk. Een Premium-aankoop herstel je via ‘Herstel aankopen’ in Instellingen. Raakt het gegevensarchief van Observa op het apparaat beschadigd, dan haalt ‘Herstel van back-up’ in Instellingen het terug uit een back-up die op het apparaat staat.",
+     "q": "Synchroniseert Observa tussen apparaten of exporteert de app mijn gegevens?"
+    },
+    {
+     "a": "Alles komt uit de Gezondheid-app. Slaap: duur, efficiëntie, aantal keren wakker, regelmaat, slaapfasen, hartslag in de nacht en de daling daarvan, en slaapschuld tegenover je doel. Herstel: gereedheid, HRV (SDNN), hartslag in rust en stress. Hart: hartslag tijdens wandelen, VO₂ max, hartslagzones en hartslagherstel, en ECG-opnames. Activiteit en trainingen: stappen, actieve minuten, afstand, gelopen trappen, trainingsbelasting en inspanningsscore. Ademhaling: ademfrequentie en bloedzuurstof. Lichaam en energie: gewicht, lichaamsvet, vetvrije massa en actieve en rustenergie. De optionele cycluscontext toont je cyclusfase naast herstel en slaap, zonder je scores te veranderen. Signalen voor herstel en hart worden gelezen tegen je eigen gebruikelijke bereik.",
+     "q": "Wat meet Observa precies?"
+    },
+    {
+     "a": "Observa vereist iOS 17.6 of nieuwer op iPhone of iPad, en de Apple Watch-app vereist watchOS 10 of nieuwer. De widgets over de volle pagina vereisen iOS 27. Er is geen versie voor Mac of Android, en op de iPhone werkt de app in staande richting.",
+     "q": "Welke iPhone, iPad en Apple Watch heeft Observa nodig?"
+    },
+    {
+     "a": "Ja. Observa is in het Nederlands, ook de widgets en de Apple Watch-app.",
+     "q": "Is Observa in het Nederlands?"
+    }
+   ],
+   "seo": {
+    "description": "Elke dag een gereedheidsscore uit de HRV van je Apple Watch, je slaap en hartgegevens, met de reden erbij en alles op je apparaat. Gratis, met Premium."
+   },
+   "tagline": "Gereedheid, slaap en HRV uit de Gezondheid-app, uitgelegd.",
+   "url": "/nl/apps/observa/"
+  },
+  "pawza": {
+   "faq": [
+    {
+     "a": "Pawza is een app voor iPhone en iPad om de gezondheidsgegevens van je huisdier bij te houden. Elk huisdier krijgt één dashboard met medicijnen, vaccinaties, voeding, gewicht, symptomen, dossiers, foto’s, herinneringen en een dagelijks verzorgingslogboek. Je kunt documenten van de dierenarts scannen of een pdf met eerdere dossiers importeren, en allebei gebeuren op je apparaat. De app is gratis voor één huisdier. Pawza Pro voegt onbeperkt veel huisdieren toe, onbeperkt scannen met automatisch invullen via Apple Intelligence, de PDF dierenartsbezoek, de Oppasmap, gewichtswaarschuwingen en gegevensexport.",
+     "q": "Wat is Pawza?"
+    },
+    {
+     "a": "Scan een vaccinatiebewijs, labuitslag, recept, factuur of ontslagnotitie met de camera, of kies maximaal vijf foto’s. Apple Vision leest de tekst op je apparaat. Met Pawza Pro op iOS 26 of nieuwer en een apparaat dat Apple Intelligence ondersteunt, vult het model op je apparaat het documenttype, de datum van het bezoek, de dierenarts en kliniek, vaccinaties, medicijnen, diagnoses, het gewicht en de volgende vervaldatum in. Zonder Apple Intelligence opent het controleformulier met de herkende tekst en vul je de velden zelf in. In beide gevallen controleer je elk veld voordat er iets wordt opgeslagen, want uitlezen kan fout gaan.",
+     "q": "Hoe werkt het scannen van documenten met AI?"
+    },
+    {
+     "a": "Ja. Bij het importeren van eerdere dossiers kies je één pdf van maximaal 100 MB; Pawza leest elke pagina en verdeelt het bestand in bezoeken op datum. Met Apple Intelligence haalt Pawza per bezoek ook de dierenarts, vaccins, medicijnen en gewichten eruit; zonder Apple Intelligence vul je de gegevens zelf in. Je voegt bezoeken samen, splitst ze of gooit ze weg en slaat één keer op. Je eerste import is gratis en gaat niet ten koste van een scan; voor latere imports heb je Pro nodig. Op iOS 26 gaan lange bestanden op de achtergrond door.",
+     "q": "Kan ik jarenlange dossiers van de dierenarts in één keer importeren?"
+    },
+    {
+     "a": "Ja, voor één huisdier en zonder tijdslimiet. In de gratis versie zitten het verzorgingslogboek, medicijnen, vaccinaties, symptomen, dossiers, de gewichtsgrafiek, herinneringen, de Noodkaart, de Vermist-kit, alle 8 widgets, de knop in het bedieningspaneel, Siri, iCloud-synchronisatie, je eerste import van dossiers, 10 documentscans en in totaal 50 foto’s. Pawza Pro kost {P_MONTHLY}/maand of {P_YEARLY}/jaar, elk met een {TRIAL} om te beginnen, of {P_LIFETIME} eenmalig, en elke Pro-optie bevat Delen met gezin. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store de prijs in je eigen valuta.",
+     "q": "Is Pawza gratis?"
+    },
+    {
+     "a": "Onbeperkt veel huisdieren, onbeperkt documenten scannen met automatisch invullen via Apple Intelligence (iOS 26 of nieuwer op een geschikt apparaat), onbeperkt dossiers importeren en foto’s bewaren, foto’s automatisch sorteren en ‘Foto’s vergelijken’, de PDF dierenartsbezoek, de Oppasmap, gewichtswaarschuwingen en volledige export van je gegevens als JSON, CSV of PDF.",
+     "q": "Wat ontgrendelt Pawza Pro?"
+    },
+    {
+     "a": "Ja. Pawza heeft geen account nodig, geen eigen server en geen advertenties of analyse. Je gegevens staan op je apparaat. Als je bent ingelogd bij iCloud, synchroniseren ze via je eigen privé-iCloud tussen je iPhone en iPad, en Lagerland Apps kan ze niet lezen. Scannen en importeren gebeuren op het apparaat, en van geïmporteerde foto’s worden locatie en EXIF-gegevens verwijderd.",
+     "q": "Zijn de gegevens van mijn huisdier privé?"
+    },
+    {
+     "a": "Ja. Vastleggen, dossiers, scannen, herinneringen, widgets en pdf’s werken allemaal offline. Pawza heeft alleen een verbinding nodig voor iCloud-synchronisatie en voor aankopen.",
+     "q": "Werkt Pawza zonder internetverbinding?"
+    },
+    {
+     "a": "De gratis versie geldt voor één huisdier; met Pawza Pro is er geen limiet. Elk huisdier krijgt een eigen dashboard en de widgets Hierna en De roedel tonen de herinneringen en de laatste maaltijd en wandeling van alle huisdieren. Gearchiveerde huisdieren houden hun geschiedenis.",
+     "q": "Kan ik meer dan één huisdier bijhouden?"
+    },
+    {
+     "a": "Nee. iCloud-synchronisatie werkt tussen je eigen apparaten, dus een partner of oppas met een eigen Apple Account ziet een apart dossier. Voor een oppas print de Oppasmap (Pro) alles wat die nodig heeft. Elke Pro-optie bevat Delen met gezin, waarmee je de Pro-aankoop deelt met je gezinsgroep; iedereen houdt zijn eigen dossiers.",
+     "q": "Kan mijn gezin de dossiers van mijn huisdier delen?"
+    },
+    {
+     "a": "Ja. Pawza is één universele app voor iPhone en iPad, en op de iPad wordt het tabblad Huisdieren een weergave met twee kolommen, met de lijst naast het dashboard. In een breed venster worden ook het dashboard van het huisdier en Instellingen elk in twee kolommen verdeeld. Je gegevens synchroniseren tussen de twee via je eigen iCloud. Pawza vereist iOS 17.6 of nieuwer en er is geen versie voor Mac, Apple Watch of Android.",
+     "q": "Werkt Pawza op de iPad?"
+    },
+    {
+     "a": "Ja. Open de Duo en het dashboard van je huisdier verdeelt zich over beide pagina’s. De linkerpagina bevat de verzorging van de dag: wat er hierna aan de beurt is, het verzorgingslogboek en de gewichtstrend. De rechterpagina bevat de gezondheidsgeschiedenis: medicijnen, vaccinaties, voeding, de Noodkaart en foto’s. Ook Instellingen gebruikt beide pagina’s, en de lijst met huisdieren schuift over de linkerpagina wanneer je die nodig hebt. De knoppen voor een nieuw dossieritem, een herinnering en een scan staan in de zijbalk van de Duo, één tik weg, en de knop voor een dossieritem blijft daar staan als de Duo is dichtgeklapt. Ook het instellen van de app past op het dichtgeklapte scherm.",
+     "q": "Werkt Pawza op de iPhone Duo?"
+    },
+    {
+     "a": "Alles wat je dierenarts geeft. Bij elke vaccinatie staan de datum van toediening, de volgende vervaldatum, het batchnummer en notities, en Pawza kan je op de dag zelf herinneren. Medicijnkuren bewaren de dosis, een terugkerende dosisherinnering en de dosisgeschiedenis. Omdat je de namen invoert die je dierenarts gebruikt, of ze scant van het bewijs, werkt Pawza met het schema van elk land: hondsdolheid, DHPP, Bordetella en leptospirose bij honden, FVRCP en FeLV bij katten, of de vaccins die een konijn of paard krijgt.",
+     "q": "Welke vaccinaties en behandelingen kan ik in Pawza bijhouden?"
+    },
+    {
+     "a": "Ja. Herinneringen zijn lokale meldingen in zes categorieën: vaccinatie, medicijn, voeding, vachtverzorging, dierenartsbezoek en eigen. Ze kunnen eenmalig zijn of dagelijks, wekelijks, maandelijks of jaarlijks terugkeren. Een dosismelding heeft een knop ‘Gegeven’ die de dosis vastlegt, een voedermelding heeft ‘Gevoerd’, en de andere hebben ‘Markeer als gereed’ en ‘1 uur sluimeren’. Markeer een herinnering als ‘Tijdgevoelig’ om door een focus heen te komen; een eenmalige tijdgevoelige herinnering waarschuwt na 5, 15 en 30 minuten opnieuw tot je reageert. Voor herinneringen moet je meldingen toestaan.",
+     "q": "Krijg ik herinneringen voor vaccinaties en medicijnen?"
+    },
+    {
+     "a": "Ja, met Pawza Pro. De PDF dierenartsbezoek beslaat de periode die je kiest en kan bevatten wat er sinds het laatste bezoek is veranderd, de huidige medicijnen en voeding, de vaccinatiestatus, het recente gewicht en de recente bezoeken, symptomen, de verzorging van de afgelopen 7 dagen, contactgegevens, verzekering en je eigen notities onder ‘Te bespreken’. Deel het als pdf of als afbeelding, op Letter- of A4-papier.",
+     "q": "Kan ik de geschiedenis van mijn huisdier delen met een dierenarts?"
+    },
+    {
+     "a": "Nee. Automatisch invullen met Apple Intelligence is een functie van Pawza Pro die iOS 26 of nieuwer op een geschikt apparaat vereist (de app noemt de iPhone 15 Pro of nieuwer). Op elk ander apparaat leest Pawza documenten met tekstherkenning op het apparaat en vul je de velden zelf in. Al het andere in de app werkt hetzelfde.",
+     "q": "Heb ik Apple Intelligence nodig om Pawza te gebruiken?"
+    },
+    {
+     "a": "Nee. Pawza houdt dossiers bij; het is geen medisch hulpmiddel en geeft geen veterinair advies. Gewichtswaarschuwingen melden een snelle verandering in de tijd, en symptoomlogs en samenvattingen helpen je te beschrijven wat er is gebeurd. De diagnose blijft bij je dierenarts.",
+     "q": "Stelt Pawza diagnoses?"
+    },
+    {
+     "a": "Ja, en het is allemaal gratis. Acht widgets bestrijken het beginscherm en het toegangsscherm, waaronder een snel-logknop met één tik en een lijst Hierna met een knop ‘Markeer als gereed’. Op iOS 18 zet je een knop ‘Verzorging vastleggen’ in het bedieningspaneel. Siri begrijpt zinnen als “Log zorg in Pawza” en “Log zorg voor Bella in Pawza”. Widgets worden vanuit de app bijgewerkt, dus open Pawza één keer nadat je een huisdier of een herinnering hebt toegevoegd.",
+     "q": "Kan ik verzorging vastleggen vanaf mijn beginscherm of met Siri?"
+    },
+    {
+     "a": "Via een bestand. Pawza importeert Pawza-back-ups (JSON) en CSV-bestanden en toont eerst een voorvertoning. Importeren is altijd gratis. Er is geen directe koppeling met andere apps. Kan je oude app een pdf van je dossiers exporteren, dan kan het importeren van eerdere dossiers die ook lezen.",
+     "q": "Kan ik mijn dossiers van een andere huisdierenapp overzetten?"
+    },
+    {
+     "a": "Open Instellingen, tik op je naam en daarna op ‘Abonnementen’, en zeg het op vóór de verlengingsdatum; je houdt Pro tot het einde van de periode. Maandelijks en Jaarlijks beginnen voor geschikte accounts met een {TRIAL} en worden automatisch verlengd tenzij je opzegt. Levenslang is een eenmalige aankoop, dus er valt niets op te zeggen. Apple regelt terugbetalingen via de standaardprocedure van de App Store.",
+     "q": "Hoe zeg ik een Pawza Pro-abonnement op?"
+    }
+   ],
+   "seo": {
+    "description": "Scan het vaccinatieboekje van je hond en de papieren van de dierenarts op je iPhone of iPad, met herinneringen. Gratis voor één huisdier, geen account."
+   },
+   "tagline": "De gezondheid, doses en dagelijkse verzorging van je huisdier op één rustige plek.",
+   "url": "/nl/apps/pawza/"
+  },
+  "rightsplit": {
+   "faq": [
+    {
+     "a": "RightSplit is een app om de rekening te splitsen op de iPhone. De app scant een bon, laat je aantikken wie wat had, verdeelt belasting en fooi naar verhouding van wat iedereen heeft besteld als de bon ze vermeldt, en maakt voor iedereen een bericht met zijn exacte bedrag en een link om jou te betalen. Er is geen account. Gelijk splitsen met fooi en je eerste bonscan zijn gratis; Pro+ voegt onbeperkt scannen, splitsen per artikel en ongelijk splitsen, Ruimtes voor reizen en gedeelde huizen en een betaaloverzicht toe, voor {P_YEARLY}/jaar of eenmalig {P_LIFETIME}.",
+     "q": "Wat is RightSplit?"
+    },
+    {
+     "a": "Richt de camera op de bon, kies een foto of deel een bonafbeelding vanuit een andere app naar RightSplit. De scanner maakt er artikelen, belasting, fooi en totaal van, en je kunt elke regel aantikken om hem te corrigeren. De bon wordt op je iPhone gelezen en de foto wordt nooit geüpload. Je eerste scan is gratis; onbeperkt scannen hoort bij Pro+.",
+     "q": "Hoe werkt de bonscanner?"
+    },
+    {
+     "a": "Twee, allebei op het apparaat. Op een iPhone met Apple Intelligence aan (iOS 26 of nieuwer op een geschikte iPhone) leest Apple Intelligence de tekst van de bon. Elke andere iPhone gebruikt het <a href=\"https://developer.apple.com/documentation/vision\" rel=\"noopener\" target=\"_blank\">Vision-framework</a> van Apple met de eigen leesregels van RightSplit voor bonnen. Geen van beide uploadt de bon, dus scannen werkt ook offline.",
+     "q": "Welke OCR-engine gebruikt RightSplit?"
+    },
+    {
+     "a": "Dat hangt van de bon af. Bij vervaagd papier, diepe kreuken of een foto onder een scherpe hoek kan de scanner een regel verkeerd lezen. Daarom blijft elk artikel aanpasbaar: tik het aan om de prijs of de naam te herstellen voordat je het toewijst. In het overzicht staan het subtotaal, de belasting, de fooi en het totaal van de bon, zodat je ze kunt vergelijken met het papier, en de bewaarde bon behoudt zijn foto.",
+     "q": "Hoe nauwkeurig is de bonscan?"
+    },
+    {
+     "a": "Ja. Je eerste bonscan bevat het, en daarna hoort het bij Pro+. Elk artikel kan over meerdere mensen worden verdeeld: flessen, voorgerechten, gedeelde borden. De kosten van het artikel worden gelijk verdeeld over de mensen die het deelden, en belasting en fooi worden verdeeld naar verhouding van wat iedereen heeft besteld.",
+     "q": "Kan ik gedeelde gerechten splitsen?"
+    },
+    {
+     "a": "‘Betalingsverzoeken versturen’ maakt per persoon één bericht met de plek en zijn exacte bedrag. Is je primaire betaalmethode PayPal.me, Revolut, Venmo of Wise, dan voegt het een link toe om jou te betalen. Verstuur het via Berichten of WhatsApp, of kopieer het naar een andere app. De ander hoeft niets te installeren.",
+     "q": "Hoe stuur ik mensen hun deel?"
+    },
+    {
+     "a": "Ja. Gelijk splitsen met fooi, eerlijk afronden, je laatste vijf splitsingen, sjablonen, Siri, 12 widgets en je eerste bonscan (inclusief splitsen per artikel en de betaalberichten) blijven gratis. Pro+ voegt onbeperkt scannen toe, splitsen per artikel en gedeelde gerechten, het deel van één persoon aanpassen, de uitsplitsing van de fooi, onbeperkte geschiedenis, Ruimtes, het betaaloverzicht en herinneringen voor onbetaalde delen, de Pay-Me-kaart en 6 extra widgets. Het kost {P_YEARLY} per jaar, te beginnen met een {TRIAL}, of eenmalig {P_LIFETIME}; de levenslange aankoop wordt niet verlengd. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Is RightSplit gratis?"
+    },
+    {
+     "a": "Nee. RightSplit werkt zodra je de app opent, zonder registratie en zonder persoonsgegevens. Slechts één persoon aan tafel heeft de app nodig: jij scant, splitst en stuurt iedereen zijn bedrag.",
+     "q": "Heeft RightSplit een account nodig?"
+    },
+    {
+     "a": "Nee. Bonnen, bedragen, namen en betaalgegevens blijven op je iPhone, en er is geen cloudsynchronisatie. RightSplit heeft geen eigen servers, geen advertentie-SDK’s en geen analysetools van derden. Het enige netwerkverzoek haalt wisselkoersen van de Europese Centrale Bank op, en daarbij wordt niets van jou meegestuurd.",
+     "q": "Slaat RightSplit mijn bonnen online op?"
+    },
+    {
+     "a": "Ja, ook in de vliegtuigmodus. Scannen en splitsen draaien op het apparaat. Twee dingen hebben een verbinding nodig: de berichten versturen via Berichten of WhatsApp (je kunt ze kopiëren en later versturen) en het verversen van de wisselkoersen van de Europese Centrale Bank voor het omrekenen van valuta.",
+     "q": "Werkt RightSplit offline?"
+    },
+    {
+     "a": "Zestien: Engels, Frans, Duits, Spaans, Italiaans, Portugees, Nederlands, Zweeds, Deens, Fins, Noors, Pools, Japans, Koreaans en Chinees (vereenvoudigd en traditioneel). Kies de taal van de bon bij Taal bon in Opties. In elk van die talen worden de regels voor subtotaal, belasting en totaal herkend, zodat ze niet als gerechten worden gerekend.",
+     "q": "Welke talen leest de bonscanner?"
+    },
+    {
+     "a": "Ja. RightSplit splitst in de valuta die je instelt, uit 58, ook valuta zonder decimalen zoals de yen en de won, dus een bon in euro’s of ponden komt uit in euro’s of ponden, inclusief belasting en fooi. Met Pro+ stel je een standaardvaluta in en toont elk bedrag ook een geschat bedrag in die valuta. Met Pro+ kan een Ruimte meerdere valuta mengen en afrekenen in de valuta die je kiest, met de dagkoersen van de Europese Centrale Bank; 30 van de 58 valuta hebben er een, en totalen in de andere worden niet omgerekend.",
+     "q": "Kan RightSplit bonnen in meerdere valuta aan?"
+    },
+    {
+     "a": "Ja. RightSplit neemt elk artikel voor zijn afgedrukte prijs. Zit de btw al in elke regel, zoals gebruikelijk in de EU en het Verenigd Koninkrijk, dan is er geen aparte belastingregel om te verdelen en komt de splitsing overeen met de bon. Telt de bon belasting op als aparte regel, zoals in het grootste deel van de VS, dan leest RightSplit die regel als belasting en verdeelt de app het bedrag naar verhouding van wat iedereen heeft besteld.",
+     "q": "Kan RightSplit omgaan met bonnen inclusief btw?"
+    },
+    {
+     "a": "Op het splitsscherm stel je het aantal personen in, van 2 tot 50, en bij een gescande bon voeg je de mensen aan tafel toe. Voor een reis of een gedeeld huis houden Pro+ Ruimtes ieders saldo bij op je telefoon. Moet iedereen in de groep vanaf de eigen telefoon in hetzelfde boekje kunnen kijken en toevoegen, dan past een groepsapp als <a href=\"/alternatives/splitwise/\" hreflang=\"en\">Splitwise (in het Engels)</a> beter, of <a href=\"/alternatives/tricount/\" hreflang=\"en\">Tricount (in het Engels)</a> voor reisboekjes.",
+     "q": "Met hoeveel mensen kan ik een rekening splitsen?"
+    },
+    {
+     "a": "RightSplit linkt ernaar en verplaatst zelf nooit geld. Je kunt je eigen gebruikersnaam voor Venmo, PayPal.me, Revolut of Wise opslaan, of je IBAN of Apple Pay. Is je primaire methode PayPal.me of Revolut, dan bevat het bericht van elke persoon een link met zijn bedrag al ingevuld (PayPal.me in de valuta die PayPal accepteert). Links van Venmo en Wise openen je profiel, en Apple Pay en IBAN voegen geen link toe. De betaling gebeurt in die dienst. Welke methoden beschikbaar zijn verschilt per regio, en een link kan niet bevestigen dat een betaling is aangekomen, dus je markeert zelf wie betaald heeft. Zie de <a href=\"/alternatives/venmo-split/\" hreflang=\"en\">vergelijking van RightSplit met Venmo Split (in het Engels)</a>.",
+     "q": "Werkt RightSplit met Apple Pay, Venmo of PayPal?"
+    },
+    {
+     "a": "Nee. RightSplit is een iPhone-app en heeft iOS 17 of nieuwer nodig. Bedieningselementen vragen iOS 18 en bonnen lezen met Apple Intelligence vraagt iOS 26 op een geschikte iPhone.",
+     "q": "Werkt RightSplit op iPad, Mac of Apple Watch?"
+    },
+    {
+     "a": "Ja, 18, waarvan 12 gratis. Verdeelcalculator (Pocket Split) is een toetsenblok op het beginscherm waarmee je splitst zonder de app te openen; andere tonen je laatste splitsing, je recente splitsingen en je statistieken. Met Pro+ laten Vereffenen en Wachten op zien wie jou nog iets schuldig is, en kun je iemand vanuit de widget als betaald markeren. De widget Betaal mij hoort bij Pro+ en blijft uit tot je ‘Toon in widgets’ aanzet.",
+     "q": "Heeft RightSplit widgets?"
+    },
+    {
+     "a": "<a href=\"/alternatives/splitwise/\" hreflang=\"en\">Splitwise (in het Engels)</a> is gemaakt voor gedeelde groepsboekjes: huisgenoten, reiskosten die blijven doorlopen en schulden die zich maandenlang opbouwen, waarbij iedereen vanuit het eigen account saldo’s noteert en bekijkt. RightSplit is een rekenmachine op je telefoon: je scant één bon, splitst hem en stuurt de bedragen, zonder accounts aan te maken of vrienden toe te voegen. Voor een reis of een gedeeld huis verzamelen Pro+ Ruimtes bonnen en uitgaven, houden ze het saldo van iedereen bij en berekenen ze het kleinste aantal overboekingen om af te rekenen. Ruimtes staan alleen op je telefoon, zonder synchronisatie, dus de rest van de groep ziet wat jij hen stuurt en geen live gedeeld saldo. Zie de <a href=\"/alternatives/splitwise/\" hreflang=\"en\">volledige vergelijking met Splitwise (in het Engels)</a>, of vergelijk met <a href=\"/alternatives/tab/\" hreflang=\"en\">Tab</a>, <a href=\"/alternatives/tricount/\" hreflang=\"en\">Tricount</a>, <a href=\"/alternatives/settle-up/\" hreflang=\"en\">Settle Up</a> en <a href=\"/alternatives/venmo-split/\" hreflang=\"en\">Venmo Split</a> (allemaal in het Engels).",
+     "q": "Wat is het verschil tussen RightSplit en Splitwise?"
+    }
+   ],
+   "seo": {
+    "description": "Rekening splitsen op je iPhone: scan de bon, tik aan wie wat had en stuur iedereen zijn bedrag met een betaallink. Geen account nodig, gratis te starten."
+   },
+   "tagline": "Scan de bon, tik aan wie wat had, stuur iedereen zijn bedrag.",
+   "url": "/nl/apps/rightsplit/"
+  },
+  "shogiful": {
+   "faq": [
+    {
+     "a": "Shogiful is een app voor iPhone, iPad en Mac om shogi (Japans schaken) te trainen en je partijen te analyseren. Je speelt tegen 40 engine-tegenstanders, YaneuraOu controleert elke zet van je partijen op het apparaat, en elke fout wordt uitgelegd met wat je speelde, wat de beste zet was en een tip van de coach. De training richt zich daarna op je grootste zwakte, met 501 tsume-problemen, 99 inzetoefeningen, 62 burchtoefeningen, 55 joseki-oefeningen, 62 eindspelwedlopen en 80 lessen.",
+     "q": "Wat is Shogiful?"
+    },
+    {
+     "a": "Ja. Twee van de zeven stukkensets in Shogiful zijn daarvoor gemaakt: Internationaal (kanji met pijlen die laten zien hoe elk stuk beweegt) en Schaak (stukken in schaakstijl zonder kanji). De andere vijf zijn traditionele kanji-sets. Je wisselt wanneer je wilt in Instellingen, onder ‘Bord & stukken’. Tik op een stuk en elke toegestane zet en inzet licht op, en zetten kun je schrijven in westerse notatie, zoals P-7f.",
+     "q": "Kan ik shogi spelen zonder kanji te kennen?"
+    },
+    {
+     "a": "Ja. Kies de stukkenset Schaak en westerse notatie, dan leest het bord bijna als een schaakbord. Shogi verschilt waar het het meest telt: geslagen stukken komen als inzet terug, promoveren is een keuze en eindspelen zijn wedlopen om mat. De foutsoorten in Shogiful zijn onder meer Inzetfout, Promotiefout, Kasteelzwakte en Gemiste tsume, en met 99 inzetoefeningen en 62 burchtoefeningen oefen je ze.",
+     "q": "Is Shogiful geschikt voor schakers die shogi willen leren?"
+    },
+    {
+     "a": "Ja. Bij de eerste start zit een interactieve tutorial over inzetten, en het complete lestraject Grondbeginselen is gratis. De ladder met tegenstanders begint bij Koishi, een rustige beginner, en de volledige regels van shogi, inclusief inzetten, promoveren en zetherhaling, worden voor je bewaakt. Een optionele Niveautest van 12 puzzels bepaalt het niveau van je lessen en dagelijkse training.",
+     "q": "Is Shogiful geschikt voor beginners?"
+    },
+    {
+     "a": "Shogi Wars is een van de meest gespeelde online shogi-apps van Japan, goedgekeurd door de Japan Shogi Association, met live matchmaking en kyu/dan-promotie in partijen met ranking. Shogiful is een trainingsapp voor één speler, zonder account en zonder klok. Je speelt tegen engine-tegenstanders in je eigen tempo, bespreekt elke partij met YaneuraOu en traint op de fouten die je maakt. Je kunt beide gebruiken: Shogiful om te oefenen en Shogi Wars om te strijden.",
+     "q": "Wat is het verschil tussen Shogiful en Shogi Wars?"
+    },
+    {
+     "a": "Lishogi en 81Dojo zijn online platforms die draaien om spelen tegen mensen. Lishogi is het gratis open-source webplatform en 81Dojo de al lang bestaande internationale dojo. Shogiful werkt offline en richt zich op training: analyse op het apparaat met een kaart bij elke fout, een dagplan op je grootste zwakte en oefeningen voor tsume, inzetten, burchten, joseki en eindspelen. Gebruik het om te oefenen tussen je online partijen door.",
+     "q": "Wat is het verschil tussen Shogiful en Lishogi of 81Dojo?"
+    },
+    {
+     "a": "YaneuraOu, met het NNUE-evaluatiebestand in de app ingebouwd. De engine draait op je iPhone, iPad of Mac, dus voor de analyse heb je geen verbinding nodig. Hij controleert elke zet van je partijen, speelt je 40 tegenstanders en drijft de coach en de weergave Diepe varianten aan. Shogiful zet de evaluaties om in foutkaarten in gewone taal.",
+     "q": "Welke engine gebruikt Shogiful?"
+    },
+    {
+     "a": "PiyoShogi is een gratis app die beginners vaak wordt aanbevolen, met computerniveaus in stappen en een eigen analyse. Shogiful is opgebouwd rond training: elke fout krijgt een kaart met wat je speelde, wat de beste zet was en een tip, je dagplan richt zich op je grootste zwakte, en je krijgt 501 tsume-problemen, 99 inzetoefeningen, 62 burchtoefeningen en 80 lessen. Ook heeft Shogiful stukkensets met pijlen of helemaal zonder kanji.",
+     "q": "Wat is het verschil tussen Shogiful en PiyoShogi?"
+    },
+    {
+     "a": "Nee. Partijen tegen de tegenstanders van Shogiful zijn zonder tijdslimiet, zonder klok en zonder byoyomi, dus je neemt voor elke zet zoveel tijd als je wilt. Wil je met tijd oefenen voordat je online speelt, gebruik dan een online platform zoals Shogi Wars, Lishogi of 81Dojo.",
+     "q": "Heeft Shogiful een tijdslimiet of klok?"
+    },
+    {
+     "a": "Tsume-shogi zijn de klassieke matproblemen van shogi: elke aanvalszet moet schaak geven, en je zet de koning mat met de stukken op het bord en in je hand. Het Tsume-traject van Shogiful heeft 501 problemen in vijf niveaus, van mat in 1 zet tot mat in 9 zetten. De 381 problemen in de niveaus van 1, 3 en 5 zetten zijn gratis; Premium voegt de niveaus van 7 en 9 zetten toe. Elke zet die echt mat geeft, telt mee, ook als die afwijkt van het antwoord in het boek.",
+     "q": "Wat is tsume-shogi, en zit het in Shogiful?"
+    },
+    {
+     "a": "Ja, als KIF-bestanden. Ga naar Instellingen > ‘Gegevens en privacy’ > ‘KIF importeren’ en importeer uit een bestand, van het klembord of uit geplakte tekst, in UTF-8 of Shift-JIS. Voordat je importeert, zie je een voorbeeld met de spelers, de voorgift en het aantal zetten. Geïmporteerde partijen worden besproken zoals elke andere partij, vanaf de kant van Sente, en de bespreking telt mee voor de 2 gratis analyses per dag.",
+     "q": "Kan ik mijn partijen uit Shogi Wars of 81Dojo importeren?"
+    },
+    {
+     "a": "Ja, voor alles wat je met shogi doet. Spelen, analyseren, trainen en partijen terugkijken gebeuren op het apparaat, met een ingebouwde engine. Voor het kopen of herstellen van Premium en voor Game Center heb je wel een verbinding nodig.",
+     "q": "Werkt Shogiful offline?"
+    },
+    {
+     "a": "Shogiful is gratis te downloaden, en spelen is nooit beperkt: alle 40 tegenstanders, die je ontgrendelt door te winnen, met elk bord, elke stukkenset en het 3D-bord. De gratis versie bevat 2 partijanalyses, 3 trainingspuzzels en 2 coachhints per dag, 381 tsume-problemen en 31 lessen. Premium haalt de dagelijkse limieten weg en opent Diepe varianten, alle 501 tsume-problemen, elke oefening, alle 80 lessen en het vaardigheidsprofiel en de zwaktetrends. Het kost {P_MONTHLY}/maand of {P_YEARLY}/jaar, allebei met een {TRIAL}, of {P_LIFETIME} eenmalig voor levenslange toegang. Delen met gezin is inbegrepen. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Is Shogiful gratis? Wat kost Premium?"
+    },
+    {
+     "a": "Nee. Je hoeft je niet te registreren en er is geen Shogiful-account. Je partijen, analyses en trainingsgeschiedenis worden op je apparaat bewaard. Game Center is optioneel, en aankopen lopen via je Apple Account.",
+     "q": "Heb je een account nodig voor Shogiful?"
+    },
+    {
+     "a": "Nee. Elke partij is tegen de 40 tegenstanders van Shogiful, van rustige beginner tot meesterniveau, die je ontgrendelt door ze te verslaan. Voor partijen met ranking tegen mensen gebruik je Shogi Wars, Lishogi of 81Dojo, en importeer je die partijen als KIF om ze in Shogiful te bespreken.",
+     "q": "Kan ik in Shogiful tegen andere mensen spelen?"
+    },
+    {
+     "a": "Ja, via Komaochi in het tabblad Training. Komaochi heeft 40 voorgiftscenario's verdeeld over 8 voorgiften, van een lans tot acht stukken voorgift, elk met een doel zoals mat of materiaal. Met ‘Oefenen beginnen’ open je een partij vanuit die voorgiftstelling. Partijen met voorgift starten alleen vanuit Komaochi, niet vanuit het tabblad Spelen.",
+     "q": "Kan ik shogi met voorgift (handicap) spelen?"
+    },
+    {
+     "a": "Ja, gratis. In Instellingen toont ‘Bord & stukken’ zeven borden en zeven stukkensets in één galerij, met een live voorbeeld in 2D of 3D. De borden zijn Hon-kaya, Shin-kaya, Hinoki, Walnoot, Ichō, Donker lak en Oefenmat. De stukkensets zijn Satsuma Moriage, Ichiji-goma, Kakigoma, Clubplastic, Ebbenhout & goud, Internationaal en Schaak. Het 2D-bord en het 3D-bord tonen allebei de set die je kiest. Speelde je eerder op Kaya (licht) of Walnoot (donker), dan wordt je bord overgenomen als Hon-kaya of Walnoot.",
+     "q": "Kan ik het bord en de stukken in Shogiful aanpassen?"
+    },
+    {
+     "a": "Ja. Shogiful heeft 39 lokalisaties, waaronder Nederlands en Japans, en volgt de taal van je apparaat. Wie de app in het Japans gebruikt, krijgt bij de eerste start een eigen introductie die naar je kyū- of dan-niveau vraagt. Zetten kun je tonen in Japanse notatie (▲７六歩) of westerse notatie (P-7f).",
+     "q": "Is Shogiful in het Nederlands en Japans?"
+    }
+   ],
+   "seo": {
+    "description": "Shogi-app voor iPhone, iPad en Mac: speel zonder kanji, zie elke fout uitgelegd door YaneuraOu op je apparaat en train met 501 tsume-problemen."
+   },
+   "tagline": "Speel shogi, ontdek waarom je verloor en train daarop.",
+   "url": "/nl/apps/shogiful/"
+  },
+  "soon": {
+   "faq": [
+    {
+     "a": "Soon. is een aftelapp voor de iPhone. Je voegt de momenten toe waar je naar uitkijkt, zoals een reis, een bruiloft, een verjaardag, een tentamen of de uitgerekende datum van een baby. Elk moment krijgt je eigen foto, een checklist en een tijdlijn voor die soort gebeurtenis en een plek op 26 widgets voor het beginscherm, het toegangsscherm en ‘Stand-by’. De app telt ook op vanaf datums in het verleden en bewaart afgeronde momenten als Herinneringen.",
+     "q": "Wat is Soon.?"
+    },
+    {
+     "a": "Naar alles met een datum. Soon. heeft gebeurtenistypen voor reizen, bruiloften, verjaardagen, jubilea, tentamens, werk, feestdagen, gezondheid, een baby, concerten, sport en een algemeen moment, en de planmodus stelt voor de meeste een checklist voor. Geef een moment naast een datum ook een tijd en widgets tonen in de laatste 24 uur een live aftelling in uren en minuten. Geef het een datum in het verleden en het telt de dagen sindsdien.",
+     "q": "Waar kan ik naartoe aftellen?"
+    },
+    {
+     "a": "Ja. Gratis krijg je tot 5 momenten, 1 vastgezet moment, checklists en tijdlijnen in de planmodus, widgets met je vastgezette moment, 3 thema’s, 1 foto per moment, agenda-import, zoeken, Siri, Herinneringen (je voorbije momenten) en iCloud-synchronisatie. Premium voegt onbeperkt veel momenten, meerdere vastgezette momenten, alle 11 thema’s, tot 10 foto’s per moment, elk moment op elke widget, meldingen, de live activiteit ‘Laatste aftelling’, de weersvoorspelling, dagelijkse notities, terugkerende momenten, de babymodus en ‘Op deze dag’ toe.",
+     "q": "Is Soon. gratis?"
+    },
+    {
+     "a": "{P_MONTHLY} per maand of {P_YEARLY} per jaar, allebei met een {TRIAL}, of {P_LIFETIME} eenmalig voor Levenslang. Een abonnement kun je op elk moment opzeggen, en alle drie de opties werken met ‘Delen met gezin’. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Wat kost Premium?"
+    },
+    {
+     "a": "26 widgets voor het beginscherm, het toegangsscherm en ‘Stand-by’, van één dagentelling tot een ring, een tijdlijn, een maandoverzicht en een overzicht van het hele jaar, met een nachtvariant voor ‘Stand-by’. Gratis widgets tonen je vastgezette moment. Met Premium kies je voor elke widget een moment en ontgrendel je elke widgetstijl. Op iOS 18 is er ook een ‘dagen tot’-bediening voor het bedieningspaneel.",
+     "q": "Welke aftelwidgets heeft Soon.?"
+    },
+    {
+     "a": "Ja. Widgets op het toegangsscherm werken in de gratis versie en tonen je vastgezette moment. Met Premium zet de live activiteit ‘Laatste aftelling’ de timer in de laatste 24 uur op je toegangsscherm en in het Dynamic Island, en met ‘Op vergrendelscherm houden’ kun je de aftelling al tot 90 dagen van tevoren tonen. iOS kan een live activiteit na een paar uur beëindigen. Soon. ververst hem op de achtergrond zodra iOS dat toestaat.",
+     "q": "Kan ik mijn aftelling op het toegangsscherm en in het Dynamic Island zien?"
+    },
+    {
+     "a": "Ja. Een moment met een datum in het verleden telt de dagen sindsdien, op de kaart zelf, in widgets, op het toegangsscherm en in de bediening in het bedieningspaneel. Meldingen en de live activiteit zijn er alleen voor aftellingen. Los daarvan kun je een aftelling die zijn dag heeft bereikt bewaren als Herinnering, die de dagen sinds die dag toont.",
+     "q": "Kan ik optellen vanaf een datum in het verleden?"
+    },
+    {
+     "a": "Met Premium zet je meldingen aan voor een moment en Soon. stuurt een melding 7 dagen, 3 dagen en 1 dag van tevoren en op de dag zelf op het tijdstip van het moment. Heeft het plan van een moment mijlpalen op de tijdlijn, dan krijg je een melding per mijlpaal in plaats van die van 7, 3 en 1 dag, en ‘Op deze dag’ stuurt elk jaar een melding op de datum van een Herinnering. De gratis versie stuurt geen meldingen.",
+     "q": "Hoe werken de meldingen?"
+    },
+    {
+     "a": "Van Apple Weather. Voeg een plaats toe aan een moment door een stad of plek te zoeken en Soon. toont de voorspelling zodra de datum binnen 7 dagen valt. Het weerbericht hoort bij Premium.",
+     "q": "Waar komt het weerbericht vandaan?"
+    },
+    {
+     "a": "Nee. De dagelijkse notities komen uit sjablonen die met de app worden meegeleverd en worden op je iPhone samengesteld, één per dag voor elk moment, in een rustige of speelse toon. Ze horen bij Premium.",
+     "q": "Worden de dagelijkse notities door AI geschreven?"
+    },
+    {
+     "a": "Nee. Soon. heeft geen advertenties, geen trackers en geen SDK’s van derden, en je maakt nooit een account aan. Je momenten staan op je iPhone en, met iCloud-synchronisatie aan, in je eigen privé-iCloud, die Lagerland Apps niet kan lezen. In Instellingen vind je ‘Mijn gegevens exporteren’ en ‘Al mijn gegevens verwijderen’.",
+     "q": "Volgt Soon. mij of verzamelt de app gegevens?"
+    },
+    {
+     "a": "Log op beide iPhones in bij iCloud met dezelfde Apple Account en je momenten synchroniseren via je privé-iCloud. In Instellingen zie je de status onder iCloud-synchronisatie. Je kunt ook alles als JSON-bestand exporteren via Instellingen. Een Premium-aankoop wordt hersteld op elke iPhone met dezelfde Apple Account.",
+     "q": "Wat gebeurt er met mijn momenten als ik van iPhone wissel?"
+    },
+    {
+     "a": "Nee. Soon. werkt alleen op de iPhone en vraagt iOS 17.6 of nieuwer. De bediening in het bedieningspaneel vraagt iOS 18.",
+     "q": "Werkt Soon. op de Apple Watch, de iPad of de Mac?"
+    },
+    {
+     "a": "Je kunt elke aftelling als afbeelding delen in de vorm van een story, een post, een bericht of een widget, via Berichten, Instagram of een andere app in het deelmenu. Gratis deelkaarten hebben een klein Soon.-watermerk, dat Premium weghaalt. Soon. kent geen gedeelde of live aftellingen tussen mensen. Willen twee mensen dezelfde aftelling, dan voegt ieder hem toe in de eigen app.",
+     "q": "Kan ik een aftelling met iemand delen?"
+    }
+   ],
+   "seo": {
+    "description": "Aftelapp voor iPhone met 26 widgets: tel af naar je reis, bruiloft of verjaardag, met een gratis checklist en iCloud-synchronisatie. Gratis, met Premium."
+   },
+   "tagline": "Aftellingen voor de momenten die ertoe doen, altijd in beeld.",
+   "url": "/nl/apps/soon/"
+  },
+  "tare": {
+   "faq": [
+    {
+     "a": "Tare is een logische balanspuzzel zonder woorden voor iPhone en iPad. Elk van de 200 levels is een hangmobiel, en je hangt gewichten aan haakjes tot elke balk tegelijk in evenwicht is. Sommige gewichten zijn verborgen en hun waarde leid je af uit beeldkaartjes. Het voelt als speelgoed, maar elk level heeft precies één juiste opstelling die je kunt uitredeneren.",
+     "q": "Wat voor game is Tare?"
+    },
+    {
+     "a": "Een balk is waterpas als gewicht keer afstand tot het draaipunt aan beide kanten gelijk is. Een 2 op de tweede inkeping houdt een 4 op de eerste in evenwicht. Hangt een balk aan een andere balk, dan trekt die aan zijn haakje met alles wat eronder hangt. Het spel leert je dit in de eerste vijf levels, zonder één woord.",
+     "q": "Hoe werkt het evenwicht in Tare?"
+    },
+    {
+     "a": "Het zijn gewichten die in een matte bol zitten verstopt. Een balk met zo’n gewicht komt pas tot rust als je de waarde hebt afgeleid, dus je kunt het antwoord niet van de weegschaal aflezen. De beeldkaartjes boven het bord laten zien hoe de stukken zich verhouden, en daaruit leid je elk verborgen gewicht af.",
+     "q": "Wat zijn de “?”-gewichten in Tare?"
+    },
+    {
+     "a": "Ja. Elk level is met de hand gemaakt en daarna gecontroleerd door een solver. Er moet precies één opstelling in evenwicht zijn, elk verborgen gewicht moet volgen uit zijn kaartjes en een extra stuk moet nergens passen.",
+     "q": "Is elk level echt op te lossen?"
+    },
+    {
+     "a": "De download is gratis, en hoofdstuk I met zijn 20 levels blijft gratis; het is geen proefperiode. Eén aankoop van {P_IAP:Tare Full Access} opent voorgoed hoofdstuk II tot en met X, de andere 180 levels. Het is een eenmalige aankoop zonder abonnement, en hij werkt met ‘Delen met gezin’. Er zijn geen advertenties en niets anders te kopen.",
+     "q": "Is Tare gratis?"
+    },
+    {
+     "a": "Hoofdstukken gaan op volgorde open, met of zonder aankoop. Blijf hoofdstuk I oplossen en hoofdstuk II gaat open, en elk volgend hoofdstuk op dezelfde manier. Binnen een hoofdstuk kun je tot drie levels voorbij het laatste opgeloste level spelen.",
+     "q": "Ik heb de ontgrendeling gekocht. Waarom is hoofdstuk II nog dicht?"
+    },
+    {
+     "a": "Open ‘Instellingen’ in het spel en tik op ‘Aankopen herstellen’. Het ontgrendelscherm heeft dezelfde knop.",
+     "q": "Hoe herstel ik mijn aankoop op een nieuwe iPhone of iPad?"
+    },
+    {
+     "a": "Ja, als je ze wilt. Hints staan standaard uit. Zet ‘Hints’ aan in ‘Instellingen’ en op elk level verschijnt een hintknop. Een hint trekt een lijn die laat zien waar het volgende stuk heen gaat. Hij toont nooit het laatste stuk en onthult nooit een verborgen gewicht. Een hint vragen kost de derde ster van dat level. In de eerste vijf levels verschijnt ook vanzelf een hulplijn als je even stilstaat.",
+     "q": "Zijn er hints?"
+    },
+    {
+     "a": "Drie sterren krijg je voor een foutloze oplossing. Haal je een stuk weer weg of vraag je een hint, dan worden het er twee. Vul je het bord eerst verkeerd voordat je het oplost, dan wordt het er één. Je beste beoordeling blijft bewaard, en niets in het spel zit achter sterren op slot.",
+     "q": "Wat betekenen de drie sterren?"
+    },
+    {
+     "a": "Tare werkt volledig offline; alle 200 levels zitten in de app. Alleen het kopen en herstellen van de ontgrendeling vraagt om een verbinding, via Apple. Het spel maakt zelf geen netwerkverbindingen, heeft geen account, advertenties, analyses of SDK’s van derden, en verzamelt geen gegevens. Je voortgang en instellingen blijven op je apparaat.",
+     "q": "Werkt Tare offline en verzamelt het gegevens?"
+    },
+    {
+     "a": "Ja. De puzzel heeft geen woorden, dus iedereen kan hem in elke taal en op elke leeftijd spelen. De paar schermen eromheen, zoals ‘Instellingen’ en het ontgrendelscherm, zijn vertaald in 44 talen, Nederlands inbegrepen.",
+     "q": "Kunnen kinderen of mensen die geen Engels lezen het spelen?"
+    },
+    {
+     "a": "Tare werkt op iPhone en iPad met iOS of iPadOS 18 of nieuwer. Op de iPhone speel je in portret. Op de iPad draait het spel mee met het apparaat en wordt het groot getekend in een gecentreerde kolom. Er is geen versie voor Mac, Apple Watch of Vision Pro. Je voortgang blijft op het apparaat waarop je speelt en synchroniseert niet tussen apparaten.",
+     "q": "Is Tare er ook voor iPad of Mac, en synchroniseert de voortgang?"
+    },
+    {
+     "a": "Ja. VoiceOver leest de hangmobiel voor als balken, haakjes en gewichten met een naam, met acties om een stuk te plaatsen of terug in de bak te leggen. Menu’s en labels schalen mee met je tekstgrootte. Met ‘Hoog contrast’ houden vlakke kleuren een verhouding van 4,5:1 of beter, ‘Verminderde beweging’ en ‘Verminder transparantie’ worden gerespecteerd, en de stukken hebben verschillende vormen, dus kleur is nooit de enige aanwijzing.",
+     "q": "Is Tare toegankelijk?"
+    }
+   ],
+   "seo": {
+    "description": "Puzzelgame zonder woorden voor iPhone en iPad: leid verborgen gewichten af uit kaartjes. 200 handgemaakte levels, 20 gratis, offline, geen advertenties."
+   },
+   "tagline": "Een balanspuzzel zonder woorden. Hang de gewichten op, breng elke balk in evenwicht en leid de verborgen gewichten af.",
+   "url": "/nl/apps/tare/"
+  },
+  "taskful-day": {
+   "faq": [
+    {
+     "a": "Taskful Day is een dagplanner en to-dolijst voor iPhone, iPad, Mac en Apple Watch. Je plant één dag tegelijk, onafgemaakte taken schuiven vanzelf door naar de volgende dag en je voegt taken toe door een zin te typen of in te spreken, door het aan Siri te vragen of met je horloge. Pro voegt visuele dagweergaven toe, een weekraster met tijdblokken, een focustimer, 21 widgets voor het beginscherm en iCloud-synchronisatie.",
+     "q": "Wat is Taskful Day?"
+    },
+    {
+     "a": "Ja. Taskful Day draait op de Mac met macOS 14 of nieuwer, met een eigen knoppenbalk, menu’s, sneltoetsen, contextmenu’s, meerdere vensters en widgets op het bureaublad. Spraakinvoer en widgets voor het toegangsscherm blijven bij iPhone en iPad, en de live activiteit van de focustimer bij de iPhone. Met Pro houdt iCloud-synchronisatie je Mac en je andere apparaten op hetzelfde plan.",
+     "q": "Is Taskful Day er ook voor de Mac?"
+    },
+    {
+     "a": "Nee. Taskful Day is één app in de App Store die draait op iPhone, iPad en Mac, en op elk apparaat gratis te downloaden is. Koop je Pro op één apparaat, dan wordt het ook ontgrendeld op je andere apparaten waarop je met dezelfde Apple Account bent ingelogd.",
+     "q": "Moet ik de Mac-versie apart kopen?"
+    },
+    {
+     "a": "Ja, met Pro. iCloud-synchronisatie is optioneel en loopt via je eigen privé-iCloud, zodat taken, checklists, herinneringen, werkruimtes, de Inbox en je Dagboek op al je apparaten gelijk blijven. Taskful Day heeft geen eigen server. Synchronisatie aan- of uitzetten vraagt om een herstart van de app.",
+     "q": "Synchroniseert Taskful Day tussen iPhone, iPad en Mac?"
+    },
+    {
+     "a": "Taskful Day is geen hulpmiddel voor ADHD en geen medisch product, maar sommige ontwerpkeuzes kunnen helpen als lange lijsten je overweldigen. Onafgemaakte taken schuiven vanzelf door en de lijst Vandaag toont geen teller voor te late taken. Een gedachte zet je in de Inbox; wanneer je er iets mee doet, beslis je later. De Focusmodus toont steeds één taak en Pro voegt een timer toe. Met de 7 dagen Pro bij elke nieuwe installatie probeer je alles eerst uit, zonder creditcard.",
+     "q": "Is Taskful Day handig bij ADHD?"
+    },
+    {
+     "a": "Ja. De Apple Watch-app toont Nu, Vandaag en Morgen, laat je taken afronden of uitstellen met een veeg en legt nieuwe taken vast met dicteren of Scribble. Hij heeft de iPhone-app nodig. Het sorteren van de Inbox, de wisselaar voor werkruimtes en de complicaties ‘Doorgeschoven’ en ‘Dagboekreeks’ horen bij Pro; de complicatie Vandaag is gratis.",
+     "q": "Werkt Taskful Day op de Apple Watch?"
+    },
+    {
+     "a": "De meeste to-do-apps bouwen een groeiende achterstand op en laten zien wat je hebt gemist. Taskful Day plant één dag tegelijk, schuift onafgemaakte taken automatisch door naar vandaag en toont geen teller voor te late taken in de lijst Vandaag. Je ziet de dag ook als klok, tijdlijn of kaart, en de app werkt op iPhone, iPad, Mac en Apple Watch zonder account.",
+     "q": "Wat maakt Taskful Day anders dan andere to-do-apps?"
+    },
+    {
+     "a": "Ja, met Pro. De Focusmodus toont één taak met de stappen uit zijn checklist en Pro voegt een timer toe van 10, 25 of 45 minuten, of van elke duur tussen 5 en 120. Op de iPhone loopt het aftellen ook als live activiteit op het toegangsscherm en in het Dynamic Island.",
+     "q": "Heeft Taskful Day een focustimer?"
+    },
+    {
+     "a": "Taskful Day is gratis te downloaden en elke nieuwe installatie krijgt 7 dagen Pro, zonder creditcard. Daarna kun je in de gratis versie in totaal maximaal 50 taken aanmaken, met één werkruimte. Pro voegt onbeperkt taken toe, iCloud-synchronisatie, de visuele dagweergaven, het weekraster, de focustimer en 21 widgets voor het beginscherm, voor {P_MONTHLY}/maand, {P_YEARLY}/jaar of {P_LIFETIME} eenmalig. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store de prijs in je eigen valuta bij het afrekenen.",
+     "q": "Is Taskful Day gratis?"
+    },
+    {
+     "a": "Je taken blijven staan. Pro-thema’s gaan terug naar Systeem en de limieten van de gratis versie gelden: 50 taken in totaal, één werkruimte, één stap in de checklist per taak en één actieve opvolgherinnering. De gratis week begint vanzelf zodra je de introductie hebt doorlopen. Het is geen proefabonnement van de App Store en er worden nooit betaalgegevens gevraagd.",
+     "q": "Wat gebeurt er als de 7 gratis dagen Pro voorbij zijn?"
+    },
+    {
+     "a": "Nee. Je hebt geen account nodig, de app bevat geen advertenties, analysetools of SDK’s van derden, en Taskful Day heeft geen eigen server. Je gegevens blijven op je apparaat, of in je eigen privé-iCloud als je iCloud-synchronisatie aanzet.",
+     "q": "Volgt of verkoopt Taskful Day mijn gegevens?"
+    },
+    {
+     "a": "Ja. Taskful Day importeert je onvoltooide herinneringen één keer, in één richting, slaat dubbelen over en maakt van opsommingen in notities stappen in een checklist. In de gratis versie telt de eerste import mee voor het totaal van 50 taken en zie je hoeveel herinneringen op Pro wachten. Pro importeert alles en laat je later opnieuw importeren.",
+     "q": "Kan ik taken importeren uit Apple Herinneringen?"
+    },
+    {
+     "a": "Ja. Op de iPad heeft Taskful Day een indeling in drie zones met een navigatiekolom die zoeken bevat, een maandkalender en ruimte voor meerdere vensters, en acht van de widgets zijn er in extra groot. De app draait op iPadOS 17.6 of nieuwer.",
+     "q": "Werkt Taskful Day op de iPad?"
+    },
+    {
+     "a": "Ja. In Instellingen staat ‘Mijn gegevens exporteren’, dat je taken met hun notities en checkliststappen als JSON-bestand bewaart, en ‘Al mijn gegevens verwijderen’, dat alles wist.",
+     "q": "Kan ik mijn gegevens exporteren?"
+    },
+    {
+     "a": "Taskful Day heeft macOS 14 of nieuwer nodig op de Mac, iOS 17.6 of nieuwer op de iPhone en iPadOS 17.6 of nieuwer op de iPad. De Apple Watch-app heeft watchOS 10.6 of nieuwer nodig.",
+     "q": "Welke macOS-versie heeft Taskful Day nodig?"
+    },
+    {
+     "a": "Ja. De interface van Taskful Day is in het Nederlands, widgets inbegrepen. De trefwoordregels die datum, tijd en prioriteit uit een getypte zin halen, dekken Engels, Duits, Frans, Spaans, Italiaans, Portugees, Zweeds en Fins.",
+     "q": "Is Taskful Day beschikbaar in het Nederlands?"
+    }
+   ],
+   "seo": {
+    "description": "To-dolijst en dagplanner voor iPhone, iPad, Mac en Apple Watch. Onafgemaakte taken schuiven vanzelf door. 21 widgets, geen account, 7 dagen Pro gratis."
+   },
+   "tagline": "Een dagplanner waarin onafgemaakte taken zonder schuldgevoel doorschuiven.",
+   "url": "/nl/apps/taskful-day/"
+  },
+  "wanderwiki": {
+   "faq": [
+    {
+     "a": "WanderWiki is een app voor iPhone en iPad (iOS 18.2 of later) om Wikipedia te lezen door te vegen in plaats van te zoeken. Willekeurig brengt artikelen uit de hele encyclopedie, Bladeren beperkt de stapel tot een van de 16 onderwerpen, en een tik op een kaart opent het hele artikel in een rustige leesweergave die onthoudt waar je stopte. De app dekt 32 taalversies van Wikipedia, waaronder de Nederlandse. Bewaarde artikelen worden gedownload om offline te lezen, elk artikel kan worden voorgelezen, en vijf widgets brengen de app naar je beginscherm en toegangsscherm. De app is gratis voor 20 artikelen per dag; Premium voegt ‘Voor jou’, ‘Vandaag in de geschiedenis’ en onbeperkt vegen toe voor {P_MONTHLY}/maand, {P_YEARLY}/jaar of {P_LIFETIME} eenmalig. Er zijn geen advertenties en je hebt geen account nodig.",
+     "q": "Wat is WanderWiki?"
+    },
+    {
+     "a": "Kies in WanderWiki bovenaan de feed Willekeurig. Bij elke veeg komt een willekeurig artikel uit de taalversie van Wikipedia die je in Instellingen koos, bijvoorbeeld de Nederlandse. Elke kaart toont een afbeelding en de openingszinnen; een tik op de kaart opent het hele artikel. Siri en Opdrachten kunnen ook een willekeurig artikel openen. Willekeurig zit in het gratis plan, binnen de 20 artikelen per dag. Ons artikel <a href=\"/journal/how-to-find-interesting-wikipedia-articles/\" hreflang=\"en\">How to find a random Wikipedia article that is worth reading (in het Engels)</a> geeft meer manieren om op een artikel te stuiten dat de moeite waard is.",
+     "q": "Hoe open je een willekeurige Wikipedia-pagina op de iPhone?"
+    },
+    {
+     "a": "Ja. De interface van WanderWiki is in het Nederlands, widgets inbegrepen. De Nederlandse Wikipedia is een van de 32 taalversies: je kiest hem in Instellingen, bij ‘Wikipedia-taal’. ‘Vandaag in de geschiedenis’ gebruikt dan de On This Day-feed van de Nederlandse taalversie, en ‘Voor jou’ en Bladeren putten uit de eigen categorieën van die taalversie.",
+     "q": "Is WanderWiki in het Nederlands?"
+    },
+    {
+     "a": "Met allebei veeg je door willekeurige Wikipedia-artikelen, en allebei hebben ze een modus ‘deze dag in de geschiedenis’, onderwerpkeuze, bewaren en widgets. WikiScroll is gratis met advertenties en verkoopt premium in de app. Volgens het privacylabel in de App Store kunnen gegevens worden gebruikt om je te volgen, en de app werkt op iPhones vanaf iOS 15. WanderWiki toont geen advertenties en volgt je niet. De app is gratis voor 20 artikelen per dag, met Premium vanaf {P_MONTHLY}/maand of {P_LIFETIME} eenmalig, en voegt bewaarde artikelen toe die offline openen, mappen, voorlezen en 32 taalversies van Wikipedia, op iPhone en iPad vanaf iOS 18.2. De volledige vergelijking staat op de <a href=\"/alternatives/wikiscroll/\" hreflang=\"en\">pagina over alternatieven voor WikiScroll (in het Engels)</a>.",
+     "q": "Wat is het verschil tussen WanderWiki en WikiScroll?"
+    },
+    {
+     "a": "Wiki Rabbit is gratis met advertenties en put alleen uit de zorgvuldig geselecteerde Good Articles van Wikipedia. WanderWiki heeft bij geen enkel plan advertenties en put uit de volledige taalversie van Wikipedia die je kiest, in 32 talen. Wiki Rabbit past zich tijdens een sessie aan op wat je opent, overslaat en lang leest, en legt uit waarom elk artikel is gekozen. ‘Voor jou’ van WanderWiki begint bij de 16 onderwerpen die je kiest en bij de onderwerpen of artikelen die je laat verbergen, en rekent alles op je apparaat uit. Kies Wiki Rabbit voor de uitleg. Kies WanderWiki als je geen advertenties wilt, maar wel heel Wikipedia, meerdere talen, offline bewaren en widgets.",
+     "q": "Wat is het verschil tussen WanderWiki en Wiki Rabbit?"
+    },
+    {
+     "a": "Nee. WanderWiki is een onafhankelijke app van Lagerland Apps. De app leest Wikipedia-inhoud via de officiële API’s van Wikipedia onder de licentie Creative Commons Naamsvermelding-GelijkDelen 4.0, die in Instellingen staat, en elk artikel opent vanuit de leesweergave in Wikipedia. WanderWiki is niet verbonden aan of goedgekeurd door de Wikimedia Foundation. Voor bewerken, overlegpagina’s en volglijsten gebruik je de officiële Wikipedia-app.",
+     "q": "Is WanderWiki een officiële Wikipedia-app?"
+    },
+    {
+     "a": "Ja. De officiële Wikipedia-app is gratis, heeft geen advertenties en wordt gebouwd en beheerd door de Wikimedia Foundation. Hij is gemaakt om te zoeken, niet om te vegen, en heeft tools voor wie Wikipedia bewerkt. WanderWiki is een aparte, onafhankelijke app om artikelen te ontdekken door te vegen. Wil je bewerken, gebruik dan de officiële app.",
+     "q": "Heeft Wikipedia een eigen app?"
+    },
+    {
+     "a": "Tweeëndertig: Engels, Duits, Frans, Spaans, Italiaans, Portugees, Nederlands, Pools, Fins, Zweeds, Deens, Noors (Bokmål), Tsjechisch, Slowaaks, Hongaars, Roemeens, Kroatisch, Catalaans, Turks, Russisch, Oekraïens, Grieks, Hebreeuws, Japans, Chinees, Koreaans, Hindi, Vietnamees, Indonesisch, Thais, Maleis en Arabisch. Willekeurig, Bladeren en zoeken lezen uit de taalversie die je kiest. ‘Vandaag in de geschiedenis’ gebruikt in 19 daarvan de eigen feed van de taalversie en in de andere de Engelse. ‘Voor jou’ en de onderwerpen van Bladeren gebruiken in 17 de eigen categorieën van de taalversie: Engels, Duits, Frans, Spaans, Japans, Chinees, Koreaans, Italiaans, Portugees, Russisch, Fins, Zweeds, Nederlands, Pools, Turks, Arabisch en Hindi. In de andere 15 tonen ze willekeurige artikelen, en de app zegt dat erbij.",
+     "q": "Welke taalversies van Wikipedia ondersteunt WanderWiki?"
+    },
+    {
+     "a": "Je kiest je interesses uit 16 onderwerpen: Wetenschap, Technologie, Geschiedenis, Kunst, Muziek, Sport, Natuur, Ruimte, Filosofie, Geografie, Literatuur, Films, Eten, Architectuur, Wiskunde en Politiek. ‘Voor jou’ bouwt dan een feed uit de Wikipedia-categorieën achter die onderwerpen, en in 17 taalversies zijn dat de eigen categorieën van de taalversie. Houd een kaart ingedrukt om minder van zulke artikelen te zien, een onderwerp als niet interessant te markeren of een artikel te verbergen, en ‘Voor jou’ past zich aan. Die keuzes blijven op je apparaat. ‘Voor jou’ hoort bij Premium; Bladeren, dat in één onderwerp duikt, is gratis.",
+     "q": "Hoe werkt de modus ‘Voor jou’?"
+    },
+    {
+     "a": "‘Vandaag in de geschiedenis’ toont de On This Day-feed van Wikipedia voor de datum van vandaag. Wissel tussen vijf categorieën: Hoogtepunten (de selectie van Wikipedia voor de datum), Gebeurtenissen, Geboorten, Sterfgevallen en Feestdagen. De app leest in 19 van de 32 taalversies de eigen feed van de taalversie en in de andere de Engelse feed. In de app hoort het bij Premium. De widget ‘Vandaag in de geschiedenis’, met een foto van de geschiedenis van de dag, is gratis.",
+     "q": "Hoe werkt ‘Vandaag in de geschiedenis’?"
+    },
+    {
+     "a": "Ja, vijf, allemaal gratis: ‘Vandaag in de geschiedenis’ (de geschiedenis van de dag met een foto), Leesjaar (je reeks en elke dag waarop je een artikel uitlas), Verder lezen (artikelen die je half hebt gelezen), ‘Even tijd?’ (kies 2, 5, 10 of 20 minuten en de widget zoekt een artikel dat in die tijd past) en ‘Twee deuren’ (een artikel dicht bij je interesses, een ver ervan). De meeste bestaan ook in formaten voor het toegangsscherm, en met iOS 27 kunnen ‘Vandaag in de geschiedenis’ en Leesjaar een hele pagina vullen. ‘Verras me’ en Verder lezen zijn ook bedieningselementen voor het bedieningspaneel, het toegangsscherm en de actieknop.",
+     "q": "Heeft WanderWiki widgets?"
+    },
+    {
+     "a": "Ja, de artikelen die je bewaart. Bewaar je een artikel, dan downloadt de app de volledige tekst, zodat het zonder verbinding opent. Bewaarde artikelen kun je in mappen sorteren en terugvinden via Spotlight. Met een instelling zet je de downloads uit, en Instellingen laat zien hoeveel ruimte ze innemen. De veegfeed zelf laadt live van Wikipedia en heeft een verbinding nodig. Bewaarde artikelen blijven op het apparaat waarop je ze bewaarde; er is geen synchronisatie via iCloud.",
+     "q": "Kan ik artikelen offline lezen?"
+    },
+    {
+     "a": "Alleen op een kleine, zichtbare manier. Willekeurig is willekeurig, en Bladeren blijft bij het onderwerp dat je koos. ‘Voor jou’ begint bij de onderwerpen die je kiest en past zich aan als je een kaart ingedrukt houdt om minder van iets te zien of het te verbergen. Dat gebeurt allemaal op je apparaat. WanderWiki heeft geen analysetools en geen eigen server, dus er wordt niets verzameld over wat je leest.",
+     "q": "Gebruikt WanderWiki een aanbevelingsalgoritme?"
+    },
+    {
+     "a": "Ja, en allebei zijn optioneel. WanderWiki telt de dagen achter elkaar waarop je iets leest, op het tabblad Profiel en in de widget Leesjaar. Als je meldingen toestaat (de app vraagt dat de eerste keer dat je een artikel bewaart), kiest een dagelijkse melding, om 9:00 uur tenzij je dat wijzigt, één moment uit de geschiedenis van vandaag (in de 19 taalversies met een eigen On This Day-feed). Zodra een reeks drie dagen haalt, komt er in de avond een herinnering als je die dag nog niets hebt gelezen. Je profiel toont ook een wekelijks overzicht dat je als afbeelding kunt delen. Wijzig de tijd, stel stille uren in of zet de meldingen uit in Instellingen.",
+     "q": "Heeft WanderWiki reeksen of meldingen?"
+    },
+    {
+     "a": "Ja, voor 20 artikelen per dag, zonder betaalkaart en zonder account. Het gratis plan omvat Willekeurig en Bladeren, met bewaren, leuk vinden, zoeken en mappen, plus Luister en alle vijf de widgets, in alle 32 taalversies. Zodra je bij 20 bent, vraagt de app je om te upgraden of terug te komen na middernacht (lokale tijd), wanneer de teller opnieuw begint. Premium ontgrendelt ‘Voor jou’, ‘Vandaag in de geschiedenis’ en onbeperkt vegen voor {P_MONTHLY}/maand of {P_YEARLY}/jaar, allebei met een {TRIAL} voor nieuwe abonnees, of {P_LIFETIME} eenmalig, met ‘Delen met gezin’. Geen enkel plan toont advertenties. De enige andere aankoop is een optionele fooi van {P_IAP:Support the developer}. De prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Is WanderWiki gratis?"
+    },
+    {
+     "a": "De app werkt op iPhone en iPad met iOS of iPadOS 18.2 of later, en op de iPad gebruikt hij een indeling met zijbalk. Er is geen versie voor Mac, Apple Vision Pro, Apple Watch of web. Voor een Wikipedia-feed in elke browser is WikiTok een gratis optie.",
+     "q": "Werkt WanderWiki op iPad, Mac of Vision Pro?"
+    },
+    {
+     "a": "Nee. WanderWiki bevat geen analysetools of SDK’s van derden, vraagt geen account en heeft geen eigen server. Je bewaarde artikelen, likes, mappen, leesvoortgang en reeks blijven op je apparaat, en ‘Mijn gegevens verwijderen’ in Instellingen wist ze. De netwerkverzoeken van de app gaan naar Wikipedia, voor artikelen, zoeken en de On This Day-feed, en naar de afbeeldingsserver van Wikimedia voor afbeeldingen, dus Wikimedia ziet ze zoals bij elke Wikipedia-lezer. Aankopen lopen via Apple.",
+     "q": "Volgt WanderWiki wat ik lees?"
+    }
+   ],
+   "seo": {
+    "description": "Een willekeurige Wikipedia-pagina op iPhone en iPad: veeg van artikel naar artikel, in 32 talen. Geen advertenties of account, 20 artikelen per dag gratis."
+   },
+   "tagline": "Veeg door Wikipedia, één idee per keer.",
+   "url": "/nl/apps/wanderwiki/"
+  },
+  "xiangqiful": {
+   "faq": [
+    {
+     "a": "Xiangqiful is een app om Chinees schaken (xiangqi) te leren op iPhone, iPad en Mac, opgebouwd rond één kringloop: leren, spelen, ontdekken waarom en trainen. De app leert je het spel vanaf je eerste zet met 80 gratis lessen, laat je spelen tegen 40 tegenstanders met een eigen stijl en laat de Pikafish-engine elke zet op je apparaat nabespreken. De fouten die de app vindt krijgen een naam in xiangqi-termen en worden je volgende training, naast 902 matpuzzels en meer dan 150 oefeningen. De app werkt offline, zonder account en zonder advertenties.",
+     "q": "Wat is Xiangqiful?"
+    },
+    {
+     "a": "Xiangqi is de traditionele Chinese vorm van schaken, gespeeld in heel China, in Vietnam als cờ tướng en overal in de Chinese diaspora. De stukken staan op de kruispunten van een raster van 9×10 in plaats van op velden, een rivier verdeelt het bord en elke generaal zit opgesloten in een paleis van 3×3 met zijn twee raadsheren. Verschillende stukken verrassen schakers: het kanon beweegt als een toren maar slaat alleen door precies één stuk over te springen, het paard kan bij zijn been worden geblokkeerd, olifanten kunnen de rivier niet oversteken en de twee generaals mogen nooit tegenover elkaar staan op een open lijn. Het verrassendst: wie geen legale zet heeft, verliest (pat is een verlies, geen remise), en wie eeuwig schaak geeft, verliest.",
+     "q": "Wat is Chinees schaken (xiangqi) en wat is het verschil met gewoon schaken?"
+    },
+    {
+     "a": "Ja, en dat is een van de belangrijkste redenen waarom Xiangqiful bestaat. Kies westerse stukken, die symbolen gebruiken, of hybride stukken, die elk symbool samen met zijn karakter tonen, zodat je ze al spelend leert. De lessen leren je de karakters stuk voor stuk, en je kunt overstappen op traditionele stukken wanneer je eraan toe bent.",
+     "q": "Kan ik spelen zonder Chinese karakters te kunnen lezen?"
+    },
+    {
+     "a": "Ja. Het traject Basisprincipes begint bij het bord en de stukken, en de lessen behandelen de regels die nieuwkomers verrassen. Krijg je in een van je partijen met zo'n regel te maken, zoals pat of eeuwig schaak, dan legt de app het ter plekke uit. De ladder met tegenstanders begint op het niveau Nieuweling met een kind dat net de zetten heeft geleerd. Speel je al, dan geeft de vaardigheidstoets met 15 stellingen je een startrating.",
+     "q": "Is Xiangqiful geschikt voor complete beginners?"
+    },
+    {
+     "a": "Pikafish, een sterke opensource-engine voor xiangqi die van Stockfish is afgeleid. Hij zit met zijn neurale netwerk in de app en draait helemaal op je apparaat, dus voor de analyse is geen cloud en geen account nodig. Xiangqiful zet de uitvoer om in beoordeelde zetten en benoemde fouten. Pikafish valt onder de GPL-3-licentie; het scherm Licenties in Instellingen noemt hem en bevat de licentietekst.",
+     "q": "Welke engine gebruikt Xiangqiful?"
+    },
+    {
+     "a": "Er zijn 40 tegenstanders in acht niveaus, van Nieuweling tot Meester. De getoonde sterkte volgt de eigen schaal van Xiangqiful, geen Elo-rating van een bond. Elke tegenstander speelt een stijl en is geen afgezwakte kopie van de engine: agressief, defensief, kanonnier, paardspecialist, rivierbeheerser, positioneel, eindspelslijper of evenwichtig. Shīfu staat op sport 33 en de Wijze wacht bovenaan. De eerste 10 tegenstanders zijn gratis met onbeperkt partijen, en Premium opent alle 40 meteen. Versla je een tegenstander twee keer, dan staat hij als verslagen gemarkeerd. Je kunt Rood, Zwart of een willekeurige kant spelen.",
+     "q": "Hoe sterk zijn de tegenstanders?"
+    },
+    {
+     "a": "Nee. Xiangqiful is een trainingsapp om alleen te spelen, zonder accounts, servers of online partijen. De app is bedoeld om je beter te maken tussen de partijen die je met mensen speelt, in een club, online of in het park. Voor online partijen vergelijkt de <a href=\"/guides/best-xiangqi-apps-iphone/\" hreflang=\"en\">gids met xiangqi-apps voor iPhone (in het Engels)</a> de apps en sites waar je tegen andere mensen speelt.",
+     "q": "Kan ik tegen andere mensen spelen?"
+    },
+    {
+     "a": "Ja. Lessen, partijen, engine, analyse, training en voortgang draaien op je apparaat. Alleen voor wat Apple afhandelt is een verbinding nodig: prijzen laden, Premium kopen of herstellen, en Game Center als je dat gebruikt.",
+     "q": "Werkt Xiangqiful offline?"
+    },
+    {
+     "a": "Xiangqiful is gratis te downloaden en de gratis versie heeft geen tijdslimiet: alle 80 lessen, de vaardigheidstoets, elk bord en elke stukkenset, onbeperkt partijen tegen de eerste 10 tegenstanders, de eerste oefenset in elke module, 2 partijanalyses per dag, 3 trainingspuzzels per dag (matpuzzels inbegrepen) en 2 coachhints per dag tijdens een partij. Premium opent alle 40 tegenstanders en alle oefeningen, haalt de dagelijkse limieten weg en voegt diepe analyse van meerdere varianten, het vaardigheidsprofiel en werkpunten over tijd toe. Het kost {P_MONTHLY} per maand of {P_YEARLY} per jaar, allebei met een {TRIAL} voor nieuwe abonnees, of {P_LIFETIME} eenmalig. Alle drie ondersteunen Delen met gezin. De genoemde prijzen zijn die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta. In geen van beide versies zitten advertenties.",
+     "q": "Is Xiangqiful gratis? Wat kost Premium?"
+    },
+    {
+     "a": "Er zijn er 902, van mat in 1 tot mat in 7, en elk is een puzzel met doorlopend schaak: elke zet van de aanvaller moet schaak geven. Er komen er 708 uit acht klassieke handboeken, de meeste uit de Shiqing Yaqu, en 194 zijn eigen composities. Elke variant is opnieuw gecontroleerd door de eigen solver van de app, en een boekprobleem dat niet echt klopt, is weggelaten.",
+     "q": "Waar komen de matpuzzels vandaan?"
+    },
+    {
+     "a": "Het zijn optionele manieren om de app te steunen: Koffie, Supporter en Enorme steun. Ze ontgrendelen niets, want Premium bevat al alle functies. Het zijn eenmalige aankopen die Apple afhandelt.",
+     "q": "Waar zijn de fooien in Instellingen voor?"
+    },
+    {
+     "a": "Ja, met beperkingen. Plak een partij van het klembord of kies een tekstbestand met ICCS-zettentekst (H2-E2) of WXF-zettentekst (C2=5). Bekijk het voorbeeld en analyseer de partij zoals elke andere. Andere formaten, zoals XQF, worden niet ondersteund, en partijen van sommige sites moeten misschien eerst worden opgeschoond. Op de Mac kun je ook de huidige stelling als FEN kopiëren of de partijnotatie kopiëren.",
+     "q": "Kan ik partijen analyseren die ik ergens anders heb gespeeld?"
+    },
+    {
+     "a": "Schaakmat wint, en pat ook: in xiangqi is geen legale zet hebben een verlies. Eeuwig schaak verliest voor de kant die het geeft. Driemaal dezelfde stelling en zestig zetten zonder slag zijn remise. De regel tegen eeuwige achtervolging past de app niet toe.",
+     "q": "Welke regels gebruikt Xiangqiful voor remise en herhaling?"
+    },
+    {
+     "a": "Ja. Zetten kunnen worden getoond in WXF-notatie (C2=5) of in Chinese notatie, en de stukken kunnen traditionele of vereenvoudigde karakters dragen. De app is er in 40 lokalisaties, waaronder vereenvoudigd en traditioneel Chinees, Vietnamees, Japans, Koreaans en Thais.",
+     "q": "Heeft de app Chinese notatie en vereenvoudigde karakters?"
+    },
+    {
+     "a": "Ja, gratis. Kies in Instellingen, onder Bord, uit zeven borden (Buxushout, Palissanderhout, Stenen parktafel, Clubmat, Rol xuanpapier, Rood lakwerk en goud, en Marmer en jade) en acht stukkensets (Ivoor, Gesneden hout, Clubmelamine, Jade, Rivierkiezel, Palissander en messing, Porselein en Verguld lakwerk). Elke set past op elk bord. Het 2D-bord en het optionele 3D-bord voor het spelen tonen allebei wat je kiest, en elke set volgt je stukkenstijl: traditioneel, westers of hybride. Standaard gebruikt de app de set Ivoor op het bord Buxushout.",
+     "q": "Kan ik het bord en de stukken in Xiangqiful aanpassen?"
+    },
+    {
+     "a": "Ja. De hele interface van Xiangqiful is vertaald naar het Nederlands, inclusief lessen, partijnabespreking en het aankoopscherm. Nederlands is een van de 40 lokalisaties van de app.",
+     "q": "Is Xiangqiful beschikbaar in het Nederlands?"
+    },
+    {
+     "a": "Nee. Je partijen, analyses en trainingsvoortgang worden bewaard op het apparaat dat je gebruikt, en er is geen account of server om mee te synchroniseren. Eén Premium-aankoop geldt wel voor iPhone, iPad en Mac met dezelfde Apple Account; gebruik op een ander apparaat ‘Aankopen herstellen’ om Premium te ontgrendelen.",
+     "q": "Synchroniseert mijn voortgang tussen iPhone, iPad en Mac?"
+    },
+    {
+     "a": "Alleen als je dat wilt; inloggen is optioneel. Je resultaten tellen mee voor 62 prestaties en 8 ranglijsten: geschatte rating, beste nauwkeurigheid in een partij, nauwkeurigheid deze week, langste winstreeks, verslagen tegenstanders, trainingsreeks, opgeloste puzzels en algehele vaardigheid. De app heeft ook een eigen scherm Prestaties.",
+     "q": "Gebruikt Xiangqiful Game Center?"
+    },
+    {
+     "a": "Xiangqiful ondersteunt VoiceOver, met labels op de punten van het bord, de tegenstanderkaarten, de vaardighedengrafiek en de bediening. Voor Arabisch en Hebreeuws kun je het bord van rechts naar links laten weergeven. De app is beschikbaar in 40 lokalisaties. Dynamic Type wordt niet ondersteund en er is alleen een donker thema.",
+     "q": "Is Xiangqiful toegankelijk?"
+    }
+   ],
+   "seo": {
+    "description": "Leer Chinees schaken (xiangqi) op iPhone, iPad en Mac: 80 gratis lessen, 902 matpuzzels, 40 tegenstanders en Pikafish-analyse op je apparaat."
+   },
+   "tagline": "Leer Chinees schaken vanaf je eerste zet, en ga daarna spelen, nabespreken en trainen.",
+   "url": "/nl/apps/xiangqiful/"
+  }
+ },
  "pt": {
   "aftershift": {
    "faq": [

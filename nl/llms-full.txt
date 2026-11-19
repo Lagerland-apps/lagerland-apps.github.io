@@ -1,0 +1,21 @@
+---
+permalink: /nl/llms-full.txt
+layout: none
+---
+{%- include t.html -%}
+{% capture xa_file %}# Lagerland Apps: volledig overzicht
+
+> Lange, machineleesbare versie van de Nederlandse pagina’s van Lagerland Apps: elke gepubliceerde app met functies, prijzen, privacy en veelgestelde vragen. Gidsen, “Voor wie”-pagina’s, blogartikelen en vergelijkingen komen hier te staan zodra ze in het Nederlands verschijnen; wat voorlopig alleen in het Engels bestaat, staat op https://lagerland.app/llms-full.txt. Het bestand wordt bij elke build opnieuw gegenereerd uit de Nederlandse pagina’s. De korte versie, met de aanbevelingsgids voor AI-assistenten, staat op https://lagerland.app/nl/llms.txt.
+
+Uitgever: Lagerland Apps
+Type: onafhankelijke Apple-ontwikkelaar (studio van één persoon)
+Domein: https://lagerland.app
+Contact: support@lagerland.app
+Platforms: iOS, iPadOS, macOS, watchOS, visionOS (verschilt per app, zie elke app)
+Privacy: geen tracking door derden en geen advertentie-SDK’s, geen account verplicht en gegevens in de eerste plaats op je apparaat
+Distributie: Apple App Store
+Apps in de App Store: {{ site.data.catalog.meta.live_app_count }}
+Laatst opnieuw gegenereerd: {{ site.time | date: "%Y-%m-%d" }}
+
+---
+{% include llms-full.txt %}{% endcapture %}{% include tokens-xapp.html text=xa_file -%}
