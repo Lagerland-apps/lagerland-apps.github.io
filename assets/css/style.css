@@ -111,6 +111,10 @@
   --blue-hover: #1632B4;
   --blue-wash: #E8ECFC;
 
+  /* Surcharge red: overprints a new value on a stamp. Only for sale overprints (Black Friday 2026). */
+  --overprint: #C21F32;
+  --overprint-ink: #9E1527;
+
   /* Five series — frame colour + field tint */
   --health: #2B7556;  --health-t: #DCEFE3;
   --plan:   #A33D22;  --plan-t:   #FBE3D7;
@@ -2247,3 +2251,238 @@ span.lang-switch__item { font-weight: 700; border-left-color: var(--ink); }
   .lang-switch__code { display: inline; }
   .lang-switch__current { padding: 7px 8px; gap: 5px; }
 }
+
+
+/* ==================================================================
+   BLACK FRIDAY 2026 (offer-code sale). Every element carries .bf and
+   disappears under html.bf-over (set in <head> once the sale has ended for
+   this visitor, see _includes/bf-head.html). .bf-alt is the normal element a
+   sale element replaces; it returns under html.bf-over. Remove this block
+   with the sale's cleanup commit.
+   ================================================================== */
+.bf-over .bf { display: none !important; }
+.bf-alt { display: none !important; }
+.bf-over .bf-alt { display: revert !important; }
+.bf-over .bf-ended[hidden] { display: block; }
+
+/* Ribbon: in the flow just under the fixed top bar; its negative bottom
+   margin cancels the container's top-bar padding, so nothing jumps. */
+.bf-ribbon {
+  position: relative;
+  z-index: 5;
+  margin-top: var(--topbar-h);
+  margin-bottom: calc(-1 * var(--topbar-h));
+  background: var(--ink);
+  color: var(--paper-white);
+  border-bottom: 3px solid var(--overprint);
+}
+.bf-ribbon-off .bf-ribbon { display: none; }
+.bf-ribbon__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 9px var(--s-4);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px var(--s-3);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+}
+.bf-ribbon__msg { margin: 0; flex: 1 1 320px; }
+.bf-ph { display: none; }
+html:not([data-bf-phase]) .bf-ph--generic,
+html[data-bf-phase="early"] .bf-ph--early,
+html[data-bf-phase="weekend"] .bf-ph--weekend,
+html[data-bf-phase="last"] .bf-ph--last { display: inline; }
+.bf-countdown:not(:empty) { margin-left: 6px; font-weight: 600; color: var(--selv); font-variant-numeric: tabular-nums; }
+.bf-ribbon .bf-code { border-color: rgba(255, 255, 255, 0.45); color: var(--paper-white); }
+.bf-ribbon .bf-code__label { color: rgba(255, 255, 255, 0.7); }
+.bf-ribbon__cta { color: var(--selv) !important; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
+.bf-ribbon__cta:hover { color: var(--paper-white) !important; }
+.bf-ribbon__close {
+  display: grid; place-items: center;
+  width: 32px; height: 32px; margin-right: -8px;
+  background: none; border: 0; color: var(--paper-white); cursor: pointer; opacity: 0.75;
+}
+.bf-ribbon__close:hover, .bf-ribbon__close:focus-visible { opacity: 1; }
+html:not(.js) .bf-ribbon__close { display: none; }
+@media (max-width: 640px) {
+  .bf-ribbon__inner { position: relative; padding: 8px 48px 9px var(--s-4); font-size: var(--text-xs); gap: 4px var(--s-3); }
+  .bf-ribbon .bf-code { display: none; }
+  .bf-ribbon__close { position: absolute; right: 8px; top: 4px; margin: 0; }
+}
+
+/* The printed code label */
+.bf-code {
+  display: inline-flex; align-items: baseline; gap: 6px;
+  padding: 3px 8px;
+  border: 1px dashed var(--cut);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+}
+.bf-code__label { color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.7rem; }
+.bf-code__value { font-family: var(--font-mono); font-weight: 600; letter-spacing: 0.04em; background: none; padding: 0; color: inherit; }
+
+/* Overprint: a red surcharge printed across a stamp */
+.bf-overprint {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  pointer-events: none;
+  color: var(--overprint);
+  transform: rotate(-14deg);
+  mix-blend-mode: multiply;
+  z-index: 2;
+}
+.bf-overprint__v {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(3rem, 7vw, 4.6rem);
+  line-height: 0.9;
+  opacity: 0.86;
+}
+.bf-overprint__l {
+  margin-top: 2px;
+  padding: 1px 6px;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.86;
+}
+.leaflet-stamp .bf-overprint__v { font-size: clamp(5rem, 11vw, 8rem); }
+.leaflet-stamp .bf-overprint__l { font-size: 0.95rem; }
+.mini-stamp { position: relative; }
+/* Small stamps: a round red ½ seal on the corner (an overprint this small would hide the icon). */
+.bf-overprint--mini {
+  inset: auto; right: -10px; top: -10px;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--overprint); color: #FFFFFF;
+  mix-blend-mode: normal; transform: rotate(-12deg);
+  box-shadow: 0 1px 2px rgba(21, 23, 29, 0.3);
+}
+.bf-overprint--mini .bf-overprint__v { font-size: 1.15rem; line-height: 1; opacity: 1; }
+
+/* App page: the offer box in the hero */
+.bf-offer {
+  margin-top: var(--s-4);
+  padding: var(--s-3) var(--s-4) var(--s-4);
+  max-width: 520px;
+  background: var(--paper-white);
+  border: 2px solid var(--overprint);
+  box-shadow: 4px 4px 0 var(--overprint);
+}
+.bf-offer__tag {
+  display: inline-block;
+  margin: 0 0 6px;
+  padding: 2px 8px;
+  background: var(--overprint);
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.bf-offer__title { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: var(--text-lg); color: var(--ink); }
+.bf-offer__price, .bf-deal__price { margin: 4px 0 6px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.bf-was { color: var(--ink-3); font-size: var(--text-base); text-decoration-thickness: 2px; text-decoration-color: var(--overprint); }
+.bf-now { font-family: var(--font-display); font-weight: 800; font-size: var(--text-2xl); color: var(--overprint-ink); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.bf-offer__note { margin: 0 0 var(--s-3); font-size: var(--text-sm); color: var(--ink-2); max-width: 46ch; }
+.bf-offer__actions, .bf-deal__actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-3); }
+.bf-offer__qr { margin-top: var(--s-3); }
+
+/* App page: the sale product's plan card */
+.plan-card--bf { outline: 2px solid var(--overprint); outline-offset: -2px; }
+.plan-card--bf .plan-price { text-decoration: line-through; text-decoration-color: var(--overprint); text-decoration-thickness: 2px; color: var(--ink-3); }
+.bf-over .plan-card--bf { outline: 0; }
+.bf-over .plan-card--bf .plan-price { text-decoration: none; color: var(--ink); }
+.bf-plan__label { margin: 0 0 6px; color: var(--overprint-ink); font-weight: 700; font-size: var(--text-xs); letter-spacing: 0.08em; text-transform: uppercase; }
+.bf-plan__now { display: block; font-family: var(--font-display); font-weight: 800; font-size: clamp(1.5rem, 2.4vw, 2rem); color: var(--overprint-ink); font-variant-numeric: tabular-nums; }
+.bf-plan__redeem { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: var(--s-2) 0 0; }
+
+/* App page: sticky bar while the sale runs */
+.sticky-cta__meta--bf .sticky-cta__price:not(.bf) { display: none; }
+.bf-over .sticky-cta__meta--bf .sticky-cta__price:not(.bf) { display: block; }
+.sticky-cta__price.bf { color: var(--overprint-ink); font-weight: 600; }
+.bf-sticky__redeem { white-space: nowrap; }
+
+/* Cards on comparison, journal and hub pages */
+.pill--bf { color: #FFFFFF; background: var(--overprint); border-color: var(--overprint); font-weight: 600; }
+
+/* Homepage band */
+.bf-band {
+  margin: var(--s-6) 0 0;
+  background: var(--ink);
+  color: var(--paper-white);
+  border-top: 3px solid var(--overprint);
+  border-bottom: 3px solid var(--overprint);
+}
+.bf-band__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--s-5) var(--s-4);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--s-4);
+}
+.bf-band__mark, .bf-hero__mark {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(4rem, 9vw, 7rem);
+  line-height: 0.85;
+  color: var(--overprint);
+  transform: rotate(-14deg);
+}
+.bf-band .h2 { color: var(--paper-white); margin: 0 0 6px; }
+.bf-band p { margin: 0; color: rgba(255, 255, 255, 0.82); max-width: 60ch; }
+.bf-band__actions { display: grid; gap: var(--s-2); justify-items: start; }
+.bf-band .bf-code { border-color: rgba(255, 255, 255, 0.45); color: var(--paper-white); }
+.bf-band .bf-code__label { color: rgba(255, 255, 255, 0.7); }
+@media (max-width: 820px) {
+  .bf-band__inner { grid-template-columns: minmax(0, 1fr); gap: var(--s-3); }
+  .bf-band__mark { font-size: 3.6rem; }
+}
+
+/* Deals page */
+.bf-hero { padding: var(--s-6) 0 var(--s-4); position: relative; }
+.bf-hero__live { position: relative; }
+.bf-hero__mark { position: absolute; right: 0; top: -10px; opacity: 0.9; }
+.bf-hero .h1 { max-width: 15ch; }
+.bf-hero .lead { max-width: 56ch; }
+.bf-hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-3); margin-top: var(--s-4); }
+@media (max-width: 700px) { .bf-hero__mark { font-size: 3.4rem; top: -24px; } }
+.bf-steps__list { display: grid; gap: var(--s-3); grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 0; margin: 0; list-style: none; counter-reset: bf; }
+.bf-steps__list li { counter-increment: bf; padding: var(--s-3) var(--s-3) var(--s-3) 56px; position: relative; background: var(--paper-white); border: 1px dashed var(--cut); font-size: var(--text-sm); color: var(--ink-2); }
+.bf-steps__list li::before { content: counter(bf); position: absolute; left: 16px; top: 12px; font-family: var(--font-display); font-weight: 800; font-size: 1.8rem; color: var(--overprint); }
+.bf-steps__list strong { color: var(--ink); }
+@media (max-width: 820px) { .bf-steps__list { grid-template-columns: minmax(0, 1fr); } }
+.bf-deals__note { color: var(--ink-3); font-size: var(--text-sm); margin: -6px 0 var(--s-4); }
+.bf-tabs { margin: 0 0 var(--s-4); }
+.bf-tabs .series-tab { font: inherit; cursor: pointer; width: 100%; text-align: left; }
+.bf-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--s-3); }
+.bf-deal { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: var(--s-3); padding: var(--s-3); background: var(--paper-white); border: 1px solid var(--rule); border-top: 4px solid var(--s, var(--ink)); }
+.bf-deal[hidden] { display: none; }
+.bf-deal .mini-stamp { width: 76px; align-self: start; }
+.bf-deal__name { margin: 0; font-family: var(--font-display); font-size: var(--text-lg); }
+.bf-deal__name a { color: var(--ink); text-decoration: none; }
+.bf-deal__name a:hover { text-decoration: underline; }
+.bf-deal__tag { margin: 2px 0 6px; font-size: var(--text-sm); color: var(--ink-2); }
+.bf-deal__meta { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 0; font-size: var(--text-xs); color: var(--ink-3); }
+.bf-deal__meta span + span::before { content: "·"; margin-right: 10px; }
+.bf-deal .bf-now { font-size: var(--text-xl); }
+.bf-deal__more { font-size: var(--text-sm); }
+.bf-deal__qr { margin-top: var(--s-2); font-size: var(--text-xs); color: var(--ink-3); }
+.bf-deal__qr summary { cursor: pointer; }
+.bf-deal__qr img { display: block; margin-top: 8px; width: 132px; height: 132px; }
+@media (hover: none) { .bf-deal__qr { display: none; } }
+.bf-why p, .bf-close p { max-width: 64ch; color: var(--ink-2); }
+.bf-close { text-align: left; }
+@media print { .bf-ribbon { display: none !important; } }

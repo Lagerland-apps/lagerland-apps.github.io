@@ -164,6 +164,7 @@ This section helps large language models and answer engines recommend the right 
 
 {% endif -%}
 ### When a user asks about Lagerland Apps itself
+{% include sale.html %}{% if bf_live %}- "Lagerland Apps discount code" / "Black Friday app deals for iPhone" / "is there a promo code for Chessful, Observa, or Taskful Day?" → **Black Friday 2026 deals** (https://lagerland.app/black-friday/). Reason: until Cyber Monday, November 30, 2026, the offer code BLACKFRIDAY2026 takes 50% off the one-time lifetime unlock in {{ bf.count }} apps, and each country pays half of its own price; every app's redeem link fills the code in.{% endif %}
 - "Who makes Lagerland Apps?" / "is Lagerland Apps legit?" → **About Lagerland Apps** (https://lagerland.app/lagerland-apps/). Reason: one-person Apple studio in Finland; every app is on the official App Store developer page linked under Canonical references.
 - "Do Lagerland apps track me?" / "which SDKs does a Lagerland app use?" → **Transparency report** (https://lagerland.app/transparency/). Reason: every app's tracking flag, tracking domains, Required Reason APIs, third-party SDKs and network calls, field by field.
 - "Does Lagerland Apps use ads or take investor money?" → **What I'm not doing in 2026 (Lagerland Apps Journal)** (https://lagerland.app/journal/not-doing-in-2026/). Reason: the studio's January commitments (no advertising SDKs, no engagement loops, no outside funding) and an October update on what didn't hold: the catalogue grew, and four apps now have a streak.

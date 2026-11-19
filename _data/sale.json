@@ -1,0 +1,1724 @@
+{
+ "id": "black-friday-2026",
+ "code": "BLACKFRIDAY2026",
+ "percent": 50,
+ "starts": "2026-11-19",
+ "weekend": "2026-11-27",
+ "last_day": "2026-11-30",
+ "hide_after_utc": "2026-12-01T08:00:00Z",
+ "hide_after_epoch": 1796112000,
+ "source": "App Store Connect offer-code prices, read back 2026-11-19",
+ "apps": {
+  "observa": {
+   "app_id": "6757438990",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6757438990&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "49.99",
+     "sale": "24.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "59.99",
+     "sale": "29.99"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "59.99",
+     "sale": "29.99"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "59.99",
+     "sale": "29.99"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "59.99",
+     "sale": "29.99"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "59.99",
+     "sale": "29.99"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "168.0",
+     "sale": "84.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "8000",
+     "sale": "4000"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "66000",
+     "sale": "33000"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "349000",
+     "sale": "174000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "399.0",
+     "sale": "199.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "129.9",
+     "sale": "64.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "129.99",
+     "sale": "64.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "699.99",
+     "sale": "349.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "59.99",
+     "sale": "29.99"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "4490.0",
+     "sale": "2250.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "199.99",
+     "sale": "99.99"
+    }
+   }
+  },
+  "aftershift": {
+   "app_id": "6757163182",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6757163182&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "39.99",
+     "sale": "19.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "128.0",
+     "sale": "64.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "6000",
+     "sale": "3000"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "55000",
+     "sale": "27500"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "299000",
+     "sale": "149000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "399.0",
+     "sale": "199.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "99.9",
+     "sale": "49.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "99.99",
+     "sale": "49.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "599.99",
+     "sale": "299.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "3490.0",
+     "sale": "1750.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "179.99",
+     "sale": "89.99"
+    }
+   }
+  },
+  "pawza": {
+   "app_id": "6773507068",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6773507068&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "39.99",
+     "sale": "19.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "78.0",
+     "sale": "39.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "6000",
+     "sale": "3000"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "66000",
+     "sale": "33000"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "199000",
+     "sale": "99900"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "299.0",
+     "sale": "149.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "79.9",
+     "sale": "39.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "99.99",
+     "sale": "49.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "399.99",
+     "sale": "199.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "3490.0",
+     "sale": "1750.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "179.99",
+     "sale": "89.99"
+    }
+   }
+  },
+  "taskful-day": {
+   "app_id": "6757345400",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6757345400&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "39.99",
+     "sale": "19.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "128.0",
+     "sale": "64.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "6000",
+     "sale": "3000"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "66000",
+     "sale": "33000"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "299000",
+     "sale": "149000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "399.0",
+     "sale": "199.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "99.9",
+     "sale": "49.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "99.99",
+     "sale": "49.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "1499.99",
+     "sale": "749.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "3490.0",
+     "sale": "1750.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "179.99",
+     "sale": "89.99"
+    }
+   }
+  },
+  "mediakit": {
+   "app_id": "6761451361",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6761451361&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "39.99",
+     "sale": "19.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "128.0",
+     "sale": "64.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "6000",
+     "sale": "3000"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "55000",
+     "sale": "27500"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "299000",
+     "sale": "149000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "399.0",
+     "sale": "199.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "99.9",
+     "sale": "49.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "99.99",
+     "sale": "49.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "599.99",
+     "sale": "299.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "3490.0",
+     "sale": "1750.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "179.99",
+     "sale": "89.99"
+    }
+   }
+  },
+  "gymlogger-x": {
+   "app_id": "6755734580",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6755734580&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "39.99",
+     "sale": "19.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "128.0",
+     "sale": "64.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "6000",
+     "sale": "3000"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "55000",
+     "sale": "27500"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "299000",
+     "sale": "149000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "399.0",
+     "sale": "199.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "99.9",
+     "sale": "49.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "99.99",
+     "sale": "49.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "599.99",
+     "sale": "299.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "44.99",
+     "sale": "22.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "3490.0",
+     "sale": "1750.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "179.99",
+     "sale": "89.99"
+    }
+   }
+  },
+  "appmeta": {
+   "app_id": "6758547802",
+   "iap_label": null,
+   "plan_index": 1,
+   "family_sharing": false,
+   "iphone": false,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6758547802&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "34.99",
+     "sale": "17.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "34.99",
+     "sale": "17.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "34.99",
+     "sale": "17.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "34.99",
+     "sale": "17.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "34.99",
+     "sale": "17.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "198.0",
+     "sale": "99.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "5000",
+     "sale": "2500"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "49000",
+     "sale": "24500"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "599000",
+     "sale": "299000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "599.0",
+     "sale": "299.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "199.9",
+     "sale": "99.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "129.99",
+     "sale": "64.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "1499.99",
+     "sale": "749.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "34.99",
+     "sale": "17.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "2490.0",
+     "sale": "1240.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "129.99",
+     "sale": "64.99"
+    }
+   }
+  },
+  "chessful": {
+   "app_id": "6761336870",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6761336870&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "128.0",
+     "sale": "64.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "3000",
+     "sale": "1500"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "49000",
+     "sale": "24500"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "299000",
+     "sale": "149000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "299.0",
+     "sale": "149.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "79.9",
+     "sale": "39.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "99.99",
+     "sale": "49.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "599.99",
+     "sale": "299.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "34.99",
+     "sale": "17.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "2490.0",
+     "sale": "1240.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "129.99",
+     "sale": "64.99"
+    }
+   }
+  },
+  "allpaid": {
+   "app_id": "6757253009",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6757253009&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "24.99",
+     "sale": "12.49"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "68.0",
+     "sale": "34.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "4000",
+     "sale": "2000"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "33000",
+     "sale": "16500"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "179000",
+     "sale": "89000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "199.0",
+     "sale": "99.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "79.9",
+     "sale": "39.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "69.99",
+     "sale": "34.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "499.99",
+     "sale": "249.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "2290.0",
+     "sale": "1140.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "99.99",
+     "sale": "49.99"
+    }
+   }
+  },
+  "wanderwiki": {
+   "app_id": "6758459119",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6758459119&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "24.99",
+     "sale": "12.49"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "68.0",
+     "sale": "34.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "4000",
+     "sale": "2000"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "33000",
+     "sale": "16500"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "149000",
+     "sale": "74000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "199.0",
+     "sale": "99.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "59.9",
+     "sale": "29.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "59.99",
+     "sale": "29.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "349.99",
+     "sale": "174.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "2290.0",
+     "sale": "1140.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "99.99",
+     "sale": "49.99"
+    }
+   }
+  },
+  "shogiful": {
+   "app_id": "6761656926",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6761656926&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "19.99",
+     "sale": "9.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "148.0",
+     "sale": "74.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "3000",
+     "sale": "1500"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "33000",
+     "sale": "16500"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "399000",
+     "sale": "199000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "399.0",
+     "sale": "199.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "129.9",
+     "sale": "64.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "99.99",
+     "sale": "49.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "999.99",
+     "sale": "499.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "1790.0",
+     "sale": "895.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "89.99",
+     "sale": "44.99"
+    }
+   }
+  },
+  "xiangqiful": {
+   "app_id": "6794340136",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6794340136&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "19.99",
+     "sale": "9.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "148.0",
+     "sale": "74.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "3000",
+     "sale": "1500"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "33000",
+     "sale": "16500"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "399000",
+     "sale": "199000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "399.0",
+     "sale": "199.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "129.9",
+     "sale": "64.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "99.99",
+     "sale": "49.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "999.99",
+     "sale": "499.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "1790.0",
+     "sale": "895.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "89.99",
+     "sale": "44.99"
+    }
+   }
+  },
+  "earnlock": {
+   "app_id": "6771099230",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6771099230&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "19.99",
+     "sale": "9.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "58.0",
+     "sale": "29.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "3000",
+     "sale": "1500"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "29000",
+     "sale": "14500"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "129000",
+     "sale": "64000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "129.0",
+     "sale": "64.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "59.9",
+     "sale": "29.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "49.99",
+     "sale": "24.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "249.99",
+     "sale": "124.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "22.99",
+     "sale": "11.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "1790.0",
+     "sale": "895.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "89.99",
+     "sale": "44.99"
+    }
+   }
+  },
+  "appmeta-pulse": {
+   "app_id": "6758788164",
+   "iap_label": null,
+   "plan_index": 2,
+   "family_sharing": false,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6758788164&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "12.99",
+     "sale": "6.49"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "88.0",
+     "sale": "44.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "2000",
+     "sale": "1000"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "22000",
+     "sale": "11000"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "249000",
+     "sale": "124000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "299.0",
+     "sale": "149.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "79.9",
+     "sale": "39.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "59.99",
+     "sale": "29.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "699.99",
+     "sale": "349.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "999.0",
+     "sale": "499.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "59.99",
+     "sale": "29.99"
+    }
+   }
+  },
+  "soon": {
+   "app_id": "6757280643",
+   "iap_label": null,
+   "plan_index": 3,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6757280643&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "12.99",
+     "sale": "6.49"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "38.0",
+     "sale": "19.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "2000",
+     "sale": "1000"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "22000",
+     "sale": "11000"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "99000",
+     "sale": "49000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "129.0",
+     "sale": "64.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "49.9",
+     "sale": "24.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "39.99",
+     "sale": "19.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "249.99",
+     "sale": "124.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "999.0",
+     "sale": "499.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "59.99",
+     "sale": "29.99"
+    }
+   }
+  },
+  "rightsplit": {
+   "app_id": "6757268612",
+   "iap_label": null,
+   "plan_index": 2,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6757268612&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "7.99",
+     "sale": "3.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "8.99",
+     "sale": "4.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "8.99",
+     "sale": "4.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "8.99",
+     "sale": "4.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "8.99",
+     "sale": "4.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "8.99",
+     "sale": "4.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "58.0",
+     "sale": "29.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "1300",
+     "sale": "650"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "12000",
+     "sale": "6000"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "149000",
+     "sale": "74000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "179.0",
+     "sale": "89.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "49.9",
+     "sale": "24.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "39.99",
+     "sale": "19.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "399.99",
+     "sale": "199.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "8.99",
+     "sale": "4.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "699.0",
+     "sale": "349.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "34.99",
+     "sale": "17.49"
+    }
+   }
+  },
+  "tare": {
+   "app_id": "6806255929",
+   "iap_label": "Tare Full Access",
+   "plan_index": 1,
+   "family_sharing": true,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6806255929&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "2.99",
+     "sale": "1.49"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "2.99",
+     "sale": "1.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "2.99",
+     "sale": "1.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "2.99",
+     "sale": "1.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "2.99",
+     "sale": "1.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "2.99",
+     "sale": "1.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "22.0",
+     "sale": "11.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "500",
+     "sale": "250"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "4400",
+     "sale": "2200"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "59000",
+     "sale": "29500"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "69.0",
+     "sale": "34.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "19.9",
+     "sale": "9.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "14.99",
+     "sale": "7.49"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "149.99",
+     "sale": "74.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "2.99",
+     "sale": "1.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "249.0",
+     "sale": "125.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "12.99",
+     "sale": "6.49"
+    }
+   }
+  },
+  "millrace": {
+   "app_id": "6759511759",
+   "iap_label": "Millrace Complete Collection",
+   "plan_index": 2,
+   "family_sharing": false,
+   "iphone": true,
+   "redeem_url": "https://apps.apple.com/redeem?ctx=offercodes&id=6759511759&code=BLACKFRIDAY2026",
+   "prices": {
+    "USA": {
+     "currency": "USD",
+     "regular": "5.99",
+     "sale": "2.99"
+    },
+    "DEU": {
+     "currency": "EUR",
+     "regular": "6.99",
+     "sale": "3.49"
+    },
+    "FRA": {
+     "currency": "EUR",
+     "regular": "6.99",
+     "sale": "3.49"
+    },
+    "ITA": {
+     "currency": "EUR",
+     "regular": "6.99",
+     "sale": "3.49"
+    },
+    "ESP": {
+     "currency": "EUR",
+     "regular": "6.99",
+     "sale": "3.49"
+    },
+    "PRT": {
+     "currency": "EUR",
+     "regular": "6.99",
+     "sale": "3.49"
+    },
+    "CHN": {
+     "currency": "CNY",
+     "regular": "38.0",
+     "sale": "19.0"
+    },
+    "JPN": {
+     "currency": "JPY",
+     "regular": "1000",
+     "sale": "500"
+    },
+    "KOR": {
+     "currency": "KRW",
+     "regular": "9900",
+     "sale": "4900"
+    },
+    "IDN": {
+     "currency": "IDR",
+     "regular": "119000",
+     "sale": "59000"
+    },
+    "MEX": {
+     "currency": "MXN",
+     "regular": "129.0",
+     "sale": "64.0"
+    },
+    "BRA": {
+     "currency": "BRL",
+     "regular": "39.9",
+     "sale": "19.99"
+    },
+    "POL": {
+     "currency": "PLN",
+     "regular": "29.99",
+     "sale": "14.99"
+    },
+    "TUR": {
+     "currency": "TRY",
+     "regular": "299.99",
+     "sale": "149.99"
+    },
+    "NLD": {
+     "currency": "EUR",
+     "regular": "6.99",
+     "sale": "3.49"
+    },
+    "RUS": {
+     "currency": "RUB",
+     "regular": "499.0",
+     "sale": "249.0"
+    },
+    "SAU": {
+     "currency": "SAR",
+     "regular": "24.99",
+     "sale": "12.49"
+    }
+   }
+  }
+ },
+ "count": 18
+}

@@ -6,6 +6,7 @@
   hides content under html.js, so no-JS visitors (and crawlers) always get
   fully visible pages. {% endcomment %}
 <script>document.documentElement.classList.add('js');</script>
+{% include bf-head.html %}
 
 {%- comment %} Safari Smart App Banner: on iOS this shows Apple's native
   VIEW/OPEN install prompt at the top of the app page, deep-linking straight

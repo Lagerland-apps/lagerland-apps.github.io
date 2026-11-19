@@ -1,0 +1,20 @@
+{%- comment -%} Black Friday 2026: the band under the homepage stamp sheet, in every language. {%- endcomment -%}
+{%- include sale.html -%}
+{%- if bf_live -%}
+{%- assign _bb_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- capture _bb_href -%}{% include l.html url="/black-friday/" %}{%- endcapture -%}
+{%- assign _bb_text = _bb_t.bf_band_text | replace: "{count}", bf.count -%}{%- assign _bb_cta = _bb_t.bf_band_cta | replace: "{count}", bf.count -%}
+<section class="bf bf-band" aria-labelledby="bf-band-title">
+  <div class="bf-band__inner">
+    <span class="bf-band__mark" aria-hidden="true">&frac12;</span>
+    <div class="bf-band__text">
+      <h2 id="bf-band-title" class="h2">{{ _bb_t.bf_band_title }}</h2>
+      <p>{{ _bb_text }}</p>
+    </div>
+    <div class="bf-band__actions">
+      <a class="btn btn-primary" href="{{ _bb_href }}"{% if l_en %} hreflang="en"{% endif %} data-goatcounter-click="bf-band-cta">{{ _bb_cta }}</a>
+      {% include bf-code.html where="home" %}
+    </div>
+  </div>
+</section>
+{%- endif -%}

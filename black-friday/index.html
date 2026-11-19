@@ -1,0 +1,156 @@
+---
+layout: default
+permalink: /black-friday/
+title: "Black Friday: pay once, pay half"
+quick_answer: "Lagerland Apps' Black Friday sale takes 50% off the one-time lifetime unlock in 18 iPhone, iPad, and Mac apps, among them Observa, Chessful, Taskful Day, and AllPaid. Each app's redeem link opens the App Store with the offer code BLACKFRIDAY2026 filled in, and the code works until Cyber Monday, November 30, 2026. Each country pays half of its own lifetime price. Subscriptions and the free versions stay as they are."
+seo:
+  title: "Black Friday App Deals 2026: 50% Off Lifetime Unlocks"
+  description: "Half price on the lifetime unlock in 18 iPhone, iPad, and Mac apps with code BLACKFRIDAY2026, until Cyber Monday, November 30, 2026."
+  keywords:
+    - black friday app deals
+    - black friday iphone app deals
+    - black friday mac app deals
+    - lifetime app deals
+    - app store offer code
+    - lagerland apps promo code
+faq:
+  - q: "What is the Lagerland Apps Black Friday deal?"
+    a: "Until Cyber Monday, November 30, 2026, the one-time lifetime unlock in 18 Lagerland apps costs half its usual price with the App Store offer code BLACKFRIDAY2026. It works in every country where the apps are sold."
+  - q: "How do I redeem the Black Friday code?"
+    a: "Tap Redeem half price next to the app you want, on the iPhone, iPad, or Mac where you use it. The App Store opens with the code filled in and shows the price before you confirm. On a computer, open the QR code under the app and scan it with your iPhone camera."
+  - q: "Why is the sale price different in my country?"
+    a: "Lagerland prices every country separately, so the sale takes half of your own country's lifetime price instead of converting the US one. This page shows US prices. The App Store always shows yours before you pay."
+  - q: "I already pay for a subscription. Should I switch to lifetime?"
+    a: "If you would rather pay once, buy the lifetime unlock at half price, then cancel the subscription in Settings, under your name, in Subscriptions. Apple doesn't cancel it for you, so it keeps renewing until you do."
+  - q: "Does the code take anything off subscriptions?"
+    a: "No. The code takes 50% off the lifetime unlock only. Monthly and yearly prices stay the same, and so does everything in the free versions."
+  - q: "What if the app doesn't unlock after I redeem the code?"
+    a: "Open the app and tap Restore Purchases in its settings or on its upgrade screen. The app checks your Apple Account and turns the unlock on."
+  - q: "When does the Black Friday sale end?"
+    a: "The code works until the end of Cyber Monday, November 30, 2026. After that, every lifetime unlock goes back to its usual price."
+last_updated: 2026-11-20
+---
+{%- include t.html -%}
+{%- include sale.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}#webpage",
+      "url": "{{ site.url }}{{ page.url }}",
+      "name": {{ page.seo.title | jsonify }},
+      "description": {{ page.seo.description | jsonify }},
+      "isPartOf": { "@id": "{{ site.url }}/#website" },
+      "about": { "@id": "{{ site.url }}/#organization" },
+      "inLanguage": "en",
+      "datePublished": "2026-11-20",
+      "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+          { "@type": "ListItem", "position": 2, "name": "Black Friday", "item": "{{ site.url }}{{ page.url }}" }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- for item in page.faq %}
+        { "@type": "Question", "name": {{ item.q | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | jsonify }} } }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }{% if bf_live %},
+    {
+      "@type": "ItemList",
+      "name": "Black Friday 2026: lifetime unlocks at half price",
+      "itemListElement": [
+        {%- for pair in bf.apps %}
+        {%- assign m = site.apps | where: "slug", pair[0] | first -%}{%- assign bf_slug = pair[0] -%}{%- assign bf_os = site.data.catalog.apps[bf_slug].platforms -%}
+        {%- assign p = pair[1].prices.USA %}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": {{ m.name | jsonify }},
+            "url": "{{ site.url }}{{ m.url }}",
+            "applicationCategory": "MobileApplication",
+            "operatingSystem": {{ bf_os | join: ", " | jsonify }},
+            "offers": {
+              "@type": "Offer",
+              "price": "{{ p.sale }}",
+              "priceCurrency": "{{ p.currency }}",
+              "priceValidUntil": "{{ bf.last_day }}",
+              "url": "{{ pair[1].redeem_url }}"
+            }
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }{% endif %}
+  ]
+}
+</script>
+
+<section class="bf-hero">
+  <div class="bf bf-hero__live">
+    <span class="bf-hero__mark" aria-hidden="true">&frac12;</span>
+    <h1 class="h1">Black Friday: pay once, pay half</h1>
+    <p class="lead">Until Cyber Monday, November 30, the lifetime unlock in {{ bf.count }} Lagerland apps costs half its usual price. One code works in all of them, and each Redeem button fills it in for you.</p>
+    <div class="bf-hero__actions">
+      <a class="btn btn-primary" href="#deals">See the {{ bf.count }} deals</a>
+      {% include bf-code.html %}
+    </div>
+  </div>
+  <div class="bf-ended"{% if bf_live %} hidden{% endif %}>
+    {% if bf_live %}<h2 class="h1">{{ t.bf_ended_title }}</h2>{% else %}<h1 class="h1">{{ t.bf_ended_title }}</h1>{% endif %}
+    <p class="lead">{{ t.bf_ended_text }}</p>
+    <p><a class="btn btn-primary" href="/apps/">{{ t.bf_ended_cta }}</a></p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+{%- if bf_live %}
+<section class="section bf bf-steps" aria-labelledby="bf-how">
+  <h2 class="h2" id="bf-how">How to redeem it</h2>
+  <ol class="bf-steps__list">
+    <li><strong>Tap Redeem half price</strong> next to the app you want, on the iPhone, iPad, or Mac where you use it. On a computer, open the QR code and scan it with your iPhone.</li>
+    <li><strong>Check the price and confirm.</strong> The App Store shows half of your country's usual lifetime price, and you pay it once.</li>
+    <li><strong>Open the app.</strong> The unlock is there. If it isn't yet, tap Restore Purchases in the app's settings.</li>
+  </ol>
+</section>
+
+<section class="section bf" aria-labelledby="bf-deals-title">
+  <h2 class="h2" id="bf-deals-title">The {{ bf.count }} deals</h2>
+  <p class="bf-deals__note">US prices. Every country pays half of its own lifetime price, and the App Store shows yours before you confirm.</p>
+  {% include bf-deals.html %}
+</section>
+
+<section class="section bf bf-why" aria-labelledby="bf-why">
+  <h2 class="h2" id="bf-why">Why the lifetime unlock</h2>
+  {%- assign bf_family_n = 0 -%}{%- for pair in bf.apps -%}{%- if pair[1].family_sharing -%}{%- assign bf_family_n = bf_family_n | plus: 1 -%}{%- endif -%}{%- endfor %}
+  <p>Every app in the sale is free to download, and most also offer a monthly or yearly subscription. The lifetime unlock is a single payment that never renews and stays with your Apple Account. {{ bf_family_n }} of the {{ bf.count }} unlocks include Family Sharing, and each deal above says so.</p>
+  <p>All {{ bf.count }} apps come from Lagerland Apps, an independent studio in Finland. None of them shows you an ad, asks you to sign up, or sends your data to us.</p>
+</section>
+{%- endif %}
+
+<section id="faq" class="section reveal">
+  <h2 class="h2">{{ t.faq_heading }}</h2>
+  <div class="faq">
+    {%- for item in page.faq %}
+    <details class="faq-item"{% if forloop.first %} open{% endif %}><summary>{{ item.q }}</summary><div class="faq-a">{{ item.a }}</div></details>
+    {%- endfor %}
+  </div>
+</section>
+
+{%- if bf_live %}
+<section class="section bf bf-close">
+  <h2 class="h2">The code stops working after Cyber Monday</h2>
+  <p>Half price lasts until the end of Cyber Monday, November 30. After that, every lifetime unlock goes back to its usual price.</p>
+  <p><a class="btn btn-primary" href="#deals">Back to the deals</a></p>
+</section>
+{%- endif %}

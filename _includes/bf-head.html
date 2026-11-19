@@ -1,0 +1,14 @@
+{%- comment -%}
+  Black Friday 2026, in <head> before first paint. Sets on <html>:
+    bf-over          the sale has ended for this visitor (local midnight after the last day, or the fixed UTC
+                     cutoff in _data/sale.json, whichever comes first): CSS hides every .bf element
+    data-bf-phase    early | weekend | last (picks the ribbon line)
+    data-bf-end      end time in ms (sale.js counts down to it on the last day)
+    bf-ribbon-off    the visitor closed the ribbon in this phase (it comes back once for the weekend and the last day)
+  Without JavaScript the generic ribbon line shows and nothing is hidden (the motion contract).
+{%- endcomment -%}
+{%- include sale.html -%}
+{%- if bf_live -%}
+{%- assign _bh_w = bf.weekend | split: "-" -%}{%- assign _bh_l = bf.last_day | split: "-" -%}
+<script>(function(h){var n=Date.now(),L=new Date({{ _bh_l[0] | plus: 0 }},{{ _bh_l[1] | plus: 0 | minus: 1 }},{{ _bh_l[2] | plus: 0 }}),W=new Date({{ _bh_w[0] | plus: 0 }},{{ _bh_w[1] | plus: 0 | minus: 1 }},{{ _bh_w[2] | plus: 0 }}),e=Math.min(new Date(L.getFullYear(),L.getMonth(),L.getDate()+1).getTime(),{{ bf.hide_after_epoch }}000);if(n>=e){h.classList.add('bf-over');return}var p=n>=L.getTime()?'last':n>=W.getTime()?'weekend':'early';h.setAttribute('data-bf-phase',p);h.setAttribute('data-bf-end',e);try{if(localStorage.getItem('bf2026-ribbon-'+p)==='off')h.classList.add('bf-ribbon-off')}catch(x){}})(document.documentElement);</script>
+{%- endif -%}

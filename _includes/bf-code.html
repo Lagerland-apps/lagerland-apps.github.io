@@ -1,0 +1,4 @@
+{%- comment -%} The offer code as a printed label. Redeem links carry it already, so there is no copy button:
+  the same code exists in every app, and typed into the App Store by hand it would not say which app it is for. {%- endcomment -%}
+{%- assign _bc_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+<span class="bf-code"><span class="bf-code__label">{{ _bc_t.bf_code }}</span> <code class="bf-code__value">{{ site.data.sale.code }}</code></span>

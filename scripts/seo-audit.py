@@ -612,6 +612,31 @@ def main():
                         own = f"{float(amt.replace(',', '')):.2f}" in usd
                         warn("USD amount on a translated app page (untranslated own price or competitor price?)", u,
                              "$" + amt + (" (equals this app's own USD price)" if own else ""))
+        # Sale prices (_data/sale.json, e.g. Black Friday 2026): every price shown as a sale price (.bf-now,
+        # .bf-plan__now, the sticky line) must be that app's offer price for the page's territory, and the struck
+        # regular price (.bf-was) must be its catalog price there.
+        sale_p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "_data", "sale.json")
+        if os.path.isfile(sale_p):
+            sale = json.load(open(sale_p, encoding="utf-8"))
+            for code in ("en",) + LANGS:
+                terr = "USA" if code == "en" else loc(code).get("territory")
+                rule = (loc("en") if code == "en" else loc(code)).get("currencies", {}).get(terr_cur.get(terr, ""))
+                if not rule: continue
+                for slug, sa in sale["apps"].items():
+                    rel = (f"/apps/{slug}/" if code == "en" else f"/{code}/apps/{slug}/")
+                    f = os.path.join(root, rel.strip("/"), "index.html")
+                    if not os.path.isfile(f): continue
+                    h = re.sub(r'<span class="sr-only">[^<]*</span>', "", open(f, encoding="utf-8").read())
+                    h = re.sub(r"\s", " ", html.unescape(h))
+                    pr = sa["prices"].get(terr)
+                    if not pr: continue
+                    now = re.sub(r"\s", " ", fmt_money(pr["sale"], rule)); was = re.sub(r"\s", " ", fmt_money(pr["regular"], rule))
+                    for cls, want in (("bf-now", now), ("bf-plan__now", now), ("bf-was", was)):
+                        for m in re.finditer(r'class="[^"]*\b' + cls + r'\b[^"]*">([^<]*)<', h):
+                            txt = m.group(1).strip()
+                            if want not in txt:
+                                err("sale price on the page differs from _data/sale.json", rel, f"{cls}: {txt[:40]!r}, expected {want!r}")
+        sale_n = json.load(open(sale_p, encoding="utf-8")).get("count") if os.path.isfile(sale_p) else None
         count_re = re.compile(r"\b(\d{2})\s+(?:live |privacy-first |indie |iOS |free )*apps\b", re.I)
         for dp, _, fns in os.walk(root):
             for fn in fns:
@@ -628,6 +653,7 @@ def main():
                     for cm in count_re.finditer(plain):
                         n = int(cm.group(1))
                         if n == live_n or n < 15: continue
+                        if sale_n and n == sale_n: continue  # "the lifetime unlock in N apps" (sale ribbon, _data/sale.json)
                         if n == live_n - 1 and plain[max(0, cm.start() - 6):cm.start()].lower() == "other ": continue  # "the studio's other N apps"
                         warn("hard-typed app count differs from the catalog count", rel, f"{n} vs {live_n}")
 

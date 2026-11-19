@@ -1,0 +1,25 @@
+{%- comment -%} Black Friday 2026: the ribbon above the top bar on every page while the sale runs. {%- endcomment -%}
+{%- include sale.html -%}
+{%- if bf_live -%}
+{%- assign _br_deals = "/black-friday/" -%}
+<div class="bf bf-ribbon" role="region" aria-label="{{ t.bf_tag }}">
+  <div class="bf-ribbon__inner">
+    <p class="bf-ribbon__msg">
+      {%- for _br_ph in (1..4) -%}
+        {%- case _br_ph -%}{%- when 1 -%}{%- assign _br_k = "generic" -%}{%- when 2 -%}{%- assign _br_k = "early" -%}{%- when 3 -%}{%- assign _br_k = "weekend" -%}{%- else -%}{%- assign _br_k = "last" -%}{%- endcase -%}
+        {%- assign _br_key = "bf_ribbon_" | append: _br_k -%}
+        {%- assign _br_txt = t[_br_key] | replace: "{count}", bf.count -%}
+        <span class="bf-ph bf-ph--{{ _br_k }}">{{ _br_txt }}</span>
+      {%- endfor -%}
+      <span class="bf-countdown" data-tpl="{{ t.bf_left | escape }}"></span>
+    </p>
+    {% include bf-code.html where="ribbon" %}
+    {%- capture _br_href -%}{% include l.html url=_br_deals %}{%- endcapture -%}
+    {%- unless page.url == _br_href %}
+    <a class="bf-ribbon__cta" href="{{ _br_href }}"{% if l_en %} hreflang="en"{% endif %} data-goatcounter-click="bf-ribbon-cta">{{ t.bf_ribbon_cta }}<span aria-hidden="true"> &rarr;</span></a>
+    {%- endunless %}
+    <button type="button" class="bf-ribbon__close" aria-label="{{ t.bf_ribbon_close }}"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></svg></button>
+  </div>
+</div>
+<script src="/assets/js/sale.js" defer></script>
+{%- endif -%}

@@ -1,0 +1,159 @@
+---
+layout: default
+ref: /black-friday/
+permalink: /de/black-friday/
+translated_from: 2026-11-20
+title: "Black Friday: einmal zahlen, nur die Hälfte"
+quick_answer: "Beim Black-Friday-Angebot von Lagerland Apps gibt es 50 % Rabatt auf den Einmalkauf in 18 Apps für iPhone, iPad und Mac, darunter Observa, Chessful, Taskful Day und AllPaid. Der Button „Angebot einlösen“ bei jeder App öffnet den App Store mit dem bereits eingetragenen Angebotscode BLACKFRIDAY2026, und der Code gilt bis Cyber Monday, 30. November 2026. Jedes Land zahlt die Hälfte seines eigenen Preises für den Einmalkauf. Abos und die kostenlosen Versionen bleiben, wie sie sind."
+seo:
+  title: "Black-Friday-App-Angebote 2026: 50 % auf den Einmalkauf"
+  description: "Bis Cyber Monday, 30. November 2026, gibt es den Einmalkauf in 18 Apps für iPhone, iPad und Mac mit dem Code BLACKFRIDAY2026 zum halben Preis."
+  keywords:
+    - black friday app angebote
+    - black friday iphone apps
+    - black friday mac apps
+    - black friday apps 2026
+    - app store angebotscode
+    - apps einmalkauf rabatt
+    - lagerland apps gutscheincode
+faq:
+  - q: "Was ist das Black-Friday-Angebot von Lagerland Apps?"
+    a: "Bis Cyber Monday, 30. November 2026, kostet der Einmalkauf in 18 Lagerland-Apps mit dem App-Store-Angebotscode BLACKFRIDAY2026 die Hälfte des üblichen Preises. Der Code gilt in jedem Land, in dem die Apps verkauft werden."
+  - q: "Wie löse ich den Black-Friday-Code ein?"
+    a: "Tippe neben der App, die du willst, auf „Angebot einlösen“, und zwar auf dem iPhone, iPad oder Mac, auf dem du sie nutzt. Der App Store öffnet sich mit dem eingetragenen Code und zeigt dir den Preis, bevor du bestätigst. Am Computer öffnest du den QR-Code unter der App und scannst ihn mit der Kamera deines iPhone."
+  - q: "Warum ist der Angebotspreis in meinem Land anders?"
+    a: "Lagerland Apps legt die Preise für jedes Land einzeln fest. Darum halbiert das Angebot den Preis deines eigenen Landes, statt den US-Preis umzurechnen. Diese Seite zeigt die Preise im deutschen App Store. Deinen Preis zeigt dir der App Store immer, bevor du zahlst."
+  - q: "Ich habe schon ein Abo. Soll ich zum Einmalkauf wechseln?"
+    a: "Wenn du lieber einmal zahlst, hol dir den Einmalkauf zum halben Preis und kündige danach dein Abo. Tippe dazu in den Einstellungen auf deinen Namen und dann auf „Abonnements“. Apple kündigt das Abo nicht für dich, es verlängert sich also weiter, bis du es selbst kündigst."
+  - q: "Gibt es mit dem Code auch Rabatt auf Abos?"
+    a: "Nein. Der Code gibt nur auf den Einmalkauf 50 % Rabatt. Monats- und Jahresabos kosten so viel wie bisher, und an den kostenlosen Versionen ändert sich ebenfalls nichts."
+  - q: "Was tun, wenn die App nach dem Einlösen nicht freigeschaltet ist?"
+    a: "Öffne die App und tippe in ihren Einstellungen oder auf ihrem Upgrade-Bildschirm auf „Käufe wiederherstellen“. Die App prüft deinen Apple Account und schaltet die Vollversion frei."
+  - q: "Wann endet das Black-Friday-Angebot?"
+    a: "Der Code gilt bis zum Ende des Cyber Monday, 30. November 2026. Danach kostet jeder Einmalkauf wieder den üblichen Preis."
+last_updated: 2026-11-20
+---
+{%- include t.html -%}
+{%- include sale.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}#webpage",
+      "url": "{{ site.url }}{{ page.url }}",
+      "name": {{ page.seo.title | jsonify }},
+      "description": {{ page.seo.description | jsonify }},
+      "isPartOf": { "@id": "{{ site.url }}/de/#website" },
+      "about": { "@id": "{{ site.url }}/#organization" },
+      "inLanguage": "de",
+      "datePublished": "2026-11-20",
+      "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/de/" },
+          { "@type": "ListItem", "position": 2, "name": "Black Friday", "item": "{{ site.url }}{{ page.url }}" }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- for item in page.faq %}
+        { "@type": "Question", "name": {{ item.q | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | jsonify }} } }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }{% if bf_live %},
+    {
+      "@type": "ItemList",
+      "name": "Black Friday 2026: Einmalkäufe zum halben Preis",
+      "itemListElement": [
+        {%- for pair in bf.apps %}
+        {%- assign m = site.apps | where: "slug", pair[0] | first -%}{%- assign bf_slug = pair[0] -%}{%- assign bf_os = site.data.catalog.apps[bf_slug].platforms -%}
+        {%- assign p = pair[1].prices.DEU %}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": {{ m.name | jsonify }},
+            "url": "{{ site.url }}{{ m.url }}",
+            "applicationCategory": "MobileApplication",
+            "operatingSystem": {{ bf_os | join: ", " | jsonify }},
+            "offers": {
+              "@type": "Offer",
+              "price": "{{ p.sale }}",
+              "priceCurrency": "{{ p.currency }}",
+              "priceValidUntil": "{{ bf.last_day }}",
+              "url": "{{ pair[1].redeem_url }}"
+            }
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }{% endif %}
+  ]
+}
+</script>
+
+<section class="bf-hero">
+  <div class="bf bf-hero__live">
+    <span class="bf-hero__mark" aria-hidden="true">&frac12;</span>
+    <h1 class="h1">Black Friday: einmal zahlen, nur die Hälfte</h1>
+    <p class="lead">Bis Cyber Monday, 30. November, kostet der Einmalkauf in {{ bf.count }} Lagerland-Apps die Hälfte des üblichen Preises. Ein Code gilt für alle, und jeder Button „Angebot einlösen“ trägt ihn für dich ein.</p>
+    <div class="bf-hero__actions">
+      <a class="btn btn-primary" href="#deals">Zu den {{ bf.count }} Angeboten</a>
+      {% include bf-code.html %}
+    </div>
+  </div>
+  <div class="bf-ended"{% if bf_live %} hidden{% endif %}>
+    {% if bf_live %}<h2 class="h1">{{ t.bf_ended_title }}</h2>{% else %}<h1 class="h1">{{ t.bf_ended_title }}</h1>{% endif %}
+    <p class="lead">{{ t.bf_ended_text }}</p>
+    <p><a class="btn btn-primary" href="/de/apps/">{{ t.bf_ended_cta }}</a></p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+{%- if bf_live %}
+<section class="section bf bf-steps" aria-labelledby="bf-how">
+  <h2 class="h2" id="bf-how">So löst du den Code ein</h2>
+  <ol class="bf-steps__list">
+    <li><strong>Tippe auf „Angebot einlösen“</strong> neben der App, die du willst. Mach das auf dem iPhone, iPad oder Mac, auf dem du die App nutzt. Am Computer öffnest du den QR-Code und scannst ihn mit deinem iPhone.</li>
+    <li><strong>Prüf den Preis und bestätige.</strong> Der App Store zeigt dir die Hälfte dessen, was der Einmalkauf in deinem Land sonst kostet, und du zahlst diesen Preis ein einziges Mal.</li>
+    <li><strong>Öffne die App.</strong> Die Vollversion ist freigeschaltet. Falls noch nicht, tippe in den Einstellungen der App auf „Käufe wiederherstellen“.</li>
+  </ol>
+</section>
+
+<section class="section bf" aria-labelledby="bf-deals-title">
+  <h2 class="h2" id="bf-deals-title">Die {{ bf.count }} Angebote</h2>
+  <p class="bf-deals__note">Die Preise gelten für den deutschen App Store. Jedes Land zahlt die Hälfte seines eigenen Preises für den Einmalkauf, und vor dem Bestätigen zeigt dir der App Store deinen Preis.</p>
+  {% include bf-deals.html %}
+</section>
+
+<section class="section bf bf-why" aria-labelledby="bf-why">
+  <h2 class="h2" id="bf-why">Warum der Einmalkauf</h2>
+  {%- assign bf_family_n = 0 -%}{%- for pair in bf.apps -%}{%- if pair[1].family_sharing -%}{%- assign bf_family_n = bf_family_n | plus: 1 -%}{%- endif -%}{%- endfor %}
+  <p>Alle Apps im Angebot kannst du kostenlos laden, und die meisten gibt es auch im Monats- oder Jahresabo. Der Einmalkauf ist eine einzige Zahlung, die sich nie verlängert und mit deinem Apple Account verknüpft bleibt. {{ bf_family_n }} der {{ bf.count }} Einmalkäufe unterstützen die Familienfreigabe; bei diesen Angeboten steht es oben dabei.</p>
+  <p>Alle {{ bf.count }} Apps kommen von Lagerland Apps, einem unabhängigen Studio aus Finnland. Keine davon zeigt dir Werbung, verlangt eine Registrierung oder schickt deine Daten an uns.</p>
+</section>
+{%- endif %}
+
+<section id="faq" class="section reveal">
+  <h2 class="h2">{{ t.faq_heading }}</h2>
+  <div class="faq">
+    {%- for item in page.faq %}
+    <details class="faq-item"{% if forloop.first %} open{% endif %}><summary>{{ item.q }}</summary><div class="faq-a">{{ item.a }}</div></details>
+    {%- endfor %}
+  </div>
+</section>
+
+{%- if bf_live %}
+<section class="section bf bf-close">
+  <h2 class="h2">Nach Cyber Monday gilt der Code nicht mehr</h2>
+  <p>Den halben Preis gibt es bis zum Ende des Cyber Monday, 30. November. Danach kostet jeder Einmalkauf wieder den üblichen Preis.</p>
+  <p><a class="btn btn-primary" href="#deals">Zurück zu den Angeboten</a></p>
+</section>
+{%- endif %}

@@ -1,0 +1,27 @@
+{%- comment -%}
+  Black Friday 2026: the offer box on an app page (in the hero, under the App Store badge).
+    app  the master document     tx  the page with the words (translated app page; default: app)
+{%- endcomment -%}
+{%- include sale.html slug=include.app.slug tx=include.tx -%}
+{%- if bf_app -%}
+{%- assign _bo_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign _bo_title = _bo_t.bf_offer_title | replace: "{product}", bf_product -%}
+{%- assign _bo_note = _bo_t.bf_offer_note | replace: "{code}", bf.code | replace: "{until}", _bo_t.bf_until -%}
+{%- assign _bo_aria = _bo_t.bf_redeem_aria | replace: "{name}", include.app.name -%}
+<div class="bf bf-offer" id="black-friday">
+  <p class="bf-offer__tag">{{ _bo_t.bf_tag }}</p>
+  <p class="bf-offer__title">{{ _bo_title }}</p>
+  <p class="bf-offer__price"><s class="bf-was"><span class="sr-only">{{ _bo_t.bf_was }} </span>{{ bf_was }}</s> <strong class="bf-now"><span class="sr-only">{{ _bo_t.bf_now }} </span>{{ bf_now }}</strong></p>
+  <p class="bf-offer__note">{{ _bo_note }}</p>
+  <div class="bf-offer__actions">
+    <a class="btn btn-primary bf-redeem" href="{{ bf_app.redeem_url }}" rel="noopener" aria-label="{{ _bo_aria }}" data-goatcounter-click="bf-redeem-{{ include.app.slug }}-hero">{{ _bo_t.bf_redeem }}</a>
+    {% include bf-code.html where="hero" %}
+  </div>
+  {%- if bf_app.iphone %}
+  <div class="qr-install bf-offer__qr" aria-hidden="true">
+    <img class="qr-install__img" src="/assets/qr/bf/{{ include.app.slug }}.svg" alt="" width="88" height="88" loading="lazy" decoding="async">
+    <div class="qr-install__copy"><strong>{{ _bo_t.bf_qr_title }}</strong><span>{{ _bo_t.bf_qr_text }}</span></div>
+  </div>
+  {%- endif %}
+</div>
+{%- endif -%}

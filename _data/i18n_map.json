@@ -1019,6 +1019,15 @@
     "nl": "/nl/apps/xiangqiful/support/",
     "pt": "/pt/apps/xiangqiful/support/"
   },
+  "/black-friday/": {
+    "de": "/de/black-friday/",
+    "en": "/black-friday/",
+    "es": "/es/black-friday/",
+    "fr": "/fr/black-friday/",
+    "it": "/it/black-friday/",
+    "nl": "/nl/black-friday/",
+    "pt": "/pt/black-friday/"
+  },
   "/for/": {
     "de": "/de/for/",
     "en": "/for/",

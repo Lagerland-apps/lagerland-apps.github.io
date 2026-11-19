@@ -44,6 +44,8 @@
       <a class="btn btn-secondary" href="#features">{{ h_t.see_how_it_works }}</a>
     </div>
 
+    {% include bf-offer.html app=include.app tx=h_tx %}
+
     {%- if h_tx.hero.cta_subline -%}
     <p class="cta-subline">{{ h_tx.hero.cta_subline }}</p>
     {%- endif -%}
@@ -51,7 +53,7 @@
     {%- comment %} Desktop-only "scan to install": most marketing traffic is on
       a Mac, the product is an iPhone app. Hidden on touch via CSS. {% endcomment -%}
     {%- assign _qr = "/assets/qr/" | append: include.app.slug | append: ".svg" -%}
-    <div class="qr-install" aria-hidden="true">
+    <div class="qr-install{% if bf_app %} bf-alt{% endif %}" aria-hidden="true">
       {%- assign h_qr_alt = h_t.qr_alt | replace: "{name}", include.app.name %}
       <img class="qr-install__img" src="{{ _qr }}" alt="{{ h_qr_alt }}" width="88" height="88" loading="lazy" decoding="async">
       <div class="qr-install__copy">

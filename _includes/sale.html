@@ -1,0 +1,37 @@
+{%- comment -%}
+  Black Friday 2026 (offer code sale). Data: _data/sale.json, written by scripts/build-sale-data.py from the
+  App Store Connect read-back of the offer prices. Never type a sale price by hand.
+
+  Sets, for the current page's language territory:
+    bf_live    true while the sale runs at build time (the head script also hides every .bf element in the
+               browser once it has ended, because GitHub Pages only rebuilds on a push)
+    bf_app     the app's sale entry, or nil when the app is not in the sale (or no slug was given)
+    bf_was     regular price, formatted        bf_now   sale price, formatted
+    bf_product the product's name on this page: the translated plan name (Lifetime, Chapters II to X, …)
+  Usage: {% include sale.html slug=app.slug %}   or   {% include sale.html %} for bf_live only.
+    tx  optional: the page with the words (translated app page), for the plan name. Default: the app's page in
+        the current language (tx-app.html).
+{%- endcomment -%}
+{%- assign bf = site.data.sale -%}
+{%- assign bf_live = false -%}
+{%- assign bf_app = nil -%}{%- assign bf_was = "" -%}{%- assign bf_now = "" -%}{%- assign bf_product = "" -%}
+{%- if bf -%}
+  {%- assign _bf_t = site.time | date: "%s" | plus: 0 -%}
+  {%- if _bf_t < bf.hide_after_epoch -%}{%- assign bf_live = true -%}{%- endif -%}
+{%- endif -%}
+{%- if bf_live and include.slug -%}
+  {%- assign bf_app = bf.apps[include.slug] -%}
+  {%- if bf_app -%}
+    {%- assign _bf_lang = page.lang | default: site.lang | default: "en" -%}
+    {%- assign _bf_terr = page.territory | default: site.data.locales[_bf_lang].territory | default: "USA" -%}
+    {%- assign _bf_p = bf_app.prices[_bf_terr] | default: bf_app.prices.USA -%}
+    {%- capture bf_was -%}{%- include money.html amount=_bf_p.regular currency=_bf_p.currency -%}{%- endcapture -%}
+    {%- capture bf_now -%}{%- include money.html amount=_bf_p.sale currency=_bf_p.currency -%}{%- endcapture -%}
+    {%- if include.tx -%}{%- assign _bf_tx = include.tx -%}{%- else -%}
+      {%- assign _bf_master = site.apps | where: "slug", include.slug | first -%}
+      {%- include tx-app.html app=_bf_master -%}{%- assign _bf_tx = tx_app -%}
+    {%- endif -%}
+    {%- assign _bf_pl = _bf_tx.plans[bf_app.plan_index] -%}
+    {%- assign bf_product = _bf_pl.name | default: site.data.i18n[_bf_lang].bf_product_default | default: "Lifetime" -%}
+  {%- endif -%}
+{%- endif -%}

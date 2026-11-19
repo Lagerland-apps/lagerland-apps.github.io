@@ -256,8 +256,10 @@ layout: default
   <div class="sticky-cta" id="sticky-cta" data-hidden="true">
     <div class="sticky-cta__inner">
       <img class="sticky-cta__icon" src="{{ m.icon }}" alt="{{ icon_alt }}" width="40" height="40" loading="lazy" decoding="async">
-      <div class="sticky-cta__meta">
+  {%- include sale.html slug=m.slug tx=page -%}
+      <div class="sticky-cta__meta{% if bf_app %} sticky-cta__meta--bf{% endif %}">
         <span class="sticky-cta__name">{{ m.name }}</span>
+        {%- if bf_app %}{%- assign bf_sticky_text = t.bf_sticky | replace: "{product}", bf_product | replace: "{now}", bf_now -%}<span class="sticky-cta__price bf">{{ bf_sticky_text }}</span>{% endif -%}
         {%- if price_model contains 'one-time' -%}
           <span class="sticky-cta__price">{{ t.sticky_one_time }}</span>
         {%- elsif price_model contains 'freemium' -%}
@@ -268,7 +270,12 @@ layout: default
           <span class="sticky-cta__price">{{ t.sticky_free }}</span>
         {%- endif -%}
       </div>
+      {%- if bf_app %}
+      <a class="btn btn-primary bf bf-redeem bf-sticky__redeem" href="{{ bf_app.redeem_url }}" rel="noopener" data-goatcounter-click="bf-redeem-{{ m.slug }}-sticky">{{ t.bf_redeem }}</a>
+      <span class="bf-alt">{% include appstore-badge.html url=m.app_store_url name=m.name class="asb--sm" %}</span>
+      {%- else %}
       {% include appstore-badge.html url=m.app_store_url name=m.name class="asb--sm" %}
+      {%- endif %}
     </div>
   </div>
 

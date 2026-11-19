@@ -1,0 +1,159 @@
+---
+layout: default
+ref: /black-friday/
+permalink: /pt/black-friday/
+translated_from: 2026-11-20
+title: "Black Friday: compra única, a meio preço"
+quick_answer: "Na Black Friday da Lagerland Apps, a compra vitalícia (um pagamento único) de 18 apps para iPhone, iPad e Mac tem 50% de desconto. Entre elas estão o Observa, o Chessful, o Taskful Day e o AllPaid. A ligação de resgate de cada app abre a App Store com o código de oferta BLACKFRIDAY2026 já preenchido, e o código funciona até à Cyber Monday, 30 de novembro de 2026. Cada país paga metade do seu próprio preço vitalício. As subscrições e as versões grátis ficam como estão."
+seo:
+  title: "Black Friday 2026 em apps: 50% na compra vitalícia"
+  description: "Metade do preço na compra vitalícia de 18 apps para iPhone, iPad e Mac com o código BLACKFRIDAY2026, até à Cyber Monday, 30 de novembro de 2026."
+  keywords:
+    - black friday apps
+    - black friday app store
+    - promoções black friday iphone
+    - apps mac black friday
+    - código de oferta app store
+    - código promocional app store
+    - apps com compra vitalícia
+faq:
+  - q: "Em que consiste a promoção de Black Friday da Lagerland Apps?"
+    a: "Até à Cyber Monday, 30 de novembro de 2026, a compra vitalícia (um pagamento único) de 18 apps da Lagerland custa metade do preço habitual com o código de oferta BLACKFRIDAY2026 da App Store. Funciona em todos os países onde as apps estão à venda."
+  - q: "Como se resgata o código da Black Friday?"
+    a: "Toque em «Resgatar a meio preço» ao lado da app pretendida, no iPhone, iPad ou Mac onde é usada. A App Store abre com o código preenchido e mostra o preço antes da confirmação. Num computador, abra o código QR por baixo da app e aponte-lhe a câmara do iPhone."
+  - q: "Porque é que o preço da promoção é diferente no meu país?"
+    a: "A Lagerland define o preço de cada país à parte, por isso a promoção corta para metade o preço vitalício de cada país em vez de converter o dos Estados Unidos. Esta página mostra os preços da App Store de Portugal. A App Store mostra sempre o preço local antes do pagamento."
+  - q: "Já pago uma subscrição. Vale a pena passar para a compra vitalícia?"
+    a: "Para quem prefere pagar uma só vez, basta comprar a opção vitalícia a meio preço e depois cancelar a subscrição em Definições > [o seu nome] > Assinaturas. A Apple não a cancela automaticamente, por isso continua a renovar-se até ser cancelada."
+  - q: "O código dá desconto nas subscrições?"
+    a: "Não. O código dá 50% de desconto apenas na compra vitalícia. Os preços mensais e anuais não mudam, tal como tudo o que as versões grátis incluem."
+  - q: "E se a app não ficar desbloqueada depois de resgatar o código?"
+    a: "Abra a app e toque em «Restaurar compras» nas definições da app ou no ecrã de compra. A app verifica a conta Apple e ativa o desbloqueio."
+  - q: "Quando acaba a promoção da Black Friday?"
+    a: "O código funciona até ao fim da Cyber Monday, 30 de novembro de 2026. Depois disso, todas as compras vitalícias voltam ao preço habitual."
+last_updated: 2026-11-20
+---
+{%- include t.html -%}
+{%- include sale.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}#webpage",
+      "url": "{{ site.url }}{{ page.url }}",
+      "name": {{ page.seo.title | jsonify }},
+      "description": {{ page.seo.description | jsonify }},
+      "isPartOf": { "@id": "{{ site.url }}/#website" },
+      "about": { "@id": "{{ site.url }}/#organization" },
+      "inLanguage": "pt-PT",
+      "datePublished": "2026-11-20",
+      "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Início", "item": "{{ site.url }}/pt/" },
+          { "@type": "ListItem", "position": 2, "name": "Black Friday", "item": "{{ site.url }}{{ page.url }}" }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- for item in page.faq %}
+        { "@type": "Question", "name": {{ item.q | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | jsonify }} } }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }{% if bf_live %},
+    {
+      "@type": "ItemList",
+      "name": "Black Friday 2026: compras vitalícias a meio preço",
+      "itemListElement": [
+        {%- for pair in bf.apps %}
+        {%- assign m = site.apps | where: "slug", pair[0] | first -%}{%- assign bf_slug = pair[0] -%}{%- assign bf_os = site.data.catalog.apps[bf_slug].platforms -%}
+        {%- assign p = pair[1].prices.PRT %}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": {{ m.name | jsonify }},
+            "url": "{{ site.url }}{{ m.url }}",
+            "applicationCategory": "MobileApplication",
+            "operatingSystem": {{ bf_os | join: ", " | jsonify }},
+            "offers": {
+              "@type": "Offer",
+              "price": "{{ p.sale }}",
+              "priceCurrency": "{{ p.currency }}",
+              "priceValidUntil": "{{ bf.last_day }}",
+              "url": "{{ pair[1].redeem_url }}"
+            }
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }{% endif %}
+  ]
+}
+</script>
+
+<section class="bf-hero">
+  <div class="bf bf-hero__live">
+    <span class="bf-hero__mark" aria-hidden="true">&frac12;</span>
+    <h1 class="h1">Black Friday: compra única, a meio preço</h1>
+    <p class="lead">Até à Cyber Monday, 30 de novembro, a compra vitalícia em {{ bf.count }} apps da Lagerland custa metade do preço habitual. Um só código serve para todas, e cada botão de resgate preenche-o automaticamente.</p>
+    <div class="bf-hero__actions">
+      <a class="btn btn-primary" href="#deals">Ver as {{ bf.count }} promoções</a>
+      {% include bf-code.html %}
+    </div>
+  </div>
+  <div class="bf-ended"{% if bf_live %} hidden{% endif %}>
+    {% if bf_live %}<h2 class="h1">{{ t.bf_ended_title }}</h2>{% else %}<h1 class="h1">{{ t.bf_ended_title }}</h1>{% endif %}
+    <p class="lead">{{ t.bf_ended_text }}</p>
+    <p><a class="btn btn-primary" href="/pt/apps/">{{ t.bf_ended_cta }}</a></p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+{%- if bf_live %}
+<section class="section bf bf-steps" aria-labelledby="bf-how">
+  <h2 class="h2" id="bf-how">Como resgatar o código</h2>
+  <ol class="bf-steps__list">
+    <li><strong>Toque em «Resgatar a meio preço»</strong> ao lado da app pretendida, no iPhone, iPad ou Mac onde é usada. Num computador, abra o código QR e aponte-lhe a câmara do iPhone.</li>
+    <li><strong>Verifique o preço e confirme.</strong> A App Store mostra metade do preço vitalício habitual no país, e paga-se uma só vez.</li>
+    <li><strong>Abra a app.</strong> O desbloqueio já lá está. Se ainda não estiver, toque em «Restaurar compras» nas definições da app.</li>
+  </ol>
+</section>
+
+<section class="section bf" aria-labelledby="bf-deals-title">
+  <h2 class="h2" id="bf-deals-title">As {{ bf.count }} promoções</h2>
+  <p class="bf-deals__note">Preços da App Store de Portugal. Cada país paga metade do seu próprio preço vitalício. A App Store mostra o preço local antes da confirmação.</p>
+  {% include bf-deals.html %}
+</section>
+
+<section class="section bf bf-why" aria-labelledby="bf-why">
+  <h2 class="h2" id="bf-why">Porquê a compra vitalícia</h2>
+  {%- assign bf_family_n = 0 -%}{%- for pair in bf.apps -%}{%- if pair[1].family_sharing -%}{%- assign bf_family_n = bf_family_n | plus: 1 -%}{%- endif -%}{%- endfor %}
+  <p>Todas as apps da promoção descarregam-se grátis e a maioria tem também uma subscrição mensal ou anual. A compra vitalícia é um pagamento único que nunca se renova e fica associado à conta Apple. {{ bf_family_n }} das {{ bf.count }} compras vitalícias incluem a Partilha com a família, e cada promoção acima indica-o.</p>
+  <p>As {{ bf.count }} apps são da Lagerland Apps, um estúdio independente na Finlândia. Nenhuma delas mostra anúncios, pede para criar uma conta ou nos envia os dados de quem a usa.</p>
+</section>
+{%- endif %}
+
+<section id="faq" class="section reveal">
+  <h2 class="h2">{{ t.faq_heading }}</h2>
+  <div class="faq">
+    {%- for item in page.faq %}
+    <details class="faq-item"{% if forloop.first %} open{% endif %}><summary>{{ item.q }}</summary><div class="faq-a">{{ item.a }}</div></details>
+    {%- endfor %}
+  </div>
+</section>
+
+{%- if bf_live %}
+<section class="section bf bf-close">
+  <h2 class="h2">O código deixa de funcionar depois da Cyber Monday</h2>
+  <p>O meio preço dura até ao fim da Cyber Monday, 30 de novembro. Depois disso, todas as compras vitalícias voltam ao preço habitual.</p>
+  <p><a class="btn btn-primary" href="#deals">Voltar às promoções</a></p>
+</section>
+{%- endif %}

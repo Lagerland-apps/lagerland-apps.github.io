@@ -31,5 +31,7 @@
     <span class="stamp__name">{{ include.app.name }}</span>
     <span class="stamp__plat">{{ st_plat }}</span>
   </span></span>
+  {%- include sale.html slug=include.app.slug tx=st_tx -%}
+  {%- if bf_app %}<span class="bf bf-overprint" aria-hidden="true"><span class="bf-overprint__v">&frac12;</span><span class="bf-overprint__l">{{ st_t.bf_overprint }}</span></span>{% endif %}
   {%- if include.postmark %}{% include postmark.html date=include.postmark_date label=include.postmark_label %}{% endif %}
 </{{ st_tag }}>

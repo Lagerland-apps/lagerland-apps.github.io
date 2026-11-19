@@ -1,0 +1,159 @@
+---
+layout: default
+ref: /black-friday/
+permalink: /es/black-friday/
+translated_from: 2026-11-20
+title: "Black Friday: paga una vez, paga la mitad"
+quick_answer: "En el Black Friday de Lagerland Apps, el desbloqueo de por vida de 18 apps para iPhone, iPad y Mac, que se paga una sola vez, tiene un 50 % de descuento. Entre ellas están Observa, Chessful, Taskful Day y AllPaid. El enlace de canje de cada app abre el App Store con el código de oferta BLACKFRIDAY2026 ya introducido, y el código funciona hasta el Cyber Monday, 30 de noviembre de 2026. Cada país paga la mitad de su propio precio de por vida. Las suscripciones y las versiones gratuitas no cambian."
+seo:
+  title: "Ofertas Black Friday 2026 en apps: compra única al 50 %"
+  description: "Mitad de precio en la compra única de 18 apps para iPhone, iPad y Mac con el código BLACKFRIDAY2026, hasta el Cyber Monday, 30 de noviembre de 2026."
+  keywords:
+    - ofertas black friday apps
+    - black friday apps iphone
+    - black friday app store
+    - ofertas apps mac black friday
+    - apps pago único
+    - código de oferta app store
+    - código promocional lagerland apps
+faq:
+  - q: "¿En qué consiste la oferta del Black Friday de Lagerland Apps?"
+    a: "Hasta el Cyber Monday, 30 de noviembre de 2026, el desbloqueo de por vida de 18 apps de Lagerland cuesta la mitad de lo habitual con el código de oferta del App Store BLACKFRIDAY2026. Funciona en todos los países donde se venden las apps."
+  - q: "¿Cómo canjeo el código del Black Friday?"
+    a: "Toca «Canjear a mitad de precio» junto a la app que quieras, en el iPhone, iPad o Mac donde la usas. El App Store se abre con el código ya introducido y te muestra el precio antes de que confirmes. En un ordenador, abre el código QR que hay bajo la app y escanéalo con la cámara del iPhone."
+  - q: "¿Por qué el precio de la oferta es distinto en mi país?"
+    a: "Lagerland fija el precio de cada país por separado, así que la oferta es la mitad del precio de por vida de tu país, en lugar de una conversión del precio de Estados Unidos. Esta página muestra los precios del App Store de España. El App Store siempre te enseña el tuyo antes de pagar."
+  - q: "Ya pago una suscripción. ¿Me paso a la opción de por vida?"
+    a: "Si prefieres pagar una sola vez, compra el desbloqueo de por vida a mitad de precio y después cancela la suscripción en Ajustes > [tu nombre] > Suscripciones. Apple no la cancela por ti, así que se sigue renovando hasta que lo hagas."
+  - q: "¿El código descuenta algo en las suscripciones?"
+    a: "No. El código descuenta un 50 % solo en el desbloqueo de por vida. Los precios mensual y anual no cambian, y todo lo que incluyen las versiones gratuitas sigue igual."
+  - q: "¿Y si la app no se desbloquea después de canjear el código?"
+    a: "Abre la app y toca «Restaurar compras» en sus ajustes o en su pantalla de compra. La app comprueba tu cuenta de Apple y activa el desbloqueo."
+  - q: "¿Cuándo termina la oferta del Black Friday?"
+    a: "El código funciona hasta que termine el Cyber Monday, 30 de noviembre de 2026. Después, todos los desbloqueos de por vida vuelven a su precio habitual."
+last_updated: 2026-11-20
+---
+{%- include t.html -%}
+{%- include sale.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}#webpage",
+      "url": "{{ site.url }}{{ page.url }}",
+      "name": {{ page.seo.title | jsonify }},
+      "description": {{ page.seo.description | jsonify }},
+      "isPartOf": { "@id": "{{ site.url }}/#website" },
+      "about": { "@id": "{{ site.url }}/#organization" },
+      "inLanguage": "es-ES",
+      "datePublished": "2026-11-20",
+      "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "{{ site.url }}/es/" },
+          { "@type": "ListItem", "position": 2, "name": "Black Friday", "item": "{{ site.url }}{{ page.url }}" }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- for item in page.faq %}
+        { "@type": "Question", "name": {{ item.q | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | jsonify }} } }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }{% if bf_live %},
+    {
+      "@type": "ItemList",
+      "name": "Black Friday 2026: desbloqueos de por vida a mitad de precio",
+      "itemListElement": [
+        {%- for pair in bf.apps %}
+        {%- assign m = site.apps | where: "slug", pair[0] | first -%}{%- assign bf_slug = pair[0] -%}{%- assign bf_os = site.data.catalog.apps[bf_slug].platforms -%}
+        {%- assign p = pair[1].prices.ESP %}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": {{ m.name | jsonify }},
+            "url": "{{ site.url }}{{ m.url }}",
+            "applicationCategory": "MobileApplication",
+            "operatingSystem": {{ bf_os | join: ", " | jsonify }},
+            "offers": {
+              "@type": "Offer",
+              "price": "{{ p.sale }}",
+              "priceCurrency": "{{ p.currency }}",
+              "priceValidUntil": "{{ bf.last_day }}",
+              "url": "{{ pair[1].redeem_url }}"
+            }
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }{% endif %}
+  ]
+}
+</script>
+
+<section class="bf-hero">
+  <div class="bf bf-hero__live">
+    <span class="bf-hero__mark" aria-hidden="true">&frac12;</span>
+    <h1 class="h1">Black Friday: paga una vez, paga la mitad</h1>
+    <p class="lead">Hasta el Cyber Monday, 30 de noviembre, el desbloqueo de por vida de {{ bf.count }} apps de Lagerland cuesta la mitad de lo habitual. Un solo código sirve para todas, y cada botón de canje lo introduce por ti.</p>
+    <div class="bf-hero__actions">
+      <a class="btn btn-primary" href="#deals">Ver las {{ bf.count }} ofertas</a>
+      {% include bf-code.html %}
+    </div>
+  </div>
+  <div class="bf-ended"{% if bf_live %} hidden{% endif %}>
+    {% if bf_live %}<h2 class="h1">{{ t.bf_ended_title }}</h2>{% else %}<h1 class="h1">{{ t.bf_ended_title }}</h1>{% endif %}
+    <p class="lead">{{ t.bf_ended_text }}</p>
+    <p><a class="btn btn-primary" href="/es/apps/">{{ t.bf_ended_cta }}</a></p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+{%- if bf_live %}
+<section class="section bf bf-steps" aria-labelledby="bf-how">
+  <h2 class="h2" id="bf-how">Cómo canjearlo</h2>
+  <ol class="bf-steps__list">
+    <li><strong>Toca «Canjear a mitad de precio»</strong> junto a la app que quieras, en el iPhone, iPad o Mac donde la usas. En un ordenador, abre el código QR y escanéalo con el iPhone.</li>
+    <li><strong>Comprueba el precio y confirma.</strong> El App Store muestra la mitad del precio de por vida habitual en tu país, y lo pagas una sola vez.</li>
+    <li><strong>Abre la app.</strong> El desbloqueo ya está activo. Si todavía no lo está, toca «Restaurar compras» en los ajustes de la app.</li>
+  </ol>
+</section>
+
+<section class="section bf" aria-labelledby="bf-deals-title">
+  <h2 class="h2" id="bf-deals-title">Las {{ bf.count }} ofertas</h2>
+  <p class="bf-deals__note">Precios del App Store de España. Cada país paga la mitad de su propio precio de por vida, y el App Store te muestra el tuyo antes de que confirmes.</p>
+  {% include bf-deals.html %}
+</section>
+
+<section class="section bf bf-why" aria-labelledby="bf-why">
+  <h2 class="h2" id="bf-why">Por qué el desbloqueo de por vida</h2>
+  {%- assign bf_family_n = 0 -%}{%- for pair in bf.apps -%}{%- if pair[1].family_sharing -%}{%- assign bf_family_n = bf_family_n | plus: 1 -%}{%- endif -%}{%- endfor %}
+  <p>Todas las apps de la oferta se descargan gratis, y la mayoría tiene también una suscripción mensual o anual. El desbloqueo de por vida es un pago único que nunca se renueva y queda en tu cuenta de Apple. {{ bf_family_n }} de los {{ bf.count }} desbloqueos incluyen En familia, y cada oferta de arriba lo indica.</p>
+  <p>Las {{ bf.count }} apps son de Lagerland Apps, un estudio independiente de Finlandia. Ninguna te muestra anuncios, te pide registrarte ni nos envía tus datos.</p>
+</section>
+{%- endif %}
+
+<section id="faq" class="section reveal">
+  <h2 class="h2">{{ t.faq_heading }}</h2>
+  <div class="faq">
+    {%- for item in page.faq %}
+    <details class="faq-item"{% if forloop.first %} open{% endif %}><summary>{{ item.q }}</summary><div class="faq-a">{{ item.a }}</div></details>
+    {%- endfor %}
+  </div>
+</section>
+
+{%- if bf_live %}
+<section class="section bf bf-close">
+  <h2 class="h2">El código deja de funcionar después del Cyber Monday</h2>
+  <p>La mitad de precio dura hasta que termine el Cyber Monday, 30 de noviembre. Después, todos los desbloqueos de por vida vuelven a su precio habitual.</p>
+  <p><a class="btn btn-primary" href="#deals">Volver a las ofertas</a></p>
+</section>
+{%- endif %}

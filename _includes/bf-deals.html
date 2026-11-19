@@ -1,0 +1,66 @@
+{%- comment -%}
+  Black Friday 2026: the grid of deals on /black-friday/ and its translations. Every app in _data/sale.json, in
+  the file's order (highest regular price first), with the price pair in the page's territory, the product's name
+  from the app's page in this language, Family Sharing from the catalog, and a series filter (sale.js; without
+  JavaScript every card shows). Card words come from _data/i18n/<lang>.yml.
+{%- endcomment -%}
+{%- include sale.html -%}
+{%- assign _bd_t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign _bd_lang = page.lang | default: "en" -%}
+{%- assign _bd_keys = "health,plan,money,games,tools" | split: "," -%}
+{%- assign _bd_all = _bd_t.bf_deals_all | replace: "{count}", bf.count -%}
+<div class="bf-deals" id="deals">
+  <ul class="series-tabs bf-tabs" aria-label="{{ _bd_t.bf_deals_label }}">
+    <li><button type="button" class="series-tab is-pressed" data-bf-filter="all" aria-pressed="true"><i style="background:var(--ink)"></i>{{ _bd_all }}</button></li>
+    {%- for _bd_k in _bd_keys -%}
+      {%- assign _bd_n = 0 -%}
+      {%- for _bd_pair in bf.apps -%}
+        {%- assign _bd_m = site.apps | where: "slug", _bd_pair[0] | first -%}
+        {%- include series.html app=_bd_m -%}
+        {%- if series_key == _bd_k -%}{%- assign _bd_n = _bd_n | plus: 1 -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if _bd_n > 0 %}
+    <li><button type="button" class="series-tab series-{{ _bd_k }}" data-bf-filter="{{ _bd_k }}" aria-pressed="false"><i></i>{{ _bd_t.series[_bd_k] }}<b>{{ _bd_n }}</b></button></li>
+      {%- endif -%}
+    {%- endfor %}
+  </ul>
+  <ul class="bf-grid">
+    {%- for _bd_pair in bf.apps -%}
+    {%- assign _bd_slug = _bd_pair[0] -%}
+    {%- assign _bd_m = site.apps | where: "slug", _bd_slug | first -%}
+    {%- if _bd_lang == "en" -%}{%- assign _bd_tx = _bd_m -%}{%- else -%}
+      {%- assign _bd_tx = site.pages | where: "lang", _bd_lang | where: "layout", "app" | where: "slug", _bd_slug | first -%}
+      {%- unless _bd_tx -%}{%- assign _bd_tx = _bd_m -%}{%- endunless -%}
+    {%- endif -%}
+    {%- include sale.html slug=_bd_slug tx=_bd_tx -%}
+    {%- include app-facts.html app=_bd_m -%}
+    {%- include series.html app=_bd_m -%}
+    {%- assign _bd_plat = f_platforms | join: " · " | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Watch" | replace: "visionOS", "Vision Pro" -%}
+    {%- assign _bd_url = _bd_tx.url | default: _bd_m.url -%}
+    {%- assign _bd_about = _bd_t.bf_deal_about | replace: "{name}", _bd_m.name -%}
+    {%- assign _bd_aria = _bd_t.bf_redeem_aria | replace: "{name}", _bd_m.name -%}
+    <li class="bf-deal series-{{ series_key }}" data-series="{{ series_key }}">
+      <span class="mini-stamp" aria-hidden="true"><span class="mini-stamp__paper"><span class="mini-stamp__field">
+        <img src="/assets/icons/sm/{{ _bd_slug }}.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+      </span></span><span class="bf-overprint bf-overprint--mini"><span class="bf-overprint__v">&frac12;</span></span></span>
+      <div class="bf-deal__body">
+        <h3 class="bf-deal__name"><a href="{{ _bd_url }}">{{ _bd_m.name }}</a></h3>
+        <p class="bf-deal__tag">{{ _bd_tx.tagline | default: _bd_m.tagline }}</p>
+        <p class="bf-deal__meta"><span>{{ bf_product }}</span>{% if bf_app.family_sharing %}<span>{{ f_str.family_sharing }}</span>{% endif %}{% if _bd_plat != "" %}<span>{{ _bd_plat }}</span>{% endif %}</p>
+        <p class="bf-deal__price"><s class="bf-was"><span class="sr-only">{{ _bd_t.bf_was }} </span>{{ bf_was }}</s> <strong class="bf-now"><span class="sr-only">{{ _bd_t.bf_now }} </span>{{ bf_now }}</strong></p>
+        <div class="bf-deal__actions">
+          <a class="btn btn-primary bf-redeem" href="{{ bf_app.redeem_url }}" rel="noopener" aria-label="{{ _bd_aria }}" data-goatcounter-click="bf-redeem-{{ _bd_slug }}-deals">{{ _bd_t.bf_redeem }}</a>
+          <a class="bf-deal__more" href="{{ _bd_url }}">{{ _bd_about }}</a>
+        </div>
+        {%- if bf_app.iphone %}
+        <details class="bf-deal__qr">
+          <summary>{{ _bd_t.bf_deal_qr }}</summary>
+          {%- assign _bd_qalt = _bd_t.bf_deal_qr_alt | replace: "{name}", _bd_m.name %}
+          <img src="/assets/qr/bf/{{ _bd_slug }}.svg" alt="{{ _bd_qalt }}" width="132" height="132" loading="lazy" decoding="async">
+        </details>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>

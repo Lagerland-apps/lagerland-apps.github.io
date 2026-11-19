@@ -1,0 +1,159 @@
+---
+layout: default
+ref: /black-friday/
+permalink: /nl/black-friday/
+translated_from: 2026-11-20
+title: "Black Friday: één keer betalen, de helft betalen"
+quick_answer: "Met de Black Friday-actie van Lagerland Apps krijg je 50% korting op de eenmalige levenslange ontgrendeling in 18 apps voor iPhone, iPad en Mac, onder meer Observa, Chessful, Taskful Day en AllPaid. De inwisselknop bij elke app opent de App Store met de aanbiedingscode BLACKFRIDAY2026 al ingevuld, en de code werkt tot en met Cyber Monday, 30 november 2026. Elk land betaalt de helft van zijn eigen prijs voor levenslang. Abonnementen en de gratis versies blijven zoals ze zijn."
+seo:
+  title: "Black Friday apps 2026: levenslang voor de halve prijs"
+  description: "Halve prijs op de levenslange ontgrendeling in 18 apps voor iPhone, iPad en Mac met code BLACKFRIDAY2026, tot en met Cyber Monday, 30 november 2026."
+  keywords:
+    - black friday apps
+    - black friday aanbiedingen apps
+    - black friday iphone apps
+    - black friday mac apps
+    - app store kortingscode
+    - app store aanbiedingscode
+    - lagerland apps kortingscode
+faq:
+  - q: "Wat is de Black Friday-aanbieding van Lagerland Apps?"
+    a: "Tot en met Cyber Monday, 30 november 2026, kost de eenmalige levenslange ontgrendeling in 18 apps van Lagerland de helft van de normale prijs met de App Store-aanbiedingscode BLACKFRIDAY2026. De code werkt in elk land waar de apps te koop zijn."
+  - q: "Hoe wissel ik de Black Friday-code in?"
+    a: "Tik op ‘Halve prijs inwisselen’ naast de app die je wilt, op de iPhone, iPad of Mac waarop je de app gebruikt. De App Store opent met de code al ingevuld en toont de prijs voordat je bevestigt. Op een computer open je de QR-code onder de app en scan je die met de camera van je iPhone."
+  - q: "Waarom is de actieprijs in mijn land anders?"
+    a: "Lagerland bepaalt de prijs per land apart, dus je krijgt de helft van de prijs voor levenslang in je eigen land in plaats van een omgerekende Amerikaanse prijs. Op deze pagina staan de prijzen van de Nederlandse App Store. De App Store toont altijd jouw prijs voordat je betaalt."
+  - q: "Ik betaal al voor een abonnement. Moet ik overstappen op levenslang?"
+    a: "Als je liever één keer betaalt, koop je de levenslange ontgrendeling voor de halve prijs en zeg je daarna het abonnement op via Instellingen > [je naam] > ‘Abonnementen’. Apple zegt het niet voor je op, dus het wordt automatisch verlengd tot je dat zelf doet."
+  - q: "Geeft de code ook korting op abonnementen?"
+    a: "Nee. De code geeft alleen 50% korting op de levenslange ontgrendeling. De maand- en jaarprijzen blijven gelijk, net als alles in de gratis versies."
+  - q: "Wat als de app niet ontgrendeld is nadat je de code hebt ingewisseld?"
+    a: "Open de app en tik op ‘Aankopen herstellen’ in de instellingen of op het aankoopscherm van de app. De app controleert je Apple Account en zet de ontgrendeling aan."
+  - q: "Wanneer eindigt de Black Friday-actie?"
+    a: "De code werkt tot het einde van Cyber Monday, 30 november 2026. Daarna kost elke levenslange ontgrendeling weer de normale prijs."
+last_updated: 2026-11-20
+---
+{%- include t.html -%}
+{%- include sale.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}#webpage",
+      "url": "{{ site.url }}{{ page.url }}",
+      "name": {{ page.seo.title | jsonify }},
+      "description": {{ page.seo.description | jsonify }},
+      "isPartOf": { "@id": "{{ site.url }}/nl/#website" },
+      "about": { "@id": "{{ site.url }}/#organization" },
+      "inLanguage": "nl",
+      "datePublished": "2026-11-20",
+      "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/nl/" },
+          { "@type": "ListItem", "position": 2, "name": "Black Friday", "item": "{{ site.url }}{{ page.url }}" }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- for item in page.faq %}
+        { "@type": "Question", "name": {{ item.q | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | jsonify }} } }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }{% if bf_live %},
+    {
+      "@type": "ItemList",
+      "name": "Black Friday 2026: levenslange ontgrendelingen voor de halve prijs",
+      "itemListElement": [
+        {%- for pair in bf.apps %}
+        {%- assign m = site.apps | where: "slug", pair[0] | first -%}{%- assign bf_slug = pair[0] -%}{%- assign bf_os = site.data.catalog.apps[bf_slug].platforms -%}
+        {%- assign p = pair[1].prices.NLD %}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": {{ m.name | jsonify }},
+            "url": "{{ site.url }}{{ m.url }}",
+            "applicationCategory": "MobileApplication",
+            "operatingSystem": {{ bf_os | join: ", " | jsonify }},
+            "offers": {
+              "@type": "Offer",
+              "price": "{{ p.sale }}",
+              "priceCurrency": "{{ p.currency }}",
+              "priceValidUntil": "{{ bf.last_day }}",
+              "url": "{{ pair[1].redeem_url }}"
+            }
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }{% endif %}
+  ]
+}
+</script>
+
+<section class="bf-hero">
+  <div class="bf bf-hero__live">
+    <span class="bf-hero__mark" aria-hidden="true">&frac12;</span>
+    <h1 class="h1">Black Friday: één keer betalen, de helft betalen</h1>
+    <p class="lead">Tot en met Cyber Monday, 30 november, kost de levenslange ontgrendeling in {{ bf.count }} apps van Lagerland de helft van de normale prijs. Eén code werkt in al die apps, en elke inwisselknop vult de code voor je in.</p>
+    <div class="bf-hero__actions">
+      <a class="btn btn-primary" href="#deals">Bekijk de {{ bf.count }} aanbiedingen</a>
+      {% include bf-code.html %}
+    </div>
+  </div>
+  <div class="bf-ended"{% if bf_live %} hidden{% endif %}>
+    {% if bf_live %}<h2 class="h1">{{ t.bf_ended_title }}</h2>{% else %}<h1 class="h1">{{ t.bf_ended_title }}</h1>{% endif %}
+    <p class="lead">{{ t.bf_ended_text }}</p>
+    <p><a class="btn btn-primary" href="/nl/apps/">{{ t.bf_ended_cta }}</a></p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+{%- if bf_live %}
+<section class="section bf bf-steps" aria-labelledby="bf-how">
+  <h2 class="h2" id="bf-how">Zo wissel je de code in</h2>
+  <ol class="bf-steps__list">
+    <li><strong>Tik op ‘Halve prijs inwisselen’</strong> naast de app die je wilt, op de iPhone, iPad of Mac waarop je de app gebruikt. Op een computer open je de QR-code en scan je die met je iPhone.</li>
+    <li><strong>Controleer de prijs en bevestig.</strong> De App Store toont de helft van de normale prijs voor levenslang in jouw land, en die betaal je één keer.</li>
+    <li><strong>Open de app.</strong> De ontgrendeling staat klaar. Als die er nog niet is, tik je op ‘Aankopen herstellen’ in de instellingen van de app.</li>
+  </ol>
+</section>
+
+<section class="section bf" aria-labelledby="bf-deals-title">
+  <h2 class="h2" id="bf-deals-title">De {{ bf.count }} aanbiedingen</h2>
+  <p class="bf-deals__note">De prijzen zijn die van de Nederlandse App Store. Elk land betaalt de helft van zijn eigen prijs voor levenslang, en de App Store toont jouw prijs voordat je bevestigt.</p>
+  {% include bf-deals.html %}
+</section>
+
+<section class="section bf bf-why" aria-labelledby="bf-why">
+  <h2 class="h2" id="bf-why">Waarom de levenslange ontgrendeling</h2>
+  {%- assign bf_family_n = 0 -%}{%- for pair in bf.apps -%}{%- if pair[1].family_sharing -%}{%- assign bf_family_n = bf_family_n | plus: 1 -%}{%- endif -%}{%- endfor %}
+  <p>Elke app in de actie is gratis te downloaden, en de meeste hebben ook een maand- of jaarabonnement. De levenslange ontgrendeling is één betaling die nooit wordt verlengd en bij je Apple Account blijft. {{ bf_family_n }} van de {{ bf.count }} ontgrendelingen ondersteunen Delen met gezin, en dat staat bij die aanbiedingen hierboven vermeld.</p>
+  <p>Alle {{ bf.count }} apps komen van Lagerland Apps, een onafhankelijke studio in Finland. Geen van deze apps toont advertenties, vraagt je om een account of stuurt je gegevens naar ons.</p>
+</section>
+{%- endif %}
+
+<section id="faq" class="section reveal">
+  <h2 class="h2">{{ t.faq_heading }}</h2>
+  <div class="faq">
+    {%- for item in page.faq %}
+    <details class="faq-item"{% if forloop.first %} open{% endif %}><summary>{{ item.q }}</summary><div class="faq-a">{{ item.a }}</div></details>
+    {%- endfor %}
+  </div>
+</section>
+
+{%- if bf_live %}
+<section class="section bf bf-close">
+  <h2 class="h2">Na Cyber Monday werkt de code niet meer</h2>
+  <p>De halve prijs geldt tot het einde van Cyber Monday, 30 november. Daarna kost elke levenslange ontgrendeling weer de normale prijs.</p>
+  <p><a class="btn btn-primary" href="#deals">Terug naar de aanbiedingen</a></p>
+</section>
+{%- endif %}

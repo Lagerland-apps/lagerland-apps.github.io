@@ -33,6 +33,8 @@
         <span class="pill">{{ ac_rated }}</span>
       {%- endif -%}
       {%- if card_plat != "" %}<span class="pill">{{ card_plat }}</span>{% endif -%}
+      {%- include sale.html slug=include.app.slug tx=ac_tx -%}
+      {%- if bf_app %}<span class="pill pill--bf bf">{{ ac_t.bf_chip }}</span>{% endif -%}
     </span>
   </span>
 </a>
