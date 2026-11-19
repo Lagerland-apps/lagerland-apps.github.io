@@ -4,7 +4,7 @@ ref: /alternatives/
 permalink: /fr/alternatives/
 translated_from: 2026-11-08
 title: "Comparatifs"
-quick_answer: "Les comparatifs de Lagerland Apps mettent une de nos apps face à une app connue, expliquent ce qui les distingue vraiment et disent à qui chacune convient, y compris quand l’app connue est le meilleur choix. Pour le sommeil et la récupération, Observa est comparée à Whoop, Oura ou AutoSleep, et AfterShift à l’app RISE. En musculation, LiftLog et GymLogger X font face à Hevy, Strong ou StrongLifts. Pour le temps d’écran, EarnLock est comparé à Opal, Forest ou Jomo, et pour organiser la journée, Taskful Day à Habitica et Streaks. D’autres pages couvrent le partage de l’addition et les factures (Tricount, Splitwise, Bankin’), les échecs (Chess.com, Lichess, Chessable), les outils PDF et de conversion (PDF Expert, CloudConvert) et l’app Wikipédia. Nous ne citons le prix d’une autre app que si nous l’avons vérifié dans l’App Store français, et chaque page donne la date de cette vérification."
+quick_answer: "Les comparatifs de Lagerland Apps mettent une de nos apps face à une app connue, expliquent ce qui les distingue vraiment et disent à qui chacune convient, y compris quand l’app connue est le meilleur choix. Pour le sommeil et la récupération, Observa est comparée à Whoop, Oura ou AutoSleep, et AfterShift à l’app RISE. En musculation, LiftLog et GymLogger X font face à Hevy, Strong, StrongLifts, Jefit ou Ladder. Pour le temps d’écran, EarnLock est comparé à Opal, Forest ou Jomo, et pour organiser la journée, Taskful Day à Habitica et Streaks. D’autres pages couvrent le partage de l’addition et les factures (Tricount, Splitwise, Bankin’), les échecs (Chess.com, Lichess, Chessable, Magnus Trainer), les jeux de réflexion (Two Dots, Flow Free, KAMI 2, Nonograms Katana, Baba Is You), le carnet de santé des animaux (Medika), les outils de fichiers et de conversion (PDF Expert, CloudConvert, Documents by Readdle) et l’app Wikipédia. Nous ne citons le prix d’une autre app que si nous l’avons vérifié dans l’App Store français, et chaque page donne la date de cette vérification."
 seo:
   title: "Alternatives à Tricount, Splitwise, Opal, Hevy et Whoop"
   description: "Comparatifs en français : quelle alternative à Tricount, Splitwise, Opal, Hevy, Whoop, Habitica ou Streaks choisir, et quand garder l’app connue."
@@ -17,7 +17,7 @@ seo:
     - alternative bankin
     - alternative strong
     - alternative oura
-last_updated: 2026-11-08
+last_updated: 2026-11-19
 ---
 {%- include t.html -%}
 {%- assign fr_alt_count = site.pages | where: "lang", "fr" | where_exp: "p", "p.url contains '/fr/alternatives/'" | size | minus: 1 -%}
@@ -52,27 +52,37 @@ last_updated: 2026-11-08
       { "@type": "ListItem", "position": 7, "url": "{{ site.url }}/fr/alternatives/gentler-streak/", "name": "Alternative à Gentler Streak : Observa" },
       { "@type": "ListItem", "position": 8, "url": "{{ site.url }}/fr/alternatives/rise-sleep-tracker/", "name": "Alternative à l’app RISE : AfterShift" },
       { "@type": "ListItem", "position": 9, "url": "{{ site.url }}/fr/alternatives/hevy/", "name": "Alternative à Hevy : LiftLog" },
-      { "@type": "ListItem", "position": 10, "url": "{{ site.url }}/fr/alternatives/fitbod/", "name": "Alternative à Fitbod : GymLogger X" },
-      { "@type": "ListItem", "position": 11, "url": "{{ site.url }}/fr/alternatives/strong-workout-app/", "name": "Alternative à Strong : GymLogger X" },
-      { "@type": "ListItem", "position": 12, "url": "{{ site.url }}/fr/alternatives/stronglifts-5x5/", "name": "Alternative à StrongLifts 5x5 : GymLogger X" },
-      { "@type": "ListItem", "position": 13, "url": "{{ site.url }}/fr/alternatives/alpha-progression/", "name": "Alternative à Alpha Progression : GymLogger X" },
-      { "@type": "ListItem", "position": 14, "url": "{{ site.url }}/fr/alternatives/opal/", "name": "Alternative à Opal : EarnLock" },
-      { "@type": "ListItem", "position": 15, "url": "{{ site.url }}/fr/alternatives/forest/", "name": "Alternative à Forest : EarnLock" },
-      { "@type": "ListItem", "position": 16, "url": "{{ site.url }}/fr/alternatives/one-sec/", "name": "Alternative à one sec : EarnLock" },
-      { "@type": "ListItem", "position": 17, "url": "{{ site.url }}/fr/alternatives/screenzen/", "name": "Alternative à ScreenZen : EarnLock" },
-      { "@type": "ListItem", "position": 18, "url": "{{ site.url }}/fr/alternatives/jomo/", "name": "Alternative à Jomo : EarnLock" },
-      { "@type": "ListItem", "position": 19, "url": "{{ site.url }}/fr/alternatives/habitica/", "name": "Alternative à Habitica : Taskful Day" },
-      { "@type": "ListItem", "position": 20, "url": "{{ site.url }}/fr/alternatives/streaks-app/", "name": "Alternative à l’application Streaks : Taskful Day" },
-      { "@type": "ListItem", "position": 21, "url": "{{ site.url }}/fr/alternatives/tricount/", "name": "Alternative à Tricount : RightSplit" },
-      { "@type": "ListItem", "position": 22, "url": "{{ site.url }}/fr/alternatives/splitwise/", "name": "Alternative à Splitwise : RightSplit" },
-      { "@type": "ListItem", "position": 23, "url": "{{ site.url }}/fr/alternatives/splid/", "name": "Splid ou Tricount : RightSplit" },
-      { "@type": "ListItem", "position": 24, "url": "{{ site.url }}/fr/alternatives/alternative-bankin/", "name": "Alternative à Bankin’ : AllPaid" },
-      { "@type": "ListItem", "position": 25, "url": "{{ site.url }}/fr/alternatives/chess-com/", "name": "Alternative à l’analyse de Chess.com : Chessful" },
-      { "@type": "ListItem", "position": 26, "url": "{{ site.url }}/fr/alternatives/lichess/", "name": "Alternative à Lichess : Chessful" },
-      { "@type": "ListItem", "position": 27, "url": "{{ site.url }}/fr/alternatives/chessable/", "name": "Alternative à Chessable : Chessful" },
-      { "@type": "ListItem", "position": 28, "url": "{{ site.url }}/fr/alternatives/pdf-expert/", "name": "Alternative à PDF Expert : MediaKit" },
-      { "@type": "ListItem", "position": 29, "url": "{{ site.url }}/fr/alternatives/cloudconvert/", "name": "Alternative à CloudConvert : MediaKit" },
-      { "@type": "ListItem", "position": 30, "url": "{{ site.url }}/fr/alternatives/wikipedia-app/", "name": "Alternative à l’application Wikipédia : WanderWiki" }
+      { "@type": "ListItem", "position": 10, "url": "{{ site.url }}/fr/alternatives/ladder/", "name": "Alternative à Ladder : LiftLog" },
+      { "@type": "ListItem", "position": 11, "url": "{{ site.url }}/fr/alternatives/fitbod/", "name": "Alternative à Fitbod : GymLogger X" },
+      { "@type": "ListItem", "position": 12, "url": "{{ site.url }}/fr/alternatives/strong-workout-app/", "name": "Alternative à Strong : GymLogger X" },
+      { "@type": "ListItem", "position": 13, "url": "{{ site.url }}/fr/alternatives/stronglifts-5x5/", "name": "Alternative à StrongLifts 5x5 : GymLogger X" },
+      { "@type": "ListItem", "position": 14, "url": "{{ site.url }}/fr/alternatives/alpha-progression/", "name": "Alternative à Alpha Progression : GymLogger X" },
+      { "@type": "ListItem", "position": 15, "url": "{{ site.url }}/fr/alternatives/jefit/", "name": "Alternative à Jefit : GymLogger X" },
+      { "@type": "ListItem", "position": 16, "url": "{{ site.url }}/fr/alternatives/opal/", "name": "Alternative à Opal : EarnLock" },
+      { "@type": "ListItem", "position": 17, "url": "{{ site.url }}/fr/alternatives/forest/", "name": "Alternative à Forest : EarnLock" },
+      { "@type": "ListItem", "position": 18, "url": "{{ site.url }}/fr/alternatives/one-sec/", "name": "Alternative à one sec : EarnLock" },
+      { "@type": "ListItem", "position": 19, "url": "{{ site.url }}/fr/alternatives/screenzen/", "name": "Alternative à ScreenZen : EarnLock" },
+      { "@type": "ListItem", "position": 20, "url": "{{ site.url }}/fr/alternatives/jomo/", "name": "Alternative à Jomo : EarnLock" },
+      { "@type": "ListItem", "position": 21, "url": "{{ site.url }}/fr/alternatives/habitica/", "name": "Alternative à Habitica : Taskful Day" },
+      { "@type": "ListItem", "position": 22, "url": "{{ site.url }}/fr/alternatives/streaks-app/", "name": "Alternative à l’application Streaks : Taskful Day" },
+      { "@type": "ListItem", "position": 23, "url": "{{ site.url }}/fr/alternatives/tricount/", "name": "Alternative à Tricount : RightSplit" },
+      { "@type": "ListItem", "position": 24, "url": "{{ site.url }}/fr/alternatives/splitwise/", "name": "Alternative à Splitwise : RightSplit" },
+      { "@type": "ListItem", "position": 25, "url": "{{ site.url }}/fr/alternatives/splid/", "name": "Splid ou Tricount : RightSplit" },
+      { "@type": "ListItem", "position": 26, "url": "{{ site.url }}/fr/alternatives/alternative-bankin/", "name": "Alternative à Bankin’ : AllPaid" },
+      { "@type": "ListItem", "position": 27, "url": "{{ site.url }}/fr/alternatives/chess-com/", "name": "Alternative à l’analyse de Chess.com : Chessful" },
+      { "@type": "ListItem", "position": 28, "url": "{{ site.url }}/fr/alternatives/lichess/", "name": "Alternative à Lichess : Chessful" },
+      { "@type": "ListItem", "position": 29, "url": "{{ site.url }}/fr/alternatives/chessable/", "name": "Alternative à Chessable : Chessful" },
+      { "@type": "ListItem", "position": 30, "url": "{{ site.url }}/fr/alternatives/magnus-trainer/", "name": "Alternative à Magnus Trainer : Chessful" },
+      { "@type": "ListItem", "position": 31, "url": "{{ site.url }}/fr/alternatives/pdf-expert/", "name": "Alternative à PDF Expert : MediaKit" },
+      { "@type": "ListItem", "position": 32, "url": "{{ site.url }}/fr/alternatives/cloudconvert/", "name": "Alternative à CloudConvert : MediaKit" },
+      { "@type": "ListItem", "position": 33, "url": "{{ site.url }}/fr/alternatives/documents-by-readdle/", "name": "Alternative à Documents by Readdle : MediaKit" },
+      { "@type": "ListItem", "position": 34, "url": "{{ site.url }}/fr/alternatives/two-dots/", "name": "Alternative à Two Dots : Millrace" },
+      { "@type": "ListItem", "position": 35, "url": "{{ site.url }}/fr/alternatives/flow-free/", "name": "Alternative à Flow Free : Millrace" },
+      { "@type": "ListItem", "position": 36, "url": "{{ site.url }}/fr/alternatives/kami-2/", "name": "Alternative à KAMI 2 : Millrace" },
+      { "@type": "ListItem", "position": 37, "url": "{{ site.url }}/fr/alternatives/nonograms-katana/", "name": "Alternative à Nonograms Katana : Tare" },
+      { "@type": "ListItem", "position": 38, "url": "{{ site.url }}/fr/alternatives/baba-is-you/", "name": "Alternative à Baba Is You : Tare" },
+      { "@type": "ListItem", "position": 39, "url": "{{ site.url }}/fr/alternatives/medika/", "name": "Alternative à Medika : Pawza" },
+      { "@type": "ListItem", "position": 40, "url": "{{ site.url }}/fr/alternatives/wikipedia-app/", "name": "Alternative à l’application Wikipédia : WanderWiki" }
     ]
   }
 }
@@ -179,6 +189,18 @@ last_updated: 2026-11-08
         <span class="pill">Forme et santé</span>
         <h3 class="card-compared-title">GymLogger X <span class="card-compared-vs">{{ t.alt_vs }}</span> Alpha Progression</h3>
         <p class="card-text">Alpha Progression enregistre les répétitions en réserve à chaque série et, avec Pro, recommande une charge et des répétitions avant chaque série, sans app Apple Watch dédiée. GymLogger X a une app Apple Watch gratuite avec la fréquence cardiaque en direct, ne demande aucun compte et vend Pro aussi en achat unique à vie. Pour une recommandation de charge et de répétitions avant chaque série, Alpha Progression garde l’avantage.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/jefit/">
+        <span class="pill">Forme et santé</span>
+        <h3 class="card-compared-title">GymLogger X <span class="card-compared-vs">{{ t.alt_vs }}</span> Jefit</h3>
+        <p class="card-text">Jefit associe une grande base d’exercices à des fonctions sociales et à un compte, et sa version gratuite affiche de la publicité. GymLogger X est un carnet privé, sans compte, sans publicité ni fil communautaire, avec une app Apple Watch gratuite, et Pro existe aussi en achat unique à vie.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/ladder/">
+        <span class="pill">Forme et santé</span>
+        <h3 class="card-compared-title">LiftLog <span class="card-compared-vs">{{ t.alt_vs }}</span> Ladder</h3>
+        <p class="card-text">Ladder vend sur abonnement des programmes coachés par équipe, avec des séances en vidéo. LiftLog est un carnet de musculation pour s’entraîner en autonomie, avec 40 programmes prêts à l’emploi. Elle est gratuite pendant 7 jours, puis s’achète une fois, sans abonnement. Si vous voulez un coach et des séances guidées, Ladder convient mieux.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
     </div>
@@ -289,6 +311,12 @@ last_updated: 2026-11-08
         <p class="card-text">D’après l’App Store français (vérifié le 8 novembre 2026), l’app Chessable n’existe qu’en anglais. Chessful, en français et sans compte, analyse vos parties avec Stockfish sur l’appareil et transforme chaque erreur en puzzle ; les puzzles ratés reviennent en répétition espacée. Pour apprendre un répertoire rédigé par des grands maîtres, Chessable est le plus indiqué.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
+      <a class="card card-compared" href="/fr/alternatives/magnus-trainer/">
+        <span class="pill">Jeux de société</span>
+        <h3 class="card-compared-title">Chessful <span class="card-compared-vs">{{ t.alt_vs }}</span> Magnus Trainer</h3>
+        <p class="card-text">Magnus Trainer enseigne avec plus de 250 leçons ludiques de Magnus Carlsen et de grands maîtres, et demande un compte. Chessful enseigne à partir de vos propres parties, sans compte : chaque erreur est expliquée en langage clair puis revient en puzzle. Pour les leçons de Carlsen lui-même, choisissez Magnus Trainer.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
     </div>
   </div>
 
@@ -305,6 +333,60 @@ last_updated: 2026-11-08
         <span class="pill">Utilitaires</span>
         <h3 class="card-compared-title">MediaKit <span class="card-compared-vs">{{ t.alt_vs }}</span> CloudConvert</h3>
         <p class="card-text">CloudConvert convertit un très grand nombre de formats sur ses serveurs, si bien que chaque fichier y est envoyé d’abord. MediaKit fait les conversions courantes sur l’iPhone ou le Mac, hors connexion et sans compte, avec cinq outils gratuits sans limite de durée. Pour les formats rares, une API ou d’autres appareils que l’iPhone et le Mac, CloudConvert reste préférable.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/documents-by-readdle/">
+        <span class="pill">Utilitaires</span>
+        <h3 class="card-compared-title">MediaKit <span class="card-compared-vs">{{ t.alt_vs }}</span> Documents by Readdle</h3>
+        <p class="card-text">Documents by Readdle classe, lit et déplace vos fichiers entre vos clouds. MediaKit les convertit et les compresse sur l’iPhone ou le Mac, sans envoi en ligne ; cinq de ses outils restent gratuits sans limite de durée. Beaucoup utilisent les deux.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Jeux de réflexion</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/fr/alternatives/two-dots/">
+        <span class="pill">Jeux</span>
+        <h3 class="card-compared-title">Millrace <span class="card-compared-vs">{{ t.alt_vs }}</span> Two Dots</h3>
+        <p class="card-text">Two Dots est une longue saga de plus de 5000 niveaux, avec des événements, des vies et de la publicité. Millrace compte 64 niveaux sans aucun hasard, chacun avec une solution la plus courte prouvée, et n’a ni vies ni publicité. Si c’est la saga que vous cherchez, Two Dots la propose bien mieux.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/flow-free/">
+        <span class="pill">Jeux</span>
+        <h3 class="card-compared-title">Millrace <span class="card-compared-vs">{{ t.alt_vs }}</span> Flow Free</h3>
+        <p class="card-text">Flow Free propose plus de 2500 plateaux gratuits et apaisants, avec de la publicité. Millrace en compte 64, plus profonds et sans publicité : chacun a une limite de coups, une file fixe de tuiles et une solution la plus courte prouvée. Pour des milliers de plateaux rapides, Flow Free reste le meilleur choix.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/kami-2/">
+        <span class="pill">Jeux</span>
+        <h3 class="card-compared-title">Millrace <span class="card-compared-vs">{{ t.alt_vs }}</span> KAMI 2</h3>
+        <p class="card-text">KAMI 2 propose plus de 100 puzzles d’art du papier faits à la main, où l’on inonde la feuille d’une seule couleur. Millrace compte 64 niveaux à tuiles, chacun avec une solution la plus courte prouvée, et se joue hors ligne, sans publicité ni suivi. Pour un nouveau puzzle chaque jour et un outil de création, restez sur KAMI 2.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/nonograms-katana/">
+        <span class="pill">Jeux</span>
+        <h3 class="card-compared-title">Tare <span class="card-compared-vs">{{ t.alt_vs }}</span> Nonograms Katana</h3>
+        <p class="card-text">Nonograms Katana offre 1001 nonogrammes gratuits, avec de la publicité et des extensions façon jeu de rôle. Tare propose 200 niveaux de balance faits main, dont 20 gratuits, chacun avec une seule réponse, et n’affiche aucune publicité. Pour les nonogrammes eux-mêmes, Katana est difficile à battre.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/fr/alternatives/baba-is-you/">
+        <span class="pill">Jeux</span>
+        <h3 class="card-compared-title">Tare <span class="card-compared-vs">{{ t.alt_vs }}</span> Baba Is You</h3>
+        <p class="card-text">Dans Baba Is You, vous poussez des blocs de mots pour réécrire les règles. Tare garde une seule règle physique, l’équilibre, et ses casse-tête ne contiennent aucun mot : chacun de ses 200 niveaux n’a qu’une réponse. Si vous n’avez pas encore joué à Baba Is You, commencez par lui.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Animaux</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/fr/alternatives/medika/">
+        <span class="pill">Animaux</span>
+        <h3 class="card-compared-title">Pawza <span class="card-compared-vs">{{ t.alt_vs }}</span> Medika</h3>
+        <p class="card-text">Medika fonctionne aussi sur Android, partage les profils par code QR et affiche de la publicité dans sa version gratuite. Pawza, réservée aux appareils Apple, lit les papiers du vétérinaire sur votre appareil. Elle n’a ni publicité ni compte, et Pro existe en achat unique.</p>
         <span class="card-compared-cta">{{ t.alt_read }}</span>
       </a>
     </div>

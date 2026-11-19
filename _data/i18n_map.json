@@ -33,6 +33,10 @@
     "es": "/es/alternatives/autosleep/",
     "fr": "/fr/alternatives/autosleep/"
   },
+  "/alternatives/baba-is-you/": {
+    "en": "/alternatives/baba-is-you/",
+    "fr": "/fr/alternatives/baba-is-you/"
+  },
   "/alternatives/bevel/": {
     "de": "/de/alternatives/bevel/",
     "en": "/alternatives/bevel/",
@@ -81,13 +85,18 @@
   "/alternatives/documents-by-readdle/": {
     "de": "/de/alternatives/documents-by-readdle/",
     "en": "/alternatives/documents-by-readdle/",
-    "es": "/es/alternatives/documents-by-readdle/"
+    "es": "/es/alternatives/documents-by-readdle/",
+    "fr": "/fr/alternatives/documents-by-readdle/"
   },
   "/alternatives/fitbod/": {
     "de": "/de/alternatives/fitbod/",
     "en": "/alternatives/fitbod/",
     "es": "/es/alternatives/fitbod/",
     "fr": "/fr/alternatives/fitbod/"
+  },
+  "/alternatives/flow-free/": {
+    "en": "/alternatives/flow-free/",
+    "fr": "/fr/alternatives/flow-free/"
   },
   "/alternatives/forest/": {
     "de": "/de/alternatives/forest/",
@@ -134,16 +143,22 @@
   "/alternatives/jefit/": {
     "de": "/de/alternatives/jefit/",
     "en": "/alternatives/jefit/",
-    "es": "/es/alternatives/jefit/"
+    "es": "/es/alternatives/jefit/",
+    "fr": "/fr/alternatives/jefit/"
   },
   "/alternatives/jomo/": {
     "de": "/de/alternatives/jomo/",
     "en": "/alternatives/jomo/",
     "fr": "/fr/alternatives/jomo/"
   },
+  "/alternatives/kami-2/": {
+    "en": "/alternatives/kami-2/",
+    "fr": "/fr/alternatives/kami-2/"
+  },
   "/alternatives/ladder/": {
     "de": "/de/alternatives/ladder/",
-    "en": "/alternatives/ladder/"
+    "en": "/alternatives/ladder/",
+    "fr": "/fr/alternatives/ladder/"
   },
   "/alternatives/lichess/": {
     "de": "/de/alternatives/lichess/",
@@ -151,6 +166,18 @@
     "es": "/es/alternatives/lichess/",
     "fr": "/fr/alternatives/lichess/",
     "pt": "/pt/alternatives/lichess/"
+  },
+  "/alternatives/magnus-trainer/": {
+    "en": "/alternatives/magnus-trainer/",
+    "fr": "/fr/alternatives/magnus-trainer/"
+  },
+  "/alternatives/medika/": {
+    "en": "/alternatives/medika/",
+    "fr": "/fr/alternatives/medika/"
+  },
+  "/alternatives/nonograms-katana/": {
+    "en": "/alternatives/nonograms-katana/",
+    "fr": "/fr/alternatives/nonograms-katana/"
   },
   "/alternatives/one-sec/": {
     "de": "/de/alternatives/one-sec/",
@@ -229,6 +256,10 @@
     "es": "/es/alternatives/tricount/",
     "fr": "/fr/alternatives/tricount/",
     "pt": "/pt/alternatives/tricount/"
+  },
+  "/alternatives/two-dots/": {
+    "en": "/alternatives/two-dots/",
+    "fr": "/fr/alternatives/two-dots/"
   },
   "/alternatives/unpluq/": {
     "de": "/de/alternatives/unpluq/",

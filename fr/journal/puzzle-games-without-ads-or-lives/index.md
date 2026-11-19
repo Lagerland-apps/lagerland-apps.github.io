@@ -4,7 +4,7 @@ slug: puzzle-games-without-ads-or-lives
 ref: /journal/puzzle-games-without-ads-or-lives/
 permalink: /fr/journal/puzzle-games-without-ads-or-lives/
 translated_from: 2026-10-29
-last_updated: 2026-11-08
+last_updated: 2026-11-19
 date: 2026-11-08
 title: "Jeux iPhone sans pub ni vies : comment les jeux gratuits se financent, et ce que vend Millrace à la place"
 seo:
@@ -109,7 +109,7 @@ La publicité a été écartée par choix de conception. Une publicité vient fo
 
 ## Ce que ce modèle sacrifie
 
-Un jeu qui ne vend que des articles facultatifs dépend de certains joueurs qui choisissent d’acheter quelque chose dont ils n’ont pas besoin. Le modèle a d’autres limites. Il y a 64 niveaux, pas des milliers, et chacun a été trouvé par recherche et prouvé par un solveur à recherche en largeur avant sa sortie. La progression reste sur l’appareil et ne se synchronise pas. Si vous voulez une longue saga avec des événements, [la comparaison avec Two Dots](/alternatives/two-dots/){: hreflang="en"} (en anglais) dit honnêtement où Two Dots fait mieux, et comment fonctionnent ses vies.
+Un jeu qui ne vend que des articles facultatifs dépend de certains joueurs qui choisissent d’acheter quelque chose dont ils n’ont pas besoin. Le modèle a d’autres limites. Il y a 64 niveaux, pas des milliers, et chacun a été trouvé par recherche et prouvé par un solveur à recherche en largeur avant sa sortie. La progression reste sur l’appareil et ne se synchronise pas. Si vous voulez une longue saga avec des événements, [la comparaison avec Two Dots](/fr/alternatives/two-dots/) dit honnêtement où Two Dots fait mieux, et comment fonctionnent ses vies.
 
 ## Une liste de contrôle pour tout jeu de réflexion gratuit
 

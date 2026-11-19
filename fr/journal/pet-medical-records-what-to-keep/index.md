@@ -4,7 +4,7 @@ slug: pet-medical-records-what-to-keep
 ref: /journal/pet-medical-records-what-to-keep/
 permalink: /fr/journal/pet-medical-records-what-to-keep/
 translated_from: 2026-11-08
-last_updated: 2026-11-08
+last_updated: 2026-11-19
 date: 2026-11-08
 title: "Carnet de santé du chien et du chat : que garder dans le dossier médical, et qui demande quoi"
 seo:
@@ -120,7 +120,7 @@ L’app a des limites. Elle ne fonctionne que sur iPhone et iPad. Le remplissage
 
 [PetDesk](/alternatives/petdesk/){: hreflang="en"} fait quelque chose que Pawza ne peut pas faire. Il se connecte aux cliniques vétérinaires participantes, et peut donc gérer la prise de rendez-vous et les rappels qu’envoie la clinique elle-même. Pawza ne le fait pas, car une intégration avec une clinique suppose un serveur auquel se connecter, et Pawza n’en a pas. Si votre vétérinaire utilise PetDesk et que vous voulez prendre rendez-vous depuis l’app, utilisez PetDesk. Beaucoup de propriétaires utilisent les deux : l’app de la clinique pour échanger avec elle, et un dossier privé qui survit à un changement de vétérinaire.
 
-Le reste de la catégorie se partage selon des lignes semblables. [11pets](/alternatives/11pets/){: hreflang="en"} est plus large, multiplateforme, avec une collaboration entre prestataires. [Medika](/alternatives/medika/){: hreflang="en"} et [PetNoter](/alternatives/petnoter/){: hreflang="en"} fonctionnent tous deux sur Android, ce qui n’est pas notre cas. [Pawprint](/alternatives/pawprint/){: hreflang="en"}, devenu Great Pet Care, s’est fait connaître en récupérant directement les dossiers auprès de cliniques américaines participantes. [VetKeep](/alternatives/vetkeep/){: hreflang="en"} propose un assistant conversationnel par IA qui répond à partir de vos dossiers, ce qui exige le cloud que nous avons délibérément écarté. Choisissez le compromis que vous voulez vraiment.
+Le reste de la catégorie se partage selon des lignes semblables. [11pets](/alternatives/11pets/){: hreflang="en"} est plus large, multiplateforme, avec une collaboration entre prestataires. [Medika](/fr/alternatives/medika/) et [PetNoter](/alternatives/petnoter/){: hreflang="en"} fonctionnent tous deux sur Android, ce qui n’est pas notre cas. [Pawprint](/alternatives/pawprint/){: hreflang="en"}, devenu Great Pet Care, s’est fait connaître en récupérant directement les dossiers auprès de cliniques américaines participantes. [VetKeep](/alternatives/vetkeep/){: hreflang="en"} propose un assistant conversationnel par IA qui répond à partir de vos dossiers, ce qui exige le cloud que nous avons délibérément écarté. Choisissez le compromis que vous voulez vraiment.
 
 ## L’essentiel
 
