@@ -903,18 +903,21 @@
     "de": "/de/lagerland-apps/",
     "en": "/lagerland-apps/",
     "es": "/es/lagerland-apps/",
-    "fr": "/fr/lagerland-apps/"
+    "fr": "/fr/lagerland-apps/",
+    "it": "/it/lagerland-apps/"
   },
   "/support/": {
     "de": "/de/support/",
     "en": "/support/",
     "es": "/es/support/",
-    "fr": "/fr/support/"
+    "fr": "/fr/support/",
+    "it": "/it/support/"
   },
   "/transparency/": {
     "de": "/de/transparency/",
     "en": "/transparency/",
     "es": "/es/transparency/",
-    "fr": "/fr/transparency/"
+    "fr": "/fr/transparency/",
+    "it": "/it/transparency/"
   }
 }
