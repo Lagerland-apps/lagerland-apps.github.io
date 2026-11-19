@@ -208,7 +208,7 @@ Pro (`Pro`, `AllPaid Pro`); Mensual / Anual / De por vida (`Lifetime`); `Upgrade
 ### Glossary
 | English term on site | English UI string | Spanish UI string (catalog, verbatim) | Note |
 |---|---|---|---|
-| Dashboard | Dashboard | Panel | `7-Day Dashboard` = "Panel de 7 días"; the first tab key `Start` = "Inicio" (not a literal translation of Dashboard) |
+| Dashboard | Dashboard | Panel | `7-Day Dashboard` = "Panel de 7 días"; `Start` = "Inicio" is the date-range picker label, not a tab; the first tab is `Dashboard` = "Panel" (corrected 2026-11-19, privacy review) |
 | Apps | Apps | Apps | |
 | Analytics | Analytics | Análisis | AppMeta uses "Analíticas"/"Analítica", see Cross-app |
 | Reviews | Reviews | Reseñas | `Reply` = "Respuesta"; `Reply to this review` = "Responder a esta reseña" |

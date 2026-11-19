@@ -261,7 +261,7 @@ support_tip_subscriptions: "Si te has suscrito a un plan de pago, puedes gestion
 support_tip_refunds: "Apple gestiona los reembolsos de las compras del App Store en <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\">reportaproblem.apple.com</a>."
 support_tip_no_account: "{name} no tiene registro ni cuenta de Lagerland, así que no hay contraseña que restablecer ni cuenta que recuperar."
 # Palabras clave (en minúsculas, separadas por comas, en el idioma) que marcan una pregunta frecuente como pregunta de soporte
-support_words: "sincroniz,icloud,dispositivo,export,importar,copia de seguridad,backup,borrar,borro,se borra,elimin,dato,cancel,reembols,devolución,restaurar,restauro,restauración,precio,cuesta,gratis,premium,suscri,de por vida,compra,pago único,en familia,con mi familia,con la familia,cuenta?,sin cuenta,una cuenta para,cuenta de apple,cuenta de lagerland,registrarme,iniciar sesión,sin conexión,offline,internet,privacidad,privad,rastre,watch,ipad,mac,idioma,español,requi,necesit,compatib,funciona con,funciona sin"
+support_words: "sincroniz,icloud,dispositivo,export,importar,copia de seguridad,backup,borrar,borro,se borra,elimin,datos,cancel,reembols,devolución,restaurar,restauro,restauración,precio,cuesta,gratis,premium,suscri,de por vida,compra,pago único,en familia,con mi familia,con la familia,cuenta?,sin cuenta,una cuenta para,cuenta de apple,cuenta de lagerland,registrarme,iniciar sesión,sin conexión,offline,internet,privacidad,privad,rastre,watch,ipad,mac,idioma,español,requi,necesit,compatib,funciona con,funciona sin,permisos,credencial,formato,cancelo"
 support_common: "Preguntas habituales sobre {name}"
 support_more_label: "Más respuestas:"
 support_more: "todas las preguntas sobre {name}"

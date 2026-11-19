@@ -125,6 +125,8 @@ The terms that matter most across the site:
 | Journal (section) | Blog (hub title, nav, feed); URLs stay `/es/journal/`. «Diario» reads as a newspaper or a personal diary in Spain | es.yml review 2026-11-19 |
 | stamp sheet (design metaphor) | pliego (Correos sells «pliegos»), «Pliego 2025-{year} · Emitido en Finlandia» | es.yml review 2026-11-19 |
 | Insights (section) | Análisis (as the apps' Spanish UIs say) | es-glossary.md |
+| privacy manifest | «manifiesto de privacidad» in prose; «manifiesto de privacidad (privacy manifest)» at the first mention on the home and transparency pages. Apple Spain has no consumer term for it | decision 2026-11-19 (batch 1 review) |
+| Get (App Store button) | Obtener (Spain iOS); «Consíguelo» only on the badge | es-apple-terms.md, batch 1 review |
 
 Per-app tier names follow each app's Spanish UI (es-glossary.md): Premium for AfterShift, Observa (the English site
 says Pro), Soon., Shogiful, Xiangqiful, WanderWiki, EarnLock; Pro+ for RightSplit; Pro for AllPaid, AppMeta,
@@ -213,6 +215,14 @@ Stock phrasing: «En el mundo actual», «En la era digital», «Sumerjámonos»
 que», «Cabe destacar que», «juega un papel fundamental», «sin lugar a dudas», «En resumen», «En definitiva»,
 «no solo … sino también», «Ya sea que … o …», «descubre cómo», «lleva tu … al siguiente nivel», «potenciar»,
 «optimizar» everywhere, «una experiencia fluida», «sin fisuras», «revolucionario», «de forma eficiente».
+
+Found in Tier 1 reviews (2026-11-19): «estudio Apple» (reads as Apple's own studio: «estudio de apps para Apple»);
+«desarrollador independiente de Apple» (reads as "independent from Apple"); «pensada para sentirse tranquila» (an app
+doesn't feel: «hecha para usarse con calma»); «hablar con» a service ("talk to App Store Connect": «usar», «conectarse
+con»); «¿Cómo ganáis…?» (vosotros to a one-person studio: impersonal); «cuentas» for restaurant bills next to «sin
+cuentas» (accounts): «la cuenta del restaurante», «tickets»; «traslada solo…» / «pasan solas al siguiente» for
+carry-forward (ambiguous or adds "next day": «avanzan solas»); «Conseguir» for the Get button («Obtener»); slogan
+fragments such as «cero rastreo»; French typography (U+202F) left in a Spanish file.
 
 Translationese: title case headings; missing ¿ and ¡; chains of gerunds copied from English -ing («ofreciendo»,
 «permitiendo», «haciendo» trailing a sentence); passive «es … por» where Spanish uses «se»; possessives on body

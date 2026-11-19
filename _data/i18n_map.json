@@ -2,6 +2,7 @@
   "/": {
     "de": "/de/",
     "en": "/",
+    "es": "/es/",
     "fr": "/fr/"
   },
   "/alternatives/": {
@@ -194,6 +195,7 @@
   "/apps/": {
     "de": "/de/apps/",
     "en": "/apps/",
+    "es": "/es/apps/",
     "fr": "/fr/apps/"
   },
   "/apps/aftershift/": {
