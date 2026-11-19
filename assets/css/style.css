@@ -437,6 +437,10 @@ table, .stamp__date, .stamp__denom, time, .tech dd { font-variant-numeric: tabul
 }
 .stamp__date { letter-spacing: 0.04em; font-weight: 500; }
 .stamp__denom { font-weight: 700; font-size: 0.8rem; white-space: nowrap; }
+/* A denomination too long to sit beside the date drops to its own line,
+   still right-aligned, instead of running past the frame. */
+.stamp__top { flex-wrap: wrap; row-gap: 1px; }
+.stamp__denom { margin-left: auto; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
 .stamp__icon {
   align-self: center;
   width: 42%;
@@ -825,7 +829,9 @@ a.card:hover, .card-app:hover {
   list-style: none;
 }
 .sheet > li { display: flex; min-width: 0; }
-.sheet .stamp { flex: 1; }
+/* min-width: 0 keeps a long denomination (« Kostenlos · Pro », « One-time
+   purchase ») from widening the stamp past its column. */
+.sheet .stamp { flex: 1; min-width: 0; }
 .sheet.is-filtered .stamp:not(.is-match) { opacity: 0.22; filter: grayscale(1) drop-shadow(0 1px 1px rgba(21, 23, 29, 0.1)); }
 .sheet .postmark { width: 128px; right: -30px; top: 26%; }
 @media (max-width: 640px) { .sheet .postmark { width: 104px; right: -6px; } }
