@@ -1,0 +1,217 @@
+# Nederlandse woorden voor _data/transparency.yml (de feiten blijven daar: getallen, booleans, SDK-namen, datums).
+# Sleutel = slug van de app, dezelfde veldnamen als in het Engelse bestand. De /nl/-pagina’s lezen hier de woorden
+# (home /nl/: analytics; /nl/transparency/: elk tekstveld hieronder).
+# account_required alleen als de Engelse waarde een zin is (false toont t.word_no).
+# third_party_sdks_list alleen als de Engelse lijst zinnen bevat (pawza); de objecten name/url blijven in het hoofdbestand.
+# De lijsten (collected_data, required_reason_apis, permissions) volgen volgorde en lengte van het hoofdbestand.
+# Woorden uit het onderdeel ‘Privacy van app’ van de Nederlandse App Store (nl-apple-terms.md, gecontroleerd op
+# 2026-11-19 bij Things 3, LiftLog en TikTok): ‘Gegevens die worden gebruikt om je te volgen’, ‘Aan jou gekoppelde
+# gegevens’, ‘Niet aan jou gekoppelde gegevens’, ‘Er worden geen gegevens verzameld’. Categorie, typen en doel zoals
+# apps.apple.com/nl (Facebook, id284882215) ze op 2026-11-19 toonde: ‘Gezondheid en fitness’, ‘Gezondheid’,
+# ‘Foto’s of video’s’, ‘Overige gebruikerscontent’, ‘Aankoopgeschiedenis’, ‘Ruwe locatie’; doel ‘App-functionaliteit’.
+# “niet gebruikt om je te volgen” is een omschrijving (Apple heeft geen titel voor het negatieve geval).
+# De namen van SDK’s en API’s en de redencodes (CA92.1 …) blijven ongewijzigd.
+apps:
+  aftershift:
+    network_calls: "Geen. Alleen HealthKit en EventKit (lokale frameworks) en geen cloudsynchronisatie."
+    data_leaves_device: "Niets, tenzij je zelf een rapport exporteert."
+    analytics: "Geen."
+    collected_data:
+      - "Gezondheid en fitness (doel: App-functionaliteit; niet aan jou gekoppeld, niet gebruikt om je te volgen)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1: eigen voorkeuren van de app lezen en schrijven)"
+    permissions:
+      - "Agenda (alleen lezen): werkdiensten herkennen"
+      - "HealthKit (slaap lezen): het herstel tussen diensten berekenen"
+    notes: "Gegevens uit Agenda en de Gezondheid-app verlaten je apparaat nooit."
+  allpaid:
+    network_calls: "Geen voor het bijhouden van rekeningen. Optionele iCloud-synchronisatie gebruikt je eigen iCloud."
+    data_leaves_device: "Alleen je iCloud, als je synchronisatie aanzet."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions:
+      - "Lokale meldingen: herinneringen voor vervaldatums"
+      - "Face ID / Touch ID: ‘App-vergrendeling’, optioneel"
+    notes: "Gegevens over rekeningen, abonnementen en vervaldatums blijven standaard op je apparaat; ‘iCloud-synchronisatie’ is een Pro-functie die je zelf aanzet en gebruikt je eigen privé-iCloud. De app bevat nog geen PrivacyInfo.xcprivacy-bestand. Zonder account, reclame of tracking."
+  appmeta:
+    account_required: "Een API-sleutel van je App Store Connect-team (Issuer ID, Key ID, .p8) uit je eigen ontwikkelaarsaccount, geen AppMeta-account. Hij staat alleen in de sleutelhanger van macOS op die Mac en wordt nooit naar Lagerland verzonden."
+    network_calls: "De App Store Connect API (api.appstoreconnect.apple.com) en de downloadlinks voor rapporten die hij teruggeeft; de openbare App Store-endpoints van Apple (apps.apple.com, itunes.apple.com, search.itunes.apple.com, amp-api-edge.apps.apple.com) voor app-iconen, prijzen van concurrenten en optioneel onderzoek naar zoekwoorden; Apple Ads (api.ads.apple.com, appleid.apple.com) alleen als je die koppelt; de wisselkoersen van de ECB (data-api.ecb.europa.eu) voor verkoopgrafieken; de AI-aanbieder die je kiest, als je er een gebruikt. Geen server van Lagerland."
+    data_leaves_device: "Gegevens van je productpagina gaan alleen naar de App Store Connect API van Apple, met je eigen sleutel. Zoekwoorden en app-ID’s die je opzoekt, gaan naar de openbare App Store-endpoints van Apple, en tekst die je door een AI-aanbieder in de cloud laat vertalen of analyseren, gaat naar die aanbieder. Niets gaat naar Lagerland."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions:
+      - "Meldingen: optionele waarschuwingen voor nieuwe recensies en diagnostiek"
+    notes: "Native Mac-client voor App Store Connect. Je bewerkt alles lokaal en verstuurt het daarna via de API van Apple."
+  appmeta-pulse:
+    account_required: "Geen Lagerland-account. Je eigen API-sleutel van App Store Connect."
+    network_calls: "De App Store Connect API van Apple (met de downloadlinks voor analyserapporten die hij teruggeeft), de iTunes Lookup van Apple en de app-iconen waarnaar die verwijst, de App Store voor aankopen, het Translation-framework van Apple als je een recensie vertaalt, de openbare wisselkoers-API van de Europese Centrale Bank en, met ‘iCloud-synchronisatie’ aan, iCloud van Apple (CloudKit) en de pushdienst."
+    data_leaves_device: "Naar App Store Connect met je eigen sleutel (inclusief antwoorden op recensies die je verstuurt) en de ID’s van je apps naar de iTunes Lookup van Apple. Met ‘iCloud-synchronisatie’ aan gaan ook je geschiedenis, recensies en instellingen (nooit de .p8-sleutel) naar je eigen privé-iCloud-database. Niets bereikt Lagerland, tenzij je ons mailt."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1, 1C8F.1)"
+      - "Bestandstijdstempel (C617.1)"
+      - "Schijfruimte (E174.1)"
+    notes: "Privacymanifesten zitten in de app en in de widget. Geen opties voor builds, prijzen of metadata: het enige wat naar App Store Connect wordt geschreven, zijn antwoorden op recensies die je verstuurt en aanvragen voor analyserapporten."
+  chessful:
+    network_calls: "Geen. De Stockfish 18-engine draait lokaal op je apparaat."
+    data_leaves_device: "Nee."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    notes: "De analyse van je partijen doet de engine die in de app zit, niet een clouddienst."
+  earnlock:
+    network_calls: "Geen. EarnLock heeft geen server; HealthKit en Family Controls zijn lokale frameworks."
+    data_leaves_device: "Nee."
+    analytics: "Geen."
+    permissions:
+      - "HealthKit (stappen, actieve energie en trainingsminuten lezen): de voortgang naar het ontgrendeldoel meten"
+      - "Family Controls / ‘Schermtijd’ (modus .individual): afleidende apps afschermen tot je het doel haalt"
+      - "Lokale meldingen: meldingen over voortgang en ontgrendeling"
+    notes: "Geen account, geen analytics en geen eigen netwerkverbindingen. HealthKit is alleen-lezen en verlaat je apparaat nooit; Family Controls geeft EarnLock alleen ondoorzichtige tokens, dus de app kan niet zien welke apps je hebt geblokkeerd. De app is bedoeld om jezelf te beperken, nooit voor ouderlijk toezicht, en heeft geen account en geen server."
+  gymlogger-x:
+    network_calls: "Trainingsgegevens synchroniseren via je eigen iCloud (de privé-database van CloudKit) als je bent ingelogd bij iCloud. De app heeft geen eigen server en maakt geen verbinding met een server van de studio."
+    data_leaves_device: "Trainingen: je eigen iCloud en de Gezondheid-app, als je dat toestaat. Niets gaat naar Lagerland."
+    analytics: "Geen. Geen analyse-SDK en er wordt niets geüpload."
+    collected_data:
+      - "Gezondheid en fitness (doel: App-functionaliteit; niet aan jou gekoppeld, niet gebruikt om je te volgen)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1, 1C8F.1)"
+      - "Bestandstijdstempel (C617.1)"
+      - "Opstarttijd van het systeem (35F9.1)"
+    permissions:
+      - "Verbinding met de Apple Watch: sets vanaf je pols loggen terwijl de iPhone de sessie draait"
+      - "HealthKit: trainingen opslaan; hartslag en actieve energie lezen"
+    notes: "In de app zitten 1500 oefeningen en 44 programma’s. Het installatie-ID, de aankoopregistraties, de coachlogin en het uitnodigingssysteem zijn verwijderd, dus de app stuurt niets meer naar een server van de studio. Het privacymanifest meldt geen tracking en alleen het gegevenstype hierboven."
+  liftlog:
+    network_calls: "Geen voor het loggen. StoreKit maakt verbinding met Apple voor de eenmalige aankoop; er is geen cloudsynchronisatie."
+    data_leaves_device: "Alleen wat je zelf verstuurt: trainingen en actieve energie naar de Gezondheid-app als je het exporteren aanzet, en back-up- of csv-bestanden die je deelt."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "Bestandstijdstempel (DDA9.1)"
+      - "Schijfruimte (E174.1)"
+      - "Opstarttijd van het systeem (35F9.1)"
+    permissions:
+      - "Haptische feedback: bevestiging van een gelogde set"
+      - "HealthKit (alleen schrijven: trainingen en actieve energie): optioneel exporteren naar de Gezondheid-app"
+      - "Lokale meldingen: einde van de rusttijd en trainingsherinneringen (optioneel)"
+    notes: "De Required Reason-API’s vallen allemaal onder de standaardcategorieën voor de werking van de app, zonder gebruik voor fingerprinting."
+  mediakit:
+    network_calls: "Geen. Bestanden worden voor 100% op je apparaat geconverteerd."
+    data_leaves_device: "Nee. Bestanden verlaten je Mac nooit."
+    analytics: "Geen."
+    permissions:
+      - "Door jou gekozen bestand: alleen als je een bestand in de app sleept"
+    notes: "152 native tools voor video, audio, afbeeldingen, pdf’s en archieven, allemaal lokaal verwerkt."
+  millrace:
+    network_calls: "Geen. De app bevat geen netwerkcode: levels, de oplosser, het 3D-bord en alle thema’s draaien op je apparaat. Game Center (optioneel) en in-app aankopen worden door Apple afgehandeld."
+    data_leaves_device: "Nee."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    notes: "PrivacyInfo.xcprivacy zet NSPrivacyTracking op false, zonder trackingdomeinen en zonder verzamelde gegevenstypen, en de app bevat geen advertentie- of analyse-SDK’s. De enige entitlement is Game Center; geen iCloud, CloudKit, sleutelhanger of App Group. Je voortgang blijft op het apparaat."
+  observa:
+    network_calls: "Geen eigen verbindingen. Alle analyse draait op je apparaat; alleen aankopen, die Apple afhandelt, en links die je opent, gaan online."
+    data_leaves_device: "Nee."
+    analytics: "Geen."
+    collected_data:
+      - "Gezondheid (doel: App-functionaliteit; niet aan jou gekoppeld, niet gebruikt om je te volgen)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions:
+      - "HealthKit (slaap, HRV (SDNN), ECG en activiteit lezen): inzichten genereren"
+      - "HealthKit (invoer schrijven): het water dat je logt en de work-outs die je op de Apple Watch opneemt opslaan"
+    notes: "Patroonherkenning op je apparaat. Gegevens uit de Gezondheid-app verlaten je apparaat nooit."
+  pawza:
+    third_party_sdks_list:
+      - "ZIPFoundation (lokale verwerking van archieven voor het exporteren; geen netwerk)"
+    network_calls: "Geen eigen verbindingen. Het scannen van documenten en de AI-extractie draaien op je apparaat. Optionele iCloud-synchronisatie gebruikt je eigen privé-database in CloudKit."
+    data_leaves_device: "Alleen je iCloud, als je synchronisatie aanzet."
+    analytics: "Geen."
+    collected_data:
+      - "Gezondheid en fitness (vaccinaties, medicijnen; doel: App-functionaliteit; niet aan jou gekoppeld, niet gebruikt om je te volgen)"
+      - "Foto’s of video’s (doel: App-functionaliteit; niet aan jou gekoppeld, niet gebruikt om je te volgen)"
+      - "Overige gebruikerscontent (notities, gescande documenten; doel: App-functionaliteit; niet aan jou gekoppeld, niet gebruikt om je te volgen)"
+      - "Aankoopgeschiedenis (doel: App-functionaliteit; niet aan jou gekoppeld, niet gebruikt om je te volgen)"
+    required_reason_apis:
+      - "UserDefaults (CA92.1: eigen voorkeuren van de app lezen en schrijven)"
+      - "Bestandstijdstempel (C617.1: bestandstijdstempels in de container van de app openen)"
+    permissions:
+      - "Camera: documenten van de dierenarts scannen"
+      - "Fotobibliotheek: bestaande foto’s en documenten toevoegen"
+      - "Lokale meldingen: herinneringen voor vaccinaties, medicijnen en controles"
+    notes: "Dossiers, foto’s, gescande documenten en notities blijven standaard op je apparaat. Het scannen van documenten (Vision-OCR) draait voor iedereen op het apparaat. AI-extractie met Apple Intelligence vereist Pawza Pro en iOS 26 of nieuwer op een geschikt apparaat, en draait ook op het apparaat. Documenten worden niet geüpload om te worden verwerkt. Optionele iCloud-synchronisatie gebruikt je eigen privé-database in CloudKit."
+  rightsplit:
+    network_calls: "Eén: het openbare dagelijkse bestand met wisselkoersen van de Europese Centrale Bank (eurofxref-daily.xml), hoogstens één keer per dag opgehaald voor de omrekening van valuta. Er worden geen gebruikersgegevens verstuurd. Het scannen van bonnetjes en het splitsen maken geen netwerkverbindingen; delen gaat via Berichten of WhatsApp."
+    data_leaves_device: "Alleen via het deelmenu van iOS, als jij dat kiest."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1, 1C8F.1)"
+      - "Bestandstijdstempel (C617.1)"
+    permissions:
+      - "Camera (bij het scannen van een bonnetje)"
+      - "Meldingen (herinneringen voor betalingen en terugkerende rekeningen)"
+      - "Contactenkiezer (als je mensen uit Contacten toevoegt)"
+    notes: "De OCR van bonnetjes gebruikt het Vision-framework op je apparaat. Er verlaat geen afbeelding het apparaat."
+  mockly:
+    account_required: "Geen Lagerland-account. Je eigen API-sleutel van App Store Connect, alleen als je screenshots uploadt."
+    network_calls: "De App Store Connect API van Apple (alleen als je uploadt). De AI-aanbieder die je kiest (OpenAI, Anthropic of Google), alleen als je om een vertaling vraagt. Aankopen lopen via Apple. Geen server van Lagerland."
+    data_leaves_device: "Alleen wat je zelf verstuurt: gerenderde screenshots naar Apple als je uploadt, en de tekst die je vertaalt, de doeltalen en je AI-sleutel naar de aanbieder die je hebt gekozen, als je vertaalt. Sleutels staan in de sleutelhanger van macOS."
+    analytics: "Geen."
+    permissions:
+      - "Door jou gekozen bestand: screenshots openen en bewaren"
+    notes: "Het renderen gebeurt op je Mac. Vertalen en uploaden starten alleen als jij dat zelf doet. Voorheen ScreenFlow Studio."
+  shogiful:
+    network_calls: "Geen naar derden. De YaneuraOu-engine draait lokaal; het bestand met het neurale netwerk wordt één keer gedownload van de App Store-servers van Apple (On-Demand Resources)."
+    data_leaves_device: "Nee. Optionele iCloud-synchronisatie gebruikt je eigen iCloud."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    notes: "De analyse van je partijen doet de YaneuraOu-engine die in de app zit, niet een clouddienst."
+  xiangqiful:
+    network_calls: "Geen eigen verbindingen. De app bevat geen netwerkcode; de Pikafish-engine en zijn neurale netwerk van 53 MB zitten in de app en draaien op je apparaat. Game Center (optioneel) en in-app aankopen worden door Apple afgehandeld."
+    data_leaves_device: "Nee."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "Bestandstijdstempel (C617.1)"
+      - "Opstarttijd van het systeem (35F9.1)"
+      - "Schijfruimte (E174.1)"
+    notes: "PrivacyInfo.xcprivacy zet NSPrivacyTracking op false en geeft geen verzamelde gegevenstypen op, en het privacylabel in de App Store zegt ‘Er worden geen gegevens verzameld’. Partijen, analyses en trainingsvoortgang staan op het apparaat in SwiftData, zonder CloudKit-container. Pikafish (GPL-3), in de app gecompileerd, is de enige externe code."
+  soon:
+    network_calls: "Apple WeatherKit (alleen als voor een aftelling het weer aanstaat). Apple MapKit voor de plaatskiezers."
+    data_leaves_device: "Alleen de ruwe locatie van de bestemming van een gekozen aftelling, naar WeatherKit van Apple."
+    analytics: "Geen."
+    permissions:
+      - "Agenda (alleen lezen): afspraken omzetten in aftellingen"
+      - "Locatie (als de app in gebruik is): het weer voor de gekozen aftelling"
+    notes: "Weer en kaarten zijn diensten van Apple; niets loopt via servers van Lagerland."
+  tare:
+    network_calls: "Geen. De app bevat geen netwerkcode; alle 200 levels, de hints en elke afbeelding staan op het apparaat. De enige in-app aankoop wordt door Apple afgehandeld."
+    data_leaves_device: "Nee."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    notes: "PrivacyInfo.xcprivacy zet NSPrivacyTracking op false, zonder trackingdomeinen en zonder verzamelde gegevenstypen, en het privacylabel in de App Store zegt ‘Er worden geen gegevens verzameld’. De app heeft helemaal geen entitlements: geen Game Center, iCloud, CloudKit, delen van de sleutelhanger of App Group. Je voortgang blijft op het apparaat."
+  taskful-day:
+    network_calls: "Geen. Optionele iCloud-synchronisatie gebruikt je eigen iCloud."
+    data_leaves_device: "Alleen je iCloud, als je synchronisatie aanzet."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "Bestandstijdstempel (C617.1)"
+    permissions:
+      - "Microfoon (alleen als je spraakinvoer gebruikt): spraak-naar-tekst draait op het apparaat via het Speech-framework van Apple"
+    notes: "Universele aankoop op iPhone, iPad en Mac. Spraakinvoer wordt op het apparaat verwerkt."
+  wanderwiki:
+    network_calls: "Alleen de openbare API’s van Wikipedia (en.wikipedia.org en de andere taalversies, afhankelijk van je keuze), plus de afbeeldingenserver van Wikimedia (upload.wikimedia.org) voor de afbeeldingen bij artikelen. Geen account, geen API-sleutel, geen headers die je identificeren."
+    data_leaves_device: "Aanvragen van artikelen bij Wikipedia, net als wanneer een browser de site bezoekt."
+    analytics: "Geen."
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+      - "Bestandstijdstempel (C617.1)"
+    permissions:
+      - "Meldingen (gevraagd als je voor het eerst een artikel bewaart): één lokale herinnering per dag, met een instelbare tijd of uit te zetten in Instellingen"
+    notes: "Wikipedia-client. Artikelen worden opgehaald via de openbare API van Wikipedia, net als bij een bezoek aan de website."
