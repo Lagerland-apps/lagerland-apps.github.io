@@ -205,3 +205,37 @@ pt:
     trial_days: "{n} dias de teste grátis"
     trial_months: "{n} meses de teste grátis"
     trial_years: "{n} anos de teste grátis"
+nl:
+  territory: NLD
+  html_lang: nl
+  hreflang: [nl]
+  og_locale: nl_NL
+  dir: ltr
+  native_name: "Nederlands"
+  live: false
+  # Checked 2026-11-19 against the Dutch App Store (iTunes lookup API, country=nl, lang=nl_nl, and the
+  # apps.apple.com/nl page of Observa): "€ 9,99" (Things 3), "€ 14,99" (Mockly) and the IAP rows "€ 3,99" with
+  # a no-break space (U+00A0) after €, decimal comma; free apps "Gratis". Thousands with a dot ("40.000").
+  currencies:
+    EUR: { symbol: "€", position: before_space, space: " ", decimals: 2, decimal: ",", group: "." }
+  strings:
+    free: "Gratis"
+    from: "vanaf"
+    per_month: "/maand"
+    per_year: "/jaar"
+    per_week: "/week"
+    lifetime: "eenmalig"
+    once: "eenmalig"
+    or: "of"
+    and: "en"
+    one_time_purchase: "eenmalige aankoop"
+    default_tier: "Premium"
+    family_sharing: "Delen met gezin"
+    decimal: ","
+    serial_comma: ""
+    trial_one_day: "1 dag gratis proberen"
+    trial_one_month: "1 maand gratis proberen"
+    trial_one_year: "1 jaar gratis proberen"
+    trial_days: "{n} dagen gratis proberen"
+    trial_months: "{n} maanden gratis proberen"
+    trial_years: "{n} jaar gratis proberen"

@@ -48,6 +48,10 @@ defaults:
     values:
       lang: pt
   - scope:
+      path: "nl"
+    values:
+      lang: nl
+  - scope:
       path: ""
       type: apps
     values:
