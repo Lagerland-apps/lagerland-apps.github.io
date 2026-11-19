@@ -73,3 +73,12 @@ Extra checks:
   «zonder verplicht abonnement».
 - Distinct primaries and seo.title patterns across all 20 Dutch comparisons (batch 1 is in nl/alternatives/ too).
 - Every batch 1 tell («From the Tier 3 reviews» in nl.md) applies: check for each.
+
+## Batch 3 (2026-11-19)
+
+Same method and the batch 2 checks. Store and web data: `/Users/anttiaittamaa/Downloads/githubcode/nl-tier3-store-batch3-2026-11-19.md`.
+Writer rules: the «Batch 3» section of nl-tier3-brief.md. Writers' notes:
+`/private/tmp/claude-501/-Users-anttiaittamaa-Downloads-githubcode/f5e34407-a458-4d5c-863d-92d8a8cb7431/scratchpad/nl-t3b3/notes/<slug>.md`.
+Extra checks: grep every Millrace page for «2048» (must be zero); Brick and Unpluq pages give no device price; Tare's hint and star rules
+exactly as the brief; the six EarnLock pages and all 30 Dutch comparisons have distinct primaries and seo.title formulas; every batch 1
+and 2 tell in nl.md checked.

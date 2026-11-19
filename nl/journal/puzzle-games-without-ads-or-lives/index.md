@@ -107,7 +107,7 @@ Reclame is uitgesloten als ontwerpkeuze. Een advertentie moet uit een advertenti
 
 ## Wat dit model opgeeft
 
-Een spel dat alleen optionele items verkoopt, is ervan afhankelijk dat sommige spelers ervoor kiezen iets te kopen wat ze niet nodig hebben. Het ontwerp kent nog andere grenzen. Er zijn 64 levels, geen duizenden, en elk level is via zoeken gevonden en vóór de release bewezen door een solver die breedte-eerst zoekt. Je voortgang blijft op het apparaat en wordt niet gesynchroniseerd. Wil je een lange saga met evenementen, dan is de [vergelijking met Two Dots](/alternatives/two-dots/){: hreflang="en"} (in het Engels) eerlijk over waar Two Dots het beter doet en over hoe de levens daar werken.
+Een spel dat alleen optionele items verkoopt, is ervan afhankelijk dat sommige spelers ervoor kiezen iets te kopen wat ze niet nodig hebben. Het ontwerp kent nog andere grenzen. Er zijn 64 levels, geen duizenden, en elk level is via zoeken gevonden en vóór de release bewezen door een solver die breedte-eerst zoekt. Je voortgang blijft op het apparaat en wordt niet gesynchroniseerd. Wil je een lange saga met evenementen, dan is de [vergelijking met Two Dots](/nl/alternatives/two-dots/) eerlijk over waar Two Dots het beter doet en over hoe de levens daar werken.
 
 ## Een checklist voor elk gratis puzzelspel
 

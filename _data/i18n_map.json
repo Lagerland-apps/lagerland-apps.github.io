@@ -36,6 +36,7 @@
     "en": "/alternatives/autosleep/",
     "es": "/es/alternatives/autosleep/",
     "fr": "/fr/alternatives/autosleep/",
+    "nl": "/nl/alternatives/autosleep/",
     "pt": "/pt/alternatives/autosleep/"
   },
   "/alternatives/baba-is-you/": {
@@ -55,7 +56,8 @@
   },
   "/alternatives/brick/": {
     "de": "/de/alternatives/brick/",
-    "en": "/alternatives/brick/"
+    "en": "/alternatives/brick/",
+    "nl": "/nl/alternatives/brick/"
   },
   "/alternatives/caliber/": {
     "de": "/de/alternatives/caliber/",
@@ -108,6 +110,7 @@
     "es": "/es/alternatives/documents-by-readdle/",
     "fr": "/fr/alternatives/documents-by-readdle/",
     "it": "/it/alternatives/documents-by-readdle/",
+    "nl": "/nl/alternatives/documents-by-readdle/",
     "pt": "/pt/alternatives/documents-by-readdle/"
   },
   "/alternatives/fitbod/": {
@@ -124,6 +127,7 @@
     "es": "/es/alternatives/flow-free/",
     "fr": "/fr/alternatives/flow-free/",
     "it": "/it/alternatives/flow-free/",
+    "nl": "/nl/alternatives/flow-free/",
     "pt": "/pt/alternatives/flow-free/"
   },
   "/alternatives/forest/": {
@@ -242,6 +246,7 @@
   "/alternatives/nonograms-katana/": {
     "en": "/alternatives/nonograms-katana/",
     "fr": "/fr/alternatives/nonograms-katana/",
+    "nl": "/nl/alternatives/nonograms-katana/",
     "pt": "/pt/alternatives/nonograms-katana/"
   },
   "/alternatives/one-sec/": {
@@ -250,6 +255,7 @@
     "es": "/es/alternatives/one-sec/",
     "fr": "/fr/alternatives/one-sec/",
     "it": "/it/alternatives/one-sec/",
+    "nl": "/nl/alternatives/one-sec/",
     "pt": "/pt/alternatives/one-sec/"
   },
   "/alternatives/opal/": {
@@ -297,6 +303,7 @@
     "en": "/alternatives/screenzen/",
     "es": "/es/alternatives/screenzen/",
     "fr": "/fr/alternatives/screenzen/",
+    "nl": "/nl/alternatives/screenzen/",
     "pt": "/pt/alternatives/screenzen/"
   },
   "/alternatives/settle-up/": {
@@ -327,6 +334,7 @@
     "es": "/es/alternatives/strong-workout-app/",
     "fr": "/fr/alternatives/strong-workout-app/",
     "it": "/it/alternatives/strong-workout-app/",
+    "nl": "/nl/alternatives/strong-workout-app/",
     "pt": "/pt/alternatives/strong-workout-app/"
   },
   "/alternatives/stronglifts-5x5/": {
@@ -351,11 +359,13 @@
     "es": "/es/alternatives/two-dots/",
     "fr": "/fr/alternatives/two-dots/",
     "it": "/it/alternatives/two-dots/",
+    "nl": "/nl/alternatives/two-dots/",
     "pt": "/pt/alternatives/two-dots/"
   },
   "/alternatives/unpluq/": {
     "de": "/de/alternatives/unpluq/",
-    "en": "/alternatives/unpluq/"
+    "en": "/alternatives/unpluq/",
+    "nl": "/nl/alternatives/unpluq/"
   },
   "/alternatives/way-of-life/": {
     "de": "/de/alternatives/way-of-life/",

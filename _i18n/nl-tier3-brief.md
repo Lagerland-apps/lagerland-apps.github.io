@@ -296,3 +296,62 @@ iphone` (screen-time guide).
   the store file (€ 0, 10 conversion credits per day, 1 GB, 5 minutes); paid amounts are not in the fetched page: keep them
   qualitative. Files are uploaded to CloudConvert's servers; MediaKit converts on the device: that is the comparison. The
   query `cloudconvert betrouwbaar`: answer only with facts from the English page and the pricing page (no security verdict).
+
+---
+
+## Batch 3 (2026-11-19)
+
+Same rules as batches 1 and 2. Research rows: «Batch 3» in the research file. Store and web data:
+`/Users/anttiaittamaa/Downloads/githubcode/nl-tier3-store-batch3-2026-11-19.md`. Scratch for notes:
+`/private/tmp/claude-501/-Users-anttiaittamaa-Downloads-githubcode/f5e34407-a458-4d5c-863d-92d8a8cb7431/scratchpad/nl-t3b3/notes/<slug>.md`.
+Twenty reviewed Dutch comparisons are live in `nl/alternatives/`: read two or three for tone and patterns (forest and opal for
+EarnLock, pdf-expert and handbrake for MediaKit), and read every «From the Tier 3 reviews» tell in `_i18n/nl.md` (batches 1 and 2).
+
+| English source | Write to | Our app | Primary query | Structural model |
+|---|---|---|---|---|
+| alternatives/brick.html | nl/alternatives/brick.html | EarnLock | `brick telefoon` | de/alternatives/brick.html |
+| alternatives/unpluq.html | nl/alternatives/unpluq.html | EarnLock | `unpluq` | de/alternatives/unpluq.html |
+| alternatives/one-sec.html | nl/alternatives/one-sec.html | EarnLock | `one sec app gratis` | it/alternatives/one-sec.html |
+| alternatives/screenzen.html | nl/alternatives/screenzen.html | EarnLock | `screenzen gratis` | es/alternatives/screenzen.html |
+| alternatives/documents-by-readdle.html | nl/alternatives/documents-by-readdle.html | MediaKit | `documents by readdle gratis` | it/alternatives/documents-by-readdle.html |
+| alternatives/flow-free.html | nl/alternatives/flow-free.html | Millrace | `flow free gratis` | it/alternatives/flow-free.html |
+| alternatives/two-dots.html | nl/alternatives/two-dots.html | Millrace | `two dots gratis` | it/alternatives/two-dots.html |
+| alternatives/nonograms-katana.html | nl/alternatives/nonograms-katana.html | Tare | `nonogrammen` | pt/alternatives/nonograms-katana.html |
+| alternatives/autosleep.html | nl/alternatives/autosleep.html | Observa | `autosleep app` | es/alternatives/autosleep.html |
+| alternatives/strong-workout-app.html | nl/alternatives/strong-workout-app.html | GymLogger X | `strong app gratis` | it/alternatives/strong-workout-app.html |
+
+German, Spanish and Portuguese models are structure only: write from English, never translate from them.
+
+**Distinct primaries and seo.title patterns** across all 30 Dutch comparisons. EarnLock now has six pages (forest, opal, brick,
+unpluq, one-sec, screenzen): no two may share a title formula (avoid «X-app gratis …» on more than one; avoid «Alternatief voor X: …»
+reused). Collisions to avoid as primary or in seo.title: `apps blokkeren iphone`, `schermtijd beperken iphone` (EarnLock / guide),
+`logische puzzel app`, `puzzel app zonder reclame` (Millrace), `beste puzzelgames iphone`, `denkspelletjes app`, `breinbreker` (Tare),
+`puzzelspellen voor volwassenen`, `nonogram app` (logic guide: `nonogram app` may be a secondary only), `slaap app apple watch` (Observa),
+`gratis gym app` (workout guide), `gym app apple watch` (GymLogger X), `pdf comprimeren` (MediaKit).
+
+### Per page
+
+- **brick**: Brick is a physical device plus an app. The Dutch store listing has no in-app rows. Device prices from the maker's site
+  were served for Finland: give NO device price; say the device is sold on the maker's website (getbrick.com), «Brick Night» exists
+  per that site. No press quotes. EarnLock is software only: say so as the English page does.
+- **unpluq**: Unpluq Tag (NFC) plus the Unpluq app; Premium in-app rows € 5,99 per month and € 54,99 per year (rows name the period);
+  the site says the Tag works via the app with Premium required; no device price (Finland pricing). The seller, Unplug Technology B.V.,
+  is a Dutch company: you may say so once; nothing more about the company. Its «1h 20m» claim: attribute or leave out.
+- **one-sec**: rows labelled (pro 1 Month € 4,99, 1 Year € 14,99, Lifetime € 99,99, Family Plan 1 Month € 7,99, 1 Year € 24,99, Family
+  Lifetime € 179,00). NL UI. Stay consistent with `nl/guides/schermtijd-beperken-iphone.html`.
+- **screenzen**: free; its in-app rows are tips («Kind Tip» € 6,00 to «Fantastic Tip» € 45,00): say it is free with optional tips.
+- **documents-by-readdle**: Documents Plus rows € 9,99, € 17,99, € 59,99 without periods (range only), and «Documents VPN» rows (€ 12,49
+  to € 98,99): mention the VPN only if the English page does. MediaKit facts and Dutch UI names from `nl/apps/mediakit/index.md`.
+- **flow-free** and **two-dots** (Millrace): **never write «2048», in any form, anywhere on the page** (house rule). Millrace facts from
+  `_apps/millrace.md` and `nl/apps/millrace/index.md` only (64 levels, free, its own IAP via `{P_…@millrace}` tokens or catalog
+  includes as the model does). «Geen abonnement» is allowed for Millrace. Flow Free rows are hints and packs (€ 0,99 to € 9,99, «Unlock
+  All Packs and Remove Ads» € 5,99); Two Dots rows are power-ups, lives and currency (€ 0,99 to € 9,99). Two Dots has NL UI.
+- **nonograms-katana** (Tare): NL UI, Dutch store name «Nonogrammen Katana». Rows: hints, «VIP versie» € 6,99, potions, rubies. Tare facts
+  from `_apps/tare.md`, `nl/apps/tare/index.md` and these rules: Chapter I (20 levels) free; one purchase unlocks the rest (token); hints
+  are opt-in and cost the third star; the puzzle itself is wordless; iOS/iPadOS 18; iPhone and iPad. «Geen abonnement» is allowed for
+  Tare. The Tier 2 logic guide (`nl/guides/best-logic-puzzle-games-iphone.html`) already describes Nonograms Katana: stay consistent.
+- **autosleep** (Observa): paid app € 9,99, no in-app rows, NL UI. Observa rules as before (HRV (SDNN), «Gereedheid», never «zonder
+  abonnement»); health caveats as strong as English.
+- **strong-workout-app** (GymLogger X): rows «Strong PRO (1 Month)» € 4,99 and € 5,99, «(6 Months)» € 20,49, «(1 Year)» € 24,49 to € 33,99,
+  «Forever» € 89,99 and € 99,99, and an unlabelled «Strong PRO» € 3,99. Stay consistent with
+  `nl/guides/workout-app-without-subscription.html` (its Strong price sentence). GymLogger X never «zonder abonnement».

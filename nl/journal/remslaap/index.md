@@ -127,7 +127,7 @@ De Sleep Foundation raadt aan een arts te spreken bij slaapproblemen die ernstig
 
 [Observa](/nl/apps/observa/) is een app van Lagerland Apps. De app leest de Gezondheid-app en laat je tijd zien in ‘Diep’, ‘REM’, ‘Kern’ en ‘Wakker’, samen met hoe je hart zich ’s nachts gedroeg. Wat een normale hartslag in rust is, lees je in [Hartslag in rust](/nl/journal/hartslag-in-rust/). De dagelijkse slaapscore komt uit hoe lang je sliep, hoe efficiënt, hoe vaak je wakker werd en je slaapfases, afgezet tegen vaste doelen zoals 7 tot 9 uur slaap. Klopt een nacht niet, dan corrigeer je die met ‘Slaap aanpassen’, zonder de Gezondheid-app te veranderen.
 
-Slaapfases verschijnen alleen als een apparaat ze in de Gezondheid-app heeft vastgelegd, zoals een Apple Watch. Observa is geen medisch hulpmiddel en stelt geen diagnose. Wat gratis is en wat Premium biedt, zie je op de [app-pagina](/nl/apps/observa/). Zoek je een aparte slaap-app, vergelijk dan [Observa met AutoSleep](/alternatives/autosleep/){: hreflang="en"} (in het Engels).
+Slaapfases verschijnen alleen als een apparaat ze in de Gezondheid-app heeft vastgelegd, zoals een Apple Watch. Observa is geen medisch hulpmiddel en stelt geen diagnose. Wat gratis is en wat Premium biedt, zie je op de [app-pagina](/nl/apps/observa/). Zoek je een aparte slaap-app, vergelijk dan [Observa met AutoSleep](/nl/alternatives/autosleep/).
 
 ## Bronnen, geraadpleegd op 19 november 2026
 
