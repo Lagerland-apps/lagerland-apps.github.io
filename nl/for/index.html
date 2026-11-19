@@ -1,0 +1,76 @@
+---
+layout: default
+ref: /for/
+permalink: /nl/for/
+translated_from: 2026-10-29
+title: "Voor wie"
+quick_answer: "Lagerland Apps groepeert zijn apps voor iPhone en Apple Watch naar wie ze gebruikt. In het Nederlands zijn er drie pagina’s: een voor wie in ploegendienst werkt en op wisselende tijden slaapt, een voor wie de Gezondheid-app intensief gebruikt en de gegevens al verzamelt, en een voor wie wil plannen zonder de druk van een reeks. Elke pagina raadt drie of vier apps aan, zegt wat elke app voor dat profiel doet en noemt de app om mee te beginnen. Een vierde pagina, voor onafhankelijke iOS-ontwikkelaars, is alleen in het Engels."
+seo:
+  title: "Lagerland Apps per profiel: iPhone en Apple Watch"
+  description: "Onze iPhone- en Apple Watch-apps voor drie profielen: wie in ploegendienst werkt, wie de Gezondheid-app intensief gebruikt en wie rustig wil plannen."
+  keywords:
+    - ploegendienst gezondheid
+    - nachtdienst gezondheid
+    - beste apple watch apps
+    - apple watch apps gezondheid
+    - productiviteit app iphone
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/nl/for/#webpage",
+  "url": "{{ site.url }}/nl/for/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "nl",
+  "datePublished": "2026-11-19",
+  "isPartOf": { "@id": "{{ site.url }}/nl/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/nl/" },
+      { "@type": "ListItem", "position": 2, "name": "Voor wie", "item": "{{ site.url }}/nl/for/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 3,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ploegendienst en gezondheid: iPhone-apps voor slaap en herstel", "url": "{{ site.url }}{% include l.html url="/for/shift-workers/" %}" },
+      { "@type": "ListItem", "position": 2, "name": "Beste Apple Watch-apps voor wie de Gezondheid-app intensief gebruikt", "url": "{{ site.url }}{% include l.html url="/for/apple-health-power-users/" %}" },
+      { "@type": "ListItem", "position": 3, "name": "Productiviteitsapps zonder reeksen en schuldgevoel", "url": "{{ site.url }}{% include l.html url="/for/calm-productivity/" %}" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Profiel → apps</p>
+    <h1 class="h1">Apps voor hoe je<br><span class="gradient-text">leeft en werkt.</span></h1>
+    <p class="lead">Drie korte pagina’s die elk een paar van onze apps koppelen aan een soort rooster of werk, met de app om mee te beginnen.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="grid grid-2 stagger">
+    <a class="card card-app" href="{% include l.html url="/for/shift-workers/" %}">
+      <div class="card-title">Voor wie in ploegendienst werkt</div>
+      <div class="card-text">Verpleegkundigen, ambulancemedewerkers en iedereen met nachtdiensten of wisselende roosters: je slaap gemeten van de ene dienst tot de volgende, een dagelijkse gereedheidsscore, en taken en rekeningen die niet blijven liggen als je werktijden verschuiven.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/for/apple-health-power-users/" %}">
+      <div class="card-title">Voor wie de Apple Watch en de Gezondheid-app intensief gebruikt</div>
+      <div class="card-text">Je Apple Watch legt je slaap, HRV (SDNN) en hartgegevens al vast. Observa maakt er een dagelijkse gereedheidsscore van, met de reden erbij, en de analyse blijft op je apparaat.</div>
+    </a>
+    <a class="card card-app" href="{% include l.html url="/for/calm-productivity/" %}">
+      <div class="card-title">Voor plannen zonder de druk van een reeks</div>
+      <div class="card-text">Een dagplanner die onafgemaakte taken naar vandaag schuift zonder rode lijst met te late taken, en een aftelling naar de datums die je belangrijk vindt.</div>
+    </a>
+  </div>
+  <p class="card-text">Er is ook een pagina die alleen in het Engels staat: <a href="{% include l.html url="/for/indie-ios-developers/" %}"{% if l_en %} hreflang="en"{% endif %}>voor onafhankelijke iOS-ontwikkelaars{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+</section>

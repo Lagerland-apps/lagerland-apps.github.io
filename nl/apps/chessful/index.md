@@ -13,7 +13,7 @@ seo:
   description: "Schaakapp die elke fout in je partijen uitlegt en je daarna op die fouten traint. Stockfish op je apparaat, 156 lessen, 15.000 puzzels. iPhone, iPad, Mac."
   keywords:
     - schaak app
-    - beste schaak app
+    - schaak app iphone
     - schaken leren app
     - schaakpartij analyseren
     - schaakpuzzels app

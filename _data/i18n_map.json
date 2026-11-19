@@ -941,6 +941,7 @@
     "es": "/es/for/",
     "fr": "/fr/for/",
     "it": "/it/for/",
+    "nl": "/nl/for/",
     "pt": "/pt/for/"
   },
   "/for/apple-health-power-users/": {
@@ -949,6 +950,7 @@
     "es": "/es/for/apple-health-power-users/",
     "fr": "/fr/for/apple-health-power-users/",
     "it": "/it/for/apple-health-power-users/",
+    "nl": "/nl/for/apple-health-power-users/",
     "pt": "/pt/for/apple-health-power-users/"
   },
   "/for/calm-productivity/": {
@@ -957,6 +959,7 @@
     "es": "/es/for/calm-productivity/",
     "fr": "/fr/for/calm-productivity/",
     "it": "/it/for/calm-productivity/",
+    "nl": "/nl/for/calm-productivity/",
     "pt": "/pt/for/calm-productivity/"
   },
   "/for/shift-workers/": {
@@ -965,6 +968,7 @@
     "es": "/es/for/shift-workers/",
     "fr": "/fr/for/shift-workers/",
     "it": "/it/for/shift-workers/",
+    "nl": "/nl/for/shift-workers/",
     "pt": "/pt/for/shift-workers/"
   },
   "/guides/": {
@@ -973,6 +977,7 @@
     "es": "/es/guides/",
     "fr": "/fr/guides/",
     "it": "/it/guides/",
+    "nl": "/nl/guides/",
     "pt": "/pt/guides/"
   },
   "/guides/best-chess-apps-iphone/": {
@@ -981,6 +986,7 @@
     "es": "/es/guides/best-chess-apps-iphone/",
     "fr": "/fr/guides/best-chess-apps-iphone/",
     "it": "/it/guides/best-chess-apps-iphone/",
+    "nl": "/nl/guides/best-chess-apps-iphone/",
     "pt": "/pt/guides/best-chess-apps-iphone/"
   },
   "/guides/best-logic-puzzle-games-iphone/": {
@@ -989,6 +995,7 @@
     "es": "/es/guides/best-logic-puzzle-games-iphone/",
     "fr": "/fr/guides/best-logic-puzzle-games-iphone/",
     "it": "/it/guides/best-logic-puzzle-games-iphone/",
+    "nl": "/nl/guides/best-logic-puzzle-games-iphone/",
     "pt": "/pt/guides/best-logic-puzzle-games-iphone/"
   },
   "/guides/best-shogi-apps-iphone/": {
@@ -1005,6 +1012,7 @@
     "es": "/es/guides/best-xiangqi-apps-iphone/",
     "fr": "/fr/guides/best-xiangqi-apps-iphone/",
     "it": "/it/guides/best-xiangqi-apps-iphone/",
+    "nl": "/nl/guides/best-xiangqi-apps-iphone/",
     "pt": "/pt/guides/best-xiangqi-apps-iphone/"
   },
   "/guides/bill-tracker-without-bank-connection/": {
@@ -1021,6 +1029,7 @@
     "es": "/es/guides/workout-app-without-subscription/",
     "fr": "/fr/guides/workout-app-without-subscription/",
     "it": "/it/guides/workout-app-without-subscription/",
+    "nl": "/nl/guides/workout-app-without-subscription/",
     "pt": "/pt/guides/workout-app-without-subscription/"
   },
   "/journal/": {

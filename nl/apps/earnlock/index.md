@@ -13,7 +13,7 @@ seo:
   description: "Apps blokkeren op je iPhone tot je stappendoel is gehaald, van Instagram tot TikTok. Gratis voor één app, zonder account. Je gegevens blijven op je iPhone."
   keywords:
     - apps blokkeren iphone
-    - schermtijd beperken
+    - apps blokkeren voor bepaalde tijd
     - app limiet iphone
     - schermtijd verdienen
     - apps tijdelijk blokkeren iphone
@@ -216,7 +216,7 @@ faq:
   - q: "Wat is EarnLock?"
     a: "EarnLock is een app voor de iPhone die afleidende apps vergrendeld houdt tot je een dagelijks activiteitsdoel haalt, gemeten door de Gezondheid-app. Op de helft van het doel gaat een deel ervan ongeveer een uur open, één keer per dag, en met het hele doel gaan ze allemaal open tot middernacht. Eén app of categorie vergrendelen met een stappendoel is voor altijd gratis. Premium voegt onbeperkt apps, actieve minuten en actieve calorieën, de Apple Watch-app, een live activiteit, slimme schema’s en inzichten voor week en maand toe, voor {P_MONTHLY}/maand of {P_YEARLY}/jaar (elk met een {TRIAL} om te beginnen) of {P_LIFETIME} eenmalig. Je hebt geen account nodig en je gegevens blijven op je iPhone."
   - q: "Wat is het verschil tussen EarnLock en Opal, one sec, ScreenZen of Forest?"
-    a: "Die apps zetten een pauze, een timer of een tik tussen jou en de app. EarnLock zet er een dagelijks activiteitsdoel neer, gemeten door de Gezondheid-app: op de helft gaat een deel van je apps ongeveer een uur open, één keer per dag, en met het hele doel gaan ze allemaal open tot middernacht. EarnLock begint ook met een schaduwweek die niets blokkeert en telt hoe vaak je geblokkeerd zou zijn, zodat je eerste echte slot bij je gewoonte past. Je hebt geen account nodig, één app vergrendelen is voor altijd gratis en Premium is er maandelijks, jaarlijks of als eenmalige aankoop van {P_LIFETIME}."
+    a: "Die apps zetten een pauze, een timer of een tik tussen jou en de app. EarnLock zet er een dagelijks activiteitsdoel neer, gemeten door de Gezondheid-app: op de helft gaat een deel van je apps ongeveer een uur open, één keer per dag, en met het hele doel gaan ze allemaal open tot middernacht. EarnLock begint ook met een schaduwweek die niets blokkeert en telt hoe vaak je geblokkeerd zou zijn, zodat je eerste echte slot bij je gewoonte past. Je hebt geen account nodig, één app vergrendelen is voor altijd gratis en Premium is er maandelijks, jaarlijks of als eenmalige aankoop van {P_LIFETIME}. De <a href=\"/nl/guides/schermtijd-beperken-iphone/\">gids over schermtijd beperken op je iPhone</a> vergelijkt EarnLock ook met Schermtijd van Apple en met Cape, Jomo en AppBlock."
   - q: "Welke apps kan EarnLock blokkeren op de iPhone?"
     a: "Elke app of hele categorie die je kunt kiezen in de Schermtijd-kiezer van Apple. De gratis versie vergrendelt één app of één categorie en Premium heeft geen limiet. De kiezer geeft EarnLock ondoorzichtige tokens, dus de app ziet nooit de namen van wat je koos."
   - q: "Hoe werkt het dagelijkse doel?"

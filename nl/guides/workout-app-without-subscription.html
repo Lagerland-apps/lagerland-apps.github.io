@@ -1,0 +1,161 @@
+---
+layout: default
+ref: /guides/workout-app-without-subscription/
+permalink: /nl/guides/workout-app-without-subscription/
+translated_from: 2026-10-29
+title: "Gym-app zonder abonnement"
+quick_answer: "Wil je een gym-app helemaal zonder abonnement, dan is LiftLog een app voor krachttraining op de iPhone die je één keer betaalt: 7 dagen gratis zonder kaart, daarna een eenmalige aankoop van {P_IAP:Minimum@liftlog} tot {P_IAP:Patron@liftlog}. Wil je een gratis versie en een Apple Watch-app, dan logt GymLogger X je trainingen gratis op iPhone en Apple Watch. De Pro-versie (alle 44 programma’s, je volledige geschiedenis en Inzichten met signalen voor plateaus en vermoeidheid) kost {P_MONTHLY@gymlogger-x}/maand, {P_YEARLY@gymlogger-x}/jaar of {P_LIFETIME@gymlogger-x} eenmalig: een abonnement of een levenslange aankoop. Fitbod en Caliber verkopen hun betaalde versie alleen als abonnement; Strong en Hevy verkopen Pro als abonnement of als levenslange aankoop. LiftLog en GymLogger X zijn allebei van Lagerland Apps, de uitgever van deze gids."
+seo:
+  title: "Gratis gym-app zonder abonnement voor iPhone"
+  description: "Fitbod is er alleen als abonnement, Strong en Hevy vragen geld voor Pro. Zo log je trainingen zonder maandbedrag, met een gratis gym-app of één betaling."
+  keywords:
+    - gratis gym app
+    - beste gratis gym app
+    - gratis workout app zonder abonnement
+    - gratis gym log app
+    - gratis gym tracker app
+    - gym tracker app
+    - beste gratis fitness app voor sportschool
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign app = site.apps | where: "slug", "gymlogger-x" | first -%}
+{%- assign liftlog = site.apps | where: "slug", "liftlog" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/nl/guides/workout-app-without-subscription/#webpage",
+  "url": "{{ site.url }}/nl/guides/workout-app-without-subscription/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/nl/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "nl",
+  "datePublished": "2026-11-19",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/nl/" },
+      { "@type": "ListItem", "position": 2, "name": "Gidsen", "item": "{{ site.url }}/nl/guides/" },
+      { "@type": "ListItem", "position": 3, "name": "Gym-app zonder abonnement", "item": "{{ site.url }}/nl/guides/workout-app-without-subscription/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "nl",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is er een goede gym-app zonder maandelijks abonnement?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. LiftLog (van ons) heeft helemaal geen abonnement: 7 dagen gratis zonder kaart, daarna één betaling op het niveau dat je kiest, van {P_IAP:Minimum@liftlog} tot {P_IAP:Patron@liftlog}. GymLogger X (ook van ons) heeft een gratis versie om trainingen te loggen op iPhone en Apple Watch, en Pro is er als abonnement of als eenmalige levenslange aankoop van {P_LIFETIME@gymlogger-x}. Fitbod en Caliber zetten hun betaalde functies alleen achter een abonnement. Strong en Hevy verkopen Pro als abonnement of als levenslange aankoop." } },
+    { "@type": "Question", "name": "Wat is de goedkoopste manier om trainingen bij te houden op de iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Een gratis app met een optionele eenmalige upgrade. In de gratis versie van GymLogger X log je onbeperkt trainingen op iPhone en Apple Watch, met de bibliotheek van 1500 oefeningen, één programma tegelijk en de laatste 30 dagen aan geschiedenis. Pro voegt alle 44 programma’s toe, je volledige geschiedenis en Inzichten die plateaus, vermoeidheid en onevenwichtige spiergroepen signaleren, voor {P_MONTHLY@gymlogger-x}/maand, {P_YEARLY@gymlogger-x}/jaar of {P_LIFETIME@gymlogger-x} eenmalig. Wil je liever meteen één keer betalen voor alles, dan is LiftLog een eenmalige aankoop vanaf {P_IAP:Minimum@liftlog}, na 7 dagen gratis proberen." } },
+    { "@type": "Question", "name": "Kan ik trainingen loggen op de Apple Watch zonder abonnement?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. De Apple Watch-app van GymLogger X zit in de gratis versie. Je start de training op de iPhone en logt daarna de herhalingen en het gewicht van elke set, gebruikt rusttimers en ziet je hartslag live op je pols, terwijl de telefoon in je tas blijft." } },
+    { "@type": "Question", "name": "Waarom werken de meeste gym-apps alleen met een abonnement?", "acceptedAnswer": { "@type": "Answer", "text": "Abonnementen geven uitgevers van apps voorspelbare, terugkerende inkomsten, en dat ergert mensen die liever één keer betalen voor een hulpmiddel dat ze elke dag gebruiken. Een paar onafhankelijke ontwikkelaars verkopen hun apps nog voor een eenmalige prijs, onder wie LiftLog (van ons). Strong en Hevy verkopen naast hun abonnementen ook een levenslange Pro-ontgrendeling." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Gids · Van probleem naar oplossing</p>
+    <h1 class="h1">
+      “Ik wil een gym-app<br><span class="gradient-text">zonder eeuwig elke maand te betalen.”</span>
+    </h1>
+    <p class="lead">
+      In de Nederlandse App Store kost Strong PRO vanaf € 4,99 per maand en Fitbod vanaf € 13,49 per maand (bekeken op 19 november 2026). Je opent zo’n app 3 tot 5 keer per week, zolang je traint. In tien jaar loopt een maandabonnement op tot honderden euro’s, alleen om sets en herhalingen op te slaan. Strong en Hevy verkopen ook een levenslange ontgrendeling, en de apps hieronder laten andere manieren zien om één keer te betalen.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#answer">Naar het antwoord</a>
+      <a class="btn btn-secondary" href="#faq">Veelgestelde vragen</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Waarom zijn gym-apps met alleen een abonnement echt een probleem?</h2>
+  <p class="lead">Trainingen loggen past bij een eenmalige aankoop: de app is simpel, wordt weinig bijgewerkt en je gebruikt hem in sessies van 45 tot 90 minuten. Een paar getallen opslaan vraagt geen terugkerende serverrekening.</p>
+  <p class="lead">Toch zetten de grootste trainingsloggers hun kernfuncties achter een betaalde versie, en de meeste rekenen daarvoor per maand of per jaar. De prijzen hieronder komen uit de Nederlandse App Store (bekeken op 19 november 2026):</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Strong</div>
+      <div class="card-text">Gratis te downloaden, met een betaalde versie. Strong PRO kost € 4,99 of € 5,99 per maand, of € 24,49 tot € 33,99 per jaar, en Strong PRO Forever is een levenslange aankoop (€ 89,99 en € 99,99 staan allebei in de lijst). Meerdere routines, voortgangsregistratie en cloudsynchronisatie zitten achter de betaalmuur. Veel krachtsporters zien Strong als de standaardapp om krachttraining bij te houden, en velen vinden de app ook te duur voor wat die doet.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Hevy</div>
+      <div class="card-text">De gratis versie dekt in het begin veel, maar geavanceerde functies en een deel van de exportfuncties vragen om Hevy Pro: € 3,49 of € 4,49 per maand, € 26,49 per jaar of € 89,99 als levenslange aankoop.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Fitbod</div>
+      <div class="card-text">Door AI gegenereerde trainingen, alleen met een abonnement: € 13,49 tot € 17,99 per maand of € 81,99 tot € 99,99 per jaar, zonder levenslange optie. Fitbod werkt, en kost per maand meer dan Strong of Hevy.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Caliber</div>
+      <div class="card-text">Een app in coachingstijl, met persoonlijke programma’s. Caliber Plus is alleen per maand of per jaar te koop, zonder levenslange optie, en met de prijs betaal je meer voor menselijke coaches dan voor de app zelf.</div>
+    </div>
+  </div>
+</section>
+
+<section id="answer" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Het antwoord</p>
+    <h2 class="h2">LiftLog of GymLogger X: één keer betalen, of gratis beginnen</h2>
+    <p class="lead">Beide apps zijn van ons. <a href="{% include l.html url="/apps/liftlog/" %}"{% if l_en %} hreflang="en"{% endif %}>LiftLog{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> heeft helemaal geen abonnement: je krijgt 7 dagen gratis zonder kaart en betaalt daarna één keer, op het niveau dat je kiest, van {P_IAP:Minimum@liftlog} tot {P_IAP:Patron@liftlog}. <a href="{% include l.html url="/apps/gymlogger-x/" %}"{% if l_en %} hreflang="en"{% endif %}>GymLogger X{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> is een app voor krachttraining op iPhone en Apple Watch, waarvan de gratis versie het loggen dekt. Pro is een abonnement of een eenmalige levenslange aankoop van {P_LIFETIME@gymlogger-x}, in plaats van een maandelijkse afschrijving zonder einde.</p>
+  </div>
+  {% if app %}
+  <div class="grid grid-2 stagger">
+    {% if liftlog %}{% include app-card.html app=liftlog %}{% endif %}
+    {% include app-card.html app=app %}
+  </div>
+  {% endif %}
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Wat zit er in de gratis versie van GymLogger X?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Sets snel loggen</div><div class="card-text">Set, herhalingen en gewicht invoeren met zo min mogelijk tikken. Supersets en giant sets zijn ingebouwd.</div></div>
+    <div class="card"><div class="card-title">1500 oefeningen</div><div class="card-text">De volledige oefeningenbibliotheek met zoekfunctie en filters, plus een geschiedenis en grafiek per oefening. Eigen oefeningen en geanimeerde demo’s horen bij Pro.</div></div>
+    <div class="card"><div class="card-title">Loggen op de Apple Watch</div><div class="card-text">Log de herhalingen en het gewicht van elke set, gebruik rusttimers en bekijk je hartslag live op je pols. De training start op de iPhone, die in je tas kan blijven.</div></div>
+    <div class="card"><div class="card-title">Persoonlijke records</div><div class="card-text">Het scherm ‘Training voltooid!’ meldt elk nieuw record. De gratis geschiedenis beslaat de laatste 30 dagen; Pro ontgrendelt de rest, al je persoonlijke records op één plek en trends in je kracht.</div></div>
+  </div>
+  <p class="lead" style="margin-top:var(--s-4);">Wat er achter Pro zit: alle 44 programma’s en zoveel actieve programma’s als je wilt (gratis loopt er één tegelijk: een van de 6 gratis programma’s, een eigen programma of een programma uit de Smart Program Creator), je volledige geschiedenis, Inzichten die plateaus, vermoeidheid en onevenwichtige spiergroepen signaleren, geanimeerde oefendemo’s en eigen oefeningen. Ze zijn handig als je ze wilt, maar ook zonder deze functies log je je trainingen goed.</p>
+  <p class="lead">LiftLog werkt andersom. Na de proefperiode van 7 dagen is er geen gratis versie, maar met één betaling heb je de hele app: 1500 oefeningen met geanimeerde demo’s, 40 kant-en-klare programma’s die je volgende gewicht kunnen voorstellen en 10 widgets voor het beginscherm en het toegangsscherm.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">De rekensom: abonnement of levenslang</h2>
+  <div class="card">
+    <p><strong>Strong PRO:</strong> € 4,99/maand × 10 jaar = <strong>ongeveer € 600</strong>, of één keer Strong PRO Forever (€ 89,99 of € 99,99)</p>
+    <p><strong>Hevy Pro:</strong> € 3,49/maand × 10 jaar = <strong>ongeveer € 420</strong>, of één keer Hevy Pro Lifetime (€ 89,99)</p>
+    <p><strong>Fitbod:</strong> € 13,49/maand × 10 jaar = <strong>ongeveer € 1.620</strong>, zonder levenslange optie</p>
+    <p><strong>LiftLog:</strong> <strong>{P_IAP:Minimum@liftlog} tot {P_IAP:Patron@liftlog}</strong>, eenmalig, op het niveau dat je kiest</p>
+    <p><strong>GymLogger X Levenslang:</strong> <strong>{P_LIFETIME@gymlogger-x}</strong>, eenmalig, zonder verlenging</p>
+    <p class="small" style="margin-top:var(--s-3);">Prijzen van concurrenten uit de lijst met in-app aankopen van elke app in de Nederlandse App Store, bekeken op 19 november 2026. Voor de tien jaar gebruiken we bij elke app de laagste prijs die duidelijk als maandabonnement is aangeduid, maal 120 maanden, afgerond op tientallen. Sommige apps tonen meer dan één prijs voor hetzelfde abonnement, en prijzen veranderen.</p>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Vragen</p><h2 class="h2">Veelgestelde vragen</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Is er een goede gym-app zonder maandelijks abonnement?</summary><div class="faq-a">Ja. LiftLog (van ons) heeft helemaal geen abonnement: 7 dagen gratis zonder kaart, daarna één betaling op het niveau dat je kiest, van {P_IAP:Minimum@liftlog} tot {P_IAP:Patron@liftlog}. GymLogger X (ook van ons) heeft een gratis versie om trainingen te loggen op iPhone en Apple Watch, en Pro is er als abonnement of als eenmalige levenslange aankoop van {P_LIFETIME@gymlogger-x}. Fitbod en Caliber zetten hun betaalde functies alleen achter een abonnement. Strong en Hevy verkopen Pro als abonnement of als levenslange aankoop.</div></details>
+    <details class="faq-item"><summary>Wat is de goedkoopste manier om trainingen bij te houden op de iPhone?</summary><div class="faq-a">Een gratis app met een optionele eenmalige upgrade. In de gratis versie van GymLogger X log je onbeperkt trainingen op iPhone en Apple Watch, met de bibliotheek van 1500 oefeningen, één programma tegelijk en de laatste 30 dagen aan geschiedenis. Pro voegt alle 44 programma’s toe, je volledige geschiedenis en Inzichten die plateaus, vermoeidheid en onevenwichtige spiergroepen signaleren, voor {P_MONTHLY@gymlogger-x}/maand, {P_YEARLY@gymlogger-x}/jaar of {P_LIFETIME@gymlogger-x} eenmalig. Wil je liever meteen één keer betalen voor alles, dan is LiftLog een eenmalige aankoop vanaf {P_IAP:Minimum@liftlog}, na 7 dagen gratis proberen.</div></details>
+    <details class="faq-item"><summary>Kan ik trainingen loggen op de Apple Watch zonder abonnement?</summary><div class="faq-a">Ja. De Apple Watch-app van GymLogger X zit in de gratis versie. Je start de training op de iPhone en logt daarna de herhalingen en het gewicht van elke set, gebruikt rusttimers en ziet je hartslag live op je pols, terwijl de telefoon in je tas blijft.</div></details>
+    <details class="faq-item"><summary>Waarom werken de meeste gym-apps alleen met een abonnement?</summary><div class="faq-a">Abonnementen geven uitgevers van apps voorspelbare, terugkerende inkomsten, en dat ergert mensen die liever één keer betalen voor een hulpmiddel dat ze elke dag gebruiken. Een paar onafhankelijke ontwikkelaars verkopen hun apps nog voor een eenmalige prijs, onder wie LiftLog (van ons). Strong en Hevy verkopen naast hun abonnementen ook een levenslange Pro-ontgrendeling.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Probeer het</p>
+  <h2 class="h2">Kies de app die bij je past.</h2>
+  <p class="lead">LiftLog is één betaling na 7 dagen gratis proberen, zonder abonnement. In de gratis versie van GymLogger X log je elke training op iPhone en Apple Watch, en je betaalt alleen voor Pro als je alle 44 programma’s, je volledige geschiedenis of Inzichten over plateaus en vermoeidheid wilt.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/liftlog/" %}"{% if l_en %} hreflang="en"{% endif %}>Meer over LiftLog{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/gymlogger-x/" %}"{% if l_en %} hreflang="en"{% endif %}>Meer over GymLogger X{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/alternatives/strong-workout-app/" %}"{% if l_en %} hreflang="en"{% endif %}>Vergelijking met Strong{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

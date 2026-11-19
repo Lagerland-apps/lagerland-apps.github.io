@@ -1,0 +1,147 @@
+---
+layout: default
+ref: /for/shift-workers/
+permalink: /nl/for/shift-workers/
+translated_from: 2026-11-19
+title: "Ploegendienst en gezondheid: iPhone-apps voor slaap en herstel"
+quick_answer: "Wie in ploegendienst werkt, begint op de iPhone met AfterShift: de app meet je slaap van het einde van de ene dienst tot het begin van de volgende, dutjes inbegrepen, vult je rooster 8 weken vooruit vanuit een terugkerende cyclus en stemt de cafeïnestop en de dutjesherinneringen af op je volgende dienst. Voeg Observa toe voor een dagelijkse gereedheidsscore uit je slaap, HRV (SDNN) en hartslag in rust uit de Gezondheid-app, Taskful Day voor een dagplanner waarin onafgemaakte taken doorschuiven en AllPaid voor herinneringen aan rekeningen zonder inloggegevens van je bank. Geen van de vier vraagt om een account of stuurt je gegevens naar Lagerland Apps."
+seo:
+  title: "Ploegendienst en gezondheid: apps voor slaap en herstel"
+  description: "Ploegendienst en gezondheid: iPhone-apps voor verpleegkundigen en nachtwerk, met slaap gemeten van dienst tot dienst en een dagelijkse gereedheidsscore."
+  keywords:
+    - ploegendienst gezondheid
+    - nachtdienst gezondheid
+    - gezondheidsrisico's nachtdienst
+    - nachtdienst tips
+    - werken in ploegendienst gezondheid
+    - onregelmatige diensten slecht voor gezondheid
+    - nachtdienst verpleegkundige tips
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign shift_apps_slugs = "aftershift,observa,taskful-day,allpaid" | split: "," -%}
+{%- assign shift_apps = '' | split: '' -%}
+{%- for slug in shift_apps_slugs -%}
+  {%- assign match = site.apps | where: "slug", slug | first -%}
+  {%- if match and match.status == "live" -%}{%- assign shift_apps = shift_apps | push: match -%}{%- endif -%}
+{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/nl/for/shift-workers/#webpage",
+  "url": "{{ site.url }}/nl/for/shift-workers/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/nl/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "nl",
+  "datePublished": "2026-11-19",
+  "audience": {
+    "@type": "PeopleAudience",
+    "audienceType": "Mensen in ploegendienst, verpleegkundigen, ambulancemedewerkers, brandweerlieden en iedereen met wisselende diensten"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/nl/" },
+      { "@type": "ListItem", "position": 2, "name": "Voor ploegendienst", "item": "{{ site.url }}/nl/for/shift-workers/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "nl",
+  "mainEntity": [
+    { "@type": "Question", "name": "Wat is de beste slaapapp voor ploegendienst op de iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "AfterShift is de app die we daarvoor hebben gemaakt. De meeste slaaptrackers tellen je dag van middernacht tot middernacht, waardoor de slaap van iemand die ’s nachts werkt in tweeën wordt gesplitst. AfterShift meet je slaap van het einde van de ene dienst tot het begin van de volgende, telt dutjes mee in dat venster en stemt de cafeïnestop en de dutjesherinneringen af op je volgende dienst. Het rooster, het importeren van slaap en de herinneringen zijn gratis; Paraatheid, de slaapscore, de herstelscore na dienst en Trends horen bij AfterShift Premium." } },
+    { "@type": "Question", "name": "Hoe houd ik als verpleegkundige in de nachtdienst mijn herstel bij?", "acceptedAnswer": { "@type": "Answer", "text": "Houd je rooster bij in AfterShift en laat je slaap, dutjes inbegrepen, uit de Gezondheid-app importeren. Leg cafeïne en extra dutjes daar ook vast. Voeg daarna Observa toe als je dagelijks wilt zien hoe je lichaam ervoor staat: de app berekent een gereedheidsscore uit slaap, HRV (SDNN), hartslag in rust en trainingsbelasting, afgezet tegen je eigen basislijn, en ‘Waarom deze score?’ laat zien waardoor de score is veranderd. Je hebt een Apple Watch nodig of een slaapapp die slaap in de Gezondheid-app bewaart." } },
+    { "@type": "Question", "name": "Zijn deze apps gratis?", "acceptedAnswer": { "@type": "Answer", "text": "Alle vier zijn gratis te downloaden en elk heeft een gratis versie die je kunt blijven gebruiken. In AfterShift zijn het rooster, het importeren van slaap en de herinneringen die op je diensten zijn afgestemd gratis; Premium voegt de herstelscores en Trends toe. In Observa zijn de dagelijkse gereedheidsscore, de slaapscore en de stressmeting gratis; Premium voegt langetermijntrends, functionele leeftijd, ECG-geschiedenis en trainingsanalyse toe. In de gratis versie van Taskful Day maak je in totaal maximaal 50 taken aan, en AllPaid is gratis voor maximaal 3 rekeningen. Geen van de vier heeft een account nodig." } },
+    { "@type": "Question", "name": "Werken deze apps ook als ik een ander dienstpatroon krijg?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. In AfterShift kies je een van zeven vooraf ingestelde cycli, zoals 4 op / 4 af of Panama (2-2-3), of stel je zelf een cyclus van maximaal 28 dagen samen. De app vult je rooster 8 weken vooruit. Je geeft zelf namen aan je diensttypes en vrije dagen, dus lange diensten, nachtdiensten en oproepdiensten passen er allemaal in. Houd een dienst ingedrukt om hem te verlengen, te verplaatsen of te ruilen als je rooster verandert. Taskful Day plant één dag tegelijk en taken die je niet hebt afgemaakt, schuiven naar vandaag zodra je de app weer opent." } },
+    { "@type": "Question", "name": "Synchroniseren deze apps met de Apple Watch?", "acceptedAnswer": { "@type": "Answer", "text": "Observa en AfterShift lezen allebei uit de Gezondheid-app, dus wat je Apple Watch daar vastlegt, komt zonder extra koppeling bij ze aan. AfterShift leest je slaap. Observa leest slaap, hartslag, HRV en trainingen en heeft ook een eigen Apple Watch-app met Gereedheid en het trainingsadvies. Taskful Day heeft eveneens een Apple Watch-app, die samenwerkt met de iPhone-app. AfterShift en AllPaid hebben geen Apple Watch-app." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Verpleegkundigen · ambulancemedewerkers · brandweerlieden · wisselende diensten</p>
+    <h1 class="h1">Ploegendienst en gezondheid:<br><span class="gradient-text">iPhone-apps voor slaap en herstel.</span></h1>
+    <p class="lead">
+      De meeste slaapapps gaan uit van een kantoorweek van negen tot vijf. Werk je in wisselende diensten of ’s nachts, of slaap je in stukken, dan tellen ze je slaap in het verkeerde venster en stellen ze doelen die niet bij je week passen. AfterShift gaat juist uit van je rooster, en drie andere apps vullen dat aan.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">Bekijk de apps</a>
+      <a class="btn btn-secondary" href="#faq">Veelgestelde vragen</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Wat is het probleem met de meeste slaapapps voor ploegendienst?</h2>
+  <p class="lead">Ze gaan ervan uit dat je één keer per dag slaapt, ’s nachts, in één blok, en ze tellen die slaap van middernacht tot middernacht. Jij doet een dutje vóór een nachtdienst, slaapt daarna in twee delen en je “dag” begint op het moment dat je laatste dienst eindigde. Een tracker die op kantoortijden is gebouwd, verdeelt die slaap over twee datums, zodat één goede slaapperiode eruit kan zien als twee korte nachten.</p>
+  <p class="lead">AfterShift meet in plaats daarvan het venster tussen je diensten. De andere drie apps pakken op wat blijft liggen als je werktijden verschuiven: je herstel inzien, de dag plannen waarop je wakker bent en de rekeningen niet vergeten.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">De apps</p>
+    <h2 class="h2">Vier privé-apps die samenwerken</h2>
+    <p class="lead">Gebruik ze samen of los van elkaar. Alle vier komen van Lagerland Apps, een Finse studio van één persoon waar privacy voorop staat. Voor geen van de vier hoef je een account aan te maken, en geen enkele stuurt je gegevens naar ons.</p>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in shift_apps -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Hoe werken deze apps samen bij ploegendienst?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">1. AfterShift: de roosterlaag</div>
+      <div class="card-text">Stel je cyclus één keer in en AfterShift vult je rooster 8 weken vooruit. Benoem zoveel diensttypes en vrije dagen als je werk kent, lange diensten en nachtdiensten inbegrepen. Je slaap komt binnen uit de Gezondheid-app, met dutjes gemarkeerd als dutje. De herinneringen om te ontspannen, voor de cafeïnestop en voor een dutje zijn afgestemd op je volgende dienst. Premium voegt Paraatheid voor je volgende dienst, de slaapscore en de herstelscore na dienst toe.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">2. Observa: de duidingslaag</div>
+      <div class="card-text">Observa leest de slaap, HRV (SDNN), hartslag in rust en trainingen die je Apple Watch in de Gezondheid-app bewaart en maakt er een dagelijkse gereedheidsscore, een slaapscore en een stressmeting van. Gereedheid en stress worden afgezet tegen je eigen basislijn. Tik op ‘Waarom deze score?’ om te zien waardoor je gereedheid is veranderd. De dagelijkse scores zijn gratis.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">3. Taskful Day: de planlaag</div>
+      <div class="card-text">Taskful Day plant één dag tegelijk en gaat er niet van uit dat die dag op een vast tijdstip begint. Taken waar je vóór een reeks nachtdiensten niet aan toe kwam, schuiven naar vandaag zodra je de app opent, zodat je lijst nooit verandert in een rode stapel te late taken. Een taak voeg je toe door een zin te typen, in te spreken of het aan Siri te vragen.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">4. AllPaid: de rekeningenlaag</div>
+      <div class="card-text">Als je slaap elke week verschuift, raak je vervaldatums makkelijk kwijt. Voer huur, energie en abonnementen één keer in. AllPaid herinnert je vóór elke vervaldatum en schuift een rekening door naar de volgende vervaldatum zodra je hem als betaald markeert. De app vraagt nooit om de inloggegevens van je bank en is gratis voor maximaal 3 rekeningen.</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center">
+    <p class="overline">Vragen</p>
+    <h2 class="h2">Veelgestelde vragen</h2>
+  </div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Wat is de beste slaapapp voor ploegendienst op de iPhone?</summary><div class="faq-a">AfterShift is de app die we daarvoor hebben gemaakt. De meeste slaaptrackers tellen je dag van middernacht tot middernacht, waardoor de slaap van iemand die ’s nachts werkt in tweeën wordt gesplitst. AfterShift meet je slaap van het einde van de ene dienst tot het begin van de volgende, telt dutjes mee in dat venster en stemt de cafeïnestop en de dutjesherinneringen af op je volgende dienst. Het rooster, het importeren van slaap en de herinneringen zijn gratis; Paraatheid, de slaapscore, de herstelscore na dienst en Trends horen bij AfterShift Premium.</div></details>
+    <details class="faq-item"><summary>Hoe houd ik als verpleegkundige in de nachtdienst mijn herstel bij?</summary><div class="faq-a">Houd je rooster bij in AfterShift en laat je slaap, dutjes inbegrepen, uit de Gezondheid-app importeren. Leg cafeïne en extra dutjes daar ook vast. Voeg daarna Observa toe als je dagelijks wilt zien hoe je lichaam ervoor staat: de app berekent een gereedheidsscore uit slaap, HRV (SDNN), hartslag in rust en trainingsbelasting, afgezet tegen je eigen basislijn, en ‘Waarom deze score?’ laat zien waardoor de score is veranderd. Je hebt een Apple Watch nodig of een slaapapp die slaap in de Gezondheid-app bewaart.</div></details>
+    <details class="faq-item"><summary>Zijn deze apps gratis?</summary><div class="faq-a">Alle vier zijn gratis te downloaden en elk heeft een gratis versie die je kunt blijven gebruiken. In AfterShift zijn het rooster, het importeren van slaap en de herinneringen die op je diensten zijn afgestemd gratis; Premium voegt de herstelscores en Trends toe. In Observa zijn de dagelijkse gereedheidsscore, de slaapscore en de stressmeting gratis; Premium voegt langetermijntrends, functionele leeftijd, ECG-geschiedenis en trainingsanalyse toe. In de gratis versie van Taskful Day maak je in totaal maximaal 50 taken aan, en AllPaid is gratis voor maximaal 3 rekeningen. Geen van de vier heeft een account nodig.</div></details>
+    <details class="faq-item"><summary>Werken deze apps ook als ik een ander dienstpatroon krijg?</summary><div class="faq-a">Ja. In AfterShift kies je een van zeven vooraf ingestelde cycli, zoals 4 op / 4 af of Panama (2-2-3), of stel je zelf een cyclus van maximaal 28 dagen samen. De app vult je rooster 8 weken vooruit. Je geeft zelf namen aan je diensttypes en vrije dagen, dus lange diensten, nachtdiensten en oproepdiensten passen er allemaal in. Houd een dienst ingedrukt om hem te verlengen, te verplaatsen of te ruilen als je rooster verandert. Taskful Day plant één dag tegelijk en taken die je niet hebt afgemaakt, schuiven naar vandaag zodra je de app weer opent.</div></details>
+    <details class="faq-item"><summary>Synchroniseren deze apps met de Apple Watch?</summary><div class="faq-a">Observa en AfterShift lezen allebei uit de Gezondheid-app, dus wat je Apple Watch daar vastlegt, komt zonder extra koppeling bij ze aan. AfterShift leest je slaap. Observa leest slaap, hartslag, HRV en trainingen en heeft ook een eigen Apple Watch-app met Gereedheid en het trainingsadvies. Taskful Day heeft eveneens een Apple Watch-app, die samenwerkt met de iPhone-app. AfterShift en AllPaid hebben geen Apple Watch-app.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Klaar om te beginnen?</p>
+  <h2 class="h2">Begin met AfterShift</h2>
+  <p class="lead">Voer je cyclus één keer in en AfterShift vult de komende 8 weken. Voeg de andere apps toe wanneer je wilt.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/aftershift/" %}"{% if l_en %} hreflang="en"{% endif %}>Bekijk AfterShift{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Bekijk alle apps{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

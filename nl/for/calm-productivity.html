@@ -1,0 +1,120 @@
+---
+layout: default
+ref: /for/calm-productivity/
+permalink: /nl/for/calm-productivity/
+translated_from: 2026-11-08
+title: "Productiviteitsapps zonder reeksen en schuldgevoel"
+quick_answer: "Wil je plannen zonder de druk van een reeks, begin dan met Taskful Day, een dagplanner voor iPhone, iPad, Mac en Apple Watch: wat je niet afmaakt, schuift vanzelf door naar vandaag, zodat je lijst Vandaag nooit een rode stapel te late taken wordt. Voeg Soon. toe op je iPhone om af te tellen naar reizen, verjaardagen en andere grote datums, met een checklist om mee te beginnen uit de planmodus. Heb je een Apple Watch en wil je elke dag een overzicht van je slaap en herstel, voeg dan Observa toe. Geen van de drie apps toont advertenties of vraagt om een account."
+seo:
+  title: "Productiviteitsapp voor iPhone, zonder schuldgevoel"
+  description: "Productiviteitsapp voor iPhone zonder advertenties of druk om een reeks vol te houden: Taskful Day (ook op iPad en Mac), Soon. om af te tellen en Observa."
+  keywords:
+    - productiviteit app iphone
+    - app productiviteit iphone
+    - planner app iphone
+    - focus app iphone
+    - best planner app iphone
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign slugs = "taskful-day,soon,observa" | split: "," -%}
+{%- assign apps_for = '' | split: '' -%}
+{%- for slug in slugs -%}{%- assign m = site.apps | where: "slug", slug | first -%}{%- if m and m.status == "live" -%}{%- assign apps_for = apps_for | push: m -%}{%- endif -%}{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/nl/for/calm-productivity/#webpage",
+  "url": "{{ site.url }}/nl/for/calm-productivity/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/nl/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "nl",
+  "datePublished": "2026-11-19",
+  "audience": { "@type": "PeopleAudience", "audienceType": "Mensen die genoeg hebben van productiviteitsapps met spelelementen" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/nl/" },
+      { "@type": "ListItem", "position": 2, "name": "Productiviteit zonder druk", "item": "{{ site.url }}/nl/for/calm-productivity/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "nl",
+  "mainEntity": [
+    { "@type": "Question", "name": "Wat is een productiviteitsapp zonder druk?", "acceptedAnswer": { "@type": "Answer", "text": "Een app die de dag plant die je echt hebt en je de rest van de tijd met rust laat. Zo is Taskful Day gebouwd. Wat je niet afmaakt, schuift vanzelf door naar vandaag, Vandaag toont geen teller of rode lijst voor te late taken, en de app heeft geen advertenties of feed die om je aandacht vraagt." } },
+    { "@type": "Question", "name": "Wat is het beste alternatief voor planners met reeksen?", "acceptedAnswer": { "@type": "Answer", "text": "Taskful Day, als je een planner wilt waarin een gemiste dag je niets kost. Taken die je niet hebt afgemaakt, schuiven door naar vandaag zodra je de app opent, en niets in Vandaag markeert ze als te laat. In Analyses staan wel je huidige en je beste reeks, als één cijfer tussen andere." } },
+    { "@type": "Question", "name": "Zijn deze apps geschikt voor mensen met ADHD?", "acceptedAnswer": { "@type": "Answer", "text": "Geen van de drie is bedoeld als medisch hulpmiddel of als ADHD-app, dus we beweren niets over ADHD. Taskful Day houdt één dag in beeld en schuift onafgemaakte taken door in plaats van ze te laten opstapelen, en een taak voeg je toe door een zin te typen, in te spreken of aan Siri te vragen. Soon. zet de datums die je belangrijk vindt op je beginscherm en toegangsscherm. Beide apps hebben een gratis versie, zodat je zelf kunt zien of die manier van werken bij je past." } },
+    { "@type": "Question", "name": "Verkopen deze apps mijn gegevens?", "acceptedAnswer": { "@type": "Answer", "text": "Nee. Geen van de drie toont advertenties, vraagt om een account of bevat analyse- of advertentie-SDK’s van derden. Taskful Day bewaart je taken op je apparaat, of in je eigen iCloud als je met Pro synchronisatie aanzet. Soon. bewaart je momenten op je apparaat en synchroniseert ze via je eigen iCloud. Observa bewaart je gezondheidsgegevens op je apparaat. De apps worden bekostigd door optionele upgrades naar Pro en Premium." } },
+    { "@type": "Question", "name": "Is er een dagplanner zonder schuldgevoel die op de Mac en op iPhone en iPad werkt?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Taskful Day werkt op iPhone, iPad en Mac, met een Apple Watch-app die samenwerkt met de iPhone-app. Met Pro toont iCloud-synchronisatie via je eigen privé-iCloud dezelfde dag op elk apparaat. Op de Mac krijg je kleine, middelgrote en grote widgets; spraakinvoer werkt op iPhone en iPad." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Voor wie genoeg heeft van productiviteit als spel</p>
+    <h1 class="h1">Productiviteitsapps<br><span class="gradient-text">zonder reeksen en schuldgevoel.</span></h1>
+    <p class="lead">Veel planners draaien op reeksen, badges en een vlammetje dat uitgaat als je een dag mist. Heb je weleens een planner verwijderd omdat je je erdoor achter voelde lopen, dan houden deze drie apps je dag in beeld en laten ze je de rest van de tijd met rust.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">Bekijk de apps</a>
+      <a class="btn btn-secondary" href="#faq">Veelgestelde vragen</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Waarom laten de meeste productiviteitsapps mensen in de steek?</h2>
+  <p class="lead">Veel apps zijn gebouwd om je elke dag terug te laten komen, en je werk afmaken komt op de tweede plaats. Een vlammetje dat uitgaat als je één dag mist, geeft je een schuldgevoel, en een rode lijst met te late taken wordt langer elke keer dat het leven tussenbeide komt.</p>
+  <p class="lead">Een betere planner begint bij de dag die je echt gaat hebben. Die schuift de restjes van gisteren zonder commentaar door, is open over zijn prijs en houdt zich op de achtergrond als je het druk hebt.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">De apps</p>
+    <h2 class="h2">De drie apps</h2>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in apps_for -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Hoe passen deze drie apps bij elkaar?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Taskful Day → één dag tegelijk, op elk apparaat</div><div class="card-text">Wat je niet afmaakt, schuift vanzelf door naar vandaag, en in Vandaag zie je nooit een rode lijst met te late taken. Taskful Day werkt op iPhone, iPad, Mac en Apple Watch, dus je kunt aan je bureau plannen en een taak vastleggen op je telefoon of je pols. Met Pro zorgt iCloud-synchronisatie dat je op elk apparaat dezelfde dag ziet.</div></div>
+    <div class="card"><div class="card-title">Soon. → aftellen naar de datums die ertoe doen</div><div class="card-text">Tel af naar reizen, bruiloften, verjaardagen en tentamens, elk met je eigen foto. De planmodus stelt een checklist en een tijdlijn voor om mee te beginnen, passend bij de soort gebeurtenis, en 26 widgets voor het beginscherm, het toegangsscherm en Stand-by houden de aftelling in beeld. Soon. is een iPhone-app, gratis voor maximaal 5 momenten.</div></div>
+    <div class="card"><div class="card-title">Observa → hoe je routine op je uitwerkt (optioneel)</div><div class="card-text">Heb je een Apple Watch, dan maakt Observa van je slaap, HRV (SDNN) en hartslag in rust uit de Gezondheid-app een dagelijkse gereedheidsscore en een slaapscore, en houdt de app je slaapschuld bij ten opzichte van je eigen doel. ‘Waarom deze score?’ legt je gereedheid uit in gewone taal.</div></div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Vragen</p><h2 class="h2">Veelgestelde vragen</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Wat is een productiviteitsapp zonder druk?</summary><div class="faq-a">Een app die de dag plant die je echt hebt en je de rest van de tijd met rust laat. Zo is Taskful Day gebouwd. Wat je niet afmaakt, schuift vanzelf door naar vandaag, Vandaag toont geen teller of rode lijst voor te late taken, en de app heeft geen advertenties of feed die om je aandacht vraagt.</div></details>
+    <details class="faq-item"><summary>Wat is het beste alternatief voor planners met reeksen?</summary><div class="faq-a">Taskful Day, als je een planner wilt waarin een gemiste dag je niets kost. Taken die je niet hebt afgemaakt, schuiven door naar vandaag zodra je de app opent, en niets in Vandaag markeert ze als te laat. In Analyses staan wel je huidige en je beste reeks, als één cijfer tussen andere.</div></details>
+    <details class="faq-item"><summary>Zijn deze apps geschikt voor mensen met ADHD?</summary><div class="faq-a">Geen van de drie is bedoeld als medisch hulpmiddel of als ADHD-app, dus we beweren niets over ADHD. Taskful Day houdt één dag in beeld en schuift onafgemaakte taken door in plaats van ze te laten opstapelen, en een taak voeg je toe door een zin te typen, in te spreken of aan Siri te vragen. Soon. zet de datums die je belangrijk vindt op je beginscherm en toegangsscherm. Beide apps hebben een gratis versie, zodat je zelf kunt zien of die manier van werken bij je past.</div></details>
+    <details class="faq-item"><summary>Verkopen deze apps mijn gegevens?</summary><div class="faq-a">Nee. Geen van de drie toont advertenties, vraagt om een account of bevat analyse- of advertentie-SDK’s van derden. Taskful Day bewaart je taken op je apparaat, of in je eigen iCloud als je met Pro synchronisatie aanzet. Soon. bewaart je momenten op je apparaat en synchroniseert ze via je eigen iCloud. Observa bewaart je gezondheidsgegevens op je apparaat. De apps worden bekostigd door optionele upgrades naar Pro en Premium.</div></details>
+    <details class="faq-item"><summary>Is er een dagplanner zonder schuldgevoel die op de Mac en op iPhone en iPad werkt?</summary><div class="faq-a">Ja. Taskful Day werkt op iPhone, iPad en Mac, met een Apple Watch-app die samenwerkt met de iPhone-app. Met Pro toont iCloud-synchronisatie via je eigen privé-iCloud dezelfde dag op elk apparaat. Op de Mac krijg je kleine, middelgrote en grote widgets; spraakinvoer werkt op iPhone en iPad.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Begin hier</p>
+  <h2 class="h2">Begin met Taskful Day</h2>
+  <p class="lead">Taskful Day is het middelpunt van de drie apps. In de gratis versie maak je in totaal maximaal 50 taken aan, en elke nieuwe installatie krijgt 7 dagen Pro gratis, zonder creditcard.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/taskful-day/" %}"{% if l_en %} hreflang="en"{% endif %}>Lees meer over Taskful Day{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Bekijk alle apps{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>
