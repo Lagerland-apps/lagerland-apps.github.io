@@ -1,0 +1,482 @@
+---
+layout: default
+ref: /
+permalink: /it/
+translated_from: 2026-11-13
+title: "Lagerland Apps: app senza pubblicità per iPhone e Mac"
+quick_answer: "Lagerland Apps è uno studio indipendente di app Apple di una sola persona, in Finlandia, con {APP_COUNT} app senza pubblicità su App Store per iPhone, iPad, Apple Watch e Mac. Coprono salute e allenamento, pianificazione della giornata, bollette, giochi da tavolo e di logica e strumenti per chi pubblica app su App Store. Nessuna richiede l’identificativo per gli inserzionisti (IDFA) o ti chiede di creare un account, e nessuna invia i tuoi dati a un server gestito dallo studio. Le pagano le persone che le usano, con upgrade facoltativi o acquisti unici."
+seo:
+  title: "App senza pubblicità per iPhone e Mac: {APP_COUNT} app Lagerland"
+  description: "{APP_COUNT} app senza pubblicità per iPhone, iPad, Apple Watch e Mac, di un solo sviluppatore in Finlandia. Nessuna ti traccia né chiede un account."
+  keywords:
+    - app senza pubblicità
+    - applicazioni senza pubblicità
+    - app privacy iphone
+    - sviluppatore app ios
+    - lagerland apps
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+
+{%- comment %} ===== Apps with an Italian page, in master order (apps without one are left out) ===== {% endcomment -%}
+{%- assign live_apps = site.apps | where: "status", "live" -%}
+{%- assign it_apps = "" | split: "" -%}
+{%- for app in live_apps -%}
+  {%- include tx-app.html app=app -%}
+  {%- unless tx_en -%}{%- assign it_apps = it_apps | push: app -%}{%- endunless -%}
+{%- endfor -%}
+
+{%- comment %} Taskful Day's devices as the English page states them (pair + FAQ), matching the catalog. {% endcomment -%}
+{%- assign tf_devices = "iPhone, iPad, Mac e Apple Watch" -%}
+
+{%- comment %} ===== Structured data: ItemList of the apps with an Italian page + FAQPage ===== {% endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/it/#webpage",
+  "url": "{{ site.url }}/it/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/it/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "it",
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Lagerland Apps: il catalogo completo",
+    "numberOfItems": {{ it_apps.size }},
+    "itemListElement": [
+    {%- for app in it_apps -%}
+      {%- include tx-app.html app=app -%}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "url": "{{ site.url }}{{ tx_app.url }}",
+        "name": {{ app.name | jsonify }},
+        "description": {% capture list_desc %}{% if tx_app.seo and tx_app.seo.description %}{% include app-text.html app=app text=tx_app.seo.description %}{% endif %}{% endcapture %}{{ list_desc | default: tx_app.tagline | jsonify }}
+      }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "it",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".faq-a", ".about-strip p"]
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Chi c’è dietro Lagerland Apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lagerland Apps è uno studio indipendente di app Apple di una sola persona, in Finlandia, che pubblica app per iPhone, iPad, Apple Watch e Mac dal 2025. Un solo sviluppatore progetta e programma ogni app e ne cura l’assistenza. Non ci sono investitori, inserzionisti né broker di dati, e lo studio lavora secondo il diritto dell’UE, con il GDPR come regola di base."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le app di Lagerland mi tracciano o raccolgono dati personali?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Nessuna app richiede l’identificativo per gli inserzionisti (IDFA) né contiene un SDK pubblicitario o di analytics, e nessuna invia i tuoi dati a un server gestito dallo studio. I tuoi dati restano sul tuo dispositivo e le app che sincronizzano usano il tuo iCloud. Alcune app vanno online per il lavoro che fanno: WanderWiki carica gli articoli da Wikipedia e gli strumenti per sviluppatori comunicano con App Store Connect e, se aggiungi una tua chiave, con il provider di IA che scegli. Si collegano direttamente a quel servizio. La pagina sulla trasparenza elenca che cosa dichiara ogni app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Servono un account o un login per usare le app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Nessuna app ti chiede di creare un account o di registrarti con un indirizzo email. La scarichi e inizi. Gli strumenti per sviluppatori (AppMeta, AppMeta Pulse e il caricamento di Mockly) si collegano al tuo account App Store Connect con una chiave API che crei presso Apple."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come guadagna Lagerland Apps senza pubblicità?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le app le paga chi le usa. La maggior parte si scarica gratis, con un upgrade a pagamento facoltativo, venduto come abbonamento, come acquisto unico o in entrambi i modi. Mockly è l’unica app che si paga al momento del download. Nessun inserzionista paga niente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le app funzionano su iPhone, iPad e Mac?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Quasi tutte le app funzionano su iPhone, mentre AppMeta e Mockly sono app per Mac. AllPaid, AppMeta Pulse, Chessful, Shogiful, Xiangqiful, Taskful Day e MediaKit funzionano anche su Mac. GymLogger X, Observa e Taskful Day hanno un’app per Apple Watch, e quella di EarnLock è inclusa con Premium. Molte app funzionano anche su iPad. La pagina di ogni app elenca le sue piattaforme."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quali sono le migliori alternative alle app più diffuse piene di tracker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Parti da ciò che devi fare. Taskful Day è un pianificatore della giornata per {{ tf_devices }} che fa passare a oggi da solo le attività non fatte. GymLogger X è un diario di allenamento con i pesi, con un’app per Apple Watch e un’opzione a vita per Pro. Observa trasforma i tuoi dati di Salute in un punteggio di Prontezza quotidiano, con tutta l’analisi sul tuo dispositivo. AllPaid ti ricorda bollette e rinnovi dei contratti senza collegarsi alla tua banca. La pagina dei confronti mette ogni app accanto alle app che la maggior parte delle persone conosce."
+      }
+    }
+  ]
+}
+</script>
+
+{%- comment %} ===== The sheet: every app with an Italian page, in issue (first-release) order ===== {% endcomment -%}
+{%- assign st_keys = "" | split: "" -%}
+{%- for app in it_apps -%}
+  {%- capture st_k -%}{{ app.release.first_release | date: "%Y-%m-%d" }}|{{ app.slug }}{%- endcapture -%}
+  {%- assign st_keys = st_keys | push: st_k -%}
+{%- endfor -%}
+{%- assign st_keys = st_keys | sort -%}
+{%- assign sheet_apps = "" | split: "" -%}
+{%- assign series_trail = "" -%}
+{%- for k in st_keys -%}
+  {%- assign st_slug = k | split: "|" | last -%}
+  {%- assign st_app = it_apps | where: "slug", st_slug | first -%}
+  {%- assign sheet_apps = sheet_apps | push: st_app -%}
+  {%- include series.html app=st_app -%}
+  {%- assign series_trail = series_trail | append: "|" | append: series_key | append: "|" -%}
+{%- endfor -%}
+{%- assign series_trail = series_trail | append: "END" -%}
+{%- assign newest = sheet_apps | last -%}
+{%- assign series_keys = "health,plan,money,games,tools" | split: "," -%}
+
+<!-- ============================
+     THE ISSUE: sheet margin + the sheet of stamps
+     ============================ -->
+<section class="issue bleed" aria-labelledby="issue-title">
+  <div class="issue-selvedge">
+    <h1 id="issue-title">{{ site.data.catalog.meta.live_app_count }} app senza pubblicità per iPhone e Mac. Una sola persona le crea. Nessuna ti traccia.</h1>
+    <p class="issue-lede">Uno studio indipendente di app Apple, in Finlandia. Una sola persona progetta, sviluppa, decide i prezzi e risponde di ogni app di questo foglio. Nessuna ti mostra pubblicità, ti chiede di creare un account o ci invia i tuoi dati.</p>
+    <ul class="series-tabs" aria-label="Mostra una serie del foglio">
+      <li><a class="series-tab is-pressed" href="#apps" data-series="all"><i style="background:var(--ink)"></i>Tutto il foglio<b>{{ sheet_apps.size }}</b></a></li>
+      {%- for key in series_keys -%}
+        {%- capture needle -%}|{{ key }}|{%- endcapture -%}
+        {%- assign n = series_trail | split: needle | size | minus: 1 -%}
+      {%- if n > 0 %}
+      <li><a class="series-tab series-{{ key }}" href="#series-{{ key }}" data-series="{{ key }}"><i></i>{{ t.series[key] }}<b>{{ n }}</b></a></li>
+      {%- endif -%}
+      {%- endfor -%}
+    </ul>
+    <div class="issue-imprint" aria-hidden="true"><span>Foglio 2025-{{ site.time | date: "%Y" }}</span><span>Emesso in Finlandia</span></div>
+    <span class="issue-margin-note" aria-hidden="true">Lagerland Apps · nessun SDK pubblicitario · nessun IDFA · nessun account</span>
+  </div>
+
+  <div class="issue-sheet-wrap">
+    <ul class="sheet" aria-label="Le {{ sheet_apps.size }} app del foglio, in ordine di uscita">
+      {%- for app in sheet_apps -%}
+        {%- if app.slug == newest.slug -%}
+          {%- assign pm_date = app.release.first_release | date: "%d.%m.%y" -%}
+      <li>{% include stamp.html app=app index=forloop.index0 postmark=true postmark_date=pm_date eager=true %}</li>
+        {%- else -%}
+      <li>{% include stamp.html app=app index=forloop.index0 eager=true %}</li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+
+    {%- if newest -%}
+    {%- include tx-app.html app=newest -%}
+    {%- assign newest_shot = newest.screenshots[0].src | default: newest.screenshots[0] -%}
+    {%- assign sheet_cta = t.sheet_bar_cta | replace: "{name}", newest.name %}
+    <div class="sheet-bar" aria-live="polite" data-cta="{{ t.sheet_bar_cta | escape }}" data-released="{{ t.sheet_bar_released | escape }}">
+      {%- if newest_shot %}<img class="sheet-bar__shot" src="{{ newest_shot }}" alt="" width="60" height="120" loading="lazy" decoding="async">{% endif %}
+      <img class="sheet-bar__icon" src="/assets/icons/sm/{{ newest.slug }}.webp" alt="" width="46" height="46" decoding="async">
+      <div class="sheet-bar__text">
+        <span class="sheet-bar__name">{{ newest.name }}</span>
+        <span class="sheet-bar__tag">{{ tx_app.tagline }}</span>
+        <span class="sheet-bar__note">La più recente del foglio · uscita il {% include date.html date=newest.release.first_release %}</span>
+      </div>
+      <a class="btn btn-primary" href="{{ newest.app_store_url }}" rel="noopener">{{ sheet_cta }}</a>
+    </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<!-- ============================
+     SHEET NOTES: who makes this, in plain words (entity block for humans + LLMs)
+     ============================ -->
+{%- comment %} Weighted-average App Store rating across live apps (same computation as the English page). {% endcomment -%}
+{%- assign sum_w10 = 0 -%}
+{%- assign total_reviews = 0 -%}
+{%- for app in live_apps -%}
+  {%- assign rc = app.ratings.count | default: 0 | plus: 0 -%}
+  {%- if rc > 0 and app.ratings.value -%}
+    {%- assign rv10 = app.ratings.value | times: 10 | round: 0 -%}
+    {%- assign weighted = rv10 | times: rc -%}
+    {%- assign sum_w10 = sum_w10 | plus: weighted -%}
+    {%- assign total_reviews = total_reviews | plus: rc -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if total_reviews > 0 -%}
+  {%- assign avg10 = sum_w10 | divided_by: total_reviews -%}
+  {%- assign avg_int = avg10 | divided_by: 10 -%}
+  {%- assign avg_intx10 = avg_int | times: 10 -%}
+  {%- assign avg_dec = avg10 | minus: avg_intx10 -%}
+{%- endif -%}
+{%- assign avg_rating = avg10 | default: 0 | divided_by: 10.0 -%}
+
+<section id="about-strip" class="section section--notes reveal">
+  <div class="about-strip">
+    <div>
+      <h2 class="h2">Una sola persona dietro ogni app</h2>
+      <p>Lagerland Apps è uno sviluppatore in Finlandia che realizza <strong>{{ site.data.catalog.meta.live_app_count }} app attente alla privacy</strong> per iPhone, iPad, Apple Watch e Mac. La stessa persona progetta, programma e testa ognuna di esse e ne cura l’assistenza. Così chi legge la tua email su un bug è la stessa persona che lo risolve.</p>
+      <p>Senza investitori né entrate pubblicitarie, qui un’app guadagna solo quando sei tu a decidere che vale il suo prezzo. Per questo nessuna contiene un SDK pubblicitario o di analytics, richiede l’IDFA o ti obbliga a creare un account. I tuoi dati restano sul tuo dispositivo o nel tuo iCloud. Le poche app che vanno online si collegano direttamente al servizio che serve loro, come Wikipedia per WanderWiki o App Store Connect per gli strumenti per sviluppatori.</p>
+      <p>Le app coprono salute e allenamento, pianificazione della giornata, bollette, giochi da tavolo e di logica e strumenti per chi pubblica app su App Store. Ogni app fa una cosa sola.</p>
+      <p><a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}>Vedi che cosa dichiara ogni app sui tuoi dati{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> · <a href="{% include l.html url="/lagerland-apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Informazioni sullo studio{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a></p>
+    </div>
+    <dl class="tech" aria-label="Fatti sullo studio">
+      <dt>App del foglio</dt><dd>{{ site.data.catalog.meta.live_app_count }}, tutte disponibili su App Store</dd>
+      <dt>Dispositivi</dt><dd>iPhone, iPad, Apple Watch, Mac</dd>
+      <dt>SDK pubblicitari</dt><dd>Nessuno, in nessuna app</dd>
+      <dt>Tracciamento (IDFA)</dt><dd>Mai richiesto</dd>
+      <dt>Account</dt><dd>Nessuno da creare</dd>
+      <dt>I tuoi dati sui nostri server</dt><dd>Nessuno</dd>
+      {%- if total_reviews > 0 and avg_rating >= site.ratings_min_display %}
+      <dt>Valutazione su App Store</dt><dd>{{ avg_int }},{{ avg_dec }} di media su {{ total_reviews }} valutazioni</dd>
+      {%- endif %}
+      <dt>Realizzato in</dt><dd>Finlandia, UE · GDPR di default</dd>
+    </dl>
+  </div>
+</section>
+
+{%- comment %} Two real quotes from _data/testimonials.yml, shown as written (in English, lang="en"). {% endcomment -%}
+{%- assign q1 = site.data.testimonials.chessful | where: "author", "P." | first -%}
+{%- assign q2 = site.data.testimonials.observa | where: "author", "I.D." | first -%}
+{%- if q1 and q2 -%}
+<section class="section reveal" aria-labelledby="voices-title">
+  <h2 class="h2" id="voices-title">Che cosa cambia con una sola persona dietro le app</h2>
+  <div class="grid grid-2 stagger">
+    <figure class="card">
+      <blockquote class="card-text" lang="en">“{{ q1.quote }}”</blockquote>
+      <figcaption class="small">{{ q1.author }}, {{ q1.source }}, su <a href="{% include l.html url="/apps/chessful/" %}">Chessful</a> (citazione in inglese)</figcaption>
+    </figure>
+    <figure class="card">
+      <blockquote class="card-text" lang="en">“{{ q2.quote }}”</blockquote>
+      <figcaption class="small">{{ q2.author }}, {{ q2.source }}, su <a href="{% include l.html url="/apps/observa/" %}">Observa</a> (citazione in inglese)</figcaption>
+    </figure>
+  </div>
+</section>
+{%- endif -%}
+
+<!-- ============================
+     THE CATALOGUE: every series, with what each app does (SEO + intent)
+     ============================ -->
+<section id="apps" class="section--lg" aria-labelledby="apps-title">
+  <h2 class="h2 reveal" id="apps-title">Trova l’app che ti serve</h2>
+  <p class="lead reveal">Cinque serie di un solo sviluppatore. Ogni app fa una cosa sola, tiene i tuoi dati con te ed è pensata per trasmettere calma.</p>
+
+  {%- assign series_heads = "Salute, sonno e allenamento|Pianifica la giornata e leggi|Soldi e bollette|Giochi da tavolo e rompicapi di logica|Strumenti per chi pubblica su App Store, file e conti da dividere" | split: "|" -%}
+  {%- assign series_leads = "Sonno e recupero per chi lavora a turni, un punteggio di Prontezza quotidiano dai dati di Salute, diari di allenamento con i pesi e lo storico sanitario del tuo animale.|Un pianificatore della giornata in cui le attività non fatte passano a oggi, conti alla rovescia verso le date che aspetti, un blocco delle app che si sblocca muovendoti e Wikipedia, uno swipe alla volta.|Promemoria di bollette e contratti che non si collegano mai alla tua banca.|Scacchi, shogi e xiangqi con motori sul dispositivo che analizzano le tue partite, più due rompicapi di logica. Nessuno di questi giochi mostra pubblicità.|Strumenti per Mac e iPhone per le schede di App Store Connect, vendite e recensioni, screenshot per App Store e conversione di file sul tuo dispositivo, più un’app per dividere il conto che legge lo scontrino e dice a ciascuno quanto deve." | split: "|" -%}
+  {%- for key in series_keys -%}
+  {%- capture needle -%}|{{ key }}|{%- endcapture -%}
+  {%- assign n = series_trail | split: needle | size | minus: 1 -%}
+  {%- if n > 0 %}
+  <div class="series-block series-{{ key }} reveal" id="series-{{ key }}">
+    <div class="series-block__head">
+      <span class="series-swatch" aria-hidden="true"></span>
+      <h3>{{ series_heads[forloop.index0] }}</h3>
+      <p>{{ series_leads[forloop.index0] }}</p>
+    </div>
+    <ul class="series-list">
+      {%- for app in sheet_apps -%}
+        {%- include series.html app=app -%}
+        {%- if series_key == key -%}
+          {%- include tx-app.html app=app -%}
+          {%- include app-facts.html app=app text=tx_app -%}
+          {%- if f_app_free == false and f_app_price != "" -%}{%- assign row_denom = t.price_one_time -%}
+          {%- elsif f_has_plans -%}{%- assign row_denom = t.denom_free_pro -%}
+          {%- else -%}{%- assign row_denom = t.price_free -%}{%- endif -%}
+          {%- assign row_plat = f_platforms | join: " · " | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Watch" -%}
+      <li><a class="series-row" href="{{ tx_app.url }}">
+        <span class="mini-stamp" aria-hidden="true"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/{{ app.slug }}.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span><span class="series-row__name">{{ app.name }}</span>
+          <span class="series-row__desc">{% if tx_app.seo and tx_app.seo.description %}{% include app-text.html app=app text=tx_app.seo.description %}{% else %}{{ tx_app.tagline }}{% endif %}</span></span>
+        <span class="series-row__meta"><strong>{{ row_denom }}</strong>{{ row_plat }}</span>
+      </a></li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endif -%}
+  {%- endfor -%}
+</section>
+
+<!-- ============================
+     COMPARED-TO: surface /alternatives/ pages from the home page
+     (Italian comparisons do not exist yet: the count is the English one and the links fall back to English)
+     ============================ -->
+<section class="section reveal" aria-labelledby="compare-title">
+  {%- assign comparison_count = site.pages | where: "lang", "en" | where_exp: "p", "p.url contains '/alternatives/'" | size | minus: 1 -%}
+  <h2 class="h2" id="compare-title">Confronti con le app che conosci</h2>
+  <p class="lead">{{ comparison_count }} confronti affiancati con le app che la maggior parte delle persone sta lasciando, compresi i casi in cui l’altra app è la scelta migliore. Eccone quattro; gli altri sono nella pagina dei confronti.</p>
+  <div class="pairs stagger">
+    {%- assign pa = site.apps | where: "slug", "gymlogger-x" | first -%}{%- include series.html app=pa -%}
+    <a class="pair series-{{ series_key }}" href="{% include l.html url="/alternatives/strong-workout-app/" %}"{% if l_en %} hreflang="en"{% endif %}>
+      <span class="pair__stamps" aria-hidden="true">
+        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/gymlogger-x.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span class="pair__vs">{{ t.alt_vs }}</span>
+        <span class="blank-stamp"><span>Strong</span></span>
+      </span>
+      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> Strong</span>
+      <span class="card-text">Registrazione rapida delle serie su iPhone e Apple Watch, senza account, e analisi Pro che segnalano plateau e affaticamento a partire dai tuoi allenamenti registrati, con un’opzione a vita.</span>
+      <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
+    </a>
+    {%- assign pa = site.apps | where: "slug", "taskful-day" | first -%}{%- include series.html app=pa -%}
+    <a class="pair series-{{ series_key }}" href="{% include l.html url="/alternatives/streaks-app/" %}"{% if l_en %} hreflang="en"{% endif %}>
+      <span class="pair__stamps" aria-hidden="true">
+        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/taskful-day.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span class="pair__vs">{{ t.alt_vs }}</span>
+        <span class="blank-stamp"><span>Streaks</span></span>
+      </span>
+      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> Streaks</span>
+      <span class="card-text">Un pianificatore della giornata in cui le attività non fatte passano a oggi da sole e la serie di giorni consecutivi è solo una statistica tra le altre, su {{ tf_devices }}.</span>
+      <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
+    </a>
+    {%- assign pa = site.apps | where: "slug", "observa" | first -%}{%- include series.html app=pa -%}
+    <a class="pair series-{{ series_key }}" href="{% include l.html url="/alternatives/autosleep/" %}"{% if l_en %} hreflang="en"{% endif %}>
+      <span class="pair__stamps" aria-hidden="true">
+        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/observa.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span class="pair__vs">{{ t.alt_vs }}</span>
+        <span class="blank-stamp"><span>AutoSleep</span></span>
+      </span>
+      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> AutoSleep</span>
+      <span class="card-text">Observa interpreta i dati su sonno, HRV e recupero che hai già in Salute. Non sostituisce un tracker del sonno.</span>
+      <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
+    </a>
+    {%- assign pa = site.apps | where: "slug", "appmeta" | first -%}{%- include series.html app=pa -%}
+    <a class="pair series-{{ series_key }}" href="{% include l.html url="/alternatives/app-store-connect-web/" %}"{% if l_en %} hreflang="en"{% endif %}>
+      <span class="pair__stamps" aria-hidden="true">
+        <span class="mini-stamp"><span class="mini-stamp__paper"><span class="mini-stamp__field"><img src="/assets/icons/sm/appmeta.webp" alt="" width="56" height="56" loading="lazy" decoding="async"></span></span></span>
+        <span class="pair__vs">{{ t.alt_vs }}</span>
+        <span class="blank-stamp"><span>App Store Connect (web)</span></span>
+      </span>
+      <span class="pair__text"><span class="pair__title">{{ pa.name }} <span class="pair-row__vs">{{ t.alt_vs }}</span> App Store Connect (web)</span>
+      <span class="card-text">Un’app Mac nativa per App Store Connect: tutte le localizzazioni in una sola finestra, un confronto campo per campo prima di pubblicare e la tua chiave API custodita nel Portachiavi del Mac.</span>
+      <span class="pair__go">{{ t.alt_read }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</span></span>
+    </a>
+  </div>
+  <div class="actions">
+    <a class="btn btn-secondary" href="{% include l.html url="/alternatives/" %}"{% if l_en %} hreflang="en"{% endif %}>Vedi tutti i {{ comparison_count }} confronti{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>
+
+<!-- ============================
+     JOURNAL PREVIEW: Italian posts only (renders nothing until one exists)
+     ============================ -->
+{%- assign latest_posts = site.pages | where: "lang", "it" | where: "layout", "journal" | sort: "date" | reverse | slice: 0, 2 -%}
+{%- if latest_posts.size > 0 -%}
+<section class="section reveal" aria-labelledby="journal-title">
+  <h2 class="h2" id="journal-title">Dal blog</h2>
+  <p class="lead">Note di rilascio, ragionamenti di design e guide pratiche, scritte da chi sviluppa le app.</p>
+  <div class="covers stagger">
+    {%- for post in latest_posts -%}
+      {%- assign pm = post.date | date: "%d.%m.%y" -%}
+      <a class="cover" href="{{ post.url }}">
+        {% include postmark.html date=pm label="BLOG" %}
+        <time class="cover__date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include date.html date=post.date %}</time>
+        <h3 class="cover__title">{{ post.title }}</h3>
+        {%- if post.lede -%}
+          <p class="card-text">{{ post.lede | strip_html | truncate: 180 }}</p>
+        {%- endif -%}
+        <span class="pair__go">Leggi l’articolo</span>
+      </a>
+    {%- endfor -%}
+  </div>
+  <div class="actions">
+    <a class="btn btn-secondary" href="{% include l.html url="/journal/" %}"{% if l_en %} hreflang="en"{% endif %}>Sfoglia il blog{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>
+{%- endif -%}
+
+<!-- ============================
+     TRANSPARENCY TABLE: the evidence for the claim
+     ============================ -->
+<section class="section reveal" aria-labelledby="transparency-title">
+  <h2 class="h2" id="transparency-title">La trasparenza in sintesi</h2>
+  <p class="lead">Che cosa significa “nessun tracciamento” in pratica, per un campione di app, in base al privacy manifest e al codice di ciascuna.</p>
+
+  {%- comment %} Rows come from _data/transparency.yml (facts) and, once it exists, _data/i18n_transparency/it.yml (words),
+    the same data that drives /transparency/. Until then the analytics cell is derived from the English value. {% endcomment -%}
+  {%- assign sample_slugs = "observa,taskful-day,gymlogger-x,allpaid,mediakit,appmeta" | split: "," -%}
+  <div class="transparency-table-wrap">
+    <table class="transparency-table">
+      <thead>
+        <tr>
+          <th scope="col">App</th>
+          <th scope="col">Domini di tracciamento</th>
+          <th scope="col">SDK di terze parti</th>
+          <th scope="col">Account richiesto</th>
+          <th scope="col">Analytics</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for s in sample_slugs -%}
+          {%- assign row = site.data.transparency.apps | where: "slug", s | first -%}
+          {%- assign app = site.apps | where: "slug", s | first -%}
+          {%- assign row_an = site.data.i18n_transparency.it.apps[s].analytics -%}
+          {%- if row and app -%}
+        <tr>
+          <th scope="row"><a href="{% include l.html url=app.url %}"{% if l_en %} hreflang="en"{% endif %}>{{ app.name }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a></th>
+          <td>{{ row.tracking_domains | default: 0 }}</td>
+          <td>{% if row.third_party_sdks == 0 %}Nessuno{% else %}{{ row.third_party_sdks }}: {{ row.third_party_sdks_list | map: "name" | join: ", " }}{% endif %}</td>
+          <td>{% if row.account_required == false %}{{ t.word_no }}{% else %}Nessun account Lagerland, solo la tua chiave API di App&nbsp;Store&nbsp;Connect{% endif %}</td>
+          <td>{% if row_an %}{{ row_an }}{% elsif row.analytics == "None." %}Nessuno.{% else %}Nessuno. Nessun SDK di analytics e non viene inviato nulla.{% endif %}</td>
+        </tr>
+          {%- endif -%}
+        {%- endfor -%}
+      </tbody>
+    </table>
+  </div>
+  <p class="small transparency-footnote">
+    Questo è un campione. Nessuna app del catalogo richiede l’IDFA né include un SDK pubblicitario. <a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}><strong>Vedi i dati del privacy manifest di tutte le {{ site.data.catalog.meta.live_app_count }} app →</strong>{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </p>
+</section>
+
+<!-- ============================
+     FAQ: homepage (questions match the FAQPage JSON-LD above)
+     ============================ -->
+<section id="faq" class="section reveal" aria-labelledby="faq-title">
+  <h2 class="h2" id="faq-title">{{ t.faq_heading }}</h2>
+  <div class="faq">
+    <details class="faq-item" open>
+      <summary>Chi c’è dietro Lagerland Apps?</summary>
+      <div class="faq-a">Lagerland Apps è uno studio indipendente di app Apple di una sola persona, in Finlandia, che pubblica app per iPhone, iPad, Apple Watch e Mac dal 2025. Un solo sviluppatore progetta e programma ogni app e ne cura l’assistenza. Non ci sono investitori, inserzionisti né broker di dati, e lo studio lavora secondo il diritto dell’UE, con il GDPR come regola di base.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Le app di Lagerland mi tracciano o raccolgono dati personali?</summary>
+      <div class="faq-a">No. Nessuna app richiede l’identificativo per gli inserzionisti (IDFA) né contiene un SDK pubblicitario o di analytics, e nessuna invia i tuoi dati a un server gestito dallo studio. I tuoi dati restano sul tuo dispositivo e le app che sincronizzano usano il tuo iCloud. Alcune app vanno online per il lavoro che fanno: WanderWiki carica gli articoli da Wikipedia e gli strumenti per sviluppatori comunicano con App Store Connect e, se aggiungi una tua chiave, con il provider di IA che scegli. Si collegano direttamente a quel servizio. La <a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}>pagina sulla trasparenza{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> elenca che cosa dichiara ogni app.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Servono un account o un login per usare le app?</summary>
+      <div class="faq-a">No. Nessuna app ti chiede di creare un account o di registrarti con un indirizzo email. La scarichi e inizi. Gli strumenti per sviluppatori (AppMeta, AppMeta Pulse e il caricamento di Mockly) si collegano al tuo account App Store Connect con una chiave API che crei presso Apple.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Come guadagna Lagerland Apps senza pubblicità?</summary>
+      <div class="faq-a">Le app le paga chi le usa. La maggior parte si scarica gratis, con un upgrade a pagamento facoltativo, venduto come abbonamento, come acquisto unico o in entrambi i modi. Mockly è l’unica app che si paga al momento del download. Nessun inserzionista paga niente.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Le app funzionano su iPhone, iPad e Mac?</summary>
+      <div class="faq-a">Quasi tutte le app funzionano su iPhone, mentre AppMeta e Mockly sono app per Mac. AllPaid, AppMeta Pulse, Chessful, Shogiful, Xiangqiful, Taskful Day e MediaKit funzionano anche su Mac. GymLogger X, Observa e Taskful Day hanno un’app per Apple Watch, e quella di EarnLock è inclusa con Premium. Molte app funzionano anche su iPad. La pagina di ogni app elenca le sue piattaforme.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Quali sono le migliori alternative alle app più diffuse piene di tracker?</summary>
+      <div class="faq-a">Parti da ciò che devi fare. <a href="{% include l.html url="/apps/taskful-day/" %}"{% if l_en %} hreflang="en"{% endif %}>Taskful Day{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> è un pianificatore della giornata per {{ tf_devices }} che fa passare a oggi da solo le attività non fatte. <a href="{% include l.html url="/apps/gymlogger-x/" %}"{% if l_en %} hreflang="en"{% endif %}>GymLogger X{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> è un diario di allenamento con i pesi, con un’app per Apple Watch e un’opzione a vita per Pro. <a href="{% include l.html url="/apps/observa/" %}"{% if l_en %} hreflang="en"{% endif %}>Observa{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> trasforma i tuoi dati di Salute in un punteggio di Prontezza quotidiano, con tutta l’analisi sul tuo dispositivo. <a href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> ti ricorda bollette e rinnovi dei contratti senza collegarsi alla tua banca. La <a href="{% include l.html url="/alternatives/" %}"{% if l_en %} hreflang="en"{% endif %}>pagina dei confronti{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> mette ogni app accanto alle app che la maggior parte delle persone conosce.</div>
+    </details>
+  </div>
+</section>
+
+<!-- ============================
+     CLOSE: the sheet's bottom margin
+     ============================ -->
+<section class="cta-section">
+  <h2 class="h2">Scegli un’app dal foglio e tieni i tuoi dati dove sono.</h2>
+  <p class="lead">La pagina di ogni app mostra che cosa è gratis, quanto costa l’upgrade e che cosa fa l’app con i tuoi dati, prima che tu tocchi Ottieni.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="#issue-title">Torna al foglio</a>
+    <a class="btn btn-secondary" href="mailto:support@lagerland.app">Scrivi a chi le ha create</a>
+  </div>
+</section>
