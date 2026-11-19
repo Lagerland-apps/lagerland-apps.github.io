@@ -1,3 +1,5 @@
+> Note (2026-11-19, after review): where a note below gives "Apple pt-PT" names from memory, `pt-apple-terms.md` (verified on Apple Portugal's pages) wins: «Partilha com a família», «ecrã bloqueado», «ecrã principal», «Definições», «Assinaturas» (menu label).
+
 # European Portuguese glossary per app (pt-PT, Portugal)
 
 Part of the language sheet `_i18n/pt.md`. Extracted 2026-11-19 from each app's string catalogs (read-only, locale `pt-PT`; every catalog also carries `pt-BR`, ignored) and its Portuguese App Store listing (apps.apple.com/pt and the iTunes lookup API, country=pt). UI strings are verbatim: use them on the site exactly, except where a note flags them as defective (Brazilian vocabulary, missing accents, English left in). Store prices are reference only: the site prints prices from the catalog.
@@ -373,7 +375,7 @@ App: **Premium** ("Chessful Premium", "Atualizar para Premium", "Premium. Abre o
 | Screen | ecrã (all five), never "tela" | consistent |
 | Phone | telemóvel (AfterShift, AllPaid store); "dispositivo" in Pulse | no "celular" anywhere |
 | Apple ID | "ID Apple" (AllPaid, Chessful) / "Apple ID" (Chessful, AfterShift "teu Apple ID") | pick "Apple ID" for the site |
-| Family Sharing | Partilha com a tua família (AfterShift), Partilha com Família (AllPaid) | Apple's pt-PT term is "Partilha em Família" |
+| Family Sharing | Partilha com a tua família (AfterShift), Partilha com Família (AllPaid) | Apple Portugal's term is «Partilha com a família» (pt-apple-terms.md) |
 | Formality | tu (AfterShift, Chessful lessons), formal (AllPaid, AppMeta, Pulse), mixed (Chessful UI) | decide once; see Register verdict |
 | App | "app" (AfterShift, AllPaid, Pulse, Chessful), "aplicação" 116 + "app" 157 (AppMeta) | "app" |
 
@@ -436,8 +438,8 @@ Register (detail): of 829 strings, **about 187 are tu** (112 have a tu pronoun o
 Wording flags:
 - Settings is `Definições` (6 strings) but `Ajustes` in 5 (`Ajustes → Tempo de ecrã → EarnLock`, `Atualiza o iOS em Ajustes → Geral → Atualização de Software`, `… nos Ajustes`): Brazilian / Spanish iOS word inside a pt-PT app.
 - Goal is `objetivo` (41 strings) and `meta` (11: `Meta diária, últimos 14 dias`, `A sua meta sobe 3%% …`). Pick one for the site (the English page says "goal").
-- Family Sharing is `Partilha com a família` and `grupo Família Apple`; Apple's pt-PT name is `Partilha em Família` (MediaKit and GymLogger X use it).
-- Lock Screen widget title is `EarnLock — Ecrã Bloqueado` (calque of "locked screen"; Apple pt-PT: `Ecrã de Bloqueio`).
+- Family Sharing is `Partilha com a família` and `grupo Família Apple`; Apple Portugal's name is `Partilha com a família` (pt-apple-terms.md, verified); MediaKit and GymLogger X write `Partilha em Família`.
+- Lock Screen widget title is `EarnLock — Ecrã Bloqueado` (Apple Portugal writes `ecrã bloqueado`, lowercase in prose: pt-apple-terms.md).
 - Apple Health is `Apple Saúde` (12 strings) and `app Saúde` (4): mixed; Apple's app is `Saúde`.
 - `fototeca` (permission text) is not Apple's pt-PT word (`Fotografias`, "biblioteca de fotografias").
 - English left in: `cooldown` (`saltar o cooldown de 24 h`, while another string says `Saltar tempo de espera`), `Shadow Mode` in one error string (`Não foi possível seguir o Shadow Mode`), `upgrade` (`fazer upgrade`, 4 strings).
@@ -585,7 +587,7 @@ Defects (app-side; do not copy these into the site):
 | Import a coach's spreadsheet program | `import_program`; `import_from_spreadsheets` | `Importar programa`; `Planilhas (CSV)` | `Planilhas` is Brazilian (pt-PT `Folhas de cálculo`). |
 | Apple Health export | `health_saved_to_health` | `Salvo no Apple Health` | `Apple Health` (English, 11 strings) in the app; the InfoPlist says `Apple Saúde`. `Salvo` is Brazilian (pt-PT `Guardado`). |
 | Start workout | `start_workout` | `Iniciar treino` |  |
-| Family Sharing | `paywall_family_sharing_title` | `Inclui Partilha em Família` | `Partilha em Família` (this one is pt-PT, from the 186-string overlay). pt-BR would be: `Inclui Compartilhamento Familiar`. |
+| Family Sharing | `paywall_family_sharing_title` | `Inclui Partilha em Família` | `Partilha em Família` (from the 186-string European overlay; Apple Portugal writes `Partilha com a família`). pt-BR would be: `Inclui Compartilhamento Familiar`. |
 | iCloud sync | `icloud_sync` | `Sincronização iCloud` |  |
 | Paywall wording (Pro) | `paywall_cta_start_trial`; `paywall_cta_yearly`; `paywall_headline`; `paywall_lifetime_description`; `paywall_no_subscription` | `Teste grátis`; `Continuar com anual`; `Treine com clareza, não por tentativa.`; `Pague uma vez, seu para sempre. Sem renovação.`; `Sem assinatura` | Brazilian register (`Treine`, `Pague`, `seu`, `assinatura`). The whole paywall is pt-BR text. |
 | Tier wording: subscription | `subscription_active`; `manage_subscription` | `Assinatura ativa`; `Gerenciar assinatura` | Brazilian (`assinatura`, `gerenciar`); pt-PT `Subscrição` / `Gerir subscrição` appears in only 4 strings. |
@@ -672,7 +674,7 @@ Wording flags:
 | Streak | `Streak` | `Sequência` |  |
 | Export (JSON / CSV) | `Export Data (CSV)`; `Export Data (JSON)` | `Exportar dados (CSV)`; `Exportar dados (JSON)` |  |
 | Apple Health | `Apple Health` | `Apple Saúde` | `Apple Saúde` and `da Apple Saúde` in the permission texts; `Guarda … na Apple Saúde` (feminine). |
-| Family Sharing | `Family Sharing` | `Partilha com a Família` | `Partilha com a Família`; Apple pt-PT: `Partilha em Família`. |
+| Family Sharing | `Family Sharing` | `Partilha com a Família` | `Partilha com a Família`; Apple Portugal: `Partilha com a família` (pt-apple-terms.md). |
 | Warm-up set | `Warm-up set %lld` | `Série de aquecimento %lld` |  |
 | Siri & Shortcuts | `Siri & Shortcuts` | `Siri e Atalhos` | `Siri e Atalhos`. |
 | Support | `Support`; `Funds 3 months of dev` | `Apoiar`; `Financia 3 meses de desenvolvimento` | `Apoiar`. |
@@ -891,7 +893,7 @@ Millrace has no paid tier or subscription: it is free with optional purchases. I
 | Apple Health | "Apple Saúde" (EarnLock, LiftLog, GymLogger X permission prompts), "app Saúde" (EarnLock, 4), "Apple Health" (GymLogger X in-app, 11) |
 | Screen Time | "Tempo de ecrã" (EarnLock, 21 strings, no "tela") |
 | Family Sharing | "Partilha em Família" (MediaKit, GymLogger X), "Partilha com a família" (EarnLock), "Partilha com a Família" (LiftLog); Apple pt-PT name is "Partilha em Família" |
-| Lock Screen | "Ecrã Bloqueado" (EarnLock widget title); Apple pt-PT "Ecrã de Bloqueio" |
+| Lock Screen | "Ecrã Bloqueado" (EarnLock widget title); Apple Portugal «ecrã bloqueado» (pt-apple-terms.md) |
 | Siri & Shortcuts | "Siri e Atalhos" (LiftLog), "Atalhos e Siri" (MediaKit): word order differs |
 | Photo Library | "fototeca" in EarnLock and MediaKit permission prompts |
 | App | "app" / "apps" feminine (EarnLock "uma app bloqueada", LiftLog "a mesma app"), 83 / 9 / 21 strings; "aplicação" only in LiftLog (1), Millrace (1: `Reiniciar a aplicação`), GymLogger X (9, plus "aplicativo" 2); none in MediaKit |
@@ -1123,7 +1125,7 @@ Flags
 | Best value | `Best Value` / `Best value` | Melhor valor | O9 |
 | No subscription line | `onboarding_paywall_lifetime_disclosure` | Compra única. Sem subscrição. | pt-PT "subscrição" (store IAP uses "compra única") |
 | Cancel anytime | `Cancel anytime.` | Cancele a qualquer momento. | formal |
-| Family Sharing | `One subscription covers your whole Family Sharing group.` | Uma subscrição cobre todo o teu grupo da Partilha com a Família. | tu; Apple's pt-PT term is "Partilha em Família" (F5) |
+| Family Sharing | `One subscription covers your whole Family Sharing group.` | Uma subscrição cobre todo o teu grupo da Partilha com a Família. | tu; Apple Portugal's term is «Partilha com a família» (pt-apple-terms.md) (F5) |
 | Menstrual cycle | `Cycle Context` / `Menstrual Cycle` | Contexto do ciclo / Ciclo menstrual | the English site page does not cover cycle tracking |
 
 Paid tier names as the Portuguese UI shows them: **Premium**, labels **Mensal / Anual / Vitalício**, "Melhor valor", "Desbloquear Premium", "Atualizar para Premium", "Restaurar compras", "Iniciar teste gratuito", "Compra única. Sem subscrição.", "Cancele a qualquer momento." The store IAP names are "Premium mensal", "Premium anual", "Premium compra única" (UI says "Vitalício") and the tip "Apoiar o programador". A week of full access is given first (`onboarding_paywall_free_trial_badge` "7 dias grátis").
@@ -1412,7 +1414,7 @@ Paid tier names as the Portuguese UI shows them: **Shogiful Premium** with plans
 | Save | "Guardar" (all four); "Salvar" (13 in Shogiful, Brazilian) |
 | Delete | "Eliminar" (all four); "Excluir" (1 in Shogiful, Mockly) |
 | Share | "Partilhar" (all four); "compartilh-" (1 in Shogiful) |
-| Family Sharing | "Partilha com a Família" (Observa), "Partilha entre Familiares" (Shogiful); Apple pt-PT: "Partilha em Família" |
+| Family Sharing | "Partilha com a Família" (Observa), "Partilha entre Familiares" (Shogiful); Apple Portugal: «Partilha com a família» (pt-apple-terms.md) |
 | Tip | "Gorjeta" (RightSplit, Shogiful tip purchases are "Apoiador / Apoio enorme / Um café" and Observa "Apoiar o programador") |
 | Apple Health | "Apple Health" (Observa UI); "Apple Saúde" in the HealthKit permission text |
 | Coach | "Treinador" (Shogiful, Observa); "Coach" in Observa's store subtitle |
@@ -1908,7 +1910,7 @@ Not live: https://apps.apple.com/pt/app/id6829498729 returned HTTP 404 on 2026-1
 - Countdown = Contagem decrescente; Moment = Momento; Memory = Memória; On This Day = Neste Dia (Soon.) / Hoje na história (WanderWiki).
 - Hint = Dica (Tare, Xiangqiful; Spanish "Pista"); Level = Nível; Chapter = Capítulo; Beam = Haste; Pin = Fixar (Soon.) / Afixar (Clippet).
 - Add = Adicionar; Save = Guardar; Share = Partilhar; Search = Pesquisar; File = Ficheiro; Phone = telemóvel; app = app (Clippet store text "aplicação").
-- Lock Screen = Ecrã de Bloqueio (preferred; Soon. also writes "ecrã bloqueado"); Home Screen = Ecrã Principal / ecrã inicial; menu bar = barra de menus; Quick Look = Vista rápida; photo library = fototeca; widget = widget; App Lock = Bloqueio da app; backup = cópia de segurança.
+- Lock Screen = ecrã bloqueado (Apple Portugal, pt-apple-terms.md; Soon. also writes "Ecrã de Bloqueio"); Home Screen = Ecrã Principal / ecrã inicial; menu bar = barra de menus; Quick Look = Vista rápida; photo library = fototeca; widget = widget; App Lock = Bloqueio da app; backup = cópia de segurança.
 - Free-text register: tu in Soon. (main app, permission prompts, store text) and Clippet (everything); formal in Tare, Taskful Day, WanderWiki, Xiangqiful; mixed in Soon.'s widgets and Taskful Day's insights.
 
 ### Flags (app-side string bugs, register mixes, missing Portuguese)

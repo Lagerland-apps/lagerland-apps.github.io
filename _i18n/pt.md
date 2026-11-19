@@ -9,7 +9,7 @@ reviewing any Portuguese page. Every decision a translator would otherwise make 
 |---|---|
 | Setup (config default, locales.yml block, `_data/i18n/pt.yml`, sitemap and feed stubs) | done 2026-11-19 (pt.yml written by one agent, reviewed and copy-edited by another: 38 values changed) |
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console for Portugal not read (Claude in Chrome not connected, built-in browser not signed in, no export on disk) |
-| Tier 1 pages | not started |
+| Tier 1 pages | written and reviewed 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/pt.yml`). AI files and OG cards in batch 6 |
 | Live | no (`live: false`) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 72 s before Portuguese (main at the setup, 689 HTML files, 2026-11-19, other sessions' agents running) |
@@ -187,6 +187,33 @@ Search Console for Portugal: not read in this session. Revisit 4 to 6 weeks afte
 | Xiangqiful | `xadrez chinês` (title carries «xiangqi» too: «xadrez chinês» also means Chinese checkers) | `xiangqi`, `xadrez chinês como jogar`, `xadrez chinês regras` |
 | Clippet (unreleased, unlisted) | `histórico área de transferência iphone` | `histórico área de transferência mac`, `como ver a área de transferência no mac`, `copiar e colar iphone mac` |
 
+## Decisions from the Tier 1 reviews (2026-11-19)
+
+- App names take the masculine article on every page and in the interface strings («o Observa», «do Pawza», «ao
+  Tare»; pt.yml strings with {name} carry it too).
+- Tracking: «seguimento» as the noun, «seguir a sua atividade» as the verb phrase (Apple Portugal); never «rastreio»,
+  «rastreamento», «rastreadores», never «fazer seguimento».
+- «Wikipédia» in Portuguese prose (the app, the Portuguese store listing and the Portuguese edition write it so);
+  «Wikipedia (oficial)» only as the competitor app's name; URLs unchanged.
+- Mistake cards on Chessful, Shogiful and Xiangqiful: «cartão»; «ficha» only for an App Store listing.
+- Bills (AllPaid): «contas a pagar» where «conta» could mean an account; tip: «gorjeta».
+- Support pages: one title pattern «<App>: suporte e contacto». Privacy pages: «Privacidade do <App>: sem seguimento
+  nem conta» (Tare: «sem recolha de dados nem conta»; Mockly adds «anúncios»).
+- The advertising clause mirrors the English ambiguity, as in Spanish: «não vende, não partilha nem utiliza … para
+  fins publicitários».
+- «App Store de Portugal» where the English says "Prices in USD" (footnotes, price FAQs).
+- Founder lines: «Programador Apple independente · Estúdio de uma só pessoa desde 2025 · Finlândia» (English order).
+- GymLogger X counts as available in Portuguese (owner, 2026-11-19); Mockly never does.
+- Open, for a native reader: the gender of Apple Intelligence (the apps' catalogs write both; the site writes «a Apple
+  Intelligence»); «o ecrã de bloqueio (shield)» for EarnLock's shield; trial phrase «teste grátis».
+- Legal terms for a Portuguese lawyer: «tratar/tratamento», «recolher conscientemente», «Ao efetuar uma compra, o
+  utilizador aceita que possamos responder…» (consent by purchase), «responsável» (controller), «Provedor de Proteção
+  de Dados da Finlândia» (working name), «crianças com menos de 13 anos» (Portugal's digital-consent age is 13, Lei
+  58/2019), «dados pessoais sensíveis» (GDPR: «categorias especiais de dados pessoais»), «data de entrada em vigor»,
+  and in Clippet's terms «tal como está» / «conforme disponível», «comerciabilidade», «adequação a um fim específico»,
+  «danos indiretos, acidentais, especiais, consequenciais ou punitivos», «normas de conflitos de leis», «leis
+  imperativas de defesa do consumidor», «alterações substanciais».
+
 ## Local competitors (for Tier 3)
 
 Not researched yet. Candidates seen in the iTunes Search API results during keyword research are listed in
@@ -210,6 +237,16 @@ trocar»); pre-AO90 «revêem», «lêem», «vêem» (AO90: reveem, leem, veem)
 «porta-chaves»); «obriga a» for "asks you to" (strengthens the claim); «dar o suporte» («dar apoio»); «segue a
 atividade» with no owner (Apple Portugal: «seguir a sua atividade»); «ficha» for a card («cartão»; «ficha» is the App
 Store listing).
+From the privacy and batch 5 reviews: «opera servidores» («tem servidores»); passives that drop the user as agent («se
+forem utilizadas», «a menos que seja traduzido»: name «o utilizador»); «a nível do dispositivo»; «preferimos que aprove»
+for "would prefer" (conditional: «preferiríamos que aprovasse»); trailing gerunds («analisando… oferecendo»); «dos
+mesmos» as a stiff pronoun; «faz seguimento de quem a usa» («segue a sua atividade»); «rastreio», «rastreadores»
+(Brazilian: «seguimento»); «em local» («localmente»); «liga um SDK» («integra»); «nem … ou» mixed in one negated list;
+«exige» for "asks you to"; «tomas de cafeína» (medicine word: «consumos»); «desenho da app» («conceção»).
+Privacy pages standard lines: «tratar/tratamento», «recolher», «conscientemente», «dados pessoais», «crianças com
+menos de 13 anos», «não se dirige a» (directed at) / «não se destina a» (intended for), «que opções o utilizador tem»,
+«Ao efetuar uma compra, o utilizador aceita que possamos responder…», «A Apple toma a decisão final sobre cada
+reembolso.», «data de entrada em vigor», «framework» feminine.
 
 Translationese: title case headings; gerund chains copied from English -ing («oferecendo», «permitindo»); passive
 «é … por» where Portuguese uses «se»; possessives on body parts and devices copied from English; «utilizador»
@@ -232,7 +269,12 @@ register); «você» or tu forms slipping in; clitic placement copied from Brazi
 
 | Pages | Writer | Reviewer | Back-translation | Native |
 |---|---|---|---|---|
-| `_data/i18n/pt.yml` (323 strings) | 1 writer | 1 reviewer (copy-editing skill, fact diff, glossary): 38 changed | n/a | no native review yet |
+| `_data/i18n/pt.yml` (323 strings) | 1 writer | 1 reviewer (copy-editing skill, fact diff, glossary): 38 changed; later 38 strings given the masculine article, 2 support keyword stems widened | n/a | no native review yet |
+| /pt/, /pt/apps/ | 2 writers | 1 reviewer (24 fixes) | home: 8 meaning shifts fixed | no native review yet |
+| 21 app pages | 21 writers | 4 reviewers (3 to 6 pages each), then one fixer for the who_for/who_not_for bullets on 8 pages | all 21: meaning shifts fixed on 14 pages (dropped "exact", "signed in", "your own key", "about", softened "scraped", added sentences), none on 7 | no native review yet |
+| 21 support pages | 7 writers | 1 reviewer: every description rewritten to promise only topics the page shows | n/a | no native review yet |
+| 21 privacy policies + Clippet terms | 6 writers | 4 reviewers, sentence by sentence: about 12 meaning fixes (contact vs contacts, HealthKit "transmitted", Apple IDs, plain marker, warranties, "would prefer", "was available") | n/a | no native review yet |
+| about, support hub, transparency | 3 writers | 1 reviewer | about: 3 meaning shifts fixed | no native review yet |
 
 Points for a native reader: the trial phrase «teste grátis» (Apple's support pages say «período experimental»);
 «segue a sua atividade» for "tracks you"; «Direitos do utilizador» as the privacy heading; «é para si?»; category

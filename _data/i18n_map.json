@@ -207,7 +207,8 @@
     "en": "/apps/aftershift/",
     "es": "/es/apps/aftershift/",
     "fr": "/fr/apps/aftershift/",
-    "it": "/it/apps/aftershift/"
+    "it": "/it/apps/aftershift/",
+    "pt": "/pt/apps/aftershift/"
   },
   "/apps/aftershift/privacy/": {
     "de": "/de/apps/aftershift/privacy/",
@@ -228,7 +229,8 @@
     "en": "/apps/allpaid/",
     "es": "/es/apps/allpaid/",
     "fr": "/fr/apps/allpaid/",
-    "it": "/it/apps/allpaid/"
+    "it": "/it/apps/allpaid/",
+    "pt": "/pt/apps/allpaid/"
   },
   "/apps/allpaid/privacy/": {
     "de": "/de/apps/allpaid/privacy/",
@@ -249,7 +251,8 @@
     "en": "/apps/appmeta-pulse/",
     "es": "/es/apps/appmeta-pulse/",
     "fr": "/fr/apps/appmeta-pulse/",
-    "it": "/it/apps/appmeta-pulse/"
+    "it": "/it/apps/appmeta-pulse/",
+    "pt": "/pt/apps/appmeta-pulse/"
   },
   "/apps/appmeta-pulse/privacy/": {
     "de": "/de/apps/appmeta-pulse/privacy/",
@@ -270,7 +273,8 @@
     "en": "/apps/appmeta/",
     "es": "/es/apps/appmeta/",
     "fr": "/fr/apps/appmeta/",
-    "it": "/it/apps/appmeta/"
+    "it": "/it/apps/appmeta/",
+    "pt": "/pt/apps/appmeta/"
   },
   "/apps/appmeta/privacy/": {
     "de": "/de/apps/appmeta/privacy/",
@@ -291,7 +295,8 @@
     "en": "/apps/chessful/",
     "es": "/es/apps/chessful/",
     "fr": "/fr/apps/chessful/",
-    "it": "/it/apps/chessful/"
+    "it": "/it/apps/chessful/",
+    "pt": "/pt/apps/chessful/"
   },
   "/apps/chessful/privacy/": {
     "de": "/de/apps/chessful/privacy/",
@@ -312,7 +317,8 @@
     "en": "/apps/clippet/",
     "es": "/es/apps/clippet/",
     "fr": "/fr/apps/clippet/",
-    "it": "/it/apps/clippet/"
+    "it": "/it/apps/clippet/",
+    "pt": "/pt/apps/clippet/"
   },
   "/apps/clippet/privacy/": {
     "de": "/de/apps/clippet/privacy/",
@@ -340,7 +346,8 @@
     "en": "/apps/earnlock/",
     "es": "/es/apps/earnlock/",
     "fr": "/fr/apps/earnlock/",
-    "it": "/it/apps/earnlock/"
+    "it": "/it/apps/earnlock/",
+    "pt": "/pt/apps/earnlock/"
   },
   "/apps/earnlock/privacy/": {
     "de": "/de/apps/earnlock/privacy/",
@@ -361,7 +368,8 @@
     "en": "/apps/gymlogger-x/",
     "es": "/es/apps/gymlogger-x/",
     "fr": "/fr/apps/gymlogger-x/",
-    "it": "/it/apps/gymlogger-x/"
+    "it": "/it/apps/gymlogger-x/",
+    "pt": "/pt/apps/gymlogger-x/"
   },
   "/apps/gymlogger-x/privacy/": {
     "de": "/de/apps/gymlogger-x/privacy/",
@@ -382,7 +390,8 @@
     "en": "/apps/liftlog/",
     "es": "/es/apps/liftlog/",
     "fr": "/fr/apps/liftlog/",
-    "it": "/it/apps/liftlog/"
+    "it": "/it/apps/liftlog/",
+    "pt": "/pt/apps/liftlog/"
   },
   "/apps/liftlog/privacy/": {
     "de": "/de/apps/liftlog/privacy/",
@@ -403,7 +412,8 @@
     "en": "/apps/mediakit/",
     "es": "/es/apps/mediakit/",
     "fr": "/fr/apps/mediakit/",
-    "it": "/it/apps/mediakit/"
+    "it": "/it/apps/mediakit/",
+    "pt": "/pt/apps/mediakit/"
   },
   "/apps/mediakit/privacy/": {
     "de": "/de/apps/mediakit/privacy/",
@@ -424,7 +434,8 @@
     "en": "/apps/millrace/",
     "es": "/es/apps/millrace/",
     "fr": "/fr/apps/millrace/",
-    "it": "/it/apps/millrace/"
+    "it": "/it/apps/millrace/",
+    "pt": "/pt/apps/millrace/"
   },
   "/apps/millrace/privacy/": {
     "de": "/de/apps/millrace/privacy/",
@@ -445,7 +456,8 @@
     "en": "/apps/mockly/",
     "es": "/es/apps/mockly/",
     "fr": "/fr/apps/mockly/",
-    "it": "/it/apps/mockly/"
+    "it": "/it/apps/mockly/",
+    "pt": "/pt/apps/mockly/"
   },
   "/apps/mockly/privacy/": {
     "de": "/de/apps/mockly/privacy/",
@@ -466,7 +478,8 @@
     "en": "/apps/observa/",
     "es": "/es/apps/observa/",
     "fr": "/fr/apps/observa/",
-    "it": "/it/apps/observa/"
+    "it": "/it/apps/observa/",
+    "pt": "/pt/apps/observa/"
   },
   "/apps/observa/privacy/": {
     "de": "/de/apps/observa/privacy/",
@@ -487,7 +500,8 @@
     "en": "/apps/pawza/",
     "es": "/es/apps/pawza/",
     "fr": "/fr/apps/pawza/",
-    "it": "/it/apps/pawza/"
+    "it": "/it/apps/pawza/",
+    "pt": "/pt/apps/pawza/"
   },
   "/apps/pawza/privacy/": {
     "de": "/de/apps/pawza/privacy/",
@@ -508,7 +522,8 @@
     "en": "/apps/rightsplit/",
     "es": "/es/apps/rightsplit/",
     "fr": "/fr/apps/rightsplit/",
-    "it": "/it/apps/rightsplit/"
+    "it": "/it/apps/rightsplit/",
+    "pt": "/pt/apps/rightsplit/"
   },
   "/apps/rightsplit/privacy/": {
     "de": "/de/apps/rightsplit/privacy/",
@@ -529,7 +544,8 @@
     "en": "/apps/shogiful/",
     "es": "/es/apps/shogiful/",
     "fr": "/fr/apps/shogiful/",
-    "it": "/it/apps/shogiful/"
+    "it": "/it/apps/shogiful/",
+    "pt": "/pt/apps/shogiful/"
   },
   "/apps/shogiful/privacy/": {
     "de": "/de/apps/shogiful/privacy/",
@@ -550,7 +566,8 @@
     "en": "/apps/soon/",
     "es": "/es/apps/soon/",
     "fr": "/fr/apps/soon/",
-    "it": "/it/apps/soon/"
+    "it": "/it/apps/soon/",
+    "pt": "/pt/apps/soon/"
   },
   "/apps/soon/privacy/": {
     "de": "/de/apps/soon/privacy/",
@@ -571,7 +588,8 @@
     "en": "/apps/tare/",
     "es": "/es/apps/tare/",
     "fr": "/fr/apps/tare/",
-    "it": "/it/apps/tare/"
+    "it": "/it/apps/tare/",
+    "pt": "/pt/apps/tare/"
   },
   "/apps/tare/privacy/": {
     "de": "/de/apps/tare/privacy/",
@@ -592,7 +610,8 @@
     "en": "/apps/taskful-day/",
     "es": "/es/apps/taskful-day/",
     "fr": "/fr/apps/taskful-day/",
-    "it": "/it/apps/taskful-day/"
+    "it": "/it/apps/taskful-day/",
+    "pt": "/pt/apps/taskful-day/"
   },
   "/apps/taskful-day/privacy/": {
     "de": "/de/apps/taskful-day/privacy/",
@@ -613,7 +632,8 @@
     "en": "/apps/wanderwiki/",
     "es": "/es/apps/wanderwiki/",
     "fr": "/fr/apps/wanderwiki/",
-    "it": "/it/apps/wanderwiki/"
+    "it": "/it/apps/wanderwiki/",
+    "pt": "/pt/apps/wanderwiki/"
   },
   "/apps/wanderwiki/privacy/": {
     "de": "/de/apps/wanderwiki/privacy/",
@@ -634,7 +654,8 @@
     "en": "/apps/xiangqiful/",
     "es": "/es/apps/xiangqiful/",
     "fr": "/fr/apps/xiangqiful/",
-    "it": "/it/apps/xiangqiful/"
+    "it": "/it/apps/xiangqiful/",
+    "pt": "/pt/apps/xiangqiful/"
   },
   "/apps/xiangqiful/privacy/": {
     "de": "/de/apps/xiangqiful/privacy/",
