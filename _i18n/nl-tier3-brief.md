@@ -355,3 +355,135 @@ reused). Collisions to avoid as primary or in seo.title: `apps blokkeren iphone`
 - **strong-workout-app** (GymLogger X): rows «Strong PRO (1 Month)» € 4,99 and € 5,99, «(6 Months)» € 20,49, «(1 Year)» € 24,49 to € 33,99,
   «Forever» € 89,99 and € 99,99, and an unlabelled «Strong PRO» € 3,99. Stay consistent with
   `nl/guides/workout-app-without-subscription.html` (its Strong price sentence). GymLogger X never «zonder abonnement».
+
+---
+
+## Batch 4 (2026-11-19): the must-have comparisons left
+
+Same rules as batches 1 to 3. Research rows: «Batch 4» at the bottom of the research file. Store data:
+`/Users/anttiaittamaa/Downloads/githubcode/nl-tier3-store-batch4-2026-11-19.md` (Dutch name, ratings, languages, in-app rows,
+full Dutch description). Scratch for notes:
+`/private/tmp/claude-501/-Users-anttiaittamaa--claude-spares-spare-9yVUda/ece2d429-efbb-49e4-9722-d366e374c50a/scratchpad/nl-t3b4/notes/<slug>.md`.
+Thirty reviewed Dutch comparisons are in `nl/alternatives/`: read two or three for tone and the Netherlands-data patterns
+(observa: autosleep, bevel; gymlogger-x: strong-workout-app, fitbod; mediakit: documents-by-readdle, handbrake; earnlock: one-sec;
+millrace: two-dots; rightsplit: tricount; allpaid: dyme-alternatief), and read EVERY «From the Tier 3 reviews» tell in `_i18n/nl.md`.
+Before writing, `grep -n "alternatives/<slug>" ~/Downloads/githubcode/ISSUES.md` and read the items: they list English-side
+errors on your page; the structural model (reviewed in its language) usually handles them already; follow it on facts.
+
+| English source | Write to | Our app | Primary query (search form) | Structural model |
+|---|---|---|---|---|
+| alternatives/countdown-star.html | nl/alternatives/countdown-star.html | Soon. (its first Dutch comparison) | `countdown star` (twin `countdown star widget`) | pt/alternatives/countdown-star.html |
+| alternatives/wikipedia-app.html | nl/alternatives/wikipedia-app.html | WanderWiki (its first) | `wikipedia app iphone` (twin `heeft wikipedia een app`) | it/alternatives/wikipedia-app.html |
+| alternatives/rise-sleep-tracker.html | nl/alternatives/rise-sleep-tracker.html | AfterShift (its first) | `rise app` (twin `rise slaap tracker`) | it/alternatives/rise-sleep-tracker.html |
+| alternatives/streaks-app.html | nl/alternatives/streaks-app.html | Taskful Day (its first) | `streaks app` | fr/alternatives/streaks-app.html |
+| alternatives/productive.html | nl/alternatives/productive.html | Taskful Day | `productive app` | pt/alternatives/productive.html |
+| alternatives/way-of-life.html | nl/alternatives/way-of-life.html | Taskful Day | `way of life app kosten` | de/alternatives/way-of-life.html |
+| alternatives/jefit.html | nl/alternatives/jefit.html | GymLogger X | `jefit app gratis` (twin `jefit vs hevy`) | it/alternatives/jefit.html |
+| alternatives/alpha-progression.html | nl/alternatives/alpha-progression.html | GymLogger X | `alpha progression app kosten` | it/alternatives/alpha-progression.html |
+| alternatives/ladder.html | nl/alternatives/ladder.html | LiftLog | `ladder app kosten` | fr/alternatives/ladder.html |
+| alternatives/athlytic.html | nl/alternatives/athlytic.html | Observa | `athlytic app` (twin `athlytic vs whoop`) | pt/alternatives/athlytic.html |
+| alternatives/gentler-streak.html | nl/alternatives/gentler-streak.html | Observa | `gentler streak app` (twin `gentler streak gratis`) | pt/alternatives/gentler-streak.html |
+| alternatives/compress-videos-resize-video.html | nl/alternatives/compress-videos-resize-video.html | MediaKit | `compress videos iphone` (twin `video comprimeren iphone gratis`, secondary only) | de/alternatives/compress-videos-resize-video.html |
+| alternatives/image-size.html | nl/alternatives/image-size.html | MediaKit | `foto grootte aanpassen iphone` | pt/alternatives/image-size.html |
+| alternatives/izip.html | nl/alternatives/izip.html | MediaKit | `zip bestand openen iphone` (twin `rar openen iphone`) | pt/alternatives/izip.html |
+| alternatives/bobby.html | nl/alternatives/bobby.html | AllPaid | `abonnementen bijhouden app` (twin `abonnementen overzicht app`) | nl/alternatives/one-sec.html (no translation exists: Dutch page for the skeleton, English for content) |
+| alternatives/kami-2.html | nl/alternatives/kami-2.html | Millrace | `kami 2` | fr/alternatives/kami-2.html |
+| alternatives/settle-up.html | nl/alternatives/settle-up.html | RightSplit | `settle up app` (twin `settle up vs tricount`) | it/alternatives/settle-up.html |
+| alternatives/chessable.html | nl/alternatives/chessable.html | Chessful | `chessable gratis` | fr/alternatives/chessable.html |
+| alternatives/magnus-trainer.html | nl/alternatives/magnus-trainer.html | Chessful | `magnus trainer app` | fr/alternatives/magnus-trainer.html |
+| alternatives/jomo.html | nl/alternatives/jomo.html | EarnLock | `jomo app` | fr/alternatives/jomo.html |
+| (local-only) | nl/alternatives/supershift-alternatief.html | AfterShift | `ploegendienst rooster app` (twin `supershift app`) | nl/alternatives/tikkie-alternatief.html (local-only skeleton) + alternatives/shift-worker.html (the English roster-app comparison, for content shape) |
+
+Models in de/fr/es/pt/it are STRUCTURE only: write from English, never translate from them.
+
+**Keyword collisions** (never your primary or in your seo.title; a secondary keyword or body mention is fine): Soon.'s app page owns
+`aftel app`, `aftel app met widget`, `countdown widget iphone`, `gratis aftel app`; the countdown guide owns `aftellen op iphone`,
+`aftellen app iphone widget`. WanderWiki's page owns `willekeurige wikipedia pagina`, `wikipedia app`, `wikipedia app gratis`.
+AfterShift owns `slapen na nachtdienst`, `ploegendienst slaap`, `ploegendienst app`. Taskful Day owns `to do lijst app`, `dagplanner app`.
+MediaKit owns `video comprimeren iphone`, `video verkleinen iphone`, `heic naar jpg`, `foto verkleinen iphone`; the journal post
+/nl/journal/foto-verkleinen-iphone/ owns `foto verkleinen iphone gratis`, `foto kleiner maken iphone`. AllPaid owns `rekeningen
+bijhouden app`, `vaste lasten app`. Plus every earlier batch's primaries. Distinct seo.title formulas: Observa now has eight
+comparisons, GymLogger X six, MediaKit seven, EarnLock seven, Taskful Day three (same batch: make them clearly different), Chessful four,
+RightSplit five, Millrace three. Read the seo.title of every existing page for your app (`grep -h "^  title:" nl/alternatives/*.html`)
+and don't reuse a formula.
+
+**Taskful Day is a day planner, not a habit tracker.** Streaks, Productive and Way of Life are habit trackers; keep the English
+framing (a planner for the day vs a habit grid) and say plainly when the habit tracker is the better choice. `habit tracker app
+nederlands` / `habit tracker app gratis` may be secondary keywords only. Taskful Day facts from `_apps/taskful-day.md`,
+`nl/apps/taskful-day/index.md` (reviewed Dutch UI names) and `~/Downloads/TaskLogger/APP_BLUEPRINT.md` §10. ISSUES I-0391:
+sentence capture has no Dutch keyword pack: never promise that typing a Dutch sentence creates a task with a date.
+
+### Per page (competitor data: only the store file rows; «vanaf» or a range when rows have no period)
+
+- **countdown-star** (Soon.): free, NL UI, ★12.543 4,6; one in-app row «Advertenties verwijderen» € 1,99; a separate paid listing
+  «Countdown Star (ad-vrij)» € 1,99 (★354). Say what the listing says about widgets only. Soon. facts from `_apps/soon.md`,
+  `nl/apps/soon/index.md`, `~/Downloads/countdown/APP_BLUEPRINT.md` §10; the Soon. Dutch UI issues in ISSUES I-0382 (Herinneringen
+  used twice) mean: use the Dutch app page's wording. Link the Dutch countdown guide once: plain href `/nl/guides/aftellen-op-iphone/`.
+- **wikipedia-app** (WanderWiki): free, no in-app rows, NL UI, ★216 4,1 (the Wikimedia Foundation's app). WanderWiki facts from
+  `nl/apps/wanderwiki/index.md` and its blueprint. Say whether WanderWiki shows Dutch Wikipedia ONLY if the Dutch app page or the
+  blueprint says so.
+- **rise-sleep-tracker** (AfterShift): Dutch store title «RISE: Slaap Tracker & Energie», NO Dutch UI in the language list (the
+  title is Dutch, the app isn't: don't claim either beyond the list), ★964 4,3; rows are all «Sleep Improvement Membership»
+  (€ 9,99 to € 79,99) plus «Sleep & Energy Premium» € 69,99, no periods: give «vanaf € 9,99» or the range, never call a row
+  monthly or yearly. AfterShift facts from `_apps/aftershift.md`, `nl/apps/aftershift/index.md` and
+  `~/Downloads/shiftworkersleep/APP_BLUEPRINT.md` §10; AfterShift's Dutch UI terms have known inconsistencies (I-0382): use the
+  Dutch app page's terms. No medical claims; caveats as strong as English.
+- **streaks-app**: paid app € 6,99, no in-app rows, NL UI, ★752 4,6.
+- **productive**: free, no NL UI, ★2018 4,4; rows «Productive Premium 1 jaar» € 19,99 to € 89,99, «Productive Premium 1 maand» € 11,99,
+  plus «Productive upgraden» € 3,99 and «Weekly Bundle Premium with FT» € 5,99: these rows DO name a period, so «per jaar» and
+  «per maand» are allowed; give «vanaf € 19,99 per jaar» or the range.
+- **way-of-life**: free, NL UI, ★192 4,7; rows all named «Premium» (€ 5,99 to € 34,99, no period) plus «Thank you» € 0,99: range only.
+- **jefit**: free, no NL UI, ★1124 4,6; rows Elite Monthly € 13,99, Elite Yearly € 36,99 to € 79,99, «(Legacy Pricing)» rows (leave
+  out or say they exist). Stay consistent with `nl/guides/workout-app-without-subscription.html` if it names Jefit.
+- **alpha-progression**: free, NL UI, Dutch name «Alpha Progression Spieropbouw», ★129 4,9; rows «Maandabonnement» € 12,99,
+  «Jaarabonnement» € 79,99 (the English-named duplicates match; «[Legacy]» rows: leave out).
+- **ladder** (LiftLog): free, English only, ★542 4,9; rows PRO € 15,99, PRO+ € 39,99, ELITE € 47,99, ELITE+ € 59,99 (no period) and
+  PRO Annual € 94,99, PRO+ (Annual) € 399,99, ELITE Annual / ELITE+ Annual € 499,99 (annual named). LiftLog tiers Eerlijk / Goed /
+  Genereus / Mecenas; «geen abonnement» IS allowed for LiftLog (house rule). Stay consistent with `nl/alternatives/hevy.html`.
+- **athlytic** (Observa): free, English only, ★620 4,6; rows Athlytic Pro (Yearly) € 31,99, (Monthly) € 5,99.
+- **gentler-streak** (Observa): free, no NL UI, ★469 4,5; rows Gentler Premium Monthly € 8,99, Yearly € 39,99, Yearly Family € 29,99
+  to € 59,99, Lifetime € 59,99 to € 199,99 (several lifetime rows: give the range, never pick one). Observa rules as before: HRV (SDNN),
+  «Gereedheid», never «zonder abonnement» for Observa, health caveats as strong as English. Stay consistent with nl/alternatives/bevel.html.
+- **compress-videos-resize-video** (MediaKit): free, English only, ★396 4,6; rows Pro (monthly) € 5,99, (annual) € 8,99, (lifetime)
+  € 17,99. MediaKit Dutch tool names from `nl/apps/mediakit/index.md` (I-0458: the resize tool has two Dutch names; use the app
+  page's).
+- **image-size** (MediaKit): Dutch store name «Foto Grootte» (developer per the store file), NL UI, ★598 4,5; rows «Advertenties
+  verwijderen» € 22,99, «Gum ontgrendelen» € 2,99, «Fooi geven» € 6,99. Link the Dutch journal post once with a plain href:
+  `/nl/journal/foto-verkleinen-iphone/` (read it; stay consistent).
+- **izip** (MediaKit): free, no NL UI, ★1367 4,5; one row «Premium» € 8,99 (no period). Read the ISSUES items that mention alternatives/izip.
+- **bobby** (AllPaid): free, NL UI, ★522 4,5, last updated 2025-12-09 per the store (you may give the version date only if the English
+  page talks about updates); rows are one-time unlocks (Unlock Subscription Limit € 0,99, All-in-one Pack € 1,99 / v2 € 2,99, Category,
+  Security, Visual packs € 0,99). AllPaid facts from `nl/apps/allpaid/index.md` and `~/Downloads/billreminder/APP_BLUEPRINT.md` §10;
+  AllPaid tier Pro; AllPaid sells a subscription: never «zonder abonnement» for AllPaid. Stay consistent with
+  `nl/alternatives/dyme-alternatief.html` and the bill-tracker guide.
+- **kami-2** (Millrace): free, NL UI, ★551 4,6; rows hints (3 hints € 0,99 to 75 hints € 9,99) and «Speciale paletten» € 0,99. KAMI 2+
+  is an Apple Arcade listing (no price in the store file): mention only if the English page does. **Never «2048»**. «Geen abonnement»
+  allowed for Millrace. Stay consistent with nl/alternatives/two-dots.html and flow-free.html.
+- **settle-up** (RightSplit): free, NL UI, ★188 4,5; rows Monthly Premium € 4,99, Yearly Premium € 21,99, Group Premium rows (1 week
+  € 6,99 to 1 year € 44,99, Lifetime Group Premium € 179,99). RightSplit rules as before (never moves money; payment links as the Dutch
+  app page). Stay consistent with tricount, splitwise and wiebetaaltwat-alternatief.
+- **chessable** (Chessful): free, English only, ★337 4,7; rows Monthly Membership € 9,99, Annual € 67,99 (courses are sold
+  separately only if the English page or listing says so). **magnus-trainer**: free, no NL UI, ★267 4,7, store version date
+  2021-04-30 (state it only as the listing's last update date, neutrally, if the English page mentions updates); rows Monthly
+  Premium € 4,99 to € 8,99, Yearly € 34,99 to € 69,99, Lifetime Premium € 349,99, unlabelled «Premium Membership» € 179,99 / € 249,99.
+  Chessful tier Pro; sign-in «inloggen». Stay consistent with chess-com and lichess.
+- **jomo** (EarnLock): free, NL UI, Dutch name «Jomo - Schermtijd verminderen», ★234 4,6; rows Jomo Plus Monthly € 6,99, Annual
+  € 29,99 / € 34,99, Lifetime € 84,99 / € 99,99, Family rows. EarnLock tier Premium; stay consistent with one-sec, opal, screenzen.
+- **supershift-alternatief** (local-only, permalink `/nl/alternatives/supershift-alternatief/`; front matter as the batch 1
+  local-only pages, `last_updated: 2026-11-19`): Supershift - Ploegenrooster (Supershift GmbH), NL UI, ★770 4,8, iPhone, iPad and
+  Watch; rows «Supershift Pro Maandelijks» € 3,99, «Jaarlijks» € 9,99, «Levenslang» € 39,99. Facts ONLY from its Dutch description
+  (multiple shifts a day, colours and emoji, no account, works offline, roster sharing, shift alarms, rotations up to 2 years ahead,
+  pay/allowance/hours tracking, Watch complications, widgets, optional Cloud Sync; Pro: calendar export, PDF export, external
+  calendars). Its «meest gedownloade en best beoordeelde» claim is its own marketing: never repeat. **The honest angle**: Supershift
+  is a full roster calendar; AfterShift is a sleep and recovery app built around your roster (roster that fills 8 weeks ahead from a
+  rotation, calendar import, reminders timed to the next shift, Premium scores). If you only want a roster to share, set alarms
+  and track pay, Supershift is the better choice; if you want sleep measured shift to shift and reminders around your next shift,
+  AfterShift. You may state that Supershift Pro exports to Apple Agenda (its listing) and that AfterShift imports shifts from a
+  calendar (its page), but never claim the two were tested together. Keywords: `ploegendienst rooster app`, `supershift app`,
+  `supershift gratis`, `supershift pro` (all in the suggest data). Link the Dutch RISE comparison once (l.html
+  `/alternatives/rise-sleep-tracker/`) and the AfterShift app page.
+
+### Batch 4 extras for the reply
+
+Same «Reply with» as batch 1, written to your notes file. Also: the seo.title of every other Dutch page for your app that you
+checked against, and any ISSUES item about your page that the structural model did NOT handle.

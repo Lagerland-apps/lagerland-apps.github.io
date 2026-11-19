@@ -4,7 +4,7 @@ slug: compress-a-video-for-email
 ref: /journal/compress-a-video-for-email/
 permalink: /nl/journal/compress-a-video-for-email/
 translated_from: 2026-11-08
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 date: 2026-11-19
 title: "Video verkleinen voor mail: de limieten en de bitrate berekenen"
 seo:
@@ -124,4 +124,4 @@ Met een link krijgt de ontvanger het origineel in volle kwaliteit, en blijft er 
 
 In de modus ‘Doelgrootte’ doet MediaKit stap 1 tot 4 van de som zelf. De app deelt de doelgrootte door de lengte van de video, haalt de gekozen audiobitrate eraf en houdt 3% in reserve, codeert, meet het bestand dat daaruit komt en codeert opnieuw met een gecorrigeerde bitrate als het doel gemist is. Je krijgt nooit een bestand dat groter is dan de doelgrootte: lukt dat niet, dan stopt de app met een foutmelding. Een bron in 4K of 1440p begint met ‘Max. resolutie’ op 1080p. Stel die bij een kleine doelgrootte lager in.
 
-Gebruik je voor dit werk al HandBrake, dan staat in de [vergelijking met HandBrake](/nl/alternatives/handbrake/) waar de twee verschillen, en de [vergelijking met Compress Videos & Resize Video](/alternatives/compress-videos-resize-video/){: hreflang="en"} (in het Engels) doet hetzelfde voor de iPhone. Waarom de makers van MediaKit dit werk weghouden van andermans servers, is het onderwerp van [een eerder artikel](/journal/your-photos-shouldnt-ride-the-elevator/){: hreflang="en"} (in het Engels), en de rest van de gereedschapskist staat in [dit artikel](/journal/every-media-tool-already-on-your-mac/){: hreflang="en"} (in het Engels). Hoe je een MKV-bestand omzet, staat in [MKV naar MP4](/nl/journal/mkv-naar-mp4/).
+Gebruik je voor dit werk al HandBrake, dan staat in de [vergelijking met HandBrake](/nl/alternatives/handbrake/) waar de twee verschillen, en de [vergelijking met Compress Videos & Resize Video](/nl/alternatives/compress-videos-resize-video/) doet hetzelfde voor de iPhone. Waarom de makers van MediaKit dit werk weghouden van andermans servers, is het onderwerp van [een eerder artikel](/journal/your-photos-shouldnt-ride-the-elevator/){: hreflang="en"} (in het Engels), en de rest van de gereedschapskist staat in [dit artikel](/journal/every-media-tool-already-on-your-mac/){: hreflang="en"} (in het Engels). Hoe je een MKV-bestand omzet, staat in [MKV naar MP4](/nl/journal/mkv-naar-mp4/).

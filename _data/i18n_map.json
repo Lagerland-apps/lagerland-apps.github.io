@@ -22,13 +22,15 @@
     "en": "/alternatives/alpha-progression/",
     "es": "/es/alternatives/alpha-progression/",
     "fr": "/fr/alternatives/alpha-progression/",
-    "it": "/it/alternatives/alpha-progression/"
+    "it": "/it/alternatives/alpha-progression/",
+    "nl": "/nl/alternatives/alpha-progression/"
   },
   "/alternatives/athlytic/": {
     "de": "/de/alternatives/athlytic/",
     "en": "/alternatives/athlytic/",
     "es": "/es/alternatives/athlytic/",
     "fr": "/fr/alternatives/athlytic/",
+    "nl": "/nl/alternatives/athlytic/",
     "pt": "/pt/alternatives/athlytic/"
   },
   "/alternatives/autosleep/": {
@@ -54,6 +56,10 @@
     "nl": "/nl/alternatives/bevel/",
     "pt": "/pt/alternatives/bevel/"
   },
+  "/alternatives/bobby/": {
+    "en": "/alternatives/bobby/",
+    "nl": "/nl/alternatives/bobby/"
+  },
   "/alternatives/brick/": {
     "de": "/de/alternatives/brick/",
     "en": "/alternatives/brick/",
@@ -77,6 +83,7 @@
     "en": "/alternatives/chessable/",
     "es": "/es/alternatives/chessable/",
     "fr": "/fr/alternatives/chessable/",
+    "nl": "/nl/alternatives/chessable/",
     "pt": "/pt/alternatives/chessable/"
   },
   "/alternatives/cloudconvert/": {
@@ -90,7 +97,8 @@
   },
   "/alternatives/compress-videos-resize-video/": {
     "de": "/de/alternatives/compress-videos-resize-video/",
-    "en": "/alternatives/compress-videos-resize-video/"
+    "en": "/alternatives/compress-videos-resize-video/",
+    "nl": "/nl/alternatives/compress-videos-resize-video/"
   },
   "/alternatives/convertio/": {
     "de": "/de/alternatives/convertio/",
@@ -102,6 +110,7 @@
   "/alternatives/countdown-star/": {
     "de": "/de/alternatives/countdown-star/",
     "en": "/alternatives/countdown-star/",
+    "nl": "/nl/alternatives/countdown-star/",
     "pt": "/pt/alternatives/countdown-star/"
   },
   "/alternatives/documents-by-readdle/": {
@@ -144,6 +153,7 @@
     "en": "/alternatives/gentler-streak/",
     "es": "/es/alternatives/gentler-streak/",
     "fr": "/fr/alternatives/gentler-streak/",
+    "nl": "/nl/alternatives/gentler-streak/",
     "pt": "/pt/alternatives/gentler-streak/"
   },
   "/alternatives/habitica/": {
@@ -186,11 +196,13 @@
   "/alternatives/image-size/": {
     "de": "/de/alternatives/image-size/",
     "en": "/alternatives/image-size/",
+    "nl": "/nl/alternatives/image-size/",
     "pt": "/pt/alternatives/image-size/"
   },
   "/alternatives/izip/": {
     "en": "/alternatives/izip/",
     "es": "/es/alternatives/izip/",
+    "nl": "/nl/alternatives/izip/",
     "pt": "/pt/alternatives/izip/"
   },
   "/alternatives/jefit/": {
@@ -199,17 +211,20 @@
     "es": "/es/alternatives/jefit/",
     "fr": "/fr/alternatives/jefit/",
     "it": "/it/alternatives/jefit/",
+    "nl": "/nl/alternatives/jefit/",
     "pt": "/pt/alternatives/jefit/"
   },
   "/alternatives/jomo/": {
     "de": "/de/alternatives/jomo/",
     "en": "/alternatives/jomo/",
     "fr": "/fr/alternatives/jomo/",
+    "nl": "/nl/alternatives/jomo/",
     "pt": "/pt/alternatives/jomo/"
   },
   "/alternatives/kami-2/": {
     "en": "/alternatives/kami-2/",
     "fr": "/fr/alternatives/kami-2/",
+    "nl": "/nl/alternatives/kami-2/",
     "pt": "/pt/alternatives/kami-2/"
   },
   "/alternatives/kiwix/": {
@@ -222,6 +237,7 @@
     "de": "/de/alternatives/ladder/",
     "en": "/alternatives/ladder/",
     "fr": "/fr/alternatives/ladder/",
+    "nl": "/nl/alternatives/ladder/",
     "pt": "/pt/alternatives/ladder/"
   },
   "/alternatives/lichess/": {
@@ -237,6 +253,7 @@
     "en": "/alternatives/magnus-trainer/",
     "es": "/es/alternatives/magnus-trainer/",
     "fr": "/fr/alternatives/magnus-trainer/",
+    "nl": "/nl/alternatives/magnus-trainer/",
     "pt": "/pt/alternatives/magnus-trainer/"
   },
   "/alternatives/medika/": {
@@ -288,6 +305,7 @@
   "/alternatives/productive/": {
     "de": "/de/alternatives/productive/",
     "en": "/alternatives/productive/",
+    "nl": "/nl/alternatives/productive/",
     "pt": "/pt/alternatives/productive/"
   },
   "/alternatives/rise-sleep-tracker/": {
@@ -296,6 +314,7 @@
     "es": "/es/alternatives/rise-sleep-tracker/",
     "fr": "/fr/alternatives/rise-sleep-tracker/",
     "it": "/it/alternatives/rise-sleep-tracker/",
+    "nl": "/nl/alternatives/rise-sleep-tracker/",
     "pt": "/pt/alternatives/rise-sleep-tracker/"
   },
   "/alternatives/screenzen/": {
@@ -311,6 +330,7 @@
     "en": "/alternatives/settle-up/",
     "es": "/es/alternatives/settle-up/",
     "it": "/it/alternatives/settle-up/",
+    "nl": "/nl/alternatives/settle-up/",
     "pt": "/pt/alternatives/settle-up/"
   },
   "/alternatives/splitwise/": {
@@ -326,6 +346,7 @@
     "de": "/de/alternatives/streaks-app/",
     "en": "/alternatives/streaks-app/",
     "fr": "/fr/alternatives/streaks-app/",
+    "nl": "/nl/alternatives/streaks-app/",
     "pt": "/pt/alternatives/streaks-app/"
   },
   "/alternatives/strong-workout-app/": {
@@ -369,7 +390,8 @@
   },
   "/alternatives/way-of-life/": {
     "de": "/de/alternatives/way-of-life/",
-    "en": "/alternatives/way-of-life/"
+    "en": "/alternatives/way-of-life/",
+    "nl": "/nl/alternatives/way-of-life/"
   },
   "/alternatives/welltory/": {
     "de": "/de/alternatives/welltory/",
@@ -395,6 +417,7 @@
     "es": "/es/alternatives/wikipedia-app/",
     "fr": "/fr/alternatives/wikipedia-app/",
     "it": "/it/alternatives/wikipedia-app/",
+    "nl": "/nl/alternatives/wikipedia-app/",
     "pt": "/pt/alternatives/wikipedia-app/"
   },
   "/alternatives/wikiwand/": {

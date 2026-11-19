@@ -82,3 +82,22 @@ Writer rules: the «Batch 3» section of nl-tier3-brief.md. Writers' notes:
 Extra checks: grep every Millrace page for «2048» (must be zero); Brick and Unpluq pages give no device price; Tare's hint and star rules
 exactly as the brief; the six EarnLock pages and all 30 Dutch comparisons have distinct primaries and seo.title formulas; every batch 1
 and 2 tell in nl.md checked.
+
+## Batch 4 (2026-11-19)
+
+Same method and the batch 2 and 3 checks. Store data: `/Users/anttiaittamaa/Downloads/githubcode/nl-tier3-store-batch4-2026-11-19.md`.
+Writer rules: the «Batch 4» section of nl-tier3-brief.md. Writers' notes:
+`/private/tmp/claude-501/-Users-anttiaittamaa--claude-spares-spare-9yVUda/ece2d429-efbb-49e4-9722-d366e374c50a/scratchpad/nl-t3b4/notes/<slug>.md`.
+Extra checks:
+- Every competitor price against the store file row by row: a period only where the row names one («Premium» rows on Way of Life,
+  «Sleep Improvement Membership» on RISE, «Premium» on iZip, unlabelled Ladder and Magnus Trainer rows have none); ranges cover all
+  rows of a plan; «(Legacy Pricing)» / «[Legacy]» rows left out or only said to exist.
+- «NL UI» claims only from the store file (RISE has a Dutch store title but no Dutch in its language list; Productive, Jefit, Ladder,
+  Athlytic, Gentler Streak, Compress Videos, iZip, Chessable, Magnus Trainer have no Dutch).
+- Taskful Day is a day planner, not a habit tracker; ISSUES I-0391 (no promise that a typed Dutch sentence becomes a dated task).
+- Millrace page (kami-2): zero «2048». LiftLog (ladder) may say «geen abonnement»; no other app may.
+- Observa (athlytic, gentler-streak): HRV (SDNN), «Gereedheid», never «zonder abonnement», caveats as strong as English.
+- AfterShift (rise-sleep-tracker, supershift-alternatief): no medical claims; Supershift's «meest gedownloade» claim never repeated;
+  no claim that Supershift export and AfterShift calendar import were tested together.
+- Distinct primaries and seo.title formulas across all 51 Dutch comparisons, especially within Taskful Day (3), Observa (8),
+  MediaKit (7), GymLogger X (6), EarnLock (7), Chessful (4), RightSplit (5).

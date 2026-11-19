@@ -92,7 +92,7 @@ founder:
   location: "Finland"
   overline: "Waarom we dit maakten"
   heading: "Voor spelers die hun fouten in woorden uitgelegd willen zien."
-  story: "Een engine kan je vertellen dat een zet slecht was. De evaluatie en de reeks zetten die hij toont, zeggen zelden waarom, en ze lezen is een vaardigheid op zich. Chessful zet bij elke fout een heldere zin, geschreven voor het niveau dat jij kiest, en bouwt je training op de fouten die je echt maakt. Stockfish zit in de app, dus je partijen worden op je iPhone, iPad of Mac geanalyseerd. De app maakt zelf geen netwerkverbindingen; alleen aankopen en de optionele aanmelding bij Game Center lopen via de servers van Apple."
+  story: "Een engine kan je vertellen dat een zet slecht was. De evaluatie en de reeks zetten die hij toont, zeggen zelden waarom, en ze lezen is een vaardigheid op zich. Chessful zet bij elke fout een heldere zin, geschreven voor het niveau dat jij kiest, en bouwt je training op de fouten die je echt maakt. Stockfish zit in de app, dus je partijen worden op je iPhone, iPad of Mac geanalyseerd. De app maakt zelf geen netwerkverbindingen; alleen aankopen en het optionele inloggen bij Game Center lopen via de servers van Apple."
   signals:
     - "Stockfish draait in de app, dus de analyse gebeurt op je apparaat en vraagt geen account"
     - 'Veertig tegenstanders met een naam, verdeeld over acht niveaus, elk met een speelstijl, sterke punten en zwakke punten; de ontwerpnotities staan in het <a href="/journal/forty-chess-opponents/" hreflang="en">blogartikel over de veertig tegenstanders (in het Engels)</a>'
@@ -185,7 +185,7 @@ comparison_table:
     - feature: "Analyse werkt offline"
       values: ["Ja, Stockfish draait op het apparaat", "Nee, analyse in de cloud", "Meestal in de cloud", "Nee, cloud", "Ja, Stockfish op het apparaat"]
     - feature: "Account vereist"
-      values: ["Geen account", "Vereist", "Optioneel, maar verwacht", "Aanmelden met een eigen account", "Geen account"]
+      values: ["Geen account", "Vereist", "Optioneel, maar verwacht", "Inloggen met een eigen account", "Geen account"]
     - feature: "Dagelijkse analyselimiet"
       values: ["Gratis: 2 partijen per dag; Pro: onbeperkt", "1 partijanalyse per dag in de gratis versie; onbeperkt tegen betaling", "Onbeperkt (gratis)", "Gebaseerd op lessen, niet op analyse", "Onbeperkt (Pro)"]
     - feature: "Fouten uitgelegd in gewone taal"
@@ -216,10 +216,10 @@ screenshot_captions:
 privacy:
   data_collection: "geen"
   notes:
-    - "Geen account en geen aanmelding"
+    - "Geen account, je hoeft nergens in te loggen"
     - "Geen advertenties, analytics, tracking of SDK’s van derden"
     - "Stockfish draait op je apparaat, en je partijen, fouten en trainingsgeschiedenis blijven daar"
-    - "Spelen, analyseren, lessen en puzzels werken offline; aankopen en de optionele aanmelding bij Game Center lopen via de servers van Apple"
+    - "Spelen, analyseren, lessen en puzzels werken offline; aankopen en het optionele inloggen bij Game Center lopen via de servers van Apple"
     - "Instellingen > ‘Alles resetten’ wist alle gegevens van Chessful van het apparaat"
 
 faq:
@@ -246,7 +246,7 @@ faq:
   - q: "Houdt Chessful bij hoe ik verbeter?"
     a: "Ja. Voortgang toont een geschatte rating, een ratinggrafiek, partijstatistieken, vijf vaardigheidsbalken (tactiek, verdediging, positionering, eindspel en openingen), een activiteitenoverzicht en 59 prestaties, allemaal gratis. Pro voegt ‘Wekelijkse vergelijking’ en ‘Zwaktetrends’ toe. De rating is een schatting van Chessful en staat los van FIDE-, Chess.com- of Lichess-ratings."
   - q: "Heb ik een account nodig voor Chessful?"
-    a: "Nee. Er is geen aanmelding en geen Chessful-account. Je partijen, analyses en trainingsgeschiedenis worden op je apparaat bewaard. Game Center is optioneel en aankopen lopen via je Apple Account."
+    a: "Nee. Je logt nergens in en er is geen Chessful-account. Je partijen, analyses en trainingsgeschiedenis worden op je apparaat bewaard. Game Center is optioneel en aankopen lopen via je Apple Account."
   - q: "Synchroniseren mijn partijen tussen iPhone, iPad en Mac?"
     a: "Nee. Elk apparaat bewaart zijn eigen partijen en voortgang, en Chessful heeft geen iCloud-synchronisatie. Je Pro-aankoop gaat wel met je mee: de universele aankoop dekt iPhone, iPad en Mac, en met ‘Aankopen herstellen’ krijg je Pro terug op elk apparaat met hetzelfde Apple Account."
   - q: "Is Chessful een vervanger voor Chess.com of Lichess?"
@@ -280,7 +280,7 @@ enrichment:
   pricing_tiers:
     - "Gratis: de 156 lessen en de uitleg bij fouten, 2 analyses, 3 puzzels en 2 coachhints per dag, de eerste 10 tegenstanders, PGN-import"
     - "Pro: onbeperkt analyseren, puzzels en coachhints, alle 40 tegenstanders, alle 96 eindspelen, volledig openingsrepertoire met oefeningen, wekelijkse vergelijking en zwaktetrends ({P_MONTHLY}/maand of {P_YEARLY}/jaar, allebei met een {TRIAL}, of {P_LIFETIME} levenslang)"
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 ---
 {%- include t.html -%}
 Chessful is een [schaakapp om te trainen en je partijen te analyseren, voor iPhone, iPad en Mac](#features), gemaakt voor spelers die steeds op dezelfde manier verliezen zonder te weten waarom. Als een partij afgelopen is, controleert Stockfish elke zet op je apparaat. Elke fout krijgt een kaart: wat je speelde, wat de beste zet was, een korte uitleg die bij je niveau past en de variant die jouw zet afstraft. Die fouten worden daarna de puzzels van [je dagelijkse training](#how-it-works), en gespreide herhaling brengt de fouten terug die je mist, tot je ze oplost.

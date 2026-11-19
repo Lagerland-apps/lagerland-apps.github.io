@@ -3,7 +3,7 @@ layout: journal
 slug: hoeveel-dagen-tot-kerst
 permalink: /nl/journal/hoeveel-dagen-tot-kerst/
 local_only: true
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 date: 2026-11-19
 title: "Hoeveel dagen tot kerst: zo reken je het uit, met de datums voor 2026 en 2027"
 seo:
@@ -108,7 +108,7 @@ Elk moment kan in Planning een checklist en een tijdlijn hebben, en Soon. stelt 
 - Een live aftelling die je met anderen deelt, heeft Soon. niet. Je deelt een aftelling als afbeelding, en in de gratis versie staat daar een klein Soon.-watermerk op.
 - Meer dan 5 momenten vraagt Premium, net als een moment dat elk jaar terugkomt. Dat laatste is handig voor kerst, dat elk jaar op dezelfde datum valt. Terugkerende momenten bekijken is gratis.
 
-Je momenten staan op je iPhone en, als je dat aanzet, in je eigen iCloud. De app heeft geen advertenties en geen tracking, en je hebt er geen account voor nodig. Hoe Soon. zich verhoudt tot een andere aftelapp, lees je in [Soon. vergeleken met Countdown Star](/alternatives/countdown-star/){: hreflang="en"} (in het Engels). Soon. staat in de [App Store](https://apps.apple.com/app/id6757280643).
+Je momenten staan op je iPhone en, als je dat aanzet, in je eigen iCloud. De app heeft geen advertenties en geen tracking, en je hebt er geen account voor nodig. Hoe Soon. zich verhoudt tot een andere aftelapp, lees je in [Soon. vergeleken met Countdown Star](/nl/alternatives/countdown-star/). Soon. staat in de [App Store](https://apps.apple.com/app/id6757280643).
 
 ## Bronnen, geraadpleegd op 19 november 2026
 
