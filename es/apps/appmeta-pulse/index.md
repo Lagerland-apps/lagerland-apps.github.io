@@ -209,8 +209,8 @@ founder:
     - "La clave de API se queda en el llavero del iPhone y las peticiones van por HTTPS directamente a Apple"
     - "Se financia con las ventas de las propias apps, sin anuncios y sin inversores"
   external_link:
-    href: "/alternatives/"
-    label: "Mira cómo se compara AppMeta Pulse con AppStats, App Sales y Appfigures (en inglés)"
+    href: "/alternatives/appstats/"
+    label: "Mira cómo se compara AppMeta Pulse con AppStats (en inglés)"
 
 enrichment:
   use_cases:

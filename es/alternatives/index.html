@@ -1,0 +1,168 @@
+---
+layout: default
+ref: /alternatives/
+permalink: /es/alternatives/
+translated_from: 2026-11-08
+title: "Comparativas"
+quick_answer: "Las comparativas de Lagerland Apps ponen una de nuestras apps frente a otra muy conocida, explican en qué se diferencian y dicen para quién va mejor cada una, también cuando la mejor opción es la otra app. En español hay diez, por tema. Para dividir gastos y controlar facturas: RightSplit frente a Tricount y Splitwise, y AllPaid como alternativa a Fintonic sin conectar el banco. Para el ajedrez: Chessful frente a Chess.com y Lichess. En salud y entrenamiento: Observa frente a Whoop y LiftLog frente a Hevy. Para el tiempo de uso: EarnLock frente a Opal y Forest. Para los PDF: MediaKit frente a PDF Expert. El resto de comparativas solo está en inglés."
+seo:
+  title: "Alternativas a Tricount, Whoop, Hevy y Opal para iPhone"
+  description: "Comparativas de apps para iPhone: alternativa a Tricount, Splitwise, Whoop, Hevy, Opal, Forest, Fintonic o PDF Expert, y cuándo quedarte con la conocida."
+  keywords:
+    - alternativa a tricount
+    - alternativa a whoop
+    - alternativa a hevy
+    - apps alternativas iphone
+    - alternativa a pdf expert
+    - comparativa apps iphone
+    - alternativa a opal
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign es_alt_count = site.pages | where: "lang", "es" | where_exp: "p", "p.url contains '/es/alternatives/'" | size | minus: 1 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/es/alternatives/#webpage",
+  "url": "{{ site.url }}/es/alternatives/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "inLanguage": "es-ES",
+  "isPartOf": { "@id": "{{ site.url }}/es/#website" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/es/" },
+      { "@type": "ListItem", "position": 2, "name": "Comparativas", "item": "{{ site.url }}/es/alternatives/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Comparativas en español",
+    "numberOfItems": {{ es_alt_count }},
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "url": "{{ site.url }}/es/alternatives/tricount/", "name": "Alternativa a Tricount" },
+      { "@type": "ListItem", "position": 2, "url": "{{ site.url }}/es/alternatives/splitwise/", "name": "Alternativa a Splitwise" },
+      { "@type": "ListItem", "position": 3, "url": "{{ site.url }}/es/alternatives/alternativa-a-fintonic/", "name": "Alternativa a Fintonic sin conexión bancaria" },
+      { "@type": "ListItem", "position": 4, "url": "{{ site.url }}/es/alternatives/chess-com/", "name": "Alternativa al análisis de Chess.com" },
+      { "@type": "ListItem", "position": 5, "url": "{{ site.url }}/es/alternatives/lichess/", "name": "Alternativa a Lichess" },
+      { "@type": "ListItem", "position": 6, "url": "{{ site.url }}/es/alternatives/whoop/", "name": "Alternativa a Whoop" },
+      { "@type": "ListItem", "position": 7, "url": "{{ site.url }}/es/alternatives/hevy/", "name": "Alternativa a Hevy" },
+      { "@type": "ListItem", "position": 8, "url": "{{ site.url }}/es/alternatives/opal/", "name": "Alternativa a Opal" },
+      { "@type": "ListItem", "position": 9, "url": "{{ site.url }}/es/alternatives/forest/", "name": "Alternativa a Forest" },
+      { "@type": "ListItem", "position": 10, "url": "{{ site.url }}/es/alternatives/pdf-expert/", "name": "Alternativa a PDF Expert" }
+    ]
+  }
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Comparativas honestas · {{ es_alt_count }} páginas en español</p>
+    <h1 class="h1">Alternativas a las<br><span class="gradient-text">apps conocidas.</span></h1>
+    <p class="lead">Cada página pone una app de Lagerland Apps frente a otra muy conocida, explica en qué se diferencian y te dice cuándo la conocida es la mejor opción.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">Por tema</p>
+    <h2 class="h2">Todas las comparativas en español</h2>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Dividir gastos y controlar facturas</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/es/alternatives/tricount/">
+        <span class="pill">Utilidades</span>
+        <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Tricount</h3>
+        <p class="card-text">RightSplit divide un solo ticket sin crear grupos ni cuentas, y cada persona recibe su importe con un enlace para pagarte. Tricount se ajusta mejor a un viaje en el que todos anotan sus gastos.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/es/alternatives/splitwise/">
+        <span class="pill">Utilidades</span>
+        <h3 class="card-compared-title">RightSplit <span class="card-compared-vs">{{ t.alt_vs }}</span> Splitwise</h3>
+        <p class="card-text">RightSplit divide el ticket del restaurante sin registro y envía a cada persona su importe exacto. Para un libro de gastos que todo el grupo alimenta, Splitwise encaja mejor.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/es/alternatives/alternativa-a-fintonic/">
+        <span class="pill">Finanzas</span>
+        <h3 class="card-compared-title">AllPaid <span class="card-compared-vs">{{ t.alt_vs }}</span> Fintonic</h3>
+        <p class="card-text">AllPaid te recuerda las facturas y los contratos sin conectar tu banco ni crear cuenta. Si quieres préstamos, FinScore o cuentas conectadas, Fintonic es la mejor opción.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Ajedrez</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/es/alternatives/chess-com/">
+        <span class="pill">Juegos de mesa</span>
+        <h3 class="card-compared-title">Chessful <span class="card-compared-vs">{{ t.alt_vs }}</span> Chess.com</h3>
+        <p class="card-text">Importa tus partidas de Chess.com como PGN y Chessful las analiza en tu dispositivo, sin cuenta. Para jugar en línea contra otros jugadores, Chess.com sigue siendo la opción.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/es/alternatives/lichess/">
+        <span class="pill">Juegos de mesa</span>
+        <h3 class="card-compared-title">Chessful <span class="card-compared-vs">{{ t.alt_vs }}</span> Lichess</h3>
+        <p class="card-text">Para jugar y analizar gratis, Lichess es la elección. Chessful analiza tus partidas de Lichess sin conexión y explica cada error con palabras claras.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Salud y entrenamiento</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/es/alternatives/whoop/">
+        <span class="pill">Salud y forma física</span>
+        <h3 class="card-compared-title">Observa <span class="card-compared-vs">{{ t.alt_vs }}</span> Whoop</h3>
+        <p class="card-text">Observa calcula una puntuación de preparación diaria con el Apple Watch que ya llevas, sin segunda pulsera ni suscripción obligatoria. Whoop encaja mejor si prefieres sensores dedicados y coaching en la nube.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/es/alternatives/hevy/">
+        <span class="pill">Salud y forma física</span>
+        <h3 class="card-compared-title">LiftLog <span class="card-compared-vs">{{ t.alt_vs }}</span> Hevy</h3>
+        <p class="card-text">LiftLog es un registro de fuerza para entrenar en solitario, sin cuenta ni feed y con compra única. Hevy conviene más si quieres registrar series en el Apple Watch o entrenar con amigos.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">Tiempo de uso</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/es/alternatives/opal/">
+        <span class="pill">Tiempo de uso</span>
+        <h3 class="card-compared-title">EarnLock <span class="card-compared-vs">{{ t.alt_vs }}</span> Opal</h3>
+        <p class="card-text">Opal bloquea con calendarios y sesiones de concentración. EarnLock mantiene bloqueadas las apps que elijas hasta que cumples tu objetivo diario de actividad. Si quieres sesiones de concentración y bloqueo de sitios web, Opal es preferible.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+      <a class="card card-compared" href="/es/alternatives/forest/">
+        <span class="pill">Tiempo de uso</span>
+        <h3 class="card-compared-title">EarnLock <span class="card-compared-vs">{{ t.alt_vs }}</span> Forest</h3>
+        <p class="card-text">Forest bloquea apps mientras te concentras y hace crecer un árbol. EarnLock las mantiene bloqueadas hasta que cumples tu objetivo diario de actividad. Forest sirve mejor si usas Android o prefieres un temporizador de concentración.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h3 class="h2" style="margin-bottom:var(--s-2);">PDF y archivos</h3>
+    <div class="grid grid-2 stagger">
+      <a class="card card-compared" href="/es/alternatives/pdf-expert/">
+        <span class="pill">Utilidades</span>
+        <h3 class="card-compared-title">MediaKit <span class="card-compared-vs">{{ t.alt_vs }}</span> PDF Expert</h3>
+        <p class="card-text">MediaKit comprime, combina, firma y censura PDF en tu dispositivo, con la opción de una compra única de por vida. Para un trabajo intensivo con PDF, que incluya edición avanzada, PDF Expert es la mejor opción.</p>
+        <span class="card-compared-cta">{{ t.alt_read }}</span>
+      </a>
+    </div>
+  </div>
+  <div class="section reveal">
+    <p class="card-text">Otras comparativas solo existen por ahora en inglés, por ejemplo con <a href="/alternatives/strong-workout-app/" hreflang="en">Strong</a>, <a href="/alternatives/streaks-app/" hreflang="en">Streaks</a>, <a href="/alternatives/habitica/" hreflang="en">Habitica</a>, <a href="/alternatives/chessable/" hreflang="en">Chessable</a> y <a href="/alternatives/cloudconvert/" hreflang="en">CloudConvert</a>. Para verlas todas, cambia el idioma de esta página a inglés.</p>
+  </div>
+</section>

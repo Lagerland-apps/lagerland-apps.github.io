@@ -10,6 +10,7 @@
   "/alternatives/": {
     "de": "/de/alternatives/",
     "en": "/alternatives/",
+    "es": "/es/alternatives/",
     "fr": "/fr/alternatives/"
   },
   "/alternatives/alpha-progression/": {
@@ -42,6 +43,7 @@
   },
   "/alternatives/chess-com/": {
     "en": "/alternatives/chess-com/",
+    "es": "/es/alternatives/chess-com/",
     "fr": "/fr/alternatives/chess-com/"
   },
   "/alternatives/chessable/": {
@@ -73,6 +75,7 @@
   "/alternatives/forest/": {
     "de": "/de/alternatives/forest/",
     "en": "/alternatives/forest/",
+    "es": "/es/alternatives/forest/",
     "fr": "/fr/alternatives/forest/"
   },
   "/alternatives/gentler-streak/": {
@@ -91,6 +94,7 @@
   "/alternatives/hevy/": {
     "de": "/de/alternatives/hevy/",
     "en": "/alternatives/hevy/",
+    "es": "/es/alternatives/hevy/",
     "fr": "/fr/alternatives/hevy/"
   },
   "/alternatives/image-size/": {
@@ -109,6 +113,7 @@
   "/alternatives/lichess/": {
     "de": "/de/alternatives/lichess/",
     "en": "/alternatives/lichess/",
+    "es": "/es/alternatives/lichess/",
     "fr": "/fr/alternatives/lichess/"
   },
   "/alternatives/one-sec/": {
@@ -119,6 +124,7 @@
   "/alternatives/opal/": {
     "de": "/de/alternatives/opal/",
     "en": "/alternatives/opal/",
+    "es": "/es/alternatives/opal/",
     "fr": "/fr/alternatives/opal/"
   },
   "/alternatives/oura/": {
@@ -128,6 +134,7 @@
   },
   "/alternatives/pdf-expert/": {
     "en": "/alternatives/pdf-expert/",
+    "es": "/es/alternatives/pdf-expert/",
     "fr": "/fr/alternatives/pdf-expert/"
   },
   "/alternatives/productive/": {
@@ -150,6 +157,7 @@
   "/alternatives/splitwise/": {
     "de": "/de/alternatives/splitwise/",
     "en": "/alternatives/splitwise/",
+    "es": "/es/alternatives/splitwise/",
     "fr": "/fr/alternatives/splitwise/"
   },
   "/alternatives/streaks-app/": {
@@ -169,6 +177,7 @@
   "/alternatives/tricount/": {
     "de": "/de/alternatives/tricount/",
     "en": "/alternatives/tricount/",
+    "es": "/es/alternatives/tricount/",
     "fr": "/fr/alternatives/tricount/"
   },
   "/alternatives/unpluq/": {
@@ -187,6 +196,7 @@
   "/alternatives/whoop/": {
     "de": "/de/alternatives/whoop/",
     "en": "/alternatives/whoop/",
+    "es": "/es/alternatives/whoop/",
     "fr": "/fr/alternatives/whoop/"
   },
   "/alternatives/wikipedia-app/": {

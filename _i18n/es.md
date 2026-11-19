@@ -12,6 +12,7 @@ reviewing any Spanish page. Every decision a translator would otherwise make dif
 | Tier 1 pages | done 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/es.yml`), /es/llms.txt, /es/llms-full.txt, 21 OG cards. Commits 6a83675 (batch 1), ac4a1a3, e6e2231, 3857ea6, cfaed65 (batches 2 to 5), then AI files and go-live |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
 | Tier 2 | done 2026-11-19 (not pushed). Batch 1 (0cf087a): both hubs, chess, logic puzzles, xiangqi, workout without subscription, 3 audience pages, local-only /es/guides/limitar-tiempo-de-pantalla-iphone/. Batch 2: shogi, bill tracker rewritten around Fintonic, local-only /es/guides/como-poner-cuenta-atras-iphone/. Research: ~/Downloads/githubcode/es-tier2-research-2026-11-19.md. for/indie-ios-developers stays English-only (developers search in English) |
+| Tier 3, batch 1 | written and integrated 2026-11-19, no native review yet (not pushed): hub /es/alternatives/ and nine comparisons tricount, splitwise (RightSplit); chess-com, lichess (Chessful); whoop (Observa); hevy (LiftLog); opal, forest (EarnLock); pdf-expert (MediaKit); plus the local-only /es/alternatives/alternativa-a-fintonic/ (AllPaid vs Fintonic). Demand research over all 123 English comparisons: ~/Downloads/githubcode/es-tier3-research-2026-11-19.md (next batch listed there); Spanish store check: ~/Downloads/githubcode/es-tier3-store-2026-11-19.md. Stale check before the batch: 0 pages stale in any language |
 | Stale pages | 0 (2026-11-19, `i18n.py stale`) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 270 s wall, 137 s CPU before Spanish (2026-11-19, seven research agents running in parallel, so the wall time is inflated); French sheet had 80 s after French Tier 1. Idle machine 2026-11-19: 157 s before the tx-app fix, 52 s after (617 pages, `--profile`; tx-app 99.6 s to 4.9 s, I-0258) |
@@ -223,6 +224,24 @@ app queries (Chessful lost `mejor app de ajedrez`, GymLogger X `mejor app para g
 | /es/guides/bill-tracker-without-bank-connection/ | `app para controlar suscripciones` (AllPaid gave up `app control suscripciones`) | `app gastos fijos y variables`, `gestionar suscripciones apple`; `fintonic alternativas` moves to the Tier 3 «alternativa a Fintonic» page when it exists |
 | /es/guides/como-poner-cuenta-atras-iphone/ (local-only) | `como poner una cuenta atrás en el iphone` (Soon. gave up `widget cuenta atrás iphone`) | `como poner un widget de cuenta atrás en iphone`, `widget contador de días iphone`, `widget cuenta atrás iphone gratis` |
 
+Tier 3 batch 1 (2026-11-19, from es-tier3-research-2026-11-19.md). Comparisons own the brand queries; app pages and guides keep
+the generic ones (`app dividir gastos` stays on RightSplit, `app para controlar suscripciones` on the bill-tracker guide, which gave
+`fintonic alternativas` to the Fintonic page).
+
+| Page | Primary query | Secondary queries |
+|---|---|---|
+| /es/alternatives/ (hub) | `alternativa a tricount` … (brand list) | `comparativa apps iphone`, `apps alternativas iphone` |
+| /es/alternatives/tricount/ | `alternativa a tricount` | `tricount alternativa`, `tricount opiniones`, `tricount gratis` |
+| /es/alternatives/splitwise/ | `splitwise o tricount` | `splitwise o tricount cual es mejor`, `alternativas splitwise gratis`, `splitwise como funciona` |
+| /es/alternatives/alternativa-a-fintonic/ (local-only) | `alternativas a fintonic` | `fintonic alternativas`, `app como fintonic`, `fintonic es seguro` |
+| /es/alternatives/chess-com/ | `alternativa a chess.com` | `análisis de partidas chess.com gratis`, `chess.com gratis` |
+| /es/alternatives/lichess/ | `chess.com o lichess` | `es mejor chess com o lichess`, `alternativa a lichess` |
+| /es/alternatives/whoop/ | `whoop sin suscripción` (title: «Alternativa a Whoop sin suscripción obligatoria»; Observa is never «sin suscripción») | `whoop alternativas`, `alternativa whoop apple watch`, `alternativa a whoop sin pulsera` |
+| /es/alternatives/hevy/ | `alternativa a hevy` / `hevy app opiniones` | `hevy app precio`, `hevy app es gratis`, `hevy o strong` |
+| /es/alternatives/opal/ | `alternativa a opal` / `opal app para qué sirve` | `opal app es gratis`, `app como opal` |
+| /es/alternatives/forest/ | `forest app` / `alternativa a forest` | `forest app estudio`, `forest app gratis`, `forest app cómo funciona` |
+| /es/alternatives/pdf-expert/ | `alternativa a pdf expert` | `pdf expert gratis`, `pdf expert gratis mac` |
+
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
 - Founder lines mirror the two English forms: «Desarrollador Apple independiente · Finlandia · estudio de una sola
@@ -264,6 +283,23 @@ Candidates from the Tier 2 research (2026-11-19): a local-only «alternativa a F
 alternativas`, Fintonic ★25 898 in Spain); Spain-specific shift calendars Shifter (★33 072) and Supershift (★8621) for
 AfterShift; AppBlock (★974) for EarnLock. Not researched further yet. Candidates seen in the iTunes Search API results during keyword research are listed in
 es-keywords.md per page.
+
+## Decisions from Tier 3 batch 1 (2026-11-19)
+
+- JSON-LD `inLanguage` on Spanish pages is `"es-ES"` (the `html_lang`), never `"es"`.
+- Competitor facts: Spanish App Store rows only, in EUR, with «(App Store de España, consultado el 19 de noviembre de 2026)» once per
+  page (the small note); facts the Spanish store doesn't show stay as the English page's check says, and the note says which is which.
+  No price range built from mixed or truncated IAP rows (PDF Expert, Opal): state the billing model without amounts, or «entre los
+  planes de la ficha de España figuran…» when the rows are clear.
+- A listing that shows no Watch device: «No consta: la ficha de España no muestra ninguna app para el Apple Watch», never a flat «no tiene».
+- Apple's App Privacy headings in Spanish: sección «Privacidad de la app», «Datos usados para rastrearte», «Datos vinculados contigo»;
+  never «etiqueta de privacidad».
+- Chessful's PGN import takes up to 2.000 games since 2.1.1 (the English chess-com, lichess and chessis pages said 500; fixed in EN,
+  DE and FR in the same change).
+- Verdict wording: «encaja mejor», «conviene más», «es la opción», «sirve mejor», «es preferible»; vary them across a hub or llms block.
+- RightSplit: «la cuenta» or «el ticket» for the bill, «sin registro» or «cuenta de usuario» for accounts.
+- Fintonic page: AllPaid «no ofrece perfil crediticio ni préstamos» (AllPaid has a «Préstamos» bill category, so never «no tiene préstamos»);
+  «tus cuentas conectadas», never «todas tus cuentas»; the safety FAQ reports the listing only, with «no damos una opinión».
 
 ## Tells to cut in Spanish (TRANSLATION.md 8.2, plus what reviews find)
 
@@ -312,6 +348,8 @@ range («tienen entre X y Y… cada una»); «cronología de salida» (French ca
 description doesn't mention the Watch). Competitor prices: Spanish App Store euro rows only,
 «(App Store de España, consultado el …)» once per page; never US figures converted.
 
+Found in the Tier 3 batch 1 reviews (2026-11-19): «compra integrada» («compra dentro de la app»); «Tú y tu grupo dependéis» (mixed register); «hace mucho más» about a competitor; «ver todas tus cuentas» when the listing gives no count; «no tiene préstamos» when the app has a Loans category; «es la mejor opción» for "the better pick" («encaja mejor»); «no indica ninguna app» about a listing («no muestra», «no consta»); «etiqueta de privacidad»; a FAQ question that raises the English claim («protege mejor tus datos» for "more private"); «la mayor comunidad» (unsourced superlative); «de X a Y €» built from mixed IAP rows; «compra única» for "a one-time option" («opción de compra única»); «sin suscripción obligatoria» placed so it attaches to the competitor («Whoop sin suscripción obligatoria: Observa»); «sin X, sin Y y sin Z» lists; the dated store line repeated in card, FAQ and note; «{P_LIFETIME} una vez» («de por vida»); `{{P_…}}` double-brace tokens (Liquid error: single braces only). Hub and llms tells (R-wiring): «encaja mejor» on every line; «solo en inglés» next to the «(en inglés)» marker; a card that opens on a noun phrase with no subject; a card naming the page's metric differently («recuperación» vs «preparación»); «las comparamos» after a singular; «jugar en directo» when the page doesn't say live; a hub keyword that a comparison page owns.
+
 Translationese: title case headings; missing ¿ and ¡; chains of gerunds copied from English -ing («ofreciendo»,
 «permitiendo», «haciendo» trailing a sentence); passive «es … por» where Spanish uses «se»; possessives on body
 parts and devices copied from English («tu teléfono» is fine, «levanta tu mano» is not: «levanta la mano»);
@@ -353,6 +391,8 @@ home, all 21 app pages, about. Native review: none yet, for every page (NATIVE R
 | Tier 2 batch 2: shogi guide, bill tracker (Fintonic) | 2 writers (Sonnet) | 1 reviewer each; Fintonic listing re-fetched | n/a | no native review yet |
 | Tier 2 batch 2: local-only countdown guide | 1 writer (Sonnet), sources saved | 1 reviewer, sources re-fetched, claim by claim | n/a | no native review yet |
 | Tier 2 batch 2: hub cards, llms.txt lines, AllPaid and Soon. link sentences | main session | 1 wiring reviewer | n/a | no native review yet |
+| Tier 3 batch 1: 9 comparisons + local-only Fintonic page | one writer agent (Sonnet) each | reviewers R-money (14 must-fix), R-chess-pdf (6), R-health-screen (23), 2026-11-19 (copy-editing, fact diff against English and the Spanish store check, glossary, SEO/schema): e.g. Fintonic «no tiene préstamos» and «todas tus cuentas» fixed, Lichess unsupported «mayor comunidad» cut, PDF Expert price range removed, Whoop title moved off «Whoop sin suscripción obligatoria», Hevy Ladder card restored, Opal Watch claim softened to «No consta» | n/a (Tier 3) | no native review yet |
+| Tier 3 batch 1: hub, 10 llms.txt lines, bill-tracker guide link | one writer (Sonnet) + main session | R-wiring (about 12 must-fix: hub verdicts added, Whoop card metric, llms verdict variety, Lichess line answers the «o» query) | n/a | no native review yet |
 
 ## Apps still on English screenshots
 
