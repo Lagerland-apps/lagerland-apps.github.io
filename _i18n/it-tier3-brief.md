@@ -178,3 +178,35 @@ data: `/Users/anttiaittamaa/Downloads/githubcode/it-tier3-store-batch2-2026-11-1
   {P_LIFETIME}», never «una tantum» in prose; no keyword-then-colon seo.description; no question-opener quick_answer;
   every seo.keyword from the research file or it-keywords.md; run the copy-editing SKILL itself (two batch 1 writers
   skipped it and the reviewers found far more on their pages).
+
+---
+
+## Batch 3 (2026-11-19)
+
+Same rules as batches 1 and 2 (read both sections above; batch 2's «Lessons» list applies, plus the batch 2 review tells now
+in the sheet). Store and web data: `/Users/anttiaittamaa/Downloads/githubcode/it-tier3-store-batch3-2026-11-19.md` (it now
+includes each app's Italian App Privacy label; quote a label only from there).
+
+| English source | Write to | Our app | Primary query | Structural models |
+|---|---|---|---|---|
+| (local-only) | it/alternatives/alternativa-a-monefy.html | AllPaid | monefy come funziona | it/alternatives/alternativa-a-wallet-budgetbakers.html |
+| (local-only) | it/alternatives/alternativa-a-sleep-cycle.html | Observa | sleep cycle app come funziona | it/alternatives/alternativa-a-wallet-budgetbakers.html, it/alternatives/oura.html |
+| alternatives/wondershare-uniconverter.html | it/alternatives/wondershare-uniconverter.html | MediaKit | uniconverter è gratis | es/alternatives/wondershare-uniconverter.html, it/alternatives/handbrake.html |
+| alternatives/habitica.html | it/alternatives/habitica.html | Taskful Day | habitica come funziona | es, fr, pt habitica |
+| alternatives/alpha-progression.html | it/alternatives/alpha-progression.html | GymLogger X | alpha progression recensioni | es, fr alpha-progression; it/alternatives/fitbod.html |
+
+- Monefy is a manual expense tracker (no bank link per its listing, check): AllPaid is a bill and due-date reminder, not an
+  expense tracker. Frame honestly: what each one is for, when Monefy is the better choice. AllPaid facts as on the Wallet
+  page (reuse its reviewed wording).
+- Sleep Cycle: Observa facts only from `it/apps/observa/index.md` and Observa's APP_BLUEPRINT.md §10 (`~/Downloads/HealthLogger/APP_BLUEPRINT.md`):
+  Observa reads the sleep that Apple Watch (or another app) saves in Salute and adds a Punteggio sonno, readiness and HRV
+  (SDNN); its Sleep Score is duration, efficiency, awakenings and stages (blueprint 2026-10-30 note), not "consistency".
+  Observa has no alarm and does not record sound: never imply it replaces Sleep Cycle's alarm or snore recording. Health
+  topic: no medical claims; keep Sleep Cycle's own caveats as its listing words them.
+- Taskful Day: first Italian comparison. Facts from `it/apps/taskful-day/index.md`, glossary section (carry-forward is
+  «Sposta a oggi» or described; Inbox described; «verifiche»), blueprint §10 (`~/Downloads/TaskLogger/APP_BLUEPRINT.md`).
+- UniConverter: desktop tool, facts from the English page plus Wondershare's own pages in the store file; prices in the
+  currency the site shows; no App Store claim unless the store file shows a Mac App Store link.
+- Alpha Progression: GymLogger X wording as on the reviewed `it/alternatives/fitbod.html` («Pro anche a vita», never «senza
+  abbonamento» or «nessun abbonamento obbligatorio» on an overline).
+- Run the copy-editing SKILL itself (Skill tool or read SKILL.md and apply every sweep), not a hand pass.

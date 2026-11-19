@@ -66,3 +66,10 @@ for writers are the «Batch 2» section of it-tier3-brief.md. Extra checks:
   privacy-label claim is per-market; keep it only if the Italian store file supports it, else cut it.
 - seo.title patterns must differ from batch 1 titles and from each other; no raw keyword-then-colon titles
   («AppBlock: recensioni…», «Splid: come funziona…», «Fitbod costo in Italia…» read as raw keywords: rephrase if so).
+
+## Batch 3 (2026-11-19)
+
+Same method and batch 2 checks. Store/web data: `/Users/anttiaittamaa/Downloads/githubcode/it-tier3-store-batch3-2026-11-19.md`
+(includes the Italian App Privacy labels). Writer notes: `writer-notes.md` (batch 3). Research rows: «Batch 3» in the
+research file. Batch 3 rules: the «Batch 3» section of it-tier3-brief.md (Sleep Cycle: Observa has no alarm and records no
+sound; Monefy: AllPaid is not an expense tracker). Most writers again did a hand pass only: run the full skill.
