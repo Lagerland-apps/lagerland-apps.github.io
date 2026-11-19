@@ -1155,7 +1155,7 @@ Flags
 - **R8 (plural):** the `many` plural category is handled in the widget catalog ("%lld di pagamenti"). The main catalog's `%lld expense` is correct ("%lld spesa" / "%lld spese").
 - **R9 (best value):** `Best value` → "Miglior valore".
 - **R10 (store pun):** the store description opens with "fare alla romana" (split the bill equally); the site can use it too.
-- `Everyone's settled — no transfers needed.` → "Tutti sono in pari — nessun trasferimento necessario." (em dash in UI; do not copy to the site). `Pocket Split`: no key in the catalog (the Spanish glossary lists "División exprés"; no Italian string).
+- `Everyone's settled — no transfers needed.` → "Tutti sono in pari — nessun trasferimento necessario." (em dash in UI; do not copy to the site). `Pocket Split` → «Divisione lampo»; its widgets Settle Up → «Salda i conti», Waiting On → «In attesa di» (corrected 2026-11-19 in the page review; the first pass missed the key).
 
 ### Glossary
 
