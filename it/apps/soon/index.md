@@ -254,7 +254,7 @@ faq:
     a: "Puoi condividere qualsiasi conto alla rovescia come immagine in formato storia, post, messaggio o widget, tramite Messaggi, Instagram o qualsiasi app del menu di condivisione. Le schede da condividere gratuite hanno una piccola filigrana Soon., che Premium rimuove. Soon. non ha conti alla rovescia condivisi o in tempo reale tra persone: se due persone vogliono lo stesso conto alla rovescia, ciascuna lo aggiunge nella propria copia."
 
 related_journal:
-  anchor: "Come la modalità piano di Soon. costruisce la checklist di un matrimonio (o di un viaggio, o di una gravidanza)"
+  anchor: "Checklist matrimonio, viaggio o bebè: come la prepara la modalità piano di Soon."
 
 about_heading: "Che cosa fa Soon.: conti alla rovescia, piani, widget e ricordi"
 

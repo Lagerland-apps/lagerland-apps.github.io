@@ -13,7 +13,7 @@ reviewing any Italian page. Every decision a translator would otherwise make dif
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not pushed) |
 | Tier 2 | done 2026-11-19 (not pushed). Batch 1 (8cf9a81): both hubs, chess, logic puzzles, workout without subscription, 3 audience pages, local-only /it/guides/limitare-tempo-di-utilizzo-iphone/ and /it/guides/come-mettere-conto-alla-rovescia-iphone/. Batch 2: shogi, xiangqi, bill tracker rewritten around Wallet by BudgetBakers, Spendee and Toshl Finanze (Rocket Money, Monarch, Copilot not sold in Italy). for/indie-ios-developers stays English-only (developers search in English). Research: ~/Downloads/githubcode/it-tier2-research-2026-11-19.md; brief: `_i18n/it-tier2-brief.md` |
 | Tier 3 | batch 4 done 2026-11-19 (not pushed): the must-have comparisons left after an Italian demand scan of the 103 untranslated English pages: jefit, strong-workout-app (GymLogger X); hrv4training (Observa); one-sec (EarnLock); documents-by-readdle, xnconvert (MediaKit; XnConvert is a desktop tool, like HandBrake); flow-free, two-dots (Millrace, its first Italian comparisons); rise-sleep-tracker (AfterShift, its first); wikipedia-app, kiwix, wikiwand (WanderWiki, its first; wikiwand.com returned 403, so its plans stay qualitative). Hub 37 with new sections «Giochi di logica», «Lavoro a turni e sonno» and «Wikipedia». No local-only gap (pet-record apps: MyVet is a vet-clinic app, the rest under ten ratings). Research: it-tier3-research-2026-11-19.md § Batch 4 shortlist; store data it-tier3-store-batch4-2026-11-19.md. Remaining English comparisons have weak Italian demand (optional: Countdown Star, AutoSleep, KAMI 2, Gentler Streak, Nonogram Katana). Batch 3 done 2026-11-19 (short batch of five, pushed as 2091b6a): local-only alternativa-a-monefy and alternativa-a-sleep-cycle, wondershare-uniconverter, habitica, alpha-progression; hub 25; store data it-tier3-store-batch3-2026-11-19.md (with Italian App Privacy labels). Batch 2 done 2026-11-19, pushed as 4b80642: handbrake, convertio, cloudconvert (web/desktop tools, owner approved despite 6.4), opal, bevel, welltory, fitbod, settle-up and local-only /it/alternatives/alternativa-a-splid/ and /it/alternatives/alternativa-a-appblock/; hub 20 cards; store data it-tier3-store-batch2-2026-11-19.md. Batch 1 done 2026-11-19, pushed as 94ecf4d: /it/alternatives/ hub + tricount, splitwise, chess-com, lichess, whoop, oura, hevy, forest, pdf-expert and local-only /it/alternatives/alternativa-a-wallet-budgetbakers/ (also closes the Rocket Money part of I-0376 on the AllPaid page). Research: ~/Downloads/githubcode/it-tier3-research-2026-11-19.md (batch 2 queue inside: HandBrake, Convertio, CloudConvert, UniConverter, Splid local-only, Fitbod, Bevel, Opal, Jefit, Welltory, Settle Up, AppBlock local-only); store data: it-tier3-store-2026-11-19.md; briefs `_i18n/it-tier3-brief.md`, `_i18n/it-tier3-review-brief.md` |
-| Tier 4 | batch 1 done 2026-11-19 (not pushed): /it/journal/ hub («Blog») + how-many-steps-a-day-to-aim-for, how-long-to-rest-between-sets, how-to-estimate-your-one-rep-max, rpe-and-rir-explained, choosing-a-strength-program-you-will-finish, when-to-deload, how-much-to-tip-in-the-us, apple-watch-hrv-without-a-baseline, puppy-and-kitten-vaccination-schedule (Italy rabies rules from salute.gov.it) and local-only /it/journal/festivita-2027/ (L. 260/1949 as amended, L. 151/2025). Research: ~/Downloads/githubcode/it-tier4-research-2026-11-19.md (next-batch queue inside); briefs `_i18n/it-tier4-brief.md`, `_i18n/it-tier4-review-brief.md` |
+| Tier 4 | batch 2 done 2026-11-19 (hub now 20; not pushed): find-every-recurring-charge (Rocket Money replaced by Wallet and Spendee), double-progression-explained, puzzle-games-without-ads-or-lives, how-plan-mode-builds-a-checklist and six local-only posts: frequenza-cardiaca-a-riposo, sonno-rem, vo2-max, passaporto-europeo-cane, convertire-mkv-in-mp4, sovraccarico-progressivo. Batch 1 done 2026-11-19, pushed as 0ba952a (local bcc5df0): /it/journal/ hub («Blog») + how-many-steps-a-day-to-aim-for, how-long-to-rest-between-sets, how-to-estimate-your-one-rep-max, rpe-and-rir-explained, choosing-a-strength-program-you-will-finish, when-to-deload, how-much-to-tip-in-the-us, apple-watch-hrv-without-a-baseline, puppy-and-kitten-vaccination-schedule (Italy rabies rules from salute.gov.it) and local-only /it/journal/festivita-2027/ (L. 260/1949 as amended, L. 151/2025). Research: ~/Downloads/githubcode/it-tier4-research-2026-11-19.md (next-batch queue inside); briefs `_i18n/it-tier4-brief.md`, `_i18n/it-tier4-review-brief.md` |
 | Stale pages | 0 (2026-11-19, `i18n.py stale`); no wording-only changes waiting |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 69.5 s wall before Italian pages; 78 to 81 s with all 69 Italian Tier 1 pages (2026-11-19, clean worktree, other sessions' agents running) |
@@ -302,6 +302,16 @@ Tier 4 batch 1 (2026-11-19). Journal posts own the informational queries; app pa
 | apple-watch-hrv-without-a-baseline | `hrv bassa` | `hrv bassa cosa significa`, `hrv bassa cause`, `hrv valori normali` |
 | puppy-and-kitten-vaccination-schedule | `vaccinazioni cane` | `vaccini cucciolo cane`, `vaccinazioni cane obbligatorie`, `vaccini gattino` (Pawza keeps `calendario vaccinazioni cane`) |
 | local-only festivita-2027 | `festività 2027` | `festività 2027 italia`, `ponti 2027`, `festività 2027 san francesco`, `festività 2027 4 ottobre` |
+| find-every-recurring-charge (batch 2) | `come vedere abbonamenti iphone` | `come vedere abbonamenti attivi iphone`, `abbonamenti attivi apple`, `addebiti ricorrenti`, `addebiti ricorrenti paypal` |
+| double-progression-explained (batch 2) | `doppia progressione` | `doppia progressione palestra`, `metodo doppia progressione` |
+| puzzle-games-without-ads-or-lives (batch 2) | `giochi senza pubblicità` | `giochi senza pubblicità gratis`, `migliori giochi iphone senza pubblicità` (Tare keeps `… iphone`, Millrace `giochi di logica senza pubblicità`) |
+| how-plan-mode-builds-a-checklist (batch 2) | `checklist matrimonio` | `checklist organizzazione matrimonio`, `lista cose da fare matrimonio` |
+| local-only frequenza-cardiaca-a-riposo (batch 2) | `frequenza cardiaca a riposo` | `… normale`, `… donna`, `… uomo`, `… ideale` |
+| local-only sonno-rem (batch 2) | `sonno rem` | `sonno rem cos’è`, `sonno rem e non rem`, `sonno rem quanto dura` |
+| local-only vo2-max (batch 2) | `vo2 max` | `vo2 max cos’è`, `vo2 max apple watch`, `vo2 max valori`, `vo2 max tabella` |
+| local-only passaporto-europeo-cane (batch 2) | `passaporto europeo cane` | `… come ottenerlo`, `passaporto cane dove si fa`, `passaporto cane quanto dura`, `… costo`, `… tempistiche` |
+| local-only convertire-mkv-in-mp4 (batch 2) | `convertire mkv in mp4` | `… con vlc`, `… senza perdere qualità`, `… mac`, `app per convertire mkv in mp4` |
+| local-only sovraccarico-progressivo (batch 2) | `sovraccarico progressivo` | `… come si fa`, `… esempi`, `… significato`, `principio del sovraccarico progressivo` |
 
 ## Decisions from the Tier 4 reviews (2026-11-19)
 
@@ -319,6 +329,12 @@ Tier 4 batch 1 (2026-11-19). Journal posts own the informational queries; app pa
   ponti only as «guarda il tuo contratto o chiedi al datore di lavoro»; patron days only as the Camera page says; no pay rules.
 - Soon.: never say an Italian holiday gets the “Festività” event type (the type is inferred from English title words, I-0295).
 - Link sentences from app pages to posts: «l’articolo del blog <link>su …</link>», not «il nostro articolo».
+- Batch 2: local-only health posts name each source and state disagreements side by side (bradicardia < 50 ISSalute vs < 60
+  Humanitas; REM about 20% Treccani vs about 25% Cleveland Clinic); a writer's own arithmetic is labelled «un calcolo fatto per questa
+  pagina»; Observa's defective Italian stage and VO2 strings are never quoted (describe in plain words, Apple's «tono cardiovascolare»);
+  Observa claims only from §10 and the Italian app page, never §4; third-party fees (ASL passport) dated and followed by «Chiedi alla tua
+  ASL»; no brand suffix («| Soon.») on a blog seo.title; LiftLog's option is “Suggerimenti peso intelligenti”, its target chip
+  “Obiettivo 80 kg × 8 · Doppia”.
 
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
@@ -468,6 +484,12 @@ passi al giorno fare?» («Quanti passi fare al giorno?»); «full immersione» 
 presa da una fonte consultata», «non le abbiamo verificate»); claims stronger than the source on patron days; bold-label bullet lists; a
 keyword-then-colon H1 or a raw keyword-question seo.title; writer-added definitions («Il massimale è…» as its own line); keywords with no
 suggest evidence; dropped hedges («circa», «tutto», «all’incirca», «probabilmente»).
+Batch 2 reviews: «strato» for layer («livello»); «consegnare» for ship; «la scheda» for an in-game card («riquadro»); «il più piccolo
+incremento» («l’incremento più piccolo»); «è brava a…» of a method; «ripartire più leggero», «ti sei iscritto», «da sveglio» (gendered);
+«come si pagano i gratis»; «(… all’americana)» glosses that add a claim; «Un’app manuale»; «proiettare avanti»; «situa» («colloca»);
+«sentire il medico» («rivolgersi al medico»); «calcolo nostro»; label-colon bullets per source; a general rule drawn from three local
+pages; writers' own statistical advice in quick_answer; an app's keyword in a post's seo.title; U+00A0 missing before kg, giorni,
+ripetizioni and in read_time; a 404 page saved as a source.
 
 Found in the Tier 3 batch 4 reviews (2026-11-19): «dal vivo» for live data or a game's live events («online», «eventi a tempo»);
 «fa un altro lavoro» («serve ad altro»); «il lavoro è diverso», «la domanda è dove…» («ti chiedono cose diverse», «devi capire…»);
@@ -526,6 +548,8 @@ reviewers: home, all 21 app pages, about. Native review: none yet, for every pag
 | Tier 3 batch 4: hub (37 cards, 3 new sections), 12 llms.txt lines, Observa / GymLogger X links | main session | 1 wiring reviewer (Opus) | n/a | no native review yet |
 | Tier 4 batch 1: 9 journal posts + local-only festivita-2027 | 10 writers (Sonnet), Italian sources saved per post (salute.gov.it, Your Europe, Normattiva, Camera, EpiCentro, Apple Italy) | 3 reviewers (Opus): full copy-editing skill, sentence-by-sentence fact diff, every worked example recomputed, every source re-fetched live, UI labels against the .xcstrings | n/a | no native review yet |
 | Tier 4 batch 1: /it/journal/ hub, 10 llms.txt routing lines + Blog lines, link sentences on 7 app pages, GymLogger X anchor | main session | 1 wiring reviewer (Opus) | n/a | no native review yet |
+| Tier 4 batch 2: 4 translations + 6 local-only posts | 10 writers (Sonnet), sources saved per post (Apple Italy, ISSalute, Humanitas, Manuale MSD, Treccani, salute.gov.it, Your Europe, three ASL pages, VLC docs, matroska.org, PubMed/PMC, Apple white papers, Italian store lookups) | 3 reviewers (Opus): full copy-editing skill, fact diff (translations), every source re-fetched live and claim-checked, UI labels against the .xcstrings | n/a | no native review yet |
+| Tier 4 batch 2: hub (20), 10 llms.txt lines + Blog line, links on 7 app pages, Soon. anchor, batch 1 links repointed | main session | 1 wiring reviewer (Opus) | n/a | no native review yet |
 
 ## Screenshots
 

@@ -87,7 +87,7 @@ In pratica, recupera abbastanza perché la serie successiva non venga accorciata
 
 ## Conviene cronometrare il recupero?
 
-Secondo me sì, anche se il motivo c’entra poco con la fisiologia. Ogni regola di progressione basata sulle ripetizioni presuppone che le ripetizioni siano confrontabili da una seduta all’altra. Se martedì le serie erano separate da due minuti e venerdì da quattro perché guardavi il telefono, le ripetizioni nel tuo diario misurano il recupero tanto quanto il sollevamento. Conta soprattutto con la [doppia progressione](/journal/double-progression-explained/){: hreflang="en"} (in inglese), dove il peso sale solo quando ogni serie raggiunge il limite alto dell’intervallo di ripetizioni.
+Secondo me sì, anche se il motivo c’entra poco con la fisiologia. Ogni regola di progressione basata sulle ripetizioni presuppone che le ripetizioni siano confrontabili da una seduta all’altra. Se martedì le serie erano separate da due minuti e venerdì da quattro perché guardavi il telefono, le ripetizioni nel tuo diario misurano il recupero tanto quanto il sollevamento. Conta soprattutto con la [doppia progressione](/it/journal/double-progression-explained/), dove il peso sale solo quando ogni serie raggiunge il limite alto dell’intervallo di ripetizioni.
 
 Un timer tiene fissa quella variabile e, al contrario, impedisce al recupero di accorciarsi nei giorni in cui hai fretta.
 

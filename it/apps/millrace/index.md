@@ -189,7 +189,7 @@ comparison_table:
 
 faq:
   - q: "Che tipo di gioco di logica è Millrace?"
-    a: "Un gioco di logica a tessere, con livelli. Ogni livello ti dà un tabellone di partenza definito, una coda fissa di tessere in arrivo e un limite di mosse. Le tessere arrivano una alla volta sulla cella di arrivo, le tessere uguali si uniscono quando le fai scorrere l’una contro l’altra e il tuo obiettivo è formare un numero preciso sulla cella segnata. Dentro un livello non c’è nulla di casuale e ogni livello ha una soluzione più breve dimostrata."
+    a: "Un gioco di logica a tessere, con livelli. Ogni livello ti dà un tabellone di partenza definito, una coda fissa di tessere in arrivo e un limite di mosse. Le tessere arrivano una alla volta sulla cella di arrivo, le tessere uguali si uniscono quando le fai scorrere l’una contro l’altra e il tuo obiettivo è formare un numero preciso sulla cella segnata. Dentro un livello non c’è nulla di casuale e ogni livello ha una soluzione più breve dimostrata. Come si pagano i giochi gratis, con la pubblicità, le vite o gli acquisti in-app, lo spiega l’articolo del blog <a href=\"/it/journal/puzzle-games-without-ads-or-lives/\">sui giochi senza pubblicità né vite</a>."
   - q: "Come si fa a essere sicuri che ogni livello sia risolvibile?"
     a: "Lo controlla un solver prima che il livello esca. Ogni livello passa da una ricerca in ampiezza che trova la sua soluzione più breve e un livello senza soluzione dimostrata non esce. Un test automatico verifica anche che il gioco casuale vinca di rado. La soluzione più breve è il minimo possibile che ti mostra la scheda del risultato."
   - q: "Quali sono i due modi di perdere?"

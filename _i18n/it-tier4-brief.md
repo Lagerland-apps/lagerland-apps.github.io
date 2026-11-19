@@ -164,3 +164,50 @@ pages (the main session wires them). Other sessions (nl, es, pt) work in this sa
   blueprint §10 (free event limit, pinning, widgets: wording exactly as the Italian app page). Link the Italian countdown
   guide `/it/guides/come-mettere-conto-alla-rovescia-iphone/` once.
 - Slug, headings and all text in Italian; no hreflang alternates (the layout handles it).
+
+---
+
+# Batch 2 (2026-11-19): 4 translations + 6 local-only posts
+
+Everything above applies. Batch 1 is live: read one finished Italian post of your topic area first
+(`it/journal/<slug>/index.md`) for tone, link style and front matter, and `_i18n/it.md` § «Decisions from the Tier 4 reviews»
+and the «Found in the Tier 4 reviews» tells. Those were the reviewers' most common fixes: hyphen ranges, dropped hedges,
+writer-added definitions, keywords with no suggest evidence, gendered address, bold-label bullets, reviewer-facing meta in copy.
+
+Italian journal posts you may link (batch 1, live): the ten listed in "Links inside the post" above. Batch 2 posts (will exist):
+`/it/journal/find-every-recurring-charge/`, `/it/journal/double-progression-explained/`,
+`/it/journal/puzzle-games-without-ads-or-lives/`, `/it/journal/how-plan-mode-builds-a-checklist/`,
+`/it/journal/frequenza-cardiaca-a-riposo/`, `/it/journal/sonno-rem/`, `/it/journal/vo2-max/`,
+`/it/journal/passaporto-europeo-cane/`, `/it/journal/convertire-mkv-in-mp4/`, `/it/journal/sovraccarico-progressivo/`.
+Italian comparisons now also include jefit, strong-workout-app, xnconvert, documents-by-readdle, hrv4training, one-sec, flow-free,
+two-dots, rise-sleep-tracker, wikipedia-app, kiwix, wikiwand (`ls it/alternatives`).
+
+New keyword owners (never your primary): `giochi senza pubblicità iphone` (Tare), `giochi di logica senza pubblicità` (Millrace),
+`cancellare abbonamento iphone` (support hub), `gestione abbonamenti app iphone` and `migliore app per scadenze pagamenti` (bill
+guide), `convertire video in mp4 iphone` (MediaKit), `hrv valori normali` (batch 1 HRV post).
+
+## Local-only posts (6): common rules
+
+Front matter: `layout: journal`, `slug` = the Italian slug, `permalink: /it/journal/<slug>/`, `local_only: true`, NO `ref`, NO
+`translated_from`, `date` and `last_updated` 2026-11-19, `mentioned_apps` as the table says. Structural models: the French and
+Spanish local-only posts named per row (read for structure only; never copy their facts or sources). Every fact comes from:
+(a) an Italian or international source you fetched today and saved (sources folder, URL on line 1), (b) an English post on this site
+that says it (cite it as the English post does, or link it with «(in inglese)»), or (c) the app's facts (`_apps/<slug>.md`, the
+Italian app page, the glossary, blueprint §10). Never a number from memory. Health and pet posts are YMYL: a «non è un consiglio
+medico/veterinario» line, and «parlane con il medico / con il veterinario» only as strongly as a source supports. Quote under 15
+words, paraphrase the rest.
+
+## Batch 2 per-post notes
+
+| Post | Write to | Primary | Notes |
+|---|---|---|---|
+| find-every-recurring-charge (AllPaid) | it/journal/find-every-recurring-charge/index.md | come vedere abbonamenti iphone | Secondaries «come vedere abbonamenti attivi iphone», «abbonamenti attivi apple», «addebiti ricorrenti», «addebiti ricorrenti paypal». Rocket Money / Truebill are not sold in Italy: replace that section with Wallet by BudgetBakers and Spendee as the Italian bank-linked examples, using ONLY the facts on `it/alternatives/alternativa-a-wallet-budgetbakers.html` and in `~/Downloads/githubcode/it-tier2-research-2026-11-19.md` (Spendee: «Sincronizza il tuo conto bancario»); no prices unless those files give them. Where the English names US places (Venmo, US carriers) use Italian ones only from fetched official help pages (Apple Italy «Visualizzare o annullare gli abbonamenti», PayPal Italia «pagamenti automatici», Google Play it); Postepay/bank-app «addebiti ricorrenti» only if you fetch an official page. Model: es/journal/find-every-recurring-charge (Fintonic). The Apple path as Apple Italy writes it: Impostazioni > [il tuo nome] > Abbonamenti |
+| double-progression-explained (LiftLog) | it/journal/double-progression-explained/index.md | doppia progressione | «doppia progressione palestra», «metodo doppia progressione», «progressione doppia allenamento». Examples in kg, recomputed. LiftLog progression names from its Italian page/glossary |
+| puzzle-games-without-ads-or-lives (Millrace) | it/journal/puzzle-games-without-ads-or-lives/index.md | giochi senza pubblicità | «giochi senza pubblicità gratis», «giochi senza pubblicità online», «migliori giochi iphone senza pubblicità». NEVER the number title Millrace replaced (no «2048» anywhere, not even as a genre). Any competitor game named in the English: check it is sold in the Italian App Store (iTunes lookup country=it) before keeping a store fact; drop US-only store facts |
+| how-plan-mode-builds-a-checklist (Soon.) | it/journal/how-plan-mode-builds-a-checklist/index.md | checklist matrimonio | «checklist organizzazione matrimonio», «lista cose da fare matrimonio», «lista cose da fare per organizzare matrimonio». Soon. plan-mode labels exactly as the Italian app page / glossary. Do NOT claim an Italian event title picks the event type (I-0295: type is read from English title words); if the English says the type comes from the title, describe what the English says without implying it works for Italian titles, or cut it. Wedding timings only as the English gives them |
+| local-only frequenza-cardiaca-a-riposo (Observa) | it/journal/frequenza-cardiaca-a-riposo/index.md | frequenza cardiaca a riposo | «frequenza cardiaca a riposo normale», «frequenza cardiaca a riposo donna», «frequenza cardiaca a riposo uomo», «frequenza cardiaca a riposo ideale». Models fr frequence-cardiaque-au-repos, es frecuencia-cardiaca-en-reposo. Sources: ISS / Ministero della Salute / an Italian university-hospital page for the normal range; Apple Italy for «Battito cardiaco a riposo» and how the Watch measures it; Observa facts. English posts to reuse: `apple-health-metrics-worth-interpreting`, `your-apple-health-data-doesnt-mean-what-you-think` |
+| local-only sonno-rem (Observa) | it/journal/sonno-rem/index.md | sonno rem | «sonno rem cos’è», «sonno rem e non rem», «sonno rem quanto deve durare», «sonno rem e sonno profondo». Model fr sommeil-paradoxal. Apple Italy's stages Veglia, REM, Principale, Profondo (support.apple.com/it-it/108906) and Apple's own caveat on accuracy; percentages only from a fetched source (e.g. an Italian sleep-medicine society or university page, or a cited study). Observa: only what its Italian page says about sleep |
+| local-only vo2-max (Observa) | it/journal/vo2-max/index.md | vo2 max | «vo2 max cos’è», «vo2 max apple watch», «vo2 max valori», «vo2 max come si calcola». Model fr vo2-max. Apple Italy «tono cardiovascolare» (support.apple.com/it-it pages on cardio fitness: how it's estimated, which workouts, the age range, «Basso» level and notifications); value tables only from a fetched source with its name; Observa facts |
+| local-only passaporto-europeo-cane (Pawza) | it/journal/passaporto-europeo-cane/index.md | passaporto europeo cane | «passaporto europeo cane come ottenerlo», «passaporto cane dove si fa», «passaporto cane quanto dura», «passaporto europeo cane costo» (cost only if an official ASL/Regione page states it; else say it varies by ASL and to ask yours, only as the source says). Model fr passeport-europeen-chien-chat. Reuse the batch 1 sources in `…/sources/puppy-and-kitten-vaccination-schedule/` (salute.gov.it passport, microchip, viaggio verso l’Italia, Your Europe it): copy the files you rely on into your own sources folder. Cats and ferrets too where the sources say so |
+| local-only convertire-mkv-in-mp4 (MediaKit) | it/journal/convertire-mkv-in-mp4/index.md | convertire mkv in mp4 | «convertire mkv in mp4 con vlc», «convertire mkv in mp4 senza perdere qualità», «convertire mkv in mp4 mac», «app per convertire mkv in mp4». Model fr convertir-mkv-en-mp4, es convertir-mkv-a-mp4. Sources: matroska.org, VideoLAN docs (VLC convert), Apple Italy support on supported formats; HandBrake only as its site says (link /it/alternatives/handbrake/). MediaKit facts only from blueprint §10 and it/apps/mediakit (free tools, Pro, iPhone and Mac, on-device). No claim that remuxing never loses anything beyond what a source says |
+| local-only sovraccarico-progressivo (LiftLog, GymLogger X) | it/journal/sovraccarico-progressivo/index.md | sovraccarico progressivo | «sovraccarico progressivo come si fa», «sovraccarico progressivo esempi», «sovraccarico progressivo significato», «principio del sovraccarico progressivo». Model fr surcharge-progressive-musculation, es sobrecarga-progresiva. Studies and numbers only as the English posts `double-progression-explained`, `choosing-a-strength-program-you-will-finish`, `how-long-to-rest-between-sets` cite them, or from a paper you fetch (PubMed abstract). Link the Italian double-progression, program and deload posts. Never «Project Invictus» |

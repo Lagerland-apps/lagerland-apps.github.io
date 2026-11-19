@@ -4717,7 +4717,7 @@
      "q": "AllPaid può ricordarmi il rinnovo di un contratto?"
     },
     {
-     "a": "Solo quelle che inserisci. AllPaid non scansiona la tua email né le tue transazioni, quindi non può trovare una prova che hai attivato e dimenticato. Aggiungi la prova come bolletta in scadenza il giorno in cui diventa a pagamento, o come contratto che finisce quel giorno, e AllPaid ti avvisa prima della data.",
+     "a": "Solo quelle che inserisci. AllPaid non scansiona la tua email né le tue transazioni, quindi non può trovare una prova che hai attivato e dimenticato. Aggiungi la prova come bolletta in scadenza il giorno in cui diventa a pagamento, o come contratto che finisce quel giorno, e AllPaid ti avvisa prima della data. Per trovare gli addebiti ricorrenti che paghi già, l’articolo del blog <a href=\"/it/journal/find-every-recurring-charge/\">su come vedere gli abbonamenti su iPhone</a> elenca in ordine otto posti da controllare.",
      "q": "AllPaid segnala le prove gratuite prima che diventino un abbonamento?"
     },
     {
@@ -5163,7 +5163,7 @@
      "q": "GymLogger X funziona su Apple Watch senza iPhone?"
     },
     {
-     "a": "GymLogger X stima il tuo 1RM per ogni esercizio con la formula di Epley, dalle serie da 3 ripetizioni in su, e segue la tendenza nelle sessioni. Con Pro, “Progresso di forza” dà a ogni esercizio uno stato (plateau, da osservare o plateau previsto) e un punteggio di sovraccarico, e la scheda “Prossima mossa” lo trasforma in un suggerimento, come un giorno di riposo o un cambio di approccio. Tutto gira sul tuo iPhone con regole fisse. Non modifica il tuo programma e non invia notifiche; decidi tu cosa fare.",
+     "a": "GymLogger X stima il tuo 1RM per ogni esercizio con la formula di Epley, dalle serie da 3 ripetizioni in su, e segue la tendenza nelle sessioni. Con Pro, “Progresso di forza” dà a ogni esercizio uno stato (plateau, da osservare o plateau previsto) e un punteggio di sovraccarico, e la scheda “Prossima mossa” lo trasforma in un suggerimento, come un giorno di riposo o un cambio di approccio. Tutto gira sul tuo iPhone con regole fisse. Non modifica il tuo programma e non invia notifiche; decidi tu cosa fare. Come far crescere carico e ripetizioni un po’ alla volta lo spiega l’articolo del blog <a href=\"/it/journal/sovraccarico-progressivo/\">sul sovraccarico progressivo</a>.",
      "q": "Come funziona il rilevamento dei plateau?"
     },
     {
@@ -5228,7 +5228,7 @@
      "q": "Quali programmi include LiftLog?"
     },
     {
-     "a": "Sì. Dai a un esercizio del programma uno schema di progressione (doppia progressione, lineare, % del massimale d’allenamento oppure RPE / RIR) e LiftLog compila ogni serie in sospeso con il peso che il programma prescrive. A fine allenamento, un riepilogo della progressione segna ogni esercizio come “Progredito”, “Mantieni”, “Mancato” o “Scarico”. I suggerimenti intelligenti sui pesi sono attivi di default e si possono disattivare in Impostazioni.",
+     "a": "Sì. Dai a un esercizio del programma uno schema di progressione (doppia progressione, lineare, % del massimale d’allenamento oppure RPE / RIR) e LiftLog compila ogni serie in sospeso con il peso che il programma prescrive. A fine allenamento, un riepilogo della progressione segna ogni esercizio come “Progredito”, “Mantieni”, “Mancato” o “Scarico”. L’opzione “Suggerimenti peso intelligenti” è attiva per impostazione predefinita e si può disattivare in Impostazioni. L’articolo del blog <a href=\"/it/journal/double-progression-explained/\">sulla doppia progressione</a> spiega come funziona questo schema, e quello <a href=\"/it/journal/sovraccarico-progressivo/\">sul sovraccarico progressivo</a> il principio comune a tutti.",
      "q": "LiftLog può suggerirmi il peso del prossimo allenamento?"
     },
     {
@@ -5289,7 +5289,7 @@
      "q": "Come comprimere un video su iPhone per rispettare un limite di dimensioni?"
     },
     {
-     "a": "Video: converte in MP4, MOV o M4V con H.264, HEVC o ProRes (ProRes viene scritto in .mov). Gli MKV si aprono direttamente, perché MediaKit li scompatta da sé (l’audio DTS, E-AC-3 e MP3 dentro un MKV viene scartato, con un avviso). Audio: legge formati come MP3 e FLAC e scrive M4A (AAC), WAV, AIFF, ALAC e CAF. Immagini: HEIC, JPG, PNG, TIFF, GIF, WebP (dove il tuo sistema sa scriverlo), BMP e JPEG 2000, più RAW delle fotocamere, AVIF, PSD ed EXR in ingresso. Ebook: EPUB, FB2, MOBI e AZW3 (solo lettura), PDF, TXT, HTML, CBZ e RTF. Archivi: ZIP, TAR, TAR.GZ, GZIP, XZ e BZIP2, più RAR4 e RAR5 per l’estrazione. WebM, la creazione di RAR, i RAR cifrati e i libri Kindle protetti da DRM non sono supportati.",
+     "a": "Video: converte in MP4, MOV o M4V con H.264, HEVC o ProRes (ProRes viene scritto in .mov). Gli MKV si aprono direttamente, perché MediaKit li scompatta da sé (l’audio DTS, E-AC-3 e MP3 dentro un MKV viene scartato, con un avviso). L’articolo del blog <a href=\"/it/journal/convertire-mkv-in-mp4/\">su come convertire MKV in MP4</a> spiega il remux e confronta VLC, i convertitori online e MediaKit. Audio: legge formati come MP3 e FLAC e scrive M4A (AAC), WAV, AIFF, ALAC e CAF. Immagini: HEIC, JPG, PNG, TIFF, GIF, WebP (dove il tuo sistema sa scriverlo), BMP e JPEG 2000, più RAW delle fotocamere, AVIF, PSD ed EXR in ingresso. Ebook: EPUB, FB2, MOBI e AZW3 (solo lettura), PDF, TXT, HTML, CBZ e RTF. Archivi: ZIP, TAR, TAR.GZ, GZIP, XZ e BZIP2, più RAR4 e RAR5 per l’estrazione. WebM, la creazione di RAR, i RAR cifrati e i libri Kindle protetti da DRM non sono supportati.",
      "q": "Quali formati di file supporta MediaKit?"
     },
     {
@@ -5322,7 +5322,7 @@
   "millrace": {
    "faq": [
     {
-     "a": "Un gioco di logica a tessere, con livelli. Ogni livello ti dà un tabellone di partenza definito, una coda fissa di tessere in arrivo e un limite di mosse. Le tessere arrivano una alla volta sulla cella di arrivo, le tessere uguali si uniscono quando le fai scorrere l’una contro l’altra e il tuo obiettivo è formare un numero preciso sulla cella segnata. Dentro un livello non c’è nulla di casuale e ogni livello ha una soluzione più breve dimostrata.",
+     "a": "Un gioco di logica a tessere, con livelli. Ogni livello ti dà un tabellone di partenza definito, una coda fissa di tessere in arrivo e un limite di mosse. Le tessere arrivano una alla volta sulla cella di arrivo, le tessere uguali si uniscono quando le fai scorrere l’una contro l’altra e il tuo obiettivo è formare un numero preciso sulla cella segnata. Dentro un livello non c’è nulla di casuale e ogni livello ha una soluzione più breve dimostrata. Come si pagano i giochi gratis, con la pubblicità, le vite o gli acquisti in-app, lo spiega l’articolo del blog <a href=\"/it/journal/puzzle-games-without-ads-or-lives/\">sui giochi senza pubblicità né vite</a>.",
      "q": "Che tipo di gioco di logica è Millrace?"
     },
     {
@@ -5500,7 +5500,7 @@
      "q": "Observa si sincronizza tra dispositivi o esporta i miei dati?"
     },
     {
-     "a": "Tutto arriva da Salute. Sonno: durata, efficienza, risvegli, regolarità, fasi, frequenza cardiaca notturna e il suo calo, e debito di sonno rispetto al tuo obiettivo. Recupero: Prontezza, HRV (SDNN), frequenza cardiaca a riposo e stress. Cuore: frequenza cardiaca in camminata, VO₂ max, zone e recupero della frequenza cardiaca e registrazioni ECG. Attività e allenamenti: passi, minuti attivi, distanza, piani saliti, carico di allenamento e punteggio di sforzo. Respirazione: frequenza respiratoria e ossigeno nel sangue. Corpo ed energia: peso, grasso corporeo, massa magra ed energia attiva e a riposo. Il contesto del ciclo, facoltativo, mostra la fase del ciclo accanto a recupero e sonno, senza cambiare i tuoi punteggi. I segnali di recupero e del cuore sono letti rispetto al tuo intervallo abituale.",
+     "a": "Tutto arriva da Salute. Sonno: durata, efficienza, risvegli, regolarità, fasi, frequenza cardiaca notturna e il suo calo, e debito di sonno rispetto al tuo obiettivo. Recupero: Prontezza, HRV (SDNN), frequenza cardiaca a riposo e stress. Cuore: frequenza cardiaca in camminata, VO₂ max, zone e recupero della frequenza cardiaca e registrazioni ECG. Attività e allenamenti: passi, minuti attivi, distanza, piani saliti, carico di allenamento e punteggio di sforzo. Respirazione: frequenza respiratoria e ossigeno nel sangue. Corpo ed energia: peso, grasso corporeo, massa magra ed energia attiva e a riposo. Il contesto del ciclo, facoltativo, mostra la fase del ciclo accanto a recupero e sonno, senza cambiare i tuoi punteggi. I segnali di recupero e del cuore sono letti rispetto al tuo intervallo abituale. Sul blog ci sono articoli dedicati alla <a href=\"/it/journal/frequenza-cardiaca-a-riposo/\">frequenza cardiaca a riposo</a>, al <a href=\"/it/journal/sonno-rem/\">sonno REM</a> e al <a href=\"/it/journal/vo2-max/\">VO2 max</a>.",
      "q": "Cosa misura esattamente Observa?"
     },
     {
