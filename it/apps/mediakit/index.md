@@ -129,7 +129,7 @@ privacy:
 
 faq:
   - q: "Cos’è MediaKit?"
-    a: "MediaKit è un’app per iPhone e Mac con più di 150 strumenti per comprimere, convertire e modificare video, audio, immagini, PDF, archivi ed ebook. Trascini un file, MediaKit ti propone gli strumenti adatti e ognuno funziona sul tuo dispositivo. Cinque strumenti sono gratuiti per sempre e Pro sblocca tutto il resto, con un solo acquisto che vale per iPhone e Mac."
+    a: "MediaKit è un’app per iPhone e Mac con più di 150 strumenti per comprimere, convertire e modificare video, audio, immagini, PDF, archivi ed ebook. Trascini un file, MediaKit ti propone gli strumenti adatti e ognuno funziona sul tuo dispositivo. Cinque strumenti sono gratuiti per sempre e Pro sblocca tutto il resto, con un solo acquisto che vale per iPhone e Mac. Sul blog ci sono articoli su come <a href=\"/it/journal/estrarre-audio-da-video-iphone/\">estrarre l’audio da un video su iPhone</a> e su come <a href=\"/it/journal/ridurre-dimensioni-foto-iphone/\">ridurre le dimensioni di una foto su iPhone</a>."
   - q: "MediaKit carica i miei file online?"
     a: "No. Ogni strumento funziona sul tuo iPhone o sul tuo Mac e l’app non fa richieste di rete per conto suo; solo gli acquisti passano da App Store di Apple. Non c’è alcun account e l’app non ha SDK di analisi. La trascrizione e i sottotitoli automatici usano il riconoscimento vocale sul dispositivo."
   - q: "Come comprimere un video su iPhone per rispettare un limite di dimensioni?"

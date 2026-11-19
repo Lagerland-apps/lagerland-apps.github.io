@@ -4612,7 +4612,7 @@
      "q": "Che cos’è AfterShift?"
     },
     {
-     "a": "A infermieri e personale ospedaliero, paramedici, vigili del fuoco, squadre di fabbrica, di logistica e di assistenza a terra in aeroporto, personale alberghiero e notturno, chi è in reperibilità e chiunque abbia una finestra di sonno che cambia da una settimana all’altra. Se la tua turnazione si ripete, da 4 in turno / 4 di riposo fino a un ciclo DuPont di 28 giorni, AfterShift può contenerla. In fase di configurazione ti chiede se lavori a turni a rotazione, con un orario fisso o con orari irregolari e in reperibilità.",
+     "a": "A infermieri e personale ospedaliero, soccorritori, vigili del fuoco, squadre di fabbrica, di logistica e di assistenza a terra in aeroporto, personale alberghiero e notturno, chi è in reperibilità e chiunque abbia una finestra di sonno che cambia da una settimana all’altra. Se la tua turnazione si ripete, da 4 in turno / 4 di riposo fino a un ciclo DuPont di 28 giorni, AfterShift può contenerla. In fase di configurazione ti chiede se lavori a turni a rotazione, con un orario fisso o con orari irregolari e in reperibilità.",
      "q": "A chi serve AfterShift?"
     },
     {
@@ -4620,7 +4620,7 @@
      "q": "Che differenza c’è tra AfterShift e OffShift, ShiftSleep, Timeshifter o le app per il sonno generiche?"
     },
     {
-     "a": "Il punteggio recupero turno è un voto da 0 a 100 per un singolo sonno, visibile con Premium nel dettaglio del recupero. Pesa la durata del sonno (50%), la continuità, cioè quanto il sonno è stato senza interruzioni (30%), e l’equilibrio delle fasi del sonno (20%). Si ferma a 79 quando tra due turni c’è meno tempo del tuo obiettivo di sonno (ma non nei giorni di riposo) e a 75 quando la finestra comprende un turno di reperibilità, quindi quei sonni arrivano al massimo a Buono. Lo stato di recupero è invece la valutazione separata per il prossimo turno: Basso, OK o Buono, in base al sonno che hai fatto tra i turni rispetto al tuo obiettivo di sonno. Entrambi sono calcoli ideati da noi, non valutazioni mediche e non una diagnosi del disturbo da lavoro a turni. <a href=\"/apps/aftershift/methodology/\" hreflang=\"en\">La pagina sulla metodologia</a> (in inglese) elenca ogni dato di partenza e ogni peso.",
+     "a": "Il punteggio recupero turno è un voto da 0 a 100 per un singolo sonno, visibile con Premium nel dettaglio del recupero. Pesa la durata del sonno (50%), la continuità, cioè quanto il sonno è stato senza interruzioni (30%), e l’equilibrio delle fasi del sonno (20%). Si ferma a 79 quando tra due turni c’è meno tempo del tuo obiettivo di sonno (ma non nei giorni di riposo) e a 75 quando la finestra comprende un turno di reperibilità, quindi quei sonni arrivano al massimo a Buono. Lo stato di recupero è invece la valutazione separata per il prossimo turno: Basso, OK o Buono, in base al sonno che hai fatto tra i turni rispetto al tuo obiettivo di sonno. Entrambi sono calcoli propri dell’app, non valutazioni mediche né una diagnosi del disturbo da lavoro a turni. <a href=\"/apps/aftershift/methodology/\" hreflang=\"en\">La pagina sulla metodologia</a> (in inglese) elenca ogni dato di partenza e ogni peso.",
      "q": "Che cos’è il punteggio recupero turno e come si calcola?"
     },
     {
@@ -4632,7 +4632,7 @@
      "q": "AfterShift aiuta con il disturbo da lavoro a turni?"
     },
     {
-     "a": "Qualsiasi turnazione che puoi impostare come ciclo ricorrente o aggiungere a mano. I modelli sono Tre turni, 4 in turno / 4 di riposo, 4 in turno / 3 di riposo, 2 giorni / 2 notti, Panama (2-2-3), Notti fisse e Giorni fissi. Puoi anche costruire il tuo ciclo da 1 a 28 giorni, abbastanza lungo per un DuPont completo (4 notti / 3 di riposo / 3 giorni / 1 di riposo / 3 notti / 3 di riposo / 4 giorni / 7 di riposo). AfterShift riempie le prossime 8 settimane e continua a completarle. I tipi di turno prendono i nomi e gli orari che scegli tu, quindi si adattano anche giorni e notti da 12 ore e turni intermedi. L’importazione dal calendario può anche individuare i turni nel tuo calendario di lavoro: la versione gratis legge 1 calendario, 14 giorni in avanti; Premium sincronizza più calendari in automatico quando apri l’app.",
+     "a": "Qualsiasi turnazione che puoi impostare come ciclo ricorrente o aggiungere a mano. I modelli sono Tre turni, 4 in turno / 4 di riposo, 4 in turno / 3 di riposo, 2 giorni / 2 notti, Panama (2-2-3), Notti fisse e Giorni fissi. Puoi anche costruire il tuo ciclo da 1 a 28 giorni, abbastanza lungo per un DuPont completo (4 notti / 3 di riposo / 3 giorni / 1 di riposo / 3 notti / 3 di riposo / 4 giorni / 7 di riposo). AfterShift riempie le prossime 8 settimane e continua a completarle. I tipi di turno prendono i nomi e gli orari che scegli tu, quindi si adattano anche giorni e notti da 12 ore e turni intermedi. L’importazione dal calendario può anche individuare i turni nel tuo calendario di lavoro: la versione gratis legge 1 calendario, 14 giorni in avanti; Premium sincronizza più calendari in automatico quando apri l’app. L’articolo del blog <a href=\"/it/journal/turni-a-ciclo-continuo/\">sui turni a ciclo continuo</a> spiega come funzionano e quante ore di riposo prevede la legge tra un turno e l’altro.",
      "q": "Quali turnazioni supporta AfterShift?"
     },
     {
@@ -5139,7 +5139,7 @@
   "gymlogger-x": {
    "faq": [
     {
-     "a": "GymLogger X è un’app per registrare gli allenamenti di forza su iPhone, con app per Apple Watch. Segni le serie con i numeri dell’ultima volta già nella riga, segui uno dei 44 programmi pronti o uno creato dallo Smart Program Creator e, con Pro, ricevi segnali di plateau, fatica ed equilibrio muscolare dai tuoi allenamenti. Ha 1.500 esercizi (dimostrazioni animate con Pro) ed è disponibile in 40 lingue. L’essenziale è gratis; Pro costa {P_MONTHLY}/mese o {P_YEARLY}/anno, ciascuno con {TRIAL} all’inizio, oppure {P_LIFETIME} con un acquisto unico.",
+     "a": "GymLogger X è un’app per registrare gli allenamenti di forza su iPhone, con app per Apple Watch. Segni le serie con i numeri dell’ultima volta già nella riga, segui uno dei 44 programmi pronti o uno creato dallo Smart Program Creator e, con Pro, ricevi segnali di plateau, fatica ed equilibrio muscolare dai tuoi allenamenti (l’articolo del blog <a href=\"/it/journal/quante-serie-per-gruppo-muscolare/\">sulle serie per gruppo muscolare</a> riporta cosa dicono gli studi su quante serie fare a settimana). Ha 1.500 esercizi (dimostrazioni animate con Pro) ed è disponibile in 40 lingue. L’essenziale è gratis; Pro costa {P_MONTHLY}/mese o {P_YEARLY}/anno, ciascuno con {TRIAL} all’inizio, oppure {P_LIFETIME} con un acquisto unico.",
      "q": "Cos’è GymLogger X?"
     },
     {
@@ -5232,7 +5232,7 @@
      "q": "LiftLog può suggerirmi il peso del prossimo allenamento?"
     },
     {
-     "a": "Sì. Un badge con il miglioramento compare nel momento in cui una serie batte lo storico del tuo 1RM stimato. La pagina di ogni esercizio tiene i tuoi record personali (1RM stimato, serie migliore e miglior volume) e i record di ripetizioni, con grafici di 1RM stimato, volume e RPE medio. La formula del 1RM la scegli in Impostazioni: Adattiva (consigliata), Brzycki o Epley. Le serie di riscaldamento non contano mai. L’articolo del blog <a href=\"/it/journal/how-to-estimate-your-one-rep-max/\">sul calcolo del massimale</a> confronta Epley, Brzycki e altre cinque formule con esempi.",
+     "a": "Sì. Un badge con il miglioramento compare nel momento in cui una serie batte lo storico del tuo 1RM stimato. La pagina di ogni esercizio tiene i tuoi record personali (1RM stimato, serie migliore e miglior volume) e i record di ripetizioni, con grafici di 1RM stimato, volume e RPE medio. La formula del 1RM la scegli in Impostazioni: Adattiva (consigliata), Brzycki o Epley. Le serie di riscaldamento non contano mai (perché conviene segnarle a parte lo spiega l’articolo del blog <a href=\"/it/journal/riscaldamento-palestra/\">sul riscaldamento in palestra</a>). L’articolo del blog <a href=\"/it/journal/how-to-estimate-your-one-rep-max/\">sul calcolo del massimale</a> confronta Epley, Brzycki e altre cinque formule con esempi.",
      "q": "LiftLog tiene traccia dei record personali e del 1RM?"
     },
     {
@@ -5277,7 +5277,7 @@
   "mediakit": {
    "faq": [
     {
-     "a": "MediaKit è un’app per iPhone e Mac con più di 150 strumenti per comprimere, convertire e modificare video, audio, immagini, PDF, archivi ed ebook. Trascini un file, MediaKit ti propone gli strumenti adatti e ognuno funziona sul tuo dispositivo. Cinque strumenti sono gratuiti per sempre e Pro sblocca tutto il resto, con un solo acquisto che vale per iPhone e Mac.",
+     "a": "MediaKit è un’app per iPhone e Mac con più di 150 strumenti per comprimere, convertire e modificare video, audio, immagini, PDF, archivi ed ebook. Trascini un file, MediaKit ti propone gli strumenti adatti e ognuno funziona sul tuo dispositivo. Cinque strumenti sono gratuiti per sempre e Pro sblocca tutto il resto, con un solo acquisto che vale per iPhone e Mac. Sul blog ci sono articoli su come <a href=\"/it/journal/estrarre-audio-da-video-iphone/\">estrarre l’audio da un video su iPhone</a> e su come <a href=\"/it/journal/ridurre-dimensioni-foto-iphone/\">ridurre le dimensioni di una foto su iPhone</a>.",
      "q": "Cos’è MediaKit?"
     },
     {
@@ -5500,7 +5500,7 @@
      "q": "Observa si sincronizza tra dispositivi o esporta i miei dati?"
     },
     {
-     "a": "Tutto arriva da Salute. Sonno: durata, efficienza, risvegli, regolarità, fasi, frequenza cardiaca notturna e il suo calo, e debito di sonno rispetto al tuo obiettivo. Recupero: Prontezza, HRV (SDNN), frequenza cardiaca a riposo e stress. Cuore: frequenza cardiaca in camminata, VO₂ max, zone e recupero della frequenza cardiaca e registrazioni ECG. Attività e allenamenti: passi, minuti attivi, distanza, piani saliti, carico di allenamento e punteggio di sforzo. Respirazione: frequenza respiratoria e ossigeno nel sangue. Corpo ed energia: peso, grasso corporeo, massa magra ed energia attiva e a riposo. Il contesto del ciclo, facoltativo, mostra la fase del ciclo accanto a recupero e sonno, senza cambiare i tuoi punteggi. I segnali di recupero e del cuore sono letti rispetto al tuo intervallo abituale. Sul blog ci sono articoli dedicati alla <a href=\"/it/journal/frequenza-cardiaca-a-riposo/\">frequenza cardiaca a riposo</a>, al <a href=\"/it/journal/sonno-rem/\">sonno REM</a> e al <a href=\"/it/journal/vo2-max/\">VO2 max</a>.",
+     "a": "Tutto arriva da Salute. Sonno: durata, efficienza, risvegli, regolarità, fasi, frequenza cardiaca notturna e il suo calo, e debito di sonno rispetto al tuo obiettivo. Recupero: Prontezza, HRV (SDNN), frequenza cardiaca a riposo e stress. Cuore: frequenza cardiaca in camminata, VO₂ max, zone e recupero della frequenza cardiaca e registrazioni ECG. Attività e allenamenti: passi, minuti attivi, distanza, piani saliti, carico di allenamento e punteggio di sforzo. Respirazione: frequenza respiratoria e ossigeno nel sangue. Corpo ed energia: peso, grasso corporeo, massa magra ed energia attiva e a riposo. Il contesto del ciclo, facoltativo, mostra la fase del ciclo accanto a recupero e sonno, senza cambiare i tuoi punteggi. I segnali di recupero e del cuore sono letti rispetto al tuo intervallo abituale. Sul blog ci sono articoli dedicati alla <a href=\"/it/journal/frequenza-cardiaca-a-riposo/\">frequenza cardiaca a riposo</a>, al <a href=\"/it/journal/sonno-rem/\">sonno REM</a>, al <a href=\"/it/journal/sonno-profondo/\">sonno profondo</a>, al <a href=\"/it/journal/vo2-max/\">VO2 max</a> e alla <a href=\"/it/journal/saturazione-apple-watch/\">saturazione sull’Apple Watch</a>.",
      "q": "Cosa misura esattamente Observa?"
     },
     {
@@ -5569,7 +5569,7 @@
      "q": "Quali vaccinazioni e trattamenti posso seguire in Pawza?"
     },
     {
-     "a": "Sì. I promemoria sono notifiche locali in sei categorie: vaccino, farmaco, pasto, toelettatura, visita dal veterinario e personalizzato. Possono essere singoli o ripetersi ogni giorno, settimana, mese o anno. La notifica di una dose ha un pulsante Somministrato che registra la dose, quella di un pasto ha “Ha mangiato”, e le altre hanno “Segna come fatto” e “Posticipa di 1 ora”. Segna un promemoria come Urgente perché arrivi anche quando è attiva una full immersion; un promemoria singolo Urgente ti avvisa di nuovo dopo 5, 15 e 30 minuti finché non agisci. Per ricevere i promemoria devi consentire le notifiche.",
+     "a": "Sì. I promemoria sono notifiche locali in sei categorie: vaccino, farmaco, pasto, toelettatura, visita dal veterinario e personalizzato. Possono essere singoli o ripetersi ogni giorno, settimana, mese o anno. La notifica di una dose ha un pulsante Somministrato che registra la dose, quella di un pasto ha “Ha mangiato”, e le altre hanno “Segna come fatto” e “Posticipa di 1 ora”. Segna un promemoria come Urgente perché arrivi anche quando è attiva una full immersion; un promemoria singolo Urgente ti avvisa di nuovo dopo 5, 15 e 30 minuti finché non agisci. Per ricevere i promemoria devi consentire le notifiche. Sul blog trovi cosa dicono le linee guida su <a href=\"/it/journal/sverminare-cane/\">ogni quanto sverminare il cane</a> e su <a href=\"/it/journal/pulci-e-zecche-cane/\">pulci e zecche</a>.",
      "q": "Riceverò promemoria per vaccinazioni e farmaci?"
     },
     {
@@ -5788,7 +5788,7 @@
      "q": "Quanto costa Premium?"
     },
     {
-     "a": "Soon. ha 26 widget per la schermata Home, la schermata di blocco e StandBy, da un semplice numero di giorni a un anello, una cronologia, una vista del mese e una vista sull’intero anno, con una variante notturna per StandBy. I widget gratuiti mostrano il tuo momento fissato; Premium ti lascia scegliere qualsiasi momento per ogni widget e sblocca tutti gli stili di widget. Con iOS 18 c’è anche un comando dei giorni mancanti per il Centro di Controllo. La <a href=\"/it/guides/come-mettere-conto-alla-rovescia-iphone/\">guida per mettere un conto alla rovescia su iPhone</a> spiega come aggiungere il widget e confronta Soon. con altre cinque app.",
+     "a": "Soon. ha 26 widget per la schermata Home, la schermata di blocco e StandBy, da un semplice numero di giorni a un anello, una cronologia, una vista del mese e una vista sull’intero anno, con una variante notturna per StandBy. I widget gratuiti mostrano il tuo momento fissato; Premium ti lascia scegliere qualsiasi momento per ogni widget e sblocca tutti gli stili di widget. Con iOS 18 c’è anche un comando dei giorni mancanti per il Centro di Controllo. La <a href=\"/it/guides/come-mettere-conto-alla-rovescia-iphone/\">guida per mettere un conto alla rovescia su iPhone</a> spiega come aggiungere il widget e confronta Soon. con altre cinque app. L’articolo del blog <a href=\"/it/journal/conto-alla-rovescia-natale/\">sul conto alla rovescia di Natale</a> calcola, da alcune date fisse, i giorni e le settimane che mancano a Natale 2026 e 2027.",
      "q": "Quali widget per il conto alla rovescia offre Soon.?"
     },
     {
