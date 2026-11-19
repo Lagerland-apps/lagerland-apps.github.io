@@ -104,3 +104,36 @@ fr:
     trial_days: "{n} jours d’essai gratuit"
     trial_months: "{n} mois d’essai gratuit"
     trial_years: "{n} ans d’essai gratuit"
+es:
+  territory: ESP
+  html_lang: es-ES
+  hreflang: [es-ES, es]           # carries the bare es tag until /es-mx/ exists (TRANSLATION.md 2)
+  og_locale: es_ES
+  dir: ltr
+  native_name: "Español (España)"
+  live: false
+  # Checked 2026-11-19 against the Spanish App Store (iTunes lookup API, country=es, lang=es_es): "9,99 €" and
+  # "14,99 €" with a no-break space (U+00A0) before €, decimal comma. Thousands "." as Apple Spain writes "100.000".
+  currencies:
+    EUR: { symbol: "€", position: after, space: " ", decimals: 2, decimal: ",", group: "." }
+  strings:
+    free: "Gratis"
+    from: "desde"
+    per_month: "/mes"
+    per_year: "/año"
+    per_week: "/semana"
+    lifetime: "de por vida"
+    once: "una vez"
+    or: "o"
+    and: "y"
+    one_time_purchase: "compra única"
+    default_tier: "Premium"
+    family_sharing: "En familia"
+    decimal: ","
+    serial_comma: ""
+    trial_one_day: "1 día de prueba gratis"
+    trial_one_month: "1 mes de prueba gratis"
+    trial_one_year: "1 año de prueba gratis"
+    trial_days: "{n} días de prueba gratis"
+    trial_months: "{n} meses de prueba gratis"
+    trial_years: "{n} años de prueba gratis"
