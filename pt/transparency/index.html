@@ -1,0 +1,269 @@
+---
+layout: default
+ref: /transparency/
+permalink: /pt/transparency/
+translated_from: 2026-10-30
+title: "App Tracking Transparency: cada app, campo a campo"
+quick_answer: "Nenhuma app da Lagerland Apps segue a sua atividade. Todos os manifestos de privacidade que o estúdio publica definem NSPrivacyTracking como false e não declaram domínios de seguimento. Nenhuma app contém um SDK publicitário nem pede o identificador de publicidade (IDFA), por isso nenhuma pode mostrar o pedido de seguimento do App Tracking Transparency. Esta página indica, app a app, o que cada uma declara e o que o código faz: seguimento, SDK de terceiros, contas, chamadas de rede, dados que saem do dispositivo e API Required Reason, tal como verificado na data da auditoria indicada."
+seo:
+  title: "App Tracking Transparency: cada app, campo a campo"
+  description: "App Tracking Transparency nas apps da Lagerland: privacy manifest, domínios de seguimento, SDK de terceiros, chamadas de rede e API Required Reason."
+  keywords:
+    - app tracking transparency
+    - app tracking transparency iphone
+    - app tracking transparency att
+    - o que é o app tracking transparency
+    - tracking o que é
+    - privacy manifest
+last_updated: 2026-11-19
+---
+
+{%- include t.html -%}
+{%- comment %} Facts from _data/transparency.yml, Portuguese words from _data/i18n_transparency/pt.yml.
+  Only apps that have a Portuguese page are listed (writer brief); anchors are the app slugs, as on /transparency/. {% endcomment -%}
+{%- assign tw_all = site.data.i18n_transparency.pt.apps -%}
+{%- assign rows_all = site.data.transparency.apps | sort: "slug" -%}
+{%- assign rows = '' | split: '' -%}
+{%- for row in rows_all -%}
+  {%- assign app = site.apps | where: "slug", row.slug | first -%}
+  {%- if app -%}
+    {%- include tx-app.html app=app -%}
+    {%- unless tx_en -%}{%- assign rows = rows | push: row -%}{%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/pt/transparency/#webpage",
+  "url": "{{ site.url }}/pt/transparency/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/pt/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "pt-PT",
+  "dateModified": {{ site.data.transparency.last_audit | jsonify }},
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/pt/" },
+      { "@type": "ListItem", "position": 2, "name": "Transparência", "item": "{{ site.url }}/pt/transparency/" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Declarações do manifesto de privacidade de cada app",
+    "numberOfItems": {{ rows.size }},
+    "itemListElement": [
+      {%- for row in rows -%}
+        {%- assign app = site.apps | where: "slug", row.slug | first -%}
+        {%- include tx-app.html app=app -%}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "url": "{{ site.url }}{{ tx_app.url }}",
+          "name": {{ app.name | jsonify }}
+        }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    ]
+  }
+}
+</script>
+
+<section class="hero">
+  <div class="hero-left reveal">
+    <p class="overline">Provas</p>
+    <h1 class="h1">App Tracking Transparency:<br>cada app, campo a campo.</h1>
+    <p class="lead">
+      Nenhuma app da Lagerland segue a sua atividade. Todos os manifestos de privacidade (privacy manifest) que o estúdio publica declaram <strong>NSPrivacyTracking = false</strong> e nenhum domínio de seguimento, e nenhuma app contém um SDK publicitário. Mais abaixo, app a app, está o que cada uma declara e o que o seu código faz: SDK, contas, chamadas de rede e dados que saem do dispositivo.
+    </p>
+    <p class="hero-updated">Última auditoria: <time datetime="{{ site.data.transparency.last_audit }}">{% include date.html date=site.data.transparency.last_audit %}</time>.</p>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<!-- ============================
+     PRIVACY MANIFEST EXPLAINER
+     ============================ -->
+<section class="section reveal">
+  <div class="about-strip about-strip--split">
+    <p class="overline">O que está a ver</p>
+    <h2 class="h2">Manifestos de privacidade e API Required Reason</h2>
+    <div class="about-strip__body">
+    <p class="lead">
+      Desde o iOS 17, a Apple pede às apps, e aos SDK que trazem dentro, que incluam um <strong>manifesto de privacidade</strong> (<code>PrivacyInfo.xcprivacy</code>): um ficheiro legível por máquinas que indica que dados são recolhidos, se são usados para seguimento e que API Required Reason a app utiliza. A secção «Privacidade da app» da página de uma app na App Store (em inglês, Privacy Nutrition Label) é um conjunto de respostas à parte, que o programador dá à Apple no App Store Connect.
+    </p>
+    <p class="small">
+      <strong>NSPrivacyTracking</strong> é a chave mais importante: <code>false</code> declara que a app não segue a sua atividade, tal como a Apple define o seguimento, ou seja, que não associa os dados a dados de outras empresas para publicidade ou medição publicitária, nem os partilha com corretores de dados (data brokers). <strong>NSPrivacyTrackingDomains</strong> enumera todos os domínios que a app pode contactar para fins de seguimento; em todas as apps da Lagerland, essa lista está vazia. As <strong>API Required Reason</strong> são categorias de API do sistema (UserDefaults, datas e horas de ficheiros, espaço em disco, hora de arranque do sistema) que podem ser usadas indevidamente para obter uma impressão digital do dispositivo (fingerprinting). Por isso, a Apple pede às apps que indiquem para que as usam. A declaração de cada app da Lagerland segue abaixo.
+    </p>
+    <p class="small">
+      Mais informação da Apple <span class="en-marker">{{ t.english_marker }}</span>: <a href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files" rel="noopener" target="_blank" hreflang="en">Privacy Manifest files</a> · <a href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api" rel="noopener" target="_blank" hreflang="en">Required Reason APIs</a> · <a href="https://developer.apple.com/app-store/app-privacy-details/" rel="noopener" target="_blank" hreflang="en">App Privacy Details</a>.
+    </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     PER-APP TRANSPARENCY ROWS
+     ============================ -->
+<section class="section--lg">
+  <div class="section-center">
+    <p class="overline">Declarações por app</p>
+    <h2 class="h2">Todas as {{ rows.size }} apps</h2>
+    <p class="lead">Cada cartão mostra o que uma app declara. Nas apps marcadas como <em>verificado no código-fonte</em>, o manifesto de privacidade está no repositório do código-fonte. As apps marcadas como <em>declarado na App Store</em> incluem o manifesto na versão publicada na App Store, por isso convém comparar o respetivo cartão com a secção «Privacidade da app» da página da app na App Store. As apps marcadas como <em>manifesto pendente</em> ainda não incluem um manifesto de privacidade, pelo que o cartão descreve o que o código faz.</p>
+  </div>
+
+  <nav class="transparency-index" aria-label="Apps desta página">
+    <ul>
+    {%- for row in rows -%}
+      {%- assign app = site.apps | where: "slug", row.slug | first -%}
+      <li><a href="#{{ row.slug }}">{{ app.name | default: row.slug }}</a></li>
+    {%- endfor -%}
+    </ul>
+  </nav>
+  <div class="transparency-grid">
+  {%- for row in rows -%}
+    {%- assign app = site.apps | where: "slug", row.slug | first -%}
+    {%- include tx-app.html app=app -%}
+    {%- assign tw = tw_all[row.slug] -%}
+    {%- capture app_href %}{% include l.html url=app.url %}{% endcapture -%}
+    {%- assign app_en = l_en -%}
+    {%- include series.html app=app -%}
+    <article class="transparency-card series-{{ series_key }}" id="{{ row.slug }}">
+      <header class="transparency-card-head">
+        <span class="mini-stamp" aria-hidden="true"><span class="mini-stamp__paper"><span class="mini-stamp__field">
+          <img src="/assets/icons/sm/{{ row.slug }}.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        </span></span></span>
+        <div>
+          <h3 class="transparency-card-name">
+            <a href="{{ app_href }}"{% if app_en %} hreflang="en"{% endif %}>{{ app.name | default: row.slug }}{% if app_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+          </h3>
+          <p class="transparency-card-tagline">{{ tx_app.tagline }}</p>
+        </div>
+        <span class="transparency-source {% if row.manifest_source == 'source' %}is-source{% elsif row.manifest_source == 'pending' %}is-pending{% else %}is-submission{% endif %}">
+          {% if row.manifest_source == 'source' %}Verificado no código-fonte{% elsif row.manifest_source == 'pending' %}Manifesto pendente{% else %}Declarado na App Store{% endif %}
+        </span>
+      </header>
+
+      <dl class="transparency-dl">
+        <div>
+          <dt>NSPrivacyTracking</dt>
+          <dd><code>{{ row.tracking_declared }}</code></dd>
+        </div>
+        <div>
+          <dt>Domínios de seguimento</dt>
+          <dd>{{ row.tracking_domains }}</dd>
+        </div>
+        <div>
+          <dt>SDK de terceiros</dt>
+          <dd>
+            {%- if row.third_party_sdks == 0 -%}
+              0
+            {%- else -%}
+              {{ row.third_party_sdks }}:
+              {%- for sdk in row.third_party_sdks_list -%}
+                {%- if sdk.name %} <a href="{{ sdk.url }}" rel="noopener" target="_blank" hreflang="en">{{ sdk.name }}</a>{% else %} {{ tw.third_party_sdks_list[forloop.index0] }}{% endif %}{% unless forloop.last %},{% endunless %}
+              {%- endfor %}
+            {%- endif -%}
+          </dd>
+        </div>
+        <div>
+          <dt>Conta obrigatória</dt>
+          <dd>{% if row.account_required == false %}{{ t.word_no }}{% else %}{{ tw.account_required }}{% endif %}</dd>
+        </div>
+        <div>
+          <dt>Chamadas de rede</dt>
+          <dd>{{ tw.network_calls }}</dd>
+        </div>
+        <div>
+          <dt>Dados que saem do dispositivo</dt>
+          <dd>{{ tw.data_leaves_device }}</dd>
+        </div>
+        <div>
+          <dt>Análise de dados</dt>
+          <dd>{{ tw.analytics }}</dd>
+        </div>
+        {%- if row.collected_data and row.collected_data.size > 0 -%}
+          <div>
+            <dt>Dados declarados (NSPrivacyCollectedDataTypes)</dt>
+            <dd>
+              <ul class="transparency-list">
+                {%- for c in tw.collected_data -%}<li>{{ c }}</li>{%- endfor -%}
+              </ul>
+            </dd>
+          </div>
+        {%- endif -%}
+        {%- if row.required_reason_apis and row.required_reason_apis.size > 0 -%}
+          <div>
+            <dt>API Required Reason</dt>
+            <dd>
+              <ul class="transparency-list">
+                {%- for r in tw.required_reason_apis -%}<li>{{ r }}</li>{%- endfor -%}
+              </ul>
+            </dd>
+          </div>
+        {%- endif -%}
+        {%- if row.permissions and row.permissions.size > 0 -%}
+          <div>
+            <dt>Autorizações pedidas</dt>
+            <dd>
+              <ul class="transparency-list">
+                {%- for p in tw.permissions -%}<li>{{ p }}</li>{%- endfor -%}
+              </ul>
+            </dd>
+          </div>
+        {%- endif -%}
+        {%- if row.notes -%}
+          <div>
+            <dt>Notas</dt>
+            <dd>{{ tw.notes }}</dd>
+          </div>
+        {%- endif -%}
+      </dl>
+
+      <footer class="transparency-card-foot">
+        <a class="transparency-app-link" href="{{ app_href }}"{% if app_en %} hreflang="en"{% endif %}>Ver {{ app.name }} →{% if app_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+        {%- if app.app_store_url -%}
+          <a class="transparency-app-link" href="{{ app.app_store_url }}#?platform=iphone" rel="noopener" target="_blank">«Privacidade da app» na App Store →</a>
+        {%- endif -%}
+      </footer>
+    </article>
+  {%- endfor -%}
+  </div>
+</section>
+
+<!-- ============================
+     EXPLAIN THE ABSENCES
+     ============================ -->
+<section class="section reveal">
+  <div class="about-strip about-strip--split">
+    <p class="overline">O que não consta</p>
+    <h2 class="h2">O que nenhuma app da Lagerland faz</h2>
+    <ul class="transparency-refuses">
+      <li><strong>Nenhum SDK publicitário.</strong> Nada da Meta, do Google Mobile Ads, da AppLovin, do Unity Ads, da IronSource, do AdMob nem do MoPub, nem de qualquer outro que carregue anúncios ou cruze dados de utilizadores.</li>
+      <li><strong>Nenhuma análise de dados de terceiros.</strong> Nem Firebase, Mixpanel, Amplitude, Segment, Heap nem PostHog como serviço, nem telemetria do Sentry que identifique utilizadores.</li>
+      <li><strong>Nenhuma atribuição nem MMP.</strong> Nem Adjust, AppsFlyer, Branch, Singular, Kochava nem Tenjin.</li>
+      <li><strong>Nenhum pedido de IDFA.</strong> Nenhuma das apps chama <code>ATTrackingManager.requestTrackingAuthorization</code> nem inclui a chave <code>NSUserTrackingUsageDescription</code> de que o pedido de seguimento precisa, pelo que nenhuma app da Lagerland pode pedir para seguir a sua atividade em apps e sites de outras empresas.</li>
+      <li><strong>Nenhum sistema de contas.</strong> Quando uma app sincroniza, usa o iCloud do próprio utilizador. Quando uma app trabalha com o App Store Connect (AppMeta, AppMeta Pulse e o envio do Mockly), usa a chave de API <em>do próprio utilizador</em> e envia-a só à Apple; o AppMeta e o AppMeta Pulse guardam-na no porta-chaves.</li>
+      <li><strong>Nenhum servidor do estúdio.</strong> Nenhuma app envia dados para um servidor gerido pela Lagerland Apps. As apps que precisam de internet para a sua função ligam-se diretamente a esse serviço, como o WanderWiki à Wikipédia.</li>
+      <li><strong>Compras só através da Apple.</strong> Os testes grátis e as subscrições usam a janela de compra da Apple, que mostra o preço e a renovação antes da confirmação, e cancelam-se em Definições como qualquer outra subscrição da App Store.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================
+     CTA
+     ============================ -->
+<section class="cta-section reveal">
+  <p class="overline">Verifique</p>
+  <h2 class="h2">Abra a App Store e procure «Privacidade da app».</h2>
+  <p class="lead">
+    Compare cada cartão acima com a secção «Privacidade da app» da página dessa app na App Store. Se houver alguma diferença, escreva para <a href="mailto:support@lagerland.app">support@lagerland.app</a> para que a página ou a app seja corrigida.
+  </p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Ver todas as apps{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="https://developer.apple.com/app-store/app-privacy-details/" rel="noopener" target="_blank" hreflang="en">Como funciona «Privacidade da app» → <span class="en-marker">{{ t.english_marker }}</span></a>
+  </div>
+</section>

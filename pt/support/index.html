@@ -1,0 +1,72 @@
+---
+layout: default
+ref: /support/
+permalink: /pt/support/
+translated_from: 2026-10-30
+title: "Cancelar subscrição no iPhone: ajuda e contacto"
+quick_answer: "Para cancelar ou gerir uma subscrição no iPhone ou no iPad, abra Definições, toque no seu nome e depois em Assinaturas. No Mac, use a app App Store. Para comunicar um erro, fazer uma pergunta ou deixar um comentário sobre qualquer app da Lagerland, escreva para support@lagerland.app: o programador que cria a app lê a mensagem e responde. A Apple trata dos reembolsos de compras na App Store em reportaproblem.apple.com."
+seo:
+  title: "Cancelar subscrição iPhone: suporte da Lagerland Apps"
+  description: "Cancelar ou gerir uma subscrição no iPhone, pedir um reembolso na App Store ou escrever ao programador. Suporte e privacidade de cada app da Lagerland."
+  keywords:
+    - cancelar subscrição iphone
+    - como cancelar uma subscrição no iphone
+    - cancelar subscrição app store
+    - reembolso app store
+    - como pedir reembolso app store
+    - suporte lagerland apps
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+<section class="section">
+  <h1 class="h1">Cancelar subscrição no iPhone: ajuda e contacto</h1>
+  <p class="lead">
+    Precisa de ajuda com uma das apps? Escreva-nos. A pessoa que cria a app lê a mensagem e responde.
+  </p>
+
+  {% include quick-answer.html %}
+
+  <div class="grid grid-2">
+    <div class="card">
+      <div class="card-title">Contactar o suporte</div>
+      <div class="card-text">
+        Para comunicar erros, fazer perguntas ou deixar comentários, escreva para:
+      </div>
+      <p>
+        <a href="mailto:support@lagerland.app">
+          support@lagerland.app
+        </a>
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Antes de escrever</div>
+      <div class="card-text">
+        Estes dados ajudam a responder mais depressa:
+        <ul class="bullets">
+          <li>Nome da app</li>
+          <li>Modelo do dispositivo</li>
+          <li>Versão do iOS, do iPadOS ou do macOS</li>
+          <li>O que esperava e o que aconteceu em vez disso</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="h2">Suporte de cada app</h2>
+  <p class="lead">Cada app tem a sua própria página de suporte, com as perguntas habituais, e a respetiva política de privacidade.</p>
+  <ul class="bullets">
+  {%- assign support_apps = site.apps | where: "status", "live" | sort: "name" -%}
+  {%- for a in support_apps -%}
+    {%- include tx-app.html app=a -%}
+    {%- unless tx_en -%}
+    {%- capture a_support %}{{ a.url }}support/{% endcapture -%}
+    {%- capture a_privacy %}{{ a.url }}privacy/{% endcapture %}
+    <li><a href="{% include l.html url=a_support %}"{% if l_en %} hreflang="en"{% endif %}>Suporte de {{ a.name }}{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> · <a href="{% include l.html url=a_privacy %}"{% if l_en %} hreflang="en"{% endif %}>política de privacidade{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>{% if tx_app.tagline %}: {{ tx_app.tagline }}{% endif %}</li>
+    {%- endunless -%}
+  {%- endfor %}
+  </ul>
+  <p class="small" style="margin-top:16px;">{{ t.support_tip_subscriptions }} {{ t.support_tip_refunds }} Para saber como cada app trata os dados, consulte o <a href="{% include l.html url="/transparency/" %}"{% if l_en %} hreflang="en"{% endif %}>relatório de transparência{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+</section>

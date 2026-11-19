@@ -6,9 +6,10 @@
 # As listas (collected_data, required_reason_apis, permissions) seguem a ordem e o comprimento do ficheiro mestre.
 # Palavras da secção «Privacidade da app» da App Store de Portugal (apps.apple.com/pt, pt-apple-terms.md):
 # «Dados não recolhidos», «Dados não associados a si», «Dados utilizados para o seu seguimento», «Funcionalidade da app»,
-# «Saúde e fitness» (categoria da App Store). Não verificados como rótulo: «Fotografias ou vídeos», «Outro conteúdo do
-# utilizador», «Histórico de compras», «porta-chaves» e «não utilizados para o seu seguimento» (derivado de «Dados
-# utilizados para o seu seguimento»; a Apple não tem rótulo para «não usado para seguimento»).
+# «Saúde e fitness», «Fotografias ou vídeos», «Outro conteúdo do utilizador», «Histórico de compras» (as quatro
+# verificadas a 2026-11-19 em apps.apple.com/pt/app/id389801252, id284882215 e id310633997). «porta-chaves» para Keychain
+# (support.apple.com/pt-pt/guide/iphone/iph82d6721b2/ios; app do Mac «Acesso a Porta-chaves»). A Apple não tem rótulo
+# para «not used for tracking»: escreve-se «não usados para seguimento», em prosa, não como rótulo.
 # Os nomes de SDK e de API e os códigos de motivo (CA92.1 ...) ficam tal como estão.
 apps:
   aftershift:
@@ -16,7 +17,7 @@ apps:
     data_leaves_device: "Nada, a não ser que o utilizador exporte um relatório."
     analytics: "Nenhuma."
     collected_data:
-      - "Saúde e fitness (finalidade: funcionalidade da app; dados não associados a si, não utilizados para o seu seguimento)"
+      - "Saúde e fitness (finalidade: funcionalidade da app; não associados a si; não usados para seguimento)"
     required_reason_apis:
       - "UserDefaults (CA92.1: ler e escrever as preferências próprias da app)"
     permissions:
@@ -24,7 +25,7 @@ apps:
       - "HealthKit (leitura do sono): calcular a recuperação entre turnos"
     notes: "Os dados do Calendário e da Saúde nunca saem do dispositivo."
   allpaid:
-    network_calls: "Nenhuma para o registo básico de contas. A sincronização opcional com o iCloud usa o iCloud do próprio utilizador."
+    network_calls: "Nenhuma para a função principal, o registo de contas. A sincronização opcional com o iCloud usa o iCloud do próprio utilizador."
     data_leaves_device: "Só para o iCloud do utilizador, se a ativar."
     analytics: "Nenhuma."
     required_reason_apis:
@@ -32,7 +33,7 @@ apps:
     permissions:
       - "Notificações locais: lembretes das datas de vencimento"
       - "Face ID / Touch ID: «Bloqueio da app» opcional"
-    notes: "As contas, as subscrições e os vencimentos ficam por predefinição no dispositivo. A «Sincronização do iCloud» é uma funcionalidade Pro opcional que usa o iCloud privado do próprio utilizador. Ainda não inclui nenhum ficheiro PrivacyInfo.xcprivacy. Sem conta, sem anúncios e sem seguimento."
+    notes: "As contas, as subscrições e os vencimentos ficam por predefinição no dispositivo. A «Sincronização do iCloud» é uma funcionalidade Pro opcional que usa o iCloud privado do próprio utilizador. A app ainda não inclui nenhum ficheiro PrivacyInfo.xcprivacy. Sem conta, sem anúncios e sem seguimento."
   appmeta:
     account_required: "Uma chave de API de equipa do App Store Connect (Issuer ID, Key ID, .p8) da própria conta de programador, sem conta AppMeta. Fica guardada apenas no porta-chaves do macOS desse Mac e nunca é transmitida à Lagerland."
     network_calls: "A API do App Store Connect (api.appstoreconnect.apple.com) e as ligações de descarregamento de relatórios que devolve; os pontos de acesso públicos da App Store da Apple (apps.apple.com, itunes.apple.com, search.itunes.apple.com, amp-api-edge.apps.apple.com) para os ícones das apps, os preços da concorrência e a pesquisa opcional de palavras-chave; o Apple Ads (api.ads.apple.com, appleid.apple.com) só se for ligado; as taxas de câmbio do BCE (data-api.ecb.europa.eu) para os gráficos de vendas; o fornecedor de IA escolhido, se houver. Nenhum servidor da Lagerland."
@@ -42,7 +43,7 @@ apps:
       - "UserDefaults (CA92.1)"
     permissions:
       - "Notificações: avisos opcionais de novas críticas e de diagnósticos"
-    notes: "Cliente nativo para Mac do App Store Connect. As edições fazem-se em local e depois são enviadas através da API da Apple."
+    notes: "Cliente nativo para Mac do App Store Connect. As edições são feitas localmente e depois enviadas através da API da Apple."
   appmeta-pulse:
     account_required: "Sem conta Lagerland. A chave de API do App Store Connect do próprio utilizador."
     network_calls: "A API do App Store Connect da Apple (com as ligações de descarregamento dos relatórios de análise que devolve), o iTunes Lookup da Apple e os ícones de apps para que aponta, a App Store para as compras, a framework Translation da Apple quando se traduz uma crítica, a API pública de taxas de câmbio do Banco Central Europeu e, com a sincronização do iCloud ativada, o iCloud da Apple (CloudKit) e o respetivo serviço de notificações push."
@@ -52,7 +53,7 @@ apps:
       - "UserDefaults (CA92.1, 1C8F.1)"
       - "Data e hora de ficheiro (C617.1)"
       - "Espaço em disco (E174.1)"
-    notes: "Os manifestos de privacidade vêm incluídos na app e no respetivo widget. Não há controlos de compilações, preços nem metadados: as únicas escritas no App Store Connect são as respostas a críticas que o utilizador envia e os pedidos de relatórios de análise."
+    notes: "Os manifestos de privacidade vêm incluídos na app e no respetivo widget. Não há controlos de compilações, preços nem metadados; as únicas alterações que a app envia ao App Store Connect são as respostas a críticas do utilizador e os pedidos de relatórios de análise."
   chessful:
     network_calls: "Nenhuma. O motor Stockfish 18 corre localmente no dispositivo."
     data_leaves_device: "Não."
@@ -74,13 +75,13 @@ apps:
     data_leaves_device: "Treinos: o iCloud do próprio utilizador e a app Saúde, se o permitir. Nada vai para a Lagerland."
     analytics: "Nenhuma. Sem SDK de análise e sem enviar nada."
     collected_data:
-      - "Saúde e fitness (finalidade: funcionalidade da app; dados não associados a si, não utilizados para o seu seguimento)"
+      - "Saúde e fitness (finalidade: funcionalidade da app; não associados a si; não usados para seguimento)"
     required_reason_apis:
       - "UserDefaults (CA92.1, 1C8F.1)"
       - "Data e hora de ficheiro (C617.1)"
       - "Hora de arranque do sistema (35F9.1)"
     permissions:
-      - "Conectividade com o Apple Watch: registar séries a partir do pulso enquanto o iPhone conduz a sessão"
+      - "Conectividade com o Apple Watch: registar séries a partir do pulso enquanto a sessão decorre no iPhone"
       - "HealthKit: guardar treinos; ler a frequência cardíaca e a energia ativa"
     notes: "A app inclui 1500 exercícios e 44 programas. Foram removidos o ID de instalação, os registos de compras, o início de sessão de treinador e o sistema de convites, pelo que a app já não envia nada para nenhum servidor do estúdio. O manifesto de privacidade não declara seguimento e declara apenas o tipo de dados acima."
   liftlog:
@@ -110,13 +111,13 @@ apps:
     analytics: "Nenhuma."
     required_reason_apis:
       - "UserDefaults (CA92.1)"
-    notes: "O PrivacyInfo.xcprivacy declara NSPrivacyTracking como false, sem domínios de seguimento e sem tipos de dados recolhidos, e a app não liga nenhum SDK de publicidade nem de análise. O único entitlement é o Game Center; sem iCloud, sem CloudKit, sem porta-chaves e sem App Group. O progresso fica no dispositivo."
+    notes: "O PrivacyInfo.xcprivacy declara NSPrivacyTracking como false, sem domínios de seguimento e sem tipos de dados recolhidos, e a app não integra nenhum SDK de publicidade nem de análise. O único entitlement é o Game Center; sem iCloud, sem CloudKit, sem porta-chaves e sem App Group. O progresso fica no dispositivo."
   observa:
     network_calls: "Nenhuma própria. Toda a análise corre no dispositivo; só saem para a internet as compras, geridas pela Apple, e as ligações que o utilizador abre."
     data_leaves_device: "Não."
     analytics: "Nenhuma."
     collected_data:
-      - "Saúde (finalidade: funcionalidade da app; dados não associados a si, não utilizados para o seu seguimento)"
+      - "Saúde (finalidade: funcionalidade da app; não associados a si; não usados para seguimento)"
     required_reason_apis:
       - "UserDefaults (CA92.1)"
     permissions:
@@ -130,10 +131,10 @@ apps:
     data_leaves_device: "Só para o iCloud do utilizador, se a ativar."
     analytics: "Nenhuma."
     collected_data:
-      - "Saúde e fitness (vacinas, medicamentos; finalidade: funcionalidade da app; dados não associados a si, não utilizados para o seu seguimento)"
-      - "Fotografias ou vídeos (finalidade: funcionalidade da app; dados não associados a si, não utilizados para o seu seguimento)"
-      - "Outro conteúdo do utilizador (notas, documentos digitalizados; finalidade: funcionalidade da app; dados não associados a si, não utilizados para o seu seguimento)"
-      - "Histórico de compras (finalidade: funcionalidade da app; dados não associados a si, não utilizados para o seu seguimento)"
+      - "Saúde e fitness (vacinas, medicamentos; finalidade: funcionalidade da app; não associados a si; não usados para seguimento)"
+      - "Fotografias ou vídeos (finalidade: funcionalidade da app; não associados a si; não usados para seguimento)"
+      - "Outro conteúdo do utilizador (notas, documentos digitalizados; finalidade: funcionalidade da app; não associados a si; não usados para seguimento)"
+      - "Histórico de compras (finalidade: funcionalidade da app; não associados a si; não usados para seguimento)"
     required_reason_apis:
       - "UserDefaults (CA92.1: ler e escrever as preferências próprias da app)"
       - "Data e hora de ficheiro (C617.1: aceder às datas e horas dos ficheiros dentro do contentor da app)"
@@ -141,7 +142,7 @@ apps:
       - "Câmara: digitalizar os documentos do veterinário"
       - "Fotografias: anexar fotografias e documentos já existentes"
       - "Notificações locais: lembretes de vacinas, medicação e consultas de revisão"
-    notes: "As fichas, as fotografias, os documentos digitalizados e as notas ficam por predefinição no dispositivo. A digitalização de documentos (OCR do Vision) corre no dispositivo para todos os utilizadores. A extração com IA do Apple Intelligence requer o Pawza Pro e o iOS 26 ou posterior num dispositivo compatível, e também corre no dispositivo. Os documentos não são enviados para serem processados. A sincronização opcional com o iCloud usa a base de dados privada do CloudKit do próprio utilizador."
+    notes: "Os registos, as fotografias, os documentos digitalizados e as notas ficam por predefinição no dispositivo. A digitalização de documentos (OCR do Vision) corre no dispositivo para todos os utilizadores. A extração com IA do Apple Intelligence requer o Pawza Pro e o iOS 26 ou posterior num dispositivo compatível, e também corre no dispositivo. Os documentos não são enviados para serem processados. A sincronização opcional com o iCloud usa a base de dados privada do CloudKit do próprio utilizador."
   rightsplit:
     network_calls: "Uma só: o ficheiro público diário de taxas de câmbio do Banco Central Europeu (eurofxref-daily.xml), descarregado no máximo uma vez por dia para converter moedas. Não é enviado nenhum dado do utilizador. A leitura de talões e a divisão de despesas não fazem nenhuma chamada de rede; para partilhar usa-se a app Mensagens ou o WhatsApp."
     data_leaves_device: "Só através do menu Partilhar do iOS, quando o utilizador o escolhe."
@@ -161,7 +162,7 @@ apps:
     analytics: "Nenhuma."
     permissions:
       - "Ficheiro selecionado pelo utilizador: abrir e guardar capturas de ecrã"
-    notes: "A composição das imagens é feita no Mac. A tradução e o envio só acontecem quando o utilizador os pede. Chamava-se antes ScreenFlow Studio."
+    notes: "A composição das imagens é feita no Mac. A tradução e o envio só acontecem quando o utilizador os pede. Antes chamava-se ScreenFlow Studio."
   shogiful:
     network_calls: "Nenhuma com terceiros. O motor YaneuraOu corre localmente; o ficheiro da rede neuronal é descarregado uma só vez dos servidores da App Store da Apple (On-Demand Resources)."
     data_leaves_device: "Não. A sincronização opcional com o iCloud usa o iCloud do próprio utilizador."
@@ -212,5 +213,5 @@ apps:
       - "UserDefaults (CA92.1)"
       - "Data e hora de ficheiro (C617.1)"
     permissions:
-      - "Notificações (pedidas na primeira vez que se guarda um artigo): um lembrete local diário, com hora alterável ou desativável em Definições"
+      - "Notificações (pedidas na primeira vez que se guarda um artigo): um lembrete local diário, que se pode mudar de hora ou desligar em Definições"
     notes: "Cliente da Wikipédia. Os artigos são descarregados da API pública da Wikipédia, tal como ao visitar o site."
