@@ -353,8 +353,8 @@ release:
 
 ratings:
   value: "5.0"
-  count: 2
-  last_synced: "2026-04-15"
+  count: 3
+  last_synced: "2026-11-19"
 last_updated: 2026-11-08
 ---
 WanderWiki is a Wikipedia app for iPhone and iPad (iOS 18.2 or later) built for reading without a plan. Instead of a search box, it opens on a deck of cards. Random draws from the whole encyclopedia, Browse narrows the deck to one of 16 topics, and Where next offers three related articles under each one, so a single swipe can turn into an evening's thread.
