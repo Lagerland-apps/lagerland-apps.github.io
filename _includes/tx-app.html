@@ -2,16 +2,25 @@
   For another app shown on the current page (card, stamp, list, footer link): finds that app's translated page in
   the current page's language. Words (tagline, description, URL) come from tx_app, facts from the master doc.
     app     the master document from site.apps
-  Sets tx_app (the translated page, or the master on English pages and when no translation exists) and tx_en
+    full    true when the caller needs the whole translated page (llms-full.txt). Otherwise tx_app is the app's
+            entry in _data/i18n_apps.json, which holds only url, tagline, seo.description and faq (written by
+            `scripts/i18n.py map`, checked by `i18n.py check`). Scanning site.pages here on every translated page
+            made the build grow with pages x languages (I-0258); a data lookup costs nothing.
+  Sets tx_app (the translated words, or the master on English pages and when no translation exists) and tx_en
   (true when a non-English page has no translation of this app: lists skip it, links fall back to English).
 {%- endcomment -%}
 {%- assign tx_app = include.app -%}
 {%- assign tx_en = false -%}
 {%- if page.lang and page.lang != "en" -%}
-  {%- unless i18n_apps_lang == page.lang -%}
-    {%- assign i18n_apps = site.pages | where: "lang", page.lang | where: "layout", "app" -%}
-    {%- assign i18n_apps_lang = page.lang -%}
-  {%- endunless -%}
-  {%- assign _txa = i18n_apps | where: "slug", include.app.slug | first -%}
+  {%- assign _tx_slug = include.app.slug -%}
+  {%- assign _tx_words = site.data.i18n_apps[page.lang] -%}
+  {%- assign _txa = _tx_words[_tx_slug] -%}
+  {%- if _txa and include.full -%}
+    {%- unless i18n_apps_lang == page.lang -%}
+      {%- assign i18n_apps = site.pages | where: "lang", page.lang | where: "layout", "app" -%}
+      {%- assign i18n_apps_lang = page.lang -%}
+    {%- endunless -%}
+    {%- assign _txa = i18n_apps | where: "slug", include.app.slug | first -%}
+  {%- endif -%}
   {%- if _txa -%}{%- assign tx_app = _txa -%}{%- else -%}{%- assign tx_en = true -%}{%- endif -%}
 {%- endif -%}

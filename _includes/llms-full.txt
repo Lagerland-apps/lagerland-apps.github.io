@@ -8,7 +8,7 @@
 {%- assign lf = t.lf -%}
 {%- if lf_lang == "en" -%}{%- assign lf_pre = "" -%}{%- else -%}{%- assign lf_pre = "/" | append: lf_lang -%}{%- endif -%}
 {% assign live_apps = site.apps | where: "status", "live" %}
-{% for app in live_apps %}{% include tx-app.html app=app %}{% unless tx_en %}{% assign w = tx_app %}{% include app-facts.html app=app text=w %}{% assign lf_cat_key = app.category | replace: '-', '_' %}{% capture app_block %}
+{% for app in live_apps %}{% include tx-app.html app=app full=true %}{% unless tx_en %}{% assign w = tx_app %}{% include app-facts.html app=app text=w %}{% assign lf_cat_key = app.category | replace: '-', '_' %}{% capture app_block %}
 ## {{ app.name }}
 
 {{ lf.url }} {{ site.url }}{{ w.url }}

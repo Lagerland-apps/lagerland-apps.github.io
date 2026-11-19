@@ -390,13 +390,15 @@ Without more subsets, Polish ł or Turkish ş render in a fallback font mid-word
 | `/ai-index.json` | one file; gets a `languages` list and a `localized_urls` map per app, page, guide and post | loops plus the map |
 | `robots.txt` | stays open to every crawler; add only the per-language `Sitemap:` lines | static |
 | `_data/i18n_map.json` | the translation map: English URL to `{code: URL}` | `scripts/i18n.py map` |
+| `_data/i18n_apps.json` | the words other pages show for each translated app: `{code: {slug: {url, tagline, seo.description, faq}}}` (read by `_includes/tx-app.html`) | `scripts/i18n.py map` |
 
 Write each per-language file as a short stub that includes a shared template, so a fix lands in every language.
 
 ### 4.13 Scripts
 
 - New `scripts/i18n.py` (stdlib only, like the others):
-  - `map` writes `_data/i18n_map.json` from every page's `ref` and `lang`.
+  - `map` writes `_data/i18n_map.json` from every page's `ref` and `lang`, and `_data/i18n_apps.json` from every
+    translated app page (`check` errors when either is out of date).
   - `stale` lists translations whose English source has a newer `last_updated` than their `translated_from`,
     grouped by language, with the English git diff since that date.
   - `synced PATH...` sets `translated_from` to today on translations you just brought in line with English.
@@ -455,6 +457,11 @@ Done 2026-10-26. Build time: 9.9 s before, about 12.5 s after, for the same 277 
 - Facts and words: `_layouts/app.html` reads facts from `m` (the master) and words from `page`; the includes take
   `app=` (master) and `tx=` (words). Other apps on a page (cards, stamps, footer, lists) find their page in the
   current language with `_includes/tx-app.html` and are left out on a translated page that has no translation.
+  tx-app reads `_data/i18n_apps.json` (url, tagline, seo.description, faq), never `site.pages`: in Jekyll 3.9 every
+  `where` over `site.pages` rebuilds each page's front-matter hash, and doing that once per translated page made
+  the build grow with pages times languages (157 s before the change, 52 s after, 2026-11-19, identical output).
+  Only `llms-full.txt` passes `full=true` for the whole translated page. Keep new per-page code off `site.pages`
+  loops for the same reason.
 - Links: `_includes/l.html url="/apps/"` prints the same-language URL from `_data/i18n_map.json` or the English
   URL, and sets `l_en` so the caller adds `hreflang="en"` and `t.english_marker`.
 - Dates: `_includes/date.html date=... fmt="long"|"dmy"`. Prices: `money.html` (position `before_space` added),
@@ -670,7 +677,8 @@ A page with no English twin (a local competitor, a market-specific guide). Rules
 - Canonical is always self. Never canonicalize a translation to English or English to a translation.
 - Both regional pairs (es and es-mx, pt and pt-br) are separate pages with their own prices, vocabulary and
   formality. They are not duplicates as long as they differ in those ways and hreflang connects them.
-- The map file is rebuilt with `scripts/i18n.py map` in every commit that adds or removes a translation.
+- The map files are rebuilt with `scripts/i18n.py map` in every commit that adds or removes a translation or edits
+  a translated app page's tagline, seo.description or faq.
 
 ### 7.2 Titles, descriptions, keywords
 
@@ -818,7 +826,8 @@ and the source page, then a separate reviewer agent per batch that does steps 1 
 Before every commit that touches a translated page, a language data file or a template string:
 
 1. Everything in the repo CLAUDE.md SEO / AEO gate (front matter, dates, routing, links, facts, build, audit).
-2. `python3 scripts/i18n.py map` when a translation was added, moved or removed.
+2. `python3 scripts/i18n.py map` when a translation was added, moved or removed, or a translated app page's
+   tagline, seo.description or faq changed (other pages show those through `_data/i18n_apps.json`).
 3. `python3 scripts/stamp-last-updated.py --changed`.
 4. Build, then `python3 scripts/i18n.py check` and `python3 scripts/seo-audit.py`, both with 0 errors.
 5. Look at one built page per language touched: right language everywhere, prices in the local currency and

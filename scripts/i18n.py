@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Translation tooling for the multilingual site (TRANSLATION.md 4.13). Run from the repo root.
 
-  python3 scripts/i18n.py map               # write _data/i18n_map.json from every translated page's ref
+  python3 scripts/i18n.py map               # write _data/i18n_map.json from every translated page's ref, and
+                                            #   _data/i18n_apps.json (the words other pages show for each app)
   python3 scripts/i18n.py stale             # translations whose English page changed after translated_from
   python3 scripts/i18n.py synced PATH...     # after mirroring the English change into these translations,
                                             #   set their translated_from to today (stale then drops them)
@@ -15,7 +16,7 @@ What `check` fails on (data contract: the "Phase 0 data contract", mirrored in T
     plans, release_notes and screenshot_captions must have the master's length and item keys
   - _data/i18n/<code>.yml keys that differ from en.yml (recursive, list lengths) or whose {placeholders} differ
   - a ref that points nowhere (or at a redirect), a missing or wrong permalink, two pages translating one ref
-  - _data/i18n_map.json not what `map` would write now
+  - _data/i18n_map.json or _data/i18n_apps.json not what `map` would write now
   - in the BUILT site: a translated page linking to an English URL that has a version in its language, and
     leftover English interface strings (en.yml values of 12+ characters found verbatim in visible text)
   - a translation whose English page has uncommitted edits and a newer last_updated than its translated_from
@@ -191,6 +192,36 @@ class Repo:
     def map_text(self):
         return json.dumps(self.build_map(), indent=2, sort_keys=True, ensure_ascii=False) + "\n"
 
+    # Words of each translated app page that OTHER pages show (cards, stamps, footer links, llms catalogue) and the
+    # FAQ the support layout lists: lang -> slug -> {url, tagline, seo.description, faq}. _includes/tx-app.html reads
+    # this instead of scanning site.pages, which in Jekyll 3.9 rebuilds every page's front-matter hash on each
+    # `where` and made the build grow with pages x languages (I-0258). Only these fields: a caller that needs the
+    # whole translated page passes full=true to tx-app.html.
+    APP_WORDS = ("url", "tagline", "seo", "faq")
+
+    def build_apps(self):
+        out = collections.defaultdict(dict)
+        for pg in self.translations():
+            fm = pg["fm"]
+            if fm.get("layout") != "app" or not fm.get("slug"):
+                continue
+            slug = str(fm["slug"])
+            if slug in out[pg["lang"]]:
+                continue  # first one wins, as `where | first` did; check_pages flags the duplicate ref
+            w = {"url": pg["url"]}
+            if fm.get("tagline") is not None:
+                w["tagline"] = fm["tagline"]
+            seo = fm.get("seo")
+            if isinstance(seo, dict) and seo.get("description") is not None:
+                w["seo"] = {"description": seo["description"]}
+            if fm.get("faq") is not None:
+                w["faq"] = fm["faq"]
+            out[pg["lang"]][slug] = w
+        return {k: dict(sorted(v.items())) for k, v in sorted(out.items())}
+
+    def apps_text(self):
+        return json.dumps(self.build_apps(), indent=1, sort_keys=True, ensure_ascii=False, default=str) + "\n"
+
     def app_master(self, slug):
         return next((pg for pg in self.pages if pg["kind"] == "apps" and
                      (pg["fm"].get("slug") or os.path.splitext(os.path.basename(pg["path"]))[0]) == slug), None)
@@ -203,10 +234,20 @@ def cmd_map(repo, args):
     old = open(fp, encoding="utf-8").read() if os.path.isfile(fp) else None
     if old == text:
         print("_data/i18n_map.json is up to date (%d English URLs with translations)." % len(repo.build_map()))
-        return 0
-    with open(fp, "w", encoding="utf-8") as f:
-        f.write(text)
-    print("Wrote _data/i18n_map.json (%d English URLs with translations)." % len(repo.build_map()))
+    else:
+        with open(fp, "w", encoding="utf-8") as f:
+            f.write(text)
+        print("Wrote _data/i18n_map.json (%d English URLs with translations)." % len(repo.build_map()))
+    text = repo.apps_text()
+    fp = repo.p("_data", "i18n_apps.json")
+    old = open(fp, encoding="utf-8").read() if os.path.isfile(fp) else None
+    n = sum(len(v) for v in repo.build_apps().values())
+    if old == text:
+        print("_data/i18n_apps.json is up to date (%d translated app pages)." % n)
+    else:
+        with open(fp, "w", encoding="utf-8") as f:
+            f.write(text)
+        print("Wrote _data/i18n_apps.json (%d translated app pages)." % n)
     return 0
 
 
@@ -801,6 +842,12 @@ def cmd_check(repo, args):
         F.err("_data/i18n_map.json missing (run scripts/i18n.py map)", "_data/i18n_map.json")
     elif have != want:
         F.err("_data/i18n_map.json is out of date (run scripts/i18n.py map)", "_data/i18n_map.json")
+    fp = repo.p("_data", "i18n_apps.json")
+    have = open(fp, encoding="utf-8").read() if os.path.isfile(fp) else None
+    if have is None:
+        F.err("_data/i18n_apps.json missing (run scripts/i18n.py map)", "_data/i18n_apps.json")
+    elif have != repo.apps_text():
+        F.err("_data/i18n_apps.json is out of date (run scripts/i18n.py map)", "_data/i18n_apps.json")
     langs_with_pages = sorted({p["lang"] for p in trans if p["lang"] in LANGS})
     for code in langs_with_pages:
         if i18n_data and code not in i18n_data:

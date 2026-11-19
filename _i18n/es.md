@@ -12,7 +12,7 @@ reviewing any Spanish page. Every decision a translator would otherwise make dif
 | Tier 1 pages | not started |
 | Live | no, `live: false` |
 | Native review | none (NATIVE REVIEWER: none). Every page will be logged as "no native review yet" |
-| Build time | 270 s wall, 137 s CPU before Spanish (2026-11-19, seven research agents running in parallel, so the wall time is inflated); French sheet had 80 s after French Tier 1. Re-measure with `--profile` on an idle machine before Tier 1 |
+| Build time | 270 s wall, 137 s CPU before Spanish (2026-11-19, seven research agents running in parallel, so the wall time is inflated); French sheet had 80 s after French Tier 1. Idle machine 2026-11-19: 157 s before the tx-app fix, 52 s after (617 pages, `--profile`; tx-app 99.6 s to 4.9 s, I-0258) |
 
 ## Market and register
 
