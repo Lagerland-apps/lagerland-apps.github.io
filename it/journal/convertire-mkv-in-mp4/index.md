@@ -28,9 +28,9 @@ faq:
   - q: "Un convertitore online va bene per un MKV molto grande?"
     a: "Un convertitore online riceve il file sui suoi server, lo converte e te lo rimanda: con un MKV grande significa caricarlo per intero prima di cominciare, e il contenuto lascia il tuo dispositivo. Per un file grande una conversione sul dispositivo evita il caricamento: vanno bene VLC o MediaKit. Secondo la documentazione di VLC, inoltre, un remux è molto più veloce di una transcodifica."
   - q: "Come convertire MKV in MP4 su iPhone?"
-    a: "MediaKit apre i file MKV su iPhone (iOS 17 o successivo): invia il file all’app dal foglio di condivisione con “Invia a MediaKit”, scegli lo strumento Converti e MP4 come formato di uscita. Per un remux scegli “Mantieni l’originale (remux)” alla voce Codec: l’audio DTS, E-AC-3 o MP3 viene scartato con un avviso."
+    a: "MediaKit apre i file MKV su iPhone (iOS 17 o successivo): invia il file all’app dal foglio di condivisione con “Invia a MediaKit”, scegli lo strumento Converti e mp4 alla voce Contenitore. Per un remux scegli “Mantieni l’originale (remux)” alla voce Codec: l’audio DTS, E-AC-3 o MP3 viene scartato con un avviso."
   - q: "Come convertire MKV in MP4 su Mac?"
-    a: "Nel Finder fai clic con il tasto destro sul file MKV, scegli “Apri con” e poi MediaKit. Scegli Converti, il formato MP4 e “Mantieni l’originale (remux)”. MediaKit richiede macOS 14.6 o successivo. QuickTime Player non serve a questo: secondo Apple non può esportare i filmati come video MP4."
+    a: "Nel Finder fai clic con il tasto destro sul file MKV, scegli “Apri con” e poi MediaKit. Scegli Converti, poi mp4 alla voce Contenitore e “Mantieni l’originale (remux)” alla voce Codec. MediaKit richiede macOS 14.6 o successivo. QuickTime Player non serve a questo: secondo Apple non può esportare i filmati come video MP4."
 mentioned_apps:
   - mediakit
 read_time: "7 min di lettura"
@@ -85,9 +85,9 @@ Su iPhone (iOS 17 o successivo) invia il file a MediaKit dal foglio di condivisi
 In entrambi i casi:
 
 1. Scegli lo strumento Converti.
-2. Scegli MP4 come formato di uscita (esistono anche MOV e M4V).
+2. Alla voce Contenitore scegli mp4 (ci sono anche mov e m4v).
 3. Per un remux scegli “Mantieni l’originale (remux)” alla voce Codec. H.264, HEVC e ProRes sono le altre opzioni, e ricodificano.
-4. Premi Esegui e leggi l’eventuale avviso sull’audio scartato.
+4. Tocca Esegui (sul Mac, fai clic) e leggi l’eventuale avviso sull’audio scartato.
 
 Se compare un avviso su una traccia audio scartata (DTS, E-AC-3 o MP3), quella traccia non c’è nell’MP4: se ti serve, tieni l’originale o usa un altro strumento.
 

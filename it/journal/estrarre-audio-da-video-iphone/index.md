@@ -15,12 +15,12 @@ seo:
     - "estrarre audio da video iphone imovie"
     - "estrarre audio da video iphone comandi rapidi"
     - "estrarre solo audio da video iphone"
-lede: "Le pagine Apple consultate per iPhone parlano di modificare l’audio di un video in Foto e di aggiungere solo l’audio di un clip a un progetto iMovie; sul Mac, QuickTime Player permette di estrarre la traccia audio dal Finder. Qui trovi i passaggi che Apple documenta e come ricavare l’audio in un file con MediaKit, che lavora sul dispositivo e non scrive in MP3."
-quick_answer: "Su iPhone, le pagine Apple consultate descrivono come modificare l’audio di un video in Foto e come aggiungere a un progetto iMovie solo l’audio di un clip, con Altro e poi “Solo audio”. Per avere l’audio in un file, MediaKit, un’app per iPhone e Mac, ha lo strumento Estrai nella categoria Audio, che estrae la traccia audio da un video sul dispositivo, senza caricarlo. Estrai si usa senza pagare nei primi 3 giorni dopo l’installazione, poi serve Pro. MediaKit scrive l’audio in M4A (AAC), WAV, AIFF, ALAC o CAF, non in MP3. Sul Mac, Apple documenta anche l’estrazione della traccia audio dal Finder."
+lede: "Su iPhone, Apple spiega come modificare l’audio di un video in Foto e come aggiungere solo l’audio di un clip a un progetto iMovie; sul Mac, la guida di QuickTime Player spiega come estrarre la traccia audio dal Finder. Qui trovi i passaggi che Apple documenta e come ricavare l’audio in un file con MediaKit, che lavora sul dispositivo e non scrive in MP3."
+quick_answer: "Su iPhone, Apple spiega come modificare l’audio di un video in Foto e come aggiungere a un progetto iMovie solo l’audio di un clip, con Altro e poi “Solo audio”. Per avere l’audio in un file c’è MediaKit, un’app per iPhone e Mac: lo strumento Estrai, nella categoria Audio, estrae la traccia audio da un video sul dispositivo, senza caricarlo. Estrai si usa senza pagare nei primi 3 giorni dopo l’installazione, poi serve Pro. MediaKit scrive l’audio in M4A (AAC), WAV, AIFF, ALAC o CAF, non in MP3. Sul Mac, Apple documenta anche l’estrazione della traccia audio dal Finder."
 excerpt: "Estrarre l’audio da un video su iPhone: cosa documenta Apple per Foto, iMovie, Comandi Rapidi e Mac, lo strumento Estrai di MediaKit, cosa resta gratuito, i formati di uscita (niente MP3) e perché un estrattore online carica il video su un server."
 faq:
   - q: "Come estrarre l’audio da un video su iPhone?"
-    a: "In MediaKit lo strumento Estrai, nella categoria Audio, estrae la traccia audio da un video sul dispositivo e la salva come file audio. Le pagine Apple consultate su Foto e iMovie descrivono invece modifiche all’audio dentro il video o dentro un progetto di filmato."
+    a: "In MediaKit lo strumento Estrai, nella categoria Audio, estrae la traccia audio da un video sul dispositivo e la salva come file audio. Le guide di Apple su Foto e iMovie descrivono invece modifiche all’audio dentro il video o dentro un progetto di filmato."
   - q: "Si può estrarre l’audio da un video su iPhone gratis?"
     a: "In MediaKit, Estrai si usa senza pagare nei primi 3 giorni dopo l’installazione, con un’esportazione per esecuzione; dopo richiede Pro. I cinque strumenti che restano gratuiti per sempre, un file alla volta, sono Comprimi video, Comprimi immagine, Ridimensiona, Converti audio e Comprimi PDF."
   - q: "Come estrarre l’audio da un video con iMovie su iPhone?"
@@ -42,7 +42,7 @@ Estrarre l’audio da un video vuol dire separare la traccia audio dal file vide
 
 ## Cosa documenta Apple per l’audio di un video
 
-Su iPhone, le pagine Apple consultate riguardano due app, Foto e iMovie, e trattano l’audio dentro il video o dentro un progetto di filmato.
+Su iPhone, le guide di Apple riguardano due app, Foto e iMovie, e trattano l’audio dentro il video o dentro un progetto di filmato.
 
 - Foto. La pagina su come [ritagliare la lunghezza dei video, regolare la velocità e modificare l’audio](https://support.apple.com/it-it/guide/iphone/iph1d1344a2d/ios) spiega come ritagliare un video, cambiarne la velocità di riproduzione e, per un video registrato con l’opzione “Audio spaziale” su un modello supportato, personalizzare i suoni con “Mix audio”. Sono modifiche all’audio del video.
 - iMovie. La pagina su come [aggiungere audio da un clip video in iMovie su iPhone](https://support.apple.com/it-it/guide/imovie-iphone/kna60516e1c7/ios) dice che, aggiungendo un clip video a un progetto di filmato, puoi scegliere di aggiungere solo l’audio: tocca “Aggiungi file mult.”, poi Video, scegli il clip, tocca Altro e poi “Solo audio”. Puoi anche ritagliare il clip prima di aggiungere l’audio. L’audio entra nella timeline del progetto di filmato.
