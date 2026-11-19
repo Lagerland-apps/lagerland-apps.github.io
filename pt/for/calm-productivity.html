@@ -1,0 +1,120 @@
+---
+layout: default
+ref: /for/calm-productivity/
+permalink: /pt/for/calm-productivity/
+translated_from: 2026-11-08
+title: "Apps de produtividade para iPhone sem a pressão das sequências"
+quick_answer: "Para planear no iPhone sem a pressão das sequências, a app de produtividade por onde começar é o Taskful Day, um planeador diário para iPhone, iPad, Mac e Apple Watch: o que fica por concluir passa sozinho para hoje, por isso a lista de Hoje nunca se transforma num monte vermelho de tarefas em atraso. A este juntam-se o Soon. no iPhone, para a contagem decrescente de uma viagem, de um aniversário ou de outra data importante, com uma lista inicial sugerida pelo modo planeamento, e o Observa, para quem usa um Apple Watch e quer uma leitura diária do sono e da recuperação. Nenhuma das três mostra anúncios nem pede conta."
+seo:
+  title: "Apps de produtividade para iPhone e Mac, sem pressão"
+  description: "Apps de produtividade para iPhone sem pressão nem anúncios: Taskful Day (iPhone, iPad e Mac), Soon. para contagens decrescentes e Observa para a app Saúde."
+  keywords:
+    - apps de produtividade iphone
+    - melhores apps produtividade
+    - app produtividade pessoal
+    - apps de produtividade e organização
+    - app procrastinação
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign slugs = "taskful-day,soon,observa" | split: "," -%}
+{%- assign apps_for = '' | split: '' -%}
+{%- for slug in slugs -%}{%- assign m = site.apps | where: "slug", slug | first -%}{%- if m and m.status == "live" -%}{%- assign apps_for = apps_for | push: m -%}{%- endif -%}{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/pt/for/calm-productivity/#webpage",
+  "url": "{{ site.url }}/pt/for/calm-productivity/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/pt/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "pt-PT",
+  "datePublished": "2026-11-19",
+  "audience": { "@type": "PeopleAudience", "audienceType": "Pessoas fartas das apps de produtividade gamificadas" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/pt/" },
+      { "@type": "ListItem", "position": 2, "name": "Produtividade sem pressão", "item": "{{ site.url }}/pt/for/calm-productivity/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "pt-PT",
+  "mainEntity": [
+    { "@type": "Question", "name": "O que é uma app de produtividade sem pressão?", "acceptedAnswer": { "@type": "Answer", "text": "Uma app que planeia o dia que se tem de facto e não incomoda no resto do tempo. O Taskful Day foi feito assim. As tarefas por concluir passam sozinhas para hoje, a lista de Hoje não mostra nenhum indicador de atraso nem tarefas a vermelho, e a app não tem anúncios nem um feed a reclamar atenção." } },
+    { "@type": "Question", "name": "Qual é a melhor alternativa aos planeadores com sequências?", "acceptedAnswer": { "@type": "Answer", "text": "O Taskful Day, para quem quer um planeador em que um dia falhado não custa nada. As tarefas que ficaram por concluir passam para hoje quando se abre a app, e nada na lista de Hoje as marca como atrasadas. O separador Análise mostra, ainda assim, a sequência atual e a melhor, como um dado entre vários." } },
+    { "@type": "Question", "name": "Estas apps servem para quem tem PHDA?", "acceptedAnswer": { "@type": "Answer", "text": "Nenhuma foi pensada como ferramenta médica nem para a PHDA, por isso não fazemos qualquer afirmação sobre a PHDA. O Taskful Day mantém um só dia à vista e passa as tarefas por concluir para a frente em vez de as acumular, e uma tarefa pode ser adicionada escrevendo uma frase, falando ou pedindo à Siri. O Soon. mantém as datas importantes no ecrã principal e no ecrã bloqueado. Ambas têm versão gratuita, por isso é possível perceber se esta forma de trabalhar resulta." } },
+    { "@type": "Question", "name": "Estas apps vendem os meus dados?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Nenhuma das três mostra anúncios, pede conta ou inclui SDKs de análise ou de publicidade de terceiros. O Taskful Day guarda as tarefas no dispositivo, ou no iCloud de cada pessoa, se a sincronização do Pro estiver ativa. O Soon. guarda os momentos no dispositivo e sincroniza-os através do iCloud de cada pessoa. O Observa guarda os dados de saúde no dispositivo. As apps são financiadas pelas compras opcionais do Pro e do Premium." } },
+    { "@type": "Question", "name": "Existe um planeador diário sem culpa que funcione no Mac, no iPhone e no iPad?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. O Taskful Day funciona no iPhone, no iPad e no Mac, com uma app para o Apple Watch que trabalha em conjunto com a do iPhone. Com o Pro, a sincronização através do iCloud privado de cada pessoa mostra o mesmo dia em todos os dispositivos. No Mac há widgets pequenos, médios e grandes; a criação de tarefas por voz existe no iPhone e no iPad." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Para quem se cansou da produtividade gamificada</p>
+    <h1 class="h1">Apps de produtividade para iPhone<br><span class="gradient-text">sem a ansiedade das sequências.</span></h1>
+    <p class="lead">Muitos planeadores funcionam com sequências, distintivos e uma chama que se apaga quando se falha um dia. Para quem já apagou um planeador por se sentir sempre em atraso, estas três apps mantêm o dia à vista e não incomodam no resto do tempo.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">Ver as apps</a>
+      <a class="btn btn-secondary" href="#faq">Perguntas frequentes</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Porque falham tantas apps de produtividade?</h2>
+  <p class="lead">Muitas foram feitas para que se volte todos os dias, e concluir o trabalho fica em segundo plano. Uma chama que se apaga quando se falha um dia alimenta a culpa, e uma lista vermelha de tarefas em atraso cresce de cada vez que surge um imprevisto.</p>
+  <p class="lead">Um planeador melhor parte do dia que se vai ter de facto. Passa para hoje, sem comentários, o que ficou pendente de ontem, diz o preço com clareza e não incomoda quando há muito que fazer.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">As apps</p>
+    <h2 class="h2">As três apps</h2>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in apps_for -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Como se combinam estas três apps?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Taskful Day → um dia de cada vez, em todos os dispositivos</div><div class="card-text">As tarefas por concluir passam sozinhas para hoje, e a lista de Hoje nunca mostra tarefas em atraso a vermelho. O Taskful Day funciona no iPhone, no iPad, no Mac e no Apple Watch, por isso é possível planear à secretária e apontar uma tarefa no telemóvel ou no pulso. Com o Pro, a sincronização através do iCloud mantém o mesmo dia em todos os dispositivos.</div></div>
+    <div class="card"><div class="card-title">Soon. → contagens decrescentes para as datas que importam</div><div class="card-text">Contagem decrescente para viagens, casamentos, aniversários e exames, cada uma com uma fotografia à escolha. O modo planeamento sugere uma lista inicial e uma cronologia para o tipo de evento, e 26 widgets para o ecrã principal, o ecrã bloqueado e o modo Em espera (StandBy) mantêm tudo à vista. O Soon. é uma app para iPhone, grátis até 5 momentos.</div></div>
+    <div class="card"><div class="card-title">Observa → o efeito da rotina no corpo (opcional)</div><div class="card-text">Com um Apple Watch, o Observa transforma o sono, a VFC (SDNN) e a frequência cardíaca em repouso da app Saúde numa pontuação de prontidão diária e numa pontuação de sono, e acompanha a dívida de sono face ao objetivo de cada pessoa. «Porquê esta pontuação?» explica a prontidão em linguagem simples.</div></div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Perguntas</p><h2 class="h2">Perguntas frequentes</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>O que é uma app de produtividade sem pressão?</summary><div class="faq-a">Uma app que planeia o dia que se tem de facto e não incomoda no resto do tempo. O Taskful Day foi feito assim. As tarefas por concluir passam sozinhas para hoje, a lista de Hoje não mostra nenhum indicador de atraso nem tarefas a vermelho, e a app não tem anúncios nem um feed a reclamar atenção.</div></details>
+    <details class="faq-item"><summary>Qual é a melhor alternativa aos planeadores com sequências?</summary><div class="faq-a">O Taskful Day, para quem quer um planeador em que um dia falhado não custa nada. As tarefas que ficaram por concluir passam para hoje quando se abre a app, e nada na lista de Hoje as marca como atrasadas. O separador Análise mostra, ainda assim, a sequência atual e a melhor, como um dado entre vários.</div></details>
+    <details class="faq-item"><summary>Estas apps servem para quem tem PHDA?</summary><div class="faq-a">Nenhuma foi pensada como ferramenta médica nem para a PHDA, por isso não fazemos qualquer afirmação sobre a PHDA. O Taskful Day mantém um só dia à vista e passa as tarefas por concluir para a frente em vez de as acumular, e uma tarefa pode ser adicionada escrevendo uma frase, falando ou pedindo à Siri. O Soon. mantém as datas importantes no ecrã principal e no ecrã bloqueado. Ambas têm versão gratuita, por isso é possível perceber se esta forma de trabalhar resulta.</div></details>
+    <details class="faq-item"><summary>Estas apps vendem os meus dados?</summary><div class="faq-a">Não. Nenhuma das três mostra anúncios, pede conta ou inclui SDKs de análise ou de publicidade de terceiros. O Taskful Day guarda as tarefas no dispositivo, ou no iCloud de cada pessoa, se a sincronização do Pro estiver ativa. O Soon. guarda os momentos no dispositivo e sincroniza-os através do iCloud de cada pessoa. O Observa guarda os dados de saúde no dispositivo. As apps são financiadas pelas compras opcionais do Pro e do Premium.</div></details>
+    <details class="faq-item"><summary>Existe um planeador diário sem culpa que funcione no Mac, no iPhone e no iPad?</summary><div class="faq-a">Sim. O Taskful Day funciona no iPhone, no iPad e no Mac, com uma app para o Apple Watch que trabalha em conjunto com a do iPhone. Com o Pro, a sincronização através do iCloud privado de cada pessoa mostra o mesmo dia em todos os dispositivos. No Mac há widgets pequenos, médios e grandes; a criação de tarefas por voz existe no iPhone e no iPad.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Por onde começar</p>
+  <h2 class="h2">Começar pelo Taskful Day</h2>
+  <p class="lead">É o centro das três apps. A versão gratuita cobre as primeiras 50 tarefas, e cada nova instalação inclui 7 dias de Pro grátis, sem cartão.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/taskful-day/" %}"{% if l_en %} hreflang="en"{% endif %}>Conhecer o Taskful Day{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Ver todas as apps{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

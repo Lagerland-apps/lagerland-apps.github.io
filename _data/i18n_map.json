@@ -754,49 +754,56 @@
     "en": "/for/",
     "es": "/es/for/",
     "fr": "/fr/for/",
-    "it": "/it/for/"
+    "it": "/it/for/",
+    "pt": "/pt/for/"
   },
   "/for/apple-health-power-users/": {
     "de": "/de/for/apple-health-power-users/",
     "en": "/for/apple-health-power-users/",
     "es": "/es/for/apple-health-power-users/",
     "fr": "/fr/for/apple-health-power-users/",
-    "it": "/it/for/apple-health-power-users/"
+    "it": "/it/for/apple-health-power-users/",
+    "pt": "/pt/for/apple-health-power-users/"
   },
   "/for/calm-productivity/": {
     "de": "/de/for/calm-productivity/",
     "en": "/for/calm-productivity/",
     "es": "/es/for/calm-productivity/",
     "fr": "/fr/for/calm-productivity/",
-    "it": "/it/for/calm-productivity/"
+    "it": "/it/for/calm-productivity/",
+    "pt": "/pt/for/calm-productivity/"
   },
   "/for/shift-workers/": {
     "de": "/de/for/shift-workers/",
     "en": "/for/shift-workers/",
     "es": "/es/for/shift-workers/",
     "fr": "/fr/for/shift-workers/",
-    "it": "/it/for/shift-workers/"
+    "it": "/it/for/shift-workers/",
+    "pt": "/pt/for/shift-workers/"
   },
   "/guides/": {
     "de": "/de/guides/",
     "en": "/guides/",
     "es": "/es/guides/",
     "fr": "/fr/guides/",
-    "it": "/it/guides/"
+    "it": "/it/guides/",
+    "pt": "/pt/guides/"
   },
   "/guides/best-chess-apps-iphone/": {
     "de": "/de/guides/best-chess-apps-iphone/",
     "en": "/guides/best-chess-apps-iphone/",
     "es": "/es/guides/best-chess-apps-iphone/",
     "fr": "/fr/guides/best-chess-apps-iphone/",
-    "it": "/it/guides/best-chess-apps-iphone/"
+    "it": "/it/guides/best-chess-apps-iphone/",
+    "pt": "/pt/guides/best-chess-apps-iphone/"
   },
   "/guides/best-logic-puzzle-games-iphone/": {
     "de": "/de/guides/best-logic-puzzle-games-iphone/",
     "en": "/guides/best-logic-puzzle-games-iphone/",
     "es": "/es/guides/best-logic-puzzle-games-iphone/",
     "fr": "/fr/guides/best-logic-puzzle-games-iphone/",
-    "it": "/it/guides/best-logic-puzzle-games-iphone/"
+    "it": "/it/guides/best-logic-puzzle-games-iphone/",
+    "pt": "/pt/guides/best-logic-puzzle-games-iphone/"
   },
   "/guides/best-shogi-apps-iphone/": {
     "de": "/de/guides/best-shogi-apps-iphone/",
@@ -810,7 +817,8 @@
     "en": "/guides/best-xiangqi-apps-iphone/",
     "es": "/es/guides/best-xiangqi-apps-iphone/",
     "fr": "/fr/guides/best-xiangqi-apps-iphone/",
-    "it": "/it/guides/best-xiangqi-apps-iphone/"
+    "it": "/it/guides/best-xiangqi-apps-iphone/",
+    "pt": "/pt/guides/best-xiangqi-apps-iphone/"
   },
   "/guides/bill-tracker-without-bank-connection/": {
     "de": "/de/guides/bill-tracker-without-bank-connection/",
@@ -824,7 +832,8 @@
     "en": "/guides/workout-app-without-subscription/",
     "es": "/es/guides/workout-app-without-subscription/",
     "fr": "/fr/guides/workout-app-without-subscription/",
-    "it": "/it/guides/workout-app-without-subscription/"
+    "it": "/it/guides/workout-app-without-subscription/",
+    "pt": "/pt/guides/workout-app-without-subscription/"
   },
   "/journal/": {
     "de": "/de/journal/",

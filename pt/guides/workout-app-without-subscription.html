@@ -1,0 +1,161 @@
+---
+layout: default
+ref: /guides/workout-app-without-subscription/
+permalink: /pt/guides/workout-app-without-subscription/
+translated_from: 2026-10-29
+title: "App de treino grátis, sem subscrição"
+quick_answer: "Para uma app de treino sem qualquer subscrição, o LiftLog, da Lagerland Apps (a editora deste guia), é um diário de treino para iPhone que se paga uma só vez: 7 dias grátis sem cartão e depois uma compra única de {P_IAP:Minimum@liftlog} a {P_IAP:Patron@liftlog}. Para começar sem pagar e ter app para o Apple Watch, o GymLogger X, da mesma editora, regista os treinos grátis no iPhone e no Apple Watch; o nível Pro (os 44 programas, todo o histórico e as análises de patamares e fadiga) custa {P_MONTHLY@gymlogger-x}/mês, {P_YEARLY@gymlogger-x}/ano ou {P_LIFETIME@gymlogger-x} uma só vez: subscrição ou opção vitalícia. O Fitbod e o Caliber vendem os níveis pagos apenas por subscrição, enquanto o Strong e o Hevy vendem o Pro por subscrição ou como compra vitalícia."
+seo:
+  title: "App de treino grátis para iPhone, sem subscrição"
+  description: "O Fitbod é só por subscrição e o Strong e o Hevy cobram o Pro. Como escolher uma app de treino grátis, registar séries e seguir um plano sem mensalidade."
+  keywords:
+    - app de treino grátis
+    - melhor app de treino grátis
+    - app de treino gratuito iphone
+    - app plano de treino grátis
+    - app treino musculação grátis
+    - melhor app musculação grátis
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign app = site.apps | where: "slug", "gymlogger-x" | first -%}
+{%- assign liftlog = site.apps | where: "slug", "liftlog" | first -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/pt/guides/workout-app-without-subscription/#webpage",
+  "url": "{{ site.url }}/pt/guides/workout-app-without-subscription/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/pt/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "pt-PT",
+  "datePublished": "2026-11-19",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/pt/" },
+      { "@type": "ListItem", "position": 2, "name": "Guias", "item": "{{ site.url }}/pt/guides/" },
+      { "@type": "ListItem", "position": 3, "name": "App de treino grátis, sem subscrição", "item": "{{ site.url }}/pt/guides/workout-app-without-subscription/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "pt-PT",
+  "mainEntity": [
+    { "@type": "Question", "name": "Há alguma boa app de treino sem subscrição mensal?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. O LiftLog (nosso) não tem qualquer subscrição: 7 dias grátis sem cartão e depois um só pagamento, no nível escolhido, de {P_IAP:Minimum@liftlog} a {P_IAP:Patron@liftlog}. O GymLogger X (também nosso) tem um nível grátis para registar treinos no iPhone e no Apple Watch, e o nível Pro é uma subscrição ou uma compra vitalícia única de {P_LIFETIME@gymlogger-x}. O Fitbod e o Caliber só dão acesso às funções pagas por subscrição. O Strong e o Hevy vendem o Pro por subscrição ou como compra vitalícia." } },
+    { "@type": "Question", "name": "Qual é a forma mais barata de registar treinos no iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Uma app grátis com uma melhoria opcional paga uma só vez. O nível grátis do GymLogger X permite registar treinos sem limite no iPhone e no Apple Watch e inclui a biblioteca de 1500 exercícios, um programa de cada vez e os últimos 30 dias de histórico. O Pro acrescenta os 44 programas, todo o histórico e análises que apontam patamares, fadiga e desequilíbrios musculares, por {P_MONTHLY@gymlogger-x}/mês, {P_YEARLY@gymlogger-x}/ano ou {P_LIFETIME@gymlogger-x} uma só vez. Quem preferir pagar uma vez por tudo desde o início tem o LiftLog, uma compra única a partir de {P_IAP:Minimum@liftlog} depois de 7 dias de teste grátis." } },
+    { "@type": "Question", "name": "É possível registar treinos no Apple Watch sem pagar subscrição?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A app para o Apple Watch do GymLogger X está incluída no nível grátis. A sessão começa no iPhone e depois registam-se no pulso as repetições e o peso de cada série, usam-se os temporizadores de descanso e vê-se a frequência cardíaca em direto, com o iPhone na mochila." } },
+    { "@type": "Question", "name": "Porque é que a maioria das apps de treino é só por subscrição?", "acceptedAnswer": { "@type": "Answer", "text": "As subscrições dão às editoras uma receita recorrente e previsível, o que irrita quem prefere pagar uma só vez por uma ferramenta que usa todos os dias. Alguns programadores independentes continuam a vender apps por um preço único, entre eles o LiftLog (nosso). O Strong e o Hevy vendem também um Pro vitalício a par das subscrições." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Guia · Do problema à solução</p>
+    <h1 class="h1">
+      «Quero uma app de treino<br><span class="gradient-text">sem pagar todos os meses para sempre»</span>
+    </h1>
+    <p class="lead">
+      Na App Store de Portugal, o Strong PRO custa desde 4,99 € por mês e o Fitbod desde 10,99 € por mês (consultado a 19 de novembro de 2026). Para uma app que se abre 3 a 5 vezes por semana durante todo o tempo em que se treina, uma subscrição mensal soma centenas de euros em dez anos só para guardar séries e repetições. O Strong e o Hevy vendem também um desbloqueio vitalício, e as apps deste guia mostram outras formas de pagar uma só vez.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#answer">Ir para a resposta</a>
+      <a class="btn btn-secondary" href="#faq">Perguntas frequentes</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Porque é que o preço só por subscrição é um problema real nas apps de treino?</h2>
+  <p class="lead">Um registo de treinos presta-se a uma compra única: o âmbito é simples, as atualizações são pouco frequentes e usa-se em sessões de 45 a 90 minutos. Guardar uma série de números não exige um custo recorrente de servidor.</p>
+  <p class="lead">Mesmo assim, as maiores apps de registo de treino reservam as funções principais para um nível pago, e a maioria cobra-o por mês ou por ano. Estes são os preços na App Store de Portugal:</p>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Strong</div>
+      <div class="card-text">Grátis com um nível Pro pago. O Strong PRO custa 4,99 € ou 5,99 € por mês, ou de 24,49 € a 33,99 € por ano, e o Strong PRO Forever é uma compra vitalícia (a loja lista 89,99 € e 99,99 €). Várias rotinas, o acompanhamento do progresso e a sincronização na nuvem exigem o PRO. Muita gente que treina com pesos vê nele o registo de força de referência, e muita também o acha caro demais para o que faz.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Hevy</div>
+      <div class="card-text">Na App Store de Portugal aparece como «Hevy: Treino de Ginásio». O nível grátis cobre muito ao início, mas as funções avançadas e algumas funções de exportação exigem o Hevy Pro: 3,49 € ou 4,49 € por mês, 26,49 € por ano ou 89,99 € como compra vitalícia.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Fitbod</div>
+      <div class="card-text">Treinos gerados por IA, só por subscrição: de 10,99 € a 14,99 € por mês ou de 69,99 € a 81,99 € por ano, sem opção vitalícia. Funciona, e custa mais por mês do que o Strong ou o Hevy.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Caliber</div>
+      <div class="card-text">Uma app ao estilo de um treinador, com programas personalizados. O Caliber Plus é só mensal ou anual, sem opção vitalícia, e o preço paga os custos dos treinadores humanos mais do que a app.</div>
+    </div>
+  </div>
+  <p class="small" style="margin-top:var(--s-3);">Preços em euros tirados da lista de compras integradas de cada app na App Store de Portugal. Por vezes a App Store mostra vários preços para o mesmo plano, daí os intervalos.</p>
+</section>
+
+<section id="answer" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">A resposta</p>
+    <h2 class="h2">LiftLog ou GymLogger X: pagar uma vez ou começar grátis</h2>
+    <p class="lead">As duas apps são nossas. O <a href="{% include l.html url="/apps/liftlog/" %}"{% if l_en %} hreflang="en"{% endif %}>LiftLog{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> não tem qualquer subscrição: são 7 dias grátis sem cartão e depois paga-se uma só vez, no nível escolhido, de {P_IAP:Minimum@liftlog} a {P_IAP:Patron@liftlog}. O <a href="{% include l.html url="/apps/gymlogger-x/" %}"{% if l_en %} hreflang="en"{% endif %}>GymLogger X{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a> é uma app de treino de força para iPhone e Apple Watch cujo nível grátis cobre o registo de treinos. O nível Pro é uma subscrição ou uma compra vitalícia única de {P_LIFETIME@gymlogger-x}, em vez de uma cobrança mensal sem fim.</p>
+  </div>
+  {% if app %}
+  <div class="grid grid-2 stagger">
+    {% if liftlog %}{% include app-card.html app=liftlog %}{% endif %}
+    {% include app-card.html app=app %}
+  </div>
+  {% endif %}
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">O que inclui o nível grátis do GymLogger X?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Registo rápido de séries</div><div class="card-text">Séries, repetições e peso com o mínimo de toques. As superséries e as séries gigantes já vêm incluídas.</div></div>
+    <div class="card"><div class="card-title">1500 exercícios</div><div class="card-text">A biblioteca completa de exercícios, com pesquisa e filtros, e um histórico e um gráfico para cada exercício. Os exercícios personalizados e as demonstrações animadas vêm com o Pro.</div></div>
+    <div class="card"><div class="card-title">Registo no Apple Watch</div><div class="card-text">Registam-se no pulso as repetições e o peso de cada série, usam-se os temporizadores de descanso e vê-se a frequência cardíaca em direto. A sessão começa no iPhone, que pode ficar na mochila.</div></div>
+    <div class="card"><div class="card-title">Recordes pessoais</div><div class="card-text">O ecrã de treino concluído assinala cada novo recorde. O histórico grátis abrange os últimos 30 dias; o Pro desbloqueia o resto, todos os recordes pessoais num só sítio e as tendências de força.</div></div>
+  </div>
+  <p class="lead" style="margin-top:var(--s-4);">O que o Pro inclui: os 44 programas e quantos programas ativos se quiser (o nível grátis admite um de cada vez: um dos 6 programas grátis, um próprio ou um do Smart Program Creator), todo o histórico, análises que apontam patamares, fadiga e desequilíbrios musculares, demonstrações animadas dos exercícios e exercícios personalizados. São úteis para quem os quiser, mas é possível registar bem os treinos sem eles.</p>
+  <p class="lead">O LiftLog funciona ao contrário. Depois dos 7 dias de teste não há nível grátis, mas um só pagamento cobre a app toda: 1500 exercícios com demonstrações animadas, 40 programas prontos a usar que podem sugerir o peso seguinte e 10 widgets para o ecrã principal e o ecrã bloqueado.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">As contas: subscrição ou compra vitalícia</h2>
+  <div class="card">
+    <p><strong>Strong PRO:</strong> 4,99 € por mês × 10 anos = <strong>cerca de 600 €</strong>, ou o Strong PRO Forever uma só vez (89,99 € ou 99,99 €)</p>
+    <p><strong>Hevy Pro:</strong> 3,49 € por mês × 10 anos = <strong>cerca de 420 €</strong>, ou o Hevy Pro Lifetime uma só vez (89,99 €)</p>
+    <p><strong>Fitbod:</strong> 10,99 € por mês × 10 anos = <strong>cerca de 1320 €</strong>, sem opção vitalícia</p>
+    <p><strong>LiftLog:</strong> <strong>de {P_IAP:Minimum@liftlog} a {P_IAP:Patron@liftlog}</strong>, uma só vez, no nível escolhido</p>
+    <p><strong>GymLogger X vitalício:</strong> <strong>{P_LIFETIME@gymlogger-x}</strong>, uma só vez, sem renovação</p>
+    <p class="small" style="margin-top:var(--s-3);">Preços das outras apps tirados da lista de compras integradas de cada app na App Store de Portugal, consultada a 19 de novembro de 2026. Em cada app usou-se o preço mais baixo listado para o plano mensal, multiplicado por 120 meses. Alguns planos têm vários preços, e os preços mudam.</p>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Perguntas</p><h2 class="h2">Perguntas frequentes</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Há alguma boa app de treino sem subscrição mensal?</summary><div class="faq-a">Sim. O LiftLog (nosso) não tem qualquer subscrição: 7 dias grátis sem cartão e depois um só pagamento, no nível escolhido, de {P_IAP:Minimum@liftlog} a {P_IAP:Patron@liftlog}. O GymLogger X (também nosso) tem um nível grátis para registar treinos no iPhone e no Apple Watch, e o nível Pro é uma subscrição ou uma compra vitalícia única de {P_LIFETIME@gymlogger-x}. O Fitbod e o Caliber só dão acesso às funções pagas por subscrição. O Strong e o Hevy vendem o Pro por subscrição ou como compra vitalícia.</div></details>
+    <details class="faq-item"><summary>Qual é a forma mais barata de registar treinos no iPhone?</summary><div class="faq-a">Uma app grátis com uma melhoria opcional paga uma só vez. O nível grátis do GymLogger X permite registar treinos sem limite no iPhone e no Apple Watch e inclui a biblioteca de 1500 exercícios, um programa de cada vez e os últimos 30 dias de histórico. O Pro acrescenta os 44 programas, todo o histórico e análises que apontam patamares, fadiga e desequilíbrios musculares, por {P_MONTHLY@gymlogger-x}/mês, {P_YEARLY@gymlogger-x}/ano ou {P_LIFETIME@gymlogger-x} uma só vez. Quem preferir pagar uma vez por tudo desde o início tem o LiftLog, uma compra única a partir de {P_IAP:Minimum@liftlog} depois de 7 dias de teste grátis.</div></details>
+    <details class="faq-item"><summary>É possível registar treinos no Apple Watch sem pagar subscrição?</summary><div class="faq-a">Sim. A app para o Apple Watch do GymLogger X está incluída no nível grátis. A sessão começa no iPhone e depois registam-se no pulso as repetições e o peso de cada série, usam-se os temporizadores de descanso e vê-se a frequência cardíaca em direto, com o iPhone na mochila.</div></details>
+    <details class="faq-item"><summary>Porque é que a maioria das apps de treino é só por subscrição?</summary><div class="faq-a">As subscrições dão às editoras uma receita recorrente e previsível, o que irrita quem prefere pagar uma só vez por uma ferramenta que usa todos os dias. Alguns programadores independentes continuam a vender apps por um preço único, entre eles o LiftLog (nosso). O Strong e o Hevy vendem também um Pro vitalício a par das subscrições.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Experimente</p>
+  <h2 class="h2">Escolha a que se adapta melhor.</h2>
+  <p class="lead">O LiftLog é um só pagamento depois de 7 dias de teste grátis, sem subscrição. O nível grátis do GymLogger X regista todos os treinos no iPhone e no Apple Watch, e só se paga o Pro para ter os 44 programas, todo o histórico ou as análises de patamares e fadiga.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/liftlog/" %}"{% if l_en %} hreflang="en"{% endif %}>Conhecer o LiftLog{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/gymlogger-x/" %}"{% if l_en %} hreflang="en"{% endif %}>Conhecer o GymLogger X{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/alternatives/strong-workout-app/" %}"{% if l_en %} hreflang="en"{% endif %}>Comparação com o Strong{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

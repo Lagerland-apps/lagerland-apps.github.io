@@ -6135,7 +6135,7 @@
      "q": "O que é o AfterShift?"
     },
     {
-     "a": "Para profissionais de enfermagem e de hospital, paramédicos, bombeiros, equipas de fábricas, de logística e de pista em aeroportos, pessoal de hotelaria e de noite, quem está de prevenção e qualquer pessoa cuja janela de sono muda de semana para semana. Se a escala se repete, de 4 x 4 a um ciclo de 28 dias do tamanho de um DuPont, o AfterShift consegue guardá-la. A configuração pergunta se se trabalha por turnos rotativos, num horário fixo ou em horários irregulares e de prevenção.",
+     "a": "Para profissionais de enfermagem e de hospital, paramédicos, bombeiros, equipas de fábricas, de logística e de pista em aeroportos, pessoal de hotelaria e de noite, quem está de prevenção e qualquer pessoa cuja janela de sono muda de semana para semana. Se a escala se repete, de 4 x 4 a um ciclo de 28 dias do tamanho de um DuPont, o AfterShift consegue guardá-la. A configuração pergunta se se trabalha por turnos rotativos, num horário fixo ou em horários irregulares e de prevenção. A página <a href=\"/pt/for/shift-workers/\">trabalho por turnos e saúde</a> junta o AfterShift a mais três apps para quem faz turnos.",
      "q": "Para quem é o AfterShift?"
     },
     {
@@ -6593,7 +6593,7 @@
      "q": "O que é o EarnLock?"
     },
     {
-     "a": "Essas apps põem uma pausa, um temporizador ou um simples toque entre a pessoa e a app. O EarnLock põe aí um objetivo diário de atividade, medido pela app Saúde: a meio, algumas das apps abrem durante cerca de uma hora, uma vez por dia, e o objetivo completo abre todas até à meia-noite. Começa também com uma semana sombra que não bloqueia nada e conta quantas vezes teria havido bloqueio, de modo que o primeiro bloqueio a sério se ajusta ao hábito. Não precisa de conta, bloquear uma app é grátis para sempre e o Premium existe em versão mensal, anual ou como compra única de {P_LIFETIME}.",
+     "a": "Essas apps põem uma pausa, um temporizador ou um simples toque entre a pessoa e a app. O EarnLock põe aí um objetivo diário de atividade, medido pela app Saúde: a meio, algumas das apps abrem durante cerca de uma hora, uma vez por dia, e o objetivo completo abre todas até à meia-noite. Começa também com uma semana sombra que não bloqueia nada e conta quantas vezes teria havido bloqueio, de modo que o primeiro bloqueio a sério se ajusta ao hábito. Não precisa de conta, bloquear uma app é grátis para sempre e o Premium existe em versão mensal, anual ou como compra única de {P_LIFETIME}. O <a href=\"/pt/guides/limitar-tempo-de-ecra-iphone/\">guia para limitar o tempo de ecrã no iPhone</a> explica a ferramenta da Apple e compara as apps que travam o uso.",
      "q": "Em que difere o EarnLock do Opal, do one sec, do ScreenZen ou do Forest?"
     },
     {
@@ -6723,7 +6723,7 @@
      "q": "O que é o LiftLog?"
     },
     {
-     "a": "Não há subscrição. O LiftLog é grátis durante 7 dias, sem cartão. Depois compra-se uma só vez, no nível escolhido: {P_IAP:Minimum} (Justo), {P_IAP:Suggested} (Bom), {P_IAP:Supporter} (Generoso) ou {P_IAP:Patron} (Patrocinador). Todos os níveis desbloqueiam a mesma app, nada se renova, as atualizações futuras estão incluídas e a Partilha com a família está ativada, por isso uma compra abrange o grupo familiar.",
+     "a": "Não há subscrição. O LiftLog é grátis durante 7 dias, sem cartão. Depois compra-se uma só vez, no nível escolhido: {P_IAP:Minimum} (Justo), {P_IAP:Suggested} (Bom), {P_IAP:Supporter} (Generoso) ou {P_IAP:Patron} (Patrocinador). Todos os níveis desbloqueiam a mesma app, nada se renova, as atualizações futuras estão incluídas e a Partilha com a família está ativada, por isso uma compra abrange o grupo familiar. O <a href=\"/pt/guides/workout-app-without-subscription/\">guia das apps de treino sem subscrição</a> compara o LiftLog com o Strong, o Hevy e o Fitbod.",
      "q": "Quanto custa o LiftLog e tem subscrição?"
     },
     {
@@ -6743,7 +6743,7 @@
      "q": "O LiftLog funciona com o Apple Watch?"
     },
     {
-     "a": "«Explorar modelos» reúne 40 programas baseados em rotinas conhecidas, como StrongLifts 5×5, Starting Strength, Greyskull LP, Wendler 5/3/1, Texas Method, GZCLP, nSuns 531 LP, PHUL, PHAT e German Volume Training. Vinte centram-se na força, 17 na hipertrofia e 3 são gerais; 10 são para iniciantes, 22 intermédios e 8 avançados. Cada um carrega com séries, repetições e descanso já definidos, e é possível criar programas próprios. Os nomes dos programas pertencem aos respetivos proprietários, que não endossam o LiftLog.",
+     "a": "«Explorar modelos» reúne 40 programas baseados em rotinas conhecidas, como StrongLifts 5×5, Starting Strength, Greyskull LP, Wendler 5/3/1, Texas Method, GZCLP, nSuns 531 LP, PHUL, PHAT e German Volume Training. Vinte centram-se na força, 17 na hipertrofia e 3 são gerais; 10 são para principiantes, 22 intermédios e 8 avançados. Cada um carrega com séries, repetições e descanso já definidos, e é possível criar programas próprios. Os nomes dos programas pertencem aos respetivos proprietários, que não endossam o LiftLog.",
      "q": "Que programas inclui o LiftLog?"
     },
     {
@@ -7011,7 +7011,7 @@
      "q": "Como decide o Observa que padrões mostrar?"
     },
     {
-     "a": "O Observa serve a quem quer uma pontuação de prontidão diária e uma recomendação de treino com os motivos explicados, medidas face à própria linha de base, e prefere que os dados de saúde nunca saiam do dispositivo. Não tem conta nem anúncios e funciona em iPhone, iPad e Apple Watch. As páginas de comparação (em inglês) vão app a app: <a href=\"/alternatives/autosleep/\" hreflang=\"en\">AutoSleep</a>, <a href=\"/alternatives/athlytic/\" hreflang=\"en\">Athlytic</a>, <a href=\"/alternatives/bevel/\" hreflang=\"en\">Bevel</a>, <a href=\"/alternatives/gentler-streak/\" hreflang=\"en\">Gentler Streak</a>, <a href=\"/alternatives/whoop/\" hreflang=\"en\">Whoop</a>, <a href=\"/alternatives/oura/\" hreflang=\"en\">Oura</a>, <a href=\"/alternatives/hrv4training/\" hreflang=\"en\">HRV4Training</a> e <a href=\"/alternatives/welltory/\" hreflang=\"en\">Welltory</a>.",
+     "a": "O Observa serve a quem quer uma pontuação de prontidão diária e uma recomendação de treino com os motivos explicados, medidas face à própria linha de base, e prefere que os dados de saúde nunca saiam do dispositivo. Não tem conta nem anúncios e funciona em iPhone, iPad e Apple Watch. As páginas de comparação (em inglês) vão app a app: <a href=\"/alternatives/autosleep/\" hreflang=\"en\">AutoSleep</a>, <a href=\"/alternatives/athlytic/\" hreflang=\"en\">Athlytic</a>, <a href=\"/alternatives/bevel/\" hreflang=\"en\">Bevel</a>, <a href=\"/alternatives/gentler-streak/\" hreflang=\"en\">Gentler Streak</a>, <a href=\"/alternatives/whoop/\" hreflang=\"en\">Whoop</a>, <a href=\"/alternatives/oura/\" hreflang=\"en\">Oura</a>, <a href=\"/alternatives/hrv4training/\" hreflang=\"en\">HRV4Training</a> e <a href=\"/alternatives/welltory/\" hreflang=\"en\">Welltory</a>. A página <a href=\"/pt/for/apple-health-power-users/\">apps para Apple Watch e para a app Saúde</a> mostra onde o Observa encaixa ao lado do GymLogger X e do AfterShift.",
      "q": "Em que é que o Observa é uma alternativa ao AutoSleep, ao Athlytic ou ao Bevel?"
     },
     {
@@ -7445,7 +7445,7 @@
      "q": "O Taskful Day funciona no Apple Watch?"
     },
     {
-     "a": "A maioria das apps de lista de tarefas acumula pendentes cada vez mais longos e assinala o que ficou por fazer. O Taskful Day planeia um dia de cada vez, passa automaticamente para hoje as tarefas por concluir e não mostra nenhum indicador de atraso na lista de Hoje. Além disso, mostra o dia como um relógio, uma linha do tempo ou um mapa, e funciona no iPhone, no iPad, no Mac e no Apple Watch sem conta.",
+     "a": "A maioria das apps de lista de tarefas acumula pendentes cada vez mais longos e assinala o que ficou por fazer. O Taskful Day planeia um dia de cada vez, passa automaticamente para hoje as tarefas por concluir e não mostra nenhum indicador de atraso na lista de Hoje. Além disso, mostra o dia como um relógio, uma linha do tempo ou um mapa, e funciona no iPhone, no iPad, no Mac e no Apple Watch sem conta. A página <a href=\"/pt/for/calm-productivity/\">apps de produtividade sem a pressão das sequências</a> junta-o ao Soon. e ao Observa.",
      "q": "Em que é que o Taskful Day se distingue das outras apps de lista de tarefas?"
     },
     {
@@ -7571,7 +7571,7 @@
      "q": "O que é o xiangqi (xadrez chinês) e em que difere do xadrez?"
     },
     {
-     "a": "Sim, e é uma das principais razões de o Xiangqiful existir. Escolhem-se as peças ocidentais, que usam símbolos, ou as híbridas, que mostram cada símbolo junto ao seu caráter, para os aprender enquanto se joga. As lições apresentam os caracteres um a um, e pode-se passar às peças tradicionais quando houver vontade.",
+     "a": "Sim, e é uma das principais razões de o Xiangqiful existir. Escolhem-se as peças ocidentais, que usam símbolos, ou as híbridas, que mostram cada símbolo junto ao seu carácter, para os aprender enquanto se joga. As lições apresentam os caracteres um a um, e pode-se passar às peças tradicionais quando houver vontade.",
      "q": "É possível jogar sem saber ler caracteres chineses?"
     },
     {

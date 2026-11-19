@@ -13,10 +13,8 @@ seo:
   description: "App xadrez que explica cada erro das suas partidas e faz deles o treino. Stockfish no dispositivo, 156 lições e 15 000 puzzles. iPhone, iPad e Mac."
   keywords:
     - app xadrez
-    - melhor app de xadrez
     - app para aprender xadrez
     - análise de partidas de xadrez
-    - melhor app de xadrez para iphone
     - app xadrez offline
     - app xadrez sem anúncios
     - analisar partida de xadrez

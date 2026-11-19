@@ -11,6 +11,7 @@ reviewing any Portuguese page. Every decision a translator would otherwise make 
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console for Portugal not read (Claude in Chrome not connected, built-in browser not signed in, no export on disk) |
 | Tier 1 pages | written and reviewed 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/pt.yml`). AI files and OG cards in batch 6 (/pt/llms.txt, /pt/llms-full.txt, 21 OG cards) |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
+| Tier 2 | batch 1 written and reviewed 2026-11-19, no native review yet: both hubs, chess, logic, workout and xiangqi guides, 3 /for/ pages, local-only /pt/guides/limitar-tempo-de-ecra-iphone/. Queue: shogi, bill tracker (needs a local angle: no Portuguese bank-linked default), local countdown guide. for/indie-ios-developers stays English-only. Research: ~/Downloads/githubcode/pt-tier2-research-2026-11-19.md; briefs `_i18n/pt-tier2-brief.md`, `_i18n/pt-tier2-review-brief.md` |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 72 s before Portuguese (main at the setup, 2026-11-19, other sessions' agents running); 85 s with Portuguese Tier 1 (762 audited pages) |
 
@@ -187,6 +188,21 @@ Search Console for Portugal: not read in this session. Revisit 4 to 6 weeks afte
 | Xiangqiful | `xadrez chinês` (title carries «xiangqi» too: «xadrez chinês» also means Chinese checkers) | `xiangqi`, `xadrez chinês como jogar`, `xadrez chinês regras` |
 | Clippet (unreleased, unlisted) | `histórico área de transferência iphone` | `histórico área de transferência mac`, `como ver a área de transferência no mac`, `copiar e colar iphone mac` |
 
+## Tier 2 keywords (2026-11-19)
+
+| Page | Primary | Notes |
+|---|---|---|
+| /pt/guides/best-chess-apps-iphone/ | `melhor app de xadrez` | taken from Chessful (which keeps `app xadrez`) |
+| /pt/guides/best-logic-puzzle-games-iphone/ | `melhores jogos de lógica para iphone` | Millrace keeps `jogos de lógica iphone`, Tare `melhores jogos de puzzle iphone` |
+| /pt/guides/workout-app-without-subscription/ | `app de treino grátis` (angle «sem subscrição») | GymLogger X keeps `app treino ginásio grátis` |
+| /pt/guides/best-xiangqi-apps-iphone/ | `xadrez chinês online` (seo.title only; H1 without «online», the apps are mostly offline) | Xiangqiful keeps `xadrez chinês` |
+| /pt/guides/limitar-tempo-de-ecra-iphone/ (local-only) | `limitar tempo de ecrã iphone` | takes `tempo de ecrã iphone`, `limite de apps iphone` from EarnLock |
+| /pt/for/shift-workers/ | `trabalho por turnos saúde` | AfterShift keeps its sleep queries |
+| /pt/for/apple-health-power-users/ | `apps para apple watch` + `melhor app saúde iphone` | Observa keeps `hrv apple watch`, `app sono apple watch` |
+| /pt/for/calm-productivity/ | `apps de produtividade iphone` | Taskful Day keeps its to-do queries |
+
+Google Portugal suggest returns Brazilian forms (iniciantes, academia, «os apps», celular, tela): never use them as keywords.
+
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
 - App names take the masculine article on every page and in the interface strings («o Observa», «do Pawza», «ao
@@ -248,6 +264,22 @@ menos de 13 anos», «não se dirige a» (directed at) / «não se destina a» (
 «Ao efetuar uma compra, o utilizador aceita que possamos responder…», «A Apple toma a decisão final sobre cada
 reembolso.», «data de entrada em vigor», «framework» feminine.
 
+From the Tier 2 batch 1 reviews (2026-11-19): «deixa em paz o resto do tempo» for "leaves you alone" (reads as the reverse:
+«não incomoda no resto do tempo»); subjectless «quando falha um dia» («quando se falha»); «no próprio iCloud» for "your own
+iCloud" («no iCloud de cada pessoa»); «melhorias» for paid upgrades («compras opcionais do Pro»); «deixa-se o sono ser
+importado»; «Quem quer que … tem no X»; «está a tratar o corpo»; «dá para» in prose and «Dá para…?» in questions («é
+possível»); gendered «farto», «atrasado», «Ser guiado»; «utilização» / «consoante o uso» for "job" («objetivo», «tarefa»);
+Spanish leaks «Comparativas», «frente ao» (write «vs»), «caráter» (pt-PT «carácter»); «compará-la» after a masculine app
+name; «etiqueta de privacidade» (Apple Portugal: «Privacidade da app»); «À primeira vez» inventing a condition Apple doesn't
+state; quoting one's own translation of an English-only listing as if it were the app's text; dropping «inteiramente» /
+«nunca» from a competitor's privacy claim; «estruturas de trabalho» («frameworks»); «seguimento do progresso» (privacy word:
+«acompanhamento»); «combina com» for "suits" («presta-se a»); «dar nome a» a value («determinar»); «destacado» for Editors'
+Choice («escolhido pelos editores»); «o editor deste guia» next to «a Lagerland Apps» («que publica este guia»); «cópias na
+nuvem» for cloud saves; «inundar» for colour-flood; «ambos jogam-se» («ambos se jogam»); added «com frequência»; dropped
+"instead" and "we built"; competitor names replaced by their Portuguese store titles (store title once at most).
+Apple Portugal's own Screen Time guide switches the schedule on with «Programação» and off with «Horário», and writes
+«Limites de tempo» on one page, «Limites de tempo permitido» on another: quote each step as written.
+
 Translationese: title case headings; gerund chains copied from English -ing («oferecendo», «permitindo»); passive
 «é … por» where Portuguese uses «se»; possessives on body parts and devices copied from English; «utilizador»
 everywhere where Portuguese says «quem»; Brazilian vocabulary and grammar on this Portugal site (see Market and
@@ -276,6 +308,8 @@ register); «você» or tu forms slipping in; clitic placement copied from Brazi
 | 21 privacy policies + Clippet terms | 6 writers | 4 reviewers, sentence by sentence: about 12 meaning fixes (contact vs contacts, HealthKit "transmitted", Apple IDs, plain marker, warranties, "would prefer", "was available") | n/a | no native review yet |
 | about, support hub, transparency | 3 writers | 1 reviewer | about: 3 meaning shifts fixed | no native review yet |
 | /pt/llms.txt, /pt/llms-full.txt | 1 writer | 1 reviewer (every reason checked against the app's Portuguese page; one invented query replaced) | n/a | no native review yet |
+| Tier 2 batch 1: chess, logic, workout, xiangqi guides; 3 /for/ pages; local-only screen-time guide (2026-11-19) | 8 Sonnet writers | 4 reviewers (for pages; chess + xiangqi; workout + local, Apple pages re-fetched live; logic): about 150 fixes, incl. double-brace tokens, a wrong Apple label, a translated quote, «Nonogramas Katana» renamed, hedges restored | n/a | no native review yet |
+| Tier 2 hubs, /pt/llms.txt lines, 6 inbound links | 1 Sonnet writer | 1 reviewer (ItemList names and llms titles synced to final page titles, two unrouted queries routed) | n/a | no native review yet |
 
 Points for a native reader: the trial phrase «teste grátis» (Apple's support pages say «período experimental»);
 «segue a sua atividade» for "tracks you"; «Direitos do utilizador» as the privacy heading; «é para si?»; category

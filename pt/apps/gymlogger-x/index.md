@@ -71,7 +71,7 @@ hero:
   secondary: "1500 exercícios, 44 programas prontos a usar (6 deles grátis) e 40 idiomas. Não há anúncios e nunca é preciso criar conta."
   subheadline: "Cada linha de série mostra o que foi levantado da última vez. O temporizador de descanso aparece no ecrã bloqueado e, com um Apple Watch, pode avisar quando a frequência cardíaca recuperou. O Pro lê os próprios treinos e indica o que se segue: descansar, forçar mais ou trabalhar um ponto fraco."
   cta_label: "Descarregar grátis"
-  alt: "O GymLogger X no iPhone: um dia de parte superior do corpo com séries de supino com barra e os 225 lb × 6 da última vez"
+  alt: "O GymLogger X no iPhone: um dia de parte superior do corpo com séries de supino com barra e os 100 kg × 6 da última vez"
 
 founder:
   overline: "Porque a criámos"
@@ -157,7 +157,7 @@ features:
     description: "Doze widgets para o ecrã principal e o ecrã bloqueado, entre eles «Grelha de treinos» (um ano de treino, um quadrado por dia), «Mapa muscular», «Hoje», «Escada de força» e «Recorde». Duas atividades em tempo real mostram o treino em curso e a contagem decrescente do descanso no ecrã bloqueado e na Dynamic Island. Alguns tamanhos pequenos e do ecrã bloqueado são grátis; os restantes exigem o Pro."
 
 screenshot_captions:
-  - alt: "O GymLogger X no iPhone: séries de supino com barra, com os 225 lb × 6 da última vez junto às linhas de série"
+  - alt: "O GymLogger X no iPhone: séries de supino com barra, com os 100 kg × 6 da última vez junto às linhas de série"
   - alt: "Análises de progresso do GymLogger X com uma sugestão de próximo passo, uma pontuação de prontidão e um gráfico de 1RM estimado"
   - alt: "Visão geral do progresso no GymLogger X, com a carga de treino e uma sugestão de que há margem para forçar mais"
   - alt: "Catálogo de programas de treino do GymLogger X com filtros e programas como Linear 5×5 Foundation e Superior / Inferior"

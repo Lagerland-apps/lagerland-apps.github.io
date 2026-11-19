@@ -1,0 +1,132 @@
+---
+layout: default
+ref: /for/apple-health-power-users/
+permalink: /pt/for/apple-health-power-users/
+translated_from: 2026-11-08
+title: "Melhores apps para Apple Watch e para a app Saúde do iPhone"
+quick_answer: "Entre as apps para Apple Watch que trabalham com a app Saúde do iPhone, comece pelo Observa. Todas as manhãs, transforma o sono, a VFC (SDNN), a frequência cardíaca em repouso e a carga de treino numa pontuação de prontidão sobre 100, medida face à linha de base de cada pessoa, e responde a «Devo treinar hoje?» com o motivo. Funciona em iPhone, iPad e Apple Watch, e a análise é feita no dispositivo. Acrescente o GymLogger X, um registo de treino de força com app para Apple Watch que guarda na app Saúde os treinos concluídos, e o AfterShift, se trabalha por turnos e precisa de medir o sono entre um turno e o seguinte. Nenhuma das três pede conta nem mostra anúncios."
+seo:
+  title: "Melhores apps para Apple Watch e para a app Saúde"
+  description: "Apps para Apple Watch que explicam a app Saúde: o Observa junta sono, VFC e coração numa pontuação diária com o motivo, analisada no dispositivo."
+  keywords:
+    - apps para apple watch
+    - melhor app saúde iphone
+    - app saúde apple watch
+    - apps grátis para apple watch
+    - apple saúde como funciona
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign slugs = "observa,gymlogger-x,aftershift" | split: "," -%}
+{%- assign apps_for = '' | split: '' -%}
+{%- for slug in slugs -%}{%- assign m = site.apps | where: "slug", slug | first -%}{%- if m and m.status == "live" -%}{%- assign apps_for = apps_for | push: m -%}{%- endif -%}{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/pt/for/apple-health-power-users/#webpage",
+  "url": "{{ site.url }}/pt/for/apple-health-power-users/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/pt/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "pt-PT",
+  "datePublished": "2026-11-19",
+  "audience": { "@type": "PeopleAudience", "audienceType": "Utilizadores avançados do Apple Watch e da app Saúde" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/pt/" },
+      { "@type": "ListItem", "position": 2, "name": "Para utilizadores avançados da app Saúde", "item": "{{ site.url }}/pt/for/apple-health-power-users/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "pt-PT",
+  "mainEntity": [
+    { "@type": "Question", "name": "Qual é a melhor app para analisar os dados da app Saúde?", "acceptedAnswer": { "@type": "Answer", "text": "Para transformar os dados da app Saúde numa decisão para hoje, o Observa é a app que criámos com esse fim. Todas as manhãs, calcula uma pontuação de prontidão sobre 100 a partir do sono, da VFC (SDNN), da frequência cardíaca em repouso e da carga de treino, medidos face à linha de base de cada pessoa, e «Devo treinar hoje?» responde Forçar, Manter, Recuperar ou Descansar, com o motivo. «Porquê esta pontuação?» mostra que sinais a fizeram mexer. As pontuações diárias são grátis e a análise é feita no dispositivo." } },
+    { "@type": "Question", "name": "O Observa envia os meus dados de saúde para a internet?", "acceptedAnswer": { "@type": "Answer", "text": "Não. A análise é feita no iPhone, no iPad ou no Apple Watch, e a app não faz chamadas de rede por si própria. Não há conta nem sincronização com o iCloud, e o Observa não inclui SDKs de análise. Só as compras e as ligações que se abrem usam a internet." } },
+    { "@type": "Question", "name": "Em que é que o Observa se distingue do AutoSleep ou do Gentler Streak?", "acceptedAnswer": { "@type": "Answer", "text": "O AutoSleep regista e pontua o sono a partir dos dados do Apple Watch. O Gentler Streak orienta, dia a dia, a intensidade do movimento. O Observa lê todas as manhãs um retrato mais amplo da app Saúde e junta sono, VFC (SDNN), frequência cardíaca em repouso e carga de treino numa só pontuação de prontidão, com uma indicação de treino e os motivos que a sustentam. Lê o sono da app Saúde, seja qual for a app que o guardou, pelo que pode conviver com qualquer uma das duas." } },
+    { "@type": "Question", "name": "Posso usar o Observa com a minha app de treino?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. O Observa lê os treinos da app Saúde, seja qual for a app que os guardou. O GymLogger X, o nosso registo de treino de força, guarda cada treino concluído na app Saúde, depois de receber autorização para isso. Esses treinos contam para a carga de treino do Observa, que representa 15% da prontidão e alimenta a indicação de treino." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Para utilizadores avançados do Apple Watch e da app Saúde</p>
+    <h1 class="h1">Os dados já estão recolhidos.<br><span class="gradient-text">Estas apps explicam-nos.</span></h1>
+    <p class="lead">Quem usa o Apple Watch há anos tem na app Saúde anos de sono, VFC, frequência cardíaca e treinos. A app Saúde mostra-os em gráficos. Estas apps para Apple Watch e iPhone transformam-nos numa indicação para hoje, com o motivo.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#stack">Ver as apps</a>
+      <a class="btn btn-secondary" href="#faq">Perguntas frequentes</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">O que falta à app Saúde, sozinha?</h2>
+  <p class="lead">A app Saúde guarda bem os dados e mostra-os em gráficos e médias. Transformar esses gráficos numa decisão fica por sua conta: saber se a VFC desta manhã é baixa <em>para si</em>, o que a fez descer e se hoje é dia de uma sessão dura ou leve.</p>
+  <p class="lead">As apps abaixo são para quem já tem os dados e quer saber o que significam.</p>
+</section>
+
+<section id="stack" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">As apps</p>
+    <h2 class="h2">Três apps que trabalham com a app Saúde</h2>
+    <p class="lead">As três são da Lagerland Apps, um estúdio independente da Finlândia. Nenhuma pede conta nem mostra anúncios, e nenhuma nos envia os dados de saúde.</p>
+  </div>
+  <div class="grid grid-2 stagger">
+    {%- for app in apps_for -%}{% include app-card.html app=app %}{%- endfor -%}
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Porquê combinar estas três apps?</h2>
+  <div class="grid grid-2 stagger">
+    <div class="card">
+      <div class="card-title">Observa: a leitura do dia</div>
+      <div class="card-text">Todas as manhãs, uma pontuação de prontidão calculada com o sono, a VFC (SDNN, tal como a app Saúde a regista), a frequência cardíaca em repouso e a carga de treino. Traz ainda uma pontuação de sono, com a dívida de sono face ao objetivo de cada pessoa, e uma leitura do stress com os fatores identificados. O Premium acrescenta tendências a 30, 90 e 365 dias, os Padrões, que ordenam os hábitos que costumam coincidir com a recuperação, e ainda a idade funcional, o histórico de ECG e a análise de treino.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">GymLogger X: o treino</div>
+      <div class="card-text">Um registo de treino de força para iPhone, com uma app para Apple Watch que mostra a frequência cardíaca em direto durante as séries. Depois de autorizado o acesso à app Saúde, cada treino concluído fica lá guardado como treino de força, e o Observa conta-o na carga de treino.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">AfterShift: o contexto da escala (opcional)</div>
+      <div class="card-text">Para quem trabalha por turnos, o AfterShift lê o sono da app Saúde e mede-o desde o fim de um turno até ao início do seguinte, sestas incluídas, para que o sono de quem trabalha de noite não fique dividido por duas datas.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Privacidade</div>
+      <div class="card-text">Nenhuma destas apps envia os dados de saúde ou de treino para a Lagerland Apps nem inclui um SDK de análise de terceiros. O Observa e o AfterShift guardam os dados no dispositivo. O GymLogger X guarda os treinos nos dispositivos, no iCloud de cada pessoa e na app Saúde.</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Perguntas</p><h2 class="h2">Perguntas frequentes</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>Qual é a melhor app para analisar os dados da app Saúde?</summary><div class="faq-a">Para transformar os dados da app Saúde numa decisão para hoje, o Observa é a app que criámos com esse fim. Todas as manhãs, calcula uma pontuação de prontidão sobre 100 a partir do sono, da VFC (SDNN), da frequência cardíaca em repouso e da carga de treino, medidos face à linha de base de cada pessoa, e «Devo treinar hoje?» responde Forçar, Manter, Recuperar ou Descansar, com o motivo. «Porquê esta pontuação?» mostra que sinais a fizeram mexer. As pontuações diárias são grátis e a análise é feita no dispositivo.</div></details>
+    <details class="faq-item"><summary>O Observa envia os meus dados de saúde para a internet?</summary><div class="faq-a">Não. A análise é feita no iPhone, no iPad ou no Apple Watch, e a app não faz chamadas de rede por si própria. Não há conta nem sincronização com o iCloud, e o Observa não inclui SDKs de análise. Só as compras e as ligações que se abrem usam a internet.</div></details>
+    <details class="faq-item"><summary>Em que é que o Observa se distingue do AutoSleep ou do Gentler Streak?</summary><div class="faq-a">O AutoSleep regista e pontua o sono a partir dos dados do Apple Watch. O Gentler Streak orienta, dia a dia, a intensidade do movimento. O Observa lê todas as manhãs um retrato mais amplo da app Saúde e junta sono, VFC (SDNN), frequência cardíaca em repouso e carga de treino numa só pontuação de prontidão, com uma indicação de treino e os motivos que a sustentam. Lê o sono da app Saúde, seja qual for a app que o guardou, pelo que pode conviver com qualquer uma das duas.</div></details>
+    <details class="faq-item"><summary>Posso usar o Observa com a minha app de treino?</summary><div class="faq-a">Sim. O Observa lê os treinos da app Saúde, seja qual for a app que os guardou. O GymLogger X, o nosso registo de treino de força, guarda cada treino concluído na app Saúde, depois de receber autorização para isso. Esses treinos contam para a carga de treino do Observa, que representa 15% da prontidão e alimenta a indicação de treino.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Por onde começar</p>
+  <h2 class="h2">Comece pelo Observa</h2>
+  <p class="lead">O Observa lê o que o relógio e as outras apps já guardam na app Saúde. As pontuações diárias são grátis e todas as funcionalidades Premium ficam desbloqueadas nos primeiros 7 dias, sem registo.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/observa/" %}"{% if l_en %} hreflang="en"{% endif %}>Conhecer o Observa{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Ver todas as apps{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>
