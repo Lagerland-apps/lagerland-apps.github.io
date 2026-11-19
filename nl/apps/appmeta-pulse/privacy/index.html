@@ -1,0 +1,284 @@
+---
+layout: privacy
+slug: appmeta-pulse
+ref: /apps/appmeta-pulse/privacy/
+permalink: /nl/apps/appmeta-pulse/privacy/
+translated_from: 2026-11-13
+last_updated: 2026-11-13
+title: "Privacybeleid"
+seo:
+  title: "Privacy van AppMeta Pulse: geen tracking, geen account"
+  description: "Privacybeleid van AppMeta Pulse: geen tracking, advertenties of account. Je gegevens staan op je apparaat en, als je synchroniseert, in je eigen iCloud."
+  keywords:
+    - "appmeta pulse privacybeleid"
+    - "appmeta pulse privacy"
+    - "appmeta pulse gegevens verzamelen"
+    - "appmeta pulse icloud-synchronisatie"
+    - "app zonder tracking"
+    - "app store connect app iphone"
+
+overview: >
+  AppMeta Pulse helpt ontwikkelaars te volgen hoe hun apps het doen in de App Store,
+  op basis van gegevens uit App Store Connect van Apple.
+  Privacy is een kernonderdeel van het ontwerp van de app: wij (Lagerland Apps) beheren
+  er geen servers voor, je hoeft geen account aan te maken en de app bevat geen code
+  voor analyse, advertenties of tracking.
+  In dit beleid lees je wat de app verwerkt, waar die gegevens worden bewaard,
+  wie ze kan zien en welke keuzes je hebt.
+
+data_collection: >
+  Wij verzamelen geen gegevens van AppMeta Pulse: niets wat de app verwerkt, wordt naar ons verstuurd.
+  Om te werken verwerkt de app het volgende, op je apparaat en met de diensten van Apple
+  namens jou. Je inloggegevens voor de App Store Connect API (Issuer ID, Key ID en
+  de privésleutel in het .p8-bestand), en de accountnaam en het Vendor Number die je invoert.
+  De gegevens die App Store Connect voor je apps teruggeeft: rapporten over verkoop, opbrengst, downloads,
+  terugbetalingen, abonnementen en abonnementsgebeurtenissen, App Store-analyses zoals
+  vertoningen en weergaven van productpagina’s, en je catalogus van apps en in-app aankopen.
+  Klantrecensies van je apps, inclusief de bijnaam, de beoordeling, het land of de regio,
+  de titel en de tekst van elke recensent, en je reacties als ontwikkelaar.
+  En de reacties op recensies die je schrijft; die worden alleen naar App Store Connect verstuurd als
+  je tikt om ze te versturen, te wijzigen of te verwijderen, en Apple toont ze vervolgens openbaar samen met
+  de recensie op de App Store-pagina van je app.
+  De app maakt ook aanvragen voor analyserapporten aan in je App Store Connect-account,
+  zodat Apple je analysegegevens klaarzet; afgezien van reacties op recensies is dat de
+  enige wijziging die de app daar aanbrengt.
+  De app heeft geen toegang tot je locatie, contacten, foto’s of gezondheidsgegevens en gebruikt
+  de reclame-ID (IDFA) niet.
+  De enige gegevens die ons rechtstreeks bereiken, zijn wat je ons zelf per e-mail stuurt: je
+  bericht en e-mailadres, plus de appversie en de build, de iOS-versie en het apparaattype
+  die de supportmail vooraf invult en die je vóór het versturen kunt zien en wijzigen.
+  Verder zien we alleen wat Apple aan elke ontwikkelaar geeft: samengevoegde rapporten over
+  verkoop en downloads in de App Store en App Analytics voor AppMeta Pulse zelf; crashrapporten
+  en gebruiksstatistieken van mensen die ‘Deel met appontwikkelaars’ aanzetten;
+  en, als iCloud-synchronisatie aan staat, de CloudKit-gebruikslogs van Apple, waarin de tijd,
+  het platform, de OS-versie, een anonieme CloudKit-gebruikers-ID en het type van elk verzoek staan,
+  nooit de gesynchroniseerde gegevens. Wij gebruiken niets hiervan om je te identificeren.
+
+data_storage: >
+  Je inloggegevens worden alleen op dit apparaat in de iOS-sleutelhanger bewaard: ze worden niet
+  gesynchroniseerd met de iCloud-sleutelhanger of via iCloud-synchronisatie, en de app ondertekent haar verzoeken aan
+  App Store Connect op het apparaat zelf, zodat je privésleutel nergens naartoe wordt gestuurd.
+  Al het overige wordt opgeslagen in de eigen opslag van de app op je apparaat, beschermd door
+  iOS-gegevensbescherming, en bewaard als langetermijnarchief zodat je jaren kunt vergelijken,
+  omdat App Store Connect alleen ongeveer de laatste 365 dagen levert.
+  De app bewaart ook exacte, gecomprimeerde kopieën van de rapporten, recensies en vermeldingen die ze
+  uit App Store Connect downloadt, zodat je cijfers later opnieuw kunnen worden berekend.
+  Widgets voor het beginscherm lezen een kopie van je cijfers op hetzelfde apparaat en doen geen
+  netwerkverzoeken.
+  Het vertalen van recensies, AI-concepten voor reacties en het wekelijkse recensieoverzicht gebruiken het Translation-framework van Apple en
+  het model van Apple Intelligence op het apparaat; de app stuurt geen recensietekst
+  naar een server van ons.
+  Als je een iCloud-back-up of een back-up op een computer van je apparaat maakt, worden de gegevens
+  van de app op het apparaat daarin opgenomen, net als andere appgegevens, behalve de synchronisatieadministratie en de
+  rapportkopieën die al door iCloud-synchronisatie zijn opgeslagen.
+  Wij beheren geen servers waarop je gegevens worden opgeslagen.
+
+icloud_sync:
+  - >
+    iCloud-synchronisatie is optioneel en wordt per apparaat apart ingesteld. Ze gaat aan als je ervoor
+    kiest: in de Instellingen van de app (na een bevestiging), via een eenmalig aanbod op
+    het overzichtsscherm, met ‘Gebruik gegevens uit iCloud’ op een apparaat zonder API-sleutel, of
+    door een nieuw account te bewaren met de schakelaar ‘Maak een back-up en synchroniseer met iCloud’ aan. Die
+    schakelaar staat standaard aan als je op dit apparaat nog geen keuze hebt gemaakt, dus zet hem
+    uit vóór het bewaren als je wilt dat je gegevens op dit apparaat blijven.
+    Als synchronisatie aan staat, bewaart AppMeta Pulse haar gegevens in de privé-CloudKit-database van
+    je eigen iCloud-account, en je apparaten die met dezelfde Apple Account zijn ingelogd, wisselen ze
+    daar uit. De eerste keer dat je de synchronisatie aanzet, wordt ook de geschiedenis die al op het apparaat staat
+    geüpload, niet alleen nieuwe gegevens.
+  - >
+    Wat wordt gesynchroniseerd: je geschiedenis van verkoop, opbrengst, downloads, abonnementen en analyses voor
+    elke app en elke dag, inclusief details per land of regio; je catalogus van apps en in-app aankopen
+    (namen, bundel-ID’s, SKU’s en icoonlinks); klantrecensies met de bijnaam, de beoordeling, het land of de regio,
+    de titel en de tekst van elke recensent, je reacties als ontwikkelaar,
+    en welke recensies je als gezien hebt gemarkeerd; je doelen, gevolgde apps, mijlpalen,
+    weergavevoorkeuren en eventuele reactiesjablonen die je hebt aangepast; een teamvermelding met de
+    accountnaam en het Vendor Number die je hebt ingevoerd, welk apparaat het laatst gegevens heeft opgehaald en hoeveel
+    gegevens er zijn; en het rapportenarchief, dat wil zeggen de exacte kopieën van de antwoorden van App Store
+    Connect die hierboven zijn beschreven. Die kopieën bevatten volledige verkoop- en abonnementsrapporten
+    (met details zoals je ontwikkelaarsnaam, productnamen en Apple-ID’s),
+    bestanden met analyserapporten, recensiegegevens en catalogusvermeldingen.
+    Rapportkopieën worden alleen geüpload als het apparaat op wifi zit en oplaadt of de
+    app open heeft, tenzij je op ‘Upload nu’ tikt; zeer grote bestanden, en bestanden met analyserapporten
+    boven 2 GB per team, blijven op het apparaat. Een apparaat downloadt de kopieën die je
+    andere apparaten hebben gemaakt alleen als je daar ‘Bewaar een kopie op dit apparaat’ aanzet.
+  - >
+    Zodat je apparaten het ophalen onderling kunnen verdelen, slaat elk apparaat ook een statusrecord op:
+    een willekeurige ID die de app voor het apparaat aanmaakt, een algemeen label zoals
+    ‘iPhone’ (niet de naam van je apparaat), het platform en de appversie, de instelling voor ophalen,
+    of het een API-sleutel heeft plus een korte vingerafdruk die van de Key ID is afgeleid,
+    wanneer het voor het laatst actief was, wanneer het voor het laatst elk soort gegevens heeft opgehaald en of dat
+    is gelukt, en tellers voor de aanvraaglimieten van App Store Connect. Synchronisatie slaat ook records op
+    die langlopende taken tussen apparaten coördineren en de administratie die voorkomt dat twee
+    apparaten hetzelfde rapport tweemaal ophalen. Je andere apparaten tonen dit in de lijst
+    ‘Apparaten’.
+  - >
+    Wat nooit wordt gesynchroniseerd: je privésleutel in het .p8-bestand, de Issuer ID en de Key ID, en de tokens die ervan
+    worden gemaakt. In iCloud verschijnt de Issuer ID alleen als eenrichtingshash, die de records van je
+    team groepeert, de Key ID alleen als korte hash waarmee apparaten sleutels kunnen onderscheiden,
+    en rapportrecords bevatten een korte hash van het Vendor Number. De accountnaam en het
+    Vendor Number die je hebt ingevoerd, worden wel gesynchroniseerd, in de teamvermelding die hierboven is beschreven. Een apparaat
+    zonder sleutel kan je gegevens uit iCloud tonen, maar kan geen contact opnemen met App Store
+    Connect totdat je op dat apparaat een sleutel toevoegt.
+  - >
+    Wie het kan zien: jij, op je apparaten die met dezelfde Apple Account zijn ingelogd en waarop AppMeta
+    Pulse en iCloud-synchronisatie aan staan. Wij (Lagerland Apps) kunnen de inhoud niet zien: Apple toont
+    de inhoud van je privé-iCloud-database niet aan appontwikkelaars. Apple slaat de gegevens op
+    en bewaart, tenzij je geavanceerde gegevensbescherming gebruikt, de encryptiesleutels
+    (zie Versleuteling hieronder). Volgens de ontwikkelaarsvoorwaarden van Apple slaat Apple ze namens ons op en
+    zal Apple zich er geen toegang toe verschaffen en ze niet openbaar maken, tenzij je Apple daarom vraagt of Apple meent
+    dat de wet dat vereist. De app gebruikt de openbare of gedeelde databases van CloudKit niet en kan
+    niemand anders toegang geven tot je iCloud-gegevens; bestanden die je zelf exporteert, komen terecht waar
+    je ze naartoe stuurt. iCloud wordt geleverd door Apple onder de eigen voorwaarden en het eigen
+    privacybeleid van Apple, en de gegevens tellen mee voor je iCloud-opslag.
+  - >
+    Versleuteling: de gegevens worden tijdens de overdracht en in rust in iCloud versleuteld, waar Apple
+    eigen datacenters of die van derden kan gebruiken. De app slaat de inhoud van elk record op in
+    versleutelde CloudKit-velden; grotere records en rapportkopieën worden opgeslagen als CloudKit-assets,
+    die CloudKit ook versleutelt. Met de standaard gegevensbescherming van iCloud
+    bewaart Apple de encryptiesleutels in zijn datacenters, zodat Apple je gegevens namens jou kan ontsleutelen,
+    bijvoorbeeld om je te helpen ze te herstellen. Als je geavanceerde gegevensbescherming
+    voor iCloud aanzet, zijn versleutelde CloudKit-velden en assets end-to-end versleuteld en kunnen alleen
+    je vertrouwde apparaten ze ontsleutelen.
+    We gaan ervan uit dat sommige gegevens die CloudKit nodig heeft om te werken niet onder die versleuteling vallen,
+    ook niet met geavanceerde gegevensbescherming: record- en zonenamen, die in AppMeta Pulse
+    App Store-app-ID’s, rapportdatums en -maanden, typen analyseaanvragen,
+    sjabloon-ID’s, taaknamen, de willekeurige apparaat-ID, vingerafdrukken van rapportkopieën en
+    de hash van je Issuer ID bevatten; de onversleutelde marker van het recordtype en het formaatversienummer; en
+    metadata die Apple onder standaardbescherming bewaart, zoals wijzigingsdatums.
+    Als je de versleutelde gegevens van iCloud of je iCloud-sleutelhanger opnieuw instelt, kan Apple deze gegevens niet meer
+    ontsleutelen en zijn ze in iCloud verloren; de kopie op je apparaat blijft bewaard en
+    door iCloud-synchronisatie weer aan te zetten wordt ze opnieuw geüpload.
+
+third_parties: >
+  AppMeta Pulse bevat geen code van derden: geen SDK’s voor analyse, advertenties,
+  crashrapportage of tracking, en volgt je niet.
+  De app maakt alleen verbinding met: de App Store Connect API van Apple, met je eigen sleutel, om je
+  rapporten, catalogus, analyses en recensies te lezen en de reacties op recensies te versturen die je kiest,
+  plus de tijdelijke links die App Store Connect geeft om bestanden met analyserapporten te downloaden
+  en die geen inloggegevens bevatten; de iTunes Lookup-dienst van Apple, die de App Store-ID’s
+  van je apps ontvangt om hun iconen te vinden, en de afbeeldingsadressen die de dienst
+  teruggeeft; de openbare wisselkoersdienst van de Europese Centrale Bank, die
+  alleen een maand en een vaste lijst valuta’s ontvangt; de App Store van Apple (StoreKit) voor
+  abonnementen, aankopen, herstel van aankopen en verzoeken om een beoordeling; het Translation-framework
+  van Apple wanneer je een recensie vertaalt, dat talen bij Apple downloadt en voor sommige taalparen
+  het netwerk kan gebruiken; en, als iCloud-synchronisatie aan staat, iCloud van Apple
+  (CloudKit), inclusief stille meldingen via de pushdienst van Apple die de app laten weten
+  dat er nieuwe gegevens klaarstaan.
+  Zoals bij elk internetverzoek bereiken deze verzoeken de diensten met het IP-adres van je apparaat.
+  We delen je gegevens met niemand: elke dienst ontvangt alleen wat het verzoek nodig heeft,
+  zoals je IP-adres, de ID’s van je apps of een lijst valuta’s. Apple, dat
+  App Store Connect, iCloud en de andere Apple-diensten hierboven levert, beschermt die
+  gegevens minstens zo goed als dit beleid beschrijft.
+  Apple levert ook het verversen van apps op de achtergrond en iCloud-back-up, en verwerkt gegevens
+  onder het eigen privacybeleid van Apple (apple.com/legal/privacy).
+  Links waarop je tikt, zoals de ontwikkelaarspagina’s van Apple, openen in je browser of in de App Store.
+  Supportmails gaan vanuit je eigen mailapp naar support@lagerland.app.
+  Op de Mac staat ‘AI-assistenten’ (Instellingen > AI-assistenten) uit totdat je het aanzet.
+  Zolang het aan staat, bewaart de app een alleen-lezen kopie van de App Store Connect-rapporten die ze
+  heeft gedownload in een map op de Mac die alleen de app en haar eigen hulpprogramma kunnen openen,
+  en de AI-apps die je via MCP met dat hulpprogramma verbindt, zoals Claude of Cursor, kunnen die
+  lezen. Het hulpprogramma heeft geen netwerktoegang en ziet je API-sleutel of instellingen nooit,
+  en de app zelf stuurt niets naar die AI-apps of hun aanbieders. Wat een AI-app
+  leest, verlaat je Mac onder de eigen voorwaarden en het eigen privacybeleid van die app. Als je ‘AI-assistenten’
+  uitzet, of als je volledige toegang eindigt, wordt de kopie verwijderd; ze wordt niet met
+  iCloud gesynchroniseerd en niet in back-ups opgenomen.
+  De Mac-app voegt ook de namen van de apps die je volgt toe aan de eigen Spotlight-index
+  van de Mac, en Handoff biedt de naam van het scherm dat je open hebt (bij de pagina van een app
+  de App Store-ID) aan je andere apparaten aan die met dezelfde Apple Account zijn ingelogd. Geen van beide
+  bevat je cijfers of bereikt ons.
+
+your_choices:
+  - >
+    Als je iCloud-synchronisatie uitzet, stopt de synchronisatie op dat apparaat en wordt er niets verwijderd,
+    niet op het apparaat en niet in iCloud. Je akkoord is gekoppeld aan de iCloud-account waarmee je was ingelogd
+    toen je synchronisatie aanzette (de app onthoudt de interne identificatiecode van die account alleen
+    op het apparaat); als het apparaat later overschakelt naar een andere Apple Account, gaat synchronisatie
+    vanzelf uit totdat je haar weer aanzet. Een apparaat dat is hersteld of ingesteld vanuit een back-up
+    van een ander apparaat vraagt opnieuw om bevestiging voordat het synchroniseert.
+    Uitloggen bij AppMeta Pulse verwijdert je inloggegevens en de gegevens van dat account van het
+    apparaat, maar verwijdert nooit iets uit iCloud; als synchronisatie aan staat, blijven rapportkopieën
+    die nog niet zijn geüpload op het apparaat staan en worden ze geüpload de eerstvolgende keer dat je dat
+    account daar gebruikt. Uitloggen zet iCloud-synchronisatie niet uit, dus weergavevoorkeuren en
+    reactiesjablonen blijven synchroniseren totdat je de synchronisatie uitzet.
+  - >
+    ‘Verwijder alle geschiedenis’ (Instellingen > Gegevensbeheer): met iCloud-synchronisatie uit verwijdert dit
+    alleen je geschiedenis en rapportenarchief op dit apparaat; wat al in iCloud staat,
+    wordt opnieuw gedownload als je synchronisatie weer aanzet. Met synchronisatie aan kies je
+    ‘Verwijder alleen op dit apparaat’, waarmee de geschiedenis die al in iCloud is opgeslagen van dit apparaat wordt verwijderd
+    (ze wordt opnieuw gedownload, en rapportkopieën op het apparaat blijven bewaard), of ‘Verwijder
+    overal’, waarmee, nadat je DELETE hebt getypt, de verkoop-, abonnements- en analysegeschiedenis van het
+    team waarbij je bent ingelogd en het rapportenarchief worden verwijderd uit iCloud en van
+    elk apparaat dat ze synchroniseert. Dit heeft geen gevolgen voor andere teams in dezelfde iCloud-account.
+    ‘Verwijder overal’ laat recensies, mijlpalen, instellingen, reactiesjablonen, de appcatalogus,
+    apparaatstatusrecords en de teamvermelding staan. Apparaten waarop iCloud-synchronisatie aan stond,
+    verwijderen hun kopie de eerstvolgende keer dat ze verbinding maken, ook als ze op dat moment offline waren.
+    Een apparaat waarop iCloud-synchronisatie toen uit stond, of dat daarna voor het eerst bij het team komt,
+    vraagt of het zijn kopie moet verwijderen of weer in iCloud moet zetten.
+  - >
+    Om alles te verwijderen wat AppMeta Pulse in je iCloud bewaart, verwijder je de gegevens van de app uit
+    je iCloud-opslag in de Instellingen-app van iOS: tik op je naam, dan op ‘iCloud’, dan op ‘Opslag’ (of
+    ‘Beheer accountopslag’), kies deze app en tik op ‘Verwijder gegevens uit iCloud’. De gegevens
+    op je apparaat blijven staan en de app zet iCloud-synchronisatie uit. Je kunt je API-sleutel
+    op elk moment intrekken in App Store Connect.
+  - >
+    Je gegevens bekijken en exporteren: alles wat de app bewaart, wordt in de app getoond, en
+    je kunt vanaf het overzichtsscherm een CSV-bestand met de verkoop van een periode exporteren. Alles wat je zelf
+    exporteert of kopieert, zoals dat CSV-bestand, een mijlpaalafbeelding of verbindingsdiagnostiek,
+    komt terecht waar je het naartoe stuurt. Als je hulp nodig hebt om een kopie van je
+    gegevens te krijgen, stuur ons dan een e-mail.
+  - >
+    Bewaartermijn: gegevens op je apparaat en in je iCloud worden bewaard totdat je ze verwijdert met de
+    opties hierboven, omdat het juist de bedoeling van het archief is dat de geschiedenis langer wordt bewaard dan
+    App Store Connect doet. De enige automatische uitzondering is de uitsplitsing per land of regio
+    die op het apparaat is opgeslagen; die wordt na ongeveer 15 maanden ingekort, tenzij je
+    ‘Bewaar de volledige geschiedenis per land of regio’ aanzet (Instellingen > Gegevensbeheer). iCloud bewaart de
+    uitsplitsing per land of regio, en de rapportkopieën in het archief, die rijen per land of regio bevatten,
+    blijven op het apparaat en in iCloud bewaard totdat je ze verwijdert.
+    Wij hebben geen toegang tot de gegevens die de app op je apparaat of in je iCloud opslaat. Supportmails
+    worden alleen bewaard zolang dat nodig is om je te helpen.
+
+your_rights: >
+  Lagerland Apps, een eenmansontwikkelaar gevestigd in Finland, is verantwoordelijk voor de
+  hier beschreven persoonsgegevens die ons bereiken, voornamelijk supportmail, en,
+  voor zover de ontwikkelaarsvoorwaarden van Apple ons ervoor verantwoordelijk maken, voor de gegevens die de app
+  in je iCloud opslaat. Wij gebruiken supportmails alleen om je te antwoorden.
+  Je kunt ons vragen om inzage in je gegevens, om correctie of verwijdering ervan, of om een kopie;
+  ons vragen het gebruik ervan te beperken of te stoppen; of je toestemming op elk moment intrekken, door een e-mail
+  te sturen naar support@lagerland.app. Wij antwoorden binnen een maand.
+  Je kunt de gegevens in je iCloud zelf bekijken, exporteren en verwijderen zoals hierboven is beschreven, en wij
+  helpen je als je erom vraagt.
+  Je kunt ook een klacht indienen bij de gegevensbeschermingsautoriteit waar je woont of bij
+  de Finse ombudsman voor gegevensbescherming (tietosuoja.fi).
+  Apple kan iCloud-gegevens opslaan in datacenters buiten de Europese Economische Ruimte.
+
+sensitive_data: >
+  AppMeta Pulse verwerkt geen gezondheidsgegevens, locatiegegevens of andere gevoelige
+  categorieën persoonsgegevens.
+  Klantrecensies kunnen de bijnaam van een recensent bevatten en alles wat de recensent
+  zelf heeft geschreven; de app toont ze aan jou en kopieert ze alleen naar je iCloud als
+  iCloud-synchronisatie aan staat.
+  App Store-gegevens worden alleen gebruikt om je inzichten te tonen in de app en in de widgets.
+  Wij verkopen of delen geen gegevens, en niets wordt gebruikt voor advertenties of profilering.
+
+refund_requests:
+  intro: >
+    Als je Apple om terugbetaling van een aankoop in AppMeta Pulse vraagt, kan Apple ons
+    om informatie vragen die helpt bij de beslissing. Door een aankoop te doen, ga je ermee akkoord dat wij
+    met de volgende informatie over die aankoop mogen antwoorden:
+  items:
+    - "of de aankoop is geleverd en in de app is ontgrendeld"
+    - "of er een gratis versie van de app beschikbaar was voordat je kocht"
+    - "of wij liever hebben dat Apple de terugbetaling goedkeurt of afwijst"
+  closing: >
+    We sturen je API-sleutel, rapporten, recensies of andere gegevens uit je account niet mee, omdat AppMeta Pulse die gegevens op je apparaat bewaart (en in je eigen iCloud, als je iCloud-synchronisatie gebruikt) en wij ze niet hebben.
+    Apple neemt bij elke terugbetaling de eindbeslissing.
+
+children: >
+  AppMeta Pulse is niet gericht op kinderen jonger dan 13 jaar,
+  en wij verzamelen niet bewust persoonsgegevens van kinderen.
+
+changes: >
+  We kunnen dit privacybeleid van tijd tot tijd bijwerken, bijvoorbeeld wanneer een nieuwe
+  versie van de app anders met gegevens omgaat.
+  Wijzigingen worden op deze pagina geplaatst en de datum bij ‘Laatst bijgewerkt’ bovenaan wordt aangepast.
+---

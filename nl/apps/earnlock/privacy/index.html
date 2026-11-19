@@ -1,0 +1,118 @@
+---
+layout: privacy
+slug: earnlock
+ref: /apps/earnlock/privacy/
+permalink: /nl/apps/earnlock/privacy/
+translated_from: 2026-11-08
+last_updated: 2026-11-08
+title: "Privacybeleid"
+seo:
+  title: "Privacy van EarnLock: geen tracking, geen account"
+  description: "Privacybeleid van EarnLock: geen tracking door derden, geen advertenties, geen account. Je gegevens blijven op je apparaat. Wat de app verwerkt."
+  keywords:
+    - "earnlock privacy"
+    - "earnlock privacybeleid"
+    - "earnlock persoonsgegevens"
+    - "app zonder tracking"
+    - "apps blokkeren app privacy"
+    - "app zonder account"
+
+overview: >
+  EarnLock is gebouwd op één privacyprincipe: je gegevens blijven op je apparaat.
+  Er is geen EarnLock-server. Niets wat je in de app doet, wordt naar ons
+  of naar derden verzonden. Op deze pagina lees je welke gegevens de app gebruikt en waarom,
+  zodat je niet op vage beloftes hoeft te vertrouwen.
+  In één zin: EarnLock leest je activiteitsgegevens uit de Gezondheid-app en je
+  selectie van geblokkeerde apps alleen op het apparaat, slaat ze alleen op het apparaat op en
+  gebruikt ze alleen op het apparaat om te bepalen of je dagdoel is gehaald.
+  Wij zien er nooit iets van. Het privacylabel van Apple voor EarnLock in de
+  App Store (‘Privacy van app’) toont ‘Er worden geen gegevens verzameld’.
+
+data_collection: >
+  EarnLock verzamelt geen persoonsgegevens. De app leest drie categorieën
+  informatie op het apparaat, uitsluitend om de vergrendeling met een dagdoel te laten werken.
+  (1) HealthKit-activiteitsgegevens: je dagelijkse aantal stappen, verbruikte actieve energie
+  en trainingsminuten, om je voortgang te beoordelen ten opzichte van het dagelijkse activiteitsdoel
+  dat je geselecteerde apps ontgrendelt. HealthKit wordt alleen gelezen (we schrijven nooit naar
+  de Gezondheid-app), alleen gelezen op je apparaat en door EarnLock nooit van het apparaat
+  verzonden. Het HealthKit-framework van Apple deelt deze gegevens zelf niet met
+  ons of met derden. Je kunt de toegang van EarnLock tot de Gezondheid-app op elk
+  moment intrekken in iOS, via Instellingen > Privacy en beveiliging > Gezondheid > EarnLock.
+  (2) Schermtijd-tokens voor wat je ervoor kiest te blokkeren. Als je apps,
+  categorieën of websites kiest in de Schermtijd-kiezer van Apple, geeft iOS EarnLock
+  voor elk daarvan een ondoorzichtig token, niet de naam, de id of het icoon. Deze tokens
+  worden alleen op je apparaat opgeslagen, in een App Group-container die wordt gedeeld tussen de
+  EarnLock-app en de iOS-extensies van de app (Shield, Shield Action,
+  DeviceActivityMonitor en de extensie voor de live activiteit en de widgets). De tokens zijn
+  door het ontwerp van Apple ondoorzichtig, dus zelfs EarnLock kan niet lezen welke app je hebt
+  gekozen. De selectie wordt nooit van het apparaat verzonden en je kunt haar op elk moment
+  wijzigen of wissen in EarnLock, onder Instellingen > ‘Blokkeren’ > ‘Geblokkeerde apps’.
+  (3) StoreKit-transacties. Als je een abonnement neemt of Levenslang koopt, geeft Apple
+  EarnLock een ondertekende transactie die aangeeft welk product je hebt gekocht en of
+  het actief is. Die bevat geen betaalgegevens, naam, e-mailadres of andere
+  persoonsgegevens. Alle betalingsverwerking, afhandeling van terugbetalingen en het beheer van abonnementen
+  gebeurt door StoreKit van Apple en de App Store, niet door EarnLock.
+  EarnLock bewaart je Premium-status op het apparaat, zodat de widgets
+  de juiste status kunnen tonen, en geeft die via WatchConnectivity van Apple door aan de
+  Apple Watch-app van EarnLock.
+
+data_storage: >
+  Alle gegevens van EarnLock worden lokaal op je apparaat opgeslagen, in de sandbox van de app
+  en in een App Group-container die wordt gedeeld met de iOS-extensies van EarnLock.
+  EarnLock heeft helemaal geen backend: geen servers, geen databases en geen
+  pijplijn voor analyses. Je reeksgeschiedenis, de items in je reflectielogboek, schattingen van bespaarde schermtijd
+  en je selectie van geblokkeerde apps staan in standaardcontainers van Apple,
+  die in de back-up van je apparaat worden meegenomen als je iCloud-back-up aanzet. Als je
+  de Apple Watch-app gebruikt, leest die gezondheidsgegevens op het horloge zelf en stuurt je
+  iPhone er alleen je instellingen en je Premium-status naartoe, rechtstreeks via WatchConnectivity van Apple.
+  Je kunt alles wat EarnLock opslaat als één bestand exporteren, of alles wissen,
+  in EarnLock onder Instellingen > ‘Gegevens en privacy’. Als je de EarnLock-app van je apparaat verwijdert,
+  verdwijnen de container van de app, de App Group-container en alles
+  wat erin staat.
+
+third_parties: >
+  EarnLock gebruikt geen diensten van derden voor analyse, advertenties of tracking.
+  De app gebruikt geen enkele SDK van derden: geen Firebase, Mixpanel,
+  Amplitude, Segment, Sentry, Bugsnag, advertentienetwerken of attributienetwerken.
+  EarnLock gebruikt alleen eigen frameworks van Apple: SwiftUI, SwiftData, HealthKit,
+  FamilyControls, ManagedSettings, DeviceActivity, ActivityKit, WidgetKit,
+  WatchConnectivity en StoreKit 2. Apple verwerkt beperkte gegevens als onderdeel van
+  diensten die je zelf kiest te gebruiken, zoals aankopen in de App Store, toegang tot HealthKit
+  en de verbinding met de Apple Watch. Niets van die gegevens gaat naar EarnLock als
+  ontwikkelaar.
+
+sensitive_data: >
+  EarnLock leest HealthKit-activiteitsgegevens (stappen, verbruikte actieve energie,
+  trainingsminuten) om je dagdoel te beoordelen. De app leest je gebruiksgegevens uit
+  Schermtijd van iOS niet: de schatting van bespaarde schermtijd wordt berekend uit
+  een telling op het apparaat van hoe vaak het blokkeerscherm je tegenhield toen je een geblokkeerde
+  app wilde openen. Dit alles blijft alleen op het apparaat en wordt nooit
+  van het apparaat verzonden. EarnLock verkoopt of deelt deze
+  gegevens niet en gebruikt ze niet voor advertenties. Ze worden niet gebruikt buiten de eigen
+  functies van de app voor het bijhouden van je doel en voor inzichten.
+
+refund_requests:
+  intro: >
+    Als je Apple vraagt om een terugbetaling van een aankoop in EarnLock, kan Apple ons
+    om informatie vragen om tot een beslissing te komen. Door een aankoop te doen, ga je ermee akkoord dat wij
+    met de volgende informatie over die aankoop mogen antwoorden:
+  items:
+    - "of de aankoop is geleverd en in de app is ontgrendeld"
+    - "of er een gratis versie van de app beschikbaar was voordat je de aankoop deed"
+    - "of wij liever willen dat Apple de terugbetaling goedkeurt of afwijst"
+  closing: >
+    We sturen je activiteitsgegevens, geblokkeerde apps, reeksen en andere persoonsgegevens niet door, omdat EarnLock die gegevens op je apparaat bewaart en wij ze niet hebben.
+    Apple neemt over elke terugbetaling de definitieve beslissing.
+
+children: >
+  EarnLock is bedoeld voor volwassenen die de app op hun eigen iPhone gebruiken. De app
+  vraagt de toestemming voor het Family Controls-framework van Apple alleen voor je eigen apparaat aan,
+  nooit in de modus die een ouder gebruikt om via Delen met gezin het apparaat van een kind
+  te beheren. EarnLock is software voor zelfbeperking, nooit voor ouderlijk toezicht.
+  We verzamelen van niemand bewust gegevens, ongeacht de leeftijd.
+
+changes: >
+  Als dit beleid verandert, verandert de datum ‘Laatst bijgewerkt’ bovenaan deze pagina.
+  Wezenlijke wijzigingen vermelden we in de versiegeschiedenis van de app
+  in de App Store.
+---
