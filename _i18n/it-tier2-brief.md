@@ -51,7 +51,7 @@ page's subject is "without a subscription"), never about GymLogger X or a compet
   Never the US, French or Spanish numbers.
 - Competitor prices: the research file has Italian euro prices only for paid apps (Baba Is You 7,99 €, Threes! 6,99 €,
   Suika 2,99 €, AutoSleep 9,99 €, Kanazawa Shogi 2 6,99 €). In-app prices were NOT collected. You may fetch the
-  apps.apple.com/it product page once per app (`curl -sL -A "Mozilla/5.0" "https://apps.apple.com/it/app/id<ID>"` (needs `-L`: without it the 301 saves an empty stub), read
+  apps.apple.com/it product page once per app (`curl -sL -A "Mozilla/5.0" "https://apps.apple.com/it/app/id<ID>"` (needs `-L`, and a full Safari UA string such as `"Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 Safari/605.1.15"`; with a bare `Mozilla/5.0` the page is a 1147-byte JS shell), read
   the «Acquisti in-app» rows) and save it to your sources folder; if it fails (HTTP 429) or the row isn't there, drop
   the number and keep the qualitative fact («a pagamento», «abbonamento mensile o annuale», «acquisto unico»). Typed as
   `13,99 €` with U+00A0, with «(App Store in Italia, 19 novembre 2026)» once per page. Never convert dollars. Never
@@ -169,3 +169,37 @@ links). Other sessions (Spanish, Portuguese) work in this same checkout: never r
 
 The items in it-writer-brief.md «Reply with», plus: every competitor fact you dropped because Italy data was missing,
 and (local-only pages) the list of sources saved.
+
+---
+
+## Batch 2 (2026-11-19)
+
+Same rules as batch 1. Research rows: the «Batch 2» section at the bottom of the research file. Fetch App Store product
+pages only with `curl -sL` (without `-L` you save an empty 301 stub). Every € typed with U+00A0 before it.
+
+| Page | Write to | Primary query |
+|---|---|---|
+| guides/best-shogi-apps-iphone.html | it/guides/best-shogi-apps-iphone.html | shogi online |
+| guides/best-xiangqi-apps-iphone.html | it/guides/best-xiangqi-apps-iphone.html | xiangqi online |
+| guides/bill-tracker-without-bank-connection.html | it/guides/bill-tracker-without-bank-connection.html | migliore app per scadenze pagamenti |
+
+- Shogi: Kakinoki Shogi is not sold in Italy: drop it and every sentence that depends on it (as es did). None of the
+  listed apps has an Italian listing; say which languages they offer only where the English page does. Shogiful is ours
+  (it/apps/shogiful/index.md and its glossary section: drops are «paracadute», explained once; prices via tokens).
+  `shogi` is Shogiful's keyword: not in your seo.title as the bare word.
+- Xiangqi: the China-store app 403941510 (Tiantian) is not sold in Italy: keep the English page's point only as «è
+  sull’App Store cinese, quindi in Italia non lo trovi», or drop it as es/fr did (check them). Xiangqiful is ours
+  (it/apps/xiangqiful/index.md, glossary). `scacchi cinesi` and `xiangqi` are Xiangqiful's keywords: seo.title leads with
+  «xiangqi online» or «scacchi cinesi online».
+- Bill tracker: Rocket Money, Truebill (now Rocket Money), Monarch and Copilot are not sold in Italy. Rewrite the comparison
+  around the bank-linked apps people in Italy use, Wallet by BudgetBakers, Spendee and Toshl Finanze, using ONLY what
+  each one's own Italian App Store description says (saved in
+  `/private/tmp/claude-501/-Users-anttiaittamaa--claude-spares-spare-Dg10Mu/74a2811e-d61b-4f13-9e3c-097376f519cd/scratchpad/it-t2/sources/bill-tracker/<name>.json`,
+  field `description`; re-fetch if you need more and save it there). Keep the English page's general points about bank
+  aggregation only where they do not name a US company or a US rule; drop Plaid, US banks and US law. Structural models:
+  `fr/guides/bill-tracker-without-bank-connection.html` (rewritten around Bankin' and Linxo) and
+  `es/guides/bill-tracker-without-bank-connection.html` (around Fintonic). AllPaid facts from `_apps/allpaid.md`,
+  `it/apps/allpaid/index.md`, its glossary section and its APP_BLUEPRINT.md §10; prices via `{P_…@allpaid}` tokens;
+  disclose that AllPaid is ours. Never claim anything about these apps' security, fees, data use or bank coverage that
+  their listing doesn't say; no review quotes. «bollette» for utility bills, «scadenze» for due dates, «abbonamenti» for
+  subscriptions. AllPaid keeps `app promemoria pagamenti` and `app scadenze bollette`.

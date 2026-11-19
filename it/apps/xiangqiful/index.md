@@ -233,7 +233,7 @@ faq:
   - q: "Quanto sono forti gli avversari?"
     a: "Ci sono 40 avversari in otto livelli, da Novizio a Maestro. La forza indicata per ciascuno segue la scala di Xiangqiful, non un punteggio Elo di una federazione. Ogni avversario gioca uno stile, non una copia indebolita del motore: aggressivo, difensivo, cannoniere, specialista del cavallo, controllore del fiume, posizionale, stratega del finale o equilibrato. Shīfu sta al 33º gradino e il Saggio aspetta in cima. I primi 10 avversari sono gratuiti, con partite illimitate, e Premium apre tutti i 40 subito. Batti un avversario due volte per segnarlo come sconfitto. Puoi giocare come Rosso, come Nero o con uno schieramento a caso."
   - q: "Posso giocare contro altre persone?"
-    a: "No. Xiangqiful è un’app di allenamento per giocare da solo, senza account, server né partite online. Serve a migliorare tra le partite che giochi con altre persone, in un club, online o al parco."
+    a: "No. Xiangqiful è un’app di allenamento per giocare da solo, senza account, server né partite online. Serve a migliorare tra le partite che giochi con altre persone, in un club, online o al parco. Per le partite online, la <a href=\"/it/guides/best-xiangqi-apps-iphone/\">guida alle app di xiangqi per iPhone</a> mette a confronto le app e i siti dove giocare contro altre persone."
   - q: "Xiangqiful funziona offline?"
     a: "Sì. Lezioni, partite, motore, analisi, allenamento e progressi girano sul tuo dispositivo. Serve una connessione solo per ciò che gestisce Apple: caricare i prezzi, acquistare o ripristinare Premium e Game Center, se lo usi."
   - q: "Xiangqiful è gratis? Quanto costa Premium?"

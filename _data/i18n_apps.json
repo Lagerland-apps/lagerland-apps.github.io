@@ -4725,7 +4725,7 @@
      "q": "AllPaid mostra le mie bollette in un calendario?"
     },
     {
-     "a": "No. AllPaid si occupa di controllo delle bollette, abbonamenti, contratti e promemoria di pagamento. Non fa budget completi, monitoraggio delle entrate o categorizzazione delle transazioni. Se vuoi un budget completo, YNAB, Monarch Money o Copilot sono più adatte.",
+     "a": "No. AllPaid si occupa di controllo delle bollette, abbonamenti, contratti e promemoria di pagamento. Non fa budget completi, monitoraggio delle entrate o categorizzazione delle transazioni. Se vuoi un budget completo, sono più adatte app come YNAB, Wallet by BudgetBakers, Spendee o Toshl Finanze. La <a href=\"/it/guides/bill-tracker-without-bank-connection/\">guida alle app per le scadenze dei pagamenti senza collegare la banca</a> spiega cosa cambia quando un’app si collega al tuo conto.",
      "q": "AllPaid è un’app per il budget?"
     },
     {
@@ -4733,7 +4733,7 @@
      "q": "AllPaid è gratis?"
     },
     {
-     "a": "Sì. Chiedi a Siri “What bills are due in AllPaid” e ti legge le bollette in scadenza nei prossimi sette giorni. AllPaid ha dieci widget per la schermata Home e la schermata di blocco, tra cui Prossima bolletta, Calendario mensile, In arrivo e Contratti, con formati extra large su iOS 27. I widget aprono l’app; non possono segnare una bolletta come pagata.",
+     "a": "Sì. Chiedi a Siri “What bills are due in AllPaid” e Siri ti dice quali bollette scadono nei prossimi sette giorni. AllPaid ha dieci widget per la schermata Home e la schermata di blocco, tra cui Prossima bolletta, Calendario mensile, In arrivo e Contratti, con formati extra large su iOS 27. I widget aprono l’app; non possono segnare una bolletta come pagata.",
      "q": "AllPaid funziona con Siri e i widget?"
     },
     {
@@ -6068,7 +6068,7 @@
      "q": "Quanto sono forti gli avversari?"
     },
     {
-     "a": "No. Xiangqiful è un’app di allenamento per giocare da solo, senza account, server né partite online. Serve a migliorare tra le partite che giochi con altre persone, in un club, online o al parco.",
+     "a": "No. Xiangqiful è un’app di allenamento per giocare da solo, senza account, server né partite online. Serve a migliorare tra le partite che giochi con altre persone, in un club, online o al parco. Per le partite online, la <a href=\"/it/guides/best-xiangqi-apps-iphone/\">guida alle app di xiangqi per iPhone</a> mette a confronto le app e i siti dove giocare contro altre persone.",
      "q": "Posso giocare contro altre persone?"
     },
     {

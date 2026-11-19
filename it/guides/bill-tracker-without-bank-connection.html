@@ -1,0 +1,162 @@
+---
+layout: default
+ref: /guides/bill-tracker-without-bank-connection/
+permalink: /it/guides/bill-tracker-without-bank-connection/
+translated_from: 2026-11-07
+title: "App per le scadenze dei pagamenti senza collegare la banca"
+quick_answer: "AllPaid ({PLATFORMS@allpaid}) ti ricorda le scadenze dei pagamenti e non ti chiede mai l’accesso alla banca. È un’app di Lagerland Apps, che pubblica questa guida. Inserisci tu bollette, abbonamenti e contratti, una volta sola, e per i nomi noti AllPaid propone categoria e ripetizione. L’app ti avvisa prima di ogni scadenza, e con un tocco segni una bolletta come pagata. Wallet, Spendee e Toshl Finanze, secondo le loro schede su App Store in Italia, offrono invece di collegare la banca. AllPaid è gratis fino a 3 bollette, con Pro facoltativo da {P_MONTHLY@allpaid}/mese."
+seo:
+  title: "Migliore app per scadenze pagamenti senza collegare la banca"
+  description: "Migliore app per le scadenze dei pagamenti senza accesso alla banca: Wallet, Spendee e Toshl Finanze offrono di collegarla, AllPaid si compila a mano."
+  keywords:
+    - migliore app per scadenze pagamenti
+    - app scadenze pagamenti
+    - app promemoria scadenze pagamenti
+    - gestione abbonamenti app iphone
+    - app per spese fisse
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign app = site.apps | where: "slug", "allpaid" | first -%}
+{%- include app-facts.html app=app -%}
+{%- assign ap_devices = f_platforms_and | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Apple Watch" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/it/guides/bill-tracker-without-bank-connection/#webpage",
+  "url": "{{ site.url }}/it/guides/bill-tracker-without-bank-connection/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/it/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "it",
+  "datePublished": "2026-11-19",
+  "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/it/" },
+      { "@type": "ListItem", "position": 2, "name": "Guide", "item": "{{ site.url }}/it/guides/" },
+      { "@type": "ListItem", "position": 3, "name": "App per le scadenze dei pagamenti senza collegare la banca", "item": "{{ site.url }}/it/guides/bill-tracker-without-bank-connection/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "it",
+  "mainEntity": [
+    { "@type": "Question", "name": "C’è un’app per le scadenze dei pagamenti che non si collega alla banca?", "acceptedAnswer": { "@type": "Answer", "text": "Sì. AllPaid, la nostra app, è attenta alla privacy e funziona solo con l’inserimento manuale: non si collega alla banca e non usa servizi di aggregazione di conti. Aggiungi tu bollette, abbonamenti e contratti e li segni come pagati. Le tue bollette restano sui tuoi dispositivi, a meno che tu non attivi la sincronizzazione iCloud (Pro), che usa il tuo iCloud privato." } },
+    { "@type": "Question", "name": "Perché Wallet, Spendee e Toshl Finanze offrono di collegare la banca?", "acceptedAnswer": { "@type": "Answer", "text": "Per portare le transazioni nell’app senza che le scriva tu, un’app deve poterle leggere dal conto, di solito tramite un servizio di aggregazione di conti. Secondo le loro schede su App Store in Italia, Wallet offre aggiornamenti automatici dalla banca, Spendee ti fa collegare l’online banking e Toshl Finanze collega automaticamente oltre 13.000 conti, carte di credito o servizi finanziari. Se non vuoi dare questo accesso a terzi, l’alternativa è l’inserimento manuale, ed è così che funziona AllPaid." } },
+    { "@type": "Question", "name": "Come gestisco gli abbonamenti su iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "In Impostazioni, tocca il tuo nome, poi Abbonamenti. Lì vedi gli abbonamenti attivati con il tuo Apple Account; tocca quello che ti interessa e poi “Annulla abbonamento” per disdirlo. Questo elenco mostra solo ciò che ti addebita Apple, e AllPaid non lo legge. In AllPaid aggiungi tu quello che vuoi tenere d’occhio, anche le spese che non passano da Apple, come affitto, utenze, telefono, assicurazione o internet. L’app ti avvisa prima di ogni scadenza." } },
+    { "@type": "Question", "name": "L’inserimento manuale delle bollette è sostenibile nel tempo?", "acceptedAnswer": { "@type": "Answer", "text": "Sì, una volta fatta la configurazione iniziale. La maggior parte delle bollette ricorrenti cambia poco da un mese all’altro. Quando scrivi un nome noto come Netflix o Spotify, AllPaid propone la categoria e ogni quanto si ripete, e segnare una bolletta come pagata richiede un solo tocco, nell’app o sul promemoria." } },
+    { "@type": "Question", "name": "AllPaid ha i widget e funziona con Siri?", "acceptedAnswer": { "@type": "Answer", "text": "Sì. AllPaid ha dieci widget, tutti gratuiti, tra cui Prossima bolletta, In arrivo e Calendario mensile per la schermata Home e una versione di Prossima bolletta per la schermata di blocco. Chiedi a Siri “What bills are due in AllPaid” e Siri ti dice quali bollette scadono nei prossimi sette giorni." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Guida · Dal problema alla soluzione</p>
+    <h1 class="h1">
+      “Voglio tenere d’occhio le scadenze dei pagamenti<br><span class="gradient-text">senza collegare il mio conto in banca”</span>
+    </h1>
+    <p class="lead">
+      Wallet, Spendee e Toshl Finanze offrono di collegare la banca per portare le transazioni nell’app. Se non vuoi dare questo accesso a un’app di terzi, puoi inserire tu le scadenze.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#answer">Vai alla risposta</a>
+      <a class="btn btn-secondary" href="#faq">Domande frequenti</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">Cosa fanno Wallet, Spendee e Toshl Finanze, e cosa chiedono?</h2>
+  <p class="lead">Sono tre app per le finanze personali che su App Store in Italia hanno una scheda in italiano. Tutto quello che segue viene da quelle schede; non abbiamo provato le app.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Wallet by BudgetBakers</div><div class="card-text">Su App Store in Italia si chiama “Wallet - Finanza personale”. Tra le funzioni Premium la scheda elenca gli “Aggiornamenti automatici dalla banca”: le transazioni vengono sincronizzate e organizzate, e la scheda parla di 4.000 banche partecipanti in tutto il mondo. Dice anche che puoi impostare budget una tantum o ricorrenti e aggiungere conti bancari, contanti e carte fedeltà. Per iniziare si accede con Facebook o con l’email.</div></div>
+    <div class="card"><div class="card-title">Spendee</div><div class="card-text">La scheda la presenta come un’app per il budget e ti invita a collegare Spendee al tuo online banking, a un e-wallet come PayPal o a un cripto-wallet; i dati vengono classificati automaticamente. Parla anche di budget, di finanze condivise con partner o coinquilini e di uno scanner di scontrini con IA.</div></div>
+    <div class="card"><div class="card-title">Toshl Finanze</div><div class="card-text">La scheda dice che l’app collega automaticamente oltre 13.000 conti bancari, carte di credito o servizi finanziari in Italia e nel mondo, tra cui Intesa Sanpaolo e UniCredit. L’importazione automatica dalla banca fa parte del piano Medici. Le spese si possono inserire anche a mano, e spese ricorrenti e promemoria sono tra le funzioni del piano Pro.</div></div>
+  </div>
+  <p class="lead" style="margin-top:var(--s-4);">La differenza con AllPaid sta nell’accesso ai conti: queste app, secondo le loro schede, offrono di collegare la banca, mentre AllPaid non si collega a nessuna banca. Le schede di Wallet e Spendee parlano di budget, grafici e conti e non citano promemoria per le scadenze.</p>
+  <p class="small" style="margin-top:var(--s-3);">Su App Store in Italia Wallet ha 4,4 su 5 con 2.883 valutazioni, Spendee 4,6 su 5 con 4.167 e Toshl Finanze 4,6 su 5 con 822 (dato del 19 novembre 2026). Le descrizioni vengono dalle schede di <a href="https://apps.apple.com/it/app/id1032467659" rel="noopener" target="_blank">Wallet</a>, <a href="https://apps.apple.com/it/app/id635861140" rel="noopener" target="_blank">Spendee</a> e <a href="https://apps.apple.com/it/app/id921590251" rel="noopener" target="_blank">Toshl Finanze</a>, lette lo stesso giorno.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Perché dare accesso ai tuoi conti è un problema?</h2>
+  <p class="lead">Un’app collegata alla banca deve vedere le tue transazioni per funzionare, di solito con un accesso in sola lettura tramite un servizio di aggregazione di conti. In cambio ottieni la sincronizzazione e la classificazione automatica delle operazioni. Per chi tiene alla privacy, questo scambio ha dei costi reali:</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Dai accesso al tuo conto</div><div class="card-text">Anche con un flusso di autorizzazione di tipo OAuth, il servizio di aggregazione conserva un token con accesso a ogni transazione del conto. Riguarda tutte le operazioni, non solo le bollette.</div></div>
+    <div class="card"><div class="card-title">I tuoi dati stanno su un server di terzi</div><div class="card-text">Il servizio di aggregazione conserva lo storico delle tue transazioni. Una violazione dei dati presso quel servizio o presso l’app stessa lo espone.</div></div>
+    <div class="card"><div class="card-title">Molto più di quanto serva per un promemoria</div><div class="card-text">Per ricordarti che l’affitto è in scadenza basta conoscere la bolletta e la sua data. Leggere ogni transazione del conto va ben oltre.</div></div>
+    <div class="card"><div class="card-title">La tua banca potrebbe mancare</div><div class="card-text">Alcune banche non funzionano con nessun servizio di aggregazione. Wallet parla di 4.000 banche partecipanti e Toshl Finanze di oltre 13.000 conti: se la tua banca non è compresa, la sincronizzazione automatica non funziona per te.</div></div>
+  </div>
+</section>
+
+<section id="answer" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">La risposta</p>
+    <h2 class="h2">AllPaid: bollette a mano, in privato e senza banca</h2>
+    <p class="lead">AllPaid è la nostra app: Lagerland Apps la pubblica e cura anche questa guida. Serve a tenere d’occhio le bollette su {{ ap_devices }}. Aggiungi tu bollette, abbonamenti e contratti, e AllPaid propone categoria e ripetizione per i nomi noti. Il riepilogo mensile mostra le bollette del mese con i totali, e con un solo tocco segni una bolletta come pagata. AllPaid non si collega alla banca e non richiede un account. Le tue bollette restano sui tuoi dispositivi, a meno che tu non attivi la sincronizzazione iCloud (Pro), che usa il tuo iCloud privato. Trovi tutti i dettagli nella <a href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>pagina di AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+  </div>
+  {% if app %}
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+  {% endif %}
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Inserire tutto a mano non è noioso?</h2>
+  <p class="lead">Solo all’inizio: la maggior parte delle famiglie riesce a inserire tutte le bollette ricorrenti in una volta sola. Poi:</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">I suggerimenti compilano i dettagli</div><div class="card-text">Scrivi “Netflix” e AllPaid propone la categoria e ogni quanto si ripete. L’importo è facoltativo, quindi una bolletta può essere solo un nome e una data di scadenza.</div></div>
+    <div class="card"><div class="card-title">Segnare come pagata richiede un tocco</div><div class="card-text">Lo fai nell’app o direttamente dal promemoria, e con Annulla torni indietro se hai toccato troppo in fretta.</div></div>
+    <div class="card"><div class="card-title">La maggior parte delle bollette non cambia</div><div class="card-text">Affitto, utenze e abbonamenti sono gli stessi ogni mese. Una volta inseriti si ripetono da soli, quindi aggiungi solo le voci nuove.</div></div>
+    <div class="card"><div class="card-title">Il mese e i widget restano sotto gli occhi</div><div class="card-text">Il riepilogo mensile mostra le bollette del mese con i totali da pagare, già pagato e rimanente. I widget Calendario mensile e In arrivo portano le scadenze sulla schermata Home, e raramente ti serve aprire l’app.</div></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">Cosa perdi con l’inserimento manuale?</h2>
+  <div class="card">
+    <p>Con l’inserimento manuale rinunci a:</p>
+    <ul class="bullets">
+      <li>L’importazione e la classificazione automatiche delle transazioni, che le schede di Wallet, Spendee e Toshl Finanze descrivono</li>
+      <li>Il rilevamento automatico degli abbonamenti dimenticati: AllPaid conosce solo quello che inserisci tu</li>
+      <li>La previsione del flusso di cassa tra più conti</li>
+      <li>La sensazione che “l’app sappia tutto dei miei soldi”</li>
+    </ul>
+    <p style="margin-top:var(--s-3);">Se ti servono queste funzioni, AllPaid non fa per te: ti serve un’app collegata alla banca, con il compromesso sulla privacy che comporta. AllPaid è per chi preferisce dedicare una sessione all’inserimento e tenere per sé le credenziali bancarie.</p>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Domande</p><h2 class="h2">Domande frequenti</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>C’è un’app per le scadenze dei pagamenti che non si collega alla banca?</summary><div class="faq-a">Sì. AllPaid, la nostra app, è attenta alla privacy e funziona solo con l’inserimento manuale: non si collega alla banca e non usa servizi di aggregazione di conti. Aggiungi tu bollette, abbonamenti e contratti e li segni come pagati. Le tue bollette restano sui tuoi dispositivi, a meno che tu non attivi la sincronizzazione iCloud (Pro), che usa il tuo iCloud privato.</div></details>
+    <details class="faq-item"><summary>Perché Wallet, Spendee e Toshl Finanze offrono di collegare la banca?</summary><div class="faq-a">Per portare le transazioni nell’app senza che le scriva tu, un’app deve poterle leggere dal conto, di solito tramite un servizio di aggregazione di conti. Secondo le loro schede su App Store in Italia, Wallet offre aggiornamenti automatici dalla banca, Spendee ti fa collegare l’online banking e Toshl Finanze collega automaticamente oltre 13.000 conti, carte di credito o servizi finanziari. Se non vuoi dare questo accesso a terzi, l’alternativa è l’inserimento manuale, ed è così che funziona AllPaid.</div></details>
+    <details class="faq-item"><summary>Come gestisco gli abbonamenti su iPhone?</summary><div class="faq-a">In Impostazioni, tocca il tuo nome, poi Abbonamenti. Lì vedi gli abbonamenti attivati con il tuo Apple Account; tocca quello che ti interessa e poi “Annulla abbonamento” per disdirlo. Questo elenco mostra solo ciò che ti addebita Apple, e AllPaid non lo legge. In AllPaid aggiungi tu quello che vuoi tenere d’occhio, anche le spese che non passano da Apple, come affitto, utenze, telefono, assicurazione o internet. L’app ti avvisa prima di ogni scadenza.</div></details>
+    <details class="faq-item"><summary>L’inserimento manuale delle bollette è sostenibile nel tempo?</summary><div class="faq-a">Sì, una volta fatta la configurazione iniziale. La maggior parte delle bollette ricorrenti cambia poco da un mese all’altro. Quando scrivi un nome noto come Netflix o Spotify, AllPaid propone la categoria e ogni quanto si ripete, e segnare una bolletta come pagata richiede un solo tocco, nell’app o sul promemoria.</div></details>
+    <details class="faq-item"><summary>AllPaid ha i widget e funziona con Siri?</summary><div class="faq-a">Sì. AllPaid ha dieci widget, tutti gratuiti, tra cui Prossima bolletta, In arrivo e Calendario mensile per la schermata Home e una versione di Prossima bolletta per la schermata di blocco. Chiedi a Siri “What bills are due in AllPaid” e Siri ti dice quali bollette scadono nei prossimi sette giorni.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Da provare</p>
+  <h2 class="h2">Prova AllPaid</h2>
+  <p class="lead">Un’app per le bollette e le scadenze dei pagamenti, senza collegamento alla banca e senza account. È gratis fino a 3 bollette; Pro, facoltativo, aggiunge bollette illimitate, l’analisi delle spese e la sincronizzazione iCloud.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>Scopri AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/guides/" %}"{% if l_en %} hreflang="en"{% endif %}>Tutte le guide{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Tutte le app{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

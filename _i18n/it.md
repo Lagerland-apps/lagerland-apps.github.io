@@ -11,7 +11,7 @@ reviewing any Italian page. Every decision a translator would otherwise make dif
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console has no Italy query data (see Keyword research) |
 | Tier 1 pages | done 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/it.yml`), /it/llms.txt, /it/llms-full.txt, 21 OG cards. Six batch commits, then go-live |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not pushed) |
-| Tier 2 | batch 1 done 2026-11-19 (not pushed): both hubs, chess, logic puzzles, workout without subscription, 3 audience pages, local-only /it/guides/limitare-tempo-di-utilizzo-iphone/ and /it/guides/come-mettere-conto-alla-rovescia-iphone/. Left for batch 2: shogi, xiangqi, bill tracker (needs a local rewrite: Rocket Money, Monarch, Copilot not sold in Italy). for/indie-ios-developers stays English-only (developers search in English). Research: ~/Downloads/githubcode/it-tier2-research-2026-11-19.md; brief: `_i18n/it-tier2-brief.md` |
+| Tier 2 | done 2026-11-19 (not pushed). Batch 1 (8cf9a81): both hubs, chess, logic puzzles, workout without subscription, 3 audience pages, local-only /it/guides/limitare-tempo-di-utilizzo-iphone/ and /it/guides/come-mettere-conto-alla-rovescia-iphone/. Batch 2: shogi, xiangqi, bill tracker rewritten around Wallet by BudgetBakers, Spendee and Toshl Finanze (Rocket Money, Monarch, Copilot not sold in Italy). for/indie-ios-developers stays English-only (developers search in English). Research: ~/Downloads/githubcode/it-tier2-research-2026-11-19.md; brief: `_i18n/it-tier2-brief.md` |
 | Stale pages | 0 (2026-11-19, `i18n.py stale`); no wording-only changes waiting |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 69.5 s wall before Italian pages; 78 to 81 s with all 69 Italian Tier 1 pages (2026-11-19, clean worktree, other sessions' agents running) |
@@ -238,6 +238,9 @@ EarnLock `tempo di utilizzo iphone`).
 | for/calm-productivity | `migliori app produttività iphone` | `app per organizzarsi la vita`, `app per combattere la procrastinazione` |
 | local-only limitare-tempo-di-utilizzo-iphone | `come limitare il tempo di utilizzo di un app su iphone` | `tempo di utilizzo iphone`, `come ridurre il tempo di utilizzo del telefono iphone`, `app per smettere di guardare il telefono` |
 | local-only come-mettere-conto-alla-rovescia-iphone | `come mettere un conto alla rovescia su iphone` | `come aggiungere un conto alla rovescia su iphone`, `conto alla rovescia widget iphone` |
+| best-shogi-apps-iphone (batch 2) | `shogi online` (bare `shogi` stays Shogiful's) | `shogi online gratis`, `shogi gioco`, `shogi giapponese`, `shogi app iphone` |
+| best-xiangqi-apps-iphone (batch 2) | `xiangqi online` (`scacchi cinesi`, `xiangqi` stay Xiangqiful's) | `xiangqi app`, `xiangqi gioco`, `xiangqi regole`, `xiangqi play ok` |
+| bill-tracker-without-bank-connection (batch 2) | `migliore app per scadenze pagamenti` (AllPaid keeps `app promemoria pagamenti`, `app scadenze bollette`) | `app scadenze pagamenti`, `app promemoria scadenze pagamenti`, `gestione abbonamenti app iphone`, `app per spese fisse` |
 
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
@@ -337,7 +340,13 @@ supponiamo»; «Apple propone» for Apple's «ad esempio, puoi…»; added softe
 «una app»; «del gruppo» for a set that includes our own app; one-line closers after a card; «portare avanti» for
 carry-forward («sposta a oggi»); «a vita a {price}» («a vita per»); «per ora» / «non ancora in italiano» (an implied
 translation promise); masculine plural job nouns as an audience («Infermieri, soccorritori»: «chi lavora in corsia o in
-ambulanza»). Writers also missed U+00A0 before € and saved empty 301 stubs from apps.apple.com (use `curl -sL`).
+ambulanza»). Writers also missed U+00A0 before € and saved empty 301 stubs from apps.apple.com (use `curl -sL` with a
+full Safari UA). Batch 2 reviews: «casuale» for "casual" («informali»); «nata attorno a» ("designed around"); «molto
+graduati» («graduati con precisione»); «quasi gli stessi pezzi» for "most of the same pieces"; «il tuffo in acque
+profonde»; «mettiti in conto» («metti in conto»); indicative after «qualunque» («qualunque app tu scelga»); an acronym used
+before it is defined; «Per un’app che …, c’è X» as an opener; a subject switch inside one sentence; «bollette» for both
+bills and utilities («utenze» for utilities); «13 000» copied from a listing («13.000»); «a un terzo» («a terzi»); «(nostra)»
+after an app name («AllPaid, la nostra app,»); «ti legge» for Siri reading items («Siri ti dice …»).
 
 ## House rules carried over
 
@@ -371,6 +380,9 @@ reviewers: home, all 21 app pages, about. Native review: none yet, for every pag
 | Tier 2 batch 1: 3 audience pages | 3 writers (Sonnet) | 1 reviewer | n/a | no native review yet |
 | Tier 2 batch 1: 2 local-only guides (screen time, countdown) | 2 writers (Sonnet), sources saved | 1 reviewer, every Apple page and listing re-fetched, claim by claim | n/a | no native review yet |
 | Tier 2 batch 1: both hubs, llms.txt lines, inbound-link sentences | 1 writer (Sonnet) + main session | 1 wiring reviewer | n/a | no native review yet |
+| Tier 2 batch 2: shogi, xiangqi guides | 2 writers (Sonnet) | 1 reviewer; Best XiangQi listing re-fetched | n/a | no native review yet |
+| Tier 2 batch 2: bill tracker (Wallet, Spendee, Toshl Finanze) | 1 writer (Sonnet), listings saved | 1 reviewer, every listing re-fetched, claim by claim | n/a | no native review yet |
+| Tier 2 batch 2: hub cards, llms.txt lines, AllPaid and Xiangqiful link sentences | main session | same reviewer as the bill tracker | n/a | no native review yet |
 
 ## Screenshots
 
