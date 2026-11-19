@@ -9,9 +9,9 @@ reviewing any Spanish page. Every decision a translator would otherwise make dif
 |---|---|
 | Setup (config default, locales.yml block, `_data/i18n/es.yml`, sitemap and feed stubs) | done 2026-11-19 (es.yml written by one agent, reviewed and copy-edited by another: 42 values changed) |
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console for Spain not read yet (no access this session) |
-| Tier 1 pages | not started |
+| Tier 1 pages | done 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/es.yml`), /es/llms.txt, /es/llms-full.txt, 21 OG cards. Commits 6a83675 (batch 1), ac4a1a3, e6e2231, 3857ea6, cfaed65 (batches 2 to 5), then AI files and go-live |
 | Live | no, `live: false` |
-| Native review | none (NATIVE REVIEWER: none). Every page will be logged as "no native review yet" |
+| Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 270 s wall, 137 s CPU before Spanish (2026-11-19, seven research agents running in parallel, so the wall time is inflated); French sheet had 80 s after French Tier 1. Idle machine 2026-11-19: 157 s before the tx-app fix, 52 s after (617 pages, `--profile`; tx-app 99.6 s to 4.9 s, I-0258) |
 
 ## Market and register
@@ -204,6 +204,41 @@ in, no export on disk). The French property showed almost no French queries; exp
 | Xiangqiful | `ajedrez chino` (title carries both «ajedrez chino» and «xiangqi») | `xiangqi`, `ajedrez chino como se juega`, `ajedrez chino reglas` |
 | Clippet (unreleased, unlisted) | `historial portapapeles iphone` | `historial portapapeles mac`, `gestor de portapapeles mac`, `app portapapeles iphone` |
 
+## Decisions from the Tier 1 reviews (2026-11-19)
+
+- Founder lines mirror the two English forms: «Desarrollador Apple independiente · Finlandia · estudio de una sola
+  persona desde 2025» and «Estudio Apple independiente · Finlandia». Never «desarrollador independiente de Apple»
+  (reads as Apple's own developer, or "independent from Apple").
+- `privacy.data_collection` is «ninguna» (it follows the feminine label «Recopilación de datos»).
+- «el App Store» (masculine), as Apple Spain and es.yml write it; «la App Store» only inside a quoted app label.
+- Apple feature names that are proper names are written bare in running text (En familia, Tiempo de uso, Salud de
+  Apple); «» only around quoted UI labels and buttons. «Admite En familia» for Family Sharing support.
+- "N localizations" is «N localizaciones», never «N idiomas» (the counts include regional variants); "N languages"
+  stays «N idiomas».
+- Privacy pages: «tratar/tratamiento», «recopilar», «a sabiendas», «no gestiona servidores propios», «copia de
+  seguridad en iCloud», «No se recopilan datos», «identificador de publicidad (IDFA)»; the advertising clause mirrors
+  the English ambiguity: «no vende, comparte ni utiliza … con fines publicitarios». Clippet's own terms page is
+  «Términos del servicio» (the app's Spanish label); Apple's EULA is «Contrato de Licencia de Usuario Final de la
+  Aplicación con Licencia («EULA Estándar»)», as Apple Spain names it.
+- AppMeta and Pulse: Proceeds is «ingresos netos», Revenue/Sales «ventas»/«ingresos». Pulse's first tab is «Panel».
+- Soon.: «evento» on the site (the searched word), «momento» is the app's word; Apple's Weather app is «Tiempo», so
+  the site says «la previsión del tiempo de Apple», never «Apple Clima» (the app's Latin-American string).
+- Tare: «cronómetro» for the game timer (never «cuenta atrás»); «móvil colgante» for the mobile.
+- AfterShift: sleep stages as AfterShift's own screens show them (Ligero, Profundo) where the page describes the app,
+  Apple's names (Esencial, Sueño profundo) where it describes Salud de Apple.
+- Chessful: tier Pro; mistake labels as the app shows them («Tenedor perdido», «Clavada perdida», «Mala seguridad
+  del rey»); «error grave» for blunder (not the app's «Pifia»), «Elo» (not «Rating»); move examples in Spanish piece
+  letters (D, T, A, C, R).
+- Observa: training call «Intenso, Mantener, Recupérate o Descanso» (app strings), readiness bands «Listo, Moderado,
+  Bajo», «Estableciendo tu referencia», «Ajustar sueño», «Fuente de sueño», widgets «Foco»…«Observación».
+- Support pages: one title pattern «X: soporte y contacto».
+- Legal terms to show a Spanish lawyer when one is available: «a sabiendas», «tratar/tratamiento», «responsable de
+  los datos personales» (not the formal «responsable del tratamiento»), «fecha de entrada en vigor», refund consent
+  «Al hacer una compra, aceptas que podamos responder…», «cambios sustanciales», «menores de 13 años» (Spain's age of
+  digital consent is 14), Finland's «Defensor de la Protección de Datos» (working name), and in Clippet's terms
+  «lucro cesante», «daños indirectos, incidentales, especiales, consecuentes o punitivos», «comerciabilidad»,
+  «tal cual», «idoneidad para un fin determinado», «leyes imperativas de protección de los consumidores».
+
 ## Local competitors (for Tier 3)
 
 Not researched yet. Candidates seen in the iTunes Search API results during keyword research are listed in
@@ -222,7 +257,17 @@ doesn't feel: «hecha para usarse con calma»); «hablar con» a service ("talk 
 con»); «¿Cómo ganáis…?» (vosotros to a one-person studio: impersonal); «cuentas» for restaurant bills next to «sin
 cuentas» (accounts): «la cuenta del restaurante», «tickets»; «traslada solo…» / «pasan solas al siguiente» for
 carry-forward (ambiguous or adds "next day": «avanzan solas»); «Conseguir» for the Get button («Obtener»); slogan
-fragments such as «cero rastreo»; French typography (U+202F) left in a Spanish file.
+fragments such as «cero rastreo»; French typography (U+202F) left in a Spanish file. From the app-page and privacy
+reviews: «la App Store» (feminine); «ID de Apple» (now «cuenta de Apple»); «Apple Salud» (Apple Spain: «Salud de
+Apple»); «con una pulsación larga» («mantén pulsado»); «armar» («montar»); «directo» as an adverb; «recoge datos»
+(«recopila»); «seguimiento» for tracking («rastreo»); «juego» for a "set" (reads as "game": «serie»); «N idiomas» for
+"N localizations"; «aprender» standing in for "training"; «una solución más corta» for "the shortest solution";
+«cuenta atrás» for a game timer; «Incluido en En familia»; «tiene que no encajar» (double negation); English
+third-person headings turned into imperatives («Reclama el dinero…»); «El usuario…» in summaries («Alguien…»);
+gendered «Eres desarrollador», «¿Atascado?»; a keyword noun in apposition in prose («una app recordatorio de
+pagos»); «a nivel de palabra»; absolute gerunds («con iOS decidiendo»); periods at the end of who_for bullets;
+multi-word UI labels left unquoted; merged FAQ questions that add a framing sentence; «te lee» (French calque);
+«Sobre nosotros» for a one-person studio; raw keyword-style H1s («Cancelar suscripción iPhone: …»).
 
 Translationese: title case headings; missing ¿ and ¡; chains of gerunds copied from English -ing («ofreciendo»,
 «permitiendo», «haciendo» trailing a sentence); passive «es … por» where Spanish uses «se»; possessives on body
@@ -244,9 +289,22 @@ puntaje) and vosotros forms on the future Mexican site.
 
 ## Review log
 
-No pages yet.
+All Tier 1 pages, 2026-11-19. Writers: Sonnet agents, one per page (support stubs three per writer, privacy policies
+three or four per writer). Reviewers: separate agents that did not write the pages, running the full copy-editing
+skill, a fact diff against the English page, a glossary check against each app's Spanish string catalog and SEO
+limits. Back-translation by fresh agents that never saw the English, compared claim by claim with the English page:
+home, all 21 app pages, about. Native review: none yet, for every page (NATIVE REVIEWER: none).
+
+| Pages | Writer | Reviewer | Back-translation | Native |
+|---|---|---|---|---|
+| /es/, /es/apps/ | 2 writers | 1 reviewer | home: 4 meaning shifts fixed | no native review yet |
+| 21 app pages | 21 writers | 4 reviewers (5 to 6 pages each) | all 21: about 45 meaning shifts fixed | no native review yet |
+| 21 support pages | 7 writers | 1 reviewer | n/a | no native review yet |
+| 21 privacy policies + Clippet terms | 7 writers | 4 reviewers, sentence by sentence | n/a | no native review yet |
+| about, support hub, transparency | 3 writers | 1 reviewer | about: 1 fix | no native review yet |
+| /es/llms.txt, /es/llms-full.txt | 1 writer | 1 reviewer | n/a | no native review yet |
 
 ## Apps still on English screenshots
 
-All of them for now (SCREENSHOTS: none yet, 2026-11-19). The apps' Spanish App Store listings already carry Spanish
-screenshot sets (for example Observa's `01-hero-es-1320x2868.png`), so the owner has source images to export.
+MediaKit and Mockly (2026-11-19). The other 19 apps already had complete Spanish sets in `assets/screenshots/<slug>/es/`
+from commit 763463c («localized sets for 16 languages»), so their pages and OG cards show Spanish screenshots.

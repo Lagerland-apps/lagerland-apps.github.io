@@ -16,7 +16,7 @@ These are legal texts. For each page, compare with the English page sentence by 
    `app_name`, `contact_email`, `back_url`. Unreleased Clippet keeps `sitemap: false` + `noindex: true`.
 3. **Apple and app terms.** Apple Spain's own words: «No se recopilan datos» (App Store «Privacidad de la app»; not
    «Datos no recopilados»), «Salud» / «Salud de Apple», «Tiempo de uso», «En familia», «cuenta de Apple», «Ajustes»,
-   «copia de seguridad de iCloud», rastreo, «Permitir que las apps soliciten rastrearte», «identificador de
+   «copia de seguridad en iCloud», rastreo, «Permitir que las apps soliciten rastrearte», «identificador de
    publicidad»/IDFA as es-apple-terms.md says (check; use the file's form). Menu paths with « > » (no arrows →).
    App UI labels quoted only if they are the app's real Spanish strings (`_i18n/es-glossary.md`).
 4. **Register.** Plain, consistent Spain legal Spanish: «tratar/tratamiento», «recopilar», «compartir», «a sabiendas».
