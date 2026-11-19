@@ -280,7 +280,6 @@ Source: Apple's genres service `itunes.apple.com/WebObjects/MZStoreServices.woa/
 | Background App Refresh | none | No Italy page with the label found |
 | ATT system prompt title | none | Only the buttons and settings are documented |
 | Analytics label (newest iOS) | "Analisi e miglioramenti" | Article 108971 names it in the iOS 10 steps; newest label not re-read |
-| Business category | see the category table | Business was a "not verified" row if HTTP 429 blocked the page |
 | Sleep tab name on iPhone | "Sonno" (Sfoglia/Esplora > Sonno) | Apple's pages name the tab both "Sfoglia" and "Esplora" |
 | Health "Explore" tab name | "Sfoglia" (29 hits) or "Esplora" (6 hits, guide pages on sleep and walking steadiness) | Apple's pages disagree; use "Sfoglia" |
 | "HH:MM" time format | none | Only "alle 7 del mattino", "dalle 11 alle 13" and "alle 9" were seen; no colon time on the pages fetched |
@@ -302,3 +301,24 @@ Source: Apple's genres service `itunes.apple.com/WebObjects/MZStoreServices.woa/
 | System Settings | Impostazioni di Sistema (capital S on "Sistema") | https://support.apple.com/it-it/guide/mac-help/mh15217/mac ; mg TOC | |
 | Calendar event / Reminders list | evento; promemoria; "elenchi" of reminders ("organizzare le attività in elenchi di cose da fare") | https://support.apple.com/it-it/guide/iphone/iphc7880ecd6/ios | |
 | Smart folders | not verified | not fetched (the Italian "liste intelligenti" / "cartelle smart" strings were not found on the pages read) | |
+
+## App Store privacy labels (verified 2026-11-19, Tier 1 review)
+
+Source: https://apps.apple.com/it/app/id426826309 (Strava), checked against https://apps.apple.com/it/app/id570060128
+(Duolingo) and https://apps.apple.com/it/app/id1489118195 (Good Sudoku); Safari UA, `Accept-Language: it-IT`. These
+replace the "not verified" privacy-label rows above.
+
+| English | Apple Italy |
+|---|---|
+| App Privacy (section) | Privacy dell’app |
+| Data Used to Track You | Dati utilizzati per monitorarti (Apple's verb here is «monitorare», not «tracciare») |
+| Data Linked to You | Dati collegati a te |
+| Data Not Linked to You | Dati non collegati a te |
+| Data Not Collected | Dati non raccolti |
+| Purposes | Pubblicità di terze parti; Pubblicità o marketing dello sviluppatore; Analisi; Personalizzazione del prodotto; Funzionalità delle app; Altri scopi |
+| Categories (types) | Salute e fitness (Salute, Fitness); Acquisti (Cronologia degli acquisti); Informazioni finanziarie (Informazioni di pagamento); Posizione (Posizione precisa, Posizione approssimativa); Informazioni di contatto (Indirizzo email, Nome, Numero di telefono); Contatti; Contenuti dell’utente (Foto o video, Assistenza clienti, Altri contenuti dell’utente); Cronologia delle ricerche; Identificativi (ID utente, ID dispositivo); Dati sull’utilizzo (Interazione con il prodotto, Dati sulla pubblicità, Altri dati sull’utilizzo); Diagnosi (Dati sui crash, Dati sulle prestazioni, Altri dati di diagnosi); Altri dati (Altri tipi di dati) |
+| Keychain (Mac) | Portachiavi; app «Accesso Portachiavi»; portachiavi iCloud (support.apple.com/it-it/guide/keychain-access/kyca1083/mac) |
+| Universal Clipboard | appunti condivisi |
+| Share sheet | menu di condivisione |
+| Apple's standard EULA | Contratto di Licenza per utenti finali per le Applicazioni concesse in licenza (“Contratto EULA Standard”) (apple.com/legal/internet-services/itunes/it/terms.html) |
+| App Store "What's New" | Novità |

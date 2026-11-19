@@ -7,12 +7,12 @@ reviewing any Italian page. Every decision a translator would otherwise make dif
 
 | Item | Status |
 |---|---|
-| Setup (config default, locales.yml block, `_data/i18n/it.yml`, sitemap and feed stubs) | in progress 2026-11-19 (it.yml written by one agent, reviewed and copy-edited by another) |
+| Setup (config default, locales.yml block, `_data/i18n/it.yml`, sitemap and feed stubs) | done 2026-11-19, commit 16a4f41 (it.yml written by one agent, reviewed and copy-edited by another: 59 values changed) |
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console has no Italy query data (see Keyword research) |
-| Tier 1 pages | not started |
+| Tier 1 pages | done 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/it.yml`), /it/llms.txt, /it/llms-full.txt, 21 OG cards. Six batch commits, then go-live |
 | Live | no (`live: false`) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
-| Build time | 69.5 s wall before Italian pages (2026-11-19, setup files only, built to a private destination while the Spanish and Portuguese sessions worked in the same checkout) |
+| Build time | 69.5 s wall before Italian pages; 78 to 81 s with all 69 Italian Tier 1 pages (2026-11-19, clean worktree, other sessions' agents running) |
 
 ## Market and register
 
@@ -220,9 +220,51 @@ July 2026 (country totals only: Italy 9 clicks, 1,432 impressions in three month
 | Xiangqiful | `scacchi cinesi` | `xiangqi`, `scacchi cinesi regole`, `come si gioca a scacchi cinesi` |
 | Clippet (unreleased, unlisted) | `cronologia appunti iphone` | `cronologia appunti mac`, `clipboard manager mac`, `gestore appunti` |
 
-## Decisions from the Tier 1 reviews
+## Decisions from the Tier 1 reviews (2026-11-19)
 
-(Filled in as the reviews run.)
+- Price footnote, one sentence on every page: «I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App
+  Store mostra il prezzo nella tua valuta al momento dell’acquisto.» («di App Store italiano» is ungrammatical without
+  the article; «in Italia» keeps App Store bare.) «paesi» lowercase.
+- Lifetime: plan-card price «{P_LIFETIME} una tantum» (= `strings.once`); in prose «{P_LIFETIME} a vita» or «acquisto
+  unico»; plan name «A vita».
+- "Cancel anytime" is «Puoi annullare quando vuoi» / «Annulla quando vuoi», never «Annulli» (reads as a Lei imperative);
+  same for «Paghi una volta» → «Un solo pagamento». Never «cancella» (= delete).
+- «a partire da {TRIAL}» reads as "from at least 7 days": write «che parte con {TRIAL}» / «con {TRIAL} per iniziare».
+- «In famiglia» with «funziona con» / «è compatibile con», never «supporta».
+- `privacy.data_collection` is «nessuna» (it follows the feminine label «Raccolta dei dati»).
+- App Store privacy labels exactly as Apple Italy writes them (it-apple-terms.md, verified section): «Dati non collegati
+  a te», «Dati collegati a te», «Dati utilizzati per monitorarti», «Funzionalità delle app»; section «Privacy dell’app».
+- One-word UI labels bare and capitalised (Annulla, Sorprendimi); multi-word labels in “ ”; feature or module names
+  that read as proper nouns (Blocco app, Incolla rapido) may stay bare.
+- «X è in italiano?» FAQs answer from the coverage line only: no store name, no list of English-only gaps.
+- Founder lines: «Sviluppatore Apple indipendente · Finlandia · studio di una sola persona dal 2025» / «Studio
+  indipendente di app Apple · Finlandia». Never «studio Apple». A one-person studio speaks as «lo studio» or in the
+  passive; «noi» only where the English says "we".
+- Support pages: «<App>: assistenza e contatti». The support hub H1 is «Assistenza, abbonamenti e rimborsi» (the
+  keyword stays in seo.title).
+- Observa: «Prontezza» capitalised as the app's feature name; HRV feminine («HRV avanzata»); «tono cardiovascolare»;
+  Apple's sleep stages where the page describes Salute, AfterShift's own (Leggero, Profondo) where it describes the app.
+- Shogiful: drops follow the app: «paracadute», «Esercizi di paracadute», «Errore di paracadute», explained once per page.
+- Taskful Day: carry-forward is «Sposta a oggi» (app string) or described; Inbox described as «la lista per le
+  attività senza giorno»; check-ins are «verifiche» (app string).
+- Pulse: Proceeds «Ricavi», Revenue «Fatturato». AppMeta: the App Store Connect key path as AppMeta's Italian onboarding
+  writes it, «Utenti e accesso > Integrazioni > App Store Connect API» (Apple's Italian Help is not available).
+- Soon.: «Apple Weather», as the app's Italian string says (Apple's own app is «Meteo»; the privacy page says «Meteo di
+  Apple (WeatherKit)»).
+- Mockly: its English UI labels are quoted in English; the page says once, plainly, that the interface is not in Italian.
+- Privacy pages: «Informativa sulla privacy di <App>»; «trattare / trattamento», «raccogliere», «consapevolmente»,
+  «terze parti», «dati personali» (for "personal data" and "personal information"), «sincronizzazione con iCloud», «in
+  locale», «una quantità limitata di dati», «Per impostazione predefinita», «Possiamo aggiornare…», «Ogni modifica
+  sarà riportata in questa pagina», refund clause «Effettuando un acquisto, accetti che possiamo…» and «se preferiremmo
+  che Apple approvasse o rifiutasse il rimborso»; Finland's authority «l’Ufficio del Garante per la protezione dei dati
+  della Finlandia (Tietosuojavaltuutetun toimisto)»; Apple's EULA «Contratto di Licenza per utenti finali per le
+  Applicazioni concesse in licenza (“Contratto EULA Standard”)».
+- Legal terms to show an Italian lawyer when one is available: consent bundled with a purchase (refund clause, GDPR art.
+  7(4)); «minori di 13 anni» kept from English although Italy's age of digital consent is 14 (art. 2-quinquies Codice
+  privacy); no «titolare del trattamento», legal bases, retention, rights under artt. 15–22 or Garante complaint in the
+  English policies, so none in Italian; Pulse «è responsabile dei dati personali» (could read as «responsabile del
+  trattamento»); AppMeta's transfers to AI providers outside the EU; Clippet terms: «così com’è», «secondo
+  disponibilità», «commerciabilità», «idoneità a uno scopo particolare», punitive damages, art. 1229 c.c.
 
 ## Local competitors (for Tier 3)
 
@@ -242,7 +284,23 @@ needless anglicisms where Italian has the normal word («subscription», «setti
 devices and body parts copied from English («alza la tua mano»: «alza la mano»); «supportare» for "support a feature"
 («funziona con», «è compatibile con»); «fare senso»; «giocare un ruolo»; «a livello di»; «andare a + infinitive»
 filler («andrai a registrare»); «utente» everywhere where Italian says tu or «chi»; chains of gerunds copied from
-English -ing; «Lei» forms or voi to one reader; straight apostrophes; ««» quotes against the sheet's “ ”.
+English -ing; «Lei» forms or voi to one reader; straight apostrophes; « » quotes against the sheet's “ ”.
+
+Found in the Tier 1 reviews (2026-11-19): tu indicatives that read as Lei imperatives («Annulli quando vuoi», «Paghi una
+volta»); keyword nouns in apposition («un’app scacchi», «App HRV per Salute», «un’app to do list»); keyword-then-colon
+H1s; gendered address («Sei uno sviluppatore?», «Bloccato?», «ti sei svegliato», «Sei stanco», «crei da solo»); team
+«noi» on a one-person studio («Scrivici», «ci aiutano»); «per costruzione» ("by construction": «fin dal progetto»);
+«provata» for "proven" («dimostrata»); «registrazione» for logging next to «nessuna registrazione» (sign-up);
+«analisi» for analytics where Analisi is an app feature («strumenti di analisi d’uso»); «mobile» for "rolling"
+(«media mobile»); «schermata di blocco» for an app's own block screen (it means Lock Screen); «a livello di sistema»;
+«spezzare il legame» (unlink: «scollegare»); days as a subject («i tuoi primi 3 giorni sbloccano»); «da condividere» for
+"shared"; «vuole essere» for "is meant to"; «Il lavoro copre»; «registri» for logs; «segue l’assistenza»; «subito» for
+"up front"; «anche dove» for "including where"; a bare «Nessuno» after a list of things; «ti legge»; «più la sua…»;
+«pagare per le app»; added «solo» or «cioè …» definitions; «Privato per costruzione»; «contamosse»; «serotino»;
+«nell’ospitalità»; «quasi sempre» for "usually"; «non vanno da nessuna parte» for "fit nowhere"; «le partite dal vivo»;
+«problemi di scacchi consecutivi» («a scacco continuo»); «scambio» for a move-order slip; «centipedoni»; ranges as «7-9
+ore» («da 7 a 9 ore»); over-quoting one-word labels; a meta description opening with «Cerchi…?»; slogan add-ons after a
+colon in privacy titles («: senza tracciamento»); dropping the defining noun (Tare is a balance game).
 
 ## House rules carried over
 
@@ -257,7 +315,21 @@ English -ing; «Lei» forms or voi to one reader; straight apostrophes; ««» q
 
 ## Review log
 
-(Filled in per batch.) Native review: none yet, for every page (NATIVE REVIEWER: none).
+All Tier 1 pages, 2026-11-19. Writers: Sonnet agents (owner's request), one per page (support pages seven per writer,
+privacy policies three or four per writer). Reviewers: separate Opus agents that did not write the pages, running the
+full copy-editing skill, a fact diff against the English page, a glossary check against each app's Italian string
+catalog and SEO limits. Back-translation by fresh agents that never saw the English, compared claim by claim by the
+reviewers: home, all 21 app pages, about. Native review: none yet, for every page (NATIVE REVIEWER: none).
+
+| Pages | Writer | Reviewer | Back-translation | Native |
+|---|---|---|---|---|
+| interface strings (it.yml) | 1 writer | 1 reviewer, 59 values changed | n/a | no native review yet |
+| /it/, /it/apps/ | 2 writers | 1 reviewer | home: 14 shifts fixed | no native review yet |
+| 21 app pages | 21 writers | 5 reviewers (4 to 5 pages each) | all 21: about 120 shifts fixed | no native review yet |
+| 21 support pages | 3 writers | checked in the gate | n/a | no native review yet |
+| 21 privacy policies + Clippet terms | 7 writers | 4 reviewers, sentence by sentence, then one term set applied to all | n/a | no native review yet |
+| about, support hub, transparency | 3 writers | 1 reviewer | about: 1 shift fixed | no native review yet |
+| /it/llms.txt, /it/llms-full.txt | 1 writer | 1 reviewer | n/a | no native review yet |
 
 ## Screenshots
 

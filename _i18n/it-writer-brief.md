@@ -104,3 +104,25 @@ You MAY run `python3 scripts/i18n.py check 2>&1 | grep -A3 "<your path>"` to see
 3. Any sentence you left out because the English page didn't support it in Italian, and any glossary string you
    replaced because it was defective.
 4. English-side errors you noticed (facts that contradict the app's glossary or the master), for ISSUES.md.
+
+## Decided wording and lessons from earlier languages (read before writing)
+
+- Founder lines mirror the two English forms: «Sviluppatore Apple indipendente · Finlandia · studio di una sola
+  persona dal 2025» and «Studio indipendente di app Apple · Finlandia». Never «sviluppatore indipendente di Apple»
+  (reads as Apple's own developer, or "independent from Apple"); never «studio Apple» (reads as Apple's studio).
+- Support pages: one title pattern «X: assistenza e contatti».
+- Reviews of the French, German and Spanish pages found the same writer slips again and again. Avoid them:
+  softened or dropped hedges and qualifiers ("may", "about", "only", "on this device"); added definitions or claims
+  the English page doesn't make; a framing sentence added to an FAQ answer; merged FAQ questions; English third-person
+  headings turned into slogans; «utente» where tu works; gendered address that excludes («Sei uno sviluppatore?»:
+  prefer «Sviluppi app?»); a keyword noun dropped into prose in apposition («un’app promemoria pagamenti»: «un’app per
+  ricordare i pagamenti»); multi-word UI labels left unquoted (they go in “ ”); UI labels invented from the meaning
+  (only quote strings that are in it-glossary.md); English left in where the Italian UI has a word; periods at the end of
+  `who_for` / `who_not_for` bullets when the English has none.
+- App-specific (sheet + glossary): Mockly has NO Italian interface (say so plainly where the page says what language the
+  app is in, or in one FAQ «Mockly è in italiano?» → no, interface in English); Pawza is a digital record and the page
+  must not suggest it replaces an official or vet document unless the English says so; Observa: «HRV (SDNN)», never
+  «VFC», Apple Italy's sleep stages are Veglia / REM / Principale / Profondo, Observa's own Italian Core string is
+  defective («Profondo»), so don't quote it; LiftLog tiers Equo / Buono / Generoso / Mecenate (store names);
+  Chessful tier Pro; Millrace never «numeri» or the number title; Taskful Day carry-forward: describe it («le attività
+  non fatte passano a oggi»), never «rinvia»; WanderWiki: cancel = «annulla», never «cancella».
