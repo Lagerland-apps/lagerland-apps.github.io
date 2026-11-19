@@ -55,7 +55,6 @@ seo:
   keywords:
     - app recordatorio de pagos
     - app para recordar pagos
-    - app control suscripciones
     - recordatorio de pago de facturas
     - app para recordar fechas de pagos
     - app para recordar pagos mensuales
@@ -160,7 +159,7 @@ features:
   - title: "Facturas con pago automático"
     description: "Marca una domiciliación como «Pago automático». AllPaid envía «Pago automático próximo» en lugar de un recordatorio de pago y adelanta la factura por su cuenta. Un filtro de la lista muestra u oculta estas facturas."
   - title: "Siri, búsqueda de iOS y Face ID"
-    description: "Pregunta a Siri «What bills are due in AllPaid» y te lee las facturas que vencen en los próximos siete días. La búsqueda de iOS encuentra cualquier factura por su nombre. El bloqueo de la app solo abre AllPaid con Face ID, Touch ID o tu código."
+    description: "Pregunta a Siri «What bills are due in AllPaid» y te dirá qué facturas vencen en los próximos siete días. La búsqueda de iOS encuentra cualquier factura por su nombre. El bloqueo de la app solo abre AllPaid con Face ID, Touch ID o tu código."
   - title: "En iPad y en Mac"
     description: "En una pantalla ancha de iPad o en una ventana del Mac, la lista de facturas se muestra junto a la factura que has elegido, y puedes editarla sin salir de la lista. La barra de menús del Mac ofrece atajos de teclado: ⌘N añade una factura, ⌘F busca y ⌘↩ marca como pagada la factura seleccionada. En iPad, mantén pulsada la tecla ⌘ para verlos. En el Mac, el bloqueo de la app usa Touch ID o la contraseña del Mac. Una sola compra de Pro desbloquea iPhone, iPad y Mac."
   - title: "Buscar, ordenar, compartir y notas"
@@ -253,7 +252,7 @@ faq:
   - q: "¿AllPaid rellena las facturas automáticamente?"
     a: "En parte. AllPaid nunca lee tu banco, así que no puede encontrar facturas por sí sola: añades cada una a mano. Cuando escribes un nombre conocido, como Netflix, propone la categoría y la frecuencia, y tocas «Aplicar» para usarlas. Los proveedores más habituales también muestran su logotipo real. El importe es opcional, así que puedes añadir una factura aunque cambie de un mes a otro."
   - q: "¿En qué se diferencia AllPaid de Rocket Money?"
-    a: "Rocket Money se conecta a tu banco, detecta suscripciones en el historial de tus movimientos y ofrece un servicio de negociación de pago que se queda un porcentaje del ahorro que consigue. AllPaid no hace nada de eso. Tú añades las facturas, nada sale de tu dispositivo salvo que actives la sincronización con iCloud, y AllPaid es gratis hasta 3 facturas, con una opción de por vida para Pro de un solo pago. Si te importa más la detección automática a partir de tus movimientos que la privacidad, Rocket Money encaja mejor. Si prefieres no dar las claves de tu banco a una app de terceros, AllPaid es la mejor opción. La <a href=\"/alternatives/rocket-money/\" hreflang=\"en\">comparativa completa con Rocket Money</a> (en inglés) lo repasa línea a línea."
+    a: "Rocket Money se conecta a tu banco, detecta suscripciones en el historial de tus movimientos y ofrece un servicio de negociación de pago que se queda un porcentaje del ahorro que consigue. AllPaid no hace nada de eso. Tú añades las facturas, nada sale de tu dispositivo salvo que actives la sincronización con iCloud, y AllPaid es gratis hasta 3 facturas, con una opción de por vida para Pro de un solo pago. Si te importa más la detección automática a partir de tus movimientos que la privacidad, Rocket Money encaja mejor. Si prefieres no dar las claves de tu banco a una app de terceros, AllPaid es la mejor opción. La <a href=\"/alternatives/rocket-money/\" hreflang=\"en\">comparativa completa con Rocket Money</a> (en inglés) lo repasa línea a línea. La <a href=\"/es/guides/bill-tracker-without-bank-connection/\">guía para controlar facturas y suscripciones sin conectar el banco</a> compara AllPaid con Fintonic, que te pide conectar tus cuentas."
   - q: "¿Puede AllPaid avisarme antes de que se renueve un contrato?"
     a: "Sí. Activa «Seguir fecha de fin del contrato» en una factura y añade las fechas de inicio y fin, si se renueva automáticamente y el importe de la renovación. AllPaid te avisa a las 10:00 antes de la fecha de fin, y la lista muestra los contratos por terminar. Si renuevas, «Marcar como renovado» guarda el periodo anterior en «Renovaciones anteriores» y adelanta la fecha de fin. La versión gratuita permite un recordatorio por contrato; Pro permite varios."
   - q: "¿AllPaid detecta las pruebas gratuitas antes de que se conviertan en suscripción?"
@@ -265,7 +264,7 @@ faq:
   - q: "¿AllPaid es gratis?"
     a: "Sí. La versión gratuita controla hasta 3 facturas con un recordatorio el día antes de cada una, las fechas de fin de contrato, el resumen de gastos, los diez widgets, Siri y el bloqueo de la app. Al guardar una cuarta factura se abre la pantalla de Pro. Pro desbloquea facturas ilimitadas, varios recordatorios por factura y recordatorios el día del vencimiento, análisis de gastos, historial completo de pagos, hasta 50 adjuntos por factura y sincronización con iCloud, por {P_MONTHLY}/mes, {P_YEARLY}/año o {P_LIFETIME} una sola vez. Si tu cuenta de Apple cumple los requisitos, el plan mensual empieza con {TRIAL} y el anual con 7 días de prueba gratis. Una compra de Pro cubre hasta 5 miembros de la familia con En familia. Los precios indicados son los del App Store de España; en otros países, el App Store te muestra el precio en tu moneda al pagar."
   - q: "¿AllPaid funciona con Siri y con widgets?"
-    a: "Sí. Pregunta a Siri «What bills are due in AllPaid» y te lee las facturas que vencen en los próximos siete días. AllPaid tiene diez widgets para la pantalla de inicio y la de bloqueo, entre ellos Próxima factura, Calendario mensual, Próximas facturas y Contratos, con tamaños extragrandes en iOS 27. Los widgets abren la app; no permiten marcar una factura como pagada."
+    a: "Sí. Pregunta a Siri «What bills are due in AllPaid» y te dirá qué facturas vencen en los próximos siete días. AllPaid tiene diez widgets para la pantalla de inicio y la de bloqueo, entre ellos «Próxima factura», «Calendario mensual», «Próximas facturas» y Contratos, con tamaños extragrandes en iOS 27. Los widgets abren la app; no permiten marcar una factura como pagada."
   - q: "¿AllPaid funciona en iPad, Mac o Apple Watch?"
     a: "En iPad y Mac, sí; en Apple Watch, no. AllPaid funciona en iPhone con iOS 17 o posterior, en iPad con iPadOS 17 o posterior y en Mac con macOS 14 Sonoma o posterior. Una sola compra cubre los tres: Pro comprado en un dispositivo desbloquea los demás con la misma cuenta de Apple, y la sincronización con iCloud (Pro) mantiene tus facturas iguales en cada uno. No hay versión para Apple Watch."
   - q: "¿AllPaid comparte mis datos financieros?"

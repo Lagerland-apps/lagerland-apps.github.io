@@ -114,3 +114,43 @@ Other sessions (Italian, Portuguese) work in this same checkout: never run `git`
 
 The items in es-writer-brief.md «Reply with», plus: every competitor fact you dropped because Spain data was missing,
 and (local-only page) the list of sources saved.
+
+---
+
+## Batch 2 (2026-11-19)
+
+Same rules as batch 1. Research rows: the «Batch 2» section at the bottom of the research file.
+
+| Page | Write to | Primary query |
+|---|---|---|
+| guides/best-shogi-apps-iphone.html | es/guides/best-shogi-apps-iphone.html | shogi online |
+| guides/bill-tracker-without-bank-connection.html | es/guides/bill-tracker-without-bank-connection.html | app para controlar suscripciones |
+| (local-only) | es/guides/como-poner-cuenta-atras-iphone.html | como poner una cuenta atrás en el iphone |
+
+- Shogi: Kakinoki Shogi is not sold in Spain: drop it and every sentence that depends on it. None of the listed apps has a
+  Spanish listing; say which languages they offer only where the English page does. Shogiful is ours (its Spanish page
+  `es/apps/shogiful/index.md` and glossary section give the feature names; prices via tokens).
+- Bill tracker: Rocket Money, Truebill (now Rocket Money), Monarch and Copilot are not sold in Spain. Rewrite the
+  comparison around Fintonic, the bank-linked app people in Spain use, using ONLY what Fintonic's own Spanish App Store
+  description says (fetch it: `curl -s "https://itunes.apple.com/lookup?country=es&lang=es_es&id=672220319"`, field
+  `description`; save it to the sources folder below). Keep the English page's general points about bank aggregation only
+  where they do not name a US company or a US rule; drop Plaid, US banks and US law. The French twin
+  `fr/guides/bill-tracker-without-bank-connection.html` did the same rewrite for Bankin' and Linxo: use it as the
+  structural model. AllPaid facts from `_apps/allpaid.md`, `es/apps/allpaid/index.md`, its glossary section and its
+  APP_BLUEPRINT.md §10; prices via `{P_…@allpaid}` tokens; disclose that AllPaid is ours. Never claim anything about
+  Fintonic's security, fees or loans that its listing doesn't say; no review quotes.
+- Countdown (local-only, `local_only: true`, no `ref`, no `translated_from`, permalink
+  `/es/guides/como-poner-cuenta-atras-iphone/`): model `fr/guides/application-compte-a-rebours-iphone.html`. Facts from:
+  Apple Spain's iOS 27 iPhone guide pages on widgets (home screen and lock screen; find them from
+  https://support.apple.com/es-es/guide/iphone/welcome/ios and save them), each app's Spanish description via the lookup
+  API (IDs 1403367428, 576177593, 917514700, 1534850579, 940109775), Soon.'s `_apps/soon.md`, `es/apps/soon/index.md` and
+  its APP_BLUEPRINT.md §10 (prices via `{P_…@soon}` tokens, disclose it is ours). Spanish ratings from the research file.
+  «cuenta atrás», never «cuenta regresiva». If iOS itself has no countdown widget, say what the Apple page does show
+  (for example the Calendar widget's upcoming events) only if the Apple page you fetched says so.
+- Sources for the bill tracker (Fintonic) and the countdown guide go in
+  `/private/tmp/claude-501/-Users-anttiaittamaa--claude-spares-spare-Pj9vQR/70be057c-fdb0-4a19-959a-48f6b17f7b81/scratchpad/es-t2/sources/<slug>/`.
+- Blueprints: use only §10 (claims register); §8 lists non-claims and §9 hidden items, never sources.
+- Lessons from batch 1 reviews: type U+00A0 before % and € (no writer did); subjunctive where Spanish needs it; no
+  gendered audience words («harto», «atrapado»); no raw keyword seo.titles without «de/para»; no «(2026)» or «guía honesta»
+  padding; «rastreo» for tracking; Apple feature names bare in running text («toca «Tiempo de uso»» only for a tap);
+  card titles that are quotes end without a full stop inside «…»; seo.keywords only real queries from the research file.

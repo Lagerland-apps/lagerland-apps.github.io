@@ -17,9 +17,7 @@ seo:
     - app cuenta atrás
     - contador de días app
     - cuenta atrás boda
-    - widget cuenta atrás iphone
     - contador de días para evento
-    - como poner una cuenta atrás en iphone
 
 plans_footnote: "Los precios indicados son los del App Store de España. En otros países, el App Store muestra al comprar el precio en tu moneda. Los reembolsos pasan por Apple, con el procedimiento habitual del App Store. La compra única De por vida se paga una vez y no se renueva."
 
@@ -233,7 +231,7 @@ faq:
   - q: "¿Cuánto cuesta Premium?"
     a: "{P_MONTHLY} al mes o {P_YEARLY} al año, cada uno con {TRIAL}, o {P_LIFETIME} de una sola vez para De por vida. Puedes cancelar una suscripción cuando quieras, y los tres planes admiten En familia. Los precios indicados son los del App Store de España. En otros países, el App Store muestra al comprar el precio en tu moneda."
   - q: "¿Qué widgets tiene Soon.?"
-    a: "Soon. tiene 26 widgets para la pantalla de inicio, la pantalla de bloqueo y En reposo, desde un simple número de días hasta un anillo, una cronología, una vista del mes y una vista de todo el año, con una variante nocturna para En reposo. Los widgets gratuitos muestran tu evento fijado; Premium te deja elegir cualquier evento para cada widget y desbloquea todos los estilos de widget. En iOS 18 también hay un control de días restantes para el centro de control."
+    a: "Soon. tiene 26 widgets para la pantalla de inicio, la pantalla de bloqueo y En reposo, desde un simple número de días hasta un anillo, una cronología, una vista del mes y una vista de todo el año, con una variante nocturna para En reposo. Los widgets gratuitos muestran tu evento fijado; Premium te deja elegir cualquier evento para cada widget y desbloquea todos los estilos de widget. En iOS 18 también hay un control de días restantes para el centro de control. La <a href=\"/es/guides/como-poner-cuenta-atras-iphone/\">guía para poner una cuenta atrás en el iPhone</a> compara los widgets de Soon. con los de Cuenta Atras ◎, Countdown Star y otras apps."
   - q: "¿Puedo ver mi cuenta atrás en la pantalla de bloqueo y en la Dynamic Island?"
     a: "Sí. Los widgets de la pantalla de bloqueo funcionan en la versión gratuita y muestran tu evento fijado. Con Premium, la actividad en directo Cuenta atrás final pone el temporizador en tu pantalla de bloqueo y en la Dynamic Island durante las últimas 24 horas, y la opción «Mantener en la pantalla de bloqueo» puede mostrar la cuenta atrás con hasta 90 días de antelación. iOS puede terminar una actividad en directo pasadas unas horas, y Soon. la actualiza en segundo plano cuando iOS lo permite."
   - q: "¿Se pueden contar los días desde una fecha pasada?"

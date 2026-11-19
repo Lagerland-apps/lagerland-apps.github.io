@@ -1,0 +1,161 @@
+---
+layout: default
+ref: /guides/bill-tracker-without-bank-connection/
+permalink: /es/guides/bill-tracker-without-bank-connection/
+translated_from: 2026-11-07
+title: "App para controlar suscripciones sin conexión bancaria"
+quick_answer: "Si buscas una app para controlar suscripciones y facturas sin conectar tu banco, prueba AllPaid ({PLATFORMS@allpaid}), una app de Lagerland Apps (el editor de esta guía) que funciona sin conexión bancaria. Añades cada factura una vez; AllPaid propone la categoría y la frecuencia para los nombres conocidos, te avisa antes de cada vencimiento, y marcar una factura como pagada es un solo toque. Fintonic, en cambio, te pide conectar tus cuentas para calcular tu FinScore, según su ficha del App Store de España. AllPaid es gratis hasta 3 facturas, con Pro opcional desde {P_MONTHLY@allpaid}/mes."
+seo:
+  title: "App para controlar suscripciones sin conexión al banco"
+  description: "App para controlar suscripciones y facturas sin dar acceso a tu banco. Fintonic pide conectar tus cuentas; AllPaid se rellena a mano."
+  keywords:
+    - app para controlar suscripciones
+    - app control suscripciones
+    - app gastos fijos y variables
+    - gestionar suscripciones apple
+    - fintonic alternativas
+last_updated: 2026-11-19
+---
+{%- include t.html -%}
+{%- assign app = site.apps | where: "slug", "allpaid" | first -%}
+{%- include app-facts.html app=app -%}
+{%- assign ap_devices = f_platforms_and | replace: "iPadOS", "iPad" | replace: "iOS", "iPhone" | replace: "macOS", "Mac" | replace: "watchOS", "Apple Watch" -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/es/guides/bill-tracker-without-bank-connection/#webpage",
+  "url": "{{ site.url }}/es/guides/bill-tracker-without-bank-connection/",
+  "name": {{ page.seo.title | jsonify }},
+  "description": {{ page.seo.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/es/#website" },
+  "about": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "es-ES",
+  "datePublished": "2026-11-19",
+  "dateModified": "{{ page.last_updated | date: '%Y-%m-%d' }}",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Lagerland Apps", "item": "{{ site.url }}/es/" },
+      { "@type": "ListItem", "position": 2, "name": "Guías", "item": "{{ site.url }}/es/guides/" },
+      { "@type": "ListItem", "position": 3, "name": "App para controlar suscripciones sin conexión bancaria", "item": "{{ site.url }}/es/guides/bill-tracker-without-bank-connection/" }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "es-ES",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Hay una app para controlar suscripciones y facturas sin conectar el banco?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. AllPaid (nuestra app) prioriza tu privacidad y funciona solo con lo que introduces a mano, sin conexión bancaria ni agregación de cuentas. Añades tú las facturas y las marcas como pagadas. Tus facturas se quedan en tus dispositivos, salvo que actives la sincronización con iCloud (Pro), que usa tu propio iCloud privado." } },
+    { "@type": "Question", "name": "¿Por qué Fintonic pide conectar mis cuentas bancarias?", "acceptedAnswer": { "@type": "Answer", "text": "Según su ficha del App Store de España, Fintonic te pide conectar tus cuentas con tecnología openbanking para calcular tu FinScore, y con las cuentas conectadas su inteligencia artificial te da recomendaciones personalizadas. Si prefieres no dar ese acceso, la alternativa es introducir los datos a mano, y AllPaid está pensada para eso." } },
+    { "@type": "Question", "name": "¿Llevar las facturas a mano funciona a la larga?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, una vez hecha la configuración inicial. La mayoría de las facturas recurrentes cambian poco de un mes a otro. Cuando escribes un nombre conocido, como Netflix o Spotify, AllPaid propone la categoría y la frecuencia, y marcar una factura como pagada es un solo toque en la app o en el recordatorio." } },
+    { "@type": "Question", "name": "¿Tiene AllPaid widgets y funciona con Siri?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. AllPaid tiene diez widgets, todos gratuitos, entre ellos «Próxima factura», «Próximas facturas» y «Calendario mensual» para la pantalla de inicio, y una versión de «Próxima factura» para la pantalla de bloqueo. Pregúntale a Siri «What bills are due in AllPaid» y te dirá qué facturas vencen en los próximos siete días." } }
+  ]
+}
+</script>
+
+<section class="hero hero--home">
+  <div class="hero-left reveal">
+    <p class="overline">Guía · Del problema a la solución</p>
+    <h1 class="h1">
+      «Quiero controlar mis suscripciones y facturas<br><span class="gradient-text">sin conectar mi cuenta del banco»</span>
+    </h1>
+    <p class="lead">
+      Fintonic te pide conectar tus cuentas bancarias, con tecnología openbanking, para calcular tu FinScore. Si no quieres dar ese acceso a una app de terceros, puedes llevar tus facturas y suscripciones a mano.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#answer">Ir a la respuesta</a>
+      <a class="btn btn-secondary" href="#faq">Preguntas frecuentes</a>
+    </div>
+  </div>
+</section>
+
+{% include quick-answer.html %}
+
+<section class="section reveal">
+  <h2 class="h2">¿Qué hace Fintonic y qué te pide?</h2>
+  <p class="lead">Fintonic es gratuita. Su ficha en el App Store de España la presenta como una app para mejorar tu perfil crediticio, conseguir un préstamo y controlar tus finanzas. Todo lo que sigue sale de esa ficha; no hemos probado la app.</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Te pide conectar tus cuentas</div><div class="card-text">Para calcular tu FinScore, la nota de tu perfil crediticio, Fintonic te pide conectar tus cuentas con tecnología openbanking. Con las cuentas conectadas, su inteligencia artificial te da recomendaciones personalizadas.</div></div>
+    <div class="card"><div class="card-title">Analiza tus gastos recurrentes</div><div class="card-text">CreditBuilder, una función gratuita, analiza tus deudas, tus gastos recurrentes y tus hábitos financieros y te da recomendaciones. También te permite seguir mes a mes tu FinScore.</div></div>
+    <div class="card"><div class="card-title">Préstamos entre más de 40 entidades</div><div class="card-text">Con una sola solicitud llegas, según la ficha, a más de 40 entidades de préstamo. Fintonic dice que cobra a las entidades cuando contratas un préstamo y que a ti nunca te cobra.</div></div>
+    <div class="card"><div class="card-title">Autorizada por el Banco de España</div><div class="card-text">La ficha afirma que Fintonic está autorizada y supervisada por el Banco de España para prestar servicios de información sobre cuentas.</div></div>
+  </div>
+  <p class="lead" style="margin-top:var(--s-4);">La diferencia con AllPaid está en el acceso a tus cuentas. Fintonic te pide conectarlas para calcular tu FinScore; AllPaid no se conecta a tu banco. Además, la ficha de Fintonic habla sobre todo de préstamos y no menciona recordatorios de facturas.</p>
+  <p class="small" style="margin-top:var(--s-3);">El App Store de España le da 4,3 sobre 5 con 25.898 valoraciones (consultado el 19 de noviembre de 2026). Lo que esta guía cuenta de Fintonic sale de su <a href="https://apps.apple.com/es/app/id672220319" rel="noopener" target="_blank">ficha en el App Store de España</a>, consultada el mismo día.</p>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">¿Por qué dar acceso a tus cuentas es un problema?</h2>
+  <p class="lead">Las apps automáticas de facturas necesitan ver tus movimientos para funcionar. Piden acceso de solo lectura a través de un servicio de agregación de cuentas. A cambio, te ofrecen la detección automática de suscripciones, la negociación de facturas y análisis de tu flujo de caja, todo a partir de lo que el agregador ve de tus finanzas. Si cuidas tu privacidad, ese intercambio tiene costes reales:</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Entregas el acceso a tu banco</div><div class="card-text">Aunque la conexión use un flujo de autorización tipo OAuth, el agregador guarda un token con acceso a cada movimiento de tu cuenta, no solo a las facturas.</div></div>
+    <div class="card"><div class="card-title">Tus datos están en el servidor de un tercero</div><div class="card-text">El agregador guarda una copia del historial de tus movimientos. Cualquier brecha en el agregador o en la propia app lo deja expuesto.</div></div>
+    <div class="card"><div class="card-title">Los incentivos no siempre coinciden con los tuyos</div><div class="card-text">Muchas apps de negociación de facturas se quedan con una parte de lo que te ahorran. Les conviene que sigas usándolas, y eso no siempre te beneficia.</div></div>
+    <div class="card"><div class="card-title">Puede que tu banco no lo permita</div><div class="card-text">Algunos bancos no funcionan con ningún agregador. Si el tuyo no es compatible, las apps automáticas no te sirven.</div></div>
+  </div>
+</section>
+
+<section id="answer" class="section--lg reveal">
+  <div class="section-center">
+    <p class="overline">La respuesta</p>
+    <h2 class="h2">AllPaid: facturas a mano, en privado y sin necesidad de internet</h2>
+    <p class="lead">AllPaid es nuestra app: Lagerland Apps la publica y también edita esta guía. Sirve para llevar tus facturas en {{ ap_devices }}. Añades tú las facturas y las suscripciones, y AllPaid propone la categoría y la frecuencia para los nombres conocidos. El resumen mensual muestra las facturas del mes con sus totales, y con un toque marcas una factura como pagada. No tiene conexión bancaria ni cuenta, y tus facturas se quedan en tus dispositivos, salvo que actives la sincronización con iCloud (Pro), que usa tu propio iCloud privado. Todos los detalles están en <a href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>la página de AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>.</p>
+  </div>
+  {% if app %}
+  <div class="grid grid-2 stagger">
+    {% include app-card.html app=app %}
+  </div>
+  {% endif %}
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">¿No es pesado introducirlo todo a mano?</h2>
+  <p class="lead">Solo al principio: la mayoría de los hogares pueden añadir todas sus facturas recurrentes de una sentada. Después:</p>
+  <div class="grid grid-2 stagger">
+    <div class="card"><div class="card-title">Las sugerencias rellenan los detalles</div><div class="card-text">Escribe «Netflix» y AllPaid propone la categoría y la frecuencia. El importe es opcional, así que una factura puede ser solo un nombre y una fecha de vencimiento.</div></div>
+    <div class="card"><div class="card-title">Marcar como pagada es un solo toque</div><div class="card-text">Lo haces en la app o directamente desde el recordatorio, y puedes deshacerlo si has tocado demasiado rápido.</div></div>
+    <div class="card"><div class="card-title">La mayoría de las facturas no cambian</div><div class="card-text">El alquiler, los suministros y las suscripciones son iguales cada mes. Una vez añadidas, se repiten solas, así que solo tienes que añadir las nuevas.</div></div>
+    <div class="card"><div class="card-title">El mes y los widgets lo mantienen a la vista</div><div class="card-text">El resumen mensual muestra las facturas del mes con el total por vencer, lo pagado y lo que queda. Los widgets «Calendario mensual» y «Próximas facturas» ponen los vencimientos en tu pantalla de inicio, así que rara vez necesitas abrir la app.</div></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h2">¿Qué pierdes al llevar las facturas a mano?</h2>
+  <div class="card">
+    <p>Si lo introduces todo a mano, pierdes:</p>
+    <ul class="bullets">
+      <li>La detección automática de suscripciones (nada busca por ti los cargos recurrentes que habías olvidado)</li>
+      <li>Las funciones de negociación de facturas</li>
+      <li>La previsión del flujo de caja entre cuentas</li>
+      <li>La sensación de que «la app lo sabe todo de mi dinero»</li>
+    </ul>
+    <p style="margin-top:var(--s-3);">Si necesitas esas funciones, AllPaid no es la opción adecuada; lo es una app con conexión bancaria, con lo que eso supone para tu privacidad. AllPaid es para quien prefiera dedicar una sentada a la configuración y no compartir las claves de su banco.</p>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="section-center"><p class="overline">Preguntas</p><h2 class="h2">Preguntas frecuentes</h2></div>
+  <div class="faq">
+    <details class="faq-item" open><summary>¿Hay una app para controlar suscripciones y facturas sin conectar el banco?</summary><div class="faq-a">Sí. AllPaid (nuestra app) prioriza tu privacidad y funciona solo con lo que introduces a mano, sin conexión bancaria ni agregación de cuentas. Añades tú las facturas y las marcas como pagadas. Tus facturas se quedan en tus dispositivos, salvo que actives la sincronización con iCloud (Pro), que usa tu propio iCloud privado.</div></details>
+    <details class="faq-item"><summary>¿Por qué Fintonic pide conectar mis cuentas bancarias?</summary><div class="faq-a">Según su ficha del App Store de España, Fintonic te pide conectar tus cuentas con tecnología openbanking para calcular tu FinScore, y con las cuentas conectadas su inteligencia artificial te da recomendaciones personalizadas. Si prefieres no dar ese acceso, la alternativa es introducir los datos a mano, y AllPaid está pensada para eso.</div></details>
+    <details class="faq-item"><summary>¿Llevar las facturas a mano funciona a la larga?</summary><div class="faq-a">Sí, una vez hecha la configuración inicial. La mayoría de las facturas recurrentes cambian poco de un mes a otro. Cuando escribes un nombre conocido, como Netflix o Spotify, AllPaid propone la categoría y la frecuencia, y marcar una factura como pagada es un solo toque en la app o en el recordatorio.</div></details>
+    <details class="faq-item"><summary>¿Tiene AllPaid widgets y funciona con Siri?</summary><div class="faq-a">Sí. AllPaid tiene diez widgets, todos gratuitos, entre ellos «Próxima factura», «Próximas facturas» y «Calendario mensual» para la pantalla de inicio, y una versión de «Próxima factura» para la pantalla de bloqueo. Pregúntale a Siri «What bills are due in AllPaid» y te dirá qué facturas vencen en los próximos siete días.</div></details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="overline">Pruébala</p>
+  <h2 class="h2">Prueba AllPaid</h2>
+  <p class="lead">Una app privada para llevar tus facturas y suscripciones a mano, sin cuenta. Es gratis hasta 3 facturas, con Pro opcional para facturas ilimitadas, análisis de gastos y sincronización con iCloud.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{% include l.html url="/apps/allpaid/" %}"{% if l_en %} hreflang="en"{% endif %}>Conoce AllPaid{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/guides/" %}"{% if l_en %} hreflang="en"{% endif %}>Todas las guías{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+    <a class="btn btn-secondary" href="{% include l.html url="/apps/" %}"{% if l_en %} hreflang="en"{% endif %}>Ver todas las apps{% if l_en %} <span class="en-marker">{{ t.english_marker }}</span>{% endif %}</a>
+  </div>
+</section>

@@ -11,7 +11,7 @@ reviewing any Spanish page. Every decision a translator would otherwise make dif
 | Keyword research (Tier 1) | done 2026-11-19 from Google suggest, Bing, App Store hints and the iTunes Search API; Search Console for Spain not read yet (no access this session) |
 | Tier 1 pages | done 2026-11-19, no native review yet: home, apps hub, 21 app pages (Clippet unlisted), 21 support pages, 21 privacy policies + Clippet terms, about, support hub, transparency (+ `_data/i18n_transparency/es.yml`), /es/llms.txt, /es/llms-full.txt, 21 OG cards. Commits 6a83675 (batch 1), ac4a1a3, e6e2231, 3857ea6, cfaed65 (batches 2 to 5), then AI files and go-live |
 | Live | yes, `live: true` since 2026-11-19 (Tier 1; go-live commit not yet pushed) |
-| Tier 2 | batch 1 done 2026-11-19 (not pushed): both hubs, 4 guides (chess, logic puzzles, xiangqi, workout without subscription), 3 audience pages, and the first local-only page /es/guides/limitar-tiempo-de-pantalla-iphone/. Research: ~/Downloads/githubcode/es-tier2-research-2026-11-19.md. Left for batch 2: best-shogi-apps-iphone, bill-tracker-without-bank-connection (rewrite around Fintonic), local-only countdown-widget guide (`widget cuenta atrás iphone`). for/indie-ios-developers stays English-only (developers search in English) |
+| Tier 2 | done 2026-11-19 (not pushed). Batch 1 (0cf087a): both hubs, chess, logic puzzles, xiangqi, workout without subscription, 3 audience pages, local-only /es/guides/limitar-tiempo-de-pantalla-iphone/. Batch 2: shogi, bill tracker rewritten around Fintonic, local-only /es/guides/como-poner-cuenta-atras-iphone/. Research: ~/Downloads/githubcode/es-tier2-research-2026-11-19.md. for/indie-ios-developers stays English-only (developers search in English) |
 | Stale pages | 0 (2026-11-19, `i18n.py stale`) |
 | Native review | none (NATIVE REVIEWER: none). Every page is logged as "no native review yet" |
 | Build time | 270 s wall, 137 s CPU before Spanish (2026-11-19, seven research agents running in parallel, so the wall time is inflated); French sheet had 80 s after French Tier 1. Idle machine 2026-11-19: 157 s before the tx-app fix, 52 s after (617 pages, `--profile`; tx-app 99.6 s to 4.9 s, I-0258) |
@@ -185,7 +185,7 @@ in, no export on disk). The French property showed almost no French queries; exp
 | Support hub (/es/support/) | `cancelar suscripción iphone` | `restaurar compras app store`, `reembolso app store` |
 | Transparency (/es/transparency/) | `app tracking transparency` (Spanish searchers type the English) | `app tracking transparency que es`, `privacy manifest` |
 | AfterShift | `dormir después de trabajar de noche` | `trastorno del sueño por turnos de trabajo`, `deuda de sueño` |
-| AllPaid | `app recordatorio de pagos` | `app para recordar pagos`, `app control suscripciones` |
+| AllPaid | `app recordatorio de pagos` | `app para recordar pagos`, `recordatorio de pago de facturas` (`app control suscripciones` moved to the bill-tracker guide, Tier 2) |
 | AppMeta | `app store connect mac app` (developers search in English) | `app store connect for mac`, `aso app store` |
 | AppMeta Pulse | `app store connect iphone` | `app store connect ios`, `app store connect api` |
 | Chessful | `aplicación ajedrez` | `aprender ajedrez app`, `análisis de partidas de ajedrez` |
@@ -219,6 +219,9 @@ app queries (Chessful lost `mejor app de ajedrez`, GymLogger X `mejor app para g
 | /es/for/shift-workers/ | `trabajo a turnos y salud` | `trabajo a turnos salud`, `trabajo de noche afecta la salud` |
 | /es/for/apple-health-power-users/ | `mejores apps salud apple watch` | `mejor app salud apple watch`, `app salud apple watch gratis` |
 | /es/for/calm-productivity/ | `mejores apps de productividad iphone` | `app minimalista para iphone`, `apps procrastinación` |
+| /es/guides/best-shogi-apps-iphone/ | `shogi online` (`shogi`, `shogi app`, `aprender shogi` are Shogiful's) | `jugar shogi online`, `shogi online español`, `shogi online gratis` |
+| /es/guides/bill-tracker-without-bank-connection/ | `app para controlar suscripciones` (AllPaid gave up `app control suscripciones`) | `app gastos fijos y variables`, `gestionar suscripciones apple`; `fintonic alternativas` moves to the Tier 3 «alternativa a Fintonic» page when it exists |
+| /es/guides/como-poner-cuenta-atras-iphone/ (local-only) | `como poner una cuenta atrás en el iphone` (Soon. gave up `widget cuenta atrás iphone`) | `como poner un widget de cuenta atrás en iphone`, `widget contador de días iphone`, `widget cuenta atrás iphone gratis` |
 
 ## Decisions from the Tier 1 reviews (2026-11-19)
 
@@ -297,7 +300,16 @@ stalemate («ahogado»); «la jugada mejor»; a keyword prefixed onto an H2; a c
 («y Análisis que…»); an unconditional `{{ t.english_marker }}` inside JSON-LD text; «hacer ganar la apertura» ("earn the open");
 a heading promising something about every app when only some were checked («Lo que ninguna app … puede hacer»); «pase lo que
 pase» on a system setting; «guía honesta» / «(2026)» sales padding in seo.titles; «seguimiento» for tracking (Spain: «rastreo»);
-missing U+00A0 before % and € (none of the Tier 2 writers typed it). Competitor prices: Spanish App Store euro rows only,
+missing U+00A0 before % and € (none of the Tier 2 writers typed it). Batch 2 reviews: «ránking» («partidas clasificatorias», «rango»); «X es
+la otra dirección» (French calque); «Es otro trabajo» ("a different job"); «pierde con convicción» ("loses convincingly");
+«dejes de dejar»; «la editora de esta guía» (reads as a woman editor: «quien publica esta guía»); a blanket «ninguna app está
+en español» when our own app in the table is; «para iPhone para quien…»; «quedarse con las claves» (can mean "steal": «no
+compartir»); «sostenible» for a habit («funciona a la larga»); «para funcionar» on a competitor whose
+listing gives a narrower purpose; a competitor's business model under a "costs" heading; «es un punto… Además». Countdown review: «suman entre X y Y valoraciones» for a per-app
+range («tienen entre X y Y… cada una»); «cronología de salida» (French calque: «iniciales»); «y por cuánto tiempo» in a heading;
+«Lo recordamos cada vez que aparece» (a promise the page must keep); three «mientras que» in one card; mixed list items
+(«…, y exportar…»). Competitor Apple Watch support: the listing's device list counts (Countdown Buddy names watchOS 11 although its
+description doesn't mention the Watch). Competitor prices: Spanish App Store euro rows only,
 «(App Store de España, consultado el …)» once per page; never US figures converted.
 
 Translationese: title case headings; missing ¿ and ¡; chains of gerunds copied from English -ing («ofreciendo»,
@@ -338,6 +350,9 @@ home, all 21 app pages, about. Native review: none yet, for every page (NATIVE R
 | Tier 2 batch 1: 3 audience pages | 3 writers (Sonnet) | 1 reviewer | n/a | no native review yet |
 | Tier 2 batch 1: local-only screen-time guide | 1 writer (Sonnet), sources saved | 1 reviewer, every source re-fetched, claim by claim | n/a | no native review yet |
 | Tier 2 batch 1: both hubs, llms.txt lines, inbound-link sentences | 1 writer (Sonnet) + main session | 1 wiring reviewer | n/a | no native review yet |
+| Tier 2 batch 2: shogi guide, bill tracker (Fintonic) | 2 writers (Sonnet) | 1 reviewer each; Fintonic listing re-fetched | n/a | no native review yet |
+| Tier 2 batch 2: local-only countdown guide | 1 writer (Sonnet), sources saved | 1 reviewer, sources re-fetched, claim by claim | n/a | no native review yet |
+| Tier 2 batch 2: hub cards, llms.txt lines, AllPaid and Soon. link sentences | main session | 1 wiring reviewer | n/a | no native review yet |
 
 ## Apps still on English screenshots
 
