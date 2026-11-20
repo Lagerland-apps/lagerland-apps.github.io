@@ -803,6 +803,33 @@
     "nl": "/nl/apps/observa/support/",
     "pt": "/pt/apps/observa/support/"
   },
+  "/apps/onehander/": {
+    "de": "/de/apps/onehander/",
+    "en": "/apps/onehander/",
+    "es": "/es/apps/onehander/",
+    "fr": "/fr/apps/onehander/",
+    "it": "/it/apps/onehander/",
+    "nl": "/nl/apps/onehander/",
+    "pt": "/pt/apps/onehander/"
+  },
+  "/apps/onehander/privacy/": {
+    "de": "/de/apps/onehander/privacy/",
+    "en": "/apps/onehander/privacy/",
+    "es": "/es/apps/onehander/privacy/",
+    "fr": "/fr/apps/onehander/privacy/",
+    "it": "/it/apps/onehander/privacy/",
+    "nl": "/nl/apps/onehander/privacy/",
+    "pt": "/pt/apps/onehander/privacy/"
+  },
+  "/apps/onehander/support/": {
+    "de": "/de/apps/onehander/support/",
+    "en": "/apps/onehander/support/",
+    "es": "/es/apps/onehander/support/",
+    "fr": "/fr/apps/onehander/support/",
+    "it": "/it/apps/onehander/support/",
+    "nl": "/nl/apps/onehander/support/",
+    "pt": "/pt/apps/onehander/support/"
+  },
   "/apps/pawza/": {
     "de": "/de/apps/pawza/",
     "en": "/apps/pawza/",

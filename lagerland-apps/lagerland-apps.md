@@ -20,14 +20,14 @@ faq:
   - q: "Where is Lagerland Apps based?"
     a: "Lagerland Apps is based in Finland, in the EU, and publishes its apps worldwide on the App Store under developer ID 1855943133."
   - q: "How is Lagerland Apps funded if there are no ads?"
-    a: "The people who use the apps pay for them. Most apps are free to download, with an optional paid upgrade sold as a subscription, a one-time purchase, or both. Mockly is the one app you pay for up front. The studio sells no advertising and no data."
+    a: "The people who use the apps pay for them. Most apps are free to download, with an optional paid upgrade sold as a subscription, a one-time purchase, or both. Mockly and OneHander are the two apps you pay for up front. The studio sells no advertising and no data."
   - q: "How many apps does Lagerland Apps publish?"
     a: "Lagerland Apps publishes {APP_COUNT} live apps for Apple platforms, covering health and training, daily planning, bills, reading, board games and logic puzzles, tools for App Store developers, and file conversion."
   - q: "Does Lagerland Apps collect any user data?"
     a: "No app contains a third-party analytics or advertising SDK, none requires an account, and none sends your data to a server run by the studio. Your data stays on your device, and the apps that sync use your own iCloud. Apps that need the internet for their job, such as WanderWiki for Wikipedia or the developer tools for App Store Connect, connect to that service directly."
   - q: "What platforms does Lagerland Apps build for?"
     a: "Lagerland Apps builds native apps for iPhone, iPad, Apple Watch, and Mac with Apple's own frameworks, without cross-platform wrappers or Electron. Each app page lists the devices that app runs on."
-last_updated: 2026-10-30
+last_updated: 2026-11-20
 ---
 
 <script type="application/ld+json">
@@ -92,7 +92,7 @@ last_updated: 2026-10-30
     </div>
     <div class="card">
       <div class="card-title">How the apps are paid for</div>
-      <div class="card-text">Most apps are free to download, with an optional upgrade sold as a subscription, a one-time purchase, or both. Mockly is the one app you pay for up front. Every purchase goes through Apple, so you see the price before you confirm, and you manage or cancel a subscription in Settings on iPhone or iPad or in the App Store app on Mac.</div>
+      <div class="card-text">Most apps are free to download, with an optional upgrade sold as a subscription, a one-time purchase, or both. Mockly and OneHander are the two apps you pay for up front. Every purchase goes through Apple, so you see the price before you confirm, and you manage or cancel a subscription in Settings on iPhone or iPad or in the App Store app on Mac.</div>
     </div>
     <div class="card">
       <div class="card-title">Single-purpose tools</div>

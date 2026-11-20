@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-19T09:41:31.383Z",
+    "generated_at": "2026-11-20T17:10:45.063Z",
     "source": "App Store Connect API",
-    "live_app_count": 20,
+    "live_app_count": 21,
     "territories": [
       {
         "code": "USA",
@@ -4587,8 +4587,10 @@
       ]
     },
     "onehander": {
-      "live": false,
-      "platforms": [],
+      "live": true,
+      "platforms": [
+        "iOS"
+      ],
       "app_price": {
         "free": false,
         "prices": {

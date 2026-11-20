@@ -221,6 +221,22 @@ apps:
       - "HealthKit (write entries): save water you log and workouts you record on Apple Watch"
     notes: "On-device pattern detection. Apple Health data never leaves your device."
 
+  - slug: onehander
+    manifest_source: source
+    tracking_declared: false
+    tracking_domains: 0
+    third_party_sdks: 0
+    third_party_sdks_list: []
+    account_required: false
+    network_calls: "Only the web pages and searches you open, loaded by WebKit as in any browser. Searches go to the engine you choose (DuckDuckGo by default). The app has no server of its own and no networking code of its own."
+    data_leaves_device: "Only what any browser sends to the websites you visit."
+    analytics: "None."
+    collected_data: []
+    required_reason_apis:
+      - "UserDefaults (CA92.1)"
+    permissions: []
+    notes: "PrivacyInfo.xcprivacy declares NSPrivacyTracking false with no tracking domains and no collected data types, and Apple's App Store label reads Data Not Collected. Browsing history is not stored. The script that finds video on a page is built into the app and is never downloaded or updated from a server."
+
   - slug: pawza
     manifest_source: source
     tracking_declared: false

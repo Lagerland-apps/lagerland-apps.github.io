@@ -5,7 +5,8 @@
     1. String: "/path/to/img.png"  (generic alt fallback)
     2. Hash:   { src: "/path/to/img.png", alt: "Alt for screen readers" }
     3. Hash:   { src: "/path/to/img.png", caption: "Visible caption (also used as alt)" }
-  Mac apps (hero.device: mac) get wide landscape stamps.
+  Mac apps (hero.device: mac) and apps with `screenshots_landscape: true` (landscape
+  iPhone sets, e.g. OneHander) get wide landscape stamps.
     app  the master (files, device)     tx  the page with the words: screenshot_captions, same order as the master
          list, each item { alt: ..., caption: ... } or a plain string (alt). Default: the master's own alt/caption.
   Files come from the language's folder when it holds the complete set (screenshot-set.html), else English.
@@ -40,7 +41,7 @@
         {%- assign shot_caption = nil -%}
       {%- endif -%}
       {%- if shots_dir != "" -%}{%- assign shot_src = shot_src | replace: shots_from, shots_dir -%}{%- endif -%}
-      <figure class="shot{% if include.app.hero.device == 'mac' %} shot--window{% endif %}">
+      <figure class="shot{% if include.app.hero.device == 'mac' or include.app.screenshots_landscape %} shot--window{% endif %}">
         <div class="shot__paper">
           <img src="{{ shot_src }}" alt="{{ shot_alt | escape }}" loading="lazy" decoding="async">
         </div>

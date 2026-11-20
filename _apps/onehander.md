@@ -4,33 +4,10 @@ slug: onehander
 name: "OneHander"
 tagline: "A web browser for watching video with one hand on iPhone."
 
-# ── UNLISTED: PRE-LAUNCH ──────────────────────────────────────────────────────
-# OneHander is not released yet. `status` is deliberately NOT "live": every
-# listing on this site filters on `where: "status", "live"` (home, /apps/,
-# llms.txt, llms-full.txt, ai-index.json, ai-sitemap.xml, footer,
-# you-might-like, /lagerland-apps/, the /for/ hubs, the language hubs), so this
-# page exists at its URL and appears nowhere else. `sitemap: false` keeps it
-# out of sitemap.xml and `noindex: true` keeps it out of search results.
-#
-# The URLs are needed before release: App Store Connect's Privacy Policy URL
-# is /apps/onehander/privacy/ and its Support URL is /apps/onehander/support/,
-# and App Review opens them.
-#
-# ON LAUNCH: follow ~/Downloads/githubcode/ONEHANDER-LAUNCH.md (outside the
-# repo). In short: re-run the App Store Connect sync, set status to "live",
-# delete `sitemap: false`, `noindex: true` and `prelaunch_platforms` here and on
-# the sub-pages, set the release dates, add the German and French pages and the
-# transparency row, build, audit, push.
-status: upcoming
-sitemap: false
-noindex: true
-# ──────────────────────────────────────────────────────────────────────────────
+status: live
 
 quick_answer: "OneHander is a web browser for iPhone built for watching web video with one hand. A scrubber runs down the edge of the screen: drag it with your thumb to seek, flick it to jump, and the video seeks once when you let go. Start a video on a page and it opens fullscreen in OneHander's own player, with back and forward 10 seconds, play and pause, fit or fill, and mute next to Back, Tabs, and Reload. Clear view hides every bar, and one tap brings them back. Every control moves to the side of the hand you use. OneHander costs {P_APP} once on the App Store and works without an account. The app collects no data and keeps no browsing history. It runs on iPhone with iOS 17 or later."
 category: utilities
-# Pre-launch only: MASTER.md marks iPhone as pending (⏳); the catalog lists live platforms only.
-# Ignored once the catalog has them (_includes/app-facts.html). Delete on launch.
-prelaunch_platforms: ["iOS"]
 
 app_store_url: "https://apps.apple.com/app/id6836704998"
 
@@ -154,6 +131,21 @@ faq:
   - q: "Which languages does OneHander support?"
     a: "OneHander's interface is in English. Web pages show in their own language."
 
+screenshots_landscape: true
+screenshots:
+  - src: "/assets/screenshots/onehander/1.webp"
+    alt: "OneHander in landscape with Clear view on, the scrubber mid-drag on the right edge, and a large timecode showing where the video will land"
+  - src: "/assets/screenshots/onehander/2.webp"
+    alt: "A video page in OneHander, then the same video fullscreen in OneHander's player with its keys beside it"
+  - src: "/assets/screenshots/onehander/3.webp"
+    alt: "OneHander's fullscreen player with back 10 seconds, play, ahead 10 seconds, Fit or Fill, mute, Back, and Tabs in one column"
+  - src: "/assets/screenshots/onehander/4.webp"
+    alt: "Clear view in OneHander: the video fills the screen with every bar hidden and only a small Controls button left"
+  - src: "/assets/screenshots/onehander/5.webp"
+    alt: "OneHander's player twice, with the scrubber and keys on the left edge and then on the right edge"
+  - src: "/assets/screenshots/onehander/6.webp"
+    alt: "OneHander's start page with the search and address field, a quick guide, and the browser keys on the side"
+
 related_apps: ["mediakit", "wanderwiki", "earnlock"]
 
 support:
@@ -161,13 +153,13 @@ support:
   url: "/apps/onehander/support/"
 
 release:
-  first_release: "2026-11-19"
-  last_updated: "2026-11-19"
+  first_release: "2026-11-20"
+  last_updated: "2026-11-20"
   version: "1.0"
 
 show_body: true
 about_heading: "What OneHander is: a browser that turns into a player"
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 ---
 OneHander is a web browser for iPhone made for one job: watching web video with one hand. In most phone browsers the video and the browser take turns. Fullscreen hides Back and Tabs, and the seek bar is a thin line on the far side of the screen from your thumb.
 

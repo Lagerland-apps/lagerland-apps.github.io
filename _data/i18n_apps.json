@@ -925,6 +925,63 @@
    "tagline": "Bereitschaft, Schlaf und HRV aus Apple Health, verständlich erklärt.",
    "url": "/de/apps/observa/"
   },
+  "onehander": {
+   "faq": [
+    {
+     "a": "OneHander ist ein Webbrowser fürs iPhone, gemacht, um Web-Videos mit einer Hand zu schauen. Er bringt einen Scrubber für den Daumen am Bildschirmrand mit, öffnet Videos, die du startest, im eigenen Vollbild-Player, während die Browsertasten auf dem Bildschirm bleiben, und hat mit „Clear view“ eine Ansicht, die alle Leisten ausblendet.",
+     "q": "Was ist OneHander?"
+    },
+    {
+     "a": "Eine Skala mit einem Strich pro Sekunde läuft am linken oder rechten Bildschirmrand entlang. Zieh sie nach oben, um vorzuspulen, und nach unten, um zurückzuspulen, oder wisch kurz und schnell, um weiter zu springen. Beim Ziehen zeigt ein großer Zeitcode das Ziel und die Sprungweite, und das Video springt erst an die Stelle, wenn die Skala zur Ruhe kommt. „Scrubber Speed“ in den Einstellungen legt fest, wie weit ein Wisch das Video bewegt: Fine, Normal oder Fast.",
+     "q": "Wie funktioniert der Scrubber?"
+    },
+    {
+     "a": "OneHander funktioniert mit den HTML5-Videoplayern, die es auf einer Seite erreicht, und auch die Vollbildtaste einer Website öffnet den Player von OneHander. Player, die DRM nutzen oder ihr Videoelement verbergen, kann die App nicht steuern, und manche Websites verhalten sich anders. Läuft eine Website mit ihrem eigenen Player besser, schalte in den Einstellungen „Open Videos in Player“ aus.",
+     "q": "Funktioniert OneHander mit jeder Website?"
+    },
+    {
+     "a": "Ja. Stell „One-Hand Side“ mit der Taste „Switch hand“ in der Navigationsleiste oder in den Einstellungen auf Left, dann wandern der Scrubber, die Tastenspalten und die Taste „Clear view“ an den linken Rand. Im Hochformat kannst du die Tasten außerdem in Reihen unten oder in einer Spalte an der Seite anordnen.",
+     "q": "Kann ich OneHander mit der linken Hand bedienen?"
+    },
+    {
+     "a": "Ja, wenn „Keep Playing in Background“ an ist, und das ist die Standardeinstellung. Der Ton läuft weiter, wenn du die App wechselst oder den Bildschirm sperrst, und er spielt auch, wenn das iPhone stumm geschaltet ist. Schaltest du die Einstellung aus, pausieren Videos, sobald OneHander in den Hintergrund geht.",
+     "q": "Läuft der Ton weiter, wenn ich den Bildschirm sperre?"
+    },
+    {
+     "a": "OneHander hat keine eigene Taste für Bild-in-Bild, weil WebKit, Apples Browser-Engine, Bild-in-Bild nur nach einem Tipp innerhalb der Seite startet. Der Player einer Website kann es trotzdem starten.",
+     "q": "Hat OneHander Bild-in-Bild?"
+    },
+    {
+     "a": "Nein. OneHander spielt Videos auf Webseiten ab und lädt sie weder herunter noch speichert es sie.",
+     "q": "Kann OneHander Videos herunterladen?"
+    },
+    {
+     "a": "Die App blockiert gängige Werbe- und Tracking-Dienste mit einer kurzen eingebauten Liste, die standardmäßig an ist. Die Liste stoppt Anfragen an etwa 100 Werbe- und Tracking-Hosts, wenn eine andere Website sie lädt. Ein vollständiger Werbeblocker ist OneHander nicht. Ausschalten kannst du sie in den Einstellungen mit „Block Ads and Trackers“.",
+     "q": "Blockiert OneHander Werbung?"
+    },
+    {
+     "a": "Nein. OneHander enthält keine Analyse-Tools und keinen Code von Drittanbietern, du legst nie ein Konto an, und Lagerland Apps betreibt keinen Server dafür. Die App speichert keinen Browserverlauf. Deine Einstellungen und, wenn „Reopen Tabs at Launch“ an ist, deine offenen Tabs bleiben auf deinem iPhone. Websites, die du besuchst, behalten wie in jedem Browser ihre eigenen Cookies und Logins, und „Clear Website Data“ in den Einstellungen entfernt sie.",
+     "q": "Erfasst OneHander meine Daten?"
+    },
+    {
+     "a": "OneHander kostet einmalig {P_APP} im App Store. Alle Funktionen sind enthalten, und es gibt keine In-App-Käufe. Der Preis gilt für den deutschen App Store; in anderen Ländern zeigt der App Store beim Kauf deine Landeswährung.",
+     "q": "Was kostet OneHander?"
+    },
+    {
+     "a": "Ein iPhone mit iOS 17 oder neuer. OneHander funktioniert im Hoch- und im Querformat. Webseiten brauchen eine Internetverbindung; lädt eine Seite nicht, zeigt OneHander den Grund und bietet „Try Again“ an. Für iPad oder Mac gibt es die App nicht.",
+     "q": "Was brauche ich für OneHander?"
+    },
+    {
+     "a": "Nein. Die Oberfläche von OneHander gibt es nur auf Englisch. Webseiten erscheinen in ihrer eigenen Sprache.",
+     "q": "Gibt es OneHander auf Deutsch?"
+    }
+   ],
+   "seo": {
+    "description": "Video-Browser für eine Hand am iPhone: Scrubber für den Daumen am Bildschirmrand, Video- und Browsertasten zusammen, Clear view. Einmalkauf, ohne Konto."
+   },
+   "tagline": "Ein Webbrowser fürs iPhone, mit dem du Videos mit einer Hand schaust.",
+   "url": "/de/apps/onehander/"
+  },
   "pawza": {
    "faq": [
     {
@@ -2468,6 +2525,63 @@
    "tagline": "Preparación, sueño y VFC de Salud de Apple, explicados.",
    "url": "/es/apps/observa/"
   },
+  "onehander": {
+   "faq": [
+    {
+     "a": "OneHander es un navegador web para iPhone hecho para ver vídeos de la web con una mano. Añade una cinta para el pulgar en el borde de la pantalla, abre los vídeos que inicias en su propio reproductor a pantalla completa con los controles del navegador todavía en pantalla y tiene «Clear view», una vista que oculta todas las barras.",
+     "q": "¿Qué es OneHander?"
+    },
+    {
+     "a": "Por el borde izquierdo o derecho de la pantalla baja una cinta con marcas de un segundo. Arrástrala hacia arriba para avanzar y hacia abajo para retroceder, o deslízala de golpe para saltar más lejos. Mientras arrastras, un código de tiempo grande muestra el destino y el tamaño del salto, y el vídeo cambia de punto una sola vez, cuando la cinta se detiene. «Scrubber Speed», en los ajustes, fija cuánto mueve el vídeo cada pasada: Fine, Normal o Fast.",
+     "q": "¿Cómo funciona la cinta para moverse por el vídeo?"
+    },
+    {
+     "a": "Funciona con los reproductores de vídeo HTML5 a los que puede llegar en una página, y el botón de pantalla completa de la propia web abre el reproductor de OneHander. Los reproductores que usan DRM o esconden su elemento de vídeo no se pueden controlar, y algunas webs pueden comportarse de otra manera. Si una web funciona mejor con su propio reproductor, desactiva «Open Videos in Player» en los ajustes.",
+     "q": "¿Funciona OneHander con todas las webs?"
+    },
+    {
+     "a": "Sí. Pon «One-Hand Side» en Left con el botón «Switch hand» de la barra de navegación o en los ajustes, y la cinta, las columnas de botones y el botón de «Clear view» pasan al borde izquierdo. En vertical también puedes dejar los botones en filas abajo o en una columna en el lateral.",
+     "q": "¿Puedo usar OneHander con la mano izquierda?"
+    },
+    {
+     "a": "Sí, con «Keep Playing in Background» activado, que es la opción predeterminada. El sonido continúa cuando cambias de app o bloqueas la pantalla, y se oye aunque el iPhone esté en modo silencio. Si desactivas el ajuste, los vídeos se pausan cuando OneHander pasa a segundo plano.",
+     "q": "¿Sigue sonando el vídeo si bloqueo la pantalla?"
+    },
+    {
+     "a": "OneHander no tiene un botón propio de imagen dentro de imagen, porque WebKit, el motor de navegador de Apple, solo la inicia con un toque dentro de la página. El reproductor de la propia web sí puede iniciarla.",
+     "q": "¿Tiene OneHander imagen dentro de imagen?"
+    },
+    {
+     "a": "No. OneHander reproduce los vídeos de las páginas web y no los descarga ni los guarda.",
+     "q": "¿Se pueden descargar vídeos con OneHander?"
+    },
+    {
+     "a": "Bloquea los servicios de anuncios y rastreo más comunes con una lista integrada y breve, activada de forma predeterminada, que corta las peticiones a unos 100 dominios de anuncios y rastreo cuando otra web los carga. No es un bloqueador de anuncios completo. Puedes desactivarla en los ajustes con «Block Ads and Trackers».",
+     "q": "¿Bloquea anuncios OneHander?"
+    },
+    {
+     "a": "No. OneHander no contiene analíticas ni código de terceros, nunca creas una cuenta y Lagerland Apps no mantiene ningún servidor para la app. No guarda historial de navegación. Tus ajustes, y tus pestañas abiertas si «Reopen Tabs at Launch» está activado, se quedan en tu iPhone. Las webs que visitas conservan sus propias cookies y sesiones iniciadas, como en cualquier navegador, y «Clear Website Data», en los ajustes, las borra.",
+     "q": "¿Recopila OneHander mis datos?"
+    },
+    {
+     "a": "OneHander cuesta {P_APP} en un único pago en el App Store. Todas las funciones están incluidas y no tiene compras dentro de la app. Los precios son los del App Store de España; en otros países, el App Store muestra al comprar el precio en tu moneda.",
+     "q": "¿Cuánto cuesta OneHander?"
+    },
+    {
+     "a": "Un iPhone con iOS 17 o posterior. OneHander funciona en vertical y en horizontal. Las páginas web necesitan conexión a internet; cuando una página no carga, OneHander te dice por qué y te ofrece «Try Again» (volver a intentarlo). No está disponible para iPad ni Mac.",
+     "q": "¿Qué necesito para usar OneHander?"
+    },
+    {
+     "a": "No. La interfaz de OneHander está solo en inglés. Las páginas web se muestran en su propio idioma.",
+     "q": "¿Está OneHander en español?"
+    }
+   ],
+   "seo": {
+    "description": "Navegador para ver vídeos en el iPhone con una mano: una cinta en el borde para el pulgar, los controles del vídeo y del navegador juntos, y pago único."
+   },
+   "tagline": "Un navegador para ver vídeos de la web con una mano en el iPhone.",
+   "url": "/es/apps/onehander/"
+  },
   "pawza": {
    "faq": [
     {
@@ -3995,6 +4109,63 @@
    "tagline": "Disponibilité, sommeil et VFC issus d’Apple Santé, expliqués.",
    "url": "/fr/apps/observa/"
   },
+  "onehander": {
+   "faq": [
+    {
+     "a": "OneHander est un navigateur web pour iPhone conçu pour regarder des vidéos web d’une seule main. Il ajoute une réglette pour le pouce sur le bord de l’écran, ouvre les vidéos que vous lancez dans son propre lecteur plein écran, où les commandes du navigateur restent à l’écran, et propose Clear view, qui masque toutes les barres.",
+     "q": "Qu’est-ce que OneHander ?"
+    },
+    {
+     "a": "La réglette (le scrubber) est graduée à la seconde et longe le bord gauche ou droit de l’écran. Faites-la glisser vers le haut pour avancer et vers le bas pour reculer, ou lancez-la d’un geste vif pour sauter plus loin. Pendant le glissement, un grand code temporel affiche la cible et la taille du saut, et la vidéo ne se repositionne qu’une fois, quand la réglette s’immobilise. Dans les réglages, Scrubber Speed définit la distance qu’un glissement fait parcourir à la vidéo : Fine, Normal ou Fast.",
+     "q": "Comment fonctionne la réglette ?"
+    },
+    {
+     "a": "Il fonctionne avec les lecteurs vidéo HTML5 auxquels il peut accéder sur une page, et le bouton plein écran d’un site ouvre le lecteur de OneHander. Les lecteurs qui utilisent des DRM ou masquent leur élément vidéo ne peuvent pas être pilotés, et certains sites peuvent se comporter différemment. Si un site fonctionne mieux avec son propre lecteur, désactivez Open Videos in Player dans les réglages.",
+     "q": "OneHander fonctionne-t-il sur tous les sites ?"
+    },
+    {
+     "a": "Oui. Réglez One-Hand Side sur Left avec la touche Switch hand de la barre de navigation ou dans les réglages : la réglette, les colonnes de touches et le bouton Clear view passent sur le bord gauche. En portrait, vous pouvez aussi garder les touches en rangées en bas ou en une seule colonne sur le côté.",
+     "q": "Puis-je utiliser OneHander de la main gauche ?"
+    },
+    {
+     "a": "Oui, si Keep Playing in Background est activé, ce qui est le cas par défaut. Le son continue quand vous changez d’app ou verrouillez l’écran, même en mode silencieux. Désactivez ce réglage, et les vidéos se mettent en pause quand OneHander passe en arrière-plan.",
+     "q": "Le son continue-t-il quand je verrouille l’écran ?"
+    },
+    {
+     "a": "OneHander n’a pas de bouton Image dans l’image à lui, car WebKit, le moteur de navigateur d’Apple, ne lance Image dans l’image qu’à partir d’un toucher dans la page. Le lecteur d’un site peut toujours le lancer.",
+     "q": "OneHander propose-t-il Image dans l’image ?"
+    },
+    {
+     "a": "Non. OneHander lit les vidéos des pages web, mais il ne les télécharge pas et ne les enregistre pas.",
+     "q": "OneHander peut-il télécharger des vidéos ?"
+    },
+    {
+     "a": "Il bloque les services de publicité et de suivi courants grâce à une courte liste intégrée, activée par défaut, qui arrête les requêtes vers environ 100 hôtes de publicité et de suivi quand un autre site les charge. Ce n’est pas un bloqueur de publicité complet. Pour couper ce blocage, désactivez Block Ads and Trackers dans les réglages.",
+     "q": "OneHander bloque-t-il les publicités ?"
+    },
+    {
+     "a": "Non. OneHander ne contient ni outil d’analyse ni code tiers, vous ne créez jamais de compte, et Lagerland Apps ne fait tourner aucun serveur pour lui. Il ne conserve aucun historique de navigation. Vos réglages, et vos onglets ouverts si Reopen Tabs at Launch est activé, restent sur votre iPhone. Les sites que vous visitez gardent leurs propres cookies et connexions, comme dans tout navigateur, et Clear Website Data, dans les réglages, les supprime.",
+     "q": "OneHander collecte-t-il mes données ?"
+    },
+    {
+     "a": "OneHander coûte {P_APP} en achat unique sur l’App Store. Toutes les fonctions sont comprises, et il n’y a aucun achat intégré. Le prix indiqué est celui de l’App Store français ; dans les autres pays, l’App Store affiche le prix dans votre devise au moment de l’achat.",
+     "q": "Combien coûte OneHander ?"
+    },
+    {
+     "a": "D’un iPhone sous iOS 17 ou version ultérieure. OneHander fonctionne en portrait et en paysage. Les pages web demandent une connexion à Internet ; quand une page ne peut pas se charger, OneHander en indique la raison et propose Try Again. Il n’existe pas pour iPad ni pour Mac.",
+     "q": "De quoi ai-je besoin pour utiliser OneHander ?"
+    },
+    {
+     "a": "Non. L’interface de OneHander n’existe qu’en anglais. Les pages web, elles, s’affichent dans leur propre langue.",
+     "q": "OneHander existe-t-il en français ?"
+    }
+   ],
+   "seo": {
+    "description": "Regardez des vidéos web d’une main sur iPhone : une réglette au bord de l’écran, le lecteur et le navigateur réunis, Clear view. Achat unique, sans compte."
+   },
+   "tagline": "Un navigateur web pour regarder des vidéos d’une seule main sur iPhone.",
+   "url": "/fr/apps/onehander/"
+  },
   "pawza": {
    "faq": [
     {
@@ -5517,6 +5688,63 @@
    },
    "tagline": "Prontezza, sonno e HRV da Salute, spiegati.",
    "url": "/it/apps/observa/"
+  },
+  "onehander": {
+   "faq": [
+    {
+     "a": "OneHander è un browser per iPhone fatto per guardare i video del web con una mano sola. Aggiunge uno scrubber per il pollice sul bordo dello schermo, apre i video che avvii nel suo player a schermo intero con i controlli del browser ancora sullo schermo e ha Clear view, una vista che nasconde tutte le barre.",
+     "q": "Cos’è OneHander?"
+    },
+    {
+     "a": "Lungo il bordo sinistro o destro dello schermo corre un nastro con una tacca per ogni secondo. Trascinalo verso l’alto per andare avanti e verso il basso per tornare indietro, o dagli un colpo veloce per saltare più lontano. Mentre trascini, un grande timecode mostra il punto di arrivo e l’ampiezza del salto, e il video si sposta una volta sola, quando il nastro si ferma. “Scrubber Speed”, nelle impostazioni, decide quanto si sposta il video a ogni gesto: Fine, Normal o Fast.",
+     "q": "Come funziona lo scrubber?"
+    },
+    {
+     "a": "Funziona con i player video HTML5 che riesce a raggiungere nella pagina, e il pulsante a schermo intero di un sito apre il player di OneHander. I player che usano il DRM o nascondono il loro elemento video non si possono controllare, e alcuni siti potrebbero comportarsi in modo diverso. Se un sito funziona meglio con il suo player, disattiva “Open Videos in Player” nelle impostazioni.",
+     "q": "OneHander funziona con tutti i siti?"
+    },
+    {
+     "a": "Sì. Imposta “One-Hand Side” (il lato della mano) su Left con il tasto “Switch hand” nella barra di navigazione o nelle impostazioni, e lo scrubber, le colonne dei tasti e il pulsante Clear view passano sul bordo sinistro. In verticale puoi anche tenere i tasti in file in basso o in un’unica colonna di lato.",
+     "q": "Posso usare OneHander con la mano sinistra?"
+    },
+    {
+     "a": "Sì, se “Keep Playing in Background” è attivo, e lo è per impostazione predefinita. L’audio continua quando passi a un’altra app o blocchi lo schermo, e si sente anche con l’iPhone in modalità silenziosa. Disattiva l’opzione e i video si mettono in pausa quando OneHander passa in background.",
+     "q": "L’audio continua quando blocco lo schermo?"
+    },
+    {
+     "a": "OneHander non ha un suo pulsante Picture in Picture, perché WebKit, il motore web di Apple, avvia Picture in Picture solo con un tocco dentro la pagina. Il player di un sito può comunque avviarlo.",
+     "q": "OneHander ha Picture in Picture?"
+    },
+    {
+     "a": "No. OneHander riproduce i video nelle pagine web e non li scarica né li salva.",
+     "q": "OneHander può scaricare i video?"
+    },
+    {
+     "a": "Blocca i servizi pubblicitari e di tracciamento più diffusi con un breve elenco integrato, attivo per impostazione predefinita, che ferma le richieste verso circa 100 host pubblicitari e di tracciamento quando un altro sito li carica. Non è un ad blocker completo. Puoi disattivarlo nelle impostazioni con “Block Ads and Trackers”.",
+     "q": "OneHander blocca la pubblicità?"
+    },
+    {
+     "a": "No. OneHander non contiene codice di analisi né di terze parti, non crei mai un account e Lagerland Apps non gestisce alcun server per l’app. Non conserva la cronologia di navigazione. Le tue impostazioni, e le schede aperte se “Reopen Tabs at Launch” è attivo, restano sul tuo iPhone. I siti che visiti conservano i propri cookie e i propri login, come in qualsiasi browser, e “Clear Website Data” nelle impostazioni li rimuove.",
+     "q": "OneHander raccoglie i miei dati?"
+    },
+    {
+     "a": "OneHander costa {P_APP} una volta sola su App Store. Tutte le funzioni sono incluse e non ci sono acquisti in-app. I prezzi indicati sono quelli di App Store in Italia; negli altri paesi App Store mostra il prezzo nella tua valuta al momento dell’acquisto.",
+     "q": "Quanto costa OneHander?"
+    },
+    {
+     "a": "Un iPhone con iOS 17 o versioni successive. OneHander funziona in verticale e in orizzontale. Le pagine web hanno bisogno di una connessione a internet; quando una pagina non si carica, OneHander ne mostra il motivo e propone “Try Again”. Non è disponibile per iPad né per Mac.",
+     "q": "Cosa mi serve per usare OneHander?"
+    },
+    {
+     "a": "No. L’interfaccia di OneHander è solo in inglese. Le pagine web compaiono nella loro lingua.",
+     "q": "OneHander è in italiano?"
+    }
+   ],
+   "seo": {
+    "description": "Browser per guardare i video del web su iPhone con una mano: scrubber sul bordo dello schermo, controlli del video e del browser insieme e Clear view."
+   },
+   "tagline": "Un browser per guardare i video con una mano sola, su iPhone.",
+   "url": "/it/apps/onehander/"
   },
   "pawza": {
    "faq": [
@@ -7053,6 +7281,63 @@
    "tagline": "Gereedheid, slaap en HRV uit de Gezondheid-app, uitgelegd.",
    "url": "/nl/apps/observa/"
   },
+  "onehander": {
+   "faq": [
+    {
+     "a": "OneHander is een webbrowser voor iPhone, gemaakt om met één hand video op websites te kijken. De app heeft een scrubber voor je duim aan de rand van het scherm, opent video’s die je start in een eigen schermvullende speler terwijl de browserknoppen in beeld blijven, en heeft ‘Clear view’, dat alle balken verbergt.",
+     "q": "Wat is OneHander?"
+    },
+    {
+     "a": "Langs de linker- of rechterrand van het scherm loopt een strook met een streepje per seconde. Sleep omhoog om vooruit te gaan en omlaag om terug te gaan, of veeg snel om verder te springen. Tijdens het slepen toont een grote tijdcode waar je uitkomt en hoe groot de sprong is, en de video springt pas als de strook tot stilstand komt. Met ‘Scrubber Speed’ in de instellingen bepaal je hoe ver een veeg de video verplaatst: Fine, Normal of Fast.",
+     "q": "Hoe werkt de scrubber?"
+    },
+    {
+     "a": "OneHander werkt met de HTML5-videospelers die de app op een pagina kan bereiken, en de eigen knop voor volledig scherm van een site opent de speler van OneHander. Spelers met DRM of spelers die hun video-element verbergen, kan OneHander niet bedienen, en sommige sites gedragen zich misschien anders. Werkt een site beter met de eigen speler, zet dan ‘Open Videos in Player’ uit in de instellingen.",
+     "q": "Werkt OneHander op elke website?"
+    },
+    {
+     "a": "Ja. Zet ‘One-Hand Side’ op Left met de knop ‘Switch hand’ in de navigatiebalk of in de instellingen, en de scrubber, de kolommen met knoppen en de knop ‘Clear view’ gaan naar de linkerrand. In de staande stand kun je de knoppen ook in rijen onderaan of in één kolom aan de zijkant zetten.",
+     "q": "Kan ik OneHander met mijn linkerhand gebruiken?"
+    },
+    {
+     "a": "Ja, als ‘Keep Playing in Background’ aan staat, en dat is standaard zo. Het geluid speelt door als je van app wisselt of het scherm vergrendelt, ook als je iPhone op stil staat. Zet je de instelling uit, dan pauzeren video’s zodra OneHander naar de achtergrond gaat.",
+     "q": "Speelt het geluid door als ik mijn scherm vergrendel?"
+    },
+    {
+     "a": "OneHander heeft zelf geen knop voor Beeld in beeld, omdat WebKit, de browserengine van Apple, Beeld in beeld alleen start na een tik binnen de pagina. De eigen speler van een site kan het wel starten.",
+     "q": "Heeft OneHander Beeld in beeld?"
+    },
+    {
+     "a": "Nee. OneHander speelt video’s op webpagina’s af en downloadt of bewaart ze niet.",
+     "q": "Kan OneHander video’s downloaden?"
+    },
+    {
+     "a": "OneHander blokkeert veelgebruikte advertentie- en trackingdiensten met een korte ingebouwde lijst. Die staat standaard aan en houdt verzoeken aan ongeveer 100 advertentie- en trackinghosts tegen wanneer een andere site die laadt. Een volwaardige adblocker is het niet. Je zet de lijst uit in de instellingen met ‘Block Ads and Trackers’.",
+     "q": "Blokkeert OneHander advertenties?"
+    },
+    {
+     "a": "Nee. OneHander bevat geen analysetools of code van derden, je maakt nooit een account aan en Lagerland Apps beheert er geen server voor. De app bewaart geen browsegeschiedenis. Je instellingen, en je open tabbladen als ‘Reopen Tabs at Launch’ aan staat, blijven op je iPhone. Websites die je bezoekt, bewaren hun eigen cookies en logins, zoals in elke browser, en ‘Clear Website Data’ in de instellingen verwijdert ze.",
+     "q": "Verzamelt OneHander mijn gegevens?"
+    },
+    {
+     "a": "OneHander kost eenmalig {P_APP} in de App Store. Alle functies zitten erbij en er zijn geen in-app aankopen. De prijs is die van de Nederlandse App Store; in andere landen toont de App Store bij het afrekenen de prijs in je eigen valuta.",
+     "q": "Wat kost OneHander?"
+    },
+    {
+     "a": "Een iPhone met iOS 17 of nieuwer. OneHander werkt in de staande en de liggende stand. Webpagina’s hebben een internetverbinding nodig; kan een pagina niet laden, dan laat OneHander zien waarom en biedt de app ‘Try Again’ aan. OneHander is er niet voor iPad of Mac.",
+     "q": "Wat heb ik nodig voor OneHander?"
+    },
+    {
+     "a": "Nee. De interface van OneHander is alleen in het Engels. Webpagina’s verschijnen in hun eigen taal.",
+     "q": "Is OneHander in het Nederlands?"
+    }
+   ],
+   "seo": {
+    "description": "Video kijken met één hand op je iPhone: een scrubber voor je duim aan de schermrand, video- en browserknoppen samen en Clear view. Eenmalig, geen account."
+   },
+   "tagline": "Een webbrowser om op je iPhone met één hand video te kijken.",
+   "url": "/nl/apps/onehander/"
+  },
   "pawza": {
    "faq": [
     {
@@ -8571,6 +8856,63 @@
    },
    "tagline": "Prontidão, sono e VFC da app Saúde, explicados.",
    "url": "/pt/apps/observa/"
+  },
+  "onehander": {
+   "faq": [
+    {
+     "a": "O OneHander é um navegador para iPhone feito para ver vídeos da web com uma só mão. Junta uma régua para o polegar no rebordo do ecrã, abre os vídeos que se iniciam no seu próprio leitor em ecrã inteiro, com os controlos do navegador ainda no ecrã, e tem o modo «Clear view», que esconde todas as barras.",
+     "q": "O que é o OneHander?"
+    },
+    {
+     "a": "Uma régua com marcas de um segundo percorre o rebordo esquerdo ou direito do ecrã. Arrasta-se para cima para avançar e para baixo para recuar, ou dá-se um impulso rápido para saltar mais longe. Enquanto se arrasta, o tempo em algarismos grandes mostra o destino e o tamanho do salto, e o vídeo muda de posição uma só vez, quando a régua para. «Scrubber Speed», nas definições da app, define quanto um gesto move o vídeo: Fine, Normal ou Fast.",
+     "q": "Como funciona a régua de procura?"
+    },
+    {
+     "a": "Funciona com os leitores de vídeo HTML5 a que consegue chegar numa página, e o botão de ecrã inteiro de um site abre o leitor do OneHander. Os leitores que usam DRM ou escondem o elemento de vídeo não podem ser controlados, e alguns sites podem comportar-se de outra forma. Se um site funcionar melhor com o seu próprio leitor, desative «Open Videos in Player» nas definições da app.",
+     "q": "O OneHander funciona em todos os sites?"
+    },
+    {
+     "a": "Sim. Defina «One-Hand Side» como Left com o botão «Switch hand» da barra de navegação ou nas definições da app, e a régua, as colunas de botões e o botão «Clear view» passam para o rebordo esquerdo. Na vertical, os botões também podem ficar em filas na parte de baixo ou numa só coluna de lado.",
+     "q": "O OneHander tem modo para canhotos?"
+    },
+    {
+     "a": "Sim, com «Keep Playing in Background» ativado, que é a predefinição. O som continua quando se muda de app ou se bloqueia o ecrã, e ouve-se mesmo com o modo silencioso ativado. Com a definição desativada, os vídeos ficam em pausa quando o OneHander passa para segundo plano.",
+     "q": "O som continua a tocar com o ecrã bloqueado?"
+    },
+    {
+     "a": "O OneHander não tem um botão de picture-in-picture próprio, porque o WebKit, o motor de navegação da Apple, só inicia o picture-in-picture a partir de um toque dentro da página. O leitor do próprio site pode iniciá-lo na mesma.",
+     "q": "O OneHander tem picture-in-picture?"
+    },
+    {
+     "a": "Não. O OneHander reproduz vídeos em páginas web e não os descarrega nem guarda.",
+     "q": "O OneHander descarrega vídeos?"
+    },
+    {
+     "a": "Bloqueia serviços comuns de anúncios e seguimento com uma lista curta incluída na app, ativa por predefinição, que trava os pedidos a cerca de 100 servidores de anúncios e seguimento quando outro site os carrega. Não é um bloqueador de anúncios completo. Pode ser desativada nas definições da app, em «Block Ads and Trackers».",
+     "q": "O OneHander bloqueia anúncios?"
+    },
+    {
+     "a": "Não. O OneHander não contém código de análise nem de terceiros, nunca é preciso criar conta e a Lagerland Apps não mantém nenhum servidor para ele. Não guarda histórico de navegação. As definições e, com «Reopen Tabs at Launch» ativado, os separadores abertos ficam no iPhone. Os sites visitados guardam os seus próprios cookies e inícios de sessão, como em qualquer navegador, e «Clear Website Data», nas definições da app, remove-os.",
+     "q": "O OneHander recolhe os meus dados?"
+    },
+    {
+     "a": "O OneHander custa {P_APP} uma só vez na App Store. Inclui todas as funcionalidades e não tem compras integradas. O preço indicado é o da App Store de Portugal; noutros países, a App Store mostra o preço na moeda local no momento da compra.",
+     "q": "Quanto custa o OneHander?"
+    },
+    {
+     "a": "Um iPhone com iOS 17 ou posterior. O OneHander funciona na vertical e na horizontal. As páginas web precisam de ligação à internet; quando uma página não carrega, o OneHander mostra o motivo e propõe «Try Again». Não está disponível para iPad nem para Mac.",
+     "q": "O que é preciso para usar o OneHander?"
+    },
+    {
+     "a": "Não. A interface do OneHander está apenas em inglês. As páginas web aparecem no seu próprio idioma.",
+     "q": "O OneHander está em português?"
+    }
+   ],
+   "seo": {
+    "description": "Navegador de vídeos para iPhone com uma mão: régua no rebordo do ecrã, controlos do vídeo e do navegador juntos e Clear view. Compra única, sem conta."
+   },
+   "tagline": "Um navegador para ver vídeos da web no iPhone com uma só mão.",
+   "url": "/pt/apps/onehander/"
   },
   "pawza": {
    "faq": [

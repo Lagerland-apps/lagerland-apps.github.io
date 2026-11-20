@@ -2,7 +2,7 @@
 layout: default
 ref: /lagerland-apps/
 permalink: /es/lagerland-apps/
-translated_from: 2026-10-30
+translated_from: 2026-11-20
 title: "Sobre Lagerland Apps, desarrollador independiente"
 quick_answer: "Lagerland Apps es un estudio de una sola persona en Finlandia que crea apps para Apple. Un único desarrollador independiente diseña, programa, prueba y da soporte a sus {APP_COUNT} apps para iPhone, iPad, Apple Watch y Mac. Ninguna app incluye SDK de publicidad o de analítica, solicita el IDFA ni te pide crear una cuenta, y ninguna envía tus datos a un servidor del estudio. El estudio se financia con lo que pagan quienes compran las apps."
 seo:
@@ -20,14 +20,14 @@ faq:
   - q: "¿Dónde tiene su sede Lagerland Apps?"
     a: "Lagerland Apps tiene su sede en Finlandia, en la UE, y publica sus apps en todo el mundo en el App Store con el identificador de desarrollador 1855943133."
   - q: "¿Cómo se financia Lagerland Apps si no hay publicidad?"
-    a: "Quienes usan las apps son quienes las pagan. La mayoría se descargan gratis y ofrecen una mejora opcional de pago, que se vende como suscripción, como compra única o de las dos formas. Mockly es la única que pagas al descargarla. El estudio no vende publicidad ni datos."
+    a: "Quienes usan las apps son quienes las pagan. La mayoría se descargan gratis y ofrecen una mejora opcional de pago, que se vende como suscripción, como compra única o de las dos formas. Mockly y OneHander son las dos que pagas al descargarlas. El estudio no vende publicidad ni datos."
   - q: "¿Cuántas apps publica Lagerland Apps?"
     a: "Lagerland Apps publica {APP_COUNT} apps para las plataformas de Apple, que abarcan salud y entrenamiento, planificación del día, facturas, lectura, juegos de mesa y de lógica, herramientas para quienes publican en el App Store y conversión de archivos."
   - q: "¿Lagerland Apps recopila tus datos?"
     a: "Ninguna app incluye un SDK de analítica o de publicidad de terceros, ninguna exige una cuenta y ninguna envía tus datos a un servidor del estudio. Tus datos se quedan en tu dispositivo, y las apps que sincronizan usan tu propio iCloud. Las apps que necesitan internet para su función, como WanderWiki con Wikipedia o las herramientas para desarrolladores con App Store Connect, se conectan directamente a ese servicio."
   - q: "¿Para qué dispositivos desarrolla Lagerland Apps?"
     a: "Lagerland Apps desarrolla apps nativas para iPhone, iPad, Apple Watch y Mac con los frameworks propios de Apple, sin capas multiplataforma ni Electron. La página de cada app indica en qué dispositivos funciona."
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 ---
 {%- include t.html -%}
 
@@ -103,7 +103,7 @@ last_updated: 2026-11-19
     </div>
     <div class="card">
       <div class="card-title">Cómo se financian las apps</div>
-      <div class="card-text">La mayoría de las apps se descargan gratis y ofrecen una mejora opcional, que se vende como suscripción, como compra única o de las dos formas. Mockly es la única que pagas al descargarla. Todas las compras pasan por Apple, así que ves el precio antes de confirmar, y gestionas o cancelas una suscripción en la app Ajustes del iPhone o el iPad, o en la app App Store del Mac.</div>
+      <div class="card-text">La mayoría de las apps se descargan gratis y ofrecen una mejora opcional, que se vende como suscripción, como compra única o de las dos formas. Mockly y OneHander son las dos que pagas al descargarlas. Todas las compras pasan por Apple, así que ves el precio antes de confirmar, y gestionas o cancelas una suscripción en la app Ajustes del iPhone o el iPad, o en la app App Store del Mac.</div>
     </div>
     <div class="card">
       <div class="card-title">Una app, una tarea</div>
