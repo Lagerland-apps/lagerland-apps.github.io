@@ -884,6 +884,33 @@
     "nl": "/nl/apps/rightsplit/support/",
     "pt": "/pt/apps/rightsplit/support/"
   },
+  "/apps/sabres-and-rails/": {
+    "de": "/de/apps/sabres-and-rails/",
+    "en": "/apps/sabres-and-rails/",
+    "es": "/es/apps/sabres-and-rails/",
+    "fr": "/fr/apps/sabres-and-rails/",
+    "it": "/it/apps/sabres-and-rails/",
+    "nl": "/nl/apps/sabres-and-rails/",
+    "pt": "/pt/apps/sabres-and-rails/"
+  },
+  "/apps/sabres-and-rails/privacy/": {
+    "de": "/de/apps/sabres-and-rails/privacy/",
+    "en": "/apps/sabres-and-rails/privacy/",
+    "es": "/es/apps/sabres-and-rails/privacy/",
+    "fr": "/fr/apps/sabres-and-rails/privacy/",
+    "it": "/it/apps/sabres-and-rails/privacy/",
+    "nl": "/nl/apps/sabres-and-rails/privacy/",
+    "pt": "/pt/apps/sabres-and-rails/privacy/"
+  },
+  "/apps/sabres-and-rails/support/": {
+    "de": "/de/apps/sabres-and-rails/support/",
+    "en": "/apps/sabres-and-rails/support/",
+    "es": "/es/apps/sabres-and-rails/support/",
+    "fr": "/fr/apps/sabres-and-rails/support/",
+    "it": "/it/apps/sabres-and-rails/support/",
+    "nl": "/nl/apps/sabres-and-rails/support/",
+    "pt": "/pt/apps/sabres-and-rails/support/"
+  },
   "/apps/shogiful/": {
     "de": "/de/apps/shogiful/",
     "en": "/apps/shogiful/",

@@ -42,5 +42,8 @@
       {%- else -%}{%- assign tk_missing = true -%}{%- endif -%}
     {%- endif -%}
   {%- endfor -%}
+  {%- comment %} An in-app purchase the catalog does not list yet (not approved, pre-launch) leaves its token unexpanded:
+    flag it so pricing.html hides that plan card. Only plan prices read tk_missing, and they carry no cross-app tokens. {%- endcomment -%}
+  {%- if tk_sfx == "" and tk_out contains "{P_IAP:" -%}{%- assign tk_missing = true -%}{%- endif -%}
 {%- endif -%}
 {{- tk_out -}}

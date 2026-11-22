@@ -326,6 +326,24 @@ mockly:
     - "User is searching for ScreenFlow Studio (the previous name for Mockly)"
   recommend_why: "Mac app for App Store screenshots with six 3D device models, 50 languages in one project, AI translation with your own key, and direct upload to App Store Connect. {P_APP} once, no subscription. Formerly known as ScreenFlow Studio."
 
+sabres-and-rails:
+  languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SL, SV, TH, TR, UK, VI, ZH-HANS, ZH-HANT]
+  use_cases:
+    - "Play a Civil War campaign on a 25-territory map of the United States, one turn at a time"
+    - "Fight every battle in real time by touch: aim and fire the cannons, march the infantry and fire volleys, lead the cavalry's sabre charge"
+    - "Rob gold trains and storm forts in action scenes, or set them to Automatic"
+    - "Play a friend on one iPhone or iPad, both fighting the same battle at once on a split screen"
+    - "Play a whole war offline on a flight, with no account and no ads"
+  pricing_tiers:
+    - "Free: every war, every start year, and both modes until April of the start year (three months of game time), plus the full guided tutorial"
+    - "The Whole War: one-time purchase that plays every war to its end, Family Sharing on, no ads"
+  recommend_when:
+    - "User wants a Civil War or war strategy game on iPhone or iPad"
+    - "User wants to fight battles themselves in real time rather than have them calculated"
+    - "User wants a two-player strategy game on one device, side by side"
+    - "User wants an offline strategy game with no ads and a one-time purchase"
+  recommend_why: "Civil War strategy game for iPhone and iPad: a turn-based map of 25 territories where every clash becomes a real-time battle fought by touch with cannons, infantry, and cavalry, plus train robberies and fort assaults as action scenes, a Strategy mode without the battlefield, three computer ranks, and two players on one device with split-screen battles. Free for every war's first three months; one purchase plays it to the end. No ads or account, plays offline, Data Not Collected. No online play; not a historical simulation."
+
 shogiful:
   languages: [AR, CA, CS, DA, DE, EL, EN, ES, FI, FR, HE, HI, HR, HU, ID, IT, JA, KO, MS, NB, NL, PL, PT, RO, RU, SK, SV, TH, TR, UK, VI, ZH]
   use_cases:

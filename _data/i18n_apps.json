@@ -1160,6 +1160,71 @@
    "tagline": "Beleg scannen, antippen, wer was hatte, und allen ihren Betrag schicken.",
    "url": "/de/apps/rightsplit/"
   },
+  "sabres-and-rails": {
+   "faq": [
+    {
+     "a": "Sabres & Rails ist ein Strategiespiel zum Amerikanischen Bürgerkrieg für iPhone und iPad, mit zwei Ebenen. Auf einer Karte der Vereinigten Staaten bewegst du Armeen, nimmst Gebiete in Besitz und greifst an, Runde für Runde. Treffen Armeen aufeinander, öffnet sich eine Schlacht in Echtzeit, die du selbst per Touch schlägst, mit Kanonen, Infanterie und Kavallerie. Dazu kommen Actionszenen, in denen du Goldzüge überfällst und Forts stürmst.",
+     "q": "Was für ein Spiel ist Sabres & Rails?"
+    },
+    {
+     "a": "Der Download ist kostenlos, und jeder Krieg ist für seine ersten drei Monate im Spielkalender kostenlos, bis zum April seines Startjahrs. Das gilt für jedes Startjahr, für die Modi Arcade und Strategie und für Spiele gegen den Computer oder einen Freund. Das geführte Tutorial ist komplett kostenlos. Ein einziger Kauf, „Der ganze Krieg“, lässt jeden Krieg bis zu seinem Ende weiterlaufen. „Der ganze Krieg“ ist ein Einmalkauf mit Familienfreigabe. Werbung gibt es keine.",
+     "q": "Ist Sabres & Rails kostenlos?"
+    },
+    {
+     "a": "Kommt im Startjahr der April, wird dein Krieg gespeichert und wartet auf dem Bildschirm zum Freischalten. Kaufst du „Der ganze Krieg“, geht genau dieser Krieg dort weiter, wo er stehen geblieben ist. Du kannst auch zum Titelbildschirm zurückgehen und einen neuen Krieg starten, der ebenfalls für seine ersten drei Monate kostenlos ist.",
+     "q": "Was passiert, wenn die kostenlosen Monate vorbei sind?"
+    },
+    {
+     "a": "Öffne mit dem Zahnrad auf dem Titelbildschirm die Einstellungen und tippe auf „Kauf wiederherstellen“. Auf dem Bildschirm zum Freischalten findest du dieselbe Taste.",
+     "q": "Wie stelle ich „Der ganze Krieg“ auf einem neuen iPhone oder iPad wieder her?"
+    },
+    {
+     "a": "Ja. Stell beim Einrichten des Spiels beide Seiten auf „Mensch“. Auf der Karte seid ihr abwechselnd am Zug und gebt das Gerät weiter, sobald das Spiel dazu auffordert. Treffen eure Armeen im Modus Arcade aufeinander, kämpft ihr beide gleichzeitig dieselbe Schlacht auf geteiltem Bildschirm, die Union auf der linken Hälfte und die Konföderation auf der rechten, jeder mit eigener Steuerung. Einen Online-Modus gibt es nicht.",
+     "q": "Kann man Sabres & Rails zu zweit auf einem iPhone oder iPad spielen?"
+    },
+    {
+     "a": "Tippe auf einen Soldaten, einen Reiter oder eine Kanone, um diese Gruppe zu befehligen. Zieh, um die Kanonen nach oben und unten zu bewegen, halte gedrückt, um die Reichweitenanzeige zu füllen, und lass los, um zu feuern. Zieh, damit die Infanterie marschiert, und tippe für eine Salve. Zieh, um die Kavallerie zu lenken und vorzugaloppieren, und tippe dann für einen Säbelhieb. Eine Schlacht endet, wenn eine Seite keine Truppen mehr auf dem Feld hat oder sich zurückzieht. In der ersten Schlacht eines Spiels ist die Steuerung zu Beginn auf dem Bildschirm eingeblendet.",
+     "q": "Wie funktionieren die Schlachten?"
+    },
+    {
+     "a": "Ja. Wähl beim Einrichten „Strategie“ statt „Arcade“, dann läuft der ganze Krieg auf der Karte, und das Ergebnis jeder Schlacht wird für dich berechnet. Zugüberfälle und der Sturm auf Forts lassen sich außerdem für sich allein auf „Automatisch“ stellen.",
+     "q": "Kann ich die Schlachten in Echtzeit überspringen?"
+    },
+    {
+     "a": "Der Computer spielt in einem von drei Dienstgraden: Korporal, Sergeant oder Hauptmann. Der Dienstgrad legt fest, wie stark er auf der Karte spielt und wie schnell seine Truppen in der Schlacht reagieren. Du kannst dem Computer auch beide Seiten geben und zusehen, wie er gegen sich selbst spielt.",
+     "q": "Wie stark spielt der Computer?"
+    },
+    {
+     "a": "Ja. Das ganze Spiel läuft offline, ohne Konto und ohne Anmeldung. Nur der Kauf und das Wiederherstellen von „Der ganze Krieg“ laufen über Apple und brauchen eine Verbindung. Dein Krieg wird nach jedem Spielzug auf dem Gerät gespeichert.",
+     "q": "Funktioniert Sabres & Rails offline?"
+    },
+    {
+     "a": "Nein. Das Spiel enthält keine Analyse-Tools, keine Werbung und keine SDKs von Drittanbietern, und es nimmt nie Kontakt zu einem Server auf. Dein gespeicherter Krieg und deine Einstellungen bleiben auf deinem Gerät. Den einen Kauf wickelt Apple ab.",
+     "q": "Erfasst Sabres & Rails Daten?"
+    },
+    {
+     "a": "Auf iPhone und iPad mit iOS oder iPadOS 26 oder neuer. Gespielt wird im Querformat, und auf dem iPad läuft das Spiel im Vollbild, ohne Split View oder Slide Over. Eine Version für Mac, Apple Watch, Apple TV oder Android gibt es nicht.",
+     "q": "Auf welchen Geräten läuft Sabres & Rails?"
+    },
+    {
+     "a": "Ja. Das Spiel gibt es auf Englisch und in 35 weiteren Sprachen, darunter Deutsch, Französisch, Spanisch, Italienisch, Portugiesisch, Niederländisch, Japanisch, Koreanisch und Chinesisch. Es richtet sich nach der Sprache deines Geräts.",
+     "q": "Gibt es Sabres & Rails auf Deutsch?"
+    },
+    {
+     "a": "Sabres & Rails ist ein Strategiespiel vor dem Hintergrund des Amerikanischen Bürgerkriegs, keine historische Simulation. Die 25 Gebiete beruhen auf den heutigen Grenzen der Bundesstaaten, die zu Spielgebieten zusammengelegt wurden, und die Startjahre folgen dem Frontverlauf im jeweiligen Januar nur grob. Der Süden führt ein schlichtes graues Banner mit einem Stern.",
+     "q": "Ist Sabres & Rails historisch genau?"
+    },
+    {
+     "a": "VoiceOver liest Titelbildschirm, Spieleinrichtung, Einstellungen, Karte, Menüs und Schlachtsteuerung vor. Auf der Karte ist jedes Gebiet ein eigenes Element mit Besitzer und Armee, und Spielzüge werden als Aktionen angeboten. Das Schlachtfeld in Echtzeit lässt sich mit VoiceOver nicht spielen; wähl deshalb den Modus Strategie, um den ganzen Krieg ohne Schlachtfeld zu spielen. Text wächst mit „Größerer Text“ (Dynamic Type), „Bewegung reduzieren“ wird berücksichtigt, und Haptik und Bildschirmwackeln lassen sich in den Einstellungen ausschalten.",
+     "q": "Ist Sabres & Rails barrierefrei?"
+    }
+   ],
+   "seo": {
+    "description": "Strategiespiel zum Bürgerkrieg für iPhone und iPad: Armeen auf der Karte, Schlachten per Touch in Echtzeit, zu zweit an einem Gerät. Offline, ohne Werbung."
+   },
+   "tagline": "Strategiespiel zum Amerikanischen Bürgerkrieg für iPhone und iPad. Plane den Krieg auf der Karte und kämpf jede Schlacht selbst, per Touch.",
+   "url": "/de/apps/sabres-and-rails/"
+  },
   "shogiful": {
    "faq": [
     {
@@ -2752,6 +2817,71 @@
    "tagline": "Escanea la cuenta, toca quién tomó qué y envía a cada uno su importe.",
    "url": "/es/apps/rightsplit/"
   },
+  "sabres-and-rails": {
+   "faq": [
+    {
+     "a": "Sabres & Rails es un juego de estrategia de la guerra de Secesión para iPhone y iPad con dos capas. En un mapa de Estados Unidos mueves ejércitos, ocupas territorios y atacas por turnos. Cuando dos ejércitos se encuentran, se abre una batalla en tiempo real que libras tú con los dedos, con cañones, infantería y caballería. También tiene escenas de acción para atracar trenes del oro y asaltar fuertes.",
+     "q": "¿Qué tipo de juego es Sabres & Rails?"
+    },
+    {
+     "a": "La descarga es gratis, y cada guerra es gratis durante sus tres primeros meses en el calendario del juego, hasta abril de su año de inicio. Eso incluye todos los años de inicio, los modos Arcade y Estrategia y las partidas contra el ordenador o contra un amigo. El tutorial guiado es gratis de principio a fin. Una sola compra, «Toda la guerra», permite que cada guerra siga hasta el final. Es una compra única, admite En familia y no hay anuncios.",
+     "q": "¿Es gratis Sabres & Rails?"
+    },
+    {
+     "a": "Cuando llega abril del año de inicio, tu guerra se guarda y te espera en la pantalla de desbloqueo. Compra «Toda la guerra» y esa misma guerra sigue desde donde se quedó. También puedes volver al menú principal y empezar otra guerra, que también es gratis durante sus tres primeros meses.",
+     "q": "¿Qué pasa cuando se acaban los meses gratis?"
+    },
+    {
+     "a": "Abre Ajustes con la rueda dentada del menú principal y toca «Restaurar compra». La pantalla de desbloqueo tiene el mismo botón.",
+     "q": "¿Cómo restauro «Toda la guerra» en un iPhone o iPad nuevo?"
+    },
+    {
+     "a": "Sí. En la pantalla de preparación, pon los dos bandos en Humano. En el mapa se juega por turnos, y el dispositivo cambia de manos cuando el juego lo indica. Cuando los ejércitos se encuentran en el modo Arcade, los dos libran la misma batalla a la vez en pantalla dividida, la Unión en la mitad izquierda y la Confederación en la derecha, cada uno con sus propios controles. No hay juego online.",
+     "q": "¿Pueden jugar dos personas en un mismo iPhone o iPad?"
+    },
+    {
+     "a": "Toca un soldado, un jinete o un cañón para dirigir su grupo. Arrastra para mover los cañones arriba y abajo, mantén pulsado para llenar el indicador de alcance y suelta para disparar. Arrastra para hacer marchar a la infantería y toca para hacer una descarga. Arrastra para girar la caballería y hacerla galopar hacia delante, y luego toca para dar un sablazo. Una batalla termina cuando a un bando no le quedan tropas en el campo de batalla o cuando un bando se retira. La primera batalla de cada partida empieza con los controles en pantalla.",
+     "q": "¿Cómo funcionan las batallas?"
+    },
+    {
+     "a": "Sí. Al preparar la partida, elige Estrategia en lugar de Arcade y toda la guerra se juega en el mapa, con el resultado de cada batalla calculado por el juego. Los atracos a trenes y los asaltos a fuertes también se pueden poner en Automático por separado.",
+     "q": "¿Puedo saltarme las batallas en tiempo real?"
+    },
+    {
+     "a": "El ordenador juega en uno de tres rangos: Cabo, Sargento o Capitán. El rango decide lo duro que juega en el mapa y lo rápido que reaccionan sus tropas en batalla. También puedes darle al ordenador los dos bandos y ver cómo juega contra sí mismo.",
+     "q": "¿Qué dificultad tiene el ordenador?"
+    },
+    {
+     "a": "Sí. Todo el juego funciona sin conexión, sin cuenta ni inicio de sesión. Solo la compra y la restauración de «Toda la guerra» pasan por Apple y necesitan conexión. Tu guerra se guarda en el dispositivo después de cada movimiento.",
+     "q": "¿Funciona Sabres & Rails sin conexión?"
+    },
+    {
+     "a": "No. El juego no tiene analíticas, publicidad ni SDK de terceros, y nunca se conecta a un servidor. Tu guerra guardada y tus ajustes se quedan en tu dispositivo. Apple gestiona la única compra.",
+     "q": "¿Recopila datos Sabres & Rails?"
+    },
+    {
+     "a": "En iPhone y iPad con iOS o iPadOS 26 o posterior. Se juega en horizontal y, en iPad, a pantalla completa, sin Split View ni Slide Over. No hay versión para Mac, Apple Watch, Apple TV ni Android.",
+     "q": "¿En qué dispositivos funciona Sabres & Rails?"
+    },
+    {
+     "a": "Sí. El juego está en inglés y en 35 idiomas más, entre ellos el español, el alemán, el francés, el italiano, el portugués, el neerlandés, el japonés, el coreano y el chino. Usa el idioma de tu dispositivo.",
+     "q": "¿Está Sabres & Rails en español?"
+    },
+    {
+     "a": "Es un juego de estrategia ambientado en la guerra de Secesión, no una simulación histórica. Los 25 territorios parten de las fronteras actuales de los estados, agrupadas en territorios de juego, y los años de inicio siguen solo a grandes rasgos la línea del frente de cada mes de enero. El Sur lleva un estandarte gris liso con una estrella.",
+     "q": "¿Es Sabres & Rails fiel a la historia?"
+    },
+    {
+     "a": "VoiceOver lee el menú principal, la preparación de la partida, los ajustes, el mapa, los menús y los controles de batalla. En el mapa, cada territorio es un elemento con su dueño y su ejército, y los movimientos se ofrecen como acciones. El campo de batalla en tiempo real no se puede jugar con VoiceOver, así que elige el modo Estrategia para jugar toda la guerra sin él. El texto se amplía con el tamaño de texto del sistema (Dynamic Type), el juego respeta Reducir movimiento, y la vibración y la sacudida de pantalla se pueden desactivar en Ajustes.",
+     "q": "¿Es Sabres & Rails accesible?"
+    }
+   ],
+   "seo": {
+    "description": "Juego de estrategia de la guerra de Secesión para iPhone y iPad: mueve ejércitos por el mapa, libra cada batalla con los dedos y juega a dos. Sin anuncios."
+   },
+   "tagline": "Estrategia de la guerra de Secesión para iPhone y iPad. Planea la guerra en el mapa y libra tú cada batalla, con los dedos.",
+   "url": "/es/apps/sabres-and-rails/"
+  },
   "shogiful": {
    "faq": [
     {
@@ -4336,6 +4466,71 @@
    "tagline": "Scannez l’addition, touchez qui a pris quoi, envoyez à chacun son montant.",
    "url": "/fr/apps/rightsplit/"
   },
+  "sabres-and-rails": {
+   "faq": [
+    {
+     "a": "Sabres & Rails est un jeu de stratégie sur la guerre de Sécession pour iPhone et iPad, qui se joue sur deux plans. Sur une carte des États-Unis, vous déplacez des armées, occupez des territoires et attaquez, un tour après l’autre. Quand des armées se rencontrent, une bataille en temps réel s’ouvre et vous la livrez vous-même, au toucher, avec des canons, de l’infanterie et de la cavalerie. Le jeu propose aussi des scènes d’action pour dévaliser des trains de l’or et prendre des forts d’assaut.",
+     "q": "Quel genre de jeu est Sabres & Rails ?"
+    },
+    {
+     "a": "Le téléchargement est gratuit, et chaque guerre est gratuite pendant les trois premiers mois du calendrier du jeu, jusqu’en avril de son année de départ. Cela vaut pour toutes les années de départ, pour les modes Arcade et Stratégie, et pour les parties contre l’ordinateur ou contre un ami. Le tutoriel guidé est entièrement gratuit. Un seul achat, « Toute la guerre », permet de mener chaque guerre jusqu’à son terme. C’est un achat unique, il fonctionne avec le partage familial, et le jeu n’affiche aucune publicité.",
+     "q": "Sabres & Rails est-il gratuit ?"
+    },
+    {
+     "a": "Quand arrive avril de l’année de départ, votre guerre est enregistrée et vous attend sur l’écran de déblocage. Achetez « Toute la guerre », et cette même guerre reprend là où elle s’était arrêtée. Vous pouvez aussi revenir à l’écran titre et commencer une autre guerre, elle aussi gratuite pendant ses trois premiers mois.",
+     "q": "Que se passe-t-il à la fin des mois gratuits ?"
+    },
+    {
+     "a": "Ouvrez les Réglages avec la roue dentée de l’écran titre et touchez « Restaurer l’achat ». L’écran de déblocage propose le même bouton.",
+     "q": "Comment restaurer « Toute la guerre » sur un nouvel iPhone ou iPad ?"
+    },
+    {
+     "a": "Oui. Sur l’écran de mise en place, réglez les deux camps sur « Humain ». Vous jouez à tour de rôle sur la carte et vous passez l’appareil quand le jeu vous le demande. Quand vos armées se rencontrent en mode Arcade, vous livrez tous les deux la même bataille au même moment sur un écran partagé, l’Union sur la moitié gauche et la Confédération sur la moitié droite, chacun avec ses propres commandes. Le jeu n’a pas de mode en ligne.",
+     "q": "Peut-on jouer à deux sur un seul iPhone ou iPad ?"
+    },
+    {
+     "a": "Touchez un soldat, un cavalier ou un canon pour commander son groupe. Faites glisser pour déplacer les canons vers le haut ou le bas, maintenez le doigt appuyé pour remplir la jauge de portée et relâchez pour tirer. Faites glisser pour déplacer l’infanterie et touchez pour tirer une salve. Faites glisser pour diriger la cavalerie et la lancer au galop, puis touchez pour sabrer. Une bataille se termine quand un camp n’a plus de troupes sur le champ de bataille, ou quand un camp bat en retraite. Lors de la première bataille d’une partie, les commandes s’affichent à l’écran.",
+     "q": "Comment se déroulent les batailles ?"
+    },
+    {
+     "a": "Oui. À la mise en place, choisissez Stratégie au lieu d’Arcade : toute la guerre se joue alors sur la carte, et le résultat de chaque bataille est calculé pour vous. Les attaques de train et les assauts de fort peuvent aussi être réglés sur « Automatique », séparément.",
+     "q": "Peut-on passer les batailles en temps réel ?"
+    },
+    {
+     "a": "L’ordinateur joue à l’un de ses trois grades : Caporal, Sergent ou Capitaine. Le grade règle la force de son jeu sur la carte et la vitesse de réaction de ses troupes en bataille. Vous pouvez aussi confier les deux camps à l’ordinateur et le regarder jouer contre lui-même.",
+     "q": "L’ordinateur est-il difficile à battre ?"
+    },
+    {
+     "a": "Oui. Tout le jeu se joue hors ligne, sans compte ni identifiant. Seuls l’achat et la restauration de « Toute la guerre » passent par Apple et demandent une connexion. Votre guerre est enregistrée sur l’appareil après chaque déplacement.",
+     "q": "Sabres & Rails fonctionne-t-il hors ligne ?"
+    },
+    {
+     "a": "Non. Le jeu ne contient ni outil d’analyse, ni publicité, ni SDK tiers, et il ne contacte jamais aucun serveur. Votre guerre enregistrée et vos réglages restent sur votre appareil. Apple gère l’unique achat.",
+     "q": "Sabres & Rails collecte-t-il des données ?"
+    },
+    {
+     "a": "Sur iPhone et iPad avec iOS ou iPadOS 26 ou version ultérieure. Le jeu se joue en paysage et, sur iPad, il s’affiche en plein écran, sans Split View ni Slide Over. Il n’existe pas de version pour Mac, Apple Watch, Apple TV ou Android.",
+     "q": "Sur quels appareils fonctionne Sabres & Rails ?"
+    },
+    {
+     "a": "Oui. Le jeu est disponible en anglais et dans 35 autres langues, dont le français, l’allemand, l’espagnol, l’italien, le portugais, le néerlandais, le japonais, le coréen et le chinois. Il suit la langue de votre appareil.",
+     "q": "Sabres & Rails existe-t-il en français ?"
+    },
+    {
+     "a": "Sabres & Rails est un jeu de stratégie qui se déroule pendant la guerre de Sécession, et il ne se présente pas comme une simulation historique. Les 25 territoires reprennent les frontières actuelles des États, regroupées en territoires de jeu, et les années de départ ne suivent que de façon approximative la ligne de front de chaque mois de janvier. Le Sud arbore une simple bannière grise à une étoile.",
+     "q": "Sabres & Rails est-il fidèle à l’histoire ?"
+    },
+    {
+     "a": "VoiceOver lit l’écran titre, la mise en place, les réglages, la carte, les menus et les commandes de bataille. Sur la carte, chaque territoire est un élément qui annonce son propriétaire et son armée, et les déplacements sont proposés sous forme d’actions. Le champ de bataille en temps réel ne se joue pas avec VoiceOver : choisissez le mode Stratégie pour jouer toute la guerre sans lui. Le texte suit la taille de police de l’appareil (Dynamic Type), « Réduire les animations » est respecté, et les vibrations comme les secousses de l’écran se désactivent dans les Réglages.",
+     "q": "Sabres & Rails est-il accessible ?"
+    }
+   ],
+   "seo": {
+    "description": "Jeu de stratégie guerre de Sécession, iPhone et iPad : armées sur la carte, batailles en temps réel au toucher, à deux sur un écran. Hors ligne, sans pub."
+   },
+   "tagline": "La guerre de Sécession en jeu de stratégie, sur iPhone et iPad. Préparez la campagne sur la carte, puis livrez chaque bataille vous-même, au toucher.",
+   "url": "/fr/apps/sabres-and-rails/"
+  },
   "shogiful": {
    "faq": [
     {
@@ -5915,6 +6110,71 @@
    },
    "tagline": "Scansiona il conto, tocca chi ha preso cosa, manda a ognuno il suo importo.",
    "url": "/it/apps/rightsplit/"
+  },
+  "sabres-and-rails": {
+   "faq": [
+    {
+     "a": "Sabres & Rails è un gioco di strategia sulla guerra di secessione americana per iPhone e iPad, su due livelli. Su una mappa degli Stati Uniti muovi le armate, prendi possesso dei territori e attacchi, un turno alla volta. Quando due armate si incontrano si apre una battaglia in tempo reale, e la combatti tu, con le dita, al comando di cannoni, fanteria e cavalleria. Ci sono anche scene d’azione per rapinare i treni dell’oro e assaltare i forti.",
+     "q": "Che tipo di gioco è Sabres & Rails?"
+    },
+    {
+     "a": "Il download è gratuito, e ogni guerra è gratis per i primi tre mesi del calendario di gioco, fino ad aprile del suo anno di inizio. Vale per tutti gli anni di inizio, per le modalità Arcade e Strategia e per le partite contro il computer o contro un amico. Il tutorial guidato è gratuito per intero. Un solo acquisto, “Tutta la guerra”, permette a ogni guerra di arrivare fino alla fine. È un acquisto unico, funziona con In famiglia e non c’è pubblicità.",
+     "q": "Sabres & Rails è gratis?"
+    },
+    {
+     "a": "Quando nel gioco arriva aprile dell’anno di inizio, la tua guerra viene salvata e ti aspetta nella schermata di sblocco. Acquista “Tutta la guerra” e quella stessa guerra riprende dal punto in cui si era fermata. Puoi anche tornare alla schermata iniziale e cominciare un’altra guerra, anche questa gratuita per i primi tre mesi.",
+     "q": "Cosa succede quando finiscono i mesi gratuiti?"
+    },
+    {
+     "a": "Apri Impostazioni dall’ingranaggio nella schermata iniziale e tocca “Ripristina acquisto”. Lo stesso pulsante si trova nella schermata di sblocco.",
+     "q": "Come ripristino “Tutta la guerra” su un nuovo iPhone o iPad?"
+    },
+    {
+     "a": "Sì. Nella schermata di preparazione imposta entrambi gli schieramenti su Umano. Sulla mappa si gioca a turni e ci si passa il dispositivo quando il gioco lo chiede. Quando le vostre armate si incontrano in modalità Arcade, combattete la stessa battaglia nello stesso momento su schermo diviso, l’Unione sulla metà sinistra e la Confederazione sulla destra, ognuno con i propri comandi. Non si gioca online.",
+     "q": "Si può giocare in due su un solo iPhone o iPad?"
+    },
+    {
+     "a": "Tocca un fante, un cavaliere o un cannone per comandarne il gruppo. Trascina per spostare i cannoni in alto e in basso, tieni premuto per riempire l’indicatore della gittata e rilascia per sparare. Trascina per far marciare la fanteria e tocca per sparare una scarica. Trascina per guidare la cavalleria e lanciarla al galoppo, poi tocca per menare una sciabolata. Una battaglia finisce quando a uno schieramento non restano più truppe sul campo, oppure quando uno dei due si ritira. Nella prima battaglia di una partita i comandi compaiono sullo schermo.",
+     "q": "Come funzionano le battaglie?"
+    },
+    {
+     "a": "Sì. Nella preparazione scegli Strategia invece di Arcade: tutta la guerra si gioca sulla mappa e il risultato di ogni battaglia viene calcolato per te. Anche le rapine ai treni e gli assalti ai forti si possono impostare su Automatico, separatamente.",
+     "q": "Posso saltare le battaglie in tempo reale?"
+    },
+    {
+     "a": "Il computer gioca a uno di tre gradi: Caporale, Sergente o Capitano. Il grado decide quanto gioca duro sulla mappa e quanto in fretta reagiscono le sue truppe in battaglia. Puoi anche affidare al computer entrambi gli schieramenti e guardarlo giocare contro sé stesso.",
+     "q": "Quanto è forte il computer?"
+    },
+    {
+     "a": "Sì. Tutto il gioco funziona offline, senza account né accesso. Solo l’acquisto e il ripristino di “Tutta la guerra” passano da Apple e richiedono una connessione. La tua guerra viene salvata sul dispositivo dopo ogni mossa.",
+     "q": "Sabres & Rails funziona offline?"
+    },
+    {
+     "a": "No. Il gioco non ha strumenti di analisi, pubblicità o SDK di terze parti, e non contatta mai un server. La guerra salvata e le impostazioni restano sul tuo dispositivo. L’unico acquisto lo gestisce Apple.",
+     "q": "Sabres & Rails raccoglie dati?"
+    },
+    {
+     "a": "Su iPhone e iPad con iOS o iPadOS 26 o versioni successive. Si gioca in orizzontale, e su iPad il gioco occupa tutto lo schermo, senza Split View né Slide Over. Non esiste una versione per Mac, Apple Watch, Apple TV o Android.",
+     "q": "Su quali dispositivi funziona Sabres & Rails?"
+    },
+    {
+     "a": "Sì. Oltre che in inglese, il gioco è disponibile in altre 35 lingue, tra cui italiano, tedesco, francese, spagnolo, portoghese, olandese, giapponese, coreano e cinese. Segue la lingua del dispositivo.",
+     "q": "Sabres & Rails è in italiano?"
+    },
+    {
+     "a": "È un gioco di strategia ambientato nella guerra di secessione americana, non una simulazione storica. I 25 territori sono ricavati dai confini attuali degli Stati, uniti in territori di gioco, e gli anni di inizio seguono solo a grandi linee il fronte di ogni gennaio. Il Sud ha come insegna un semplice stendardo grigio con una stella.",
+     "q": "Sabres & Rails è fedele alla storia?"
+    },
+    {
+     "a": "VoiceOver legge la schermata iniziale, la preparazione, le impostazioni, la mappa, i menu e i comandi di battaglia. Sulla mappa ogni territorio è un elemento con il suo proprietario e la sua armata, e le mosse vengono proposte come azioni. Il campo di battaglia in tempo reale non si può giocare con VoiceOver: scegli la modalità Strategia per giocare tutta la guerra senza. Il testo si ingrandisce con Dynamic Type, l’opzione “Riduci movimento” viene rispettata, e il feedback aptico e lo scuotimento dello schermo si possono disattivare in Impostazioni.",
+     "q": "Sabres & Rails è accessibile?"
+    }
+   ],
+   "seo": {
+    "description": "Gioco di strategia sulla guerra di secessione per iPhone e iPad: armate sulla mappa, battaglie in tempo reale con le dita, sfide in due. Offline."
+   },
+   "tagline": "Strategia nella guerra di secessione, su iPhone e iPad. Pianifica la guerra sulla mappa, poi combatti di persona ogni battaglia, con le dita.",
+   "url": "/it/apps/sabres-and-rails/"
   },
   "shogiful": {
    "faq": [
@@ -7504,6 +7764,71 @@
    "tagline": "Scan de bon, tik aan wie wat had, stuur iedereen zijn bedrag.",
    "url": "/nl/apps/rightsplit/"
   },
+  "sabres-and-rails": {
+   "faq": [
+    {
+     "a": "Sabres & Rails is een strategiegame over de Amerikaanse Burgeroorlog voor iPhone en iPad, met twee lagen. Op een kaart van de Verenigde Staten verplaats je legers, neem je gebieden in bezit en val je aan, beurt voor beurt. Treffen legers elkaar, dan opent een veldslag in realtime die je zelf met je vingers uitvecht, met kanonnen, infanterie en cavalerie. Daarnaast heeft het spel actiescènes waarin je goudtreinen overvalt en forten bestormt.",
+     "q": "Wat voor spel is Sabres & Rails?"
+    },
+    {
+     "a": "De download is gratis, en elke oorlog is gratis tijdens de eerste drie maanden speltijd, tot april van het startjaar. Dat geldt voor elk startjaar, voor de Arcade- en de Strategie-modus en voor spellen tegen de computer of een vriend. De begeleide tutorial is helemaal gratis. Met één aankoop, ‘De hele oorlog’, speel je elke oorlog uit tot het einde. Het is een eenmalige aankoop die werkt met Delen met gezin, en er is geen reclame.",
+     "q": "Is Sabres & Rails gratis?"
+    },
+    {
+     "a": "Wordt het april van het startjaar, dan wordt je oorlog bewaard en wacht hij op het ontgrendelscherm. Koop ‘De hele oorlog’ en diezelfde oorlog gaat verder waar hij stopte. Je kunt ook teruggaan naar het titelscherm en een andere oorlog beginnen, en ook die is de eerste drie maanden gratis.",
+     "q": "Wat gebeurt er als de gratis maanden voorbij zijn?"
+    },
+    {
+     "a": "Open Instellingen met het tandwiel op het titelscherm en tik op ‘Herstel aankoop’. Op het ontgrendelscherm staat dezelfde knop.",
+     "q": "Hoe herstel ik ‘De hele oorlog’ op een nieuwe iPhone of iPad?"
+    },
+    {
+     "a": "Ja. Zet op het instelscherm beide kanten op ‘Speler’. Jullie zijn om de beurt aan zet op de kaart en geven het apparaat door als het spel daarom vraagt. Treffen jullie legers elkaar in de Arcade-modus, dan vechten jullie allebei tegelijk dezelfde veldslag uit op een gesplitst scherm: de Unie op de linkerhelft en de Confederatie op de rechterhelft, elk met je eigen besturing. Online spelen kan niet.",
+     "q": "Kun je met z’n tweeën op één iPhone of iPad spelen?"
+    },
+    {
+     "a": "Tik op een soldaat, ruiter of kanon om het bevel over zijn groep te nemen. Sleep om de kanonnen omhoog en omlaag te bewegen, houd vast om de meter voor het bereik te vullen en laat los om te vuren. Sleep om de infanterie te laten marcheren en tik voor een salvo. Sleep om de cavalerie te sturen en vooruit te galopperen, en tik dan voor een sabelhouw. Een veldslag eindigt als een kant geen troepen meer op het slagveld heeft, of als een kant de aftocht blaast. In de eerste veldslag van een spel staat de besturing op het scherm.",
+     "q": "Hoe werken de veldslagen?"
+    },
+    {
+     "a": "Ja. Kies bij het instellen Strategie in plaats van Arcade, en de hele oorlog wordt op de kaart gespeeld, met de uitslag van elke veldslag voor je berekend. Treinovervallen en bestormingen van forten kun je ook los op ‘Automatisch’ zetten.",
+     "q": "Kan ik de veldslagen in realtime overslaan?"
+    },
+    {
+     "a": "De computer speelt op een van drie rangen: Korporaal, Sergeant of Kapitein. De rang bepaalt hoe sterk hij op de kaart speelt en hoe snel zijn troepen in de veldslag reageren. Je kunt de computer ook beide kanten geven en kijken hoe hij tegen zichzelf speelt.",
+     "q": "Hoe sterk speelt de computer?"
+    },
+    {
+     "a": "Ja. Het hele spel werkt offline, zonder account en zonder in te loggen. Alleen het kopen en herstellen van ‘De hele oorlog’ loopt via Apple en heeft een verbinding nodig. Je oorlog wordt na elke zet op het apparaat bewaard.",
+     "q": "Werkt Sabres & Rails offline?"
+    },
+    {
+     "a": "Nee. Het spel heeft geen analysetools, reclame of SDK’s van derden en maakt nooit verbinding met een server. Je opgeslagen oorlog en je instellingen blijven op je apparaat. Apple handelt de ene aankoop af.",
+     "q": "Verzamelt Sabres & Rails gegevens?"
+    },
+    {
+     "a": "Op iPhone en iPad met iOS of iPadOS 26 of nieuwer. Het spel speelt in de liggende stand, en op de iPad schermvullend, zonder Split View of Slide Over. Er is geen versie voor Mac, Apple Watch, Apple TV of Android.",
+     "q": "Op welke apparaten werkt Sabres & Rails?"
+    },
+    {
+     "a": "Ja. Het spel is er in het Engels en in 35 andere talen, waaronder Nederlands, Duits, Frans, Spaans, Italiaans, Portugees, Japans, Koreaans en Chinees. Het volgt de taal van je apparaat.",
+     "q": "Is Sabres & Rails in het Nederlands?"
+    },
+    {
+     "a": "Sabres & Rails is een strategiegame die zich afspeelt in de Amerikaanse Burgeroorlog, en geen historische simulatie. De 25 gebieden zijn getekend naar de staatsgrenzen van nu en samengevoegd tot gebieden van het spel, en de startjaren volgen de frontlijn van elke januari maar ruwweg. De Confederatie voert een eenvoudige grijze vaan met één ster.",
+     "q": "Is Sabres & Rails historisch juist?"
+    },
+    {
+     "a": "VoiceOver leest het titelscherm, het instelscherm, de instellingen, de kaart, de menu’s en de besturing van de veldslag voor. Op de kaart is elk gebied een element met zijn eigenaar en zijn leger, en zetten worden als acties aangeboden. Het slagveld in realtime kun je niet met VoiceOver spelen, dus kies de Strategie-modus om de hele oorlog zonder dat slagveld te spelen. De tekst wordt groter met Dynamic Type, ‘Verminderde beweging’ wordt gerespecteerd, en haptiek en het schuddende scherm kun je in Instellingen uitzetten.",
+     "q": "Is Sabres & Rails toegankelijk?"
+    }
+   ],
+   "seo": {
+    "description": "Strategiegame over de Burgeroorlog voor iPhone en iPad: legers op de kaart, veldslagen in realtime, met z’n tweeën op één scherm. Offline, zonder reclame."
+   },
+   "tagline": "Strategie in de Amerikaanse Burgeroorlog, voor iPhone en iPad. Plan de oorlog op de kaart en vecht daarna elke veldslag zelf uit, met je vingers.",
+   "url": "/nl/apps/sabres-and-rails/"
+  },
   "shogiful": {
    "faq": [
     {
@@ -9087,6 +9412,71 @@
    },
    "tagline": "Digitalize o recibo, toque em quem comeu o quê e envie a cada um o seu valor.",
    "url": "/pt/apps/rightsplit/"
+  },
+  "sabres-and-rails": {
+   "faq": [
+    {
+     "a": "O Sabres & Rails é um jogo de estratégia da Guerra Civil Americana para iPhone e iPad, em duas camadas. Num mapa dos Estados Unidos movem-se exércitos, ocupam-se territórios e lançam-se ataques, um turno de cada vez. Quando os exércitos se encontram, abre-se uma batalha em tempo real que se trava em pessoa, ao toque, com canhões, infantaria e cavalaria. O jogo tem ainda cenas de ação para assaltar comboios do ouro e tomar fortes.",
+     "q": "Que tipo de jogo é o Sabres & Rails?"
+    },
+    {
+     "a": "Descarregar é grátis, e cada guerra é grátis nos três primeiros meses do calendário do jogo, até abril do ano de início. Isso inclui todos os anos de início, os modos Arcada e Estratégia e os jogos contra o computador ou contra um amigo. O tutorial guiado é inteiramente grátis. Uma compra, «A guerra toda», deixa todas as guerras seguirem até ao fim. É uma compra única, funciona com a Partilha com a família e não há anúncios.",
+     "q": "O Sabres & Rails é grátis?"
+    },
+    {
+     "a": "Quando chega abril do ano de início, a guerra fica guardada e à espera no ecrã de desbloqueio. Depois de comprar «A guerra toda», essa mesma guerra continua a partir do ponto onde parou. Também é possível voltar ao ecrã inicial e começar outra guerra, igualmente grátis nos três primeiros meses.",
+     "q": "O que acontece quando acabam os meses grátis?"
+    },
+    {
+     "a": "Abra Definições com a roda dentada do ecrã inicial e toque em «Restaurar compra». O ecrã de desbloqueio tem o mesmo botão.",
+     "q": "Como restaurar «A guerra toda» num iPhone ou iPad novo?"
+    },
+    {
+     "a": "Sim. No ecrã de preparação, defina os dois lados como Humano. No mapa joga-se por turnos, e o dispositivo passa de mão em mão quando o jogo o indica. Quando os exércitos se encontram no modo Arcada, os dois travam a mesma batalha ao mesmo tempo com o ecrã dividido, a União na metade esquerda e a Confederação na direita, cada lado com os seus próprios controlos. Não há jogo online.",
+     "q": "Podem jogar duas pessoas no mesmo iPhone ou iPad?"
+    },
+    {
+     "a": "Toque num soldado, num cavaleiro ou num canhão para comandar o respetivo grupo. Arraste para mover os canhões para cima e para baixo, mantenha premido para encher o indicador de alcance e solte para disparar. Arraste para fazer marchar a infantaria e toque para disparar uma descarga. Arraste para guiar a cavalaria e galopar em frente, e toque para golpear com os sabres. Uma batalha termina quando um dos lados já não tem tropas em campo ou quando um lado recua. A primeira batalha de cada jogo começa com os controlos indicados no ecrã.",
+     "q": "Como funcionam as batalhas?"
+    },
+    {
+     "a": "Sim. Na preparação, escolha Estratégia em vez de Arcada e a guerra inteira joga-se no mapa, com o resultado de cada batalha calculado pelo jogo. Os assaltos ao comboio e ao forte também podem ficar em Automático, cada um por si.",
+     "q": "É possível saltar as batalhas em tempo real?"
+    },
+    {
+     "a": "O computador joga numa de três patentes: Cabo, Sargento ou Capitão. A patente define a dificuldade com que joga no mapa e a rapidez com que as suas tropas reagem na batalha. Também é possível dar os dois lados ao computador e vê-lo jogar contra si próprio.",
+     "q": "Qual é a dificuldade do computador?"
+    },
+    {
+     "a": "Sim. O jogo inteiro funciona offline, sem conta nem início de sessão. Só a compra e a restauração de «A guerra toda» passam pela Apple e precisam de ligação. A guerra fica guardada no dispositivo depois de cada movimento.",
+     "q": "O Sabres & Rails funciona offline?"
+    },
+    {
+     "a": "Não. O jogo não tem análise, publicidade nem SDK de terceiros, e nunca contacta um servidor. A guerra guardada e as definições ficam no dispositivo. A Apple trata da única compra.",
+     "q": "O Sabres & Rails recolhe dados?"
+    },
+    {
+     "a": "No iPhone e no iPad com iOS ou iPadOS 26 ou posterior. O jogo joga-se na horizontal e, no iPad, ocupa o ecrã inteiro, sem Split View nem Slide Over. Não há versão para Mac, Apple Watch, Apple TV nem Android.",
+     "q": "Em que dispositivos funciona o Sabres & Rails?"
+    },
+    {
+     "a": "Sim. O jogo está em inglês e em mais 35 idiomas, entre eles o português, o alemão, o francês, o espanhol, o italiano, o neerlandês, o japonês, o coreano e o chinês, e segue o idioma do dispositivo.",
+     "q": "O Sabres & Rails está em português?"
+    },
+    {
+     "a": "É um jogo de estratégia passado na Guerra Civil Americana, não uma simulação histórica. Os 25 territórios partem das fronteiras atuais dos estados, agrupadas em territórios de jogo, e os anos de início só seguem por alto a linha da frente de cada mês de janeiro. O Sul usa um estandarte cinzento liso, com uma estrela.",
+     "q": "O Sabres & Rails é historicamente rigoroso?"
+    },
+    {
+     "a": "O VoiceOver lê o ecrã inicial, a preparação, as definições, o mapa, os menus e os controlos de batalha. No mapa, cada território é um elemento com o seu dono e o seu exército, e os movimentos são propostos como ações. O campo de batalha em tempo real não se joga com o VoiceOver, por isso o modo Estratégia permite jogar a guerra inteira sem ele. O texto acompanha o tamanho definido no sistema, Reduzir movimento é respeitado, e a vibração e o tremor do ecrã podem ser desativados em Definições.",
+     "q": "O Sabres & Rails é acessível?"
+    }
+   ],
+   "seo": {
+    "description": "Estratégia da Guerra Civil Americana no iPhone e iPad: exércitos no mapa, batalhas em tempo real ao toque e dois jogadores num ecrã. Offline, sem anúncios."
+   },
+   "tagline": "Estratégia da Guerra Civil Americana para iPhone e iPad. Planeia-se a guerra no mapa e trava-se cada batalha em pessoa, ao toque.",
+   "url": "/pt/apps/sabres-and-rails/"
   },
   "shogiful": {
    "faq": [
