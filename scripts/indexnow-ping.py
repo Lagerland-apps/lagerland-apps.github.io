@@ -22,7 +22,8 @@ Usage:
     # Submit only pages whose SOURCE changed in the last commit (the
     # normal "I just published" hook). Maps changed source files to their
     # live permalinks; a change to a shared layout/include/config/data
-    # file is treated as sitewide and submits the whole sitemap.
+    # file adds the sitemap URLs whose lastmod moved since the base commit
+    # (not the whole sitemap: see collect_changed_urls).
     python3 scripts/indexnow-ping.py --changed
 
     # Submit changes since an arbitrary git ref (e.g. what a push added)
@@ -43,6 +44,7 @@ Usage:
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -222,26 +224,59 @@ def git_changed_files(base_ref):
     sys.exit(2)
 
 
+URL_ENTRY_RE = re.compile(r"<url>(.*?)</url>", re.DOTALL)
+LOC_RE = re.compile(r"<loc>\s*([^<\s]+)\s*</loc>")
+LASTMOD_RE = re.compile(r"<lastmod>\s*(\d{4}-\d{2}-\d{2})")
+
+
 def parse_sitemap(text):
-    return re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", text)
+    return LOC_RE.findall(text)
 
 
-def load_sitemap():
+def parse_sitemap_lastmods(text):
+    """[(url, 'YYYY-MM-DD' or None)] for every <url> entry."""
+    out = []
+    for entry in URL_ENTRY_RE.findall(text):
+        loc = LOC_RE.search(entry)
+        if loc:
+            mod = LASTMOD_RE.search(entry)
+            out.append((loc.group(1), mod.group(1) if mod else None))
+    return out
+
+
+def fetch_sitemap_text():
     """Live sitemap first (authoritative for what's actually published);
     fall back to a local _site build if the network fetch fails."""
     try:
         with urllib.request.urlopen(SITEMAP_URL, timeout=TIMEOUT) as resp:
-            urls = parse_sitemap(resp.read().decode("utf-8", "ignore"))
-            if urls:
-                return urls
+            text = resp.read().decode("utf-8", "ignore")
+            if parse_sitemap(text):
+                return text
     except (urllib.error.URLError, OSError) as exc:
         print(f"WARNING: could not fetch live sitemap ({exc}); trying {LOCAL_SITEMAP}",
               file=sys.stderr)
     if LOCAL_SITEMAP.exists():
-        return parse_sitemap(LOCAL_SITEMAP.read_text(encoding="utf-8", errors="ignore"))
+        return LOCAL_SITEMAP.read_text(encoding="utf-8", errors="ignore")
     print("ERROR: no sitemap available (live fetch failed and no local _site build).",
           file=sys.stderr)
     sys.exit(2)
+
+
+def load_sitemap():
+    return parse_sitemap(fetch_sitemap_text())
+
+
+def git_commit_date(ref):
+    """Committer date of a ref as 'YYYY-MM-DD' (UTC), or None."""
+    try:
+        out = subprocess.run(
+            ["git", "-C", str(REPO_ROOT), "log", "-1", "--format=%cd",
+             "--date=format-local:%Y-%m-%d", ref],
+            capture_output=True, text=True, check=True, env={**os.environ, "TZ": "UTC"},
+        ).stdout.strip()
+        return out or None
+    except (subprocess.CalledProcessError, FileNotFoundError, OSError):
+        return None
 
 
 def normalize_url(raw):
@@ -277,10 +312,22 @@ def collect_changed_urls(base_ref, verbose):
         for f in files:
             print(f"  {f}")
     triggered = [f for f in files if any(f == t or f.startswith(t) for t in GLOBAL_TRIGGERS)]
-    if triggered:
-        print(f"Sitewide change detected ({triggered[0]} ...) — submitting the full sitemap.")
-        return load_sitemap()
     urls = [u for u in (path_to_url(f) for f in files) if u]
+    if triggered:
+        # A shared file changed. Resending the whole sitemap on every such push (translation work
+        # touches _data/ in almost every commit) sent 43,000 unchanged URLs in one day in Nov 2026,
+        # which IndexNow discourages and Bing answers with "limited crawl capacity". Instead submit
+        # the pages whose sitemap lastmod moved on or after the base commit's date: every real edit
+        # is stamped by stamp-last-updated.py. A true sitewide refresh is `--all`, run by hand.
+        since = git_commit_date(used_ref)
+        if since:
+            recent = [u for u, mod in parse_sitemap_lastmods(fetch_sitemap_text()) if mod and mod >= since]
+            print(f"Shared file changed ({triggered[0]} ...) — adding {len(recent)} sitemap URL(s) "
+                  f"with lastmod on or after {since}. Use --all for a full resubmission.")
+            urls += recent
+        else:
+            print(f"Shared file changed ({triggered[0]} ...) but the base commit date is unknown; "
+                  "submitting directly changed pages only. Use --all for a full resubmission.")
     return dedupe(urls)
 
 
