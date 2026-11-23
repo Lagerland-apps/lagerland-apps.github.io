@@ -268,8 +268,8 @@ release:
 
 ratings:
   value: "5.0"
-  count: 4
-  last_synced: "2026-06-03"
+  count: 5
+  last_synced: "2026-11-23"
 last_updated: 2026-11-08
 ---
 Taskful Day is a day planner for iPhone, iPad, Mac, and Apple Watch. You plan one day at a time, and whatever you don't finish moves to the next day on its own. Add tasks by typing a sentence, speaking, asking Siri, or using your watch. With Pro, see the day as a clock, a timeline, or a map, block out the week on a grid, and keep it on your Home Screen with 21 widgets. There's no account to create, and your tasks stay on your device or in your own iCloud.
